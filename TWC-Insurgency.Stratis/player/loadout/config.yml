@@ -1,0 +1,19 @@
+--- 
+:homepage: ""
+:archive_format: .gz
+:hosts: []
+:servers: 
+- s
+:apps: 
+  TWC teamspeak: 
+    :type: Teamspeak3
+    :ip: 188.138.102.24
+    :channel: Joining Lobby
+    :channel_password: 555
+    :port: 9987
+    :hidden: false
+:mods: {}
+:missions: {}
+:mpmissions: {}
+:guid: e24557af-5df2-4eaa-b0d4-9d4ce1c68395
+:name: TheWreckingCrew

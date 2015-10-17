@@ -1,0 +1,1 @@
+#include "server\init.sqf";

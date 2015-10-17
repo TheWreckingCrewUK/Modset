@@ -1,0 +1,155 @@
+DisabledAI		= 1; // <!-- Where 0 Fills empty playable slots with AI, 1 is They Don't fill the empty slots
+joinUnassigned	= 0; // <!-- Where 0 forces joining players into the first empty slot, 1 leaves them to select their own
+disableChannels[]={0,1,2,3,4};
+
+
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 60;
+};
+
+
+onLoadName = "Domination Plus";
+onLoadMission = "By TheWreckingCrew";
+author = "TWC FakeMatty";
+loadScreen = "tao\pics\loading.jpg";
+
+
+
+respawn="BASE";
+respawndelay = 30;
+respawnDialog = false;
+respawnOnStart = 0;
+
+enableDebugConsole = 1;
+
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Sniper Crew";
+		subtitle = "You need 15 people on to play this role.";
+		description = "Play General Infantry for now!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End2
+	{
+		title = "Fill another squad!";
+		subtitle = "";
+		description = "";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End3
+	{
+		title = "Pilot is already online";
+		subtitle = "Wait till player count is over 15 to be a Pilot.";
+		description = "Play General infantry for now!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End4
+	{
+		title = "Pilot unavailable";
+		subtitle = "You need 5 people online to play as the Pilot.";
+		description = "Play general infantry for now!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End5
+	{
+		title = "Mission End";
+		subtitle = "Good Job!";
+		description = "Stick around for some more Domination!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End6
+	{
+		title = "Ending #6";
+		subtitle = "";
+		description = "*** Insert debriefing #6 here. ***";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class End7
+	{
+		title = "Ending #6";
+		subtitle = "";
+		description = "*** Insert debriefing #6 here. ***";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+};
+
+
+#include "CHVD\dialog.hpp"
+
+class CfgFunctions
+
+
+{
+
+
+#include "CHVD\CfgFunctions.hpp"
+   class TWC
+	{
+
+		class Patrol
+		{
+			class Patrol {file = "func\fnc_patrol.sqf";};
+		};
+		class Defend
+		{
+			class Defend {file = "func\fnc_defend.sqf";};
+		};
+		class Attack
+		{
+			class Defend {file = "func\fnc_attack.sqf";};
+		};
+		class AirAssault
+		{
+			class AirAssault {file = "func\fnc_air_assault.sqf";};
+		};
+		class AttackHelicopter
+		{
+			class AttackHelicopter {file = "func\fnc_attack_helicopter.sqf";};
+		};
+		class AttackPlane
+		{
+			class AttackPlane {file = "func\fnc_attack_plane.sqf";};
+		};
+		class AO
+		{
+			class AO {file = "func\fnc_AO.sqf";};
+		};
+		class RadioTower
+		{
+			class RadioTower {file = "func\fnc_RadioTower.sqf";};
+		};
+		//class SideMissionArmoured
+		//{
+			//class SideMissionArmoured {file = "func\fnc_ArmouredSideMission.sqf";};
+		//};
+	};
+};
+
+
