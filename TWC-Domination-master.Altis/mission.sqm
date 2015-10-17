@@ -676,7 +676,7 @@ class Mission
 				class Item0
 				{
 					position[]={14578.233,17.858196,16618.07};
-					azimut=46.835609;
+					azimut=46.835602;
 					class args
 					{
 						items=4;
@@ -711,6 +711,7 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
+					text="Zues";
 				};
 			};
 		};

@@ -87,4 +87,4 @@ _Time = ['TWC_Timeplayed','Time Played','', {[] call TWC_fnc_timePlayed},{true}]
  [player, 1, ["ACE_SelfActions"], _Time] call ace_interact_menu_fnc_addActionToObject;
 
 };
-
+execVM "Zues.sqf";
