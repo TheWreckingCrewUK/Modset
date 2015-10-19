@@ -88,3 +88,9 @@ _Time = ['TWC_Timeplayed','Time Played','', {[] call TWC_fnc_timePlayed},{true}]
 
 };
 execVM "Zues.sqf";
+
+_A10Pilot = ["p53"];
+
+if ((str player) in _A10Pilot && ((count playableUnits) <= 15 || !((getPlayerUID player) in memberIDArray))) then {
+    ["end7", false, 0] call BIS_fnc_endMission;
+
