@@ -3,7 +3,7 @@ true spawn {
     //helicopters
     _blackhawkpilot = ["rhsusf_army_ucp_crewman"];
     _Merlinpilot = ["BAF_Pilot_Infantry_R_M_DG1"];
-    _A10pilot = ["B_Pilot_F"];
+    _A10pilot = ["rhsusf_airforce_jetpilot"];
     _crew = ["B_helicrew_F"];
     _A10 = ["RHS_A10"];
     _blackhawk = ["RHS_UH60M"];

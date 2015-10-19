@@ -278,6 +278,23 @@ if (!isNil "P50" && {player == P50}) then {
 	g_group = "1";
 	g_unit = "158";
 };
+//BEGINING OF IT MAKING SENSE BY JAYMAN COMPLETE REWRITE EMINENT!
+if (!isNil "P51" && {player == P51}) then {
+    g_class = "JTAC_SL";
+	g_group = "1";
+	g_unit = "159";
+};
+if (!isNil "P52" && {player == P52}) then {
+    g_class = "JTAC_RF";
+	g_group = "1";
+	g_unit = "160";
+};
+if (!isNil "P53" && {player == P53}) then {
+    g_class = "PILOT_A10";
+	g_group = "1";
+	g_unit = "161";
+};
+
 g_p1 = "";
 g_p2 = "";
 g_p2 = "";
@@ -329,6 +346,9 @@ g_p47 = "";
 g_p48 = "";
 g_p49 = "";
 g_p50 = "";
+g_p51 = "";
+g_p52 = "";
+g_p53 = "";
 
 execVM "player\boxes\main_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];

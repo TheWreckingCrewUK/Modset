@@ -18,7 +18,7 @@ _timer = 240;  // time in seconds until box is refilled.
  
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1]];
+_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1]];
  
 _tmp_weapons = [];
 _tmp_magazines = [];
@@ -1494,6 +1494,101 @@ if (g_class == "SWD_2IC") then {
 			["tf_anprc152",1]
 		];
  };
+  if (g_class == "JTAC_SL") then {
+                _tmp_weapons =
+                [
+                                ["rhs_weap_m4a1_carryhandle_m203",1],
+                                ["ACE_Vector",1],
+								["rhsusf_weap_m1911a1",1]
+								
+                ];
+           
+                _tmp_magazines =
+                [
+                                ["30Rnd_556x45_Stanag",50],
+								["30Rnd_556x45_Stanag_Tracer_Red",50],
+                                ["rhsusf_mag_7x45acp_MHP",15],
+	                            ["1Rnd_Smoke_Grenade_shell", 10],
+	                            ["1Rnd_SmokeRed_Grenade_shell", 10],
+	                            ["1Rnd_SmokeGreen_Grenade_shell", 10],
+	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
+	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
+                             	["1Rnd_SmokeBlue_Grenade_shell", 10]
+								
+                               
+                ];
+               
+                _tmp_items = [
+                                
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["rhsusf_acc_anpeq15A",1],
+								["tf_anprc152",1],
+								["Laserdesignator",1],
+								["Laserbatteries",1]
+               
+                ];
+};
+  if (g_class == "JTAC_RF") then {
+                _tmp_weapons =
+                [
+                                ["rhs_weap_m4a1_carryhandle_m203",1],
+                                ["ACE_Vector",1],
+								["rhsusf_weap_m1911a1",1]
+								
+                ];
+           
+                _tmp_magazines =
+                [
+                                ["30Rnd_556x45_Stanag",50],
+								["30Rnd_556x45_Stanag_Tracer_Red",50],
+                                ["rhsusf_mag_7x45acp_MHP",15],
+	                            ["1Rnd_Smoke_Grenade_shell", 10],
+	                            ["1Rnd_SmokeRed_Grenade_shell", 10],
+	                            ["1Rnd_SmokeGreen_Grenade_shell", 10],
+	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
+	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
+                             	["1Rnd_SmokeBlue_Grenade_shell", 10]
+								
+                               
+                ];
+               
+                _tmp_items = [
+                                
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["rhsusf_acc_anpeq15A",1],
+								["tf_anprc152",1],
+								["Laserdesignator",1],
+								["Laserbatteries",1]
+               
+                ];
+};
+ if (g_class == "PILOT_A10") then {
+       _tmp_weapons =
+        [
+           
+			["rhsusf_weap_m1911a1",1]
+			  
+		];
+       
+        _tmp_magazines =
+        [
+            
+             ["rhsusf_mag_7x45acp_MHP",15]
+        ];
+		
+		_tmp_items = 
+		[
+			
+             ["ACE_MapTools",1],
+             ["ACE_fieldDressing",20],
+             ["ACE_morphine",10],
+			 ["tf_anprc152",1]
+		];
+};
  
 {
         _weapons set [count _weapons, _x];

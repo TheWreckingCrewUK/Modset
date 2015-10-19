@@ -51,7 +51,10 @@ g_p46 = "";
 g_p47 = "";	
 g_p48 = "";	
 g_p49 = "";	
-g_p50 = "";	
+g_p50 = "";
+g_p51 = "";
+g_p52 = "";
+g_p53 = "";
 	
 	switch (g_unit) do {
 		case "000": {g_p1 = name player; publicVariable "g_p1"; };
@@ -104,7 +107,9 @@ g_p50 = "";
 		case "156": {g_p48 = name player; publicVariable "g_p48"; };
 		case "157": {g_p49 = name player; publicVariable "g_p49"; };
 		case "158": {g_p50 = name player; publicVariable "g_p50"; };
-				
+		case "159": {g_p51 = name player; publicVariable "g_p51"; };
+		case "160": {g_p52 = name player; publicVariable "g_p52"; };
+		case "161": {g_p53 = name player; publicVariable "g_p53"; };
 	};
 	
 	global_sync = false;

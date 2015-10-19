@@ -97,6 +97,15 @@ class CfgDebriefing
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
+	class End8
+	{
+		title = "Pilot Unavailible";
+		subtitle = "Wait until you have 15 players and a JTAC.";
+		description = "Play General infantry for now!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
 
 };
 
