@@ -87,10 +87,17 @@ _Time = ['TWC_Timeplayed','Time Played','', {[] call TWC_fnc_timePlayed},{true}]
  [player, 1, ["ACE_SelfActions"], _Time] call ace_interact_menu_fnc_addActionToObject;
 
 };
-execVM "Zues.sqf";
 
-_A10Pilot = ["p53"];
+_pilots = ["p31", "p33"];
+_a10pilot = ["p53"];
 
-if ((str player) in _A10Pilot && ((count playableUnits) <= 15 || !((getPlayerUID player) in memberIDArray))) then {
+if ((str player) in _pilots && (count playableUnits) < 2) then {
+    ["end4", false, 0] call BIS_fnc_endMission;
+};
+
+if ((str player) in _a10pilot && ((count playableUnits) <= 13 || !((getPlayerUID player) in memberIDArray))) then {
     ["end7", false, 0] call BIS_fnc_endMission;
+};
+	
+execVM "Zues.sqf";
 
