@@ -117,7 +117,7 @@ class Mission
 					id=0;
 					side="WEST";
 					vehicle="BAF_Soldier_Light_Infantry_L_M_DG1";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
@@ -1665,12 +1665,12 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={14652.699,17.91,16744.945};
-					azimut=-30.934401;
+					position[]={14649.708,17.91,16744.404};
+					azimut=296.62799;
 					id=63;
 					side="WEST";
 					vehicle="rhsusf_army_ucp_rifleman_1stcav";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="p51";
@@ -2773,7 +2773,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=33;
+		items=39;
 		class Item0
 		{
 			position[]={14640.538,17.91,16766.221};
@@ -2994,6 +2994,42 @@ class Mission
 			name="p";
 			text="Aircraft";
 			type="b_plane";
+		};
+		class Item33
+		{
+			position[]={14633.597,17.91,16754.773};
+			name="secondary_crate";
+			type="Empty";
+		};
+		class Item34
+		{
+			position[]={27003.676,21.404707,24733.836};
+			name="Molos_Airfield";
+			type="Empty";
+		};
+		class Item35
+		{
+			position[]={23147.225,3.1900001,18734.523};
+			name="Salt_Flats_Airfield";
+			type="Empty";
+		};
+		class Item36
+		{
+			position[]={21116.977,20.741961,7326.0298};
+			name="Selakano_Airfield";
+			type="Empty";
+		};
+		class Item37
+		{
+			position[]={11522.727,22.949728,11700.203};
+			name="AAC_Airfield";
+			type="Empty";
+		};
+		class Item38
+		{
+			position[]={9119.9043,17.173223,21457.145};
+			name="Aristi_Airfield";
+			type="Empty";
 		};
 	};
 	class Sensors

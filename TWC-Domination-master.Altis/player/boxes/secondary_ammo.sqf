@@ -12,18 +12,21 @@
 				edited by FakeMatty
 */
  
-_marker = "crate";  // marker used to spawn.
-_boxType = "I_supplyCrate_F";  // the type of ammobox used.
-_timer = 240;  // time in seconds until box is refilled.
+_marker = "secondary_crate";  // marker used to spawn.
+_boxType = "Box_NATO_AmmoVeh_F";  // the type of ammobox used.
+_timer = 600;  // time in seconds until box is refilled.
  
 _weapons = [];
-_magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1]];
+_magazines = [];
+_items = [];
+_backpack = [["RDS_Tow_Tripod_Bag",1],["RDS_Tow_Gun_Bag",1],["RDS_M2_Gun_Bag",1],["RDS_M2_MiniTripod_Bag",1],["RDS_Mk19_Gun_Bag",1],["RDS_Mk19_Tripod_Bag",1]];
  
 _tmp_weapons = [];
 _tmp_magazines = [];
 _tmp_items = [];
- 
+_tmp_backpack =[];
+
+ /*
 // load available to Section Commander only.
 if (g_class == "BAF_SL") then {
                 _tmp_weapons =
@@ -1602,6 +1605,10 @@ if (g_class == "SWD_2IC") then {
         _items set [count _items, _x];
 } forEach _tmp_items;
 
+{
+		_backpack set [count _backpack, _x];
+} forEach _tmp_backpack;
+*/
  
 // create and fill the box.
 _box = _boxType createVehicleLocal (getMarkerPos _marker);
@@ -1613,7 +1620,6 @@ while {true} do {
         clearWeaponCargo _box;
         clearMagazineCargo _box;
         clearItemCargo _box;
-		clearBackpackCargo _box;
        
         // add in all weapons.
         {_box addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;
@@ -1622,6 +1628,9 @@ while {true} do {
         {_box addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
        
         {_box addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
+		
+		// add in all backpacks.
+		{_box addBackpackCargo [(_x select 0),(_x select 1)]} foreach _backpack;
 		
 	
        

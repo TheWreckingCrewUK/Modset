@@ -351,8 +351,53 @@ g_p52 = "";
 g_p53 = "";
 
 execVM "player\boxes\main_ammo.sqf";
+execVM "player\boxes\secondary_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
+
+execVM "player\psync.sqf";
+
+ TWC_fnc_getAlphaList = {
+    execVM "Playerlist\alpha.sqf";
+};
+
+TWC_fnc_getBravoList = {
+     execVM "Playerlist\bravo.sqf";
+};
+
+TWC_fnc_getCharlieList = {
+   execVM "Playerlist\charlie.sqf";
+};
+
+TWC_fnc_getDeltaList = {
+    execVM "Playerlist\delta.sqf";
+};
+
+TWC_fnc_getEchoList = {
+    execVM "Playerlist\Echo.sqf";
+};
+
+TWC_fnc_getAirList = {
+   execVM "Playerlist\air.sqf";
+};
+
+playerListAction = ["thisStartsTheList","Player List","", {},{true}] call ace_interact_menu_fnc_createAction;
+alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}] call ace_interact_menu_fnc_createAction;
+bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
+charlieAction = ["CharlieList","Charlie List","", {call TWC_fnc_getCharlieList;},{true}] call ace_interact_menu_fnc_createAction;
+deltaAction = ["DeltaList","Delta List","", {call TWC_fnc_getDeltaList;},{true}] call ace_interact_menu_fnc_createAction;
+echoAction = ["EchoList","Echo List","", {call TWC_fnc_getEchoList;},{true}] call ace_interact_menu_fnc_createAction;
+airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ace_interact_menu_fnc_createAction;
+
+[player, 1, ["ACE_SelfActions"], playerListAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], alphaAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], bravoAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], charlieAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], deltaAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], echoAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
+
+
 if(false)then{
 	id_test_status = ["Debug", {true}, _test2, true] call AGM_Interaction_fnc_addInteractionSelf;
 };
@@ -361,8 +406,6 @@ _playerlist = ['TWC_player','Playerlist','', {[] execVM "lib\playerlist.sqf";},{
  [player, 1, ["ACE_SelfActions"], _playerlist] call ace_interact_menu_fnc_addActionToObject;
 
 
-
-execVM "player\psync.sqf";
 
 [] spawn {
 	while{true} do {

@@ -1,6 +1,6 @@
 _repeatTasks=false;
 
-AOlimit = 5;
+AOlimit = 3;
 
 if (count TaskArray > AOlimit)
 	then {
