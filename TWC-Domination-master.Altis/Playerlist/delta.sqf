@@ -1,6 +1,6 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Alpha British Army", [["Alpha Section Leader", [g_p1, "Section Leader"], [g_p2, "Rifleman"], [g_p4, "Automatic Rifleman"], [g_p3, "Grenadier"]],["Fire Team 2", [g_p5, "2IC"], [g_p6, "Machine Gunner"], [g_p7, "Marksman"], [g_p8, "Medic"]]]],
-                
+g_playerlist = [["Delta  Swedish Army", [["Delta Squad Leader", [g_p37, "Squad Leader"], [g_p38, "Fire Team Leader"], [g_p39, "Grenadier"], [g_p40, "Automatic Rifleman"], [g_p41, "Medic"]], ["Fire Team 2", [g_p42, "2IC"], [g_p42, "AT Rifleman"], [g_p43, "AAT Rifleman"], [g_p44, "Machine Gunner"]]]]				
+				
 				];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";

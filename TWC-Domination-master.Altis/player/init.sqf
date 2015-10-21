@@ -386,7 +386,6 @@ alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}]
 bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
 charlieAction = ["CharlieList","Charlie List","", {call TWC_fnc_getCharlieList;},{true}] call ace_interact_menu_fnc_createAction;
 deltaAction = ["DeltaList","Delta List","", {call TWC_fnc_getDeltaList;},{true}] call ace_interact_menu_fnc_createAction;
-echoAction = ["EchoList","Echo List","", {call TWC_fnc_getEchoList;},{true}] call ace_interact_menu_fnc_createAction;
 airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], playerListAction] call ace_interact_menu_fnc_addActionToObject;
@@ -394,16 +393,12 @@ airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ac
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], bravoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], charlieAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], deltaAction] call ace_interact_menu_fnc_addActionToObject;
-[player, 1, ["ACE_SelfActions", "thisStartsTheList"], echoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
 
 
 if(false)then{
 	id_test_status = ["Debug", {true}, _test2, true] call AGM_Interaction_fnc_addInteractionSelf;
 };
-
-_playerlist = ['TWC_player','Playerlist','', {[] execVM "lib\playerlist.sqf";},{true}] call ace_interact_menu_fnc_createAction;
- [player, 1, ["ACE_SelfActions"], _playerlist] call ace_interact_menu_fnc_addActionToObject;
 
 
 
