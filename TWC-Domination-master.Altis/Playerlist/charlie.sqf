@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Charlie USMC", [["Charlie Squad Leader", [g_p17, "Squad Leader"]], ["Fire Team 1", [g_p18, "Fire Team Leader"], [g_p19, "Rifleman"], [g_p20, "Automatic Rifleman"], [g_p21, "Assistant Automatic Rifleman"]], ["Fire Team 2", [g_p22, "Fire Team Leader"], [g_p23, "Rifleman"], [g_p24, "Automatic Rifleman"], [g_p25, "Assistant Automatic Rifleman"]], ["Fire Team 3", [g_p26, "Fire Team Leader"], [g_p27, "Rifleman"], [g_p28, "Automatic Rifleman"], [g_p29, "Medic"]]]]					
+g_playerlist = [["Charlie USMC", [["Charlie Squad Leader", [g_p18, "Squad Leader"]], ["Fire Team 1", [g_p19, "Fire Team Leader"], [g_p20, "Rifleman"], [g_p21, "Automatic Rifleman"], [g_p22, "Assistant Automatic Rifleman"]], ["Fire Team 2", [g_p23, "Fire Team Leader"], [g_p24, "Rifleman"], [g_p25, "Automatic Rifleman"], [g_p26, "Assistant Automatic Rifleman"]], ["Fire Team 3", [g_p27, "Fire Team Leader"], [g_p28, "Rifleman"], [g_p29, "Automatic Rifleman"], [g_p30, "Medic"]]]]					
 				];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
