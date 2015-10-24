@@ -95,7 +95,7 @@ if ((str player) in _pilots && (count playableUnits) < 2) then {
     ["end4", false, 0] call BIS_fnc_endMission;
 };
 
-if ((str player) in _a10pilot && ((count playableUnits) <= 13 then {
+if ((str player) in _a10pilot && ((count playableUnits) <= 13) then {
     ["end7", false, 0] call BIS_fnc_endMission;
 };
 	

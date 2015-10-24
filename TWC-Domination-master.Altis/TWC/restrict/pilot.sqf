@@ -52,6 +52,7 @@ true spawn {
                 if(player in _forbidden) then {
                     systemChat "You are not pilot and not allowed to pilot or gun this helicopter";
                     player action ["getout", _veh];
+					player action ["eject", _veh];
                 };
             };
 
@@ -62,16 +63,18 @@ true spawn {
                 if(player in _forbidden) then {
                     systemChat "You are not pilot and not allowed to pilot or gun this helicopter";
                     player action ["getout", _veh];
+					player action ["eject", _veh];
                 };
             };
 
-            //Vehicle Pilot Check for wildcat
+            //Vehicle Pilot Check for A10
             if(({typeOf _veh == _x} count _A10) > 0 && !_iamA10pilot && !_iamcrew) then {
                 //Forbidden seats: copilot, gunner, pilot
                 _forbidden = [_veh turretUnit [0]] + [gunner _veh] + [driver _veh];
                 if(player in _forbidden) then {
                     systemChat "You are not pilot and not allowed to pilot or gun this helicopter";
                     player action ["getout", _veh];
+					player action ["eject", _veh];
                 };
             };
 
@@ -87,6 +90,7 @@ true spawn {
                 if(player in _forbidden) then {
                     systemChat "This is a Russian vehicle!";
                     player action ["eject", _veh];
+					player action ["getout", _veh];
                 };
             };
 
@@ -98,6 +102,7 @@ true spawn {
                 if(player in _forbidden) then {
                     systemChat "This is a Russian vehicle!";
                     player action ["eject", _veh];
+					player action ["getout", _veh];
                 };
             };
 
@@ -108,6 +113,7 @@ true spawn {
                 if(player in _forbidden) then {
                     systemChat "This is a Russian vehicle!";
                     player action ["eject", _veh];
+					player action ["getout", _veh];
                 };
             };
             if(({typeOf _veh == _x} count _abrams) > 0 && !_armourc) then {
@@ -116,6 +122,7 @@ true spawn {
                 if(player in _forbidden) then {
                     systemChat "Join Armour Crew to use this vehicle!";
                     player action ["eject", _veh];
+					player action ["getout", _veh];
                 };
             };
 

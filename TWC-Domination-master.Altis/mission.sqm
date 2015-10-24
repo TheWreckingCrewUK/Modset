@@ -1675,7 +1675,7 @@ class Mission
 					skill=0.60000002;
 					text="p51";
 					init="this join g51;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\JTAC_SLR.sqf'""];";
-					description="JTAC Section Lead";
+					description="JTAC";
 				};
 				class Item1
 				{
@@ -1688,7 +1688,7 @@ class Mission
 					skill=0.60000002;
 					text="p52";
 					init="this join g52;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\JTAC_RFR.sqf'""];";
-					description="JTAC Assistant";
+					description="Forward Air Controller";
 				};
 			};
 		};
