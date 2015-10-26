@@ -18,7 +18,7 @@ _timer = 240;  // time in seconds until box is refilled.
  
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1]];
+_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["FlareWhite_F",5],["FlareGreen_F",5]];
  
 _tmp_weapons = [];
 _tmp_magazines = [];
@@ -78,7 +78,7 @@ if (g_class == "BAF_SL") then {
         [
 								
 								
-								["rhs_fgm148_magazine_AT", 2],
+								["rhs_fim92_mag", 2],
 								["30Rnd_556x45_Stanag",50],
 								["30Rnd_556x45_Stanag_Tracer_Red",50],
                                 ["UK3CB_BAF_17Rnd_9mm",15]
@@ -125,7 +125,7 @@ if (g_class == "BAF_SL") then {
 	         ["1Rnd_SmokeGreen_Grenade_shell", 10],
 	         ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	         ["1Rnd_SmokePurple_Grenade_shell", 10],
-			 
+			 ["UGL_FlareWhite_F", 10],
 	         ["1Rnd_SmokeBlue_Grenade_shell", 10]
         ];
 		
@@ -300,6 +300,7 @@ if (g_class == "BAF_SL") then {
 			["tf_anprc152",1]
 		];
 };
+// Load availible to US Section Lead Only
 if (g_class == "US_SL") then {
                 _tmp_weapons =
                 [
@@ -320,7 +321,8 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokeGreen_Grenade_shell", 10],
 	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
-                             	["1Rnd_SmokeBlue_Grenade_shell", 10]
+                             	["1Rnd_SmokeBlue_Grenade_shell", 10],
+								["UGL_FlareWhite_F", 10]
 								
                                
                 ];
@@ -343,7 +345,7 @@ if (g_class == "US_SL") then {
                 ];
 };
  
-// load available to Rifleman only.
+// load available to US Fire Team Lead only.
  if (g_class == "US_TL1") then {
         _tmp_weapons =
         [
@@ -374,7 +376,7 @@ if (g_class == "US_SL") then {
 								
 };
  
-// load available to Grenadier only.
+// load available to US FireTeam Lead only.
  if (g_class == "US_TL2") then {
        _tmp_weapons =
         [
@@ -404,7 +406,7 @@ if (g_class == "US_SL") then {
 		];
 };
  
-// load available to Automatic Rifleman only.
+// load available to US Rifleman only.
  if (g_class == "US_R1") then {
         _tmp_weapons =
         [
@@ -440,7 +442,7 @@ if (g_class == "US_SL") then {
 		];
 };
  
-// load available to Section 2IC only.
+// load available to US Automatic Rifleman only.
  if (g_class == "US_AR2") then {
         _tmp_weapons =
         [
@@ -471,7 +473,7 @@ if (g_class == "US_SL") then {
 		];
 };
  
-// load available to GPMG Gunner only.
+// load available toUS Automatic Rifleman only.
  if (g_class == "US_AR1") then {
          _tmp_weapons =
         [
@@ -502,7 +504,7 @@ if (g_class == "US_SL") then {
 		];
 };
  
-// load available to GREN only.
+// load available to US Grenadier only.
  if (g_class == "US_G") then {
        _tmp_weapons =
         [
@@ -526,7 +528,8 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokeGreen_Grenade_shell", 10],
 	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
-                             	["1Rnd_SmokeBlue_Grenade_shell", 10]
+                             	["1Rnd_SmokeBlue_Grenade_shell", 10],
+								["UGL_FlareWhite_F", 10]
         ];
 		
 		_tmp_items = 
@@ -544,6 +547,7 @@ if (g_class == "US_SL") then {
 		     
 		];
 };
+//load availible to US marksmen only
  if (g_class == "US_MARK") then {
        _tmp_weapons =
         [
@@ -560,9 +564,7 @@ if (g_class == "US_SL") then {
         [
              ["rhsusf_20Rnd_762x51_m118_special_Mag",25],
 			 
-             ["rhsusf_mag_7x45acp_MHP",15],
-			 
-			 ["rhs_fgm148_magazine_AT", 2]
+             ["rhsusf_mag_7x45acp_MHP",15]
         ];
 		
 		_tmp_items = 
@@ -577,6 +579,7 @@ if (g_class == "US_SL") then {
 			 ["tf_anprc152",1]
 		];
 };
+//load availible to US Medic Only
  if (g_class == "US_MED") then {
        _tmp_weapons =
         [
@@ -609,7 +612,7 @@ if (g_class == "US_SL") then {
 			 ["tf_anprc152",1]
 		];
 };
- 
+//load availible to Marines Seciton lead only
  if (g_class == "USMC_SL") then {
                 _tmp_weapons =
                 [
@@ -649,12 +652,13 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
                              	["1Rnd_SmokeBlue_Grenade_shell", 10],
-								["tf_anprc152",1]
+								["tf_anprc152",1],
+								["UGL_FlareWhite_F", 10]
                
                 ];
 };
  
-// load available to Rifleman only.
+// load available to Marines Section Lead only.
  if (g_class == "USMC_TL1") then {
         _tmp_weapons =
         [
@@ -688,12 +692,13 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
                              	["1Rnd_SmokeBlue_Grenade_shell", 10],
-								["tf_anprc152",1]
+								["tf_anprc152",1],
+								["UGL_FlareWhite_F", 10]
 		];
 								
 };
  
-// load available to Grenadier only.
+// load available to marines team lead only.
  if (g_class == "USMC_TL2") then {
         _tmp_weapons =
         [
@@ -728,11 +733,12 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
                              	["1Rnd_SmokeBlue_Grenade_shell", 10],
 								["rhsusf_assault_eagleaiii_ocp",1],
-								["tf_anprc152",1]
+								["tf_anprc152",1],
+								["UGL_FlareWhite_F", 10]
 		];
 };
  
-// load available to Automatic Rifleman only.
+// load available to marines team lead only.
  if (g_class == "USMC_TL3") then {
          _tmp_weapons =
         [
@@ -767,11 +773,12 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
                              	["1Rnd_SmokeBlue_Grenade_shell", 10],
 								["rhsusf_assault_eagleaiii_ocp",1],
-								["tf_anprc152",1]
+								["tf_anprc152",1],
+								["UGL_FlareWhite_F", 10]
 		];
 };
  
-// load available to Section 2IC only.
+// load available to Rifleman only.
  if (g_class == "USMC_R1") then {
         _tmp_weapons =
         [
@@ -791,7 +798,7 @@ if (g_class == "US_SL") then {
 			 
              ["rhsusf_mag_7x45acp_MHP",15],
 			 
-			 ["rhs_fgm148_magazine_AT", 2]
+			 ["rhs_fim92_mag", 2]
 			 
         ];
 		
@@ -810,7 +817,7 @@ if (g_class == "US_SL") then {
 		];
 };
  
-// load available to GPMG Gunner only.
+// load available to Rifleman only.
  if (g_class == "USMC_R2") then {
         _tmp_weapons =
         [
@@ -830,7 +837,7 @@ if (g_class == "US_SL") then {
 			 
              ["rhsusf_mag_7x45acp_MHP",15],
 			 
-			 ["rhs_fgm148_magazine_AT", 2]
+			 ["rhs_fim92_mag", 2]
 			 
         ];
 		
@@ -850,7 +857,7 @@ if (g_class == "US_SL") then {
 		];
 };
  
-// load available to GREN only.
+// load available to Rifleman only.
  if (g_class == "USMC_R3") then {
        _tmp_weapons =
         [
@@ -870,7 +877,7 @@ if (g_class == "US_SL") then {
 			
              ["rhsusf_mag_7x45acp_MHP",15],
 			 
-			 ["rhs_fgm148_magazine_AT", 2]
+			 ["rhs_fim92_mag", 2]
 			 
         ];
 		
@@ -888,6 +895,7 @@ if (g_class == "US_SL") then {
 			 ["tf_anprc152",1]
 		];
 };
+//load availible to us rifleman only
  if (g_class == "USMC_R2") then {
        _tmp_weapons =
         [
@@ -924,6 +932,7 @@ if (g_class == "US_SL") then {
 			 ["tf_anprc152",1]
 		];
 };
+//load availible to marine assistant AR
  if (g_class == "USMC_A1") then {
        _tmp_weapons =
         [
@@ -960,6 +969,7 @@ if (g_class == "US_SL") then {
 			 ["tf_anprc152",1]
 		];
 };
+//load availible to marines assistant AR
  if (g_class == "USMC_A2") then {
        _tmp_weapons =
         [
@@ -996,6 +1006,7 @@ if (g_class == "US_SL") then {
 			 ["tf_anprc152",1]
 		];
 };
+//load availible to marines assistant AR only
 if (g_class == "USMC_AR1") then {
        _tmp_weapons =
         [
@@ -1026,6 +1037,7 @@ if (g_class == "USMC_AR1") then {
 			 ["tf_anprc152",1]
 		];
 };
+//load availible to marine assistant ar only
 if (g_class == "USMC_AR2") then {
        _tmp_weapons =
         [
@@ -1056,6 +1068,7 @@ if (g_class == "USMC_AR2") then {
 			 ["tf_anprc152",1]
 		];
 };
+//loadout availible to marine AR only
 if (g_class == "USMC_AR3") then {
        _tmp_weapons =
         [
@@ -1087,6 +1100,7 @@ if (g_class == "USMC_AR3") then {
 			 ["tf_anprc152",1]
 		];
 };
+//loadout availible to marine medic only
  if (g_class == "USMC_MED") then {
        _tmp_weapons =
         [
@@ -1117,6 +1131,7 @@ if (g_class == "USMC_AR3") then {
 			 ["tf_anprc152",1]
 		];
 };
+//loadout availible to wildcat pilot only
  if (g_class == "PILOT_WILDCAT") then {
        _tmp_weapons =
         [
@@ -1140,6 +1155,7 @@ if (g_class == "USMC_AR3") then {
 			 ["tf_anprc152",1]
 		];
 };
+//loadout availible to chinook pilot only
  if (g_class == "PILOT_CHINNOK") then {
        _tmp_weapons =
         [
@@ -1163,6 +1179,7 @@ if (g_class == "USMC_AR3") then {
 			 ["tf_anprc152",1]
 		];
 };
+//loadout availible to blackhawk pilot only
  if (g_class == "PILOT_BLACKHAWK") then {
        _tmp_weapons =
         [
@@ -1188,7 +1205,7 @@ if (g_class == "USMC_AR3") then {
 			 ["tf_anprc152",1]
 		];
 };
-
+//loadout availible to sniper team spotter only
  if (g_class == "SPOTTER") then {
        _tmp_weapons =
         [
@@ -1217,6 +1234,7 @@ if (g_class == "USMC_AR3") then {
 			 ["tf_anprc152",1]
 		];
 };
+//load availible to sniper team sniper only
  if (g_class == "SNIPER") then {
        _tmp_weapons =
         [
@@ -1246,7 +1264,7 @@ if (g_class == "USMC_AR3") then {
 			["tf_anprc152",1]
 		];
 };
-
+//load availible to swedish section lead only
  if (g_class == "SWD_SL") then {
        _tmp_weapons =
         [
@@ -1274,7 +1292,7 @@ if (g_class == "USMC_AR3") then {
 			["tf_anprc152",1]
 		];
 };
-
+//load availible to swedish 2ic only
 if (g_class == "SWD_2IC") then {
        _tmp_weapons =
         [
@@ -1304,6 +1322,7 @@ if (g_class == "SWD_2IC") then {
 			["tf_anprc152",1]
 		];
 };
+//load availible to swedish AT only
  if (g_class == "SWD_AT") then {
        _tmp_weapons =
         [
@@ -1336,7 +1355,7 @@ if (g_class == "SWD_2IC") then {
 			["sam_acco_m86",1]
 		];
 };
-
+//load availible to swedish AAT only
  if (g_class == "SWD_AAT") then {
        _tmp_weapons =
         [
@@ -1368,7 +1387,7 @@ if (g_class == "SWD_2IC") then {
 			["sam_acco_m86",1]
 		];
 };
-
+//load availible to swedish grenadier only
  if (g_class == "SWD_GRN") then {
        _tmp_weapons =
         [
@@ -1390,7 +1409,7 @@ if (g_class == "SWD_2IC") then {
 			 ["1Rnd_SmokeYellow_Grenade_shell", 10],
 			 ["1Rnd_SmokePurple_Grenade_shell", 10],
 			 ["1Rnd_SmokeBlue_Grenade_shell", 10],
-			 
+			 ["UGL_FlareWhite_F", 10],
 			 ["SAM_30Rnd_556x45_Pmag_T",50]
 			 
         ];
@@ -1405,7 +1424,7 @@ if (g_class == "SWD_2IC") then {
 			["tf_anprc152",1]
 		];
 };
-
+//load availible to swedish AR only
  if (g_class == "SWD_AR") then {
        _tmp_weapons =
         [
@@ -1434,7 +1453,7 @@ if (g_class == "SWD_2IC") then {
 			["tf_anprc152",1]
 		];
 };
-
+//load availible to swedish mg only
  if (g_class == "SWD_MG") then {
        _tmp_weapons =
         [
@@ -1463,6 +1482,7 @@ if (g_class == "SWD_2IC") then {
 			["tf_anprc152",1]
 		];
 };
+//load availbel to swedish medic only
  if (g_class == "SWD_MED") then {
        _tmp_weapons =
         [
@@ -1494,6 +1514,7 @@ if (g_class == "SWD_2IC") then {
 			["tf_anprc152",1]
 		];
  };
+//load availibe to jtac leader only
   if (g_class == "JTAC_SL") then {
                 _tmp_weapons =
                 [
@@ -1513,7 +1534,8 @@ if (g_class == "SWD_2IC") then {
 	                            ["1Rnd_SmokeGreen_Grenade_shell", 10],
 	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
-                             	["1Rnd_SmokeBlue_Grenade_shell", 10]
+                             	["1Rnd_SmokeBlue_Grenade_shell", 10],
+								["UGL_FlareWhite_F", 10]
 								
                                
                 ];
@@ -1530,6 +1552,7 @@ if (g_class == "SWD_2IC") then {
                
                 ];
 };
+//load availible to forward air controller only
   if (g_class == "JTAC_RF") then {
                 _tmp_weapons =
                 [
@@ -1549,7 +1572,8 @@ if (g_class == "SWD_2IC") then {
 	                            ["1Rnd_SmokeGreen_Grenade_shell", 10],
 	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
-                             	["1Rnd_SmokeBlue_Grenade_shell", 10]
+                             	["1Rnd_SmokeBlue_Grenade_shell", 10],
+								["UGL_FlareWhite_F", 10]
 								
                                
                 ];
@@ -1566,6 +1590,7 @@ if (g_class == "SWD_2IC") then {
                
                 ];
 };
+//load availbe to a10 pilot only
  if (g_class == "PILOT_A10") then {
        _tmp_weapons =
         [

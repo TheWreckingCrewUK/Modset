@@ -19,8 +19,6 @@ comment "Add weapons";
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
-player linkItem "tf_microdagr";
-player linkItem "tf_anprc154_1";
 player linkItem "rhsusf_ANPVS_14";
 
 comment "Set identity";
