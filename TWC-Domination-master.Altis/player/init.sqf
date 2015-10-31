@@ -294,6 +294,16 @@ if (!isNil "P53" && {player == P53}) then {
 	g_group = "1";
 	g_unit = "161";
 };
+if (!isNil "P54" && {player == P54}) then {
+    g_class = "SNIPER";
+	g_group = "1";
+	g_unit = "162";
+};
+if (!isNil "P55" && {player == P55}) then {
+    g_class = "SPOTTER";
+	g_group = "1";
+	g_unit = "163";
+};
 
 g_p1 = "";
 g_p2 = "";
@@ -349,6 +359,8 @@ g_p50 = "";
 g_p51 = "";
 g_p52 = "";
 g_p53 = "";
+g_p54 = "";
+g_p55 = "";
 
 execVM "player\boxes\main_ammo.sqf";
 execVM "player\boxes\secondary_ammo.sqf";
@@ -376,7 +388,9 @@ TWC_fnc_getDeltaList = {
 TWC_fnc_getEchoList = {
     execVM "Playerlist\Echo.sqf";
 };
-
+TWC_fnc_getSniperList = {
+	execVM "Playerlist\Sniper.sqf";
+};
 TWC_fnc_getAirList = {
    execVM "Playerlist\air.sqf";
 };
@@ -386,6 +400,7 @@ alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}]
 bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
 charlieAction = ["CharlieList","Charlie List","", {call TWC_fnc_getCharlieList;},{true}] call ace_interact_menu_fnc_createAction;
 deltaAction = ["DeltaList","Delta List","", {call TWC_fnc_getDeltaList;},{true}] call ace_interact_menu_fnc_createAction;
+sniperAction = ["SniperList","Sniper List","", {call TWC_fnc_getSniperList;},{true}] call ace_interact_menu_fnc_createAction;
 airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], playerListAction] call ace_interact_menu_fnc_addActionToObject;
@@ -393,6 +408,7 @@ airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ac
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], bravoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], charlieAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], deltaAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], sniperAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
 
 

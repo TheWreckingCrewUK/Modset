@@ -71,6 +71,7 @@ if(isServer) then
 	publicVariable "TWCserverID";
 };
 
+execVM "Zues.sqf";
 
 
 waitUntil {!isNull player};
@@ -90,14 +91,16 @@ _Time = ['TWC_Timeplayed','Time Played','', {[] call TWC_fnc_timePlayed},{true}]
 
 _pilots = ["p31", "p33"];
 _a10pilot = ["p53"];
+_sniperteam = ["p54", "p55"];
 
 if ((str player) in _pilots && (count playableUnits) < 2) then {
     ["end4", false, 0] call BIS_fnc_endMission;
 };
 
 if ((str player) in _a10pilot && ((count playableUnits) <= 13) then {
-    ["end7", false, 0] call BIS_fnc_endMission;
+    ["end6", false, 0] call BIS_fnc_endMission;
 };
-	
-execVM "Zues.sqf";
+if ((str player) in _sniperteam && ((count playableUnits) <= 10) then {
+    ["end6", false, 0] call BIS_fnc_endMission;
+};
 

@@ -16,7 +16,7 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 comment "Add containers";
-_unit forceAddUniform "SAM_Crye_M90_uniform";
+_unit forceAddUniform "SAM_Crye_M90k_uniform";
 for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_morphine";};
 _unit addItemToUniform "Chemlight_green";

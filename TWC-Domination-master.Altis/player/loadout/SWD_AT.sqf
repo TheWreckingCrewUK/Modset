@@ -11,12 +11,12 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "SAM_Crye_M90_uniform";
+player forceAddUniform "SAM_Crye_M90k_uniform";
 for "_i" from 1 to 4 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
 player addVest "SAM_PlateCarrier";
-player addBackpack "B_Carryall_oli";
+player addBackpack "B_Carryall_cbr";
 player addHeadgear "SAM_HelmetIA_M90";
 player addGoggles "sam_peltor_bronze";
 

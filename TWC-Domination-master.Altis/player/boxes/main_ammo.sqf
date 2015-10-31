@@ -576,6 +576,7 @@ if (g_class == "US_SL") then {
 		     ["rhsusf_acc_LEUPOLDMK4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ucp",1],
+			 ["bipod_01_F_blk",1],
 			 ["tf_anprc152",1]
 		];
 };
@@ -1227,7 +1228,8 @@ if (g_class == "USMC_AR3") then {
 		[
 			 ["rhsusf_acc_ACOG2",1],
 			 ["ACE_ItemKestrel",1],
-			 
+			 ["ACE_SpottingScope",1],
+			 ["ACE_Vector",1],
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],

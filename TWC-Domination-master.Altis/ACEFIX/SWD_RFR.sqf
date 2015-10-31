@@ -14,12 +14,12 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 comment "Add containers";
-_unit forceAddUniform "SAM_Crye_M90_uniform";
+_unit forceAddUniform "SAM_Crye_M90k_uniform";
 for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_morphine";};
 _unit addItemToUniform "Chemlight_green";
 _unit addVest "SAM_PlateCarrier";
-_unit addBackpack "B_Carryall_oli";
+_unit addBackpack "B_Carryall_cbr";
 _unit addHeadgear "SAM_HelmetIA_M90";
 _unit addGoggles "sam_peltor_bronze";
 
