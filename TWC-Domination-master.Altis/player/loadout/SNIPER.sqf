@@ -12,7 +12,7 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "U_B_FullGhillie_sard";
-player addBackpack "tf_rt1523g_big_rhs";
+player addBackpack "B_rhsusf_B_BACKPACK";
 player addGoggles "G_Bandanna_tan";
 
 comment "Add weapons";
