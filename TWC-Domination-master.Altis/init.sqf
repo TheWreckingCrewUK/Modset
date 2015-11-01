@@ -93,14 +93,14 @@ _pilots = ["p31", "p33"];
 _a10pilot = ["p53"];
 _sniperteam = ["p54", "p55"];
 
-if ((str player) in _pilots && (count playableUnits) < 2) then {
+if ((str player) in _pilots && (count playableUnits) < 2)) then {
     ["end4", false, 0] call BIS_fnc_endMission;
 };
 
-if ((str player) in _a10pilot && ((count playableUnits) <= 13) then {
+if ((str player) in _a10pilot && ((count playableUnits) <= 13)) then {
     ["end6", false, 0] call BIS_fnc_endMission;
 };
-if ((str player) in _sniperteam && ((count playableUnits) <= 10) then {
+if ((str player) in _sniperteam && ((count playableUnits) <= 10)) then {
     ["end6", false, 0] call BIS_fnc_endMission;
 };
 
