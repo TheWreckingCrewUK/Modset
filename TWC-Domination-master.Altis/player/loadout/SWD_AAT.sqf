@@ -17,7 +17,7 @@ for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
 player addVest "SAM_PlateCarrier";
 player addBackpack "SAM_GRG_Backpack_Heat";
-player addHeadgear "SAM_HelmetIA_M90";
+player addHeadgear "SAM_HelmetIA_M90k";
 
 comment "Add weapons";
 

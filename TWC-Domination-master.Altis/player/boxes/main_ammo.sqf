@@ -1211,7 +1211,7 @@ if (g_class == "USMC_AR3") then {
        _tmp_weapons =
         [
            
-			["rhsusf_weap_m1911a1",1],
+			["UK3CB_BAF_L131A1",1],
 			["rhs_weap_mk18_KAC",1]
 			  
 		];
@@ -1233,6 +1233,7 @@ if (g_class == "USMC_AR3") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
+			 ["ACE_MX2A",1],
 			 ["tf_anprc152",1]
 		];
 };
@@ -1243,7 +1244,7 @@ if (g_class == "USMC_AR3") then {
            
 			["UK3CB_BAF_L115A3_Desert_Ghillie",1],
 			["rhs_weap_sr25_ec",1],
-			["rhsusf_weap_m1911a1",1]
+			["UK3CB_BAF_L131A1",1]
 			  
 		];
        
@@ -1257,12 +1258,13 @@ if (g_class == "USMC_AR3") then {
 		
 		_tmp_items = 
 		[
-			
-			["ACE_ItemKestrel",1],
+			["rhsusf_acc_ACOG2",1],			
 			["UK3CB_BAF_SB31250_Desert_Ghillie",1],
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
+			["ACE_Vector",1],
+			["ACE_MX2A",1],
 			["tf_anprc152",1]
 		];
 };
@@ -1295,7 +1297,7 @@ if (g_class == "USMC_AR3") then {
 		];
 };
 //load availible to swedish 2ic only
-if (g_class == "SWD_2IC") then {
+if (g_class == "SWD_FTL") then {
        _tmp_weapons =
         [
            
@@ -1613,6 +1615,7 @@ if (g_class == "SWD_2IC") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
+			 ["ACE_microDAGR",1],
 			 ["tf_anprc152",1]
 		];
 };
