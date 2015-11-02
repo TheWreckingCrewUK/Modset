@@ -33,8 +33,8 @@ _t72 = "rhs_t72bd_tv";
 _shilka = "rhs_zsu234_aa";
 _bunkergun = "RHS_NSV_TriPod_MSV";
 _radar = "rhs_p37";
-_bunkerAT = "RDS_Metis_CSAT";
-_ATgunner = "rhs_msv_emr_rifleman";
+_ruflag = "rhs_Flag_Russia_F";
+_natoflag = "Flag_NATO_F";
 
 //array select
 params ["_AOname"]; //example "pygros"
@@ -64,7 +64,8 @@ if (isServer) then {
 	_AOBunkerOneMarker setmarkersize [0.5, 0.5];
 	_AOBunkerOneMarker setmarkercolor "ColorBlack";
 
-	 _AOBunkerOneSpawn = "Land_BagBunker_Large_F" createVehicle (_pos);
+	_AOBunkerOneSpawn = "Land_BagBunker_Large_F" createVehicle (_pos);
+	_BunkerOneFlag = _ruflag createVehicle (_pos);
 
 	_AOBunkerOneGunOne = _bunkergun createVehicle (_pos);
 	_AOBunkerOneGunOne setPos [(getPos _AOBunkerOneGunOne select 0)+6, getPos _AOBunkerOneGunOne select 1, 0];
@@ -74,14 +75,7 @@ if (isServer) then {
 	_AOBunkerOneGunTwo = _bunkergun createVehicle (_pos);
 	_AOBunkerOneGunTwo setPos [(getPos _AOBunkerOneGunTwo select 0)-8, getPos _AOBunkerOneGunTwo select 1, 0];
 	_AOBunkerOneGunTwo setDir 270;
-	createVehicleCrew __AOBunkerOneGunTwo;
-
-
-	_AOBunkerOneATOne = _bunkerAT createVehicle (_pos);
-    	_AOBunkerOneATOne setPos [getPos _AOBunkerOneATOne select 0,( getPos _AOBunkerOneATOne select 1)-8, 0];
-   	_AOBunkerOneATOne setDir 180;
-	_AOBunkerOneATOneGunner = _ATgunner createVehicle _pos;
- 	_AOBunkerOneATOneGunner moveincargo _AOBunkerOneATOne;
+	createVehicleCrew _AOBunkerOneGunTwo;
 
 	_AOBunkerOneDefenceOne = [_pos, EAST, _fireteam] call BIS_fnc_spawnGroup;
 	[_AOBunkerOneDefenceOne, _pos, 10] call CBA_fnc_taskDefend;
@@ -89,7 +83,7 @@ if (isServer) then {
  	_AOBunkerOnePatrolOne = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
 	[_AOBunkerOnePatrolOne, _pos, 250, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
 
-  	  _positionForTrigger = _pos;
+    _positionForTrigger = _pos;
 	_areaForTrigger = [10,10,0,false];
 	_activationForTrigger = ["WEST", "PRESENT", true];
 	_stateForTrigger = ["this", format ["AObunkercount = AObunkercount + 1; hint 'Bunker Captured';  '%1' setmarkercolor 'ColorBlue';", _bunkerone], "deleteVehicle thisTrigger;"];
@@ -110,22 +104,17 @@ if isServer then {
 
 
  	_AOBunkerTwoSpawn = "Land_BagBunker_Large_F" createVehicle (_pos);
+	_BunkerTwoFlag = _ruflag createVehicle (_pos);
 
 	_AOBunkerTwoGunOne = _bunkergun createVehicle (_pos);
 	_AOBunkerTwoGunOne setPos [(getPos _AOBunkerTwoGunOne select 0)+6, getPos _AOBunkerTwoGunOne select 1, 0];
  	_AOBunkerTwoGunOne setDir 90;
-	createVehicleCrew _AOBunkerTwoGunTwo;
+	createVehicleCrew __AOBunkerTwoGunOne;
 
 	_AOBunkerTwoGunTwo = _bunkergun createVehicle (_pos);
 	_AOBunkerTwoGunTwo setPos [(getPos _AOBunkerTwoGunTwo select 0)-8, getPos _AOBunkerTwoGunTwo select 1, 0];
 	_AOBunkerTwoGunTwo setDir 270;
 	createVehicleCrew _AOBunkerThreeGunTwo;
-
-	_AOBunkerTwoATOne = _bunkerAT createVehicle (_pos);
-   	_AOBunkerTwoATOne setPos [getPos _AOBunkerTwoATOne select 0,( getPos _AOBunkerTwoATOne select 1)-8, 0];
-   	_AOBunkerTwoATOne setDir 180;
-	_AOBunkerTwoATOneGunner = _ATgunner createVehicle _pos;
- 	_AOBunkerTwoATOneGunner moveincargo _AOBunkerTwoATTwo;
 
 	_AOBunkerTwoDefenceOne = [_pos, EAST, _fireteam] call BIS_fnc_spawnGroup;
 	[_AOBunkerTwoDefenceOne, _pos, 10] call CBA_fnc_taskDefend;
@@ -156,7 +145,8 @@ if isServer then {
 	_AOBunkerThreeMarker setmarkercolor "ColorBlack";
 
 
-	 _AOBunkerThreeSpawn = "Land_BagBunker_Large_F" createVehicle (_pos);
+	_AOBunkerThreeSpawn = "Land_BagBunker_Large_F" createVehicle (_pos);
+	_BunkerThreeFlag = _ruflag createVehicle (_pos);
 
 	_AOBunkerThreeGunOne = _bunkergun createVehicle (_pos);
 	_AOBunkerThreeGunOne setPos [(getPos _AOBunkerThreeGunOne select 0)+6, getPos _AOBunkerThreeGunOne select 1, 0];
@@ -167,13 +157,6 @@ if isServer then {
 	_AOBunkerThreeGunTwo setPos [(getPos _AOBunkerThreeGunTwo select 0)-8, getPos _AOBunkerThreeGunTwo select 1, 0];
 	_AOBunkerThreeGunTwo setDir 270;
 	createVehicleCrew _AOBunkerThreeGunTwo;
-
-	_AOBunkerThreeATOne = _bunkerAT createVehicle (_pos);
-  	_AOBunkerThreeATOne setPos [getPos _AOBunkerThreeATOne select 0,( getPos _AOBunkerThreeATOne select 1)-8, 0];
-   	_AOBunkerThreeATOne setDir 180;
-	_AOBunkerThreeATOneGunner = _ATgunner createVehicle _pos;
- 	_AOBunkerThreeATOneGunner moveincargo _AOBunkerOneATOne;
-
 
 	_AOBunkerThreeDefenceOne = [_pos, EAST, _fireteam] call BIS_fnc_spawnGroup;
 	[_AOBunkerThreeDefenceOne, _pos, 10] call CBA_fnc_taskDefend;
