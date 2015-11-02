@@ -82,10 +82,11 @@ while {(damage _object > 0.001)} do{
 _object vehicleChat "Refueling...";
 
 while {(fuel _object) < 0.99 } do {
-        sleep 0.01;
+        sleep 0.1;
         if (speed _object != 0) then {_object setVelocity [0,0,-0.4]};
-        _object setFuel (fuel _object + 0.000825);
-				if (isengineOn _object) then {_object engineon False;};
+        _object setFuel (fuel _object + 0.00425);
+		if (isengineOn _object) then {_object engineon False;};
+		hint format ["%1", fuel _object];
     };
 
 sleep x_reload_time_factor;

@@ -304,6 +304,12 @@ if (!isNil "P55" && {player == P55}) then {
 	g_group = "1";
 	g_unit = "163";
 };
+if (!isNil "P56" && {player == P56}) then {
+    g_class = "PILOT_A10";
+	g_group = "1";
+	g_unit = "164";
+};
+
 
 g_p1 = "";
 g_p2 = "";
@@ -361,6 +367,7 @@ g_p52 = "";
 g_p53 = "";
 g_p54 = "";
 g_p55 = "";
+g_p56 = "";
 
 execVM "player\boxes\main_ammo.sqf";
 execVM "player\boxes\secondary_ammo.sqf";

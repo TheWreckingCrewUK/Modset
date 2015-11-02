@@ -1,6 +1,6 @@
-//made by hartzie edited by FakeMatty
-g_playerlist = [["Air Assets", [["Blackhawk", [g_p31, "Pilot"]],["Wildcat", [g_p33, "Pilot"]],["FA-18", [g_p53, "Pilot"],[g_p56, "Weapons Expert"], [g_p51, "JTAC Leader"], [g_p52, "JTAC Assistant"]]]]				
-				
+``//made by hartzie edited by FakeMatty
+g_playerlist = [[`"Alpha British Army", [["Alpha Section Leader", [g_p1, "Section Leader"], [g_p2, "Rifleman"], [g_p4, "Automatic Rifleman"], [g_p3, "Grenadier"]],["Fire Team 2", [g_p5, "2IC"], [g_p6, "Machine Gunner"], [g_p7, "Marksman"], [g_p8, "Medic"]]]]`
+                
 				];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
@@ -15,7 +15,7 @@ _text = "";
 	//systemChat format["debug:%1", _x];
 	_text = "";
 	_text = _text + format[_bigheadline, _x select 0];
-	{
+	{```````
 		//systemChat format["debug:%1", _x];
 		_text = _text + format[_headline, _x select 0];
 		for "_i" from 1 to ((count _x) -1) do {
