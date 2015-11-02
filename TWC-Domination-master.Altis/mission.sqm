@@ -1701,48 +1701,12 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={14157.601,20.4111,16208.834};
-					azimut=-232.67999;
-					id=65;
-					side="WEST";
-					vehicle="rhsusf_airforce_jetpilot";
-					player="PLAY CDG";
-					leader=1;
-					rank="CORPORAL";
-					skill=0.44999999;
-					text="p53";
-					init="this join g53;";
-					description="FA-18 Pilot";
-				};
-				class Item1
-				{
-					position[]={14159.632,20.391851,16211.722};
-					azimut=-232.67999;
-					id=66;
-					side="WEST";
-					vehicle="rhsusf_airforce_jetpilot";
-					player="PLAY CDG";
-					skill=0.44999999;
-					text="p56";
-					init="this join g56;";
-					description="FA-18 Weapons Expert";
-				};
-			};
-		};
-		class Item29
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=2;
-				class Item0
-				{
 					position[]={14657.466,17.91,16748.115};
 					azimut=-407.49399;
-					id=67;
+					id=65;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -1754,7 +1718,7 @@ class Mission
 				{
 					position[]={14659.242,17.91,16751.855};
 					azimut=-753.18903;
-					id=68;
+					id=66;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
@@ -1766,10 +1730,45 @@ class Mission
 				};
 			};
 		};
+		class Item29
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={14160.541,20.406588,16208.536};
+					azimut=-232.67999;
+					id=67;
+					side="WEST";
+					vehicle="rhsusf_airforce_jetpilot";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.44999999;
+					text="p56";
+					init="this join g56;";
+					description="F/A 18 Co-Pilot";
+				};
+				class Item1
+				{
+					position[]={14157.601,20.4111,16208.834};
+					azimut=-232.67999;
+					id=68;
+					side="WEST";
+					vehicle="rhsusf_airforce_jetpilot";
+					player="PLAY CDG";
+					skill=0.44999999;
+					text="p53";
+					init="this join g53;";
+					description="F/A 18 Pilot";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=99;
+		items=98;
 		class Item0
 		{
 			position[]={14641.096,17.91,16758.902};
@@ -2801,8 +2800,8 @@ class Mission
 		};
 		class Item96
 		{
-			position[]={14157.471,20.496988,16196.182};
-			azimut=115.82581;
+			position[]={14158.257,20.494522,16196.84};
+			azimut=111.043;
 			id=165;
 			side="EMPTY";
 			vehicle="JS_JC_FA18F";
@@ -2820,18 +2819,6 @@ class Mission
 			leader=1;
 			skill=0.44999999;
 			init="0 = [this, 600, 3600] execVM ""lib\vehicle.sqf"";";
-		};
-		class Item98
-		{
-			position[]={14545.758,17.830917,16177.844};
-			azimut=-235.659;
-			id=167;
-			side="EMPTY";
-			vehicle="B_Truck_01_ammo_F";
-			leader=1;
-			skill=0.44999999;
-			fuel=0;
-			description="FA-18 Pilot";
 		};
 	};
 	class Markers
@@ -3161,7 +3148,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="(""Air"" countType thislist  > 0) && ((getpos (thislist select 0)) select 2 < 1)";
-			expActiv="_xhandle= (thislist select 0) execVM ""TWC\Service\PlaneService.sqf"";";
+			expActiv="_xhandle= (thislist select 0) execVM ""TWC\Service\AirService.sqf"";";
 			class Effects
 			{
 			};
