@@ -80,49 +80,26 @@ waitUntil {player == player};
 _playerID = getPlayerUID player;
 memberIDArray = ["76561198078628958", "76561198010598279", "76561198061214513", "76561198051847668","76561198050512686", "76561198050180681", "76561198039562456", "76561198018609662", "76561198013509033", "76561198010876571", "76561198007975082", "76561198001649761", "76561197985821395", "76561197981096983", "76561197970591603", "76561198100339755", "76561198084557194", "76561198077371253", "76561198076461963", "76561198072105856", "76561198067385164", "76561198062338085", "76561198061797079", "76561198054727971","76561198070630639","76561198018806047","76561197981208292","_SP_PLAYER_"];
 null = execVM "TWC\Members\Timeplayed.sqf";
+_pilots = ["p31", "p33"];
+_jetPilots = ["p53","p56"];
+_groundUnits = [sniper, jtac, etc];
+_specialUnits = _pilots + _a10pilot;
 
 if ((getplayerUID player)in memberIDArray) then {
 	_Time = ['TWC_Timeplayed','Time Played','', {[] call TWC_fnc_timePlayed},{true}] call ace_interact_menu_fnc_createAction;
 	player, 1, ["ACE_SelfActions"], _Time] call ace_interact_menu_fnc_addActionToObject;
 };
 
-__pilots = ["p31", "p33"];
-_a10pilot = ["p53","p56"];
-_specialUnits = _pilots + _a10pilot;
-_playerString = str player;
-_playerID = getPlayerUID player;
-_totalPlayers = count playableUnits;
-memberIDArray = ["_SP_PLAYER_","76561198078628958", "76561198010598279", "76561198061214513", "76561198051847668","76561198050512686", "76561198050180681", "76561198039562456", "76561198018609662", "76561198013509033", "76561198010876571", "76561198007975082", "76561198001649761", "76561197985821395", "76561197981096983", "76561197970591603", "76561198100339755", "76561198084557194", "76561198077371253", "76561198076461963", "76561198072105856", "76561198067385164", "76561198062338085", "76561198061797079", "76561198054727971","76561198070630639","76561198018806047","76561197981208292"];
 
-if (_playerString in _specialUnits) then {
-	
-		if (_playerString in _pilots) then {
-			if (_totalPlayers < 5) then {
-				["end4", false, 0] call BIS_fnc_endMission;
-			};
-		};
+if ((str player) in _pilots && (count playableUnits) < 5) then {
+    ["end4", false, 0] call BIS_fnc_endMission;
+};
 
-		if (_playerString in _a10pilot) then {
-		    if (_playerID in memberIDArray) then {
-			     if (_totalPlayers < 15) then {
-				 ["end7", false, 0] call BIS_fnc_endMission;
-			     };
-		     }else{
-			     ["end7", false, 0] call BIS_fnc_endMission;
-		     };
-		};
-			
-	};
+if ((str player) in _jetPilots && ((count playableUnits) <= 13 || !((getPlayerUID player) in memberIDArray))) then {
+    ["end7", false, 0] call BIS_fnc_endMission;
+};
 
-
-
-
-
-
-
-
-
-
-
-
+if((str player) in _groundUnits && (count playableUnits) <= 13) then {
+    ["end4", false, 0] call BIS_fnc_endMission;
+};
 
