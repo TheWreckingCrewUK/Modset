@@ -18,7 +18,7 @@ _timer = 240;  // time in seconds until box is refilled.
  
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5]];
+_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["FlareWhite_F",5],["FlareGreen_F",5]];
  
 _tmp_weapons = [];
 _tmp_magazines = [];
@@ -1227,15 +1227,13 @@ if (g_class == "USMC_AR3") then {
 		_tmp_items = 
 		[
 			 ["rhsusf_acc_ACOG2",1],
-			 ["ACE_Kestrel4500",1],
+			 ["ACE_ItemKestrel",1],
 			 ["ACE_SpottingScope",1],
 			 ["ACE_Vector",1],
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
 			 ["ACE_MX2A",1],
-			 ["ACE_DAGR",1],
-			 ["ACE_Sandbag_empty",5],
 			 ["tf_anprc152",1]
 		];
 };
@@ -1267,9 +1265,6 @@ if (g_class == "USMC_AR3") then {
             ["ACE_morphine",10],
 			["ACE_Vector",1],
 			["ACE_MX2A",1],
-			["ACE_Kestrel4500",1],
-			["ACE_Sandbag_empty",5],
-			["ACE_DAGR",1],
 			["tf_anprc152",1]
 		];
 };
@@ -1277,7 +1272,7 @@ if (g_class == "USMC_AR3") then {
  if (g_class == "SWD_SL") then {
        _tmp_weapons =
         [
-			["ACE_Vector",1],
+			["ACE_Yardage450",1],
 			["SAM_AK5C",1]
 
 			  
@@ -1307,7 +1302,7 @@ if (g_class == "SWD_FTL") then {
         [
            
 			["SAM_AK5C",1],
-			["ACE_Vector",1],
+			["ACE_Yardage450",1],
 			["UK3CB_BAF_AT4_AT_Launcher",2]
 
 			  
@@ -1402,7 +1397,6 @@ if (g_class == "SWD_FTL") then {
         [
            
 			["SAM_AK5C_GRT",1],
-			["ACE_Vector",1],
 			["UK3CB_BAF_AT4_AT_Launcher",2]
 
 			  

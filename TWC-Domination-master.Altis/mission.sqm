@@ -101,7 +101,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=31;
+		items=30;
 		class Item0
 		{
 			side="WEST";
@@ -127,12 +127,12 @@ class Mission
 				class Item1
 				{
 					position[]={14629.066,17.91,16731.736};
-					azimut=-347.17914;
+					azimut=-347.17899;
 					special="NONE";
 					id=1;
 					side="WEST";
 					vehicle="BAF_Soldier_1_Infantry_L_D_DG1";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					skill=0.40000001;
 					text="p2";
 					init="this join g2;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\BAF_RFR.sqf'""];";
@@ -1699,12 +1699,12 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={14656.354,17.91,16750.811};
+					position[]={14657.466,17.91,16748.115};
 					azimut=-407.49399;
 					id=65;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -1733,10 +1733,10 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={14157.601,20.4111,16208.834};
+					position[]={14160.541,20.406588,16208.536};
 					azimut=-232.67999;
 					id=67;
 					side="WEST";
@@ -1744,37 +1744,29 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.44999999;
-					text="p53";
-					init="this join g53;";
-					description="Harrier Pilot";
+					text="p56";
+					init="this join g56;";
+					description="F/A 18 Co-Pilot";
 				};
-			};
-		};
-		class Item30
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item1
 				{
-					position[]={14161.591,19.805487,16241.353};
+					position[]={14157.601,20.4111,16208.834};
 					azimut=-232.67999;
 					id=68;
 					side="WEST";
 					vehicle="rhsusf_airforce_jetpilot";
-					leader=1;
+					player="PLAY CDG";
 					skill=0.44999999;
-					text="p56";
-					init="this join g56;";
-					description="Future FA18 Pilot";
+					text="p53";
+					init="this join g53;";
+					description="F/A 18 Pilot";
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=106;
+		items=97;
 		class Item0
 		{
 			position[]={14641.096,17.91,16758.902};
@@ -2027,8 +2019,8 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={14186.405,19.568712,16279.567};
-			azimut=50.424801;
+			position[]={14185.599,19.579903,16277.237};
+			azimut=46.854679;
 			id=93;
 			side="EMPTY";
 			vehicle="RHS_M2A3_BUSKIII_wd";
@@ -2806,115 +2798,19 @@ class Mission
 		};
 		class Item96
 		{
-			position[]={14158.257,20.494522,16196.84};
-			azimut=111.043;
-			id=165;
-			side="EMPTY";
-			vehicle="BAF_AV8B2_DG1";
-			leader=1;
-			skill=0.60000002;
-			init="0 = [this, 1200, 1200] execVM ""lib\vehicle.sqf""; this removeWeapon ""rhs_weap_agm65"";";
-		};
-		class Item97
-		{
 			position[]={14701.849,17.91,16789.621};
 			azimut=-224.918;
-			id=166;
+			id=165;
 			side="EMPTY";
 			vehicle="rhsusf_m113_usarmy_MK19";
 			leader=1;
 			skill=0.44999999;
 			init="0 = [this, 600, 3600] execVM ""lib\vehicle.sqf"";";
 		};
-		class Item98
-		{
-			position[]={14624.354,17.91,16749.889};
-			azimut=134.29401;
-			id=167;
-			side="EMPTY";
-			vehicle="rhsusf_m113_usarmy_unarmed";
-			skill=0.60000002;
-			fuel=0;
-			ammo=0;
-			text="RadioVehicle";
-			init="RadioVehicle lockDriver true;";
-		};
-		class Item99
-		{
-			position[]={14624.865,17.91,16744.854};
-			azimut=-43.938156;
-			id=168;
-			side="EMPTY";
-			vehicle="UserTexture1m_F";
-			leader=1;
-			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
-		};
-		class Item100
-		{
-			position[]={14625.217,17.91,16745.273};
-			azimut=-45.856342;
-			id=169;
-			side="EMPTY";
-			vehicle="Sign_F";
-			leader=1;
-			skill=0.44999999;
-		};
-		class Item101
-		{
-			position[]={14625.725,17.91,16745.674};
-			azimut=-45.8564;
-			id=170;
-			side="EMPTY";
-			vehicle="UserTexture1m_F";
-			leader=1;
-			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\radiovehicle.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
-		};
-		class Item102
-		{
-			position[]={14621.396,17.91,16758.715};
-			azimut=675.75793;
-			id=171;
-			side="EMPTY";
-			vehicle="Land_HBarrierBig_F";
-			leader=1;
-			skill=0.60000002;
-		};
-		class Item103
-		{
-			position[]={14616.244,17.91,16753.592};
-			azimut=675.75793;
-			id=172;
-			side="EMPTY";
-			vehicle="Land_HBarrierBig_F";
-			leader=1;
-			skill=0.60000002;
-		};
-		class Item104
-		{
-			position[]={14616.303,17.91,16749.391};
-			azimut=766.2243;
-			id=173;
-			side="EMPTY";
-			vehicle="Land_HBarrierBig_F";
-			leader=1;
-			skill=0.60000002;
-		};
-		class Item105
-		{
-			position[]={14621.728,17.91,16744.072};
-			azimut=763.30859;
-			id=174;
-			side="EMPTY";
-			vehicle="Land_HBarrierBig_F";
-			leader=1;
-			skill=0.60000002;
-		};
 	};
 	class Markers
 	{
-		items=39;
+		items=40;
 		class Item0
 		{
 			position[]={14640.538,17.91,16766.221};
@@ -2970,7 +2866,7 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={14188.189,19.571978,16277.651};
+			position[]={14189.217,19.579906,16275.426};
 			name="armourspawn";
 			text="Armour Crew";
 			type="b_armor";
@@ -3170,6 +3066,12 @@ class Mission
 		{
 			position[]={9119.9043,17.173223,21457.145};
 			name="Aristi_Airfield";
+			type="Empty";
+		};
+		class Item39
+		{
+			position[]={14154.809,20.487392,16197.189};
+			name="fa18spawn";
 			type="Empty";
 		};
 	};

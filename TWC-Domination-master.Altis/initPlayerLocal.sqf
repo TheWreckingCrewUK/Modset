@@ -9,5 +9,3 @@ execVM "player\init.sqf";
 
 lowPlayerCount = "";
 "lowPlayerCount" addPublicVariableEventHandler {(_this select 1) call BIS_fnc_endMission;};
-
-ExecVM "TWC\Squad\init.sqf";
