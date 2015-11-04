@@ -11,7 +11,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "U_B_FullGhillie_sard";
+player forceAddUniform "BAF_Soldier_Base_L_M_Uniform_DG1";
 player addBackpack "B_rhsusf_B_BACKPACK";
 player addGoggles "G_Bandanna_tan";
 
