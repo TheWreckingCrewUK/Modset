@@ -5,7 +5,7 @@ true spawn {
     _Merlinpilot = ["BAF_Pilot_Infantry_R_M_DG1"];
     _A10pilot = ["rhsusf_airforce_jetpilot"];
     _crew = ["B_helicrew_F"];
-    _A10 = ["JS_JC_FA18F"];
+    _A10 = ["BAF_AV8B2_DG1"];
     _blackhawk = ["RHS_UH60M"];
     _Merlin = ["BAF_AW159_Wildcat_Armed_DG1"];
 

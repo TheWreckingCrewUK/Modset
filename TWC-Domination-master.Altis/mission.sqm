@@ -39,8 +39,7 @@ class Mission
 		"A3_Structures_F_Ind_Cargo",
 		"ace_finger",
 		"ace_sitting",
-		"3DEN",
-		"JS_JC_FA18"
+		"3DEN"
 	};
 	addOnsAuto[]=
 	{
@@ -80,7 +79,6 @@ class Mission
 		"A3_Structures_F_EPA_Mil_Scrapyard",
 		"A3_Supplies_F_Heli_Bladders",
 		"A3_Structures_F_Ind_Cargo",
-		"JS_JC_FA18",
 		"a3_map_altis"
 	};
 	randomSeed=16677554;
@@ -103,7 +101,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=30;
+		items=31;
 		class Item0
 		{
 			side="WEST";
@@ -1701,7 +1699,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={14657.466,17.91,16748.115};
+					position[]={14656.264,17.91,16748.574};
 					azimut=-407.49399;
 					id=65;
 					side="WEST";
@@ -1735,10 +1733,10 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=1;
 				class Item0
 				{
-					position[]={14160.541,20.406588,16208.536};
+					position[]={14157.601,20.4111,16208.834};
 					azimut=-232.67999;
 					id=67;
 					side="WEST";
@@ -1746,22 +1744,30 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.44999999;
-					text="p56";
-					init="this join g56;";
-					description="F/A 18 Co-Pilot";
+					text="p53";
+					init="this join g53;";
+					description="Harrier Pilot";
 				};
-				class Item1
+			};
+		};
+		class Item30
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
 				{
-					position[]={14157.601,20.4111,16208.834};
+					position[]={14161.591,19.805487,16241.353};
 					azimut=-232.67999;
 					id=68;
 					side="WEST";
 					vehicle="rhsusf_airforce_jetpilot";
-					player="PLAY CDG";
+					leader=1;
 					skill=0.44999999;
-					text="p53";
-					init="this join g53;";
-					description="F/A 18 Pilot";
+					text="p56";
+					init="this join g56;";
+					description="Future FA18 Pilot";
 				};
 			};
 		};
@@ -2804,7 +2810,7 @@ class Mission
 			azimut=111.043;
 			id=165;
 			side="EMPTY";
-			vehicle="JS_JC_FA18F";
+			vehicle="BAF_AV8B2_DG1";
 			leader=1;
 			skill=0.60000002;
 			init="0 = [this, 1200, 1200] execVM ""lib\vehicle.sqf""; this removeWeapon ""rhs_weap_agm65"";";

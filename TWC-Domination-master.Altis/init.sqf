@@ -82,7 +82,7 @@ memberIDArray = ["76561198078628958", "76561198010598279", "76561198061214513", 
 null = execVM "TWC\Members\Timeplayed.sqf";
 _pilots = ["p31", "p33"];
 _jetPilots = ["p53","p56"];
-_groundUnits = [sniper, jtac, etc];
+_groundUnits = ["p51", "p52" ,"p54", "p55"];
 _specialUnits = _pilots + _a10pilot;
 
 if ((getplayerUID player)in memberIDArray) then {
