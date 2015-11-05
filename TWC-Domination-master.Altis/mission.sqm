@@ -1703,7 +1703,7 @@ class Mission
 					azimut=-407.49399;
 					id=65;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_spotter_F";
 					player="PLAYER COMMANDER";
 					leader=1;
 					rank="SERGEANT";
@@ -1718,7 +1718,7 @@ class Mission
 					azimut=-753.18903;
 					id=66;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_sniper_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
