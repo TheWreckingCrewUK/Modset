@@ -1227,7 +1227,6 @@ if (g_class == "USMC_AR3") then {
 		_tmp_items = 
 		[
 			 ["rhsusf_acc_ACOG2",1],
-			 ["ACE_ATragMX",1],
 			 ["ACE_Kestrel4500",1],
 			 ["ACE_SpottingScope",1],
 			 ["ACE_Vector",1],
@@ -1271,7 +1270,6 @@ if (g_class == "USMC_AR3") then {
 			["ACE_Kestrel4500",1],
 			["ACE_Sandbag_empty",5],
 			["ACE_DAGR",1],
-			["ACE_ATragMX",1],
 			["tf_anprc152",1]
 		];
 };

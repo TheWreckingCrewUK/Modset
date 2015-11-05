@@ -84,7 +84,10 @@ if ((getplayerUID player)in memberIDArray) then {
 	player, 1, ["ACE_SelfActions"], _Time] call ace_interact_menu_fnc_addActionToObject;
 };
 
+waituntil {!(g_name =="")};
 
+_name = name player;
+TWCServer globalchat format["%1 joined in as %2",_name,g_name];
 
 
 
