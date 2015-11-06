@@ -15,6 +15,7 @@ player forceAddUniform "BAF_Soldier_Base_L_M_Uniform_DG1";
 player addvest "V_BandollierB_khk";
 player addBackpack "tf_rt1523g_big_rhs";
 player addGoggles "G_Bandanna_tan";
+player addHeadgear "BAF_Soldier_1_Headgear_M_DG1";
 
 comment "Add weapons";
 player addWeapon "AGM_Vector";
