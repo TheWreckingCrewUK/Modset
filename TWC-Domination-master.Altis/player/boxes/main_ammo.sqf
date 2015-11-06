@@ -1211,22 +1211,23 @@ if (g_class == "USMC_AR3") then {
        _tmp_weapons =
         [
            
-			["UK3CB_BAF_L131A1",1],
-			["rhs_weap_mk18_KAC",1]
+			["UK3CB_BAF_L85A2_RIS",1],
+            ["UK3CB_BAF_L129A1_FGrip",1]
 			  
 		];
        
         _tmp_magazines =
         [
             
-             ["rhs_mag_30Rnd_556x45_Mk318_Stanag",50],
-			 ["rhsusf_mag_7x45acp_MHP",15]
+             ["30Rnd_556x45_Stanag",50],
+			 ["UK3CB_BAF_17Rnd_9mm",15]
 			 
         ];
 		
 		_tmp_items = 
 		[
-			 ["rhsusf_acc_ACOG2",1],
+			 ["optic_LRPS",1],
+			 ["UK3CB_BAF_SpecterLDS_Dot_3D",1],
 			 ["ACE_Kestrel4500",1],
 			 ["ACE_SpottingScope",1],
 			 ["ACE_Vector",1],
@@ -1260,8 +1261,8 @@ if (g_class == "USMC_AR3") then {
 		
 		_tmp_items = 
 		[
-			["rhsusf_acc_ACOG2",1],			
-			["UK3CB_BAF_SB31250_Desert_Ghillie",1],
+			["UK3CB_BAF_L115A3_Mag",1],
+			["optic_LRPS",1],
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
