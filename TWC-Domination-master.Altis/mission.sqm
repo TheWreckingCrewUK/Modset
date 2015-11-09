@@ -40,7 +40,8 @@ class Mission
 		"ace_finger",
 		"ace_sitting",
 		"3DEN",
-		"A3_Modules_F"
+		"A3_Modules_F",
+		"JS_JC_FA18"
 	};
 	addOnsAuto[]=
 	{
@@ -81,6 +82,7 @@ class Mission
 		"A3_Structures_F_EPA_Mil_Scrapyard",
 		"A3_Supplies_F_Heli_Bladders",
 		"A3_Structures_F_Ind_Cargo",
+		"JS_JC_FA18",
 		"a3_map_altis"
 	};
 	randomSeed=16677554;
@@ -103,7 +105,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=32;
+		items=31;
 		class Item0
 		{
 			side="WEST";
@@ -1735,10 +1737,10 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={14157.601,20.4111,16208.834};
+					position[]={14168.386,20.333281,16208.078};
 					azimut=-232.67999;
 					id=67;
 					side="WEST";
@@ -1748,32 +1750,24 @@ class Mission
 					skill=0.44999999;
 					text="p53";
 					init="this join g53;";
-					description="Harrier Pilot";
+					description="F/A-18 Pilot";
 				};
-			};
-		};
-		class Item30
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item1
 				{
-					position[]={14161.591,19.805487,16241.353};
+					position[]={14164.718,20.398455,16205.855};
 					azimut=-232.67999;
 					id=68;
 					side="WEST";
 					vehicle="rhsusf_airforce_jetpilot";
-					leader=1;
+					player="PLAY CDG";
 					skill=0.44999999;
 					text="p56";
 					init="this join g56;";
-					description="Future FA18 Pilot";
+					description="F/A-18 Weapons Officer";
 				};
 			};
 		};
-		class Item31
+		class Item30
 		{
 			side="LOGIC";
 			class Vehicles
@@ -2833,10 +2827,10 @@ class Mission
 			azimut=111.043;
 			id=166;
 			side="EMPTY";
-			vehicle="BAF_AV8B2_DG1";
+			vehicle="JS_JC_FA18F";
 			leader=1;
 			skill=0.60000002;
-			init="0 = [this, 1200, 1200] execVM ""lib\vehicle.sqf""; this removeWeapon ""rhs_weap_agm65"";";
+			init="0 = [this, 1200, 1200] execVM ""lib\vehicle.sqf"";";
 		};
 		class Item97
 		{
