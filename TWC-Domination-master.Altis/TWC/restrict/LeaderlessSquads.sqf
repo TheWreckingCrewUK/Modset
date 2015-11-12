@@ -1,4 +1,4 @@
-waitUntil {!isNull player};
+/*waitUntil {!isNull player};
 waitUntil {player == player};
 sleep 5;
 _alphalead = "P1";
