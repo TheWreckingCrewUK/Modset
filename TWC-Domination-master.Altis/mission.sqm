@@ -41,7 +41,8 @@ class Mission
 		"ace_sitting",
 		"3DEN",
 		"A3_Modules_F",
-		"JS_JC_FA18"
+		"JS_JC_FA18",
+		"trixie_recon"
 	};
 	addOnsAuto[]=
 	{
@@ -1708,7 +1709,7 @@ class Mission
 					id=65;
 					side="WEST";
 					vehicle="B_spotter_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -1722,8 +1723,8 @@ class Mission
 					azimut=-753.18903;
 					id=66;
 					side="WEST";
-					vehicle="B_spotter_F";
-					player="PLAY CDG";
+					vehicle="B_sniper_F";
+					player="PLAYER COMMANDER";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="p54";

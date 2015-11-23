@@ -1211,7 +1211,6 @@ if (g_class == "USMC_AR3") then {
        _tmp_weapons =
         [
            
-			["UK3CB_BAF_L85A2_RIS",1],
             ["UK3CB_BAF_L129A1_FGrip",1]
 			  
 		];
@@ -1220,14 +1219,16 @@ if (g_class == "USMC_AR3") then {
         [
             
              ["30Rnd_556x45_Stanag",50],
-			 ["UK3CB_BAF_17Rnd_9mm",15]
+			 ["UK3CB_BAF_20Rnd",15]
 			 
         ];
 		
 		_tmp_items = 
 		[
-			 ["optic_LRPS",1],
-			 ["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		     ["rhsusf_acc_LEUPOLDMK4",1],
+			 ["ACE_ATragMX",1],
+			 ["Trixie_Ghillie_Uniform_02",1],
+			 ["Trixie_Ghillie_Uniform_03",1],
 			 ["ACE_Kestrel4500",1],
 			 ["ACE_SpottingScope",1],
 			 ["ACE_Vector",1],
@@ -1245,8 +1246,10 @@ if (g_class == "USMC_AR3") then {
        _tmp_weapons =
         [
            
-			["UK3CB_BAF_L115A3_Desert_Ghillie",1],
-			["rhs_weap_sr25_ec",1],
+			["Trixie_AWM338",1],
+			["Trixie_AWM338_Ghillie",1],
+			["Trixie_M110",1],
+			["Trixie_M110_NG",1],
 			["UK3CB_BAF_L131A1",1]
 			  
 		];
@@ -1254,21 +1257,22 @@ if (g_class == "USMC_AR3") then {
         _tmp_magazines =
         [
             
-             ["UK3CB_BAF_L115A3_Mag",15],
-			 ["rhsusf_20Rnd_762x51_m118_special_Mag",15]
+             ["Trixie_5x338_Mag",15],
+			 ["Trixie_20x762_Mag",15]
 			 
         ];
 		
 		_tmp_items = 
 		[
-			["UK3CB_BAF_L115A3_Mag",1],
 			["optic_LRPS",1],
+		    ["Trixie_Ghillie_Uniform_02",1],
+			["ACE_ATragMX",1],
+		    ["Trixie_Ghillie_Uniform_03",1],
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
 			["ACE_Vector",1],
 			["ACE_MX2A",1],
-			["ACE_Kestrel4500",1],
 			["ACE_Sandbag_empty",5],
 			["ACE_DAGR",1],
 			["tf_anprc152",1]
