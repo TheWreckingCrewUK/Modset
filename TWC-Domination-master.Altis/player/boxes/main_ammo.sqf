@@ -55,7 +55,7 @@ if (g_class == "BAF_SL") then {
 								["ACE_M26_Clacker",1],
 								["UK3CB_BAF_Eotech",1],
 								["STKR_Predator",1],
-								["tf_anprc152",1]
+								["ACRE_PRC343",1]
                
                 ];
 };
@@ -93,7 +93,7 @@ if (g_class == "BAF_SL") then {
 								["UK3CB_BAF_LLM_IR",1],
 								["UK3CB_BAF_Eotech",1],
 								["STKR_Predator",1],
-								["tf_anprc152",1]
+								["ACRE_PRC343",1]
 		];
 		
 
@@ -139,7 +139,7 @@ if (g_class == "BAF_SL") then {
 			 ["UK3CB_BAF_LLM_IR",1],
 		     ["UK3CB_BAF_Eotech",1],
 			 ["STKR_Predator",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC343",1]
 		];
 };
  
@@ -173,7 +173,7 @@ if (g_class == "BAF_SL") then {
 		     ["UK3CB_BAF_Eotech",1],
 			 ["UK3CB_BAF_LLM_IR",1],
 			 ["STKR_Predator",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC343",1]
 		];
 };
  
@@ -204,7 +204,7 @@ if (g_class == "BAF_SL") then {
 		     ["UK3CB_BAF_Eotech",1],
 			 ["UK3CB_BAF_LLM_IR",1],
 			 ["STKR_Predator",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC343",1]
 		];
 };
  
@@ -232,7 +232,7 @@ if (g_class == "BAF_SL") then {
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
 			 ["STKR_Predator",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC343",1]
 		];
 };
  
@@ -267,7 +267,7 @@ if (g_class == "BAF_SL") then {
 			 ["UK3CB_BAF_TA648_308",1],
 			 ["UK3CB_BAF_LLM_IR",1],
 			 ["STKR_Predator",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC343",1]
 		     
 		];
 };
@@ -297,7 +297,7 @@ if (g_class == "BAF_SL") then {
 		    ["UK3CB_BAF_Eotech",1],
 			["UK3CB_BAF_LLM_IR",1],
 			["STKR_Predator",1],
-			["tf_anprc152",1]
+			["ACRE_PRC343",1]
 		];
 };
 // Load availible to US Section Lead Only
@@ -340,7 +340,7 @@ if (g_class == "US_SL") then {
 								["rhsusf_acc_anpeq15A",1],
 								["UK3CB_BAF_Eotech",1],
 								["rhsusf_assault_eagleaiii_ucp",1],
-								["tf_anprc152",1]
+								["ACRE_PRC148",1]
                
                 ];
 };
@@ -371,7 +371,7 @@ if (g_class == "US_SL") then {
 								["rhsusf_acc_compm4",1],
 								["rhsusf_acc_anpeq15A",1],
 								["rhsusf_assault_eagleaiii_ucp",1],
-								["tf_anprc152",1]
+								["ACRE_PRC148",1]
 		];
 								
 };
@@ -402,7 +402,7 @@ if (g_class == "US_SL") then {
 								["rhsusf_acc_compm4",1],
 								["rhsusf_acc_anpeq15A",1],
 								["rhsusf_assault_eagleaiii_ucp",1],
-								["tf_anprc152",1]
+								["ACRE_PRC148",1]
 		];
 };
  
@@ -438,7 +438,7 @@ if (g_class == "US_SL") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ucp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
  
@@ -469,7 +469,7 @@ if (g_class == "US_SL") then {
 		     ["UK3CB_BAF_Eotech",1],
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_assault_eagleaiii_ucp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
  
@@ -500,7 +500,7 @@ if (g_class == "US_SL") then {
 		     ["UK3CB_BAF_Eotech",1],
 		     
 			 ["rhsusf_assault_eagleaiii_ucp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
  
@@ -543,7 +543,7 @@ if (g_class == "US_SL") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ucp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		     
 		];
 };
@@ -577,7 +577,7 @@ if (g_class == "US_SL") then {
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ucp",1],
 			 ["bipod_01_F_blk",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //load availible to US Medic Only
@@ -610,7 +610,7 @@ if (g_class == "US_SL") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ucp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //load availible to Marines Seciton lead only
@@ -653,7 +653,7 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
                              	["1Rnd_SmokeBlue_Grenade_shell", 10],
-								["tf_anprc152",1],
+								["ACRE_PRC148",1],
 								["UGL_FlareWhite_F", 10]
                
                 ];
@@ -693,7 +693,7 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
                              	["1Rnd_SmokeBlue_Grenade_shell", 10],
-								["tf_anprc152",1],
+								["ACRE_PRC148",1],
 								["UGL_FlareWhite_F", 10]
 		];
 								
@@ -734,7 +734,7 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
                              	["1Rnd_SmokeBlue_Grenade_shell", 10],
 								["rhsusf_assault_eagleaiii_ocp",1],
-								["tf_anprc152",1],
+								["ACRE_PRC148",1],
 								["UGL_FlareWhite_F", 10]
 		];
 };
@@ -774,7 +774,7 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
                              	["1Rnd_SmokeBlue_Grenade_shell", 10],
 								["rhsusf_assault_eagleaiii_ocp",1],
-								["tf_anprc152",1],
+								["ACRE_PRC148",1],
 								["UGL_FlareWhite_F", 10]
 		];
 };
@@ -814,7 +814,7 @@ if (g_class == "US_SL") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
  
@@ -854,7 +854,7 @@ if (g_class == "US_SL") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
  
@@ -893,7 +893,7 @@ if (g_class == "US_SL") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1], 
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //load availible to us rifleman only
@@ -930,7 +930,7 @@ if (g_class == "US_SL") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //load availible to marine assistant AR
@@ -967,7 +967,7 @@ if (g_class == "US_SL") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //load availible to marines assistant AR
@@ -1004,7 +1004,7 @@ if (g_class == "US_SL") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //load availible to marines assistant AR only
@@ -1035,7 +1035,7 @@ if (g_class == "USMC_AR1") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //load availible to marine assistant ar only
@@ -1066,7 +1066,7 @@ if (g_class == "USMC_AR2") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //loadout availible to marine AR only
@@ -1098,7 +1098,7 @@ if (g_class == "USMC_AR3") then {
 		     ["UK3CB_BAF_Eotech",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //loadout availible to marine medic only
@@ -1129,7 +1129,7 @@ if (g_class == "USMC_AR3") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //loadout availible to wildcat pilot only
@@ -1153,7 +1153,7 @@ if (g_class == "USMC_AR3") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //loadout availible to chinook pilot only
@@ -1177,7 +1177,7 @@ if (g_class == "USMC_AR3") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //loadout availible to blackhawk pilot only
@@ -1203,7 +1203,7 @@ if (g_class == "USMC_AR3") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //loadout availible to sniper team spotter only
@@ -1238,7 +1238,7 @@ if (g_class == "USMC_AR3") then {
 			 ["ACE_MX2A",1],
 			 ["ACE_DAGR",1],
 			 ["ACE_Sandbag_empty",5],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 //load availible to sniper team sniper only
@@ -1275,7 +1275,7 @@ if (g_class == "USMC_AR3") then {
 			["ACE_MX2A",1],
 			["ACE_Sandbag_empty",5],
 			["ACE_DAGR",1],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
 };
 //load availible to swedish section lead only
@@ -1303,7 +1303,7 @@ if (g_class == "USMC_AR3") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
 };
 //load availible to swedish 2ic only
@@ -1333,7 +1333,7 @@ if (g_class == "SWD_FTL") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
 };
 //load availible to swedish AT only
@@ -1365,7 +1365,7 @@ if (g_class == "SWD_FTL") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1],
+			["ACRE_PRC148",1],
 			["sam_acco_m86",1]
 		];
 };
@@ -1397,7 +1397,7 @@ if (g_class == "SWD_FTL") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1],
+			["ACRE_PRC148",1],
 			["sam_acco_m86",1]
 		];
 };
@@ -1436,7 +1436,7 @@ if (g_class == "SWD_FTL") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
 };
 //load availible to swedish AR only
@@ -1465,7 +1465,7 @@ if (g_class == "SWD_FTL") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
 };
 //load availible to swedish mg only
@@ -1494,7 +1494,7 @@ if (g_class == "SWD_FTL") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
 };
 //load availbel to swedish medic only
@@ -1526,7 +1526,7 @@ if (g_class == "SWD_FTL") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
  };
 //load availibe to jtac leader only
@@ -1561,7 +1561,7 @@ if (g_class == "SWD_FTL") then {
                                 ["ACE_fieldDressing",20],
                                 ["ACE_morphine",10],
 								["rhsusf_acc_anpeq15A",1],
-								["tf_anprc152",1],
+								["ACRE_PRC148",1],
 								["Laserdesignator",1],
 								["Laserbatteries",1]
                
@@ -1599,7 +1599,7 @@ if (g_class == "SWD_FTL") then {
                                 ["ACE_fieldDressing",20],
                                 ["ACE_morphine",10],
 								["rhsusf_acc_anpeq15A",1],
-								["tf_anprc152",1],
+								["ACRE_PRC148",1],
 								["Laserdesignator",1],
 								["Laserbatteries",1]
                
@@ -1627,7 +1627,7 @@ if (g_class == "SWD_FTL") then {
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
 			 ["ACE_microDAGR",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
  

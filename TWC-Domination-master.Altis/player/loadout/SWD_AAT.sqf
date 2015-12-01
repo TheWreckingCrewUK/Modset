@@ -12,6 +12,7 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "SAM_Crye_M90k_uniform_r";
+player addItemToUniform "ACRE_PRC148";
 for "_i" from 1 to 4 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
@@ -25,8 +26,6 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_anprc152";
-player linkItem "NVGoggles_OPFOR";
 
 comment "Set identity";
 player setFace "GreekHead_A3_07";

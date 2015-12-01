@@ -1,0 +1,1 @@
+[] execVM "safezone.sqf";

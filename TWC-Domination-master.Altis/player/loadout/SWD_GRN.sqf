@@ -12,8 +12,7 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "SAM_Crye_M90k_uniform";
-for "_i" from 1 to 4 do {player addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
+player addItemToUniform "ACRE_PRC148";
 player addItemToUniform "Chemlight_green";
 player addVest "SAM_PlateCarrier";
 player addBackpack "B_Carryall_cbr";
@@ -26,7 +25,6 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_anprc152";
 
 comment "Set identity";
 player setFace "WhiteHead_07";

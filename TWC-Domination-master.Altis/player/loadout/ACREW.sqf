@@ -23,6 +23,8 @@ for "_i" from 1 to 2 do {player addItemToVest "AGM_Epipen";};
 player addItemToVest "rhsusf_mag_7x45acp_MHP";
 player addHeadgear "rhsusf_cvc_ess";
 player addGoggles "G_Bandanna_khk";
+player addbackpack "B_AssaultPack_blk";
+player addItemToBackpack "ACRE_PRC117F";
 
 comment "Add weapons";
 player addWeapon "rhs_weap_m4_carryhandle_pmag";

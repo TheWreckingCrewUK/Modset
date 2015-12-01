@@ -1,3 +1,5 @@
+/* No longer needed because of the switch to ACRE2
+
 //sleep 3;
 hint "hello";
 /*while {true} do {

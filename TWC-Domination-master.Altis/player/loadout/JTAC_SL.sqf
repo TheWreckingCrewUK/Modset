@@ -10,8 +10,10 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "rhs_uniform_cu_ucp";
+player addItemToUniform "ACRE_PRC148";
 player addVest "rhsusf_iotv_ucp_Squadleader";
-player addBackpack "tf_rt1523g_sage";
+player addBackpack "rhsusf_assault_eagleaiii_ocp";
+player addItemToBackpack "ACRE_PRC117F";
 player addHeadgear "rhsusf_ach_helmet_headset_ucp";
 
 comment "Add weapons";

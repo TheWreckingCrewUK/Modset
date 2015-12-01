@@ -12,6 +12,7 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "rhs_uniform_cu_ocp";
+player addItemToUniform "ACRE_PRC148";
 player addVest "rhsusf_iotv_ocp_Medic";
 player addBackpack "rhsusf_assault_eagleaiii_ocp";
 player addHeadgear "rhsusf_ach_helmet_ESS_ocp";
@@ -22,5 +23,4 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_anprc152_1";
 player linkItem "rhsusf_ANPVS_14";

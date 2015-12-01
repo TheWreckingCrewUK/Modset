@@ -491,4 +491,5 @@ TWCServer globalchat format["%1 joined in as %2",_name,g_name];
 if (g_class != "") then {
 	execVM format["player\loadout\%1.sqf", g_class];
 };
+
 //made by hartzie edited by FakeMatty

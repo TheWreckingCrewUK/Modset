@@ -1,28 +1,6 @@
 call compile preprocessfilelinenumbers "shk_pos\shk_pos_init.sqf";
 
-if (isServer) then
-{
-	// Task Force Radio Settings
-	#include "\task_force_radio\functions\common.sqf";
 
-	tf_no_auto_long_range_radio = true;
-	publicVariable "tf_no_auto_long_range_radio";
-	tf_same_sw_frequencies_for_side = true;
-	publicVariable "tf_same_sw_frequencies_for_side";
-	tf_same_lr_frequencies_for_side = true;
-	publicVariable "tf_same_lr_frequencies_for_side";
-	TF_give_microdagr_to_soldier = false;
-
-
-	_settingsSwWest = false call TFAR_fnc_generateSwSettings;
-	_settingsSwWest set [2, ["200","120","130","140","150"]];
-	tf_freq_west = _settingsSwWest;
-
-	_settingsLrWest = false call TFAR_fnc_generateLrSettings;
-	_settingsLrWest set [2, ["50"]];
-	tf_freq_west_lr = _settingsLrWest;
-
-};
 //AO Setup and SideMission
 
 TaskArray=["Pygros","Charkia","Rodopoli","Paros","Frini","Galati","Syrta","Agios Dionysios","Poliakko","Neochori"];
