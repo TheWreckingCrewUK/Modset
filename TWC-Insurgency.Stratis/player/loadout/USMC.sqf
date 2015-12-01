@@ -1,3 +1,5 @@
+comment "Exported from Arsenal by FakeMatty";
+
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
@@ -9,10 +11,11 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "BAF_Soldier_Base_L_M_Uniform_DG1";
-player addVest "BAF_Soldier_gl_Vest_M_DG1";
-player addBackpack "B_Kitbag_mcamo";
-player addHeadgear "BAF_Soldier_gl_Headgear_M_DG1";
+player forceAddUniform "rhs_uniform_FROG01_wd";
+player addItemToUniform "ACRE_PRC148";
+player addVest "rhsusf_spc";
+player addBackpack "rhsusf_assault_eagleaiii_coy";
+player addHeadgear "rhsusf_mich_helmet_marpatwd";
 
 comment "Add weapons";
 
@@ -20,9 +23,8 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_anprc152";
 player linkItem "rhsusf_ANPVS_14";
 
 comment "Set identity";
-player setFace "GreekHead_A3_07";
-player setSpeaker "Male06ENG";
+player setFace "GreekHead_A3_01";
+player setSpeaker "AGM_NoVoice";

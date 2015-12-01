@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by FakeMatty";
+comment "Exported from Arsenal by Will";
 
 comment "Remove existing items";
 removeAllWeapons player;
@@ -13,7 +13,9 @@ removeGoggles player;
 comment "Add containers";
 player forceAddUniform "SAM_Crye_M90k_uniform";
 player addItemToUniform "ACRE_PRC148";
-player addItemToUniform "Chemlight_green";
+for "_i" from 1 to 4 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
+player addItemToUniform "ACE_EarPlugs";
 player addVest "SAM_PlateCarrier";
 player addBackpack "B_Carryall_cbr";
 player addHeadgear "SAM_HelmetIA_M90k";
