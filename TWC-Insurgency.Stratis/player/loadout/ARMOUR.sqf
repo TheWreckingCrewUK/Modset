@@ -29,8 +29,6 @@ for "_i" from 1 to 2 do {this addItemToVest "SmokeShellRed";};
 for "_i" from 1 to 2 do {this addItemToVest "SmokeShellPurple";};
 for "_i" from 1 to 2 do {this addItemToVest "SmokeShellBlue";};
 this addHeadgear "H_HelmetCrew_I";
-player addbackpack "B_AssaultPack_blk";
-player addItemToBackpack "ACRE_PRC117F";
 
 comment "Add weapons";
 this addWeapon "rhs_weap_m4";

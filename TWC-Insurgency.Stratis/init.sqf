@@ -1,3 +1,4 @@
+execVM "zues.sqf";
 if(!hasInterface && !isDedicated) then {
    execVM "hc\init.sqf";
 };
@@ -8,7 +9,6 @@ if(isDedicated || isServer) then{
 
 waitUntil {!isNull player};
 waitUntil {player == player};
-
 
 memberIDArray = ["_SP_PLAYER_","76561198078628958", "76561198010598279", "76561198061214513", "76561198051847668","76561198050512686", "76561198050180681", "76561198039562456", "76561198018609662","76561198013509033", "76561198010876571", "76561198007975082", "76561198001649761", "76561197985821395", "76561197981096983", "76561197970591603", "76561198100339755", "76561198084557194","76561198077371253", "76561198076461963", "76561198072105856", "76561198067385164", "76561198062338085", "76561198061797079","76561198054727971","76561198070630639","76561198018806047","76561197981208292", "76561197996044352"];
 
@@ -54,6 +54,7 @@ if (isNil "nonQuestionableList") then {
 QuestionPersonAction = ["QuestionPerson","Question Person","",{call InsP_fnc_questionDisplay},{alive (_this select 0)}] call ace_interact_menu_fnc_createAction;
 ["C_man_1", 0, ["ACE_MainActions"], QuestionPersonAction] call ace_interact_menu_fnc_addActionToClass;
 
+/* IED Diffusal is removed because it is super broken
 // IED defuse action
 local _defuseAction = [
     "InsP_defuse_ied",
@@ -84,6 +85,7 @@ local _defuseAction = [
     nil,
     [_ied]
 ] call ACE_interact_menu_fnc_createAction;
+*/
 
 ["IEDLandBig_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
 ["IEDLandSmall_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;

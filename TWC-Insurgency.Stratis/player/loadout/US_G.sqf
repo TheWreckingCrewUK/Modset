@@ -11,11 +11,11 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "rhs_uniform_cu_ocp";
-player addItemToUniform "ACRE_PRC148";
-player addVest "rhsusf_iotv_ocp_Medic";
-player addBackpack "rhsusf_assault_eagleaiii_ocp";
-player addHeadgear "rhsusf_ach_helmet_ESS_ocp";
+player forceAddUniform "rhs_uniform_cu_ucp_patchless";
+player addVest "rhsusf_iotv_ucp_Medic";
+player addBackpack "rhsusf_assault_eagleaiii_ucp";
+player addItemToBackpack "CUP_Vector21Nite";
+player addHeadgear "rhsusf_ach_helmet_ESS_ucp";
 
 comment "Add weapons";
 
@@ -23,4 +23,9 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
+player linkItem "tf_anprc152";
 player linkItem "rhsusf_ANPVS_14";
+
+comment "Set identity";
+player setFace "GreekHead_A3_01";
+player setSpeaker "AGM_NoVoice";

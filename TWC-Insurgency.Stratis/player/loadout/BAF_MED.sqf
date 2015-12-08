@@ -10,7 +10,7 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "BAF_Soldier_Base_L_M_Uniform_DG1";
-player addItemToUniform "ACRE_PRC343";
+player additemtoUniform "ACRE_PRC343";
 player addVest "BAF_Soldier_Medic_Vest_M_DG1";
 player addBackpack "B_Kitbag_mcamo";
 player addHeadgear "BAF_Soldier_1_Headgear_M_DG1";
@@ -21,6 +21,7 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
+
 player linkItem "rhsusf_ANPVS_14";
 
 comment "Set identity";

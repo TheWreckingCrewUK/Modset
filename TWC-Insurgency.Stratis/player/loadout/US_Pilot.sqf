@@ -11,7 +11,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "rhs_uniform_cu_ocp";
+player forceAddUniform "rhs_uniform_cu_ucp_patchless";
 player addVest "rhsusf_iotv_ucp_Medic";
 player addBackpack "rhsusf_assault_eagleaiii_ucp";
 player addItemToBackpack "CUP_Vector21Nite";

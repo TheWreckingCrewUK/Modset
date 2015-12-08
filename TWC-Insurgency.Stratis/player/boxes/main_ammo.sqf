@@ -15,10 +15,10 @@
 _marker = "crate";  // marker used to spawn.
 _boxType = "I_supplyCrate_F";  // the type of ammobox used.
 _timer = 240;  // time in seconds until box is refilled.
-
+ 
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1]];
+_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5]];
 
 _tmp_weapons = [];
 _tmp_magazines = [];
@@ -57,7 +57,7 @@ if (g_class == "BAF_SL") then {
 								["UK3CB_BAF_Eotech",1],
 								["STKR_Predator",1],
 								["ACE_DAGR",1],
-								["tf_anprc152",1]
+								["ACRE_PRC343",1]
 
                 ];
 };
@@ -91,7 +91,7 @@ if (g_class == "BAF_SL") then {
 								["UK3CB_BAF_LLM_IR",1],
 								["UK3CB_BAF_Eotech",1],
 								["STKR_Predator",1],
-								["tf_anprc152",1]
+								["ACRE_PRC343",1]
 		];
 
 
@@ -134,7 +134,7 @@ if (g_class == "BAF_SL") then {
 			 ["UK3CB_BAF_LLM_IR",1],
 		     ["UK3CB_BAF_Eotech",1],
 			 ["STKR_Predator",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC343",1]
 		];
 };
 
@@ -168,11 +168,11 @@ if (g_class == "BAF_SL") then {
 		     ["UK3CB_BAF_Eotech",1],
 			 ["UK3CB_BAF_LLM_IR",1],
 			 ["STKR_Predator",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC343",1]
 		];
 };
 
-// load available to Section 2IC only.
+// load available to Section Medic
 
  if (g_class == "BAF_MED") then {
        _tmp_weapons =
@@ -200,7 +200,7 @@ if (g_class == "BAF_SL") then {
 		    ["UK3CB_BAF_Eotech",1],
 			["UK3CB_BAF_LLM_IR",1],
 			["STKR_Predator",1],
-			["tf_anprc152",1]
+			["ACRE_PRC343",1]
 		];
 };
 if (g_class == "US_SL") then {
@@ -241,7 +241,7 @@ if (g_class == "US_SL") then {
 								["UK3CB_BAF_Eotech",1],
 								["ACE_DAGR",1],
 								["rhsusf_assault_eagleaiii_ucp",1],
-								["tf_anprc152",1]
+								["ACRE_PRC148",1]
 
                 ];
 };
@@ -274,7 +274,7 @@ if (g_class == "US_SL") then {
 		     ["UK3CB_BAF_Eotech",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ucp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 
@@ -305,7 +305,7 @@ if (g_class == "US_SL") then {
 			 ["rhsusf_acc_anpeq15A",1],
 		     ["UK3CB_BAF_Eotech",1],
 			 ["rhsusf_assault_eagleaiii_ucp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 
@@ -344,7 +344,7 @@ if (g_class == "US_SL") then {
 		     ["UK3CB_BAF_Eotech",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ucp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 
 		];
 };
@@ -375,7 +375,7 @@ if (g_class == "US_SL") then {
 			 ["UK3CB_BAF_Eotech",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ucp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 
@@ -418,7 +418,7 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
                              	["1Rnd_SmokeBlue_Grenade_shell", 10],
 								["ACE_DAGR",1],
-								["tf_anprc152",1]
+								["ACRE_PRC148",1]
 
                 ];
 };
@@ -457,7 +457,7 @@ if (g_class == "US_SL") then {
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
                              	["1Rnd_SmokeBlue_Grenade_shell", 10],
 								["ACE_DAGR",1],
-								["tf_anprc152",1]
+								["ACRE_PRC148",1]
 
                 ];
 };
@@ -491,7 +491,7 @@ if (g_class == "US_SL") then {
 		     ["UK3CB_BAF_Eotech",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 
@@ -522,7 +522,7 @@ if (g_class == "USMC_AR") then {
 		     ["UK3CB_BAF_Eotech",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
  if (g_class == "USMC_MED") then {
@@ -550,7 +550,7 @@ if (g_class == "USMC_AR") then {
 		     ["UK3CB_BAF_Eotech",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
  if (g_class == "PILOT_WILDCAT") then {
@@ -573,7 +573,7 @@ if (g_class == "USMC_AR") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
  if (g_class == "PILOT_CHINNOK") then {
@@ -596,7 +596,7 @@ if (g_class == "USMC_AR") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
  if (g_class == "PILOT_BLACKHAWK") then {
@@ -621,7 +621,7 @@ if (g_class == "USMC_AR") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
 
@@ -650,7 +650,7 @@ if (g_class == "USMC_AR") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["tf_anprc152",1]
+			 ["ACRE_PRC148",1]
 		];
 };
  if (g_class == "SNIPER") then {
@@ -679,7 +679,7 @@ if (g_class == "USMC_AR") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
 };
  if (g_class == "SWD_SL") then {
@@ -706,7 +706,7 @@ if (g_class == "USMC_AR") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
 };
  if (g_class == "SWD_RF") then {
@@ -735,7 +735,7 @@ if (g_class == "USMC_AR") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1],
+			["ACRE_PRC148",1],
 			["sam_acco_m86",1]
 		];
 };
@@ -771,7 +771,7 @@ if (g_class == "USMC_AR") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
 };
  if (g_class == "SWD_AR") then {
@@ -798,7 +798,7 @@ if (g_class == "USMC_AR") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
 };
  if (g_class == "SWD_MED") then {
@@ -829,7 +829,7 @@ if (g_class == "USMC_AR") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["tf_anprc152",1]
+			["ACRE_PRC148",1]
 		];
  };
 {
@@ -855,6 +855,7 @@ while {true} do {
         clearWeaponCargo _box;
         clearMagazineCargo _box;
         clearItemCargo _box;
+		clearbackPackCargo _box;
 
         // add in all weapons.
         {_box addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;

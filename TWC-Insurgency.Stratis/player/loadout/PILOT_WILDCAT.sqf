@@ -12,7 +12,6 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "BAF_Soldier_Base_R_M_Uniform_DG1";
-player addItemToUniform "ACRE_PRC148";
 player addItemToUniform "ACE_EarPlugs";
 for "_i" from 1 to 4 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
@@ -24,8 +23,6 @@ player addItemToVest "SmokeShellRed";
 player addItemToVest "SmokeShellGreen";
 for "_i" from 1 to 2 do {player addItemToVest "Chemlight_green";};
 player addHeadgear "BAF_Pilot_Headgear_DG1";
-player addbackpack "B_AssaultPack_blk";
-player addItemToBackpack "ACRE_PRC117F";
 
 comment "Add weapons";
 
@@ -33,6 +30,7 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
+player linkItem "tf_anprc152";
 player linkItem "rhsusf_ANPVS_14";
 
 comment "Set identity";

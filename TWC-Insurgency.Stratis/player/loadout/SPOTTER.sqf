@@ -11,21 +11,19 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "Trixie_Ghillie_Uniform_01";
-player addItemToUniform "ACRE_PRC148";
-player addvest "V_BandollierB_khk";
-player addBackpack "rhsusf_assault_eagleaiii_ocp";
-player addItemToBackpack "ACRE_PRC117F";
+player forceAddUniform "U_B_GhillieSuit";
+player addBackpack "tf_rt1523g_big_rhs";
+player addItemToBackpack "CUP_PG7V_M";
 player addGoggles "G_Bandanna_tan";
-player addHeadgear "BAF_Soldier_1_Headgear_M_DG1";
 
 comment "Add weapons";
-player addWeapon "AGM_Vector";
+player addWeapon "lerca_1200_tan";
 
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
+player linkItem "tf_anprc152_1";
 player linkItem "ItemGPS";
 
 comment "Set identity";

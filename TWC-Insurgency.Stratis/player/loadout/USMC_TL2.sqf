@@ -11,11 +11,10 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "rhs_uniform_FROG01_wd";
-player addItemToUniform "ACRE_PRC148";
-player addVest "rhsusf_spc";
-player addBackpack "rhsusf_assault_eagleaiii_coy";
-player addHeadgear "rhsusf_mich_helmet_marpatwd";
+player forceAddUniform "rhs_uniform_cu_ocp_patchless";
+player addVest "rhsusf_iotv_ocp_Medic";
+player addBackpack "rhsusf_assault_eagleaiii_ocp";
+player addHeadgear "rhsusf_ach_helmet_camo_ocp";
 
 comment "Add weapons";
 
@@ -23,6 +22,7 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
+player linkItem "tf_anprc152_4";
 player linkItem "rhsusf_ANPVS_14";
 
 comment "Set identity";
