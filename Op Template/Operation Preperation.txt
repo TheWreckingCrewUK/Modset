@@ -1,0 +1,13 @@
+1. Open init.sqf and put in tasks and the title text under theme. For example adding "Cliff" to Operation.
+
+2. In description.ext add author name and onLoadName. (Same name as above)
+
+3. Using TWC Operations groups place units where mission maker specified.
+
+4. Don't forget the ammo box or other vehicles.
+
+5. place down:
+	ACE Medic Class-name the medic, "medic" No Quotes
+	Place ACE Spectator
+	Place TFAR Module and set as No to give section leaders a long, and No for soldiers getting a short.
+	Place zues module and set as #adminLogged and name it zues

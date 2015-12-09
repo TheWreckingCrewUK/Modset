@@ -1,0 +1,135 @@
+
+author = "Saxon";
+onLoadName = "Operation Cliff"; 
+loadScreen = "operation_framework\pictures\loading.jpg";
+disabledAI = 1;
+enableDebugConsole = 1;
+disableChannels[]={0,1};
+respawnButton = 0;
+
+respawn = "base";
+respawnDelay = 1000000;
+respawnTemplates[] = {"ace_spectator"};
+#include "operation_framework\CHVD\dialog.hpp"
+class CfgFunctions
+{
+	#include "operation_framework\CHVD\CfgFunctions.hpp"
+   class TWC
+	{
+		class Patrol
+		{
+			class Patrol {file = "operation_framework\func\fnc_patrol.sqf";};
+		};
+		class Defend
+		{
+			class Defend {file = "operation_framework\func\fnc_defend.sqf";};
+		};
+		class AirAssault
+		{
+			class AirAssault {file = "operation_framework\func\fnc_air_assault.sqf";};
+		};
+		class AttackHelicopter
+		{
+			class AttackHelicopter {file = "operation_framework\func\fnc_attack_helicopter.sqf";};
+		};
+		class AttackPlane
+		{
+			class AttackPlane {file = "operation_framework\func\fnc_attack_plane.sqf";};
+		};
+		class Artillery
+		{
+			class Artillery {file = "operation_framework\func\fnc_artillery.sqf";};
+		};
+		class Mortar
+		{
+			class Mortar {file = "operation_framework\func\fnc_mortar.sqf";};
+		};
+	};		
+};
+class ACE_Settings {
+	class ace_sitting_enable {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_finger_enabled {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_respawn_SavePreDeathGear {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_respawn_RemoveDeadBodiesDisconnected {
+	    value = 0;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_microdagr_MapDataAvailable {
+		value = 1;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_explosives_PunishNonSpecialists {
+	    value = 0;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_medical_medicSetting {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_medical_litterCleanUpDelay {
+		value = 1800;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_repair_engineerSetting_Repair {
+	    value = 0;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_repair_consumeItem_ToolKit {
+	    value = 0;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_repair_fullRepairLocation {
+	    value = 0;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_repair_engineerSetting_fullRepair {
+	    value = 0;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_advanced_ballistics_enabled {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_interaction_EnableTeamManagement {
+	    value = 0;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_zeus_autoAddObjects {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+};
+class CfgMusic
+{
+ tracks[]={};
+
+ class Theme
+ {
+  name = "Theme";
+  sound[] = {"operation_framework\thememusic\TWCoperationTheme.ogg", db+0, 1.0};
+ };
+};
