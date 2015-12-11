@@ -1,4 +1,4 @@
-
+/* more special civs
 _a7Center = createMarkerLocal ["a7Center", [2563.65, 5500.04, 81.8816]];
 
 _a7PrespawnAI = ["a7Center", 30] call InsP_fnc_prespawnAI;

@@ -29,7 +29,7 @@ while {_amountWaves > 0} do {
 	_amountWaves = _amountWaves - 1;
 	_selectSpawn = _spawnLocations call BIS_fnc_selectRandom;
 	_selectAttack = _attackLocations call BIS_fnc_selectRandom;
-	_spawnGroup = [getmarkerpos _selectSpawn, EAST, (configfile >> "CfgGroups" >> "Indep" >> "rhs_faction_insurgents" >> "Infantry" >> "IRG_InfTeam")] call BIS_fnc_spawnGroup;
+	_spawnGroup = [getmarkerpos _selectSpawn, EAST, (configfile >> "CfgGroups" >> "Indep" >> "LOP_AM" >> "Infantry" >> "LOP_AM_Patrol_section")] call BIS_fnc_spawnGroup;
 	[_spawnGroup, (getmarkerpos _selectAttack), 20] call CBA_fnc_taskAttack;
 	
 	sleep _spawnDelay;

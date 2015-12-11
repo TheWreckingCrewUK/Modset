@@ -1,5 +1,5 @@
 _randNumber = floor(random 7);
-_removeQuestioning = getPos player nearestObject "C_man_1";
+_removeQuestioning = getPos player nearestObject "LOP_Tak_Civ_Man_01";
 
 if (!alive _removeQuestioning) then {
 	hintSilent "You can not question the \ndead without a ouija board.";

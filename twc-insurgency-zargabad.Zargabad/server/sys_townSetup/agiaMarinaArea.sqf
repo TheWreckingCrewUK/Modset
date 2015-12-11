@@ -1,20 +1,21 @@
-
+//Curently Center Zargabad
+//************************
 //Agia Marina Area Markers
-_agiaMarinaCenter = createMarkerLocal ["agiaCenter", [2980.2, 5999.79, 0]];
-_a3Center = createMarkerLocal ["a3Center", [3395.91, 6059.78, 0]];
-_militaryRangeCenter = createMarkerLocal ["militaryRangeCenter", [3252.27, 5800.87, 0]];
+_agiaMarinaCenter = createMarkerLocal ["agiaCenter", [4241, 4158.79, 17]];
+_a3Center = createMarkerLocal ["a3Center", [4544.91, 3992.78, 19]];
+_militaryRangeCenter = createMarkerLocal ["militaryRangeCenter", [4597.27, 4147.87, 18]];
 
-_agiaSpawn1 = createMarkerLocal ["agiaSpawn1", [3141.2, 6213.19, 36.0698]];
-_agiaSpawn2 = createMarkerLocal ["agiaSpawn2", [3305.47, 6033.61, 2.61577]];
-_agiaSpawn3 = createMarkerLocal ["agiaSpawn3", [3202.1, 5856.7, 2.22936]];
+_agiaSpawn1 = createMarkerLocal ["agiaSpawn1", [4437, 4112.19, 17.0698]];
+_agiaSpawn2 = createMarkerLocal ["agiaSpawn2", [4155.47, 4446.61, 18.61577]];
+_agiaSpawn3 = createMarkerLocal ["agiaSpawn3", [3955.1, 4157.7, 16.22936]];
 
-_agiaAttack1 = createMarkerLocal ["agiaAttack1", [2913.7, 6053.38, 3.40216]];
-_agiaAttack2 = createMarkerLocal ["agiaAttack2", [3043.54, 6035.02, 4.29896]];
-_agiaAttack3 = createMarkerLocal ["agiaAttack3", [2969.5, 5932.84, 3.45795]];
+_agiaAttack1 = createMarkerLocal ["agiaAttack1", [4079.7, 3862.38, 16.40216]];
+_agiaAttack2 = createMarkerLocal ["agiaAttack2", [4155.54, 4446.02, 16.29896]];
+_agiaAttack3 = createMarkerLocal ["agiaAttack3", [4553.5, 4335.84, 18.45795]];
 
 //Agia Marina Area Prespawn Trigger
 _trigPos = getMarkerPos "agiaCenter";
-_trigArea = [350, 350, 0, false];
+_trigArea = [500, 500, 0, false];
 _trigAct = ["WEST", "PRESENT", false];
 _trigState = ["this", 
 	"
@@ -36,7 +37,7 @@ _trigName = "agiaPrespawnTrig";
 
 //Agia Marina Area Spawn Trigger
 _trigPos = getMarkerPos "agiaCenter";
-_trigArea = [200, 200, 0, false];
+_trigArea = [500, 500, 0, false];
 _trigAct = ["WEST", "PRESENT", true];
 _trigState = ["this",
 	"if(isNil 'agiaSpawnAI') then {agiaSpawnAI = [['agiaSpawn1', 'agiaSpawn2', 'agiaSpawn3'], ['agiaAttack1', 'agiaAttack2', 'agiaAttack3'], agiaSpawnTrig] spawn InsP_fnc_spawnAI;};"

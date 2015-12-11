@@ -1,10 +1,10 @@
-
+//EAST Zargabad
 //Old Outpost Area Markers
-_oldOutpostCenter2 = createMarkerLocal ["oldOutpostCenter2", [4337.11, 4363.47, 177.35]];
-_oldOutpostCenter3 = createMarkerLocal ["oldOutpostCenter3", [4354.33, 4350.77, 177.369]];
+_oldOutpostCenter2 = createMarkerLocal ["oldOutpostCenter2", [4211.11, 3916.47, 18.35]];
+_oldOutpostCenter3 = createMarkerLocal ["oldOutpostCenter3", [4449.33, 4379.77, 17.369]];
 
 //Old Outpost Area Prespawn Trigger
-_trigPos = [4287.63, 4265.86, 158.938];
+_trigPos = [4557.63, 4014.86, 18.938];
 _trigArea = [500, 500, 0, false];
 _trigAct = ["WEST", "PRESENT", false];
 _trigState = ["this", 

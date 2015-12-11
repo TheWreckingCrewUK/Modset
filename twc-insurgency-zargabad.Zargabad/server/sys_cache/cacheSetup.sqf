@@ -51,7 +51,7 @@ if (isNil "InsP_cacheGroup") then {
 				_ranNum = floor(random _c);
 				_x setPos (_house buildingPos _ranNum);
 				sleep 1;
-				_cacheGroup = [[(getPosATL _x select 0)+random 50, (getPosATL _x select 1)+random 50,0], EAST, (configfile >> "CfgGroups" >> "Indep" >> "rhs_faction_insurgents" >> "Infantry" >> "IRG_InfSquad")] call BIS_fnc_spawnGroup;
+				_cacheGroup = [[(getPosATL _x select 0)+random 50, (getPosATL _x select 1)+random 50,0], EAST, (configfile >> "CfgGroups" >> "Indep" >> "LOP_AM" >> "Infantry" >> "LOP_AM_Rifle_squad")] call BIS_fnc_spawnGroup;
 				[_cacheGroup, getPosATL _x, 100, 2, true] call CBA_fnc_taskDefend;
 			};
 			sleep 0.25;

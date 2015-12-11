@@ -1,29 +1,29 @@
 
 //Kamino Area Markers
-_b1Center = createMarkerLocal ["b1Center", [6061.43, 5632.57, 17.7221]];
-_b4Center = createMarkerLocal ["b4Center", [6584.2, 5328.43, 24.1741]];
+_b1Center = createMarkerLocal ["b1Center", [3605.43, 2960.57, 12.7221]];
+_b4Center = createMarkerLocal ["b4Center", [3522.2, 3013.43, 12.1741]];
 
 //B3 Area Marker
-_b3Center = createMarkerLocal ["b3Center", [6561.57, 5054.23, 48.512]];
+_b3Center = createMarkerLocal ["b3Center", [3061.57, 2778.23, 7.512]];
 
 //Kamino Area Spawn/Attack Markers
-_kaminoSpawn1 = createMarkerLocal ["kaminoSpawn1", [6018.42, 5422.05, 20.1118]];
-_kaminoSpawn2 = createMarkerLocal ["kaminoSpawn2", [6262.6, 5268.32, 10.5791]];
+_kaminoSpawn1 = createMarkerLocal ["kaminoSpawn1", [3769.42, 2658.05, 11.1118]];
+_kaminoSpawn2 = createMarkerLocal ["kaminoSpawn2", [3962.6, 2780.32, 10.5791]];
 
-_kaminoAttack1 = createMarkerLocal ["kaminoAttack1", [6062.53, 5609.15, 18.4797]];
-_kaminoAttack2 = createMarkerLocal ["kaminoAttack2", [6429.09, 5386.95, 8]];
-_kaminoAttack3 = createMarkerLocal ["kaminoAttack3", [6581.44, 5322.73, 24.1152]];
+_kaminoAttack1 = createMarkerLocal ["kaminoAttack1", [3869.42, 2658.05, 11.1118]];
+_kaminoAttack2 = createMarkerLocal ["kaminoAttack2", [3769.42, 2758.05, 11.1118]];
+_kaminoAttack3 = createMarkerLocal ["kaminoAttack3", [3869.42, 2708.05, 11.1118]];
 
 //B3 Area Spawn/Attack Markers
-_b3Spawn1 = createMarkerLocal ["b3Spawn1", [6427.06, 5093.92, 49.3786]];
-_b3Spawn2 = createMarkerLocal ["b3Spawn2", [6480.2, 4977.1, 15.5593]];
+_b3Spawn1 = createMarkerLocal ["b3Spawn1", [3964.06, 3173.92, 16.3786]];
+_b3Spawn2 = createMarkerLocal ["b3Spawn2", [3484.2, 3394.1, 11.5593]];
 
-_b3Attack1 = createMarkerLocal ["b3Attack1", [6593.28, 5094.76, 60.1941]];
-_b3Attack2 = createMarkerLocal ["b3Attack2", [6554.35, 5048.29, 47.686]];
+_b3Attack1 = createMarkerLocal ["b3Attack1", [3964.06, 3273.92, 16.3786]];
+_b3Attack2 = createMarkerLocal ["b3Attack2", [3484.2, 3494.1, 11.5593]];
 
 //Kamino Area Prespawn Trigger
 _trigPos = getMarkerPos "kaminoCenter";
-_trigArea = [800, 800, 0, false];
+_trigArea = [1000, 1000, 0, false];
 _trigAct = ["WEST", "PRESENT", false];
 _trigState = ["this", 
 	"
@@ -43,8 +43,8 @@ _trigName = "kaminoPrespawnTrig";
 [_trigPos, "AREA:", _trigArea, "ACT:", _trigAct, "STATE:", _trigState, "NAME:", _trigName] call CBA_fnc_createTrigger;
 
 //Kamino Area Spawn Trigger
-_trigPos = [6311.23, 5459.29, 4.89855];
-_trigArea = [200, 500, 119.628, false];
+_trigPos = [3634.23, 2928.29, 12.89855];
+_trigArea = [1000, 1000, 12.628, false];
 _trigAct = ["WEST", "PRESENT", true];
 _trigState = ["this",
 	"

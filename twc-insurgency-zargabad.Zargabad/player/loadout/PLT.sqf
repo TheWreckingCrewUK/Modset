@@ -18,6 +18,7 @@ for "_i" from 1 to 4 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "Chemlight_blue";
 for "_i" from 1 to 2 do {player addItemToUniform "rhsusf_mag_7x45acp_MHP";};
 player addVest "rhsusf_iotv_ocp";
+player addItemToUniform "ACE_Earplugs";
 for "_i" from 1 to 2 do {player addItemToVest "ACE_fieldDressing";};
 player addItemToVest "ACE_morphine";
 player addItemToVest "rhsusf_mag_7x45acp_MHP";

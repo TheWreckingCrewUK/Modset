@@ -10,7 +10,7 @@ if (!countermk1 == 14)
 	
 _randomN=floor (random count MakerArray);
 _randomScript= MakerArray select randomN;
-_spawndefending = [_pos, EAST, (configfile >> "CfgGroups" >> "Indep" >> "rhs_faction_insurgents" >> "Infantry" >> "IRG_InfSquad"] call BIS_fnc_spawnGroup;
+_spawndefending = [_pos, EAST, (configfile >> "CfgGroups" >> "Indep" >> "LOP_AM" >> "Infantry" >> "LOP_AM_Rifle_Squad"] call BIS_fnc_spawnGroup;
 [_spawndefending,getmarkerpos _randomScript, 100] call CBA_fnc_taskDefend;
 countermk1 = countermk1 + 1;	
 	

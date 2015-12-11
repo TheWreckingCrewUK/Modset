@@ -59,14 +59,13 @@ if (isNil "cacheAMarkers") then {
 #include "sys_ied\init.sqf";
 #include "sys_iedAttack\init.sqf";
 
+//special cases for spawning
 _townSetup1 = execVM "server\sys_townSetup\centerMarkers.sqf";
 _townSetup2 = execVM "server\sys_townSetup\agiaMarinaArea.sqf";
-_townSetup3 = execVM "server\sys_townSetup\baseArea.sqf";
+//_townSetup3 = execVM "server\sys_townSetup\baseArea.sqf";
 
-waitUntil{scriptDone _townSetup1 && scriptDone _townSetup2 && scriptDone _townSetup3};
+//waitUntil{scriptDone _townSetup1 && scriptDone _townSetup2 && scriptDone _townSetup3};
 
 #include "sys_vehicles\init.sqf";
-
-campFirePerson4 setPosATL [2115.54, 5709.9, 0];
 
 #include "sys_townSetup\init.sqf";

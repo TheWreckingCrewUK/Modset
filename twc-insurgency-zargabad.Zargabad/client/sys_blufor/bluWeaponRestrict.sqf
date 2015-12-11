@@ -1,4 +1,4 @@
-local _opforWeapons = [
+_opforWeapons = [
     "rhs_weap_ak74m",
     "rhs_weap_ak74m_folded",
     "rhs_weap_pkp",

@@ -1,16 +1,16 @@
 
 //Camp Rogain Area Markers
-_rogainSpawn1 = createMarkerLocal ["rogainSpawn1", [4896.21, 5990.72, 168.626]];
-_rogainSpawn2 = createMarkerLocal ["rogainSpawn2", [5048.55, 6013.57, 190.539]];
-_rogainSpawn3 = createMarkerLocal ["rogainSpawn3", [5149.99, 5922.29, 168.973]];
+_rogainSpawn1 = createMarkerLocal ["rogainSpawn1", [3852.21, 4075.72, 16.626]];
+_rogainSpawn2 = createMarkerLocal ["rogainSpawn2", [4063.55, 4224.57, 16.539]];
+_rogainSpawn3 = createMarkerLocal ["rogainSpawn3", [3786.99, 4322.29, 14.973]];
 
-_rogainAttack1 = createMarkerLocal ["rogainAttack1", [4983.73, 5918.94, 208.392]];
-_rogainAttack2 = createMarkerLocal ["rogainAttack2", [5027.84, 5939.1, 208.798]];
-_rogainAttack3 = createMarkerLocal ["rogainAttack3", [5015.35, 5896.16, 208.145]];
+_rogainAttack1 = createMarkerLocal ["rogainAttack1", [3543.73, 4156.94, 22.392]];
+_rogainAttack2 = createMarkerLocal ["rogainAttack2", [3728.84, 3822.1, 33.798]];
+_rogainAttack3 = createMarkerLocal ["rogainAttack3", [3870.35, 4445.16, 21.145]];
 
 //Camp Rogain Area Prespawn Trigger
 _trigPos = getMarkerPos "rogainCenter";
-_trigArea = [400, 400, 0, false];
+_trigArea = [800, 800, 0, false];
 _trigAct = ["WEST", "PRESENT", false];
 _trigState = ["this", 
 	"
@@ -25,7 +25,7 @@ _trigName = "rogainPrespawnTrig";
 
 //A8 Area Prespawn Trigger
 _trigPos = getMarkerPos "a8Center";
-_trigArea = [400, 550, 272.79, false];
+_trigArea = [800, 800, 272.79, false];
 _trigAct = ["WEST", "PRESENT", false];
 _trigState = ["this", 
 	"

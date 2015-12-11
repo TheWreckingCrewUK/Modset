@@ -261,6 +261,11 @@ g_p38 = "";
 
 
 execVM "player\boxes\main_ammo.sqf";
+execVM "player\boxes\main_ammobravo.sqf";
+execVM "player\boxes\main_ammocharlie.sqf";
+execVM "player\boxes\main_ammodelta.sqf";
+execVM "player\boxes\main_ammoecho.sqf";
+execVM "player\boxes\main_ammohelo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 

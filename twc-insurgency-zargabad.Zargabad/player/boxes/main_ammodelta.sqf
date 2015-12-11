@@ -12,7 +12,7 @@
 				edited by FakeMatty
 */
 
-_marker = "crate";  // marker used to spawn.
+_marker = "cratedelta";  // marker used to spawn.
 _boxType = "I_supplyCrate_F";  // the type of ammobox used.
 _timer = 240;  // time in seconds until box is refilled.
  

@@ -1,7 +1,7 @@
 if (!((getPlayerUID player) in memberIDArray)) exitWith {};
 if (side player == civilian) exitWith {};
 
-local _timePlayed = 0;
+_timePlayed = 0;
 _nameSpaceValue = profileNamespace getVariable ["TWCPub_timePlayed", [-1, -1]];
 
 if ((_nameSpaceValue select 1) == TWCserverID) then {
