@@ -7,7 +7,6 @@ _curator addCuratorEditableObjects [vehicles,true];
 _curator addCuratorEditableObjects [(allMissionObjects "Man"),false];
 _curator addCuratorEditableObjects [(allMissionObjects "Air"),true];
 _curator addCuratorEditableObjects [(allMissionObjects "Ammo"),false];
-_curator addCuratorEditableObjects [(allMissionObjects "allMines"),true];
 	
 //makes all units continuously available to Zeus (for respawning players and AI that's being spawned by a script.)
 while {true} do {
