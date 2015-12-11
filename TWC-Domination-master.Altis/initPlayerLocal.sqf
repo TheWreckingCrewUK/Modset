@@ -1,7 +1,11 @@
 waitUntil{!isNull player};
 [player] join grpNull ;
-player enableFatigue false;
-
+while {true} do{
+if (local player) then{
+	player enableFatigue false;
+	sleep 3;
+	};
+};
 if (!hasInterface) exitWith {};
 
 global_sync = false;
