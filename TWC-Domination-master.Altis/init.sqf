@@ -1,6 +1,5 @@
 call compile preprocessfilelinenumbers "shk_pos\shk_pos_init.sqf";
 
-
 //AO Setup and SideMission
 
 TaskArray=["Pygros","Charkia","Rodopoli","Paros","Frini","Galati","Syrta","Agios Dionysios","Poliakko","Neochori"];

@@ -41,7 +41,8 @@ class Mission
 		"A3_Modules_F",
 		"JS_JC_FA18",
 		"trixie_recon",
-		"acre_api"
+		"acre_api",
+		"3DEN"
 	};
 	addOnsAuto[]=
 	{
@@ -50,7 +51,8 @@ class Mission
 		"a3_characters_f",
 		"rhsusf_c_troops",
 		"A3_Modules_F_Intel",
-		"A3_Modules_F_Curator_Curator",
+		"3DEN",
+		"a3_modules_f_curator_curator",
 		"ace_advanced_ballistics",
 		"ace_finger",
 		"ace_explosives",
@@ -214,7 +216,7 @@ class Mission
 				class Item7
 				{
 					position[]={14635.548,17.91,16724.686};
-					azimut=-338.77515;
+					azimut=-338.77499;
 					special="NONE";
 					id=7;
 					side="WEST";
@@ -222,7 +224,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.40000001;
 					text="p8";
-					init="this addeventhandler [""respawn"",""_this execVM 'ACEFIX\BAF_RFR.sqf'""];";
+					init="this join g8;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\BAF_RFR.sqf'""];";
 					description="Alpha Medic";
 				};
 			};

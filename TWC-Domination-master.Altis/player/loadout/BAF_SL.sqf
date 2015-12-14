@@ -14,7 +14,7 @@ player addItemToUniform "ACRE_PRC343";
 player addVest "BAF_Soldier_Officer_Vest_M_DG1";
 player addBackpack "B_Kitbag_mcamo";
 player addItemToBackpack "ACRE_PRC117F";
-player addHeadgear "BAF_Soldier_Engineer_Headgear_M_DG1";
+player addHeadgear "BAF_Soldier_Crewman_Headgear_M_DG1";
 
 comment "Add weapons";
 

@@ -17,7 +17,7 @@ player addVest "rhsusf_iotv_ocp_Rifleman";
 player addBackpack "rhsusf_assault_eagleaiii_ocp";
 player addItemToBackpack "ACRE_PRC117F";
 player addItemToBackpack "CUP_Vector21Nite";
-player addHeadgear "rhsusf_ach_helmet_ocp";
+player addHeadgear "rhsusf_ach_helmet_headset_ess_ocp";
 
 comment "Add weapons";
 
