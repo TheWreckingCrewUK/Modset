@@ -1,5 +1,5 @@
-DisabledAI		= 1;
-joinUnassigned	= 0;
+DisabledAI		= 1;    //0 fills empty slots with AI Keep it on 1
+joinUnassigned	= 0;    //0 Forces slots on server rotation. Keep it on 1
 disableChannels[]={0,1,2,3,4,6};
 
 
