@@ -135,7 +135,7 @@ class Mission
 					id=1;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -280,7 +280,7 @@ class Mission
 				class Item0
 				{
 					position[]={4794.4243,66.63485,661.25757};
-					azimut=195.67992;
+					azimut=195.67999;
 					special="NONE";
 					id=11;
 					side="WEST";
@@ -639,11 +639,11 @@ class Mission
 				class Item0
 				{
 					position[]={4751.1953,66.343117,664.86768};
-					azimut=168.45061;
+					azimut=168.451;
 					id=28;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;

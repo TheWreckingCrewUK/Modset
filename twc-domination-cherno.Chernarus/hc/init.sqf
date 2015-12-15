@@ -1,0 +1,3 @@
+
+
+execVM "hc\psync.sqf";

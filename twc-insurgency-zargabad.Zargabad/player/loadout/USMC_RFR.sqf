@@ -11,10 +11,10 @@ removeHeadgear _unit;
 removeGoggles _unit;
 
 comment "Add containers";
-_unit forceAddUniform "rhs_uniform_FROG01_wd";
+_unit forceAddUniform "rhs_uniform_FROG01_d";
 _unit addVest "rhsusf_spc";
 _unit addBackpack "rhsusf_assault_eagleaiii_coy";
-_unit addHeadgear "rhsusf_mich_helmet_marpatwd";
+_unit addHeadgear "rhsusf_mich_helmet_marpatd";
 
 comment "Add weapons";
 
