@@ -31,6 +31,15 @@ if(isServer) then
 
 waitUntil {!isNull player};
 waitUntil {player == player};
+/*
+null = execVM "client\sys_Member\Timeplayed.sqf";
+
+if ((getplayerUID player) in memberIDArray) then {
+
+_Time = ['TWC_Timeplayed','Time Played','', {[] call TWC_fnc_timePlayed},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], _Time] call ace_interact_menu_fnc_addActionToObject;
+};
+*/
 
 if (InsP_playerCiv) then {
 	execVM "client\sys_humanCiv\Markers.sqf";
@@ -78,6 +87,17 @@ _defuseAction = [
 
 ["IEDLandBig_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
 ["IEDLandSmall_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
+/*
+cutText ["Receiving...", "BLACK", .001];
+
+titleText ["The Wrecking Crew","PLAIN DOWN"];
+titleFadeOut 7;
+sleep 5;
+
+titleText ["Insurgency Plus","PLAIN DOWN"];
+titleFadeOut 7;
+sleep 5;
+*/
 
 _pilots = ["p21", "p22"];
 _apachepilots = ["p23", "p24"];
@@ -103,3 +123,5 @@ titleFadeOut 4;
 if (isDedicated) then {
 	[["patrol1", "patrol2", "patrol3", "patrol4", "patrol5", "patrol6"]] call InsP_fnc_patrolGroup;
 };
+
+//execVM "client\sys_ambient\ambientCiv.sqf";
