@@ -31,7 +31,11 @@ _btr60squad = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_msv" >> "rhs_
 _bmp2 = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_vdv" >> "rhs_group_rus_vdv_bmd1" >> "rhs_group_rus_vdv_bmd1_squad");
 _t72 = "rhs_t72bd_tv";
 _shilka = "rhs_zsu234_aa";
+_Bmp = "rhs_bmp2_vdv";
+_btr = "rhs_btr80_vv";
 _bunkergun = "RHS_NSV_TriPod_MSV";
+_AAstatic = "RDS_Igla_AA_pod_AAF";
+_gunner = "rhs_msv_emr_rifleman";
 _radar = "rhs_p37";
 _ruflag = "rhs_Flag_Russia_F";
 _natoflag = "Flag_NATO_F";
@@ -176,71 +180,32 @@ if isServer then {
 
       };
 
-if isServer then {
-	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],random 360,0] call SHK_pos;
-	_PatrolOne = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
-	[_PatrolOne, getmarkerpos _CentralMarker, 600, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
 
-	};
-
-if isServer then {
-	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],random 360,0] call SHK_pos;
-	_PatrolTwo = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
-	[_PatrolTwo, getmarkerpos _CentralMarker, 600, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
-
-	};
-
-if isServer then {
-	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],random 360,0] call SHK_pos;
-	_PatrolThree = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
-	[_PatrolThree, getmarkerpos _CentralMarker, 600, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
-
-	};
-
-if isServer then {
-	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
-	_DefendOne = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
-	[_DefendOne, getmarkerpos _CentralMarker, 600] call CBA_fnc_taskDefend;
-
-	};
-
-if isServer then {
-	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
-	_DefendTwo = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
-	[_DefendTwo, getmarkerpos _CentralMarker, 600] call CBA_fnc_taskDefend;
-
-	};
-
-if isServer then {
-	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],random 360,0] call SHK_pos;
-	_APCOne = [_pos, EAST, _btr60squad] call BIS_fnc_spawnGroup;
-	[_APCOne, getmarkerpos _CentralMarker, 600, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
-
-	};
-
-if isServer then {
-	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],random 360,0] call SHK_pos;
-	_APCTwo = [_pos, EAST, _btr60squad] call BIS_fnc_spawnGroup;
-	[_APCTwo, getmarkerpos _CentralMarker, 600, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
-
-	};
-
-
-if isServer then {
-	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],random 360,0] call SHK_pos;
-	_IFVOne = [_pos, EAST, _bmp2] call BIS_fnc_spawnGroup;
-	[_IFVOne, getmarkerpos _CentralMarker, 600, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
-
-	};
-
+for "_i" from 0 to 1 do {
+	if isServer then {
+		private ["_pos","_m"];
+		_pos = [getmarkerpos _CentralMarker,[100,600],random 360,0] call SHK_pos;
+		_PatrolSquad = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
+		[_PatrolSquad, getmarkerpos _CentralMarker, 600, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
+		};
+};
+for "_i" from 0 to 1 do {
+	if isServer then {
+		private ["_pos","_m"];
+		_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
+		_DefendSquad = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
+		[_DefendSquad, getmarkerpos _CentralMarker, 600] call CBA_fnc_taskDefend;
+		};
+};
+for "_i" from 0 to 1 do {
+	if isServer then {
+			private ["_pos","_m"];
+			_pos = [getmarkerpos _CentralMarker,[400,600],random 360,0,[1,400]] call SHK_pos;
+			_BtrCrew = creategroup EAST;
+			_BtrVeh = [_pos, 180, _btr,_BtrCrew] call BIS_fnc_spawnVehicle;
+			[_BtrCrew, getMarkerpos _CentralMarker, 600] call CBA_fnc_taskPatrol;
+		};
+};
 
 if isServer then {
 	private ["_pos","_m"];
@@ -256,7 +221,7 @@ if isServer then {
 	_pos = [getmarkerpos _CentralMarker,[400,600],random 360,0,[1,400]] call SHK_pos;
 	_CrewOne = creategroup EAST;
 	_TankOne = [_pos, 180, _t72,_CrewOne] call BIS_fnc_spawnVehicle;
-       [_CrewOne, getMarkerpos _CentralMarker, 600] call CBA_fnc_taskPatrol;
+     [_CrewOne, getMarkerpos _CentralMarker, 600] call CBA_fnc_taskPatrol;
 
 	};
 
@@ -268,8 +233,8 @@ if isServer then {
 	_AAOne = [_pos, 180, _shilka,_CrewTwo] call BIS_fnc_spawnVehicle;
 
 	};
-
-
+//Counter attacks and other such things
+_AttackHeli = [_AOname] spawn TWC_fnc_AttackHelicopter;
 
 
 TaskIncrease = TaskIncrease + 1;
@@ -280,10 +245,6 @@ if isServer then {
 	_pos = [getmarkerpos _CentralMarker,[100,600],[0,120],0,[1,200]] call SHK_pos;
 	_RadioTower = "rhs_p37" createVehicle (_pos);
 	_RadioTower setdamage 0.99;
-[] spawn {
-		sleep 1000;
-		[_AOname] call TWC_fnc_RadioTower;
-};
 		waituntil { damage _RadioTower == 1};
 		RadioTowerCheck = RadioTowerCheck + 1;
 		hint "Radio Tower Destroyed";
@@ -296,6 +257,7 @@ waituntil {AObunkercount == 3 and RadioTowerCheck == 1};
 
    [format["Task%1",TaskIncrease],"succeeded"] call TWC_fnc_UpdateTask;
   _CentralMarker setmarkercolor "Colorblue";
+  terminate _AttackHeli;
   {if (side _x == east) then
   {_x setDamage 1};} foreach allunits;
   sleep 5;
