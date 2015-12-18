@@ -12,5 +12,5 @@ for "_i" from 1 to 2 do {
 	_individualCiv setFormDir _civHeading;
 	_individualCiv setDir _civHeading;
 	_westKilled = _individualCiv addMPEventHandler ["MPKilled", {[_this select 0, _this select 1, _intelCache] call InsP_fnc_civKill;}];
-	_individualCiv allowFleeing 0.1;
+	_individualCiv disableAI "MOVE";
 };

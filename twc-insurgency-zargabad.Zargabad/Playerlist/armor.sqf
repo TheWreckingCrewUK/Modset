@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Air Assets", [["Blackhawk", [g_p21, "Pilot"],[g_p22, "Crew Chief"]]]]				
+g_playerlist = [["Air Assets", [["Blackhawk", [g_p34, "Commander"],[g_p35, "Crewman"],[g_p36, "Crewman"]]]]				
 				
 				];
 
@@ -31,4 +31,3 @@ _text = "";
 	hint parseText _text;
 	sleep 7;
 } forEach g_playerList;
-

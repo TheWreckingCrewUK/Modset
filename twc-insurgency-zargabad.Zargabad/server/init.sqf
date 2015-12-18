@@ -46,8 +46,8 @@ if (isNil "cacheAMarkers") then {
 	cacheBMarkers = [];
 	publicVariable "cacheBMarkers";
 	cacheCMarkers = [];
-	publicVariable "cacheCMarkers";
-	cacheDMarkers = [];
+//	publicVariable "cacheCMarkers";
+//	cacheDMarkers = [];
 	publicVariable "cacheDMarkers";
 	cacheEMarkers = [];
 	publicVariable "cacheEMarkers";
