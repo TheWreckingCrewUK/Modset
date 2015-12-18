@@ -3010,7 +3010,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=39;
+		items=38;
 		class Item0
 		{
 			position[]={14640.538,17.91,16766.221};
@@ -3219,50 +3219,42 @@ class Mission
 		};
 		class Item31
 		{
-			position[]={8422.7168,111.53397,25112.367};
-			name="H_1";
-			text="Helicopters";
-			type="b_air";
-			angle=180.19243;
-		};
-		class Item32
-		{
 			position[]={14144.264,20.644955,16169.828};
 			name="p";
 			text="Aircraft";
 			type="b_plane";
 		};
-		class Item33
+		class Item32
 		{
 			position[]={14633.597,17.91,16754.773};
 			name="secondary_crate";
 			type="Empty";
 		};
-		class Item34
+		class Item33
 		{
 			position[]={27003.676,21.404707,24733.836};
 			name="Molos_Airfield";
 			type="Empty";
 		};
-		class Item35
+		class Item34
 		{
 			position[]={23147.225,3.1900001,18734.523};
 			name="Salt_Flats_Airfield";
 			type="Empty";
 		};
-		class Item36
+		class Item35
 		{
 			position[]={21116.977,20.741961,7326.0298};
 			name="Selakano_Airfield";
 			type="Empty";
 		};
-		class Item37
+		class Item36
 		{
 			position[]={11522.727,22.949728,11700.203};
 			name="AAC_Airfield";
 			type="Empty";
 		};
-		class Item38
+		class Item37
 		{
 			position[]={9119.9043,17.173223,21457.145};
 			name="Aristi_Airfield";

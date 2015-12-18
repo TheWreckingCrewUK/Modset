@@ -117,7 +117,7 @@ if (g_class == "BAF_SL") then {
         _tmp_magazines =
         [
             
-			["30Rnd_556x45_Stanag",50],
+			 ["30Rnd_556x45_Stanag",50],
              ["UK3CB_BAF_17Rnd_9mm",15],
 			 ["1Rnd_HE_Grenade_shell", 40],
 	         ["1Rnd_Smoke_Grenade_shell", 10],
@@ -126,7 +126,8 @@ if (g_class == "BAF_SL") then {
 	         ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	         ["1Rnd_SmokePurple_Grenade_shell", 10],
 			 ["UGL_FlareWhite_F", 10],
-	         ["1Rnd_SmokeBlue_Grenade_shell", 10]
+	         ["1Rnd_SmokeBlue_Grenade_shell", 10],
+			 ["rhs_fim92_mag",2]
         ];
 		
 		_tmp_items = 
@@ -253,8 +254,7 @@ if (g_class == "BAF_SL") then {
         [
             ["UK3CB_BAF_20Rnd",25],
 			["UK3CB_BAF_20Rnd_T",10],
-			
-			
+			["rhs_fim92_mag",2],			
 			["UK3CB_BAF_17Rnd_9mm",15]
         ];
 		
@@ -421,7 +421,7 @@ if (g_class == "US_SL") then {
         [
             
 			["rhs_m136_mag", 4],
-			
+			["rhs_fim92_mag",2],
 			["30Rnd_556x45_Stanag",50],
 			["30Rnd_556x45_Stanag_Tracer_Red",50],
             ["rhsusf_mag_7x45acp_MHP",15]
@@ -519,7 +519,7 @@ if (g_class == "US_SL") then {
         _tmp_magazines =
         [
             ["30Rnd_556x45_Stanag",50],
-			
+			["rhs_fim92_mag",2],		
 			["rhsusf_mag_7x45acp_MHP",15],
 			
 								["1Rnd_HE_Grenade_shell", 40],
@@ -563,7 +563,7 @@ if (g_class == "US_SL") then {
         _tmp_magazines =
         [
              ["rhsusf_20Rnd_762x51_m118_special_Mag",25],
-			 
+			 ["rhs_fim92_mag",2],
              ["rhsusf_mag_7x45acp_MHP",15]
         ];
 		
@@ -910,9 +910,8 @@ if (g_class == "US_SL") then {
         _tmp_magazines =
         [
              ["30Rnd_556x45_Stanag",50],
-			 ["30Rnd_556x45_Stanag_Tracer_Red",50],
-			 
-			 
+			 ["30Rnd_556x45_Stanag_Tracer_Red",50],			 
+			 ["rhs_fim92_mag",2],
              ["rhsusf_mag_7x45acp_MHP",15],
 			 ["rhs_m136_mag", 2]
 			 
@@ -948,7 +947,7 @@ if (g_class == "US_SL") then {
         [
            ["30Rnd_556x45_Stanag",50],
 		   ["30Rnd_556x45_Stanag_Tracer_Red",50],
-		
+		   ["rhs_fim92_mag",2],		
              ["rhsusf_mag_7x45acp_MHP",15],
 			 ["rhs_fgm148_magazine_AT", 2],
 			 

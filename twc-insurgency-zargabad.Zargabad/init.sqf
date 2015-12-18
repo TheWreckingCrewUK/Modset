@@ -24,7 +24,7 @@ execVM "tao\restrict\pilot.sqf";
 //execVM "tao\restrict\Radio.sqf";
 
 russiancheck = 0;
-
+/*
 if(isServer) then
 {
 	_serverID = str(round((random(100000)) + random 10000));
@@ -32,7 +32,7 @@ if(isServer) then
 	TWCserverID = profileNameSpace getVariable "TWC_ServerID";
 	publicVariable "TWCserverID";
 };
-
+*/
 waitUntil {!isNull player};
 waitUntil {player == player};
 /*
@@ -111,7 +111,7 @@ if ((str player) in _pilots && (count playableUnits) < 5) then {
     ["end4", false, 0] call BIS_fnc_endMission;
 };
 
-if ((str player) in _apachepilots && ((count playableUnits) <= 13 || !((getPlayerUID player) in memberIDArray))) then {
+if ((str player) in _apachepilots && (count playableUnits) <= 13) then {
     ["end7", false, 0] call BIS_fnc_endMission;
 };
 

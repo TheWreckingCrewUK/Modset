@@ -288,7 +288,7 @@ class Mission
 					id=11;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -391,7 +391,7 @@ class Mission
 					id=18;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="p18";
 					description="Delta Grenadier";
