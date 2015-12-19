@@ -1,7 +1,7 @@
 
 waitUntil {!isNull player};
 waitUntil {player == player};
-
+execvM "client\sys_blufor\Armourcrew.sqf";
 #include "init\setDefines.sqf";
 
 InsP_fnc_questionDisplay = compile preProcessFileLineNumbers "client\sys_intel\fnc_questionDisplay.sqf";

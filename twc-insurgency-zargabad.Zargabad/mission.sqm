@@ -41,8 +41,8 @@ class Mission
 		"A3_Misc_F_Helpers",
 		"aia_misc_e_config",
 		"aia_misc3_config",
-		"rhsusf_c_troops",
-		"RHS_US_A2Port_Armor"
+		"RHS_US_A2Port_Armor",
+		"rhsusf_c_troops"
 	};
 	addOnsAuto[]=
 	{
@@ -282,7 +282,7 @@ class Mission
 				items=5;
 				class Item0
 				{
-					position[]={4794.4243,66.63485,661.25757};
+					position[]={4815.9814,66.230965,720.8938};
 					azimut=195.67999;
 					special="NONE";
 					id=11;
@@ -1632,8 +1632,8 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={4814.4966,66.258888,718.18884};
-					azimut=9.0433102;
+					position[]={4813.7632,66.231697,720.21655};
+					azimut=-2.5455699;
 					id=54;
 					side="WEST";
 					vehicle="rhsusf_army_ocp_rifleman_1stcav";
@@ -1645,8 +1645,8 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={4813.8677,66.260414,717.17242};
-					azimut=9.0433102;
+					position[]={4812.2964,66.237427,718.513};
+					azimut=-2.5455699;
 					id=55;
 					side="WEST";
 					vehicle="rhsusf_army_ocp_rifleman_1stcav";
@@ -1657,8 +1657,8 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={4815.1162,66.277367,716.63556};
-					azimut=9.0433102;
+					position[]={4814.6099,66.253609,718.63367};
+					azimut=-2.5455699;
 					id=56;
 					side="WEST";
 					vehicle="rhsusf_army_ocp_rifleman_1stcav";
@@ -5523,7 +5523,7 @@ class Mission
 			vehicle="RHS_M2A3_BUSKIII";
 			leader=1;
 			skill=0.44999999;
-			init="0 = [this, 30, 1200] execVM ""lib\vehicle.sqf"";";
+			init="0 = [this, 30, 1200] execVM ""lib\vehicle.sqf""; _null = [vehiclename] execVM ""client\sys_Blufor\Armourcrew.sqf"";";
 			description="Tank Crew";
 		};
 	};
