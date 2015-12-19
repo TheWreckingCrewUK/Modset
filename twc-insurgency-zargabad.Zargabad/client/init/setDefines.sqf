@@ -1,1 +1,1 @@
-InsP_playerCiv = (faction player == "LOP_TAK_Civ");
+InsP_playerCiv = str(side player) == 'CIV';
