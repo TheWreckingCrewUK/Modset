@@ -47,6 +47,7 @@ if (g_class == "ANA_SL") then {
 								["ACE_epinephrine",5],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
+								["rhsusf_acc_anpeq15_light",1],
 								["ACE_M26_Clacker",1]
 
                 ];
@@ -68,6 +69,7 @@ if (g_class == "ANA_SL") then {
 		_tmp_items = [
 
                                 ["ACE_MapTools",1],
+								["rhsusf_acc_anpeq15_light",1],
                                 ["ACE_fieldDressing",20],
                                 ["ACE_morphine",10]
 		];
@@ -97,6 +99,7 @@ if (g_class == "ANA_SL") then {
 		[
 
              ["ACE_MapTools",1],
+			 ["rhsusf_acc_anpeq15_light",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10]
 		];
@@ -142,6 +145,7 @@ if (g_class == "ANA_SL") then {
 		_tmp_items =
 		[
 
+			["rhsusf_acc_anpeq15_light",1],
 			["ACE_fieldDressing",50],
 			["ACE_morphine",50],
 			["ACE_epinephrine",50],
