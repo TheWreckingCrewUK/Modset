@@ -9,5 +9,4 @@
 5. place down:
 	ACE Medic Class-name the medic, "medic" No Quotes
 	Place ACE Spectator
-	Place TFAR Module and set as No to give section leaders a long, and No for soldiers getting a short.
 	Place zues module and set as #adminLogged and name it zues

@@ -1,6 +1,6 @@
 
-author = "Saxon";
-onLoadName = "Operation Cliff"; 
+author = "[TWC] Harry";
+onLoadName = "Operation громовой"; 
 loadScreen = "operation_framework\pictures\loading.jpg";
 disabledAI = 1;
 enableDebugConsole = 1;
@@ -10,10 +10,8 @@ respawnButton = 0;
 respawn = "base";
 respawnDelay = 1000000;
 respawnTemplates[] = {"ace_spectator"};
-#include "operation_framework\CHVD\dialog.hpp"
 class CfgFunctions
 {
-	#include "operation_framework\CHVD\CfgFunctions.hpp"
    class TWC
 	{
 		class Patrol

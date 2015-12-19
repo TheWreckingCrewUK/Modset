@@ -10,16 +10,9 @@
 /                       Tasks go here                     /
 /////////////////////////////////////////////////////////*/
 
-["TaskDef","Defend the airfield","The airfield is our last foothold on Stratis, it must be held at all costs"] call TWC_fnc_CreateTask;
-
-["TaskOfc","Eliminate enemy high command","We have reports of an experienced and high ranking officer in command of the altian forces on Stratis. If his attack on the airfield fails it is likely that the enemy will be quick to extract him off the island."] call TWC_fnc_CreateTask;
-
-["TaskAnt","Capture the long range communications antenna","The enemy is using this antennas to jam our communications around Stratis, we have to capture it to reestablish communications with high command."] call TWC_fnc_CreateTask;
-
-["TaskRad","Capture the radar station","The enemy has captured our radar station, we have to gain it back."] call TWC_fnc_CreateTask;
-
-["TaskPol","Eliminate an enemy party official","Loukas Ypsilantis, a high ranking member of the Kathestós tis défteris Ianouaríou, was supposed to report the victory over our forces. After we push back the enemies attack, he is likely to hide somewhere in the western part of this island and wait for extraction."] call TWC_fnc_CreateTask;
-
+["Task1","Capture the town of Balka","There is a large garrison of US personal in the town of Balka which controls one of the primary MSR's. Liberate it it from American control"] call TWC_fnc_CreateTask;
+["Task2","Capture the airfield","After the destruction of NATO's priamry airfield by nuclear attack, all remaining land based airpower on the island is coming from a samll airstrip in the middle of sector 2. Taking this will be detrimental to NATO's grip on the region"] call TWC_fnc_CreateTask;
+["Task3","Neutralize enemy artillery","Our forces have been under constant artillery fire from US positions, reconnaisance suggests these positions are currently deplensihed on ammo. You are to destroy them before they can be resupplied in the coming week"] call TWC_fnc_CreateTask;
 
 /*/////////////////////////////////////////////////////////
 /                         Safe Zone                       /
@@ -34,6 +27,9 @@
 /////////////////////////////////////////////////////////*/
 
 [] execVM "operation_framework\zues\Zues.sqf";
+[] execVM "operation_framework\zues\Zues-Harry.sqf";
+[] execVM "operation_framework\zues\Zues-Fakematty.sqf";
+[] execVM "operation_framework\zues\Zues-jayman.sqf";
 
 ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
@@ -48,7 +44,7 @@ titleCut ["", "BLACK FADED", 999];
 	titleFadeOut 7;
 	sleep 5;
 
-	titleText ["Operation Cliff","PLAIN"];
+	titleText ["Operation громовой","PLAIN"];
 	titleFadeOut 15;
 	sleep 30;
 
@@ -63,10 +59,3 @@ titleCut ["", "BLACK FADED", 999];
 
 	titleCut ["", "BLACK IN", 5];
 	};
-	
-/*////////////////////////////////////////////////////////////
-/                         ACE Spectator                      /
-/                                                            /
-////////////////////////////////////////////////////////////*/
-
-respawnTemplates[] = {"ace_spectator"};
