@@ -42,6 +42,7 @@ if (g_class == "ANA_SL") then {
                 _tmp_items = [
 
                                 ["ACE_MapTools",1],
+								["binocular",1],
                                 ["ACE_fieldDressing",20],
                                 ["ACE_morphine",10],
 								["ACE_epinephrine",5],

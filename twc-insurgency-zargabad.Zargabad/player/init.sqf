@@ -197,13 +197,13 @@ if (!isNil "P34" && {player == P34}) then {
 };
 
 if (!isNil "P35" && {player == P35}) then {
-    g_class = "ARMOUR";
+    g_class = "ARMOURCREW";
 	g_group = "1";
 	g_unit = "143";
 };
 
 if (!isNil "P36" && {player == P36}) then {
-    g_class = "ARMOUR";
+    g_class = "ARMOURCREW";
 	g_group = "1";
 	g_unit = "144";
 };

@@ -12,7 +12,7 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "rhs_uniform_FROG01_d";
-player addVest "rhsusf_iotv_ocp_Medic";
+player addVest "rhsusf_spc_rifleman_rifleman";
 player addBackpack "rhsusf_assault_eagleaiii_ocp";
 player addHeadgear "rhsusf_mich_helmet_marpatd";
 
