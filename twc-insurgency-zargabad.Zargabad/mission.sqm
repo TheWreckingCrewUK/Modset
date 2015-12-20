@@ -42,7 +42,8 @@ class Mission
 		"aia_misc_e_config",
 		"aia_misc3_config",
 		"RHS_US_A2Port_Armor",
-		"rhsusf_c_troops"
+		"rhsusf_c_troops",
+		"lop_faction_tak_civ"
 	};
 	addOnsAuto[]=
 	{
@@ -52,7 +53,7 @@ class Mission
 		"3DEN",
 		"a3_modules_f_curator_curator",
 		"ace_medical",
-		"A3_Characters_F_Civil",
+		"lop_faction_tak_civ",
 		"A3_Characters_F_OPFOR",
 		"ace_map",
 		"ace_cargo",
@@ -513,10 +514,12 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5437.877,99.721001,-48.226563};
+					position[]={3431.1187,54.207603,8177.6733};
+					azimut=179.98718;
 					id=23;
 					side="CIV";
-					vehicle="C_man_1";
+					vehicle="LOP_Tak_Civ_Man_01";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="humanCiv3";
@@ -532,10 +535,12 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5438.127,99.729126,-44.148438};
+					position[]={3435.7737,53.585575,8171.0815};
+					azimut=179.98718;
 					id=24;
 					side="CIV";
-					vehicle="C_man_1";
+					vehicle="LOP_Tak_Civ_Man_01";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="humanCiv1";
@@ -551,10 +556,12 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5441.7051,99.824104,-44.980957};
+					position[]={3427.2922,53.895256,8174.4263};
+					azimut=179.98718;
 					id=25;
 					side="CIV";
-					vehicle="C_man_1";
+					vehicle="LOP_Tak_Civ_Man_01";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="humanCiv2";
