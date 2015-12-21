@@ -2040,7 +2040,7 @@ class Mission
 		class Item18
 		{
 			position[]={4681.5581,8.9101038,2601.7419};
-			azimut=-59.6026;
+			azimut=-59.602577;
 			special="NONE";
 			id=89;
 			side="EMPTY";
@@ -2548,7 +2548,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=37;
+		items=36;
 		class Item0
 		{
 			position[]={5149.228,8.625,2358.8579};
@@ -2777,12 +2777,6 @@ class Mission
 		{
 			position[]={8007.3936,5.8078485,3353.9819};
 			name="Prigorodki";
-			type="Empty";
-		};
-		class Item36
-		{
-			position[]={12109.314,159,12686.639};
-			name="EnemyBase";
 			type="Empty";
 		};
 	};
