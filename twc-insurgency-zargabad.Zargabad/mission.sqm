@@ -515,11 +515,10 @@ class Mission
 				class Item0
 				{
 					position[]={3431.1187,54.207603,8177.6733};
-					azimut=179.98718;
+					azimut=179.987;
 					id=23;
 					side="CIV";
 					vehicle="LOP_Tak_Civ_Man_01";
-					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="humanCiv3";
@@ -536,11 +535,10 @@ class Mission
 				class Item0
 				{
 					position[]={3435.7737,53.585575,8171.0815};
-					azimut=179.98718;
+					azimut=179.987;
 					id=24;
 					side="CIV";
 					vehicle="LOP_Tak_Civ_Man_01";
-					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="humanCiv1";
@@ -557,11 +555,10 @@ class Mission
 				class Item0
 				{
 					position[]={3427.2922,53.895256,8174.4263};
-					azimut=179.98718;
+					azimut=179.987;
 					id=25;
 					side="CIV";
 					vehicle="LOP_Tak_Civ_Man_01";
-					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="humanCiv2";
