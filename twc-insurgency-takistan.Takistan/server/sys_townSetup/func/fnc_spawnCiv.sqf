@@ -19,13 +19,14 @@
 * Author: [TWC] Fakematty / [TWC] Jayman
 */
 
+_marker = _this select 0;
+_civnum = _this select 1;
+/*
 Private ["_marker","_civnum"];
 params ["_marker",["_civnum",7]];
-
+*/
 for "_i" from 1 to _civnum do {
 	if (isServer) then {
 		_groupSpawn = [getMarkerPos _marker, Civilian, ["LOP_Tak_Civ_Man_01"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
-		[_groupSpawn] call CBA_fnc_TaskDefend;
-		_groupSpawn allowfleeing 0;
 	};
 };

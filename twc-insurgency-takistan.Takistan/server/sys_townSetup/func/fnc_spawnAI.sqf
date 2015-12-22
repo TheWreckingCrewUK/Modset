@@ -22,9 +22,14 @@
 * Author: [TWC] Fakematty / [TWC] Jayman
 */
 
+_marker = _this select 0;
+_radius = _this select 1;
+_group = _this select 2;
 
+/*
 private ["_marker","_radius"];
 params ["_marker",["_radius",[600,700]],["_Group",(configfile >> "CfgGroups" >> "Indep" >> "LOP_AM" >> "Infantry" >> "LOP_AM_Patrol_section")]];
+*/
 
 if (isServer) then {
 	_pos = [getMarkerPos _marker,_radius] call SHK_pos;

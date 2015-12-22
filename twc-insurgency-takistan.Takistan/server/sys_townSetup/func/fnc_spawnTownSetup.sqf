@@ -24,6 +24,9 @@
 *
 * Author: [TWC] Fakematty / [TWC] Jayman <-- him sort of
 */
+
+
+
 Private["_marker","_civ","_radius","_group"];
 params ["_marker",["_civ",7],["_radius",[600,700]],["_group",(configfile >> "CfgGroups" >> "Indep" >> "LOP_AM" >> "Infantry" >> "LOP_AM_Patrol_section")]];
 

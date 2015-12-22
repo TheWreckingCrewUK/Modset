@@ -2,3 +2,5 @@
 //executes scripts from several folders in the server folder.
 
 execVM "server\sys_townSetup\init.sqf";
+#include "sys_ied\init.sqf";
+#include "sys_vehicles\init.sqf";
