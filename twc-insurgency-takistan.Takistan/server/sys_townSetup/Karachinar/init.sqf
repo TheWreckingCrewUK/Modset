@@ -5,5 +5,11 @@
 Karachinarstart = createTrigger ["EmptyDetector", getMarkerPos "Karachinar"];
 Karachinarstart setTriggerArea [500, 500, 0, false];
 Karachinarstart setTriggerActivation ["West", "PRESENT", False];
-Karachinarstart setTriggerStatements ["this", "execVM 'server\sys_townSetup\Karachinar\preSpawnEnemy.sqf'; execVM 'server\sys_townSetup\Karachinar\spawnCiv.sqf'; execVM 'server\sys_townSetup\Karachinar\spawnAI.sqf'; deleteMarker 'Karachinarstart'",""
+Karachinarstart setTriggerStatements ["this",
+	"['Karachinar'] execVM 'server\sys_townSetup\func\fnc_spawnDefend.sqf';
+	['Karachinar', 7] execVM 'server\sys_townSetup\func\fnc_spawnCiv.sqf'; 
+	['Karachinar',[400,500],(configfile >> 'CfgGroups' >> 'Indep' >> 'LOP_AM' >> 'Infantry' >> 'LOP_AM_Patrol_section')] execVM 'server\sys_townSetup\func\fnc_spawnAI.sqf';
+	['Karachinar'] execVM 'server\sys_townSetup\func\fnc_townClear.sqf';
+	deletevehicle _Karachinarstart"
+	,""
 ];

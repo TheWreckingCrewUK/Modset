@@ -30,12 +30,17 @@ sleep 3;
 _Trigger = createTrigger ["EmptyDetector", getMarkerPos _marker];
 _Trigger setTriggerArea [500, 500, 0, false];
 _Trigger setTriggerActivation ["East", "NOT PRESENT", False];
-_Trigger setTriggerStatements ["this",
-									  "'Bastam' SetMarkerColor 'ColorWEST'; hint 'Town Captured'", 		
-									  ""
-									  ];
+_Trigger setTriggerStatements ["this",format["['%1']execVM 'server\sys_townSetup\func\fnc_finished.sqf'",_marker],""];
+
 									  
 									  
-									  
+/*									  
 //Removed While caches are gone because matty needs to fix
 //_Trigger setTriggerStatements ["this && (count(nearestObjects [getMarkerPos _marker, ['Box_FIA_Wps_F'], 500]) == 0)",
+
+//Marker doesn't change colors either
+
+/*still no work
+//_Trigger setTriggerStatements [format["this && count(nearestObjects [getMarkerPos '%1', ['Box_FIA_Wps_F'], 500]) == 0",_marker],
+format["'%1' SetMarkerColor 'ColorWEST'; hint 'yolo'",_marker],
+""];

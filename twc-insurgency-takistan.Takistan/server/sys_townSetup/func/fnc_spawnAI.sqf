@@ -25,14 +25,20 @@
 _marker = _this select 0;
 _radius = _this select 1;
 _group = _this select 2;
+_spawnedWaves = 0;
+_amountWaves = 4 + (floor Insp_enemyMorale);
+
+sleep 15;
 
 /*
 private ["_marker","_radius"];
 params ["_marker",["_radius",[600,700]],["_Group",(configfile >> "CfgGroups" >> "Indep" >> "LOP_AM" >> "Infantry" >> "LOP_AM_Patrol_section")]];
 */
-
-if (isServer) then {
+for "_i" from 1 to _amountWaves do {
 	_pos = [getMarkerPos _marker,_radius] call SHK_pos;
 	_groupSpawn = [_pos, East, _Group] call BIS_fnc_spawnGroup;
     [_groupSpawn, (_marker), 40] call CBA_fnc_taskAttack;
-};
+	
+};	
+	
+	

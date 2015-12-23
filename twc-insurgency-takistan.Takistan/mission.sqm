@@ -93,7 +93,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5640.0537,78.215752,9334.5049};
+					position[]={9743.4121,148.55771,10499.655};
 					id=1;
 					side="CIV";
 					vehicle="C_man_1";
@@ -106,7 +106,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=12;
+		items=33;
 		class Item0
 		{
 			position[]={5994.9873,83.040001,11495.35};
@@ -178,7 +178,7 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={9755.5469,114.28487,11545.843};
+			position[]={9893.2842,123.569,11387.606};
 			name="Zavarak";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -205,9 +205,179 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={6399.3711,308.53351,6400.4995};
-			name="TakistanCenter";
+			position[]={6000.8447,83.040001,11536.834};
+			name="iedRestrictionZone";
+			markerType="ELLIPSE";
 			type="Empty";
+			fillName="Border";
+			a=300;
+			b=300;
+			drawBorder=1;
+		};
+		class Item12
+		{
+			position[]={-702.36584,505.0455,11329.244};
+			name="AAGUNA1";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item13
+		{
+			position[]={-678.12427,711.32367,9955.5068};
+			name="AAGUNA2";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item14
+		{
+			position[]={-637.71973,463.73523,8969.6484};
+			name="AAGUNA3";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item15
+		{
+			position[]={-387.21542,421.18665,7709.0425};
+			name="AAGUNA4";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item16
+		{
+			position[]={-338.72986,549.83832,6408.0317};
+			name="AAGUNA5";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item17
+		{
+			position[]={-524.58875,600.44135,4654.4971};
+			name="AAGUNA6";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item18
+		{
+			position[]={-629.6394,372.45502,3393.8899};
+			name="AAGUNA7";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item19
+		{
+			position[]={-524.59033,499.39877,888.83997};
+			name="AAGUNA8";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item20
+		{
+			position[]={13536.017,170.52412,12686.819};
+			name="AAGUNB1";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item21
+		{
+			position[]={13641.067,193.82912,11410.052};
+			name="AAGUNB2";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item22
+		{
+			position[]={13794.602,185.29944,10197.93};
+			name="AAGUNB3";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item23
+		{
+			position[]={13665.309,492.04596,8670.6582};
+			name="AAGUNB4";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item24
+		{
+			position[]={13689.551,456.59119,6965.6074};
+			name="AAGUNB5";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item25
+		{
+			position[]={13632.986,621.97534,5430.2534};
+			name="AAGUNB6";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item26
+		{
+			position[]={13721.872,457.21948,2626.2112};
+			name="AAGUNB7";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item27
+		{
+			position[]={13560.258,292.15295,444.39297};
+			name="AAGUNB8";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item28
+		{
+			position[]={1800.7172,336.38162,10648.711};
+			name="cacheMarkerA";
+			type="Empty";
+			colorName="ColorEAST";
+		};
+		class Item29
+		{
+			position[]={3390.7661,180.44168,8096.5347};
+			name="cacheMarkerB";
+			type="Empty";
+			colorName="ColorEAST";
+		};
+		class Item30
+		{
+			position[]={6924.5762,202.12798,7210.8682};
+			name="cacheMarkerC";
+			type="Empty";
+			colorName="ColorEAST";
+		};
+		class Item31
+		{
+			position[]={10570.203,515.28387,7747.0825};
+			name="cacheMarkerD";
+			type="Empty";
+			colorName="ColorEAST";
+		};
+		class Item32
+		{
+			position[]={11038.14,201.32941,11095.929};
+			name="cacheMarkerE";
+			type="Empty";
+			colorName="ColorEAST";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={5996.8203,83.040001,11547.063};
+			a=0;
+			b=0;
+			angle=62.408401;
+			interruptable=1;
+			type="END5";
+			age="UNKNOWN";
+			expCond="InsP_ammoCaches == 4;";
+			class Effects
+			{
+			};
 		};
 	};
 };
