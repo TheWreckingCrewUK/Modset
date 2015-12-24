@@ -73,6 +73,10 @@ class CfgFunctions
 		{
 			class RadioTower {file = "func\fnc_RadioTower.sqf";};
 		};
+		class Plane
+		{
+			class Plane {file = "func\fnc_plane.sqf";};
+		};
 		//class SideMissionArmoured
 		//{
 			//class SideMissionArmoured {file = "func\fnc_ArmouredSideMission.sqf";};

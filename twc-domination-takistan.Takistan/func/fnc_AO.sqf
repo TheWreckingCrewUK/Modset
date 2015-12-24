@@ -235,7 +235,7 @@ if isServer then {
 	};
 //Counter attacks and other such things
 _AttackHeli = [_AOname] spawn TWC_fnc_AttackHelicopter;
-
+_AttackPlane = [_AOname] spawn TWC_fnc_Plane;
 
 TaskIncrease = TaskIncrease + 1;
 

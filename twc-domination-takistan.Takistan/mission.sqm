@@ -2489,7 +2489,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=37;
+		items=38;
 		class Item0
 		{
 			position[]={6086.021,82.823639,11488.275};
@@ -2725,6 +2725,12 @@ class Mission
 		{
 			position[]={8250.4688,177.84018,7786.772};
 			name="Imarat";
+			type="Empty";
+		};
+		class Item37
+		{
+			position[]={8052.894,296.04001,1807.7423};
+			name="EnemyBase";
 			type="Empty";
 		};
 	};
