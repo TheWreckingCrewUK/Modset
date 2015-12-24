@@ -48,3 +48,11 @@ params ["_marker",["_civ",7],["_radius",[600,700]],["_group",(configfile >> "Cfg
 									  deleteVehicle '_Trigger'",
 									  ""
 									  ];
+*/									  
+params["_marker","_civnum","_civradius","_waves","_groupradius"];
+
+[_marker, _civnum, _civradius] call twc_spawnCiv;
+[_marker] call twc_spawnDefend;
+[_marker, _waves, _groupradius] call twc_spawnAIUnits;
+[_marker] execVM "server\sys_townSetup\func\fnc_townClear.sqf";
+

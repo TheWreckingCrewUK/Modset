@@ -30,7 +30,8 @@ sleep 3;
 _Trigger = createTrigger ["EmptyDetector", getMarkerPos _marker];
 _Trigger setTriggerArea [500, 500, 0, false];
 _Trigger setTriggerActivation ["East", "NOT PRESENT", False];
-_Trigger setTriggerStatements ["this",format["['%1']execVM 'server\sys_townSetup\func\fnc_finished.sqf'",_marker],""];
+_Trigger setTriggerTimeout [60,60,60,True];
+_Trigger setTriggerStatements ["this",format["['%1']execVM 'server\sys_townSetup\func\fnc_townfinished.sqf'",_marker],""];
 
 									  
 									  

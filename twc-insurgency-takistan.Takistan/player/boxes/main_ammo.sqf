@@ -25,20 +25,19 @@ _tmp_magazines = [];
 _tmp_items = [];
 
 // load available to Section Commander only.
-if (g_class == "BAF_SL") then {
+if (g_class == "MFVDV_SL") then {
                 _tmp_weapons =
                 [
-                                ["UK3CB_BAF_L85A2_RIS",1],
-                                ["ACE_Vector",1],
-								["UK3CB_BAF_L131A1",1]
+                                ["rhs_weap_ak74m_desert",1],
+                                ["rhs_pdu4",1],
+								["rhs_weap_makarov_pmm",1]
 
                 ];
 
                 _tmp_magazines =
                 [
-                                ["30Rnd_556x45_Stanag",50],
-								["30Rnd_556x45_Stanag_Tracer_Red",50],
-                                ["UK3CB_BAF_17Rnd_9mm",15]
+                                ["rhs_30Rnd_545x39_AK",50],
+                                ["rhs_mag_9x18_12_57N181S",15]
 
 
                 ];
@@ -49,113 +48,32 @@ if (g_class == "BAF_SL") then {
                                 ["ACE_fieldDressing",20],
                                 ["ACE_morphine",10],
 								["ACE_epinephrine",5],
-								["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-								["UK3CB_BAF_LLM_IR",1],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
-								["UK3CB_BAF_Eotech",1],
-								["STKR_Predator",1],
 								["ACE_DAGR",1],
 								["ACRE_PRC343",1]
 
                 ];
 };
 
-// load available to Rifleman only.
- if (g_class == "BAF_RF") then {
-        _tmp_weapons =
-        [
-								["UK3CB_BAF_L85A2_RIS",1],
-								["UK3CB_BAF_L128A1",1],
-								["UK3CB_BAF_L131A1",1],
-								["UK3CB_BAF_AT4_AP_Launcher",2]
-        ];
-
-        _tmp_magazines =
-        [
-								
-								["30Rnd_556x45_Stanag",50],
-								["30Rnd_556x45_Stanag_Tracer_Red",50],
-								["UK3CB_BAF_L128A1_Pellets",10],
-								["UK3CB_BAF_L128A1_Slugs",10],
-                                ["UK3CB_BAF_17Rnd_9mm",15]
-			];
-
-		_tmp_items = [
-
-                                ["ACE_MapTools",1],
-                                ["ACE_fieldDressing",20],
-                                ["ACE_morphine",10],
-								["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-								["UK3CB_BAF_LLM_IR",1],
-								["UK3CB_BAF_Eotech",1],
-								["STKR_Predator",1],
-								["ACRE_PRC343",1]
-		];
-
-
-
-
-};
-
-// load available to Grenadier only.
- if (g_class == "BAF_GRN") then {
-        _tmp_weapons =
-        [
-            ["UK3CB_BAF_L85A2_UGL",1],
-            ["ACE_Vector",1],
-			["UK3CB_BAF_L131A1",1],
-			["UK3CB_BAF_AT4_AP_Launcher",2]
-
-		];
-
-        _tmp_magazines =
-        [
-            
-				["30Rnd_556x45_Stanag",50],
-				["UK3CB_BAF_17Rnd_9mm",15],
-				["1Rnd_HE_Grenade_shell", 40],
-				["1Rnd_Smoke_Grenade_shell", 10],
-				["1Rnd_SmokeRed_Grenade_shell", 10],
-				["1Rnd_SmokeGreen_Grenade_shell", 10],
-				["1Rnd_SmokeYellow_Grenade_shell", 10],
-				["1Rnd_SmokePurple_Grenade_shell", 10],
-				["1Rnd_SmokeBlue_Grenade_shell", 10]
-        ];
-
-		_tmp_items =
-		[
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-			 ["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-			 ["UK3CB_BAF_LLM_IR",1],
-		     ["UK3CB_BAF_Eotech",1],
-			 ["STKR_Predator",1],
-			 ["ACRE_PRC343",1]
-		];
-};
-
 // load available to Automatic Rifleman only.
- if (g_class == "BAF_AR") then {
+ if (g_class == "MFVDV_MG") then {
         _tmp_weapons =
         [
-            ["UK3CB_BAF_L110A2",1],
-			["UK3CB_BAF_AT4_AP_Launcher",2],
-			["UK3CB_BAF_L131A1",1]
+            ["rhs_weap_pkm",1],
+			["rhs_weap_rshg2",2],
+			["rhs_weap_makarov_pmm",1]
 			 
 		];
 
         _tmp_magazines =
         [
             
-			["UK3CB_BAF_100Rnd",10],
-			["UK3CB_BAF_100Rnd_T",5],
-			["UK3CB_BAF_200Rnd",10],
-			["UK3CB_BAF_200Rnd_T",5],
-            ["UK3CB_BAF_17Rnd_9mm",15]
+			["rhs_100Rnd_762x54mmr",10],
+			["rhs_mag_9x18_12_57N181S",10]
         ];
 
 		_tmp_items =
@@ -164,28 +82,23 @@ if (g_class == "BAF_SL") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		     ["UK3CB_BAF_Eotech",1],
-			 ["UK3CB_BAF_LLM_IR",1],
-			 ["STKR_Predator",1],
 			 ["ACRE_PRC343",1]
 		];
 };
-
 // load available to Section Medic
 
- if (g_class == "BAF_MED") then {
+ if (g_class == "MFVDV_MED") then {
        _tmp_weapons =
         [
-            ["UK3CB_BAF_L85A2_RIS",1],
-			["UK3CB_BAF_L131A1",1]
+            ["rhs_weap_ak74m_desert",1],
+			["rhs_weap_makarov_pmm",1]
 
 		];
 
         _tmp_magazines =
         [
-            ["30Rnd_556x45_Stanag",50],
-             ["UK3CB_BAF_17Rnd_9mm",15]
+            ["rhs_30Rnd_545x39_AK",50],
+            ["rhs_mag_9x18_12_57N181S",15]
         ];
 
 		_tmp_items =
@@ -196,11 +109,783 @@ if (g_class == "BAF_SL") then {
 			["ACE_epinephrine",50],
 			["ACE_bloodIV",50],
 			["ACE_bodyBag",10],
-			["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		    ["UK3CB_BAF_Eotech",1],
-			["UK3CB_BAF_LLM_IR",1],
-			["STKR_Predator",1],
+			["rhs_acc_1P29",1],
+		    ["rhs_acc_2dpzenit",1],
 			["ACRE_PRC343",1]
+		];
+};
+// load available to Senior Rifleman only.
+ if (g_class == "MFVDV_SR") then {
+        _tmp_weapons =
+        [
+								["rhs_weap_ak74m_desert",1],
+								["rhs_weap_makarov_pmm",1],
+								["rhs_weap_rshg2",1]
+        ];
+
+        _tmp_magazines =
+        [
+								
+								["rhs_30Rnd_545x39_AK",50],
+								["rhs_mag_9x18_12_57N181S",10]
+			];
+
+		_tmp_items = [
+
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
+								["ACRE_PRC343",1]
+		];
+
+
+
+
+};
+// load available to Rifleman only.
+ if (g_class == "MFVDV_RF") then {
+        _tmp_weapons =
+        [
+								["rhs_weap_ak74m_desert",1],
+								["rhs_weap_makarov_pmm",1],
+								["rhs_weap_rshg2",1]
+        ];
+
+        _tmp_magazines =
+        [
+								
+								["rhs_30Rnd_545x39_AK",50],
+								["rhs_mag_9x18_12_57N181S",10]
+			];
+
+		_tmp_items = [
+
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
+								["ACRE_PRC343",1]
+		];
+
+
+
+
+};
+
+// load available to Grenadier only.
+ if (g_class == "MFVDV_GRN") then {
+        _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_gp25",1],
+            ["ACE_Vector",1],
+			["rhs_weap_makarov_pmm",1],
+			["rhs_weap_rshg2",2]
+
+		];
+
+        _tmp_magazines =
+        [
+            
+				["rhs_30Rnd_545x39_AK",50],
+				["rhs_mag_9x18_12_57N181S",15],
+				["rhs_VOG25", 40],
+				["rhs_VG40OP_white", 10],
+				["rhs_VG40OP_green", 10],
+				["rhs_VG40OP_red", 10]
+        ];
+
+		_tmp_items =
+		[
+
+             ["ACE_MapTools",1],
+             ["ACE_fieldDressing",20],
+             ["ACE_morphine",10],
+			 ["rhs_acc_1P29",1],
+			 ["rhs_acc_2dpzenit",1],
+			 ["ACRE_PRC343",1]
+		];
+};
+
+if (g_class == "DMSV_SL") then {
+                _tmp_weapons =
+                [
+                                ["rhs_weap_ak74m_desert",1],
+                                ["rhs_pdu4",1],
+								["rhs_weap_makarov_pmm",1]
+
+                ];
+
+                _tmp_magazines =
+                [
+                                ["rhs_30Rnd_545x39_AK",50],
+                                ["rhs_mag_9x18_12_57N181S",15]
+
+
+                ];
+
+                _tmp_items = [
+
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["ACE_epinephrine",5],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
+								["SatchelCharge_Remote_Mag",1],
+								["DemoCharge_Remote_Mag",1],
+								["ACE_M26_Clacker",1],
+								["ACE_DAGR",1],
+								["ACRE_PRC148",1]
+
+                ];
+};
+
+// load available to rpg gunner only
+ if (g_class == "DMSV_RPG") then {
+        _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_desert",1],
+			["rhs_weap_rpg7",2],
+			["rhs_weap_makarov_pmm",1]
+			 
+		];
+
+        _tmp_magazines =
+        [
+            
+			["rhs_30Rnd_545x39_AK",10],
+			["rhs_mag_9x18_12_57N181S",10],
+			["rhs_rpg7_PG7VL_mag",5]
+        ];
+
+		_tmp_items =
+		[
+
+             ["ACE_MapTools",1],
+             ["ACE_fieldDressing",20],
+             ["ACE_morphine",10],
+			 ["rhs_acc_1P29",1],
+			 ["rhs_acc_2dpzenit",1],
+			 ["ACRE_PRC148",1]
+		];
+};
+// load available to Section Medic
+
+ if (g_class == "DMSV_MG") then {
+       _tmp_weapons =
+        [
+            ["rhs_weap_pkm",1],
+			["rhs_weap_makarov_pmm",1]
+
+		];
+
+        _tmp_magazines =
+        [
+            ["rhs_100Rnd_762x54mmr",50],
+            ["rhs_mag_9x18_12_57N181S",15]
+        ];
+
+		_tmp_items =
+		[
+
+			["ACE_fieldDressing",50],
+			["ACE_MapTools",1],
+			["ACE_morphine",50],
+			["ACRE_PRC148",1]
+		];
+};
+// load available to Senior Rifleman only.
+ if (g_class == "DMSV_RPGA") then {
+        _tmp_weapons =
+        [
+								["rhs_weap_ak74m_desert",1],
+								["rhs_weap_makarov_pmm",1]
+        ];
+
+        _tmp_magazines =
+        [
+								
+								["rhs_30Rnd_545x39_AK",50],
+								["rhs_mag_9x18_12_57N181S",10],
+								["rhs_rpg7_PG7VL_mag",10]
+			];
+
+		_tmp_items = [
+
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
+								["ACRE_PRC148",1]
+		];
+
+
+
+
+};
+// load available to Rifleman only.
+ if (g_class == "DMSV_SR") then {
+        _tmp_weapons =
+        [
+								["rhs_weap_ak74m_desert",1],
+								["rhs_weap_makarov_pmm",1],
+								["rhs_weap_rshg2",1]
+        ];
+
+        _tmp_magazines =
+        [
+								
+								["rhs_30Rnd_545x39_AK",50],
+								["rhs_mag_9x18_12_57N181S",10]
+			];
+
+		_tmp_items = [
+
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
+								["ACRE_PRC148",1]
+		];
+
+
+
+
+};
+
+// load available to Grenadier only.
+ if (g_class == "DMSV_GRN") then {
+        _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_gp25",1],
+            ["ACE_Vector",1],
+			["rhs_weap_makarov_pmm",1],
+			["rhs_weap_rshg2",2]
+
+		];
+
+        _tmp_magazines =
+        [
+            
+				["rhs_30Rnd_545x39_AK",50],
+				["rhs_mag_9x18_12_57N181S",15],
+				["rhs_VOG25", 40],
+				["rhs_VG40OP_white", 10],
+				["rhs_VG40OP_green", 10],
+				["rhs_VG40OP_red", 10]
+        ];
+
+		_tmp_items =
+		[
+
+             ["ACE_MapTools",1],
+             ["ACE_fieldDressing",20],
+             ["ACE_morphine",10],
+			 ["rhs_acc_1P29",1],
+			 ["rhs_acc_2dpzenit",1],
+			 ["ACRE_PRC148",1]
+		];
+};
+// load available to Section Medic
+
+ if (g_class == "DMSV_MED") then {
+       _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_desert",1],
+			["rhs_weap_makarov_pmm",1]
+
+		];
+
+        _tmp_magazines =
+        [
+            ["rhs_30Rnd_545x39_AK",50],
+            ["rhs_mag_9x18_12_57N181S",15]
+        ];
+
+		_tmp_items =
+		[
+
+			["ACE_fieldDressing",50],
+			["ACE_morphine",50],
+			["ACE_epinephrine",50],
+			["ACE_bloodIV",50],
+			["ACE_bodyBag",10],
+			["rhs_acc_1P29",1],
+		    ["rhs_acc_2dpzenit",1],
+			["ACRE_PRC148",1]
+		];
+};
+//loadout availible to section leader only
+if (g_class == "DVDV_SL") then {
+                _tmp_weapons =
+                [
+                                ["rhs_weap_ak74m_desert",1],
+                                ["rhs_pdu4",1],
+								["rhs_weap_makarov_pmm",1]
+
+                ];
+
+                _tmp_magazines =
+                [
+                                ["rhs_30Rnd_545x39_AK",50],
+                                ["rhs_mag_9x18_12_57N181S",15]
+
+
+                ];
+
+                _tmp_items = [
+
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["ACE_epinephrine",5],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
+								["SatchelCharge_Remote_Mag",1],
+								["DemoCharge_Remote_Mag",1],
+								["ACE_M26_Clacker",1],
+								["ACE_DAGR",1],
+								["ACRE_PRC343",1]
+
+                ];
+};
+
+// load available to Automatic Rifleman only.
+ if (g_class == "DVDV_MG") then {
+        _tmp_weapons =
+        [
+            ["rhs_weap_pkm",1],
+			["rhs_weap_rshg2",2],
+			["rhs_weap_makarov_pmm",1]
+			 
+		];
+
+        _tmp_magazines =
+        [
+            
+			["rhs_100Rnd_762x54mmr",10],
+			["rhs_mag_9x18_12_57N181S",10]
+        ];
+
+		_tmp_items =
+		[
+
+             ["ACE_MapTools",1],
+             ["ACE_fieldDressing",20],
+             ["ACE_morphine",10],
+			 ["ACRE_PRC343",1]
+		];
+};
+// load available to Section Medic
+
+ if (g_class == "DVDV_MED") then {
+       _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_desert",1],
+			["rhs_weap_makarov_pmm",1]
+
+		];
+
+        _tmp_magazines =
+        [
+            ["rhs_30Rnd_545x39_AK",50],
+            ["rhs_mag_9x18_12_57N181S",15]
+        ];
+
+		_tmp_items =
+		[
+
+			["ACE_fieldDressing",50],
+			["ACE_morphine",50],
+			["ACE_epinephrine",50],
+			["ACE_bloodIV",50],
+			["ACE_bodyBag",10],
+			["rhs_acc_1P29",1],
+		    ["rhs_acc_2dpzenit",1],
+			["ACRE_PRC343",1]
+		];
+};
+// load available to Senior Rifleman only.
+ if (g_class == "DVDV_SR") then {
+        _tmp_weapons =
+        [
+								["rhs_weap_ak74m_desert",1],
+								["rhs_weap_makarov_pmm",1],
+								["rhs_weap_rshg2",1]
+        ];
+
+        _tmp_magazines =
+        [
+								
+								["rhs_30Rnd_545x39_AK",50],
+								["rhs_mag_9x18_12_57N181S",10]
+			];
+
+		_tmp_items = [
+
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
+								["ACRE_PRC343",1]
+		];
+
+
+
+
+};
+// load available to Rifleman only.
+ if (g_class == "DVDV_RF") then {
+        _tmp_weapons =
+        [
+								["rhs_weap_ak74m_desert",1],
+								["rhs_weap_makarov_pmm",1],
+								["rhs_weap_rshg2",1]
+        ];
+
+        _tmp_magazines =
+        [
+								
+								["rhs_30Rnd_545x39_AK",50],
+								["rhs_mag_9x18_12_57N181S",10]
+			];
+
+		_tmp_items = [
+
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
+								["ACRE_PRC343",1]
+		];
+
+
+
+
+};
+
+// load available to Grenadier only.
+ if (g_class == "DVDV_GRN") then {
+        _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_gp25",1],
+            ["ACE_Vector",1],
+			["rhs_weap_makarov_pmm",1],
+			["rhs_weap_rshg2",2]
+
+		];
+
+        _tmp_magazines =
+        [
+            
+				["rhs_30Rnd_545x39_AK",50],
+				["rhs_mag_9x18_12_57N181S",15],
+				["rhs_VOG25", 40],
+				["rhs_VG40OP_white", 10],
+				["rhs_VG40OP_green", 10],
+				["rhs_VG40OP_red", 10]
+        ];
+
+		_tmp_items =
+		[
+
+             ["ACE_MapTools",1],
+             ["ACE_fieldDressing",20],
+             ["ACE_morphine",10],
+			 ["rhs_acc_1P29",1],
+			 ["rhs_acc_2dpzenit",1],
+			 ["ACRE_PRC343",1]
+		];
+};
+
+if (g_class == "WMSV_SL") then {
+                _tmp_weapons =
+                [
+                                ["rhs_weap_ak74m_desert",1],
+                                ["rhs_pdu4",1],
+								["rhs_weap_makarov_pmm",1]
+
+                ];
+
+                _tmp_magazines =
+                [
+                                ["rhs_30Rnd_545x39_AK",50],
+                                ["rhs_mag_9x18_12_57N181S",15]
+
+
+                ];
+
+                _tmp_items = [
+
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["ACE_epinephrine",5],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
+								["SatchelCharge_Remote_Mag",1],
+								["DemoCharge_Remote_Mag",1],
+								["ACE_M26_Clacker",1],
+								["ACE_DAGR",1],
+								["ACRE_PRC148",1]
+
+                ];
+};
+
+// load available to rpg gunner only
+ if (g_class == "WMSV_RPG") then {
+        _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_desert",1],
+			["rhs_weap_rpg7",2],
+			["rhs_weap_makarov_pmm",1]
+			 
+		];
+
+        _tmp_magazines =
+        [
+            
+			["rhs_30Rnd_545x39_AK",10],
+			["rhs_mag_9x18_12_57N181S",10],
+			["rhs_rpg7_PG7VL_mag",5]
+        ];
+
+		_tmp_items =
+		[
+
+             ["ACE_MapTools",1],
+             ["ACE_fieldDressing",20],
+             ["ACE_morphine",10],
+			 ["rhs_acc_1P29",1],
+			 ["rhs_acc_2dpzenit",1],
+			 ["ACRE_PRC148",1]
+		];
+};
+// load available to Section Medic
+
+ if (g_class == "WMSV_MG") then {
+       _tmp_weapons =
+        [
+            ["rhs_weap_pkm",1],
+			["rhs_weap_makarov_pmm",1]
+
+		];
+
+        _tmp_magazines =
+        [
+            ["rhs_100Rnd_762x54mmr",50],
+            ["rhs_mag_9x18_12_57N181S",15]
+        ];
+
+		_tmp_items =
+		[
+
+			["ACE_fieldDressing",50],
+			["ACE_MapTools",1],
+			["ACE_morphine",50],
+			["ACRE_PRC148",1]
+		];
+};
+// load available to Senior Rifleman only.
+ if (g_class == "WMSV_RPGA") then {
+        _tmp_weapons =
+        [
+								["rhs_weap_ak74m_desert",1],
+								["rhs_weap_makarov_pmm",1]
+        ];
+
+        _tmp_magazines =
+        [
+								
+								["rhs_30Rnd_545x39_AK",50],
+								["rhs_mag_9x18_12_57N181S",10],
+								["rhs_rpg7_PG7VL_mag",10]
+			];
+
+		_tmp_items = [
+
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
+								["ACRE_PRC148",1]
+		];
+
+
+
+
+};
+// load available to Rifleman only.
+ if (g_class == "WMSV_SR") then {
+        _tmp_weapons =
+        [
+								["rhs_weap_ak74m_desert",1],
+								["rhs_weap_makarov_pmm",1],
+								["rhs_weap_rshg2",1]
+        ];
+
+        _tmp_magazines =
+        [
+								
+								["rhs_30Rnd_545x39_AK",50],
+								["rhs_mag_9x18_12_57N181S",10]
+			];
+
+		_tmp_items = [
+
+                                ["ACE_MapTools",1],
+                                ["ACE_fieldDressing",20],
+                                ["ACE_morphine",10],
+								["rhs_acc_1P29",1],
+								["rhs_acc_2dpzenit",1],
+								["ACRE_PRC148",1]
+		];
+
+
+
+
+};
+
+// load available to Grenadier only.
+ if (g_class == "WMSV_GRN") then {
+        _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_gp25",1],
+            ["ACE_Vector",1],
+			["rhs_weap_makarov_pmm",1],
+			["rhs_weap_rshg2",2]
+
+		];
+
+        _tmp_magazines =
+        [
+            
+				["rhs_30Rnd_545x39_AK",50],
+				["rhs_mag_9x18_12_57N181S",15],
+				["rhs_VOG25", 40],
+				["rhs_VG40OP_white", 10],
+				["rhs_VG40OP_green", 10],
+				["rhs_VG40OP_red", 10]
+        ];
+
+		_tmp_items =
+		[
+
+             ["ACE_MapTools",1],
+             ["ACE_fieldDressing",20],
+             ["ACE_morphine",10],
+			 ["rhs_acc_1P29",1],
+			 ["rhs_acc_2dpzenit",1],
+			 ["ACRE_PRC148",1]
+		];
+};
+// load available to Section Medic
+
+ if (g_class == "WMSV_MED") then {
+       _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_desert",1],
+			["rhs_weap_makarov_pmm",1]
+
+		];
+
+        _tmp_magazines =
+        [
+            ["rhs_30Rnd_545x39_AK",50],
+            ["rhs_mag_9x18_12_57N181S",15]
+        ];
+
+		_tmp_items =
+		[
+
+			["ACE_fieldDressing",50],
+			["ACE_morphine",50],
+			["ACE_epinephrine",50],
+			["ACE_bloodIV",50],
+			["ACE_bodyBag",10],
+			["rhs_acc_1P29",1],
+		    ["rhs_acc_2dpzenit",1],
+			["ACRE_PRC148",1]
+		];
+};
+// load available to PILOT ONly
+
+ if (g_class == "PILOT") then {
+       _tmp_weapons =
+        [
+			["rhs_weap_makarov_pmm",1]
+
+		];
+
+        _tmp_magazines =
+        [
+            ["rhs_mag_9x18_12_57N181S",15]
+        ];
+
+		_tmp_items =
+		[
+
+			["ACE_fieldDressing",50],
+			["ACE_morphine",50],
+			["ACE_epinephrine",50],
+			["ACRE_PRC148",1]
+		];
+};
+// load available to Armour commander
+
+ if (g_class == "ARMOUR") then {
+       _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_desert_folded",1],
+			["rhs_weap_makarov_pmm",1]
+
+		];
+
+        _tmp_magazines =
+        [
+            ["rhs_30Rnd_545x39_AK",50],
+            ["rhs_mag_9x18_12_57N181S",15]
+        ];
+
+		_tmp_items =
+		[
+
+			["ACE_fieldDressing",50],
+			["ACE_morphine",50],
+			["ACE_epinephrine",50],
+			["ACRE_PRC148",1]
+		];
+};
+// load available to Section Medic
+
+ if (g_class == "ARMOURCREW") then {
+       _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_desert_folded",1],
+			["rhs_weap_makarov_pmm",1]
+
+		];
+
+        _tmp_magazines =
+        [
+            ["rhs_30Rnd_545x39_AK",50],
+            ["rhs_mag_9x18_12_57N181S",15]
+        ];
+
+		_tmp_items =
+		[
+
+			["ACE_fieldDressing",50],
+			["ACE_morphine",50],
+			["ACRE_PRC148",1]
 		];
 };
 {

@@ -12,3 +12,4 @@ execVM "server\sys_townSetup\Nur\init.sqf";
 execVM "server\sys_townSetup\Garmarud\init.sqf";
 execVM "server\sys_townSetup\Ravanay\init.sqf";
 execVM "server\sys_townSetup\Zavarak\init.sqf";
+execvM "server\sys_townSetup\func\init.sqf";

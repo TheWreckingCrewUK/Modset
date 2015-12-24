@@ -1,8 +1,17 @@
 execVM "Zues.sqf";
+execVM "Zues-Fakematty.sqf";
+execVM "Zues-Harry.sqf";
+execVM "Zues-jayman.sqf";
 execVM "SHK_pos\shk_pos_init.sqf";
 
 waitUntil {!isNull player};
 waitUntil {player == player};
+
+execVM "lib\cleanup.sqf";
+execVM "lib\bodyremove.sqf";
+execVM "tao\restrict\pilot.sqf";
+
+russiancheck = 0;
 
 if (isNil "nonQuestionableList") then {
 	nonQuestionableList = [];
@@ -48,3 +57,32 @@ _defuseAction = [
 
 ["IEDLandBig_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
 ["IEDLandSmall_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
+
+
+cutText ["Receiving...", "BLACK", .001];
+
+titleText ["The Wrecking Crew","PLAIN DOWN"];
+titleFadeOut 7;
+sleep 5;
+
+titleText ["Insurgency Plus","PLAIN DOWN"];
+titleFadeOut 7;
+sleep 5;
+
+
+_pilots = ["p31", "p32"];
+_apachepilots = ["p33", "p34"];
+
+if ((str player) in _pilots && (count playableUnits) < 5) then {
+    ["end4", false, 0] call BIS_fnc_endMission;
+};
+
+if ((str player) in _apachepilots && (count playableUnits) <= 13) then {
+    ["end7", false, 0] call BIS_fnc_endMission;
+};
+
+
+cutText ["", "BLACK IN", 2];
+
+titleText ["Enjoy your stay", "PLAIN"];
+titleFadeOut 4;

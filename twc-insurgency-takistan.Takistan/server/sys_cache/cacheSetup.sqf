@@ -55,6 +55,8 @@ if (isNil "InsP_cacheGroup") then {
 				[_cacheGroup, getPosATL _x, 100, 2, true] call CBA_fnc_taskDefend;
 			};
 			sleep 0.25;
+			{cacheBoxA disableCollisionWith _x}
+			
 		};
 	} forEach InsP_cacheGroup;
 	

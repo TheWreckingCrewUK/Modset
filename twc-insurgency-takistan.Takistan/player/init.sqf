@@ -2,202 +2,202 @@ g_class = "";
 g_group = "";
 g_unit = "";
 if (!isNil "P1" && {player == P1}) then {
-    g_class = "BAF_SL";
+    g_class = "MFVDV_SL";
 	g_group = "0";
 	g_unit = "000";
 };
 
 if (!isNil "P2" && {player == P2}) then {
-    g_class = "BAF_RF";
+    g_class = "MFVDV_MG";
 	g_group = "0";
 	g_unit = "010";
 };
 
 if (!isNil "P3" && {player == P3}) then {
-    g_class = "BAF_GRN";
+    g_class = "MFVDV_MED";
 	g_group = "0";
 	g_unit = "011";
 };
 
 if (!isNil "P4" && {player == P4}) then {
-    g_class = "BAF_AR";
+    g_class = "MFVDV_SR";
 	g_group = "0";
 	g_unit = "012";
 };
 
 if (!isNil "P5" && {player == P5}) then {
-    g_class = "BAF_MED";
+    g_class = "MFVDV_RF";
 	g_group = "0";
 	g_unit = "013";
 };
 if (!isNil "P6" && {player == P6}) then {
-    g_class = "US_SL";
+    g_class = "MFVDV_GRN";
 	g_group = "0";
 	g_unit = "020";
 };
 
 if (!isNil "P7" && {player == P7}) then {
-    g_class = "US_RF";
+    g_class = "DMSV_SL";
 	g_group = "0";
 	g_unit = "021";
 };
 
 if (!isNil "P8" && {player == P8}) then {
-    g_class = "US_GRN";
+    g_class = "DMSV_RPG";
 	g_group = "0";
 	g_unit = "022";
 };
 
 if (!isNil "P9" && {player == P9}) then {
-    g_class = "US_AR";
+    g_class = "DMSV_MG";
 	g_group = "0";
 	g_unit = "023";
 };
 
 if (!isNil "P10" && {player == P10}) then {
-    g_class = "US_MED";
+    g_class = "DMSV_RPGA";
 	g_group = "9";
 	g_unit = "800";
 };
 
 if (!isNil "P11" && {player == P11}) then {
-    g_class = "USMC_SL";
+    g_class = "DMSV_SR";
 	g_group = "9";
 	g_unit = "801";
 };
 
 if (!isNil "P12" && {player == P12}) then {
-    g_class = "USMC_RF";
+    g_class = "DMSV_RF";
 	g_group = "9";
 	g_unit = "802";
 };
 
 if (!isNil "P13" && {player == P13}) then {
-    g_class = "USMC_GRN";
+    g_class = "DMSV_GRN";
 	g_group = "1";
 	g_unit = "100";
 };
 
 if (!isNil "P14" && {player == P14}) then {
-    g_class = "USMC_AR";
+    g_class = "DMSV_GRN";
 	g_group = "1";
 	g_unit = "110";
 };
 
 if (!isNil "P15" && {player == P15}) then {
-    g_class = "USMC_MED";
+    g_class = "DMSV_MED";
 	g_group = "1";
 	g_unit = "111";
 };
 
 if (!isNil "P16" && {player == P16}) then {
-    g_class = "ANA_SL";
+    g_class = "DVDV_SL";
 	g_group = "1";
 	g_unit = "112";
 };
 
 if (!isNil "P17" && {player == P17}) then {
-    g_class = "ANA_RF";
+    g_class = "DVDV_MG";
 	g_group = "1";
 	g_unit = "113";
 };
 
 if (!isNil "P18" && {player == P18}) then {
-    g_class = "ANA_GRN";
+    g_class = "DVDV_MED";
 	g_group = "1";
 	g_unit = "120";
 };
 
 if (!isNil "P19" && {player == P19}) then {
-    g_class = "ANA_AR";
+    g_class = "DVDV_SR";
 	g_group = "1";
 	g_unit = "121";
 };
 
 if (!isNil "P20" && {player == P20}) then {
-    g_class = "ANA_MED";
+    g_class = "DVDV_RF";
 	g_group = "1";
 	g_unit = "122";
 };
 
 if (!isNil "P21" && {player == P21}) then {
-    g_class = "PLT";
+    g_class = "DVDV_GRN";
 	g_group = "1";
 	g_unit = "123";
 };
 
 if (!isNil "P22" && {player == P22}) then {
-    g_class = "PLT";
+    g_class = "WMSV_SL";
 	g_group = "1";
 	g_unit = "130";
 };
 
 if (!isNil "P23" && {player == P23}) then {
-    g_class = "PLT";
+    g_class = "WMSV_RPG";
 	g_group = "1";
 	g_unit = "131";
 };
 
 if (!isNil "P24" && {player == P24}) then {
-    g_class = "PLT";
+    g_class = "WMSV_MG";
 	g_group = "1";
 	g_unit = "132";
 };
 
 if (!isNil "P25" && {player == P25}) then {
-    g_class = "SWD_SL";
+    g_class = "WMSV_RPGA";
 	g_group = "1";
 	g_unit = "133";
 };
 if (!isNil "P26" && {player == P26}) then {
-    g_class = "SWD_RF";
+    g_class = "WMSV_SR";
 	g_group = "1";
 	g_unit = "134";
 };
 if (!isNil "P27" && {player == P27}) then {
-    g_class = "SWD_GRN";
+    g_class = "WMSV_RF";
 	g_group = "1";
 	g_unit = "135";
 };
 if (!isNil "P28" && {player == P28}) then {
-    g_class = "SWD_AR";
+    g_class = "WMSV_MED";
 	g_group = "1";
 	g_unit = "136";
 };
 if (!isNil "P29" && {player == P29}) then {
-    g_class = "SWD_MED";
+    g_class = "WMSV_GRN";
 	g_group = "1";
 	g_unit = "137";
 };
 if (!isNil "P30" && {player == P30}) then {
-    g_class = "USMC_MED";
+    g_class = "WMSV_GRN";
 	g_group = "1";
 	g_unit = "138";
 };
 if (!isNil "P31" && {player == P31}) then {
-    g_class = "PILOT_BLACKHAWK";
+    g_class = "PILOT";
 	g_group = "1";
 	g_unit = "139";
 };
 if (!isNil "P32" && {player == P32}) then {
-    g_class = "PILOT_CHINNOK";
+    g_class = "PILOT";
 	g_group = "1";
 	g_unit = "140";
 };
 if (!isNil "P33" && {player == P33}) then {
-    g_class = "PILOT_WILDCAT";
+    g_class = "PILOT";
 	g_group = "1";
 	g_unit = "141";
 };
 
 if (!isNil "P34" && {player == P34}) then {
-    g_class = "ARMOUR";
+    g_class = "PILOT";
 	g_group = "1";
 	g_unit = "142";
 };
 
 if (!isNil "P35" && {player == P35}) then {
-    g_class = "ARMOURCREW";
+    g_class = "ARMOUR";
 	g_group = "1";
 	g_unit = "143";
 };
@@ -209,7 +209,7 @@ if (!isNil "P36" && {player == P36}) then {
 };
 
 if (!isNil "P37" && {player == P37}) then {
-    g_class = "SPOTTER";
+    g_class = "ARMOURCREW";
 	g_group = "1";
 	g_unit = "145";
 };
@@ -261,11 +261,6 @@ g_p38 = "";
 
 
 execVM "player\boxes\main_ammo.sqf";
-execVM "player\boxes\main_ammobravo.sqf";
-execVM "player\boxes\main_ammocharlie.sqf";
-execVM "player\boxes\main_ammodelta.sqf";
-execVM "player\boxes\main_ammoecho.sqf";
-execVM "player\boxes\main_ammohelo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
@@ -288,10 +283,6 @@ TWC_fnc_getDeltaList = {
     execVM "Playerlist\delta.sqf";
 };
 
-TWC_fnc_getEchoList = {
-    execVM "Playerlist\Echo.sqf";
-};
-
 TWC_fnc_getAirList = {
    execVM "Playerlist\air.sqf";
 };
@@ -305,7 +296,6 @@ alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}]
 bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
 charlieAction = ["CharlieList","Charlie List","", {call TWC_fnc_getCharlieList;},{true}] call ace_interact_menu_fnc_createAction;
 deltaAction = ["DeltaList","Delta List","", {call TWC_fnc_getDeltaList;},{true}] call ace_interact_menu_fnc_createAction;
-echoAction = ["EchoList","Echo List","", {call TWC_fnc_getEchoList;},{true}] call ace_interact_menu_fnc_createAction;
 airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ace_interact_menu_fnc_createAction;
 armorAction = ["ArmorList","Armor List","", {call TWC_fnc_getArmorList;},{true}] call ace_interact_menu_fnc_createAction;
 
@@ -314,7 +304,6 @@ armorAction = ["ArmorList","Armor List","", {call TWC_fnc_getArmorList;},{true}]
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], bravoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], charlieAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], deltaAction] call ace_interact_menu_fnc_addActionToObject;
-[player, 1, ["ACE_SelfActions", "thisStartsTheList"], echoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], armorAction] call ace_interact_menu_fnc_addActionToObject;
 
