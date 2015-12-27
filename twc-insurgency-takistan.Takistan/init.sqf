@@ -45,6 +45,7 @@ _defuseAction = [
                 InsP_enemyMorale = InsP_enemyMorale + 0.1;
                 publicVariable "InsP_iedDestroyed";
                 publicVariable "InsP_enemyMorale";
+				hint "Ied Diffused";
             },
             {},
             "Disarming..."

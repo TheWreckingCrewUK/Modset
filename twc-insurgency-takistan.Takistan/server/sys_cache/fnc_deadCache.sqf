@@ -1,6 +1,8 @@
 _deadCache = _this select 0;
 _intelPos = (getPosATL _deadCache);
 
+hint "Cache Destroyed";
+
 InsP_ammoCaches = InsP_ammoCaches + 1;
 publicVariable "InsP_ammoCaches";
 

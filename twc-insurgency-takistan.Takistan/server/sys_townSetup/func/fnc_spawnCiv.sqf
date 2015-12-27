@@ -1,7 +1,7 @@
 /*
 * Details:
 * 
-* Creates a Civillian that will tak position in a house and will not flee.
+* Creates a Civillian that will tak position in a house and will not move.
 *
 * Required parameters:
 *
@@ -20,14 +20,8 @@
 */
 _group = createGroup civilian;
 _civilianType = "LOP_Tak_Civ_Man_01";
-//_marker = _this select 0;
-//_civnum = _this select 1;
-//_placementRadius = 50;
 params["_marker", "_civnum", "_civradius"];
-/*
-Private ["_marker","_civnum"];
-params ["_marker",["_civnum",7]];
-*/
+
 for "_i" from 1 to _civnum do {
 		_individualCiv = _group createUnit [_civilianType, (getMarkerPos _marker), [], _civradius, "NONE"];
 		_civHeading = (random 360);

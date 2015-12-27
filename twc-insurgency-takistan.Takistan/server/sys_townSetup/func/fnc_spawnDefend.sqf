@@ -9,16 +9,9 @@
 *
 * Example:
 *
-*["bastam"] spawn twc_fnc_SpawnDefend
+*["bastam"] spawn twc_SpawnDefend
 *
 * Author: [TWC] Fakematty / [TWC] Jayman
-*/
-
-//_marker = _this select 0;
-
-/*
-Private ["_marker"];
-params ["_marker"];
 */
 
 params["_marker"];
