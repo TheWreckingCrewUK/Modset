@@ -30,6 +30,7 @@ _amountWaves = 4 + (floor Insp_enemyMorale);
 sleep 60;
 */
 params ["_marker","_waves","_groupradius"];
+_waves = _waves + floor InsP_enemyMorale;
 /*
 private ["_marker","_radius"];
 params ["_marker",["_radius",[600,700]],["_Group",(configfile >> "CfgGroups" >> "Indep" >> "LOP_AM" >> "Infantry" >> "LOP_AM_Patrol_section")]];

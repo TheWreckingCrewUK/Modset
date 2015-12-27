@@ -18,20 +18,16 @@
 * Author: [TWC] Fakematty / [TWC] Jayman
 */
 
-_marker = _this select 0;
-/*
-Private ["_marker"];
-params [["_marker"],["_radius",[600,700]]];
-*/
-sleep 3;
+//_marker = _this select 0;
 
+params ["_marker"];
 //_max = _radius select 1;
 
 _Trigger = createTrigger ["EmptyDetector", getMarkerPos _marker];
-_Trigger setTriggerArea [500, 500, 0, false];
+_Trigger setTriggerArea [700, 700, 0, false];
 _Trigger setTriggerActivation ["East", "NOT PRESENT", False];
 _Trigger setTriggerTimeout [60,60,60,True];
-_Trigger setTriggerStatements ["this",format["['%1']execVM 'server\sys_townSetup\func\fnc_townfinished.sqf'",_marker],""];
+_Trigger setTriggerStatements ["this",format["['%1']call twc_townFinished",_marker],""];
 
 									  
 									  

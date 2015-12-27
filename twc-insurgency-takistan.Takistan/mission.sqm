@@ -1903,7 +1903,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=41;
+		items=45;
 		class Item0
 		{
 			position[]={5994.9873,83.040001,11495.35};
@@ -2024,179 +2024,123 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={-702.36584,505.0455,11329.244};
+			position[]={3603.1685,31.404764,12662.394};
 			name="AAGUNA1";
 			type="Empty";
 			colorName="ColorGUER";
 		};
 		class Item13
 		{
-			position[]={-678.12427,711.32367,9955.5068};
+			position[]={486.90982,159.71434,12551.115};
 			name="AAGUNA2";
 			type="Empty";
 			colorName="ColorGUER";
 		};
 		class Item14
 		{
-			position[]={-637.71973,463.73523,8969.6484};
+			position[]={2492.4224,23.253641,12758.293};
 			name="AAGUNA3";
 			type="Empty";
 			colorName="ColorGUER";
 		};
 		class Item15
 		{
-			position[]={-387.21542,421.18665,7709.0425};
+			position[]={502.43686,664.02936,11011.961};
 			name="AAGUNA4";
 			type="Empty";
 			colorName="ColorGUER";
 		};
 		class Item16
 		{
-			position[]={-338.72986,549.83832,6408.0317};
-			name="AAGUNA5";
+			position[]={1863.7512,376.62946,9533.4004};
+			name="AAGUNB1";
 			type="Empty";
 			colorName="ColorGUER";
 		};
 		class Item17
 		{
-			position[]={-524.58875,600.44135,4654.4971};
-			name="AAGUNA6";
+			position[]={832.01379,447.92786,8360.0078};
+			name="AAGUNB2";
 			type="Empty";
 			colorName="ColorGUER";
 		};
 		class Item18
 		{
-			position[]={-629.6394,372.45502,3393.8899};
-			name="AAGUNA7";
+			position[]={2375.0186,520.27753,6576.168};
+			name="AAGUNB3";
 			type="Empty";
 			colorName="ColorGUER";
 		};
 		class Item19
 		{
-			position[]={-524.59033,499.39877,888.83997};
-			name="AAGUNA8";
-			type="Empty";
-			colorName="ColorGUER";
-		};
-		class Item20
-		{
-			position[]={13536.017,170.52412,12686.819};
-			name="AAGUNB1";
-			type="Empty";
-			colorName="ColorGUER";
-		};
-		class Item21
-		{
-			position[]={13641.067,193.82912,11410.052};
-			name="AAGUNB2";
-			type="Empty";
-			colorName="ColorGUER";
-		};
-		class Item22
-		{
-			position[]={13794.602,185.29944,10197.93};
-			name="AAGUNB3";
-			type="Empty";
-			colorName="ColorGUER";
-		};
-		class Item23
-		{
-			position[]={13665.309,492.04596,8670.6582};
+			position[]={4239.9229,236.74222,8482.291};
 			name="AAGUNB4";
 			type="Empty";
 			colorName="ColorGUER";
 		};
-		class Item24
-		{
-			position[]={13689.551,456.59119,6965.6074};
-			name="AAGUNB5";
-			type="Empty";
-			colorName="ColorGUER";
-		};
-		class Item25
-		{
-			position[]={13632.986,621.97534,5430.2534};
-			name="AAGUNB6";
-			type="Empty";
-			colorName="ColorGUER";
-		};
-		class Item26
-		{
-			position[]={13721.872,457.21948,2626.2112};
-			name="AAGUNB7";
-			type="Empty";
-			colorName="ColorGUER";
-		};
-		class Item27
-		{
-			position[]={13560.258,292.15295,444.39297};
-			name="AAGUNB8";
-			type="Empty";
-			colorName="ColorGUER";
-		};
-		class Item28
+		class Item20
 		{
 			position[]={1800.7172,336.38162,10648.711};
 			name="cacheMarkerA";
 			type="Empty";
 			colorName="ColorEAST";
 		};
-		class Item29
+		class Item21
 		{
 			position[]={3390.7661,180.44168,8096.5347};
 			name="cacheMarkerB";
 			type="Empty";
 			colorName="ColorEAST";
 		};
-		class Item30
+		class Item22
 		{
 			position[]={6924.5762,202.12798,7210.8682};
 			name="cacheMarkerC";
 			type="Empty";
 			colorName="ColorEAST";
 		};
-		class Item31
+		class Item23
 		{
 			position[]={10570.203,515.28387,7747.0825};
 			name="cacheMarkerD";
 			type="Empty";
 			colorName="ColorEAST";
 		};
-		class Item32
+		class Item24
 		{
 			position[]={11038.14,201.32941,11095.929};
 			name="cacheMarkerE";
 			type="Empty";
 			colorName="ColorEAST";
 		};
-		class Item33
+		class Item25
 		{
 			position[]={6083.5986,82.738113,11484.794};
 			name="crate";
 			type="Empty";
 		};
-		class Item34
+		class Item26
 		{
 			position[]={6003.8135,94.828629,13375.375};
 			name="respawn_civilian";
 			type="Empty";
 			angle=-45.583794;
 		};
-		class Item35
+		class Item27
 		{
 			position[]={6051.0195,83.040001,11519.125};
 			name="respawn_west";
 			type="Empty";
 			angle=-40.709183;
 		};
-		class Item36
+		class Item28
 		{
 			position[]={6046.7954,83.040001,11516.157};
 			name="mainBase";
 			type="Empty";
 			angle=-40.709183;
 		};
-		class Item37
+		class Item29
 		{
 			position[]={6079.1313,82.883904,11491.699};
 			name="blueforemarker";
@@ -2204,7 +2148,7 @@ class Mission
 			type="mil_flag";
 			colorName="ColorRed";
 		};
-		class Item38
+		class Item30
 		{
 			position[]={6265.8613,82.733849,11746.211};
 			name="armourspawn";
@@ -2212,18 +2156,102 @@ class Mission
 			type="o_mech_inf";
 			colorName="ColorEAST";
 		};
-		class Item39
+		class Item31
 		{
 			position[]={5792.2466,83.040001,11344.343};
 			name="helospawn";
 			text="Helicopters";
 			type="o_air";
 		};
-		class Item40
+		class Item32
 		{
 			position[]={5971.3804,105.31153,7996.0054};
 			name="middle";
 			type="Empty";
+		};
+		class Item33
+		{
+			position[]={4601.5313,491.50818,7268.437};
+			name="AAGUNC1";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item34
+		{
+			position[]={6824.2065,321.94299,8105.3984};
+			name="AAGUNC2";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item35
+		{
+			position[]={8018.0361,610.17365,6216.0903};
+			name="AAGUNC3";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item36
+		{
+			position[]={8072.0439,298.53412,7470.9526};
+			name="AAGUNC4";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item37
+		{
+			position[]={10257.82,436.30386,8209.5156};
+			name="AAGUND1";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item38
+		{
+			position[]={10815.486,192.18842,9507.6992};
+			name="AAGUND2";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item39
+		{
+			position[]={12536.086,397.46616,9003.4492};
+			name="AAGUND3";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item40
+		{
+			position[]={10463.697,176.29068,10577.535};
+			name="AAGUND4";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item41
+		{
+			position[]={8888.4375,208.17366,10886.47};
+			name="AAGUNE1";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item42
+		{
+			position[]={8398.9746,209.30807,12446.068};
+			name="AAGUNE2";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item43
+		{
+			position[]={10793.759,215.94954,12137.527};
+			name="AAGUNE3";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item44
+		{
+			position[]={12438.55,251.14731,11901.837};
+			name="AAGUNE4";
+			type="Empty";
+			colorName="ColorGUER";
 		};
 	};
 	class Sensors
