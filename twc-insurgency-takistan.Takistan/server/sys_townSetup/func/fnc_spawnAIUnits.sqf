@@ -10,6 +10,9 @@
 
 params ["_marker","_waves","_groupradius"];
 _waves = _waves - floor InsP_enemyMorale;
+if (_waves < 1) then {
+	_waves = 1;
+};
 
 
 for "_i" from 1 to _waves do {
