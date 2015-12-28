@@ -61,7 +61,7 @@ if (isServer) then {
 
 if (isServer) then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],[0,120],0,[1,200]] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,600],[0,120],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
 	_AOBunkerOneMarker = createMarker [ _bunkerone, _pos];
 	_AOBunkerOneMarker setmarkershape "ICON";
 	_AOBunkerOneMarker setmarkertype "n_unknown";
@@ -99,7 +99,7 @@ if (isServer) then {
 if isServer then {
 
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],[240,360],0,[1,200]] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,600],[0,120],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
 	_AOBunkerTwoMarker = createMarker [ _bunkertwo, _pos];
 	_AOBunkerTwoMarker setmarkershape "ICON";
 	_AOBunkerTwoMarker setmarkertype "n_unknown";
@@ -141,7 +141,7 @@ if isServer then {
 if isServer then {
 
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],[240,360],0,[1,200]] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,600],[0,120],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
 	_AOBunkerThreeMarker = createMarker [ _bunkerthree, _pos];
 	_AOBunkerThreeMarker setmarkershape "ICON";
 	_AOBunkerThreeMarker setmarkertype "n_unknown";
@@ -200,7 +200,7 @@ for "_i" from 0 to 1 do {
 for "_i" from 0 to 1 do {
 	if isServer then {
 			private ["_pos","_m"];
-			_pos = [getmarkerpos _CentralMarker,[400,600],random 360,0,[1,400]] call SHK_pos;
+			_pos = [getmarkerpos _CentralMarker,[400,600],random 360,0,[1,400],_btr] call SHK_pos;
 			_BtrCrew = creategroup EAST;
 			_BtrVeh = [_pos, 180, _btr,_BtrCrew] call BIS_fnc_spawnVehicle;
 			[_BtrCrew, getMarkerpos _CentralMarker, 600] call CBA_fnc_taskPatrol;
@@ -209,7 +209,7 @@ for "_i" from 0 to 1 do {
 
 if isServer then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],random 360,0] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,600],random 360,0,[1,400],_bmp2] call SHK_pos;
 	_IFVOne = [_pos, EAST, _bmp2] call BIS_fnc_spawnGroup;
 	[_IFVOne, getmarkerpos _CentralMarker, 600, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
 
@@ -218,7 +218,7 @@ if isServer then {
 if isServer then {
 
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[400,600],random 360,0,[1,400]] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[400,600],random 360,0,[1,400],_t72] call SHK_pos;
 	_CrewOne = creategroup EAST;
 	_TankOne = [_pos, 180, _t72,_CrewOne] call BIS_fnc_spawnVehicle;
      [_CrewOne, getMarkerpos _CentralMarker, 600] call CBA_fnc_taskPatrol;
@@ -228,7 +228,7 @@ if isServer then {
 if isServer then {
 
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[400,600],random 360,0,[1,400]] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[400,600],random 360,0,[1,400],_shilka] call SHK_pos;
 	_CrewTwo = creategroup EAST;
 	_AAOne = [_pos, 180, _shilka,_CrewTwo] call BIS_fnc_spawnVehicle;
 
