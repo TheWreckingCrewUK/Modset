@@ -70,14 +70,15 @@ class Mission
 	randomSeed=193339;
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0.40000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.40000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
+		resistanceWest=0;
+		resistanceEast=1;
+		startWeather=0.39999998;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.39999998;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
 		year=2009;
 		day=28;
 		hour=16;
@@ -1918,7 +1919,7 @@ class Mission
 			special="NONE";
 			id=77;
 			side="EMPTY";
-			vehicle="RHS_Mi8AMTSh_FAB_vvs";
+			vehicle="RHS_Mi8AMTSh_UPK23_vvs";
 			leader=1;
 			skill=0.60000002;
 			text="vehicle12";
@@ -2137,7 +2138,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=45;
+		items=59;
 		class Item0
 		{
 			position[]={5994.9873,83.040001,11495.35};
@@ -2486,6 +2487,108 @@ class Mission
 			name="AAGUNE4";
 			type="Empty";
 			colorName="ColorGUER";
+		};
+		class Item45
+		{
+			position[]={8055.9766,296.04001,1790.0773};
+			name="cacheSpawn";
+			type="Empty";
+		};
+		class Item46
+		{
+			position[]={4178.813,30.20363,11781.953};
+			name="Shamali";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item47
+		{
+			position[]={3644.0266,152.23123,8592.1299};
+			name="Gospandi";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item48
+		{
+			position[]={6025.3672,67.44194,10471.776};
+			name="Rasman";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item49
+		{
+			position[]={8258.6533,176.71185,7768.377};
+			name="Imarat";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item50
+		{
+			position[]={4200.6016,43.340733,10707.206};
+			name="NagaraOilfield";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item51
+		{
+			position[]={6713.7803,120.59015,8909.9629};
+			name="BastamEast";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item52
+		{
+			position[]={6152.7275,305.2074,5633.2695};
+			name="Anar";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item53
+		{
+			position[]={6811.9053,294.01877,6191.6733};
+			name="FalarEast";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item54
+		{
+			position[]={68.01532,96.107628,12936.058};
+			name="Helper1";
+			text="Standard Area Clear Marker";
+			type="mil_flag";
+			colorName="ColorGreen";
+		};
+		class Item55
+		{
+			position[]={39.114624,95.890419,12809.891};
+			name="Helper2";
+			text="Standard Building Clear Marker";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item56
+		{
+			position[]={34.971348,111.54092,12694.967};
+			name="Helper3";
+			text="Standard Civlian Questioned Marker";
+			type="mil_dot";
+			colorName="ColorYellow";
+		};
+		class Item57
+		{
+			position[]={44.603386,127.42858,12576.765};
+			name="Helper4";
+			text="Standard Road Clear Marker";
+			type="mil_arrow";
+			colorName="ColorBlue";
+			angle=91.589127;
+		};
+		class Item58
+		{
+			position[]={6326.4531,60.486504,11287.732};
+			name="RasmanNorth";
+			type="Empty";
+			colorName="ColorBrown";
 		};
 	};
 	class Sensors

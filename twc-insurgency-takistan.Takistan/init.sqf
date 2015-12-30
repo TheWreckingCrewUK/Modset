@@ -4,10 +4,18 @@ execVM "Zues-Harry.sqf";
 execVM "Zues-jayman.sqf";
 execVM "SHK_pos\shk_pos_init.sqf";
 
+if(!hasInterface && !isDedicated) then {
+   execVM "hc\init.sqf";
+};
+
+if(isDedicated || isServer) then{
+   execVM "hc\init.sqf";
+};
+
 waitUntil {!isNull player};
 waitUntil {player == player};
 
-execVM "lib\cleanup.sqf";
+execVM "lib\Cleanup.sqf";
 execVM "lib\bodyremove.sqf";
 execVM "tao\restrict\pilot.sqf";
 

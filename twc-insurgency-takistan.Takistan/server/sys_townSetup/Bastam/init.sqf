@@ -3,9 +3,9 @@
 //calls all of the files specific for Bastam
 //delete itself
 _Bastamstart = createTrigger ["EmptyDetector", getMarkerPos "Bastam"];
-_Bastamstart setTriggerArea [500, 500, 0, false];
+_Bastamstart setTriggerArea [700, 700, 0, false];
 _Bastamstart setTriggerActivation ["West", "PRESENT", False];
-_Bastamstart setTriggerStatements ["this","['Bastam',7,100,3,[600,700]] call twc_townSetup"
+_Bastamstart setTriggerStatements ["this","['Bastam',9,100,2,[700,800]] call twc_townSetup"
 	,""
 ];
 

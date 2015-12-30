@@ -50,6 +50,8 @@ if (g_class == "MFVDV_SL") then {
 								["ACE_epinephrine",5],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+								["rhs_acc_ekp1",1],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
@@ -111,6 +113,8 @@ if (g_class == "MFVDV_SL") then {
 			["ACE_bodyBag",10],
 			["rhs_acc_1P29",1],
 		    ["rhs_acc_2dpzenit",1],
+			["rhs_acc_1p78",1],
+			["rhs_acc_ekp1",1],
 			["ACRE_PRC343",1]
 		];
 };
@@ -137,6 +141,8 @@ if (g_class == "MFVDV_SL") then {
                                 ["ACE_morphine",10],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+			                    ["rhs_acc_ekp1",1],
 								["ACRE_PRC343",1]
 		];
 
@@ -167,6 +173,8 @@ if (g_class == "MFVDV_SL") then {
                                 ["ACE_morphine",10],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+		                    	["rhs_acc_ekp1",1],
 								["ACRE_PRC343",1]
 		];
 
@@ -205,6 +213,8 @@ if (g_class == "MFVDV_SL") then {
              ["ACE_morphine",10],
 			 ["rhs_acc_1P29",1],
 			 ["rhs_acc_2dpzenit",1],
+			 ["rhs_acc_1p78",1],
+		     ["rhs_acc_ekp1",1],
 			 ["ACRE_PRC343",1]
 		];
 };
@@ -234,6 +244,8 @@ if (g_class == "DMSV_SL") then {
 								["ACE_epinephrine",5],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+		                     	["rhs_acc_ekp1",1],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
@@ -269,6 +281,8 @@ if (g_class == "DMSV_SL") then {
              ["ACE_morphine",10],
 			 ["rhs_acc_1P29",1],
 			 ["rhs_acc_2dpzenit",1],
+			 ["rhs_acc_1p78",1],
+			 ["rhs_acc_ekp1",1],
 			 ["ACRE_PRC148",1]
 		];
 };
@@ -320,6 +334,8 @@ if (g_class == "DMSV_SL") then {
                                 ["ACE_morphine",10],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+			                    ["rhs_acc_ekp1",1],
 								["ACRE_PRC148",1]
 		];
 
@@ -350,6 +366,8 @@ if (g_class == "DMSV_SL") then {
                                 ["ACE_morphine",10],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+			                    ["rhs_acc_ekp1",1],
 								["ACRE_PRC148",1]
 		];
 
@@ -388,6 +406,38 @@ if (g_class == "DMSV_SL") then {
              ["ACE_morphine",10],
 			 ["rhs_acc_1P29",1],
 			 ["rhs_acc_2dpzenit",1],
+			 ["rhs_acc_1p78",1],
+			 ["rhs_acc_ekp1",1],
+			 ["ACRE_PRC148",1]
+		];
+};
+// load available to Rifleman only.
+ if (g_class == "DMSV_RF") then {
+        _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_desert",1],
+			["rhs_weap_makarov_pmm",1],
+			["rhs_weap_rshg2",2]
+
+		];
+
+        _tmp_magazines =
+        [
+            
+				["rhs_30Rnd_545x39_AK",50],
+				["rhs_mag_9x18_12_57N181S",15]
+        ];
+
+		_tmp_items =
+		[
+
+             ["ACE_MapTools",1],
+             ["ACE_fieldDressing",20],
+             ["ACE_morphine",10],
+			 ["rhs_acc_1P29",1],
+			 ["rhs_acc_2dpzenit",1],
+			 ["rhs_acc_1p78",1],
+			 ["rhs_acc_ekp1",1],
 			 ["ACRE_PRC148",1]
 		];
 };
@@ -417,6 +467,8 @@ if (g_class == "DMSV_SL") then {
 			["ACE_bodyBag",10],
 			["rhs_acc_1P29",1],
 		    ["rhs_acc_2dpzenit",1],
+			["rhs_acc_1p78",1],
+			["rhs_acc_ekp1",1],
 			["ACRE_PRC148",1]
 		];
 };
@@ -446,6 +498,8 @@ if (g_class == "DVDV_SL") then {
 								["ACE_epinephrine",5],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+			                    ["rhs_acc_ekp1",1],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
@@ -507,6 +561,8 @@ if (g_class == "DVDV_SL") then {
 			["ACE_bodyBag",10],
 			["rhs_acc_1P29",1],
 		    ["rhs_acc_2dpzenit",1],
+			["rhs_acc_1p78",1],
+			["rhs_acc_ekp1",1],
 			["ACRE_PRC343",1]
 		];
 };
@@ -533,6 +589,8 @@ if (g_class == "DVDV_SL") then {
                                 ["ACE_morphine",10],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+			                    ["rhs_acc_ekp1",1],
 								["ACRE_PRC343",1]
 		];
 
@@ -563,6 +621,8 @@ if (g_class == "DVDV_SL") then {
                                 ["ACE_morphine",10],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+			                    ["rhs_acc_ekp1",1],
 								["ACRE_PRC343",1]
 		];
 
@@ -601,6 +661,8 @@ if (g_class == "DVDV_SL") then {
              ["ACE_morphine",10],
 			 ["rhs_acc_1P29",1],
 			 ["rhs_acc_2dpzenit",1],
+			 ["rhs_acc_1p78",1],
+			 ["rhs_acc_ekp1",1],
 			 ["ACRE_PRC343",1]
 		];
 };
@@ -630,6 +692,8 @@ if (g_class == "WMSV_SL") then {
 								["ACE_epinephrine",5],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+			                    ["rhs_acc_ekp1",1],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
@@ -665,6 +729,8 @@ if (g_class == "WMSV_SL") then {
              ["ACE_morphine",10],
 			 ["rhs_acc_1P29",1],
 			 ["rhs_acc_2dpzenit",1],
+			 ["rhs_acc_1p78",1],
+			 ["rhs_acc_ekp1",1],
 			 ["ACRE_PRC148",1]
 		];
 };
@@ -716,6 +782,8 @@ if (g_class == "WMSV_SL") then {
                                 ["ACE_morphine",10],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+			                    ["rhs_acc_ekp1",1],
 								["ACRE_PRC148",1]
 		];
 
@@ -746,6 +814,8 @@ if (g_class == "WMSV_SL") then {
                                 ["ACE_morphine",10],
 								["rhs_acc_1P29",1],
 								["rhs_acc_2dpzenit",1],
+								["rhs_acc_1p78",1],
+			                    ["rhs_acc_ekp1",1],
 								["ACRE_PRC148",1]
 		];
 
@@ -784,6 +854,38 @@ if (g_class == "WMSV_SL") then {
              ["ACE_morphine",10],
 			 ["rhs_acc_1P29",1],
 			 ["rhs_acc_2dpzenit",1],
+			 ["rhs_acc_1p78",1],
+			 ["rhs_acc_ekp1",1],
+			 ["ACRE_PRC148",1]
+		];
+};
+// load available to Grenadier only.
+ if (g_class == "WMSV_RF") then {
+        _tmp_weapons =
+        [
+            ["rhs_weap_ak74m_gp25",1],
+			["rhs_weap_makarov_pmm",1],
+			["rhs_weap_rshg2",2]
+
+		];
+
+        _tmp_magazines =
+        [
+            
+				["rhs_30Rnd_545x39_AK",50],
+				["rhs_mag_9x18_12_57N181S",15]
+        ];
+
+		_tmp_items =
+		[
+
+             ["ACE_MapTools",1],
+             ["ACE_fieldDressing",20],
+             ["ACE_morphine",10],
+			 ["rhs_acc_1P29",1],
+			 ["rhs_acc_2dpzenit",1],
+			 ["rhs_acc_1p78",1],
+			 ["rhs_acc_ekp1",1],
 			 ["ACRE_PRC148",1]
 		];
 };
@@ -813,6 +915,8 @@ if (g_class == "WMSV_SL") then {
 			["ACE_bodyBag",10],
 			["rhs_acc_1P29",1],
 		    ["rhs_acc_2dpzenit",1],
+			["rhs_acc_1p78",1],
+			["rhs_acc_ekp1",1],
 			["ACRE_PRC148",1]
 		];
 };

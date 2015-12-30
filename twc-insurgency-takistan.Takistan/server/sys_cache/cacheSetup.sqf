@@ -6,23 +6,23 @@ if (isNil "InsP_cacheGroup") then {
 
 	_cacheBoxType = "Box_FIA_Wps_F";
 
-	cacheBoxA = _cacheBoxType createVehicle [0, 0, 1];
+	cacheBoxA = _cacheBoxType createVehicle [8020, 1782, 296];
 	_cacheADeath = cacheBoxA addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxA"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxA";
 
-	cacheBoxB = _cacheBoxType createVehicle [5, 0, 1];
+	cacheBoxB = _cacheBoxType createVehicle [8025, 1782, 296];
 	_cacheADeath = cacheBoxB addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxB"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxB";
 
-	cacheBoxC = _cacheBoxType createVehicle [10, 0, 1];
+	cacheBoxC = _cacheBoxType createVehicle [8025, 1787, 296];
 	_cacheADeath = cacheBoxC addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxC"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxC";
 
-	cacheBoxD = _cacheBoxType createVehicle [0, 5, 1];
+	cacheBoxD = _cacheBoxType createVehicle [8030, 1787, 296];
 	_cacheADeath = cacheBoxD addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxD"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxD";
 
-	cacheBoxE = _cacheBoxType createVehicle [0, 5, 0];
+	cacheBoxE = _cacheBoxType createVehicle [8030, 1792, 296];
 	_cacheADeath = cacheBoxE addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxE"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxE";
 
@@ -42,7 +42,7 @@ if (isNil "InsP_cacheGroup") then {
 				case "4": {_cacheMarker = "cacheMarkerE"};
 			};
 	
-			_houseList = (getMarkerPos _cacheMarker) nearObjects ["House",1500];
+			_houseList = (getMarkerPos _cacheMarker) nearObjects ["House",2000];
 			sleep .25;
 			_c = 0;
 			_house = _houseList call BIS_fnc_selectRandom;
