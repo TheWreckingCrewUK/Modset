@@ -6,7 +6,7 @@ hint "Cache Destroyed";
 InsP_ammoCaches = InsP_ammoCaches + 1;
 publicVariable "InsP_ammoCaches";
 
-InsP_enemyMorale = InsP_enemyMorale + .75;
+InsP_enemyMorale = InsP_enemyMorale + .5;
 publicVariable "InsP_enemyMorale";
 
 InsP_cacheGroup = InsP_cacheGroup - [_deadCache];

@@ -1,4 +1,5 @@
 _opforWeapons = [
+/*
     "rhs_weap_ak74m",
     "rhs_weap_ak74m_folded",
     "rhs_weap_pkp",
@@ -9,6 +10,7 @@ _opforWeapons = [
     "rhs_weap_svdp",
     "rhs_weap_akms_gp25",
     "rhs_weap_ak103_dtk"
+* Commented out as we need these weapons for insurgency Takistan*/
 ];
 
 while {true} do {

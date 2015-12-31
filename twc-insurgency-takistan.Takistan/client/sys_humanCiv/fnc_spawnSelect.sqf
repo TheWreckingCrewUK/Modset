@@ -25,7 +25,7 @@ while {true} do {
 
     onMapSingleClick "_pos spawn fnc_clickToSpawn; true;";
 
-    hintSilent "Click on an IED Factory to Spawn";
+    hintSilent "Click on an IED Factory to Spawn. It is recommended to spawn close to a town to obtain a vehicle.";
     waitUntil {InsP_civSpawned};
     InsP_civSpawned = false;
     cutText ["Receiving...", "BLACK", 0.001];

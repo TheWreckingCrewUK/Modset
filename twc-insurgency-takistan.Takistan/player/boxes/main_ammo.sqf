@@ -17,8 +17,8 @@ _boxType = "I_supplyCrate_F";  // the type of ammobox used.
 _timer = 240;  // time in seconds until box is refilled.
  
 _weapons = [];
-_magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2]];
+_magazines = [["rhs_mag_nspd",5], ["rhs_mag_nspn_yellow",5], ["rhs_mag_nspn_red",5], ["rhs_mag_nspn_green",5], ["rhs_mag_rdg2_white",5], ["rhs_mag_rdg2_black",5], ["rhs_mag_rgd5",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
+_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["ACE_Flashlight_XL50", 1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2]];
 
 _tmp_weapons = [];
 _tmp_magazines = [];
@@ -52,6 +52,7 @@ if (g_class == "MFVDV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 								["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
@@ -115,6 +116,7 @@ if (g_class == "MFVDV_SL") then {
 		    ["rhs_acc_2dpzenit",1],
 			["rhs_acc_1p78",1],
 			["rhs_acc_ekp1",1],
+			["rhs_acc_dtk",1],
 			["ACRE_PRC343",1]
 		];
 };
@@ -143,6 +145,7 @@ if (g_class == "MFVDV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 			                    ["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["ACRE_PRC343",1]
 		];
 
@@ -175,6 +178,7 @@ if (g_class == "MFVDV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 		                    	["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["ACRE_PRC343",1]
 		];
 
@@ -215,6 +219,7 @@ if (g_class == "MFVDV_SL") then {
 			 ["rhs_acc_2dpzenit",1],
 			 ["rhs_acc_1p78",1],
 		     ["rhs_acc_ekp1",1],
+			 ["rhs_acc_dtk",1],
 			 ["ACRE_PRC343",1]
 		];
 };
@@ -246,6 +251,7 @@ if (g_class == "DMSV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 		                     	["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
@@ -283,6 +289,7 @@ if (g_class == "DMSV_SL") then {
 			 ["rhs_acc_2dpzenit",1],
 			 ["rhs_acc_1p78",1],
 			 ["rhs_acc_ekp1",1],
+			 ["rhs_acc_dtk",1],
 			 ["ACRE_PRC148",1]
 		];
 };
@@ -336,6 +343,7 @@ if (g_class == "DMSV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 			                    ["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["ACRE_PRC148",1]
 		];
 
@@ -368,6 +376,7 @@ if (g_class == "DMSV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 			                    ["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["ACRE_PRC148",1]
 		];
 
@@ -408,6 +417,7 @@ if (g_class == "DMSV_SL") then {
 			 ["rhs_acc_2dpzenit",1],
 			 ["rhs_acc_1p78",1],
 			 ["rhs_acc_ekp1",1],
+			 ["rhs_acc_dtk",1],
 			 ["ACRE_PRC148",1]
 		];
 };
@@ -438,6 +448,7 @@ if (g_class == "DMSV_SL") then {
 			 ["rhs_acc_2dpzenit",1],
 			 ["rhs_acc_1p78",1],
 			 ["rhs_acc_ekp1",1],
+			 ["rhs_acc_dtk",1],
 			 ["ACRE_PRC148",1]
 		];
 };
@@ -469,6 +480,7 @@ if (g_class == "DMSV_SL") then {
 		    ["rhs_acc_2dpzenit",1],
 			["rhs_acc_1p78",1],
 			["rhs_acc_ekp1",1],
+			["rhs_acc_dtk",1],
 			["ACRE_PRC148",1]
 		];
 };
@@ -500,6 +512,7 @@ if (g_class == "DVDV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 			                    ["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
@@ -563,6 +576,7 @@ if (g_class == "DVDV_SL") then {
 		    ["rhs_acc_2dpzenit",1],
 			["rhs_acc_1p78",1],
 			["rhs_acc_ekp1",1],
+			["rhs_acc_dtk",1],
 			["ACRE_PRC343",1]
 		];
 };
@@ -591,6 +605,7 @@ if (g_class == "DVDV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 			                    ["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["ACRE_PRC343",1]
 		];
 
@@ -623,6 +638,7 @@ if (g_class == "DVDV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 			                    ["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["ACRE_PRC343",1]
 		];
 
@@ -663,6 +679,7 @@ if (g_class == "DVDV_SL") then {
 			 ["rhs_acc_2dpzenit",1],
 			 ["rhs_acc_1p78",1],
 			 ["rhs_acc_ekp1",1],
+			 ["rhs_acc_dtk",1],
 			 ["ACRE_PRC343",1]
 		];
 };
@@ -694,6 +711,7 @@ if (g_class == "WMSV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 			                    ["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
@@ -731,6 +749,7 @@ if (g_class == "WMSV_SL") then {
 			 ["rhs_acc_2dpzenit",1],
 			 ["rhs_acc_1p78",1],
 			 ["rhs_acc_ekp1",1],
+			 ["rhs_acc_dtk",1],
 			 ["ACRE_PRC148",1]
 		];
 };
@@ -784,6 +803,7 @@ if (g_class == "WMSV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 			                    ["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["ACRE_PRC148",1]
 		];
 
@@ -816,6 +836,7 @@ if (g_class == "WMSV_SL") then {
 								["rhs_acc_2dpzenit",1],
 								["rhs_acc_1p78",1],
 			                    ["rhs_acc_ekp1",1],
+								["rhs_acc_dtk",1],
 								["ACRE_PRC148",1]
 		];
 
@@ -856,6 +877,7 @@ if (g_class == "WMSV_SL") then {
 			 ["rhs_acc_2dpzenit",1],
 			 ["rhs_acc_1p78",1],
 			 ["rhs_acc_ekp1",1],
+			 ["rhs_acc_dtk",1],
 			 ["ACRE_PRC148",1]
 		];
 };
@@ -886,6 +908,7 @@ if (g_class == "WMSV_SL") then {
 			 ["rhs_acc_2dpzenit",1],
 			 ["rhs_acc_1p78",1],
 			 ["rhs_acc_ekp1",1],
+			 ["rhs_acc_dtk",1],
 			 ["ACRE_PRC148",1]
 		];
 };
@@ -917,6 +940,7 @@ if (g_class == "WMSV_SL") then {
 		    ["rhs_acc_2dpzenit",1],
 			["rhs_acc_1p78",1],
 			["rhs_acc_ekp1",1],
+			["rhs_acc_dtk",1],
 			["ACRE_PRC148",1]
 		];
 };
