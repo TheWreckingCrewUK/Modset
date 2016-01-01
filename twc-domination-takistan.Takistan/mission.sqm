@@ -111,12 +111,12 @@ class Mission
 				class Item0
 				{
 					position[]={6061.9185,82.962387,11493.859};
-					azimut=-240.2468;
+					azimut=-240.24699;
 					special="NONE";
 					id=0;
 					side="WEST";
 					vehicle="BAF_Soldier_Light_Infantry_L_M_DG1";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
@@ -569,7 +569,7 @@ class Mission
 				class Item0
 				{
 					position[]={6058.4038,83.040001,11528.445};
-					azimut=166.8614;
+					azimut=166.86099;
 					id=30;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -578,52 +578,52 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="p37";
-					init="this join g37;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\SWD_SLR.sqf'""];";
+					init="this join g37;";
 					description="Delta Squad Lead";
 				};
 				class Item1
 				{
-					position[]={6066.9092,83.040001,11534.941};
-					azimut=166.8614;
+					position[]={6060.4609,83.040001,11527.578};
+					azimut=166.86099;
 					id=31;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="p38";
-					init="this join g38;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\SWD_RFL.sqf'""];";
-					description="Delta Grenadier";
+					init="this join g38;";
+					description="Delta Fire Team Lead";
 				};
 				class Item2
 				{
-					position[]={6065.3662,83.040001,11533.43};
-					azimut=166.8614;
+					position[]={6059.9224,83.040001,11528.481};
+					azimut=166.86099;
 					id=32;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="p39";
-					init="this join g39;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\SWD_SLR.sqf'""];";
-					description="Delta Automatic Rifleman";
+					init="this join g39;";
+					description="Delta Rifleman";
 				};
 				class Item3
 				{
-					position[]={6063.6162,83.040001,11534.61};
-					azimut=166.8614;
+					position[]={6058.1611,83.040001,11530.223};
+					azimut=166.86099;
 					id=33;
 					side="WEST";
-					vehicle="B_medic_F";
+					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="p40";
 					init="this join g40;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\SWD_SLR.sqf'""];";
-					description="Delta Medic";
+					description="Delta Grenadier";
 				};
 				class Item4
 				{
-					position[]={6059.6963,83.040001,11536.363};
-					azimut=166.8614;
+					position[]={6058.6187,83.040001,11533.905};
+					azimut=166.86099;
 					id=34;
 					side="WEST";
 					vehicle="B_Soldier_F";
@@ -636,42 +636,42 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={6062.5635,83.040001,11531.768};
-					azimut=251.92967;
+					position[]={6059.8574,83.040001,11533.505};
+					azimut=251.92999;
 					id=35;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="p42";
-					init="this join g42;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\SWD_SLR.sqf'""];";
-					description="Delta AT";
+					init="this join g42;";
+					description="Delta AR";
 				};
 				class Item6
 				{
 					position[]={6061.792,83.040001,11533.354};
-					azimut=251.92967;
+					azimut=251.92999;
 					id=36;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					skill=0.60000002;
 					text="p43";
-					init="this join g43;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\SWD_SLR.sqf'""];";
-					description="Delta AAT";
+					init="this join g43;";
+					description="Delta AT";
 				};
 				class Item7
 				{
 					position[]={6060.8022,83.040001,11535.034};
-					azimut=251.92967;
+					azimut=251.92999;
 					id=37;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="p44";
-					init="this join g44;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\SWD_SLR.sqf'""];";
-					description="Delta Machine Gunner";
+					init="this join g44;";
+					description="Delta Medic";
 				};
 			};
 		};

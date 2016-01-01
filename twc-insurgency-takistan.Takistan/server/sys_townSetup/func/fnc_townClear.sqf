@@ -26,8 +26,8 @@ params ["_marker"];
 _Trigger = createTrigger ["EmptyDetector", getMarkerPos _marker];
 _Trigger setTriggerArea [700, 700, 0, false];
 _Trigger setTriggerActivation ["East", "NOT PRESENT", False];
-_Trigger setTriggerTimeout [60,60,60,True];
-_Trigger setTriggerStatements ["this",format["['%1']call twc_townFinished",_marker],""];
+_Trigger setTriggerTimeout [10,10,10,True];
+_Trigger setTriggerStatements ["this && (str count ((getMarkerPos _marker) nearobjects ['Box_FIA_Wps_F', 500]) == '0')",format["['%1']call twc_townFinished",_marker],""];
 
 									  
 									  
@@ -41,3 +41,5 @@ _Trigger setTriggerStatements ["this",format["['%1']call twc_townFinished",_mark
 //_Trigger setTriggerStatements [format["this && count(nearestObjects [getMarkerPos '%1', ['Box_FIA_Wps_F'], 500]) == 0",_marker],
 format["'%1' SetMarkerColor 'ColorWEST'; hint 'yolo'",_marker],
 ""];
+*/
+hint str count ((getMarkerPos "Falar") nearobjects ['Box_FIA_Wps_F', 500]);

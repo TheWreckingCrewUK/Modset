@@ -29,12 +29,12 @@ if (isNil "nonQuestionableList") then {
 };
 
 _civilians = ["humanciv1", "humanciv2", "humanciv3"];
-
+/*
 if ((str player) in _civilians && ((count playableUnits) <= 10 || !((getPlayerUID player) in memberIDArray))) then {
     ["end4", false, 0] call BIS_fnc_endMission;
 };
-
-if ((str player) in _civilians && ((count playableUnits) => 10 && ((getPlayerUID player) in memberIDArray))) then {
+*/
+if ((str player) in _civilians && ((count playableUnits) >= 10 && ((getPlayerUID player) in memberIDArray))) then {
     execVM "client\sys_humanciv\init.sqf";
 };
 

@@ -156,7 +156,7 @@ class Mission
 					id=1;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
 					text="p1";
@@ -1903,7 +1903,7 @@ class Mission
 					id=75;
 					side="CIV";
 					vehicle="LOP_Tak_Civ_Man_01";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="humanciv1";
@@ -2299,7 +2299,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=59;
+		items=60;
 		class Item0
 		{
 			position[]={5994.9873,83.040001,11495.35};
@@ -2409,13 +2409,13 @@ class Mission
 		class Item11
 		{
 			position[]={5704.7988,83.040001,11459.323};
-			name="iedRestrictionZone";
+			name="iedRestrictionZone1";
 			markerType="RECTANGLE";
 			type="Empty";
 			fillName="Border";
 			a=700;
 			b=499;
-			angle=130.90543;
+			angle=130.905;
 			drawBorder=1;
 		};
 		class Item12
@@ -2751,6 +2751,17 @@ class Mission
 			name="RasmanNorth";
 			type="Empty";
 			colorName="ColorBrown";
+		};
+		class Item59
+		{
+			position[]={6499.4702,358.66171,2166.7715};
+			name="iedRestrictionZone2";
+			markerType="RECTANGLE";
+			type="Empty";
+			fillName="Border";
+			a=7000;
+			b=3000;
+			drawBorder=1;
 		};
 	};
 	class Sensors

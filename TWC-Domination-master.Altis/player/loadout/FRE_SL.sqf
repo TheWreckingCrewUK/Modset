@@ -11,14 +11,12 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "SAM_Crye_M90k_uniform";
+player forceAddUniform "REV1_uniform_da";
 player addItemToUniform "ACRE_PRC148";
-player addItemToUniform "Chemlight_green";
-player addVest "SAM_PlateCarrier";
-player addBackpack "B_Carryall_cbr";
+player addVest "REV1_vest_de";
+player addBackpack "B_Kitbag_cbr";
 player addItemToBackpack "ACRE_PRC117F";
-player addHeadgear "SAM_HelmetIA_M90k";
-player addGoggles "sam_peltor_bronze";
+player addHeadgear "REV1_spectra_da_glass";
 
 comment "Add weapons";
 

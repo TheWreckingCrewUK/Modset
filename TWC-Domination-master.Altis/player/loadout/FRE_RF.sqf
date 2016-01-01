@@ -25,6 +25,7 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 
+
 comment "Set identity";
 player setFace "WhiteHead_07";
 player setSpeaker "Male02ENG";
