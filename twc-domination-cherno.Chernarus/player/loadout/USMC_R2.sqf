@@ -11,11 +11,11 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "rhs_uniform_cu_ocp_patchless";
+player forceAddUniform "rhs_uniform_FROG01_d";
 player addItemToUniform "ACRE_PRC148";
 player addVest "rhsusf_iotv_ocp_Medic";
 player addBackpack "rhsusf_assault_eagleaiii_ocp";
-player addHeadgear "rhsusf_ach_helmet_camo_ocp";
+player addHeadgear "rhsusf_mich_helmet_marpatd";
 
 comment "Add weapons";
 

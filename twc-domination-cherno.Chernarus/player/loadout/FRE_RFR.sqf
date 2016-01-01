@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by Will";
+comment "Exported from Arsenal by FakeMatty";
 
 comment "Remove existing items";
 removeAllWeapons player;
@@ -11,14 +11,15 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "SAM_Crye_M90k_uniform_r";
-player addItemToUniform "ACRE_PRC148";
+player forceAddUniform "SAM_Crye_M90k_uniform";
+player additemtoUniform "ACRE_PRC148";
 for "_i" from 1 to 4 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
-player addItemToUniform "ACE_EarPlugs";
+player addItemToUniform "Chemlight_green";
 player addVest "SAM_PlateCarrier";
-player addBackpack "SAM_GRG_Backpack_Heat";
+player addBackpack "B_Carryall_cbr";
 player addHeadgear "SAM_HelmetIA_M90k";
+player addGoggles "sam_peltor_bronze";
 
 comment "Add weapons";
 
@@ -27,6 +28,7 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 
+
 comment "Set identity";
-player setFace "GreekHead_A3_07";
-player setSpeaker "Male06ENG";
+player setFace "WhiteHead_07";
+player setSpeaker "Male02ENG";

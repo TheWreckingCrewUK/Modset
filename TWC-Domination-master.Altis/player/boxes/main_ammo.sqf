@@ -1278,11 +1278,11 @@ if (g_class == "USMC_AR3") then {
 		];
 };
 //load availible to swedish section lead only
- if (g_class == "SWD_SL") then {
+ if (g_class == "FRE_SL") then {
        _tmp_weapons =
         [
 			["ACE_Vector",1],
-			["SAM_AK5C",1]
+			["R3F_Famas_G2_DES",1]
 
 			  
 		];
@@ -1290,15 +1290,15 @@ if (g_class == "USMC_AR3") then {
         _tmp_magazines =
         [
             
-             ["SAM_30Rnd_556x45_Pmag",50],
-			 ["SAM_30Rnd_556x45_Pmag_T",50]
+             ["R3F_30Rnd_556x45_FAMAS",50],
+			 ["R3F_30Rnd_556x45_TRACER_FAMAS",50]
 			 
         ];
 		
 		_tmp_items = 
 		[
 			
-			["sam_acco_aimpoint",1],
+			["R3F_AIMPOINT_DES",1],
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
@@ -1306,11 +1306,11 @@ if (g_class == "USMC_AR3") then {
 		];
 };
 //load availible to swedish 2ic only
-if (g_class == "SWD_FTL") then {
+if (g_class == "FRE_FTL") then {
        _tmp_weapons =
         [
            
-			["SAM_AK5C",1],
+			["R3F_Famas_G2_DES",1],
 			["ACE_Vector",1],
 			["UK3CB_BAF_AT4_AT_Launcher",2]
 
@@ -1320,15 +1320,15 @@ if (g_class == "SWD_FTL") then {
         _tmp_magazines =
         [
             
-             ["SAM_30Rnd_556x45_Pmag",50],
-			 ["SAM_30Rnd_556x45_Pmag_T",50]
+             ["R3F_30Rnd_556x45_FAMAS",50],
+			 ["R3F_30Rnd_556x45_TRACER_FAMAS",50]
 			 
         ];
 		
 		_tmp_items = 
 		[
 			
-			["sam_acco_aimpoint",1],
+			["R3F_AIMPOINT_DES",1],
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
@@ -1336,86 +1336,47 @@ if (g_class == "SWD_FTL") then {
 		];
 };
 //load availible to swedish AT only
- if (g_class == "SWD_AT") then {
+ if (g_class == "FRE_RFR") then {
        _tmp_weapons =
         [
            
-			["SAM_AK5C",1],
-            ["sam_grg_m86",1]
+			["R3F_Famas_G2_DES",1],
+            ["UK3CB_BAF_AT4_AT_Launcher",1]
 			  
 		];
        
         _tmp_magazines =
         [
             
-             ["SAM_30Rnd_556x45_Pmag",50],
-			 ["sam_grg_heat",5],
-			 ["sam_grg_he",5],
-			 ["sam_grg_illum",5],
-			 ["sam_grg_smoke",5],
-			 ["SAM_30Rnd_556x45_Pmag_T",50]
+             ["R3F_30Rnd_556x45_FAMAS",50],
+			 ["R3F_30Rnd_556x45_TRACER_FAMAS",50]
 			 
         ];
 		
 		_tmp_items = 
 		[
 			
-			["sam_acco_aimpoint",1],
+			["R3F_AIMPOINT_DES",1],
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["ACRE_PRC148",1],
-			["sam_acco_m86",1]
+			["ACRE_PRC148",1]
 		];
 };
 //load availible to swedish AAT only
- if (g_class == "SWD_AAT") then {
+ if (g_class == "FRE_GRE") then {
        _tmp_weapons =
         [
            
-			["SAM_AK5C",1]
+			["R3F_Famas_G2_M203_DES",1],
+			["UK3CB_BAF_AT4_AP_Launcher",2]
             			  
 		];
        
         _tmp_magazines =
         [
             
-             ["SAM_30Rnd_556x45_Pmag",50],
-			 ["sam_grg_heat",5],
-			 ["sam_grg_he",5],
-			 ["sam_grg_illum",5],
-			 ["sam_grg_smoke",5],
-			 ["SAM_30Rnd_556x45_Pmag_T",50]
-			 
-        ];
-		
-		_tmp_items = 
-		[
-			
-			["sam_acco_aimpoint",1],
-            ["ACE_MapTools",1],
-            ["ACE_fieldDressing",20],
-            ["ACE_morphine",10],
-			["ACRE_PRC148",1],
-			["sam_acco_m86",1]
-		];
-};
-//load availible to swedish grenadier only
- if (g_class == "SWD_GRN") then {
-       _tmp_weapons =
-        [
-           
-			["SAM_AK5C_GRT",1],
-			["ACE_Vector",1],
-			["UK3CB_BAF_AT4_AT_Launcher",2]
-
-			  
-		];
-       
-        _tmp_magazines =
-        [
-            
-             ["SAM_30Rnd_556x45_Pmag",50],
+             ["R3F_30Rnd_556x45_FAMAS",50],
 			 ["1Rnd_HE_Grenade_shell", 40],
 			 ["1Rnd_Smoke_Grenade_shell", 10],
 			 ["1Rnd_SmokeRed_Grenade_shell", 10],
@@ -1423,15 +1384,40 @@ if (g_class == "SWD_FTL") then {
 			 ["1Rnd_SmokeYellow_Grenade_shell", 10],
 			 ["1Rnd_SmokePurple_Grenade_shell", 10],
 			 ["1Rnd_SmokeBlue_Grenade_shell", 10],
-			 ["UGL_FlareWhite_F", 10],
-			 ["SAM_30Rnd_556x45_Pmag_T",50]
+			 ["R3F_30Rnd_556x45_TRACER_FAMAS",50]
 			 
         ];
 		
 		_tmp_items = 
 		[
 			
-			["sam_acco_aimpoint",1],
+			["R3F_AIMPOINT_DES",1],
+            ["ACE_MapTools",1],
+            ["ACE_fieldDressing",20],
+            ["ACE_morphine",10],
+			["ACRE_PRC148",1]
+		];
+};
+//load availible to swedish grenadier only
+ if (g_class == "FRE_AR") then {
+       _tmp_weapons =
+        [
+           
+			["R3F_Minimi",1]
+
+			  
+		];
+       
+        _tmp_magazines =
+        [
+            
+             ["R3F_200Rnd_556x45_MINIMI",50],
+			 ["R3F_200Rnd_556x45_TRACER_MINIMI",50]
+			 
+        ];
+		
+		_tmp_items = 
+		[
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
@@ -1439,12 +1425,12 @@ if (g_class == "SWD_FTL") then {
 		];
 };
 //load availible to swedish AR only
- if (g_class == "SWD_AR") then {
+ if (g_class == "FRE_AT") then {
        _tmp_weapons =
         [
            
-			["SAM_KSP90B",1],
-			["UK3CB_BAF_AT4_AT_Launcher",2]
+			["R3F_Famas_G2_DES",1],
+			["R3F_ERYX",1]
 
 			  
 		];
@@ -1452,15 +1438,16 @@ if (g_class == "SWD_FTL") then {
         _tmp_magazines =
         [
             
-             ["SAM_200Rnd_556x45",50],
-			 ["SAM_200Rnd_556x45_Tracer",50]
+             ["R3F_30Rnd_556x45_FAMAS",50],
+			 ["R3F_30Rnd_556x45_TRACER_FAMAS",50],
+			 ["R3F_ERYX_Mag",5]
 			 
         ];
 		
 		_tmp_items = 
 		[
 			
-			["sam_acco_aimpoint",1],
+			["R3F_AIMPOINT_DES",1],
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
@@ -1468,12 +1455,11 @@ if (g_class == "SWD_FTL") then {
 		];
 };
 //load availible to swedish mg only
- if (g_class == "SWD_MG") then {
+ if (g_class == "FRE_MED") then {
        _tmp_weapons =
         [
            
-			["SAM_KSP58B2_AIM",1],
-			["UK3CB_BAF_AT4_AT_Launcher",2]
+			["R3F_Famas_G2_DES",1]
 
 			  
 		];
@@ -1481,21 +1467,26 @@ if (g_class == "SWD_FTL") then {
         _tmp_magazines =
         [
             
-             ["SAM_99Rnd_762x51",50],
-			 ["SAM_99Rnd_762x51_T",50]
+             ["R3F_30Rnd_556x45_FAMAS",50],
+			 ["R3F_30Rnd_556x45_TRACER_FAMAS",50]
 			 
         ];
 		
 		_tmp_items = 
 		[
 			
-			["sam_acco_aimpoint",1],
+			["R3F_AIMPOINT_DES",1],
+			["ACE_fieldDressing",50],
+			["ACE_morphine",50],
+			["ACE_epinephrine",50],
+			["ACE_bloodIV",50],
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
 			["ACRE_PRC148",1]
 		];
 };
+/*
 //load availbel to swedish medic only
  if (g_class == "SWD_MED") then {
        _tmp_weapons =
@@ -1528,6 +1519,7 @@ if (g_class == "SWD_FTL") then {
 			["ACRE_PRC148",1]
 		];
  };
+ */
 //load availibe to jtac leader only
   if (g_class == "JTAC_SL") then {
                 _tmp_weapons =

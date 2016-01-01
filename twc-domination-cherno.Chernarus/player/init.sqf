@@ -245,52 +245,52 @@ if (!isNil "P36" && {player == P36}) then {
 };
 
 if (!isNil "P37" && {player == P37}) then {
-    g_class = "SWD_SL";
+    g_class = "FRE_SL";
 	g_group = "1";
 	g_unit = "145";
 	g_name = "Delta Squad Leader";
 };
 if (!isNil "P38" && {player == P38}) then {
-    g_class = "SWD_GRN";
+    g_class = "FRE_FTL";
 	g_group = "1";
 	g_unit = "146";
-	g_name = "Delta Grenadier";
+	g_name = "Delta Team Leader";
 };
 if (!isNil "P39" && {player == P39}) then {
-    g_class = "SWD_AR";
+    g_class = "FRE_RFR";
 	g_group = "1";
 	g_unit = "147";
-	g_name = "Delta Automatic Rifleman";
+	g_name = "Delta Rifleman";
 };
 if (!isNil "P40" && {player == P40}) then {
-    g_class = "SWD_MED";
+    g_class = "FRE_GRE";
 	g_group = "1";
 	g_unit = "148";
-	g_name = "Delta Medic";
+	g_name = "Delta Grenadier";
 };
 if (!isNil "P41" && {player == P41}) then {
-    g_class = "SWD_FTL";
+    g_class = "FRE_FTL";
 	g_group = "1";
 	g_unit = "149";
 	g_name = "Delta Fire Team Leader";
 };
 if (!isNil "P42" && {player == P42}) then {
-    g_class = "SWD_AT";
+    g_class = "FRE_AR";
 	g_group = "1";
 	g_unit = "150";
-	g_name = "Delta AT Rifleman";
+	g_name = "Delta Automatic Rifleman";
 };
 if (!isNil "P43" && {player == P43}) then {
-    g_class = "SWD_AAT";
+    g_class = "FRE_AT";
 	g_group = "1";
 	g_unit = "151";
-	g_name = "Delta Assiatant AT Rifleman";
+	g_name = "Delta AT Rifleman";
 };
 if (!isNil "P44" && {player == P44}) then {
-    g_class = "SWD_MG";
+    g_class = "FRE_MED";
 	g_group = "1";
 	g_unit = "152";
-	g_name = "Delta Machine Gunner";
+	g_name = "Delta Medic";
 };
 if (!isNil "P45" && {player == P45}) then {
     g_class = "CRFL";

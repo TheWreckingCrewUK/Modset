@@ -364,7 +364,7 @@ class Mission
 					id=16;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -593,7 +593,7 @@ class Mission
 				items=5;
 				class Item0
 				{
-					position[]={4751.1953,66.343117,664.86768};
+					position[]={4751.1055,66.355896,663.354};
 					azimut=168.451;
 					id=27;
 					side="WEST";
@@ -620,18 +620,18 @@ class Mission
 				class Item2
 				{
 					position[]={4748.0952,66.312912,664.8042};
-					azimut=181.43164;
+					azimut=181.43201;
 					id=29;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					skill=0.60000002;
 					text="p27";
 					description="Echo Grenadier";
 				};
 				class Item3
 				{
-					position[]={4751.0508,66.354958,663.4071};
+					position[]={4751.0327,66.342918,664.74109};
 					azimut=153.513;
 					id=30;
 					side="WEST";
