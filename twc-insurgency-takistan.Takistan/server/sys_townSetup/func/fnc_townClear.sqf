@@ -27,7 +27,7 @@ _Trigger = createTrigger ["EmptyDetector", getMarkerPos _marker];
 _Trigger setTriggerArea [700, 700, 0, false];
 _Trigger setTriggerActivation ["East", "NOT PRESENT", False];
 _Trigger setTriggerTimeout [10,10,10,True];
-_Trigger setTriggerStatements ["this && (str count ((getMarkerPos _marker) nearobjects ['Box_FIA_Wps_F', 500]) == '0')",format["['%1']call twc_townFinished",_marker],""];
+_Trigger setTriggerStatements ["this",format["['%1']call twc_townFinished",_marker],""];
 
 									  
 									  

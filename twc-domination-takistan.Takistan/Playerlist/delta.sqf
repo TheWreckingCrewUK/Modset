@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Delta  Swedish Army", [["Delta Squad Leader", [g_p37, "Squad Leader"], [g_p38, "Grenadier"], [g_p39, "Automatic Rifleman"], [g_p40, "Medic"]], ["Fire Team 2", [g_p41, "2IC"], [g_p42, "AT Rifleman"], [g_p43, "AAT Rifleman"], [g_p44, "Machine Gunner"]]]]				
+g_playerlist = [["Delta  French Army", [["Delta Squad Leader", [g_p37, "Squad Leader"]],["300 Meter Team", [g_p38, "Fire Team 1"], [g_p39, "Rifleman"], [g_p40, "Grenadier"]], ["600 Meter Team", [g_p41, "Fire Team Leader"], [g_p42, "Automatic Rifleman"], [g_p43, "AT Rifleman"], [g_p44, "Medic"]]]]				
 				
 				];
 

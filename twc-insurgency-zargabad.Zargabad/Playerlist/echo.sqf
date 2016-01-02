@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Echo Swedish Army", [["Echo Section Leader", [g_p25, "Section Leader"], [g_p26, "Rifleman"], [g_p27, "Grenadier"], [g_p28, "Automatic Rifleman"],[g_p29, "Medic"]]]]					
+g_playerlist = [["Echo French Army", [["Echo Section Leader", [g_p25, "Section Leader"], [g_p26, "Rifleman"], [g_p27, "Grenadier"], [g_p28, "Automatic Rifleman"],[g_p29, "Medic"]]]]					
 				
 				];
 

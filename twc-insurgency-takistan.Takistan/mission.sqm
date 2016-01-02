@@ -150,7 +150,7 @@ class Mission
 				items=6;
 				class Item0
 				{
-					position[]={6055.8579,82.999252,11497.499};
+					position[]={6055.7251,83.002434,11498.073};
 					azimut=124.972;
 					special="NONE";
 					id=1;
@@ -2582,7 +2582,7 @@ class Mission
 		};
 		class Item35
 		{
-			position[]={8018.0361,610.17365,6216.0903};
+			position[]={7971.3877,503.72421,6523.5771};
 			name="AAGUNC3";
 			type="Empty";
 			colorName="ColorGUER";
