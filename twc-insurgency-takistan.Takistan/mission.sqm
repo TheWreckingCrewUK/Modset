@@ -1988,7 +1988,7 @@ class Mission
 			special="NONE";
 			id=80;
 			side="EMPTY";
-			vehicle="RHS_Mi8AMTSh_UPK23_vvs";
+			vehicle="RHS_Mi8mt_vvsc";
 			leader=1;
 			skill=0.60000002;
 			text="vehicle12";

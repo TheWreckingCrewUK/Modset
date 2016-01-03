@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Air Assets", [["MI 8", [g_p31, "Pilot"],[g_p32, "Crew Chief"]],["Hind", [g_p33, "Pilot"],[g_p34, "Gunner"]]]]				
+g_playerlist = [["Air Assets", [["Mi-8", [g_p31, "Pilot"],[g_p32, "Crew Chief"]],["Mi-24 Hind", [g_p33, "Pilot"],[g_p34, "Gunner"]]]]				
 				
 				];
 
