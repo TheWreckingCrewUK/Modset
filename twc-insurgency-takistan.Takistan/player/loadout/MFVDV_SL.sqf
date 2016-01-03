@@ -12,7 +12,7 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "rhs_uniform_vdv_mflora";
-player addItemToUniform "ACRE_PRC148";
+player addItemToUniform "ACRE_PRC343";
 player addVest "rhs_6b23_ML_rifleman";
 player addBackpack "rhs_assault_umbts";
 player addItemToBackpack "ACRE_PRC117F";
