@@ -15,6 +15,7 @@ if (isServer) then {
 //bunker set and Radar set
 AObunkercount = 0;
 RadioTowerCheck = 0;
+CounterAttackCheck = 0;
 };
 
 hint"AO created";
@@ -24,20 +25,20 @@ _bunkertime = 0;
 _RadioTowerTime = 0;
 
 //units
-_squad = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_msv" >> "rhs_group_rus_msv_infantry_emr" >> "rhs_group_rus_msv_infantry_emr_squad");
-_fireteam = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_msv" >> "rhs_group_rus_msv_infantry_emr" >> "rhs_group_rus_msv_infantry_emr_fireteam");
-_AAteam = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_msv" >> "rhs_group_rus_msv_infantry_emr" >> "rhs_group_rus_msv_infantry_emr_section_AA");
-_btr60squad = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_msv" >> "rhs_group_rus_msv_btr70" >> "rhs_group_rus_msv_btr70_squad_sniper");
-_bmp2 = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_vdv" >> "rhs_group_rus_vdv_bmd1" >> "rhs_group_rus_vdv_bmd1_squad");
-_t72 = "rhs_t72bd_tv";
-_shilka = "rhs_zsu234_aa";
-_Bmp = "rhs_bmp2_vdv";
-_btr = "rhs_btr80_vv";
-_bunkergun = "RHS_NSV_TriPod_MSV";
+_squad = (configfile >> "CfgGroups" >> "East" >> "LOP_TKA" >> "Infantry" >> "LOP_TKA_Rifle_squad");
+_fireteam = (configfile >> "CfgGroups" >> "East" >> "LOP_TKA" >> "Infantry" >> "LOP_TKA_Patrol_section");
+_AAteam = (configfile >> "CfgGroups" >> "East" >> "LOP_TKA" >> "Infantry" >> "LOP_TKA_AT_section");
+_btr60squad = (configfile >> "CfgGroups" >> "East" >> "LOP_TKA" >> "Mechanized" >> "LOP_TKA_Mech_squad_BMP2");
+_bmp2 = (configfile >> "CfgGroups" >> "East" >> "LOP_TKA" >> "Mechanized" >> "LOP_TKA_Mech_squad_BMP2");
+_t72 = "LOP_TKA_T72BB";
+_shilka = "LOP_TKA_ZSU234";
+_Bmp = "LOP_TKA_BMP2";
+_btr = "LOP_TKA_BTR60";
+_bunkergun = "LOP_TKA_NSV_TriPod";
 _AAstatic = "RDS_Igla_AA_pod_AAF";
-_gunner = "rhs_msv_emr_rifleman";
+_gunner = "LOP_TKA_Infantry_Rifleman";
 _radar = "rhs_p37";
-_ruflag = "rhs_Flag_Russia_F";
+_ruflag = "FlagCarrierTakistan_EP1";
 _natoflag = "Flag_NATO_F";
 
 //array select
@@ -204,15 +205,21 @@ for "_i" from 0 to 1 do {
 			_BtrCrew = creategroup EAST;
 			_BtrVeh = [_pos, 180, _btr,_BtrCrew] call BIS_fnc_spawnVehicle;
 			[_BtrCrew, getMarkerpos _CentralMarker, 600] call CBA_fnc_taskPatrol;
+			_btralone = _BtrVeh select 0;
+			_BTRsquad = [[0,0,0], EAST, _squad] call BIS_fnc_spawnGroup;
+		   {_x moveincargo _btralone} foreach units _BTRsquad;
 		};
 };
 
 if isServer then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],random 360,0,[1,400],_bmp2] call SHK_pos;
-	_IFVOne = [_pos, EAST, _bmp2] call BIS_fnc_spawnGroup;
-	[_IFVOne, getmarkerpos _CentralMarker, 600, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
-
+	_pos = [getmarkerpos _CentralMarker,[400,600],random 360,0,[1,400],_btr] call SHK_pos;
+	_BmpCrew = creategroup EAST;
+	_BmpVeh = [_pos, 180, _Bmp,_BmpCrew] call BIS_fnc_spawnVehicle;
+	[_BmpCrew, getMarkerpos _CentralMarker, 600] call CBA_fnc_taskPatrol;
+	_bmpalone = _BmpVeh select 0;
+	_Bmpsquad = [[0,0,0], EAST, _squad] call BIS_fnc_spawnGroup;
+	{_x moveincargo _bmpalone} foreach units _Bmpsquad;
 	};
 
 if isServer then {
@@ -254,10 +261,13 @@ if isServer then {
 
 
 waituntil {AObunkercount == 3 and RadioTowerCheck == 1};
+[_AOname] spawn twc_fnc_Spawncounter;
+waituntil {CounterAttackCheck == 1};
 
    [format["Task%1",TaskIncrease],"succeeded"] call TWC_fnc_UpdateTask;
   _CentralMarker setmarkercolor "Colorblue";
   terminate _AttackHeli;
+  terminate _AttackPlane;
   {if (side _x == east) then
   {_x setDamage 1};} foreach allunits;
   sleep 5;

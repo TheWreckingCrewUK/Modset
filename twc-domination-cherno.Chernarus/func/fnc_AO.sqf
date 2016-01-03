@@ -15,6 +15,7 @@ if (isServer) then {
 //bunker set and Radar set
 AObunkercount = 0;
 RadioTowerCheck = 0;
+CounterAttackCheck = 0;
 };
 
 hint"AO created";
@@ -204,14 +205,21 @@ for "_i" from 0 to 1 do {
 			_BtrCrew = creategroup EAST;
 			_BtrVeh = [_pos, 180, _btr,_BtrCrew] call BIS_fnc_spawnVehicle;
 			[_BtrCrew, getMarkerpos _CentralMarker, 600] call CBA_fnc_taskPatrol;
+			_btralone = _BtrVeh select 0;
+			_BTRsquad = [[0,0,0], EAST, _squad] call BIS_fnc_spawnGroup;
+		    {_x moveincargo _btralone} foreach units _BTRsquad;
 		};
 };
 
 if isServer then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],random 360,0,[1,400],_bmp2] call SHK_pos;
-	_IFVOne = [_pos, EAST, _bmp2] call BIS_fnc_spawnGroup;
-	[_IFVOne, getmarkerpos _CentralMarker, 600, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
+	_pos = [getmarkerpos _CentralMarker,[400,600],random 360,0,[1,400],_btr] call SHK_pos;
+	_BmpCrew = creategroup EAST;
+	_BmpVeh = [_pos, 180, _Bmp,_BmpCrew] call BIS_fnc_spawnVehicle;
+	[_BmpCrew, getMarkerpos _CentralMarker, 600] call CBA_fnc_taskPatrol;
+	_bmpalone = _BmpVeh select 0;
+	_Bmpsquad = [[0,0,0], EAST, _squad] call BIS_fnc_spawnGroup;
+	{_x moveincargo _bmpalone} foreach units _Bmpsquad;
 
 	};
 
@@ -254,6 +262,8 @@ if isServer then {
 
 
 waituntil {AObunkercount == 3 and RadioTowerCheck == 1};
+[_AOname] spawn twc_fnc_Spawncounter;
+waituntil {CounterAttackCheck == 1};
 
    [format["Task%1",TaskIncrease],"succeeded"] call TWC_fnc_UpdateTask;
   _CentralMarker setmarkercolor "Colorblue";

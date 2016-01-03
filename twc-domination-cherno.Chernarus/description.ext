@@ -45,10 +45,6 @@ class CfgFunctions
 		{
 			class Patrol {file = "func\fnc_patrol.sqf";};
 		};
-		class Defend
-		{
-			class Defend {file = "func\fnc_defend.sqf";};
-		};
 		class Attack
 		{
 			class Defend {file = "func\fnc_attack.sqf";};
@@ -76,6 +72,10 @@ class CfgFunctions
 		class Plane
 		{
 			class Plane {file = "func\fnc_plane.sqf";};
+		};
+		class spawnCounter
+		{
+			class spawnCounter {file = "func\fnc_spawnCounter.sqf";};
 		};
 		//class SideMissionArmoured
 		//{
