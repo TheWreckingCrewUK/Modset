@@ -29,12 +29,14 @@ if (isNil "nonQuestionableList") then {
 };
 
 _civilians = ["humanciv1", "humanciv2", "humanciv3"];
+_SquadArray = squadParams player;
+_isMember = (_SquadArray select 0) select 0;
 
-if ((str player) in _civilians && ((count playableUnits) <= 10 || !((getPlayerUID player) in memberIDArray))) then {
+if ((str player) in _civilians && ((count playableUnits) <= 20 || !(_isMember == "TWC")) then {
     ["end4", false, 0] call BIS_fnc_endMission;
 };
 
-if ((str player) in _civilians && ((count playableUnits) >= 10 && ((getPlayerUID player) in memberIDArray))) then {
+if ((str player) in _civilians && ((count playableUnits) >= 20 && _isMember == "TWC") then {
     execVM "client\sys_humanciv\init.sqf";
 };
 
@@ -91,13 +93,14 @@ sleep 5;
 
 
 _pilots = ["p31", "p32"];
-_apachepilots = ["p33", "p34"];
+_apachepilot = ["p33","p34"];
+
 
 if ((str player) in _pilots && (count playableUnits) < 5) then {
     ["end4", false, 0] call BIS_fnc_endMission;
 };
 
-if ((str player) in _apachepilots && (count playableUnits) <= 13) then {
+if ((str player) in _apachepilots && (count playableUnits) <= 15) then {
     ["end7", false, 0] call BIS_fnc_endMission;
 };
 

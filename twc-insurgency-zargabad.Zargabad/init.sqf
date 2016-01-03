@@ -106,16 +106,18 @@ sleep 5;
 _pilots = ["p21", "p22"];
 _apachepilots = ["p23", "p24"];
 _humanCivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
+_SquadArray = squadParams player;
+_isMember = (_SquadArray select 0) select 0;
 
 if ((str player) in _pilots && (count playableUnits) < 5) then {
     ["end4", false, 0] call BIS_fnc_endMission;
 };
 
-if ((str player) in _apachepilots && (count playableUnits) <= 13) then {
+if ((str player) in _apachepilots && (count playableUnits) <= 15) then {
     ["end7", false, 0] call BIS_fnc_endMission;
 };
 
-if ((str player) in _humanCivs && ((count playableUnits) <= 15 || !((getPlayerUID player) in memberIDArray || (getPlayerUID player) in DeadInsurgents))) then {
+if ((str player) in _humanCivs && ((count playableUnits) <= 15 || !(_isMember == "TWC") || (getPlayerUID player) in DeadInsurgents))) then {
     ["end6", false, 0] call BIS_fnc_endMission;
 };
 
