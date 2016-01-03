@@ -35,7 +35,8 @@ class Mission
 		"lop_faction_am",
 		"A3_Soft_F_EPC_Truck_03",
 		"ace_ballistics",
-		"lop_faction_tak_civ"
+		"lop_faction_tak_civ",
+		"A3_Characters_F_Gamma"
 	};
 	addOnsAuto[]=
 	{
@@ -43,6 +44,7 @@ class Mission
 		"a3_modules_f_curator_curator",
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
+		"A3_Characters_F_Gamma",
 		"ace_medical",
 		"ace_map",
 		"ace_cargo",
@@ -581,7 +583,7 @@ class Mission
 					special="NONE";
 					id=31;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_M_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -595,7 +597,7 @@ class Mission
 					special="NONE";
 					id=32;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_M_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="p32";
@@ -616,7 +618,7 @@ class Mission
 					special="NONE";
 					id=33;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -630,7 +632,7 @@ class Mission
 					special="NONE";
 					id=34;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="p34";
@@ -651,7 +653,7 @@ class Mission
 					special="NONE";
 					id=35;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_PG_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -665,7 +667,7 @@ class Mission
 					special="NONE";
 					id=36;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_PG_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="p36";
@@ -678,7 +680,7 @@ class Mission
 					special="NONE";
 					id=37;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_PG_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="p37";
@@ -1903,7 +1905,6 @@ class Mission
 					id=75;
 					side="CIV";
 					vehicle="LOP_Tak_Civ_Man_01";
-					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="humanciv1";
@@ -1924,7 +1925,6 @@ class Mission
 					id=76;
 					side="CIV";
 					vehicle="LOP_Tak_Civ_Man_01";
-					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="humanciv2";
@@ -1945,7 +1945,6 @@ class Mission
 					id=77;
 					side="CIV";
 					vehicle="LOP_Tak_Civ_Man_01";
-					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="humanciv3";

@@ -3,6 +3,7 @@ execVM "Zues-Fakematty.sqf";
 execVM "Zues-Harry.sqf";
 execVM "Zues-jayman.sqf";
 execVM "SHK_pos\shk_pos_init.sqf";
+execVM "TWC\init.sqf";
 
 if(!hasInterface && !isDedicated) then {
    execVM "hc\init.sqf";
