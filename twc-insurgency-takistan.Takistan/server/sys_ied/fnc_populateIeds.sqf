@@ -27,6 +27,7 @@ _fnc_filterRoadPositions = {
     _position = getPos _x;
     {
         // Oriented Bounding Box check
+		_x setMarkerAlpha 0;
         _min = getMarkerPos _x vectorAdd ((getMarkerSize _x + [0]) vectorMultiply -1);
         _max = getMarkerPos _x vectorAdd (getMarkerSize _x + [0]);
         _relativePosition = [getMarkerPos _x, _position, markerDir _x] call CBA_fnc_vectRotate2D;
