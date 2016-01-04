@@ -2,7 +2,7 @@ while {(side player) == civilian} do {
 
 	civKill = player addMPEventHandler ["MPKilled", {[_this select 0, _this select 1] spawn InsP_fnc_civKill;}];
 
-	waitUntil {player hasWeapon "rhs_weap_rpg7_pgo" || secondaryWeapon player == "hgun_Rook40_F" || primaryWeapon player == "rhs_weap_svdp_wd" || primaryWeapon player == "rhs_weap_ak74m" || player hasWeapon "rhs_weap_pkp" || "APERSTripMin_Wire_Mag" in (magazines player) || "IEDLandSmall_Remote_Mag" in (magazines player) || "IEDLandBig_Remote_Mag" in (magazines player) || "IEDUrbanSmall_Remote_Mag" in (magazines player) || "IEDUrbanBig_Remote_Mag" in (magazines player)};
+	waitUntil {!(player primaryweapon == "") || !(player secondaryweapon == "")  || "APERSTripMin_Wire_Mag" in (magazines player) || "IEDLandSmall_Remote_Mag" in (magazines player) || "IEDLandBig_Remote_Mag" in (magazines player) || "IEDUrbanSmall_Remote_Mag" in (magazines player) || "IEDUrbanBig_Remote_Mag" in (magazines player)};
 
 	cutText ["Receiving...", "BLACK", 0.001];
 
