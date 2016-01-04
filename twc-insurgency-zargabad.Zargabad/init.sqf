@@ -2,6 +2,8 @@ execVM "zues.sqf";
 execVM "zues-Fakematty.sqf";
 execVM "zues-Harry.sqf";
 execVM "zues-jayman.sqf";
+execVM "TWC\init.sqf";
+
 if(!hasInterface && !isDedicated) then {
    execVM "hc\init.sqf";
 };
@@ -9,6 +11,7 @@ if(!hasInterface && !isDedicated) then {
 if(isDedicated || isServer) then{
    execVM "hc\init.sqf";
 };
+
 
 waitUntil {!isNull player};
 waitUntil {player == player};
