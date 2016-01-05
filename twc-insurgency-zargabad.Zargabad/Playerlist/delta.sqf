@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Delta  British Army", [["Delta Squad Leader", [g_p16, "Squad Leader"], [g_p17, "Rifleman"], [g_p18, "Grenadier"], [g_p19, "Automatic Rifleman"], [g_p20, "Medic"]]]]				
+g_playerlist = [["Delta ANA", [["Delta Squad Leader", [g_p16, "Squad Leader"], [g_p17, "Rifleman"], [g_p18, "Grenadier"], [g_p19, "Automatic Rifleman"], [g_p20, "Medic"]]]]				
 				
 				];
 

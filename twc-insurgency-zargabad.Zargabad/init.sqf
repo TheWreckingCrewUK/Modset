@@ -1,4 +1,8 @@
-execVM "zues.sqf";
+execVM "Zues.sqf";
+execVM "Zues-Fakematty.sqf";
+execVM "Zues-Harry.sqf";
+execVM "Zues-jayman.sqf";
+execVM "SHK_pos\shk_pos_init.sqf";
 if(!hasInterface && !isDedicated) then {
    execVM "hc\init.sqf";
 };
@@ -99,7 +103,7 @@ _defuseAction = [
 
 ["IEDLandBig_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
 ["IEDLandSmall_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
-/*
+
 cutText ["Receiving...", "BLACK", .001];
 
 titleText ["The Wrecking Crew","PLAIN DOWN"];
@@ -109,7 +113,7 @@ sleep 5;
 titleText ["Insurgency Plus","PLAIN DOWN"];
 titleFadeOut 7;
 sleep 5;
-*/
+
 
 _pilots = ["p21", "p22"];
 _apachepilots = ["p23", "p24"];

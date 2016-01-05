@@ -413,12 +413,12 @@ class Mission
 				class Item4
 				{
 					position[]={4770.5918,66.487587,663.91174};
-					azimut=178.77434;
+					azimut=178.774;
 					special="NONE";
 					id=20;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					skill=0.60000002;
 					text="p20";
 					description="Delta Medic";
@@ -624,7 +624,7 @@ class Mission
 					id=29;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="p27";
 					description="Echo Grenadier";
