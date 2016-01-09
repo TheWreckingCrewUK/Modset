@@ -36,7 +36,8 @@ class Mission
 		"A3_Soft_F_EPC_Truck_03",
 		"ace_ballistics",
 		"lop_faction_tak_civ",
-		"A3_Characters_F_Gamma"
+		"A3_Characters_F_Gamma",
+		"cup_takistan_config"
 	};
 	addOnsAuto[]=
 	{
@@ -73,7 +74,7 @@ class Mission
 		"A3_Structures_F_Mil_Fortification",
 		"A3_Soft_F_EPC_Truck_03",
 		"ace_ballistics",
-		"aia_takistan_config"
+		"cup_takistan_config"
 	};
 	randomSeed=193339;
 	class Intel
@@ -89,7 +90,6 @@ class Mission
 		forecastLightnings=0.099999994;
 		year=2009;
 		day=28;
-		hour=16;
 		minute=20;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
@@ -696,7 +696,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5604.6929,92.549561,11562.878};
+					position[]={5605.6304,92.864197,11565.691};
 					class args
 					{
 						items=4;
@@ -1614,48 +1614,30 @@ class Mission
 		};
 		class Item28
 		{
-			side="LOGIC";
+			side="GUER";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={5605.1743,93.124893,11568.319};
-					class args
-					{
-						items=4;
-						class Item0
-						{
-							value="76561198051847668";
-							parentCls="ModuleCurator_F";
-							typeName="Owner";
-						};
-						class Item1
-						{
-							value="";
-							parentCls="ModuleCurator_F";
-							typeName="Name";
-						};
-						class Item2
-						{
-							value="2";
-							parentCls="ModuleCurator_F";
-							typeName="Addons";
-						};
-						class Item3
-						{
-							value="0";
-							parentCls="ModuleCurator_F";
-							typeName="Forced";
-						};
-					};
+					position[]={8326.8516,232.60698,11140.321};
+					placement=1000;
 					id=58;
-					side="LOGIC";
-					vehicle="ModuleCurator_F";
+					side="GUER";
+					vehicle="LOP_AM_Infantry_Rifleman";
 					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					text="Harry";
+					skill=0.40000001;
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeVest this;  removeBackpack this;  removeGoggles this;      for ""_i"" from 1 to 5 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_morphine"";};  this addItemToUniform ""rhs_30Rnd_545x39_AK"";  this addBackpack ""rhs_rpg_empty"";  this addItemToBackpack ""rhs_mag_9k38_rocket"";  this addHeadgear ""LOP_H_Turban_mask"";    this addWeapon ""rhs_weap_ak74m_desert_npz"";  this addWeapon ""rhs_weap_igla"";    this linkItem ""ItemRadioAcreFlagged"";";
+				};
+				class Item1
+				{
+					position[]={8329.8516,232.19061,11135.321};
+					placement=1000;
+					id=59;
+					side="GUER";
+					vehicle="LOP_AM_Infantry_Rifleman";
+					skill=0.40000001;
+					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeVest this;  removeBackpack this;  removeGoggles this;      for ""_i"" from 1 to 5 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_morphine"";};  this addItemToUniform ""rhs_30Rnd_545x39_AK"";  this addBackpack ""rhs_rpg_empty"";  this addItemToBackpack ""rhs_mag_9k38_rocket"";  this addHeadgear ""LOP_H_Turban_mask"";    this addWeapon ""rhs_weap_ak74m_desert_npz"";  this addWeapon ""rhs_weap_igla"";    this linkItem ""ItemRadioAcreFlagged"";";
 				};
 			};
 		};
@@ -1667,9 +1649,9 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={8326.8516,232.60698,11140.321};
+					position[]={11636.238,222.37047,9167.9297};
 					placement=1000;
-					id=59;
+					id=60;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					leader=1;
@@ -1678,9 +1660,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={8329.8516,232.19061,11135.321};
+					position[]={11639.238,222.60985,9162.9297};
 					placement=1000;
-					id=60;
+					id=61;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					skill=0.40000001;
@@ -1696,9 +1678,9 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={11636.238,222.37047,9167.9297};
+					position[]={11608.952,96.814552,11893.05};
 					placement=1000;
-					id=61;
+					id=62;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					leader=1;
@@ -1707,9 +1689,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={11639.238,222.60985,9162.9297};
+					position[]={11611.952,96.288078,11888.05};
 					placement=1000;
-					id=62;
+					id=63;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					skill=0.40000001;
@@ -1725,9 +1707,9 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={11608.952,96.814552,11893.05};
+					position[]={4310.1309,441.19531,7032.8545};
 					placement=1000;
-					id=63;
+					id=64;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					leader=1;
@@ -1736,9 +1718,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={11611.952,96.288078,11888.05};
+					position[]={4313.1309,438.1138,7027.8545};
 					placement=1000;
-					id=64;
+					id=65;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					skill=0.40000001;
@@ -1754,9 +1736,9 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={4310.1309,441.19531,7032.8545};
+					position[]={3049.0605,60.510437,9935.8408};
 					placement=1000;
-					id=65;
+					id=66;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					leader=1;
@@ -1765,9 +1747,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={4313.1309,438.1138,7027.8545};
+					position[]={3052.0605,60.446705,9930.8408};
 					placement=1000;
-					id=66;
+					id=67;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					skill=0.40000001;
@@ -1783,9 +1765,9 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={3049.0605,60.510437,9935.8408};
+					position[]={1778.1007,147.29361,11899.371};
 					placement=1000;
-					id=67;
+					id=68;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					leader=1;
@@ -1794,9 +1776,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={3052.0605,60.446705,9930.8408};
+					position[]={1781.1007,147.69193,11894.371};
 					placement=1000;
-					id=68;
+					id=69;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					skill=0.40000001;
@@ -1812,9 +1794,9 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={1778.1007,147.29361,11899.371};
+					position[]={6774.9712,120.29533,8904.2451};
 					placement=1000;
-					id=69;
+					id=70;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					leader=1;
@@ -1823,9 +1805,9 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={1781.1007,147.69193,11894.371};
+					position[]={6777.9712,120.3784,8899.2451};
 					placement=1000;
-					id=70;
+					id=71;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					skill=0.40000001;
@@ -1841,38 +1823,9 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={6774.9712,120.29533,8904.2451};
-					placement=1000;
-					id=71;
-					side="GUER";
-					vehicle="LOP_AM_Infantry_Rifleman";
-					leader=1;
-					skill=0.40000001;
-					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeVest this;  removeBackpack this;  removeGoggles this;      for ""_i"" from 1 to 5 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_morphine"";};  this addItemToUniform ""rhs_30Rnd_545x39_AK"";  this addBackpack ""rhs_rpg_empty"";  this addItemToBackpack ""rhs_mag_9k38_rocket"";  this addHeadgear ""LOP_H_Turban_mask"";    this addWeapon ""rhs_weap_ak74m_desert_npz"";  this addWeapon ""rhs_weap_igla"";    this linkItem ""ItemRadioAcreFlagged"";";
-				};
-				class Item1
-				{
-					position[]={6777.9712,120.3784,8899.2451};
-					placement=1000;
-					id=72;
-					side="GUER";
-					vehicle="LOP_AM_Infantry_Rifleman";
-					skill=0.40000001;
-					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeVest this;  removeBackpack this;  removeGoggles this;      for ""_i"" from 1 to 5 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_morphine"";};  this addItemToUniform ""rhs_30Rnd_545x39_AK"";  this addBackpack ""rhs_rpg_empty"";  this addItemToBackpack ""rhs_mag_9k38_rocket"";  this addHeadgear ""LOP_H_Turban_mask"";    this addWeapon ""rhs_weap_ak74m_desert_npz"";  this addWeapon ""rhs_weap_igla"";    this linkItem ""ItemRadioAcreFlagged"";";
-				};
-			};
-		};
-		class Item36
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=2;
-				class Item0
-				{
 					position[]={10102.938,473.57339,7287.417};
 					placement=1000;
-					id=73;
+					id=72;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					leader=1;
@@ -1883,11 +1836,31 @@ class Mission
 				{
 					position[]={10105.938,474.56702,7282.417};
 					placement=1000;
-					id=74;
+					id=73;
 					side="GUER";
 					vehicle="LOP_AM_Infantry_Rifleman";
 					skill=0.40000001;
 					init="removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeVest this;  removeBackpack this;  removeGoggles this;      for ""_i"" from 1 to 5 do {this addItemToUniform ""ACE_fieldDressing"";};  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_morphine"";};  this addItemToUniform ""rhs_30Rnd_545x39_AK"";  this addBackpack ""rhs_rpg_empty"";  this addItemToBackpack ""rhs_mag_9k38_rocket"";  this addHeadgear ""LOP_H_Turban_mask"";    this addWeapon ""rhs_weap_ak74m_desert_npz"";  this addWeapon ""rhs_weap_igla"";    this linkItem ""ItemRadioAcreFlagged"";";
+				};
+			};
+		};
+		class Item36
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8148.0884,296.04001,2027.9663};
+					azimut=154.767;
+					special="NONE";
+					id=74;
+					side="CIV";
+					vehicle="LOP_Tak_Civ_Man_01";
+					leader=1;
+					skill=0.60000002;
+					text="humanciv1";
 				};
 			};
 		};
@@ -1899,7 +1872,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8148.0884,296.04001,2027.9663};
+					position[]={8150.5566,296.04001,2034.771};
 					azimut=154.767;
 					special="NONE";
 					id=75;
@@ -1907,7 +1880,7 @@ class Mission
 					vehicle="LOP_Tak_Civ_Man_01";
 					leader=1;
 					skill=0.60000002;
-					text="humanciv1";
+					text="humanciv2";
 				};
 			};
 		};
@@ -1919,7 +1892,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8150.5566,296.04001,2034.771};
+					position[]={8143.0186,296.04001,2032.5699};
 					azimut=154.767;
 					special="NONE";
 					id=76;
@@ -1927,27 +1900,28 @@ class Mission
 					vehicle="LOP_Tak_Civ_Man_01";
 					leader=1;
 					skill=0.60000002;
-					text="humanciv2";
+					text="humanciv3";
 				};
 			};
 		};
 		class Item39
 		{
-			side="CIV";
+			side="LOGIC";
 			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={8143.0186,296.04001,2032.5699};
-					azimut=154.767;
+					position[]={5982.6865,83.040001,11526.913};
 					special="NONE";
 					id=77;
-					side="CIV";
-					vehicle="LOP_Tak_Civ_Man_01";
+					side="LOGIC";
+					vehicle="HeadlessClient_F";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="humanciv3";
+					text="HC";
+					description="Headless Client";
 				};
 			};
 		};
@@ -2775,7 +2749,7 @@ class Mission
 			interruptable=1;
 			type="END5";
 			age="UNKNOWN";
-			expCond="InsP_ammoCaches == 4;";
+			expCond="InsP_ammoCaches == 3;";
 			class Effects
 			{
 			};
@@ -2803,11 +2777,12 @@ class Intro
 {
 	addOns[]=
 	{
-		"aia_takistan_config"
+		"aia_takistan_config",
+		"cup_takistan_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_takistan_config"
+		"cup_takistan_config"
 	};
 	randomSeed=15747281;
 	class Intel
@@ -2832,11 +2807,12 @@ class OutroWin
 {
 	addOns[]=
 	{
-		"aia_takistan_config"
+		"aia_takistan_config",
+		"cup_takistan_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_takistan_config"
+		"cup_takistan_config"
 	};
 	randomSeed=12816806;
 	class Intel
@@ -2861,11 +2837,12 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"aia_takistan_config"
+		"aia_takistan_config",
+		"cup_takistan_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_takistan_config"
+		"cup_takistan_config"
 	};
 	randomSeed=4746203;
 	class Intel
