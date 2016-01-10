@@ -18,7 +18,7 @@ _timer = 240;  // time in seconds until box is refilled.
  
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["ACE_Flashlight_XL50", 1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2]];
+_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["ACE_Flashlight_XL50", 1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2],["TWC_Aidpack",5]];
 
 _tmp_weapons = [];
 _tmp_magazines = [];
@@ -28,13 +28,13 @@ _tmp_items = [];
 if (g_class == "ANA_SL") then {
                 _tmp_weapons =
                 [
-                                ["CUP_arifle_M16A2",1]
+                                ["rhs_weap_m16a4_carryhandle_grip",1]
 
                 ];
 
                 _tmp_magazines =
                 [
-                                ["CUP_30Rnd_556x45_Stanag",50]
+                                ["30Rnd_556x45_Stanag",50]
 
 
                 ];
@@ -58,15 +58,13 @@ if (g_class == "ANA_SL") then {
  if (g_class == "ANA_RF") then {
         _tmp_weapons =
         [
-								["CUP_arifle_M16A2",1],
-								["rhs_weap_rpg7",1]
+								["rhs_weap_m16a4_carryhandle_grip",1]
         ];
 
         _tmp_magazines =
         [
 								
-								["CUP_30Rnd_556x45_Stanag",50],
-								["rhs_rpg7_pg7vl_mag",15]
+								["30Rnd_556x45_Stanag",50]
 			];
 
 		_tmp_items = [
@@ -86,8 +84,8 @@ if (g_class == "ANA_SL") then {
  if (g_class == "ANA_GRN") then {
         _tmp_weapons =
         [
-            ["CUP_arifle_M16A2_GL",1]
-			
+            ["rhs_weap_m16a4_carryhandle_grip",1],
+			["rhs_weap_rpg7",1]
 
 		];
 
@@ -95,13 +93,8 @@ if (g_class == "ANA_SL") then {
         [
             
 				["30Rnd_556x45_Stanag",50],
-				["CUP_1Rnd_HE_M203",30],
-				["CUP_FlareWhite_M203",10],
-				["CUP_1Rnd_Smoke_M203",10],
-				["CUP_1Rnd_SmokeRed_M203",10],
-                ["CUP_1Rnd_SmokeGreen_M203",10],
-				["CUP_1Rnd_SmokeYellow_M203",10]
-				];
+				["rhs_rpg7_pg7vl_mag",15]
+        ];
 
 		_tmp_items =
 		[
@@ -141,13 +134,13 @@ if (g_class == "ANA_SL") then {
  if (g_class == "ANA_MED") then {
        _tmp_weapons =
         [
-            ["CUP_arifle_M16A2",1]
+            ["rhs_weap_m16a4_carryhandle_grip",1]
 
 		];
 
         _tmp_magazines =
         [
-            ["CUP_30Rnd_556x45_Stanag",50]
+            ["30Rnd_556x45_Stanag",50]
         ];
 
 		_tmp_items =
