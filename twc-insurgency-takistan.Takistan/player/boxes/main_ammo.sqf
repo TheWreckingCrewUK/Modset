@@ -18,7 +18,7 @@ _timer = 240;  // time in seconds until box is refilled.
  
 _weapons = [];
 _magazines = [["rhs_mag_nspd",5], ["rhs_mag_nspn_yellow",5], ["rhs_mag_nspn_red",5], ["rhs_mag_nspn_green",5], ["rhs_mag_rdg2_white",5], ["rhs_mag_rdg2_black",5], ["rhs_mag_rgd5",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["ACE_Flashlight_XL50", 1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2]];
+_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["ACE_Flashlight_XL50", 1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2],["TWC_Aidpack",5]];
 
 _tmp_weapons = [];
 _tmp_magazines = [];

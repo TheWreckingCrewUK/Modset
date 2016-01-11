@@ -32,5 +32,5 @@ player linkItem "ItemWatch";
 comment "Set identity";
 player setFace "GreekHead_A3_01";
 player setSpeaker "ACE_NoVoice";
-} else {};
+};
 if(true) exitWith{};
