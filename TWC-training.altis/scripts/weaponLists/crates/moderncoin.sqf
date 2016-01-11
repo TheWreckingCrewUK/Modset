@@ -62,7 +62,6 @@ _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_200Rnd_T",25];
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd_T",25];
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd",25];
 
-
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_17Rnd_9mm",20];
 
 _RangeBoxAT AddMagazineCargoGlobal ["tf47_at4_m_HEDP",20];
