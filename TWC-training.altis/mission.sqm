@@ -32440,7 +32440,7 @@ class Mission
 			special="NONE";
 			id=3231;
 			side="EMPTY";
-			vehicle="UK3CB_BAF_Wildcat_AH1_CAS_6A";
+			vehicle="UK3CB_BAF_Wildcat_AH1_CAS_8A";
 			leader=1;
 			skill=0.60000002;
 			init="veh = [this, 15] execVM ""vehicle.sqf""";
@@ -32714,7 +32714,7 @@ class Mission
 			special="NONE";
 			id=3258;
 			side="EMPTY";
-			vehicle="UK3CB_BAF_Wildcat_AH1_CAS_6A";
+			vehicle="UK3CB_BAF_Wildcat_AH1_CAS_8A";
 			leader=1;
 			skill=0.60000002;
 			init="veh = [this, 15] execVM ""vehicle.sqf""";
