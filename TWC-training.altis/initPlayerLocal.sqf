@@ -1,5 +1,7 @@
 Everyone = [p1,p2,p3,p4,p5];
+publicVariable "Everyone";
 Trainers = [p1,p2,p3,p4,p5];
+publicVariable "Trainers";
 
 if (player in Trainers) then {
 	execVM "scripts\weaponLists\playerLoadouts\modernTrainer.sqf";
@@ -13,9 +15,9 @@ if (player in Trainers) then {
 	_Telebomb = ['TeleALL','Teleport BombingRange','', {player setpos (getMarkerPos "bomb");},{true}] call ace_interact_menu_fnc_createAction;
 	
 	TWCeraListAction = ["era","TWC ERA List","", {},{true}] call ace_interact_menu_fnc_createAction;
-	_modern = ['TWCera','TWC modern','', {execVM "scripts\weaponLists\playerLoadouts\moderntrainer.sqf";execVM "scripts\weaponLists\crates\modern.sqf";execVM "scripts\weaponLists\loadouts\modern.sqf";},{true}] call ace_interact_menu_fnc_createAction;
-	_moderncoin = ['TWCera','TWC moderncoin','', {execVM "scripts\weaponLists\playerLoadouts\moderntrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\Modern.sqf";execVM "scripts\weaponLists\crates\moderncoin.sqf";},{true}] call ace_interact_menu_fnc_createAction;
-	_coldwar = ['TWCera','TWC coldwar ','', {execVM "scripts\weaponLists\playerLoadouts\coldwartrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\coldwar.sqf";execVM "scripts\weaponLists\crates\coldwar.sqf";},{true}] call ace_interact_menu_fnc_createAction;
+	_modern = ['TWCera','TWC Modern','', {execVM "scripts\weaponLists\playerLoadouts\moderntrainer.sqf";execVM "scripts\weaponLists\crates\modern.sqf";execVM "scripts\weaponLists\playerLoadouts\modern.sqf";},{true}] call ace_interact_menu_fnc_createAction;
+	_moderncoin = ['TWCera','TWC Moderncoin','', {execVM "scripts\weaponLists\playerLoadouts\moderntrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\Modern.sqf";execVM "scripts\weaponLists\crates\moderncoin.sqf";},{true}] call ace_interact_menu_fnc_createAction;
+	_coldwar = ['TWCera','TWC Coldwar ','', {execVM "scripts\weaponLists\playerLoadouts\coldwartrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\coldwar.sqf";execVM "scripts\weaponLists\crates\coldwar.sqf";},{true}] call ace_interact_menu_fnc_createAction;
 	
 	[player, 1, ["ACE_SelfActions"], teleportListAction] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _TeleAir] call ace_interact_menu_fnc_addActionToObject;

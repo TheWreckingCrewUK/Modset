@@ -36,6 +36,7 @@ clearitemCargoGlobal _Radio;
 
 //Range Box
 //Weapons
+_RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L128A1",20];
 _RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L7A2",20];
 _RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L85A2_RIS",20];
 _RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L110A2",20];
@@ -46,6 +47,9 @@ _RangeBoxAT AddWeaponCargoGlobal ["tf47_at4_HEDP",20];
 _RangeBoxAT AddWeaponCargoGlobal ["HAFM_LAW",20];
 
 //Ammo
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Pellets",10];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Slugs",10];
+
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",10];
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",10];
 
@@ -71,6 +75,7 @@ _RangeBoxAT additemcargoglobal ["tf47_optic_m3maaws",20];
 
 _RangeBoxRifle additemcargoglobal ["UK3CB_BAF_SpecterLDS_Dot_3D",20];
 _RangeBoxRifle additemcargoglobal ["UK3CB_BAF_TA648_308",20];
+_RangeBoxRifle additemcargoglobal ["UK3CB_BAF_Eotech",20];
 
 //Parachute
 _Parachute AddBackPackCargoGlobal ["ACE_NonSteerableParachute",40];

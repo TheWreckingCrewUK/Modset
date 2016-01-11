@@ -98,7 +98,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={23599.314,3.1900001,18468.541};
+					position[]={23646.803,3.1900001,18509.18};
 					special="NONE";
 					id=0;
 					side="WEST";
