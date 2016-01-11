@@ -5,7 +5,7 @@ publicVariable "Trainers";
 
 if (player in Trainers) then {
 	execVM "scripts\weaponLists\playerLoadouts\modernTrainer.sqf";
-	_markerList = ['markerList','Area Markers List','', {hint format ["%1\n%2\n%3\n%4\n%5\n%6\n%7",'rifleRange','atArea','cqbArea','sniperRange','vehicleTraining','hqArea','battleship'];},{true}] call ace_interact_menu_fnc_createAction;
+	_markerList = ['markerList','Area Markers List','', {hint format ["%1\n%2\n%3\n%4\n%5\n%6\n%7\n%8",'rifleRange','atArea','cqbArea','sniperRange','vehicleTraining','hqArea','battleship','vehicleTraining'];},{true}] call ace_interact_menu_fnc_createAction;
 	[player, 1, ["ACE_SelfActions"], _markerList] call ace_interact_menu_fnc_addActionToObject;
 	teleportListAction = ["Teleport","Teleport List","", {},{true}] call ace_interact_menu_fnc_createAction;
 	_TeleAir = ['TeleALL','Teleport Airfield','', {player setPos (getMarkerPos "airfield");},{true}] call ace_interact_menu_fnc_createAction;
@@ -13,6 +13,7 @@ if (player in Trainers) then {
 	_TeleBase = ['TeleALL','Teleport base','', {player setpos (getMarkerPos "hqarea");},{true}] call ace_interact_menu_fnc_createAction;
 	_TeleLHD = ['TeleALL','Teleport LHD','', {player setpos (getMarkerPos "lhd");},{true}] call ace_interact_menu_fnc_createAction;
 	_Telebomb = ['TeleALL','Teleport BombingRange','', {player setpos (getMarkerPos "bomb");},{true}] call ace_interact_menu_fnc_createAction;
+	_Televehicle = ['TeleALL','Teleport VehicleRange','', {player setpos (getMarkerPos "vehicleTraining");},{true}] call ace_interact_menu_fnc_createAction;
 	
 	TWCeraListAction = ["era","TWC ERA List","", {},{true}] call ace_interact_menu_fnc_createAction;
 	_modern = ['TWCera','TWC Modern','', {execVM "scripts\weaponLists\playerLoadouts\moderntrainer.sqf";execVM "scripts\weaponLists\crates\modern.sqf";execVM "scripts\weaponLists\playerLoadouts\modern.sqf";},{true}] call ace_interact_menu_fnc_createAction;
@@ -25,6 +26,7 @@ if (player in Trainers) then {
 	[player, 1, ["ACE_SelfActions","Teleport"], _TeleBase] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _TeleLHD] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _Telebomb] call ace_interact_menu_fnc_addActionToObject;
+	[player, 1, ["ACE_SelfActions","Teleport"], _Televehicle] call ace_interact_menu_fnc_addActionToObject;
 	
 	[player, 1, ["ACE_SelfActions"], TWCeraListAction] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","era"], _modern] call ace_interact_menu_fnc_addActionToObject;
