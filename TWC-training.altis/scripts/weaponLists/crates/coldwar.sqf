@@ -43,7 +43,7 @@ _RangeBoxAT AddWeaponCargoGlobal ["tf47_m3maaws",20];
 _RangeBoxAT AddWeaponCargoGlobal ["HAFM_LAW",20];
 
 //Ammo
-_RangeBoxRifle AddMagazineCargo ["UK3CB_BAF_75Rnd_T"40];
+_RangeBoxRifle AddMagazineCargo ["UK3CB_BAF_75Rnd_T",40];
 _RangeBoxRifle AddMagazineCargo ["UK3CB_BAF_75Rnd",40];
 _RangeBoxRifle AddMagazineCargo ["hlc_20Rnd_762x51_B_fal",65];
 _RangeBoxRifle AddMagazineCargo ["hlc_20Rnd_762x51_T_fal",65];
@@ -57,7 +57,7 @@ _RangeBoxAT AddMagazineCargo ["tf47_m3maaws_ILLUM",40];
 _RangeBoxAT additemcargoglobal ["tf47_optic_m3maaws",20];
 
 //Parachute
-_RangeBox AddBackPackCargoGlobal ["ACE_NonSteerableParachute",40];
+_Parachute AddBackPackCargoGlobal ["ACE_NonSteerableParachute",40];
 
 //Radio Box
-_RangeBox AddBackPackCargoGlobal ["tf_rt1523g_green",40];
+_Radio AddItemCargoGlobal ["ACRE_PRC117F",40];

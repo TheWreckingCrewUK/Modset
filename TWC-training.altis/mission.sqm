@@ -98,7 +98,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={23615.219,3.1900001,18466.461};
+					position[]={23599.314,3.1900001,18468.541};
 					special="NONE";
 					id=0;
 					side="WEST";
@@ -166,7 +166,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={23597.023,3.1900001,18461.707};
+					position[]={23571.65,3.1900001,18468.592};
 					special="NONE";
 					id=2;
 					side="WEST";
@@ -187,7 +187,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={23577.121,3.1900001,18459.512};
+					position[]={23588.863,3.1900001,18468.283};
 					special="NONE";
 					id=3;
 					side="WEST";
@@ -208,7 +208,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={23583.305,3.1900001,18460.764};
+					position[]={23583.494,3.1900001,18468.449};
 					special="NONE";
 					id=4;
 					side="WEST";
@@ -229,7 +229,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={23591.211,3.1900001,18461.643};
+					position[]={23577.629,3.1900001,18468.523};
 					special="NONE";
 					id=5;
 					side="WEST";
@@ -433,7 +433,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3271;
+		items=3273;
 		class Item0
 		{
 			position[]={23599.934,3.1900001,19051.84};
@@ -30802,7 +30802,7 @@ class Mission
 		};
 		class Item3055
 		{
-			position[]={23632.064,3.1900001,18451.582};
+			position[]={23633.264,3.1900001,18451.254};
 			azimut=280;
 			id=3065;
 			side="EMPTY";
@@ -32424,7 +32424,7 @@ class Mission
 		};
 		class Item3220
 		{
-			position[]={23632.699,3.1900001,18456.951};
+			position[]={23632.699,3.1900001,18457.104};
 			special="NONE";
 			id=3230;
 			side="EMPTY";
@@ -32957,6 +32957,28 @@ class Mission
 			vehicle="Land_MarketShelter_F";
 			leader=1;
 			skill=0.60000002;
+		};
+		class Item3271
+		{
+			position[]={23633.004,3.1900001,18462.363};
+			special="NONE";
+			id=3281;
+			side="EMPTY";
+			vehicle="CUP_BAF_VehicleBox";
+			leader=1;
+			skill=0.60000002;
+			text="RadioBox";
+		};
+		class Item3272
+		{
+			position[]={23632.547,3.1900001,18468.154};
+			special="NONE";
+			id=3282;
+			side="EMPTY";
+			vehicle="CUP_BAF_VehicleBox";
+			leader=1;
+			skill=0.60000002;
+			text="ParaChuteBox";
 		};
 	};
 	class Markers

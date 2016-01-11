@@ -34,4 +34,4 @@ _x linkItem "UK3CB_BAF_HMNVS";
 comment "Set identity";
 _x setFace "GreekHead_A3_01";
 _x setSpeaker "ACE_NoVoice";
-} forEach Players;
+} forEach Everyone;

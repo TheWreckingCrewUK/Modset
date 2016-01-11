@@ -55,9 +55,9 @@ clearitemCargoGlobal _RadioBox;
 //Range Box
 //Weapons
 _RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L7A2",20];
-_RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L85A2_RIS_AFG",20];
+_RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L85A2_RIS",20];
 _RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L110A2",20];
-_RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L129A1_AFG",20];
+_RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L129A1_FGrip",20];
 _RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L85A2_UGL",20];
 _RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L131A1",20];
 _RangeBoxAT AddWeaponCargoGlobal ["UK3CB_BAF_NLAW_Launcher",20];
@@ -131,4 +131,4 @@ _RangeBoxMedic addItemCargoGlobal ["ACE_bodyBag",100];
 //_ParaBox AddBackPackCargoGlobal ["ACE_NonSteerableParachute",40];
 
 //Radio Box
-_RadioBox AddBackPackCargoGlobal ["tf_rt1523g_green",40];
+_RadioBox AdditemCargoGlobal ["ACRE_PRC117F",40];

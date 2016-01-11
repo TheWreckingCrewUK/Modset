@@ -1,4 +1,4 @@
-Everyone = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,p31,p32,p33,p34,p35];
+Everyone = [p1,p2,p3,p4,p5];
 Trainers = [p1,p2,p3,p4,p5];
 
 if (player in Trainers) then {
@@ -13,8 +13,9 @@ if (player in Trainers) then {
 	_Telebomb = ['TeleALL','Teleport BombingRange','', {player setpos (getMarkerPos "bomb");},{true}] call ace_interact_menu_fnc_createAction;
 	
 	TWCeraListAction = ["era","TWC ERA List","", {},{true}] call ace_interact_menu_fnc_createAction;
-	_moderncoin = ['TWCera','TWC moderncoin','', {execVM "scripts\weaponLists\playerLoadouts\moderntrainerstart.sqf";execVM "scripts\weaponLists\playerLoadouts\modernstart.sqf";execVM "scripts\weaponLists\crates\moderncoin.sqf";execVM "scripts\weaponLists\loadouts\modern.sqf";execVM "scripts\weaponLists\loadouts\moderntrainer.sqf" ;},{true}] call ace_interact_menu_fnc_createAction;
-	_coldwar = ['TWCera','TWC coldwar ','', {execVM "scripts\weaponLists\playerLoadouts\coldwartrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\coldwar.sqf";execVM "scripts\weaponLists\crates\coldwar.sqf";execVM "scripts\weaponLists\loadouts\coldwar.sqf";execVM "scripts\weaponLists\loadouts\coldwartrainer.sqf" ;},{true}] call ace_interact_menu_fnc_createAction;
+	_modern = ['TWCera','TWC modern','', {execVM "scripts\weaponLists\playerLoadouts\moderntrainer.sqf";execVM "scripts\weaponLists\crates\modern.sqf";execVM "scripts\weaponLists\loadouts\modern.sqf";},{true}] call ace_interact_menu_fnc_createAction;
+	_moderncoin = ['TWCera','TWC moderncoin','', {execVM "scripts\weaponLists\playerLoadouts\moderntrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\Modern.sqf";execVM "scripts\weaponLists\crates\moderncoin.sqf";},{true}] call ace_interact_menu_fnc_createAction;
+	_coldwar = ['TWCera','TWC coldwar ','', {execVM "scripts\weaponLists\playerLoadouts\coldwartrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\coldwar.sqf";execVM "scripts\weaponLists\crates\coldwar.sqf";},{true}] call ace_interact_menu_fnc_createAction;
 	
 	[player, 1, ["ACE_SelfActions"], teleportListAction] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _TeleAir] call ace_interact_menu_fnc_addActionToObject;
@@ -24,6 +25,7 @@ if (player in Trainers) then {
 	[player, 1, ["ACE_SelfActions","Teleport"], _Telebomb] call ace_interact_menu_fnc_addActionToObject;
 	
 	[player, 1, ["ACE_SelfActions"], TWCeraListAction] call ace_interact_menu_fnc_addActionToObject;
+	[player, 1, ["ACE_SelfActions","era"], _modern] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","era"], _moderncoin] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","era"], _coldwar] call ace_interact_menu_fnc_addActionToObject;
 	
