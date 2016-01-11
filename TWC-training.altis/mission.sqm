@@ -98,7 +98,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={23646.803,3.1900001,18509.18};
+					position[]={23601.211,3.1900001,18468.018};
 					special="NONE";
 					id=0;
 					side="WEST";
@@ -433,7 +433,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3273;
+		items=3281;
 		class Item0
 		{
 			position[]={23599.934,3.1900001,19051.84};
@@ -32653,7 +32653,7 @@ class Mission
 			special="NONE";
 			id=3252;
 			side="EMPTY";
-			vehicle="BAF_GR7_DG1";
+			vehicle="BAF_GR9_DG1";
 			leader=1;
 			skill=0.60000002;
 			init="veh = [this, 15] execVM ""vehicle.sqf""";
@@ -32979,6 +32979,78 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="ParaChuteBox";
+		};
+		class Item3273
+		{
+			position[]={23598.467,3.1900001,18411.295};
+			id=3283;
+			side="EMPTY";
+			vehicle="BAF_LandRover_D_C_DG1";
+			skill=0.60000002;
+			init="veh = [this, 15] execVM ""vehicle.sqf""";
+		};
+		class Item3274
+		{
+			position[]={23601.896,3.1900001,18411.338};
+			id=3284;
+			side="EMPTY";
+			vehicle="BAF_LandRover_D_C_DG1";
+			skill=0.60000002;
+			init="veh = [this, 15] execVM ""vehicle.sqf""";
+		};
+		class Item3275
+		{
+			position[]={23605.418,3.1900001,18411.338};
+			id=3285;
+			side="EMPTY";
+			vehicle="BAF_LandRover_D_C_DG1";
+			skill=0.60000002;
+			init="veh = [this, 15] execVM ""vehicle.sqf""";
+		};
+		class Item3276
+		{
+			position[]={23608.803,3.1900001,18411.387};
+			id=3286;
+			side="EMPTY";
+			vehicle="BAF_LandRover_D_C_DG1";
+			skill=0.60000002;
+			init="veh = [this, 15] execVM ""vehicle.sqf""";
+		};
+		class Item3277
+		{
+			position[]={23612.281,3.1900001,18411.387};
+			id=3287;
+			side="EMPTY";
+			vehicle="BAF_LandRover_D_C_DG1";
+			skill=0.60000002;
+			init="veh = [this, 15] execVM ""vehicle.sqf""";
+		};
+		class Item3278
+		{
+			position[]={23615.355,3.1900001,18411.451};
+			id=3288;
+			side="EMPTY";
+			vehicle="BAF_LandRover_D_C_DG1";
+			skill=0.60000002;
+			init="veh = [this, 15] execVM ""vehicle.sqf""";
+		};
+		class Item3279
+		{
+			position[]={23618.74,3.1900001,18411.5};
+			id=3289;
+			side="EMPTY";
+			vehicle="BAF_LandRover_D_C_DG1";
+			skill=0.60000002;
+			init="veh = [this, 15] execVM ""vehicle.sqf""";
+		};
+		class Item3280
+		{
+			position[]={23622.219,3.1900001,18411.5};
+			id=3290;
+			side="EMPTY";
+			vehicle="BAF_LandRover_D_C_DG1";
+			skill=0.60000002;
+			init="veh = [this, 15] execVM ""vehicle.sqf""";
 		};
 	};
 	class Markers
