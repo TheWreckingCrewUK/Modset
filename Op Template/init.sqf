@@ -27,14 +27,13 @@
 /////////////////////////////////////////////////////////*/
 
 [] execVM "operation_framework\zues\Zues.sqf";
-[] execVM "operation_framework\zues\Zues-Harry.sqf";
 [] execVM "operation_framework\zues\Zues-Fakematty.sqf";
 [] execVM "operation_framework\zues\Zues-jayman.sqf";
 
 ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
-
+/* <--- Delete this once editing is finished.
 playMusic "Theme";
 titleCut ["", "BLACK FADED", 999];
 	[] Spawn {
