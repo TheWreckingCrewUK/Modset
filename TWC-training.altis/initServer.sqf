@@ -1,0 +1,2 @@
+TrainingERA = "modern";
+publicVariable "TrainingERA";

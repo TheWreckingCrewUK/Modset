@@ -43,15 +43,15 @@ _RangeBoxAT AddWeaponCargoGlobal ["tf47_m3maaws",20];
 _RangeBoxAT AddWeaponCargoGlobal ["HAFM_LAW",20];
 
 //Ammo
-_RangeBoxRifle AddMagazineCargo ["UK3CB_BAF_75Rnd_T",40];
-_RangeBoxRifle AddMagazineCargo ["UK3CB_BAF_75Rnd",40];
-_RangeBoxRifle AddMagazineCargo ["hlc_20Rnd_762x51_B_fal",65];
-_RangeBoxRifle AddMagazineCargo ["hlc_20Rnd_762x51_T_fal",65];
-_RangeBoxRifle AddMagazineCargo ["rhsusf_mag_7x45acp_MHP",60];
-_RangeBoxAT AddMagazineCargo ["tf47_m3maaws_HEAT",40];
-_RangeBoxAT AddMagazineCargo ["tf47_m3maaws_HE",40];
-_RangeBoxAT AddMagazineCargo ["tf47_m3maaws_SMOKE",40];
-_RangeBoxAT AddMagazineCargo ["tf47_m3maaws_ILLUM",40];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",40];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",40];
+_RangeBoxRifle AddMagazineCargoGlobal ["hlc_20Rnd_762x51_B_fal",65];
+_RangeBoxRifle AddMagazineCargoGlobal ["hlc_20Rnd_762x51_T_fal",65];
+_RangeBoxRifle AddMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",60];
+_RangeBoxAT AddMagazineCargoGlobal ["tf47_m3maaws_HEAT",40];
+_RangeBoxAT AddMagazineCargoGlobal ["tf47_m3maaws_HE",40];
+_RangeBoxAT AddMagazineCargoGlobal ["tf47_m3maaws_SMOKE",40];
+_RangeBoxAT AddMagazineCargoGlobal ["tf47_m3maaws_ILLUM",40];
 
 //items
 _RangeBoxAT additemcargoglobal ["tf47_optic_m3maaws",20];

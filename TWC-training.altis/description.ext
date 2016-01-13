@@ -1,0 +1,18 @@
+
+author = "[TWC]PattyEvans & [TWC] Jayman";
+loadScreen = "scripts\pics\loading.jpg";
+onLoadName = " TWC Training";
+disabledAI = 1;
+enableDebugConsole = 1;
+disableChannels[]={0,1,2,3,4,5};
+respawnButton = 0;
+
+respawn = "base";
+respawnDelay = 5;
+#include "chvd\dialog.hpp"
+class CfgFunctions
+
+
+{
+#include "chvd\cfgfunctions.hpp"
+};
