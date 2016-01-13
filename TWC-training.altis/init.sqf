@@ -7,6 +7,7 @@ execVM "scripts\Zues\Zues5.sqf";
 if(isServer) then{
 	execVM "scripts\weaponLists\crates\modern.sqf";
 	execVM "scripts\teleport\init.sqf";
+	execVM "scripts\weaponLists\playerLoadouts\Modern.sqf;
 	};
 	
 

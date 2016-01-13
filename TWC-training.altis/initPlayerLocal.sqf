@@ -1,12 +1,14 @@
 Everyone = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16];
 publicVariable "Everyone";
+
 Trainers = [T1,T2,T3,T4,T5];
 publicVariable "Trainers";
 
+if (isserver) then {
+
 if (player in Trainers) then {
 	execVM "scripts\weaponLists\playerLoadouts\modernTrainer.sqf";
-	_markerList = ['markerList','Area Markers List','', {hint format ["%1\n%2\n%3\n%4\n%5\n%6\n%7\n%8",'rifleRange','atArea','cqbArea','sniperRange','vehicleTraining','hqArea','battleship','vehicleTraining'];},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _markerList] call ace_interact_menu_fnc_addActionToObject;
+	
 	teleportListAction = ["Teleport","Teleport List","", {},{true}] call ace_interact_menu_fnc_createAction;
 	_TeleAir = ['TeleALL','Teleport Airfield','', {vehicle player setPos (getMarkerPos "airfield");},{true}] call ace_interact_menu_fnc_createAction;
 	_TelePhase3 = ['TeleALL','Teleport phase 3','', {vehicle player setpos (getMarkerPos "phase3");},{true}] call ace_interact_menu_fnc_createAction;
@@ -41,4 +43,6 @@ if (player in Trainers) then {
 }
 if (player in Everyone) then{
 	execVM "scripts\weaponLists\playerLoadouts\modern.sqf";
+};
+
 };
