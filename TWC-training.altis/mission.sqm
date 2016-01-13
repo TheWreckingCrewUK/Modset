@@ -117,7 +117,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="t1";
+					text="T1";
 					description="Trainer";
 				};
 			};
@@ -207,7 +207,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="t2";
+					text="T2";
 					description="Trainer";
 				};
 			};
@@ -229,7 +229,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="t3";
+					text="T3";
 					description="Trainer";
 				};
 			};
@@ -251,7 +251,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="t4";
+					text="T4";
 					description="Trainer";
 				};
 			};
@@ -755,7 +755,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="t5";
+					text="T5";
 					description="Trainer";
 				};
 			};

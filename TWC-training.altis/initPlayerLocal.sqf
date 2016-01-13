@@ -1,6 +1,6 @@
 Everyone = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16];
 publicVariable "Everyone";
-Trainers = [t1,t2,t3,t4,t5];
+Trainers = [T1,T2,T3,T4,T5];
 publicVariable "Trainers";
 
 if (player in Trainers) then {
