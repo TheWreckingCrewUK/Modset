@@ -1,6 +1,6 @@
-Everyone = [p1,p2,p3,p4,p5];
+Everyone = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16];
 publicVariable "Everyone";
-Trainers = [p1,p2,p3,p4,p5];
+Trainers = [t1,t2,t3,t4,t5];
 publicVariable "Trainers";
 
 if (player in Trainers) then {
@@ -11,7 +11,7 @@ if (player in Trainers) then {
 	_TeleAir = ['TeleALL','Teleport Airfield','', {vehicle player setPos (getMarkerPos "airfield");},{true}] call ace_interact_menu_fnc_createAction;
 	_TelePhase3 = ['TeleALL','Teleport phase 3','', {vehicle player setpos (getMarkerPos "phase3");},{true}] call ace_interact_menu_fnc_createAction;
 	_TeleBase = ['TeleALL','Teleport base','', {vehicle player setpos (getMarkerPos "hqarea");},{true}] call ace_interact_menu_fnc_createAction;
-	//_TeleLHD = ['TeleALL','Teleport LHD','', {vehicle player setpos getMarkerPos "lhd"},{true} call ace_interact_menu_fnc_createAction;
+	_TeleLHD = ['TeleALL','Teleport LHD','', {vehicle player setpos getMarkerPos "lhd"},{true} call ace_interact_menu_fnc_createAction;
 	_Telebomb = ['TeleALL','Teleport BombingRange','', {vehicle player setpos (getMarkerPos "bomb");},{true}] call ace_interact_menu_fnc_createAction;
 	_Televehicle = ['TeleALL','Teleport VehicleRange','', {vehicle player setpos (getMarkerPos "vehicleTraining");},{true}] call ace_interact_menu_fnc_createAction;
 	_Teleclick = ['TeleCLick','Teleport On Click','', {execVM "scripts\teleport\tele_onclick.sqf";},{true}] call ace_interact_menu_fnc_createAction;
@@ -25,7 +25,7 @@ if (player in Trainers) then {
 	[player, 1, ["ACE_SelfActions","Teleport"], _TeleAir] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _TelePhase3] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _TeleBase] call ace_interact_menu_fnc_addActionToObject;
-	//[player, 1, ["ACE_SelfActions","Teleport"], _TeleLHD] call ace_interact_menu_fnc_addActionToObject;
+	[player, 1, ["ACE_SelfActions","Teleport"], _TeleLHD] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _Telebomb] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _Televehicle] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _Teleclick] call ace_interact_menu_fnc_addActionToObject;
@@ -38,6 +38,7 @@ if (player in Trainers) then {
 	
 	
 	
-}else{
+}
+if (player in Everyone) then{
 	execVM "scripts\weaponLists\playerLoadouts\modern.sqf";
 };

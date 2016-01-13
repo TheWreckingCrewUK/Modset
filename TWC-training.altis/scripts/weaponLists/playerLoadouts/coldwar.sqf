@@ -1,6 +1,6 @@
 waitUntil {!isNull player};       //to prevent MP / JIP issues
 
-if !(player in Trainers) then{
+if !(player in Everyone) then{
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
