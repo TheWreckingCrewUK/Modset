@@ -23,7 +23,6 @@ player addBackpack "UK3CB_BAF_B_Bergen_MTP_Radio_H_A";
 player addItemToBackpack "ACRE_PRC117F";
 
 player addHeadgear "B_P_BeretOff";
-player addGoggles "UK3CB_BAF_G_Tactical_Black";
 
 comment "Add weapons";
 player addWeapon "Binocular";
