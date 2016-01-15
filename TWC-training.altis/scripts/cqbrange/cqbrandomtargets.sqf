@@ -124,3 +124,5 @@ switch (_placement18) do {
 	case "cqbtarget18c":{cqb18 setDir 225; cqb18 setPos (getMarkerPos "cqbtarget18c")};
 	case "cqbtarget18d":{cqb18 setDir 135; cqb18 setPos (getMarkerPos "cqbtarget18d")};
 };
+sleep 3;
+hint "CQB range ready for use! Wahaw Mahommed!"

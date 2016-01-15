@@ -1,8 +1,8 @@
-TrainingERA = "coldwar";
+TrainingERA = "modern";
 publicVariable "TrainingERA";
-execVM "scripts\weaponLists\crates\coldwar.sqf";
+execVM "scripts\weaponLists\crates\modern.sqf";
 
-sleep 3;
+sleep 2;
 
 Trainers = [T1,T2,T3,T4,T5];
 publicVariable "Trainers";

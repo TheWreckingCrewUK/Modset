@@ -27,5 +27,6 @@ _inc = _inc + 1;
 };
 sleep 8;
 hint "Session Complete";
-sleep 8;
+sleep 2;
+{_x  animate["terc",0]} forEach _targets;
 nopop=false;

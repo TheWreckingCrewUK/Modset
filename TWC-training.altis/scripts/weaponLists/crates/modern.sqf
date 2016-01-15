@@ -72,23 +72,23 @@ _RangeBoxSniper AddWeaponCargoGlobal ["UK3CB_BAF_L129A1_FGrip",8];
               
 
 //Ammo
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",10];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",10];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",20];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",20];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",25];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",25];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",85];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",85];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UGL_FlareWhite_F",25];
-_RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",25];
-_RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",25];
+_RangeBoxRifle AddMagazineCargoGlobal ["UGL_FlareWhite_F",45];
+_RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",45];
+_RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",45];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_200Rnd",25];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_200Rnd_T",25];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_200Rnd",45];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_200Rnd_T",45];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd_T",25];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd",25];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd_T",45];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd",45];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_17Rnd_9mm",20];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_17Rnd_9mm",50];
 
 _RangeBoxSniper AddMagazineCargoGlobal  ["Trixie_5x338_Mag",50];
 _RangeBoxSniper AddMagazineCargoGlobal  ["Trixie_20x762_Mag",50];

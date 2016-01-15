@@ -47,24 +47,24 @@ _RangeBoxAT AddWeaponCargoGlobal ["tf47_at4_HEDP",20];
 _RangeBoxAT AddWeaponCargoGlobal ["HAFM_LAW",20];
 
 //Ammo
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Pellets",10];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Slugs",10];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Pellets",50];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Slugs",50];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",10];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",10];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",50];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",50];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",25];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",25];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",55];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",55];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UGL_FlareWhite_F",25];
-_RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",25];
-_RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",25];
+_RangeBoxRifle AddMagazineCargoGlobal ["UGL_FlareWhite_F",35];
+_RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",35];
+_RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",35];
 
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_200Rnd",25];
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_200Rnd_T",25];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd_T",25];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd",25];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd_T",35];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd",35];
 
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_17Rnd_9mm",20];
 
