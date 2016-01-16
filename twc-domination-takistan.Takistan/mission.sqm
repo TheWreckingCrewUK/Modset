@@ -41,7 +41,11 @@ class Mission
 		"trixie_recon",
 		"JS_JC_FA18",
 		"acre_api",
-		"3DEN"
+		"3DEN",
+		"UK3CB_BAF_Vehicles_Coyote_Jackal",
+		"UK3CB_BAF_Vehicles_Wildcat",
+		"cup_misc3_config",
+		"cup_takistan_config"
 	};
 	addOnsAuto[]=
 	{
@@ -69,18 +73,20 @@ class Mission
 		"A3_Signs_F",
 		"A3_Misc_F_Helpers",
 		"rhsusf_c_m113",
+		"UK3CB_BAF_Vehicles_Coyote_Jackal",
 		"rhsusf_c_hmmwv",
 		"rhsusf_vehicles",
 		"ace_ballistics",
 		"A3_Soft_F_Gamma_HEMTT",
 		"RHS_US_A2_AirImport",
+		"UK3CB_BAF_Vehicles_Wildcat",
 		"RHS_US_A2Port_Armor",
-		"aia_misc3_config",
+		"cup_misc3_config",
 		"A3_Structures_F_Mil_Fortification",
 		"JS_JC_FA18",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Ind_Cargo",
-		"aia_takistan_config"
+		"cup_takistan_config"
 	};
 	randomSeed=12582312;
 	class Intel
@@ -1940,11 +1946,11 @@ class Mission
 		class Item7
 		{
 			position[]={6043.9766,82.929123,11474.003};
-			azimut=-317.95032;
+			azimut=-317.95001;
 			special="NONE";
 			id=79;
 			side="EMPTY";
-			vehicle="BAF_Jackal2_L2A1_D_DG1";
+			vehicle="UK3CB_BAF_Jackal2_L2A1_D";
 			skill=0.60000002;
 			init="0 = [this, 600, 3600] execVM ""lib\vehicle.sqf"";";
 		};
@@ -1973,11 +1979,11 @@ class Mission
 		class Item10
 		{
 			position[]={6046.7471,82.876144,11471.813};
-			azimut=-317.95032;
+			azimut=-317.95001;
 			special="NONE";
 			id=82;
 			side="EMPTY";
-			vehicle="BAF_Jackal2_GMG_D_DG1";
+			vehicle="UK3CB_BAF_Jackal2_GMG_D";
 			skill=0.60000002;
 			init="0 = [this, 600, 3600] execVM ""lib\vehicle.sqf"";";
 		};
@@ -2059,11 +2065,11 @@ class Mission
 		class Item18
 		{
 			position[]={5812.6313,83.040001,11360.656};
-			azimut=-50.431026;
+			azimut=-50.431;
 			special="NONE";
 			id=90;
 			side="EMPTY";
-			vehicle="BAF_AW159_Wildcat_Armed_DG1";
+			vehicle="UK3CB_BAF_Wildcat_AH1_CAS_8A";
 			leader=1;
 			skill=0.60000002;
 			init="0 = [this, 600, 600] execVM ""lib\vehicle.sqf"";";
@@ -2772,11 +2778,12 @@ class Intro
 {
 	addOns[]=
 	{
-		"aia_takistan_config"
+		"aia_takistan_config",
+		"cup_takistan_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_takistan_config"
+		"cup_takistan_config"
 	};
 	randomSeed=7357029;
 	class Intel
@@ -2801,11 +2808,12 @@ class OutroWin
 {
 	addOns[]=
 	{
-		"aia_takistan_config"
+		"aia_takistan_config",
+		"cup_takistan_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_takistan_config"
+		"cup_takistan_config"
 	};
 	randomSeed=14235991;
 	class Intel
@@ -2830,11 +2838,12 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"aia_takistan_config"
+		"aia_takistan_config",
+		"cup_takistan_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_takistan_config"
+		"cup_takistan_config"
 	};
 	randomSeed=11563212;
 	class Intel

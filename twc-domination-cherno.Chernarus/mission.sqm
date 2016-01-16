@@ -42,7 +42,11 @@ class Mission
 		"trixie_ghillie",
 		"JS_JC_FA18",
 		"acre_api",
-		"3DEN"
+		"3DEN",
+		"UK3CB_BAF_Vehicles_Coyote_Jackal",
+		"UK3CB_BAF_Vehicles_Wildcat",
+		"cup_misc3_config",
+		"cup_chernarus_config"
 	};
 	addOnsAuto[]=
 	{
@@ -70,18 +74,20 @@ class Mission
 		"A3_Signs_F",
 		"A3_Misc_F_Helpers",
 		"rhsusf_c_m113",
+		"UK3CB_BAF_Vehicles_Coyote_Jackal",
 		"rhsusf_c_hmmwv",
 		"rhsusf_vehicles",
 		"ace_ballistics",
 		"A3_Soft_F_Gamma_HEMTT",
 		"RHS_US_A2_AirImport",
+		"UK3CB_BAF_Vehicles_Wildcat",
 		"RHS_US_A2Port_Armor",
-		"aia_misc3_config",
+		"cup_misc3_config",
 		"A3_Structures_F_Mil_Fortification",
 		"JS_JC_FA18",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Ind_Cargo",
-		"aia_chernarus_config"
+		"cup_chernarus_config"
 	};
 	randomSeed=12016837;
 	class Intel
@@ -1920,11 +1926,11 @@ class Mission
 		class Item7
 		{
 			position[]={5062.3491,9,2352.7307};
-			azimut=-148.88663;
+			azimut=-148.88699;
 			special="NONE";
 			id=78;
 			side="EMPTY";
-			vehicle="BAF_Jackal2_L2A1_W_DG1";
+			vehicle="UK3CB_BAF_Jackal2_L2A1_W";
 			skill=0.60000002;
 			init="0 = [this, 600, 3600] execVM ""lib\vehicle.sqf"";";
 		};
@@ -2028,11 +2034,11 @@ class Mission
 		class Item17
 		{
 			position[]={4736.8398,8.9604216,2560.4683};
-			azimut=-148.77263;
+			azimut=-148.77299;
 			special="NONE";
 			id=88;
 			side="EMPTY";
-			vehicle="BAF_AW159_Wildcat_Armed_DG1";
+			vehicle="UK3CB_BAF_Wildcat_AH1_CAS_8A";
 			leader=1;
 			skill=0.60000002;
 			init="0 = [this, 600, 600] execVM ""lib\vehicle.sqf"";";
@@ -2367,11 +2373,11 @@ class Mission
 		class Item47
 		{
 			position[]={5057.9399,9,2355.428};
-			azimut=-148.88663;
+			azimut=-148.88699;
 			special="NONE";
 			id=118;
 			side="EMPTY";
-			vehicle="BAF_Jackal2_GMG_W_DG1";
+			vehicle="UK3CB_BAF_Jackal2_GMG_W";
 			skill=0.60000002;
 			init="0 = [this, 600, 3600] execVM ""lib\vehicle.sqf"";";
 		};
@@ -2821,11 +2827,12 @@ class Intro
 {
 	addOns[]=
 	{
-		"aia_chernarus_config"
+		"aia_chernarus_config",
+		"cup_chernarus_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_chernarus_config"
+		"cup_chernarus_config"
 	};
 	randomSeed=9435366;
 	class Intel
@@ -2851,11 +2858,12 @@ class OutroWin
 {
 	addOns[]=
 	{
-		"aia_chernarus_config"
+		"aia_chernarus_config",
+		"cup_chernarus_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_chernarus_config"
+		"cup_chernarus_config"
 	};
 	randomSeed=7618563;
 	class Intel
@@ -2881,11 +2889,12 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"aia_chernarus_config"
+		"aia_chernarus_config",
+		"cup_chernarus_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_chernarus_config"
+		"cup_chernarus_config"
 	};
 	randomSeed=11828628;
 	class Intel

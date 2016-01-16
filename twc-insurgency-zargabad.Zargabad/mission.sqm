@@ -43,7 +43,11 @@ class Mission
 		"aia_misc3_config",
 		"RHS_US_A2Port_Armor",
 		"rhsusf_c_troops",
-		"lop_faction_tak_civ"
+		"lop_faction_tak_civ",
+		"cup_misc_e_config",
+		"UK3CB_BAF_Vehicles_Coyote_Jackal",
+		"cup_misc3_config",
+		"cup_zargabad_config"
 	};
 	addOnsAuto[]=
 	{
@@ -80,11 +84,12 @@ class Mission
 		"A3_Structures_F_Mil_Fortification",
 		"A3_Signs_F",
 		"A3_Misc_F_Helpers",
-		"aia_misc_e_config",
+		"cup_misc_e_config",
+		"UK3CB_BAF_Vehicles_Coyote_Jackal",
 		"rhsusf_c_m113",
-		"aia_misc3_config",
+		"cup_misc3_config",
 		"RHS_US_A2Port_Armor",
-		"aia_zargabad_config"
+		"cup_zargabad_config"
 	};
 	randomSeed=12597401;
 	class Intel
@@ -4335,10 +4340,10 @@ class Mission
 		class Item241
 		{
 			position[]={4807.3774,66.408264,694.20355};
-			azimut=633.16345;
+			azimut=633.16302;
 			id=298;
 			side="EMPTY";
-			vehicle="BAF_Jackal2_L2A1_D_DG1";
+			vehicle="UK3CB_BAF_Jackal2_L2A1_D";
 			leader=1;
 			skill=0.44999999;
 			text="vehicle3_1";
@@ -5916,11 +5921,12 @@ class Intro
 {
 	addOns[]=
 	{
-		"aia_zargabad_config"
+		"aia_zargabad_config",
+		"cup_zargabad_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_zargabad_config"
+		"cup_zargabad_config"
 	};
 	randomSeed=760270;
 	class Intel
@@ -5944,11 +5950,12 @@ class OutroWin
 {
 	addOns[]=
 	{
-		"aia_zargabad_config"
+		"aia_zargabad_config",
+		"cup_zargabad_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_zargabad_config"
+		"cup_zargabad_config"
 	};
 	randomSeed=6296803;
 	class Intel
@@ -5972,11 +5979,12 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"aia_zargabad_config"
+		"aia_zargabad_config",
+		"cup_zargabad_config"
 	};
 	addOnsAuto[]=
 	{
-		"aia_zargabad_config"
+		"cup_zargabad_config"
 	};
 	randomSeed=16663675;
 	class Intel
