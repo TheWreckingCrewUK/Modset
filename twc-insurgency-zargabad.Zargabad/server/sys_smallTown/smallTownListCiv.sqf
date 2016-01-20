@@ -18,3 +18,9 @@
 ["azizaytNorth",3,50] call twc_smallTownCiv;
 ["azizaytSouth",3,50] call twc_smallTownCiv;
 ["villa",3,50] call twc_smallTownCiv;
+["nangoSouthEast",3,50] call twc_smallTownCiv;
+["NangoEast",3,50] call twc_smallTownCiv;
+["hazarBagh",3,50] call twc_smallTownCiv;
+["hazarBaghSouth",4,100] call twc_smallTownCiv;
+["zargabadNorthNorth",3,50] call twc_smallTownCiv;
+["zargabadNorthWest",3,50] call twc_smallTownCiv;

@@ -11,15 +11,15 @@ if(!isServer) then {waitUntil {!isNull player}};
 HCPresent = if(isNil "HC") then{False} else {True};
 if(HCPresent) then{
 	if(!hasInterface && !isServer) then{
-		#include "server\init.sqf"
+		execVM "server\init.sqf";
 	};
 	if(!isDedicated && isServer) then{
-		#include "server\init.sqf"
+		execVM "server\init.sqf";
 	};
 } else{
 	if(isDedicated) then{
 		systemChat "HeadlessClient Not Connected!";
-		#include "server\init.sqf"
+		execVM "server\init.sqf";
 	};
 };
 execVM "Zues.sqf";
@@ -86,11 +86,14 @@ if (isNil "nonGiveableList") then {
 	publicVariable "nonGiveableList";
 };
 
+
 QuestionPersonAction = ["QuestionPerson","Question Person","",{call InsP_fnc_questionDisplay},{alive (_this select 0)}] call ace_interact_menu_fnc_createAction;
 ["LOP_TAK_CIV_Man_01", 0, ["ACE_MainActions"], QuestionPersonAction] call ace_interact_menu_fnc_addActionToClass;
 
+/*
 aidAction = ["aidgive","Give Civillian Humanitarian aid box","",{call InsP_fnc_aidDisplay},{alive (_this select 0)}] call ace_interact_menu_fnc_createAction;
 ["LOP_TAK_CIV_Man_01", 0, ["ACE_MainActions"], QuestionPersonAction] call ace_interact_menu_fnc_addActionToClass;
+*/
 
 // IED defuse action
 _ied = "";
@@ -114,6 +117,14 @@ _defuseAction = [
                 InsP_enemyMorale = InsP_enemyMorale + 0.1;
                 publicVariable "InsP_iedDestroyed";
                 publicVariable "InsP_enemyMorale";
+				_markerstr = createMarker ["markername", player];
+				_markerstr setMarkerShape "ICON";
+				_markerstr setMarkerType "mil_triangle";
+				_markerstr setMarkerColor "ColorYellow";
+				_markerstr setMarkerText "IED Diffused";
+				[_markerstr, true] call CBA_fnc_setMarkerPersistent;
+				
+				
             },
             {},
             "Disarming..."
@@ -150,9 +161,11 @@ if ((str player) in _apachepilots && ((count playableUnits) <= 13 || !((getPlaye
     ["end7", false, 0] call BIS_fnc_endMission;
 };
 
+/*
 if ((str player) in _humanCivs && ((count playableUnits) <= 15 || !((getPlayerUID player) in memberIDArray || (getPlayerUID player) in DeadInsurgents))) then {
     ["end6", false, 0] call BIS_fnc_endMission;
 };
+*/
 
 cutText ["", "BLACK IN", 2];
 

@@ -31,7 +31,7 @@ _ied addEventHandler ["Killed", {
 // Create trigger for setting off the explosive
 _trigger = createTrigger ["EmptyDetector", _position, true];
 _trigger setTriggerArea [_triggerRadius, _triggerRadius, 0, false];
-_trigger setTriggerActivation ["ANY", "PRESENT", true];
+_trigger setTriggerActivation ["WEST", "PRESENT", true];
 _trigger setTriggerStatements [
     "{
         if (abs (speed _x) >= 8 && (getPosATL _x select 2) < 4) exitWith {true};

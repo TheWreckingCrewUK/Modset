@@ -57,8 +57,11 @@ if (isNil "nonQuestionableList") then {
 QuestionPersonAction = ["QuestionPerson","Question Person","",{call InsP_fnc_questionDisplay},{alive (_this select 0)}] call ace_interact_menu_fnc_createAction;
 ["LOP_TAK_CIV_Man_01", 0, ["ACE_MainActions"], QuestionPersonAction] call ace_interact_menu_fnc_addActionToClass;
 
+/*
 aidAction = ["aidgive","Give Civillian Humanitarian aid box","",{call InsP_fnc_aidDisplay},{alive (_this select 0)}] call ace_interact_menu_fnc_createAction;
 ["LOP_TAK_CIV_Man_01", 0, ["ACE_MainActions"], QuestionPersonAction] call ace_interact_menu_fnc_addActionToClass;
+*/
+
 // IED defuse action
 _ied = "";
 
@@ -83,6 +86,12 @@ _defuseAction = [
                 publicVariable "InsP_iedDestroyed";
                 publicVariable "InsP_enemyMorale";
 				hint "Ied Diffused";
+				_markerstr = createMarker ["markername", player];
+				_markerstr setMarkerShape "ICON";
+				_markerstr setMarkerType "mil_triangle";
+				_markerstr setMarkerColor "ColorYellow";
+				_markerstr setMarkerText "IED Diffused";
+				[_markerstr, true] call CBA_fnc_setMarkerPersistent;
             },
             {},
             "Disarming..."
