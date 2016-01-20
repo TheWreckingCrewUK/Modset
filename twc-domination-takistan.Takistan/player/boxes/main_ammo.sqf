@@ -1011,6 +1011,7 @@ if (g_class == "USMC_AR1") then {
        _tmp_weapons =
         [
             ["rhs_weap_m249_pip_S",1],
+			["rhs_weap_m27iar",1],
 			["UK3CB_BAF_AT4_AT_Launcher",2],
 			["rhsusf_weap_m1911a1",1]  
 			  
@@ -1019,7 +1020,8 @@ if (g_class == "USMC_AR1") then {
         _tmp_magazines =
         [
             ["rhs_200rnd_556x45_M_SAW",25],
-			
+			["30Rnd_556x45_Stanag",50],
+			["30Rnd_556x45_Stanag_Tracer_Red",50],
             ["rhsusf_mag_7x45acp_MHP",15]
         ];
 		
@@ -1034,6 +1036,8 @@ if (g_class == "USMC_AR1") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
+			 ["UK3CB_BAF_TA31F_3D",1],
+			 ["bipod_01_F_blk",1],
 			 ["ACRE_PRC148",1]
 		];
 };
@@ -1042,6 +1046,7 @@ if (g_class == "USMC_AR2") then {
        _tmp_weapons =
         [
             ["rhs_weap_m249_pip_S",1],
+			["rhs_weap_m27iar",1],
 			["UK3CB_BAF_AT4_AT_Launcher",2],
 			["rhsusf_weap_m1911a1",1]  
 			  
@@ -1050,7 +1055,8 @@ if (g_class == "USMC_AR2") then {
         _tmp_magazines =
         [
             ["rhs_200rnd_556x45_M_SAW",25],
-			
+			["30Rnd_556x45_Stanag",50],
+			["30Rnd_556x45_Stanag_Tracer_Red",50],
             ["rhsusf_mag_7x45acp_MHP",15]
         ];
 		
@@ -1065,6 +1071,8 @@ if (g_class == "USMC_AR2") then {
 			 ["rhsusf_acc_compm4",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
+			 ["UK3CB_BAF_TA31F_3D",1],
+			 ["bipod_01_F_blk",1],
 			 ["ACRE_PRC148",1]
 		];
 };

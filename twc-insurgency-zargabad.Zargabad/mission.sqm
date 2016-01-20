@@ -336,12 +336,12 @@ class Mission
 				class Item3
 				{
 					position[]={4790.8008,66.574745,664.22595};
-					azimut=195.67992;
+					azimut=195.67999;
 					special="NONE";
 					id=14;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					skill=0.60000002;
 					text="p14";
 					description="Charlie Automatic Rifleman";
@@ -423,13 +423,13 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={4770.9253,66.493767,663.48352};
-					azimut=187.51828;
+					position[]={4770.5249,66.486382,663.99463};
+					azimut=530.96997;
 					special="NONE";
 					id=20;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="p20";
 					description="Delta Medic";

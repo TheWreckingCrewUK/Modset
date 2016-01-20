@@ -133,7 +133,7 @@ _tmp_items = [];
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			["UK3CB_BAF_TA31F_3D",1],
+		   	 ["UK3CB_BAF_TA31F_3D",1],
 		     ["UK3CB_BAF_Eotech",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
@@ -145,6 +145,7 @@ if (g_class == "USMC_AR") then {
        _tmp_weapons =
         [
             ["rhs_weap_m249_pip",1],
+			["rhs_weap_m27iar",1],
 			["UK3CB_BAF_AT4_AP_Launcher",2],
 			["rhsusf_weap_m1911a1",1]
 
@@ -154,7 +155,7 @@ if (g_class == "USMC_AR") then {
         [
             ["rhsusf_100Rnd_556x45_soft_pouch",20],
 			["rhsusf_200Rnd_556x45_soft_pouch",10],
-			
+			["30Rnd_556x45_Stanag",50],
             ["rhsusf_mag_7x45acp_MHP",15]
         ];
 
@@ -164,10 +165,12 @@ if (g_class == "USMC_AR") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			["rhsusf_acc_ELCAN",1],
+			 ["rhsusf_acc_ELCAN",1],
 		     ["UK3CB_BAF_Eotech",1],
 			 ["rhsusf_acc_anpeq15A",1],
 			 ["rhsusf_assault_eagleaiii_ocp",1],
+			 ["bipod_01_F_blk",1],
+			 ["UK3CB_BAF_TA31F_3D",1],
 			 ["ACRE_PRC148",1]
 		];
 };
