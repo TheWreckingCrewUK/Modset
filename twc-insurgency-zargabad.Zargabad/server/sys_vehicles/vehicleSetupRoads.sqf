@@ -15,7 +15,7 @@ _vehicleList = ["C_Offroad_01_F", "rhs_uaz_open_chdkz", "C_SUV_01_F", "C_Quadbik
 while {_vehicle < _amountToSpawn} do {
 	_roadPos = _roadList call BIS_fnc_selectRandom;
 	_selectVehicle = _vehicleList select (floor(random(count _vehicleList)));
-	_newVehicle = _selectVehicle createVehicle (position _roadPos);
+	_newVehicle = _selectVehicle createVehicle (getPos _roadPos);
 	
 	while {isOnRoad _newVehicle} do {
 		_xAxis = 3;

@@ -1,12 +1,14 @@
-//area 1
-execVM "server\sys_townSetup\area1\kaminoArea.sqf";
-execVM "server\sys_townSetup\area1\campRogainArea.sqf";
-execVM "server\sys_townSetup\area1\keirosLimeriBayArea.sqf";
-execVM "server\sys_townSetup\area1\oldOutpostArea.sqf";
-execVM "server\sys_townSetup\area1\airStationMikeArea.sqf";
+//Made by [TWC]jayman using code from [TWC]WiredTiger
+//calls each towns init
 
-//area 2
-execVM "server\sys_townSetup\area2\girnaArea.sqf";
-execVM "server\sys_townSetup\area2\connorArea.sqf";
-execVM "server\sys_townSetup\area2\tempestArea.sqf";
-execVM "server\sys_townSetup\area2\maxwellArea.sqf";
+execVM "server\sys_townSetup\MilitaryBase\init.sqf";
+execVM "server\sys_townSetup\Nango\init.sqf";
+execVM "server\sys_townSetup\Shahbaz\init.sqf";
+execVM "server\sys_townSetup\Yarum\init.sqf";
+execVM "server\sys_townSetup\YarumEast\init.sqf";
+execVM "server\sys_townSetup\ZargabadCenter\init.sqf";
+execVM "server\sys_townSetup\ZargabadEast\init.sqf";
+execVM "server\sys_townSetup\ZargabadNorth\init.sqf";
+execVM "server\sys_townSetup\ZargabadSouth\init.sqf";
+execVM "server\sys_townSetup\ZargabadWest\init.sqf";
+execvM "server\sys_townSetup\func\init.sqf";

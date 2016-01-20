@@ -56,10 +56,6 @@ if(isServer) then
 	publicVariable "TWCserverID";
 };
 
-if (isDedicated) then {
-	[["patrol1", "patrol2", "patrol3", "patrol4", "patrol5", "patrol6"]] call InsP_fnc_patrolGroup;
-};
-
 waitUntil {!isNull player};
 waitUntil {player == player};
 
@@ -73,10 +69,12 @@ _Time = ['TWC_Timeplayed','Time Played','', {[] call TWC_fnc_timePlayed},{true}]
 };
 */
 
+/*
 if (InsP_playerCiv) then {
 	execVM "client\sys_humanCiv\Markers.sqf";
 	call InsP_fnc_spawnSelect;
 };
+*/
 
 if (isNil "nonQuestionableList") then {
 	nonQuestionableList = [];
@@ -95,6 +93,7 @@ aidAction = ["aidgive","Give Civillian Humanitarian aid box","",{call InsP_fnc_a
 ["LOP_TAK_CIV_Man_01", 0, ["ACE_MainActions"], QuestionPersonAction] call ace_interact_menu_fnc_addActionToClass;
 
 // IED defuse action
+_ied = "";
 _defuseAction = [
     "InsP_defuse_ied",
     "Disarm",

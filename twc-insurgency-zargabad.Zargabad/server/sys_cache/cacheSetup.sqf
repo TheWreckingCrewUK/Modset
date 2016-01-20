@@ -6,27 +6,27 @@ if (isNil "InsP_cacheGroup") then {
 
 	_cacheBoxType = "Box_FIA_Wps_F";
 
-	cacheBoxA = _cacheBoxType createVehicle [7101, 5983, 1];
+	cacheBoxA = _cacheBoxType createVehicle [3415, 3930, 22];
 	_cacheADeath = cacheBoxA addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxA"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxA";
 
-	cacheBoxB = _cacheBoxType createVehicle [7107, 5975, 1];
+	cacheBoxB = _cacheBoxType createVehicle [3420, 3930, 22];
 	_cacheADeath = cacheBoxB addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxB"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxB";
 
-/*	cacheBoxC = _cacheBoxType createVehicle [7106, 5966, 1];
+/*	cacheBoxC = _cacheBoxType createVehicle [3420, 3935, 22];
 	_cacheADeath = cacheBoxC addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxC"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxC";
 */
-	cacheBoxD = _cacheBoxType createVehicle [7095, 5959, 1];
+	cacheBoxD = _cacheBoxType createVehicle [3425, 3930, 22];
 	_cacheADeath = cacheBoxD addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxD"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxD";
 
-	cacheBoxE = _cacheBoxType createVehicle [7090, 5944, 1];
+	cacheBoxE = _cacheBoxType createVehicle [3415, 3935, 22];
 	_cacheADeath = cacheBoxE addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxE"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxE";
 
-	InsP_cacheGroup = [cacheBoxA, cacheBoxB, cacheBoxC, cacheBoxD, cacheBoxE];
+	InsP_cacheGroup = [cacheBoxA, cacheBoxB/*, cacheBoxC*/, cacheBoxD, cacheBoxE];
 	publicVariable "InsP_cacheGroup";
 	
 	waitUntil {!(isNil "cacheBoxA") && !(isNil "cacheBoxB")/* && !(isNil "cacheBoxC")*/ && !(isNil "cacheBoxD") && !(isNil "cacheBoxE") && !(isNil "InsP_cacheGroup")};
@@ -38,8 +38,8 @@ if (isNil "InsP_cacheGroup") then {
 				case "0": {_cacheMarker = "cacheMarkerA"};
 				case "1": {_cacheMarker = "cacheMarkerB"};
 				//case "2": {_cacheMarker = "cacheMarkerC"};
-				case "3": {_cacheMarker = "cacheMarkerD"};
-				case "4": {_cacheMarker = "cacheMarkerE"};
+				case "2": {_cacheMarker = "cacheMarkerD"};
+				case "3": {_cacheMarker = "cacheMarkerE"};
 			};
 	
 			_houseList = (getMarkerPos _cacheMarker) nearObjects ["House",1500];

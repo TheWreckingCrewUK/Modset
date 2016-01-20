@@ -423,8 +423,8 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={4697.772,65.475929,726.74866};
-					azimut=353.1503;
+					position[]={4770.9253,66.493767,663.48352};
+					azimut=187.51828;
 					special="NONE";
 					id=20;
 					side="WEST";
@@ -5583,7 +5583,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=48;
+		items=64;
 		class Item0
 		{
 			position[]={5699.9561,93.934456,7215.7222};
@@ -5768,61 +5768,19 @@ class Mission
 		};
 		class Item26
 		{
-			position[]={7091.1973,7.1981497,5964.2373};
+			position[]={3430.8049,22,3941.1499};
 			name="cacheSpawn";
 			type="Empty";
 			colorName="ColorGreen";
 		};
 		class Item27
 		{
-			position[]={4035.6121,16.313856,2094.5469};
-			name="patrol1";
-			type="Empty";
-			colorName="ColorCIV";
-		};
-		class Item28
-		{
-			position[]={3874.459,15.470076,4260.6616};
-			name="patrol2";
-			type="Empty";
-			colorName="ColorCIV";
-		};
-		class Item29
-		{
-			position[]={4043.4495,25.23719,3548.0571};
-			name="patrol3";
-			type="Empty";
-			colorName="ColorCIV";
-		};
-		class Item30
-		{
-			position[]={5227.9263,42.319401,3389.4072};
-			name="patrol4";
-			type="Empty";
-			colorName="ColorCIV";
-		};
-		class Item31
-		{
-			position[]={3991.0105,42.690079,5688.4014};
-			name="patrol5";
-			type="Empty";
-			colorName="ColorCIV";
-		};
-		class Item32
-		{
-			position[]={5011.458,33.11491,1928.166};
-			name="patrol6";
-			type="Empty";
-			colorName="ColorCIV";
-		};
-		class Item33
-		{
 			position[]={4775.5967,66.242447,691.13531};
 			name="mainBase";
 			type="Empty";
 			angle=-21.396692;
 		};
-		class Item34
+		class Item28
 		{
 			position[]={4761.6313,63.381874,1009.8128};
 			name="iedRestrictionZone";
@@ -5832,84 +5790,84 @@ class Mission
 			b=50;
 			angle=-79.203903;
 		};
-		class Item35
+		class Item29
 		{
 			position[]={4820.5415,66.590027,681.13239};
 			name="cratebravo";
 			type="Empty";
 			angle=-15.270314;
 		};
-		class Item36
+		class Item30
 		{
 			position[]={4792.168,66.676781,656.72772};
 			name="cratecharlie";
 			type="Empty";
 			angle=-15.270314;
 		};
-		class Item37
+		class Item31
 		{
 			position[]={4771.6372,66.584625,656.84357};
 			name="cratedelta";
 			type="Empty";
 			angle=-15.270314;
 		};
-		class Item38
+		class Item32
 		{
 			position[]={4750.6973,66.406921,657.34308};
 			name="crateecho";
 			type="Empty";
 			angle=-15.270314;
 		};
-		class Item39
+		class Item33
 		{
 			position[]={4785.5278,65.930336,734.1123};
 			name="cratehelo";
 			type="Empty";
 			angle=-15.270314;
 		};
-		class Item40
+		class Item34
 		{
 			position[]={4817.1675,66.460373,699.09216};
 			name="alphamarker";
 			text="Alpha";
 			type="b_inf";
 		};
-		class Item41
+		class Item35
 		{
 			position[]={4816.9575,66.564857,681.64313};
 			name="bravomarker";
 			text="Bravo";
 			type="b_inf";
 		};
-		class Item42
+		class Item36
 		{
 			position[]={4792.5732,66.573883,665.38892};
 			name="charliemarker";
 			text="Charlie";
 			type="b_inf";
 		};
-		class Item43
+		class Item37
 		{
 			position[]={4771.1177,66.47316,665.65723};
 			name="deltamarker";
 			text="Delta";
 			type="b_inf";
 		};
-		class Item44
+		class Item38
 		{
 			position[]={4750.5825,66.323433,666.07501};
 			name="echomarker";
 			text="Echo";
 			type="b_inf";
 		};
-		class Item45
+		class Item39
 		{
 			position[]={4779.4395,65.975494,724.02441};
 			name="helomarker";
 			text="Helicopter";
 			type="b_motor_inf";
 		};
-		class Item46
+		class Item40
 		{
 			position[]={4754.957,66.031204,697.34766};
 			name="blueforemarker";
@@ -5918,12 +5876,165 @@ class Mission
 			colorName="ColorWEST";
 			angle=-15.270314;
 		};
-		class Item47
+		class Item41
 		{
 			position[]={4814.8325,66.162506,727.05322};
 			name="armourspawn";
 			text="Armour Crew";
 			type="b_armor";
+		};
+		class Item42
+		{
+			position[]={5009.9595,33.256447,1926.0532};
+			name="gasStation";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item43
+		{
+			position[]={3955.915,12.455554,2192.1411};
+			name="shahbazNorthEast";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item44
+		{
+			position[]={4151.2427,26.266823,1961.8345};
+			name="shahbazSouthEast";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item45
+		{
+			position[]={3937.5476,11.109855,2772.3032};
+			name="southMilitaryBase";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item46
+		{
+			position[]={3782.7649,10.90785,2657.6104};
+			name="southMilitaryBaseWest";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item47
+		{
+			position[]={3530.2539,12.421288,3011.6606};
+			name="southMilitaryBaseNorthWest";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item48
+		{
+			position[]={3069.6694,8.1240587,2780.4258};
+			name="damSouth";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item49
+		{
+			position[]={3085.2673,14.092353,3732.8071};
+			name="damNorthNorth";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item50
+		{
+			position[]={3037.6692,13.81875,3455.2148};
+			name="damNorth";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item51
+		{
+			position[]={1965.0194,37.777668,4537.0884};
+			name="azizaytSouth";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item52
+		{
+			position[]={1931.3209,39.484398,4836.9736};
+			name="AzizaytNorth";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item53
+		{
+			position[]={4896.1401,37.435406,4597.9512};
+			name="villa";
+			type="Empty";
+			colorName="ColorCIV";
+		};
+		class Item54
+		{
+			position[]={3526.7676,19.474436,1963.5557};
+			name="Shahbaz";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item55
+		{
+			position[]={4074.2419,25.340433,3577.2065};
+			name="Yarum";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item56
+		{
+			position[]={4342.7124,17.066139,3424.0088};
+			name="YarumEast";
+			type="Empty";
+		};
+		class Item57
+		{
+			position[]={4180.0952,16.949213,4170.729};
+			name="ZargabadCenter";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item58
+		{
+			position[]={4486.2095,18.427618,4060.8589};
+			name="ZargabadEast";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item59
+		{
+			position[]={3877.5803,15.840272,4151.2046};
+			name="ZargabadWest";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item60
+		{
+			position[]={4255.8037,17.970348,3993.8472};
+			name="ZargabadSouth";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item61
+		{
+			position[]={4417.3867,16.586266,4401.3013};
+			name="ZargabadNorth";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item62
+		{
+			position[]={2854.0256,31.4224,5022.6851};
+			name="Nango";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item63
+		{
+			position[]={4915.7822,29.745152,6157.9395};
+			name="MilitaryBase";
+			type="Empty";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
