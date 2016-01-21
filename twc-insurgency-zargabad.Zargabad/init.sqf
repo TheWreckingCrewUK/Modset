@@ -123,7 +123,7 @@ _defuseAction = [
 				_markerstr setMarkerColor "ColorYellow";
 				_markerstr setMarkerText "IED Diffused";
 				[_markerstr, true] call CBA_fnc_setMarkerPersistent;
-				
+				[]
 				
             },
             {},

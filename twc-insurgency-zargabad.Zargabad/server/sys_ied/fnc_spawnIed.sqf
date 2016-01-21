@@ -23,6 +23,7 @@ _ied = createVehicle [_iedType, _position, [], _spawnRadius, "NONE"];
 _ied addEventHandler ["Killed", {
     params ["_unit", "_killer"];
     _iedExplosive = createMine [typeOf _unit, getPos _unit, [], 0];
+	[getpos _iedExplosive,floor (random 4)] call TWC_fnc_iedAttack;
     _iedExplosive setDamage 1;
     deleteVehicle (_unit getVariable ["InsP_trigger", objNull]);
     deleteVehicle _unit;
