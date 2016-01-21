@@ -7,7 +7,7 @@ if (_civilianQuestioned in nonQuestionableList) then {
 	nonQuestionableList pushBack _civilianQuestioned;
 	publicVariable "nonQuestionableList";
 
-	if (_givenNumber < 3) then {
+	if (_givenNumber == 0) then {
 		hint "I know where they might be. Let me mark it on your map.";
 		_color = "ColorOrange";
 		_object = InsP_cacheGroup call BIS_fnc_selectRandom;

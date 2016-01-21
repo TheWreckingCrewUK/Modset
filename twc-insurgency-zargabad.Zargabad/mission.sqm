@@ -5766,7 +5766,7 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={537.10107,107.9494,4556.1372};
+			position[]={298.17615,144.59636,4455.9487};
 			name="cacheMarkerC";
 			type="Empty";
 			colorName="ColorGreen";
@@ -6103,14 +6103,14 @@ class Mission
 		items=3;
 		class Item0
 		{
-			position[]={5615.0156,125.34812,1013.3967};
+			position[]={4982.7485,67.367355,710.55493};
 			a=0;
 			b=0;
 			angle=62.408401;
 			interruptable=1;
 			type="END5";
 			age="UNKNOWN";
-			expCond="InsP_ammoCaches == 2;";
+			expCond="InsP_ammoCaches == 3;";
 			class Effects
 			{
 			};
