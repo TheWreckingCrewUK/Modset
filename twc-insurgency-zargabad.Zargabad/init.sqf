@@ -117,7 +117,7 @@ _defuseAction = [
                 InsP_enemyMorale = InsP_enemyMorale + 0.1;
                 publicVariable "InsP_iedDestroyed";
                 publicVariable "InsP_enemyMorale";
-				_markerstr = createMarker ["markername", player];
+				_markerstr = createMarker [str random 10000, player];
 				_markerstr setMarkerShape "ICON";
 				_markerstr setMarkerType "mil_triangle";
 				_markerstr setMarkerColor "ColorYellow";

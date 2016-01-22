@@ -86,7 +86,7 @@ _defuseAction = [
                 publicVariable "InsP_iedDestroyed";
                 publicVariable "InsP_enemyMorale";
 				hint "Ied Diffused";
-				_markerstr = createMarker ["markername", player];
+				_markerstr = createMarker [str random 10000, player];
 				_markerstr setMarkerShape "ICON";
 				_markerstr setMarkerType "mil_triangle";
 				_markerstr setMarkerColor "ColorYellow";
