@@ -15,11 +15,12 @@
 ["Task3","Neutralize enemy artillery","Our forces have been under constant artillery fire from US positions, reconnaisance suggests these positions are currently deplensihed on ammo. You are to destroy them before they can be resupplied in the coming week"] call TWC_fnc_CreateTask;
 
 /*/////////////////////////////////////////////////////////
-/                         Safe Zone                       /
+/                            Base                         /
 /                           Setup                         /
 /////////////////////////////////////////////////////////*/
 
-[] execVM "operation_framework\safezone\safezone.sqf";
+[] execVM "operation_framework\base\safezone.sqf";
+[] execVM "operation_framework\base\run.sqf";
 
 /*/////////////////////////////////////////////////////////
 /                           Zues                          /
