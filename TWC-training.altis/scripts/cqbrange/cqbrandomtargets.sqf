@@ -4,6 +4,7 @@
 *
 * Im going to apologize now, but I couldn't think of an easier way. This works perfectly, but sucked to set up
 */
+
 _placement1 = ["cqbtarget1a","cqbtarget1b","cqbtarget1c","cqbtarget1d"] call BIS_fnc_selectRandom;
 switch (_placement1) do {
 	case "cqbtarget1a":{cqb1 setDir 45; cqb1 setpos (getMarkerpos "cqbtarget1a")};
@@ -124,5 +125,5 @@ switch (_placement18) do {
 	case "cqbtarget18c":{cqb18 setDir 225; cqb18 setPos (getMarkerPos "cqbtarget18c")};
 	case "cqbtarget18d":{cqb18 setDir 135; cqb18 setPos (getMarkerPos "cqbtarget18d")};
 };
-sleep 3;
+sleep 20;
 hint "CQB range ready for use! Wahaw Mahommed!"

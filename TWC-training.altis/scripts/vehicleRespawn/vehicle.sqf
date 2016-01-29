@@ -61,7 +61,7 @@ if (!isServer) exitWith {};
 // Define variables
 _unit = _this select 0;
 _delay = if (count _this > 1) then {_this select 1} else {30};
-_deserted = if (count _this > 2) then {_this select 2} else {120};
+_deserted = if (count _this > 2) then {_this select 2} else {420};
 _respawns = if (count _this > 3) then {_this select 3} else {0};
 _dynamic = if (count _this > 4) then {_this select 4} else {false};
 _unitinit = if (count _this > 5) then {_this select 5} else {};
