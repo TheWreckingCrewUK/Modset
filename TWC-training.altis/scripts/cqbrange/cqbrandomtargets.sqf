@@ -4,6 +4,7 @@
 *
 * Im going to apologize now, but I couldn't think of an easier way. This works perfectly, but sucked to set up
 */
+hint "CQB killhouse randomizing, stand by!";
 
 _placement1 = ["cqbtarget1a","cqbtarget1b","cqbtarget1c","cqbtarget1d"] call BIS_fnc_selectRandom;
 switch (_placement1) do {
