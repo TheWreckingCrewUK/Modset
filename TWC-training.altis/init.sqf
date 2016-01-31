@@ -8,6 +8,8 @@ execVM "scripts\Zues\Zues7.sqf";
 
 trainerIDarray = ["_SP_PLAYER_","76561198050512686","76561197981096983","76561198046761459","76561198051847668","76561198100339755","76561198105044351","76561198072105856"];
 
-if (!(getPlayerUID player) in trainerIDarray  then {
-    ["end1", false, 0] call BIS_fnc_endMission;
+if (!(getPlayerUID player) in trainerIDArray && in _Trainers then {
+    ["end1", false, 0] call BIS_fnc_endMission;};
+	
+
 	
