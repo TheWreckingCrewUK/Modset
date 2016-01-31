@@ -1,5 +1,5 @@
 
-author = "[TWC]PattyEvans & [TWC] Jayman";
+author = "[TWC]PattyEvans & [TWC]Jayman";
 loadScreen = "scripts\pics\loading.jpg";
 onLoadName = " TWC Training";
 disabledAI = 1;
@@ -16,3 +16,16 @@ class CfgFunctions
 {
 #include "chvd\cfgfunctions.hpp"
 };
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "You joined as a Trainer";
+		subtitle = "You are not a Trainer, so switch to the trainee slot and apply to be one!";
+		description = "TRAINING";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};	
