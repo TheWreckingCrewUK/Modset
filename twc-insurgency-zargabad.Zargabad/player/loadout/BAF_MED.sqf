@@ -9,11 +9,12 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "BAF_Soldier_Base_L_M_Uniform_DG1";
-player additemtoUniform "ACRE_PRC343";
-player addVest "BAF_Soldier_Medic_Vest_M_DG1";
-player addBackpack "B_Kitbag_mcamo";
-player addHeadgear "BAF_Soldier_1_Headgear_M_DG1";
+player forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
+player addItemToUniform "ACRE_PRC343_ID_2";
+player addVest "UK3CB_BAF_V_Osprey_Medic_A";
+player addBackpack "UK3CB_BAF_B_Bergen_MTP_Medic_L_A";
+player addItemToBackpack "ACRE_PRC117F_ID_1";
+player addHeadgear "UK3CB_BAF_H_Mk7_Camo_ESS_A";
 
 comment "Add weapons";
 
@@ -21,7 +22,7 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-
+player linkItem "ItemRadioAcreFlagged";
 player linkItem "rhsusf_ANPVS_14";
 
 comment "Set identity";

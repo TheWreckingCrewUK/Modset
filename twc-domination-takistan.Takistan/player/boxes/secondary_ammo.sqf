@@ -19,7 +19,7 @@ _timer = 600;  // time in seconds until box is refilled.
 _weapons = [];
 _magazines = [];
 _items = [];
-_backpack = [["RDS_Tow_Tripod_Bag",1],["RDS_Tow_Gun_Bag",1],["RDS_M2_Gun_Bag",1],["RDS_M2_MiniTripod_Bag",1],["RDS_Mk19_Gun_Bag",1],["RDS_Mk19_Tripod_Bag",1]];
+_backpack = [["rhs_TOW_Tripod_Bag",1],["rhs_Tow_Gun_Bag",1],["RHS_M2_Gun_Bag",1],["RHS_M2_Tripod_Bag",1],["RHS_Mk19_Gun_Bag",1],["RHS_Mk19_Tripod_Bag",1]];
  
 _tmp_weapons = [];
 _tmp_magazines = [];

@@ -1,5 +1,3 @@
-comment "Exported from Arsenal by FakeMatty";
-
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
@@ -11,22 +9,22 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "STKR_UBACS";
-player addVest "STKR_Osprey_R";
-player addItemToVest "SmokeShell";
-player addBackpack "STKR_Predator";
-player addHeadgear "STKR_MK7_Scrim";
+player forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
+player addItemToUniform "ACRE_PRC343_ID_2";
+player addVest "UK3CB_BAF_V_Osprey_Grenadier_A";
+player addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A";
+player addItemToBackpack "ACRE_PRC117F_ID_1";
+player addHeadgear "UK3CB_BAF_H_Mk7_Camo_ESS_A";
 
 comment "Add weapons";
-player addWeapon "Binocular";
 
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_anprc152";
-player linkItem "STKR_HMNVS";
+player linkItem "ItemRadioAcreFlagged";
+player linkItem "rhsusf_ANPVS_14";
 
 comment "Set identity";
-player setFace "GreekHead_A3_01";
-player setSpeaker "AGM_NoVoice";
+player setFace "GreekHead_A3_07";
+player setSpeaker "Male06ENG";
