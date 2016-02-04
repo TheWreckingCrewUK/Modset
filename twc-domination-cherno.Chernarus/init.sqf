@@ -2,7 +2,7 @@ call compile preprocessfilelinenumbers "shk_pos\shk_pos_init.sqf";
 
 //AO Setup and SideMission
 
-TaskArray=["Prigorodki","Staroye","Elektrozavodski","Pavlovo","Kozlovka","Mogilevka","Nadezhdino","Msta","Kamyshovo","Kamenka"];
+TaskArray=["Prigorodki","Staroye","Elektrozavodsk","Pavlovo","Kozlovka","Mogilevka","Nadezhdino","Msta","Kamyshovo","Kamenka"];
 execVM "ao\RandomArray.sqf";
 
 SideMissionsMarkerArray = ["SideMission1","SideMission2","SideMission3"];
@@ -42,12 +42,15 @@ execVM "zues-jayman.sqf";
 waitUntil {!isNull player};
 waitUntil {player == player};
 
+/*
 execVM "TWC\Members\Timeplayed.sqf";
+
 
 if ((getplayerUID player)in memberIDArray) then {
 	_Time = ['TWC_Timeplayed','Time Played','', {[] call TWC_fnc_timePlayed},{true}] call ace_interact_menu_fnc_createAction;
 	player, 1, ["ACE_SelfActions"], _Time] call ace_interact_menu_fnc_addActionToObject;
 };
+*/
 
 waituntil {!(g_name =="")};
 

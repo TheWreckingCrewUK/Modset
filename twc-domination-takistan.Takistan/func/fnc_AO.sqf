@@ -25,20 +25,20 @@ _bunkertime = 0;
 _RadioTowerTime = 0;
 
 //units
-_squad = (configfile >> "CfgGroups" >> "East" >> "LOP_TKA" >> "Infantry" >> "LOP_TKA_Rifle_squad");
-_fireteam = (configfile >> "CfgGroups" >> "East" >> "LOP_TKA" >> "Infantry" >> "LOP_TKA_Patrol_section");
-_AAteam = (configfile >> "CfgGroups" >> "East" >> "LOP_TKA" >> "Infantry" >> "LOP_TKA_AT_section");
-_btr60squad = (configfile >> "CfgGroups" >> "East" >> "LOP_TKA" >> "Mechanized" >> "LOP_TKA_Mech_squad_BMP2");
-_bmp2 = (configfile >> "CfgGroups" >> "East" >> "LOP_TKA" >> "Mechanized" >> "LOP_TKA_Mech_squad_BMP2");
-_t72 = "LOP_TKA_T72BB";
-_shilka = "LOP_TKA_ZSU234";
-_Bmp = "LOP_TKA_BMP2";
-_btr = "LOP_TKA_BTR60";
-_bunkergun = "LOP_TKA_NSV_TriPod";
+_squad = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_msv" >> "rhs_group_rus_msv_infantry_emr" >> "rhs_group_rus_msv_infantry_emr_squad");
+_fireteam = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_msv" >> "rhs_group_rus_msv_infantry_emr" >> "rhs_group_rus_msv_infantry_emr_fireteam");
+_AAteam = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_msv" >> "rhs_group_rus_msv_infantry_emr" >> "rhs_group_rus_msv_infantry_emr_section_AA");
+_btr60squad = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_msv" >> "rhs_group_rus_msv_btr70" >> "rhs_group_rus_msv_btr70_squad_sniper");
+_bmp2 = (configfile >> "CfgGroups" >> "EAST" >> "rhs_faction_vdv" >> "rhs_group_rus_vdv_bmd1" >> "rhs_group_rus_vdv_bmd1_squad");
+_t72 = "rhs_t72bd_tv";
+_shilka = "rhs_zsu234_aa";
+_Bmp = "rhs_bmp2_vdv";
+_btr = "rhs_btr80_vv";
+_bunkergun = "RHS_NSV_TriPod_MSV";
 _AAstatic = "RDS_Igla_AA_pod_AAF";
-_gunner = "LOP_TKA_Infantry_Rifleman";
+_gunner = "rhs_msv_emr_rifleman";
 _radar = "rhs_p37";
-_ruflag = "FlagCarrierTakistan_EP1";
+_ruflag = "rhs_Flag_Russia_F";
 _natoflag = "Flag_NATO_F";
 
 //array select
@@ -47,6 +47,7 @@ params ["_AOname"]; //example "pygros"
 //formating
 private ["_CentralMarker","_bunkerone","_bunkertwo","_bunkerthree"];
 _CentralMarker = format ["ao%1",_AOname]; // example "aopygros"
+_CentralFlagMarker = format ["flag%1", _AOname]; // example "flagpyrgos"
 _bunkerone = format ["ao%1bunkerone",_AOname]; // example "aopygrosbunkerone"
 _bunkertwo = format ["ao%1bunkertwo",_AOname]; // example "aopygrosbunkertwo"
 _bunkerthree = format ["ao%1bunkerthree",_AOname]; // example "aopygrosbunkerthree"
@@ -56,8 +57,17 @@ if (isServer) then {
 	_AOAreaMarker = createMarker [ _CentralMarker , position player ];
 	_AOAreaMarker setmarkerpos getmarkerpos _AOname;
 	_AOAreaMarker setmarkershape "ELLIPSE";
-	_AOAreaMarker setmarkersize [700, 700];
-	_AOAreaMarker setmarkercolor "ColorRed";
+	_AOAreaMarker setmarkersize [300, 300];
+	_AOAreaMarker setmarkercolor "ColorBlue";
+	_AoAreaMarker setmarkeralpha 0.0;
+};
+if (isServer) then{
+	_AOFlagMarker = createMarker [_CentralFlagMarker, position player];
+	_AOFlagMarker setmarkerpos getmarkerpos _AOname;
+	_AOFlagMarker setmarkershape "Icon";
+	_AOFlagMarker setmarkertype "Faction_RU";
+	_AOFlagMarker setmarkersize [1.0, 1.0];
+	_AOFlagMarker setmarkercolor "Default";
 };
 
 if (isServer) then {
@@ -67,7 +77,7 @@ if (isServer) then {
 	_AOBunkerOneMarker setmarkershape "ICON";
 	_AOBunkerOneMarker setmarkertype "n_unknown";
 	_AOBunkerOneMarker setmarkersize [0.5, 0.5];
-	_AOBunkerOneMarker setmarkercolor "ColorBlack";
+	_AOBunkerOneMarker setmarkercolor "ColorRed";
 
 	_AOBunkerOneSpawn = "Land_BagBunker_Large_F" createVehicle (_pos);
 	_BunkerOneFlag = _ruflag createVehicle (_pos);
@@ -75,7 +85,7 @@ if (isServer) then {
 	_AOBunkerOneGunOne = _bunkergun createVehicle (_pos);
 	_AOBunkerOneGunOne setPos [(getPos _AOBunkerOneGunOne select 0)+6, getPos _AOBunkerOneGunOne select 1, 0];
  	_AOBunkerOneGunOne setDir 90;
-	createVehicleCrew __AOBunkerOneGunOne;
+	createVehicleCrew _AOBunkerOneGunOne;
 
 	_AOBunkerOneGunTwo = _bunkergun createVehicle (_pos);
 	_AOBunkerOneGunTwo setPos [(getPos _AOBunkerOneGunTwo select 0)-8, getPos _AOBunkerOneGunTwo select 1, 0];
@@ -105,7 +115,7 @@ if isServer then {
 	_AOBunkerTwoMarker setmarkershape "ICON";
 	_AOBunkerTwoMarker setmarkertype "n_unknown";
 	_AOBunkerTwoMarker setmarkersize [0.5, 0.5];
-	_AOBunkerTwoMarker setmarkercolor "ColorBlack";
+	_AOBunkerTwoMarker setmarkercolor "ColorRed";
 
 
  	_AOBunkerTwoSpawn = "Land_BagBunker_Large_F" createVehicle (_pos);
@@ -114,7 +124,7 @@ if isServer then {
 	_AOBunkerTwoGunOne = _bunkergun createVehicle (_pos);
 	_AOBunkerTwoGunOne setPos [(getPos _AOBunkerTwoGunOne select 0)+6, getPos _AOBunkerTwoGunOne select 1, 0];
  	_AOBunkerTwoGunOne setDir 90;
-	createVehicleCrew __AOBunkerTwoGunOne;
+	createVehicleCrew _AOBunkerTwoGunOne;
 
 	_AOBunkerTwoGunTwo = _bunkergun createVehicle (_pos);
 	_AOBunkerTwoGunTwo setPos [(getPos _AOBunkerTwoGunTwo select 0)-8, getPos _AOBunkerTwoGunTwo select 1, 0];
@@ -147,7 +157,7 @@ if isServer then {
 	_AOBunkerThreeMarker setmarkershape "ICON";
 	_AOBunkerThreeMarker setmarkertype "n_unknown";
 	_AOBunkerThreeMarker setmarkersize [0.5, 0.5];
-	_AOBunkerThreeMarker setmarkercolor "ColorBlack";
+	_AOBunkerThreeMarker setmarkercolor "ColorRed";
 
 
 	_AOBunkerThreeSpawn = "Land_BagBunker_Large_F" createVehicle (_pos);
@@ -156,7 +166,7 @@ if isServer then {
 	_AOBunkerThreeGunOne = _bunkergun createVehicle (_pos);
 	_AOBunkerThreeGunOne setPos [(getPos _AOBunkerThreeGunOne select 0)+6, getPos _AOBunkerThreeGunOne select 1, 0];
  	_AOBunkerThreeGunOne setDir 90;
-	createVehicleCrew __AOBunkerThreeGunOne;
+	createVehicleCrew _AOBunkerThreeGunOne;
 
 	_AOBunkerThreeGunTwo = _bunkergun createVehicle (_pos);
 	_AOBunkerThreeGunTwo setPos [(getPos _AOBunkerThreeGunTwo select 0)-8, getPos _AOBunkerThreeGunTwo select 1, 0];
@@ -207,7 +217,7 @@ for "_i" from 0 to 1 do {
 			[_BtrCrew, getMarkerpos _CentralMarker, 600] call CBA_fnc_taskPatrol;
 			_btralone = _BtrVeh select 0;
 			_BTRsquad = [[0,0,0], EAST, _squad] call BIS_fnc_spawnGroup;
-		   {_x moveincargo _btralone} foreach units _BTRsquad;
+		    {_x moveincargo _btralone} foreach units _BTRsquad;
 		};
 };
 
@@ -220,6 +230,7 @@ if isServer then {
 	_bmpalone = _BmpVeh select 0;
 	_Bmpsquad = [[0,0,0], EAST, _squad] call BIS_fnc_spawnGroup;
 	{_x moveincargo _bmpalone} foreach units _Bmpsquad;
+
 	};
 
 if isServer then {
@@ -265,9 +276,9 @@ waituntil {AObunkercount == 3 and RadioTowerCheck == 1};
 waituntil {CounterAttackCheck == 1};
 
    [format["Task%1",TaskIncrease],"succeeded"] call TWC_fnc_UpdateTask;
-  _CentralMarker setmarkercolor "Colorblue";
+  _CentralMarker setmarkeralpha 1.0;
+  _CentralFlagMarker setmarkertype "flag_UK";
   terminate _AttackHeli;
-  terminate _AttackPlane;
   {if (side _x == east) then
   {_x setDamage 1};} foreach allunits;
   sleep 5;
