@@ -45,15 +45,13 @@ class Mission
 		"UK3CB_BAF_Vehicles_Coyote_Jackal",
 		"UK3CB_BAF_Vehicles_Wildcat",
 		"cup_misc3_config",
-		"cup_chernarus_config",
-		"DG_UKBAF"
+		"cup_chernarus_config"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
 		"rhsusf_c_troops",
-		"DG_UKBAF",
 		"A3_Modules_F_Intel",
 		"3DEN",
 		"a3_modules_f_curator_curator",
@@ -692,10 +690,10 @@ class Mission
 				class Item0
 				{
 					position[]={4745.5254,9,2557.6128};
-					azimut=-149.19963;
+					azimut=-149.2;
 					id=38;
 					side="WEST";
-					vehicle="BAF_Pilot_Infantry_R_M_DG1";
+					vehicle="B_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.44999999;

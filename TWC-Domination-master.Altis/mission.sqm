@@ -46,8 +46,7 @@ class Mission
 		"ace_repair",
 		"ace_refuel",
 		"ace_rearm",
-		"UK3CB_BAF_Vehicles_Coyote_Jackal",
-		"DG_UKBAF"
+		"UK3CB_BAF_Vehicles_Coyote_Jackal"
 	};
 	addOnsAuto[]=
 	{
@@ -68,7 +67,6 @@ class Mission
 		"ace_nametags",
 		"ace_weather",
 		"ace_medical",
-		"DG_UKBAF",
 		"ace_winddeflection",
 		"ace_sitting",
 		"A3_Modules_F",
@@ -1398,7 +1396,7 @@ class Mission
 					azimut=-171.008;
 					id=54;
 					side="WEST";
-					vehicle="BAF_Pilot_Infantry_R_M_DG1";
+					vehicle="B_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.44999999;

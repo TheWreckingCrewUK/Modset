@@ -46,15 +46,13 @@ class Mission
 		"cup_misc3_config",
 		"cup_takistan_config",
 		"A3_Structures_F_Walls",
-		"A3_Structures_F_Mil_BagBunker",
-		"DG_UKBAF"
+		"A3_Structures_F_Mil_BagBunker"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
 		"rhsusf_c_troops",
-		"DG_UKBAF",
 		"A3_Modules_F_Intel",
 		"3DEN",
 		"a3_modules_f_curator_curator",
@@ -694,10 +692,10 @@ class Mission
 				class Item0
 				{
 					position[]={5814.1084,83.040001,11365.153};
-					azimut=-6.6940308;
+					azimut=-6.6940298;
 					id=38;
 					side="WEST";
-					vehicle="BAF_Pilot_Infantry_R_M_DG1";
+					vehicle="B_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.44999999;
