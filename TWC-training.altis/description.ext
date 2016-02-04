@@ -22,7 +22,7 @@ class CfgDebriefing
 	class End1
 	{
 		title = "You joined as a Trainer";
-		subtitle = "You are not a Trainer, so switch to the trainee slot and apply to be one!";
+		subtitle = "You are not a Trainer, so switch to the trainee slot and apply to be one on the forums!";
 		description = "TRAINING";
 		// pictureBackground = "";
 		// picture = "";
