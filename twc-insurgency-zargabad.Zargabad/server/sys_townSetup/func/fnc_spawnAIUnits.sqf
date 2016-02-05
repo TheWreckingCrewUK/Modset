@@ -14,10 +14,33 @@ if (_waves < 1) then {
 	_waves = 1;
 };
 
-
+/*
 for "_i" from 1 to _waves do {
 	_pos = [getMarkerPos _marker,_groupradius] call SHK_pos;
 	_groupSpawned = [_pos, East, ["LOP_AM_Infantry_TL","LOP_AM_Infantry_AT","LOP_AM_Infantry_Rifleman"]] call BIS_fnc_spawnGroup;
     [_groupSpawned, (_marker), 40] call CBA_fnc_taskAttack;
 	
-};		
+};	
+*/	
+HCPresent = if(isNil "HC") then{False} else {True};
+if(HCPresent) then{
+	if(!hasInterface && !isServer) then{
+		for "_i" from 1 to _waves do {
+	_pos = [getMarkerPos _marker,_groupradius] call SHK_pos;
+	_groupSpawned = [_pos, East, ["LOP_AM_Infantry_TL","LOP_AM_Infantry_AT","LOP_AM_Infantry_Rifleman"]] call BIS_fnc_spawnGroup;
+    [_groupSpawned, (_marker), 40] call CBA_fnc_taskAttack;
+	};
+	if(!isDedicated && isServer) then{
+		for "_i" from 1 to _waves do {
+	_pos = [getMarkerPos _marker,_groupradius] call SHK_pos;
+	_groupSpawned = [_pos, East, ["LOP_AM_Infantry_TL","LOP_AM_Infantry_AT","LOP_AM_Infantry_Rifleman"]] call BIS_fnc_spawnGroup;
+    [_groupSpawned, (_marker), 40] call CBA_fnc_taskAttack;
+	};
+} else{
+	if(isDedicated) then{
+		for "_i" from 1 to _waves do {
+	_pos = [getMarkerPos _marker,_groupradius] call SHK_pos;
+	_groupSpawned = [_pos, East, ["LOP_AM_Infantry_TL","LOP_AM_Infantry_AT","LOP_AM_Infantry_Rifleman"]] call BIS_fnc_spawnGroup;
+    [_groupSpawned, (_marker), 40] call CBA_fnc_taskAttack;
+	};
+};

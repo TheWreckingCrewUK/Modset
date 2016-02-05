@@ -7,7 +7,7 @@
 * Else if the Headless Client isn't connected it gives a warning and then runs the server folder off of the dedicated server.
 */
 if(!isServer) then {waitUntil {!isNull player}};
-
+/*
 HCPresent = if(isNil "HC") then{False} else {True};
 if(HCPresent) then{
 	if(!hasInterface && !isServer) then{
@@ -22,6 +22,8 @@ if(HCPresent) then{
 		execVM "server\init.sqf";
 	};
 };
+*/
+if (isServer) then {execVM "server\init.sqf";};
 execVM "Zues.sqf";
 execVM "Zues-Fakematty.sqf";
 execVM "Zues-jayman.sqf";
