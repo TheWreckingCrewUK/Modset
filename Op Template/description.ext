@@ -1,5 +1,6 @@
-author = "[TWC] Harry";
-onLoadName = "Operation громовой"; 
+
+author = "[TWC] Mallas";
+onLoadName = "Operation Yellowcake"; 
 loadScreen = "operation_framework\pictures\loading.jpg";
 disabledAI = 1;
 enableDebugConsole = 1;
@@ -9,7 +10,40 @@ respawnButton = 0;
 respawn = "base";
 respawnDelay = 1000000;
 respawnTemplates[] = {"ace_spectator"};
-
+class CfgFunctions
+{
+   class TWC
+	{
+		class Patrol
+		{
+			class Patrol {file = "operation_framework\func\fnc_patrol.sqf";};
+		};
+		class Defend
+		{
+			class Defend {file = "operation_framework\func\fnc_defend.sqf";};
+		};
+		class AirAssault
+		{
+			class AirAssault {file = "operation_framework\func\fnc_air_assault.sqf";};
+		};
+		class AttackHelicopter
+		{
+			class AttackHelicopter {file = "operation_framework\func\fnc_attack_helicopter.sqf";};
+		};
+		class AttackPlane
+		{
+			class AttackPlane {file = "operation_framework\func\fnc_attack_plane.sqf";};
+		};
+		class Artillery
+		{
+			class Artillery {file = "operation_framework\func\fnc_artillery.sqf";};
+		};
+		class Mortar
+		{
+			class Mortar {file = "operation_framework\func\fnc_mortar.sqf";};
+		};
+	};		
+};
 class ACE_Settings {
 	class ace_sitting_enable {
 		value = 1;
