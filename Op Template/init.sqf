@@ -31,6 +31,13 @@
 [] execVM "operation_framework\zeus\Zeus-Fakematty.sqf";
 [] execVM "operation_framework\zeus\Zeus-jayman.sqf";
 
+/*/////////////////////////////////////////////////////////
+/                          Warrior                        /
+/                           Setup                         /
+/////////////////////////////////////////////////////////*/
+
+[] execVM "operation_framework\WarriorSetup\AddAction.sqf";
+
 /*//////////////////////////////////////////////////////////
 /                         Headless                        /
                            Client                         /
