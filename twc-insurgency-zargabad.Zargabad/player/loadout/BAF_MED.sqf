@@ -13,7 +13,6 @@ player forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 player addItemToUniform "ACRE_PRC343_ID_2";
 player addVest "UK3CB_BAF_V_Osprey_Medic_A";
 player addBackpack "UK3CB_BAF_B_Bergen_MTP_Medic_L_A";
-player addItemToBackpack "ACRE_PRC117F_ID_1";
 player addHeadgear "UK3CB_BAF_H_Mk7_Camo_ESS_A";
 
 comment "Add weapons";
