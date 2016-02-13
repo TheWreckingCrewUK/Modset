@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ID="Arma3">
+	<Package ID="MineDetector">
+		<Container ID="Base">
+			<Key ID="STR_MDET_ACTIVATED">
+				<English>
+				&lt;t color="#00CC33"&gt;[&lt;/t&gt;&lt;t color='#FFFF00'&gt;MINE DETECTOR&lt;/t&gt;&lt;t color="#00CC33"&gt;]&lt;/t&gt;&lt;br/&gt;&lt;t color="#00CC33"&gt;ACTIVATED&lt;/t&gt;
+				</English>
+				<Russian>
+				&lt;t color="#00CC33"&gt;[&lt;/t&gt;&lt;t color='#FFFF00'&gt;МИНОИСКАТЕЛЬ&lt;/t&gt;&lt;t color="#00CC33"&gt;]&lt;/t&gt;&lt;br/&gt;&lt;t color="#00CC33"&gt;АКТИВИРОВАН&lt;/t&gt;
+				</Russian>
+			</Key>
+			<Key ID="STR_MDET_DEACTIVATED">
+				<English>
+				&lt;t color="#00CC33"&gt;[&lt;/t&gt;&lt;t color='#FFFF00'&gt;MINE DETECTOR&lt;/t&gt;&lt;t color="#00CC33"&gt;]&lt;/t&gt;&lt;br/&gt;&lt;t color='#FF0000'&gt;DEACTIVATED&lt;/t&gt;
+				</English>
+				<Russian>
+				&lt;t color="#00CC33"&gt;[&lt;/t&gt;&lt;t color='#FFFF00'&gt;МИНОИСКАТЕЛЬ&lt;/t&gt;&lt;t color="#00CC33"&gt;]&lt;/t&gt;&lt;br/&gt;&lt;t color='#FF0000'&gt;ДЕАКТИВИРОВАН&lt;/t&gt;
+				</Russian>
+			</Key>
+			<Key ID="STR_MDET_TOGGLE_ON">
+				<English>
+				&lt;t color="#00CC33"&gt;ENABLE&lt;/t&gt; Mine Detector
+				</English>
+				<Russian>
+				&lt;t color="#00CC33"&gt;ВКЛЮЧИТЬ&lt;/t&gt; Миноискатель
+				</Russian>
+			</Key>
+			<Key ID="STR_MDET_TOGGLE_OFF">
+				<English>
+				&lt;t color='#FF0000'&gt;DISABLE&lt;/t&gt; Mine Detector
+				</English>
+				<Russian>
+				&lt;t color='#FF0000'&gt;ОТКЛЮЧИТЬ&lt;/t&gt; Миноискатель
+				</Russian>
+			</Key>
+		</Container>
+	</Package>
+</Project>

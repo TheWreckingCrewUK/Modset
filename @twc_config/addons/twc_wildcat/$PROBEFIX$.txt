@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=twc_wildcat
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+//////</HEADER>//////
