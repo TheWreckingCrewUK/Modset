@@ -3412,7 +3412,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"SmokeShell",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
-		"FIMStingerA"
+		"CUP_Stinger_M"
 		};
 		Respawnmagazines[]=
 		{
@@ -3429,7 +3429,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"SmokeShell",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
-		"FIMStingerA"
+		"CUP_Stinger_M"
 		};
 		Items[]=
 		{
