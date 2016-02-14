@@ -687,6 +687,22 @@ class CfgVehicles{
 			};
 		};
 	};
+	class TWC_Backpack_Cold_War_FAC:STKR_PackCom
+	{
+		class TransportItems
+		{
+			class _xx_ACRE_PRC117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+			class _xx_hlc_20Rnd_762x51_B_fal
+			{
+				magazine = "hlc_20Rnd_762x51_B_fal";
+				count = 7;
+			};
+		};
+	};
 	class TWC_Backpack_Cold_War_AA:CUP_B_AlicePack_Khaki
 	{
 		class TransportMagazines
@@ -699,7 +715,7 @@ class CfgVehicles{
 			class _xx_hlc_20Rnd_762x51_B_fal
 			{
 				magazine = "hlc_20Rnd_762x51_B_fal";
-				count = 3;
+				count = 7;
 			};
 		};
 	};
