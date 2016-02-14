@@ -2158,7 +2158,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"rhsusf_mag_7x45acp_MHP",
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2171,7 +2174,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"rhsusf_mag_7x45acp_MHP",	
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2255,7 +2261,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"hlc_20Rnd_762x51_B_fal",		
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"rhsusf_mag_7x45acp_MHP",
+		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2274,7 +2281,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"hlc_20Rnd_762x51_B_fal",		
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"rhsusf_mag_7x45acp_MHP",
+		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2416,7 +2424,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
-		backpack="TWC_Backpack_Cold_War_Rifleman";
+		backpack="TWC_Backpack_Cold_War_2IC";
 		linkedItems[]=
 		{
 		"Binocular",	
@@ -2556,7 +2564,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		magazines[]=
 		{
 		"UK3CB_BAF_75Rnd_T",
-		"UK3CB_BAF_75Rnd_T",
 		"UK3CB_BAF_75Rnd",
 		"UK3CB_BAF_75Rnd",	
 		"rhsusf_mag_7x45acp_MHP",
@@ -2572,7 +2579,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_75Rnd_T",
 		"UK3CB_BAF_75Rnd_T",
 		"UK3CB_BAF_75Rnd",
 		"UK3CB_BAF_75Rnd",	
@@ -2755,6 +2761,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -2768,6 +2776,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -2849,6 +2859,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -2862,6 +2874,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -3404,7 +3418,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3419,6 +3434,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
+		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -3501,6 +3517,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3514,6 +3531,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
+		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",

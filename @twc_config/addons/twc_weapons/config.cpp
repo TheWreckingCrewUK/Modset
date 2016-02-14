@@ -580,8 +580,34 @@ class CfgVehicles{
 			class _xx_hlc_20Rnd_762x51_B_fal
 			{
 				magazine = "hlc_20Rnd_762x51_B_fal";
-				count = 10;
-			};		
+				count = 7;
+			};
+			class _xx_Belt
+			{
+				magazine = "UK3CB_BAF_75Rnd";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_Cold_War_2IC:CUP_B_AlicePack_Khaki
+	{
+		class TransportMagazines
+		{
+			class _xx_hlc_20Rnd_762x51_B_fal
+			{
+				magazine = "hlc_20Rnd_762x51_B_fal";
+				count = 7;
+			};
+			class _xx_Belt
+			{
+				magazine = "UK3CB_BAF_75Rnd";
+				count = 2;
+			};
+			class _xx_Belt_T
+			{
+				magazine = "UK3CB_BAF_75Rnd_T";
+				count = 1;
+			};
 		};
 	};
 	class TWC_Backpack_Cold_War_Section:CUP_B_AlicePack_Khaki
@@ -599,7 +625,7 @@ class CfgVehicles{
 			class _xx_hlc_20Rnd_762x51_B_fal
 			{
 				magazine = "hlc_20Rnd_762x51_B_fal";
-				count = 10;
+				count = 8;
 			};
 			class _xx_SmokeShellGreen
 			{
@@ -630,7 +656,7 @@ class CfgVehicles{
 			class _xx_UK3CB_BAF_75Rnd
 			{
 				magazine = "UK3CB_BAF_75Rnd";
-				count = 3;
+				count = 1;
 			};			
 		};
 	};
@@ -641,7 +667,7 @@ class CfgVehicles{
 			class _xx_UK3CB_BAF_75Rnd
 			{
 				magazine = "UK3CB_BAF_75Rnd";
-				count = 7;
+				count = 2;
 			};
 			class _xx_UK3CB_BAF_75Rnd_T
 			{
@@ -651,7 +677,7 @@ class CfgVehicles{
 			class _xx_hlc_20Rnd_762x51_B_fal
 			{
 				magazine = "hlc_20Rnd_762x51_B_fal";
-				count = 3;
+				count = 5;
 			};
 		};
 	};
@@ -667,7 +693,7 @@ class CfgVehicles{
 			class _xx_tf47_m3maaws_HEAT
 			{
 				magazine = "tf47_m3maaws_HEAT";
-				count = 3;
+				count = 2;
 			};
 			class _xx_tf47_m3maaws_HE
 			{
@@ -715,7 +741,7 @@ class CfgVehicles{
 			class _xx_hlc_20Rnd_762x51_B_fal
 			{
 				magazine = "hlc_20Rnd_762x51_B_fal";
-				count = 7;
+				count = 6;
 			};
 		};
 	};
