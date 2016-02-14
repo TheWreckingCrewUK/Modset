@@ -722,7 +722,7 @@ class CfgVehicles{
 				name = "ACRE_PRC117F";
 				count = 1;
 			};
-		}
+		};
 		class TransportMagazines
 		{
 			class _xx_hlc_20Rnd_762x51_B_fal
