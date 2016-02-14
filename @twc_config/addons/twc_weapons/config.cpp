@@ -596,7 +596,7 @@ class CfgVehicles{
 			class _xx_hlc_20Rnd_762x51_B_fal
 			{
 				magazine = "hlc_20Rnd_762x51_B_fal";
-				count = 7;
+				count = 3;
 			};
 			class _xx_Belt
 			{
@@ -672,7 +672,7 @@ class CfgVehicles{
 			class _xx_UK3CB_BAF_75Rnd_T
 			{
 				magazine = "UK3CB_BAF_75Rnd_T";
-				count = 3;
+				count = 2;
 			};
 			class _xx_hlc_20Rnd_762x51_B_fal
 			{
@@ -722,6 +722,9 @@ class CfgVehicles{
 				name = "ACRE_PRC117F";
 				count = 1;
 			};
+		}
+		class TransportMagazines
+		{
 			class _xx_hlc_20Rnd_762x51_B_fal
 			{
 				magazine = "hlc_20Rnd_762x51_B_fal";

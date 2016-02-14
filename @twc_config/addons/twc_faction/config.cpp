@@ -2300,7 +2300,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_morphine",
-		"ACE_morphine"
+		"ACE_morphine",
+		"tf47_optic_m3maaws"
 		};
 		respawntems[]=
 		{
@@ -2311,7 +2312,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_morphine",
-		"ACE_morphine"			
+		"ACE_morphine",
+		"tf47_optic_m3maaws"		
 		};		
 	};
 	class ColdWar_AT_ASS: B_Soldier_base_F
@@ -2506,8 +2508,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs"	
+		"ACE_morphine"
 		};
 		respawntems[]=
 		{
@@ -2518,8 +2519,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs"			
+		"ACE_morphine"			
 		};		
 	};
 	class ColdWar_MG: B_Soldier_base_F
@@ -2957,6 +2957,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -2970,6 +2972,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
