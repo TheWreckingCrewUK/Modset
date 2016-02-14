@@ -7511,7 +7511,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"SmokeShell",
 		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
 		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
-		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"
 		};
 		Items[]=
 		{
