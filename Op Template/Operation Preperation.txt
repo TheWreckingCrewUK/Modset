@@ -8,11 +8,8 @@
 
 5. place down:
 	ACE Medic Class-name the medic, "medic" No Quotes
-	Place ACE Spectator
 	Place zeuss module and set as #adminLogged and name it Zeus
 	Place jaymans and Fakemattys Zeus module that goes by player ID
-	ACE logistics for ammo and Refuel.
-	ACE view distance limiter
 
 6. Add TWC vehicle ammo box
 
