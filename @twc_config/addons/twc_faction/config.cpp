@@ -987,6 +987,7 @@ class CfgVehicles
 		{
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
