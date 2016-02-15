@@ -169,6 +169,7 @@ class CfgWeapons	{
 	};
 	class UK3CB_BAF_L86A2_SUSAT3D:UK3CB_BAF_L86A2
 	{
+		displayName = "L86A1";
 		author="Jayman";
 		class LinkedItems
 		{
@@ -181,6 +182,7 @@ class CfgWeapons	{
 	};
 	class UK3CB_BAF_L85A2_SUSAT3D:UK3CB_BAF_L85A2
 	{
+		displayName = "L85A1";
 		author="Jayman";
 		class LinkedItems
 		{
@@ -193,6 +195,7 @@ class CfgWeapons	{
 	};
 	class UK3CB_BAF_L85A2_UGL_SUSAT3D:UK3CB_BAF_L85A2_UGL
 	{
+		displayName = "L85A1 W/ L123A2 Ladder";
 		author="Jayman";
 		class LinkedItems
 		{
@@ -909,7 +912,12 @@ class CfgVehicles{
 			class _xx_Stanag
 			{
 				magazine = "UK3CB_BAF_30Rnd";
-				count = 17;
+				count = 13;
+			};
+			class _xx_Stanag_T
+			{
+				magazine = "UK3CB_BAF_30Rnd_T";
+				count = 4;
 			};
 		};
 	};

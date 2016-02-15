@@ -4209,6 +4209,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
+		"1Rnd_HE_Grenade_shell",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
@@ -4223,6 +4224,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
+		"1Rnd_HE_Grenade_shell",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",		
@@ -4410,6 +4412,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -4423,6 +4428,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -4556,7 +4564,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_Flashlight_KSF1",
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACE_EarPlugs"
 		};
 	};
 	class 1990_British_Platoon_Sergeant: B_Soldier_base_F
@@ -4661,7 +4670,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_Flashlight_KSF1",
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACE_EarPlugs"
 		};
 	};
 	class 1990_British_Medic: B_Soldier_base_F
@@ -4915,6 +4925,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
@@ -4928,6 +4939,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
@@ -5008,6 +5020,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
+		"1Rnd_HE_Grenade_shell",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
@@ -5022,6 +5035,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
+		"1Rnd_HE_Grenade_shell",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",	
@@ -5210,7 +5224,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
@@ -5226,7 +5239,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",		
-		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -5314,6 +5326,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -5324,6 +5340,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -5355,7 +5375,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_Flashlight_KSF1",
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACE_EarPlugs"
 		};
 	};
 	class 1990_British_Platoon_Sergeant_Desert: B_Soldier_base_F
@@ -5411,6 +5432,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -5419,6 +5444,11 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -5450,7 +5480,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_Flashlight_KSF1",
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACE_EarPlugs"
 		};
 	};
 	class 1990_British_Medic_Desert: B_Soldier_base_F
