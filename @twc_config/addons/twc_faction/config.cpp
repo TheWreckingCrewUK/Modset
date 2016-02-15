@@ -869,6 +869,9 @@ class CfgVehicles
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -880,6 +883,9 @@ class CfgVehicles
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -971,6 +977,9 @@ class CfgVehicles
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -978,10 +987,12 @@ class CfgVehicles
 		{
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -1872,6 +1883,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -1883,6 +1897,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -1974,6 +1991,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -1985,6 +2005,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
