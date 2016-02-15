@@ -1,6 +1,6 @@
 
 author = "[TWC] Mallas";
-onLoadName = "Operation Yellowcake"; 
+onLoadName = "Operation TAREA"; 
 loadScreen = "operation_framework\pictures\loading.jpg";
 disabledAI = 1;
 enableDebugConsole = 1;
@@ -10,18 +10,54 @@ respawnButton = 0;
 respawn = "base";
 respawnDelay = 1000000;
 respawnTemplates[] = {"ace_spectator"};
-
+class CfgFunctions
+{
+   class TWC
+	{
+		class Patrol
+		{
+			class Patrol {file = "operation_framework\func\fnc_patrol.sqf";};
+		};
+		class Defend
+		{
+			class Defend {file = "operation_framework\func\fnc_defend.sqf";};
+		};
+		class AirAssault
+		{
+			class AirAssault {file = "operation_framework\func\fnc_air_assault.sqf";};
+		};
+		class AttackHelicopter
+		{
+			class AttackHelicopter {file = "operation_framework\func\fnc_attack_helicopter.sqf";};
+		};
+		class AttackPlane
+		{
+			class AttackPlane {file = "operation_framework\func\fnc_attack_plane.sqf";};
+		};
+		class Artillery
+		{
+			class Artillery {file = "operation_framework\func\fnc_artillery.sqf";};
+		};
+		class Mortar
+		{
+			class Mortar {file = "operation_framework\func\fnc_mortar.sqf";};
+		};
+	};		
+};
 class ACE_Settings {
+//ACE Sitting
 	class ace_sitting_enable {
 		value = 1;
 		typeName = "BOOL";
 		force = 1;
 	};
+//ACE Finger
 	class ace_finger_enabled {
 		value = 1;
 		typeName = "BOOL";
 		force = 1;
 	};
+//ACE Respawn
 	class ace_respawn_SavePreDeathGear {
 	    value = 1;
 	    typeName = "BOOL";
@@ -32,18 +68,26 @@ class ACE_Settings {
 	    typeName = "BOOL";
 	    force = 1;
 	};
+//ACE Microdagr
 	class ace_microdagr_MapDataAvailable {
 		value = 1;
 		typeName = "SCALAR";
 		force = 1;
 	};
+//ACE Explosives
 	class ace_explosives_PunishNonSpecialists {
 	    value = 0;
 	    typeName = "BOOL";
 	    force = 1;
 	};
+//ACE Medical
+class ace_medical_level {
+		value = 1;
+		typeName = "SCALAR";
+		force = 1;
+	};
 	class ace_medical_medicSetting {
-		value = 0;
+		value = 1;
 		typeName = "SCALAR";
 		force = 1;
 	};
@@ -52,6 +96,34 @@ class ACE_Settings {
 		typeName = "SCALAR";
 		force = 1;
 	};
+	class ace_medical_enableFor {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_medical_enableScreams {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_medical_allowDeadBodyMovement {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+//ACE Logistics Rearm
+	class ace_rearm_level {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+//ACE Logistics Refuel
+	class ace_refuel_rate {
+		value = 10;
+		typeName = "SCALAR";
+		force = 1;
+	};
+//ACE Logistics Repair
 	class ace_repair_engineerSetting_Repair {
 	    value = 0;
 	    typeName = "SCALAR";
@@ -72,20 +144,91 @@ class ACE_Settings {
 	    typeName = "SCALAR";
 	    force = 1;
 	};
+	class ace_repair_wheelRepairRequiredItems {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+//ACE Advanced Ballistics
 	class ace_advanced_ballistics_enabled {
 	    value = 1;
 	    typeName = "BOOL";
 	    force = 1;
 	};
+//ACE Team Management
 	class ace_interaction_EnableTeamManagement {
 	    value = 0;
 	    typeName = "BOOL";
 	    force = 1;
 	};
+//ACE Zeus Settings
 	class ace_zeus_autoAddObjects {
 	    value = 1;
 	    typeName = "BOOL";
 	    force = 1;
+	};
+//ACE Hearing
+	class ace_hearing_EnableCombatDeafness {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_hearing_EarplugsVolume {
+		value = 0.5;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_hearing_UnconsciousnessVolume {
+		value = 0;
+		typeName = "BOOL";
+		force = 1;
+	}
+	class ace_hearing_DisableEarRinging {
+		value = 0;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_hearing_enabledForZeusUnits {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_hearing_autoAddEarplugsToUnits {
+		value = 0;
+		typeName = "BOOL";
+		force = 1;
+	};
+//ACE Spectator
+	class ace_spectator_filterUnits {
+		value = 1;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_spectator_filterSides {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_spectator_restrictModes {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_spectator_restrictVisions {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+//ACE View Distance Limiter
+	class ace_viewdistance_enabled {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_viewdistance_limitViewDistance {
+		value = 100000;
+		typeName = "SCALAR";
+		force = 1;
 	};
 };
 class CfgMusic
