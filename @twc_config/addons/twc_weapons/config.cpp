@@ -788,7 +788,7 @@ class CfgVehicles{
 			};
 		};
 	};
-		class TWC_Backpack_1990_Medic:CUP_B_Bergen_BAF
+	class TWC_Backpack_1990_Medic:CUP_B_Bergen_BAF
 	{
 		class TransportItems
 		{
@@ -884,6 +884,21 @@ class CfgVehicles{
 			{
 				magazine = "UK3CB_BAF_30Rnd";
 				count = 7;
+			};
+			class _xx_HE
+			{
+				magazine = "1Rnd_HE_Grenade_shell";
+				count = 12;
+			};
+			class _xx_Flare
+			{
+				magazine = "UGL_FlareWhite_F";
+				count = 3;
+			};
+			class _xx_Smoke
+			{
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 3;
 			};
 		};
 	};

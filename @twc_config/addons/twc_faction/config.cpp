@@ -3971,7 +3971,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Sectionlead";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "BAF_Soldier_Officer_Vest_W_DG1",
 		"BAF_Soldier_1_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
@@ -3981,7 +3981,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "BAF_Soldier_Officer_Vest_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4009,6 +4009,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd",
@@ -4022,6 +4024,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -4069,7 +4073,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
-		backpack="TWC_Backpack_Modern_Rifleman";
+		backpack="TWC_Backpack_1990_Rifleman";
 		linkedItems[]=
 		{
         "BAF_Soldier_1_Vest_W_DG1",
@@ -4110,6 +4114,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
@@ -4123,6 +4128,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
@@ -4169,8 +4175,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Grenadier";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "BAF_Soldier_gl_Vest_W_DG1",
+		"BAF_Soldier_gl_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4179,7 +4185,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "BAF_Soldier_gl_Vest_W_DG1",
+		"BAF_Soldier_gl_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4190,7 +4197,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"Binocular",
 		"UK3CB_BAF_L85A2_UGL_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
@@ -4198,7 +4204,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"Binocular",
 		"UK3CB_BAF_L85A2_UGL_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
@@ -4207,8 +4212,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -4222,9 +4225,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
+		"UK3CB_BAF_17Rnd_9mm",		
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -4369,7 +4370,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_2IC";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "BAF_Soldier_2_Vest_W_DG1",
 		"BAF_Soldier_1_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
@@ -4379,7 +4380,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "BAF_Soldier_2_Vest_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4408,11 +4409,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -4425,11 +4422,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -4474,7 +4467,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Platoon_Command";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "BAF_Soldier_Light_Vest_W_DG1",
 		"BAF_Soldier_1_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
@@ -4484,7 +4477,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "BAF_Soldier_Light_Vest_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4514,6 +4507,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -4524,6 +4521,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -4571,7 +4572,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Platoon_Command";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "BAF_Soldier_Light_Vest_W_DG1",
 		"BAF_Soldier_1_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
@@ -4581,7 +4582,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "BAF_Soldier_Light_Vest_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4611,6 +4612,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -4619,6 +4624,12 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -4666,7 +4677,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Medic";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "BAF_Soldier_Light_Vest_W_DG1",
 		"BAF_Soldier_1_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
@@ -4676,7 +4687,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "BAF_Soldier_Light_Vest_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4761,7 +4772,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Sectionlead";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "BAF_Soldier_Officer_Vest_D_DG1",
 		"BAF_Soldier_1_Headgear_D_DG1",
 		"ItemMap",
 		"ItemCompass",
@@ -4771,7 +4782,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "BAF_Soldier_Officer_Vest_D_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4799,6 +4810,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd",
@@ -4811,6 +4824,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd",
@@ -4859,7 +4874,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
-		backpack="TWC_Backpack_Modern_Rifleman";
+		backpack="TWC_Backpack_1990_Rifleman";
 		linkedItems[]=
 		{
         "BAF_Soldier_1_Vest_D_DG1",
@@ -4959,8 +4974,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Grenadier";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "BAF_Soldier_gl_Vest_D_DG1",
+		"BAF_Soldier_gl_Headgear_D_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4969,7 +4984,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "BAF_Soldier_gl_Vest_D_DG1",
+		"BAF_Soldier_gl_Headgear_D_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4980,7 +4996,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"Binocular",
 		"UK3CB_BAF_L85A2_UGL_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
@@ -4988,7 +5003,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"Binocular",
 		"UK3CB_BAF_L85A2_UGL_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
@@ -4997,8 +5011,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -5012,9 +5024,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
+		"UK3CB_BAF_17Rnd_9mm",	
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -5159,7 +5169,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_2IC";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "BAF_Soldier_2_Vest_D_DG1",
 		"BAF_Soldier_1_Headgear_D_DG1",
 		"ItemMap",
 		"ItemCompass",
@@ -5169,7 +5179,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "BAF_Soldier_2_Vest_D_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5264,7 +5274,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Platoon_Command";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "BAF_Soldier_Light_Vest_D_DG1",
 		"BAF_Soldier_1_Headgear_D_DG1",
 		"ItemMap",
 		"ItemCompass",
@@ -5274,7 +5284,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "BAF_Soldier_Light_Vest_D_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5361,7 +5371,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Platoon_Command";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "BAF_Soldier_Light_Vest_D_DG1",
 		"BAF_Soldier_1_Headgear_D_DG1",
 		"ItemMap",
 		"ItemCompass",
@@ -5371,7 +5381,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "BAF_Soldier_Light_Vest_D_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5456,7 +5466,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Medic";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "BAF_Soldier_Light_Vest_D_DG1",
 		"BAF_Soldier_1_Headgear_D_DG1",
 		"ItemMap",
 		"ItemCompass",
@@ -5466,7 +5476,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "BAF_Soldier_Light_Vest_D_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
