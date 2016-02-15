@@ -30,6 +30,7 @@ class CfgWeapons	{
 	class UK3CB_BAF_L85A2_UGL;
 	class UK3CB_BAF_L128A1;
 	class UK3CB_BAF_L7A2;
+	class UK3CB_BAF_L22A2;
 	class hlc_rifle_SLR;
 	class CUP_launch_FIM92Stinger;
 	class UK3CB_BAF_SpecterLDS_Dot_3D;
@@ -147,6 +148,18 @@ class CfgWeapons	{
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L7A2";
 				item="UK3CB_BAF_SpecterLDS_Dot_3D";
+			};
+		};
+	};
+	class UK3CB_BAF_L22A2_SUSAT3D:UK3CB_BAF_L22A2
+	{
+		author="Jayman";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="UK3CB_BAF_SUSAT_3D";
 			};
 		};
 	};
@@ -395,6 +408,50 @@ class CfgVehicles{
 			class _xx_ACRE_PRC117F
 			{
 				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+            class _xx_Stanag
+			{
+				magazine = "UK3CB_BAF_30Rnd";
+				count = 4;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "SmokeShellRed";
+				count = 2;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 2;
+			};
+			class _xx_Smoke_Yellow
+			{
+				magazine = "SmokeShellYellow";
+				count = 2;
+			};
+		};
+	};
+	class TWC_Backpack_Modern_Platoon_Sergeant:UK3CB_BAF_B_Bergen_MTP_Radio_L_B
+	{
+		class TransportItems
+		{
+			class _xx_ACRE_PRC117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+			class _xx_Wire_Cutters
+			{
+				name = "ACE_wirecutter";
 				count = 1;
 			};
 		};
@@ -716,6 +773,79 @@ class CfgVehicles{
 			};
 		};
 	};
+	class TWC_Backpack_Cold_War_Platoon_Command:CUP_B_AlicePack_Khaki
+	{
+		class TransportItems
+		{
+			class _xx_ACRE_PRC117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_hlc_20Rnd_762x51_B_fal
+			{
+				magazine = "hlc_20Rnd_762x51_B_fal";
+				count = 8;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine = "SmokeShellGreen";
+				count = 3;
+			};	
+			class _xx_SmokeShellRed
+			{
+				magazine = "SmokeShellRed";
+				count = 3;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine = "ACE_HandFlare_White";
+				count = 3;
+			};		
+		};
+	};
+	class TWC_Backpack_Cold_War_Platoon_Sergeant:CUP_B_AlicePack_Khaki
+	{
+		class TransportItems
+		{
+			class _xx_ACRE_PRC117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+			class _xx_Wire_Cutters
+			{
+				name = "ACE_wirecutter";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_hlc_20Rnd_762x51_B_fal
+			{
+				magazine = "hlc_20Rnd_762x51_B_fal";
+				count = 8;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine = "SmokeShellGreen";
+				count = 3;
+			};	
+			class _xx_SmokeShellRed
+			{
+				magazine = "SmokeShellRed";
+				count = 3;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine = "ACE_HandFlare_White";
+				count = 3;
+			};		
+		};
+	};
 	class TWC_Backpack_Cold_War_FAC:STKR_PackCom
 	{
 		class TransportItems
@@ -759,6 +889,50 @@ class CfgVehicles{
 			class _xx_ACRE_PRC117F
 			{
 				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Stanag
+			{
+				magazine = "UK3CB_BAF_30Rnd";
+				count = 4;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "SmokeShellRed";
+				count = 2;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 2;
+			};
+			class _xx_Smoke_Yellow
+			{
+				magazine = "SmokeShellYellow";
+				count = 2;
+			};
+		};
+	};
+	class TWC_Backpack_1990_Platoon_Sergeant:CUP_B_Bergen_BAF
+	{
+		class TransportItems
+		{
+			class _xx_ACRE_PRC117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+			class _xx_Wire_Cutters
+			{
+				name = "ACE_wirecutter";
 				count = 1;
 			};
 		};
