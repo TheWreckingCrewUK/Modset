@@ -20,7 +20,8 @@ class CfgPatches
 };
 	
 	
-class CfgWeapons	{
+class CfgWeapons
+{
 	
 	class UK3CB_BAF_L85A2;
 	class UK3CB_BAF_L85A2_RIS_AFG;
@@ -232,7 +233,8 @@ class CfgWeapons	{
 		};
 	};
 };
-class CfgVehicles{
+class CfgVehicles
+{
 	
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C;
 	class UK3CB_BAF_B_Bergen_MTP_Radio_L_A;
@@ -1286,29 +1288,33 @@ class CfgVehicles{
 			};
 		};
 		class TransportItems
-		    {
+		{
 			class _xx_Bandage
-				{
-					name = "ACE_fieldDressing";
-					count = 50;
-				};
+			{
+				name = "ACE_fieldDressing";
+				count = 50;
+			};
 			class _xx_Morphine
-				{
-					name = "ACE_morphine";
-					count = 25;
-				};
+			{
+				name = "ACE_morphine";
+				count = 25;
+			};
 			class _xx_Epipen
-				{
-					name = "ACE_epinephrine";
-					count = 10;
-				};
+			{
+				name = "ACE_epinephrine";
+				count = 10;
 			};
 			class _xx_ACE_bloodIV_500
 			{
 				name = "ACE_bloodIV_500";
 				count = 40;
 			};
-
+			class _xx_MortarRound
+			{
+				name = "UK3CB_BAF_1Rnd_81mm_Mo_shells";
+				count = 40;
+			};
+		};
 		class TransportWeapons
 		{
 			class _xx_NLAW
@@ -1410,34 +1416,38 @@ class CfgVehicles{
 		class TransportItems
 		    {
 			class _xx_Bandage
-				{
-					name = "ACE_fieldDressing";
-					count = 50;
-				};
+			{
+				name = "ACE_fieldDressing";
+				count = 50;
+			};
 			class _xx_Morphine
-				{
-					name = "ACE_morphine";
-					count = 25;
-				};
+			{
+				name = "ACE_morphine";
+				count = 25;
+			};
 			class _xx_Epipen
-				{
-					name = "ACE_epinephrine";
-					count = 10;
-				};
+			{
+				name = "ACE_epinephrine";
+				count = 10;
 			};
 			class _xx_ACE_bloodIV_500
 			{
 				name = "ACE_bloodIV_500";
 				count = 40;
 			};
-
+			class _xx_MortarRound
+			{
+				name = "UK3CB_BAF_1Rnd_81mm_Mo_shells";
+				count = 40;
+			};
+		};
 		class TransportWeapons
 		{
 			class _xx_LAW
-				{
-					Weapon = "HAFM_LAW";
-					count = 10;
-				};
+			{
+				Weapon = "HAFM_LAW";
+				count = 10;
+			};
 		};
 		transportAmmo=1000000;
 		supplyRadius=3;
@@ -1500,36 +1510,40 @@ class CfgVehicles{
 			};
 		};
 		class TransportItems
-		    {
+	    {
 			class _xx_Bandage
-				{
-					name = "ACE_fieldDressing";
-					count = 50;
-				};
+			{
+				name = "ACE_fieldDressing";
+				count = 50;
+			};
 			class _xx_Morphine
-				{
-					name = "ACE_morphine";
-					count = 25;
-				};
+			{
+				name = "ACE_morphine";
+				count = 25;
+			};
 			class _xx_Epipen
-				{
-					name = "ACE_epinephrine";
-					count = 10;
-				};
+			{
+				name = "ACE_epinephrine";
+				count = 10;
 			};
 			class _xx_ACE_bloodIV_500
 			{
 				name = "ACE_bloodIV_500";
 				count = 40;
 			};
-
+			class _xx_MortarRound
+			{
+				name = "UK3CB_BAF_1Rnd_81mm_Mo_shells";
+				count = 40;
+			};
+		};
 		class TransportWeapons
 		{
 			class _xx_LAW
-				{
-					Weapon = "HAFM_LAW";
-					count = 10;
-				};
+			{
+				Weapon = "HAFM_LAW";
+				count = 10;
+			};
 		};
 		transportAmmo=1000000;
 		supplyRadius=3;
@@ -1577,32 +1591,36 @@ class CfgVehicles{
 			};	
 		};
 		class TransportItems
-		    {
+		{
 			class _xx_Bandage
-				{
-					name = "ACE_fieldDressing";
-					count = 50;
-				};
+			{
+				name = "ACE_fieldDressing";
+				count = 50;
+			};
 			class _xx_Morphine
-				{
-					name = "ACE_morphine";
-					count = 25;
-				};
+			{
+				name = "ACE_morphine";
+				count = 25;
+			};
 			class _xx_Epipen
-				{
-					name = "ACE_epinephrine";
-					count = 10;
-				};
+			{
+				name = "ACE_epinephrine";
+				count = 10;
 			};
 			class _xx_ACE_bloodIV_500
 			{
 				name = "ACE_bloodIV_500";
 				count = 40;
 			};
-
+			class _xx_MortarRound
+			{
+				name = "UK3CB_BAF_1Rnd_81mm_Mo_shells";
+				count = 40;
+			};
+		};
 		class TransportWeapons
 		{
-		class _xx_LAW
+			class _xx_LAW
 			{
 				Weapon = "HAFM_LAW";
 				count = 10;
@@ -1612,12 +1630,11 @@ class CfgVehicles{
 				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
 				count = 10;
 			};
-		};
-		
+		};		
 		transportAmmo=1000000;
 		supplyRadius=3;
 	};
-		class TWC_modern_USSR_Ammobox:CUP_BAF_VehicleBox
+	class TWC_modern_USSR_Ammobox:CUP_BAF_VehicleBox
 	{
 		author="FakeMatty";
 		displayName="TWC USSR AmmoBox";
@@ -1655,35 +1672,35 @@ class CfgVehicles{
 			};
 		};
 		class TransportItems
-		    {
+		{
 			class _xx_Bandage
-				{
-					name = "ACE_fieldDressing";
-					count = 50;
-				};
+			{
+				name = "ACE_fieldDressing";
+				count = 50;
+			};
 			class _xx_Morphine
-				{
-					name = "ACE_morphine";
-					count = 25;
-				};
+			{
+				name = "ACE_morphine";
+				count = 25;
+			};
 			class _xx_Epipen
-				{
-					name = "ACE_epinephrine";
-					count = 10;
-				};
+			{
+				name = "ACE_epinephrine";
+				count = 10;
 			};
 			class _xx_ACE_bloodIV_500
 			{
 				name = "ACE_bloodIV_500";
 				count = 40;
 			};
-		transportAmmo=1000000;
-		supplyRadius=3;
+			transportAmmo=1000000;
+			supplyRadius=3;
+		};
 	};
 	class TWC_Vehicle_Ammo:Box_NATO_AmmoVeh_F
 	{
 		transportAmmo=1000000;
-		supplyRadius=3;
+		supplyRadius=10;
 	};
 	class TWC_modern_Warrior_Ammobox:CUP_BAF_VehicleBox
 	{
@@ -1692,17 +1709,17 @@ class CfgVehicles{
 		class TransportMagazines
 		{};
 		class TransportItems
-		    {
+	    {
 			class _xx_TWC_30mm_HE_item
-				{
-					name =  "TWC_30mm_HE_item";
-					count = 250;
-				};
+			{
+				name =  "TWC_30mm_HE_item";
+				count = 250;
+			};
 			class _xx_TWC_30mm_AP_item
-				{
-					name = "TWC_30mm_AP_item";
-					count = 250;
-				};
+			{
+				name = "TWC_30mm_AP_item";
+				count = 250;
+			};
 		};
 	};
 };
