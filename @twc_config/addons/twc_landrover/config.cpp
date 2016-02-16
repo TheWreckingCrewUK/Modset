@@ -279,12 +279,11 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-			class _xx_NLAW
+			class _xx_AT4
 			{
-				Weapon = "UK3CB_BAF_NLAW_Launcher";
-				count = 1;
+				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
+				count = 2;
 			};
-		};
 	};
 	class twc_landrover_D_1990: CUP_B_LR_Transport_GB_D
 	{
@@ -345,11 +344,171 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-			class _xx_NLAW
+			class _xx_AT4
 			{
-				Weapon = "UK3CB_BAF_NLAW_Launcher";
-				count = 1;
+				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
+				count = 2;
 			};
+		};
+	};
+	class twc_landrover_W_ColdWar: CUP_B_LR_Transport_GB_W
+	{
+		scope = 2;
+		side = 1;
+		faction=TWC_Operation;
+		displayname = "Landrover Woodland";
+		class TransportMagazines
+		{
+			class _xx_hlc_20Rnd_762x51_B_fal
+			{
+				magazine="hlc_20Rnd_762x51_B_fal";
+				count=8;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine="UK3CB_BAF_75Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine="UK3CB_BAF_75Rnd_T";
+				count=1;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine="ACE_HandFlare_White";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine="tf47_m3maaws_HEAT";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine="tf47_m3maaws_HE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_SMOKE
+			{
+				magazine="tf47_m3maaws_SMOKE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_ILLUM
+			{
+				magazine="tf47_m3maaws_ILLUM";
+				count=2;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=8;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=6;
+			};
+		};
+		class TransportItems
+		    {
+			class _xx_Bandage
+				{
+					name = "ACE_fieldDressing";
+					count = 5;
+				};
+			class _xx_Morphine
+				{
+					name = "ACE_morphine";
+					count = 2;
+				};
+		class TransportWeapons
+		{
+			class _xx_LAW
+				{
+					Weapon = "HAFM_LAW";
+					count = 2;
+				};
+		};
+	};
+	class twc_landrover_D_ColdWar: CUP_B_LR_Transport_GB_D
+	{
+		scope = 2;
+		side = 1;
+		faction=TWC_Operation;
+		displayname = "Landrover Desert";
+		class TransportMagazines
+		{
+			class _xx_hlc_20Rnd_762x51_B_fal
+			{
+				magazine="hlc_20Rnd_762x51_B_fal";
+				count=10;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine="UK3CB_BAF_75Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine="UK3CB_BAF_75Rnd_T";
+				count=1;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine="ACE_HandFlare_White";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine="tf47_m3maaws_HEAT";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine="tf47_m3maaws_HE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_SMOKE
+			{
+				magazine="tf47_m3maaws_SMOKE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_ILLUM
+			{
+				magazine="tf47_m3maaws_ILLUM";
+				count=2;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=8;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=6;
+			};
+		};
+		class TransportItems
+		    {
+			class _xx_Bandage
+				{
+					name = "ACE_fieldDressing";
+					count = 5;
+				};
+			class _xx_Morphine
+				{
+					name = "ACE_morphine";
+					count = 2;
+				};
+		class TransportWeapons
+		{
+			class _xx_LAW
+				{
+					Weapon = "HAFM_LAW";
+					count = 2;
+				};
 		};
 	};
 };

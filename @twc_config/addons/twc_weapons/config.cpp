@@ -1602,16 +1602,16 @@ class CfgVehicles{
 
 		class TransportWeapons
 		{
-			class _xx_LAW
-				{
-					Weapon = "HAFM_LAW";
-					count = 10;
-				};
+		class _xx_LAW
+			{
+				Weapon = "HAFM_LAW";
+				count = 10;
+			};
 			class _xx_AT4
-				{
-					Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
-					count = 10;
-				};
+			{
+				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
+				count = 10;
+			};
 		};
 		
 		transportAmmo=1000000;
