@@ -2080,13 +2080,13 @@ class Mission
 		class Item11
 		{
 			position[]={14645.424,17.91,16761.072};
-			azimut=-44.938656;
+			azimut=-44.938702;
 			id=85;
 			side="EMPTY";
 			vehicle="UserTexture1m_F";
 			leader=1;
 			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\member.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+			init="this setObjectTexture [0, ""pics\radio\member.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
 		};
 		class Item12
 		{
@@ -2111,24 +2111,24 @@ class Mission
 		class Item14
 		{
 			position[]={14646.323,17.91,16761.91};
-			azimut=-44.938641;
+			azimut=-44.938599;
 			id=88;
 			side="EMPTY";
 			vehicle="UserTexture1m_F";
 			leader=1;
 			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+			init="this setObjectTexture [0, ""pics\radio\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
 		};
 		class Item15
 		{
 			position[]={14628.377,17.91,16762.398};
-			azimut=-49.03595;
+			azimut=-49.0359;
 			id=89;
 			side="EMPTY";
 			vehicle="UserTexture1m_F";
 			leader=1;
 			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+			init="this setObjectTexture [0, ""pics\radio\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
 		};
 		class Item16
 		{
@@ -2143,24 +2143,24 @@ class Mission
 		class Item17
 		{
 			position[]={14629.068,17.91,16763.229};
-			azimut=-49.035908;
+			azimut=-49.0359;
 			id=91;
 			side="EMPTY";
 			vehicle="UserTexture1m_F";
 			leader=1;
 			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\member.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+			init="this setObjectTexture [0, ""pics\radio\member.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
 		};
 		class Item18
 		{
 			position[]={14638.534,17.91,16771.824};
-			azimut=-42.715206;
+			azimut=-42.715199;
 			id=92;
 			side="EMPTY";
 			vehicle="UserTexture1m_F";
 			leader=1;
 			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\member.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+			init="this setObjectTexture [0, ""pics\radio\member.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
 		};
 		class Item19
 		{
@@ -2175,24 +2175,24 @@ class Mission
 		class Item20
 		{
 			position[]={14639.449,17.91,16772.643};
-			azimut=-42.715252;
+			azimut=-42.715302;
 			id=94;
 			side="EMPTY";
 			vehicle="UserTexture1m_F";
 			leader=1;
 			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+			init="this setObjectTexture [0, ""pics\radio\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
 		};
 		class Item21
 		{
 			position[]={14638.795,17.91,16753.391};
-			azimut=-43.938156;
+			azimut=-43.938202;
 			id=95;
 			side="EMPTY";
 			vehicle="UserTexture1m_F";
 			leader=1;
 			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+			init="this setObjectTexture [0, ""pics\radio\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
 		};
 		class Item22
 		{
@@ -2207,13 +2207,13 @@ class Mission
 		class Item23
 		{
 			position[]={14639.654,17.91,16754.211};
-			azimut=-45.85638;
+			azimut=-45.8564;
 			id=97;
 			side="EMPTY";
 			vehicle="UserTexture1m_F";
 			leader=1;
 			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\member.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+			init="this setObjectTexture [0, ""pics\radio\member.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
 		};
 		class Item24
 		{
@@ -2600,13 +2600,13 @@ class Mission
 		class Item60
 		{
 			position[]={14624.865,17.91,16744.854};
-			azimut=-43.938156;
+			azimut=-43.938202;
 			id=134;
 			side="EMPTY";
 			vehicle="UserTexture1m_F";
 			leader=1;
 			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+			init="this setObjectTexture [0, ""pics\radio\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
 		};
 		class Item61
 		{
@@ -2627,7 +2627,7 @@ class Mission
 			vehicle="UserTexture1m_F";
 			leader=1;
 			skill=0.44999999;
-			init="this setObjectTexture [0, ""boards\radio\radiovehicle.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+			init="this setObjectTexture [0, ""pics\radio\radiovehicle.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
 		};
 		class Item63
 		{
