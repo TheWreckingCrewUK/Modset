@@ -36,7 +36,6 @@ if(isServer) then
 
 execVM "Zues.sqf";
 execVM "zues-Fakematty.sqf";
-execVM "zues-Harry.sqf";
 execVM "zues-jayman.sqf";
 
 waitUntil {!isNull player};

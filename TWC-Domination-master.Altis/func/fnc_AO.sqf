@@ -21,7 +21,7 @@ CounterAttackCheck = 0;
 hint"AO created";
 
 //Timeout
-_bunkertime = 0;
+_bunkertime = 10;
 _RadioTowerTime = 0;
 
 //units

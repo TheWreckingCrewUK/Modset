@@ -15,7 +15,7 @@ class Header
 onLoadName = "Domination Plus";
 onLoadMission = "By TheWreckingCrew";
 author = "TWC FakeMatty";
-loadScreen = "tao\pics\loading.jpg";
+loadScreen = "pics\loading\loading.jpg";
 
 
 
@@ -32,8 +32,6 @@ enableDebugConsole = 1;
 #include "CHVD\dialog.hpp"
 
 class CfgFunctions
-
-
 {
 
 
