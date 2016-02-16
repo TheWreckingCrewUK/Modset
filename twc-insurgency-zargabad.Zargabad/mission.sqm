@@ -148,7 +148,7 @@ class Mission
 					id=1;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -158,12 +158,12 @@ class Mission
 				class Item1
 				{
 					position[]={4814.2734,66.432083,698.5321};
-					azimut=98.391678;
+					azimut=98.391701;
 					special="NONE";
 					id=2;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					skill=0.60000002;
 					text="p2";
 					description="Alpha Rifleman";

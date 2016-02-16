@@ -132,7 +132,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.44999999;
 					text="p1";
-					init="this join g1;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\BAF_SLR.sqf'""];";
+					init="this join g1;";
 					description="Alpha Section Lead";
 				};
 				class Item1
@@ -146,7 +146,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.40000001;
 					text="p2";
-					init="this join g2;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\BAF_RFR.sqf'""];";
+					init="this join g2;";
 					description="Alpha Rifleman";
 				};
 				class Item2
@@ -160,7 +160,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.40000001;
 					text="p3";
-					init="this join g3;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\BAF_RFR.sqf'""];";
+					init="this join g3;";
 					description="Alpha Grenadier";
 				};
 				class Item3
@@ -174,7 +174,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.40000001;
 					text="p4";
-					init="nul = [this] execVM ""player.sqf""";
+					init="this join g4;";
 					description="Alpha Automatic Rifleman";
 				};
 				class Item4
@@ -189,7 +189,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.44999999;
 					text="p5";
-					init="this join g5;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\BAF_RFR.sqf'""];";
+					init="this join g5;";
 					description="Alpha 2IC";
 				};
 				class Item5
@@ -203,7 +203,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.40000001;
 					text="p6";
-					init="this join g6;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\BAF_RFR.sqf'""];";
+					init="this join g6;";
 					description="Alpha MachineGunner";
 				};
 				class Item6
@@ -217,7 +217,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.40000001;
 					text="p7";
-					init="this join g7;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\BAF_RFR.sqf'""];";
+					init="this join g7;";
 					description="Alpha Marksman";
 				};
 				class Item7
@@ -231,7 +231,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.40000001;
 					text="p8";
-					init="this join g8;this addeventhandler [""respawn"",""_this execVM 'ACEFIX\BAF_RFR.sqf'""];";
+					init="this join g8;";
 					description="Alpha Medic";
 				};
 			};
