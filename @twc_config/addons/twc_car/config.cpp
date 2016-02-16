@@ -284,6 +284,7 @@ class CfgVehicles
 				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
 				count = 2;
 			};
+		};
 	};
 	class twc_landrover_D_1990: CUP_B_LR_Transport_GB_D
 	{
@@ -411,24 +412,25 @@ class CfgVehicles
 			};
 		};
 		class TransportItems
-		    {
+	    {
 			class _xx_Bandage
-				{
-					name = "ACE_fieldDressing";
-					count = 5;
-				};
+			{
+				name = "ACE_fieldDressing";
+				count = 5;
+			};
 			class _xx_Morphine
-				{
-					name = "ACE_morphine";
-					count = 2;
-				};
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
 		class TransportWeapons
 		{
 			class _xx_LAW
-				{
-					Weapon = "HAFM_LAW";
-					count = 2;
-				};
+			{
+				Weapon = "HAFM_LAW";
+				count = 2;
+			};
 		};
 	};
 	class twc_landrover_D_ColdWar: CUP_B_LR_Transport_GB_D
@@ -491,24 +493,25 @@ class CfgVehicles
 			};
 		};
 		class TransportItems
-		    {
+		{
 			class _xx_Bandage
-				{
-					name = "ACE_fieldDressing";
-					count = 5;
-				};
+			{
+				name = "ACE_fieldDressing";
+				count = 5;
+			};
 			class _xx_Morphine
-				{
-					name = "ACE_morphine";
-					count = 2;
-				};
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
 		class TransportWeapons
 		{
 			class _xx_LAW
-				{
-					Weapon = "HAFM_LAW";
-					count = 2;
-				};
+			{
+				Weapon = "HAFM_LAW";
+				count = 2;
+			};
 		};
 	};
 };

@@ -544,6 +544,37 @@ class CfgVehicles
 			};			
 		};
 	};
+	class TWC_Backpack_Modern_MortarGunner:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
+	{
+		class TransportMagazines
+		{
+			class _xx_Stanag
+			{
+				magazine = "UK3CB_BAF_30Rnd";
+				count = 4;
+			};		
+		};
+	};
+	class TWC_Backpack_Modern_MortarAssistant:UK3CB_BAF_B_Bergen_MTP_SL_L_A
+	{
+		class TransportItems
+		{
+			class _xx_ACRE_PRC117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+            class _xx_Stanag
+			{
+				magazine = "UK3CB_BAF_30Rnd";
+				count = 4;
+			};
+		};
+	};
+	
 	
 //**************************** Modern Backpack Coin *********************
 	class TWC_Backpack_Modern_Pointman:UK3CB_BAF_B_Bergen_MTP_PointMan_L_A

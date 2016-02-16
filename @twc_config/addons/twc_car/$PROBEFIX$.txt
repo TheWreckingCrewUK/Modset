@@ -1,5 +1,5 @@
 ///////<HEADER>///////
-prefix=twc_landrover
+prefix=twc_car
 Mikero=DePbo.dll
 Pbo Type is: Arma Addon
 //////</HEADER>//////
