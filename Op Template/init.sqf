@@ -37,6 +37,7 @@
 /////////////////////////////////////////////////////////*/
 
 [] execVM "operation_framework\WarriorSetup\AddAction.sqf";
+[] execVM "operation_framework\C130Setup\AddAction.sqf";
 
 /*//////////////////////////////////////////////////////////
 /                         Headless                        /

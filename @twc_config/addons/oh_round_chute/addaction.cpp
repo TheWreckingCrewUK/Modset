@@ -1,0 +1,1 @@
+ veh addAction ["Jump Out!", {[nearestObject [player, "RHS_C130J"],]}]
