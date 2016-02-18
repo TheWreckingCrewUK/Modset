@@ -12,8 +12,10 @@ _RangeBoxAT = RangeAmmoBoxAT;
 _RangeBoxSniper = RangeAmmoBoxSniper;
 _RangeBoxGrenade = RangeAmmoGrenade;
 _RangeBoxMedic = RangeAmmoBoxMedic;
+_CrewServedWepons = CrewBox;
 //_Parachute = ParaChuteBox;
 _RadioBox = RadioBox;
+
 
 //clearing
 clearWeaponCargoGlobal _RangeBoxRifle;
@@ -51,6 +53,10 @@ clearBackpackCargoGlobal _RadioBox;
 clearMagazineCargoGlobal _RadioBox;
 clearitemCargoGlobal _RadioBox;
 
+clearWeaponCargoGlobal _CrewServedWepons;
+clearBackpackCargoGlobal _CrewServedWepons;
+clearMagazineCargoGlobal _CrewServedWepons;
+clearitemCargoGlobal _CrewServedWepons;
 
 //Range Box
 //Weapons
@@ -69,7 +75,16 @@ _RangeBoxSniper AddWeaponCargoGlobal ["Trixie_M110",8];
 _RangeBoxSniper AddWeaponCargoGlobal ["Trixie_M110_NG",8];
 _RangeBoxSniper AddWeaponCargoGlobal  ["UK3CB_BAF_L131A1",8];
 _RangeBoxSniper AddWeaponCargoGlobal ["UK3CB_BAF_L129A1_FGrip",8];
-              
+_CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_L16_Tripod",8];
+_CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_L16",8];
+_CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_Tripod",16];
+_CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_L111A1",8];
+_CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_L134A1",8];
+
+
+
+
+
 
 //Ammo
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",20];
@@ -100,6 +115,12 @@ _RangeBoxGrenade AddMagazineCargoGlobal  ["HandGrenade",100];
 _RangeBoxGrenade AddMagazineCargoGlobal ["SmokeShell",100];
 _RangeBoxGrenade AddMagazineCargoGlobal ["rhs_mag_m69",100];
 
+_CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_100Rnd_127x99_Box",100];
+_CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_32Rnd_40mm_G_Box",100];
+_CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_shells",100];
+_CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Flare_white",100];
+_CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Smoke_white",100];
+_CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_LG",50];
 
 
 
