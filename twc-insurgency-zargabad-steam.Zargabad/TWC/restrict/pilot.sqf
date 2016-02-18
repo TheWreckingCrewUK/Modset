@@ -10,8 +10,8 @@ true spawn {
     _hind = ["RHS_Mi24V_FAB_vvs"];
 
 
-	 _armourcrew = ["B_soldier_PG_F"];
-	 _abrams = ["rhs_bmp3mera_msv"];
+	 _armourcrew = ["B_crew_F"];
+	 _abrams = ["CUP_B_UH60M_US"];
 
 	//Enemy Vehicles
 

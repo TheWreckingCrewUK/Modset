@@ -11,7 +11,7 @@ Radius to spawn
 
 _spawnMarker = _this select 0;
 _areaRadius = _this select 1;
-_groupSpawn = ["LOP_AM_Infantr_TL","LOP_AM_Infantry_Rifleman","LOP_AM_Infantry_Rifleman","LOP_AM_Infantry_AT"];
+_groupSpawn = ["I_mas_med_Rebel8a_F","I_mas_med_Rebel5_F","I_mas_med_Rebel6_F","I_mas_med_Rebel4_F"];
 
 {
 	_groupSide = createGroup opfor;

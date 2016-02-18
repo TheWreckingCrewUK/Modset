@@ -28,9 +28,9 @@ _tmp_items = [];
 if (g_class == "BAF_SL") then {
                 _tmp_weapons =
                 [
-                                ["UK3CB_BAF_L85A2_RIS",1],
+                                ["CUP_arifle_L85A2",1],
                                 ["ACE_Vector",1],
-								["UK3CB_BAF_L131A1",1]
+								["CUP_hgun_Glock17",1]
 
                 ];
 
@@ -38,7 +38,7 @@ if (g_class == "BAF_SL") then {
                 [
                                 ["30Rnd_556x45_Stanag",50],
 								["30Rnd_556x45_Stanag_Tracer_Red",50],
-                                ["UK3CB_BAF_17Rnd_9mm",15]
+                                ["CUP_17Rnd_9x19_glock17",15]
 
 
                 ];
@@ -49,13 +49,12 @@ if (g_class == "BAF_SL") then {
                                 ["ACE_fieldDressing",20],
                                 ["ACE_morphine",10],
 								["ACE_epinephrine",5],
-								["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-								["UK3CB_BAF_LLM_IR",1],
+								["CUP_optic_ACOG",1],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
-								["UK3CB_BAF_Eotech",1],
-								["STKR_Predator",1],
+								["CUP_optic_ACOG",1],
+								["CUP_optic_HoloBlack",1],
 								["ACE_DAGR",1],
 								["ACRE_PRC343",1]
 
@@ -67,9 +66,8 @@ if (g_class == "BAF_SL") then {
         _tmp_weapons =
         [
 								["UK3CB_BAF_L85A2_RIS",1],
-								["UK3CB_BAF_L128A1",1],
-								["UK3CB_BAF_L131A1",1],
-								["UK3CB_BAF_AT4_AP_Launcher",2]
+								["CUP_hgun_Glock17",1]
+							
         ];
 
         _tmp_magazines =
@@ -77,9 +75,7 @@ if (g_class == "BAF_SL") then {
 								
 								["30Rnd_556x45_Stanag",50],
 								["30Rnd_556x45_Stanag_Tracer_Red",50],
-								["UK3CB_BAF_L128A1_Pellets",10],
-								["UK3CB_BAF_L128A1_Slugs",10],
-                                ["UK3CB_BAF_17Rnd_9mm",15]
+                                ["CUP_17Rnd_9x19_glock17",15]
 			];
 
 		_tmp_items = [
@@ -87,10 +83,8 @@ if (g_class == "BAF_SL") then {
                                 ["ACE_MapTools",1],
                                 ["ACE_fieldDressing",20],
                                 ["ACE_morphine",10],
-								["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-								["UK3CB_BAF_LLM_IR",1],
-								["UK3CB_BAF_Eotech",1],
-								["STKR_Predator",1],
+								["CUP_optic_ACOG",1],
+								["CUP_optic_HoloBlack",1],
 								["ACRE_PRC343",1]
 		];
 
@@ -103,10 +97,10 @@ if (g_class == "BAF_SL") then {
  if (g_class == "BAF_GRN") then {
         _tmp_weapons =
         [
-            ["UK3CB_BAF_L85A2_UGL",1],
+            ["CUP_arifle_L85A2_GL",1],
             ["ACE_Vector",1],
-			["UK3CB_BAF_L131A1",1],
-			["UK3CB_BAF_AT4_AP_Launcher",2]
+			["CUP_hgun_Glock17",1]
+			
 
 		];
 
@@ -114,7 +108,7 @@ if (g_class == "BAF_SL") then {
         [
             
 				["30Rnd_556x45_Stanag",50],
-				["UK3CB_BAF_17Rnd_9mm",15],
+				["CUP_17Rnd_9x19_glock17",15],
 				["1Rnd_HE_Grenade_shell", 40],
 				["1Rnd_Smoke_Grenade_shell", 10],
 				["1Rnd_SmokeRed_Grenade_shell", 10],
@@ -130,10 +124,8 @@ if (g_class == "BAF_SL") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-			 ["UK3CB_BAF_LLM_IR",1],
-		     ["UK3CB_BAF_Eotech",1],
-			 ["STKR_Predator",1],
+			 ["CUP_optic_ACOG",1],
+		     ["CUP_optic_HoloBlack",1],
 			 ["ACRE_PRC343",1]
 		];
 };
@@ -142,20 +134,16 @@ if (g_class == "BAF_SL") then {
  if (g_class == "BAF_AR") then {
         _tmp_weapons =
         [
-            ["UK3CB_BAF_L110A2",1],
-			["UK3CB_BAF_AT4_AP_Launcher",2],
-			["UK3CB_BAF_L131A1",1]
+            ["CUP_lmg_m249_para",1],
+			["CUP_hgun_Glock17",1]
 			 
 		];
 
         _tmp_magazines =
         [
             
-			["UK3CB_BAF_100Rnd",10],
-			["UK3CB_BAF_100Rnd_T",5],
-			["UK3CB_BAF_200Rnd",10],
-			["UK3CB_BAF_200Rnd_T",5],
-            ["UK3CB_BAF_17Rnd_9mm",15]
+			["CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1",20],
+            ["CUP_17Rnd_9x19_glock17",15]
         ];
 
 		_tmp_items =
@@ -164,9 +152,8 @@ if (g_class == "BAF_SL") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		     ["UK3CB_BAF_Eotech",1],
-			 ["UK3CB_BAF_LLM_IR",1],
+			 ["CUP_optic_ACOG",1],
+		     ["CUP_optic_HoloBlack",1],
 			 ["STKR_Predator",1],
 			 ["ACRE_PRC343",1]
 		];
@@ -178,14 +165,14 @@ if (g_class == "BAF_SL") then {
        _tmp_weapons =
         [
             ["UK3CB_BAF_L85A2_RIS",1],
-			["UK3CB_BAF_L131A1",1]
+			["CUP_hgun_Glock17",1]
 
 		];
 
         _tmp_magazines =
         [
             ["30Rnd_556x45_Stanag",50],
-             ["UK3CB_BAF_17Rnd_9mm",15]
+             ["CUP_17Rnd_9x19_glock17",15]
         ];
 
 		_tmp_items =
@@ -196,10 +183,8 @@ if (g_class == "BAF_SL") then {
 			["ACE_epinephrine",50],
 			["ACE_bloodIV",50],
 			["ACE_bodyBag",10],
-			["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		    ["UK3CB_BAF_Eotech",1],
-			["UK3CB_BAF_LLM_IR",1],
-			["STKR_Predator",1],
+			["CUP_optic_ACOG",1],
+		    ["CUP_optic_HoloBlack",1],
 			["ACRE_PRC343",1]
 		];
 };

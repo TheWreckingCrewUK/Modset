@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by jayman";
+comment "Exported from Arsenal by FakeMatty";
 
 comment "Remove existing items";
 removeAllWeapons player;
@@ -11,30 +11,26 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
-for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
-player addItemToUniform "ACE_EarPlugs";
-player addItemToUniform "ACRE_PRC343_ID_1";
-player addVest "UK3CB_BAF_V_Osprey_Rifleman_E";
-for "_i" from 1 to 8 do {player addItemToVest "UK3CB_BAF_30Rnd";};
-for "_i" from 1 to 2 do {player addItemToVest "UK3CB_BAF_30Rnd_T";};
-for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-player addBackpack "UK3CB_BAF_B_Bergen_MTP_PointMan_L_A";
-player addItemToBackpack "UK3CB_BAF_L128A1";
-for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-for "_i" from 1 to 5 do {player addItemToBackpack "UK3CB_BAF_L128A1_Pellets";};
-for "_i" from 1 to 3 do {player addItemToBackpack "UK3CB_BAF_L128A1_Slugs";};
-player addHeadgear "UK3CB_BAF_H_Mk7_Scrim_B";
+player forceAddUniform "U_mas_med_O_CombatUniform_irs";
+for "_i" from 1 to 6 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
+player addVest "V_mas_med_ME_armor_she";
+player addItemToVest "30Rnd_556x45_Stanag";
+player addBackpack "B_mas_Bergen_des";
+player addHeadgear "H_HelmetB_camo";
 
 comment "Add weapons";
-player addWeapon "UK3CB_BAF_L85A2_RIS";
-player addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
-player addPrimaryWeaponItem "UK3CB_BAF_SpecterLDS_Dot_3D";
-player addWeapon "UK3CB_BAF_NLAW_Launcher";
+player addWeapon "CUP_arifle_L85A2";
+player addPrimaryWeaponItem "CUP_optic_ACOG";
+player addWeapon "Binocular";
 
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "rhsusf_ANPVS_14";
+player linkItem "ItemRadioAcreFlagged";
+player linkItem "ItemGPS";
+player addItemToUniform "ACRE_PRC343";
+comment "Set identity";
+player setFace "GreekHead_A3_01";
+player setSpeaker "ACE_NoVoice";

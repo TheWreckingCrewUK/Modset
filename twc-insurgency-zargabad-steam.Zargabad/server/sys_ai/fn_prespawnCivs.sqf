@@ -2,7 +2,7 @@
 //if (!isDedicated) exitWith {};
 
 _group = createGroup civilian;
-_civilianType = "LOP_Tak_Civ_Man_01";
+_civilianType = "C_mas_med_Civil_1_1_F";
 _markerPlcacement = _this select 0;
 _placementRadius = _this select 1;
 

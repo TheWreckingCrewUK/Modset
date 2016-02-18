@@ -10,7 +10,7 @@ _amountToSpawn = _this select 2;
 
 _roadList = (getMarkerPos _spawnMarker) nearRoads _spawnRadius;
 _vehicle = 0;
-_vehicleList = ["C_Offroad_01_F", "rhs_uaz_open_chdkz", "C_SUV_01_F", "C_Quadbike_01_F", "C_Hatchback_01_F", "C_Hatchback_01_sport_F", "C_Van_01_transport_F","LOP_TAK_Civ_UAZ_Open","LOP_TAK_Civ_Ural_open"];
+_vehicleList = ["C_Offroad_01_F", "C_SUV_01_F", "C_Quadbike_01_F"];
 
 while {_vehicle < _amountToSpawn} do {
 	_roadPos = _roadList call BIS_fnc_selectRandom;

@@ -145,27 +145,27 @@ if (!isNil "P24" && {player == P24}) then {
 };
 
 if (!isNil "P25" && {player == P25}) then {
-    g_class = "FRE_SL";
+    g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "133";
 };
 if (!isNil "P26" && {player == P26}) then {
-    g_class = "FRE_RF";
+    g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "134";
 };
 if (!isNil "P27" && {player == P27}) then {
-    g_class = "FRE_GRN";
+    g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "135";
 };
 if (!isNil "P28" && {player == P28}) then {
-    g_class = "FRE_AR";
+    g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "136";
 };
 if (!isNil "P29" && {player == P29}) then {
-    g_class = "FRE_MED";
+    g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "137";
 };

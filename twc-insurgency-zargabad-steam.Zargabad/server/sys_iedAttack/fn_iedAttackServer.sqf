@@ -1,5 +1,5 @@
 
-params ["_location",["_spawnAmount",1],["_sqaudspawns",(configfile >> "CfgGroups" >> "Indep" >> "LOP_AM" >> "Infantry" >> "LOP_AM_Patrol_section")]];
+params ["_location",["_spawnAmount",1],["_sqaudspawns",(configfile >> "CfgGroups" >> "Indep" >> "mas_med_ind" >> "Infantry" >> "IND_mas_med_InfSentry_i")]];
 if (IsServer) then{
 	for "_i" from 1 to _spawnAmount do {
 		_spawnPos = [_location,[600,700]] call SHK_pos;

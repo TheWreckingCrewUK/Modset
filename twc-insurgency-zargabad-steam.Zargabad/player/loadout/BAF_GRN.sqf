@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by jayman";
+comment "Exported from Arsenal by FakeMatty";
 
 comment "Remove existing items";
 removeAllWeapons player;
@@ -11,32 +11,33 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
-player addItemToUniform "ACRE_PRC343_ID_2";
-for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
-player addItemToUniform "ACE_EarPlugs";
-player addVest "UK3CB_BAF_V_Osprey_Grenadier_B";
-for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-for "_i" from 1 to 8 do {player addItemToVest "UK3CB_BAF_30Rnd";};
-for "_i" from 1 to 2 do {player addItemToVest "UK3CB_BAF_30Rnd_T";};
-player addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
-for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-for "_i" from 1 to 12 do {player addItemToBackpack "1Rnd_HE_Grenade_shell";};
-for "_i" from 1 to 3 do {player addItemToBackpack "UGL_FlareWhite_F";};
-for "_i" from 1 to 3 do {player addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
-for "_i" from 1 to 3 do {player addItemToBackpack "1Rnd_SmokeRed_Grenade_shell";};
-player addHeadgear "UK3CB_BAF_H_Mk7_Scrim_A";
+player forceAddUniform "U_mas_med_O_CombatUniform_irs";
+for "_i" from 1 to 6 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
+player addItemToUniform "ACRE_PRC343_ID_1";
+for "_i" from 1 to 3 do {player addItemToUniform "CUP_17Rnd_9x19_glock17";};
+player addItemToUniform "CUP_30Rnd_556x45_Stanag";
+player addVest "V_mas_med_ME_armor_she";
+for "_i" from 1 to 2 do {player addItemToVest "CUP_30Rnd_556x45_Stanag";};
+player addBackpack "B_mas_Bergen_des";
+for "_i" from 1 to 5 do {player addItemToBackpack "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 2 do {player addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
+player addHeadgear "H_HelmetB_camo";
 
 comment "Add weapons";
-player addWeapon "UK3CB_BAF_L85A2_UGL";
-player addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
-player addPrimaryWeaponItem "UK3CB_BAF_SpecterLDS_Dot_3D";
-player addWeapon "UK3CB_BAF_AT4_CS_AT_Launcher";
+player addWeapon "CUP_arifle_L85A2_GL";
+player addPrimaryWeaponItem "CUP_optic_ACOG";
+player addWeapon "CUP_hgun_Glock17";
+player addWeapon "Binocular";
 
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadioAcreFlagged";
-player linkItem "rhsusf_ANPVS_14";
+player linkItem "ItemGPS";
+
+comment "Set identity";
+player setFace "GreekHead_A3_01";
+player setSpeaker "ACE_NoVoice";
+
