@@ -1,47 +1,33 @@
-
-comment "Exported from Arsenal by FakeMatty";
+comment "Exported from Arsenal by jayman";
 
 comment "Remove existing items";
-removeAllWeapons this;
-removeAllItems this;
-removeAllAssignedItems this;
-removeUniform this;
-removeVest this;
-removeBackpack this;
-removeHeadgear this;
-removeGoggles this;
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
 
 comment "Add containers";
-this forceAddUniform "rhs_uniform_cu_ocp";
-for "_i" from 1 to 2 do {this addItemToUniform "AGM_Bandage";};
-for "_i" from 1 to 2 do {this addItemToUniform "AGM_Morphine";};
-this addItemToUniform "SmokeShell";
-for "_i" from 1 to 2 do {this addItemToUniform "Chemlight_green";};
-for "_i" from 1 to 3 do {this addItemToUniform "30Rnd_556x45_Stanag";};
-this addVest "rhsusf_iotv_ocp_Repair";
-this addItemToVest "AGM_Bloodbag";
-this addItemToVest "AGM_Morphine";
-for "_i" from 1 to 3 do {this addItemToVest "SmokeShellGreen";};
-for "_i" from 1 to 2 do {this addItemToVest "30Rnd_556x45_Stanag";};
-for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};
-for "_i" from 1 to 2 do {this addItemToVest "SmokeShellYellow";};
-for "_i" from 1 to 2 do {this addItemToVest "SmokeShellRed";};
-for "_i" from 1 to 2 do {this addItemToVest "SmokeShellPurple";};
-for "_i" from 1 to 2 do {this addItemToVest "SmokeShellBlue";};
-this addHeadgear "H_HelmetCrew_I";
+player forceAddUniform "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
+for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
+player addItemToUniform "ACE_EarPlugs";
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
+player addVest "CUP_V_B_MTV";
+for "_i" from 1 to 6 do {player addItemToVest "30Rnd_556x45_Stanag";};
+for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
+player addHeadgear "H_HelmetCrew_I";
 
 comment "Add weapons";
-this addWeapon "rhs_weap_m4";
-this addWeapon "CUP_hgun_M9";
-this addWeapon "AGM_Vector";
+player addWeapon "CUP_arifle_M4A1_desert";
+player addPrimaryWeaponItem "CUP_optic_CompM2_Desert";
+player addWeapon "CUP_hgun_M9";
 
 comment "Add items";
-this linkItem "ItemMap";
-this linkItem "ItemCompass";
-this linkItem "tf_microdagr";
-this linkItem "tf_anprc148jem";
-this linkItem "ItemGPS";
-
-comment "Set identity";
-this setFace "WhiteHead_12";
-this setSpeaker "Male11ENG";
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "ItemRadioAcreFlagged";
+player linkItem "ItemGPS";
+player linkItem "CUP_NVG_PVS7";

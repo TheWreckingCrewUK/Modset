@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by FakeMatty";
+comment "Exported from Arsenal by jayman";
 
 comment "Remove existing items";
 removeAllWeapons player;
@@ -11,21 +11,34 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "rhs_uniform_FROG01_d";
-player additemtoUniform "ACRE_PRC148";
-player addVest "rhsusf_spc_rifleman";
-player addBackpack "rhsusf_assault_eagleaiii_coy";
-player additemtobackpack "ACRE_PRC117F";
-player addHeadgear "rhsusf_mich_helmet_marpatd";
+player forceAddUniform "CUP_U_B_FR_DirAction2";
+for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
+player addItemToUniform "ACE_EarPlugs";
+player addItemToUniform "ACRE_PRC148";
+player addVest "CUP_V_B_MTV_TL";
+for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
+player addItemToVest "3Rnd_HE_Grenade_shell";
+for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
+for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
+player addBackpack "CUP_B_USPack_Coyote";
+player addItemToBackpack "ACRE_PRC117F";
+for "_i" from 1 to 2 do {player addItemToBackpack "3Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 12 do {player addItemToBackpack "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 3 do {player addItemToBackpack "UGL_FlareWhite_F";};
+for "_i" from 1 to 3 do {player addItemToBackpack "UGL_FlareGreen_F";};
+for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
+player addHeadgear "CUP_H_FR_ECH";
 
 comment "Add weapons";
+player addWeapon "CUP_arifle_M16A4_GL";
+player addPrimaryWeaponItem "CUP_acc_ANPEQ_15";
+player addPrimaryWeaponItem "CUP_optic_ACOG";
+player addWeapon "ACE_Vector";
 
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "rhsusf_ANPVS_14";
-
-comment "Set identity";
-player setFace "GreekHead_A3_01";
-player setSpeaker "AGM_NoVoice";
+player linkItem "ItemRadioAcreFlagged";
+player linkItem "CUP_NVG_PVS7";

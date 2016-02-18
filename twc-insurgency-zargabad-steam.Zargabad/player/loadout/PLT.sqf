@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by FakeMatty";
+comment "Exported from Arsenal by jayman";
 
 comment "Remove existing items";
 removeAllWeapons player;
@@ -11,34 +11,26 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "rhs_uniform_cu_ocp_1stcav";
+player forceAddUniform "U_B_HeliPilotCoveralls";
+for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
+player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACRE_PRC148";
-for "_i" from 1 to 8 do {player addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 4 do {player addItemToUniform "ACE_morphine";};
-player addItemToUniform "Chemlight_blue";
-for "_i" from 1 to 2 do {player addItemToUniform "rhsusf_mag_7x45acp_MHP";};
-player addVest "rhsusf_iotv_ocp";
-player addItemToUniform "ACE_Earplugs";
-for "_i" from 1 to 2 do {player addItemToVest "ACE_fieldDressing";};
-player addItemToVest "ACE_morphine";
-player addItemToVest "rhsusf_mag_7x45acp_MHP";
-for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
-player addbackpack "B_AssaultPack_blk";
+player addItemToUniform "ACE_DAGR";
+player addVest "CUP_V_B_PilotVest";
+for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
+for "_i" from 1 to 3 do {player addItemToVest "ACE_HandFlare_White";};
+for "_i" from 1 to 3 do {player addItemToVest "CUP_7Rnd_45ACP_1911";};
+player addBackpack "B_AssaultPack_khk";
 player addItemToBackpack "ACRE_PRC117F";
-player addItemToBackpack "ACE_DAGR";
-for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShell";};
-for "_i" from 1 to 2 do {player addItemToBackpack "Chemlight_green";};
 player addHeadgear "H_PilotHelmetHeli_B";
-player addGoggles "rhs_googles_black";
 
 comment "Add weapons";
-player addWeapon "rhsusf_weap_m1911a1";
+player addWeapon "CUP_hgun_Colt1911";
 
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-
-comment "Set identity";
-player setFace "GreekHead_A3_07";
-player setSpeaker "Male02GRE";
+player linkItem "ItemRadioAcreFlagged";
+player linkItem "CUP_NVG_PVS7";

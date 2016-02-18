@@ -28,7 +28,7 @@ _tmp_items = [];
 if (g_class == "ANA_SL") then {
                 _tmp_weapons =
                 [
-                                ["rhs_weap_m16a4_carryhandle_grip",1]
+                                ["CUP_arifle_M16A2",1]
 
                 ];
 
@@ -48,7 +48,6 @@ if (g_class == "ANA_SL") then {
 								["ACE_epinephrine",5],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
-								["rhsusf_acc_anpeq15_light",1],
 								["ACE_M26_Clacker",1]
 
                 ];
@@ -58,7 +57,7 @@ if (g_class == "ANA_SL") then {
  if (g_class == "ANA_RF") then {
         _tmp_weapons =
         [
-								["rhs_weap_m16a4_carryhandle_grip",1]
+								["CUP_arifle_M16A2",1]
         ];
 
         _tmp_magazines =
@@ -70,7 +69,6 @@ if (g_class == "ANA_SL") then {
 		_tmp_items = [
 
                                 ["ACE_MapTools",1],
-								["rhsusf_acc_anpeq15_light",1],
                                 ["ACE_fieldDressing",20],
                                 ["ACE_morphine",10]
 		];
@@ -84,8 +82,8 @@ if (g_class == "ANA_SL") then {
  if (g_class == "ANA_GRN") then {
         _tmp_weapons =
         [
-            ["rhs_weap_m16a4_carryhandle_grip",1],
-			["rhs_weap_rpg7",1]
+            ["CUP_arifle_M16A2",1],
+			["CUP_launch_RPG7V",1]
 
 		];
 
@@ -93,14 +91,13 @@ if (g_class == "ANA_SL") then {
         [
             
 				["30Rnd_556x45_Stanag",50],
-				["rhs_rpg7_pg7vl_mag",15]
+				["CUP_PG7V_M",15]
         ];
 
 		_tmp_items =
 		[
 
              ["ACE_MapTools",1],
-			 ["rhsusf_acc_anpeq15_light",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10]
 		];
@@ -110,14 +107,14 @@ if (g_class == "ANA_SL") then {
  if (g_class == "ANA_AR") then {
         _tmp_weapons =
         [
-            ["rhs_weap_pkm",1]
+            ["CUP_lmg_PKM",1]
 			 
 		];
 
         _tmp_magazines =
         [
             
-			["rhs_100RND_762x54mmR",10]
+			["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",10]
         ];
 
 		_tmp_items =
@@ -134,7 +131,7 @@ if (g_class == "ANA_SL") then {
  if (g_class == "ANA_MED") then {
        _tmp_weapons =
         [
-            ["rhs_weap_m16a4_carryhandle_grip",1]
+            ["CUP_arifle_M16A2",1]
 
 		];
 
@@ -145,8 +142,6 @@ if (g_class == "ANA_SL") then {
 
 		_tmp_items =
 		[
-
-			["rhsusf_acc_anpeq15_light",1],
 			["ACE_fieldDressing",50],
 			["ACE_morphine",50],
 			["ACE_epinephrine",50],
