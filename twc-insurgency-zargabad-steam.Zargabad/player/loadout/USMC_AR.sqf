@@ -28,7 +28,6 @@ player addHeadgear "CUP_H_FR_ECH";
 comment "Add weapons";
 player addWeapon "CUP_lmg_M240";
 player addPrimaryWeaponItem "CUP_optic_ACOG";
-player addWeapon "CUP_launch_M136";
 player addWeapon "ACE_Vector";
 
 comment "Add items";

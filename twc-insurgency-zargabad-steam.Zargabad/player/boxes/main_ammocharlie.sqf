@@ -147,8 +147,6 @@ if (g_class == "USMC_AR") then {
         [
 			["CUP_lmg_M240",1],
             ["CUP_lmg_M249_E2",1],
-			["rhs_weap_m27iar",1],
-			["CUP_launch_M136",2],
 			["CUP_hgun_Colt1911",1]
 
 		];
@@ -158,7 +156,6 @@ if (g_class == "USMC_AR") then {
 			["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",10],
 			["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",10],
 			["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",5],
-			["CUP_M136_M",2],
             ["CUP_7Rnd_45ACP_1911",15]
         ];
 
@@ -171,7 +168,6 @@ if (g_class == "USMC_AR") then {
 			 ["CUP_optic_ACOG",1],
 		     ["CUP_optic_HoloBlack",1],
 			 ["CUP_acc_ANPEQ_15",1],
-			 ["bipod_01_F_blk",1],
 			 ["CUP_optic_ACOG",1],
 			 ["ACRE_PRC148",1]
 		];

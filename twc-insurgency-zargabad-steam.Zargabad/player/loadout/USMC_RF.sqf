@@ -22,6 +22,7 @@ for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
 player addBackpack "CUP_B_USPack_Coyote";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
+player addItemToBackpack "CUP_M136_M";
 player addHeadgear "CUP_H_FR_ECH";
 
 comment "Add weapons";
