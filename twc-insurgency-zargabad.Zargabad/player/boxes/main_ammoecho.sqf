@@ -29,7 +29,8 @@ _tmp_items = [];
        _tmp_weapons =
         [
 
-			["R3F_Famas_G2_DES",1]
+			["R3F_Famas_G2_DES",1],
+			["ACE_Vector",1]
 
 
 		];
@@ -85,7 +86,8 @@ _tmp_items = [];
         [
 
 			["R3F_Famas_G2_M203_DES",1],
-			["UK3CB_BAF_AT4_AP_Launcher",2]
+			["UK3CB_BAF_AT4_AP_Launcher",2],
+			["ACE_Vector",1]
 
 
 		];
@@ -127,8 +129,7 @@ _tmp_items = [];
         _tmp_magazines =
         [
 
-             ["R3F_200Rnd_556x45_MINIMI",50],
-			 ["R3F_200Rnd_556x45_TRACER_MINIMI",50]
+             ["R3F_200Rnd_556x45_MINIMI",50]
 
         ];
 

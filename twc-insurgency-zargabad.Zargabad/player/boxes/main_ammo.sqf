@@ -57,7 +57,8 @@ if (g_class == "BAF_SL") then {
 								["UK3CB_BAF_Eotech",1],
 								["STKR_Predator",1],
 								["ACE_DAGR",1],
-								["ACRE_PRC343",1]
+								["ACRE_PRC343",1],
+								["UK3CB_BAF_LLM_IR_Black",1]
 
                 ];
 };
@@ -91,7 +92,8 @@ if (g_class == "BAF_SL") then {
 								["UK3CB_BAF_LLM_IR",1],
 								["UK3CB_BAF_Eotech",1],
 								["STKR_Predator",1],
-								["ACRE_PRC343",1]
+								["ACRE_PRC343",1],
+								["UK3CB_BAF_LLM_IR_Black",1]
 		];
 
 
@@ -134,7 +136,8 @@ if (g_class == "BAF_SL") then {
 			 ["UK3CB_BAF_LLM_IR",1],
 		     ["UK3CB_BAF_Eotech",1],
 			 ["STKR_Predator",1],
-			 ["ACRE_PRC343",1]
+			 ["ACRE_PRC343",1],
+			 ["UK3CB_BAF_LLM_IR_Black",1]
 		];
 };
 
@@ -168,7 +171,8 @@ if (g_class == "BAF_SL") then {
 		     ["UK3CB_BAF_Eotech",1],
 			 ["UK3CB_BAF_LLM_IR",1],
 			 ["STKR_Predator",1],
-			 ["ACRE_PRC343",1]
+			 ["ACRE_PRC343",1],
+			 ["UK3CB_BAF_LLM_IR_Black",1]
 		];
 };
 
@@ -200,7 +204,8 @@ if (g_class == "BAF_SL") then {
 		    ["UK3CB_BAF_Eotech",1],
 			["UK3CB_BAF_LLM_IR",1],
 			["STKR_Predator",1],
-			["ACRE_PRC343",1]
+			["ACRE_PRC343",1],
+			["UK3CB_BAF_LLM_IR_Black",1]
 		];
 };
 {

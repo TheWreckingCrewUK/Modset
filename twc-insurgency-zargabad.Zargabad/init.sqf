@@ -1,33 +1,10 @@
-/*
-* Start of HeadlessClient Addition
-* If you are not a server it waits until a player is a player
-* The has a check if the Headless Client is present or not.
-* If the Headless Client is present and doesn't have an interface or is the the server it does Everything in server folder
-* If the Headless Client is present isn't dedicated, but is a server it runs the server folder. This is for the editor
-* Else if the Headless Client isn't connected it gives a warning and then runs the server folder off of the dedicated server.
-*/
+
 if(!isServer) then {waitUntil {!isNull player}};
-/*
-HCPresent = if(isNil "HC") then{False} else {True};
-if(HCPresent) then{
-	if(!hasInterface && !isServer) then{
-		execVM "server\init.sqf";
-	};
-	if(!isDedicated && isServer) then{
-		execVM "server\init.sqf";
-	};
-} else{
-	if(isDedicated) then{
-		systemChat "HeadlessClient Not Connected!";
-		execVM "server\init.sqf";
-	};
-};
-*/
+
 if (isServer) then {execVM "server\init.sqf";};
 execVM "Zues.sqf";
 execVM "Zues-Fakematty.sqf";
 execVM "Zues-jayman.sqf";
-execVM "SHK_pos\shk_pos_init.sqf";
 if(!hasInterface && !isDedicated) then {
    execVM "hc\init.sqf";
 };
@@ -173,5 +150,3 @@ cutText ["", "BLACK IN", 2];
 
 titleText ["Enjoy your stay", "PLAIN"];
 titleFadeOut 4;
-
-//execVM "client\sys_ambient\ambientCiv.sqf";

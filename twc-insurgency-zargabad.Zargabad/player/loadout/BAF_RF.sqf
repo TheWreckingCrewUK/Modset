@@ -31,10 +31,11 @@ comment "Add weapons";
 player addWeapon "UK3CB_BAF_L85A2_RIS";
 player addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
 player addPrimaryWeaponItem "UK3CB_BAF_SpecterLDS_Dot_3D";
-player addWeapon "UK3CB_BAF_NLAW_Launcher";
+player addWeapon "UK3CB_BAF_AT4_AP_Launcher";
 
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
+player linkItem "ItemRadioAcreFlagged";
 player linkItem "rhsusf_ANPVS_14";

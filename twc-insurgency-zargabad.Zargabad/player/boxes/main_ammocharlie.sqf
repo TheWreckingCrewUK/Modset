@@ -37,6 +37,7 @@ _tmp_items = [];
                 _tmp_magazines =
                 [
                                 ["30Rnd_556x45_Stanag",50],
+								["30Rnd_556x45_Stanag_Tracer_Red",10],
                                 ["rhsusf_mag_7x45acp_MHP",15]
 
 
@@ -54,7 +55,7 @@ _tmp_items = [];
 								["ACE_M26_Clacker",1],
 								["UK3CB_BAF_TA31F_3D",1],
 								["UK3CB_BAF_Eotech",1],
-								["rhsusf_acc_anpeq15A",1],
+								["rhsusf_acc_anpeq15",1],
 								["rhsusf_assault_eagleaiii_ocp",1],
 								["1Rnd_HE_Grenade_shell", 40],
 	                            ["1Rnd_Smoke_Grenade_shell", 10],
@@ -80,6 +81,7 @@ _tmp_items = [];
                 _tmp_magazines =
                 [
                                 ["30Rnd_556x45_Stanag",50],
+								["30Rnd_556x45_Stanag_Tracer_Red",10],
                                 ["rhsusf_mag_7x45acp_MHP",15]
 
 
@@ -121,7 +123,7 @@ _tmp_items = [];
         _tmp_magazines =
         [
              ["30Rnd_556x45_Stanag",50],
-			 
+			 ["30Rnd_556x45_Stanag_Tracer_Red",10],
              ["rhsusf_mag_7x45acp_MHP",15]
 
 
@@ -155,7 +157,10 @@ if (g_class == "USMC_AR") then {
         [
             ["rhsusf_100Rnd_556x45_soft_pouch",20],
 			["rhsusf_200Rnd_556x45_soft_pouch",10],
+			["rhsusf_100Rnd_762x51_m61_ap",10],
+			["rhsusf_100Rnd_762x51_m62_tracer",5],
 			["30Rnd_556x45_Stanag",50],
+			["30Rnd_556x45_Stanag_Tracer_Red",20],
             ["rhsusf_mag_7x45acp_MHP",15]
         ];
 
@@ -185,7 +190,8 @@ if (g_class == "USMC_AR") then {
         _tmp_magazines =
         [
             ["30Rnd_556x45_Stanag",50],
-             ["rhsusf_mag_7x45acp_MHP",15]
+			["30Rnd_556x45_Stanag_Tracer_Red",10],
+            ["rhsusf_mag_7x45acp_MHP",15]
         ];
 
 		_tmp_items =

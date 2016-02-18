@@ -28,7 +28,7 @@ _tmp_items = [];
 if (g_class == "ANA_SL") then {
                 _tmp_weapons =
                 [
-                                ["rhs_weap_m16a4_carryhandle_grip",1]
+                                ["rhs_weap_m16a4_carryhandle",1]
 
                 ];
 
@@ -48,7 +48,7 @@ if (g_class == "ANA_SL") then {
 								["ACE_epinephrine",5],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
-								["rhsusf_acc_anpeq15_light",1],
+								["acc_flashlight",1],
 								["ACE_M26_Clacker",1]
 
                 ];
@@ -58,19 +58,21 @@ if (g_class == "ANA_SL") then {
  if (g_class == "ANA_RF") then {
         _tmp_weapons =
         [
-								["rhs_weap_m16a4_carryhandle_grip",1]
+								["rhs_weap_m16a4_carryhandle",1],
+								["rhs_weap_rpg26",2]
         ];
 
         _tmp_magazines =
         [
 								
-								["30Rnd_556x45_Stanag",50]
+								["30Rnd_556x45_Stanag",50],
+								["HandGrenade",5]
 			];
 
 		_tmp_items = [
 
                                 ["ACE_MapTools",1],
-								["rhsusf_acc_anpeq15_light",1],
+								["acc_flashlight",1],
                                 ["ACE_fieldDressing",20],
                                 ["ACE_morphine",10]
 		];
@@ -84,7 +86,7 @@ if (g_class == "ANA_SL") then {
  if (g_class == "ANA_GRN") then {
         _tmp_weapons =
         [
-            ["rhs_weap_m16a4_carryhandle_grip",1],
+            ["rhs_weap_m16a4_carryhandle",1],
 			["rhs_weap_rpg7",1]
 
 		];
@@ -100,7 +102,7 @@ if (g_class == "ANA_SL") then {
 		[
 
              ["ACE_MapTools",1],
-			 ["rhsusf_acc_anpeq15_light",1],
+			 ["acc_flashlight",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10]
 		];
@@ -134,7 +136,7 @@ if (g_class == "ANA_SL") then {
  if (g_class == "ANA_MED") then {
        _tmp_weapons =
         [
-            ["rhs_weap_m16a4_carryhandle_grip",1]
+            ["rhs_weap_m16a4_carryhandle",1]
 
 		];
 
@@ -146,7 +148,7 @@ if (g_class == "ANA_SL") then {
 		_tmp_items =
 		[
 
-			["rhsusf_acc_anpeq15_light",1],
+			["acc_flashlight",1],
 			["ACE_fieldDressing",50],
 			["ACE_morphine",50],
 			["ACE_epinephrine",50],

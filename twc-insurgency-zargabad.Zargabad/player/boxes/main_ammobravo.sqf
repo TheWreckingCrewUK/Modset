@@ -36,6 +36,7 @@ if (g_class == "US_SL") then {
                 _tmp_magazines =
                 [
                                 ["30Rnd_556x45_Stanag",50],
+								["30Rnd_556x45_Stanag_Tracer_Red",10],
                                 ["rhsusf_mag_7x45acp_MHP",15],
 								["1Rnd_HE_Grenade_shell", 40],
 	                            ["1Rnd_Smoke_Grenade_shell", 10],
@@ -58,7 +59,7 @@ if (g_class == "US_SL") then {
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
 								["UK3CB_BAF_TA31F_3D",1],
-								["rhsusf_acc_anpeq15A",1],
+								["rhsusf_acc_anpeq15",1],
 								["UK3CB_BAF_Eotech",1],
 								["ACE_DAGR",1],
 								["rhsusf_assault_eagleaiii_ucp",1],
@@ -71,7 +72,7 @@ if (g_class == "US_SL") then {
  if (g_class == "US_RF") then {
         _tmp_weapons =
         [
-            ["rhs_weap_m4",1],
+            ["rhs_weap_m4a1_carryhandle_grip",1],
 			["rhsusf_weap_m1911a1",1],
 			["UK3CB_BAF_AT4_AP_Launcher",4]
 
@@ -79,9 +80,8 @@ if (g_class == "US_SL") then {
 
         _tmp_magazines =
         [
-
-			["rhs_m136_mag", 4],
 			["30Rnd_556x45_Stanag",50],
+			["30Rnd_556x45_Stanag_Tracer_Red",10],
             ["rhsusf_mag_7x45acp_MHP",15]
         ];
 
@@ -144,7 +144,7 @@ if (g_class == "US_SL") then {
         _tmp_magazines =
         [
             ["30Rnd_556x45_Stanag",50],
-			
+			["30Rnd_556x45_Stanag_Tracer_Red",10],
 			["rhsusf_mag_7x45acp_MHP",15],
 								["1Rnd_HE_Grenade_shell", 40],
 	                            ["1Rnd_Smoke_Grenade_shell", 10],
@@ -172,7 +172,7 @@ if (g_class == "US_SL") then {
  if (g_class == "US_MED") then {
        _tmp_weapons =
         [
-             ["rhs_weap_m4_carryhandle",1],
+             ["rhs_weap_m4a1_carryhandle_grip",1],
 	         ["rhsusf_weap_m1911a1", 1]
 
 		];
@@ -180,7 +180,7 @@ if (g_class == "US_SL") then {
         _tmp_magazines =
         [
              ["30Rnd_556x45_Stanag",50],
-			 
+			 ["30Rnd_556x45_Stanag_Tracer_Red",10],
              ["rhsusf_mag_7x45acp_MHP",15]
         ];
 

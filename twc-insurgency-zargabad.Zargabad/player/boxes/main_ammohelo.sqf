@@ -25,30 +25,7 @@ _tmp_magazines = [];
 _tmp_items = [];
 
 //load availible to pilots only
- if (g_class == "PILOT_WILDCAT") then {
-       _tmp_weapons =
-        [
-
-			["UK3CB_BAF_L131A1",1]
-
-		];
-
-        _tmp_magazines =
-        [
-
-             ["UK3CB_BAF_17Rnd_9mm",15]
-        ];
-
-		_tmp_items =
-		[
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-			 ["ACRE_PRC148",1]
-		];
-};
- if (g_class == "PILOT_CHINNOK") then {
+ if (g_class == "PLT") then {
        _tmp_weapons =
         [
 
@@ -71,7 +48,30 @@ _tmp_items = [];
 			 ["ACRE_PRC148",1]
 		];
 };
- if (g_class == "PILOT_BLACKHAWK") then {
+ if (g_class == "ARMOUR") then {
+       _tmp_weapons =
+        [
+
+			["rhsusf_weap_m1911a1",1]
+
+		];
+
+        _tmp_magazines =
+        [
+
+             ["rhsusf_mag_7x45acp_MHP",15]
+        ];
+
+		_tmp_items =
+		[
+
+             ["ACE_MapTools",1],
+             ["ACE_fieldDressing",20],
+             ["ACE_morphine",10],
+			 ["ACRE_PRC148",1]
+		];
+};
+ if (g_class == "ARMOURCREW") then {
        _tmp_weapons =
         [
 

@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by FakeMatty";
+comment "Exported from Arsenal by jayman";
 
 comment "Remove existing items";
 removeAllWeapons player;
@@ -12,22 +12,17 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "rhs_uniform_cu_ocp_1stcav";
+for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
+player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACRE_PRC148";
-for "_i" from 1 to 8 do {player addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 4 do {player addItemToUniform "ACE_morphine";};
-player addItemToUniform "Chemlight_blue";
-for "_i" from 1 to 2 do {player addItemToUniform "rhsusf_mag_7x45acp_MHP";};
+player addItemToUniform "ACE_DAGR";
+player addItemToUniform "ACE_MapTools";
 player addVest "rhsusf_iotv_ocp";
-player addItemToUniform "ACE_Earplugs";
-for "_i" from 1 to 2 do {player addItemToVest "ACE_fieldDressing";};
-player addItemToVest "ACE_morphine";
-player addItemToVest "rhsusf_mag_7x45acp_MHP";
-for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
-player addbackpack "B_AssaultPack_blk";
+for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_7x45acp_MHP";};
+player addBackpack "B_AssaultPack_blk";
 player addItemToBackpack "ACRE_PRC117F";
-player addItemToBackpack "ACE_DAGR";
-for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShell";};
-for "_i" from 1 to 2 do {player addItemToBackpack "Chemlight_green";};
+for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 player addHeadgear "H_PilotHelmetHeli_B";
 player addGoggles "rhs_googles_black";
 
@@ -38,7 +33,3 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-
-comment "Set identity";
-player setFace "GreekHead_A3_07";
-player setSpeaker "Male02GRE";
