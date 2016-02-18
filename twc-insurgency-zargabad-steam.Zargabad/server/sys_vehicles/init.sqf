@@ -1,0 +1,22 @@
+["gasStation", 50, 3] execVM "server\sys_vehicles\vehicleSetup.sqf";
+["shahbazNorthEast", 100, 2] execVM "server\sys_vehicles\vehicleSetup.sqf";
+["shahbazSouthEast", 100, 2] execVM "server\sys_vehicles\vehicleSetup.sqf";
+["southMilitaryBase", 200, 2] execVM "server\sys_vehicles\vehicleSetup.sqf";
+["southMilitaryBaseWest", 40, 1] execVM "server\sys_vehicles\vehicleSetup.sqf";
+["SouthMilitaryBaseNorthWest", 50, 1] execVM "server\sys_vehicles\vehicleSetup.sqf";
+["damSouth", 50, 1] execVM "server\sys_vehicles\vehicleSetup.sqf";
+["damNorth", 50, 1] execVM "server\sys_vehicles\vehicleSetup.sqf";
+["azizaytSouth", 200, 3] execVM "server\sys_vehicles\vehicleSetup.sqf";
+["azizaytNorth", 200, 3] execVM "server\sys_vehicles\vehicleSetup.sqf";
+["villa", 100, 3] execVM "server\sys_vehicles\vehicleSetup.sqf";
+
+["Shahbaz", 200, 4] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
+["Yarum", 200, 4] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
+["YarumEast", 100, 2] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
+["ZargabadEast", 300, 3] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
+["ZargabadWest", 300, 3] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
+["ZargabadNorth", 300, 3] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
+["ZargabadCenter", 350, 2] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
+["ZargabadSouth", 300, 3] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
+["Nango", 200, 4] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
+["MilitaryBase", 300, 3] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
