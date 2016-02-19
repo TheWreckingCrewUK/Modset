@@ -24,7 +24,7 @@ class CfgFunctions
 {
 	class TWC
 	{
-		class Functions
+		class FunctionsWarrior
 		{
 			file="twc_Warrior\functions";
 			class AddAP
