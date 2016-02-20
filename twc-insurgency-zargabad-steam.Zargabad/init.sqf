@@ -175,3 +175,5 @@ titleText ["Enjoy your stay", "PLAIN"];
 titleFadeOut 4;
 
 //execVM "client\sys_ambient\ambientCiv.sqf";
+
+CutScreenCheck = True;

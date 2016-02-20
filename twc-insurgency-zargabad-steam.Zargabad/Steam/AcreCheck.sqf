@@ -1,4 +1,4 @@
-
+waituntil {CutScreenCheck};
 
 _HasAcre = isClass (configfile >> "CfgWeapons" >> "ACRE_PRC117F");
 

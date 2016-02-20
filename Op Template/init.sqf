@@ -39,6 +39,14 @@
 [] execVM "operation_framework\WarriorSetup\AddAction.sqf";
 [] execVM "operation_framework\C130Setup\AddAction.sqf";
 
+/*/////////////////////////////////////////////////////////
+/                             AI                          /
+/                           Setup                         /
+/////////////////////////////////////////////////////////*/
+If (isserver) then {
+	[] execVM "operation_framework\AIFix\Coldwar.sqf";
+};
+
 /*//////////////////////////////////////////////////////////
 /                         Headless                        /
                            Client                         /
