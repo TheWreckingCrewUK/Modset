@@ -34,7 +34,3 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadioAcreFlagged";
-
-comment "Set identity";
-player setFace "WhiteHead_16";
-player setSpeaker "rhs_Male03RUS";

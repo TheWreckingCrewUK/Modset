@@ -28,12 +28,5 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadio";
 
-comment "Set identity";
-player setFace "WhiteHead_16";
-player setSpeaker "rhs_Male03RUS";
-
-if(true) exitWith{};
-
-
 
 

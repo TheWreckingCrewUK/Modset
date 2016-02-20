@@ -113,7 +113,7 @@ _tmp_items = [];
  if (g_class == "USMC_RF") then {
         _tmp_weapons =
         [
-            ["rhs_weap_m16a4_grip",1],
+            ["CUP_arifle_M16A4_Base",1],
 			["CUP_hgun_Colt1911",1],
 			["UK3CB_BAF_AT4_AP_Launcher",2]
 
@@ -196,7 +196,6 @@ if (g_class == "USMC_AR") then {
 			["CUP_optic_ACOG",1],
 		     ["CUP_optic_HoloBlack",1],
 			 ["CUP_acc_ANPEQ_15",1],
-			 ["rhsusf_assault_eagleaiii_ocp",1],
 			 ["ACRE_PRC148",1]
 		];
 };
