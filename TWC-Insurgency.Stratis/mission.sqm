@@ -1940,7 +1940,7 @@ class Mission
 			azimut=552.883;
 			id=81;
 			side="EMPTY";
-			vehicle="BAF_Jackal2_L2A1_W_DG1";
+			vehicle="CUP_B_Jackal2_L2A1_GB_W";
 			leader=1;
 			skill=0.44999999;
 			text="vehicle3";
