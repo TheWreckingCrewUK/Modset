@@ -1,3 +1,4 @@
+/*
 local _allowedWeapons = [
     "",
     "rhs_weap_ak74m",

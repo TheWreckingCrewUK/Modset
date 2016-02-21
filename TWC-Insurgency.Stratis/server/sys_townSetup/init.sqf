@@ -1,12 +1,14 @@
-//area 1
-execVM "server\sys_townSetup\area1\kaminoArea.sqf";
-execVM "server\sys_townSetup\area1\campRogainArea.sqf";
-execVM "server\sys_townSetup\area1\keirosLimeriBayArea.sqf";
-execVM "server\sys_townSetup\area1\oldOutpostArea.sqf";
-execVM "server\sys_townSetup\area1\airStationMikeArea.sqf";
+//Made by [TWC]jayman using code from [TWC]WiredTiger
+//calls each towns init
 
-//area 2
-execVM "server\sys_townSetup\area2\girnaArea.sqf";
-execVM "server\sys_townSetup\area2\connorArea.sqf";
-execVM "server\sys_townSetup\area2\tempestArea.sqf";
-execVM "server\sys_townSetup\area2\maxwellArea.sqf";
+execVM "server\sys_townSetup\AgiaMarina\init.sqf";
+execVM "server\sys_townSetup\AgiosCephas\init.sqf";
+execVM "server\sys_townSetup\AirStationMike\init.sqf";
+execVM "server\sys_townSetup\CampMaxwell\init.sqf";
+execVM "server\sys_townSetup\CampRogain\init.sqf";
+execVM "server\sys_townSetup\CampTempest\init.sqf";
+execVM "server\sys_townSetup\Girna\init.sqf";
+execVM "server\sys_townSetup\KaminoFireingRange\init.sqf";
+execVM "server\sys_townSetup\MilitaryBase\init.sqf";
+execVM "server\sys_townSetup\OldOutpost\init.sqf";
+execvM "server\sys_townSetup\func\init.sqf";

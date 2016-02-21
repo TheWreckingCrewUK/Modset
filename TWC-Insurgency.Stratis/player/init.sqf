@@ -91,31 +91,31 @@ if (!isNil "P15" && {player == P15}) then {
 };
 
 if (!isNil "P16" && {player == P16}) then {
-    g_class = "BAF_SL";
+    g_class = "ANA_SL";
 	g_group = "1";
 	g_unit = "112";
 };
 
 if (!isNil "P17" && {player == P17}) then {
-    g_class = "BAF_RF";
+    g_class = "ANA_RF";
 	g_group = "1";
 	g_unit = "113";
 };
 
 if (!isNil "P18" && {player == P18}) then {
-    g_class = "BAF_GRN";
+    g_class = "ANA_GRN";
 	g_group = "1";
 	g_unit = "120";
 };
 
 if (!isNil "P19" && {player == P19}) then {
-    g_class = "BAF_AR";
+    g_class = "ANA_AR";
 	g_group = "1";
 	g_unit = "121";
 };
 
 if (!isNil "P20" && {player == P20}) then {
-    g_class = "BAF_MED";
+    g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "122";
 };
@@ -145,27 +145,27 @@ if (!isNil "P24" && {player == P24}) then {
 };
 
 if (!isNil "P25" && {player == P25}) then {
-    g_class = "SWD_SL";
+    g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "133";
 };
 if (!isNil "P26" && {player == P26}) then {
-    g_class = "SWD_RF";
+    g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "134";
 };
 if (!isNil "P27" && {player == P27}) then {
-    g_class = "SWD_GRN";
+    g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "135";
 };
 if (!isNil "P28" && {player == P28}) then {
-    g_class = "SWD_AR";
+    g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "136";
 };
 if (!isNil "P29" && {player == P29}) then {
-    g_class = "SWD_MED";
+    g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "137";
 };
@@ -197,13 +197,13 @@ if (!isNil "P34" && {player == P34}) then {
 };
 
 if (!isNil "P35" && {player == P35}) then {
-    g_class = "ARMOUR";
+    g_class = "ARMOURCREW";
 	g_group = "1";
 	g_unit = "143";
 };
 
 if (!isNil "P36" && {player == P36}) then {
-    g_class = "ARMOUR";
+    g_class = "ARMOURCREW";
 	g_group = "1";
 	g_unit = "144";
 };
@@ -291,6 +291,10 @@ TWC_fnc_getAirList = {
    execVM "Playerlist\air.sqf";
 };
 
+TWC_fnc_getArmorList = {
+   execVM "Playerlist\armor.sqf";
+};
+
 playerListAction = ["thisStartsTheList","Player List","", {},{true}] call ace_interact_menu_fnc_createAction;
 alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}] call ace_interact_menu_fnc_createAction;
 bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
@@ -298,6 +302,7 @@ charlieAction = ["CharlieList","Charlie List","", {call TWC_fnc_getCharlieList;}
 deltaAction = ["DeltaList","Delta List","", {call TWC_fnc_getDeltaList;},{true}] call ace_interact_menu_fnc_createAction;
 echoAction = ["EchoList","Echo List","", {call TWC_fnc_getEchoList;},{true}] call ace_interact_menu_fnc_createAction;
 airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ace_interact_menu_fnc_createAction;
+armorAction = ["ArmorList","Armor List","", {call TWC_fnc_getArmorList;},{true}] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], playerListAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], alphaAction] call ace_interact_menu_fnc_addActionToObject;
@@ -306,6 +311,7 @@ airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ac
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], deltaAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], echoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], armorAction] call ace_interact_menu_fnc_addActionToObject;
 
 
 [] spawn {

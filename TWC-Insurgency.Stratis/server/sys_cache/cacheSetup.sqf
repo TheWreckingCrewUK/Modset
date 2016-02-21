@@ -6,30 +6,30 @@ if (isNil "InsP_cacheGroup") then {
 
 	_cacheBoxType = "Box_FIA_Wps_F";
 
-	cacheBoxA = _cacheBoxType createVehicle [7101, 5983, 1];
+	cacheBoxA = _cacheBoxType createVehicle [7065, 5917, 22];
 	_cacheADeath = cacheBoxA addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxA"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxA";
 
-	cacheBoxB = _cacheBoxType createVehicle [7107, 5975, 1];
+	cacheBoxB = _cacheBoxType createVehicle [7065, 5912, 22];
 	_cacheADeath = cacheBoxB addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxB"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxB";
 
-	cacheBoxC = _cacheBoxType createVehicle [7106, 5966, 1];
+/*	cacheBoxC = _cacheBoxType createVehicle [7075, 5912, 22];
 	_cacheADeath = cacheBoxC addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxC"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxC";
-
-	cacheBoxD = _cacheBoxType createVehicle [7095, 5959, 1];
+*/
+	cacheBoxD = _cacheBoxType createVehicle [7070, 5912, 5];
 	_cacheADeath = cacheBoxD addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxD"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxD";
 
-	cacheBoxE = _cacheBoxType createVehicle [7090, 5944, 1];
+	cacheBoxE = _cacheBoxType createVehicle [7070, 5917, 5];
 	_cacheADeath = cacheBoxE addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxE"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxE";
 
-	InsP_cacheGroup = [cacheBoxA, cacheBoxB, cacheBoxC, cacheBoxD, cacheBoxE];
+	InsP_cacheGroup = [cacheBoxA, cacheBoxB/*, cacheBoxC*/, cacheBoxD, cacheBoxE];
 	publicVariable "InsP_cacheGroup";
 	
-	waitUntil {!(isNil "cacheBoxA") && !(isNil "cacheBoxB") && !(isNil "cacheBoxC") && !(isNil "cacheBoxD") && !(isNil "cacheBoxE") && !(isNil "InsP_cacheGroup")};
+	waitUntil {!(isNil "cacheBoxA") && !(isNil "cacheBoxB")/* && !(isNil "cacheBoxC")*/ && !(isNil "cacheBoxD") && !(isNil "cacheBoxE") && !(isNil "InsP_cacheGroup")};
 
 	{
 		while {(_x distance (getMarkerPos "cacheSpawn")) < 50} do {
@@ -37,9 +37,9 @@ if (isNil "InsP_cacheGroup") then {
 			switch (str _forEachIndex) do {
 				case "0": {_cacheMarker = "cacheMarkerA"};
 				case "1": {_cacheMarker = "cacheMarkerB"};
-				case "2": {_cacheMarker = "cacheMarkerC"};
-				case "3": {_cacheMarker = "cacheMarkerD"};
-				case "4": {_cacheMarker = "cacheMarkerE"};
+				//case "2": {_cacheMarker = "cacheMarkerC"};
+				case "2": {_cacheMarker = "cacheMarkerD"};
+				case "3": {_cacheMarker = "cacheMarkerE"};
 			};
 	
 			_houseList = (getMarkerPos _cacheMarker) nearObjects ["House",1500];
@@ -51,7 +51,7 @@ if (isNil "InsP_cacheGroup") then {
 				_ranNum = floor(random _c);
 				_x setPos (_house buildingPos _ranNum);
 				sleep 1;
-				_cacheGroup = [[(getPosATL _x select 0)+random 50, (getPosATL _x select 1)+random 50,0], EAST, (configfile >> "CfgGroups" >> "Indep" >> "rhs_faction_insurgents" >> "Infantry" >> "IRG_InfSquad")] call BIS_fnc_spawnGroup;
+				_cacheGroup = [[(getPosATL _x select 0)+random 50, (getPosATL _x select 1)+random 50,0], EAST, (configfile >> "CfgGroups" >> "Indep" >> "CUP_I_NAPA" >> "Infantry" >> "CUP_I_NAPA_InfSquad")] call BIS_fnc_spawnGroup;
 				[_cacheGroup, getPosATL _x, 100, 2, true] call CBA_fnc_taskDefend;
 			};
 			sleep 0.25;

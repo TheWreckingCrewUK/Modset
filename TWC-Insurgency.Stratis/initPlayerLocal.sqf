@@ -1,11 +1,6 @@
 waitUntil{!isNull player};
 [player] join grpNull ;
-while {true} do{
-if (local player) then{
-	player enableFatigue false;
-	sleep 3;
-	};
-};
+execVM "steam\acreCheck.sqf";
 if (!hasInterface) exitWith {};
 
 global_sync = false;

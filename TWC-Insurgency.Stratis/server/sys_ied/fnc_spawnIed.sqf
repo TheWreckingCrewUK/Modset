@@ -17,24 +17,25 @@
 params ["_iedType", "_position", ["_spawnRadius", 0], ["_triggerRadius", 12]];
 
 // Create visible explosive object
-local _ied = createVehicle [_iedType, _position, [], _spawnRadius, "NONE"];
+_ied = createVehicle [_iedType, _position, [], _spawnRadius, "NONE"];
 
 // Handle creating explosion and cleaning up on object being destroyed
 _ied addEventHandler ["Killed", {
     params ["_unit", "_killer"];
     _iedExplosive = createMine [typeOf _unit, getPos _unit, [], 0];
+	[getpos _iedExplosive,floor (random 4)] call TWC_fnc_iedAttack;
     _iedExplosive setDamage 1;
     deleteVehicle (_unit getVariable ["InsP_trigger", objNull]);
     deleteVehicle _unit;
 }];
 
 // Create trigger for setting off the explosive
-local _trigger = createTrigger ["EmptyDetector", _position, true];
+_trigger = createTrigger ["EmptyDetector", _position, true];
 _trigger setTriggerArea [_triggerRadius, _triggerRadius, 0, false];
-_trigger setTriggerActivation ["ANY", "PRESENT", true];
+_trigger setTriggerActivation ["WEST", "PRESENT", true];
 _trigger setTriggerStatements [
     "{
-        if (abs (speed _x) >= 2.76 && (getPosATL _x select 2) < 4) exitWith {true};
+        if (abs (speed _x) >= 15 && (getPosATL _x select 2) < 4) exitWith {true};
         false
     } forEach thisList;",
     "(thisTrigger getVariable ['InsP_ied', objNull]) setDamage 1;",

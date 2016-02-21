@@ -1,4 +1,4 @@
-local _trust = "";
+_trust = "";
 if (floor InsP_enemyMorale <= -3) then {_trust = "<t color='#000000'>Incredible</t>"};
 if (floor InsP_enemyMorale == -2) then {_trust = "<t color='#ff0000'>Strong</t>"};
 if (floor InsP_enemyMorale == -1) then {_trust = "<t color='#ff9000'>Good</t>"};

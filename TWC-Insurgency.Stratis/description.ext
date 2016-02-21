@@ -96,13 +96,3 @@ class CfgDebriefing
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
 };
-
-
-#include "chvd\dialog.hpp"
-
-class CfgFunctions
-
-
-{
-#include "chvd\CfgFunctions.hpp"
-};

@@ -2,11 +2,11 @@
 //if (!isDedicated) exitWith {};
 
 _group = createGroup civilian;
-_civilianType = "C_man_1";
+_civilianType = "C_mas_med_Civil_1_1_F";
 _markerPlcacement = _this select 0;
 _placementRadius = _this select 1;
 
-for "_i" from 1 to 4 do {
+for "_i" from 1 to 2 do {
 	_individualCiv = _group createUnit [_civilianType, (getMarkerPos _markerPlcacement), [], _placementRadius, "NONE"];
 	_civHeading = (random 360);
 	_individualCiv setFormDir _civHeading;

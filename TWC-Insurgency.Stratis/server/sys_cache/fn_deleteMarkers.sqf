@@ -15,13 +15,13 @@ call {
 		}forEach cacheBMarkers;
 	};
 	
-	if (_cacheDestroyed == "cacheBoxC") exitWith {
+/*	if (_cacheDestroyed == "cacheBoxC") exitWith {
 		{
 			deadMarker = deleteMarker _x;
 			publicVariable "deadMarker";
 		}forEach cacheCMarkers;
 	};
-	
+*/	
 	if (_cacheDestroyed == "cacheBoxD") exitWith {
 		{
 			deadMarker = deleteMarker _x;

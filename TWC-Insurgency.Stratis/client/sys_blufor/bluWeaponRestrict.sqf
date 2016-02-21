@@ -1,4 +1,5 @@
-local _opforWeapons = [
+/*
+_opforWeapons = [
     "rhs_weap_ak74m",
     "rhs_weap_ak74m_folded",
     "rhs_weap_pkp",
@@ -8,8 +9,7 @@ local _opforWeapons = [
     "rhs_weap_akms",
     "rhs_weap_svdp",
     "rhs_weap_akms_gp25",
-    "rhs_weap_ak103_dtk",
-    "rhs_weap_pkm"
+    "rhs_weap_ak103_dtk"
 ];
 
 while {true} do {

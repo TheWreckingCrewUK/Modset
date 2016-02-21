@@ -5,7 +5,7 @@
 	_marker setMarkerSizeLocal [0.7, 0.7];
 } forEach InsP_aaGroup;
 
-local _iedList = (allMissionObjects "IEDLandBig_F") + (allMissionObjects "IEDLandSmall_F");
+_iedList = (allMissionObjects "IEDLandBig_F") + (allMissionObjects "IEDLandSmall_F");
 {
 	_marker = createMarkerLocal [format ["ied%1", _forEachIndex], getPosATL _x];
 	_marker setMarkerTypeLocal "mil_dot";
