@@ -88,8 +88,4 @@ class Extended_PostInit_EventHandlers
 	{
 		init="execVM '\twc_framework\init.sqf';";
 	};
-	class Twc_Task_init
-	{
-		init="execVM '\twc_framework\Tasks\init.sqf';";
-	};
 };

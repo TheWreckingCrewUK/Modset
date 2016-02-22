@@ -39,15 +39,18 @@ class CfgFunctions
 			class RemoveHE
 			{
 			};
+			class RemoveAmmoInventory
+			{
+			};
 		};
 	};
 };
 
 class Extended_PostInit_EventHandlers
 {
-	class Twc_Warrior_init
+	class TWC_IFV_Init
 	{
-		init="execVM '\twc_framework\init.sqf';";
+		init="execVM '\twc_ifv\init.sqf';";
 	};
 };
 
