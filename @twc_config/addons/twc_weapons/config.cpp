@@ -184,6 +184,7 @@ class CfgWeapons
 	class UK3CB_BAF_L86A2_SUSAT3D:UK3CB_BAF_L86A2
 	{
 		displayName = "L86A1";
+		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
 		author="Jayman";
 		class LinkedItems
 		{
@@ -197,6 +198,7 @@ class CfgWeapons
 	class UK3CB_BAF_L85A2_SUSAT3D:UK3CB_BAF_L85A2
 	{
 		displayName = "L85A1";
+		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
 		author="Jayman";
 		class LinkedItems
 		{
@@ -210,6 +212,7 @@ class CfgWeapons
 	class UK3CB_BAF_L85A2_UGL_SUSAT3D:UK3CB_BAF_L85A2_UGL
 	{
 		displayName = "L85A1 W/ L123A2 Ladder";
+		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
 		author="Jayman";
 		class LinkedItems
 		{
