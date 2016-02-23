@@ -199,16 +199,15 @@ if (g_class == "BAF_SL") then {
 if (g_class == "US_SL") then {
                 _tmp_weapons =
                 [
-                                ["arifle_mas_m4",1],
-                                ["ACE_Vector",1],
-								["hgun_mas_acp_F",1]
+                                ["CUP_arifle_M4A1",1],
+                                ["ACE_Vector",1]
 
                 ];
 
                 _tmp_magazines =
                 [
                                 ["30Rnd_556x45_Stanag",50],
-                                ["8Rnd_mas_45acp_Mag",15]
+								["30Rnd_556x45_Stanag_Tracer_Red",15]
 								
 	                            
 
@@ -224,7 +223,7 @@ if (g_class == "US_SL") then {
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
 								["ACE_M26_Clacker",1],
-								["optic_mas_acog_eo",1],
+								["CUP_optic_ACOG",1],
 								["CUP_optic_HoloBlack",1],
 								["ACE_DAGR",1],
 								["ACRE_PRC148",1]
@@ -236,8 +235,7 @@ if (g_class == "US_SL") then {
  if (g_class == "US_RF") then {
         _tmp_weapons =
         [
-            ["arifle_mas_m4",1],
-			["hgun_mas_acp_F",1],
+            ["CUP_arifle_M4A1",1],
 			["CUP_launch_M136",2]
 
 		];
@@ -246,7 +244,7 @@ if (g_class == "US_SL") then {
         [
 
 			["30Rnd_556x45_Stanag",50],
-            ["8Rnd_mas_45acp_Mag",15],
+            ["30Rnd_556x45_Stanag_Tracer_Red",15]
 			["CUP_M136_M",2]
         ];
 
@@ -256,7 +254,7 @@ if (g_class == "US_SL") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["optic_mas_acog_eo",1],
+			 ["CUP_optic_ACOG",1],
 		     ["CUP_optic_HoloBlack",1],
 			 ["ACRE_PRC148",1]
 		];
@@ -266,16 +264,12 @@ if (g_class == "US_SL") then {
  if (g_class == "US_AR") then {
         _tmp_weapons =
         [
-            ["LMG_mas_M249_F",1],
-			["hgun_mas_acp_F",1],
-			["CUP_launch_M136",2]
+            ["CUP_lmg_M249_E2",1]
 		];
 
         _tmp_magazines =
         [
-             ["200Rnd_mas_556x45_Stanag",20],			 
-             ["8Rnd_mas_45acp_Mag",15],
-			 ["CUP_M136_M",2]
+             ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",20],			 
         ];
 
 		_tmp_items =
@@ -284,6 +278,7 @@ if (g_class == "US_SL") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
+			 ["CUP_optic_ElcanM145",1],
 		     ["CUP_optic_HoloBlack",1],
 			 ["ACRE_PRC148",1]
 		];
@@ -293,25 +288,21 @@ if (g_class == "US_SL") then {
  if (g_class == "US_GRN") then {
        _tmp_weapons =
         [
-            ["arifle_mas_m4_m203",1],
-			["ACE_Vector",1],
-			["hgun_mas_acp_F",1],
-			["CUP_launch_M136",2]
+            ["CUP_arifle_M4A1_m203",1],
+			["ACE_Vector",1]
 
 		];
 
         _tmp_magazines =
         [
             ["30Rnd_556x45_Stanag",50],
-			["8Rnd_mas_45acp_Mag",15],
             ["1Rnd_HE_Grenade_shell", 40],
 	                            ["1Rnd_Smoke_Grenade_shell", 10],
 	                            ["1Rnd_SmokeRed_Grenade_shell", 10],
 	                            ["1Rnd_SmokeGreen_Grenade_shell", 10],
 	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
-                             	["1Rnd_SmokeBlue_Grenade_shell", 10],
-								["CUP_M136_M",2]
+                             	["1Rnd_SmokeBlue_Grenade_shell", 10]
         ];
 
 		_tmp_items =
@@ -320,7 +311,7 @@ if (g_class == "US_SL") then {
              ["ACE_MapTools",1],
              ["ACE_fieldDressing",20],
              ["ACE_morphine",10],
-			 ["optic_mas_acog_eo",1],
+			 ["CUP_optic_ACOG",1],
 		     ["CUP_optic_HoloBlack",1],
 			 ["ACRE_PRC148",1]
 
@@ -329,17 +320,14 @@ if (g_class == "US_SL") then {
  if (g_class == "US_MED") then {
        _tmp_weapons =
         [
-             ["arifle_mas_m4",1],
-	         ["hgun_mas_acp_F", 1],
-			 ["CUP_launch_M136",2]
+             ["CUP_arifle_M4A1",1]
 
 		];
 
         _tmp_magazines =
         [
              ["30Rnd_556x45_Stanag",50],
-			 
-             ["8Rnd_mas_45acp_Mag",15]
+			 ["30Rnd_556x45_Stanag_Tracer_Red",15]
         ];
 
 		_tmp_items =
@@ -350,7 +338,7 @@ if (g_class == "US_SL") then {
 			 ["ACE_epinephrine",50],
 			 ["ACE_bloodIV",50],
 			 ["ACE_bodyBag",10],
-			 ["optic_mas_acog_eo",1],
+			 ["CUP_optic_ACOG",1],
 			 ["CUP_optic_HoloBlack",1],
 			 ["ACRE_PRC148",1]
 		];
