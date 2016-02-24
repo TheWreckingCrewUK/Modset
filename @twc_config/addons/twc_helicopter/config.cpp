@@ -22,7 +22,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction=TWC_Operation;
+		faction="Veh_units";
 		author = "3CB";
 		displayname = "Wildcat";
 		class TransportMagazines

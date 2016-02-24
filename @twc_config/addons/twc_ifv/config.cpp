@@ -519,7 +519,7 @@ class CfgVehicles
 		};
 		crew="BAF_Soldier_Crewman_Infantry_L_M_DG1";
 		side=1;
-		faction="DG_UKBAF_Faction";
+		faction="Veh_units";
 		vehicleClass="Armored";
 		accuracy=0.25;
 		transportSoldier=7;

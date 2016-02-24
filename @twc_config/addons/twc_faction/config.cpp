@@ -44,6 +44,14 @@ class CfgFactionClasses
 		priority=2;
 		side=1;
 	};
+	class Veh_units
+	{
+		displayName="TWC Vehicles";
+		author="FakeMatty";
+		icon="TWClogo.paa";
+		priority=2;
+		side=1;
+	};
 	class Iraqi_units
 	{
 		displayName="Iraqi Army Gulf War Units";
