@@ -1,5 +1,0 @@
-///////<HEADER>///////
-prefix=twc_weapons
-Mikero=DePbo.dll
-Pbo Type is: Arma Addon
-//////</HEADER>//////

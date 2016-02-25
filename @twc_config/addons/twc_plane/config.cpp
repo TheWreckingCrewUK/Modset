@@ -18,6 +18,13 @@ class CfgPatches
 		};
 	};
 };
+class Extended_PostInit_EventHandlers
+{
+	class TWC_Plane_Init
+	{
+		init="execVM '\twc_plane\init.sqf';";
+	};
+};
 class CfgVehicles
 {
 	class CUP_B_C130J_GB;

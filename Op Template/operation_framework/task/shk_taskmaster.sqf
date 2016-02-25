@@ -190,13 +190,12 @@ DEBUG = false;
     */
     if isserver then {
       private ["_name","_short","_long","_cond","_marker","_state","_dest"];
-      _name = _this select 0;
-      _short = _this select 1;
-      _long = _this select 2;
-      if (count _this > 3) then { _cond = _this select 3 } else { _cond = true };
-      if (count _this > 4) then { _marker = _this select 4 } else { _marker = [] };
-      if (count _this > 5) then { _state = _this select 5 } else { _state = "created" };
-      if (count _this > 6) then { _dest = _this select 6 } else { _dest = 0 };
+	  params ["_name","_short","_long",["Primary",True],["_cond",true],["_marker",[]],["_state","created"],["_dest", 0];
+	  if _Primary then {
+	  _short = "[P] " + _short;
+	  }else{
+	  _short = "[S] " + _short;
+  	  };
       TWC_fnc_Tasks set [count TWC_fnc_Tasks, [_name,_short,_long,_cond,_marker,_state,_dest]];
       publicvariable "TWC_fnc_Tasks";
       /*

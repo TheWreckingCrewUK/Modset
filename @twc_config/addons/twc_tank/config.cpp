@@ -1901,7 +1901,7 @@ class CfgVehicles
 	{
 		accuracy=0.5;
 		side=1;
-		faction="BAF";
+		faction="Veh_units";
 		vehicleClass="Burnes_Vehicles";
 		crew="Burnes_Crewman_CTRG";
 		typicalCargo[]=
@@ -1969,7 +1969,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction=TWC_Operation;
+		faction= "Veh_units";
 		author = "Burnes";
 		maxSpeed=59;
 		displayname="TWC Challenger 2";

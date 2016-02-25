@@ -22,11 +22,12 @@ class CfgPatches
 };
 class CfgFunctions
 {
-	class TWC
+	class twc_ifv
 	{
+		tag="TWC";
 		class FunctionsWarrior
 		{
-			file="twc_Warrior\functions";
+			file="twc_ifv\functions";
 			class AddAP
 			{
 			};
@@ -114,7 +115,7 @@ class CfgWeapons
 	class TWC_30mm_HE_item: ACE_ItemCore
 	{
 		scope=2;
-		picture="\twc_warrior\pictures\30mmHE.paa";
+		picture="\twc_ifv\pictures\30mmHE.paa";
 		displayName="30mm HE";
 		descriptionShort="Adds 1 magazine of HE ammo to a warrior.";
 		descriptionUse="";
@@ -126,7 +127,7 @@ class CfgWeapons
 	class TWC_30mm_AP_item: ACE_ItemCore
 	{
 		scope=2;
-		picture="\twc_warrior\pictures\30mmAP.paa";
+		picture="\twc_ifv\pictures\30mmAP.paa";
 		displayName="30mm AP";
 		descriptionShort="Adds 1 magazine of AP ammo to a warrior.";
 		descriptionUse="";
