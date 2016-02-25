@@ -587,9 +587,8 @@ class CfgVehicles
 				source="reload";
 				weapon="TWC_Rarden";
 			};
-			class recoil_source_2
+			class recoil_source2:recoil_source
 			{
-				source="reload";
 				weapon="TWC_Rarden_AP";
 			};
 		};
@@ -624,6 +623,7 @@ class CfgVehicles
 				gunEnd="Konec hlavne";
 				gunnerAction="Abrams_Gunner";
 				gunnerInAction="Abrams_Gunner";
+				startEngine=0;
 				weapons[]=
 				{
 					"TWC_Rarden",

@@ -8,4 +8,3 @@ waitUntil { sleep 1.271; time > 0 };
 
 call compile preprocessFileLineNumbers "twc_framework\functions.sqf";
 
-
