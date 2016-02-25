@@ -1,22 +1,9 @@
 /*/////////////////////////////////////////////////////////
 /                       SETUP 	   						  /
 ///////////////////////////////////////////////////////////
-/                     Task Setup                          /
-/////////////////////////////////////////////////////////*/
-
-[] call compile preprocessfilelinenumbers "operation_framework\task\shk_taskmaster.sqf";
-
 /*/////////////////////////////////////////////////////////
-/                       Tasks go here                     /
-/////////////////////////////////////////////////////////*/
-
-["Task1","Secure the factory.","Secure the factory that's being used to create the deadly toxin known as Yellowcake."] call TWC_fnc_CreateTask;
-["Task2","Secure enemy HQ.","The enemy HQ is located on a airfield, west of Chernogorsk."] call TWC_fnc_CreateTask;
-["Task3","Destroy enemy communications equipment.","Locals are reporting that they have seen unmarked trucks and helicopter landing west of Pulkovo."] call TWC_fnc_CreateTask;
-
-/*/////////////////////////////////////////////////////////
-/                            Base                         /
-/                           Setup                         /
+//                            Base                        /
+//                         Setup                          /
 /////////////////////////////////////////////////////////*/
 
 [] execVM "operation_framework\base\safezone.sqf";
