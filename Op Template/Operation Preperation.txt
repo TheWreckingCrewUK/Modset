@@ -10,7 +10,8 @@
 	ACE Medic Class-name the medic, "medic" No Quotes
 	Place zeuss module and set as #adminLogged and name it Zeus
 	Place jaymans and Fakemattys Zeus module that goes by player ID
-
+	make sure all zues modules are set to be all addons
+	
 6. Add TWC vehicle ammo box
 
 7. Add 4 Headless Clients named HC HC2 HC3 HC4 and make them playable.
