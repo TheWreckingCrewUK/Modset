@@ -25,6 +25,7 @@ if (player in Trainers) then {
 	TWCrandomrange = ["range","TWC range randomizer","", {},{true}] call ace_interact_menu_fnc_createAction;
 	_rifle = ['range','Rifle range','', { execVM "scripts\riflerange\popup.sqf"; },{true}] call ace_interact_menu_fnc_createAction;
 	_CQB = ['range','CQB killhouse','', { execVM "scripts\cqbrange\cqbrandomtargets.sqf"; },{true}] call ace_interact_menu_fnc_createAction;
+	_town = ['range','CQB Town','', { execVM "scripts\townrange\townrange.sqf"; },{true}] call ace_interact_menu_fnc_createAction;
 	
 	[player, 1, ["ACE_SelfActions"], teleportListAction] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _TeleAir] call ace_interact_menu_fnc_addActionToObject;
@@ -43,19 +44,13 @@ if (player in Trainers) then {
 	[player, 1, ["ACE_SelfActions"], TWCrandomrange] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","range"], _rifle] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","range"], _CQB] call ace_interact_menu_fnc_addActionToObject;
-	
+	[player, 1, ["ACE_SelfActions","range"], _town] call ace_interact_menu_fnc_addActionToObject;
 	
 	
 	
 };
-/*
+
 if (player in Everyone) then{
 	execVM format["scripts\weaponLists\playerLoadouts\%1.sqf", TrainingEra];
 	
-	 if ("B_P_BeretOff" in everyContainer Trainers) then {TrainingERA = "coin"; publicVariable "TrainingERA"; execVM "scripts\weaponLists\playerLoadouts\cointrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\coin.sqf";};
-
-     if ("UK_Beret_Paras" in everyContainer Trainers) then {TrainingERA = "coldwar"; publicVariable "TrainingERA"; execVM "scripts\weaponLists\playerLoadouts\coldwartrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\coldwar.sqf";};
-
-     if ("UK3CB_BAF_G_Tactical_Black" in everyContainer Trainers) then {TrainingERA = "modern"; publicVariable "TrainingERA"; execVM "scripts\weaponLists\playerLoadouts\moderntrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\modern.sqf";};
-
 };

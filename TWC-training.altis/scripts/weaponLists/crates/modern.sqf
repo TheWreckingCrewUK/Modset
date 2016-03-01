@@ -13,7 +13,7 @@ _RangeBoxSniper = RangeAmmoBoxSniper;
 _RangeBoxGrenade = RangeAmmoGrenade;
 _RangeBoxMedic = RangeAmmoBoxMedic;
 _CrewServedWepons = CrewBox;
-//_Parachute = ParaChuteBox;
+_Parachute = ParaChuteBox;
 _RadioBox = RadioBox;
 
 
@@ -147,9 +147,14 @@ _RangeBoxMedic addItemCargoGlobal ["ACE_epinephrine",80];
 _RangeBoxMedic addItemCargoGlobal ["ACE_bloodIV",80];
 _RangeBoxMedic addItemCargoGlobal ["ACE_bodyBag",100];
 
+_CrewServedWepons addItemCargoGlobal ["ACE_EarPlugs",20];
+_CrewServedWepons addItemCargoGlobal ["ACE_MapTools",20];
+_CrewServedWepons addItemCargoGlobal ["ACE_RangeTable_82mm",20];
+_CrewServedWepons addItemCargoGlobal ["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D",20];
+
 
 //Parachute
-//_ParaBox AddBackPackCargoGlobal ["ACE_NonSteerableParachute",40];
+_ParaBox AddBackPackCargoGlobal ["ACE_NonSteerableParachute",40];
 
 //Radio Box
 _RadioBox AdditemCargoGlobal ["ACRE_PRC117F",40];
