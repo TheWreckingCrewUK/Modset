@@ -1,0 +1,1 @@
+execVM "server\restrict\init.sqf";
