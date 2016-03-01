@@ -16,7 +16,7 @@
 			//Get Jumper out of aircraft
 			moveOut _caller;
 			unassignVehicle _caller;
-			_caller attachTo [_veh,[0,0,0],"jump_outL"]; 
+			_caller attachTo [_veh,[0,-20,-4],"jump_outL"]; 
 			_caller setdir _newDir;
 			//Move Jumper to safe location
 			
@@ -87,7 +87,7 @@
 			moveOut _caller;
 			_callerMoveaway = _caller setpos [(getpos _caller select 0),(getpos _caller select 1)-20,(getpos _caller select 2)];
 			_caller setdir _newDir;
-			_caller attachTo [_veh,[0,0,0],"jump_outL"]; 
+			_caller attachTo [_veh,[0,-20,-4],"jump_outL"]; 
 			detach _caller;
 			
 			_pos2 = getPosASL _caller;
