@@ -6,192 +6,256 @@ if (!isNil "p1" && {player == p1}) then {
 	g_group = "0";
 	g_unit = "001";
 	g_name = "Alpha Section Leader";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p2" && {player == p2}) then {
     g_class = "BAF_RF";
 	g_group = "0";
 	g_unit = "002";
 	g_name = "Alpha Rifleman";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p3" && {player == p3}) then {
     g_class = "BAF_G";
 	g_group = "0";
 	g_unit = "003";
 	g_name = "Alpha Grenadier";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p4" && {player == p4}) then {
     g_class = "BAF_AR";
 	g_group = "0";
 	g_unit = "004";
 	g_name = "Alpha Automatic Rifleman";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p5" && {player == p5}) then {
     g_class = "BAF_2";
 	g_group = "0";
 	g_unit = "005";
 	g_name = "Alpha 2IC";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p6" && {player == p6}) then {
     g_class = "BAF_MG";
 	g_group = "0";
 	g_unit = "006";
 	g_name = "Alpha Machine Gunner";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p7" && {player == p7}) then {
     g_class = "BAF_MARK";
 	g_group = "0";
 	g_unit = "007";
 	g_name = "Alpha Marksman";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p8" && {player == p8}) then {
     g_class = "BAF_MED";
 	g_group = "0";
 	g_unit = "008";
 	g_name = "Alpha Medic";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p9" && {player == p9}) then {
     g_class = "US_SL";
 	g_group = "0";
 	g_unit = "009";
 	g_name = "Bravo Section Leader";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p10" && {player == p10}) then {
     g_class = "US_FTL";
 	g_group = "0";
 	g_unit = "010";
 	g_name = "Bravo Fireteam Leader";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p11" && {player == p11}) then {
     g_class = "US_RF";
 	g_group = "0";
 	g_unit = "011";
 	g_name = "Bravo Rifleman";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p12" && {player == p12}) then {
     g_class = "US_GRN";
 	g_group = "0";
 	g_unit = "012";
 	g_name = "Bravo Grenadier";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p13" && {player == p13}) then {
     g_class = "US_AR";
 	g_group = "0";
 	g_unit = "013";
 	g_name = "Bravo Automatic Rifleman";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p14" && {player == p14}) then {
     g_class = "US_FTL";
 	g_group = "0";
 	g_unit = "014";
 	g_name = "Bravo Fireteam Leader";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p15" && {player == p15}) then {
     g_class = "US_AR";
 	g_group = "0";
 	g_unit = "015";
 	g_name = "Bravo Automatic Rifleman";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p16" && {player == p16}) then {
     g_class = "US_MARK";
 	g_group = "0";
 	g_unit = "016";
 	g_name = "Bravo Marksman";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p17" && {player == p17}) then {
     g_class = "US_MED";
 	g_group = "0";
 	g_unit = "017";
 	g_name = "Bravo Medic";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p18" && {player == p18}) then {
     g_class = "USMC_SL";
 	g_group = "0";
 	g_unit = "018";
 	g_name = "Charlie Section Leader";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p19" && {player == p19}) then {
     g_class = "USMC_FTL";
 	g_group = "0";
 	g_unit = "019";
 	g_name = "Charlie Fireteam Leader";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p20" && {player == p20}) then {
     g_class = "USMC_RF";
 	g_group = "0";
 	g_unit = "020";
 	g_name = "Charlie Rifleman";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p21" && {player == p21}) then {
     g_class = "USMC_AR";
 	g_group = "0";
 	g_unit = "022";
 	g_name = "Charlie Automatic Rifleman";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p22" && {player == p22}) then {
     g_class = "USMC_AAR";
 	g_group = "0";
 	g_unit = "022";
 	g_name = "Charlie Assistant Automatic Rifleman";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p23" && {player == p23}) then {
     g_class = "USMC_FTL";
 	g_group = "0";
 	g_unit = "023";
 	g_name = "Charlie Fireteam Leader";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p24" && {player == p24}) then {
     g_class = "USMC_RF";
 	g_group = "0";
 	g_unit = "024";
 	g_name = "Charlie Rifleman";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p25" && {player == p25}) then {
     g_class = "USMC_AR";
 	g_group = "0";
 	g_unit = "025";
 	g_name = "Charlie Automatic Rifleman";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p26" && {player == p26}) then {
     g_class = "USMC_AAR";
 	g_group = "0";
 	g_unit = "026";
 	g_name = "Charlie Assistant Automatic Rifleman";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p27" && {player == p27}) then {
     g_class = "USMC_FTL";
 	g_group = "0";
 	g_unit = "027";
 	g_name = "Charlie Fireteam Leader";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p28" && {player == p28}) then {
     g_class = "USMC_RF";
 	g_group = "0";
 	g_unit = "028";
 	g_name = "Charlie Rifleman";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p29" && {player == p29}) then {
     g_class = "USMC_MG";
 	g_group = "0";
 	g_unit = "029";
 	g_name = "Charlie Machine Gunner";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p30" && {player == p30}) then {
     g_class = "USMC_MED";
 	g_group = "0";
 	g_unit = "030";
 	g_name = "Medic";
+	g_radio_channel = 3;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p31" && {player == p31}) then {
     g_class = "WLD_PLT";
 	g_group = "0";
 	g_unit = "031";
 	g_name = "Wildcat Pilot";
+	g_radio_channel = 4;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "p32" && {player == p32}) then {
     g_class = "BLK_PLT";
 	g_group = "0";
 	g_unit = "032";
 	g_name = "BlackHawk Pilot";
+	g_radio_channel = 4;
+	g_radio = "ACRE_PRC148";
 };
 
 g_p1 = "";
@@ -278,6 +342,11 @@ TWCServer globalchat format["%1 joined in as %2",_name,g_name];
 
 if (g_class != "") then {
 	execVM format["client\loadout\%1.sqf", g_class];
+};
+
+if (g_radio != "") then {
+	_radioID = [g_radio] call acre_api_fnc_getRadioByType;
+	_switchChannel = [_radioID, g_radio_channel] call acre_api_fnc_setRadioChannel;
 };
 
 //made by hartzie edited by FakeMatty
