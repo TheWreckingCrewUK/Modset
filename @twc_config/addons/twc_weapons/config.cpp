@@ -45,6 +45,7 @@ class CfgWeapons
 
 	class TWC_Carl_Gustav:tf47_m3maaws
 	{
+		scope = 1;
 		author="FakeMatty";
 		class LinkedItems
 		{
@@ -57,6 +58,7 @@ class CfgWeapons
 	};
 	class UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D:UK3CB_BAF_L85A2_RIS
 	{
+		scope = 1;
 		author="FakeMatty";
 		class LinkedItems
 		{
@@ -74,6 +76,7 @@ class CfgWeapons
 	};
 	class UK3CB_BAF_L110A2_ELCAN3D:UK3CB_BAF_L110A2
 	{
+		scope = 1;
 		author="FakeMatty";
 		class LinkedItems
 		{
@@ -91,6 +94,7 @@ class CfgWeapons
 	};
 	class UK3CB_BAF_L129A1_Grippod_TA648:UK3CB_BAF_L129A1_Grippod
 	{
+		scope = 1;
 		author="FakeMatty";
 		class LinkedItems
 		{
@@ -108,6 +112,7 @@ class CfgWeapons
 	};
 	class UK3CB_BAF_L128A1_Eotech:UK3CB_BAF_L128A1
 	{
+		scope = 1;
 		author="FakeMatty";
 		class LinkedItems
 		{
@@ -125,6 +130,7 @@ class CfgWeapons
 	};
 	class UK3CB_BAF_L85A2_UGL_ELCAN3D:UK3CB_BAF_L85A2_UGL
 	{
+		scope = 1;
 		author="FakeMatty";
 		class LinkedItems
 		{
@@ -142,6 +148,7 @@ class CfgWeapons
 	};
 	class UK3CB_BAF_L7A2_ELCAN3D:UK3CB_BAF_L7A2
 	{
+		scope = 1;
 		author="FakeMatty";
 		class LinkedItems
 		{
@@ -154,6 +161,7 @@ class CfgWeapons
 	};
 	class UK3CB_BAF_L22A2_SUSAT3D:UK3CB_BAF_L22A2
 	{
+		scope = 1;
 		author="Jayman";
 		class LinkedItems
 		{
@@ -166,6 +174,7 @@ class CfgWeapons
 	};
 	class hlc_rifle_SLR_Suit:hlc_rifle_SLR
 	{
+		scope = 1;
 		author="FakeMatty";
 		class LinkedItems
 		{
@@ -181,8 +190,15 @@ class CfgWeapons
 		author="Jayman";
 		displayName="Stinger A";
 	};
-	class UK3CB_BAF_L86A2_SUSAT3D:UK3CB_BAF_L86A2
+	class UK3CB_BAF_L86A1:UK3CB_BAF_L86A2
 	{
+		displayName = "L86A1";
+		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
+		author="Jayman";
+	};
+	class UK3CB_BAF_L86A1_SUSAT3D:UK3CB_BAF_L86A2
+	{
+		scope = 1;
 		displayName = "L86A1";
 		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
 		author="Jayman";
@@ -195,8 +211,15 @@ class CfgWeapons
 			};
 		};
 	};
-	class UK3CB_BAF_L85A2_SUSAT3D:UK3CB_BAF_L85A2
+	class UK3CB_BAF_L85A1:UK3CB_BAF_L85A2
 	{
+		displayName = "L85A1";
+		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
+		author="Jayman";
+	};
+	class UK3CB_BAF_L85A1_SUSAT3D:UK3CB_BAF_L85A2
+	{
+		scope = 1;
 		displayName = "L85A1";
 		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
 		author="Jayman";
@@ -211,6 +234,7 @@ class CfgWeapons
 	};
 	class UK3CB_BAF_L85A2_UGL_SUSAT3D:UK3CB_BAF_L85A2_UGL
 	{
+		scope = 1;
 		displayName = "L85A1 W/ L123A2 Ladder";
 		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
 		author="Jayman";
@@ -225,6 +249,7 @@ class CfgWeapons
 	};	
 	class USSR_AK74_1p29:rhs_weap_ak74m_dtk
 	{
+		scope = 1;
 		author="Jayman";
 		class LinkedItems
 		{
@@ -258,6 +283,7 @@ class CfgVehicles
 	
 	class TWC_Backpack_Modern_Rifleman:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -269,6 +295,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Modern_Automatic_Rifleman:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Box_Stanag
@@ -280,6 +307,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Modern_Marksman:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Marksman_Mag
@@ -306,6 +334,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Modern_Machine_Gunner:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Belt
@@ -322,6 +351,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Modern_Grenadier:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_HE
@@ -348,6 +378,7 @@ class CfgVehicles
 	};		
 	class TWC_Backpack_Modern_2IC:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Box_Stanag
@@ -369,6 +400,7 @@ class CfgVehicles
 	};		
 	class TWC_Backpack_Modern_Sectionlead:UK3CB_BAF_B_Bergen_MTP_SL_L_A
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -408,6 +440,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Modern_Platoon_Command:UK3CB_BAF_B_Bergen_MTP_Radio_L_B
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -447,6 +480,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Modern_Platoon_Sergeant:UK3CB_BAF_B_Bergen_MTP_Radio_L_B
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -491,6 +525,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Modern_Medic:UK3CB_BAF_B_Bergen_MTP_Medic_L_A
 	{
+		scope = 1;
 		class TransportItems
 		{
             class _xx_Bandage
@@ -517,6 +552,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Modern_Vehiclecommander:B_AssaultPack_blk
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -528,6 +564,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Mechanized_2IC:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Box_Stanag
@@ -549,6 +586,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Modern_MortarGunner:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -560,6 +598,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Modern_MortarAssistant:UK3CB_BAF_B_Bergen_MTP_SL_L_A
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -583,7 +622,7 @@ class CfgVehicles
 	class TWC_Backpack_Modern_Pointman:UK3CB_BAF_B_Bergen_MTP_PointMan_L_A
 	{
 		transportMaxWeapons = 2;
-		
+		scope = 1;
 		class TransportMagazines
 		{
             class _xx_Stanag
@@ -618,6 +657,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Modern_Coin_2IC:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Box_Stanag
@@ -650,6 +690,7 @@ class CfgVehicles
 //******************** Cold War Backpack **********************	
 	class TWC_Backpack_Cold_Medic:CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportItems
 		{
             class _xx_Bandage
@@ -676,6 +717,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Cold_War_Rifleman:CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_hlc_20Rnd_762x51_B_fal
@@ -692,6 +734,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Cold_War_2IC:CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_hlc_20Rnd_762x51_B_fal
@@ -713,6 +756,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Cold_War_Section:CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -747,6 +791,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Cold_War_MG:CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_UK3CB_BAF_75Rnd_T
@@ -763,6 +808,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Cold_War_MGAS:CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_UK3CB_BAF_75Rnd
@@ -784,6 +830,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Cold_War_AT:CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_hlc_20Rnd_762x51_B_fal
@@ -805,6 +852,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Cold_War_Pilot:STKR_PackCom
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -816,6 +864,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Cold_War_Platoon_Command:CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -850,6 +899,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Cold_War_Platoon_Sergeant:CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -889,6 +939,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Cold_War_FAC:STKR_PackCom
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -908,6 +959,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_Cold_War_AA:CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Stinger
@@ -925,6 +977,7 @@ class CfgVehicles
 //********************** 1990 Backpack ********************
 	class TWC_Backpack_1990_Platoon_Command:CUP_B_Bergen_BAF
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -964,6 +1017,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_1990_Platoon_Sergeant:CUP_B_Bergen_BAF
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -1008,6 +1062,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_1990_Medic:CUP_B_Bergen_BAF
 	{
+		scope = 1;
 		class TransportItems
 		{
             class _xx_Bandage
@@ -1035,6 +1090,7 @@ class CfgVehicles
 
 	class TWC_Backpack_1990_Sectionlead:CUP_B_Bergen_BAF
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -1074,6 +1130,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_1990_2IC:CUP_B_Bergen_BAF
 	{
+		scope = 1;
 		class TransportMagazines
 		{
             class _xx_Stanag
@@ -1085,6 +1142,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_1990_Rifleman:CUP_B_Bergen_BAF
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1096,6 +1154,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_1990_Grenadier:CUP_B_Bergen_BAF
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1122,6 +1181,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_1990_Gunner:CUP_B_Bergen_BAF
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1139,6 +1199,7 @@ class CfgVehicles
 //*************************USSR****************************
 	class TWC_Backpack_USSR_Sectionlead:rhs_sidor
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F
@@ -1173,6 +1234,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_USSR_Rifleman:rhs_sidor
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1184,6 +1246,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_USSR_Grenadier:rhs_rpg_empty
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1200,6 +1263,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_USSR_Seniorrifleman:rhs_sidor
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1216,6 +1280,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_USSR_Grenadierassistant:rhs_rpg_empty
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1232,6 +1297,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_USSR_Automaticrifleman:rhs_sidor
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Box_Stanag
@@ -1243,6 +1309,7 @@ class CfgVehicles
 	};
 	class TWC_Backpack_USSR_Vehiclecommander:rhs_sidor
 	{
+		scope = 1;
 		class TransportItems
 		{
 			class _xx_ACRE_PRC117F

@@ -30,7 +30,7 @@ class CfgVehicles {
   class Tank: LandVehicle {
     class ACE_Actions {
 			class ACE_MainActions {
-				class BRIDGE_ArmEn_Knock {
+				class TWC_knock {
 					displayName = "Knock";
 					condition = "vehicle player == player";
 					statement = "_this call TWC_fnc_knockOnTank";

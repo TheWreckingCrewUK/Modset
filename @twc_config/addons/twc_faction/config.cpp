@@ -4379,7 +4379,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -4387,7 +4387,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -4483,7 +4483,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_AT4_CS_AT_Launcher"
 		};
@@ -4491,7 +4491,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_AT4_CS_AT_Launcher"
 		};
@@ -4682,7 +4682,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L86A2_SUSAT3D",
+		"UK3CB_BAF_L86A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -4780,7 +4780,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -4788,7 +4788,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -4883,7 +4883,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -4891,7 +4891,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -4989,7 +4989,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -4997,7 +4997,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -5358,7 +5358,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -5366,7 +5366,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -5462,7 +5462,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_AT4_CS_AT_Launcher"
 		};
@@ -5470,7 +5470,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_AT4_CS_AT_Launcher"
 		};
@@ -5661,7 +5661,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L86A2_SUSAT3D",
+		"UK3CB_BAF_L86A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -5759,7 +5759,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -5767,7 +5767,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -5862,7 +5862,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -5870,7 +5870,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -5968,7 +5968,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -5976,7 +5976,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT3D",
+		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
