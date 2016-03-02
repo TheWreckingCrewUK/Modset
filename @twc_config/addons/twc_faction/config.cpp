@@ -1625,7 +1625,7 @@ class CfgVehicles
 		"Put",	
 		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
 		"UK3CB_BAF_L131A1",
-		"UK3CB_BAF_NLAW_Launcher"
+		"HAFM_LAW"
 		};
 		respawnweapons[]=
 		{
@@ -1633,7 +1633,7 @@ class CfgVehicles
 		"Put",	
 		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
 		"UK3CB_BAF_L131A1",
-		"UK3CB_BAF_NLAW_Launcher"
+		"HAFM_LAW"
 		};
 		magazines[]=
 		{

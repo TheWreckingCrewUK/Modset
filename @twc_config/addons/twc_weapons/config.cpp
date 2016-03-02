@@ -582,7 +582,7 @@ class CfgVehicles
 //**************************** Modern Backpack Coin *********************
 	class TWC_Backpack_Modern_Pointman:UK3CB_BAF_B_Bergen_MTP_PointMan_L_A
 	{
-		transportMaxWeapons = 1;
+		transportMaxWeapons = 2;
 		
 		class TransportMagazines
 		{
@@ -607,6 +607,11 @@ class CfgVehicles
             class _xx_Shotgun
 			{
 				weapon = "UK3CB_BAF_L128A1_Eotech";
+				count = 1;
+			};
+			class _xx_twc_vallon
+			{
+				weapon = "twc_vallon";
 				count = 1;
 			};
 		};
