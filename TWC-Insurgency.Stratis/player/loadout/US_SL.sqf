@@ -21,9 +21,8 @@ player addVest "CUP_V_B_MTV_TL";
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
 for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
-player addBackpack "B_mas_Kitbag_mul";
+player addBackpack "B_Kitbag_mcamo";
 player addItemToBackpack "ACRE_PRC117F";
-for "_i" from 1 to 2 do {player addItemToBackpack "HandGrenade";};
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 player addHeadgear "H_HelmetB_camo";
 

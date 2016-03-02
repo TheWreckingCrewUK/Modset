@@ -20,7 +20,7 @@ player addVest "CUP_V_B_MTV_MG";
 for "_i" from 1 to 2 do {player addItemToVest "CUP_HandGrenade_M67";};
 for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
 player addItemToVest "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
-player addBackpack "B_mas_Kitbag_mul";
+player addBackpack "B_Kitbag_mcamo";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 3 do {player addItemToBackpack "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";};
 player addHeadgear "H_HelmetB_camo";

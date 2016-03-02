@@ -6,21 +6,16 @@
 * Author [TWC] jayman
 */
 
-["gasStation",3,50] call twc_smallTownCiv;
-["shahbazNorthEast",3,50] call twc_smallTownCiv;
-["shahbazSouthEast",3,50] call twc_smallTownCiv;
-["southMilitaryBase",3,50] call twc_smallTownCiv;
-["southMilitaryBaseWest",3,50] call twc_smallTownCiv;
-["southMilitaryBaseNorthWest",3,50] call twc_smallTownCiv;
-["damSouth",3,50] call twc_smallTownCiv;
-["damNorth",3,50] call twc_smallTownCiv;
-["damNorthNorth",3,50] call twc_smallTownCiv;
-["azizaytNorth",3,50] call twc_smallTownCiv;
-["azizaytSouth",3,50] call twc_smallTownCiv;
-["villa",3,50] call twc_smallTownCiv;
-["nangoSouthEast",3,50] call twc_smallTownCiv;
-["NangoEast",3,50] call twc_smallTownCiv;
-["hazarBagh",3,50] call twc_smallTownCiv;
-["hazarBaghSouth",4,100] call twc_smallTownCiv;
-["zargabadNorthNorth",3,50] call twc_smallTownCiv;
-["zargabadNorthWest",3,50] call twc_smallTownCiv;
+["small_1",3,50] call twc_smallTownCiv;
+["small_2",3,50] call twc_smallTownCiv;
+["small_3",3,50] call twc_smallTownCiv;
+["small_4",3,50] call twc_smallTownCiv;
+["small_5",3,50] call twc_smallTownCiv;
+["small_6",3,50] call twc_smallTownCiv;
+["small_7",3,50] call twc_smallTownCiv;
+["small_8",3,50] call twc_smallTownCiv;
+["small_9",3,50] call twc_smallTownCiv;
+["small_10",3,50] call twc_smallTownCiv;
+["small_11",3,50] call twc_smallTownCiv;
+["small_12",3,50] call twc_smallTownCiv;
+["small_13",3,50] call twc_smallTownCiv;

@@ -22,7 +22,7 @@ for "_i" from 1 to 10 do {player addItemToVest "ACE_morphine";};
 for "_i" from 1 to 2 do {player addItemToVest "CUP_HandGrenade_M67";};
 for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
-player addBackpack "B_mas_Kitbag_mul";
+player addBackpack "B_Kitbag_mcamo";
 for "_i" from 1 to 20 do {player addItemToBackpack "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_epinephrine";};
 for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};

@@ -8,7 +8,7 @@
 
 
 _group = createGroup civilian;
-_civilianType = "C_mas_med_Civil_1_1_F";
+_civilianType = "C_man_1";
 params["_marker", "_civnum", "_civradius"];
 
 for "_i" from 1 to _civnum do {

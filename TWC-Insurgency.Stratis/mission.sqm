@@ -213,6 +213,7 @@ class Mission
 					id=6;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -227,6 +228,7 @@ class Mission
 					id=7;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="p7";
 					description="Bravo Rifleman";
@@ -239,6 +241,7 @@ class Mission
 					id=8;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="p8";
 					description="Bravo Grenadier";
@@ -251,6 +254,7 @@ class Mission
 					id=9;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="p9";
 					description="Bravo Automatic Rifleman";
@@ -263,7 +267,7 @@ class Mission
 					id=10;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="p10";
 					description="Bravo Medic";
@@ -2271,7 +2275,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=45;
+		items=58;
 		class Item0
 		{
 			position[]={4011.4983,143.14632,7032.9658};
@@ -2592,6 +2596,97 @@ class Mission
 			name="AgiosCephas";
 			type="Empty";
 			colorName="ColorRed";
+		};
+		class Item45
+		{
+			position[]={4500.0332,105.80917,6799.0234};
+			name="small_2";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item46
+		{
+			position[]={6068.1621,18.100288,5617.1982};
+			name="small_1";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item47
+		{
+			position[]={5203.0557,222.99551,5002.519};
+			name="small_3";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item48
+		{
+			position[]={6564.7422,52.365181,5079.478};
+			name="small_4";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item49
+		{
+			position[]={4155.6748,157.54993,3292.9814};
+			name="small_5";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item50
+		{
+			position[]={4807.3643,193.24141,4400.0039};
+			name="small_6";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item51
+		{
+			position[]={4275.3477,4.3247752,2693.6094};
+			name="small_7";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item52
+		{
+			position[]={3074.6008,167.74403,2149.9648};
+			name="small_8";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item53
+		{
+			position[]={3689.1392,156.44012,2871.4312};
+			name="small_9";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item54
+		{
+			position[]={2165.573,2.9218187,1894.6343};
+			name="small_10";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item55
+		{
+			position[]={2826.7053,38.247746,3735.7813};
+			name="small_11";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item56
+		{
+			position[]={3507.1516,200.47357,4920.979};
+			name="small_12";
+			type="Empty";
+			colorName="ColorBrown";
+		};
+		class Item57
+		{
+			position[]={2426.2646,3.1387329,1151.645};
+			name="small_13";
+			type="Empty";
+			colorName="ColorBrown";
 		};
 	};
 	class Sensors
