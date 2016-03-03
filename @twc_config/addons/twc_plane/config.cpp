@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"twc_c130"
+			"twc_c5_hercules"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -16,13 +16,6 @@ class CfgPatches
 			"A3_Soft_F",
 			"A3_data_F"
 		};
-	};
-};
-class Extended_PostInit_EventHandlers
-{
-	class TWC_Plane_Init
-	{
-		init="execVM '\twc_plane\init.sqf';";
 	};
 };
 class CfgVehicles

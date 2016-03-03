@@ -4,4 +4,6 @@ waitUntil{!isNull player};
 if (!hasInterface) exitWith {};
 global_sync = false;
 
+execVM "client\init.sqf";
+execVM "client\zeus\zeus.sqf";
 execVM "client\playerlist\init.sqf";

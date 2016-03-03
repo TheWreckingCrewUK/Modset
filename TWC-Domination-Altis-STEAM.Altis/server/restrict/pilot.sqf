@@ -34,7 +34,7 @@ true spawn {
 
 
             //Vehicle Pilot Check for blackhawk
-             if(({typeOf _veh == _x} count _blackhawk) > 0 && !_iamBlackHawkpilot && !_iamcrew) then {
+            if(({typeOf _veh == _x} count _blackhawk) > 0 && !_iamBlackHawkpilot && !_iamcrew) then {
                 //Forbidden seats: copilot, pilot
                 _forbidden = [_veh turretUnit [0]] + [driver _veh];
                 if(player in _forbidden) then {

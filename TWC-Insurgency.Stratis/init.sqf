@@ -1,9 +1,6 @@
 if (isServer) then {execVM "server\init.sqf";};
 "iedRestrictionZone" setMarkerAlpha 0;
 
-execVM "client\zeus\zeus.sqf";
-execVM "client\zeus\zeus-Fakematty.sqf";
-execVM "client\zeus\zeus-jayman.sqf";
 
 waitUntil {!isNull player};
 waitUntil {player == player};
