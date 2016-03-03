@@ -15,7 +15,6 @@ if (isServer) then {
 //bunker set and Radar set
 AObunkercount = 0;
 RadioTowerCheck = 0;
-CounterAttackCheck = 0;
 };
 
 hint"AO created";
@@ -37,19 +36,18 @@ _natoflag = "Flag_NATO_F";
 params ["_AOname"]; //example "pygros"
 
 //formating
-private ["_CentralMarker","_bunkerone","_bunkertwo","_bunkerthree"];
+private ["_CentralMarker","_bunkerone","_bunkertwo"];
 _CentralMarker = format ["ao%1",_AOname]; // example "aopygros"
 _CentralFlagMarker = format ["flag%1", _AOname]; // example "flagpyrgos"
 _bunkerone = format ["ao%1bunkerone",_AOname]; // example "aopygrosbunkerone"
 _bunkertwo = format ["ao%1bunkertwo",_AOname]; // example "aopygrosbunkertwo"
-_bunkerthree = format ["ao%1bunkerthree",_AOname]; // example "aopygrosbunkerthree"
 
 
 if (isServer) then {
 	_AOAreaMarker = createMarker [ _CentralMarker , position player ];
 	_AOAreaMarker setmarkerpos getmarkerpos _AOname;
 	_AOAreaMarker setmarkershape "ELLIPSE";
-	_AOAreaMarker setmarkersize [300, 300];
+	_AOAreaMarker setmarkersize [600, 600];
 	_AOAreaMarker setmarkercolor "ColorBlue";
 	_AoAreaMarker setmarkeralpha 0.0;
 };
@@ -162,8 +160,9 @@ TaskIncrease = TaskIncrease + 1;
 [format["Task%1",TaskIncrease],format[ "Primary Objective : Capture %1",_AOname],"Capture each of the three bunkers inside the AO also destory the Radio tower to complete the AO."] call TWC_fnc_CreateTask;
 if isServer then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,600],[0,120],0,[1,200]] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[0,200],[0,360],0,[1,200]] call SHK_pos;
 	_RadioTower = _radar createVehicle (_pos);
+	_RadarMarker = createMarker [ "radiotowermarkername", _pos];
 	_RadioTower setdamage 0.99;
 		waituntil { damage _RadioTower == 1};
 		RadioTowerCheck = RadioTowerCheck + 1;
@@ -174,16 +173,13 @@ if isServer then {
 
 
 waituntil {AObunkercount == 2 and RadioTowerCheck == 1};
-[_AOname] spawn twc_fnc_Spawncounter;
-waituntil {CounterAttackCheck == 1};
 
    [format["Task%1",TaskIncrease],"succeeded"] call TWC_fnc_UpdateTask;
   _CentralMarker setmarkeralpha 1.0;
   _CentralFlagMarker setmarkertype "flag_UK";
-  terminate _AttackHeli;
   {if (side _x == east) then
   {_x setDamage 1};} foreach allunits;
   sleep 5;
   { deleteVehicle _x } forEach allDead;
   sleep 10;
-  null=[]execVm "server\ao\RandomArray.sqf";
+  execVm "server\ao\RandomArray.sqf";

@@ -8,4 +8,5 @@ if (!hasInterface) exitWith {};
 global_sync = false;
 
 execVM "client\player\init.sqf";
-#include "client\init.sqf";
+
+execVM "client\init.sqf";

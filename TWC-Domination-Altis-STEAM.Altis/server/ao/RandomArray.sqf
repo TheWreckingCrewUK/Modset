@@ -1,6 +1,6 @@
 _repeatTasks=false;
 
-AOlimit = 6;
+AOlimit = 4;
 
 if (count TaskArray > AOlimit) then {
 	_randomN=floor (random count TaskArray);

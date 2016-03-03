@@ -1,3 +1,4 @@
+execVM "client\restrict\init.sqf";
 g_class = "";
 g_group = "";
 g_unit = "";
@@ -343,10 +344,10 @@ TWCServer globalchat format["%1 joined in as %2",_name,g_name];
 if (g_class != "") then {
 	execVM format["client\loadout\%1.sqf", g_class];
 };
-
 sleep 2;
-_radioID = [g_radio,player] call acre_api_fnc_getRadioByType;
-_switchChannel = [_radioID, g_radio_channel] call acre_api_fnc_setRadioChannel;
-
+	if (g_radio != "") then {
+		_radioID = [g_radio] call acre_api_fnc_getRadioByType;
+		_switchChannel = [_radioID, g_radio_channel] call acre_api_fnc_setRadioChannel;
+	};
 
 //made by hartzie edited by FakeMatty
