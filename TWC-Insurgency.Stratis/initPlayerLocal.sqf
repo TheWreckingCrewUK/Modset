@@ -3,10 +3,6 @@ waitUntil{!isNull player};
 
 execVM "steam\acreCheck.sqf";
 
-execVM "client\zeus\zeus.sqf";
-execVM "client\zeus\zeus-Fakematty.sqf";
-execVM "client\zeus\zeus-jayman.sqf";
-
 if (!hasInterface) exitWith {};
 
 global_sync = false;
