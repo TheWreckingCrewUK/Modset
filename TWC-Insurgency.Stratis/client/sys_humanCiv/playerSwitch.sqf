@@ -2,7 +2,8 @@ while {(side player) == civilian} do {
 
 	civKill = player addMPEventHandler ["MPKilled", {[_this select 0, _this select 1] spawn InsP_fnc_civKill;}];
 
-	waitUntil {!(player primaryweapon == "") || !(player secondaryweapon == "")  || "APERSTripMin_Wire_Mag" in (magazines player) || "IEDLandSmall_Remote_Mag" in (magazines player) || "IEDLandBig_Remote_Mag" in (magazines player) || "IEDUrbanSmall_Remote_Mag" in (magazines player) || "IEDUrbanBig_Remote_Mag" in (magazines player)};
+	waitUntil {!((primaryweapon player == "") || !(secondaryweapon player == "")  || (primaryweapon player == "ACE_FakePrimaryWeapon") || "APERSTripMin_Wire_Mag" in (magazines player) || "IEDLandSmall_Remote_Mag" in (magazines player) || "IEDLandBig_Remote_Mag" in (magazines player) || "IEDUrbanSmall_Remote_Mag" in (magazines player) || "IEDUrbanBig_Remote_Mag" in (magazines player))};
+	_name = primaryweapon player; hint str _name;
 
 	cutText ["Receiving...", "BLACK", 0.001];
 
@@ -17,6 +18,9 @@ while {(side player) == civilian} do {
 	[player] joinSilent _resGroup;
 	 [player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
 	player addItem "ACE_EarPlugs";
+	player forceAddUniform "CUP_U_I_GUE_Flecktarn3";
+	for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
+	for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 	hintSilent "You are now an insurgent.";
 
 	cutText ["","BLACK IN",0];

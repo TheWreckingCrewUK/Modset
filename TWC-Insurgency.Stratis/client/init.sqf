@@ -1,7 +1,6 @@
 
 waitUntil {!isNull player};
 waitUntil {player == player};
-#include "init\setDefines.sqf";
 
 InsP_fnc_questionDisplay = compile preProcessFileLineNumbers "client\sys_intel\fnc_questionDisplay.sqf";
 InsP_fnc_possibleIntel = compile preProcessFileLineNumbers "client\sys_intel\fnc_possibleIntel.sqf";

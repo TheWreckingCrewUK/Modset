@@ -32,12 +32,9 @@ russiancheck = 0;
 
 waitUntil {!isNull player};
 waitUntil {player == player};
-/*
-if (InsP_playerCiv) then {
-	execVM "client\sys_humanCiv\Markers.sqf";
-	call InsP_fnc_spawnSelect;
-};
-*/
+
+InsP_playerCiv = str(side player) == 'CIV';
+
 if (isNil "nonQuestionableList") then {
 	nonQuestionableList = [];
 	publicVariable "nonQuestionableList";
@@ -102,10 +99,17 @@ titleText ["Insurgency Plus","PLAIN DOWN"];
 titleFadeOut 7;
 sleep 5;
 
+memberIDArray = ["_SP_PLAYER_"];
+InsP_playersKilledAsCivs = [""];
+
 _pilots = ["p21", "p22"];
+_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
 
 if ((str player) in _pilots && (count playableUnits) < 5) then {
     ["end4", false, 0] call BIS_fnc_endMission;
+};
+if ((str player) in _humancivs && (count playableUnits) < 0 && !((name player) in InsP_playersKilledAsCivs)) then {
+	["end6", false, 0] call BIS_fnc_endMission;
 };
 cutText ["", "BLACK IN", 2];
 

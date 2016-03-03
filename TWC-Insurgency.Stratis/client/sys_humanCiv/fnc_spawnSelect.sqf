@@ -34,6 +34,8 @@ while {true} do {
     {deleteMarkerLocal _x} forEach _allMarkers;
     sleep 6;
     cutText ["","BLACK IN",0];
+	for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
+	for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
     waitUntil {!alive player};
     if (faction player != "CIV_F") exitWith {};
     waitUntil {alive player};

@@ -54,7 +54,7 @@ if (isNil "cacheAMarkers") then {
 };
 
 #include "sys_cache\init.sqf";
-//#include "sys_aaGun\init.sqf";
+#include "sys_aaGun\init.sqf";
 #include "sys_bluDeath\init.sqf";
 #include "sys_ied\init.sqf";
 #include "sys_iedAttack\init.sqf";
