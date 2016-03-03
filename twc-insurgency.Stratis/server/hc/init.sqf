@@ -1,1 +1,1 @@
-execVM "hc\psync.sqf";
+execVM "server\hc\psync.sqf";

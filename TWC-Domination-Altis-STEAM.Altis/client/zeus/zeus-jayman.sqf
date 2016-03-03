@@ -1,5 +1,5 @@
 
-_curator = Zeus;
+_curator = jayman;
 _addCivilians = True;
 
 //adds objects placed in editor:
