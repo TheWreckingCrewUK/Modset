@@ -5,8 +5,8 @@ disableChannels[]={0,1,2,3,4,6};
 
 onLoadName = "Insurgency Plus 3";
 onLoadMission = "http://www.thewreckingcrew.co.uk/";
-author = "WiredTiger[TWC] / Fakematty[TWC]";
-loadScreen = "tao\pics\Loading.jpg";
+author = "WiredTiger[TWC] /Jayman[TWC]";
+loadScreen = "server\pics\loading.jpg";
 
 
 class Header

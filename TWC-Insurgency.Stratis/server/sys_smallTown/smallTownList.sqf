@@ -13,7 +13,7 @@
 ["small_5"] call twc_smallTown;
 ["small_6"] call twc_smallTown;
 ["small_7"] call twc_smallTown;
-["small_8" call twc_smallTown;
+["small_8"] call twc_smallTown;
 ["small_9"] call twc_smallTown;
 ["small_10"] call twc_smallTown;
 ["small_11"] call twc_smallTown;

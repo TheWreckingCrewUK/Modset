@@ -1,0 +1,1 @@
+execVM "server\hc\init.sqf";
