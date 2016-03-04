@@ -108,7 +108,7 @@ _humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
 if ((str player) in _pilots && (count playableUnits) < 5) then {
     ["end4", false, 0] call BIS_fnc_endMission;
 };
-if ((str player) in _humancivs && (count playableUnits) < 0 && !((name player) in InsP_playersKilledAsCivs)) then {
+if ((str player) in _humancivs && (count playableUnits) < 10 && !((name player) in InsP_playersKilledAsCivs) && player in memberIDArray) then {
 	["end6", false, 0] call BIS_fnc_endMission;
 };
 cutText ["", "BLACK IN", 2];

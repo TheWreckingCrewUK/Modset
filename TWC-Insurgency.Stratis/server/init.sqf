@@ -64,3 +64,5 @@ if (isNil "cacheAMarkers") then {
 
 #include "sys_townSetup\init.sqf";
 #include "sys_smallTown\init.sqf";
+
+#include "aiFix\aiFix.sqf";

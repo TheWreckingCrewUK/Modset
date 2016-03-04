@@ -1,16 +1,4 @@
-/*
-["gasStation", 50, 3] execVM "server\sys_vehicles\vehicleSetup.sqf";
-["shahbazNorthEast", 100, 2] execVM "server\sys_vehicles\vehicleSetup.sqf";
-["shahbazSouthEast", 100, 2] execVM "server\sys_vehicles\vehicleSetup.sqf";
-["southMilitaryBase", 200, 2] execVM "server\sys_vehicles\vehicleSetup.sqf";
-["southMilitaryBaseWest", 40, 1] execVM "server\sys_vehicles\vehicleSetup.sqf";
-["SouthMilitaryBaseNorthWest", 50, 1] execVM "server\sys_vehicles\vehicleSetup.sqf";
-["damSouth", 50, 1] execVM "server\sys_vehicles\vehicleSetup.sqf";
-["damNorth", 50, 1] execVM "server\sys_vehicles\vehicleSetup.sqf";
-["azizaytSouth", 200, 3] execVM "server\sys_vehicles\vehicleSetup.sqf";
-["azizaytNorth", 200, 3] execVM "server\sys_vehicles\vehicleSetup.sqf";
-["villa", 100, 3] execVM "server\sys_vehicles\vehicleSetup.sqf";
-*/
+["vehiclemiddle", 5000, 50] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
 
 ["AgiaMarina", 200, 4] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
 ["AgiosCephas", 200, 4] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";

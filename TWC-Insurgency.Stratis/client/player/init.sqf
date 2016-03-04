@@ -143,7 +143,7 @@ if (!isNil "P24" && {player == P24}) then {
 	g_group = "1";
 	g_unit = "132";
 };
-
+/*
 if (!isNil "P25" && {player == P25}) then {
     g_class = "ANA_MED";
 	g_group = "1";
@@ -174,6 +174,7 @@ if (!isNil "P30" && {player == P30}) then {
 	g_group = "1";
 	g_unit = "138";
 };
+
 if (!isNil "P31" && {player == P31}) then {
     g_class = "PILOT_BLACKHAWK";
 	g_group = "1";
@@ -218,7 +219,7 @@ if (!isNil "P38" && {player == P38}) then {
 	g_group = "1";
 	g_unit = "146";
 };
-
+*/
 g_p1 = "";
 g_p2 = "";
 g_p2 = "";
