@@ -19,8 +19,8 @@ switch (_Roundselect) do {
 	case "ILLUM": {_Roundtype = 1;};
     default { _Roundtype =  0;};
 };
-
-
+	_mortar dowatch getmarkerpos _marker;
+	
 	for "_i" from 0 to _rounds do {  //--- 5 = how many rounds you want fired
 
 					   //--- name of the mortar
