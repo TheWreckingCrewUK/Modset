@@ -1,4 +1,4 @@
-["vehiclemiddle", 5000, 50] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
+["vehiclemiddle", 3000, 25] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
 
 ["AgiaMarina", 200, 4] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
 ["AgiosCephas", 200, 4] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";

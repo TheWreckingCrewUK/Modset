@@ -1,5 +1,5 @@
 DisabledAI		= 1;
-joinUnassigned	= 0;
+joinUnassigned	= 1;
 disableChannels[]={0,1,2,3,4,6};
 
 
@@ -80,7 +80,7 @@ class CfgDebriefing
 	class End6
 	{
 		title = "You can not play as a human Civilian";
-		subtitle = "You must be a member and have at least 20 people online";
+		subtitle = "You must be a member, not have died as a civilian, and playercount must be high enough.";
 		description = "Play as Blufor for now";
 		// pictureBackground = "";
 		// picture = "";

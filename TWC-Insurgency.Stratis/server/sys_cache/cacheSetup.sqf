@@ -14,22 +14,14 @@ if (isNil "InsP_cacheGroup") then {
 	_cacheADeath = cacheBoxB addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxB"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxB";
 
-/*	cacheBoxC = _cacheBoxType createVehicle [7075, 5912, 22];
+	cacheBoxC = _cacheBoxType createVehicle [7075, 5912, 22];
 	_cacheADeath = cacheBoxC addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxC"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxC";
-*/
-	cacheBoxD = _cacheBoxType createVehicle [7070, 5912, 5];
-	_cacheADeath = cacheBoxD addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxD"] call InsP_fnc_deleteMarkers}];
-	publicVariable "cacheBoxD";
 
-	cacheBoxE = _cacheBoxType createVehicle [7070, 5917, 5];
-	_cacheADeath = cacheBoxE addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxE"] call InsP_fnc_deleteMarkers}];
-	publicVariable "cacheBoxE";
-
-	InsP_cacheGroup = [cacheBoxA, cacheBoxB/*, cacheBoxC*/, cacheBoxD, cacheBoxE];
+	InsP_cacheGroup = [cacheBoxA, cacheBoxB, cacheBoxC];
 	publicVariable "InsP_cacheGroup";
 	
-	waitUntil {!(isNil "cacheBoxA") && !(isNil "cacheBoxB")/* && !(isNil "cacheBoxC")*/ && !(isNil "cacheBoxD") && !(isNil "cacheBoxE") && !(isNil "InsP_cacheGroup")};
+	waitUntil {!(isNil "cacheBoxA") && !(isNil "cacheBoxB") &&!(isNil "cacheBoxC") && !(isNil "InsP_cacheGroup")};
 
 	{
 		while {(_x distance (getMarkerPos "cacheSpawn")) < 50} do {
@@ -37,9 +29,7 @@ if (isNil "InsP_cacheGroup") then {
 			switch (str _forEachIndex) do {
 				case "0": {_cacheMarker = "cacheMarkerA"};
 				case "1": {_cacheMarker = "cacheMarkerB"};
-				//case "2": {_cacheMarker = "cacheMarkerC"};
-				case "2": {_cacheMarker = "cacheMarkerD"};
-				case "3": {_cacheMarker = "cacheMarkerE"};
+				case "2": {_cacheMarker = "cacheMarkerC"};
 			};
 	
 			_houseList = (getMarkerPos _cacheMarker) nearObjects ["House",1500];

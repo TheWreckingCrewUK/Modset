@@ -25,8 +25,6 @@ if (_civilianQuestioned in nonQuestionableList) then {
 			case (str (InsP_cacheGroup select 0)): {cacheAMarkers pushBack _marker; publicVariable "cacheAMarkers"};
 			case (str (InsP_cacheGroup select 1)): {cacheBMarkers pushBack _marker; publicVariable "cacheBMarkers"};
 			case (str (InsP_cacheGroup select 2)): {cacheCMarkers pushBack _marker; publicVariable "cacheCMarkers"};
-			case (str (InsP_cacheGroup select 3)): {cacheDMarkers pushBack _marker; publicVariable "cacheDMarkers"};
-			case (str (InsP_cacheGroup select 4)): {cacheEMarkers pushBack _marker; publicVariable "cacheEMarkers"};
 			default {hint "Something went wrong";};
 		};
 	}else{

@@ -1,4 +1,4 @@
-_randNumber = floor(random 7);
+_randNumber = floor(random 2);
 _removeQuestioning = getPos player nearestObject "C_man_1";
 
 if (!alive _removeQuestioning) then {

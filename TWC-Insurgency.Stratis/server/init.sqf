@@ -46,18 +46,13 @@ if (isNil "cacheAMarkers") then {
 	cacheBMarkers = [];
 	publicVariable "cacheBMarkers";
 	cacheCMarkers = [];
-//	publicVariable "cacheCMarkers";
-//	cacheDMarkers = [];
-	publicVariable "cacheDMarkers";
-	cacheEMarkers = [];
-	publicVariable "cacheEMarkers";
+	publicVariable "cacheCMarkers";
 };
 
 #include "sys_cache\init.sqf";
 #include "sys_aaGun\init.sqf";
 #include "sys_bluDeath\init.sqf";
 #include "sys_ied\init.sqf";
-#include "sys_iedAttack\init.sqf";
 
 
 #include "sys_vehicles\init.sqf";

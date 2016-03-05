@@ -28,7 +28,7 @@ comment "Add weapons";
 player addWeapon "CUP_arifle_L85A2";
 player addPrimaryWeaponItem "CUP_acc_ANPEQ_2";
 player addPrimaryWeaponItem "CUP_optic_ACOG";
-player addWeapon "launch_NLAW_F";
+player addWeapon "CUP_launch_M136";
 
 comment "Add items";
 player linkItem "ItemMap";
