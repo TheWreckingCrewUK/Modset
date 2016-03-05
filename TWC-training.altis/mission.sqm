@@ -62499,7 +62499,7 @@ class Mission
 				init="veh = [this, 15] execVM ""scripts\vehicleRespawn\vehicle.sqf""";
 			};
 			id=4883;
-			type="twc_c130";
+			type="twc_c5_hercules";
 		};
 		class Item3844
 		{
