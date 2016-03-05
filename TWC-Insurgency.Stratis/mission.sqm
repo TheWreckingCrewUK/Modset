@@ -132,7 +132,7 @@ class Mission
 				items=5;
 				class Item0
 				{
-					position[]={2107.9666,6.2600002,5710.479};
+					position[]={1883.3148,5.6824927,5767.0029};
 					azimut=128.62399;
 					special="NONE";
 					id=1;
@@ -2702,7 +2702,7 @@ class Mission
 			interruptable=1;
 			type="END5";
 			age="UNKNOWN";
-			expCond="InsP_ammoCaches == 3;";
+			expCond="InsP_ammoCaches == 2;";
 			class Effects
 			{
 			};
