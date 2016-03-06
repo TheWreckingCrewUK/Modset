@@ -5,7 +5,7 @@
 _Girnastart = createTrigger ["EmptyDetector", getMarkerPos "Girna"];
 _Girnastart setTriggerArea [500, 500, 0, false];
 _Girnastart setTriggerActivation ["West", "PRESENT", False];
-_Girnastart setTriggerStatements ["this","['Girna',4,100,0,[600,700]] call twc_townSetup"
+_Girnastart setTriggerStatements ["this","['Girna',4,100,3,[600,700]] call twc_townSetup"
 	,""
 ];
 

@@ -5,7 +5,7 @@
 _AgiosCephasstart = createTrigger ["EmptyDetector", getMarkerPos "AgiosCephas"];
 _AgiosCephasstart setTriggerArea [400, 400, 0, false];
 _AgiosCephasstart setTriggerActivation ["West", "PRESENT", False];
-_AgiosCephasstart setTriggerStatements ["this","['AgiosCephas',7,100,1,[500,600]] call twc_townSetup"
+_AgiosCephasstart setTriggerStatements ["this","['AgiosCephas',7,100,2,[500,600]] call twc_townSetup"
 	,""
 ];
 

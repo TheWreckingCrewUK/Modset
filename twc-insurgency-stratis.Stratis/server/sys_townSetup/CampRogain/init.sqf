@@ -5,7 +5,7 @@
 _CampRogainstart = createTrigger ["EmptyDetector", getMarkerPos "CampRogain"];
 _CampRogainstart setTriggerArea [500, 500, 0, false];
 _CampRogainstart setTriggerActivation ["West", "PRESENT", False];
-_CampRogainstart setTriggerStatements ["this","['CampRogain',4,100,1,[600,700]] call twc_townSetup"
+_CampRogainstart setTriggerStatements ["this","['CampRogain',4,100,3,[600,700]] call twc_townSetup"
 	,""
 ];
 

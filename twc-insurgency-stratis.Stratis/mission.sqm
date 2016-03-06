@@ -43,8 +43,7 @@ class Mission
 		"CUP_WheeledVehicles_HMMWV",
 		"ace_viewdistance",
 		"acre_api",
-		"A3_Structures_F_Mil_Flags",
-		"A3_Weapons_F_Ammoboxes"
+		"A3_Structures_F_Mil_Flags"
 	};
 	addOnsAuto[]=
 	{
@@ -85,7 +84,6 @@ class Mission
 		"A3_Boat_F_Boat_Transport_01",
 		"CUP_AirVehicles_UH60",
 		"A3_Structures_F_Mil_Flags",
-		"A3_Weapons_F_Ammoboxes",
 		"a3_map_stratis"
 	};
 	randomSeed=12597401;
@@ -142,6 +140,7 @@ class Mission
 					id=1;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -1830,7 +1829,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=43;
+		items=42;
 		class Item0
 		{
 			position[]={1905.2924,5.591805,5725.7148};
@@ -2296,18 +2295,6 @@ class Mission
 			skill=0.60000002;
 			init="if(!isServer)Exitwith {};this addAction [""Return To Civ"", ""client\sys_humanCiv\returnToCiv.sqf""];";
 		};
-		class Item42
-		{
-			position[]={1887.4063,5.6885157,5765.9741};
-			azimut=128.62399;
-			special="NONE";
-			id=104;
-			side="EMPTY";
-			vehicle="Box_NATO_Wps_F";
-			leader=1;
-			skill=0.60000002;
-			init="null = [this] execVM ""virtual_arsenal_init.sqf""";
-		};
 	};
 	class Markers
 	{
@@ -2453,7 +2440,7 @@ class Mission
 		};
 		class Item20
 		{
-			position[]={3542.1248,26.640152,5900.9614};
+			position[]={4285.9526,108.7612,6252.4863};
 			name="cacheMarkerA";
 			type="Empty";
 			colorName="ColorGreen";

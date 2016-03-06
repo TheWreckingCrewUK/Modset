@@ -5,7 +5,7 @@
 _MilitaryBasestart = createTrigger ["EmptyDetector", getMarkerPos "MilitaryBase"];
 _MilitaryBasestart setTriggerArea [500, 500, 0, false];
 _MilitaryBasestart setTriggerActivation ["West", "PRESENT", False];
-_MilitaryBasestart setTriggerStatements ["this","['MilitaryBase',0,100,3,[600,700]] call twc_townSetup"
+_MilitaryBasestart setTriggerStatements ["this","['MilitaryBase',0,100,2,[600,700]] call twc_townSetup"
 	,""
 ];
 

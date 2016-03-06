@@ -22,6 +22,8 @@ for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 titleText ["You are now a Civilian Again", "PLAIN"];
 titleFadeOut 4;
 
+hint "Because you have already been an insurgent you are not permitted to go insurgent again unless morale becomes strong."
+
 _selectedCache = [cacheBoxA,cacheBoxB,cacheBoxC] call BIS_fnc_selectRandom;
 while {!alive _selectedCache} do{
 _selectedCache = [cacheBoxA,cacheBoxB,cacheBoxC] call BIS_fnc_selectRandom;

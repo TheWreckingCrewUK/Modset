@@ -37,8 +37,6 @@ while {true} do {
 	for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 	for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
     waitUntil {!alive player};
-	_arsenal = nearestObject [player, "Box_FIA_Wps_F"];
-	[_arsenal] execVM "client\sys_humanCiv\arsenal.sqf";
     if (faction player != "CIV_F") exitWith {};
     waitUntil {alive player};
 };
