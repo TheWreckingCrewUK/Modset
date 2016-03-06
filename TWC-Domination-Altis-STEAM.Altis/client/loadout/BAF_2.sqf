@@ -38,4 +38,4 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadioAcreFlagged";
-player linkItem "rhsusf_ANPVS_14";
+player linkItem "CUP_NVG_PVS7";

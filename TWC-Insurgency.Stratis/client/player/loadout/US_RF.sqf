@@ -25,7 +25,7 @@ for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 player addHeadgear "H_HelmetB_camo";
 
 comment "Add weapons";
-player addWeapon "CUP_arifle_M4A1_BUIS_GL";
+player addWeapon "CUP_arifle_M4A1";
 player addPrimaryWeaponItem "CUP_acc_ANPEQ_2";
 player addPrimaryWeaponItem "CUP_optic_ACOG";
 player addWeapon "CUP_launch_M136";

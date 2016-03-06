@@ -1,4 +1,4 @@
-_aalist = (allMissionObjects "CUP_I_ZU23_NAPA");
+_aalist = (allMissionObjects "CUP_I_DSHKM_NAPA");
 {
 	_marker = createMarkerLocal [format ["aagun%1", _forEachIndex], getPosATL _x];
 	_marker setMarkerTypeLocal "mil_triangle";

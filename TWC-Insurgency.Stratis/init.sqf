@@ -114,13 +114,13 @@ if(!isNull humanCiv3) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
 if ((str player) in _pilots && (count playableUnits) < 5) then {
     ["end4", false, 0] call BIS_fnc_endMission;
 };
-
+/*
 if ((str player) in _humancivs) then{
 	if ((count playableUnits) < _NumPlayersForCiv || !(_UID in _memberIDArray) || (player in InsP_playersKilledAsCivs)) then {
 		["end6", false, 0] call BIS_fnc_endMission;
 	};
 };
-
+*/
 cutText ["", "BLACK IN", 2];
 
 titleText ["Enjoy your stay", "PLAIN"];

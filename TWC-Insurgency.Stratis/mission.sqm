@@ -42,7 +42,9 @@ class Mission
 		"CUP_WheeledVehicles_LR",
 		"CUP_WheeledVehicles_HMMWV",
 		"ace_viewdistance",
-		"acre_api"
+		"acre_api",
+		"A3_Structures_F_Mil_Flags",
+		"A3_Weapons_F_Ammoboxes"
 	};
 	addOnsAuto[]=
 	{
@@ -82,6 +84,8 @@ class Mission
 		"A3_Structures_F_Civ_Camping",
 		"A3_Boat_F_Boat_Transport_01",
 		"CUP_AirVehicles_UH60",
+		"A3_Structures_F_Mil_Flags",
+		"A3_Weapons_F_Ammoboxes",
 		"a3_map_stratis"
 	};
 	randomSeed=12597401;
@@ -138,7 +142,6 @@ class Mission
 					id=1;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -589,7 +592,7 @@ class Mission
 					id=25;
 					side="CIV";
 					vehicle="C_man_1";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
 					text="humanCiv1";
@@ -1827,7 +1830,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=41;
+		items=43;
 		class Item0
 		{
 			position[]={1905.2924,5.591805,5725.7148};
@@ -2280,6 +2283,30 @@ class Mission
 			skill=0.60000002;
 			text="vehicle15";
 			init="0 = [this, 600, 3600] execVM ""server\vehicles\vehicleRespawn.sqf"";";
+		};
+		class Item41
+		{
+			position[]={1904.7574,5.6071887,5728.7061};
+			azimut=128.62399;
+			special="NONE";
+			id=103;
+			side="EMPTY";
+			vehicle="Flag_UK_F";
+			leader=1;
+			skill=0.60000002;
+			init="if(!isServer)Exitwith {};this addAction [""Return To Civ"", ""client\sys_humanCiv\returnToCiv.sqf""];";
+		};
+		class Item42
+		{
+			position[]={1887.4063,5.6885157,5765.9741};
+			azimut=128.62399;
+			special="NONE";
+			id=104;
+			side="EMPTY";
+			vehicle="Box_NATO_Wps_F";
+			leader=1;
+			skill=0.60000002;
+			init="null = [this] execVM ""virtual_arsenal_init.sqf""";
 		};
 	};
 	class Markers

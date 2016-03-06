@@ -1,6 +1,6 @@
 #define AA_POSITION_LIST_A ["AAGUNA1", "AAGUNA2", "AAGUNA3", "AAGUNA4", "AAGUNA5", "AAGUNA6", "AAGUNA7", "AAGUNA8"]
 #define AA_POSITION_LIST_B ["AAGUNB1", "AAGUNB2", "AAGUNB3", "AAGUNB4", "AAGUNB5", "AAGUNB6", "AAGUNB7", "AAGUNB8"]
-AA_VEHICLE_TYPE = "CUP_I_ZU23_NAPA";
+AA_VEHICLE_TYPE = "CUP_I_DSHKM_NAPA";
 _aagunner = "CUP_I_GUE_Soldier_AKSU";
 
 private ["_aaGunAPosition", "_aaGunBPosition", "_aaGunA", "_aaGunB"];

@@ -18,6 +18,7 @@ while {(side player) == civilian} do {
 	[player] joinSilent _resGroup;
 	 [player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
 	player addItem "ACE_EarPlugs";
+	removeheadgear player;
 	player forceAddUniform "CUP_U_I_GUE_Flecktarn3";
 	for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 	for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
