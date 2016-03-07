@@ -52,7 +52,11 @@ if (_RoadBoolean) then {
 	for "_i" from 0 to _amount step 1 do {
 		_road = _allRoads call BIS_fnc_selectRandom;
 		_iedType = _iedTypes call BIS_fnc_selectRandom;
-		[_iedType, getPos _road, 5] call TWC_fnc_spawnIED;
+		[_iedType, getPos _road, 5] call TWC_fnc_SpawnIED;
+		if (random 100 >70) then{
+			_Secondary = [getPos _road,5, 25, 0, 0, 45, 0] call BIS_fnc_findSafePos;
+			[_iedType,_Secondary, 5] call TWC_fnc_SpawnIED;
+		};
 		_allRoads = _allRoads - [_road];
 		if (count _allRoads <= 0) exitWith {};
 	};
@@ -64,6 +68,10 @@ if (_RoadBoolean) then {
 	for "_i" from 0 to _amount step 1 do {
 		_positionOffRoad = [getmarkerpos _marker, 0, _radius, 0, 0, 45, 0] call BIS_fnc_findSafePos;
 		_iedType = _iedTypes call BIS_fnc_selectRandom;
-		[_iedType,_positionOffRoad, 5] call TWC_fnc_spawnIED;
+		[_iedType,_positionOffRoad, 5] call TWC_fnc_SpawnIED;
+		if (random 100 >70) then{
+			_Secondary = [_positionOffRoad,5, 25, 0, 0, 45, 0] call BIS_fnc_findSafePos;
+			[_iedType,_Secondary, 5] call TWC_fnc_SpawnIED;
+		};
 	};
 };
