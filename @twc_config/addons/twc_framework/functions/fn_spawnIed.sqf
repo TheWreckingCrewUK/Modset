@@ -17,7 +17,9 @@
 params ["_iedType", "_position", ["_spawnRadius", 0], ["_triggerRadius", 12]];
 
 // Create visible explosive object
-_ied = createVehicle [_iedType, _position, [], _spawnRadius, "NONE"];
+
+_position params ["_xpos","_ypos","_zpos"];
+_ied = createVehicle [_iedType, [_xpos,_ypos, random -0.20], [], _spawnRadius, "NONE"];
 
 // Handle creating explosion and cleaning up on object being destroyed
 _ied addEventHandler ["Killed", {

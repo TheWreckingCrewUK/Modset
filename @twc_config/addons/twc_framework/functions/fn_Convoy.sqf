@@ -2,7 +2,7 @@
 // © MARCH 2010 - norrin
 
 if (!isServer) exitWith {};
-hint "Convoy";
+
 params ["_MarkerArray","_ConvoyArray"];
 
 _convoyVclDestroyed = false;
