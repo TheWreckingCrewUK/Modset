@@ -1,5 +1,6 @@
 _givenNumber = (_this select 0) select 0;
 _civilianQuestioned = (_this select 0) select 1;
+_rand = (random 100);
 
 if (_civilianQuestioned in nonQuestionableList) then {
 	hintSilent "I've already told you what I know.";
@@ -28,6 +29,12 @@ if (_civilianQuestioned in nonQuestionableList) then {
 			default {hint "Something went wrong";};
 		};
 	}else{
-		hintSilent "I'm sorry, but I do not know anything!";
+		if (_rand < 10)then{
+			hintSilent "Bush Did 9/11!";
+		};
+		if (_rand >= 10)then{
+			hintSilent "I am just a grunt. I know nothing.";
+		};
+//		hintSilent "You will have to burn me at the stake before I tell you anything!";
 	};
 };

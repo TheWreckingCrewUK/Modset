@@ -43,7 +43,7 @@ if (g_class == "BAF_SL") then {
 
                 ];
 
-                _tmp_items = [
+    _tmp_items = [
 
                                 ["ACE_MapTools",1],
                                 ["ACE_fieldDressing",20],
@@ -56,7 +56,11 @@ if (g_class == "BAF_SL") then {
 								["CUP_optic_ACOG",1],
 								["CUP_optic_HoloBlack",1],
 								["ACE_DAGR",1],
-								["ACRE_PRC343",1]
+								["ACRE_PRC343",1],
+		["ACE_SpraypaintBlack",1],
+		["ACE_SpraypaintRed",1],
+		["ACE_SpraypaintGreen",1],
+		["ACE_SpraypaintBlue",1]
 
                 ];
 };
@@ -228,7 +232,11 @@ if (g_class == "US_SL") then {
 								["CUP_optic_ACOG",1],
 								["CUP_optic_HoloBlack",1],
 								["ACE_DAGR",1],
-								["ACRE_PRC148",1]
+								["ACRE_PRC148",1],
+		["ACE_SpraypaintBlack",1],
+		["ACE_SpraypaintRed",1],
+		["ACE_SpraypaintGreen",1],
+		["ACE_SpraypaintBlue",1]
 
                 ];
 };
@@ -382,7 +390,11 @@ if (g_class == "US_SL") then {
 			["1Rnd_SmokePurple_Grenade_shell", 10],
 			["1Rnd_SmokeBlue_Grenade_shell", 10],
 			["ACE_DAGR",1],
-			["ACRE_PRC148",1]
+			["ACRE_PRC148",1],
+		["ACE_SpraypaintBlack",1],
+		["ACE_SpraypaintRed",1],
+		["ACE_SpraypaintGreen",1],
+		["ACE_SpraypaintBlue",1]
 		];
 };
  if (g_class == "USMC_GRN") then {
@@ -540,7 +552,11 @@ if (g_class == "ANA_SL") then {
 								["ACE_epinephrine",5],
 								["SatchelCharge_Remote_Mag",1],
 								["DemoCharge_Remote_Mag",1],
-								["ACE_M26_Clacker",1]
+								["ACE_M26_Clacker",1],
+		["ACE_SpraypaintBlack",1],
+		["ACE_SpraypaintRed",1],
+		["ACE_SpraypaintGreen",1],
+		["ACE_SpraypaintBlue",1]
 
                 ];
 };
@@ -666,7 +682,11 @@ if (g_class == "ANA_SL") then {
             ["ACE_MapTools",1],
             ["ACE_fieldDressing",20],
             ["ACE_morphine",10],
-			["ACRE_PRC148",1]
+			["ACRE_PRC148",1],
+			["ACE_SpraypaintBlack",1],
+		["ACE_SpraypaintRed",1],
+		["ACE_SpraypaintGreen",1],
+		["ACE_SpraypaintBlue",1]
 		];
 };
  if (g_class == "FRE_RF") then {
