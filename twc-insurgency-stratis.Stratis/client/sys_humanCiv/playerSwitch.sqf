@@ -4,6 +4,9 @@ while {(side player) == civilian} do {
 
 	waitUntil {!((primaryweapon player == "") || !(secondaryweapon player == "")  || (primaryweapon player == "ACE_FakePrimaryWeapon") || "APERSTripMin_Wire_Mag" in (magazines player) || "IEDLandSmall_Remote_Mag" in (magazines player) || "IEDLandBig_Remote_Mag" in (magazines player) || "IEDUrbanSmall_Remote_Mag" in (magazines player) || "IEDUrbanBig_Remote_Mag" in (magazines player))};
 	_name = primaryweapon player; hint str _name;
+	if (numTimesInsurgent > 0 && floor InsP_enemyMorale > -2) then{
+		["end6", false, 0] call BIS_fnc_endMission;
+	};
 
 	cutText ["Receiving...", "BLACK", 0.001];
 
@@ -23,18 +26,12 @@ while {(side player) == civilian} do {
 	for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 	for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 	hintSilent "You are now an insurgent.";
+	InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\sys_intel\missionStatus.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
+	numTimesInsurgent = numTimesInsurgent + 1;
 
 	cutText ["","BLACK IN",0];
 
     player setPosATL _beforePos;
     player setDir _beforeDir;
-
-	waitUntil {!alive player};
-
-	DeadInsurgents pushBack (getPlayerUID player);
-	_updateList = publicVariable "DeadInsurgents";
-
-	_endMission = ["end1", false, 0] call BIS_fnc_endMission;
-
-	sleep 10;
 };

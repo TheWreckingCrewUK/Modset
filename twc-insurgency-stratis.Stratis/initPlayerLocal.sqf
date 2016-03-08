@@ -10,3 +10,5 @@ global_sync = false;
 execVM "client\player\init.sqf";
 
 execVM "client\init.sqf";
+
+numTimesInsurgent = 0;

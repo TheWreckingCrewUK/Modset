@@ -1,5 +1,6 @@
-_randNumber = floor(random 2);
-_removeQuestioning = getPos player nearestObject "C_man_1";
+_randNumber = floor(random 3);
+_removeQuestioning = cursorObject;//Cursor object is a scripting command not a variable like sqf highlighting will make you believe.
+
 
 if (!alive _removeQuestioning) then {
 	hintSilent "You can not question the \ndead without a ouija board.";

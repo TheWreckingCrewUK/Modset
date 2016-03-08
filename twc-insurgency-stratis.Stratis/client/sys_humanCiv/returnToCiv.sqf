@@ -8,8 +8,12 @@ player setPosATL [((getMarkerPos "respawn_civilian" select 0) + (random 10)),((g
 	
 _switchScript = ["C_man_1"] spawn CBA_fnc_switchPlayer;
 hintSilent "You are now a Civilian.";
-	
-cutText ["","BLACK IN",0];
+
+[]spawn{
+titleText ["In 15 minutes you will return to Civillian","BLACK",1];
+sleep 900;
+titleFadeout 2;
+};
 
 player setPosATL _beforePos;
 player setDir _beforeDir;
@@ -19,10 +23,11 @@ removeallweapons player;
 for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 
-titleText ["You are now a Civilian Again", "PLAIN"];
-titleFadeOut 4;
-
-hint "Because you have already been an insurgent you are not permitted to go insurgent again unless morale becomes strong."
+hint "Because you have already been an insurgent you are not permitted to go insurgent again unless morale becomes strong.";
+sleep 20;
+hint "If you turn Insurgent before the morale goes strong your game will end and you won't be able to go Civlian.";
+InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\sys_intel\missionStatus.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
 
 _selectedCache = [cacheBoxA,cacheBoxB,cacheBoxC] call BIS_fnc_selectRandom;
 while {!alive _selectedCache} do{
@@ -35,3 +40,5 @@ _marker setMarkerColor "ColorOrange";
 _marker setMarkerText ("Surrendered Insurgent Marker");
 _marker setMarkerSize [0.75, 0.75];
 [_marker, true] call CBA_fnc_setMarkerPersistent;
+
+player execVM "client\sys_humanCiv\playerSwitch.sqf";
