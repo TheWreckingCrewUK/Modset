@@ -78,6 +78,9 @@ class CfgFunctions
 			class Convoy
 			{
 			};
+			class CreateMarker
+			{
+			};
 		};
 	};
 };
