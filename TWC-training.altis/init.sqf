@@ -6,7 +6,4 @@ execVM "scripts\Zues\Zues5.sqf";
 execVM "scripts\Zues\Zues6.sqf";
 execVM "scripts\Zues\Zues7.sqf";
 
-trainerIDArray = ["_SP_PLAYER_","76561198050512686","76561197981096983","76561198046761459","76561198051847668","76561198100339755","76561198105044351","76561198072105856"];
 
-
-	
