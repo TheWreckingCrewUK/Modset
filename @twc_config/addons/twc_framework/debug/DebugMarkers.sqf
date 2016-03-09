@@ -1,5 +1,6 @@
 DebugMarkers = false;
 AdminMarkerArray = [];
+if (getPlayerUID player == "_SP_PLAYER_") then {DebugMarkers = true;};
 
 while {true} do {
 	Waituntil {DebugMarkers};
@@ -10,7 +11,7 @@ while {true} do {
 				_hasMarkerVar = _x getvariable ["DebugMarker",false];
 				if  (_hasMarkerVar) then {
 					_getMarkerName = _x getVariable "MarkerName";
-					_getMarkerName setmarkerpos getpos _x;
+					_getMarkerName setmarkerposlocal getpos _x;
 			    }else{
 				_MarkerName = str random 1000000;
 				AdminMarkerArray = AdminMarkerArray + [_MarkerName];
@@ -23,7 +24,7 @@ while {true} do {
 				_hasMarkerVar = _x getvariable ["DebugMarker",false];
 				if  (_hasMarkerVar) then {
 					_getMarkerName = _x getVariable "MarkerName";
-					_getMarkerName setmarkerpos getpos _x;
+					_getMarkerName setmarkerposlocal getpos _x;
 			    }else{
 				_MarkerName = str random 1000000;
 				AdminMarkerArray = AdminMarkerArray + [_MarkerName];
@@ -36,7 +37,7 @@ while {true} do {
 				_hasMarkerVar = _x getvariable ["DebugMarker",false];
 				if  (_hasMarkerVar) then {
 					_getMarkerName = _x getVariable "MarkerName";
-					_getMarkerName setmarkerpos getpos _x;
+					_getMarkerName setmarkerposlocal getpos _x;
 			    }else{
 				_MarkerName = str random 1000000;
 				AdminMarkerArray = AdminMarkerArray + [_MarkerName];
@@ -49,7 +50,7 @@ while {true} do {
 				_hasMarkerVar = _x getvariable ["DebugMarker",false];
 				if  (_hasMarkerVar) then {
 					_getMarkerName = _x getVariable "MarkerName";
-					_getMarkerName setmarkerpos getpos _x;
+					_getMarkerName setmarkerposlocal getpos _x;
 			    }else{
 				_MarkerName = str random 1000000;
 				AdminMarkerArray = AdminMarkerArray + [_MarkerName];

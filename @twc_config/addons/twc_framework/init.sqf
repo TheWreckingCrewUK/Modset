@@ -9,6 +9,6 @@ waitUntil { sleep 1.271; time > 0 };
 
 call compile preprocessFileLineNumbers "twc_framework\functions.sqf";
 
-if (getPlayerUID == "_SP_PLAYER_" || name player == "FakeMatty" || name player == "Jayman") then {
+if (getPlayerUID player == "_SP_PLAYER_" || name player == "FakeMatty" || name player == "Jayman" || name player == "Patty Evans") then {
 execvm "twc_framework\debug\init.sqf";
 };

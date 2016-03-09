@@ -1,7 +1,7 @@
-DebugM = ["DebugMenu","Debug","",{},{getPlayerUID == "_SP_PLAYER_" || name player == "FakeMatty" || name player == "Jayman" }] call ace_interact_menu_fnc_createAction;
-[player, 0, ["ACE_MainActions"], DebugM] call ace_interact_menu_fnc_addActionToClass;
+DebugM = ["DebugMenu","Debug","", {},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], DebugM] call ace_interact_menu_fnc_addActionToObject;
 
-Markers = ["DebugMarkers","Debug Markers","",{DebugMarkers = True},{getPlayerUID == "_SP_PLAYER_" || name player == "FakeMatty" || name player == "Jayman"}] call ace_interact_menu_fnc_createAction;
-[player, 0, ["ACE_MainActions","DebugMenu"], Markers] call ace_interact_menu_fnc_addActionToClass;
+airAction = ["DebugM","Debug Markers","", {if (DebugMarkers) then {DebugMarkers = false}else{DebugMarkers = true}},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions", "DebugMenu"], airAction] call ace_interact_menu_fnc_addActionToObject;
 
 execVM "twc_framework\debug\DebugMarkers.sqf";
