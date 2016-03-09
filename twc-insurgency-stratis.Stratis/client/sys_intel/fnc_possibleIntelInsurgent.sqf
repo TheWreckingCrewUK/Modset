@@ -7,12 +7,12 @@ if (_civilianQuestioned in nonQuestionableList) then {
 }else{
 	nonQuestionableList pushBack _civilianQuestioned;
 	publicVariable "nonQuestionableList";
-
+	
 	if (_givenNumber == 0) then {
 		hint "I know where they might be. Let me mark it on your map.";
 		_color = "ColorOrange";
 		_object = InsP_cacheGroup call BIS_fnc_selectRandom;
-		_distance = [1500,1000,750,750,500,500,250] call BIS_fnc_selectRandom;
+		_distance = [500,250] call BIS_fnc_selectRandom;
 
 		_intelPos = [_object, _distance] call CBA_fnc_randPos;
 		_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
@@ -26,7 +26,7 @@ if (_civilianQuestioned in nonQuestionableList) then {
 			case (str (InsP_cacheGroup select 0)): {cacheAMarkers pushBack _marker; publicVariable "cacheAMarkers"};
 			case (str (InsP_cacheGroup select 1)): {cacheBMarkers pushBack _marker; publicVariable "cacheBMarkers"};
 			case (str (InsP_cacheGroup select 2)): {cacheCMarkers pushBack _marker; publicVariable "cacheCMarkers"};
-			default {hint "Something went wrong";};
+			default {hint "Server is out of Close Range Markers. Just destroy the cache already!";};
 		};
 	}else{
 		if (_rand < 10)then{

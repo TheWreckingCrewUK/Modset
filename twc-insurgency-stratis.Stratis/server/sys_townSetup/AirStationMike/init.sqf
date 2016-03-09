@@ -5,7 +5,7 @@
 _AirStationMikestart = createTrigger ["EmptyDetector", getMarkerPos "AirStationMike"];
 _AirStationMikestart setTriggerArea [400, 400, 0, false];
 _AirStationMikestart setTriggerActivation ["West", "PRESENT", False];
-_AirStationMikestart setTriggerStatements ["this","['AirStationMike',3,100,4,[500,600]] call twc_townSetup"
+_AirStationMikestart setTriggerStatements ["this","['AirStationMike',3,100,4,[400,500]] call twc_townSetup"
 	,""
 ];
 

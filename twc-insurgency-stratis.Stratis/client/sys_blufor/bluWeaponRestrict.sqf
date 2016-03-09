@@ -1,15 +1,5 @@
-/*
+
 _opforWeapons = [
-    "rhs_weap_ak74m",
-    "rhs_weap_ak74m_folded",
-    "rhs_weap_pkp",
-    "rhs_weap_svdp_wd",
-    "hgun_Rook40_F",
-    "rhs_weap_akm",
-    "rhs_weap_akms",
-    "rhs_weap_svdp",
-    "rhs_weap_akms_gp25",
-    "rhs_weap_ak103_dtk"
 ];
 
 while {true} do {

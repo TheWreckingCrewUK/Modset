@@ -140,7 +140,7 @@ class Mission
 				items=5;
 				class Item0
 				{
-					position[]={1882.6592,5.682147,5767.1411};
+					position[]={1882.7341,5.6801939,5767.9224};
 					azimut=128.62399;
 					special="NONE";
 					id=1;
@@ -221,7 +221,7 @@ class Mission
 					id=6;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -597,7 +597,7 @@ class Mission
 					id=25;
 					side="CIV";
 					vehicle="C_man_1";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="humanCiv1";
@@ -852,7 +852,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={0,0,35};
+					position[]={0.54892731,0.22340854,93.618652};
 					class args
 					{
 						items=5;
@@ -1090,10 +1090,10 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={0,0,15};
+					position[]={0.027296033,0.022167504,15.158203};
 					class args
 					{
-						items=13;
+						items=14;
 						class Item0
 						{
 							value="1";
@@ -1108,65 +1108,71 @@ class Mission
 						};
 						class Item2
 						{
+							value="0";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="increaseTrainingInLocations";
+						};
+						class Item3
+						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="allowLitterCreation";
 						};
-						class Item3
+						class Item4
 						{
 							value="1800";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="litterCleanUpDelay";
 						};
-						class Item4
+						class Item5
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="enableScreams";
 						};
-						class Item5
+						class Item6
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="playerDamageThreshold";
 						};
-						class Item6
+						class Item7
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="AIDamageThreshold";
 						};
-						class Item7
+						class Item8
 						{
-							value="1";
+							value="2";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="enableUnconsciousnessAI";
 						};
-						class Item8
+						class Item9
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="remoteControlledAI";
 						};
-						class Item9
+						class Item10
 						{
 							value="0";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="preventInstaDeath";
 						};
-						class Item10
+						class Item11
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="bleedingCoefficient";
 						};
-						class Item11
+						class Item12
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="painCoefficient";
 						};
-						class Item12
+						class Item13
 						{
 							value="1";
 							parentCls="ACE_moduleMedicalSettings";
@@ -2901,11 +2907,11 @@ class Mission
 			b=1000;
 			angle=193.21899;
 			rectangular=1;
-			activationBy="GUER";
+			activationBy="EAST";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="Russiancheck = Russiancheck + 1; hint "" Russians near the base !""";
+			expActiv="Russiancheck = Russiancheck + 1; hint "" Insurgents near the base !""";
 			expDesactiv="Russiancheck = Russiancheck - 1;";
 			class Effects
 			{

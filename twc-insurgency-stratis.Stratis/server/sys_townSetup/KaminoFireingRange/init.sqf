@@ -5,7 +5,7 @@
 _KaminoFireingRangestart = createTrigger ["EmptyDetector", getMarkerPos "KaminoFireingRange"];
 _KaminoFireingRangestart setTriggerArea [400, 400, 0, false];
 _KaminoFireingRangestart setTriggerActivation ["West", "PRESENT", False];
-_KaminoFireingRangestart setTriggerStatements ["this","['KaminoFireingRange',5,100,1,[500,600]] call twc_townSetup"
+_KaminoFireingRangestart setTriggerStatements ["this","['KaminoFireingRange',5,100,1,[400,500]] call twc_townSetup"
 	,""
 ];
 

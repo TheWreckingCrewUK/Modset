@@ -26,862 +26,611 @@ _tmp_items = [];
 
 // load available to Section Commander only.
 if (g_class == "BAF_SL") then {
-                _tmp_weapons =
-                [
-                                ["CUP_arifle_L85A2",1],
-                                ["ACE_Vector",1],
-								["CUP_hgun_Glock17",1]
-
-                ];
-
-                _tmp_magazines =
-                [
-                                ["30Rnd_556x45_Stanag",50],
-								["30Rnd_556x45_Stanag_Tracer_Red",50],
-                                ["CUP_17Rnd_9x19_glock17",15]
-
-
-                ];
-
-    _tmp_items = [
-
-                                ["ACE_MapTools",1],
-                                ["ACE_fieldDressing",20],
-                                ["ACE_morphine",10],
-								["ACE_epinephrine",5],
-								["CUP_optic_ACOG",1],
-								["SatchelCharge_Remote_Mag",1],
-								["DemoCharge_Remote_Mag",1],
-								["ACE_M26_Clacker",1],
-								["CUP_optic_ACOG",1],
-								["CUP_optic_HoloBlack",1],
-								["ACE_DAGR",1],
-								["ACRE_PRC343",1],
+    _tmp_weapons =
+		[
+		["CUP_arifle_L85A2",1],
+		["ACE_Vector",1],
+		["CUP_hgun_Glock17",1]
+    ];
+    _tmp_magazines =
+	[
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+        ["CUP_17Rnd_9x19_glock17",15]
+	];
+	_tmp_items = 
+	[
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["ACE_epinephrine",5],
+		["CUP_optic_ACOG",1],
+		["SatchelCharge_Remote_Mag",1],
+		["DemoCharge_Remote_Mag",1],
+		["ACE_M26_Clacker",1],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["ACE_DAGR",1],
+		["ACRE_PRC343",1],
 		["ACE_SpraypaintBlack",1],
 		["ACE_SpraypaintRed",1],
 		["ACE_SpraypaintGreen",1],
 		["ACE_SpraypaintBlue",1]
-
-                ];
+	];
 };
 
 // load available to Rifleman only.
  if (g_class == "BAF_RF") then {
-        _tmp_weapons =
-        [
-								["UK3CB_BAF_L85A2_RIS",1],
-								["CUP_hgun_Glock17",1],
-								["CUP_launch_M136",2]
-							
-        ];
-
-        _tmp_magazines =
-        [
-								
-								["30Rnd_556x45_Stanag",50],
-								["30Rnd_556x45_Stanag_Tracer_Red",50],
-                                ["CUP_17Rnd_9x19_glock17",15],
-								["CUP_M136_M",2]
-			];
-
-		_tmp_items = [
-
-                                ["ACE_MapTools",1],
-                                ["ACE_fieldDressing",20],
-                                ["ACE_morphine",10],
-								["CUP_optic_ACOG",1],
-								["CUP_optic_HoloBlack",1],
-								["ACRE_PRC343",1]
-		];
-
-
-
-
+    _tmp_weapons =
+    [
+		["CUP_arifle_L85A2",1],
+		["CUP_hgun_Glock17",1],
+		["CUP_launch_M136",2]
+	];
+	_tmp_magazines =
+    [								
+		["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+        ["CUP_17Rnd_9x19_glock17",15]
+	];
+	_tmp_items = 
+	[
+		["ACE_MapTools",1],
+		["ACE_fieldDressing",20],
+		["ACE_morphine",10],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["ACRE_PRC343",1]
+	];
 };
 
 // load available to Grenadier only.
  if (g_class == "BAF_GRN") then {
-        _tmp_weapons =
-        [
-            ["CUP_arifle_L85A2_GL",1],
-            ["ACE_Vector",1],
-			["CUP_hgun_Glock17",1],
-			["CUP_launch_M136",2]
-			
-
-		];
-
-        _tmp_magazines =
-        [
-            
-				["30Rnd_556x45_Stanag",50],
-				["30Rnd_556x45_Stanag_Tracer_Red",50],
-				["CUP_17Rnd_9x19_glock17",15],
-				["1Rnd_HE_Grenade_shell", 40],
-				["1Rnd_Smoke_Grenade_shell", 10],
-				["1Rnd_SmokeRed_Grenade_shell", 10],
-				["1Rnd_SmokeGreen_Grenade_shell", 10],
-				["1Rnd_SmokeYellow_Grenade_shell", 10],
-				["1Rnd_SmokePurple_Grenade_shell", 10],
-				["1Rnd_SmokeBlue_Grenade_shell", 10],
-				["CUP_M136_M",2]
-        ];
-
-		_tmp_items =
-		[
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-			 ["CUP_optic_ACOG",1],
-		     ["CUP_optic_HoloBlack",1],
-			 ["ACRE_PRC343",1]
-		];
+    _tmp_weapons =
+    [
+        ["CUP_arifle_L85A2_GL",1],
+        ["ACE_Vector",1],
+		["CUP_hgun_Glock17",1],
+		["CUP_launch_M136",2]
+	];
+	_tmp_magazines =
+    [            
+		["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+		["CUP_17Rnd_9x19_glock17",15],
+		["1Rnd_HE_Grenade_shell", 40],
+		["1Rnd_Smoke_Grenade_shell", 10],
+		["1Rnd_SmokeRed_Grenade_shell", 10],
+		["1Rnd_SmokeGreen_Grenade_shell", 10],
+		["1Rnd_SmokeYellow_Grenade_shell", 10],
+		["1Rnd_SmokePurple_Grenade_shell", 10],
+		["1Rnd_SmokeBlue_Grenade_shell", 10]
+    ];
+	_tmp_items =
+	[
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["ACRE_PRC343",1]
+	];
 };
 
 // load available to Automatic Rifleman only.
  if (g_class == "BAF_AR") then {
-        _tmp_weapons =
-        [
-            ["CUP_lmg_m249_para",1],
-			["CUP_hgun_Glock17",1],
-			["CUP_launch_M136",2]
-			 
-		];
-
-        _tmp_magazines =
-        [
-            
-			["CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1",20],
-            ["CUP_17Rnd_9x19_glock17",15],
-			["CUP_M136_M",2]
-        ];
-
-		_tmp_items =
-		[
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-			 ["CUP_optic_ACOG",1],
-		     ["CUP_optic_HoloBlack",1],
-			 ["STKR_Predator",1],
-			 ["ACRE_PRC343",1]
-		];
+    _tmp_weapons =
+    [
+        ["CUP_lmg_L110A1",1],
+		["CUP_hgun_Glock17",1],
+		["CUP_launch_M136",2]
+	];
+	_tmp_magazines =
+    [            
+		["CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1",20],
+        ["CUP_17Rnd_9x19_glock17",15]
+    ];
+	_tmp_items =
+	[
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["STKR_Predator",1],
+		["ACRE_PRC343",1]
+	];
 };
 
 // load available to Section Medic
-
  if (g_class == "BAF_MED") then {
-       _tmp_weapons =
-        [
-            ["CUP_arifle_L85A2",1],
-			["CUP_hgun_Glock17",1]
-
-		];
-
-        _tmp_magazines =
-        [
-            ["30Rnd_556x45_Stanag",50],
-			["30Rnd_556x45_Stanag_Tracer_Red",50],
-            ["CUP_17Rnd_9x19_glock17",15]
-        ];
-
-		_tmp_items =
-		[
-
-			["ACE_fieldDressing",50],
-			["ACE_morphine",50],
-			["ACE_epinephrine",50],
-			["ACE_bloodIV",50],
-			["ACE_bodyBag",10],
-			["CUP_optic_ACOG",1],
-		    ["CUP_optic_HoloBlack",1],
-			["ACRE_PRC343",1]
-		];
+    _tmp_weapons =
+    [
+		["CUP_arifle_L85A2",1],
+		["CUP_hgun_Glock17",1]
+	];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+        ["CUP_17Rnd_9x19_glock17",15]
+    ];
+	_tmp_items =
+	[
+		["ACE_fieldDressing",50],
+		["ACE_morphine",50],
+		["ACE_epinephrine",50],
+		["ACE_bloodIV",50],
+		["ACE_bodyBag",10],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["ACRE_PRC343",1]
+	];
 };
 
 //class availible to Bravo Section Lead
 if (g_class == "US_SL") then {
-                _tmp_weapons =
-                [
-                                ["CUP_arifle_M4A1",1],
-                                ["ACE_Vector",1]
-
-                ];
-
-                _tmp_magazines =
-                [
-                                ["30Rnd_556x45_Stanag",50],
-								["30Rnd_556x45_Stanag_Tracer_Red",15]
-								
-	                            
-
-
-                ];
-
-                _tmp_items = [
-
-                                ["ACE_MapTools",1],
-                                ["ACE_fieldDressing",20],
-                                ["ACE_morphine",10],
-								["ACE_epinephrine",5],
-								["SatchelCharge_Remote_Mag",1],
-								["DemoCharge_Remote_Mag",1],
-								["ACE_M26_Clacker",1],
-								["CUP_optic_ACOG",1],
-								["CUP_optic_HoloBlack",1],
-								["ACE_DAGR",1],
-								["ACRE_PRC148",1],
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M4A1_BUIS_GL",1],
+        ["ACE_Vector",1]
+	];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",15],
+		["1Rnd_HE_Grenade_shell", 40],
+		["1Rnd_Smoke_Grenade_shell", 10],
+		["1Rnd_SmokeRed_Grenade_shell", 10],
+		["1Rnd_SmokeGreen_Grenade_shell", 10],
+		["1Rnd_SmokeYellow_Grenade_shell", 10],
+		["1Rnd_SmokePurple_Grenade_shell", 10],
+		["1Rnd_SmokeBlue_Grenade_shell", 10]
+	];
+	_tmp_items =
+	[
+		["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["ACE_epinephrine",5],
+		["SatchelCharge_Remote_Mag",1],
+		["DemoCharge_Remote_Mag",1],
+		["ACE_M26_Clacker",1],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["ACE_DAGR",1],
+		["ACRE_PRC148",1],
 		["ACE_SpraypaintBlack",1],
 		["ACE_SpraypaintRed",1],
 		["ACE_SpraypaintGreen",1],
 		["ACE_SpraypaintBlue",1]
-
-                ];
+	];
 };
 
 // load available to Automatic Rifleman only.
  if (g_class == "US_RF") then {
-        _tmp_weapons =
-        [
-            ["CUP_arifle_M4A1",1],
-			["CUP_launch_M136",2]
-
-		];
-
-        _tmp_magazines =
-        [
-
-			["30Rnd_556x45_Stanag",50],
-            ["30Rnd_556x45_Stanag_Tracer_Red",15],
-			["CUP_M136_M",2]
-        ];
-
-		_tmp_items =
-		[
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-			 ["CUP_optic_ACOG",1],
-		     ["CUP_optic_HoloBlack",1],
-			 ["ACRE_PRC148",1]
-		];
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M4A1",1],
+		["CUP_launch_M136",2]
+	];
+	_tmp_magazines =
+    [
+		["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",15]
+    ];
+	_tmp_items =
+	[
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["ACRE_PRC148",1]
+	];
 };
 
 // load available to Section 2IC only.
  if (g_class == "US_AR") then {
-        _tmp_weapons =
-        [
-            ["CUP_lmg_M249_E2",1]
-		];
-
-        _tmp_magazines =
-        [
-             ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",20]		 
-        ];
-
-		_tmp_items =
-		[
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-			 ["CUP_optic_ElcanM145",1],
-		     ["CUP_optic_HoloBlack",1],
-			 ["ACRE_PRC148",1]
-		];
+    _tmp_weapons =
+    [
+		["CUP_lmg_M249_E2",1],
+		["CUP_launch_M136",2]
+	];
+	_tmp_magazines =
+    [
+         ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",20]		 
+    ];
+	_tmp_items =
+	[
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["CUP_optic_ElcanM145",1],
+		["CUP_optic_HoloBlack",1],
+		["ACRE_PRC148",1]
+	];
 };
 
 // load available to GREN only.
  if (g_class == "US_GRN") then {
-       _tmp_weapons =
-        [
-            ["CUP_arifle_M4A1_m203",1],
-			["ACE_Vector",1]
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M4A1_m203",1],
+		["ACE_Vector",1],
+		["CUP_launch_M136",2]
 
 		];
-
-        _tmp_magazines =
-        [
-            ["30Rnd_556x45_Stanag",50],
-            ["1Rnd_HE_Grenade_shell", 40],
-	                            ["1Rnd_Smoke_Grenade_shell", 10],
-	                            ["1Rnd_SmokeRed_Grenade_shell", 10],
-	                            ["1Rnd_SmokeGreen_Grenade_shell", 10],
-	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
-	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
-                             	["1Rnd_SmokeBlue_Grenade_shell", 10]
-        ];
-
-		_tmp_items =
-		[
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-			 ["CUP_optic_ACOG",1],
-		     ["CUP_optic_HoloBlack",1],
-			 ["ACRE_PRC148",1]
-
-		];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+        ["1Rnd_HE_Grenade_shell", 40],
+	    ["1Rnd_Smoke_Grenade_shell", 10],
+	    ["1Rnd_SmokeRed_Grenade_shell", 10],
+	    ["1Rnd_SmokeGreen_Grenade_shell", 10],
+	    ["1Rnd_SmokeYellow_Grenade_shell", 10],
+	    ["1Rnd_SmokePurple_Grenade_shell", 10],
+         ["1Rnd_SmokeBlue_Grenade_shell", 10]
+    ];
+	_tmp_items =
+	[
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["ACRE_PRC148",1]
+	];
 };
+//load availible to US Med ONLY
  if (g_class == "US_MED") then {
-       _tmp_weapons =
-        [
-             ["CUP_arifle_M4A1",1]
-
-		];
-
-        _tmp_magazines =
-        [
-             ["30Rnd_556x45_Stanag",50],
-			 ["30Rnd_556x45_Stanag_Tracer_Red",15]
-        ];
-
-		_tmp_items =
-		[
-
-			 ["ACE_fieldDressing",50],
-			 ["ACE_morphine",50],
-			 ["ACE_epinephrine",50],
-			 ["ACE_bloodIV",50],
-			 ["ACE_bodyBag",10],
-			 ["CUP_optic_ACOG",1],
-			 ["CUP_optic_HoloBlack",1],
-			 ["ACRE_PRC148",1]
-		];
+    _tmp_weapons =
+    [
+		["CUP_arifle_M4A1",1]
+	];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",15]
+    ];
+	_tmp_items =
+	[
+		["ACE_fieldDressing",50],
+		["ACE_morphine",50],
+		["ACE_epinephrine",50],
+		["ACE_bloodIV",50],
+		["ACE_bodyBag",10],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["ACRE_PRC148",1]
+	];
 };
+
 //loadout availible to charlie section leader
  if (g_class == "USMC_SL") then {
-        _tmp_weapons =
-        [
-            ["CUP_arifle_M16A4_GL",1],
-            ["ACE_Vector",1],
-			["CUP_hgun_Colt1911",1]
-
-        ];
-
-        _tmp_magazines =
-        [
-            ["30Rnd_556x45_Stanag",50],
-			["30Rnd_556x45_Stanag_Tracer_Red",10],
-            ["CUP_7Rnd_45ACP_1911",15]
-        ];
-
-        _tmp_items = 
-		[
-			["ACE_MapTools",1],
-			["ACE_fieldDressing",20],
-			["ACE_morphine",10],
-			["ACE_epinephrine",5],
-			["SatchelCharge_Remote_Mag",1],
-			["DemoCharge_Remote_Mag",1],
-			["ACE_M26_Clacker",1],
-			["CUP_optic_ACOG",1],
-			["CUP_optic_HoloBlack",1],
-			["CUP_acc_ANPEQ_15",1],
-			["1Rnd_HE_Grenade_shell", 40],
-			["1Rnd_Smoke_Grenade_shell", 10],
-			["1Rnd_SmokeRed_Grenade_shell", 10],
-			["1Rnd_SmokeGreen_Grenade_shell", 10],
-			["1Rnd_SmokeYellow_Grenade_shell", 10],
-			["1Rnd_SmokePurple_Grenade_shell", 10],
-			["1Rnd_SmokeBlue_Grenade_shell", 10],
-			["ACE_DAGR",1],
-			["ACRE_PRC148",1],
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M16A4_GL",1],
+        ["ACE_Vector",1],
+		["CUP_hgun_Colt1911",1]
+	];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",10],
+		["1Rnd_HE_Grenade_shell", 40],
+		["1Rnd_Smoke_Grenade_shell", 10],
+		["1Rnd_SmokeRed_Grenade_shell", 10],
+		["1Rnd_SmokeGreen_Grenade_shell", 10],
+		["1Rnd_SmokeYellow_Grenade_shell", 10],
+		["1Rnd_SmokePurple_Grenade_shell", 10],
+		["1Rnd_SmokeBlue_Grenade_shell", 10],
+        ["CUP_7Rnd_45ACP_1911",15]
+    ];
+	_tmp_items = 
+	[
+		["ACE_MapTools",1],
+		["ACE_fieldDressing",20],
+		["ACE_morphine",10],
+		["ACE_epinephrine",5],
+		["SatchelCharge_Remote_Mag",1],
+		["DemoCharge_Remote_Mag",1],
+		["ACE_M26_Clacker",1],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["CUP_acc_ANPEQ_15",1],
+		["ACE_DAGR",1],
+		["ACRE_PRC148",1],
 		["ACE_SpraypaintBlack",1],
 		["ACE_SpraypaintRed",1],
 		["ACE_SpraypaintGreen",1],
 		["ACE_SpraypaintBlue",1]
 		];
 };
+
+//loadout availible to charlie grenadier only
  if (g_class == "USMC_GRN") then {
-                _tmp_weapons =
-                [
-                                ["CUP_arifle_M16A4_GL",1],
-                                ["ACE_Vector",1],
-								["CUP_hgun_Colt1911",1]
-
-                ];
-
-                _tmp_magazines =
-                [
-                                ["30Rnd_556x45_Stanag",50],
-								["30Rnd_556x45_Stanag_Tracer_Red",10],
-								["CUP_M136_M",2],
-                                ["CUP_7Rnd_45ACP_1911",15]
-
-
-
-                ];
-
-                _tmp_items = [
-
-                                ["ACE_MapTools",1],
-                                ["ACE_fieldDressing",20],
-                                ["ACE_morphine",10],
-								["CUP_optic_ACOG",1],
-								["CUP_optic_HoloBlack",1],
-								["CUP_acc_ANPEQ_15",1],
-								["1Rnd_HE_Grenade_shell", 40],
-	                            ["1Rnd_Smoke_Grenade_shell", 10],
-	                            ["1Rnd_SmokeRed_Grenade_shell", 10],
-	                            ["1Rnd_SmokeGreen_Grenade_shell", 10],
-	                            ["1Rnd_SmokeYellow_Grenade_shell", 10],
-	                            ["1Rnd_SmokePurple_Grenade_shell", 10],
-                             	["1Rnd_SmokeBlue_Grenade_shell", 10],
-								["ACE_DAGR",1],
-								["ACRE_PRC148",1]
-
-                ];
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M16A4_GL",1],
+        ["ACE_Vector",1],
+		["CUP_launch_M136",2],
+		["CUP_hgun_Colt1911",1]
+	];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",10],
+		["1Rnd_HE_Grenade_shell", 40],
+	    ["1Rnd_Smoke_Grenade_shell", 10],
+	    ["1Rnd_SmokeRed_Grenade_shell", 10],
+	    ["1Rnd_SmokeGreen_Grenade_shell", 10],
+	    ["1Rnd_SmokeYellow_Grenade_shell", 10],
+	    ["1Rnd_SmokePurple_Grenade_shell", 10],
+        ["1Rnd_SmokeBlue_Grenade_shell", 10],
+        ["CUP_7Rnd_45ACP_1911",15]
+	];
+	_tmp_items = 
+	[
+		["ACE_MapTools",1],
+		["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["CUP_acc_ANPEQ_15",1],
+		["ACE_DAGR",1],
+		["ACRE_PRC148",1]
+	];
 };
 
 // load available to Section 2IC only.
  if (g_class == "USMC_RF") then {
-        _tmp_weapons =
-        [
-            ["CUP_arifle_M16A4_Base",1],
-			["CUP_hgun_Colt1911",1],
-			["UK3CB_BAF_AT4_AP_Launcher",2]
-
-		];
-
-        _tmp_magazines =
-        [
-             ["30Rnd_556x45_Stanag",50],
-			 ["30Rnd_556x45_Stanag_Tracer_Red",10],
-			 ["CUP_M136_M",2],
-             ["CUP_7Rnd_45ACP_1911",15]
-
-
-        ];
-
-		_tmp_items =
-		[
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-		   	 ["CUP_optic_ACOG",1],
-		     ["CUP_optic_HoloBlack",1],
-			 ["CUP_acc_ANPEQ_15",1],
-			 ["ACRE_PRC148",1]
-		];
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M16A4_Base",1],
+		["CUP_hgun_Colt1911",1],
+		["CUP_launch_M136",2]
+	];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",10],
+        ["CUP_7Rnd_45ACP_1911",15]
+	];
+	_tmp_items =
+	[
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["CUP_acc_ANPEQ_15",1],
+		["ACRE_PRC148",1]
+	];
 };
 
+//loadout availible to Marine Automatic Rifleman Only
 if (g_class == "USMC_AR") then {
        _tmp_weapons =
-        [
-			["CUP_lmg_M240",1],
-            ["CUP_lmg_M249_E2",1],
-			["CUP_hgun_Colt1911",1]
-
-		];
-
-        _tmp_magazines =
-        [
-			["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",10],
-			["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",10],
-			["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",5],
-            ["CUP_7Rnd_45ACP_1911",15]
-        ];
-
-		_tmp_items =
-		[
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-			 ["CUP_optic_ACOG",1],
-		     ["CUP_optic_HoloBlack",1],
-			 ["CUP_acc_ANPEQ_15",1],
-			 ["CUP_optic_ElcanM145",1],
-			 ["ACRE_PRC148",1]
-		];
+    [
+		["CUP_lmg_M240",1],
+        ["CUP_lmg_M249_E2",1],
+		["CUP_launch_M136",2],
+		["CUP_hgun_Colt1911",1]
+	];
+	_tmp_magazines =
+    [
+		["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",10],
+		["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",10],
+		["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",5],
+        ["CUP_7Rnd_45ACP_1911",15]
+    ];
+	_tmp_items =
+	[
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["CUP_optic_HoloBlack",1],
+		["CUP_acc_ANPEQ_15",1],
+		["CUP_optic_ElcanM145",1],
+		["ACRE_PRC148",1]
+	];
 };
+
+//loadout availible to Marine Medic only
  if (g_class == "USMC_MED") then {
-       _tmp_weapons =
-        [
-           ["CUP_arifle_M16A4_Base",1],
-			["CUP_hgun_Colt1911",1]
-
-		];
-
-        _tmp_magazines =
-        [
-            ["30Rnd_556x45_Stanag",50],
-             ["CUP_7Rnd_45ACP_1911",15]
-        ];
-
-		_tmp_items =
-		[
-
-			["ACE_fieldDressing",50],
-			["ACE_morphine",50],
-			["ACE_epinephrine",50],
-			["ACE_bloodIV",50],
-			["CUP_optic_ACOG",1],
-		     ["CUP_optic_HoloBlack",1],
-			 ["CUP_acc_ANPEQ_15",1],
-			 ["ACRE_PRC148",1]
-		];
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M16A4_Base",1],
+		["CUP_hgun_Colt1911",1]
+	];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",10],
+        ["CUP_7Rnd_45ACP_1911",15]
+    ];
+	_tmp_items =
+	[
+		["ACE_fieldDressing",50],
+		["ACE_morphine",50],
+		["ACE_epinephrine",50],
+		["ACE_bloodIV",50],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["CUP_acc_ANPEQ_15",1],
+		["ACRE_PRC148",1]
+	];
 };
+
 // load available to Section Commander only.
 if (g_class == "ANA_SL") then {
-                _tmp_weapons =
-                [
-                                ["CUP_arifle_M16A2",1]
-
-                ];
-
-                _tmp_magazines =
-                [
-                                ["30Rnd_556x45_Stanag",50]
-
-
-                ];
-
-                _tmp_items = [
-
-                                ["ACE_MapTools",1],
-								["binocular",1],
-                                ["ACE_fieldDressing",20],
-                                ["ACE_morphine",10],
-								["ACE_epinephrine",5],
-								["SatchelCharge_Remote_Mag",1],
-								["DemoCharge_Remote_Mag",1],
-								["ACE_M26_Clacker",1],
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M16A2",1],
+		["binocular",1]
+	];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",10]
+	];
+	_tmp_items = 
+	[
+		["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["ACE_epinephrine",5],
+		["SatchelCharge_Remote_Mag",1],
+		["DemoCharge_Remote_Mag",1],
+		["ACE_M26_Clacker",1],
 		["ACE_SpraypaintBlack",1],
 		["ACE_SpraypaintRed",1],
 		["ACE_SpraypaintGreen",1],
 		["ACE_SpraypaintBlue",1]
-
-                ];
+	];
 };
 
 // load available to Rifleman only.
  if (g_class == "ANA_RF") then {
-        _tmp_weapons =
-        [
-								["CUP_arifle_M16A2",1]
-        ];
-
-        _tmp_magazines =
-        [
-								
-								["30Rnd_556x45_Stanag",50]
-			];
-
-		_tmp_items = [
-
-                                ["ACE_MapTools",1],
-                                ["ACE_fieldDressing",20],
-                                ["ACE_morphine",10]
-		];
-
-
-
-
+    _tmp_weapons =
+    [
+		["CUP_arifle_M16A2",1]
+    ];
+	_tmp_magazines =
+    [
+		["30Rnd_556x45_Stanag",50]
+	];
+	_tmp_items = 
+	[
+		["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10]
+	];
 };
 
 // load available to Grenadier only.
  if (g_class == "ANA_GRN") then {
-        _tmp_weapons =
-        [
-            ["CUP_arifle_M16A2",1],
-			["CUP_launch_RPG7V",1]
-
-		];
-
-        _tmp_magazines =
-        [
-            
-				["30Rnd_556x45_Stanag",50],
-				["CUP_PG7V_M",15]
-        ];
-
-		_tmp_items =
-		[
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10]
-		];
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M16A2",1],
+		["CUP_launch_RPG7V",1]
+	];
+	_tmp_magazines =
+    [
+		["30Rnd_556x45_Stanag",50],
+		["CUP_PG7V_M",15]
+    ];
+	_tmp_items =
+	[
+		["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10]
+	];
 };
 
 // load available to Automatic Rifleman only.
  if (g_class == "ANA_AR") then {
-        _tmp_weapons =
-        [
-            ["CUP_lmg_PKM",1]
-			 
-		];
-
-        _tmp_magazines =
-        [
-            
-			["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",10]
-        ];
-
-		_tmp_items =
-		[
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10]
-		];
+    _tmp_weapons =
+    [
+        ["CUP_lmg_PKM",1]
+	];
+	_tmp_magazines =
+    [
+		["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",10]
+    ];
+	_tmp_items =
+	[
+		["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10]
+	];
 };
 
 // load available to Section Medic
-
  if (g_class == "ANA_MED") then {
-       _tmp_weapons =
-        [
-            ["CUP_arifle_M16A2",1]
-
-		];
-
-        _tmp_magazines =
-        [
-            ["30Rnd_556x45_Stanag",50]
-        ];
-
-		_tmp_items =
-		[
-			["ACE_fieldDressing",50],
-			["ACE_morphine",50],
-			["ACE_epinephrine",50],
-			["ACE_bloodIV",50],
-			["ACE_bodyBag",10]
-		];
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M16A2",1]
+	];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50]
+    ];
+	_tmp_items =
+	[
+		["ACE_fieldDressing",50],
+		["ACE_morphine",50],
+		["ACE_epinephrine",50],
+		["ACE_bloodIV",50],
+		["ACE_bodyBag",10]
+	];
 };
-//load availible to echo section lead only
- if (g_class == "FRE_SL") then {
-       _tmp_weapons =
-        [
-
-			["R3F_Famas_G2_DES",1]
-
-
-		];
-
-        _tmp_magazines =
-        [
-
-             ["R3F_30Rnd_556x45_FAMAS",50],
-			 ["R3F_30Rnd_556x45_TRACER_FAMAS",50]
-
-        ];
-
-		_tmp_items =
-		[
-
-			["R3F_AIMPOINT_DES",1],
-            ["ACE_MapTools",1],
-            ["ACE_fieldDressing",20],
-            ["ACE_morphine",10],
-			["ACRE_PRC148",1],
-			["ACE_SpraypaintBlack",1],
-		["ACE_SpraypaintRed",1],
-		["ACE_SpraypaintGreen",1],
-		["ACE_SpraypaintBlue",1]
-		];
-};
- if (g_class == "FRE_RF") then {
-       _tmp_weapons =
-        [
-
-			
-				["R3F_Famas_G2_DES",1],
-				["UK3CB_BAF_AT4_AP_Launcher",1]
-
-		];
-
-        _tmp_magazines =
-        [
-
-             ["R3F_30Rnd_556x45_FAMAS",50],
-			 ["R3F_30Rnd_556x45_TRACER_FAMAS",50]
-
-        ];
-
-		_tmp_items =
-		[
-
-			["R3F_AIMPOINT_DES",1],
-            ["ACE_MapTools",1],
-            ["ACE_fieldDressing",20],
-            ["ACE_morphine",10],
-			["ACRE_PRC148",1]
-		];
-};
- if (g_class == "FRE_GRN") then {
-       _tmp_weapons =
-        [
-
-			["R3F_Famas_G2_M203_DES",1],
-			["UK3CB_BAF_AT4_AP_Launcher",2]
-
-
-		];
-
-        _tmp_magazines =
-        [
-
-             ["R3F_30Rnd_556x45_FAMAS",50],
-			 ["1Rnd_HE_Grenade_shell", 40],
-			 ["1Rnd_Smoke_Grenade_shell", 10],
-			 ["1Rnd_SmokeRed_Grenade_shell", 10],
-			 ["1Rnd_SmokeGreen_Grenade_shell", 10],
-			 ["1Rnd_SmokeYellow_Grenade_shell", 10],
-			 ["1Rnd_SmokePurple_Grenade_shell", 10],
-			 ["1Rnd_SmokeBlue_Grenade_shell", 10],
-			 ["R3F_30Rnd_556x45_TRACER_FAMAS",50]
-
-        ];
-
-		_tmp_items =
-		[
-
-			["R3F_AIMPOINT_DES",1],
-            ["ACE_MapTools",1],
-            ["ACE_fieldDressing",20],
-            ["ACE_morphine",10],
-			["ACRE_PRC148",1]
-		];
-};
- if (g_class == "FRE_AR") then {
-       _tmp_weapons =
-        [
-
-			["R3F_Minimi",1]
-
-
-		];
-
-        _tmp_magazines =
-        [
-
-             ["R3F_200Rnd_556x45_MINIMI",50],
-			 ["R3F_200Rnd_556x45_TRACER_MINIMI",50]
-
-        ];
-
-		_tmp_items =
-		[
-            ["ACE_MapTools",1],
-            ["ACE_fieldDressing",20],
-            ["ACE_morphine",10],
-			["ACRE_PRC148",1]
-		];
-};
- if (g_class == "FRE_MED") then {
-       _tmp_weapons =
-        [
-
-			["R3F_Famas_G2_DES",1]
-
-
-		];
-
-        _tmp_magazines =
-        [
-
-             ["R3F_30Rnd_556x45_FAMAS",50],
-			 ["R3F_30Rnd_556x45_TRACER_FAMAS",50]
-
-        ];
-
-		_tmp_items =
-		[
-
-			["R3F_AIMPOINT_DES",1],
-			["ACE_fieldDressing",50],
-			["ACE_morphine",50],
-			["ACE_epinephrine",50],
-			["ACE_bloodIV",50],
-            ["ACE_MapTools",1],
-            ["ACE_fieldDressing",20],
-            ["ACE_morphine",10],
-			["ACRE_PRC148",1]
-		];
- };
+ 
  //load availible to pilots only
  if (g_class == "PLT") then {
-       _tmp_weapons =
-        [
-
-			["CUP_hgun_Colt1911",1]
-
-		];
-
-        _tmp_magazines =
-        [
-
-             ["CUP_7Rnd_45ACP_1911",15]
-        ];
-
-		_tmp_items =
-		[
-			 ["ACE_DAGR",1],
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-			 ["ACRE_PRC148",1]
-		];
+    _tmp_weapons =
+    [
+		["CUP_hgun_Colt1911",1]
+	];
+	_tmp_magazines =
+    [
+		["CUP_7Rnd_45ACP_1911",15]
+    ];
+	_tmp_items =
+	[
+		["ACE_DAGR",1],
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["ACRE_PRC148",1]
+	];
 };
+
+//load avaible to armour commander only
  if (g_class == "ARMOUR") then {
-       _tmp_weapons =
-        [
-
-			["CUP_arifle_M4A1_desert",1]
-
-		];
-
-        _tmp_magazines =
-        [
-
-             ["30Rnd_556x45_Stanag",15],
-			 ["30Rnd_556x45_Stanag_Tracer_Red",5]
-        ];
-
-		_tmp_items =
-		[
-			 ["CUP_optic_CompM2_Desert",1],
-			 ["CUP_acc_ANPEQ_15",1],
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-			 ["ACRE_PRC148",1]
-		];
+    _tmp_weapons =
+    [
+		["CUP_arifle_M4A1_desert",1]
+	];
+	_tmp_magazines =
+	[
+	["30Rnd_556x45_Stanag",15],
+	["30Rnd_556x45_Stanag_Tracer_Red",5]
+    ];
+	_tmp_items =
+	[
+		["CUP_optic_CompM2_Desert",1],
+		["CUP_acc_ANPEQ_15",1],
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["ACRE_PRC148",1]
+	];
 };
+
+//load avaible to armor crew only
  if (g_class == "ARMOURCREW") then {
-       _tmp_weapons =
-        [
-
-			["CUP_arifle_M4A1_desert",1]
-
-		];
-
-        _tmp_magazines =
-        [
-
-             ["30Rnd_556x45_Stanag",15]
-        ];
-
-		_tmp_items =
-		[
-
-			 ["CUP_optic_CompM2_Desert",1],
-
-             ["ACE_MapTools",1],
-             ["ACE_fieldDressing",20],
-             ["ACE_morphine",10],
-			 ["ACRE_PRC148",1]
-		];
+    _tmp_weapons =
+    [
+		["CUP_arifle_M4A1_desert",1],
+		["CUP_launch_M136",2]
+	];
+	_tmp_magazines =
+    [
+		["30Rnd_556x45_Stanag",15]
+    ];
+	_tmp_items =
+	[
+		["CUP_optic_CompM2_Desert",1],
+		["CUP_acc_ANPEQ_15",1],
+		["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["ACRE_PRC148",1]
+	];
 };
+
 {
         _weapons set [count _weapons, _x];
 } forEach _tmp_weapons;

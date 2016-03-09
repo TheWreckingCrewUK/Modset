@@ -28,7 +28,7 @@ player addHeadgear "H_HelmetB_camo";
 
 comment "Add weapons";
 player addWeapon "CUP_lmg_L110A1";
-player addPrimaryWeaponItem "CUP_optic_ElcanM145";
+player addPrimaryWeaponItem "CUP_optic_ACOG";
 player addWeapon "CUP_launch_M136";
 
 comment "Add items";

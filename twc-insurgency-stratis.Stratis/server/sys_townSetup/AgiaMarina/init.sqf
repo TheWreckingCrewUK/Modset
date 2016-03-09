@@ -5,7 +5,7 @@
 _AgiaMarinastart = createTrigger ["EmptyDetector", getMarkerPos "AgiaMarina"];
 _AgiaMarinastart setTriggerArea [500, 500, 0, false];
 _AgiaMarinastart setTriggerActivation ["West", "PRESENT", False];
-_AgiaMarinastart setTriggerStatements ["this","['AgiaMarina',3,100,4,[600,700]] call twc_townSetup"
+_AgiaMarinastart setTriggerStatements ["this","['AgiaMarina',3,100,4,[400,500]] call twc_townSetup"
 	,""
 ];
 

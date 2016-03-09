@@ -3,8 +3,6 @@ InsP_fnc_questionDisplay = compile preProcessFileLineNumbers "client\sys_intel\f
 InsP_fnc_deadCache = compile preProcessFileLineNumbers "server\sys_cache\fnc_deadCache.sqf";
 InsP_fnc_deadAAGun = compile preProcessFileLineNumbers "server\sys_aaGun\fnc_deadAAGun.sqf";
 
-#include "sys_ai\init.sqf";
-
 if (isNil "InsP_iedDestroyed") then {
 	InsP_iedDestroyed = 0;
 	publicVariable "InsP_iedDestroyed";

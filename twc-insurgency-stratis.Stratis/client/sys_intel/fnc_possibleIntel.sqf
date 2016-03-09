@@ -8,7 +8,16 @@ if (_civilianQuestioned in nonQuestionableList) then {
 	publicVariable "nonQuestionableList";
 
 	if (_givenNumber == 0) then {
-		hint "I know where they might be. Let me mark it on your map.";
+		switch (True) do {
+			case (floor InsP_enemyMorale == -3):{hintSilent "I hope they kill you on your way there!"};
+			case (floor InsP_enemyMorale == -2):{hintSilent "I'll mark a spot. Now LEAVE!"};
+			case (floor InsP_enemyMorale == -1):{hintSilent "I'll mark the position on your map."};
+			case (floor InsP_enemyMorale == 0):{hintSilent "Let me mark the position on your map."};
+			case (floor InsP_enemyMorale == 1):{hintSilent "I think I know where they are. I'll mark the position on your map."};
+			case (floor InsP_enemyMorale == 2):{hintSilent "I'll mark your map. Be careful."};
+			case (floor InsP_enemyMorale >= 3):{hintSilent "I believe they are somewhere around here. Good luck."};
+			default {hintSilent "For some reson this Civilian doesn't know the morale status. Please inform management of this bug."};
+		};
 		_color = "ColorOrange";
 		_object = InsP_cacheGroup call BIS_fnc_selectRandom;
 		_distance = [1500,1000,750,750,500,500,250] call BIS_fnc_selectRandom;
@@ -28,6 +37,15 @@ if (_civilianQuestioned in nonQuestionableList) then {
 			default {hint "Something went wrong";};
 		};
 	}else{
-		hintSilent "I'm sorry, but I do not know anything!";
+		switch (True) do {
+			case (floor InsP_enemyMorale <= -3):{hintSilent "DEATH TO THE FOREIGN INVADERS!!"};
+			case (floor InsP_enemyMorale == -2):{hintSilent "Even if I did happen to know something I wouldn't tell you."};
+			case (floor InsP_enemyMorale == -1):{hintSilent "I can't help you."};
+			case (floor InsP_enemyMorale == 0):{hintSilent "I don't know anything."};
+			case (floor InsP_enemyMorale == 1):{hintSilent "Sorry, but I don't know anything."};
+			case (floor InsP_enemyMorale == 2):{hintSilent "I wish I could help, but I don't know anything."};
+			case (floor InsP_enemyMorale >= 3):{hintSilent "I really wish I could help you, but I don't know anything."};
+			default {hintSilent "For some reson this Civilian doesn't know the morale status. Please inform management of this bug."};
+		};
 	};
 };
