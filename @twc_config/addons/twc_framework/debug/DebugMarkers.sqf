@@ -1,45 +1,66 @@
-Debug = false;
+DebugMarkers = false;
+AdminMarkerArray = [];
 
 while {true} do {
-	while {Debug} do{
+	Waituntil {DebugMarkers};
+	{_x SetMarkerAlphalocal 1}foreach AdminMarkerArray;
+	while {DebugMarkers} do{
 		{
 			if (side _x == West) then{
 				_hasMarkerVar = _x getvariable ["DebugMarker",false];
 				if  (_hasMarkerVar) then {
 					_getMarkerName = _x getVariable "MarkerName";
-					_getMarkerName setmarkerdirlocal getpos _x;
+					_getMarkerName setmarkerpos getpos _x;
 			    }else{
 				_MarkerName = str random 1000000;
-				_AOAreaMarker = createMarker [_MarkerName , position player ];
-				_AOAreaMarker setmarkerpos getpos player;
-				_AOAreaMarker setmarkershape "Icon";
-				_AOAreaMarker setmarkertype "o_hq";
-				_AOAreaMarker setmarkersize [1.0, 1.0];
-				_AOAreaMarker setmarkercolor "Default";
+				AdminMarkerArray = AdminMarkerArray + [_MarkerName];
+				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorWEST",typeof _x] call twc_fnc_CreateMarkerTest;
+				_x setVariable ["DebugMarker",true];
+				_x setVariable ["MarkerName",_MarkerName];
+				};
+		    };
+			if (side _x == east) then{
+				_hasMarkerVar = _x getvariable ["DebugMarker",false];
+				if  (_hasMarkerVar) then {
+					_getMarkerName = _x getVariable "MarkerName";
+					_getMarkerName setmarkerpos getpos _x;
+			    }else{
+				_MarkerName = str random 1000000;
+				AdminMarkerArray = AdminMarkerArray + [_MarkerName];
+				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorEAST",typeof _x] call twc_fnc_CreateMarkerTest;
+				_x setVariable ["DebugMarker",true];
+				_x setVariable ["MarkerName",_MarkerName];
+				};
+		    };
+			if (side _x == resistance) then{
+				_hasMarkerVar = _x getvariable ["DebugMarker",false];
+				if  (_hasMarkerVar) then {
+					_getMarkerName = _x getVariable "MarkerName";
+					_getMarkerName setmarkerpos getpos _x;
+			    }else{
+				_MarkerName = str random 1000000;
+				AdminMarkerArray = AdminMarkerArray + [_MarkerName];
+				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorGUER",typeof _x] call twc_fnc_CreateMarkerTest;
+				_x setVariable ["DebugMarker",true];
+				_x setVariable ["MarkerName",_MarkerName];
+				};
+		    };
+			if (side _x == civilian) then{
+				_hasMarkerVar = _x getvariable ["DebugMarker",false];
+				if  (_hasMarkerVar) then {
+					_getMarkerName = _x getVariable "MarkerName";
+					_getMarkerName setmarkerpos getpos _x;
+			    }else{
+				_MarkerName = str random 1000000;
+				AdminMarkerArray = AdminMarkerArray + [_MarkerName];
+				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorCIV",typeof _x] call twc_fnc_CreateMarkerTest;
 				_x setVariable ["DebugMarker",true];
 				_x setVariable ["MarkerName",_MarkerName];
 				};
 		    };
 		}foreach allunits;
+		sleep 0.1;
 	};
+	Waituntil {!DebugMarkers};
+	{_x SetMarkerAlphalocal 0}foreach AdminMarkerArray;
 };
-
-
-
-		{
-		MarkerName = str random 1000000;
-		_AOAreaMarker = createMarker [ MarkerName , position player ];
-		_AOAreaMarker setmarkerpos getpos player;
-		_AOAreaMarker setmarkershape "Icon";
-		_AOAreaMarker setmarkertype "o_hq";
-		_AOAreaMarker setmarkersize [1.0, 1.0];
-		_AOAreaMarker setmarkercolor "Default";
-		}foreach allunits;
-		
-		MarkerName = str random 1000000;
-		_AOAreaMarker = createMarker [ MarkerName , position player ];
-		_AOAreaMarker setmarkerpos getpos player;
-		_AOAreaMarker setmarkershape "Icon";
-		_AOAreaMarker setmarkertype "o_hq";
-		_AOAreaMarker setmarkersize [1.0, 1.0];
-		_AOAreaMarker setmarkercolor "Default";
