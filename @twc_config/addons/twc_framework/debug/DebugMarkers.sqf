@@ -14,7 +14,7 @@ while {true} do {
 			    }else{
 				_MarkerName = str random 1000000;
 				AdminMarkerArray = AdminMarkerArray + [_MarkerName];
-				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorWEST",typeof _x] call twc_fnc_CreateMarkerTest;
+				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorWEST",typeof _x] call twc_fnc_CreateMarker;
 				_x setVariable ["DebugMarker",true];
 				_x setVariable ["MarkerName",_MarkerName];
 				};
@@ -27,7 +27,7 @@ while {true} do {
 			    }else{
 				_MarkerName = str random 1000000;
 				AdminMarkerArray = AdminMarkerArray + [_MarkerName];
-				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorEAST",typeof _x] call twc_fnc_CreateMarkerTest;
+				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorEAST",typeof _x] call twc_fnc_CreateMarker;
 				_x setVariable ["DebugMarker",true];
 				_x setVariable ["MarkerName",_MarkerName];
 				};
@@ -40,7 +40,7 @@ while {true} do {
 			    }else{
 				_MarkerName = str random 1000000;
 				AdminMarkerArray = AdminMarkerArray + [_MarkerName];
-				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorGUER",typeof _x] call twc_fnc_CreateMarkerTest;
+				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorGUER",typeof _x] call twc_fnc_CreateMarker;
 				_x setVariable ["DebugMarker",true];
 				_x setVariable ["MarkerName",_MarkerName];
 				};
@@ -53,7 +53,7 @@ while {true} do {
 			    }else{
 				_MarkerName = str random 1000000;
 				AdminMarkerArray = AdminMarkerArray + [_MarkerName];
-				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorCIV",typeof _x] call twc_fnc_CreateMarkerTest;
+				[getpos _x,true,"icon","HD_Dot",[_MarkerName,false],"ColorCIV",typeof _x] call twc_fnc_CreateMarker;
 				_x setVariable ["DebugMarker",true];
 				_x setVariable ["MarkerName",_MarkerName];
 				};
