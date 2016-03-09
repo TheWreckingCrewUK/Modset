@@ -1,10 +1,3 @@
-Everyone = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15];
-publicVariable "Everyone";
-
-Trainers = [T1,T2,T3,T4,T5,T6,T7];
-publicVariable "Trainers";
-
-
 if (player in Trainers) then {
 	execVM format["scripts\weaponLists\playerLoadouts\%1trainer.sqf", TrainingERA];
 	
@@ -18,9 +11,14 @@ if (player in Trainers) then {
 	_Teleclick = ['TeleCLick','Teleport On Click','', {execVM "scripts\teleport\tele_onclick.sqf";},{true}] call ace_interact_menu_fnc_createAction;
 	
 	TWCeraListAction = ["era","TWC ERA List","", {},{true}] call ace_interact_menu_fnc_createAction;
+	
 	_modern = ['TWCera','TWC Modern','', {TrainingERA = "modern"; publicVariable "TrainingERA"; execVM "scripts\weaponLists\playerLoadouts\moderntrainer.sqf";execVM "scripts\weaponLists\crates\modern.sqf";[[[],"scripts\weaponLists\playerLoadouts\modern.sqf"],"BIS_fnc_execVM",false,false] call BIS_fnc_MP;},{true}] call ace_interact_menu_fnc_createAction;
+	
 	_moderncoin = ['TWCera','TWC Moderncoin','', {TrainingERA = "coin"; publicVariable "TrainingERA"; execVM "scripts\weaponLists\playerLoadouts\cointrainer.sqf";[[[],"scripts\weaponLists\playerLoadouts\coin.sqf"],"BIS_fnc_execVM",false,false] call BIS_fnc_MP;execVM "scripts\weaponLists\crates\coin.sqf";},{true}] call ace_interact_menu_fnc_createAction;
-	_coldwar = ['TWCera','TWC Coldwar ','', {TrainingERA = "coldwar"; publicVariable "TrainingERA"; execVM "scripts\weaponLists\playerLoadouts\coldwartrainer.sqf";[[[],"scripts\weaponLists\playerLoadouts\coldwar.sqf"],"BIS_fnc_execVM",false,false] call BIS_fnc_MP;execVM "scripts\weaponLists\crates\coldwar.sqf";},{true}] call ace_interact_menu_fnc_createAction;
+	
+	_coldwar = ['TWCera','TWC Coldwar','', {TrainingERA = "coldwar"; publicVariable "TrainingERA"; execVM "scripts\weaponLists\playerLoadouts\coldwartrainer.sqf";[[[],"scripts\weaponLists\playerLoadouts\coldwar.sqf"],"BIS_fnc_execVM",false,false] call BIS_fnc_MP;execVM "scripts\weaponLists\crates\coldwar.sqf";},{true}] call ace_interact_menu_fnc_createAction;
+	
+	_1990 = ['TWCera','TWC 1990','', {TrainingERA = "1990"; publicVariable "TrainingERA"; execVM "scripts\weaponLists\playerLoadouts\1990trainer.sqf";[[[],"scripts\weaponLists\playerLoadouts\1990.sqf"],"BIS_fnc_execVM",false,false] call BIS_fnc_MP;execVM "scripts\weaponLists\crates\1990.sqf";},{true}] call ace_interact_menu_fnc_createAction;
 	
 	TWCrandomrange = ["range","TWC range randomizer","", {},{true}] call ace_interact_menu_fnc_createAction;
 	_rifle = ['range','Rifle range','', { execVM "scripts\riflerange\popup.sqf"; },{true}] call ace_interact_menu_fnc_createAction;
@@ -40,23 +38,12 @@ if (player in Trainers) then {
 	[player, 1, ["ACE_SelfActions","era"], _modern] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","era"], _moderncoin] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","era"], _coldwar] call ace_interact_menu_fnc_addActionToObject;
+	[player, 1, ["ACE_SelfActions","era"], _1990] call ace_interact_menu_fnc_addActionToObject;
 	
 	[player, 1, ["ACE_SelfActions"], TWCrandomrange] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","range"], _rifle] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","range"], _CQB] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","range"], _town] call ace_interact_menu_fnc_addActionToObject;
 	
-	
-	
-};
-
-if (player in Everyone) then{
-	
-if ("B_P_BeretOff" in everyContainer Trainers) then {TrainingERA = "coin"; publicVariable "TrainingERA"; execVM "scripts\weaponLists\playerLoadouts\cointrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\coin.sqf";};
-
-if ("UK_Beret_Paras" in everyContainer Trainers) then {TrainingERA = "coldwar"; publicVariable "TrainingERA"; execVM "scripts\weaponLists\playerLoadouts\coldwartrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\coldwar.sqf";};
-
-if ("UK3CB_BAF_G_Tactical_Black" in everyContainer Trainers) then {TrainingERA = "modern"; publicVariable "TrainingERA"; execVM "scripts\weaponLists\playerLoadouts\moderntrainer.sqf";execVM "scripts\weaponLists\playerLoadouts\modern.sqf";};
-
-	
+}else {execVM format["scripts\weaponLists\playerLoadouts\%1.sqf", TrainingERA];
 };

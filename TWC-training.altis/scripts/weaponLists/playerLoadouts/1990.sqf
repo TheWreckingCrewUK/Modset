@@ -31,9 +31,5 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "UK3CB_BAF_HMNVS";
-
-comment "Set identity";
-player setFace "GreekHead_A3_01";
-player setSpeaker "ACE_NoVoice";
 };
 if(true) exitWith{};

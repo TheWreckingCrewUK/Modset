@@ -13,7 +13,7 @@ _RangeBoxSniper = RangeAmmoBoxSniper;
 _RangeBoxGrenade = RangeAmmoGrenade;
 _RangeBoxMedic = RangeAmmoBoxMedic;
 _CrewServedWepons = CrewBox;
-_Parachute = ParaChuteBox;
+_ParaBox = ParaChuteBox;
 _RadioBox = RadioBox;
 
 
@@ -43,10 +43,10 @@ clearBackpackCargoGlobal _RangeBoxMedic;
 clearMagazineCargoGlobal _RangeBoxMedic;
 clearitemCargoGlobal _RangeBoxMedic;
 
-clearWeaponCargoGlobal _Parachute;
-clearBackpackCargoGlobal _Parachute;
-clearMagazineCargoGlobal _Parachute;
-clearitemCargoGlobal _Parachute;
+clearWeaponCargoGlobal _ParaBox;
+clearBackpackCargoGlobal _ParaBox;
+clearMagazineCargoGlobal _ParaBox;
+clearitemCargoGlobal _ParaBox;
 
 clearWeaponCargoGlobal _RadioBox;
 clearBackpackCargoGlobal _RadioBox;
