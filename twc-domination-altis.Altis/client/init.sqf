@@ -7,7 +7,7 @@ if (!isNil "p1" && {player == p1}) then {
 	g_group = "0";
 	g_unit = "001";
 	g_name = "Alpha Section Leader";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p2" && {player == p2}) then {
@@ -15,7 +15,7 @@ if (!isNil "p2" && {player == p2}) then {
 	g_group = "0";
 	g_unit = "002";
 	g_name = "Alpha Rifleman";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p3" && {player == p3}) then {
@@ -23,7 +23,7 @@ if (!isNil "p3" && {player == p3}) then {
 	g_group = "0";
 	g_unit = "003";
 	g_name = "Alpha Grenadier";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p4" && {player == p4}) then {
@@ -31,7 +31,7 @@ if (!isNil "p4" && {player == p4}) then {
 	g_group = "0";
 	g_unit = "004";
 	g_name = "Alpha Automatic Rifleman";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p5" && {player == p5}) then {
@@ -39,7 +39,7 @@ if (!isNil "p5" && {player == p5}) then {
 	g_group = "0";
 	g_unit = "005";
 	g_name = "Alpha 2IC";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p6" && {player == p6}) then {
@@ -47,7 +47,7 @@ if (!isNil "p6" && {player == p6}) then {
 	g_group = "0";
 	g_unit = "006";
 	g_name = "Alpha Machine Gunner";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p7" && {player == p7}) then {
@@ -55,7 +55,7 @@ if (!isNil "p7" && {player == p7}) then {
 	g_group = "0";
 	g_unit = "007";
 	g_name = "Alpha Marksman";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p8" && {player == p8}) then {
@@ -63,7 +63,7 @@ if (!isNil "p8" && {player == p8}) then {
 	g_group = "0";
 	g_unit = "008";
 	g_name = "Alpha Medic";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
 if (!isNil "p9" && {player == p9}) then {
@@ -345,9 +345,11 @@ if (g_class != "") then {
 	execVM format["client\loadout\%1.sqf", g_class];
 };
 sleep 2;
-	if (g_radio != "") then {
-		_radioID = [g_radio] call acre_api_fnc_getRadioByType;
-		_switchChannel = [_radioID, g_radio_channel] call acre_api_fnc_setRadioChannel;
-	};
+if (g_radio != "") then {
+	_radioID = [g_radio] call acre_api_fnc_getRadioByType;
+	_switchChannel = [_radioID, g_radio_channel] call acre_api_fnc_setRadioChannel;
+	Hint parseText format ["<t color='#d0dd00' size='1.2' shadow='1' shadowColor='#000000' align='center'>Radio Set</t><br/><t color='#d0dd00' size='0.8' shadow='1' shadowColor='#565656' align='left'>Radio:</t><t color='##013bb6' size='0.8' shadow='1' shadowColor='#565656' align='right'>%1</t><br/><t color='#d0dd00' size='0.8' shadow='1' shadowColor='#565656' align='left'>Channel:</t><t color='##013bb6' size='0.8' shadow='1' shadowColor='#565656' align='right'>%2</t>",g_radio,g_radio_channel];
+};
 
 //made by hartzie edited by FakeMatty
+

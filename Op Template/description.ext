@@ -197,13 +197,3 @@ class ace_medical_level {
 		force = 1;
 	};
 };
-class CfgMusic
-{
- tracks[]={};
-
- class Theme
- {
-  name = "Theme";
-  sound[] = {"operation_framework\thememusic\TWCoperationTheme.ogg", db+0, 1.0};
- };
-};

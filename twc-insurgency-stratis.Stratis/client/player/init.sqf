@@ -5,89 +5,119 @@ if (!isNil "P1" && {player == P1}) then {
     g_class = "BAF_SL";
 	g_group = "0";
 	g_unit = "000";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC343";
 };
 
 if (!isNil "P2" && {player == P2}) then {
     g_class = "BAF_RF";
 	g_group = "0";
 	g_unit = "010";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC343";
 };
 
 if (!isNil "P3" && {player == P3}) then {
     g_class = "BAF_GRN";
 	g_group = "0";
 	g_unit = "011";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC343";
 };
 
 if (!isNil "P4" && {player == P4}) then {
     g_class = "BAF_AR";
 	g_group = "0";
 	g_unit = "012";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC343";
 };
 
 if (!isNil "P5" && {player == P5}) then {
     g_class = "BAF_MED";
 	g_group = "0";
 	g_unit = "013";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC343";
 };
 if (!isNil "P6" && {player == P6}) then {
     g_class = "US_SL";
 	g_group = "0";
 	g_unit = "020";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 
 if (!isNil "P7" && {player == P7}) then {
     g_class = "US_RF";
 	g_group = "0";
 	g_unit = "021";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 
 if (!isNil "P8" && {player == P8}) then {
     g_class = "US_GRN";
 	g_group = "0";
 	g_unit = "022";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 
 if (!isNil "P9" && {player == P9}) then {
     g_class = "US_AR";
 	g_group = "0";
 	g_unit = "023";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 
 if (!isNil "P10" && {player == P10}) then {
     g_class = "US_MED";
 	g_group = "9";
 	g_unit = "800";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 
 if (!isNil "P11" && {player == P11}) then {
     g_class = "USMC_SL";
 	g_group = "9";
 	g_unit = "801";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 
 if (!isNil "P12" && {player == P12}) then {
     g_class = "USMC_RF";
 	g_group = "9";
 	g_unit = "802";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 
 if (!isNil "P13" && {player == P13}) then {
     g_class = "USMC_GRN";
 	g_group = "1";
 	g_unit = "100";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 
 if (!isNil "P14" && {player == P14}) then {
     g_class = "USMC_AR";
 	g_group = "1";
 	g_unit = "110";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 
 if (!isNil "P15" && {player == P15}) then {
     g_class = "USMC_MED";
 	g_group = "1";
 	g_unit = "111";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
 };
 
 if (!isNil "P16" && {player == P16}) then {
@@ -324,4 +354,11 @@ armorAction = ["ArmorList","Armor List","", {call TWC_fnc_getArmorList;},{true}]
 
 if (g_class != "") then {
 	execVM format["client\player\loadout\%1.sqf", g_class];
+};
+
+sleep 2;
+if (g_radio != "") then {
+	_radioID = [g_radio] call acre_api_fnc_getRadioByType;
+	_switchChannel = [_radioID, g_radio_channel] call acre_api_fnc_setRadioChannel;
+	Hint parseText format ["<t color='#d0dd00' size='1.2' shadow='1' shadowColor='#000000' align='center'>Radio Set</t><br/><t color='#d0dd00' size='0.8' shadow='1' shadowColor='#565656' align='left'>Radio:</t><t color='##013bb6' size='0.8' shadow='1' shadowColor='#565656' align='right'>%1</t><br/><t color='#d0dd00' size='0.8' shadow='1' shadowColor='#565656' align='left'>Channel:</t><t color='##013bb6' size='0.8' shadow='1' shadowColor='#565656' align='right'>%2</t>",g_radio,g_radio_channel];
 };

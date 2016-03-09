@@ -92,3 +92,14 @@ class Extended_PostInit_EventHandlers
 		init="execVM '\twc_framework\init.sqf';";
 	};
 };
+
+class CfgMusic
+{
+ tracks[]={};
+
+ class Theme
+ {
+  name = "Theme";
+  sound[] = {"twc_framework\music\TWCoperationTheme.ogg", db+10, 1.0};
+ };
+};
