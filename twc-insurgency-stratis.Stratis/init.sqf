@@ -15,8 +15,6 @@ execVM "client\zeus\zeus-jayman.sqf";
 waitUntil {!isNull player};
 waitUntil {player == player};
 
-//[bomber,[CIVILIAN,WEST,EAST,RESISTANCE]] execVM "suicideBomber.sqf";
-
 russiancheck = 0;
 
 // Werthles Headless Script Parameters v2.3

@@ -24,10 +24,7 @@ respawnOnStart = 0;
 
 enableDebugConsole = 1;
 
-class CfgSounds
-{
-	#include "server\sys_suicideAI\Sounds.hpp"
-};
+
 
 class CfgDebriefing
 {

@@ -52,8 +52,6 @@ if (isNil "cacheAMarkers") then {
 #include "sys_bluDeath\init.sqf";
 #include "sys_ied\init.sqf";
 
-#include "functions\init.sqf";
-
 #include "sys_vehicles\init.sqf";
 
 #include "sys_townSetup\init.sqf";
