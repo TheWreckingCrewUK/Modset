@@ -5,7 +5,7 @@
 _CampMaxwellstart = createTrigger ["EmptyDetector", getMarkerPos "CampMaxwell"];
 _CampMaxwellstart setTriggerArea [200, 200, 0, false];
 _CampMaxwellstart setTriggerActivation ["West", "PRESENT", False];
-_CampMaxwellstart setTriggerStatements ["this","['CampMaxwell',7,100,4,[300,400]] call twc_townSetup"
+_CampMaxwellstart setTriggerStatements ["this","['CampMaxwell',7,100,3,[300,400]] call twc_townSetup"
 	,""
 ];
 

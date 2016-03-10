@@ -146,7 +146,7 @@ class Mission
 					id=1;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -221,7 +221,7 @@ class Mission
 					id=6;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -904,7 +904,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={0,0,0};
+					position[]={0.31133249,0.14191261,96.379883};
 					class args
 					{
 						items=1;
@@ -1032,13 +1032,13 @@ class Mission
 						};
 						class Item2
 						{
-							value=".7";
+							value="0.001";
 							parentCls="ACE_moduleRepairSettings";
 							typeName="repairDamageThreshold";
 						};
 						class Item3
 						{
-							value=".8";
+							value="0.001";
 							parentCls="ACE_moduleRepairSettings";
 							typeName="repairDamageThreshold_Engineer";
 						};
@@ -2477,7 +2477,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=57;
+		items=58;
 		class Item0
 		{
 			position[]={4011.4983,143.14632,7032.9658};
@@ -2883,19 +2883,26 @@ class Mission
 			type="Empty";
 			colorName="ColorBlack";
 		};
+		class Item57
+		{
+			position[]={6584.2065,24.175381,5328.9131};
+			name="small_14";
+			type="Empty";
+			colorName="ColorBrown";
+		};
 	};
 	class Sensors
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			position[]={1768.688,5.5,5692.1499};
 			a=0;
 			b=0;
 			interruptable=1;
-			type="END5";
 			age="UNKNOWN";
-			expCond="InsP_ammoCaches == 2;";
+			expCond="InsP_ammoCaches == 3; ";
+			expActiv="hint ""All caches destroyed. Stick around for some Domination Altis"";";
 			class Effects
 			{
 			};
@@ -2930,6 +2937,21 @@ class Mission
 			age="UNKNOWN";
 			expActiv="bargate animate [""Door_1_rot"", 1];";
 			expDesactiv="bargate animate [""Door_1_rot"", 0];";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={1769.5421,5.5,5651.4336};
+			a=0;
+			b=0;
+			timeoutMin=15;
+			timeoutMid=15;
+			timeoutMax=15;
+			age="UNKNOWN";
+			expCond="InsP_ammoCaches == 3; ";
+			expActiv=" [""end1"", false, 0] call BIS_fnc_endMission;";
 			class Effects
 			{
 			};

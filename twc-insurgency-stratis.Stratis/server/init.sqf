@@ -1,5 +1,3 @@
-
-InsP_fnc_questionDisplay = compile preProcessFileLineNumbers "client\sys_intel\fnc_questionDisplay.sqf";
 InsP_fnc_deadCache = compile preProcessFileLineNumbers "server\sys_cache\fnc_deadCache.sqf";
 InsP_fnc_deadAAGun = compile preProcessFileLineNumbers "server\sys_aaGun\fnc_deadAAGun.sqf";
 

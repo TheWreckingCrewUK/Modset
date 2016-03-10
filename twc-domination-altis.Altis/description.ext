@@ -39,9 +39,9 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Fill another squad!";
-		subtitle = "";
-		description = "";
+		title = "Pilot Unavailable";
+		subtitle = "You need at least 5 players per pilot.";
+		description = "Play general infantry for now!";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};

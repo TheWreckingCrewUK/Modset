@@ -22,7 +22,7 @@ for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
 player addBackpack "B_Kitbag_mcamo";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-for "_i" from 1 to 12 do {player addItemToBackpack "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 13 do {player addItemToBackpack "1Rnd_HE_Grenade_shell";};
 for "_i" from 1 to 3 do {player addItemToBackpack "UGL_FlareWhite_F";};
 for "_i" from 1 to 3 do {player addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
 player addHeadgear "H_HelmetB_camo";

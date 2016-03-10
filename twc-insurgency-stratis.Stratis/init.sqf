@@ -1,7 +1,12 @@
-if (isServer) then {execVM "server\init.sqf";};
 "iedRestrictionZone" setMarkerAlpha 0;
 
 [] execVM "client\slingLoading\sa_ropes.sqf";
+
+execVM "SHK_pos\shk_pos_init.sqf";
+
+if (isServer) then {
+	execVM "server\init.sqf";
+};
 
 execVM "client\zeus\zeus.sqf";
 execVM "client\zeus\zeus-Fakematty.sqf";
@@ -9,8 +14,6 @@ execVM "client\zeus\zeus-jayman.sqf";
 
 waitUntil {!isNull player};
 waitUntil {player == player};
-
-execVM "SHK_pos\shk_pos_init.sqf";
 
 russiancheck = 0;
 
@@ -30,7 +33,7 @@ russiancheck = 0;
 // Specifying "B_Heli" would stop all units with that class type from transferring to HCs
 // However, if you specify "BLUE1", "NAVYBLUE10" will also be ignored
 
-[true,30,false,true,30,5,true,[]] execVM "server\headlessClient\WerthlesHeadless.sqf";
+//[true,30,false,true,30,5,true,[]] execVM "server\headlessClient\WerthlesHeadless.sqf";
 
 waitUntil {!isNull player};
 waitUntil {player == player};
@@ -85,9 +88,6 @@ _defuseAction = [
 ["IEDLandBig_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
 ["IEDLandSmall_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
 
-["IEDLandBig_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
-["IEDLandSmall_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
-
 /*
 cutText ["Receiving...", "BLACK", .001];
 
@@ -108,9 +108,9 @@ _pilots = ["p21", "p22"];
 _humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
 _NumPlayersForCiv = 5;
 
-if(!isNull humanCiv1) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
-if(!isNull humanCiv2) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
-if(!isNull humanCiv3) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
+if(isPlayer "humanCiv1") then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
+if(isPlayer "humanCiv2") then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
+if(isPlayer "humanCiv3") then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
 
 if ((str player) in _pilots && (count playableUnits) < 5) then {
     ["end4", false, 0] call BIS_fnc_endMission;

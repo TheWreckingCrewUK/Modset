@@ -256,7 +256,7 @@ if (g_class == "US_SL") then {
  if (g_class == "US_GRN") then {
     _tmp_weapons =
     [
-        ["CUP_arifle_M4A1_m203",1],
+        ["CUP_arifle_M4A1_BUIS_GL",1],
 		["ACE_Vector",1],
 		["CUP_launch_M136",2]
 

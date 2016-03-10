@@ -41,6 +41,7 @@ _CentralMarker = format ["ao%1",_AOname]; // example "aopygros"
 _CentralFlagMarker = format ["flag%1", _AOname]; // example "flagpyrgos"
 _bunkerone = format ["ao%1bunkerone",_AOname]; // example "aopygrosbunkerone"
 _bunkertwo = format ["ao%1bunkertwo",_AOname]; // example "aopygrosbunkertwo"
+_bunkerthree = format ["ao%1bunkerthree",_AOname]; // example "aopygrosbunkerthree"
 
 
 if (isServer) then {
@@ -62,7 +63,7 @@ if (isServer) then{
 
 if (isServer) then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,500],[0,180],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,500],[0,120],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
 	_AOBunkerOneMarker = createMarker [ _bunkerone, _pos];
 	_AOBunkerOneMarker setmarkershape "ICON";
 	_AOBunkerOneMarker setmarkertype "n_unknown";
@@ -87,10 +88,10 @@ if (isServer) then {
 
  };
 
-if isServer then {
+if (isServer) then {
 
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,500],[180,360],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,500],[120,240],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
 	_AOBunkerTwoMarker = createMarker [ _bunkertwo, _pos];
 	_AOBunkerTwoMarker setmarkershape "ICON";
 	_AOBunkerTwoMarker setmarkertype "n_unknown";
@@ -116,6 +117,38 @@ if isServer then {
 	",_bunkertwo], "deleteVehicle thisTrigger;"];
 	_BunkerTriggerAreaTwo = ([_positionForTrigger, "AREA:", _areaForTrigger, "ACT:", _activationForTrigger, "STATE:", _stateForTrigger] call CBA_fnc_createTrigger) select 0;
 	_BunkerTriggerAreaTwo setTriggerTimeout [_bunkertime, _bunkertime, _bunkertime, true];
+
+      };
+
+if (isServer) then {
+
+	private ["_pos","_m"];
+	_pos = [getmarkerpos _CentralMarker,[100,500],[240,360],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
+	_AOBunkerThreeMarker = createMarker [ _bunkerThree, _pos];
+	_AOBunkerThreeMarker setmarkershape "ICON";
+	_AOBunkerThreeMarker setmarkertype "n_unknown";
+	_AOBunkerThreeMarker setmarkersize [0.5, 0.5];
+	_AOBunkerThreeMarker setmarkercolor "ColorRed";
+
+
+ 	_AOBunkerThreeSpawn = "Land_BagBunker_Large_F" createVehicle (_pos);
+	_BunkerThreeFlag = _ruflag createVehicle (_pos);
+
+	_AOBunkerThreeDefenceOne = [_pos, EAST, _fireteam] call BIS_fnc_spawnGroup;
+	[_AOBunkerThreeDefenceOne, _pos, 10] call CBA_fnc_taskDefend;
+
+ 	_AOBunkerThreePatrolOne = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
+	[_AOBunkerThreePatrolOne, _pos, 250, 7, "MOVE", "RELAXED", "YELLOW", "LIMITED", "COLUMN"] call CBA_fnc_taskPatrol;
+
+        _positionForTrigger = _pos;
+	_areaForTrigger = [10,10,0,false];
+	_activationForTrigger = ["WEST", "PRESENT", true];
+	_stateForTrigger = ["this",
+	format["
+		AObunkercount = AObunkercount + 1; hint 'Bunker Captured';  '%1' setmarkercolor 'ColorBlue';
+	",_bunkertwo], "deleteVehicle thisTrigger;"];
+	_BunkerTriggerAreaThree = ([_positionForTrigger, "AREA:", _areaForTrigger, "ACT:", _activationForTrigger, "STATE:", _stateForTrigger] call CBA_fnc_createTrigger) select 0;
+	_BunkerTriggerAreaThree setTriggerTimeout [_bunkertime, _bunkertime, _bunkertime, true];
 
       };
 
@@ -172,7 +205,7 @@ if isServer then {
 
 
 
-waituntil {AObunkercount == 2 and RadioTowerCheck == 1};
+waituntil {AObunkercount == 3 and RadioTowerCheck == 1};
 
    [format["Task%1",TaskIncrease],"succeeded"] call TWC_fnc_UpdateTask;
   _CentralMarker setmarkeralpha 1.0;

@@ -29,9 +29,9 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "You died as an Insurgent";
-		subtitle = "You are no longer able to play as a civ";
-		description = "Join Blufor for the rest of the map";
+		title = "Mission End";
+		subtitle = "Good Job!";
+		description = "Stick around for some Domination on Altis, next!";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
