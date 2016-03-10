@@ -3,8 +3,6 @@ if (isNil "TrainingEra") then {
 	publicVariable "TrainingERA";
 };
 
-execVM "scripts\weaponLists\crates\modern.sqf";
-
 execVM "scripts\Zues\Zues1.sqf";
 execVM "scripts\Zues\Zues2.sqf";
 execVM "scripts\Zues\Zues3.sqf";
