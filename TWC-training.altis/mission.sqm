@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={23597.283,88.041672,18397.535};
+		pos[]={23590.105,64.143585,18417.305};
 		dir[]={-0.29300708,-0.6502434,0.70095307};
 		up[]={-0.25078148,0.75972438,0.59993786};
 		aside[]={0.922638,9.0803951e-008,0.38567376};
@@ -47055,7 +47055,6 @@ class Mission
 						rank="SERGEANT";
 						name="T1";
 						description="[TWC]PattyEvans";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3457;
@@ -50040,10 +50039,53 @@ class Mission
 						skill=0.60000002;
 						name="p1";
 						description="Trainee----MEDICAL";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3522;
 					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes

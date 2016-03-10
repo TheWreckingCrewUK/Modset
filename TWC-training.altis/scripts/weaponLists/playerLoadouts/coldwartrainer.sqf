@@ -1,6 +1,5 @@
 waitUntil {!isNull player};
 
-if (player in Trainers) then{
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
@@ -35,5 +34,3 @@ comment "Set identity";
 player setFace "GreekHead_A3_01";
 player setSpeaker "ACE_NoVoice";
 };
-
-if(true) exitWith{};

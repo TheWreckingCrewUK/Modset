@@ -1,6 +1,5 @@
 waitUntil {!isNull player};       //to prevent MP / JIP issues
 
-if (player in Everyone) then{
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
@@ -35,5 +34,5 @@ player linkItem "UK3CB_BAF_HMNVS";
 comment "Set identity";
 player setFace "GreekHead_A3_01";
 player setSpeaker "ACE_NoVoice";
-};
+
 if(true) exitWith{};

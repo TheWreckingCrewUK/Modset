@@ -1,6 +1,5 @@
 waitUntil {!isNull player};       //to prevent MP / JIP issues
 
-if (player in Everyone) then{
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
@@ -31,5 +30,5 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "UK3CB_BAF_HMNVS";
-};
+
 if(true) exitWith{};

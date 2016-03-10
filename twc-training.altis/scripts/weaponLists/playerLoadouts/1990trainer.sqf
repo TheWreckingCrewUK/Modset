@@ -1,6 +1,5 @@
 waitUntil {!isNull player};       //to prevent MP / JIP issues
 
-if (player in Trainers) then{
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
@@ -31,6 +30,6 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-};
+
 
 if(true) exitWith{};
