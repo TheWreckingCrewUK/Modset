@@ -5,6 +5,7 @@ if (!isNil "P1" && {player == P1}) then {
     g_class = "BAF_SL";
 	g_group = "0";
 	g_unit = "000";
+	g_name = "Alpha Section Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
@@ -13,6 +14,7 @@ if (!isNil "P2" && {player == P2}) then {
     g_class = "BAF_RF";
 	g_group = "0";
 	g_unit = "010";
+	g_name = "Alpha Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
@@ -21,6 +23,7 @@ if (!isNil "P3" && {player == P3}) then {
     g_class = "BAF_GRN";
 	g_group = "0";
 	g_unit = "011";
+	g_name = "Alpha Grenadier";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
@@ -29,6 +32,7 @@ if (!isNil "P4" && {player == P4}) then {
     g_class = "BAF_AR";
 	g_group = "0";
 	g_unit = "012";
+	g_name = "Alpha Automatic Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
@@ -37,6 +41,7 @@ if (!isNil "P5" && {player == P5}) then {
     g_class = "BAF_MED";
 	g_group = "0";
 	g_unit = "013";
+	g_name = "Alpha Medic";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC343";
 };
@@ -44,6 +49,7 @@ if (!isNil "P6" && {player == P6}) then {
     g_class = "US_SL";
 	g_group = "0";
 	g_unit = "020";
+	g_name = "Bravo Squad Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
@@ -52,6 +58,7 @@ if (!isNil "P7" && {player == P7}) then {
     g_class = "US_RF";
 	g_group = "0";
 	g_unit = "021";
+	g_name = "Bravo Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
@@ -60,6 +67,7 @@ if (!isNil "P8" && {player == P8}) then {
     g_class = "US_GRN";
 	g_group = "0";
 	g_unit = "022";
+	g_name = "Bravo grenadier";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
@@ -68,6 +76,7 @@ if (!isNil "P9" && {player == P9}) then {
     g_class = "US_AR";
 	g_group = "0";
 	g_unit = "023";
+	g_name = "Bravo Automatic Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
@@ -76,6 +85,7 @@ if (!isNil "P10" && {player == P10}) then {
     g_class = "US_MED";
 	g_group = "9";
 	g_unit = "800";
+	g_name = "Bravo Medic";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
@@ -84,6 +94,7 @@ if (!isNil "P11" && {player == P11}) then {
     g_class = "USMC_SL";
 	g_group = "9";
 	g_unit = "801";
+	g_name = "Charlie Squad Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
@@ -92,6 +103,7 @@ if (!isNil "P12" && {player == P12}) then {
     g_class = "USMC_RF";
 	g_group = "9";
 	g_unit = "802";
+	g_name = "Charlie Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
@@ -100,6 +112,7 @@ if (!isNil "P13" && {player == P13}) then {
     g_class = "USMC_GRN";
 	g_group = "1";
 	g_unit = "100";
+	g_name = "Charlie Grenadier";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
@@ -108,6 +121,7 @@ if (!isNil "P14" && {player == P14}) then {
     g_class = "USMC_AR";
 	g_group = "1";
 	g_unit = "110";
+	g_name = "Charlie Automatic Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
@@ -116,6 +130,7 @@ if (!isNil "P15" && {player == P15}) then {
     g_class = "USMC_MED";
 	g_group = "1";
 	g_unit = "111";
+	g_name = "Charlie Medic";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
@@ -124,30 +139,35 @@ if (!isNil "P16" && {player == P16}) then {
     g_class = "ANA_SL";
 	g_group = "1";
 	g_unit = "112";
+	g_name = "Delta Squad Leader";
 };
 
 if (!isNil "P17" && {player == P17}) then {
     g_class = "ANA_RF";
 	g_group = "1";
 	g_unit = "113";
+	g_name = "Delta Rifleman";
 };
 
 if (!isNil "P18" && {player == P18}) then {
     g_class = "ANA_GRN";
 	g_group = "1";
 	g_unit = "120";
+	g_name = "Delta Grenadier";
 };
 
 if (!isNil "P19" && {player == P19}) then {
     g_class = "ANA_AR";
 	g_group = "1";
 	g_unit = "121";
+	g_name = "Delta Automatic Rifleman";
 };
 
 if (!isNil "P20" && {player == P20}) then {
     g_class = "ANA_MED";
 	g_group = "1";
 	g_unit = "122";
+	g_name = "Delta Medic";
 };
 
 if (!isNil "P21" && {player == P21}) then {
@@ -351,6 +371,11 @@ armorAction = ["ArmorList","Armor List","", {call TWC_fnc_getArmorList;},{true}]
 		[player] join grpNull ;
 	};
 };
+
+
+_name = name player;
+_text = format["%1 joined in as %2",_name,g_name];
+[TWCServer,_text] remoteExec ["TWC_fnc_GlobalChat", 2]; 
 
 if (g_class != "") then {
 	execVM format["client\player\loadout\%1.sqf", g_class];

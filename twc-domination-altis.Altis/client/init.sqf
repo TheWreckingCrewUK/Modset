@@ -332,7 +332,8 @@ if(false)then{
 };
 
 _name = name player;
-TWCServer globalchat format["%1 joined in as %2",_name,g_name];
+_text = format["%1 joined in as %2",_name,g_name];
+[TWCServer,_text] remoteExec ["TWC_fnc_GlobalChat", 2]; 
 
 [] spawn {
 	while{true} do {

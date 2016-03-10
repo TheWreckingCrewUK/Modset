@@ -1,6 +1,8 @@
 InsP_fnc_deadCache = compile preProcessFileLineNumbers "server\sys_cache\fnc_deadCache.sqf";
 InsP_fnc_deadAAGun = compile preProcessFileLineNumbers "server\sys_aaGun\fnc_deadAAGun.sqf";
 
+TWC_fnc_GlobalChat = compile preProcessFileLineNumbers "server\functions\fnc_GlobalChat.sqf";
+
 if (isNil "InsP_iedDestroyed") then {
 	InsP_iedDestroyed = 0;
 	publicVariable "InsP_iedDestroyed";
@@ -50,6 +52,7 @@ if (isNil "cacheAMarkers") then {
 #include "sys_bluDeath\init.sqf";
 #include "sys_ied\init.sqf";
 
+#include "functions\init.sqf";
 
 #include "sys_vehicles\init.sqf";
 

@@ -3,6 +3,7 @@ call compile preprocessfilelinenumbers "SHK_pos\shk_pos_init.sqf";
 TaskIncrease = 0;
 
 TWC_fnc_AO = compile preprocessfilelinenumbers "server\func\fnc_AO.sqf";
+TWC_fnc_GlobalChat = compile preprocessfilelinenumbers "server\func\fnc_GlobalChat.sqf";
 
 TaskArray=["Pyrgos","Charkia","Rodopoli","Paros","Frini","Galati","Syrta","Agios Dionysios","Poliakko","Neochori"];
 execVM "server\ao\RandomArray.sqf";
