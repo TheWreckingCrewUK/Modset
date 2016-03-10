@@ -20,3 +20,4 @@
 ["small_12"] call twc_smallTown;
 ["small_13"] call twc_smallTown;
 ["small_14"] call twc_smallTown;
+["small_15"] call twc_smallTown;

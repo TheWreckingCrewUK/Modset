@@ -36,7 +36,7 @@ _trigger setTriggerArea [_triggerRadius, _triggerRadius, 0, false];
 _trigger setTriggerActivation ["WEST", "PRESENT", true];
 _trigger setTriggerStatements [
     "{
-        if (abs (speed _x) >= 15 && (getPosATL _x select 2) < 4) exitWith {true};
+        if (abs (speed _x) >= 10 && (getPosATL _x select 2) < 4) exitWith {true};
         false
     } forEach thisList;",
     "(thisTrigger getVariable ['InsP_ied', objNull]) setDamage 1;",
@@ -46,5 +46,3 @@ _trigger setTriggerStatements [
 // Make trigger and object known to each other
 _trigger setVariable ["InsP_ied", _ied, true];
 _ied setVariable ["InsP_trigger", _trigger, true];
-
-_ied

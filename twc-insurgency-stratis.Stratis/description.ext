@@ -24,6 +24,10 @@ respawnOnStart = 0;
 
 enableDebugConsole = 1;
 
+class CfgSounds
+{
+	#include "server\sys_suicideAI\Sounds.hpp"
+};
 
 class CfgDebriefing
 {
@@ -39,9 +43,9 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Fill another squad!";
-		subtitle = "";
-		description = "";
+		title = "Pilot Unavailable";
+		subtitle = "More players are needed for Pilot.";
+		description = "5 for Pilot. 10 + Pilot active for Crew Chief.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -49,9 +53,9 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "Pilot is already online";
-		subtitle = "Wait till player count is over 15 to be a Pilot.";
-		description = "Play General infantry for now!";
+		title = "You can not play as a human Civilian";
+		subtitle = "Member,Playercount 5 per Civ, Not died as Civ";
+		description = "Play as Blufor for now";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
