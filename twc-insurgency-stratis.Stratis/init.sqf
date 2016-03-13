@@ -4,6 +4,7 @@
 
 execVM "SHK_pos\shk_pos_init.sqf";
 
+
 if (isServer) then {
 	execVM "server\init.sqf";
 };
@@ -114,14 +115,12 @@ if ((str player) in _specialSlots)then{
 		_NumPlayersForPilot = 0;
 		_NumPlayersForCiv = 5;
 
-		if(isMultiplayer)then{
-			if(isPlayer p21) then {_NumPlayersForPilot = _NumPlayersForPilot + 5};
-			if(isPlayer p22) then {_NumPlayersForPilot = _NumPlayersForPilot + 5};
+		if(isPlayer p21) then {_NumPlayersForPilot = _NumPlayersForPilot + 5};
+		if(isPlayer p22) then {_NumPlayersForPilot = _NumPlayersForPilot + 5};
 		
-			if(isPlayer humanCiv1) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
-			if(isPlayer humanCiv2) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
-			if(isPlayer humanCiv3) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
-		};
+		if(isPlayer humanCiv1) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
+		if(isPlayer humanCiv2) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
+		if(isPlayer humanCiv3) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
 	
 		if ((str player) in _pilots && (count playableUnits) < _NumPlayersForPilot && !isPlayer p21) then {
 			["End2", false, 0] call BIS_fnc_endMission;

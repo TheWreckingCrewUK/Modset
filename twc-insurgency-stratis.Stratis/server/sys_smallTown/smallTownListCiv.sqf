@@ -19,3 +19,5 @@
 ["small_11",3,50] call twc_smallTownCiv;
 ["small_12",3,50] call twc_smallTownCiv;
 ["small_13",3,50] call twc_smallTownCiv;
+["small_14",3,50] call twc_smallTownCiv;
+["small_15",3,50] call twc_smallTownCiv;

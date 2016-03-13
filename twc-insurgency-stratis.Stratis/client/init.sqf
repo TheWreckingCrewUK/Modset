@@ -11,7 +11,14 @@ InsP_fnc_spawnSelect = compile preprocessFileLineNumbers "client\sys_humanCiv\fn
 if (InsP_playerCiv) then {
 	execVM "client\sys_humanCiv\init.sqf";
 }else{
-	player addMPEventHandler ["MPRespawn", {InsP_bluDeath = InsP_bluDeath + 1; publicVariable "InsP_bluDeath"}];
+
+	player addEventHandler ["Killed",{
+		if (side (_this select 1) == WEST) then{
+			InsP_enemyMorale = InsP_enemyMorale - .5; publicVariable "InsP_enemyMorale";
+		}else{
+			InsP_enemyMorale = InsP_enemyMorale - .1; publicVariable "InsP_enemyMorale";
+		};
+	}];
 	execVM "client\sys_blufor\bluWeaponRestrict.sqf";
 };
 
@@ -22,6 +29,7 @@ InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\sys_in
 execVM "client\restrict\pilot.sqf";
 execVM "client\restrict\base.sqf";
 execVM "client\cleanup\deadbodies.sqf";
+execVM "client\cleanup\gear.sqf";
 
 
 

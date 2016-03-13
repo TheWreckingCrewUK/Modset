@@ -33,9 +33,9 @@ if (isNil "DeadInsurgents") then {
 	publicVariable "DeadInsurgents";
 };
 
-if (isNil "IedList") then {
-	IedList = [];
-	publicVariable "IedList";
+if (isNil "InsP_iedGroup") then {
+	InsP_iedGroup = [];
+	publicVariable "InsP_iedGroup";
 };
 
 if (isNil "cacheAMarkers") then {
@@ -45,6 +45,12 @@ if (isNil "cacheAMarkers") then {
 	publicVariable "cacheBMarkers";
 	cacheCMarkers = [];
 	publicVariable "cacheCMarkers";
+};
+if (isNil "aaGunAMarkers") then {
+	aaGunAMarkers = [];
+	publicVariable "aaGunAMarkers";
+	aaGunBMarkers = [];
+	publicVariable "aaGunBMarkers";
 };
 
 #include "sys_cache\init.sqf";
