@@ -1,6 +1,27 @@
 g_class = "";
 g_group = "";
 g_unit = "";
+if (!isNil "humanCiv1" && {player == humanCiv1}) then {
+    g_class = "Civ";
+	g_group = "0";
+	g_unit = "200";
+	g_name = "Civilian";
+	g_radio = "";
+};
+if (!isNil "humanCiv2" && {player == humanCiv2}) then {
+    g_class = "Civ";
+	g_group = "0";
+	g_unit = "201";
+	g_name = "Civilian";
+	g_radio = "";
+};
+if (!isNil "humanCiv3" && {player == humanCiv3}) then {
+    g_class = "Civ";
+	g_group = "0";
+	g_unit = "202";
+	g_name = "Civilian";
+	g_radio = "";
+};
 if (!isNil "P1" && {player == P1}) then {
     g_class = "BAF_SL";
 	g_group = "0";
@@ -309,6 +330,9 @@ g_p35 = "";
 g_p36 = "";
 g_p37 = "";
 g_p38 = "";
+g_humanCiv1 = "";
+g_humanCiv2 = "";
+g_humanCiv3 = "";
 
 
 execVM "client\player\boxes\main_ammo.sqf";

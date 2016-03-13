@@ -22,6 +22,7 @@ InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\sys_in
 execVM "client\restrict\pilot.sqf";
 execVM "client\restrict\base.sqf";
 execVM "client\cleanup\deadbodies.sqf";
+execVM "client\cleanup\gear.sqf";
 
 
 
