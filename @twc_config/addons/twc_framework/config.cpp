@@ -92,6 +92,13 @@ class Extended_PostInit_EventHandlers
 		init="execVM '\twc_framework\init.sqf';";
 	};
 };
+class Extended_PreInit_EventHandlers
+{
+	class Twc_framework_init
+	{
+		init="execVM '\twc_framework\preinit.sqf';";
+	};
+};
 
 class CfgMusic
 {

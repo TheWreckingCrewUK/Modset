@@ -123,7 +123,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction=TWC_Operation;
+		faction="Veh_units";
 		displayname = "Landrover Desert";
 		class TransportMagazines
 		{
@@ -224,7 +224,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction=TWC_Operation;
+		faction="Veh_units";
 		displayname = "Landrover Woodland";
 		class TransportMagazines
 		{
@@ -290,7 +290,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction=TWC_Operation;
+		faction="Veh_units";
 		displayname = "Landrover Desert";
 		class TransportMagazines
 		{
@@ -356,7 +356,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction=TWC_Operation;
+		faction="Veh_units";
 		displayname = "Landrover Woodland";
 		class TransportMagazines
 		{
@@ -437,7 +437,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction=TWC_Operation;
+		faction="Veh_units";
 		displayname = "Landrover Desert";
 		class TransportMagazines
 		{

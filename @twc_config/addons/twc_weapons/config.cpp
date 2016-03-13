@@ -479,7 +479,9 @@ class CfgVehicles
 		};
 	};
 	class TWC_Backpack_Modern_Platoon_Sergeant:UK3CB_BAF_B_Bergen_MTP_Radio_L_B
-	{
+	{	
+	transportMaxMagazines = 30;
+	transportMaxWeapons = 2;
 		scope = 1;
 		class TransportItems
 		{
