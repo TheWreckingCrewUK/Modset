@@ -63,7 +63,7 @@ if (isServer) then{
 
 if (isServer) then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,500],[0,120],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,500],[0,110],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
 	_AOBunkerOneMarker = createMarker [ _bunkerone, _pos];
 	_AOBunkerOneMarker setmarkershape "ICON";
 	_AOBunkerOneMarker setmarkertype "n_unknown";
@@ -91,7 +91,7 @@ if (isServer) then {
 if (isServer) then {
 
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,500],[120,240],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,500],[120,230],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
 	_AOBunkerTwoMarker = createMarker [ _bunkertwo, _pos];
 	_AOBunkerTwoMarker setmarkershape "ICON";
 	_AOBunkerTwoMarker setmarkertype "n_unknown";
@@ -123,7 +123,7 @@ if (isServer) then {
 if (isServer) then {
 
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,500],[240,360],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,500],[240,350],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
 	_AOBunkerThreeMarker = createMarker [ _bunkerThree, _pos];
 	_AOBunkerThreeMarker setmarkershape "ICON";
 	_AOBunkerThreeMarker setmarkertype "n_unknown";
@@ -146,7 +146,7 @@ if (isServer) then {
 	_stateForTrigger = ["this",
 	format["
 		AObunkercount = AObunkercount + 1; hint 'Bunker Captured';  '%1' setmarkercolor 'ColorBlue';
-	",_bunkertwo], "deleteVehicle thisTrigger;"];
+	",_bunkerThree], "deleteVehicle thisTrigger;"];
 	_BunkerTriggerAreaThree = ([_positionForTrigger, "AREA:", _areaForTrigger, "ACT:", _activationForTrigger, "STATE:", _stateForTrigger] call CBA_fnc_createTrigger) select 0;
 	_BunkerTriggerAreaThree setTriggerTimeout [_bunkertime, _bunkertime, _bunkertime, true];
 

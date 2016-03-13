@@ -221,8 +221,8 @@ if (g_class == "BAF_SL") then {
 	_tmp_items = 
 	[
 			
-		["ACE_fieldDressing",50],
-		["ACE_morphine",50],
+		["ACE_fieldDressing",30],
+		["ACE_morphine",20],
 		["ACE_epinephrine",50],
 		["ACE_bloodIV",50],
 		["ACE_bodyBag",10],
@@ -237,7 +237,8 @@ if (g_class == "US_SL") then{
 	_tmp_weapons =
 	[
 		["CUP_arifle_M4A1_BUIS_GL",1],
-		["ACE_Vector",1]
+		["ACE_Vector",1],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
@@ -250,7 +251,8 @@ if (g_class == "US_SL") then{
 		["1Rnd_SmokeYellow_Grenade_shell", 10],
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
 		["UGL_FlareWhite_F", 10],
-	    ["1Rnd_SmokeBlue_Grenade_shell", 10]
+	    ["1Rnd_SmokeBlue_Grenade_shell", 10],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -271,7 +273,8 @@ if (g_class == "US_FTL") then{
 	[
 		["CUP_arifle_M4A1_BUIS_GL",1],
 		["ACE_Vector",1],
-		["CUP_launch_M136",2]
+		["CUP_launch_M136",2],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
@@ -284,7 +287,8 @@ if (g_class == "US_FTL") then{
 		["1Rnd_SmokeYellow_Grenade_shell", 10],
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
 		["UGL_FlareWhite_F", 10],
-	    ["1Rnd_SmokeBlue_Grenade_shell", 10]
+	    ["1Rnd_SmokeBlue_Grenade_shell", 10],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -301,14 +305,16 @@ if (g_class == "US_RF") then{
 		["CUP_arifle_M4A1_black",1],
 		["CUP_launch_M136",2],
 		["CUP_launch_FIM92Stinger",2],
-		["CUP_launch_Javelin",2]
+		["CUP_launch_Javelin",2],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
 		["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",15],
 		["CUP_Javelin_M",2],
-		["CUP_Stinger_M",2]
+		["CUP_Stinger_M",2],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -325,7 +331,8 @@ if (g_class == "US_GRN") then{
 		["CUP_arifle_M4A1_BUIS_GL",1],
 		["ACE_Vector",1],
 		["CUP_launch_FIM92Stinger",2],
-		["CUP_launch_M136",2]
+		["CUP_launch_M136",2],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
@@ -339,7 +346,8 @@ if (g_class == "US_GRN") then{
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
 		["UGL_FlareWhite_F", 10],
 	    ["1Rnd_SmokeBlue_Grenade_shell", 10],
-		["CUP_Stinger_M",2]
+		["CUP_Stinger_M",2],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -354,11 +362,13 @@ if (g_class == "US_AR") then{
 	_tmp_weapons =
 	[
 		["CUP_lmg_M249_E2",1],
-		["CUP_launch_M136",2]
+		["CUP_launch_M136",2],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
-		["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",20]
+		["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",20],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -375,13 +385,15 @@ if (g_class == "US_MARK") then{
 		["CUP_launch_M136",2],
 		["ACE_Vector",1],
 		["CUP_launch_FIM92Stinger",2],
-		["CUP_launch_Javelin",2]
+		["CUP_launch_Javelin",2],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
 		["20Rnd_762x51_Mag",50],
 		["CUP_Javelin_M",2],
-		["CUP_Stinger_M",2]
+		["CUP_Stinger_M",2],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -392,15 +404,17 @@ if (g_class == "US_MARK") then{
 	];
 };
 //load availible to US Medic only
-if (g_class == "US_RF") then{
+if (g_class == "US_MED") then{
 	_tmp_weapons =
 	[
-		["CUP_arifle_M4A1_black",1]
+		["CUP_arifle_M4A1_black",1],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
 		["30Rnd_556x45_Stanag",50],
-		["30Rnd_556x45_Stanag_Tracer_Red",15]
+		["30Rnd_556x45_Stanag_Tracer_Red",15],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -420,7 +434,8 @@ if (g_class == "USMC_SL") then{
 	_tmp_weapons =
 	[
 		["CUP_arifle_M16A4_GL",1],
-		["ACE_Vector",1]
+		["ACE_Vector",1],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
@@ -433,7 +448,8 @@ if (g_class == "USMC_SL") then{
 		["1Rnd_SmokeYellow_Grenade_shell", 10],
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
 		["UGL_FlareWhite_F", 10],
-	    ["1Rnd_SmokeBlue_Grenade_shell", 10]
+	    ["1Rnd_SmokeBlue_Grenade_shell", 10],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -454,7 +470,8 @@ if (g_class == "USMC_FTL") then{
 	[
 		["CUP_arifle_M16A4_GL",1],
 		["ACE_Vector",1],
-		["CUP_launch_M136",1]
+		["CUP_launch_M136",1],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
@@ -467,7 +484,8 @@ if (g_class == "USMC_FTL") then{
 		["1Rnd_SmokeYellow_Grenade_shell", 10],
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
 		["UGL_FlareWhite_F", 10],
-	    ["1Rnd_SmokeBlue_Grenade_shell", 10]
+	    ["1Rnd_SmokeBlue_Grenade_shell", 10],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -484,18 +502,18 @@ if (g_class == "USMC_RF") then{
 		["CUP_arifle_M16A4_Base",1],
 		["CUP_launch_M136",1],
 		["CUP_launch_Mk153Mod0",1],
-		["CUP_launch_FIM92Stinger",1],
-		["CUP_launch_Javelin",2]
+		["CUP_launch_Javelin",1],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
 		["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",15],
 		["CUP_Javelin_M",2],
-		["CUP_Stinger_M",2],
-		["CUP_SMAW_Spotting",10],
-		["CUP_SMAW_HEAA_M",10],
-		["CUP_SMAW_HEDP_M",10]
+		["CUP_SMAW_Spotting",5],
+		["CUP_SMAW_HEAA_M",5],
+		["CUP_SMAW_HEDP_M",5],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -511,11 +529,13 @@ if (g_class == "USMC_AR") then{
 	_tmp_weapons =
 	[
 		["CUP_lmg_M249_E2",1],
-		["CUP_launch_M136",2]
+		["CUP_launch_M136",2],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
-		["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",20]
+		["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",20],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -529,13 +549,17 @@ if (g_class == "USMC_AAR") then{
 	_tmp_weapons =
 	[
 		["CUP_arifle_M16A4_Base",1],
-		["CUP_launch_M136",2]
+		["CUP_launch_M136",2],
+		["CUP_launch_FIM92Stinger",2],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
 		["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",15],
-		["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",20]
+		["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",20],
+		["CUP_Stinger_M",2],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -549,12 +573,14 @@ if (g_class == "USMC_AAR") then{
 if (g_class == "USMC_MG") then{
 	_tmp_weapons =
 	[
-		["CUP_lmg_M240",1]
+		["CUP_lmg_M240",1],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
 		["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",20],
-		["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",20]
+		["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",20],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[
@@ -567,12 +593,14 @@ if (g_class == "USMC_MG") then{
 if (g_class == "USMC_MED") then{
 	_tmp_weapons =
 	[
-		["CUP_arifle_M16A4_Base",1]
+		["CUP_arifle_M16A4_Base",1],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
 		["30Rnd_556x45_Stanag",50],
-		["30Rnd_556x45_Stanag_Tracer_Red",15]
+		["30Rnd_556x45_Stanag_Tracer_Red",15],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[

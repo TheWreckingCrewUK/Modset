@@ -173,7 +173,8 @@ if (g_class == "US_SL") then {
     _tmp_weapons =
     [
         ["CUP_arifle_M4A1_BUIS_GL",1],
-        ["ACE_Vector",1]
+        ["ACE_Vector",1],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
     [
@@ -185,7 +186,8 @@ if (g_class == "US_SL") then {
 		["1Rnd_SmokeGreen_Grenade_shell", 10],
 		["1Rnd_SmokeYellow_Grenade_shell", 10],
 		["1Rnd_SmokePurple_Grenade_shell", 10],
-		["1Rnd_SmokeBlue_Grenade_shell", 10]
+		["1Rnd_SmokeBlue_Grenade_shell", 10],
+        ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items =
 	[
@@ -212,12 +214,14 @@ if (g_class == "US_SL") then {
     _tmp_weapons =
     [
         ["CUP_arifle_M4A1",1],
-		["CUP_launch_M136",2]
+		["CUP_launch_M136",2],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
     [
 		["30Rnd_556x45_Stanag",50],
-		["30Rnd_556x45_Stanag_Tracer_Red",15]
+		["30Rnd_556x45_Stanag_Tracer_Red",15],
+        ["CUP_7Rnd_45ACP_1911",15]
     ];
 	_tmp_items =
 	[
@@ -235,11 +239,13 @@ if (g_class == "US_SL") then {
     _tmp_weapons =
     [
 		["CUP_lmg_M249_E2",1],
-		["CUP_launch_M136",2]
+		["CUP_launch_M136",2],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
     [
-         ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",20]		 
+         ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",20],
+        ["CUP_7Rnd_45ACP_1911",15]		 
     ];
 	_tmp_items =
 	[
@@ -258,7 +264,8 @@ if (g_class == "US_SL") then {
     [
         ["CUP_arifle_M4A1_BUIS_GL",1],
 		["ACE_Vector",1],
-		["CUP_launch_M136",2]
+		["CUP_launch_M136",2],
+		["CUP_hgun_Colt1911",1]
 
 		];
 	_tmp_magazines =
@@ -270,7 +277,8 @@ if (g_class == "US_SL") then {
 	    ["1Rnd_SmokeGreen_Grenade_shell", 10],
 	    ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
-         ["1Rnd_SmokeBlue_Grenade_shell", 10]
+         ["1Rnd_SmokeBlue_Grenade_shell", 10],
+        ["CUP_7Rnd_45ACP_1911",15]
     ];
 	_tmp_items =
 	[
@@ -286,12 +294,14 @@ if (g_class == "US_SL") then {
  if (g_class == "US_MED") then {
     _tmp_weapons =
     [
-		["CUP_arifle_M4A1",1]
+		["CUP_arifle_M4A1",1],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
     [
         ["30Rnd_556x45_Stanag",50],
-		["30Rnd_556x45_Stanag_Tracer_Red",15]
+		["30Rnd_556x45_Stanag_Tracer_Red",15],
+        ["CUP_7Rnd_45ACP_1911",15]
     ];
 	_tmp_items =
 	[
@@ -368,6 +378,7 @@ if (g_class == "US_SL") then {
 	    ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
         ["1Rnd_SmokeBlue_Grenade_shell", 10],
+        ["CUP_7Rnd_45ACP_1911",15],
         ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
@@ -389,7 +400,8 @@ if (g_class == "US_SL") then {
     [
         ["CUP_arifle_M16A4_Base",1],
 		["CUP_hgun_Colt1911",1],
-		["CUP_launch_M136",2]
+		["CUP_launch_M136",2],
+		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
     [
