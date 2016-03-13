@@ -109,7 +109,7 @@ if ((str player) in _specialSlots)then{
 	_UID = getPlayerUID player;
 
 
-	if(isMultiplayer)then{	
+	if((_UID) != "_SP_PLAYER_")then{	
 		_pilots = ["p21", "p22"];
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
 		_NumPlayersForPilot = 0;

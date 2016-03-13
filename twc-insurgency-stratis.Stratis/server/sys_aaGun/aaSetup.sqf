@@ -9,16 +9,17 @@ if (isNil "InsP_aaGroup") then {
     _aaGunAPosition = AA_POSITION_LIST_A call BIS_fnc_selectRandom;
     _aaGunBPosition = AA_POSITION_LIST_B call BIS_fnc_selectRandom;
 
-    _aaGunA = AA_VEHICLE_TYPE createVehicle getMarkerPos _aaGunAPosition;
-	createVehicleCrew _aaGunA;
-    _aaGunA setDir (random 360);
-    _aaGunA addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadAAGun}];
+    aaGunA = AA_VEHICLE_TYPE createVehicle getMarkerPos _aaGunAPosition;
+	createVehicleCrew aaGunA;
+    aaGunA setDir (random 360);
+    aaGunA addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadAAGun;["aaGunA"] call InsP_fnc_deleteMarkers}];
 
-    _aaGunB = AA_VEHICLE_TYPE createVehicle getMarkerPos _aaGunBPosition;
-	createVehicleCrew _aaGunB;
-    _aaGunB setDir (random 360);
-    _aaGunB addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadAAGun}];
+    aaGunB = AA_VEHICLE_TYPE createVehicle getMarkerPos _aaGunBPosition;
+	createVehicleCrew aaGunB;
+    aaGunB setDir (random 360);
+    aaGunB addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadAAGun;["aaGunB"] call InsP_fnc_deleteMarkers}];
 
-    InsP_aaGroup = [_aaGunA, _aaGunB];
+
+    InsP_aaGroup = [aaGunA, aaGunB];
     publicVariable "InsP_aaGroup";
 };

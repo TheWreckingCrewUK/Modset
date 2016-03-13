@@ -18,23 +18,58 @@ if (_civilianQuestioned in nonQuestionableList) then {
 			case (floor InsP_enemyMorale >= 3):{hintSilent "I believe they are somewhere around here. Good luck."};
 			default {hintSilent "For some reson this Civilian doesn't know the morale status. Please inform management of this bug."};
 		};
-		_color = "ColorOrange";
-		_object = InsP_cacheGroup call BIS_fnc_selectRandom;
-		_distance = [1500,1000,750,750,500,500,250] call BIS_fnc_selectRandom;
+		_rand = (floor (random 100));
+		if (_rand == 1)then{
+			_color = "ColorOrange";
+			_object = InsP_cacheGroup call BIS_fnc_selectRandom;
+			_distance = [1500,1000,750,750,500,500,250] call BIS_fnc_selectRandom;
 
-		_intelPos = [_object, _distance] call CBA_fnc_randPos;
-		_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
-		_marker setMarkerType "hd_join";
-		_marker setMarkerColor _color;
-		_marker setMarkerText (str(_distance) + "m");
-		_marker setMarkerSize [0.5,0.5];
-		[_marker, true] call CBA_fnc_setMarkerPersistent;
+			_intelPos = [_object, _distance] call CBA_fnc_randPos;
+			_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
+			_marker setMarkerType "hd_join";
+			_marker setMarkerColor _color;
+			_marker setMarkerText (str(_distance) + "m");
+			_marker setMarkerSize [0.5,0.5];
+			[_marker, true] call CBA_fnc_setMarkerPersistent;
 
-		switch (str _object) do {
-			case (str (InsP_cacheGroup select 0)): {cacheAMarkers pushBack _marker; publicVariable "cacheAMarkers"};
-			case (str (InsP_cacheGroup select 1)): {cacheBMarkers pushBack _marker; publicVariable "cacheBMarkers"};
-			case (str (InsP_cacheGroup select 2)): {cacheCMarkers pushBack _marker; publicVariable "cacheCMarkers"};
-			default {hint "Something went wrong";};
+			switch (str _object) do {
+				case (str (InsP_cacheGroup select 0)): {cacheAMarkers pushBack _marker; publicVariable "cacheAMarkers"};
+				case (str (InsP_cacheGroup select 1)): {cacheBMarkers pushBack _marker; publicVariable "cacheBMarkers"};
+				case (str (InsP_cacheGroup select 2)): {cacheCMarkers pushBack _marker; publicVariable "cacheCMarkers"};
+				default {hint "Something went wrong";};
+			};
+		};
+		if (_rand == 2)then{
+			_color = "ColorBlue";
+			_object = InsP_aaGroup call BIS_fnc_selectRandom;
+			_distance = [1500,1000,750,750,500,500,250] call BIS_fnc_selectRandom;
+
+			_intelPos = [_object, _distance] call CBA_fnc_randPos;
+			_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
+			_marker setMarkerType "hd_join";
+			_marker setMarkerColor _color;
+			_marker setMarkerText (str(_distance) + "m");
+			_marker setMarkerSize [0.5,0.5];
+			[_marker, true] call CBA_fnc_setMarkerPersistent;
+
+			switch (str _object) do {
+				case (str (InsP_aaGroup select 0)): {aaGunAMarkers pushBack _marker; publicVariable "aaGunAMarkers"};
+				case (str (InsP_aaGroup select 1)): {aaGunBMarkers pushBack _marker; publicVariable "aaGunBMarkers"};
+				default {hint "Something went wrong";};
+			};
+		};
+		if (_rand == 3)then{
+			_color = "ColorYellow";
+			_object = InsP_iedGroup call BIS_fnc_selectRandom;
+			_distance = [100,200] call BIS_fnc_selectRandom;
+
+			_intelPos = [_object, _distance] call CBA_fnc_randPos;
+			_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
+			_marker setMarkerType "hd_join";
+			_marker setMarkerColor _color;
+			_marker setMarkerText (str(_distance) + "m");
+			_marker setMarkerSize [0.5,0.5];
+			[_marker, true] call CBA_fnc_setMarkerPersistent;
 		};
 	}else{
 		switch (True) do {

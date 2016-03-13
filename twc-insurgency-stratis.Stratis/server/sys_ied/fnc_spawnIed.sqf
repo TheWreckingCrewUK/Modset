@@ -46,3 +46,6 @@ _trigger setTriggerStatements [
 // Make trigger and object known to each other
 _trigger setVariable ["InsP_ied", _ied, true];
 _ied setVariable ["InsP_trigger", _trigger, true];
+
+InsP_iedGroup pushback _ied;
+publicVariable "InsP_iedGroup";
