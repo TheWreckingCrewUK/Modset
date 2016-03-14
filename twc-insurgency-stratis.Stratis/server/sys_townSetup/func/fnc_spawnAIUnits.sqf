@@ -15,6 +15,6 @@ if (_waves < 1) then {
 };
 for "_i" from 1 to _waves do {
 	_pos = [getMarkerPos _marker,_groupradius] call SHK_pos;
-	_groupSpawned = [_pos, East, ["CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AKM"]] call BIS_fnc_spawnGroup;
+	_groupSpawned = [_pos, East, townSquadWave] call BIS_fnc_spawnGroup;
     [_groupSpawned, (_marker), 40] call CBA_fnc_taskAttack;	
 };

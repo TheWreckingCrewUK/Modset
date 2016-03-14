@@ -1,3 +1,5 @@
+#include "defines.sqf";
+
 InsP_fnc_deadCache = compile preProcessFileLineNumbers "server\sys_cache\fnc_deadCache.sqf";
 InsP_fnc_deadAAGun = compile preProcessFileLineNumbers "server\sys_aaGun\fnc_deadAAGun.sqf";
 
@@ -36,6 +38,10 @@ if (isNil "DeadInsurgents") then {
 if (isNil "InsP_iedGroup") then {
 	InsP_iedGroup = [];
 	publicVariable "InsP_iedGroup";
+};
+if (isNil "InsP_iedMarkerGroup") then {
+	InsP_iedMarkerGroup = [];
+	publicVariable "InsP_iedMarkerGroup";
 };
 
 if (isNil "cacheAMarkers") then {

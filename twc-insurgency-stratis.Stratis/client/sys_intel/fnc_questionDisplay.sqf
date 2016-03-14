@@ -1,4 +1,4 @@
-_randNumber = floor(random 4);
+_randNumber = floor(random 3);
 _removeQuestioning = cursorObject; //CursorObject is a scripting command not a variable like sqf highlighting will make you believe.
 if (typeOf _removeQuestioning != "C_Man_1") then 
 {

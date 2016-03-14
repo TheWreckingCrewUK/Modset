@@ -4,19 +4,17 @@ Not to be used without consent from TWC or WiredTiger
 
 if (isNil "InsP_cacheGroup") then {
 
-	_cacheBoxType = "Box_FIA_Wps_F";
-
-	cacheBoxA = _cacheBoxType createVehicle [7065, 5917, 22];
+	cacheBoxA = cacheBoxType createVehicle [7065, 5917, 22];
 	[cacheBoxA]execVM "client\sys_humanCiv\arsenal.sqf";
 	_cacheADeath = cacheBoxA addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxA"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxA";
 
-	cacheBoxB = _cacheBoxType createVehicle [7065, 5912, 22];
+	cacheBoxB = cacheBoxType createVehicle [7065, 5912, 22];
 	[cacheBoxB]execVM "client\sys_humanCiv\arsenal.sqf";
 	_cacheADeath = cacheBoxB addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxB"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxB";
 
-	cacheBoxC = _cacheBoxType createVehicle [7075, 5912, 22];
+	cacheBoxC = cacheBoxType createVehicle [7075, 5912, 22];
 	[cacheBoxC]execVM "client\sys_humanCiv\arsenal.sqf";
 	_cacheADeath = cacheBoxC addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxC"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxC";
@@ -44,7 +42,7 @@ if (isNil "InsP_cacheGroup") then {
 				_ranNum = floor(random _c);
 				_x setPos (_house buildingPos _ranNum);
 				sleep 1;
-				_cacheGroup = [[(getPosATL _x select 0)+random 50, (getPosATL _x select 1)+random 50,0], EAST, (configfile >> "CfgGroups" >> "Indep" >> "CUP_I_NAPA" >> "Infantry" >> "CUP_I_NAPA_InfSquad")] call BIS_fnc_spawnGroup;
+				_cacheGroup = [[(getPosATL _x select 0)+random 50, (getPosATL _x select 1)+random 50,0], EAST, (cacheDefenseSquad)] call BIS_fnc_spawnGroup;
 				[_cacheGroup, getPosATL _x, 100, 2, true] call CBA_fnc_taskDefend;
 			};
 			sleep 0.25;

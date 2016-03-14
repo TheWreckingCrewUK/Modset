@@ -7,13 +7,12 @@ _spawnRadius = _this select 1;
 _amountToSpawn = _this select 2;
 
 _vehicle = 0;
-_vehicleList = ["C_Offroad_01_F", "C_SUV_01_F", "C_Quadbike_01_F"];
 
 while {_vehicle < _amountToSpawn} do {
 	_vehiclePos = [_spawnMarker, _spawnRadius] call CBA_fnc_randPos;
 	
 	if (_vehiclePos distance (nearestBuilding _vehiclePos) > 5 && _vehiclePos distance (nearestObject _vehiclePos) > 5) then {
-		_selectVehicle = _vehicleList select (floor(random(count _vehicleList)));
+		_selectVehicle = vehicleList select (floor(random(count vehicleList)));
 		_newVehicle = _selectVehicle createVehicle _vehiclePos;
 		_newVehicle setDir (random 360);
 		_vehicle = _vehicle + 1;

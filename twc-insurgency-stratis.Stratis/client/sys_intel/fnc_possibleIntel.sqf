@@ -18,12 +18,20 @@ if (_civilianQuestioned in nonQuestionableList) then {
 			case (floor InsP_enemyMorale >= 3):{hintSilent "I believe they are somewhere around here. Good luck."};
 			default {hintSilent "For some reson this Civilian doesn't know the morale status. Please inform management of this bug."};
 		};
-		_rand = (floor (random 100));
-		if (_rand == 1)then{
+		_rand = (floor (random 4));
+		if (_rand <= 1)then{
 			_color = "ColorOrange";
 			_object = InsP_cacheGroup call BIS_fnc_selectRandom;
-			_distance = [1500,1000,750,750,500,500,250] call BIS_fnc_selectRandom;
-
+			switch (True) do {
+				case (floor InsP_enemyMorale == -3):{_distance = [1500,1000] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale == -2):{_distance = [1500,1000] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale == -1):{_distance = [1500,1000,750] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale == 0):{_distance = [1000,750,750,500] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale == 1):{_distance = [750,750,500,500,250] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale == 2):{_distance = [750,500,500,250] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale >= 3):{_distance = [500,500,250] call BIS_fnc_selectRandom};
+				default {hintSilent "Something went wrong with the cache distance"};
+			};
 			_intelPos = [_object, _distance] call CBA_fnc_randPos;
 			_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
 			_marker setMarkerType "hd_join";
@@ -42,8 +50,16 @@ if (_civilianQuestioned in nonQuestionableList) then {
 		if (_rand == 2)then{
 			_color = "ColorBlue";
 			_object = InsP_aaGroup call BIS_fnc_selectRandom;
-			_distance = [1500,1000,750,750,500,500,250] call BIS_fnc_selectRandom;
-
+			switch (True) do {
+				case (floor InsP_enemyMorale == -3):{_distance = [1500,1000] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale == -2):{_distance = [1500,1000] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale == -1):{_distance = [1500,1000,750] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale == 0):{_distance = [1000,750,750,500] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale == 1):{_distance = [750,750,500,500,250] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale == 2):{_distance = [750,500,500,250] call BIS_fnc_selectRandom};
+				case (floor InsP_enemyMorale >= 3):{_distance = [500,500,250] call BIS_fnc_selectRandom};
+				default {hintSilent "Something went wrong with the AA Gun distance"};
+			};
 			_intelPos = [_object, _distance] call CBA_fnc_randPos;
 			_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
 			_marker setMarkerType "hd_join";
@@ -58,7 +74,7 @@ if (_civilianQuestioned in nonQuestionableList) then {
 				default {hint "Something went wrong";};
 			};
 		};
-		if (_rand == 3)then{
+		if (_rand >= 3)then{
 			_color = "ColorYellow";
 			_object = InsP_iedGroup call BIS_fnc_selectRandom;
 			_distance = [100,200] call BIS_fnc_selectRandom;
