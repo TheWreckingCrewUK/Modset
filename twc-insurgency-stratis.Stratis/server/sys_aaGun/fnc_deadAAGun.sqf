@@ -4,11 +4,11 @@ params ["_deadAAGun"];
 
 _intelPos = getPosATL _deadAAGun;
 
-InsP_aagDestroyed = InsP_aagDestroyed + 1;
+InsP_aagDestroyed = InsP_aagDestroyed - .1;
 publicVariable "InsP_aagDestroyed";
 
-InsP_enemyMorale = InsP_enemyMorale + .35;
-publicVariable "InsP_enemyMorale";
+InsP_civTrust = InsP_civTrust + .35;
+publicVariable "InsP_civTrust";
 
 InsP_aaGroup = InsP_aaGroup - [_deadAAGun];
 publicVariable "InsP_aaGroup";

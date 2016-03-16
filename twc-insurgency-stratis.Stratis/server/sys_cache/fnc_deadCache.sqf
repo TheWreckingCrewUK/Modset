@@ -4,8 +4,11 @@ _intelPos = (getPosATL _deadCache);
 InsP_ammoCaches = InsP_ammoCaches + 1;
 publicVariable "InsP_ammoCaches";
 
-InsP_enemyMorale = InsP_enemyMorale + .75;
+InsP_enemyMorale = InsP_enemyMorale - .25;
 publicVariable "InsP_enemyMorale";
+
+InsP_civTrust = InsP_civTrust + .25;
+publicVariable "InsP_civTrust";
 
 InsP_cacheGroup = InsP_cacheGroup - [_deadCache];
 publicVariable "InsP_cacheGroup";

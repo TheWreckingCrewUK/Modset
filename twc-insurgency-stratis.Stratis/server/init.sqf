@@ -25,6 +25,11 @@ if (isNil "InsP_enemyMorale") then {
 	publicVariable "InsP_enemyMorale";
 };
 
+if(isNil "InsP_civTrust") then{
+	InsP_civTrust = 0;
+	publicVariable "InsP_civTrust";
+};
+
 if (isNil "InsP_bluDeath") then {
 	InsP_bluDeath = 0;
 	publicVariable "InsP_bluDeath";

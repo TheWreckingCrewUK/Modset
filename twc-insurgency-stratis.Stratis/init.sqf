@@ -1,13 +1,3 @@
-/*_loc = nearestLocations [getPosATL player, ["NameVillage","NameCity","NameCityCapital"], 25000];
-{
-
-_marker = createMarker [str random 10000,getPos _x];
-_marker setMarkerShape "ICON";
-_marker setMarkerType "hd_dot";
-
-}forEach _loc;
-
-*/
 "iedRestrictionZone" setMarkerAlpha 0;
 
 [] execVM "client\slingLoading\sa_ropes.sqf";
@@ -75,9 +65,9 @@ _defuseAction = [
                 deleteVehicle _trigger;
                 deleteVehicle _ied;
                 InsP_iedDestroyed = InsP_iedDestroyed + 1;
-                InsP_enemyMorale = InsP_enemyMorale + 0.1;
+                InsP_civTrust = InsP_civTrust + 0.1;
                 publicVariable "InsP_iedDestroyed";
-                publicVariable "InsP_enemyMorale";
+                publicVariable "InsP_civTrust";
 				_markerstr = createMarker [str random 10000, player];
 				_markerstr setMarkerShape "ICON";
 				_markerstr setMarkerType "mil_triangle";
@@ -123,7 +113,7 @@ if ((str player) in _specialSlots)then{
 		_pilots = ["p21", "p22"];
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
 		_NumPlayersForPilot = 0;
-		_NumPlayersForCiv = 5;
+		_NumPlayersForCiv = -5;
 
 		if(isPlayer p21) then {_NumPlayersForPilot = _NumPlayersForPilot + 5};
 		if(isPlayer p22) then {_NumPlayersForPilot = _NumPlayersForPilot + 5};

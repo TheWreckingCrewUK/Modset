@@ -17,6 +17,7 @@ if (InsP_playerCiv) then {
 			InsP_enemyMorale = InsP_enemyMorale - .5; publicVariable "InsP_enemyMorale";
 		}else{
 			InsP_enemyMorale = InsP_enemyMorale - .1; publicVariable "InsP_enemyMorale";
+			InsP_civTrust = InsP_civTrust + .1; publicVariable "InsP_enemyMorale";
 		};
 	}];
 	execVM "client\sys_blufor\bluWeaponRestrict.sqf";

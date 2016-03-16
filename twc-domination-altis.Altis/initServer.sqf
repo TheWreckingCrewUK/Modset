@@ -1,6 +1,7 @@
 call compile preprocessfilelinenumbers "SHK_pos\shk_pos_init.sqf";
 [] call compile preprocessfilelinenumbers "server\task\shk_taskmaster.sqf";
 TaskIncrease = 0;
+AOlimit = 3;
 
 TWC_fnc_AO = compile preprocessfilelinenumbers "server\func\fnc_AO.sqf";
 TWC_fnc_GlobalChat = compile preprocessfilelinenumbers "server\func\fnc_GlobalChat.sqf";

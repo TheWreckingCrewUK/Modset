@@ -1,4 +1,5 @@
 execVM "client\restrict\init.sqf";
+execVM "client\cleanup\gear.sqf";
 g_class = "";
 g_group = "";
 g_unit = "";
@@ -247,16 +248,14 @@ if (!isNil "p31" && {player == p31}) then {
 	g_group = "0";
 	g_unit = "031";
 	g_name = "Wildcat Pilot";
-	g_radio_channel = 4;
-	g_radio = "ACRE_PRC148";
+	g_radio = "";
 };
 if (!isNil "p32" && {player == p32}) then {
     g_class = "BLK_PLT";
 	g_group = "0";
 	g_unit = "032";
 	g_name = "BlackHawk Pilot";
-	g_radio_channel = 4;
-	g_radio = "ACRE_PRC148";
+	g_radio = "";
 };
 
 g_p1 = "";

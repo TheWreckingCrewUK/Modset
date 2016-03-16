@@ -63,7 +63,7 @@ if (isServer) then{
 
 if (isServer) then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,500],[0,110],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,400],[0,110],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
 	_AOBunkerOneMarker = createMarker [ _bunkerone, _pos];
 	_AOBunkerOneMarker setmarkershape "ICON";
 	_AOBunkerOneMarker setmarkertype "n_unknown";
@@ -91,7 +91,7 @@ if (isServer) then {
 if (isServer) then {
 
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,500],[120,230],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,400],[120,230],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
 	_AOBunkerTwoMarker = createMarker [ _bunkertwo, _pos];
 	_AOBunkerTwoMarker setmarkershape "ICON";
 	_AOBunkerTwoMarker setmarkertype "n_unknown";
@@ -123,7 +123,7 @@ if (isServer) then {
 if (isServer) then {
 
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,500],[240,350],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[100,400],[240,350],0,[1,50],"Land_BagBunker_Large_F"] call SHK_pos;
 	_AOBunkerThreeMarker = createMarker [ _bunkerThree, _pos];
 	_AOBunkerThreeMarker setmarkershape "ICON";
 	_AOBunkerThreeMarker setmarkertype "n_unknown";
@@ -215,4 +215,5 @@ waituntil {AObunkercount == 3 and RadioTowerCheck == 1};
   sleep 5;
   { deleteVehicle _x } forEach allDead;
   sleep 10;
+  AOlimit = AOlimit - 1;
   execVm "server\ao\RandomArray.sqf";
