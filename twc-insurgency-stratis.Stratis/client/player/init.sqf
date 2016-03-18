@@ -214,6 +214,34 @@ if (!isNil "P24" && {player == P24}) then {
 	g_group = "1";
 	g_unit = "132";
 };
+
+if (!isNil "P25" && {player == P25}) then {
+    g_class = "ARMR_CO";
+	g_group = "1";
+	g_unit = "133";
+	g_name = "Armour Crew Commander";
+	g_radio_channel = 7;
+	g_radio = "ACRE_PRC148";
+};
+
+if (!isNil "P26" && {player == P26}) then {
+    g_class = "ARMR_CREW";
+	g_group = "1";
+	g_unit = "134";
+	g_name = "Armour Crew";
+	g_radio_channel = 7;
+	g_radio = "ACRE_PRC148";
+};
+
+if (!isNil "P27" && {player == P27}) then {
+    g_class = "ARMR_CO";
+	g_group = "1";
+	g_unit = "135";
+	g_name = "Armour Crew";
+	g_radio_channel = 7;
+	g_radio = "ACRE_PRC148";
+};
+
 /*
 if (!isNil "P25" && {player == P25}) then {
     g_class = "ANA_MED";

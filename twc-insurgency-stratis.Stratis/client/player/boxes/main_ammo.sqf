@@ -214,6 +214,7 @@ if (g_class == "US_SL") then {
     _tmp_weapons =
     [
         ["CUP_arifle_M4A1",1],
+		["CUP_sgun_AA12",1],
 		["CUP_launch_M136",2],
 		["CUP_hgun_Colt1911",1]
 	];
@@ -221,6 +222,9 @@ if (g_class == "US_SL") then {
     [
 		["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",15],
+		["CUP_20Rnd_B_AA12_Pellets",10],
+		["CUP_20Rnd_B_AA12_74Slug",10],
+		["CUP_20Rnd_B_AA12_HE",10],
         ["CUP_7Rnd_45ACP_1911",15]
     ];
 	_tmp_items =
@@ -401,12 +405,15 @@ if (g_class == "US_SL") then {
         ["CUP_arifle_M16A4_Base",1],
 		["CUP_hgun_Colt1911",1],
 		["CUP_launch_M136",2],
+		["CUP_launch_Mk153Mod0",1],
 		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
     [
         ["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",10],
+		["CUP_SMAW_Spotting",5],
+		["CUP_SMAW_HEDP_M",5],
         ["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items =
@@ -417,6 +424,7 @@ if (g_class == "US_SL") then {
 		["CUP_optic_ACOG",1],
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_15",1],
+		["CUP_optic_SMAW_Scope",1],
 		["ACRE_PRC148",1]
 	];
 };
@@ -600,19 +608,19 @@ if (g_class == "ANA_SL") then {
 };
 
 //load avaible to armour commander only
- if (g_class == "ARMOUR") then {
+ if (g_class == "ARMR_CO") then {
     _tmp_weapons =
     [
-		["CUP_arifle_M4A1_desert",1]
+		["CUP_arifle_M16A4_Base",1],
+		["ACE_Vector",1]
 	];
 	_tmp_magazines =
 	[
-	["30Rnd_556x45_Stanag",15],
-	["30Rnd_556x45_Stanag_Tracer_Red",5]
+		["30Rnd_556x45_Stanag",15],
+		["30Rnd_556x45_Stanag_Tracer_Red",5]
     ];
 	_tmp_items =
 	[
-		["CUP_optic_CompM2_Desert",1],
 		["CUP_acc_ANPEQ_15",1],
         ["ACE_MapTools",1],
         ["ACE_fieldDressing",20],
@@ -622,10 +630,10 @@ if (g_class == "ANA_SL") then {
 };
 
 //load avaible to armor crew only
- if (g_class == "ARMOURCREW") then {
+ if (g_class == "ARMR_CREW") then {
     _tmp_weapons =
     [
-		["CUP_arifle_M4A1_desert",1],
+		["CUP_arifle_M16A4_Base",1],
 		["CUP_launch_M136",2]
 	];
 	_tmp_magazines =
@@ -634,7 +642,6 @@ if (g_class == "ANA_SL") then {
     ];
 	_tmp_items =
 	[
-		["CUP_optic_CompM2_Desert",1],
 		["CUP_acc_ANPEQ_15",1],
 		["ACE_MapTools",1],
         ["ACE_fieldDressing",20],

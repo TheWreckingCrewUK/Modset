@@ -26,7 +26,7 @@ for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_epinephrine";};
 for "_i" from 1 to 3 do {player addItemToBackpack "ACE_bloodIV";};
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-player addHeadgear "CUP_H_FR_ECH";
+player addHeadgear "CUP_H_USMC_Headset_HelmetWDL";
 
 comment "Add weapons";
 player addWeapon "CUP_arifle_M16A4_Base";

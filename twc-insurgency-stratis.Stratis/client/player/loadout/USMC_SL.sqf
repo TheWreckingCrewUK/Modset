@@ -26,7 +26,7 @@ for "_i" from 1 to 13 do {player addItemToBackpack "1Rnd_HE_Grenade_shell";};
 for "_i" from 1 to 3 do {player addItemToBackpack "UGL_FlareWhite_F";};
 for "_i" from 1 to 3 do {player addItemToBackpack "UGL_FlareGreen_F";};
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-player addHeadgear "CUP_H_FR_ECH";
+player addHeadgear "CUP_H_USMC_Headset_GoggleW_HelmetWDL";
 
 comment "Add weapons";
 player addWeapon "CUP_arifle_M16A4_GL";

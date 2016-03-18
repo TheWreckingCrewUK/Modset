@@ -20,5 +20,13 @@ if (_random < 50) then {
 	if (isServer) then {
 		_groupSpawn = [getMarkerPos _marker, East, townSpawn,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
 		[_groupSpawn] call CBA_fnc_TaskDefend;
+		{
+			_x addMPEventHandler ["MPKilled",{
+				if (side (_this select 1) == WEST) then{
+					InsP_enemyMorale = InsP_enemyMorale + 0.05; publicVariable "InsP_enemyMorale";
+				};
+			}];
+		}forEach units _groupSpawn;
 	};
 };
+

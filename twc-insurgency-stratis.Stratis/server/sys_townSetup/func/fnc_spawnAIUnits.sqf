@@ -17,4 +17,11 @@ for "_i" from 1 to _waves do {
 	_pos = [getMarkerPos _marker,_groupradius] call SHK_pos;
 	_groupSpawned = [_pos, East, townSquadWave] call BIS_fnc_spawnGroup;
     [_groupSpawned, (_marker), 40] call CBA_fnc_taskAttack;	
+	{
+		_x addMPEventHandler ["MPKilled",{
+			if (side (_this select 1) == WEST) then{
+				InsP_enemyMorale = InsP_enemyMorale + 0.05; publicVariable "InsP_enemyMorale";
+			};
+		}];
+	}forEach units _groupSpawn;
 };

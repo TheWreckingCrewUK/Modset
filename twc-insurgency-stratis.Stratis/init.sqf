@@ -101,7 +101,7 @@ titleFadeOut 7;
 sleep 5;
 */
 
-_specialSlots = ["p21","p22","humanCiv1","humanCiv2","humanCiv3"];
+_specialSlots = ["p21","p22","p25","p26","p27","humanCiv1","humanCiv2","humanCiv3"];
 
 if ((str player) in _specialSlots)then{
 
@@ -111,9 +111,11 @@ if ((str player) in _specialSlots)then{
 
 	if((_UID) != "_SP_PLAYER_")then{	
 		_pilots = ["p21", "p22"];
+		_armorCrew = ["p25","p26","p27"];
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
 		_NumPlayersForPilot = 0;
-		_NumPlayersForCiv = -5;
+		_NumPlayersForCiv = 5;
+		_numPlayersForArmour = 10;
 
 		if(isPlayer p21) then {_NumPlayersForPilot = _NumPlayersForPilot + 5};
 		if(isPlayer p22) then {_NumPlayersForPilot = _NumPlayersForPilot + 5};
@@ -123,6 +125,10 @@ if ((str player) in _specialSlots)then{
 		if(isPlayer humanCiv3) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
 	
 		if ((str player) in _pilots && (count playableUnits) < _NumPlayersForPilot && !isPlayer p21) then {
+			["End2", false, 0] call BIS_fnc_endMission;
+		};
+		
+		if ((str player) in _armorCrew && (count playableUnits) < _numPlayersForArmour) then{
 			["End2", false, 0] call BIS_fnc_endMission;
 		};
 

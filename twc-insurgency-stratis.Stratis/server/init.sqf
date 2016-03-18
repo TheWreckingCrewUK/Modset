@@ -75,3 +75,5 @@ if (isNil "aaGunAMarkers") then {
 #include "sys_smallTown\init.sqf";
 
 #include "aiFix\aiFix.sqf";
+
+#include "sys_buildings\init.sqf";
