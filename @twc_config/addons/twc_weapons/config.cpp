@@ -193,14 +193,14 @@ class CfgWeapons
 	class UK3CB_BAF_L86A1:UK3CB_BAF_L86A2
 	{
 		displayName = "L86A1";
-		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
+		ACE_Overheating_JamChance[] = {0, 0.08, 0.12, 0.25};
 		author="Jayman";
 	};
 	class UK3CB_BAF_L86A1_SUSAT3D:UK3CB_BAF_L86A2
 	{
 		scope = 1;
 		displayName = "L86A1";
-		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
+		ACE_Overheating_JamChance[] = {0, 0.08, 0.12, 0.25};
 		author="Jayman";
 		class LinkedItems
 		{
@@ -214,14 +214,14 @@ class CfgWeapons
 	class UK3CB_BAF_L85A1:UK3CB_BAF_L85A2
 	{
 		displayName = "L85A1";
-		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
+		ACE_Overheating_JamChance[] = {0, 0.08, 0.12, 0.25};
 		author="Jayman";
 	};
 	class UK3CB_BAF_L85A1_SUSAT3D:UK3CB_BAF_L85A2
 	{
 		scope = 1;
 		displayName = "L85A1";
-		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
+		ACE_Overheating_JamChance[] = {0, 0.08, 0.12, 0.25};
 		author="Jayman";
 		class LinkedItems
 		{
@@ -236,7 +236,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		displayName = "L85A1 W/ L123A2 Ladder";
-		ACE_Overheating_JamChance[] = {0, 0.20, 0.25, 0.50};
+		ACE_Overheating_JamChance[] = {0, 0.08, 0.12, 0.25};
 		author="Jayman";
 		class LinkedItems
 		{
