@@ -5,17 +5,14 @@ Not to be used without consent from TWC or WiredTiger
 if (isNil "InsP_cacheGroup") then {
 
 	cacheBoxA = cacheBoxType createVehicle [7065, 5917, 22];
-	[cacheBoxA]execVM "client\sys_humanCiv\arsenal.sqf";
 	_cacheADeath = cacheBoxA addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxA"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxA";
 
 	cacheBoxB = cacheBoxType createVehicle [7065, 5912, 22];
-	[cacheBoxB]execVM "client\sys_humanCiv\arsenal.sqf";
 	_cacheADeath = cacheBoxB addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxB"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxB";
 
 	cacheBoxC = cacheBoxType createVehicle [7075, 5912, 22];
-	[cacheBoxC]execVM "client\sys_humanCiv\arsenal.sqf";
 	_cacheADeath = cacheBoxC addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxC"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxC";
 

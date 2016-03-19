@@ -109,7 +109,7 @@ if ((str player) in _specialSlots)then{
 	_UID = getPlayerUID player;
 
 
-	if((_UID) != "_SP_PLAYER_")then{	
+	if((_UID) != "_SP_PLAYER_" && (_UID) != "76561198070630639")then{	
 		_pilots = ["p21", "p22", "p23"];
 		_armourCrew = ["p25","p26","p27"];
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];

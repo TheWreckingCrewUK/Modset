@@ -23,7 +23,7 @@ if (_random < 50) then {
 		{
 			_x addMPEventHandler ["MPKilled",{
 				if (side (_this select 1) == WEST) then{
-					InsP_enemyMorale = InsP_enemyMorale + 0.05; publicVariable "InsP_enemyMorale";
+					InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
 				};
 			}];
 		}forEach units _groupSpawn;

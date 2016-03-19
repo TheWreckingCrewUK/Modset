@@ -39,6 +39,7 @@ while {true} do {
 	if(name player in InsP_playersKilledAsCivs) then {
 		["End3", false, 0] call BIS_fnc_endMission;
 	};
+	{[_x] execVM "client\sys_humanCiv\arsenal.sqf";}forEach InsP_cacheGroup;
     waitUntil {!alive player};
     if (faction player != "CIV_F") exitWith {};
     waitUntil {alive player};
