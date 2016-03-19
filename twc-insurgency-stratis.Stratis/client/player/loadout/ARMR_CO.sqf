@@ -28,7 +28,7 @@ for "_i" from 1 to 2 do {player addItemToBackpack "ACE_HandFlare_White";};
 for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShellBlue";};
 for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShellGreen";};
 for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShellRed";};
-player addHeadgear "CUP_H_USMC_Crew_Helmet";
+player addHeadgear "CUP_H_FR_ECH";
 player addGoggles "G_Aviator";
 
 comment "Add weapons";

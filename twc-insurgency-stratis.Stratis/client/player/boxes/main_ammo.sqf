@@ -64,6 +64,7 @@ if (g_class == "BAF_SL") then {
     _tmp_weapons =
     [
 		["CUP_arifle_L85A2",1],
+		["CUP_sgun_M1014",1],
 		["CUP_hgun_Glock17",1],
 		["CUP_launch_M136",2]
 	];
@@ -71,6 +72,8 @@ if (g_class == "BAF_SL") then {
     [								
 		["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",50],
+		["CUP_8Rnd_B_Beneli_74Slug",10],
+		["CUP_8Rnd_B_Beneli_74Pellets",10],
         ["CUP_17Rnd_9x19_glock17",15]
 	];
 	_tmp_items = 
@@ -224,7 +227,6 @@ if (g_class == "US_SL") then {
 		["30Rnd_556x45_Stanag_Tracer_Red",15],
 		["CUP_20Rnd_B_AA12_Pellets",10],
 		["CUP_20Rnd_B_AA12_74Slug",10],
-		["CUP_20Rnd_B_AA12_HE",10],
         ["CUP_7Rnd_45ACP_1911",15]
     ];
 	_tmp_items =
@@ -403,6 +405,7 @@ if (g_class == "US_SL") then {
     _tmp_weapons =
     [
         ["CUP_arifle_M16A4_Base",1],
+		["CUP_sgun_M1014",1],
 		["CUP_hgun_Colt1911",1],
 		["CUP_launch_M136",2],
 		["CUP_launch_Mk153Mod0",1],
@@ -412,6 +415,8 @@ if (g_class == "US_SL") then {
     [
         ["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",10],
+		["CUP_8Rnd_B_Beneli_74Slug",10],
+		["CUP_8Rnd_B_Beneli_74Pellets",10],
 		["CUP_SMAW_Spotting",5],
 		["CUP_SMAW_HEDP_M",5],
         ["CUP_7Rnd_45ACP_1911",15]
@@ -589,6 +594,25 @@ if (g_class == "ANA_SL") then {
  
  //load availible to pilots only
  if (g_class == "PLT") then {
+    _tmp_weapons =
+    [
+		["CUP_hgun_Colt1911",1]
+	];
+	_tmp_magazines =
+    [
+		["CUP_7Rnd_45ACP_1911",15]
+    ];
+	_tmp_items =
+	[
+		["ACE_DAGR",1],
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["ACRE_PRC148",1]
+	];
+};
+ //load availible to pilot Crew only
+ if (g_class == "PLT_CREW") then {
     _tmp_weapons =
     [
 		["CUP_hgun_Colt1911",1]

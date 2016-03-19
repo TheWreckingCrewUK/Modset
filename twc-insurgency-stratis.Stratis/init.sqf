@@ -101,7 +101,7 @@ titleFadeOut 7;
 sleep 5;
 */
 
-_specialSlots = ["p21","p22","p25","p26","p27","humanCiv1","humanCiv2","humanCiv3"];
+_specialSlots = ["p21","p22","p23","p25","p26","p27","humanCiv1","humanCiv2","humanCiv3"];
 
 if ((str player) in _specialSlots)then{
 
@@ -110,30 +110,32 @@ if ((str player) in _specialSlots)then{
 
 
 	if((_UID) != "_SP_PLAYER_")then{	
-		_pilots = ["p21", "p22"];
-		_armorCrew = ["p25","p26","p27"];
+		_pilots = ["p21", "p22", "p23"];
+		_armourCrew = ["p25","p26","p27"];
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
-		_NumPlayersForPilot = 0;
-		_NumPlayersForCiv = 5;
-		_numPlayersForArmour = 10;
-
-		if(isPlayer p21) then {_NumPlayersForPilot = _NumPlayersForPilot + 5};
-		if(isPlayer p22) then {_NumPlayersForPilot = _NumPlayersForPilot + 5};
+		_numPlayers = switch (str player) do{
+			case "p21": {5};
+			case "p22": {10};
+			case "p23": {15};
+			case "p25";
+			case "p26";
+			case "p27": {15};
+			case "humanCiv1": {10};
+			case "humanCiv2": {15};
+			case "humanCiv3": {20};
+			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
+		};
 		
-		if(isPlayer humanCiv1) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
-		if(isPlayer humanCiv2) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
-		if(isPlayer humanCiv3) then{ _NumPlayersForCiv = _NumPlayersForCiv + 5};
-	
-		if ((str player) in _pilots && (count playableUnits) < _NumPlayersForPilot && !isPlayer p21) then {
+		if ((str player) in _pilots && (count playableUnits) < _numPlayers) then {
 			["End2", false, 0] call BIS_fnc_endMission;
 		};
 		
-		if ((str player) in _armorCrew && (count playableUnits) < _numPlayersForArmour) then{
-			["End2", false, 0] call BIS_fnc_endMission;
+		if ((str player) in _armourCrew && (count playableUnits) < _numPlayers) then{
+			["End6", false, 0] call BIS_fnc_endMission;
 		};
 
 		if ((str player) in _humancivs) then{
-			if ((count playableUnits) < _NumPlayersForCiv || !(_UID in _memberIDArray) || (_UID in InsP_playersKilledAsCivs)) then {
+			if ((count playableUnits) < _numPlayers || !(_UID in _memberIDArray)) then{
 				["End3", false, 0] call BIS_fnc_endMission;
 			};
 		};

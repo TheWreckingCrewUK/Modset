@@ -27,7 +27,7 @@ if (!isNil "P1" && {player == P1}) then {
 	g_group = "0";
 	g_unit = "000";
 	g_name = "Alpha Section Leader";
-	g_radio_channel = 2;
+	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
 };
 
@@ -36,7 +36,7 @@ if (!isNil "P2" && {player == P2}) then {
 	g_group = "0";
 	g_unit = "010";
 	g_name = "Alpha Rifleman";
-	g_radio_channel = 2;
+	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
 };
 
@@ -45,7 +45,7 @@ if (!isNil "P3" && {player == P3}) then {
 	g_group = "0";
 	g_unit = "011";
 	g_name = "Alpha Grenadier";
-	g_radio_channel = 2;
+	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
 };
 
@@ -54,7 +54,7 @@ if (!isNil "P4" && {player == P4}) then {
 	g_group = "0";
 	g_unit = "012";
 	g_name = "Alpha Automatic Rifleman";
-	g_radio_channel = 2;
+	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
 };
 
@@ -63,7 +63,7 @@ if (!isNil "P5" && {player == P5}) then {
 	g_group = "0";
 	g_unit = "013";
 	g_name = "Alpha Medic";
-	g_radio_channel = 2;
+	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
 };
 if (!isNil "P6" && {player == P6}) then {
@@ -116,7 +116,7 @@ if (!isNil "P11" && {player == P11}) then {
 	g_group = "9";
 	g_unit = "801";
 	g_name = "Charlie Squad Leader";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 };
 
@@ -125,7 +125,7 @@ if (!isNil "P12" && {player == P12}) then {
 	g_group = "9";
 	g_unit = "802";
 	g_name = "Charlie Rifleman";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 };
 
@@ -134,7 +134,7 @@ if (!isNil "P13" && {player == P13}) then {
 	g_group = "1";
 	g_unit = "100";
 	g_name = "Charlie Grenadier";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 };
 
@@ -143,7 +143,7 @@ if (!isNil "P14" && {player == P14}) then {
 	g_group = "1";
 	g_unit = "110";
 	g_name = "Charlie Automatic Rifleman";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 };
 
@@ -152,7 +152,7 @@ if (!isNil "P15" && {player == P15}) then {
 	g_group = "1";
 	g_unit = "111";
 	g_name = "Charlie Medic";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 };
 
@@ -195,24 +195,32 @@ if (!isNil "P21" && {player == P21}) then {
     g_class = "PLT";
 	g_group = "1";
 	g_unit = "123";
+	g_radio = "";
+	g_name = "Blackhawk Pilot";
 };
 
 if (!isNil "P22" && {player == P22}) then {
-    g_class = "PLT";
+    g_class = "PLT_CREW";
 	g_group = "1";
 	g_unit = "130";
+	g_radio = "";
+	g_name = "Crew Chief";
 };
 
 if (!isNil "P23" && {player == P23}) then {
-    g_class = "PLT";
+    g_class = "PLT_CREW";
 	g_group = "1";
 	g_unit = "131";
+	g_radio = "";
+	g_name = "Door Gunner";
 };
 
 if (!isNil "P24" && {player == P24}) then {
-    g_class = "PLT";
+    g_class = "PLT_CREW";
 	g_group = "1";
 	g_unit = "132";
+	g_radio = "";
+	g_name = "Crew Chief";
 };
 
 if (!isNil "P25" && {player == P25}) then {
@@ -220,7 +228,7 @@ if (!isNil "P25" && {player == P25}) then {
 	g_group = "1";
 	g_unit = "133";
 	g_name = "Armour Crew Commander";
-	g_radio_channel = 7;
+	g_radio_channel = 5;
 	g_radio = "ACRE_PRC148";
 };
 
@@ -229,16 +237,16 @@ if (!isNil "P26" && {player == P26}) then {
 	g_group = "1";
 	g_unit = "134";
 	g_name = "Armour Crew";
-	g_radio_channel = 7;
+	g_radio_channel = 5;
 	g_radio = "ACRE_PRC148";
 };
 
 if (!isNil "P27" && {player == P27}) then {
-    g_class = "ARMR_CO";
+    g_class = "ARMR_CREW";
 	g_group = "1";
 	g_unit = "135";
 	g_name = "Armour Crew";
-	g_radio_channel = 7;
+	g_radio_channel = 5;
 	g_radio = "ACRE_PRC148";
 };
 

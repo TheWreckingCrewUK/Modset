@@ -4,6 +4,10 @@ true spawn {
     _blackhawkpilot = ["B_Pilot_F"];
     _blackhawk = ["CUP_B_UH60M_US"];
 	_crew = ["B_helicrew_F"];
+	
+	//armour crew
+	_armourCrew = ["B_crew_f"];
+	_ifv = ["CUP_B_LAV25_USMC"];
 
 
 	//Enemy Vehicles
@@ -17,6 +21,7 @@ true spawn {
     //Assigning units to variables used below
     _iamblackhawkpilot = ({typeOf player == _x} count _blackhawkpilot) > 0;
     _iamcrew = ({typeOf player == _x} count _crew) > 0;
+	_iamarmourcrew = ({typeOf player == _x} count _armourcrew) > 0;
 
 	_blacklist = ({typeOf player == _x} count _crewblacklist) > 0;
     //While loop
@@ -31,7 +36,18 @@ true spawn {
 
 
 
-            //Vehicle Pilot Check for blackhawk
+            //Vehicle check for IFV
+            if(({typeOf _veh == _x} count _ifv) > 0 && !_iamarmourcrew) then {
+                //Forbidden seats: copilot, gunner, pilot
+                _forbidden =  [gunner _veh] + [driver _veh] + [commander _veh];
+                if(player in _forbidden) then {
+                    systemChat "You are not part of this vehicle crew!";
+                    player action ["getout", _veh];
+					player action ["eject", _veh];
+                };
+            };
+			
+			 //Vehicle Pilot Check for helicopter
             if(({typeOf _veh == _x} count _blackhawk) > 0 && !_iamblackhawkpilot && !_iamcrew) then {
                 //Forbidden seats: copilot, gunner, pilot
                 _forbidden =  [gunner _veh] + [driver _veh];

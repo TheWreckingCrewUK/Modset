@@ -36,6 +36,9 @@ while {true} do {
     cutText ["","BLACK IN",0];
 	for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 	for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
+	if(name player in InsP_playersKilledAsCivs) then {
+		["End3", false, 0] call BIS_fnc_endMission;
+	};
     waitUntil {!alive player};
     if (faction player != "CIV_F") exitWith {};
     waitUntil {alive player};

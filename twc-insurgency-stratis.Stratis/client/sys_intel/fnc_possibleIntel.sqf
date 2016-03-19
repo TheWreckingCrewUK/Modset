@@ -71,13 +71,13 @@ if (_civilianQuestioned in nonQuestionableList) then {
 		};
 	}else{
 		switch (True) do {
-			case (floor InsP_enemyMorale <= -3):{hintSilent "DEATH TO THE FOREIGN INVADERS!!"};
-			case (floor InsP_enemyMorale == -2):{hintSilent "Even if I did happen to know something I wouldn't tell you."};
-			case (floor InsP_enemyMorale == -1):{hintSilent "I can't help you."};
-			case (floor InsP_enemyMorale == 0):{hintSilent "I don't know anything."};
-			case (floor InsP_enemyMorale == 1):{hintSilent "Sorry, but I don't know anything."};
-			case (floor InsP_enemyMorale == 2):{hintSilent "I wish I could help, but I don't know anything."};
-			case (floor InsP_enemyMorale >= 3):{hintSilent "I really wish I could help you, but I don't know anything."};
+			case (floor InsP_civTrust <= -3):{hintSilent "DEATH TO THE FOREIGN INVADERS!!"};
+			case (floor InsP_civTrust == -2):{hintSilent "Even if I did happen to know something I wouldn't tell you."};
+			case (floor InsP_civTrust == -1):{hintSilent "I can't help you."};
+			case (floor InsP_civTrust == 0):{hintSilent "I don't know anything."};
+			case (floor InsP_civTrust == 1):{hintSilent "Sorry, but I don't know anything."};
+			case (floor InsP_civTrust == 2):{hintSilent "I wish I could help, but I don't know anything."};
+			case (floor InsP_civTrust >= 3):{hintSilent "I really wish I could help you, but I don't know anything."};
 			default {hintSilent "For some reson this Civilian doesn't know the morale status. Please inform management of this bug."};
 		};
 	};

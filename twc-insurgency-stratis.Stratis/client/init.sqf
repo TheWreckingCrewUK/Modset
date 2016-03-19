@@ -1,4 +1,3 @@
-
 waitUntil {!isNull player};
 waitUntil {player == player};
 
@@ -27,7 +26,7 @@ InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\sys_in
 [player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
 
 
-execVM "client\restrict\pilot.sqf";
+execVM "client\restrict\vehicles.sqf";
 execVM "client\restrict\base.sqf";
 execVM "client\cleanup\deadbodies.sqf";
 execVM "client\cleanup\gear.sqf";

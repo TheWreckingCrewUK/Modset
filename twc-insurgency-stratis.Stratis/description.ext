@@ -51,7 +51,7 @@ class CfgDebriefing
 	class End3
 	{
 		title = "You can not play as a human Civilian";
-		subtitle = "Member,Playercount 5 per Civ, Not died as Civ";
+		subtitle = "";
 		description = "Play as Blufor for now";
 		// pictureBackground = "";
 		// picture = "";
@@ -80,9 +80,9 @@ class CfgDebriefing
 
 	class End6
 	{
-		title = "You can not play as a human Civilian";
-		subtitle = "You must be a member, not have died as a civilian, and playercount must be high enough.";
-		description = "Play as Blufor for now";
+		title = "Armour Crew Unavailible";
+		subtitle = "";
+		description = "Play as general infantry for now";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};

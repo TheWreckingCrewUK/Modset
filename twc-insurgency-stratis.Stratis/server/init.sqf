@@ -1,7 +1,7 @@
 #include "defines.sqf";
 
 InsP_fnc_deadCache = compile preProcessFileLineNumbers "server\sys_cache\fnc_deadCache.sqf";
-InsP_fnc_deadAAGun = compile preProcessFileLineNumbers "server\sys_aaGun\fnc_deadAAGun.sqf";
+InsP_fnc_deadAAGun = compile preProcessFileLineNumbers "server\sys_aa\fnc_deadAAGun.sqf";
 
 TWC_fnc_GlobalChat = compile preProcessFileLineNumbers "server\functions\fnc_GlobalChat.sqf";
 
@@ -65,7 +65,7 @@ if (isNil "aaGunAMarkers") then {
 };
 
 #include "sys_cache\init.sqf";
-#include "sys_aaGun\init.sqf";
+#include "sys_aa\init.sqf";
 #include "sys_bluDeath\init.sqf";
 #include "sys_ied\init.sqf";
 

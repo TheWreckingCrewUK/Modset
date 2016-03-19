@@ -20,7 +20,7 @@ for "_i" from 1 to 3 do {player addItemToUniform "SmokeShell";};
 player addBackpack "B_AssaultPack_blk";
 player addItemToBackpack "ACRE_PRC117F";
 for "_i" from 1 to 4 do {player addItemToBackpack "30Rnd_556x45_Stanag";};
-player addHeadgear "H_PilotHelmetHeli_B";
+player addHeadgear "H_CrewHelmetHeli_B";
 player addGoggles "G_Aviator";
 
 comment "Add weapons";

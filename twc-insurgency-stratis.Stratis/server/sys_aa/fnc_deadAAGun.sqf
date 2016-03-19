@@ -16,6 +16,6 @@ publicVariable "InsP_aaGroup";
 _marker = createMarker [format ["%1", _deadAAGun], _intelPos];
 _marker setMarkerType "mil_triangle";
 _marker setMarkerColor "ColorBlue";
-_marker setMarkerText ("AA Destroyed");
+_marker setMarkerText ("AA Gun Destroyed");
 _marker setMarkerSize [0.6, 0.6];
 [_marker, true] call CBA_fnc_setMarkerPersistent;

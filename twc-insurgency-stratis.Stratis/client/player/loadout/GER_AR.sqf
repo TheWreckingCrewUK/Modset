@@ -19,16 +19,16 @@ player addItemToUniform "ACE_DAGR";
 player addItemToUniform "ACRE_PRC148";
 player addVest "CUP_V_B_GER_Carrier_Vest_3";
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-player addItemToVest "CUP_100Rnd_556x45_BetaCMag";
+player addItemToVest "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M";
 player addBackpack "CUP_B_GER_Pack_Flecktarn";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-for "_i" from 1 to 2 do {player addItemToBackpack "CUP_100Rnd_556x45_BetaCMag";};
-player addItemToBackpack "CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag";
+for "_i" from 1 to 3 do {player addItemToBackpack "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M";};
+player addItemToBackpack "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
 player addHeadgear "H_HelmetB_camo";
 
 comment "Add weapons";
-player addWeapon "CUP_arifle_MG36";
-player addPrimaryWeaponItem "CUP_optic_ACOG";
+player addWeapon "CUP_lmg_Mk48_wdl";
+player addPrimaryWeaponItem "CUP_optic_ElcanM145";
 player addWeapon "CUP_launch_M136";
 
 comment "Add items";

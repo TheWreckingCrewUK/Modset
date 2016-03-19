@@ -22,7 +22,6 @@ for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
 for "_i" from 1 to 2 do {player addItemToVest "CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1";};
 player addBackpack "B_Kitbag_cbr";
 for "_i" from 1 to 2 do {player addItemToBackpack "CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1";};
-for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {player addItemToBackpack "HandGrenade";};
 player addHeadgear "H_HelmetB_camo";
 

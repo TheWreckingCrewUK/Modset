@@ -1,4 +1,4 @@
 execVM "server\hc\init.sqf";
 
-InsP_playersKilledAsCivs = [""];
+InsP_playersKilledAsCivs = [];
 publicVariable "InsP_playersKilledAsCivs";
