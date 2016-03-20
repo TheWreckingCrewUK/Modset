@@ -12,7 +12,7 @@ civilianType = "C_man_1";
 AA_VEHICLE_TYPE = "CUP_I_DSHKM_NAPA";
 
 AATeams = 6;
-AATeam = ["CUP_I_GUE_Soldier_AA", "CUP_I_GUE_Soldier_AA"];
+AATeam = ["CUP_I_GUE_Soldier_AKM", "CUP_I_GUE_Soldier_AA", "CUP_I_GUE_Soldier_AA"];
 
 cacheBoxType = "Box_FIA_Wps_F";
 cacheDefenseSquad = configfile >> "CfgGroups" >> "Indep" >> "CUP_I_NAPA" >> "Infantry" >> "CUP_I_NAPA_InfSquad";

@@ -11,7 +11,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads";
+player forceAddUniform "CUP_U_B_FR_DirAction2";
 for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";

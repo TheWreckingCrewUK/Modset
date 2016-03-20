@@ -6,18 +6,18 @@
 * Author [TWC] jayman
 */
 
-["small_1",3,50] call twc_smallTownCiv;
-["small_2",3,50] call twc_smallTownCiv;
-["small_3",3,50] call twc_smallTownCiv;
-["small_4",3,50] call twc_smallTownCiv;
-["small_5",3,50] call twc_smallTownCiv;
-["small_6",3,50] call twc_smallTownCiv;
-["small_7",3,50] call twc_smallTownCiv;
-["small_8",3,50] call twc_smallTownCiv;
-["small_9",3,50] call twc_smallTownCiv;
-["small_10",3,50] call twc_smallTownCiv;
-["small_11",3,50] call twc_smallTownCiv;
-["small_12",3,50] call twc_smallTownCiv;
-["small_13",3,50] call twc_smallTownCiv;
-["small_14",3,50] call twc_smallTownCiv;
-["small_15",3,50] call twc_smallTownCiv;
+["small_1",floor (random 6),50] call twc_smallTownCiv;
+["small_2",floor (random 6),50] call twc_smallTownCiv;
+["small_3",floor (random 6),50] call twc_smallTownCiv;
+["small_4",floor (random 6),50] call twc_smallTownCiv;
+["small_5",floor (random 6),50] call twc_smallTownCiv;
+["small_6",floor (random 6),50] call twc_smallTownCiv;
+["small_7",floor (random 6),50] call twc_smallTownCiv;
+["small_8",floor (random 6),50] call twc_smallTownCiv;
+["small_9",floor (random 6),50] call twc_smallTownCiv;
+["small_10",floor (random 6),50] call twc_smallTownCiv;
+["small_11",floor (random 6),50] call twc_smallTownCiv;
+["small_12",floor (random 6),50] call twc_smallTownCiv;
+["small_13",floor (random 6),50] call twc_smallTownCiv;
+["small_14",floor (random 6),50] call twc_smallTownCiv;
+["small_15",floor (random 6),50] call twc_smallTownCiv;
