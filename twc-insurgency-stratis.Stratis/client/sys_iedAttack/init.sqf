@@ -1,1 +1,0 @@
-InsP_fnc_iedAttack = compile preprocessFileLineNumbers "client\sys_iedAttack\fn_iedAttack.sqf";

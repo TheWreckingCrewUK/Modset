@@ -8,8 +8,6 @@ if (_civilianQuestioned in nonQuestionableList) then {
 	publicVariable "nonQuestionableList";
 
 	if (_givenNumber == 0) then {
-		_distance = 750 - (floor InsP_civTrust) * 250;
-		if (_distance < 0) then {_distance = 250};
 		switch (True) do {
 			case (floor InsP_civTrust <= -3):{hintSilent "I hope they kill you on your way there!"};
 			case (floor InsP_civTrust == -2):{hintSilent "I'll mark a spot. Now LEAVE!"};
@@ -24,6 +22,7 @@ if (_civilianQuestioned in nonQuestionableList) then {
 		if (_rand <= 1)then{
 			_color = "ColorOrange";
 			_object = InsP_cacheGroup call BIS_fnc_selectRandom;
+			_distance = [250,500,500,750,750,1000,1000,1500] call BIS_fnc_selectRandom;
 			_intelPos = [_object, _distance] call CBA_fnc_randPos;
 			_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
 			_marker setMarkerType "hd_join";
@@ -42,6 +41,7 @@ if (_civilianQuestioned in nonQuestionableList) then {
 		if (_rand == 2)then{
 			_color = "ColorBlue";
 			_object = InsP_aaGroup call BIS_fnc_selectRandom;
+			_distance = [250,500,500,750,750,1000,1000,1500] call BIS_fnc_selectRandom;
 			_intelPos = [_object, _distance] call CBA_fnc_randPos;
 			_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
 			_marker setMarkerType "hd_join";
