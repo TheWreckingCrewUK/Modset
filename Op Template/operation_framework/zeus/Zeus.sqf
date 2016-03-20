@@ -8,15 +8,14 @@
 	
 //makes all units continuously available to Zeus (for respawning players and AI that's being spawned by a script.)
 while {true} do {
-		{	
-			_allcurators = allcurators;
-			_count = count _allCurators;
-			for "_i" from 0 to _count do {
-				_Curator = _allcurators Select _i;
-				_Curator addCuratorEditableObjects [[_x], true];
-				_Curator addCuratorEditableObjects [vehicles, true];
-			};
-		}forEach allUnits;
+			
+			
+				{
+					_Curator = _allcurators Select _i;
+					_x addCuratorEditableObjects [[allUnits], true];
+					_x addCuratorEditableObjects [vehicles, true];
+				}foreach allcurators;
+	
 	sleep 10;
 };
 
