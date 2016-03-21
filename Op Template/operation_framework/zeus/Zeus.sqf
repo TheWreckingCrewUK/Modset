@@ -15,6 +15,8 @@ while {true} do {
 					_x addCuratorEditableObjects [[allUnits], true];
 					_x addCuratorEditableObjects [vehicles, true];
 				}foreach allcurators;
+				_countAllUnits = count allunits;
+				waituntil {_CountAllUnits < count allunits};
 	
 	sleep 10;
 };
