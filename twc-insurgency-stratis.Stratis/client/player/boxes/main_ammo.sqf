@@ -674,6 +674,143 @@ if (g_class == "ANA_SL") then {
 	];
 };
 
+
+// load available to Section Commander only.
+if (g_class == "GER_SL") then {
+    _tmp_weapons =
+		[
+		["CUP_arifle_G36A",1],
+		["ACE_Vector",1],
+		["CUP_hgun_Glock17",1]
+    ];
+    _tmp_magazines =
+	[
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+        ["CUP_17Rnd_9x19_glock17",15]
+	];
+	_tmp_items = 
+	[
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["ACE_epinephrine",5],
+		["SatchelCharge_Remote_Mag",1],
+		["DemoCharge_Remote_Mag",1],
+		["ACE_M26_Clacker",1],
+		["ACE_DAGR",1],
+		["ACRE_PRC343",1],
+		["ACE_SpraypaintBlack",1],
+		["ACE_SpraypaintRed",1],
+		["ACE_SpraypaintGreen",1],
+		["ACE_SpraypaintBlue",1]
+	];
+};
+
+// load available to Rifleman only.
+ if (g_class == "GER_RF") then {
+    _tmp_weapons =
+    [
+		["CUP_arifle_G36A",1],
+		["CUP_sgun_M1014",1],
+		["CUP_hgun_Glock17",1],
+		["CUP_launch_MAAWS",1],
+		["CUP_launch_M136",2]
+	];
+	_tmp_magazines =
+    [								
+		["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+		["CUP_8Rnd_B_Beneli_74Slug",10],
+		["CUP_8Rnd_B_Beneli_74Pellets",10],
+		["CUP_MAAWS_HEAT_M",5],
+		["CUP_MAAWS_HEDP_M",5],
+        ["CUP_17Rnd_9x19_glock17",15]
+	];
+	_tmp_items = 
+	[
+		["ACE_MapTools",1],
+		["ACE_fieldDressing",20],
+		["ACE_morphine",10],
+		["CUP_optic_MAAWS_Scope",1],
+		["ACRE_PRC343",1]
+	];
+};
+
+// load available to Grenadier only.
+ if (g_class == "GER_AAR") then {
+    _tmp_weapons =
+    [
+        ["CUP_arifle_G36A",1],
+		["CUP_hgun_Glock17",1],
+		["CUP_launch_M136",2]
+	];
+	_tmp_magazines =
+    [            
+		["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+		["CUP_100Rnd_556x45_BetaCMag",10],
+		["CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag",10],
+		["CUP_17Rnd_9x19_glock17",15]
+    ];
+	_tmp_items =
+	[
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["ACRE_PRC343",1]
+	];
+};
+
+// load available to Automatic Rifleman only.
+ if (g_class == "GER_AR") then {
+    _tmp_weapons =
+    [
+        ["CUP_arifle_MG36",1],
+		["CUP_hgun_Glock17",1],
+		["CUP_launch_M136",2]
+	];
+	_tmp_magazines =
+    [            
+		["CUP_100Rnd_556x45_BetaCMag",10],
+		["CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag",10],
+        ["CUP_17Rnd_9x19_glock17",15]
+    ];
+	_tmp_items =
+	[
+        ["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["ACRE_PRC343",1]
+	];
+};
+
+// load available to Section Medic
+ if (g_class == "GER_MED") then {
+    _tmp_weapons =
+    [
+		["CUP_arifle_G36A",1],
+		["CUP_hgun_Glock17",1]
+	];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+        ["CUP_17Rnd_9x19_glock17",15]
+    ];
+	_tmp_items =
+	[
+		["ACE_fieldDressing",50],
+		["ACE_morphine",50],
+		["ACE_epinephrine",50],
+		["ACE_bloodIV",50],
+		["ACE_bodyBag",10],
+		["ACRE_PRC343",1]
+	];
+};
+
 {
         _weapons set [count _weapons, _x];
 } forEach _tmp_weapons;

@@ -16,7 +16,7 @@
 
 params["_marker"];
 _random = random 100;
-if (_random < 50) then {
+if (_random < 75) then {
 	if (isServer) then {
 		_groupSpawn = [getMarkerPos _marker, East, townSpawn,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
 		[_groupSpawn] call CBA_fnc_TaskDefend;

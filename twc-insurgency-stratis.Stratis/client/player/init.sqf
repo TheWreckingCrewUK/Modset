@@ -249,33 +249,61 @@ if (!isNil "P27" && {player == P27}) then {
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC148";
 };
-
-/*
-if (!isNil "P25" && {player == P25}) then {
-    g_class = "ANA_MED";
-	g_group = "1";
-	g_unit = "133";
-};
-if (!isNil "P26" && {player == P26}) then {
-    g_class = "ANA_MED";
-	g_group = "1";
-	g_unit = "134";
-};
-if (!isNil "P27" && {player == P27}) then {
-    g_class = "ANA_MED";
-	g_group = "1";
-	g_unit = "135";
-};
-if (!isNil "P28" && {player == P28}) then {
-    g_class = "ANA_MED";
+if (!isNil "P28" && {player == P25}) then {
+    g_class = "GER_SL";
 	g_group = "1";
 	g_unit = "136";
+	g_name = "Section Leader";
+	g_radio_channel = 4;
+	g_radio = "ACRE_PRC148";
 };
 if (!isNil "P29" && {player == P29}) then {
-    g_class = "ANA_MED";
+    g_class = "GER_RF";
 	g_group = "1";
 	g_unit = "137";
+	g_name = "Rifleman";
+	g_radio_channel = 4;
+	g_radio = "ACRE_PRC148";
 };
+if (!isNil "P30" && {player == P30}) then {
+    g_class = "GER_AR";
+	g_group = "1";
+	g_unit = "138";
+	g_name = "Automatic Rifleman";
+	g_radio_channel = 4;
+	g_radio = "ACRE_PRC148";
+};
+if (!isNil "P31" && {player == P31}) then {
+    g_class = "GER_AAR";
+	g_group = "1";
+	g_unit = "139";
+	g_name = "Asstant Autorifleman";
+	g_radio_channel = 4;
+	g_radio = "ACRE_PRC148";
+};
+if (!isNil "P32" && {player == P32}) then {
+    g_class = "GER_MED";
+	g_group = "1";
+	g_unit = "140";
+	g_name = "Medic";
+	g_radio_channel = 4;
+	g_radio = "ACRE_PRC148";
+};
+if (!isNil "P33" && {player == P33}) then {
+    g_class = "PLT";
+	g_group = "1";
+	g_unit = "141";
+	g_radio = "";
+	g_name = "Apache Pilot";
+};
+if (!isNil "P34" && {player == P34}) then {
+    g_class = "PLT";
+	g_group = "1";
+	g_unit = "141";
+	g_radio = "";
+	g_name = "Apache Gunner";
+};
+/*
 if (!isNil "P30" && {player == P30}) then {
     g_class = "USMC_MED";
 	g_group = "1";
@@ -394,6 +422,10 @@ TWC_fnc_getDeltaList = {
     execVM "client\playerlist\delta.sqf";
 };
 
+TWC_fnc_getEchoList = {
+    execVM "client\playerlist\echo.sqf";
+};
+
 TWC_fnc_getAirList = {
    execVM "client\playerlist\air.sqf";
 };
@@ -407,6 +439,7 @@ alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}]
 bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
 charlieAction = ["CharlieList","Charlie List","", {call TWC_fnc_getCharlieList;},{true}] call ace_interact_menu_fnc_createAction;
 deltaAction = ["DeltaList","Delta List","", {call TWC_fnc_getDeltaList;},{true}] call ace_interact_menu_fnc_createAction;
+echoAction = ["EchoList","Echo List","", {call TWC_fnc_getEchoList;},{true}] call ace_interact_menu_fnc_createAction;
 airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ace_interact_menu_fnc_createAction;
 armourAction = ["ArmourList","Armour List","", {call TWC_fnc_getArmourList;},{true}] call ace_interact_menu_fnc_createAction;
 
@@ -415,6 +448,7 @@ armourAction = ["ArmourList","Armour List","", {call TWC_fnc_getArmourList;},{tr
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], bravoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], charlieAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], deltaAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], echoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], armourAction] call ace_interact_menu_fnc_addActionToObject;
 

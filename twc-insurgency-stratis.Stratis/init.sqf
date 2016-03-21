@@ -11,9 +11,9 @@ if (isServer) then {
 
 if(isServer) then
 {
-	_serverID = str(round((random(100000)) + random 10000));
-	profileNameSpace setVariable ["TWC_ServerID",_serverID];
-	TWCserverID = profileNameSpace getVariable "TWC_ServerID";
+	serverID = str(round((random(100000)) + random 10000));
+	profileNameSpace setVariable ["TWC_ServerID", _serverID];
+	TWCServerID = profileNameSpace getVariable "TWC_ServerID";
 	publicVariable "TWCserverID";
 };
 
@@ -78,6 +78,8 @@ _defuseAction = [
                 InsP_civTrust = InsP_civTrust + 0.1;
                 publicVariable "InsP_iedDestroyed";
                 publicVariable "InsP_civTrust";
+				_rand = (floor 3);
+				if(_rand > 1)then{[player] call TWC_fnc_iedAttack;};
 				_markerstr = createMarker [str random 10000, player];
 				_markerstr setMarkerShape "ICON";
 				_markerstr setMarkerType "mil_triangle";
@@ -117,7 +119,7 @@ if ((str player) in _specialSlots)then{
 
 	_memberIDArray = ["_SP_PLAYER_","76561197970591603","76561197981096983","76561198035369460","76561197981208292","76561197985821395","76561197988506092","76561197992669373","76561197996044352","76561198001649761","76561198005456546","76561198007975082","76561198010876571","76561198011283748","76561198013509033","76561198014078972","76561198016635135","76561198018609662","76561198018806047","76561198021236275","76561198027413658","76561198037881029","76561198039562456","76561198046761459","76561198049111014","76561198050180681","76561198050512686","76561198051847668","76561198054727971","76561198056177819","76561198056234590","76561198060979584","76561198061797079","76561198062338085","76561198063449316","76561198066275591","76561198067385164","76561198072029517","76561198072105856","76561198077371253","76561198078628958","76561198084557194","76561198095246437","76561198100339755","76561198105044351","76561198148511288","76561198161685880","76561198212968121","76561198269225193","76561198070630639","76561198010598279","76561198061214513","76561198022227167"];
 	_UID = getPlayerUID player;
-	_TimeplayedArray = profileNamespace getVariable ["TWCPub_timePlayed", [-1, -1]];
+	_TimeplayedArray = profileNameSpace GetVariable ["TWCPub_timePlayed", [-1, -1]];
 	_TimePlayed = _Timeplayed select 0;
 
 
@@ -125,6 +127,7 @@ if ((str player) in _specialSlots)then{
 		_pilots = ["p21", "p22", "p23"];
 		_armourCrew = ["p25","p26","p27"];
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
+		_apachePilots = ["p33","p34"];
 		_numPlayers = switch (str player) do{
 			case "p21": {5};
 			case "p22": {10};
@@ -135,6 +138,8 @@ if ((str player) in _specialSlots)then{
 			case "humanCiv1": {10};
 			case "humanCiv2": {15};
 			case "humanCiv3": {20};
+			case "p33";
+			case "p34": {20};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
 		
@@ -145,12 +150,17 @@ if ((str player) in _specialSlots)then{
 		if ((str player) in _armourCrew && (count playableUnits) < _numPlayers) then{
 			["End6", false, 0] call BIS_fnc_endMission;
 		};
-		
+
 		if ((str player) in _humancivs) then{
-			if ((count playableUnits) < _numPlayers || !(_UID in _memberIDArray) || _TimePlayed < 80) then{
+			if ((count playableUnits) < _numPlayers || !(_UID in _memberIDArray) || _TimePlayed < 30) then{
 				["End3", false, 0] call BIS_fnc_endMission;
 			};
 		};
+		
+		if ((str player) in _apachePilots) then{
+			if ((count playableUnits) < _numPlayers || !(_UID in _memberIDArray) || _TimePlayed < 30) then{
+				["End4", false, 0] call BIS_fnc_endMission;
+			};
 	};
 };
 /*

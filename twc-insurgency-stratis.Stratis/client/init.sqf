@@ -7,6 +7,9 @@ InsP_fnc_possibleIntel = compile preProcessFileLineNumbers "client\sys_intel\fnc
 InsP_fnc_possibleIntelInsurgent = compile preProcessFileLineNumbers "client\sys_intel\fnc_possibleIntelInsurgent.sqf";
 InsP_fnc_spawnSelect = compile preprocessFileLineNumbers "client\sys_humanCiv\fnc_spawnSelect.sqf";
 
+InsP_fnc_questionHostage = compile preProcessFileLineNumbers "client\sys_intel\fnc_questionHostage.sqf";
+InsP_fnc_possibleIntelHostage = compile preProcessFileLineNumbers "client\sys_intel\fnc_possibleIntelHostage.sqf";
+
 if (InsP_playerCiv) then {
 	execVM "client\sys_humanCiv\init.sqf";
 }else{

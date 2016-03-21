@@ -60,8 +60,8 @@ class CfgDebriefing
 
 	class End4
 	{
-		title = "Pilot unavailable";
-		subtitle = "You need 5 people online to play as the Pilot.";
+		title = "Apache Unavailable";
+		subtitle = "20 Players and a Member.";
 		description = "Play general infantry for now!";
 		// pictureBackground = "";
 		// picture = "";

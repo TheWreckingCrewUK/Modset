@@ -1,9 +1,11 @@
 //Script by Sa-Matra, heavily modified by Tacticles
 true spawn {
     //helicopters
-    _blackhawkpilot = ["B_Pilot_F"];
+    _apachecrew = ["B_helicrew_F"];
+	_apache = ["CUP_B_AH64D_USA"];
+	
     _blackhawk = ["CUP_B_UH60M_US"];
-	_crew = ["B_helicrew_F"];
+	_blackhawkpilot = ["B_HeliPilot_F"];
 	
 	//armour crew
 	_armourCrew = ["B_crew_f"];
@@ -19,8 +21,8 @@ true spawn {
     waitUntil {player == player};
 
     //Assigning units to variables used below
-    _iamblackhawkpilot = ({typeOf player == _x} count _blackhawkpilot) > 0;
-    _iamcrew = ({typeOf player == _x} count _crew) > 0;
+	_iamapachecrew = ({typeOf player == _x} count _apachecrew) > 0;
+    _iamblackhawkcrew = ({typeOf player == _x} count _blackhawkpilot) > 0;
 	_iamarmourcrew = ({typeOf player == _x} count _armourcrew) > 0;
 
 	_blacklist = ({typeOf player == _x} count _crewblacklist) > 0;
@@ -48,9 +50,9 @@ true spawn {
             };
 			
 			 //Vehicle Pilot Check for helicopter
-            if(({typeOf _veh == _x} count _blackhawk) > 0 && !_iamblackhawkpilot && !_iamcrew) then {
+            if(({typeOf _veh == _x} count _blackhawk) > 0 && !_iamblackhawkcrew) then {
                 //Forbidden seats: copilot, gunner, pilot
-                _forbidden =  [gunner _veh] + [driver _veh];
+                _forbidden =  [gunner _veh] + [commander _veh] + [driver _veh];
                 if(player in _forbidden) then {
                     systemChat "You are not pilot and not allowed to pilot or gun this helicopter";
                     player action ["getout", _veh];
@@ -58,6 +60,16 @@ true spawn {
                 };
             };
 
+			 //Vehicle Pilot Check for Apache
+            if(({typeOf _veh == _x} count _apache) > 0 && !_iamapachecrew) then {
+                //Forbidden seats: copilot, gunner, pilot
+                _forbidden =  [gunner _veh] + [commander _veh] + [driver _veh];
+                if(player in _forbidden) then {
+                    systemChat "You are not pilot and not allowed to pilot or gun this helicopter";
+                    player action ["getout", _veh];
+					player action ["eject", _veh];
+                };
+            };
 
 
            //restrict Russian vehicles

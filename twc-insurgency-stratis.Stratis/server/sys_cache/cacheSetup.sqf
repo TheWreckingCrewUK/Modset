@@ -30,7 +30,7 @@ if (isNil "InsP_cacheGroup") then {
 				case "2": {_cacheMarker = "cacheMarkerC"};
 			};
 	
-			_houseList = (getMarkerPos _cacheMarker) nearObjects ["House",1500];
+			_houseList = (getMarkerPos _cacheMarker) nearObjects ["House",1250];
 			sleep .25;
 			_c = 0;
 			_house = _houseList call BIS_fnc_selectRandom;

@@ -9,6 +9,8 @@ server\sys_vehicles\VBIED.sqf
 
 civilianType = "C_man_1";
 
+homeEnemy = ["CUP_I_GUE_Soldier_AKM"];
+
 AA_VEHICLE_TYPE = "CUP_I_DSHKM_NAPA";
 
 AATeams = 6;
@@ -23,3 +25,5 @@ townSpawn = ["CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_
 townSquadWave = ["CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AKM"];
 
 vehicleList = ["C_Offroad_01_F", "C_SUV_01_F", "C_Quadbike_01_F"];
+
+townMarkerArray = ["AgiaMarina","AgiosCephas","AirStationMike","CampMaxwell","CampTempest","Girna","KaminoFireingRange","MilitaryBase","OldOutpost"];

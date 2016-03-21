@@ -41,6 +41,9 @@ while {true} do {
 	};
 	{[_x] execVM "client\sys_humanCiv\arsenal.sqf";}forEach InsP_cacheGroup;
 	carAction = player addAction ["<t color='#FF0000'>Create Vehicle</t>", "'C_SUV_01_F' createVehicle position player; player removeAction carAction"];
+	
+	execVM "client\sys_humanCiv\missions\init.sqf";
+	
     waitUntil {!alive player};
     if (faction player != "CIV_F") exitWith {};
     waitUntil {alive player};

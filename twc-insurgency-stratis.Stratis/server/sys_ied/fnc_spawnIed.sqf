@@ -24,7 +24,6 @@ _ied setPos (getPos _ied vectorAdd [0,0,-0.02]);
 _ied addEventHandler ["Killed", {
     params ["_unit", "_killer"];
     _iedExplosive = createMine [typeOf _unit, getPos _unit, [], 0];
-	[getpos _iedExplosive,floor (random 4)] call TWC_fnc_iedAttack;
     _iedExplosive setDamage 1;
     deleteVehicle (_unit getVariable ["InsP_trigger", objNull]);
     deleteVehicle _unit;
@@ -39,7 +38,7 @@ _trigger setTriggerStatements [
         if (abs (speed _x) >= 10 && (getPosATL _x select 2) < 4) exitWith {true};
         false
     } forEach thisList;",
-    "(thisTrigger getVariable ['InsP_ied', objNull]) setDamage 1;",
+    "[thislist select 0] call TWC_fnc_iedAttack; (thisTrigger getVariable ['InsP_ied', objNull]) setDamage 1;",
     ""
 ];
 

@@ -22,7 +22,7 @@ if (_civilianQuestioned in nonQuestionableList) then {
 		if (_rand <= 1)then{
 			_color = "ColorOrange";
 			_object = InsP_cacheGroup call BIS_fnc_selectRandom;
-			_distance = [250,500,500,750,750,1000,1000,1500] call BIS_fnc_selectRandom;
+			_distance = [250,500,500,750,750,1000,1000,1500,2000] call BIS_fnc_selectRandom;
 			_intelPos = [_object, _distance] call CBA_fnc_randPos;
 			_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
 			_marker setMarkerType "hd_join";

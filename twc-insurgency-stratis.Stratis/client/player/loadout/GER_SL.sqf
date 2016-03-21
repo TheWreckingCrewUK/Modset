@@ -24,7 +24,7 @@ for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";}
 player addBackpack "CUP_B_GER_Pack_Flecktarn";
 player addItemToBackpack "ACRE_PRC117F";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-player addHeadgear "H_HelmetB_camo";
+player addHeadgear "H_Shemag_olive";
 
 comment "Add weapons";
 player addWeapon "CUP_arifle_G36A";
