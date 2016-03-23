@@ -14,6 +14,12 @@
 params["_marker","_civnum","_civradius","_waves","_groupradius"];
 
 [_marker, _civnum, _civradius] call twc_spawnCiv;
-[_marker] call twc_spawnDefend;
+
+_enemy = nearestObjects [getMarkerPos _marker, ["Man"], 50];
+{
+	_x enableAI "ANIM";
+	_x hideObject False;
+}forEach _enemy;
+
 [_marker, _waves, _groupradius] call twc_spawnAIUnits;
 

@@ -6,3 +6,8 @@ player addEventHandler ["InventoryClosed", {
 		deleteVehicle (_this select 1);
 	};
 }];
+/*
+player addEventHandler ["InventoryClosed", {
+		hint "Checking for gear";
+		if(!(primaryweapon (_this select 0) == "") || "APERSTripMin_Wire_Mag" in (magazines (_this select 0)) || "IEDLandSmall_Remote_Mag" in (magazines (_this select 0)) || "IEDLandBig_Remote_Mag" in (magazines (_this select 0)) || "IEDUrbanSmall_Remote_Mag" in (magazines (_this select 0)) || "IEDUrbanBig_Remote_Mag" in (magazines (_this select 0)))then{hint "bad equipment";};
+}];

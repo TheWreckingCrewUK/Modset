@@ -5,16 +5,19 @@ Not to be used without consent from TWC or WiredTiger
 if (isNil "InsP_cacheGroup") then {
 
 	cacheBoxA = cacheBoxType createVehicle [7065, 5917, 22];
-	_cacheADeath = cacheBoxA addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxA"] call InsP_fnc_deleteMarkers}];
+	_cacheADeath = cacheBoxA addMPEventHandler ["MPKilled", {[_this select 0, _this select 1] call InsP_fnc_deadCache; ["cacheBoxA", "SUCCEEDED",true] spawn BIS_fnc_taskSetState; ["cacheBoxA"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxA";
+	[West,["cacheBoxA"],["Destroying the insurgent ammo cache will limit their abilities in the region","Destroy Insurgent Cache",""],objNull,True,1,True,"",False] call BIS_fnc_taskCreate;
 
 	cacheBoxB = cacheBoxType createVehicle [7065, 5912, 22];
-	_cacheADeath = cacheBoxB addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxB"] call InsP_fnc_deleteMarkers}];
+	_cacheADeath = cacheBoxB addMPEventHandler ["MPKilled", {[_this select 0, _this select 1] call InsP_fnc_deadCache; ["cacheBoxB", "SUCCEEDED",true] spawn BIS_fnc_taskSetState; ["cacheBoxB"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxB";
+	[West,["cacheBoxB"],["Destroying the insurgent ammo cache will limit their abilities in the region","Destroy Insurgent Cache",""],objNull,True,1,True,"",False] call BIS_fnc_taskCreate;
 
 	cacheBoxC = cacheBoxType createVehicle [7075, 5912, 22];
-	_cacheADeath = cacheBoxC addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxC"] call InsP_fnc_deleteMarkers}];
+	_cacheADeath = cacheBoxC addMPEventHandler ["MPKilled", {[_this select 0, _this select 1] call InsP_fnc_deadCache; ["cacheBoxC", "SUCCEEDED",true] spawn BIS_fnc_taskSetState; ["cacheBoxC"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxC";
+	[West,["cacheBoxC"],["Destroying the insurgent ammo cache will limit their abilities in the region","Destroy Insurgent Cache",""],objNull,True,1,True,"",False] call BIS_fnc_taskCreate;
 
 	InsP_cacheGroup = [cacheBoxA, cacheBoxB, cacheBoxC];
 	publicVariable "InsP_cacheGroup";

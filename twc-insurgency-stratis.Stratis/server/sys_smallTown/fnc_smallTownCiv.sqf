@@ -17,7 +17,9 @@ for "_i" from 1 to _civnum do {
 		_individualCiv setFormDir _civHeading;
 		_individualCiv setDir _civHeading;
 		_westKilled = _individualCiv addMPEventHandler ["MPKilled", {[_this select 0, _this select 1, _intelCache] call InsP_fnc_civKill;}];
-		_individualCiv disableAI "MOVE";
+		_individualCiv disableAI "AUTOCOMBAT";
+		_individualCiv allowFleeing 0;
+		_individualCiv forceSpeed 1;
 		_clothes = 
 		[
 			"U_C_Poloshirt_blue",

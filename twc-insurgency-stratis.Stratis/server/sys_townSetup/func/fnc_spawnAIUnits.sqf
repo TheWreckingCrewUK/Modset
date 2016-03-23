@@ -11,7 +11,7 @@
 params ["_marker","_waves","_groupradius"];
 _waves = _waves - floor InsP_enemyMorale;
 if (_waves < 1) then {
-	_waves = 1;
+	_waves = 0;
 };
 for "_i" from 1 to _waves do {
 	_pos = [getMarkerPos _marker,_groupradius] call SHK_pos;
@@ -21,6 +21,19 @@ for "_i" from 1 to _waves do {
 		_x addMPEventHandler ["MPKilled",{
 			if (side (_this select 1) == WEST) then{
 				InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
+			};
+		}];
+	}forEach units _groupSpawn;
+};
+
+if ((count PlayableUnits) > 5) then{
+	_pos = [getMarkerPos _marker, _groupradius,[0,360],0,[2,200]] call shk_pos;
+	_groupSpawned =  [_pos, East, enemyTechnical] call BIS_fnc_spawnGroup;
+	[_groupSpawned, (_marker), 40] call CBA_fnc_taskAttack;
+	{
+		_x addMPEventHandler ["MPKilled",{
+			if (side (_this select 1) == WEST) then{
+				InsP_enemyMorale = InsP_enemyMorale + 0.5; publicVariable "InsP_enemyMorale";
 			};
 		}];
 	}forEach units _groupSpawn;

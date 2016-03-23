@@ -249,7 +249,7 @@ if (!isNil "P27" && {player == P27}) then {
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC148";
 };
-if (!isNil "P28" && {player == P25}) then {
+if (!isNil "P28" && {player == P28}) then {
     g_class = "GER_SL";
 	g_group = "1";
 	g_unit = "136";

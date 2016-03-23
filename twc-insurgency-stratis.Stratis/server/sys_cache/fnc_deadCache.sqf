@@ -1,5 +1,7 @@
 _deadCache = _this select 0;
+_killer = _this select 1;
 _intelPos = (getPosATL _deadCache);
+_killerPos = (GetPosATL _killer);
 
 InsP_ammoCaches = InsP_ammoCaches + 1;
 publicVariable "InsP_ammoCaches";
@@ -19,3 +21,10 @@ _marker setMarkerColor "ColorOrange";
 _marker setMarkerText ("Cache Destroyed");
 _marker setMarkerSize [0.75, 0.75];
 [_marker, true] call CBA_fnc_setMarkerPersistent;
+
+[_killer] call InsP_fnc_counterAttack;
+
+if(InsP_ammoCaches == 3) then {
+	["All caches destroyed. Stick around for some Domination Altis", "hint", True, True] call BIS_fnc_MP;
+	[] spawn {sleep 15; ["end1", false, 0] call BIS_fnc_endMission};
+};
