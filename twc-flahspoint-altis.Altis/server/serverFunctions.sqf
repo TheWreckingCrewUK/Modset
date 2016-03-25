@@ -16,4 +16,4 @@ twc_radar = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_radar.s
 twc_tank = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_tank.sqf";
 twc_town = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_town.sqf";
 twc_village = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_village.sqf";
-twc_airAssualt = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_airassault.sqf";
+twc_airAssualt = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_airassualt.sqf";
