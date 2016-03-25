@@ -1,7 +1,6 @@
-if (numTimesInsurgent > 0 && floor InsP_enemyMorale > -2) exitWith{
-		InsP_playersKilledAsCivs = InsP_playersKilledAsCivs + [profileName];
-		publicVariable "InsP_playersKilledAsCivs";
-		["end3", false, 0] call BIS_fnc_endMission;
+if (floor InsP_enemyMorale > -2 && InsP_ammoCaches < 2) exitWith{
+	[] spawn{hint "You are not permitted to be an Insurgent at this time. Morale must be Strong or 2 caches already destroyed."; sleep 8;player call InsP_fnc_spawnSelect
+	};
 };
 
 cutText ["Receiving...", "BLACK", 0.001];

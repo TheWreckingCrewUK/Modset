@@ -699,7 +699,7 @@ if (g_class == "GER_SL") then {
 		["DemoCharge_Remote_Mag",1],
 		["ACE_M26_Clacker",1],
 		["ACE_DAGR",1],
-		["ACRE_PRC343",1],
+		["ACRE_PRC148",1],
 		["ACE_SpraypaintBlack",1],
 		["ACE_SpraypaintRed",1],
 		["ACE_SpraypaintGreen",1],
@@ -733,7 +733,7 @@ if (g_class == "GER_SL") then {
 		["ACE_fieldDressing",20],
 		["ACE_morphine",10],
 		["CUP_optic_MAAWS_Scope",1],
-		["ACRE_PRC343",1]
+		["ACRE_PRC148",1]
 	];
 };
 
@@ -758,7 +758,7 @@ if (g_class == "GER_SL") then {
         ["ACE_MapTools",1],
         ["ACE_fieldDressing",20],
         ["ACE_morphine",10],
-		["ACRE_PRC343",1]
+		["ACRE_PRC148",1]
 	];
 };
 
@@ -783,7 +783,7 @@ if (g_class == "GER_SL") then {
         ["ACE_morphine",10],
 		["CUP_optic_ACOG",1],
 		["CUP_optic_HoloBlack",1],
-		["ACRE_PRC343",1]
+		["ACRE_PRC148",1]
 	];
 };
 
@@ -807,7 +807,7 @@ if (g_class == "GER_SL") then {
 		["ACE_epinephrine",50],
 		["ACE_bloodIV",50],
 		["ACE_bodyBag",10],
-		["ACRE_PRC343",1]
+		["ACRE_PRC148",1]
 	];
 };
 

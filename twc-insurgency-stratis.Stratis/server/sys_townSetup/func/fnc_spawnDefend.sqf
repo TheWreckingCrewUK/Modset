@@ -26,8 +26,6 @@ if (_random < 75) then {
 					InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
 				};
 			}];
-			_x disableAI "ANIM";
-			_x hideObject True;
 		}forEach units _groupSpawn;
 	};
 };

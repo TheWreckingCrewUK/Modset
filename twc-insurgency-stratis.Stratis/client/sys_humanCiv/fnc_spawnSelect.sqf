@@ -34,15 +34,22 @@ while {true} do {
     {deleteMarkerLocal _x} forEach _allMarkers;
     sleep 6;
     cutText ["","BLACK IN",0];
+	removeAllWeapons player;
+	removeVest player;
+	removeBackpack player;
 	for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 	for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 	if(name player in InsP_playersKilledAsCivs) then {
 		["End3", false, 0] call BIS_fnc_endMission;
 	};
 	{[_x] execVM "client\sys_humanCiv\arsenal.sqf";}forEach InsP_cacheGroup;
-	carAction = player addAction ["<t color='#FF0000'>Create Vehicle</t>", "'C_SUV_01_F' createVehicle position player; player removeAction carAction"];
-	
 	execVM "client\sys_humanCiv\missions\init.sqf";
+	
+	_near = nearestObject [player, "Box_FIA_Wps_F"];
+	waitUntil{player distance2D _near > 20};
+	
+	{[_x] execVM "client\sys_humanCiv\arsenal.sqf";}forEach InsP_cacheGroup;
+	carAction = player addAction ["<t color='#FF0000'>Create Vehicle</t>", "'C_SUV_01_F' createVehicle position player; player removeAction carAction"];
 	
     waitUntil {!alive player};
     if (faction player != "CIV_F") exitWith {};

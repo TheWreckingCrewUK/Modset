@@ -13,7 +13,7 @@ homeEnemy = ["CUP_I_GUE_Soldier_AKM"];
 
 AA_VEHICLE_TYPE = "CUP_I_DSHKM_NAPA";
 
-AATeams = 6;
+AATeams = 4;
 AATeam = ["CUP_I_GUE_Soldier_AKM", "CUP_I_GUE_Soldier_AA", "CUP_I_GUE_Soldier_AA"];
 
 cacheBoxType = "Box_FIA_Wps_F";
