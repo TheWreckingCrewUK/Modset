@@ -1,6 +1,7 @@
 execVM "SHK_pos\shk_pos_init.sqf";
 
-[] execVM "client\slingLoading\sa_ropes.sqf";
+[] execVM "server\vehicles\sa_ropes.sqf";
+[] execVM "server\vehicles\advancedTowing.sqf";
 
 if(isServer) then{
 	#include "server\init.sqf";
@@ -64,7 +65,7 @@ if ((str player) in _specialSlots)then{
 	
 	_UID = getPlayerUID player;
 
-	if((_UID) != "_SP_PLAYER_" && (_UID) != "76561198070630639")then{	
+	if((_UID) != "_SP_PLAYER_" || (_UID) != "76561198070630639")then{	
 		_pilots = ["helo1", "helo2", "helo3"];
 		_numPlayers = switch (str player) do{
 			case "helo1": {5};

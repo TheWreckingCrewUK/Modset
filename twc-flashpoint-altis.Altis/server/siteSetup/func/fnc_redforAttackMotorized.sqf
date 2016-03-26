@@ -3,11 +3,7 @@
 *
 */
 
-
-_startingPoint = "hq2";
-
-_endingPoint = capturedArray call BIS_fnc_selectRandom;
-
+Params ["_startingPoint","_endingPoint"];
 
 _car = "CUP_O_UAZ_OPEN_RU";
 _squad = ["CUP_O_SLA_Soldier","CUP_O_SLA_Soldier","CUP_O_SLA_Soldier_GL","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_MG"];
@@ -41,4 +37,9 @@ if isServer then {
 	_wp setWaypointSpeed "FULL";
 	
 	[_PatrolSquad, getmarkerPos _endingPoint,20] call CBA_fnc_taskAttack;
+};
+
+[_endingPoint]spawn{
+	sleep 600;
+	execVM format["server\siteSetup\%1\contested.sqf", (_this select 0)];
 };

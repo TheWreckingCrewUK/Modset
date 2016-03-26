@@ -1,6 +1,7 @@
+player addEventHandler ["RESPAWN",{hint "Respawn Event Handler Active";}];
+
 execVM "client\restrict\init.sqf";
 execVM "client\cleanup\gear.sqf";
-execVM "client\cleanup\deadbodies.sqf";
 g_class = "";
 g_group = "";
 g_unit = "";
@@ -244,14 +245,14 @@ if (!isNil "p30" && {player == p30}) then {
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
-if (!isNil "p31" && {player == p31}) then {
+if (!isNil "helo1" && {player == helo1}) then {
     g_class = "WLD_PLT";
 	g_group = "0";
 	g_unit = "031";
 	g_name = "Wildcat Pilot";
 	g_radio = "";
 };
-if (!isNil "p32" && {player == p32}) then {
+if (!isNil "helo2" && {player == helo2}) then {
     g_class = "BLK_PLT";
 	g_group = "0";
 	g_unit = "032";

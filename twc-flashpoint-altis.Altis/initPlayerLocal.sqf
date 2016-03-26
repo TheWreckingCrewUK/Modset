@@ -1,9 +1,9 @@
 waitUntil{!isNull player};
 [player] join grpNull ;
 
-execVM "steam\acreCheck.sqf";
-
 if (!hasInterface) exitWith {};
+
+execVM "steam\acreCheck.sqf";
 
 global_sync = false;
 

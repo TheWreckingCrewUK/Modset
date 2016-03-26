@@ -9,6 +9,7 @@ twc_attackFailed = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_
 twc_redforAttackMotorized = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforAttackMotorized.sqf";
 twc_redforAttackMechanized = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforAttackMech.sqf";
 twc_redforSiteRecapAttempt = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforSiteRecapAttempt.sqf";
+twc_airAssault = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_airassault.sqf";
 
 twc_hamlet = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_hamlet.sqf";
 twc_mech = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_mech.sqf";
@@ -16,4 +17,3 @@ twc_radar = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_radar.s
 twc_tank = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_tank.sqf";
 twc_town = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_town.sqf";
 twc_village = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_village.sqf";
-twc_airAssualt = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_airassualt.sqf";

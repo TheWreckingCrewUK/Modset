@@ -1,6 +1,6 @@
 params["_marker"];
 
-hint "Blufor has captured _marker";
+hint format["Blufor has captured %1",_marker];
 _marker setMarkerColor "colorWEST";
 
 

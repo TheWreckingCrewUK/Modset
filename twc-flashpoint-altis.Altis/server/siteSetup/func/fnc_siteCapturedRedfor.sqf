@@ -1,6 +1,6 @@
 params["_marker"];
 
-hint "Redfor has captued _marker";
+hint format["Redfor has captued %1", _marker];
 
 _marker setMarkerColor "colorEAST";
 
