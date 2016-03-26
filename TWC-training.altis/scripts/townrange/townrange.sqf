@@ -58,7 +58,7 @@ switch (_placement8) do {
 _placement9 = ["Town9a","Town9b","Town9c"] call BIS_fnc_selectRandom;
 switch (_placement9) do {
 	case "Town9a":{tqb9 setDir 270; tqb9 setpos (getMarkerpos "Town9a")};
-	case "Town9b":{tqb9 setDir ; tqb9 setPos (getMarkerPos "Town9b")};
+	case "Town9b":{tqb9 setDir (floor(random 360)); tqb9 setPos (getMarkerPos "Town9b")}; //Was causing error/somebody forgot to add in dir so I made it random -WT
 	case "Town9c":{tqb9 setDir 180; tqb9 setPos (getMarkerPos "Town9c")};
 };
 _placement10 = ["Town10a","Town10b","Town10c"] call BIS_fnc_selectRandom;

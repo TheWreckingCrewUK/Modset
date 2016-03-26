@@ -39,18 +39,18 @@ if ((str player) in _trainers) then {
 	
 //Teleport and range actions
 	teleportListAction = ["Teleport","Teleport List","", {},{true}] call ace_interact_menu_fnc_createAction;
-	_TeleAir = ['TeleALL','Teleport Airfield','', {vehicle player setPos (getMarkerPos "airfield");},{true}] call ace_interact_menu_fnc_createAction;
-	_TelePhase3 = ['TeleALL','Teleport phase 3','', {vehicle player setpos (getMarkerPos "phase3");},{true}] call ace_interact_menu_fnc_createAction;
-	_TeleBase = ['TeleALL','Teleport base','', {vehicle player setpos (getMarkerPos "hqarea");},{true}] call ace_interact_menu_fnc_createAction;
-	_TeleLHD = ['TeleALL','Teleport LHD','', {vehicle player setpos (getMarkerPos "lhd");},{true}] call ace_interact_menu_fnc_createAction;
-	_Telebomb = ['TeleALL','Teleport BombingRange','', {vehicle player setpos (getMarkerPos "bomb");},{true}] call ace_interact_menu_fnc_createAction;
-	_Televehicle = ['TeleALL','Teleport VehicleRange','', {vehicle player setpos (getMarkerPos "vehicleTraining");},{true}] call ace_interact_menu_fnc_createAction;
+	_TeleAir = ['TeleAirAll','Teleport Airfield','', {vehicle player setPos (getMarkerPos "airfield");},{true}] call ace_interact_menu_fnc_createAction;
+	_TelePhase3 = ['TelePhaseAll','Teleport phase 3','', {vehicle player setpos (getMarkerPos "phase3");},{true}] call ace_interact_menu_fnc_createAction;
+	_TeleBase = ['TeleBaseAll','Teleport base','', {vehicle player setpos (getMarkerPos "hqarea");},{true}] call ace_interact_menu_fnc_createAction;
+	_TeleLHD = ['TeleLHDAll','Teleport LHD','', {vehicle player setpos (getMarkerPos "lhd");},{true}] call ace_interact_menu_fnc_createAction;
+	_Telebomb = ['TeleBombAll','Teleport BombingRange','', {vehicle player setpos (getMarkerPos "bomb");},{true}] call ace_interact_menu_fnc_createAction;
+	_Televehicle = ['TeleVehAll','Teleport VehicleRange','', {vehicle player setpos (getMarkerPos "vehicleTraining");},{true}] call ace_interact_menu_fnc_createAction;
 	_Teleclick = ['TeleCLick','Teleport On Click','', {execVM "scripts\teleport\tele_onclick.sqf";},{true}] call ace_interact_menu_fnc_createAction;
 	
 	TWCrandomrange = ["range","TWC range randomizer","", {},{true}] call ace_interact_menu_fnc_createAction;
-	_rifle = ['range','Rifle range','', { execVM "scripts\riflerange\popup.sqf"; },{true}] call ace_interact_menu_fnc_createAction;
-	_CQB = ['range','CQB killhouse','', { execVM "scripts\cqbrange\cqbrandomtargets.sqf"; },{true}] call ace_interact_menu_fnc_createAction;
-	_town = ['range','CQB Town','', { execVM "scripts\townrange\townrange.sqf"; },{true}] call ace_interact_menu_fnc_createAction;
+	_rifle = ['rifleRange','Rifle range','', { execVM "scripts\riflerange\popup.sqf"; },{true}] call ace_interact_menu_fnc_createAction;
+	_CQB = ['killhouse','CQB killhouse','', { execVM "scripts\cqbrange\cqbrandomtargets.sqf"; },{true}] call ace_interact_menu_fnc_createAction;
+	_town = ['town','CQB Town','', { execVM "scripts\townrange\townrange.sqf"; },{true}] call ace_interact_menu_fnc_createAction;
 	
 	[player, 1, ["ACE_SelfActions"], teleportListAction] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _TeleAir] call ace_interact_menu_fnc_addActionToObject;
@@ -66,6 +66,12 @@ if ((str player) in _trainers) then {
 	[player, 1, ["ACE_SelfActions","range"], _CQB] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","range"], _town] call ace_interact_menu_fnc_addActionToObject;
 	
+	atRange = ['atRange', 'AT Range', '', {}, {true}] call ace_interact_menu_fnc_createAction;
+	
+	[player, 1, ["ACE_SelfActions","range"], atRange] call ace_interact_menu_fnc_addActionToObject;
+	
+	
+	
 //Set time of day
 	_timeSelection = ["time","Time of day","", {},{true}] call ace_interact_menu_fnc_createAction;
 	
@@ -80,6 +86,7 @@ if ((str player) in _trainers) then {
 	[player, 1, ["ACE_SelfActions","time"], _noon] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","time"], _evening] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","time"], _midnight] call ace_interact_menu_fnc_addActionToObject;
+	
 }else{
 	isTrainer = false;
 };
