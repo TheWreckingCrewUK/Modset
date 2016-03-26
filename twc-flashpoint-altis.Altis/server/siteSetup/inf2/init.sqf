@@ -2,7 +2,7 @@
 
 */
 
-_trg = createTrigger ["EmptyDetector", getMarkerPos "inf2"];
-_trg setTriggerArea [500, 500, 0, false];
-_trg setTriggerActivation ["WEST", "PRESENT", true];
-_trg setTriggerStatements ["this", "['inf2'] call twc_siteSetup; ['inf2'] call twc_siteContested; execVM 'server\siteSetup\inf2\contested.sqf'; deleteVehicle _trg", ""];
+inf2start = createTrigger ["EmptyDetector", getMarkerPos "inf2"];
+inf2start setTriggerArea [500, 500, 0, false];
+inf2start setTriggerActivation ["WEST", "PRESENT", true];
+inf2start setTriggerStatements ["this", "['inf2'] call twc_town; ['inf2'] call twc_siteContested; deleteVehicle inf2start", ""];

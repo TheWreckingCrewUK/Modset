@@ -1,5 +1,7 @@
 twc_siteSetup = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteSetup.sqf";
 
+twc_deleteTriggers = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_deleteTriggers.sqf";
+
 twc_siteCapturedRedfor = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteCapturedRedfor.sqf";
 twc_siteCapturedBlufor = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteCapturedBlufor.sqf";
 twc_siteContested = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteContested.sqf";

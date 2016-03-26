@@ -2,7 +2,7 @@
 
 */
 
-_trg = createTrigger ["EmptyDetector", getMarkerPos "helo1"];
-_trg setTriggerArea [500, 500, 0, false];
-_trg setTriggerActivation ["WEST", "PRESENT", true];
-_trg setTriggerStatements ["this", "['helo1'] call twc_siteSetup; ['helo1'] call twc_siteContested; execVM 'server\siteSetup\helo1\contested.sqf'; deleteVehicle _trg", ""];
+airsetup = createTrigger ["EmptyDetector", getMarkerPos "helo1"];
+airsetup setTriggerArea [500, 500, 0, false];
+airsetup setTriggerActivation ["WEST", "PRESENT", true];
+airsetup setTriggerStatements ["this", "['helo1'] call twc_town; ['helo1'] call twc_siteContested; deleteVehicle airsetup", ""];
