@@ -1,6 +1,10 @@
+//Defines all functions on the server
+
+//Set Setup Defines:
 twc_siteSetup = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteSetup.sqf";
 
 twc_deleteTriggers = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_deleteTriggers.sqf";
+twc_siteDeciding = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteDeciding.sqf";
 
 twc_siteCapturedRedfor = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteCapturedRedfor.sqf";
 twc_siteCapturedBlufor = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteCapturedBlufor.sqf";
@@ -19,3 +23,8 @@ twc_radar = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_radar.s
 twc_tank = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_tank.sqf";
 twc_town = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_town.sqf";
 twc_village = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_village.sqf";
+
+twc_mortarAttack = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_mortarAttack.sqf";
+
+//Hostile Logistics Define:
+twc_basicLogistics = compile preprocessfilelinenumbers "server\logistics\func\fnc_basicLogistics.sqf";

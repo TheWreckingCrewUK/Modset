@@ -3,12 +3,10 @@ params["_marker"];
 hint format["Blufor has captured %1",_marker];
 _marker setMarkerColor "colorWEST";
 
-
 { deleteVehicle _x } forEach allDead;
 
-_marker = "warning1";
-capturedArray pushback "warning1";
+capturedArray + [_marker];
 publicVariable "capturedArray";
 
-remainingArray = remainingArray - ["warning1"];
+remainingArray = remainingArray - [_marker];
 publicVariable "capturedArray";

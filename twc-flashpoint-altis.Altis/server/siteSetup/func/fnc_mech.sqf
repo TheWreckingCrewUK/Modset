@@ -12,7 +12,6 @@
 *
 */
 
-hint"Mechanized Infantry Spawned";
 params["_marker"];
 
 _CentralMarker = format ["%1",_marker];

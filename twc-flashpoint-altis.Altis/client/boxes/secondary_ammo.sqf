@@ -19,7 +19,7 @@ _timer = 240;  // time in seconds until box is refilled.
 _weapons = [];
 _magazines = [];
 _items = [];
-_backpacks = [["CUP_B_M2_Gun_Bag",1],["CUP_B_M2_Tripod_Bag",1],["CUP_B_M2_MiniTripod_Bag",1],["ACE_NonSteerableParachute",1]];
+_backpacks = [["CUP_B_M2_Gun_Bag",1],["CUP_B_M2_Tripod_Bag",1],["CUP_B_M2_MiniTripod_Bag",1],["ACE_NonSteerableParachute",1],["B_Mortar_01_support_F",1],["B_Mortar_01_weapon_F",1]];
  
 _tmp_weapons = [];
 _tmp_magazines = [];

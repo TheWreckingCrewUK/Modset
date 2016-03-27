@@ -3,6 +3,6 @@
 */
 
 aastart = createTrigger ["EmptyDetector", getMarkerPos "aa1"];
-aastart setTriggerArea [500, 500, 0, false];
+aastart setTriggerArea [1000, 1000, 0, false];
 aastart setTriggerActivation ["WEST", "PRESENT", true];
-aastart setTriggerStatements ["this", "['aa1'] call twc_mech; ['aa1'] call twc_siteContested; deleteVehicle aastart", ""];
+aastart setTriggerStatements ["this", "['aa1'] call twc_mech; ['aa1'] call twc_siteContested; [thisList] call twc_mortarAttack; deleteVehicle aastart", ""];
