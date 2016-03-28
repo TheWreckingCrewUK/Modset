@@ -4,25 +4,21 @@
 item0[] = {"Init",0,250,-43.522400,-303.336945,46.477600,-253.336838,0.000000,"Init"};
 item1[] = {"In_tank_",4,218,-41.337219,-71.482552,48.662781,-21.482544,2.000000,"In tank?"};
 item2[] = {"Move",2,250,-36.431152,24.666805,53.568863,74.666809,0.000000,"Move"};
-item3[] = {"New_Dir",4,218,-162.633774,88.960220,-72.633408,138.960220,2.000000,"New Dir"};
+item3[] = {"New_Dir",4,4314,-162.633774,88.960220,-72.633408,138.960220,2.000000,"New Dir"};
 item4[] = {"Move_1",2,250,-34.160645,175.498901,55.839371,225.498901,0.000000,"Move"};
 item5[] = {"New_Dir",4,218,84.241272,97.801636,174.241272,147.801636,2.000000,"New Dir"};
 item6[] = {"True",8,218,-45.000305,-232.075653,44.999695,-182.075653,0.000000,"True"};
 item7[] = {"Get_in_Tank",2,250,-42.620148,-155.116470,47.379868,-105.116463,0.000000,"Get in Tank"};
-item8[] = {"Move_2",2,250,78.887970,-67.848633,168.887985,-17.848633,0.000000,"Move"};
-item9[] = {"true",8,4314,162.722198,-4.507172,252.722198,45.492828,0.000000,"true"};
 link0[] = {0,6};
-link1[] = {1,8};
+link1[] = {1,2};
 link2[] = {2,3};
 link3[] = {3,4};
 link4[] = {4,5};
 link5[] = {5,2};
 link6[] = {6,7};
 link7[] = {7,1};
-link8[] = {8,9};
-link9[] = {9,2};
 globals[] = {0.000000,0,0,0,0,640,480,1,18,6316128,1,-480.650482,480.649475,339.063141,-207.722748,1032,587,1};
-window[] = {0,-1,-1,-1,-1,915,156,1596,156,1,1050};
+window[] = {0,-1,-1,-1,-1,889,130,1570,130,1,1050};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -65,8 +61,7 @@ class FSM
                         init = /*%FSM<STATEINIT""">*/"_previousMarker = _currentMarker;" \n
                          "_currentMarker = _nextMarker;" \n
                          "_nextMarker = _markerList - [_currentMarker];" \n
-                         "_nextMarker = selectRandom _nextMarker;" \n
-                         "systemChat ""Changed variables"";"/*%FSM</STATEINIT""">*/;
+                         "_nextMarker = selectRandom _nextMarker;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -78,8 +73,7 @@ class FSM
                                         to="Move_1";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"(_unit distance (getMarkerPos _previousMarker)) < 5"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/"_unit moveTo (getMarkerPos _currentMarker);" \n
-                                         "systemChat ""Headed to new position"";"/*%FSM</ACTION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_unit moveTo (getMarkerPos _currentMarker);"/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
                         };
@@ -93,8 +87,7 @@ class FSM
                         init = /*%FSM<STATEINIT""">*/"_previousMarker = _currentMarker;" \n
                          "_currentMarker = _nextMarker;" \n
                          "_nextMarker = _markerList - [_currentMarker];" \n
-                         "_nextMarker = selectRandom _nextMarker;" \n
-                         "systemChat ""Changed variables"";"/*%FSM</STATEINIT""">*/;
+                         "_nextMarker = selectRandom _nextMarker;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -106,8 +99,7 @@ class FSM
                                         to="Move";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"(_unit distance (getMarkerPos _previousMarker)) < 5"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/"_unit moveTo (getMarkerPos _currentMarker);" \n
-                                         "systemChat ""Headed to new position"";"/*%FSM</ACTION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_unit moveTo (getMarkerPos _currentMarker);"/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
                         };
@@ -127,36 +119,13 @@ class FSM
                                 {
                                         itemno = 1;
                                         priority = 2.000000;
-                                        to="Move_2";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"(vehicle _unit) != _unit"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
-                        };
-                };
-                /*%FSM</STATE>*/
-                /*%FSM<STATE "Move_2">*/
-                class Move_2
-                {
-                        name = "Move_2";
-                        itemno = 8;
-                        init = /*%FSM<STATEINIT""">*/"_currentMarker = selectRandom _markerList;" \n
-                         "_nextMarker = _markerList - [_currentMarker];" \n
-                         "_nextMarker = selectRandom _nextMarker;" \n
-                         "_unit moveTo (getMarkerPos _currentMarker)"/*%FSM</STATEINIT""">*/;
-                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-                        class Links
-                        {
-                                /*%FSM<LINK "true">*/
-                                class true
-                                {
-                                        itemno = 9;
-                                        priority = 0.000000;
                                         to="Move";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(vehicle _unit) != _unit"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_currentMarker = selectRandom _markerList;" \n
+                                         "_nextMarker = _markerList - [_currentMarker];" \n
+                                         "_nextMarker = selectRandom _nextMarker;" \n
+                                         "_unit moveTo (getMarkerPos _currentMarker)"/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
                         };

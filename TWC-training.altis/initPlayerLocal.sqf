@@ -18,7 +18,7 @@ if (isNil "ERA") then {
 _everyone = ["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12","p13","p14","p15"];
 
 _trainers = ["T1","T2","T3","T4","T5","T6","T7"];
-
+//(str player) in _trainers
 if ((str player) in _trainers) then {
 	isTrainer = true;
 	
@@ -67,10 +67,14 @@ if ((str player) in _trainers) then {
 	[player, 1, ["ACE_SelfActions","range"], _town] call ace_interact_menu_fnc_addActionToObject;
 	
 	atRange = ['atRange', 'AT Range', '', {}, {true}] call ace_interact_menu_fnc_createAction;
+	_tankClose = ['tankClose', '200m','', {execVM "scripts\atRange\tankClose.sqf";},{true}] call ace_interact_menu_fnc_createAction;
+	_tankMedium = ['tankMedium', '300m','', {execVM "scripts\atRange\tankMedium.sqf";}, {true}] call ace_interact_menu_fnc_createAction;
+	_tankFar = ['tankFar', '400m','', {execVM "scripts\atRange\tankFar.sqf";}, {true}] call ace_interact_menu_fnc_createAction;
 	
 	[player, 1, ["ACE_SelfActions","range"], atRange] call ace_interact_menu_fnc_addActionToObject;
-	
-	
+	[player, 1, ["ACE_SelfActions", "range", "atRange"], _tankClose] call ace_interact_menu_fnc_addActionToObject;
+	[player, 1, ["ACE_SelfActions", "range", "atRange"], _tankMedium] call ace_interact_menu_fnc_addActionToObject;
+	[player, 1, ["ACE_SelfActions", "range", "atRange"], _tankFar] call ace_interact_menu_fnc_addActionToObject;
 	
 //Set time of day
 	_timeSelection = ["time","Time of day","", {},{true}] call ace_interact_menu_fnc_createAction;
