@@ -1,10 +1,10 @@
 //Script by Sa-Matra, heavily modified by Tacticles
 true spawn {
 	//helos
-    _blackhawkpilot = ["B_Pilot_F"];
-    _Merlinpilot = ["B_Pilot_F"];
+    _blackhawkpilot = ["B_helicrew_F"];
+    _wildcatPilot = ["B_helipilot_F"];
     _blackhawk = ["CUP_B_UH60M_US"];
-    _Merlin = ["CUP_B_AW159_Cannon_GB"];
+    _wildcat = ["CUP_B_AW159_Cannon_GB"];
 	_crew = ["B_helicrew_F"]; //Unused
 	
 	//Enemy Vehicles
@@ -17,7 +17,7 @@ true spawn {
 
     //Assigning units to variables used below
     _iamBlackHawkpilot = ({typeOf player == _x} count _blackhawkpilot) > 0;
-    _iamWildcatPilot = ({typeOf player == _x} count _Merlinpilot) > 0;
+    _iamWildcatPilot = ({typeOf player == _x} count _wildcatPilot) > 0;
 	_iamcrew = ({typeOf player == _x} count _crew) > 0;
 	_blacklist = ({typeOf player == _x} count _crewblacklist) > 0;
     //While loop
@@ -45,7 +45,7 @@ true spawn {
             };
 
             //Vehicle Pilot Check for wildcat
-            if(({typeOf _veh == _x} count _Merlin) > 0 && !_iamWildcatPilot && !_iamcrew) then {
+            if(({typeOf _veh == _x} count _wildcat) > 0 && !_iamWildcatPilot && !_iamcrew) then {
                 //Forbidden seats: copilot, gunner, pilot
                 _forbidden = [_veh turretUnit [0]] + [gunner _veh] + [driver _veh];
                 if(player in _forbidden) then {

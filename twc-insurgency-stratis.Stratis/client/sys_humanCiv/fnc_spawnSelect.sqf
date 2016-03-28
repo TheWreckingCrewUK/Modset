@@ -10,6 +10,7 @@ fnc_clickToSpawn = {
 };
 
 while {true} do {
+	if(!("itemMap" in assignedItems player)) then{player additem "itemMap"; player assignItem "itemMap"};
     openMap [true, true];
 
     _m = 0;
@@ -39,9 +40,7 @@ while {true} do {
 	removeBackpack player;
 	for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 	for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
-	if(name player in InsP_playersKilledAsCivs) then {
-		["End3", false, 0] call BIS_fnc_endMission;
-	};
+
 	{[_x] execVM "client\sys_humanCiv\arsenal.sqf";}forEach InsP_cacheGroup;
 	execVM "client\sys_humanCiv\missions\init.sqf";
 	
@@ -50,6 +49,9 @@ while {true} do {
 	
 	{[_x] execVM "client\sys_humanCiv\arsenal.sqf";}forEach InsP_cacheGroup;
 	carAction = player addAction ["<t color='#FF0000'>Create Vehicle</t>", "'C_SUV_01_F' createVehicle position player; player removeAction carAction"];
+	
+	waitUntil{player distance2D _near > 200};
+	removeAllActions player;
 	
     waitUntil {!alive player};
     if (faction player != "CIV_F") exitWith {};

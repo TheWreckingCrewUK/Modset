@@ -25,7 +25,7 @@ for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 player addItemToBackpack "CUP_SMAW_HEDP_M";
 for "_i" from 1 to 2 do {player addItemToBackpack "CUP_SMAW_Spotting";};
 player addItemToBackpack "CUP_SMAW_HEAA_M";
-player addHeadgear "CUP_H_FR_ECH";
+player addHeadgear "CUP_H_USMC_Headset_HelmetWDL";
 
 comment "Add weapons";
 player addWeapon "CUP_arifle_M16A4_Base";

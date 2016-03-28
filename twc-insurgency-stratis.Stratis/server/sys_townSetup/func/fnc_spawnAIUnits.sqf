@@ -20,7 +20,7 @@ for "_i" from 1 to _waves do {
 	{
 		_x addMPEventHandler ["MPKilled",{
 			if (side (_this select 1) == WEST) then{
-				InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
+				InsP_enemyMorale = InsP_enemyMorale + 0.03; publicVariable "InsP_enemyMorale";
 			};
 		}];
 	}forEach units _groupSpawn;
@@ -33,7 +33,7 @@ if ((count PlayableUnits) > 5) then{
 	{
 		_x addMPEventHandler ["MPKilled",{
 			if (side (_this select 1) == WEST) then{
-				InsP_enemyMorale = InsP_enemyMorale + 0.5; publicVariable "InsP_enemyMorale";
+				InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
 			};
 		}];
 	}forEach units _groupSpawn;

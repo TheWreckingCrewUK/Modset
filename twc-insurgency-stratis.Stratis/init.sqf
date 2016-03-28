@@ -1,9 +1,12 @@
 "iedRestrictionZone" setMarkerAlpha 0;
 
-[] execVM "client\slingLoading\sa_ropes.sqf";
+[] execVM "server\vehicles\sa_ropes.sqf";
+[] execVM "server\vehicles\advancedTowing.sqf";
 
 execVM "SHK_pos\shk_pos_init.sqf";
 
+//ACRE Settings
+[true] call acre_api_fnc_setRevealToAI;
 
 if (isServer) then {
 	execVM "server\init.sqf";
@@ -120,11 +123,11 @@ _specialSlots = ["p21","p22","p23","p25","p26","p27","humanCiv1","humanCiv2","hu
 if ((str player) in _specialSlots)then{
 	
 	_TimeplayedArray = profileNameSpace getVariable ["TWCPub_timePlayed", [-1, -1]];
-	_TimePlayed = _TimePlayed select 0;
+	_TimePlayed = _TimePlayedArray select 0;
 	
 	_UID = getPlayerUID player;
 
-	if((_UID) != "_SP_PLAYER_" || (_UID) != "76561198070630639")then{	
+	if((_UID) != "_SP_PLAYER_")then{	
 		_pilots = ["p21", "p22", "p23"];
 		_armourCrew = ["p25","p26","p27"];
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
@@ -153,15 +156,16 @@ if ((str player) in _specialSlots)then{
 		};
 
 		if ((str player) in _humancivs) then{
-			if ((count playableUnits) < _numPlayers || !(_UID in _memberIDArray) || _TimePlayed < 30) then{
+			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || _TimePlayed < 30 || (str player) in InsP_playersKilledAsCivs) then{
 				["End3", false, 0] call BIS_fnc_endMission;
 			};
 		};
 		
 		if ((str player) in _apachePilots) then{
-			if ((count playableUnits) < _numPlayers || !(_UID in _memberIDArray) || _TimePlayed < 30) then{
+			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || _TimePlayed < 30) then{
 				["End4", false, 0] call BIS_fnc_endMission;
 			};
+		};
 	};
 };
 /*

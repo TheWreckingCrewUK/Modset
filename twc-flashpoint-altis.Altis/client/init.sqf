@@ -1,4 +1,5 @@
-player addEventHandler ["RESPAWN",{hint "Respawn Event Handler Active";}];
+#include "playerFunctions.sqf";
+player addEventHandler ["RESPAWN",{hint "Respawn Event Handler Active"; bluforDeath = bluforDeath + 1; publicVariable "bluforDeath"}];
 
 execVM "client\restrict\init.sqf";
 execVM "client\cleanup\gear.sqf";
@@ -258,6 +259,7 @@ if (!isNil "helo2" && {player == helo2}) then {
 	g_unit = "032";
 	g_name = "BlackHawk Pilot";
 	g_radio = "";
+	prepAction = player addAction ["<t color='#FF0000'>Prep Osprey For Paradrop</t>", "_vehicle = cursorObject; hint str cursorObject; [_vehicle] call twc_paradropSetup"];
 };
 
 g_p1 = "";

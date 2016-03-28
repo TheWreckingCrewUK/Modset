@@ -16,6 +16,9 @@ _cache addItemCargoGlobal [	"ACE_SpraypaintBlue",10];
 
 waitUntil {InsP_enemyMorale <= -2 || InsP_ammoCaches == 2};
 
+_cache addweaponcargoGlobal ["CUP_launch_FIM92Stinger",3];
+_cache addmagazineCargoGlobal ["CUP_Stinger_M",6];
+
 _cache addweaponcargoGlobal ["CUP_arifle_AK74",3];
 _cache addmagazineCargoGlobal ["CUP_30Rnd_545x39_AK_M",15];
 

@@ -1,5 +1,5 @@
 if (floor InsP_enemyMorale > -2 && InsP_ammoCaches < 2) exitWith{
-	[] spawn{hint "You are not permitted to be an Insurgent at this time. Morale must be Strong or 2 caches already destroyed."; sleep 8;player call InsP_fnc_spawnSelect
+	[] spawn{hint "You are not permitted to be an Insurgent at this time. Morale must be Strong or 2 caches already destroyed."; sleep 8;player call InsP_fnc_spawnSelect; player removeAction carAction
 	};
 };
 
@@ -30,7 +30,7 @@ InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\sys_in
 numTimesInsurgent = 1;
 	
 player addEventHandler ["Killed", {
-	InsP_playersKilledAsCivs = InsP_playersKilledAsCivs + [profileName];
+	InsP_playersKilledAsCivs = InsP_playersKilledAsCivs + [str player];
 	publicVariable "InsP_playersKilledAsCivs";
 	["End3", false, 0] call BIS_fnc_endMission
 }];

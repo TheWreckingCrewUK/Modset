@@ -23,7 +23,7 @@ _ATteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "
 _AAteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionAA");
 _BRDM = "CUP_O_BRDM2_SLA";
 _BRDMAT= "CUP_O_BRDM2_ATGM_SLA";
-
+/*
 for "_i" from 0 to 2 do {
 	if isServer then {
 		private ["_pos","_m"];
@@ -40,6 +40,7 @@ for "_i" from 0 to 2 do {
 		[_DefendSquad, getmarkerpos _CentralMarker, 300] call CBA_fnc_taskPatrol;
 	};
 };
+*/
 for "_i" from 0 to 2 do {
 if isServer then {
 		private ["_pos","_m"];

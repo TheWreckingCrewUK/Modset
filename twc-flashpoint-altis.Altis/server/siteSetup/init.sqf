@@ -6,7 +6,7 @@
 #include "aa1\init.sqf";
 //#include "airport1\init.sqf";
 #include "armour1\init.sqf";
-#include "helo1\init.sqf";
+#include "air1\init.sqf";
 #include "hq1\init.sqf";
 #include "hq2\init.sqf";
 #include "inf1\init.sqf";

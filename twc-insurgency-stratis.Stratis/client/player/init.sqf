@@ -1,12 +1,19 @@
 g_class = "";
 g_group = "";
 g_unit = "";
+
+[[West, "English", "Greek"], [East, "Greek"], [Civilian, "Greek"]] call acre_api_fnc_setupMission;
+["en", "English"] call acre_api_fnc_babelAddLanguageType;
+["ru", "Greek"] call acre_api_fnc_babelAddLanguageType;
+
 if (!isNil "humanCiv1" && {player == humanCiv1}) then {
     g_class = "Civ";
 	g_group = "0";
 	g_unit = "200";
 	g_name = "Civilian";
 	g_radio = "";
+	["ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 if (!isNil "humanCiv2" && {player == humanCiv2}) then {
     g_class = "Civ";
@@ -14,6 +21,8 @@ if (!isNil "humanCiv2" && {player == humanCiv2}) then {
 	g_unit = "201";
 	g_name = "Civilian";
 	g_radio = "";
+	["ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 if (!isNil "humanCiv3" && {player == humanCiv3}) then {
     g_class = "Civ";
@@ -21,6 +30,8 @@ if (!isNil "humanCiv3" && {player == humanCiv3}) then {
 	g_unit = "202";
 	g_name = "Civilian";
 	g_radio = "";
+	["ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 if (!isNil "P1" && {player == P1}) then {
     g_class = "BAF_SL";
@@ -29,6 +40,8 @@ if (!isNil "P1" && {player == P1}) then {
 	g_name = "Alpha Section Leader";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P2" && {player == P2}) then {
@@ -38,6 +51,8 @@ if (!isNil "P2" && {player == P2}) then {
 	g_name = "Alpha Rifleman";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P3" && {player == P3}) then {
@@ -47,6 +62,8 @@ if (!isNil "P3" && {player == P3}) then {
 	g_name = "Alpha Grenadier";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P4" && {player == P4}) then {
@@ -56,6 +73,8 @@ if (!isNil "P4" && {player == P4}) then {
 	g_name = "Alpha Automatic Rifleman";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P5" && {player == P5}) then {
@@ -65,6 +84,9 @@ if (!isNil "P5" && {player == P5}) then {
 	g_name = "Alpha Medic";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
 if (!isNil "P6" && {player == P6}) then {
     g_class = "US_SL";
@@ -73,6 +95,8 @@ if (!isNil "P6" && {player == P6}) then {
 	g_name = "Bravo Squad Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P7" && {player == P7}) then {
@@ -82,6 +106,8 @@ if (!isNil "P7" && {player == P7}) then {
 	g_name = "Bravo Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P8" && {player == P8}) then {
@@ -91,6 +117,8 @@ if (!isNil "P8" && {player == P8}) then {
 	g_name = "Bravo grenadier";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P9" && {player == P9}) then {
@@ -100,6 +128,8 @@ if (!isNil "P9" && {player == P9}) then {
 	g_name = "Bravo Automatic Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P10" && {player == P10}) then {
@@ -109,6 +139,9 @@ if (!isNil "P10" && {player == P10}) then {
 	g_name = "Bravo Medic";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
 
 if (!isNil "P11" && {player == P11}) then {
@@ -118,6 +151,8 @@ if (!isNil "P11" && {player == P11}) then {
 	g_name = "Charlie Squad Leader";
 	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P12" && {player == P12}) then {
@@ -127,6 +162,8 @@ if (!isNil "P12" && {player == P12}) then {
 	g_name = "Charlie Rifleman";
 	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P13" && {player == P13}) then {
@@ -136,6 +173,8 @@ if (!isNil "P13" && {player == P13}) then {
 	g_name = "Charlie Grenadier";
 	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P14" && {player == P14}) then {
@@ -145,6 +184,8 @@ if (!isNil "P14" && {player == P14}) then {
 	g_name = "Charlie Automatic Rifleman";
 	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P15" && {player == P15}) then {
@@ -154,6 +195,9 @@ if (!isNil "P15" && {player == P15}) then {
 	g_name = "Charlie Medic";
 	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
 
 if (!isNil "P16" && {player == P16}) then {
@@ -161,6 +205,8 @@ if (!isNil "P16" && {player == P16}) then {
 	g_group = "1";
 	g_unit = "112";
 	g_name = "Delta Squad Leader";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P17" && {player == P17}) then {
@@ -168,6 +214,8 @@ if (!isNil "P17" && {player == P17}) then {
 	g_group = "1";
 	g_unit = "113";
 	g_name = "Delta Rifleman";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P18" && {player == P18}) then {
@@ -175,6 +223,8 @@ if (!isNil "P18" && {player == P18}) then {
 	g_group = "1";
 	g_unit = "120";
 	g_name = "Delta Grenadier";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P19" && {player == P19}) then {
@@ -182,6 +232,8 @@ if (!isNil "P19" && {player == P19}) then {
 	g_group = "1";
 	g_unit = "121";
 	g_name = "Delta Automatic Rifleman";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P20" && {player == P20}) then {
@@ -189,6 +241,9 @@ if (!isNil "P20" && {player == P20}) then {
 	g_group = "1";
 	g_unit = "122";
 	g_name = "Delta Medic";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
 
 if (!isNil "P21" && {player == P21}) then {
@@ -197,6 +252,8 @@ if (!isNil "P21" && {player == P21}) then {
 	g_unit = "123";
 	g_radio = "";
 	g_name = "Blackhawk Pilot";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P22" && {player == P22}) then {
@@ -205,6 +262,8 @@ if (!isNil "P22" && {player == P22}) then {
 	g_unit = "130";
 	g_radio = "";
 	g_name = "Crew Chief";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P23" && {player == P23}) then {
@@ -213,6 +272,8 @@ if (!isNil "P23" && {player == P23}) then {
 	g_unit = "131";
 	g_radio = "";
 	g_name = "Door Gunner";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P24" && {player == P24}) then {
@@ -221,6 +282,8 @@ if (!isNil "P24" && {player == P24}) then {
 	g_unit = "132";
 	g_radio = "";
 	g_name = "Crew Chief";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P25" && {player == P25}) then {
@@ -230,6 +293,8 @@ if (!isNil "P25" && {player == P25}) then {
 	g_name = "Armour Crew Commander";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P26" && {player == P26}) then {
@@ -239,6 +304,8 @@ if (!isNil "P26" && {player == P26}) then {
 	g_name = "Armour Crew";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P27" && {player == P27}) then {
@@ -248,6 +315,8 @@ if (!isNil "P27" && {player == P27}) then {
 	g_name = "Armour Crew";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 if (!isNil "P28" && {player == P28}) then {
     g_class = "GER_SL";
@@ -256,6 +325,8 @@ if (!isNil "P28" && {player == P28}) then {
 	g_name = "Section Leader";
 	g_radio_channel = 4;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 if (!isNil "P29" && {player == P29}) then {
     g_class = "GER_RF";
@@ -264,6 +335,8 @@ if (!isNil "P29" && {player == P29}) then {
 	g_name = "Rifleman";
 	g_radio_channel = 4;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 if (!isNil "P30" && {player == P30}) then {
     g_class = "GER_AR";
@@ -272,6 +345,8 @@ if (!isNil "P30" && {player == P30}) then {
 	g_name = "Automatic Rifleman";
 	g_radio_channel = 4;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 if (!isNil "P31" && {player == P31}) then {
     g_class = "GER_AAR";
@@ -280,6 +355,8 @@ if (!isNil "P31" && {player == P31}) then {
 	g_name = "Asstant Autorifleman";
 	g_radio_channel = 4;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 if (!isNil "P32" && {player == P32}) then {
     g_class = "GER_MED";
@@ -288,6 +365,9 @@ if (!isNil "P32" && {player == P32}) then {
 	g_name = "Medic";
 	g_radio_channel = 4;
 	g_radio = "ACRE_PRC148";
+	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
 if (!isNil "P33" && {player == P33}) then {
     g_class = "PLT";
@@ -295,6 +375,8 @@ if (!isNil "P33" && {player == P33}) then {
 	g_unit = "141";
 	g_radio = "";
 	g_name = "Apache Pilot";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 if (!isNil "P34" && {player == P34}) then {
     g_class = "PLT";
@@ -302,6 +384,8 @@ if (!isNil "P34" && {player == P34}) then {
 	g_unit = "141";
 	g_radio = "";
 	g_name = "Apache Gunner";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 /*
 if (!isNil "P30" && {player == P30}) then {

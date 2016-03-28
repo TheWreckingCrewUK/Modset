@@ -23,7 +23,7 @@ for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";}
 player addBackpack "CUP_B_USPack_Coyote";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 2 do {player addItemToBackpack "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";};
-player addHeadgear "CUP_H_FR_ECH";
+player addHeadgear "CUP_H_USMC_Headset_HelmetWDL";
 
 comment "Add weapons";
 player addWeapon "CUP_arifle_M16A4_Base";

@@ -6,6 +6,7 @@ _endingPoint = remainingArray call BIS_fnc_selectRandom;
 
 Params ["_endingPoint"];
 
+
 _startingPoint = "hq2";
 _car = "CUP_O_Ural_Reammo_SLA";
 _fuel = "CUP_O_Ural_Refuel_SLA";
@@ -15,10 +16,11 @@ _squad = ["CUP_O_SLA_Soldier","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_AT"];
 
 if isServer then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _startingPoint,[0,0],random 360,0,[1]] call SHK_pos;
+	_pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] call SHK_pos;
 	_PatrolSquad = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
-	_vehicle = _car createVehicle getmarkerPos _startingpoint;
-	_vehiclefuel = _fuel createVehicle (getmarkerPos _startingpoint vectorAdd [0,0,10]);
+	_vehicle = _car createVehicle _pos;
+	_pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] call SHK_pos;
+	_vehiclefuel = _fuel createVehicle _pos;
 	_men = units _PatrolSquad;
 	
 	_leader = leader _PatrolSquad;

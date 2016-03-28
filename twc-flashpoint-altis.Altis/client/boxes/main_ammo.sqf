@@ -19,10 +19,12 @@ _timer = 240;  // time in seconds until box is refilled.
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
 _items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["CUP_NVG_PVS7",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_MapTools",1],["ACE_FieldDressing",20],["ACE_morphine",10]];
+_backpacks = [];
  
 _tmp_weapons = [];
 _tmp_magazines = [];
 _tmp_items = [];
+_tmp_backpacks = [];
  
 // load available to Section Commander only.
 if (g_class == "BAF_SL") then {
@@ -48,8 +50,12 @@ if (g_class == "BAF_SL") then {
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
 		["ACE_M26_Clacker",1],
-		["ACRE_PRC343",1]
-        ];
+		["ACRE_PRC343",1],
+		["ACRE_PRC117F",1]
+    ];
+	_tmp_backpacks = [
+		["B_Kitbag_cbr",1]
+	];
 }; 
 // load available to Rifleman only.
  if (g_class == "BAF_RF") then {
@@ -75,7 +81,10 @@ if (g_class == "BAF_SL") then {
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_2",1],
 		["ACRE_PRC343",1]
-		];					
+	];
+	_tmp_backpacks = [
+		["B_Kitbag_cbr",1]
+	];
 }; 
 // load available to Grenadier only.
  if (g_class == "BAF_G") then {
@@ -110,6 +119,9 @@ if (g_class == "BAF_SL") then {
 		["CUP_optic_HoloBlack",1],
 		["ACRE_PRC343",1]
 	];
+	_tmp_backpacks = [
+		["B_Kitbag_cbr",1]
+	];
 };
  
 // load available to Automatic Rifleman only.
@@ -131,6 +143,9 @@ if (g_class == "BAF_SL") then {
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_2",1],
 		["ACRE_PRC343",1]
+	];
+	_tmp_backpacks = [
+		["B_Kitbag_cbr",1]
 	];
 };
  
@@ -157,6 +172,9 @@ if (g_class == "BAF_SL") then {
 		["CUP_acc_ANPEQ_2",1],
 		["ACRE_PRC343",1]
 	];
+	_tmp_backpacks = [
+		["B_Kitbag_cbr",1]
+	];
 }; 
 // load available to GPMG Gunner only.
  if (g_class == "BAF_MG") then {
@@ -175,6 +193,9 @@ if (g_class == "BAF_SL") then {
 	_tmp_items = 
 	[
 		["ACRE_PRC343",1]
+	];
+	_tmp_backpacks = [
+		["B_Kitbag_cbr",1]
 	];
 }; 
 // load available to Marksman only.
@@ -204,6 +225,9 @@ if (g_class == "BAF_SL") then {
 		["CUP_acc_ANPEQ_2",1],
 		["ACRE_PRC343",1]
 	];
+	_tmp_backpacks = [
+		["B_Kitbag_cbr",1]
+	];
 };
 // load availible to Medic Only
  if (g_class == "BAF_MED") then {
@@ -230,6 +254,9 @@ if (g_class == "BAF_SL") then {
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_2",1],
 		["ACRE_PRC343",1]
+	];
+	_tmp_backpacks = [
+		["B_Kitbag_cbr",1]
 	];
 };
 //load availible to Bravo Section Lead
@@ -264,7 +291,11 @@ if (g_class == "US_SL") then{
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_2",1],
 		["ACE_DAGR",1],
-		["ACRE_PRC148",1]
+		["ACRE_PRC148",1],
+		["ACRE_PRC117F",1]
+	];
+	_tmp_backpacks = [
+		["B_Kitbag_mcamo",1]
 	];
 };
 //load availible to US Fire team lead only
@@ -297,6 +328,9 @@ if (g_class == "US_FTL") then{
 		["CUP_acc_ANPEQ_2",1],
 		["ACRE_PRC148",1]
 	];
+	_tmp_backpacks = [
+		["B_Kitbag_mcamo",1]
+	];
 };
 //load availible to US Rifleman only
 if (g_class == "US_RF") then{
@@ -322,6 +356,9 @@ if (g_class == "US_RF") then{
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_2",1],
 		["ACRE_PRC148",1]
+	];
+	_tmp_backpacks = [
+		["B_Kitbag_mcamo",1]
 	];
 };
 //load availible to US Grenadier only
@@ -356,6 +393,9 @@ if (g_class == "US_GRN") then{
 		["CUP_acc_ANPEQ_2",1],
 		["ACRE_PRC148",1]
 	];
+	_tmp_backpacks = [
+		["B_Kitbag_mcamo",1]
+	];
 };
 //load available to US automatic Rifleman only
 if (g_class == "US_AR") then{
@@ -375,6 +415,9 @@ if (g_class == "US_AR") then{
 		["CUP_optic_ElcanM145",1],
 		["CUP_optic_HoloBlack",1],
 		["ACRE_PRC148",1]
+	];
+	_tmp_backpacks = [
+		["B_Kitbag_mcamo",1]
 	];
 };
 //load availible to US Marksman only
@@ -402,6 +445,9 @@ if (g_class == "US_MARK") then{
 		["CUP_optic_LeupoldM3LR",1],
 		["ACRE_PRC148",1]
 	];
+	_tmp_backpacks = [
+		["B_Kitbag_mcamo",1]
+	];
 };
 //load availible to US Medic only
 if (g_class == "US_MED") then{
@@ -427,6 +473,9 @@ if (g_class == "US_MED") then{
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_2",1],
 		["ACRE_PRC148",1]
+	];
+	_tmp_backpacks = [
+		["B_Kitbag_mcamo",1]
 	];
 };
 //load availible to Charlie Section Lead
@@ -461,7 +510,11 @@ if (g_class == "USMC_SL") then{
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_15",1],
 		["ACE_DAGR",1],
-		["ACRE_PRC148",1]
+		["ACRE_PRC148",1],
+		["ACRE_PRC117F",1]
+	];
+	_tmp_backpacks = [
+		["CUP_B_USPack_Coyote",1]
 	];
 };
 //load availible to Charlie Fireteam Lead
@@ -494,6 +547,9 @@ if (g_class == "USMC_FTL") then{
 		["CUP_acc_ANPEQ_15",1],
 		["ACRE_PRC148",1]
 	];
+	_tmp_backpacks = [
+		["CUP_B_USPack_Coyote",1]
+	];
 };
 //load availible to Charlie Section Lead
 if (g_class == "USMC_RF") then{
@@ -523,6 +579,9 @@ if (g_class == "USMC_RF") then{
 		["CUP_optic_SMAW_Scope",1],
 		["ACRE_PRC148",1]
 	];
+	_tmp_backpacks = [
+		["CUP_B_USPack_Coyote",1]
+	];
 };
 //load available to USMC automatic Rifleman only
 if (g_class == "USMC_AR") then{
@@ -542,6 +601,9 @@ if (g_class == "USMC_AR") then{
 		["CUP_optic_ElcanM145",1],
 		["CUP_optic_HoloBlack",1],
 		["ACRE_PRC148",1]
+	];
+	_tmp_backpacks = [
+		["CUP_B_USPack_Coyote",1]
 	];
 };
 //load available to USMC assistant automatic Rifleman only
@@ -568,6 +630,9 @@ if (g_class == "USMC_AAR") then{
 		["CUP_acc_ANPEQ_15",1],
 		["ACRE_PRC148",1]
 	];
+	_tmp_backpacks = [
+		["CUP_B_USPack_Coyote",1]
+	];
 };
 //load available to USMC Machine Gunner only
 if (g_class == "USMC_MG") then{
@@ -587,6 +652,9 @@ if (g_class == "USMC_MG") then{
 		["CUP_optic_ElcanM145",1],
 		["CUP_optic_HoloBlack",1],
 		["ACRE_PRC148",1]
+	];
+	_tmp_backpacks = [
+		["CUP_B_USPack_Coyote",1]
 	];
 };
 //load availible for USMC Medic only
@@ -613,6 +681,9 @@ if (g_class == "USMC_MED") then{
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_15",1],
 		["ACRE_PRC148",1]
+	];
+	_tmp_backpacks = [
+		["CUP_B_USPack_Coyote",1]
 	];
 };
 //load availible for Wildcat Pilot only
@@ -657,6 +728,9 @@ if (g_class == "BLK_PLT") then{
         _items set [count _items, _x];
 } forEach _tmp_items;
 
+{
+        _backpacks set [count _backpacks, _x];
+} forEach _tmp_backpacks;
  
 // create and fill the box.
 _box = _boxType createVehicleLocal (getMarkerPos _marker);
@@ -677,6 +751,8 @@ while {true} do {
         {_box addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
        
         {_box addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
+		
+		{_box addBackpackCargo [(_x select 0),(_x select 1)]} foreach _backpacks;
 		
 	
        

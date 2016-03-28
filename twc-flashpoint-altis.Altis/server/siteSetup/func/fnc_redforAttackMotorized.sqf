@@ -3,12 +3,14 @@
 *
 */
 
-Params ["_startingPoint","_endingPoint"];
 
+
+if((getMarkerColor "hq2") == "ColorWEST")exitWith{};
+_startingPoint = "hq2";
 _car = "CUP_O_UAZ_OPEN_RU";
 _squad = ["CUP_O_SLA_Soldier","CUP_O_SLA_Soldier","CUP_O_SLA_Soldier_GL","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_MG"];
 
-
+_marker = capturedArray call BIS_fnc_selectRandom;
 
 if isServer then {
 	private ["_pos","_m"];
@@ -29,17 +31,13 @@ if isServer then {
 	
 
 	
-	_pos = [getmarkerpos _endingPoint,[200,300],180,0,[1,50]] call SHK_pos;
+	_pos = [getmarkerpos _marker,[200,300],180,0,[1,50]] call SHK_pos;
 	
 	_wp = _PatrolSquad addWaypoint [_pos, 0];
 	_wp setWaypointType "GETOUT";
 	_wp setWaypointBehaviour "CARELESS";
 	_wp setWaypointSpeed "FULL";
+	_wp setWaypointStatements ["True", format["['%1'] call twc_siteContested", _marker]];
 	
-	[_PatrolSquad, getmarkerPos _endingPoint,20] call CBA_fnc_taskAttack;
-};
-
-[_endingPoint]spawn{
-	sleep 600;
-	execVM format["server\siteSetup\%1\contested.sqf", (_this select 0)];
+	[_PatrolSquad, getmarkerPos _marker,20] call CBA_fnc_taskAttack;
 };

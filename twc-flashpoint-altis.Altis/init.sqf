@@ -40,6 +40,10 @@ execVM "client\zeus\zeus-jayman.sqf";
 waitUntil {!isNull player};
 waitUntil {player == player};
 
+if(isNil "bluforDeath")then{
+	bluforDeath = 0;
+	publicVariable "bluforDeath";
+};
 null = execVM "client\sys_Member\init.sqf";
 
 /*

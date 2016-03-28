@@ -23,7 +23,7 @@ player addItemToVest "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M";
 player addBackpack "CUP_B_USPack_Coyote";
 for "_i" from 1 to 3 do {player addItemToBackpack "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M";};
 player addItemToBackpack "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
-player addHeadgear "CUP_H_FR_ECH";
+player addHeadgear "CUP_H_USMC_Headset_HelmetWDL";
 
 comment "Add weapons";
 player addWeapon "CUP_lmg_M240";

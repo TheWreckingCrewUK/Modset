@@ -1,11 +1,16 @@
 /*
 *
-* called with ["hq2","warning1"]
+*
 */
-Params ["_startingPoint","_endingPoint"];
+
+if((getMarkerColor "hq2") == "ColorWEST")exitWith{ hint "Enemy Base Captured"};
+
+_marker = capturedArray call BIS_fnc_selectRandom;
+
+_startingPoint = "hq2";
 
 _startMarker = getMarkerPos _startingPoint;
-_endMarker = getMarkerPos _endingPoint;
+_endMarker = getMarkerPos _marker;
 
 
 _Squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
@@ -36,6 +41,7 @@ _MechVehWaypoint = _VehicleGroup addWaypoint [_pos, 0];
 _MechVehWaypoint setWaypointType "TR UNLOAD";
 _MechVehWaypoint setWaypointBehaviour "CARELESS";
 _MechVehWaypoint setWaypointSpeed "FULL";
+_MechVehWaypoint setWaypointStatements ["True", format["['%1'] call twc_siteContested", _marker]];
 
 
 {
@@ -48,8 +54,3 @@ _MechVehWaypoint = _VehicleGroup addWaypoint [_endMarker, 0];
 _MechVehWaypoint setWaypointType "MOVE";
 _MechVehWaypoint setWaypointBehaviour "COMBAT";
 _MechVehWaypoint setWaypointSpeed "FULL";
-
-[_endingPoint]spawn{
-	sleep 900;
-	execVM format["server\siteSetup\%1\contested.sqf", (_this select 0)];
-};

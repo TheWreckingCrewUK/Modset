@@ -5,7 +5,28 @@ _marker setMarkerColor "colorWEST";
 
 { deleteVehicle _x } forEach allDead;
 
-capturedArray + [_marker];
+_enemyVehicle = nearestObjects [getMarkerPos _marker, ["Tank","Car","Truck"], 1000];
+{
+	if((typeOf _x) in friendlyVehiclesArray) then{
+		_enemyVehicle = _enemyVehicle - [_x];
+	};
+}forEach _enemyVehicle;
+{
+	deleteVehicle _x
+}forEach _enemyVehicle;
+
+_enemy = nearestObjects [getMarkerPos _marker, ["Man"], 1000];
+{
+	if((side _x) == WEST) then{
+		_enemy = _enemy - [_x];
+	};
+}forEach _enemy;
+
+{
+	deleteVehicle _x
+}forEach _enemy;
+
+capturedArray = capturedArray + [_marker];
 publicVariable "capturedArray";
 
 remainingArray = remainingArray - [_marker];
