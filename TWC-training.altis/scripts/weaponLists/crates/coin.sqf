@@ -71,7 +71,6 @@ _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_17Rnd_9mm",20];
 _RangeBoxAT AddMagazineCargoGlobal ["tf47_at4_m_HEDP",20];
 
 //items
-_RangeBoxAT additemcargoglobal ["tf47_optic_m3maaws",20];
 
 _RangeBoxRifle additemcargoglobal ["UK3CB_BAF_SpecterLDS_Dot_3D",20];
 _RangeBoxRifle additemcargoglobal ["UK3CB_BAF_TA648_308",20];

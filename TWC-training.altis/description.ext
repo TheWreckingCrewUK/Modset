@@ -21,8 +21,8 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "You joined as a Trainer";
-		subtitle = "You are not a Trainer, so switch to the trainee slot and apply to be one on the forums!";
+		title = "You joined as a ADMIN";
+		subtitle = "You are not a Management, so switch to the trainee slot!";
 		description = "TRAINING";
 		// pictureBackground = "";
 		// picture = "";

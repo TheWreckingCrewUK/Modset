@@ -76,7 +76,6 @@ _RangeBoxRifle AddWeaponCargoGlobal ["UK3CB_BAF_L131A1",20];
 _RangeBoxAT AddWeaponCargoGlobal ["UK3CB_BAF_NLAW_Launcher",20];
 _RangeBoxAT AddWeaponCargoGlobal ["HAFM_LAW",20];
 _RangeBoxAT addweaponCargoGlobal ["UK3CB_BAF_AT4_AT_Launcher",20];
-_RangeBoxAT AddWeaponCargoGlobal ["tf47_at4_HEDP",20];
 _RangeBoxAT AddWeaponCargoGlobal ["HAFM_LAW",20];
 _RangeBoxSniper AddWeaponCargoGlobal ["Trixie_AWM338",8];
 _RangeBoxSniper AddWeaponCargoGlobal ["Trixie_AWM338_Ghillie",8];
@@ -134,7 +133,6 @@ _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd",35];
 
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_17Rnd_9mm",20];
 
-_RangeBoxAT AddMagazineCargoGlobal ["tf47_at4_m_HEDP",20];
 
 _RangeBoxSniper AddMagazineCargoGlobal  ["Trixie_5x338_Mag",50];
 _RangeBoxSniper AddMagazineCargoGlobal  ["Trixie_20x762_Mag",50];

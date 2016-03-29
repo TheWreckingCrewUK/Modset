@@ -17,7 +17,7 @@ if (isNil "ERA") then {
 //Trainer actions
 _everyone = ["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12","p13","p14","p15"];
 
-_trainers = ["T1","T2","T3","T4","T5","T6","T7"];
+_trainers = ["T1","T2","T3","T4","T5","T6","T7","T8"];
 //(str player) in _trainers
 if ((str player) in _trainers) then {
 	isTrainer = true;
