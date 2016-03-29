@@ -4,6 +4,11 @@ execVM "SHK_pos\shk_pos_init.sqf";
 [] execVM "server\vehicles\advancedTowing.sqf";
 
 if(isServer) then{
+	[]spawn{
+		bluforDeath = 0;
+		publicVariable "bluforDeath";
+		[] call twc_redforSiteRecapAttempt;
+	};
 	#include "server\init.sqf";
 };
 

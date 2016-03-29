@@ -20,8 +20,8 @@ _CentralMarker = format ["%1",_marker];
 _mechsquad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Mechanized" >> "CUP_O_SLA_MechInfSquad");
 _ATteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Motorized" >> "CUP_O_SLA_MotInfSection_AT");
 _AAteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionAA");
-_BRDM = "CUP_O_BRDM2_SLA";
-_ZU23 = "CUP_O_Ural_ZU23_SLA";
+_BRDM = ["CUP_O_BRDM2_SLA"];
+_ZU23 = ["CUP_O_Ural_ZU23_SLA"];
 
 
 

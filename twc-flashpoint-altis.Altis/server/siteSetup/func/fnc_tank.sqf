@@ -19,8 +19,8 @@ _CentralMarker = format ["%1",_marker];
 
 //units
 _tanks = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Armored" >> "CUP_O_SLA_TankPlatoon");
-_t72 = "CUP_O_T72_SLA";
-_shilka = "CUP_O_ZSU23_SLA";
+_t72 = ["CUP_O_T72_SLA"];
+_shilka = ["CUP_O_ZSU23_SLA"];
 
 
 
@@ -35,12 +35,6 @@ if isServer then {
 	_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
 	_PatrolTank = [_pos, EAST, _shilka] call BIS_fnc_spawnGroup;
 	[_Patroltank, getmarkerpos _CentralMarker, 300] call CBA_fnc_taskDefend;
-};
-if isServer then {
-	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
-	_PatrolSPAAG = [_pos, EAST, _shilka] call BIS_fnc_spawnGroup;
-	[_PatrolSPAAG, getmarkerpos _CentralMarker, 300] call CBA_fnc_taskDefend;
 };
 
 [format["Task%1",TaskIncrease],format[ "Primary Objective : Capture %1",_CentralMarker],"An armoured coloum is located around here."] call TWC_fnc_CreateTask;

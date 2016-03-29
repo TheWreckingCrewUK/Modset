@@ -29,9 +29,11 @@ while {_sleep = _sleep + 15; _numrounds = _numrounds - 1; _numrounds > 0} do {
 	];
 	[_sleep, _gunner, _pos]spawn{sleep (_this select 0);(_this select 1) doArtilleryFire [(_this select 2), "8Rnd_82mm_Mo_shells", 1]};
 };
-[_mortar, _leader]spawn{
+[]spawn{
 	sleep 150;
-	_weapon = nearestObject [getMarkerPos "support1", "StaticWeapon"];
-	deleteVehicle _weapon;
-	deleteVehicle (_this select 1);
+	_weapon = nearestObjects [getMarkerPos "support1", ["StaticWeapon"], 30];
+	{deleteVehicle _x}forEach _weapon;
+	_men = nearestObjects [getMarkerPos "support1", ["Man"], 30];
+	sleep 5;
+	{deleteVehicle _x}forEach _men;
 };

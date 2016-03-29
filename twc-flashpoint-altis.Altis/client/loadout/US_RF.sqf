@@ -27,7 +27,7 @@ player addHeadgear "H_HelmetB_camo";
 comment "Add weapons";
 player addWeapon "CUP_arifle_M4A1_black";
 player addPrimaryWeaponItem "CUP_acc_ANPEQ_2";
-player addPrimaryWeaponItem "CUP_optic_RCO";
+player addPrimaryWeaponItem "CUP_optic_ACOG";
 player addWeapon "CUP_launch_M136";
 
 comment "Add items";

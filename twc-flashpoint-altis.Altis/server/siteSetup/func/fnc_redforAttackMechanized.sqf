@@ -1,39 +1,56 @@
-Params ["_startingPoint","_endingPoint"];
+/*
+*
+*
+*/
+
+if((getMarkerColor "hq2") == "ColorWEST")exitWith{ hint "Enemy Base Captured"};
+
+_marker = capturedArray call BIS_fnc_selectRandom;
+
+_startingPoint = "hq2";
+
+_startMarker = getMarkerPos _startingPoint;
+_endMarker = getMarkerPos _marker;
+
 
 _Squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
 _Vehicle = "CUP_O_BMP2_SLA";
-_CrewMember = "CUP_O_sla_Crew";
+_crewArray = ["CUP_O_sla_Crew","CUP_O_sla_Crew","CUP_O_sla_Crew"];
 
-_veh = _Vehicle createVehicle _startingPoint;
 
-_VehicleGroup = createGroup east;
-for "_i" from 0 to 2 do{
-_crewMemberAssign = _CrewMember Createunit[[0,0,0],_VehicleGroup];
-};
-((units _VehicleGroup) select 0) moveindriver _veh;
-((units _VehicleGroup) select 1) moveingunner _veh;
-((units _VehicleGroup) select 2) moveincommander _veh;
+_veh = _Vehicle createVehicle _startMarker;
+
+_vehicleGroup = [[0,0,0], EAST,_crewArray] call BIS_fnc_spawnGroup;
+_vehicleGrouparray = units _vehicleGroup;
+
+(_VehicleGroupArray select 0) moveindriver _veh;
+(_VehicleGroupArray select 1) moveingunner _veh;
+(_VehicleGroupArray select 2) moveincommander _veh;
+
 
 _MechInf = [[0,0,0], East,_Squad] call BIS_fnc_spawnGroup;
 {
-_x moveincargo _veh;
+	_x moveincargo _veh;
+	_x assignAsCargo _veh;
 } foreach units _MechInf;
 
+_pos = [_endMarker,[100,200],180,0,[1,50]] call SHK_pos;
+
 //Start moving.
-_pos = [_endingPoint,[150,200],[(_veh getdir _endingPoint) + 180,(_veh getdir _endingPoint) + 180],0,[1,5]] call SHK_pos;
+_MechVehWaypoint = _VehicleGroup addWaypoint [_pos, 0];
+_MechVehWaypoint setWaypointType "TR UNLOAD";
+_MechVehWaypoint setWaypointBehaviour "CARELESS";
+_MechVehWaypoint setWaypointSpeed "FULL";
+_MechVehWaypoint setWaypointStatements ["True", format["['%1'] call twc_siteContested", _marker]];
 
-_MechVehUnload = _VehicleGroup addWaypoint [_pos, 0];
-_MechVehUnload setWaypointType "TR UNLOAD";
-_MechVehUnload setWaypointBehaviour "COMBAT";
-_MechVehUnload setWaypointSpeed "FULL";
 
-_MechVehMove = _VehicleGroup addWaypoint [_endingPoint, 1];
-_MechVehMove setWaypointType "MOVE";
-_MechVehMove setWaypointBehaviour "COMBAT";
-_MechVehMove setWaypointSpeed "LIMITED";
+{
+	_x action ["GetOut", _veh];
+}foreach units _MechInf;
 
-_InfVehMove = _MechInf addWaypoint [_endingPoint, 0];
-_InfVehMove setWaypointType "MOVE";
-_InfVehMove setWaypointBehaviour "COMBAT";
-_InfVehMove setWaypointSpeed "FULL";
-_InfVehMove setWaypointStatements ["true", "[this,getpos this, 20] call CBA_fnc_taskDefend;"];
+[_MechInf, _endMarker,20] call CBA_fnc_taskAttack;
+
+_MechVehWaypoint = _VehicleGroup addWaypoint [_endMarker, 0];
+_MechVehWaypoint setWaypointType "MOVE";
+_MechVehWaypoint setWaypointBehaviour "COMBAT";
+_MechVehWaypoint setWaypointSpeed "FULL";

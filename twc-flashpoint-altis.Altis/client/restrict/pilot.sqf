@@ -3,9 +3,10 @@ true spawn {
 	//helos
     _blackhawkpilot = ["B_helicrew_F"];
     _wildcatPilot = ["B_helipilot_F"];
+	
     _blackhawk = ["CUP_B_UH60M_US"];
     _wildcat = ["CUP_B_AW159_Cannon_GB"];
-	_crew = ["B_helicrew_F"]; //Unused
+	//_crew = ["B_helicrew_F"]; //Unused
 	
 	//Enemy Vehicles
 	_t72 = ["CUP_O_T72_SLA"];

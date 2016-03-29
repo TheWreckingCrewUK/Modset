@@ -17,30 +17,13 @@ params["_marker"];
 
 _CentralMarker = format ["%1",_marker];
 
-//units
+_shilka = ["CUP_O_ZSU23_SLA"];
 _squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySquad");
 _ATteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionAT");
 _AAteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionAA");
-_BRDM = "CUP_O_BRDM2_SLA";
-_BRDMAT= "CUP_O_BRDM2_ATGM_SLA";
-/*
-for "_i" from 0 to 2 do {
-	if isServer then {
-		private ["_pos","_m"];
-		_pos = [getmarkerpos _CentralMarker,[0,300],random 360,0] call SHK_pos;
-		_PatrolSquad = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
-		[_PatrolSquad, getmarkerpos _CentralMarker, 450] call CBA_fnc_taskPatrol;
-		};
-	};
-for "_i" from 0 to 2 do {
-	if isServer then {
-		private ["_pos","_m"];
-		_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
-		_DefendSquad = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
-		[_DefendSquad, getmarkerpos _CentralMarker, 300] call CBA_fnc_taskPatrol;
-	};
-};
-*/
+_BRDM = ["CUP_O_BRDM2_SLA"];
+_BRDMAT= ["CUP_O_BRDM2_ATGM_SLA"];
+
 for "_i" from 0 to 2 do {
 if isServer then {
 		private ["_pos","_m"];
@@ -68,6 +51,12 @@ if isServer then {
 		_pos = [getmarkerpos _CentralMarker,[0,300],random 360,0] call SHK_pos;
 		_DefendBRDMAT = [_pos, EAST, _BRDMAT] call BIS_fnc_spawnGroup;
 		[_PatrolBRDMAT, getmarkerpos _CentralMarker, 400] call CBA_fnc_taskPatrol;
+	};
+if isServer then {
+	private ["_pos","_m"];
+	_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
+	_PatrolSPAAG = [_pos, EAST, _shilka] call BIS_fnc_spawnGroup;
+	[_PatrolSPAAG, getmarkerpos _CentralMarker, 300] call CBA_fnc_taskDefend;
 	};
 
 [format["Task%1",TaskIncrease],format[ "Primary Objective : Capture %1",_CentralMarker],"The enemy infantry holds this town."] call TWC_fnc_CreateTask;

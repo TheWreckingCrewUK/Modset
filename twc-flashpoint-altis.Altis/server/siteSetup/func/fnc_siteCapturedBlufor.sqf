@@ -11,6 +11,7 @@ _enemyVehicle = nearestObjects [getMarkerPos _marker, ["Tank","Car","Truck"], 10
 		_enemyVehicle = _enemyVehicle - [_x];
 	};
 }forEach _enemyVehicle;
+
 {
 	deleteVehicle _x
 }forEach _enemyVehicle;
@@ -25,6 +26,10 @@ _enemy = nearestObjects [getMarkerPos _marker, ["Man"], 1000];
 {
 	deleteVehicle _x
 }forEach _enemy;
+
+{
+	deleteGroup _x
+}forEach allGroups;
 
 capturedArray = capturedArray + [_marker];
 publicVariable "capturedArray";

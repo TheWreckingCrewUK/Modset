@@ -15,7 +15,6 @@ player forceAddUniform "U_B_CombatUniform_mcam";
 for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
-player addItemToUniform "ACE_DAGR";
 player addItemToUniform "ACRE_PRC148";
 player addVest "CUP_V_B_MTV_TL";
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};

@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [ ["Bravo US Army",      [["Bravo Squad Leader", [g_p9, "Squad Leader"]], ["Fire Team 1", [g_p10, "Fire Team Leader"], [g_p11, "Rifleman"], [g_p12, "Automatic Rifleman"], [g_p13, "Grenadier"]], ["Fire Team 2", [g_p14, "Fire Team Leader"], [g_p15, "Automatic Rifleman"], [g_p16, "Marksman"], [g_p17, "Medic"]]]]				
+g_playerlist = [ ["Bravo US Army",      [["Bravo Squad Leader", [g_p9, "Squad Leader"]], ["Fire Team 1", [g_p10, "Fire Team Leader"], [g_p11, "Rifleman"], [g_p12, "Grenadier"], [g_p13, "Automatic Rifleman"]], ["Fire Team 2", [g_p14, "Fire Team Leader"], [g_p15, "Automatic Rifleman"], [g_p16, "Marksman"], [g_p17, "Medic"]]]]				
 				
 				];
 
