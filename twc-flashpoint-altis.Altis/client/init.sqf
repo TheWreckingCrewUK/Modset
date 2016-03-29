@@ -3,6 +3,8 @@ player addEventHandler ["RESPAWN",{hint "Respawn Event Handler Active"; bluforDe
 
 execVM "client\restrict\init.sqf";
 execVM "client\cleanup\gear.sqf";
+execVM "client\radar\HelicopterRadar.sqf";
+execVM "client\Diary\init.sqf";
 g_class = "";
 g_group = "";
 g_unit = "";
