@@ -23,3 +23,14 @@ execVM "scripts\weaponLists\crates\modern.sqf";
 		default {diag_log format["%1, %2", time, "An error occured when attempting to switch time of day."];};
 	};
 };
+
+"tankTarget" addPublicVariableEventHandler {
+	_tankTarget = _this select 1;
+	
+	switch (_tankTarget) do {
+		case 0: {execVM "scripts\atRange\tankClose.sqf";};
+		case 1: {execVM "scripts\atRange\tankMedium.sqf";};
+		case 2: {execVM "scripts\atRange\tankFar.sqf";};
+		default {diag_log format ["%1, %2", time, "An error occured when attempting to spawn a tank."];};
+	};
+};

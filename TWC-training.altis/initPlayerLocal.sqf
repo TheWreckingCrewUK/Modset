@@ -67,9 +67,9 @@ if ((str player) in _trainers) then {
 	[player, 1, ["ACE_SelfActions","range"], _town] call ace_interact_menu_fnc_addActionToObject;
 	
 	atRange = ['atRange', 'AT Range', '', {}, {true}] call ace_interact_menu_fnc_createAction;
-	_tankClose = ['tankClose', '200m','', {execVM "scripts\atRange\tankClose.sqf";},{true}] call ace_interact_menu_fnc_createAction;
-	_tankMedium = ['tankMedium', '300m','', {execVM "scripts\atRange\tankMedium.sqf";}, {true}] call ace_interact_menu_fnc_createAction;
-	_tankFar = ['tankFar', '400m','', {execVM "scripts\atRange\tankFar.sqf";}, {true}] call ace_interact_menu_fnc_createAction;
+	_tankClose = ['tankClose', '200m','', {tankTarget = 0; publicVariableServer "tankTarget";},{true}] call ace_interact_menu_fnc_createAction;
+	_tankMedium = ['tankMedium', '300m','', {tankTarget = 1; publicVariableServer "tankTarget";}, {true}] call ace_interact_menu_fnc_createAction;
+	_tankFar = ['tankFar', '400m','', {tankTarget = 2; publicVariableServer "tankTarget";}, {true}] call ace_interact_menu_fnc_createAction;
 	
 	[player, 1, ["ACE_SelfActions","range"], atRange] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions", "range", "atRange"], _tankClose] call ace_interact_menu_fnc_addActionToObject;
