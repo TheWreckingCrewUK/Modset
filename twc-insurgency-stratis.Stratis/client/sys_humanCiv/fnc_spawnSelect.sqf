@@ -42,7 +42,7 @@ while {true} do {
 	for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 
 	{[_x] execVM "client\sys_humanCiv\arsenal.sqf";}forEach InsP_cacheGroup;
-	execVM "client\sys_humanCiv\missions\init.sqf";
+	//execVM "client\sys_humanCiv\missions\init.sqf";
 	
 	_near = nearestObject [player, "Box_FIA_Wps_F"];
 	waitUntil{player distance2D _near > 20};

@@ -3,9 +3,9 @@ waitUntil{bluforDeath > 20};
 bluforDeath = 0;
 publicVariable "bluforDeath";
 
-_type = ["Mechanized", "Motorized"] call BIS_fnc_selectRandom;
+if((str capturedArray) == "[]")exitWith{[] call twc_redforSiteRecapAttempt};
 
-if((str capturedArray) == "[]")exitWith{};
+_type = ["Mechanized", "Motorized","Airborne"] call BIS_fnc_selectRandom;
 
 if (_type == "Mechanized") then {
 [] call twc_redforAttackMechanized;
@@ -13,5 +13,6 @@ if (_type == "Mechanized") then {
 if (_type == "Motorized") then {
 [] call twc_redforAttackMotorized;
 };
-
-[] call twc_redforSiteRecapAttempt;
+if (_type == "Motorized") then {
+[] call twc_redforAttackAirborne;
+};

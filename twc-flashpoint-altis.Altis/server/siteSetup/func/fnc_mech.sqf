@@ -17,7 +17,8 @@ params["_marker"];
 _CentralMarker = format ["%1",_marker];
 
 //units
-_mechsquad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Mechanized" >> "CUP_O_SLA_MechInfSquad");
+_mechsquad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySquad");
+_bmp = ["CUP_O_BMP2_SLA"];
 _ATteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Motorized" >> "CUP_O_SLA_MotInfSection_AT");
 _AAteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionAA");
 _BRDM = ["CUP_O_BRDM2_SLA"];
@@ -30,6 +31,15 @@ for "_i" from 1 to 2 do {
 		private ["_pos","_m"];
 		_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
 		_PatrolSquad = [_pos, EAST, _mechsquad] call BIS_fnc_spawnGroup;
+		[_PatrolSquad, getmarkerpos _CentralMarker, 350] call CBA_fnc_taskPatrol;
+	};
+
+};
+for "_i" from 1 to 2 do {
+	if isServer then {
+		private ["_pos","_m"];
+		_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
+		_PatrolSquad = [_pos, EAST, _bmp] call BIS_fnc_spawnGroup;
 		[_PatrolSquad, getmarkerpos _CentralMarker, 350] call CBA_fnc_taskPatrol;
 	};
 };
@@ -57,5 +67,3 @@ if isServer then {
 		_PatrolSPAA = [_pos, EAST, _ZU23] call BIS_fnc_spawnGroup;
 		[_PatrolSPAA, getmarkerpos _CentralMarker, 200] call CBA_fnc_taskDefend;
 	};
-
-[format["Task%1",TaskIncrease],format[ "Primary Objective : Capture %1",_CentralMarker],"Enemy mechanised infantry is holding this position."] call TWC_fnc_CreateTask;

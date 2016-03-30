@@ -9,7 +9,7 @@ _marker = capturedArray call BIS_fnc_selectRandom;
 
 _startingPoint = "hq2";
 
-_startMarker = getMarkerPos _startingPoint;
+_pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] call SHK_pos;
 _endMarker = getMarkerPos _marker;
 
 
@@ -17,8 +17,7 @@ _Squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "C
 _Vehicle = "CUP_O_BMP2_SLA";
 _crewArray = ["CUP_O_sla_Crew","CUP_O_sla_Crew","CUP_O_sla_Crew"];
 
-
-_veh = _Vehicle createVehicle _startMarker;
+_veh = _Vehicle createVehicle _pos;
 
 _vehicleGroup = [[0,0,0], EAST,_crewArray] call BIS_fnc_spawnGroup;
 _vehicleGrouparray = units _vehicleGroup;
@@ -41,7 +40,7 @@ _MechVehWaypoint = _VehicleGroup addWaypoint [_pos, 0];
 _MechVehWaypoint setWaypointType "TR UNLOAD";
 _MechVehWaypoint setWaypointBehaviour "CARELESS";
 _MechVehWaypoint setWaypointSpeed "FULL";
-_MechVehWaypoint setWaypointStatements ["True", format["['%1'] call twc_siteContested", _marker]];
+_MechVehWaypoint setWaypointStatements ["True", format["['%1'] call twc_siteContestedCounter", _marker]];
 
 
 {

@@ -46,5 +46,3 @@ if isServer then {
 		_pos = [getmarkerpos _CentralMarker,[0,10],random 360,0] call SHK_pos;
 		_radarstation = [_pos, EAST, _radar] call BIS_fnc_spawnGroup;
 	};
-
-[format["Task%1",TaskIncrease],format[ "Primary Objective : Capture %1",_CentralMarker],"The enemy set up a radar station at this position."] call TWC_fnc_CreateTask;

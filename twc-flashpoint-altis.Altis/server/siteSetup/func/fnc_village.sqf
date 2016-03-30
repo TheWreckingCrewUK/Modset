@@ -46,5 +46,3 @@ if isServer then {
 		_DefendAA = [_pos, EAST, _AAteam] call BIS_fnc_spawnGroup;
 		[_DefendAA, getmarkerpos _CentralMarker, 75] call CBA_fnc_taskDefend;
 	};
-
-[format["Task%1",TaskIncrease],format[ "Primary Objective : Capture %1",_CentralMarker],"The enemy infantry holds this position."] call TWC_fnc_CreateTask;

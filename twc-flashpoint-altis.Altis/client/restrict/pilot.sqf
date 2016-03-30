@@ -6,7 +6,7 @@ true spawn {
 	
     _blackhawk = ["CUP_B_UH60M_US"];
     _wildcat = ["CUP_B_AW159_Cannon_GB"];
-	//_crew = ["B_helicrew_F"]; //Unused
+	_crew = []; //Unused
 	
 	//Enemy Vehicles
 	_t72 = ["CUP_O_T72_SLA"];

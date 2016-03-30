@@ -1,11 +1,25 @@
-TWC_fnc_timePlayed = compile preprocessFile "client\sys_Member\MainPopulate.sqf";
+if(!(getplayerUID player in memberIDArray))exitWith{hint "Not Tracking Time. Player is not a Member"};
+
+timeStart = diag_tickTime;
+
+TWCMemberAction = ["thisStartsTheTimeList","TWC Member","", {},{true}] call ace_interact_menu_fnc_createAction;
+
+timeSavingAction = ["TWC_TimePlayed", "Time Played", "", {
+	timePlayed = diag_tickTime - timeStart; timePlayed = (floor (timePlayed / 60));
+	hint format["You have played %1 Minutes", timePlayed];
+	if (timePlayed >= 5)then{
+		if ((getplayerUID player) in timePlayedArray) then {
+			timePlayedArray = timePlayedArray - [getplayerUID player];
+		};
+		timePlayedArray = timePlayedArray + [getplayerUID player];
+		publicVariable "timePlayedArray";
+	};	
+},{true}] call ace_interact_menu_fnc_createAction;
 
 
-playerTimeaction = ["TWCMember","Play Time","", {},{true}] call ace_interact_menu_fnc_createAction;
-TimeAction = ["TWC","Play Time","", {call TWC_fnc_timePlayed;},{true}] call ace_interact_menu_fnc_createAction;
 
 
-[player, 1, ["ACE_SelfActions"], playerTimeAction] call ace_interact_menu_fnc_addActionToObject;
-[player, 1, ["ACE_SelfActions", "TWCMember"], TimeAction] call ace_interact_menu_fnc_addActionToObject;
 
-nul = execVM "client\sys_Member\Timeplayed.sqf";
+[player, 1, ["ACE_SelfActions"], TWCMemberAction] call ace_interact_menu_fnc_addActionToObject;
+
+[player, 1, ["ACE_SelfActions", "thisStartsTheTimeList"], timeSavingAction] call ace_interact_menu_fnc_addActionToObject;

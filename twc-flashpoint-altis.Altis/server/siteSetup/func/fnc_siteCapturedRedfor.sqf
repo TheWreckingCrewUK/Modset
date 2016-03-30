@@ -24,6 +24,8 @@ _enemy = nearestObjects [getMarkerPos _marker, ["Man"], 1000];
 	deleteGroup _x
 }forEach allGroups;
 
+if ((_marker) in remainingArray) exitWith{};
+
 capturedArray = capturedArray - [_marker];
 publicVariable "capturedArray";
 

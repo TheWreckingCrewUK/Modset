@@ -36,5 +36,3 @@ if isServer then {
 	_PatrolTank = [_pos, EAST, _shilka] call BIS_fnc_spawnGroup;
 	[_Patroltank, getmarkerpos _CentralMarker, 300] call CBA_fnc_taskDefend;
 };
-
-[format["Task%1",TaskIncrease],format[ "Primary Objective : Capture %1",_CentralMarker],"An armoured coloum is located around here."] call TWC_fnc_CreateTask;

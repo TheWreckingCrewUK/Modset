@@ -12,14 +12,6 @@ if (isServer) then {
 	execVM "server\init.sqf";
 };
 
-if(isServer) then
-{
-	_serverID = str(round((random(100000)) + random 10000));
-	profileNameSpace setVariable ["TWC_ServerID", _serverID];
-	TWCServerID = profileNameSpace getVariable "TWC_ServerID";
-	publicVariable "TWCserverID";
-};
-
 execVM "client\zeus\zeus.sqf";
 execVM "client\zeus\zeus-Fakematty.sqf";
 execVM "client\zeus\zeus-jayman.sqf";
@@ -122,9 +114,6 @@ _specialSlots = ["p21","p22","p23","p25","p26","p27","humanCiv1","humanCiv2","hu
 
 if ((str player) in _specialSlots)then{
 	
-	_TimeplayedArray = profileNameSpace getVariable ["TWCPub_timePlayed", [-1, -1]];
-	_TimePlayed = _TimePlayedArray select 0;
-	
 	_UID = getPlayerUID player;
 
 	if((_UID) != "_SP_PLAYER_")then{	
@@ -156,13 +145,13 @@ if ((str player) in _specialSlots)then{
 		};
 
 		if ((str player) in _humancivs) then{
-			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || _TimePlayed < 30 || (str player) in InsP_playersKilledAsCivs) then{
+			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || (_UID  in InsP_playersKilledAsCivs) || !(_UID in timePlayedArray)) then{
 				["End3", false, 0] call BIS_fnc_endMission;
 			};
 		};
 		
 		if ((str player) in _apachePilots) then{
-			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || _TimePlayed < 30) then{
+			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || !(_UID in timePlayedArray)) then{
 				["End4", false, 0] call BIS_fnc_endMission;
 			};
 		};

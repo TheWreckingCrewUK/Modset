@@ -20,7 +20,7 @@ _gunner = leader _mortar;
 
 _targetLocation = getPos _target;
 _sleep = 15;
-while {_sleep = _sleep + 15; _numrounds = _numrounds - 1; _numrounds > 0} do {
+while {_sleep = _sleep + 12; _numrounds = _numrounds - 1; _numrounds > 0} do {
 
 	_pos = [
 		((_targetLocation select 0) - _radius + (2 * random _radius)),
@@ -30,7 +30,7 @@ while {_sleep = _sleep + 15; _numrounds = _numrounds - 1; _numrounds > 0} do {
 	[_sleep, _gunner, _pos]spawn{sleep (_this select 0);(_this select 1) doArtilleryFire [(_this select 2), "8Rnd_82mm_Mo_shells", 1]};
 };
 []spawn{
-	sleep 150;
+	sleep 120;
 	_weapon = nearestObjects [getMarkerPos "support1", ["StaticWeapon"], 30];
 	{deleteVehicle _x}forEach _weapon;
 	_men = nearestObjects [getMarkerPos "support1", ["Man"], 30];

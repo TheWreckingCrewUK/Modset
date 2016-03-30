@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Delta  German Army", [["Delta Squad Leader", [g_p28, "Squad Leader"], [g_p29, "Rifleman"], [g_p30, "Automatic Rifleman"], [g_p31, "Assistant Automatic Rifleman"], [g_p32, "Medic"]]]]				
+g_playerlist = [["Echo  German Army", [["Delta Squad Leader", [g_p28, "Squad Leader"], [g_p29, "Rifleman"], [g_p30, "Automatic Rifleman"], [g_p31, "Assistant Automatic Rifleman"], [g_p32, "Medic"]]]]				
 				
 				];
 

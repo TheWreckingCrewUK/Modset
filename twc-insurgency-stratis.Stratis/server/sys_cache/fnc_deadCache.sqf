@@ -3,6 +3,8 @@ _killer = _this select 1;
 _intelPos = (getPosATL _deadCache);
 _killerPos = (GetPosATL _killer);
 
+[]spawn{sleep 60;{deleteVehicle _x}forEach allDead};
+
 InsP_ammoCaches = InsP_ammoCaches + 1;
 publicVariable "InsP_ammoCaches";
 

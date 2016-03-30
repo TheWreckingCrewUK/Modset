@@ -7,17 +7,11 @@ if(isServer) then{
 	[]spawn{
 		bluforDeath = 0;
 		publicVariable "bluforDeath";
+		timePlayedArray = [];
+		publicVariable "timePlayedArray";
 		[] call twc_redforSiteRecapAttempt;
 	};
 	#include "server\init.sqf";
-};
-
-if(isServer) then
-{
-	_serverID = str(round((random(100000)) + random 10000));
-	profileNameSpace setVariable ["TWC_ServerID", _serverID];
-	TWCServerID = profileNameSpace getVariable "TWC_ServerID";
-	publicVariable "TWCserverID";
 };
 
 execVM "client\zeus\zeus.sqf";
@@ -68,9 +62,6 @@ _UID = getPlayerUID player;
 _specialSlots = ["helo1","helo2","helo3"];
 
 if ((str player) in _specialSlots)then{
-	
-	_TimeplayedArray = profileNameSpace getVariable ["TWCPub_timePlayed", [-1, -1]];
-	_TimePlayed = _TimePlayed select 0;
 	
 	_UID = getPlayerUID player;
 

@@ -21,7 +21,7 @@ cacheDefenseSquad = configfile >> "CfgGroups" >> "Indep" >> "CUP_I_NAPA" >> "Inf
 
 smallTownSquad = ["CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AKM"];
 
-townSpawn = ["CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AKM"];
+townSpawn = ["CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AKM"];
 townSquadWave = ["CUP_I_GUE_Soldier_AKM","CUP_I_GUE_Soldier_AT","CUP_I_GUE_Soldier_AKM"];
 
 vehicleList = ["C_Offroad_01_F", "C_SUV_01_F", "C_Quadbike_01_F"];
