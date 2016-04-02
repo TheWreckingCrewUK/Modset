@@ -3,7 +3,6 @@
 //Set Setup Defines:
 twc_siteSetup = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteSetup.sqf";
 
-twc_deleteTriggers = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_deleteTriggers.sqf";
 twc_siteDeciding = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteDeciding.sqf";
 
 twc_siteCapturedRedfor = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteCapturedRedfor.sqf";
@@ -31,3 +30,8 @@ twc_mortarAttack = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_
 
 //Hostile Logistics Define:
 twc_basicLogistics = compile preprocessfilelinenumbers "server\logistics\func\fnc_basicLogistics.sqf";
+twc_constantLogistics = compile preprocessfilelinenumbers "server\logistics\func\fnc_constantLogistics.sqf";
+
+//Hostile Patrols
+twc_redforMotorizedPatrol = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforMotorizedPatrol.sqf";
+twc_redforInfantryPatrol = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforInfantryPatrol.sqf";

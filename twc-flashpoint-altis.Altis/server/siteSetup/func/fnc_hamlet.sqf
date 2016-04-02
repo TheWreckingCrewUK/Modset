@@ -23,21 +23,30 @@ _squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "C
 _ATteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionAT");
 _AAteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionAA");
 
-if isServer then {
+[_CentralMarker, _AAteam] spawn{
+	if isServer then {
 		private ["_pos","_m"];
-		_pos = [getmarkerpos _CentralMarker,[0,50],random 360,0] call SHK_pos;
-		_PatrolSquad = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
-		[_PatrolSquad, getmarkerpos _CentralMarker, 50] call CBA_fnc_taskPatrol;
+		_pos = [getmarkerpos (_this select 0),[0,50],random 360,0] call SHK_pos;
+		_DefendAA = [_pos, EAST, (_this select 1)] call BIS_fnc_spawnGroup;
+		[_DefendAA, getmarkerpos (_this select 0), 100] call CBA_fnc_taskPatrol;
 	};
-if isServer then {
+};
+[_CentralMarker, _squad] spawn{
+	if isServer then {
+		sleep 3;
 		private ["_pos","_m"];
-		_pos = [getmarkerpos _CentralMarker,[0,25],random 360,0] call SHK_pos;
-		_DefendAT = [_pos, EAST, _ATteam] call BIS_fnc_spawnGroup;
-		[_DefendAT, getmarkerpos _CentralMarker, 25] call CBA_fnc_taskDefend;
+		_pos = [getmarkerpos (_this select 0),[0,100],random 360,0] call SHK_pos;
+		_PatrolSquad = [_pos, EAST, (_this select 1)] call BIS_fnc_spawnGroup;
+		[_PatrolSquad, getmarkerpos (_this select 0), 100] call CBA_fnc_taskDefend;
 	};
-if isServer then {
+};
+
+[_CentralMarker, _ATteam] spawn{
+	if isServer then {
+		sleep 5;
 		private ["_pos","_m"];
-		_pos = [getmarkerpos _CentralMarker,[0,25],random 360,0] call SHK_pos;
-		_DefendAA = [_pos, EAST, _AAteam] call BIS_fnc_spawnGroup;
-		[_DefendAA, getmarkerpos _CentralMarker, 25] call CBA_fnc_taskDefend;
+		_pos = [getmarkerpos (_this select 0),[0,50],random 360,0] call SHK_pos;
+		_DefendAT = [_pos, EAST, (_this select 1)] call BIS_fnc_spawnGroup;
+		[_DefendAT, getmarkerpos (_this select 0), 100] call CBA_fnc_taskPatrol;
 	};
+};

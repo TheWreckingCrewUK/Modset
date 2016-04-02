@@ -50,6 +50,7 @@ if (g_class == "BAF_SL") then {
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
 		["ACE_M26_Clacker",1],
+		["ACE_wirecutter",1],
 		["ACRE_PRC343",1],
 		["ACRE_PRC117F",1]
     ];
@@ -291,6 +292,7 @@ if (g_class == "US_SL") then{
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_2",1],
 		["ACE_DAGR",1],
+		["ACE_wirecutter",1],
 		["ACRE_PRC148",1],
 		["ACRE_PRC117F",1]
 	];
@@ -510,6 +512,7 @@ if (g_class == "USMC_SL") then{
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_15",1],
 		["ACE_DAGR",1],
+		["ACE_wirecutter",1],
 		["ACRE_PRC148",1],
 		["ACRE_PRC117F",1]
 	];

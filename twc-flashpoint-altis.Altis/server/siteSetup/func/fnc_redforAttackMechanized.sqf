@@ -32,10 +32,9 @@ _MechInf = [[0,0,0], East,_Squad] call BIS_fnc_spawnGroup;
 	_x moveincargo _veh;
 	_x assignAsCargo _veh;
 } foreach units _MechInf;
+_dir = [getMarkerPos _marker, getMarkerPos _startingPoint] call BIS_fnc_dirTo;
+_pos = [_endMarker,[100,200],_dir,0,[1,50]] call SHK_pos;
 
-_pos = [_endMarker,[100,200],180,0,[1,50]] call SHK_pos;
-
-//Start moving.
 _MechVehWaypoint = _VehicleGroup addWaypoint [_pos, 0];
 _MechVehWaypoint setWaypointType "TR UNLOAD";
 _MechVehWaypoint setWaypointBehaviour "CARELESS";

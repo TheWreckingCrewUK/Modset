@@ -1,6 +1,7 @@
 params["_marker"];
 
 _marker setMarkerColor "colorYellow";
+[_marker] call BIS_fnc_taskSetCurrent;
 
 
 _trg2 = createTrigger ["EmptyDetector", getMarkerPos _marker];

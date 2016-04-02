@@ -26,15 +26,16 @@ _BRDMAT= ["CUP_O_BRDM2_ATGM_SLA"];
 
 if isServer then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,250],random 360,0,[1],[300, "Air"]] call SHK_pos;
+	_pos = [getmarkerpos _CentralMarker,[200,300],random 360,0,[1],[300, "Air"]] call SHK_pos;
 	_PatrolSPAAG = [_pos, EAST, _shilka] call BIS_fnc_spawnGroup;
+	[_PatrolSPAAG, getmarkerpos _CentralMarker, 300] call CBA_fnc_taskDefend;
 	};
 	
 if isServer then {
 		private ["_pos","_m"];
 		_pos = [getmarkerpos _CentralMarker,[0,300],random 360,0] call SHK_pos;
 		_PatrolBRDM = [_pos, EAST, _BRDM] call BIS_fnc_spawnGroup;
-		[_PatrolBRDM, getmarkerpos _CentralMarker, 350] call CBA_fnc_taskPatrol;
+		[_PatrolBRDM, getmarkerpos _CentralMarker, 400] call CBA_fnc_taskPatrol;
 	};
 [_CentralMarker, _BRDMAT] spawn{
 	if isServer then {
@@ -42,40 +43,30 @@ if isServer then {
 		private ["_pos","_m"];
 		_pos = [getmarkerpos (_this select 0),[0,300],random 360,0] call SHK_pos;
 		_PatrolBRDMAT = [_pos, EAST, (_this select 1)] call BIS_fnc_spawnGroup;
-		[_PatrolBRDMAT, getmarkerpos (_this select 0), 350] call CBA_fnc_taskPatrol;
+		[_PatrolBRDMAT, getmarkerpos (_this select 0), 400] call CBA_fnc_taskPatrol;
 	};
 };
 
 [_CentralMarker, _ATteam] spawn{
-	for "_i" from 0 to 1 do {
+	for "_i" from 0 to 2 do {
 	if isServer then {
 			sleep 2;
 			private ["_pos","_m"];
-			_pos = [getmarkerpos (_this select 0),[50,200],random 360,0] call SHK_pos;
+			_pos = [getmarkerpos (_this select 0),[0,100],random 360,0] call SHK_pos;
 			_DefendAT = [_pos, EAST, (_this select 1)] call BIS_fnc_spawnGroup;
-			[_DefendAT, getmarkerpos (_this select 0), 200] call CBA_fnc_taskPatrol;
+			[_DefendAT, getmarkerpos (_this select 0), 200] call CBA_fnc_taskDefend;
 		};
 	};
 
 };
 [_CentralMarker, _AAteam] spawn{
-	for "_i" from 0 to 1 do {
+	for "_i" from 0 to 2 do {
 		if isServer then {
+			sleep 3;
 			private ["_pos","_m"];
-			_pos = [getmarkerpos (_this select 0),[50,200],random 360,0] call SHK_pos;
+			_pos = [getmarkerpos (_this select 0),[0,100],random 360,0] call SHK_pos;
 			_DefendAA = [_pos, EAST, (_this select 1)] call BIS_fnc_spawnGroup;
-			[_DefendAA, getmarkerpos (_this select 0), 200] call CBA_fnc_taskPatrol;
-		};
-	};
-};
-[_CentralMarker, _squad] spawn{
-	for "_i" from 0 to 1 do {
-		if isServer then{
-			sleep 5;
-			private ["_pos","_m"];
-			_pos = [getmarkerpos (_this select 0),[50,200],random 360,0] call SHK_pos;
-			_DefendAA = [_pos, EAST, (_this select 1)] call BIS_fnc_spawnGroup;
-			[_DefendAA, getmarkerpos (_this select 0), 200] call CBA_fnc_taskDefend;
+			[_DefendAA, getmarkerpos (_this select 0), 20] call CBA_fnc_taskDefend;
 		};
 	};
 };

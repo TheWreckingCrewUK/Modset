@@ -1,9 +1,13 @@
 #include "playerFunctions.sqf";
+
+InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\diary\missionStatus.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
+
 player addEventHandler ["RESPAWN",{hint "Respawn Event Handler Active"; bluforDeath = bluforDeath + 1; publicVariable "bluforDeath"}];
 
 execVM "client\restrict\init.sqf";
 execVM "client\cleanup\gear.sqf";
-execVM "client\radar\HelicopterRadar.sqf";
+execVM "client\diary\init.sqf";
 g_class = "";
 g_group = "";
 g_unit = "";
@@ -253,6 +257,7 @@ if (!isNil "helo1" && {player == helo1}) then {
 	g_unit = "031";
 	g_name = "Wildcat Pilot";
 	g_radio = "";
+	execVM "client\radar\helicopterRadar.sqf";
 };
 if (!isNil "helo2" && {player == helo2}) then {
     g_class = "BLK_PLT";
@@ -260,6 +265,7 @@ if (!isNil "helo2" && {player == helo2}) then {
 	g_unit = "032";
 	g_name = "BlackHawk Pilot";
 	g_radio = "";
+	execVM "client\radar\helicopterRadar.sqf";
 	prepAction = player addAction ["<t color='#FF0000'>Prep Osprey For Paradrop</t>", "_vehicle = cursorObject; hint str cursorObject; [_vehicle] call twc_paradropSetup"];
 };
 

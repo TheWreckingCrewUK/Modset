@@ -2,7 +2,7 @@
 true spawn {
     //helicopters
     _blackhawkpilot = ["B_Pilot_F"];
-    _blackhawk = ["CUP_B_UH60M_US"];
+    _blackhawk = ["B_Heli_Light_01_F"];
 	_crew = ["B_helicrew_F"];
 
 

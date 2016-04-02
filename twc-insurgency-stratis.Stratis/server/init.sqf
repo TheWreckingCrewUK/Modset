@@ -1,6 +1,5 @@
 #include "defines.sqf";
 execVM "server\cleanup\deadbodies.sqf";
-
 InsP_fnc_deadCache = compile preProcessFileLineNumbers "server\sys_cache\fnc_deadCache.sqf";
 InsP_fnc_deadAAGun = compile preProcessFileLineNumbers "server\sys_aa\fnc_deadAAGun.sqf";
 

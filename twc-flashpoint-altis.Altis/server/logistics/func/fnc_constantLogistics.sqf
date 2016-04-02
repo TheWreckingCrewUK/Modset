@@ -1,12 +1,17 @@
 /*
 _endingPoint = remainingArray call BIS_fnc_selectRandom;
-[_endingPoint] call twc_basicLogistics;
+[_endingPoint] call twc_constantLogistics;
 * 
 */
 
-Params ["_endingPoint"];
+_endingPoint = remainingArray call BIS_fnc_selectRandom;
 
-_startingPoint = "hq2";
+_startingPoint = remainingArray call BIS_fnc_selectRandom;
+
+while{_startingPoint == _endingPoint}do{
+_endingPoint = remainingArray call BIS_fnc_selectRandom
+};
+
 _car = "CUP_O_Ural_Reammo_SLA";
 _fuel = "CUP_O_Ural_Refuel_SLA";
 _squad = ["CUP_O_SLA_Soldier","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_AT"];
@@ -16,7 +21,7 @@ _squad = ["CUP_O_SLA_Soldier","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_AT"];
 if isServer then {
 	private ["_pos","_m"];
 	_pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] call SHK_pos;
-	_PatrolSquad = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
+	_PatrolSquad = [_pos, Independent, _squad] call BIS_fnc_spawnGroup;
 	_vehicle = _car createVehicle _pos;
 	_pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] call SHK_pos;
 	_vehiclefuel = _fuel createVehicle _pos;
@@ -27,7 +32,7 @@ if isServer then {
 	
 	_vehicle addEventHandler ["hit",{player sidechat str (_this select 0) ;{(_this select 0) setHit [_x,0] } foreach ["wheel_1_1_steering","wheel_1_2_steering","wheel_2_1_steering","wheel_2_2_steering"] } ];
 	
-	_vehicle addEventHandler ["Killed",{if(TWC_enemySupply < 3)then{TWC_enemySupply = TWC_enemySupply + 1}} ];
+	_vehicle addEventHandler ["Killed",{if(TWC_enemySupply < 3)then{TWC_enemySupply = TWC_enemySupply + 1}; [] call twc_constantLogistics} ];
 	
 	_vehiclefuel addEventHandler ["hit",{player sidechat str (_this select 0) ;{(_this select 0) setHit [_x,0] } foreach ["wheel_1_1_steering","wheel_1_2_steering","wheel_2_1_steering","wheel_2_2_steering"] } ];
 	
@@ -62,6 +67,5 @@ if isServer then {
 	_wp2 setWaypointSpeed "NORMAL";
 	_wp2 setWaypointFormation "COLUMN";
 	_wp2 setWaypointTimeout [20,20,20];
-	_wp2 setWaypointStatements ["True", "if(TWC_enemySupply > -3)then{TWC_enemySupply = TWC_enemySupply - .25}; _trucks = NearestObjects [
-	getPos this, ['Truck','Car','Support'], 30]; {deleteVehicle _x}foreach _trucks;{deleteVehicle _x}foreach thisList"];
+	_wp2 setWaypointStatements ["True", "_trucks = NearestObjects [getPos this, ['Truck','Car','Support'], 30]; {deleteVehicle _x}foreach _trucks;{deleteVehicle _x}foreach thisList; [] call twc_constantLogistics;"];
 };

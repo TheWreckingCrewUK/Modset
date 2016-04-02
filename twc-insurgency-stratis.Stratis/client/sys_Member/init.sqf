@@ -10,6 +10,7 @@ timeSavingAction = ["TWC_TimePlayed", "Time Played", "", {
 	if (timePlayed >= 5)then{
 		if ((getplayerUID player) in timePlayedArray) then {
 			timePlayedArray = timePlayedArray - [getplayerUID player];
+			publicVariable "timePlayedArray";
 		};
 		timePlayedArray = timePlayedArray + [getplayerUID player];
 		publicVariable "timePlayedArray";

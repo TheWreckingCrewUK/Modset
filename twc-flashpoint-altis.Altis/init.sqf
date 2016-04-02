@@ -1,4 +1,5 @@
-execVM "SHK_pos\shk_pos_init.sqf";
+_script = execVM "SHK_pos\shk_pos_init.sqf";
+waitUntil {scriptDone _script};
 
 [] execVM "server\vehicles\sa_ropes.sqf";
 [] execVM "server\vehicles\advancedTowing.sqf";
@@ -7,11 +8,13 @@ if(isServer) then{
 	[]spawn{
 		bluforDeath = 0;
 		publicVariable "bluforDeath";
-		timePlayedArray = [];
-		publicVariable "timePlayedArray";
 		[] call twc_redforSiteRecapAttempt;
 	};
 	#include "server\init.sqf";
+	twc_enemySupply = -3;
+	publicVariable "twc_enemySupply";
+	timePlayedArray = [];
+	publicVariable "timePlayedArray";
 };
 
 execVM "client\zeus\zeus.sqf";
@@ -68,7 +71,7 @@ if ((str player) in _specialSlots)then{
 	if((_UID) != "_SP_PLAYER_" || (_UID) != "76561198070630639")then{	
 		_pilots = ["helo1", "helo2", "helo3"];
 		_numPlayers = switch (str player) do{
-			case "helo1": {5};
+			case "helo1": {0};
 			case "helo2": {10};
 			case "helo3": {15};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};

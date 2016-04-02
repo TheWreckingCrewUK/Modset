@@ -1,0 +1,17 @@
+[West,["aa1"],["","Anti Air Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["air1"],["","Air Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+//[West,["airport1"],["","Airport Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["armour1"],["","Armour Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["hq1"],["","HQ Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["hq2"],["","HQ Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["inf1"],["","Infantry Site",""],objNull,False,1,True,"",False] call BIS_fnc_taskCreate;
+[West,["inf2"],["","Infantry Site",""],objNull,False,1,True,"",False] call BIS_fnc_taskCreate;
+[West,["inf3"],["","Infantry Site",""],objNull,False,1,True,"",False] call BIS_fnc_taskCreate;
+[West,["installation1"],["","Installation Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["mech1"],["","Mechanized Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["mech2"],["","Mechanized Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["motorized1"],["","Motorized Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+//[West,["navy1"],["","Navy Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["radar"],["","Radar Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["support1"],["","Support Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["warning1"],["","Warning Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;

@@ -4,18 +4,20 @@
 */
 
 
+_startingPoint = remainingArray call BIS_fnc_selectRandom;
+_marker = remainingArray call BIS_fnc_selectRandom;
 
-if((getMarkerColor "hq2") == "ColorWEST")exitWith{};
-_startingPoint = "hq2";
+while{_startingPoint == _marker}do{
+_marker = remainingArray call BIS_fnc_selectRandom
+};
+
 _car = "CUP_O_UAZ_OPEN_RU";
 _squad = ["CUP_O_SLA_Soldier","CUP_O_SLA_Soldier","CUP_O_SLA_Soldier_GL","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_MG"];
 
-_marker = capturedArray call BIS_fnc_selectRandom;
-
 if isServer then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] call SHK_pos;
-	_PatrolSquad = [_pos, EAST, _squad] call BIS_fnc_spawnGroup;
+	_pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1,200],[300, "Air"]] call SHK_pos;
+	_PatrolSquad = [_pos, Independent, _squad] call BIS_fnc_spawnGroup;
 	_vehicle = _car createVehicle getmarkerPos _startingpoint;
 	_men = units _PatrolSquad;
 	
@@ -34,13 +36,12 @@ if isServer then {
 	
 
 	_dir = [getMarkerPos _marker, getMarkerPos _startingPoint] call BIS_fnc_dirTo;
-	_pos = [getmarkerpos _marker,[200,300],_dir,0,[1,50]] call SHK_pos;
+	_pos = [getMarkerpos _marker,[100,200],_dir,0,[1,200],[300, "Air"]] call SHK_pos;
 	
 	_wp = _PatrolSquad addWaypoint [_pos, 0];
-	_wp setWaypointType "GETOUT";
-	_wp setWaypointBehaviour "CARELESS";
-	_wp setWaypointSpeed "FULL";
-	_wp setWaypointStatements ["True", format["['%1'] call twc_siteContestedCounter", _marker]];
-	
-	[_PatrolSquad, getmarkerPos _marker,20] call CBA_fnc_taskAttack;
+	_wp setWaypointType "MOVE";
+	_wp setWaypointBehaviour "AWARE";
+	_wp setWaypointSpeed "NORMAL";
+	_wp setWaypointTimeout [30,30,30];
+	_wp setWaypointStatements ["True","_trucks = NearestObjects [getPos this, ['Truck','Car','Support'], 30]; {deleteVehicle _x}foreach _trucks;{deleteVehicle _x}foreach thisList"];
 };
