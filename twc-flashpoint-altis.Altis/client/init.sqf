@@ -3,7 +3,7 @@
 InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\diary\missionStatus.sqf"},{true}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
 
-player addEventHandler ["RESPAWN",{hint "Respawn Event Handler Active"; bluforDeath = bluforDeath + 1; publicVariable "bluforDeath"}];
+player addEventHandler ["RESPAWN",{hint "Respawn Event Handler Active"; bluforDeath = bluforDeath + 1; publicVariable "bluforDeath"; bluforDeath2 = bluforDeath2 + 1; publicVariable "bluforDeath2"}];
 
 execVM "client\restrict\init.sqf";
 execVM "client\cleanup\gear.sqf";

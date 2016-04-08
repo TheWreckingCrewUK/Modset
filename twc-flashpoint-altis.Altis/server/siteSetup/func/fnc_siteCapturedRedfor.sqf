@@ -25,9 +25,6 @@ _enemy = nearestObjects [getMarkerPos _marker, ["Man","WeaponHolder","GroundWeap
 	deleteGroup _x
 }forEach allGroups;
 
-[] call twc_constantLogistics;
-[] call twc_redforInfantryPatrol;
-[] call twc_redforMotorizedPatrol;
 
 if ((_marker) in remainingArray) exitWith{};
 

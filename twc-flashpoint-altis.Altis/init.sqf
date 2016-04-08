@@ -10,6 +10,11 @@ if(isServer) then{
 		publicVariable "bluforDeath";
 		[] call twc_redforSiteRecapAttempt;
 	};
+	[] spawn{
+		bluforDeath2 = 0;
+		publicVariable "bluforDeath2";
+		[] call twc_patrols;
+	};
 	#include "server\init.sqf";
 	twc_enemySupply = -3;
 	publicVariable "twc_enemySupply";

@@ -34,14 +34,16 @@ _marker setMarkerColor "colorWEST";
 		deleteGroup _x
 	}forEach allGroups;
 };
-[] call twc_constantLogistics;
-[] call twc_redforInfantryPatrol;
-[] call twc_redforMotorizedPatrol;
 
 if ((_marker) in capturedArray) exitWith{};
 
 capturedArray = capturedArray + [_marker];
 publicVariable "capturedArray";
+
+if(count capturedArray == 0)then{
+	["All Bases Captured. Stick around for the Insurgency Stratis", "hint", True, True] call BIS_fnc_MP;
+	[] spawn {sleep 15; ["end1", false, 0] call BIS_fnc_endMission};
+};
 
 remainingArray = remainingArray - [_marker];
 publicVariable "capturedArray";

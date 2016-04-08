@@ -33,5 +33,6 @@ twc_basicLogistics = compile preprocessfilelinenumbers "server\logistics\func\fn
 twc_constantLogistics = compile preprocessfilelinenumbers "server\logistics\func\fnc_constantLogistics.sqf";
 
 //Hostile Patrols
+twc_patrols = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_patrols.sqf";
 twc_redforMotorizedPatrol = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforMotorizedPatrol.sqf";
 twc_redforInfantryPatrol = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforInfantryPatrol.sqf";
