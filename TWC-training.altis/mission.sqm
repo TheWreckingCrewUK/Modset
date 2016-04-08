@@ -8,18 +8,18 @@ class EditorData
 	toggles=110;
 	class ItemIDProvider
 	{
-		nextID=4983;
+		nextID=4996;
 	};
 	class MarkerIDProvider
 	{
-		nextID=157;
+		nextID=170;
 	};
 	class Camera
 	{
-		pos[]={23537.25,28.25,18440};
+		pos[]={23583.967,145.41548,18359.047};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -104,7 +104,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3893;
+		items=3905;
 		class Item0
 		{
 			dataType="Marker";
@@ -63835,6 +63835,102 @@ class Mission
 			};
 			id=4982;
 			type="TWC_warrior_D";
+		};
+		class Item3893
+		{
+			dataType="Marker";
+			position[]={23509.875,3.25,18687.375};
+			name="atTA1";
+			type="Empty";
+			id=4983;
+		};
+		class Item3894
+		{
+			dataType="Marker";
+			position[]={23530.125,3.25,18688};
+			name="atTA2";
+			type="Empty";
+			id=4984;
+		};
+		class Item3895
+		{
+			dataType="Marker";
+			position[]={23529.25,3.25,18709.375};
+			name="atTA3";
+			type="Empty";
+			id=4985;
+		};
+		class Item3896
+		{
+			dataType="Marker";
+			position[]={23511,3.25,18708.875};
+			name="atTA4";
+			type="Empty";
+			id=4986;
+		};
+		class Item3897
+		{
+			dataType="Marker";
+			position[]={23510.375,3.25,18788.625};
+			name="atTB1";
+			type="Empty";
+			id=4987;
+		};
+		class Item3898
+		{
+			dataType="Marker";
+			position[]={23531.5,3.25,18788.625};
+			name="atTB2";
+			type="Empty";
+			id=4988;
+		};
+		class Item3899
+		{
+			dataType="Marker";
+			position[]={23530.625,3.25,18809.75};
+			name="atTB3";
+			type="Empty";
+			id=4989;
+		};
+		class Item3900
+		{
+			dataType="Marker";
+			position[]={23511.375,3.25,18810.75};
+			name="atTB4";
+			type="Empty";
+			id=4990;
+		};
+		class Item3901
+		{
+			dataType="Marker";
+			position[]={23508.625,3.25,18895.5};
+			name="atTC1";
+			type="Empty";
+			id=4991;
+		};
+		class Item3902
+		{
+			dataType="Marker";
+			position[]={23531.625,3.25,18895};
+			name="atTC2";
+			type="Empty";
+			id=4992;
+		};
+		class Item3903
+		{
+			dataType="Marker";
+			position[]={23521.25,3.25,18932.875};
+			name="atTC3";
+			type="Empty";
+			id=4993;
+		};
+		class Item3904
+		{
+			dataType="Marker";
+			position[]={23520.5,3.25,18972.375};
+			name="atTC4";
+			type="Empty";
+			id=4994;
 		};
 	};
 };

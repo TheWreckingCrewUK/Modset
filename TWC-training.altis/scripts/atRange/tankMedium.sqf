@@ -5,11 +5,11 @@ _spawnAgent = [((getMarkerPos "atFiringLine") select 0)+3, ((getMarkerPos "atFir
 
 if(isNil "tank2") then {
 	tank2 = "rhs_t80" createVehicle _spawnTank;
-	tank2 addEventHandler ["killed", {deleteVehicle (_this select 0); tank2 = nil;}];
+	tank2 addEventHandler ["Hit", {deleteVehicle agent2; deleteVehicle (_this select 0); tank2 = nil; agent2 = nil;}];
 }else{
 	deleteVehicle tank2;
 	tank2 = "rhs_t80" createVehicle _spawnTank;
-	tank2 addEventHandler ["killed", {deleteVehicle (_this select 0); tank2 = nil;}];
+	tank2 addEventHandler ["Hit", {deleteVehicle agent2; deleteVehicle (_this select 0); tank2 = nil; agent2 = nil;}];
 };
 
 if(isNil "agent2") then {
