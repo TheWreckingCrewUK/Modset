@@ -7,7 +7,7 @@ _startingPoint = "mainHQ";
 
 _endMarker = getMarkerPos _marker;
 
-_pilot = ""; //Input pilot className
+_pilot = "CUP_O_sla_Pilot";
 _Squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
 _Vehicle = "CUP_O_C130J_Cargo_TKA";
 
@@ -33,4 +33,12 @@ _mechVehWaypoint setWaypointStatements ["True", format["{moveOut _x}foreach _Mec
 
 [_MechInf, _endMarker,20] call CBA_fnc_taskAttack;
 
-//Now create a waypoint for the pilot to leave the area/get deleted out of view
+//send helo back and delete
+_dir = [getMarkerPos _startingPoint, getMarkerPos _marker] call BIS_fnc_dirTo;
+_pos = [getmarkerpos _startingPoint,[200,300],_dir,0,[1,50]] call SHK_pos;
+_MechVehWaypoint = _pilot addWaypoint [_pos, 0];
+_MechVehWaypoint setWaypointType "MOVE";
+_MechVehWaypoint setWaypointBehaviour "CARELESS";
+_MechVehWaypoint setWaypointSpeed "FULL";
+_mechVehWaypoint setwaypointCompletionRadius 300;
+_mechVehWaypoint setWaypointStatements ["True", deleteVehicle this; deleteVehicle _veh;];
