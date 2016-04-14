@@ -11,7 +11,7 @@ _Squad = (configfile >> "CfgGroups" >> "Independent" >> "CUP_O_SLA" >> "Infantry
 _pilot = "CUP_O_sla_Pilot";
 _Vehicle = "CUP_O_C130J_Cargo_TKA";
 
-_pilot = grpNull createUnit [_pilot, (getMarkerPos _startingPoint), [], 0, "NONE"]; //grpNull might need to be changed to EAST
+_pilot = (createGroup Independent) createUnit [_pilot, (getMarkerPos _startingPoint), [], 0, "NONE"]; //grpNull might need to be changed to EAST
 _veh = _Vehicle createVehicle getMarkerPos _startingPoint;
 
 _MechInf = [getMarkerPos _startingPoint, Independent,_Squad] call BIS_fnc_spawnGroup;
