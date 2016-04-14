@@ -7,8 +7,18 @@ _startingPoint = "mainHQ";
 
 _endMarker = getMarkerPos _marker;
 
+<<<<<<< HEAD
 
 _Squad = (configfile >> "CfgGroups" >> "Independent" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
+=======
+<<<<<<< HEAD
+
+_Squad = (configfile >> "CfgGroups" >> "Independent" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
+=======
+_pilot = "CUP_O_sla_Pilot";
+_Squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
+>>>>>>> origin/master
+>>>>>>> parent of f59ea69... Update fnc_redforAttackAirborne.sqf
 _Vehicle = "CUP_O_C130J_Cargo_TKA";
 
 _veh = _Vehicle createVehicle getMarkerPos _startingPoint;
