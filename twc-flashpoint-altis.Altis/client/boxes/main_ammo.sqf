@@ -55,7 +55,7 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC117F",1]
     ];
 	_tmp_backpacks = [
-		["B_Kitbag_cbr",1]
+		["CUP_B_Bergen_BAF",1]
 	];
 }; 
 // load available to Rifleman only.
@@ -84,7 +84,7 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_cbr",1]
+		["CUP_B_Bergen_BAF",1]
 	];
 }; 
 // load available to Grenadier only.
@@ -121,7 +121,7 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_cbr",1]
+		["CUP_B_Bergen_BAF",1]
 	];
 };
  
@@ -146,7 +146,7 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_cbr",1]
+		["CUP_B_Bergen_BAF",1]
 	];
 };
  
@@ -174,7 +174,7 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_cbr",1]
+		["CUP_B_Bergen_BAF",1]
 	];
 }; 
 // load available to GPMG Gunner only.
@@ -196,7 +196,7 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_cbr",1]
+		["CUP_B_Bergen_BAF",1]
 	];
 }; 
 // load available to Marksman only.
@@ -227,7 +227,7 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_cbr",1]
+		["CUP_B_Bergen_BAF",1]
 	];
 };
 // load availible to Medic Only
@@ -257,7 +257,7 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_cbr",1]
+		["CUP_B_Bergen_BAF",1]
 	];
 };
 //load availible to Bravo Section Lead
@@ -297,7 +297,7 @@ if (g_class == "US_SL") then{
 		["ACRE_PRC117F",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_mcamo",1]
+		["CUP_B_AssaultPack_ACU",1]
 	];
 };
 //load availible to US Fire team lead only
@@ -331,7 +331,7 @@ if (g_class == "US_FTL") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_mcamo",1]
+		["CUP_B_AssaultPack_ACU",1]
 	];
 };
 //load availible to US Rifleman only
@@ -360,7 +360,7 @@ if (g_class == "US_RF") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_mcamo",1]
+		["CUP_B_AssaultPack_ACU",1]
 	];
 };
 //load availible to US Grenadier only
@@ -396,7 +396,7 @@ if (g_class == "US_GRN") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_mcamo",1]
+		["CUP_B_AssaultPack_ACU",1]
 	];
 };
 //load available to US automatic Rifleman only
@@ -419,7 +419,7 @@ if (g_class == "US_AR") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_mcamo",1]
+		["CUP_B_AssaultPack_ACU",1]
 	];
 };
 //load availible to US Marksman only
@@ -448,7 +448,7 @@ if (g_class == "US_MARK") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_mcamo",1]
+		["CUP_B_AssaultPack_ACU",1]
 	];
 };
 //load availible to US Medic only
@@ -477,7 +477,7 @@ if (g_class == "US_MED") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_mcamo",1]
+		["CUP_B_MedicPack_ACU",1]
 	];
 };
 //load availible to Charlie Section Lead
@@ -715,7 +715,7 @@ if (g_class == "SNIPER") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_mcamo",1]
+		["CUP_B_AssaultPack_ACU",1]
 	];
 };
 //load availible to Spotter only
@@ -746,7 +746,7 @@ if (g_class == "SPOTTER") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["B_Kitbag_mcamo",1]
+		["CUP_B_AssaultPack_ACU",1]
 	];
 };
 //load avaible to armour commander only
@@ -808,6 +808,21 @@ if (g_class == "WLD_PLT") then{
 };
 //load availible for Blackhawk Pilot only
 if (g_class == "BLK_PLT") then{
+	_tmp_weapons =
+	[
+	
+	];
+	_tmp_magazines =
+	[
+
+	];
+	_tmp_items = 
+	[
+
+	];
+};
+//load availible for Jet Pilot only
+if (g_class == "JET_PLT") then{
 	_tmp_weapons =
 	[
 	

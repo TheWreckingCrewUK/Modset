@@ -320,6 +320,23 @@ if (!isNil "helo2" && {player == helo2}) then {
 	};
 	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
 };
+if (!isNil "jetpilot1" && {player == jetpilot1}) then {
+    g_class = "JET_PLT";
+	g_group = "0";
+	g_unit = "100";
+	g_name = "Jet Pilot";
+	g_radio = "";
+	execVM "client\vehicleSpawning\jetPilot.sqf";
+	execVM "client\radar\helicopterRadar.sqf";
+	if(isNil "jetSpawned") then{
+		jetSpawned = 0;
+		publicVariable "jetSpawned";
+	};
+	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
+	fjetSpawned = 0;
+	player addEventHandler ["RESPAWN",{fjetSpawned = 0}];
+	
+};
 
 g_p1 = "";
 g_p2 = "";

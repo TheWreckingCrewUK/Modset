@@ -25,24 +25,6 @@ _BRDM = ["CUP_O_BRDM2_SLA"];
 _ZU23 = ["CUP_O_2S6M_RU"];
 
 
-for "_i" from 1 to 2 do {
-	if isServer then {
-		private ["_pos","_m"];
-		_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
-		_PatrolSquad = [_pos, EAST, _mechsquad] call BIS_fnc_spawnGroup;
-		[_PatrolSquad, getmarkerpos _CentralMarker, 350] call CBA_fnc_taskPatrol;
-	};
-};
-
-for "_i" from 1 to 2 do {
-	if isServer then {
-		private ["_pos","_m"];
-		_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
-		_PatrolSquad = [_pos, EAST, _bmp] call BIS_fnc_spawnGroup;
-		[_PatrolSquad, getmarkerpos _CentralMarker, 350] call CBA_fnc_taskPatrol;
-	};
-};
-
 [_CentralMarker, _ATDefend]spawn{
 	if isServer then {
 		private ["_pos","_m"];
@@ -66,10 +48,11 @@ if isServer then {
 		_DefendAA = [_pos, EAST, _AAteam] call BIS_fnc_spawnGroup;
 		[_DefendAA, getmarkerpos _CentralMarker, 100] call CBA_fnc_taskDefend;
 	};
-	
-if isServer then {
+for "_i" from 1 to 3 do {
+	if isServer then {
 		private ["_pos","_m"];
 		_pos = [getmarkerpos _CentralMarker,[0,100],random 360,0] call SHK_pos;
 		_PatrolSPAA = [_pos, EAST, _ZU23] call BIS_fnc_spawnGroup;
 		[_PatrolSPAA, getmarkerpos _CentralMarker, 200] call CBA_fnc_taskDefend;
 	};
+};

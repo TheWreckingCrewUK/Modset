@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=509;
+		nextID=558;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={26980.078,28.466398,24763.623};
-		dir[]={-0.64419973,-0.43853796,0.62684584};
-		up[]={-0.31432858,0.89870149,0.30586341};
-		aside[]={0.69747478,3.1339005e-006,0.71677488};
+		pos[]={26888.631,89.918755,24501.387};
+		dir[]={-0.94443387,-0.23839283,-0.22677048};
+		up[]={-0.23193969,0.97114658,-0.055692062};
+		aside[]={-0.23350906,9.2061237e-007,0.97248197};
 	};
 };
 binarizationWanted=0;
@@ -71,7 +71,8 @@ addons[]=
 	"CUP_WaterVehicles_Weapons",
 	"ace_fastroping",
 	"A3_Structures_F_Civ_InfoBoards",
-	"A3_Structures_F_Mil_Helipads"
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Characters_F_OPFOR"
 };
 randomSeed=10595176;
 class ScenarioData
@@ -129,7 +130,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=158;
+		items=162;
 		class Item0
 		{
 			dataType="Logic";
@@ -683,7 +684,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={26782.439,22.232502,24614.533};
+						position[]={26782.439,22.2325,24614.533};
 					};
 					side="West";
 					flags=3;
@@ -1762,8 +1763,8 @@ class Mission
 		class Item44
 		{
 			dataType="Trigger";
-			position[]={26828.756,22.391167,24625.691};
-			angle=-0.79246718;
+			position[]={26828.756,22.391226,24625.689};
+			angle=-0.79246694;
 			class Attributes
 			{
 				onActivation="Russiancheck = Russiancheck + 1; hint "" Hostiles near the base !""";
@@ -6929,7 +6930,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={26940.357,21.439302,24698.809};
+				position[]={26946.65,20.608944,24718.811};
+				angles[]={0.041309625,0,0.011995304};
 			};
 			id=416;
 			type="ACE_moduleEquipFRIES";
@@ -6939,12 +6941,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26964.502,21.364731,24780.107};
+				position[]={26964.65,21.35861,24780.607};
 				angles[]={0.014660765,5.354775,0.0079936078};
 			};
 			side="Empty";
 			class Attributes
 			{
+				init="if(!isServer)exitWith{}; this allowDamage false;";
 				name="armourSpawner";
 			};
 			id=438;
@@ -6978,8 +6981,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26964.105,20.666557,24788.822};
-				angles[]={0.0079936078,5.3405681,0.010663962};
+				position[]={26964.262,20.665243,24789.193};
+				angles[]={0.0080009829,5.3828344,0.010664274};
 			};
 			side="Empty";
 			class Attributes
@@ -7033,7 +7036,6 @@ class Mission
 						rank="CORPORAL";
 						name="p33";
 						description="Armour Crew commander [15]";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=429;
@@ -7246,6 +7248,235 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item158
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26840.1,24.157436,24551.439};
+				angles[]={0.0039968039,3.869936,6.2818413};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="jetSpawnPad";
+			};
+			id=510;
+			type="Land_HelipadSquare_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item159
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={26829.396,24.029667,24567.195};
+						angles[]={0,0.75122344,0};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						rank="LIEUTENANT";
+						name="jetPilot1";
+						description="Jet Pilot [20]";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=512;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=511;
+		};
+		class Item160
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26830.988,24.579535,24568.672};
+				angles[]={0.014660765,0.69315749,0.0013439035};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="if(!isServer)exitWith{}; this allowDamage false;";
+				name="jetSpawner";
+			};
+			id=513;
+			type="Land_InfoStand_V1_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item161
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={23186.93,3.1914389,18397.225};
+					};
+					side="East";
+					flags=3;
+					class Attributes
+					{
+						rank="CAPTAIN";
+						name="enemy1";
+						description="Redfor Officer [LOCKED]";
+						isPlayable=1;
+					};
+					id=557;
+					type="O_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=556;
 		};
 	};
 	class Connections
