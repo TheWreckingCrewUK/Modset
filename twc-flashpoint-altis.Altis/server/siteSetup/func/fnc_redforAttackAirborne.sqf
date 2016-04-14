@@ -7,13 +7,8 @@ _startingPoint = "mainHQ";
 
 _endMarker = getMarkerPos _marker;
 
-<<<<<<< HEAD
-
 _Squad = (configfile >> "CfgGroups" >> "Independent" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
-=======
 _pilot = "CUP_O_sla_Pilot";
-_Squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
->>>>>>> origin/master
 _Vehicle = "CUP_O_C130J_Cargo_TKA";
 
 _pilot = grpNull createUnit [_pilot, (getMarkerPos _startingPoint), [], 0, "NONE"]; //grpNull might need to be changed to EAST
