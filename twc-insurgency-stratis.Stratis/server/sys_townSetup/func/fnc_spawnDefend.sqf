@@ -19,7 +19,7 @@ _random = random 100;
 if (_random < 75) then {
 	if (isServer) then {
 		_groupSpawn = [getMarkerPos _marker, East, townSpawn,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
-		[_groupSpawn] call CBA_fnc_TaskDefend;
+		[_groupSpawn, _groupSpawn, 200, 3, False] call CBA_fnc_TaskDefend;
 		{
 			_x addMPEventHandler ["MPKilled",{
 				if (side (_this select 1) == WEST) then{

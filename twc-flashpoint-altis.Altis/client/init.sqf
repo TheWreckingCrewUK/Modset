@@ -251,22 +251,74 @@ if (!isNil "p30" && {player == p30}) then {
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 };
+if (!isNil "p31" && {player == p31}) then {
+    g_class = "SNIPER";
+	g_group = "0";
+	g_unit = "031";
+	g_name = "Sniper";
+	g_radio_channel = 6;
+	g_radio = "ACRE_PRC148";
+};
+if (!isNil "p32" && {player == p32}) then {
+    g_class = "SPOTTER";
+	g_group = "0";
+	g_unit = "032";
+	g_name = "Spotter";
+	g_radio_channel = 6;
+	g_radio = "ACRE_PRC148";
+};
+if (!isNil "p33" && {player == p33}) then {
+    g_class = "ARMOUR";
+	g_group = "0";
+	g_unit = "033";
+	g_name = "Armour Crew commander";
+	g_radio_channel = 7;
+	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\armourCommander.sqf";
+	player addEventHandler ["RESPAWN",{armourSpawned = 0}];
+};
+if (!isNil "p34" && {player == p34}) then {
+    g_class = "ARMOURCREW";
+	g_group = "0";
+	g_unit = "034";
+	g_name = "Armour Crewman";
+	g_radio_channel = 7;
+	g_radio = "ACRE_PRC148";
+};
+if (!isNil "p35" && {player == p35}) then {
+    g_class = "ARMOURCREW";
+	g_group = "0";
+	g_unit = "035";
+	g_name = "Armour Crewman";
+	g_radio_channel = 7;
+	g_radio = "ACRE_PRC148";
+};
 if (!isNil "helo1" && {player == helo1}) then {
     g_class = "WLD_PLT";
 	g_group = "0";
-	g_unit = "031";
+	g_unit = "100";
 	g_name = "Wildcat Pilot";
 	g_radio = "";
 	execVM "client\radar\helicopterRadar.sqf";
+		if(isNil "jetSpawned") then{
+		jetSpawned = 0;
+		publicVariable "jetSpawned";
+	};
+	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
 };
 if (!isNil "helo2" && {player == helo2}) then {
     g_class = "BLK_PLT";
 	g_group = "0";
-	g_unit = "032";
+	g_unit = "101";
 	g_name = "BlackHawk Pilot";
 	g_radio = "";
 	execVM "client\radar\helicopterRadar.sqf";
 	prepAction = player addAction ["<t color='#FF0000'>Prep Osprey For Paradrop</t>", "_vehicle = cursorObject; hint str cursorObject; [_vehicle] call twc_paradropSetup"];
+	if(isNil "jetSpawned") then{
+		jetSpawned = 0;
+		publicVariable "jetSpawned";
+	};
+	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
 };
 
 g_p1 = "";
@@ -301,6 +353,11 @@ g_p29 = "";
 g_p30 = "";
 g_p31 = "";
 g_p32 = "";
+g_p33 = "";
+g_p34 = "";
+g_p35 = "";
+g_helo1 = "";
+g_helo2 = "";
 
 
 execVM "client\boxes\main_ammo.sqf";
@@ -310,7 +367,7 @@ _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
 execVM "client\psync.sqf";
 
- TWC_fnc_getAlphaList = {
+TWC_fnc_getAlphaList = {
     execVM "client\playerlist\alpha.sqf";
 };
 
@@ -321,6 +378,9 @@ TWC_fnc_getBravoList = {
 TWC_fnc_getCharlieList = {
    execVM "client\playerlist\charlie.sqf";
 };
+TWC_fnc_getSupportList = {
+   execVM "client\playerlist\Support.sqf";
+};
 TWC_fnc_getAirList = {
    execVM "client\playerlist\air.sqf";
 };
@@ -329,12 +389,14 @@ playerListAction = ["thisStartsTheList","Player List","", {},{true}] call ace_in
 alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}] call ace_interact_menu_fnc_createAction;
 bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
 charlieAction = ["CharlieList","Charlie List","", {call TWC_fnc_getCharlieList;},{true}] call ace_interact_menu_fnc_createAction;
+supportAction = ["SupportList","Support List","", {call TWC_fnc_getSupportList;},{true}] call ace_interact_menu_fnc_createAction;
 airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], playerListAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], alphaAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], bravoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], charlieAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], supportAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
 
 

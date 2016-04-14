@@ -1,12 +1,12 @@
-DisabledAI		= 1;    //0 fills empty slots with AI Keep it on 1
-joinUnassigned	= 1;    //0 Forces slots on server rotation. Keep it on 1
+DisabledAI		= 1;
+joinUnassigned	= 1;
 disableChannels[]={0,1,2,3,4,6};
 
 
 onLoadName = "Insurgency Plus 3";
 onLoadMission = "http://www.thewreckingcrew.co.uk/";
-author = "WiredTiger[TWC] / Jayman[TWC]";
-loadScreen = "tao\pics\Loading.jpg";
+author = "WiredTiger[TWC] /Jayman[TWC]";
+loadScreen = "server\pics\loading.jpg";
 
 
 class Header
@@ -25,13 +25,14 @@ respawnOnStart = 0;
 enableDebugConsole = 1;
 
 
+
 class CfgDebriefing
 {
 	class End1
 	{
-		title = "You died as an Insurgent";
-		subtitle = "You are no longer able to play as a civ";
-		description = "Join Blufor for the rest of the map";
+		title = "Mission End";
+		subtitle = "Good Job!";
+		description = "Stick around for some Domination on Altis, next!";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -39,9 +40,9 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Fill another squad!";
-		subtitle = "";
-		description = "";
+		title = "Pilot Unavailable";
+		subtitle = "More players are needed for Pilot.";
+		description = "5 for Pilot. 10 + Pilot active for Crew Chief.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -49,9 +50,9 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "Pilot is already online";
-		subtitle = "Wait till player count is over 15 to be a Pilot.";
-		description = "Play General infantry for now!";
+		title = "You can not play as a human Civilian";
+		subtitle = "";
+		description = "Play as Blufor for now";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -59,8 +60,8 @@ class CfgDebriefing
 
 	class End4
 	{
-		title = "Pilot unavailable";
-		subtitle = "You need 5 people online to play as the Pilot.";
+		title = "Apache Unavailable";
+		subtitle = "20 Players and a Member.";
 		description = "Play general infantry for now!";
 		// pictureBackground = "";
 		// picture = "";
@@ -79,9 +80,9 @@ class CfgDebriefing
 
 	class End6
 	{
-		title = "You can not play as a human Civilian";
-		subtitle = "You must be a member and have at least 20 people online";
-		description = "Play as Blufor for now";
+		title = "Armour Crew Unavailible";
+		subtitle = "";
+		description = "Play as general infantry for now";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -95,12 +96,4 @@ class CfgDebriefing
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
-};
-#include "chvd\dialog.hpp"
-
-class CfgFunctions
-
-
-{
-#include "chvd\CfgFunctions.hpp"
 };

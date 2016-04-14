@@ -1,20 +1,16 @@
+
 _opforWeapons = [
-/*
-    "rhs_weap_ak74m",
-    "rhs_weap_ak74m_folded",
-    "rhs_weap_pkp",
-    "rhs_weap_svdp_wd",
-    "hgun_Rook40_F",
-    "rhs_weap_akm",
-    "rhs_weap_akms",
-    "rhs_weap_svdp",
-    "rhs_weap_akms_gp25",
-    "rhs_weap_ak103_dtk"
-* Commented out as we need these weapons for insurgency Takistan*/
+	"CUP_arifle_AKM",
+	"CUP_arifle_AK74_GL",
+	"CUP_arifle_AKS",
+	"CUP_arifle_AKS74U",
+	"CUP_airfle_RPK74",
+	"CUP_launch_RPG7V",
+	"CUP_hgun_Makarov"
 ];
 
 while {true} do {
-    waitUntil {(primaryWeapon player) in _opforWeapons};
+    waitUntil {(primaryWeapon player in _opforWeapons)};
     if ((player distance (getMarkerPos "respawn_west")) > 100) then {
         player removeWeapon (primaryWeapon player);
     };

@@ -1,23 +1,20 @@
-_allowedWeapons = [
-    "",
-    "rhs_weap_ak74m",
-    "rhs_weap_ak74m_folded",
-    "rhs_weap_pkp",
-    "rhs_weap_svdp_wd",
-    "hgun_Rook40_F",
-    "rhs_weap_rpg7_pgo",
-    "ACE_fieldDressing",
-    "ACE_morphine",
-    "rhs_weap_akm",
-    "rhs_weap_akms",
-    "rhs_weap_svdp",
-    "rhs_weap_akms_gp25",
-    "rhs_weap_ak103_dtk",
-    "rhs_weap_pkm"
+
+_allowedPrimaryWeapons = [
+//Insurgent Weapons
+	"",
+	"CUP_arifle_AKM",
+	"CUP_arifle_AK74_GL",
+	"CUP_arifle_AKS",
+	"CUP_arifle_AKS74U",
+	"CUP_airfle_RPK74",
+//Box Weapons
+	"CUP_arifle_AK74",
+	"CUP_arifle_AKS_Gold",
+	"CUP_arifle_FNFAL"
 ];
 
 while {true} do {
-    waitUntil {!((primaryWeapon player) in _allowedWeapons)};
+    waitUntil {!(primaryWeapon player in _allowedPrimaryWeapons)};
     if ((player distance (getMarkerPos "respawn_civilian")) > 100) then {
         player removeWeapon (primaryWeapon player);
     };

@@ -16,9 +16,17 @@
 
 params["_marker"];
 _random = random 100;
-if (_random < 50) then {
+if (_random < 75) then {
 	if (isServer) then {
-		_groupSpawn = [getMarkerPos _marker, East, ["LOP_AM_Infantr_TL","LOP_AM_Infantry_Rifleman","LOP_AM_Infantry_AT","LOP_AM_Infantry_Rifleman","LOP_AM_Infantry_Rifleman","LOP_AM_Infantry_Rifleman","LOP_AM_Infantry_Rifleman","LOP_AM_Infantry_Rifleman","LOP_AM_Infantry_Rifleman","LOP_AM_Infantry_AT","LOP_AM_Infantry_AT"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
-		[_groupSpawn] call CBA_fnc_TaskDefend;
+		_groupSpawn = [getMarkerPos _marker, East, townSpawn,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
+		[_groupSpawn, _groupSpawn, 200, 3, False] call CBA_fnc_TaskDefend;
+		{
+			_x addMPEventHandler ["MPKilled",{
+				if (side (_this select 1) == WEST) then{
+					InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
+				};
+			}];
+		}forEach units _groupSpawn;
 	};
 };
+

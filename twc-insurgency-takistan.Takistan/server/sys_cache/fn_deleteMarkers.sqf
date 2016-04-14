@@ -1,38 +1,35 @@
-_cacheDestroyed = _this select 0;
+_destroyed = _this select 0;
 
 call {
-	if (_cacheDestroyed == "cacheBoxA") exitWith {
+	if (_destroyed == "cacheBoxA") exitWith {
 		{
 			deadMarker = deleteMarker _x;
 			publicVariable "deadMarker";
 		}forEach cacheAMarkers;
 	};
 	
-	if (_cacheDestroyed == "cacheBoxB") exitWith {
+	if (_destroyed == "cacheBoxB") exitWith {
 		{
 			deadMarker = deleteMarker _x;
 			publicVariable "deadMarker";
 		}forEach cacheBMarkers;
 	};
-	
-	if (_cacheDestroyed == "cacheBoxC") exitWith {
+	if (_destroyed == "cacheBoxC") exitWith {
 		{
 			deadMarker = deleteMarker _x;
 			publicVariable "deadMarker";
 		}forEach cacheCMarkers;
 	};
-
-	if (_cacheDestroyed == "cacheBoxD") exitWith {
+	if (_destroyed == "aaGunA") exitWith {
 		{
 			deadMarker = deleteMarker _x;
 			publicVariable "deadMarker";
-		}forEach cacheDMarkers;
+		}forEach aaGunAMarkers;
 	};
-	
-	if (_cacheDestroyed == "cacheBoxE") exitWith {
+	if (_destroyed == "aaGunB") exitWith {
 		{
 			deadMarker = deleteMarker _x;
 			publicVariable "deadMarker";
-		}forEach cacheEMarkers;
+		}forEach aaGunBMarkers;
 	};
 };

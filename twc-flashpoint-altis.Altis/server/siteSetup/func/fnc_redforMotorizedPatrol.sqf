@@ -11,8 +11,8 @@ while{_startingPoint == _marker}do{
 _marker = remainingArray call BIS_fnc_selectRandom
 };
 
-_car = "CUP_O_UAZ_OPEN_RU";
-_squad = ["CUP_O_SLA_Soldier","CUP_O_SLA_Soldier","CUP_O_SLA_Soldier_GL","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_MG"];
+_car = "CUP_O_Ural_SLA";
+_squad = ["CUP_O_SLA_Soldier","CUP_O_SLA_Soldier","CUP_O_SLA_Soldier_GL","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_MG","CUP_O_SLA_Soldier","CUP_O_SLA_Soldier_GL","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_MG"];
 
 if isServer then {
 	private ["_pos","_m"];

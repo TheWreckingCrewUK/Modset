@@ -44,11 +44,10 @@ if (g_class == "BAF_SL") then {
         ["ACE_fieldDressing",20],
         ["ACE_morphine",10],
 		["ACE_epinephrine",5],
-		["CUP_optic_ACOG",1],
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
 		["ACE_M26_Clacker",1],
-		["CUP_optic_ACOG",1],
+		["CUP_optic_Elcan_reflex",1],
 		["CUP_optic_HoloBlack",1],
 		["ACE_DAGR",1],
 		["ACRE_PRC343",1],
@@ -66,6 +65,7 @@ if (g_class == "BAF_SL") then {
 		["CUP_arifle_L85A2",1],
 		["CUP_sgun_M1014",1],
 		["CUP_hgun_Glock17",1],
+		["launch_NLAW_F",2],
 		["CUP_launch_M136",2]
 	];
 	_tmp_magazines =
@@ -81,7 +81,7 @@ if (g_class == "BAF_SL") then {
 		["ACE_MapTools",1],
 		["ACE_fieldDressing",20],
 		["ACE_morphine",10],
-		["CUP_optic_ACOG",1],
+		["CUP_optic_Elcan_reflex",1],
 		["CUP_optic_HoloBlack",1],
 		["ACRE_PRC343",1]
 	];
@@ -114,7 +114,7 @@ if (g_class == "BAF_SL") then {
         ["ACE_MapTools",1],
         ["ACE_fieldDressing",20],
         ["ACE_morphine",10],
-		["CUP_optic_ACOG",1],
+		["CUP_optic_Elcan_reflex",1],
 		["CUP_optic_HoloBlack",1],
 		["ACRE_PRC343",1]
 	];
@@ -138,7 +138,7 @@ if (g_class == "BAF_SL") then {
         ["ACE_MapTools",1],
         ["ACE_fieldDressing",20],
         ["ACE_morphine",10],
-		["CUP_optic_ACOG",1],
+		["CUP_optic_Elcan_reflex",1],
 		["CUP_optic_HoloBlack",1],
 		["STKR_Predator",1],
 		["ACRE_PRC343",1]
@@ -165,7 +165,7 @@ if (g_class == "BAF_SL") then {
 		["ACE_epinephrine",50],
 		["ACE_bloodIV",50],
 		["ACE_bodyBag",10],
-		["CUP_optic_ACOG",1],
+		["CUP_optic_Elcan_reflex",1],
 		["CUP_optic_HoloBlack",1],
 		["ACRE_PRC343",1]
 	];
@@ -217,7 +217,7 @@ if (g_class == "US_SL") then {
     _tmp_weapons =
     [
         ["CUP_arifle_M4A1",1],
-		["CUP_sgun_AA12",1],
+		["CUP_sgun_M1014",1],
 		["CUP_launch_M136",2],
 		["CUP_hgun_Colt1911",1]
 	];
@@ -225,8 +225,8 @@ if (g_class == "US_SL") then {
     [
 		["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",15],
-		["CUP_20Rnd_B_AA12_Pellets",10],
-		["CUP_20Rnd_B_AA12_74Slug",10],
+		["CUP_8Rnd_B_Beneli_74Slug",10],
+		["CUP_8Rnd_B_Beneli_74Pellets",10],
         ["CUP_7Rnd_45ACP_1911",15]
     ];
 	_tmp_items =

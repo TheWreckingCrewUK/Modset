@@ -8,7 +8,7 @@ _marker setMarkerColor "colorWEST";
 	sleep 300;
 	{ deleteVehicle _x } forEach allDead;
 
-	_enemyVehicle = nearestObjects [getMarkerPos (_this select 0), ["Tank","Car","Tank"], 800];
+	_enemyVehicle = nearestObjects [getMarkerPos (_this select 0), ["Tank","Car","Truck"], 800];
 	{
 		if((typeOf _x) in friendlyVehiclesArray) then{
 			_enemyVehicle = _enemyVehicle - [_x];
@@ -47,3 +47,5 @@ if(count capturedArray == 0)then{
 
 remainingArray = remainingArray - [_marker];
 publicVariable "capturedArray";
+
+[_marker] call twc_attackDeciding;

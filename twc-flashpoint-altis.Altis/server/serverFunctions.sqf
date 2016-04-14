@@ -28,6 +28,11 @@ twc_village = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_villa
 
 twc_mortarAttack = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_mortarAttack.sqf";
 
+//Hostile Attacks
+twc_attackDeciding = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_attackDeciding.sqf";
+twc_attackHelo = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_attackHelo.sqf";
+twc_attackInf = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_attackInf.sqf";
+
 //Hostile Logistics Define:
 twc_basicLogistics = compile preprocessfilelinenumbers "server\logistics\func\fnc_basicLogistics.sqf";
 twc_constantLogistics = compile preprocessfilelinenumbers "server\logistics\func\fnc_constantLogistics.sqf";

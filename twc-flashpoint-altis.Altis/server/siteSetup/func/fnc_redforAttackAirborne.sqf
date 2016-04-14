@@ -8,12 +8,12 @@ _startingPoint = "mainHQ";
 _endMarker = getMarkerPos _marker;
 
 
-_Squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
+_Squad = (configfile >> "CfgGroups" >> "Independent" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
 _Vehicle = "CUP_O_C130J_Cargo_TKA";
 
 _veh = _Vehicle createVehicle getMarkerPos _startingPoint;
 
-_MechInf = [getMarkerPos _startingPoint, East,_Squad] call BIS_fnc_spawnGroup;
+_MechInf = [getMarkerPos _startingPoint, Independent,_Squad] call BIS_fnc_spawnGroup;
 
 {
 _x addBackpack "B_Parachute";

@@ -9,6 +9,8 @@
 *
 * This example gives the town of Bastam 7 civs with a radius of 100.
 * It has 3 Waves morale not withstanding, which spawn between 600 and 700 meters away.
+*
+* Creates a trigger to spawn the town capture and cleanup
 */ 
 						  
 params["_marker","_civnum","_civradius","_waves","_groupradius"];
@@ -16,5 +18,11 @@ params["_marker","_civnum","_civradius","_waves","_groupradius"];
 [_marker, _civnum, _civradius] call twc_spawnCiv;
 [_marker] call twc_spawnDefend;
 [_marker, _waves, _groupradius] call twc_spawnAIUnits;
-[_marker] call twc_townclear;
+
+_trg = createTrigger ["EmptyDetector", getMarkerPos _marker];
+_trg setTriggerArea [400, 400, 0, false];
+_trg setTriggerActivation ["EAST", "NOT PRESENT", False];
+_trg setTriggerStatements ["this", format["['%1'] call twc_townClear", _marker]
+	,""
+];
 

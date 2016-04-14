@@ -26,8 +26,17 @@ if(side (_men select 0) == EAST) exitWith{
 	[_marker] call twc_siteCapturedRedfor;
 };
 
-if(side (_men select 0) != EAST && side (_men select 0) != WEST) then {
-	hint "Neither Blu nor Red were closest. Only possible for Independents or TeamKillers.";
+if(side (_men select 0) == Independent) exitWith{
+	{
+		if(side _x == WEST)exitWith {
+			[_marker] call twc_siteCapturedBlufor;
+		};
+	}forEach _men;
+	[_marker] call twc_siteCapturedRedfor;
+};
+
+if(side (_men select 0) != EAST && side (_men select 0) != WEST && side (_men select 0) != Independent) then {
+	hint "Neither Blu nor Red nor independent were closest.  TeamKillers maybe?.";
 	[_marker] call twc_siteCapturedBlufor;
 }else{
 	hint "Site Deciding Function has failed";

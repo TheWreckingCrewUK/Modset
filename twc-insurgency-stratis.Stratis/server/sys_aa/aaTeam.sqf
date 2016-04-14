@@ -13,6 +13,7 @@ for "_i" from 1 to AATeams do {
 		if (side (_this select 1) == WEST) then{
 			InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
 			InsP_civTrust = InsP_civTrust + 0.1; publicVariable "InsP_civTrust";
+			InsP_aatDestroyed = InsP_aatDestroyed + 1;
 			_marker = createMarker [str random 10000, _this select 0];
 			_marker setMarkerType "mil_triangle";
 			_marker setMarkerColor "ColorBlue";

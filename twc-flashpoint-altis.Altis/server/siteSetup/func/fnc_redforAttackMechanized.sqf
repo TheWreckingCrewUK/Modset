@@ -13,13 +13,13 @@ _pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] cal
 _endMarker = getMarkerPos _marker;
 
 
-_Squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
+_Squad = (configfile >> "CfgGroups" >> "Independent" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionMG");
 _Vehicle = "CUP_O_BMP2_SLA";
 _crewArray = ["CUP_O_sla_Crew","CUP_O_sla_Crew","CUP_O_sla_Crew"];
 
 _veh = _Vehicle createVehicle _pos;
 
-_vehicleGroup = [[0,0,0], EAST,_crewArray] call BIS_fnc_spawnGroup;
+_vehicleGroup = [[0,0,0], Independent,_crewArray] call BIS_fnc_spawnGroup;
 _vehicleGrouparray = units _vehicleGroup;
 
 (_VehicleGroupArray select 0) moveindriver _veh;
@@ -27,7 +27,7 @@ _vehicleGrouparray = units _vehicleGroup;
 (_VehicleGroupArray select 2) moveincommander _veh;
 
 
-_MechInf = [[0,0,0], East,_Squad] call BIS_fnc_spawnGroup;
+_MechInf = [[0,0,0], Independent,_Squad] call BIS_fnc_spawnGroup;
 {
 	_x moveincargo _veh;
 	_x assignAsCargo _veh;

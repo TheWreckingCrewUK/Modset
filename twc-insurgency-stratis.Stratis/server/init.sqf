@@ -20,6 +20,11 @@ if (isNil "InsP_aagDestroyed") then {
 	publicVariable "InsP_aagDestroyed";
 };
 
+if (isNIl "InsP_aatDestroyed") then {
+	InsP_aatDestroyed = 0;
+	publicVariable "InsP_aatDestroyed";
+};
+
 if (isNil "InsP_enemyMorale") then {
 	InsP_enemyMorale = 0;
 	publicVariable "InsP_enemyMorale";

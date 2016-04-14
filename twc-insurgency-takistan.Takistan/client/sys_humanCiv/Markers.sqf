@@ -1,9 +1,10 @@
+_aalist = (allMissionObjects "CUP_I_DSHKM_NAPA");
 {
 	_marker = createMarkerLocal [format ["aagun%1", _forEachIndex], getPosATL _x];
 	_marker setMarkerTypeLocal "mil_triangle";
 	_marker setMarkerColorLocal "ColorBlue";
 	_marker setMarkerSizeLocal [0.7, 0.7];
-} forEach InsP_aaGroup;
+} forEach _aalist;
 
 _iedList = (allMissionObjects "IEDLandBig_F") + (allMissionObjects "IEDLandSmall_F");
 {

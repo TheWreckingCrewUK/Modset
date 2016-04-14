@@ -4,32 +4,25 @@ Not to be used without consent from TWC or WiredTiger
 
 if (isNil "InsP_cacheGroup") then {
 
-	_cacheBoxType = "Box_FIA_Wps_F";
-
-	cacheBoxA = _cacheBoxType createVehicle [8020, 1782, 296];
-	_cacheADeath = cacheBoxA addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxA"] call InsP_fnc_deleteMarkers}];
+	cacheBoxA = cacheBoxType createVehicle (getMarkerPos "cacheSpawn" vectorAdd[5,0,0]);
+	_cacheADeath = cacheBoxA addMPEventHandler ["MPKilled", {[_this select 0, _this select 1] call InsP_fnc_deadCache; ["cacheBoxA", "SUCCEEDED",true] spawn BIS_fnc_taskSetState; ["cacheBoxA"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxA";
+	[West,["cacheBoxA"],["Destroying the insurgent ammo cache will limit their abilities in the region","Destroy Insurgent Cache",""],objNull,True,1,True,"",False] call BIS_fnc_taskCreate;
 
-	cacheBoxB = _cacheBoxType createVehicle [8025, 1782, 296];
-	_cacheADeath = cacheBoxB addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxB"] call InsP_fnc_deleteMarkers}];
+	cacheBoxB = cacheBoxType createVehicle (getMarkerPos "cacheSpawn" vectorAdd[10,0,0]);;
+	_cacheADeath = cacheBoxB addMPEventHandler ["MPKilled", {[_this select 0, _this select 1] call InsP_fnc_deadCache; ["cacheBoxB", "SUCCEEDED",true] spawn BIS_fnc_taskSetState; ["cacheBoxB"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxB";
+	[West,["cacheBoxB"],["Destroying the insurgent ammo cache will limit their abilities in the region","Destroy Insurgent Cache",""],objNull,True,1,True,"",False] call BIS_fnc_taskCreate;
 
-	cacheBoxC = _cacheBoxType createVehicle [8025, 1787, 296];
-	_cacheADeath = cacheBoxC addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxC"] call InsP_fnc_deleteMarkers}];
+	cacheBoxC = cacheBoxType createVehicle (getMarkerPos "cacheSpawn" vectorAdd[15,0,0]);;
+	_cacheADeath = cacheBoxC addMPEventHandler ["MPKilled", {[_this select 0, _this select 1] call InsP_fnc_deadCache; ["cacheBoxC", "SUCCEEDED",true] spawn BIS_fnc_taskSetState; ["cacheBoxC"] call InsP_fnc_deleteMarkers}];
 	publicVariable "cacheBoxC";
+	[West,["cacheBoxC"],["Destroying the insurgent ammo cache will limit their abilities in the region","Destroy Insurgent Cache",""],objNull,True,1,True,"",False] call BIS_fnc_taskCreate;
 
-	cacheBoxD = _cacheBoxType createVehicle [8030, 1787, 296];
-	_cacheADeath = cacheBoxD addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxD"] call InsP_fnc_deleteMarkers}];
-	publicVariable "cacheBoxD";
-
-	cacheBoxE = _cacheBoxType createVehicle [8030, 1792, 296];
-	_cacheADeath = cacheBoxE addMPEventHandler ["MPKilled", {[_this select 0] call InsP_fnc_deadCache; ["cacheBoxE"] call InsP_fnc_deleteMarkers}];
-	publicVariable "cacheBoxE";
-
-	InsP_cacheGroup = [cacheBoxA, cacheBoxB, cacheBoxC, cacheBoxD, cacheBoxE];
+	InsP_cacheGroup = [cacheBoxA, cacheBoxB, cacheBoxC];
 	publicVariable "InsP_cacheGroup";
 	
-	waitUntil {!(isNil "cacheBoxA") && !(isNil "cacheBoxB") && !(isNil "cacheBoxC") && !(isNil "cacheBoxD") && !(isNil "cacheBoxE") && !(isNil "InsP_cacheGroup")};
+	waitUntil {!(isNil "cacheBoxA") && !(isNil "cacheBoxB") &&!(isNil "cacheBoxC") && !(isNil "InsP_cacheGroup")};
 
 	{
 		while {(_x distance (getMarkerPos "cacheSpawn")) < 50} do {
@@ -38,11 +31,9 @@ if (isNil "InsP_cacheGroup") then {
 				case "0": {_cacheMarker = "cacheMarkerA"};
 				case "1": {_cacheMarker = "cacheMarkerB"};
 				case "2": {_cacheMarker = "cacheMarkerC"};
-				case "3": {_cacheMarker = "cacheMarkerD"};
-				case "4": {_cacheMarker = "cacheMarkerE"};
 			};
 	
-			_houseList = (getMarkerPos _cacheMarker) nearObjects ["House",1500];
+			_houseList = (getMarkerPos _cacheMarker) nearObjects ["House",1250];
 			sleep .25;
 			_c = 0;
 			_house = _houseList call BIS_fnc_selectRandom;
@@ -51,12 +42,10 @@ if (isNil "InsP_cacheGroup") then {
 				_ranNum = floor(random _c);
 				_x setPos (_house buildingPos _ranNum);
 				sleep 1;
-				_cacheGroup = [[(getPosATL _x select 0)+random 50, (getPosATL _x select 1)+random 50,0], EAST, (configfile >> "CfgGroups" >> "Indep" >> "LOP_AM" >> "Infantry" >> "LOP_AM_Rifle_squad")] call BIS_fnc_spawnGroup;
+				_cacheGroup = [[(getPosATL _x select 0)+random 50, (getPosATL _x select 1)+random 50,0], EAST, (cacheDefenseSquad)] call BIS_fnc_spawnGroup;
 				[_cacheGroup, getPosATL _x, 100, 2, true] call CBA_fnc_taskDefend;
 			};
 			sleep 0.25;
-			{cacheBoxA disableCollisionWith _x}
-			
 		};
 	} forEach InsP_cacheGroup;
 	

@@ -33,6 +33,11 @@ while {true} do {
 	g_p30 = "";
 	g_p31 = "";
 	g_p32 = "";
+	g_p33 = "";
+	g_p34 = "";
+	g_p35 = "";
+	g_helo1 = "";
+	g_helo2 = "";
 	
 	switch (g_unit) do {
 		case "001": {g_p1 = name player; publicVariable "g_p1"; };
@@ -67,6 +72,11 @@ while {true} do {
 		case "030": {g_p30 = name player; publicVariable "g_p30"; };
 		case "031": {g_p31 = name player; publicVariable "g_p31"; };
 		case "032": {g_p32 = name player; publicVariable "g_p32"; };
+		case "033": {g_p33 = name player; publicVariable "g_p33"; };
+		case "034": {g_p34 = name player; publicVariable "g_p34"; };
+		case "035": {g_p35 = name player; publicVariable "g_p35"; };
+		case "100": {g_helo1 = name player; publicVariable "g_helo1"; };
+		case "101": {g_helo2 = name player; publicVariable "g_helo2"; };
 	};
 	global_sync = false;
 };
