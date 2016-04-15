@@ -96,7 +96,7 @@ class Extended_PreInit_EventHandlers
 {
 	class Twc_framework_init
 	{
-		init="execVM '\twc_framework\preinit.sqf';";
+		init="call compile preProcessFileLineNumbers 'twc_framework\tasks\init.sqf';";
 	};
 };
 
