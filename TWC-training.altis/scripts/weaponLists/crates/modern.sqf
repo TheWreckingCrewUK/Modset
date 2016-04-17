@@ -12,6 +12,7 @@ _RangeBoxAT = RangeAmmoBoxAT;
 _RangeBoxSniper = RangeAmmoBoxSniper;
 _RangeBoxGrenade = RangeAmmoGrenade;
 _RangeBoxMedic = RangeAmmoBoxMedic;
+_MedicalBox = MedicalBox;
 _CrewServedWepons = CrewBox;
 _ParaBox = ParaChuteBox;
 _RadioBox = RadioBox;
@@ -43,10 +44,10 @@ clearBackpackCargoGlobal _RangeBoxMedic;
 clearMagazineCargoGlobal _RangeBoxMedic;
 clearitemCargoGlobal _RangeBoxMedic;
 
-clearWeaponCargoGlobal _ParaBox;
-clearBackpackCargoGlobal _ParaBox;
-clearMagazineCargoGlobal _ParaBox;
-clearitemCargoGlobal _ParaBox;
+clearWeaponCargoGlobal _MedicalBox;
+clearBackpackCargoGlobal _MedicalBox;
+clearMagazineCargoGlobal _MedicalBox;
+clearitemCargoGlobal _MedcalBox;
 
 clearWeaponCargoGlobal _RadioBox;
 clearBackpackCargoGlobal _RadioBox;
@@ -56,7 +57,7 @@ clearitemCargoGlobal _RadioBox;
 clearWeaponCargoGlobal _CrewServedWepons;
 clearBackpackCargoGlobal _CrewServedWepons;
 clearMagazineCargoGlobal _CrewServedWepons;
-clearitemCargoGlobal _CrewServedWepons;
+clearItemCargoGlobal _CrewServedWepons;
 
 //Range Box
 //Weapons
@@ -149,7 +150,7 @@ _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_32Rnd_40mm_G_Box",100];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_shells",100];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Flare_white",100];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Smoke_white",100];
-_CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_LG",50];
+
 
 
 
@@ -181,11 +182,27 @@ _RangeBoxMedic addItemCargoGlobal ["ACE_bodyBag",100];
 _CrewServedWepons addItemCargoGlobal ["ACE_EarPlugs",20];
 _CrewServedWepons addItemCargoGlobal ["ACE_MapTools",20];
 _CrewServedWepons addItemCargoGlobal ["ACE_RangeTable_82mm",20];
-_CrewServedWepons addItemCargoGlobal ["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D",20];
 
+_MedicalBox addItemCargoGlobal ["ACE_fieldDressing",100];
+_MedicalBox addItemCargoGlobal ["ACE_elasticBandage",100];
+_MedicalBox addItemCargoGlobal ["ACE_quikclot",100];
+_MedicalBox addItemCargoGlobal ["ACE_packingBandage",100];
+_MedicalBox addItemCargoGlobal ["ACE_personalAidKit",50];
+_MedicalBox addItemCargoGlobal ["ACE_bloodIV",50];
+_Medicalbox addItemCargoGlobal ["ACE_bloodIV_500",50];
+_MedicalBox addItemCargoGlobal ["ACE_bloodIV_250",50];
+_MedicalBox addItemCargoGlobal ["ACE_plasmaIV",50];
+_MedicalBox addItemCargoGlobal ["ACE_plasmaIV_500",50];
+_MedicalBox addItemCargoGlobal ["ACE_plasmaIV_250",50];
+_MedicalBox addItemCargoGlobal ["ACE_salineIV",50];
+_MedicalBox addItemCargoGlobal ["ACE_salineIV_500",50];
+_MedicalBox addItemCargoGlobal ["ACE_salineIV_250",50];
+_MedicalBox addItemCargoGlobal ["ACE_tourniquet",50];
+_MedicalBox addItemCargoGlobal ["ACE_atropine",100];
+_MedicalBox addItemCargoGlobal ["ACE_epinephrine",100];
+_MedicalBox addItemCargoGlobal ["ACE_morphine",100];
+_Medicalbox addItemCargoGlobal ["ACE_surgicalKit",50];
 
-//Parachute
-_ParaBox AddBackPackCargoGlobal ["ACE_NonSteerableParachute",40];
 
 //Radio Box
 _RadioBox AdditemCargoGlobal ["ACRE_PRC117F",40];

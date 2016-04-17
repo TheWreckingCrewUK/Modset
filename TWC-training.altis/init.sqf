@@ -6,10 +6,12 @@ execVM "scripts\Zues\Zues5.sqf";
 execVM "scripts\Zues\Zues6.sqf";
 execVM "scripts\Zues\Zues7.sqf";
 execVM "scripts\Zues\Zues8.sqf";
+execVM "scripts\Zues\Zues9.sqf";
+execVM "scripts\Zues\Zues10.sqf";
 execVM "scripts\Zues\Admin.sqf";
 
 
-if ((str player) == "T8")then{
+if ((str player) == "S10")then{
 	_UID = getPlayerUID player;
 	if((_UID) != "_SP_PLAYER_")then{
 		_management = ["76561198010598279","76561198050512686","76561198070630639"];

@@ -17,7 +17,7 @@ if (isNil "ERA") then {
 //Trainer actions
 _everyone = ["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11","p12","p13","p14","p15"];
 
-_trainers = ["T1","T2","T3","T4","T5","T6","T7","T8"];
+_trainers = ["S1","S2","S3","S4","S5","S6","S7","S8","S9","S10"];
 //(str player) in _trainers
 if ((str player) in _trainers) then {
 	isTrainer = true;
@@ -40,6 +40,7 @@ if ((str player) in _trainers) then {
 //Teleport and range actions
 	teleportListAction = ["Teleport","Teleport List","", {},{true}] call ace_interact_menu_fnc_createAction;
 	_TeleAir = ['TeleAirAll','Teleport Airfield','', {vehicle player setPos (getMarkerPos "airfield");},{true}] call ace_interact_menu_fnc_createAction;
+	_Teleclass = ['TeleClassAll','Teleport Classroom','', {vehicle player setPos (getMarkerPos "Classroom");},{true}] call ace_interact_menu_fnc_createAction;
 	_TelePhase3 = ['TelePhaseAll','Teleport phase 3','', {vehicle player setpos (getMarkerPos "phase3");},{true}] call ace_interact_menu_fnc_createAction;
 	_TeleBase = ['TeleBaseAll','Teleport base','', {vehicle player setpos (getMarkerPos "hqarea");},{true}] call ace_interact_menu_fnc_createAction;
 	_TeleLHD = ['TeleLHDAll','Teleport LHD','', {vehicle player setpos (getMarkerPos "lhd");},{true}] call ace_interact_menu_fnc_createAction;
@@ -59,6 +60,7 @@ if ((str player) in _trainers) then {
 	[player, 1, ["ACE_SelfActions","Teleport"], _TeleLHD] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _Telebomb] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _Televehicle] call ace_interact_menu_fnc_addActionToObject;
+	[player, 1, ["ACE_SelfActions","Teleport"], _Teleclass] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _Teleclick] call ace_interact_menu_fnc_addActionToObject;
 	
 	[player, 1, ["ACE_SelfActions"], TWCrandomrange] call ace_interact_menu_fnc_addActionToObject;
