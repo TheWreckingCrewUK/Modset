@@ -7,16 +7,14 @@
 
 if((getMarkerColor "hq2") == "ColorWEST")exitWith{};
 _startingPoint = "hq2";
-_car = "CUP_O_UAZ_OPEN_RU";
-_squad = ["CUP_O_SLA_Soldier","CUP_O_SLA_Soldier","CUP_O_SLA_Soldier_GL","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_MG"];
 
 _marker = capturedArray call BIS_fnc_selectRandom;
 
 if isServer then {
 	private ["_pos","_m"];
 	_pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] call SHK_pos;
-	_PatrolSquad = [_pos, Independent, _squad] call BIS_fnc_spawnGroup;
-	_vehicle = _car createVehicle getmarkerPos _startingpoint;
+	_PatrolSquad = [_pos, EAST, squad] call BIS_fnc_spawnGroup;
+	_vehicle = uaz createVehicle getmarkerPos _startingpoint;
 	_men = units _PatrolSquad;
 	
 	_leader = leader _PatrolSquad;

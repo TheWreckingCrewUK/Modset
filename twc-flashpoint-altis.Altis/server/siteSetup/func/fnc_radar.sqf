@@ -17,13 +17,7 @@ params["_marker"];
 
 _CentralMarker = format ["%1",_marker];
 
-//units
-_squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySquad");
-_ATteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionAT");
-_AAteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionAA");
-_radar = "Land_Radar_Small_F";
-
-[_CentralMarker, _squad]spawn{
+[_CentralMarker, squad]spawn{
 	if isServer then {
 		private ["_pos","_m"];
 		sleep 5;
@@ -33,7 +27,7 @@ _radar = "Land_Radar_Small_F";
 	};
 };
 
-[_CentralMarker, _ATteam]spawn{
+[_CentralMarker, ATteam]spawn{
 	if isServer then {
 		private ["_pos","_m"];
 		sleep 3;
@@ -46,13 +40,13 @@ _radar = "Land_Radar_Small_F";
 if isServer then {
 		private ["_pos","_m"];
 		_pos = [getmarkerpos _CentralMarker,[0,25],random 360,0] call SHK_pos;
-		_DefendAA = [_pos, EAST, _AAteam] call BIS_fnc_spawnGroup;
+		_DefendAA = [_pos, EAST, AAteam] call BIS_fnc_spawnGroup;
 		[_DefendAA, getmarkerpos _CentralMarker, 50] call CBA_fnc_taskDefend;
 	};
 /*
 if isServer then {
 		private ["_m"];
 		
-		_radarstation = _radar createVehicle getmarkerpos _CentralMarker;
+		radarstation = radar createVehicle getmarkerpos _CentralMarker;
 	};
 */

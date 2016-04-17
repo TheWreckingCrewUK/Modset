@@ -25,11 +25,10 @@ _enemy = nearestObjects [getMarkerPos _marker, ["Man","WeaponHolder","GroundWeap
 	deleteGroup _x
 }forEach allGroups;
 
-
-if ((_marker) in remainingArray) exitWith{};
-
 capturedArray = capturedArray - [_marker];
 publicVariable "capturedArray";
+
+if ((_marker) in remainingArray) exitWith{};
 
 remainingArray = remainingArray + [_marker];
 publicVariable "remainingArray";

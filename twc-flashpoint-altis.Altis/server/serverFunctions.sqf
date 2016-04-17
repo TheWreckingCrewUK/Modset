@@ -20,6 +20,8 @@ twc_siteContestedCounter = compile preprocessfilelinenumbers "server\siteSetup\f
 twc_airAssault = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_airassault.sqf";
 
 twc_aa = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_aa.sqf";
+twc_airbase = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_airbase.sqf";
+twc_hq = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_hq.sqf";
 twc_hamlet = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_hamlet.sqf";
 twc_mech = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_mech.sqf";
 twc_radar = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_radar.sqf";

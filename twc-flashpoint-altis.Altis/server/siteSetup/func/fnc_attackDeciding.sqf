@@ -7,8 +7,8 @@
 
 params["_marker"];
 _rand = random 100;
-if(_rand < 50)exitWith {};
 [_marker] call twc_attackInf;
 [_marker] call twc_siteContestedCounter;
-if(_rand < 66)exitWith {};
+if(_rand < 33)exitWith {};
 [_marker] call twc_attackHelo;
+hint str _rand;

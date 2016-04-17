@@ -12,31 +12,22 @@
 *
 */
 
-hint"Town garrison spawned";
+hint"HQ Spawned";
 params["_marker"];
 
 _CentralMarker = format ["%1",_marker];
 
 if isServer then {
 	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[100,250],random 360,0,[1],[300, "Air"]] call SHK_pos;
-	_PatrolSPAAG = [_pos, EAST, shilka] call BIS_fnc_spawnGroup;
-	};
-	
+	_pos = [getmarkerpos _CentralMarker,[0,300],random 360,0] call SHK_pos;
+	_PatrolTanks = [_pos, EAST, BRDM] call BIS_fnc_spawnGroup;
+	[_PatrolTanks, getmarkerpos _CentralMarker, 400] call CBA_fnc_taskDefend;
+};
 if isServer then {
-		private ["_pos","_m"];
-		_pos = [getmarkerpos _CentralMarker,[0,300],random 360,0] call SHK_pos;
-		_PatrolBRDM = [_pos, EAST, BRDM] call BIS_fnc_spawnGroup;
-		[_PatrolBRDM, getmarkerpos _CentralMarker, 350] call CBA_fnc_taskPatrol;
-	};
-[_CentralMarker, BRDMAT] spawn{
-	if isServer then {
-		sleep 1;
-		private ["_pos","_m"];
-		_pos = [getmarkerpos (_this select 0),[0,300],random 360,0] call SHK_pos;
-		_PatrolBRDMAT = [_pos, EAST, (_this select 1)] call BIS_fnc_spawnGroup;
-		[_PatrolBRDMAT, getmarkerpos (_this select 0), 350] call CBA_fnc_taskPatrol;
-	};
+	private ["_pos","_m"];
+	_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
+	_PatrolTank = [_pos, EAST, tunguska] call BIS_fnc_spawnGroup;
+	[_Patroltank, getmarkerpos _CentralMarker, 300] call CBA_fnc_taskDefend;
 };
 
 [_CentralMarker, ATteam] spawn{
@@ -62,7 +53,7 @@ if isServer then {
 	};
 };
 [_CentralMarker, squad] spawn{
-	for "_i" from 0 to 1 do {
+	for "_i" from 0 to 2 do {
 		if isServer then{
 			sleep 5;
 			private ["_pos","_m"];

@@ -18,12 +18,7 @@ params["_marker"];
 _CentralMarker = format ["%1",_marker];
 
 
-//units
-_squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySquad");
-_ATteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionAT");
-_AAteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "CUP_O_SLA_InfantrySectionAA");
-
-[_CentralMarker, _AAteam] spawn{
+[_CentralMarker, AAteam] spawn{
 	if isServer then {
 		private ["_pos","_m"];
 		_pos = [getmarkerpos (_this select 0),[0,50],random 360,0] call SHK_pos;
@@ -31,7 +26,7 @@ _AAteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "
 		[_DefendAA, getmarkerpos (_this select 0), 100] call CBA_fnc_taskPatrol;
 	};
 };
-[_CentralMarker, _squad] spawn{
+[_CentralMarker, squad] spawn{
 	if isServer then {
 		sleep 3;
 		private ["_pos","_m"];
@@ -41,7 +36,7 @@ _AAteam = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >> "
 	};
 };
 
-[_CentralMarker, _ATteam] spawn{
+[_CentralMarker, ATteam] spawn{
 	if isServer then {
 		sleep 5;
 		private ["_pos","_m"];

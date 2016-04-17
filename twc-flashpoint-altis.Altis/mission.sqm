@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=558;
+		nextID=559;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={26888.631,89.918755,24501.387};
-		dir[]={-0.94443387,-0.23839283,-0.22677048};
-		up[]={-0.23193969,0.97114658,-0.055692062};
-		aside[]={-0.23350906,9.2061237e-007,0.97248197};
+		pos[]={23212.605,147.80801,19646.084};
+		dir[]={-0.08723285,-0.56649655,0.8194502};
+		up[]={-0.059972472,0.824027,0.56336701};
+		aside[]={0.99439335,-1.6745798e-007,0.10585716};
 	};
 };
 binarizationWanted=0;
@@ -130,7 +130,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=162;
+		items=163;
 		class Item0
 		{
 			dataType="Logic";
@@ -306,7 +306,7 @@ class Mission
 			dataType="Marker";
 			position[]={25689.014,20.311022,21340.943};
 			name="hq2";
-			text="HQ";
+			text="Logistics HQ";
 			type="o_hq";
 			colorName="ColorEAST";
 			id=18;
@@ -325,7 +325,7 @@ class Mission
 			dataType="Marker";
 			position[]={23148.598,3.1900001,18396.301};
 			name="mainHQ";
-			text="Main HQ";
+			text="AirBase";
 			type="o_air";
 			colorName="ColorEAST";
 			id=20;
@@ -5480,13 +5480,12 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26782.58,22.76721,24659.928};
-				angles[]={0.017329043,0.69474578,6.2818484};
+				position[]={26782.58,22.767172,24659.928};
+				angles[]={0.01733112,0.69474578,6.2818413};
 			};
 			side="Empty";
 			class Attributes
 			{
-				health=0.59405935;
 				init="veh = [this, 180, 1200, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="ammo1";
 			};
@@ -5521,8 +5520,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26778.652,22.545559,24662.139};
-				angles[]={0.034652505,0.7198872,0.035984326};
+				position[]={26778.652,22.545982,24662.139};
+				angles[]={0.034644786,0.71987849,0.035988688};
 			};
 			side="Empty";
 			class Attributes
@@ -7416,7 +7415,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={23186.93,3.1914389,18397.225};
+						position[]={23196.154,3.1914389,18393.98};
 					};
 					side="East";
 					flags=3;
@@ -7477,6 +7476,48 @@ class Mission
 			{
 			};
 			id=556;
+		};
+		class Item162
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26834.131,25.869658,24573.885};
+				angles[]={0.010663962,0.69474578,0.0053232545};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="LOCKEDPLAYER";
+				fuel=0;
+				init="if(!isServer)exitWith{}; this allowDamage false;";
+				name="ammo1_1";
+			};
+			id=558;
+			type="B_Truck_01_ammo_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections

@@ -4,6 +4,11 @@ hint format["Blufor has captured %1",_marker];
 _marker setMarkerColor "colorWEST";
 [_marker, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 
+_rand = random 100;
+if(_rand < 33) exitWith{
+	[_marker]spawn {sleep 10; [(_this select 0)] call twc_attackDeciding};
+};
+
 [_marker]spawn{
 	sleep 300;
 	{ deleteVehicle _x } forEach allDead;
@@ -35,17 +40,15 @@ _marker setMarkerColor "colorWEST";
 	}forEach allGroups;
 };
 
+remainingArray = remainingArray - [_marker];
+publicVariable "capturedArray";
+
 if ((_marker) in capturedArray) exitWith{};
 
 capturedArray = capturedArray + [_marker];
 publicVariable "capturedArray";
 
-if(count capturedArray == 0)then{
+if(count remainingArray == 0)then{
 	["All Bases Captured. Stick around for the Insurgency Stratis", "hint", True, True] call BIS_fnc_MP;
 	[] spawn {sleep 15; ["end1", false, 0] call BIS_fnc_endMission};
 };
-
-remainingArray = remainingArray - [_marker];
-publicVariable "capturedArray";
-
-[_marker] call twc_attackDeciding;
