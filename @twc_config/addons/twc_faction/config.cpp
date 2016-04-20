@@ -2593,7 +2593,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1",
 		"HAFM_LAW"		
 		};
 		respawnweapons[]=
@@ -2601,14 +2600,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1",
 		"HAFM_LAW"	
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -2621,10 +2616,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"CUP_HandGrenade_L109A2_HE"
 		};
 		Respawnmagazines[]=
-		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",	
+		{	
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -2690,16 +2682,14 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"hlc_rifle_L1A1SLR",
-		"tf47_m3maaws",
-		"rhsusf_weap_m1911a1"
+		"tf47_m3maaws"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"hlc_rifle_L1A1SLR",
-		"TWC_Carl_Gustav",
-		"rhsusf_weap_m1911a1"
+		"TWC_Carl_Gustav"
 		};
 		magazines[]=
 		{
@@ -2708,10 +2698,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"hlc_20Rnd_762x51_B_fal",
 		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
@@ -2728,10 +2715,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"hlc_20Rnd_762x51_B_fal",
 		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
@@ -2795,15 +2779,13 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 	    "Throw",
 		"Put",
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		magazines[]=
 		{
@@ -2813,9 +2795,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2832,9 +2811,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2901,7 +2877,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -2909,7 +2885,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
@@ -2919,9 +2895,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2938,9 +2914,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3002,23 +2978,23 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L7A2",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L7A2",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
 		"UK3CB_BAF_75Rnd_T",
 		"UK3CB_BAF_75Rnd",
 		"UK3CB_BAF_75Rnd",	
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3032,9 +3008,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_75Rnd_T",
 		"UK3CB_BAF_75Rnd",
 		"UK3CB_BAF_75Rnd",	
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3095,15 +3071,13 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		magazines[]=
 		{
@@ -3112,9 +3086,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3129,10 +3100,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"hlc_20Rnd_762x51_B_fal",	
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3199,7 +3167,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -3207,15 +3175,15 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3228,9 +3196,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3297,7 +3265,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -3305,15 +3273,15 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3326,9 +3294,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3395,7 +3363,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -3403,15 +3371,15 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3424,9 +3392,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3489,19 +3457,19 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3510,9 +3478,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -3576,7 +3544,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -3584,13 +3552,13 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -3613,10 +3581,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -3691,25 +3659,25 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",	
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",	
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",	
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",	
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -3765,25 +3733,25 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhsusf_weap_m1911a1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",	
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",	
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",	
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",	
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -3854,7 +3822,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1",
 		"FIMStingerA"
 		};
 		respawnweapons[]=
@@ -3862,14 +3829,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1",
 		"FIMStingerA"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -3885,9 +3848,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -3953,21 +3913,16 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -3982,9 +3937,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -4417,12 +4369,12 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="BAF_Soldier_Base_R_W_Uniform_DG1";
 		backpack="TWC_Backpack_1990_Sectionlead";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Officer_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Officer",
+		"CUP_H_BAF_Helmet_Net_2_DPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4431,7 +4383,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Officer_Vest_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Officer",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4522,12 +4474,12 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="BAF_Soldier_Base_R_W_Uniform_DG1";
 		backpack="TWC_Backpack_1990_Rifleman";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_H_BAF_Helmet_1_DPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4536,7 +4488,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4548,7 +4500,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_AT4_CS_AT_Launcher"
 		};
 		respawnweapons[]=
@@ -4556,14 +4507,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_AT4_CS_AT_Launcher"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -4575,9 +4522,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -4621,12 +4565,12 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="BAF_Soldier_Base_R_W_Uniform_DG1";
 		backpack="TWC_Backpack_1990_Grenadier";
 		linkedItems[]=
 		{
-        "BAF_Soldier_gl_Vest_W_DG1",
-		"BAF_Soldier_gl_Headgear_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Grenadier",
+		"CUP_H_BAF_Helmet_Net_2_DPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4635,8 +4579,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_gl_Vest_W_DG1",
-		"BAF_Soldier_gl_Headgear_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Grenadier",
+		"CUP_H_BAF_Helmet_Net_2_DPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4647,22 +4591,17 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L85A2_UGL_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L85A2_UGL_SUSAT3D"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L85A2_UGL_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L85A2_UGL_SUSAT3D"
 		};
 		magazines[]=
 		{
 		"1Rnd_HE_Grenade_shell",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -4674,10 +4613,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"1Rnd_HE_Grenade_shell",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",		
+		"1Rnd_HE_Grenade_shell",	
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -4721,12 +4657,12 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		vehicleClass="Modern_British";
 		icon="iconManMG";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="BAF_Soldier_Base_R_W_Uniform_DG1";
 		backpack="TWC_Backpack_1990_Gunner";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_H_BAF_Helmet_1_DPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4735,7 +4671,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4746,21 +4682,16 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L86A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L86A1_SUSAT3D"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L86_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L86_SUSAT3D"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -4772,9 +4703,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -4818,12 +4746,12 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="BAF_Soldier_Base_R_W_Uniform_DG1";
 		backpack="TWC_Backpack_1990_2IC";
 		linkedItems[]=
 		{
-        "BAF_Soldier_2_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Soldier2",
+		"CUP_H_BAF_Helmet_2_DPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4832,7 +4760,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_2_Vest_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Soldier2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4845,7 +4773,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -4853,13 +4781,13 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -4873,9 +4801,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -4921,12 +4849,12 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="BAF_Soldier_Base_R_W_Uniform_DG1";
 		backpack="TWC_Backpack_1990_Platoon_Command";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Empty",
+		"CUP_H_BAF_Helmet_Net_2_DPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4935,7 +4863,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Empty",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -4948,7 +4876,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -4956,13 +4884,13 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -4974,9 +4902,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -5027,12 +4955,12 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="BAF_Soldier_Base_R_W_Uniform_DG1";
 		backpack="TWC_Backpack_1990_Platoon_Sergeant";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Empty",
+		"CUP_H_BAF_Helmet_Net_2_DPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5041,7 +4969,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Empty",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5054,7 +4982,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -5062,13 +4990,13 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -5080,9 +5008,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -5133,12 +5061,12 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="BAF_Soldier_Base_R_W_Uniform_DG1";
 		backpack="TWC_Backpack_1990_Medic";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Empty",
+		"CUP_H_BAF_Helmet_Net_2_DPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5147,7 +5075,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DPM_Empty",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5158,19 +5086,19 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -5179,9 +5107,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -5222,7 +5150,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="BAF_Soldier_Base_R_W_Uniform_DG1";
 		backpack="TWC_Backpack_Cold_War_Pilot";
 		linkedItems[]=
 		{
@@ -5243,19 +5171,19 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"UK3CB_BAF_L22A2_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"UK3CB_BAF_L22A2_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"SmokeShell",
@@ -5263,8 +5191,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"SmokeShell",
@@ -5322,25 +5250,25 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",	
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",	
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -5400,8 +5328,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Sectionlead";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Officer_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Officer",
+		"CUP_H_BAF_Helmet_Net_2_DDPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5410,7 +5338,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Officer_Vest_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Officer",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5423,7 +5351,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -5431,13 +5359,13 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
@@ -5449,9 +5377,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
@@ -5505,8 +5433,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Rifleman";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1",
+		"CUP_H_BAF_Helmet_Net_2_DDPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5515,7 +5443,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5527,7 +5455,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_AT4_CS_AT_Launcher"
 		};
 		respawnweapons[]=
@@ -5535,14 +5462,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_AT4_CS_AT_Launcher"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -5554,9 +5477,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -5604,8 +5524,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Grenadier";
 		linkedItems[]=
 		{
-        "BAF_Soldier_gl_Vest_D_DG1",
-		"BAF_Soldier_gl_Headgear_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Grenadier",
+		"CUP_H_BAF_Helmet_Net_2_DDPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5614,8 +5534,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_gl_Vest_D_DG1",
-		"BAF_Soldier_gl_Headgear_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Grenadier",
+		"CUP_H_BAF_Helmet_Net_2_DDPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5626,22 +5546,17 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L85A2_UGL_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L85A2_UGL_SUSAT3D"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L85A2_UGL_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L85A2_UGL_SUSAT3D"
 		};
 		magazines[]=
 		{
 		"1Rnd_HE_Grenade_shell",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -5653,10 +5568,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"1Rnd_HE_Grenade_shell",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",	
+		"1Rnd_HE_Grenade_shell",	
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
@@ -5704,8 +5616,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Gunner";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1",
+		"CUP_H_BAF_Helmet_1_DDPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5714,7 +5626,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5725,21 +5637,16 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L86A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L86A1_SUSAT3D"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L86_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L86_SUSAT3D"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -5751,9 +5658,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -5801,8 +5705,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_2IC";
 		linkedItems[]=
 		{
-        "BAF_Soldier_2_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2",
+		"CUP_H_BAF_Helmet_2_DDPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5811,7 +5715,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_2_Vest_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5824,7 +5728,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -5832,13 +5736,13 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
@@ -5852,9 +5756,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
@@ -5904,8 +5808,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Platoon_Command";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Empty",
+		"CUP_H_BAF_Helmet_Net_2_DDPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5914,7 +5818,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Empty",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -5927,7 +5831,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -5935,13 +5839,13 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -5953,9 +5857,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -6010,8 +5914,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Platoon_Sergeant";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Empty",
+		"CUP_H_BAF_Helmet_Net_2_DDPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -6020,7 +5924,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Empty",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -6033,7 +5937,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
@@ -6041,13 +5945,13 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -6059,9 +5963,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
@@ -6115,8 +6019,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Medic";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Empty",
+		"CUP_H_BAF_Helmet_1_DDPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -6125,7 +6029,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
+        "CUP_V_BAF_Osprey_Mk2_DDPM_Empty",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -6136,19 +6040,19 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -6157,9 +6061,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -6200,7 +6104,7 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		vehicleClass="1990_British_Desert";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_D_Uniform_DG1";
+		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
 		backpack="TWC_Backpack_Cold_War_Pilot";
 		linkedItems[]=
 		{
@@ -6221,19 +6125,19 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		"Throw",
 		"Put",
 		"UK3CB_BAF_L22A2_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"UK3CB_BAF_L22A2_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"hgun_mas_bhp_F"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"SmokeShell",
@@ -6241,8 +6145,8 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"13Rnd_mas_9x21_Mag",
+		"13Rnd_mas_9x21_Mag",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"SmokeShell",
