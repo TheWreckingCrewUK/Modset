@@ -93,6 +93,19 @@ if ((str player) in _trainers) then {
 	[player, 1, ["ACE_SelfActions","time"], _evening] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","time"], _midnight] call ace_interact_menu_fnc_addActionToObject;
 	
+//medical training menu
+	_twcMedicalMenu = ["twcMedical", "Medical Training","",{},{true}] call ace_interact_menu_fnc_createAction;
+	
+	_medEasy = ["easy", "Easy", "", {medicalPacket = [0,player]; publicVariableServer "medicalTraining";}, {true}] call ace_interact_menu_fnc_createAction;
+	_medMedium = ["medium", "Medium", "", {medicalPacket = [1,player]; publicVariableServer "medicalTraining";}, {true}] call ace_interact_menu_fnc_createAction;
+	_medHard = ["hard", "Hard", "", {medicalPacket = [2,player]; publicVariableServer "medicalTraining";}, {true}] call ace_interact_menu_fnc_createAction;
+	
+	[player, 1, ["ACE_SelfActions"], _twcMedicalMenu] call ace_interact_menu_fnc_addActionToObject;
+
+	[player, 1, ["ACE_SelfActions","twcMedical"], _medEasy] call ace_interact_menu_fnc_addActionToObject;
+	[player, 1, ["ACE_SelfActions","twcMedical"], _medMedium] call ace_interact_menu_fnc_addActionToObject;
+	[player, 1, ["ACE_SelfActions","twcMedical"], _medHard] call ace_interact_menu_fnc_addActionToObject;
+	
 }else{
 	isTrainer = false;
 };

@@ -34,3 +34,11 @@ execVM "scripts\weaponLists\crates\modern.sqf";
 		default {diag_log format ["%1, %2", time, "An error occured when attempting to spawn a tank."];};
 	};
 };
+
+"medicalPacket" addPublicVariableEventHandler {
+	_null = [_this select 1] execVM "scripts\medical\damageAnnie.sqf";
+};
+
+if(isNil "cprAnnie") then {
+	execVM "scripts\medical\createAnnie.sqf";
+};
