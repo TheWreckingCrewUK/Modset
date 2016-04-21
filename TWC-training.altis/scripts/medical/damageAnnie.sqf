@@ -12,7 +12,7 @@ switch(_difficultyLevel)do{
 	default {diag_log format ["%1, %2", time, "An error occured when attempting to perform medical training."];}
 };
 
-medicalPacket = hint format ["Annie was damaged by %1", _typeOfDamage];
+medicalPacket = _typeOfDamage;
 _trainer publicVariableClient "medicalPacket";
 
 [cprAnnie, _damageAmount, "body", _typeOfDamage] call ace_medical_fnc_addDamageToUnit;
