@@ -589,7 +589,7 @@ class CfgVehicles
 		"UK3CB_BAF_HMNVS"			
 		};
 	};
-
+	
 	class Modern_British_2IC: B_Soldier_base_F
 	{
 		_generalMacro="Modern_British_2IC";
@@ -977,7 +977,7 @@ class CfgVehicles
 		"ItemcTab",
 		"ACE_DAGR",
 		"ACE_EarPlugs"	
-
+		
 		};
 		respawntems[]=
 		{
@@ -1543,8 +1543,8 @@ class CfgVehicles
 		"UK3CB_BAF_HMNVS"		
 		};		
 	};
-
-/**************************************************
+	
+	/**************************************************
 *                    Modern Coin                  *
 **************************************************/
    class Modern_British__Coin_Squadleader: B_Soldier_base_F
