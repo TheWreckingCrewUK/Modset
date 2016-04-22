@@ -1,5 +1,10 @@
 params["_marker"];
 
+if (_marker == "airbase1") exitWith {
+	["Enemy MainHQ captured. All forces routed. Mission Completed.", "hint", True, True] call BIS_fnc_MP;
+	[] spawn {sleep 15; ["end1", false, 0] call BIS_fnc_endMission};
+};
+
 hint format["Blufor has captured %1",_marker];
 _marker setMarkerColor "colorWEST";
 [_marker, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;

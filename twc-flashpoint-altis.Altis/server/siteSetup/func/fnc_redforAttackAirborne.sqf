@@ -1,8 +1,8 @@
-if((getMarkerColor "mainHQ") == "ColorWEST")exitWith{ hint "Enemy Base Captured"};
+if((getMarkerColor "airbase1") != "ColorEAST")exitWith{ hint "Enemy Base Captured"};
 
 _marker = capturedArray call BIS_fnc_selectRandom;
 
-_startingPoint = "mainHQ";
+_startingPoint = "hostileAirSpawn";
 
 
 _endMarker = getMarkerPos _marker;
