@@ -126,7 +126,7 @@ class CHVD_rscButton
 		font="PuristaLight";
 		color="#E5E5E5";
 		align="left";
-		shadow="false";
+		shadow=0;
 	};
 	class ShortcutPos
 	{
@@ -297,7 +297,7 @@ class CHVD_rscEdit
 class CHVD_dialog
 {
 	idd = 2900;
-	movingEnable = false;
+	movingEnable = 0;
 	moving = 1; 
 	onLoad = "";
 	onUnload = "";

@@ -1,7 +1,7 @@
 private["_difficultyLevel","_typeOfDamage","_damageAmount","_trainer"];
 
-_difficultyLevel = _this select 0;
-_trainer = owner _this select 1;
+_difficultyLevel = (_this select 0) select 0;
+_trainer = owner ((_this select 0) select 1);
 _damageAmount = 0;
 _typeOfDamage = "";
 
