@@ -11,12 +11,11 @@ while {true} do {
 			
 			
 				{
-					_Curator = _allcurators Select _i;
 					_x addCuratorEditableObjects [[allUnits], true];
 					_x addCuratorEditableObjects [vehicles, true];
 				}foreach allcurators;
 				_countAllUnits = count allunits;
-				waituntil {_CountAllUnits < count allunits};
+				waituntil {_countAllUnits < count allunits};
 	
 	sleep 10;
 };
