@@ -87,9 +87,9 @@ if ((str player) in _trainers) then {
 		_typeOfDamage = _this select 1;
 		hint format ["Annie was damaged by %1", _typeOfDamage];
 	};
-    _medEasy = ["easy", "Easy", "", {medicalPacket = [0,player]; publicVariableServer "medicalTraining";}, {true}] call ace_interact_menu_fnc_createAction;
-    _medMedium = ["medium", "Medium", "", {medicalPacket = [1,player]; publicVariableServer "medicalTraining";}, {true}] call ace_interact_menu_fnc_createAction;
-    _medHard = ["hard", "Hard", "", {medicalPacket = [2,player]; publicVariableServer "medicalTraining";}, {true}] call ace_interact_menu_fnc_createAction;
+    _medEasy = ["easy", "Easy", "", {medicalPacket = [0,player]; publicVariableServer "medicalPacket";}, {true}] call ace_interact_menu_fnc_createAction;
+    _medMedium = ["medium", "Medium", "", {medicalPacket = [1,player]; publicVariableServer "medicalPacket";}, {true}] call ace_interact_menu_fnc_createAction;
+    _medHard = ["hard", "Hard", "", {medicalPacket = [2,player]; publicVariableServer "medicalPacket";}, {true}] call ace_interact_menu_fnc_createAction;
      
     [player, 1, ["ACE_SelfActions"], _twcMedicalMenu] call ace_interact_menu_fnc_addActionToObject;
   
