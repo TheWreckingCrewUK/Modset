@@ -7,7 +7,7 @@
 //                         Setup                          /
 /////////////////////////////////////////////////////////*/
 
-//Tasks have been moved to initServer.sqf
+[] execVM "tasks.sqf";
 
 
 /*/////////////////////////////////////////////////////////
@@ -69,7 +69,7 @@ If (isserver) then {
 //////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
-/* <--- Delete this once editing is finished.
+
 playMusic "Theme";
 titleCut ["", "BLACK FADED", 999];
 	[] Spawn {
@@ -79,7 +79,7 @@ titleCut ["", "BLACK FADED", 999];
 	titleFadeOut 7;
 	sleep 5;
 
-	titleText ["Operation Yellowcake","PLAIN"];
+	titleText ["Operation TERKANDIN","PLAIN"];
 	titleFadeOut 15;
 	sleep 30;
 

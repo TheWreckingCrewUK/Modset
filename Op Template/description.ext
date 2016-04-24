@@ -1,6 +1,6 @@
 
-author = "[TWC] Patty Evans";
-onLoadName = "Operation Crevit"; 
+author = "[TWC] Mallas";
+onLoadName = "Operation TERKANDIN"; 
 loadScreen = "operation_framework\pictures\loading.jpg";
 disabledAI = 1;
 enableDebugConsole = 1;
