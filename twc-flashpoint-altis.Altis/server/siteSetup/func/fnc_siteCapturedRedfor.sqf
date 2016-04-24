@@ -4,6 +4,10 @@ hint format["Redfor has captued %1", _marker];
 execVM format["server\siteSetup\%1\init.sqf", _marker];
 _marker setMarkerColor "colorEAST";
 [_marker, "CREATED", true] spawn BIS_fnc_taskSetState;
+if (_marker == "airbase2")then {
+	airbase2Respawn call BIS_fnc_removeRespawnPosition;
+	boatRespawn = [west, "boatSpawn"] call BIS_fnc_addRespawnPosition;
+};
 
 [_marker] call twc_basicLogistics;
 

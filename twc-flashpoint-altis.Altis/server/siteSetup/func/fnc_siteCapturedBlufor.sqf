@@ -5,6 +5,11 @@ if (_marker == "airbase1") exitWith {
 	[] spawn {sleep 15; ["end1", false, 0] call BIS_fnc_endMission};
 };
 
+if (_marker == "airbase2")then {
+	airbase2Respawn = [west, "airbase2"] call BIS_fnc_addRespawnPosition;
+	boatRespawn call BIS_fnc_removeRespawnPosition;
+};
+	
 hint format["Blufor has captured %1",_marker];
 _marker setMarkerColor "colorWEST";
 [_marker, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;

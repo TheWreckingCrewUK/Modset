@@ -8,6 +8,7 @@ player addEventHandler ["RESPAWN",{hint "Respawn Event Handler Active"; bluforDe
 execVM "client\restrict\init.sqf";
 execVM "client\cleanup\gear.sqf";
 execVM "client\diary\init.sqf";
+execVM "client\vehicleSpawning\landVehicles.sqf";
 g_class = "";
 g_group = "";
 g_unit = "";
@@ -298,7 +299,9 @@ if (!isNil "helo1" && {player == helo1}) then {
 	g_group = "0";
 	g_unit = "100";
 	g_name = "Wildcat Pilot";
-	g_radio = "";
+	g_radio = "";	
+	SpawnAW19Action = ["SpawnAW159","AW19 Wildcat","",{_veh = "CUP_B_AW159_Cannon_GB" createVehicle (position armourSpawnPad);_veh setDir 120;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
+	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnM1A2Action] call ace_interact_menu_fnc_addActionToClass;	
 	execVM "client\radar\helicopterRadar.sqf";
 		if(isNil "jetSpawned") then{
 		jetSpawned = 0;
@@ -312,6 +315,8 @@ if (!isNil "helo2" && {player == helo2}) then {
 	g_unit = "101";
 	g_name = "BlackHawk Pilot";
 	g_radio = "";
+	SpawnUH60MAction = ["SpawnUH60M","UH60M Blackhawk","",{_veh = "CUP_B_UH60M_US" createVehicle (position armourSpawnPad);_veh setDir 120;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
+	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnM1A2Action] call ace_interact_menu_fnc_addActionToClass;
 	execVM "client\radar\helicopterRadar.sqf";
 	prepAction = player addAction ["<t color='#FF0000'>Prep Osprey For Paradrop</t>", "_vehicle = cursorObject; hint str cursorObject; [_vehicle] call twc_paradropSetup"];
 	if(isNil "jetSpawned") then{

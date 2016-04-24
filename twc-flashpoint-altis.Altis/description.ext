@@ -19,8 +19,9 @@ class Header
 
 respawn="BASE";
 respawndelay = 30;
+respawnTemplates[] = {"MenuPosition"};
 respawnDialog = false;
-respawnOnStart = 0;
+respawnOnStart = 1;
 
 enableDebugConsole = 1;
 

@@ -18,7 +18,7 @@ switch (playerSide) do
 {
 	case west:
 	{player addEventHandler ["Fired", {
-if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0) then
+if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0 && (getMarkerColor "airBase2") == "colorWest") then
 {
 deleteVehicle (_this select 6);
 titleText [MESSAGE, "PLAIN", 3];

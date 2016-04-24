@@ -1,4 +1,7 @@
-/*  
+/* 
+
+*Edited by Jayman. 0 Respawns gives no Respawn. Infinite must be a negative Number!*
+ 
 =========================================================
   Simple Vehicle Respawn Script v1.7
   by Tophe of Östgöta Ops [OOPS]
@@ -76,8 +79,9 @@ _rounds = 0;
 
 if (_delay < 0) then {_delay = 0};
 if (_deserted < 0) then {_deserted = 0};
-if (_respawns <= 0) then {_respawns= 0; _noend = true;};
-if (_respawns > 0) then {_noend = false};
+if (_respawns <= 0) then {_respawns = 0;};
+if (_respawns < 0) then {_noend = true;};
+if (_respawns >= 0) then {_noend = false};
 
 _dir = getDir _unit;
 _position = getPosASL _unit;
@@ -159,6 +163,6 @@ while {_run} do
 
 		// Check respawn amount
 		if !(_noend) then {_rounds = _rounds + 1};
-		if ((_rounds == _respawns) and !(_noend)) then {_run = false;};
+		if ((_rounds >= _respawns) and !(_noend)) then {_run = false; deleteVehicle _unit;};
 	};
 };

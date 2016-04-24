@@ -20,3 +20,6 @@
 #include "radar1\init.sqf";
 #include "support1\init.sqf";
 #include "warning1\init.sqf";
+if(isMultiplayer)then {
+	#include "airbase2\init.sqf";
+};

@@ -1,5 +1,6 @@
 [West,["aa1"],["","Anti Air Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
 [West,["air1"],["","Air Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+[West,["airbase2"],["","AirBase Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
 //[West,["airport1"],["","Airport Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
 [West,["armour1"],["","Armour Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
 [West,["hq1"],["","HQ Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
@@ -15,3 +16,5 @@
 [West,["radar"],["","Radar Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
 [West,["support1"],["","Support Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
 [West,["warning1"],["","Warning Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
+
+boatRespawn = [west, "boatSpawn"] call BIS_fnc_addRespawnPosition;
