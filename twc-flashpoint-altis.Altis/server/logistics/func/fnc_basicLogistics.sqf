@@ -63,5 +63,5 @@ if isServer then {
 	_wp2 setWaypointFormation "COLUMN";
 	_wp2 setWaypointTimeout [20,20,20];
 	_wp2 setWaypointStatements ["True", "if(TWC_enemySupply > -3)then{TWC_enemySupply = TWC_enemySupply - .25; publicVariable 'TWC_enemySuply'}; _trucks = NearestObjects [
-	getPos this, ['Truck','Car','Support'], 30]; {deleteVehicle _x}foreach _trucks;{deleteVehicle _x}foreach thisList"];
+	getPos this, ['Truck','Car','Support'], 60]; {deleteVehicle _x}foreach _trucks;{deleteVehicle _x}foreach thisList"];
 };

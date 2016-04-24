@@ -8,7 +8,7 @@ player addEventHandler ["RESPAWN",{hint "Respawn Event Handler Active"; bluforDe
 execVM "client\restrict\init.sqf";
 execVM "client\cleanup\gear.sqf";
 execVM "client\diary\init.sqf";
-execVM "client\vehicleSpawning\landVehicles.sqf";
+execVM "client\vehicleSpawning\supportVehicles.sqf";
 g_class = "";
 g_group = "";
 g_unit = "";
@@ -19,6 +19,7 @@ if (!isNil "p1" && {player == p1}) then {
 	g_name = "Alpha Section Leader";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	execVM "client\vehicleSpawning\landBritish.sqf";
 };
 if (!isNil "p2" && {player == p2}) then {
     g_class = "BAF_RF";
@@ -27,6 +28,7 @@ if (!isNil "p2" && {player == p2}) then {
 	g_name = "Alpha Rifleman";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p3" && {player == p3}) then {
     g_class = "BAF_G";
@@ -35,6 +37,7 @@ if (!isNil "p3" && {player == p3}) then {
 	g_name = "Alpha Grenadier";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p4" && {player == p4}) then {
     g_class = "BAF_AR";
@@ -43,6 +46,7 @@ if (!isNil "p4" && {player == p4}) then {
 	g_name = "Alpha Automatic Rifleman";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p5" && {player == p5}) then {
     g_class = "BAF_2";
@@ -51,6 +55,7 @@ if (!isNil "p5" && {player == p5}) then {
 	g_name = "Alpha 2IC";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p6" && {player == p6}) then {
     g_class = "BAF_MG";
@@ -59,6 +64,7 @@ if (!isNil "p6" && {player == p6}) then {
 	g_name = "Alpha Machine Gunner";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p7" && {player == p7}) then {
     g_class = "BAF_MARK";
@@ -67,6 +73,7 @@ if (!isNil "p7" && {player == p7}) then {
 	g_name = "Alpha Marksman";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p8" && {player == p8}) then {
     g_class = "BAF_MED";
@@ -75,6 +82,7 @@ if (!isNil "p8" && {player == p8}) then {
 	g_name = "Alpha Medic";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p9" && {player == p9}) then {
     g_class = "US_SL";
@@ -83,6 +91,7 @@ if (!isNil "p9" && {player == p9}) then {
 	g_name = "Bravo Section Leader";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p10" && {player == p10}) then {
     g_class = "US_FTL";
@@ -91,6 +100,7 @@ if (!isNil "p10" && {player == p10}) then {
 	g_name = "Bravo Fireteam Leader";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p11" && {player == p11}) then {
     g_class = "US_RF";
@@ -99,6 +109,7 @@ if (!isNil "p11" && {player == p11}) then {
 	g_name = "Bravo Rifleman";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p12" && {player == p12}) then {
     g_class = "US_GRN";
@@ -107,6 +118,7 @@ if (!isNil "p12" && {player == p12}) then {
 	g_name = "Bravo Grenadier";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p13" && {player == p13}) then {
     g_class = "US_AR";
@@ -115,6 +127,7 @@ if (!isNil "p13" && {player == p13}) then {
 	g_name = "Bravo Automatic Rifleman";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p14" && {player == p14}) then {
     g_class = "US_FTL";
@@ -123,6 +136,7 @@ if (!isNil "p14" && {player == p14}) then {
 	g_name = "Bravo Fireteam Leader";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p15" && {player == p15}) then {
     g_class = "US_AR";
@@ -131,6 +145,7 @@ if (!isNil "p15" && {player == p15}) then {
 	g_name = "Bravo Automatic Rifleman";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p16" && {player == p16}) then {
     g_class = "US_MARK";
@@ -139,6 +154,7 @@ if (!isNil "p16" && {player == p16}) then {
 	g_name = "Bravo Marksman";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p17" && {player == p17}) then {
     g_class = "US_MED";
@@ -147,6 +163,7 @@ if (!isNil "p17" && {player == p17}) then {
 	g_name = "Bravo Medic";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p18" && {player == p18}) then {
     g_class = "USMC_SL";
@@ -155,6 +172,7 @@ if (!isNil "p18" && {player == p18}) then {
 	g_name = "Charlie Section Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p19" && {player == p19}) then {
     g_class = "USMC_FTL";
@@ -163,6 +181,7 @@ if (!isNil "p19" && {player == p19}) then {
 	g_name = "Charlie Fireteam Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p20" && {player == p20}) then {
     g_class = "USMC_RF";
@@ -171,6 +190,7 @@ if (!isNil "p20" && {player == p20}) then {
 	g_name = "Charlie Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p21" && {player == p21}) then {
     g_class = "USMC_AR";
@@ -179,6 +199,7 @@ if (!isNil "p21" && {player == p21}) then {
 	g_name = "Charlie Automatic Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p22" && {player == p22}) then {
     g_class = "USMC_AAR";
@@ -187,6 +208,7 @@ if (!isNil "p22" && {player == p22}) then {
 	g_name = "Charlie Assistant Automatic Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p23" && {player == p23}) then {
     g_class = "USMC_FTL";
@@ -195,6 +217,7 @@ if (!isNil "p23" && {player == p23}) then {
 	g_name = "Charlie Fireteam Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p24" && {player == p24}) then {
     g_class = "USMC_RF";
@@ -203,6 +226,7 @@ if (!isNil "p24" && {player == p24}) then {
 	g_name = "Charlie Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p25" && {player == p25}) then {
     g_class = "USMC_AR";
@@ -211,6 +235,7 @@ if (!isNil "p25" && {player == p25}) then {
 	g_name = "Charlie Automatic Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p26" && {player == p26}) then {
     g_class = "USMC_AAR";
@@ -219,6 +244,7 @@ if (!isNil "p26" && {player == p26}) then {
 	g_name = "Charlie Assistant Automatic Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p27" && {player == p27}) then {
     g_class = "USMC_FTL";
@@ -227,6 +253,7 @@ if (!isNil "p27" && {player == p27}) then {
 	g_name = "Charlie Fireteam Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p28" && {player == p28}) then {
     g_class = "USMC_RF";
@@ -235,6 +262,7 @@ if (!isNil "p28" && {player == p28}) then {
 	g_name = "Charlie Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p29" && {player == p29}) then {
     g_class = "USMC_MG";
@@ -243,6 +271,7 @@ if (!isNil "p29" && {player == p29}) then {
 	g_name = "Charlie Machine Gunner";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p30" && {player == p30}) then {
     g_class = "USMC_MED";
@@ -251,6 +280,7 @@ if (!isNil "p30" && {player == p30}) then {
 	g_name = "Medic";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p31" && {player == p31}) then {
     g_class = "SNIPER";
@@ -259,6 +289,7 @@ if (!isNil "p31" && {player == p31}) then {
 	g_name = "Sniper";
 	g_radio_channel = 6;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landAttachments.sqf";
 };
 if (!isNil "p32" && {player == p32}) then {
     g_class = "SPOTTER";
@@ -267,6 +298,7 @@ if (!isNil "p32" && {player == p32}) then {
 	g_name = "Spotter";
 	g_radio_channel = 6;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landAttachments.sqf";
 };
 if (!isNil "p33" && {player == p33}) then {
     g_class = "ARMOUR";
@@ -285,6 +317,7 @@ if (!isNil "p34" && {player == p34}) then {
 	g_name = "Armour Crewman";
 	g_radio_channel = 7;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landAttachments.sqf";
 };
 if (!isNil "p35" && {player == p35}) then {
     g_class = "ARMOURCREW";
@@ -293,15 +326,16 @@ if (!isNil "p35" && {player == p35}) then {
 	g_name = "Armour Crewman";
 	g_radio_channel = 7;
 	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landAttachments.sqf";
 };
 if (!isNil "helo1" && {player == helo1}) then {
     g_class = "WLD_PLT";
 	g_group = "0";
 	g_unit = "100";
 	g_name = "Wildcat Pilot";
-	g_radio = "";	
+	g_radio = "";
 	SpawnAW19Action = ["SpawnAW159","AW19 Wildcat","",{_veh = "CUP_B_AW159_Cannon_GB" createVehicle (position armourSpawnPad);_veh setDir 120;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
-	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnM1A2Action] call ace_interact_menu_fnc_addActionToClass;	
+	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnAW19Action] call ace_interact_menu_fnc_addActionToClass;	
 	execVM "client\radar\helicopterRadar.sqf";
 		if(isNil "jetSpawned") then{
 		jetSpawned = 0;
@@ -316,7 +350,7 @@ if (!isNil "helo2" && {player == helo2}) then {
 	g_name = "BlackHawk Pilot";
 	g_radio = "";
 	SpawnUH60MAction = ["SpawnUH60M","UH60M Blackhawk","",{_veh = "CUP_B_UH60M_US" createVehicle (position armourSpawnPad);_veh setDir 120;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
-	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnM1A2Action] call ace_interact_menu_fnc_addActionToClass;
+	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnUH60MAction] call ace_interact_menu_fnc_addActionToClass;
 	execVM "client\radar\helicopterRadar.sqf";
 	prepAction = player addAction ["<t color='#FF0000'>Prep Osprey For Paradrop</t>", "_vehicle = cursorObject; hint str cursorObject; [_vehicle] call twc_paradropSetup"];
 	if(isNil "jetSpawned") then{

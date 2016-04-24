@@ -14,10 +14,12 @@ hint format["Blufor has captured %1",_marker];
 _marker setMarkerColor "colorWEST";
 [_marker, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 
-_rand = random 100;
+/*
+_rand = (random 100);
 if(_rand < 33) exitWith{
 	[_marker]spawn {sleep 10; [(_this select 0)] call twc_attackDeciding};
 };
+*/
 
 [_marker]spawn{
 	sleep 300;

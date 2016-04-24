@@ -11,7 +11,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "CUP_U_B_BAF_DDPM_S2_UnRolled";
+player forceAddUniform "CUP_U_B_BAF_DDPM_Tshirt";
 for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";

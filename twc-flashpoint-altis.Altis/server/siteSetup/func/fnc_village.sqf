@@ -17,6 +17,11 @@ params["_marker"];
 
 _CentralMarker = format ["%1",_marker];
 
+if isServer then {
+	private ["_pos","_m"];
+	_pos = [getmarkerpos _CentralMarker,[100,250],random 360,0,[1],[300, "Air"]] call SHK_pos;
+	_PatrolSPAAG = [_pos, EAST, uralZu23] call BIS_fnc_spawnGroup;
+	};
 
 if isServer then {
 		private ["_pos","_m"];

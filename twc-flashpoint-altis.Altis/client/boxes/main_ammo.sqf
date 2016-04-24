@@ -213,8 +213,7 @@ if (g_class == "BAF_SL") then {
 	];       
     _tmp_magazines =
     [
-        ["30Rnd_556x45_Stanag",25],
-		["30Rnd_556x45_Stanag_Tracer_Red",10],		
+        ["CUP_20Rnd_762x51_L129_M",50],	
 		["CUP_17Rnd_9x19_glock17",15],
 		["CUP_Stinger_M",2],
 		["CUP_Javelin_M",2]

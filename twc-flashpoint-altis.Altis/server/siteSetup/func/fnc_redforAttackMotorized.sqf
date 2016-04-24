@@ -14,7 +14,7 @@ if isServer then {
 	private ["_pos","_m"];
 	_pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] call SHK_pos;
 	_PatrolSquad = [_pos, EAST, squad] call BIS_fnc_spawnGroup;
-	_vehicle = uaz createVehicle getmarkerPos _startingpoint;
+	_vehicle = ural createVehicle getmarkerPos _startingpoint;
 	_men = units _PatrolSquad;
 	
 	_leader = leader _PatrolSquad;

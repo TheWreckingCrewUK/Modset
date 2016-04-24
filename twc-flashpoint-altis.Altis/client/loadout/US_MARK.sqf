@@ -19,7 +19,7 @@ player addItemToUniform "ACRE_PRC148";
 player addVest "CUP_V_B_IOTV_AT";
 for "_i" from 1 to 2 do {player addItemToVest "CUP_HandGrenade_M67";};
 for "_i" from 1 to 6 do {player addItemToVest "20Rnd_762x51_Mag";};
-player addBackpack "CUP_B_MedicPack_ACU";
+player addBackpack "CUP_B_AssaultPack_ACU";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 4 do {player addItemToBackpack "20Rnd_762x51_Mag";};
 player addHeadgear "CUP_H_USArmy_HelmetMICH";

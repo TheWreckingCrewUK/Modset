@@ -1,10 +1,9 @@
-_script = execVM "SHK_pos\shk_pos_init.sqf";
-waitUntil {scriptDone _script};
-
 [] execVM "server\vehicles\sa_ropes.sqf";
 [] execVM "server\vehicles\advancedTowing.sqf";
 
 if(isServer) then{
+	_script = execVM "SHK_pos\shk_pos_init.sqf";
+	waitUntil {scriptDone _script};
 	[]spawn{
 		bluforDeath = 0;
 		publicVariable "bluforDeath";
