@@ -1,4 +1,4 @@
-if((str capturedArray) == "[]")exitWith{[] call twc_redforSiteRecapAttempt};
+if((str capturedArray) == "[]")exitWith{};
 
 _type = ["Mechanized", "Motorized","Airborne"] call BIS_fnc_selectRandom;
 

@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1443;
+		nextID=1444;
 	};
 	class MarkerIDProvider
 	{
-		nextID=29;
+		nextID=30;
 	};
 	class Camera
 	{
-		pos[]={26853.68,88.204674,24580.705};
-		dir[]={-0.64080435,-0.54964191,0.53599918};
-		up[]={-0.42160112,0.83540773,0.3526473};
-		aside[]={0.64160794,-7.7183358e-008,0.76706362};
+		pos[]={26833.945,49.515553,24492.918};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -127,7 +127,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=390;
+		items=391;
 		class Item0
 		{
 			dataType="Logic";
@@ -1204,7 +1204,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={26828.756,22.391226,24625.689};
-			angle=5.4907184;
+			angle=5.490716;
 			class Attributes
 			{
 				condition="this && (getMarkerColor ""airbase2"") == ""colorWest"";";
@@ -1242,6 +1242,7 @@ class Mission
 						rank="CORPORAL";
 						name="p9";
 						description="Bravo Section Leader";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=160;
@@ -14109,7 +14110,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26522.629,1.9934776,26246.656};
+				position[]={26522.998,1.9342651,26244.561};
 				angles[]={0,3.1659923,0};
 			};
 			side="Empty";
@@ -14120,7 +14121,7 @@ class Mission
 			};
 			id=1237;
 			type="B_Boat_Transport_01_F";
-			atlOffset=2.3544838;
+			atlOffset=2.2952714;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14150,7 +14151,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26522.463,1.2446525,26237.66};
+				position[]={26522.92,1.2446525,26236.42};
 				angles[]={0,3.1659923,0};
 			};
 			side="Empty";
@@ -14191,7 +14192,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26522.615,1.2446525,26228.234};
+				position[]={26522.725,1.2446525,26227.346};
 				angles[]={0,3.1659923,0};
 			};
 			side="Empty";
@@ -14498,7 +14499,7 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="this addAction [ ""TP To Upper Deck"", {player setPos (getPos player vectorAdd [0,0,10]); } ];";
+				init="this addAction [ ""TP To Upper Deck"", {player setPos (getPos player vectorAdd [0,0,9.5]); } ];";
 				name="BoatFlag";
 			};
 			id=1412;
@@ -14840,7 +14841,6 @@ class Mission
 						rank="MAJOR";
 						name="commander1";
 						description="Commander [LOCKED]";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1441;
@@ -14907,6 +14907,14 @@ class Mission
 			alpha=0;
 			id=1442;
 			atlOffset=2.028595;
+		};
+		class Item390
+		{
+			dataType="Marker";
+			position[]={26528.98,-175.43431,26265.115};
+			name="boatCrate";
+			type="Empty";
+			id=1443;
 		};
 	};
 };

@@ -114,7 +114,7 @@ if (!isNil "p9" && {player == p9}) then {
 	g_name = "Bravo Section Leader";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC148";
-	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
+	execVM "client\vehicleSpawning\landUSArmy.sqf";
 };
 if (!isNil "p10" && {player == p10}) then {
     g_class = "US_FTL";
@@ -195,7 +195,7 @@ if (!isNil "p18" && {player == p18}) then {
 	g_name = "Charlie Section Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
-	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
+	execVM "client\vehicleSpawning\landUSMC.sqf";
 };
 if (!isNil "p19" && {player == p19}) then {
     g_class = "USMC_FTL";
@@ -494,10 +494,10 @@ _text = format["%1 joined in as %2",_name,g_name];
 		[player] join grpNull ;
 	};
 };
-sleep 2;
-if (g_class != "") then {
-	execVM format["client\loadout\%1.sqf", g_class];
-};
+
+waitUntil {g_class != ""};
+execVM format["client\loadout\%1.sqf", g_class];
+
 sleep 2;
 if (g_radio != "") then {
 	_radioID = [g_radio] call acre_api_fnc_getRadioByType;
