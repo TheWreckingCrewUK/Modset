@@ -6,7 +6,10 @@ if (_marker == "airbase1") exitWith {
 };
 
 if (_marker == "airbase2")then {
-	airbase2Respawn = [west, "airbase2"] call BIS_fnc_addRespawnPosition;
+	if(commanderBase == 0) then {
+		airbase2Respawn = [west, "airbase2"] call BIS_fnc_addRespawnPosition;
+		publicVariable "airbase2Respawn";
+	};
 	boatRespawn call BIS_fnc_removeRespawnPosition;
 };
 	

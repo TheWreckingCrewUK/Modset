@@ -7,6 +7,7 @@ _marker setMarkerColor "colorEAST";
 if (_marker == "airbase2")then {
 	airbase2Respawn call BIS_fnc_removeRespawnPosition;
 	boatRespawn = [west, "boatSpawn"] call BIS_fnc_addRespawnPosition;
+	publicVariable "boatRespawn";
 };
 
 [_marker] call twc_basicLogistics;

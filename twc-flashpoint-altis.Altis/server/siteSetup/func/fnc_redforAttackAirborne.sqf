@@ -4,6 +4,7 @@ _marker = capturedArray call BIS_fnc_selectRandom;
 
 _startingPoint = "hostileAirSpawn";
 
+if (getMarkerColor "commanderBase" == "colorWest")then{_marker = "commanderBase"};
 
 _endMarker = getMarkerPos _marker;
 

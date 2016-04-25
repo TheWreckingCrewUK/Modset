@@ -7,6 +7,7 @@ if(isNil "capturedArray") then{
 
 if(isNil "remainingArray") then{
 	remainingArray = ["airbase2", "warning1", "radar1", "mech1", "mech2","helo1","hq1","hq2","installation1","motorized1","inf1","inf2","inf3","support1","armour1","aa1"];
+	publicVariable "remainingArray";
 };
 
 friendlyVehiclesArray = ["CUP_B_LR_Transport_GB_W","CUP_B_Jackal2_L2A1_GB_W", "CUP_B_Jackal2_GMG_GB_W", "CUP_B_FV432_Bulldog_GB_D", "CUP_B_Ridgeback_HMG_GB_D", "CUP_B_M1126_ICV_M2_Desert_Slat", "CUP_B_M113_USA", "CUP_B_HMMV_M2_USA", "CUP_B_HMMV_MK19_USA", "CUP_B_HMMV_TOW_USA", "CUP_B_HMMV_Transport_USA", "CUP_B_AAV_USMC", "CUP_B_LAV25_HQ_USMC", "CUP_B_HMMV_M2_USMC", "CUP_B_HMMV_MK19_USMC", "CUP_B_HMMV_TOW_USMC", "CUP_B_HMMV_Unarmed_USMC", "CUP_B_RG31_M2_USMC"];

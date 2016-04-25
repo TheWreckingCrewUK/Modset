@@ -10,6 +10,8 @@ _startingPoint = "hq2";
 
 _marker = capturedArray call BIS_fnc_selectRandom;
 
+if (getMarkerColor "commanderBase" == "colorWest")then{_marker = "commanderBase"};
+
 if isServer then {
 	private ["_pos","_m"];
 	_pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] call SHK_pos;

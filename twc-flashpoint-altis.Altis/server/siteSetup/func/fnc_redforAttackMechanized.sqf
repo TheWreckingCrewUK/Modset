@@ -7,6 +7,8 @@ if((getMarkerColor "hq2") == "ColorWEST")exitWith{ hint "Enemy Base Captured"};
 
 _marker = capturedArray call BIS_fnc_selectRandom;
 
+if (getMarkerColor "commanderBase" == "colorWest")then{_marker = "commanderBase"};
+
 _startingPoint = "hq2";
 
 _pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] call SHK_pos;

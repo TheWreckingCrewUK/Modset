@@ -1,9 +1,22 @@
+hint "If you're naked you can get a default loadout from an Ammo Box Action. Sorry about his bug.";
 #include "playerFunctions.sqf";
 
 InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\diary\missionStatus.sqf"},{true}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
 
-player addEventHandler ["RESPAWN",{hint "Respawn Event Handler Active"; bluforDeath = bluforDeath + 1; publicVariable "bluforDeath"; bluforDeath2 = bluforDeath2 + 1; publicVariable "bluforDeath2"}];
+player addEventHandler ["RESPAWN",{
+	hint "Respawn Event Handler Active";
+	counterAttackCounter = counterAttackCounter + 1;
+	publicVariable "counterAttackCounter";
+	if(counterAttackCounter > 15)then {
+		remoteExecCall ["twc_redforSiteRecapAttempt",2,False];
+	};
+	patrolCounter = patrolCounter + 1;
+	publicVariable "patrolCounter";
+	if(patrolCounter > 10) then{
+		remoteExecCall ["twc_patrols",2,False];
+	};
+}];
 
 execVM "client\restrict\init.sqf";
 execVM "client\cleanup\gear.sqf";
@@ -12,6 +25,16 @@ execVM "client\vehicleSpawning\supportVehicles.sqf";
 g_class = "";
 g_group = "";
 g_unit = "";
+if (!isNil "commander1" && {player == commander1}) then {
+    g_class = "CMDR";
+	g_group = "0";
+	g_unit = "000";
+	g_name = "Commander";
+	g_radio_channel = 10;
+	g_radio = "ACRE_PRC148";
+	execVM "client\vehicleSpawning\landCommander.sqf";
+	execVM "client\commander\init.sqf";
+};
 if (!isNil "p1" && {player == p1}) then {
     g_class = "BAF_SL";
 	g_group = "0";
@@ -376,7 +399,7 @@ if (!isNil "jetpilot1" && {player == jetpilot1}) then {
 	player addEventHandler ["RESPAWN",{fjetSpawned = 0}];
 	
 };
-
+g_commander1 = "";
 g_p1 = "";
 g_p2 = "";
 g_p3 = "";
@@ -417,6 +440,7 @@ g_helo2 = "";
 
 
 execVM "client\boxes\main_ammo.sqf";
+execVM "client\boxes\boat_ammo.sqf";
 execVM "client\boxes\secondary_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
@@ -470,7 +494,7 @@ _text = format["%1 joined in as %2",_name,g_name];
 		[player] join grpNull ;
 	};
 };
-
+sleep 2;
 if (g_class != "") then {
 	execVM format["client\loadout\%1.sqf", g_class];
 };

@@ -12,7 +12,7 @@
 				edited by FakeMatty
 */
  
-_marker = "crate";  // marker used to spawn.
+_marker = "boatcrate";  // marker used to spawn.
 _boxType = "I_supplyCrate_F";  // the type of ammobox used.
 _timer = 240;  // time in seconds until box is refilled.
  
@@ -852,27 +852,28 @@ if (g_class == "JET_PLT") then{
 } forEach _tmp_backpacks;
  
 // create and fill the box.
-mainAmmoBox = _boxType createVehicleLocal (getMarkerPos _marker);
-mainAmmoBox setPosATL (getMarkerPos _marker);
-mainAmmoBox allowDamage false;
-mainAmmoBox addAction [ "Default Loadout", {execVM format["client\loadout\%1.sqf", g_class];}];
+_box = _boxType createVehicleLocal (getMarkerPos _marker);
+_box setPosATL (getMarkerPos _marker);
+_box setPos (getPos _box vectorAdd [0,0,180]);
+_box allowDamage false;
+_box addAction [ "Default Loadout", {execVM format["client\loadout\%1.sqf", g_class];}];
 while {true} do {
         refill_box = false;
         // empty it.
-        clearWeaponCargo mainAmmoBox;
-        clearMagazineCargo mainAmmoBox;
-        clearItemCargo mainAmmoBox;
-		clearBackpackCargo mainAmmoBox;
+        clearWeaponCargo _box;
+        clearMagazineCargo _box;
+        clearItemCargo _box;
+		clearBackpackCargo _box;
        
         // add in all weapons.
-        {mainAmmoBox addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;
+        {_box addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;
        
         // add in all magazines.
-        {mainAmmoBox addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
+        {_box addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
        
-        {mainAmmoBox addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
+        {_box addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
 		
-		{mainAmmoBox addBackpackCargo [(_x select 0),(_x select 1)]} foreach _backpacks;
+		{_box addBackpackCargo [(_x select 0),(_x select 1)]} foreach _backpacks;
 		
 	
        

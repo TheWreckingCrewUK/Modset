@@ -18,3 +18,4 @@
 [West,["warning1"],["","Warning Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
 
 boatRespawn = [west, "boatSpawn"] call BIS_fnc_addRespawnPosition;
+publicVariable "boatRespawn";

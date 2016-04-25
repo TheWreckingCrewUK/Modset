@@ -1,6 +1,7 @@
 global_sync = false;
 while {true} do {
 	waitUntil {global_sync};
+	g_commander1 = "";
 	g_p1 = "";
 	g_p2 = "";
 	g_p3 = "";
@@ -40,6 +41,7 @@ while {true} do {
 	g_helo2 = "";
 	
 	switch (g_unit) do {
+		case "001": {g_commander1 = name player; publicVariable "g_commander1"; };
 		case "001": {g_p1 = name player; publicVariable "g_p1"; };
 		case "002": {g_p2 = name player; publicVariable "g_p2"; };
 		case "003": {g_p3 = name player; publicVariable "g_p3"; };

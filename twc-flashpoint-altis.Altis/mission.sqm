@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1437;
+		nextID=1443;
 	};
 	class MarkerIDProvider
 	{
-		nextID=28;
+		nextID=29;
 	};
 	class Camera
 	{
-		pos[]={26785.119,24.478395,24660.105};
-		dir[]={-0.56100023,-0.37798557,0.73651814};
-		up[]={-0.22904542,0.92580605,0.30070534};
-		aside[]={0.79553396,6.495975e-008,0.6059553};
+		pos[]={26853.68,88.204674,24580.705};
+		dir[]={-0.64080435,-0.54964191,0.53599918};
+		up[]={-0.42160112,0.83540773,0.3526473};
+		aside[]={0.64160794,-7.7183358e-008,0.76706362};
 	};
 };
 binarizationWanted=0;
@@ -127,7 +127,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=385;
+		items=390;
 		class Item0
 		{
 			dataType="Logic";
@@ -1169,6 +1169,7 @@ class Mission
 			position[]={26527.793,-175.26381,26254.033};
 			name="boatSpawn";
 			type="b_naval";
+			colorName="ColorWEST";
 			id=63;
 		};
 		class Item24
@@ -1203,13 +1204,13 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={26828.756,22.391226,24625.689};
-			angle=5.490716;
+			angle=5.4907184;
 			class Attributes
 			{
 				condition="this && (getMarkerColor ""airbase2"") == ""colorWest"";";
 				onActivation="Russiancheck = Russiancheck + 1; hint "" Hostiles near the base !""";
 				onDeactivation="Russiancheck = Russiancheck - 1; hint ""Hostiles have left the Base"";";
-				sizeA=600;
+				sizeA=500;
 				sizeB=300;
 				interuptable=1;
 				repeatable=1;
@@ -2626,7 +2627,6 @@ class Mission
 						rank="SERGEANT";
 						name="helo1";
 						description="Wildcat Pilot [5]";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=198;
@@ -6076,19 +6076,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26788.088,21.451717,24659.242};
-				angles[]={0.011995304,5.354775,0.0039967569};
+				position[]={26788.088,21.451744,24659.242};
+				angles[]={0.011990411,5.354775,0.0039968039};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="if(!isServer)exitWith{}; this allowDamage false; this attachTo [armourSpawnPad,[-5.5,-5.5,.75]];";
+				init="if(!isServer)exitWith{}; this allowDamage false; this attachTo [armourSpawnPad,[-5.5,-5.5,.6]];";
 				name="armourSpawner";
 			};
 			id=438;
 			type="Land_InfoStand_V2_F";
-			atlOffset=-2.6702881e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6403,7 +6402,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8402.5459,109.57693,25103.139};
+						position[]={8416.9082,110.62906,25120.939};
 						angles[]={0,5.4106154,0};
 					};
 					side="West";
@@ -6417,7 +6416,6 @@ class Mission
 					};
 					id=512;
 					type="B_Pilot_F";
-					atlOffset=-1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6466,7 +6464,6 @@ class Mission
 			{
 			};
 			id=511;
-			atlOffset=-1.5258789e-005;
 		};
 		class Item127
 		{
@@ -14609,17 +14606,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26537.938,3.545578,26265.43};
-				angles[]={0,1.4764787,0};
+				position[]={26537.949,3.5301208,26266.094};
+				angles[]={0,1.5145444,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTexture [0, ""server\pics\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+				init="this setObjectTexture [0, ""server\pics\radio.jpg""];";
 			};
 			id=1417;
 			type="UserTexture1m_F";
-			atlOffset=1.4256251;
+			atlOffset=1.4100811;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14649,17 +14646,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26520.09,3.5525055,26265.275};
+				position[]={26519.906,3.4599762,26265.904};
 				angles[]={0,4.7113595,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTexture [0, ""server\pics\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+				init="this setObjectTexture [0, ""server\pics\radio.jpg""];";
 			};
 			id=1418;
 			type="UserTexture1m_F";
-			atlOffset=1.4325814;
+			atlOffset=1.3399701;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14705,17 +14702,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26767.729,22.618183,24630.857};
-				angles[]={0,4.5539141,0};
+				position[]={26767.607,22.640005,24630.457};
+				angles[]={0,4.5539131,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTexture [0, ""server\pics\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+				init="this setObjectTexture [0, ""server\pics\radio.jpg""];";
 			};
 			id=1420;
 			type="UserTexture1m_F";
-			atlOffset=1.4258118;
+			atlOffset=1.4260921;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14761,17 +14758,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26780.471,22.472157,24644.229};
-				angles[]={0,0.1585457,0.13962634};
+				position[]={26779.883,22.43977,24644.35};
+				angles[]={0,0.21629928,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectTexture [0, ""server\pics\radio.jpg""];this setPos [getPos this select 0, getPos this select 1, 1.3];";
+				init="this setObjectTexture [0, ""server\pics\radio.jpg""];";
 			};
 			id=1422;
 			type="UserTexture1m_F";
-			atlOffset=1.4259987;
+			atlOffset=1.4259472;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14795,6 +14792,121 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item385
+		{
+			dataType="Marker";
+			position[]={26772.266,21.081652,24641.785};
+			name="crateDefault";
+			type="Empty";
+			id=1437;
+		};
+		class Item386
+		{
+			dataType="Marker";
+			position[]={26750.943,20.563572,24625.516};
+			name="jetPadDefault";
+			type="Empty";
+			id=1438;
+			atlOffset=-0.0039997101;
+		};
+		class Item387
+		{
+			dataType="Marker";
+			position[]={26786.672,20.837355,24659.92};
+			name="heloPadDefault";
+			type="Empty";
+			id=1439;
+			atlOffset=-0.020282745;
+		};
+		class Item388
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8414.291,110.4248,25099.533};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="MAJOR";
+						name="commander1";
+						description="Commander [LOCKED]";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=1441;
+					type="B_officer_F";
+					atlOffset=-7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1440;
+			atlOffset=-7.6293945e-006;
+		};
+		class Item389
+		{
+			dataType="Marker";
+			position[]={26533.598,-163.672,26167.457};
+			name="commanderBase";
+			text="Commander Base";
+			type="b_hq";
+			colorName="ColorEAST";
+			alpha=0;
+			id=1442;
+			atlOffset=2.028595;
 		};
 	};
 };

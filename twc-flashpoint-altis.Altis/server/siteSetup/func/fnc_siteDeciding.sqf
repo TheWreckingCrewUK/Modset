@@ -1,34 +1,45 @@
-params["_marker"];
+params["_marker","_thislist"];
 
-{
-	deleteVehicle _x
-}forEach allDead;
-
-_men = nearestObjects [getMarkerPos _marker, ["Man"], 1000];
-
-
-if(side (_men select 0) == WEST) exitWith{
-	[_marker] call twc_siteCapturedBlufor;
-};
-
-if(str _men == "[]")exitWith{
-	hint "All Units Killed Or only Vehicles Remain. Reverting to Blufor Control";
-	[_marker] call twc_siteCapturedBlufor;
-};
-
-
-if(side (_men select 0) == EAST) exitWith{
-	{
-		if(side _x == WEST)exitWith {
-			[_marker] call twc_siteCapturedBlufor;
+if ((west countSide _thisList) == 0) then {
+	if(_marker == "commanderBase") then {		
+		"crate" setMarkerpos (getMarkerPos "crateDefault");
+		[{mainAmmoBox setPos (getMarkerPos "crateDefault");},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
+		
+		deleteVehicle jetSpawnPad;
+		deleteVehicle jetSpawner;
+		jetSpawnPad = "Land_HelipadSquare_F" createVehicle (getMarkerPos "jetPadDefault");
+		jetSpawnPad setDir 300;
+		publicVariable "jetSpawnPad";
+		jetSpawner = "Land_infoStand_V1_F" createVehicle (getMarkerPos "jetPadDefault");
+		jetSpawner attachTo [jetSpawnPad,[5.5,-5.5,.5]];
+		
+		deleteVehicle armourSpawnPad;
+		deleteVehicle armourSpawner;
+		armourSpawnPad = "Land_HelipadSquare_F" createVehicle (getMarkerPos "heloPadDefault");
+		armourSpawnPad setDir 300;
+		publicVariable "armourSpawnPad";
+		armourSpawner = "Land_infoStand_V1_F" createVehicle (getMarkerPos "heloPadDefault");
+		armourSpawner attachTo [armourSpawnPad,[5.5,-5.5,.6]];
+		
+		"commanderBase" setMarkerAlpha 0;
+		"commanderBase" setMarkerColor "colorEAST";
+		commanderBaseCount = 0;
+		publicVariable "commanderBaseCount";
+		RussianCheckTrigger setPos (getMarkerPos "crateDefault");
+		if(getMarkerColor "airbase2" == "colorWEST") then {
+			airbase2Respawn = [west, "airbase2"] call BIS_fnc_addRespawnPosition;
+			publicVariable "airbase2Respawn";
+		}else{
+			boatRespawn = [west, "boatSpawn"] call BIS_fnc_addRespawnPosition;
+			publicVariable "boatRespawn";
 		};
-	}forEach _men;
+	}else{
 	[_marker] call twc_siteCapturedRedfor;
-};
-
-if(side (_men select 0) != EAST && side (_men select 0) != WEST) then {
-	hint "Neither Blu nor Red closest.  TeamKillers maybe?.";
-	[_marker] call twc_siteCapturedBlufor;
+	};
 }else{
-	hint "Site Deciding Function has failed";
+	[_marker] call twc_siteCapturedBlufor;
+	if(_marker == "commanderBase") then{
+		commanderBaseRespawn = [west,"commanderBase"] call BIS_fnc_addRespawnPosition;
+		publicVariable "commanderBaseRespawn";
+	};
 };
