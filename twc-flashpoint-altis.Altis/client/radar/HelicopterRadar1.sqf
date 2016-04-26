@@ -1,7 +1,7 @@
 while {true} do {
 	{
 
-		if (!(markercolor "Radar1" == "colorWEST")) then {
+		if (!(markercolor "radar1" == "colorWEST")) then {
 			if (isEngineOn _x) then {
 				if ((getpos _x) select 2 > 20) then {
 					if (_x distance getmarkerpos "radar1" < 3000)then{

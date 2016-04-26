@@ -15,6 +15,11 @@
 hint"Radar Garrison Spawned";
 params["_marker"];
 
+
+_markerRadius = format["%1Radius", _marker];
+
+_markerRadius setMarkerAlpha 0;
+
 _CentralMarker = format ["%1",_marker];
 
 [_CentralMarker, squad]spawn{

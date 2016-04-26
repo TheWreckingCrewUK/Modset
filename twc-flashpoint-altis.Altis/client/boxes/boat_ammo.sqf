@@ -835,6 +835,24 @@ if (g_class == "JET_PLT") then{
 
 	];
 };
+if (g_class == "CMDR") then{
+	_tmp_weapons =
+	[
+		["CUP_smg_MP5A5",1],
+		["Binocular",1]
+	];
+	_tmp_magazines =
+	[
+		["CUP_30Rnd_9x19_MP5",15]
+	];
+	_tmp_items = 
+	[
+		["ACRE_PRC117F",1]
+	];
+	_tmp_backpacks = [
+		["B_AssaultPack_cbr",1]
+	];
+};
 {
         _weapons set [count _weapons, _x];
 } forEach _tmp_weapons;

@@ -1,5 +1,7 @@
 while {true} do{
-	_Deadbodies = nearestObjects [getmarkerpos "respawn_west", ["man"], 500];
-	{if (not alive _x) then {deleteVehicle _x};} forEach _Deadbodies;
-	sleep 1;
+	if(getMarkerColor "airBase2" == "colorWEST" || getMarkerColor "commanderBase" == "colorWEST") then{
+		_Deadbodies = nearestObjects [getmarkerpos "crate", ["man"], 300];
+		{if (not alive _x) then {deleteVehicle _x};} forEach _Deadbodies;
+	};
+	sleep 5;
 };

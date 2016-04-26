@@ -8,6 +8,6 @@ if (_type == "Mechanized") then {
 if (_type == "Motorized") then {
 	[] call twc_redforAttackMotorized;
 };
-if (_type == "Motorized") then {
+if (_type == "Airborne") then {
 	[] call twc_redforAttackAirborne;
 };

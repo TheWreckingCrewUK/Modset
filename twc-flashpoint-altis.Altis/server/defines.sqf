@@ -1,4 +1,4 @@
-markerArray = ["airbase2", "warning1", "radar1", "mech1", "mech2","helo1","hq1","hq2","installation1","motorized1","inf1","inf2","inf3","support1","armour1","aa1"];
+markerArray = ["aa1","airbase2","hq1","inf1","inf2","inf3","inf4","installation1","mainHQ","mech1","motorized1","outpost1","outpost2","radar1","radar2","support1"];
 
 if(isNil "capturedArray") then{
 	capturedArray = [];
@@ -6,7 +6,7 @@ if(isNil "capturedArray") then{
 };
 
 if(isNil "remainingArray") then{
-	remainingArray = ["airbase2", "warning1", "radar1", "mech1", "mech2","helo1","hq1","hq2","installation1","motorized1","inf1","inf2","inf3","support1","armour1","aa1"];
+	remainingArray = ["aa1","airbase2","hq1","inf1","inf2","inf3","inf4","installation1","mainHQ","mech1","motorized1","outpost1","outpost2","radar1","radar2","support1"];
 	publicVariable "remainingArray";
 };
 
@@ -43,6 +43,8 @@ tanks = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Armored" >> "CUP
 hind = ["CUP_O_Mi24_V_RU"];
 
 transportPlane = "CUP_O_C130J_Cargo_TKA";
+
+bmpString = "CUP_O_BMP2_SLA";
 
 uaz = "CUP_O_UAZ_OPEN_RU";
 

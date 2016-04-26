@@ -9,12 +9,12 @@ player addEventHandler ["RESPAWN",{
 	counterAttackCounter = counterAttackCounter + 1;
 	publicVariable "counterAttackCounter";
 	if(counterAttackCounter > 15)then {
-		remoteExecCall ["twc_redforSiteRecapAttempt",2,False];
+		remoteExec ["twc_redforSiteRecapAttempt",2];
 	};
 	patrolCounter = patrolCounter + 1;
 	publicVariable "patrolCounter";
 	if(patrolCounter > 10) then{
-		remoteExecCall ["twc_patrols",2,False];
+		remoteExec ["twc_patrols",2];
 	};
 }];
 
@@ -25,6 +25,7 @@ execVM "client\vehicleSpawning\supportVehicles.sqf";
 g_class = "";
 g_group = "";
 g_unit = "";
+g_name = "";
 if (!isNil "commander1" && {player == commander1}) then {
     g_class = "CMDR";
 	g_group = "0";
@@ -359,7 +360,8 @@ if (!isNil "helo1" && {player == helo1}) then {
 	g_radio = "";
 	SpawnAW19Action = ["SpawnAW159","AW19 Wildcat","",{_veh = "CUP_B_AW159_Cannon_GB" createVehicle (position armourSpawnPad);_veh setDir 120;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
 	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnAW19Action] call ace_interact_menu_fnc_addActionToClass;	
-	execVM "client\radar\helicopterRadar.sqf";
+	execVM "client\radar\helicopterRadar1.sqf";
+	execVM "client\radar\helicopterRadar2.sqf";
 		if(isNil "jetSpawned") then{
 		jetSpawned = 0;
 		publicVariable "jetSpawned";
@@ -374,8 +376,8 @@ if (!isNil "helo2" && {player == helo2}) then {
 	g_radio = "";
 	SpawnUH60MAction = ["SpawnUH60M","UH60M Blackhawk","",{_veh = "CUP_B_UH60M_US" createVehicle (position armourSpawnPad);_veh setDir 120;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
 	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnUH60MAction] call ace_interact_menu_fnc_addActionToClass;
-	execVM "client\radar\helicopterRadar.sqf";
-	prepAction = player addAction ["<t color='#FF0000'>Prep Osprey For Paradrop</t>", "_vehicle = cursorObject; hint str cursorObject; [_vehicle] call twc_paradropSetup"];
+	execVM "client\radar\helicopterRadar1.sqf";
+	execVM "client\radar\helicopterRadar2.sqf";
 	if(isNil "jetSpawned") then{
 		jetSpawned = 0;
 		publicVariable "jetSpawned";
@@ -389,7 +391,8 @@ if (!isNil "jetpilot1" && {player == jetpilot1}) then {
 	g_name = "Jet Pilot";
 	g_radio = "";
 	execVM "client\vehicleSpawning\jetPilot.sqf";
-	execVM "client\radar\helicopterRadar.sqf";
+	execVM "client\radar\helicopterRadar1.sqf";
+	execVM "client\radar\helicopterRadar2.sqf";
 	if(isNil "jetSpawned") then{
 		jetSpawned = 0;
 		publicVariable "jetSpawned";
@@ -496,9 +499,10 @@ _text = format["%1 joined in as %2",_name,g_name];
 };
 
 waitUntil {g_class != ""};
-execVM format["client\loadout\%1.sqf", g_class];
+waitUntil {alive player};
+[g_class]spawn{execVM format["client\loadout\%1.sqf", _this select 0];};
 
-sleep 2;
+sleep 4;
 if (g_radio != "") then {
 	_radioID = [g_radio] call acre_api_fnc_getRadioByType;
 	_switchChannel = [_radioID, g_radio_channel] call acre_api_fnc_setRadioChannel;

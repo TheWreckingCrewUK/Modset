@@ -5,12 +5,14 @@
 
 
 
-if((getMarkerColor "hq2") == "ColorWEST")exitWith{};
-_startingPoint = "hq2";
+if((getMarkerColor "hq1") != "ColorEAST")exitWith{hint "enemy base not colorEAST"};
+_startingPoint = "hq1";
 
 _marker = capturedArray call BIS_fnc_selectRandom;
 
 if (getMarkerColor "commanderBase" == "colorWest")then{_marker = "commanderBase"};
+
+format["An enemy motorized unit has left their HQ heading for %1", _marker] remoteExec ["hint"]; 
 
 if isServer then {
 	private ["_pos","_m"];

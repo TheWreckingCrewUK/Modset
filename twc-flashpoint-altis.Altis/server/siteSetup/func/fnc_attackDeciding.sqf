@@ -5,10 +5,11 @@
 * calls counter attacks
 */
 
-params["_marker"];
-_rand = random 100;
+params["_marker", "_rand"];
+
 [_marker] call twc_attackInf;
 [_marker] call twc_siteContestedCounter;
-if(_rand < 33)exitWith {};
-[_marker] call twc_attackHelo;
-hint str _rand;
+
+if(_rand < 20)then{
+	[_marker] call twc_attackHelo;
+};

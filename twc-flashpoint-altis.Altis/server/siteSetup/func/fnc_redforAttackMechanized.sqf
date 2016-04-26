@@ -3,18 +3,20 @@
 *
 */
 
-if((getMarkerColor "hq2") == "ColorWEST")exitWith{ hint "Enemy Base Captured"};
+if((getMarkerColor "hq1") != "ColorEAST")exitWith{hint "enemy base not colorEAST"};
 
 _marker = capturedArray call BIS_fnc_selectRandom;
 
 if (getMarkerColor "commanderBase" == "colorWest")then{_marker = "commanderBase"};
 
-_startingPoint = "hq2";
+format["An enemy mechanized unit has left their HQ heading for %1", _marker] remoteExec ["hint"]; 
+
+_startingPoint = "hq1";
 
 _pos = [getmarkerpos _startingPoint,[300,400],random 360,0,[1],[300, "Air"]] call SHK_pos;
 _endMarker = getMarkerPos _marker;
 
-_veh = bmp createVehicle _pos;
+_veh = bmpString createVehicle _pos;
 
 _vehicleGroup = [[0,0,0], EAST,mechCrew] call BIS_fnc_spawnGroup;
 _vehicleGrouparray = units _vehicleGroup;

@@ -1,10 +1,12 @@
-if((getMarkerColor "airbase1") != "ColorEAST")exitWith{ hint "Enemy Base Captured"};
+if((getMarkerColor "mainHQ") != "ColorEAST")exitWith{ hint "Enemy Base Captured"};
 
 _marker = capturedArray call BIS_fnc_selectRandom;
 
 _startingPoint = "hostileAirSpawn";
 
 if (getMarkerColor "commanderBase" == "colorWest")then{_marker = "commanderBase"};
+
+format["An enemy airborne unit has left their HQ heading for %1", _marker] remoteExec ["hint"]; 
 
 _endMarker = getMarkerPos _marker;
 

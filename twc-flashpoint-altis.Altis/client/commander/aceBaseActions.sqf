@@ -30,8 +30,8 @@ TWC_fnc_moveAmmoBox = {
 };
 
 TWC_fnc_setSpawn = {
-	commanderBase = 1;
-	publicVariable "commanderBase";
+	commanderBaseCount = 1;
+	publicVariable "commanderBaseCount";
 	airbase2Respawn call BIS_fnc_removeRespawnPosition;
 	boatRespawn call BIS_fnc_removeRespawnPosition;
 	commanderBaseRespawn = [west, position player] call BIS_fnc_addRespawnPosition;
@@ -40,6 +40,7 @@ TWC_fnc_setSpawn = {
 	"commanderBase" setMarkerColor "colorWest";
 	"commanderBase" setMarkerAlpha 1;
 	RussianCheckTrigger setPos (getPos player);
+	
 };
 
 baseCreateAction = ["thisStartsTheBase","Base Creation","", {},{true}] call ace_interact_menu_fnc_createAction;

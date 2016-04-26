@@ -16,4 +16,4 @@ for "_i" from 0 to 1 do {
 	[_group, getMarkerPos _marker,25] call CBA_fnc_taskAttack;
 };
 
-["The enemy isn't willing to give up the area that easily. Dig in and defend it from the counter attack","hint",true,false] call BIS_fnc_MP;
+"The enemy isn't ready to give up the Site that easily. Dig in and defend for the Counter Attack." remoteExec ["hint"]; 

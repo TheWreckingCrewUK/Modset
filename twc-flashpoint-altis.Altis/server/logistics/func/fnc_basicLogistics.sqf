@@ -5,8 +5,8 @@ _endingPoint = remainingArray call BIS_fnc_selectRandom;
 */
 
 Params ["_endingPoint"];
-
-_startingPoint = "hq2";
+if((getMarkerColor "hq1") != "ColorEAST")exitWith{hint "enemy base not colorEAST"};
+_startingPoint = "hq1";
 _car = "CUP_O_Ural_Reammo_SLA";
 _fuel = "CUP_O_Ural_Refuel_SLA";
 _squad = ["CUP_O_SLA_Soldier","CUP_O_SLA_Soldier_AT","CUP_O_SLA_Soldier_AT"];

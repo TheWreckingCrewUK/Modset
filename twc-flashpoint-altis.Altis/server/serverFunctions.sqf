@@ -1,8 +1,9 @@
 //Defines all functions on the server
 
-//Set Setup Defines:
-twc_siteSetup = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteSetup.sqf";
+//GlobalChat
+TWC_fnc_GlobalChat = compile preprocessfilelinenumbers "server\globalChat\fnc_GlobalChat.sqf";
 
+//Set Setup Defines:
 twc_siteDeciding = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteDeciding.sqf";
 
 twc_siteCapturedRedfor = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteCapturedRedfor.sqf";
@@ -13,16 +14,16 @@ twc_attackFailed = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_
 
 twc_redforAttackMotorized = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforAttackMotorized.sqf";
 twc_redforAttackMechanized = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforAttackMechanized.sqf";
-twc_redforAttackAirborne = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforAttackMechanized.sqf";
+twc_redforAttackAirborne = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforAttackAirborne.sqf";
 twc_redforSiteRecapAttempt = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_redforSiteRecapAttempt.sqf";
 twc_siteContestedCounter = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteContestedCounter.sqf";
 
 twc_airAssault = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_airassault.sqf";
 
 twc_aa = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_aa.sqf";
-twc_airbase = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_airbase.sqf";
 twc_hq = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_hq.sqf";
 twc_hamlet = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_hamlet.sqf";
+twc_mainHQ = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_mainHQ.sqf";
 twc_mech = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_mech.sqf";
 twc_radar = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_radar.sqf";
 twc_smallAirbase = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_smallAirbase.sqf";

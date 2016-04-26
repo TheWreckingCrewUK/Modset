@@ -6,7 +6,7 @@ if (_marker == "airbase1") exitWith {
 };
 
 if (_marker == "airbase2")then {
-	if(commanderBase == 0) then {
+	if(commanderBaseCount == 0) then {
 		airbase2Respawn = [west, "airbase2"] call BIS_fnc_addRespawnPosition;
 		publicVariable "airbase2Respawn";
 	};
@@ -17,12 +17,11 @@ hint format["Blufor has captured %1",_marker];
 _marker setMarkerColor "colorWEST";
 [_marker, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 
-/*
+
 _rand = (random 100);
-if(_rand < 33) exitWith{
-	[_marker]spawn {sleep 10; [(_this select 0)] call twc_attackDeciding};
+if(_rand < 40) exitWith{
+	[_marker, _rand] spawn {sleep 10; [(_this select 0), (_this select 1)] call twc_attackDeciding};
 };
-*/
 
 [_marker]spawn{
 	sleep 300;
