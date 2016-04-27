@@ -14,6 +14,7 @@
 #include "mech1\init.sqf";
 #include "motorized1\init.sqf";
 #include "outpost1\init.sqf";
+#include "outpost2\init.sqf";
 #include "radar1\init.sqf";
 #include "radar2\init.sqf";
 #include "support1\init.sqf";

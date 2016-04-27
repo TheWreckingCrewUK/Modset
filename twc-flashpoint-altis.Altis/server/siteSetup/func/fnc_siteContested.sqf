@@ -6,5 +6,5 @@ _marker setMarkerColor "colorYellow";
 _trg2 = createTrigger ["EmptyDetector", getMarkerPos _marker];
 _trg2 setTriggerArea [700, 700, 0, false];
 _trg2 setTriggerActivation ["ANY", "PRESENT", false];
-_trg2 setTriggerTimeout [120,120,120,True];
+_trg2 setTriggerTimeout [90,90,90,True];
 _trg2 setTriggerStatements ["(EAST countSide thisList) < 4 OR (West countSide thisList) == 0", format["['%1', thisList] call twc_siteDeciding", _marker], ""];

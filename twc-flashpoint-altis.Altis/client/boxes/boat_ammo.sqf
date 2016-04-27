@@ -659,6 +659,32 @@ if (g_class == "USMC_MG") then{
 		["CUP_B_USPack_Coyote",1]
 	];
 };
+//load availible to usmc MG assistant only
+if (g_class == "USMC_MGASS") then{
+	_tmp_weapons =
+	[
+		["CUP_arifle_M16A4_Base",1],
+		["CUP_launch_M136",2],
+		["CUP_hgun_Colt1911",1]
+	];
+	_tmp_magazines =
+	[
+		["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",15],
+		["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",20],
+        ["CUP_7Rnd_45ACP_1911",15]
+	];
+	_tmp_items = 
+	[
+		["CUP_optic_ACOG",1],
+		["CUP_optic_HoloBlack",1],
+		["CUP_acc_ANPEQ_15",1],
+		["ACRE_PRC148",1]
+	];
+	_tmp_backpacks = [
+		["CUP_B_USPack_Coyote",1]
+	];
+};
 //load availible for USMC Medic only
 if (g_class == "USMC_MED") then{
 	_tmp_weapons =
@@ -838,12 +864,14 @@ if (g_class == "JET_PLT") then{
 if (g_class == "CMDR") then{
 	_tmp_weapons =
 	[
-		["CUP_smg_MP5A5",1],
+		["CUP_arifle_M16A4_Base",1],
+		["CUP_hgun_Colt1911",1],
 		["Binocular",1]
 	];
 	_tmp_magazines =
 	[
-		["CUP_30Rnd_9x19_MP5",15]
+		["30Rnd_556x45_Stanag",15],
+		["CUP_7Rnd_45ACP_1911",15]
 	];
 	_tmp_items = 
 	[

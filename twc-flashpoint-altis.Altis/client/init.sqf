@@ -4,16 +4,16 @@ hint "If you're naked you can get a default loadout from an Ammo Box Action. Sor
 InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\diary\missionStatus.sqf"},{true}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
 
-player addEventHandler ["RESPAWN",{
-	hint "Respawn Event Handler Active";
+player addEventHandler ["MPKILLED",{
+	hint "MPKILLED Event Handler Active";
 	counterAttackCounter = counterAttackCounter + 1;
 	publicVariable "counterAttackCounter";
-	if(counterAttackCounter > 15)then {
+	if(counterAttackCounter > 20)then {
 		remoteExec ["twc_redforSiteRecapAttempt",2];
 	};
 	patrolCounter = patrolCounter + 1;
 	publicVariable "patrolCounter";
-	if(patrolCounter > 10) then{
+	if(patrolCounter > 15) then{
 		remoteExec ["twc_patrols",2];
 	};
 }];
@@ -280,19 +280,19 @@ if (!isNil "p27" && {player == p27}) then {
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p28" && {player == p28}) then {
-    g_class = "USMC_RF";
+    g_class = "USMC_MG";
 	g_group = "0";
 	g_unit = "028";
-	g_name = "Charlie Rifleman";
+	g_name = "Charlie Machine Gunner";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p29" && {player == p29}) then {
-    g_class = "USMC_MG";
+    g_class = "USMC_MGASS";
 	g_group = "0";
 	g_unit = "029";
-	g_name = "Charlie Machine Gunner";
+	g_name = "Charlie Machine Gunner Assistant";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
@@ -462,7 +462,7 @@ TWC_fnc_getCharlieList = {
    execVM "client\playerlist\charlie.sqf";
 };
 TWC_fnc_getSupportList = {
-   execVM "client\playerlist\Support.sqf";
+   execVM "client\playerlist\support.sqf";
 };
 TWC_fnc_getAirList = {
    execVM "client\playerlist\air.sqf";

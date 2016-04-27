@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={27251.869,53.222645,22468.045};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={8422.917,141.12621,25080.197};
+		dir[]={0.051031247,-0.78021359,0.62345064};
+		up[]={0.063649781,0.62551504,0.77760971};
+		aside[]={0.99668264,2.6251655e-008,-0.08158116};
 	};
 };
 binarizationWanted=0;
@@ -2408,20 +2408,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8428.2949,109.87059,25103.758};
-						angles[]={0,5.2912259,0};
+						position[]={8428.2949,109.8706,25103.758};
+						angles[]={0,5.2912273,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						name="p29";
-						description="Charlie Machine Gunner";
+						description="Charlie Machine Gunner Assistant";
 						isPlayable=1;
 					};
 					id=181;
 					type="B_Soldier_F";
-					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2470,20 +2469,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8426.5,110.41565,25105.893};
-						angles[]={0,5.2912259,0};
+						position[]={8426.5,110.41566,25105.893};
+						angles[]={0,5.2912273,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						name="p28";
-						description="Charlie Rifleman";
+						description="Charlie Machine Gunner";
 						isPlayable=1;
 					};
 					id=182;
 					type="B_Soldier_F";
-					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6154,7 +6152,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8439.1475,109.4778,25108.793};
+						position[]={8439.1475,109.47781,25108.793};
 					};
 					side="West";
 					flags=7;
@@ -6162,12 +6160,12 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="p33";
-						description="Armour Crew commander [15]";
+						description="Armour Crew commander [10]";
 						isPlayable=1;
 					};
 					id=429;
 					type="B_crew_F";
-					atlOffset=-7.6293945e-006;
+					atlOffset=7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6223,7 +6221,7 @@ class Mission
 					class Attributes
 					{
 						name="p34";
-						description="Armour Crewman [15]";
+						description="Armour Crewman [10]";
 						isPlayable=1;
 					};
 					id=427;
@@ -6284,7 +6282,7 @@ class Mission
 					class Attributes
 					{
 						name="p35";
-						description="Armour Crewman [15]";
+						description="Armour Crewman [10]";
 						isPlayable=1;
 					};
 					id=428;
@@ -6337,7 +6335,7 @@ class Mission
 			{
 			};
 			id=506;
-			atlOffset=-7.6293945e-006;
+			atlOffset=7.6293945e-006;
 		};
 		class Item124
 		{
@@ -14717,7 +14715,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						rank="MAJOR";
+						rank="LIEUTENANT";
 						name="commander1";
 						description="Commander [LOCKED]";
 						isPlayer=1;

@@ -84,9 +84,9 @@ if ((str player) in _specialSlots)then{
 			case "helo3": {15};
 			case "p31": {15};
 			case "p32": {15};
-			case "p33": {15};
-			case "p34": {15};
-			case "p35": {15};
+			case "p33": {10};
+			case "p34": {10};
+			case "p35": {10};
 			case "jetPilot1": {20};
 			case "commander1": {0};
 			case "enemy1": {100};

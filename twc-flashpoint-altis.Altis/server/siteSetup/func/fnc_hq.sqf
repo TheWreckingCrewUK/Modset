@@ -20,7 +20,7 @@ _CentralMarker = format ["%1",_marker];
 if isServer then {
 	private ["_pos","_m"];
 	_pos = [getmarkerpos _CentralMarker,[0,300],random 360,0] call SHK_pos;
-	_PatrolTanks = [_pos, EAST, BRDM] call BIS_fnc_spawnGroup;
+	_PatrolTanks = [_pos, EAST, bmp] call BIS_fnc_spawnGroup;
 	[_PatrolTanks, getmarkerpos _CentralMarker, 400] call CBA_fnc_taskDefend;
 };
 if isServer then {
@@ -31,7 +31,7 @@ if isServer then {
 };
 
 [_CentralMarker, ATteam] spawn{
-	for "_i" from 0 to 1 do {
+	for "_i" from 0 to 2 do {
 	if isServer then {
 			sleep 2;
 			private ["_pos","_m"];
@@ -53,7 +53,7 @@ if isServer then {
 	};
 };
 [_CentralMarker, squad] spawn{
-	for "_i" from 0 to 2 do {
+	for "_i" from 0 to 3 do {
 		if isServer then{
 			sleep 5;
 			private ["_pos","_m"];

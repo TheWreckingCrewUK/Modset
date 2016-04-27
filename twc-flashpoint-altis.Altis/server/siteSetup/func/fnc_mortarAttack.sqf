@@ -10,7 +10,7 @@ if((random 100) < 50)exitWith{};
 _target = _thisList call BIS_fnc_selectRandom;
 _mortarGunner = ["O_Mortar_01_F"];
 _numrounds = floor (random 5);
-_radius = 100;
+_radius = 150;
 
 _pos = [getmarkerpos "support1",[0,20],0,0] call SHK_pos;
 

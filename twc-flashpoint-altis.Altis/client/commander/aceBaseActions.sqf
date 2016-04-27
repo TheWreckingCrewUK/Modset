@@ -27,9 +27,22 @@ TWC_fnc_createArmourSpawnPad = {
 TWC_fnc_moveAmmoBox = {
 	"crate" setMarkerpos (getPos player);
 	[{mainAmmoBox setPos (getPos commander1);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
+	deleteVehicle radioSign;
+	publicVariable "radioSign";
+	deleteVehicle radioPicture;
+	publicVariable "radioPicture";
+	radioSign = "sign_F" createVehicle (position player vectorAdd[0,5,0]);
+	radioSign setDir (getDir player);
+	publicVariable "radioSign";
+	radioPicture = "userTexture1M_F" createVehicle (position player);
+	radioPicture attachTo [radioSign, [0,-.1,0.5]];
+	radioPicture setObjectTexture [0, "server\pics\radio.jpg"];
+	publicVariable "radioPicture";
 };
 
 TWC_fnc_setSpawn = {
+	commanderBaseRespawn call BIS_fnc_removeRespawnPosition;
+	publicVariable "commanderBaseRespawn";
 	commanderBaseCount = 1;
 	publicVariable "commanderBaseCount";
 	airbase2Respawn call BIS_fnc_removeRespawnPosition;

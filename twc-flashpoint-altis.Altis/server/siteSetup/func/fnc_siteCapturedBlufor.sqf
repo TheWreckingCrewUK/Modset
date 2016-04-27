@@ -18,7 +18,7 @@ _marker setMarkerColor "colorWEST";
 [_marker, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 
 
-_rand = (random 100);
+_rand = (random 100 || _marker != "commanderBase");
 if(_rand < 40) exitWith{
 	[_marker, _rand] spawn {sleep 10; [(_this select 0), (_this select 1)] call twc_attackDeciding};
 };
