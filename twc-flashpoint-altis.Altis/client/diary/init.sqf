@@ -1,5 +1,3 @@
-execVM "client\diary\missionStatus.sqf";
-
 _index = player createDiarySubject ["RadarTower","Radar Tower"];
 _index2 = player createDiarySubject ["CTI", "Capturing the Island"];
 _index3 = player createDiarySubject ["Commander","Player Commander"];

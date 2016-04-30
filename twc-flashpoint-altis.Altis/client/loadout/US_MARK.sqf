@@ -17,7 +17,7 @@ for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACRE_PRC148";
 player addVest "CUP_V_B_IOTV_AT";
-for "_i" from 1 to 2 do {player addItemToVest "CUP_HandGrenade_M67";};
+for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
 for "_i" from 1 to 6 do {player addItemToVest "20Rnd_762x51_Mag";};
 player addBackpack "CUP_B_AssaultPack_ACU";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
@@ -29,6 +29,8 @@ player addWeapon "CUP_srifle_M14_DMR";
 player addPrimaryWeaponItem "CUP_optic_LeupoldM3LR";
 player addWeapon "CUP_launch_Javelin";
 player addWeapon "ACE_Vector";
+
+player addSecondaryWeaponItem "CUP_Javelin_M";
 
 comment "Add items";
 player linkItem "ItemMap";

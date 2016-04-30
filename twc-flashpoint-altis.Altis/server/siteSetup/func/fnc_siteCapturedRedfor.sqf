@@ -16,7 +16,7 @@ if (_marker == "airbase2")then {
 	deleteVehicle _x
 } forEach allDead;
 
-_enemy = nearestObjects [getMarkerPos _marker, ["Tank","Car","Tank"], 800];
+_enemy = nearestObjects [getMarkerPos _marker, ["LandVehicle"], 800];
 {
 	deleteVehicle _x
 }forEach _enemy;

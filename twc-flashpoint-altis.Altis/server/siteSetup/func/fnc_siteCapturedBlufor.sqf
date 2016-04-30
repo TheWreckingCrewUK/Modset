@@ -1,6 +1,6 @@
 params["_marker"];
 
-if (_marker == "airbase1") exitWith {
+if (_marker == "mainHQ") exitWith {
 	["Enemy MainHQ captured. All forces routed. Mission Completed.", "hint", True, True] call BIS_fnc_MP;
 	[] spawn {sleep 15; ["end1", false, 0] call BIS_fnc_endMission};
 };
@@ -18,8 +18,8 @@ _marker setMarkerColor "colorWEST";
 [_marker, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 
 
-_rand = (random 100 || _marker != "commanderBase");
-if(_rand < 40) exitWith{
+_rand = (random 100);
+if(_rand < 40 && _marker != "commanderBase") exitWith{
 	[_marker, _rand] spawn {sleep 10; [(_this select 0), (_this select 1)] call twc_attackDeciding};
 };
 
@@ -27,7 +27,7 @@ if(_rand < 40) exitWith{
 	sleep 300;
 	{ deleteVehicle _x } forEach allDead;
 
-	_enemyVehicle = nearestObjects [getMarkerPos (_this select 0), ["Tank","Car","Truck"], 800];
+	_enemyVehicle = nearestObjects [getMarkerPos (_this select 0), ["LandVehicle"], 800];
 	{
 		if((typeOf _x) in friendlyVehiclesArray) then{
 			_enemyVehicle = _enemyVehicle - [_x];

@@ -1,9 +1,9 @@
 
 
-_HasAcre = isClass (configfile >> "CfgWeapons" >> "ACRE_PRC117F");
+_hasAcre = isClass (configfile >> "CfgWeapons" >> "ACRE_PRC117F");
 
-IF _hasAcre then {
-	
+if _hasAcre then {
+
 }else{
     cutText ["", "BLACK", 0.001];
     [

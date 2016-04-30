@@ -426,6 +426,7 @@ if (g_class == "US_MARK") then{
 	_tmp_weapons =
 	[
 		["CUP_srifle_M14_DMR",1],
+		["CUP_arifle_M16A4_Base",1],
 		["CUP_launch_M136",2],
 		["ACE_Vector",1],
 		["CUP_launch_FIM92Stinger",2],
@@ -435,6 +436,7 @@ if (g_class == "US_MARK") then{
 	_tmp_magazines =
 	[
 		["20Rnd_762x51_Mag",50],
+		["30Rnd_556x45_Stanag",15],
 		["CUP_Javelin_M",2],
 		["CUP_Stinger_M",2],
         ["CUP_7Rnd_45ACP_1911",15]

@@ -5,7 +5,7 @@ InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\diary\
 [player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
 
 player addEventHandler ["MPKILLED",{
-	hint "MPKILLED Event Handler Active";
+	hint "KILLED Event Handler Active";
 	counterAttackCounter = counterAttackCounter + 1;
 	publicVariable "counterAttackCounter";
 	if(counterAttackCounter > 20)then {
@@ -113,7 +113,7 @@ if (!isNil "p9" && {player == p9}) then {
 	g_group = "0";
 	g_unit = "009";
 	g_name = "Bravo Section Leader";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSArmy.sqf";
 };
@@ -122,7 +122,7 @@ if (!isNil "p10" && {player == p10}) then {
 	g_group = "0";
 	g_unit = "010";
 	g_name = "Bravo Fireteam Leader";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
@@ -131,7 +131,7 @@ if (!isNil "p11" && {player == p11}) then {
 	g_group = "0";
 	g_unit = "011";
 	g_name = "Bravo Rifleman";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
@@ -140,7 +140,7 @@ if (!isNil "p12" && {player == p12}) then {
 	g_group = "0";
 	g_unit = "012";
 	g_name = "Bravo Grenadier";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
@@ -149,7 +149,7 @@ if (!isNil "p13" && {player == p13}) then {
 	g_group = "0";
 	g_unit = "013";
 	g_name = "Bravo Automatic Rifleman";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
@@ -158,7 +158,7 @@ if (!isNil "p14" && {player == p14}) then {
 	g_group = "0";
 	g_unit = "014";
 	g_name = "Bravo Fireteam Leader";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
@@ -167,7 +167,7 @@ if (!isNil "p15" && {player == p15}) then {
 	g_group = "0";
 	g_unit = "015";
 	g_name = "Bravo Automatic Rifleman";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
@@ -176,7 +176,7 @@ if (!isNil "p16" && {player == p16}) then {
 	g_group = "0";
 	g_unit = "016";
 	g_name = "Bravo Marksman";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
@@ -185,7 +185,7 @@ if (!isNil "p17" && {player == p17}) then {
 	g_group = "0";
 	g_unit = "017";
 	g_name = "Bravo Medic";
-	g_radio_channel = 1;
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
@@ -194,7 +194,7 @@ if (!isNil "p18" && {player == p18}) then {
 	g_group = "0";
 	g_unit = "018";
 	g_name = "Charlie Section Leader";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMC.sqf";
 };
@@ -203,7 +203,7 @@ if (!isNil "p19" && {player == p19}) then {
 	g_group = "0";
 	g_unit = "019";
 	g_name = "Charlie Fireteam Leader";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -212,7 +212,7 @@ if (!isNil "p20" && {player == p20}) then {
 	g_group = "0";
 	g_unit = "020";
 	g_name = "Charlie Rifleman";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -221,7 +221,7 @@ if (!isNil "p21" && {player == p21}) then {
 	g_group = "0";
 	g_unit = "022";
 	g_name = "Charlie Automatic Rifleman";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -230,7 +230,7 @@ if (!isNil "p22" && {player == p22}) then {
 	g_group = "0";
 	g_unit = "022";
 	g_name = "Charlie Assistant Automatic Rifleman";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -239,7 +239,7 @@ if (!isNil "p23" && {player == p23}) then {
 	g_group = "0";
 	g_unit = "023";
 	g_name = "Charlie Fireteam Leader";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -248,7 +248,7 @@ if (!isNil "p24" && {player == p24}) then {
 	g_group = "0";
 	g_unit = "024";
 	g_name = "Charlie Rifleman";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -257,7 +257,7 @@ if (!isNil "p25" && {player == p25}) then {
 	g_group = "0";
 	g_unit = "025";
 	g_name = "Charlie Automatic Rifleman";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -266,7 +266,7 @@ if (!isNil "p26" && {player == p26}) then {
 	g_group = "0";
 	g_unit = "026";
 	g_name = "Charlie Assistant Automatic Rifleman";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -275,7 +275,7 @@ if (!isNil "p27" && {player == p27}) then {
 	g_group = "0";
 	g_unit = "027";
 	g_name = "Charlie Fireteam Leader";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -284,7 +284,7 @@ if (!isNil "p28" && {player == p28}) then {
 	g_group = "0";
 	g_unit = "028";
 	g_name = "Charlie Machine Gunner";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -293,7 +293,7 @@ if (!isNil "p29" && {player == p29}) then {
 	g_group = "0";
 	g_unit = "029";
 	g_name = "Charlie Machine Gunner Assistant";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -302,7 +302,7 @@ if (!isNil "p30" && {player == p30}) then {
 	g_group = "0";
 	g_unit = "030";
 	g_name = "Medic";
-	g_radio_channel = 2;
+	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
@@ -358,7 +358,7 @@ if (!isNil "helo1" && {player == helo1}) then {
 	g_unit = "100";
 	g_name = "Wildcat Pilot";
 	g_radio = "";
-	SpawnAW19Action = ["SpawnAW159","AW19 Wildcat","",{_veh = "CUP_B_AW159_Cannon_GB" createVehicle (position armourSpawnPad);_veh setDir 120;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
+	SpawnAW19Action = ["SpawnAW159","AW19 Wildcat","",{_veh = "CUP_B_AW159_Cannon_GB" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
 	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnAW19Action] call ace_interact_menu_fnc_addActionToClass;	
 	execVM "client\radar\helicopterRadar1.sqf";
 	execVM "client\radar\helicopterRadar2.sqf";
@@ -374,7 +374,7 @@ if (!isNil "helo2" && {player == helo2}) then {
 	g_unit = "101";
 	g_name = "BlackHawk Pilot";
 	g_radio = "";
-	SpawnUH60MAction = ["SpawnUH60M","UH60M Blackhawk","",{_veh = "CUP_B_UH60M_US" createVehicle (position armourSpawnPad);_veh setDir 120;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
+	SpawnUH60MAction = ["SpawnUH60M","UH60M Blackhawk","",{_veh = "CUP_B_UH60M_US" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
 	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnUH60MAction] call ace_interact_menu_fnc_addActionToClass;
 	execVM "client\radar\helicopterRadar1.sqf";
 	execVM "client\radar\helicopterRadar2.sqf";
@@ -402,6 +402,7 @@ if (!isNil "jetpilot1" && {player == jetpilot1}) then {
 	player addEventHandler ["RESPAWN",{fjetSpawned = 0}];
 	
 };
+
 g_commander1 = "";
 g_p1 = "";
 g_p2 = "";
@@ -482,15 +483,6 @@ airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ac
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], supportAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
 
-
-if(false)then{
-	id_test_status = ["Debug", {true}, _test2, true] call AGM_Interaction_fnc_addInteractionSelf;
-};
-
-_name = name player;
-_text = format["%1 joined in as %2",_name,g_name];
-[TWCServer,_text] remoteExec ["TWC_fnc_GlobalChat", 2]; 
-
 [] spawn {
 	while{true} do {
 		waitUntil {count units group player > 1};
@@ -498,11 +490,15 @@ _text = format["%1 joined in as %2",_name,g_name];
 	};
 };
 
-waitUntil {g_class != ""};
-waitUntil {alive player};
-[g_class]spawn{execVM format["client\loadout\%1.sqf", _this select 0];};
+_name = name player;
+_text = format["%1 joined in as %2",_name,g_name];
+[TWCServer,_text] remoteExec ["TWC_fnc_GlobalChat", 2]; 
 
-sleep 4;
+if (g_class != "") then {
+	execVM format["client\loadout\%1.sqf", g_class];
+};
+
+sleep 2;
 if (g_radio != "") then {
 	_radioID = [g_radio] call acre_api_fnc_getRadioByType;
 	_switchChannel = [_radioID, g_radio_channel] call acre_api_fnc_setRadioChannel;

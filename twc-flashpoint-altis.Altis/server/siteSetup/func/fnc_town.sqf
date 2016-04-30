@@ -62,7 +62,7 @@ if isServer then {
 	};
 };
 [_CentralMarker, squad] spawn{
-	for "_i" from 0 to 0 do {
+	for "_i" from 0 to 1 do {
 		if isServer then{
 			sleep 5;
 			private ["_pos","_m"];

@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1477;
+		nextID=1480;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8422.917,141.12621,25080.197};
-		dir[]={0.051031247,-0.78021359,0.62345064};
-		up[]={0.063649781,0.62551504,0.77760971};
-		aside[]={0.99668264,2.6251655e-008,-0.08158116};
+		pos[]={26762.83,45.545181,24621.865};
+		dir[]={0,-0.70710677,0.70710683};
+		up[]={0,0.70710677,0.70710671};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -68,7 +68,9 @@ addons[]=
 	"CUP_AirVehicles_UH60",
 	"CUP_AirVehicles_AV8B",
 	"A3_Signs_F",
-	"A3_Misc_F_Helpers"
+	"A3_Misc_F_Helpers",
+	"ace_rearm",
+	"ace_refuel"
 };
 randomSeed=10595176;
 class ScenarioData
@@ -126,7 +128,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=420;
+		items=423;
 		class Item0
 		{
 			dataType="Logic";
@@ -1197,9 +1199,9 @@ class Mission
 			angle=5.490716;
 			class Attributes
 			{
-				condition="this && (getMarkerColor ""airbase2"") == ""colorWest"";";
-				onActivation="Russiancheck = Russiancheck + 1; hint "" Hostiles near the base !""";
-				onDeactivation="Russiancheck = Russiancheck - 1; hint ""Hostiles have left the Base"";";
+				condition="this && (getMarkerColor ""airbase2"") != ""colorYellow"";";
+				onActivation="Russiancheck = 1; hint "" Hostiles near the base !""";
+				onDeactivation="Russiancheck = 0; hint ""Hostiles have left the Base"";";
 				sizeA=500;
 				sizeB=300;
 				interuptable=1;
@@ -1655,8 +1657,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8430.1045,111.41043,25117.795};
-						angles[]={0,6.0170302,0};
+						position[]={8430.1035,111.4106,25117.795};
+						angles[]={0,6.0170226,0};
 					};
 					side="West";
 					flags=5;
@@ -1717,7 +1719,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8430.1729,110.74004,25120.938};
-						angles[]={0.20635349,6.0170226,6.0986428};
+						angles[]={0.20635028,6.0170226,6.0986342};
 					};
 					side="West";
 					flags=4;
@@ -1725,6 +1727,7 @@ class Mission
 					{
 						name="p17";
 						description="Bravo Medic";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=184;
@@ -2968,7 +2971,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={26711.471,16.360348,24759.016};
+				position[]={26708.193,16.174799,24760.432};
 				angles[]={0.010664274,6.2693906,0.051952176};
 			};
 			id=204;
@@ -3173,8 +3176,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={26709.646,16.246532,24766.396};
-				angles[]={6.2551923,6.2693906,0.05461248};
+				position[]={26741.762,17.628859,24844.551};
+				angles[]={0.029326396,6.2693968,0.082478598};
 			};
 			id=205;
 			type="ACE_moduleRepairSettings";
@@ -4574,7 +4577,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={26704.111,13.328931,24853.596};
+				position[]={26703.486,13.363735,24853.031};
 				angles[]={0.12599599,6.2693906,0.058600098};
 			};
 			id=221;
@@ -4703,8 +4706,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={26706.008,12.764199,24858.836};
-				angles[]={0.075854406,6.2693906,0.19483033};
+				position[]={26703.109,12.473038,24857.885};
+				angles[]={0.21145724,6.2693906,0.058599081};
 			};
 			id=222;
 			type="acre_api_DifficultySettings";
@@ -4814,8 +4817,8 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={26762.83,20.545183,24646.865};
-			name="airBase2";
-			text="AirBase";
+			name="airbase2";
+			text="Air Base";
 			type="b_plane";
 			colorName="ColorEAST";
 			id=226;
@@ -13987,18 +13990,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26522.998,1.9342651,26244.561};
+				position[]={26522.998,1.9346244,26244.561};
 				angles[]={0,3.1659923,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 3600, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 180, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat7";
 			};
 			id=1237;
 			type="B_Boat_Transport_01_F";
-			atlOffset=2.2952714;
+			atlOffset=2.2956307;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14028,18 +14031,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26522.92,1.2446525,26236.42};
+				position[]={26522.92,1.2441947,26236.42};
 				angles[]={0,3.1659923,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 3600, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 180, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat6";
 			};
 			id=1238;
 			type="B_Boat_Transport_01_F";
-			atlOffset=1.6056588;
+			atlOffset=1.605201;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14069,18 +14072,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26522.725,1.2446525,26227.346};
+				position[]={26522.725,1.2445915,26227.346};
 				angles[]={0,3.1659923,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 3600, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 180, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat5";
 			};
 			id=1239;
 			type="B_Boat_Transport_01_F";
-			atlOffset=1.6056588;
+			atlOffset=1.6055977;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14116,7 +14119,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 3600, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 360, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat2";
 			};
 			id=1240;
@@ -14157,7 +14160,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 3600, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 360, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat1";
 			};
 			id=1241;
@@ -14198,7 +14201,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 3600, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 360, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat4";
 			};
 			id=1242;
@@ -14239,7 +14242,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 3600, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 360, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat3";
 			};
 			id=1243;
@@ -14718,7 +14721,6 @@ class Mission
 						rank="LIEUTENANT";
 						name="commander1";
 						description="Commander [LOCKED]";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1441;
@@ -15300,6 +15302,88 @@ class Mission
 			colorName="ColorEAST";
 			id=1476;
 			atlOffset=0.027327538;
+		};
+		class Item420
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={28344.863,15.192776,25759.74};
+				angles[]={0,3.067169,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1477;
+			type="Land_Net_Fence_4m_F";
+		};
+		class Item421
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={26741.654,16.866648,24851.023};
+			};
+			id=1478;
+			type="ACE_moduleRearmSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleRearmSettings_level";
+					expression="_this setVariable ['level',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item422
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={26742.197,17.907064,24838.141};
+			};
+			id=1479;
+			type="ACE_moduleRefuelSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleRefuelSettings_rate";
+					expression="_this setVariable ['rate',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };

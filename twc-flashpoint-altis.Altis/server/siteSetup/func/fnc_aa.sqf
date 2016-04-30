@@ -16,12 +16,12 @@ params["_marker"];
 
 _CentralMarker = format ["%1",_marker];
 
-[_CentralMarker, _ATDefend]spawn{
+[_CentralMarker]spawn{
 	if isServer then {
 		private ["_pos","_m"];
 		sleep 5;
 		_pos = [getmarkerpos (_this select 0),[0,100],random 360,0] call SHK_pos;
-		_DefendAT = [_pos, EAST, (_this select 1)] call BIS_fnc_spawnGroup;
+		_DefendAT = [_pos, EAST, ATteam] call BIS_fnc_spawnGroup;
 		[_DefendAT, getmarkerpos (_this select 0), 200] call CBA_fnc_taskPatrol;
 	};
 };

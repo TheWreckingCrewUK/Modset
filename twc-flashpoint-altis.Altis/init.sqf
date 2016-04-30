@@ -1,6 +1,8 @@
 [] execVM "server\vehicles\sa_ropes.sqf";
 [] execVM "server\vehicles\advancedTowing.sqf";
 
+RussianCheck = 0;
+
 if(isServer) then{
 	_script = execVM "SHK_pos\shk_pos_init.sqf";
 	waitUntil {scriptDone _script};
@@ -94,23 +96,23 @@ if ((str player) in _specialSlots)then{
 		};
 		
 		if ((str player) in _pilots && (count playableUnits) < _numPlayers) then {
-			["End2", false, 0] call BIS_fnc_endMission;
+			["End1", false, 0] call BIS_fnc_endMission;
 		};
 		
 		if ((str player) in _snipers && (count playableUnits) < _numPlayers) then {
-			["End2", false, 0] call BIS_fnc_endMission;
+			["End1", false, 0] call BIS_fnc_endMission;
 		};
 		
 		if ((str player) in _armour && (count playableUnits) < _numPlayers) then {
-			["End2", false, 0] call BIS_fnc_endMission;
+			["End1", false, 0] call BIS_fnc_endMission;
 		};
 		
 		if ((str player) in _jets && (count playableUnits) < _numPlayers) then {
-			["End2", false, 0] call BIS_fnc_endMission;
+			["End1", false, 0] call BIS_fnc_endMission;
 		};
 		
 		if ((str player) in _commanders && (count playableUnits) < _numPlayers) then {
-			["End2", false, 0] call BIS_fnc_endMission;
+			["End1", false, 0] call BIS_fnc_endMission;
 		};
 	};
 };

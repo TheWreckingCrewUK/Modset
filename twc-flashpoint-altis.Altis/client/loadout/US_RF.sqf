@@ -17,7 +17,7 @@ for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACRE_PRC148";
 player addVest "CUP_V_B_IOTV_AT";
-for "_i" from 1 to 2 do {player addItemToVest "CUP_HandGrenade_M67";};
+for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
 for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
 player addBackpack "CUP_B_AssaultPack_ACU";
