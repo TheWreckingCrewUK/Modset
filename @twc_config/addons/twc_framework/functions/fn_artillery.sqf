@@ -9,7 +9,7 @@
 / 4 - What type of round you would like to use, Options: "HE", "SMOKE", "ILLUM"
 */
 
-
+private ["_mortarn","_marker","_radius2","rounds"];
 if (isServer) then {	
 Params ["_mortar","_marker",["_radius",200],["_rounds",5],["_Roundselect",""],["_delay",10]];
 _Roundtype = 0;
