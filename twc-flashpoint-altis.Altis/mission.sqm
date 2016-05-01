@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=1480;
+		nextID=1493;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={26762.83,45.545181,24621.865};
-		dir[]={0,-0.70710677,0.70710683};
-		up[]={0,0.70710677,0.70710671};
-		aside[]={0.99999994,0,-0};
+		pos[]={8577.6182,265.3024,25005.049};
+		dir[]={0.68333673,-0.30343938,-0.66408879};
+		up[]={0.21763721,0.9528352,-0.21150646};
+		aside[]={-0.69694978,-2.3620669e-007,-0.71715003};
 	};
 };
 binarizationWanted=0;
@@ -1727,7 +1727,6 @@ class Mission
 					{
 						name="p17";
 						description="Bravo Medic";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=184;
@@ -2609,7 +2608,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8419.4121,110.63898,25104.24};
-						angles[]={0,0.02122879,0};
+						angles[]={0,0.021223202,0};
 					};
 					side="West";
 					flags=7;
@@ -2622,7 +2621,6 @@ class Mission
 					};
 					id=198;
 					type="B_Helipilot_F";
-					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2671,7 +2669,6 @@ class Mission
 			{
 			};
 			id=197;
-			atlOffset=-7.6293945e-006;
 		};
 		class Item30
 		{
@@ -2685,8 +2682,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8433.5371,109.25127,25102.281};
-						angles[]={6.247201,2.329962,6.2152891};
+						position[]={8434.084,109.80522,25105.418};
+						angles[]={6.0832276,5.3843331,6.2152901};
 					};
 					side="West";
 					flags=6;
@@ -5937,7 +5934,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8438.6611,109.0582,25120.756};
-						angles[]={0,5.3366127,0};
+						angles[]={0,5.336606,0};
 					};
 					side="West";
 					flags=7;
@@ -5945,7 +5942,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="p31";
-						description="Sniper [15]";
+						description="Sniper [12]";
 						isPlayable=1;
 					};
 					id=357;
@@ -5998,8 +5995,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8442.9443,107.01985,25123.02};
-						angles[]={0,5.3366127,0};
+						position[]={8442.9443,107.01954,25123.021};
+						angles[]={0,5.336606,0};
 					};
 					side="West";
 					flags=5;
@@ -6007,12 +6004,12 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="p32";
-						description="Spotter [15]";
+						description="Spotter [12]";
 						isPlayable=1;
 					};
 					id=358;
 					type="B_spotter_F";
-					atlOffset=-1.5258789e-005;
+					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6345,8 +6342,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26752.691,20.602407,24624.492};
-				angles[]={0.012000273,5.3749075,0.077179953};
+				position[]={26752.689,20.601799,24624.492};
+				angles[]={0.012007865,5.3749156,0.077178456};
 			};
 			side="Empty";
 			flags=4;
@@ -6356,7 +6353,7 @@ class Mission
 			};
 			id=510;
 			type="Land_HelipadSquare_F";
-			atlOffset=0.0014667511;
+			atlOffset=0.00099945068;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6393,8 +6390,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8416.9082,110.62906,25120.939};
-						angles[]={0,5.4106154,0};
+						position[]={8416.9082,110.62868,25120.941};
+						angles[]={0,5.4106078,0};
 					};
 					side="West";
 					flags=7;
@@ -6402,7 +6399,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="jetPilot1";
-						description="Jet Pilot [20]";
+						description="Jet Pilot [15]";
 						isPlayable=1;
 					};
 					id=512;
@@ -14694,11 +14691,10 @@ class Mission
 		class Item385
 		{
 			dataType="Marker";
-			position[]={26786.672,20.837355,24659.92};
+			position[]={26787.393,20.491568,24668.004};
 			name="heloPadDefault";
 			type="Empty";
 			id=1439;
-			atlOffset=-0.020282745;
 		};
 		class Item386
 		{
@@ -14721,6 +14717,7 @@ class Mission
 						rank="LIEUTENANT";
 						name="commander1";
 						description="Commander [LOCKED]";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1441;

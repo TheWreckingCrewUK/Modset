@@ -45,26 +45,26 @@ _tmp_backpacks = [];
 
  
 // create and fill the box.
-_box = _boxType createVehicleLocal (getMarkerPos _marker);
-_box setPosATL (getMarkerPos _marker);
-_box allowDamage false;
+SecondaryAmmoBox = _boxType createVehicleLocal (getMarkerPos _marker);
+SecondaryAmmoBox setPosATL (getMarkerPos _marker);
+SecondaryAmmoBox allowDamage false;
 while {true} do {
         refill_box = false;
         // empty it.
-        clearWeaponCargo _box;
-        clearMagazineCargo _box;
-        clearItemCargo _box;
-		clearBackpackCargo _box;
+        clearWeaponCargo SecondaryAmmoBox;
+        clearMagazineCargo SecondaryAmmoBox;
+        clearItemCargo SecondaryAmmoBox;
+		clearBackpackCargo SecondaryAmmoBox;
        
         // add in all weapons.
-        {_box addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;
+        {SecondaryAmmoBox addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;
        
         // add in all magazines.
-        {_box addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
+        {SecondaryAmmoBox addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
        
-        {_box addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
+        {SecondaryAmmoBox addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
 		
-		{_box addBackpackCargo [(_x select 0),(_x select 1)]} foreach _backpacks;
+		{SecondaryAmmoBox addBackpackCargo [(_x select 0),(_x select 1)]} foreach _backpacks;
 		
 	
        

@@ -81,15 +81,15 @@ if ((str player) in _specialSlots)then{
 		_jets = ["jetPilot1"];
 		_commanders = ["commander","enemy1"];
 		_numPlayers = switch (str player) do{
-			case "helo1": {0};
+			case "helo1": {5};
 			case "helo2": {10};
 			case "helo3": {15};
-			case "p31": {15};
-			case "p32": {15};
+			case "p31": {12};
+			case "p32": {12};
 			case "p33": {10};
 			case "p34": {10};
 			case "p35": {10};
-			case "jetPilot1": {20};
+			case "jetPilot1": {15};
 			case "commander1": {0};
 			case "enemy1": {100};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};

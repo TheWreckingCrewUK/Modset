@@ -6,7 +6,7 @@ player createDiaryRecord ["RadarTower", ["Radar Tower", "The radar towers will d
 
 player createDiaryRecord ["CTI", ["Capturing the Island", "To capture the island you must destroy the enemies Main HQ. Capturing other bases and causing damage to the enemy will make the Main HQ easier to attack."]];
 
-player createDiaryRecord ["Commander", ["Player Commander", "The player commander is a player tasked with setting up a new Blufor base. They may place it anywhere and can move it as many times as they want. They are also the highest ranking player on the island and may act as a platoon commander for the sections."]];
+player createDiaryRecord ["Commander", ["Player Commander", "The player commander is a player tasked with setting up a new Blufor base. They may place within 200 meters of the command boat and can move it as many times as they want. They are also the highest ranking player on the island and may act as a platoon commander for the sections."]];
 
 player createDiaryRecord ["Commander", ["Base", "The player commander's base once set up will be the respawn point for Blufor. It will also allow them to spawn both ground and air vehicles. The commander needs to make sure they put it in a suitable location to spawn helicopters."]];
 
