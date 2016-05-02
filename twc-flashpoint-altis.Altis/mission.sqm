@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=129;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1493;
+		nextID=1494;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8577.6182,265.3024,25005.049};
-		dir[]={0.68333673,-0.30343938,-0.66408879};
-		up[]={0.21763721,0.9528352,-0.21150646};
-		aside[]={-0.69694978,-2.3620669e-007,-0.71715003};
+		pos[]={8427.4434,129.88644,25082.74};
+		dir[]={-0.090766937,-0.71464396,0.69357842};
+		up[]={-0.092732966,0.69948941,0.70860177};
+		aside[]={0.99154675,3.2865501e-008,0.12976144};
 	};
 };
 binarizationWanted=0;
@@ -128,7 +128,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=423;
+		items=424;
 		class Item0
 		{
 			dataType="Logic";
@@ -1199,9 +1199,8 @@ class Mission
 			angle=5.490716;
 			class Attributes
 			{
-				condition="this && (getMarkerColor ""airbase2"") != ""colorYellow"";";
-				onActivation="Russiancheck = 1; hint "" Hostiles near the base !""";
-				onDeactivation="Russiancheck = 0; hint ""Hostiles have left the Base"";";
+				onActivation="Russiancheck = 1; if(getMarkerColor ""airbase2"" != ""colorYellow"") then{hint "" Hostiles near the base !""};";
+				onDeactivation="Russiancheck = 0; if(getMarkerColor ""airbase2"" != ""colorYellow"") then{hint ""Hostiles have left the Base""};";
 				sizeA=500;
 				sizeB=300;
 				interuptable=1;
@@ -2621,6 +2620,7 @@ class Mission
 					};
 					id=198;
 					type="B_Helipilot_F";
+					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2669,6 +2669,7 @@ class Mission
 			{
 			};
 			id=197;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item30
 		{
@@ -13945,19 +13946,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26537.014,16.995056,26250.49};
+				position[]={26537.014,16.994907,26250.49};
 				angles[]={0,4.7393889,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="veh = [this, 180, 3600, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 3600, -1, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatHelicopter1";
 			};
 			id=1235;
 			type="CUP_B_AW159_Cannon_GB";
-			atlOffset=0.22700691;
+			atlOffset=0.22685814;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13993,7 +13994,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 180, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 180, -1, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat7";
 			};
 			id=1237;
@@ -14034,7 +14035,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 180, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 180, -1, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat6";
 			};
 			id=1238;
@@ -14075,7 +14076,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 180, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 180, -1, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat5";
 			};
 			id=1239;
@@ -14116,7 +14117,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 360, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 360, -1, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat2";
 			};
 			id=1240;
@@ -14157,7 +14158,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 360, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 360, -1, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat1";
 			};
 			id=1241;
@@ -14198,7 +14199,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 360, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 360, -1, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat4";
 			};
 			id=1242;
@@ -14239,7 +14240,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="veh = [this, 180, 360, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 360, -1, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatBoat3";
 			};
 			id=1243;
@@ -14313,18 +14314,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26537.572,19.404051,26233.15};
+				position[]={26537.572,19.403721,26233.15};
 				angles[]={0,4.7393889,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
-				init="veh = [this, 180, 3600, 0, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
+				init="veh = [this, 180, 3600, -1, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 				name="boatHelicopter2";
 			};
 			id=1246;
 			type="CUP_B_UH60M_US";
+			atlOffset=9.0230017;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14354,16 +14355,40 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26519.299,19.192434,26425.465};
-				angles[]={6.2806482,3.1415927,0};
+				position[]={26519.299,19.192314,26425.463};
+				angles[]={6.2806549,3.1415927,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
+				init="veh = [this, 180, 3600, -1, FALSE] execVM ""server\vehicles\vehicleRespawn.sqf""";
 			};
 			id=1247;
 			type="CUP_B_AV8B_MK82_USMC";
+			atlOffset=193.95502;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item373
 		{
@@ -14716,7 +14741,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="commander1";
-						description="Commander [LOCKED]";
+						description="Commander [Members Only]";
 						isPlayer=1;
 						isPlayable=1;
 					};
@@ -15380,6 +15405,116 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item423
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={26814.943,21.14905,24668.33};
+			};
+			name="commander1Zeus";
+			id=1493;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="commander1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 	};

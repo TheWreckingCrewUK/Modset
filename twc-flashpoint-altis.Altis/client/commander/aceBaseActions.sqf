@@ -1,14 +1,28 @@
 TWC_fnc_createBaseBoat = {
-	if (player distance2D baseLifeBoat < 200 || player distance2D (getMarkerPos "boatCrate" < 200))then{
-		deleteVehicle baseLifeBoat;
-		publicVariable "baseLifeBoat";
-		baseLifeBoat = "B_Lifeboat" createVehicle (position player);
-		publicVariable "baseLifeBoat";
-		baseLifeBoat setPos (getPos player);
-		_dir = getDir player;
-		baseLifeBoat setDir _dir;
+	if (isNil "baseLifeBoat") then{
+		if (player distance2D (getMarkerPos "boatCrate") < 200) then{
+			baseLifeBoat = "B_Lifeboat" createVehicle (position player);
+			baseLifeBoat disableCollisionWith commander1;
+			publicVariable "baseLifeBoat";
+			baseLifeBoat setPos (getPos player);
+			_dir = getDir player;
+			baseLifeBoat setDir _dir;
+		}else{
+			hint "You need to be on the LHD to spawn the Commander Boat";
+		};
 	}else{
-		hint "You must be within 200 Meters of the commander base or LHD to spawn the commander boat."
+		if (player distance2D baseLifeBoat < 200 || player distance2D (getMarkerPos "boatCrate") < 200)then{
+			deleteVehicle baseLifeBoat;
+			publicVariable "baseLifeBoat";
+			baseLifeBoat = "B_Lifeboat" createVehicle (position player);
+			baseLifeBoat disableCollisionWith commander1;
+			publicVariable "baseLifeBoat";
+			baseLifeBoat setPos (getPos player);
+			_dir = getDir player;
+			baseLifeBoat setDir _dir;
+		}else{
+			hint "You must be within 200 Meters of the current commander base or LHD to spawn the commander boat."
+		};
 	};
 };
 
