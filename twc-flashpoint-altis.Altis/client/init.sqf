@@ -444,7 +444,6 @@ g_helo2 = "";
 
 
 execVM "client\boxes\main_ammo.sqf";
-execVM "client\boxes\boat_ammo.sqf";
 execVM "client\boxes\secondary_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];

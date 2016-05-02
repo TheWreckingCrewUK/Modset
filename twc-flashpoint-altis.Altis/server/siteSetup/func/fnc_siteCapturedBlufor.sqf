@@ -12,9 +12,49 @@ if (_marker == "mainHQ") exitWith {
 if (_marker == "airbase2")then {
 	[_marker, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 	if(getMarkerColor "commanderBase" == "colorEAST") then {
+		RussianCheckTrigger setPos (getMarkerPos "airbase2");
 		airbase2Respawn = [west, "airbase2"] call BIS_fnc_addRespawnPosition;
 		publicVariable "airbase2Respawn";
 		boatRespawn call BIS_fnc_removeRespawnPosition;
+		
+		"crate" setMarkerpos (getMarkerPos "crateDefault");
+		[{mainAmmoBox setPos (getMarkerPos "crateDefault");},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
+		deleteVehicle radioSign;
+		publicVariable "radioSign";
+		deleteVehicle radioPicture;
+		publicVariable "radioPicture";
+		radioSign = "sign_F" createVehicle (getMarkerPos "crateDefault" vectorAdd[0,5,1]);
+		radioSign setDir 300;
+		publicVariable "radioSign";
+		radioPicture = "userTexture1M_F" createVehicle (getMarkerPos "crateDefault");
+		radioPicture attachTo [radioSign, [0,-.1,0.5]];
+		radioPicture setObjectTexture [0, "server\pics\radio.jpg"];
+		publicVariable "radioPicture";
+		
+		"2crate" setMarkerpos (getMarkerPos "2crateDefault");
+		[{SecondaryAmmoBox setPos (getMarkerPos "2crateDefault");},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
+		
+		deleteVehicle jetSpawnPad;
+		deleteVehicle jetSpawner;	
+		jetSpawnPad = "Land_HelipadSquare_F" createVehicle (getMarkerPos "jetPadDefault");
+		jetSpawnPad setDir 307;
+		publicVariable "jetSpawnPad";
+		jetSpawner = "Land_infoStand_V1_F" createVehicle (getMarkerPos "jetPadDefault");
+		jetSpawner setDir 307;
+		jetSpawner attachTo [jetSpawnPad,[5.5,-5.5,.5]];
+		publicVariable "jetSpawner";
+	
+		deleteVehicle armourSpawnPad;
+		deleteVehicle armourSpawner;	
+		armourSpawnPad = "Land_HelipadSquare_F" createVehicle (getMarkerPos "heloPadDefault");
+		armourSpawnPad setDir 307;
+		publicVariable "armourSpawnPad";
+		armourSpawner = "Land_infoStand_V2_F" createVehicle (getMarkerPos "heloPadDefault");
+		armourSpawner setDir 307;
+		armourSpawner attachTo [armourSpawnPad,[5.5,-5.5,.6]];
+		publicVariable "jetSpawner";
+	}else{
+		
 	};
 };
 

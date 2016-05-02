@@ -903,6 +903,7 @@ if (g_class == "CMDR") then{
 mainAmmoBox = _boxType createVehicleLocal (getMarkerPos _marker);
 mainAmmoBox setPosATL (getMarkerPos _marker);
 mainAmmoBox allowDamage false;
+mainAmmoBox setPos (getPos mainAmmoBox vectorAdd [0,0,180]);
 mainAmmoBox addAction [ "Default Loadout", {execVM format["client\loadout\%1.sqf", g_class];}];
 while {true} do {
         refill_box = false;

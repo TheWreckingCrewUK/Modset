@@ -48,6 +48,7 @@ _tmp_backpacks = [];
 SecondaryAmmoBox = _boxType createVehicleLocal (getMarkerPos _marker);
 SecondaryAmmoBox setPosATL (getMarkerPos _marker);
 SecondaryAmmoBox allowDamage false;
+secondaryAmmoBox setPos (getPos secondaryAmmoBox vectorAdd [0,0,180]);
 while {true} do {
         refill_box = false;
         // empty it.
