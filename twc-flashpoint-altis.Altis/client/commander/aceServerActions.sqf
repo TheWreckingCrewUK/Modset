@@ -6,6 +6,10 @@ twc_fnc_globalCleanup = {
 	_groundWeapons = nearestObjects [getPos player, ["WeaponHolder","GroundWeaponHolder"], 7000];
 	hint format["Global Cleanup took %1 seconds", diag_tickTime - _start];    
 };
+twc_fnc_clickToSpawn = { 
+	_closetunits = nearestObjects [player, ["Man"], 5];
+	{vehicle _x setpos [_this select 0,_this select 1,_this select 2];}foreach _closetunits;
+};
 
 twc_fnc_timeMorning = {
 	    setDate [2035, 6, 24, 7, 30];
@@ -113,7 +117,8 @@ TimeAction = ["thisStartsTheTime","Time Actions","", {},{true}] call ace_interac
 Site1Action = ["thisStartsTheSites1","Site1 Capture Actions","", {},{true}] call ace_interact_menu_fnc_createAction;
 Site2Action = ["thisStartsTheSites2","Site2 Capture Actions","", {},{true}] call ace_interact_menu_fnc_createAction;
 
-GlobalCleanupAction = ["GlobalCleanup","Global Cleanup","", {call twc_fnc_globalCleanup;},{true}] call ace_interact_menu_fnc_createAction;
+globalCleanupAction = ["GlobalCleanup","Global Cleanup","", {call twc_fnc_globalCleanup;},{true}] call ace_interact_menu_fnc_createAction;
+clickToSpawnAction = ["ClicktoSpawn","Teleport","", {openMap [true, false]onMapSingleClick "_pos spawn twc_fnc_clickToSpawn; onMapSingleClick """"";},{true}] call ace_interact_menu_fnc_createAction;
 
 TimeMorningAction = ["TimeMorning","Time Morning","", {call twc_fnc_timeMorning;},{true}] call ace_interact_menu_fnc_createAction;
 TimeNoonAction = ["TimeNoon","Time Noon","", {call twc_fnc_timeNoon;},{true}] call ace_interact_menu_fnc_createAction;
@@ -145,6 +150,7 @@ captureSupport1Action = ["captureSupport1","Support1","", {call twc_fnc_captureS
 [player, 1, ["ACE_SelfActions", "thisStartsTheServer"], TimeAction] call ace_interact_menu_fnc_addActionToObject;
 
 [player, 1, ["ACE_SelfActions", "thisStartsTheServer", "thisStartsTheOther"], GlobalCleanupAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheServer", "thisStartsTheOther"], clickToSpawnAction] call ace_interact_menu_fnc_addActionToObject;
 
 [player, 1, ["ACE_SelfActions", "thisStartsTheServer", "thisStartsTheTime"], TimeMorningAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheServer", "thisStartsTheTime"], TimeNoonAction] call ace_interact_menu_fnc_addActionToObject;

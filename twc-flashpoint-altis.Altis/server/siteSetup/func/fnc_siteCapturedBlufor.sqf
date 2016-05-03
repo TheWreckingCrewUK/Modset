@@ -19,10 +19,10 @@ if (_marker == "airbase2")then {
 		
 		"crate" setMarkerpos (getMarkerPos "crateDefault");
 		[{mainAmmoBox setPos (getMarkerPos "crateDefault");},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
-		deleteVehicle radioSign;
-		publicVariable "radioSign";
-		deleteVehicle radioPicture;
-		publicVariable "radioPicture";
+		if(!isNil "jetSpawnPad") then{
+			deleteVehicle radioSign;
+			deleteVehicle radioPicture;
+		};
 		radioSign = "sign_F" createVehicle (getMarkerPos "crateDefault" vectorAdd[0,5,1]);
 		radioSign setDir 300;
 		publicVariable "radioSign";

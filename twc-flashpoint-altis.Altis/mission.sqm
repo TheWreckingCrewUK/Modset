@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={26799.234,41.362411,24597.371};
-		dir[]={-0.67775738,-0.4862625,0.55157739};
-		up[]={-0.37715811,0.87380415,0.30694216};
-		aside[]={0.63122553,2.6868656e-007,0.77562618};
+		pos[]={26742.727,45.549324,24581.594};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -4758,7 +4758,7 @@ class Mission
 			dataType="Marker";
 			position[]={26762.83,20.545183,24646.865};
 			name="airbase2";
-			text="Air Base";
+			text="Air Base 2";
 			type="b_plane";
 			colorName="ColorEAST";
 			id=226;
@@ -15127,7 +15127,7 @@ class Mission
 		class Item412
 		{
 			dataType="Marker";
-			position[]={26528,-175.54506,26265.102};
+			position[]={26527.779,-175.573,26265.254};
 			name="crateBoat";
 			type="Empty";
 			id=1495;
