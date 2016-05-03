@@ -1,4 +1,3 @@
-_box setPos (getPos _box vectorAdd [0,0,180]);
 params["_marker"];
 
 hint format["Redfor has captued %1", _marker];
@@ -31,9 +30,6 @@ if (_marker == "airbase2")then {
 		"crate" setMarkerpos (getMarkerPos "crateBoat");
 		[{mainAmmoBox setPos (getPos player);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
 		mainAmmoBox setPos (getPos mainAmmoBox vectorAdd [0,0,180]);
-		"2crate" setMarkerpos (getMarkerPos "2crateBoat");
-		[{SecondaryAmmoBox setPos (getPos player);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
-		secondaryAmmoBox setPos (getPos secondaryAmmoBox vectorAdd [0,0,180]);
 	}else{
 	
 	};
@@ -43,16 +39,14 @@ if (_marker == "airbase2")then {
 
 if(_marker == "commanderBase") then{
 	"commanderBase" setMarkerAlpha 0;
-	RussianCheckTrigger setPos (getMarkerPos "airbase2");
 	
 	if(getMarkerColor "airbase2" == "colorWest") then{
+	RussianCheckTrigger setPos (getMarkerPos "airbase2");
 		airbase2Respawn = [west, "airbase"] call BIS_fnc_addRespawnPosition;
 		publicVariable "airbase2Respawn";
 		
 		"crate" setMarkerpos (getMarkerPos "crateDefault");
 		[{mainAmmoBox setPos (getPos player);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
-		"2crate" setMarkerpos (getMarkerPos "2crateDefault");
-		[{SecondaryAmmoBox setPos (getPos player);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
 		
 		deleteVehicle jetSpawnPad;
 		deleteVehicle jetSpawner;	
@@ -87,11 +81,13 @@ if(_marker == "commanderBase") then{
 		"crate" setMarkerpos (getMarkerPos "crateBoat");
 		[{mainAmmoBox setPos (getPos player);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
 		mainAmmoBox setPos (getPos mainAmmoBox vectorAdd [0,0,182]);
-		"2crate" setMarkerpos (getMarkerPos "2crateBoat");
-		[{SecondaryAmmoBox setPos (getPos player);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
-		secondaryAmmoBox setPos (getPos secondaryAmmoBox vectorAdd [0,0,180]);
 	};
 	
+};
+
+if(_marker == "radar1" || _marker == "radar2")then{
+	_markerRadius = format["%1Radius", _marker];
+	_markerRadius setMarkerAlpha 1;
 };
 
 {

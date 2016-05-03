@@ -310,7 +310,7 @@ if (!isNil "p31" && {player == p31}) then {
     g_class = "SNIPER";
 	g_group = "0";
 	g_unit = "031";
-	g_name = "Sniper";
+	g_name = "Sniper/Mortar Commander";
 	g_radio_channel = 6;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landAttachments.sqf";
@@ -319,7 +319,7 @@ if (!isNil "p32" && {player == p32}) then {
     g_class = "SPOTTER";
 	g_group = "0";
 	g_unit = "032";
-	g_name = "Spotter";
+	g_name = "Spotter/Mortar Gunner";
 	g_radio_channel = 6;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landAttachments.sqf";
@@ -444,7 +444,6 @@ g_helo2 = "";
 
 
 execVM "client\boxes\main_ammo.sqf";
-execVM "client\boxes\secondary_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 

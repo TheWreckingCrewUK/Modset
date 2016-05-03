@@ -42,7 +42,7 @@ if isServer then {
 	_wp setWaypointType "GETOUT";
 	_wp setWaypointBehaviour "CARELESS";
 	_wp setWaypointSpeed "FULL";
-	_wp setWaypointStatements ["True", format["['%1'] call twc_siteContestedCounter", _marker]];
+	_wp setWaypointStatements ["True", format["['%1', false] call twc_siteContestedCounter", _marker]];
 	
 	[_PatrolSquad, getmarkerPos _marker,20] call CBA_fnc_taskAttack;
 };

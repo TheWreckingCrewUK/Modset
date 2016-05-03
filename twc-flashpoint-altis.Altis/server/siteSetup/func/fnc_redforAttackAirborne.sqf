@@ -30,6 +30,6 @@ _MechVehWaypoint setWaypointType "MOVE";
 _MechVehWaypoint setWaypointBehaviour "CARELESS";
 _MechVehWaypoint setWaypointSpeed "FULL";
 _mechVehWaypoint setwaypointCompletionRadius 300;
-_mechVehWaypoint setWaypointStatements ["True", format["{_x allowDamage false; moveOut _x; [_x] spawn {sleep 5; (_this select 0) allowDamage True};}foreach thisList; ['%1'] call twc_siteContestedCounter; deleteVehicle _veh", _marker]];
+_mechVehWaypoint setWaypointStatements ["True", format["{_x allowDamage false; moveOut _x; [_x] spawn {sleep 5; (_this select 0) allowDamage True};}foreach thisList; ['%1', false] call twc_siteContestedCounter; deleteVehicle _veh", _marker]];
 
 [_MechInf, _endMarker,20] call CBA_fnc_taskAttack;

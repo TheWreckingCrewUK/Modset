@@ -15,11 +15,6 @@
 hint"Radar Garrison Spawned";
 params["_marker"];
 
-
-_markerRadius = format["%1Radius", _marker];
-
-_markerRadius setMarkerAlpha 0;
-
 _CentralMarker = format ["%1",_marker];
 
 [_CentralMarker, squad]spawn{
@@ -48,10 +43,3 @@ if isServer then {
 		_DefendAA = [_pos, EAST, AAteam] call BIS_fnc_spawnGroup;
 		[_DefendAA, getmarkerpos _CentralMarker, 50] call CBA_fnc_taskDefend;
 	};
-/*
-if isServer then {
-		private ["_m"];
-		
-		radarstation = radar createVehicle getmarkerpos _CentralMarker;
-	};
-*/

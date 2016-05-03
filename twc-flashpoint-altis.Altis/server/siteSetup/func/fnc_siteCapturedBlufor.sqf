@@ -1,4 +1,4 @@
-params["_marker"];
+params["_marker","_canCounter"];
 
 hint format["Blufor has captured %1",_marker];
 _marker setMarkerColor "colorWEST";
@@ -31,11 +31,10 @@ if (_marker == "airbase2")then {
 		radioPicture setObjectTexture [0, "server\pics\radio.jpg"];
 		publicVariable "radioPicture";
 		
-		"2crate" setMarkerpos (getMarkerPos "2crateDefault");
-		[{SecondaryAmmoBox setPos (getMarkerPos "2crateDefault");},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
-		
-		deleteVehicle jetSpawnPad;
-		deleteVehicle jetSpawner;	
+		if(!isNil "jetSpawnPad") then{
+			deleteVehicle jetSpawnPad;
+			deleteVehicle jetSpawner;
+		};
 		jetSpawnPad = "Land_HelipadSquare_F" createVehicle (getMarkerPos "jetPadDefault");
 		jetSpawnPad setDir 307;
 		publicVariable "jetSpawnPad";
@@ -44,8 +43,10 @@ if (_marker == "airbase2")then {
 		jetSpawner attachTo [jetSpawnPad,[5.5,-5.5,.5]];
 		publicVariable "jetSpawner";
 	
-		deleteVehicle armourSpawnPad;
-		deleteVehicle armourSpawner;	
+		if(!isNil "armourSpawnPad") then{
+			deleteVehicle armourSpawnPad;
+			deleteVehicle armourSpawner;
+		};
 		armourSpawnPad = "Land_HelipadSquare_F" createVehicle (getMarkerPos "heloPadDefault");
 		armourSpawnPad setDir 307;
 		publicVariable "armourSpawnPad";
@@ -63,8 +64,13 @@ if(_marker == "commanderBase") then{
 	publicVariable "commanderBaseRespawn";
 };
 
+if(_marker == "radar1" || _marker == "radar2")then{
+	_markerRadius = format["%1Radius", _marker];
+	_markerRadius setMarkerAlpha 0;
+};
+
 _rand = (random 100);
-if(_rand < 40 && _marker != "commanderBase") exitWith{
+if(_rand < 40 && _canCounter && _marker != "commanderBase") exitWith{
 	[_marker, _rand] spawn {
 		sleep 10; [(_this select 0), (_this select 1)] call twc_attackDeciding
 	};

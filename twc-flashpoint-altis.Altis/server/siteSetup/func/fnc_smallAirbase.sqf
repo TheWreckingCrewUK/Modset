@@ -12,7 +12,7 @@
 *
 */
 
-hint"Town garrison spawned";
+hint"Airbase garrison spawned";
 params["_marker"];
 
 _CentralMarker = format ["%1",_marker];

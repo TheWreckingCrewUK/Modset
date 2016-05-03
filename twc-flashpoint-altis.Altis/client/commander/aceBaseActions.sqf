@@ -82,15 +82,6 @@ TWC_fnc_moveAmmoBox = {
 	};
 };
 
-TWC_fnc_move2AmmoBox = {
-	if (player distance2D baseLifeBoat < 200 && !isNull baseLifeBoat) then{
-		"2crate" setMarkerpos (getPos player);
-		[{SecondaryAmmoBox setPos (getPos player);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
-	}else{
-		hint "You are not close enough to the boat to make a base";
-	};
-};
-
 TWC_fnc_setSpawn = {
 	if (player distance2D baseLifeBoat < 100 && !isNull baseLifeBoat) then{
 		commanderBaseRespawn call BIS_fnc_removeRespawnPosition;
@@ -116,7 +107,6 @@ createBaseBoatAction = ["BaseBoat", "Base Boat","", {call TWC_fnc_createBaseBoat
 createLandSpawnPadAction = ["LandPad","Land Spawner","", {call TWC_fnc_createLandSpawnPad;},{true}] call ace_interact_menu_fnc_createAction;
 createArmourSpawnPadAction = ["ArmourPad","Helo Spawner","", {call TWC_fnc_createArmourSpawnPad;},{true}] call ace_interact_menu_fnc_createAction;
 moveAmmoBoxAction = ["moveAmmoBox","Ammo Box","", {call TWC_fnc_moveAmmoBox;},{true}] call ace_interact_menu_fnc_createAction;
-move2AmmoBoxAction = ["move2AmmoBox","Secondary Ammo Box","", {call TWC_fnc_move2AmmoBox;},{true}] call ace_interact_menu_fnc_createAction;
 setSpawnAction = ["setSpawn","Set Spawn","", {call TWC_fnc_setSpawn;},{true}] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], baseCreateAction] call ace_interact_menu_fnc_addActionToObject;
@@ -124,5 +114,4 @@ setSpawnAction = ["setSpawn","Set Spawn","", {call TWC_fnc_setSpawn;},{true}] ca
 [player, 1, ["ACE_SelfActions", "thisStartsTheBase"], createLandSpawnPadAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheBase"], createArmourSpawnPadAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheBase"], moveAmmoBoxAction] call ace_interact_menu_fnc_addActionToObject;
-[player, 1, ["ACE_SelfActions", "thisStartsTheBase"], move2AmmoBoxAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheBase"], setSpawnAction] call ace_interact_menu_fnc_addActionToObject;

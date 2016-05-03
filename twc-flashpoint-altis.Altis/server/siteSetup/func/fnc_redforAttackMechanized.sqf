@@ -38,7 +38,7 @@ _MechVehWaypoint = _VehicleGroup addWaypoint [_pos, 0];
 _MechVehWaypoint setWaypointType "TR UNLOAD";
 _MechVehWaypoint setWaypointBehaviour "CARELESS";
 _MechVehWaypoint setWaypointSpeed "FULL";
-_MechVehWaypoint setWaypointStatements ["True", format["['%1'] call twc_siteContestedCounter", _marker]];
+_MechVehWaypoint setWaypointStatements ["True", format["['%1', false] call twc_siteContestedCounter", _marker]];
 
 
 {

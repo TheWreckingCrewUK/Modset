@@ -84,7 +84,10 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1]
 	];
 	_tmp_backpacks = [
-		["CUP_B_Bergen_BAF",1]
+		["CUP_B_Bergen_BAF",1],
+		["CUP_B_M2_Gun_Bag",1],
+		["CUP_B_M2_Tripod_Bag",1],
+		["CUP_B_M2_MiniTripod_Bag",1]
 	];
 }; 
 // load available to Grenadier only.
@@ -359,7 +362,10 @@ if (g_class == "US_RF") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["CUP_B_AssaultPack_ACU",1]
+		["CUP_B_AssaultPack_ACU",1],
+		["CUP_B_M2_Gun_Bag",1],
+		["CUP_B_M2_Tripod_Bag",1],
+		["CUP_B_M2_MiniTripod_Bag",1]
 	];
 };
 //load availible to US Grenadier only
@@ -567,13 +573,13 @@ if (g_class == "USMC_RF") then{
 	];
 	_tmp_magazines =
 	[
-		["30Rnd_556x45_Stanag",50],
-		["30Rnd_556x45_Stanag_Tracer_Red",15],
+		["30Rnd_556x45_Stanag",25],
+		["30Rnd_556x45_Stanag_Tracer_Red",10],
 		["CUP_Javelin_M",2],
-		["CUP_SMAW_Spotting",5],
-		["CUP_SMAW_HEAA_M",5],
-		["CUP_SMAW_HEDP_M",5],
-        ["CUP_7Rnd_45ACP_1911",15]
+		["CUP_SMAW_Spotting",4],
+		["CUP_SMAW_HEAA_M",4],
+		["CUP_SMAW_HEDP_M",4],
+        ["CUP_7Rnd_45ACP_1911",5]
 	];
 	_tmp_items = 
 	[
@@ -584,7 +590,10 @@ if (g_class == "USMC_RF") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["CUP_B_USPack_Coyote",1]
+		["CUP_B_USPack_Coyote",1],
+		["CUP_B_M2_Gun_Bag",1],
+		["CUP_B_M2_Tripod_Bag",1],
+		["CUP_B_M2_MiniTripod_Bag",1]
 	];
 };
 //load available to USMC automatic Rifleman only
@@ -721,12 +730,17 @@ if (g_class == "SNIPER") then{
 	_tmp_weapons =
 	[
 		["CUP_srifle_AWM_des",1],
-		["CUP_hgun_Colt1911",1]
+		["CUP_hgun_Colt1911",1],
+		["CUP_arifle_L85A2",1]
 	];
 	_tmp_magazines =
 	[
 		["CUP_5Rnd_86x70_L115A1",20],
-        ["CUP_7Rnd_45ACP_1911",15]
+        ["CUP_7Rnd_45ACP_1911",15],
+		["ACE_1Rnd_82mm_Mo_HE",20],
+		["ACE_1Rnd_82mm_Mo_Smoke", 10],
+		["ACE_1Rnd_82mm_Mo_Illum",5],
+		["30Rnd_556x45_Stanag",10]
 	];
 	_tmp_items = 
 	[
@@ -739,10 +753,15 @@ if (g_class == "SNIPER") then{
 		["CUP_optic_LeupoldMk4_10x40_LRT_Desert",1],
 		["CUP_muzzle_snds_AWM",1],
 		["bipod_01_F_snd",1],
+		["ACE_RangeTable_82mm",1],
+		["CUP_U_B_BAF_DDPM_Tshirt",1],
+		["CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2",1],
+		["CUP_H_BAF_Helmet_2_DDPM",1],
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["CUP_B_AssaultPack_ACU",1]
+		["B_Kitbag_mcamo",1],
+		["B_Mortar_01_support_F",1]
 	];
 };
 //load availible to Spotter only
@@ -750,13 +769,18 @@ if (g_class == "SPOTTER") then{
 	_tmp_weapons =
 	[
 		["CUP_srifle_M110",1],
-		["CUP_hgun_Colt1911",1]
+		["CUP_hgun_Colt1911",1],
+		["CUP_arifle_L85A2",1]
 	];
 	_tmp_magazines =
 	[
 		["CUP_20Rnd_762x51_B_M110",20],
 		["CUP_20Rnd_TE1_Red_Tracer_762x51_M110",10],
-        ["CUP_7Rnd_45ACP_1911",15]
+        ["CUP_7Rnd_45ACP_1911",15],
+		["ACE_1Rnd_82mm_Mo_HE",20],
+		["ACE_1Rnd_82mm_Mo_Smoke", 10],
+		["ACE_1Rnd_82mm_Mo_Illum",5],
+		["30Rnd_556x45_Stanag",10]
 	];
 	_tmp_items = 
 	[
@@ -769,11 +793,16 @@ if (g_class == "SPOTTER") then{
 		["ACE_SpottingScope",1],
 		["CUP_optic_LeupoldMk4_10x40_LRT_Desert",1],
 		["bipod_01_F_snd",1],
+		["ACE_RangeTable_82mm",1],
 		["ACRE_PRC117F",1],
+		["CUP_U_B_BAF_DDPM_Tshirt",1],
+		["CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2",1],
+		["CUP_H_BAF_Helmet_2_DDPM",1],
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["CUP_B_AssaultPack_ACU",1]
+		["B_Kitbag_mcamo",1],
+		["B_Mortar_01_weapon_F",1]
 	];
 };
 //load avaible to armour commander only

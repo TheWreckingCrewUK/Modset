@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Support Assets", [["Sniper Team", [g_p31, "Sniper"],[g_p32, "Spotter"]],["Armour Crew", [g_p33, "Commander"],[g_p34, "Crewman"],[g_p34, "Crewman"]]]]			
+g_playerlist = [["Support Assets", [["Sniper/Mortar Team", [g_p31, "Sniper/Mortar Commander"],[g_p32, "Spotter/Mortar Gunner"]],["Armour Crew", [g_p33, "Commander"],[g_p34, "Crewman"],[g_p34, "Crewman"]]]]			
 				
 				];
 

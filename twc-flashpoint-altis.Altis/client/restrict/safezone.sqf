@@ -8,7 +8,7 @@
     Edit the #defines below.
 */
 
-#define SAFETY_ZONES    [["crate", 200], ["boatCrate",200]] // Syntax: [["base", 500], ["marker2", radius2], ...]
+#define SAFETY_ZONES    [["crate", 200]] // Syntax: [["base", 500], ["marker2", radius2], ...]
 #define MESSAGE "Don't shoot or throw grenades on base!"
 
      if (isDedicated) exitWith {};
