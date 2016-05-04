@@ -4,7 +4,7 @@ _index3 = player createDiarySubject ["Commander","Player Commander"];
 
 player createDiaryRecord ["RadarTower", ["Radar Tower", "The radar towers will detect any blufor air units. You will know if the radar tower is locking on to you as your on board computer will sound an alarm while you are in the radius of the radar. If you stay in the radars range for too long the enemy may send something to intercept you. To avoid being detected try to fly low. The range is estimated with large red circles on your map."]];
 
-player createDiaryRecord ["CTI", ["Capturing the Island", "To capture the island you must destroy the enemies Main HQ. Capturing other bases and causing damage to the enemy will make the Main HQ easier to attack."]];
+player createDiaryRecord ["CTI", ["Capturing the Island", "To capture the island you must destroy the enemies Main HQ. Capturing Town/Inf/Mech objectives and causing damage to the enemy will make the Main HQ easier to attack."]];
 
 player createDiaryRecord ["Commander", ["Player Commander", "The player commander is a player tasked with setting up a new Blufor base. They may place within 200 meters of the command boat and can move it as many times as they want. They are also the highest ranking player on the island and may act as a platoon commander for the sections."]];
 

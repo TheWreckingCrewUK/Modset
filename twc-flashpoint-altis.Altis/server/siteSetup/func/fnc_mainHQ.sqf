@@ -15,16 +15,30 @@
 hint"HQ Spawned";
 params["_marker"];
 
+_strenght = 0;
+if("inf1" in remainingArray) then {_strenght = _strenght + 1};
+if("inf2" in remainingArray) then {_strenght = _strenght + 1};
+if("inf3" in remainingArray) then {_strenght = _strenght + 1};
+if("inf4" in remainingArray) then {_strenght = _strenght + 1};
 _CentralMarker = format ["%1",_marker];
 
+_num = 3;
+_num = _num - _strenght;
+if(_num <= 0)then{_num = 0};
 if isServer then {
-	private ["_pos","_m"];
-	_pos = [getmarkerpos _CentralMarker,[0,300],random 360,0] call SHK_pos;
-	_PatrolTanks = [_pos, EAST, Tanks] call BIS_fnc_spawnGroup;
-	[_PatrolTanks, getmarkerpos _CentralMarker, 400] call CBA_fnc_taskDefend;
+	for "_i" from 0 to _num do {
+		private ["_pos","_m"];
+		_pos = [getmarkerpos _CentralMarker,[0,300],random 360,0] call SHK_pos;
+		_PatrolTanks = [_pos, EAST, tank] call BIS_fnc_spawnGroup;
+		[_PatrolTanks, getmarkerpos _CentralMarker, 400] call CBA_fnc_taskDefend;
+	};
 };
+
+_num = 2;
+_num = _num - _strenght;
+if(_num <= 0)then{_num = 0};
 if isServer then {
-	for "_i" from 0 to 1 do {
+	for "_i" from 0 to _num do {
 		private ["_pos","_m"];
 		_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
 		_PatrolTank = [_pos, EAST, tunguska] call BIS_fnc_spawnGroup;
@@ -32,6 +46,9 @@ if isServer then {
 	};
 };
 
+_num = 1;
+_num = _num - _strenght;
+if(_num <= 0)then{_num = 0};
 if isServer then {
 	private ["_pos","_m"];
 	_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;

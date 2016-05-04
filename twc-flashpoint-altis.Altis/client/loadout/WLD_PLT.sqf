@@ -11,7 +11,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "CUP_U_B_USMC_PilotOverall";
+player forceAddUniform "CUP_U_B_BAF_DDPM_S1_RolledUp";
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 player addItemToUniform "ACE_EarPlugs";
@@ -19,7 +19,7 @@ player addItemToUniform "ACE_DAGR";
 for "_i" from 1 to 3 do {player addItemToUniform "SmokeShell";};
 player addItemToUniform "ACE_HandFlare_Green";
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_HandFlare_White";};
-player addBackpack "B_AssaultPack_blk";
+player addBackpack "B_AssaultPack_cbr";
 player addItemToBackpack "ACRE_PRC117F";
 for "_i" from 1 to 4 do {player addItemToBackpack "30Rnd_556x45_Stanag";};
 player addHeadgear "H_PilotHelmetHeli_B";

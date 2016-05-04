@@ -85,16 +85,22 @@ if(_marker == "commanderBase") then{
 	
 };
 
-if(_marker == "radar1" || _marker == "radar2")then{
-	_markerRadius = format["%1Radius", _marker];
-	_markerRadius setMarkerAlpha 1;
+if(_marker == "radar1") then{
+	if (!isNil "radarObj1") then{
+		if(alive radarObj1) then{
+			"radar1Radius" setMarkerAlpha 1;
+		};
+	};
+};
+if(_marker == "radar2") then{
+	if (!isNil "radarObj2")then{
+		if(alive radarObj2) then{
+			"radar2Radius" setMarkerAlpha 1;
+		};
+	};
 };
 
-{
-	deleteVehicle _x
-} forEach allDead;
-
-_enemy = nearestObjects [getMarkerPos _marker, ["LandVehicle"], 800];
+_enemy = nearestObjects [getMarkerPos _marker, ["LandVehicle","Air"], 800];
 {
 	deleteVehicle _x
 }forEach _enemy;

@@ -5,7 +5,7 @@
 
 
 params["_thisList"];
-if((getMarkerColor "support1") == "ColorWEST")exitWith{};
+if((getMarkerColor "support1") != "ColorEAST")exitWith{};
 if((random 100) < 50)exitWith{};
 _target = _thisList call BIS_fnc_selectRandom;
 _mortarGunner = ["O_Mortar_01_F"];

@@ -38,6 +38,8 @@ mechSquad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Infantry" >>
 
 bmp = ["CUP_O_BMP2_SLA"];
 
+tank = ["CUP_O_T72_SLA"];
+
 tanks = (configfile >> "CfgGroups" >> "East" >> "CUP_O_SLA" >> "Armored" >> "CUP_O_SLA_TankPlatoon");
 
 hind = ["CUP_O_Mi24_V_RU"];

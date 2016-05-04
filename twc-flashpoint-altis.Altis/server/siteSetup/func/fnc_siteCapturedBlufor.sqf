@@ -70,7 +70,7 @@ if(_marker == "radar1" || _marker == "radar2")then{
 };
 
 _rand = (random 100);
-if(_rand < 40 && _canCounter && _marker != "commanderBase") exitWith{
+if(_rand < 50 && _canCounter && _marker != "commanderBase") exitWith{
 	[_marker, _rand] spawn {
 		sleep 10; [(_this select 0), (_this select 1)] call twc_attackDeciding
 	};
@@ -78,9 +78,7 @@ if(_rand < 40 && _canCounter && _marker != "commanderBase") exitWith{
 
 [_marker]spawn{
 	sleep 300;
-	{ deleteVehicle _x } forEach allDead;
-
-	_enemyVehicle = nearestObjects [getMarkerPos (_this select 0), ["LandVehicle"], 800];
+	_enemyVehicle = nearestObjects [getMarkerPos (_this select 0), ["LandVehicle","Air"], 800];
 	{
 		if((typeOf _x) in friendlyVehiclesArray) then{
 			_enemyVehicle = _enemyVehicle - [_x];

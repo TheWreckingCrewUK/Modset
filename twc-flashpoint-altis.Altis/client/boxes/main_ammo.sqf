@@ -65,14 +65,14 @@ if (g_class == "BAF_SL") then {
 		["CUP_arifle_L85A2",1],
 		["CUP_hgun_Glock17",1],
 		["launch_NLAW_F",2],
-		["CUP_launch_Javelin",2],
+		["CUP_launch_Javelin",1],
 		["CUP_launch_M136",2],
-		["CUP_launch_FIM92Stinger",2]
+		["CUP_launch_FIM92Stinger",1]
     ];       
     _tmp_magazines =
     [
-		["30Rnd_556x45_Stanag",50],
-		["30Rnd_556x45_Stanag_Tracer_Red",50],
+		["30Rnd_556x45_Stanag",25],
+		["30Rnd_556x45_Stanag_Tracer_Red",15],
         ["CUP_17Rnd_9x19_glock17",15],
 		["CUP_Javelin_M",2],
 		["CUP_Stinger_M",2]
@@ -206,7 +206,7 @@ if (g_class == "BAF_SL") then {
  if (g_class == "BAF_MARK") then {
     _tmp_weapons =
     [
-        ["CUP_arifle_L86A2",1],
+        ["CUP_srifle_L129A1_HG",1],
 		["ACE_Vector",1],
 		["CUP_hgun_Glock17",1],
 		["launch_NLAW_F",3],
