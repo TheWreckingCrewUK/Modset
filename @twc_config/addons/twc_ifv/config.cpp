@@ -4,14 +4,19 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"TWC_warrior",
-			"TWC_warrior_D"
+			"TWC_Warrior_W",
+			"TWC_Warrior_D"
 		};
-		weapons[]={};
+		weapons[]=
+		{
+			"TWC_30mm_HE_item",
+			"TWC_30mm_AP_item"
+		};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"dg_ukbaf",
+			"cup_trackedvehicles_mcv80",
+			"ace_interaction",
 			"A3_Air_F",
 			"A3_Weapons_F",
 			"A3_Soft_F",
@@ -43,10 +48,15 @@ class CfgFunctions
 			class RemoveAmmoInventory
 			{
 			};
+			class ShowAmmo
+			{
+			};
+			class isWarrior
+			{
+			};
 		};
 	};
 };
-
 class Extended_PostInit_EventHandlers
 {
 	class TWC_IFV_Init
@@ -54,7 +64,6 @@ class Extended_PostInit_EventHandlers
 		init="execVM '\twc_ifv\init.sqf';";
 	};
 };
-
 class CfgMagazines
 {
 	class 140Rnd_30mm_MP_shells_Tracer_Yellow;
@@ -81,33 +90,22 @@ class CfgWeapons
 	class HE;
 	class AP;
 	class autocannon_30mm;
-	class LMG_coax;
+	class CUP_Vlmg_L94A1_Coax;
 	class ACE_ItemCore;
 	class InventoryItem_Base_F;
-	class TWC_GPMG: LMG_coax
+	class TWC_GPMG: CUP_Vlmg_L94A1_Coax
 	{
-		displayname="GPMG";
+		displayname="L94A1";
 	};
 	class TWC_Rarden: autocannon_30mm
 	{
 		class AP: AP
 		{
-			displayname="L121A1 AP";
+			displayname="L121A1 Rarden";
 			magazineReloadTime=1.2;
 			magazines[]=
 			{
-				"TWC_30mm_3rnd_AP"
-			};
-		};
-	};
-	class TWC_Rarden_AP: autocannon_30mm
-	{
-		class AP: AP
-		{
-			displayname="L121A1 HE";
-			magazineReloadTime=1.2;
-			magazines[]=
-			{
+				"TWC_30mm_3rnd_AP",
 				"TWC_30mm_3rnd_HE"
 			};
 		};
@@ -175,657 +173,27 @@ class CfgVehicles
 			class Engine;
 			class Movement;
 		};
+		class EventHandlers;
 	};
-	class TWC_warrior: Tank_F
+	class MCV80_Base: Tank_F
 	{
-		scope=2;
-		displayName="FV 510 Warrior";
+		scope=0;
+		faction="Veh_units";
+		displayName="MCV-80 Warrior (BASE)";
 		class Library
 		{
 			libTextDesc="$STR_BAF_CFGVEHICLES_BAF_FV510_D_LIBRARY0";
 		};
-		model="\DG_UKBAF\Vehicles\FV510Warrior\Wood\FV510_W_BAF";
-		picture="\DG_UKBAF\Vehicles\FV510Warrior\Desert\Data\ui\picture_warrior_ca.paa";
-		Icon="\DG_UKBAF\Vehicles\FV510Warrior\Desert\Data\ui\icon_warrior_ca.paa";
+		model="\CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\FV510_BAF";
+		picture="\CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\ui\picture_warrior_ca.paa";
+		Icon="\CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\ui\icon_warrior_ca.paa";
 		mapSize=9.3000002;
-		author="Deltagamer";
-		aggregateReflectors[]=
-		{
-			
-			{
-				"Left",
-				"Right"
-			}
-		};
-		simulation="tankX";
-		enginePower=485;
-		maxOmega=241;
-		peakTorque=2610;
-		torqueCurve[]=
-		{
-			
-			{
-				"(610/2300)",
-				0
-			},
-			
-			{
-				"(1000/2300)",
-				"(1600/2610)"
-			},
-			
-			{
-				"(1400/2300)",
-				"(2610/2610)"
-			},
-			
-			{
-				"(2300/2300)",
-				"(1900/2610)"
-			},
-			
-			{
-				"(4700/2300)",
-				"(0/2610)"
-			}
-		};
-		thrustDelay=0.30000001;
-		clutchStrength=60;
-		fuelCapacity=770;
-		brakeIdleSpeed=1.78;
-		latency=0.1;
-		tankTurnForce=1300000;
-		normalSpeedForwardCoef=0.5;
-		idleRpm=610;
-		redRpm=2300;
-		engineLosses=25;
-		transmissionLosses=15;
-		class TransportMagazines
-		{
-			class _xx_UK3CB_BAF_30Rnd
-			{
-				magazine="UK3CB_BAF_30Rnd";
-				count=8;
-			};
-			class _xx_UK3CB_BAF_30Rnd_T
-			{
-				magazine="UK3CB_BAF_30Rnd_T";
-				count=2;
-			};
-			class _xx_UK3CB_1Rnd_HE_Grenade_shell
-			{
-				magazine="1Rnd_HE_Grenade_shell";
-				count=2;
-			};
-			class _xx_UK3CB_UGL_FlareWhite_F
-			{
-				magazine="UGL_FlareWhite_F";
-				count=2;
-			};
-			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
-			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=2;
-			};
-			class _xx_SmokeShell
-			{
-				magazine="SmokeShell";
-				count=4;
-			};
-			class _xx_Grenade
-			{
-				magazine="CUP_HandGrenade_L109A2_HE";
-				count=2;
-			};
-			class _xx_UK3CB_BAF_20Rnd
-			{
-				magazine="UK3CB_BAF_20Rnd";
-				count=2;
-			};
-			class _xx_UK3CB_BAF_20Rnd_T
-			{
-				magazine="UK3CB_BAF_20Rnd_T";
-				count=1;
-			};
-			class _xx_UK3CB_BAF_200Rnd
-			{
-				magazine="UK3CB_BAF_200Rnd";
-				count=2;
-			};
-			class _xx_UK3CB_BAF_200Rnd_T
-			{
-				magazine="UK3CB_BAF_200Rnd_T";
-				count=1;
-			};
-		};
-		class TransportItems
-		{
-			class _xx_Bandage
-			{
-				name="ACE_fieldDressing";
-				count=5;
-			};
-			class _xx_Morphine
-			{
-				name="ACE_morphine";
-				count=2;
-			};
-		};
-		class TransportWeapons
-		{
-			class _xx_NLAW
-			{
-				Weapon="UK3CB_BAF_NLAW_Launcher";
-				count=1;
-			};
-			class _xx_LAW
-			{
-				Weapon="HAFM_LAW";
-				count=1;
-			};
-		};
-		class complexGearbox
-		{
-			GearboxRatios[]=
-			{
-				"R1",
-				-2.2349999,
-				"N",
-				0,
-				"CD0",
-				"2*(0.75^(-10))",
-				"CD1",
-				"2*(0.75^(-9))",
-				"CD2",
-				"2*(0.75^(-8))",
-				"CD3",
-				"2*(0.75^(-7))",
-				"CD4",
-				"2*(0.75^(-6))",
-				"CD5",
-				"2*(0.75^(-5))",
-				"CD6",
-				"2*(0.75^(-4))",
-				"CD7",
-				"2*(0.75^(-3))",
-				"CD8",
-				"2*(0.75^(-2))",
-				"CD9",
-				"2*(0.75^(-1))",
-				"D1",
-				"2*(0.75^0)",
-				"D2",
-				"2*(0.75^1)",
-				"D3",
-				"2*(0.75^2)",
-				"D4",
-				"2*(0.75^3)"
-			};
-			TransmissionRatios[]=
-			{
-				"High",
-				5
-			};
-			gearBoxMode="auto";
-			moveOffGear=1;
-			driveString="D";
-			neutralString="N";
-			reverseString="R";
-			transmissionDelay=0;
-		};
-		class Wheels
-		{
-			class L2
-			{
-				boneName="wheel_podkoloL1";
-				center="wheel_1_2_axis";
-				boundary="wheel_1_2_bound";
-				damping=75;
-				steering=0;
-				side="left";
-				weight=100;
-				mass=100;
-				MOI=27;
-				latStiffX=25;
-				latStiffY=280;
-				longitudinalStiffnessPerUnitGravity=100000;
-				maxBrakeTorque=10000;
-				sprungMass=2625;
-				springStrength=200000;
-				springDamperRate=24000;
-				dampingRate=1;
-				dampingRateInAir=4864;
-				dampingRateDamaged=10;
-				dampingRateDestroyed=10000;
-				maxDroop=0.18000001;
-				maxCompression=0.18000001;
-				frictionVsSlipGraph[]=
-				{
-					{0,5},
-					{0.5,5},
-					{1,5}
-				};
-			};
-			class L3: L2
-			{
-				boneName="wheel_podkolol2";
-				center="wheel_1_3_axis";
-				boundary="wheel_1_3_bound";
-			};
-			class L4: L2
-			{
-				boneName="wheel_podkolol3";
-				center="wheel_1_4_axis";
-				boundary="wheel_1_4_bound";
-			};
-			class L5: L2
-			{
-				boneName="wheel_podkolol4";
-				center="wheel_1_5_axis";
-				boundary="wheel_1_5_bound";
-			};
-			class L6: L2
-			{
-				boneName="wheel_podkolol5";
-				center="wheel_1_6_axis";
-				boundary="wheel_1_6_bound";
-			};
-			class L7: L2
-			{
-				boneName="wheel_podkolol6";
-				center="wheel_1_7_axis";
-				boundary="wheel_1_7_bound";
-			};
-			class L9: L2
-			{
-				boneName="wheel_podkolol9";
-				center="wheel_1_9_axis";
-				boundary="wheel_1_9_bound";
-				sprungMass=1500;
-				springStrength=37500;
-				springDamperRate=7500;
-				maxDroop=0;
-				maxCompression=0;
-			};
-			class L1: L2
-			{
-				boneName="";
-				center="wheel_1_1_axis";
-				boundary="wheel_1_1_bound";
-				sprungMass=1500;
-				springStrength=37500;
-				springDamperRate=7500;
-				maxDroop=0;
-				maxCompression=0;
-			};
-			class R2: L2
-			{
-				boneName="wheel_podkolop1";
-				center="wheel_2_2_axis";
-				boundary="wheel_2_2_bound";
-				side="right";
-			};
-			class R3: R2
-			{
-				boneName="wheel_podkolop2";
-				center="wheel_2_3_axis";
-				boundary="wheel_2_3_bound";
-			};
-			class R4: R2
-			{
-				boneName="wheel_podkolop3";
-				center="wheel_2_4_axis";
-				boundary="wheel_2_4_bound";
-			};
-			class R5: R2
-			{
-				boneName="wheel_podkolop4";
-				center="wheel_2_5_axis";
-				boundary="wheel_2_5_bound";
-			};
-			class R6: R2
-			{
-				boneName="wheel_podkolop5";
-				center="wheel_2_6_axis";
-				boundary="wheel_2_6_bound";
-			};
-			class R7: R2
-			{
-				boneName="wheel_podkolop6";
-				center="wheel_2_7_axis";
-				boundary="wheel_2_7_bound";
-			};
-			class R9: R2
-			{
-				boneName="wheel_podkolop9";
-				center="wheel_2_9_axis";
-				boundary="wheel_2_9_bound";
-				sprungMass=1500;
-				springStrength=37500;
-				springDamperRate=7500;
-				maxDroop=0;
-				maxCompression=0;
-			};
-			class R1: R2
-			{
-				boneName="";
-				center="wheel_2_1_axis";
-				boundary="wheel_2_1_bound";
-				sprungMass=1500;
-				springStrength=37500;
-				springDamperRate=7500;
-				maxDroop=0;
-				maxCompression=0;
-			};
-		};
-		crew="BAF_Soldier_Crewman_Infantry_L_M_DG1";
-		side=1;
-		faction="Veh_units";
-		vehicleClass="Armored";
-		accuracy=0.25;
-		transportSoldier=7;
-		memoryPointCargoLight="cargo light";
-		typicalCargo[]=
-		{
-			"BAF_Soldier_Crewman_Infantry_L_M_DG1",
-			"BAF_Soldier_Crewman_Infantry_L_M_DG1"
-		};
-		commanderCanSee=31;
-		viewCargoShadow=1;
-		viewCargoShadowDiff=0.050000001;
-		viewCargoShadowAmb=0.5;
-		getInAction="GetInHigh";
-		getOutAction="GetOutHigh";
-		cargoGetInAction[]=
-		{
-			"GetInLow"
-		};
-		cargoGetOutAction[]=
-		{
-			"GetOutLow"
-		};
-		cargoAction[]=
-		{
-			"M113_Cargo03_EP1",
-			"M113_Cargo02_EP1",
-			"M113_Cargo02_EP1",
-			"M113_Cargo02_EP1",
-			"M113_Cargo02_EP1",
-			"M113_Cargo02_EP1",
-			"M113_Cargo02_EP1"
-		};
-		driverAction="Abrams_DriverOut";
-		driverInAction="Abrams_Driver";
-		armor=850;
-		armorStructural=2;
-		damageResistance=0.0054700002;
-		cost=4000000;
-		class HitPoints: HitPoints
-		{
-			class HitHull
-			{
-				armor=0.85000002;
-				material=-1;
-				name="telo";
-				visual="zbytek";
-				passThrough=1;
-			};
-			class HitEngine
-			{
-				armor=0.80000001;
-				material=60;
-				name="motor";
-				visual="motor";
-				passThrough=1;
-			};
-		};
-		animationSourceHatch="";
-		class AnimationSources: AnimationSources
-		{
-			class recoil_source
-			{
-				source="reload";
-				weapon="TWC_Rarden";
-			};
-			class recoil_source2:recoil_source
-			{
-				weapon="TWC_Rarden_AP";
-			};
-		};
-		maxSpeed=75;
-		gearBox[]={-7,0,"+8","+7","+6.7","+4.2"};
-		driverForceOptics=1;
-		driverOpticsModel="DG_UKBAF\Vehicles\FV510Warrior\Desert\Data\driverTV_stryker";
-		memoryPointDriverOptics="driverview";
-		class ViewOptics: ViewOptics
-		{
-			visionMode[]=
-			{
-				"Normal",
-				"NVG"
-			};
-		};
-		class Exhausts
-		{
-			class Exhaust1
-			{
-				position="vyfuk start";
-				direction="vyfuk konec";
-				effect="ExhaustsEffectBig";
-			};
-		};
-		insideSoundCoef=0.89999998;
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				gunBeg="Usti hlavne";
-				gunEnd="Konec hlavne";
-				gunnerAction="Abrams_Gunner";
-				gunnerInAction="Abrams_Gunner";
-				startEngine=0;
-				weapons[]=
-				{
-					"TWC_Rarden",
-					"TWC_Rarden_AP",
-					"TWC_GPMG"
-				};
-				magazines[]=
-				{
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_AP",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"TWC_30mm_3rnd_HE",
-					"1000Rnd_762x51_Belt_Yellow",
-					"1000Rnd_762x51_Belt_Yellow"
-				};
-				soundServo[]=
-				{
-					"A3\sounds_f\dummysound",
-					0.031622775,
-					1,
-					30
-				};
-				forceHideGunner=1;
-				turretInfoType="RscWeaponRangeZeroing";
-				discreteDistance[]={100,200,300,400,500,600,700,800,1000,1200,1500,1800,2100,2400};
-				discreteDistanceInitIndex=5;
-				memoryPointGunnerOptics="gunnerview";
-				minElev=-5;
-				maxElev="+20";
-				initElev=10;
-				gunnerOutOpticsEffect[]={};
-				gunnerOpticsEffect[]=
-				{
-					"TankGunnerOptics2",
-					"OpticsBlur1",
-					"OpticsCHAbera1"
-				};
-				gunnerForceOptics=1;
-				class OpticsIn
-				{
-					class Wide
-					{
-						initAngleX=0;
-						minAngleX=-30;
-						maxAngleX="+30";
-						initAngleY=0;
-						minAngleY=-100;
-						maxAngleY="+100";
-						initFov=0.2;
-						minFov=0.2;
-						maxFov=0.2;
-						visionMode[]=
-						{
-							"Normal",
-							"NVG",
-							"Ti"
-						};
-						thermalMode[]={2};
-						gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Gunner_MTB_02_w_F.p3d";
-						gunnerOpticsEffect[]={};
-					};
-					class Narrow: Wide
-					{
-						gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Gunner_MTB_02_n_F.p3d";
-						initFov=0.039000001;
-						minFov=0.039000001;
-						maxFov=0.039000001;
-					};
-				};
-				class Turrets: Turrets
-				{
-					class CommanderOptics: CommanderOptics
-					{
-						body="obsTurret";
-						gun="obsGun";
-						animationSourceBody="obsTurret";
-						animationSourceGun="obsGun";
-						stabilizedInAxes=3;
-						memoryPointGunnerOutOptics="commander_weapon_view";
-						memoryPointGunnerOptics="commanderview";
-						minElev=-25;
-						maxElev="+60";
-						initElev=0;
-						minTurn=-360;
-						maxTurn="+360";
-						initTurn=0;
-						weapons[]=
-						{
-							"SmokeLauncher"
-						};
-						magazines[]=
-						{
-							"SmokeLauncherMag",
-							"SmokeLauncherMag"
-						};
-						soundServo[]=
-						{
-							"A3\sounds_f\dummysound",
-							-1,
-							"db-40",
-							1,
-							30
-						};
-						outGunnerMayFire=1;
-						inGunnerMayFire=1;
-						gunnerAction="Abrams_CommanderOut";
-						gunnerInAction="Abrams_Commander";
-						gunnerGetInAction="GetInHigh";
-						gunnerGetOutAction="GetOutHigh";
-						turretInfoType="RscWeaponRangeFinder";
-						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Commander_02_F";
-						gunnerOpticsEffect[]={};
-						class ViewOptics
-						{
-							initAngleX=0;
-							minAngleX=-30;
-							maxAngleX="+30";
-							initAngleY=0;
-							minAngleY=-100;
-							maxAngleY="+100";
-							initFov=0.155;
-							minFov=0.034000002;
-							maxFov=0.155;
-							visionMode[]=
-							{
-								"Normal",
-								"NVG",
-								"Ti"
-							};
-							thermalMode[]={0,1};
-						};
-						startEngine=0;
-						gunnerHasFlares=1;
-					};
-				};
-			};
-		};
-		threat[]={1,1,0.30000001};
-		class Damage
-		{
-			tex[]={};
-			mat[]=
-			{
-				"DG_UKBAF\Vehicles\FV510Warrior\Desert\Data\Warrior_ext.rvmat",
-				"DG_UKBAF\Vehicles\FV510Warrior\Desert\Data\Warrior_ext_damage.rvmat",
-				"DG_UKBAF\Vehicles\FV510Warrior\Desert\Data\Warrior_ext_destruct.rvmat",
-				"DG_UKBAF\Vehicles\FV510Warrior\Desert\Data\Warrior_track.rvmat",
-				"DG_UKBAF\Vehicles\FV510Warrior\Desert\Data\m1_abrams_track_metal_damage.rvmat",
-				"DG_UKBAF\Vehicles\FV510Warrior\Desert\Data\m1_abrams_track_metal_destruct.rvmat"
-			};
-		};
-		smokeLauncherGrenadeCount=6;
-		smokeLauncherVelocity=14;
-		smokeLauncherOnTurret=1;
-		smokeLauncherAngle=120;
-		transportMaxWeapons=22;
-		transportMaxMagazines=500;
+		minElev=0;
+		maxElev=40;
+		initElev=0;
+		minTurn=-90;
+		maxTurn=90;
+		initTurn=0;
 		attenuationEffectType="TankAttenuation";
 		soundGetIn[]=
 		{
@@ -1585,11 +953,732 @@ class CfgVehicles
 				volume="engineOn*(1-camPos)*grass*((((-speed*3.6) max speed*3.6)/ 55) factor[(((-39) max 39)/ 55),(((-42) max 42)/ 55)])";
 			};
 		};
+		simulation="tankX";
+		enginePower=485;
+		maxOmega=241;
+		peakTorque=2610;
+		torqueCurve[]=
+		{
+			
+			{
+				"(610/2300)",
+				0
+			},
+			
+			{
+				"(1000/2300)",
+				"(1600/2610)"
+			},
+			
+			{
+				"(1400/2300)",
+				"(2610/2610)"
+			},
+			
+			{
+				"(2300/2300)",
+				"(1900/2610)"
+			},
+			
+			{
+				"(4700/2300)",
+				"(0/2610)"
+			}
+		};
+		thrustDelay=0.30000001;
+		clutchStrength=60;
+		fuelCapacity=770;
+		brakeIdleSpeed=1.78;
+		latency=0.1;
+		tankTurnForce=800000;
+		normalSpeedForwardCoef=0.5;
+		idleRpm=610;
+		redRpm=2300;
+		engineLosses=25;
+		transmissionLosses=15;
+		class complexGearbox
+		{
+			GearboxRatios[]=
+			{
+				"R1",
+				-2.2349999,
+				"N",
+				0,
+				"CD0",
+				"2*(0.75^(-10))",
+				"CD1",
+				"2*(0.75^(-9))",
+				"CD2",
+				"2*(0.75^(-8))",
+				"CD3",
+				"2*(0.75^(-7))",
+				"CD4",
+				"2*(0.75^(-6))",
+				"CD5",
+				"2*(0.75^(-5))",
+				"CD6",
+				"2*(0.75^(-4))",
+				"CD7",
+				"2*(0.75^(-3))",
+				"CD8",
+				"2*(0.75^(-2))",
+				"CD9",
+				"2*(0.75^(-1))",
+				"D1",
+				"2*(0.75^0)",
+				"D2",
+				"2*(0.75^1)",
+				"D3",
+				"2*(0.75^2)",
+				"D4",
+				"2*(0.75^3)"
+			};
+			TransmissionRatios[]=
+			{
+				"High",
+				5
+			};
+			gearBoxMode="auto";
+			moveOffGear=1;
+			driveString="D";
+			neutralString="N";
+			reverseString="R";
+			transmissionDelay=0;
+		};
+		class Wheels
+		{
+			class L2
+			{
+				boneName="wheel_podkoloL1";
+				center="wheel_1_2_axis";
+				boundary="wheel_1_2_bound";
+				damping=75;
+				steering=0;
+				side="left";
+				weight=100;
+				mass=100;
+				MOI=27;
+				latStiffX=25;
+				latStiffY=280;
+				longitudinalStiffnessPerUnitGravity=100000;
+				maxBrakeTorque=10000;
+				sprungMass=2625;
+				springStrength=200000;
+				springDamperRate=24000;
+				dampingRate=1;
+				dampingRateInAir=3760;
+				dampingRateDamaged=10;
+				dampingRateDestroyed=10000;
+				maxDroop=0.18000001;
+				maxCompression=0.18000001;
+				frictionVsSlipGraph[]=
+				{
+					{0,5},
+					{0.5,5},
+					{1,5}
+				};
+			};
+			class L3: L2
+			{
+				boneName="wheel_podkolol2";
+				center="wheel_1_3_axis";
+				boundary="wheel_1_3_bound";
+			};
+			class L4: L2
+			{
+				boneName="wheel_podkolol3";
+				center="wheel_1_4_axis";
+				boundary="wheel_1_4_bound";
+			};
+			class L5: L2
+			{
+				boneName="wheel_podkolol4";
+				center="wheel_1_5_axis";
+				boundary="wheel_1_5_bound";
+			};
+			class L6: L2
+			{
+				boneName="wheel_podkolol5";
+				center="wheel_1_6_axis";
+				boundary="wheel_1_6_bound";
+			};
+			class L7: L2
+			{
+				boneName="wheel_podkolol6";
+				center="wheel_1_7_axis";
+				boundary="wheel_1_7_bound";
+			};
+			class L9: L2
+			{
+				boneName="wheel_podkolol9";
+				center="wheel_1_9_axis";
+				boundary="wheel_1_9_bound";
+				sprungMass=1500;
+				springStrength=37500;
+				springDamperRate=7500;
+				maxDroop=0;
+				maxCompression=0;
+			};
+			class L1: L2
+			{
+				boneName="";
+				center="wheel_1_1_axis";
+				boundary="wheel_1_1_bound";
+				sprungMass=1500;
+				springStrength=37500;
+				springDamperRate=7500;
+				maxDroop=0;
+				maxCompression=0;
+			};
+			class R2: L2
+			{
+				boneName="wheel_podkolop1";
+				center="wheel_2_2_axis";
+				boundary="wheel_2_2_bound";
+				side="right";
+			};
+			class R3: R2
+			{
+				boneName="wheel_podkolop2";
+				center="wheel_2_3_axis";
+				boundary="wheel_2_3_bound";
+			};
+			class R4: R2
+			{
+				boneName="wheel_podkolop3";
+				center="wheel_2_4_axis";
+				boundary="wheel_2_4_bound";
+			};
+			class R5: R2
+			{
+				boneName="wheel_podkolop4";
+				center="wheel_2_5_axis";
+				boundary="wheel_2_5_bound";
+			};
+			class R6: R2
+			{
+				boneName="wheel_podkolop5";
+				center="wheel_2_6_axis";
+				boundary="wheel_2_6_bound";
+			};
+			class R7: R2
+			{
+				boneName="wheel_podkolop6";
+				center="wheel_2_7_axis";
+				boundary="wheel_2_7_bound";
+			};
+			class R9: R2
+			{
+				boneName="wheel_podkolop9";
+				center="wheel_2_9_axis";
+				boundary="wheel_2_9_bound";
+				sprungMass=1500;
+				springStrength=37500;
+				springDamperRate=7500;
+				maxDroop=0;
+				maxCompression=0;
+			};
+			class R1: R2
+			{
+				boneName="";
+				center="wheel_2_1_axis";
+				boundary="wheel_2_1_bound";
+				sprungMass=1500;
+				springStrength=37500;
+				springDamperRate=7500;
+				maxDroop=0;
+				maxCompression=0;
+			};
+		};
+		author="Deltagamer";
+		aggregateReflectors[]=
+		{
+			
+			{
+				"Left",
+				"Right"
+			}
+		};
+		crew="B_Soldier_F";
+		side=1;
+		vehicleClass="Armored";
+		editorSubcategory="EdSubcat_APCs";
+		destrType="DestructDefault";
+		accuracy=0.25;
+		transportSoldier=7;
+		memoryPointCargoLight="cargo light";
+		typicalCargo[]=
+		{
+			"B_Soldier_F",
+			"B_Soldier_F"
+		};
+		commanderCanSee=31;
+		viewCargoShadow=1;
+		viewCargoShadowDiff=0.050000001;
+		viewCargoShadowAmb=0.5;
+		getInAction="GetInHigh";
+		getOutAction="GetOutHigh";
+		cargoGetInAction[]=
+		{
+			"GetInLow"
+		};
+		cargoGetOutAction[]=
+		{
+			"GetOutLow"
+		};
+		cargoAction[]=
+		{
+			"CUP_M113_Cargo03_EP1",
+			"CUP_M113_Cargo02_EP1",
+			"CUP_M113_Cargo02_EP1",
+			"CUP_M113_Cargo02_EP1",
+			"CUP_M113_Cargo02_EP1",
+			"CUP_M113_Cargo02_EP1",
+			"CUP_M113_Cargo02_EP1"
+		};
+		driverAction="CUP_M1_DriverOut";
+		driverInAction="CUP_M1_Driver";
+		armor=350;
+		armorStructural=2;
+		damageResistance=0.0054700002;
+		cost=4000000;
+		class HitPoints: HitPoints
+		{
+			class HitHull
+			{
+				armor=0.85000002;
+				material=-1;
+				name="telo";
+				visual="zbytek";
+				passThrough=1;
+			};
+			class HitEngine
+			{
+				armor=0.80000001;
+				material=60;
+				name="motor";
+				visual="motor";
+				passThrough=1;
+			};
+		};
+		class CargoLight
+		{
+			ambient[]={0.60000002,0,0.15000001,1};
+			brightness=0.0070000002;
+			color[]={0,0,0,0};
+		};
+		class Reflectors
+		{
+			class Left
+			{
+				color[]={1900,1800,1700};
+				ambient[]={5,5,5};
+				position="L svetlo";
+				direction="Konec L svetla";
+				hitpoint="L svetlo";
+				selection="L svetlo";
+				size=1;
+				innerAngle=100;
+				outerAngle=179;
+				coneFadeCoef=10;
+				intensity=1;
+				useFlare=0;
+				dayLight=0;
+				flareSize=1;
+				class Attenuation
+				{
+					start=1;
+					constant=0;
+					linear=0;
+					quadratic=0.25;
+					hardLimitStart=30;
+					hardLimitEnd=60;
+				};
+			};
+			class Right: Left
+			{
+				position="P svetlo";
+				direction="Konec P svetla";
+				hitpoint="P svetlo";
+				selection="P svetlo";
+			};
+			class Right2: Right
+			{
+				position="P svetlo";
+				useFlare=1;
+			};
+			class Left2: Left
+			{
+				position="L svetlo";
+				useFlare=1;
+			};
+		};
+		animationSourceHatch="";
+		maxSpeed=75;
+		gearBox[]={-7,0,8,7,6.6999998,4.1999998};
+		driverForceOptics=1;
+		driverOpticsModel="CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\driverTV_stryker";
+		memoryPointDriverOptics="driverview";
+		class ViewOptics: ViewOptics
+		{
+			visionMode[]=
+			{
+				"Normal",
+				"NVG"
+			};
+		};
+		memoryPointsGetInDriver="pos driver";
+		memoryPointsGetInDriverDir="pos driver dir";
+		class Exhausts
+		{
+			class Exhaust1
+			{
+				position="vyfuk start";
+				direction="vyfuk konec";
+				effect="ExhaustsEffectBig";
+			};
+		};
+		insideSoundCoef=0.89999998;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				gunBeg="Usti hlavne";
+				gunEnd="Konec hlavne";
+				gunnerAction="gunner_apctracked3_out";
+				gunnerInAction="gunner_apctracked3_in";
+				animationSourceHatch="hatchGunner";
+				weapons[]=
+				{
+					"TWC_Rarden",
+					"TWC_GPMG"
+				};
+				magazines[]=
+				{
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_AP",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"TWC_30mm_3rnd_HE",
+					"CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"
+				};
+				soundServo[]=
+				{
+					"A3\sounds_f\dummysound",
+					0.031622775,
+					1,
+					30
+				};
+				forceHideGunner=0;
+				turretInfoType="RscWeaponRangeZeroing";
+				discreteDistance[]={100,200,300,400,500,600,700,800,1000,1200,1500,1800,2100,2400};
+				discreteDistanceInitIndex=5;
+				memoryPointGunnerOptics="gunnerview";
+				minElev=-5;
+				maxElev=20;
+				initElev=10;
+				gunnerOutOpticsEffect[]={};
+				gunnerOpticsEffect[]=
+				{
+					"TankGunnerOptics2",
+					"OpticsBlur1",
+					"OpticsCHAbera1"
+				};
+				gunnerForceOptics=1;
+				memoryPointsGetInGunner="pos gunner";
+				memoryPointsGetInGunnerDir="pos gunner dir";
+				class OpticsIn
+				{
+					class Wide
+					{
+						initAngleX=0;
+						minAngleX=-30;
+						maxAngleX=30;
+						initAngleY=0;
+						minAngleY=-100;
+						maxAngleY=100;
+						initFov=0.2;
+						minFov=0.2;
+						maxFov=0.2;
+						visionMode[]=
+						{
+							"Normal",
+							"NVG",
+							"Ti"
+						};
+						thermalMode[]={2};
+						gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Gunner_MTB_02_w_F.p3d";
+						gunnerOpticsEffect[]={};
+					};
+					class Narrow: Wide
+					{
+						gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Gunner_MTB_02_n_F.p3d";
+						initFov=0.039000001;
+						minFov=0.039000001;
+						maxFov=0.039000001;
+					};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						body="obsTurret";
+						gun="obsGun";
+						animationSourceBody="obsTurret";
+						animationSourceGun="obsGun";
+						stabilizedInAxes=3;
+						memoryPointGunnerOutOptics="commander_weapon_view";
+						memoryPointGunnerOptics="commanderview";
+						minElev=-25;
+						maxElev=60;
+						initElev=0;
+						minTurn=-360;
+						maxTurn=360;
+						initTurn=0;
+						weapons[]=
+						{
+							"SmokeLauncher"
+						};
+						magazines[]=
+						{
+							"SmokeLauncherMag",
+							"SmokeLauncherMag"
+						};
+						soundServo[]=
+						{
+							"A3\sounds_f\dummysound",
+							-1,
+							"db-40",
+							1,
+							30
+						};
+						outGunnerMayFire=1;
+						inGunnerMayFire=1;
+						animationSourceHatch="hatchCommander";
+						isPersonTurret=1;
+						personTurretAction="vehicle_turnout_1";
+						gunnerAction="commander_apctracked3_out";
+						gunnerInAction="commander_apctracked3_in";
+						minOutElev=-15;
+						maxOutElev=25;
+						initOutElev=0;
+						minOutTurn=-95;
+						maxOutTurn=90;
+						initOutTurn=0;
+						gunnerGetInAction="GetInHigh";
+						gunnerGetOutAction="GetOutHigh";
+						turretInfoType="RscWeaponRangeFinder";
+						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Commander_02_F";
+						gunnerOpticsEffect[]={};
+						memoryPointsGetInGunner="pos commander";
+						memoryPointsGetInGunnerDir="pos commander dir";
+						class ViewOptics
+						{
+							initAngleX=0;
+							minAngleX=-30;
+							maxAngleX=30;
+							initAngleY=0;
+							minAngleY=-100;
+							maxAngleY=100;
+							initFov=0.155;
+							minFov=0.034000002;
+							maxFov=0.155;
+							visionMode[]=
+							{
+								"Normal",
+								"NVG",
+								"Ti"
+							};
+							thermalMode[]={0,1};
+						};
+						startEngine=0;
+						gunnerHasFlares=1;
+					};
+				};
+			};
+		};
+		threat[]={1,1,0.30000001};
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\Warrior_ext.rvmat",
+				"CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\Warrior_ext_damage.rvmat",
+				"CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\Warrior_ext_destruct.rvmat",
+				"CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\Warrior_track.rvmat",
+				"CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\m1_abrams_track_metal_damage.rvmat",
+				"CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\m1_abrams_track_metal_destruct.rvmat"
+			};
+		};
+		smokeLauncherGrenadeCount=6;
+		smokeLauncherVelocity=14;
+		smokeLauncherOnTurret=1;
+		smokeLauncherAngle=120;
+		transportMaxWeapons=22;
+		transportMaxMagazines=500;
 	};
-	class TWC_warrior_D: TWC_warrior
+	class TWC_Warrior_D: MCV80_Base
 	{
 		scope=2;
-		displayName="FV 510 Warrior Desert";
-		model="\DG_UKBAF\Vehicles\FV510Warrior\Desert\FV510_BAF";
+		displayName="FV 510 Warrior (D)";
+		model="\CUP\TrackedVehicles\CUP_TrackedVehicles_MCV80\MCV80_BAF";
+		HiddenSelections[]=
+		{
+			"camo1",
+			"camo01",
+			"camo02"
+		};
+		HiddenSelectionsTextures[]=
+		{
+			"CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\warrior_ext_co.paa",
+			"CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\warrior_ext_co.paa",
+			"CUP\TrackedVehicles\CUP_TrackedVehicles_MCV80\Data\fv510_1_d_co.paa"
+		};
+		class AnimationSources: AnimationSources
+		{
+			class recoil_source
+			{
+				source="reload";
+				weapon="TWC_Rarden";
+			};
+			class muzzle_rot_ctws
+			{
+				source="ammorandom";
+				weapon="TWC_Rarden";
+			};
+			class muzzle_hide_ctws
+			{
+				source="reload";
+				weapon="TWC_Rarden";
+			};
+			class muzzle_rot_coax
+			{
+				source="ammorandom";
+				weapon="TWC_L94A1_Coax";
+			};
+			class muzzle_hide_coax
+			{
+				source="reload";
+				weapon="TWC_L94A1_Coax";
+			};
+			class HideSlat
+			{
+				source="user";
+				animPeriod=0;
+				initPhase=1;
+			};
+			class HideProxy_Desert
+			{
+				source="user";
+				animPeriod=0;
+				initPhase=1;
+			};
+			class HideProxy_Woodland
+			{
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+			};
+		};
+		armor=400;
+	};
+	class TWC_Warrior_W: TWC_Warrior_D
+	{
+		scope=2;
+		displayName="FV 510 Warrior (W)";
+		model="\CUP\TrackedVehicles\CUP_TrackedVehicles_MCV80\MCV80_BAF";
+		HiddenSelections[]=
+		{
+			"camo1",
+			"camo01",
+			"camo02"
+		};
+		HiddenSelectionsTextures[]=
+		{
+			"CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\warrior_ext_w_co.paa",
+			"CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\warrior_ext_w_co.paa",
+			"CUP\TrackedVehicles\CUP_TrackedVehicles_MCV80\Data\fv510_1_co.paa"
+		};
+		class AnimationSources: AnimationSources
+		{
+			class HideSlat
+			{
+				source="user";
+				animPeriod=0;
+				initPhase=1;
+			};
+			class HideProxy_Desert
+			{
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+			};
+			class HideProxy_Woodland
+			{
+				source="user";
+				animPeriod=0;
+				initPhase=1;
+			};
+		};
+		armor=400;
 	};
 };

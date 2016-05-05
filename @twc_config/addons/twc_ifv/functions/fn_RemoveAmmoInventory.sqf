@@ -1,6 +1,6 @@
 params ["_person","_Container","_item"];
 
-if (_container iskindof "TWC_Warrior") then {
+if (_container iskindof "TWC_Warrior_W" || _container iskindof "TWC_Warrior_D"  ) then {
 	if (_item == "TWC_30mm_HE_item") then{
 		 _vehitems = itemcargo _Container;
 		clearitemcargoglobal _container;

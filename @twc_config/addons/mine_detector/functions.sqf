@@ -1,5 +1,5 @@
 MDET_fnc_canDetect = {
-	(primaryweapon player == "TWC_Vallon") && (player == vehicle player)
+	(primaryweapon player == "TWC_Vallon") && (player == vehicle player) && isClass (configfile >> "CfgWeapons" >> "TWC_Vallon")
 };
 
 MDET_fnc_switchState = {

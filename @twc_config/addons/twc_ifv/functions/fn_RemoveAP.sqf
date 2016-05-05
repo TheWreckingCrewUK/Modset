@@ -1,5 +1,6 @@
-_nObject = nearestObject [player, "TWC_warrior"];
-_allmags = _nObject magazinesTurret [0];
+
+Params ["_Warrior"];
+_allmags = _Warrior magazinesTurret [0];
 _MagsWarrior = 0;
 {
 if (_x == "TWC_30mm_3rnd_AP") then {_MagsWarrior = _MagsWarrior + 1;};
@@ -8,7 +9,7 @@ if (_x == "TWC_30mm_3rnd_AP") then {_MagsWarrior = _MagsWarrior + 1;};
 if (_MagsWarrior > 0) then {
 	if (player canadd "TWC_30mm_AP_item") then{
 		player additem "TWC_30mm_AP_item";
-		_nObject removeMagazine "TWC_30mm_3rnd_AP";
+		_Warrior removeMagazine "TWC_30mm_3rnd_AP";
 	}else{
 		Systemchat "Not enough inventory space to remove Magazine.";
 	};

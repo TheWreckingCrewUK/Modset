@@ -6,7 +6,7 @@ TWC_fnc_knockOnTank = {
 	
 	[[_tank],"fn_bridge_knockedOn"] call BIS_fnc_MP;
 	
-	_tank say3d "TWC_sound_knockMetal";
+	[_tank, "TWC_sound_knockMetal"] call CBA_fnc_globalSay3d;
 	
 };
 
