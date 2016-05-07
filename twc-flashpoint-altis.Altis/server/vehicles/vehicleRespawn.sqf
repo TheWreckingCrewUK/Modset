@@ -79,7 +79,6 @@ _rounds = 0;
 
 if (_delay < 0) then {_delay = 0};
 if (_deserted < 0) then {_deserted = 0};
-if (_respawns <= 0) then {_respawns = 0;};
 if (_respawns < 0) then {_noend = true;};
 if (_respawns >= 0) then {_noend = false};
 

@@ -4,10 +4,12 @@ _marker setMarkerColor "colorYellow";
 [_marker] call BIS_fnc_taskSetCurrent;
 
 if(_marker == "commanderBase")then{
-	commanderBaseRespawn call BIS_fnc_removeRespawnPosition;
-	publicVariable "commanderBaseRespawn";
+	
 };
 
+if(_marker == "airbase2") then{
+	
+};
 
 _trg2 = createTrigger ["EmptyDetector", getMarkerPos _marker];
 _trg2 setTriggerArea [400, 400, 0, false];

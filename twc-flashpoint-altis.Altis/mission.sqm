@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=129;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1506;
+		nextID=1507;
 	};
 	class MarkerIDProvider
 	{
-		nextID=31;
+		nextID=32;
 	};
 	class Camera
 	{
-		pos[]={8427.1777,119.72919,25101.508};
-		dir[]={0.062042281,-0.74235654,0.66714489};
-		up[]={0.068740055,0.6700055,0.73916602};
-		aside[]={0.99571514,-2.2686436e-008,-0.092597969};
+		pos[]={26528.863,6.9062681,26237.719};
+		dir[]={-0.042911783,-0.23400962,0.97129673};
+		up[]={-0.010328593,0.97223032,0.23378345};
+		aside[]={0.9990319,1.4930265e-008,0.04413655};
 	};
 };
 binarizationWanted=0;
@@ -125,7 +125,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=413;
+		items=414;
 		class Item0
 		{
 			dataType="Logic";
@@ -13815,7 +13815,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26520.658,1.2446525,26225.871};
+				position[]={26520.66,1.2444541,26225.871};
 				angles[]={0,3.1659923,0};
 			};
 			side="Empty";
@@ -13826,7 +13826,7 @@ class Mission
 			};
 			id=1239;
 			type="B_Boat_Transport_01_F";
-			atlOffset=1.6056588;
+			atlOffset=1.6054604;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13945,6 +13945,7 @@ class Mission
 			class Attributes
 			{
 				init="this addAction [ ""To Normal Spawn"", {player setPos (getMarkerPos ""airbase2""); } ]; this addAction [ ""To Boat Spawn"", {player setPos (getMarkerPos ""boatSpawn""); } ];";
+				name="singlePlayerFlag";
 			};
 			id=1244;
 			type="Flag_NATO_F";
@@ -15182,6 +15183,15 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item413
+		{
+			dataType="Marker";
+			position[]={11762.029,-156.95691,24621.576};
+			name="respawn_West";
+			type="Empty";
+			id=1506;
+			atlOffset=1.5258789e-005;
 		};
 	};
 };

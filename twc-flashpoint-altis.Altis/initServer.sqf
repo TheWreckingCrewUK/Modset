@@ -14,6 +14,3 @@
 [West,["radar1"],["","Radar Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
 [West,["radar2"],["","Radar Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
 [West,["support1"],["","Mortar Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
-
-boatRespawn = [west, "boatSpawn"] call BIS_fnc_addRespawnPosition;
-publicVariable "boatRespawn";

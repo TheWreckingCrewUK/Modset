@@ -16,9 +16,7 @@ if (_marker == "airbase2")then {
 	
 	if(getMarkerColor "commanderBase" == "colorEast") then{
 		RussianCheckTrigger setPos (getMarkerPos "crateBoat");
-		airbase2Respawn call BIS_fnc_removeRespawnPosition;
-		boatRespawn = [west, "boatSpawn"] call BIS_fnc_addRespawnPosition;
-		publicVariable "boatRespawn";
+		["respawn_West", (getMarkerPos "boatSpawn")] remoteExec ["setMarkerPos", 0, "respawnMarker"]; 
 	
 		deleteVehicle jetSpawnPad;
 		deleteVehicle jetSpawner;
@@ -27,9 +25,11 @@ if (_marker == "airbase2")then {
 	
 		deleteVehicle radioSign;
 		deleteVehicle radioPicture;
-		"crate" setMarkerpos (getMarkerPos "crateBoat");
-		[{mainAmmoBox setPos (getPos player);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
-		mainAmmoBox setPos (getPos mainAmmoBox vectorAdd [0,0,180]);
+		
+		cratePos = crateBoatPos;
+		publicVariable "cratePos";
+		[mainAmmoBox, cratePos] remoteExec ["setPos", 0];
+		
 	}else{
 	
 	};
@@ -41,12 +41,12 @@ if(_marker == "commanderBase") then{
 	"commanderBase" setMarkerAlpha 0;
 	
 	if(getMarkerColor "airbase2" == "colorWest") then{
-	RussianCheckTrigger setPos (getMarkerPos "airbase2");
-		airbase2Respawn = [west, "airbase"] call BIS_fnc_addRespawnPosition;
-		publicVariable "airbase2Respawn";
+		RussianCheckTrigger setPos (getMarkerPos "airbase2");
+		["respawn_West", (getMarkerPos "airbase2")] remoteExec ["setMarkerPos", 0, "respawnMarker"]; 
 		
-		"crate" setMarkerpos (getMarkerPos "crateDefault");
-		[{mainAmmoBox setPos (getPos player);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
+		cratePos = getMarkerPos "crateDefault"; 
+		publicVariable "cratePos";
+		[mainAmmoBox, cratePos] remoteExec ["setPos", 0];
 		
 		deleteVehicle jetSpawnPad;
 		deleteVehicle jetSpawner;	
@@ -70,17 +70,15 @@ if(_marker == "commanderBase") then{
 		
 	}else{
 		RussianCheckTrigger setPos (getMarkerPos "crateBoat");
-		boatRespawn = [west, "boatSpawn"] call BIS_fnc_addRespawnPosition;
-		publicVariable "boatRespawn";
+		["respawn_West", (getMarkerPos "boatSpawn")] remoteExec ["setMarkerPos", 0, "respawnMarker"]; 
 		
 		deleteVehicle jetSpawnPad;
 		deleteVehicle jetSpawner;		
 		deleteVehicle armourSpawnPad;
 		deleteVehicle armourSpawner;
 		
-		"crate" setMarkerpos (getMarkerPos "crateBoat");
-		[{mainAmmoBox setPos (getPos player);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
-		mainAmmoBox setPos (getPos mainAmmoBox vectorAdd [0,0,182]);
+		{cratePos = crateboatPos; publicVariable "cratePos"} remoteExec ["bis_fnc_spawn", 0, "crateLocation"];
+		[]spawn{sleep 10;[mainAmmoBox, cratePos] remoteExec ["setPos", 0];};
 	};
 	
 };

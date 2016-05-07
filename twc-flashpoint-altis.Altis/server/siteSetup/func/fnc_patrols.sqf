@@ -11,3 +11,5 @@ if (_type == "Infantry") then {
 if (_type == "Motorized") then {
 	[] call twc_redforMotorizedPatrol;
 };
+patrolCounter = 0;
+publicVariable "patrolCounter";

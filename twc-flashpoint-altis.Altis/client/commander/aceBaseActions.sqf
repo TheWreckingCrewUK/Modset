@@ -1,6 +1,6 @@
 TWC_fnc_createBaseBoat = {
 	if (isNil "baseLifeBoat") then{
-		if ((player distance2D (getMarkerPos "crateBoat") < 200) || (player distance2D (getMarkerPos "commanderBase") < 200)) then{
+		if ((player distance2D (getMarkerPos "crateBoat") < 200) || (player distance2D (getMarkerPos "commanderBase") < 200) || (player distance2D (getMarkerPos "airbase2") < 200)) then{
 			baseLifeBoat = "CUP_B_RHIB_USMC" createVehicle (position player);
 			baseLifeBoat disableCollisionWith commander1;
 			publicVariable "baseLifeBoat";
@@ -11,10 +11,10 @@ TWC_fnc_createBaseBoat = {
 			hint "You need to be on the LHD or near Commander Base to spawn the Commander Boat";
 		};
 	}else{
-		if ((player distance2D baseLifeBoat) < 200 || player distance2D (getMarkerPos "crateBoat") < 200 || player distance2D (getMarkerPos "commanderBase")) then{
+		if ((player distance2D baseLifeBoat) < 200 || player distance2D (getMarkerPos "crateBoat") < 200 || player distance2D (getMarkerPos "commanderBase") < 200 || (player distance2D (getMarkerPos "airbase2") < 200)) then{
 			deleteVehicle baseLifeBoat;
 			publicVariable "baseLifeBoat";
-			baseLifeBoat = "B_Lifeboat" createVehicle (position player);
+			baseLifeBoat = "CUP_B_RHIB_USMC" createVehicle (position player);
 			baseLifeBoat disableCollisionWith commander1;
 			publicVariable "baseLifeBoat";
 			baseLifeBoat setPos (getPos player);
@@ -29,6 +29,10 @@ TWC_fnc_createBaseBoat = {
 TWC_fnc_createLandSpawnPad = {
 	if (!isNil "baseLifeBoat") then{
 		if (player distance2D baseLifeBoat < 200) then{
+			if(!isNil "jetSpawnPad") then {
+				deleteVehicle jetSpawnPad;
+				deleteVehicle jetSpawner;
+			};
 			jetSpawnPad = "Land_HelipadSquare_F" createVehicle Position player;
 			publicVariable "jetSpawnPad";
 			jetSpawnPad attachTo [player];
@@ -43,28 +47,17 @@ TWC_fnc_createLandSpawnPad = {
 			hint "You need to be withing 200 Meters of the commander boat to make the base"
 		};
 	}else{
-		if (player distance2D baseLifeBoat < 200) then{
-			deleteVehicle jetSpawnPad;
-			deleteVehicle jetSpawner;
-			jetSpawnPad = "Land_HelipadSquare_F" createVehicle Position player;
-			publicVariable "jetSpawnPad";
-			jetSpawnPad attachTo [player];
-			_action = player addAction [ "Place Object", {{detach _x}forEach 	attachedObjects player; removeAllActions player; } ];
-			jetSpawner = "Land_infoStand_V1_F" createVehicle position player;
-			_dir = getDir player;
-			_dir = _dir + 180;
-			jetSpawner setDir _dir;
-			jetSpawner attachTo [jetSpawnPad,[5.5,-5.5,1]];
-			publicVariable "jetSpawner";
-		}else{
-			hint "You are not close enough to the boat to make a base";
-		};
+		hint "You need to build the Command Base First";
 	};
 };
 
 TWC_fnc_createArmourSpawnPad = {
 	if (!isNil "baseLifeBoat") then{
 		if (player distance2D baseLifeBoat < 200) then{
+			if(!isNil "armourSpawnPad") then {
+				deleteVehicle armourSpawnPad;
+				deleteVehicle armourSpawner;
+			};
 			armourSpawnPad = "Land_HelipadSquare_F" createVehicle Position player;
 			publicVariable "armourSpawnPad";
 			armourSpawnPad attachTo [player];
@@ -79,30 +72,17 @@ TWC_fnc_createArmourSpawnPad = {
 			hint "You are not close enough to the boat to make a base";
 		};
 	}else{
-		if (player distance2D baseLifeBoat < 200) then{
-			deleteVehicle armourSpawnPad;
-			deleteVehicle armourSpawner;
-			armourSpawnPad = "Land_HelipadSquare_F" createVehicle Position player;
-			publicVariable "armourSpawnPad";
-			armourSpawnPad attachTo [player];
-			player addAction [ "Place Object", {{detach _x}forEach attachedObjects player; removeAllActions player; } ];
-			armourSpawner = "Land_infoStand_V2_F" createVehicle position player;
-			_dir = getDir player;
-			_dir = _dir + 180;
-			armourSpawner setDir _dir;
-			armourSpawner attachTo [armourSpawnPad,[5.5,-5.5,1]];
-			publicVariable "armourSpawner";
-		}else{
-			hint "You are not close enough to the boat to make a base";
-		};
+		
+		hint "You must Make the Command Boat First";
 	};
 };
 
 TWC_fnc_moveAmmoBox = {
 	if(!isNil "baseLifeBoat") then{
 		if (player distance2D baseLifeBoat < 200) then{
-			"crate" setMarkerpos (getPos player);
-			[{mainAmmoBox setPos (getPos player);},"BIS_fnc_spawn",true,false] call BIS_fnc_MP;
+			cratePos = (getMarkerPos "commanderBase");
+			publicVariable "cratePos";
+			[mainAmmoBox, (getMarkerPos "commanderBase")] remoteExec ["setPos", 0];
 		}else{
 			hint "You need to create the commander boat first";
 		};
@@ -124,11 +104,11 @@ TWC_fnc_setSign = {
 			radioSign setDir (getDir player);
 			publicVariable "radioSign";
 			radioSign attachTo [player];
-			player addAction [ "Place Object", {{detach _x}forEach attachedObjects player; removeAllActions player; } ];
-			radioPicture = "userTexture1M_F" createVehicle (position player);
+			player addAction [ "Place Object", {{detach _x}forEach attachedObjects player; removeAllActions player; } ];			
+			radioPicture = "userTexture1M_F" createVehicle (position commander1);
 			radioPicture attachTo [radioSign, [0,-.1,0.5]];
-			radioPicture setObjectTexture [0, "server\pics\radio.jpg"];
 			publicVariable "radioPicture";
+			[radioPicture, [0, "server\pics\radio.jpg"]] remoteExec ["setObjectTexture", 0, "radioBoardPicture"];
 		}else{
 			hint "You need to create the commander boat first";
 		};
@@ -140,18 +120,11 @@ TWC_fnc_setSign = {
 TWC_fnc_setSpawn = {
 	if(!isNil "baseLifeBoat") then{
 		if (player distance2D baseLifeBoat < 200) then{
-			commanderBaseRespawn call BIS_fnc_removeRespawnPosition;
-			publicVariable "commanderBaseRespawn";
-			commanderBaseCount = 1;
-			publicVariable "commanderBaseCount";
-			airbase2Respawn call BIS_fnc_removeRespawnPosition;
-			boatRespawn call BIS_fnc_removeRespawnPosition;
-			commanderBaseRespawn = [west, position player] call BIS_fnc_addRespawnPosition;
-			publicVariable "commanderBaseRespawn";
 			"commanderBase" setMarkerPos (getPos player);
 			"commanderBase" setMarkerColor "colorWest";
 			"commanderBase" setMarkerAlpha 1;
-			RussianCheckTrigger setPos (getPos player);
+			RussianCheckTrigger setPos (getMarkerPos "commanderBase");
+			["respawn_West", (getMarkerPos "commanderBase")] remoteExec ["setMarkerPos", 0, "respawnMarker"];
 		}else{
 			hint "You are not close enough to the boat to make a base";
 		};
@@ -186,6 +159,7 @@ createBaseBoatAction = ["BaseBoat", "Base Boat","", {call TWC_fnc_createBaseBoat
 createLandSpawnPadAction = ["LandPad","Land Spawner","", {call TWC_fnc_createLandSpawnPad;},{true}] call ace_interact_menu_fnc_createAction;
 createArmourSpawnPadAction = ["ArmourPad","Helo Spawner","", {call TWC_fnc_createArmourSpawnPad;},{true}] call ace_interact_menu_fnc_createAction;
 moveAmmoBoxAction = ["moveAmmoBox","Ammo Box","", {call TWC_fnc_moveAmmoBox;},{true}] call ace_interact_menu_fnc_createAction;
+moveRadioSignAction = ["moveAmmoBox","Radio Sign","", {call TWC_fnc_setSign;},{true}] call ace_interact_menu_fnc_createAction;
 setSpawnAction = ["setSpawn","Set Spawn","", {call TWC_fnc_setSpawn;},{true}] call ace_interact_menu_fnc_createAction;
 HBarrier_5Action = ["HBarrier_5","HBarrier 5","", {call TWC_fnc_createHBarrier_5;},{true}] call ace_interact_menu_fnc_createAction;
 
@@ -194,6 +168,7 @@ HBarrier_5Action = ["HBarrier_5","HBarrier 5","", {call TWC_fnc_createHBarrier_5
 [player, 1, ["ACE_SelfActions", "thisStartsTheBase"], createLandSpawnPadAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheBase"], createArmourSpawnPadAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheBase"], moveAmmoBoxAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheBase"], moveRadioSignAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheBase"], setSpawnAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheBase"], HBarrier_5Action] call ace_interact_menu_fnc_addActionToObject;
 

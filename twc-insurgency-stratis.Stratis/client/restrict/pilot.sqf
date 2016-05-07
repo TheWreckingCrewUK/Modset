@@ -34,7 +34,7 @@ true spawn {
             //Vehicle Pilot Check for blackhawk
             if(({typeOf _veh == _x} count _blackhawk) > 0 && !_iamblackhawkpilot && !_iamcrew) then {
                 //Forbidden seats: copilot, gunner, pilot
-                _forbidden =  [gunner _veh] + [driver _veh];
+                _forbidden =  [gunner _veh] + [driver _veh] + [commander _veh];
                 if(player in _forbidden) then {
                     systemChat "You are not pilot and not allowed to pilot or gun this helicopter";
                     player action ["getout", _veh];

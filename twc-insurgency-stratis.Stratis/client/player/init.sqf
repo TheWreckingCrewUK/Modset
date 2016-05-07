@@ -352,7 +352,7 @@ if (!isNil "P31" && {player == P31}) then {
     g_class = "GER_AAR";
 	g_group = "1";
 	g_unit = "139";
-	g_name = "Asstant Autorifleman";
+	g_name = "Assistant Autorifleman";
 	g_radio_channel = 4;
 	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
@@ -553,6 +553,7 @@ if (g_class != "") then {
 	execVM format["client\player\loadout\%1.sqf", g_class];
 };
 
+/*
 sleep 2;
 if (g_radio != "") then {
 	_radioID = [g_radio] call acre_api_fnc_getRadioByType;

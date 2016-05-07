@@ -4,8 +4,12 @@ hint "If you're naked you can get a default loadout from an Ammo Box Action. Sor
 InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\diary\missionStatus.sqf"},{true}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
 
+
 player addEventHandler ["KILLED",{
 	hint "KILLED Event Handler Active";
+	if(getMarkerColor "commanderBase" == "colorYellow" || (getMarkerColor "commanderBase" == "colorEast" && getMarkerColor "airbase2" == "colorYellow"))then {
+		hint "With the blufor Base under attack spawns have been temporarily disabled. Once it ends you will be able to spawn with your squad. This is to keep you from being seperated";
+	};
 	counterAttackCounter = counterAttackCounter + 1;
 	publicVariable "counterAttackCounter";
 	if(counterAttackCounter > 20)then {
@@ -495,7 +499,7 @@ _text = format["%1 joined in as %2",_name,g_name];
 if (g_class != "") then {
 	execVM format["client\loadout\%1.sqf", g_class];
 };
-
+/*
 sleep 2;
 if (g_radio != "") then {
 	_radioID = [g_radio] call acre_api_fnc_getRadioByType;

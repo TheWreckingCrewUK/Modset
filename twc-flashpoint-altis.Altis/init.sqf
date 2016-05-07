@@ -1,11 +1,17 @@
 [] execVM "server\vehicles\sa_ropes.sqf";
 [] execVM "server\vehicles\advancedTowing.sqf";
 
+_crateBoatPos = (getMarkerPos "crateBoat");
+crateBoatPos = [(_crateBoatPos select 0),(_crateBoatPos select 1), 2];
+
 RussianCheck = 0;
 
 if(isServer) then{
 	_script = execVM "SHK_pos\shk_pos_init.sqf";
 	waitUntil {scriptDone _script};
+	cratePos = crateBoatPos;
+	publicVariable "cratePos";
+	["respawn_West", (getMarkerPos "boatSpawn")] remoteExec ["setMarkerPos", 0, "respawnMarker"]; 
 	[]spawn{
 		counterAttackCounter = 0;
 		publicVariable "counterAttackCounter";
@@ -55,6 +61,11 @@ if(isNil "counterAttackCounter")then{
 	counterAttackCounter = 0;
 	publicVariable "counterAttackCounter";
 };
+
+if(isNil "patrolCounter")then{
+	patrolCounter = 0;
+	publicVariable "patrolCounter";
+};
 null = execVM "client\sys_Member\init.sqf";
 
 /*
@@ -93,7 +104,7 @@ if ((str player) in _specialSlots)then{
 			case "p34": {10};
 			case "p35": {10};
 			case "jetPilot1": {15};
-			case "commander1": {0};
+			case "commander1": {100};
 			case "enemy1": {100};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
@@ -114,7 +125,7 @@ if ((str player) in _specialSlots)then{
 			["End1", false, 0] call BIS_fnc_endMission;
 		};
 		
-		if ((str player) in _commanders && (count playableUnits) < _numPlayers || !(_UID) in memberIDArray) then {
+		if ((str player) in _commanders && (count playableUnits) < _numPlayers || !(_UID in memberIDArray)) then {
 			["End1", false, 0] call BIS_fnc_endMission;
 		};
 	};

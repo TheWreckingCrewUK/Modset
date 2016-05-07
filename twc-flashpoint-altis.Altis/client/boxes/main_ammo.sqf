@@ -12,7 +12,7 @@
 				edited by FakeMatty
 */
  
-_marker = "crate";  // marker used to spawn.
+//_marker = "crate";  // marker used to spawn.
 _boxType = "I_supplyCrate_F";  // the type of ammobox used.
 _timer = 240;  // time in seconds until box is refilled.
  
@@ -929,10 +929,9 @@ if (g_class == "CMDR") then{
 } forEach _tmp_backpacks;
  
 // create and fill the box.
-mainAmmoBox = _boxType createVehicleLocal (getMarkerPos _marker);
-mainAmmoBox setPosATL (getMarkerPos _marker);
+mainAmmoBox = _boxType createVehicleLocal cratePos;
 mainAmmoBox allowDamage false;
-mainAmmoBox setPos (getPos mainAmmoBox vectorAdd [0,0,180]);
+mainAmmoBox setPos cratePos;
 mainAmmoBox addAction [ "Default Loadout", {execVM format["client\loadout\%1.sqf", g_class];}];
 while {true} do {
         refill_box = false;
