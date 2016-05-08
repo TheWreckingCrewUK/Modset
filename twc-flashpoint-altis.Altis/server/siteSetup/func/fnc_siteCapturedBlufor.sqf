@@ -24,7 +24,7 @@ if (_marker == "airbase2")then {
 		
 		cratePos = (getMarkerPos "crateDefault");
 		publicVariable "cratePos";
-		[mainAmmoBox, cratePos] remoteExec ["setPos", 0];
+		{mainAmmoBox setPos cratePos} remoteExec ["call", 0];
 		
 		if(!isNil "jetSpawnPad") then{
 			deleteVehicle radioSign;

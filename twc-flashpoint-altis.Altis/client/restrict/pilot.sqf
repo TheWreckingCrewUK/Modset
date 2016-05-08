@@ -3,9 +3,12 @@ true spawn {
 	//helos
     _blackhawkpilot = ["B_helicrew_F"];
     _wildcatPilot = ["B_helipilot_F"];
+	_jetPilot = ["B_Pilot_F"];
 	
     _blackhawk = ["CUP_B_UH60M_US"];
     _wildcat = ["CUP_B_AW159_Cannon_GB"];
+	_jets = ["CUP_B_A10_CAS_USA","CUP_B_A10_AT_USA","CUP_B_AV8B_AGM_USMC","CUP_B_AV8B_GBU12_USMC","CUP_B_AV8B_MK82_USMC","CUP_B_F35B_CAS_USMC","CUP_B_F35B_LGB_USMC","CUP_B_GR9_AGM_GB","CUP_B_GR9_GBU12_GB","CUP_B_GR9_MK82_GB"];
+	
 	_crew = []; //Unused
 	
 	//Enemy Vehicles
@@ -19,6 +22,7 @@ true spawn {
     //Assigning units to variables used below
     _iamBlackHawkpilot = ({typeOf player == _x} count _blackhawkpilot) > 0;
     _iamWildcatPilot = ({typeOf player == _x} count _wildcatPilot) > 0;
+	_iamJetPilot = ({typeOf player == _x} count _jetPilot) > 0;
 	_iamcrew = ({typeOf player == _x} count _crew) > 0;
 	_blacklist = ({typeOf player == _x} count _crewblacklist) > 0;
     //While loop
@@ -49,6 +53,17 @@ true spawn {
             if(({typeOf _veh == _x} count _wildcat) > 0 && !_iamWildcatPilot && !_iamcrew) then {
                 //Forbidden seats: copilot, gunner, pilot
                 _forbidden = [_veh turretUnit [0]] + [gunner _veh] + [driver _veh];
+                if(player in _forbidden) then {
+                    systemChat "You are not pilot and not allowed to pilot or gun this helicopter";
+                    player action ["getout", _veh];
+					player action ["eject", _veh];
+                };
+            };
+			
+			//Vehicle Pilot Check for Jets
+            if(({typeOf _veh == _x} count _jets) > 0 && !_iamJetPilot) then {
+                //Forbidden seats: pilot
+                _forbidden = [driver _veh];
                 if(player in _forbidden) then {
                     systemChat "You are not pilot and not allowed to pilot or gun this helicopter";
                     player action ["getout", _veh];

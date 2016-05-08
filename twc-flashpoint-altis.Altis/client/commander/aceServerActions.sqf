@@ -12,19 +12,18 @@ twc_fnc_clickToSpawn = {
 };
 
 twc_fnc_timeMorning = {
-	    setDate [2035, 6, 24, 7, 30];
-		
+	{setDate [2035, 6, 24, 7, 30];} remoteExecCall ["bis_fnc_call", 2]; 
 };
 twc_fnc_timeNoon = {
-	    setDate [2035, 6, 24, 12, 30];
+	{setDate [2035, 6, 24, 12, 30];} remoteExecCall ["bis_fnc_call", 2]; 
 		
 };
 twc_fnc_timeEvening = {
-	    setDate [2035, 6, 24, 21, 0];
+	{setDate [2035, 6, 24, 21, 0];} remoteExecCall ["bis_fnc_call", 2]; 
 		
 };
 twc_fnc_timeMidnight = {
-	    setDate [2035, 6, 24, 0, 0];
+	{setDate [2035, 6, 24, 0, 0];} remoteExecCall ["bis_fnc_call", 2]; 
 		
 };
 

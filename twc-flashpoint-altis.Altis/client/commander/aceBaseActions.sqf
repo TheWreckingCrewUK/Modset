@@ -82,7 +82,7 @@ TWC_fnc_moveAmmoBox = {
 		if (player distance2D baseLifeBoat < 200) then{
 			cratePos = (getMarkerPos "commanderBase");
 			publicVariable "cratePos";
-			[mainAmmoBox, (getMarkerPos "commanderBase")] remoteExec ["setPos", 0];
+			{mainAmmoBox setPos cratePos} remoteExec ["call", 0];
 		}else{
 			hint "You need to create the commander boat first";
 		};

@@ -6,13 +6,11 @@ _marker setMarkerColor "colorEAST";
 if(_marker != "airbase2" && _marker != "commanderBase")then{
 	[_marker, "CREATED", true] spawn BIS_fnc_taskSetState;	
 	execVM format["server\siteSetup\%1\init.sqf", _marker];
-	[_marker] call twc_basicLogistics;
 };
 
 if (_marker == "airbase2")then {
 	[_marker, "CREATED", true] spawn BIS_fnc_taskSetState;
 	execVM format["server\siteSetup\%1\init.sqf", _marker];
-	[_marker] call twc_basicLogistics;
 	
 	if(getMarkerColor "commanderBase" == "colorEast") then{
 		RussianCheckTrigger setPos (getMarkerPos "crateBoat");
@@ -28,7 +26,7 @@ if (_marker == "airbase2")then {
 		
 		cratePos = crateBoatPos;
 		publicVariable "cratePos";
-		[mainAmmoBox, cratePos] remoteExec ["setPos", 0];
+		{mainAmmoBox setPos cratePos} remoteExec ["call", 0];
 		
 	}else{
 	
@@ -46,7 +44,7 @@ if(_marker == "commanderBase") then{
 		
 		cratePos = getMarkerPos "crateDefault"; 
 		publicVariable "cratePos";
-		[mainAmmoBox, cratePos] remoteExec ["setPos", 0];
+		{mainAmmoBox setPos cratePos} remoteExec ["call", 0];
 		
 		deleteVehicle jetSpawnPad;
 		deleteVehicle jetSpawner;	
@@ -77,8 +75,9 @@ if(_marker == "commanderBase") then{
 		deleteVehicle armourSpawnPad;
 		deleteVehicle armourSpawner;
 		
-		{cratePos = crateboatPos; publicVariable "cratePos"} remoteExec ["bis_fnc_spawn", 0, "crateLocation"];
-		[]spawn{sleep 10;[mainAmmoBox, cratePos] remoteExec ["setPos", 0];};
+		cratePos = crateboatPos;
+		publicVariable "cratePos";
+		{mainAmmoBox setPos cratePos} remoteExec ["call", 0];
 	};
 	
 };
