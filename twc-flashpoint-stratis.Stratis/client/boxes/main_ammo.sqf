@@ -12,7 +12,7 @@
 				edited by FakeMatty
 */
  
-_marker = "boatcrate";  // marker used to spawn.
+//_marker = "crate";  // marker used to spawn.
 _boxType = "I_supplyCrate_F";  // the type of ammobox used.
 _timer = 240;  // time in seconds until box is refilled.
  
@@ -65,14 +65,14 @@ if (g_class == "BAF_SL") then {
 		["CUP_arifle_L85A2",1],
 		["CUP_hgun_Glock17",1],
 		["launch_NLAW_F",2],
-		["CUP_launch_Javelin",2],
+		["CUP_launch_Javelin",1],
 		["CUP_launch_M136",2],
-		["CUP_launch_FIM92Stinger",2]
+		["CUP_launch_FIM92Stinger",1]
     ];       
     _tmp_magazines =
     [
-		["30Rnd_556x45_Stanag",50],
-		["30Rnd_556x45_Stanag_Tracer_Red",50],
+		["30Rnd_556x45_Stanag",25],
+		["30Rnd_556x45_Stanag_Tracer_Red",15],
         ["CUP_17Rnd_9x19_glock17",15],
 		["CUP_Javelin_M",2],
 		["CUP_Stinger_M",2]
@@ -84,7 +84,10 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1]
 	];
 	_tmp_backpacks = [
-		["CUP_B_Bergen_BAF",1]
+		["CUP_B_Bergen_BAF",1],
+		["CUP_B_M2_Gun_Bag",1],
+		["CUP_B_M2_Tripod_Bag",1],
+		["CUP_B_M2_MiniTripod_Bag",1]
 	];
 }; 
 // load available to Grenadier only.
@@ -203,7 +206,7 @@ if (g_class == "BAF_SL") then {
  if (g_class == "BAF_MARK") then {
     _tmp_weapons =
     [
-        ["CUP_arifle_L86A2",1],
+        ["CUP_srifle_L129A1_HG",1],
 		["ACE_Vector",1],
 		["CUP_hgun_Glock17",1],
 		["launch_NLAW_F",3],
@@ -359,7 +362,10 @@ if (g_class == "US_RF") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["CUP_B_AssaultPack_ACU",1]
+		["CUP_B_AssaultPack_ACU",1],
+		["CUP_B_M2_Gun_Bag",1],
+		["CUP_B_M2_Tripod_Bag",1],
+		["CUP_B_M2_MiniTripod_Bag",1]
 	];
 };
 //load availible to US Grenadier only
@@ -567,13 +573,13 @@ if (g_class == "USMC_RF") then{
 	];
 	_tmp_magazines =
 	[
-		["30Rnd_556x45_Stanag",50],
-		["30Rnd_556x45_Stanag_Tracer_Red",15],
+		["30Rnd_556x45_Stanag",25],
+		["30Rnd_556x45_Stanag_Tracer_Red",10],
 		["CUP_Javelin_M",2],
-		["CUP_SMAW_Spotting",5],
-		["CUP_SMAW_HEAA_M",5],
-		["CUP_SMAW_HEDP_M",5],
-        ["CUP_7Rnd_45ACP_1911",15]
+		["CUP_SMAW_Spotting",4],
+		["CUP_SMAW_HEAA_M",4],
+		["CUP_SMAW_HEDP_M",4],
+        ["CUP_7Rnd_45ACP_1911",5]
 	];
 	_tmp_items = 
 	[
@@ -584,7 +590,10 @@ if (g_class == "USMC_RF") then{
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["CUP_B_USPack_Coyote",1]
+		["CUP_B_USPack_Coyote",1],
+		["CUP_B_M2_Gun_Bag",1],
+		["CUP_B_M2_Tripod_Bag",1],
+		["CUP_B_M2_MiniTripod_Bag",1]
 	];
 };
 //load available to USMC automatic Rifleman only
@@ -721,12 +730,17 @@ if (g_class == "SNIPER") then{
 	_tmp_weapons =
 	[
 		["CUP_srifle_AWM_des",1],
-		["CUP_hgun_Colt1911",1]
+		["CUP_hgun_Colt1911",1],
+		["CUP_arifle_L85A2",1]
 	];
 	_tmp_magazines =
 	[
 		["CUP_5Rnd_86x70_L115A1",20],
-        ["CUP_7Rnd_45ACP_1911",15]
+        ["CUP_7Rnd_45ACP_1911",15],
+		["ACE_1Rnd_82mm_Mo_HE",20],
+		["ACE_1Rnd_82mm_Mo_Smoke", 10],
+		["ACE_1Rnd_82mm_Mo_Illum",5],
+		["30Rnd_556x45_Stanag",10]
 	];
 	_tmp_items = 
 	[
@@ -739,10 +753,15 @@ if (g_class == "SNIPER") then{
 		["CUP_optic_LeupoldMk4_10x40_LRT_Desert",1],
 		["CUP_muzzle_snds_AWM",1],
 		["bipod_01_F_snd",1],
+		["ACE_RangeTable_82mm",1],
+		["CUP_U_B_BAF_DDPM_Tshirt",1],
+		["CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2",1],
+		["CUP_H_BAF_Helmet_2_DDPM",1],
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["CUP_B_AssaultPack_ACU",1]
+		["B_Kitbag_mcamo",1],
+		["B_Mortar_01_support_F",1]
 	];
 };
 //load availible to Spotter only
@@ -750,13 +769,18 @@ if (g_class == "SPOTTER") then{
 	_tmp_weapons =
 	[
 		["CUP_srifle_M110",1],
-		["CUP_hgun_Colt1911",1]
+		["CUP_hgun_Colt1911",1],
+		["CUP_arifle_L85A2",1]
 	];
 	_tmp_magazines =
 	[
 		["CUP_20Rnd_762x51_B_M110",20],
 		["CUP_20Rnd_TE1_Red_Tracer_762x51_M110",10],
-        ["CUP_7Rnd_45ACP_1911",15]
+        ["CUP_7Rnd_45ACP_1911",15],
+		["ACE_1Rnd_82mm_Mo_HE",20],
+		["ACE_1Rnd_82mm_Mo_Smoke", 10],
+		["ACE_1Rnd_82mm_Mo_Illum",5],
+		["30Rnd_556x45_Stanag",10]
 	];
 	_tmp_items = 
 	[
@@ -769,11 +793,16 @@ if (g_class == "SPOTTER") then{
 		["ACE_SpottingScope",1],
 		["CUP_optic_LeupoldMk4_10x40_LRT_Desert",1],
 		["bipod_01_F_snd",1],
+		["ACE_RangeTable_82mm",1],
 		["ACRE_PRC117F",1],
+		["CUP_U_B_BAF_DDPM_Tshirt",1],
+		["CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2",1],
+		["CUP_H_BAF_Helmet_2_DDPM",1],
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [
-		["CUP_B_AssaultPack_ACU",1]
+		["B_Kitbag_mcamo",1],
+		["B_Mortar_01_weapon_F",1]
 	];
 };
 //load avaible to armour commander only
@@ -900,28 +929,27 @@ if (g_class == "CMDR") then{
 } forEach _tmp_backpacks;
  
 // create and fill the box.
-_box = _boxType createVehicleLocal (getMarkerPos _marker);
-_box setPosATL (getMarkerPos _marker);
-_box setPos (getPos _box vectorAdd [0,0,180]);
-_box allowDamage false;
-_box addAction [ "Default Loadout", {execVM format["client\loadout\%1.sqf", g_class];}];
+mainAmmoBox = _boxType createVehicleLocal cratePos;
+mainAmmoBox allowDamage false;
+mainAmmoBox setPos cratePos;
+mainAmmoBox addAction [ "Default Loadout", {execVM format["client\loadout\%1.sqf", g_class];}];
 while {true} do {
         refill_box = false;
         // empty it.
-        clearWeaponCargo _box;
-        clearMagazineCargo _box;
-        clearItemCargo _box;
-		clearBackpackCargo _box;
+        clearWeaponCargo mainAmmoBox;
+        clearMagazineCargo mainAmmoBox;
+        clearItemCargo mainAmmoBox;
+		clearBackpackCargo mainAmmoBox;
        
         // add in all weapons.
-        {_box addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;
+        {mainAmmoBox addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;
        
         // add in all magazines.
-        {_box addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
+        {mainAmmoBox addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
        
-        {_box addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
+        {mainAmmoBox addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
 		
-		{_box addBackpackCargo [(_x select 0),(_x select 1)]} foreach _backpacks;
+		{mainAmmoBox addBackpackCargo [(_x select 0),(_x select 1)]} foreach _backpacks;
 		
 	
        

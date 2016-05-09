@@ -4,8 +4,12 @@ hint "If you're naked you can get a default loadout from an Ammo Box Action. Sor
 InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\diary\missionStatus.sqf"},{true}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;
 
-player addEventHandler ["MPKILLED",{
+
+player addEventHandler ["KILLED",{
 	hint "KILLED Event Handler Active";
+	if(getMarkerColor "commanderBase" == "colorYellow" || (getMarkerColor "commanderBase" == "colorEast" && getMarkerColor "airbase2" == "colorYellow"))then {
+		hint "With the blufor Base under attack spawns have been temporarily disabled. Once it ends you will be able to spawn with your squad. This is to keep you from being seperated";
+	};
 	counterAttackCounter = counterAttackCounter + 1;
 	publicVariable "counterAttackCounter";
 	if(counterAttackCounter > 20)then {
@@ -79,7 +83,7 @@ if (!isNil "p5" && {player == p5}) then {
 	g_name = "Alpha 2IC";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
-	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
+	execVM "client\vehicleSpawning\landBritish.sqf";
 };
 if (!isNil "p6" && {player == p6}) then {
     g_class = "BAF_MG";
@@ -124,7 +128,7 @@ if (!isNil "p10" && {player == p10}) then {
 	g_name = "Bravo Fireteam Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
-	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
+	execVM "client\vehicleSpawning\landUSArmy.sqf";
 };
 if (!isNil "p11" && {player == p11}) then {
     g_class = "US_RF";
@@ -160,7 +164,7 @@ if (!isNil "p14" && {player == p14}) then {
 	g_name = "Bravo Fireteam Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
-	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
+	execVM "client\vehicleSpawning\landUSArmy.sqf";
 };
 if (!isNil "p15" && {player == p15}) then {
     g_class = "US_AR";
@@ -205,7 +209,7 @@ if (!isNil "p19" && {player == p19}) then {
 	g_name = "Charlie Fireteam Leader";
 	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
-	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
+	execVM "client\vehicleSpawning\landUSMC.sqf";
 };
 if (!isNil "p20" && {player == p20}) then {
     g_class = "USMC_RF";
@@ -241,7 +245,7 @@ if (!isNil "p23" && {player == p23}) then {
 	g_name = "Charlie Fireteam Leader";
 	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
-	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
+	execVM "client\vehicleSpawning\landUSMC.sqf";
 };
 if (!isNil "p24" && {player == p24}) then {
     g_class = "USMC_RF";
@@ -277,7 +281,7 @@ if (!isNil "p27" && {player == p27}) then {
 	g_name = "Charlie Fireteam Leader";
 	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
-	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
+	execVM "client\vehicleSpawning\landUSMC.sqf";
 };
 if (!isNil "p28" && {player == p28}) then {
     g_class = "USMC_MG";
@@ -310,7 +314,7 @@ if (!isNil "p31" && {player == p31}) then {
     g_class = "SNIPER";
 	g_group = "0";
 	g_unit = "031";
-	g_name = "Sniper";
+	g_name = "Sniper/Mortar Commander";
 	g_radio_channel = 6;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landAttachments.sqf";
@@ -319,7 +323,7 @@ if (!isNil "p32" && {player == p32}) then {
     g_class = "SPOTTER";
 	g_group = "0";
 	g_unit = "032";
-	g_name = "Spotter";
+	g_name = "Spotter/Mortar Gunner";
 	g_radio_channel = 6;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landAttachments.sqf";
@@ -444,8 +448,6 @@ g_helo2 = "";
 
 
 execVM "client\boxes\main_ammo.sqf";
-execVM "client\boxes\boat_ammo.sqf";
-execVM "client\boxes\secondary_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
@@ -497,7 +499,7 @@ _text = format["%1 joined in as %2",_name,g_name];
 if (g_class != "") then {
 	execVM format["client\loadout\%1.sqf", g_class];
 };
-
+/*
 sleep 2;
 if (g_radio != "") then {
 	_radioID = [g_radio] call acre_api_fnc_getRadioByType;

@@ -1,7 +1,7 @@
 while {true} do {
 	{
 
-		if (!(markercolor "radar1" == "colorWEST")) then {
+		if (!(markercolor "radar1" == "colorWEST") && alive radarObj1) then {
 			if (isEngineOn _x) then {
 				if ((getpos _x) select 2 > 25) then {
 					if (_x distance getmarkerpos "radar1" < 3000)then{
@@ -23,5 +23,5 @@ while {true} do {
 			};
 		};
 	}foreach vehicles;
-sleep 1.5;
+sleep 3;
 };

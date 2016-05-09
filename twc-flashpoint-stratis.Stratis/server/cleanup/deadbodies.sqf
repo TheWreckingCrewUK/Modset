@@ -1,5 +1,5 @@
 while {true} do{
-	_deadbodies = nearestObjects [getmarkerpos "boatCrate", ["man"], 500];
+	_deadbodies = nearestObjects [getPos RussianCheckTrigger, ["man"], 300];
 	{if (not alive _x) then {deleteVehicle _x};} forEach _deadbodies;
-	sleep 1;
+	sleep 5;
 };

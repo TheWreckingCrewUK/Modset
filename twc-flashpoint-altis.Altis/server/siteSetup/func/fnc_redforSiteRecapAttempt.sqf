@@ -11,3 +11,6 @@ if (_type == "Motorized") then {
 if (_type == "Airborne") then {
 	[] call twc_redforAttackAirborne;
 };
+
+counterAttackCounter = 0;
+publicVariable "counterAttackCounter";

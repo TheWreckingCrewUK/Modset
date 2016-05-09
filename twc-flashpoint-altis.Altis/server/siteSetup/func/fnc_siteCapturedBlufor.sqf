@@ -1,4 +1,4 @@
-params["_marker"];
+params["_marker","_canCounter"];
 
 hint format["Blufor has captured %1",_marker];
 _marker setMarkerColor "colorWEST";
@@ -9,32 +9,81 @@ if (_marker == "mainHQ") exitWith {
 	[] spawn {sleep 15; ["end1", false, 0] call BIS_fnc_endMission};
 };
 
-if (_marker == "airbase2")then {
-	[_marker, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
-	if(getMarkerColor "commanderBase" == "colorEAST") then {
-		airbase2Respawn = [west, "airbase2"] call BIS_fnc_addRespawnPosition;
-		publicVariable "airbase2Respawn";
-		boatRespawn call BIS_fnc_removeRespawnPosition;
-	};
-};
-
-if(_marker == "commanderBase") then{
-	commanderBaseRespawn = [west, position player] call BIS_fnc_addRespawnPosition;
-	publicVariable "commanderBaseRespawn";
-};
-
 _rand = (random 100);
-if(_rand < 40 && _marker != "commanderBase") exitWith{
+if(_rand < 50 && _canCounter && _marker != "commanderBase") exitWith{
 	[_marker, _rand] spawn {
 		sleep 10; [(_this select 0), (_this select 1)] call twc_attackDeciding
 	};
 };
 
+if (_marker == "airbase2")then {
+	[_marker, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
+	if(getMarkerColor "commanderBase" == "colorEAST") then {
+		RussianCheckTrigger setPos (getMarkerPos "airbase2");
+		["respawn_West", (getMarkerPos "airbase2")] remoteExec ["setMarkerPos", 0, "respawnMarker"];
+		
+		cratePos = (getMarkerPos "crateDefault");
+		publicVariable "cratePos";
+		{mainAmmoBox setPos cratePos} remoteExec ["call", 0];
+		
+		if(!isNil "jetSpawnPad") then{
+			deleteVehicle radioSign;
+			publicVariable "radioSign";
+			deleteVehicle radioPicture;
+			publicVariable "radioPicture";
+		};
+		radioSign = "sign_F" createVehicle (getMarkerPos "crateDefault" vectorAdd[0,5,1]);
+		radioSign setDir 300;
+		publicVariable "radioSign";
+		radioPicture = "userTexture1M_F" createVehicle (getMarkerPos "crateDefault");
+		radioPicture attachTo [radioSign, [0,-.1,0.5]];
+		[radioPicture, [0, "server\pics\radio.jpg"]] remoteExec ["setObjectTexture", 0, "radioBoardPicture"];
+		publicVariable "radioPicture";
+		
+		if(!isNil "jetSpawnPad") then{
+			deleteVehicle jetSpawnPad;
+			publicVariable "jetSpawnPad";
+			deleteVehicle jetSpawner;
+			publicVariable "jetSpawner";
+		};
+		jetSpawnPad = "Land_HelipadSquare_F" createVehicle (getMarkerPos "jetPadDefault");
+		jetSpawnPad setDir 307;
+		publicVariable "jetSpawnPad";
+		jetSpawner = "Land_infoStand_V1_F" createVehicle (getMarkerPos "jetPadDefault");
+		jetSpawner setDir 307;
+		jetSpawner attachTo [jetSpawnPad,[5.5,-5.5,1]];
+		publicVariable "jetSpawner";
+	
+		if(!isNil "armourSpawnPad") then{
+			deleteVehicle armourSpawnPad;
+			publicVariable "armourSpawnPad":
+			deleteVehicle armourSpawner;
+			publicVariable "armourSpawner";
+		};
+		armourSpawnPad = "Land_HelipadSquare_F" createVehicle (getMarkerPos "heloPadDefault");
+		armourSpawnPad setDir 307;
+		publicVariable "armourSpawnPad";
+		armourSpawner = "Land_infoStand_V2_F" createVehicle (getMarkerPos "heloPadDefault");
+		armourSpawner setDir 307;
+		armourSpawner attachTo [armourSpawnPad,[5.5,-5.5,.6]];
+		publicVariable "jetSpawner";
+	}else{
+		
+	};
+};
+
+if(_marker == "commanderBase") then{
+
+};
+
+if(_marker == "radar1" || _marker == "radar2")then{
+	_markerRadius = format["%1Radius", _marker];
+	_markerRadius setMarkerAlpha 0;
+};
+
 [_marker]spawn{
 	sleep 300;
-	{ deleteVehicle _x } forEach allDead;
-
-	_enemyVehicle = nearestObjects [getMarkerPos (_this select 0), ["LandVehicle"], 800];
+	_enemyVehicle = nearestObjects [getMarkerPos (_this select 0), ["LandVehicle","Air"], 800];
 	{
 		if((typeOf _x) in friendlyVehiclesArray) then{
 			_enemyVehicle = _enemyVehicle - [_x];
