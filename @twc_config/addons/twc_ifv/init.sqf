@@ -39,7 +39,7 @@ RemoveAPMagazineD = ["RemoveAP","Remove AP Magazine","\twc_ifv\ui\ap_interaction
 RemoveHEMagazineD = ["RemoveHE","Remove HE Magazine","\twc_ifv\ui\he_interaction.paa",{call TWC_fnc_RemoveHE},{True}] call ace_interact_menu_fnc_createAction;
 ["TWC_warrior_D", 0, ["ACE_MainActions","MenuAmmo"], RemoveHEMagazineD] call ace_interact_menu_fnc_addActionToClass;
 
-ShowAmmoD = ["ShowAmmo","Show Ammo","",{[_this select 0]},{True}] call ace_interact_menu_fnc_createAction;
+ShowAmmoD = ["ShowAmmo","Show Ammo","",{[_this select 0]call TWC_fnc_ShowAmmo},{True}] call ace_interact_menu_fnc_createAction;
 ["TWC_warrior_D", 1, ["ACE_SelfActions"], ShowAmmoD] call ace_interact_menu_fnc_addActionToClass;
 
 
