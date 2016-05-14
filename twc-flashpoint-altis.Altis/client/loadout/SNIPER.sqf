@@ -11,7 +11,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "U_B_FullGhillie_ard";
+player forceAddUniform "CUP_U_B_USMC_Ghillie_WDL";
 player addItemToUniform "ACE_EarPlugs";
 for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 player addItemToUniform "ACRE_PRC148";

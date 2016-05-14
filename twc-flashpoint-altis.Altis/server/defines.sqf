@@ -10,7 +10,18 @@ if(isNil "remainingArray") then{
 	publicVariable "remainingArray";
 };
 
-friendlyVehiclesArray = ["CUP_B_LR_Transport_GB_W","CUP_B_Jackal2_L2A1_GB_W", "CUP_B_Jackal2_GMG_GB_W", "CUP_B_FV432_Bulldog_GB_D", "CUP_B_Ridgeback_HMG_GB_D", "CUP_B_M1126_ICV_M2_Desert_Slat", "CUP_B_M113_USA", "CUP_B_HMMWV_M2_USA", "CUP_B_HMMWV_MK19_USA", "CUP_B_HMMWV_TOW_USA", "CUP_B_HMMWV_Transport_USA", "CUP_B_AAV_USMC", "CUP_B_HMMWV_M2_USMC", "CUP_B_HMMWV_MK19_USMC", "CUP_B_HMMWV_TOW_USMC", "CUP_B_HMMWV_Unarmed_USMC", "CUP_B_RG31_M2_USMC"];
+friendlyVehiclesArray = [
+	"CUP_B_AW159_Cannon_GB","CUP_B_UH60M_US",
+	
+	"CUP_B_LR_Transport_GB_W","CUP_B_Jackal2_L2A1_GB_W", "CUP_B_Jackal2_GMG_GB_W", "CUP_B_FV432_Bulldog_GB_D", "CUP_B_Ridgeback_HMG_GB_D",
+	
+	"CUP_B_M1126_ICV_M2_Desert_Slat", "CUP_B_M113_USA", "CUP_B_HMMWV_M2_USA", "CUP_B_HMMWV_MK19_USA", "CUP_B_HMMWV_TOW_USA", "CUP_B_HMMWV_Transport_USA",
+	
+	"CUP_B_AAV_USMC", "CUP_B_HMMWV_M2_USMC", "CUP_B_HMMWV_MK19_USMC", "CUP_B_HMMWV_TOW_USMC", "CUP_B_HMMWV_Unarmed_USMC", "CUP_B_RG31_M2_USMC",
+	
+	"CUP_B_M1A2_TUSK_MG_US_Army","CUP_B_M2A3Bradley_USA_D","CUP_B_FV510_GB_D_Slat","CUP_B_LAV25_USMC","CUP_B_M6LineBacker_USA_D","CUP_B_M1128_MGS_Desert_Slat"
+	
+	];
 
 radar = "Landradar_Small_F";
 

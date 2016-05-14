@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8417.5342,152.72549,25067.148};
+		pos[]={8427.8652,140.61908,25089.977};
 		dir[]={-0.02388905,-0.64093083,0.76723349};
 		up[]={-0.019946799,0.76759911,0.64062101};
 		aside[]={0.99952024,8.8395609e-008,0.031121265};
@@ -5914,6 +5914,7 @@ class Mission
 						rank="CORPORAL";
 						name="p32";
 						description="Spotter/Mortar Gunner [12]";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=358;
@@ -14295,7 +14296,6 @@ class Mission
 						rank="LIEUTENANT";
 						name="commander1";
 						description="Commander [Members Only]";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1441;

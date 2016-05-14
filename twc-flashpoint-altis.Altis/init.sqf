@@ -90,7 +90,7 @@ if ((str player) in _specialSlots)then{
 
 	if((_UID) != "_SP_PLAYER_") then{	
 		_pilots = ["helo1", "helo2", "helo3"];
-		_snipers = ["p31","p23"];
+		_snipers = ["p31","p32"];
 		_armour = ["p33","p34","p35"];
 		_jets = ["jetPilot1"];
 		_commanders = ["commander","enemy1"];
@@ -125,7 +125,7 @@ if ((str player) in _specialSlots)then{
 			["End1", false, 0] call BIS_fnc_endMission;
 		};
 		
-		if ((str player) in _commanders && (count playableUnits) < _numPlayers || !(_UID in memberIDArray)) then {
+		if ((str player) in _commanders && ((count playableUnits) < _numPlayers || !(_UID in memberIDArray))) then {
 			["End1", false, 0] call BIS_fnc_endMission;
 		};
 	};

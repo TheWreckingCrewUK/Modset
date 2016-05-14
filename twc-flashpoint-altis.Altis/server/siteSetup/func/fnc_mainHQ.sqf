@@ -34,6 +34,18 @@ if isServer then {
 	};
 };
 
+_num = 3;
+_num = _num - _strenght;
+if(_num <= 0)then{_num = 0};
+if isServer then {
+	for "_i" from 0 to _num do {
+		private ["_pos","_m"];
+		_pos = [getmarkerpos _CentralMarker,[0,300],random 360,0] call SHK_pos;
+		_PatrolTanks = [_pos, EAST, bmp] call BIS_fnc_spawnGroup;
+		[_PatrolTanks, getmarkerpos _CentralMarker, 400] call CBA_fnc_taskDefend;
+	};
+};
+
 _num = 2;
 _num = _num - _strenght;
 if(_num <= 0)then{_num = 0};
@@ -53,6 +65,7 @@ if isServer then {
 	private ["_pos","_m"];
 	_pos = [getmarkerpos _CentralMarker,[0,200],random 360,0] call SHK_pos;
 	_PatrolTank = [_pos, EAST, hind] call BIS_fnc_spawnGroup;
+	_PatrolTank setPos (_pos vectorAdd [0,1000,0]);
 	[_Patroltank, getmarkerpos _CentralMarker, 300] call CBA_fnc_taskDefend;
 };
 

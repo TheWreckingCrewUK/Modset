@@ -26,7 +26,8 @@ for "_i" from 1 to _waves do {
 	}forEach units _groupSpawn;
 };
 
-if ((count PlayableUnits) > 5) then{
+_rand = random 100;
+if ((count PlayableUnits) > 5 && _rand < 50) then{
 	_pos = [getMarkerPos _marker, _groupradius,[0,360],0,[2,200]] call shk_pos;
 	_groupSpawned =  [_pos, East, enemyTechnical] call BIS_fnc_spawnGroup;
 	[_groupSpawned, (_marker), 40] call CBA_fnc_taskAttack;

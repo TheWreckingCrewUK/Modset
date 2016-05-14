@@ -18,7 +18,7 @@ _timer = 240;  // time in seconds until box is refilled.
  
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["CUP_NVG_PVS7",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_MapTools",1],["ACE_FieldDressing",20],["ACE_morphine",10]];
+_items = [["ACE_EarPlugs",1],["CUP_NVG_PVS7",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_MapTools",1],["ACE_FieldDressing",20],["ACE_morphine",10]];
 _backpacks = [];
  
 _tmp_weapons = [];
@@ -744,8 +744,6 @@ if (g_class == "SNIPER") then{
 	];
 	_tmp_items = 
 	[
-		["ACE_fieldDressing",50],
-		["ACE_morphine",50],
 		["ACE_Kestrel4500",1],
 		["ACE_RangeCard",1],
 		["ACE_ATragMX",1],
@@ -774,9 +772,9 @@ if (g_class == "SPOTTER") then{
 	];
 	_tmp_magazines =
 	[
-		["CUP_20Rnd_762x51_B_M110",20],
-		["CUP_20Rnd_TE1_Red_Tracer_762x51_M110",10],
-        ["CUP_7Rnd_45ACP_1911",15],
+		["CUP_20Rnd_762x51_B_M110",15],
+		["CUP_20Rnd_TE1_Red_Tracer_762x51_M110",5],
+        ["CUP_7Rnd_45ACP_1911",5],
 		["ACE_1Rnd_82mm_Mo_HE",20],
 		["ACE_1Rnd_82mm_Mo_Smoke", 10],
 		["ACE_1Rnd_82mm_Mo_Illum",5],
@@ -784,8 +782,6 @@ if (g_class == "SPOTTER") then{
 	];
 	_tmp_items = 
 	[
-		["ACE_fieldDressing",50],
-		["ACE_morphine",50],
 		["ACE_Kestrel4500",1],
 		["ACE_RangeCard",1],
 		["ACE_ATragMX",1],
