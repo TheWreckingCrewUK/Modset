@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 4.13
+//Sat Mar 08 12:23:31 2014 : Source 'file' date Sat Mar 08 12:23:31 2014
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class P:ffaa_estatico\data\metalplate.bisurf{
+Density = 7800;
+Thickness = 2;
+rough = 0.1;
+dust = 0;
+bulletPenetrability = 200;
+bulletPenetrabilityWithThickness = 10;
+soundEnviron = "Empty";
+isWater = "false";
+friction = 0.7;
+restitution = 0.3;
+impact = "Hit_Metal";
+soundHit = "metal";
+//};
