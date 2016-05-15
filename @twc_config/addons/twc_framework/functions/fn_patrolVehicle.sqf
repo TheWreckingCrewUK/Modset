@@ -14,7 +14,7 @@ _group = group _unit;
 _FirstRoad = _allRoads select (floor(random(count _allroads)));
 	
 _wpFirst = _group addwaypoint [getPos _FirstRoad, 1];
-_wpFirst setWaypointBehaviour "AWARE";
+_wpFirst setWaypointBehaviour "SAFE";
 _wpFirst setWaypointSpeed _speed;
 _wpFirst setWaypointFormation _formation;
 _wpFirst setWaypointType "MOVE"; 
@@ -24,7 +24,7 @@ for "_i" from 2 to 6 do{
 	if (count _allRoads > 0) then {
 		_Road = _allRoads select (floor(random(count _allroads)));
 		_wp = _group addwaypoint [getPos _Road, _i];
-		_wp setWaypointBehaviour "AWARE";
+		_wp setWaypointBehaviour "SAFE";
 		_wp setWaypointSpeed _speed;
 		_wp setWaypointFormation _formation;
 		_wp setWaypointType "MOVE"; 
@@ -32,7 +32,7 @@ for "_i" from 2 to 6 do{
 	};
 };
 _wpLast = _group addwaypoint [getPos _FirstRoad, 7];
-_wpLast setWaypointBehaviour "AWARE";
+_wpLast setWaypointBehaviour "SAFE";
 _wpLast setWaypointSpeed _speed;
 _wpLast setWaypointFormation _formation;
 _wpLast setWaypointType "Cycle"; 

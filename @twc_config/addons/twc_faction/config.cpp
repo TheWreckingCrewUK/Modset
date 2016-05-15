@@ -3274,7 +3274,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
-		backpack="TWC_Backpack_Cold_War_Platoon_Command";
+		backpack="TWC_Backpack_Cold_War_Section";
 		linkedItems[]=
 		{		
         "V_sud_nato_vest03",
@@ -3372,7 +3372,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
-		backpack="TWC_Backpack_Cold_War_Platoon_Sergeant";
+		backpack="TWC_Backpack_Cold_War_Section";
 		linkedItems[]=
 		{		
         "V_sud_nato_vest03",

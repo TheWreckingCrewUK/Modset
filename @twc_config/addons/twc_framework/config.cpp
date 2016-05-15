@@ -84,6 +84,9 @@ class CfgFunctions
 			class PatrolVehicle
 			{
 			};
+			class PatrolMarker
+			{
+			};
 		};
 	};
 };
