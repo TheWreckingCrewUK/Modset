@@ -1,6 +1,6 @@
 
 Params ["_Warrior"];
-_allmags = _Warrior magazinesTurret [0];
+_allmags = magazines _Warrior;
 _MagsWarrior = 0;
 {
 if (_x == "TWC_30mm_3rnd_AP") then {_MagsWarrior = _MagsWarrior + 1;};
@@ -13,5 +13,3 @@ if (_MagsWarrior < 63) then {
 }else{
 Systemchat "There is no more ammunition room in the Warrior";
 };
-
-
