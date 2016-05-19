@@ -51,9 +51,6 @@ class CfgFunctions
 			class ShowAmmo
 			{
 			};
-			class isWarrior
-			{
-			};
 		};
 	};
 };
@@ -1613,12 +1610,12 @@ class CfgVehicles
 			class muzzle_rot_coax
 			{
 				source="ammorandom";
-				weapon="TWC_L94A1_Coax";
+				weapon="TWC_GPMG";
 			};
 			class muzzle_hide_coax
 			{
 				source="reload";
-				weapon="TWC_L94A1_Coax";
+				weapon="TWC_GPMG";
 			};
 			class HideSlat
 			{

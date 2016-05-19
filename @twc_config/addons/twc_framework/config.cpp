@@ -81,7 +81,7 @@ class CfgFunctions
 			class CreateMarker
 			{
 			};
-			class PatrolVehicle
+			class PatrolRoads
 			{
 			};
 			class PatrolMarker
