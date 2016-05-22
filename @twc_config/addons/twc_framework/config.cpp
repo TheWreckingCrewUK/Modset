@@ -81,10 +81,10 @@ class CfgFunctions
 			class CreateMarker
 			{
 			};
-			class PatrolRoads
+			class patrolRoads
 			{
 			};
-			class PatrolMarker
+			class patrolMarkers
 			{
 			};
 		};

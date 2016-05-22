@@ -5,7 +5,7 @@
  * Public: No
  */
 if !(isServer) exitwith {};
-params ["_Unit","_markers",["_radius",500],["_speed","LIMITED"],["_formation","COLUMN"]];
+params ["_Unit","_markers",["_speed","LIMITED"],["_formation","COLUMN"]];
 
 _group = group _unit;
 
