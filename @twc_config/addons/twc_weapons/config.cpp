@@ -401,14 +401,6 @@ class CfgVehicles
 	class TWC_Backpack_Modern_Sectionlead:UK3CB_BAF_B_Bergen_MTP_SL_L_A
 	{
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
-		};
 		class TransportMagazines
 		{
             class _xx_Stanag
@@ -441,14 +433,6 @@ class CfgVehicles
 	class TWC_Backpack_Modern_Platoon_Command:UK3CB_BAF_B_Bergen_MTP_Radio_L_B
 	{
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
-		};
 		class TransportMagazines
 		{
             class _xx_Stanag
@@ -485,11 +469,6 @@ class CfgVehicles
 		scope = 1;
 		class TransportItems
 		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
 			class _xx_Wire_Cutters
 			{
 				name = "ACE_wirecutter";
@@ -759,14 +738,6 @@ class CfgVehicles
 	class TWC_Backpack_Cold_War_Section:CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
-		};
 		class TransportMagazines
 		{
 			class _xx_hlc_20Rnd_762x51_B_fal
@@ -867,14 +838,6 @@ class CfgVehicles
 	class TWC_Backpack_Cold_War_Platoon_Command:CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
-		};
 		class TransportMagazines
 		{
 			class _xx_hlc_20Rnd_762x51_B_fal
@@ -904,11 +867,6 @@ class CfgVehicles
 		scope = 1;
 		class TransportItems
 		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
 			class _xx_Wire_Cutters
 			{
 				name = "ACE_wirecutter";
@@ -980,14 +938,6 @@ class CfgVehicles
 	class TWC_Backpack_1990_Platoon_Command:CUP_B_Bergen_BAF
 	{
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
-		};
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1022,11 +972,6 @@ class CfgVehicles
 		scope = 1;
 		class TransportItems
 		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
 			class _xx_Wire_Cutters
 			{
 				name = "ACE_wirecutter";
@@ -1093,14 +1038,6 @@ class CfgVehicles
 	class TWC_Backpack_1990_Sectionlead:CUP_B_Bergen_BAF
 	{
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
-		};
 		class TransportMagazines
 		{
 			class _xx_Stanag
