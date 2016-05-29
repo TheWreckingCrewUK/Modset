@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8427.8652,140.61908,25089.977};
-		dir[]={-0.02388905,-0.64093083,0.76723349};
-		up[]={-0.019946799,0.76759911,0.64062101};
-		aside[]={0.99952024,8.8395609e-008,0.031121265};
+		pos[]={8415.0264,162.85765,25071.545};
+		dir[]={0.054619607,-0.83248872,0.55135638};
+		up[]={0.082067862,0.5540446,0.82843298};
+		aside[]={0.99513519,1.8579885e-007,-0.098582499};
 	};
 };
 binarizationWanted=0;
@@ -656,7 +656,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8415.7207,111.51506,25111.078};
+						position[]={8415.7197,111.51506,25111.078};
 					};
 					side="West";
 					flags=7;
@@ -1177,14 +1177,14 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={26507.23,-0.00030517578,26305.301};
-			angle=5.490716;
+			angle=5.4907184;
 			class Attributes
 			{
 				name="RussianCheckTrigger";
 				onActivation="Russiancheck = 1; if(getMarkerColor ""airbase2"" != ""colorYellow"") then{hint "" Hostiles near the base !""};";
 				onDeactivation="Russiancheck = 0; if(getMarkerColor ""airbase2"" != ""colorYellow"") then{hint ""Hostiles have left the Base""};";
-				sizeA=400;
-				sizeB=400;
+				sizeA=600;
+				sizeB=600;
 				interuptable=1;
 				repeatable=1;
 				activationBy="EAST";
@@ -1329,7 +1329,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8420.4678,111.4725,25114.098};
+						position[]={8420.4629,111.47623,25114.432};
 						angles[]={0,6.0170226,0};
 					};
 					side="West";
@@ -1338,11 +1338,12 @@ class Mission
 					{
 						name="p11";
 						description="Bravo Rifleman";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=162;
 					type="B_Soldier_F";
-					atlOffset=-7.6293945e-006;
+					atlOffset=-1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5914,7 +5915,6 @@ class Mission
 						rank="CORPORAL";
 						name="p32";
 						description="Spotter/Mortar Gunner [12]";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=358;
@@ -14296,7 +14296,6 @@ class Mission
 						rank="LIEUTENANT";
 						name="commander1";
 						description="Commander [Members Only]";
-						isPlayable=1;
 					};
 					id=1441;
 					type="B_officer_F";

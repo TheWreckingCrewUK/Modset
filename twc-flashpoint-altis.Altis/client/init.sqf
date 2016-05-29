@@ -6,10 +6,6 @@ InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\diary\
 
 
 player addEventHandler ["KILLED",{
-	hint "KILLED Event Handler Active";
-	if(getMarkerColor "commanderBase" == "colorYellow" || (getMarkerColor "commanderBase" == "colorEast" && getMarkerColor "airbase2" == "colorYellow"))then {
-		hint "With the blufor Base under attack spawns have been temporarily disabled. Once it ends you will be able to spawn with your squad. This is to keep you from being seperated";
-	};
 	counterAttackCounter = counterAttackCounter + 1;
 	publicVariable "counterAttackCounter";
 	if(counterAttackCounter > 20)then {
@@ -336,7 +332,6 @@ if (!isNil "p33" && {player == p33}) then {
 	g_radio_channel = 7;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\armourCommander.sqf";
-	player addEventHandler ["RESPAWN",{armourSpawned = 0}];
 };
 if (!isNil "p34" && {player == p34}) then {
     g_class = "ARMOURCREW";
@@ -402,8 +397,6 @@ if (!isNil "jetpilot1" && {player == jetpilot1}) then {
 		publicVariable "jetSpawned";
 	};
 	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
-	fjetSpawned = 0;
-	player addEventHandler ["RESPAWN",{fjetSpawned = 0}];
 	
 };
 

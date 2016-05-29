@@ -341,15 +341,18 @@ if (g_class == "US_RF") then{
 	_tmp_weapons =
 	[
 		["CUP_arifle_M4A1_black",1],
-		["CUP_launch_M136",2],
-		["CUP_launch_FIM92Stinger",2],
-		["CUP_launch_Javelin",2],
+		["CUP_launch_M136",1],
+		["CUP_launch_MAAWS",1],
+		["CUP_launch_FIM92Stinger",1],
+		["CUP_launch_Javelin",1],
 		["CUP_hgun_Colt1911",1]
 	];
 	_tmp_magazines =
 	[
 		["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",15],
+		["CUP_MAAWS_HEDP_M",2],
+		["CUP_MAAWS_HEAT_M",2],
 		["CUP_Javelin_M",2],
 		["CUP_Stinger_M",2],
         ["CUP_7Rnd_45ACP_1911",15]
@@ -359,6 +362,7 @@ if (g_class == "US_RF") then{
 		["CUP_optic_ACOG",1],
 		["CUP_optic_HoloBlack",1],
 		["CUP_acc_ANPEQ_2",1],
+		["CUP_optic_MAAWS_Scope",1],
 		["ACRE_PRC148",1]
 	];
 	_tmp_backpacks = [

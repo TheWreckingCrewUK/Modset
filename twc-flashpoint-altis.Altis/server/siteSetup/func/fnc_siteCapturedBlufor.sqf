@@ -1,6 +1,11 @@
-params["_marker","_canCounter"];
+params["_marker","_canCounter","_isCounterAttack"];
 
-hint format["Blufor has captured %1",_marker];
+if (_isCounterAttack == 0) then{
+	format["Blufor has captured %1",_marker] remoteExec ["hint"];
+}else{
+	format["Redfors counter attack at %1 has been defeated",_marker] remoteExec ["hint"];
+};
+
 _marker setMarkerColor "colorWEST";
 
 if (_marker == "mainHQ") exitWith {
@@ -32,7 +37,7 @@ if (_marker == "airbase2")then {
 			deleteVehicle radioPicture;
 			publicVariable "radioPicture";
 		};
-		radioSign = "sign_F" createVehicle (getMarkerPos "crateDefault" vectorAdd[0,5,1]);
+		radioSign = "sign_F" createVehicle (getMarkerPos "crateDefault" vectorAdd[0,5,2]);
 		radioSign setDir 300;
 		publicVariable "radioSign";
 		radioPicture = "userTexture1M_F" createVehicle (getMarkerPos "crateDefault");
