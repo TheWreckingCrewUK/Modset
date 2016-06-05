@@ -62155,7 +62155,7 @@ class Mission
 				init="veh = [this, 15] execVM ""scripts\vehicleRespawn\vehicle.sqf""";
 			};
 			id=4741;
-			type="TWC_warrior";
+			type="TWC_warrior_W";
 		};
 		class Item3726
 		{
@@ -62172,7 +62172,7 @@ class Mission
 				init="veh = [this, 15] execVM ""scripts\vehicleRespawn\vehicle.sqf""";
 			};
 			id=4742;
-			type="TWC_warrior";
+			type="TWC_warrior_W";
 		};
 		class Item3727
 		{
