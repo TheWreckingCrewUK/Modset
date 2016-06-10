@@ -44270,7 +44270,7 @@ class Mission
 				init="veh = [this, 15] execVM ""scripts\vehicleRespawn\vehicle.sqf""";
 			};
 			id=3249;
-			type="TWC_warrior";
+			type="TWC_warrior_W";
 		};
 		class Item2783
 		{
@@ -44287,7 +44287,7 @@ class Mission
 				init="veh = [this, 15] execVM ""scripts\vehicleRespawn\vehicle.sqf""";
 			};
 			id=3250;
-			type="TWC_warrior";
+			type="TWC_warrior_W";
 		};
 		class Item2784
 		{
@@ -54159,7 +54159,7 @@ class Mission
 			{
 			};
 			id=3943;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3198
 		{
@@ -54173,7 +54173,7 @@ class Mission
 			{
 			};
 			id=3945;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3199
 		{
@@ -56242,7 +56242,7 @@ class Mission
 			{
 			};
 			id=4215;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3339
 		{
@@ -56257,7 +56257,7 @@ class Mission
 			{
 			};
 			id=4216;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3340
 		{
@@ -56331,7 +56331,7 @@ class Mission
 			{
 			};
 			id=4222;
-			type="01_bushes_01_b_amygdalusn1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3345
 		{
@@ -56345,7 +56345,7 @@ class Mission
 			{
 			};
 			id=4223;
-			type="01_bushes_01_b_amygdalusn1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3346
 		{
@@ -56359,7 +56359,7 @@ class Mission
 			{
 			};
 			id=4224;
-			type="01_bushes_01_b_amygdalusn1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3347
 		{
@@ -56373,7 +56373,7 @@ class Mission
 			{
 			};
 			id=4225;
-			type="01_bushes_01_b_amygdalusn1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3348
 		{
@@ -56387,7 +56387,7 @@ class Mission
 			{
 			};
 			id=4226;
-			type="01_bushes_01_b_amygdalusn1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3349
 		{
@@ -56401,7 +56401,7 @@ class Mission
 			{
 			};
 			id=4227;
-			type="01_bushes_01_b_amygdalusn1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3350
 		{
@@ -56415,7 +56415,7 @@ class Mission
 			{
 			};
 			id=4233;
-			type="01_bushes_01_b_amygdalusn1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3351
 		{
@@ -56429,7 +56429,7 @@ class Mission
 			{
 			};
 			id=4234;
-			type="01_bushes_01_b_amygdalusn1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3352
 		{
@@ -56443,7 +56443,7 @@ class Mission
 			{
 			};
 			id=4235;
-			type="01_bushes_01_b_amygdalusn1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3353
 		{
@@ -56457,7 +56457,7 @@ class Mission
 			{
 			};
 			id=4240;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3354
 		{
@@ -56471,7 +56471,7 @@ class Mission
 			{
 			};
 			id=4241;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3355
 		{
@@ -56485,7 +56485,7 @@ class Mission
 			{
 			};
 			id=4242;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3356
 		{
@@ -56499,7 +56499,7 @@ class Mission
 			{
 			};
 			id=4243;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3357
 		{
@@ -56513,7 +56513,7 @@ class Mission
 			{
 			};
 			id=4244;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3358
 		{
@@ -56527,7 +56527,7 @@ class Mission
 			{
 			};
 			id=4245;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3359
 		{
@@ -56541,7 +56541,7 @@ class Mission
 			{
 			};
 			id=4246;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3360
 		{
@@ -56555,7 +56555,7 @@ class Mission
 			{
 			};
 			id=4247;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3361
 		{
@@ -56569,7 +56569,7 @@ class Mission
 			{
 			};
 			id=4248;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3362
 		{
@@ -56583,7 +56583,7 @@ class Mission
 			{
 			};
 			id=4249;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3363
 		{
@@ -56597,7 +56597,7 @@ class Mission
 			{
 			};
 			id=4250;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3364
 		{
@@ -56611,7 +56611,7 @@ class Mission
 			{
 			};
 			id=4251;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3365
 		{
@@ -56625,7 +56625,7 @@ class Mission
 			{
 			};
 			id=4252;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3366
 		{
@@ -56639,7 +56639,7 @@ class Mission
 			{
 			};
 			id=4253;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3367
 		{
@@ -56653,7 +56653,7 @@ class Mission
 			{
 			};
 			id=4254;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3368
 		{
@@ -56667,7 +56667,7 @@ class Mission
 			{
 			};
 			id=4255;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3369
 		{
@@ -56681,7 +56681,7 @@ class Mission
 			{
 			};
 			id=4256;
-			type="01_bushes_01_b_pistacial1s_ep1";
+			type="Land_CratesWooden_F";
 		};
 		class Item3370
 		{

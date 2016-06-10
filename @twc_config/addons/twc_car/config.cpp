@@ -23,7 +23,7 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		faction="Veh_units";
-		displayname = "Landrover Woodland";
+		displayname = "Landrover Woodland (Modern)";
 		class TransportMagazines
 		{
 			class _xx_UK3CB_BAF_30Rnd
@@ -124,7 +124,7 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		faction="Veh_units";
-		displayname = "Landrover Desert";
+		displayname = "Landrover Desert (Modern)";
 		class TransportMagazines
 		{
 			class _xx_UK3CB_BAF_30Rnd
@@ -225,7 +225,7 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		faction="Veh_units";
-		displayname = "Landrover Woodland";
+		displayname = "Landrover Woodland (90`s)";
 		class TransportMagazines
 		{
 			class _xx_UK3CB_BAF_30Rnd
@@ -291,7 +291,7 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		faction="Veh_units";
-		displayname = "Landrover Desert";
+		displayname = "Landrover Desert (90`s)";
 		class TransportMagazines
 		{
 			class _xx_UK3CB_BAF_30Rnd
@@ -357,7 +357,7 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		faction="Veh_units";
-		displayname = "Landrover Woodland";
+		displayname = "Landrover Woodland (Coldwar)";
 		class TransportMagazines
 		{
 			class _xx_hlc_20Rnd_762x51_B_fal
@@ -438,7 +438,7 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		faction="Veh_units";
-		displayname = "Landrover Desert";
+		displayname = "Landrover Desert (Coldwar)";
 		class TransportMagazines
 		{
 			class _xx_hlc_20Rnd_762x51_B_fal
