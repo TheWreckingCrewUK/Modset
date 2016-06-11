@@ -1,14 +1,5 @@
-execVM "scripts\Zues\Zues1.sqf";
-execVM "scripts\Zues\Zues2.sqf";
-execVM "scripts\Zues\Zues3.sqf";
-execVM "scripts\Zues\Zues4.sqf";
-execVM "scripts\Zues\Zues5.sqf";
-execVM "scripts\Zues\Zues6.sqf";
-execVM "scripts\Zues\Zues7.sqf";
-execVM "scripts\Zues\Zues8.sqf";
-execVM "scripts\Zues\Zues9.sqf";
-execVM "scripts\Zues\Zues10.sqf";
-execVM "scripts\Zues\Admin.sqf";
+execVM "scripts\Zues\Zeus.sqf";
+
 
 execVM "Scripts\cqbrange\cqbrandomtargets.sqf";
 

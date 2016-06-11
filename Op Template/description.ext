@@ -185,7 +185,7 @@ class ace_medical_level {
 		typeName = "SCALAR";
 		force = 1;
 	};
-    ACE View Distance Limiter
+    //ACE View Distance Limiter
 	class ace_viewdistance_enabled {
 		value = 1;
 		typeName = "BOOL";
