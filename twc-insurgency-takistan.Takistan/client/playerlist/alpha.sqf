@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Alpha British Army", [["Alpha Section Leader", [g_p1, "Section Leader"], [g_p2, "Rifleman"], [g_p3, "Grenadier"], [g_p4, "Automatic Rifleman"],[g_p5, "Medic"]]]]					
+g_playerlist = [["Alpha British Army", [["Alpha Section Leader", [g_p1, "Section Leader"], [g_p2, "Rifleman"], [g_p3, "Grenadier"], [g_p4, "Automatic Rifleman"]], ["Fire Team 2", [g_p5, "2IC"], [g_p6, "Machine Gunner"], [g_p7, "Marksman"], [g_p8, "Medic"]]]]					
 				
 				];
 

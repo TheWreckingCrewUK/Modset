@@ -33,6 +33,57 @@ if (!isNil "humanCiv3" && {player == humanCiv3}) then {
 	["ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
+if (!isNil "helo1" && {player == helo1}) then {
+    g_class = "PLT";
+	g_group = "1";
+	g_unit = "123";
+	g_radio = "";
+	g_name = "Blackhawk Pilot";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "helo2" && {player == helo2}) then {
+    g_class = "PLT_CREW";
+	g_group = "1";
+	g_unit = "130";
+	g_radio = "";
+	g_name = "Crew Chief";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+if (!isNil "tank1" && {player == tank1}) then {
+    g_class = "ARMR_CO";
+	g_group = "1";
+	g_unit = "133";
+	g_name = "Armour Crew Commander";
+	g_radio_channel = 5;
+	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "tank2" && {player == tank2}) then {
+    g_class = "ARMR_CREW";
+	g_group = "1";
+	g_unit = "134";
+	g_name = "Armour Crew";
+	g_radio_channel = 5;
+	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "tank3" && {player == tank3}) then {
+    g_class = "ARMR_CREW";
+	g_group = "1";
+	g_unit = "135";
+	g_name = "Armour Crew";
+	g_radio_channel = 5;
+	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
 if (!isNil "P1" && {player == P1}) then {
     g_class = "BAF_SL";
 	g_group = "0";
@@ -78,9 +129,41 @@ if (!isNil "P4" && {player == P4}) then {
 };
 
 if (!isNil "P5" && {player == P5}) then {
-    g_class = "BAF_MED";
+    g_class = "BAF_2";
 	g_group = "0";
 	g_unit = "013";
+	g_name = "Alpha 2IC";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+if (!isNil "P6" && {player == P6}) then {
+    g_class = "BAF_MG";
+	g_group = "0";
+	g_unit = "020";
+	g_name = "Alpha Machine Gunner";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P7" && {player == P7}) then {
+    g_class = "BAF_MARK";
+	g_group = "0";
+	g_unit = "021";
+	g_name = "Alpha Marksman";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P8" && {player == P8}) then {
+    g_class = "BAF_MED";
+	g_group = "0";
+	g_unit = "022";
 	g_name = "Alpha Medic";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
@@ -88,10 +171,11 @@ if (!isNil "P5" && {player == P5}) then {
 	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
-if (!isNil "P6" && {player == P6}) then {
+
+if (!isNil "P9" && {player == P9}) then {
     g_class = "US_SL";
 	g_group = "0";
-	g_unit = "020";
+	g_unit = "023";
 	g_name = "Bravo Squad Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
@@ -99,10 +183,21 @@ if (!isNil "P6" && {player == P6}) then {
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
-if (!isNil "P7" && {player == P7}) then {
+if (!isNil "P10" && {player == P10}) then {
+    g_class = "US_TL";
+	g_group = "9";
+	g_unit = "800";
+	g_name = "Bravo Team Leader";
+	g_radio_channel = 2;
+	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P11" && {player == P11}) then {
     g_class = "US_RF";
-	g_group = "0";
-	g_unit = "021";
+	g_group = "9";
+	g_unit = "801";
 	g_name = "Bravo Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
@@ -110,21 +205,22 @@ if (!isNil "P7" && {player == P7}) then {
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
-if (!isNil "P8" && {player == P8}) then {
+if (!isNil "P12" && {player == P12}) then {
     g_class = "US_GRN";
-	g_group = "0";
-	g_unit = "022";
-	g_name = "Bravo grenadier";
+	g_group = "9";
+	g_unit = "802";
+	g_name = "
+	Bravo Grenadier";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
-if (!isNil "P9" && {player == P9}) then {
+if (!isNil "P13" && {player == P13}) then {
     g_class = "US_AR";
-	g_group = "0";
-	g_unit = "023";
+	g_group = "1";
+	g_unit = "100";
 	g_name = "Bravo Automatic Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
@@ -132,104 +228,195 @@ if (!isNil "P9" && {player == P9}) then {
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
-if (!isNil "P10" && {player == P10}) then {
-    g_class = "US_MED";
-	g_group = "9";
-	g_unit = "800";
-	g_name = "Bravo Medic";
-	g_radio_channel = 2;
-	g_radio = "ACRE_PRC148";
-	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
-	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
-};
-
-if (!isNil "P11" && {player == P11}) then {
-    g_class = "USMC_SL";
-	g_group = "9";
-	g_unit = "801";
-	g_name = "Charlie Squad Leader";
-	g_radio_channel = 3;
-	g_radio = "ACRE_PRC148";
-	["en"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
-};
-
-if (!isNil "P12" && {player == P12}) then {
-    g_class = "USMC_RF";
-	g_group = "9";
-	g_unit = "802";
-	g_name = "Charlie Rifleman";
-	g_radio_channel = 3;
-	g_radio = "ACRE_PRC148";
-	["en"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
-};
-
-if (!isNil "P13" && {player == P13}) then {
-    g_class = "USMC_GRN";
-	g_group = "1";
-	g_unit = "100";
-	g_name = "Charlie Grenadier";
-	g_radio_channel = 3;
-	g_radio = "ACRE_PRC148";
-	["en"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
-};
-
 if (!isNil "P14" && {player == P14}) then {
-    g_class = "USMC_AR";
+    g_class = "US_TL";
 	g_group = "1";
 	g_unit = "110";
-	g_name = "Charlie Automatic Rifleman";
-	g_radio_channel = 3;
+	g_name = "Bravo Team Leader";
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P15" && {player == P15}) then {
-    g_class = "USMC_MED";
+    g_class = "US_AR";
 	g_group = "1";
 	g_unit = "111";
-	g_name = "Charlie Medic";
-	g_radio_channel = 3;
+	g_name = "Bravo Automatic Rifleman";
+	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P16" && {player == P16}) then {
+    g_class = "US_MARK";
+	g_group = "1";
+	g_unit = "112";
+	g_name = "Bravo Marksman";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 2;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P17" && {player == P17}) then {
+    g_class = "US_MED";
+	g_group = "1";
+	g_unit = "113";
+	g_name = "Delta Rifleman";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 2;
 	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
 
-if (!isNil "P16" && {player == P16}) then {
-    g_class = "ANA_SL";
-	g_group = "1";
-	g_unit = "112";
-	g_name = "Delta Squad Leader";
-	g_radio = "";
-	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
-};
-
-if (!isNil "P17" && {player == P17}) then {
-    g_class = "ANA_RF";
-	g_group = "1";
-	g_unit = "113";
-	g_name = "Delta Rifleman";
-	g_radio = "";
-	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
-};
-
 if (!isNil "P18" && {player == P18}) then {
-    g_class = "ANA_GRN";
+    g_class = "USMC_SL";
 	g_group = "1";
 	g_unit = "120";
-	g_name = "Delta Grenadier";
-	g_radio = "";
-	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	g_name = "Charlie Squad Leader";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
+if (!isNil "P19" && {player == P19}) then {
+    g_class = "USMC_TL";
+	g_group = "1";
+	g_unit = "121";
+	g_name = "Charlie Team Leader";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P20" && {player == P20}) then {
+    g_class = "USMC_RF";
+	g_group = "1";
+	g_unit = "122";
+	g_name = "Charlie Rifleman";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P21" && {player == P21}) then {
+    g_class = "USMC_AR";
+	g_group = "1";
+	g_unit = "122";
+	g_name = "Charlie Automatic Rifleman";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P22" && {player == P22}) then {
+    g_class = "USMC_AAR";
+	g_group = "1";
+	g_unit = "123";
+	g_name = "Charlie Automatic Rifleman Assistant";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P23" && {player == P23}) then {
+    g_class = "USMC_TL";
+	g_group = "1";
+	g_unit = "124";
+	g_name = "Charlie Team Leader";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P24" && {player == P24}) then {
+    g_class = "USMC_RF";
+	g_group = "1";
+	g_unit = "125";
+	g_name = "Charlie Rifleman";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P25" && {player == P25}) then {
+    g_class = "USMC_AR";
+	g_group = "1";
+	g_unit = "126";
+	g_name = "Charlie Automatic Rifleman";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P26" && {player == P26}) then {
+    g_class = "USMC_AAR";
+	g_group = "1";
+	g_unit = "127";
+	g_name = "Charlie Automatic Rifleman Assistant";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P27" && {player == P27}) then {
+    g_class = "USMC_TL";
+	g_group = "1";
+	g_unit = "127";
+	g_name = "Charlie Team Leader";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P28" && {player == P28}) then {
+    g_class = "USMC_MG";
+	g_group = "1";
+	g_unit = "128";
+	g_name = "Charlie Machine Gunner";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P29" && {player == P29}) then {
+    g_class = "USMC_MGASS";
+	g_group = "1";
+	g_unit = "129";
+	g_name = "Charlie Machine Gunner Assistant";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P30" && {player == P30}) then {
+    g_class = "USMC_MED";
+	g_group = "1";
+	g_unit = "130";
+	g_name = "Charlie Rifleman";
+	g_radio = "ACRE_PRC148";
+	g_radio_channel = 3;
+	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+};
+/*
 if (!isNil "P19" && {player == P19}) then {
     g_class = "ANA_AR";
 	g_group = "1";
@@ -507,18 +694,6 @@ TWC_fnc_getCharlieList = {
    execVM "client\playerlist\charlie.sqf";
 };
 
-TWC_fnc_getDeltaList = {
-    execVM "client\playerlist\delta.sqf";
-};
-
-TWC_fnc_getEchoList = {
-    execVM "client\playerlist\echo.sqf";
-};
-
-TWC_fnc_getAirList = {
-   execVM "client\playerlist\air.sqf";
-};
-
 TWC_fnc_getArmourList = {
    execVM "client\playerlist\armourcrew.sqf";
 };
@@ -527,8 +702,6 @@ playerListAction = ["thisStartsTheList","Player List","", {},{true}] call ace_in
 alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}] call ace_interact_menu_fnc_createAction;
 bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
 charlieAction = ["CharlieList","Charlie List","", {call TWC_fnc_getCharlieList;},{true}] call ace_interact_menu_fnc_createAction;
-deltaAction = ["DeltaList","Delta List","", {call TWC_fnc_getDeltaList;},{true}] call ace_interact_menu_fnc_createAction;
-echoAction = ["EchoList","Echo List","", {call TWC_fnc_getEchoList;},{true}] call ace_interact_menu_fnc_createAction;
 airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ace_interact_menu_fnc_createAction;
 armourAction = ["ArmourList","Armour List","", {call TWC_fnc_getArmourList;},{true}] call ace_interact_menu_fnc_createAction;
 
@@ -536,8 +709,6 @@ armourAction = ["ArmourList","Armour List","", {call TWC_fnc_getArmourList;},{tr
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], alphaAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], bravoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], charlieAction] call ace_interact_menu_fnc_addActionToObject;
-[player, 1, ["ACE_SelfActions", "thisStartsTheList"], deltaAction] call ace_interact_menu_fnc_addActionToObject;
-[player, 1, ["ACE_SelfActions", "thisStartsTheList"], echoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], armourAction] call ace_interact_menu_fnc_addActionToObject;
 

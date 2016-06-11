@@ -43,6 +43,11 @@ g_p38 = "";
 g_humanCiv1 = "";
 g_humanCiv2 = "";
 g_humanCiv3 = "";
+g_helo1 = "";
+g_helo2 = "";
+g_tank1 = "";
+g_tank2 = "";
+g_tank3 = "";
 	
 	switch (g_unit) do {
 		case "000": {g_p1 = name player; publicVariable "g_p1"; };
@@ -85,8 +90,13 @@ g_humanCiv3 = "";
 		case "146": {g_p38 = name player; publicVariable "g_p38"; };
 		case "143": {g_p35 = name player; publicVariable "g_p35"; };
 		case "200": {g_humanCiv1 = name player; publicVariable "g_humanCiv1"; };
-		case "200": {g_humanCiv2 = name player; publicVariable "g_humanCiv2"; };
-		case "146": {g_humanCiv3 = name player; publicVariable "g_humanCiv3"; };
+		case "201": {g_humanCiv2 = name player; publicVariable "g_humanCiv2"; };
+		case "202": {g_humanCiv3 = name player; publicVariable "g_humanCiv3"; };
+		case "203": {g_helo1 = name player; publicVariable "g_helo1"; };
+		case "204": {g_helo2 = name player; publicVariable "g_helo2"; };
+		case "205": {g_tank1 = name player; publicVariable "g_tank1"; };
+		case "206": {g_tank2 = name player; publicVariable "g_tank2"; };
+		case "207": {g_tank3 = name player; publicVariable "g_tank3"; };
 				
 	};
 	

@@ -1,5 +1,4 @@
-hint "If you're naked you can get a default loadout from an Ammo Box Action. Sorry about his bug.";
-#include "playerFunctions.sqf";
+execVM "client\playerFunctions.sqf";
 
 InsP_MissionStatus = ["MissionStatus","Mission Status","",{execVM "client\diary\missionStatus.sqf"},{true}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], InsP_MissionStatus] call ace_interact_menu_fnc_addActionToObject;

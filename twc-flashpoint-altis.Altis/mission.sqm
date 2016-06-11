@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1507;
+		nextID=1512;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8415.0264,162.85765,25071.545};
-		dir[]={0.054619607,-0.83248872,0.55135638};
-		up[]={0.082067862,0.5540446,0.82843298};
-		aside[]={0.99513519,1.8579885e-007,-0.098582499};
+		pos[]={8343.5664,178.5598,25088.473};
+		dir[]={0.92234665,-0.37027138,0.11097308};
+		up[]={0.36767051,0.92890167,0.044236671};
+		aside[]={0.11946662,5.6339195e-007,-0.99290997};
 	};
 };
 binarizationWanted=0;
@@ -1177,7 +1177,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={26507.23,-0.00030517578,26305.301};
-			angle=5.4907184;
+			angle=5.490716;
 			class Attributes
 			{
 				name="RussianCheckTrigger";
@@ -1338,7 +1338,6 @@ class Mission
 					{
 						name="p11";
 						description="Bravo Rifleman";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=162;
@@ -6178,7 +6177,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8416.9082,110.62868,25120.941};
+						position[]={8436.2539,109.15623,25123.779};
 						angles[]={0,5.4106078,0};
 					};
 					side="West";
@@ -6188,6 +6187,7 @@ class Mission
 						rank="LIEUTENANT";
 						name="jetPilot1";
 						description="Jet Pilot [15]";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=512;
