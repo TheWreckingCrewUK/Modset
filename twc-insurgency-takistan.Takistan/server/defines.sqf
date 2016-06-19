@@ -11,7 +11,7 @@ civilianType = "C_man_1";
 
 homeEnemy = ["CUP_O_TK_INS_Soldier"];
 
-AA_VEHICLE_TYPE = ["CUP_I_ZU23_NAPA"];
+AA_VEHICLE_TYPE = "CUP_I_ZU23_NAPA";
 
 AATeams = 4;
 AATeam = ["CUP_O_TK_INS_Soldier", "CUP_O_TK_INS_Soldier_AA", "CUP_O_TK_INS_Soldier_AA"];

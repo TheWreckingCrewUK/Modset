@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Armour Crew", [["LAV25", [g_p25, "Commander"],[g_p26, "Crewman"],[g_p27, "Crewman"]]]]				
+g_playerlist = [["Support Assets", [["Armour Crew", [g_tank1, "Armour Commander"],[g_tank2, "Armour Crewman"],[g_tank3, "Armour Crewman"]]]]			
 				
 				];
 

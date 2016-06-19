@@ -7,7 +7,7 @@ SpawnA10ATAction = ["SpawnA10AT","A10 AT","",{_oldVeh = nearestObjects [armourSp
 SpawnAV8BATAction = ["SpawnAV8BAT","AV8B AT","",{_oldVeh = nearestObjects [armourSpawnPad, ["Car","Tank","air"],10]; {deleteVehicle _x}forEach _oldVeh;_veh = "CUP_B_AV8B_AGM_USMC" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;fjetSpawned = 1;},{TRUE}] call ace_interact_menu_fnc_createAction;
 ["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnAV8BATAction] call ace_interact_menu_fnc_addActionToClass;
 
-SpawnAV8BGBU12Action = ["SpawnAV8BGBU12","AV8B GBU12","",_oldVeh = nearestObjects [armourSpawnPad, ["Car","Tank","air"],10]; {deleteVehicle _x}forEach _oldVeh;_veh = "CUP_B_AV8B_GBU12_USMC" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;fjetSpawned = 1;},{TRUE}] call ace_interact_menu_fnc_createAction;
+SpawnAV8BGBU12Action = ["SpawnAV8BGBU12","AV8B GBU12","",{_oldVeh = nearestObjects [armourSpawnPad, ["Car","Tank","air"],10]; {deleteVehicle _x}forEach _oldVeh;_veh = "CUP_B_AV8B_GBU12_USMC" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;fjetSpawned = 1;},{TRUE}] call ace_interact_menu_fnc_createAction;
 ["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnAV8BGBU12Action] call ace_interact_menu_fnc_addActionToClass;
 
 SpawnAV8BMK82Action = ["SpawnAV8BMK82","AV8B MK82","",{_oldVeh = nearestObjects [armourSpawnPad, ["Car","Tank","air"],10]; {deleteVehicle _x}forEach _oldVeh;_veh = "CUP_B_AV8B_MK82_USMC" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;fjetSpawned = 1;},{TRUE}] call ace_interact_menu_fnc_createAction;
