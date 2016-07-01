@@ -34,7 +34,7 @@ class CfgWeapons
 	class UK3CB_BAF_L22A2;
 	class hlc_rifle_SLR;
 	class CUP_launch_FIM92Stinger;
-	class UK3CB_BAF_SpecterLDS_Dot_3D;
+	class RKSL_optic_LDS_PIP;
 	class tf47_m3maaws;
 	class kio_Elcan_reflex;
 	class UK3CB_BAF_L86A2;
@@ -65,7 +65,7 @@ class CfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="UK3CB_BAF_SpecterLDS_Dot_3D";
+				item="RKSL_optic_LDS_PIP";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -83,7 +83,7 @@ class CfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L110A2";
-				item="UK3CB_BAF_SpecterLDS_Dot_3D";
+				item="RKSL_optic_LDS_PIP";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -137,7 +137,7 @@ class CfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="UK3CB_BAF_SpecterLDS_Dot_3D";
+				item="RKSL_optic_LDS_PIP";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -155,7 +155,7 @@ class CfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L7A2";
-				item="UK3CB_BAF_SpecterLDS_Dot_3D";
+				item="RKSL_optic_LDS_PIP";
 			};
 		};
 	};
@@ -193,14 +193,14 @@ class CfgWeapons
 	class UK3CB_BAF_L86A1:UK3CB_BAF_L86A2
 	{
 		displayName = "L86A1";
-		ACE_Overheating_JamChance[] = {0, 0.012, 0.018, 0.033};//jams never, every 83 rounds, every 55 rouds, every 30 rounds
+		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
 	};
 	class UK3CB_BAF_L86A1_SUSAT3D:UK3CB_BAF_L86A2
 	{
 		scope = 1;
 		displayName = "L86A1";
-		ACE_Overheating_JamChance[] = {0, 0.012, 0.018, 0.033};//jams never, every 83 rounds, every 55 rouds, every 30 rounds
+		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
 		class LinkedItems
 		{
@@ -214,14 +214,14 @@ class CfgWeapons
 	class UK3CB_BAF_L85A1:UK3CB_BAF_L85A2
 	{
 		displayName = "L85A1";
-		ACE_Overheating_JamChance[] = {0, 0.012, 0.018, 0.033};//jams never, every 83 rounds, every 55 rouds, every 30 rounds
+		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
 	};
 	class UK3CB_BAF_L85A1_SUSAT3D:UK3CB_BAF_L85A2
 	{
 		scope = 1;
 		displayName = "L85A1";
-		ACE_Overheating_JamChance[] = {0, 0.012, 0.018, 0.033};//jams never, every 83 rounds, every 55 rouds, every 30 rounds
+		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
 		class LinkedItems
 		{
@@ -236,7 +236,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		displayName = "L85A1 W/ L123A2 Ladder";
-		ACE_Overheating_JamChance[] = {0, 0.08, 0.12, 0.25};//jams never, every 83 rounds, every 55 rouds, every 30 rounds
+		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
 		class LinkedItems
 		{
@@ -512,22 +512,62 @@ class CfgVehicles
             class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 30;
+				count = 25;
 			};
 			class _xx_Morphine
 			{
 				name = "ACE_morphine";
+				count = 15;
+			};
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
 				count = 25;
 			};
-			class _xx_Epipen
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 25;
+			};
+			class _xxACE_adenosine
+			{
+				name = "ACE_adenosine";
+				count = 8;
+			};
+			class _xxACE_atropine
+			{
+				name = "ACE_atropine";
+				count = 2;
+			};
+			class _xxACE_epinephrine
 			{
 				name = "ACE_epinephrine";
 				count = 10;
 			};
-			class _xx_ACE_bloodIV_500
+			class _xxACE_packingBandage
 			{
-				name = "ACE_bloodIV_500";
-				count = 10;
+				name = "ACE_packingBandage";
+				count = 25;
+			};
+			class _xxACE_personalAidKit
+			{
+				name = "ACE_personalAidKit";
+				count = 1;
+			};
+			class _xxACE_salineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 8;
+			};
+			class _xxACE_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 25;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 6;
 			};
 		};
 	};
