@@ -113,6 +113,10 @@ class CfgVehicles
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 	
+	include "\1990s\90.cpp";
+	include "\Coin\Coin.cpp";
+	include "\Mechanized\Mechanized.cpp";
+	include "\Modern\Modern.cpp";
 /*///////////////////////////////////////
 //                                     //
 //              USSR                   //

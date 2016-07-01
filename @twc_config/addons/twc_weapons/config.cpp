@@ -559,11 +559,6 @@ class CfgVehicles
 				name = "ACE_salineIV_500";
 				count = 8;
 			};
-			class _xxACE_packingBandage
-			{
-				name = "ACE_packingBandage";
-				count = 25;
-			};
 			class _xxACE_tourniquet
 			{
 				name = "ACE_tourniquet";
