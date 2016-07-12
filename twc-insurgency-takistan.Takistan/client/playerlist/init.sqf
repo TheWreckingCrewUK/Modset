@@ -1,0 +1,1 @@
+execVM "client\playerlist\psync.sqf";

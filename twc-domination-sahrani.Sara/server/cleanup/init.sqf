@@ -1,0 +1,1 @@
+execVM "server\cleanup\deadbodies.sqf";

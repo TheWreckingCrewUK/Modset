@@ -1,0 +1,339 @@
+DisabledAI		= 1;
+joinUnassigned	= 1;
+disableChannels[]={1,2,3,4,5,6};
+
+
+onLoadName = "Domination";
+onLoadMission = "http://www.thewreckingcrew.co.uk/";
+author = "Jayman[TWC]";
+loadScreen = "server\pics\loading.jpg";
+
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 60;
+};
+
+
+respawn="BASE";
+respawndelay = 15;
+respawnDialog = true;
+respawnOnStart = 0;
+
+enableDebugConsole = 1;
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Not enough players";
+		subtitle = "Play as general infantry for now";
+		description = "";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End2
+	{
+		title = "Pilot Unavailable";
+		subtitle = "You need at least 5 players per pilot.";
+		description = "Play general infantry for now!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End3
+	{
+		title = "Pilot is already online";
+		subtitle = "Wait till player count is over 15 to be a Pilot.";
+		description = "Play General infantry for now!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End4
+	{
+		title = "Pilot unavailable";
+		subtitle = "You need 5 people online to play as the Pilot.";
+		description = "Play general infantry for now!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End5
+	{
+		title = "Mission End";
+		subtitle = "Good Job!";
+		description = "You will need to to download our mods off Arma 3 Sync to continue playing.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End6
+	{
+		title = "You can not play as a human Civilian";
+		subtitle = "You must be a member and have at least 20 people online";
+		description = "Play as Blufor for now";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class End7
+	{
+		title = "You can not play as the Apache crew";
+		subtitle = "You must be a member and have at least 20 people online";
+		description = "Play as Blufor for now";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
+
+
+class ACE_Settings {
+//ACE Sitting
+	class ace_sitting_enable {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+//ACE Finger
+	class ace_finger_enabled {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+//ACE Respawn
+	class ace_respawn_SavePreDeathGear {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+	class ace_respawn_RemoveDeadBodiesDisconnected {
+	    value = 0;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+//ACE Microdagr
+	class ace_microdagr_MapDataAvailable {
+		value = 1;
+		typeName = "SCALAR";
+		force = 1;
+	};
+//ACE Explosives
+	class ace_explosives_PunishNonSpecialists {
+	    value = 0;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+//ACE Medical
+	class ace_medical_level {
+		value = 1;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_medical_medicSetting {
+		value = 1;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_medical_litterCleanUpDelay {
+		value = 1800;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_medical_enableFor {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_medical_enableScreams {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_medical_allowDeadBodyMovement {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+//ACE Logistics Rearm
+	class ace_rearm_level {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+//ACE Logistics Refuel
+	class ace_refuel_rate {
+		value = 10;
+		typeName = "SCALAR";
+		force = 1;
+	};
+//ACE Logistics Repair
+	class ace_repair_engineerSetting_Repair {
+	    value = 0;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_repair_consumeItem_ToolKit {
+	    value = 0;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_repair_fullRepairLocation {
+	    value = 0;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_repair_engineerSetting_fullRepair {
+	    value = 0;
+	    typeName = "SCALAR";
+	    force = 1;
+	};
+	class ace_repair_wheelRepairRequiredItems {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+//ACE Advanced Ballistics
+	class ace_advanced_ballistics_enabled {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+//ACE Team Management
+	class ace_interaction_EnableTeamManagement {
+	    value = 0;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+//ACE Zeus Settings
+	class ace_zeus_autoAddObjects {
+	    value = 1;
+	    typeName = "BOOL";
+	    force = 1;
+	};
+//ACE Hearing
+	class ace_hearing_EnableCombatDeafness {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_hearing_EarplugsVolume {
+		value = 0.5;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_hearing_UnconsciousnessVolume {
+		value = 0;
+		typeName = "BOOL";
+		force = 1;
+	}
+	class ace_hearing_DisableEarRinging {
+		value = 0;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_hearing_enabledForZeusUnits {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_hearing_autoAddEarplugsToUnits {
+		value = 0;
+		typeName = "BOOL";
+		force = 1;
+	};
+//ACE Spectator
+	class ace_spectator_filterUnits {
+		value = 1;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_spectator_filterSides {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_spectator_restrictModes {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class ace_spectator_restrictVisions {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+    // ACE View Distance Limiter
+	class ace_viewdistance_enabled {
+		value = 1;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class ace_viewdistance_limitViewDistance {
+		value = 2500;
+		typeName = "SCALAR";
+		force = 1;
+	};
+};
+/*
+* Unused. moved to init.sqf
+
+class ACRE_Settings{
+//ACRE Basic Settings:
+	class acre_api_basicMissionSetup_BabelSetup {
+		value = 0;
+		typeName = "SCALAR";
+		force = 1;
+	};
+	class acre_api_basicMissionSetup_RadioSetup {
+		value = 0;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class acre_api_basicMissionSetup_DefaultRadio {
+		value = "";
+		typeName = "STRING";
+		force = 1;
+	};
+	class acre_api_basicMissionSetup_DefaultRadio_Two {
+		value = "";
+		typeName = "STRING";
+		force = 1;
+	};
+	class acre_api_basicMissionSetup_DefaultRadio_Three {
+		 value = "";
+		 typeName = "STRING";
+		 force = 1;
+	};
+	class acre_api_basicMissionSetup_DefaultRadio_Four {
+		value = "";
+		typeName = "STRING";
+		force = 1;
+	};
+//ACRE Difficulty Settings
+	class acre_api_DifficultySettings_Interference {
+		value = 0;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class acre_api_DifficultySettings_SignalLoss {
+		value = 0;
+		typeName = "BOOL";
+		force = 1;
+	};
+	class acre_api_DifficultySettings_FullDuplex {
+		value = 0;
+		typeName = "BOOL";
+		force = 1;
+	};
+};
+*/
