@@ -1,1 +1,0 @@
-execVM "server\sys_bluDeath\bluforDeath.sqf";
