@@ -1,0 +1,99 @@
+DisabledAI		= 1;
+joinUnassigned	= 1;
+disableChannels[]={0,1,2,3,4,6};
+
+
+onLoadName = "Insurgency Plus 3";
+onLoadMission = "http://www.thewreckingcrew.co.uk/";
+author = "WiredTiger[TWC] / Jayman[TWC] / Paddock[TWC]";
+loadScreen = "server\pics\loading.jpg";
+
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 60;
+};
+
+
+respawn="BASE";
+respawndelay = 30;
+respawnDialog = false;
+respawnOnStart = 0;
+
+enableDebugConsole = 1;
+
+
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Mission End";
+		subtitle = "Good Job!";
+		description = "Stick around for some Domination on Altis, next!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End2
+	{
+		title = "Pilot Unavailable";
+		subtitle = "More players are needed for Pilot.";
+		description = "5 for Pilot. 10 + Pilot active for Crew Chief.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End3
+	{
+		title = "You can not play as a human Civilian";
+		subtitle = "";
+		description = "Play as Blufor for now";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End4
+	{
+		title = "Apache Unavailable";
+		subtitle = "20 Players and a Member.";
+		description = "Play general infantry for now!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End5
+	{
+		title = "Mission End";
+		subtitle = "Good Job!";
+		description = "Stick around for some Domination on Altis, next!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End6
+	{
+		title = "Armour Crew Unavailible";
+		subtitle = "";
+		description = "Play as general infantry for now";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class End7
+	{
+		title = "You can not play as the Apache crew";
+		subtitle = "You must be a member and have at least 20 people online";
+		description = "Play as Blufor for now";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
