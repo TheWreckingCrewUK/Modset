@@ -36,7 +36,7 @@ if (!isNil "humanCiv3" && {player == humanCiv3}) then {
 if (!isNil "p31" && {player == p31}) then {
     g_class = "PLT";
 	g_group = "1";
-	g_unit = "123";
+	g_unit = "139";
 	g_name = "Pilot";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC343";
@@ -47,7 +47,7 @@ if (!isNil "p31" && {player == p31}) then {
 if (!isNil "p32" && {player == p32}) then {
     g_class = "PLT_CREW";
 	g_group = "1";
-	g_unit = "130";
+	g_unit = "140";
 	g_name = "Crew Chief";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC343";

@@ -11,24 +11,22 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "rhs_uniform_cu_ocp";
-player addItemToUniform "ACRE_PRC148_ID_1";
+player forceAddUniform "rhs_uniform_FROG01_d";
+player addItemToUniform "ACRE_PRC148";
 player addItemToUniform "ACE_EarPlugs";
 for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
-player addVest "rhsusf_iotv_ocp_Rifleman";
-for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
-for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
+player addVest "rhsusf_spc_mg";
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-player addBackpack "rhsusf_assault_eagleaiii_ocp";
-for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-player addHeadgear "rhsusf_ach_helmet_ESS_ocp";
+player addItemToVest "SmokeShell";
+player addItemToVest "rhsusf_100Rnd_762x51";
+player addBackpack "rhsusf_assault_eagleaiii_coy";
+for "_i" from 1 to 3 do {player addItemToBackpack "rhsusf_100Rnd_762x51_m62_tracer";};
+player addHeadgear "rhsusf_mich_helmet_marpatd";
 
 comment "Add weapons";
-player addWeapon "rhs_weap_m4a1_carryhandle_grip";
-player addPrimaryWeaponItem "rhsusf_acc_anpeq15A";
-player addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";
-player addWeapon "UK3CB_BAF_AT4_AP_Launcher";
+player addWeapon "rhs_weap_m240B";
+player addPrimaryWeaponItem "rhsusf_acc_ELCAN";
 
 comment "Add items";
 player linkItem "ItemMap";
