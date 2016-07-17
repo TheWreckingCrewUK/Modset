@@ -128,7 +128,7 @@ if ((str player) in _specialSlots)then{
 			case "helo2": {10};
 			case "tank1";
 			case "tank2";
-			case "tank3": {15};
+			case "tank3": {12};
 			case "humanCiv1": {10};
 			case "humanCiv2": {15};
 			case "humanCiv3": {20};
