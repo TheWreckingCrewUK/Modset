@@ -114,9 +114,9 @@ class CfgVehicles
 	class I_Soldier_F;
 	
 	include "\1990s\90.cpp";
-	include "\Coin\Coin.cpp";
-	include "\Mechanized\Mechanized.cpp";
-	include "\Modern\Modern.cpp";
+	include "\coin\coin.cpp";
+	include "\mechanized\mechanized.cpp";
+	include "\modern\modern.cpp";
 /*///////////////////////////////////////
 //                                     //
 //              USSR                   //

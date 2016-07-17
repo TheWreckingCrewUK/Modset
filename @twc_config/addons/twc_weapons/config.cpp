@@ -1533,27 +1533,52 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 50;
+				count = 100;
 			};
 			class _xx_Morphine
 			{
 				name = "ACE_morphine";
-				count = 25;
+				count = 50;
 			};
-			class _xx_Epipen
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 100;
+			};
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 100;
+			};
+			class _xxACE_adenosine
+			{
+				name = "ACE_adenosine";
+				count = 30;
+			};
+			class _xxACE_atropine
+			{
+				name = "ACE_atropine";
+				count = 30;
+			};
+			class _xxACE_epinephrine
 			{
 				name = "ACE_epinephrine";
-				count = 10;
+				count = 30;
 			};
-			class _xx_ACE_bloodIV_500
+			class _xxACE_packingBandage
 			{
-				name = "ACE_bloodIV_500";
-				count = 40;
+				name = "ACE_packingBandage";
+				count = 100;
 			};
-			class _xx_MortarRound
+			class _xxACE_salineIV_500
 			{
-				name = "UK3CB_BAF_1Rnd_81mm_Mo_shells";
-				count = 40;
+				name = "ACE_salineIV_500";
+				count = 50;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 50;
 			};
 		};
 		class TransportWeapons
@@ -1710,27 +1735,52 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 50;
+				count = 100;
 			};
 			class _xx_Morphine
 			{
 				name = "ACE_morphine";
-				count = 25;
+				count = 50;
 			};
-			class _xx_Epipen
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 100;
+			};
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 100;
+			};
+			class _xxACE_adenosine
+			{
+				name = "ACE_adenosine";
+				count = 30;
+			};
+			class _xxACE_atropine
+			{
+				name = "ACE_atropine";
+				count = 30;
+			};
+			class _xxACE_epinephrine
 			{
 				name = "ACE_epinephrine";
-				count = 10;
+				count = 30;
 			};
-			class _xx_ACE_bloodIV_500
+			class _xxACE_packingBandage
 			{
-				name = "ACE_bloodIV_500";
-				count = 40;
+				name = "ACE_packingBandage";
+				count = 100;
 			};
-			class _xx_MortarRound
+			class _xxACE_salineIV_500
 			{
-				name = "UK3CB_BAF_1Rnd_81mm_Mo_shells";
-				count = 40;
+				name = "ACE_salineIV_500";
+				count = 50;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 50;
 			};
 		};
 		class TransportWeapons

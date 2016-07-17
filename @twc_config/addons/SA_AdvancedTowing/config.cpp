@@ -43,7 +43,7 @@ class CfgFunctions
 	{
 		class AdvancedTowing
 		{
-			file="\SA_AdvancedTowing\functions";
+			file="\sa_advancedtowing\functions";
 			class advancedTowingInit
 			{
 				postInit=1;
