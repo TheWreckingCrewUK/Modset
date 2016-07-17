@@ -6,7 +6,7 @@
 
 execVM "SHK_pos\shk_pos_init.sqf";
 
-//ACRE Settings
+//ACRE Settings  test
 [true] call acre_api_fnc_setRevealToAI;
 
 if (isServer) then {
