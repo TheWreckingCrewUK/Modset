@@ -1,28 +1,3 @@
-class CfgPatches
-{
-	class twc_faction
-	{
-		units[]=
-		{
-			"Modern_British_VehicleCrew",
-			"Modern_British_VehicleCommander",
-			"Mechanized_British_2IC",
-		};
-		weapons[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"A3_Characters_F_BLUFOR",
-			"A3_Characters_F_OPFOR"
-		};
-	};
-};
-class CfgVehicles
-{
-	class B_Soldier_base_F;
-	class O_Soldier_base_F;
-	class I_Soldier_F;
-	
 /***************************************
 *                 Mechanized           *
 ***************************************/	
@@ -310,4 +285,3 @@ class CfgVehicles
 		"UK3CB_BAF_HMNVS"		
 		};
 	};
-};

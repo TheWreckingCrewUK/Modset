@@ -1,46 +1,4 @@
-class CfgPatches
-{
-	class twc_faction
-	{
-		units[]=
-		{
-			"Cold_War_Argentinian_Squadleader",
-			"Cold_War_Argentinian_Rifleman",
-			"Cold_War_Argentinian_AT_Rifleman",
-			"Cold_War_Argentinian_AT_Assistant",
-			"Cold_War_Argentinian_AA",
-			"Cold_War_Argentinian_AA_Assistant",
-			"Cold_War_Argentinian_Machinegunner",
-			"Cold_War_Argentinian_MG_Assistant",
-			"ColdWar_Rifleman",
-			"ColdWar_AT",
-			"ColdWar_AT_ASS",
-			"ColdWar_2IC",
-			"ColdWar_MG",
-			"ColdWar_MG_AS",
-			"ColdWar_Section_Leader",
-			"ColdWar_Platoon_Commander",
-			"ColdWar_sergeant",
-			"ColdWar_Medic",
-			"ColdWar_FAC",
-			"ColdWar_JetPilot",
-			"ColdWar_AA_Gunner",
-			"ColdWar_AA_Assistant"
-		};
-		weapons[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"A3_Characters_F_BLUFOR",
-			"A3_Characters_F_OPFOR"
-		};
-	};
-};
-class CfgVehicles
-{
-	class B_Soldier_base_F;
-	class O_Soldier_base_F;
-	class I_Soldier_F;
+
 /***************************************************
 *                      Cold War                    *
 ***************************************************/
@@ -1501,4 +1459,3 @@ class CfgVehicles
 		"ACE_morphine"			
 		};		
 	};
-};

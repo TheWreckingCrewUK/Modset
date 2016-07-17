@@ -1,35 +1,5 @@
-class CfgPatches
-{
-	class twc_faction
-	{
-		units[]=
-		{
-			
-			"Modern_British_Coin_Squadleader",
-			"Modern_British_Coin_Pointman",
-			"Modern_British_Coin_Grenadier",
-			"Modern_British_Coin_Automaticrifleman",
-			"Modern_British_Coin_2IC",
-			"Modern_British_Coin_Machinegunner",
-			"Modern_British_Coin_Marksman",
-			"Modern_British_Coin_Platoon_Commander",
-			"Modern_British_Coin_Platoon_Sergeant",
-			"Modern_British_Coin_Medic",
-		};
-		weapons[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"A3_Characters_F_BLUFOR",
-			"A3_Characters_F_OPFOR"
-		};
-	};
-};
-class CfgVehicles
-{
-	class B_Soldier_base_F;
-	class O_Soldier_base_F;
-	class I_Soldier_F;
+
+
 /**************************************************
 *                    Modern Coin                  *
 **************************************************/
@@ -1046,4 +1016,3 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"UK3CB_BAF_HMNVS"		
 		};
 	};
-};

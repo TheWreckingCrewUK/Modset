@@ -1,41 +1,3 @@
-class CfgPatches
-{
-	class twc_faction
-	{
-		units[]=
-		{
-			"Modern_British_Squadleader",
-			"Modern_British_Squadleader",
-			"Modern_British_Rifleman",
-			"Modern_British_Grenadier",
-			"Modern_British_Automaticrifleman",
-			"Modern_British_2IC",
-			"Modern_British_Machinegunner",
-			"Modern_British_Marksman",
-			"Modern_British_Platoon_Commander",
-			"Modern_British_Platoon_Sergeant",
-			"Modern_British_Medic",
-			"Modern_HeloPilot",
-			"Modern_JetPilot",
-			"Modern_British_MortarGunner",
-			"Modern_British_MortarAssistant",
-			"Pilot_British"
-		};
-		weapons[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"A3_Characters_F_BLUFOR",
-			"A3_Characters_F_OPFOR"
-		};
-	};
-};
-
-class CfgVehicles
-{
-	class B_Soldier_base_F;
-	class O_Soldier_base_F;
-	class I_Soldier_F;
 	class Modern_British_Squadleader: B_Soldier_base_F
 	{
 		_generalMacro="Modern_British_Squadleader";
@@ -1816,4 +1778,3 @@ class CfgVehicles
 		"ACE_DAGR"
 		};
 	};
-};

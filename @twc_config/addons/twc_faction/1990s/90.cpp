@@ -1,43 +1,4 @@
-class CfgPatches
-{
-	class twc_faction
-	{
-		units[]=
-		{
-			"1990_British_Squadleader",
-			"1990_British_Rifleman",
-			"1990_British_Grenadier",
-			"1990_British_Gunner",
-			"1990_British_2IC",
-			"1990_British_Platoon_Commander",
-			"1990_British_Platoon_Sergeant",
-			"1990_British_Medic",
-			"1990_HeloPilot",
-			"1990_JetPilot",
-			"1990_British_Squadleader_Desert",
-			"1990_British_Rifleman_Desert",
-			"1990_British_Grenadier_Desert",
-			"1990_British_Gunner_Desert",
-			"1990_British_2IC_Desert",
-			"1990_British_Platoon_Commander_Desert",
-			"1990_British_Platoon_Sergeant_Desert",
-			"1990_British_Medic_Desert",
-			"1990_HeloPilot_Desert",
-		};
-		weapons[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"A3_Characters_F_BLUFOR",
-			"A3_Characters_F_OPFOR"
-		};
-	};
-};
-class CfgVehicles
-{
-	class B_Soldier_base_F;
-	class O_Soldier_base_F;
-	class I_Soldier_F;
+
 //////////////////////////////////////////////////////////////////
 //                                                              //
 //                           1990 British                       //
@@ -2316,4 +2277,3 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		"ACE_morphine"
 		};		
 	};	
-};
