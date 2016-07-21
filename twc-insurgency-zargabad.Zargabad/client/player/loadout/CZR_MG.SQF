@@ -17,18 +17,20 @@ player addItemToUniform "ACE_EarPlugs";
 for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 player addVest "CUP_V_B_MTV_MG";
-for "_i" from 1 to 2 do {player addItemToVest "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";};
+for "_i" from 1 to 1 do {player addItemToVest "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";};
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
 player addBackpack "B_Kitbag_cbr";
-for "_i" from 1 to 2 do {player addItemToBackpack "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M";};
+for "_i" from 1 to 3 do {player addItemToBackpack "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";};
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-player addHeadgear "CUP_H_PMC_Cap_Tan";
+player addHeadgear "rhsusf_ach_bare_tan_ess";
 
 comment "Add weapons";
-player addWeapon "CUP_lmg_M60E4";
-player addWeapon "ACE_Vector";
+player addWeapon "CUP_lmg_M249_E2";
+player addPrimaryWeaponItem "UK3CB_BAF_LLM_Flashlight_Black";
+player addPrimaryWeaponItem "CUP_optic_ElcanM145";
 
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
+player linkItem "CUP_NVG_PVS7";

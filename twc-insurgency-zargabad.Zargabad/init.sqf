@@ -6,7 +6,7 @@
 
 execVM "SHK_pos\shk_pos_init.sqf";
 
-//ACRE Settings  test
+//ACRE Settings
 [true] call acre_api_fnc_setRevealToAI;
 
 if (isServer) then {
@@ -17,6 +17,7 @@ execVM "client\zeus\zeus.sqf";
 execVM "client\zeus\zeus-Fakematty.sqf";
 execVM "client\zeus\zeus-jayman.sqf";
 execVM "client\zeus\zeus-Paddock.sqf";
+execVM "client\zeus\zeus-Twiggy.sqf";
 
 waitUntil {!isNull player};
 waitUntil {player == player};
@@ -133,7 +134,7 @@ if ((str player) in _specialSlots)then{
 			case "humanCiv1": {10};
 			case "humanCiv2": {15};
 			case "humanCiv3": {20};
-			case "p36": {10};
+			case "p36";
 			case "p37": {10};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};

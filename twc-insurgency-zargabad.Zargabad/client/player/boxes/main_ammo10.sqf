@@ -12,7 +12,7 @@
 				edited by FakeMatty
 */
 
-_marker = "crate3";  // marker used to spawn.
+_marker = "crate10";  // marker used to spawn.
 _boxType = "CUP_BAF_VehicleBox";  // the type of ammobox used.
 _timer = 240;  // time in seconds until box is refilled.
  

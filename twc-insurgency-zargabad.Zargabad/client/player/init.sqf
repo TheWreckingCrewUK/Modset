@@ -36,10 +36,10 @@ if (!isNil "humanCiv3" && {player == humanCiv3}) then {
 if (!isNil "p38" && {player == p38}) then {
     g_class = "PLT";
 	g_group = "1";
-	g_unit = "123";
+	g_unit = "146";
 	g_name = "Pilot";
 	g_radio_channel = 10;
-	g_radio = "ACRE_PRC343";
+	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -47,10 +47,10 @@ if (!isNil "p38" && {player == p38}) then {
 if (!isNil "p39" && {player == p39}) then {
     g_class = "PLT_CREW";
 	g_group = "1";
-	g_unit = "130";
+	g_unit = "147";
 	g_name = "Crew Chief";
 	g_radio_channel = 10;
-	g_radio = "ACRE_PRC343";
+	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -391,10 +391,10 @@ if (!isNil "P27" && {player == P27}) then {
 
 
 if (!isNil "P28" && {player == P28}) then {
-    g_class = "CZR_AT";
+    g_class = "CZR_GRN";
 	g_group = "0";
 	g_unit = "136";
-	g_name = "Foxtrot AT Rifleman";
+	g_name = "Foxtrot Grenadier";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 6;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
@@ -469,7 +469,7 @@ if (!isNil "P34" && {player == P34}) then {
 };
 
 if (!isNil "P35" && {player == P35}) then {
-    g_class = "GER_MD";
+    g_class = "GER_MED";
 	g_group = "0";
 	g_unit = "143";
 	g_name = "Golf Medic";
@@ -829,6 +829,9 @@ execVM "client\player\boxes\main_ammo9.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
+execVM "client\player\boxes\main_ammo10.sqf";
+_test = format["hint '%1'",getPlayerUID player];
+_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
 
 execVM "client\player\psync.sqf";

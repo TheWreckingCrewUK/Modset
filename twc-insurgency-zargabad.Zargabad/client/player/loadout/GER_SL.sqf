@@ -18,7 +18,7 @@ for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_epinephrine";};
 player addItemToUniform "ACE_DAGR";
 player addItemToUniform "ACRE_PRC148_ID_1";
-player addVest "CUP_V_B_GER_Carrier_Rig_3_Brown";
+player addVest "CUP_V_I_RACS_Carrier_Vest_2";
 for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
@@ -33,3 +33,7 @@ comment "Add weapons";
 player addWeapon "CUP_arifle_G36A";
 player addWeapon "ACE_Vector";
 
+comment "Add items";
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "ItemWatch";
