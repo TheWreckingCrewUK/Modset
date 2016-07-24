@@ -1,8 +1,4 @@
 
-
-/**************************************************
-*                    Modern Coin                  *
-**************************************************/
    class Modern_British__Coin_Squadleader: B_Soldier_base_F
 	{
 		_generalMacro="Coin_British_Squadleader";

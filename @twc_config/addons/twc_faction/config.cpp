@@ -107,16 +107,21 @@ class CfgVehicleClasses
 		displayname="Cold War Argentinia";
 	};
 };
+
+
+
+
 class CfgVehicles
 {
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 	
-	include "\1990s\90.cpp";
-	include "\coin\coin.cpp";
-	include "\mechanized\mechanized.cpp";
-	include "\modern\modern.cpp";
+	#include "90.hpp"
+	#include "coin.hpp"
+	#include "mechanized.hpp"
+	#include "modern.hpp"
+	#include "coldwar.hpp"
 /*///////////////////////////////////////
 //                                     //
 //              USSR                   //

@@ -1,7 +1,4 @@
 
-/***************************************************
-*                      Cold War                    *
-***************************************************/
 	class ColdWar_Rifleman: B_Soldier_base_F
 	{
 		_generalMacro="Coldwar_Rifleman";

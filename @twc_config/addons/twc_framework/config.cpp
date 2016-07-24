@@ -87,6 +87,12 @@ class CfgFunctions
 			class patrolMarkers
 			{
 			};
+			class CreateTask
+			{
+			};
+			class UpdateTask
+			{
+			};
 		};
 	};
 };

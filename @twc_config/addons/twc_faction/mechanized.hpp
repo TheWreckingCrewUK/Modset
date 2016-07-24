@@ -1,6 +1,4 @@
-/***************************************
-*                 Mechanized           *
-***************************************/	
+
 	class Modern_British_VehicleCrew: B_Soldier_base_F
 	{
 		_generalMacro="Modern_British_VehicleCrew";

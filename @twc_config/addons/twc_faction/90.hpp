@@ -1,11 +1,4 @@
-
-//////////////////////////////////////////////////////////////////
-//                                                              //
-//                           1990 British                       //
-//                                                              //
-//////////////////////////////////////////////////////////////////
-
-	class 1990_British_Squadleader: B_Soldier_base_F
+class 1990_British_Squadleader: B_Soldier_base_F
 	{
 		_generalMacro="1990_British_Squadleader";
 		scope=2;
@@ -1073,7 +1066,7 @@
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_epinephrine",
-		"ACE_tourniquet",
+		"ACE_tourniquet"
 		};
 		respawntems[]=
 		{
@@ -1169,7 +1162,7 @@
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_epinephrine",
-		"ACE_tourniquet",
+		"ACE_tourniquet"
 		};
 		respawntems[]=
 		{
@@ -2263,7 +2256,7 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_epinephrine",
-		"ACE_tourniquet",
+		"ACE_tourniquet"
 		};
 		respawntems[]=
 		{
