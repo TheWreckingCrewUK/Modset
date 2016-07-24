@@ -18,7 +18,7 @@ _timer = 240;  // time in seconds until box is refilled.
  
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2]];
+_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2],["ACE_fieldDressing",10],["ACE_morphine",10],["ACE_elasticBandage",10],["ACE_quikclot",10],["ACE_packingBandage",10]];
 
 _tmp_weapons = [];
 _tmp_magazines = [];
@@ -43,8 +43,6 @@ if (g_class == "BAF_SL") then {
     _tmp_items = 
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["ACE_epinephrine",5],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
 		["UK3CB_BAF_LLM_IR",1],
@@ -88,8 +86,6 @@ if (g_class == "BAF_SL") then {
 	_tmp_items = 
 	[
 		["ACE_MapTools",1],
-		["ACE_fieldDressing",20],
-		["ACE_morphine",10],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
@@ -131,8 +127,6 @@ if (g_class == "BAF_SL") then {
 	_tmp_items =
 	[
 		["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
@@ -164,8 +158,6 @@ if (g_class == "BAF_SL") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
 		["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
@@ -198,8 +190,6 @@ if (g_class == "BAF_SL") then {
 	_tmp_items = 
 	[
 		["ACE_MapTools",1],
-		["ACE_fieldDressing",20],
-		["ACE_morphine",10],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
@@ -230,8 +220,6 @@ if (g_class == "BAF_SL") then {
 	_tmp_items = 
 	[
 		["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["STKR_Predator",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["ACRE_PRC343",1]
@@ -260,8 +248,6 @@ if (g_class == "BAF_SL") then {
 	_tmp_items = 
 	[
 		["ACE_MapTools",1],
-		["ACE_fieldDressing",20],
-		["ACE_morphine",10],
 		["UK3CB_BAF_TA648_308",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["STKR_Predator",1],
@@ -291,10 +277,17 @@ if (g_class == "BAF_SL") then {
 	_tmp_items =
 	[
 		["ACE_fieldDressing",50],
+		["ACE_elasticBandage", 50],
+		["ACE_quikclot", 50],
+		["ACE_packingBandage", 50],
+		["ACE_personalAidKit", 50],
 		["ACE_morphine",50],
 		["ACE_epinephrine",50],
-		["ACE_bloodIV",50],
+		["ACE_atropine", 50],
+		["ACE_salineIV",50],
 		["ACE_bodyBag",10],
+		["ACE_surgicalKit", 50],
+		["ACE_tourniquet", 5],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
 	    ["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
@@ -331,8 +324,6 @@ if (g_class == "US_SL") then {
     _tmp_items = 
 	[
 		["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["ACE_epinephrine",5],
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
@@ -378,8 +369,6 @@ if (g_class == "US_TL") then {
     _tmp_items = 
 	[
 		["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["UK3CB_BAF_TA31F_3D",1],
 		["rhsusf_acc_anpeq15",1],
 		["UK3CB_BAF_Eotech",1],
@@ -421,8 +410,6 @@ if (g_class == "US_TL") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["UK3CB_BAF_TA31F_3D",1],
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_anpeq15A",1],
@@ -456,8 +443,6 @@ if (g_class == "US_TL") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["rhsusf_acc_ELCAN",1],
 		["rhsusf_acc_anpeq15A",1],
 		["UK3CB_BAF_Eotech",1],
@@ -495,8 +480,6 @@ if (g_class == "US_TL") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["UK3CB_BAF_TA31F_3D",1],
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_anpeq15A",1],
@@ -529,8 +512,6 @@ if (g_class == "US_TL") then {
 	_tmp_items = 
 	[
 		["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["rhsusf_acc_compm4",1],
 		["rhsusf_acc_LEUPOLDMK4",1],
 		["rhsusf_acc_anpeq15A",1],
@@ -563,10 +544,17 @@ if (g_class == "US_TL") then {
 	_tmp_items =
 	[
 		["ACE_fieldDressing",50],
+		["ACE_elasticBandage", 50],
+		["ACE_quikclot", 50],
+		["ACE_packingBandage", 50],
+		["ACE_personalAidKit", 50],
 		["ACE_morphine",50],
 		["ACE_epinephrine",50],
-		["ACE_bloodIV",50],
+		["ACE_atropine", 50],
+		["ACE_salineIV",50],
 		["ACE_bodyBag",10],
+		["ACE_surgicalKit", 50],
+		["ACE_tourniquet", 5],
 		["UK3CB_BAF_TA31F_3D",1],
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_compm4",1],
@@ -603,8 +591,6 @@ if (g_class == "US_TL") then {
     _tmp_items = 
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["ACE_epinephrine",5],
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
@@ -650,8 +636,6 @@ if (g_class == "US_TL") then {
     _tmp_items = 
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["UK3CB_BAF_TA31F_3D",1],
 		["rhsusf_acc_compm4",1],
 		["UK3CB_BAF_Eotech",1],
@@ -693,8 +677,6 @@ if (g_class == "US_TL") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["UK3CB_BAF_TA31F_3D",1],
 		["rhsusf_acc_compm4",1],
 		["UK3CB_BAF_Eotech",1],
@@ -731,8 +713,6 @@ if (g_class == "USMC_AR") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-		["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["rhsusf_acc_ELCAN",1],
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_anpeq15A",1],
@@ -767,8 +747,6 @@ if (g_class == "USMC_AR") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["UK3CB_BAF_TA31F_3D",1],
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_compm4",1],
@@ -798,8 +776,6 @@ if (g_class == "USMC_AR") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["rhsusf_acc_ELCAN",1],
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_anpeq15A",1],
@@ -831,8 +807,6 @@ if (g_class == "USMC_AR") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["UK3CB_BAF_TA31F_3D",1],
 		["rhsusf_acc_compm4",1],
 		["UK3CB_BAF_Eotech",1],
@@ -860,10 +834,17 @@ if (g_class == "USMC_AR") then {
 	_tmp_items =
 	[
 		["ACE_fieldDressing",50],
+		["ACE_elasticBandage", 50],
+		["ACE_quikclot", 50],
+		["ACE_packingBandage", 50],
+		["ACE_personalAidKit", 50],
 		["ACE_morphine",50],
 		["ACE_epinephrine",50],
-		["ACE_bloodIV",50],
+		["ACE_atropine", 50],
+		["ACE_salineIV",50],
 		["ACE_bodyBag",10],
+		["ACE_surgicalKit", 50],
+		["ACE_tourniquet", 5],
 		["UK3CB_BAF_TA31F_3D",1],
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_anpeq15A",1],
@@ -889,8 +870,6 @@ if (g_class == "ANA_SL") then {
 	_tmp_items = 
 	[
 		["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["ACE_epinephrine",5],
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
@@ -914,9 +893,7 @@ if (g_class == "ANA_SL") then {
 	];
 	_tmp_items = 
 	[
-		["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10]
+		["ACE_MapTools",1]
 	];
 };
 
@@ -934,9 +911,7 @@ if (g_class == "ANA_SL") then {
     ];
 	_tmp_items =
 	[
-		["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10]
+		["ACE_MapTools",1]
 	];
 };
 
@@ -952,9 +927,7 @@ if (g_class == "ANA_SL") then {
     ];
 	_tmp_items =
 	[
-		["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10]
+		["ACE_MapTools",1]
 	];
 };
 
@@ -971,10 +944,17 @@ if (g_class == "ANA_SL") then {
 	_tmp_items =
 	[
 		["ACE_fieldDressing",50],
+		["ACE_elasticBandage", 50],
+		["ACE_quikclot", 50],
+		["ACE_packingBandage", 50],
+		["ACE_personalAidKit", 50],
 		["ACE_morphine",50],
 		["ACE_epinephrine",50],
-		["ACE_bloodIV",50],
-		["ACE_bodyBag",10]
+		["ACE_atropine", 50],
+		["ACE_salineIV",50],
+		["ACE_bodyBag",10],
+		["ACE_surgicalKit", 50],
+		["ACE_tourniquet", 5]
 	];
 };
  
@@ -996,8 +976,6 @@ if (g_class == "ANA_SL") then {
 	[
 		["ACE_DAGR",1],
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
 		["ACE_M26_Clacker",1],
@@ -1023,8 +1001,6 @@ if (g_class == "ANA_SL") then {
 	[
 		["ACE_DAGR",1],
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["ACRE_PRC343",1],
 		["rhsusf_ANPVS_14",1],
 		["ACRE_PRC343",1],
@@ -1051,8 +1027,6 @@ if (g_class == "ANA_SL") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["ACRE_PRC343",1],
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
@@ -1081,8 +1055,6 @@ if (g_class == "ANA_SL") then {
 	_tmp_items =
 	[
 		["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["ACRE_PRC148",1],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
 		["UK3CB_BAF_LLM_IR",1],
@@ -1147,8 +1119,6 @@ if (g_class == "GER_SL") then {
 	_tmp_items = 
 	[
 		["ACE_MapTools",1],
-		["ACE_fieldDressing",20],
-		["ACE_morphine",10],
 		["CUP_optic_MAAWS_Scope",1],
 		["ACRE_PRC148",1]
 	];
@@ -1173,8 +1143,6 @@ if (g_class == "GER_SL") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["ACRE_PRC148",1]
 	];
 };
@@ -1196,8 +1164,6 @@ if (g_class == "GER_SL") then {
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["CUP_optic_ACOG",1],
 		["CUP_optic_HoloBlack",1],
 		["ACRE_PRC148",1]
@@ -1220,10 +1186,17 @@ if (g_class == "GER_SL") then {
 	_tmp_items =
 	[
 		["ACE_fieldDressing",50],
+		["ACE_elasticBandage", 50],
+		["ACE_quikclot", 50],
+		["ACE_packingBandage", 50],
+		["ACE_personalAidKit", 50],
 		["ACE_morphine",50],
 		["ACE_epinephrine",50],
-		["ACE_bloodIV",50],
+		["ACE_atropine", 50],
+		["ACE_salineIV",50],
 		["ACE_bodyBag",10],
+		["ACE_surgicalKit", 50],
+		["ACE_tourniquet", 5],
 		["ACRE_PRC148",1]
 	];
 };
@@ -1283,8 +1256,6 @@ if (g_class == "POL_SL") then {
 	_tmp_items = 
 	[
 		["ACE_MapTools",1],
-		["ACE_fieldDressing",20],
-		["ACE_morphine",10],
 		["FHQ_optic_ACOG_tan",1],
 		["FHQ_acc_ANPEQ15",1],
 		["STKR_Predator",1],
@@ -1319,8 +1290,6 @@ if (g_class == "POL_SL") then {
 	_tmp_items =
 	[
 		["ACE_MapTools",1],
-        ["ACE_fieldDressing",20],
-        ["ACE_morphine",10],
 		["FHQ_optic_ACOG_tan",1],
 		["FHQ_acc_ANPEQ15",1],
 		["STKR_Predator",1],
@@ -1374,10 +1343,17 @@ if (g_class == "POL_SL") then {
 	_tmp_items =
 	[
 		["ACE_fieldDressing",50],
+		["ACE_elasticBandage", 50],
+		["ACE_quikclot", 50],
+		["ACE_packingBandage", 50],
+		["ACE_personalAidKit", 50],
 		["ACE_morphine",50],
 		["ACE_epinephrine",50],
-		["ACE_bloodIV",50],
+		["ACE_atropine", 50],
+		["ACE_salineIV",50],
 		["ACE_bodyBag",10],
+		["ACE_surgicalKit", 50],
+		["ACE_tourniquet", 5],
 		["FHQ_optic_ACOG_tan",1],
 	    ["FHQ_acc_ANPEQ15",1],
 		["STKR_Predator",1],

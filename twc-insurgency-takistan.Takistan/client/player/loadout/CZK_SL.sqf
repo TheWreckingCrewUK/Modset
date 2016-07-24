@@ -12,8 +12,11 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "CUP_U_B_CZ_WDL_TShirt";
-for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
+for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
 player addVest "CUP_V_B_RRV_Scout2";
 player addItemToVest "HandGrenade";

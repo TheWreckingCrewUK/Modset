@@ -14,7 +14,11 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "LOP_U_TKA_Fatigue_01";
-for "_i" from 1 to 2 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
+for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_morphine";
 player addVest "LOP_V_6Sh92_WDL";
 player addHeadgear "LOP_H_SSh68Helmet_TAN";
