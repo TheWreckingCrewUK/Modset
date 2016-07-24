@@ -271,7 +271,6 @@ class CfgVehicles
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_SL_L_A;
 	class CUP_B_AlicePack_Khaki;
-	class STKR_PackCom;
 	class CUP_BAF_VehicleBox;
 	class CUP_B_Bergen_BAF;
 	class rhs_sidor;
@@ -858,7 +857,7 @@ class CfgVehicles
 			};			
 		};
 	};
-	class TWC_Backpack_Cold_War_Pilot:STKR_PackCom
+	class TWC_Backpack_Cold_War_Pilot:CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportItems
@@ -932,7 +931,7 @@ class CfgVehicles
 			};		
 		};
 	};
-	class TWC_Backpack_Cold_War_FAC:STKR_PackCom
+	class TWC_Backpack_Cold_War_FAC:CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportItems

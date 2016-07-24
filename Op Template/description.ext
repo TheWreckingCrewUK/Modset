@@ -113,12 +113,12 @@ class ace_medical_playerDamageThreshold {
     force = 1;
 };
 class ace_medical_AIDamageThreshold {
-    value = 1;
+    value = 0.1;
     typeName = "SCALAR";
     force = 1;
 };
 class ace_medical_enableUnconsciousnessAI {
-    value = 2;
+    value = 0;
     typeName = "SCALAR";
     force = 1;
 };
