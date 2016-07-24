@@ -60,9 +60,9 @@ class cfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Mk Bush Helmet (Forrest)";
-		picture = "\SP_Pack\Hats\MkBushHelmet\ui\Forrest.jpg";
-		model = "\SP_Pack\Models\MkBushHelmet";
-                hiddenSelectionsTextures[] = {"\SP_Pack\Hats\Mk7Helmet\Green.paa","\SP_Pack\Hats\PASGTHelmet\Black.paa","\SP_Pack\Hats\MkBushHelmet\Forrest.paa"};
+		picture = "\twc_weapons\Hats\MkBushHelmet\ui\Forrest.jpg";
+		model = "\twc_weapons\Models\MkBushHelmet";
+                hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Green.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\MkBushHelmet\Forrest.paa"};
                 hiddenSelections[] = {"Camo","Camo1","Camo2"};
                 author = "SP Craig";
                 
@@ -71,11 +71,11 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem
 		{
 			mass = 60;
-			uniformmodel = "\SP_Pack\Models\MkBushHelmet";
+			uniformmodel = "\twc_weapons\Models\MkBushHelmet";
 			modelSides[] = {3,1};
 			armor = 10;
 			passThrough = 0.30;
-                        hiddenSelectionsTextures[] = {"\SP_Pack\Hats\Mk7Helmet\Green.paa","\SP_Pack\Hats\PASGTHelmet\Black.paa","\SP_Pack\Hats\MkBushHelmet\Forrest.paa"};
+                        hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Green.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\MkBushHelmet\Forrest.paa"};
                         hiddenSelections[] = {"Camo","Camo1","Camo2"};
 
 
@@ -90,9 +90,9 @@ class cfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Mk Bush Helmet (Tropical)";
-		picture = "\SP_Pack\Hats\MkBushHelmet\ui\Tropical.jpg";
-		model = "\SP_Pack\Models\MkBushHelmet";
-                hiddenSelectionsTextures[] = {"\SP_Pack\Hats\Mk7Helmet\Tan.paa","\SP_Pack\Hats\PASGTHelmet\Black.paa","\SP_Pack\Hats\MkBushHelmet\Tropical.paa"};
+		picture = "\twc_weapons\Hats\MkBushHelmet\ui\Tropical.jpg";
+		model = "\twc_weapons\Models\MkBushHelmet";
+                hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Tan.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\MkBushHelmet\Tropical.paa"};
                 hiddenSelections[] = {"Camo","Camo1","Camo2"};
                 author = "SP Craig";
                 
@@ -101,11 +101,11 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem
 		{
 			mass = 60;
-			uniformmodel = "\SP_Pack\Models\MkBushHelmet";
+			uniformmodel = "\twc_weapons\Models\MkBushHelmet";
 			modelSides[] = {3,1};
 			armor = 10;
 			passThrough = 0.30;
-                        hiddenSelectionsTextures[] = {"\SP_Pack\Hats\Mk7Helmet\Tan.paa","\SP_Pack\Hats\PASGTHelmet\Black.paa","\SP_Pack\Hats\MkBushHelmet\Tropical.paa"};
+                        hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Tan.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\MkBushHelmet\Tropical.paa"};
                         hiddenSelections[] = {"Camo","Camo1","Camo2"};
 
 
