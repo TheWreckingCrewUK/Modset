@@ -4,7 +4,7 @@ true spawn {
     _apachecrew = ["UK3CB_BAF_HeliPilot_RAF"];
 	_apache = ["UK3CB_BAF_APACHE_AH1_CAS"];
 	
-    _blackhawk = ["CUP_B_UH60M_FFV_US"];
+    _blackhawk = ["CUP_B_AW159_Cannon_GB", "CUP_B_CH47F_GB", "UK3CB_BAF_Merlin_HC3_18_GPMG"];
 	_blackhawkpilot = ["UK3CB_BAF_Pilot_RAF"];
 	
 	//armour crew

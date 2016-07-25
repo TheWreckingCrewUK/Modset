@@ -11,34 +11,31 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "rhs_uniform_g3_tan";
-player addItemToUniform "ACRE_PRC148_ID_1";
-player addItemToUniform "ACE_EarPlugs";
+player forceAddUniform "CUP_U_B_GER_Tropentarn_2";
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
-player addVest "CUP_V_I_RACS_Carrier_Vest_3";
-for "_i" from 1 to 8 do {player addItemToVest "CUP_30Rnd_Sa58_M";};
-for "_i" from 1 to 2 do {player addItemToVest "CUP_30Rnd_Sa58_M_TracerR";};
+player addItemToUniform "ACE_EarPlugs";
+player addItemToUniform "ACRE_PRC148";
+player addVest "CUP_V_B_GER_Carrier_Rig_2_Brown";
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-player addBackpack "B_Kitbag_cbr";
-for "_i" from 1 to 2 do {player addItemToVest "rhs_rpg7_PG7VL_mag";};
-for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-player addHeadgear "H_Cap_tan";
+for "_i" from 1 to 6 do {player addItemToVest "30Rnd_556x45_Stanag";};
+for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
+player addBackpack "CUP_B_GER_Pack_Tropentarn";
+for "_i" from 1 to 20 do {player addItemToBackpack "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {player addItemToBackpack "ACE_epinephrine";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 3 do {player addItemToBackpack "ACE_bloodIV";};
+for "_i" from 1 to 6 do {player addItemToBackpack "SmokeShell";};
+player addHeadgear "rhsusf_ach_bare_tan_headset_ess";
 
 comment "Add weapons";
-player addWeapon "CUP_arifle_Sa58RIS1_des";
-player addPrimaryWeaponItem "CUP_optic_TrijiconRx01_desert";
-player addWeapon "rhs_weap_rpg7";
-player addSecondaryWeaponItem "rhs_acc_1pn93_1";
-player addWeapon "ACE_Vector";
+player addWeapon "CUP_arifle_G36A";
 
 comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-
-
 

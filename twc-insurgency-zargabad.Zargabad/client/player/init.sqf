@@ -36,10 +36,10 @@ if (!isNil "humanCiv3" && {player == humanCiv3}) then {
 if (!isNil "p38" && {player == p38}) then {
     g_class = "PLT";
 	g_group = "1";
-	g_unit = "146";
+	g_unit = "123";
 	g_name = "Pilot";
 	g_radio_channel = 10;
-	g_radio = "ACRE_PRC148";
+	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -47,10 +47,10 @@ if (!isNil "p38" && {player == p38}) then {
 if (!isNil "p39" && {player == p39}) then {
     g_class = "PLT_CREW";
 	g_group = "1";
-	g_unit = "147";
+	g_unit = "130";
 	g_name = "Crew Chief";
 	g_radio_channel = 10;
-	g_radio = "ACRE_PRC148";
+	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -100,6 +100,7 @@ if (!isNil "P1" && {player == P1}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate";
 };
 
 if (!isNil "P2" && {player == P2}) then {
@@ -111,6 +112,7 @@ if (!isNil "P2" && {player == P2}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate";
 };
 
 if (!isNil "P3" && {player == P3}) then {
@@ -122,6 +124,7 @@ if (!isNil "P3" && {player == P3}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate";
 };
 
 if (!isNil "P4" && {player == P4}) then {
@@ -133,6 +136,7 @@ if (!isNil "P4" && {player == P4}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate";
 };
 
 if (!isNil "P5" && {player == P5}) then {
@@ -145,6 +149,7 @@ if (!isNil "P5" && {player == P5}) then {
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+	crateMarker = "crate";
 };
 
 if (!isNil "P6" && {player == P6}) then {
@@ -156,6 +161,7 @@ if (!isNil "P6" && {player == P6}) then {
 	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate1";
 };
 
 if (!isNil "P7" && {player == P7}) then {
@@ -167,6 +173,7 @@ if (!isNil "P7" && {player == P7}) then {
 	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate1";
 };
 
 if (!isNil "P8" && {player == P8}) then {
@@ -178,6 +185,7 @@ if (!isNil "P8" && {player == P8}) then {
 	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate1";
 };
 
 if (!isNil "P9" && {player == P9}) then {
@@ -189,6 +197,7 @@ if (!isNil "P9" && {player == P9}) then {
 	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate1";
 };
 
 if (!isNil "P10" && {player == P10}) then {
@@ -201,6 +210,7 @@ if (!isNil "P10" && {player == P10}) then {
 	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+	crateMarker = "crate1";
 };
 
 if (!isNil "P11" && {player == P11}) then {
@@ -212,6 +222,7 @@ if (!isNil "P11" && {player == P11}) then {
 	g_radio_channel = 3;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate2";
 };
 
 if (!isNil "P12" && {player == P12}) then {
@@ -223,6 +234,7 @@ if (!isNil "P12" && {player == P12}) then {
 	g_radio_channel = 3;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate2";
 };
 
 if (!isNil "P13" && {player == P13}) then {
@@ -234,6 +246,7 @@ if (!isNil "P13" && {player == P13}) then {
 	g_radio = "ACRE_PRC148";
 	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate2";
 };
 
 if (!isNil "P14" && {player == P14}) then {
@@ -245,6 +258,7 @@ if (!isNil "P14" && {player == P14}) then {
 	g_radio_channel = 3;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate2";
 };
 
 if (!isNil "P15" && {player == P15}) then {
@@ -257,6 +271,7 @@ if (!isNil "P15" && {player == P15}) then {
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+	crateMarker = "crate2";
 };
 
 if (!isNil "P16" && {player == P16}) then {
@@ -267,6 +282,7 @@ if (!isNil "P16" && {player == P16}) then {
 	g_radio = "";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate3";
 };
 
 if (!isNil "P17" && {player == P17}) then {
@@ -277,6 +293,7 @@ if (!isNil "P17" && {player == P17}) then {
 	g_radio = "";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate3";
 	
 };
 
@@ -288,6 +305,7 @@ if (!isNil "P18" && {player == P18}) then {
 	g_radio = "";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate3";
 };
 
 if (!isNil "P19" && {player == P19}) then {
@@ -298,6 +316,7 @@ if (!isNil "P19" && {player == P19}) then {
 	g_radio = "";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate3";
 };
 
 if (!isNil "P20" && {player == P20}) then {
@@ -309,6 +328,7 @@ if (!isNil "P20" && {player == P20}) then {
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+	crateMarker = "crate3";
 };
 
 if (!isNil "P21" && {player == P21}) then {
@@ -320,6 +340,7 @@ if (!isNil "P21" && {player == P21}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate5";
 };
 
 if (!isNil "P22" && {player == P22}) then {
@@ -331,6 +352,7 @@ if (!isNil "P22" && {player == P22}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate5";
 };
 
 if (!isNil "P23" && {player == P23}) then {
@@ -342,6 +364,7 @@ if (!isNil "P23" && {player == P23}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate5";
 };
 
 if (!isNil "P24" && {player == P24}) then {
@@ -353,6 +376,7 @@ if (!isNil "P24" && {player == P24}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate5";
 };
 
 if (!isNil "P25" && {player == P25}) then {
@@ -365,6 +389,7 @@ if (!isNil "P25" && {player == P25}) then {
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+	crateMarker = "crate5";
 };
 
 if (!isNil "P26" && {player == P26}) then {
@@ -376,6 +401,7 @@ if (!isNil "P26" && {player == P26}) then {
 	g_radio_channel = 6;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate6";
 };
 
 if (!isNil "P27" && {player == P27}) then {
@@ -387,18 +413,20 @@ if (!isNil "P27" && {player == P27}) then {
 	g_radio_channel = 6;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate6";
 };
 
 
 if (!isNil "P28" && {player == P28}) then {
-    g_class = "CZR_GRN";
+    g_class = "CZR_AT";
 	g_group = "0";
 	g_unit = "136";
-	g_name = "Foxtrot Grenadier";
+	g_name = "Foxtrot AT Rifleman";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 6;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate6";
 };
 
 if (!isNil "P29" && {player == P29}) then {
@@ -410,6 +438,7 @@ if (!isNil "P29" && {player == P29}) then {
 	g_radio_channel = 6;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate6";
 };
 
 if (!isNil "P30" && {player == P30}) then {
@@ -422,6 +451,7 @@ if (!isNil "P30" && {player == P30}) then {
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+	crateMarker = "crate6";
 };
 
 if (!isNil "P31" && {player == P31}) then {
@@ -433,6 +463,7 @@ if (!isNil "P31" && {player == P31}) then {
 	g_radio_channel = 7;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate7";
 };
 
 if (!isNil "P32" && {player == P32}) then {
@@ -443,7 +474,8 @@ if (!isNil "P32" && {player == P32}) then {
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 7;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en"] call acre_api_fnc_babelSetSpeakingLanguage;	
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate7";	
 };
 
 if (!isNil "P33" && {player == P33}) then {
@@ -455,6 +487,7 @@ if (!isNil "P33" && {player == P33}) then {
 	g_radio_channel = 7;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate7";
 };
 
 if (!isNil "P34" && {player == P34}) then {
@@ -466,10 +499,11 @@ if (!isNil "P34" && {player == P34}) then {
 	g_radio_channel = 7;
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate7";
 };
 
 if (!isNil "P35" && {player == P35}) then {
-    g_class = "GER_MED";
+    g_class = "GER_MD";
 	g_group = "0";
 	g_unit = "143";
 	g_name = "Golf Medic";
@@ -478,6 +512,7 @@ if (!isNil "P35" && {player == P35}) then {
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+	crateMarker = "crate7";
 };
 
 if (!isNil "P36" && {player == P36}) then {
@@ -489,6 +524,7 @@ if (!isNil "P36" && {player == P36}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate8";
 };
 
 if (!isNil "P37" && {player == P37}) then {
@@ -500,6 +536,7 @@ if (!isNil "P37" && {player == P37}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	crateMarker = "crate8";
 };
 
 
@@ -789,49 +826,10 @@ g_humanCiv2 = "";
 g_humanCiv3 = "";
 
 
-execVM "client\player\boxes\main_ammo.sqf";
+[crateMarker] execVM "client\player\boxes\main_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
-execVM "client\player\boxes\main_ammo1.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo2.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo3.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo4.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo5.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo6.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo7.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo8.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo9.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo10.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
 
 execVM "client\player\psync.sqf";

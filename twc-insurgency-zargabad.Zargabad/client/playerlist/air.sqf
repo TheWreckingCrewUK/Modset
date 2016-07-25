@@ -1,5 +1,5 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Air Assets", [["Wildcat/Chinook", [g_p38, "Pilot"], [g_p39, "Crew Chief"]]]]			
+g_playerlist = [["Air Assets", [["Wildcat/Chinook", [g_p38, "Pilot"], [g_p39, "Crew Chief"]]]]]				
 				
 				];
 
