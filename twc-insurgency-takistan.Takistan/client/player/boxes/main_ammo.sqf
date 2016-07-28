@@ -303,14 +303,14 @@ if (g_class == "US_SL") then {
     [
 		["rhs_weap_m4a1_carryhandle_m203",1],
         ["ACE_Vector",1],
-		["CUP_hgun_M9",1]
+		["rhsusf_weap_m9",1]
     ];
 
     _tmp_magazines =
     [
         ["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",10],
-        ["CUP_15Rnd_9x19_M9",15],
+        ["rhsusf_weap_m9",15],
 		["1Rnd_HE_Grenade_shell", 40],
 	    ["1Rnd_Smoke_Grenade_shell", 10],
 	    ["1Rnd_SmokeRed_Grenade_shell", 10],
@@ -348,7 +348,7 @@ if (g_class == "US_TL") then {
 		["rhs_weap_m4a1_carryhandle_m203",1],
         ["ACE_Vector",1],
 		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
-		["CUP_hgun_M9",1]
+		["rhsusf_weap_m9",1]
     ];
 
     _tmp_magazines =
@@ -390,7 +390,7 @@ if (g_class == "US_TL") then {
         ["rhs_weap_m4a1_carryhandle_grip",1],
 		["rhs_weap_M590_8RD",1],
 		["Binocular",1],
-		["CUP_hgun_M9",1],
+		["rhsusf_weap_m9",1],
 		["UK3CB_BAF_AT4_CS_AP_Launcher",4],
 		["CUP_launch_MAAWS",1]
 	];
@@ -428,7 +428,7 @@ if (g_class == "US_TL") then {
         ["rhs_weap_m249_pip",1],
 		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
 		["Binocular",1],
-		["CUP_hgun_M9",1],
+		["rhsusf_weap_m9",1],
 		["rhsusf_weap_m1911a1",1]
 	];
 
@@ -458,7 +458,7 @@ if (g_class == "US_TL") then {
     [
         ["rhs_weap_m4a1_carryhandle_m203",1],
 		["ACE_Vector",1],
-		["CUP_hgun_M9",1],
+		["rhsusf_weap_m9",1],
 		["UK3CB_BAF_AT4_CS_AP_Launcher",2]
 	];
 
@@ -495,7 +495,7 @@ if (g_class == "US_TL") then {
     [
         ["rhs_weap_m14ebrri",1],
 		["rhs_weap_m4a1_carryhandle_grip",1],
-		["rhsusf_weap_m1911a1",1],
+		["rhsusf_weap_m9",1],
 		["ACE_Vector",1],
 		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
 		["UK3CB_BAF_Javelin_Slung_Tube",3]		
@@ -531,14 +531,14 @@ if (g_class == "US_TL") then {
     [
 		["rhs_weap_m4a1_carryhandle_grip",1],
 		["Binocular",1],
-	    ["rhsusf_weap_m1911a1", 1]
+	    ["rhsusf_weap_m9", 1]
 	];
 
     _tmp_magazines =
     [
         ["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",20],
-        ["CUP_15Rnd_9x19_M9",15]
+        ["rhsusf_mag_15Rnd_9x19_JHP",15]
     ];
 
 	_tmp_items =
