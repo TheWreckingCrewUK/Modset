@@ -17,14 +17,26 @@
 switch (playerSide) do
 {
 	case west:
-	{player addEventHandler ["Fired", {
-if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0) then
-{
-deleteVehicle (_this select 6);
-titleText [MESSAGE, "PLAIN", 3];
-};
-}];
-};
+	{
+		player addEventHandler ["Fired", {
+			if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0) then
+			{
+				deleteVehicle (_this select 6);
+				titleText [MESSAGE, "PLAIN", 3];
+			};
+		}];
+	};
+	
+	case east:
+	{
+		player addEventHandler ["Fired", {
+			if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0) then
+			{
+				deleteVehicle (_this select 6);
+				titleText [MESSAGE, "PLAIN", 3];
+			};
+		}];
+	};
 	
 	case civilian:
 	{
