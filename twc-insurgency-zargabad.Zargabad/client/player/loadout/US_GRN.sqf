@@ -12,6 +12,7 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "rhs_uniform_cu_ocp";
+player addItemToUniform "ACE_tourniquet";
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
@@ -32,7 +33,7 @@ player addHeadgear "rhsusf_ach_helmet_ESS_ocp";
 
 comment "Add weapons";
 player addWeapon "rhs_weap_m4a1_carryhandle_m203";
-player addPrimaryWeaponItem "rhsusf_acc_anpeq15A";
+player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
 player addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";
 player addWeapon "UK3CB_BAF_AT4_AP_Launcher";
 player addWeapon "ACE_Vector";

@@ -19,6 +19,7 @@ for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACRE_PRC148_ID_1";
+player addItemToUniform "ACE_tourniquet";
 player addVest "rhsusf_iotv_ocp_Grenadier";
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
 for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
@@ -32,7 +33,7 @@ player addHeadgear "rhsusf_ach_helmet_ESS_ocp";
 
 comment "Add weapons";
 player addWeapon "rhs_weap_m4a1_carryhandle_m203";
-player addPrimaryWeaponItem "rhsusf_acc_anpeq15A";
+player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
 player addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";
 player addWeapon "UK3CB_BAF_AT4_AP_Launcher";
 player addWeapon "ACE_Vector";
