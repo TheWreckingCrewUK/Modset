@@ -33,6 +33,13 @@
 [] execVM "operation_framework\zeus\Zeus.sqf";
 
 /*/////////////////////////////////////////////////////////
+/                           scope                         /
+/                           Setup                         /
+/////////////////////////////////////////////////////////*/
+
+[] execVM "operation_framework\scopes\init.sqf";
+
+/*/////////////////////////////////////////////////////////
 /                             AI                          /
 /                           Setup                         /
 /////////////////////////////////////////////////////////*/
@@ -75,7 +82,7 @@ _status = [True] call acre_api_fnc_setRevealToAI;
 //////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
-
+/*
 playMusic "Theme";
 titleCut ["", "BLACK FADED", 999];
 	[] Spawn {
@@ -85,7 +92,7 @@ titleCut ["", "BLACK FADED", 999];
 	titleFadeOut 7;
 	sleep 5;
 
-	titleText ["Operation TERKANDIN","PLAIN"];
+	titleText ["Operation GULAN","PLAIN"];
 	titleFadeOut 15;
 	sleep 30;
 

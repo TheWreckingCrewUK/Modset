@@ -1,4 +1,4 @@
-1. Open init.sqf and put  the title text under theme. For example adding "Cliff" to Operation.
+1. Open init.sqf and put in tasks and the title text under theme. For example adding "Cliff" to Operation.
 
 2. In description.ext add author name and onLoadName. (Same name as above)
 
