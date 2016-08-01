@@ -32,7 +32,6 @@ while {true} do {
     cutText ["Receiving...", "BLACK", 0.001];
     openMap [false, false];
     onMapSingleClick "";
-    {deleteMarkerLocal _x} forEach _allMarkers;
     sleep 6;
     cutText ["","BLACK IN",0];
 	removeAllWeapons player;

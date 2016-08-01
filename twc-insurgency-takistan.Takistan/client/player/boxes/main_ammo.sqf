@@ -45,6 +45,7 @@ if (g_class == "BAF_SL") then {
         ["ACE_MapTools",1],
 		["ACE_epinephrine",5],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
@@ -87,6 +88,7 @@ if (g_class == "BAF_SL") then {
 	[
 		["ACE_MapTools",1],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
 		["STKR_Predator",1],
@@ -128,6 +130,7 @@ if (g_class == "BAF_SL") then {
 	[
 		["ACE_MapTools",1],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
 		["STKR_Predator",1],
@@ -159,6 +162,7 @@ if (g_class == "BAF_SL") then {
 	[
         ["ACE_MapTools",1],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["STKR_Predator",1],
@@ -191,6 +195,7 @@ if (g_class == "BAF_SL") then {
 	[
 		["ACE_MapTools",1],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
 		["STKR_Predator",1],
@@ -289,6 +294,7 @@ if (g_class == "BAF_SL") then {
 		["ACE_surgicalKit", 50],
 		["ACE_tourniquet", 5],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
 	    ["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["STKR_Predator",1],
@@ -310,7 +316,7 @@ if (g_class == "US_SL") then {
     [
         ["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",10],
-        ["rhsusf_weap_m9",15],
+        ["rhsusf_mag_15Rnd_9x19_JHP",15],
 		["1Rnd_HE_Grenade_shell", 40],
 	    ["1Rnd_Smoke_Grenade_shell", 10],
 	    ["1Rnd_SmokeRed_Grenade_shell", 10],
@@ -329,6 +335,7 @@ if (g_class == "US_SL") then {
 		["DemoCharge_Remote_Mag",1],
 		["ACE_M26_Clacker",1],
 		["UK3CB_BAF_TA31F_3D",1],
+		["UK3CB_BAF_TA31F",1],
 		["rhsusf_acc_anpeq15_bk",1],
 		["rhsusf_acc_compm4",1],
 		["UK3CB_BAF_Eotech",1],
@@ -355,7 +362,7 @@ if (g_class == "US_TL") then {
     [
         ["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",10],
-        ["CUP_15Rnd_9x19_M9",15],
+        ["rhsusf_mag_15Rnd_9x19_JHP",15],
 		["1Rnd_HE_Grenade_shell", 40],
 	    ["1Rnd_Smoke_Grenade_shell", 10],
 	    ["1Rnd_SmokeRed_Grenade_shell", 10],
@@ -371,6 +378,7 @@ if (g_class == "US_TL") then {
 		["ACE_MapTools",1],
 		["UK3CB_BAF_TA31F_3D",1],
 		["rhsusf_acc_anpeq15_bk",1],
+		["UK3CB_BAF_TA31F",1],
 		["UK3CB_BAF_Eotech",1],
 		["ACE_DAGR",1],
 		["rhsusf_assault_eagleaiii_ucp",1],
@@ -399,7 +407,7 @@ if (g_class == "US_TL") then {
     [
 		["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",10],
-        ["CUP_15Rnd_9x19_M9",15],
+        ["rhsusf_mag_15Rnd_9x19_JHP",15],
 		["rhsusf_8Rnd_00Buck",10],
 		["rhsusf_8Rnd_Slug",10],
 		["CUP_MAAWS_HEDP_M",2],
@@ -411,6 +419,7 @@ if (g_class == "US_TL") then {
 	[
         ["ACE_MapTools",1],
 		["UK3CB_BAF_TA31F_3D",1],
+		["UK3CB_BAF_TA31F",1],
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_anpeq15_bkA",1],
 		["rhsusf_assault_eagleaiii_ucp",1],
@@ -436,7 +445,7 @@ if (g_class == "US_TL") then {
     [
 		["rhsusf_100Rnd_556x45_soft_pouch",20],
 		["rhsusf_200Rnd_556x45_soft_pouch",10],
-		["CUP_15Rnd_9x19_M9",15],
+		["rhsusf_mag_15Rnd_9x19_JHP",15],
 		["rhsusf_mag_7x45acp_MHP",15]
     ];
 
@@ -466,7 +475,7 @@ if (g_class == "US_TL") then {
     [
 		["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",10],
-		["CUP_15Rnd_9x19_M9",15],
+		["rhsusf_mag_15Rnd_9x19_JHP",15],
 		["1Rnd_HE_Grenade_shell", 40],
 	    ["1Rnd_Smoke_Grenade_shell", 10],
 	    ["1Rnd_SmokeRed_Grenade_shell", 10],
@@ -483,7 +492,8 @@ if (g_class == "US_TL") then {
 		["UK3CB_BAF_TA31F_3D",1],
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_anpeq15_bkA",1],
-		["UK3CB_BAF_G_Tactical_Black",1],
+		["UK3CB_BAF_G_Tactical_Black",1,
+		["UK3CB_BAF_TA31F",1]],
 		["rhsusf_assault_eagleaiii_ucp",1],
 		["rhsusf_acc_compm4",1],
 		["ACRE_PRC148",1]
@@ -506,7 +516,7 @@ if (g_class == "US_TL") then {
         ["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",10],
 		["rhsusf_20Rnd_762x51_m118_special_Mag",25],
-        ["CUP_15Rnd_9x19_M9",15]
+        ["rhsusf_mag_15Rnd_9x19_JHP",15]
     ];
 		
 	_tmp_items = 
@@ -520,6 +530,7 @@ if (g_class == "US_TL") then {
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["ACRE_PRC148",1],
 		["UK3CB_BAF_TA31F_3D",1],
+		["UK3CB_BAF_TA31F",1],
 		["UK3CB_BAF_Javelin_CLU",1],
 		["rhsusf_acc_anpeq15_bkA",1]
 	
@@ -538,7 +549,8 @@ if (g_class == "US_TL") then {
     [
         ["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",20],
-        ["rhsusf_mag_15Rnd_9x19_JHP",15]
+        ["rhsusf_mag_15Rnd_9x19_JHP",15],
+        ["CUP_15Rnd_9x19_M9",15]
     ];
 
 	_tmp_items =
@@ -605,6 +617,7 @@ if (g_class == "US_TL") then {
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["ACRE_PRC117F_ID_1",1],
 		["ACE_MX2A",1],
+		["UK3CB_BAF_TA31F",1],
 		["ACRE_PRC148",1]
 	];
 };
@@ -645,6 +658,7 @@ if (g_class == "US_TL") then {
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
+		["UK3CB_BAF_TA31F",1],
 		["ACE_M26_Clacker",1]
 	];
 };
@@ -678,6 +692,7 @@ if (g_class == "US_TL") then {
 	[
         ["ACE_MapTools",1],
 		["UK3CB_BAF_TA31F_3D",1],
+		["UK3CB_BAF_TA31F",1],
 		["rhsusf_acc_compm4",1],
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_anpeq15_bkA",1],
@@ -718,7 +733,8 @@ if (g_class == "USMC_AR") then {
 		["rhsusf_acc_anpeq15_bkA",1],
 		["rhsusf_assault_eagleaiii_ocp",1],
 		["bipod_01_F_blk",1],
-		["UK3CB_BAF_TA31F_3D",1],
+		["UK3CB_BAF_TA31F_3D",1,
+		["UK3CB_BAF_TA31F",1]],
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["ACRE_PRC148",1]
 	];
@@ -753,6 +769,7 @@ if (g_class == "USMC_AR") then {
 		["rhsusf_acc_anpeq15_bkA",1],
 		["rhsusf_assault_eagleaiii_ocp",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
+		["UK3CB_BAF_TA31F",1],
 		["ACRE_PRC148",1]
 	];
 };
@@ -813,6 +830,7 @@ if (g_class == "USMC_AR") then {
 		["rhsusf_acc_anpeq15_bkA",1],
 		["rhsusf_assault_eagleaiii_ocp",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
+		["UK3CB_BAF_TA31F",1],
 		["ACRE_PRC148",1]
 	];
 };
@@ -849,6 +867,7 @@ if (g_class == "USMC_AR") then {
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_anpeq15_bkA",1],
 		["rhsusf_acc_compm4",1],
+		["UK3CB_BAF_TA31F",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["rhsusf_assault_eagleaiii_ocp",1],
 		["ACRE_PRC148",1]

@@ -57,7 +57,7 @@ if (!isNil "p32" && {player == p32}) then {
 if (!isNil "tank1" && {player == tank1}) then {
     g_class = "ARMR_CO";
 	g_group = "1";
-	g_unit = "133";
+	g_unit = "205";
 	g_name = "Armour Crew Commander";
 	g_radio_channel = 4;
 	g_radio = "ACRE_PRC343";
@@ -68,7 +68,7 @@ if (!isNil "tank1" && {player == tank1}) then {
 if (!isNil "tank2" && {player == tank2}) then {
     g_class = "ARMR_CREW";
 	g_group = "1";
-	g_unit = "134";
+	g_unit = "206";
 	g_name = "Armour Crew";
 	g_radio_channel = 4;
 	g_radio = "ACRE_PRC343";
@@ -79,7 +79,7 @@ if (!isNil "tank2" && {player == tank2}) then {
 if (!isNil "tank3" && {player == tank3}) then {
     g_class = "ARMR_CREW";
 	g_group = "1";
-	g_unit = "135";
+	g_unit = "207";
 	g_name = "Armour Crew";
 	g_radio_channel = 4;
 	g_radio = "ACRE_PRC148";
@@ -93,8 +93,8 @@ if (!isNil "P1" && {player == P1}) then {
 	g_name = "Alpha Section Leader";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
-	["en"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P2" && {player == P2}) then {
@@ -181,8 +181,8 @@ if (!isNil "P9" && {player == P9}) then {
 	g_name = "Bravo Squad Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
-	["en"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P10" && {player == P10}) then {
@@ -192,8 +192,8 @@ if (!isNil "P10" && {player == P10}) then {
 	g_name = "Bravo Team Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
-	["en"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P11" && {player == P11}) then {
@@ -281,8 +281,8 @@ if (!isNil "P18" && {player == P18}) then {
 	g_name = "Charlie Squad Leader";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 3;
-	["en"] call acre_api_fnc_babelSetSpokenLanguages;
-	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 if (!isNil "P19" && {player == P19}) then {
@@ -697,23 +697,17 @@ g_p38 = "";
 g_humanCiv1 = "";
 g_humanCiv2 = "";
 g_humanCiv3 = "";
+g_tank1 = "";
+g_tank2 = "";
+g_tank3 = "";
 
 
 execVM "client\player\boxes\main_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
-execVM "client\player\boxes\main_ammo1.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
-execVM "client\player\boxes\main_ammo2.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo3.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
+execVM "client\player\boxes\AMMO_CRATE.sqf";
 
 
 execVM "client\player\psync.sqf";

@@ -4,12 +4,12 @@ true spawn {
     _apachecrew = ["UK3CB_BAF_HeliPilot_RAF"];
 	_apache = ["UK3CB_BAF_APACHE_AH1_CAS"];
 	
-    _blackhawk = ["CUP_B_AW159_Cannon_GB", "CUP_B_CH47F_GB", "UK3CB_BAF_Merlin_HC3_18_GPMG"];
+    _blackhawk = ["UK3CB_BAF_Wildcat_AH1_CAS_8A", "CUP_B_CH47F_GB", "UK3CB_BAF_Merlin_HC3_18_GPMG"];
 	_blackhawkpilot = ["UK3CB_BAF_Pilot_RAF"];
 	
 	//armour crew
 	_armourCrew = ["B_crew_f"];
-	_ifv = ["CUP_B_FV510_GB_D_SLAT"];
+	_ifv = ["CUP_B_MCV80_GB_D_SLAT"];
 
 
 	//Enemy Vehicles

@@ -1,0 +1,178 @@
+span class="re5"> class cfgVehicles
+{
+class Box_UK3CB_BAF_Static_Weapons_Box;
+class TWC_large_resupply_Ammobox:Box_NATO_AmmoVeh_F
+    {
+        author="Paddock";
+        displayName="TWC large us resupplyBox";
+        class TransportMagazines
+        {
+            class _xx_30Rnd_556x45_Stanag
+            {
+                magazine="30Rnd_556x45_Stanag";
+                count=30;
+            };
+            class _xx_30Rnd_556x45_Stanag_Tracer_Red
+            {
+                magazine="30Rnd_556x45_Stanag_Tracer_Red";
+                count=10;
+            };
+            class _xx_rhsusf_200Rnd_556x45_soft_pouch
+            {
+                magazine="rhsusf_200Rnd_556x45_soft_pouch";
+                count=10;
+            };
+			class _xx_rhsusf_20Rnd_762x51_m118_special_Mag
+            {
+                magazine="rhsusf_20Rnd_762x51_m118_special_Mag";
+                count=10;
+            };
+			class _xx_rhsusf_mag_15Rnd_9x19_JHP
+            {
+                magazine="rhsusf_mag_15Rnd_9x19_JHP";
+                count=15;
+            };
+			class _xx_UK3CB_rhsusf_8Rnd_00Buck
+            {
+                magazine="rhsusf_8Rnd_00Buck";
+                count=8;
+            };
+			class _xx_rhsusf_8Rnd_Slug
+            {
+                magazine="rhsusf_8Rnd_Slug";
+                count=8;
+            };
+            class _xx_UK3CB_1Rnd_HE_Grenade_shell
+            {
+                magazine="1Rnd_HE_Grenade_shell";
+                count=30;
+            };
+            class _xx_UK3CB_UGL_FlareWhite_F
+            {
+                magazine="UGL_FlareWhite_F";
+                count=10;
+            };
+            class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
+            {
+                magazine="1Rnd_Smoke_Grenade_shell";
+                count=10;
+            };
+            class _xx_SmokeShell
+            {
+                magazine="SmokeShell";
+                count=15;
+            };
+            class _xx_Grenade
+            {
+                magazine="CUP_HandGrenade_L109A2_HE";
+                count=15;
+            };
+        };
+        class TransportItems
+        {
+            class _xx_Bandage
+            {
+                name = "ACE_fieldDressing";
+                count = 20;
+            };
+			class _xx_Bandage
+            {
+                name = "ACE_elasticBandage";
+                count = 20;
+            };
+			class _xx_Bandage
+            {
+                name = "ACE_quikclot";
+                count = 20;
+            };
+			class _xx_Bandage
+            {
+                name = "ACE_packingBandage";
+                count = 20;
+            };
+			class _xx_Bandage
+            {
+                name = "ACE_personalAidKit";
+                count = 5;
+            };
+            class _xx_Morphine
+            {
+                name = "ACE_morphine";
+                count = 5;
+            };
+			class _xx_ACE_atropine
+            {
+                name = "ACE_atropine";
+                count = 5;
+            };
+            class _xx_Epipen
+            {
+                name = "ACE_epinephrine";
+                count = 5;
+            };
+			class _xx_ACE_salineIV_500
+            {
+                name = "ACE_salineIV_500";
+                count = 3;
+            };
+        };
+        class TransportItems
+        {
+            class _xx_Bandage
+            {
+                name = "ACE_fieldDressing";
+                count = 40;
+            };
+			class _xx_Bandage
+            {
+                name = "ACE_elasticBandage";
+                count = 40;
+            };
+			class _xx_Bandage
+            {
+                name = "ACE_quikclot";
+                count = 40;
+            };
+			class _xx_Bandage
+            {
+                name = "ACE_packingBandage";
+                count = 40;
+            };
+			class _xx_Bandage
+            {
+                name = "ACE_personalAidKit";
+                count = 10;
+            };
+            class _xx_Morphine
+            {
+                name = "ACE_morphine";
+                count = 10;
+            };
+			class _xx_ACE_atropine
+            {
+                name = "ACE_atropine";
+                count = 10;
+            };
+            class _xx_Epipen
+            {
+                name = "ACE_epinephrine";
+                count = 10;
+            };
+			class _xx_ACE_salineIV_500
+            {
+                name = "ACE_salineIV_500";
+                count = 5;
+            };
+        };
+        class TransportWeapons
+        {
+            class _xx_UK3CB_BAF_AT4_CS_AP_Launcher
+                {
+                    Weapon = "UK3CB_BAF_AT4_CS_AP_Launcher";
+                    count = 4;
+                };
+        };
+        transportAmmo=1000000;
+        supplyRadius=3;
+    };
+};

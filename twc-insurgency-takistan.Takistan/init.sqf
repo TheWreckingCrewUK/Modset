@@ -132,7 +132,7 @@ if ((str player) in _specialSlots)then{
 			case "humanCiv2": {15};
 			case "humanCiv3": {20};
 			case "p33";
-			case "p34": {20};
+			case "p34": {18};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
 		
