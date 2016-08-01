@@ -1,7 +1,6 @@
-[arsenalAmmoBox,["hgun_ACPC2_F"],false] call BIS_fnc_addVirtualWeaponCargo;
-[arsenalAmmoBox,["9Rnd_45ACP_Mag","B_IR_Grenade"],false] call BIS_fnc_addVirtualMagazineCargo;
-[arsenalAmmoBox,["H_PilotHelmetFighter_B","U_B_PilotCoveralls","ItemGPS"],false] call Bis_fnc_addVirtualItemCargo;
-[arsenalAmmoBox,["B_Parachute"],false] call Bis_fnc_addVirtualBackpackCargo;
+[arsenalAmmoBox,["UK3CB_BAF_L22A2", "UK3CB_BAF_L131A1"],false] call BIS_fnc_addVirtualWeaponCargo;
+[arsenalAmmoBox,["UK3CB_BAF_30Rnd", "UK3CB_BAF_17Rnd_9mm", "B_IR_Grenade"],false] call BIS_fnc_addVirtualMagazineCargo;
+[arsenalAmmoBox,["UK3CB_BAF_H_PilotHelmetHeli_A","UK3CB_BAF_U_CombatUniform_MTP","UK3CB_BAF_V_Pilot_A","ItemGPS", "B_AssaultPack_mcamo", "ACRE_PRC117F"],false] call Bis_fnc_addVirtualItemCargo;
 
 comment "Exported from Arsenal by Paddock";
 
@@ -16,7 +15,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "U_B_HeliPilotCoveralls";
+player forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP";
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
@@ -25,17 +24,14 @@ for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACE_DAGR";
 for "_i" from 1 to 3 do {player addItemToUniform "SmokeShell";};
-for "_i" from 1 to 3 do {player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
-player addVest "CUP_V_B_PilotVest";
-player addItemToVest "ACRE_PRC148";
-for "_i" from 1 to 7 do {player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
-for "_i" from 1 to 2 do {player addItemToVest "rhsusf_weap_m9";};
-player addBackpack "B_Parachute";
-player addHeadgear "rhsusf_hgu56p";
+player addVest "UK3CB_BAF_V_Pilot_A";
+player addItemToVest "ACRE_PRC343";
+for "_i" from 1 to 6 do {player addItemToVest "UK3CB_BAF_30Rnd";};
+player addHeadgear "UK3CB_BAF_H_PilotHelmetHeli_A";
+player addGoggles "UK3CB_BAF_G_Tactical_Black";
 
 comment "Add weapons";
-player addWeapon "rhs_weap_m4_carryhandle_mstock";
-player addWeapon "rhsusf_weap_m9";
+player addWeapon "UK3CB_BAF_L22A2";
 
 comment "Add items";
 player linkItem "ItemMap";
@@ -43,3 +39,7 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadioAcreFlagged";
 player linkItem "rhsusf_ANPVS_14";
+
+comment "Set identity";
+player setFace "WhiteHead_13";
+player setSpeaker "Male04ENG";

@@ -1,6 +1,6 @@
 [arsenalAmmoBox,[""],false] call Bis_fnc_addVirtualWeaponCargo;
 [arsenalAmmoBox,["FirstAidKit","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_red","Chemlight_yellow","Chemlight_blue"],false] call BIS_fnc_addVirtualMagazineCargo;
-[arsenalAmmoBox,["ItemMap","ItemCompass","ItemWatch","NVGoggles"],false] call Bis_fnc_addVirtualItemCargo;
+[arsenalAmmoBox,["ItemMap","ItemCompass","ItemWatch","NVGoggles","ACE_fieldDressing",10,"ACE_morphine",10,"ACE_elasticBandage",10,"ACE_quikclot",10,"ACE_packingBandage",10],false] call Bis_fnc_addVirtualItemCargo;
 
 if (!isNil "armour1" && {player == armour1}) then {
 	execVM "client\arsenal\armour_co.sqf";
@@ -17,14 +17,19 @@ if (!isNil "armour3" && {player == armour3}) then {
 };
 
 if (!isNil "helo1" && {player == helo1}) then {
-	execVM "client\arsenal\helo.sqf";
+	execVM "client\arsenal\US_PLT.sqf";
 	execVM "client\spawning\heli.sqf";
 };
 if (!isNil "helo2" && {player == helo2}) then {
-	execVM "client\arsenal\helo.sqf";
+	execVM "client\arsenal\US_PLT_CREW.sqf";
 	execVM "client\spawning\heli.sqf";
 };
 if (!isNil "helo3" && {player == helo3}) then {
+	execVM "client\arsenal\BAF_PLT.sqf";
+	execVM "client\spawning\heli.sqf";
+};
+
+if (!isNil "helo4" && {player == helo4}) then {
 	execVM "client\arsenal\helo.sqf";
 	execVM "client\spawning\heli.sqf";
 };

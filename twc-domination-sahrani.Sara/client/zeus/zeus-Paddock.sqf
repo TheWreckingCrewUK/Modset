@@ -1,5 +1,5 @@
 
-_curator = Fakematty;
+_curator = Paddock;
 _addCivilians = True;
 
 //adds objects placed in editor:

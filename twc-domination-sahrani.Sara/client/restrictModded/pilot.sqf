@@ -2,9 +2,13 @@
 true spawn {
     //helicopters
     _blackhawkpilot = ["B_Helipilot_F"];
-    _blackhawk = ["UK3CB_BAF_Wildcat_AH1_CAS_8A","RHS_UH60M"];
+    _blackhawk = ["CUP_B_UH60M_US","CUP_B_CH53E_USMC", "CUP_B_MV22_USMC_RAMPGUN"];
+	_wildcatpilot = ["B_Helicrew_F"];
+    _wildcat = ["CUP_B_AW159_Cannon_GB","CUP_B_Merlin_HC3A_Armed_GB","CUP_B_CH47F_GB"];
+	_planepilot = ["B_Pilot_F"];
+    _plane = ["CUP_B_AV8B_MK82_USMC"];
 	_armourCrew = ["B_crew_F"];
-	_armour = ["B_MBT_01_TUSK_F","B_APC_Wheeled_01_cannon_F"];
+	_armour = ["CUP_B_M2Bradley_USA_W","rhsusf_m1a2sep1tuskiiwd_usarmy", "CUP_B_M1128_MGS_Woodland_Slat"];
 	_crew = [""];
 
 
@@ -18,6 +22,8 @@ true spawn {
 
     //Assigning units to variables used below
     _iamblackhawkpilot = ({typeOf player == _x} count _blackhawkpilot) > 0;
+	_iamwildcatpilot = ({typeOf player == _x} count _wildcatpilot) > 0;
+	_iamplanepilot = ({typeOf player == _x} count _planepilot) > 0;
 	_iamarmourcrewpilot = ({typeOf player == _x} count _armourcrew) > 0;
     _iamcrew = ({typeOf player == _x} count _crew) > 0;
 
@@ -40,6 +46,38 @@ true spawn {
                 _forbidden =  [gunner _veh] + [driver _veh] + [commander _veh];
                 if(player in _forbidden) then {
                     systemChat "You are not pilot and not allowed to pilot or gun this helicopter";
+                    player action ["getout", _veh];
+					player action ["eject", _veh];
+                };
+				if (driver _veh isEqualTo objNull) then{
+					systemChat "A pilot needs to be in the helicopter before you may enter";
+					player action ["getout", _veh];
+					player action ["eject", _veh];
+				};
+            };
+			
+			//Vehicle Pilot Check for wildcat
+            if(({typeOf _veh == _x} count _wildcat) > 0 && !_iamwildcatpilot && !_iamcrew) then {
+                //Forbidden seats: copilot, gunner, pilot
+                _forbidden =  [gunner _veh] + [driver _veh] + [commander _veh];
+                if(player in _forbidden) then {
+                    systemChat "You are not pilot and not allowed to pilot or gun this helicopter";
+                    player action ["getout", _veh];
+					player action ["eject", _veh];
+                };
+				if (driver _veh isEqualTo objNull) then{
+					systemChat "A pilot needs to be in the helicopter before you may enter";
+					player action ["getout", _veh];
+					player action ["eject", _veh];
+				};
+            };
+			
+			//Vehicle Pilot Check for plane
+            if(({typeOf _veh == _x} count _plane) > 0 && !_iamplanepilot && !_iamcrew) then {
+                //Forbidden seats: copilot, gunner, pilot
+                _forbidden =  [gunner _veh] + [driver _veh] + [commander _veh];
+                if(player in _forbidden) then {
+                    systemChat "You are not pilot and not allowed to pilot plane";
                     player action ["getout", _veh];
 					player action ["eject", _veh];
                 };

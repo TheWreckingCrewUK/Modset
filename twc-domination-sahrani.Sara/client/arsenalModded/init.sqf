@@ -1,6 +1,6 @@
-[arsenalAmmoBox,["rhs_weap_m72a7"],false] call Bis_fnc_addVirtualWeaponCargo;
-[arsenalAmmoBox,["rhs_m72a7_mag","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_red","Chemlight_yellow","Chemlight_blue","ACE_HandFlare_White","ACE_HandFlare_Red","ACE_HandFlare_Green","ACE_HandFlare_Yellow"],false] call BIS_fnc_addVirtualMagazineCargo;
-[arsenalAmmoBox,["ItemMap","ItemCompass","ItemWatch","ACE_IR_Strobe_Item","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools","ACE_fieldDressing","ACE_morphine","rhsusf_ANPVS_14"],false] call Bis_fnc_addVirtualItemCargo;
+[arsenalAmmoBox,[],false] call Bis_fnc_addVirtualWeaponCargo;
+[arsenalAmmoBox,["HandGrenade","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_red","Chemlight_yellow","Chemlight_blue","ACE_HandFlare_White","ACE_HandFlare_Red","ACE_HandFlare_Green","ACE_HandFlare_Yellow"],false] call BIS_fnc_addVirtualMagazineCargo;
+[arsenalAmmoBox,["ItemMap","ItemCompass","ItemWatch","ACE_IR_Strobe_Item","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools","ACE_fieldDressing","ACE_morphine","ACE_elasticBandage","ACE_quikclot","ACE_packingBandage","ACE_tourniquet","rhsusf_ANPVS_14"],false] call Bis_fnc_addVirtualItemCargo;
 
 if (!isNil "armour1" && {player == armour1}) then {
 	execVM "client\arsenalModded\armour_co.sqf";
@@ -17,15 +17,20 @@ if (!isNil "armour3" && {player == armour3}) then {
 };
 
 if (!isNil "helo1" && {player == helo1}) then {
-	execVM "client\arsenalModded\helo.sqf";
+	execVM "client\arsenalModded\US_PLT.sqf";
 	execVM "client\spawningModded\heli.sqf";
 };
 if (!isNil "helo2" && {player == helo2}) then {
-	execVM "client\arsenalModded\helo.sqf";
+	execVM "client\arsenalModded\US_PLT_CREW.sqf";
 	execVM "client\spawningModded\heli.sqf";
 };
 if (!isNil "helo3" && {player == helo3}) then {
-	execVM "client\arsenalModded\helo.sqf";
+	execVM "client\arsenalModded\BAF_PLT.sqf";
+	execVM "client\spawningModded\heli.sqf";
+};
+
+if (!isNil "helo4" && {player == helo4}) then {
+	execVM "client\arsenalModded\BAF_PLT_CREW.sqf";
 	execVM "client\spawningModded\heli.sqf";
 };
 

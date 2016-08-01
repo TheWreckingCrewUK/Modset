@@ -1,6 +1,6 @@
-[arsenalAmmoBox,["rhs_weap_m16a4_carryhandle_M203","rhsusf_weap_m1911a1","UK3CB_BAF_AT4_AT_Launcher","ACE_Vector"],false] call BIS_fnc_addVirtualWeaponCargo;
+[arsenalAmmoBox,["rhs_weap_m16a4_carryhandle_M203","rhsusf_weap_m1911a1","UK3CB_BAF_AT4_CS_AT_Launcher","UK3CB_BAF_AT4_CS_AP_Launcher","ACE_Vector"],false] call BIS_fnc_addVirtualWeaponCargo;
 [arsenalAmmoBox,["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Red","rhsusf_mag_7x45acp_MHP","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","1Rnd_Smoke_Grenade_shell"],false] call BIS_fnc_addVirtualMagazineCargo;
-[arsenalAmmoBox,["rhsusf_mich_helmet_marpatd","rhs_uniform_FROG01_d","rhsusf_spc_squadleader","rhsusf_acc_anpeq15","UK3CB_BAF_TA31F_3D"],false] call Bis_fnc_addVirtualItemCargo;
+[arsenalAmmoBox,["rhsusf_mich_helmet_marpatwd","rhs_uniform_FROG01_wd","rhsusf_spc_squadleader","rhsusf_acc_anpeq15_bk","UK3CB_BAF_TA31F_3D"],false] call Bis_fnc_addVirtualItemCargo;
 [arsenalAmmoBox,["rhsusf_assault_eagleaiii_coy"],false] call Bis_fnc_addVirtualBackpackCargo;
 
 comment "Exported from Arsenal by jayman";
@@ -16,9 +16,12 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "rhs_uniform_FROG01_d";
-for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
+player forceAddUniform "rhs_uniform_FROG01_wd";
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
+for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACRE_PRC148";
 player addVest "rhsusf_spc_squadleader";
@@ -28,12 +31,12 @@ for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
 for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
 player addBackpack "rhsusf_assault_eagleaiii_coy";
 for "_i" from 1 to 13 do {player addItemToBackpack "1Rnd_HE_Grenade_shell";};
-player addHeadgear "rhsusf_mich_helmet_marpatd";
+player addHeadgear "rhsusf_mich_helmet_marpatwd";
 
 comment "Add weapons";
-player addWeapon "rhs_weap_m16a4_carryhandle_M203";
-player addPrimaryWeaponItem "rhsusf_acc_anpeq15";
-player addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";
+player addWeapon "rhs_weap_m16a4_carryhandle_grip";
+player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+player addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";;
 player addWeapon "ACE_Vector";
 
 comment "Add items";

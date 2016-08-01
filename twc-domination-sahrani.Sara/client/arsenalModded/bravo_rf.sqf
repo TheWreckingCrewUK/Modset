@@ -1,7 +1,7 @@
-[arsenalAmmoBox,["rhs_weap_m4a1_carryhandle_grip","rhsusf_weap_m1911a1","UK3CB_BAF_AT4_AP_Launcher","UK3CB_BAF_Javelin_Slung_Tube","UK3CB_BAF_Javelin_CLU"],false] call BIS_fnc_addVirtualWeaponCargo;
-[arsenalAmmoBox,["30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","rhsusf_mag_7x45acp_MHP"],false] call BIS_fnc_addVirtualMagazineCargo;
-[arsenalAmmoBox,["rhsusf_ach_helmet_ESS_ocp","rhs_uniform_cu_ocp","rhsusf_iotv_ocp_SAW","acc_pointer_IR","UK3CB_BAF_TA31F_3D"],false] call Bis_fnc_addVirtualItemCargo;
-[arsenalAmmoBox,["rhsusf_assault_eagleaiii_ocp"],false] call Bis_fnc_addVirtualBackpackCargo;
+[arsenalAmmoBox,["rhs_weap_m4a1_carryhandle_grip","rhs_weap_M590_8RD","rhsusf_weap_m9","UK3CB_BAF_AT4_CS_AT_Launcher","UK3CB_BAF_AT4_CS_AP_Launcher","UK3CB_BAF_Javelin_Slung_Tube","UK3CB_BAF_Javelin_CLU","CUP_launch_MAAWS"],false] call BIS_fnc_addVirtualWeaponCargo;
+[arsenalAmmoBox,["30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","rhsusf_mag_15Rnd_9x19_JHP","rhsusf_8Rnd_Slug","rhsusf_8Rnd_00Buck","CUP_MAAWS_HEDP_M","CUP_MAAWS_HEAT_M"],false] call BIS_fnc_addVirtualMagazineCargo;
+[arsenalAmmoBox,["rhsusf_ach_helmet_ucp","rhs_uniform_cu_ucp","rhsusf_iotv_ucp_SAW","acc_pointer_IR","UK3CB_BAF_TA31F_3D","CUP_optic_MAAWS_Scope"],false] call Bis_fnc_addVirtualItemCargo;
+[arsenalAmmoBox,["rhsusf_assault_eagleaiii_ucp","ACRE_PRC148"],false] call Bis_fnc_addVirtualBackpackCargo;
 
 comment "Exported from Arsenal by jayman";
 
@@ -16,18 +16,21 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "rhs_uniform_cu_ocp";
+player forceAddUniform "rhs_uniform_cu_ucp";
 player addItemToUniform "ACRE_PRC148";
 player addItemToUniform "ACE_EarPlugs";
-for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
-player addVest "rhsusf_iotv_ocp_SAW";
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
+for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
+player addVest "rhsusf_iotv_ucp_SAW";
 for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-player addBackpack "rhsusf_assault_eagleaiii_ocp";
+player addBackpack "rhsusf_assault_eagleaiii_ucp";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-player addHeadgear "rhsusf_ach_helmet_ESS_ocp";
+player addHeadgear "rhsusf_ach_helmet_ucp";
 
 comment "Add weapons";
 player addWeapon "rhs_weap_m4a1_carryhandle_grip";

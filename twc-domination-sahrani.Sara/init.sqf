@@ -51,23 +51,24 @@ if(isServer)then{
 };
 
 //Below is the settings for restrictiong slots based on playercount.
-_specialSlots = ["armour1","armour2","armour3","helo1","helo2","helo3","jet1"];
+_specialSlots = ["armour1","armour2","armour3","helo1","helo2","helo3","helo4","jet1"];
 
 if ((str player) in _specialSlots)then{
 	
 	_UID = getPlayerUID player;
 
 	if((_UID) != "_SP_PLAYER_") then{	
-		_pilots = ["helo1", "helo2", "helo3"];
+		_pilots = ["helo1", "helo2", "helo3","helo4"];
 		_armour = ["armour1","armour2","armour3"];
 		_jets = ["jet1"];
 		_numPlayers = switch (str player) do{
-			case "helo1": {5};
-			case "helo2": {10};
-			case "helo3": {15};
-			case "armour1": {20};
-			case "armour2": {20};
-			case "armour3": {20};
+			case "helo1": {4};
+			case "helo2": {9};
+			case "helo3": {9};
+			case "helo4": {14};
+			case "armour1": {17};
+			case "armour2": {17};
+			case "armour3": {17};
 			case "jet1": {30};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
