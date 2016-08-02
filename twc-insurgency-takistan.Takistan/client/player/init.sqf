@@ -42,6 +42,14 @@ if (!isNil "p31" && {player == p31}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	
+	ammoCrateSpawner addAction ["Spawn Small UK Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUK.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small US Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
+	
 };
 
 if (!isNil "p32" && {player == p32}) then {
@@ -53,6 +61,13 @@ if (!isNil "p32" && {player == p32}) then {
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	
+	ammoCrateSpawner addAction ["Spawn Small UK Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUK.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small US Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
 };
 if (!isNil "tank1" && {player == tank1}) then {
     g_class = "ARMR_CO";
@@ -705,9 +720,6 @@ g_tank3 = "";
 execVM "client\player\boxes\main_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-
-execVM "client\player\boxes\AMMO_CRATE.sqf";
 
 
 execVM "client\player\psync.sqf";
