@@ -33,10 +33,10 @@ if (!isNil "humanCiv3" && {player == humanCiv3}) then {
 	["ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
-if (!isNil "p31" && {player == p31}) then {
+if (!isNil "helo1" && {player == helo1}) then {
     g_class = "PLT";
 	g_group = "1";
-	g_unit = "139";
+	g_unit = "203";
 	g_name = "Pilot";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC343";
@@ -52,10 +52,10 @@ if (!isNil "p31" && {player == p31}) then {
 	
 };
 
-if (!isNil "p32" && {player == p32}) then {
+if (!isNil "helo2" && {player == helo2}) then {
     g_class = "PLT_CREW";
 	g_group = "1";
-	g_unit = "140";
+	g_unit = "204";
 	g_name = "Crew Chief";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC343";
@@ -69,12 +69,50 @@ if (!isNil "p32" && {player == p32}) then {
 	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
 	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
 };
+
+if (!isNil "helo3" && {player == helo3}) then {
+    g_class = "PLT";
+	g_group = "1";
+	g_unit = "208";
+	g_name = "Pilot";
+	g_radio_channel = 6;
+	g_radio = "ACRE_PRC343";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	
+	ammoCrateSpawner addAction ["Spawn Small UK Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUK.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small US Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
+	
+};
+
+if (!isNil "helo4" && {player == helo4}) then {
+    g_class = "PLT_CREW";
+	g_group = "1";
+	g_unit = "209";
+	g_name = "Crew Chief";
+	g_radio_channel = 6;
+	g_radio = "ACRE_PRC343";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	
+	ammoCrateSpawner addAction ["Spawn Small UK Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUK.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small US Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
+};
+
 if (!isNil "tank1" && {player == tank1}) then {
     g_class = "ARMR_CO";
 	g_group = "1";
 	g_unit = "205";
 	g_name = "Armour Crew Commander";
-	g_radio_channel = 4;
+	g_radio_channel = 7;
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
@@ -85,7 +123,7 @@ if (!isNil "tank2" && {player == tank2}) then {
 	g_group = "1";
 	g_unit = "206";
 	g_name = "Armour Crew";
-	g_radio_channel = 4;
+	g_radio_channel = 7;
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
@@ -96,7 +134,7 @@ if (!isNil "tank3" && {player == tank3}) then {
 	g_group = "1";
 	g_unit = "207";
 	g_name = "Armour Crew";
-	g_radio_channel = 4;
+	g_radio_channel = 7;
 	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
@@ -433,11 +471,35 @@ if (!isNil "P30" && {player == P30}) then {
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
 
+if (!isNil "P31" && {player == P31}) then {
+    g_class = "MERT_Lead";
+	g_group = "1";
+	g_unit = "138";
+	g_name = "MERT Team Lead";
+	g_radio = "ACRE_PRC343";
+	g_radio_channel = 4;
+	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+};
+
+if (!isNil "P32" && {player == P32}) then {
+    g_class = "MERT";
+	g_group = "1";
+	g_unit = "138";
+	g_name = "Medic";
+	g_radio = "ACRE_PRC343";
+	g_radio_channel = 4;
+	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+};
+
 if (!isNil "P33" && {player == P33}) then {
     g_class = "PLT";
 	g_group = "1";
 	g_unit = "141";
-	g_radio_channel = 6;
+	g_radio_channel = 8;
 	g_radio = "ACRE_PRC343";
 	g_name = "Apache Pilot";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
@@ -448,7 +510,7 @@ if (!isNil "P34" && {player == P34}) then {
     g_class = "PLT_CREW";
 	g_group = "1";
 	g_unit = "141";
-	g_radio_channel = 6;
+	g_radio_channel = 8;
 	g_radio = "ACRE_PRC343";
 	g_name = "Apache Gunner";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
@@ -715,11 +777,16 @@ g_humanCiv3 = "";
 g_tank1 = "";
 g_tank2 = "";
 g_tank3 = "";
+g_helo1 = "";
+g_helo2 = "";
+g_helo3 = "";
+g_helo4 = "";
 
 
 execVM "client\player\boxes\main_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
+
 
 
 execVM "client\player\psync.sqf";
@@ -745,12 +812,17 @@ TWC_fnc_getArmourList = {
    execVM "client\playerlist\armourcrew.sqf";
 };
 
+TWC_fnc_getMERTList = {
+   execVM "client\playerlist\mert.sqf";
+};
+
 playerListAction = ["thisStartsTheList","Player List","", {},{true}] call ace_interact_menu_fnc_createAction;
 alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}] call ace_interact_menu_fnc_createAction;
 bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
 charlieAction = ["CharlieList","Charlie List","", {call TWC_fnc_getCharlieList;},{true}] call ace_interact_menu_fnc_createAction;
 airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ace_interact_menu_fnc_createAction;
 armourAction = ["ArmourList","Armour List","", {call TWC_fnc_getArmourList;},{true}] call ace_interact_menu_fnc_createAction;
+mertAction = ["MERTList","MERT List","", {call TWC_fnc_getMERTList;},{true}] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], playerListAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], alphaAction] call ace_interact_menu_fnc_addActionToObject;
@@ -758,6 +830,7 @@ armourAction = ["ArmourList","Armour List","", {call TWC_fnc_getArmourList;},{tr
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], charlieAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], armourAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], mertAction] call ace_interact_menu_fnc_addActionToObject;
 
 
 [] spawn {

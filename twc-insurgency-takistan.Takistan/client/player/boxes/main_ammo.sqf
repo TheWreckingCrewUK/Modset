@@ -13,11 +13,11 @@
 */
 
 _marker = "crate";  // marker used to spawn.
-_boxType = "I_supplyCrate_F";  // the type of ammobox used.
+_boxType = "CUP_BAF_VehicleBox";  // the type of ammobox used.
 _timer = 240;  // time in seconds until box is refilled.
  
 _weapons = [];
-_magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
+_magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
 _items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2],["ACE_fieldDressing",10],["ACE_morphine",10],["ACE_elasticBandage",10],["ACE_quikclot",10],["ACE_packingBandage",10], ["ACE_tourniquet", 2]];
 
 _tmp_weapons = [];
@@ -37,7 +37,8 @@ if (g_class == "BAF_SL") then {
     [
         ["UK3CB_BAF_30Rnd",50],
 		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_17Rnd_9mm",15],
+		["HandGrenade",5]
     ];
 
     _tmp_items = 
@@ -81,7 +82,8 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_30Rnd_T",50],
 		["UK3CB_BAF_L128A1_Pellets",10],
 		["UK3CB_BAF_L128A1_Slugs",10],
-		["UK3CB_BAF_17Rnd_9mm",15]
+		["UK3CB_BAF_17Rnd_9mm",15],
+		["HandGrenade",5]
 	];
 
 	_tmp_items = 
@@ -123,7 +125,8 @@ if (g_class == "BAF_SL") then {
 		["1Rnd_SmokeYellow_Grenade_shell", 10],
 		["1Rnd_SmokePurple_Grenade_shell", 10],
 		["UGL_FlareWhite_F", 10],
-		["1Rnd_SmokeBlue_Grenade_shell", 10]
+		["1Rnd_SmokeBlue_Grenade_shell", 10],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -155,7 +158,8 @@ if (g_class == "BAF_SL") then {
    [            
 		["UK3CB_BAF_200Rnd",20],
 		["UK3CB_BAF_200Rnd_T",10],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_17Rnd_9mm",15],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -188,7 +192,8 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_30Rnd_T",50],
 		["UK3CB_BAF_75Rnd",5],
 		["UK3CB_BAF_20Rnd",10],
-		["UK3CB_BAF_17Rnd_9mm",15]
+		["UK3CB_BAF_17Rnd_9mm",15],
+		["HandGrenade",5]
 	];
 
 	_tmp_items = 
@@ -219,7 +224,8 @@ if (g_class == "BAF_SL") then {
     [
         ["UK3CB_BAF_75Rnd",20],
 		["UK3CB_BAF_75Rnd_T",10],
-		["UK3CB_BAF_17Rnd_9mm",15]
+		["UK3CB_BAF_17Rnd_9mm",15],
+		["HandGrenade",5]
     ];
 	
 	_tmp_items = 
@@ -247,7 +253,8 @@ if (g_class == "BAF_SL") then {
     [
         ["UK3CB_BAF_20Rnd",25],
 		["UK3CB_BAF_20Rnd_T",10],			
-		["UK3CB_BAF_17Rnd_9mm",15]
+		["UK3CB_BAF_17Rnd_9mm",15],
+		["HandGrenade",5]
     ];
 		
 	_tmp_items = 
@@ -276,7 +283,8 @@ if (g_class == "BAF_SL") then {
 	[
 		["UK3CB_BAF_30Rnd",50],
 		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_17Rnd_9mm",15],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -324,7 +332,8 @@ if (g_class == "US_SL") then {
 	    ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
 		["UGL_FlareWhite_F", 10],
-        ["1Rnd_SmokeBlue_Grenade_shell", 10]
+        ["1Rnd_SmokeBlue_Grenade_shell", 10],
+		["HandGrenade",5]
     ];
 
     _tmp_items = 
@@ -370,7 +379,8 @@ if (g_class == "US_TL") then {
 	    ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
 		["UGL_FlareWhite_F", 10],
-        ["1Rnd_SmokeBlue_Grenade_shell", 10]
+        ["1Rnd_SmokeBlue_Grenade_shell", 10],
+		["HandGrenade",5]
     ];
 
     _tmp_items = 
@@ -411,7 +421,8 @@ if (g_class == "US_TL") then {
 		["rhsusf_8Rnd_00Buck",10],
 		["rhsusf_8Rnd_Slug",10],
 		["CUP_MAAWS_HEDP_M",2],
-		["CUP_MAAWS_HEAT_M",3]
+		["CUP_MAAWS_HEAT_M",3],
+		["HandGrenade",5]
 		
     ];
 
@@ -446,7 +457,8 @@ if (g_class == "US_TL") then {
 		["rhsusf_100Rnd_556x45_soft_pouch",20],
 		["rhsusf_200Rnd_556x45_soft_pouch",10],
 		["rhsusf_mag_15Rnd_9x19_JHP",15],
-		["rhsusf_mag_7x45acp_MHP",15]
+		["rhsusf_mag_7x45acp_MHP",15],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -483,7 +495,8 @@ if (g_class == "US_TL") then {
 	    ["1Rnd_SmokeYellow_Grenade_shell", 10],
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
 		["UGL_FlareWhite_F", 10],
-        ["1Rnd_SmokeBlue_Grenade_shell", 10]
+        ["1Rnd_SmokeBlue_Grenade_shell", 10],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -516,7 +529,8 @@ if (g_class == "US_TL") then {
         ["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",10],
 		["rhsusf_20Rnd_762x51_m118_special_Mag",25],
-        ["rhsusf_mag_15Rnd_9x19_JHP",15]
+        ["rhsusf_mag_15Rnd_9x19_JHP",15],
+		["HandGrenade",5]
     ];
 		
 	_tmp_items = 
@@ -550,7 +564,8 @@ if (g_class == "US_TL") then {
         ["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",20],
         ["rhsusf_mag_15Rnd_9x19_JHP",15],
-        ["CUP_15Rnd_9x19_M9",15]
+        ["CUP_15Rnd_9x19_M9",15],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -597,7 +612,8 @@ if (g_class == "US_TL") then {
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
         ["1Rnd_SmokeBlue_Grenade_shell", 10],
 		["UGL_FlareWhite_F", 10],
-        ["rhsusf_mag_7x45acp_MHP",15]
+        ["rhsusf_mag_7x45acp_MHP",15],
+		["HandGrenade",5]
 	];
 
     _tmp_items = 
@@ -643,7 +659,8 @@ if (g_class == "US_TL") then {
 	    ["1Rnd_SmokePurple_Grenade_shell", 10],
         ["1Rnd_SmokeBlue_Grenade_shell", 10],
 		["UGL_FlareWhite_F", 10],
-        ["rhsusf_mag_7x45acp_MHP",15]
+        ["rhsusf_mag_7x45acp_MHP",15],
+		["HandGrenade",5]
 	];
 
     _tmp_items = 
@@ -685,7 +702,8 @@ if (g_class == "US_TL") then {
 		["rhsusf_8Rnd_Slug",10],
 		["CUP_SMAW_HEAA_M",3],
 		["CUP_SMAW_HEDP_M",3],
-		["CUP_SMAW_Spotting",8]
+		["CUP_SMAW_Spotting",8],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -722,7 +740,8 @@ if (g_class == "USMC_AR") then {
 		["rhsusf_200Rnd_556x45_soft_pouch",10],
 		["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",20],
-        ["rhsusf_mag_7x45acp_MHP",15]
+        ["rhsusf_mag_7x45acp_MHP",15],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -736,6 +755,7 @@ if (g_class == "USMC_AR") then {
 		["UK3CB_BAF_TA31F_3D",1,
 		["UK3CB_BAF_TA31F",1]],
 		["UK3CB_BAF_G_Tactical_Black",1],
+		["rhsusf_acc_grip1",1],
 		["ACRE_PRC148",1]
 	];
 };
@@ -757,7 +777,8 @@ if (g_class == "USMC_AR") then {
 		["rhsusf_100Rnd_556x45_soft_pouch",10],
 		["rhsusf_200Rnd_556x45_soft_pouch",10],
 		["rhs_200rnd_556x45_M_SAW",5],
-        ["rhsusf_mag_7x45acp_MHP",15]
+        ["rhsusf_mag_7x45acp_MHP",15],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -787,7 +808,8 @@ if (g_class == "USMC_AR") then {
     [
 		["rhsusf_100Rnd_762x51",20],
 		["rhsusf_100Rnd_762x51_m62_tracer",10],
-        ["rhsusf_mag_7x45acp_MHP",15]
+        ["rhsusf_mag_7x45acp_MHP",15],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -818,7 +840,8 @@ if (g_class == "USMC_AR") then {
 		["30Rnd_556x45_Stanag_Tracer_Red",20],
 		["rhsusf_100Rnd_762x51",10],
 		["rhsusf_100Rnd_762x51_m62_tracer",10],
-        ["rhsusf_mag_7x45acp_MHP",15]
+        ["rhsusf_mag_7x45acp_MHP",15],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -846,7 +869,8 @@ if (g_class == "USMC_AR") then {
     [
         ["30Rnd_556x45_Stanag",50],
 		["30Rnd_556x45_Stanag_Tracer_Red",20],
-        ["rhsusf_mag_7x45acp_MHP",15]
+        ["rhsusf_mag_7x45acp_MHP",15],
+		["HandGrenade",5]
     ];
 
 	_tmp_items =
@@ -958,7 +982,8 @@ if (g_class == "ANA_SL") then {
 	];
 	_tmp_magazines =
     [
-        ["30Rnd_556x45_Stanag",50]
+        ["30Rnd_556x45_Stanag",50],
+		["HandGrenade",5]
     ];
 	_tmp_items =
 	[
@@ -989,7 +1014,8 @@ if (g_class == "ANA_SL") then {
     [
         ["UK3CB_BAF_30Rnd",50],
 		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_17Rnd_9mm",15],
+		["HandGrenade",5]
     ];
 	_tmp_items =
 	[
@@ -1014,7 +1040,8 @@ if (g_class == "ANA_SL") then {
     [
         ["UK3CB_BAF_30Rnd",50],
 		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_17Rnd_9mm",15],
+		["HandGrenade",5]
     ];
 	_tmp_items =
 	[
@@ -1041,7 +1068,8 @@ if (g_class == "ANA_SL") then {
     [
         ["UK3CB_BAF_30Rnd",50],
 		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_17Rnd_9mm",15],
+		["HandGrenade",5]
     ];
 	_tmp_items =
 	[
@@ -1069,7 +1097,8 @@ if (g_class == "ANA_SL") then {
     [
         ["UK3CB_BAF_30Rnd",50],
 		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_17Rnd_9mm",15],
+		["HandGrenade",5]
     ];
 	_tmp_items =
 	[
@@ -1082,6 +1111,89 @@ if (g_class == "ANA_SL") then {
 	];
 };
 
+ //load availible to MERT Lead only
+ if (g_class == "MERT_Lead") then {
+    _tmp_weapons =
+    [
+        ["UK3CB_BAF_L85A2_RIS",1],
+		["UK3CB_BAF_L131A1",1]
+    ];
+
+	_tmp_magazines =
+    [
+        ["UK3CB_BAF_30Rnd",50],
+		["UK3CB_BAF_30Rnd_T",50],
+        ["UK3CB_BAF_17Rnd_9mm",15]
+    ];
+
+    _tmp_items = 
+	[
+        ["ACE_MapTools",1],
+		["ACE_fieldDressing",50],
+		["ACE_elasticBandage", 50],
+		["ACE_quikclot", 50],
+		["ACE_packingBandage", 50],
+		["ACE_personalAidKit", 50],
+		["ACE_morphine",50],
+		["ACE_epinephrine",50],
+		["ACE_atropine", 50],
+		["ACE_salineIV",50],
+		["ACE_bodyBag",10],
+		["ACE_surgicalKit", 50],
+		["ACE_tourniquet", 5],
+		["ACE_epinephrine",5],
+		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
+		["UK3CB_BAF_LLM_IR",1],
+		["UK3CB_BAF_Eotech",1],
+		["STKR_Predator",1],
+		["ACE_DAGR",1],
+		["ACRE_PRC343",1],
+		["UK3CB_BAF_G_Tactical_Black",1],
+		["ACRE_PRC117F_ID_1",1],
+		["UK3CB_BAF_LLM_IR_Black",1]
+    ];
+};
+
+ //load availible to MERT only
+ if (g_class == "MERT") then {
+    _tmp_weapons =
+    [
+        ["UK3CB_BAF_L85A2_RIS",1],
+		["UK3CB_BAF_L131A1",1]
+    ];
+
+	_tmp_magazines =
+    [
+        ["UK3CB_BAF_30Rnd",50],
+		["UK3CB_BAF_30Rnd_T",50],
+        ["UK3CB_BAF_17Rnd_9mm",15]
+    ];
+
+    _tmp_items = 
+	[
+        ["ACE_fieldDressing",50],
+		["ACE_elasticBandage", 50],
+		["ACE_quikclot", 50],
+		["ACE_packingBandage", 50],
+		["ACE_personalAidKit", 50],
+		["ACE_morphine",50],
+		["ACE_epinephrine",50],
+		["ACE_atropine", 50],
+		["ACE_salineIV",50],
+		["ACE_bodyBag",10],
+		["ACE_surgicalKit", 50],
+		["ACE_tourniquet", 5],
+		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
+	    ["UK3CB_BAF_Eotech",1],
+		["UK3CB_BAF_LLM_IR",1],
+		["STKR_Predator",1],
+		["ACRE_PRC343",1],
+		["UK3CB_BAF_G_Tactical_Black",1],
+		["UK3CB_BAF_LLM_IR_Black",1]
+	];
+};
 
 // load available to Section Commander only.
 if (g_class == "GER_SL") then {

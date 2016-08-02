@@ -111,20 +111,23 @@ titleFadeOut 7;
 sleep 5;
 */
 
-_specialSlots = ["helo1","helo2","tank1","tank2","tank3","humanCiv1","humanCiv2","humanCiv3","p33","p34"];
+_specialSlots = ["helo1","helo2","helo3","helo4","tank1","tank2","tank3","humanCiv1","humanCiv2","humanCiv3","p33","p34","p31","p32"];
 
 if ((str player) in _specialSlots)then{
 	
 	_UID = getPlayerUID player;
 
 	if((_UID) != "_SP_PLAYER_")then{	
-		_pilots = ["helo1", "helo2"];
+		_pilots = ["helo1", "helo2","helo3", "helo4"];
 		_armourCrew = ["tank1","tank2","tank3"];
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
 		_apachePilots = ["p33","p34"];
+		_mertteam = ["p31","p32"];
 		_numPlayers = switch (str player) do{
 			case "helo1": {5};
 			case "helo2": {10};
+			case "helo3": {10};
+			case "helo4": {10};
 			case "tank1";
 			case "tank2";
 			case "tank3": {12};
@@ -133,6 +136,8 @@ if ((str player) in _specialSlots)then{
 			case "humanCiv3": {20};
 			case "p33";
 			case "p34": {18};
+			case "p31";
+			case "p32": {8};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
 		
@@ -150,8 +155,12 @@ if ((str player) in _specialSlots)then{
 			};
 		};
 		
+		if ((str player) in _mertteam && (count playableUnits) < _numPlayers) then{
+			["End6", false, 0] call BIS_fnc_endMission;
+		};
+		
 		if ((str player) in _apachePilots) then{
-			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray)) then{
+			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || (_UID  in InsP_playersKilledAsCivs) || !(_UID in timePlayedArray)) then{
 				["End4", false, 0] call BIS_fnc_endMission;
 			};
 		};

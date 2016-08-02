@@ -4,12 +4,16 @@ true spawn {
     _apachecrew = ["UK3CB_BAF_HeliPilot_RAF"];
 	_apache = ["UK3CB_BAF_APACHE_AH1_CAS"];
 	
-    _blackhawk = ["UK3CB_BAF_Wildcat_AH1_CAS_8A", "CUP_B_CH47F_GB", "UK3CB_BAF_Merlin_HC3_18_GPMG"];
+    _blackhawk = ["UK3CB_BAF_Wildcat_AH1_CAS_8A", "CUP_B_CH47F_GB", "UK3CB_BAF_Merlin_HC3_CSAR"];
 	_blackhawkpilot = ["UK3CB_BAF_Pilot_RAF"];
 	
 	//armour crew
 	_armourCrew = ["B_crew_f"];
 	_ifv = ["CUP_B_MCV80_GB_D_SLAT"];
+	
+	//MERT Team
+    _mertteam = ["B_soldier_AAA_F"];
+	_ambulance = ["CUP_B_LR_Ambulance_GB_D"];
 
 
 	//Enemy Vehicles
@@ -24,6 +28,8 @@ true spawn {
 	_iamapachecrew = ({typeOf player == _x} count _apachecrew) > 0;
     _iamblackhawkcrew = ({typeOf player == _x} count _blackhawkpilot) > 0;
 	_iamarmourcrew = ({typeOf player == _x} count _armourcrew) > 0;
+	_iamarmourcrew = ({typeOf player == _x} count _armourcrew) > 0;
+	_iammertteam = ({typeOf player == _x} count _mertteam) > 0;
 
 	_blacklist = ({typeOf player == _x} count _crewblacklist) > 0;
     //While loop
@@ -40,6 +46,17 @@ true spawn {
 
             //Vehicle check for IFV
             if(({typeOf _veh == _x} count _ifv) > 0 && !_iamarmourcrew) then {
+                //Forbidden seats: copilot, gunner, pilot
+                _forbidden =  [gunner _veh] + [driver _veh] + [commander _veh];
+                if(player in _forbidden) then {
+                    systemChat "You are not part of this vehicle crew!";
+                    player action ["getout", _veh];
+					player action ["eject", _veh];
+                };
+            };
+			
+			//Vehicle check for ambulance
+            if(({typeOf _veh == _x} count _ambulance) > 0 && !_iammertteam) then {
                 //Forbidden seats: copilot, gunner, pilot
                 _forbidden =  [gunner _veh] + [driver _veh] + [commander _veh];
                 if(player in _forbidden) then {

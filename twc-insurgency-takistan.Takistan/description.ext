@@ -3,7 +3,7 @@ joinUnassigned	= 1;
 disableChannels[]={0,1,2,3,4,6};
 
 
-onLoadName = "Insurgency Plus 3";
+onLoadName = "Insurgency Plus 4";
 onLoadMission = "http://www.thewreckingcrew.co.uk/";
 author = "WiredTiger[TWC] / Jayman[TWC] / Paddock[TWC]";
 loadScreen = "server\pics\loading.jpg";
@@ -32,7 +32,7 @@ class CfgDebriefing
 	{
 		title = "Mission End";
 		subtitle = "Good Job!";
-		description = "Stick around for some Domination on Altis, next!";
+		description = "Stick around to vote for the next mission!";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};

@@ -1,7 +1,7 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Air Assets", [["Wildcat/Chinook", [g_p31, "Pilot"], [g_p32, "Crew Chief"]],["Apache", [g_p33, "Pilot"], [g_p34, "Gunner"]]]]				
+g_playerlist = [["Air Assets", [["Wildcat/Chinook/Merlin CSAR", [g_helo1, "Pilot"], [g_helo2, "Crew Chief"]],["Wildcat/Chinook/Merlin CSAR", [g_helo3, "Pilot"], [g_helo4, "Crew Chief"]],["Apache", [g_p33, "Pilot"], [g_p34, "Gunner"]]]				
 				
-				];
+				]];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
 _headline = "<t color='#CCCC00' size='1.2' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";

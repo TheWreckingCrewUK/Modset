@@ -45,6 +45,8 @@ g_humanCiv2 = "";
 g_humanCiv3 = "";
 g_helo1 = "";
 g_helo2 = "";
+g_helo3 = "";
+g_helo4 = "";
 g_tank1 = "";
 g_tank2 = "";
 g_tank3 = "";
@@ -97,6 +99,8 @@ g_tank3 = "";
 		case "205": {g_tank1 = name player; publicVariable "g_tank1"; };
 		case "206": {g_tank2 = name player; publicVariable "g_tank2"; };
 		case "207": {g_tank3 = name player; publicVariable "g_tank3"; };
+		case "208": {g_helo3 = name player; publicVariable "g_helo3"; };
+		case "209": {g_helo4 = name player; publicVariable "g_helo4"; };
 				
 	};
 	
