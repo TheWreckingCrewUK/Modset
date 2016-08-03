@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=342;
+		nextID=351;
 	};
 	class Camera
 	{
-		pos[]={920.78662,721.63745,10484.554};
-		dir[]={0.84121525,-0.53781986,0.056663979};
-		up[]={0.53662276,0.84304428,0.036145985};
-		aside[]={0.067212038,6.6059874e-007,-0.99779391};
+		pos[]={5982.7383,149.47913,11594.471};
+		dir[]={0.18630354,-0.57159275,-0.7991454};
+		up[]={0.12976934,0.8205592,-0.55663913};
+		aside[]={-0.97391671,-6.6240318e-008,-0.22704889};
 	};
 };
 binarizationWanted=0;
@@ -588,11 +588,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5789.3096,544.06738,11663.565};
+				position[]={5955.7583,86.321259,11608.059};
 			};
 			id=111;
 			type="ModuleCreateDiaryRecord_F";
-			atlOffset=461.02737;
+			atlOffset=3.2812576;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -698,12 +698,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5789.3096,542.68311,11668.565};
+				position[]={5955.7583,84.936981,11613.059};
 			};
 			name="Zeus";
 			id=112;
 			type="ModuleCurator_F";
-			atlOffset=459.6431;
+			atlOffset=1.8969803;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -842,12 +842,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5789.2427,541.70801,11673.626};
+				position[]={5955.6914,83.961884,11618.119};
 			};
 			name="jayman";
 			id=139;
 			type="ModuleCurator_F";
-			atlOffset=458.668;
+			atlOffset=0.92188263;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1029,11 +1029,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5779.5713,392.29712,11663.621};
+				position[]={5946.02,83.040001,11608.114};
 			};
 			id=184;
 			type="acre_api_basicMissionSetup";
-			atlOffset=309.25711;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1158,11 +1157,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5779.5918,391.31647,11668.761};
+				position[]={5946.0405,83.040001,11613.254};
 			};
 			id=185;
 			type="acre_api_DifficultySettings";
-			atlOffset=308.27646;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3767,12 +3765,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5788.8721,540.78613,11679.032};
+				position[]={5955.3208,83.040001,11623.525};
 			};
 			name="Paddock";
 			id=2992;
 			type="ModuleCurator_F";
-			atlOffset=457.74612;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4960,7 +4957,6 @@ class Mission
 						rank="CORPORAL";
 						name="p9";
 						description="Bravo Section Leader";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3144;
@@ -10023,7 +10019,7 @@ class Mission
 			};
 			id=3459;
 			type="Land_TripodScreen_01_dual_v1_F";
-			atlOffset=0.48900604;
+			atlOffset=0.48899841;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13057,6 +13053,7 @@ class Mission
 					{
 						name="p32";
 						description="Medic [10]";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3670;
@@ -13760,14 +13757,14 @@ class Mission
 			dataType="Layer";
 			name="Camp Ant";
 			id=3816;
-			atlOffset=0.014312744;
+			atlOffset=-610.15997;
 		};
 		class Item379
 		{
 			dataType="Layer";
 			name="Camp Deer";
 			id=3876;
-			atlOffset=0.63046265;
+			atlOffset=-610.15997;
 		};
 		class Item380
 		{
