@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3691;
+		nextID=4373;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=312;
+		nextID=342;
 	};
 	class Camera
 	{
-		pos[]={5929.2266,101.29385,11386.281};
-		dir[]={0.50439852,-0.39634648,0.76728481};
-		up[]={0.21776484,0.91792363,0.3312602};
-		aside[]={0.83575183,-2.460758e-006,-0.54939246};
+		pos[]={920.78662,721.63745,10484.554};
+		dir[]={0.84121525,-0.53781986,0.056663979};
+		up[]={0.53662276,0.84304428,0.036145985};
+		aside[]={0.067212038,6.6059874e-007,-0.99779391};
 	};
 };
 binarizationWanted=0;
@@ -430,6 +430,7 @@ class Mission
 {
 	class Intel
 	{
+		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.40000001;
 		startWind=0.1;
@@ -447,7 +448,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=376;
+		items=381;
 		class Item0
 		{
 			dataType="Marker";
@@ -2742,15 +2743,39 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5732.7529,85.412605,11277.332};
-				angles[]={0,5.4729781,0};
+				angles[]={0,5.4729862,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="0 = [this, 300, 360] execVM ""server\sys_vehicles\vehicleRespawn.sqf"";";
 			};
 			id=2267;
 			type="UK3CB_BAF_Apache_AH1_CAS";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_MXC_F"",""FirstAidKit""],[2,2]],[[""SmokeShell"",""SmokeShellBlue"",""30Rnd_65x39_caseless_mag""],[2,2,4]],[[""ToolKit"",""ItemGPS""],[1,1]],[[""B_Parachute""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item80
 		{
@@ -4051,7 +4076,7 @@ class Mission
 		class Item111
 		{
 			dataType="Trigger";
-			position[]={5687.1538,83.040001,11459.361};
+			position[]={5694.5181,83.040001,11444.962};
 			angle=5.5056558;
 			class Attributes
 			{
@@ -4924,7 +4949,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6048.6475,83.041443,11530.229};
+						position[]={6048.647,83.041443,11530.229};
 						angles[]={0,2.3085644,0};
 					};
 					side="West";
@@ -4935,6 +4960,7 @@ class Mission
 						rank="CORPORAL";
 						name="p9";
 						description="Bravo Section Leader";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3144;
@@ -6449,7 +6475,6 @@ class Mission
 					{
 						name="p30";
 						description="Charlie Medic";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3166;
@@ -9998,7 +10023,7 @@ class Mission
 			};
 			id=3459;
 			type="Land_TripodScreen_01_dual_v1_F";
-			atlOffset=0.48899841;
+			atlOffset=0.48900604;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11926,7 +11951,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="p8, p17, p30,p31,p32";
+							value="p8, p17, p30";
 						};
 					};
 				};
@@ -12976,17 +13001,40 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6014.1753,86.776642,11418.514};
-				angles[]={0,3.9564536,0};
+				position[]={6014.1748,86.776604,11418.514};
+				angles[]={0,3.9564519,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="0 = [this, 300, 360] execVM ""server\sys_vehicles\vehicleRespawn.sqf"";";
 			};
 			id=3648;
 			type="UK3CB_BAF_Merlin_HC3_CSAR";
-			atlOffset=3.8146973e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_MXC_F"",""FirstAidKit"",""Medikit""],[2,8,1]],[[""UK3CB_BAF_762_200Rnd_T"",""SmokeShell"",""SmokeShellGreen"",""30Rnd_65x39_caseless_mag""],[15,2,2,4]],[[""ToolKit"",""ItemGPS""],[1,1]],[[""B_Parachute""],[20]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item370
 		{
@@ -13000,15 +13048,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5967.3647,83.544441,11394.031};
-						angles[]={0,0.80845624,0};
+						position[]={5967.3652,83.544441,11394.031};
+						angles[]={0,0.80845392,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						name="p32";
-						description="Medic [8]";
+						description="Medic [10]";
 						isPlayable=1;
 					};
 					id=3670;
@@ -13087,8 +13135,9 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						rank="CORPORAL";
 						name="p31";
-						description="MERT Team Lead [8]";
+						description="MERT Team Lead [10]";
 						isPlayable=1;
 					};
 					id=3671;
@@ -13691,6 +13740,86 @@ class Mission
 			{
 			};
 			id=3687;
+		};
+		class Item376
+		{
+			dataType="Layer";
+			name="Camp Falcon";
+			id=3736;
+			atlOffset=-610.15997;
+		};
+		class Item377
+		{
+			dataType="Layer";
+			name="Camp Bear";
+			id=3779;
+			atlOffset=-610.15997;
+		};
+		class Item378
+		{
+			dataType="Layer";
+			name="Camp Ant";
+			id=3816;
+			atlOffset=0.014312744;
+		};
+		class Item379
+		{
+			dataType="Layer";
+			name="Camp Deer";
+			id=3876;
+			atlOffset=0.63046265;
+		};
+		class Item380
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5964.814,83.040001,11560.265};
+			};
+			id=4287;
+			type="ACE_moduleAssignMedicRoles";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleAssignMedicRoles_EnableList";
+					expression="_this setVariable ['EnableList',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="p31,p32";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_moduleAssignMedicRoles_role";
+					expression="_this setVariable ['role',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 };

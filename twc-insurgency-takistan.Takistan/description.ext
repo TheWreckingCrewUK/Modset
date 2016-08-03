@@ -3,7 +3,7 @@ joinUnassigned	= 1;
 disableChannels[]={0,1,2,3,4,6};
 
 
-onLoadName = "Insurgency Plus 4";
+onLoadName = "Insurgency Plus 3";
 onLoadMission = "http://www.thewreckingcrew.co.uk/";
 author = "WiredTiger[TWC] / Jayman[TWC] / Paddock[TWC]";
 loadScreen = "server\pics\loading.jpg";

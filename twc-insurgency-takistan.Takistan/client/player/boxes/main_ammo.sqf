@@ -448,14 +448,14 @@ if (g_class == "US_TL") then {
         ["rhs_weap_m249_pip",1],
 		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
 		["Binocular",1],
-		["rhsusf_weap_m9",1],
-		["rhsusf_weap_m1911a1",1]
+		["rhsusf_weap_m9",1]
 	];
 
     _tmp_magazines =
     [
 		["rhsusf_100Rnd_556x45_soft_pouch",20],
 		["rhsusf_200Rnd_556x45_soft_pouch",10],
+		["rhs_200rnd_556x45_M_SAW",10],
 		["rhsusf_mag_15Rnd_9x19_JHP",15],
 		["rhsusf_mag_7x45acp_MHP",15],
 		["HandGrenade",5]

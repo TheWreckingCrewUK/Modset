@@ -474,7 +474,7 @@ if (!isNil "P30" && {player == P30}) then {
 if (!isNil "P31" && {player == P31}) then {
     g_class = "MERT_Lead";
 	g_group = "1";
-	g_unit = "138";
+	g_unit = "139";
 	g_name = "MERT Team Lead";
 	g_radio = "ACRE_PRC343";
 	g_radio_channel = 4;
@@ -486,7 +486,7 @@ if (!isNil "P31" && {player == P31}) then {
 if (!isNil "P32" && {player == P32}) then {
     g_class = "MERT";
 	g_group = "1";
-	g_unit = "138";
+	g_unit = "140";
 	g_name = "Medic";
 	g_radio = "ACRE_PRC343";
 	g_radio_channel = 4;
