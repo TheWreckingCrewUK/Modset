@@ -8,10 +8,7 @@ timeSavingAction = ["TWC_TimePlayed", "Time Played", "", {
 	timePlayed = diag_tickTime - timeStart; timePlayed = (floor (timePlayed / 60));
 	hint format["You have played %1 Minutes", timePlayed];
 	if (timePlayed >= 5)then{
-		if ((getplayerUID player) in timePlayedArray) then {
-			timePlayedArray = timePlayedArray - [getplayerUID player];
-			publicVariable "timePlayedArray";
-		};
+		if ((getplayerUID player) in timePlayedArray)exitWith{};
 		timePlayedArray = timePlayedArray + [getplayerUID player];
 		publicVariable "timePlayedArray";
 	};	

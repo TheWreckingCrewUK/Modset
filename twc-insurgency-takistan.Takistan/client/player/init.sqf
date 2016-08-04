@@ -49,6 +49,12 @@ if (!isNil "helo1" && {player == helo1}) then {
 	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
 	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
 	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large UK Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUK.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large US Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUS.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large USMC Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUSMC.sqf";},[],0,true,false,"",""];
 	
 };
 
@@ -68,6 +74,12 @@ if (!isNil "helo2" && {player == helo2}) then {
 	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
 	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
 	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large UK Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUK.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large US Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUS.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large USMC Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUSMC.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "helo3" && {player == helo3}) then {
@@ -86,6 +98,12 @@ if (!isNil "helo3" && {player == helo3}) then {
 	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
 	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
 	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large UK Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUK.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large US Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUS.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large USMC Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUSMC.sqf";},[],0,true,false,"",""];
 	
 };
 
@@ -105,6 +123,12 @@ if (!isNil "helo4" && {player == helo4}) then {
 	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
 	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
 	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large UK Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUK.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large US Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUS.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Large USMC Ammobox",
+	{nul = [] execVM "client\player\boxes\largeCrateUSMC.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "tank1" && {player == tank1}) then {
@@ -148,6 +172,7 @@ if (!isNil "P1" && {player == P1}) then {
 	g_radio = "ACRE_PRC343";
 	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are a Section Leader. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
 
 if (!isNil "P2" && {player == P2}) then {
@@ -236,6 +261,7 @@ if (!isNil "P9" && {player == P9}) then {
 	g_radio = "ACRE_PRC148";
 	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are a Section Leader. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
 
 if (!isNil "P10" && {player == P10}) then {
@@ -336,6 +362,7 @@ if (!isNil "P18" && {player == P18}) then {
 	g_radio_channel = 3;
 	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are a Section Leader. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
 
 if (!isNil "P19" && {player == P19}) then {

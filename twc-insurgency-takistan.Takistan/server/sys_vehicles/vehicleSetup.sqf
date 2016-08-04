@@ -12,6 +12,8 @@ while {_vehicle < _amountToSpawn} do {
 	_vehiclePos = [_spawnMarker, _spawnRadius] call CBA_fnc_randPos;
 	
 	if (_vehiclePos distance (nearestBuilding _vehiclePos) > 5 && _vehiclePos distance (nearestObject _vehiclePos) > 5) then {
+	
+	if(_vehiclePos distance (getMarkerPos "respawnWest") < 300)exitWith{};
 		_selectVehicle = vehicleList select (floor(random(count vehicleList)));
 		_newVehicle = _selectVehicle createVehicle _vehiclePos;
 		_newVehicle setDir (random 360);

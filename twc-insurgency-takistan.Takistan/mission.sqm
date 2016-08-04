@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=4373;
+		nextID=4375;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=351;
+		nextID=360;
 	};
 	class Camera
 	{
-		pos[]={5982.7383,149.47913,11594.471};
-		dir[]={0.18630354,-0.57159275,-0.7991454};
-		up[]={0.12976934,0.8205592,-0.55663913};
-		aside[]={-0.97391671,-6.6240318e-008,-0.22704889};
+		pos[]={5766.2954,125.06026,11415.073};
+		dir[]={0.63498902,-0.52727681,-0.56470311};
+		up[]={0.393996,0.84970528,-0.35038331};
+		aside[]={-0.6645816,2.0908192e-007,-0.74729836};
 	};
 };
 binarizationWanted=0;
@@ -12646,7 +12646,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5837.8828,83.042442,11367.14};
+						position[]={5837.8828,83.041443,11367.14};
 						angles[]={0,3.8610523,0};
 					};
 					side="West";
@@ -12657,11 +12657,11 @@ class Mission
 						rank="CORPORAL";
 						name="helo1";
 						description="Pilot [5]";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3643;
 					type="UK3CB_BAF_Pilot_RAF";
-					atlOffset=0.00099945068;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12811,7 +12811,6 @@ class Mission
 			{
 			};
 			id=3642;
-			atlOffset=0.00099945068;
 		};
 		class Item368
 		{
@@ -13053,7 +13052,6 @@ class Mission
 					{
 						name="p32";
 						description="Medic [10]";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3670;
