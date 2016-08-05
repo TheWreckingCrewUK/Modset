@@ -11,7 +11,7 @@
  
 */
 cargoAreaExclusionTriggers = [base_area_marker];
-cargoCrateDeployedWhitelist = ["Box_NATO_AmmoVeh_F", "UK3CB_BAF_Static_Weapons_Box"];
+cargoCrateDeployedWhitelist = ["Box_NATO_AmmoVeh_F", "UK3CB_BAF_Static_Weapons_Box", "Box_UK3CB_BAF_Static_Weapons_Box"];
 vehicleCargoDeployedWhitelist = ["UK3CB_BAF_Wildcat_AH1_CAS_8A", "CUP_B_CH47F_GB", "UK3CB_BAF_Merlin_HC3_CSAR"];
 
 // This is where the magic happens - i.e. common interface
@@ -26,16 +26,24 @@ TWC_Cargo_Deployed = {
 	} forEach cargoAreaExclusionTriggers;
 	
 	if (_isAllowed) then {
-		_pos = [(getPos _cargo), [100,150]] call SHK_pos;
-		_groupSpawned = [_pos, East, townSquadWave] call BIS_fnc_spawnGroup;
-		[_groupSpawned, (getPos _cargo), 0] call CBA_fnc_taskAttack;
-		{
-			_x addMPEventHandler ["MPKilled",{
-				if (side (_this select 1) == WEST) then{
-					InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
-				};
-			}];
-		} forEach units _groupSpawn;
+		_roll = random [0, 50, 100];
+		_check = ((InsP_enemyMorale * 25) * -1) + 35;
+		// 75, 50, 25, 0, -25, -50, -75
+		//  -3,  -2,  -1, 0,  1,  2,  3
+		//   (inverted for percentage)
+
+		if (_roll >= _check) then { 
+			_pos = [(getPos _cargo), [100,150]] call SHK_pos;
+			_groupSpawned = [_pos, East, townSquadWave] call BIS_fnc_spawnGroup;
+			[_groupSpawned, (getPos _cargo), 0] call CBA_fnc_taskAttack;
+			{
+				_x addMPEventHandler ["MPKilled",{
+					if (side (_this select 1) == WEST) then{
+						InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
+					};
+				}];
+			} forEach units _groupSpawn;
+		};
 	};
 };
 
