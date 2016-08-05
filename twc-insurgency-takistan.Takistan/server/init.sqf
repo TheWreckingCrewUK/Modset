@@ -79,6 +79,4 @@ if (isNil "InsP_aatDestroyed") then {
 #include "sys_townSetup\init.sqf";
 #include "sys_smallTown\init.sqf";
 
-#include "aiFix\aiFix.sqf";
-
 #include "sys_buildings\init.sqf";

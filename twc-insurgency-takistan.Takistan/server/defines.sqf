@@ -32,4 +32,4 @@ publicVariable "townMarkerArray";
 
 enemyTechnical = ["CUP_O_LR_MG_TKM"];
 
-badTownList = ["Military Base","airfield","Sar-e Sang pass","Naygul valley","Nagara-1 oilfield","Par-e Siah oilfield","Sagram","Naran Darre pass","Jaza","mine","Lalezar","Nar"];
+badTownList = ["Military Base","airfield","Sar-e Sang pass","Naygul valley","Nagara-1 oilfield","Par-e Siah oilfield","Sagram","Naran Darre pass","Jaza","mine","Lalezar","Nar","Darbang pass","Bala pass"];

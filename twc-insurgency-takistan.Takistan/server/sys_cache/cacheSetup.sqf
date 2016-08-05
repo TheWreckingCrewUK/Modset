@@ -28,12 +28,12 @@ if (isNil "InsP_cacheGroup") then {
 		while {(_x distance (getMarkerPos "cacheSpawn")) < 50} do {
 			_cacheMarker = "";
 			switch (str _forEachIndex) do {
-				case "0": {_cacheMarker = "cacheMarkerA"};
-				case "1": {_cacheMarker = "cacheMarkerB"};
-				case "2": {_cacheMarker = "cacheMarkerC"};
+				case "0": {_cacheMarker = cacheBoxAPos};
+				case "1": {_cacheMarker = cacheBoxBPos};
+				case "2": {_cacheMarker = cacheBoxCPos};
 			};
 	
-			_houseList = (getMarkerPos _cacheMarker) nearObjects ["House",4000];
+			_houseList = (getPos _cacheMarker) nearObjects ["House",1000];
 			sleep .25;
 			_c = 0;
 			_house = _houseList call BIS_fnc_selectRandom;
@@ -44,6 +44,14 @@ if (isNil "InsP_cacheGroup") then {
 				sleep 1;
 				_cacheGroup = [[(getPosATL _x select 0)+random 50, (getPosATL _x select 1)+random 50,0], EAST, (cacheDefenseSquad)] call BIS_fnc_spawnGroup;
 				[_cacheGroup, getPosATL _x, 100, 2, true] call CBA_fnc_taskDefend;
+				{
+					_x addMPEventHandler ["MPKilled",{
+					if (side (_this select 1) == WEST) then{
+						InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
+					};
+					}];
+					_x addMagazines ["handGrenade",2];
+				}forEach units _cacheGroup;
 			};
 			sleep 0.25;
 		};

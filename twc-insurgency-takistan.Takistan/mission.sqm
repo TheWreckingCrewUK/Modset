@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=360;
+		nextID=423;
 	};
 	class Camera
 	{
-		pos[]={5766.2954,125.06026,11415.073};
-		dir[]={0.63498902,-0.52727681,-0.56470311};
-		up[]={0.393996,0.84970528,-0.35038331};
-		aside[]={-0.6645816,2.0908192e-007,-0.74729836};
+		pos[]={6038.8687,183.65001,11542.589};
+		dir[]={0.18859117,-0.93336409,-0.30560032};
+		up[]={0.49014789,0.35905442,-0.79425138};
+		aside[]={-0.85105479,7.1362592e-007,-0.52520001};
 	};
 };
 binarizationWanted=0;
@@ -3086,7 +3086,7 @@ class Mission
 				class Item1
 				{
 					dataType="Marker";
-					position[]={5769.8213,83.040001,11316.657};
+					position[]={-6214.7305,589.56738,14830.652};
 					name="Vehicle_7";
 					text="Helicopter";
 					type="b_air";
@@ -4294,6 +4294,7 @@ class Mission
 						rank="CORPORAL";
 						name="p1";
 						description="Alpha Section Lead";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3134;
@@ -12657,7 +12658,6 @@ class Mission
 						rank="CORPORAL";
 						name="helo1";
 						description="Pilot [5]";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3643;

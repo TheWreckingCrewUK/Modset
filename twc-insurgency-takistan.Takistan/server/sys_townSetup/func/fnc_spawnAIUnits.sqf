@@ -15,21 +15,22 @@ if (_waves < 1) then {
 };
 for "_i" from 1 to _waves do {
 	_pos = [getMarkerPos _marker,_groupradius] call SHK_pos;
-	_groupSpawned = [_pos, East, townSquadWave] call BIS_fnc_spawnGroup;
-    [_groupSpawned, (_marker), 40] call CBA_fnc_taskAttack;	
+	_groupSpawn = [_pos, East, townSquadWave] call BIS_fnc_spawnGroup;
+    [_groupSpawn, (_marker), 40] call CBA_fnc_taskAttack;	
 	{
 		_x addMPEventHandler ["MPKilled",{
 			if (side (_this select 1) == WEST) then{
 				InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
 			};
 		}];
+		_x addMagazines ["handGrenade",2];
 	}forEach units _groupSpawn;
 };
 
 if ((count PlayableUnits) > 5) then{
 	_pos = [getMarkerPos _marker, _groupradius,[0,360],0,[2,200]] call shk_pos;
-	_groupSpawned =  [_pos, East, enemyTechnical] call BIS_fnc_spawnGroup;
-	[_groupSpawned, (_marker), 40] call CBA_fnc_taskAttack;
+	_groupSpawn =  [_pos, East, enemyTechnical] call BIS_fnc_spawnGroup;
+	[_groupSpawn, (_marker), 40] call CBA_fnc_taskAttack;
 	{
 		_x addMPEventHandler ["MPKilled",{
 			if (side (_this select 1) == WEST) then{

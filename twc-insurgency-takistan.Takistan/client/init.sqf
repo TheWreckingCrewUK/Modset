@@ -37,7 +37,7 @@ execVM "client\cleanup\gear.sqf";
 
 //Actions to make AI questionable
 
-QuestionPersonAction = ["QuestionPerson","Question Person","",{call InsP_fnc_questionDisplay},{alive (_this select 0)}] call ace_interact_menu_fnc_createAction;
+QuestionPersonAction = ["QuestionPerson","Question Person","",{[_this select 0] call InsP_fnc_questionDisplay},{alive (_this select 0)}] call ace_interact_menu_fnc_createAction;
 ["C_man_1", 0, ["ACE_MainActions"], QuestionPersonAction] call ace_interact_menu_fnc_addActionToClass;
 
 QuestionInsurgentAction2 = ["QuestionPerson","Interrogate Insurgent","",{call InsP_fnc_questionInsurgent; (_this select 0) disableAI "MOVE"},{alive (_this select 0) && ((player distance InterrogationFlag) < 20)}] call ace_interact_menu_fnc_createAction;

@@ -1,14 +1,14 @@
 /*
 * Details
 *
-* Gives a 10% chance of spawning a squad around the marker and set them to cba defend.
+* Gives a 50% chance of spawning a squad around the marker and set them to cba defend.
 *
 * example ["Gospandi"] call twc_smallTown;
 */
 
 params["_marker", "_civnum", "_civradius"];
 _random = random 100;
-if (_random < 10) then {
+if (_random < 50) then {
 	if (isServer) then {
 		_groupSpawn = [getMarkerPos _marker, East, smallTownSquad,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
 		[_groupSpawn, _groupSpawn, 200, 3, True] call CBA_fnc_TaskDefend;
@@ -18,6 +18,7 @@ if (_random < 10) then {
 					InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
 				};
 			}];
+			_x addMagazines ["handGrenade",2];
 		}forEach units _groupSpawn;
 	};
 };

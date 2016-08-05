@@ -26,6 +26,7 @@ if (_random < 75) then {
 					InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
 				};
 			}];
+			_x addMagazines ["handGrenade",2];
 		}forEach units _groupSpawn;
 	};
 };

@@ -18,7 +18,7 @@ _timer = 240;  // time in seconds until box is refilled.
  
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2],["ACE_fieldDressing",10],["ACE_morphine",10],["ACE_elasticBandage",10],["ACE_quikclot",10],["ACE_packingBandage",10], ["ACE_tourniquet", 2]];
+_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2],["ACE_fieldDressing",10],["ACE_morphine",10],["ACE_elasticBandage",10],["ACE_quikclot",10],["ACE_packingBandage",10], ["ACE_tourniquet", 2],["ACE_SpraypaintGreen",1]];
 
 _tmp_weapons = [];
 _tmp_magazines = [];
@@ -46,7 +46,7 @@ if (g_class == "BAF_SL") then {
         ["ACE_MapTools",1],
 		["ACE_epinephrine",5],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
+		["UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
@@ -90,7 +90,7 @@ if (g_class == "BAF_SL") then {
 	[
 		["ACE_MapTools",1],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
+		["UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
 		["STKR_Predator",1],
@@ -133,7 +133,7 @@ if (g_class == "BAF_SL") then {
 	[
 		["ACE_MapTools",1],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
+		["UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
 		["STKR_Predator",1],
@@ -166,7 +166,7 @@ if (g_class == "BAF_SL") then {
 	[
         ["ACE_MapTools",1],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
+		["UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["STKR_Predator",1],
@@ -200,7 +200,7 @@ if (g_class == "BAF_SL") then {
 	[
 		["ACE_MapTools",1],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
+		["UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
 		["STKR_Predator",1],
@@ -302,7 +302,7 @@ if (g_class == "BAF_SL") then {
 		["ACE_surgicalKit", 50],
 		["ACE_tourniquet", 5],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
+		["UK3CB_BAF_SpecterLDS_Dot",1],
 	    ["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["STKR_Predator",1],

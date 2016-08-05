@@ -1,3 +1,4 @@
+//Sets ied restriction markers to invisible. Helps us out on the editor.
 "iedRestrictionZone" setMarkerAlpha 0;
 "iedRestrictionZone2" setMarkerAlpha 0;
 
@@ -10,6 +11,8 @@ execVM "SHK_pos\shk_pos_init.sqf";
 [true] call acre_api_fnc_setRevealToAI;
 
 if (isServer) then {
+	timePlayedArray = [];
+	publicVariable "timePlayedArray";
 	execVM "server\init.sqf";
 };
 
