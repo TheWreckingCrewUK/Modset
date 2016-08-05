@@ -119,6 +119,10 @@ _specialSlots = ["helo1","helo2","helo3","helo4","tank1","tank2","tank3","humanC
 if ((str player) in _specialSlots)then{
 	
 	_UID = getPlayerUID player;
+	
+	_arrayPos = timePlayedArray find (getplayerUID player);
+	_arrayPos = _arrayPos + 1;
+	_timePlayed = timePlayedArray select _arrayPos;
 
 	if((_UID) != "_SP_PLAYER_")then{	
 		_pilots = ["helo1", "helo2","helo3", "helo4"];
@@ -153,7 +157,7 @@ if ((str player) in _specialSlots)then{
 		};
 
 		if ((str player) in _humancivs) then{
-			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || (_UID  in InsP_playersKilledAsCivs) || !(_UID in timePlayedArray)) then{
+			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || (_UID  in InsP_playersKilledAsCivs) || _timePlayed < 15) then{
 				["End3", false, 0] call BIS_fnc_endMission;
 			};
 		};
@@ -163,7 +167,7 @@ if ((str player) in _specialSlots)then{
 		};
 		
 		if ((str player) in _apachePilots) then{
-			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || (_UID  in InsP_playersKilledAsCivs) || !(_UID in timePlayedArray)) then{
+			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || (_UID  in InsP_playersKilledAsCivs) || _timePlayed < 15) then{
 				["End4", false, 0] call BIS_fnc_endMission;
 			};
 		};
