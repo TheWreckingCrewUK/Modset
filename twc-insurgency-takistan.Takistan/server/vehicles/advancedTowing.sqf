@@ -406,6 +406,10 @@ ASL_Release_Cargo = {
 		_allCargo = _vehicle getVariable ["ASL_Cargo",[]];
 		_allCargo set [_ropeIndex,objNull];
 		_vehicle setVariable ["ASL_Cargo",_allCargo, true];
+		
+		// custom TWC event used to be notified when cargo has been dropped off
+		["twc_cargoDeployed", [_existingCargo, 0]] call CBA_fnc_globalEvent;
+		
 		_this call ASL_Retract_Ropes;
 	} else {
 		[_this,"ASL_Release_Cargo",_vehicle,true] call ASL_RemoteExec;

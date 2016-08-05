@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6038.8687,183.65001,11542.589};
+		pos[]={5867.0249,631.13855,11763.731};
 		dir[]={0.18859117,-0.93336409,-0.30560032};
 		up[]={0.49014789,0.35905442,-0.79425138};
 		aside[]={-0.85105479,7.1362592e-007,-0.52520001};
@@ -463,9 +463,10 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6004.042,83.040001,11515.826};
-			angle=5.5056558;
+			angle=5.5056581;
 			class Attributes
 			{
+				name="base_area_marker";
 				onActivation="Russiancheck = Russiancheck + 1; hint "" Insurgents near the base !""";
 				onDeactivation="Russiancheck = Russiancheck - 1;";
 				sizeA=500;

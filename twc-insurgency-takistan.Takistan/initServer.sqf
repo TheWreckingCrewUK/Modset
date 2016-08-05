@@ -22,3 +22,5 @@ timeEventHandler = addMissionEventHandler ["PlayerDisconnected",{
 	timePlayedArray set [_arrayPos, timePlayed];
 	publicVariable "timePlayedArray";
 }];
+
+execVM "server\vehicles\cargoDeployed.sqf";
