@@ -1,4 +1,4 @@
 
 Params ["_taskname","_state"];
 
-[[_taskname],,,_state] call BIS_fnc_setTask;
+[_taskname,_state,true] call BIS_fnc_taskSetSTate;
