@@ -26,7 +26,7 @@ if (_marker == "airbase2")then {
 		
 		cratePos = crateBoatPos;
 		publicVariable "cratePos";
-		{mainAmmoBox setPos cratePos} remoteExec ["call", 0];
+		{crateBox setPos cratePos} remoteExec ["call", 0];
 		
 	}else{
 	
@@ -44,7 +44,7 @@ if(_marker == "commanderBase") then{
 		
 		cratePos = getMarkerPos "crateDefault"; 
 		publicVariable "cratePos";
-		{mainAmmoBox setPos cratePos} remoteExec ["call", 0];
+		{crateBox setPos cratePos} remoteExec ["call", 0];
 		
 		deleteVehicle jetSpawnPad;
 		deleteVehicle jetSpawner;	
@@ -77,7 +77,7 @@ if(_marker == "commanderBase") then{
 		
 		cratePos = crateboatPos;
 		publicVariable "cratePos";
-		{mainAmmoBox setPos cratePos} remoteExec ["call", 0];
+		{crateBox setPos cratePos} remoteExec ["call", 0];
 	};
 	
 };

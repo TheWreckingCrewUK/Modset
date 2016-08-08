@@ -5,7 +5,7 @@ _crateBoatPos = (getMarkerPos "crateBoat");
 crateBoatPos = [(_crateBoatPos select 0),(_crateBoatPos select 1), 2];
 
 RussianCheck = 0;
-
+isModded = 1;
 if(isServer) then{
 	_script = execVM "SHK_pos\shk_pos_init.sqf";
 	waitUntil {scriptDone _script};
@@ -32,7 +32,6 @@ if(isServer) then{
 };
 
 execVM "client\zeus\zeus.sqf";
-execVM "client\zeus\zeus-Fakematty.sqf";
 execVM "client\zeus\zeus-jayman.sqf";
 execVM "client\zeus\zeus-commander1.sqf";
 
@@ -91,26 +90,35 @@ if ((str player) in _specialSlots)then{
 	if((_UID) != "_SP_PLAYER_") then{	
 		_pilots = ["helo1", "helo2", "helo3"];
 		_snipers = ["p31","p32"];
-		_armour = ["p33","p34","p35"];
+		_armour = ["armour1","armour2","armour3"];
 		_jets = ["jetPilot1"];
 		_commanders = ["commander","enemy1"];
 		_numPlayers = switch (str player) do{
 			case "helo1": {5};
-			case "helo2": {10};
-			case "helo3": {15};
+			case "helo2": {5};
+			case "helo3": {5};
 			case "p31": {12};
 			case "p32": {12};
-			case "p33": {10};
-			case "p34": {10};
-			case "p35": {10};
+			case "armour1": {10};
+			case "armour2": {10};
+			case "armour3": {10};
 			case "jetPilot1": {15};
 			case "commander1": {100};
 			case "enemy1": {100};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
 		
-		if ((str player) in _pilots && (count playableUnits) < _numPlayers) then {
-			["End1", false, 0] call BIS_fnc_endMission;
+		_justPlayers = count(allPlayers - entities "HeadlessClient_F");
+		
+		_pilotMultiplier = 0;
+		if(isPlayer helo1)then{_pilotMultiplier = _pilotMultiplier + 1};
+		if(isPlayer helo2)then{_pilotMultiplier = _pilotMultiplier + 1};
+		if(isPlayer helo3)then{_pilotMultiplier = _pilotMultiplier + 1};
+		hint str (_justPlayers * _pilotMultiplier);
+		
+		//Checks for playercount
+		if ((str player) in _pilots && (_justPlayers * _pilotMultiplier) < _numPlayers) then {
+			["End2", false, 0] call BIS_fnc_endMission;
 		};
 		
 		if ((str player) in _snipers && (count playableUnits) < _numPlayers) then {

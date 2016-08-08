@@ -25,38 +25,6 @@ g_class = "";
 g_group = "";
 g_unit = "";
 g_name = "";
-if (!isNil "helo1" && {player == helo1}) then {
-    g_class = "helo";
-	g_group = "0";
-	g_unit = "100";
-	g_name = "Wildcat Pilot";
-	g_radio = "";
-	SpawnAW19Action = ["SpawnAW159","AW19 Wildcat","",{_veh = "CUP_B_AW159_Cannon_GB" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
-	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnAW19Action] call ace_interact_menu_fnc_addActionToClass;	
-	execVM "client\radar\helicopterRadar1.sqf";
-	execVM "client\radar\helicopterRadar2.sqf";
-		if(isNil "jetSpawned") then{
-		jetSpawned = 0;
-		publicVariable "jetSpawned";
-	};
-	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
-};
-if (!isNil "helo2" && {player == helo2}) then {
-    g_class = "helo2";
-	g_group = "0";
-	g_unit = "101";
-	g_name = "BlackHawk Pilot";
-	g_radio = "";
-	SpawnUH60MAction = ["SpawnUH60M","UH60M Blackhawk","",{_veh = "CUP_B_UH60M_US" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
-	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnUH60MAction] call ace_interact_menu_fnc_addActionToClass;
-	execVM "client\radar\helicopterRadar1.sqf";
-	execVM "client\radar\helicopterRadar2.sqf";
-	if(isNil "jetSpawned") then{
-		jetSpawned = 0;
-		publicVariable "jetSpawned";
-	};
-	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
-};
 if (!isNil "commander1" && {player == commander1}) then {
     g_class = "CMDR";
 	g_group = "0";
@@ -68,7 +36,7 @@ if (!isNil "commander1" && {player == commander1}) then {
 	execVM "client\commander\init.sqf";
 };
 if (!isNil "p1" && {player == p1}) then {
-    g_class = "alpha_sl";
+    g_class = "BAF_SL";
 	g_group = "0";
 	g_unit = "001";
 	g_name = "Alpha Section Leader";
@@ -77,7 +45,7 @@ if (!isNil "p1" && {player == p1}) then {
 	execVM "client\vehicleSpawning\landBritish.sqf";
 };
 if (!isNil "p2" && {player == p2}) then {
-    g_class = "alpha_rf";
+    g_class = "BAF_RF";
 	g_group = "0";
 	g_unit = "002";
 	g_name = "Alpha Rifleman";
@@ -86,7 +54,7 @@ if (!isNil "p2" && {player == p2}) then {
 	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p3" && {player == p3}) then {
-    g_class = "alpha_grn";
+    g_class = "BAF_G";
 	g_group = "0";
 	g_unit = "003";
 	g_name = "Alpha Grenadier";
@@ -95,7 +63,7 @@ if (!isNil "p3" && {player == p3}) then {
 	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p4" && {player == p4}) then {
-    g_class = "alpha_ar";
+    g_class = "BAF_AR";
 	g_group = "0";
 	g_unit = "004";
 	g_name = "Alpha Automatic Rifleman";
@@ -104,7 +72,7 @@ if (!isNil "p4" && {player == p4}) then {
 	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p5" && {player == p5}) then {
-    g_class = "alpha_2ic";
+    g_class = "BAF_2";
 	g_group = "0";
 	g_unit = "005";
 	g_name = "Alpha 2IC";
@@ -113,7 +81,7 @@ if (!isNil "p5" && {player == p5}) then {
 	execVM "client\vehicleSpawning\landBritish.sqf";
 };
 if (!isNil "p6" && {player == p6}) then {
-    g_class = "alpha_mg";
+    g_class = "BAF_MG";
 	g_group = "0";
 	g_unit = "006";
 	g_name = "Alpha Machine Gunner";
@@ -122,7 +90,7 @@ if (!isNil "p6" && {player == p6}) then {
 	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p7" && {player == p7}) then {
-    g_class = "alpha_mark";
+    g_class = "BAF_MARK";
 	g_group = "0";
 	g_unit = "007";
 	g_name = "Alpha Marksman";
@@ -131,7 +99,7 @@ if (!isNil "p7" && {player == p7}) then {
 	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p8" && {player == p8}) then {
-    g_class = "alpha_med";
+    g_class = "BAF_MED";
 	g_group = "0";
 	g_unit = "008";
 	g_name = "Alpha Medic";
@@ -140,7 +108,7 @@ if (!isNil "p8" && {player == p8}) then {
 	execVM "client\vehicleSpawning\landBritishGrunts.sqf";
 };
 if (!isNil "p9" && {player == p9}) then {
-    g_class = "bravo_sl";
+    g_class = "US_SL";
 	g_group = "0";
 	g_unit = "009";
 	g_name = "Bravo Section Leader";
@@ -149,7 +117,7 @@ if (!isNil "p9" && {player == p9}) then {
 	execVM "client\vehicleSpawning\landUSArmy.sqf";
 };
 if (!isNil "p10" && {player == p10}) then {
-    g_class = "bravo_tl";
+    g_class = "US_FTL";
 	g_group = "0";
 	g_unit = "010";
 	g_name = "Bravo Fireteam Leader";
@@ -158,7 +126,7 @@ if (!isNil "p10" && {player == p10}) then {
 	execVM "client\vehicleSpawning\landUSArmy.sqf";
 };
 if (!isNil "p11" && {player == p11}) then {
-    g_class = "bravo_rf";
+    g_class = "US_RF";
 	g_group = "0";
 	g_unit = "011";
 	g_name = "Bravo Rifleman";
@@ -167,7 +135,7 @@ if (!isNil "p11" && {player == p11}) then {
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p12" && {player == p12}) then {
-    g_class = "bravo_grn";
+    g_class = "US_GRN";
 	g_group = "0";
 	g_unit = "012";
 	g_name = "Bravo Grenadier";
@@ -176,7 +144,7 @@ if (!isNil "p12" && {player == p12}) then {
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p13" && {player == p13}) then {
-    g_class = "bravo_ar";
+    g_class = "US_AR";
 	g_group = "0";
 	g_unit = "013";
 	g_name = "Bravo Automatic Rifleman";
@@ -185,7 +153,7 @@ if (!isNil "p13" && {player == p13}) then {
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p14" && {player == p14}) then {
-    g_class = "bravo_tl";
+    g_class = "US_FTL";
 	g_group = "0";
 	g_unit = "014";
 	g_name = "Bravo Fireteam Leader";
@@ -194,7 +162,7 @@ if (!isNil "p14" && {player == p14}) then {
 	execVM "client\vehicleSpawning\landUSArmy.sqf";
 };
 if (!isNil "p15" && {player == p15}) then {
-    g_class = "bravo_ar";
+    g_class = "US_AR";
 	g_group = "0";
 	g_unit = "015";
 	g_name = "Bravo Automatic Rifleman";
@@ -203,7 +171,7 @@ if (!isNil "p15" && {player == p15}) then {
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p16" && {player == p16}) then {
-    g_class = "bravo_mark";
+    g_class = "US_MARK";
 	g_group = "0";
 	g_unit = "016";
 	g_name = "Bravo Marksman";
@@ -212,7 +180,7 @@ if (!isNil "p16" && {player == p16}) then {
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p17" && {player == p17}) then {
-    g_class = "bravo_med";
+    g_class = "US_MED";
 	g_group = "0";
 	g_unit = "017";
 	g_name = "Bravo Medic";
@@ -221,7 +189,7 @@ if (!isNil "p17" && {player == p17}) then {
 	execVM "client\vehicleSpawning\landUSArmyGrunts.sqf";
 };
 if (!isNil "p18" && {player == p18}) then {
-    g_class = "charlie_sl";
+    g_class = "USMC_SL";
 	g_group = "0";
 	g_unit = "018";
 	g_name = "Charlie Section Leader";
@@ -230,7 +198,7 @@ if (!isNil "p18" && {player == p18}) then {
 	execVM "client\vehicleSpawning\landUSMC.sqf";
 };
 if (!isNil "p19" && {player == p19}) then {
-    g_class = "charlie_tl";
+    g_class = "USMC_FTL";
 	g_group = "0";
 	g_unit = "019";
 	g_name = "Charlie Fireteam Leader";
@@ -239,7 +207,7 @@ if (!isNil "p19" && {player == p19}) then {
 	execVM "client\vehicleSpawning\landUSMC.sqf";
 };
 if (!isNil "p20" && {player == p20}) then {
-    g_class = "charlie_rf";
+    g_class = "USMC_RF";
 	g_group = "0";
 	g_unit = "020";
 	g_name = "Charlie Rifleman";
@@ -248,7 +216,7 @@ if (!isNil "p20" && {player == p20}) then {
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p21" && {player == p21}) then {
-    g_class = "charlie_ar";
+    g_class = "USMC_AR";
 	g_group = "0";
 	g_unit = "022";
 	g_name = "Charlie Automatic Rifleman";
@@ -257,7 +225,7 @@ if (!isNil "p21" && {player == p21}) then {
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p22" && {player == p22}) then {
-    g_class = "charlie_aar";
+    g_class = "USMC_AAR";
 	g_group = "0";
 	g_unit = "022";
 	g_name = "Charlie Assistant Automatic Rifleman";
@@ -266,7 +234,7 @@ if (!isNil "p22" && {player == p22}) then {
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p23" && {player == p23}) then {
-    g_class = "charlie_tl";
+    g_class = "USMC_FTL";
 	g_group = "0";
 	g_unit = "023";
 	g_name = "Charlie Fireteam Leader";
@@ -275,7 +243,7 @@ if (!isNil "p23" && {player == p23}) then {
 	execVM "client\vehicleSpawning\landUSMC.sqf";
 };
 if (!isNil "p24" && {player == p24}) then {
-    g_class = "charlie_rf";
+    g_class = "USMC_RF";
 	g_group = "0";
 	g_unit = "024";
 	g_name = "Charlie Rifleman";
@@ -284,7 +252,7 @@ if (!isNil "p24" && {player == p24}) then {
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p25" && {player == p25}) then {
-    g_class = "charlie_ar";
+    g_class = "USMC_AR";
 	g_group = "0";
 	g_unit = "025";
 	g_name = "Charlie Automatic Rifleman";
@@ -293,7 +261,7 @@ if (!isNil "p25" && {player == p25}) then {
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p26" && {player == p26}) then {
-    g_class = "charlie_aar";
+    g_class = "USMC_AAR";
 	g_group = "0";
 	g_unit = "026";
 	g_name = "Charlie Assistant Automatic Rifleman";
@@ -302,7 +270,7 @@ if (!isNil "p26" && {player == p26}) then {
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p27" && {player == p27}) then {
-    g_class = "charlie_tl";
+    g_class = "USMC_FTL";
 	g_group = "0";
 	g_unit = "027";
 	g_name = "Charlie Fireteam Leader";
@@ -311,7 +279,7 @@ if (!isNil "p27" && {player == p27}) then {
 	execVM "client\vehicleSpawning\landUSMC.sqf";
 };
 if (!isNil "p28" && {player == p28}) then {
-    g_class = "charlie_mg";
+    g_class = "USMC_MG";
 	g_group = "0";
 	g_unit = "028";
 	g_name = "Charlie Machine Gunner";
@@ -320,7 +288,7 @@ if (!isNil "p28" && {player == p28}) then {
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p29" && {player == p29}) then {
-    g_class = "charlie_mgass";
+    g_class = "USMC_MGASS";
 	g_group = "0";
 	g_unit = "029";
 	g_name = "Charlie Machine Gunner Assistant";
@@ -329,7 +297,7 @@ if (!isNil "p29" && {player == p29}) then {
 	execVM "client\vehicleSpawning\landUSMCGrunts.sqf";
 };
 if (!isNil "p30" && {player == p30}) then {
-    g_class = "charlie_med";
+    g_class = "USMC_MED";
 	g_group = "0";
 	g_unit = "030";
 	g_name = "Medic";
@@ -355,38 +323,67 @@ if (!isNil "p32" && {player == p32}) then {
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landAttachments.sqf";
 };
-if (!isNil "armour1" && {player == armour1}) then {
-    g_class = "armour_co";
+if (!isNil "p33" && {player == p33}) then {
+    g_class = "ARMOUR";
 	g_group = "0";
 	g_unit = "033";
 	g_name = "Armour Crew commander";
 	g_radio_channel = 7;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\armourCommander.sqf";
-	execVM "client\restrict\fullCrew.sqf";
 };
-if (!isNil "armour2" && {player == armour2}) then {
-    g_class = "armour_cr";
+if (!isNil "p34" && {player == p34}) then {
+    g_class = "ARMOURCREW";
 	g_group = "0";
 	g_unit = "034";
 	g_name = "Armour Crewman";
 	g_radio_channel = 7;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landAttachments.sqf";
-	execVM "client\restrict\fullCrew.sqf";
 };
-if (!isNil "armour3" && {player == armour3}) then {
-    g_class = "armour_cr";
+if (!isNil "p35" && {player == p35}) then {
+    g_class = "ARMOURCREW";
 	g_group = "0";
 	g_unit = "035";
 	g_name = "Armour Crewman";
 	g_radio_channel = 7;
 	g_radio = "ACRE_PRC148";
 	execVM "client\vehicleSpawning\landAttachments.sqf";
-	execVM "client\restrict\fullCrew.sqf";
 };
-if (!isNil "jet1" && {player == jet1}) then {
-    g_class = "jet";
+if (!isNil "helo1" && {player == helo1}) then {
+    g_class = "WLD_PLT";
+	g_group = "0";
+	g_unit = "100";
+	g_name = "Wildcat Pilot";
+	g_radio = "";
+	SpawnAW19Action = ["SpawnAW159","AW19 Wildcat","",{_veh = "CUP_B_AW159_Cannon_GB" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
+	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnAW19Action] call ace_interact_menu_fnc_addActionToClass;	
+	execVM "client\radar\helicopterRadar1.sqf";
+	execVM "client\radar\helicopterRadar2.sqf";
+		if(isNil "jetSpawned") then{
+		jetSpawned = 0;
+		publicVariable "jetSpawned";
+	};
+	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
+};
+if (!isNil "helo2" && {player == helo2}) then {
+    g_class = "BLK_PLT";
+	g_group = "0";
+	g_unit = "101";
+	g_name = "BlackHawk Pilot";
+	g_radio = "";
+	SpawnUH60MAction = ["SpawnUH60M","UH60M Blackhawk","",{_veh = "CUP_B_UH60M_US" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
+	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnUH60MAction] call ace_interact_menu_fnc_addActionToClass;
+	execVM "client\radar\helicopterRadar1.sqf";
+	execVM "client\radar\helicopterRadar2.sqf";
+	if(isNil "jetSpawned") then{
+		jetSpawned = 0;
+		publicVariable "jetSpawned";
+	};
+	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
+};
+if (!isNil "jetpilot1" && {player == jetpilot1}) then {
+    g_class = "JET_PLT";
 	g_group = "0";
 	g_unit = "100";
 	g_name = "Jet Pilot";
@@ -442,7 +439,7 @@ g_helo1 = "";
 g_helo2 = "";
 
 
-execVM "client\boxes\init.sqf";
+execVM "client\boxes\main_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
