@@ -8,7 +8,7 @@
 */
 
 
-_boxClass = "B_supplyCrate_F";
+_boxClass = "Box_NATO_AmmoVeh_F";
 
 _box = _boxClass createVehicle (getPos ammoCrateSpawnPad);
 
@@ -48,6 +48,10 @@ _box addItemCargoGlobal ["ACE_salineIV_500",5];
 _box addItemCargoGlobal ["ACE_atropine",10];
 _box addItemCargoGlobal ["ACE_epinephrine",10];
 _box addItemCargoGlobal ["ACE_morphine",10];
+_box addItemCargoGlobal ["HandGrenade",10];
+_box addItemCargoGlobal ["SmokeShell",10];
+_box addItemCargoGlobal ["SmokeShellRed",4];
+_box addItemCargoGlobal ["SmokeShellBlue",4];
 
 _trg = createTrigger ["EmptyDetector", getPos ammoCrateSpawnPad];
 _trg setTriggerArea [5,5,0,false];

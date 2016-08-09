@@ -814,6 +814,10 @@ execVM "client\player\boxes\main_ammo.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
+execVM "client\player\boxes\main_ammo1.sqf";
+_test = format["hint '%1'",getPlayerUID player];
+_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
+
 
 
 execVM "client\player\psync.sqf";

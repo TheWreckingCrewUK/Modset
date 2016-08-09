@@ -49,6 +49,9 @@ _box addItemCargoGlobal ["ACE_salineIV_500",4];
 _box addItemCargoGlobal ["ACE_atropine",10];
 _box addItemCargoGlobal ["ACE_epinephrine",10];
 _box addItemCargoGlobal ["ACE_morphine",10];
+_box addItemCargoGlobal ["HandGrenade",7];
+_box addItemCargoGlobal ["SmokeShell",7];
+_box addItemCargoGlobal ["SmokeShellRed",2];
 
 _trg = createTrigger ["EmptyDetector", getPos ammoCrateSpawnPad];
 _trg setTriggerArea [5,5,0,false];
