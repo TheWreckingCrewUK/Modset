@@ -14,12 +14,15 @@
 * Author: [TWC] Fakematty / [TWC] Jayman
 */
 
-params["_marker"];
+params["_pos"];
 _random = random 100;
 if (_random < 75) then {
 	if (isServer) then {
-		_groupSpawn = [getMarkerPos _marker, East, townSpawn,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
-		[_groupSpawn, _groupSpawn, 200, 3, False] call CBA_fnc_TaskDefend;
+		_buildings = nearestObjects[_pos,["house","buildings"],400];
+		_spawnPos = _buildings call BIS_fnc_selectRandom;
+		_spawnPos = getPos _spawnPos;
+		_groupSpawn = [_spawnPos, East, townSpawn,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
+		[_groupSpawn, _spawnPos, 200, 3, False] call CBA_fnc_TaskDefend;
 		{
 			_x addMPEventHandler ["MPKilled",{
 				if (side (_this select 1) == WEST) then{

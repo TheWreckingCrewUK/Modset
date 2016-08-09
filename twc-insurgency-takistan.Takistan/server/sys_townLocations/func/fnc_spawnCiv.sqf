@@ -19,11 +19,11 @@
 * Author: [TWC] Fakematty / [TWC] Jayman
 */
 _group = createGroup civilian;
-params["_marker", "_civnum", "_civradius"];
+params["_pos", "_civnum", "_civradius"];
 
 for "_i" from 1 to _civnum do {
 
-		_individualCiv = _group createUnit [civilianType, (getMarkerPos _marker), [], _civradius, "NONE"];
+		_individualCiv = _group createUnit [civilianType, _pos, [], _civradius, "NONE"];
 		_civHeading = (random 360);
 		_individualCiv setFormDir _civHeading;
 		_individualCiv setDir _civHeading;

@@ -8,15 +8,29 @@
 * added to the waves before spawning in the group. Unfortunently waves are predefined here.
 */
 
-params ["_marker","_waves","_groupradius"];
+params ["_pos","_waves","_groupradius"];
 _waves = _waves - floor InsP_enemyMorale;
 if (_waves < 1) then {
 	_waves = 0;
 };
 for "_i" from 1 to _waves do {
-	_pos = [getMarkerPos _marker,_groupradius] call SHK_pos;
-	_groupSpawn = [_pos, East, townSquadWave] call BIS_fnc_spawnGroup;
-    [_groupSpawn, (_marker), 40] call CBA_fnc_taskAttack;	
+	_spawnPos = [_pos,_groupradius] call SHK_pos;
+	
+	_ready = 0;
+	while{_ready == 0}do{
+		_ready = 1;
+		{
+			if(_x in (nearestObjects [player,["man"],300]))exitWith{_ready = 0};
+		}forEach friendlyUnits;
+		_spawnPos = [_pos,_groupradius] call SHK_pos;
+	};
+	
+	_groupSpawn = [_spawnPos, East, townSquadWave] call BIS_fnc_spawnGroup;
+	
+	_buildings = nearestObjects[_pos,["house","buildings"],400];
+	_spawnPos = _buildings call BIS_fnc_selectRandom;
+	_spawnPos = getPos _spawnPos;
+    [_groupSpawn, _spawnPos, 40] call CBA_fnc_taskAttack;	
 	{
 		_x addMPEventHandler ["MPKilled",{
 			if (side (_this select 1) == WEST) then{
@@ -28,9 +42,9 @@ for "_i" from 1 to _waves do {
 };
 
 if ((count PlayableUnits) > 5) then{
-	_pos = [getMarkerPos _marker, _groupradius,[0,360],0,[2,200]] call shk_pos;
-	_groupSpawn =  [_pos, East, enemyTechnical] call BIS_fnc_spawnGroup;
-	[_groupSpawn, (_marker), 40] call CBA_fnc_taskAttack;
+	_spawnPos = [_pos, _groupradius,[0,360],0,[2,200]] call shk_pos;
+	_groupSpawn =  [_spawnPos, East, enemyTechnical] call BIS_fnc_spawnGroup;
+	[_groupSpawn, (_pos), 40] call CBA_fnc_taskAttack;
 	{
 		_x addMPEventHandler ["MPKilled",{
 			if (side (_this select 1) == WEST) then{

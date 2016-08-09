@@ -36,7 +36,7 @@ for "_i" from 1 to _civnum do {
 		_individualCiv disableAI "AUTOCOMBAT";
 		_individualCiv allowFleeing 0;
 		_individualCiv forceSpeed 1;
-		[_individualCiv, _individualCiv, 200, 2, True] call CBA_fnc_TaskDefend;
+		[_individualCiv, _individualCiv, 100, 2, True] call CBA_fnc_TaskDefend;
 		_clothes = 
 		[
 			"CUP_O_TKI_Khet_Partug_03",

@@ -76,7 +76,8 @@ if (isNil "InsP_aatDestroyed") then {
 
 #include "sys_vehicles\init.sqf";
 
-#include "sys_townSetup\init.sqf";
 #include "sys_smallTown\init.sqf";
 
-#include "sys_buildings\init.sqf";
+//#include "sys_buildings\init.sqf";
+
+#include "sys_townLocations\init.sqf";
