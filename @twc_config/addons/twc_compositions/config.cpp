@@ -769,6 +769,7 @@ class CfgGroups
 						class ColdWar_USSR_INF
 						{
 						
+								name = "TWC USSR Cold War"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
                                 class Section_USSR_ColdWar
                                 {
                                         name = "Section"; //Name of Group
