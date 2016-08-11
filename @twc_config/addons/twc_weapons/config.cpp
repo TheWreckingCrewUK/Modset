@@ -58,9 +58,6 @@ class CfgVehicleClasses
 	};
 };
 	
-	
-class CfgWeapons
-{
 	class cfgWeapons
 {
 	class ItemCore;
@@ -134,7 +131,6 @@ class CfgWeapons
 
 		};
 	};
-};
 
 	class UK3CB_BAF_L85A2;
 	class UK3CB_BAF_L85A2_RIS_AFG;
