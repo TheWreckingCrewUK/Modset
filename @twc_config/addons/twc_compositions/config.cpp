@@ -766,7 +766,66 @@ class CfgGroups
 								};
 										
 						};
-                        class GulfWar
+						class ColdWar_USSR_INF
+						{
+						
+                                class Section_USSR_ColdWar
+                                {
+                                        name = "Section"; //Name of Group
+                                        faction = "a_units"; //Faction
+                                        side = EAST; //Side
+                                        class Unit0
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_Squadleader"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+										class Unit1
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_MachineGunner"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {3,0,0}; //Position in the formation
+                                        };
+										class Unit2
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_Grenadier"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {6,0,0}; //Position in the formation
+                                        };
+										class Unit3
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_Grenadierassistant"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {9,0,0}; //Position in the formation
+                                        };
+										class Unit4
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_Efreitor"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {12,0,0}; //Position in the formation
+                                        };
+										class Unit5
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_Rifleman"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {15,0,0}; //Position in the formation
+                                        };
+										class Unit6
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_Rifleman"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {18,0,0}; //Position in the formation
+                                        };
+								};
+						};
+						class GulfWar
                         {
                                 name = "TWC Iraqi Infantry"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
                                 class SectionGulfWar
