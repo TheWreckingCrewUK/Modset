@@ -124,7 +124,7 @@ if ((str player) in _specialSlots)then{
 	_arrayPos = _arrayPos + 1;
 	_timePlayed = timePlayedArray select _arrayPos;
 
-	if((_UID) != "_SP_PLAYER_")then{	
+	if((_UID) != "_SP_PLAYER_" && (_UID) != "76561198070630639")then{	
 		_pilots = ["helo1", "helo2","helo3", "helo4"];
 		_armourCrew = ["tank1","tank2","tank3"];
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];

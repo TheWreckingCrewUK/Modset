@@ -57,8 +57,9 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["ACE_MX2A",1],
-		["ACRE_PRC117F_ID_1",1],
-		["UK3CB_BAF_LLM_IR_Black",1]
+		["ACRE_PRC117F",1],
+		["UK3CB_BAF_LLM_IR_Black",1],
+		["itemCTAB",1]
     ];
 };
 
@@ -353,7 +354,8 @@ if (g_class == "US_SL") then {
 		["rhsusf_assault_eagleaiii_ucp",1],
 		["ACE_MX2A",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
-		["ACRE_PRC148",1]
+		["ACRE_PRC148",1],
+		["itemCTAB",1]
     ];
 };
 
@@ -634,7 +636,8 @@ if (g_class == "US_TL") then {
 		["ACRE_PRC117F_ID_1",1],
 		["ACE_MX2A",1],
 		["UK3CB_BAF_TA31F",1],
-		["ACRE_PRC148",1]
+		["ACRE_PRC148",1],
+		["itemCTAB",1]
 	];
 };
 //loadout availible to charlie Team leader

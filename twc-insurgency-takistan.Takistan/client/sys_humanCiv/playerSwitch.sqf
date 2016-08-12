@@ -23,7 +23,7 @@ _caller = player;
 							_weapons 	= _this select 3;
 							_items 		= _this select 4;
 							
-							_caller = player
+							_caller = player;
 							
 							_caller addBackpack _class; 
 							clearAllItemsFromBackpack _caller; 
@@ -60,7 +60,7 @@ _caller = player;
 							_weapons 	= _this select 3;
 							_items 		= _this select 4;
 							
-							_caller = player
+							_caller = player;
 							
 							_caller addVest _class; 
 

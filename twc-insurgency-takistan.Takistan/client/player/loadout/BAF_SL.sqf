@@ -40,6 +40,7 @@ player addWeapon "ACE_Vector";
 
 comment "Add items";
 player linkItem "ItemMap";
+player linkItem "itemCTAB";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadioAcreFlagged";
