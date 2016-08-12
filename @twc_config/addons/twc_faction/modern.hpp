@@ -14,6 +14,7 @@
         "UK3CB_BAF_V_Osprey_SL_D",
 		"UK3CB_BAF_H_Mk7_Scrim_ESS_B",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
@@ -24,6 +25,7 @@
         "UK3CB_BAF_V_Osprey_SL_D",
 		"UK3CB_BAF_H_Mk7_Scrim_ESS_B",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
@@ -106,7 +108,6 @@
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
-		"ItemcTab",
 		"ACE_DAGR",
 		"ACE_EarPlugs"	
 		};
@@ -163,7 +164,6 @@
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
-		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_NLAW_Launcher"
 		};
 		respawnweapons[]=
@@ -171,14 +171,10 @@
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
-		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_NLAW_Launcher"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
@@ -189,9 +185,6 @@
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd_T",
 		"UK3CB_BAF_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
@@ -284,7 +277,6 @@
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-		"UK3CB_BAF_L131A1",
 		"HAFM_LAW"
 		};
 		respawnweapons[]=
@@ -293,14 +285,10 @@
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-		"UK3CB_BAF_L131A1",
 		"HAFM_LAW"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
@@ -314,9 +302,6 @@
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
@@ -575,22 +560,17 @@
 		"Throw",
 		"Put",
 		"ACE_Vector",
-		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"ACE_Vector",
-		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
@@ -605,9 +585,6 @@
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
@@ -821,7 +798,6 @@
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L129A1_Grippod_TA648",
-		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_NLAW_Launcher"
 		};
 		respawnweapons[]=
@@ -830,14 +806,10 @@
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L129A1_Grippod_TA648",
-		"UK3CB_BAF_L131A1",
 		"UK3CB_BAF_NLAW_Launcher"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -846,9 +818,6 @@
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -918,6 +887,7 @@
         "UK3CB_BAF_V_Osprey_Holster",
 		"UK3CB_BAF_H_Mk7_Camo_D",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ACRE_PRC343",
 		"ItemWatch",
@@ -927,6 +897,7 @@
 		{
         "UK3CB_BAF_V_Osprey_Holster",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
@@ -1011,7 +982,6 @@
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
-		"ItemcTab",
 		"ACE_DAGR",
 		"ACE_EarPlugs"	
 
@@ -1045,8 +1015,9 @@
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_Osprey_Holster",
-		"UK3CB_BAF_H_Mk7_Camo_B",
+		"UK3CB_BAF_H_Mk7_Camo_D",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ACRE_PRC343",
 		"ItemWatch",
@@ -1055,8 +1026,8 @@
 		respawnLinkedItems[]=
 		{
         "UK3CB_BAF_V_Osprey_Holster",
-		"UK3CB_BAF_H_Mk7_Camo_B",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
@@ -1119,7 +1090,6 @@
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
-		"ItemcTab",
 		"ACE_DAGR",
 		"ACE_EarPlugs"
 		};
@@ -1172,20 +1142,20 @@
 		weapons[]=
 		{
 		"Throw",
-		"Put",	
-		"UK3CB_BAF_L131A1"
+		"Put",
+		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -1194,9 +1164,9 @@
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -1205,7 +1175,7 @@
 		};
 		Items[]=
 		{
-			"ACE_fieldDressing",
+		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1266,33 +1236,31 @@
 		"UK3CB_BAF_H_PilotHelmetHeli_A",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch"
+		"ItemWatch",
+		"ACE_microDAGR_Item"
 		};
 		respawnLinkedItems[]=
 		{
 		"UK3CB_BAF_H_PilotHelmetHeli_A",
 		"ItemMap",		
 		"ItemCompass",
-		"ItemWatch"
+		"ItemWatch",
+		"ACE_microDAGR_Item"
 		};
 		weapons[]=
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L22A2_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L22A2_SUSAT3D"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L22A2_SUSAT3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L22A2_SUSAT3D"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"SmokeShell",
@@ -1300,8 +1268,6 @@
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",
 		"SmokeShell",
@@ -1369,14 +1335,16 @@
 		"RHS_jetpilot_usaf",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch"
+		"ItemWatch",
+		"ACE_microDAGR_Item"
 		};
 		respawnLinkedItems[]=
 		{
 		"RHS_jetpilot_usaf",
 		"ItemMap",		
 		"ItemCompass",
-		"ItemWatch"
+		"ItemWatch",
+		"ACE_microDAGR_Item"
 		};
 		weapons[]=
 		{
@@ -1704,7 +1672,8 @@
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"UK3CB_BAF_G_Tactical_Black",
+		"ACE_microDAGR_Item"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1714,7 +1683,8 @@
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"UK3CB_BAF_G_Tactical_Black",
+		"ACE_microDAGR_Item"
 		};
 		weapons[]=
 		{

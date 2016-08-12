@@ -201,7 +201,7 @@ class CfgGroups
                                         class Unit0
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British__Coin_Squadleader"; //Class name of desired solider
+                                                vehicle = "Modern_British_Coin_Squadleader"; //Class name of desired solider
                                                 rank = "CORPORAL"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
@@ -325,7 +325,7 @@ class CfgGroups
 										class Unit5
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_Marksman";
+                                                vehicle = "Mechanized_British_Marksman";
                                                 rank = "PRIVATE";
                                                 position[] = {11,0,0};
                                         };
@@ -661,83 +661,79 @@ class CfgGroups
                 class Army //Faction Class name
                 {
                         name = "TWC Operation Groups Opfor"; //Faction Name
-                        class Modern_Mechanized
+                        class Modern
                         {
-                                name = "TWC USSR Mechanized"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+                                name = "TWC Russian Federation"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
                                 class Section_Modern_Mechanized
                                 {
-                                        name = "Section"; //Name of Group
+                                        name = "Section Mechanized"; //Name of Group
                                         faction = "a_units"; //Faction
                                         side = EAST; //Side
                                         class Unit0
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Squadleader"; //Class name of desired solider
+                                                vehicle = "Russian_Squadleader"; //Class name of desired solider
                                                 rank = "CORPORAL"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
 										class Unit1
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Rifleman"; //Class name of desired solider
+                                                vehicle = "Russian_Rifleman"; //Class name of desired solider
                                                 rank = "PRIVATE"; // Rank
                                                 position[] = {3,0,0}; //Position in the formation
                                         };
 										class Unit2
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Grenadier"; //Class name of desired solider
+                                                vehicle = "Russian_Grenadier"; //Class name of desired solider
                                                 rank = "PRIVATE"; // Rank
                                                 position[] = {6,0,0}; //Position in the formation
                                         };
 										class Unit3
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Seniorrifleman"; //Class name of desired solider
+                                                vehicle = "Russian_Seniorrifleman"; //Class name of desired solider
                                                 rank = "PRIVATE"; // Rank
                                                 position[] = {9,0,0}; //Position in the formation
                                         };
 										class Unit4
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Grenadierassistant"; //Class name of desired solider
+                                                vehicle = "Russian_Grenadierassistant"; //Class name of desired solider
                                                 rank = "PRIVATE"; // Rank
                                                 position[] = {12,0,0}; //Position in the formation
                                         };
 										class Unit5
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Automaticrifleman"; //Class name of desired solider
+                                                vehicle = "Russian_Automaticrifleman"; //Class name of desired solider
                                                 rank = "PRIVATE"; // Rank
                                                 position[] = {15,0,0}; //Position in the formation
                                         };
 										class Unit6
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Vehiclecommander"; //Class name of desired solider
+                                                vehicle = "Russian_Vehiclecommander"; //Class name of desired solider
                                                 rank = "CORPORAL"; // Rank
                                                 position[] = {18,0,0}; //Position in the formation
                                         };
 										class Unit7
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Vehiclecrew"; //Class name of desired solider
+                                                vehicle = "Russian_Vehiclecrew"; //Class name of desired solider
                                                 rank = "PRIVATE"; // Rank
                                                 position[] = {21,0,0}; //Position in the formation
                                         };
 										class Unit8
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Vehiclecrew"; //Class name of desired solider
+                                                vehicle = "Russian_Vehiclecrew"; //Class name of desired solider
                                                 rank = "PRIVATE"; // Rank
                                                 position[] = {24,0,0}; //Position in the formation
                                         };
 								};
-						};
-						class USSR_Platoon_Command
-                        {
-                                name = "TWC USSR Platoon Command"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
-                                class Section_Modern_USSR_platoon_Command
+								class Section_Modern_USSR_platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
                                         faction = "a_units"; //Faction
@@ -745,26 +741,25 @@ class CfgGroups
                                         class Unit0
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Squadleader"; //Class name of desired solider
+                                                vehicle = "Russian_Squadleader"; //Class name of desired solider
                                                 rank = "lieutenant"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
 										class Unit1
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Squadleader"; //Class name of desired solider
+                                                vehicle = "Russian_Squadleader"; //Class name of desired solider
                                                 rank = "PRIVATE"; // Rank
                                                 position[] = {3,0,0}; //Position in the formation
                                         };
 										class Unit2
                                         {
                                                 side = EAST;
-                                                vehicle = "USSR_Squadleader"; //Class name of desired solider
+                                                vehicle = "Russian_Squadleader"; //Class name of desired solider
                                                 rank = "PRIVATE"; // Rank
                                                 position[] = {6,0,0}; //Position in the formation
                                         };
 								};
-										
 						};
 						class ColdWar_USSR_INF
 						{
@@ -823,6 +818,26 @@ class CfgGroups
                                                 vehicle = "ColdWar_USSR_Rifleman"; //Class name of desired solider
                                                 rank = "PRIVATE"; // Rank
                                                 position[] = {18,0,0}; //Position in the formation
+                                        };
+								};
+								class Section_USSR_ColdWar_AA
+                                {
+                                        name = "AA Team"; //Name of Group
+                                        faction = "a_units"; //Faction
+                                        side = EAST; //Side
+                                        class Unit0
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_AAGunner"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+										class Unit1
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_AAAssistant"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {3,0,0}; //Position in the formation
                                         };
 								};
 						};

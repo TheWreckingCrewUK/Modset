@@ -126,16 +126,14 @@
 		"Throw",
 		"Put",
 		"hlc_rifle_L1A1SLR",
-		"tf47_m3maaws",
-		"rhsusf_weap_m1911a1"
+		"tf47_m3maaws"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"hlc_rifle_L1A1SLR",
-		"TWC_Carl_Gustav",
-		"rhsusf_weap_m1911a1"
+		"TWC_Carl_Gustav"
 		};
 		magazines[]=
 		{
@@ -145,9 +143,6 @@
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
 		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
@@ -164,10 +159,7 @@
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"hlc_20Rnd_762x51_B_fal",
 		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
@@ -231,15 +223,13 @@
 		{
 	    "Throw",
 		"Put",
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		magazines[]=
 		{
@@ -248,10 +238,7 @@
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"hlc_20Rnd_762x51_B_fal",				
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -267,10 +254,7 @@
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"hlc_20Rnd_762x51_B_fal",				
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -336,16 +320,14 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		magazines[]=
 		{
@@ -354,10 +336,7 @@
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"hlc_20Rnd_762x51_B_fal",			
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -373,10 +352,7 @@
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"hlc_20Rnd_762x51_B_fal",				
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -531,15 +507,13 @@
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		magazines[]=
 		{
@@ -547,10 +521,7 @@
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"hlc_20Rnd_762x51_B_fal",				
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -565,10 +536,7 @@
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",		
+		"hlc_20Rnd_762x51_B_fal",				
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -1158,7 +1126,8 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_morphine",
-		"ACE_morphine"
+		"ACE_morphine",
+		"ACE_microDAGR_Item"
 		};
 		respawntems[]=
 		{
@@ -1169,7 +1138,8 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_morphine",
-		"ACE_morphine"
+		"ACE_morphine",
+		"ACE_microDAGR_Item"
 		};		
 	};
 	class ColdWar_JetPilot: B_Soldier_base_F
@@ -1239,7 +1209,8 @@
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_morphine"
+		"ACE_morphine",
+		"ACE_microDAGR_Item"
 		};
 		respawntems[]=
 		{
@@ -1257,7 +1228,8 @@
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_morphine"
+		"ACE_morphine",
+		"ACE_microDAGR_Item"
 		};		
 	};
 	class ColdWar_AA_Gunner: B_Soldier_base_F
@@ -1290,7 +1262,6 @@
 		"Throw",
 		"Put",	
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1",
 		"FIMStingerA"
 		};
 		respawnweapons[]=
@@ -1298,14 +1269,10 @@
 		"Throw",
 		"Put",	
 		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1",
 		"FIMStingerA"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -1321,9 +1288,6 @@
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -1389,21 +1353,16 @@
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
-		"rhsusf_weap_m1911a1"
+		"hlc_rifle_L1A1SLR"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
@@ -1418,9 +1377,6 @@
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",
 		"hlc_20Rnd_762x51_B_fal",

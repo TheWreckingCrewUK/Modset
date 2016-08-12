@@ -69,14 +69,14 @@ class CfgVehicleClasses
 	
 
 
-        class SP_MkBushHelmet_Forrest: ItemCore
+    class SP_MkBushHelmet_Forrest: ItemCore
 	{
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Mk Bush Helmet (Forrest)";
-		picture = "\twc_weapons\mkbushhelmet\ui\Forrest.jpg";
+		picture = "\twc_weapons\Hats\mkbushhelmet\ui\Forrest.jpg";
 		model = "\twc_weapons\Models\MkBushHelmet";
-                hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Green.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\mkbushhelmet\Forrest.paa"};
+                hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Green.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\mkbushhelmet\Forrest.paa"};
                 hiddenSelections[] = {"Camo","Camo1","Camo2"};
                 author = "SP Craig";
                 
@@ -89,7 +89,7 @@ class CfgVehicleClasses
 			modelSides[] = {3,1};
 			armor = 10;
 			passThrough = 0.30;
-                        hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Green.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\mkbushhelmet\Forrest.paa"};
+                        hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Green.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\mkbushhelmet\Forrest.paa"};
                         hiddenSelections[] = {"Camo","Camo1","Camo2"};
 
 
@@ -104,9 +104,9 @@ class CfgVehicleClasses
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Mk Bush Helmet (Tropical)";
-		picture = "\twc_weapons\mkbushhelmet\ui\Tropical.jpg";
+		picture = "\twc_weapons\Hats\mkbushhelmet\ui\Tropical.jpg";
 		model = "\twc_weapons\Models\MkBushHelmet";
-                hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Tan.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\mkbushhelmet\Tropical.paa"};
+                hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Tan.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\mkbushhelmet\Tropical.paa"};
                 hiddenSelections[] = {"Camo","Camo1","Camo2"};
                 author = "SP Craig";
                 
@@ -119,7 +119,7 @@ class CfgVehicleClasses
 			modelSides[] = {3,1};
 			armor = 10;
 			passThrough = 0.30;
-                        hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Tan.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\mkbushhelmet\Tropical.paa"};
+                        hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Tan.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\mkbushhelmet\Tropical.paa"};
                         hiddenSelections[] = {"Camo","Camo1","Camo2"};
 
 
@@ -571,10 +571,9 @@ class CfgVehicles
 		};
 	};
 	class TWC_Backpack_Modern_Platoon_Sergeant:UK3CB_BAF_B_Bergen_MTP_Radio_L_B
-	{	
-	transportMaxMagazines = 30;
-	transportMaxWeapons = 2;
+	{
 		scope = 1;
+		maximumLoad = 500;
 		class TransportItems
 		{
 			class _xx_Wire_Cutters
@@ -706,6 +705,23 @@ class CfgVehicles
 				magazine = "UK3CB_BAF_30Rnd";
 				count = 14;
 			};			
+		};
+	};
+	class TWC_Backpack_Mechanized_Marksman:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Marksman_Mag
+			{
+				magazine = "UK3CB_BAF_20Rnd";
+				count = 6;
+			};
+			class _xx_Marksman_Mag_T
+			{
+				magazine = "UK3CB_BAF_20Rnd_T";
+				count = 3;
+			};
 		};
 	};
 	class TWC_Backpack_Modern_MortarGunner:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
@@ -1432,6 +1448,19 @@ class CfgVehicles
 			class _xx_ACRE_PRC117F
 			{
 				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_USSR_AATeam:rhs_rpg_empty
+	{
+		scope = 1;
+		maximumLoad = 500;
+		class TransportMagazines
+		{
+			class _xx_Strela
+			{
+				magazine = "CUP_Strela_2_M";
 				count = 1;
 			};
 		};

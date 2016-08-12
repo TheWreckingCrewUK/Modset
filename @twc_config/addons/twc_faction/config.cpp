@@ -11,14 +11,20 @@ class CfgPatches
 			"GulfWar_Iraqi_RPGAssistant",
 			"GulfWar_Iraqi_MG",
 			"GulfWar_Iraqi_MGAssistant",
-			"USSR_Squadleader",
-			"USSR_Rifleman",
-			"USSR_Grenadier",
-			"USSR_Seniorrifleman",
-			"USSR_Grenadierassistant",
-			"USSR_Automaticrifleman",
-			"USSR_Vehiclecommander",
-			"USSR_Vehiclecrew"
+			"Russian_Squadleader",
+			"Russian_Rifleman",
+			"Russian_Grenadier",
+			"Russian_Seniorrifleman",
+			"Russian_Grenadierassistant",
+			"Russian_Automaticrifleman",
+			"Russian_Vehiclecommander",
+			"Russian_Vehiclecrew",
+			"ColdWar_USSR_Squadleader",
+			"ColdWar_USSR_Rifleman",
+			"ColdWar_USSR_Grenadier",
+			"ColdWar_USSR_Grenadierassistant",
+			"ColdWar_USSR_Efreitor",
+			"ColdWar_USSR_MachineGunner"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -86,6 +92,10 @@ class CfgVehicleClasses
 	{
 		displayName = "1990 Desert British";
 	};
+	class Russian
+	{
+		displayName="Russian";
+	};
 	class USSR
 	{
 		displayName="USSR";
@@ -124,16 +134,16 @@ class CfgVehicles
 	#include "coldwar.hpp"
 /*///////////////////////////////////////
 //                                     //
-//              USSR                   //
+//              Russian Federation     //
 //                                     //
 ///////////////////////////////////////*/
-	class USSR_Squadleader:O_Soldier_base_F
+	class Russian_Squadleader:O_Soldier_base_F
 	{
-		_generalMacro="USSR_Squadleader";
+		_generalMacro="Russian_Squadleader";
 		scope=2;
 		displayName="Section Leader";
 		faction="a_units";
-		vehicleClass="USSR";
+		vehicleClass="Russian";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -233,13 +243,13 @@ class CfgVehicles
 		"ACE_EarPlugs"	
 		};		
 	};
-	class USSR_Rifleman:O_Soldier_base_F
+	class Russian_Rifleman:O_Soldier_base_F
 	{
-		_generalMacro="USSR_Rifleman";
+		_generalMacro="Russian_Rifleman";
 		scope=2;
 		displayName="Rifleman";
 		faction="a_units";
-		vehicleClass="USSR";
+		vehicleClass="Russian";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -326,13 +336,13 @@ class CfgVehicles
 		"ACE_EarPlugs"	
 		};		
 	};
-	class USSR_Grenadier:O_Soldier_base_F
+	class Russian_Grenadier:O_Soldier_base_F
 	{
-		_generalMacro="USSR_Grenadier";
+		_generalMacro="Russian_Grenadier";
 		scope=2;
 		displayName="Grenadier";
 		faction="a_units";
-		vehicleClass="USSR";
+		vehicleClass="Russian";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -425,13 +435,13 @@ class CfgVehicles
 		"ACE_EarPlugs"	
 		};		
 	};
-	class USSR_Seniorrifleman:O_Soldier_base_F
+	class Russian_Seniorrifleman:O_Soldier_base_F
 	{
-		_generalMacro="USSR_Seniorrifleman";
+		_generalMacro="Russian_Seniorrifleman";
 		scope=2;
 		displayName="Senior Rifleman";
 		faction="a_units";
-		vehicleClass="USSR";
+		vehicleClass="Russian";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -520,13 +530,13 @@ class CfgVehicles
 		"ACE_EarPlugs"	
 		};		
 	};
-	class USSR_Grenadierassistant:O_Soldier_base_F
+	class Russian_Grenadierassistant:O_Soldier_base_F
 	{
-		_generalMacro="USSR_Grenadierassistant";
+		_generalMacro="Russian_Grenadierassistant";
 		scope=2;
 		displayName="Grenadier Assistant";
 		faction="a_units";
-		vehicleClass="USSR";
+		vehicleClass="Russian";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -617,13 +627,13 @@ class CfgVehicles
 		"ACE_EarPlugs"	
 		};		
 	};
-	class USSR_Automaticrifleman:O_Soldier_base_F
+	class Russian_Automaticrifleman:O_Soldier_base_F
 	{
-		_generalMacro="USSR_Automaticrifleman";
+		_generalMacro="Russian_Automaticrifleman";
 		scope=2;
 		displayName="Automatic Rifleman";
 		faction="a_units";
-		vehicleClass="USSR";
+		vehicleClass="Russian";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -708,13 +718,13 @@ class CfgVehicles
 		"ACE_EarPlugs"	
 		};		
 	};
-	class USSR_Vehiclecommander:O_Soldier_base_F
+	class Russian_Vehiclecommander:O_Soldier_base_F
 	{
-		_generalMacro="USSR_Vehiclecommander";
+		_generalMacro="Russian_Vehiclecommander";
 		scope=2;
 		displayName="Vehicle Commander";
 		faction="a_units";
-		vehicleClass="USSR";
+		vehicleClass="Russian";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_msv_emr";
@@ -794,13 +804,13 @@ class CfgVehicles
 		"ACE_EarPlugs"	
 		};		
 	};
-	class USSR_Vehiclecrew:O_Soldier_base_F
+	class Russian_Vehiclecrew:O_Soldier_base_F
 	{
 		_generalMacro="USSR_Vehiclecrew";
 		scope=2;
 		displayName="Vehicle Crew";
 		faction="a_units";
-		vehicleClass="USSR";
+		vehicleClass="Russian";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_msv_emr";
@@ -1260,7 +1270,7 @@ class CfgVehicles
 	{
 		_generalMacro="ColdWar_USSR_Efreitor";
 		scope=2;
-		displayName="Section Leader(ColdWar)";
+		displayName="Efreitor(ColdWar)";
 		faction="a_units";
 		vehicleClass="USSR";
 		icon="iconMan";
@@ -1982,6 +1992,192 @@ class CfgVehicles
 		"ACE_morphine",
 		"ACE_EarPlugs"
 		};
+	};
+	
+	class ColdWar_USSR_AAGunner:O_Soldier_base_F
+	{
+		_generalMacro="ColdWar_USSR_AAGunner";
+		scope=2;
+		displayName="AA Gunner(ColdWar)";
+		faction="a_units";
+		vehicleClass="USSR";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="DISCLOSE_BEREZKA";
+		backpack="TWC_Backpack_USSR_AATeam";
+		linkedItems[]=
+		{
+        "rhs_6b13_EMR_6sh92",
+		"ItemCompass",
+		"ItemWatch",
+		"rhs_6b26_green"
+		};
+		respawnLinkedItems[]=
+		{
+        "rhs_6b13_EMR_6sh92",
+		"ItemCompass",
+		"ItemWatch",
+		"rhs_6b26_green"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_ak74m_dtk",
+		"CUP_launch_9K32Strela"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_ak74m_dtk",
+		"CUP_launch_9K32Strela"
+		};
+		magazines[]=
+		{
+		"CUP_Strela_2_M",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_mag_rgd5",
+		"rhs_mag_rgd5",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"CUP_Strela_2_M",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_mag_rgd5",
+		"rhs_mag_rgd5",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs"
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs"	
+		};		
+	};
+	
+	class ColdWar_USSR_AAAssistant:O_Soldier_base_F
+	{
+		_generalMacro="ColdWar_USSR_AAAssistant";
+		scope=2;
+		displayName="AA Assistant(ColdWar)";
+		faction="a_units";
+		vehicleClass="USSR";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="DISCLOSE_BEREZKA";
+		backpack="TWC_Backpack_USSR_AATeam";
+		linkedItems[]=
+		{
+        "rhs_6b13_EMR_6sh92",
+		"ItemCompass",
+		"ItemWatch",
+		"rhs_6b26_green"
+		};
+		respawnLinkedItems[]=
+		{
+        "rhs_6b13_EMR_6sh92",
+		"ItemCompass",
+		"ItemWatch",
+		"rhs_6b26_green"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_ak74m_dtk"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_ak74m_dtk"
+		};
+		magazines[]=
+		{
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_mag_rgd5",
+		"rhs_mag_rgd5",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_mag_rgd5",
+		"rhs_mag_rgd5",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs"
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs"	
+		};		
 	};
 /***************************************************
 *                      Cold War                    *

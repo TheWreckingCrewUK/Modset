@@ -96,11 +96,11 @@
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
 		backpack="TWC_Backpack_Modern_Vehiclecommander";
 		linkedItems[]=
-		{
-		"Binocular",		
+		{	
 		"UK3CB_BAF_H_CrewHelmet_ESS_A",
 		"UK3CB_BAF_V_Osprey",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
@@ -110,8 +110,8 @@
 		{		
 		"UK3CB_BAF_H_CrewHelmet_ESS_A",
 		"UK3CB_BAF_V_Osprey",
-		"Binocular",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
@@ -121,14 +121,14 @@
 		{
 		"Throw",
 		"Put",
-		"Binocular",
+		"ACE_Vector",
 		"UK3CB_BAF_L22A2_SUSAT3D"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"Binocular",
+		"ACE_Vector",
 		"UK3CB_BAF_L22A2_SUSAT3D"
 		};
 		magazines[]=
@@ -212,22 +212,17 @@
 		"Throw",
 		"Put",
 		"ACE_Vector",
-		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"ACE_Vector",
-		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
-		"UK3CB_BAF_L131A1"
+		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
@@ -242,9 +237,6 @@
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_30Rnd",		
 		"UK3CB_BAF_30Rnd",
@@ -282,4 +274,115 @@
 		"ACE_EarPlugs",	
 		"UK3CB_BAF_HMNVS"		
 		};
+	};
+	
+	class Mechanized_British_Marksman: B_Soldier_base_F
+	{
+		_generalMacro="Modern_British_Marksman";
+		scope=2;
+		displayName="Marksman(Modern)";
+		faction="a_units";
+		vehicleClass="Modern_British";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
+		backpack="TWC_Backpack_Mechanized_Marksman";
+		linkedItems[]=
+		{
+        "UK3CB_BAF_V_Osprey_Marksman_A",
+		"UK3CB_BAF_H_Mk7_Scrim_E",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"UK3CB_BAF_G_Tactical_Black",
+		"ACRE_PRC343"
+		};
+		respawnLinkedItems[]=
+		{
+        "UK3CB_BAF_V_Osprey_Marksman_A",
+		"UK3CB_BAF_H_Mk7_Scrim_E",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"ACRE_PRC343",
+		"UK3CB_BAF_G_Tactical_Black"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"ACE_Vector",
+		"UK3CB_BAF_L129A1_Grippod_TA648",
+		"UK3CB_BAF_NLAW_Launcher"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"ACE_Vector",
+		"UK3CB_BAF_L129A1_Grippod_TA648",
+		"UK3CB_BAF_NLAW_Launcher"
+		};
+		magazines[]=
+		{
+		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Items[]=
+		{
+			"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_EarPlugs",	
+		"UK3CB_BAF_HMNVS"
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs",	
+		"UK3CB_BAF_HMNVS"			
+		};		
 	};

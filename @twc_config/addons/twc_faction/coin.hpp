@@ -1,5 +1,5 @@
 
-   class Modern_British__Coin_Squadleader: B_Soldier_base_F
+   class Modern_British_Coin_Squadleader: B_Soldier_base_F
 	{
 		_generalMacro="Coin_British_Squadleader";
 		scope=2;
@@ -15,6 +15,7 @@
         "UK3CB_BAF_H_Mk7_Scrim_ESS_B",
 		"UK3CB_BAF_V_Osprey_SL_D",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ACRE_PRC343",
 		"ItemWatch",
@@ -25,6 +26,7 @@
         "UK3CB_BAF_H_Mk7_Scrim_ESS_B",
 		"UK3CB_BAF_V_Osprey_SL_D",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
@@ -86,7 +88,6 @@
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACE_DAGR",
-		"ItemcTab",
 		"ACE_EarPlugs"
 		};
 		respawntems[]=
@@ -722,6 +723,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
         "UK3CB_BAF_V_Osprey_Holster",
 		"UK3CB_BAF_H_Mk7_Camo_D",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
@@ -732,6 +734,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
         "UK3CB_BAF_V_Osprey_Holster",
 		"UK3CB_BAF_H_Mk7_Camo_D",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
@@ -794,7 +797,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
-		"ItemcTab",
 		"ACE_DAGR",
 		"ACE_EarPlugs"	
 
@@ -830,6 +832,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
         "UK3CB_BAF_V_Osprey_Holster",
 		"UK3CB_BAF_H_Mk7_Camo_B",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
@@ -840,6 +843,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
         "UK3CB_BAF_V_Osprey_Holster",
 		"UK3CB_BAF_H_Mk7_Camo_B",
 		"ItemMap",
+		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
@@ -903,7 +907,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
-		"ItemcTab",
 		"ACE_DAGR",
 		"ACE_EarPlugs"
 		};
@@ -957,17 +960,20 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
+		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
 		"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
-		"Put",	
+		"Put",
+		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
 		"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"SmokeShell",
@@ -978,7 +984,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_30Rnd",
 		"UK3CB_BAF_17Rnd_9mm",
 		"UK3CB_BAF_17Rnd_9mm",
 		"SmokeShell",
