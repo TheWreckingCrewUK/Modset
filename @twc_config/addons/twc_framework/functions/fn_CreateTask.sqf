@@ -6,5 +6,6 @@ if (_Primary) then {
 }else{
 	_taskname = "[S]" + _taskname;
 };
+if(isNil "_Marker")then {_marker = "";};
 
 [allunits,[_taskname],[_Title,_Description,_Marker],getmarkerpos _Marker,0,2,true] call BIS_fnc_taskCreate;
