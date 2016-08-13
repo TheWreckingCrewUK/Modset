@@ -810,7 +810,7 @@ g_helo3 = "";
 g_helo4 = "";
 
 
-execVM "client\player\boxes\main_ammo.sqf";
+execVM "client\player\boxes\init.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 

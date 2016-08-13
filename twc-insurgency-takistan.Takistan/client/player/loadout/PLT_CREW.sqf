@@ -23,6 +23,7 @@ player addItemToUniform "ACE_DAGR";
 for "_i" from 1 to 3 do {player addItemToUniform "SmokeShell";};
 player addVest "UK3CB_BAF_V_Pilot_A";
 player addItemToVest "ACRE_PRC343";
+player addItemToVest "ACE_microDAGR_item";
 for "_i" from 1 to 6 do {player addItemToVest "UK3CB_BAF_30Rnd";};
 player addHeadgear "UK3CB_BAF_H_PilotHelmetHeli_A";
 player addGoggles "UK3CB_BAF_G_Tactical_Black";

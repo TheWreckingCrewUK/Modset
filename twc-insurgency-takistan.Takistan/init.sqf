@@ -14,6 +14,12 @@ if (isServer) then {
 	timePlayedArray = [];
 	publicVariable "timePlayedArray";
 	execVM "server\init.sqf";
+	
+	//Mission time randomizer.
+	//only is random between 4am-2pm.
+	_time = random 10;
+	_time = _time + 4;
+	skipTime (_time - dayTime + 24)%24;
 };
 
 execVM "client\zeus\zeus.sqf";
@@ -133,8 +139,8 @@ if ((str player) in _specialSlots)then{
 		_numPlayers = switch (str player) do{
 			case "helo1": {5};
 			case "helo2": {10};
-			case "helo3": {10};
-			case "helo4": {10};
+			case "helo3": {12};
+			case "helo4": {12};
 			case "tank1";
 			case "tank2";
 			case "tank3": {12};
@@ -144,7 +150,7 @@ if ((str player) in _specialSlots)then{
 			case "p33";
 			case "p34": {18};
 			case "p31";
-			case "p32": {8};
+			case "p32": {12};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
 		

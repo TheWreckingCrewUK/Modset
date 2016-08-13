@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=504;
+		nextID=522;
 	};
 	class Camera
 	{
-		pos[]={6009.917,119.56873,11545.731};
-		dir[]={0.54517889,-0.63893604,-0.54276621};
-		up[]={0.45279559,0.7692557,-0.45079046};
-		aside[]={-0.70555449,9.3830749e-007,-0.70869011};
+		pos[]={5922.2373,186.55115,11585.417};
+		dir[]={0.72033012,-0.58744681,-0.36894757};
+		up[]={0.52286434,0.8092472,-0.2678051};
+		aside[]={-0.45589501,2.3900066e-007,-0.89008331};
 	};
 };
 binarizationWanted=0;
@@ -764,11 +764,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5955.7583,86.321259,11608.059};
+				position[]={5955.7583,83.040001,11608.059};
 			};
 			id=111;
 			type="ModuleCreateDiaryRecord_F";
-			atlOffset=3.2812576;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -874,12 +873,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5955.7583,84.936981,11613.059};
+				position[]={5955.7583,83.040001,11613.059};
 			};
 			name="Zeus";
 			id=112;
 			type="ModuleCurator_F";
-			atlOffset=1.8969803;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1018,12 +1016,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5955.6914,83.961884,11618.119};
+				position[]={5955.6914,83.040001,11618.119};
 			};
 			name="jayman";
 			id=139;
 			type="ModuleCurator_F";
-			atlOffset=0.92188263;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15197,12 +15194,13 @@ class Mission
 				position[]={5983.8599,83.554192,11381.872};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3520;
 			type="Land_Bandage_F";
-			atlOffset=0.48899841;
+			atlOffset=0.0079040527;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15254,12 +15252,13 @@ class Mission
 				position[]={5983.7168,83.554192,11381.896};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3521;
 			type="Land_Bandage_F";
-			atlOffset=0.48899841;
+			atlOffset=0.0079040527;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15311,12 +15310,13 @@ class Mission
 				position[]={5983.834,83.554192,11381.717};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3522;
 			type="Land_Bandage_F";
-			atlOffset=0.48899841;
+			atlOffset=0.0079040527;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17603,6 +17603,7 @@ class Mission
 			class Attributes
 			{
 				init="0 = [this, 300, 360] execVM ""server\sys_vehicles\vehicleRespawn.sqf"";";
+				name="helicopter_1";
 			};
 			id=3620;
 			type="UK3CB_BAF_Wildcat_AH1_CAS_8A";
@@ -18591,7 +18592,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5835.9902,83.041443,11365.051};
+						position[]={5835.9902,83.041443,11365.05};
 						angles[]={0,3.8610523,0};
 					};
 					side="West";
@@ -18767,7 +18768,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5837.3003,83.042442,11366.382};
+						position[]={5837.2998,83.041443,11366.382};
 						angles[]={0,3.8610523,0};
 					};
 					side="West";
@@ -18777,12 +18778,11 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						name="helo3";
-						description="Pilot [10]";
+						description="Pilot [12]";
 						isPlayable=1;
 					};
 					id=3646;
 					type="UK3CB_BAF_Pilot_RAF";
-					atlOffset=0.00099945068;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18850,7 +18850,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5838.8105,83.042648,11364.927};
+						position[]={5838.811,83.042442,11364.927};
 						angles[]={0,3.8610523,0};
 					};
 					side="West";
@@ -18859,12 +18859,12 @@ class Mission
 					{
 						skill=0.60000002;
 						name="helo4";
-						description="Crew Chief [10]";
+						description="Crew Chief [12]";
 						isPlayable=1;
 					};
 					id=3647;
 					type="UK3CB_BAF_Pilot_RAF";
-					atlOffset=0.0012054443;
+					atlOffset=0.00099945068;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18932,7 +18932,6 @@ class Mission
 			{
 			};
 			id=3645;
-			atlOffset=0.00099945068;
 		};
 		class Item331
 		{
@@ -18995,7 +18994,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="p32";
-						description="Medic [10]";
+						description="Medic [12]";
 						isPlayable=1;
 					};
 					id=3670;
@@ -19076,7 +19075,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="p31";
-						description="MERT Team Lead [10]";
+						description="MERT Team Lead [12]";
 						isPlayable=1;
 					};
 					id=3671;

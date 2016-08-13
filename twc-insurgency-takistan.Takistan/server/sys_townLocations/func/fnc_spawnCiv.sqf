@@ -44,4 +44,3 @@ for "_i" from 1 to _civnum do {
 		_individualCiv forceadduniform _clothes;
 		
 };
-{_x doFsm ["surrender.fsm", position _x,_x];}forEach units _group;

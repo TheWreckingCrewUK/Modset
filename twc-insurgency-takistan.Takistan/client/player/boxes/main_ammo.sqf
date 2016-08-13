@@ -10,12 +10,9 @@
         For more classnames on ammoboxes or weapons and magazines go here:
                 http://forums.bistudio.com/showthread.php?t=73241&page=2
 				edited by FakeMatty
-*/
-
-_marker = "crate";  // marker used to spawn.
-_boxType = "CUP_BAF_VehicleBox";  // the type of ammobox used.
-_timer = 240;  // time in seconds until box is refilled.
- 
+				edited by jayman to make it reload on box close animation.
+				This reduces players lag as it no longer fills every 240 seconds.
+*/ 
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
 _items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2],["ACE_fieldDressing",10],["ACE_morphine",10],["ACE_elasticBandage",10],["ACE_quikclot",10],["ACE_packingBandage",10], ["ACE_tourniquet", 2],["ACE_SpraypaintGreen",1]];
@@ -192,7 +189,10 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_30Rnd",50],
 		["UK3CB_BAF_30Rnd_T",50],
 		["UK3CB_BAF_75Rnd",5],
+		["UK3CB_BAF_75Rnd_T",5],
 		["UK3CB_BAF_20Rnd",10],
+		["UK3CB_BAF_200Rnd",5],
+		["UK3CB_BAF_200Rnd_T",5],
 		["UK3CB_BAF_17Rnd_9mm",15],
 		["HandGrenade",5]
 	];
@@ -1028,7 +1028,8 @@ if (g_class == "ANA_SL") then {
 		["DemoCharge_Remote_Mag",1],
 		["ACE_M26_Clacker",1],
 		["ACRE_PRC343",1],
-		["rhsusf_ANPVS_14",1]
+		["rhsusf_ANPVS_14",1],
+		["ACE_microDAGR_item",1]
 	];
 };
  //load availible to pilot Crew only
@@ -1053,7 +1054,8 @@ if (g_class == "ANA_SL") then {
 		["ACRE_PRC343",1],
 		["rhsusf_ANPVS_14",1],
 		["ACRE_PRC343",1],
-		["rhsusf_ANPVS_14",1]
+		["rhsusf_ANPVS_14",1],
+		["ACE_microDAGR_item",1]
 		
 	];
 };
@@ -1083,7 +1085,8 @@ if (g_class == "ANA_SL") then {
 		["ACE_M26_Clacker",1],
 		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
 		["UK3CB_BAF_LLM_IR",1],
-		["rhsusf_ANPVS_14",1]
+		["rhsusf_ANPVS_14",1],
+		["itemCTAB",1]
 	];
 };
 
@@ -1507,29 +1510,17 @@ if (g_class == "POL_SL") then {
         _items set [count _items, _x];
 } forEach _tmp_items;
 
+// empty it.
+clearWeaponCargo crateBox;
+clearMagazineCargo crateBox;
+clearItemCargo crateBox;
+clearbackPackCargo crateBox;
 
-// create and fill the box.
-_box = _boxType createVehicleLocal (getMarkerPos _marker);
-_box setPosATL (getMarkerPos _marker);
-_box allowDamage false;
-while {true} do {
-        refill_box = false;
-        // empty it.
-        clearWeaponCargo _box;
-        clearMagazineCargo _box;
-        clearItemCargo _box;
-		clearbackPackCargo _box;
+// add in all weapons.
+{crateBox addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;
 
-        // add in all weapons.
-        {_box addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;
+// add in all magazines.
+{crateBox addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
 
-        // add in all magazines.
-        {_box addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
+{crateBox addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
 
-        {_box addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
-
-
-
-        // wait x amount of seconds then refill box.
-        sleep _timer;
-};
