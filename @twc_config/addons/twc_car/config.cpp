@@ -92,19 +92,6 @@ class CfgVehicles
 				count = 1;
 			};
 		};
-		class TransportItems
-		{
-			class _xx_Bandage
-			{
-				name = "ACE_fieldDressing";
-				count = 5;
-			};
-			class _xx_Morphine
-			{
-				name = "ACE_morphine";
-				count = 2;
-			};
-		};
 		class TransportWeapons
 		{
 			class _xx_NLAW
@@ -200,6 +187,21 @@ class CfgVehicles
 				name = "ACE_fieldDressing";
 				count = 5;
 			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 5;
+			};
 			class _xx_Morphine
 			{
 				name = "ACE_morphine";
@@ -271,6 +273,21 @@ class CfgVehicles
 				name = "ACE_fieldDressing";
 				count = 5;
 			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 5;
+			};
 			class _xx_Morphine
 			{
 				name = "ACE_morphine";
@@ -335,6 +352,21 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
 				count = 5;
 			};
 			class _xx_Morphine
@@ -412,10 +444,25 @@ class CfgVehicles
 			};
 		};
 		class TransportItems
-	    {
+		{
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
 				count = 5;
 			};
 			class _xx_Morphine
@@ -497,6 +544,21 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
 				count = 5;
 			};
 			class _xx_Morphine

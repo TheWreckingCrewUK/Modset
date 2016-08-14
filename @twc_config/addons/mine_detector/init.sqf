@@ -45,7 +45,7 @@ while { alive player } do {
 	};
 	sleep .503;
 };
-
+/*
 player removeAction _mdet_action_1;
 player removeAction _mdet_action_2;
 /*

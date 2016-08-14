@@ -341,6 +341,26 @@ class CfgVehicleClasses
 			};
 		};
 	};
+	class UK3CB_BAF_L85A1_SUSAT3D_Lazer:UK3CB_BAF_L85A2
+	{
+		scope = 1;
+		displayName = "L85A1";
+		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
+		author="Jayman";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="UK3CB_BAF_SUSAT_3D";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="asdg_FrontSideRail_L85";
+				item="UK3CB_BAF_LLM_Flashlight_Black";
+			};
+		};
+	};
 	class UK3CB_BAF_L85A2_UGL_SUSAT3D:UK3CB_BAF_L85A2_UGL
 	{
 		scope = 1;
@@ -541,6 +561,7 @@ class CfgVehicles
 	class TWC_Backpack_Modern_Platoon_Command:UK3CB_BAF_B_Bergen_MTP_Radio_L_B
 	{
 		scope = 1;
+		maximumLoad = 500;
 		class TransportMagazines
 		{
             class _xx_Stanag
@@ -997,6 +1018,7 @@ class CfgVehicles
 	class TWC_Backpack_Cold_War_Platoon_Command:CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
+		maximumLoad = 500;
 		class TransportMagazines
 		{
 			class _xx_hlc_20Rnd_762x51_B_fal
@@ -1024,6 +1046,7 @@ class CfgVehicles
 	class TWC_Backpack_Cold_War_Platoon_Sergeant:CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
+		maximumLoad = 500;
 		class TransportItems
 		{
 			class _xx_Wire_Cutters
@@ -1097,6 +1120,7 @@ class CfgVehicles
 	class TWC_Backpack_1990_Platoon_Command:CUP_B_Bergen_BAF
 	{
 		scope = 1;
+		maximumLoad = 500;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1129,6 +1153,7 @@ class CfgVehicles
 	class TWC_Backpack_1990_Platoon_Sergeant:CUP_B_Bergen_BAF
 	{
 		scope = 1;
+		maximumLoad = 500;
 		class TransportItems
 		{
 			class _xx_Wire_Cutters
