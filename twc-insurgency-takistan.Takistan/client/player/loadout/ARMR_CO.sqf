@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by Paddock";
+comment "Exported from Arsenal by jayman";
 
 comment "Remove existing items";
 removeAllWeapons player;
@@ -11,7 +11,7 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP";
+player forceAddUniform "rhs_uniform_cu_ocp_1stcav";
 player addItemToUniform "ACE_tourniquet";
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
@@ -19,27 +19,22 @@ for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
-player addItemToUniform "ACE_DAGR";
-for "_i" from 1 to 3 do {player addItemToUniform "SmokeShell";};
-player addVest "UK3CB_BAF_V_Pilot_A";
-player addItemToVest "ACRE_PRC343";
-for "_i" from 1 to 7 do {player addItemToVest "UK3CB_BAF_30Rnd";};
-player addBackpack "B_AssaultPack_mcamo";
+player addItemToUniform "ACRE_PRC148";
+player addVest "rhsusf_iotv_ocp_Repair";
+for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
+for "_i" from 1 to 3 do {player addItemToVest "30Rnd_556x45_Stanag";};
+player addBackpack "rhsusf_assault_eagleaiii_ocp";
 player addItemToBackpack "ACRE_PRC117F";
-player addHeadgear "UK3CB_BAF_H_Mk7_Camo_F";
-player addGoggles "UK3CB_BAF_G_Tactical_Black";
+player addHeadgear "rhsusf_mich_bare_tan";
 
 comment "Add weapons";
-player addWeapon "UK3CB_BAF_L22A2";
+player addWeapon "rhs_weap_m4_carryhandle";
+player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+player addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 
 comment "Add items";
 player linkItem "ItemMap";
-player linkItem "itemCTAB";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadioAcreFlagged";
 player linkItem "rhsusf_ANPVS_14";
-
-comment "Set identity";
-player setFace "WhiteHead_13";
-player setSpeaker "Male10ENG";

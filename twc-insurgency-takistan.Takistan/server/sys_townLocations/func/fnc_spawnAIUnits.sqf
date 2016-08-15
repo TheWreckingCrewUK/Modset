@@ -8,7 +8,7 @@
 * added to the waves before spawning in the group. Unfortunently waves are predefined here.
 */
 
-params ["_pos","_waves","_groupradius"];
+params ["_pos","_waves","_groupradius","_thisList"];
 _waves = _waves - floor InsP_enemyMorale;
 if (_waves < 1) then {
 	_waves = 0;
@@ -20,8 +20,8 @@ for "_i" from 1 to _waves do {
 	while{_ready == 0}do{
 		_ready = 1;
 		{
-			if(_x in (nearestObjects [player,["man"],300]))exitWith{_ready = 0};
-		}forEach friendlyUnits;
+			if(_x in (nearestObjects [player,["man"],200]))exitWith{_ready = 0};
+		}forEach _thisList;
 		_spawnPos = [_pos,_groupradius] call SHK_pos;
 	};
 	

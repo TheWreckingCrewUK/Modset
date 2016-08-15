@@ -1063,57 +1063,59 @@ if (g_class == "ANA_SL") then {
 //load avaible to armour commander only
  if (g_class == "ARMR_CO") then {
     _tmp_weapons =
-	[
-        ["UK3CB_BAF_L85A2_RIS",1],
-        ["ACE_Vector",1],
-		["UK3CB_BAF_L131A1",1]
+    [
+        ["rhs_weap_m4_carryhandle",1],
+		["ACE_Vector",1],
+		["ACE_MX2A",1],
+		["Binocular",1],
+		["rhsusf_weap_m9",1]
     ];
 
 	_tmp_magazines =
     [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15],
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+        ["rhsusf_mag_15Rnd_9x19_FMJ",15],
+		["HandGrenade",5]
+    ];
+	_tmp_items =
+	[
+		["ACE_DAGR",1],
+        ["ACE_MapTools",1],
+		["ACRE_PRC148",1],
+		["rhsusf_acc_anpeq15_bk",1],
+		["rhsusf_acc_eotech_552",1],
+		["rhsusf_ANPVS_14",1],
+		["ACRE_PRC117F",1],
+		["rhsusf_ANPVS_14",1]
+		
+	];
+
+//load avaible to armor crew only
+ if (g_class == "ARMR_CREW") then {
+    _tmp_weapons =
+    [
+        ["rhs_weap_m4_carryhandle",1],
+		["rhsusf_weap_m9",1]
+    ];
+
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+        ["rhsusf_mag_15Rnd_9x19_FMJ",15],
 		["HandGrenade",5]
     ];
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-		["ACRE_PRC343",1],
-		["SatchelCharge_Remote_Mag",1],
-		["DemoCharge_Remote_Mag",1],
-		["ACE_M26_Clacker",1],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		["UK3CB_BAF_LLM_IR",1],
-		["rhsusf_ANPVS_14",1],
-		["itemCTAB",1]
-	];
-};
-
-//load avaible to armor crew only
- if (g_class == "ARMR_CREW") then {
-    _tmp_weapons =
-	[
-        ["UK3CB_BAF_L85A2_RIS",1],
-        ["ACE_Vector",1],
-		["UK3CB_BAF_L131A1",1]
-    ];
-
-	_tmp_magazines =
-    [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15],
-		["HandGrenade",5]
-    ];
-	_tmp_items =
-	[
-		["ACE_MapTools",1],
+		["rhsusf_acc_anpeq15_bk",1],
+		["rhsusf_acc_eotech_552",1],
 		["ACRE_PRC148",1],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
-		["UK3CB_BAF_LLM_IR",1],
-		["ACRE_PRC343",1],
+		["rhsusf_ANPVS_14",1],
+		["ACRE_PRC117F",1],
 		["rhsusf_ANPVS_14",1]
+		
 	];
 };
 

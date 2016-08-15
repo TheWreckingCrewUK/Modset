@@ -9,7 +9,7 @@ true spawn {
 	
 	//armour crew
 	_armourCrew = ["B_crew_f"];
-	_ifv = ["CUP_B_MCV80_GB_D_SLAT"];
+	_ifv = ["RHS_M2A3_BUSKIII"];
 	
 	//MERT Team
     _mertteam = ["B_soldier_AAA_F"];
