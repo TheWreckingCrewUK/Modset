@@ -1,5 +1,12 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["MERT Team", [["MERT Team", [g_p31, "MERT Team Lead"],[g_p32, "Medic"]]]]			
+_player1 = if(isNil "mert_sl")then{"Offline"}else{(name mert_sl)};
+_player2 = if(isNil "mert_med")then{"Offline"}else{(name mert_med)};
+_player3 = if(isNil "mert_helo")then{"Offline"}else{(name mert_helo)};
+
+
+
+
+g_playerlist = [["MERT Team", [["Mert", [_player1, "Lead"], [_player2, "Medic"], [_player3, "Pilot"]]]]					
 				
 				];
 

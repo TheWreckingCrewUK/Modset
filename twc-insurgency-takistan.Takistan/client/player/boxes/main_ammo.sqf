@@ -1060,6 +1060,60 @@ if (g_class == "ANA_SL") then {
 	];
 };
 
+ //load availible to pilot Crew only
+ if (g_class == "USPLT") then {
+    _tmp_weapons =
+    [
+        ["rhs_weap_m4_carryhandle",1],
+		["rhsusf_weap_m9",1]
+    ];
+
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+        ["rhsusf_mag_15Rnd_9x19_FMJ",15],
+		["HandGrenade",5]
+    ];
+	_tmp_items =
+	[
+		["ACE_DAGR",1],
+        ["ACE_MapTools",1],
+		["ACRE_PRC148",1],
+		["rhsusf_ANPVS_14",1],
+		["ACRE_PRC117F",1],
+		["rhsusf_ANPVS_14",1]
+		
+	];
+};
+
+ //load availible to pilot Crew only
+ if (g_class == "USPLT_CREW") then {
+    _tmp_weapons =
+    [
+        ["rhs_weap_m4_carryhandle",1],
+		["rhsusf_weap_m9",1]
+    ];
+
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",50],
+        ["rhsusf_mag_15Rnd_9x19_FMJ",15],
+		["HandGrenade",5]
+    ];
+	_tmp_items =
+	[
+		["ACE_DAGR",1],
+        ["ACE_MapTools",1],
+		["ACRE_PRC148",1],
+		["rhsusf_ANPVS_14",1],
+		["ACRE_PRC117F",1],
+		["rhsusf_ANPVS_14",1]
+		
+	];
+};
+
 //load avaible to armour commander only
  if (g_class == "ARMR_CO") then {
     _tmp_weapons =

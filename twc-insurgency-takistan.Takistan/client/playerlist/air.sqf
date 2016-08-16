@@ -1,7 +1,18 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Air Assets", [["Wildcat/Chinook/Merlin CSAR", [g_helo1, "Pilot"], [g_helo2, "Crew Chief"]],["Wildcat/Chinook/Merlin CSAR", [g_helo3, "Pilot"], [g_helo4, "Crew Chief"]],["Apache", [g_p33, "Pilot"], [g_p34, "Gunner"]]]				
+
+_player1 = if(isNil "helo1")then{"Offline"}else{(name helo1)};
+_player2 = if(isNil "helo2")then{"Offline"}else{(name helo2)};
+_player3 = if(isNil "helo3")then{"Offline"}else{(name helo3)};
+_player4 = if(isNil "helo4")then{"Offline"}else{(name helo4)};
+_player5 = if(isNil "p33")then{"Offline"}else{(name p33)};
+_player6 = if(isNil "p34")then{"Offline"}else{(name p34)};
+
+
+
+
+g_playerlist = [["Air Assets", [["Wildcat/Chinook", [_player1, "Pilot"],[_player2, "Crew Cheif"]],["BlackHawk/Osprey", [_player3, "Pilot"],[_player4, "Crew Cheif"]],["Apache", [_player5, "Pilot"],[_player6, "Gunner"]]]]				
 				
-				]];
+				];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
 _headline = "<t color='#CCCC00' size='1.2' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
@@ -31,4 +42,3 @@ _text = "";
 	hint parseText _text;
 	sleep 7;
 } forEach g_playerList;
-

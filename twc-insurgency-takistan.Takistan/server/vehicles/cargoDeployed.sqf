@@ -33,7 +33,7 @@ TWC_Cargo_Deployed = {
 		//   (inverted for percentage)
 
 		if (_roll >= _check) then { 
-			_pos = [(getPos _cargo), [100,150]] call SHK_pos;
+			_pos = [(getPos _cargo), [200,300]] call SHK_pos;
 			_groupSpawned = [_pos, East, townSquadWave] call BIS_fnc_spawnGroup;
 			[_groupSpawned, (getPos _cargo), 0] call CBA_fnc_taskAttack;
 			{

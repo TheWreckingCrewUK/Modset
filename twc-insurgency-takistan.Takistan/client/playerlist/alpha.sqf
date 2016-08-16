@@ -1,5 +1,17 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Alpha British Army", [["Alpha Section Leader", [g_p1, "Section Leader"], [g_p2, "Rifleman"], [g_p3, "Grenadier"], [g_p4, "Automatic Rifleman"]], ["Fire Team 2", [g_p5, "2IC"], [g_p6, "Machine Gunner"], [g_p7, "Marksman"], [g_p8, "Medic"]]]]					
+_player1 = if(isNil "p1")then{"Offline"}else{(name p1)};
+_player2 = if(isNil "p2")then{"Offline"}else{(name p2)};
+_player3 = if(isNil "p3")then{"Offline"}else{(name p3)};
+_player4 = if(isNil "p4")then{"Offline"}else{(name p4)};
+_player5 = if(isNil "p5")then{"Offline"}else{(name p5)};
+_player6 = if(isNil "p6")then{"Offline"}else{(name p6)};
+_player7 = if(isNil "p7")then{"Offline"}else{(name p7)};
+_player8 = if(isNil "p8")then{"Offline"}else{(name p8)};
+
+
+
+
+g_playerlist = [["Alpha British Army", [["Alpha Section Leader", [_player1, "Section Leader"], [_player2, "Rifleman"], [_player3, "Grenadier"], [_player4, "Automatic Rifleman"]], ["Fire Team 2", [_player5, "2IC"], [_player6, "Machine Gunner"], [_player7, "Marksman"], [_player8, "Medic"]]]]					
 				
 				];
 

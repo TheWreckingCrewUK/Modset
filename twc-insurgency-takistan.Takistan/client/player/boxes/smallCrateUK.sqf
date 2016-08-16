@@ -6,7 +6,9 @@
 *
 *
 */
-
+if(count (nearestObjects [player, ["Box_NATO_AmmoVeh_F","UK3CB_BAF_Static_Weapons_Box"], 10]) > 0)exitWith{
+	hint "Clear the pad of Ammo Crates before a new one will spawn"
+};
 
 _boxClass = "UK3CB_BAF_Static_Weapons_Box";
 
