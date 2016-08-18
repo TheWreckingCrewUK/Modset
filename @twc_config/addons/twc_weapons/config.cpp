@@ -74,7 +74,7 @@ class CfgVehicleClasses
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Mk Bush Helmet (Forrest)";
-		picture = "\twc_weapons\Hats\mkbushhelmet\ui\Forrest.jpg";
+		picture = "\twc_weapons\Hats\mkbushhelmet\Forrest.jpg";
 		model = "\twc_weapons\Models\MkBushHelmet";
                 hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Green.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\mkbushhelmet\Forrest.paa"};
                 hiddenSelections[] = {"Camo","Camo1","Camo2"};
@@ -104,7 +104,7 @@ class CfgVehicleClasses
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "Mk Bush Helmet (Tropical)";
-		picture = "\twc_weapons\Hats\mkbushhelmet\ui\Tropical.jpg";
+		picture = "\twc_weapons\Hats\mkbushhelmet\Tropical.jpg";
 		model = "\twc_weapons\Models\MkBushHelmet";
                 hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Tan.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\mkbushhelmet\Tropical.paa"};
                 hiddenSelections[] = {"Camo","Camo1","Camo2"};

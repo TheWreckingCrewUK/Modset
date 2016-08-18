@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><Project name="SUD_GW_U stringtable">
+  <Package name="Model names">
+    <Container name="Strings">
+      <Key ID="STR_SUD_U_USSR">
+        <English>U.S.S.R.</English>
+        <Russian>С.С.С.Р.</Russian>
+      </Key>
+      <Key ID="STR_SUD_U_NATO">
+        <English>N.A.T.O.</English>
+        <Russian>Н.А.Т.О.</Russian>
+      </Key>
+    </Container>
+  </Package>
+</Project>
