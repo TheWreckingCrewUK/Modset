@@ -18,7 +18,7 @@ class CfgPatches
 class CfgVehicles
 {
 	class UK3CB_BAF_Wildcat_AH1_CAS_8A;
-	class BAF_Puma_VA_DG1;
+	class BAF_Puma_CE_DG1;
 	class twc_wildcat: UK3CB_BAF_Wildcat_AH1_CAS_8A
 	{
 		scope = 2;
