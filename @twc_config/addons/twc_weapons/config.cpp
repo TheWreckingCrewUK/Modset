@@ -1,28 +1,3 @@
-#define ReadAndWrite		0
-#define ReadAndCreate		1
-#define ReadOnly		2
-#define ReadOnlyVerified		3
-
-#define true	1
-#define false	0
-
-#define VSoft		0
-#define VArmor		1
-#define VAir		2
-
-#define TEast		0
-#define TWest		1
-#define TGuerrila		2
-#define TCivilian		3
-#define TSideUnknown		4
-#define TEnemy		5
-#define TFriendly		6
-#define TLogic		7
-
-#define private		0
-#define protected		1
-#define public		2 
-
 class CfgPatches
 {
 	class Addons_config
@@ -41,97 +16,11 @@ class CfgPatches
 		projectName="TWC";
 		author="FakeMatty";
 	};
-	class SP_Craig_MkBushHelmet
-	{
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-	};
-};
-
-class CfgVehicleClasses
-{
-	class SP_MkBushHelmet
-	{
-		displayName = "Mk Bush Helmet";
-	};
 };
 	
-	class cfgWeapons
+class cfgWeapons
 {
-	class ItemCore;
-	class InventoryItem_Base_F;
-	class HeadgearItem;
-
-
-
-	
-
-
-    class SP_MkBushHelmet_Forrest: ItemCore
-	{
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Mk Bush Helmet (Forrest)";
-		picture = "\twc_weapons\Hats\mkbushhelmet\Forrest.jpg";
-		model = "\twc_weapons\Models\MkBushHelmet";
-                hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Green.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\mkbushhelmet\Forrest.paa"};
-                hiddenSelections[] = {"Camo","Camo1","Camo2"};
-                author = "SP Craig";
-                
-                  
-
-		class ItemInfo: HeadgearItem
-		{
-			mass = 60;
-			uniformmodel = "\twc_weapons\Models\MkBushHelmet";
-			modelSides[] = {3,1};
-			armor = 10;
-			passThrough = 0.30;
-                        hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Green.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\mkbushhelmet\Forrest.paa"};
-                        hiddenSelections[] = {"Camo","Camo1","Camo2"};
-
-
-
-		};
-	};
-
-
-
-        class SP_MkBushHelmet_Tropical: ItemCore
-	{
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Mk Bush Helmet (Tropical)";
-		picture = "\twc_weapons\Hats\mkbushhelmet\Tropical.jpg";
-		model = "\twc_weapons\Models\MkBushHelmet";
-                hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Tan.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\mkbushhelmet\Tropical.paa"};
-                hiddenSelections[] = {"Camo","Camo1","Camo2"};
-                author = "SP Craig";
-                
-                  
-
-		class ItemInfo: HeadgearItem
-		{
-			mass = 60;
-			uniformmodel = "\twc_weapons\Models\MkBushHelmet";
-			modelSides[] = {3,1};
-			armor = 10;
-			passThrough = 0.30;
-                        hiddenSelectionsTextures[] = {"\twc_weapons\Hats\Mk7Helmet\Tan.paa","\twc_weapons\Hats\PASGTHelmet\Black.paa","\twc_weapons\Hats\mkbushhelmet\Tropical.paa"};
-                        hiddenSelections[] = {"Camo","Camo1","Camo2"};
-
-
-
-
-
-
-
-
-		};
-	};
-
+	class hlc_rifle_L1A1SLR;
 	class UK3CB_BAF_L85A2;
 	class UK3CB_BAF_L85A2_RIS_AFG;
 	class UK3CB_BAF_L85A2_RIS;
@@ -150,8 +39,30 @@ class CfgVehicleClasses
 	class UK3CB_BAF_SUSAT_3D;
 	class rhs_weap_ak74m_dtk; //base ussr AK
 	class rhs_acc_1p29; //ussr section lead and 2IC scope
+	class ACRE_PRC117F;
 	
-
+	class twc_PRC325: ACRE_PRC117F
+	{
+		scope = 1;
+		author = "jayman";
+		displayName = "UK/HF PRC 325";
+		mass = 10;
+	};
+	
+	class twc_L1A1_SUIT:hlc_rifle_L1A1SLR
+	{
+		scope = 1;
+		author = "jayman";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item= "hlc_optic_suit";
+			};
+		};
+	};
+	
 	class TWC_Carl_Gustav:tf47_m3maaws
 	{
 		scope = 1;
@@ -406,6 +317,7 @@ class CfgVehicles
 	class rhs_rpg_empty;
 	class B_AssaultPack_blk;
 	class Box_NATO_AmmoVeh_F;
+	class B_CargoNet_01_ammo_F;
 	
 //*****************   Modern Backpack Symetrical *********************	
 	
@@ -2081,6 +1993,397 @@ class CfgVehicles
 			{
 				name = "TWC_30mm_AP_item";
 				count = 250;
+			};
+		};
+	};
+// //////////////////////////////////////////////////////
+//                                                     //
+//                     Sling Load Crates               //
+//                                                     //
+/////////////////////////////////////////////////////////
+	class TWC_modern_Operation_SlingBox:B_CargoNet_01_ammo_F
+	{
+		author = "jayman";
+		displayName = "TWC Modern SlingBox";
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_30Rnd
+			{
+				magazine="UK3CB_BAF_30Rnd";
+				count=32;
+			};
+			class _xx_UK3CB_BAF_30Rnd_T
+			{
+				magazine="UK3CB_BAF_30Rnd_T";
+				count=8;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine="UK3CB_BAF_75Rnd";
+				count=9;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine="UK3CB_BAF_75Rnd_T";
+				count=3;
+			};
+			class _xx_UK3CB_BAF_20Rnd
+			{
+				magazine="UK3CB_BAF_20Rnd";
+				count=8;
+			};
+			class _xx_UK3CB_BAF_20Rnd_T
+			{
+				magazine="UK3CB_BAF_20Rnd_T";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_200Rnd
+			{
+				magazine="UK3CB_BAF_200Rnd";
+				count=4;
+			};
+			class _xx_UK3CB_BAF_200Rnd_T
+			{
+				magazine="UK3CB_BAF_200Rnd_T";
+				count=2;
+			};
+			class _xx_UK3CB_1Rnd_HE_Grenade_shell
+			{
+				magazine="1Rnd_HE_Grenade_shell";
+				count=12;
+			};
+			class _xx_UK3CB_UGL_FlareWhite_F
+			{
+				magazine="UGL_FlareWhite_F";
+				count=3;
+			};
+			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
+			{
+				magazine="1Rnd_Smoke_Grenade_shell";
+				count=3;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=16;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=24;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 48;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 16;
+			};
+			class _xx_Epipen
+			{
+				name = "ACE_epinephrine";
+				count = 2;
+			};
+			class _xx_ACE_SalineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 4;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_NLAW
+				{
+					Weapon = "UK3CB_BAF_NLAW_Launcher";
+					count = 2;
+				};
+			class _xx_LAW
+				{
+					Weapon = "HAFM_LAW";
+					count = 2;
+				};
+		};
+	};
+	class TWC_modern_Operation_Coin_SlingBox:B_CargoNet_01_ammo_F
+	{
+		author = "jayman";
+		displayName = "TWC Modern COIN SlingBox";
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_30Rnd
+			{
+				magazine="UK3CB_BAF_30Rnd";
+				count=32;
+			};
+			class _xx_UK3CB_BAF_30Rnd_T
+			{
+				magazine="UK3CB_BAF_30Rnd_T";
+				count=8;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine="UK3CB_BAF_75Rnd";
+				count=9;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine="UK3CB_BAF_75Rnd_T";
+				count=3;
+			};
+			class _xx_UK3CB_BAF_20Rnd
+			{
+				magazine="UK3CB_BAF_20Rnd";
+				count=8;
+			};
+			class _xx_UK3CB_BAF_20Rnd_T
+			{
+				magazine="UK3CB_BAF_20Rnd_T";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_200Rnd
+			{
+				magazine="UK3CB_BAF_200Rnd";
+				count=4;
+			};
+			class _xx_UK3CB_BAF_200Rnd_T
+			{
+				magazine="UK3CB_BAF_200Rnd_T";
+				count=2;
+			};
+			class _xx_UK3CB_1Rnd_HE_Grenade_shell
+			{
+				magazine="1Rnd_HE_Grenade_shell";
+				count=12;
+			};
+			class _xx_UK3CB_UGL_FlareWhite_F
+			{
+				magazine="UGL_FlareWhite_F";
+				count=3;
+			};
+			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
+			{
+				magazine="1Rnd_Smoke_Grenade_shell";
+				count=3;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=24;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=16;
+			};
+			class _xx_Slug
+			{
+				magazine = "UK3CB_BAF_L128A1_Slugs";
+				count = 5;
+			};
+            class _xx_Buck
+			{
+				magazine = "UK3CB_BAF_L128A1_Pellets";
+				count = 2;
+			};	
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 48;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 16;
+			};
+			class _xx_Epipen
+			{
+				name = "ACE_epinephrine";
+				count = 2;
+			};
+			class _xx_ACE_SalineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 4;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_LAW
+			{
+				Weapon = "HAFM_LAW";
+				count = 4;
+			};
+		};
+	};
+	class TWC_modern_Operation_ColdWar_SlingBox:B_CargoNet_01_ammo_F
+	{
+		author = "jayman";
+		displayName="TWC Cold War SlingBox";
+		class TransportMagazines
+		{
+			class _xx_hlc_20Rnd_762x51_B_fal
+			{
+				magazine="hlc_20Rnd_762x51_B_fal";
+				count=70;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine="UK3CB_BAF_75Rnd";
+				count=9;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine="UK3CB_BAF_75Rnd_T";
+				count=3;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine="ACE_HandFlare_White";
+				count=10;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine="tf47_m3maaws_HEAT";
+				count=3;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine="tf47_m3maaws_HE";
+				count=3;
+			};
+			class _xx_tf47_m3maaws_SMOKE
+			{
+				magazine="tf47_m3maaws_SMOKE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_ILLUM
+			{
+				magazine="tf47_m3maaws_ILLUM";
+				count=2;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=24;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=16;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 48;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 16;
+			};
+			class _xx_Epipen
+			{
+				name = "ACE_epinephrine";
+				count = 2;
+			};
+			class _xx_ACE_SalineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 4;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_LAW
+			{
+				Weapon = "HAFM_LAW";
+				count = 2;
+			};
+		};
+	};
+	class TWC_modern_Operation_1990_SlingBox:B_CargoNet_01_ammo_F
+	{
+		author = "jayman";
+		displayName = "TWC 1990 SlingBox";
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_30Rnd
+			{
+				magazine="UK3CB_BAF_30Rnd";
+				count=40;
+			};
+			class _xx_UK3CB_BAF_30Rnd_T
+			{
+				magazine="UK3CB_BAF_30Rnd_T";
+				count=10;
+			};
+			class _xx_UK3CB_1Rnd_HE_Grenade_shell
+			{
+				magazine="1Rnd_HE_Grenade_shell";
+				count=24;
+			};
+			class _xx_UK3CB_UGL_FlareWhite_F
+			{
+				magazine="UGL_FlareWhite_F";
+				count=6;
+			};
+			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
+			{
+				magazine="1Rnd_Smoke_Grenade_shell";
+				count=6;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=64;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=48;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 60;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 16;
+			};
+			class _xx_Epipen
+			{
+				name = "ACE_epinephrine";
+				count = 2;
+			};
+			class _xx_ACE_SalineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 4;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_AT4
+			{
+				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
+				count = 2;
 			};
 		};
 	};

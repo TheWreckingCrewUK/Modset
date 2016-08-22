@@ -12,14 +12,14 @@
 		backpack="TWC_Backpack_Cold_War_Rifleman";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest05",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest05",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -139,6 +139,146 @@
 		"ACE_tourniquet"			
 		};		
 	};
+	class ColdWar_Rifleman_SUIT: B_Soldier_base_F
+	{
+		_generalMacro="Coldwar_Rifleman_SUIT";
+		scope=2;
+		displayName="Rifleman SUIT(Coldwar)";
+		faction="a_units";
+		vehicleClass="Cold_British";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="MNP_CombatUniform_DPMR";
+		backpack="TWC_Backpack_Cold_War_Rifleman";
+		linkedItems[]=
+		{
+        "rhs_vydra_3m",
+		"SP_MkBushHelmet_Forrest",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+        "rhs_vydra_3m",
+		"SP_MkBushHelmet_Forrest",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",	
+		"twc_L1A1_SUIT",
+		"rhsusf_weap_m1911a1",
+		"HAFM_LAW"		
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",	
+		"twc_L1A1_SUIT",
+		"rhsusf_weap_m1911a1",
+		"HAFM_LAW"	
+		};
+		magazines[]=
+		{
+		"rhsusf_mag_7x45acp_MHP",
+		"rhsusf_mag_7x45acp_MHP",
+		"rhsusf_mag_7x45acp_MHP",
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE"
+		};
+		Respawnmagazines[]=
+		{
+		"rhsusf_mag_7x45acp_MHP",
+		"rhsusf_mag_7x45acp_MHP",
+		"rhsusf_mag_7x45acp_MHP",	
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
+		"hlc_20Rnd_762x51_B_fal",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE"
+		};
+		Items[]=
+		{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet"
+		};
+		respawntems[]=
+		{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet"			
+		};		
+	};
 	class ColdWar_AT: B_Soldier_base_F
 	{
 		_generalMacro="Coldwar_At";
@@ -152,7 +292,7 @@
 		backpack="TWC_Backpack_Cold_War_AT";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest05",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"tf47_optic_m3maaws",
 		"ItemCompass",
@@ -160,7 +300,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest05",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -295,14 +435,14 @@
 		backpack="TWC_Backpack_Cold_War_AT";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest05",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest05",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -432,7 +572,7 @@
 		linkedItems[]=
 		{
 		"Binocular",	
-        "V_sud_nato_vest04",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -441,7 +581,7 @@
 		respawnLinkedItems[]=
 		{
 		"Binocular",		
-        "V_sud_nato_vest04",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -573,14 +713,14 @@
 		backpack="TWC_Backpack_Cold_War_MG";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest02",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest02",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -711,14 +851,14 @@
 		backpack="TWC_Backpack_Cold_War_MGAS";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest02",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest02",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -846,7 +986,7 @@
 		linkedItems[]=
 		{
 		"Binocular",		
-        "V_sud_nato_vest01",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -855,7 +995,7 @@
 		respawnLinkedItems[]=
 		{
 		"Binocular",		
-        "V_sud_nato_vest01",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",	
 		"ItemCompass",
@@ -987,7 +1127,7 @@
 		backpack="TWC_Backpack_Cold_War_Section";
 		linkedItems[]=
 		{		
-        "V_sud_nato_vest03",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -995,7 +1135,7 @@
 		};
 		respawnLinkedItems[]=
 		{	
-        "V_sud_nato_vest03",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",	
 		"ItemCompass",
@@ -1127,7 +1267,7 @@
 		backpack="TWC_Backpack_Cold_War_Section";
 		linkedItems[]=
 		{		
-        "V_sud_nato_vest03",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -1135,7 +1275,7 @@
 		};
 		respawnLinkedItems[]=
 		{		
-        "V_sud_nato_vest03",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",		
 		"ItemCompass",
@@ -1267,14 +1407,14 @@
 		backpack="TWC_Backpack_Cold_Medic";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest04",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest04",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",	
 		"ItemCompass",
 		"ItemWatch"
@@ -1392,7 +1532,7 @@
 		backpack="TWC_Backpack_Cold_War_FAC";
 		linkedItems[]=
 		{		
-        "V_sud_nato_vest03",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -1400,7 +1540,7 @@
 		};
 		respawnLinkedItems[]=
 		{		
-        "V_sud_nato_vest03",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",		
 		"ItemCompass",
@@ -1793,14 +1933,14 @@
 		backpack="TWC_Backpack_Cold_War_AA";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest05",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest05",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -1929,14 +2069,14 @@
 		backpack="TWC_Backpack_Cold_War_AA";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest05",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest05",
+        "rhs_vydra_3m",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"

@@ -145,7 +145,7 @@ class CfgVehicles
 		side = 1;
 		faction="Veh_units";
 		author = "DG";
-		displayname = "Puma HC2";
+		displayname = "Puma HC1";
 		class TransportMagazines
 		{
 			class _xx_hlc_20Rnd_762x51_B_fal
