@@ -1,6 +1,5 @@
 //Sets ied restriction markers to invisible. Helps us out on the editor.
 "iedRestrictionZone" setMarkerAlpha 0;
-"iedRestrictionZone2" setMarkerAlpha 0;
 
 [] execVM "server\vehicles\sa_ropes.sqf";
 [] execVM "server\vehicles\advancedTowing.sqf";

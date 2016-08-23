@@ -1,7 +1,7 @@
 //made by hartzie edited by FakeMatty
-_player1 = if(isNil "mert_sl")then{"Offline"}else{(name mert_sl)};
-_player2 = if(isNil "mert_med")then{"Offline"}else{(name mert_med)};
-_player3 = if(isNil "mert_helo")then{"Offline"}else{(name mert_helo)};
+_player1 = if(!isPlayer mert_sl)then{""}else{(name mert_sl)};
+_player2 = if(!isPlayer mert_med)then{""}else{(name mert_med)};
+_player3 = if(!isPlayer mert_helo)then{""}else{(name mert_helo)};
 
 
 

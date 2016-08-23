@@ -2,9 +2,9 @@
 Script by [TWC] jayman. Vehicle restriction through event handlers. Should cause literally like no lag
 The old one by Sa-Matra relied on a while{true}do{} loop which is shitty.
 */
-_specialCases = [helo1,helo2,helo3,helo4,p33,p34,mert_helo,tank1,tank2,tank3];
-if(player in _specialCases)then{
-	if(player == helo1 || player == helo2)then{
+_specialCases = ["helo1","helo2","helo3","helo4","p33","p34","mert_helo","tank1","tank2","tank3"];
+if(str player in _specialCases)then{
+	if(str player == "helo1" || str player == "helo2")then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
 				if((_this select 2) isKindOf "Air")then{
@@ -21,7 +21,7 @@ if(player in _specialCases)then{
 	};
 
 
-	if(player == helo3 || player == helo4)then{
+	if(str player == "helo3" || str player == "helo4")then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
 				if((_this select 2) isKindOf "Air")then{
@@ -37,7 +37,7 @@ if(player in _specialCases)then{
 		}];
 	};
 
-	if(player == p33 || player == p34)then{
+	if(str player == "p33" || str player == "p34")then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
 				if((_this select 2) isKindOf "Air")then{
@@ -53,7 +53,7 @@ if(player in _specialCases)then{
 		}];
 	};
 	
-	if(player == mert_helo)then{
+	if(str player == "mert_helo")then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
 				if((_this select 2) isKindOf "Air")then{
@@ -69,7 +69,7 @@ if(player in _specialCases)then{
 		}];
 	};
 	
-	if(player == tank1 || player == tank2 || player == tank3)then{
+	if(str player == "tank1" || str player == "tank2" || str player == "tank3")then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
 				if((_this select 2) isKindOf "Tank")then{

@@ -507,8 +507,8 @@ if (g_class == "US_TL") then {
 		["UK3CB_BAF_TA31F_3D",1],
 		["UK3CB_BAF_Eotech",1],
 		["rhsusf_acc_anpeq15_bkA",1],
-		["UK3CB_BAF_G_Tactical_Black",1,
-		["UK3CB_BAF_TA31F",1]],
+		["UK3CB_BAF_G_Tactical_Black",1],
+		["UK3CB_BAF_TA31F",1],
 		["rhsusf_assault_eagleaiii_ucp",1],
 		["rhsusf_acc_compm4",1],
 		["ACRE_PRC148",1]
@@ -1144,6 +1144,7 @@ if (g_class == "ANA_SL") then {
 		["rhsusf_ANPVS_14",1]
 		
 	];
+};
 
 //load avaible to armor crew only
  if (g_class == "ARMR_CREW") then {

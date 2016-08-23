@@ -33,6 +33,7 @@ for "_i" from 1 to 5 do {player addItemToBackpack "ACE_salineIV";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_morphine";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_epinephrine";};
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
+player addItemToBackpack "ACE_personalAidKit";
 player addHeadgear "rhsusf_ach_helmet_ESS_ocp";
 
 comment "Add weapons";

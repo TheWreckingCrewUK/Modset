@@ -26,8 +26,8 @@ for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
 player addBackpack "rhsusf_assault_eagleaiii_ocp";
 for "_i" from 1 to 13 do {player addItemToBackpack "1Rnd_HE_Grenade_shell";};
-for "_i" from 1 to 3 do {player addItemToBackpack "rhs_mag_m714_White";};
-for "_i" from 1 to 3 do {player addItemToBackpack "rhs_mag_M585_white";};
+for "_i" from 1 to 3 do {player addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
+for "_i" from 1 to 3 do {player addItemToBackpack "1Rnd_SmokeRed_Grenade_shell";};
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 player addHeadgear "rhsusf_ach_helmet_ESS_ocp";
 

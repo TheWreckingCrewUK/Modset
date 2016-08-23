@@ -1,11 +1,11 @@
 //made by hartzie edited by FakeMatty
 
-_player1 = if(isNil "helo1")then{"Offline"}else{(name helo1)};
-_player2 = if(isNil "helo2")then{"Offline"}else{(name helo2)};
-_player3 = if(isNil "helo3")then{"Offline"}else{(name helo3)};
-_player4 = if(isNil "helo4")then{"Offline"}else{(name helo4)};
-_player5 = if(isNil "p33")then{"Offline"}else{(name p33)};
-_player6 = if(isNil "p34")then{"Offline"}else{(name p34)};
+_player1 = if(!isPlayer helo1)then{""}else{(name helo1)};
+_player2 = if(!isPlayer helo2)then{""}else{(name helo2)};
+_player3 = if(!isPlayer helo3)then{""}else{(name helo3)};
+_player4 = if(!isPlayer helo4)then{""}else{(name helo4)};
+_player5 = if(!isPlayer p33)then{""}else{(name p33)};
+_player6 = if(!isPlayer p34)then{""}else{(name p34)};
 
 
 
