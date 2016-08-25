@@ -139,7 +139,7 @@ class CfgVehicles
 		{
 		};
 	};
-	class twc_puma: BAF_Puma_VA_DG1
+	class twc_puma: BAF_Puma_CE_DG1
 	{
 		scope = 2;
 		side = 1;
