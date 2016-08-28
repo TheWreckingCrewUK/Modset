@@ -5,7 +5,7 @@
  * Public: No
  */
 if (!isServer) exitwith {};
-params ["_Unit","_markers",["_speed","LIMITED"],["_formation","COLUMN"]["_behaviour","AWARE"]];
+params ["_Unit","_markers",["_speed","LIMITED"],["_formation","COLUMN"],["_behaviour","AWARE"]];
 
 _group = group _unit;
 
