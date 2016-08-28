@@ -22,7 +22,7 @@ player addItemToUniform "ACE_EarPlugs";
 player addVest "V_LIB_US_Vest_Garand";
 player addItemToVest "ACRE_PRC343";
 for "_i" from 1 to 9 do {player addItemToVest "LIB_8Rnd_762x63";};
-for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {player addItemToVest "LIB_f1";};
 player addBackpack "B_LIB_US_Backpack";
 for "_i" from 1 to 20 do {player addItemToBackpack "ACE_fieldDressing";};
 for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};

@@ -23,7 +23,7 @@ player addVest "V_LIB_WP_OfficerVest";
 player addItemToVest "ACRE_PRC148";
 player addItemToVest "ACRE_PRC343";
 for "_i" from 1 to 4 do {player addItemToVest "LIB_32Rnd_9x19";};
-for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {player addItemToVest "LIB_shg24";};
 player addBackpack "B_LIB_GER_Backpack";
 for "_i" from 1 to 6 do {player addItemToBackpack "LIB_32Rnd_9x19";};
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};

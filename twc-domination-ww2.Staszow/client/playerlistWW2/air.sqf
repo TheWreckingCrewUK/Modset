@@ -1,14 +1,11 @@
 //made by hartzie edited by FakeMatty
 
-_player1 = if(isNil "helo1")then{"No-One"}else{(name helo1)};
-_player2 = if(isNil "helo2")then{"No-One"}else{(name helo2)};
-_player3 = if(isNil "helo3")then{"No-One"}else{(name helo3)};
-_player4 = if(isNil "jet1")then{"No-One"}else{(name jet1)};
+_player1 = if(!isPlayer jet1)then{""}else{(name jet1)};
 
 
 
 
-g_playerlist = [["Air Assets", [["Wildcat/Chinook", [_player1, "Pilot"]],["BlackHawk/Osprey", [_player2, "Pilot"]],["Venom/Super-Stallion", [_player3, "Pilot"]],["A/10", [_player4, "Pilot"]]]]				
+g_playerlist = [["Air Assets", [["P-47", [_player1, "Pilot"]]]]				
 				
 				];
 

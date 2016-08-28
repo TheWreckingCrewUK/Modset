@@ -19,22 +19,22 @@ if (!isNil "armour3" && {player == armour3}) then {
 		execVM "client\restrictModdedWW2\fullCrew.sqf";
 	}];
 };
-if (!isNil "armour1US" && {player == armour1US}) then {
-	g_class = "armour_coUS";
+if (!isNil "armour1US" && {player == armour1}) then {
+	g_class = "armour_co";
 	execVM "client\restrictModdedWW2\fullCrew.sqf";
 	player addEventHandler ["Respawn", {
 		execVM "client\restrictModdedWW2\fullCrew.sqf";
 	}];
 };
-if (!isNil "armour2US" && {player == armour2US}) then {
-	g_class = "armour_crUS";
+if (!isNil "armour2US" && {player == armour2}) then {
+	g_class = "armour_cr";
 	execVM "client\restrictModdedWW2\fullCrew.sqf";
 	player addEventHandler ["Respawn", {
 		execVM "client\restrictModdedWW2\fullCrew.sqf";
 	}];
 };
-if (!isNil "armour3US" && {player == armour3US}) then {
-	g_class = "armour_crUS";
+if (!isNil "armour3US" && {player == armour3}) then {
+	g_class = "armour_cr";
 	execVM "client\restrictModdedWW2\fullCrew.sqf";
 	player addEventHandler ["Respawn", {
 		execVM "client\restrictModdedWW2\fullCrew.sqf";

@@ -26,6 +26,7 @@ if(isModded == 0)then{
 	arty = ["O_MBT_02_arty_F"];
 	tankaaCombined = (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Armored" >> "OIA_TankPlatoon_AA");
 	enemyFlag = "flag_CSAT";
+	bunkerMarkerClass = "n_unknown";
 };
 if(isModded == 1) then{
 	badAOs = ["PARAISO","Rashidah"];
@@ -41,6 +42,7 @@ if(isModded == 1) then{
 	arty = ["rhs_2s3_Tv"];
 	tankaaCombined = (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Armored" >> "OIA_TankPlatoon_AA");
 	enemyFlag = "rhs_flag_Russia";
+	bunkerMarkerClass = "n_unknown";
 };
 if(isModded == 2)then{
 	tank = ["LIB_PzKpfwIV_H"];
@@ -55,4 +57,5 @@ if(isModded == 2)then{
 	arty = ["LIB_Pak40"];
 	tankaaCombined = (configfile >> "CfgGroups" >> "West" >> "LIB_PANZERWAFFE" >> "Armored" >> "LIB_GER_PzKpfwVI_E_Platoon");
 	enemyFlag = "Faction_CUP_OPFOR";
+	bunkerMarkerClass = "mil_circle";
 };

@@ -20,7 +20,7 @@ for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
 player addVest "V_LIB_US_Vest_Garand";
-for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {player addItemToVest "LIB_f1";};
 for "_i" from 1 to 4 do {player addItemToVest "LIB_8Rnd_762x63";};
 player addItemToVest"ACRE_PRC343";
 player addBackpack "B_LIB_US_Backpack";

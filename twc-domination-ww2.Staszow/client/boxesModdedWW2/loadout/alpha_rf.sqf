@@ -22,7 +22,7 @@ player addItemToUniform "ACE_EarPlugs";
 player addVest "V_LIB_WP_Kar98Vest";
 player addItemToVest "ACRE_PRC343";
 for "_i" from 1 to 3 do {player addItemToVest "rhsgref_5Rnd_792x57_kar98k";};
-for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {player addItemToVest "LIB_shg24";};
 player addBackpack "B_LIB_GER_Backpack";
 for "_i" from 1 to 7 do {player addItemToVest "rhsgref_5Rnd_792x57_kar98k";};
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};

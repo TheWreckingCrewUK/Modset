@@ -71,7 +71,7 @@ if((count allPlayers) > 8) then{
 	
 		_markerstr = createMarker ["aobunkerthree",_spawnPos];
 		_markerstr setMarkerShape "ICON";
-		_markerstr setMarkerType "n_unknown";
+		_markerstr setMarkerType bunkerMarkerClass;
 		_markerstr setMarkerColor "colorEAST";
 		_markerstr setMarkerSize [0.5,0.5];
 		
@@ -112,7 +112,7 @@ if isServer then {
 	
 	_markerstr = createMarker ["aobunkerone",_spawnPos];
 	_markerstr setMarkerShape "ICON";
-	_markerstr setMarkerType "n_unknown";
+	_markerstr setMarkerType bunkerMarkerClass;
 	_markerstr setMarkerColor "colorEAST";
 	_markerstr setMarkerSize [0.5,0.5];
 	
@@ -135,7 +135,7 @@ if isServer then {
 		
 	_markerstr = createMarker ["aobunkertwo",_spawnPos];
 	_markerstr setMarkerShape "ICON";
-	_markerstr setMarkerType "n_unknown";
+	_markerstr setMarkerType bunkerMarkerClass;
 	_markerstr setMarkerColor "colorEAST";
 	_markerstr setMarkerSize [0.5,0.5];
 	
