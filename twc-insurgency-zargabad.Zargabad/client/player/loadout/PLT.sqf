@@ -11,26 +11,23 @@ removeHeadgear player;
 removeGoggles player;
 
 comment "Add containers";
-player forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP";
-player addItemToUniform "ACE_tourniquet";
-for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
-for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
-for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
-for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
-for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
+player forceAddUniform "rhs_uniform_cu_ocp_101st";
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
+for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACE_DAGR";
 for "_i" from 1 to 3 do {player addItemToUniform "SmokeShell";};
-player addVest "UK3CB_BAF_V_Pilot_A";
-player addItemToVest "ACRE_PRC343";
-for "_i" from 1 to 7 do {player addItemToVest "UK3CB_BAF_30Rnd";};
-player addBackpack "B_AssaultPack_mcamo";
+player addVest "rhsusf_iotv_ocp_Rifleman";
+player addItemToVest "ACRE_PRC148";
+player addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+player addBackpack "B_AssaultPack_cbr";
 player addItemToBackpack "ACRE_PRC117F";
-player addHeadgear "UK3CB_BAF_H_PilotHelmetHeli_A";
+player addHeadgear "H_PilotHelmetHeli_B";
 player addGoggles "UK3CB_BAF_G_Tactical_Black";
 
 comment "Add weapons";
-player addWeapon "UK3CB_BAF_L22A2";
+player addWeapon "rhs_weap_m4_carryhandle_mstock";
+player addWeapon "rhsusf_weap_m9";
 
 comment "Add items";
 player linkItem "ItemMap";
@@ -40,5 +37,5 @@ player linkItem "ItemRadioAcreFlagged";
 player linkItem "rhsusf_ANPVS_14";
 
 comment "Set identity";
-player setFace "WhiteHead_13";
-player setSpeaker "Male10ENG";
+player setFace "GreekHead_A3_07";
+player setSpeaker "Male03ENGB";

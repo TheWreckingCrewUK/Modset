@@ -1,5 +1,12 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Air Assets", [["Wildcat/Chinook", [g_p38, "Pilot"], [g_p39, "Crew Chief"]]]]]				
+
+_player1 = if(!isPlayer p38)then{""}else{(name p38)};
+_player2 = if(!isPlayer p39)then{""}else{(name p39)};
+
+
+
+
+g_playerlist = [["Air Assets", [["Black Hawk/Chinook", [_player1, "Pilot"],[_player2, "Crew Cheif"]]]]				
 				
 				];
 
@@ -31,4 +38,3 @@ _text = "";
 	hint parseText _text;
 	sleep 7;
 } forEach g_playerList;
-

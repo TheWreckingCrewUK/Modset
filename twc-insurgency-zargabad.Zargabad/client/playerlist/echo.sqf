@@ -1,5 +1,12 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Echo British Army", [["Echo Section Leader", [g_p21, "Section Leader"], [g_p22, "Rifleman"], [g_p23, "Grenadier"], [g_p24, "Automatic Rifleman"], [g_p25, "Medic"]]]]					
+_player1 = if(!isPlayer p21)then{""}else{(name p21)};
+_player2 = if(!isPlayer p22)then{""}else{(name p22)};
+_player3 = if(!isPlayer p23)then{""}else{(name p23)};
+_player4 = if(!isPlayer p24)then{""}else{(name p24)};
+_player5 = if(!isPlayer p25)then{""}else{(name p25)};
+
+
+g_playerlist = [["Echo British Army", [["Echo Section Leader", [_player1, "Section Leader"], [_player2, "Rifleman"], [_player3, "Grenadier"], [_player4, "Automatic Rifleman"], [_player5, "Medic"]]]]					
 				
 				];
 

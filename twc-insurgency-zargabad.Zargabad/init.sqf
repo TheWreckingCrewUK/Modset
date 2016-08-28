@@ -123,6 +123,7 @@ if ((str player) in _specialSlots)then{
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
 		_apachePilots = ["p33","p34"];
 		_Sniperteam = ["p36","p37"];
+		_mertteam = ["mert_helo","mert_sl","mert_med"];
 		_numPlayers = switch (str player) do{
 			case "P38": {5};
 			case "P39": {10};
@@ -132,8 +133,11 @@ if ((str player) in _specialSlots)then{
 			case "humanCiv1": {10};
 			case "humanCiv2": {15};
 			case "humanCiv3": {20};
-			case "p36": {10};
+			case "p36";
 			case "p37": {10};
+			case "mert_helo";
+			case "mert_sl";
+			case "mert_med": {15};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
 		
@@ -153,6 +157,10 @@ if ((str player) in _specialSlots)then{
 			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || (_UID  in InsP_playersKilledAsCivs) || !(_UID in timePlayedArray)) then{
 				["End3", false, 0] call BIS_fnc_endMission;
 			};
+		};
+		
+				if ((str player) in _mertteam && (count playableUnits) < _numPlayers) then{
+			["End6", false, 0] call BIS_fnc_endMission;
 		};
 		
 		if ((str player) in _apachePilots) then{

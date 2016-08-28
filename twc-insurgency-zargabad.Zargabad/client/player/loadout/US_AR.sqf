@@ -12,7 +12,6 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "rhs_uniform_cu_ocp";
-player addItemToUniform "ACRE_PRC148_ID_1";
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACE_tourniquet";
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
@@ -20,6 +19,7 @@ for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
+player addItemToUniform "ACRE_PRC148";
 player addItemToUniform "UK3CB_BAF_Eotech";
 player addVest "rhsusf_iotv_ocp_SAW";
 for "_i" from 1 to 2 do {player addItemToVest "rhsusf_200Rnd_556x45_soft_pouch";};

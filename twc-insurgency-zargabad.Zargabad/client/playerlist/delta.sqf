@@ -1,5 +1,12 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Delta ANA", [["Delta Squad Leader", [g_p16, "Squad Leader"], [g_p17, "Rifleman"], [g_p18, "AT Rifleman"], [g_p19, "Machine Gunner"], [g_p20, "Medic"]]]]					
+_player1 = if(!isPlayer p16)then{""}else{(name p16)};
+_player2 = if(!isPlayer p17)then{""}else{(name p17)};
+_player3 = if(!isPlayer p18)then{""}else{(name p18)};
+_player4 = if(!isPlayer p19)then{""}else{(name p19)};
+_player5 = if(!isPlayer p20)then{""}else{(name p20)};
+
+
+g_playerlist = [["Delta ANA", [["Delta Squad Leader", [_player1, "Squad Leader"], [_player2, "Rifleman"], [_player3, "AT Rifleman"], [_player4, "Machine Gunner"], [_player5, "Medic"]]]]					
 				];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";

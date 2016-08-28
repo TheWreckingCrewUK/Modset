@@ -77,4 +77,3 @@ player addEventHandler ["Fired", {
         titleText [ALERT, "BLACK IN", 5];
     };
 }];
-

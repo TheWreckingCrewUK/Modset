@@ -1,5 +1,9 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Sniper Team", [["Sniper", [g_p36, "Sniper"],[g_p37, "Spotter"]]]]				
+_player1 = if(!isPlayer p36)then{""}else{(name p36)};
+_player2 = if(!isPlayer p37)then{""}else{(name p37)};
+
+
+g_playerlist = [["Sniper Team", [["Sniper", [_player1, "Sniper"],[_player2, "Spotter"]]]]				
 				
 				];
 

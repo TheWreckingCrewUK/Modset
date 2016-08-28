@@ -1,5 +1,13 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Alpha British Army", [["Alpha Section Leader", [g_p1, "Section Leader"], [g_p2, "Rifleman"], [g_p3, "Grenadier"], [g_p4, "Automatic Rifleman"], [g_p5, "Medic"]]]]					
+_player1 = if(!isPlayer p1)then{""}else{(name p1)};
+_player2 = if(!isPlayer p2)then{""}else{(name p2)};
+_player3 = if(!isPlayer p3)then{""}else{(name p3)};
+_player4 = if(!isPlayer p4)then{""}else{(name p4)};
+_player5 = if(!isPlayer p5)then{""}else{(name p5)};
+
+
+
+g_playerlist = [["Alpha British Army", [["Alpha Section Leader", [_player1, "Section Leader"], [_player2, "Rifleman"], [_player3, "Grenadier"], [_player4, "Automatic Rifleman"], [_player5, "Medic"]]]]					
 				
 				];
 

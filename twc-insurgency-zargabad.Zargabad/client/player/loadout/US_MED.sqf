@@ -12,14 +12,14 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "rhs_uniform_cu_ocp";
-player addItemToUniform "ACRE_PRC148_ID_1";
+player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACE_tourniquet";
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
-player addItemToUniform "ACE_EarPlugs";
+player addItemToUniform "ACRE_PRC148";
 player addVest "rhsusf_iotv_ocp_Medic";
 for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
@@ -33,6 +33,7 @@ for "_i" from 1 to 5 do {player addItemToBackpack "ACE_salineIV";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_morphine";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_epinephrine";};
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
+player addItemToBackpack "ACE_personalAidKit";
 player addHeadgear "rhsusf_ach_helmet_ESS_ocp";
 
 comment "Add weapons";

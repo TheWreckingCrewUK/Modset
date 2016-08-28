@@ -12,6 +12,7 @@ removeGoggles player;
 
 comment "Add containers";
 player forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP";
+player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACE_tourniquet";
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
@@ -19,7 +20,6 @@ for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACRE_PRC343_ID_1";
-player addItemToUniform "ACE_EarPlugs";
 player addVest "UK3CB_BAF_V_Osprey";
 for "_i" from 1 to 4 do {player addItemToVest "UK3CB_BAF_30Rnd";};
 for "_i" from 1 to 2 do {player addItemToVest "UK3CB_BAF_30Rnd_T";};

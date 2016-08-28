@@ -1,5 +1,12 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Charlie USMC", [["Charlie Squad Leader", [g_p11, "Squad Leader"], [g_p12, "Rifleman"], [g_p13, "Grenadier"], [g_p14, "Automatic Rifleman"], [g_p15, "Medic"]]]]					
+_player1 = if(!isPlayer p11)then{""}else{(name p11)};
+_player2 = if(!isPlayer p12)then{""}else{(name p12)};
+_player3 = if(!isPlayer p13)then{""}else{(name p13)};
+_player4 = if(!isPlayer p14)then{""}else{(name p14)};
+_player5 = if(!isPlayer p15)then{""}else{(name p15)};
+
+
+g_playerlist = [["Charlie USMC", [["Charlie Squad Leader", [_player1, "Squad Leader"], [_player2, "Rifleman"], [_player3, "Grenadier"], [_player4, "Automatic Rifleman"], [_player5, "Medic"]]]]					
 				];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";

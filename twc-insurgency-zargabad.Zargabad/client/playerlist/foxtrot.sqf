@@ -1,5 +1,12 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Foxtrot Rzech Republic Army", [["Foxtrot Squad Leader", [g_p26, "Squad Leader"], [g_p27, "Rifleman"], [g_p28, "AT Rifleman"], [g_p29, "Machine Gunner"], [g_p30, "Medic"]]]]					
+_player1 = if(!isPlayer p26)then{""}else{(name p26)};
+_player2 = if(!isPlayer p27)then{""}else{(name p27)};
+_player3 = if(!isPlayer p28)then{""}else{(name p28)};
+_player4 = if(!isPlayer p29)then{""}else{(name p29)};
+_player5 = if(!isPlayer p30)then{""}else{(name p30)};
+
+
+g_playerlist = [["Foxtrot Rzech Republic Army", [["Foxtrot Squad Leader", [_player1, "Squad Leader"], [_player2, "Rifleman"], [_player3, "AT Rifleman"], [_player4, "Machine Gunner"], [_player5, "Medic"]]]]					
 				];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";

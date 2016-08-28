@@ -1,5 +1,12 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Golf German Army", [["Golf Section Leader", [g_p31, "Section Leader"], [g_p32, "Rifleman"], [g_p33, "Grenadier"], [g_p34, "Automatic Rifleman"], [g_p35, "Medic"]]]]					
+_player1 = if(!isPlayer p31)then{""}else{(name p31)};
+_player2 = if(!isPlayer p32)then{""}else{(name p32)};
+_player3 = if(!isPlayer p33)then{""}else{(name p33)};
+_player4 = if(!isPlayer p34)then{""}else{(name p34)};
+_player5 = if(!isPlayer p35)then{""}else{(name p35)};
+
+
+g_playerlist = [["Golf German Army", [["Golf Section Leader", [_player1, "Section Leader"], [_player2, "Rifleman"], [_player3, "Grenadier"], [_player4, "Automatic Rifleman"], [_player5, "Medic"]]]]					
 				
 				];
 

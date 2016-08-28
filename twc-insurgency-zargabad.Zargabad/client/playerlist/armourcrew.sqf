@@ -1,5 +1,9 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [["Armour Crew", [["FV510", [g_tank1, "Armour Commander"],[g_tank2, "Armour Crewman"],[g_tank3, "Armour Crewman"]]]]			
+_player1 = if(!isPlayer tank1)then{""}else{(name tank1)};
+_player2 = if(!isPlayer tank2)then{""}else{(name tank2)};
+_player3 = if(!isPlayer tank3)then{""}else{(name tank3)};
+
+g_playerlist = [["Armour Crew", [["Armour", [_player1, "Armour Commander"],[_player2, "Armour Crewman"],[_player3, "Armour Crewman"]]]]			
 				
 				];
 
