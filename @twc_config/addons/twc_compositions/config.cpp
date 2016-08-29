@@ -464,6 +464,33 @@ class CfgGroups
 											position[] = {3,0,0};
 										};
 								};
+								class Cold_War_MIlan
+								{
+										name = "Milan Team";
+										faction = "a_units";
+										side = 1;
+										class Unit0
+										{
+											side = 1;
+											vehicle = "ColdWar_Section_Leader";
+											rank = "CORPORAL";
+											position[] = {0,3,0};
+										};
+										class Unit1
+										{
+											side = 1;
+											vehicle = "ColdWar_MilanGunner";
+											rank = "PRIVATE";
+											position[] = {3,0,0};
+										};
+										class Unit2
+										{
+											side = 1;
+											vehicle = "ColdWar_MilanAssistant";
+											rank = "Private";
+											position[] = {6,0,0};
+										};
+								};
                         };
 						class 1990
 						{
@@ -530,6 +557,33 @@ class CfgGroups
                                                 position[] = {15,0,0};
                                         };
                                 };
+								class SectionMilan
+                                {
+                                        name = "Milan Team"; //Name of Group
+                                        faction = "a_units"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_Squadleader"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_MilanGunner";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_MilanAssistant";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+								};
 								class 1990_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
@@ -650,6 +704,33 @@ class CfgGroups
                                                 position[] = {5,0,0};
                                         };
                                 };
+								class SectionMilan
+                                {
+                                        name = "Milan Team"; //Name of Group
+                                        faction = "a_units"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_Squadleader_Desert"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_MilanGunner_Desert";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_MilanAssistant_Desert";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+								};
 						};
                     
                 };

@@ -1063,6 +1063,18 @@ class CfgVehicles
 			};
 		};
 	};
+	class TWC_Backpack_Cold_War_Milan:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_Milan
+			{
+				name = "TWC_MilanMissileItem";
+				count = 1;
+			};
+		};
+	};
 //********************** 1990 Backpack ********************
 	class TWC_Backpack_1990_Platoon_Command:CUP_B_Bergen_BAF
 	{
@@ -1298,6 +1310,18 @@ class CfgVehicles
 			{
 				magazine = "UK3CB_BAF_30Rnd_T";
 				count = 4;
+			};
+		};
+	};
+	class TWC_Backpack_1990_Milan:CUP_B_Bergen_BAF
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_Milan
+			{
+				name = "TWC_MilanMissileItem";
+				count = 1;
 			};
 		};
 	};
