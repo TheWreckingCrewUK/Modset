@@ -54,6 +54,9 @@ class CfgFunctions
 			class IEDpopulate
 			{
 			};
+			class intelHint
+			{
+			};
 			class Artillery
 			{
 			};
@@ -82,6 +85,9 @@ class CfgFunctions
 			{
 			};
 			class patrolRoads
+			{
+			};
+			class placedIED
 			{
 			};
 			class patrolMarkers
