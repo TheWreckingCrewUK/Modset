@@ -47,7 +47,7 @@ if(_spotter != objNull)then{
 			"R_80mm_HE" createVehicle (getPos _trig);
 			deleteVehicle _trig;		
 		}];
-	};	
+	};
 }else{
 	//Spotter is false
 	_trigger = createTrigger ["EmptyDetector", (getPos _unit), true];
