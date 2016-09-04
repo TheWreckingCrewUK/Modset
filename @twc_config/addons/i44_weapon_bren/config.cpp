@@ -20,11 +20,19 @@ class CfgPatches
 {
 	class I44_base_w
 	{
+		units[]={};
 		weapons[]=
-		{
-			
+		{			
 			"I44_BrenMk1"
 		};
+		requiredVersion=0.1;
+		requiredAddons[]=
+		{
+			"A3_Weapons_F"
+		};
+		version="1";
+		projectName="TWC";
+		author="FakeMatty";
 	};
 };
 
