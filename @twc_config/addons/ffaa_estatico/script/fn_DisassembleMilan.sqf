@@ -1,5 +1,20 @@
 	params ["_Milan"];
-	_nObject = nearestObject [player, "TWC_Milan"];
+	
+
+	
+	[
+            5,
+            [_Milan],
+            {
+				
+            },
+            {},
+            "Disassembling..."
+        ] call ACE_common_fnc_progressBar;
+		
+		sleep 5;
+		
+             	_nObject = nearestObject [player, "TWC_Milan"];
 	_allmags =  magazines _Milan;
 	if ((count _allmags) > 0) then{
 		if (player canadd "TWC_MilanMissileItem") then{
@@ -21,3 +36,4 @@
 		_Object addWeaponCargoGlobal ["TWC_Milan_Tripod_Disassemabled",1];
 		_Object addWeaponCargoGlobal ["TWC_Milan_Launcher_Disassemabled",1];
 	};
+	

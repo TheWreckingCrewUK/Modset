@@ -1,6 +1,23 @@
 	params ["_WeaponHolder"];
 
-	_items = itemcargo _WeaponHolder;
+	
+	
+	
+	
+	[
+            5,
+            [],
+            {
+	
+				
+            },
+            {},
+            "Assembling..."
+        ] call ACE_common_fnc_progressBar;
+		
+		
+	sleep 5;	
+ 	_items = itemcargo _WeaponHolder;
 	_Weapons = weaponcargo _WeaponHolder;
 	_Backpacks = backpackcargo _WeaponHolder;
 	_magazines = MagazineCargo _WeaponHolder;

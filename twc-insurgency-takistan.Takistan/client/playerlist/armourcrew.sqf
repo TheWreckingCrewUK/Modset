@@ -1,7 +1,7 @@
 //made by hartzie edited by FakeMatty
-_player1 = if(!isPlayer tank1)then{""}else{(name tank1)};
-_player2 = if(!isPlayer tank2)then{""}else{(name tank2)};
-_player3 = if(!isPlayer tank3)then{""}else{(name tank3)};
+_player1 = if(isNil "tank1")then{""}else{if(!isPlayer tank1)then{""}else{(name tank1)};};
+_player2 = if(isNil "tank2")then{""}else{if(!isPlayer tank2)then{""}else{(name tank2)};};
+_player3 = if(isNil "tank3")then{""}else{if(!isPlayer tank3)then{""}else{(name tank3)};};
 
 g_playerlist = [["Armour Crew", [["Armour", [_player1, "Armour Commander"],[_player2, "Armour Crewman"],[_player3, "Armour Crewman"]]]]			
 				

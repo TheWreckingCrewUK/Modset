@@ -12,14 +12,14 @@
 		backpack="TWC_Backpack_Cold_War_Rifleman";
 		linkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -152,14 +152,14 @@
 		backpack="TWC_Backpack_Cold_War_Rifleman";
 		linkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -292,7 +292,7 @@
 		backpack="TWC_Backpack_Cold_War_AT";
 		linkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"tf47_optic_m3maaws",
 		"ItemCompass",
@@ -300,7 +300,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -435,14 +435,14 @@
 		backpack="TWC_Backpack_Cold_War_AT";
 		linkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -572,7 +572,7 @@
 		linkedItems[]=
 		{
 		"Binocular",	
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -581,7 +581,7 @@
 		respawnLinkedItems[]=
 		{
 		"Binocular",		
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -713,14 +713,14 @@
 		backpack="TWC_Backpack_Cold_War_MG";
 		linkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -851,14 +851,14 @@
 		backpack="TWC_Backpack_Cold_War_MGAS";
 		linkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -986,7 +986,7 @@
 		linkedItems[]=
 		{
 		"Binocular",		
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -995,7 +995,7 @@
 		respawnLinkedItems[]=
 		{
 		"Binocular",		
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",	
 		"ItemCompass",
@@ -1127,7 +1127,7 @@
 		backpack="TWC_Backpack_Cold_War_Section";
 		linkedItems[]=
 		{		
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -1135,7 +1135,7 @@
 		};
 		respawnLinkedItems[]=
 		{	
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",	
 		"ItemCompass",
@@ -1267,7 +1267,7 @@
 		backpack="TWC_Backpack_Cold_War_Section";
 		linkedItems[]=
 		{		
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -1275,7 +1275,7 @@
 		};
 		respawnLinkedItems[]=
 		{		
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",		
 		"ItemCompass",
@@ -1407,14 +1407,14 @@
 		backpack="TWC_Backpack_Cold_Medic";
 		linkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",	
 		"ItemCompass",
 		"ItemWatch"
@@ -1532,7 +1532,7 @@
 		backpack="TWC_Backpack_Cold_War_FAC";
 		linkedItems[]=
 		{		
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
 		"ItemCompass",
@@ -1540,7 +1540,7 @@
 		};
 		respawnLinkedItems[]=
 		{		
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",		
 		"ItemCompass",
@@ -1933,14 +1933,14 @@
 		backpack="TWC_Backpack_Cold_War_AA";
 		linkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -2069,14 +2069,14 @@
 		backpack="TWC_Backpack_Cold_War_AA";
 		linkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -2200,14 +2200,14 @@
 		backpack="TWC_Backpack_Cold_War_Milan";
 		linkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
@@ -2332,14 +2332,14 @@
 		backpack="TWC_Backpack_Cold_War_Milan";
 		linkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhs_vydra_3m",
+        "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
 		"ItemWatch"

@@ -1,13 +1,13 @@
 //made by hartzie edited by FakeMatty
-_player9 = if(!isPlayer p9)then{""}else{(name p9)};
-_player10 = if(!isPlayer p10)then{""}else{(name p10)};
-_player11 = if(!isPlayer p11)then{""}else{(name p11)};
-_player12 = if(!isPlayer p12)then{""}else{(name p12)};
-_player13 = if(!isPlayer p13)then{""}else{(name p13)};
-_player14 = if(!isPlayer p14)then{""}else{(name p14)};
-_player15 = if(!isPlayer p15)then{""}else{(name p15)};
-_player16 = if(!isPlayer p16)then{""}else{(name p16)};
-_player17 = if(!isPlayer p17)then{""}else{(name p17)};
+_player9 = if(isNil "p9")then{""}else{if(!isPlayer p9)then{""}else{(name p9)};};
+_player10 = if(isNil "p10")then{""}else{if(!isPlayer p10)then{""}else{(name p10)};};
+_player11 = if(isNil "p11")then{""}else{if(!isPlayer p11)then{""}else{(name p11)};};
+_player12 = if(isNil "p12")then{""}else{if(!isPlayer p12)then{""}else{(name p12)};};
+_player13 = if(isNil "p13")then{""}else{if(!isPlayer p13)then{""}else{(name p13)};};
+_player14 = if(isNil "p14")then{""}else{if(!isPlayer p14)then{""}else{(name p14)};};
+_player15 = if(isNil "p15")then{""}else{if(!isPlayer p15)then{""}else{(name p15)};};
+_player16 = if(isNil "p16")then{""}else{if(!isPlayer p16)then{""}else{(name p16)};};
+_player17 = if(isNil "p17")then{""}else{if(!isPlayer p17)then{""}else{(name p17)};};
 
 
 

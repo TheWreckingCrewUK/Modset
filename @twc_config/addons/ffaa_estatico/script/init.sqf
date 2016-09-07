@@ -17,8 +17,8 @@ RemoveMilanMissile = ["RemoveMilanMissile","Remove Missile","",{call TWC_fnc_Rem
 MilanMenu = ["MilanMenu","Milan","",{},{true}] call ace_interact_menu_fnc_createAction;
 [typeof Player, 1, ["ACE_SelfActions"], MilanMenu] call ace_interact_menu_fnc_addActionToClass;
 
-AssembleMilan = ["AssembleMilan","Assemble Milan","",{[nearestObjects [player, ["WeaponHolderSimulated","GroundWeaponHolder"], 5] select 0] call TWC_fnc_AssembleMilan},{player hasweapon "TWC_Milan_Launcher_Disassemabled"}] call ace_interact_menu_fnc_createAction;
+AssembleMilan = ["AssembleMilan","Assemble Milan","",{_twc = [nearestObjects [player, ["WeaponHolderSimulated","GroundWeaponHolder"], 5] select 0] spawn TWC_fnc_AssembleMilan},{player hasweapon "TWC_Milan_Launcher_Disassemabled"}] call ace_interact_menu_fnc_createAction;
 [typeof Player, 1, ["ACE_SelfActions","MilanMenu"], AssembleMilan] call ace_interact_menu_fnc_addActionToClass;
 
-DisassembleMilan = ["DiassembleMilanMenu","Disassemble Milan","",{_this call TWC_fnc_DisassembleMilan},{True}] call ace_interact_menu_fnc_createAction;
+DisassembleMilan = ["DiassembleMilanMenu","Disassemble Milan","",{_twc = _this spawn TWC_fnc_DisassembleMilan},{True}] call ace_interact_menu_fnc_createAction;
 ["TWC_Milan", 0, ["ACE_MainActions"], DisassembleMilan] call ace_interact_menu_fnc_addActionToClass;

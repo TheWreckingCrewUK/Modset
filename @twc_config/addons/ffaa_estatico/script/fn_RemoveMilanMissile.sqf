@@ -1,4 +1,10 @@
-	_nObject = nearestObject [player, "TWC_Milan"];
+
+	
+		[
+            5,
+            [],
+            {
+					_nObject = nearestObject [player, "TWC_Milan"];
 	_allmags = magazines _nObject;
 
 
@@ -12,3 +18,10 @@
 	}else{
 	systemchat "There is not a missile in the milan."
 	};
+	
+	
+				
+            },
+            {},
+            "Taking Missile..."
+        ] call ACE_common_fnc_progressBar;

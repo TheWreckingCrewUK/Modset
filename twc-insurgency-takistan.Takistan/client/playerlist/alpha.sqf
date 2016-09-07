@@ -1,12 +1,12 @@
 //made by hartzie edited by FakeMatty
-_player1 = if(!isPlayer p1)then{""}else{(name p1)};
-_player2 = if(!isPlayer p2)then{""}else{(name p2)};
-_player3 = if(!isPlayer p3)then{""}else{(name p3)};
-_player4 = if(!isPlayer p4)then{""}else{(name p4)};
-_player5 = if(!isPlayer p5)then{""}else{(name p5)};
-_player6 = if(!isPlayer p6)then{""}else{(name p6)};
-_player7 = if(!isPlayer p7)then{""}else{(name p7)};
-_player8 = if(!isPlayer p8)then{""}else{(name p8)};
+_player1 = if(isNil "p1")then{""}else{if(!isPlayer p1)then{""}else{(name p1)};};
+_player2 = if(isNil "p2")then{""}else{if(!isPlayer p2)then{""}else{(name p2)};};
+_player3 = if(isNil "p3")then{""}else{if(!isPlayer p3)then{""}else{(name p3)};};
+_player4 = if(isNil "p4")then{""}else{if(!isPlayer p4)then{""}else{(name p4)};};
+_player5 = if(isNil "p5")then{""}else{if(!isPlayer p5)then{""}else{(name p5)};};
+_player6= if(isNil "p6")then{""}else{if(!isPlayer p6)then{""}else{(name p6)};};
+_player7 = if(isNil "p7")then{""}else{if(!isPlayer p7)then{""}else{(name p7)};};
+_player8 = if(isNil "p8")then{""}else{if(!isPlayer p8)then{""}else{(name p8)};};
 
 
 

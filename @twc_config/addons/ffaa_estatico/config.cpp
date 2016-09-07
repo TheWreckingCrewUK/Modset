@@ -254,7 +254,6 @@ class CfgVehicles
 		side=1;
 		faction="a_units";
 		crew="I_Soldier_F";
-		armor = 10;
 		typicalCargo[]=
 		{
 			"I_Soldier_F"
@@ -263,8 +262,8 @@ class CfgVehicles
 		picture="\ffaa_estatico\ico\milan_ca.paa";
 		icon="\ffaa_estatico\icomap\icomap_metis_at13_CA.paa";
 		mapSize=2.5;
-		displayName="MILAN Tripod";
-		author="FakeMatty";
+		displayName="$STR_FFAA_TRIPODE_MILAN";
+		author="$STR_FFAA_AUTOR_FFAAMOD";
 		/*class Eventhandlers: DefaultEventhandlers
 		{
 			init="";
