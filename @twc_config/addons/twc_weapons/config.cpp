@@ -20,7 +20,7 @@ class CfgPatches
 	
 class cfgWeapons
 {
-	class hlc_rifle_L1A1SLR;
+	class UK3CB_BAF_L1A1_Wood;
 	class UK3CB_BAF_L85A2;
 	class UK3CB_BAF_L85A2_RIS_AFG;
 	class UK3CB_BAF_L85A2_RIS;
@@ -49,7 +49,7 @@ class cfgWeapons
 		mass = 10;
 	};
 	
-	class twc_L1A1_SUIT:hlc_rifle_L1A1SLR
+	class twc_L1A1_SUIT:UK3CB_BAF_L1A1_Wood
 	{
 		scope = 1;
 		author = "jayman";
@@ -58,7 +58,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot = "CowsSlot";
-				item= "hlc_optic_suit";
+				item= "UK3CB_BAF_SUIT";
 			};
 		};
 	};

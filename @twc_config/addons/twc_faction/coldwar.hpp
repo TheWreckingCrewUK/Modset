@@ -28,7 +28,7 @@
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1",
 		"HAFM_LAW"		
 		};
@@ -36,7 +36,7 @@
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1",
 		"HAFM_LAW"	
 		};
@@ -309,14 +309,14 @@
 		{
 		"Throw",
 		"Put",
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"tf47_m3maaws"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"TWC_Carl_Gustav"
 		};
 		magazines[]=
@@ -451,13 +451,13 @@
 		{
 	    "Throw",
 		"Put",
-		"hlc_rifle_L1A1SLR"
+		"UK3CB_BAF_L1A1_Wood"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR"
+		"UK3CB_BAF_L1A1_Wood"
 		};
 		magazines[]=
 		{
@@ -592,14 +592,14 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR"
+		"UK3CB_BAF_L1A1_Wood"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR"
+		"UK3CB_BAF_L1A1_Wood"
 		};
 		magazines[]=
 		{
@@ -867,13 +867,13 @@
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR"
+		"UK3CB_BAF_L1A1_Wood"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR"
+		"UK3CB_BAF_L1A1_Wood"
 		};
 		magazines[]=
 		{
@@ -1006,7 +1006,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1"
 		};
 		respawnweapons[]=
@@ -1014,7 +1014,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1"
 		};
 		magazines[]=
@@ -1146,7 +1146,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1"
 		};
 		respawnweapons[]=
@@ -1154,7 +1154,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1"
 		};
 		magazines[]=
@@ -1286,7 +1286,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1"
 		};
 		respawnweapons[]=
@@ -1294,7 +1294,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1"
 		};
 		magazines[]=
@@ -1423,13 +1423,13 @@
 		{
 		"Throw",
 		"Put",
-		"hlc_rifle_L1A1SLR"
+		"UK3CB_BAF_L1A1_Wood"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR"
+		"UK3CB_BAF_L1A1_Wood"
 		};
 		magazines[]=
 		{
@@ -1551,7 +1551,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1"
 		};
 		respawnweapons[]=
@@ -1559,7 +1559,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1"
 		};
 		magazines[]=
@@ -1949,14 +1949,14 @@
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"FIMStingerA"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"FIMStingerA"
 		};
 		magazines[]=
@@ -2085,13 +2085,13 @@
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR"
+		"UK3CB_BAF_L1A1_Wood"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR"
+		"UK3CB_BAF_L1A1_Wood"
 		};
 		magazines[]=
 		{
@@ -2216,14 +2216,14 @@
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"TWC_Milan_Tripod_Disassemabled"	
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"TWC_Milan_Tripod_Disassemabled"
 		};
 		magazines[]=
@@ -2348,14 +2348,14 @@
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"TWC_Milan_Launcher_Disassemabled"	
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"hlc_rifle_L1A1SLR",
+		"UK3CB_BAF_L1A1_Wood",
 		"TWC_Milan_Launcher_Disassemabled"
 		};
 		magazines[]=
