@@ -7,12 +7,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_1990_Sectionlead";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Officer_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW2",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -21,7 +21,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Officer_Vest_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -137,8 +137,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Rifleman";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW5",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -147,7 +147,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW5",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -245,12 +245,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_1990_Grenadier";
 		linkedItems[]=
 		{
-        "BAF_Soldier_gl_Vest_W_DG1",
-		"BAF_Soldier_gl_Headgear_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW3",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -259,8 +259,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_gl_Vest_W_DG1",
-		"BAF_Soldier_gl_Headgear_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW3",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -358,12 +358,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="Modern_British";
 		icon="iconManMG";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_1990_Gunner";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW5",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -372,7 +372,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW5",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -468,12 +468,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_1990_2IC";
 		linkedItems[]=
 		{
-        "BAF_Soldier_2_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW2",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -482,7 +482,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_2_Vest_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -584,12 +584,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_1990_Platoon_Command";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW4",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -598,7 +598,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW4",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -711,12 +711,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_1990_Platoon_Sergeant";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW4",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -725,7 +725,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW4",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -838,12 +838,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_1990_Medic";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW9",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -852,7 +852,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW9",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -948,7 +948,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_Cold_War_Pilot";
 		linkedItems[]=
 		{
@@ -1182,12 +1182,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_1990_Milan";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW4",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1196,7 +1196,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW4",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1294,12 +1294,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_1990_Milan";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
-		"BAF_Soldier_1_Headgear_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW4",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1308,7 +1308,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_W_DG1",
+        "UK3CB_BAF_V_Osprey_DPMW4",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1412,12 +1412,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_Desert_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM";
 		backpack="TWC_Backpack_1990_Sectionlead";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Officer_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM2",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1426,7 +1426,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Officer_Vest_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1538,12 +1538,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_Desert_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM";
 		backpack="TWC_Backpack_1990_Rifleman";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM2",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1552,7 +1552,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1650,12 +1650,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_Desert_British";
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM";
 		backpack="TWC_Backpack_1990_Grenadier";
 		linkedItems[]=
 		{
-        "BAF_Soldier_gl_Vest_D_DG1",
-		"BAF_Soldier_gl_Headgear_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM3",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1664,8 +1664,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_gl_Vest_D_DG1",
-		"BAF_Soldier_gl_Headgear_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM3",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1763,12 +1763,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_Desert_British";
 		icon="iconManMG";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM";
 		backpack="TWC_Backpack_1990_Gunner";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM5",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1777,7 +1777,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM5",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1873,12 +1873,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_Desert_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM";
 		backpack="TWC_Backpack_1990_2IC";
 		linkedItems[]=
 		{
-        "BAF_Soldier_2_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM4",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1887,7 +1887,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_2_Vest_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM4",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1989,12 +1989,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_Desert_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM";
 		backpack="TWC_Backpack_1990_Platoon_Command";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM4",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -2003,7 +2003,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM4",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -2116,11 +2116,11 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_Desert_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM";
 		backpack="TWC_Backpack_1990_Platoon_Sergeant";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM4",
 		"BAF_Soldier_1_Headgear_D_DG1",
 		"ItemMap",
 		"ItemCompass",
@@ -2130,7 +2130,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM4",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -2242,12 +2242,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_Desert_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM";
 		backpack="TWC_Backpack_1990_Medic";
 		linkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM9",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -2256,7 +2256,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_Light_Vest_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM9",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -2352,7 +2352,7 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		vehicleClass="1990_British_Desert";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_D_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM";
 		backpack="TWC_Backpack_Cold_War_Pilot";
 		linkedItems[]=
 		{
@@ -2447,12 +2447,12 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		vehicleClass="1990_Desert_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM";
 		backpack="TWC_Backpack_1990_Milan";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM2",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -2461,7 +2461,7 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -2559,12 +2559,12 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		vehicleClass="1990_Desert_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_R_D_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM";
 		backpack="TWC_Backpack_1990_Milan";
 		linkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
-		"BAF_Soldier_1_Headgear_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM2",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -2573,7 +2573,7 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		};
 		respawnLinkedItems[]=
 		{
-        "BAF_Soldier_1_Vest_D_DG1",
+        "UK3CB_BAF_V_Osprey_DDPM2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
