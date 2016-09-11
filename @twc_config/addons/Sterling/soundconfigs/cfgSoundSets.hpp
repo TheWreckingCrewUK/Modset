@@ -47,4 +47,38 @@ class Sterling_Tail_SoundSet
 		doppler = false;
 		loop = false;
 	};
+class Sterling_silencerShot_SoundSet
+	{
+		soundShaders[] =
+		{
+			Sterling_silencerShot_SoundShader
+		};
+
+		volumeFactor = 1;
+		volumeCurve = Sterling_InverseSquareCurve;
+		spatial = true;
+		doppler = false;
+		loop = false;
+		sound3DProcessingType = Sterling_Shot3DProcessingType;
+	};
+
+class Sterling_silencerTail_SoundSet
+	{
+		soundShaders[] =
+		{
+			Sterling_silencerTailTrees_SoundShader,
+			Sterling_silencerTailForest_SoundShader,
+			Sterling_silencerTailMeadows_SoundShader,
+			Sterling_silencerTailHouses_SoundShader,
+			Sterling_silencerTailInterior_SoundShader
+		};
+
+		volumeFactor = 0.7;
+		volumeCurve = Sterling_InverseSquareCurve;
+		spatial = true;
+		doppler = false;
+		loop = false;
+		soundShadersLimit = 2;
+		sound3DProcessingType = Sterling_ShotTail3DProcessingType;
+	};
 };

@@ -45,9 +45,9 @@
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -61,9 +61,9 @@
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",	
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -185,9 +185,9 @@
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd_T",
+		"UK3CB_BAF_762_20Rnd_T",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -201,9 +201,9 @@
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",	
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd_T",
+		"UK3CB_BAF_762_20Rnd_T",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -321,12 +321,12 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",		
 		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
@@ -338,12 +338,12 @@
 		};
 		Respawnmagazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
@@ -461,12 +461,12 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",				
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",				
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -477,12 +477,12 @@
 		};
 		Respawnmagazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",				
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",				
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -603,12 +603,12 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",			
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",			
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -619,12 +619,12 @@
 		};
 		Respawnmagazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",				
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",				
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -741,9 +741,9 @@
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_75Rnd_T",
-		"UK3CB_BAF_75Rnd",
-		"UK3CB_BAF_75Rnd",	
+		"UK3CB_BAF_762_100Rnd_T",
+		"UK3CB_BAF_762_100Rnd",
+		"UK3CB_BAF_762_100Rnd",	
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -757,9 +757,9 @@
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_75Rnd_T",
-		"UK3CB_BAF_75Rnd",
-		"UK3CB_BAF_75Rnd",	
+		"UK3CB_BAF_762_100Rnd_T",
+		"UK3CB_BAF_762_100Rnd",
+		"UK3CB_BAF_762_100Rnd",	
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -877,11 +877,11 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",				
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",				
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -892,11 +892,11 @@
 		};
 		Respawnmagazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",				
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",				
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -1019,8 +1019,8 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1034,8 +1034,8 @@
 		};
 		Respawnmagazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1159,8 +1159,8 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1174,8 +1174,8 @@
 		};
 		Respawnmagazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1299,8 +1299,8 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1314,8 +1314,8 @@
 		};
 		Respawnmagazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1433,8 +1433,8 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",		
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",		
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -1443,8 +1443,8 @@
 		};
 		Respawnmagazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",	
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",	
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -1567,9 +1567,9 @@
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -1593,9 +1593,9 @@
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -1961,10 +1961,10 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -1976,10 +1976,10 @@
 		};
 		Respawnmagazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2095,10 +2095,10 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2109,10 +2109,10 @@
 		};
 		Respawnmagazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2228,9 +2228,9 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2241,9 +2241,9 @@
 		};
 		Respawnmagazines[]=
 		{	
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2360,9 +2360,9 @@
 		};
 		magazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2373,9 +2373,9 @@
 		};
 		Respawnmagazines[]=
 		{
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
-		"hlc_20Rnd_762x51_B_fal",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",

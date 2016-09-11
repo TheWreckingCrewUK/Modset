@@ -109,4 +109,86 @@ class CfgSoundShaders
 		range = 1200;
 		limitation = true; // this SoundShader belongs to the group of limited SoundShaders
 	};
+
+
+// Silenced shaders ---------------------------------------------------------------------------------------------------------------------------
+
+	class Sterling_silencerShot_SoundShader
+	{
+		samples[] =
+		{
+			{ "sterling\sounds\uzi_sd_s1", 1 },
+			{ "sterling\sounds\uzi_sd_s1", 1 },
+			{ "sterling\sounds\uzi_sd_s1", 1 }
+		};
+		volume = db0;
+		range = 150;
+		rangeCurve = closeShotCurve;
+	};
+
+	class Sterling_silencerTailTrees_SoundShader
+	{
+		samples[] = { { "sterling\sounds\uzi_sd_s1", 1 } };
+		volume = (1-interior/1.4)*forest/3;
+		range = 150;
+		rangeCurve[] =
+		{
+			{0, 1},
+			{150, 0.3}
+		};
+		limitation = true;
+	};
+
+	class Sterling_silencerTailForest_SoundShader
+	{
+		samples[] = { { "sterling\sounds\uzi_sd_s1", 1 } };
+		volume = (1-interior/1.4)*houses/3;
+		range = 150;
+		rangeCurve[] =
+		{
+			{0, 1},
+			{150, 0}
+		};
+		limitation = true;
+	};
+
+	class Sterling_silencerTailMeadows_SoundShader
+	{
+		samples[] = { { "sterling\sounds\uzi_sd_s1", 1 } };
+		volume = interior;
+		range = 150;
+		rangeCurve[] =
+		{
+			{0, 1},
+			{50, 0.3},
+			{150, 0}
+		};
+		limitation = true;
+	};
+
+	class Sterling_silencerTailHouses_SoundShader
+	{
+		samples[] = { { "sterling\sounds\uzi_sd_s1", 1 } };
+		volume = (1-interior/1.4)*(meadows/2 max sea/2)/3;
+		range = 150;
+		rangeCurve[] =
+		{
+			{0, 1},
+			{150, 0.3}
+		};
+		limitation = true;
+	};
+
+	class Sterling_silencerTailInterior_SoundShader
+	{
+		samples[] = { { "sterling\sounds\uzi_sd_s1", 1 } };
+		volume = (1-interior/1.4)*trees/3;
+		range = 150;
+		rangeCurve[] =
+		{
+			{0, 1},
+			{150, 0.3}
+		};
+		limitation = true;
+	};
 };

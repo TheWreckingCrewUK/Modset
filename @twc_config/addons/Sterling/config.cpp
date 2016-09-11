@@ -1,7 +1,7 @@
-#include "basicdefines_A3.hpp"
+#include "basicdefines_a3.hpp"
 class CfgPatches
 {
-	class Test_weapon_F
+	class TWC_Sterling
 	{
 		units[]={};
 		weapons[]={"TWC_Sterling_Sub"};
@@ -21,9 +21,9 @@ class CowsSlot;
 class PointerSlot;
 class UnderBarrelSlot;
 
-#include "cfgRecoils.hpp" /// specific recoil patterns for this rifle
-#include "cfgMagazines.hpp" /// specific magazines for this rifle
-#include "cfgAmmo.hpp" /// specific ammo for this rifle
+#include "cfgrecoils.hpp" /// specific recoil patterns for this rifle
+#include "cfgmagazines.hpp" /// specific magazines for this rifle
+#include "cfgammo.hpp" /// specific ammo for this rifle
 
 class CfgWeapons
 {
@@ -67,7 +67,7 @@ class CfgWeapons
 			class MuzzleSlot: MuzzleSlot
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE"; 	/// this can be set, but having some common helps a bit
-				compatibleItems[] = {"test_suppressor"}; 				/// A custom made suppressor for this weapon
+				compatibleItems[] = {"muzzle_snds_L"}; 	     			/// A custom made suppressor for this weapon
 				iconPosition[] = {0.0, 0.45};							/// position of the slot icon inside of the weapon icon, relative to top-left corner in {right, down} format
 				iconScale = 0.2;										/// scale of icon described in iconPicture
 				iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa"; 	/// icon for selected slot
@@ -87,7 +87,7 @@ class CfgWeapons
 			{
 				iconPosition[] = {0.2, 0.7};
 				iconScale = 0.2;
-				compatibleItems[] = {"test_bipod_01_F"};
+				compatibleItems[] = {"bipod_01_F_blk"};
 			};
 		};
 
@@ -116,6 +116,11 @@ class CfgWeapons
 
 		class Single: Mode_SemiAuto /// Pew
 		{
+			sounds[] =
+			{
+				StandardSound, // default sound
+				SilencedSound // silenced sound - weapon with silencer on
+			};
 			// the new parameter to distinguish muzzle accessories type
 			class StandardSound
 			{
@@ -127,6 +132,14 @@ class CfgWeapons
 				{
 					Sterling_Shot_SoundSet,
 					Sterling_Tail_SoundSet
+				};
+			};
+			class SilencedSound
+			{
+				soundSetShot[] =
+				{
+					Sterling_silencerShot_SoundSet,
+					Sterling_silencerTail_SoundSet
 				};
 			};
 
@@ -143,12 +156,25 @@ class CfgWeapons
 
 		class FullAuto: Mode_FullAuto /// Pew-pew-pew-pew-pew
 		{
+			sounds[] =
+			{
+				StandardSound,
+				SilencedSound
+			};
 			class StandardSound
 			{
 				soundsetShot[] =
 				{
 					Sterling_Shot_SoundSet,
 					Sterling_Tail_SoundSet
+				};
+			};
+			class SilencedSound
+			{
+				soundSetShot[] =
+				{
+					Sterling_silencerShot_SoundSet,
+					Sterling_silencerTail_SoundSet
 				};
 			};
 
@@ -216,7 +242,7 @@ class CfgWeapons
 		displayName = "Sterling"; /// some name
 		model = "\sterling\TWC_Sterling_sub.p3d"; /// path to model
 
-		picture = "\Samples_f\Test_weapon_01\Data\UI\gear_test_weapon_01_X_CA.paa"; /// different accessories have M, S, T instead of X
+		picture = "\sterling\Data\w_sterling_ca.paa"; /// different accessories have M, S, T instead of X
 		UiPicture = "\sterling\Data\w_sterling_ca.paa"; /// weapon with grenade launcher should be marked such way
 
 		weaponInfoType = "RscWeaponZeroing"; /// display with zeroing is good for iron sights

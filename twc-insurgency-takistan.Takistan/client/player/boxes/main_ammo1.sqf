@@ -572,9 +572,9 @@ if (g_class == "ANA_SL") then {
 
 	_tmp_magazines =
     [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+        ["UK3CB_BAF_9_17Rnd",15]
     ];
 
     _tmp_items = 
@@ -593,7 +593,7 @@ if (g_class == "ANA_SL") then {
 		["ACE_surgicalKit", 50],
 		["ACE_tourniquet", 5],
 		["ACE_epinephrine",5],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
@@ -616,9 +616,9 @@ if (g_class == "ANA_SL") then {
 
 	_tmp_magazines =
     [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+        ["UK3CB_BAF_9_17Rnd",15]
     ];
 
     _tmp_items = 
@@ -635,7 +635,7 @@ if (g_class == "ANA_SL") then {
 		["ACE_bodyBag",10],
 		["ACE_surgicalKit", 50],
 		["ACE_tourniquet", 5],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
 	    ["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
@@ -830,8 +830,8 @@ if (g_class == "POL_SL") then {
     [	
 		["ACC_30Rnd_556x45_Beryl",50],
 		["ACC_30Rnd_556x45_Beryl_T",50],
-		["UK3CB_BAF_L128A1_Pellets",10],
-		["UK3CB_BAF_L128A1_Slugs",10],
+		["UK3CB_BAF_12G_Pellets",10],
+		["UK3CB_BAF_12G_Slugs",10],
 		["ACC_16Rnd_9x19_Wist_Mag",15]
 	];
 

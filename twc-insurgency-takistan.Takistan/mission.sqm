@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=612;
+		nextID=657;
 	};
 	class Camera
 	{
-		pos[]={5804.1577,641.60962,10799.309};
-		dir[]={-0.33242047,-0.45927343,-0.82388556};
-		up[]={-0.17191344,0.88820654,-0.42606673};
-		aside[]={-0.92746919,-9.4505958e-007,0.37422374};
+		pos[]={5954.5356,132.86983,11658.615};
+		dir[]={0.44246149,-0.57563317,-0.68777657};
+		up[]={0.31142801,0.81771582,-0.48409316};
+		aside[]={-0.84107256,6.7055225e-007,-0.54107827};
 	};
 };
 binarizationWanted=0;
@@ -94,6 +94,7 @@ addons[]=
 	"A3_Structures_F_Civ_InfoBoards",
 	"UK3CB_BAF_Vehicles_Weapons",
 	"UK3CB_BAF_Vehicles_Merlin",
+	"UK3CB_BAF_Weapons",
 	"CUP_CAMisc_E_WF",
 	"CUP_WheeledVehicles_Wolfhound",
 	"CUP_WheeledVehicles_Coyote",
@@ -105,7 +106,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=53;
+		items=54;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -138,6 +139,7 @@ class AddonsMetaData
 		{
 			className="acre_api";
 			name="acre_api";
+			author="ACRE2 Team";
 		};
 		class Item5
 		{
@@ -393,34 +395,41 @@ class AddonsMetaData
 		};
 		class Item47
 		{
+			className="UK3CB_BAF_Weapons";
+			name="3CB BAF Weapons - Ammo";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item48
+		{
 			className="CUP_CAMisc_E_WF";
 			name="CUP_CAMisc_E_WF";
 		};
-		class Item48
+		class Item49
 		{
 			className="CUP_WheeledVehicles_Wolfhound";
 			name="CUP_WheeledVehicles_Wolfhound";
 		};
-		class Item49
+		class Item50
 		{
 			className="CUP_WheeledVehicles_Coyote";
 			name="CUP_WheeledVehicles_Coyote";
 		};
-		class Item50
+		class Item51
 		{
 			className="RHS_US_A2Port_Armor";
 			name="M2 Bradley IFV";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item51
+		class Item52
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item52
+		class Item53
 		{
 			className="CUP_AirVehicles_MV22";
 			name="CUP_AirVehicles_MV22";
@@ -1392,6 +1401,25 @@ class Mission
 				};
 				class Attribute2
 				{
+					property="acre_api_DifficultySettings_IgnoreAntennaDirection";
+					expression="_this setVariable ['IgnoreAntennaDirection',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
 					property="acre_api_DifficultySettings_FullDuplex";
 					expression="_this setVariable ['FullDuplex',_value,true];";
 					class Value
@@ -1409,7 +1437,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=4;
 			};
 		};
 		class Item18
@@ -4793,7 +4821,6 @@ class Mission
 						rank="SERGEANT";
 						name="p1";
 						description="Alpha Section Lead";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3134;
@@ -5201,6 +5228,7 @@ class Mission
 						rank="CORPORAL";
 						name="p6";
 						description="Alpha  Machine Gunner";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=3139;
@@ -15201,12 +15229,13 @@ class Mission
 				position[]={5983.8599,83.554192,11381.872};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3520;
 			type="Land_Bandage_F";
-			atlOffset=0.48899841;
+			atlOffset=0.0079040527;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15258,12 +15287,13 @@ class Mission
 				position[]={5983.7168,83.554192,11381.896};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3521;
 			type="Land_Bandage_F";
-			atlOffset=0.48899841;
+			atlOffset=0.0079040527;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15315,12 +15345,13 @@ class Mission
 				position[]={5983.834,83.554192,11381.717};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3522;
 			type="Land_Bandage_F";
-			atlOffset=0.48899841;
+			atlOffset=0.0079040527;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17332,7 +17363,6 @@ class Mission
 					{
 						name="humanCiv1";
 						description="TWC Member Slot - Civilian [10]";
-						isPlayable=1;
 					};
 					id=3682;
 					type="C_man_polo_2_F";
@@ -17425,7 +17455,6 @@ class Mission
 					{
 						name="humanCiv2";
 						description="TWC Member Slot - Civilian [15]";
-						isPlayable=1;
 					};
 					id=3685;
 					type="C_man_polo_4_F";
@@ -17520,7 +17549,6 @@ class Mission
 					{
 						name="humanCiv3";
 						description="TWC Member Slot - Civilian [20]";
-						isPlayable=1;
 					};
 					id=3686;
 					type="C_man_polo_2_F";
@@ -22622,17 +22650,12 @@ class Mission
 		class Item398
 		{
 			dataType="Marker";
-			position[]=
-			{
-				5628.3721,
-				1.#QNAN,
-				9898.7148
-			};
+			position[]={5628.3721,1,9898.7148};
 			name="extraNorthBastam";
 			type="Empty";
 			colorName="ColorRed";
 			id=4913;
-			atlOffset=1.#QNAN;
+			atlOffset=-73.189003;
 		};
 		class Item399
 		{
@@ -22647,17 +22670,12 @@ class Mission
 		class Item400
 		{
 			dataType="Marker";
-			position[]=
-			{
-				12340.31,
-				1.#QNAN,
-				11211.96
-			};
+			position[]={12340.31,1,11211.96};
 			name="extraNorthKarachinar";
 			type="Empty";
 			colorName="ColorRed";
 			id=4915;
-			atlOffset=1.#QNAN;
+			atlOffset=-114.77815;
 		};
 	};
 	class Connections

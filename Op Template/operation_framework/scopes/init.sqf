@@ -7,11 +7,11 @@ Switch (typeof player) do {
 	case "Mechanized_British_2IC" : {execVM "operation_framework\scopes\modern.sqf"};
 	case "Modern_British_Platoon_Commander" : {execVM "operation_framework\scopes\modern.sqf"};
 	case "Modern_British_Platoon_Sergeant" : {execVM "operation_framework\scopes\modern.sqf"};
-	case "Modern_British__Coin_Squadleader" : {execVM "operation_framework\scopes\modern.sqf"};
-	case "Modern_British__Coin_Pointman" : {execVM "operation_framework\scopes\modern.sqf"};
-	case "Modern_British__Coin_Grenadier" : {execVM "operation_framework\scopes\modern.sqf"};
-	case "Modern_British__Coin_Automaticrifleman" : {execVM "operation_framework\scopes\modern.sqf"};
-	case "Modern_British__Coin_2IC" : {execVM "operation_framework\scopes\modern.sqf"};
+	case "Modern_British_Coin_Squadleader" : {execVM "operation_framework\scopes\modern.sqf"};
+	case "Modern_British_Coin_Pointman" : {execVM "operation_framework\scopes\modern.sqf"};
+	case "Modern_British_Coin_Grenadier" : {execVM "operation_framework\scopes\modern.sqf"};
+	case "Modern_British_Coin_Automaticrifleman" : {execVM "operation_framework\scopes\modern.sqf"};
+	case "Modern_British_Coin_2IC" : {execVM "operation_framework\scopes\modern.sqf"};
 	case "Modern_British_Coin_Platoon_Commander" : {execVM "operation_framework\scopes\modern.sqf"};
 	case "Modern_British_Coin_Platoon_Sergeant" : {execVM "operation_framework\scopes\modern.sqf"};
 	case "ColdWar_Section_Leader" : {};

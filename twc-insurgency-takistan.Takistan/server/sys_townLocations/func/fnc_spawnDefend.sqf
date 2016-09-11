@@ -18,7 +18,7 @@ params["_pos"];
 _random = random 100;
 if (_random < 75) then {
 	if (isServer) then {
-		_buildings = nearestObjects[_pos,["house","buildings"],400];
+		_buildings = nearestObjects[_pos,["house","buildings"],200];
 		_spawnPos = _buildings call BIS_fnc_selectRandom;
 		_spawnPos = getPos _spawnPos;
 		_groupSpawn = [_spawnPos, East, townSpawn,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
@@ -37,7 +37,7 @@ if (_random < 75) then {
 
 if (_random < 50) then {
 	if (isServer) then {
-		_buildings = nearestObjects[_pos,["house","buildings"],400];
+		_buildings = nearestObjects[_pos,["house","buildings"],200];
 		_spawnPos = _buildings call BIS_fnc_selectRandom;
 		_spawnPos = getPos _spawnPos;
 		_groupSpawn = [_spawnPos, East, townSpawn,[],[],[],[],[],180] call BIS_fnc_spawnGroup;

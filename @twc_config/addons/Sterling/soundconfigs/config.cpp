@@ -1,7 +1,7 @@
-#include "cfgPatches.hpp"
+#include "cfgpatches.hpp"
 
-#include "cfgSoundCurves.hpp" // attenuation curves
-#include "cfgSoundShaders.hpp" // SoundShaders
-#include "cfgSoundSets.hpp" // SoundSets
-#include "cfgSound3DProcessors.hpp" // 3D processors configuration
-#include "cfgSoundFilters.hpp" // DSP filters configuration
+#include "cfgsoundcurves.hpp" // attenuation curves
+#include "cfgsoundshaders.hpp" // SoundShaders
+#include "cfgsoundsets.hpp" // SoundSets
+#include "cfgsound3dprocessors.hpp" // 3D processors configuration
+#include "cfgsoundfilters.hpp" // DSP filters configuration

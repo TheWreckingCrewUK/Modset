@@ -35,11 +35,8 @@ player addWeapon "UK3CB_BAF_L22A2";
 
 comment "Add items";
 player linkItem "ItemMap";
+player linkItem "itemCTAB";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadioAcreFlagged";
 player linkItem "rhsusf_ANPVS_14";
-
-comment "Set identity";
-player setFace "WhiteHead_13";
-player setSpeaker "Male10ENG";

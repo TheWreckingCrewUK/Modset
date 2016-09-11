@@ -32,6 +32,7 @@ player addWeapon "rhs_weap_m4_carryhandle";
 
 comment "Add items";
 player linkItem "ItemMap";
+player linkItem "itemCTAB";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadioAcreFlagged";

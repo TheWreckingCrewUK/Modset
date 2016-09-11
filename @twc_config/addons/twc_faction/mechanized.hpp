@@ -44,14 +44,14 @@
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"smokeshell"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"smokeshell"
 		};
 		Items[]=
@@ -133,15 +133,15 @@
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"smokeshell",
 		"smokeshell"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"smokeshell",
 		"smokeshell"
 		};
@@ -223,12 +223,12 @@
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",		
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -237,12 +237,12 @@
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",		
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",

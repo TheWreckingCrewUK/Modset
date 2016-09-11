@@ -16,13 +16,13 @@ call compile preprocessFileLineNumbers "Mine_detector\functions.sqf";
 
 
 
-_MineList = ["thisStartsTheList","VMH3-Vallon","", {},{true}] call ace_interact_menu_fnc_createAction;
+_MineList = ["thisStartsTheMinesweeper","VMH3-Vallon","", {},{true}] call ace_interact_menu_fnc_createAction;
 _createflag = ['Mineflag','Place Mine Marker','',{createVehicle ["FlagSmall_F", getpos ((call MDET_fnc_getNearestMine) select 0), [], 0];_veh = createVehicle ["FlagSmall_F", getpos ((call MDET_fnc_getNearestMine) select 0), [], 0, "NONE"];},{call MDET_fnc_canDetect}] call ace_interact_menu_fnc_createAction;
 _on = ['ON/OFFs','On/Off','',{ call MDET_fnc_switchState },{call MDET_fnc_canDetect}] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], _MineList] call ace_interact_menu_fnc_addActionToObject;
-[player, 1, ["ACE_SelfActions", "thisStartsTheList"], _createflag] call ace_interact_menu_fnc_addActionToObject;
-[player, 1, ["ACE_SelfActions", "thisStartsTheList"], _on] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheMinesweeper"], _createflag] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheMinesweeper"], _on] call ace_interact_menu_fnc_addActionToObject;
 
 
 

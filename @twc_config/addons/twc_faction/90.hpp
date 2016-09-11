@@ -49,12 +49,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -63,12 +63,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -170,9 +170,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -181,9 +181,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -282,9 +282,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		magazines[]=
 		{
 		"1Rnd_HE_Grenade_shell",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -294,9 +294,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		Respawnmagazines[]=
 		{
 		"1Rnd_HE_Grenade_shell",	
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -393,9 +393,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -404,9 +404,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -505,11 +505,11 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -518,11 +518,11 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -626,12 +626,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -640,12 +640,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -753,12 +753,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -767,12 +767,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -869,13 +869,13 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_30Rnd"
+		"UK3CB_BAF_556_30Rnd"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -884,9 +884,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -978,15 +978,15 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -1219,9 +1219,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -1230,9 +1230,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -1331,9 +1331,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -1342,9 +1342,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -1454,12 +1454,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -1468,12 +1468,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -1575,9 +1575,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -1586,9 +1586,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -1687,9 +1687,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		magazines[]=
 		{
 		"1Rnd_HE_Grenade_shell",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -1699,9 +1699,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		Respawnmagazines[]=
 		{
 		"1Rnd_HE_Grenade_shell",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -1798,9 +1798,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -1809,9 +1809,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -1910,11 +1910,11 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",		
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -1923,11 +1923,11 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",		
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -2031,12 +2031,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -2045,12 +2045,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -2158,12 +2158,12 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -2172,11 +2172,11 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -2277,9 +2277,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2288,9 +2288,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -2382,15 +2382,15 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -2484,9 +2484,9 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -2495,9 +2495,9 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -2596,9 +2596,9 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -2607,9 +2607,9 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",

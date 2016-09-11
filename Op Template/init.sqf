@@ -31,6 +31,9 @@
 /////////////////////////////////////////////////////////*/
 
 [] execVM "operation_framework\zeus\Zeus.sqf";
+[] execVM "operation_framework\zeus\Zeus-jayman.sqf";
+[] execVM "operation_framework\zeus\Zeus-Mallas.sqf";
+[] execVM "operation_framework\zeus\Zeus-Paddock.sqf";
 
 /*/////////////////////////////////////////////////////////
 /                           scope                         /

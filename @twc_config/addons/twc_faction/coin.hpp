@@ -50,27 +50,27 @@
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -154,13 +154,13 @@
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -169,13 +169,13 @@
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -259,14 +259,14 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",		
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -275,14 +275,14 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",		
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -364,9 +364,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
 		"UK3CB_BAF_200Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
@@ -376,9 +376,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
 		"UK3CB_BAF_200Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
@@ -461,15 +461,15 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",		
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -478,15 +478,15 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",		
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",		
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -565,9 +565,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -576,9 +576,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -662,9 +662,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -673,9 +673,9 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
@@ -758,29 +758,29 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -867,30 +867,30 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd_T",
-		"UK3CB_BAF_30Rnd_T",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -972,10 +972,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",
@@ -984,10 +984,10 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_30Rnd",
-		"UK3CB_BAF_17Rnd_9mm",
-		"UK3CB_BAF_17Rnd_9mm",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell",

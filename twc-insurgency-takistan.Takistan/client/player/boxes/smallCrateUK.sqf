@@ -24,25 +24,25 @@ _box AddWeaponCargoGlobal ["rhs_weap_m72a7",2];
 
 
 //supplies
-_box AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",1];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",3];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd_T",1];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd",3];
 
-_box AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",20];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",5];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",20];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",5];
 
 _box AddMagazineCargoGlobal ["UGL_FlareWhite_F",5];
 _box AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",20];
 _box AddMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",5];
 
-_box AddMagazineCargoGlobal ["UK3CB_BAF_200Rnd",3];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_556_200Rnd",3];
 _box AddMagazineCargoGlobal ["UK3CB_BAF_200Rnd_T",1];
 
-_box AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd_T",2];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd",5];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_762_L42A1_20Rnd_T",2];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_762_L42A1_20Rnd",5];
 
-_box AddMagazineCargoGlobal ["UK3CB_BAF_17Rnd_9mm",10];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Pellets",8];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Slugs",8];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_9_17Rnd",10];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_12G_Pellets",8];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_12G_Slugs",8];
 
 _box addItemCargoGlobal ["ACE_fieldDressing",20];
 _box addItemCargoGlobal ["ACE_elasticBandage",20];

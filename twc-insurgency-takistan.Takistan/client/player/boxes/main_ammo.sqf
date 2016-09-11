@@ -32,9 +32,9 @@ if (g_class == "BAF_SL") then {
 
 	_tmp_magazines =
     [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15],
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+        ["UK3CB_BAF_9_17Rnd",15],
 		["HandGrenade",5]
     ];
 
@@ -42,7 +42,7 @@ if (g_class == "BAF_SL") then {
 	[
         ["ACE_MapTools",1],
 		["ACE_epinephrine",5],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["SatchelCharge_Remote_Mag",1],
@@ -76,18 +76,18 @@ if (g_class == "BAF_SL") then {
 
     _tmp_magazines =
     [	
-		["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-		["UK3CB_BAF_L128A1_Pellets",10],
-		["UK3CB_BAF_L128A1_Slugs",10],
-		["UK3CB_BAF_17Rnd_9mm",15],
+		["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+		["UK3CB_BAF_12G_Pellets",10],
+		["UK3CB_BAF_12G_Slugs",10],
+		["UK3CB_BAF_9_17Rnd",15],
 		["HandGrenade",5]
 	];
 
 	_tmp_items = 
 	[
 		["ACE_MapTools",1],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
@@ -113,9 +113,9 @@ if (g_class == "BAF_SL") then {
 
     _tmp_magazines =
     [           
-		["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-		["UK3CB_BAF_17Rnd_9mm",15],
+		["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+		["UK3CB_BAF_9_17Rnd",15],
 		["1Rnd_HE_Grenade_shell", 40],
 		["1Rnd_Smoke_Grenade_shell", 10],
 		["1Rnd_SmokeRed_Grenade_shell", 10],
@@ -130,7 +130,7 @@ if (g_class == "BAF_SL") then {
 	_tmp_items =
 	[
 		["ACE_MapTools",1],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
@@ -154,16 +154,16 @@ if (g_class == "BAF_SL") then {
 
 	_tmp_magazines =
    [            
-		["UK3CB_BAF_200Rnd",20],
+		["UK3CB_BAF_556_200Rnd",20],
 		["UK3CB_BAF_200Rnd_T",10],
-        ["UK3CB_BAF_17Rnd_9mm",15],
+        ["UK3CB_BAF_9_17Rnd",15],
 		["HandGrenade",5]
     ];
 
 	_tmp_items =
 	[
         ["ACE_MapTools",1],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
@@ -186,21 +186,21 @@ if (g_class == "BAF_SL") then {
 
     _tmp_magazines =
     [	
-		["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-		["UK3CB_BAF_75Rnd",5],
-		["UK3CB_BAF_75Rnd_T",5],
-		["UK3CB_BAF_20Rnd",10],
-		["UK3CB_BAF_200Rnd",5],
+		["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+		["UK3CB_BAF_762_100Rnd",5],
+		["UK3CB_BAF_762_100Rnd_T",5],
+		["UK3CB_BAF_762_L42A1_20Rnd",10],
+		["UK3CB_BAF_556_200Rnd",5],
 		["UK3CB_BAF_200Rnd_T",5],
-		["UK3CB_BAF_17Rnd_9mm",15],
+		["UK3CB_BAF_9_17Rnd",15],
 		["HandGrenade",5]
 	];
 
 	_tmp_items = 
 	[
 		["ACE_MapTools",1],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
@@ -223,9 +223,9 @@ if (g_class == "BAF_SL") then {
        
     _tmp_magazines =
     [
-        ["UK3CB_BAF_75Rnd",20],
-		["UK3CB_BAF_75Rnd_T",10],
-		["UK3CB_BAF_17Rnd_9mm",15],
+        ["UK3CB_BAF_762_100Rnd",20],
+		["UK3CB_BAF_762_100Rnd_T",10],
+		["UK3CB_BAF_9_17Rnd",15],
 		["HandGrenade",5]
     ];
 	
@@ -252,9 +252,9 @@ if (g_class == "BAF_SL") then {
        
     _tmp_magazines =
     [
-        ["UK3CB_BAF_20Rnd",25],
-		["UK3CB_BAF_20Rnd_T",10],			
-		["UK3CB_BAF_17Rnd_9mm",15],
+        ["UK3CB_BAF_762_L42A1_20Rnd",25],
+		["UK3CB_BAF_762_L42A1_20Rnd_T",10],			
+		["UK3CB_BAF_9_17Rnd",15],
 		["HandGrenade",5]
     ];
 		
@@ -282,9 +282,9 @@ if (g_class == "BAF_SL") then {
 
     _tmp_magazines =
 	[
-		["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15],
+		["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+        ["UK3CB_BAF_9_17Rnd",15],
 		["HandGrenade",5]
     ];
 
@@ -302,7 +302,7 @@ if (g_class == "BAF_SL") then {
 		["ACE_bodyBag",10],
 		["ACE_surgicalKit", 50],
 		["ACE_tourniquet", 5],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_SpecterLDS_Dot",1],
 	    ["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
@@ -1015,9 +1015,9 @@ if (g_class == "ANA_SL") then {
 
 	_tmp_magazines =
     [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15],
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+        ["UK3CB_BAF_9_17Rnd",15],
 		["HandGrenade",5]
     ];
 	_tmp_items =
@@ -1042,9 +1042,9 @@ if (g_class == "ANA_SL") then {
 
 	_tmp_magazines =
     [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15],
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+        ["UK3CB_BAF_9_17Rnd",15],
 		["HandGrenade",5]
     ];
 	_tmp_items =
@@ -1184,9 +1184,9 @@ if (g_class == "ANA_SL") then {
 
 	_tmp_magazines =
     [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+        ["UK3CB_BAF_9_17Rnd",15]
     ];
 
     _tmp_items = 
@@ -1205,7 +1205,7 @@ if (g_class == "ANA_SL") then {
 		["ACE_surgicalKit", 50],
 		["ACE_tourniquet", 5],
 		["ACE_epinephrine",5],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
@@ -1228,9 +1228,9 @@ if (g_class == "ANA_SL") then {
 
 	_tmp_magazines =
     [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+        ["UK3CB_BAF_9_17Rnd",15]
     ];
 
     _tmp_items = 
@@ -1247,7 +1247,7 @@ if (g_class == "ANA_SL") then {
 		["ACE_bodyBag",10],
 		["ACE_surgicalKit", 50],
 		["ACE_tourniquet", 5],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["LDS: UK3CB_BAF_SpecterLDS_Dot",1],
 	    ["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
@@ -1442,8 +1442,8 @@ if (g_class == "POL_SL") then {
     [	
 		["ACC_30Rnd_556x45_Beryl",50],
 		["ACC_30Rnd_556x45_Beryl_T",50],
-		["UK3CB_BAF_L128A1_Pellets",10],
-		["UK3CB_BAF_L128A1_Slugs",10],
+		["UK3CB_BAF_12G_Pellets",10],
+		["UK3CB_BAF_12G_Slugs",10],
 		["ACC_16Rnd_9x19_Wist_Mag",15]
 	];
 
