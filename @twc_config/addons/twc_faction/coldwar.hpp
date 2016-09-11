@@ -321,21 +321,12 @@
 		};
 		magazines[]=
 		{
-<<<<<<< HEAD
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",		
-=======
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",		
->>>>>>> origin/master
+		"34_rnd_sterling_mag",
 		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
@@ -347,21 +338,12 @@
 		};
 		Respawnmagazines[]=
 		{
-<<<<<<< HEAD
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-=======
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
->>>>>>> origin/master
 		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
@@ -1037,13 +1019,8 @@
 		};
 		magazines[]=
 		{
-<<<<<<< HEAD
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-=======
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
->>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1057,13 +1034,8 @@
 		};
 		Respawnmagazines[]=
 		{
-<<<<<<< HEAD
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-=======
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
->>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1187,13 +1159,8 @@
 		};
 		magazines[]=
 		{
-<<<<<<< HEAD
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-=======
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
->>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1207,13 +1174,8 @@
 		};
 		Respawnmagazines[]=
 		{
-<<<<<<< HEAD
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-=======
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
->>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1337,13 +1299,8 @@
 		};
 		magazines[]=
 		{
-<<<<<<< HEAD
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-=======
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
->>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1357,13 +1314,8 @@
 		};
 		Respawnmagazines[]=
 		{
-<<<<<<< HEAD
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-=======
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
->>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
