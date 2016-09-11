@@ -309,24 +309,33 @@
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"tf47_m3maaws"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"TWC_Carl_Gustav"
 		};
 		magazines[]=
 		{
+<<<<<<< HEAD
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",		
+=======
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",		
+>>>>>>> origin/master
 		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
@@ -338,12 +347,21 @@
 		};
 		Respawnmagazines[]=
 		{
+<<<<<<< HEAD
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
+=======
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+>>>>>>> origin/master
 		"tf47_m3maaws_HEAT",
 		"SmokeShell",
 		"SmokeShell",
@@ -1006,7 +1024,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"rhsusf_weap_m1911a1"
 		};
 		respawnweapons[]=
@@ -1014,13 +1032,18 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"rhsusf_weap_m1911a1"
 		};
 		magazines[]=
 		{
+<<<<<<< HEAD
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
+=======
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+>>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1034,8 +1057,13 @@
 		};
 		Respawnmagazines[]=
 		{
+<<<<<<< HEAD
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
+=======
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+>>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1146,7 +1174,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"rhsusf_weap_m1911a1"
 		};
 		respawnweapons[]=
@@ -1154,13 +1182,18 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"rhsusf_weap_m1911a1"
 		};
 		magazines[]=
 		{
+<<<<<<< HEAD
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
+=======
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+>>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1174,8 +1207,13 @@
 		};
 		Respawnmagazines[]=
 		{
+<<<<<<< HEAD
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
+=======
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+>>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1286,7 +1324,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"rhsusf_weap_m1911a1"
 		};
 		respawnweapons[]=
@@ -1294,13 +1332,18 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"rhsusf_weap_m1911a1"
 		};
 		magazines[]=
 		{
+<<<<<<< HEAD
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
+=======
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+>>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
@@ -1314,8 +1357,13 @@
 		};
 		Respawnmagazines[]=
 		{
+<<<<<<< HEAD
 		"UK3CB_BAF_762_20Rnd",
 		"UK3CB_BAF_762_20Rnd",
+=======
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+>>>>>>> origin/master
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",		
