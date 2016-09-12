@@ -870,12 +870,7 @@ class CfgVehicles
 			class _xx_34_rnd_sterling_mag   
 			{
 				magazine = "34_rnd_sterling_mag";
-				count = 6;
-			};
-			class _xx_34_rnd_sterling_mag
-			{
-				magazine = "34_rnd_sterling_mag";
-				count = 2;
+				count = 8;
 			};
 			class _xx_SmokeShellGreen
 			{
