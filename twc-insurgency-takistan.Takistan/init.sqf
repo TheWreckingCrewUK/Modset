@@ -134,7 +134,7 @@ if ((str player) in _specialSlots)then{
 		_armourCrew = ["tank1","tank2","tank3"];
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
 		_apachePilots = ["p33","p34"];
-		_mertteam = ["mert_helo","mert_sl","mert_med"];
+		_mertteam = ["mert_sl","mert_med"];
 		_numPlayers = switch (str player) do{
 			case "helo1";
 			case "helo2";
@@ -148,7 +148,6 @@ if ((str player) in _specialSlots)then{
 			case "humanCiv3": {20};
 			case "p33";
 			case "p34": {18};
-			case "mert_helo";
 			case "mert_sl";
 			case "mert_med": {15};
 			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};

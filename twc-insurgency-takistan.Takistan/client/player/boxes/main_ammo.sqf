@@ -69,7 +69,7 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_L131A1",1],
 		["Binocular",1],
 		["rhs_weap_m72a7",4],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hedp",2],
 		["UK3CB_BAF_NLAW_Launcher",3],
 		["UK3CB_BAF_Javelin_Slung_Tube",3]
     ];
@@ -106,7 +106,7 @@ if (g_class == "BAF_SL") then {
         ["UK3CB_BAF_L85A2_UGL",1],
         ["ACE_Vector",1],
 		["UK3CB_BAF_L131A1",1],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hedp",2],
 		["UK3CB_BAF_NLAW_Launcher",3],
 		["rhs_weap_m72a7",4]
 	];
@@ -146,7 +146,7 @@ if (g_class == "BAF_SL") then {
     _tmp_weapons =
     [
         ["UK3CB_BAF_L110A2",1],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hedp",2],
 		["Binocular",1],
 		["UK3CB_BAF_L131A1",1],
 		["rhs_weap_m72a7",4]
@@ -246,7 +246,7 @@ if (g_class == "BAF_SL") then {
 		["ACE_Vector",1],
 		["UK3CB_BAF_L131A1",1],
 		["UK3CB_BAF_NLAW_Launcher",3],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hedp",2],
 		["UK3CB_BAF_Javelin_Slung_Tube",3]
 	];
        
@@ -365,8 +365,9 @@ if (g_class == "US_TL") then {
     [
 		["rhs_weap_m4a1_carryhandle_m203",1],
         ["ACE_Vector",1],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
-		["rhsusf_weap_m9",1]
+		["rhs_weap_M136_hedp",2],
+		["rhsusf_weap_m9",1],
+		["rhs_weap_m72a7",4]
     ];
 
     _tmp_magazines =
@@ -411,8 +412,9 @@ if (g_class == "US_TL") then {
 		["rhs_weap_M590_8RD",1],
 		["Binocular",1],
 		["rhsusf_weap_m9",1],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",4],
-		["CUP_launch_MAAWS",1]
+		["rhs_weap_M136_hedp",4],
+		["CUP_launch_MAAWS",1],
+		["rhs_weap_m72a7",4]
 	];
 
     _tmp_magazines =
@@ -448,9 +450,10 @@ if (g_class == "US_TL") then {
     _tmp_weapons =
     [
         ["rhs_weap_m249_pip",1],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hedp",2],
 		["Binocular",1],
-		["rhsusf_weap_m9",1]
+		["rhsusf_weap_m9",1],
+		["rhs_weap_m72a7",4]
 	];
 
     _tmp_magazines =
@@ -482,7 +485,8 @@ if (g_class == "US_TL") then {
         ["rhs_weap_m4a1_carryhandle_m203",1],
 		["ACE_Vector",1],
 		["rhsusf_weap_m9",1],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2]
+		["rhs_weap_M136_hedp",2],
+		["rhs_weap_m72a7",4]
 	];
 
     _tmp_magazines =
@@ -522,8 +526,9 @@ if (g_class == "US_TL") then {
 		["rhs_weap_m4a1_carryhandle_grip",1],
 		["rhsusf_weap_m9",1],
 		["ACE_Vector",1],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
-		["UK3CB_BAF_Javelin_Slung_Tube",3]		
+		["rhs_weap_M136_hedp",2],
+		["UK3CB_BAF_Javelin_Slung_Tube",3],
+		["rhs_weap_m72a7",4]	
 	];
        
     _tmp_magazines =
@@ -646,7 +651,7 @@ if (g_class == "US_TL") then {
     [
         ["rhs_weap_m16a4_carryhandle_M203",1],
         ["ACE_Vector",1],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hedp",2],
 		["rhsusf_weap_m1911a1",1]
     ];
 
@@ -693,7 +698,8 @@ if (g_class == "US_TL") then {
 		["CUP_launch_Mk153Mod0",1],
 		["rhs_weap_M590_8RD",1],
 		["Binocular",1],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2]
+		["rhs_weap_M136_hedp",2],
+		["rhs_weap_m72a7",4]
 	];
 
     _tmp_magazines =
@@ -732,8 +738,9 @@ if (g_class == "USMC_AR") then {
         ["rhs_weap_m249_pip",1],
 		["rhs_weap_m27iar",1],
 		["Binocular",1],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
-		["rhsusf_weap_m1911a1",1]
+		["rhs_weap_M136_hedp",2],
+		["rhsusf_weap_m1911a1",1],
+		["rhs_weap_m72a7",4]
 	];
 
     _tmp_magazines =
@@ -770,7 +777,8 @@ if (g_class == "USMC_AR") then {
         ["rhs_weap_m16a4_grip",1],
 		["rhsusf_weap_m1911a1",1],
 		["Binocular",1],
-		["UK3CB_BAF_AT4_AP_Launcher",2]
+		["UK3CB_BAF_AT4_AP_Launcher",2],
+		["rhs_weap_m72a7",4]
 	];
 
     _tmp_magazines =
@@ -834,7 +842,8 @@ if (g_class == "USMC_AR") then {
         ["rhs_weap_m16a4_grip",1],
 		["rhsusf_weap_m1911a1",1],
 		["Binocular",1],
-		["UK3CB_BAF_AT4_AP_Launcher",2]
+		["UK3CB_BAF_AT4_AP_Launcher",2],
+		["rhs_weap_m72a7",4]
 	];
 
     _tmp_magazines =
@@ -1029,6 +1038,7 @@ if (g_class == "ANA_SL") then {
 		["ACE_M26_Clacker",1],
 		["ACRE_PRC343",1],
 		["rhsusf_ANPVS_14",1],
+		["itemCTAB",1],
 		["ACE_microDAGR_item",1]
 	];
 };
@@ -1055,6 +1065,7 @@ if (g_class == "ANA_SL") then {
 		["rhsusf_ANPVS_14",1],
 		["ACRE_PRC343",1],
 		["rhsusf_ANPVS_14",1],
+		["itemCTAB",1],
 		["ACE_microDAGR_item",1]
 		
 	];
@@ -1082,6 +1093,7 @@ if (g_class == "ANA_SL") then {
 		["ACRE_PRC148",1],
 		["rhsusf_ANPVS_14",1],
 		["ACRE_PRC117F",1],
+		["itemCTAB",1],
 		["rhsusf_ANPVS_14",1]
 		
 	];
@@ -1109,6 +1121,7 @@ if (g_class == "ANA_SL") then {
 		["ACRE_PRC148",1],
 		["rhsusf_ANPVS_14",1],
 		["ACRE_PRC117F",1],
+		["itemCTAB",1],
 		["rhsusf_ANPVS_14",1]
 		
 	];
@@ -1117,60 +1130,63 @@ if (g_class == "ANA_SL") then {
 //load avaible to armour commander only
  if (g_class == "ARMR_CO") then {
     _tmp_weapons =
-    [
-        ["rhs_weap_m4_carryhandle",1],
-		["ACE_Vector",1],
-		["ACE_MX2A",1],
-		["Binocular",1],
-		["rhsusf_weap_m9",1]
+	[
+        ["UK3CB_BAF_L85A2_RIS",1],
+        ["ACE_Vector",1],
+		["UK3CB_BAF_L131A1",1]
     ];
 
 	_tmp_magazines =
     [
-        ["30Rnd_556x45_Stanag",50],
-		["30Rnd_556x45_Stanag_Tracer_Red",50],
-        ["rhsusf_mag_15Rnd_9x19_FMJ",15],
-		["HandGrenade",5]
+        ["UK3CB_BAF_30Rnd",50],
+		["UK3CB_BAF_30Rnd_T",50],
+        ["UK3CB_BAF_17Rnd_9mm",15]
     ];
 	_tmp_items =
 	[
-		["ACE_DAGR",1],
         ["ACE_MapTools",1],
-		["ACRE_PRC148",1],
-		["rhsusf_acc_anpeq15_bk",1],
-		["rhsusf_acc_eotech_552",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
 		["rhsusf_ANPVS_14",1],
-		["ACRE_PRC117F",1],
+		["ACE_IR_Strobe_Item",1],
+		["ACRE_PRC343",1],
+		["SatchelCharge_Remote_Mag",1],
+		["DemoCharge_Remote_Mag",1],
+		["ACE_M26_Clacker",1],
+		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["UK3CB_BAF_LLM_IR",1],
+		["itemCTAB",1],
 		["rhsusf_ANPVS_14",1]
-		
 	];
 };
 
 //load avaible to armor crew only
  if (g_class == "ARMR_CREW") then {
     _tmp_weapons =
-    [
-        ["rhs_weap_m4_carryhandle",1],
-		["rhsusf_weap_m9",1]
+	[
+        ["UK3CB_BAF_L85A2_RIS",1],
+        ["ACE_Vector",1],
+		["UK3CB_BAF_L131A1",1]
     ];
 
 	_tmp_magazines =
     [
-        ["30Rnd_556x45_Stanag",50],
-		["30Rnd_556x45_Stanag_Tracer_Red",50],
-        ["rhsusf_mag_15Rnd_9x19_FMJ",15],
-		["HandGrenade",5]
+        ["UK3CB_BAF_30Rnd",50],
+		["UK3CB_BAF_30Rnd_T",50],
+        ["UK3CB_BAF_17Rnd_9mm",15]
     ];
 	_tmp_items =
 	[
-        ["ACE_MapTools",1],
-		["rhsusf_acc_anpeq15_bk",1],
-		["rhsusf_acc_eotech_552",1],
+		["ACE_MapTools",1],
+        ["ACE_fieldDressing",20],
+        ["ACE_morphine",10],
 		["ACRE_PRC148",1],
 		["rhsusf_ANPVS_14",1],
-		["ACRE_PRC117F",1],
+		["ACE_IR_Strobe_Item",1],
+		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["UK3CB_BAF_LLM_IR",1],
+		["ACRE_PRC343",1],
 		["rhsusf_ANPVS_14",1]
-		
 	];
 };
 

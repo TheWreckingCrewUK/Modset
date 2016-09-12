@@ -6,7 +6,7 @@ _player3 = if(!isPlayer mert_helo)then{""}else{(name mert_helo)};
 
 
 
-g_playerlist = [["MERT Team", [["Mert", [_player1, "Lead"], [_player2, "Medic"], [_player3, "Pilot"]]]]					
+g_playerlist = [["MERT Team", [["Mert", [_player1, "Lead"], [_player2, "Medic"]]]]					
 				
 				];
 

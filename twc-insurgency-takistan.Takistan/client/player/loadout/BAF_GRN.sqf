@@ -36,7 +36,7 @@ comment "Add weapons";
 player addWeapon "UK3CB_BAF_L85A2_UGL";
 player addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
 player addPrimaryWeaponItem "RKSL_optic_LDS";
-player addWeapon "UK3CB_BAF_AT4_CS_AP_Launcher";
+player addWeapon "rhs_weap_M136_hedp";
 player addWeapon "ACE_Vector";
 
 comment "Add items";
