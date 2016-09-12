@@ -867,14 +867,14 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_762_20Rnd
+			class _xx_34_rnd_sterling_mag   
 			{
-				magazine = "UK3CB_BAF_762_20Rnd";
+				magazine = "34_rnd_sterling_mag";
 				count = 6;
 			};
-			class _xx_UK3CB_BAF_762_20Rnd_T
+			class _xx_34_rnd_sterling_mag
 			{
-				magazine = "UK3CB_BAF_762_20Rnd_T";
+				magazine = "34_rnd_sterling_mag";
 				count = 2;
 			};
 			class _xx_SmokeShellGreen
@@ -938,9 +938,9 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_762_20Rnd
+			class _xx_34_rnd_sterling_mag
 			{
-				magazine = "UK3CB_BAF_762_20Rnd";
+				magazine = "34_rnd_sterling_mag";
 				count = 4;
 			};
 			class _xx_tf47_m3maaws_HEAT
@@ -973,9 +973,9 @@ class CfgVehicles
 		maximumLoad = 500;
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_762_20Rnd
+			class _xx_34_rnd_sterling_mag
 			{
-				magazine = "UK3CB_BAF_762_20Rnd";
+				magazine = "34_rnd_sterling_mag";
 				count = 8;
 			};
 			class _xx_SmokeShellGreen
@@ -1009,9 +1009,9 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_762_20Rnd
+			class _xx_34_rnd_sterling_mag
 			{
-				magazine = "UK3CB_BAF_762_20Rnd";
+				magazine = "34_rnd_sterling_mag";
 				count = 8;
 			};
 			class _xx_SmokeShellGreen
