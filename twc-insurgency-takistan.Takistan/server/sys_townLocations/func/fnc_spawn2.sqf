@@ -19,11 +19,10 @@ _trg setTriggerActivation ["ANY", "PRESENT", false];
 _trg setTriggerTimeout [45,45,45,True];
 _trg setTriggerStatements ["((EAST countSide thisList) < 4) OR (West countSide thisList) == 0",format["[thisTrigger, thisList, str %1] call twc_fnc_townReset",_pos], ""];
 
-_waves = _waves - floor InsP_enemyMorale;
+[_pos] call twc_spawnDefend2;
+
+_waves = _waves - 2;
 _sleep = 10;
-if (_waves < 1) then {
-	_waves = 0;
-};
 //Spawn for each wave
 [_waves,_sleep,_pos,_groupradius,_thisList]spawn{
 	//Back to variables for ease
@@ -57,23 +56,6 @@ if (_waves < 1) then {
 			}];
 			_x addMagazines ["handGrenade",2];
 			_x setVariable ["location",str _pos,false];
-		}forEach units _groupSpawn;
-	};
-};
-
-//If the playercount is high adds a chance of a technical
-if ((count PlayableUnits) > 5) then{
-	_rand = (random 100);
-	if(_rand < 50)then{
-		_spawnPos = [_pos, _groupradius,[_dir1,_dir2],0,[2,200]] call shk_pos;
-		_groupSpawn =  [_spawnPos, East, enemyTechnical] call BIS_fnc_spawnGroup;
-		[_groupSpawn, (_pos), 40] call CBA_fnc_taskAttack;
-		{
-			_x addMPEventHandler ["MPKilled",{
-				if (side (_this select 1) == WEST) then{
-					InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
-				};
-			}];
 		}forEach units _groupSpawn;
 	};
 };
