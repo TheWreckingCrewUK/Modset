@@ -116,6 +116,8 @@ _CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_L16",8];
 _CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_Tripod",16];
 _CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_L111A1",8];
 _CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_L134A1",8];
+_CrewServedWepons AddWeaponCargoGlobal ["FIMStingerA",8];
+_CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_M6",8];
 
 
 
@@ -169,8 +171,8 @@ _RangeBoxAT2 AddWeaponCargoGlobal ["HAFM_LAW",20];
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",20];
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",20];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",85];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",85];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",85];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",85];
 
 _RangeBoxRifle AddMagazineCargoGlobal ["UGL_FlareWhite_F",45];
 _RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",45];
@@ -189,8 +191,8 @@ _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Slugs",50];
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",50];
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",50];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",55];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",55];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",55];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",55];
 
 _RangeBoxRifle AddMagazineCargoGlobal ["UGL_FlareWhite_F",35];
 _RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",35];
@@ -209,8 +211,8 @@ _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_17Rnd_9mm",20];
 _RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",20];
 _RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",20];
 
-_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",85];
-_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",85];
+_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",85];
+_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",85];
 
 _RangeBoxRifle AddMagazineCargoGlobal ["UGL_FlareWhite_F",45];
 _RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",45];
@@ -229,8 +231,8 @@ _RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Slugs",50];
 _RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",50];
 _RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",50];
 
-_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",55];
-_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",55];
+_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",55];
+_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",55];
 
 _RangeBoxRifle1 AddMagazineCargoGlobal ["UGL_FlareWhite_F",35];
 _RangeBoxRifle1 AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",35];
@@ -249,8 +251,8 @@ _RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_17Rnd_9mm",20];
 _RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",20];
 _RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",20];
 
-_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",85];
-_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",85];
+_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",85];
+_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",85];
 
 _RangeBoxRifle2 AddMagazineCargoGlobal ["UGL_FlareWhite_F",45];
 _RangeBoxRifle2 AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",45];
@@ -269,8 +271,8 @@ _RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Slugs",50];
 _RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",50];
 _RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",50];
 
-_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",55];
-_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",55];
+_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",55];
+_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",55];
 
 _RangeBoxRifle2 AddMagazineCargoGlobal ["UGL_FlareWhite_F",35];
 _RangeBoxRifle2 AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",35];
@@ -299,6 +301,10 @@ _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_32Rnd_40mm_G_Box",100];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_shells",100];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Flare_white",100];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Smoke_white",100];
+_CrewServedWepons addItemCargoGlobal ["CUP_Stinger_M",20];
+_CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_Shells",100];
+_CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_Flare_White",100];
+_CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",100];
 
 
 

@@ -33,8 +33,8 @@ _RangeBoxAT AddWeaponCargoGlobal ["HAFM_LAW",20];
 
 
 //Ammo
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",200];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",200];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",200];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",200];
 _RangeBoxAT AddMagazineCargoGlobal ["tf47_m3maaws_HEAT",40];
 _RangeBoxAT AddMagazineCargoGlobal ["tf47_m3maaws_HE",40];
 _RangeBoxAT AddMagazineCargoGlobal ["tf47_m3maaws_SMOKE",40];

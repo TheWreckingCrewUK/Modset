@@ -152,8 +152,8 @@ _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Slugs",50];
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",50];
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",50];
 
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",55];
-_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",55];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",55];
+_RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",55];
 
 _RangeBoxRifle AddMagazineCargoGlobal ["UGL_FlareWhite_F",35];
 _RangeBoxRifle AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",35];
@@ -176,8 +176,8 @@ _RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Slugs",50];
 _RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",50];
 _RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",50];
 
-_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",55];
-_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",55];
+_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",55];
+_RangeBoxRifle1 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",55];
 
 _RangeBoxRifle1 AddMagazineCargoGlobal ["UGL_FlareWhite_F",35];
 _RangeBoxRifle1 AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",35];
@@ -200,8 +200,8 @@ _RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Slugs",50];
 _RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",50];
 _RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",50];
 
-_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",55];
-_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",55];
+_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",55];
+_RangeBoxRifle2 AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",55];
 
 _RangeBoxRifle2 AddMagazineCargoGlobal ["UGL_FlareWhite_F",35];
 _RangeBoxRifle2 AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",35];
