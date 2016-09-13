@@ -133,7 +133,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="BAF_Soldier_Base_L_W_Uniform_DG1";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_1990_Rifleman";
 		linkedItems[]=
 		{
