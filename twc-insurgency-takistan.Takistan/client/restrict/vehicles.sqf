@@ -2,13 +2,13 @@
 Script by [TWC] jayman. Vehicle restriction through event handlers. Should cause literally like no lag
 The old one by Sa-Matra relied on a while{true}do{} loop which is shitty.
 */
-_specialCases = ["helo1","helo2","helo3","helo4","p33","p34","mert_helo","tank1","tank2","tank3"];
+_specialCases = ["helo1","helo2","helo3","helo4","p33","p34","tank1","tank2","tank3"];
 if(str player in _specialCases)then{
 	if(str player == "helo1" || str player == "helo2")then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
 				if((_this select 2) isKindOf "Air")then{
-					if(typeOf (_this select 2) == "UK3CB_BAF_Wildcat_AH1_CAS_8A" || typeOf (_this select 2) == "CUP_B_CH47F_GB")then{
+					if(typeOf (_this select 2) == "UK3CB_BAF_Wildcat_AH1_CAS_8A" || typeOf (_this select 2) == "CUP_B_CH47F_GB" || typeOf (_this select 2) == "UK3CB_BAF_Merlin_HC3_CSAR")then{
 						
 					}else{
 						hint "You are a BAF Pilot. You may only fly BAF helicopters";
@@ -25,7 +25,7 @@ if(str player in _specialCases)then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
 				if((_this select 2) isKindOf "Air")then{
-					if(typeOf (_this select 2) == "RHS_UH60M_D" || typeOf (_this select 2) == "RHS_CH_47F_light")then{
+					if(typeOf (_this select 2) == "RHS_UH60M_D" || typeOf (_this select 2) == "RHS_CH_47F_light" || typeOf (_this select 2) == "rhsusf_CH53E_USMC_D")then{
 			
 					}else{
 						hint "You are a US pilot. You may only fly US helicopters";
@@ -45,22 +45,6 @@ if(str player in _specialCases)then{
 			
 					}else{
 						hint "You are an Apache Pilot/Gunner. You may only fly/gun the Apache";
-						(_this select 0) action ["eject", (_this select 2)];
-						(_this select 0) action ["getout", (_this select 2)];
-					};
-				};
-			};
-		}];
-	};
-	
-	if(str player == "mert_helo")then{
-		player addEventHandler ["getInMan",{
-			if((_this select 1) != "cargo")then{
-				if((_this select 2) isKindOf "Air")then{
-					if(typeOf (_this select 2) == "UK3CB_BAF_Merlin_HC3_CSAR")then{
-			
-					}else{
-						hint "You are the MERT pilot. You may only fly the MERT helicopter";
 						(_this select 0) action ["eject", (_this select 2)];
 						(_this select 0) action ["getout", (_this select 2)];
 					};

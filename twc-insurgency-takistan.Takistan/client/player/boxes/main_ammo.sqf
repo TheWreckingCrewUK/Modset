@@ -1039,7 +1039,8 @@ if (g_class == "ANA_SL") then {
 		["ACRE_PRC343",1],
 		["rhsusf_ANPVS_14",1],
 		["itemCTAB",1],
-		["ACE_microDAGR_item",1]
+		["ACE_microDAGR_item",1],
+		["UK3CB_BAF_SUSAT",1]
 	];
 };
  //load availible to pilot Crew only
@@ -1066,7 +1067,8 @@ if (g_class == "ANA_SL") then {
 		["ACRE_PRC343",1],
 		["rhsusf_ANPVS_14",1],
 		["itemCTAB",1],
-		["ACE_microDAGR_item",1]
+		["ACE_microDAGR_item",1],
+		["UK3CB_BAF_SUSAT",1]
 		
 	];
 };
@@ -1094,7 +1096,8 @@ if (g_class == "ANA_SL") then {
 		["rhsusf_ANPVS_14",1],
 		["ACRE_PRC117F",1],
 		["itemCTAB",1],
-		["rhsusf_ANPVS_14",1]
+		["rhsusf_ANPVS_14",1],
+		["UK3CB_BAF_Eotech",1]
 		
 	];
 };
@@ -1122,7 +1125,8 @@ if (g_class == "ANA_SL") then {
 		["rhsusf_ANPVS_14",1],
 		["ACRE_PRC117F",1],
 		["itemCTAB",1],
-		["rhsusf_ANPVS_14",1]
+		["rhsusf_ANPVS_14",1],
+		["UK3CB_BAF_Eotech",1]
 		
 	];
 };

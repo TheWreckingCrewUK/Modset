@@ -30,6 +30,24 @@ if (!isNil "helo3" && {player == helo3}) then {
 };
 if (!isNil "jet1" && {player == jet1}) then {
 	g_class = "jet";
+	execVM "client\restrictModded\fullJet.sqf";
+	player addEventHandler ["Respawn", {
+		execVM "client\restrictModded\fullJet.sqf";
+	}];
+};
+if (!isNil "jtac1" && {player == jtac1}) then {
+	g_class = "jtac";
+	execVM "client\restrictModded\fullJet.sqf";
+	player addEventHandler ["Respawn", {
+		execVM "client\restrictModded\fullJet.sqf";
+	}];
+};
+if (!isNil "fac1" && {player == fac1}) then {
+	g_class = "fac";
+	execVM "client\restrictModded\fullJet.sqf";
+	player addEventHandler ["Respawn", {
+		execVM "client\restrictModded\fullJet.sqf";
+	}];
 };
 if (!isNil "p1" && {player == p1}) then {
 	g_class = "alpha_sl";

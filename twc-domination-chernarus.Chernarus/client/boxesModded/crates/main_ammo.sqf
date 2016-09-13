@@ -1112,6 +1112,89 @@ if (g_class == "charlie_ar") then {
 	];
 };
 
+if (g_class == "jtac") then {
+    _tmp_weapons =
+    [
+        ["UK3CB_BAF_L85A2_RIS",1],
+        ["ACE_Vector",1],
+		["ACE_MX2A",1],
+		["Binocular",1],
+		["UK3CB_BAF_Soflam_Laserdesignator",1],
+		["UK3CB_BAF_L131A1",1]
+    ];
+
+	_tmp_magazines =
+    [
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+        ["UK3CB_BAF_9_17Rnd",15],
+		["HandGrenade",5]
+    ];
+
+    _tmp_items = 
+	[
+        ["ACE_MapTools",1],
+		["ACE_epinephrine",5],
+		["UK3CB_BAF_SUSAT",1],
+		["UK3CB_BAF_LLM_IR",1],
+		["SatchelCharge_Remote_Mag",1],
+		["DemoCharge_Remote_Mag",1],
+		["ACE_M26_Clacker",1],
+		["UK3CB_BAF_Eotech",1],
+		["STKR_Predator",1],
+		["ACE_DAGR",1],
+		["ACRE_PRC343",1],
+		["UK3CB_BAF_G_Tactical_Black",1],
+		["ACRE_PRC117F",1],
+		["UK3CB_BAF_LLM_IR_Black",1]
+    ];
+};
+
+if (g_class == "fac") then {
+    _tmp_weapons =
+    [
+        ["UK3CB_BAF_L85A2_UGL",1],
+        ["ACE_Vector",1],
+		["ACE_MX2A",1],
+		["Binocular",1],
+		["UK3CB_BAF_Soflam_Laserdesignator",1],
+		["UK3CB_BAF_L131A1",1]
+    ];
+
+	_tmp_magazines =
+    [
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+        ["UK3CB_BAF_9_17Rnd",15],
+		["HandGrenade",5],
+		["UK3CB_BAF_1Rnd_HE_Grenade_Shell",10],
+		["UGL_FlareCIR_F",10],
+		["UGL_FlareWhite_F",10],
+		["1Rnd_Smoke_Grenade_shell",10],
+		["1Rnd_SmokeRed_Grenade_shell",10],
+		["1Rnd_SmokeGreen_Grenade_shell",10],
+		["1Rnd_SmokeBlue_Grenade_shell",10]
+    ];
+
+    _tmp_items = 
+	[
+        ["ACE_MapTools",1],
+		["ACE_epinephrine",5],
+		["UK3CB_BAF_SUSAT",1],
+		["UK3CB_BAF_LLM_IR",1],
+		["SatchelCharge_Remote_Mag",1],
+		["DemoCharge_Remote_Mag",1],
+		["ACE_M26_Clacker",1],
+		["UK3CB_BAF_Eotech",1],
+		["STKR_Predator",1],
+		["ACE_DAGR",1],
+		["ACRE_PRC343",1],
+		["UK3CB_BAF_G_Tactical_Black",1],
+		["ACRE_PRC117F",1],
+		["UK3CB_BAF_LLM_IR_Black",1]
+    ];
+};
+
 //load avaible to armour commander only
  if (g_class == "armour_co") then {
     _tmp_weapons =

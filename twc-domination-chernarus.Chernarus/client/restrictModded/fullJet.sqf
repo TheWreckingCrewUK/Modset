@@ -1,7 +1,7 @@
 /*
 * Written by [TWC] jayman
 *
-* Gives a black screen to the Mert crew until all 3 of them are in game
+* Gives a black screen to the armour crew until all 3 of them are in game
 * This forces teamwork & is written in a simple way to move to other units
 */
 //MP check so units work in editor
@@ -9,9 +9,9 @@ if(!isMultiplayer)exitWith{};
 cutText ["", "Black", 0.001];
 player forceWalk true;
 
-while {!isPlayer mert_sl || !isPlayer mert_med}do{
+while {!isPlayer jet1 || !isPlayer jtac1 || !isPlayer fac1}do{
     [
-        "<t size='1.2'>Mert Team</t><br/><t size='0.6'>You need all 3 members of the Mert Team to be in game before you can proceed.</t>", 0, 0.22, 5, 0, 0, 2
+        "<t size='1.2'>Jet Team</t><br/><t size='0.6'>You need all 3 members of the Jet Team to be in game before you can proceed.</t>", 0, 0.22, 5, 0, 0, 2
     ] spawn bis_fnc_dynamictext;
 	sleep 5;
 };

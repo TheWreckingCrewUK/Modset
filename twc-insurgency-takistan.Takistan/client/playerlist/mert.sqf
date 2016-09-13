@@ -1,12 +1,11 @@
 //made by hartzie edited by FakeMatty
 _player1 = if(!isPlayer mert_sl)then{""}else{(name mert_sl)};
 _player2 = if(!isPlayer mert_med)then{""}else{(name mert_med)};
-_player3 = if(!isPlayer mert_helo)then{""}else{(name mert_helo)};
 
 
 
 
-g_playerlist = [["MERT Team", [["Mert", [_player1, "Lead"], [_player2, "Medic"]]]]					
+g_playerlist = [["MERT Team", [["Mert", [_player1, "Lead"],[_player2, "Medic"]]]]					
 				
 				];
 

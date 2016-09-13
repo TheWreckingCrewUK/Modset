@@ -3,12 +3,14 @@
 _player1 = if(!isPlayer helo1)then{""}else{(name helo1)};
 _player2 = if(!isPlayer helo2)then{""}else{(name helo2)};
 _player3 = if(!isPlayer helo3)then{""}else{(name helo3)};
-_player4 = if(!isPlayer jet1)then{""}else{(name jet1)};
+_player4 = if(!isPlayer jtac1)then{""}else{(name jtac1)};
+_player5 = if(!isPlayer fac1)then{""}else{(name fac1)};
+_player6 = if(!isPlayer jet1)then{""}else{(name jet1)};
 
 
 
 
-g_playerlist = [["Air Assets", [["Wildcat/Chinook", [_player1, "Pilot"]],["BlackHawk/Osprey", [_player2, "Pilot"]],["Venom/Super-Stallion", [_player3, "Pilot"]],["A/10", [_player4, "Pilot"]]]]				
+g_playerlist = [["Air Assets", [["Wildcat/Chinook", [_player1, "Pilot"]],["BlackHawk/Osprey", [_player2, "Pilot"]],["Venom/Super-Stallion", [_player3, "Pilot"]],["A/10",[_player4, "JTAC"],[_player5, "FAC"],[_player6, "Pilot"]]]]				
 				
 				];
 
