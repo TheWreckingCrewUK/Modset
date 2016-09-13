@@ -27,8 +27,8 @@ _box AddWeaponCargoGlobal ["rhs_weap_m72a7",2];
 _box AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",1];
 _box AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",3];
 
-_box AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",20];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",5];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",20];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",5];
 
 _box AddMagazineCargoGlobal ["UGL_FlareWhite_F",5];
 _box AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",20];

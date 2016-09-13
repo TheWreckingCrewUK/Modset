@@ -55,6 +55,7 @@ if (!isNil "helo1" && {player == helo1}) then {
 	{nul = [] execVM "client\player\boxes\largeCrateUS.sqf";},[],0,true,false,"",""];
 	ammoCrateSpawner addAction ["Spawn Large USMC Ammobox",
 	{nul = [] execVM "client\player\boxes\largeCrateUSMC.sqf";},[],0,true,false,"",""];
+
 	
 };
 

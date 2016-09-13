@@ -22,7 +22,7 @@ for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
 player addVest "UK3CB_BAF_V_Osprey_MG_A";
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-for "_i" from 1 to 2 do {player addItemToVest "UK3CB_BAF_200Rnd";};
+for "_i" from 1 to 2 do {player addItemToVest "UK3CB_BAF_556_200Rnd";};
 player addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 for "_i" from 1 to 3 do {player addItemToBackpack "UK3CB_BAF_200Rnd_T";};
@@ -31,7 +31,7 @@ player addHeadgear "UK3CB_BAF_H_Mk7_Scrim_A";
 comment "Add weapons";
 player addWeapon "UK3CB_BAF_L110A2";
 player addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
-player addPrimaryWeaponItem "UK3CB_BAF_SpecterLDS_Dot_3D";
+player addPrimaryWeaponItem "RKSL_optic_LDS";
 
 comment "Add items";
 player linkItem "ItemMap";

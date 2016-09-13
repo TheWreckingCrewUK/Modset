@@ -17,8 +17,8 @@ _boxType = "CUP_BAF_VehicleBox";  // the type of ammobox used.
 _timer = 240;  // time in seconds until box is refilled.
  
 _weapons = [];
-_magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2],["ACE_fieldDressing",10],["ACE_morphine",10],["ACE_elasticBandage",10],["ACE_quikclot",10],["ACE_packingBandage",10], ["ACE_tourniquet", 2],["ACE_SpraypaintGreen",1]];
+_magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
+_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["ACE_Flashlight_XL50", 1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2]];
 
 _tmp_weapons = [];
 _tmp_magazines = [];
@@ -35,8 +35,8 @@ if (g_class == "BAF_SL") then {
 
 	_tmp_magazines =
     [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
         ["UK3CB_BAF_17Rnd_9mm",15]
     ];
 
@@ -80,8 +80,8 @@ if (g_class == "BAF_SL") then {
 
     _tmp_magazines =
     [	
-		["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
+		["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
 		["UK3CB_BAF_L128A1_Pellets",10],
 		["UK3CB_BAF_L128A1_Slugs",10],
 		["UK3CB_BAF_17Rnd_9mm",15]
@@ -118,8 +118,8 @@ if (g_class == "BAF_SL") then {
 
     _tmp_magazines =
     [           
-		["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
+		["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
 		["UK3CB_BAF_17Rnd_9mm",15],
 		["1Rnd_HE_Grenade_shell", 40],
 		["1Rnd_Smoke_Grenade_shell", 10],
@@ -195,8 +195,8 @@ if (g_class == "BAF_SL") then {
 
     _tmp_magazines =
 	[
-		["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
+		["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
         ["UK3CB_BAF_17Rnd_9mm",15]
     ];
 
@@ -1088,8 +1088,8 @@ if (g_class == "GER_SL") then {
     _tmp_magazines =
     [	
 		["UK3CB_BAF_L115A3_Mag",10],
-		["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
+		["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
 		["UK3CB_BAF_17Rnd_9mm",15]
 	];
 
@@ -1184,8 +1184,8 @@ if (g_class == "GER_SL") then {
 
 	_tmp_magazines =
     [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
         ["UK3CB_BAF_17Rnd_9mm",15]
     ];
 	_tmp_items =
@@ -1216,8 +1216,8 @@ if (g_class == "GER_SL") then {
 
 	_tmp_magazines =
     [
-        ["UK3CB_BAF_30Rnd",50],
-		["UK3CB_BAF_30Rnd_T",50],
+        ["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
         ["UK3CB_BAF_17Rnd_9mm",15]
     ];
 	_tmp_items =
