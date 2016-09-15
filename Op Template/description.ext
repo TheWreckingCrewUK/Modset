@@ -11,12 +11,6 @@ respawn = "base";
 respawnDelay = 1000000;
 respawnTemplates[] = {"ace_spectator"};
 class ACE_Settings {
-//ACE Sitting
-	class ace_sitting_enable {
-		value = 1;
-		typeName = "BOOL";
-		force = 1;
-	};
 //ACE Finger
 	class ace_finger_enabled {
 		value = 1;

@@ -97,14 +97,7 @@ class CfgDebriefing
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
 };
-
 class ACE_Settings {
-//ACE Sitting
-	class ace_sitting_enable {
-		value = 1;
-		typeName = "BOOL";
-		force = 1;
-	};
 //ACE Finger
 	class ace_finger_enabled {
 		value = 1;
