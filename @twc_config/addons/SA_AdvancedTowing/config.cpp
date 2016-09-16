@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"SA_AdvancedTowing"
+			"sa_advancedtowing"
 		};
 		requiredVersion=1;
 		requiredAddons[]=
@@ -17,7 +17,7 @@ class CfgNetworkMessages
 {
 	class AdvancedTowingRemoteExecClient
 	{
-		module="AdvancedTowing";
+		module="advancedtowing";
 		parameters[]=
 		{
 			"ARRAY",
@@ -28,7 +28,7 @@ class CfgNetworkMessages
 	};
 	class AdvancedTowingRemoteExecServer
 	{
-		module="AdvancedTowing";
+		module="advancedtowing";
 		parameters[]=
 		{
 			"ARRAY",
