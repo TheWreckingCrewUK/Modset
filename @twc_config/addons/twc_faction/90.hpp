@@ -721,7 +721,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_DPMT",
-		"UK3CB_BAF_H_Mk6_DPMW_A",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -731,7 +731,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		respawnLinkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_DPMT",
-		"UK3CB_BAF_H_Mk6_DPMW_A",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -849,7 +849,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_Osprey_DPMW9",
-		"UK3CB_BAF_H_Mk6_DPMW_A",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -859,6 +859,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		respawnLinkedItems[]=
 		{
         "UK3CB_BAF_V_Osprey_DPMW9",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1193,7 +1194,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_Osprey_DPMW4",
-		"UK3CB_BAF_H_Mk6_DPMW_A",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1203,6 +1204,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		respawnLinkedItems[]=
 		{
         "UK3CB_BAF_V_Osprey_DPMW4",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1305,7 +1307,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_Osprey_DPMW4",
-		"UK3CB_BAF_H_Mk6_DPMW_A",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -1315,6 +1317,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		respawnLinkedItems[]=
 		{
         "UK3CB_BAF_V_Osprey_DPMW4",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
