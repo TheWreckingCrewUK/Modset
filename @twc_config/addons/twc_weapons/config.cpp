@@ -1348,6 +1348,18 @@ class CfgVehicles
 			};
 		};
 	};
+	class TWC_Backpack_1990_Mortar:UK3CB_BAF_B_Bergen_DPMT_Rifleman_B
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_60MortarRound
+			{
+				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells";
+				count = 10;
+			};
+		};
+	};
 //*************************1990 DESERT ********************
 	class TWC_Backpack_1990_D_Platoon_Command:UK3CB_BAF_B_Bergen_DDPM_SL_A
 	{
@@ -1607,6 +1619,18 @@ class CfgVehicles
 			{
 				name = "TWC_MilanMissileItem";
 				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_1990_D_Mortar:UK3CB_BAF_B_Bergen_DDPM_Rifleman_B
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_60MortarRound
+			{
+				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells";
+				count = 10;
 			};
 		};
 	};
@@ -1944,7 +1968,22 @@ class CfgVehicles
 			{
 				magazine = "UK3CB_BAF_12G_Pellets";
 				count = 30;
-			};		
+			};
+			class _xx_60MortarRound
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Shells";
+				count = 50;
+			};
+			class _xx_60MortarRound_Smoke
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White";
+				count = 20;
+			};
+			class _xx_60MortarRound_Flare
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Flare_White";
+				count = 20;
+			};
 		};
 		class TransportItems
 		    {
@@ -2066,6 +2105,21 @@ class CfgVehicles
 				magazine="CUP_HandGrenade_L109A2_HE";
 				count=25;
 			};
+			class _xx_60MortarRound
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Shells";
+				count = 50;
+			};
+			class _xx_60MortarRound_Smoke
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White";
+				count = 20;
+			};
+			class _xx_60MortarRound_Flare
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Flare_White";
+				count = 20;
+			};
 		};
 		class TransportItems
 	    {
@@ -2146,7 +2200,22 @@ class CfgVehicles
 			{
 				magazine="CUP_HandGrenade_L109A2_HE";
 				count=50;
-			};	
+			};
+			class _xx_60MortarRound
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Shells";
+				count = 50;
+			};
+			class _xx_60MortarRound_Smoke
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White";
+				count = 20;
+			};
+			class _xx_60MortarRound_Flare
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Flare_White";
+				count = 20;
+			};
 		};
 		class TransportItems
 		{
@@ -2210,7 +2279,7 @@ class CfgVehicles
 			};
 			class _xx_AT4
 			{
-				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
+				Weapon = "rhs_weap_M136_hedp";
 				count = 10;
 			};
 		};		
@@ -2691,7 +2760,7 @@ class CfgVehicles
 		{
 			class _xx_AT4
 			{
-				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
+				Weapon = "rhs_weap_M136_hedp";
 				count = 2;
 			};
 		};

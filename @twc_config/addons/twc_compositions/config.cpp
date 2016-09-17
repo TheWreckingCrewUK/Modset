@@ -610,6 +610,13 @@ class CfgGroups
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_MortarGunner";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
                                 };
 						};
 						class 1990_Desert
@@ -702,6 +709,13 @@ class CfgGroups
                                                 vehicle = "1990_British_Medic_Desert";
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_MortarGunner_Desert";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
                                         };
                                 };
 								class SectionMilan

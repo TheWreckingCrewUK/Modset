@@ -161,14 +161,14 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_AT4_CS_AT_Launcher"
+		"rhs_weap_M136_hedp"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_AT4_CS_AT_Launcher"
+		"rhs_weap_M136_hedp"
 		};
 		magazines[]=
 		{
@@ -1406,6 +1406,121 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"UK3CB_BAF_HMNVS"		
 		};		
 	};
+	class 1990_British_MortarGunner: B_Soldier_base_F
+	{
+		_generalMacro="1990_British_Rifleman";
+		scope=2;
+		displayName="Mortar Gunner(90`s Woodland)";
+		faction="a_units";
+		vehicleClass="1990_British";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="UK3CB_BAF_U_Smock_DPMT";
+		backpack="TWC_Backpack_1990_Mortar";
+		linkedItems[]=
+		{
+        "UK3CB_BAF_V_PLCE_Webbing_DPMT",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"ACRE_PRC343",
+		"UK3CB_BAF_G_Tactical_Black"
+		};
+		respawnLinkedItems[]=
+		{
+        "UK3CB_BAF_V_PLCE_Webbing_DPMT",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"UK3CB_BAF_G_Tactical_Black",
+		"ACRE_PRC343"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",	
+		"UK3CB_BAF_L85A1_SUSAT3D",
+		"UK3CB_BAF_M6"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",	
+		"UK3CB_BAF_L85A1_SUSAT3D",
+		"UK3CB_BAF_M6"
+		};
+		magazines[]=
+		{
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
+		};
+		Respawnmagazines[]=
+		{
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_EarPlugs",	
+		"UK3CB_BAF_HMNVS"
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs",	
+		"UK3CB_BAF_HMNVS"		
+		};		
+	};
 //////////////////////////////////////////////////////////////////
 //                                                              //
 //                    1990 Desert British                       //
@@ -1573,14 +1688,14 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_AT4_CS_AT_Launcher"
+		"rhs_weap_M136_hedp"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"UK3CB_BAF_AT4_CS_AT_Launcher"
+		"rhs_weap_M136_hedp"
 		};
 		magazines[]=
 		{
@@ -2624,6 +2739,120 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_EarPlugs",	
+		"UK3CB_BAF_HMNVS"
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs",	
+		"UK3CB_BAF_HMNVS"		
+		};		
+	};
+	class 1990_British_MortarGunner_Desert: B_Soldier_base_F
+	{
+		_generalMacro="1990_Desert_British_MortarGunner";
+		scope=2;
+		displayName="Mortar Gunner(90`s Desert)";
+		faction="a_units";
+		vehicleClass="1990_Desert_British";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="UK3CB_BAF_U_Smock_DDPM";
+		backpack="TWC_Backpack_1990_D_Mortar";
+		linkedItems[]=
+		{
+        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"ACRE_PRC343",
+		"UK3CB_BAF_G_Tactical_Black"
+		};
+		respawnLinkedItems[]=
+		{
+        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"UK3CB_BAF_G_Tactical_Black",
+		"ACRE_PRC343"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",	
+		"UK3CB_BAF_L85A1_SUSAT3D",
+		"UK3CB_BAF_M6"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",	
+		"UK3CB_BAF_L85A1_SUSAT3D",
+		"UK3CB_BAF_M6"
+		};
+		magazines[]=
+		{
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
+		};
+		Respawnmagazines[]=
+		{
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
 		};
 		Items[]=
 		{
