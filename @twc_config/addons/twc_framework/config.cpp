@@ -99,6 +99,9 @@ class CfgFunctions
 			class UpdateTask
 			{
 			};
+			class daisyCutter
+			{
+			};
 		};
 	};
 };
