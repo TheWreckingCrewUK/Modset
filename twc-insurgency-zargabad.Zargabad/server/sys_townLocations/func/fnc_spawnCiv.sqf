@@ -19,18 +19,16 @@
 * Author: [TWC] Fakematty / [TWC] Jayman
 */
 _group = createGroup civilian;
-params["_marker", "_civnum", "_civradius"];
+params["_pos", "_civnum", "_civradius"];
 
 for "_i" from 1 to _civnum do {
 
-		_individualCiv = _group createUnit [civilianType, (getMarkerPos _marker), [], _civradius, "NONE"];
+		_individualCiv = _group createUnit [civilianType, _pos, [], _civradius, "NONE"];
 		_civHeading = (random 360);
 		_individualCiv setFormDir _civHeading;
 		_individualCiv setDir _civHeading;
 		_westKilled = _individualCiv addMPEventHandler ["MPKilled", {[_this select 0, _this select 1, _intelCache] call InsP_fnc_civKill;}];
-		_individualCiv disableAI "AUTOCOMBAT";
-		_individualCiv allowFleeing 0;
-		_individualCiv forceSpeed 1;
+		_individualCiv disableAI "path";
 		[_individualCiv, _individualCiv, 200, 2, True] call CBA_fnc_TaskDefend;
 		_clothes = 
 		[

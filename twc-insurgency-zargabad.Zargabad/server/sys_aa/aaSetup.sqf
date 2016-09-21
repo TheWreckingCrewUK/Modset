@@ -1,5 +1,5 @@
-AA_POSITION_LIST_A = ["AAGUNA1", "AAGUNA2", "AAGUNA3", "AAGUNA4", "AAGUNA5", "AAGUNA6", "AAGUNA7", "AAGUNA8"];
-AA_POSITION_LIST_B = ["AAGUNB1", "AAGUNB2", "AAGUNB3", "AAGUNB4", "AAGUNB5", "AAGUNB6", "AAGUNB7", "AAGUNB8"];
+AA_POSITION_LIST_A = ["AAGUNA1", "AAGUNA2"];
+AA_POSITION_LIST_B = ["AAGUNB1", "AAGUNB2"];
 
 private ["_aaGunAPosition", "_aaGunBPosition","_aaGunCPosition","_aaGunDPosition","_aaGunA", "_aaGunB","_aaGunC","_aaGunD"];
 

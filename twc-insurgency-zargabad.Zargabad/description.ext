@@ -99,12 +99,6 @@ class CfgDebriefing
 };
 
 class ACE_Settings {
-//ACE Sitting
-	class ace_sitting_enable {
-		value = 1;
-		typeName = "BOOL";
-		force = 1;
-	};
 //ACE Finger
 	class ace_finger_enabled {
 		value = 1;

@@ -127,6 +127,7 @@ if (!isNil "tank1" && {player == tank1}) then {
 	g_name = "Armour Crew Commander";
 	g_radio_channel = 9;
 	g_radio = "ACRE_PRC343";
+	crate = "crate9";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -138,6 +139,7 @@ if (!isNil "tank2" && {player == tank2}) then {
 	g_name = "Armour Crew";
 	g_radio_channel = 9;
 	g_radio = "ACRE_PRC343";
+	crate = "crate9";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -149,6 +151,7 @@ if (!isNil "tank3" && {player == tank3}) then {
 	g_name = "Armour Crew";
 	g_radio_channel = 9;
 	g_radio = "ACRE_PRC343";
+	crate = "crate9";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -164,6 +167,7 @@ if (!isNil "P1" && {player == P1}) then {
 	g_name = "Alpha Squad Leader";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	crate = "crate";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -175,6 +179,7 @@ if (!isNil "P2" && {player == P2}) then {
 	g_name = "Alpha Rifleman";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	crate = "crate";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -186,6 +191,7 @@ if (!isNil "P3" && {player == P3}) then {
 	g_name = "Alpha Grenadier";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	crate = "crate";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -197,6 +203,7 @@ if (!isNil "P4" && {player == P4}) then {
 	g_name = "Alpha Automatic Rifleman";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	crate = "crate";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -208,6 +215,7 @@ if (!isNil "P5" && {player == P5}) then {
 	g_name = "Alpha Medic";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
+	crate = "crate";
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
@@ -220,6 +228,7 @@ if (!isNil "P6" && {player == P6}) then {
 	g_name = "Bravo Squad Leader";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	crate = "crate1";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -231,6 +240,7 @@ if (!isNil "P7" && {player == P7}) then {
 	g_name = "Bravo Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	crate = "crate1";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -242,6 +252,7 @@ if (!isNil "P8" && {player == P8}) then {
 	g_name = "Bravo Grenadier";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	crate = "crate1";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -253,6 +264,7 @@ if (!isNil "P9" && {player == P9}) then {
 	g_name = "Bravo Automatic Rifleman";
 	g_radio_channel = 2;
 	g_radio = "ACRE_PRC148";
+	crate = "crate1";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -264,6 +276,7 @@ if (!isNil "P10" && {player == P10}) then {
 	g_name = "bravo Medic";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 2;
+	crate = "crate1";
 	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
@@ -276,6 +289,7 @@ if (!isNil "P11" && {player == P11}) then {
 	g_name = "Charlie Squad Leader";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 3;
+	crate = "crate2";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -287,6 +301,7 @@ if (!isNil "P12" && {player == P12}) then {
 	g_name = "Charlie Rifleman";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 3;
+	crate = "crate2";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -298,6 +313,7 @@ if (!isNil "P13" && {player == P13}) then {
 	g_name = "Charlie Grenadier";
 	g_radio_channel = 3;
 	g_radio = "ACRE_PRC148";
+	crate = "crate2";
 	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -309,6 +325,7 @@ if (!isNil "P14" && {player == P14}) then {
 	g_name = "Charlie Automatic Rifleman";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 3;
+	crate = "crate2";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -320,6 +337,7 @@ if (!isNil "P15" && {player == P15}) then {
 	g_name = "Charlie Medic";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 3;
+	crate = "crate2";
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
@@ -331,6 +349,7 @@ if (!isNil "P16" && {player == P16}) then {
 	g_unit = "112";
 	g_name = "Delta Squad Leader";
 	g_radio = "";
+	crate = "crate3";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -341,6 +360,7 @@ if (!isNil "P17" && {player == P17}) then {
 	g_unit = "113";
 	g_name = "Delta Rifleman";
 	g_radio = "";
+	crate = "crate3";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 	
@@ -352,6 +372,7 @@ if (!isNil "P18" && {player == P18}) then {
 	g_unit = "120";
 	g_name = "Delta AT Rifleman";
 	g_radio = "";
+	crate = "crate3";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -362,6 +383,7 @@ if (!isNil "P19" && {player == P19}) then {
 	g_unit = "121";
 	g_name = "Delta Machine Gunner";
 	g_radio = "";
+	crate = "crate3";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -372,6 +394,7 @@ if (!isNil "P20" && {player == P20}) then {
 	g_unit = "122";
 	g_name = "Delta Medic";
 	g_radio = "";
+	crate = "crate3";
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
@@ -384,6 +407,7 @@ if (!isNil "P21" && {player == P21}) then {
 	g_name = "Echo Squad Leader";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC343";
+	crate = "crate5";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -395,6 +419,7 @@ if (!isNil "P22" && {player == P22}) then {
 	g_name = "Echo Rifleman";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC343";
+	crate = "crate5";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -406,6 +431,7 @@ if (!isNil "P23" && {player == P23}) then {
 	g_name = "Echo Grenadier";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC343";
+	crate = "crate5";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -417,6 +443,7 @@ if (!isNil "P24" && {player == P24}) then {
 	g_name = "Echo Automatic Rifleman";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC343";
+	crate = "crate5";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -428,6 +455,7 @@ if (!isNil "P25" && {player == P25}) then {
 	g_name = "Echo Medic";
 	g_radio_channel = 5;
 	g_radio = "ACRE_PRC343";
+	crate = "crate5";
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
@@ -440,6 +468,7 @@ if (!isNil "P26" && {player == P26}) then {
 	g_name = "Foxtrot Squad Leader";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 6;
+	crate = "crate6";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -451,6 +480,7 @@ if (!isNil "P27" && {player == P27}) then {
 	g_name = "Foxtrot Rifleman";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 6;
+	crate = "crate6";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -463,6 +493,7 @@ if (!isNil "P28" && {player == P28}) then {
 	g_name = "Foxtrot Grenadier";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 6;
+	crate = "crate6";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -474,6 +505,7 @@ if (!isNil "P29" && {player == P29}) then {
 	g_name = "Foxtrot Machine Gunner";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 6;
+	crate = "crate6";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -485,6 +517,7 @@ if (!isNil "P30" && {player == P30}) then {
 	g_name = "Foxtrot Medic";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 6;
+	crate = "crate6";
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
@@ -497,6 +530,7 @@ if (!isNil "P31" && {player == P31}) then {
 	g_name = "Golf Squad Leader";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 7;
+	crate = "crate7";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -508,6 +542,7 @@ if (!isNil "P32" && {player == P32}) then {
 	g_name = "Golf Rifleman";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 7;
+	crate = "crate7";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;	
 };
@@ -519,6 +554,7 @@ if (!isNil "P33" && {player == P33}) then {
 	g_name = "Golf Automatic Rifleman";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 7;
+	crate = "crate7";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -530,6 +566,7 @@ if (!isNil "P34" && {player == P34}) then {
 	g_name = "Golf Assistant Automatic Rifleman";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 7;
+	crate = "crate7";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -541,6 +578,7 @@ if (!isNil "P35" && {player == P35}) then {
 	g_name = "Golf Medic";
 	g_radio = "ACRE_PRC148";
 	g_radio_channel = 7;
+	crate = "crate7";
 	["en","ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en","ru"] call acre_api_fnc_babelSetSpeakingLanguage;
 	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
@@ -553,6 +591,7 @@ if (!isNil "P36" && {player == P36}) then {
 	g_name = "Sniper";
 	g_radio_channel = 8;
 	g_radio = "ACRE_PRC343";
+	crate = "crate8";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -564,6 +603,7 @@ if (!isNil "P37" && {player == P37}) then {
 	g_name = "Spotter";
 	g_radio_channel = 8;
 	g_radio = "ACRE_PRC343";
+	crate = "crate8";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -859,50 +899,7 @@ g_tank2 = "";
 g_tank3 = "";
 
 
-execVM "client\player\boxes\main_ammo.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo1.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo2.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo3.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo4.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo5.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo6.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo7.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo8.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo9.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\player\boxes\main_ammo10.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
+execVM "client\player\boxes\init.sqf";
 
 execVM "client\player\psync.sqf";
 

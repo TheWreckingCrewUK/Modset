@@ -10,12 +10,7 @@
         For more classnames on ammoboxes or weapons and magazines go here:
                 http://forums.bistudio.com/showthread.php?t=73241&page=2
 				edited by FakeMatty
-*/
-
-_marker = "crate";  // marker used to spawn.
-_boxType = "CUP_BAF_VehicleBox";  // the type of ammobox used.
-_timer = 240;  // time in seconds until box is refilled.
- 
+*/ 
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["HandGrenade",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
 _items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["ACE_Flashlight_XL50", 1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2]];
@@ -37,7 +32,7 @@ if (g_class == "BAF_SL") then {
     [
         ["UK3CB_BAF_556_30Rnd",50],
 		["UK3CB_BAF_556_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_9_17Rnd",15]
     ];
 
     _tmp_items = 
@@ -46,7 +41,7 @@ if (g_class == "BAF_SL") then {
         ["ACE_fieldDressing",20],
         ["ACE_morphine",10],
 		["ACE_epinephrine",5],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
@@ -84,7 +79,7 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_556_30Rnd_T",50],
 		["UK3CB_BAF_L128A1_Pellets",10],
 		["UK3CB_BAF_L128A1_Slugs",10],
-		["UK3CB_BAF_17Rnd_9mm",15]
+		["UK3CB_BAF_9_17Rnd",15]
 	];
 
 	_tmp_items = 
@@ -92,7 +87,7 @@ if (g_class == "BAF_SL") then {
 		
 		["ACE_fieldDressing",20],
 		["ACE_morphine",10],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
 		["STKR_Predator",1],
@@ -120,7 +115,7 @@ if (g_class == "BAF_SL") then {
     [           
 		["UK3CB_BAF_556_30Rnd",50],
 		["UK3CB_BAF_556_30Rnd_T",50],
-		["UK3CB_BAF_17Rnd_9mm",15],
+		["UK3CB_BAF_9_17Rnd",15],
 		["1Rnd_HE_Grenade_shell", 40],
 		["1Rnd_Smoke_Grenade_shell", 10],
 		["1Rnd_SmokeRed_Grenade_shell", 10],
@@ -138,7 +133,7 @@ if (g_class == "BAF_SL") then {
         ["ACE_morphine",10],
 		["rhsusf_ANPVS_14",1],
 		["ACE_IR_Strobe_Item",1],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
 		["STKR_Predator",1],
@@ -163,7 +158,7 @@ if (g_class == "BAF_SL") then {
    [            
 		["UK3CB_BAF_200Rnd",20],
 		["UK3CB_BAF_200Rnd_T",10],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_9_17Rnd",15]
     ];
 
 	_tmp_items =
@@ -171,7 +166,7 @@ if (g_class == "BAF_SL") then {
         ["ACE_MapTools",1],
         ["ACE_fieldDressing",20],
         ["ACE_morphine",10],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["STKR_Predator",1],
@@ -197,7 +192,7 @@ if (g_class == "BAF_SL") then {
 	[
 		["UK3CB_BAF_556_30Rnd",50],
 		["UK3CB_BAF_556_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_9_17Rnd",15]
     ];
 
 	_tmp_items =
@@ -207,7 +202,7 @@ if (g_class == "BAF_SL") then {
 		["ACE_epinephrine",50],
 		["ACE_bloodIV",50],
 		["ACE_bodyBag",10],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 	    ["UK3CB_BAF_Eotech",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["STKR_Predator",1],
@@ -1056,7 +1051,7 @@ if (g_class == "GER_SL") then {
     _tmp_magazines =
     [	
 		["UK3CB_BAF_L115A3_Mag",50],
-		["UK3CB_BAF_17Rnd_9mm",15]
+		["UK3CB_BAF_9_17Rnd",15]
 	];
 
 	_tmp_items = 
@@ -1090,7 +1085,7 @@ if (g_class == "GER_SL") then {
 		["UK3CB_BAF_L115A3_Mag",10],
 		["UK3CB_BAF_556_30Rnd",50],
 		["UK3CB_BAF_556_30Rnd_T",50],
-		["UK3CB_BAF_17Rnd_9mm",15]
+		["UK3CB_BAF_9_17Rnd",15]
 	];
 
 	_tmp_items = 
@@ -1098,7 +1093,7 @@ if (g_class == "GER_SL") then {
 		
 		["ACE_fieldDressing",20],
 		["ACE_morphine",10],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["UK3CB_BAF_Eotech",1],
 		["STKR_Predator",1],
@@ -1186,7 +1181,7 @@ if (g_class == "GER_SL") then {
     [
         ["UK3CB_BAF_556_30Rnd",50],
 		["UK3CB_BAF_556_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_9_17Rnd",15]
     ];
 	_tmp_items =
 	[
@@ -1199,7 +1194,7 @@ if (g_class == "GER_SL") then {
 		["SatchelCharge_Remote_Mag",1],
 		["DemoCharge_Remote_Mag",1],
 		["ACE_M26_Clacker",1],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["rhsusf_ANPVS_14",1]
 	];
@@ -1218,7 +1213,7 @@ if (g_class == "GER_SL") then {
     [
         ["UK3CB_BAF_556_30Rnd",50],
 		["UK3CB_BAF_556_30Rnd_T",50],
-        ["UK3CB_BAF_17Rnd_9mm",15]
+        ["UK3CB_BAF_9_17Rnd",15]
     ];
 	_tmp_items =
 	[
@@ -1228,7 +1223,7 @@ if (g_class == "GER_SL") then {
 		["ACRE_PRC148",1],
 		["rhsusf_ANPVS_14",1],
 		["ACE_IR_Strobe_Item",1],
-		["UK3CB_BAF_SpecterLDS_Dot_3D",1],
+		["RKSL_optic_LDS",1],
 		["UK3CB_BAF_LLM_IR",1],
 		["ACRE_PRC343",1],
 		["rhsusf_ANPVS_14",1]
@@ -1408,28 +1403,18 @@ if (g_class == "POL_SL") then {
 } forEach _tmp_items;
 
 
-// create and fill the box.
-_box = _boxType createVehicleLocal (getMarkerPos _marker);
-_box setPosATL (getMarkerPos _marker);
-_box allowDamage false;
-while {true} do {
-        refill_box = false;
-        // empty it.
-        clearWeaponCargo _box;
-        clearMagazineCargo _box;
-        clearItemCargo _box;
-		clearbackPackCargo _box;
 
-        // add in all weapons.
-        {_box addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;
+// empty it.
+clearWeaponCargo crateBox;
+clearMagazineCargo crateBox;
+clearItemCargo crateBox;
+clearbackPackCargo crateBox;
 
-        // add in all magazines.
-        {_box addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
+// add in all weapons.
+{crateBox addWeaponCargo [(_x select 0),(_x select 1)]} foreach _weapons;
 
-        {_box addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
+// add in all magazines.
+{crateBox addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
 
+{crateBox addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
 
-
-        // wait x amount of seconds then refill box.
-        sleep _timer;
-};
