@@ -153,6 +153,37 @@ if(isModded == 1)then{
 	clearBackpackCargoGlobal _veh10;
 	[_veh10, 60, 900, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
 	
+	_veh11 = "rhsusf_rg33_m2_usmc_wd" createVehicle (getMarkerPos "veh11");
+	_veh11 setdir _dir;
+	clearItemCargoGlobal _veh11;
+	clearMagazineCargoGlobal _veh11;
+	clearWeaponCargoGlobal _veh11;
+	clearBackpackCargoGlobal _veh11;
+	[_veh11, 60, 900, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
+	
+	_veh12 = "rhsusf_rg33_m2_usmc_wd" createVehicle (getMarkerPos "veh12");
+	_veh12 setdir _dir;
+	clearItemCargoGlobal _veh12;
+	clearMagazineCargoGlobal _veh12;
+	clearWeaponCargoGlobal _veh12;
+	clearBackpackCargoGlobal _veh12;
+	[_veh12, 60, 900, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
+	
+	_veh13 = "CUP_B_FV432_Bulldog_GB_W" createVehicle (getMarkerPos "veh13");
+	_veh13 setdir _dir;
+	clearItemCargoGlobal _veh13;
+	clearMagazineCargoGlobal _veh13;
+	clearWeaponCargoGlobal _veh13;
+	clearBackpackCargoGlobal _veh13;
+	[_veh13, 60, 900, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
+	
+	_veh14 = "CUP_B_FV432_Bulldog_GB_W" createVehicle (getMarkerPos "veh14");
+	_veh14 setdir _dir;
+	clearItemCargoGlobal _veh14;
+	clearMagazineCargoGlobal _veh14;
+	clearWeaponCargoGlobal _veh14;
+	clearBackpackCargoGlobal _veh14;
+	[_veh14, 60, 900, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
 };
 
 if(isModded == 2)then{
