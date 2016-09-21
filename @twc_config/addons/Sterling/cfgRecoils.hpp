@@ -5,7 +5,7 @@
 
 class cfgRecoils
 {
-	#include "cfgRecoilsLegacy.hpp"
+	#include "cfgrecoilslegacy.hpp"
 
 	class Default;
 
