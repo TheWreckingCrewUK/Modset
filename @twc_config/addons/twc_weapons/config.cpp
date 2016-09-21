@@ -1778,12 +1778,12 @@ class CfgVehicles
 		displayName="TWC Modern AmmoBox";
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_30Rnd
+			class _xx_UK3CB_BAF_556_30Rnd
 			{
 				magazine="UK3CB_BAF_556_30Rnd";
 				count=100;
 			};
-			class _xx_UK3CB_BAF_30Rnd_T
+			class _xx_UK3CB_BAF_556_30Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=50;
@@ -1894,12 +1894,12 @@ class CfgVehicles
 		displayName="TWC Modern COIN AmmoBox";
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_30Rnd
+			class _xx_UK3CB_BAF_556_30Rnd
 			{
 				magazine="UK3CB_BAF_556_30Rnd";
 				count=100;
 			};
-			class _xx_UK3CB_BAF_30Rnd_T
+			class _xx_UK3CB_BAF_556_30Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=50;
@@ -2166,12 +2166,12 @@ class CfgVehicles
 		displayName="TWC 1990 Symetrical AmmoBox";
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_30Rnd
+			class _xx_UK3CB_BAF_556_30Rnd
 			{
 				magazine="UK3CB_BAF_556_30Rnd";
 				count=200;
 			};
-			class _xx_UK3CB_BAF_30Rnd_T
+			class _xx_UK3CB_BAF_556_30Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=100;
@@ -2385,12 +2385,12 @@ class CfgVehicles
 		displayName = "TWC Modern SlingBox";
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_30Rnd
+			class _xx_UK3CB_BAF_556_30Rnd
 			{
 				magazine="UK3CB_BAF_556_30Rnd";
 				count=32;
 			};
-			class _xx_UK3CB_BAF_30Rnd_T
+			class _xx_UK3CB_BAF_556_30Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=8;
@@ -2494,12 +2494,12 @@ class CfgVehicles
 		displayName = "TWC Modern COIN SlingBox";
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_30Rnd
+			class _xx_UK3CB_BAF_556_30Rnd
 			{
 				magazine="UK3CB_BAF_556_30Rnd";
 				count=32;
 			};
-			class _xx_UK3CB_BAF_30Rnd_T
+			class _xx_UK3CB_BAF_556_30Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=8;
@@ -2697,12 +2697,12 @@ class CfgVehicles
 		displayName = "TWC 1990 SlingBox";
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_30Rnd
+			class _xx_UK3CB_BAF_556_30Rnd
 			{
 				magazine="UK3CB_BAF_556_30Rnd";
 				count=40;
 			};
-			class _xx_UK3CB_BAF_30Rnd_T
+			class _xx_UK3CB_BAF_556_30Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=10;

@@ -1639,14 +1639,14 @@ class CfgVehicles
 		armor=400;
 		class TransportMagazines
 		{
-				class _xx_UK3CB_BAF_30Rnd
+				class _xx_UK3CB_BAF_556_30Rnd
 				{
-					magazine="UK3CB_BAF_30Rnd";
+					magazine="UK3CB_BAF_556_30Rnd";
 					count=8;
 				};
-				class _xx_UK3CB_BAF_30Rnd_T
+				class _xx_UK3CB_BAF_556_30Rnd_T
 				{
-					magazine="UK3CB_BAF_30Rnd_T";
+					magazine="UK3CB_BAF_556_30Rnd_T";
 					count=2;
 				};
 				class _xx_UK3CB_1Rnd_HE_Grenade_shell
@@ -1778,14 +1778,14 @@ class CfgVehicles
 		armor=400;
 		class TransportMagazines
 		{
-				class _xx_UK3CB_BAF_30Rnd
+				class _xx_UK3CB_BAF_556_30Rnd
 				{
-					magazine="UK3CB_BAF_30Rnd";
+					magazine="UK3CB_BAF_556_30Rnd";
 					count=8;
 				};
-				class _xx_UK3CB_BAF_30Rnd_T
+				class _xx_UK3CB_BAF_556_30Rnd_T
 				{
-					magazine="UK3CB_BAF_30Rnd_T";
+					magazine="UK3CB_BAF_556_30Rnd_T";
 					count=2;
 				};
 				class _xx_UK3CB_1Rnd_HE_Grenade_shell
