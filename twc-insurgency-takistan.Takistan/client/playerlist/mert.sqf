@@ -1,8 +1,6 @@
 //made by hartzie edited by FakeMatty
-_player1 = if(!isPlayer mert_sl)then{""}else{(name mert_sl)};
-_player2 = if(!isPlayer mert_med)then{""}else{(name mert_med)};
-
-
+_player1 = if(!isNil "mert_sl")then{if(!isPlayer mert_sl)then{"";}else{(name mert_sl);};}else{"";};
+_player2 = if(!isNil "mert_med")then{if(!isPlayer mert_med)then{"";}else{(name mert_med);};}else{"";};
 
 
 g_playerlist = [["MERT Team", [["Mert", [_player1, "Lead"],[_player2, "Medic"]]]]					

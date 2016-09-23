@@ -24,6 +24,7 @@ if (isServer) then {
 execVM "client\zeus\zeus.sqf";
 execVM "client\zeus\zeus-jayman.sqf";
 execVM "client\zeus\zeus-Paddock.sqf";
+execVM "client\zeus\warLord1Player.sqf";
 
 waitUntil {!isNull player};
 waitUntil {player == player};

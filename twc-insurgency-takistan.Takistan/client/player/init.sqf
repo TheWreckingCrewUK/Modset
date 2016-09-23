@@ -6,6 +6,16 @@ g_unit = "";
 ["en", "English"] call acre_api_fnc_babelAddLanguageType;
 ["ru", "Pashto"] call acre_api_fnc_babelAddLanguageType;
 
+if (!isNil "warLord1" && {player == warLord1}) then {
+    g_class = "warLord";
+	g_group = "0";
+	g_unit = "300";
+	g_name = "warLord";
+	g_radio = "";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
 if (!isNil "humanCiv1" && {player == humanCiv1}) then {
     g_class = "Civ";
 	g_group = "0";

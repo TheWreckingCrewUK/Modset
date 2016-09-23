@@ -6,7 +6,7 @@ townLocationArray = nearestLocations [getPosATL TWCServer, ["NameVillage","NameC
 				_trg = createTrigger ["EmptyDetector", getPos _x];
 				_trg setTriggerArea [400, 400, 0, false];
 				_trg setTriggerActivation ["West", "PRESENT", False];
-				_trg setTriggerStatements ["(((objectParent (thisList call bis_fnc_selectRandom)) isKindOf 'air') || (getPosATL (thisList call bis_fnc_selectRandom)) select 2 < 25)","[(getPos thisTrigger),8,100,3,[400,400],thisList] call twc_townSetup",""];
+				_trg setTriggerStatements ["(((objectParent (thisList call bis_fnc_selectRandom)) isKindOf 'air') || (getPosATL (thisList call bis_fnc_selectRandom)) select 2 < 25)","[(getPos thisTrigger),8,100,3,[300,400],thisList] call twc_townSetup",""];
 			};
 		
 		}else{
@@ -18,10 +18,9 @@ townLocationArray = nearestLocations [getPosATL TWCServer, ["NameVillage","NameC
 	};
 }forEach townLocationArray;
 
-/*
 {
 	_trg = createTrigger ["EmptyDetector", getMarkerPos _x];
-	_trg setTriggerArea [800, 800, 0, false];
+	_trg setTriggerArea [400, 400, 0, false];
 	_trg setTriggerActivation ["West", "PRESENT", False];
-	_trg setTriggerStatements ["(((objectParent (thisList call bis_fnc_selectRandom)) isKindOf 'air') || (getPosATL (thisList call bis_fnc_selectRandom)) select 2 < 25)","[(getPos thisTrigger),8,300,4,[600,800],thisList] call twc_townSetup",""];
-}forEach ["extraNorthBastam","extraSouthShamali","extraNorthKarachinar"];
+	_trg setTriggerStatements ["(((objectParent (thisList call bis_fnc_selectRandom)) isKindOf 'air') || (getPosATL (thisList call bis_fnc_selectRandom)) select 2 < 25)","[(getPos thisTrigger),4,100,1,[300,400],thisList] call twc_townSetup",""];
+}forEach ["locationA","locationB","locationC","locationD","locationE","locationF"];

@@ -1,5 +1,5 @@
 
-_curator = Twiggy;
+_curator = Zeus;
 _addCivilians = True;
 
 //adds objects placed in editor:

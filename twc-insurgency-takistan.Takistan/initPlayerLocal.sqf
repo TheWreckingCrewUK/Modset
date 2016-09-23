@@ -12,3 +12,7 @@ execVM "client\player\init.sqf";
 execVM "client\init.sqf";
 
 numTimesInsurgent = 0;
+
+player enableFatigue false;
+player setCustomAimCoef 0.4;
+player addEventHandler ["Respawn",{player enableFatigue false; player setCustomAimCoef 0.4;}];

@@ -16,9 +16,9 @@ if (InsP_playerCiv) then {
 
 	player addEventHandler ["Killed",{
 		if (side (_this select 1) == WEST) then{
-			InsP_enemyMorale = InsP_enemyMorale - .5; publicVariable "InsP_enemyMorale";
+			InsP_enemyMorale = InsP_enemyMorale - .01; publicVariable "InsP_enemyMorale";
 		}else{
-			InsP_enemyMorale = InsP_enemyMorale - .1; publicVariable "InsP_enemyMorale";
+			InsP_enemyMorale = InsP_enemyMorale - .01; publicVariable "InsP_enemyMorale";
 			InsP_civTrust = InsP_civTrust + .1; publicVariable "InsP_enemyMorale";
 		};
 	}];

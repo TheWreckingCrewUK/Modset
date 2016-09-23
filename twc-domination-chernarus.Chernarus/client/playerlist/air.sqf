@@ -1,14 +1,11 @@
 //made by hartzie edited by FakeMatty
 
-_player1 = if(!isPlayer helo1)then{""}else{(name helo1)};
-_player2 = if(!isPlayer helo2)then{""}else{(name helo2)};
-_player3 = if(!isPlayer helo3)then{""}else{(name helo3)};
-_player4 = if(!isPlayer jtac1)then{""}else{(name jtac1)};
-_player5 = if(!isPlayer fac1)then{""}else{(name fac1)};
-_player6 = if(!isPlayer jet1)then{""}else{(name jet1)};
-
-
-
+_player1 = if(!isNil "helo1")then{if(!isPlayer helo1)then{"";}else{(name helo1);};}else{"";};
+_player2 = if(!isNil "helo2")then{if(!isPlayer helo2)then{"";}else{(name helo2);};}else{"";};
+_player3 = if(!isNil "helo3")then{if(!isPlayer helo3)then{"";}else{(name helo3);};}else{"";};
+_player4 = if(!isNil "jtac1")then{if(!isPlayer jtac1)then{"";}else{(name jtac1);};}else{"";};
+_player5 = if(!isNil "fac1")then{if(!isPlayer fac1)then{"";}else{(name fac1);};}else{"";};
+_player6 = if(!isNil "jet1")then{if(!isPlayer jet1)then{"";}else{(name jet1);};}else{"";};
 
 g_playerlist = [["Air Assets", [["Wildcat/Chinook", [_player1, "Pilot"]],["BlackHawk/Osprey", [_player2, "Pilot"]],["Venom/Super-Stallion", [_player3, "Pilot"]],["A/10",[_player4, "JTAC"],[_player5, "FAC"],[_player6, "Pilot"]]]]				
 				
