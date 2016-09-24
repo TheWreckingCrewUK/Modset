@@ -439,7 +439,7 @@ class CfgVehicles
 			};
 			class _xx_Box_Stanag_T
 			{
-				magazine = "UK3CB_BAF_200Rnd_T";
+				magazine = "UK3CB_BAF_556_30Rnd_T";
 				count = 1;
 			};
             class _xx_Stanag
@@ -641,7 +641,7 @@ class CfgVehicles
 			};
 			class _xx_Box_Stanag_T
 			{
-				magazine = "UK3CB_BAF_200Rnd_T";
+				magazine = "UK3CB_BAF_556_30Rnd_T";
 				count = 1;
 			};
             class _xx_Stanag
@@ -751,7 +751,7 @@ class CfgVehicles
 			};
 			class _xx_Box_Stanag_T
 			{
-				magazine = "UK3CB_BAF_200Rnd_T";
+				magazine = "UK3CB_BAF_556_30Rnd_T";
 				count = 1;
 			};
             class _xx_Stanag
@@ -1808,14 +1808,14 @@ class CfgVehicles
 				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 				count=20;
 			};
-			class _xx_UK3CB_BAF_200Rnd
+			class _xx_UK3CB_BAF_556_30Rnd
 			{
 				magazine="UK3CB_BAF_556_200Rnd";
 				count=30;
 			};
-			class _xx_UK3CB_BAF_200Rnd_T
+			class _xx_UK3CB_BAF_556_30Rnd_T
 			{
-				magazine="UK3CB_BAF_200Rnd_T";
+				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=30;
 			};
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
@@ -1924,14 +1924,14 @@ class CfgVehicles
 				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 				count=20;
 			};
-			class _xx_UK3CB_BAF_200Rnd
+			class _xx_UK3CB_BAF_556_30Rnd
 			{
 				magazine="UK3CB_BAF_556_200Rnd";
 				count=30;
 			};
-			class _xx_UK3CB_BAF_200Rnd_T
+			class _xx_UK3CB_BAF_556_30Rnd_T
 			{
-				magazine="UK3CB_BAF_200Rnd_T";
+				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=30;
 			};
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
@@ -2415,14 +2415,14 @@ class CfgVehicles
 				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 				count=2;
 			};
-			class _xx_UK3CB_BAF_200Rnd
+			class _xx_UK3CB_BAF_556_30Rnd
 			{
 				magazine="UK3CB_BAF_556_200Rnd";
 				count=4;
 			};
-			class _xx_UK3CB_BAF_200Rnd_T
+			class _xx_UK3CB_BAF_556_30Rnd_T
 			{
-				magazine="UK3CB_BAF_200Rnd_T";
+				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=2;
 			};
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
@@ -2524,14 +2524,14 @@ class CfgVehicles
 				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 				count=2;
 			};
-			class _xx_UK3CB_BAF_200Rnd
+			class _xx_UK3CB_BAF_556_30Rnd
 			{
 				magazine="UK3CB_BAF_556_200Rnd";
 				count=4;
 			};
-			class _xx_UK3CB_BAF_200Rnd_T
+			class _xx_UK3CB_BAF_556_30Rnd_T
 			{
-				magazine="UK3CB_BAF_200Rnd_T";
+				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=2;
 			};
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell

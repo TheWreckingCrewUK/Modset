@@ -1684,14 +1684,14 @@ class CfgVehicles
 					magazine="UK3CB_BAF_20Rnd_T";
 					count=1;
 				};
-				class _xx_UK3CB_BAF_200Rnd
+				class _xx_UK3CB_BAF_556_30Rnd
 				{
-					magazine="UK3CB_BAF_200Rnd";
+					magazine="UK3CB_BAF_556_30Rnd";
 					count=2;
 				};
-				class _xx_UK3CB_BAF_200Rnd_T
+				class _xx_UK3CB_BAF_556_30Rnd_T
 				{
-					magazine="UK3CB_BAF_200Rnd_T";
+					magazine="UK3CB_BAF_556_30Rnd_T";
 					count=1;
 				};
 		};
@@ -1823,14 +1823,14 @@ class CfgVehicles
 					magazine="UK3CB_BAF_20Rnd_T";
 					count=1;
 				};
-				class _xx_UK3CB_BAF_200Rnd
+				class _xx_UK3CB_BAF_556_30Rnd
 				{
-					magazine="UK3CB_BAF_200Rnd";
+					magazine="UK3CB_BAF_556_30Rnd";
 					count=2;
 				};
-				class _xx_UK3CB_BAF_200Rnd_T
+				class _xx_UK3CB_BAF_556_30Rnd_T
 				{
-					magazine="UK3CB_BAF_200Rnd_T";
+					magazine="UK3CB_BAF_556_30Rnd_T";
 					count=1;
 				};
 		};
