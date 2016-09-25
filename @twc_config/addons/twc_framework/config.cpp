@@ -10,7 +10,7 @@ class CfgPatches
 		requiredVersion=1.54;
 		requiredAddons[]=
 		{
-
+			"cba_ai"
 		};
 		author[]=
 		{

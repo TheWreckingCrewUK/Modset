@@ -30,9 +30,8 @@ class cfgWeapons
 	class UK3CB_BAF_L128A1;
 	class UK3CB_BAF_L7A2;
 	class UK3CB_BAF_L22A2;
-	class hlc_rifle_SLR;
 	class CUP_launch_FIM92Stinger;
-	class RKSL_optic_LDS_PIP;
+	class RKSL_optic_LDS;
 	class tf47_m3maaws;
 	class kio_Elcan_reflex;
 	class UK3CB_BAF_L86A2;
@@ -85,7 +84,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="RKSL_optic_LDS_PIP";
+				item="RKSL_optic_LDS";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -103,7 +102,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L110A2";
-				item="RKSL_optic_LDS_PIP";
+				item="RKSL_optic_LDS";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -157,7 +156,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="RKSL_optic_LDS_PIP";
+				item="RKSL_optic_LDS";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -175,7 +174,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L7A2";
-				item="RKSL_optic_LDS_PIP";
+				item="RKSL_optic_LDS";
 			};
 		};
 	};
@@ -189,19 +188,6 @@ class cfgWeapons
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
 				item="UK3CB_BAF_SUSAT_3D";
-			};
-		};
-	};
-	class hlc_rifle_SLR_Suit:hlc_rifle_SLR
-	{
-		scope = 1;
-		author="FakeMatty";
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot="CowsSlot";
-				item="hlc_optic_suit";
 			};
 		};
 	};
@@ -1808,12 +1794,12 @@ class CfgVehicles
 				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 				count=20;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd
+			class _xx_UK3CB_BAF_556_200Rnd
 			{
 				magazine="UK3CB_BAF_556_200Rnd";
 				count=30;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd_T
+			class _xx_UK3CB_BAF_556_200Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=30;
@@ -1924,12 +1910,12 @@ class CfgVehicles
 				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 				count=20;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd
+			class _xx_UK3CB_BAF_556_200Rnd
 			{
 				magazine="UK3CB_BAF_556_200Rnd";
 				count=30;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd_T
+			class _xx_UK3CB_BAF_556_200Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=30;
@@ -2415,12 +2401,12 @@ class CfgVehicles
 				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 				count=2;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd
+			class _xx_UK3CB_BAF_556_200Rnd
 			{
 				magazine="UK3CB_BAF_556_200Rnd";
 				count=4;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd_T
+			class _xx_UK3CB_BAF_556_200Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=2;
@@ -2524,12 +2510,12 @@ class CfgVehicles
 				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 				count=2;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd
+			class _xx_UK3CB_BAF_556_200Rnd
 			{
 				magazine="UK3CB_BAF_556_200Rnd";
 				count=4;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd_T
+			class _xx_UK3CB_BAF_556_200Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=2;

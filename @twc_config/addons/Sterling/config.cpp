@@ -6,7 +6,7 @@ class CfgPatches
 		units[]={};
 		weapons[]={"TWC_Sterling_Sub"};
 		requiredVersion=0.1;
-		requiredAddons[]={};
+		requiredAddons[]={"cup_baseconfigs"};
 	};
 };
 /// All firemodes, to be sure

@@ -2,10 +2,19 @@ class CfgPatches
 {
 	class unit_config
 	{
-		units[]=
-		{
+		units[]={
+			"twc_landrover_W",
+			"twc_landrover_D",
+			"twc_landrover_W_1990",
+			"twc_landrover_D_1990",
+			"twc_landrover_W_ColdWar",
+			"twc_landrover_D_ColdWar",
+			"TWC_Warrior_D",
 			"TWC_Warrior_W",
-			"TWC_Warrior_D"
+			"twc_wildcat",
+			"twc_puma",
+			"twc_c5_hercules"
+			
 		};
 		weapons[]=
 		{
@@ -15,24 +24,22 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"cup_trackedvehicles_mcv80",
-			"ace_interaction",
-			"A3_Air_F",
-			"A3_Weapons_F",
-			"A3_Soft_F",
-			"A3_data_F"
+			"cup_wheeledvehicles_lr",
+			"cup_trackedvehicles_fv510",
+			"dg_ukbaf",
+			"uk3cb_baf_vehicles_wildcat",
+			"cup_airvehicles_c130j"
 		};
-		magazines[]={};
 	};
 };
 class CfgFunctions
 {
-	class twc_ifv
+	class twc_vehicles
 	{
 		tag="TWC";
 		class FunctionsWarrior
 		{
-			file="twc_ifv\functions";
+			file="twc_vehicles\functions";
 			class AddAP
 			{
 			};
@@ -56,9 +63,9 @@ class CfgFunctions
 };
 class Extended_PostInit_EventHandlers
 {
-	class TWC_IFV_Init
+	class twc_vehicles_Init
 	{
-		init="execVM '\twc_ifv\init.sqf';";
+		init="execVM '\twc_vehicles\init.sqf';";
 	};
 };
 class CfgMagazines
@@ -110,7 +117,7 @@ class CfgWeapons
 	class TWC_30mm_HE_item: ACE_ItemCore
 	{
 		scope=2;
-		picture="\twc_ifv\pictures\30mmHE.paa";
+		picture="\twc_vehicles\pictures\30mmHE.paa";
 		displayName="30mm HE";
 		descriptionShort="Adds 1 magazine of HE ammo to a warrior.";
 		descriptionUse="";
@@ -122,7 +129,7 @@ class CfgWeapons
 	class TWC_30mm_AP_item: ACE_ItemCore
 	{
 		scope=2;
-		picture="\twc_ifv\pictures\30mmAP.paa";
+		picture="\twc_vehicles\pictures\30mmAP.paa";
 		displayName="30mm AP";
 		descriptionShort="Adds 1 magazine of AP ammo to a warrior.";
 		descriptionUse="";
@@ -134,6 +141,566 @@ class CfgWeapons
 };
 class CfgVehicles
 {
+	class CUP_B_LR_Transport_GB_W;
+	class CUP_B_LR_Transport_GB_D;
+	class twc_landrover_W: CUP_B_LR_Transport_GB_W
+	{
+		scope = 2;
+		side = 1;
+		faction="Veh_units";
+		displayname = "Landrover Woodland (Modern)";
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_30Rnd
+			{
+				magazine="UK3CB_BAF_30Rnd";
+				count=8;
+			};
+			class _xx_UK3CB_BAF_30Rnd_T
+			{
+				magazine="UK3CB_BAF_30Rnd_T";
+				count=2;
+			};
+			class _xx_UK3CB_1Rnd_HE_Grenade_shell
+			{
+				magazine="1Rnd_HE_Grenade_shell";
+				count=2;
+			};
+			class _xx_UK3CB_UGL_FlareWhite_F
+			{
+				magazine="UGL_FlareWhite_F";
+				count=2;
+			};
+			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
+			{
+				magazine="1Rnd_Smoke_Grenade_shell";
+				count=2;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=4;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_20Rnd
+			{
+				magazine="UK3CB_BAF_20Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_20Rnd_T
+			{
+				magazine="UK3CB_BAF_20Rnd_T";
+				count=1;
+			};
+			class _xx_UK3CB_BAF_556_30Rnd
+			{
+				magazine="UK3CB_BAF_556_30Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_556_30Rnd_T
+			{
+				magazine="UK3CB_BAF_556_30Rnd_T";
+				count=1;
+			};
+			class _xx_Belt
+			{
+				magazine = "UK3CB_BAF_75Rnd";
+				count = 1;
+			};
+			class _xx_Belt_T
+			{
+				magazine = "UK3CB_BAF_75Rnd_T";
+				count = 1;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_NLAW
+			{
+				Weapon = "UK3CB_BAF_NLAW_Launcher";
+				count = 1;
+			};
+			class _xx_LAW
+			{
+				Weapon = "HAFM_LAW";
+				count = 1;
+			};
+		};
+	};
+	class twc_landrover_D: CUP_B_LR_Transport_GB_D
+	{
+		scope = 2;
+		side = 1;
+		faction="Veh_units";
+		displayname = "Landrover Desert (Modern)";
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_30Rnd
+			{
+				magazine="UK3CB_BAF_30Rnd";
+				count=8;
+			};
+			class _xx_UK3CB_BAF_30Rnd_T
+			{
+				magazine="UK3CB_BAF_30Rnd_T";
+				count=2;
+			};
+			class _xx_UK3CB_1Rnd_HE_Grenade_shell
+			{
+				magazine="1Rnd_HE_Grenade_shell";
+				count=2;
+			};
+			class _xx_UK3CB_UGL_FlareWhite_F
+			{
+				magazine="UGL_FlareWhite_F";
+				count=2;
+			};
+			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
+			{
+				magazine="1Rnd_Smoke_Grenade_shell";
+				count=2;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=4;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_20Rnd
+			{
+				magazine="UK3CB_BAF_20Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_20Rnd_T
+			{
+				magazine="UK3CB_BAF_20Rnd_T";
+				count=1;
+			};
+			class _xx_UK3CB_BAF_556_30Rnd
+			{
+				magazine="UK3CB_BAF_556_30Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_556_30Rnd_T
+			{
+				magazine="UK3CB_BAF_556_30Rnd_T";
+				count=1;
+			};
+			class _xx_Belt
+			{
+				magazine = "UK3CB_BAF_75Rnd";
+				count = 1;
+			};
+			class _xx_Belt_T
+			{
+				magazine = "UK3CB_BAF_75Rnd_T";
+				count = 1;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 5;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_NLAW
+			{
+				Weapon = "UK3CB_BAF_NLAW_Launcher";
+				count = 1;
+			};
+			class _xx_LAW
+			{
+				Weapon = "HAFM_LAW";
+				count = 1;
+			};
+		};
+	};
+	class twc_landrover_W_1990: CUP_B_LR_Transport_GB_W
+	{
+		scope = 2;
+		side = 1;
+		faction="Veh_units";
+		displayname = "Landrover Woodland (90`s)";
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_30Rnd
+			{
+				magazine="UK3CB_BAF_30Rnd";
+				count=25;
+			};
+			class _xx_UK3CB_BAF_30Rnd_T
+			{
+				magazine="UK3CB_BAF_30Rnd_T";
+				count=5;
+			};
+			class _xx_UK3CB_1Rnd_HE_Grenade_shell
+			{
+				magazine="1Rnd_HE_Grenade_shell";
+				count=8;
+			};
+			class _xx_UK3CB_UGL_FlareWhite_F
+			{
+				magazine="UGL_FlareWhite_F";
+				count=4;
+			};
+			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
+			{
+				magazine="1Rnd_Smoke_Grenade_shell";
+				count=4;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=8;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=8;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 5;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_AT4
+			{
+				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
+				count = 2;
+			};
+		};
+	};
+	class twc_landrover_D_1990: CUP_B_LR_Transport_GB_D
+	{
+		scope = 2;
+		side = 1;
+		faction="Veh_units";
+		displayname = "Landrover Desert (90`s)";
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_30Rnd
+			{
+				magazine="UK3CB_BAF_30Rnd";
+				count=25;
+			};
+			class _xx_UK3CB_BAF_30Rnd_T
+			{
+				magazine="UK3CB_BAF_30Rnd_T";
+				count=5;
+			};
+			class _xx_UK3CB_1Rnd_HE_Grenade_shell
+			{
+				magazine="1Rnd_HE_Grenade_shell";
+				count=8;
+			};
+			class _xx_UK3CB_UGL_FlareWhite_F
+			{
+				magazine="UGL_FlareWhite_F";
+				count=4;
+			};
+			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
+			{
+				magazine="1Rnd_Smoke_Grenade_shell";
+				count=4;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=8;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=8;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 5;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_AT4
+			{
+				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
+				count = 2;
+			};
+		};
+	};
+	class twc_landrover_W_ColdWar: CUP_B_LR_Transport_GB_W
+	{
+		scope = 2;
+		side = 1;
+		faction="Veh_units";
+		displayname = "Landrover Woodland (Coldwar)";
+		class TransportMagazines
+		{
+			class _xx_hlc_20Rnd_762x51_B_fal
+			{
+				magazine="hlc_20Rnd_762x51_B_fal";
+				count=8;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine="UK3CB_BAF_75Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine="UK3CB_BAF_75Rnd_T";
+				count=1;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine="ACE_HandFlare_White";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine="tf47_m3maaws_HEAT";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine="tf47_m3maaws_HE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_SMOKE
+			{
+				magazine="tf47_m3maaws_SMOKE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_ILLUM
+			{
+				magazine="tf47_m3maaws_ILLUM";
+				count=2;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=8;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=6;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 5;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_LAW
+			{
+				Weapon = "HAFM_LAW";
+				count = 2;
+			};
+		};
+	};
+	class twc_landrover_D_ColdWar: CUP_B_LR_Transport_GB_D
+	{
+		scope = 2;
+		side = 1;
+		faction="Veh_units";
+		displayname = "Landrover Desert (Coldwar)";
+		class TransportMagazines
+		{
+			class _xx_hlc_20Rnd_762x51_B_fal
+			{
+				magazine="hlc_20Rnd_762x51_B_fal";
+				count=10;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine="UK3CB_BAF_75Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine="UK3CB_BAF_75Rnd_T";
+				count=1;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine="ACE_HandFlare_White";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine="tf47_m3maaws_HEAT";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine="tf47_m3maaws_HE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_SMOKE
+			{
+				magazine="tf47_m3maaws_SMOKE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_ILLUM
+			{
+				magazine="tf47_m3maaws_ILLUM";
+				count=2;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=8;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=6;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 5;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_LAW
+			{
+				Weapon = "HAFM_LAW";
+				count = 2;
+			};
+		};
+	};
 	class LandVehicle;
 	class Tank: LandVehicle
 	{
@@ -1684,16 +2251,6 @@ class CfgVehicles
 					magazine="UK3CB_BAF_20Rnd_T";
 					count=1;
 				};
-				class _xx_UK3CB_BAF_556_30Rnd
-				{
-					magazine="UK3CB_BAF_556_30Rnd";
-					count=2;
-				};
-				class _xx_UK3CB_BAF_556_30Rnd_T
-				{
-					magazine="UK3CB_BAF_556_30Rnd_T";
-					count=1;
-				};
 		};
 		class TransportItems
 		{
@@ -1823,15 +2380,114 @@ class CfgVehicles
 					magazine="UK3CB_BAF_20Rnd_T";
 					count=1;
 				};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 5;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_NLAW
+				{
+					Weapon = "UK3CB_BAF_NLAW_Launcher";
+					count = 1;
+				};
+			class _xx_LAW
+				{
+					Weapon = "HAFM_LAW";
+					count = 1;
+				};
+		};
+	};
+	class UK3CB_BAF_Wildcat_AH1_CAS_8A;
+	class BAF_Puma_CE_DG1;
+	class twc_wildcat: UK3CB_BAF_Wildcat_AH1_CAS_8A
+	{
+		scope = 2;
+		side = 1;
+		faction="Veh_units";
+		author = "3CB";
+		displayname = "Wildcat";
+		class TransportMagazines
+		{
 				class _xx_UK3CB_BAF_556_30Rnd
 				{
 					magazine="UK3CB_BAF_556_30Rnd";
-					count=2;
+					count=8;
 				};
 				class _xx_UK3CB_BAF_556_30Rnd_T
 				{
 					magazine="UK3CB_BAF_556_30Rnd_T";
+					count=2;
+				};
+				class _xx_UK3CB_1Rnd_HE_Grenade_shell
+				{
+					magazine="1Rnd_HE_Grenade_shell";
+					count=2;
+				};
+				class _xx_UK3CB_UGL_FlareWhite_F
+				{
+					magazine="UGL_FlareWhite_F";
+					count=2;
+				};
+				class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
+				{
+					magazine="1Rnd_Smoke_Grenade_shell";
+					count=2;
+				};
+				class _xx_SmokeShell
+				{
+					magazine="SmokeShell";
+					count=4;
+				};
+				class _xx_Grenade
+				{
+					magazine="CUP_HandGrenade_L109A2_HE";
+					count=2;
+				};
+				class _xx_UK3CB_BAF_20Rnd
+				{
+					magazine="UK3CB_BAF_20Rnd";
+					count=2;
+				};
+				class _xx_UK3CB_BAF_20Rnd_T
+				{
+					magazine="UK3CB_BAF_20Rnd_T";
 					count=1;
+				};
+				class _xx_Belt
+				{
+					magazine = "UK3CB_BAF_75Rnd";
+					count = 1;
+				};
+				class _xx_Belt_T
+				{
+					magazine = "UK3CB_BAF_75Rnd_T";
+					count = 1;
 				};
 		};
 		class TransportItems
@@ -1874,6 +2530,127 @@ class CfgVehicles
 					Weapon = "HAFM_LAW";
 					count = 1;
 				};
+		};
+		class TransportBackpacks
+		{
+		};
+	};
+	class twc_puma: BAF_Puma_CE_DG1
+	{
+		scope = 2;
+		side = 1;
+		faction="Veh_units";
+		author = "DG";
+		displayname = "Puma HC1";
+		class TransportMagazines
+		{
+			class _xx_hlc_20Rnd_762x51_B_fal
+			{
+				magazine="hlc_20Rnd_762x51_B_fal";
+				count=8;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine="UK3CB_BAF_75Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine="UK3CB_BAF_75Rnd_T";
+				count=1;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine="ACE_HandFlare_White";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine="tf47_m3maaws_HEAT";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine="tf47_m3maaws_HE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_SMOKE
+			{
+				magazine="tf47_m3maaws_SMOKE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_ILLUM
+			{
+				magazine="tf47_m3maaws_ILLUM";
+				count=2;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=8;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=6;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 5;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_LAW
+			{
+				Weapon = "HAFM_LAW";
+				count = 2;
+			};
+		};
+	};
+	class CUP_B_C130J_GB;
+	class twc_c5_hercules: CUP_B_C130J_GB
+	{
+		scope=2;
+		side=1;
+		faction="Veh_units";
+		author="CUP";
+		displayname="C5 Hercules";
+		class TransportMagazines
+		{
+			
+		};
+		class TransportItems
+		{
+		
+		};
+		class TransportWeapons
+		{
+			
 		};
 	};
 };

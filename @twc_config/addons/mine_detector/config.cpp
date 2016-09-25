@@ -7,7 +7,7 @@ class CfgPatches
 		requiredVersion=1;
 		requiredAddons[]=
 		{
-			"Extended_EventHandlers"
+			"CBA_Extended_EventHandlers"
 		};
 		magazines[]={};
 		ammo[]={};

@@ -28,7 +28,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"A3_Weapons_F"
+			"A3_Weapons_F",
+			"cup_baseconfigs"
 		};
 		version="1";
 		projectName="TWC";
