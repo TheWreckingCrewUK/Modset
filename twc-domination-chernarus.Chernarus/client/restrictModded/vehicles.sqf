@@ -3,6 +3,7 @@ Script by [TWC] jayman. Vehicle restriction through event handlers. Should cause
 The old one by Sa-Matra relied on a while{true}do{} loop which is shitty.
 */
 _specialCases = ["helo1","helo2","helo3","armour1","armour2","armour3"];
+allowedVehicles = ["rhsusf_m113_usarmy","rhsusf_m113_usarmy_MK19","CUP_B_FV432_Bulldog_GB_W"];
 if(str player in _specialCases)then{
 	if(str player == "helo1")then{
 		player addEventHandler ["getInMan",{
@@ -88,9 +89,13 @@ if(str player in _specialCases)then{
 	player addEventHandler ["getInMan",{
 		if((_this select 1) != "cargo")then{
 			if((_this select 2) isKindOf "Tank" || (_this select 2) isKindOf "Air")then{
-				hint "You are a grunt. You may only be a passenger in helicopters and armour";
-				(_this select 0) action ["eject", (_this select 2)];
-				(_this select 0) action ["getout", (_this select 2)];
+				if(typeOf (_this select 2) in allowedVehicles)then{
+				
+				}else{
+					hint "You are a grunt. You may only be a passenger in helicopters and armour";
+					(_this select 0) action ["eject", (_this select 2)];
+					(_this select 0) action ["getout", (_this select 2)];
+				};
 			};
 		};
 	}];
