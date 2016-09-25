@@ -32,7 +32,7 @@ comment "Add weapons";
 player addWeapon "rhs_weap_m249_pip";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bkA";
 player addPrimaryWeaponItem "rhsusf_acc_ELCAN";
-player addWeapon "UK3CB_BAF_AT4_AP_Launcher";
+player addWeapon "rhs_weap_M136_hp";
 
 comment "Add items";
 player linkItem "ItemMap";

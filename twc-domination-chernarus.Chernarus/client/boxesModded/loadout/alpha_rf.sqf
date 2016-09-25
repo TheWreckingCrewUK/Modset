@@ -33,7 +33,7 @@ comment "Add weapons";
 player addWeapon "UK3CB_BAF_L85A2_RIS";
 player addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
 player addPrimaryWeaponItem "RKSL_optic_LDS";
-player addWeapon "UK3CB_BAF_NLAW_Launcher";
+player addWeapon "launch_NLAW_F";
 
 comment "Add items";
 player linkItem "ItemMap";

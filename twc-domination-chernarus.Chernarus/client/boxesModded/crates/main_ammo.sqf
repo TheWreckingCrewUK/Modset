@@ -65,9 +65,9 @@ if (g_class == "alpha_sl") then {
 		["UK3CB_BAF_L128A1",1],
 		["UK3CB_BAF_L131A1",1],
 		["rhs_weap_m72a7",2],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
-		["UK3CB_BAF_NLAW_Launcher",3],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
+		["launch_NLAW_F",3],
 		["UK3CB_BAF_Javelin_Slung_Tube",3],
 		["UK3CB_BAF_M6",1],
 		["UK3CB_BAF_Tripod",1],
@@ -112,9 +112,9 @@ if (g_class == "alpha_sl") then {
         ["UK3CB_BAF_L85A2_UGL",1],
         ["ACE_Vector",1],
 		["UK3CB_BAF_L131A1",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
-		["UK3CB_BAF_NLAW_Launcher",3],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
+		["launch_NLAW_F",3],
 		["rhs_weap_m72a7",2],
 		["UK3CB_BAF_M6",1],
 		["UK3CB_BAF_Tripod",1],
@@ -162,8 +162,8 @@ if (g_class == "alpha_sl") then {
     _tmp_weapons =
     [
         ["UK3CB_BAF_L110A2",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["UK3CB_BAF_L131A1",1],
 		["rhs_weap_m72a7",2]
 	];
@@ -195,8 +195,8 @@ if (g_class == "alpha_sl") then {
     _tmp_weapons =
     [
 		["UK3CB_BAF_L85A2_RIS",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["ACE_Vector",1],
 		["ACE_MX2A",1],
 		["Binocular",1],
@@ -262,9 +262,9 @@ if (g_class == "alpha_sl") then {
 		["ACE_Vector",1],
 		["UK3CB_BAF_L131A1",1],
 		["rhs_weap_m72a7",2],
-		["UK3CB_BAF_NLAW_Launcher",3],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["launch_NLAW_F",3],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["UK3CB_BAF_Javelin_Slung_Tube",3]
 	];
        
@@ -384,8 +384,8 @@ if (g_class == "bravo_tl") then {
         ["ACE_Vector",1],
 		["ACE_MX2A",1],
 		["Binocular",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["rhs_weap_m72a7",2],
 		["rhsusf_weap_m9",1]
     ];
@@ -431,8 +431,8 @@ if (g_class == "bravo_tl") then {
         ["rhs_weap_m4a1_carryhandle_grip",1],
 		["rhs_weap_M590_8RD",1],
 		["rhsusf_weap_m9",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["rhs_weap_m72a7",2],
 		["CUP_launch_MAAWS",1],
 		["UK3CB_BAF_M6",1]
@@ -485,8 +485,8 @@ if (g_class == "bravo_tl") then {
     _tmp_weapons =
     [
         ["rhs_weap_m249_pip",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["rhs_weap_m72a7",2],
 		["rhsusf_weap_m9",1]
 	];
@@ -520,8 +520,8 @@ if (g_class == "bravo_tl") then {
         ["rhs_weap_m4a1_carryhandle_m203",1],
 		["ACE_Vector",1],
 		["rhsusf_weap_m9",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["rhs_weap_m72a7",2]
 	];
 
@@ -578,8 +578,8 @@ if (g_class == "bravo_tl") then {
 		["rhs_weap_m4a1_carryhandle_grip",1],
 		["rhsusf_weap_m9",1],
 		["ACE_Vector",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["rhs_weap_m72a7",2],
 		["UK3CB_BAF_Javelin_Slung_Tube",3]		
 	];
@@ -705,8 +705,8 @@ if (g_class == "bravo_tl") then {
         ["ACE_Vector",1],
 		["ACE_MX2A",1],
 		["Binocular",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["rhs_weap_m72a7",2],
 		["rhsusf_weap_m1911a1",1]
     ];
@@ -754,8 +754,8 @@ if (g_class == "bravo_tl") then {
 		["rhs_weap_smaw",1],
 		["rhs_weap_M590_8RD",1],
 		["rhs_weap_m32",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2]
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2]
 	];
 
     _tmp_magazines =
@@ -819,8 +819,8 @@ if (g_class == "charlie_ar") then {
     [
         ["rhs_weap_m249_pip",1],
 		["rhs_weap_m27iar",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["rhs_weap_m72a7",2],
 		["rhsusf_weap_m1911a1",1]
 	];
@@ -858,8 +858,8 @@ if (g_class == "charlie_ar") then {
     [
         ["rhs_weap_m16a4_grip",1],
 		["rhsusf_weap_m1911a1",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["rhs_weap_m72a7",2],
 		["UK3CB_BAF_M6",1]
 	];
@@ -939,8 +939,8 @@ if (g_class == "charlie_ar") then {
     [
         ["rhs_weap_m16a4_grip",1],
 		["rhsusf_weap_m1911a1",1],
-		["UK3CB_BAF_AT4_CS_AT_Launcher",2],
-		["UK3CB_BAF_AT4_CS_AP_Launcher",2],
+		["rhs_weap_M136_hp",2],
+		["rhs_weap_M136_hedp",2],
 		["rhs_weap_m72a7",2]
 	];
 

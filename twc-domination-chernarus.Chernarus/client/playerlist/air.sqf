@@ -7,7 +7,7 @@ _player4 = if(!isNil "jtac1")then{if(!isPlayer jtac1)then{"";}else{(name jtac1);
 _player5 = if(!isNil "fac1")then{if(!isPlayer fac1)then{"";}else{(name fac1);};}else{"";};
 _player6 = if(!isNil "jet1")then{if(!isPlayer jet1)then{"";}else{(name jet1);};}else{"";};
 
-g_playerlist = [["Air Assets", [["Wildcat/Chinook", [_player1, "Pilot"]],["BlackHawk/Osprey", [_player2, "Pilot"]],["Venom/Super-Stallion", [_player3, "Pilot"]],["A/10",[_player4, "JTAC"],[_player5, "FAC"],[_player6, "Pilot"]]]]				
+g_playerlist = [["Air Assets", [["Wildcat/Merlin", [_player1, "Pilot"]],["BlackHawk/Osprey", [_player2, "Pilot"]],["Venom/Super-Stallion", [_player3, "Pilot"]],["A/10",[_player4, "JTAC"],[_player5, "FAC"],[_player6, "Pilot"]]]]				
 				
 				];
 
