@@ -1801,7 +1801,7 @@ class CfgVehicles
 			};
 			class _xx_UK3CB_BAF_556_200Rnd_T
 			{
-				magazine="UK3CB_BAF_556_30Rnd_T";
+				magazine="UK3CB_BAF_556_200Rnd_T";
 				count=30;
 			};
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
@@ -1862,7 +1862,7 @@ class CfgVehicles
 		{
 			class _xx_NLAW
 				{
-					Weapon = "UK3CB_BAF_NLAW_Launcher";
+					Weapon = "launch_NLAW_F";
 					count = 10;
 				};
 			class _xx_LAW
@@ -2464,7 +2464,7 @@ class CfgVehicles
 		{
 			class _xx_NLAW
 				{
-					Weapon = "UK3CB_BAF_NLAW_Launcher";
+					Weapon = "launch_NLAW_F";
 					count = 2;
 				};
 			class _xx_LAW

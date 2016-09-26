@@ -153,12 +153,12 @@ class CfgVehicles
 		{
 			class _xx_UK3CB_BAF_30Rnd
 			{
-				magazine="UK3CB_BAF_30Rnd";
+				magazine="UK3CB_BAF_556_30Rnd";
 				count=8;
 			};
 			class _xx_UK3CB_BAF_30Rnd_T
 			{
-				magazine="UK3CB_BAF_30Rnd_T";
+				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=2;
 			};
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
@@ -196,24 +196,24 @@ class CfgVehicles
 				magazine="UK3CB_BAF_20Rnd_T";
 				count=1;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd
+			class _xx_UK3CB_BAF_200Rnd
 			{
-				magazine="UK3CB_BAF_556_30Rnd";
+				magazine="UK3CB_BAF_556_200Rnd";
 				count=2;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd_T
+			class _xx_UK3CB_BAF_556_200Rnd_T
 			{
-				magazine="UK3CB_BAF_556_30Rnd_T";
+				magazine="UK3CB_BAF_556_200Rnd_T";
 				count=1;
 			};
 			class _xx_Belt
 			{
-				magazine = "UK3CB_BAF_75Rnd";
+				magazine = "UK3CB_BAF_762_100Rnd";
 				count = 1;
 			};
 			class _xx_Belt_T
 			{
-				magazine = "UK3CB_BAF_75Rnd_T";
+				magazine = "UK3CB_BAF_762_100Rnd_T";
 				count = 1;
 			};
 		};
@@ -221,7 +221,7 @@ class CfgVehicles
 		{
 			class _xx_NLAW
 			{
-				Weapon = "UK3CB_BAF_NLAW_Launcher";
+				Weapon = "launch_NLAW_F";
 				count = 1;
 			};
 			class _xx_LAW
@@ -241,12 +241,12 @@ class CfgVehicles
 		{
 			class _xx_UK3CB_BAF_30Rnd
 			{
-				magazine="UK3CB_BAF_30Rnd";
+				magazine="UK3CB_BAF_556_30Rnd";
 				count=8;
 			};
 			class _xx_UK3CB_BAF_30Rnd_T
 			{
-				magazine="UK3CB_BAF_30Rnd_T";
+				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=2;
 			};
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
@@ -284,24 +284,24 @@ class CfgVehicles
 				magazine="UK3CB_BAF_20Rnd_T";
 				count=1;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd
+			class _xx_UK3CB_BAF_556_200Rnd
 			{
-				magazine="UK3CB_BAF_556_30Rnd";
+				magazine="UK3CB_BAF_556_200Rnd";
 				count=2;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd_T
+			class _xx_UK3CB_BAF_556_200Rnd_T
 			{
-				magazine="UK3CB_BAF_556_30Rnd_T";
+				magazine="UK3CB_BAF_556_200Rnd_T";
 				count=1;
 			};
 			class _xx_Belt
 			{
-				magazine = "UK3CB_BAF_75Rnd";
+				magazine = "UK3CB_BAF_762_100Rnd";
 				count = 1;
 			};
 			class _xx_Belt_T
 			{
-				magazine = "UK3CB_BAF_75Rnd_T";
+				magazine = "UK3CB_BAF_762_100Rnd_T";
 				count = 1;
 			};
 		};
@@ -337,7 +337,7 @@ class CfgVehicles
 		{
 			class _xx_NLAW
 			{
-				Weapon = "UK3CB_BAF_NLAW_Launcher";
+				Weapon = "launch_NLAW_F";
 				count = 1;
 			};
 			class _xx_LAW
@@ -357,12 +357,12 @@ class CfgVehicles
 		{
 			class _xx_UK3CB_BAF_30Rnd
 			{
-				magazine="UK3CB_BAF_30Rnd";
+				magazine="UK3CB_BAF_556_30Rnd";
 				count=25;
 			};
 			class _xx_UK3CB_BAF_30Rnd_T
 			{
-				magazine="UK3CB_BAF_30Rnd_T";
+				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=5;
 			};
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
@@ -438,12 +438,12 @@ class CfgVehicles
 		{
 			class _xx_UK3CB_BAF_30Rnd
 			{
-				magazine="UK3CB_BAF_30Rnd";
+				magazine="UK3CB_BAF_556_30Rnd";
 				count=25;
 			};
 			class _xx_UK3CB_BAF_30Rnd_T
 			{
-				magazine="UK3CB_BAF_30Rnd_T";
+				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=5;
 			};
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
@@ -517,19 +517,19 @@ class CfgVehicles
 		displayname = "Landrover Woodland (Coldwar)";
 		class TransportMagazines
 		{
-			class _xx_hlc_20Rnd_762x51_B_fal
+			class _xx_UK3CB_20Rnd_762x51_B_fal
 			{
-				magazine="hlc_20Rnd_762x51_B_fal";
+				magazine="UK3CB_BAF_762_20Rnd";
 				count=8;
 			};
 			class _xx_UK3CB_BAF_75Rnd
 			{
-				magazine="UK3CB_BAF_75Rnd";
+				magazine="UK3CB_BAF_762_100Rnd";
 				count=2;
 			};
 			class _xx_UK3CB_BAF_75Rnd_T
 			{
-				magazine="UK3CB_BAF_75Rnd_T";
+				magazine="UK3CB_BAF_762_100Rnd";
 				count=1;
 			};
 			class _xx_ACE_HandFlare_White
@@ -613,9 +613,9 @@ class CfgVehicles
 		displayname = "Landrover Desert (Coldwar)";
 		class TransportMagazines
 		{
-			class _xx_hlc_20Rnd_762x51_B_fal
+			class _xx_UK3CB_20Rnd_762x51_B_fal
 			{
-				magazine="hlc_20Rnd_762x51_B_fal";
+				magazine="UK3CB_BAF_762_20Rnd";
 				count=10;
 			};
 			class _xx_UK3CB_BAF_75Rnd
@@ -2284,7 +2284,7 @@ class CfgVehicles
 		{
 			class _xx_NLAW
 				{
-					Weapon = "UK3CB_BAF_NLAW_Launcher";
+					Weapon = "launch_NLAW_F";
 					count = 1;
 				};
 			class _xx_LAW
@@ -2413,7 +2413,7 @@ class CfgVehicles
 		{
 			class _xx_NLAW
 				{
-					Weapon = "UK3CB_BAF_NLAW_Launcher";
+					Weapon = "launch_NLAW_F";
 					count = 1;
 				};
 			class _xx_LAW
@@ -2522,7 +2522,7 @@ class CfgVehicles
 		{
 			class _xx_NLAW
 				{
-					Weapon = "UK3CB_BAF_NLAW_Launcher";
+					Weapon = "launch_NLAW_F";
 					count = 1;
 				};
 			class _xx_LAW
@@ -2544,9 +2544,9 @@ class CfgVehicles
 		displayname = "Puma HC1";
 		class TransportMagazines
 		{
-			class _xx_hlc_20Rnd_762x51_B_fal
+			class _xx_UK3CB_20Rnd_762x51_B_fal
 			{
-				magazine="hlc_20Rnd_762x51_B_fal";
+				magazine="UK3CB_BAF_762_20Rnd";
 				count=8;
 			};
 			class _xx_UK3CB_BAF_75Rnd
