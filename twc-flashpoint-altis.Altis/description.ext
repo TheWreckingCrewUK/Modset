@@ -98,12 +98,6 @@ class CfgDebriefing
 };
 
 class ACE_Settings {
-//ACE Sitting
-	class ace_sitting_enable {
-		value = 1;
-		typeName = "BOOL";
-		force = 1;
-	};
 //ACE Finger
 	class ace_finger_enabled {
 		value = 1;
@@ -160,7 +154,7 @@ class ace_medical_enableOverdosing {
     force = 1;
 };
 class ace_medical_bleedingCoefficient {
-    value = 1;
+    value = 0.25;
     typeName = "SCALAR";
     force = 1;
 };

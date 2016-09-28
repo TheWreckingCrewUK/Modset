@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1547;
+		nextID=1549;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8437.1953,217.43094,24989.885};
-		dir[]={-0.11645946,-0.65741384,0.74448222};
-		up[]={-0.10160384,0.75352877,0.64951593};
-		aside[]={0.98798788,-4.2375177e-008,0.1545513};
+		pos[]={26866.053,32.413036,24587.551};
+		dir[]={-0.4686231,-0.57673746,0.66916943};
+		up[]={-0.3308371,0.81692636,0.47241732};
+		aside[]={0.81912255,1.6903505e-007,0.57363594};
 	};
 };
 binarizationWanted=0;
@@ -51,13 +51,16 @@ addons[]=
 	"CUP_AirVehicles_UH60",
 	"CUP_AirVehicles_AV8B",
 	"A3_Signs_F",
-	"A3_Misc_F_Helpers"
+	"A3_Misc_F_Helpers",
+	"A3_3DEN",
+	"acex_sitting",
+	"ace_advanced_fatigue"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=19;
+		items=22;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -97,6 +100,7 @@ class AddonsMetaData
 		{
 			className="acre_api";
 			name="acre_api";
+			author="ACRE2 Team";
 		};
 		class Item6
 		{
@@ -179,6 +183,27 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
+		class Item19
+		{
+			className="A3_3DEN";
+			name="Arma 3 Eden Update - Eden Editor";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item20
+		{
+			className="acex_sitting";
+			name="acex_sitting";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item21
+		{
+			className="ace_advanced_fatigue";
+			name="ACE3 - Advanced Fatigue";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=10595176;
@@ -237,7 +262,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=391;
+		items=393;
 		class Item0
 		{
 			dataType="Logic";
@@ -745,6 +770,7 @@ class Mission
 					{
 						name="p2";
 						description="Alpha Rifleman";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=111;
@@ -753,25 +779,6 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -790,7 +797,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item2
@@ -920,7 +965,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8410.3232,110.82385,25109.053};
+						position[]={8414.8057,111.35182,25107.475};
 					};
 					side="West";
 					flags=5;
@@ -932,7 +977,6 @@ class Mission
 					};
 					id=114;
 					type="B_Soldier_F";
-					atlOffset=-1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1102,8 +1146,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8414.6143,111.40746,25108.648};
-						angles[]={6.2126365,0,0.14171043};
+						position[]={8416.0176,111.02799,25104.172};
+						angles[]={6.212636,0,6.1677027};
 					};
 					side="West";
 					flags=4;
@@ -2929,6 +2973,25 @@ class Mission
 				};
 				class Attribute2
 				{
+					property="acre_api_DifficultySettings_IgnoreAntennaDirection";
+					expression="_this setVariable ['IgnoreAntennaDirection',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
 					property="acre_api_DifficultySettings_FullDuplex";
 					expression="_this setVariable ['FullDuplex',_value,true];";
 					class Value
@@ -2946,7 +3009,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=4;
 			};
 		};
 		class Item30
@@ -4184,11 +4247,11 @@ class Mission
 						rank="CORPORAL";
 						name="armour1";
 						description="Armour Crew commander [10]";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=429;
 					type="B_crew_F";
+					atlOffset=7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4268,6 +4331,7 @@ class Mission
 					};
 					id=427;
 					type="B_crew_F";
+					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4414,6 +4478,7 @@ class Mission
 			{
 			};
 			id=506;
+			atlOffset=7.6293945e-006;
 		};
 		class Item97
 		{
@@ -13466,6 +13531,149 @@ class Mission
 			type="Empty";
 			id=1506;
 			atlOffset=1.5258789e-005;
+		};
+		class Item391
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={26819.834,21.128368,24674.281};
+			};
+			id=1547;
+			type="ACEX_ModuleSitting";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACEX_ModuleSitting_enable";
+					expression="_this setVariable ['enable',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item392
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={26823.203,21.613771,24659.67};
+			};
+			id=1548;
+			type="ace_advanced_fatigue_moduleSettings";
+			atlOffset=1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_advanced_fatigue_moduleSettings_TerrainGradientFactor";
+					expression="_this setVariable ['TerrainGradientFactor',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_advanced_fatigue_moduleSettings_Enabled";
+					expression="_this setVariable ['Enabled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_advanced_fatigue_moduleSettings_RecoveryFactor";
+					expression="_this setVariable ['RecoveryFactor',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_advanced_fatigue_moduleSettings_LoadFactor";
+					expression="_this setVariable ['LoadFactor',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_advanced_fatigue_moduleSettings_PerformanceFactor";
+					expression="_this setVariable ['PerformanceFactor',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 };
