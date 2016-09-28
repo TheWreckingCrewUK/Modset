@@ -1,5 +1,12 @@
 name = "TWC Config";
-picture = "TWClogo.paa";
+picture = "twc_logo_512.paa";
+logo = "twc_logo_64.paa";
+logoOver = "twc_logo_64.paa";
+tooltip = "TWC Config";
+tooltipOwned = "TWC Owned";
+overview = "TWC Config is a collection of assets used in TWC Operations.";
+overviewPicture = "twc_logo_512.paa";
+author = "TWC Team";
 actionName = "Website";
-action = "http://www.thewreckingcrew.co.uk/";
+action = "http://www.thewreckingcrew.co.uk";
 description = "TWC - Operation Units/Configs";
