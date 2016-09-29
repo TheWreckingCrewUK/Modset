@@ -22,7 +22,6 @@ if (_marker == "airbase2")then {
 		deleteVehicle armourSpawner;
 	
 		deleteVehicle radioSign;
-		deleteVehicle radioPicture;
 		
 		cratePos = crateBoatPos;
 		publicVariable "cratePos";

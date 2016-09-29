@@ -3,7 +3,7 @@ params["_marker","_canCounter","_isCounterAttack"];
 if (_isCounterAttack == 0) then{
 	format["Blufor has captured %1",_marker] remoteExec ["hint"];
 }else{
-	format["Redfors counter attack at %1 has been defeated",_marker] remoteExec ["hint"];
+	format["Redfor's counter attack at %1 has been defeated",_marker] remoteExec ["hint"];
 };
 
 _marker setMarkerColor "colorWEST";
@@ -37,13 +37,10 @@ if (_marker == "airbase2")then {
 			deleteVehicle radioPicture;
 			publicVariable "radioPicture";
 		};
-		radioSign = "sign_F" createVehicle (getMarkerPos "crateDefault" vectorAdd[0,5,2]);
+		radioSign = "SignAd_Sponsor_F" createVehicle (getMarkerPos "crateDefault" vectorAdd[0,5,2]);
 		radioSign setDir 300;
 		publicVariable "radioSign";
-		radioPicture = "userTexture1M_F" createVehicle (getMarkerPos "crateDefault");
-		radioPicture attachTo [radioSign, [0,-.1,0.5]];
-		[radioPicture, [0, "server\pics\radio.jpg"]] remoteExec ["setObjectTexture", 0, "radioBoardPicture"];
-		publicVariable "radioPicture";
+		radioSign setObjectTexture [0, "server\pics\radio.jpg"]; this allowDamage False;
 		
 		if(!isNil "jetSpawnPad") then{
 			deleteVehicle jetSpawnPad;
@@ -98,7 +95,7 @@ if(_marker == "radar1" || _marker == "radar2")then{
 	{
 		deleteVehicle _x
 	}forEach _enemyVehicle;
-
+	sleep 5;
 	_enemy = nearestObjects [getMarkerPos (_this select 0), ["Man","WeaponHolder","GroundWeaponHolder"], 800];
 	{
 		if((side _x) == WEST) then{
