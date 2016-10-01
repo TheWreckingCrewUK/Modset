@@ -53,6 +53,7 @@ if (g_class == "alpha_sl") then {
 		["ACRE_PRC343",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["ACRE_PRC117F_ID_1",1],
+		["itemCTAB",1],
 		["UK3CB_BAF_LLM_IR_Black",1]
     ];
 };
@@ -372,6 +373,7 @@ if (g_class == "bravo_sl") then {
 		["ACRE_PRC117F_ID_1",1],
 		["rhsusf_assault_eagleaiii_ucp",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
+		["itemCTAB",1],
 		["ACRE_PRC148",1]
     ];
 };
@@ -694,6 +696,7 @@ if (g_class == "bravo_tl") then {
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["ACRE_PRC117F_ID_1",1],
 		["UK3CB_BAF_TA31F",1],
+		["itemCTAB",1],
 		["ACRE_PRC148",1]
 	];
 };
@@ -1030,6 +1033,7 @@ if (g_class == "charlie_ar") then {
 		["DemoCharge_Remote_Mag",1],
 		["ACE_M26_Clacker",1],
 		["ACRE_PRC343",1],
+		["itemCTAB",1],
 		["rhsusf_ANPVS_14",1]
 	];
 };
@@ -1055,6 +1059,7 @@ if (g_class == "charlie_ar") then {
 		["ACRE_PRC148",1],
 		["rhsusf_ANPVS_14",1],
 		["ACRE_PRC117F",1],
+		["itemCTAB",1],
 		["rhsusf_ANPVS_14",1]
 		
 	];
@@ -1082,6 +1087,7 @@ if (g_class == "charlie_ar") then {
 		["ACRE_PRC148",1],
 		["rhsusf_ANPVS_14",1],
 		["ACRE_PRC117F",1],
+		["itemCTAB",1],
 		["rhsusf_ANPVS_14",1]
 		
 	];
@@ -1107,6 +1113,7 @@ if (g_class == "charlie_ar") then {
 		["ACRE_PRC148",1],
 		["rhsusf_ANPVS_14",1],
 		["ACRE_PRC117F",1],
+		["itemCTAB",1],
 		["rhsusf_ANPVS_14",1]
 		
 	];
@@ -1146,6 +1153,7 @@ if (g_class == "jtac") then {
 		["ACRE_PRC343",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["ACRE_PRC117F",1],
+		["itemCTAB",1],
 		["UK3CB_BAF_LLM_IR_Black",1]
     ];
 };
@@ -1191,6 +1199,7 @@ if (g_class == "fac") then {
 		["ACRE_PRC343",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["ACRE_PRC117F",1],
+		["itemCTAB",1],
 		["UK3CB_BAF_LLM_IR_Black",1]
     ];
 };
@@ -1222,6 +1231,7 @@ if (g_class == "fac") then {
 		["rhsusf_acc_eotech_552",1],
 		["rhsusf_ANPVS_14",1],
 		["ACRE_PRC117F",1],
+		["itemCTAB",1],
 		["rhsusf_ANPVS_14",1]
 		
 	];
@@ -1335,6 +1345,7 @@ if (g_class == "fac") then {
 		["STKR_Predator",1],
 		["ACRE_PRC343",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
+		["itemCTAB",1],
 		["UK3CB_BAF_LLM_IR_Black",1]
 	];
 };

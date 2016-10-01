@@ -51,4 +51,5 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadioAcreFlagged";
 player linkItem "ItemcTab";
+player linkItem "itemCTAB";
 player linkItem "UK3CB_BAF_HMNVS";

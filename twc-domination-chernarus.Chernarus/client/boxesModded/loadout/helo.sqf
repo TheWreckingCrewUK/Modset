@@ -34,4 +34,5 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadioAcreFlagged";
+player linkItem "itemCTAB";
 player linkItem "rhsusf_ANPVS_14";
