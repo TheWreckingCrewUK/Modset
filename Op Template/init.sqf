@@ -35,21 +35,6 @@
 [] execVM "operation_framework\zeus\Zeus-Mallas.sqf";
 [] execVM "operation_framework\zeus\Zeus-Paddock.sqf";
 
-/*/////////////////////////////////////////////////////////
-/                           scope                         /
-/                           Setup                         /
-/////////////////////////////////////////////////////////*/
-
-[] execVM "operation_framework\scopes\init.sqf";
-
-/*/////////////////////////////////////////////////////////
-/                             AI                          /
-/                           Setup                         /
-/////////////////////////////////////////////////////////*/
-If (isserver) then {
-	[] execVM "operation_framework\AIFix\Coldwar.sqf";
-};
-
 /*//////////////////////////////////////////////////////////
 /                         Headless                        /
                            Client                         /
@@ -70,7 +55,7 @@ If (isserver) then {
 // Specifying "B_Heli" would stop all units with that class type from transferring to HCs
 // However, if you specify "BLUE1", "NAVYBLUE10" will also be ignored
 
-//[true,30,false,true,30,5,true,[]] execVM "operation_framework\headlessClient\WerthlesHeadless.sqf";
+[true,30,false,true,30,5,true,[]] execVM "operation_framework\headlessClient\WerthlesHeadless.sqf";
 /**********************************************************
 *                          Advanced                       *
 *                       Sling Loading                     *
@@ -81,32 +66,32 @@ If (isserver) then {
 *                           Misc                          *
 **********************************************************/
 [] execVM "operation_framework\MiscErrorFixes\init.sqf";
-_status = [True] call acre_api_fnc_setRevealToAI;
 //////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
-/*
-playMusic "Theme";
-titleCut ["", "BLACK FADED", 999];
-	[] Spawn {
-	waitUntil{!(isNil "BIS_fnc_init")};
+if(isMultiplayer)then{
+	playMusic "Theme";
+	titleCut ["", "BLACK FADED", 999];
+		[] Spawn {
+		waitUntil{!(isNil "BIS_fnc_init")};
 
-	titleText ["The Wrecking Crew","PLAIN DOWN"]; 
-	titleFadeOut 7;
-	sleep 5;
+		titleText ["The Wrecking Crew","PLAIN DOWN"]; 
+		titleFadeOut 7;
+		sleep 5;
 
-	titleText ["Operation GULAN","PLAIN"];
-	titleFadeOut 15;
-	sleep 30;
+		titleText ["Operation GULAN","PLAIN"];
+		titleFadeOut 15;
+		sleep 30;
 
 
 
-	sleep 3;
-	"dynamicBlur" ppEffectEnable true;   
-	"dynamicBlur" ppEffectAdjust [6];   
-	"dynamicBlur" ppEffectCommit 0;     
-	"dynamicBlur" ppEffectAdjust [0.0];  
-	"dynamicBlur" ppEffectCommit 5;  
+		sleep 3;
+		"dynamicBlur" ppEffectEnable true;   
+		"dynamicBlur" ppEffectAdjust [6];   
+		"dynamicBlur" ppEffectCommit 0;     
+		"dynamicBlur" ppEffectAdjust [0.0];  
+		"dynamicBlur" ppEffectCommit 5;  
 
-	titleCut ["", "BLACK IN", 5];
+		titleCut ["", "BLACK IN", 5];
 	};
+};

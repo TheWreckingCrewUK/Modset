@@ -4,24 +4,17 @@
 
 3. Using TWC Operations groups place units where mission maker specified.
 
-4. Don't forget the ammo box or other vehicles.
+4. Don't forget the ammo box + smaller box or other vehicles.
 
 5. place down:
 	ACE Medic Class-name the medic, "medic" No Quotes
 	ACE medical facilities and vehicles
-	Place zeuss module and set as #adminLogged and name it Zeus
-	Place jaymans and Mallas and paddock Zeus module that goes by player ID
+	Place zeus module and set as #adminLogged and name it Zeus
+	Place jaymans and Mallas and paddock and bosenator Zeus module that goes by player ID
 	make sure all zues modules are set to be all addons
 	
 6. Add TWC vehicle ammo box
 
 7. Add 3 Headless Clients named HC HC2 HC3 and make them playable.
 
-8. If it is modern set the group leaders group as follows:
-group1:
-	this setGroupId ["Charlie-1"];
-	
-group 2:
-	this setGroupId ["Charlie-2"];
-	
-etc
+8. Name the groups. NOT UNITS the GROUP
