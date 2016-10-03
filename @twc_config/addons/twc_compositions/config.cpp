@@ -189,6 +189,26 @@ class CfgGroups
                                                 position[] = {17,1,0};
                                         };
                                 };
+								class Section_Modern_Sniper
+                                {
+                                        name = "Sniper Team"; //Name of Group
+                                        faction = "a_units"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Spotter"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Sniper";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                };
                         };
 						class Coin
                         {

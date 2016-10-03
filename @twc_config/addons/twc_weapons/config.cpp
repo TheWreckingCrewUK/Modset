@@ -30,6 +30,12 @@ class cfgWeapons
 	class UK3CB_BAF_L128A1;
 	class UK3CB_BAF_L7A2;
 	class UK3CB_BAF_L22A2;
+	
+	class UK3CB_BAF_L115A3_Ghillie;
+	class RKSL_optic_PMII_312_sunshade_wdl;
+	class RKSL_optic_PMII_312_sunshade;
+	class UK3CB_BAF_Silencer_L115A3;
+	
 	class CUP_launch_FIM92Stinger;
 	class RKSL_optic_LDS;
 	class tf47_m3maaws;
@@ -40,12 +46,42 @@ class cfgWeapons
 	class rhs_acc_1p29; //ussr section lead and 2IC scope
 	class ACRE_PRC117F;
 	
-	class twc_PRC325: ACRE_PRC117F
+	class twc_l115a3_wd:UK3CB_BAF_L115A3_Ghillie
 	{
 		scope = 1;
 		author = "jayman";
-		displayName = "UK/HF PRC 325";
-		mass = 10;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "RKSL_optic_PMII_312_sunshade_wdl";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item= "UK3CB_BAF_Silencer_L115A3";
+			};
+		};
+	};
+	
+	class twc_l129a1_spotter:UK3CB_BAF_L129A1_Grippod
+	{
+		scope = 1;
+		author="FakeMatty";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L129A1";
+				item="RKSL_optic_PMII_312_sunshade";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="asdg_FrontSideRail_UK3CB_BAF_L129A1";
+				item="UK3CB_BAF_LLM_Flashlight_Black";
+			};
+		};
 	};
 	
 	class twc_L1A1_SUIT:UK3CB_BAF_L1A1_Wood
@@ -289,13 +325,14 @@ class cfgWeapons
 };
 class CfgVehicles
 {
-	
+	class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C;
 	class UK3CB_BAF_B_Bergen_MTP_Radio_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_Radio_L_B;
 	class UK3CB_BAF_B_Bergen_MTP_Medic_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
-	class UK3CB_BAF_B_Bergen_MTP_SL_L_A;	
+	class UK3CB_BAF_B_Bergen_MTP_SL_L_A;
+	
 	class CUP_B_AlicePack_Khaki;
 	class CUP_BAF_VehicleBox;
 	class CUP_B_Bergen_BAF;
@@ -693,6 +730,38 @@ class CfgVehicles
 			{
 				magazine = "UK3CB_BAF_556_30Rnd";
 				count = 4;
+			};
+		};
+	};
+	class TWC_Backpack_Modern_Sniper:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+		};
+	};
+	class TWC_Backpack_Modern_Spotter:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Spotting
+			{
+				name = "ACE_SpottingScope";
+				count = 1;
 			};
 		};
 	};

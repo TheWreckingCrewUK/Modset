@@ -991,6 +991,7 @@
 		"34_rnd_sterling_mag",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
+		"rhsusf_mag_7x45acp_MHP",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
@@ -1006,6 +1007,7 @@
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
+		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"CUP_HandGrenade_L109A2_HE",
