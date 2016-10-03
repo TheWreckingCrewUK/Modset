@@ -146,7 +146,6 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -156,8 +155,7 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
-		"ACRE_PRC343"
+		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
 		{
@@ -225,7 +223,8 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -237,7 +236,8 @@
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};		
 	};
 
@@ -259,7 +259,6 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -290,6 +289,11 @@
 		magazines[]=
 		{
 		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",		
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd_T",
@@ -302,6 +306,11 @@
 		};
 		Respawnmagazines[]=
 		{
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",		
 		"UK3CB_BAF_556_30Rnd",
@@ -345,7 +354,8 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -379,7 +389,8 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"			
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 	};
 

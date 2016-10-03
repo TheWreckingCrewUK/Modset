@@ -394,7 +394,7 @@ class CfgVehicles
 			class _xx_HE
 			{
 				magazine = "1Rnd_HE_Grenade_shell";
-				count = 12;
+				count = 13;
 			};
 			class _xx_Flare
 			{
@@ -406,10 +406,20 @@ class CfgVehicles
 				magazine = "1Rnd_Smoke_Grenade_shell";
 				count = 3;
 			};
-			class _xx_Stanag
+			class _xx_Smoke_Green
 			{
-				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 4;
+				magazine = "1Rnd_SmokeGreen_Grenade_shell";
+				count = 3;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 3;
 			};
 		};
 	};		
@@ -758,6 +768,224 @@ class CfgVehicles
 		};
 	};
 //******************** Cold War Backpack **********************	
+	class TWC_Backpack_Cold_War_Rifleman:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_Belt
+			{
+				magazine = "UK3CB_BAF_762_100Rnd";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_Cold_War_2IC:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_762_20Rnd
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 5;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_Belt
+			{
+				magazine = "UK3CB_BAF_762_100Rnd";
+				count = 2;
+			};
+			class _xx_Belt_T
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_Cold_War_Section:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine = "SmokeShellGreen";
+				count = 3;
+			};	
+			class _xx_SmokeShellRed
+			{
+				magazine = "SmokeShellRed";
+				count = 3;
+			};
+			class _xx_SmokeShellBlue
+			{
+				magazine = "SmokeShellBlue";
+				count = 3;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine = "ACE_HandFlare_White";
+				count = 3;
+			};		
+		};
+	};
+	class TWC_Backpack_Cold_War_MG:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 2;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine = "UK3CB_BAF_762_100Rnd";
+				count = 2;
+			};			
+		};
+	};
+	class TWC_Backpack_Cold_War_MGAS:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 2;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine = "UK3CB_BAF_762_100Rnd";
+				count = 2;
+			};
+		};
+	};
+	class TWC_Backpack_Cold_War_AT:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine = "tf47_m3maaws_HEAT";
+				count = 2;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine = "tf47_m3maaws_HE";
+				count = 1;
+			};			
+		};
+	};
+	class TWC_Backpack_Cold_War_Pilot:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_ACRE_PRC117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_Cold_War_Platoon_Command:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		maximumLoad = 500;
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine = "SmokeShellGreen";
+				count = 3;
+			};	
+			class _xx_SmokeShellRed
+			{
+				magazine = "SmokeShellRed";
+				count = 3;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine = "ACE_HandFlare_White";
+				count = 3;
+			};		
+		};
+	};
+	class TWC_Backpack_Cold_War_Platoon_Sergeant:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		maximumLoad = 500;
+		class TransportItems
+		{
+			class _xx_Wire_Cutters
+			{
+				name = "ACE_wirecutter";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_SmokeShellGreen
+			{
+				magazine = "SmokeShellGreen";
+				count = 3;
+			};	
+			class _xx_SmokeShellRed
+			{
+				magazine = "SmokeShellRed";
+				count = 3;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine = "ACE_HandFlare_White";
+				count = 3;
+			};		
+		};
+	};
 	class TWC_Backpack_Cold_Medic:CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
@@ -819,228 +1047,40 @@ class CfgVehicles
 				count = 6;
 			};
 		};
-	};
-	class TWC_Backpack_Cold_War_Rifleman:CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_762_20Rnd
+			class _xx_Smoke
 			{
-				magazine = "UK3CB_BAF_762_20Rnd";
-				count = 7;
-			};
-			class _xx_Belt
-			{
-				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 1;
-			};
-		};
-	};
-	class TWC_Backpack_Cold_War_2IC:CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_UK3CB_BAF_762_20Rnd
-			{
-				magazine = "UK3CB_BAF_762_20Rnd";
+				magazine = "SmokeShell";
 				count = 3;
 			};
-			class _xx_Belt
-			{
-				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 2;
-			};
-			class _xx_Belt_T
-			{
-				magazine = "UK3CB_BAF_762_100Rnd_T";
-				count = 1;
-			};
-		};
-	};
-	class TWC_Backpack_Cold_War_Section:CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_34_rnd_sterling_mag   
-			{
-				magazine = "34_rnd_sterling_mag";
-				count = 8;
-			};
-			class _xx_SmokeShellGreen
-			{
-				magazine = "SmokeShellGreen";
-				count = 3;
-			};	
-			class _xx_SmokeShellRed
-			{
-				magazine = "SmokeShellRed";
-				count = 3;
-			};
-			class _xx_ACE_HandFlare_White
-			{
-				magazine = "ACE_HandFlare_White";
-				count = 3;
-			};		
-		};
-	};
-	class TWC_Backpack_Cold_War_MG:CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_UK3CB_BAF_75Rnd_T
-			{
-				magazine = "UK3CB_BAF_762_100Rnd_T";
-				count = 2;
-			};
-			class _xx_UK3CB_BAF_75Rnd
-			{
-				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 1;
-			};			
-		};
-	};
-	class TWC_Backpack_Cold_War_MGAS:CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_UK3CB_BAF_75Rnd
-			{
-				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 2;
-			};
-			class _xx_UK3CB_BAF_75Rnd_T
-			{
-				magazine = "UK3CB_BAF_762_100Rnd_T";
-				count = 2;
-			};
-			class _xx_UK3CB_BAF_762_20Rnd
-			{
-				magazine = "UK3CB_BAF_762_20Rnd";
-				count = 5;
-			};
-		};
-	};
-	class TWC_Backpack_Cold_War_AT:CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_34_rnd_sterling_mag
-			{
-				magazine = "34_rnd_sterling_mag";
-				count = 4;
-			};
-			class _xx_tf47_m3maaws_HEAT
-			{
-				magazine = "tf47_m3maaws_HEAT";
-				count = 2;
-			};
-			class _xx_tf47_m3maaws_HE
-			{
-				magazine = "tf47_m3maaws_HE";
-				count = 1;
-			};			
-		};
-	};
-	class TWC_Backpack_Cold_War_Pilot:CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportItems
-		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
-		};
-	};
-	class TWC_Backpack_Cold_War_Platoon_Command:CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		maximumLoad = 500;
-		class TransportMagazines
-		{
-			class _xx_34_rnd_sterling_mag
-			{
-				magazine = "34_rnd_sterling_mag";
-				count = 8;
-			};
-			class _xx_SmokeShellGreen
-			{
-				magazine = "SmokeShellGreen";
-				count = 3;
-			};	
-			class _xx_SmokeShellRed
-			{
-				magazine = "SmokeShellRed";
-				count = 3;
-			};
-			class _xx_ACE_HandFlare_White
-			{
-				magazine = "ACE_HandFlare_White";
-				count = 3;
-			};		
-		};
-	};
-	class TWC_Backpack_Cold_War_Platoon_Sergeant:CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		maximumLoad = 500;
-		class TransportItems
-		{
-			class _xx_Wire_Cutters
-			{
-				name = "ACE_wirecutter";
-				count = 1;
-			};
-		};
-		class TransportMagazines
-		{
-			class _xx_34_rnd_sterling_mag
-			{
-				magazine = "34_rnd_sterling_mag";
-				count = 8;
-			};
-			class _xx_SmokeShellGreen
-			{
-				magazine = "SmokeShellGreen";
-				count = 3;
-			};	
-			class _xx_SmokeShellRed
-			{
-				magazine = "SmokeShellRed";
-				count = 3;
-			};
-			class _xx_ACE_HandFlare_White
-			{
-				magazine = "ACE_HandFlare_White";
-				count = 3;
-			};		
 		};
 	};
 	class TWC_Backpack_Cold_War_FAC:CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
-		};
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_762_20Rnd
+			class _xx_Smoke
 			{
-				magazine = "UK3CB_BAF_762_20Rnd";
-				count = 7;
+				magazine = "SmokeShell";
+				count = 5;
 			};
+			class _xx_SmokeShellGreen
+			{
+				magazine = "SmokeShellGreen";
+				count = 5;
+			};	
+			class _xx_SmokeShellRed
+			{
+				magazine = "SmokeShellRed";
+				count = 5;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine = "ACE_HandFlare_White";
+				count = 5;
+			};	
 		};
 	};
 	class TWC_Backpack_Cold_War_AA:CUP_B_AlicePack_Khaki
@@ -1048,15 +1088,15 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 5;
+			};
 			class _xx_Stinger
 			{
 				magazine = "CUP_Stinger_M";
 				count = 1;
-			};
-			class _xx_UK3CB_BAF_762_20Rnd
-			{
-				magazine = "UK3CB_BAF_762_20Rnd";
-				count = 6;
 			};
 		};
 	};
@@ -1065,6 +1105,11 @@ class CfgVehicles
 		scope = 1;
 		class TransportItems
 		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 5;
+			};
 			class _xx_Milan
 			{
 				name = "TWC_MilanMissileItem";
@@ -1807,27 +1852,62 @@ class CfgVehicles
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
 			{
 				magazine="1Rnd_HE_Grenade_shell";
-				count=40;
+				count=60;
 			};
 			class _xx_UK3CB_UGL_FlareWhite_F
 			{
 				magazine="UGL_FlareWhite_F";
-				count=10;
+				count=20;
 			};
 			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
 			{
 				magazine="1Rnd_Smoke_Grenade_shell";
 				count=20;
 			};
+			class _xx_Smoke_Green
+			{
+				magazine = "1Rnd_SmokeGreen_Grenade_shell";
+				count = 20;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 20;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 20;
+			};
 			class _xx_SmokeShell
 			{
 				magazine="SmokeShell";
-				count=30;
+				count = 30;
 			};
 			class _xx_Grenade
 			{
 				magazine="CUP_HandGrenade_L109A2_HE";
-				count=25;
+				count = 25;
+			};
+			class _xx_60MortarRound
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Shells";
+				count = 60;
+			};
+			class _xx_60MortarRound_Smoke
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White";
+				count = 20;
+			};
+			class _xx_60MortarRound_Flare
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Flare_White";
+				count = 20;
+			};
+			class _xx_338Lapua
+			{
+				magazine = "UK3CB_BAF_338_5Rnd";
+				count = 20;
 			};
 		};
 		class TransportItems
@@ -1852,10 +1932,15 @@ class CfgVehicles
 				name = "ACE_bloodIV_500";
 				count = 40;
 			};
-			class _xx_MortarRound
+			class _xx_DemolitionBlock
 			{
-				name = "UK3CB_BAF_1Rnd_81mm_Mo_shells";
-				count = 40;
+				name = "DemoCharge_Remote_Mag";
+				count = 5;
+			};
+			class _xx_Clacker
+			{
+				name = "ACE_Clacker";
+				count = 5;
 			};
 		};
 		class TransportWeapons
@@ -1923,17 +2008,32 @@ class CfgVehicles
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
 			{
 				magazine="1Rnd_HE_Grenade_shell";
-				count=40;
+				count=60;
 			};
 			class _xx_UK3CB_UGL_FlareWhite_F
 			{
 				magazine="UGL_FlareWhite_F";
-				count=10;
+				count=20;
 			};
 			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
 			{
 				magazine="1Rnd_Smoke_Grenade_shell";
 				count=20;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "1Rnd_SmokeGreen_Grenade_shell";
+				count = 20;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 20;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 20;
 			};
 			class _xx_SmokeShell
 			{
@@ -1958,7 +2058,7 @@ class CfgVehicles
 			class _xx_60MortarRound
 			{
 				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Shells";
-				count = 50;
+				count = 60;
 			};
 			class _xx_60MortarRound_Smoke
 			{
@@ -1968,6 +2068,11 @@ class CfgVehicles
 			class _xx_60MortarRound_Flare
 			{
 				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Flare_White";
+				count = 20;
+			};
+			class _xx_338Lapua
+			{
+				magazine = "UK3CB_BAF_338_5Rnd";
 				count = 20;
 			};
 		};
@@ -2023,6 +2128,16 @@ class CfgVehicles
 				name = "ACE_tourniquet";
 				count = 50;
 			};
+			class _xx_DemolitionBlock
+			{
+				name = "DemoCharge_Remote_Mag";
+				count = 5;
+			};
+			class _xx_Clacker
+			{
+				name = "ACE_Clacker";
+				count = 5;
+			};
 		};
 		class TransportWeapons
 		{
@@ -2041,6 +2156,11 @@ class CfgVehicles
 		displayName="TWC Cold War AmmoBox";
 		class TransportMagazines
 		{
+			class _xx_Sterling_34Rnd
+			{
+				magazine = "34_rnd_sterling_mag";
+				count = 25;
+			};
 			class _xx_UK3CB_BAF_762_20Rnd
 			{
 				magazine="UK3CB_BAF_762_20Rnd";
@@ -2094,7 +2214,7 @@ class CfgVehicles
 			class _xx_60MortarRound
 			{
 				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Shells";
-				count = 50;
+				count = 60;
 			};
 			class _xx_60MortarRound_Smoke
 			{
@@ -2129,10 +2249,15 @@ class CfgVehicles
 				name = "ACE_bloodIV_500";
 				count = 40;
 			};
-			class _xx_MortarRound
+			class _xx_DemolitionBlock
 			{
-				name = "UK3CB_BAF_1Rnd_81mm_Mo_shells";
-				count = 40;
+				name = "DemoCharge_Remote_Mag";
+				count = 5;
+			};
+			class _xx_Clacker
+			{
+				name = "ACE_Clacker";
+				count = 5;
 			};
 		};
 		class TransportWeapons
@@ -2162,21 +2287,6 @@ class CfgVehicles
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=100;
 			};
-			class _xx_UK3CB_1Rnd_HE_Grenade_shell
-			{
-				magazine="1Rnd_HE_Grenade_shell";
-				count=80;
-			};
-			class _xx_UK3CB_UGL_FlareWhite_F
-			{
-				magazine="UGL_FlareWhite_F";
-				count=20;
-			};
-			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
-			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=40;
-			};
 			class _xx_SmokeShell
 			{
 				magazine="SmokeShell";
@@ -2190,7 +2300,7 @@ class CfgVehicles
 			class _xx_60MortarRound
 			{
 				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Shells";
-				count = 50;
+				count = 60;
 			};
 			class _xx_60MortarRound_Smoke
 			{
@@ -2200,6 +2310,11 @@ class CfgVehicles
 			class _xx_60MortarRound_Flare
 			{
 				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Flare_White";
+				count = 20;
+			};
+			class _xx_338Lapua
+			{
+				magazine = "UK3CB_BAF_338_5Rnd";
 				count = 20;
 			};
 		};
@@ -2254,6 +2369,16 @@ class CfgVehicles
 			{
 				name = "ACE_tourniquet";
 				count = 50;
+			};
+			class _xx_DemolitionBlock
+			{
+				name = "DemoCharge_Remote_Mag";
+				count = 5;
+			};
+			class _xx_Clacker
+			{
+				name = "ACE_Clacker";
+				count = 5;
 			};
 		};
 		class TransportWeapons
@@ -2345,7 +2470,9 @@ class CfgVehicles
 		author="FakeMatty";
 		displayName="TWC Warrior AmmoBox";
 		class TransportMagazines
-		{};
+		{
+			
+		};
 		class TransportItems
 	    {
 			class _xx_TWC_30mm_HE_item
@@ -2357,397 +2484,6 @@ class CfgVehicles
 			{
 				name = "TWC_30mm_AP_item";
 				count = 250;
-			};
-		};
-	};
-// //////////////////////////////////////////////////////
-//                                                     //
-//                     Sling Load Crates               //
-//                                                     //
-/////////////////////////////////////////////////////////
-	class TWC_modern_Operation_SlingBox:B_CargoNet_01_ammo_F
-	{
-		author = "jayman";
-		displayName = "TWC Modern SlingBox";
-		class TransportMagazines
-		{
-			class _xx_UK3CB_BAF_556_30Rnd
-			{
-				magazine="UK3CB_BAF_556_30Rnd";
-				count=32;
-			};
-			class _xx_UK3CB_BAF_556_30Rnd_T
-			{
-				magazine="UK3CB_BAF_556_30Rnd_T";
-				count=8;
-			};
-			class _xx_UK3CB_BAF_75Rnd
-			{
-				magazine="UK3CB_BAF_762_100Rnd";
-				count=9;
-			};
-			class _xx_UK3CB_BAF_75Rnd_T
-			{
-				magazine="UK3CB_BAF_762_100Rnd_T";
-				count=3;
-			};
-			class _xx_UK3CB_BAF_20Rnd
-			{
-				magazine="UK3CB_BAF_762_L42A1_20Rnd";
-				count=8;
-			};
-			class _xx_UK3CB_BAF_20Rnd_T
-			{
-				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
-				count=2;
-			};
-			class _xx_UK3CB_BAF_556_200Rnd
-			{
-				magazine="UK3CB_BAF_556_200Rnd";
-				count=4;
-			};
-			class _xx_UK3CB_BAF_556_200Rnd_T
-			{
-				magazine="UK3CB_BAF_556_30Rnd_T";
-				count=2;
-			};
-			class _xx_UK3CB_1Rnd_HE_Grenade_shell
-			{
-				magazine="1Rnd_HE_Grenade_shell";
-				count=12;
-			};
-			class _xx_UK3CB_UGL_FlareWhite_F
-			{
-				magazine="UGL_FlareWhite_F";
-				count=3;
-			};
-			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
-			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=3;
-			};
-			class _xx_SmokeShell
-			{
-				magazine="SmokeShell";
-				count=16;
-			};
-			class _xx_Grenade
-			{
-				magazine="CUP_HandGrenade_L109A2_HE";
-				count=24;
-			};
-		};
-		class TransportItems
-		{
-			class _xx_Bandage
-			{
-				name = "ACE_fieldDressing";
-				count = 48;
-			};
-			class _xx_Morphine
-			{
-				name = "ACE_morphine";
-				count = 16;
-			};
-			class _xx_Epipen
-			{
-				name = "ACE_epinephrine";
-				count = 2;
-			};
-			class _xx_ACE_SalineIV_500
-			{
-				name = "ACE_salineIV_500";
-				count = 4;
-			};
-		};
-		class TransportWeapons
-		{
-			class _xx_NLAW
-				{
-					Weapon = "launch_NLAW_F";
-					count = 2;
-				};
-			class _xx_LAW
-				{
-					Weapon = "HAFM_LAW";
-					count = 2;
-				};
-		};
-	};
-	class TWC_modern_Operation_Coin_SlingBox:B_CargoNet_01_ammo_F
-	{
-		author = "jayman";
-		displayName = "TWC Modern COIN SlingBox";
-		class TransportMagazines
-		{
-			class _xx_UK3CB_BAF_556_30Rnd
-			{
-				magazine="UK3CB_BAF_556_30Rnd";
-				count=32;
-			};
-			class _xx_UK3CB_BAF_556_30Rnd_T
-			{
-				magazine="UK3CB_BAF_556_30Rnd_T";
-				count=8;
-			};
-			class _xx_UK3CB_BAF_75Rnd
-			{
-				magazine="UK3CB_BAF_762_100Rnd";
-				count=9;
-			};
-			class _xx_UK3CB_BAF_75Rnd_T
-			{
-				magazine="UK3CB_BAF_762_100Rnd_T";
-				count=3;
-			};
-			class _xx_UK3CB_BAF_20Rnd
-			{
-				magazine="UK3CB_BAF_762_L42A1_20Rnd";
-				count=8;
-			};
-			class _xx_UK3CB_BAF_20Rnd_T
-			{
-				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
-				count=2;
-			};
-			class _xx_UK3CB_BAF_556_200Rnd
-			{
-				magazine="UK3CB_BAF_556_200Rnd";
-				count=4;
-			};
-			class _xx_UK3CB_BAF_556_200Rnd_T
-			{
-				magazine="UK3CB_BAF_556_30Rnd_T";
-				count=2;
-			};
-			class _xx_UK3CB_1Rnd_HE_Grenade_shell
-			{
-				magazine="1Rnd_HE_Grenade_shell";
-				count=12;
-			};
-			class _xx_UK3CB_UGL_FlareWhite_F
-			{
-				magazine="UGL_FlareWhite_F";
-				count=3;
-			};
-			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
-			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=3;
-			};
-			class _xx_SmokeShell
-			{
-				magazine="SmokeShell";
-				count=24;
-			};
-			class _xx_Grenade
-			{
-				magazine="CUP_HandGrenade_L109A2_HE";
-				count=16;
-			};
-			class _xx_Slug
-			{
-				magazine = "UK3CB_BAF_12G_Slugs";
-				count = 5;
-			};
-            class _xx_Buck
-			{
-				magazine = "UK3CB_BAF_12G_Pellets";
-				count = 2;
-			};	
-		};
-		class TransportItems
-		{
-			class _xx_Bandage
-			{
-				name = "ACE_fieldDressing";
-				count = 48;
-			};
-			class _xx_Morphine
-			{
-				name = "ACE_morphine";
-				count = 16;
-			};
-			class _xx_Epipen
-			{
-				name = "ACE_epinephrine";
-				count = 2;
-			};
-			class _xx_ACE_SalineIV_500
-			{
-				name = "ACE_salineIV_500";
-				count = 4;
-			};
-		};
-		class TransportWeapons
-		{
-			class _xx_LAW
-			{
-				Weapon = "HAFM_LAW";
-				count = 4;
-			};
-		};
-	};
-	class TWC_modern_Operation_ColdWar_SlingBox:B_CargoNet_01_ammo_F
-	{
-		author = "jayman";
-		displayName="TWC Cold War SlingBox";
-		class TransportMagazines
-		{
-			class _xx_UK3CB_BAF_762_20Rnd
-			{
-				magazine="UK3CB_BAF_762_20Rnd";
-				count=70;
-			};
-			class _xx_UK3CB_BAF_75Rnd
-			{
-				magazine="UK3CB_BAF_762_100Rnd";
-				count=9;
-			};
-			class _xx_UK3CB_BAF_75Rnd_T
-			{
-				magazine="UK3CB_BAF_762_100Rnd_T";
-				count=3;
-			};
-			class _xx_ACE_HandFlare_White
-			{
-				magazine="ACE_HandFlare_White";
-				count=10;
-			};
-			class _xx_tf47_m3maaws_HEAT
-			{
-				magazine="tf47_m3maaws_HEAT";
-				count=3;
-			};
-			class _xx_tf47_m3maaws_HE
-			{
-				magazine="tf47_m3maaws_HE";
-				count=3;
-			};
-			class _xx_tf47_m3maaws_SMOKE
-			{
-				magazine="tf47_m3maaws_SMOKE";
-				count=2;
-			};
-			class _xx_tf47_m3maaws_ILLUM
-			{
-				magazine="tf47_m3maaws_ILLUM";
-				count=2;
-			};
-			class _xx_SmokeShell
-			{
-				magazine="SmokeShell";
-				count=24;
-			};
-			class _xx_Grenade
-			{
-				magazine="CUP_HandGrenade_L109A2_HE";
-				count=16;
-			};
-		};
-		class TransportItems
-		{
-			class _xx_Bandage
-			{
-				name = "ACE_fieldDressing";
-				count = 48;
-			};
-			class _xx_Morphine
-			{
-				name = "ACE_morphine";
-				count = 16;
-			};
-			class _xx_Epipen
-			{
-				name = "ACE_epinephrine";
-				count = 2;
-			};
-			class _xx_ACE_SalineIV_500
-			{
-				name = "ACE_salineIV_500";
-				count = 4;
-			};
-		};
-		class TransportWeapons
-		{
-			class _xx_LAW
-			{
-				Weapon = "HAFM_LAW";
-				count = 2;
-			};
-		};
-	};
-	class TWC_modern_Operation_1990_SlingBox:B_CargoNet_01_ammo_F
-	{
-		author = "jayman";
-		displayName = "TWC 1990 SlingBox";
-		class TransportMagazines
-		{
-			class _xx_UK3CB_BAF_556_30Rnd
-			{
-				magazine="UK3CB_BAF_556_30Rnd";
-				count=40;
-			};
-			class _xx_UK3CB_BAF_556_30Rnd_T
-			{
-				magazine="UK3CB_BAF_556_30Rnd_T";
-				count=10;
-			};
-			class _xx_UK3CB_1Rnd_HE_Grenade_shell
-			{
-				magazine="1Rnd_HE_Grenade_shell";
-				count=24;
-			};
-			class _xx_UK3CB_UGL_FlareWhite_F
-			{
-				magazine="UGL_FlareWhite_F";
-				count=6;
-			};
-			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
-			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=6;
-			};
-			class _xx_SmokeShell
-			{
-				magazine="SmokeShell";
-				count=64;
-			};
-			class _xx_Grenade
-			{
-				magazine="CUP_HandGrenade_L109A2_HE";
-				count=48;
-			};
-		};
-		class TransportItems
-		{
-			class _xx_Bandage
-			{
-				name = "ACE_fieldDressing";
-				count = 60;
-			};
-			class _xx_Morphine
-			{
-				name = "ACE_morphine";
-				count = 16;
-			};
-			class _xx_Epipen
-			{
-				name = "ACE_epinephrine";
-				count = 2;
-			};
-			class _xx_ACE_SalineIV_500
-			{
-				name = "ACE_salineIV_500";
-				count = 4;
-			};
-		};
-		class TransportWeapons
-		{
-			class _xx_AT4
-			{
-				Weapon = "rhs_weap_M136_hedp";
-				count = 2;
 			};
 		};
 	};
