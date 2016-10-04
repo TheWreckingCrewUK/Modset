@@ -44,7 +44,6 @@ class cfgWeapons
 	class UK3CB_BAF_SUSAT_3D;
 	class rhs_weap_ak74m_dtk; //base ussr AK
 	class rhs_acc_1p29; //ussr section lead and 2IC scope
-	class ACRE_PRC117F;
 	
 	class twc_l115a3_wd:UK3CB_BAF_L115A3_Ghillie
 	{
@@ -349,6 +348,9 @@ class CfgVehicles
 	
 	class rhs_sidor;
 	class rhs_rpg_empty;
+	
+	class UK3CB_BAF_B_Kitbag_MTP;
+	
 	class B_AssaultPack_blk;
 	class Box_NATO_AmmoVeh_F;
 	class B_CargoNet_01_ammo_F;
@@ -360,10 +362,10 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_Stanag
+			class _xx_Smoke
 			{
-				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 7;
+				magazine = "SmokeShell";
+				count = 3;
 			};
 		};
 	};
@@ -372,10 +374,20 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
 			class _xx_Box_Stanag
 			{
 				magazine = "UK3CB_BAF_556_200Rnd";
-				count = 3;
+				count = 1;
+			};
+			class _xx_Box_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_200Rnd_T";
+				count = 2;
 			};
 		};
 	};
@@ -384,6 +396,11 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
 			class _xx_Marksman_Mag
 			{
 				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
@@ -411,10 +428,15 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
 			class _xx_Belt
 			{
 				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 3;
+				count = 2;
 			};
 			class _xx_Belt_T
 			{
@@ -438,7 +460,7 @@ class CfgVehicles
 				magazine = "UGL_FlareWhite_F";
 				count = 3;
 			};
-			class _xx_Smoke
+			class _xx_Smoke_White
 			{
 				magazine = "1Rnd_Smoke_Grenade_shell";
 				count = 3;
@@ -458,6 +480,11 @@ class CfgVehicles
 				magazine = "1Rnd_SmokeBlue_Grenade_shell";
 				count = 3;
 			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
 		};
 	};		
 	class TWC_Backpack_Modern_2IC:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
@@ -465,6 +492,11 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
 			class _xx_Box_Stanag
 			{
 				magazine = "UK3CB_BAF_556_200Rnd";
@@ -473,12 +505,12 @@ class CfgVehicles
 			class _xx_Box_Stanag_T
 			{
 				magazine = "UK3CB_BAF_556_30Rnd_T";
-				count = 1;
+				count = 2;
 			};
             class _xx_Stanag
 			{
 				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 14;
+				count = 8;
 			};			
 		};
 	};		
@@ -487,11 +519,6 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-            class _xx_Stanag
-			{
-				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 4;
-			};
 			class _xx_Smoke
 			{
 				magazine = "SmokeShell";
@@ -500,17 +527,17 @@ class CfgVehicles
 			class _xx_Smoke_Red
 			{
 				magazine = "SmokeShellRed";
-				count = 2;
+				count = 3;
 			};
 			class _xx_Smoke_Green
 			{
 				magazine = "SmokeShellGreen";
-				count = 2;
+				count = 3;
 			};
-			class _xx_Smoke_Yellow
+			class _xx_Smoke_Blue
 			{
-				magazine = "SmokeShellYellow";
-				count = 2;
+				magazine = "SmokeShellBlue";
+				count = 3;
 			};
 		};
 	};
@@ -520,11 +547,6 @@ class CfgVehicles
 		maximumLoad = 500;
 		class TransportMagazines
 		{
-            class _xx_Stanag
-			{
-				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 4;
-			};
 			class _xx_Smoke
 			{
 				magazine = "SmokeShell";
@@ -533,17 +555,17 @@ class CfgVehicles
 			class _xx_Smoke_Red
 			{
 				magazine = "SmokeShellRed";
-				count = 2;
+				count = 3;
 			};
 			class _xx_Smoke_Green
 			{
 				magazine = "SmokeShellGreen";
-				count = 2;
+				count = 3;
 			};
-			class _xx_Smoke_Yellow
+			class _xx_Smoke_Blue
 			{
-				magazine = "SmokeShellYellow";
-				count = 2;
+				magazine = "SmokeShellBlue";
+				count = 3;
 			};
 		};
 	};
@@ -561,11 +583,6 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-            class _xx_Stanag
-			{
-				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 4;
-			};
 			class _xx_Smoke
 			{
 				magazine = "SmokeShell";
@@ -574,17 +591,17 @@ class CfgVehicles
 			class _xx_Smoke_Red
 			{
 				magazine = "SmokeShellRed";
-				count = 2;
+				count = 3;
 			};
 			class _xx_Smoke_Green
 			{
 				magazine = "SmokeShellGreen";
-				count = 2;
+				count = 3;
 			};
-			class _xx_Smoke_Yellow
+			class _xx_Smoke_Blue
 			{
-				magazine = "SmokeShellYellow";
-				count = 2;
+				magazine = "SmokeShellBlue";
+				count = 3;
 			};
 		};
 	};
@@ -650,38 +667,16 @@ class CfgVehicles
 			};
 		};
 	};
-	class TWC_Backpack_Modern_Vehiclecommander:B_AssaultPack_blk
-	{
-		scope = 1;
-		class TransportItems
-		{
-			class _xx_ACRE_PRC117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
-		};
-	};
-	class TWC_Backpack_Mechanized_2IC:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
+	class TWC_Backpack_Modern_Vehiclecommander:UK3CB_BAF_B_Kitbag_MTP
 	{
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_Box_Stanag
+			class _xx_Smoke
 			{
-				magazine = "UK3CB_BAF_556_200Rnd";
-				count = 1;
+				magazine = "SmokeShell";
+				count = 3;
 			};
-			class _xx_Box_Stanag_T
-			{
-				magazine = "UK3CB_BAF_556_30Rnd_T";
-				count = 1;
-			};
-            class _xx_Stanag
-			{
-				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 14;
-			};			
 		};
 	};
 	class TWC_Backpack_Mechanized_Marksman:UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
@@ -689,14 +684,9 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_Marksman_Mag
+			class _xx_Smoke
 			{
-				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
-				count = 6;
-			};
-			class _xx_Marksman_Mag_T
-			{
-				magazine = "UK3CB_BAF_762_L42A1_20Rnd_T";
+				magazine = "SmokeShell";
 				count = 3;
 			};
 		};
@@ -2016,7 +2006,7 @@ class CfgVehicles
 		{
 			class _xx_NLAW
 				{
-					Weapon = "launch_NLAW_F";
+					Weapon = "CUP_launch_NLAW";
 					count = 10;
 				};
 			class _xx_LAW

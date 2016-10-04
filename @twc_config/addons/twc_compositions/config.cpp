@@ -1,7 +1,7 @@
 
 class CfgPatches
 {
-	class Addons_config
+	class twc_compositions
 	{
 		units[]={};
 		weapons[]={};
@@ -149,7 +149,7 @@ class CfgGroups
 										class Unit3
                                         {
                                                 side = 1;
-                                                vehicle = "Mechanized_British_2IC";
+                                                vehicle = "Modern_British_2IC";
                                                 rank = "PRIVATE";
                                                 position[] = {7,0,0};
                                         };
@@ -171,7 +171,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_VehicleCommander";
-                                                rank = "PRIVATE";
+                                                rank = "CORPORAL";
                                                 position[] = {13,1,0};
                                         };
 										class Unit7

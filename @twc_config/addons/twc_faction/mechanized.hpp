@@ -17,7 +17,6 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -27,7 +26,6 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
@@ -61,13 +59,32 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_EarPlugs",	
 		"UK3CB_BAF_HMNVS",
-		"ACE_EarPlugs"	
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -76,12 +93,32 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS"		
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_EarPlugs",	
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"		
 		};
 	};
 	class Modern_British_VehicleCommander: B_Soldier_base_F
@@ -103,7 +140,6 @@
 		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -114,7 +150,6 @@
 		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
@@ -134,16 +169,12 @@
 		magazines[]=
 		{
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd",
-		"smokeshell",
-		"smokeshell"
+		"UK3CB_BAF_556_30Rnd"
 		};
 		Respawnmagazines[]=
 		{
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd",
-		"smokeshell",
-		"smokeshell"
+		"UK3CB_BAF_556_30Rnd"
 		};
 		Items[]=
 		{
@@ -152,127 +183,66 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS",
-		"ACE_EarPlugs"	
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS"
-		};
-	};
-	
-	class Mechanized_British_2IC: B_Soldier_base_F
-	{
-		_generalMacro="Mechanized_British_2IC";
-		scope=2;
-		displayName="2IC(Modern)";
-		faction="a_units";
-		vehicleClass="Modern_British";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
-		backpack="TWC_Backpack_Mechanized_2IC";
-		linkedItems[]=
-		{
-        "UK3CB_BAF_H_Mk7_Scrim_ESS_B",
-		"UK3CB_BAF_V_Osprey_Rifleman_C",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
-		};
-		respawnLinkedItems[]=
-		{
-        "UK3CB_BAF_H_Mk7_Scrim_ESS_B",
-		"UK3CB_BAF_V_Osprey_Rifleman_C",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
-		};
-		weapons[]=
-		{
-		"Throw",
-		"Put",
-		"ACE_Vector",
-		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D"
-		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put",
-		"ACE_Vector",
-		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D"
-		};
-		magazines[]=
-		{
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd",		
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_T",
-		"UK3CB_BAF_556_30Rnd_T",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Respawnmagazines[]=
-		{
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd",		
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_T",
-		"UK3CB_BAF_556_30Rnd_T",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs",
-		"ACE_DAGR",		
-		"UK3CB_BAF_HMNVS"
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_EarPlugs",	
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 	};
 	
@@ -294,8 +264,7 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
-		"ACRE_PRC343"
+		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
 		{
@@ -304,7 +273,6 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
@@ -313,7 +281,7 @@
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L129A1_Grippod_TA648",
-		"UK3CB_BAF_NLAW_Launcher"
+		"CUP_launch_NLAW"
 		};
 		respawnweapons[]=
 		{
@@ -321,32 +289,46 @@
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L129A1_Grippod_TA648",
-		"UK3CB_BAF_NLAW_Launcher"
+		"CUP_launch_NLAW"
 		};
 		magazines[]=
 		{
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd_T",
+		"UK3CB_BAF_762_L42A1_20Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
+		"CUP_HandGrenade_L109A2_HE"
 		};
 		Respawnmagazines[]=
 		{
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd",
+		"UK3CB_BAF_762_L42A1_20Rnd_T",
+		"UK3CB_BAF_762_L42A1_20Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
+		"CUP_HandGrenade_L109A2_HE"
 		};
 		Items[]=
 		{
-			"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_fieldDressing",
 		"ACE_packingBandage",
 		"ACE_packingBandage",
 		"ACE_packingBandage",
@@ -359,7 +341,6 @@
 		"ACE_elasticBandage",
 		"ACE_elasticBandage",
 		"ACE_elasticBandage",
-		"ACE_quikclot",
 		"ACE_quikclot",
 		"ACE_quikclot",
 		"ACE_quikclot",
@@ -371,7 +352,8 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -380,9 +362,31 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"			
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"			
 		};		
 	};
