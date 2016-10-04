@@ -502,7 +502,7 @@
 		"UK3CB_BAF_556_200Rnd",
 		"UK3CB_BAF_556_200Rnd",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE"
 		};
 		Items[]=
 		{
@@ -536,7 +536,7 @@
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
 		"UK3CB_BAF_HMNVS",
-		"ACRE_PRC343",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -570,7 +570,7 @@
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
 		"UK3CB_BAF_HMNVS",
-		"ACRE_PRC343",		
+		"ACRE_PRC343"
 		};
 	};
 
@@ -767,7 +767,7 @@
 		"UK3CB_BAF_762_100Rnd",
 		"UK3CB_BAF_762_100Rnd",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE"
 		};
 		Respawnmagazines[]=
 		{
@@ -776,7 +776,7 @@
 		"UK3CB_BAF_762_100Rnd",
 		"UK3CB_BAF_762_100Rnd",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE"
 		};
 		Items[]=
 		{
