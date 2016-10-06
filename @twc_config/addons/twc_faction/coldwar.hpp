@@ -15,6 +15,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -22,6 +23,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		weapons[]=
@@ -149,6 +151,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -156,6 +159,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		weapons[]=
@@ -284,6 +288,7 @@
 		"SP_MkBushHelmet_Forrest",
 		"tf47_optic_m3maaws",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -291,6 +296,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		weapons[]=
@@ -422,6 +428,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -429,6 +436,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		weapons[]=
@@ -555,6 +563,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
+		"itemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
@@ -564,6 +573,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemMap",
+		"itemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
@@ -692,6 +702,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -699,6 +710,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		weapons[]=
@@ -816,6 +828,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -823,6 +836,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		weapons[]=
@@ -1359,6 +1373,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -1366,6 +1381,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",	
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		weapons[]=
@@ -1860,6 +1876,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -1867,6 +1884,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		weapons[]=
@@ -1996,6 +2014,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -2003,6 +2022,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		weapons[]=
@@ -2127,6 +2147,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -2134,6 +2155,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		weapons[]=
@@ -2261,6 +2283,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -2268,6 +2291,7 @@
         "CUP_V_RUS_Smersh_1",
 		"SP_MkBushHelmet_Forrest",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 		};
 		weapons[]=
