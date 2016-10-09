@@ -34,7 +34,7 @@ class CfgGroups
                                 class SectionModern
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -96,7 +96,7 @@ class CfgGroups
 								class Modern_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -123,7 +123,7 @@ class CfgGroups
 								class Section_Modern_Mechianizied
                                 {
                                         name = "Mechanized Section"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -192,7 +192,7 @@ class CfgGroups
 								class Section_Modern_Sniper
                                 {
                                         name = "Sniper Team"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -216,7 +216,7 @@ class CfgGroups
                                 class SectionModernCoin
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -278,7 +278,7 @@ class CfgGroups
 								class Modern_Coin_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -305,7 +305,7 @@ class CfgGroups
 								class Section_Modern_COIN_Mechianizied
                                 {
                                         name = "Mechanized Section"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -378,7 +378,7 @@ class CfgGroups
                                 class SectionModern
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -440,7 +440,7 @@ class CfgGroups
 								class Modern_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -456,18 +456,25 @@ class CfgGroups
                                                 rank = "sergeant";
                                                 position[] = {3,0,0};
                                         };
-                                        class Unit2
+										class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "ColdWar_MortarGunner";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+                                        class Unit3
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_Medic";
                                                 rank = "PRIVATE";
-                                                position[] = {5,0,0};
+                                                position[] = {7,0,0};
                                         };
                                 };
 								class Cold_War_AA
 								{
 										name = "AA Team";
-										faction = "a_units";
+										faction = "twc_faction";
 										side = 1;
 										class Unit0
 										{
@@ -487,7 +494,7 @@ class CfgGroups
 								class Cold_War_MIlan
 								{
 										name = "Milan Team";
-										faction = "a_units";
+										faction = "twc_faction";
 										side = 1;
 										class Unit0
 										{
@@ -518,7 +525,7 @@ class CfgGroups
                                 class SectionModern
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -580,7 +587,7 @@ class CfgGroups
 								class SectionMilan
                                 {
                                         name = "Milan Team"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -607,7 +614,7 @@ class CfgGroups
 								class 1990_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -645,7 +652,7 @@ class CfgGroups
                                 class SectionModern
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -707,7 +714,7 @@ class CfgGroups
 								class 1990_Desert_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -741,7 +748,7 @@ class CfgGroups
 								class SectionMilan
                                 {
                                         name = "Milan Team"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -782,7 +789,7 @@ class CfgGroups
                                 class Section_Modern_Mechanized
                                 {
                                         name = "Section Mechanized"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = EAST; //Side
                                         class Unit0
                                         {
@@ -851,7 +858,7 @@ class CfgGroups
 								class Section_Modern_USSR_platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = EAST; //Side
                                         class Unit0
                                         {
@@ -883,7 +890,7 @@ class CfgGroups
                                 class Section_USSR_ColdWar
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = EAST; //Side
                                         class Unit0
                                         {
@@ -938,7 +945,7 @@ class CfgGroups
 								class Section_USSR_ColdWar_AA
                                 {
                                         name = "AA Team"; //Name of Group
-                                        faction = "a_units"; //Faction
+                                        faction = "twc_faction"; //Faction
                                         side = EAST; //Side
                                         class Unit0
                                         {

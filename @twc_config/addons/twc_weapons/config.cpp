@@ -1150,7 +1150,7 @@ class CfgVehicles
 			class _xx_Smoke
 			{
 				magazine = "SmokeShell";
-				count = 5;
+				count = 3;
 			};
 			class _xx_Stinger
 			{
@@ -1167,12 +1167,24 @@ class CfgVehicles
 			class _xx_Smoke
 			{
 				magazine = "SmokeShell";
-				count = 5;
+				count = 3;
 			};
 			class _xx_Milan
 			{
 				name = "TWC_MilanMissileItem";
 				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_Cold_War_MortarGunner:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_60MortarRound
+			{
+				magazine = "UK3CB_BAF_1Rnd_60mm_Mo_Shells";
+				count = 10;
 			};
 		};
 	};

@@ -82,19 +82,58 @@ class CfgPatches
 		};
 	};
 };
+class CfgEditorSubCategories
+{
+	class Men_Modern
+	{
+		displayName = "Men (Modern)";
+	};
+	class Men_ModernCoin
+	{
+		displayName = "Men (Modern COIN)";
+	};
+	class Men_ColdWar
+	{
+		displayName = "Men (ColdWar)";
+	};
+	class Men_1990D
+	{
+		displayName = "Men (1990 Early Desert)";
+	};
+	class Men_1990W
+	{
+		displayName = "Men (1990 Early Woodland)";
+	};	
+	class Men_USSR
+	{
+		displayName = "Men (USSR)";
+	};
+	class Men_RussianFederation
+	{
+		displayName = "Men (Russian Federation)";
+	};
+	class Men_Iraq
+	{
+		displayName = "Men (Iraq)";
+	};
+	class Men_Argentina
+	{
+		displayName = "Men (Argentina)";
+	};
+};
 class CfgFactionClasses
 {
 	class a_units
 	{
-		displayName="TWC Operation Units";
+		displayName="Broken";
 		author="FakeMatty";
 		icon="TWClogo.paa";
 		priority=2;
 		side=1;
 	};
-	class Veh_units
+	class twc_faction
 	{
-		displayName="TWC Vehicles";
+		displayName="TWC Operation Units";
 		author="FakeMatty";
 		icon="TWClogo.paa";
 		priority=2;
@@ -117,57 +156,6 @@ class CfgFactionClasses
 		side=2;
 	};
 };
-class CfgVehicleClasses
-{
-	class Modern_British
-	{
-		displayName="Modern British";
-	};
-	class Coin_British
-	{
-		displayName="Modern COIN British";
-	};
-	class Cold_British
-	{
-		displayName="Cold War British";
-	};
-	class 1990_British
-	{
-		displayName="1990 British";
-	};
-	class 1990_Desert_British
-	{
-		displayName = "1990 Desert British";
-	};
-	class Russian
-	{
-		displayName="Russian";
-	};
-	class USSR
-	{
-		displayName="USSR";
-	};
-	class Attachments
-	{
-		displayName="Attachments";
-	};
-	class NewVehicles
-	{
-		displayName="Vehicles";
-	};
-	class GulfWar_Iraqi
-	{
-		displayName="Gulf War Iraqi";
-	};
-	class Cold_War_Argentinian
-	{
-		displayname="Cold War Argentinia";
-	};
-};
-
-
-
-
 class CfgVehicles
 {
 	class B_Soldier_base_F;

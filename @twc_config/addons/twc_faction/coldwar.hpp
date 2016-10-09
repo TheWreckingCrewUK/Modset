@@ -4,8 +4,9 @@
 		_generalMacro="Coldwar_Rifleman";
 		scope=2;
 		displayName="Rifleman(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -140,8 +141,9 @@
 		_generalMacro="Coldwar_Rifleman_SUIT";
 		scope=2;
 		displayName="Rifleman SUIT(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -276,8 +278,9 @@
 		_generalMacro="Coldwar_At";
 		scope=2;
 		displayName="AT Rifleman(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -417,8 +420,9 @@
 		_generalMacro="Coldwar_AT_ASS";
 		scope=2;
 		displayName="AT Assistant Rifleman(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -551,8 +555,9 @@
 		_generalMacro="Coldwar_2IC";
 		scope=2;
 		displayName="2IC(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -691,8 +696,9 @@
 		_generalMacro="Coldwar_MG";
 		scope=2;
 		displayName="Machine Gunner(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -817,8 +823,9 @@
 		_generalMacro="Coldwar_MG";
 		scope=2;
 		displayName="Machine Gunner Assistant(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -951,8 +958,9 @@
 		_generalMacro="Coldwar_Section_Leader";
 		scope=2;
 		displayName="Section Leader(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -980,7 +988,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"TWC_Sterling_Sub",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1"
 		};
 		respawnweapons[]=
@@ -988,22 +996,21 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"TWC_Sterling_Sub",
+		"UK3CB_BAF_L1A1_Wood",
 		"rhsusf_weap_m1911a1"
 		};
 		magazines[]=
 		{
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"rhsusf_mag_7x45acp_MHP",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd_T",
+		"UK3CB_BAF_762_20Rnd_T",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"CUP_HandGrenade_L109A2_HE",
@@ -1011,17 +1018,16 @@
 		};
 		Respawnmagazines[]=
 		{
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"rhsusf_mag_7x45acp_MHP",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd",
+		"UK3CB_BAF_762_20Rnd_T",
+		"UK3CB_BAF_762_20Rnd_T",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"CUP_HandGrenade_L109A2_HE",
@@ -1098,8 +1104,9 @@
 		_generalMacro="Coldwar_Platoon_Commander";
 		scope=2;
 		displayName="Platoon Commander(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -1230,8 +1237,9 @@
 		_generalMacro="Coldwar_Platoon_sergeant";
 		scope=2;
 		displayName="Platoon Sergeant(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -1362,8 +1370,9 @@
 		_generalMacro="Coldwar_Medic";
 		scope=2;
 		displayName="Platoon Medic(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -1483,8 +1492,9 @@
 		_generalMacro="Coldwar_Platoon_FAC";
 		scope=2;
 		displayName="Platoon FAC(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -1625,8 +1635,9 @@
 		_generalMacro="Coldwar_HelicopterPilot";
 		scope=2;
 		displayName="Helicopter Pilot(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -1745,8 +1756,9 @@
 		_generalMacro="Coldwar_JetPilot";
 		scope=2;
 		displayName="Jet Pilot(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_RAF";
@@ -1865,8 +1877,9 @@
 		_generalMacro="Coldwar_AA_Gunner";
 		scope=2;
 		displayName="AA Gunner(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -1891,46 +1904,32 @@
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"FIMStingerA"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"FIMStingerA"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
 		"CUP_Stinger_M"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
 		"CUP_Stinger_M"
 		};
 		Items[]=
@@ -2003,8 +2002,9 @@
 		_generalMacro="Coldwar_AA_Assistant";
 		scope=2;
 		displayName="AA Assistant(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -2029,43 +2029,29 @@
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L1A1_Wood"
+		"TWC_Sterling_Sub"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L1A1_Wood"
+		"TWC_Sterling_Sub"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag"
 		};
 		Items[]=
 		{
@@ -2136,8 +2122,9 @@
 		_generalMacro="Coldwar_MilanGunner";
 		scope=2;
 		displayName="Milan Gunner(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -2162,45 +2149,31 @@
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"TWC_Milan_Tripod_Disassemabled"	
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"TWC_Milan_Tripod_Disassemabled"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag"
 		};
 		Respawnmagazines[]=
 		{	
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag"
 		};
 		Items[]=
 		{
@@ -2272,8 +2245,9 @@
 		_generalMacro="Coldwar_MilanAssistant";
 		scope=2;
 		displayName="Milan Assistant(Coldwar)";
-		faction="a_units";
-		vehicleClass="Cold_British";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
@@ -2298,45 +2272,160 @@
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"TWC_Milan_Launcher_Disassemabled"	
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_Sterling_Sub",
 		"TWC_Milan_Launcher_Disassemabled"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag"
+		};
+		Items[]=
+		{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet"
+		};
+		respawntems[]=
+		{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet"			
+		};		
+	};
+	class ColdWar_MortarGunner: B_Soldier_base_F
+	{
+		_generalMacro="Coldwar_MortarGunner";
+		scope=2;
+		displayName="Mortar Gunner(Coldwar)";
+		faction="twc_faction";
+		editorSubCategory = "Men_ColdWar";
+		vehicleClass="Men_ColdWar";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="MNP_CombatUniform_DPMR";
+		backpack="TWC_Backpack_Cold_War_MortarGunner";
+		linkedItems[]=
+		{
+        "CUP_V_RUS_Smersh_1",
+		"SP_MkBushHelmet_Forrest",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+        "CUP_V_RUS_Smersh_1",
+		"SP_MkBushHelmet_Forrest",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",	
+		"TWC_Sterling_Sub",
+		"UK3CB_BAF_M6"		
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",	
+		"TWC_Sterling_Sub",
+		"UK3CB_BAF_M6"	
+		};
+		magazines[]=
+		{
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Shells",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
+		};
+		Respawnmagazines[]=
+		{
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"34_rnd_sterling_mag",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Shells",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
+		"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
 		};
 		Items[]=
 		{

@@ -251,7 +251,7 @@ class CfgWeapons
 
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass = 100; /// some rough estimate
+			mass = 59.4; /// some rough estimate
 		};
 	};
 };

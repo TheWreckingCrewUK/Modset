@@ -4,7 +4,8 @@
 		scope=2;
 		displayName="Section Leader";
 		faction="Iraqi_units";
-		vehicleClass="GulfWar_Iraqi";
+		editorSubcategory = "Men_Iraq";
+		vehicleClass="Men_Iraq";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_NKR_Rg";
@@ -98,7 +99,8 @@
 		scope=2;
 		displayName="Rifleman";
 		faction="Iraqi_units";
-		vehicleClass="GulfWar_Iraqi";
+		editorSubcategory = "Men_Iraq";
+		vehicleClass="Men_Iraq";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_NKR_Rg";
@@ -188,7 +190,8 @@
 		scope=2;
 		displayName="RPG Gunner";
 		faction="Iraqi_units";
-		vehicleClass="GulfWar_Iraqi";
+		editorSubcategory = "Men_Iraq";
+		vehicleClass="Men_Iraq";
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_NKR_Rg";
@@ -284,7 +287,8 @@
 		scope=2;
 		displayName="RPG Assistant";
 		faction="Iraqi_units";
-		vehicleClass="GulfWar_Iraqi";
+		editorSubcategory = "Men_Iraq";
+		vehicleClass="Men_Iraq";
 		icon="iconManMG";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_NKR_Rg";
@@ -377,7 +381,8 @@
 		scope=2;
 		displayName="Machinegunner";
 		faction="Iraqi_units";
-		vehicleClass="GulfWar_Iraqi";
+		editorSubcategory = "Men_Iraq";
+		vehicleClass="Men_Iraq";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_NKR_Rg";
@@ -459,7 +464,8 @@
 		scope=2;
 		displayName="MG Assistant";
 		faction="Iraqi_units";
-		vehicleClass="GulfWar_Iraqi";
+		editorSubcategory = "Men_Iraq";
+		vehicleClass="Men_Iraq";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_NKR_Rg";
@@ -537,190 +543,4 @@
 		"ACE_morphine",
 		"ACE_EarPlugs"
 		};
-	};
-	
-	class ColdWar_USSR_AAGunner:O_Soldier_base_F
-	{
-		_generalMacro="ColdWar_USSR_AAGunner";
-		scope=2;
-		displayName="AA Gunner(ColdWar)";
-		faction="a_units";
-		vehicleClass="USSR";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
-		uniformClass="DISCLOSE_BEREZKA";
-		backpack="TWC_Backpack_USSR_AATeam";
-		linkedItems[]=
-		{
-        "rhs_6b13_EMR_6sh92",
-		"ItemCompass",
-		"ItemWatch",
-		"rhs_6b26_green"
-		};
-		respawnLinkedItems[]=
-		{
-        "rhs_6b13_EMR_6sh92",
-		"ItemCompass",
-		"ItemWatch",
-		"rhs_6b26_green"
-		};
-		weapons[]=
-		{
-		"Throw",
-		"Put",
-		"rhs_weap_ak74m_dtk",
-		"CUP_launch_9K32Strela"
-		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put",
-		"rhs_weap_ak74m_dtk",
-		"CUP_launch_9K32Strela"
-		};
-		magazines[]=
-		{
-		"CUP_Strela_2_M",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_mag_rgd5",
-		"rhs_mag_rgd5",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Respawnmagazines[]=
-		{
-		"CUP_Strela_2_M",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_mag_rgd5",
-		"rhs_mag_rgd5",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs"
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs"	
-		};		
-	};
-	
-	class ColdWar_USSR_AAAssistant:O_Soldier_base_F
-	{
-		_generalMacro="ColdWar_USSR_AAAssistant";
-		scope=2;
-		displayName="AA Assistant(ColdWar)";
-		faction="a_units";
-		vehicleClass="USSR";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
-		uniformClass="DISCLOSE_BEREZKA";
-		backpack="TWC_Backpack_USSR_AATeam";
-		linkedItems[]=
-		{
-        "rhs_6b13_EMR_6sh92",
-		"ItemCompass",
-		"ItemWatch",
-		"rhs_6b26_green"
-		};
-		respawnLinkedItems[]=
-		{
-        "rhs_6b13_EMR_6sh92",
-		"ItemCompass",
-		"ItemWatch",
-		"rhs_6b26_green"
-		};
-		weapons[]=
-		{
-		"Throw",
-		"Put",
-		"rhs_weap_ak74m_dtk"
-		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put",
-		"rhs_weap_ak74m_dtk"
-		};
-		magazines[]=
-		{
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_mag_rgd5",
-		"rhs_mag_rgd5",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Respawnmagazines[]=
-		{
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_30Rnd_545x39_7N10_AK",
-		"rhs_mag_rgd5",
-		"rhs_mag_rgd5",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs"
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs"	
-		};		
 	};

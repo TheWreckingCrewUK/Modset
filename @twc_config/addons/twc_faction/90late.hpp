@@ -3,7 +3,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_Squadleader";
 		scope=2;
 		displayName="Section Leader(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
@@ -130,7 +130,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_Rifleman";
 		scope=2;
 		displayName="RifleMan(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -243,7 +243,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_Grenadier";
 		scope=2;
 		displayName="Grenadier(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
@@ -356,7 +356,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_Gunner";
 		scope=2;
 		displayName="Gunner(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="Modern_British";
 		icon="iconManMG";
 		nakedUniform="U_BasicBody";
@@ -467,7 +467,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_2IC";
 		scope=2;
 		displayName="2IC(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -584,7 +584,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_Squadleader";
 		scope=2;
 		displayName="Platoon Commander(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
@@ -712,7 +712,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_Squadleader";
 		scope=2;
 		displayName="Platoon Sergeant(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
@@ -840,7 +840,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_Marksman";
 		scope=2;
 		displayName="Medic(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -951,7 +951,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_HelicopterPilot";
 		scope=2;
 		displayName="Helicopter Pilot(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -1068,7 +1068,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_JetPilot";
 		scope=2;
 		displayName="Jet Pilot(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -1185,7 +1185,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_MilanGunner";
 		scope=2;
 		displayName="Milan Gunner(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -1298,7 +1298,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_MilanAssistant";
 		scope=2;
 		displayName="Milan Assistant(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -1411,7 +1411,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_Rifleman";
 		scope=2;
 		displayName="Mortar Gunner(90`s Woodland)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -1532,7 +1532,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_British_Desert_Squadleader";
 		scope=2;
 		displayName="Section Leader(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_Desert_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
@@ -1658,7 +1658,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_Desert_British_Rifleman";
 		scope=2;
 		displayName="RifleMan(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_Desert_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -1770,7 +1770,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_Desert_British_Grenadier";
 		scope=2;
 		displayName="Grenadier(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_Desert_British";
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
@@ -1883,7 +1883,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_Desert_British_Gunner";
 		scope=2;
 		displayName="Gunner(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_Desert_British";
 		icon="iconManMG";
 		nakedUniform="U_BasicBody";
@@ -1993,7 +1993,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_Desert_British_2IC";
 		scope=2;
 		displayName="2IC(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_Desert_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -2109,7 +2109,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_Desert_British_Squadleader";
 		scope=2;
 		displayName="Platoon Commander(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_Desert_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
@@ -2236,7 +2236,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_Desert_British_Squadleader";
 		scope=2;
 		displayName="Platoon Sergeant(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_Desert_British";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
@@ -2362,7 +2362,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		_generalMacro="1990_Desert_British_Marksman";
 		scope=2;
 		displayName="Medic(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_Desert_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -2472,7 +2472,7 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		_generalMacro="1990_HelicopterPilot_Desert";
 		scope=2;
 		displayName="Helicopter Pilot(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_British_Desert";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -2567,7 +2567,7 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		_generalMacro="1990_Desert_British_MilanGunner";
 		scope=2;
 		displayName="Milan Gunner(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_Desert_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -2679,7 +2679,7 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		_generalMacro="1990_Desert_British_MilanAssistant";
 		scope=2;
 		displayName="Milan Assistant(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_Desert_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -2791,7 +2791,7 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		_generalMacro="1990_Desert_British_MortarGunner";
 		scope=2;
 		displayName="Mortar Gunner(90`s Desert)";
-		faction="a_units";
+		faction="twc_faction";
 		vehicleClass="1990_Desert_British";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";

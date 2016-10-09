@@ -4,7 +4,8 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		scope=2;
 		displayName="Section Leader";
 		faction="argentinian_units";
-		vehicleClass="Cold_War_Argentinian";
+		editorSubcategory = "Men_Argentina";
+		vehicleClass="Men_Argentina";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_OD_Rg";
@@ -95,7 +96,8 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		scope=2;
 		displayName="Rifleman";
 		faction="argentinian_units";
-		vehicleClass="Cold_War_Argentinian";
+		editorSubcategory = "Men_Argentina";
+		vehicleClass="Men_Argentina";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_OD_Rg";
@@ -188,7 +190,8 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		scope=2;
 		displayName="AT Rifleman";
 		faction="argentinian_units";
-		vehicleClass="Cold_War_Argentinian";
+		editorSubcategory = "Men_Argentina";
+		vehicleClass="Men_Argentina";
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_OD_Rg";
@@ -286,7 +289,8 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		scope=2;
 		displayName="AT Assistant";
 		faction="argentinian_units";
-		vehicleClass="Cold_War_Argentinian";
+		editorSubcategory = "Men_Argentina";
+		vehicleClass="Men_Argentina";
 		icon="iconManMG";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_OD_Rg";
@@ -379,7 +383,8 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		scope=2;
 		displayName="AA Rifleman";
 		faction="argentinian_units";
-		vehicleClass="Cold_War_Argentinian";
+		editorSubcategory = "Men_Argentina";
+		vehicleClass="Men_Argentina";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_OD_Rg";
@@ -476,7 +481,8 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		scope=2;
 		displayName="AA Assistant";
 		faction="argentinian_units";
-		vehicleClass="Cold_War_Argentinian";
+		editorSubcategory = "Men_Argentina";
+		vehicleClass="Men_Argentina";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_OD_Rg";
@@ -569,7 +575,8 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		scope=2;
 		displayName="Machinegunner";
 		faction="argentinian_units";
-		vehicleClass="Cold_War_Argentinian";
+		editorSubcategory = "Men_Argentina";
+		vehicleClass="Men_Argentina";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_OD_Rg";
@@ -656,7 +663,8 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		scope=2;
 		displayName="MG Assistant";
 		faction="argentinian_units";
-		vehicleClass="Cold_War_Argentinian";
+		editorSubcategory = "Men_Argentina";
+		vehicleClass="Men_Argentina";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_OD_Rg";

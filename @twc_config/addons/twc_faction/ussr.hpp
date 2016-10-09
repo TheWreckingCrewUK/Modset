@@ -3,8 +3,9 @@
 		_generalMacro="ColdWar_USSR_Squadleader";
 		scope=2;
 		displayName="Section Leader(ColdWar)";
-		faction="a_units";
-		vehicleClass="USSR";
+		faction="twc_faction";
+		editorSubcategory = "Men_USSR";
+		vehicleClass="Men_USSR";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="DISCLOSE_BEREZKA";
@@ -104,8 +105,9 @@
 		_generalMacro="ColdWar_USSR_Rifleman";
 		scope=2;
 		displayName="Rifleman(ColdWar)";
-		faction="a_units";
-		vehicleClass="USSR";
+		faction="twc_faction";
+		editorSubcategory = "Men_USSR";
+		vehicleClass="Men_USSR";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="DISCLOSE_BEREZKA";
@@ -195,8 +197,9 @@
 		_generalMacro="ColdWar_USSR_Grenadier";
 		scope=2;
 		displayName="Grenadier(ColdWar)";
-		faction="a_units";
-		vehicleClass="USSR";
+		faction="twc_faction";
+		editorSubcategory = "Men_USSR";
+		vehicleClass="Men_USSR";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="DISCLOSE_BEREZKA";
@@ -284,8 +287,9 @@
 		_generalMacro="ColdWar_USSR_Rifleman";
 		scope=2;
 		displayName="Grenadier Assistant(ColdWar)";
-		faction="a_units";
-		vehicleClass="USSR";
+		faction="twc_faction";
+		editorSubcategory = "Men_USSR";
+		vehicleClass="Men_USSR";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="DISCLOSE_BEREZKA";
@@ -375,8 +379,9 @@
 		_generalMacro="ColdWar_USSR_Efreitor";
 		scope=2;
 		displayName="Efreitor(ColdWar)";
-		faction="a_units";
-		vehicleClass="USSR";
+		faction="twc_faction";
+		editorSubcategory = "Men_USSR";
+		vehicleClass="Men_USSR";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="DISCLOSE_BEREZKA";
@@ -474,8 +479,9 @@
 		_generalMacro="ColdWar_USSR_MachineGunner";
 		scope=2;
 		displayName="Machine Gunner(ColdWar)";
-		faction="a_units";
-		vehicleClass="USSR";
+		faction="twc_faction";
+		editorSubcategory = "Men_USSR";
+		vehicleClass="Men_USSR";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="DISCLOSE_BEREZKA";
@@ -525,6 +531,192 @@
 		"rhs_mag_rgd5",
 		"rhs_mag_rgd5",
 		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs"
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs"	
+		};		
+	};
+	class ColdWar_USSR_AAGunner:O_Soldier_base_F
+	{
+		_generalMacro="ColdWar_USSR_AAGunner";
+		scope=2;
+		displayName="AA Gunner(ColdWar)";
+		faction="twc_faction";
+		editorSubcategory = "Men_USSR";
+		vehicleClass="Men_USSR";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="DISCLOSE_BEREZKA";
+		backpack="TWC_Backpack_USSR_AATeam";
+		linkedItems[]=
+		{
+        "rhs_6b13_EMR_6sh92",
+		"ItemCompass",
+		"ItemWatch",
+		"rhs_6b26_green"
+		};
+		respawnLinkedItems[]=
+		{
+        "rhs_6b13_EMR_6sh92",
+		"ItemCompass",
+		"ItemWatch",
+		"rhs_6b26_green"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_ak74m_dtk",
+		"CUP_launch_9K32Strela"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_ak74m_dtk",
+		"CUP_launch_9K32Strela"
+		};
+		magazines[]=
+		{
+		"CUP_Strela_2_M",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_mag_rgd5",
+		"rhs_mag_rgd5",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"CUP_Strela_2_M",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_mag_rgd5",
+		"rhs_mag_rgd5",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs"
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs"	
+		};		
+	};	
+	class ColdWar_USSR_AAAssistant:O_Soldier_base_F
+	{
+		_generalMacro="ColdWar_USSR_AAAssistant";
+		scope=2;
+		displayName="AA Assistant(ColdWar)";
+		faction="twc_faction";
+		editorSubcategory = "Men_USSR";
+		vehicleClass="Men_USSR";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="DISCLOSE_BEREZKA";
+		backpack="TWC_Backpack_USSR_AATeam";
+		linkedItems[]=
+		{
+        "rhs_6b13_EMR_6sh92",
+		"ItemCompass",
+		"ItemWatch",
+		"rhs_6b26_green"
+		};
+		respawnLinkedItems[]=
+		{
+        "rhs_6b13_EMR_6sh92",
+		"ItemCompass",
+		"ItemWatch",
+		"rhs_6b26_green"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_ak74m_dtk"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_ak74m_dtk"
+		};
+		magazines[]=
+		{
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_mag_rgd5",
+		"rhs_mag_rgd5",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_30Rnd_545x39_7N10_AK",
+		"rhs_mag_rgd5",
+		"rhs_mag_rgd5",
 		"SmokeShell",
 		"SmokeShell"
 		};

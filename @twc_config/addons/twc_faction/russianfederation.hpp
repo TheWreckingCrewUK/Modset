@@ -3,8 +3,9 @@
 		_generalMacro="Russian_Squadleader";
 		scope=2;
 		displayName="Section Leader";
-		faction="a_units";
-		vehicleClass="Russian";
+		faction="twc_faction";
+		editorSubcategory = "Men_RussianFederation";
+		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -109,8 +110,9 @@
 		_generalMacro="Russian_Rifleman";
 		scope=2;
 		displayName="Rifleman";
-		faction="a_units";
-		vehicleClass="Russian";
+		faction="twc_faction";
+		editorSubcategory = "Men_RussianFederation";
+		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -118,7 +120,6 @@
 		linkedItems[]=
 		{
         "rhs_6b23_6sh92",
-		"BAF_Soldier_1_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -202,8 +203,9 @@
 		_generalMacro="Russian_Grenadier";
 		scope=2;
 		displayName="Grenadier";
-		faction="a_units";
-		vehicleClass="Russian";
+		faction="twc_faction";
+		editorSubcategory = "Men_RussianFederation";
+		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -211,7 +213,6 @@
 		linkedItems[]=
 		{
         "rhs_6b23_6sh92",
-		"BAF_Soldier_1_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -301,8 +302,9 @@
 		_generalMacro="Russian_Seniorrifleman";
 		scope=2;
 		displayName="Senior Rifleman";
-		faction="a_units";
-		vehicleClass="Russian";
+		faction="twc_faction";
+		editorSubcategory = "Men_RussianFederation";
+		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -310,7 +312,6 @@
 		linkedItems[]=
 		{
         "rhs_6b23_6sh92",
-		"BAF_Soldier_1_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -396,8 +397,9 @@
 		_generalMacro="Russian_Grenadierassistant";
 		scope=2;
 		displayName="Grenadier Assistant";
-		faction="a_units";
-		vehicleClass="Russian";
+		faction="twc_faction";
+		editorSubcategory = "Men_RussianFederation";
+		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -405,7 +407,6 @@
 		linkedItems[]=
 		{
         "rhs_6b23_6sh92",
-		"BAF_Soldier_1_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -493,8 +494,9 @@
 		_generalMacro="Russian_Automaticrifleman";
 		scope=2;
 		displayName="Automatic Rifleman";
-		faction="a_units";
-		vehicleClass="Russian";
+		faction="twc_faction";
+		editorSubcategory = "Men_RussianFederation";
+		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_flora";
@@ -502,7 +504,6 @@
 		linkedItems[]=
 		{
         "rhs_6b23_6sh92",
-		"BAF_Soldier_1_Headgear_W_DG1",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -584,8 +585,9 @@
 		_generalMacro="Russian_Vehiclecommander";
 		scope=2;
 		displayName="Vehicle Commander";
-		faction="a_units";
-		vehicleClass="Russian";
+		faction="twc_faction";
+		editorSubcategory = "Men_RussianFederation";
+		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_msv_emr";
@@ -670,8 +672,9 @@
 		_generalMacro="USSR_Vehiclecrew";
 		scope=2;
 		displayName="Vehicle Crew";
-		faction="a_units";
-		vehicleClass="Russian";
+		faction="twc_faction";
+		editorSubcategory = "Men_RussianFederation";
+		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhs_uniform_msv_emr";

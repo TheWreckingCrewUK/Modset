@@ -62,7 +62,7 @@ class CfgAmmo
 	class ffaa_estatico_m_milan: MissileBase
 	{
 		model="\A3\weapons_f\launchers\nlaw\nlaw_rocket.p3d";
-		hit=550;
+		hit=2000;
 		indirectHit=20;
 		indirectHitRange=2;
 		cost=500;
@@ -185,7 +185,7 @@ class cfgWeapons
 		descriptionUse="";
 		class ItemInfo: InventoryItem_Base_F
 		{
-			mass=200;
+			mass=146.3;
 		};
 	};
 	class UK3CB_BAF_L16;
@@ -196,7 +196,7 @@ class cfgWeapons
 		displayName="Milan Tripod";
 		picture="\ffaa_estatico\ico\staticY_CA.paa";
 		icon="\ffaa_estatico\ico\icomap_backpack_ca.paa";
-		mass=180;
+		mass=88;
 		faction="a_units";
 		class assembleInfo
 		{
@@ -214,7 +214,7 @@ class cfgWeapons
 		author="FakeMatty";
 		picture="\ffaa_estatico\ico\staticX_CA.paa";
 		icon="\ffaa_estatico\ico\icomap_backpack_ca.paa";
-		mass=320;
+		mass=106.7;
 	};
 };
 class WeaponCloudsMGun;

@@ -4,8 +4,9 @@
 		_generalMacro="Modern_British_VehicleCrew";
 		scope=2;
 		displayName="Modern Vehicle Crewman(Modern)";
-		faction="a_units";
-		vehicleClass="Attachments";
+		faction="twc_faction";
+		editorSubcategory = "Men_Modern";
+		vehicleClass="Men_Modern";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
@@ -126,8 +127,9 @@
 		_generalMacro="Modern_British_VehicleCrew";
 		scope=2;
 		displayName="Modern Vehicle Commander(Modern)";
-		faction="a_units";
-		vehicleClass="Attachments";
+		faction="twc_faction";
+		editorSubcategory = "Men_Modern";
+		vehicleClass="Men_Modern";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
@@ -251,8 +253,9 @@
 		_generalMacro="Modern_British_Marksman";
 		scope=2;
 		displayName="Marksman(Modern)";
-		faction="a_units";
-		vehicleClass="Modern_British";
+		faction="twc_faction";
+		editorSubcategory = "Men_Modern";
+		vehicleClass="Men_Modern";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
