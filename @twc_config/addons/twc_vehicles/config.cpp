@@ -28,7 +28,6 @@ class CfgPatches
 			"Burnes_crew_CTRG",
 			"cup_wheeledvehicles_lr",
 			"cup_trackedvehicles_fv510",
-			"cup_airvehicles_sa330",
 			"uk3cb_baf_vehicles_wildcat",
 			"cup_airvehicles_c130j"
 		};
