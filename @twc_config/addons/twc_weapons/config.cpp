@@ -252,26 +252,6 @@ class cfgWeapons
 			};
 		};
 	};
-	class UK3CB_BAF_L86A1_SUSAT3D_Lazer:UK3CB_BAF_L86A2
-	{
-		scope = 1;
-		displayName = "L86A1";
-		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
-		author="Jayman";
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="UK3CB_BAF_SUSAT_3D";
-			};
-			class LinkedItemsFrontSideRail
-			{
-				slot="asdg_FrontSideRail_L85";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
-			};
-		};
-	};
 	class UK3CB_BAF_L85A1:UK3CB_BAF_L85A2
 	{
 		displayName = "L85A1";
@@ -310,21 +290,6 @@ class cfgWeapons
 			{
 				slot="asdg_FrontSideRail_L85";
 				item="UK3CB_BAF_LLM_Flashlight_Black";
-			};
-		};
-	};
-	class UK3CB_BAF_L85A2_UGL_SUSAT3D:UK3CB_BAF_L85A2_UGL
-	{
-		scope = 1;
-		displayName = "L85A1 W/ L123A2 Ladder";
-		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
-		author="Jayman";
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot="asdg_FrontSideRail_L85";
-				item="UK3CB_BAF_SUSAT_3D";
 			};
 		};
 	};	
@@ -1391,31 +1356,12 @@ class CfgVehicles
 				count = 7;
 			};
 		};
-	};
-	class TWC_Backpack_1990_Grenadier:UK3CB_BAF_B_Bergen_DPMT_Rifleman_A
-	{
-		scope = 1;
-		class TransportMagazines
+		class TransportWeapons
 		{
-			class _xx_Stanag
+			class _xx_LAW
 			{
-				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 7;
-			};
-			class _xx_HE
-			{
-				magazine = "1Rnd_HE_Grenade_shell";
-				count = 12;
-			};
-			class _xx_Flare
-			{
-				magazine = "UGL_FlareWhite_F";
-				count = 3;
-			};
-			class _xx_Smoke
-			{
-				magazine = "1Rnd_Smoke_Grenade_shell";
-				count = 3;
+				name = "HAFM_LAW";
+				count = 1;
 			};
 		};
 	};
@@ -1433,6 +1379,28 @@ class CfgVehicles
 			{
 				magazine = "UK3CB_BAF_556_30Rnd_T";
 				count = 4;
+			};
+		};
+	};
+	class TWC_Backpack_1990_AT:UK3CB_BAF_B_Bergen_DPMT_Rifleman_A
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Stanag
+			{
+				magazine = "UK3CB_BAF_556_30Rnd";
+				count = 7;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine = "tf47_m3maaws_HEAT";
+				count = 2;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine = "tf47_m3maaws_HE";
+				count = 1;
 			};
 		};
 	};
