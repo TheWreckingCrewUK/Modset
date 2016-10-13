@@ -197,7 +197,7 @@ class cfgWeapons
 		picture="\ffaa_estatico\ico\staticY_CA.paa";
 		icon="\ffaa_estatico\ico\icomap_backpack_ca.paa";
 		mass=88;
-		faction="a_units";
+		faction="twc_faction";
 		class assembleInfo
 		{
 			primary=0;
@@ -252,7 +252,7 @@ class CfgVehicles
 		vehicleClass="Static";
 		scope=2;
 		side=1;
-		faction="a_units";
+		faction="twc_faction";
 		crew="I_Soldier_F";
 		typicalCargo[]=
 		{
