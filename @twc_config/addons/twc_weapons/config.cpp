@@ -1360,7 +1360,7 @@ class CfgVehicles
 		{
 			class _xx_LAW
 			{
-				name = "HAFM_LAW";
+				weapon = "HAFM_LAW";
 				count = 1;
 			};
 		};
