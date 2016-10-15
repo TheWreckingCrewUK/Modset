@@ -325,18 +325,12 @@
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
 		"tf47_m3maaws_HEAT",
 		"CUP_HandGrenade_L109A2_HE",
 		"CUP_HandGrenade_L109A2_HE"
 		};
 		Respawnmagazines[]=
 		{
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
@@ -378,8 +372,7 @@
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"tf47_optic_m3maaws"
+		"ACE_tourniquet"
 		};
 		respawntems[]=
 		{
@@ -411,8 +404,7 @@
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"tf47_optic_m3maaws"		
+		"ACE_tourniquet"		
 		};		
 	};
 	class ColdWar_AT_ASS: B_Soldier_base_F

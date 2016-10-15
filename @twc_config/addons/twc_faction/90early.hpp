@@ -568,8 +568,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS",
-		"tf47_optic_m3maaws"
+		"UK3CB_BAF_HMNVS"
 		};
 		respawntems[]=
 		{
@@ -581,8 +580,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS",
-		"tf47_optic_m3maaws"		
+		"UK3CB_BAF_HMNVS"		
 		};		
 	};
 	class 1990_British_AAT: B_Soldier_base_F
