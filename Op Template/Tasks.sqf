@@ -1,3 +1,2 @@
-sleep 10;
-if !(isserver) exitwith {};
+if(!isServer)exitWith{};
 
