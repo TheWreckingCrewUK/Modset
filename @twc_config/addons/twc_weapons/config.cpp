@@ -331,6 +331,8 @@ class CfgVehicles
 	class UK3CB_BAF_B_Bergen_DDPM_Rifleman_B;
 	class UK3CB_BAF_B_Kitbag_DDPM;
 	
+	class B_mas_ww2_Bergen_uk;
+	
 	class rhs_sidor;
 	class rhs_rpg_empty;
 	
@@ -1714,6 +1716,98 @@ class CfgVehicles
 			};
 		};
 	};
+//************************WW2*******************************
+	class TWC_Backpack_WW2_Medic:B_mas_ww2_Bergen_uk
+	{
+		scope = 1;
+		class TransportItems
+		{
+           class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 25;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 15;
+			};
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 25;
+			};
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 25;
+			};
+			class _xxACE_adenosine
+			{
+				name = "ACE_adenosine";
+				count = 8;
+			};
+			class _xxACE_atropine
+			{
+				name = "ACE_atropine";
+				count = 2;
+			};
+			class _xxACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _xxACE_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 25;
+			};
+			class _xxACE_personalAidKit
+			{
+				name = "ACE_personalAidKit";
+				count = 1;
+			};
+			class _xxACE_salineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 8;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 6;
+			};
+		};
+	};
+	class TWC_Backpack_WW2_2IC:B_mas_ww2_Bergen_uk
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _XX_Enfield_Mag
+			{
+				magazine="CUP_10x_303_M";
+				count=5;
+			};
+			class _XX_Bren_Mag
+			{
+				magazine = "I44_30rd_77x56R_Mix_Bren";
+				count = 3;
+			};
+		};
+	};
+	class TWC_Backpack_WW2_MG:B_mas_ww2_Bergen_uk
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _XX_Bren_Mag
+			{
+				magazine = "I44_30rd_77x56R_Mix_Bren";
+				count = 5;
+			};
+		};
+	};
 //*************************USSR****************************
 	class TWC_Backpack_USSR_Sectionlead:rhs_sidor
 	{
@@ -2443,6 +2537,89 @@ class CfgVehicles
 				count = 10;
 			};
 		};		
+		transportAmmo=1000000;
+		supplyRadius=3;
+	};
+	class TWC_Operation_WW2_Ammobox:TWC_modern_Operation_Ammobox
+	{
+		author="FakeMatty";
+		displayName="TWC 1990 Symetrical AmmoBox";
+		class TransportMagazines
+		{
+			class _XX_Enfield_Mag
+			{
+				magazine="CUP_10x_303_M";
+				count=200;
+			};
+			class _XX_Bren_Mag
+			{
+				magazine="I44_30rd_77x56R_Mix_Bren";
+				count=200;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=60;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=50;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 100;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 50;
+			};
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 100;
+			};
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 100;
+			};
+			class _xxACE_adenosine
+			{
+				name = "ACE_adenosine";
+				count = 30;
+			};
+			class _xxACE_atropine
+			{
+				name = "ACE_atropine";
+				count = 30;
+			};
+			class _xxACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 30;
+			};
+			class _xxACE_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 100;
+			};
+			class _xxACE_salineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 50;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 50;
+			};
+		};	
 		transportAmmo=1000000;
 		supplyRadius=3;
 	};

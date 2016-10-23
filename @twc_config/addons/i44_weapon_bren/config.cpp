@@ -223,20 +223,20 @@ class CfgMagazines
 		ammo="I44_B_77x56R_Ball";
 		count=30;
 		initSpeed=744;
-		I44_weight=1.5;
+		mass = 19.8;
 	};
 	class I44_30rd_77x56R_Tracer_Bren: I44_30rd_77x56R_Ball_Bren
 	{
 		displayName="Bren 30rd Tracer";
 		tracersEvery=1;
-		I44_weight=1.5;
+		mass = 19.8;
 	};
 	class I44_30rd_77x56R_Mix_Bren: I44_30rd_77x56R_Ball_Bren
 	{
 		displayName="Bren 30rd Mix";
 		tracersEvery=4;
 		lastRoundsTracer=4;
-		I44_weight=1.5;
+		mass = 19.8;
 	};
 };
 class Mode_SemiAuto
@@ -307,6 +307,7 @@ class cfgWeapons
 		weaponInfoType="RscWeaponZeroing";
 		recoil="recoil_zafir";
 		reloadAction="GestureReloadMMG01";
+		mass = 227.7;
 		
 		class OpticsModes: OpticsModes
 		{
