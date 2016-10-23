@@ -1,7 +1,12 @@
 waitUntil{!isNull player};
-execVM "Operation_Framework\acre\GiveRadio.sqf";
 if (!hasInterface) exitWith {};
+execVM "Operation_Framework\acre\GiveRadio.sqf";
 
-player linkItem "itemMap";
-player addItem "ACRE_PRC343";
+/*/////////////////////////////////////////////////////////
+//                         Base                           /
+//                         Setup                          /
+/////////////////////////////////////////////////////////*/
+
+[] execVM "operation_framework\base\safezone.sqf";
+//[] execVM "operation_framework\base\run.sqf";
 
