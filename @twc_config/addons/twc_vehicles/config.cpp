@@ -190,12 +190,12 @@ class CfgVehicles
 			};
 			class _xx_UK3CB_BAF_20Rnd
 			{
-				magazine="UK3CB_BAF_20Rnd";
+				magazine="UK3CB_BAF_762_L42A1_20Rnd";
 				count=2;
 			};
 			class _xx_UK3CB_BAF_20Rnd_T
 			{
-				magazine="UK3CB_BAF_20Rnd_T";
+				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 				count=1;
 			};
 			class _xx_UK3CB_BAF_200Rnd
@@ -278,12 +278,12 @@ class CfgVehicles
 			};
 			class _xx_UK3CB_BAF_20Rnd
 			{
-				magazine="UK3CB_BAF_20Rnd";
+				magazine="UK3CB_BAF_762_L42A1_20Rnd";
 				count=2;
 			};
 			class _xx_UK3CB_BAF_20Rnd_T
 			{
-				magazine="UK3CB_BAF_20Rnd_T";
+				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 				count=1;
 			};
 			class _xx_UK3CB_BAF_556_200Rnd
@@ -516,7 +516,7 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		faction="twc_faction";
-		displayname = "Landrover Woodland (Coldwar)";
+		displayname = "Landrover Woodland (ColdWar)";
 		class TransportMagazines
 		{
 			class _xx_UK3CB_20Rnd_762x51_B_fal
@@ -620,15 +620,15 @@ class CfgVehicles
 				magazine="UK3CB_BAF_762_20Rnd";
 				count=10;
 			};
-			class _xx_UK3CB_BAF_75Rnd
+			class _xx_Belt
 			{
-				magazine="UK3CB_BAF_75Rnd";
-				count=2;
+				magazine = "UK3CB_BAF_762_100Rnd";
+				count = 2;
 			};
-			class _xx_UK3CB_BAF_75Rnd_T
+			class _xx_Belt_T
 			{
-				magazine="UK3CB_BAF_75Rnd_T";
-				count=1;
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 1;
 			};
 			class _xx_ACE_HandFlare_White
 			{
@@ -2245,12 +2245,12 @@ class CfgVehicles
 				};
 				class _xx_UK3CB_BAF_20Rnd
 				{
-					magazine="UK3CB_BAF_20Rnd";
+					magazine="UK3CB_BAF_762_L42A1_20Rnd";
 					count=2;
 				};
 				class _xx_UK3CB_BAF_20Rnd_T
 				{
-					magazine="UK3CB_BAF_20Rnd_T";
+					magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 					count=1;
 				};
 		};
@@ -2374,12 +2374,12 @@ class CfgVehicles
 				};
 				class _xx_UK3CB_BAF_20Rnd
 				{
-					magazine="UK3CB_BAF_20Rnd";
+					magazine="UK3CB_BAF_762_L42A1_20Rnd";
 					count=2;
 				};
 				class _xx_UK3CB_BAF_20Rnd_T
 				{
-					magazine="UK3CB_BAF_20Rnd_T";
+					magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 					count=1;
 				};
 		};
@@ -4376,24 +4376,24 @@ class CfgVehicles
 				};
 				class _xx_UK3CB_BAF_20Rnd
 				{
-					magazine="UK3CB_BAF_20Rnd";
+					magazine="UK3CB_BAF_762_L42A1_20Rnd";
 					count=2;
 				};
 				class _xx_UK3CB_BAF_20Rnd_T
 				{
-					magazine="UK3CB_BAF_20Rnd_T";
+					magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 					count=1;
 				};
 				class _xx_Belt
-				{
-					magazine = "UK3CB_BAF_75Rnd";
-					count = 1;
-				};
-				class _xx_Belt_T
-				{
-					magazine = "UK3CB_BAF_75Rnd_T";
-					count = 1;
-				};
+			{
+				magazine = "UK3CB_BAF_762_100Rnd";
+				count = 1;
+			};
+			class _xx_Belt_T
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 1;
+			};
 		};
 		class TransportItems
 		{
@@ -4454,15 +4454,15 @@ class CfgVehicles
 				magazine="UK3CB_BAF_762_20Rnd";
 				count=8;
 			};
-			class _xx_UK3CB_BAF_75Rnd
+			class _xx_Belt
 			{
-				magazine="UK3CB_BAF_75Rnd";
-				count=2;
+				magazine = "UK3CB_BAF_762_100Rnd";
+				count = 2;
 			};
-			class _xx_UK3CB_BAF_75Rnd_T
+			class _xx_Belt_T
 			{
-				magazine="UK3CB_BAF_75Rnd_T";
-				count=1;
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 1;
 			};
 			class _xx_ACE_HandFlare_White
 			{

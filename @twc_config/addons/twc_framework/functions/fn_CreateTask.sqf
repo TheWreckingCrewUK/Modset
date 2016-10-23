@@ -1,11 +1,8 @@
+Params ["_taskname","_description","_title",["_pos",""]];
 
-Params ["_taskname","_Title","_Description","_Primary","_Marker"];
+if(isNil "_taskname" || typeName _taskname != "STRING")exitWith{hint "twc_fnc_createTask error"};
+if(isNil "_description" || typeName _description != "STRING")exitWith{hint "twc_fnc_createTask error"};
+if(isNil "_title" || typeName _title != "STRING")exitWith{hint "twc_fnc_createTask error"};
+if(isNil "_pos")then{_pos = ""};
 
-if (_Primary) then {
-	_taskname = "[P]" + _taskname;
-}else{
-	_taskname = "[S]" + _taskname;
-};
-if(isNil "_Marker")then {_marker = "";};
-
-[allunits,[_taskname],[_Title,_Description,_Marker],getmarkerpos _Marker,0,2,true] call BIS_fnc_taskCreate;
+[allunits,[_taskname],[_description,_title],_pos,0,2,false] call BIS_fnc_taskCreate;
