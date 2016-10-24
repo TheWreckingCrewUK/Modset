@@ -333,17 +333,11 @@ lastAO = _name;
 
 {
 	deleteVehicle _x
-}forEach allDead;
-_enemy = nearestObjects [_pos, ["LandVehicle","Air"], 2000];
-{
-	if (side _x != WEST)then{
-		deleteVehicle _x;
-	};
-}forEach _enemy;
-_enemy = nearestObjects [_pos, ["Man","WeaponHolder","GroundWeaponHolder"], 2000];
+}forEach allDeadMen;
 {
 	deleteVehicle _x
-}forEach _enemy;
+}forEach allDead;
+
 {
 	deleteGroup _x
 }forEach allGroups;

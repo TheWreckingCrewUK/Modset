@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4722.7373,357.99915,10218.88};
-		dir[]={0.42755672,-0.38358015,0.81867403};
-		up[]={0.1775762,0.92350751,0.34001815};
-		aside[]={0.8864845,-3.2625394e-007,-0.46297133};
+		pos[]={4793.8242,403.25696,10140.501};
+		dir[]={-0.11700998,-0.36195767,0.92491788};
+		up[]={-0.045431871,0.93218994,0.35912085};
+		aside[]={0.99219549,-5.3679105e-007,0.12552275};
 	};
 };
 binarizationWanted=0;
@@ -187,7 +187,7 @@ class AddonsMetaData
 		class Item20
 		{
 			className="acex_sitting";
-			name="acex_sitting";
+			name="ACEX - Sitting";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
