@@ -112,7 +112,7 @@ class CfgEditorSubCategories
 	class Men_WW2
 	{
 		displayName = "Men (WW2)";
-	}
+	};
 	class Men_USSR
 	{
 		displayName = "Men (USSR)";
