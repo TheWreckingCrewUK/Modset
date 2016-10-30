@@ -13,7 +13,6 @@ params ["_pos","_waves","_groupradius","_thisList"];
 //Initial defines for number of waves and static time between them
 
 _waves = _waves - floor InsP_enemyMorale;
-_sleep = 10;
 if (_waves < 1) then {
 	_waves = 0;
 };
@@ -33,7 +32,6 @@ if (_waves < 1) then {
 	
 	//Start of function
 	for "_i" from 1 to _waves do {
-		sleep _sleep;
 		_spawnPos = [_pos,_groupradius,[_dir1,_dir2]] call SHK_pos;
 		
 	//Once it passed it spawns the units + adds event handler
@@ -43,14 +41,16 @@ if (_waves < 1) then {
 		_spawnPos = getPos _spawnPos;
 		[_groupSpawn, _spawnPos, 40] call CBA_fnc_taskAttack;	
 		{
-			_x addMPEventHandler ["MPKilled",{
+			_x addEventHandler ["Killed",{
+			[(_this select 0)] call twc_fnc_deleteDead;
 				if (side (_this select 1) == WEST) then{
 					InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
 				};
 			}];
 			_x addMagazines ["handGrenade",2];
-			_x setVariable ["location",str _pos,false];
+			_x setVariable ["unitsHome",_pos,false];
 		}forEach units _groupSpawn;
+		sleep 10;
 	};
 };
 
@@ -62,7 +62,8 @@ if ((count PlayableUnits) > 5) then{
 		_groupSpawn =  [_spawnPos, East, enemyTechnical] call BIS_fnc_spawnGroup;
 		[_groupSpawn, (_pos), 40] call CBA_fnc_taskAttack;
 		{
-			_x addMPEventHandler ["MPKilled",{
+			_x addEventHandler ["Killed",{
+				[(_this select 0)] call twc_fnc_deleteDead;
 				if (side (_this select 1) == WEST) then{
 					InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
 				};
@@ -72,6 +73,7 @@ if ((count PlayableUnits) > 5) then{
 };
 
 _trg = createTrigger ["EmptyDetector", _pos];
-_trg setTriggerArea [400, 400, 0, false];
-_trg setTriggerActivation ["EAST", "PRESENT", False];
-_trg setTriggerStatements ["count thisList < 3","[(getpos thisTrigger)] call twc_deadCleanup",""];
+_trg setTriggerArea [500, 500, 0, false];
+_trg setTriggerActivation ["ANY", "PRESENT", False];
+_trg setTriggerTimeout [15,15,15, true];
+_trg setTriggerStatements ["West countSide thisList == 0 || East CountSide thisList < 6","[(getPos thisTrigger), thisList] call twc_fnc_townDeciding",""];

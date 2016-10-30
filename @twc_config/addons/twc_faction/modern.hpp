@@ -61,7 +61,8 @@
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"CUP_HandGrenade_L109A2_HE",
+		"B_IR_Grenade"
 		};
 		Respawnmagazines[]=
 		{
@@ -78,7 +79,8 @@
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"CUP_HandGrenade_L109A2_HE",
+		"B_IR_Grenade"
 		};
 		Items[]=
 		{
@@ -635,7 +637,8 @@
 		"UK3CB_BAF_556_30Rnd_T",
 		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"CUP_HandGrenade_L109A2_HE",
+		"B_IR_Grenade"
 		};
 		Respawnmagazines[]=
 		{
@@ -650,7 +653,8 @@
 		"UK3CB_BAF_556_30Rnd_T",
 		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"CUP_HandGrenade_L109A2_HE",
+		"B_IR_Grenade"
 		};
 		Items[]=
 		{
@@ -1056,7 +1060,8 @@
 		"UK3CB_BAF_556_30Rnd_T",
 		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"CUP_HandGrenade_L109A2_HE",
+		"B_IR_Grenade"
 		};
 		Respawnmagazines[]=
 		{
@@ -1068,7 +1073,8 @@
 		"UK3CB_BAF_556_30Rnd_T",
 		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"CUP_HandGrenade_L109A2_HE",
+		"B_IR_Grenade"
 		};
 		Items[]=
 		{
@@ -1203,7 +1209,8 @@
 		"UK3CB_BAF_556_30Rnd_T",
 		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"CUP_HandGrenade_L109A2_HE",
+		"B_IR_Grenade"
 		};
 		Respawnmagazines[]=
 		{
@@ -1215,7 +1222,8 @@
 		"UK3CB_BAF_556_30Rnd_T",
 		"UK3CB_BAF_556_30Rnd_T",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"CUP_HandGrenade_L109A2_HE",
+		"B_IR_Grenade"
 		};
 		Items[]=
 		{
@@ -2182,7 +2190,8 @@
 		"UK3CB_BAF_762_L42A1_20Rnd",
 		"UK3CB_BAF_762_L42A1_20Rnd",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"CUP_HandGrenade_L109A2_HE",
+		"B_IR_Grenade"
 		};
 		Respawnmagazines[]=
 		{
@@ -2199,7 +2208,8 @@
 		"UK3CB_BAF_762_L42A1_20Rnd",
 		"UK3CB_BAF_762_L42A1_20Rnd",
 		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"CUP_HandGrenade_L109A2_HE",
+		"B_IR_Grenade"
 		};
 		Items[]=
 		{

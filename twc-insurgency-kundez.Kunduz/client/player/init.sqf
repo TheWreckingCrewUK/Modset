@@ -887,7 +887,7 @@ mertAction = ["MERTList","MERT List","", {call TWC_fnc_getMERTList;},{true}] cal
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], mertAction] call ace_interact_menu_fnc_addActionToObject;
 
 
-ammoCrateSpawner addAction ["Repair Vehicle",
+ammoCrateSpawner addAction ["Repair/Rearm/Refuel Vehicle",
 	{[] execVM  "client\sys_blufor\fnc_vehicleRepair.sqf"},[],0,true,false,"",""];
 
 

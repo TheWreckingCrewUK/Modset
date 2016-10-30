@@ -1,6 +1,6 @@
-townLocationArray = nearestLocations [getPosATL TWCServer, ["NameVillage","NameCity","NameCityCapital","nameLocal"], 80000];
+townLocationArray = nearestLocations [[worldSize/2,worldSize/2], ["NameVillage","NameCity","NameCityCapital","nameLocal"], 80000];
 {
-	if(!((text _x) in badTownList))then{	
+	if(!((text _x) in badTownList))then{
 		_trg = createTrigger ["EmptyDetector", getPos _x];
 		_trg setTriggerArea [400, 400, 0, false];
 		_trg setTriggerActivation ["West", "PRESENT", False];

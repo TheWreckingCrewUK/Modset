@@ -171,12 +171,14 @@
 		magazines[]=
 		{
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd"
+		"UK3CB_BAF_556_30Rnd",
+		"B_IR_Grenade"
 		};
 		Respawnmagazines[]=
 		{
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd"
+		"UK3CB_BAF_556_30Rnd",
+		"B_IR_Grenade"
 		};
 		Items[]=
 		{

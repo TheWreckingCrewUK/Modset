@@ -218,6 +218,26 @@ class CfgVehicles
 				magazine = "UK3CB_BAF_762_100Rnd_T";
 				count = 1;
 			};
+			class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 2;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 4;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 4;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
+				count = 4;
+			};
 		};
 		class TransportWeapons
 		{
@@ -306,6 +326,26 @@ class CfgVehicles
 				magazine = "UK3CB_BAF_762_100Rnd_T";
 				count = 1;
 			};
+			class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 2;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 4;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 4;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
+				count = 4;
+			};
 		};
 		class TransportItems
 		{
@@ -392,6 +432,26 @@ class CfgVehicles
 				magazine="CUP_HandGrenade_L109A2_HE";
 				count=8;
 			};
+			class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 2;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 4;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 4;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
+				count = 4;
+			};
 		};
 		class TransportItems
 		{
@@ -472,6 +532,26 @@ class CfgVehicles
 			{
 				magazine="CUP_HandGrenade_L109A2_HE";
 				count=8;
+			};
+			class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 2;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 4;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 4;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
+				count = 4;
 			};
 		};
 		class TransportItems
@@ -2253,6 +2333,26 @@ class CfgVehicles
 					magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 					count=1;
 				};
+				class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 2;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 4;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 4;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
+				count = 4;
+			};
 		};
 		class TransportItems
 		{
@@ -2382,6 +2482,26 @@ class CfgVehicles
 					magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
 					count=1;
 				};
+				class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 2;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 4;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 4;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
+				count = 4;
+			};
 		};
 		class TransportItems
 		{
@@ -4394,6 +4514,26 @@ class CfgVehicles
 				magazine = "UK3CB_BAF_762_100Rnd_T";
 				count = 1;
 			};
+			class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 2;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 4;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 4;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
+				count = 4;
+			};
 		};
 		class TransportItems
 		{
@@ -4498,6 +4638,26 @@ class CfgVehicles
 			{
 				magazine="CUP_HandGrenade_L109A2_HE";
 				count=6;
+			};
+			class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 2;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 4;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 4;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
+				count = 4;
 			};
 		};
 		class TransportItems

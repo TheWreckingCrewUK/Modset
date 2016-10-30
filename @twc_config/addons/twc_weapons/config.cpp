@@ -528,7 +528,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class TWC_Backpack_Modern_Platoon_Command:UK3CB_BAF_B_Bergen_MTP_Radio_L_B
+	class TWC_Backpack_Modern_Platoon_Command:UK3CB_BAF_B_Bergen_MTP_SL_L_A
 	{
 		scope = 1;
 		maximumLoad = 500;
@@ -556,7 +556,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class TWC_Backpack_Modern_Platoon_Sergeant:UK3CB_BAF_B_Bergen_MTP_Radio_L_B
+	class TWC_Backpack_Modern_Platoon_Sergeant:UK3CB_BAF_B_Bergen_MTP_SL_L_A
 	{
 		scope = 1;
 		maximumLoad = 500;
@@ -2052,6 +2052,26 @@ class CfgVehicles
 				magazine = "UK3CB_BAF_338_5Rnd";
 				count = 20;
 			};
+			class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 10;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 20;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 20;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
+				count = 20;
+			};
 		};
 		class TransportItems
 		{
@@ -2216,6 +2236,26 @@ class CfgVehicles
 			class _xx_338Lapua
 			{
 				magazine = "UK3CB_BAF_338_5Rnd";
+				count = 20;
+			};
+			class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 10;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 20;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 20;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
 				count = 20;
 			};
 		};
@@ -2458,6 +2498,26 @@ class CfgVehicles
 			class _xx_338Lapua
 			{
 				magazine = "UK3CB_BAF_338_5Rnd";
+				count = 20;
+			};
+			class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 10;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 20;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 20;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
 				count = 20;
 			};
 		};

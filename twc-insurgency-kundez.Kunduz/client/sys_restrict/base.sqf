@@ -1,6 +1,3 @@
-#define BASE_WEST    [["respawn_west", 200]]
-
-if (isDedicated) exitWith {};
 waitUntil {!isNull player};
 
 player addEventHandler ["Fired", {

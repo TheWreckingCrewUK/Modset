@@ -24,13 +24,14 @@ if (_random < 75) then {
 		_groupSpawn = [_spawnPos, East, townSpawn,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
 		[_groupSpawn, _spawnPos, 200, 3, False] call CBA_fnc_TaskDefend;
 		{
-			_x addMPEventHandler ["MPKilled",{
+			_x addEventHandler ["Killed",{
+				[(_this select 0)] call twc_fnc_deleteDead;
 				if (side (_this select 1) == WEST) then{
 					InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
 				};
 			}];
 			_x addMagazines ["handGrenade",2];
-			_x setVariable ["location",str _pos,false];
+			_x setVariable ["unitsHome",_pos,false];
 		}forEach units _groupSpawn;
 	};
 	
@@ -44,12 +45,14 @@ if (_random < 50) then {
 		_groupSpawn = [_spawnPos, East, townSpawn,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
 		[_groupSpawn, _spawnPos, 200, 3, False] call CBA_fnc_TaskDefend;
 		{
-			_x addMPEventHandler ["MPKilled",{
+			_x addEventHandler ["Killed",{
+				[(_this select 0)] call twc_fnc_deleteDead;
 				if (side (_this select 1) == WEST) then{
 					InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
 				};
 			}];
 			_x addMagazines ["handGrenade",2];
+			_x setVariable ["unitsHome",_pos,false];
 		}forEach units _groupSpawn;
 	};
 	

@@ -31,8 +31,8 @@ _defuseAction = [
                 InsP_civTrust = InsP_civTrust + 0.1;
                 publicVariable "InsP_iedDestroyed";
                 publicVariable "InsP_civTrust";
-				_rand = (floor 3);
-				if(_rand > 1)then{
+				_rand = (floor 5);
+				if(_rand < 1)then{
 					
 					[player] remoteExecCall ["TWC_fnc_iedAttack",2];
 				};

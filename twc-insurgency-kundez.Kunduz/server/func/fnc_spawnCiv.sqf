@@ -27,9 +27,12 @@ for "_i" from 1 to _civnum do {
 		_civHeading = (random 360);
 		_individualCiv setFormDir _civHeading;
 		_individualCiv setDir _civHeading;
-		_westKilled = _individualCiv addMPEventHandler ["MPKilled", {[_this select 0, _this select 1, _intelCache] call InsP_fnc_civKill;}];
+		_westKilled = _individualCiv addEventHandler ["Killed", {
+			[(_this select 0)] call twc_fnc_deleteDead;
+			[_this select 0, _this select 1, _intelCache] call InsP_fnc_civKill;
+		}];
 		_individualCiv disableAI "path";
-		[_individualCiv, _individualCiv, 200, 2, True] call CBA_fnc_TaskDefend;
+		_individualCiv setVariable ["unitsHome",_pos,false];
 		_clothes = 
 		[
 			"CUP_O_TKI_Khet_Partug_03",

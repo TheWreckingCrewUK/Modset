@@ -5,3 +5,7 @@ twc_spawnCiv = compile preprocessfilelinenumbers "server\func\fnc_spawnCiv.sqf";
 twc_townSetup = compile preprocessfilelinenumbers "server\func\fnc_spawnTownSetup.sqf";
 twc_townClear = compile preprocessfilelinenumbers "server\func\fnc_townClear.sqf";
 twc_deadCleanup = compile preprocessfilelinenumbers "server\func\fnc_deadCleanup.sqf";
+twc_fnc_deleteDead = compile preprocessfilelinenumbers "server\func\fnc_deleteDead.sqf";
+
+twc_fnc_townDeciding = compile preprocessfilelinenumbers "server\func\fnc_townDeciding.sqf";
+twc_fnc_townReset = compile preprocessfilelinenumbers "server\func\fnc_townReset.sqf";
