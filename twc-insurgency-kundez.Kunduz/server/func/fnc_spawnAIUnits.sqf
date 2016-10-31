@@ -16,64 +16,33 @@ _waves = _waves - floor InsP_enemyMorale;
 if (_waves < 1) then {
 	_waves = 0;
 };
-//Spawn for each wave
-[_waves,_sleep,_pos,_groupradius,_thisList]spawn{
-	//Back to variables for ease
-	_waves = (_this select 0);
-	_sleep = (_this select 1);
-	_pos = (_this select 2);
-	_groupradius = (_this select 3);
-	_thisList = ((_this select 4) select 0);
-	
-	//Pre Calculations:
-	_dir = _thisList getDir _pos;
-	_dir1 = _dir - 30;
-	_dir2 = _dir + 30;
-	
-	//Start of function
-	for "_i" from 1 to _waves do {
-		_spawnPos = [_pos,_groupradius,[_dir1,_dir2]] call SHK_pos;
-		
-	//Once it passed it spawns the units + adds event handler
-		_groupSpawn = [_spawnPos, East, townSquadWave] call BIS_fnc_spawnGroup;	
-		_buildings = nearestObjects[_pos,["house","buildings"],400];
-		_spawnPos = _buildings call BIS_fnc_selectRandom;
-		_spawnPos = getPos _spawnPos;
-		[_groupSpawn, _spawnPos, 40] call CBA_fnc_taskAttack;	
-		{
-			_x addEventHandler ["Killed",{
-			[(_this select 0)] call twc_fnc_deleteDead;
-				if (side (_this select 1) == WEST) then{
-					InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
-				};
-			}];
-			_x addMagazines ["handGrenade",2];
-			_x setVariable ["unitsHome",_pos,false];
-		}forEach units _groupSpawn;
-		sleep 10;
-	};
-};
 
-//If the playercount is high adds a chance of a technical
-if ((count PlayableUnits) > 5) then{
-	_rand = (random 100);
-	if(_rand < 50)then{
-		_spawnPos = [_pos, _groupradius,[_dir1,_dir2],0,[2,200]] call shk_pos;
-		_groupSpawn =  [_spawnPos, East, enemyTechnical] call BIS_fnc_spawnGroup;
-		[_groupSpawn, (_pos), 40] call CBA_fnc_taskAttack;
-		{
-			_x addEventHandler ["Killed",{
-				[(_this select 0)] call twc_fnc_deleteDead;
-				if (side (_this select 1) == WEST) then{
-					InsP_enemyMorale = InsP_enemyMorale + 0.1; publicVariable "InsP_enemyMorale";
-				};
-			}];
-		}forEach units _groupSpawn;
-	};
+_dir = (_thisList select 0) getDir _pos;
+_dir1 = _dir - 30;
+_dir2 = _dir + 30;
+
+_num = 0;
+_total = 10;
+_group = createGroup East;
+_spawnPos = [_pos,_groupradius,[_dir1,_dir2]] call SHK_pos;
+for "_i" from 1 to _total do{
+	_unit = _group createUnit [(townSpawn select _num), _spawnPos,[], 5,"NONE"];
+	_unit addEventHandler ["Killed",{
+		[(_this select 0)] call twc_fnc_deleteDead;
+		if (side (_this select 1) == WEST) then{
+			InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
+		};
+	}];
+	_unit addMagazines ["handGrenade",2];
+	_unit setVariable ["unitsHome",_pos,false];
+	_num = _num + 1;
+	sleep 0.2;
 };
+[_group, (_pos), 40] call CBA_fnc_taskAttack;
+
 
 _trg = createTrigger ["EmptyDetector", _pos];
-_trg setTriggerArea [500, 500, 0, false];
+_trg setTriggerArea [200, 200, 0, false];
 _trg setTriggerActivation ["ANY", "PRESENT", False];
-_trg setTriggerTimeout [15,15,15, true];
-_trg setTriggerStatements ["West countSide thisList == 0 || East CountSide thisList < 6","[(getPos thisTrigger), thisList] call twc_fnc_townDeciding",""];
+_trg setTriggerTimeout [5,5,5, true];
+_trg setTriggerStatements ["West countSide thisList == 0 || East CountSide thisList < 6","[(getPos thisTrigger), thisList] spawn twc_fnc_townDeciding",""];

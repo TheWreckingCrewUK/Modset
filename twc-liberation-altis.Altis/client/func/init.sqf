@@ -1,0 +1,1 @@
+twc_fnc_townClickInfo = compile preprocessfilelinenumbers "client\func\fnc_townClickInfo.sqf";

@@ -15,14 +15,7 @@
 						  
 params["_pos","_civnum","_civradius","_waves","_groupradius","_thisList"];
 
-[_pos, _civnum, _civradius] call twc_spawnCiv;
 [_pos] call twc_spawnDefend;
-[_pos, _waves, _groupradius,_thisList] call twc_spawnAIUnits;
+[_pos, _civnum, _civradius] call twc_spawnCiv;
 
-_trg = createTrigger ["EmptyDetector", _pos];
-_trg setTriggerArea [400, 400, 0, false];
-_trg setTriggerActivation ["EAST", "NOT PRESENT", False];
-_trg setTriggerStatements ["this", format["['%1'] call twc_townClear", _pos]
-	,""
-];
-
+[_pos, _waves, _groupradius,_thisList] spawn twc_spawnAIUnits;

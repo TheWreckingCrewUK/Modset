@@ -61,9 +61,8 @@ if (_civilianQuestioned in nonQuestionableList) then {
 			_color = "ColorYellow";
 			_object = InsP_iedGroup call BIS_fnc_selectRandom;
 			_distance = [100,200] call BIS_fnc_selectRandom;
-
 			_intelPos = [_object, _distance] call CBA_fnc_randPos;
-			_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
+			[_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
 			_marker setMarkerType "hd_join";
 			_marker setMarkerColor _color;
 			_marker setMarkerText (str(_distance) + "m");

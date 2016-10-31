@@ -1,0 +1,1 @@
+execVM "client\dialogs\welcome.sqf";

@@ -29,7 +29,6 @@ if(isModded == 0)then{
 	bunkerMarkerClass = "n_unknown";
 };
 if(isModded == 1) then{
-	badAOs = ["PARAISO","Rashidah"];
 	tank = ["rhs_t72ba_tv"];
 	ifv = ["rhs_bmp1_msv"];
 	apc = ["rhs_btr70_msv"];

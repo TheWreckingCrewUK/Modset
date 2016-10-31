@@ -1,0 +1,53 @@
+comment "Exported from Arsenal by jayman";
+
+comment "Remove existing items";
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+comment "Add containers";
+player forceAddUniform "UK3CB_BAF_U_CombatUniform_MTP";
+player addItemToUniform "ACRE_PRC343";
+player addItemToUniform "ACE_EarPlugs";
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
+for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
+for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
+player addVest "UK3CB_BAF_V_Osprey_SL_D";
+player addItemToVest "UK3CB_BAF_9_17Rnd";
+for "_i" from 1 to 2 do {player addItemToVest "CUP_HandGrenade_L109A2_HE";};
+for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
+for "_i" from 1 to 8 do {player addItemToVest "UK3CB_BAF_556_30Rnd";};
+for "_i" from 1 to 2 do {player addItemToVest "UK3CB_BAF_556_30Rnd_T";};
+for "_i" from 1 to 1 do {player addItemToVest "B_IR_Grenade";};
+for "_i" from 1 to 3 do {player addItemToVest "UK3CB_BAF_1Rnd_HE_Grenade_Shell";};
+player addBackpack "UK3CB_BAF_B_Bergen_MTP_JTAC_H_A";
+player addItemToBackpack "ACRE_PRC117F";
+for "_i" from 1 to 2 do {player addItemToBackpack "UGL_FlareWhite_F";};
+for "_i" from 1 to 2 do {player addItemToBackpack "UGL_FlareCIR_F";};
+for "_i" from 1 to 2 do {player addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
+for "_i" from 1 to 4 do {player addItemToBackpack "1Rnd_SmokeRed_Grenade_shell";};
+for "_i" from 1 to 4 do {player addItemToBackpack "1Rnd_SmokeGreen_Grenade_shell";};
+for "_i" from 1 to 4 do {player addItemToBackpack "1Rnd_SmokeBlue_Grenade_shell";};
+player addHeadgear "UK3CB_BAF_H_Mk7_Camo_ESS_C";
+player addGoggles "G_Aviator";
+
+comment "Add weapons";
+player addWeapon "UK3CB_BAF_L85A2_UGL";
+player addPrimaryWeaponItem "UK3CB_BAF_SUSAT";
+player addWeapon "UK3CB_BAF_L131A1";
+player addWeapon "UK3CB_BAF_Soflam_Laserdesignator";
+
+comment "Add items";
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "ItemWatch";
+player linkItem "ItemRadioAcreFlagged";
+player linkItem "ItemcTab";
+player linkItem "UK3CB_BAF_HMNVS";

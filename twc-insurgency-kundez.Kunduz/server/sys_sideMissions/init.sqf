@@ -1,7 +1,7 @@
 //twc_fnc_groupSpawn = compile preprocessfilelinenumbers "server\sys_sideMissions\fnc_groupSpawn.sqf";
 
 //Spawning a few roadblocks:
-#include "roadBlock.sqf";
+//#include "roadBlock.sqf";
 
 _pos = getMarkerPos "crate";
 while{_pos distance2D getMarkerPos "crate" < 1500}do{

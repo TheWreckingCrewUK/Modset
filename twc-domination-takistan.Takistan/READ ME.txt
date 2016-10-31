@@ -1,0 +1,5 @@
+This is a personal project by: [TWC] jayman.
+
+The goal is to make a domination mission that can be put on any map with any mods quickly. The only changes that need to be made are a few lines in the init.sqf and then setting up the base. Some are saved as other mission.sqm's. This also allows us to fix errors and not make the same ones over and over every time we change maps/mods. You also may have to delete dependencies in the mission.sqm
+
+I think I am supposed to say you can only use this with my permission or something idk, and I neither give a shit/cant stop you. I am just a notpad document. Not a cop.

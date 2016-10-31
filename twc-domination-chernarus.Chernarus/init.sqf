@@ -32,7 +32,6 @@ aoDistanceFromSpawn = 4000;
 //adds all units to zeus. (adminLogged):
 execVM "client\zeus\zeus.sqf";
 execVM "client\zeus\zeus-jayman.sqf";
-execVM "client\zeus\zeus-Paddock.sqf";
 //check for enemies in the base:
 if(hasInterface)then{
 	Russiancheck = 0;
@@ -44,7 +43,6 @@ if(isServer)then{
 	//See http://acre.idi-systems.com/api/api_general.html for info on these functions.
 	//Basic Settings:
 		[false, false] call acre_api_fnc_setupMission;
-		[true] call acre_api_fnc_setRevealToAI;
 	//Difficulty Settings:
 		[0] call acre_api_fnc_setLossModelScale;
 		[true] call acre_api_fnc_setFullDuplex;
