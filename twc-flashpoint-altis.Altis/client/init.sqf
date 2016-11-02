@@ -31,15 +31,10 @@ if (!isNil "helo1" && {player == helo1}) then {
 	g_unit = "100";
 	g_name = "Wildcat Pilot";
 	g_radio = "";
-	SpawnAW19Action = ["SpawnAW159","AW19 Wildcat","",{_veh = "CUP_B_AW159_Cannon_GB" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
+	SpawnAW19Action = ["SpawnAW159","AW19 Wildcat","",{["CUP_B_AW159_Cannon_GB"] call twc_fnc_spawnAirVehicle},{TRUE}] call ace_interact_menu_fnc_createAction;
 	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnAW19Action] call ace_interact_menu_fnc_addActionToClass;	
 	execVM "client\radar\helicopterRadar1.sqf";
 	execVM "client\radar\helicopterRadar2.sqf";
-		if(isNil "jetSpawned") then{
-		jetSpawned = 0;
-		publicVariable "jetSpawned";
-	};
-	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
 };
 if (!isNil "helo2" && {player == helo2}) then {
     g_class = "helo2";
@@ -47,15 +42,10 @@ if (!isNil "helo2" && {player == helo2}) then {
 	g_unit = "101";
 	g_name = "BlackHawk Pilot";
 	g_radio = "";
-	SpawnUH60MAction = ["SpawnUH60M","UH60M Blackhawk","",{_veh = "CUP_B_UH60M_US" createVehicle (position armourSpawnPad);_dir = getDir armourSpawnPad; _dir = _dir + 180; _veh setDir _dir;[_veh, 180, 1200, 0, FALSE] execVM "server\vehicles\vehicleRespawn.sqf"},{TRUE}] call ace_interact_menu_fnc_createAction;
+	SpawnUH60MAction = ["SpawnUH60M","UH60M Blackhawk","",{["CUP_B_UH60M_US"] call twc_fnc_spawnAirVehicle},{TRUE}] call ace_interact_menu_fnc_createAction;
 	["Land_InfoStand_V2_F", 0, ["ACE_MainActions"], SpawnUH60MAction] call ace_interact_menu_fnc_addActionToClass;
 	execVM "client\radar\helicopterRadar1.sqf";
 	execVM "client\radar\helicopterRadar2.sqf";
-	if(isNil "jetSpawned") then{
-		jetSpawned = 0;
-		publicVariable "jetSpawned";
-	};
-	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
 };
 if (!isNil "commander1" && {player == commander1}) then {
     g_class = "CMDR";
@@ -393,60 +383,10 @@ if (!isNil "jet1" && {player == jet1}) then {
 	g_radio = "";
 	execVM "client\vehicleSpawning\jetPilot.sqf";
 	execVM "client\radar\helicopterRadar1.sqf";
-	execVM "client\radar\helicopterRadar2.sqf";
-	if(isNil "jetSpawned") then{
-		jetSpawned = 0;
-		publicVariable "jetSpawned";
-	};
-	player addEventHandler ["RESPAWN",{jetSpawned = 0}];
-	
+	execVM "client\radar\helicopterRadar2.sqf";	
 };
 
-g_commander1 = "";
-g_p1 = "";
-g_p2 = "";
-g_p3 = "";
-g_p4 = "";
-g_p5 = "";
-g_p6 = "";
-g_p7 = "";
-g_p8 = "";
-g_p9 = "";
-g_p10 = "";
-g_p11 = "";
-g_p12 = "";
-g_p13 = "";
-g_p14 = "";
-g_p15 = "";
-g_p16 = "";
-g_p17 = "";
-g_p18 = "";
-g_p19 = "";
-g_p20 = "";
-g_p21 = "";
-g_p22 = "";
-g_p23 = "";
-g_p24 = "";
-g_p25 = "";
-g_P26 = "";
-g_p27 = "";
-g_p28 = "";
-g_p29 = "";
-g_p30 = "";
-g_p31 = "";
-g_p32 = "";
-g_p33 = "";
-g_p34 = "";
-g_p35 = "";
-g_helo1 = "";
-g_helo2 = "";
-
-
 execVM "client\boxes\init.sqf";
-_test = format["hint '%1'",getPlayerUID player];
-_test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
-execVM "client\psync.sqf";
 
 TWC_fnc_getAlphaList = {
     execVM "client\playerlist\alpha.sqf";
@@ -480,13 +420,6 @@ airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ac
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], supportAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
 
-[] spawn {
-	while{true} do {
-		waitUntil {count units group player > 1};
-		[player] join grpNull ;
-	};
-};
-
 _name = name player;
 _text = format["%1 joined in as %2",_name,g_name];
 [TWCServer,_text] remoteExec ["TWC_fnc_GlobalChat", 2]; 
@@ -494,7 +427,7 @@ _text = format["%1 joined in as %2",_name,g_name];
 if (g_class != "") then {
 	execVM format["client\loadout\%1.sqf", g_class];
 };
-/*
+
 sleep 2;
 if (g_radio != "") then {
 	_radioID = [g_radio] call acre_api_fnc_getRadioByType;

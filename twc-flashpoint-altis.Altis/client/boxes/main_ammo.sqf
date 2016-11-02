@@ -1254,6 +1254,58 @@ if (g_class == "charlie_ar") then {
 	];
 };
 
+ //load availible to Sniper only
+ if (g_class == "sniper") then {
+    _tmp_weapons =
+    [
+        ["UK3CB_BAF_L115A3_DE_Ghillie",1],
+		["UK3CB_BAF_L131A1",1]
+    ];
+
+	_tmp_magazines =
+    [
+        ["UK3CB_BAF_338_5Rnd",50]
+    ];
+
+    _tmp_items = 
+	[
+        ["ACE_fieldDressing",50],
+		["ACE_elasticBandage", 50],
+		["ACE_quikclot", 50],
+		["ACE_packingBandage", 50],
+		["ACE_morphine",50],
+		["ACE_tourniquet", 5],
+		["CUP_optic_LeupoldMk4_10x40_LRT_Desert",1],
+		["ACRE_PRC343",1]
+	];
+};
+
+ //load availible to Spotter only
+ if (g_class == "spotter") then {
+    _tmp_weapons =
+    [
+        ["UK3CB_BAF_L129A1_AFG",1],
+		["UK3CB_BAF_L131A1",1]
+    ];
+
+	_tmp_magazines =
+    [
+        ["UK3CB_BAF_762_L42A1_20Rnd",50]
+    ];
+
+    _tmp_items = 
+	[
+        ["ACE_fieldDressing",50],
+		["ACE_elasticBandage", 50],
+		["ACE_quikclot", 50],
+		["ACE_packingBandage", 50],
+		["ACE_morphine",50],
+		["ACE_tourniquet", 5],
+		["CUP_optic_LeupoldMk4_10x40_LRT_Desert",1],
+		["ACRE_PRC343",1]
+	];
+};
+
 {
         _weapons set [count _weapons, _x];
 } forEach _tmp_weapons;

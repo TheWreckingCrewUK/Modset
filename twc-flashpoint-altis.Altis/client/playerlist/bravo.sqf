@@ -1,5 +1,17 @@
 //made by hartzie edited by FakeMatty
-g_playerlist = [ ["Bravo US Army",      [["Bravo Squad Leader", [g_p9, "Squad Leader"]], ["Fire Team 1", [g_p10, "Fire Team Leader"], [g_p11, "Rifleman"], [g_p12, "Grenadier"], [g_p13, "Automatic Rifleman"]], ["Fire Team 2", [g_p14, "Fire Team Leader"], [g_p15, "Automatic Rifleman"], [g_p16, "Marksman"], [g_p17, "Medic"]]]]				
+_player9 = if(!isNil "p9")then{if(!isPlayer p9)then{"";}else{(name p9);};}else{"";};
+_player10 = if(!isNil "p10")then{if(!isPlayer p10)then{"";}else{(name p10);};}else{"";};
+_player11 = if(!isNil "p11")then{if(!isPlayer p11)then{"";}else{(name p11);};}else{"";};
+_player12 = if(!isNil "p12")then{if(!isPlayer p12)then{"";}else{(name p12);};}else{"";};
+_player13 = if(!isNil "p13")then{if(!isPlayer p13)then{"";}else{(name p13);};}else{"";};
+_player14 = if(!isNil "p14")then{if(!isPlayer p14)then{"";}else{(name p14);};}else{"";};
+_player15 = if(!isNil "p15")then{if(!isPlayer p15)then{"";}else{(name p15);};}else{"";};
+_player16 = if(!isNil "p16")then{if(!isPlayer p16)then{"";}else{(name p16);};}else{"";};
+_player17 = if(!isNil "p17")then{if(!isPlayer p17)then{"";}else{(name p17);};}else{"";};
+
+
+
+g_playerlist = [ ["Bravo US Army",      [["Bravo Squad Leader", [_player9, "Squad Leader"]], ["Fire Team 1", [_player10, "Fire Team Leader"], [_player11, "Rifleman"], [_player12, "Grenadier"], [_player13, "Automatic Rifleman"]], ["Fire Team 2", [_player14, "Fire Team Leader"], [_player15, "Automatic Rifleman"], [_player16, "Marksman"], [_player17, "Medic"]]]]				
 				
 				];
 

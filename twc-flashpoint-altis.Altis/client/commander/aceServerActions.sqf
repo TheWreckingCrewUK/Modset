@@ -4,6 +4,7 @@ twc_fnc_globalCleanup = {
 		deleteVehicle _x
 	} forEach allDead;
 	_groundWeapons = nearestObjects [getPos player, ["WeaponHolder","GroundWeaponHolder"], 7000];
+	{deleteVehicle _x}forEach _groundWeapons;
 	hint format["Global Cleanup took %1 seconds", diag_tickTime - _start];    
 };
 twc_fnc_clickToSpawn = { 

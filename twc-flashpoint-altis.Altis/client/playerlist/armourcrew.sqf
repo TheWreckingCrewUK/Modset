@@ -1,17 +1,9 @@
 //made by hartzie edited by FakeMatty
-_player1 = if(!isNil "p1")then{if(!isPlayer p1)then{"";}else{(name p1);};}else{"";};
-_player2 = if(!isNil "p2")then{if(!isPlayer p2)then{"";}else{(name p2);};}else{"";};
-_player3 = if(!isNil "p3")then{if(!isPlayer p3)then{"";}else{(name p3);};}else{"";};
-_player4 = if(!isNil "p4")then{if(!isPlayer p4)then{"";}else{(name p4);};}else{"";};
-_player5 = if(!isNil "p5")then{if(!isPlayer p5)then{"";}else{(name p5);};}else{"";};
-_player6 = if(!isNil "p6")then{if(!isPlayer p6)then{"";}else{(name p6);};}else{"";};
-_player7 = if(!isNil "p7")then{if(!isPlayer p7)then{"";}else{(name p7);};}else{"";};
-_player8 = if(!isNil "p8")then{if(!isPlayer p8)then{"";}else{(name p8);};}else{"";};
+_player1 = if(!isNil "tank1")then{if(!isPlayer tank1)then{"";}else{(name tank1);};}else{"";};
+_player2 = if(!isNil "tank2")then{if(!isPlayer tank2)then{"";}else{(name tank2);};}else{"";};
+_player3 = if(!isNil "tank3")then{if(!isPlayer tank3)then{"";}else{(name tank3);};}else{"";};
 
-
-
-
-g_playerlist = [["Alpha British Army", [["Alpha Section Leader", [_player1, "Section Leader"], [_player2, "Rifleman"], [_player3, "Grenadier"], [_player4, "Automatic Rifleman"]], ["Fire Team 2", [_player5, "2IC"], [_player6, "Machine Gunner"], [_player7, "Marksman"], [_player8, "Medic"]]]]					
+g_playerlist = [["Armour Crew", [["Armour", [_player1, "Armour Commander"],[_player2, "Armour Crewman"],[_player3, "Armour Crewman"]]]]			
 				
 				];
 

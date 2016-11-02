@@ -8,9 +8,9 @@ _marker = "crate";  // marker used to spawn.
 _boxType = "CUP_BAF_VehicleBox";  // the type of ammobox used.
 
 // create and fill the box.
-crateBox = _boxType createVehicleLocal cratePos;
+crateBox = _boxType createVehicleLocal (getMarkerPos "crate");
 crateBox allowDamage false;
-crateBox setPos cratePos;
+crateBox setPos (getMarkerPos "crate");
 
 [crateBox] execVM "client\boxes\main_ammo.sqf";
 

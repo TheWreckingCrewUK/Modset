@@ -1,4 +1,4 @@
-params["_marker","_canCounter","_isCounterAttack"];
+params["_marker","_thisList","_canCounter","_isCounterAttack"];
 
 if (_isCounterAttack == 0) then{
 	format["Blufor has captured %1",_marker] remoteExec ["hint"];
@@ -21,91 +21,25 @@ if(_rand < 50 && _canCounter && _marker != "commanderBase") exitWith{
 	};
 };
 
-if (_marker == "airbase2")then {
-	[_marker, "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
-	if(getMarkerColor "commanderBase" == "colorEAST") then {
-		RussianCheckTrigger setPos (getMarkerPos "airbase2");
-		["respawn_West", (getMarkerPos "airbase2")] remoteExec ["setMarkerPos", 0, "respawnMarker"];
-		
-		cratePos = (getMarkerPos "crateDefault");
-		publicVariable "cratePos";
-		{crateBox setPos cratePos} remoteExec ["call", 0];
-		
-		if(!isNil "jetSpawnPad") then{
-			deleteVehicle radioSign;
-			publicVariable "radioSign";
-			deleteVehicle radioPicture;
-			publicVariable "radioPicture";
-		};
-		radioSign = "SignAd_Sponsor_F" createVehicle (getMarkerPos "crateDefault" vectorAdd[0,5,2]);
-		radioSign setDir 300;
-		publicVariable "radioSign";
-		radioSign setObjectTexture [0, "server\pics\radio.jpg"]; this allowDamage False;
-		
-		if(!isNil "jetSpawnPad") then{
-			deleteVehicle jetSpawnPad;
-			publicVariable "jetSpawnPad";
-			deleteVehicle jetSpawner;
-			publicVariable "jetSpawner";
-		};
-		jetSpawnPad = "Land_HelipadSquare_F" createVehicle (getMarkerPos "jetPadDefault");
-		jetSpawnPad setDir 307;
-		publicVariable "jetSpawnPad";
-		jetSpawner = "Land_infoStand_V1_F" createVehicle (getMarkerPos "jetPadDefault");
-		jetSpawner setDir 307;
-		jetSpawner attachTo [jetSpawnPad,[5.5,-5.5,1]];
-		publicVariable "jetSpawner";
-	
-		if(!isNil "armourSpawnPad") then{
-			deleteVehicle armourSpawnPad;
-			publicVariable "armourSpawnPad":
-			deleteVehicle armourSpawner;
-			publicVariable "armourSpawner";
-		};
-		armourSpawnPad = "Land_HelipadSquare_F" createVehicle (getMarkerPos "heloPadDefault");
-		armourSpawnPad setDir 307;
-		publicVariable "armourSpawnPad";
-		armourSpawner = "Land_infoStand_V2_F" createVehicle (getMarkerPos "heloPadDefault");
-		armourSpawner setDir 307;
-		armourSpawner attachTo [armourSpawnPad,[5.5,-5.5,.6]];
-		publicVariable "jetSpawner";
-	}else{
-		
-	};
-};
-
-if(_marker == "commanderBase") then{
-
-};
 
 if(_marker == "radar1" || _marker == "radar2")then{
 	_markerRadius = format["%1Radius", _marker];
 	_markerRadius setMarkerAlpha 0;
 };
 
-[_marker]spawn{
+[_marker,_thisList]spawn{
 	sleep 300;
-	_enemyVehicle = nearestObjects [getMarkerPos (_this select 0), ["LandVehicle","Air"], 800];
+	_thisList = _this select 1;
 	{
-		if((typeOf _x) in friendlyVehiclesArray) then{
-			_enemyVehicle = _enemyVehicle - [_x];
+		if(str (_x getVariable "unitsHome") != str (_this select 0)) then{
+			_thisList = _thisList - [_x];
 		};
-	}forEach _enemyVehicle;
+	}forEach _thisList;
 
 	{
-		deleteVehicle _x
-	}forEach _enemyVehicle;
-	sleep 5;
-	_enemy = nearestObjects [getMarkerPos (_this select 0), ["Man","WeaponHolder","GroundWeaponHolder"], 800];
-	{
-		if((side _x) == WEST) then{
-			_enemy = _enemy - [_x];
-		};
-	}forEach _enemy;
-
-	{
-		deleteVehicle _x
-	}forEach _enemy;
+		deleteVehicle _x;
+		sleep 1;
+	}forEach _thisList;
 
 	{
 		deleteGroup _x

@@ -1,9 +1,10 @@
 params["_pos","_thisList"];
 
-_bluVictory = 0;
-{
-	if(side _x == west)exitWith{_bluVictory =  1};
-}forEach _thisList;
+if ((west countSide _thisList) == 0) then {
+	_bluVictory = 0
+}else{
+	_bluVictory = 1
+};
 sleep 5;
 if(_bluVictory == 0)then{
 	_bluNear = nearestObjects [_pos,["Man","Car"],600];

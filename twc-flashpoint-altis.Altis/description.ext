@@ -6,7 +6,7 @@ disableChannels[]={1,2,3,4,5,6};
 onLoadName = "Flashpoint";
 onLoadMission = "http://www.thewreckingcrew.co.uk/";
 author = "Jayman[TWC]";
-loadScreen = "server\pics\loading.jpg";
+loadScreen = "pics\loading.jpg";
 
 
 class Header

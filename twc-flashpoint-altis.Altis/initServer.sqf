@@ -1,3 +1,27 @@
+_script = execVM "SHK_pos\shk_pos_init.sqf";
+waitUntil {scriptDone _script};
+
+counterAttackCounter = 0;
+publicVariable "counterAttackCounter";
+patrolCounter = 0;
+publicVariable "patrolCounter";
+#include "server\init.sqf";
+twc_enemySupply = -3;
+publicVariable "twc_enemySupply";
+timePlayedArray = [];
+publicVariable "timePlayedArray";
+commanderBaseCount = 0;
+publicVariable "commanderBaseCount";
+enemyCommander = 0;
+publicVariable "enemyCommander";
+
+patrolCounter = 0;
+publicVariable "patrolCounter";
+counterAttackCounter = 0;
+publicVariable "counterAttackCounter";
+
+
+
 [West,["aa1"],["","Anti Air Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
 [West,["airbase2"],["","AirBase Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;
 [West,["hq1"],["","HQ Site",""],objNull,True,1,False,"",False] call BIS_fnc_taskCreate;

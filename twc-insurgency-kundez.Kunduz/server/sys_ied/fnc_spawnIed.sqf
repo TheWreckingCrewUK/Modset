@@ -42,7 +42,7 @@ _trigger setTriggerStatements [
         if (abs (speed _x) >= 10 && (getPosATL _x select 2) < 4) exitWith {true};
         false
     } forEach thisList;",
-    "[thislist select 0] call TWC_fnc_iedAttack; (thisTrigger getVariable ['InsP_ied', objNull]) setDamage 1;",
+    "[thislist select 0] spawn TWC_fnc_iedAttack; (thisTrigger getVariable ['InsP_ied', objNull]) setDamage 1;",
     ""
 ];
 

@@ -1,4 +1,4 @@
-markerArray = ["aa1","airbase2","hq1","inf1","inf2","inf3","inf4","installation1","mainHQ","mech1","motorized1","outpost1","outpost2","radar1","radar2","support1"];
+markerArray = ["aa1","hq1","inf1","inf2","inf3","inf4","installation1","mainHQ","mech1","motorized1","outpost1","outpost2","radar1","radar2","support1"];
 
 if(isNil "capturedArray") then{
 	capturedArray = [];
@@ -6,7 +6,7 @@ if(isNil "capturedArray") then{
 };
 
 if(isNil "remainingArray") then{
-	remainingArray = ["aa1","airbase2","hq1","inf1","inf2","inf3","inf4","installation1","mainHQ","mech1","motorized1","outpost1","outpost2","radar1","radar2","support1"];
+	remainingArray = ["aa1","hq1","inf1","inf2","inf3","inf4","installation1","mainHQ","mech1","motorized1","outpost1","outpost2","radar1","radar2","support1"];
 	publicVariable "remainingArray";
 };
 
@@ -56,7 +56,7 @@ if (isModded == 1)then{
 	tunguska = ["CUP_O_2S6M_RU"];
 	BRDM = ["rhsgref_BRDM2_msv"];
 	BRDMAT= ["rhsgref_BRDM2_ATGM_msv"];
-	mechSquad = (configfile >> "CfgGroups" >> "East" >> "rhs_faction_msv" >> "rhs_group_rus_msv_bmp1");
+	mechSquad = (configfile >> "CfgGroups" >> "East" >> "rhs_faction_msv" >> "rhs_group_rus_msv_bmp1" >> "rhs_group_rus_msv_bmp1_squad");
 	bmp = ["rhs_bmp1_msv"];
 	bmpString = "rhs_bmp1_msv";
 	tank = ["rhs_t72ba_tv"];

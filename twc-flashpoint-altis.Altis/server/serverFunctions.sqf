@@ -1,9 +1,7 @@
-//Defines all functions on the server
-
-//GlobalChat
-TWC_fnc_GlobalChat = compile preprocessfilelinenumbers "server\globalChat\fnc_GlobalChat.sqf";
+//Defines functions on the server
 
 //Set Setup Defines:
+twc_fnc_createSite = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_createSite.sqf";
 twc_siteDeciding = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteDeciding.sqf";
 
 twc_siteCapturedRedfor = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_siteCapturedRedfor.sqf";
@@ -28,7 +26,7 @@ twc_mech = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_mech.sqf
 twc_radar = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_radar.sqf";
 twc_smallAirbase = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_smallAirbase.sqf";
 twc_tank = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_tank.sqf";
-twc_town = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_town.sqf";
+twc_inf = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_inf.sqf";
 twc_village = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_village.sqf";
 
 twc_mortarAttack = compile preprocessfilelinenumbers "server\siteSetup\func\fnc_mortarAttack.sqf";

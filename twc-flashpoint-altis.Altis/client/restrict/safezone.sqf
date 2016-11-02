@@ -8,34 +8,16 @@
     Edit the #defines below.
 */
 
-#define SAFETY_ZONES    [[RussianCheckTrigger, 200]] // Syntax: [["base", 500], ["marker2", radius2], ...]
-#define MESSAGE "Don't shoot or throw grenades on base!"
-
-     if (isDedicated) exitWith {};
-     waitUntil {!isNull player};
-
-switch (playerSide) do
-{
-	case west:
-	{player addEventHandler ["Fired", {
-	if ({(_this select 0) distance getPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0 && RussianCheck == 0) then
-	{
-		deleteVehicle (_this select 6);
-		titleText [MESSAGE, "PLAIN", 3];
-	};
+player addEventHandler ["Fired", {
+    if ((_this select 0) distance getMarkerPos "respawn_west" < 200) then
+    {
+        deleteVehicle (_this select 6);
+		hintc "NO FIRING AT BASE";
+		hintC_EH = findDisplay 57 displayAddEventHandler ["unload",{
+			0 = _this spawn {
+				_this select 0 displayRemoveEventHandler ["unload", hintC_EH];
+				hintSilent "";
+			};
+		}];
+    };
 }];
-};
-	
-	case civilian:
-	{
-
-
-     player addEventHandler ["Fired", {
-            if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0) then
-            {
-             deleteVehicle (_this select 6);
-             titleText [MESSAGE, "PLAIN", 3];
-             };
-        }];  
-	};
-};

@@ -34,7 +34,7 @@ for "_i" from 1 to 2 do {
 	};
 };
 
-[_CentralMarker, _ATDefend]spawn{
+[_CentralMarker, ATteam]spawn{
 	if isServer then {
 		private ["_pos","_m"];
 		sleep 5;
