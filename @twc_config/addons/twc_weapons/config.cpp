@@ -388,16 +388,6 @@ class CfgVehicles
 				magazine = "SmokeShell";
 				count = 3;
 			};
-			class _xx_Marksman_Mag
-			{
-				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
-				count = 6;
-			};
-			class _xx_Marksman_Mag_T
-			{
-				magazine = "UK3CB_BAF_762_L42A1_20Rnd_T";
-				count = 3;
-			};
 			class _xx_Belt
 			{
 				magazine = "UK3CB_BAF_762_100Rnd";
@@ -751,11 +741,6 @@ class CfgVehicles
 		scope = 1;
 		class TransportMagazines
 		{
-            class _xx_Stanag
-			{
-				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 3;
-			};
             class _xx_Slug
 			{
 				magazine = "UK3CB_BAF_12G_Slugs";
@@ -766,17 +751,17 @@ class CfgVehicles
 				magazine = "UK3CB_BAF_12G_Pellets";
 				count = 7;
 			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
 		};
 		class TransportWeapons
 		{
             class _xx_Shotgun
 			{
 				weapon = "UK3CB_BAF_L128A1_Eotech";
-				count = 1;
-			};
-			class _xx_twc_vallon
-			{
-				weapon = "twc_vallon";
 				count = 1;
 			};
 		};
@@ -799,7 +784,7 @@ class CfgVehicles
             class _xx_Stanag
 			{
 				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 14;
+				count = 10;
 			};
             class _xx_Slug
 			{
@@ -810,6 +795,11 @@ class CfgVehicles
 			{
 				magazine = "UK3CB_BAF_12G_Pellets";
 				count = 2;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
 			};			
 		};
 	};

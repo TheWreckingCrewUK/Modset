@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=4d_cvrt
+Pbo Type is: Arma Addon
+Sha: 'CA05A6F4D9B70F7B13577986416F983640672D2F'
+//////</HEADER>//////
