@@ -8,11 +8,11 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		vehicleClass="Men_Argentina";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_OD_Rg";
-		backpack="B_mas_m_Bergen_al";
+		uniformClass="SP_0000_Standard_BattleDressUniform_Green";
+		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"SP_M1Helmet_Green",
 		"ItemMap",
 		"ItemCompass",
@@ -21,7 +21,7 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"ItemMap",
 		"ItemCompass",
 		"ACRE_PRC343"
@@ -30,21 +30,16 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_FNFAL",
-		"hgun_mas_bhp_F"
+		"CUP_arifle_FNFAL"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_FNFAL",
-		"hgun_mas_bhp_F"
+		"CUP_arifle_FNFAL"
 		};
 		magazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -55,9 +50,6 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		};
 		Respawnmagazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -100,17 +92,17 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		vehicleClass="Men_Argentina";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_OD_Rg";
-		backpack="B_mas_m_Bergen_al";
+		uniformClass="SP_0000_Standard_BattleDressUniform_Green";
+		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"SP_M1Helmet_Green",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"ItemCompass"
 		};
 		weapons[]=
@@ -123,14 +115,10 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		{
 		"Throw",
 		"Put",	
-		"CUP_arifle_FNFAL",
-		"hgun_mas_bhp_F"
+		"CUP_arifle_FNFAL"
 		};
 		magazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -149,9 +137,6 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		};
 		Respawnmagazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -194,17 +179,17 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		vehicleClass="Men_Argentina";
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_OD_Rg";
-		backpack="B_mas_m_Bergen_al";
+		uniformClass="SP_0000_Standard_BattleDressUniform_Green";
+		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"SP_M1Helmet_Green",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"ItemMap",
 		"ItemCompass"
 		};
@@ -213,21 +198,17 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"Throw",
 		"Put",
 		"CUP_arifle_FNFAL",
-		"mas_launch_maaws_F",
-		"hgun_mas_bhp_F"
+		"tf47_m3maaws"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
 		"CUP_arifle_FNFAL",
-		"mas_launch_maaws_F"
+		"tf47_m3maaws"
 		};
 		magazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",		
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -237,16 +218,13 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"CUP_HandGrenade_M67",
 		"SmokeShell",
 		"SmokeShell",
-		"mas_MAAWS_HE",
-		"mas_MAAWS_HE",
-		"mas_MAAWS_HE",
-		"mas_MAAWS_HE"
+		"tf47_m3maaws_HEAT",
+		"tf47_m3maaws_HEAT",
+		"tf47_m3maaws_HEAT",
+		"tf47_m3maaws_HEAT"
 		};
 		Respawnmagazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",		
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -256,10 +234,10 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"CUP_HandGrenade_M67",
 		"SmokeShell",
 		"SmokeShell",
-        "mas_MAAWS_HE",
-		"mas_MAAWS_HE",
-		"mas_MAAWS_HE",
-		"mas_MAAWS_HE"
+        "tf47_m3maaws_HEAT",
+		"tf47_m3maaws_HEAT",
+		"tf47_m3maaws_HEAT",
+		"tf47_m3maaws_HEAT"
 		};
 		Items[]=
 		{
@@ -293,17 +271,17 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		vehicleClass="Men_Argentina";
 		icon="iconManMG";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_OD_Rg";
-		backpack="B_mas_m_Bergen_al";
+		uniformClass="SP_0000_Standard_BattleDressUniform_Green";
+		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"SP_M1Helmet_Green",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"ItemMap",
 		"ItemCompass"
 		};
@@ -311,8 +289,7 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_FNFAL",
-		"hgun_mas_bhp_F"
+		"CUP_arifle_FNFAL"
 		};
 		respawnweapons[]=
 		{
@@ -322,9 +299,6 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		};
 		magazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -334,16 +308,13 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"CUP_HandGrenade_M67",
 		"SmokeShell",
 		"SmokeShell",
-		"mas_MAAWS_HE",
-		"mas_MAAWS_HE",
-		"mas_MAAWS_HE",
-		"mas_MAAWS_HE"
+		"tf47_m3maaws_HEAT",
+		"tf47_m3maaws_HEAT",
+		"tf47_m3maaws_HEAT",
+		"tf47_m3maaws_HEAT"
 		};
 		Respawnmagazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -387,17 +358,17 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		vehicleClass="Men_Argentina";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_OD_Rg";
-		backpack="B_mas_m_Bergen_al";
+		uniformClass="SP_0000_Standard_BattleDressUniform_Green";
+		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"SP_M1Helmet_Green",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"ItemMap",
 		"ItemCompass"
 		};
@@ -406,8 +377,7 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"Throw",
 		"Put",	
 		"CUP_arifle_FNFAL",
-		"rhs_weap_fim92",
-		"hgun_mas_bhp_F"
+		"rhs_weap_fim92"
 		};
 		respawnweapons[]=
 		{
@@ -418,9 +388,6 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		};
 		magazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",		
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -431,14 +398,10 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"CUP_HandGrenade_M67",
 		"SmokeShell",
 		"SmokeShell",
-		"rhs_fim92_mag",
 		"rhs_fim92_mag"
 		};
 		Respawnmagazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",		
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -449,8 +412,6 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"CUP_HandGrenade_M67",
 		"SmokeShell",
 		"SmokeShell",
-		"rhs_fim92_mag",
-		"rhs_fim92_mag",
 		"rhs_fim92_mag"
 		};
 		Items[]=
@@ -485,25 +446,24 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		vehicleClass="Men_Argentina";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_OD_Rg";
-		backpack="B_mas_m_Bergen_al";
+		uniformClass="SP_0000_Standard_BattleDressUniform_Green";
+		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"SP_M1Helmet_Green",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"ItemCompass"
 		};
 		weapons[]=
 		{
 		"Throw",
 		"Put",	
-		"CUP_arifle_FNFAL",
-		"hgun_mas_bhp_F"
+		"CUP_arifle_FNFAL"
 		};
 		respawnweapons[]=
 		{
@@ -513,9 +473,6 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		};
 		magazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_HandGrenade_M67",
 		"CUP_HandGrenade_M67",
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -525,15 +482,10 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"SmokeShell",
 		"SmokeShell",
-		"rhs_fim92_mag",
-		"rhs_fim92_mag",
 		"rhs_fim92_mag"
 		};
 		Respawnmagazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_HandGrenade_M67",
 		"CUP_HandGrenade_M67",
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -543,8 +495,6 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"SmokeShell",
 		"SmokeShell",
-		"rhs_fim92_mag",
-		"rhs_fim92_mag",
 		"rhs_fim92_mag"
 		};
 		Items[]=
@@ -579,25 +529,24 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		vehicleClass="Men_Argentina";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_OD_Rg";
-		backpack="B_mas_m_Bergen_al";
+		uniformClass="SP_0000_Standard_BattleDressUniform_Green";
+		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"SP_M1Helmet_Green",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"ItemCompass"
 		};
 		weapons[]=
 		{
 		"Throw",
 		"Put",	
-		"CUP_lmg_L7A2",
-		"hgun_mas_bhp_F"
+		"CUP_lmg_L7A2"
 		};
 		respawnweapons[]=
 		{
@@ -607,9 +556,6 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		};
 		magazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
 		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
 		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
@@ -621,9 +567,6 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		};
 		Respawnmagazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
 		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
 		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
@@ -667,25 +610,24 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		vehicleClass="Men_Argentina";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_OD_Rg";
-		backpack="B_mas_m_Bergen_al";
+		uniformClass="SP_0000_Standard_BattleDressUniform_Green";
+		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"SP_M1Helmet_Green",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_nato_vest01",
+        "CUP_V_RUS_Smersh_1",
 		"ItemCompass"
 		};
 		weapons[]=
 		{
 		"Throw",
 		"Put",	
-		"CUP_arifle_FNFAL",
-		"hgun_mas_bhp_F"
+		"CUP_arifle_FNFAL"
 		};
 		respawnweapons[]=
 		{
@@ -695,9 +637,6 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		};
 		magazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_HandGrenade_M67",
 		"CUP_HandGrenade_M67",
 		"CUP_20Rnd_762x51_FNFAL_M",
@@ -713,9 +652,6 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		};
 		Respawnmagazines[]=
 		{
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
-		"15Rnd_mas_9x21_Mag",
 		"CUP_HandGrenade_M67",
 		"CUP_HandGrenade_M67",
 		"CUP_20Rnd_762x51_FNFAL_M",

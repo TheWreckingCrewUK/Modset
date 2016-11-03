@@ -69,7 +69,7 @@ class cfgWeapons
 		class player: Mode_FullAuto
 		{
 			magazineReloadTime = 1;
-			reloadTime=0.7;
+			reloadTime=0.4;
 			autoReload = 0;
 			autoFire = 1;
 			sounds[] = {"StandardSound"};
