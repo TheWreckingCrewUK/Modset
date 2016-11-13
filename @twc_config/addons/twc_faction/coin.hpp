@@ -477,7 +477,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_Osprey_MG_B",
-		"UK3CB_BAF_H_Mk7_Scrim_C",
+		"UK3CB_BAF_H_Mk7_Scrim_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -487,7 +487,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		respawnLinkedItems[]=
 		{
         "UK3CB_BAF_V_Osprey_MG_B",
-		"UK3CB_BAF_H_Mk7_Scrim_C",
+		"UK3CB_BAF_H_Mk7_Scrim_A",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
@@ -924,7 +924,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_Vector",
 		"UK3CB_BAF_L129A1_Grippod_TA648",
 		"UK3CB_BAF_L131A1",
-		"HAFM_LAW"
+		"CUP_launch_NLAW"
 		};
 		respawnweapons[]=
 		{
@@ -933,10 +933,12 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_Vector",
 		"UK3CB_BAF_L129A1_Grippod_TA648",
 		"UK3CB_BAF_L131A1",
-		"HAFM_LAW"
+		"CUP_launch_NLAW"
 		};
 		magazines[]=
 		{
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
 		"UK3CB_BAF_762_L42A1_20Rnd",
 		"UK3CB_BAF_762_L42A1_20Rnd",
 		"UK3CB_BAF_762_L42A1_20Rnd",
@@ -952,6 +954,8 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
+		"UK3CB_BAF_9_17Rnd",
+		"UK3CB_BAF_9_17Rnd",
 		"UK3CB_BAF_762_L42A1_20Rnd",
 		"UK3CB_BAF_762_L42A1_20Rnd",
 		"UK3CB_BAF_762_L42A1_20Rnd",

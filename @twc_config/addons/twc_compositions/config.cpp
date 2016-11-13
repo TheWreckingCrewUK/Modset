@@ -345,7 +345,7 @@ class CfgGroups
 										class Unit5
                                         {
                                                 side = 1;
-                                                vehicle = "Mechanized_British_Marksman";
+                                                vehicle = "Mechanized_British_Coin_Marksman";
                                                 rank = "PRIVATE";
                                                 position[] = {11,0,0};
                                         };

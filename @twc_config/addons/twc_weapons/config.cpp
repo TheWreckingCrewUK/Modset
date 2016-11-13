@@ -1156,7 +1156,7 @@ class CfgVehicles
 	class TWC_Backpack_Cold_War_MortarGunner:CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
-		class TransportItems
+		class TransportMagazines
 		{
 			class _xx_60MortarRound
 			{

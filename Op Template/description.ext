@@ -67,7 +67,7 @@ class ace_medical_enableOverdosing {
     force = 1;
 };
 class ace_medical_bleedingCoefficient {
-    value = 0.25;
+    value = 1;
     typeName = "SCALAR";
     force = 1;
 };
@@ -132,7 +132,7 @@ class ace_medical_enableRevive {
     force = 1;
 };
 class ace_medical_maxReviveTime {
-    value = 40;
+    value = 120;
     typeName = "SCALAR";
     force = 1;
 };
