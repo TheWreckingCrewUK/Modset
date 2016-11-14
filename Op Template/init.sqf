@@ -30,12 +30,12 @@ if(isMultiplayer)then{
 	titleCut ["", "BLACK FADED", 999];
 		[] Spawn {
 		waitUntil{!(isNil "BIS_fnc_init")};
-
+		
 		titleText ["The Wrecking Crew","PLAIN DOWN"]; 
 		titleFadeOut 7;
 		sleep 5;
 
-		titleText ["Operation GULAN","PLAIN"];
+		titleText ["Operation WICKED","PLAIN"];
 		titleFadeOut 15;
 		sleep 45;
 

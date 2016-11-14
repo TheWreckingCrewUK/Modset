@@ -1,11 +1,26 @@
 
-author = "[TWC] Mallas";
-onLoadName = "Operation TERKANDIN"; 
+author = "[TWC] Ghostie3k";
+onLoadName = "Operation WICKED"; 
 loadScreen = "operation_framework\pictures\loading.jpg";
 disabledAI = 1;
 enableDebugConsole = 1;
 disableChannels[]={0};
 respawnButton = 0;
+
+class CfgFunctions
+{
+	class twc
+	{
+		class start
+		{
+			class deletMap
+			{
+					file = "functions\start\fn_deleteMap.sqf";
+					postInit = 1;
+			};
+		};
+	};
+};
 
 respawn = "base";
 respawnDelay = 1000000;
@@ -67,7 +82,7 @@ class ace_medical_enableOverdosing {
     force = 1;
 };
 class ace_medical_bleedingCoefficient {
-    value = 1;
+    value = 0.1;
     typeName = "SCALAR";
     force = 1;
 };
@@ -132,7 +147,7 @@ class ace_medical_enableRevive {
     force = 1;
 };
 class ace_medical_maxReviveTime {
-    value = 120;
+    value = 40;
     typeName = "SCALAR";
     force = 1;
 };
