@@ -2100,7 +2100,7 @@ class CfgVehicles
 		{
 			class _xx_NLAW
 				{
-					Weapon = "CUP_launch_NLAW";
+					Weapon = "launch_NLAW_F";
 					count = 10;
 				};
 			class _xx_LAW
@@ -2314,6 +2314,11 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
+			class _xx_NLAW
+				{
+					Weapon = "launch_NLAW_F";
+					count = 5;
+				};
 			class _xx_LAW
 			{
 				Weapon = "HAFM_LAW";

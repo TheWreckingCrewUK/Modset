@@ -924,7 +924,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_Vector",
 		"UK3CB_BAF_L129A1_Grippod_TA648",
 		"UK3CB_BAF_L131A1",
-		"CUP_launch_NLAW"
+		"launch_NLAW_F"
 		};
 		respawnweapons[]=
 		{
@@ -933,7 +933,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_Vector",
 		"UK3CB_BAF_L129A1_Grippod_TA648",
 		"UK3CB_BAF_L131A1",
-		"CUP_launch_NLAW"
+		"launch_NLAW_F"
 		};
 		magazines[]=
 		{

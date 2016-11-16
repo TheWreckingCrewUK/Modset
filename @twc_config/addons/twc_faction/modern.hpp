@@ -193,14 +193,14 @@
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
-		"CUP_launch_NLAW"
+		"launch_NLAW_F"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A2_RIS_AFG_ELCAN3D",
-		"CUP_launch_NLAW"
+		"launch_NLAW_F"
 		};
 		magazines[]=
 		{
@@ -894,7 +894,7 @@
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L129A1_Grippod_TA648",
-		"CUP_launch_NLAW"
+		"launch_NLAW_F"
 		};
 		respawnweapons[]=
 		{
@@ -902,7 +902,7 @@
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L129A1_Grippod_TA648",
-		"CUP_launch_NLAW"
+		"launch_NLAW_F"
 		};
 		magazines[]=
 		{
