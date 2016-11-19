@@ -1072,6 +1072,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		linkedItems[]=
 		{
 		"UK3CB_BAF_H_PilotHelmetHeli_A",
+		"UK3CB_BAF_V_Pilot_DPMW",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -1079,6 +1080,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		respawnLinkedItems[]=
 		{
 		"UK3CB_BAF_H_PilotHelmetHeli_A",
+		"UK3CB_BAF_V_Pilot_DPMW",
 		"ItemMap",		
 		"ItemCompass",
 		"ItemWatch"
@@ -2714,6 +2716,7 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		linkedItems[]=
 		{
 		"UK3CB_BAF_H_PilotHelmetHeli_A",
+		"UK3CB_BAF_V_Pilot_DDPM",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -2721,6 +2724,7 @@ class 1990_HeloPilot_Desert: B_Soldier_base_F
 		respawnLinkedItems[]=
 		{
 		"UK3CB_BAF_H_PilotHelmetHeli_A",
+		"UK3CB_BAF_V_Pilot_DDPM",
 		"ItemMap",		
 		"ItemCompass",
 		"ItemWatch"
