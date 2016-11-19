@@ -30,6 +30,22 @@ if(isModded == 0)then{
 	bunkerMarkerClass = "n_unknown";
 };
 if(isModded == 1) then{
+	tank = ["CUP_O_T90_RU"];
+	ifv = ["CUP_O_BMP2_RU"];
+	apc = ["CUP_O_BRDM2_RUS"];
+	squad = (configfile >> "CfgGroups" >> "East" >> "CUP_O_RU" >> "Infantry" >> "CUP_O_RU_InfSquad_EMR");
+	squadAT = (configfile >> "CfgGroups" >> "East" >> "CUP_O_RU" >> "Infantry" >> "CUP_O_RU_InfSection_AT_EMR");
+	squadAA = (configfile >> "CfgGroups" >> "East" >> "CUP_O_RU" >> "Infantry" >> "CUP_O_RU_InfSection_AA_EMR");
+	aa = ["CUP_O_2S6_RU"];
+	radioTower = "Land_TTowerBig_2_F";
+	mortar = ["CUP_O_2b14_82mm_RU"];
+	arty = ["CUP_O_BM21_RU"];
+	tankaaCombined = (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Armored" >> "OIA_TankPlatoon_AA");
+	enemyFlag = "Faction_CUP_RU";
+	bunkerMarkerClass = "n_unknown";
+};
+/*
+if(isModded == 1) then{
 	tank = ["rhs_t72ba_tv"];
 	ifv = ["rhs_bmp1_msv"];
 	apc = ["rhs_btr70_msv"];
@@ -44,6 +60,7 @@ if(isModded == 1) then{
 	enemyFlag = "rhs_flag_Russia";
 	bunkerMarkerClass = "n_unknown";
 };
+*/
 if(isModded == 2)then{
 	tank = ["LIB_PzKpfwIV_H"];
 	ifv = ["LIB_StuG_III_G"];
