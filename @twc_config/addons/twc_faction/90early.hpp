@@ -1694,7 +1694,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		{
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd_T",
@@ -1706,7 +1705,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP",
 		"UK3CB_BAF_556_30Rnd",
@@ -1865,7 +1863,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
 		"UK3CB_BAF_HMNVS"
@@ -1883,18 +1880,18 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"UK3CB_BAF_HMNVS"		
 		};		
 	};
-	class 1990_British_Grenadier_Desert: B_Soldier_base_F
+	class 1990_British_AT_Desert: B_Soldier_base_F
 	{
-		_generalMacro="1990_Desert_British_Grenadier";
+		_generalMacro="1990_Desert_British_AT";
 		scope=2;
-		displayName="Grenadier(90`s Desert)";
+		displayName="Rifleman AT (90`s Desert)";
 		faction="twc_faction";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_Smock_DDPM";
-		backpack="TWC_Backpack_1990_D_Grenadier";
+		backpack="TWC_Backpack_1990_D_AT";
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_DDPM",
@@ -1919,17 +1916,19 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L85A2_UGL_SUSAT3D"
+		"UK3CB_BAF_L85A1_SUSAT3D",
+		"TWC_Carl_Gustav"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L85A2_UGL_SUSAT3D"
+		"UK3CB_BAF_L85A1_SUSAT3D",
+		"TWC_Carl_Gustav"
 		};
 		magazines[]=
 		{
-		"1Rnd_HE_Grenade_shell",
+		"tf47_m3maaws_HEAT",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd_T",
 		"UK3CB_BAF_556_30Rnd_T",
@@ -1941,7 +1940,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"1Rnd_HE_Grenade_shell",
+		"tf47_m3maaws_HEAT",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd_T",
 		"UK3CB_BAF_556_30Rnd_T",
@@ -1979,7 +1978,117 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_EarPlugs",	
+		"UK3CB_BAF_HMNVS"
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs",	
+		"UK3CB_BAF_HMNVS"			
+		};
+	};
+	class 1990_British_AAT_Desert: B_Soldier_base_F
+	{
+		_generalMacro="1990_Desert_British_AAT";
+		scope=2;
+		displayName="Rifleman Assistant AT (90`s Desert)";
+		faction="twc_faction";
+		editorSubcategory = "Men_1990D";
+		vehicleClass="Men_1990D";
+		icon="iconManExplosive";
+		nakedUniform="U_BasicBody";
+		uniformClass="UK3CB_BAF_U_Smock_DDPM";
+		backpack="TWC_Backpack_1990_D_AT";
+		linkedItems[]=
+		{
+        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"ACRE_PRC343",
+		"UK3CB_BAF_G_Tactical_Black"
+		};
+		respawnLinkedItems[]=
+		{
+        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"ACRE_PRC343",
+		"UK3CB_BAF_G_Tactical_Black"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		magazines[]=
+		{
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
+		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_T",
+		"UK3CB_BAF_556_30Rnd_T",
+		"CUP_HandGrenade_L109A2_HE",
+		"CUP_HandGrenade_L109A2_HE",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
 		"UK3CB_BAF_HMNVS"
@@ -2090,7 +2199,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
 		"UK3CB_BAF_HMNVS"

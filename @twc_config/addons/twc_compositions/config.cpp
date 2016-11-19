@@ -664,21 +664,21 @@ class CfgGroups
                                         class Unit1
                                         {
                                                 side = 1;
-                                                vehicle = "1990_British_Grenadier_Desert";
+                                                vehicle = "1990_British_Rifleman_Desert";
                                                 rank = "PRIVATE";
                                                 position[] = {3,0,0};
                                         };
                                         class Unit2
                                         {
                                                 side = 1;
-                                                vehicle = "1990_British_Gunner_Desert";
+                                                vehicle = "1990_British_Rifleman_Desert";
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
 										class Unit3
                                         {
                                                 side = 1;
-                                                vehicle = "1990_British_Rifleman_Desert";
+                                                vehicle = "1990_British_Gunner_Desert";
                                                 rank = "PRIVATE";
                                                 position[] = {7,0,0};
                                         };
@@ -692,21 +692,21 @@ class CfgGroups
 										class Unit5
                                         {
                                                 side = 1;
-                                                vehicle = "1990_British_Grenadier_Desert";
+                                                vehicle = "1990_British_AT_Desert";
                                                 rank = "PRIVATE";
                                                 position[] = {11,0,0};
                                         };
 										class Unit6
                                         {
                                                 side = 1;
-                                                vehicle = "1990_British_Gunner_Desert";
+                                                vehicle = "1990_British_AAT_Desert";
                                                 rank = "PRIVATE";
                                                 position[] = {13,0,0};
                                         };
 										class Unit7
                                         {
                                                 side = 1;
-                                                vehicle = "1990_British_Rifleman_Desert";
+                                                vehicle = "1990_British_Gunner_Desert";
                                                 rank = "PRIVATE";
                                                 position[] = {15,0,0};
                                         };

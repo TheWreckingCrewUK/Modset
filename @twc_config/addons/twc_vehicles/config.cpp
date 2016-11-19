@@ -12,6 +12,7 @@ class CfgPatches
 			"TWC_Warrior_D",
 			"TWC_Warrior_W",
 			"twc_wildcat",
+			"twc_wildcat_1990",
 			"twc_puma",
 			"twc_c5_hercules"
 			
@@ -4574,6 +4575,116 @@ class CfgVehicles
 				{
 					Weapon = "HAFM_LAW";
 					count = 1;
+				};
+		};
+		class TransportBackpacks
+		{
+		};
+	};
+	class twc_wildcat_1990: UK3CB_BAF_Wildcat_AH1_CAS_8A
+	{
+		scope = 2;
+		side = 1;
+		faction="twc_faction";
+		author = "3CB";
+		displayname = "Lynx";
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_556_30Rnd
+			{
+				magazine="UK3CB_BAF_556_30Rnd";
+				count=20;
+			};
+			class _xx_UK3CB_BAF_556_30Rnd_T
+			{
+				magazine="UK3CB_BAF_556_30Rnd_T";
+				count=5;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=4;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=2;
+			};
+			class _xx_IR_Grenade
+			{
+				magazine = "B_IR_Grenade";
+				count = 2;
+			};
+			class _xx_Chemlight_Green
+			{
+				magazine = "Chemlight_green";
+				count = 4;
+			};
+			class _xx_Chemlight_Blue
+			{
+				magazine = "Chemlight_blue";
+				count = 4;
+			};
+			class _xx_Chemlight_Red
+			{
+				magazine = "Chemlight_red";
+				count = 4;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine="tf47_m3maaws_HEAT";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine="tf47_m3maaws_HE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_SMOKE
+			{
+				magazine="tf47_m3maaws_SMOKE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_ILLUM
+			{
+				magazine="tf47_m3maaws_ILLUM";
+				count=2;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 5;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 5;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 5;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_LAW
+				{
+					Weapon = "HAFM_LAW";
+					count = 2;
 				};
 		};
 		class TransportBackpacks

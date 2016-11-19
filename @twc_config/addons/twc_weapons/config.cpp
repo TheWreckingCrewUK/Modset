@@ -1625,8 +1625,16 @@ class CfgVehicles
 				count = 7;
 			};
 		};
+		class TransportWeapons
+		{
+			class _xx_LAW
+			{
+				weapon = "HAFM_LAW";
+				count = 1;
+			};
+		};
 	};
-	class TWC_Backpack_1990_D_Grenadier:UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
+	class TWC_Backpack_1990_D_AT:UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
 	{
 		scope = 1;
 		class TransportMagazines
@@ -1636,20 +1644,15 @@ class CfgVehicles
 				magazine = "UK3CB_BAF_556_30Rnd";
 				count = 7;
 			};
-			class _xx_HE
+			class _xx_tf47_m3maaws_HEAT
 			{
-				magazine = "1Rnd_HE_Grenade_shell";
-				count = 12;
+				magazine = "tf47_m3maaws_HEAT";
+				count = 2;
 			};
-			class _xx_Flare
+			class _xx_tf47_m3maaws_HE
 			{
-				magazine = "UGL_FlareWhite_F";
-				count = 3;
-			};
-			class _xx_Smoke
-			{
-				magazine = "1Rnd_Smoke_Grenade_shell";
-				count = 3;
+				magazine = "tf47_m3maaws_HE";
+				count = 1;
 			};
 		};
 	};
