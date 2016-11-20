@@ -52,11 +52,16 @@ class CfgPatches
 			"ColdWar_AA_Assistant",
 			"ColdWar_MilanGunner",
 			"ColdWar_MilanAssistant",
+			"WW2_British_Platoon_Commander",
+			"WW2_British_Platoon_Sergeant",
+			"WW2_British_Medic",
 			"WW2_British_Squadleader",
 			"WW2_British_Rifleman",
 			"WW2_British_2IC",
 			"WW2_British_MG",
 			"WW2_British_MGASS",
+			"WW2_British_Vehicle_Commander",
+			"WW2_British_Vehicle_Crewman",
 			"GulfWar_Iraqi_Squadleader",
 			"GulfWar_Iraqi_Rifleman",
 			"GulfWar_Iraqi_RPG",
@@ -76,7 +81,15 @@ class CfgPatches
 			"ColdWar_USSR_Grenadier",
 			"ColdWar_USSR_Grenadierassistant",
 			"ColdWar_USSR_Efreitor",
-			"ColdWar_USSR_MachineGunner"
+			"ColdWar_USSR_MachineGunner",
+			"Afr_Mil_Rifleman",
+			"Afr_Mil_AT_Assistant",
+			"Afr_Mil_RiflemanAT",
+			"Afr_Mil_Machinegunner",
+			"Afr_Mil_Teamleader",
+			"Afr_Mil_Squadleader",
+			"Afr_Mil_Officer",
+			"Afr_Mil_Crewman"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -129,6 +142,14 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (Argentina)";
 	};
+	class Men_AfricanMilitia
+	{
+		displayName = "Men (African Militia)";
+	};
+	class TWC_tak_Civ_Men
+	{
+		displayName = "Men (Takistan Militia)";
+	};
 };
 class CfgFactionClasses
 {
@@ -148,6 +169,14 @@ class CfgFactionClasses
 		priority=2;
 		side=1;
 	};
+	class twc_faction_independent
+	{
+		displayName="TWC Operation Units";
+		author="FakeMatty";
+		icon="TWClogo.paa";
+		priority=2;
+		side=2;
+	};
 	class Iraqi_units
 	{
 		displayName="Iraqi Army Gulf War Units";
@@ -164,9 +193,69 @@ class CfgFactionClasses
 		priority=2;
 		side=2;
 	};
+	class african_units
+	{
+		displayName="African Militia";
+		author="Saxon";
+		icon="TWClogo.paa";
+		priority=2;
+		side=2;
+	};
+	class TWC_Tak_Civ
+	{
+		displayName="Takistani Civilians";
+		priority=1;
+		side=3;
+	};
 };
 class CfgVehicles
 {
+	class CUP_B_AlicePack_Khaki;
+	class CUP_B_RPGPack_Khaki;
+	class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki
+	{
+		class TransportMagazines
+		{
+			class _xx_AKMags
+			{
+				magazine="CUP_30Rnd_762x39_AK47_M";
+				count=6;
+			};
+			class _xx_PKMags
+			{
+				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+				count=1;
+			};
+		};
+	};
+	class Afr_Backpack_MG: CUP_B_AlicePack_Khaki
+	{
+		class TransportMagazines
+		{
+			class _xx_PKMags
+			{
+				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+				count=2;
+			};
+		};
+	};
+	class Afr_Backpack_AT: CUP_B_RPGPack_Khaki
+	{
+		class TransportMagazines
+		{
+			class _xx_AKMags
+			{
+				magazine="CUP_30Rnd_762x39_AK47_M";
+				count=2;
+			};
+			class _xx_RPG7
+			{
+				magazine="CUP_PG7V_M";
+				count=2;
+			};
+		};
+	};
+	
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
@@ -183,4 +272,7 @@ class CfgVehicles
 	#include "ussr.hpp"
 	#include "iraq.hpp"
 	#include "argentina.hpp"
+	#include "african.hpp"
+	
+	#include "takistan.hpp"
 };

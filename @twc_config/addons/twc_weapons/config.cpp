@@ -17,6 +17,19 @@ class CfgPatches
 		author="FakeMatty";
 	};
 };
+class cfgMagazines
+{
+	class Default;
+	class CA_Magazine;
+	class 16Rnd_9x21_Mag;
+	class twc_13Rnd_9mm_Mag:16Rnd_9x21_Mag
+	{
+		scope = 2;
+		displayName = "13 round 9mm Magazine";
+		count = 13;
+		descriptionShort = "Used in Browning Hi Power";
+	};
+};
 	
 class cfgWeapons
 {
@@ -37,6 +50,7 @@ class cfgWeapons
 	class UK3CB_BAF_Silencer_L115A3;
 	
 	class CUP_launch_FIM92Stinger;
+	class rhsusf_weap_m1911a1;
 	class RKSL_optic_LDS;
 	class tf47_m3maaws;
 	class kio_Elcan_reflex;
@@ -45,6 +59,13 @@ class cfgWeapons
 	class rhs_weap_ak74m_dtk; //base ussr AK
 	class rhs_acc_1p29; //ussr section lead and 2IC scope
 	
+	class twc_browninghp:rhsusf_weap_m1911a1
+	{
+		scope = 2;
+		author = "jayman";
+		displayName = "Browning Hi Power";
+		magazines[] = {twc_13Rnd_9mm_Mag};
+	};
 	class twc_l115a3_wd:UK3CB_BAF_L115A3_Ghillie
 	{
 		scope = 1;
@@ -325,13 +346,16 @@ class CfgVehicles
 	class UK3CB_BAF_B_Bergen_DPMT_Rifleman_A;
 	class UK3CB_BAF_B_Bergen_DPMT_Rifleman_B;
 	class UK3CB_BAF_B_Kitbag_DPMT;
+	class UK3CB_BAF_B_Carryall_DPMT;
 	
 	class UK3CB_BAF_B_Bergen_DDPM_SL_A;
 	class UK3CB_BAF_B_Bergen_DDPM_Rifleman_A;
 	class UK3CB_BAF_B_Bergen_DDPM_Rifleman_B;
 	class UK3CB_BAF_B_Kitbag_DDPM;
+	class UK3CB_BAF_B_Carryall_DDPM;
 	
-	class B_mas_ww2_Bergen_uk;
+	class fow_b_uk_p37;
+	class fow_b_us_radio;
 	
 	class rhs_sidor;
 	class rhs_rpg_empty;
@@ -1170,6 +1194,7 @@ class CfgVehicles
 	{
 		scope = 1;
 		maximumLoad = 500;
+		mass = 59.84;
 		class TransportMagazines
 		{
 			class _xx_Smoke
@@ -1194,10 +1219,10 @@ class CfgVehicles
 			};
 		};
 	};
-	class TWC_Backpack_1990_Platoon_Sergeant:UK3CB_BAF_B_Bergen_DPMT_SL_A
+	class TWC_Backpack_1990_Platoon_Sergeant:UK3CB_BAF_B_Carryall_DPMT
 	{
 		scope = 1;
-		maximumLoad = 500;
+		maximumLoad = 1000;
 		class TransportItems
 		{
 			class _xx_Wire_Cutters
@@ -1296,6 +1321,8 @@ class CfgVehicles
 	class TWC_Backpack_1990_Sectionlead:UK3CB_BAF_B_Bergen_DPMT_SL_A
 	{
 		scope = 1;
+		mass = 59.84;
+		maximumLoad = 500;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1437,6 +1464,7 @@ class CfgVehicles
 	{
 		scope = 1;
 		maximumLoad = 500;
+		mass = 59.84;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1466,10 +1494,10 @@ class CfgVehicles
 			};
 		};
 	};
-	class TWC_Backpack_1990_D_Platoon_Sergeant:UK3CB_BAF_B_Bergen_DDPM_SL_A
+	class TWC_Backpack_1990_D_Platoon_Sergeant:UK3CB_BAF_B_Carryall_DDPM
 	{
 		scope = 1;
-		maximumLoad = 500;
+		maximumLoad = 1000;
 		class TransportItems
 		{
 			class _xx_Wire_Cutters
@@ -1573,6 +1601,8 @@ class CfgVehicles
 	class TWC_Backpack_1990_D_Sectionlead:UK3CB_BAF_B_Bergen_DDPM_SL_A
 	{
 		scope = 1;
+		mass = 59.84;
+		maximumLoad = 500;
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -1710,9 +1740,16 @@ class CfgVehicles
 		};
 	};
 //************************WW2*******************************
-	class TWC_Backpack_WW2_Medic:B_mas_ww2_Bergen_uk
+	class TWC_Backpack_WW2_PlatoonCommand:fow_b_us_radio
 	{
 		scope = 1;
+		mass = 29.7;
+		maximumLoad = 400;
+	};
+	class TWC_Backpack_WW2_Medic:fow_b_uk_p37
+	{
+		scope = 1;
+		maximumLoad = 200;
 		class TransportItems
 		{
            class _xx_Bandage
@@ -1734,16 +1771,6 @@ class CfgVehicles
 			{
 				name = "ACE_quikclot";
 				count = 25;
-			};
-			class _xxACE_adenosine
-			{
-				name = "ACE_adenosine";
-				count = 8;
-			};
-			class _xxACE_atropine
-			{
-				name = "ACE_atropine";
-				count = 2;
 			};
 			class _xxACE_epinephrine
 			{
@@ -1772,32 +1799,78 @@ class CfgVehicles
 			};
 		};
 	};
-	class TWC_Backpack_WW2_2IC:B_mas_ww2_Bergen_uk
+	class TWC_Backpack_WW2_SectionCommander:fow_b_uk_p37
 	{
 		scope = 1;
+		maximumLoad = 200;
+		class TransportMagazines
+		{
+			class _XX_Sten_Mag
+			{
+				magazine="fow_32Rnd_9x19_sten";
+				count=6;
+			};
+		};
+	};
+	class TWC_Backpack_WW2_Rifleman:fow_b_uk_p37
+	{
+		scope = 1;
+		maximumLoad = 200;
 		class TransportMagazines
 		{
 			class _XX_Enfield_Mag
 			{
-				magazine="CUP_10x_303_M";
+				magazine="fow_10Rnd_303";
 				count=5;
-			};
-			class _XX_Bren_Mag
-			{
-				magazine = "I44_30rd_77x56R_Mix_Bren";
-				count = 3;
 			};
 		};
 	};
-	class TWC_Backpack_WW2_MG:B_mas_ww2_Bergen_uk
+	class TWC_Backpack_WW2_2IC:fow_b_uk_p37
 	{
 		scope = 1;
+		maximumLoad = 200;
+		class TransportMagazines
+		{
+			class _XX_Enfield_Mag
+			{
+				magazine="fow_10Rnd_303";
+				count=12;
+			};
+			class _XX_Bren_Mag
+			{
+				magazine = "fow_30Rnd_303_bren";
+				count = 5;
+			};
+		};
+	};
+	class TWC_Backpack_WW2_MG:fow_b_uk_p37
+	{
+		scope = 1;
+		maximumLoad = 200;
 		class TransportMagazines
 		{
 			class _XX_Bren_Mag
 			{
-				magazine = "I44_30rd_77x56R_Mix_Bren";
-				count = 5;
+				magazine = "fow_30Rnd_303_bren";
+				count = 10;
+			};
+		};
+	};
+	class TWC_Backpack_WW2_MGASS:fow_b_uk_p37
+	{
+		scope = 1;
+		maximumLoad = 200;
+		class TransportMagazines
+		{
+			class _XX_Enfield_Mag
+			{
+				magazine="fow_10Rnd_303";
+				count=5;
+			};
+			class _XX_Bren_Mag
+			{
+				magazine = "fow_30Rnd_303_bren";
+				count = 10;
 			};
 		};
 	};
@@ -2518,6 +2591,31 @@ class CfgVehicles
 				magazine = "Chemlight_red";
 				count = 20;
 			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine="ACE_HandFlare_White";
+				count=20;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine="tf47_m3maaws_HEAT";
+				count=10;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine="tf47_m3maaws_HE";
+				count=10;
+			};
+			class _xx_tf47_m3maaws_SMOKE
+			{
+				magazine="tf47_m3maaws_SMOKE";
+				count=10;
+			};
+			class _xx_tf47_m3maaws_ILLUM
+			{
+				magazine="tf47_m3maaws_ILLUM";
+				count=10;
+			};
 		};
 		class TransportItems
 		{
@@ -2587,12 +2685,7 @@ class CfgVehicles
 			class _xx_LAW
 			{
 				Weapon = "HAFM_LAW";
-				count = 10;
-			};
-			class _xx_AT4
-			{
-				Weapon = "rhs_weap_M136_hedp";
-				count = 10;
+				count = 20;
 			};
 		};		
 		transportAmmo=1000000;
@@ -2601,17 +2694,17 @@ class CfgVehicles
 	class TWC_Operation_WW2_Ammobox:TWC_modern_Operation_Ammobox
 	{
 		author="FakeMatty";
-		displayName="TWC 1990 Symetrical AmmoBox";
+		displayName="TWC WW2 Symetrical AmmoBox";
 		class TransportMagazines
 		{
 			class _XX_Enfield_Mag
 			{
-				magazine="CUP_10x_303_M";
+				magazine="fow_10Rnd_303";
 				count=200;
 			};
 			class _XX_Bren_Mag
 			{
-				magazine="I44_30rd_77x56R_Mix_Bren";
+				magazine="fow_30Rnd_303_bren";
 				count=200;
 			};
 			class _xx_SmokeShell
@@ -2621,7 +2714,7 @@ class CfgVehicles
 			};
 			class _xx_Grenade
 			{
-				magazine="CUP_HandGrenade_L109A2_HE";
+				magazine="fow_e_no36mk1";
 				count=50;
 			};
 		};

@@ -1,27 +1,27 @@
-	class WW2_British_Platoon_Commander: B_Soldier_base_F
+	class WW2_British_Platoon_Commander: I_Soldier_F
 	{
 		_generalMacro="WW2_British_Platoon_Commander";
 		scope=2;
 		displayName="Platoon Commander(WW2)";
-		faction="twc_faction";
+		faction="twc_faction_independent";
 		editorSubcategory = "Men_WW2";
 		vehicleClass="Men_WW2";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_mas_ww2_B_CombatUniform_uk";
-		backpack="B_mas_ww2_Bergen_uk";
+		uniformClass="fow_u_uk_bd40_01_sergeant";
+		backpack="TWC_Backpack_WW2_PlatoonCommand";
 		linkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -30,28 +30,30 @@
 		{
 		"Throw",
 		"Put",
-		"arifle_mas_ww2_sten"
+		"Binocular",
+		"fow_w_sten_mk2"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"arifle_mas_ww2_sten"
+		"Binocular",
+		"fow_w_sten_mk2"
 		};
 		magazines[]=
 		{
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -121,30 +123,30 @@
 		"ACE_EarPlugs"		
 		};
 	};
-	class WW2_British_Platoon_Sergeant: B_Soldier_base_F
+	class WW2_British_Platoon_Sergeant: I_Soldier_F
 	{
 		_generalMacro="WW2_British_Platoon_Sergeant";
 		scope=2;
 		displayName="Platoon Sergeant(WW2)";
-		faction="twc_faction";
+		faction="twc_faction_independent";
 		editorSubcategory = "Men_WW2";
 		vehicleClass="Men_WW2";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_mas_ww2_B_CombatUniform_uk";
-		backpack="B_mas_ww2_Bergen_uk";
+		uniformClass="fow_u_uk_bd40_01_sergeant";
+		backpack="TWC_Backpack_WW2_PlatoonCommand";
 		linkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -153,28 +155,30 @@
 		{
 		"Throw",
 		"Put",
-		"arifle_mas_ww2_sten"
+		"Binocular",
+		"fow_w_sten_mk2"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"arifle_mas_ww2_sten"
+		"Binocular",
+		"fow_w_sten_mk2"
 		};
 		magazines[]=
 		{
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -244,30 +248,30 @@
 		"ACE_EarPlugs"		
 		};
 	};
-	class WW2_British_Medic: B_Soldier_base_F
+	class WW2_British_Medic: I_Soldier_F
 	{
 		_generalMacro="WW2_British_Medic";
 		scope=2;
 		displayName="Medic(WW2)";
-		faction="twc_faction";
+		faction="twc_faction_independent";
 		editorSubcategory = "Men_WW2";
 		vehicleClass="Men_WW2";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_mas_ww2_B_CombatUniform_uk";
+		uniformClass="fow_u_uk_bd40_01_private";
 		backpack="TWC_Backpack_WW2_Medic";
 		linkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -276,28 +280,28 @@
 		{
 		"Throw",
 		"Put",
-		"arifle_mas_ww2_sten"
+		"fow_w_sten_mk2"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"arifle_mas_ww2_sten"
+		"fow_w_sten_mk2"
 		};
 		magazines[]=
 		{
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -367,30 +371,30 @@
 		"ACE_EarPlugs"		
 		};
 	};
-	class WW2_British_Section_Commander: B_Soldier_base_F
+	class WW2_British_Section_Commander: I_Soldier_F
 	{
 		_generalMacro="WW2_British_Section_Commander";
 		scope=2;
 		displayName="Section Commander(WW2)";
-		faction="twc_faction";
+		faction="twc_faction_independent";
 		editorSubcategory = "Men_WW2";
 		vehicleClass="Men_WW2";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_mas_ww2_B_CombatUniform_uk";
-		backpack="B_mas_ww2_Bergen_uk";
+		uniformClass="fow_u_uk_bd40_01_corporal";
+		backpack="TWC_Backpack_WW2_SectionCommander";
 		linkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -399,42 +403,32 @@
 		{
 		"Throw",
 		"Put",
-		"arifle_mas_ww2_sten"
+		"Binocular",
+		"fow_w_sten_mk2"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"arifle_mas_ww2_sten"
+		"Binocular",
+		"fow_w_sten_mk2"
 		};
 		magazines[]=
 		{
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"30Rnd_mas_ww2_sten",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -504,30 +498,30 @@
 		"ACE_EarPlugs"		
 		};
 	};
-	class WW2_British_Rifleman: B_Soldier_base_F
+	class WW2_British_Rifleman: I_Soldier_F
 	{
 		_generalMacro="WW2_British_Rifleman";
 		scope=2;
 		displayName="Rifleman(WW2)";
-		faction="twc_faction";
+		faction="twc_faction_independent";
 		editorSubcategory = "Men_WW2";
 		vehicleClass="Men_WW2";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_mas_ww2_B_CombatUniform_uk";
-		backpack="";
+		uniformClass="fow_u_uk_bd40_01_private";
+		backpack="TWC_Backpack_WW2_Rifleman";
 		linkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -536,39 +530,29 @@
 		{
 		"Throw",
 		"Put",
-		"CUP_srifle_LeeEnfield"
+		"fow_w_leeenfield_no4mk1"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"CUP_srifle_LeeEnfield"
+		"fow_w_leeenfield_no4mk1"
 		};
 		magazines[]=
 		{
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1"
 		};
 		Respawnmagazines[]=
 		{
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1"
 		};
 		Items[]=
 		{
@@ -598,7 +582,6 @@
 		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs"	
 		};
@@ -630,35 +613,34 @@
 		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs"		
 		};
 	};
-	class WW2_British_2IC: B_Soldier_base_F
+	class WW2_British_2IC: I_Soldier_F
 	{
 		_generalMacro="WW2_British_2IC";
 		scope=2;
 		displayName="2IC(WW2)";
-		faction="twc_faction";
+		faction="twc_faction_independent";
 		editorSubcategory = "Men_WW2";
 		vehicleClass="Men_WW2";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_mas_ww2_B_CombatUniform_uk";
+		uniformClass="fow_u_uk_bd40_01_private";
 		backpack="TWC_Backpack_WW2_2IC";
 		linkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -667,42 +649,34 @@
 		{
 		"Throw",
 		"Put",
-		"CUP_srifle_LeeEnfield"
+		"Binocular",
+		"fow_w_leeenfield_no4mk1"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"CUP_srifle_LeeEnfield"
+		"Binocular",
+		"fow_w_leeenfield_no4mk1"
 		};
 		magazines[]=
 		{
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -772,30 +746,30 @@
 		"ACE_EarPlugs"		
 		};
 	};
-	class WW2_British_MG: B_Soldier_base_F
+	class WW2_British_MG: I_Soldier_F
 	{
 		_generalMacro="WW2_British_Rifleman";
 		scope=2;
 		displayName="Machine Gunner(WW2)";
-		faction="twc_faction";
+		faction="twc_faction_independent";
 		editorSubcategory = "Men_WW2";
 		vehicleClass="Men_WW2";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_mas_ww2_B_CombatUniform_uk";
+		uniformClass="fow_u_uk_bd40_01_private";
 		backpack="TWC_Backpack_WW2_MG";
 		linkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -804,29 +778,25 @@
 		{
 		"Throw",
 		"Put",
-		"I44_BrenMk1"
+		"fow_w_bren"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"I44_BrenMk1"
+		"fow_w_bren"
 		};
 		magazines[]=
 		{
-		"I44_30rd_77x56R_Mix_Bren",
-		"I44_30rd_77x56R_Mix_Bren",
-		"I44_30rd_77x56R_Mix_Bren",
-		"I44_30rd_77x56R_Mix_Bren",
-		"I44_30rd_77x56R_Mix_Bren"
+		"fow_30Rnd_303_bren",
+		"fow_30Rnd_303_bren",
+		"fow_30Rnd_303_bren"
 		};
 		Respawnmagazines[]=
 		{
-		"I44_30rd_77x56R_Mix_Bren",
-		"I44_30rd_77x56R_Mix_Bren",
-		"I44_30rd_77x56R_Mix_Bren",
-		"I44_30rd_77x56R_Mix_Bren",
-		"I44_30rd_77x56R_Mix_Bren"
+		"fow_30Rnd_303_bren",
+		"fow_30Rnd_303_bren",
+		"fow_30Rnd_303_bren"
 		};
 		Items[]=
 		{
@@ -893,30 +863,30 @@
 		"ACE_EarPlugs"		
 		};
 	};
-	class WW2_British_MGASS: B_Soldier_base_F
+	class WW2_British_MGASS: I_Soldier_F
 	{
 		_generalMacro="WW2_British_MGASS";
 		scope=2;
 		displayName="Machine Gunner Assistant(WW2)";
-		faction="twc_faction";
+		faction="twc_faction_independent";
 		editorSubcategory = "Men_WW2";
 		vehicleClass="Men_WW2";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_mas_ww2_B_CombatUniform_uk";
-		backpack="TWC_Backpack_WW2_MG";
+		uniformClass="fow_u_uk_bd40_01_private";
+		backpack="TWC_Backpack_WW2_MGASS";
 		linkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_mas_ww2_vest_UK",
-		"H_mas_ww2_helmet_uk_B",
+        "fow_v_uk_base",
+		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -925,39 +895,265 @@
 		{
 		"Throw",
 		"Put",
-		"CUP_srifle_LeeEnfield"
+		"fow_w_leeenfield_no4mk1"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"CUP_srifle_LeeEnfield"
+		"fow_w_leeenfield_no4mk1"
 		};
 		magazines[]=
 		{
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1"
 		};
 		Respawnmagazines[]=
 		{
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_10x_303_M",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_10Rnd_303",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_EarPlugs"	
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_EarPlugs"		
+		};
+	};
+	class WW2_British_Vehicle_Commander: I_Soldier_F
+	{
+		_generalMacro="WW2_British_Vehicle_Commander";
+		scope=2;
+		displayName="Vehicle Commander(WW2)";
+		faction="twc_faction_independent";
+		editorSubcategory = "Men_WW2";
+		vehicleClass="Men_WW2";
+		icon="iconManLeader";
+		nakedUniform="U_BasicBody";
+		uniformClass="fow_u_uk_bd40_01_sergeant";
+		backpack="TWC_Backpack_WW2_PlatoonCommand";
+		linkedItems[]=
+		{
+		"fow_h_uk_woolen_hat",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+		"fow_h_uk_woolen_hat",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"Binocular",
+		"fow_w_sten_mk2"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"Binocular",
+		"fow_w_sten_mk2"
+		};
+		magazines[]=
+		{
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_EarPlugs"	
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_EarPlugs"		
+		};
+	};
+	class WW2_British_Vehicle_Crewman: I_Soldier_F
+	{
+		_generalMacro="WW2_British_Vehicle_Crewman";
+		scope=2;
+		displayName="Vehicle Crewman (WW2)";
+		faction="twc_faction_independent";
+		editorSubcategory = "Men_WW2";
+		vehicleClass="Men_WW2";
+		icon="iconManLeader";
+		nakedUniform="U_BasicBody";
+		uniformClass="fow_u_uk_bd40_01_private";
+		backpack="";
+		linkedItems[]=
+		{
+		"fow_h_uk_woolen_hat",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+		"fow_h_uk_woolen_hat",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"fow_w_sten_mk2"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"fow_w_sten_mk2"
+		};
+		magazines[]=
+		{
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"SmokeShell",
+		"SmokeShell"
 		};
 		Items[]=
 		{

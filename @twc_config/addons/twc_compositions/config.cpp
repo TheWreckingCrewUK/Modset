@@ -773,106 +773,6 @@ class CfgGroups
                                         };
 								};
 						};
-						class WW2
-						{
-								name = "TWC WW2"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
-                                class SectionModern
-                                {
-                                        name = "Section"; //Name of Group
-                                        faction = "twc_faction"; //Faction
-                                        side = 1; //Side
-                                        class Unit0
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_Section_Commander"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
-                                                position[] = {0,3,0}; //Position in the formation
-                                        };
-                                        class Unit1
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_Rifleman";
-                                                rank = "PRIVATE";
-                                                position[] = {3,0,0};
-                                        };
-                                        class Unit2
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_Rifleman";
-                                                rank = "PRIVATE";
-                                                position[] = {5,0,0};
-                                        };
-										class Unit3
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_Rifleman";
-                                                rank = "PRIVATE";
-                                                position[] = {7,0,0};
-                                        };
-										class Unit4
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_Rifleman";
-                                                rank = "PRIVATE";
-                                                position[] = {9,0,0};
-                                        };
-										class Unit5
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_Rifleman";
-                                                rank = "PRIVATE";
-                                                position[] = {11,0,0};
-                                        };
-										class Unit6
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_2IC";
-                                                rank = "PRIVATE";
-                                                position[] = {13,0,0};
-                                        };
-										class Unit7
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_MG";
-                                                rank = "PRIVATE";
-                                                position[] = {15,0,0};
-                                        };
-										class Unit8
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_MGASS";
-                                                rank = "PRIVATE";
-                                                position[] = {17,0,0};
-                                        };
-                                };
-								class WW2_Platoon_Command
-                                {
-                                        name = "Platoon Command"; //Name of Group
-                                        faction = "twc_faction"; //Faction
-                                        side = 1; //Side
-                                        class Unit0
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_Platoon_Commander"; //Class name of desired solider
-                                                rank = "lieutenant"; // Rank
-                                                position[] = {0,3,0}; //Position in the formation
-                                        };
-                                        class Unit1
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_Platoon_Sergeant";
-                                                rank = "sergeant";
-                                                position[] = {3,0,0};
-                                        };
-                                        class Unit2
-                                        {
-                                                side = 1;
-                                                vehicle = "WW2_British_Medic";
-                                                rank = "PRIVATE";
-                                                position[] = {5,0,0};
-                                        };
-                                };
-						};
                     
                 };
         };
@@ -1129,6 +1029,72 @@ class CfgGroups
                                         };
                                 };
 						};
+						class African_Militia
+                        {
+                                name = "TWC African Militia"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+                                class SectionMilitia
+                                {
+                                        name = "Section"; //Name of Group
+                                        faction = "african_units"; //Faction
+                                        side = EAST; //Side
+                                        class Unit0
+                                        {
+                                                side = EAST;
+                                                vehicle = "Afr_Mil_Squadleader"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = EAST;
+                                                vehicle = "Afr_Mil_Rifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = EAST;
+                                                vehicle = "Afr_Mil_RiflemanAT";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = EAST;
+                                                vehicle = "Afr_Mil_AT_Assistant";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+										class Unit4
+                                        {
+                                                side = EAST;
+                                                vehicle = "Afr_Mil_Teamleader";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+										class Unit5
+                                        {
+                                                side = EAST;
+                                                vehicle = "Afr_Mil_Rifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {11,0,0};
+                                        };
+										class Unit6
+                                        {
+                                                side = EAST;
+                                                vehicle = "Afr_Mil_Rifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {13,0,0};
+                                        };
+										class Unit7
+                                        {
+                                                side = EAST;
+                                                vehicle = "Afr_Mil_Machinegunner";
+                                                rank = "PRIVATE";
+                                                position[] = {15,0,0};
+                                        };
+                                };
+						};
 				};
 		};
 		class INDEP
@@ -1224,6 +1190,100 @@ class CfgGroups
                                         };
 								};		
 						};
+						class WW2
+						{
+								name = "TWC WW2"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+                                class SectionModern
+                                {
+                                        name = "Section"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "WW2_British_Section_Commander"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "WW2_British_Rifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "WW2_British_Rifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "WW2_British_Rifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+										class Unit4
+                                        {
+                                                side = 1;
+                                                vehicle = "WW2_British_Rifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+										class Unit6
+                                        {
+                                                side = 1;
+                                                vehicle = "WW2_British_2IC";
+                                                rank = "PRIVATE";
+                                                position[] = {11,0,0};
+                                        };
+										class Unit7
+                                        {
+                                                side = 1;
+                                                vehicle = "WW2_British_MG";
+                                                rank = "PRIVATE";
+                                                position[] = {13,0,0};
+                                        };
+										class Unit8
+                                        {
+                                                side = 1;
+                                                vehicle = "WW2_British_MGASS";
+                                                rank = "PRIVATE";
+                                                position[] = {15,0,0};
+                                        };
+                                };
+								class WW2_Platoon_Command
+                                {
+                                        name = "Platoon Command"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "WW2_British_Platoon_Commander"; //Class name of desired solider
+                                                rank = "lieutenant"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "WW2_British_Platoon_Sergeant";
+                                                rank = "sergeant";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "WW2_British_Medic";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+                                };
+						};
 				};
+				
 		};
 };
