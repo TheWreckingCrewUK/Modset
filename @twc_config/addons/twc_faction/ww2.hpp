@@ -12,16 +12,16 @@
 		backpack="TWC_Backpack_WW2_PlatoonCommand";
 		linkedItems[]=
 		{
-        "fow_v_uk_base",
-		"fow_h_uk_mk2",
+        "fow_v_uk_officer",
+		"fow_h_uk_mk3",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "fow_v_uk_base",
-		"fow_h_uk_mk2",
+        "fow_v_uk_officer",
+		"fow_h_uk_mk3",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -137,16 +137,16 @@
 		backpack="TWC_Backpack_WW2_PlatoonCommand";
 		linkedItems[]=
 		{
-        "fow_v_uk_base",
-		"fow_h_uk_mk2",
+        "fow_v_uk_officer",
+		"fow_h_uk_mk3",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "fow_v_uk_base",
-		"fow_h_uk_mk2",
+        "fow_v_uk_officer",
+		"fow_h_uk_mk3",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -262,7 +262,7 @@
 		backpack="TWC_Backpack_WW2_Medic";
 		linkedItems[]=
 		{
-        "fow_v_uk_base",
+        "fow_v_uk_sten",
 		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
@@ -270,7 +270,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "fow_v_uk_base",
+        "fow_v_uk_sten",
 		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
@@ -292,14 +292,12 @@
 		{
 		"fow_32Rnd_9x19_sten",
 		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"fow_32Rnd_9x19_sten",
 		"fow_32Rnd_9x19_sten",
 		"fow_32Rnd_9x19_sten",
 		"SmokeShell",
@@ -385,7 +383,7 @@
 		backpack="TWC_Backpack_WW2_SectionCommander";
 		linkedItems[]=
 		{
-        "fow_v_uk_base",
+        "fow_v_uk_sten",
 		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
@@ -393,7 +391,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "fow_v_uk_base",
+        "fow_v_uk_sten",
 		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
@@ -416,7 +414,6 @@
 		magazines[]=
 		{
 		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
 		"fow_e_no36mk1",
 		"fow_e_no36mk1",
 		"SmokeShell",
@@ -425,7 +422,6 @@
 		};
 		Respawnmagazines[]=
 		{
-		"fow_32Rnd_9x19_sten",
 		"fow_32Rnd_9x19_sten",
 		"fow_e_no36mk1",
 		"fow_e_no36mk1",
@@ -541,15 +537,11 @@
 		magazines[]=
 		{
 		"fow_10Rnd_303",
-		"fow_10Rnd_303",
-		"fow_10Rnd_303",
 		"fow_e_no36mk1",
 		"fow_e_no36mk1"
 		};
 		Respawnmagazines[]=
 		{
-		"fow_10Rnd_303",
-		"fow_10Rnd_303",
 		"fow_10Rnd_303",
 		"fow_e_no36mk1",
 		"fow_e_no36mk1"
@@ -662,8 +654,6 @@
 		magazines[]=
 		{
 		"fow_10Rnd_303",
-		"fow_10Rnd_303",
-		"fow_10Rnd_303",
 		"fow_e_no36mk1",
 		"fow_e_no36mk1",
 		"SmokeShell",
@@ -672,8 +662,6 @@
 		};
 		Respawnmagazines[]=
 		{
-		"fow_10Rnd_303",
-		"fow_10Rnd_303",
 		"fow_10Rnd_303",
 		"fow_e_no36mk1",
 		"fow_e_no36mk1",
@@ -760,7 +748,7 @@
 		backpack="TWC_Backpack_WW2_MG";
 		linkedItems[]=
 		{
-        "fow_v_uk_base",
+        "fow_v_uk_bren",
 		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
@@ -768,7 +756,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "fow_v_uk_base",
+        "fow_v_uk_bren",
 		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
@@ -877,7 +865,7 @@
 		backpack="TWC_Backpack_WW2_MGASS";
 		linkedItems[]=
 		{
-        "fow_v_uk_base",
+        "fow_v_uk_bren",
 		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
@@ -885,7 +873,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "fow_v_uk_base",
+        "fow_v_uk_bren",
 		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
@@ -907,17 +895,13 @@
 		{
 		"fow_10Rnd_303",
 		"fow_10Rnd_303",
-		"fow_10Rnd_303",
-		"fow_e_no36mk1",
-		"fow_e_no36mk1"
+		"fow_10Rnd_303"
 		};
 		Respawnmagazines[]=
 		{
 		"fow_10Rnd_303",
 		"fow_10Rnd_303",
-		"fow_10Rnd_303",
-		"fow_e_no36mk1",
-		"fow_e_no36mk1"
+		"fow_10Rnd_303"
 		};
 		Items[]=
 		{
@@ -999,6 +983,7 @@
 		linkedItems[]=
 		{
 		"fow_h_uk_woolen_hat",
+		"fow_v_uk_officer",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -1006,6 +991,7 @@
 		respawnLinkedItems[]=
 		{
 		"fow_h_uk_woolen_hat",
+		"fow_v_uk_officer",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -1118,6 +1104,7 @@
 		linkedItems[]=
 		{
 		"fow_h_uk_woolen_hat",
+		"fow_v_uk_sten",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -1125,6 +1112,7 @@
 		respawnLinkedItems[]=
 		{
 		"fow_h_uk_woolen_hat",
+		"fow_v_uk_sten",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"

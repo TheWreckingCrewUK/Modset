@@ -1808,7 +1808,7 @@ class CfgVehicles
 			class _XX_Sten_Mag
 			{
 				magazine="fow_32Rnd_9x19_sten";
-				count=6;
+				count=7;
 			};
 		};
 	};
@@ -1821,7 +1821,7 @@ class CfgVehicles
 			class _XX_Enfield_Mag
 			{
 				magazine="fow_10Rnd_303";
-				count=5;
+				count=7;
 			};
 		};
 	};
@@ -1834,7 +1834,7 @@ class CfgVehicles
 			class _XX_Enfield_Mag
 			{
 				magazine="fow_10Rnd_303";
-				count=12;
+				count=15;
 			};
 			class _XX_Bren_Mag
 			{
@@ -2691,7 +2691,7 @@ class CfgVehicles
 		transportAmmo=1000000;
 		supplyRadius=3;
 	};
-	class TWC_Operation_WW2_Ammobox:TWC_modern_Operation_Ammobox
+	class TWC_Operation_WW2_Ammobox:CUP_BAF_VehicleBox
 	{
 		author="FakeMatty";
 		displayName="TWC WW2 Symetrical AmmoBox";

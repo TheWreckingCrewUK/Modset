@@ -1103,7 +1103,7 @@ class CfgGroups
                 side = 2; // 0 = Opfor , 1 = Blufor , Independent = 2 ,   I think
                 class Army //Faction Class name
                 {
-                        name = "Cold War Argentina"; //Faction Name
+                        name = "TWC Operation Groups Independent"; //Faction Name
                         class Cold_War_Argentina
                         {
                                 name = "Argentina Cold War Infantry"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
