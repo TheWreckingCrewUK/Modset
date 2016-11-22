@@ -22,8 +22,7 @@ player addItemToUniform "ACE_EarPlugs";
 player addVest "CUP_V_B_RRV_Scout";
 for "_i" from 1 to 10 do {player addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
-player addBackpack "B_AssaultPack_khk";
-for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
+for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
 player addHeadgear "CUP_H_TK_Helmet";
 
 comment "Add weapons";

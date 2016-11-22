@@ -33,7 +33,7 @@ player addWeapon "rhs_weap_m14ebrri";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
 player addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4";
 player addPrimaryWeaponItem "bipod_01_F_blk";
-player addWeapon "UK3CB_BAF_AT4_CS_AP_Launcher";
+player addWeapon "rhs_weap_M136_hedp";
 player addWeapon "ACE_Vector";
 
 comment "Add items";

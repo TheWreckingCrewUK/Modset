@@ -6,7 +6,7 @@ disableChannels[]={0,1,2,3,4,6};
 onLoadName = "Insurgency Plus 3";
 onLoadMission = "http://www.thewreckingcrew.co.uk/";
 author = "WiredTiger[TWC] / Jayman[TWC] / Paddock[TWC]";
-loadScreen = "server\pics\loading.jpg";
+loadScreen = "pics\loading.jpg";
 
 
 class Header
@@ -89,8 +89,8 @@ class CfgDebriefing
 	};
 	class End7
 	{
-		title = "You can not play as the Apache crew";
-		subtitle = "You must be a member and have at least 20 people online";
+		title = "You cannot play as independent";
+		subtitle = "Speak to [TWC] Bosenator for this slot";
 		description = "Play as Blufor for now";
 		// pictureBackground = "";
 		// picture = "";

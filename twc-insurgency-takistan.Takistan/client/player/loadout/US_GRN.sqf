@@ -35,7 +35,7 @@ comment "Add weapons";
 player addWeapon "rhs_weap_m4a1_carryhandle_m203";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
 player addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";
-player addWeapon "UK3CB_BAF_AT4_AP_Launcher";
+player addWeapon "rhs_weap_M136_hedp";
 player addWeapon "ACE_Vector";
 
 comment "Add items";

@@ -18,7 +18,7 @@ params ["_amount", ["_exclusionMarkers", [], [[]]]];
 _iedTypes = ["IEDLandBig_F", "IEDLandSmall_F"];
 
 // All roads on the map
-_allRoads = [worldSize / 2, worldSize / 2] nearRoads (worldSize / 2);
+_allRoads = [worldSize / 2, worldSize / 2] nearRoads (sqrt 2 *(worldSize / 2));
 
 // Filter function for limiting roads to exclude any roads in marker areas of _exlcusionMarkers
 _fnc_filterRoadPositions = {
@@ -51,7 +51,7 @@ if (count _allRoads <= 0) exitWith {};
 for "_i" from 0 to _amount step 1 do {
     _road = _allRoads call BIS_fnc_selectRandom;
     _iedType = _iedTypes call BIS_fnc_selectRandom;
-    [_iedType, getPos _road, 5] call TWC_fnc_spawnIed;
+    [_iedType,_road, getPos _road, 5] call TWC_fnc_spawnIed;
     _allRoads = _allRoads - [_road];
     if (count _allRoads <= 0) exitWith {};
 };

@@ -32,7 +32,7 @@ comment "Add weapons";
 player addWeapon "UK3CB_BAF_L129A1_FGrip";
 player addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
 player addPrimaryWeaponItem "UK3CB_BAF_TA648_308";
-player addWeapon "UK3CB_BAF_NLAW_Launcher";
+player addWeapon "launch_NLAW_F";
 player addWeapon "ACE_Vector";
 
 comment "Add items";

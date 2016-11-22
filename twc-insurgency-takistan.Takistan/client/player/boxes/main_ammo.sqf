@@ -14,8 +14,8 @@
 				This reduces players lag as it no longer fills every 240 seconds.
 */ 
 _weapons = [];
-_magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5]];
-_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_XL50", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2],["ACE_fieldDressing",10],["ACE_morphine",10],["ACE_elasticBandage",10],["ACE_quikclot",10],["ACE_packingBandage",10], ["ACE_tourniquet", 2],["ACE_SpraypaintGreen",1]];
+_magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5],["ACE_Chemlight_IR",5]];
+_items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_KSF1", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2],["ACE_fieldDressing",10],["ACE_morphine",10],["ACE_elasticBandage",10],["ACE_quikclot",10],["ACE_packingBandage",10], ["ACE_tourniquet", 2],["ACE_SpraypaintGreen",1]];
 
 _tmp_weapons = [];
 _tmp_magazines = [];
@@ -70,7 +70,7 @@ if (g_class == "BAF_SL") then {
 		["Binocular",1],
 		["rhs_weap_m72a7",4],
 		["rhs_weap_M136_hedp",2],
-		["UK3CB_BAF_NLAW_Launcher",3],
+		["launch_NLAW_F",3],
 		["UK3CB_BAF_Javelin_Slung_Tube",3]
     ];
 
@@ -107,7 +107,7 @@ if (g_class == "BAF_SL") then {
         ["ACE_Vector",1],
 		["UK3CB_BAF_L131A1",1],
 		["rhs_weap_M136_hedp",2],
-		["UK3CB_BAF_NLAW_Launcher",3],
+		["launch_NLAW_F",3],
 		["rhs_weap_m72a7",4]
 	];
 
@@ -245,7 +245,7 @@ if (g_class == "BAF_SL") then {
         ["UK3CB_BAF_L129A1_FGrip",1],
 		["ACE_Vector",1],
 		["UK3CB_BAF_L131A1",1],
-		["UK3CB_BAF_NLAW_Launcher",3],
+		["launch_NLAW_F",3],
 		["rhs_weap_M136_hedp",2],
 		["UK3CB_BAF_Javelin_Slung_Tube",3]
 	];
@@ -777,7 +777,7 @@ if (g_class == "USMC_AR") then {
         ["rhs_weap_m16a4_grip",1],
 		["rhsusf_weap_m1911a1",1],
 		["Binocular",1],
-		["UK3CB_BAF_AT4_AP_Launcher",2],
+		["rhs_weap_M136_hedp",2],
 		["rhs_weap_m72a7",4]
 	];
 
@@ -842,7 +842,7 @@ if (g_class == "USMC_AR") then {
         ["rhs_weap_m16a4_grip",1],
 		["rhsusf_weap_m1911a1",1],
 		["Binocular",1],
-		["UK3CB_BAF_AT4_AP_Launcher",2],
+		["rhs_weap_M136_hedp",2],
 		["rhs_weap_m72a7",4]
 	];
 
@@ -935,6 +935,30 @@ if (g_class == "ANA_SL") then {
 		["ACE_SpraypaintBlue",1]
 	];
 };
+if (g_class == "ANA_TL") then {
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M16A2",1],
+		["binocular",1]
+	];
+	_tmp_magazines =
+    [
+        ["30Rnd_556x45_Stanag",50],
+		["30Rnd_556x45_Stanag_Tracer_Red",10]
+	];
+	_tmp_items = 
+	[
+		["ACE_MapTools",1],
+		["ACE_epinephrine",5],
+		["SatchelCharge_Remote_Mag",1],
+		["DemoCharge_Remote_Mag",1],
+		["ACE_M26_Clacker",1],
+		["ACE_SpraypaintBlack",1],
+		["ACE_SpraypaintRed",1],
+		["ACE_SpraypaintGreen",1],
+		["ACE_SpraypaintBlue",1]
+	];
+};
 
 // load available to Rifleman only.
  if (g_class == "ANA_RF") then {
@@ -969,15 +993,46 @@ if (g_class == "ANA_SL") then {
 		["ACE_MapTools",1]
 	];
 };
+ if (g_class == "ANA_GRNASS") then {
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M16A2",1]
+	];
+	_tmp_magazines =
+    [
+		["30Rnd_556x45_Stanag",50],
+		["CUP_PG7V_M",15]
+    ];
+	_tmp_items =
+	[
+		["ACE_MapTools",1]
+	];
+};
 
 // load available to Automatic Rifleman only.
- if (g_class == "ANA_AR") then {
+ if (g_class == "ANA_MG") then {
     _tmp_weapons =
     [
         ["CUP_lmg_PKM",1]
 	];
 	_tmp_magazines =
     [
+		["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",10]
+    ];
+	_tmp_items =
+	[
+		["ACE_MapTools",1]
+	];
+};
+// load available to Automatic Rifleman only.
+ if (g_class == "ANA_MGASS") then {
+    _tmp_weapons =
+    [
+        ["CUP_arifle_M16A2",1]
+	];
+	_tmp_magazines =
+    [
+		["30Rnd_556x45_Stanag",50],
 		["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",10]
     ];
 	_tmp_items =
@@ -1455,7 +1510,7 @@ if (g_class == "POL_SL") then {
 		["ACC_Beryl_08_des",1],
 		["UK3CB_BAF_L128A1",1],
 		["ACC_Wist_94",1],
-		["UK3CB_BAF_AT4_AP_Launcher",2]
+		["rhs_weap_M136_hedp",2]
     ];
 
     _tmp_magazines =
@@ -1484,7 +1539,7 @@ if (g_class == "POL_SL") then {
         ["ACC_Beryl_08_des_GL",1],
         ["ACE_Vector",1],
 		["ACC_Wist_94",1],
-		["UK3CB_BAF_AT4_AP_Launcher",2]
+		["rhs_weap_M136_hedp",2]
 	];
 
     _tmp_magazines =
@@ -1516,7 +1571,7 @@ if (g_class == "POL_SL") then {
     _tmp_weapons =
     [
         ["ACC_ukm_2000p_des",1],
-		["UK3CB_BAF_AT4_AP_Launcher",2],
+		["rhs_weap_M136_hedp",2],
 		["ACC_Wist_94",1]	 
 	];
 

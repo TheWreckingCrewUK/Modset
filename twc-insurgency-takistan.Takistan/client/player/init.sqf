@@ -59,12 +59,6 @@ if (!isNil "helo1" && {player == helo1}) then {
 	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
 	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
 	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large UK Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUK.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large US Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUS.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large USMC Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUSMC.sqf";},[],0,true,false,"",""];
 
 	
 };
@@ -87,12 +81,6 @@ if (!isNil "helo2" && {player == helo2}) then {
 	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
 	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
 	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large UK Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUK.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large US Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUS.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large USMC Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUSMC.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "helo3" && {player == helo3}) then {
@@ -111,12 +99,6 @@ if (!isNil "helo3" && {player == helo3}) then {
 	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
 	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
 	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large UK Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUK.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large US Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUS.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large USMC Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUSMC.sqf";},[],0,true,false,"",""];
 	
 };
 
@@ -137,12 +119,6 @@ if (!isNil "helo4" && {player == helo4}) then {
 	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
 	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
 	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large UK Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUK.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large US Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUS.sqf";},[],0,true,false,"",""];
-	ammoCrateSpawner addAction ["Spawn Large USMC Ammobox",
-	{nul = [] execVM "client\player\boxes\largeCrateUSMC.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "tank1" && {player == tank1}) then {
@@ -551,7 +527,7 @@ if (!isNil "mert_helo" && {player == mert_helo}) then {
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 	execVM "client\restrict\fullMertCrew.sqf";
 };
-
+/*
 if (!isNil "P33" && {player == P33}) then {
     g_class = "PLT";
 	g_group = "1";
@@ -573,29 +549,99 @@ if (!isNil "P34" && {player == P34}) then {
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
-
-/*
-if (!isNil "P19" && {player == P19}) then {
-    g_class = "ANA_AR";
+*/
+if (!isNil "P31" && {player == P31}) then {
+    g_class = "ANA_SL";
 	g_group = "1";
 	g_unit = "121";
-	g_name = "Delta Automatic Rifleman";
+	g_name = "Delta Section Leader";
 	g_radio = "";
 	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are in Delta. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
 
-if (!isNil "P20" && {player == P20}) then {
-    g_class = "ANA_MED";
+if (!isNil "P32" && {player == P32}) then {
+    g_class = "ANA_TL";
 	g_group = "1";
 	g_unit = "122";
+	g_name = "Delta Team Leader";
+	g_radio = "";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are in Delta. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+};
+if (!isNil "P33" && {player == P33}) then {
+    g_class = "ANA_RF";
+	g_group = "1";
+	g_unit = "123";
+	g_name = "Delta Rifleman";
+	g_radio = "";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are in Delta. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+};
+if (!isNil "P34" && {player == P34}) then {
+    g_class = "ANA_GRN";
+	g_group = "1";
+	g_unit = "124";
+	g_name = "Delta Rifleman";
+	g_radio = "";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are in Delta. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+};
+if (!isNil "P35" && {player == P35}) then {
+    g_class = "ANA_GRNASS";
+	g_group = "1";
+	g_unit = "125";
+	g_name = "Delta Rifleman";
+	g_radio = "";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are in Delta. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+};
+if (!isNil "P36" && {player == P36}) then {
+    g_class = "ANA_TL";
+	g_group = "1";
+	g_unit = "126";
+	g_name = "Delta Team Leader";
+	g_radio = "";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are in Delta. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+};
+if (!isNil "P37" && {player == P37}) then {
+    g_class = "ANA_MG";
+	g_group = "1";
+	g_unit = "127";
+	g_name = "Delta Machine Gunner";
+	g_radio = "";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are in Delta. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+};
+if (!isNil "P38" && {player == P38}) then {
+    g_class = "ANA_MGASS";
+	g_group = "1";
+	g_unit = "128";
+	g_name = "Delta Maching Gunner Assistant";
+	g_radio = "";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are in Delta. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+};
+if (!isNil "P39" && {player == P39}) then {
+    g_class = "ANA_MED";
+	g_group = "1";
+	g_unit = "129";
 	g_name = "Delta Medic";
 	g_radio = "";
 	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
-	hint "You are a Medic. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
+	hint "You are in Delta. Make sure to bind your ACRE Cycle Babel Language so you can speak with player civilians";
 };
-
+/*
 if (!isNil "P21" && {player == P21}) then {
     g_class = "PLT";
 	g_group = "1";
@@ -794,10 +840,11 @@ execVM "client\player\boxes\init.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
 
+/*
 execVM "client\player\boxes\main_ammo1.sqf";
 _test = format["hint '%1'",getPlayerUID player];
 _test2 = format["hint '%1'",({side _x == WEST} count playableUnits)];
-
+*/
  
  TWC_fnc_getAlphaList = {
     execVM "client\playerlist\alpha.sqf";
@@ -840,12 +887,8 @@ mertAction = ["MERTList","MERT List","", {call TWC_fnc_getMERTList;},{true}] cal
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], mertAction] call ace_interact_menu_fnc_addActionToObject;
 
 
-[] spawn {
-	while{true} do {
-		waitUntil {count units group player > 1};
-		[player] join grpNull ;
-	};
-};
+ammoCrateSpawner addAction ["Repair/Rearm/Refuel Vehicle",
+	{[] execVM  "client\sys_blufor\fnc_vehicleRepair.sqf"},[],0,true,false,"",""];
 
 
 _name = name player;

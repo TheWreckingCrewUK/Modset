@@ -1,5 +1,6 @@
 _givenNumber = (_this select 0) select 0;
 _civilianQuestioned = (_this select 0) select 1;
+systemChat str _givenNumber;
 
 if (_civilianQuestioned in nonQuestionableList) then {
 	hintSilent "I've already told you what I know.";
@@ -60,7 +61,6 @@ if (_civilianQuestioned in nonQuestionableList) then {
 			_color = "ColorYellow";
 			_object = InsP_iedGroup call BIS_fnc_selectRandom;
 			_distance = [100,200] call BIS_fnc_selectRandom;
-
 			_intelPos = [_object, _distance] call CBA_fnc_randPos;
 			_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
 			_marker setMarkerType "hd_join";

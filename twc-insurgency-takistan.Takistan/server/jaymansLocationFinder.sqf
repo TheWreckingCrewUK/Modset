@@ -70,3 +70,12 @@ Nagara-1 oilfield
 Shamali
 Rasman
 military base
+*/
+
+
+_position = position player; 
+_radius = 5000; 
+_options = "+trees +forest*10 -meadow"; 
+_result = selectBestPlaces [_position, _radius, _options, (_radius / 10) min 500, 100]; 
+_pos = _result select 0 select 0;  
+player setPos _pos;

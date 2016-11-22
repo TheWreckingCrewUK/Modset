@@ -23,10 +23,13 @@ player addVest "CUP_V_B_RRV_Scout";
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
 for "_i" from 1 to 10 do {player addItemToVest "30Rnd_556x45_Stanag";};
 player addBackpack "B_AssaultPack_khk";
-for "_i" from 1 to 20 do {player addItemToBackpack "ACE_fieldDressing";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_fieldDressing";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_elasticBandage";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_quikclot";};
+for "_i" from 1 to 10 do {player addItemToBackpack "ACE_packingBandage";};
+for "_i" from 1 to 5 do {player addItemToBackpack "ACE_salineIV";};
+for "_i" from 1 to 5 do {player addItemToBackpack "ACE_morphine";};
 for "_i" from 1 to 5 do {player addItemToBackpack "ACE_epinephrine";};
-for "_i" from 1 to 10 do {player addItemToBackpack "ACE_morphine";};
-for "_i" from 1 to 3 do {player addItemToBackpack "ACE_bloodIV";};
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 player addHeadgear "CUP_H_TK_Helmet";
 
