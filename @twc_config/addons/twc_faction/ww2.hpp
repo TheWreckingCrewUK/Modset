@@ -8,7 +8,7 @@
 		vehicleClass="Men_WW2";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="fow_u_uk_bd40_01_sergeant";
+		uniformClass="fow_u_uk_bd40_01_lieutenant";
 		backpack="TWC_Backpack_WW2_PlatoonCommand";
 		linkedItems[]=
 		{
@@ -619,7 +619,7 @@
 		vehicleClass="Men_WW2";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="fow_u_uk_bd40_01_private";
+		uniformClass="fow_u_uk_bd40_01_lance_corporal";
 		backpack="TWC_Backpack_WW2_2IC";
 		linkedItems[]=
 		{
