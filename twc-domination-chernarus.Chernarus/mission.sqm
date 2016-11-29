@@ -8,14 +8,14 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=363;
+		nextID=379;
 	};
 	class Camera
 	{
-		pos[]={4724.9307,380.42557,10082.417};
-		dir[]={0.48198593,-0.35563943,-0.80079234};
-		up[]={0.18354261,0.93451148,-0.30494934};
-		aside[]={-0.85680115,-1.1034426e-006,-0.51569563};
+		pos[]={4911.5566,372.73154,9990.8867};
+		dir[]={-0.64774185,-0.22936392,0.72668737};
+		up[]={-0.15285067,0.97324473,0.17148393};
+		aside[]={0.74658,-1.5132973e-006,0.66547441};
 	};
 };
 binarizationWanted=0;
@@ -361,7 +361,6 @@ class Mission
 					{
 						name="p2";
 						description="Alpha Rifleman";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=2;
@@ -1059,6 +1058,7 @@ class Mission
 						rank="CORPORAL";
 						name="p9";
 						description="Bravo Section Leader";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=12;
@@ -3329,7 +3329,7 @@ class Mission
 		class Item32
 		{
 			dataType="Marker";
-			position[]={4723.5659,339,10295.646};
+			position[]={4722.6763,339,10291.643};
 			name="veh1";
 			type="Empty";
 			angle=239.80424;
@@ -3338,7 +3338,7 @@ class Mission
 		class Item33
 		{
 			dataType="Marker";
-			position[]={4721.7139,339,10299.274};
+			position[]={4719.333,339,10297.211};
 			name="veh2";
 			type="Empty";
 			angle=239.80414;
@@ -3347,7 +3347,7 @@ class Mission
 		class Item34
 		{
 			dataType="Marker";
-			position[]={4719.4053,339,10303.739};
+			position[]={4715.6865,339,10302.911};
 			name="veh3";
 			type="Empty";
 			angle=239.80414;
@@ -3356,7 +3356,7 @@ class Mission
 		class Item35
 		{
 			dataType="Marker";
-			position[]={4716.4023,338.99704,10308.31};
+			position[]={4712.3623,339,10308.33};
 			name="veh4";
 			type="Empty";
 			angle=239.80414;
@@ -3365,7 +3365,7 @@ class Mission
 		class Item36
 		{
 			dataType="Marker";
-			position[]={4714.2593,338.99432,10312.787};
+			position[]={4708.9263,339,10314.17};
 			name="veh5";
 			type="Empty";
 			angle=239.80414;
@@ -3374,7 +3374,7 @@ class Mission
 		class Item37
 		{
 			dataType="Marker";
-			position[]={4710.5752,338.99924,10319.39};
+			position[]={4705.4878,339,10320.054};
 			name="veh6";
 			type="Empty";
 			angle=239.80414;
@@ -3383,7 +3383,7 @@ class Mission
 		class Item38
 		{
 			dataType="Marker";
-			position[]={4707.7993,339,10323.864};
+			position[]={4702.0835,339,10325.59};
 			name="veh7";
 			type="Empty";
 			angle=239.80414;
@@ -3392,7 +3392,7 @@ class Mission
 		class Item39
 		{
 			dataType="Marker";
-			position[]={4705.4146,339,10328.152};
+			position[]={4699.0537,339,10331.625};
 			name="veh8";
 			type="Empty";
 			angle=239.80414;
@@ -3401,7 +3401,7 @@ class Mission
 		class Item40
 		{
 			dataType="Marker";
-			position[]={4703.3501,2.2854893e+038,10331.57};
+			position[]={4695.3813,2.2854893e+038,10337.903};
 			name="veh9";
 			type="Empty";
 			angle=239.80414;
@@ -3411,7 +3411,7 @@ class Mission
 		class Item41
 		{
 			dataType="Marker";
-			position[]={4701.0347,339,10335.631};
+			position[]={4691.7427,339,10344.716};
 			name="veh10";
 			type="Empty";
 			angle=239.80414;
@@ -3865,26 +3865,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="ace_fastroping_equipFRIES";
-					expression="[_this] call ace_fastroping_fnc_equipFRIES";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item54
@@ -4497,7 +4478,7 @@ class Mission
 		class Item61
 		{
 			dataType="Marker";
-			position[]={4697.9683,1.3877217e+018,10340.827};
+			position[]={4687.9004,1.3877217e+018,10350.311};
 			name="veh11";
 			type="Empty";
 			angle=239.804;
@@ -4507,7 +4488,7 @@ class Mission
 		class Item62
 		{
 			dataType="Marker";
-			position[]={4695.4854,1.3877217e+018,10344.811};
+			position[]={4683.8325,1.3877217e+018,10358.701};
 			name="veh12";
 			type="Empty";
 			angle=239.804;
@@ -4517,7 +4498,7 @@ class Mission
 		class Item63
 		{
 			dataType="Marker";
-			position[]={4692.7661,4.7919581e+020,10349.651};
+			position[]={4679.8887,4.7919581e+020,10365.549};
 			name="veh13";
 			type="Empty";
 			angle=239.804;
@@ -4527,12 +4508,11 @@ class Mission
 		class Item64
 		{
 			dataType="Marker";
-			position[]={4689.2031,-5.6042327e-027,10355.142};
+			position[]={4674.877,339,10372.819};
 			name="veh14";
 			type="Empty";
 			angle=239.804;
 			id=354;
-			atlOffset=-339;
 		};
 		class Item65
 		{
