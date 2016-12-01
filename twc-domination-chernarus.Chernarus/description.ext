@@ -4,7 +4,7 @@ disableChannels[]={1,2,3,4,5,6};
 
 
 onLoadName = "Domination";
-onLoadMission = "http://www.thewreckingcrew.co.uk/";
+onLoadMission = "http://www.thewreckingcrew.eu/";
 author = "Jayman[TWC]";
 loadScreen = "server\pics\loading.jpg";
 
@@ -50,7 +50,7 @@ class CfgDebriefing
 	{
 		title = "Not a member";
 		subtitle = "You must be a [TWC] member for this slot";
-		description = "Apply at http://www.thewreckingcrew.co.uk/";
+		description = "Apply at http://www.thewreckingcrew.eu/";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};

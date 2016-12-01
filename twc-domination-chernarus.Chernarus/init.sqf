@@ -32,6 +32,7 @@ aoDistanceFromSpawn = 4000;
 //adds all units to zeus. (adminLogged):
 execVM "client\zeus\zeus.sqf";
 execVM "client\zeus\zeus-jayman.sqf";
+execVM "client\zeus\zeus-Adam.sqf";
 //check for enemies in the base:
 if(hasInterface)then{
 	Russiancheck = 0;
@@ -75,7 +76,7 @@ if ((str player) in _specialSlots)then{
 			case "armour2": {20};
 			case "armour3": {20};
 			case "jet1": {30};
-			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
+			default {hint "Please send a message to [TWC] Adam|aremeczk saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
 		_justPlayers = count(allPlayers - entities "HeadlessClient_F");
 		
