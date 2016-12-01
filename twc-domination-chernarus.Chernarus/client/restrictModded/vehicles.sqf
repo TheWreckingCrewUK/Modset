@@ -26,7 +26,7 @@ if(str player in _specialCases)then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
 				if((_this select 2) isKindOf "Air")then{
-					if(typeOf (_this select 2) == "RHS_UH60M_D" || typeOf (_this select 2) == "CUP_B_MV22_USMC_RAMPGUN")then{
+					if(typeOf (_this select 2) == "CUP_B_UH60M_US" || typeOf (_this select 2) == "CUP_B_MV22_USMC_RAMPGUN")then{
 			
 					}else{
 						hint "You are a US pilot. You may only fly US helicopters";
