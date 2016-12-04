@@ -4,7 +4,7 @@ disableChannels[]={0,1,2,3,4,6};
 
 
 onLoadName = "Insurgency Plus 3";
-onLoadMission = "http://www.thewreckingcrew.co.uk/";
+onLoadMission = "http://www.thewreckingcrew.eu/";
 author = "WiredTiger[TWC] / Jayman[TWC] / Paddock[TWC]";
 loadScreen = "pics\loading.jpg";
 

@@ -18,7 +18,7 @@ if(isNil "InsP_civTrust") then{
 #include "sys_ied\init.sqf";
 #include "sys_vehicles\init.sqf";
 
-//#include "sys_smallTown\init.sqf";
+#include "sys_smallTown\init.sqf";
 #include "sys_townLocations\init.sqf";
 #include "sys_cache\init.sqf";
-//#include "sys_sideMissions\init.sqf";
+#include "sys_sideMissions\init.sqf";

@@ -92,7 +92,7 @@ if ((str player) in _specialSlots)then{
 			case "humanCiv3": {20};
 			case "mert_sl";
 			case "mert_med": {15};
-			default {hint "Please send a message to [TWC] Jayman saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
+			default {hint "Please send a message to [TWC] Adam saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
 		_justPlayers = count(allPlayers - entities "HeadlessClient_F");
 		

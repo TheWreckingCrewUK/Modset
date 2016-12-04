@@ -4,3 +4,4 @@
 
 execVM "client\zeus\zeus.sqf";
 execVM "client\zeus\zeus-jayman.sqf";
+execVM "client\zeus\zeus-Adam.sqf";
