@@ -52,16 +52,6 @@ class CfgPatches
 			"ColdWar_AA_Assistant",
 			"ColdWar_MilanGunner",
 			"ColdWar_MilanAssistant",
-			"WW2_British_Platoon_Commander",
-			"WW2_British_Platoon_Sergeant",
-			"WW2_British_Medic",
-			"WW2_British_Squadleader",
-			"WW2_British_Rifleman",
-			"WW2_British_2IC",
-			"WW2_British_MG",
-			"WW2_British_MGASS",
-			"WW2_British_Vehicle_Commander",
-			"WW2_British_Vehicle_Crewman",
 			"GulfWar_Iraqi_Squadleader",
 			"GulfWar_Iraqi_Rifleman",
 			"GulfWar_Iraqi_RPG",
@@ -122,10 +112,6 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (1990 Early Woodland)";
 	};
-	class Men_WW2
-	{
-		displayName = "Men (WW2)";
-	};
 	class Men_USSR
 	{
 		displayName = "Men (USSR)";
@@ -168,14 +154,6 @@ class CfgFactionClasses
 		icon="TWClogo.paa";
 		priority=2;
 		side=1;
-	};
-	class twc_faction_independent
-	{
-		displayName="TWC Operation Units";
-		author="FakeMatty";
-		icon="TWClogo.paa";
-		priority=2;
-		side=2;
 	};
 	class Iraqi_units
 	{
@@ -266,7 +244,6 @@ class CfgVehicles
 	#include "mechanized.hpp"
 	#include "modern.hpp"
 	#include "coldwar.hpp"
-	#include "ww2.hpp"
 	
 	#include "russianfederation.hpp"
 	#include "ussr.hpp"
