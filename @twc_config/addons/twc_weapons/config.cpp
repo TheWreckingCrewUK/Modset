@@ -337,6 +337,7 @@ class CfgVehicles
 	class UK3CB_BAF_B_Bergen_MTP_Medic_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_SL_L_A;
+	class UK3CB_BAF_B_Bergen_MTP_JTAC_L_A;
 	
 	class CUP_B_AlicePack_Khaki;
 	class CUP_BAF_VehicleBox;
@@ -515,6 +516,7 @@ class CfgVehicles
 	class TWC_Backpack_Modern_Sectionlead:UK3CB_BAF_B_Bergen_MTP_SL_L_A
 	{
 		scope = 1;
+		mass = 59.84;
 		class TransportMagazines
 		{
 			class _xx_Smoke
@@ -543,6 +545,7 @@ class CfgVehicles
 	{
 		scope = 1;
 		maximumLoad = 500;
+		mass = 59.84;
 		class TransportMagazines
 		{
 			class _xx_Smoke
@@ -571,6 +574,7 @@ class CfgVehicles
 	{
 		scope = 1;
 		maximumLoad = 500;
+		mass = 59.84;
 		class TransportItems
 		{
 			class _xx_Wire_Cutters
@@ -750,6 +754,44 @@ class CfgVehicles
 			{
 				name = "ACE_SpottingScope";
 				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_Modern_FAC:UK3CB_BAF_B_Bergen_MTP_JTAC_L_A
+	{
+		scope = 1;
+		mass = 59.84;
+		class TransportMagazines
+		{
+			class _xx_HE
+			{
+				magazine = "UK3CB_BAF_1Rnd_HE_Grenade_Shell";
+				count = 3;
+			};
+			class _xx_SmokeShell
+			{
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 3;
+			};
+			class _xx_SmokeShell_Red
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 3;
+			};
+			class _xx_SmokeShell_Green
+			{
+				magazine = "1Rnd_SmokeGreen_Grenade_shell";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 3;
+			};
+			class _xx_SmokeShellPurple
+			{
+				magazine = "1Rnd_SmokePurple_Grenade_shell";
+				count = 3;
 			};
 		};
 	};

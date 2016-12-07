@@ -19,8 +19,7 @@
 		"ItemcTab",
 		"ItemCompass",
 		"ACRE_PRC343",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -30,8 +29,7 @@
 		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		weapons[]=
 		{
@@ -116,7 +114,6 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACRE_PRC343",
@@ -153,7 +150,6 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACRE_PRC343",
@@ -179,8 +175,7 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
 		{
@@ -189,7 +184,6 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACRE_PRC343"
 		};
 		weapons[]=
@@ -327,8 +321,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
 		{
@@ -337,8 +330,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		weapons[]=
 		{
@@ -481,7 +473,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
@@ -491,8 +482,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		weapons[]=
 		{
@@ -617,8 +607,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
 		{
@@ -627,8 +616,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		weapons[]=
 		{
@@ -770,7 +758,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
@@ -780,7 +767,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACRE_PRC343"
 		};
 		weapons[]=
@@ -904,7 +890,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
@@ -914,8 +899,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		weapons[]=
 		{
@@ -1058,8 +1042,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1069,8 +1052,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		weapons[]=
 		{
@@ -1145,7 +1127,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACE_EarPlugs",
@@ -1183,7 +1164,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACE_EarPlugs",
@@ -1210,8 +1190,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1221,8 +1200,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		weapons[]=
 		{
@@ -1361,7 +1339,6 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
@@ -1371,8 +1348,7 @@ class Modern_British_Coin_Grenadier: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		weapons[]=
 		{

@@ -17,8 +17,7 @@
 		"ItemMap",
 		"ItemcTab",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -27,8 +26,7 @@
 		"ItemMap",
 		"ItemcTab",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -113,7 +111,6 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACRE_PRC343",
@@ -150,7 +147,6 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACRE_PRC343",
@@ -176,8 +172,7 @@
 		"UK3CB_BAF_H_Mk7_Scrim_B",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -185,8 +180,7 @@
 		"UK3CB_BAF_H_Mk7_Scrim_B",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -320,8 +314,7 @@
 		"UK3CB_BAF_H_Mk7_Scrim_A",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -329,8 +322,7 @@
 		"UK3CB_BAF_H_Mk7_Scrim_A",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -467,7 +459,6 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
@@ -476,8 +467,7 @@
 		"UK3CB_BAF_H_Mk7_Scrim_C",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -598,8 +588,7 @@
 		"UK3CB_BAF_H_Mk7_Scrim_ESS_B",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -607,8 +596,7 @@
 		"UK3CB_BAF_H_Mk7_Scrim_ESS_B",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -744,8 +732,7 @@
 		"UK3CB_BAF_H_Mk7_Scrim_D",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -753,8 +740,7 @@
 		"UK3CB_BAF_H_Mk7_Scrim_D",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -876,8 +862,7 @@
 		"UK3CB_BAF_H_Mk7_Scrim_E",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -885,8 +870,7 @@
 		"UK3CB_BAF_H_Mk7_Scrim_E",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -1022,8 +1006,7 @@
 		"ItemMap",
 		"ItemcTab",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1031,8 +1014,7 @@
 		"ItemMap",
 		"ItemcTab",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -1171,8 +1153,7 @@
 		"ItemMap",
 		"ItemcTab",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1180,8 +1161,7 @@
 		"ItemMap",
 		"ItemcTab",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -1256,7 +1236,6 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACE_EarPlugs",
@@ -1293,7 +1272,6 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACE_EarPlugs",
@@ -1319,7 +1297,6 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
@@ -1329,8 +1306,7 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		weapons[]=
 		{
@@ -1659,8 +1635,7 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1669,7 +1644,6 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACRE_PRC343"
 		};
 		weapons[]=
@@ -1774,8 +1748,7 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1784,7 +1757,6 @@
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACRE_PRC343"
 		};
 		weapons[]=
@@ -1890,7 +1862,6 @@
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACE_microDAGR_Item"
 		};
 		respawnLinkedItems[]=
@@ -1901,7 +1872,6 @@
 		"ItemCompass",
 		"ItemWatch",
 		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black",
 		"ACE_microDAGR_Item"
 		};
 		weapons[]=
@@ -1942,7 +1912,6 @@
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACE_EarPlugs",
@@ -1959,7 +1928,6 @@
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ItemcTab",
@@ -1986,8 +1954,7 @@
 		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1997,8 +1964,7 @@
 		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		weapons[]=
 		{
@@ -2079,7 +2045,6 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACE_EarPlugs",
@@ -2118,7 +2083,6 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACE_EarPlugs",
@@ -2147,8 +2111,7 @@
 		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		respawnLinkedItems[]=
 		{
@@ -2158,8 +2121,7 @@
 		"ItemcTab",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ACRE_PRC343"
 		};
 		weapons[]=
 		{
@@ -2242,7 +2204,6 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACE_EarPlugs",
@@ -2280,11 +2241,177 @@
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACE_EarPlugs",
 		"ACE_Kestrel4500",
 		"ACE_RangeCard"
+		};
+	};
+	class Modern_British_FAC: B_Soldier_base_F
+	{
+		_generalMacro="Modern_British_FAC";
+		scope=2;
+		displayName="Section FAC(Modern)";
+		faction="twc_faction";
+		editorSubcategory = "Men_Modern";
+		vehicleClass="Men_Modern";
+		icon="iconManLeader";
+		nakedUniform="U_BasicBody";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
+		backpack="TWC_Backpack_Modern_FAC";
+		linkedItems[]=
+		{
+        "UK3CB_BAF_V_Osprey_Grenadier_A",
+		"UK3CB_BAF_H_Mk7_Net_ESS_A",
+		"ItemMap",
+		"ItemcTab",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+        "UK3CB_BAF_V_Osprey_Grenadier_A",
+		"UK3CB_BAF_H_Mk7_Net_ESS_A",
+		"ItemMap",
+		"ItemcTab",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"UK3CB_BAF_Soflam_Laserdesignator",
+		"UK3CB_BAF_L85A2_UGL_ELCAN3D"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"UK3CB_BAF_Soflam_Laserdesignator",
+		"UK3CB_BAF_L85A2_UGL_ELCAN3D"
+		};
+		magazines[]=
+		{
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShellBlue",
+		"SmokeShellBlue",
+		"SmokeShellBlue",
+		"SmokeShellGreen",
+		"SmokeShellGreen",
+		"SmokeShellGreen",
+		"SmokeShellRed",
+		"SmokeShellRed",
+		"SmokeShellRed",
+		"SmokeShellPurple",
+		"SmokeShellPurple",
+		"SmokeShellPurple",
+		"B_IR_Grenade"
+		};
+		Respawnmagazines[]=
+		{
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShell",
+		"SmokeShellBlue",
+		"SmokeShellBlue",
+		"SmokeShellBlue",
+		"SmokeShellGreen",
+		"SmokeShellGreen",
+		"SmokeShellGreen",
+		"SmokeShellRed",
+		"SmokeShellRed",
+		"SmokeShellRed",
+		"SmokeShellPurple",
+		"SmokeShellPurple",
+		"SmokeShellPurple",
+		"B_IR_Grenade"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_Flashlight_KSF1",
+	    "ACE_MapTools",
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343",
+		"ACE_EarPlugs",
+		"Laserbatteries"
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_Flashlight_KSF1",
+	    "ACE_MapTools",
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343",
+		"ACE_EarPlugs",
+		"Laserbatteries"		
 		};
 	};
