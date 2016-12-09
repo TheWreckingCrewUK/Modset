@@ -80,14 +80,24 @@ class CfgPatches
 			"Afr_Mil_Teamleader",
 			"Afr_Mil_Squadleader",
 			"Afr_Mil_Officer",
-			"Afr_Mil_Crewman"
+			"Afr_Mil_Crewman",
+			"IRA_Squadleader",
+			"IRA_Rifleman_M16",
+			"IRA_Rifleman_AKM",
+			"IRA_Rifleman_FAL",
+			"IRA_Rifleman_AT",
+			"IRA_Autorifleman"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
 			"A3_Characters_F_BLUFOR",
-			"A3_Characters_F_OPFOR"
+			"A3_Characters_F_OPFOR",
+			"A3_Characters_F_Common",
+			"A3_Characters_F",
+			"a3_characters_f_beta",
+			"a3_characters_f_gamma"
 		};
 	};
 };
@@ -133,6 +143,10 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (African Militia)";
 	};
+	class Men_IRA
+	{
+		displayName = "Men (IRA)";
+	};
 	class TWC_tak_Civ_Men
 	{
 		displayName = "Men (Takistan Militia)";
@@ -168,6 +182,14 @@ class CfgFactionClasses
 	{
 		displayName="Argentinian Units";
 		author="Rik";
+		icon="TWClogo.paa";
+		priority=2;
+		side=2;
+	};
+	class ira_units
+	{
+		displayName="IRA Units";
+		author="Jayman";
 		icon="TWClogo.paa";
 		priority=2;
 		side=2;
@@ -234,7 +256,7 @@ class CfgVehicles
 			};
 		};
 	};
-	
+
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
@@ -251,6 +273,7 @@ class CfgVehicles
 	#include "iraq.hpp"
 	#include "argentina.hpp"
 	#include "african.hpp"
+	#include "irish.hpp"
 	
 	#include "takistan.hpp"
 };

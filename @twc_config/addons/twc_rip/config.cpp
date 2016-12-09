@@ -42,7 +42,7 @@ class CfgPatches
 		weapons[]=
 		{
 			"MNP_CombatUniform_DPMR",
-			"MNP_CombatUniform_DDPMR"
+			"MNP_CombatUniform_DDPMR",
 		};
 		requiredVersion=0.1;
 		requiredAddons[]=
@@ -51,30 +51,6 @@ class CfgPatches
 			"A3_Characters_F_OPFOR",
 			"A3_Characters_F_Common",
 			"A3_Characters_F"
-		};
-	};
-	
-	class twc_rip
-	{
-		units[]=
-		{
-			"SUD_NATO_Soldier"
-		};
-		weapons[]=
-		{
-			"V_sud_nato_vest01",
-			"V_sud_nato_vest02",
-			"V_sud_nato_vest03",
-			"V_sud_nato_vest04",
-			"V_sud_nato_vest05"
-		};
-		requiredVersion=1;
-		requiredAddons[]=
-		{
-			"A3_Weapons_F",
-			"A3_Characters_F_BLUFOR",
-			"A3_Characters_F_INDEP",
-			"A3_Weapons_F_beta"
 		};
 	};
 };
@@ -274,78 +250,6 @@ class CfgVehicles
 	
 class cfgWeapons
 {
-	class ItemCore;
-	class InventoryItem_Base_F;
-	class HeadgearItem;
-
-
-
-	
-
-
-    class SP_MkBushHelmet_Forrest: ItemCore
-	{
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Mk Bush Helmet (Forrest)";
-		picture = "\twc_rip\Hats\mkbushhelmet\Forrest.jpg";
-		model = "\twc_rip\Models\MkBushHelmet";
-                hiddenSelectionsTextures[] = {"\twc_rip\Hats\Mk7Helmet\Green.paa","\twc_rip\Hats\PASGTHelmet\Black.paa","\twc_rip\Hats\mkbushhelmet\Forrest.paa"};
-                hiddenSelections[] = {"Camo","Camo1","Camo2"};
-                author = "SP Craig";
-                
-                  
-
-		class ItemInfo: HeadgearItem
-		{
-			mass = 60;
-			uniformmodel = "\twc_rip\Models\MkBushHelmet";
-			modelSides[] = {3,1};
-			armor = 10;
-			passThrough = 0.30;
-                        hiddenSelectionsTextures[] = {"\twc_rip\Hats\Mk7Helmet\Green.paa","\twc_rip\Hats\PASGTHelmet\Black.paa","\twc_rip\Hats\mkbushhelmet\Forrest.paa"};
-                        hiddenSelections[] = {"Camo","Camo1","Camo2"};
-
-
-
-		};
-	};
-
-
-
-        class SP_MkBushHelmet_Tropical: ItemCore
-	{
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Mk Bush Helmet (Tropical)";
-		picture = "\twc_rip\Hats\mkbushhelmet\Tropical.jpg";
-		model = "\twc_rip\Models\MkBushHelmet";
-                hiddenSelectionsTextures[] = {"\twc_rip\Hats\Mk7Helmet\Tan.paa","\twc_rip\Hats\PASGTHelmet\Black.paa","\twc_rip\Hats\mkbushhelmet\Tropical.paa"};
-                hiddenSelections[] = {"Camo","Camo1","Camo2"};
-                author = "SP Craig";
-                
-                  
-
-		class ItemInfo: HeadgearItem
-		{
-			mass = 60;
-			uniformmodel = "\twc_rip\Models\MkBushHelmet";
-			modelSides[] = {3,1};
-			armor = 10;
-			passThrough = 0.30;
-                        hiddenSelectionsTextures[] = {"\twc_rip\Hats\Mk7Helmet\Tan.paa","\twc_rip\Hats\PASGTHelmet\Black.paa","\twc_rip\Hats\mkbushhelmet\Tropical.paa"};
-                        hiddenSelections[] = {"Camo","Camo1","Camo2"};
-
-
-
-
-
-
-
-
-		};
-	};
-	
 	class Uniform_Base;
 	class UniformItem;
 	class U_I_OfficerUniform;
@@ -407,84 +311,6 @@ class cfgWeapons
 			{
 				"Camo"
 			};
-		};
-	};
-	class Vest_Camo_Base;
-	class itemInfo;
-
-	class V_sud_nato_vest01: Vest_Camo_Base
-	{
-		scope=2;
-		displayName="NATO Vest";
-		picture="\twc_rip\data\pic\nato_vest01";
-		model="twc_rip\sud_nato_vest01.p3d";
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="twc_rip\sud_nato_vest01.p3d";
-			containerClass="Supply80";
-			mass=50;
-			armor="5*0.5";
-			passThrough=0.69999999;
-		};
-	};
-	class V_sud_nato_vest02: Vest_Camo_Base
-	{
-		scope=2;
-		displayName="NATO MG Vest";
-		picture="\twc_rip\data\pic\nato_vest02";
-		model="twc_rip\sud_nato_vest02.p3d";
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="twc_rip\sud_nato_vest02.p3d";
-			containerClass="Supply80";
-			mass=50;
-			armor="5*0.5";
-			passThrough=0.69999999;
-		};
-	};
-	class V_sud_nato_vest03: Vest_Camo_Base
-	{
-		scope=2;
-		displayName="NATO Vest";
-		picture="\twc_rip\data\pic\nato_vest01";
-		model="twc_rip\sud_nato_vest03.p3d";
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="twc_rip\sud_nato_vest03.p3d";
-			containerClass="Supply80";
-			mass=50;
-			armor="5*0.5";
-			passThrough=0.69999999;
-		};
-	};
-	class V_sud_nato_vest04: Vest_Camo_Base
-	{
-		scope=2;
-		displayName="NATO Vest";
-		picture="\twc_rip\data\pic\nato_vest01";
-		model="twc_rip\sud_nato_vest04.p3d";
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="twc_rip\sud_nato_vest04.p3d";
-			containerClass="Supply80";
-			mass=50;
-			armor="5*0.5";
-			passThrough=0.69999999;
-		};
-	};
-	class V_sud_nato_vest05: Vest_Camo_Base
-	{
-		scope=2;
-		displayName="NATO Vest";
-		picture="\twc_rip\data\pic\nato_vest01";
-		model="twc_rip\sud_nato_vest05.p3d";
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="twc_rip\sud_nato_vest05.p3d";
-			containerClass="Supply80";
-			mass=50;
-			armor="5*0.5";
-			passThrough=0.69999999;
 		};
 	};
 };

@@ -1190,6 +1190,58 @@ class CfgGroups
                                         };
 								};
 						};
+						class IRA
+                        {
+                                name = "IRA Units"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+                                class Argentinian_Cold_War_Infantry
+                                {
+                                        name = "Section"; //Name of Group
+                                        faction = "argentinian_units"; //Faction
+                                        side = 2; //Side
+                                        class Unit0
+                                        {
+                                                side = 2;
+                                                vehicle = "IRA_Squadleader"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+										class Unit1
+                                        {
+                                                side = 2;
+                                                vehicle = "IRA_Rifleman_M16"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {3,0,0}; //Position in the formation
+                                        };
+										class Unit2
+                                        {
+                                                side = 2;
+                                                vehicle = "IRA_Rifleman_AKM"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {6,0,0}; //Position in the formation
+                                        };
+										class Unit3
+                                        {
+                                                side = 2;
+                                                vehicle = "IRA_Rifleman_FAL"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {9,0,0}; //Position in the formation
+                                        };
+										class Unit4
+                                        {
+                                                side = 2;
+                                                vehicle = "IRA_Rifleman_AT"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {12,0,0}; //Position in the formation
+                                        };
+										class Unit5
+                                        {
+                                                side = 2;
+                                                vehicle = "IRA_Autorifleman"; //Class name of desired solider
+                                                rank = "Private"; // Rank
+                                                position[] = {15,0,0}; //Position in the formation
+                                        };
+								};
+						};
 				};
 				
 		};

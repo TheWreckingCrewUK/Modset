@@ -62,8 +62,8 @@ class cfgWeapons
 		displayName = "Mk Bush Helmet (Forrest)";
 		picture = "\twc_rip\Hats\MkBushHelmet\Forrest.jpg";
 		model = "\twc_rip\Models\MkBushHelmet";
-                hiddenSelectionsTextures[] = {"\twc_rip\Hats\Mk7Helmet\Green.paa","\twc_rip\Hats\PASGTHelmet\Black.paa","\twc_rip\Hats\MkBushHelmet\Forrest.paa"};
-                hiddenSelections[] = {"Camo","Camo1","Camo2"};
+                hiddenSelectionsTextures[] = {"\twc_rip\Hats\MkBushHelmet\Forrest.paa"};
+                hiddenSelections[] = {"Camo"};
                 author = "SP Craig";
                 
                   
@@ -75,8 +75,8 @@ class cfgWeapons
 			modelSides[] = {3,1};
 			armor = 10;
 			passThrough = 0.30;
-                        hiddenSelectionsTextures[] = {"\twc_rip\Hats\Mk7Helmet\Green.paa","\twc_rip\Hats\PASGTHelmet\Black.paa","\twc_rip\Hats\MkBushHelmet\Forrest.paa"};
-                        hiddenSelections[] = {"Camo","Camo1","Camo2"};
+                        hiddenSelectionsTextures[] = {"\twc_rip\Hats\MkBushHelmet\Forrest.paa"};
+                        hiddenSelections[] = {"Camo"};
 
 
 
@@ -92,8 +92,8 @@ class cfgWeapons
 		displayName = "Mk Bush Helmet (Tropical)";
 		picture = "\twc_rip\Hats\MkBushHelmet\Tropical.jpg";
 		model = "\twc_rip\Models\MkBushHelmet";
-                hiddenSelectionsTextures[] = {"\twc_rip\Hats\Mk7Helmet\Tan.paa","\twc_rip\Hats\PASGTHelmet\Black.paa","\twc_rip\Hats\MkBushHelmet\Tropical.paa"};
-                hiddenSelections[] = {"Camo","Camo1","Camo2"};
+                hiddenSelectionsTextures[] = {"\twc_rip\Hats\MkBushHelmet\Tropical.paa"};
+                hiddenSelections[] = {"Camo"};
                 author = "SP Craig";
                 
                   
@@ -105,8 +105,8 @@ class cfgWeapons
 			modelSides[] = {3,1};
 			armor = 10;
 			passThrough = 0.30;
-                        hiddenSelectionsTextures[] = {"\twc_rip\Hats\Mk7Helmet\Tan.paa","\twc_rip\Hats\PASGTHelmet\Black.paa","\twc_rip\Hats\MkBushHelmet\Tropical.paa"};
-                        hiddenSelections[] = {"Camo","Camo1","Camo2"};
+                        hiddenSelectionsTextures[] = {"\twc_rip\Hats\MkBushHelmet\Tropical.paa"};
+                        hiddenSelections[] = {"Camo"};
 
 
 
