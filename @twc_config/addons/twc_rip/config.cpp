@@ -42,7 +42,7 @@ class CfgPatches
 		weapons[]=
 		{
 			"MNP_CombatUniform_DPMR",
-			"MNP_CombatUniform_DDPMR",
+			"MNP_CombatUniform_DDPMR"
 		};
 		requiredVersion=0.1;
 		requiredAddons[]=
