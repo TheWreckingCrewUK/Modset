@@ -6,7 +6,7 @@ class CfgPatches
 		units[]={};
 		weapons[]={"TWC_Sterling_Sub"};
 		requiredVersion=0.1;
-		requiredAddons[]={"cup_baseconfigs"};
+		requiredAddons[]={};
 	};
 };
 /// All firemodes, to be sure
@@ -37,7 +37,7 @@ class CfgWeapons
 
 	class TWC_sterling_base: Rifle_Base_F /// Just basic values common for all testing rifle variants
 	{
-		magazines[] = {34_rnd_sterling_mag}; /// original custom made magazines and a group of several standardized mags
+		magazines[] = {34_rnd_sterling_mag,32_rnd_sten_mag}; /// original custom made magazines and a group of several standardized mags
 		reloadAction = "GestureReloadMX"; /// MX hand animation actually fits this rifle well
 		magazineReloadSwitchPhase = 0.4; /// part of reload animation when new magazine ammo count should affect "revolving" animation source
 		discreteDistanceInitIndex = 0; /// Ironsight zeroing is the lowest value by default
@@ -246,12 +246,12 @@ class CfgWeapons
 		UiPicture = "\sterling\Data\w_sterling_ca.paa"; /// weapon with grenade launcher should be marked such way
 
 		weaponInfoType = "RscWeaponZeroing"; /// display with zeroing is good for iron sights
-
+		maxZeroing = 200;
 		muzzles[] = {this}; /// to be able to switch between bullet muzzle and TGL
 
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass = 59.4; /// some rough estimate
+			mass = 100; /// some rough estimate
 		};
 	};
 };

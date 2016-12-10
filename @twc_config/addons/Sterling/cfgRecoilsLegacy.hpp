@@ -2,7 +2,7 @@
 	Previous recoil configuration
 ---------------------------------------------------------------------------*/
 	
-recoil_single_Test_rifle_01[]=
+recoil_single_Sterling[]=
 {
 	0,0,0,
 	0.03, 36.943*(Xcoef)*(0.3), 3.587*(Ycoef)*(3),
@@ -15,7 +15,7 @@ recoil_single_Test_rifle_01[]=
 	0.06, -3.138*(Xcoef)*(0.3), -0.125*(Ycoef)*(1),
 	0.06, 0, 0
 };
-recoil_single_prone_Test_rifle_01[]=
+recoil_single_prone_Sterling[]=
 {
 	0,0,0,
 	0.03, 36.943*(Xcoef)*(0.3), 3.587*(Ycoef)*(0.7), 
@@ -28,7 +28,7 @@ recoil_single_prone_Test_rifle_01[]=
 	0.06, -3.138*(Xcoef)*(0.3), -0.125*(Ycoef)*(0.3), 
 	0.06, 0, 0
 };
-recoil_auto_Test_rifle_01[]=
+recoil_auto_Sterling[]=
 {
 	0,0,0,
 	0.06, 36.943*(Xcoef)*(1.2), 3.587*(Ycoef)*(1.7),
@@ -40,7 +40,7 @@ recoil_auto_Test_rifle_01[]=
 	0.03, -3.677*(Xcoef)*(0.5), -0.147*(Ycoef)*(3),
 	0.06, 0, 0
 };
-recoil_auto_prone_Test_rifle_01[]=
+recoil_auto_prone_Sterling[]=
 {
 	0,0,0,
 	0.06, 36.943*(Xcoef)*(1.2), 3.587*(Ycoef)*(0.3),
