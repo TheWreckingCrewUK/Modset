@@ -14,3 +14,5 @@ if((typeOf player) in _remove)then{
 	player unassignItem "itemMap"; 
 	player removeItem "itemMap"; 
 };
+
+west setFriend [Independent, 0];
