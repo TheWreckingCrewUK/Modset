@@ -3147,7 +3147,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 	};
     class 1990_British_Squadron_Leader_Desert: B_Soldier_base_F
 	{
-		_generalMacro="1990_Desert_British_Squadleader";
+		_generalMacro="1990_Desert_British_Squadron_Leader";
 		scope=2;
 		displayName="Squadron Leader(90`s Desert)";
 		faction="twc_faction";
@@ -3275,7 +3275,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 	};
     class 1990_British_Squadron_2IC_Desert: B_Soldier_base_F
 	{
-		_generalMacro="1990_Desert_British_Squadleader";
+		_generalMacro="1990_Desert_British_Squadron_2IC";
 		scope=2;
 		displayName="Squadron Leader(90`s Desert)";
 		faction="twc_faction";
@@ -3403,7 +3403,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 	};
     class 1990_British_Tank_Troop_Commander_Desert: B_Soldier_base_F
 	{
-		_generalMacro="1990_Desert_British_Squadleader";
+		_generalMacro="1990_Desert_British_Tank_Troop_Commander";
 		scope=2;
 		displayName="Squadron Leader(90`s Desert)";
 		faction="twc_faction";
@@ -3531,7 +3531,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 	};
     class 1990_British_Tank_Commander_Desert: B_Soldier_base_F
 	{
-		_generalMacro="1990_Desert_British_Rifleman";
+		_generalMacro="1990_Desert_British_Tank Commander";
 		scope=2;
 		displayName="RifleMan(90`s Desert)";
 		faction="twc_faction";
@@ -3641,7 +3641,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 	};	
     class 1990_British_Tank_Crew_Desert: B_Soldier_base_F
 	{
-		_generalMacro="1990_Desert_British_Rifleman";
+		_generalMacro="1990_Desert_Tank_Crew";
 		scope=2;
 		displayName="RifleMan(90`s Desert)";
 		faction="twc_faction";
