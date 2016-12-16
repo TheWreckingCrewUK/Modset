@@ -117,7 +117,7 @@ class CfgPatches
 			"1990_HeloPilot",
 			"1990_British_MilanGunner",
 			"1990_British_MilanAssistant",
-			"1990_British_MortarGunner",
+			"1990_British_MortarGunner"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
