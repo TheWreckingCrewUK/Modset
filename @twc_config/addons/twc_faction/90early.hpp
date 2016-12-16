@@ -3671,13 +3671,13 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",	
-		"TWC_Sterling_Sub",
+		"TWC_Sterling_Sub"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"TWC_Sterling_Sub",
+		"TWC_Sterling_Sub"
 		};
 		magazines[]=
 		{
