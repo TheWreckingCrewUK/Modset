@@ -140,6 +140,103 @@ class cfgWeapons
 			maxRangeProbab = 0.01;
 		};
 	};
+	class L23A1: CannonCore
+	{
+		scope = 2;
+		displayname = "L32A1";
+		author = "Anschluss";
+		nameSound = "cannon";
+		sound[] = {"",1,1};
+		reloadSound[] = {"CUP\Weapons\CUP_Weapons_VehicleWeapons\M256\data\sound\Reload",3.16228,1,10};
+		class GunParticles
+		{
+			class FirstEffect
+			{
+				effectName = "CannonFired";
+				positionName = "Usti hlavne";
+				directionName = "Konec hlavne";
+			};
+		};
+		autoReload = 1;
+		minRange = 5;
+		minRangeProbab = 0.7;
+		midRange = 1200;
+		midRangeProbab = 0.7;
+		maxRange = 2500;
+		maxRangeProbab = 0.1;
+		reloadTime = 6;
+		magazineReloadTime = 6;
+		magazines[] = {L23A1_20_rnd_HESH,L23A1_20_rnd_HE};
+		modes[] = {"player", "close", "short", "medium", "far"};
+		class player: Mode_FullAuto
+		{
+			magazineReloadTime = 6;
+			reloadTime=6;
+			autoReload = 1;
+			autoFire = 0;
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_01",1.9952624,1,1500};
+				begin2[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_02",1.9952624,1,1500};
+				begin3[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_03",1.9952624,1,1500};
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+			};
+		};
+		class close: player
+		{
+			showToPlayer = 0;
+			burst = 15;
+			aiRateOfFire = 6;
+			aiRateOfFireDistance = 50;
+			minRange = 0;
+			minRangeProbab = 0.05;
+			midRange = 500;
+			midRangeProbab = 0.58;
+			maxRange = 1000;
+			maxRangeProbab = 0.04;
+			aiDispersionCoefX = 6;
+			aiDispersionCoefY = 6;
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+		};
+		class short: close
+		{
+			showToPlayer = 0;
+			aiRateOfFire = 10;
+			aiRateOfFireDistance = 300;
+			minRange = 500;
+			minRangeProbab = 0.05;
+			midRange = 1000;
+			midRangeProbab = 0.58;
+			maxRange = 1500;
+			maxRangeProbab = 0.04;
+		};
+		class medium: short
+		{
+			showToPlayer = 0;
+			aiRateOfFire = 15;
+			aiRateOfFireDistance = 600;
+			minRange = 1000;
+			minRangeProbab = 0.05;
+			midRange = 1500;
+			midRangeProbab = 0.58;
+			maxRange = 2000;
+			maxRangeProbab = 0.04;
+		};
+		class far: medium
+		{
+			aiRateOfFire = 20;
+			aiRateOfFireDistance = 1000;
+			minRange = 1500;
+			minRangeProbab = 0.05;
+			midRange = 2500;
+			midRangeProbab = 0.4;
+			maxRange = 3000;
+			maxRangeProbab = 0.01;
+		};
+	};
 };
 class CfgMagazines
 {
@@ -169,15 +266,148 @@ class CfgMagazines
 		tracersEvery = 2;
 		lastRoundsTracer = 4;
 	};
+	class L23A1_20_rnd_HE: VehicleMagazine
+	{
+		scope = 2;
+		displayName = "76mm L24A4 HE";
+		displayNameShort = "L24A4 HE";
+		ammo = L24A4_76mm_HE;
+		count = 20;
+		initSpeed = 514;
+		maxLeadSpeed = 100;
+		nameSound = "heat";
+		tracersEvery = 1;
+	};
+	class L23A1_20_rnd_HESH: VehicleMagazine
+	{
+		scope = 2;
+		displayName = "76mm L29A3 HESH";
+		displayNameShort = "L29A3 HESH";
+		ammo = L29A3_76mm_HESH;
+		count = 20;
+		initSpeed = 533;
+		maxLeadSpeed = 100;
+		nameSound = "heat";
+		tracersEvery = 1;
+	};
 };
 class CfgAmmo
 {
 	class Default;
+	class ShellBase;
 	class BulletBase;
 	class B_30mm_APFSDS;
 	class B_30mm_HE;
 	class L21_30mm_HE: B_30mm_HE {};
 	class L21_30mm_APDS: B_30mm_APFSDS {};
+	class L29A3_76mm_HESH: ShellBase
+	{
+		hit = 250;
+		indirectHit = 10;
+		indirectHitRange = 10;
+		dangerRadiusHit = -1;
+		suppressionRadiusHit = 20;
+		typicalSpeed = 300;
+		explosive = 1;
+		cost = 100;
+		airFriction = -0.000155;
+		caliber = 8;
+		timeToLive = 20;
+		whistleOnFire = 1;
+		whistleDist = 14;
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
+		tracerScale = 1;
+		tracerStartTime = 0.1;
+		tracerEndTime = 3.0;
+		muzzleEffect = "";
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_01",1.7782794,1,1800};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_02",1.7782794,1,1800};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_03",1.7782794,1,1800};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_04",1.7782794,1,1800};
+		multiSoundHit[] = {"soundHit1",0.25,"soundHit2",0.25,"soundHit3",0.25,"soundHit4",0.25};
+		class CamShakeExplode
+		{
+			power = "(120*0.2)";
+			duration = "((round (120^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((7 + 120^0.5)*8)";
+		};
+		class CamShakeHit
+		{
+			power = 120;
+			duration = "((round (120^0.25))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeFire
+		{
+			power = "(120^0.25)";
+			duration = "((round (120^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((120^0.5)*8)";
+		};
+		class CamShakePlayerFire
+		{
+			power = 0.02;
+			duration = 0.1;
+			frequency = 20;
+			distance = 1;
+		};
+	};
+	class L24A4_76mm_HE: ShellBase
+	{
+		hit = 150;
+		indirectHit = 40;
+		indirectHitRange = 10;
+		dangerRadiusHit = -1;
+		suppressionRadiusHit = 20;
+		typicalSpeed = 300;
+		explosive = 1;
+		cost = 100;
+		airFriction = -0.000155;
+		caliber = 8;
+		timeToLive = 20;
+		whistleOnFire = 1;
+		whistleDist = 14;
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
+		tracerScale = 1;
+		tracerStartTime = 0.1;
+		tracerEndTime = 3.0;
+		muzzleEffect = "";
+		soundHit1[] = {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_01",1.7782794,1,1800};
+		soundHit2[] = {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_02",1.7782794,1,1800};
+		soundHit3[] = {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_03",1.7782794,1,1800};
+		soundHit4[] = {"A3\Sounds_F\arsenal\explosives\shells\Tank_shell_explosion_04",1.7782794,1,1800};
+		multiSoundHit[] = {"soundHit1",0.25,"soundHit2",0.25,"soundHit3",0.25,"soundHit4",0.25};
+		class CamShakeExplode
+		{
+			power = "(120*0.2)";
+			duration = "((round (120^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((7 + 120^0.5)*8)";
+		};
+		class CamShakeHit
+		{
+			power = 120;
+			duration = "((round (120^0.25))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeFire
+		{
+			power = "(120^0.25)";
+			duration = "((round (120^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((120^0.5)*8)";
+		};
+		class CamShakePlayerFire
+		{
+			power = 0.02;
+			duration = 0.1;
+			frequency = 20;
+			distance = 1;
+		};
+	};
 };
 class CfgVehicles
 {
@@ -224,8 +454,8 @@ class CfgVehicles
 		Icon = "\4d_cvrt\tex\m113\icomap_vulcan_CA.paa";
 		mapSize = 8;
 		nameSound = "tank";
-		driverAction = "Driver_MRAP_03";
-		driverInAction = "Driver_MRAP_03";
+		driverAction = "CUP_M1_DriverOut";
+		driverInAction = "CUP_M1_Driver";
 		driverForceOptics = 1;
 		forceHideDriver = 0;
 		irScanRangeMin = 10;
@@ -282,6 +512,7 @@ class CfgVehicles
 		ArmorCrash2[] = {"A3\sounds_f\Vehicles\crashes\crash_10",0.707946,1,150};
 		ArmorCrash3[] = {"A3\sounds_f\Vehicles\crashes\crash_11",0.707946,1,150};
 		soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
+		attenuationEffectType = "TankAttenuation";
 		slingLoadCargoMemoryPoints[] =
 		{
 			"SlingLoadCargo1",
@@ -306,13 +537,13 @@ class CfgVehicles
 			{"(2764/2500)","(0/770)"}
 		};
 		thrustDelay=0.30000001;
-		clutchStrength=60;
-		fuelCapacity=770;
+		clutchStrength=80;
+		fuelCapacity=450;
 		brakeIdleSpeed=1.78;
 		latency=0.1;
 		turnCoef = 5;
-		tankTurnForce=78000;
-		normalSpeedForwardCoef=0.5;
+		tankTurnForce=100000;
+		normalSpeedForwardCoef=0.7;
 		idleRpm=550;
 		redRpm=2500;
 		engineLosses=25;
@@ -322,13 +553,13 @@ class CfgVehicles
 			GearboxRatios[]=
 			{
 				"R1",
-				-4.8400002,
+				-0.5,
 				"N",
 				0,
 				"D1",
 				3.4300001,
 				"D2",
-				2.01,
+				2.5,
 				"D3",
 				1.42,
 				"D4",
@@ -346,13 +577,11 @@ class CfgVehicles
 			reverseString      = "R"; // string to display in the HUD for reverse gears.
 			transmissionDelay  = 0.1;
 		};
-		gearBoxMode="auto";
-		moveOffGear=1;
-		driveString="D";
-		neutralString="N";
-		reverseString="R";
-		transmissionDelay=0;
 		/// end of gearbox
+		antiRollbarForceCoef=15.0;
+		antiRollbarForceLimit=3.0;
+		antiRollbarSpeedMin=10;
+		antiRollbarSpeedMax=40;
 		class HitPoints : HitPoints
 		{
 			class HitHull {armor=0.85;material=-1;name="telo";visual="zbytek";passThrough=1;};
@@ -371,20 +600,20 @@ class CfgVehicles
 				/// weight of the wheel is defined per wheel, it reduces overall mass of vehicle
 				weight = 100;
 				mass = 100;
-				MOI = 3.55;
-				latStiffX = 25;
-				latStiffY = 280;
-				longitudinalStiffnessPerUnitGravity = 25000;
-				maxBrakeTorque = 3000;
+				MOI = 4.05;
+				latStiffX = 250;
+				latStiffY = 800;
+				longitudinalStiffnessPerUnitGravity = 35000;
+				maxBrakeTorque = 800;
 				sprungMass = 1230.0;
-				springStrength = 61500;
+				springStrength = 81500;
 				springDamperRate = 6958;
 				dampingRate = 1;
 				dampingRateInAir = 662.0;
 				dampingRateDamaged = 10.0;
 				dampingRateDestroyed = 10000.0;
 				maxDroop = 0.15;
-				maxCompression = 0.15;
+				maxCompression = 0.2;
 			};
 			class L3: L2 {
 				boneName = "wheel_podkolol2";
@@ -501,45 +730,46 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				gunBeg = "Usti hlavne";
-				gunEnd = "Konec hlavne";
+				soundAttenuationTurret = "TankAttenuation";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
 				gunnerAction = "gunner_apctracked3_out";
 				gunnerInAction = "gunner_apctracked3_in";
 				weapons[] = {"L21A1_RARDEN","CUP_Vlmg_L94A1_Coax"};
 				magazines[] = {"6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_APDS","6Rnd_30mm_L21A1_HE","6Rnd_30mm_L21A1_HE","6Rnd_30mm_L21A1_HE","6Rnd_30mm_L21A1_HE","6Rnd_30mm_L21A1_HE","6Rnd_30mm_L21A1_HE","6Rnd_30mm_L21A1_HE","6Rnd_30mm_L21A1_HE","6Rnd_30mm_L21A1_HE","6Rnd_30mm_L21A1_HE","6Rnd_30mm_L21A1_HE","6Rnd_30mm_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
 				animationSourceHatch = "hatchGunner";
 				gunnerForceOptics = 1;
-				outGunnerMayFire = "true";
+				outGunnerMayFire = "false";
 				forceHideGunner = "false";
 				turretInfoType = "RscWeaponRangeZeroing";
 				discreteDistance[] = {100,200,300,400,500,600,700,800,1000,1200,1500,1800,2100,2400};
-				discreteDistanceInitIndex = 5;
+				discreteDistanceInitIndex = 5;	
 				memoryPointGunnerOptics = "gunnerview";
 				minElev = -5;
-				maxElev = 20;
-				minTurn = -360;
-				maxTurn = 360;
+				maxElev =+20;
+				initElev=10;
+				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
 				class OpticsIn
 				{
 					class Wide
 					{
 						initAngleX = 0;
 						minAngleX = -30;
-						maxAngleX = 30;
+						maxAngleX =+30;
 						initAngleY = 0;
 						minAngleY = -100;
-						maxAngleY = 100;
-						initFov = 0.2;
-						minFov = 0.2;
-						maxFov = 0.2;
+						maxAngleY =+100;
+						initFov = 0.200;
+						minFov = 0.200;
+						maxFov = 0.200;
 						visionMode[] = {"Normal","NVG","Ti"};
 						thermalMode[] = {2};
-						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
+						gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MTB_02_w_F.p3d";
 						gunnerOpticsEffect[] = {};
 					};
 					class Narrow: Wide
 					{
-						gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
+						gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MTB_02_w_F.p3d";
 						initFov = 0.039;
 						minFov = 0.039;
 						maxFov = 0.039;
@@ -565,7 +795,7 @@ class CfgVehicles
 						weapons[] = {"SmokeLauncher"};
 						magazines[] = {"SmokeLauncherMag","SmokeLauncherMag"};
 						soundServo[] = {"A3\sounds_f\dummysound",0.01,1.0,30};
-						outGunnerMayFire = 0;
+						outGunnerMayFire = 1;
 						inGunnerMayFire = 1;
 						gunnerAction = "passenger_flatground_3";
 						gunnerInAction = "commander_apctracked3_in";
@@ -598,12 +828,12 @@ class CfgVehicles
 			class recoil_source
 			{
 				source="reload";
-				weapon="CUP_Vacannon_CTWS_veh";
+				weapon="L21A1_RARDEN";
 			};
 			class gunBarrel
 			{
 				source = "reload";
-				weapon = "CUP_Vacannon_CTWS_veh";
+				weapon = "L21A1_RARDEN";
 			};
 			class muzzle_hide_coax
 			{
@@ -1213,6 +1443,7 @@ class CfgVehicles
 	class 4d_cvrt_Scim_w: 4d_cvrt_Scim_base
 	{
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Scimitar (Woodland)";
 		model = "\4d_cvrt\4d_cvrt_Scim_w";
 		vehicleClass = "CVRT_T";
@@ -1233,6 +1464,7 @@ class CfgVehicles
 	{
 		displayName = "Scimitar (Woodland) (No Slat)";
 		hiddenSelections[] = {"HCage","TCage"};
+		armor = 300;
 		class AnimationSources: AnimationSources
 		{
 			class HideSlat
@@ -1247,6 +1479,7 @@ class CfgVehicles
 	};
 	class 4d_cvrt_Scim_d: 4d_cvrt_Scim_base
 	{
+		scopeCurator = 2;
 		scope = 2;
 		displayName = "Scimitar (Desert)";
 		model = "\4d_cvrt\4d_cvrt_Scim_d";
@@ -1267,6 +1500,7 @@ class CfgVehicles
 	class 4d_cvrt_Scim_d_L1: 4d_cvrt_Scim_d
 	{
 		displayName = "Scimitar (Desert) (No Slat)";
+		armor = 300;
 		class AnimationSources: AnimationSources
 		{
 			class HideSlat
@@ -1279,17 +1513,57 @@ class CfgVehicles
 			};
 		};	
 	};
-	class 4d_cvrt_Scim_d_EL1: 4d_cvrt_Scim_d
+	class TWC_Scorpion_w: 4d_cvrt_Scim_w
 	{
-		scope = 0;
-		displayName = "Scimitar ECM Kit (L1)";
-		hiddenSelections[] = {"HCamNet","TCamNet","Tbox"};
+		displayName = "Scorpion (Woodland)";
+		model = "\4d_cvrt\TWC_cvrt_scorpion_w";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret 
+			{
+				weapons[] = {"L23A1","CUP_Vlmg_L94A1_Coax"};
+				magazines[] = {"L23A1_20_rnd_HE","L23A1_20_rnd_HESH","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};			
+			};
+		};
 	};
-	class 4d_cvrt_Scim_d_EL2: 4d_cvrt_Scim_d
+	class TWC_Scorpion_d: 4d_cvrt_Scim_d
 	{
-		scope = 0;
-		displayName = "Scimitar ECM Kit (L2)";
-		hiddenSelections[] = {"Tbox"};
+		displayName = "Scorpion (Desert)";
+		model = "\4d_cvrt\TWC_cvrt_scorpion_d";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret 
+			{
+				weapons[] = {"L23A1","CUP_Vlmg_L94A1_Coax"};
+				magazines[] = {"L23A1_20_rnd_HE","L23A1_20_rnd_HESH","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};			
+			};
+		};
+	};
+	class TWC_Scorpion_w_L1: 4d_cvrt_Scim_w_L1
+	{
+		displayName = "Scorpion (Woodland) (No Slat)";
+		model = "\4d_cvrt\TWC_cvrt_scorpion_w";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret 
+			{
+				weapons[] = {"L23A1","CUP_Vlmg_L94A1_Coax"};
+				magazines[] = {"L23A1_20_rnd_HE","L23A1_20_rnd_HESH","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};			
+			};
+		};
+	};
+	class TWC_Scorpion_d_L1: 4d_cvrt_Scim_d_L1
+	{
+		displayName = "Scorpion (Desert) (No Slat)";
+		model = "\4d_cvrt\TWC_cvrt_scorpion_d";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret 
+			{
+				weapons[] = {"L23A1","CUP_Vlmg_L94A1_Coax"};
+				magazines[] = {"L23A1_20_rnd_HE","L23A1_20_rnd_HESH","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};			
+			};
+		};
 	};
 	class 4d_cvrt_Scim2_d: 4d_cvrt_Scim_base
 	{
@@ -1365,6 +1639,8 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
+				gunBeg = "Usti hlavne";
+				gunEnd = "Konec hlavne";
 				body = "OtocVez";
 				gun = "OtocHlaven";
 				gunnerAction = "Abrams_CommanderOut";
