@@ -3145,418 +3145,33 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"UK3CB_BAF_HMNVS"		
 		};		
 	};
-    class 1990_British_Squadron_Leader_Desert: B_Soldier_base_F
-	{
-		_generalMacro="1990_Desert_British_Squadron_Leader";
-		scope=2;
-		displayName="Squadron Leader(90`s Desert)";
-		faction="twc_faction";
-		editorSubcategory = "Men_1990D";
-		vehicleClass="Men_1990D";
-		icon="iconManLeader";
-		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_Smock_DDPM";
-		backpack="TWC_Backpack_1990_D_Platoon_Command";
-		linkedItems[]=
-		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Beret_RAF",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
-		};
-		respawnLinkedItems[]=
-		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
-		};
-		weapons[]=
-		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"TWC_Sterling_Sub",
-		"rhsusf_weap_m1911a1"
-		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"TWC_Sterling_Sub",
-		"rhsusf_weap_m1911a1"
-		};
-		magazines[]=
-		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
-		};
-		Respawnmagazines[]=
-		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS",
-		"ACRE_PRC148",
-		"ACE_EarPlugs"	
-
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS",
-		"ACRE_PRC148",
-		"ACE_EarPlugs"
-		};
-	};
-    class 1990_British_Squadron_2IC_Desert: B_Soldier_base_F
-	{
-		_generalMacro="1990_Desert_British_Squadron_2IC";
-		scope=2;
-		displayName="Squadron Leader(90`s Desert)";
-		faction="twc_faction";
-		editorSubcategory = "Men_1990D";
-		vehicleClass="Men_1990D";
-		icon="iconManLeader";
-		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_Smock_DDPM";
-		backpack="TWC_Backpack_1990_D_Platoon_Command";
-		linkedItems[]=
-		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Beret_RAF",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
-		};
-		respawnLinkedItems[]=
-		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
-		};
-		weapons[]=
-		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"TWC_Sterling_Sub",
-		"rhsusf_weap_m1911a1"
-		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"TWC_Sterling_Sub",
-		"rhsusf_weap_m1911a1"
-		};
-		magazines[]=
-		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
-		};
-		Respawnmagazines[]=
-		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS",
-		"ACRE_PRC148",
-		"ACE_EarPlugs"	
-
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS",
-		"ACRE_PRC148",
-		"ACE_EarPlugs"
-		};
-	};
-    class 1990_British_Tank_Troop_Commander_Desert: B_Soldier_base_F
-	{
-		_generalMacro="1990_Desert_British_Tank_Troop_Commander";
-		scope=2;
-		displayName="Squadron Leader(90`s Desert)";
-		faction="twc_faction";
-		editorSubcategory = "Men_1990D";
-		vehicleClass="Men_1990D";
-		icon="iconManLeader";
-		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_Smock_DDPM";
-		backpack="TWC_Backpack_1990_D_Platoon_Command";
-		linkedItems[]=
-		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Beret_RAF",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
-		};
-		respawnLinkedItems[]=
-		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
-		};
-		weapons[]=
-		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"TWC_Sterling_Sub",
-		"rhsusf_weap_m1911a1"
-		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"TWC_Sterling_Sub",
-		"rhsusf_weap_m1911a1"
-		};
-		magazines[]=
-		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
-		};
-		Respawnmagazines[]=
-		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS",
-		"ACRE_PRC148",
-		"ACE_EarPlugs"	
-
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS",
-		"ACRE_PRC148",
-		"ACE_EarPlugs"
-		};
-	};
     class 1990_British_Tank_Commander_Desert: B_Soldier_base_F
 	{
 		_generalMacro="1990_Desert_British_Tank Commander";
 		scope=2;
-		displayName="RifleMan(90`s Desert)";
+		displayName="Vehicle Commander(90`s Desert)";
 		faction="twc_faction";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_Smock_DDPM";
-		backpack="TWC_Backpack_1990_D_Rifleman";
+		backpack="TWC_Backpack_1990_Platoon_Command";
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Beret_RAF",
+		"UK3CB_BAF_H_CrewHelmet_DDPM_ESS_A",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_H_CrewHelmet_DDPM_ESS_A",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -3574,9 +3189,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		{
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -3585,9 +3197,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		{
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -3622,7 +3231,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",
-		"ACRE_PRC148",
 		"UK3CB_BAF_HMNVS"
 		};
 		respawntems[]=
@@ -3632,10 +3240,29 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
+		"ACE_tourniquet",
 		"ACE_EarPlugs",
-		"ACRE_PRC148",
 		"UK3CB_BAF_HMNVS"		
 		};
 	};	
@@ -3643,7 +3270,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 	{
 		_generalMacro="1990_Desert_Tank_Crew";
 		scope=2;
-		displayName="RifleMan(90`s Desert)";
+		displayName="Vehicle Crew(90`s Desert)";
 		faction="twc_faction";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
@@ -3653,19 +3280,18 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Beret_RAF",
+		"UK3CB_BAF_H_CrewHelmet_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_H_CrewHelmet_DDPM_A",
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black"
+		"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -3683,9 +3309,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		{
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -3694,9 +3317,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		{
 		"34_rnd_sterling_mag",
 		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"CUP_HandGrenade_L109A2_HE",
-		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -3740,10 +3360,30 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
+		"ACE_tourniquet",
 		"ACE_EarPlugs",
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS"	
 		};		
 	};
 	

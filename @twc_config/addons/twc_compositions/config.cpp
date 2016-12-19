@@ -518,6 +518,34 @@ class CfgGroups
 											position[] = {6,0,0};
 										};
 								};
+								class VehicleCrew
+                                {
+                                        name = "Vehicle Crew"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "ColdWar_Vehicle_Commander"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "ColdWar_Vehicle_Crewman";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "ColdWar_Vehicle_Crewman";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										
+								};
                         };
 						class 1990
 						{
@@ -768,6 +796,33 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "1990_British_MilanAssistant_Desert";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+								};
+								class VehicleCrew
+                                {
+                                        name = "Vehicle Crew"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_Tank_Commander_Desert"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_Tank_Crew_Desert";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_Tank_Crew_Desert";
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
