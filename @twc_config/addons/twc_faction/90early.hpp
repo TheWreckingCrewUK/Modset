@@ -3240,8 +3240,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
-<<<<<<< HEAD
-=======
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_Flashlight_KSF1",
@@ -3355,10 +3353,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_tourniquet",
-<<<<<<< HEAD
 		"ACE_EarPlugs",
 		"UK3CB_BAF_HMNVS"		
-=======
 		"ACE_Flashlight_KSF1",
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
@@ -3510,18 +3506,14 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"UK3CB_BAF_HMNVS",
 		"ACRE_PRC148",
 		"ACE_EarPlugs"
->>>>>>> origin/master
 		};
 	};	
     class 1990_British_Tank_Crew_Desert: B_Soldier_base_F
 	{
 		_generalMacro="1990_Desert_Tank_Crew";
 		scope=2;
-<<<<<<< HEAD
 		displayName="Vehicle Crew(90`s Desert)";
-=======
 		displayName="Tank Commander(90`s Desert)";
->>>>>>> origin/master
 		faction="twc_faction";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
@@ -3611,8 +3603,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
-<<<<<<< HEAD
-=======
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",
