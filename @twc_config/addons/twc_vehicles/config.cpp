@@ -1885,27 +1885,32 @@ class CfgVehicles
 		};
 		driverAction="CUP_M1_DriverOut";
 		driverInAction="CUP_M1_Driver";
-		armor=350;
-		armorStructural=2;
+		armor=2000;
+		armorStructural=3;
 		damageResistance=0.0054700002;
 		cost=4000000;
 		class HitPoints: HitPoints
 		{
 			class HitHull
 			{
-				armor=0.85000002;
+				armor=0.80;
 				material=-1;
 				name="telo";
 				visual="zbytek";
 				passThrough=1;
+				minimalHit =0.12;
+				explosionShielding=1e-003;
+				radius = 0.250000001;
 			};
 			class HitEngine
 			{
-				armor=0.80000001;
-				material=60;
+				armor=0.50000001;
+				material=-1;
 				name="motor";
 				visual="motor";
-				passThrough=1;
+				passThrough=0;
+				minimalHit = 0.1;
+				radius = 0.150000001;
 			};
 		};
 		class CargoLight
@@ -2286,7 +2291,6 @@ class CfgVehicles
 				initPhase=0;
 			};
 		};
-		armor=400;
 		class TransportMagazines
 		{
 				class _xx_UK3CB_BAF_556_30Rnd
@@ -2435,7 +2439,6 @@ class CfgVehicles
 				initPhase=1;
 			};
 		};
-		armor=400;
 		class TransportMagazines
 		{
 				class _xx_UK3CB_BAF_556_30Rnd
