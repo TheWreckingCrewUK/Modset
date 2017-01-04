@@ -2,18 +2,14 @@
 [arsenalAmmoBox,["FirstAidKit","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_red","Chemlight_yellow","Chemlight_blue"],false] call BIS_fnc_addVirtualMagazineCargo;
 [arsenalAmmoBox,["ItemMap","ItemCompass","ItemWatch","NVGoggles"],false] call Bis_fnc_addVirtualItemCargo;
 
-if (!isNil "armour1" && {player == armour1}) then {
+if (!isNil "tank1" && {player == tank1}) then {
 	execVM "client\arsenal\armour_co.sqf";
-	execVM "client\spawning\armour.sqf";	
-	{armour1 customChat [joinCustomChat, format["%1 has joined as Armour Commander", name armour1]];} remoteExec ["bis_fnc_call", armour1, false];
 };
-if (!isNil "armour2" && {player == armour2}) then {
+if (!isNil "tank2" && {player == tank2}) then {
 	execVM "client\arsenal\armour_cr.sqf";
-	{armour1 customChat [joinCustomChat, format["%1 has joined as Armour Crewman", name armour2]];} remoteExec ["bis_fnc_call", armour1, false];
 };
-if (!isNil "armour3" && {player == armour3}) then {
+if (!isNil "tank3" && {player == tank3}) then {
 	execVM "client\arsenal\armour_cr.sqf";
-	{armour1 customChat [joinCustomChat, format["%1 has joined as Armour Crewman", name armour3]];} remoteExec ["bis_fnc_call", armour1, false];
 };
 
 if (!isNil "helo1" && {player == helo1}) then {

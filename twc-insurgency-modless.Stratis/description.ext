@@ -13,7 +13,7 @@ class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 18;
+	maxPlayers = 21;
 };
 
 enableTeamSwitch = 0;
@@ -24,6 +24,40 @@ respawnOnStart = 0;
 
 enableDebugConsole = 1;
 
+class cfgFunctions
+{
+	class twc
+	{
+		class twc
+		{
+			class spawnAIUnits {};
+			class spawnCiv {};
+			class spawnDefend {};
+			class spawnFOB {};
+			class townDeciding {};
+			class townReset {};
+			class townSetup {};
+		};
+		class vector
+		{
+			class filter {};
+			class vectRotate2D {};
+		};
+	};
+	class cba
+	{
+		class cba
+		{
+			class addWaypoint {};
+			class getGroup {};
+			class getPos {};
+			class randPos {};
+			class taskAttack {};
+			class taskDefend {};
+			class taskPatrol {};
+		};
+	};
+};
 
 
 class CfgDebriefing

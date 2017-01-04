@@ -15,7 +15,7 @@
 						  
 params["_pos","_civnum","_civradius","_waves","_groupradius","_thisList"];
 
-[_pos] call twc_spawnDefend;
-[_pos, _civnum, _civradius] call twc_spawnCiv;
+[_pos] call twc_fnc_spawnDefend;
+[_pos, _civnum, _civradius] call twc_fnc_spawnCiv;
 
-[_pos, _waves, _groupradius,_thisList] spawn twc_spawnAIUnits;
+[_pos, _waves, _groupradius,_thisList] spawn twc_fnc_spawnAIUnits;
