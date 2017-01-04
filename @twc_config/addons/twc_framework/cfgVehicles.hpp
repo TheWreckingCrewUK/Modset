@@ -81,13 +81,6 @@ class cfgVehicles
 				typeName = "BOOL";
 				defaultValue = 0;
 			};
-			class towRopes
-			{
-				displayName = "Tow Ropes";
-				description = "Enable to allow Tow Ropes";
-				typeName = "BOOL";
-				defaultValue = 1;
-			};
 			class zuesObjects
 			{
 				displayName = "Zeus Objects";

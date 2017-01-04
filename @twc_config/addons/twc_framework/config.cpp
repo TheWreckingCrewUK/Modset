@@ -76,7 +76,6 @@ class CfgFunctions
 			class moduleMission {};
 			class run {};
 			class safeZone {};
-			class towRopes {};
 			class zeus {};
 		};
 	};
