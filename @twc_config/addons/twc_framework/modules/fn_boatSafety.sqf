@@ -1,3 +1,7 @@
+params ["_enabled"];
+
+if !(_enabled) exitWith {};
+
 While {true} do {
 	{
 		if (typeof _x == "B_G_Boat_Transport_01_F") then {

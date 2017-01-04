@@ -1,3 +1,7 @@
+params ["_enabled"];
+
+if !(_enabled) exitWith {};
+
 //adds objects placed in editor:
 {
 	_x addCuratorEditableObjects [vehicles,true];

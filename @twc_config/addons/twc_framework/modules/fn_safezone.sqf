@@ -7,6 +7,12 @@
     CONFIGURATION:
     Edit the #defines below.
 */
+params ["_enabled"];
+
+if (_enabled) exitWith {};
+
+
+if (getMarkerColor "base" == "") exitWith {systemChat "No shooting in base is enabled, but no base marker is defined"};
 
 #define SAFETY_ZONES    [["base", 400]] // Syntax: [["base", 500], ["marker2", radius2], ...]
 #define MESSAGE "Don't shoot or throw grenades on base!"

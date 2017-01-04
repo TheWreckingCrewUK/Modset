@@ -1,3 +1,7 @@
+params ["_enabled"];
+
+if !(_enabled) exitWith {};
+
 waituntil {vehicle player == player};
 
 Switch (typeof player) do {

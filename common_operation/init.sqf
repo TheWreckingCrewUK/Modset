@@ -1,30 +1,3 @@
-/* /////////////////////////////////////////////////////////
-/                       SETUP 	   						  /
-///////////////////////////////////////////////////////////
-
-/* /////////////////////////////////////////////////////////
-/                           Zues                          /
-/                           Setup                         /
-/////////////////////////////////////////////////////////*/
-
-[] execVM "operation_framework\zeus\Zeus.sqf";
-[] execVM "operation_framework\zeus\Zeus-jayman.sqf";
-[] execVM "operation_framework\zeus\Zeus-Mallas.sqf";
-[] execVM "operation_framework\zeus\Zeus-Bosenator.sqf";
-
-/**********************************************************
-*                          Advanced                       *
-*                       Sling Loading                     *
-**********************************************************/
-[] execVM "operation_framework\slingLoading\sa_ropes.sqf";
-
-/**********************************************************
-*                           Misc                          *
-**********************************************************/
-[] execVM "operation_framework\MiscErrorFixes\init.sqf";
-//////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////
 if(isMultiplayer)then{
 	playMusic "Theme";
 	titleCut ["", "BLACK FADED", 999];

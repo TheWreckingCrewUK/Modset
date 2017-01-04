@@ -10,7 +10,8 @@ class CfgPatches
 		requiredVersion=1.54;
 		requiredAddons[]=
 		{
-			"cba_ai"
+			"cba_ai",
+			"A3_Modules_F"
 		};
 		author[]=
 		{
@@ -23,6 +24,16 @@ class CfgPatches
 	};
 };
 
+class cfgFactionClasses
+{
+	class NO_CATEGORY;
+	class twc_missionSetup: NO_CATEGORY
+	{
+		displayName = "TWC Mission Module";
+	};
+};
+#include "cfgVehicles.hpp"
+
 class CfgFunctions
 {
 	class TWC
@@ -30,78 +41,43 @@ class CfgFunctions
 		class Functions
 		{
 			file="twc_framework\functions";
-			class Hint
-			{
-			};
-			class Defend
-			{
-			};
-			class Patrol
-			{
-			};
-			class AirAssault
-			{
-			};
-			class AttackPlane
-			{
-			};
-			class AttackHelicopter
-			{
-			};
-			class spawnIed
-			{
-			};
-			class IEDpopulate
-			{
-			};
-			class intelHint
-			{
-			};
-			class Artillery
-			{
-			};
-			class Attack
-			{
-			};
-			class CommandMessage
-			{
-			};
-			class LightsSwitch
-			{
-			};
-			class Retreat
-			{
-			};
-			class RollShirt
-			{
-			};
-			class Maxspeed
-			{
-			};
-			class Convoy
-			{
-			};
-			class CreateMarker
-			{
-			};
-			class patrolRoads
-			{
-			};
-			class placedIED
-			{
-			};
-			class patrolMarkers
-			{
-			};
-			class CreateTask
-			{
-			};
-			class UpdateTask
-			{
-			};
-			class daisyCutter
-			{
-			};
+			class Hint {};
+			class Defend {};
+			class Patrol {};
+			class AirAssault {};
+			class AttackPlane {};
+			class AttackHelicopter {};
+			class spawnIed {};
+			class IEDpopulate {};
+			class intelHint {};
+			class Artillery {};
+			class Attack {};
+			class CommandMessage {};
+			class LightsSwitch {};
+			class Retreat {};
+			class RollShirt {};
+			class Maxspeed {};
+			class Convoy {};
+			class CreateMarker {};
+			class patrolRoads {};
+			class placedIED {};
+			class patrolMarkers {};
+			class CreateTask {};
+			class UpdateTask {};
+			class daisyCutter {};
+		};
+		class Modules
+		{
+			file = "twc_framework\modules";
+			class boatSafety {};
+			class civilianEquipment {};
+			class deadBodies {};
+			class giveRadio {};
+			class moduleMission {};
+			class run {};
+			class safeZone {};
+			class towRopes {};
+			class zeus {};
 		};
 	};
 };
