@@ -1,3 +1,9 @@
+[] execVM "tasks.sqf";
+
+{
+	[_x select 0, _x select 1, false] call BIS_fnc_taskSetState;
+}forEach completedTasks;
+
 if(isMultiplayer)then{
 	playMusic "Theme";
 	titleCut ["", "BLACK FADED", 999];
