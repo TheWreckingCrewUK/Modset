@@ -1,24 +1,23 @@
 /*
 * Details
 *
-* Gives a 50% chance of spawning a squad around the marker and set them to cba defend.
+* Gives a 75% chance of spawning a squad around the marker and set them to cba defend.
 *
 * example ["Gospandi"] call twc_smallTown;
 */
 
 params["_marker", "_civnum", "_civradius"];
 _random = random 100;
-if (_random < 50) then {
+if (_random < 75) then {
 	if (isServer) then {
 		_groupSpawn = [getMarkerPos _marker, East, smallTownSquad,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
-		[_groupSpawn, _groupSpawn, 200, 3, True] call CBA_fnc_TaskDefend;
+		[_groupSpawn] call CBA_fnc_TaskDefend;
 		{
 			_x addMPEventHandler ["MPKilled",{
 				if (side (_this select 1) == WEST) then{
 					InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
 				};
 			}];
-			_x addMagazines ["handGrenade",2];
 		}forEach units _groupSpawn;
 	};
 };
@@ -36,15 +35,20 @@ for "_i" from 1 to _civnum do {
 		_individualCiv disableAI "AUTOCOMBAT";
 		_individualCiv allowFleeing 0;
 		_individualCiv forceSpeed 1;
-		[_individualCiv, _individualCiv, 100, 2, True] call CBA_fnc_TaskDefend;
+		[_individualCiv] call CBA_fnc_TaskDefend;
 		_clothes = 
 		[
-			"CUP_O_TKI_Khet_Partug_03",
-			"CUP_O_TKI_Khet_Partug_05",
-			"CUP_O_TKI_Khet_Partug_06",
-			"CUP_O_TKI_Khet_Partug_07",
-			"CUP_O_TKI_Khet_Partug_02",
-			"CUP_O_TKI_Khet_Partug_08"
+			"U_C_Poloshirt_blue",
+			"U_C_Poloshirt_burgundy",
+			"U_C_Poloshirt_stripped",
+			"U_C_Poloshirt_tricolour",
+			"U_C_Poloshirt_salmon",
+			"U_C_Poloshirt_redwhite",
+			"U_C_Commoner1_1",
+			"U_C_Commoner1_2",
+			"U_C_Commoner1_3",
+			"U_Rangemaster",
+			"U_NikosBody"
 		] call BIS_fnc_selectRandom;
 		_individualCiv forceadduniform _clothes;
 		
