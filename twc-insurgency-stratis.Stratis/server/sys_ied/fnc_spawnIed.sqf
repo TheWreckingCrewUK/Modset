@@ -14,11 +14,15 @@
  * Example:
  * ["IEDLandBig_F", getPos player, 3] call TWC_fnc_spawnIed
  */
-params ["_iedType", "_position", ["_spawnRadius", 0], ["_triggerRadius", 12]];
+params ["_iedType", "_road", "_position", ["_spawnRadius", 0], ["_triggerRadius", 12]];
 
 // Create visible explosive object
-_ied = createVehicle [_iedType, _position, [], _spawnRadius, "NONE"];
-_ied setPos (getPos _ied vectorAdd [0,0,-0.02]);
+_dir = getDir _road;
+_angle = [90, 270] call BIS_fnc_selectRandom;
+_dir = _dir + _angle;
+_pos = _road getRelPos [_spawnRadius, _dir];
+_ied = createVehicle [_iedType, _pos, [], 0, "NONE"];
+_ied setPos (getPos _ied vectorAdd [0,0,0]);
 
 // Handle creating explosion and cleaning up on object being destroyed
 _ied addEventHandler ["Killed", {
@@ -38,7 +42,7 @@ _trigger setTriggerStatements [
         if (abs (speed _x) >= 10 && (getPosATL _x select 2) < 4) exitWith {true};
         false
     } forEach thisList;",
-    "[thislist select 0] call TWC_fnc_iedAttack; (thisTrigger getVariable ['InsP_ied', objNull]) setDamage 1;",
+    "[thislist select 0] spawn TWC_fnc_iedAttack; (thisTrigger getVariable ['InsP_ied', objNull]) setDamage 1;",
     ""
 ];
 

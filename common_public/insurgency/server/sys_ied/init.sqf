@@ -17,4 +17,4 @@ if (isNil "InsP_iedDestroyed") then {
 	publicVariable "InsP_iedDestroyed";
 };
 
-[100, ["iedRestrictionZone"]] call TWC_fnc_populateIeds;
+[175, ["iedRestrictionZone"]] call TWC_fnc_populateIeds;
