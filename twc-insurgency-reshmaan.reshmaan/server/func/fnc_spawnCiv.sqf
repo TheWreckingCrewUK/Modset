@@ -22,45 +22,46 @@ _group = createGroup civilian;
 params["_pos", "_civnum", "_civradius"];
 
 for "_i" from 1 to _civnum do {
-	_individualCiv = _group createUnit [civilianType, _pos, [], _civradius, "NONE"];
-	_civHeading = (random 360);
-	_individualCiv setFormDir _civHeading;
-	_individualCiv setDir _civHeading;
-	_westKilled = _individualCiv addEventHandler ["Killed", {
-		[(_this select 0)] call twc_fnc_deleteDead;
-		[_this select 0, _this select 1, _intelCache] call InsP_fnc_civKill;
-	}];
 
-	_individualCiv setVariable ["unitsHome",_pos,false];
+		_individualCiv = _group createUnit [civilianType, _pos, [], _civradius, "NONE"];
+		_civHeading = (random 360);
+		_individualCiv setFormDir _civHeading;
+		_individualCiv setDir _civHeading;
+		_westKilled = _individualCiv addEventHandler ["Killed", {
+			[(_this select 0)] call twc_fnc_deleteDead;
+			[_this select 0, _this select 1, _intelCache] call InsP_fnc_civKill;
+		}];
 
-	_individualCiv addEventHandler["FiredNear", {
-		_civ = _this select 0;
+		_individualCiv setVariable ["unitsHome",_pos,false];
 
-		switch(round(random 2))do{
-			case 0:{_civ switchMove "ApanPercMstpSnonWnonDnon_G01";};
-			case 1:{_civ playMoveNow "ApanPknlMstpSnonWnonDnon_G01";};
-			case 2:{_civ playMoveNow "ApanPpneMstpSnonWnonDnon_G01";};
-			default{_civ playMoveNow "ApanPknlMstpSnonWnonDnon_G01";};
-		};
-		_civ setSpeedMode "FULL";
+		_individualCiv addEventHandler["FiredNear", {
+			_civ = _this select 0;
 
-		// get nearest building, have to use this command for zeus/map placed objects
-		_buildingLocations = nearestObjects [_civ, ["House", "Building"], 50];
-		if ((count _buildingLocations) > 0) then {
-			_civ doMove (_buildingLocations select 0);
-			// could be cba defend or something too
-		};
-		_civ removeAllEventHandlers "FiredNear";
-	}];
-	
-	_clothes = 
-	[
-		"CUP_O_TKI_Khet_Partug_03",
-		"CUP_O_TKI_Khet_Partug_05",
-		"CUP_O_TKI_Khet_Partug_06",
-		"CUP_O_TKI_Khet_Partug_07",
-		"CUP_O_TKI_Khet_Partug_02",
-		"CUP_O_TKI_Khet_Partug_08"
-	] call BIS_fnc_selectRandom;
-	_individualCiv forceadduniform _clothes;
+			switch(round(random 2))do{
+				case 0:{_civ switchMove "ApanPercMstpSnonWnonDnon_G01";_civ setSpeedMode "FULL";};
+				case 1:{_civ playMoveNow "ApanPknlMstpSnonWnonDnon_G01";_civ setSpeedMode "FULL";};
+				case 2:{_civ playMoveNow "ApanPpneMstpSnonWnonDnon_G01";_civ setSpeedMode "FULL";};
+				default{_civ playMoveNow "ApanPknlMstpSnonWnonDnon_G01";_civ setSpeedMode "FULL";};
+			};
+
+			// get nearest building, have to use this command for zeus/map placed objects
+			_buildingLocations = nearestObjects[_civ, ["House", "Building"], 50];
+			if (count _buildingLocations > 0) then {
+				_civ doMove(_buildingLocations select 0);
+				// could be cba defend or something too
+			};
+			_civ removeAllEventHandlers "FiredNear";
+		}];
+		
+		_clothes = 
+		[
+			"CUP_O_TKI_Khet_Partug_03",
+			"CUP_O_TKI_Khet_Partug_05",
+			"CUP_O_TKI_Khet_Partug_06",
+			"CUP_O_TKI_Khet_Partug_07",
+			"CUP_O_TKI_Khet_Partug_02",
+			"CUP_O_TKI_Khet_Partug_08"
+		] call BIS_fnc_selectRandom;
+		_individualCiv forceadduniform _clothes;
+		
 };
