@@ -1,5 +1,7 @@
 params ["_enabled"];
 
+if(!hasInterface)exitWith{};
+
 if (_enabled) exitWith {};
 
 waitUntil { sleep 0.5; !(isNull player) };

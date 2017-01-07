@@ -1,5 +1,7 @@
 params ["_enabled"];
 
+if(!isServer)exitWith{};
+
 if !(_enabled) exitWith {};
 
 if (getMarkerColor "base" == "") exitWith {systemChat "Dead Body cleanup in base is Enabled, but no base marker is defined"};

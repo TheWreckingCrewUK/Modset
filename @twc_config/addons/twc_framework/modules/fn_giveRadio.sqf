@@ -1,5 +1,7 @@
 params ["_enabled"];
 
+if(!hasInterface)exitWith{};
+
 if !(_enabled) exitWith {};
 
 waituntil {vehicle player == player};

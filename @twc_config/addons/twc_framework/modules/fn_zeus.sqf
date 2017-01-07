@@ -1,5 +1,7 @@
 params ["_enabled"];
 
+if(!isServer)exitWith{};
+
 if !(_enabled) exitWith {};
 
 //adds objects placed in editor:
