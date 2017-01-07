@@ -12,5 +12,4 @@ if !(_enabled) exitWith {};
 [(_logic getVariable "giveRadio")] spawn twc_fnc_giveRadio;
 [(_logic getVariable "run")] spawn twc_fnc_run;
 [(_logic getVariable "safeZone")] call twc_fnc_safeZone;
-[(_logic getVariable "towRopes")] spawn twc_fnc_towRopes;
 [(_logic getVariable "zuesObjects")] spawn twc_fnc_zeus;

@@ -1,19 +1,15 @@
 params ["_enabled"];
 
-if(!isServer)exitWith{};
+if(!hasInterface)exitWith{};
 
 if !(_enabled) exitWith {};
 
-While {true} do {
-	{
-		if (typeof _x == "B_G_Boat_Transport_01_F") then {
-			_x addEventHandler ["GetOut", {_player = _this select 2; _player allowDamage False;
-			_twc = [_player] spawn {
+player addEventHandler ["GetOutMan",{
+	if(typeOf (_this select 2) == "B_G_Boat_Transport_01_F") then{
+		player allowDamage false;
+		spawn{
 			sleep 3;
-			_this select 0 allowDamage True;
-			}
-			}];
+			player allowDamage true;
 		};
-	}foreach Vehicles;
-	sleep 120;
-};
+	};
+}];
