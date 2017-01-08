@@ -126,7 +126,7 @@ if (!isNil "tank1" && {player == tank1}) then {
 	g_group = "1";
 	g_unit = "205";
 	g_name = "Armour Crew Commander";
-	g_radio_channel = 7;
+	g_radio_channel = 4;
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
@@ -138,7 +138,7 @@ if (!isNil "tank2" && {player == tank2}) then {
 	g_group = "1";
 	g_unit = "206";
 	g_name = "Armour Crew";
-	g_radio_channel = 7;
+	g_radio_channel = 4;
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
@@ -150,7 +150,7 @@ if (!isNil "tank3" && {player == tank3}) then {
 	g_group = "1";
 	g_unit = "207";
 	g_name = "Armour Crew";
-	g_radio_channel = 7;
+	g_radio_channel = 4;
 	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;

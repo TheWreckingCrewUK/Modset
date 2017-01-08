@@ -5,9 +5,9 @@ _player3 = if(!isNil "helo3")then{if(!isPlayer helo3)then{"";}else{(name helo3);
 _player4 = if(!isNil "helo4")then{if(!isPlayer helo4)then{"";}else{(name helo4);};}else{"";};
 _player5 = if(!isNil "apache1")then{if(!isPlayer apache1)then{"";}else{(name apache1);};}else{"";};
 _player6 = if(!isNil "apache2")then{if(!isPlayer apache2)then{"";}else{(name apache2);};}else{"";};
-_player7 = if(!isNil "jet")then{if(!isPlayer jet)then{"";}else{(name jet);};}else{"";};
-
-g_playerlist = [["Air Assets", [["Wildcat/Chinook", [_player1, "Pilot"],[_player2, "Crew Cheif"]],["BlackHawk/Chinook", [_player3, "Pilot"],[_player4, "Crew Cheif"]],["Apache", [_player5, "Pilot"],[_player6, "Gunner"],[_player7, "Pilot"]]]]				
+_player7 = if(!isNil "jet1")then{if(!isPlayer jet1)then{"";}else{(name jet1);};}else{"";};
+_player8 = if(!isNil "jet2")then{if(!isPlayer jet2)then{"";}else{(name jet2);};}else{"";};
+g_playerlist = [["Air Assets", [["BAF Transport", [_player1, "BAF Pilot"],[_player2, "BAF Crew Cheif"]],["US Transport", [_player3, "US Pilot"],[_player4, "US Crew Cheif"]],["BAF Apache", [_player5, "Apache Pilot"],[_player6, "Apache Gunner"]],["BAF Jet", [_player7, "BAF Jet Pilot"]],["US Jet", [_player8, "US Jet Pilot"]]]]				
 				
 				];
 

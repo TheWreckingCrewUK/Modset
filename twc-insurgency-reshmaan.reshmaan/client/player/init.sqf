@@ -567,13 +567,19 @@ if (!isNil "apache2" && {player == apache2}) then {
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
-if (!isNil "jet" && {player == jet}) then {
-    g_class = "PLT_CREW";
+if (!isNil "jet1" && {player == jet1}) then {
+    g_class = "PLT";
 	g_group = "1";
 	g_unit = "141";
-	g_radio_channel = 7;
-	g_radio = "ACRE_PRC343";
-	g_name = "C-130 Pilot";
+	g_name = "BAF Attack Jet Pilot";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+if (!isNil "jet2" && {player == jet2}) then {
+    g_class = "USPLT";
+	g_group = "1";
+	g_unit = "208";
+	g_name = "US Attack Jet Pilot";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
@@ -935,7 +941,7 @@ TWC_fnc_getMERTList = {
 };
 
 TWC_fnc_getSniperteamList = {
-   execVM "client\playerlist\Sniperteam.sqf";
+   execVM "client\playerlist\sniperteam.sqf";
 };
 
 playerListAction = ["thisStartsTheList","Player List","", {},{true}] call ace_interact_menu_fnc_createAction;
