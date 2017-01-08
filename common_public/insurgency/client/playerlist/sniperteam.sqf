@@ -1,13 +1,9 @@
 //made by hartzie edited by FakeMatty
-_player1 = if(!isNil "helo1")then{if(!isPlayer helo1)then{"";}else{(name helo1);};}else{"";};
-_player2 = if(!isNil "helo2")then{if(!isPlayer helo2)then{"";}else{(name helo2);};}else{"";};
-_player3 = if(!isNil "helo3")then{if(!isPlayer helo3)then{"";}else{(name helo3);};}else{"";};
-_player4 = if(!isNil "helo4")then{if(!isPlayer helo4)then{"";}else{(name helo4);};}else{"";};
-_player5 = if(!isNil "apache1")then{if(!isPlayer apache1)then{"";}else{(name apache1);};}else{"";};
-_player6 = if(!isNil "apache2")then{if(!isPlayer apache2)then{"";}else{(name apache2);};}else{"";};
-_player7 = if(!isNil "jet1")then{if(!isPlayer jet1)then{"";}else{(name jet1);};}else{"";};
-_player8 = if(!isNil "jet2")then{if(!isPlayer jet2)then{"";}else{(name jet2);};}else{"";};
-g_playerlist = [["Air Assets", [["BAF Transport", [_player1, "BAF Pilot"],[_player2, "BAF Crew Cheif"]],["US Transport", [_player3, "US Pilot"],[_player4, "US Crew Cheif"]],["BAF Apache", [_player5, "Apache Pilot"],[_player6, "Apache Gunner"]],["BAF Jet", [_player7, "BAF Jet Pilot"]],["US Jet", [_player8, "US Jet Pilot"]]]]				
+_player1 = if(!isPlayer sniper)then{""}else{(name sniper)};
+_player2 = if(!isPlayer spotter)then{""}else{(name spotter)};
+
+
+g_playerlist = [["Sniper Team", [["Sniper", [_player1, "Sniper"],[_player2, "Spotter"]]]]				
 				
 				];
 
@@ -39,3 +35,4 @@ _text = "";
 	hint parseText _text;
 	sleep 7;
 } forEach g_playerList;
+

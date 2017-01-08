@@ -72,7 +72,7 @@ class CfgDebriefing
 	{
 		title = "Mission End";
 		subtitle = "Good Job!";
-		description = "Stick around for some Domination on Altis, next!";
+		description = "Stick around to vote for the next mission!";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -92,6 +92,15 @@ class CfgDebriefing
 		title = "You cannot play as independent";
 		subtitle = "Speak to [TWC] Bosenator for this slot";
 		description = "Play as Blufor for now";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class End8
+	{
+		title = "Jet unavailable";
+		subtitle = "";
+		description = "Play as general infantry for now";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};

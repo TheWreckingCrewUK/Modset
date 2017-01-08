@@ -69,13 +69,15 @@ if(isMultiplayer)then{
 	sleep 5;
 };
 
-_specialSlots = ["helo1","helo2","helo3","helo4","tank1","tank2","tank3","humanCiv1","humanCiv2","humanCiv3"];
+_specialSlots = ["helo1","helo2","helo3","helo4","tank1","tank2","tank3","humanCiv1","humanCiv2","humanCiv3","apache1", "apache2", "jet1", "jet2"];
 
 if ((str player) in _specialSlots)then{
 	
 	_UID = getPlayerUID player;
 	if((_UID) != "_SP_PLAYER_" && (_UID) != "76561198070630639")then{	
 		_pilots = ["helo1", "helo2","helo3", "helo4"];
+		_jet = ["jet1", "jet2"];
+		_apache = ["apache1", "apache2"];
 		_armourCrew = ["tank1","tank2","tank3"];
 		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
 		_mertteam = ["mert_sl","mert_med"];
@@ -92,6 +94,10 @@ if ((str player) in _specialSlots)then{
 			case "humanCiv3": {20};
 			case "mert_sl";
 			case "mert_med": {15};
+			case "jet1";
+			case "jet2": {15};
+			case "apache1";
+			case "apache2": {20};
 			default {hint "Please send a message to [TWC] Adam saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
 		_justPlayers = count(allPlayers - entities "HeadlessClient_F");
@@ -119,6 +125,14 @@ if ((str player) in _specialSlots)then{
 		
 		if ((str player) in _mertteam && (count playableUnits) < _numPlayers) then{
 			["End6", false, 0] call BIS_fnc_endMission;
+		};
+
+		if ((str player) in _jet && (count playableUnits) < _numPlayers) then{
+			["End6", false, 0] call BIS_fnc_endMission;
+		};
+
+		if ((str player) in _apache && (count playableUnits) < _numPlayers) then{
+			["End8", false, 0] call BIS_fnc_endMission;
 		};
 	};
 };
