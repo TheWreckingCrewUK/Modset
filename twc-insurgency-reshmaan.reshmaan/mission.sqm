@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16562.951,90.437904,3167.136};
-		dir[]={0.17120345,-0.42103615,-0.89087844};
-		up[]={0.079474196,0.90700185,-0.4135524};
-		aside[]={-0.98216492,-1.0669464e-007,-0.18874536};
+		pos[]={16502.994,96.908195,3170.928};
+		dir[]={-0.65097791,-0.34139007,-0.67817837};
+		up[]={-0.23647828,0.93987936,-0.24636015};
+		aside[]={-0.72152662,-2.3197208e-007,0.69258446};
 	};
 };
 binarizationWanted=0;
@@ -1090,8 +1090,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={16650.904,85.429138,3270.1719};
-				angles[]={0,4.6764717,0};
+				position[]={16650.904,85.429138,3270.1724};
+				angles[]={0,4.6764698,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1104,25 +1104,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit"",""Medikit""],[2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[12,4,2,2,4]],[[],[]],[[""B_Parachute""],[4]]],false]";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};";
@@ -1258,7 +1239,45 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit"",""Medikit""],[2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[12,4,2,2,4]],[[],[]],[[""B_Parachute""],[4]]],false]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_fastroping_equipFRIES";
+					expression="[_this] call ace_fastroping_fnc_equipFRIES";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 		class Item17
@@ -6591,7 +6610,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={16546.424,82.797623,3930.3889};
-			angle=1.5688587;
+			angle=1.5688585;
 			class Attributes
 			{
 				onActivation="bg_2 animate [""Door_1_rot"", 1] " \n "";

@@ -312,6 +312,85 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_LLM_IR_Black",1]
 	];
 };
+// load available to SNIPER only.
+ if (g_class == "BAF_SN") then {
+    _tmp_weapons =
+    [
+		["UK3CB_BAF_L115A3_DE",1],
+		["ACE_Vector",1],
+		["UK3CB_BAF_L131A1",1]
+    ];
+
+    _tmp_magazines =
+    [	
+		["UK3CB_BAF_338_5Rnd",50],
+		["UK3CB_BAF_338_5Rnd_Tracer",50],
+		["UK3CB_BAF_9_17Rnd",15]
+	];
+
+	_tmp_items = 
+	[
+		
+		["ACE_fieldDressing",20],
+		["ACE_morphine",10],
+		["STKR_Predator",1],
+		["ACRE_PRC343",1],
+		["rhsusf_ANPVS_14",1],
+		["ACE_IR_Strobe_Item",1],
+		["UK3CB_BAF_G_Tactical_Black",1],
+		["ACE_Kestrel4500",1],
+		["ACE_RangeCard",1],
+		["CUP_optic_SB_3_12x50_PMII",1],
+		["ACE_SpottingScope",1],
+		["ACE_ATragMX",1],
+		["ACE_Tripod",1],
+		[ACE_EntrenchingTool,1]
+	];
+};
+
+// load available to SPOTTER only.
+ if (g_class == "BAF_SP") then {
+    _tmp_weapons =
+    [
+		["UK3CB_BAF_L85A2_RIS",1],
+		["ACE_Vector",1],
+		["UK3CB_BAF_L131A1",1]
+    ];
+
+    _tmp_magazines =
+    [	
+		["UK3CB_BAF_338_5Rnd",50],
+		["UK3CB_BAF_338_5Rnd_Tracer",50],
+		["UK3CB_BAF_556_30Rnd",50],
+		["UK3CB_BAF_556_30Rnd_T",50],
+		["UK3CB_BAF_9_17Rnd",15]
+	];
+
+	_tmp_items = 
+	[
+		
+		["ACE_fieldDressing",20],
+		["ACE_morphine",10],
+		["RKSL_optic_LDS",1],
+		["UK3CB_BAF_LLM_IR",1],
+		["UK3CB_BAF_Eotech",1],
+		["STKR_Predator",1],
+		["rhsusf_ANPVS_14",1],
+		["ACE_IR_Strobe_Item",1],
+		["ACRE_PRC343",1],
+		["UK3CB_BAF_G_Tactical_Black",1],
+		["ACE_Kestrel4500",1],
+		["ACE_RangeCard",1],
+		["ACE_SpottingScope",1],
+		["ACE_MX2A",1],
+		["ACRE_PRC117F_ID_1",1],
+		["UK3CB_BAF_LLM_IR_Black",1],
+		["ACE_ATragMX",1],
+		["ACE_Tripod",1],
+		["itemCTAB",1],
+		[ACE_EntrenchingTool,1]
+	];
+};
 //class availible to Bravo Section Lead
 if (g_class == "US_SL") then {
     _tmp_weapons =

@@ -341,7 +341,10 @@ if (g_class == "BAF_SL") then {
 		["ACE_Kestrel4500",1],
 		["ACE_RangeCard",1],
 		["CUP_optic_SB_3_12x50_PMII",1],
-		["ACE_SpottingScope",1]
+		["ACE_SpottingScope",1],
+		["ACE_ATragMX",1],
+		["ACE_Tripod",1],
+		[ACE_EntrenchingTool,1]
 	];
 };
 
@@ -381,7 +384,11 @@ if (g_class == "BAF_SL") then {
 		["ACE_SpottingScope",1],
 		["ACE_MX2A",1],
 		["ACRE_PRC117F_ID_1",1],
-		["UK3CB_BAF_LLM_IR_Black",1]
+		["UK3CB_BAF_LLM_IR_Black",1],
+		["ACE_ATragMX",1],
+		["ACE_Tripod",1],
+		["itemCTAB",1],
+		[ACE_EntrenchingTool,1]
 	];
 };
 //class availible to Bravo Section Lead

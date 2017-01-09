@@ -20,7 +20,7 @@ for "_i" from 1 to 5 do {player addItemToUniform "ACE_quikclot";};
 for "_i" from 1 to 5 do {player addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
-player addVest "UK3CB_BAF_V_Osprey_SL_A";
+player addVest "UK3CB_BAF_V_PLCE_Webbing_MTP";
 for "_i" from 1 to 8 do {player addItemToVest "UK3CB_BAF_556_30Rnd";};
 for "_i" from 1 to 2 do {player addItemToVest "UK3CB_BAF_556_30Rnd_T";};
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
@@ -31,7 +31,8 @@ for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShellRed";};
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShellBlue";};
 player addItemToBackpack "ACE_Kestrel4500";
 player addItemToBackpack "ACE_RangeCard";
-player addItemToBackpack "ACE_SpottingScope";
+player addItemToBackpack "ACE_ATragMX";
+player addItemToBackpack "itemCTAB";
 player addHeadgear "UK3CB_BAF_H_Mk7_Scrim_E";
 player addGoggles "UK3CB_BAF_G_Tactical_Black";
 
