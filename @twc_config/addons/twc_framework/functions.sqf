@@ -3,21 +3,6 @@ twc_fnc_HasUniformModern={
 	uniform player == "UK3CB_BAF_U_CombatUniform_MTP" || uniform player == "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve"
 };
 
-//Create Forward Base
-twc_fnc_createForwardBase={
-
-	if(!isNil "ForwardBase")then{
-		deleteVehicle forwardBaseFlag;
-		deleteVehicle forwardBaseTent;
-		ForwardBase = nil;
-	};
-	_pos = getPos player;	
-	ForwardBase = _pos;
-	publicVariable "ForwardBase";
-	forwardBaseFlag = "Flag_UK_F" createVehicle _pos;	
-	forwardBaseTent = "Camp" createVehicle _pos;
-};
-
 //Reconnecting players
 twc_fnc_reconnected = {
 	params["_base"];

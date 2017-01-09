@@ -418,7 +418,7 @@
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="MNP_CombatUniform_DPMR";
-		backpack="TWC_Backpack_Cold_War_AT";
+		backpack="TWC_Backpack_Cold_War_AAT";
 		linkedItems[]=
 		{
         "CUP_V_RUS_Smersh_1",

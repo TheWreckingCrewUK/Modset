@@ -72,6 +72,7 @@ class CfgFunctions
 			class boatSafety {};
 			class civilianEquipment {};
 			class deadBodies {};
+			class forwardBase {};
 			class giveRadio {};
 			class moduleMission {};
 			class run {};

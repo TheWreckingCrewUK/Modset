@@ -10,11 +10,12 @@ class CfgPatches
 			"A3_Weapons_F",
 			"uk3cb_baf_weapons",
 			"uk3cb_baf_equipment",
-			"cup_weapons_ammoboxes"
+			"cup_weapons_ammoboxes",
+			"ace_dragging"
 		};
 		version="1";
 		projectName="TWC";
-		author="FakeMatty";
+		author="jayman";
 	};
 };
 class cfgMagazines
@@ -988,6 +989,28 @@ class CfgVehicles
 		};
 	};
 	class TWC_Backpack_Cold_War_AT:CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine = "tf47_m3maaws_HEAT";
+				count = 1;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine = "tf47_m3maaws_HE";
+				count = 1;
+			};			
+		};
+	};
+	class TWC_Backpack_Cold_War_AAT:CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -2662,6 +2685,7 @@ class CfgVehicles
 	{
 		transportAmmo=1000000;
 		supplyRadius=10;
+		ace_dragging_canDrag = 1;
 	};
 	class TWC_modern_Warrior_Ammobox:CUP_BAF_VehicleBox
 	{

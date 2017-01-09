@@ -60,6 +60,13 @@ class cfgVehicles
 				typeName = "BOOL";
 				defaultValue = 1;
 			};
+			class forwardBase
+			{
+				displayName = "Forward Base";
+				description = "Enable to allow CSM and Platoon to create a forward base";
+				typeName = "BOOL";
+				defaultValue = 0;
+			};
 			class giveRadio
 			{
 				displayName = "Give Long Range Radios";
@@ -77,9 +84,9 @@ class cfgVehicles
 			class safeZone
 			{
 				displayName = "Shooting in Base";
-				description = "Enable to allow Shooting in Base";
-				typeName = "BOOL";
-				defaultValue = 0;
+				description = "Set number to set size of base no-fire zone. 0 = no safezone";
+				typeName = "NUMBER";
+				defaultValue = 400;
 			};
 			class zuesObjects
 			{

@@ -527,7 +527,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_Vehicle_Commander"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
+                                                rank = "sergeant"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
