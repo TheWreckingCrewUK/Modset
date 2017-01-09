@@ -118,11 +118,11 @@ if ((str player) in _specialSlots)then{
 		};
 
 		if ((str player) in _jet && (count playableUnits) < _numPlayers) then{
-			["End6", false, 0] call BIS_fnc_endMission;
+			["End8", false, 0] call BIS_fnc_endMission;
 		};
 
 		if ((str player) in _apache && (count playableUnits) < _numPlayers) then{
-			["End8", false, 0] call BIS_fnc_endMission;
+			["End4", false, 0] call BIS_fnc_endMission;
 		};
 
 		if ((str player) in _humancivs) then{

@@ -117,6 +117,14 @@ if ((str player) in _specialSlots)then{
 			["End6", false, 0] call BIS_fnc_endMission;
 		};
 
+		if ((str player) in _jet && (count playableUnits) < _numPlayers) then{
+			["End8", false, 0] call BIS_fnc_endMission;
+		};
+
+		if ((str player) in _apache && (count playableUnits) < _numPlayers) then{
+			["End4", false, 0] call BIS_fnc_endMission;
+		};
+
 		if ((str player) in _humancivs) then{
 			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || (_UID  in InsP_playersKilledAsCivs) || _timePlayed < 15) then{
 				["End3", false, 0] call BIS_fnc_endMission;
@@ -125,14 +133,6 @@ if ((str player) in _specialSlots)then{
 		
 		if ((str player) in _mertteam && (count playableUnits) < _numPlayers) then{
 			["End6", false, 0] call BIS_fnc_endMission;
-		};
-
-		if ((str player) in _jet && (count playableUnits) < _numPlayers) then{
-			["End6", false, 0] call BIS_fnc_endMission;
-		};
-
-		if ((str player) in _apache && (count playableUnits) < _numPlayers) then{
-			["End8", false, 0] call BIS_fnc_endMission;
 		};
 	};
 };

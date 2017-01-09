@@ -27,11 +27,11 @@ townSquadWave = ["CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_
 
 vehicleList = ["CUP_C_UAZ_Unarmed_TK_CIV", "CUP_C_Skoda_Blue_CIV", "CUP_C_Datsun_Plain", "CUP_C_Ural_Open_Civ_03"];
 
-townMarkerArray = ["Rasman", "Zavarak", "Shamali", "Nur", "Nagara", "Gospandi", "Lalezar", "Mulladost", "Khushab", "Shukuralay", "Chaman", "Jilavur", "Zavarak", "Karachinar", "Garmarud", "Garmsar", "Timurkalay", "Feruzabad", "Ana", "Loymanara", "Chakchak", "Sultansafe", "Chardarakht"];
+townMarkerArray = ["Landay", "Chaman", "Ahmaday", "Shukurkalay", "Chak Chak", "Sar-e Sang pass", "Sakhe", "Jilavur", "Khushab", "Huzrutimam", "Darbang pass", "Sultansafe", "Loy Manara oilfield", "Kakaru", "Bala pass", "Mulladost", "Feruz Abad", "airfield", "Anar", "mine", "Loy Manara", "Jaza", "Gospandi", "Falar", "Naygul valley", "Naran Darre pass", "Nagara", "Timurkalay", "Lalezar", "Bastam", "Chardarakht", "Imarat", "Garmarud", "Nagara-1 oilfield", "Nur", "Hazar Bagh", "Nar", "Garmsar", "Shamali", "Sagram", "Par-e Siah oilfield", "Ravanay", "Zavarak", "Karachinar"];
 publicVariable "townMarkerArray";
 
 enemyTechnical = ["CUP_O_LR_MG_TKM"];
 
-badTownList = ["Zavarak", "Shamali", "Nur", "Nagara", "Gospandi", "Lalezar", "Mulladost", "Khushab", "Shukuralay", "Chaman", "Jilavur", "Zavarak", "Karachinar", "Garmarud", "Garmsar", "Timurkalay", "Feruzabad", "Ana", "Loymanara", "Chakchak", "Sultansafe", "Chardarakht"];
+badTownList = [];
 
 specialTowns = [];

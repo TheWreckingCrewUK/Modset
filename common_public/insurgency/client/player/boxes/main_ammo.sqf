@@ -343,8 +343,7 @@ if (g_class == "BAF_SL") then {
 		["CUP_optic_SB_3_12x50_PMII",1],
 		["ACE_SpottingScope",1],
 		["ACE_ATragMX",1],
-		["ACE_Tripod",1],
-		[ACE_EntrenchingTool,1]
+		["ACE_Tripod",1]
 	];
 };
 
@@ -387,8 +386,7 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_LLM_IR_Black",1],
 		["ACE_ATragMX",1],
 		["ACE_Tripod",1],
-		["itemCTAB",1],
-		[ACE_EntrenchingTool,1]
+		["itemCTAB",1]
 	];
 };
 //class availible to Bravo Section Lead
