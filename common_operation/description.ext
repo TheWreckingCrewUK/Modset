@@ -365,3 +365,9 @@ class ace_medical_menu_maxRange {
 		force = 1;
 	};
 };
+class CfgDebriefingSections {
+	class acex_killTracker {
+		title = "Acex Killed Events";
+		variable = "acex_killTracker_outputText";
+	};
+};

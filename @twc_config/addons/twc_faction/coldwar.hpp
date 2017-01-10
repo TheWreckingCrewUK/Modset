@@ -2499,7 +2499,7 @@
 		linkedItems[]=
 		{
         "CUP_V_RUS_Smersh_1",
-		"SP_MkBushHelmet_Forrest",
+		"UK3CB_BAF_H_Beret_RTR_PRR",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -2507,7 +2507,7 @@
 		respawnLinkedItems[]=
 		{
         "CUP_V_RUS_Smersh_1",
-		"SP_MkBushHelmet_Forrest",
+		"UK3CB_BAF_H_Beret_RTR_PRR",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -2621,7 +2621,7 @@
 		linkedItems[]=
 		{
         "CUP_V_RUS_Smersh_1",
-		"SP_MkBushHelmet_Forrest",
+		"UK3CB_BAF_H_Beret_RTR",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -2629,7 +2629,7 @@
 		respawnLinkedItems[]=
 		{
         "CUP_V_RUS_Smersh_1",
-		"SP_MkBushHelmet_Forrest",
+		"UK3CB_BAF_H_Beret_RTR",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
