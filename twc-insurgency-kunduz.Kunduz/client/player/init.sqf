@@ -126,7 +126,7 @@ if (!isNil "tank1" && {player == tank1}) then {
 	g_group = "1";
 	g_unit = "205";
 	g_name = "Armour Crew Commander";
-	g_radio_channel = 7;
+	g_radio_channel = 4;
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
@@ -138,7 +138,7 @@ if (!isNil "tank2" && {player == tank2}) then {
 	g_group = "1";
 	g_unit = "206";
 	g_name = "Armour Crew";
-	g_radio_channel = 7;
+	g_radio_channel = 4;
 	g_radio = "ACRE_PRC343";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
@@ -150,11 +150,85 @@ if (!isNil "tank3" && {player == tank3}) then {
 	g_group = "1";
 	g_unit = "207";
 	g_name = "Armour Crew";
-	g_radio_channel = 7;
+	g_radio_channel = 4;
 	g_radio = "ACRE_PRC148";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 	execVM "client\restrict\fullArmourCrew.sqf";
+};
+if (!isNil "apache1" && {player == apache1}) then {
+    g_class = "PLT";
+	g_group = "1";
+	g_unit = "141";
+	g_radio_channel = 7;
+	g_radio = "ACRE_PRC343";
+	g_name = "Apache Pilot";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "apache2" && {player == apache2}) then {
+    g_class = "PLT_CREW";
+	g_group = "1";
+	g_unit = "141";
+	g_radio_channel = 7;
+	g_radio = "ACRE_PRC343";
+	g_name = "Apache Gunner";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+if (!isNil "jet1" && {player == jet1}) then {
+    g_class = "PLT";
+	g_group = "1";
+	g_unit = "141";
+	g_name = "BAF Attack Jet Pilot";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+if (!isNil "jet2" && {player == jet2}) then {
+    g_class = "USPLT";
+	g_group = "1";
+	g_unit = "208";
+	g_name = "US Attack Jet Pilot";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+if (!isNil "sniper" && {player == sniper}) then {
+    g_class = "BAF_SN";
+	g_group = "0";
+	g_unit = "144";
+	g_name = "Sniper";
+	g_radio_channel = 8;
+	g_radio = "ACRE_PRC343";
+	crate = "crate8";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "spotter" && {player == spotter}) then {
+    g_class = "BAF_SP";
+	g_group = "0";
+	g_unit = "145";
+	g_name = "Spotter";
+	g_radio_channel = 8;
+	g_radio = "ACRE_PRC343";
+	crate = "crate8";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+if (!isNil "qm" && {player == qm}) then {
+    g_class = "BAF_SL";
+	g_group = "0";
+	g_unit = "000";
+	g_name = "Quartermaster";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are the Quartermaster";
+	//M6 spawner
+	Spawner addAction ["Spawn M6 Mortar box",
+	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
 };
 if (!isNil "P1" && {player == P1}) then {
     g_class = "BAF_SL";
@@ -870,21 +944,27 @@ TWC_fnc_getMERTList = {
    execVM "client\playerlist\mert.sqf";
 };
 
+TWC_fnc_getSniperteamList = {
+   execVM "client\playerlist\sniperteam.sqf";
+};
+
 playerListAction = ["thisStartsTheList","Player List","", {},{true}] call ace_interact_menu_fnc_createAction;
 alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}] call ace_interact_menu_fnc_createAction;
 bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
 charlieAction = ["CharlieList","Charlie List","", {call TWC_fnc_getCharlieList;},{true}] call ace_interact_menu_fnc_createAction;
 airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ace_interact_menu_fnc_createAction;
-armourAction = ["ArmourList","Armour List","", {call TWC_fnc_getArmourList;},{true}] call ace_interact_menu_fnc_createAction;
-mertAction = ["MERTList","MERT List","", {call TWC_fnc_getMERTList;},{true}] call ace_interact_menu_fnc_createAction;
+//armourAction = ["ArmourList","Armour List","", {call TWC_fnc_getArmourList;},{true}] call ace_interact_menu_fnc_createAction;
+//mertAction = ["MERTList","MERT List","", {call TWC_fnc_getMERTList;},{true}] call ace_interact_menu_fnc_createAction;
+sniperteamAction = ["SniperteamList","Sniperteam List","", {call TWC_fnc_getSniperteamList;},{true}] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], playerListAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], alphaAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], bravoAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], charlieAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
-[player, 1, ["ACE_SelfActions", "thisStartsTheList"], armourAction] call ace_interact_menu_fnc_addActionToObject;
-[player, 1, ["ACE_SelfActions", "thisStartsTheList"], mertAction] call ace_interact_menu_fnc_addActionToObject;
+//[player, 1, ["ACE_SelfActions", "thisStartsTheList"], armourAction] call ace_interact_menu_fnc_addActionToObject;
+//[player, 1, ["ACE_SelfActions", "thisStartsTheList"], mertAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], sniperteamAction] call ace_interact_menu_fnc_addActionToObject;
 
 
 ammoCrateSpawner addAction ["Repair/Rearm/Refuel Vehicle",

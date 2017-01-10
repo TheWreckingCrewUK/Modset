@@ -944,6 +944,10 @@ TWC_fnc_getMERTList = {
    execVM "client\playerlist\mert.sqf";
 };
 
+TWC_fnc_getSniperteamList = {
+   execVM "client\playerlist\sniperteam.sqf";
+};
+
 playerListAction = ["thisStartsTheList","Player List","", {},{true}] call ace_interact_menu_fnc_createAction;
 alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}] call ace_interact_menu_fnc_createAction;
 bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
@@ -951,6 +955,7 @@ charlieAction = ["CharlieList","Charlie List","", {call TWC_fnc_getCharlieList;}
 airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ace_interact_menu_fnc_createAction;
 armourAction = ["ArmourList","Armour List","", {call TWC_fnc_getArmourList;},{true}] call ace_interact_menu_fnc_createAction;
 mertAction = ["MERTList","MERT List","", {call TWC_fnc_getMERTList;},{true}] call ace_interact_menu_fnc_createAction;
+sniperteamAction = ["SniperteamList","Sniperteam List","", {call TWC_fnc_getSniperteamList;},{true}] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], playerListAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], alphaAction] call ace_interact_menu_fnc_addActionToObject;
@@ -959,6 +964,7 @@ mertAction = ["MERTList","MERT List","", {call TWC_fnc_getMERTList;},{true}] cal
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], airAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], armourAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], mertAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], sniperteamAction] call ace_interact_menu_fnc_addActionToObject;
 
 
 ammoCrateSpawner addAction ["Repair/Rearm/Refuel Vehicle",
