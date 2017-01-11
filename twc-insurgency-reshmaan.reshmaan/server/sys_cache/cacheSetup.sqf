@@ -26,8 +26,8 @@ if (isNil "InsP_cacheGroup") then {
 	waitUntil {!(isNil "cacheBoxA") && !(isNil "cacheBoxB") &&!(isNil "cacheBoxC") && !(isNil "InsP_cacheGroup")};
 
 	{
-		while {(_x distance (getMarkerPos "cacheSpawn")) < 50} do {
-			_cacheMarker = "";
+ 		while {(_x distance (getMarkerPos "cacheSpawn")) <50 || (_x distance (getmarkerpos "respawn_west")) < 500 } do {			
+ 			_cacheMarker = "";
 	
 			_houseList = [(worldSize / 2),(worldSize / 2)] nearObjects ["House",(sqrt 2 *(worldSize / 2))];
 			sleep .25;
