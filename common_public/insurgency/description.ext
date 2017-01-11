@@ -105,6 +105,15 @@ class CfgDebriefing
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
+	class End9
+	{
+		title = "Quartermaster unavailable";
+		subtitle = "";
+		description = "Quartermaster role is only available for management. Play as general infantry for now.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
 };
 class ACE_Settings {
 //ACE Finger

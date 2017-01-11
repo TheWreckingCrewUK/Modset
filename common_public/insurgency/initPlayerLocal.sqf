@@ -69,7 +69,7 @@ if(isMultiplayer)then{
 	sleep 5;
 };
 
-_specialSlots = ["helo1","helo2","helo3","helo4","tank1","tank2","tank3","humanCiv1","humanCiv2","humanCiv3","apache1", "apache2", "jet1", "jet2"];
+_specialSlots = ["helo1","helo2","helo3","helo4","tank1","tank2","tank3","humanCiv1","humanCiv2","humanCiv3","apache1", "apache2", "jet1", "jet2", "qm"];
 
 if ((str player) in _specialSlots)then{
 	
@@ -133,6 +133,14 @@ if ((str player) in _specialSlots)then{
 		
 		if ((str player) in _mertteam && (count playableUnits) < _numPlayers) then{
 			["End6", false, 0] call BIS_fnc_endMission;
+		};
+		//lock Quartermaster slot for management
+		if((_UID) != "_SP_PLAYER_" && (_UID) = "76561198005456546" || "76561198103286410" || "76561198070630639" || "76561198050180681")then{	
+		_management = ["qm"];
+		};
+
+		if ((str player) !in _management) then{
+			["End9", false, 0] call BIS_fnc_endMission;
 		};
 	};
 };
