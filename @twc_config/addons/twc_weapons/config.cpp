@@ -2681,11 +2681,125 @@ class CfgVehicles
 			supplyRadius=3;
 		};
 	};
-	class TWC_Vehicle_Ammo:Box_NATO_AmmoVeh_F
+	class TWC_Vehicle_Ammo_ColdWar:Box_NATO_AmmoVeh_F
 	{
 		transportAmmo=1000000;
 		supplyRadius=10;
 		ace_dragging_canDrag = 1;
+		class TransportMagazines
+		{
+			class _xx_Sterling_34Rnd
+			{
+				magazine = "34_rnd_sterling_mag";
+				count = 25;
+			};
+			class _xx_UK3CB_BAF_762_20Rnd
+			{
+				magazine="UK3CB_BAF_762_20Rnd";
+				count=100;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine="UK3CB_BAF_762_100Rnd";
+				count=30;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine="UK3CB_BAF_762_100Rnd_T";
+				count=10;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine="ACE_HandFlare_White";
+				count=10;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine="tf47_m3maaws_HEAT";
+				count=10;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine="tf47_m3maaws_HE";
+				count=10;
+			};
+			class _xx_tf47_m3maaws_SMOKE
+			{
+				magazine="tf47_m3maaws_SMOKE";
+				count=10;
+			};
+			class _xx_tf47_m3maaws_ILLUM
+			{
+				magazine="tf47_m3maaws_ILLUM";
+				count=10;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=30;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=25;
+			};
+			class _xx_60MortarRound
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Shells";
+				count = 60;
+			};
+			class _xx_60MortarRound_Smoke
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White";
+				count = 20;
+			};
+			class _xx_60MortarRound_Flare
+			{
+				magazine="UK3CB_BAF_1Rnd_60mm_Mo_Flare_White";
+				count = 20;
+			};
+		};
+		class TransportItems
+	    {
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 50;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 25;
+			};
+			class _xx_Epipen
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _xx_ACE_bloodIV_500
+			{
+				name = "ACE_bloodIV_500";
+				count = 40;
+			};
+			class _xx_DemolitionBlock
+			{
+				name = "DemoCharge_Remote_Mag";
+				count = 5;
+			};
+			class _xx_Clacker
+			{
+				name = "ACE_Clacker";
+				count = 5;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_LAW
+			{
+				Weapon = "HAFM_LAW";
+				count = 10;
+			};
+		};
 	};
 	class TWC_modern_Warrior_Ammobox:CUP_BAF_VehicleBox
 	{
