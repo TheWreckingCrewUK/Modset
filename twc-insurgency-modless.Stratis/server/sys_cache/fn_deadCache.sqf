@@ -23,7 +23,9 @@ _marker setMarkerText ("Cache Destroyed");
 _marker setMarkerSize [0.75, 0.75];
 //[_marker, true] call CBA_fnc_setMarkerPersistent;
 
-[_killer] call InsP_fnc_counterAttack;
+if(side _killer == WEST)then{
+	[_killer] call InsP_fnc_counterAttack;
+}
 
 if(InsP_ammoCaches == 3) then {
 	["All caches destroyed. Mission Completed", "hint", True, True] call BIS_fnc_MP;

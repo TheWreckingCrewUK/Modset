@@ -30,6 +30,7 @@ class cfgFunctions
 	{
 		class twc
 		{
+			class globalChat {};
 			class spawnAIUnits {};
 			class spawnCiv {};
 			class spawnDefend {};

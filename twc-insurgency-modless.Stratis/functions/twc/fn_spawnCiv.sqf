@@ -18,8 +18,16 @@
 *
 * Author: [TWC] Fakematty / [TWC] Jayman
 */
-_group = createGroup civilian;
 params["_pos", "_civnum", "_civradius"];
+
+_group = createGroup civilian;
+
+_civnum = floor(_civnum + InsP_enemyMorale);
+_civnum = switch (_civnum) do {
+	case (_civnum < 3) : {3};
+	case (_civnum > 8) : {8};
+	default {_civnum};
+};
 
 for "_i" from 1 to _civnum do {
 

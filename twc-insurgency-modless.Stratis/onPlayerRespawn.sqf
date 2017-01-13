@@ -30,6 +30,13 @@ actions set [0, player addAction ["<t color = '#145A32'>PlayerList</t>", {
 			} forEach actions;
 			call twc_fnc_playerListAction;
 		}, [], 1, false, false]];
+		actions set [5, player addAction [" Armour List ", {
+			execVM "client\playerList\armourcrew.sqf";
+			{
+				player removeAction _x;
+			} forEach actions;
+			call twc_fnc_playerListAction;
+		}, [], 1, false, false]];
 	};
 }, [], 1, false, false]];
 };

@@ -1,7 +1,5 @@
 #include "defines.sqf";
 #include "arsenal\arsenal.sqf";
-//#include "func\init.sqf";
-#include "functions\init.sqf";
 #include "cleanup\init.sqf";
 
 if (isNil "InsP_enemyMorale") then {

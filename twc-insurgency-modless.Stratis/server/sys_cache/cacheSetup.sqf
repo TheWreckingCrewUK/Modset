@@ -26,8 +26,7 @@ if (isNil "InsP_cacheGroup") then {
 	waitUntil {!(isNil "cacheBoxA") && !(isNil "cacheBoxB") &&!(isNil "cacheBoxC") && !(isNil "InsP_cacheGroup")};
 
 	{
-		while {(_x distance (getMarkerPos "cacheSpawn")) < 50 || _x distance (getMarkerPos "arsenal") < 1000} do {
-			_cacheMarker = "";
+		while {(_x distance (getMarkerPos "cacheSpawn")) < 50 || _x distance (getMarkerPos "arsenal") < 1000 || (_x distance cacheBoxA < 1000 && _x != cacheBoxA) || (_x distance cacheBoxB < 1000 && _x != cacheBoxB) || (_x distance cacheBoxC < 1000 && _x != cacheBoxC)} do {
 	
 			_houseList = [(worldSize / 2),(worldSize / 2)] nearObjects ["House",(sqrt 2 *(worldSize / 2))];
 			sleep .25;
@@ -51,6 +50,6 @@ if (isNil "InsP_cacheGroup") then {
 		_trg = createTrigger ["EmptyDetector", getPos _x];
 		_trg setTriggerArea [800, 800, 0, false];
 		_trg setTriggerActivation ["West", "PRESENT", False];
-		_trg setTriggerStatements ["(((objectParent (thisList call bis_fnc_selectRandom)) isKindOf 'air') || (getPosATL (thisList call bis_fnc_selectRandom)) select 2 < 25)","[(getPos thisTrigger),8,300,4,[400,800],thisList] call twc_fnc_townSetup",""];
+		_trg setTriggerStatements ["(((objectParent (thisList call bis_fnc_selectRandom)) isKindOf 'air') || (getPosATL (thisList call bis_fnc_selectRandom)) select 2 < 25)","['null',(getPos thisTrigger),8,300,4,[400,800],thisList] call twc_fnc_townSetup",""];
 	}forEach InsP_cacheGroup;
 };

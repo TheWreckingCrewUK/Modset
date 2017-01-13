@@ -19,7 +19,8 @@ params["_pos"];
 [_pos]spawn{
 _pos = (_this select 0);
 _num = 0;
-_total = 10;
+_total = (6 + -InsP_enemyMorale);
+_total = if(_total > 10)then{10}else{_total};
 _group = createGroup East;
 	for "_i" from 1 to _total do{
 		_unit = _group createUnit [(townSpawn select _num), _pos,[], 5,"NONE"];

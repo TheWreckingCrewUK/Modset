@@ -24,6 +24,6 @@ vehicleList = ["C_Offroad_01_F", "C_Quadbike_01_F", "C_SUV_01_F", "C_Van_01_tran
 
 enemyTechnical = ["O_G_Offroad_01_armed_F"];
 
-badTownList = ["Stratis Air Base","airfield","The Spartan"];
+badTownList = ["Stratis Air Base","airfield","The Spartan","Pythos","Xiros","LZ Baldy","Kamino Coast"];
 
 specialTowns = [];

@@ -1,4 +1,5 @@
-params["_pos","_thisList"];
+params["_pos","_thisList","_marker"];
+systemChat str _marker;
 
 _bluVictory = if ((west countSide _thisList) == 0) then {"0";}else{"1";};
 if(_bluVictory == "0")then{
@@ -16,8 +17,9 @@ if(_bluVictory == "0")then{
 		};
 	}forEach _bluNear;
 	if(_near == 0)then{
-		[_pos,_thisList] call twc_fnc_townReset;
+		[_pos,_thisList,_marker] call twc_fnc_townReset;
 	};
 }else{
-
+	_marker setMarkerColor "colorWEST";
+	_marker setMarkerText "Area Cleared";
 };
