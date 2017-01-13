@@ -9,6 +9,7 @@
 */
 params ["_range"];
 
+ if (isDedicated) exitWith {};
 if(!hasInterface)exitWith{};
 
 if (_range == 0) exitWith {};
@@ -16,46 +17,10 @@ if (_range == 0) exitWith {};
 
 if (getMarkerColor "base" == "") exitWith {systemChat "No shooting in base is enabled, but no base marker is defined"};
 
-#define SAFETY_ZONES    [["base", _range]] // Syntax: [["base", 500], ["marker2", radius2], ...]
-#define MESSAGE "Don't shoot or throw grenades on base!"
-
-     if (isDedicated) exitWith {};
-     waitUntil {!isNull player};
-
-switch (playerSide) do
-{
-	case west:
+player addEventHandler ["Fired", {
+	if (((_this select 0) distance (getMarkerPos "base")) < _range) then
 	{
-		player addEventHandler ["Fired", {
-			if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0) then
-			{
-				deleteVehicle (_this select 6);
-				titleText [MESSAGE, "PLAIN", 3];
-			};
-		}];
+		deleteVehicle (_this select 6);
+		titleText ["Don't shoot or throw grenades on base!", "PLAIN", 3];
 	};
-	
-	case east:
-	{
-		player addEventHandler ["Fired", {
-			if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0) then
-			{
-				deleteVehicle (_this select 6);
-				titleText [MESSAGE, "PLAIN", 3];
-			};
-		}];
-	};
-	
-	case civilian:
-	{
-
-
-     player addEventHandler ["Fired", {
-            if ({(_this select 0) distance getMarkerPos (_x select 0) < _x select 1} count SAFETY_ZONES > 0) then
-            {
-             deleteVehicle (_this select 6);
-             titleText [MESSAGE, "PLAIN", 3];
-             };
-        }];  
-	};
-};
+}];
