@@ -56,7 +56,7 @@ if(str player in _specialCases)then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
 				if((_this select 2) isKindOf "Air")then{
-					if(typeOf (_this select 2) == "CUP_B_GR9_CAP_GB")then{
+					if(typeOf (_this select 2) == "CUP_B_GR9_GBU12_GB")then{
 			
 					}else{
 						hint "You are a BAF Attack Jet Pilot. You may only the following aircrafts: Harrier";
