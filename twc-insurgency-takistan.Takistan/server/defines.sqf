@@ -4,7 +4,6 @@
 Known other changes occur in:
 server\sys_cache\cacheLoadout.sqf
 server\sys_vehicles\VBIED.sqf
-
 */
 
 civilianType = "C_man_1";
@@ -12,7 +11,6 @@ civilianType = "C_man_1";
 homeEnemy = ["CUP_O_TK_INS_Soldier"];
 
 AA_VEHICLE_TYPE = "CUP_O_ZU23_TK_INS";
-
 AATeams = 6;
 AATeam = ["CUP_O_TK_INS_Soldier", "CUP_O_TK_INS_Soldier_AA", "CUP_O_TK_INS_Soldier_AA", "CUP_O_TK_INS_Soldier_AA"];
 
@@ -27,11 +25,14 @@ townSquadWave = ["CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_
 
 vehicleList = ["CUP_C_UAZ_Unarmed_TK_CIV", "CUP_C_Skoda_Blue_CIV", "CUP_C_Datsun_Plain", "CUP_C_Ural_Open_Civ_03"];
 
-townMarkerArray = ["Landay", "Chaman", "Ahmaday", "Shukurkalay", "Chak Chak", "Sar-e Sang pass", "Sakhe", "Jilavur", "Khushab", "Huzrutimam", "Darbang pass", "Sultansafe", "Loy Manara oilfield", "Kakaru", "Bala pass", "Mulladost", "Feruz Abad", "airfield", "Anar", "mine", "Loy Manara", "Jaza", "Gospandi", "Falar", "Naygul valley", "Naran Darre pass", "Nagara", "Timurkalay", "Lalezar", "Bastam", "Chardarakht", "Imarat", "Garmarud", "Nagara-1 oilfield", "Nur", "Hazar Bagh", "Nar", "Garmsar", "Shamali", "Sagram", "Par-e Siah oilfield", "Ravanay", "Zavarak", "Karachinar"];
+//Run Jayman's location finder script and add towns here
+townMarkerArray = ["Landay", "Chaman", "Ahmaday", "Shukurkalay", "Chak Chak", "Sakhe", "Jilavur", "Khushab", "Huzrutimam", "Sultansafe", "Kakaru", "Bala pass", "Mulladost", "Feruz Abad", "airfield", "Anar", "mine", "Loy Manara", "Jaza", "Gospandi", "Falar",  "Nagara", "Timurkalay", "Lalezar", "Bastam", "Chardarakht", "Imarat", "Garmarud", "Nur", "Hazar Bagh", "Nar", "Garmsar", "Shamali", "Sagram", "Ravanay", "Zavarak", "Karachinar"];
 publicVariable "townMarkerArray";
 
 enemyTechnical = ["CUP_O_LR_MG_TKM"];
 
-badTownList = [];
+//Enemy will not spawn in these towns
+badTownList = ["military base", "Rasman", "Sar-e Sang pass", "Darbang pass", "Loy Manara oilfield", "Naygul valley", "Naran Darre pass", "Par-e Siah oilfield", "Nagara-1 oilfield"];
 
+//Towns specified with a marker
 specialTowns = [];

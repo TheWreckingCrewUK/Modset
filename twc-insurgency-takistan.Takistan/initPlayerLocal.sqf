@@ -34,7 +34,7 @@ _defuseAction = [
 				_rand = (random 5);
 				if(_rand < 1)then{
 					
-					[player] remoteExecCall ["TWC_fnc_iedAttack",2];
+				[player] remoteExecCall ["TWC_fnc_iedAttack",2];
 				};
 				_markerstr = createMarker [str random 10000, player];
 				_markerstr setMarkerShape "ICON";
@@ -46,7 +46,7 @@ _defuseAction = [
 				
             },
             {},
-            "Disarming..."
+            "Disarming... No sudden moves..."
         ] call ACE_common_fnc_progressBar;
     },
     {true},
@@ -63,50 +63,48 @@ if(isMultiplayer)then{
 	titleText ["The Wrecking Crew","PLAIN DOWN"];
 	titleFadeOut 7;
 	sleep 5;
-
-	titleText ["Insurgency Plus","PLAIN DOWN"];
+	titleText ["Insurgency Plus 4","PLAIN DOWN"];
+	titleFadeOut 7;
+	sleep 5;
+	titleText ["Join us at: www.thewreckingcrew.eu","PLAIN DOWN"];
+	titleFadeOut 7;
+	sleep 5;
+	titleText ["TS3: ts.thewreckingcrew.eu","PLAIN DOWN"];
 	titleFadeOut 7;
 	sleep 5;
 };
 
-_specialSlots = ["helo1","helo2","helo3","helo4","tank1","tank2","tank3","humanCiv1","humanCiv2","humanCiv3","apache1", "apache2", "jet1", "jet2"];
+_specialSlots = ["P501","P502","P503","P504","P505", "P506","P601","P602","P603","P507", "P508", "P901"];
 
 if ((str player) in _specialSlots)then{
 	
 	_UID = getPlayerUID player;
 	if((_UID) != "_SP_PLAYER_" && (_UID) != "76561198070630639")then{	
-		_pilots = ["helo1", "helo2","helo3", "helo4"];
-		_jet = ["jet1", "jet2"];
-		_apache = ["apache1", "apache2"];
-		_armourCrew = ["tank1","tank2","tank3"];
-		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
-		_mertteam = ["mert_sl","mert_med"];
+		_pilots = ["P501", "P502","P503", "P504"];
+		_armourCrew = ["P601","P602","P603"];
+		_jet = ["P505", "P506"];
+		_apache = ["P507", "P508"];
 		_numPlayers = switch (str player) do{
-			case "helo1";
-			case "helo2";
-			case "helo3";
-			case "helo4": {5};
-			case "tank1";
-			case "tank2";
-			case "tank3": {12};
-			case "humanCiv1": {10};
-			case "humanCiv2": {15};
-			case "humanCiv3": {20};
-			case "mert_sl";
-			case "mert_med": {15};
-			case "jet1";
-			case "jet2": {15};
-			case "apache1";
-			case "apache2": {20};
+			case "P501";
+			case "P502";
+			case "P503";
+			case "P504": {5};
+			case "P601";
+			case "P602";
+			case "P603": {12};
+			case "P505";
+			case "P506": {15};
+			case "P507";
+			case "P508": {20};
 			default {hint "Please send a message to [TWC] Adam saying the FIRST init.sqf switch statement defaulted and what slot you are in."};
 		};
 		_justPlayers = count(allPlayers - entities "HeadlessClient_F");
 		
 		_pilotMultiplier = 0;
-		if(isPlayer helo1)then{_pilotMultiplier = _pilotMultiplier + 1};
-		if(isPlayer helo2)then{_pilotMultiplier = _pilotMultiplier + 1};
-		if(isPlayer helo3)then{_pilotMultiplier = _pilotMultiplier + 1};
-		if(isPlayer helo4)then{_pilotMultiplier = _pilotMultiplier + 1};
+		if(isPlayer P501)then{_pilotMultiplier = _pilotMultiplier + 1};
+		if(isPlayer P502)then{_pilotMultiplier = _pilotMultiplier + 1};
+		if(isPlayer P503)then{_pilotMultiplier = _pilotMultiplier + 1};
+		if(isPlayer P504)then{_pilotMultiplier = _pilotMultiplier + 1};
 		hint str (_justPlayers * _pilotMultiplier);
 		
 		if ((str player) in _pilots && (_justPlayers * _pilotMultiplier) < _numPlayers) then {
@@ -114,33 +112,32 @@ if ((str player) in _specialSlots)then{
 		};
 		
 		if ((str player) in _armourCrew && (count playableUnits) < _numPlayers) then{
-			["End6", false, 0] call BIS_fnc_endMission;
+			["End3", false, 0] call BIS_fnc_endMission;
 		};
 
 		if ((str player) in _jet && (count playableUnits) < _numPlayers) then{
-			["End8", false, 0] call BIS_fnc_endMission;
-		};
-
-		if ((str player) in _apache && (count playableUnits) < _numPlayers) then{
 			["End4", false, 0] call BIS_fnc_endMission;
 		};
 
-		if ((str player) in _humancivs) then{
-			if ((count playableUnits) < _numPlayers || !(_UID in memberIDArray) || (_UID  in InsP_playersKilledAsCivs) || _timePlayed < 15) then{
-				["End3", false, 0] call BIS_fnc_endMission;
-			};
+		if ((str player) in _apache && (count playableUnits) < _numPlayers) then{
+			["End5", false, 0] call BIS_fnc_endMission;
 		};
-		
-		if ((str player) in _mertteam && (count playableUnits) < _numPlayers) then{
-			["End6", false, 0] call BIS_fnc_endMission;
-		};
+
+		//lock Quartermaster slot for management NOT WORKING YET
+//		if((_UID) != "_SP_PLAYER_" && (_UID) = "76561198005456546" || "76561198103286410" || "76561198070630639" || "76561198050180681")then{	
+//		_management = ["qm"];
+//		};
+
+//		if ((str player) !in _management) then{
+//			["End9", false, 0] call BIS_fnc_endMission;
+//		};
 	};
 };
 
 if(isMultiplayer)then{
 	cutText ["", "BLACK IN", 2];
 
-	titleText ["Enjoy your stay", "PLAIN"];
+	titleText ["Enjoy your stay at The Wrecking Crew Public Server", "PLAIN"];
 	titleFadeOut 4;
 };
 

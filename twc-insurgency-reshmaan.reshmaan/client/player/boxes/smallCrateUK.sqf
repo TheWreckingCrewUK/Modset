@@ -40,11 +40,6 @@ _box AddMagazineCargoGlobal ["UK3CB_BAF_9_17Rnd",10];
 _box AddMagazineCargoGlobal ["UK3CB_BAF_12G_Pellets",8];
 _box AddMagazineCargoGlobal ["UK3CB_BAF_12G_Slugs",8];
 
-//Sniper Ammo
-_box AddMagazineCargoGlobal ["UK3CB_BAF_338_5Rnd",10];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_338_5Rnd_Tracer",10];
-
-
 _box addItemCargoGlobal ["ACE_fieldDressing",20];
 _box addItemCargoGlobal ["ACE_elasticBandage",20];
 _box addItemCargoGlobal ["ACE_quikclot",20];

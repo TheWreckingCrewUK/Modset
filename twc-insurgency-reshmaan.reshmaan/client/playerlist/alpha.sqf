@@ -1,19 +1,27 @@
-//made by hartzie edited by FakeMatty
-_player1 = if(!isNil "p1")then{if(!isPlayer p1)then{"";}else{(name p1);};}else{"";};
-_player2 = if(!isNil "p2")then{if(!isPlayer p2)then{"";}else{(name p2);};}else{"";};
-_player3 = if(!isNil "p3")then{if(!isPlayer p3)then{"";}else{(name p3);};}else{"";};
-_player4 = if(!isNil "p4")then{if(!isPlayer p4)then{"";}else{(name p4);};}else{"";};
-_player5 = if(!isNil "p5")then{if(!isPlayer p5)then{"";}else{(name p5);};}else{"";};
-_player6 = if(!isNil "p6")then{if(!isPlayer p6)then{"";}else{(name p6);};}else{"";};
-_player7 = if(!isNil "p7")then{if(!isPlayer p7)then{"";}else{(name p7);};}else{"";};
-_player8 = if(!isNil "p8")then{if(!isPlayer p8)then{"";}else{(name p8);};}else{"";};
+//made by hartzie edited by Adam[TWC]
+_player1 = if(!isNil "p101")then{if(!isPlayer p101)then{"";}else{(name p101);};}else{"";};
+_player2 = if(!isNil "p102")then{if(!isPlayer p102)then{"";}else{(name p102);};}else{"";};
+_player3 = if(!isNil "p103")then{if(!isPlayer p103)then{"";}else{(name p103);};}else{"";};
+_player4 = if(!isNil "p104")then{if(!isPlayer p104)then{"";}else{(name p104);};}else{"";};
+_player5 = if(!isNil "p105")then{if(!isPlayer p105)then{"";}else{(name p105);};}else{"";};
+_player6 = if(!isNil "p106")then{if(!isPlayer p106)then{"";}else{(name p106);};}else{"";};
+_player7 = if(!isNil "p107")then{if(!isPlayer p107)then{"";}else{(name p107);};}else{"";};
+_player8 = if(!isNil "p108")then{if(!isPlayer p108)then{"";}else{(name p108);};}else{"";};
 
-
-
-
-g_playerlist = [["Alpha British Army", [["Alpha Section Leader", [_player1, "Section Leader"], [_player2, "Rifleman"], [_player3, "Grenadier"], [_player4, "Automatic Rifleman"]], ["Fire Team 2", [_player5, "2IC"], [_player6, "Machine Gunner"], [_player7, "Marksman"], [_player8, "Medic"]]]]					
-				
-				];
+g_playerlist = [["Alpha British Army", 
+	[["Charlie", 
+		[_player1, "Section Leader"], 
+		[_player2, "Rifleman"], 
+		[_player3, "Grenadier"], 
+		[_player4, "Automatic Rifleman"]],
+	["Delta", 
+		[_player5, "2IC"], 
+		[_player6, "Machine Gunner"], 
+		[_player7, "Marksman"], 
+		[_player8, "Medic"]]
+		]
+	]						
+];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
 _headline = "<t color='#CCCC00' size='1.2' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
@@ -21,7 +29,6 @@ _smallheadline = "<t color='#99CCFF' size='1.1' shadow='1' shadowColor='#000000'
 _itemEmpty = "<t color='#99FFFF' size='1' shadow='1' shadowColor='#000000' align='left'>  Offline</t><br />";
 _item = "<t color='#33CC00' size='1' shadow='1' shadowColor='#000000' align='left'>  %1</t><br />";
 _text = "";
-
 
 {
 	//systemChat format["debug:%1", _x];

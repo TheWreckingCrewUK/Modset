@@ -6,12 +6,12 @@
 #include "sys_aa\init.sqf";
 
 if (isNil "InsP_enemyMorale") then {
-	InsP_enemyMorale = 0;
+	InsP_enemyMorale = -3;
 	publicVariable "InsP_enemyMorale";
 };
 
 if(isNil "InsP_civTrust") then{
-	InsP_civTrust = 0;
+	InsP_civTrust = -2;
 	publicVariable "InsP_civTrust";
 };
 
@@ -21,4 +21,4 @@ if(isNil "InsP_civTrust") then{
 #include "sys_smallTown\init.sqf";
 #include "sys_townLocations\init.sqf";
 #include "sys_cache\init.sqf";
-#include "sys_sideMissions\init.sqf";
+//#include "sys_sideMissions\init.sqf";

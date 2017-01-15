@@ -9,9 +9,9 @@ if(!isMultiplayer)exitWith{};
 cutText ["", "Black", 0.001];
 player forceWalk true;
 
-if (player == helo2)then{
+if (player == P502)then{
 
-	while {!isPlayer helo2}do{
+	while {!isPlayer P502}do{
 		[
 			"<t size='1.2'>Crew Cheif</t><br/><t size='0.6'>You cannot Crew Cheif without your pilot. Perhaps switch to pilot?</t>", 0, 0.22, 5, 0, 0, 2
 		] spawn bis_fnc_dynamictext;
@@ -19,8 +19,8 @@ if (player == helo2)then{
 	};
 };
 
-if (player == helo4)then{
-	while {!isPlayer helo3}do{
+if (player == P504)then{
+	while {!isPlayer P504}do{
 		[
 			"<t size='1.2'>Crew Cheif</t><br/><t size='0.6'>You cannot Crew Cheif without your pilot. Perhaps switch to pilot?</t>", 0, 0.22, 5, 0, 0, 2
 		] spawn bis_fnc_dynamictext;

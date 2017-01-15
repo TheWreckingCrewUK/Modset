@@ -3,11 +3,10 @@ joinUnassigned	= 1;
 disableChannels[]={0,1,2,3,4,6};
 
 
-onLoadName = "Insurgency Plus";
+onLoadName = "Insurgency Plus 4";
 onLoadMission = "http://www.thewreckingcrew.eu/";
 author = "WiredTiger[TWC] / Jayman[TWC] / Paddock[TWC] / Adam [TWC]";
 loadScreen = "pics\loading.jpg";
-
 
 class Header
 {
@@ -16,15 +15,13 @@ class Header
 	maxPlayers = 60;
 };
 
-
+//Respawn settings
 respawn="BASE";
 respawndelay = 5;
 respawnDialog = false;
 respawnOnStart = 0;
 
 enableDebugConsole = 1;
-
-
 
 class CfgDebriefing
 {
@@ -40,7 +37,7 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Pilot Unavailable";
+		title = "Transport Pilot Unavailable";
 		subtitle = "More players are needed for Pilot.";
 		description = "5 player per Pilot. Including Crew Cheifs";
 		// pictureBackground = "";
@@ -50,9 +47,9 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "You can not play as a human Civilian";
-		subtitle = "";
-		description = "Play as Blufor for now";
+		title = "Armour Crew Unavailable";
+		subtitle = "More players are needed for Armour Crew.";
+		description = "12 Players are required. Play as general infantry for now";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -60,15 +57,15 @@ class CfgDebriefing
 
 	class End4
 	{
-		title = "Apache Unavailable";
-		subtitle = "20 Players and a Member.";
-		description = "Play general infantry for now!";
+		title = "Jet unavailable";
+		subtitle = "More players are needed for a Jet.";
+		description = "15 Players are required. Play as general infantry for now";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
 
-	class End5
+	class End6
 	{
 		title = "Mission End";
 		subtitle = "Good Job!";
@@ -77,35 +74,9 @@ class CfgDebriefing
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
-
-	class End6
-	{
-		title = "Armour Crew Unavailible";
-		subtitle = "";
-		description = "Play as general infantry for now";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-	class End7
-	{
-		title = "You cannot play as independent";
-		subtitle = "Speak to [TWC] Bosenator for this slot";
-		description = "Play as Blufor for now";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-	class End8
-	{
-		title = "Jet unavailable";
-		subtitle = "";
-		description = "Play as general infantry for now";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
 };
+
+//ACE3 Settings
 class ACE_Settings {
 //ACE Finger
 	class ace_finger_enabled {
@@ -283,7 +254,7 @@ class ace_medical_useLocation_basicEpi {
     force = 1;
 };
 class ace_medical_useLocation_PAK {
-    value = 0;
+    value = 1;
     typeName = "SCALAR";
     force = 1;
 };

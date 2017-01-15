@@ -1,21 +1,40 @@
-//made by hartzie edited by FakeMatty
-_player18 = if(!isNil "p18")then{if(!isPlayer p18)then{"";}else{(name p18);};}else{"";};
-_player19 = if(!isNil "p19")then{if(!isPlayer p19)then{"";}else{(name p19);};}else{"";};
-_player20 = if(!isNil "p20")then{if(!isPlayer p20)then{"";}else{(name p20);};}else{"";};
-_player21 = if(!isNil "p21")then{if(!isPlayer p21)then{"";}else{(name p21);};}else{"";};
-_player22 = if(!isNil "p22")then{if(!isPlayer p22)then{"";}else{(name p22);};}else{"";};
-_player23 = if(!isNil "p23")then{if(!isPlayer p23)then{"";}else{(name p23);};}else{"";};
-_player24 = if(!isNil "p24")then{if(!isPlayer p24)then{"";}else{(name p24);};}else{"";};
-_player25 = if(!isNil "p25")then{if(!isPlayer p25)then{"";}else{(name p25);};}else{"";};
-_player26 = if(!isNil "p26")then{if(!isPlayer p26)then{"";}else{(name p26);};}else{"";};
-_player27 = if(!isNil "p27")then{if(!isPlayer p27)then{"";}else{(name p27);};}else{"";};
-_player28 = if(!isNil "p28")then{if(!isPlayer p28)then{"";}else{(name p28);};}else{"";};
-_player29 = if(!isNil "p29")then{if(!isPlayer p29)then{"";}else{(name p29);};}else{"";};
-_player30 = if(!isNil "p30")then{if(!isPlayer p30)then{"";}else{(name p30);};}else{"";};
+//made by hartzie edited by Adam[TWC]
+_player18 = if(!isNil "p301")then{if(!isPlayer p301)then{"";}else{(name p301);};}else{"";};
+_player19 = if(!isNil "p302")then{if(!isPlayer p302)then{"";}else{(name p302);};}else{"";};
+_player20 = if(!isNil "p303")then{if(!isPlayer p303)then{"";}else{(name p303);};}else{"";};
+_player21 = if(!isNil "p304")then{if(!isPlayer p304)then{"";}else{(name p304);};}else{"";};
+_player22 = if(!isNil "p305")then{if(!isPlayer p305)then{"";}else{(name p305);};}else{"";};
+_player23 = if(!isNil "p306")then{if(!isPlayer p306)then{"";}else{(name p306);};}else{"";};
+_player24 = if(!isNil "p307")then{if(!isPlayer p307)then{"";}else{(name p307);};}else{"";};
+_player25 = if(!isNil "p308")then{if(!isPlayer p308)then{"";}else{(name p308);};}else{"";};
+_player26 = if(!isNil "p309")then{if(!isPlayer p309)then{"";}else{(name p309);};}else{"";};
+_player27 = if(!isNil "p310")then{if(!isPlayer p310)then{"";}else{(name p310);};}else{"";};
+_player28 = if(!isNil "p311")then{if(!isPlayer p311)then{"";}else{(name p311);};}else{"";};
+_player29 = if(!isNil "p312")then{if(!isPlayer p312)then{"";}else{(name p312);};}else{"";};
+_player30 = if(!isNil "p313")then{if(!isPlayer p313)then{"";}else{(name p313);};}else{"";};
 
 
-g_playerlist = [["Charlie USMC", [["Charlie Squad Leader", [_player18, "Squad Leader"]], ["Fire Team 1", [_player19, "Fire Team Leader"], [_player20, "Rifleman"], [_player21, "Automatic Rifleman"], [_player22, "Assistant Automatic Rifleman"]], ["Fire Team 2", [_player23, "Fire Team Leader"], [_player24, "Rifleman"], [_player25, "Automatic Rifleman"], [_player26, "Assistant Automatic Rifleman"]], ["Fire Team 3", [_player27, "Fire Team Leader"], [_player28, "Machine Gunner"], [_player29, "Machine Gunner Assistant"], [_player30, "Medic"]]]]					
-				];
+g_playerlist = [["Charlie USMC", 
+	[["Charlie Squad Leader", 
+		[_player18, "Squad Leader"]], 
+	["Fire Team 1", 
+		[_player19, "Fire Team Leader"], 
+		[_player20, "Rifleman"], 
+		[_player21, "Automatic Rifleman"], 
+		[_player22, "Assistant Automatic Rifleman"]], 
+	["Fire Team 2", 
+		[_player23, "Fire Team Leader"],
+		[_player24, "Rifleman"],
+		[_player25, "Automatic Rifleman"], 
+		[_player26, "Assistant Automatic Rifleman"]], 
+	["Fire Team 3", 
+		[_player27, "Fire Team Leader"], 
+		[_player28, "Machine Gunner"], 
+		[_player29, "Machine Gunner Assistant"], 
+		[_player30, "Medic"]]
+		]
+	]					
+];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
 _headline = "<t color='#CCCC00' size='1.2' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";

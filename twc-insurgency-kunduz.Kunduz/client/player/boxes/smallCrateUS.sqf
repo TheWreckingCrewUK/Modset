@@ -37,6 +37,8 @@ _box AddMagazineCargoGlobal ["rhsusf_mag_15Rnd_9x19_JHP",10];
 _box AddMagazineCargoGlobal ["rhsusf_8Rnd_00Buck",5];
 _box AddMagazineCargoGlobal ["rhsusf_8Rnd_Slug",5];
 
+_box AddMagazineCargoGlobal ["CUP_5Rnd_762x51_M24",10];
+
 _box addItemCargoGlobal ["ACE_fieldDressing",20];
 _box addItemCargoGlobal ["ACE_elasticBandage",20];
 _box addItemCargoGlobal ["ACE_quikclot",20];

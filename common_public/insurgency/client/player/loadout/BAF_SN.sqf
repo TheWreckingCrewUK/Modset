@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by Paddock";
+comment "Exported from Arsenal by Adam";
 
 comment "Remove existing items";
 removeAllWeapons player;

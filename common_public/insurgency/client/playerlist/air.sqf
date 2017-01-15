@@ -1,15 +1,34 @@
-//made by hartzie edited by FakeMatty
-_player1 = if(!isNil "helo1")then{if(!isPlayer helo1)then{"";}else{(name helo1);};}else{"";};
-_player2 = if(!isNil "helo2")then{if(!isPlayer helo2)then{"";}else{(name helo2);};}else{"";};
-_player3 = if(!isNil "helo3")then{if(!isPlayer helo3)then{"";}else{(name helo3);};}else{"";};
-_player4 = if(!isNil "helo4")then{if(!isPlayer helo4)then{"";}else{(name helo4);};}else{"";};
-_player5 = if(!isNil "apache1")then{if(!isPlayer apache1)then{"";}else{(name apache1);};}else{"";};
-_player6 = if(!isNil "apache2")then{if(!isPlayer apache2)then{"";}else{(name apache2);};}else{"";};
-_player7 = if(!isNil "jet1")then{if(!isPlayer jet1)then{"";}else{(name jet1);};}else{"";};
-_player8 = if(!isNil "jet2")then{if(!isPlayer jet2)then{"";}else{(name jet2);};}else{"";};
-g_playerlist = [["Air Assets", [["BAF Transport", [_player1, "BAF Pilot"],[_player2, "BAF Crew Cheif"]],["US Transport", [_player3, "US Pilot"],[_player4, "US Crew Cheif"]],["BAF Apache", [_player5, "Apache Pilot"],[_player6, "Apache Gunner"]],["BAF Jet", [_player7, "BAF Jet Pilot"]],["US Jet", [_player8, "US Jet Pilot"]]]]				
-				
-				];
+//made by hartzie edited by Adam[TWC]
+
+//BAF Transport pilot and crew cheif
+_player1 = if(!isNil "P501")then{if(!isPlayer P501)then{"";}else{(name P501);};}else{"";};
+_player2 = if(!isNil "P502")then{if(!isPlayer P502)then{"";}else{(name P502);};}else{"";};
+//US Transport pilot and crew cheif
+_player3 = if(!isNil "P503")then{if(!isPlayer P503)then{"";}else{(name P503);};}else{"";};
+_player4 = if(!isNil "P504")then{if(!isPlayer P504)then{"";}else{(name P504);};}else{"";};
+//Attack Jet Pilot
+_player5 = if(!isNil "P505")then{if(!isPlayer P505)then{"";}else{(name P505);};}else{"";};
+//BAF Apache Pilot and Gunner
+_player7 = if(!isNil "P507")then{if(!isPlayer P507)then{"";}else{(name P507);};}else{"";};
+_player8 = if(!isNil "P508")then{if(!isPlayer P508)then{"";}else{(name P508);};}else{"";};
+
+
+g_playerlist = [
+	["Air Assets", 
+		[["BAF Transport", 
+			[_player1, "BAF Transport Pilot"],
+			[_player2, "BAF Crew Cheif"]],
+		["US Transport", 
+			[_player3, "US Transport Pilot"],
+			[_player4, "US Crew Cheif"]],
+		["Jet", 
+			[_player5, "Attack Jet Pilot"]],
+		["BAF Apache", 
+			[_player7, "Apache Pilot"],
+			[_player8, "Apache Gunner"]]
+		]
+	]				
+];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
 _headline = "<t color='#CCCC00' size='1.2' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";

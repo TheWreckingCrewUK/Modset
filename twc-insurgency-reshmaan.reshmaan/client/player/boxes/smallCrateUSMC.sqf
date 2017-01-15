@@ -33,10 +33,13 @@ _box AddMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",10];
 _box AddMagazineCargoGlobal ["rhs_200rnd_556x45_M_SAW",2];
 _box AddMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",5];
 
-
 _box AddMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",20];
 _box AddMagazineCargoGlobal ["rhsusf_8Rnd_00Buck",5];
 _box AddMagazineCargoGlobal ["rhsusf_8Rnd_Slug",5];
+
+_box AddMagazineCargoGlobal ["CUP_5Rnd_762x51_M24",5];
+
+_box AddMagazineCargoGlobal ["rhsusf_mag_6Rnd_M441_HE",2];
 
 _box addItemCargoGlobal ["ACE_fieldDressing",15];
 _box addItemCargoGlobal ["ACE_elasticBandage",15];

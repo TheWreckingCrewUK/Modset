@@ -10,8 +10,7 @@ publicVariable "nonQuestionableList";
 
 execVM "server\sys_vehicles\cargoDeployed.sqf";
 
-	
-/*//Mission time randomizer.
+//Mission time randomizer.
 //only is random between 4am-2pm.
 _time = random 10;
 _time = _time + 4;
