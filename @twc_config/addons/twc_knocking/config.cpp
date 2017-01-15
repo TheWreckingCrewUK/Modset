@@ -50,7 +50,7 @@ class CfgSounds
 	class TWC_sound_knockMetal
 	{
 		name = "TWC_sound_knockMetal";
-		sound[] = {"\twc_knocking\sounds\knockMetal.ogg", 1, 1};
+		sound[] = {"\twc_knocking\sounds\knockMetal.ogg", 2, 1};
 		titles[] = {};
 	};
 	
