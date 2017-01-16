@@ -116,7 +116,10 @@ class CfgPatches
 			"1990_HeloPilot",
 			"1990_British_MilanGunner",
 			"1990_British_MilanAssistant",
-			"1990_British_MortarGunner"
+			"1990_British_MortarGunner",
+			"usa_1970_medic",
+			"usa_1970_leader",
+			"usa_1970_grenadier"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -180,6 +183,10 @@ class CfgEditorSubCategories
 	class TWC_tak_Civ_Men
 	{
 		displayName = "Men (Takistan Militia)";
+	};
+	class TWC_usa_1970
+	{
+		displayName = "USA (1970)";
 	};
 };
 class CfgFactionClasses
@@ -306,4 +313,6 @@ class CfgVehicles
 	#include "irish.hpp"
 	
 	#include "takistan.hpp"
+	
+	#include "usa_1970.hpp"
 };

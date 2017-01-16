@@ -1937,6 +1937,59 @@ class CfgVehicles
 			};
 		};
 	};
+//*************************USA 1970****************************
+	class usa_1970_backpack_grenadier: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_CUP_1Rnd_HE_M203
+			{
+				magazine = "CUP_1Rnd_HE_M203";
+				count = 10;
+			};
+			class _xx_CUP_1Rnd_Smoke_M203
+			{
+				magazine = "CUP_1Rnd_Smoke_M203";
+				count = 10;
+			};
+			class _xx_CUP_1Rnd_SmokeRed_M203
+			{
+				magazine = "CUP_1Rnd_SmokeRed_M203";
+				count = 6;
+			};
+			class _xx_CUP_1Rnd_SmokeGreen_M203
+			{
+				magazine = "CUP_1Rnd_SmokeGreen_M203";
+				count = 6;
+			};
+			class _xx_CUP_1Rnd_SmokeYellow_M203
+			{
+				magazine = "CUP_1Rnd_SmokeYellow_M203";
+				count = 6;
+			};
+			class _xx_CUP_1Rnd_StarCluster_Red_M203
+			{
+				magazine = "CUP_1Rnd_StarCluster_Red_M203";
+				count = 6;
+			};
+			class _xx_CUP_1Rnd_StarCluster_Green_M203
+			{
+				magazine = "CUP_1Rnd_StarCluster_Green_M203";
+				count = 6;
+			};
+			class _xx_CUP_1Rnd_StarCluster_Yellow_M203
+			{
+				magazine = "CUP_1Rnd_StarCluster_Yellow_M203";
+				count = 6;
+			};
+		};
+	};
 
 //********************** Ammo Boxes ***********************
 	class TWC_modern_Operation_Ammobox:CUP_BAF_VehicleBox
