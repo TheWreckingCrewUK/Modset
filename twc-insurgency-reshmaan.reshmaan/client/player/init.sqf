@@ -23,6 +23,9 @@ if (!isNil "P101" && {player == P101}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//M32 Spawner
+	ammoCrateSpawner addAction ["Spawn Mortar",
+	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P102" && {player == P102}) then {
@@ -128,6 +131,9 @@ if (!isNil "P201" && {player == P201}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//M32 Spawner
+	ammoCrateSpawner addAction ["Spawn Mortar",
+	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P202" && {player == P202}) then {
@@ -251,6 +257,9 @@ if (!isNil "P301" && {player == P301}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//M32 Spawner
+	ammoCrateSpawner addAction ["Spawn Mortar",
+	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P302" && {player == P302}) then {

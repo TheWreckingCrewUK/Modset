@@ -23,6 +23,9 @@ if (!isNil "P101" && {player == P101}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//M32 Spawner
+	ammoCrateSpawner addAction ["Spawn Mortar",
+	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P102" && {player == P102}) then {
@@ -128,6 +131,9 @@ if (!isNil "P201" && {player == P201}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//M32 Spawner
+	ammoCrateSpawner addAction ["Spawn Mortar",
+	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P202" && {player == P202}) then {
@@ -251,6 +257,9 @@ if (!isNil "P301" && {player == P301}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//M32 Spawner
+	ammoCrateSpawner addAction ["Spawn Mortar",
+	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P302" && {player == P302}) then {
@@ -717,6 +726,13 @@ if (!isNil "P605" && {player == P605}) then {
 	crate = "crate8";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	//Change Loadout
+	Spawner addAction ["Change Loadout to BAF Spotter",
+	{nul = [] execVM "client\player\loadout\BAF_SP.sqf";},[],0,true,false,"",""];
+	Spawner addAction ["Change Loadout to US Spotter",
+	{nul = [] execVM "client\player\loadout\US_SP.sqf";},[],0,true,false,"",""];
+	Spawner addAction ["Change Loadout to USMC Spotter",
+	{nul = [] execVM "client\player\loadout\USMC_SP.sqf";},[],0,true,false,"",""];
 };
 
 //Special P9xx
@@ -725,6 +741,33 @@ if (!isNil "P901" && {player == P901}) then {
 	g_group = "0";
 	g_unit = "000";
 	g_name = "Quartermaster";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are the Quartermaster";
+	//Ammo Spawner
+	ammoCrateSpawner addAction ["Spawn Small UK Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUK.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small US Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
+	//Mortar spawner
+	ammoCrateSpawner addAction ["Spawn M6 Mortar box",
+	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//Medical Spawner
+	ammoCrateSpawner addAction ["Spawn Medical Equipment",
+	{nul = [] execVM "client\player\boxes\smallMedical.sqf";},[],0,true,false,"",""];
+	//Zeus Watermark removal, hit ace self interact Start Camera then start Zeus
+	_action = ["Camera","Start Camera","",{execVM "client\zeus\camera.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;	
+};
+if (!isNil "P902" && {player == P902}) then {
+    g_class = "BAF_SL";
+	g_group = "0";
+	g_unit = "000";
+	g_name = "Quartermaster Assistant";
 	g_radio_channel = 1;
 	g_radio = "ACRE_PRC343";
 	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;

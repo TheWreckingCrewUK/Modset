@@ -23,7 +23,7 @@ player addItemToUniform "ACRE_PRC148_ID_2";
 player addVest "rhsusf_spc_light";
 for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
 for "_i" from 1 to 3 do {player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
-for "_i" from 1 to 5 do {player addItemToVest "CUP_5Rnd_762x51_M24";};
+for "_i" from 1 to 8 do {player addItemToVest "CUP_5Rnd_762x51_M24";};
 player addBackpack "rhsusf_assault_eagleaiii_coy";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 player addItemToBackpack "ACE_Kestrel4500";
