@@ -1,5 +1,6 @@
 /*
 * Simple Function to fix up a vehicle
+* Called by an addaction by a vehicle pad
 *
 */
 

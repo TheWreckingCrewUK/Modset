@@ -1,20 +1,18 @@
+params["_spawnRadius","_amountToSpawn"];
 //initial defines
 _roadPos = 0;
 _newVehicle = 0;
 _selectVehicle = 0;
 _newVehicle = 0;
 
-_spawnRadius = _this select 0;
-_amountToSpawn = _this select 1;
-
 _roadList = [worldSize / 2, worldSize / 2] nearRoads _spawnRadius;
 _vehicle = 0;
-_vehicleList = ["CUP_C_Datsun_Plain", "CUP_C_Skoda_Blue_CIV", "CUP_C_UAZ_Open_TK_CIV"];
+vehicleList = ["CUP_C_Datsun_Plain", "CUP_C_Skoda_Blue_CIV", "CUP_C_UAZ_Open_TK_CIV"];
 
 while {_vehicle < _amountToSpawn} do {
 	_roadPos = _roadList call BIS_fnc_selectRandom;
 	if(_roadPos distance2D (getMarkerPos "respawn_West") > 300)then{
-		_selectVehicle = _vehicleList select (floor(random(count _vehicleList)));
+		_selectVehicle = vehicleList select (floor(random(count vehicleList)));
 		_newVehicle = _selectVehicle createVehicle (getPos _roadPos);
 		_newVehicle addMPEventHandler ["MPKilled",{
 			if (side (_this select 1) == WEST) then{

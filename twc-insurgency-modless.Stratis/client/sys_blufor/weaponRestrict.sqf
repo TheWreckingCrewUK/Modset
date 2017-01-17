@@ -1,4 +1,5 @@
-
+/*
+* Currentl Unused. Will be re-wrote using event handlers. This is a while true free zone.
 _opforWeapons = [
 	"CUP_arifle_AKM",
 	"CUP_arifle_AK74_GL",

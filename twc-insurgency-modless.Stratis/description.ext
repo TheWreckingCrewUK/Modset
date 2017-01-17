@@ -30,14 +30,21 @@ class cfgFunctions
 	{
 		class twc
 		{
+			class counterAttack {};
+			class deadCache {};
+			class deleteMarkers {};
 			class globalChat {};
+			class iedAttack {};
+			class populateIeds {};
 			class spawnAIUnits {};
 			class spawnCiv {};
 			class spawnDefend {};
 			class spawnFOB {};
+			class spawnIed {};
 			class townDeciding {};
 			class townReset {};
 			class townSetup {};
+			class vehicleRepair {};
 		};
 		class vector
 		{

@@ -24,7 +24,7 @@ _marker setMarkerSize [0.75, 0.75];
 //[_marker, true] call CBA_fnc_setMarkerPersistent;
 
 if(side _killer == WEST)then{
-	[_killer] call InsP_fnc_counterAttack;
+	[_killer] call twc_fnc_counterAttack;
 }
 
 if(InsP_ammoCaches == 3) then {

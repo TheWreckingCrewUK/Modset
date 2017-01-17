@@ -1,3 +1,6 @@
+/*
+* Gets all of the server side scripts going
+*/
 #include "defines.sqf";
 #include "arsenal\arsenal.sqf";
 #include "cleanup\init.sqf";

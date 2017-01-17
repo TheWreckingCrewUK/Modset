@@ -1,7 +1,12 @@
-TWC_fnc_spawnIed = compile preprocessFileLineNumbers "server\sys_ied\fnc_spawnIed.sqf";
-TWC_fnc_populateIeds = compile preprocessFileLineNumbers "server\sys_ied\fnc_populateIeds.sqf";
-TWC_fnc_iedAttack = compile preprocessFileLineNumbers "server\sys_ied\fnc_iedAttack.sqf";
-
+/*
+* Defines IED Specific Variables
+*
+* Then Calls the Populate IED Functions
+*
+ * ARGUMENTS
+ * 0: AMOUNT <NUMBER>
+ * 1: RESTRICTIONS_ZONES <ARRAY OF STRINGS> <MARKERNAMES>
+*/
 if (isNil "InsP_iedGroup") then {
 	InsP_iedGroup = [];
 	publicVariable "InsP_iedGroup";

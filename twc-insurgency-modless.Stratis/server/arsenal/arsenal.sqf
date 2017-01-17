@@ -1,4 +1,11 @@
+/*
+* Sets up an empty ammobox and only gives current player gear.
+* Stops shitty gaming of all sniperinios
+* individual player gear is added in the \client\player\init.sqf
+*/
+
 arsenalAmmoBox = "B_supplyCrate_F" createVehicle (getMarkerPos "arsenal");
+
 clearWeaponCargoGlobal arsenalAmmoBox;
 clearMagazineCargoGlobal arsenalAmmoBox;
 clearItemCargoGlobal arsenalAmmoBox;

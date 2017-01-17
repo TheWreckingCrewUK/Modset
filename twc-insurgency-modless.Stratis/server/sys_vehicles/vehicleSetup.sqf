@@ -1,6 +1,8 @@
 /*
 work this script into one that can place vehicles into towns
 that don't exactly have roads running right through them
+* 
+* This is currently Unused as there are no towns without roads. Welcome to the current year.
 */
 _spawnMarker = _this select 0;
 _spawnRadius = _this select 1;
