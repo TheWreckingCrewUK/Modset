@@ -23,4 +23,9 @@ Switch (typeof player) do {
 	case "1990_British_Squadleader_Desert" : {player additemTobackpack "ACRE_PRC117F"};
 	case "1990_British_Platoon_Commander_Desert" : {player additemTobackpack "ACRE_PRC117F"};
 	case "1990_British_Platoon_Sergeant_Desert" : {player additemTobackpack "ACRE_PRC117F"};
+	case "bw_platoon_commander" : {player additemTobackpack "ACRE_PRC117F"};
+	case "bw_platoon_sergeant" : {player additemTobackpack "ACRE_PRC117F"};
+	case "bw_section_leader" : {player additemTobackpack "ACRE_PRC117F"};
+	case "bw_vehicle_commander" : {player additemTobackpack "ACRE_PRC117F"};
+	case "usa_1970_leader" : {player additemTobackpack "ACRE_PRC117F"};
 };
