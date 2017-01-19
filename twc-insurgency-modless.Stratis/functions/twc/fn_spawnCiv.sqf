@@ -1,27 +1,22 @@
 /*
 * Details:
 * 
-* Creates a Civillian that will tak position in a house and will not move.
+* Creates a CivillianS that will not move.
 *
-* Required parameters:
+* ARGUMENTS
 *
-* 0 - String     Marker name
+* 0: POS <ARRAY> -- [0,0,0]
+* 1: CIViNFO <ARRAY> -- [CIVNUM,CIVRADIUS]
 *
-* Addtional parameters:
-*
-* 1 - Interger   Amount of civillians   Default: 7
-* 
-*
-* Example:
-*
-*["bastam",7] spawn twc_fnc_SpawnCiv
-*
-* Author: [TWC] Fakematty / [TWC] Jayman
 */
-params["_pos", "_civnum", "_civradius"];
+params["_pos", "_civInfo"];
 
+//Redefine variables for ease
 _group = createGroup civilian;
+_civnum = _civInfo select 0;
+_civradius = _civnum select 1;
 
+//decide exactly how many civs to spawn
 _civnum = floor(_civnum + InsP_enemyMorale);
 _civnum = switch (_civnum) do {
 	case (_civnum < 3) : {3};
@@ -29,6 +24,7 @@ _civnum = switch (_civnum) do {
 	default {_civnum};
 };
 
+//spawn the civs
 for "_i" from 1 to _civnum do {
 
 	_individualCiv = _group createUnit [civilianType, _pos, [], _civradius, "NONE"];

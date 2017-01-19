@@ -1,23 +1,33 @@
 /*
 * Created by [TWC] jayman
 *
-* Is pre-compiled as twc_townSetup
-* Called from server\townSetup\%townName\init
+* Description:
+* The trigger calls this function which calls or spawns all the necessary functions for spawning the insurgency towns
 *
-* Example:
-*  _Bastamstart setTriggerStatements ["this","['Bastam',7,100,3,[600,700]] call twc_townSetup"
+* ARGUMENTS
+* 0: POS <ARRAY> -- [0,0,0]
+* 1: MARKER <STRING> -- <MARKER>
+* 2: SPAWNAiINFO <ARRAY> -- [SPAWNNUM,SPAWNRADIUS]
+* 3: CIVINFO <ARRAY> -- [CIVNUM,CIVRADIUS]
+* 4: THISLIST <ARRAY> -- OF BLUFOR UNITS WHO ACTIVATED THE TRIGGER
 *
-* This example gives the town of Bastam 7 civs with a radius of 100.
-* It has 3 Waves morale not withstanding, which spawn between 600 and 700 meters away.
-*
-* Creates a trigger to spawn the town capture and cleanup
+* EXAMPLE:
+* [getMarkerPos "bastamTown","bastamTown",[5,[100.200]],[5,100]] call twc_fnc_townSetup;
 */ 
 						  
-params["_marker","_pos","_civnum","_civradius","_waves","_groupradius","_thisList"];
+params["_pos","_marker","_spawnAiInfo","_civInfo","_thisList"];
+//For Debuggin cause triggers and format can be an ass
+systemChat str [_pos, _marker, _spawnAiInfo,_civInfo,_thisList,];
 
-systemChat str [_marker, _pos, _civnum,_civradius,_waves,_groupradius,_thisList];
-
+//calling the other functions
 [_pos] call twc_fnc_spawnDefend;
-[_pos, _civnum, _civradius] call twc_fnc_spawnCiv;
+[_pos, _civInfo] call twc_fnc_spawnCiv;
+[_pos, _spawnAiInfo,_thisList] spawn twc_fnc_spawnAIUnits;
 
-[_pos, _waves, _groupradius,_thisList,_marker] spawn twc_fnc_spawnAIUnits;
+//changing marker color and creatng the trigger to check when town is cleared or blufor dies
+_marker setMarkerColor "colorYellow";
+_trg = createTrigger ["EmptyDetector", _pos];
+_trg setTriggerArea [200, 200, 0, false];
+_trg setTriggerActivation ["ANY", "PRESENT", False];
+_trg setTriggerTimeout [5,5,5, true];
+_trg setTriggerStatements ["West countSide thisList == 0 || East CountSide thisList < 6",format["[%1, thisList,'%2'] spawn twc_fnc_townDeciding",_pos,_marker],""];

@@ -41,6 +41,7 @@ class cfgFunctions
 			class spawnDefend {};
 			class spawnFOB {};
 			class spawnIed {};
+			class spawnTownTrigger {};
 			class townDeciding {};
 			class townReset {};
 			class townSetup {};
@@ -139,6 +140,9 @@ class CfgDebriefing
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
 };
+/*
+* All ACE Setting unused as this is unmodded
+
 class ACE_Settings {
 //ACE Finger
 	class ace_finger_enabled {
