@@ -74,6 +74,13 @@ class cfgVehicles
 				typeName = "BOOL";
 				defaultValue = 1;
 			};
+			class rollSleeves
+			{
+				displayName = "Roll Sleeves";
+				description = "Enable to allow Rolling Sleeves";
+				typeName = "BOOL";
+				defaultValue = 1;
+			};
 			class run
 			{
 				displayName = "Running in Base";
@@ -98,15 +105,4 @@ class cfgVehicles
 		};
 		
 	};
-/*
-	class ModuleDescription: ModuleDescription
-	{
-		description = "Short Module Description";
-		sync[] = {};
-		class BLUFORunit
-		{
-			description
-		};
-	};
-*/
 };

@@ -41,7 +41,6 @@ class CfgFunctions
 		class Functions
 		{
 			file="twc_framework\functions";
-			class Hint {};
 			class Defend {};
 			class Patrol {};
 			class AirAssault {};
@@ -55,20 +54,19 @@ class CfgFunctions
 			class CommandMessage {};
 			class LightsSwitch {};
 			class Retreat {};
-			class RollShirt {};
-			class Maxspeed {};
 			class Convoy {};
-			class CreateMarker {};
 			class patrolRoads {};
 			class placedIED {};
 			class patrolMarkers {};
 			class CreateTask {};
 			class UpdateTask {};
 			class daisyCutter {};
+			class createMarker {};
 		};
 		class Modules
 		{
 			file = "twc_framework\modules";
+			class rollShirt {};
 			class boatSafety {};
 			class civilianEquipment {};
 			class deadBodies {};
