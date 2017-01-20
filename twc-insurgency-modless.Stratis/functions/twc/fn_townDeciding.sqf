@@ -1,5 +1,6 @@
 params["_pos","_thisList","_marker"];
-systemChat str _marker;
+
+systemChat format["%1 at townDeciding.sqf",_marker];
 
 _bluVictory = if ((west countSide _thisList) == 0) then {"0";}else{"1";};
 if(_bluVictory == "0")then{
@@ -13,7 +14,7 @@ if(_bluVictory == "0")then{
 			_trg setTriggerArea [200, 200, 0, false];
 			_trg setTriggerActivation ["ANY", "PRESENT", False];
 			_trg setTriggerTimeout [5,5,5, true];
-			_trg setTriggerStatements ["West countSide thisList == 0 || East CountSide thisList < 6","[(getPos thisTrigger), thisList] spawn twc_fnc_townDeciding",""];	
+			_trg setTriggerStatements ["West countSide thisList == 0 || East CountSide thisList < 6",format["[%1, thisList,'%2'] spawn twc_fnc_townDeciding",_pos,_marker],""];	
 		};
 	}forEach _bluNear;
 	if(_near == 0)then{

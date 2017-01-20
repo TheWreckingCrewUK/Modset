@@ -25,5 +25,3 @@ while {true} do {
 };
 
 if (true) exitWith {};
-	
-	

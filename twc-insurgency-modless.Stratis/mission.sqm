@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=126;
+		nextID=128;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2026.3467,99.649704,5490.2656};
-		dir[]={0.93645048,-0.3464466,0.055478323};
-		up[]={0.34585217,0.93806726,0.020489367};
-		aside[]={0.05913968,6.3894549e-007,-0.99826902};
+		pos[]={1776.202,296.82248,5575.189};
+		dir[]={0.8811391,-0.42104322,0.215783};
+		up[]={0.40898734,0.90698951,0.10015858};
+		aside[]={0.23787408,1.7730054e-006,-0.97138995};
 	};
 };
 binarizationWanted=0;
@@ -535,7 +535,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1835.3149,5.5,5796.2271};
+				position[]={1887.2526,5.6710582,5775.5767};
+				angles[]={0.0024897563,0,0};
 			};
 			name="Zeus";
 			id=8;
@@ -645,7 +646,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1833.104,5.5,5779.603};
+				position[]={1876.087,5.6438451,5778.5488};
+				angles[]={0.0024897563,0,0.0024897563};
 			};
 			name="jayman";
 			id=10;
@@ -2527,8 +2529,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1857.6252,5.5014386,5568.1694};
-						angles[]={0,4.8288803,0};
+						position[]={1857.625,5.5014391,5568.1699};
+						angles[]={0,4.8288722,0};
 					};
 					side="West";
 					flags=7;
@@ -2542,7 +2544,6 @@ class Mission
 					};
 					id=122;
 					type="B_crew_F";
-					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2657,7 +2658,6 @@ class Mission
 			{
 			};
 			id=121;
-			atlOffset=-4.7683716e-007;
 		};
 		class Item80
 		{

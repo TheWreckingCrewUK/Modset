@@ -4,7 +4,7 @@ if(!isServer)exitWith{};
 
 if !(_enabled) exitWith {};
 
-if (getMarkerColor "base" == "") exitWith {systemChat "Dead Body cleanup in base is Enabled, but no base marker is defined"};
+if (getMarkerColor "base" isEqualTo "") exitWith {systemChat "Dead Body cleanup in base is Enabled, but no base marker is defined"};
 
 while {true} do{
 	_Deadbodies = nearestObjects [getmarkerpos "base", ["man"], 200];

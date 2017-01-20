@@ -17,7 +17,7 @@
 						  
 params["_pos","_marker","_spawnAiInfo","_civInfo","_thisList"];
 //For Debuggin cause triggers and format can be an ass
-systemChat str [_pos, _marker, _spawnAiInfo,_civInfo,_thisList,];
+systemChat str [_pos, _marker, _spawnAiInfo,_civInfo,_thisList];
 
 //calling the other functions
 [_pos] call twc_fnc_spawnDefend;
@@ -26,6 +26,7 @@ systemChat str [_pos, _marker, _spawnAiInfo,_civInfo,_thisList,];
 
 //changing marker color and creatng the trigger to check when town is cleared or blufor dies
 _marker setMarkerColor "colorYellow";
+
 _trg = createTrigger ["EmptyDetector", _pos];
 _trg setTriggerArea [200, 200, 0, false];
 _trg setTriggerActivation ["ANY", "PRESENT", False];

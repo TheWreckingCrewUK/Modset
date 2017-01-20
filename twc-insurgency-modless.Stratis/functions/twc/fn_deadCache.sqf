@@ -25,7 +25,7 @@ _marker setMarkerSize [0.75, 0.75];
 
 if(side _killer == WEST)then{
 	[_killer] call twc_fnc_counterAttack;
-}
+};
 
 if(InsP_ammoCaches == 3) then {
 	["All caches destroyed. Mission Completed", "hint", True, True] call BIS_fnc_MP;

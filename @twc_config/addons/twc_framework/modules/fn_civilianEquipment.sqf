@@ -5,7 +5,7 @@ if(!isServer)exitWith{};
 if !(_enabled) exitWith {};
 
 {
-	if (side _x == Civilian) then {
+	if (side _x isEqualTo civilian) then {
 		removeGoggles _x;
 		removebackpack _x;
 	};

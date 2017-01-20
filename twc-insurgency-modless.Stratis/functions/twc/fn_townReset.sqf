@@ -9,5 +9,5 @@ params["_pos","_thisList","_marker"];
 	{deleteGroup _x}forEach allGroups;
 	
 	(_this select 2) setMarkerColor "colorEAST";
-	[(_this select 1),(_this select 2)] call twc_fnc_spawnTownTrigger;
 };
+[_pos,_marker] call twc_fnc_spawnTownTrigger;

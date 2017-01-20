@@ -14,7 +14,7 @@ params["_pos", "_civInfo"];
 //Redefine variables for ease
 _group = createGroup civilian;
 _civnum = _civInfo select 0;
-_civradius = _civnum select 1;
+_civradius = _civInfo select 1;
 
 //decide exactly how many civs to spawn
 _civnum = floor(_civnum + InsP_enemyMorale);

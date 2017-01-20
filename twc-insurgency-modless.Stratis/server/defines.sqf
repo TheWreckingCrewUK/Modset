@@ -21,4 +21,13 @@ vehicleList = ["C_Offroad_01_F", "C_Quadbike_01_F", "C_SUV_01_F", "C_Van_01_tran
 //Technical used by enemy forces when caches are destroyed
 enemyTechnical = ["O_G_Offroad_01_armed_F"];
 //Array of locations that should NOT spawn enemies. Such as the base or far off islands
-badTownList = ["Stratis Air Base","airfield","The Spartan","Pythos","Xiros","LZ Baldy","Kamino Coast"];
+_badTowns = ["Agia Marina","Stratis Air Base","airfield","The Spartan","Pythos","Xiros","LZ Baldy","Kamino Coast"];
+//Gets the location data of bad town list:
+_towns = nearestLocations [[worldSize/2,worldSize/2], ["NameVillage","NameCity","NameCityCapital","nameLocal"], (sqrt 2 *(worldSize / 2))];
+//Builds array for what we should remove
+badTownArray = [];
+{
+	if(text _x in _badTowns)then{
+		badTownArray = badTownArray + [_x];
+	};
+}forEach _towns;

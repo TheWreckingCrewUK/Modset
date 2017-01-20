@@ -4,7 +4,7 @@ if(!hasInterface)exitWith{};
 
 if !(_enabled) exitWith {};
 
-waituntil {vehicle player == player};
+waituntil {vehicle player isEqualTo player};
 
 Switch (typeof player) do {
 	case "Modern_British_Squadleader" : {player additemTobackpack "ACRE_PRC117F"};

@@ -47,9 +47,6 @@ if (isNil "InsP_cacheGroup") then {
 	} forEach InsP_cacheGroup;
 	
 	{
-		_trg = createTrigger ["EmptyDetector", getPos _x];
-		_trg setTriggerArea [800, 800, 0, false];
-		_trg setTriggerActivation ["West", "PRESENT", False];
-		_trg setTriggerStatements ["(((objectParent (thisList call bis_fnc_selectRandom)) isKindOf 'air') || (getPosATL (thisList call bis_fnc_selectRandom)) select 2 < 25)","['null',(getPos thisTrigger),8,300,4,[400,800],thisList] call twc_fnc_townSetup",""];
+		[getPos _x, "null", [6,[100,200]],[5,100]] call twc_fnc_spawnTownTrigger;
 	}forEach InsP_cacheGroup;
 };

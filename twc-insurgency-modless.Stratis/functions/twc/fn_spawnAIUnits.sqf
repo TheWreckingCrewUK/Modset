@@ -45,7 +45,7 @@ for "_i" from 0 to _waves do{
 		_num = _num + 1;
 		sleep 0.2;
 	};
-	[_group, (_pos), 300] call CBA_fnc_taskAttack;
+	[_group, (_pos), 40] call CBA_fnc_taskAttack;
 	sleep 3;
 	_num = 0;
 	_waveNum = _waveNum + 1;
