@@ -17,7 +17,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -27,7 +26,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
@@ -106,7 +104,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
-		"ACE_EarPlugs"	
+		"ACE_EarPlugs",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -121,7 +120,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
-		"ACE_EarPlugs"			
+		"ACE_EarPlugs",
+		"ACRE_PRC343"		
 		};
 	};
 	class 1990_British_Rifleman: B_Soldier_base_F
@@ -143,7 +143,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -153,8 +152,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
-		"ACRE_PRC343"
+		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
 		{
@@ -223,7 +221,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -235,7 +234,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"		
 		};		
 	};
 	class 1990_British_Gunner: B_Soldier_base_F
@@ -257,8 +257,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
-		"ACRE_PRC343"
+		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
 		{
@@ -267,7 +266,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
@@ -335,7 +333,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -347,7 +346,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"			
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"			
 		};
 	};
 	class 1990_British_2IC: B_Soldier_base_F
@@ -369,7 +369,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -379,7 +378,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
@@ -453,7 +451,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -465,7 +464,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"		
 		};
 	};
 	class 1990_British_AT: B_Soldier_base_F
@@ -487,7 +487,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -497,8 +496,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
-		"ACRE_PRC343"
+		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
 		{
@@ -569,7 +567,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -581,7 +580,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"		
 		};		
 	};
 	class 1990_British_AAT: B_Soldier_base_F
@@ -595,7 +595,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_Smock_DPMT";
-		backpack="TWC_Backpack_1990_AT";
+		backpack="TWC_Backpack_1990_AAT";
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_DPMT",
@@ -603,7 +603,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -613,8 +612,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
-		"ACRE_PRC343"
+		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
 		{
@@ -681,7 +679,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -693,7 +692,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"		
 		};		
 	};
 	class 1990_British_Platoon_Commander: B_Soldier_base_F
@@ -715,7 +715,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -725,7 +724,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
@@ -802,7 +800,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
-		"ACE_EarPlugs"	
+		"ACE_EarPlugs",
+		"ACRE_PRC343"	
 
 		};
 		respawntems[]=
@@ -818,7 +817,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
-		"ACE_EarPlugs"
+		"ACE_EarPlugs",
+		"ACRE_PRC343"
 		};
 	};
 	class 1990_British_Platoon_Sergeant: B_Soldier_base_F
@@ -840,7 +840,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -850,7 +849,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
@@ -927,7 +925,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
-		"ACE_EarPlugs"	
+		"ACE_EarPlugs",
+		"ACRE_PRC343"
 
 		};
 		respawntems[]=
@@ -943,7 +942,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_IR_Strobe_Item",
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
-		"ACE_EarPlugs"
+		"ACE_EarPlugs",
+		"ACRE_PRC343"
 		};
 	};
 	class 1990_British_Medic: B_Soldier_base_F
@@ -965,8 +965,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
-		"ACRE_PRC343"
+		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
 		{
@@ -975,7 +974,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
@@ -1043,7 +1041,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -1055,7 +1054,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"			
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"			
 		};		
 	};
 	class 1990_HeloPilot: B_Soldier_base_F
@@ -1315,7 +1315,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -1325,8 +1324,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
-		"ACRE_PRC343"
+		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
 		{
@@ -1395,7 +1393,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -1407,7 +1406,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"		
 		};		
 	};
 	class 1990_British_MilanAssistant: B_Soldier_base_F
@@ -1429,7 +1429,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -1439,8 +1438,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
-		"ACRE_PRC343"
+		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
 		{
@@ -1509,7 +1507,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -1521,7 +1520,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"		
 		};		
 	};
 	class 1990_British_MortarGunner: B_Soldier_base_F
@@ -1543,7 +1543,6 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"ACRE_PRC343",
 		"UK3CB_BAF_G_Tactical_Black"
 		};
 		respawnLinkedItems[]=
@@ -1553,8 +1552,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"UK3CB_BAF_G_Tactical_Black",
-		"ACRE_PRC343"
+		"UK3CB_BAF_G_Tactical_Black"
 		};
 		weapons[]=
 		{
@@ -1625,7 +1623,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_epinephrine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"
 		};
 		respawntems[]=
 		{
@@ -1637,7 +1636,8 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs",	
-		"UK3CB_BAF_HMNVS"		
+		"UK3CB_BAF_HMNVS",
+		"ACRE_PRC343"	
 		};		
 	};
 //////////////////////////////////////////////////////////////////
@@ -1768,7 +1768,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACRE_PRC343",
-		"ACE_EarPlugs"			
+		"ACE_EarPlugs"	
 		};
 	};
 	class 1990_British_Rifleman_Desert: B_Soldier_base_F
@@ -2009,7 +2009,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_Smock_DDPM";
-		backpack="TWC_Backpack_1990_D_AT";
+		backpack="TWC_Backpack_1990_D_AAT";
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_DDPM",

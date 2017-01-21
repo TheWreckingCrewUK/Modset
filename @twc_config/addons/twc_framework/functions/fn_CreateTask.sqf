@@ -6,4 +6,4 @@ if(isNil "_title" || typeName _title != "STRING")exitWith{hint "twc_fnc_createTa
 
 //[allunits,[_taskname],[_description,_title],_pos,0,2,false] call BIS_fnc_taskCreate;
 
-[player,[_taskname],[_description,_title],_pos,0,2,false] remoteExecCall ["BIS_fnc_taskCreate", -2, true];
+[player,[_taskname],[_description,_title],_pos,0,2,false] remoteExecCall ["BIS_fnc_taskCreate", [0,-2] select isDedicated, true];

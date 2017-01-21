@@ -1476,6 +1476,28 @@ class CfgVehicles
 			class _xx_tf47_m3maaws_HEAT
 			{
 				magazine = "tf47_m3maaws_HEAT";
+				count = 1;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine = "tf47_m3maaws_HE";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_1990_AAT:UK3CB_BAF_B_Bergen_DPMT_Rifleman_A
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Stanag
+			{
+				magazine = "UK3CB_BAF_556_30Rnd";
+				count = 7;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine = "tf47_m3maaws_HEAT";
 				count = 2;
 			};
 			class _xx_tf47_m3maaws_HE
@@ -1727,6 +1749,28 @@ class CfgVehicles
 		};
 	};
 	class TWC_Backpack_1990_D_AT:UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Stanag
+			{
+				magazine = "UK3CB_BAF_556_30Rnd";
+				count = 7;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine = "tf47_m3maaws_HEAT";
+				count = 1;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine = "tf47_m3maaws_HE";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_1990_D_AAT:UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
 	{
 		scope = 1;
 		class TransportMagazines
