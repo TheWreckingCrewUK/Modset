@@ -16,7 +16,7 @@ class cfgVehicles
 		};
 		class ModuleDescription
 		{
-			class AnyBrain;
+			class Player;
 			
 		};
 	};
@@ -28,8 +28,9 @@ class cfgVehicles
 		
 		function = "twc_fnc_moduleMission";
 		functionPriority = 1;
-		isGlobal = 1;
+		isGlobal = 2;
 		isTriggerActivated = 0;
+		isDisposable = 0;
 		author = "[TWC] jayman";
 		class Arguments{
 			class enabled

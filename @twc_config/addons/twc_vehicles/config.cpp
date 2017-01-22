@@ -408,21 +408,6 @@ class CfgVehicles
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=5;
 			};
-			class _xx_UK3CB_1Rnd_HE_Grenade_shell
-			{
-				magazine="1Rnd_HE_Grenade_shell";
-				count=8;
-			};
-			class _xx_UK3CB_UGL_FlareWhite_F
-			{
-				magazine="UGL_FlareWhite_F";
-				count=4;
-			};
-			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
-			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=4;
-			};
 			class _xx_SmokeShell
 			{
 				magazine="SmokeShell";
@@ -508,21 +493,6 @@ class CfgVehicles
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
 				count=5;
-			};
-			class _xx_UK3CB_1Rnd_HE_Grenade_shell
-			{
-				magazine="1Rnd_HE_Grenade_shell";
-				count=8;
-			};
-			class _xx_UK3CB_UGL_FlareWhite_F
-			{
-				magazine="UGL_FlareWhite_F";
-				count=4;
-			};
-			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
-			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=4;
 			};
 			class _xx_SmokeShell
 			{
