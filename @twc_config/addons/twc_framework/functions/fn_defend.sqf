@@ -5,8 +5,8 @@
 * Also starts with a sleep because of issues with headless clients so it must be spawned
 * unlike the called cba function.
 */
-params["_group",["_pos",isnil],["_radius",200],["_size",2],["_patrol",false]];
+params["_group",["_pos",[]],["_radius",200],["_size",2],["_patrol",false]];
 
 Waituntil {time >= 30};
 
-[_group,_pos,,_radius,_size,_patrol] call CBA_fnc_taskDefend;
+[_group,_pos,_radius,_size,_patrol] call CBA_fnc_taskDefend;

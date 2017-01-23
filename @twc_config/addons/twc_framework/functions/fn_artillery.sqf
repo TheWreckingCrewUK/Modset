@@ -11,12 +11,12 @@
 
 
 if (isServer) then {	
-	Params ["_mortar","_marker",["_radius",200],["_rounds",5],["_Roundselect",""],["_delay",10]];
+	Params ["_marker",["_radius",200],["_rounds",5],["_Roundselect",""],["_delay",10]];
 _Roundtype = 0;
 	switch (_Roundselect) do {
 		case "HE": {_Roundtype = "ModuleOrdnanceMortar_F";};
-		case "SMOKE": {_Roundtype = "Smoke_82mm_AMOS_White";};
-		case "ILLUM": {_Roundtype = "Flare_82mm_AMOS_White";};
+		case "SMOKE": {_Roundtype = "Smokeshell";};
+		case "ILLUM": {_Roundtype = "ACE_HandFlare_White";};
 		default { _Roundtype =  "ModuleOrdnanceMortar_F";};
 	};
 	
