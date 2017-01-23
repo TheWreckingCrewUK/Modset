@@ -1,20 +1,9 @@
 /*
- * 
- * Defend Function
- *
- * Public: No
- */
-Waituntil {time >= 30};
-/*
-if (isServer || !(isServer or hasinterface)) then {
-	params ["_unit", "_marker", ["_radius", 300]];
-
-	if(isnil "_Marker")then{
-		[_unit,_unit,_radius] call CBA_fnc_taskDefend;
-	}else{
-		[_unit, getmarkerpos _marker, _radius] call CBA_fnc_taskDefend;
-	};
-};
+* Defend Function
+*
+* Currently just copies and calls the cba task defend eventually will be updated.
+* Also starts with a sleep because of issues with headless clients so it must be spawned
+* unlike the called cba function.
 */
 
 /* ----------------------------------------------------------------------------
