@@ -9,14 +9,11 @@
 / 4 - Only if Custom ERA: Class Name of Helicopter  
 / 5 - Only if Custom ERA: Config classname of Group
 */
-private ["_spawnmarker","_dropmarker","_movemarker","_helipad","_crew1","_helicopter","_heliselect"
-         ,"_p1"
-];
 if (isServer) then {
 params ["_spawnmarker","_dropmarker","_movemarker",["_Era","Modern"],["_helicopterspawn",""],"_group"];//,
 
 _RUsquad = (configfile >> "CfgGroups" >> "East" >> "rhs_faction_msv" >> "rhs_group_rus_msv_infantry" >> "rhs_group_rus_msv_infantry_squad");
-_USSRsquad = (configfile >> "CfgGroups" >> "East" >> "SUD_USSR" >> "Infantry" >> "SU_InfSquad");
+_USSRsquad = (configfile >> "CfgGroups" >> "East" >> "TWC_Operation_Redfor" >> "ColdWar_USSR_INF" >> "Section_USSR_ColdWar_AirAssault");
 
 if (_Era == "Modern") then {_helicopterspawn = "RHS_Mi8mt_Cargo_vvsc";_group = _RUsquad};
 if (_Era == "Cold") then {_helicopterspawn = "SUD_MI8";_group = _USSRsquad};

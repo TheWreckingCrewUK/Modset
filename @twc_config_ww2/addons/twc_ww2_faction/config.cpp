@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class twc_faction
+	class twc_faction_ww2
 	{
 		units[]=
 		{

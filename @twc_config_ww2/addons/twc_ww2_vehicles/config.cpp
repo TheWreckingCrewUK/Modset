@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class twc_vehicles
+	class twc_vehicles_ww2
 	{
 		units[]={
 			

@@ -25,7 +25,7 @@ class CfgGroups
         {
                 name = "Blufor"; // Name of Faction Side
                 side = 1; // 0 = Opfor , 1 = Blufor , 2 = Indep , I think
-                class Army //Faction Class name
+                class TWC_Operation_Blufor //Faction Class name
                 {
                         name = "TWC Operation Groups"; //Faction Name
                         class Modern
@@ -835,7 +835,7 @@ class CfgGroups
         {
                 name = "Opfor"; // Name of Faction Side
                 side = EAST; // 0 = Opfor , 1 = Blufor , 2 = Indep , I think
-                class Army //Faction Class name
+                class TWC_Operation_Redfor //Faction Class name
                 {
                         name = "TWC Operation Groups Opfor"; //Faction Name
                         class Modern
@@ -1017,6 +1017,54 @@ class CfgGroups
                                                 position[] = {3,0,0}; //Position in the formation
                                         };
 								};
+								class Section_USSR_ColdWar_AirAssault
+                                {
+                                        name = "Air Assault Team"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = EAST; //Side
+                                         class Unit0
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_Squadleader"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+										class Unit1
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_MachineGunner"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {3,0,0}; //Position in the formation
+                                        };
+										class Unit2
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_Grenadier"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {6,0,0}; //Position in the formation
+                                        };
+										class Unit3
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_Efreitor"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {9,0,0}; //Position in the formation
+                                        };
+										class Unit4
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_Rifleman"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {12,0,0}; //Position in the formation
+                                        };
+										class Unit5
+                                        {
+                                                side = EAST;
+                                                vehicle = "ColdWar_USSR_Rifleman"; //Class name of desired solider
+                                                rank = "PRIVATE"; // Rank
+                                                position[] = {15,0,0}; //Position in the formation
+                                        };
+								};
 						};
 						class GulfWar
                         {
@@ -1156,7 +1204,7 @@ class CfgGroups
         {
                 name = "Independent"; // Name of Faction Side
                 side = 2; // 0 = Opfor , 1 = Blufor , Independent = 2 ,   I think
-                class Army //Faction Class name
+                class TWC_Operation_Greenfor //Faction Class name
                 {
                         name = "TWC Operation Groups Independent"; //Faction Name
                         class Cold_War_Argentina

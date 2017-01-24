@@ -10,11 +10,6 @@
 //Check in case mission maker makes it global trigger.
 if(!isServer)exitWith{};
 params ["_thislist","_markerMoveTo",["_side",EAST],["_surrender",False]];
-//Hint blocks to assist mission makers:
-if(isNil "_thislist" || typeName _thislist != "ARRAY")exitWith{hint "You failed with TWC_fnc_retreat\n\n Check the Website for or Management for Help"};
-if(isNil "_markerMoveTo" || typeName _markerMoveTo != "STRING")exitWith{hint "You failed with TWC_fnc_retreat\n\n Check the Website for or Management for Help"};
-if(isNil "_side" || typeName _side != "SIDE")exitWith{hint "You failed with TWC_fnc_retreat\n\n Check the Website for or Management for Help"};
-if(isNil "_surrender" || typeName _surrender != "BOOL")exitWith{hint "You failed with TWC_fnc_retreat\n\n Check the Website for or Management for Help"};
 
 //Code
 {

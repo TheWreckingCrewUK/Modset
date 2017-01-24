@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class twc_compositions
+	class twc_compositions_ww2
 	{
 		units[]={};
 		weapons[]={};

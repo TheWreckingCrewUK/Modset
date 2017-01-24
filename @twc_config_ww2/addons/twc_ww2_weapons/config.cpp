@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Addons_config
+	class twc_weapons_ww2
 	{
 		units[]={};
 		weapons[]={};
@@ -21,7 +21,7 @@ class CfgVehicles
 	class fow_b_uk_p37;
 	class fow_b_us_radio;
 
-	class Box_NATO_AmmoVeh_F;
+	class CUP_BAF_VehicleBox;
 
 //************************WW2*******************************
 	class TWC_Backpack_WW2_PlatoonCommand:fow_b_us_radio
