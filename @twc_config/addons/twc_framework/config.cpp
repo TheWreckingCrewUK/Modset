@@ -66,6 +66,7 @@ class CfgFunctions
 		class Modules
 		{
 			file = "twc_framework\modules";
+			class era {};
 			class rollShirt {};
 			class boatSafety {};
 			class civilianEquipment {};

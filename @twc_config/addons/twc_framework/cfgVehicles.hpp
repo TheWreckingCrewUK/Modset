@@ -40,6 +40,36 @@ class cfgVehicles
 				typeName = "BOOL";
 				defaultValue = 1;
 			};
+			class era
+			{
+				displayName = "ERA";
+				description = "Select the ERA";
+				typeName = "STRING";
+				defaultValue = "modern";
+				class values
+				{
+					class modern
+					{
+						name = "Modern";
+						value = "modern";
+					};
+					class coldwar
+					{
+						name = "Coldwar";
+						value = "coldwar";
+					};
+					class 1990
+					{
+						name = "1990s";
+						value = "1990";
+					};
+					class ww2
+					{
+						name = "WW2";
+						value = "ww2";
+					};
+				};
+			};
 			class boatSafety
 			{
 				displayName = "Added Protection From Boats";
@@ -74,6 +104,13 @@ class cfgVehicles
 				description = "Enable to give Long Range Radios to Command Units";
 				typeName = "BOOL";
 				defaultValue = 1;
+			};
+			class nightGear
+			{
+				displayName = "Nighttime Equipment";
+				description = "Enable to give NVGs, Flares, and chemlights to units";
+				typeName = "BOOL";
+				defaultValue = 0;
 			};
 			class rollSleeves
 			{
