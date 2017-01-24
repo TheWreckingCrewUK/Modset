@@ -1,0 +1,10 @@
+_unit = _this select 0
+
+~1
+
+#DropLaw
+
+_unit action ["Drop Weapon",_unit,0,0,"ukf_LAW80Launcher"]
+
+#exit
+exit
