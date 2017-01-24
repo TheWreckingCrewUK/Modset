@@ -50,11 +50,9 @@ class CfgFunctions
 			class IEDpopulate {};
 			class intelHint {};
 			class Artillery {};
-			class Attack {};
 			class CommandMessage {};
 			class LightsSwitch {};
 			class Retreat {};
-			class Convoy {};
 			class patrolRoads {};
 			class placedIED {};
 			class patrolMarkers {};
