@@ -15,4 +15,5 @@ if !(_enabled) exitWith {};
 [(_logic getVariable "rollSleeves")] spawn twc_fnc_rollShirt;
 [(_logic getVariable "run")] spawn twc_fnc_run;
 [(_logic getVariable "safeZone")] spawn twc_fnc_safeZone;
+[(_logic getVariable "stats")] call twc_fnc_stats;
 [(_logic getVariable "zuesObjects")] spawn twc_fnc_zeus;

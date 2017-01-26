@@ -41,6 +41,7 @@ class CfgFunctions
 		class Functions
 		{
 			file="twc_framework\functions";
+			class aiStats {};
 			class Defend {};
 			class Patrol {};
 			class AirAssault {};
@@ -60,6 +61,7 @@ class CfgFunctions
 			class UpdateTask {};
 			class daisyCutter {};
 			class createMarker {};
+			class virtualMortar {};
 		};
 		class Modules
 		{

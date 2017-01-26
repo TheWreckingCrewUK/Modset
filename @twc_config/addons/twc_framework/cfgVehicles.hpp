@@ -133,6 +133,13 @@ class cfgVehicles
 				typeName = "NUMBER";
 				defaultValue = 400;
 			};
+			class stats
+			{
+				displayName = "Stat Saving";
+				description = "Enable to allow saving player stats";
+				typeName = "Bool";
+				defaultValue = 0;
+			};
 			class zuesObjects
 			{
 				displayName = "Zeus Objects";
