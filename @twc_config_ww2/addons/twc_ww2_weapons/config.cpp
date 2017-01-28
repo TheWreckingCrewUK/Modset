@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class twc_weapons_ww2
 	{
-		units[]={};
+		units[]={"TWC_Operation_WW2_Ammobox"};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
@@ -237,6 +237,16 @@ class CfgVehicles
 			{
 				name = "ACE_tourniquet";
 				count = 50;
+			};
+			class _xx_DemolitionBlock
+			{
+				name = "DemoCharge_Remote_Mag";
+				count = 5;
+			};
+			class _xx_Clacker
+			{
+				name = "ACE_Clacker";
+				count = 5;
 			};
 		};	
 		transportAmmo=1000000;

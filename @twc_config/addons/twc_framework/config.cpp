@@ -77,6 +77,7 @@ class CfgFunctions
 			class nightGear {};
 			class run {};
 			class safeZone {};
+			class stats {};
 			class zeus {};
 		};
 	};

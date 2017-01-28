@@ -1,4 +1,4 @@
-params ["_enabled","era"];
+params ["_enabled","_era"];
 
 if(!hasInterface)exitWith{};
 
@@ -13,6 +13,7 @@ if(leader player == player)then{
 if(_era isEqualTo "modern" || _era isEqualTo "1990")then{
 	player linkItem "UK3CB_BAF_HMNVS";
 };
-
-player addItem "Chemlight_green";
-player addItem "Chemlight_green";
+if(_era != "ww2")then{
+	player addItem "Chemlight_green";
+	player addItem "Chemlight_green";
+};
