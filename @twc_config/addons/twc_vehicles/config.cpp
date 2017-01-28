@@ -157,17 +157,17 @@ class CfgVehicles
 			class _xx_UK3CB_BAF_30Rnd
 			{
 				magazine="UK3CB_BAF_556_30Rnd";
-				count=8;
+				count=15;
 			};
 			class _xx_UK3CB_BAF_30Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
-				count=2;
+				count=10;
 			};
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
 			{
 				magazine="1Rnd_HE_Grenade_shell";
-				count=2;
+				count=20;
 			};
 			class _xx_UK3CB_UGL_FlareWhite_F
 			{
@@ -240,6 +240,34 @@ class CfgVehicles
 				count = 4;
 			};
 		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 8;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 10;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 4;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 10;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
 		class TransportWeapons
 		{
 			class _xx_NLAW
@@ -265,47 +293,62 @@ class CfgVehicles
 			class _xx_UK3CB_BAF_30Rnd
 			{
 				magazine="UK3CB_BAF_556_30Rnd";
-				count=8;
+				count=15;
 			};
 			class _xx_UK3CB_BAF_30Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
-				count=2;
+				count=10;
 			};
 			class _xx_UK3CB_1Rnd_HE_Grenade_shell
 			{
 				magazine="1Rnd_HE_Grenade_shell";
-				count=2;
+				count=20;
 			};
-			class _xx_UK3CB_UGL_FlareWhite_F
+			class _xx_Flare
 			{
-				magazine="UGL_FlareWhite_F";
-				count=2;
+				magazine = "UGL_FlareWhite_F";
+				count = 3;
 			};
-			class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
+			class _xx_Smoke_White
 			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=2;
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 5;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "1Rnd_SmokeGreen_Grenade_shell";
+				count = 3;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 3;
 			};
 			class _xx_SmokeShell
 			{
 				magazine="SmokeShell";
-				count=4;
+				count=10;
 			};
 			class _xx_Grenade
 			{
 				magazine="CUP_HandGrenade_L109A2_HE";
-				count=2;
+				count=10;
 			};
 			class _xx_UK3CB_BAF_20Rnd
 			{
 				magazine="UK3CB_BAF_762_L42A1_20Rnd";
-				count=2;
+				count=6;
 			};
 			class _xx_UK3CB_BAF_20Rnd_T
 			{
 				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
-				count=1;
+				count=4;
 			};
 			class _xx_UK3CB_BAF_556_200Rnd
 			{
@@ -320,12 +363,12 @@ class CfgVehicles
 			class _xx_Belt
 			{
 				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 1;
+				count = 6;
 			};
 			class _xx_Belt_T
 			{
 				magazine = "UK3CB_BAF_762_100Rnd_T";
-				count = 1;
+				count = 4;
 			};
 			class _xx_IR_Grenade
 			{
@@ -353,22 +396,22 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 5;
+				count = 8;
 			};
 			class _xx_elasticBandage
 			{
 				name = "ACE_elasticBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_quickclot
 			{
 				name = "ACE_quikclot";
-				count = 5;
+				count = 4;
 			};
 			class _xx_packing
 			{
 				name = "ACE_packingBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_Morphine
 			{
@@ -386,7 +429,7 @@ class CfgVehicles
 			class _xx_LAW
 			{
 				Weapon = "HAFM_LAW";
-				count = 1;
+				count = 2;
 			};
 		};
 	};
@@ -401,12 +444,12 @@ class CfgVehicles
 			class _xx_UK3CB_BAF_30Rnd
 			{
 				magazine="UK3CB_BAF_556_30Rnd";
-				count=25;
+				count=35;
 			};
 			class _xx_UK3CB_BAF_30Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
-				count=5;
+				count=30;
 			};
 			class _xx_SmokeShell
 			{
@@ -417,11 +460,6 @@ class CfgVehicles
 			{
 				magazine="CUP_HandGrenade_L109A2_HE";
 				count=8;
-			};
-			class _xx_IR_Grenade
-			{
-				magazine = "B_IR_Grenade";
-				count = 2;
 			};
 			class _xx_Chemlight_Green
 			{
@@ -444,22 +482,22 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 5;
+				count = 8;
 			};
 			class _xx_elasticBandage
 			{
 				name = "ACE_elasticBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_quickclot
 			{
 				name = "ACE_quikclot";
-				count = 5;
+				count = 4;
 			};
 			class _xx_packing
 			{
 				name = "ACE_packingBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_Morphine
 			{
@@ -469,9 +507,9 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-			class _xx_AT4
+			class _xx_LAW80
 			{
-				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
+				Weapon = "ukf_law80launcher";
 				count = 2;
 			};
 		};
@@ -481,18 +519,18 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		faction="twc_faction";
-		displayname = "Landrover Desert (90`s)";
+		displayname = "Landrover Woodland (90`s)";
 		class TransportMagazines
 		{
 			class _xx_UK3CB_BAF_30Rnd
 			{
 				magazine="UK3CB_BAF_556_30Rnd";
-				count=25;
+				count=35;
 			};
 			class _xx_UK3CB_BAF_30Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
-				count=5;
+				count=30;
 			};
 			class _xx_SmokeShell
 			{
@@ -503,11 +541,6 @@ class CfgVehicles
 			{
 				magazine="CUP_HandGrenade_L109A2_HE";
 				count=8;
-			};
-			class _xx_IR_Grenade
-			{
-				magazine = "B_IR_Grenade";
-				count = 2;
 			};
 			class _xx_Chemlight_Green
 			{
@@ -530,22 +563,22 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 5;
+				count = 8;
 			};
 			class _xx_elasticBandage
 			{
 				name = "ACE_elasticBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_quickclot
 			{
 				name = "ACE_quikclot";
-				count = 5;
+				count = 4;
 			};
 			class _xx_packing
 			{
 				name = "ACE_packingBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_Morphine
 			{
@@ -555,9 +588,9 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-			class _xx_AT4
+			class _xx_LAW80
 			{
-				Weapon = "UK3CB_BAF_AT4_CS_AT_Launcher";
+				Weapon = "ukf_law80launcher";
 				count = 2;
 			};
 		};
@@ -573,17 +606,17 @@ class CfgVehicles
 			class _xx_UK3CB_20Rnd_762x51_B_fal
 			{
 				magazine="UK3CB_BAF_762_20Rnd";
-				count=8;
+				count=50;
 			};
 			class _xx_UK3CB_BAF_75Rnd
 			{
 				magazine="UK3CB_BAF_762_100Rnd";
-				count=2;
+				count=3;
 			};
 			class _xx_UK3CB_BAF_75Rnd_T
 			{
 				magazine="UK3CB_BAF_762_100Rnd";
-				count=1;
+				count=3;
 			};
 			class _xx_ACE_HandFlare_White
 			{
@@ -613,7 +646,7 @@ class CfgVehicles
 			class _xx_SmokeShell
 			{
 				magazine="SmokeShell";
-				count=8;
+				count=4;
 			};
 			class _xx_Grenade
 			{
@@ -626,22 +659,22 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 5;
+				count = 8;
 			};
 			class _xx_elasticBandage
 			{
 				name = "ACE_elasticBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_quickclot
 			{
 				name = "ACE_quikclot";
-				count = 5;
+				count = 4;
 			};
 			class _xx_packing
 			{
 				name = "ACE_packingBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_Morphine
 			{
@@ -669,17 +702,17 @@ class CfgVehicles
 			class _xx_UK3CB_20Rnd_762x51_B_fal
 			{
 				magazine="UK3CB_BAF_762_20Rnd";
-				count=10;
+				count=50;
 			};
-			class _xx_Belt
+			class _xx_UK3CB_BAF_75Rnd
 			{
-				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 2;
+				magazine="UK3CB_BAF_762_100Rnd";
+				count=3;
 			};
-			class _xx_Belt_T
+			class _xx_UK3CB_BAF_75Rnd_T
 			{
-				magazine = "UK3CB_BAF_762_100Rnd_T";
-				count = 1;
+				magazine="UK3CB_BAF_762_100Rnd";
+				count=3;
 			};
 			class _xx_ACE_HandFlare_White
 			{
@@ -709,7 +742,7 @@ class CfgVehicles
 			class _xx_SmokeShell
 			{
 				magazine="SmokeShell";
-				count=8;
+				count=4;
 			};
 			class _xx_Grenade
 			{
@@ -722,22 +755,22 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 5;
+				count = 8;
 			};
 			class _xx_elasticBandage
 			{
 				name = "ACE_elasticBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_quickclot
 			{
 				name = "ACE_quikclot";
-				count = 5;
+				count = 4;
 			};
 			class _xx_packing
 			{
 				name = "ACE_packingBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_Morphine
 			{
@@ -754,6 +787,7 @@ class CfgVehicles
 			};
 		};
 	};
+	
 	class LandVehicle;
 	class Tank: LandVehicle
 	{
@@ -2263,52 +2297,87 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-				class _xx_UK3CB_BAF_556_30Rnd
-				{
-					magazine="UK3CB_BAF_556_30Rnd";
-					count=8;
-				};
-				class _xx_UK3CB_BAF_556_30Rnd_T
-				{
-					magazine="UK3CB_BAF_556_30Rnd_T";
-					count=2;
-				};
-				class _xx_UK3CB_1Rnd_HE_Grenade_shell
-				{
-					magazine="1Rnd_HE_Grenade_shell";
-					count=2;
-				};
-				class _xx_UK3CB_UGL_FlareWhite_F
-				{
-					magazine="UGL_FlareWhite_F";
-					count=2;
-				};
-				class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
-				{
-					magazine="1Rnd_Smoke_Grenade_shell";
-					count=2;
-				};
-				class _xx_SmokeShell
-				{
-					magazine="SmokeShell";
-					count=4;
-				};
-				class _xx_Grenade
-				{
-					magazine="CUP_HandGrenade_L109A2_HE";
-					count=2;
-				};
-				class _xx_UK3CB_BAF_20Rnd
-				{
-					magazine="UK3CB_BAF_762_L42A1_20Rnd";
-					count=2;
-				};
-				class _xx_UK3CB_BAF_20Rnd_T
-				{
-					magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
-					count=1;
-				};
-				class _xx_IR_Grenade
+			class _xx_UK3CB_BAF_30Rnd
+			{
+				magazine="UK3CB_BAF_556_30Rnd";
+				count=15;
+			};
+			class _xx_UK3CB_BAF_30Rnd_T
+			{
+				magazine="UK3CB_BAF_556_30Rnd_T";
+				count=10;
+			};
+			class _xx_UK3CB_1Rnd_HE_Grenade_shell
+			{
+				magazine="1Rnd_HE_Grenade_shell";
+				count=20;
+			};
+			class _xx_Flare
+			{
+				magazine = "UGL_FlareWhite_F";
+				count = 3;
+			};
+			class _xx_Smoke_White
+			{
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 5;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "1Rnd_SmokeGreen_Grenade_shell";
+				count = 3;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 3;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=10;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=10;
+			};
+			class _xx_UK3CB_BAF_20Rnd
+			{
+				magazine="UK3CB_BAF_762_L42A1_20Rnd";
+				count=6;
+			};
+			class _xx_UK3CB_BAF_20Rnd_T
+			{
+				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
+				count=4;
+			};
+			class _xx_UK3CB_BAF_556_200Rnd
+			{
+				magazine="UK3CB_BAF_556_200Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_556_200Rnd_T
+			{
+				magazine="UK3CB_BAF_556_200Rnd_T";
+				count=1;
+			};
+			class _xx_Belt
+			{
+				magazine = "UK3CB_BAF_762_100Rnd";
+				count = 6;
+			};
+			class _xx_Belt_T
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 4;
+			};
+			class _xx_IR_Grenade
 			{
 				magazine = "B_IR_Grenade";
 				count = 2;
@@ -2334,22 +2403,22 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 5;
+				count = 8;
 			};
 			class _xx_elasticBandage
 			{
 				name = "ACE_elasticBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_quickclot
 			{
 				name = "ACE_quikclot";
-				count = 5;
+				count = 4;
 			};
 			class _xx_packing
 			{
 				name = "ACE_packingBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_Morphine
 			{
@@ -2360,15 +2429,15 @@ class CfgVehicles
 		class TransportWeapons
 		{
 			class _xx_NLAW
-				{
-					Weapon = "launch_NLAW_F";
-					count = 1;
-				};
+			{
+				Weapon = "launch_NLAW_F";
+				count = 1;
+			};
 			class _xx_LAW
-				{
-					Weapon = "HAFM_LAW";
-					count = 1;
-				};
+			{
+				Weapon = "HAFM_LAW";
+				count = 2;
+			};
 		};
 	};
 	class TWC_Warrior_W: TWC_Warrior_D
@@ -2411,52 +2480,87 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-				class _xx_UK3CB_BAF_556_30Rnd
-				{
-					magazine="UK3CB_BAF_556_30Rnd";
-					count=8;
-				};
-				class _xx_UK3CB_BAF_556_30Rnd_T
-				{
-					magazine="UK3CB_BAF_556_30Rnd_T";
-					count=2;
-				};
-				class _xx_UK3CB_1Rnd_HE_Grenade_shell
-				{
-					magazine="1Rnd_HE_Grenade_shell";
-					count=2;
-				};
-				class _xx_UK3CB_UGL_FlareWhite_F
-				{
-					magazine="UGL_FlareWhite_F";
-					count=2;
-				};
-				class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
-				{
-					magazine="1Rnd_Smoke_Grenade_shell";
-					count=2;
-				};
-				class _xx_SmokeShell
-				{
-					magazine="SmokeShell";
-					count=4;
-				};
-				class _xx_Grenade
-				{
-					magazine="CUP_HandGrenade_L109A2_HE";
-					count=2;
-				};
-				class _xx_UK3CB_BAF_20Rnd
-				{
-					magazine="UK3CB_BAF_762_L42A1_20Rnd";
-					count=2;
-				};
-				class _xx_UK3CB_BAF_20Rnd_T
-				{
-					magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
-					count=1;
-				};
-				class _xx_IR_Grenade
+			class _xx_UK3CB_BAF_30Rnd
+			{
+				magazine="UK3CB_BAF_556_30Rnd";
+				count=15;
+			};
+			class _xx_UK3CB_BAF_30Rnd_T
+			{
+				magazine="UK3CB_BAF_556_30Rnd_T";
+				count=10;
+			};
+			class _xx_UK3CB_1Rnd_HE_Grenade_shell
+			{
+				magazine="1Rnd_HE_Grenade_shell";
+				count=20;
+			};
+			class _xx_Flare
+			{
+				magazine = "UGL_FlareWhite_F";
+				count = 3;
+			};
+			class _xx_Smoke_White
+			{
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 5;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "1Rnd_SmokeGreen_Grenade_shell";
+				count = 3;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 3;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=10;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=10;
+			};
+			class _xx_UK3CB_BAF_20Rnd
+			{
+				magazine="UK3CB_BAF_762_L42A1_20Rnd";
+				count=6;
+			};
+			class _xx_UK3CB_BAF_20Rnd_T
+			{
+				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
+				count=4;
+			};
+			class _xx_UK3CB_BAF_556_200Rnd
+			{
+				magazine="UK3CB_BAF_556_200Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_556_200Rnd_T
+			{
+				magazine="UK3CB_BAF_556_200Rnd_T";
+				count=1;
+			};
+			class _xx_Belt
+			{
+				magazine = "UK3CB_BAF_762_100Rnd";
+				count = 6;
+			};
+			class _xx_Belt_T
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 4;
+			};
+			class _xx_IR_Grenade
 			{
 				magazine = "B_IR_Grenade";
 				count = 2;
@@ -2482,22 +2586,22 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 5;
+				count = 8;
 			};
 			class _xx_elasticBandage
 			{
 				name = "ACE_elasticBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_quickclot
 			{
 				name = "ACE_quikclot";
-				count = 5;
+				count = 4;
 			};
 			class _xx_packing
 			{
 				name = "ACE_packingBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_Morphine
 			{
@@ -2508,15 +2612,15 @@ class CfgVehicles
 		class TransportWeapons
 		{
 			class _xx_NLAW
-				{
-					Weapon = "launch_NLAW_F";
-					count = 1;
-				};
+			{
+				Weapon = "launch_NLAW_F";
+				count = 1;
+			};
 			class _xx_LAW
-				{
-					Weapon = "HAFM_LAW";
-					count = 1;
-				};
+			{
+				Weapon = "HAFM_LAW";
+				count = 2;
+			};
 		};
 	};
 	class Burnes_FV4034_base: Tank_F
@@ -4422,6 +4526,7 @@ class CfgVehicles
 		accuracy=1000;
 		displayName="FV4034 Challenger 2 TWC Desert";
 	};
+	
 	class UK3CB_BAF_Wildcat_AH1_CAS_8A;
 	class CUP_B_SA330_Puma_HC1_BAF;
 	class twc_wildcat: UK3CB_BAF_Wildcat_AH1_CAS_8A
@@ -4433,60 +4538,85 @@ class CfgVehicles
 		displayname = "Wildcat";
 		class TransportMagazines
 		{
-				class _xx_UK3CB_BAF_556_30Rnd
-				{
-					magazine="UK3CB_BAF_556_30Rnd";
-					count=8;
-				};
-				class _xx_UK3CB_BAF_556_30Rnd_T
-				{
-					magazine="UK3CB_BAF_556_30Rnd_T";
-					count=2;
-				};
-				class _xx_UK3CB_1Rnd_HE_Grenade_shell
-				{
-					magazine="1Rnd_HE_Grenade_shell";
-					count=2;
-				};
-				class _xx_UK3CB_UGL_FlareWhite_F
-				{
-					magazine="UGL_FlareWhite_F";
-					count=2;
-				};
-				class _xx_UK3CB_1Rnd_Smoke_Grenade_shell
-				{
-					magazine="1Rnd_Smoke_Grenade_shell";
-					count=2;
-				};
-				class _xx_SmokeShell
-				{
-					magazine="SmokeShell";
-					count=4;
-				};
-				class _xx_Grenade
-				{
-					magazine="CUP_HandGrenade_L109A2_HE";
-					count=2;
-				};
-				class _xx_UK3CB_BAF_20Rnd
-				{
-					magazine="UK3CB_BAF_762_L42A1_20Rnd";
-					count=2;
-				};
-				class _xx_UK3CB_BAF_20Rnd_T
-				{
-					magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
-					count=1;
-				};
-				class _xx_Belt
+			class _xx_UK3CB_BAF_30Rnd
+			{
+				magazine="UK3CB_BAF_556_30Rnd";
+				count=15;
+			};
+			class _xx_UK3CB_BAF_30Rnd_T
+			{
+				magazine="UK3CB_BAF_556_30Rnd_T";
+				count=10;
+			};
+			class _xx_UK3CB_1Rnd_HE_Grenade_shell
+			{
+				magazine="1Rnd_HE_Grenade_shell";
+				count=20;
+			};
+			class _xx_Flare
+			{
+				magazine = "UGL_FlareWhite_F";
+				count = 3;
+			};
+			class _xx_Smoke_White
+			{
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 5;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "1Rnd_SmokeGreen_Grenade_shell";
+				count = 3;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 3;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=10;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=10;
+			};
+			class _xx_UK3CB_BAF_20Rnd
+			{
+				magazine="UK3CB_BAF_762_L42A1_20Rnd";
+				count=6;
+			};
+			class _xx_UK3CB_BAF_20Rnd_T
+			{
+				magazine="UK3CB_BAF_762_L42A1_20Rnd_T";
+				count=4;
+			};
+			class _xx_UK3CB_BAF_556_200Rnd
+			{
+				magazine="UK3CB_BAF_556_200Rnd";
+				count=2;
+			};
+			class _xx_UK3CB_BAF_556_200Rnd_T
+			{
+				magazine="UK3CB_BAF_556_200Rnd_T";
+				count=1;
+			};
+			class _xx_Belt
 			{
 				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 1;
+				count = 6;
 			};
 			class _xx_Belt_T
 			{
 				magazine = "UK3CB_BAF_762_100Rnd_T";
-				count = 1;
+				count = 4;
 			};
 			class _xx_IR_Grenade
 			{
@@ -4514,22 +4644,22 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 5;
+				count = 8;
 			};
 			class _xx_elasticBandage
 			{
 				name = "ACE_elasticBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_quickclot
 			{
 				name = "ACE_quikclot";
-				count = 5;
+				count = 4;
 			};
 			class _xx_packing
 			{
 				name = "ACE_packingBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_Morphine
 			{
@@ -4540,15 +4670,15 @@ class CfgVehicles
 		class TransportWeapons
 		{
 			class _xx_NLAW
-				{
-					Weapon = "launch_NLAW_F";
-					count = 1;
-				};
+			{
+				Weapon = "launch_NLAW_F";
+				count = 1;
+			};
 			class _xx_LAW
-				{
-					Weapon = "HAFM_LAW";
-					count = 1;
-				};
+			{
+				Weapon = "HAFM_LAW";
+				count = 2;
+			};
 		};
 		class TransportBackpacks
 		{
@@ -4563,30 +4693,25 @@ class CfgVehicles
 		displayname = "Lynx";
 		class TransportMagazines
 		{
-			class _xx_UK3CB_BAF_556_30Rnd
+			class _xx_UK3CB_BAF_30Rnd
 			{
 				magazine="UK3CB_BAF_556_30Rnd";
-				count=20;
+				count=35;
 			};
-			class _xx_UK3CB_BAF_556_30Rnd_T
+			class _xx_UK3CB_BAF_30Rnd_T
 			{
 				magazine="UK3CB_BAF_556_30Rnd_T";
-				count=5;
+				count=30;
 			};
 			class _xx_SmokeShell
 			{
 				magazine="SmokeShell";
-				count=4;
+				count=8;
 			};
 			class _xx_Grenade
 			{
 				magazine="CUP_HandGrenade_L109A2_HE";
-				count=2;
-			};
-			class _xx_IR_Grenade
-			{
-				magazine = "B_IR_Grenade";
-				count = 2;
+				count=8;
 			};
 			class _xx_Chemlight_Green
 			{
@@ -4603,48 +4728,28 @@ class CfgVehicles
 				magazine = "Chemlight_red";
 				count = 4;
 			};
-			class _xx_tf47_m3maaws_HEAT
-			{
-				magazine="tf47_m3maaws_HEAT";
-				count=2;
-			};
-			class _xx_tf47_m3maaws_HE
-			{
-				magazine="tf47_m3maaws_HE";
-				count=2;
-			};
-			class _xx_tf47_m3maaws_SMOKE
-			{
-				magazine="tf47_m3maaws_SMOKE";
-				count=2;
-			};
-			class _xx_tf47_m3maaws_ILLUM
-			{
-				magazine="tf47_m3maaws_ILLUM";
-				count=2;
-			};
 		};
 		class TransportItems
 		{
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 5;
+				count = 8;
 			};
 			class _xx_elasticBandage
 			{
 				name = "ACE_elasticBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_quickclot
 			{
 				name = "ACE_quikclot";
-				count = 5;
+				count = 4;
 			};
 			class _xx_packing
 			{
 				name = "ACE_packingBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_Morphine
 			{
@@ -4654,11 +4759,11 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-			class _xx_LAW
-				{
-					Weapon = "HAFM_LAW";
-					count = 2;
-				};
+			class _xx_LAW80
+			{
+				Weapon = "ukf_law80launcher";
+				count = 2;
+			};
 		};
 		class TransportBackpacks
 		{
@@ -4676,17 +4781,17 @@ class CfgVehicles
 			class _xx_UK3CB_20Rnd_762x51_B_fal
 			{
 				magazine="UK3CB_BAF_762_20Rnd";
-				count=8;
+				count=50;
 			};
-			class _xx_Belt
+			class _xx_UK3CB_BAF_75Rnd
 			{
-				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 2;
+				magazine="UK3CB_BAF_762_100Rnd";
+				count=3;
 			};
-			class _xx_Belt_T
+			class _xx_UK3CB_BAF_75Rnd_T
 			{
-				magazine = "UK3CB_BAF_762_100Rnd_T";
-				count = 1;
+				magazine="UK3CB_BAF_762_100Rnd";
+				count=3;
 			};
 			class _xx_ACE_HandFlare_White
 			{
@@ -4716,32 +4821,12 @@ class CfgVehicles
 			class _xx_SmokeShell
 			{
 				magazine="SmokeShell";
-				count=8;
+				count=4;
 			};
 			class _xx_Grenade
 			{
 				magazine="CUP_HandGrenade_L109A2_HE";
 				count=6;
-			};
-			class _xx_IR_Grenade
-			{
-				magazine = "B_IR_Grenade";
-				count = 2;
-			};
-			class _xx_Chemlight_Green
-			{
-				magazine = "Chemlight_green";
-				count = 4;
-			};
-			class _xx_Chemlight_Blue
-			{
-				magazine = "Chemlight_blue";
-				count = 4;
-			};
-			class _xx_Chemlight_Red
-			{
-				magazine = "Chemlight_red";
-				count = 4;
 			};
 		};
 		class TransportItems
@@ -4749,22 +4834,22 @@ class CfgVehicles
 			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
-				count = 5;
+				count = 8;
 			};
 			class _xx_elasticBandage
 			{
 				name = "ACE_elasticBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_quickclot
 			{
 				name = "ACE_quikclot";
-				count = 5;
+				count = 4;
 			};
 			class _xx_packing
 			{
 				name = "ACE_packingBandage";
-				count = 5;
+				count = 10;
 			};
 			class _xx_Morphine
 			{

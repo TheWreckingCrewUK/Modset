@@ -4,37 +4,7 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"Modern_British_Squadleader",
-			"Modern_British_Rifleman",
-			"Modern_British_Grenadier",
-			"Modern_British_Automaticrifleman",
-			"Modern_British_2IC",
-			"Modern_British_Machinegunner",
-			"Modern_British_Marksman",
-			"Modern_British_Platoon_Commander",
-			"Modern_British_Platoon_Sergeant",
-			"Modern_British_Medic",
-			"Modern_HeloPilot",
-			"Modern_JetPilot",
-			"Modern_British_MortarGunner",
-			"Modern_British_MortarAssistant",
-			"Pilot_British",
-			"Modern_British_Sniper",
-			"Modern_British_Spotter",
-			"Modern_British_FAC",
-			"Modern_British_VehicleCrew",
-			"Modern_British_VehicleCommander",
-			"Mechanized_British_Marksman",
-			"Modern_British_Coin_Squadleader",
-			"Modern_British_Coin_Pointman",
-			"Modern_British_Coin_Grenadier",
-			"Modern_British_Coin_Automaticrifleman",
-			"Modern_British_Coin_2IC",
-			"Modern_British_Coin_Machinegunner",
-			"Modern_British_Coin_Marksman",
-			"Modern_British_Coin_Platoon_Commander",
-			"Modern_British_Coin_Platoon_Sergeant",
-			"Modern_British_Coin_Medic",
+			"ColdWar_Base",
 			"ColdWar_Rifleman",
 			"ColdWar_Rifleman_SUIT",
 			"ColdWar_AT",
@@ -44,10 +14,10 @@ class CfgPatches
 			"ColdWar_MG_AS",
 			"ColdWar_Section_Leader",
 			"ColdWar_Platoon_Commander",
-			"ColdWar_sergeant",
+			"ColdWar_Sergeant",
 			"ColdWar_Medic",
 			"ColdWar_FAC",
-			"ColdWar_HeloPilot",
+			"ColdWar_HeliPilot",
 			"ColdWar_JetPilot",
 			"ColdWar_AA_Gunner",
 			"ColdWar_AA_Assistant",
@@ -55,6 +25,59 @@ class CfgPatches
 			"ColdWar_MilanAssistant",
 			"ColdWar_Vehicle_Commander",
 			"ColdWar_Vehicle_Crewman",
+			"1990_British_Base",
+			"1990_British_Squadleader",
+			"1990_British_Rifleman",
+			"1990_British_Gunner",
+			"1990_British_2IC",
+			"1990_British_CGG",
+			"1990_British_CGAss",
+			"1990_British_Platoon_Commander",
+			"1990_British_Platoon_Sergeant",
+			"1990_British_Medic",
+			"1990_British_HeliPilot",
+			"1990_British_JetPilot",
+			"1990_British_MilanGunner",
+			"1990_British_MilanAssistant",
+			"1990_British_MortarGunner",
+			"1990_British_Vehicle_Commander",
+			"1990_British_Vehicle_Crew",
+			"1990_British_Squadleader_Desert",
+			"1990_British_Rifleman_Desert",
+			"1990_British_CGG_Desert",
+			"1990_British_CGAss_Desert",
+			"1990_British_Gunner_Desert",
+			"1990_British_2IC_Desert",
+			"1990_British_Platoon_Commander_Desert",
+			"1990_British_Platoon_Sergeant_Desert",
+			"1990_British_Medic_Desert",
+			"1990_British_HiloPilot_Desert",
+			"1990_British_MilanGunner_Desert",
+			"1990_British_MilanAssistant_Desert",
+			"1990_British_MortarGunner_Desert",
+			"1990_British_Tank_Commander_Desert",
+			"1990_British_Tank_Crew_Desert",
+			"Modern_British_Squadleader",
+			"Modern_British_Rifleman",
+			"Modern_British_Pointman",
+			"Modern_British_Grenadier",
+			"Modern_British_Autorifleman",
+			"Modern_British_2IC",
+			"Modern_British_Machinegunner",
+			"Modern_British_Marksman",
+			"Modern_British_Marksman_COIN",
+			"Modern_British_Platoon_Commander",
+			"Modern_British_Platoon_Sergeant",
+			"Modern_British_Medic",
+			"Modern_British_VehicleCrew",
+			"Modern_British_VehicleCommander",
+			"Modern_British_HeliPilot",
+			"Modern_British_JetPilot",
+			"Modern_British_MortarGunner",
+			"Modern_British_MortarAssistant",
+			"Modern_British_Sniper",
+			"Modern_British_Spotter",
+			"Modern_British_FAC",
 			"GulfWar_Iraqi_Squadleader",
 			"GulfWar_Iraqi_Rifleman",
 			"GulfWar_Iraqi_RPG",
@@ -89,34 +112,6 @@ class CfgPatches
 			"IRA_Rifleman_FAL",
 			"IRA_Rifleman_AT",
 			"IRA_Autorifleman",
-			"1990_British_Squadleader_Desert",
-			"1990_British_Rifleman_Desert",
-			"1990_British_AT_Desert",
-			"1990_British_AAT_Desert",
-			"1990_British_Gunner_Desert",
-			"1990_British_2IC_Desert",
-			"1990_British_Platoon_Commander_Desert",
-			"1990_British_Platoon_Sergeant_Desert",
-			"1990_British_Medic_Desert",
-			"1990_HeloPilot_Desert",
-			"1990_British_MilanGunner_Desert",
-			"1990_British_MilanAssistant_Desert",
-			"1990_British_MortarGunner_Desert",
-			"1990_British_Tank_Commander_Desert",
-			"1990_British_Tank_Crew_Desert",
-			"1990_British_Squadleader",
-			"1990_British_Rifleman",
-			"1990_British_AT",
-			"1990_British_AAT",
-			"1990_British_Gunner",
-			"1990_British_2IC",
-			"1990_British_Platoon_Commander",
-			"1990_British_Platoon_Sergeant",
-			"1990_British_Medic",
-			"1990_HeloPilot",
-			"1990_British_MilanGunner",
-			"1990_British_MilanAssistant",
-			"1990_British_MortarGunner",
 			"usa_1970_medic",
 			"usa_1970_leader",
 			"usa_1970_grenadier"
@@ -150,11 +145,11 @@ class CfgEditorSubCategories
 	};
 	class Men_1990D
 	{
-		displayName = "Men (1990 Early Desert)";
+		displayName = "Men (1990 Desert)";
 	};
 	class Men_1990W
 	{
-		displayName = "Men (1990 Early Woodland)";
+		displayName = "Men (1990 Woodland)";
 	};
 	class Men_USSR
 	{
@@ -248,62 +243,13 @@ class CfgFactionClasses
 };
 class CfgVehicles
 {
-	class CUP_B_AlicePack_Khaki;
-	class CUP_B_RPGPack_Khaki;
-	class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki
-	{
-		class TransportMagazines
-		{
-			class _xx_AKMags
-			{
-				magazine="CUP_30Rnd_762x39_AK47_M";
-				count=6;
-			};
-			class _xx_PKMags
-			{
-				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
-				count=1;
-			};
-		};
-	};
-	class Afr_Backpack_MG: CUP_B_AlicePack_Khaki
-	{
-		class TransportMagazines
-		{
-			class _xx_PKMags
-			{
-				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
-				count=2;
-			};
-		};
-	};
-	class Afr_Backpack_AT: CUP_B_RPGPack_Khaki
-	{
-		class TransportMagazines
-		{
-			class _xx_AKMags
-			{
-				magazine="CUP_30Rnd_762x39_AK47_M";
-				count=2;
-			};
-			class _xx_RPG7
-			{
-				magazine="CUP_PG7V_M";
-				count=2;
-			};
-		};
-	};
-
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 	
-	#include "90early.hpp"
-	//#include "90late.hpp"
-	#include "coin.hpp"
-	#include "mechanized.hpp"
-	#include "modern.hpp"
 	#include "coldwar.hpp"
+	#include "1990.hpp"
+	#include "modern.hpp"
 	
 	#include "russianfederation.hpp"
 	#include "ussr.hpp"

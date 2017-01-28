@@ -1,5 +1,5 @@
 	class C_man_1;
-	class Tak_Civ_Men_Base:   	C_man_1
+	class Tak_Civ_Men_Base: C_man_1
 	{
 		author="Saxon";
 		scope=1;
