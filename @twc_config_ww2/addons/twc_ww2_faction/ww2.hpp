@@ -1,18 +1,86 @@
-	class WW2_British_Platoon_Commander: I_Soldier_F
+	class WW2_British_Base: I_Soldier_F
 	{
-		_generalMacro="WW2_British_Platoon_Commander";
-		scope=2;
-		displayName="Platoon Commander(WW2)";
+		scope=1;
+		displayName="Base (WW2)";
 		faction="twc_faction_independent";
 		editorSubcategory = "Men_WW2";
 		vehicleClass="Men_WW2";
-		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
+		uniformClass="fow_u_uk_bd40_01_private";
+		linkedItems[]=
+		{
+        "TWC_Vest_WW2_Base",
+		"fow_h_uk_mk2",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+        "TWC_Vest_WW2_Base",
+		"fow_h_uk_mk2",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		Items[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
+		respawntems[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
+	};
+	class WW2_British_Platoon_Commander: WW2_British_Base
+	{
+		scope=2;
+		displayName="Platoon Commander (WW2)";
 		uniformClass="fow_u_uk_bd40_01_lieutenant";
-		backpack="TWC_Backpack_WW2_PlatoonCommand";
+		backpack="TWC_Backpack_WW2_SL";
 		linkedItems[]=
 		{
-        "fow_v_uk_officer",
+        "TWC_Vest_WW2_Officer",
 		"fow_h_uk_mk3",
 		"ItemMap",
 		"ItemCompass",
@@ -20,7 +88,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "fow_v_uk_officer",
+        "TWC_Vest_WW2_Officer",
 		"fow_h_uk_mk3",
 		"ItemMap",
 		"ItemCompass",
@@ -31,17 +99,20 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"fow_w_sten_mk2"
+		"fow_w_sten_mk2",
+		"LIB_FLARE_PISTOL"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"Binocular",
-		"fow_w_sten_mk2"
+		"fow_w_sten_mk2",
+		"LIB_FLARE_PISTOL"
 		};
 		magazines[]=
 		{
+		"fow_32Rnd_9x19_sten",
 		"fow_32Rnd_9x19_sten",
 		"fow_32Rnd_9x19_sten",
 		"fow_32Rnd_9x19_sten",
@@ -54,576 +125,287 @@
 		"fow_32Rnd_9x19_sten",
 		"fow_32Rnd_9x19_sten",
 		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"	
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"		
-		};
 	};
-	class WW2_British_Platoon_Sergeant: I_Soldier_F
+	class WW2_British_Platoon_Sergeant: WW2_British_Platoon_Commander
 	{
-		_generalMacro="WW2_British_Platoon_Sergeant";
 		scope=2;
-		displayName="Platoon Sergeant(WW2)";
-		faction="twc_faction_independent";
-		editorSubcategory = "Men_WW2";
-		vehicleClass="Men_WW2";
-		icon="iconManLeader";
-		nakedUniform="U_BasicBody";
+		displayName="Platoon Sergeant (WW2)";
 		uniformClass="fow_u_uk_bd40_01_sergeant";
-		backpack="TWC_Backpack_WW2_PlatoonCommand";
-		linkedItems[]=
-		{
-        "fow_v_uk_officer",
-		"fow_h_uk_mk3",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-        "fow_v_uk_officer",
-		"fow_h_uk_mk3",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
-		};
+		backpack="TWC_Backpack_WW2_Sergeant";
 		weapons[]=
 		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"fow_w_sten_mk2"
+			"Throw",
+			"Put",
+			"Binocular",
+			"fow_w_leeenfield_no4mk1",
+			"LIB_FLARE_PISTOL"
 		};
 		respawnweapons[]=
 		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"fow_w_sten_mk2"
+			"Throw",
+			"Put",
+			"Binocular",
+			"fow_w_leeenfield_no4mk1",
+			"LIB_FLARE_PISTOL"
 		};
 		magazines[]=
 		{
-		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_e_no36mk1",
+			"fow_e_no36mk1"
 		};
 		Respawnmagazines[]=
 		{
-		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"	
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"		
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_e_no36mk1",
+			"fow_e_no36mk1"
+
 		};
 	};
-	class WW2_British_Medic: I_Soldier_F
+	class WW2_British_Medic: WW2_British_Base
 	{
-		_generalMacro="WW2_British_Medic";
 		scope=2;
-		displayName="Medic(WW2)";
-		faction="twc_faction_independent";
-		editorSubcategory = "Men_WW2";
-		vehicleClass="Men_WW2";
-		icon="iconManLeader";
-		nakedUniform="U_BasicBody";
+		displayName="Medic (WW2)";
 		uniformClass="fow_u_uk_bd40_01_private";
 		backpack="TWC_Backpack_WW2_Medic";
 		linkedItems[]=
 		{
-        "fow_v_uk_sten",
-		"fow_h_uk_mk2",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+			"TWC_Vest_WW2_Sten",
+			"fow_h_uk_mk2",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "fow_v_uk_sten",
-		"fow_h_uk_mk2",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+			"TWC_Vest_WW2_Sten",
+			"fow_h_uk_mk2",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 		weapons[]=
 		{
-		"Throw",
-		"Put",
-		"fow_w_sten_mk2"
+			"Throw",
+			"Put",
+			"fow_w_sten_mk2"
 		};
 		respawnweapons[]=
 		{
-		"Throw",
-		"Put",
-		"fow_w_sten_mk2"
+			"Throw",
+			"Put",
+			"fow_w_sten_mk2"
 		};
 		magazines[]=
 		{
-		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"	
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"		
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
 		};
 	};
-	class WW2_British_Section_Commander: I_Soldier_F
+	class WW2_British_Section_Leader: WW2_British_Base
 	{
-		_generalMacro="WW2_British_Section_Commander";
 		scope=2;
-		displayName="Section Commander(WW2)";
-		faction="twc_faction_independent";
-		editorSubcategory = "Men_WW2";
-		vehicleClass="Men_WW2";
+		displayName="Section Commander (WW2)";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_bd40_01_corporal";
-		backpack="TWC_Backpack_WW2_SectionCommander";
+		backpack="TWC_Backpack_WW2_SL";
 		linkedItems[]=
 		{
-        "fow_v_uk_sten",
-		"fow_h_uk_mk2",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+			"TWC_Vest_WW2_Sten",
+			"fow_h_uk_mk2",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "fow_v_uk_sten",
-		"fow_h_uk_mk2",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+			"TWC_Vest_WW2_Sten",
+			"fow_h_uk_mk2",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 		weapons[]=
 		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"fow_w_sten_mk2"
+			"Throw",
+			"Put",
+			"fow_w_sten_mk2",
+			"LIB_FLARE_PISTOL"
 		};
 		respawnweapons[]=
 		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"fow_w_sten_mk2"
+			"Throw",
+			"Put",
+			"fow_w_sten_mk2",
+			"LIB_FLARE_PISTOL"
 		};
 		magazines[]=
 		{
-		"fow_32Rnd_9x19_sten",
-		"fow_e_no36mk1",
-		"fow_e_no36mk1",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren",
+			"fow_e_no36mk1",
+			"fow_e_no36mk1",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"fow_32Rnd_9x19_sten",
-		"fow_e_no36mk1",
-		"fow_e_no36mk1",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"	
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"		
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren",
+			"fow_e_no36mk1",
+			"fow_e_no36mk1",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
 		};
 	};
-	class WW2_British_Rifleman: I_Soldier_F
+	class WW2_British_Rifleman: WW2_British_Base
 	{
-		_generalMacro="WW2_British_Rifleman";
 		scope=2;
-		displayName="Rifleman(WW2)";
-		faction="twc_faction_independent";
-		editorSubcategory = "Men_WW2";
-		vehicleClass="Men_WW2";
-		icon="iconManLeader";
-		nakedUniform="U_BasicBody";
+		displayName="Rifleman (WW2)";
 		uniformClass="fow_u_uk_bd40_01_private";
-		backpack="TWC_Backpack_WW2_Rifleman";
-		linkedItems[]=
-		{
-        "fow_v_uk_base",
-		"fow_h_uk_mk2",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-        "fow_v_uk_base",
-		"fow_h_uk_mk2",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
-		};
 		weapons[]=
 		{
-		"Throw",
-		"Put",
-		"fow_w_leeenfield_no4mk1"
+			"Throw",
+			"Put",
+			"fow_w_leeenfield_no4mk1"
 		};
 		respawnweapons[]=
 		{
-		"Throw",
-		"Put",
-		"fow_w_leeenfield_no4mk1"
+			"Throw",
+			"Put",
+			"fow_w_leeenfield_no4mk1"
 		};
 		magazines[]=
 		{
-		"fow_10Rnd_303",
-		"fow_e_no36mk1",
-		"fow_e_no36mk1"
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_e_no36mk1",
+			"fow_e_no36mk1",
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren"
 		};
 		Respawnmagazines[]=
 		{
-		"fow_10Rnd_303",
-		"fow_e_no36mk1",
-		"fow_e_no36mk1"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"	
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"		
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_10Rnd_303",
+			"fow_e_no36mk1",
+			"fow_e_no36mk1",
+			"fow_30Rnd_303_bren"
+
 		};
 	};
-	class WW2_British_2IC: I_Soldier_F
+	class WW2_British_2IC: WW2_British_Rifleman
 	{
-		_generalMacro="WW2_British_2IC";
-		scope=2;
-		displayName="2IC(WW2)";
-		faction="twc_faction_independent";
-		editorSubcategory = "Men_WW2";
-		vehicleClass="Men_WW2";
-		icon="iconManLeader";
-		nakedUniform="U_BasicBody";
+		displayName="2IC (WW2)";
 		uniformClass="fow_u_uk_bd40_01_lance_corporal";
 		backpack="TWC_Backpack_WW2_2IC";
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"fow_w_leeenfield_no4mk1"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"fow_w_leeenfield_no4mk1"
+		};
+	};
+	class WW2_British_MG: WW2_British_Base
+	{
+		scope=2;
+		displayName="Machine Gunner (WW2)";
+		icon="iconManMG";
+		uniformClass="fow_u_uk_bd40_01_private";
 		linkedItems[]=
 		{
-        "fow_v_uk_base",
+        "TWC_Vest_WW2_Bren",
 		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
@@ -631,7 +413,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "fow_v_uk_base",
+        "TWC_Vest_WW2_Bren",
 		"fow_h_uk_mk2",
 		"ItemMap",
 		"ItemCompass",
@@ -641,357 +423,74 @@
 		{
 		"Throw",
 		"Put",
-		"Binocular",
-		"fow_w_leeenfield_no4mk1"
+		"TWC_Bren"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"Binocular",
-		"fow_w_leeenfield_no4mk1"
+		"TWC_Bren"
 		};
 		magazines[]=
 		{
-		"fow_10Rnd_303",
-		"fow_e_no36mk1",
-		"fow_e_no36mk1",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren"
 		};
 		Respawnmagazines[]=
 		{
-		"fow_10Rnd_303",
-		"fow_e_no36mk1",
-		"fow_e_no36mk1",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"	
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"		
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren",
+			"fow_30Rnd_303_bren"
 		};
 	};
-	class WW2_British_MG: I_Soldier_F
+	class WW2_British_MGASS: WW2_British_Rifleman
 	{
-		_generalMacro="WW2_British_Rifleman";
-		scope=2;
-		displayName="Machine Gunner(WW2)";
-		faction="twc_faction_independent";
-		editorSubcategory = "Men_WW2";
-		vehicleClass="Men_WW2";
-		icon="iconManLeader";
-		nakedUniform="U_BasicBody";
-		uniformClass="fow_u_uk_bd40_01_private";
-		backpack="TWC_Backpack_WW2_MG";
-		linkedItems[]=
-		{
-        "fow_v_uk_bren",
-		"fow_h_uk_mk2",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-        "fow_v_uk_bren",
-		"fow_h_uk_mk2",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
-		};
-		weapons[]=
-		{
-		"Throw",
-		"Put",
-		"fow_w_bren"
-		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put",
-		"fow_w_bren"
-		};
-		magazines[]=
-		{
-		"fow_30Rnd_303_bren",
-		"fow_30Rnd_303_bren",
-		"fow_30Rnd_303_bren"
-		};
-		Respawnmagazines[]=
-		{
-		"fow_30Rnd_303_bren",
-		"fow_30Rnd_303_bren",
-		"fow_30Rnd_303_bren"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"	
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"		
-		};
-	};
-	class WW2_British_MGASS: I_Soldier_F
-	{
-		_generalMacro="WW2_British_MGASS";
-		scope=2;
-		displayName="Machine Gunner Assistant(WW2)";
-		faction="twc_faction_independent";
-		editorSubcategory = "Men_WW2";
-		vehicleClass="Men_WW2";
-		icon="iconManLeader";
-		nakedUniform="U_BasicBody";
-		uniformClass="fow_u_uk_bd40_01_private";
+		displayName="Machine Gunner Assistant (WW2)";
 		backpack="TWC_Backpack_WW2_MGASS";
 		linkedItems[]=
 		{
-        "fow_v_uk_bren",
-		"fow_h_uk_mk2",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+			"TWC_Vest_WW2_Bren",
+			"fow_h_uk_mk2",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "fow_v_uk_bren",
-		"fow_h_uk_mk2",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
-		};
-		weapons[]=
-		{
-		"Throw",
-		"Put",
-		"fow_w_leeenfield_no4mk1"
-		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put",
-		"fow_w_leeenfield_no4mk1"
-		};
-		magazines[]=
-		{
-		"fow_10Rnd_303",
-		"fow_10Rnd_303",
-		"fow_10Rnd_303"
-		};
-		Respawnmagazines[]=
-		{
-		"fow_10Rnd_303",
-		"fow_10Rnd_303",
-		"fow_10Rnd_303"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"	
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"		
+			"fow_v_uk_bren",
+			"fow_h_uk_mk2",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 	};
-	class WW2_British_Vehicle_Commander: I_Soldier_F
+	class WW2_British_Vehicle_Commander: WW2_British_Base
 	{
-		_generalMacro="WW2_British_Vehicle_Commander";
 		scope=2;
-		displayName="Vehicle Commander(WW2)";
-		faction="twc_faction_independent";
-		editorSubcategory = "Men_WW2";
-		vehicleClass="Men_WW2";
+		displayName="Vehicle Commander (WW2)";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_bd40_01_sergeant";
 		backpack="TWC_Backpack_WW2_PlatoonCommand";
 		linkedItems[]=
 		{
-		"fow_h_uk_woolen_hat",
-		"fow_v_uk_officer",
+		"H_Beret_blk",
+		"V_LIB_SOV_RA_Belt",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-		"fow_h_uk_woolen_hat",
-		"fow_v_uk_officer",
+		"H_Beret_blk",
+		"V_LIB_SOV_RA_Belt",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -1013,198 +512,30 @@
 		magazines[]=
 		{
 		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
-		"SmokeShell",
-		"SmokeShell"
+		"fow_32Rnd_9x19_sten"
 		};
 		Respawnmagazines[]=
 		{
 		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"	
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"		
+		"fow_32Rnd_9x19_sten"
 		};
 	};
-	class WW2_British_Vehicle_Crewman: I_Soldier_F
+	class WW2_British_Vehicle_Crewman: WW2_British_Vehicle_Commander
 	{
-		_generalMacro="WW2_British_Vehicle_Crewman";
-		scope=2;
 		displayName="Vehicle Crewman (WW2)";
-		faction="twc_faction_independent";
-		editorSubcategory = "Men_WW2";
-		vehicleClass="Men_WW2";
-		icon="iconManLeader";
-		nakedUniform="U_BasicBody";
+		icon="iconMan";
 		uniformClass="fow_u_uk_bd40_01_private";
 		backpack="";
-		linkedItems[]=
-		{
-		"fow_h_uk_woolen_hat",
-		"fow_v_uk_sten",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-		"fow_h_uk_woolen_hat",
-		"fow_v_uk_sten",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
-		};
 		weapons[]=
 		{
-		"Throw",
-		"Put",
-		"fow_w_sten_mk2"
+			"Throw",
+			"Put",
+			"fow_w_sten_mk2"
 		};
 		respawnweapons[]=
 		{
-		"Throw",
-		"Put",
-		"fow_w_sten_mk2"
-		};
-		magazines[]=
-		{
-		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Respawnmagazines[]=
-		{
-		"fow_32Rnd_9x19_sten",
-		"fow_32Rnd_9x19_sten",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"	
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"		
+			"Throw",
+			"Put",
+			"fow_w_sten_mk2"
 		};
 	};

@@ -4,10 +4,11 @@ class CfgPatches
 	{
 		units[]=
 		{
+			"WW2_British_Base",
 			"WW2_British_Platoon_Commander",
 			"WW2_British_Platoon_Sergeant",
 			"WW2_British_Medic",
-			"WW2_British_Squadleader",
+			"WW2_British_Section_Leader",
 			"WW2_British_Rifleman",
 			"WW2_British_2IC",
 			"WW2_British_MG",
