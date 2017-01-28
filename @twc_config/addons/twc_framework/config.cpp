@@ -74,6 +74,7 @@ class CfgFunctions
 			class forwardBase {};
 			class giveRadio {};
 			class moduleMission {};
+			class nightGear {};
 			class run {};
 			class safeZone {};
 			class zeus {};
