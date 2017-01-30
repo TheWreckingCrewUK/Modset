@@ -30,7 +30,7 @@ class cfgVehicles
 		functionPriority = 1;
 		isGlobal = 2;
 		isTriggerActivated = 0;
-		isDisposable = 0;
+		isSingular = 1;
 		author = "[TWC] jayman";
 		class Arguments{
 			class enabled
