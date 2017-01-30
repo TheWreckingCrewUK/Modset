@@ -37,7 +37,7 @@ _box AddMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",20];
 _box AddMagazineCargoGlobal ["rhsusf_8Rnd_00Buck",5];
 _box AddMagazineCargoGlobal ["rhsusf_8Rnd_Slug",5];
 
-_box AddMagazineCargoGlobal ["CUP_5Rnd_762x51_M24",5];
+_box AddMagazineCargoGlobal ["rhsusf_10Rnd_762x51_m118_special_Mag",5];
 
 _box AddMagazineCargoGlobal ["rhsusf_mag_6Rnd_M441_HE",2];
 

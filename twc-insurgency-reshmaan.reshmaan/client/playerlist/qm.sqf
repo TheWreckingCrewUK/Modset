@@ -2,7 +2,7 @@
 _player1 = if(!isPlayer p901)then{""}else{(name p901)};
 _player2 = if(!isPlayer p902)then{""}else{(name p902)};
 
-g_playerlist = [["QuarterMaster", [["QuarterMaster", [_player1, "QuarterMaster"], [_player1, "QuarterMaster"]]]]				
+g_playerlist = [["QuarterMaster", [["QuarterMaster", [_player1, "QuarterMaster"], [_player2, "QuarterMaster"]]]]				
 ];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
