@@ -22,6 +22,7 @@ class cfgVehicles
 	};
 	class twc_ModuleMission: Module_F
 	{
+		author = "[TWC] jayman";
 		scope = 2;
 		displayName = "TWC Mission Module";
 		category = "twc_missionSetup";
@@ -30,8 +31,7 @@ class cfgVehicles
 		functionPriority = 1;
 		isGlobal = 2;
 		isTriggerActivated = 0;
-		isSingular = 1;
-		author = "[TWC] jayman";
+		isDisposable = 0;
 		class Arguments{
 			class enabled
 			{

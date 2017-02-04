@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[]=
 		{
-			
+			"twc_ModuleMission"
 		};
 		weapons[]={};
 		requiredVersion=1.54;
