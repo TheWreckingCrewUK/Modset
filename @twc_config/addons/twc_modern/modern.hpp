@@ -1108,7 +1108,6 @@
 	class Modern_British_Autorifleman_COIN: Modern_British_Autorifleman
 	{
 		displayName="Automatic Rifleman (Modern COIN)";
-		linkedItems[]={};
 		weapons[]=
 		{
 			"Throw",

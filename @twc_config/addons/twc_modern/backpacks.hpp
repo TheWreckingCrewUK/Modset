@@ -161,11 +161,6 @@
 				magazine = "1Rnd_HE_Grenade_shell";
 				count = 15;
 			};
-			class _xx_Flare
-			{
-				magazine = "UGL_FlareWhite_F";
-				count = 3;
-			};
 			class _xx_Smoke_White
 			{
 				magazine = "1Rnd_Smoke_Grenade_shell";
