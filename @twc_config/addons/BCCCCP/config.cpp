@@ -128,4 +128,47 @@ class CfgVehicles
 	#include "air.hpp"
 	#include "armour.hpp"
 	#include "cars.hpp"
+	
+	class FlagCarrier;	
+	class Flag_USSR_F: FlagCarrier
+	{
+		author="Anschluss";
+		class SimpleObject
+		{
+			animate[]=
+			{
+				
+				{
+					"flag",
+					0
+				}
+			};
+			hide[]={};
+			verticalOffset=0;
+			verticalOffsetWorld=0;
+		};
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Flag_Red_F.jpg";
+		_generalMacro="Flag_USSR_F";
+		scope=2;
+		scopeCurator=2;
+		displayName="Flag (USSR)";
+		class EventHandlers
+		{
+			init="(_this select 0) setFlagTexture '\BCCCCP\Data\flag_ussr.paa'";
+		};
+	};	
+};
+class CfgMarkers
+{
+	class flag_USSR: Flag
+	{
+		name="$STR_A3_CfgMarkers_flag_NATO";
+		icon="BCCCCP\Data\marker_ussr.paa";
+		texture="BCCCCP\Data\marker_ussr.paa";
+		size=32;
+		scope=1;
+		shadow=0;
+		color[]={1,1,1,1};
+		markerClass="Flags";
+	};
 };
