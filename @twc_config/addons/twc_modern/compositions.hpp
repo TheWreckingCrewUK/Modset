@@ -114,35 +114,35 @@ class CfgGroups
                                         class Unit1
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Rifleman";
+                                                vehicle = "Modern_British_Rifleman_Mechanised";
                                                 rank = "PRIVATE";
                                                 position[] = {3,0,0};
                                         };
                                         class Unit2
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Grenadier";
+                                                vehicle = "Modern_British_Grenadier_Mechanised";
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
 										class Unit3
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_2IC";
+                                                vehicle = "Modern_British_2IC_Mechanised";
                                                 rank = "PRIVATE";
                                                 position[] = {7,0,0};
                                         };
 										class Unit4
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Autorifleman";
+                                                vehicle = "Modern_British_Autorifleman_Mechanised";
                                                 rank = "PRIVATE";
                                                 position[] = {9,0,0};
                                         };
 										class Unit5
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Marksman";
+                                                vehicle = "Modern_British_Marksman_Mechanised";
                                                 rank = "PRIVATE";
                                                 position[] = {11,0,0};
                                         };
@@ -200,56 +200,56 @@ class CfgGroups
                                         class Unit0
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_Squadleader"; //Class name of desired solider
+                                                vehicle = "Modern_British_Squadleader"; //Class name of desired solider
                                                 rank = "CORPORAL"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_Pointman";
+                                                vehicle = "Modern_British_Pointman";
                                                 rank = "PRIVATE";
                                                 position[] = {3,0,0};
                                         };
                                         class Unit2
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_Grenadier";
+                                                vehicle = "Modern_British_Grenadier_COIN";
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
 										class Unit3
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_Autorifleman";
+                                                vehicle = "Modern_British_Autorifleman_COIN";
                                                 rank = "PRIVATE";
                                                 position[] = {7,0,0};
                                         };
 										class Unit4
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_2IC";
+                                                vehicle = "Modern_British_2IC_COIN";
                                                 rank = "PRIVATE";
                                                 position[] = {9,0,0};
                                         };
 										class Unit5
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_Autorifleman";
+                                                vehicle = "Modern_British_Autorifleman_COIN";
                                                 rank = "PRIVATE";
                                                 position[] = {11,0,0};
                                         };
 										class Unit6
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_Machinegunner";
+                                                vehicle = "Modern_British_Machinegunner";
                                                 rank = "PRIVATE";
                                                 position[] = {13,0,0};
                                         };
 										class Unit7
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_Marksman";
+                                                vehicle = "Modern_British_Marksman_COIN";
                                                 rank = "PRIVATE";
                                                 position[] = {15,0,0};
                                         };
@@ -262,92 +262,23 @@ class CfgGroups
                                         class Unit0
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_Platoon_Commander"; //Class name of desired solider
+                                                vehicle = "Modern_British_Platoon_Commander"; //Class name of desired solider
                                                 rank = "lieutenant"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_Platoon_Sergeant";
+                                                vehicle = "Modern_British_Platoon_Sergeant";
                                                 rank = "sergeant";
                                                 position[] = {3,0,0};
                                         };
                                         class Unit2
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_Coin_Medic";
+                                                vehicle = "Modern_British_Medic";
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
-                                        };
-                                };
-								class Modern_Coin_Section_Mechanized
-                                {
-                                        name = "Mechanized Section"; //Name of Group
-                                        faction = "twc_faction"; //Faction
-                                        side = 1; //Side
-                                        class Unit0
-                                        {
-                                                side = 1;
-                                                vehicle = "Modern_British_Squadleader"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
-                                                position[] = {0,3,0}; //Position in the formation
-                                        };
-                                        class Unit1
-                                        {
-                                                side = 1;
-                                                vehicle = "Modern_British_Coin_Pointman";
-                                                rank = "PRIVATE";
-                                                position[] = {3,0,0};
-                                        };
-                                        class Unit2
-                                        {
-                                                side = 1;
-                                                vehicle = "Modern_British_Coin_Grenadier";
-                                                rank = "PRIVATE";
-                                                position[] = {5,0,0};
-                                        };
-										class Unit3
-                                        {
-                                                side = 1;
-                                                vehicle = "Modern_British_Coin_2IC";
-                                                rank = "PRIVATE";
-                                                position[] = {7,0,0};
-                                        };
-										class Unit4
-                                        {
-                                                side = 1;
-                                                vehicle = "Modern_British_Coin_Autorifleman";
-                                                rank = "PRIVATE";
-                                                position[] = {9,0,0};
-                                        };
-										class Unit5
-                                        {
-                                                side = 1;
-                                                vehicle = "Mechanized_British_Coin_Marksman";
-                                                rank = "PRIVATE";
-                                                position[] = {11,0,0};
-                                        };
-										class Unit6
-                                        {
-                                                side = 1;
-                                                vehicle = "Modern_British_VehicleCommander";
-                                                rank = "PRIVATE";
-                                                position[] = {13,1,0};
-                                        };
-										class Unit7
-                                        {
-                                                side = 1;
-                                                vehicle = "Modern_British_VehicleCrew";
-                                                rank = "PRIVATE";
-                                                position[] = {15,1,0};
-                                        };
-										class Unit8
-                                        {
-                                                side = 1;
-                                                vehicle = "Modern_British_VehicleCrew";
-                                                rank = "PRIVATE";
-                                                position[] = {17,1,0};
                                         };
                                 };
                         };

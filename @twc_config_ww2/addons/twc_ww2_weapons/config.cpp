@@ -2,7 +2,9 @@ class CfgPatches
 {
 	class twc_weapons_ww2
 	{
-		units[]={};
+		units[]={
+			"TWC_Operation_WW2_Ammobox"
+		};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=

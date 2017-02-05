@@ -1298,11 +1298,6 @@
 		displayName="2IC (Modern Mechanised)";
 		backpack="";
 	};
-	class Modern_British_Machinegunner_Mechanised: Modern_British_Machinegunner
-	{
-		displayName="Machinegunner (Modern Mechanised)";
-		backpack="";
-	};
 	class Modern_British_Marksman_Mechanised: Modern_British_Marksman
 	{
 		displayName="Marksman (Modern Mechanised)";
