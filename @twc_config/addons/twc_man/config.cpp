@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class unit_config
+	class twc_man
 	{
 		units[]={};
 		weapons[]={};

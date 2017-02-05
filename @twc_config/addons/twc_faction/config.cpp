@@ -131,26 +131,6 @@ class CfgPatches
 };
 class CfgEditorSubCategories
 {
-	class Men_Modern
-	{
-		displayName = "Men (Modern)";
-	};
-	class Men_ModernCoin
-	{
-		displayName = "Men (Modern COIN)";
-	};
-	class Men_ColdWar
-	{
-		displayName = "Men (ColdWar)";
-	};
-	class Men_1990D
-	{
-		displayName = "Men (1990 Desert)";
-	};
-	class Men_1990W
-	{
-		displayName = "Men (1990 Woodland)";
-	};
 	class Men_USSR
 	{
 		displayName = "Men (USSR)";
@@ -186,22 +166,6 @@ class CfgEditorSubCategories
 };
 class CfgFactionClasses
 {
-	class a_units
-	{
-		displayName="Broken";
-		author="FakeMatty";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
-	};
-	class twc_faction
-	{
-		displayName="TWC Operation Units";
-		author="FakeMatty";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
-	};
 	class Iraqi_units
 	{
 		displayName="Iraqi Army Gulf War Units";
@@ -246,10 +210,6 @@ class CfgVehicles
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
-	
-	#include "coldwar.hpp"
-	#include "1990.hpp"
-	#include "modern.hpp"
 	
 	#include "russianfederation.hpp"
 	#include "ussr.hpp"

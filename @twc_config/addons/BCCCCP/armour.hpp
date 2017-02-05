@@ -105,7 +105,7 @@
 	class BCCCCP_BTR60: CUP_O_BTR60_SLA
 	{
 		faction="BCCCCP";
-		crew="BCCCCP_Crewman_Camo"
+		crew="BCCCCP_Crewman_Camo";
 		typicalCargo[]=
 		{
 			"BCCCCP_Crewman_Camo"

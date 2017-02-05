@@ -6,7 +6,7 @@ class CfgGroups
 		side = EAST;
 		class BCCCCP
 		{
-			name = "Armed Forces of the USSR"
+			name = "Armed Forces of the USSR";
 			class Motostrelki
 			{
 				name = "Motostrelki";
