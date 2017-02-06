@@ -74,7 +74,7 @@ class CfgFunctions
 			class deadBodies {};
 			class forwardBase {};
 			class giveRadio {};
-			class moduleMission {};
+			class missionModuleInit {};
 			class nightGear {};
 			class run {};
 			class safeZone {};

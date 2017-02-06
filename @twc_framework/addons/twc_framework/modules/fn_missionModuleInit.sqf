@@ -2,20 +2,22 @@ params ["_logic","_units","_activated"];
 
 if !(_activated) exitWith {};
 if !(isServer)exitWith{};
+
 _enabled = _logic getVariable "enabled";
 if !(_enabled) exitWith {};
 
+missionNameSpace setVariable ["twcModuleEnabled",true,true];
 
-/*
-//[(_logic getVariable "era")] call twc_fnc_era; //Currently returns and does nothing, but the era value is used other places
-[(_logic getVariable "boatSafety")] spawn twc_fnc_boatSafety;
-[(_logic getVariable "civilianEquipment")] spawn twc_fnc_civilianEquipment;
-[(_logic getVariable "deadBodies")] spawn twc_fnc_deadBodies;
-[(_logic getVariable "forwardBase")] spawn twc_fnc_forwardBase;
-[(_logic getVariable "giveRadio")] spawn twc_fnc_giveRadio;
-[(_logic getVariable "nightGear"),(_logic getVariable "era")] spawn twc_fnc_nightGear;
-[(_logic getVariable "rollSleeves")] spawn twc_fnc_rollShirt;
-[(_logic getVariable "run")] spawn twc_fnc_run;
-[(_logic getVariable "safeZone")] spawn twc_fnc_safeZone;
-[(_logic getVariable "stats")] call twc_fnc_stats;
-[(_logic getVariable "zuesObjects")] spawn twc_fnc_zeus;
+missionNameSpace setVariable ["era",(_logic getVariable "era"),true];
+missionNameSpace setVariable ["boatSafety",(_logic getVariable "boatSafety"),true];
+missionNameSpace setVariable ["civilianEquipment",(_logic getVariable "boatSafety"),true];
+missionNameSpace setVariable ["deadBodies",(_logic getVariable "boatSafety"),true];
+missionNameSpace setVariable ["forwardBase",(_logic getVariable "forwardBase"),true];
+missionNameSpace setVariable ["giveRadio",(_logic getVariable "giveRadio"),true];
+missionNameSpace setVariable ["nightGear",(_logic getVariable "nightGear"),true];
+missionNameSpace setVariable ["rollSleeves",(_logic getVariable "rollSleeves"),true];
+missionNameSpace setVariable ["run",(_logic getVariable "run"),true];
+missionNameSpace setVariable ["safeZone",(_logic getVariable "safeZone"),true];
+missionNameSpace setVariable ["stats",(_logic getVariable "stats"),true];
+missionNameSpace setVariable ["zuesObjects",(_logic getVariable "zuesObjects"),true];
+
