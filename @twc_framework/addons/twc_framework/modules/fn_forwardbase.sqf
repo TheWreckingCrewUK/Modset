@@ -1,14 +1,12 @@
-params ["_enabled"];
+params ["_enabled",["_unit",objNull]];
 
 if(!hasInterface)exitWith{};
 
 if !(_enabled) exitWith {};
 
-if(isNil "molar")exitWith {systemChat "Forward base is enabled, but no Molar isNil. Exiting disabling forward base"};
+if(isNil "molar" && _unit != molar)exitWith {systemChat "Forward base is enabled, but no Molar isNil. Exiting disabling forward base"};
 
-_baseMakers = ["Modern_British_Platoon_Commander","Modern_British_Platoon_Sergeant","Modern_British_Coin_Platoon_Commander","Modern_British_Coin_Platoon_Sergeant","ColdWar_sergeant","1990_British_Platoon_Commander","1990_British_Platoon_Sergeant","1990_British_Platoon_Commander_Desert","1990_British_Platoon_Sergeant_Desert"];
-
-if(typeof player in _baseMakers)then{
+if(player == molar || _unit == player)then{
 
 //Function to create Forward Base
 	twc_fnc_createForwardBase={

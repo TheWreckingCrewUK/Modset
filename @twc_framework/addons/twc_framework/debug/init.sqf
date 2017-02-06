@@ -5,3 +5,9 @@ airAction = ["DebugM","Debug Markers","", {if (DebugMarkers) then {DebugMarkers 
 [player, 1, ["ACE_SelfActions", "DebugMenu"], airAction] call ace_interact_menu_fnc_addActionToObject;
 
 execVM "twc_framework\debug\DebugMarkers.sqf";
+
+/*
+
+if (getPlayerUID player == "_SP_PLAYER_" || name player == "jayman") then {
+	execvm "twc_framework\debug\init.sqf";
+};

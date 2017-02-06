@@ -32,6 +32,7 @@ class cfgFactionClasses
 		displayName = "TWC Mission Module";
 	};
 };
+#include "cfgEventHandlers.hpp"
 #include "cfgVehicles.hpp"
 
 class CfgFunctions
@@ -80,21 +81,6 @@ class CfgFunctions
 			class stats {};
 			class zeus {};
 		};
-	};
-};
-
-class Extended_PostInit_EventHandlers
-{
-	class Twc_framework_init
-	{
-		init="execVM '\twc_framework\init.sqf';";
-	};
-};
-class Extended_PreInit_EventHandlers
-{
-	class Twc_framework_init
-	{
-		init="execVM '\twc_framework\preinit.sqf';";
 	};
 };
 

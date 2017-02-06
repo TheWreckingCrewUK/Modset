@@ -1,10 +1,12 @@
 params ["_logic","_units","_activated"];
 
 if !(_activated) exitWith {};
-
+if !(isServer)exitWith{};
 _enabled = _logic getVariable "enabled";
-
 if !(_enabled) exitWith {};
+
+
+/*
 //[(_logic getVariable "era")] call twc_fnc_era; //Currently returns and does nothing, but the era value is used other places
 [(_logic getVariable "boatSafety")] spawn twc_fnc_boatSafety;
 [(_logic getVariable "civilianEquipment")] spawn twc_fnc_civilianEquipment;

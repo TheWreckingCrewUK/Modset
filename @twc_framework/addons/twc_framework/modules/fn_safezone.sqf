@@ -1,19 +1,16 @@
-/*
-    GrenadeStop v0.8 for ArmA 3 Alpha by Bake (tweaked slightly by Rarek)
-    
-    DESCRIPTION:
-    Stops players from throwing grenades in safety zones.
-    
-    CONFIGURATION:
-    Edit the #defines below.
+/* Shooting in base stopper
+* Created by [twc] jayman
+* adds an event handler that stops the shooting near the base flag
+*
+* input is the range
 */
 params ["_range"];
 
- if (isDedicated) exitWith {};
 if(!hasInterface)exitWith{};
 
 if (_range == 0) exitWith {};
 
+//I really wish this wasn't a global variable
 twc_baseSafezoneRange = _range;
 if (getMarkerColor "base" == "") exitWith {systemChat "No shooting in base is enabled, but no base marker is defined"};
 

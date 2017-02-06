@@ -27,11 +27,11 @@ class cfgVehicles
 		displayName = "TWC Mission Module";
 		category = "twc_missionSetup";
 		
-		function = "twc_fnc_moduleMission";
+		function = "twc_fnc_missionModuleInit";
 		functionPriority = 1;
-		isGlobal = 2;
+		isGlobal = 0;
 		isTriggerActivated = 0;
-		isDisposable = 0;
+		isDisposable = 1;
 		class Arguments{
 			class enabled
 			{
