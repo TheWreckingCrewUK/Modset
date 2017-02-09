@@ -160,6 +160,7 @@ class CfgVehicles
 };
 class CfgMarkers
 {
+	class Flag;
 	class flag_USSR: Flag
 	{
 		name="$STR_A3_CfgMarkers_flag_NATO";
