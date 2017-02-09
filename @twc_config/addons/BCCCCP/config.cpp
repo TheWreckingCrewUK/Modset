@@ -163,7 +163,7 @@ class CfgMarkers
 	class Flag;
 	class flag_USSR: Flag
 	{
-		name="$STR_A3_CfgMarkers_flag_NATO";
+		name="USSR";
 		icon="BCCCCP\Data\marker_ussr.paa";
 		texture="BCCCCP\Data\marker_ussr.paa";
 		size=32;
