@@ -28,6 +28,7 @@ twc_fnc_rollSleeves = {
 	//Desert 90
 		case "UK3CB_BAF_U_CombatUniform_DDPM_RM": {"UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve"};
 		case "UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve": {"UK3CB_BAF_U_CombatUniform_DDPM_RM"};
+		default {hint "You do not have an appropriate uniform to roll sleeves"};
 	};
 	//Saves Gear
 	_items = uniformitems player;

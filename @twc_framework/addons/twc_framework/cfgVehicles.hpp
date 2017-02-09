@@ -122,9 +122,9 @@ class cfgVehicles
 			class run
 			{
 				displayName = "Running in Base";
-				description = "Enable to allow Running in Base";
-				typeName = "BOOL";
-				defaultValue = 1;
+				description = "Set base no run zone. 0 = Run anywhere";
+				typeName = "Number";
+				defaultValue = 0;
 			};
 			class safeZone
 			{
