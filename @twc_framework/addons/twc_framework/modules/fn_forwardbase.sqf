@@ -21,7 +21,8 @@ if(player == molar || _unit == player)then{
 		publicVariable "ForwardBase";
 		forwardBaseFlag = "Flag_UK_F" createVehicle _pos;	
 		forwardBaseTent = "Camp" createVehicle _pos;
-		[forwardBaseTent,"ace_medical_isMedicalFacility",true,true] remoteExecCall ["setVariable",0,true];
+		//Sets it a medical facility. I assume the player can do this. Needs testing
+		forwardBaseTent setvariable ["ace_medical_isMedicalFacility", true,true];
 	};
 //ACE Action to create forward Base
 	ForwardBaseAction = ["twcActions","Forward Base","", {},{true}] call ace_interact_menu_fnc_createAction;
