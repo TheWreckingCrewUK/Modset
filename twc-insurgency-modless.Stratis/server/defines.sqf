@@ -16,6 +16,7 @@ cacheDefenseSquad = configfile >> "CfgGroups" >> "West" >> "Guerilla" >> "Infant
 townSpawn = ["O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_F"];
 //Array of units that spawn in waves to move into the town
 townSquadWave = ["O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_AR_F","O_G_Soldier_AR_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_AR_F","O_G_Soldier_AR_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_AR_F","O_G_Soldier_AR_F"];
+aaTeam = ["O_G_Soldier_lite_F","O_G_Soldier_lite_F","O_G_Soldier_lite_F"];
 //Civilian vehicles that are spawned
 vehicleList = ["C_Offroad_01_F", "C_Quadbike_01_F", "C_SUV_01_F", "C_Van_01_transport_F","C_Van_01_box_F","C_Truck_02_transport_F"];
 //Technical used by enemy forces when caches are destroyed

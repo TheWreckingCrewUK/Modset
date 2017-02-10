@@ -28,6 +28,12 @@ if (!isNil "helo2" && {player == helo2}) then {
 if (!isNil "helo3" && {player == helo3}) then {
 	execVM "client\arsenal\helo.sqf";
 };
+if (!isNil "apache1" && {player == apache1}) then {
+	execVM "client\arsenal\helo.sqf";
+};
+if (!isNil "apache2" && {player == apache2}) then {
+	execVM "client\arsenal\helo.sqf";
+};
 
 if (!isNil "jet1" && {player == jet1}) then {
 	execVM "client\arsenal\jet.sqf";
@@ -77,4 +83,19 @@ if (!isNil "p14" && {player == p14}) then {
 };
 if (!isNil "p15" && {player == p15}) then {
 	execVM "client\arsenal\bravo_med.sqf";
+};
+if (!isNil "p16" && {player == p16}) then {
+	execVM "client\arsenal\delta_sl.sqf";
+};
+if (!isNil "p17" && {player == p17}) then {
+	execVM "client\arsenal\delta_rf.sqf";
+};
+if (!isNil "p18" && {player == p18}) then {
+	execVM "client\arsenal\delta_grn.sqf";
+};
+if (!isNil "p19" && {player == p19}) then {
+	execVM "client\arsenal\delta_ar.sqf";
+};
+if (!isNil "p20" && {player == p20}) then {
+	execVM "client\arsenal\delta_med.sqf";
 };

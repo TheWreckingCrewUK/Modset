@@ -40,7 +40,6 @@ for "_i" from 0 to _waves do{
 				InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
 			};
 		}];
-		_unit addMagazines ["handGrenade",2];
 		_unit setVariable ["unitsHome",_pos,false];
 		_num = _num + 1;
 		sleep 0.2;
@@ -50,4 +49,27 @@ for "_i" from 0 to _waves do{
 	_num = 0;
 	_waveNum = _waveNum + 1;
 	_waveSize = if(_waveNum == _waves)then{_lastWave};
+};
+
+_rand = random 100;
+if(_rand > 50)then{
+	_group = createGroup East;
+	_dir = (_thisList select 0) getDir _pos;
+	_dir1 = _dir - 30;
+	_dir2 = _dir + 30;
+	_spawnPos = [_pos,(_spawnAiInfo select 1),[_dir1,_dir2]] call SHK_pos;
+	_group = [_spawnPos, EAST, aaTeam] call BIS_fnc_spawnGroup;
+	{
+		_x addMagazine "Titan_AA";
+		_x addWeapon "launch_O_Titan_F";
+		
+		_x addEventHandler ["Killed",{
+		[(_this select 0)] call twc_fnc_deleteDead;
+			if (side (_this select 1) == WEST) then{
+				InsP_enemyMorale = InsP_enemyMorale + 0.12; publicVariable "InsP_enemyMorale";
+			};
+		}];
+		_x setVariable ["unitsHome",_pos,false];
+	}forEach units _group;
+	[_group, (_pos), 40] call CBA_fnc_taskAttack;
 };

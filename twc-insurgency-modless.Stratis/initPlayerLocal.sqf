@@ -15,20 +15,23 @@ if(isMultiplayer)then{
 	sleep 5;
 };
 
-_specialSlots = ["helo1","helo2","helo3"];
-
+_specialSlots = ["helo1","helo2","helo3","tank1","tank2","tank3","apache1","apache2"];
 if ((str player) in _specialSlots)then{
 	
 	_UID = getPlayerUID player;
 	if((_UID) != "_SP_PLAYER_" && (_UID) != "76561198070630639")then{	
 		_pilots = ["helo1", "helo2","helo3", "helo4"];
 		_armourCrew = ["tank1","tank2","tank3"];
-		_humancivs = ["humanCiv1", "humanCiv2", "humanCiv3"];
-		_mertteam = ["mert_sl","mert_med"];
+		_apachePilots = ["apache1","apache2"];
 		_numPlayers = switch (str player) do{
 			case "helo1";
 			case "helo2";
 			case "helo3": {5};
+			case "tank1";
+			case "tank2";
+			case "tank3": {10};
+			case "apache1";
+			case "apache2": {20};
 			default {};
 		};
 		_justPlayers = count(allPlayers - entities "HeadlessClient_F");
@@ -40,6 +43,12 @@ if ((str player) in _specialSlots)then{
 		
 		if ((str player) in _pilots && (_justPlayers * _pilotMultiplier) < _numPlayers) then {
 			["End2", false, 0] call BIS_fnc_endMission;
+		};
+		if ((str player) in _armourCrew && _justPlayers < _numPlayers) then {
+			["End3", false, 0] call BIS_fnc_endMission;
+		};
+		if ((str player) in _apachePilots && _justPlayers < _numPlayers) then {
+			["End3", false, 0] call BIS_fnc_endMission;
 		};
 	};
 };

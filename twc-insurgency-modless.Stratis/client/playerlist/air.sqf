@@ -3,8 +3,8 @@ _player1 = if(!isNil "helo1")then{if(!isPlayer helo1)then{"";}else{(name helo1);
 _player2 = if(!isNil "helo2")then{if(!isPlayer helo2)then{"";}else{(name helo2);};}else{"";};
 _player3 = if(!isNil "helo3")then{if(!isPlayer helo3)then{"";}else{(name helo3);};}else{"";};
 _player4 = if(!isNil "helo4")then{if(!isPlayer helo4)then{"";}else{(name helo4);};}else{"";};
-_player5 = if(!isNil "p33")then{if(!isPlayer p33)then{"";}else{(name p33);};}else{"";};
-_player6 = if(!isNil "p34")then{if(!isPlayer p34)then{"";}else{(name p34);};}else{"";};
+_player5 = if(!isNil "apache1")then{if(!isPlayer apache1)then{"";}else{(name apache1);};}else{"";};
+_player6 = if(!isNil "apache2")then{if(!isPlayer apache2)then{"";}else{(name apache2);};}else{"";};
 
 g_playerlist = [["Air Assets", [["Wildcat/Chinook", [_player1, "Pilot"],[_player2, "Crew Cheif"]],["BlackHawk/Chinook", [_player3, "Pilot"],[_player4, "Crew Cheif"]],["Apache", [_player5, "Pilot"],[_player6, "Gunner"]]]]				
 				

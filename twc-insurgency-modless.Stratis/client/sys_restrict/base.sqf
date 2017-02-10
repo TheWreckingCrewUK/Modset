@@ -1,7 +1,7 @@
 waitUntil {!isNull player};
 
 player addEventHandler ["Fired", {
-    if ((_this select 0) distance getMarkerPos "respawn_west" < 150) then
+    if ((_this select 0) distance getMarkerPos "respawn_west" < 300) then
     {
         deleteVehicle (_this select 6);
 		hintc "NO FIRING AT BASE";

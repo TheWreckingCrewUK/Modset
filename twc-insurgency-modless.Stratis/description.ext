@@ -85,7 +85,7 @@ class CfgDebriefing
 	{
 		title = "Pilot Unavailable";
 		subtitle = "More players are needed for Pilot.";
-		description = "5 player per Pilot. Including Crew Cheifs";
+		description = "5 player per Pilot";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -93,9 +93,9 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "You can not play as a human Civilian";
-		subtitle = "";
-		description = "Play as Blufor for now";
+		title = "Attachment Unavailable";
+		subtitle = "10 For Armour. 20 For Attach Helicopter";
+		description = "Play as Blufor infantry for now";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};

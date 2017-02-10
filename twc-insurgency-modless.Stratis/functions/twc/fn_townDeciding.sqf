@@ -1,10 +1,8 @@
 params["_pos","_thisList","_marker"];
 
-systemChat format["%1 at townDeciding.sqf",_marker];
-
 _bluVictory = if ((west countSide _thisList) == 0) then {"0";}else{"1";};
 if(_bluVictory == "0")then{
-	_bluNear = nearestObjects [_pos,["Man","Car"],600];
+	_bluNear = nearestObjects [_pos,["Man","Car","Air"],600];
 	_near = 0;
 	{
 		if(side _x == west)exitWith{
