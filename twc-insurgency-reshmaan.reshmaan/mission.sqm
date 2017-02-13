@@ -8,22 +8,22 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=4597;
+		nextID=4890;
 	};
 	class MarkerIDProvider
 	{
-		nextID=20;
+		nextID=21;
 	};
 	class LayerIndexProvider
 	{
-		nextID=59;
+		nextID=86;
 	};
 	class Camera
 	{
-		pos[]={16623.119,117.04163,3133.6545};
-		dir[]={-0.43835628,-0.48127326,0.75909555};
-		up[]={-0.24067558,0.87657112,0.41677463};
-		aside[]={0.86598313,-3.9406586e-008,0.50008088};
+		pos[]={15198.715,210.66685,1917.9285};
+		dir[]={-0.37702027,-0.60924697,-0.69765705};
+		up[]={-0.2896623,0.79296273,-0.53600526};
+		aside[]={-0.8797769,-4.3610635e-007,0.47543889};
 	};
 };
 binarizationWanted=0;
@@ -454,7 +454,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=175;
+		items=177;
 		class Item0
 		{
 			dataType="Object";
@@ -1694,7 +1694,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=-1;
+									value=1;
 								};
 							};
 						};
@@ -2483,7 +2483,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=-1;
+									value=1;
 								};
 							};
 						};
@@ -3567,7 +3567,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=-1;
+									value=1;
 								};
 							};
 						};
@@ -4725,7 +4725,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16839.781,82.830147,3357.709};
+				position[]={16838.615,82.830147,3364.2554};
 			};
 			id=184;
 			type="ACE_moduleAssignMedicRoles";
@@ -6347,7 +6347,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16839.709,82.830147,3340.1538};
+				position[]={16839.232,82.830147,3354.1626};
 			};
 			id=357;
 			type="ACE_moduleAdvancedMedicalSettings";
@@ -7699,7 +7699,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16540.139,82.799065,3155.9795};
+						position[]={16540.139,82.799065,3155.979};
 						angles[]={0,1.5353138,0};
 					};
 					side="West";
@@ -10433,6 +10433,290 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item175
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16829.957,82.830147,3385.5811};
+			};
+			name="Bosenator";
+			id=4597;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198005456546";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item176
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16486.641,82.799065,3158.71};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="P606";
+						description="Bomb Disposal Team Leader";
+						isPlayable=1;
+					};
+					id=4599;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16479.322,82.799065,3157.5583};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						name="P608";
+						description="Bomb Disposal Team Infantry Escort";
+						isPlayable=1;
+					};
+					id=4600;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isEngineer";
+							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16486.004,82.799065,3163.4578};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						name="P607";
+						description="Bomb Disposal Operator";
+						isPlayable=1;
+					};
+					id=4601;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isEngineer";
+							expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4598;
 		};
 	};
 };

@@ -1,13 +1,40 @@
-//made by hartzie edited by FakeMatty
-_player1 = if(!isPlayer p11)then{""}else{(name p11)};
-_player2 = if(!isPlayer p12)then{""}else{(name p12)};
-_player3 = if(!isPlayer p13)then{""}else{(name p13)};
-_player4 = if(!isPlayer p14)then{""}else{(name p14)};
-_player5 = if(!isPlayer p15)then{""}else{(name p15)};
+//made by hartzie edited by Adam[TWC]
+_player18 = if(!isNil "p301")then{if(!isPlayer p301)then{"";}else{(name p301);};}else{"";};
+_player19 = if(!isNil "p302")then{if(!isPlayer p302)then{"";}else{(name p302);};}else{"";};
+_player20 = if(!isNil "p303")then{if(!isPlayer p303)then{"";}else{(name p303);};}else{"";};
+_player21 = if(!isNil "p304")then{if(!isPlayer p304)then{"";}else{(name p304);};}else{"";};
+_player22 = if(!isNil "p305")then{if(!isPlayer p305)then{"";}else{(name p305);};}else{"";};
+_player23 = if(!isNil "p306")then{if(!isPlayer p306)then{"";}else{(name p306);};}else{"";};
+_player24 = if(!isNil "p307")then{if(!isPlayer p307)then{"";}else{(name p307);};}else{"";};
+_player25 = if(!isNil "p308")then{if(!isPlayer p308)then{"";}else{(name p308);};}else{"";};
+_player26 = if(!isNil "p309")then{if(!isPlayer p309)then{"";}else{(name p309);};}else{"";};
+_player27 = if(!isNil "p310")then{if(!isPlayer p310)then{"";}else{(name p310);};}else{"";};
+_player28 = if(!isNil "p311")then{if(!isPlayer p311)then{"";}else{(name p311);};}else{"";};
+_player29 = if(!isNil "p312")then{if(!isPlayer p312)then{"";}else{(name p312);};}else{"";};
+_player30 = if(!isNil "p313")then{if(!isPlayer p313)then{"";}else{(name p313);};}else{"";};
 
 
-g_playerlist = [["Charlie USMC", [["Charlie Squad Leader", [_player1, "Squad Leader"], [_player2, "Rifleman"], [_player3, "Grenadier"], [_player4, "Automatic Rifleman"], [_player5, "Medic"]]]]					
-				];
+g_playerlist = [["Charlie USMC", 
+	[["Charlie Squad Leader", 
+		[_player18, "Squad Leader"]], 
+	["Fire Team 1", 
+		[_player19, "Fire Team Leader"], 
+		[_player20, "Rifleman"], 
+		[_player21, "Automatic Rifleman"], 
+		[_player22, "Assistant Automatic Rifleman"]], 
+	["Fire Team 2", 
+		[_player23, "Fire Team Leader"],
+		[_player24, "Rifleman"],
+		[_player25, "Automatic Rifleman"], 
+		[_player26, "Assistant Automatic Rifleman"]], 
+	["Fire Team 3", 
+		[_player27, "Fire Team Leader"], 
+		[_player28, "Machine Gunner"], 
+		[_player29, "Machine Gunner Assistant"], 
+		[_player30, "Medic"]]
+		]
+	]					
+];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
 _headline = "<t color='#CCCC00' size='1.2' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";

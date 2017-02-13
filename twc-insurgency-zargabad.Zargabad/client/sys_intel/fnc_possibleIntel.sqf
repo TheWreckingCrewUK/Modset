@@ -1,5 +1,6 @@
 _givenNumber = (_this select 0) select 0;
 _civilianQuestioned = (_this select 0) select 1;
+systemChat str _givenNumber;
 
 if (_civilianQuestioned in nonQuestionableList) then {
 	hintSilent "I've already told you what I know.";
@@ -60,7 +61,6 @@ if (_civilianQuestioned in nonQuestionableList) then {
 			_color = "ColorYellow";
 			_object = InsP_iedGroup call BIS_fnc_selectRandom;
 			_distance = [100,200] call BIS_fnc_selectRandom;
-
 			_intelPos = [_object, _distance] call CBA_fnc_randPos;
 			_marker = createMarker [format["%1%2", _object, (str _intelPos)], _intelPos];
 			_marker setMarkerType "hd_join";
@@ -73,8 +73,10 @@ if (_civilianQuestioned in nonQuestionableList) then {
 		switch (True) do {
 			case (floor InsP_civTrust <= -3):{hintSilent "DEATH TO THE FOREIGN INVADERS!!"};
 			case (floor InsP_civTrust == -2):{hintSilent "Even if I did happen to know something I wouldn't tell you."};
-			case (floor InsP_civTrust == -1):{hintSilent "I can't help you."};
+			case (floor InsP_civTrust == -1):{hintSilent "I can't help you. Leave our villlage."};
 			case (floor InsP_civTrust == 0):{hintSilent "I don't know anything."};
+			case (floor InsP_civTrust == 0):{hintSilent "I'm just a villager, I know nothing"};
+			case (floor InsP_civTrust == 0):{hintSilent "You should bring back our goats, before you ask for a favor."};
 			case (floor InsP_civTrust == 1):{hintSilent "Sorry, but I don't know anything."};
 			case (floor InsP_civTrust == 2):{hintSilent "I wish I could help, but I don't know anything."};
 			case (floor InsP_civTrust >= 3):{hintSilent "I really wish I could help you, but I don't know anything."};

@@ -46,11 +46,8 @@ player addPrimaryWeaponItem "UK3CB_BAF_SpecterLDS_Dot_3D";
 
 comment "Add items";
 player linkItem "ItemMap";
+player linkItem "itemCTAB";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemRadioAcreFlagged";
 player linkItem "rhsusf_ANPVS_14";
-
-comment "Set identity";
-player setFace "WhiteHead_21";
-player setSpeaker "Male03ENG";

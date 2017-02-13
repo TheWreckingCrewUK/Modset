@@ -1,11 +1,16 @@
-//made by hartzie edited by FakeMatty
-_player1 = if(!isPlayer tank1)then{""}else{(name tank1)};
-_player2 = if(!isPlayer tank2)then{""}else{(name tank2)};
-_player3 = if(!isPlayer tank3)then{""}else{(name tank3)};
+//made by hartzie edited by Adam[TWC]
+_player1 = if(!isNil "P601")then{if(!isPlayer P601)then{"";}else{(name P601);};}else{"";};
+_player2 = if(!isNil "P602")then{if(!isPlayer P602)then{"";}else{(name P602);};}else{"";};
+_player3 = if(!isNil "P603")then{if(!isPlayer P603)then{"";}else{(name P603);};}else{"";};
 
-g_playerlist = [["Armour Crew", [["Armour", [_player1, "Armour Commander"],[_player2, "Armour Crewman"],[_player3, "Armour Crewman"]]]]			
-				
-				];
+g_playerlist = [["Armour Crew", 
+	[["BAF Armour", 
+		[_player1, "Armour Commander"],
+		[_player2, "Armour Crewman"],
+		[_player3, "Armour Crewman"]]
+		]
+	]			
+];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
 _headline = "<t color='#CCCC00' size='1.2' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";

@@ -6,11 +6,8 @@
 *
 *
 */
-if(count (nearestObjects [player, ["Box_NATO_AmmoVeh_F","UK3CB_BAF_Static_Weapons_Box"], 10]) > 0)exitWith{
-	hint "Clear the pad of Ammo Crates before a new one will spawn"
-};
 
-_boxClass = "UK3CB_BAF_Static_Weapons_Box";
+_boxClass = "ACE_Box_Ammo";
 
 _box = _boxClass createVehicle (getPos ammoCrateSpawnPad);
 
@@ -40,6 +37,8 @@ _box AddMagazineCargoGlobal ["rhsusf_mag_15Rnd_9x19_JHP",10];
 _box AddMagazineCargoGlobal ["rhsusf_8Rnd_00Buck",5];
 _box AddMagazineCargoGlobal ["rhsusf_8Rnd_Slug",5];
 
+_box AddMagazineCargoGlobal ["CUP_5Rnd_762x51_M24",10];
+
 _box addItemCargoGlobal ["ACE_fieldDressing",20];
 _box addItemCargoGlobal ["ACE_elasticBandage",20];
 _box addItemCargoGlobal ["ACE_quikclot",20];
@@ -53,9 +52,4 @@ _box addItemCargoGlobal ["HandGrenade",5];
 _box addItemCargoGlobal ["SmokeShell",5];
 _box addItemCargoGlobal ["SmokeShellRed",2];
 
-_trg = createTrigger ["EmptyDetector", getPos ammoCrateSpawnPad];
-_trg setTriggerArea [5,5,0,false];
-_trg setTriggerActivation ["WEST", "NOT PRESENT", false];
-_trg setTriggerTimeout [1800,1800,1800,true];
-_trg setTriggerStatements ["this", "_box = (getPos thisTrigger) nearestObject 'UK3CB_BAF_Static_Weapons_Box'; deleteVehicle _box;",""];
-_trg attachTo [_box];
+[player, _box] call ace_cargo_fnc_startLoadIn;

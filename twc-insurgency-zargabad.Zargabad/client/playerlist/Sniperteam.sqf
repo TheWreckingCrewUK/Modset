@@ -1,6 +1,6 @@
 //made by hartzie edited by FakeMatty
-_player1 = if(!isPlayer p36)then{""}else{(name p36)};
-_player2 = if(!isPlayer p37)then{""}else{(name p37)};
+_player1 = if(!isPlayer P604)then{""}else{(name P604)};
+_player2 = if(!isPlayer P605)then{""}else{(name P605)};
 
 
 g_playerlist = [["Sniper Team", [["Sniper", [_player1, "Sniper"],[_player2, "Spotter"]]]]				

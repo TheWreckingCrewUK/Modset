@@ -23,6 +23,9 @@ if (!isNil "P101" && {player == P101}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//M32 Spawner
+	ammoCrateSpawner addAction ["Spawn Mortar",
+	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P102" && {player == P102}) then {
@@ -128,6 +131,9 @@ if (!isNil "P201" && {player == P201}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//M32 Spawner
+	ammoCrateSpawner addAction ["Spawn Mortar",
+	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P202" && {player == P202}) then {
@@ -251,6 +257,9 @@ if (!isNil "P301" && {player == P301}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//M32 Spawner
+	ammoCrateSpawner addAction ["Spawn Mortar",
+	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P302" && {player == P302}) then {
@@ -717,6 +726,52 @@ if (!isNil "P605" && {player == P605}) then {
 	crate = "crate8";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	//Change Loadout
+	Spawner addAction ["Change Loadout to BAF Spotter",
+	{nul = [] execVM "client\player\loadout\BAF_SP.sqf";},[],0,true,false,"",""];
+	Spawner addAction ["Change Loadout to US Spotter",
+	{nul = [] execVM "client\player\loadout\US_SP.sqf";},[],0,true,false,"",""];
+	Spawner addAction ["Change Loadout to USMC Spotter",
+	{nul = [] execVM "client\player\loadout\USMC_SP.sqf";},[],0,true,false,"",""];
+};
+
+if (!isNil "P606" && {player == P606}) then {
+    g_class = "BAF_EOD_SL";
+	g_group = "0";
+	g_unit = "145";
+	g_name = "Bomb Disposal Team Leader";
+	g_radio_channel = 9;
+	g_radio = "ACRE_PRC343";
+	crate = "crate8";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	//Spawn explosives
+	ammoCrateSpawner addAction ["Spawn Small Explosives Box",
+	{nul = [] execVM "client\player\boxes\smallCrateEOD.sqf";},[],0,true,false,"",""];
+};
+
+if (!isNil "P607" && {player == P607}) then {
+    g_class = "BAF_EOD_SL";
+	g_group = "0";
+	g_unit = "145";
+	g_name = "Bomb Disposal Operator";
+	g_radio_channel = 9;
+	g_radio = "ACRE_PRC343";
+	crate = "crate8";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+};
+
+if (!isNil "P608" && {player == P608}) then {
+    g_class = "BAF_EOD_ESC";
+	g_group = "0";
+	g_unit = "145";
+	g_name = "Bomb Disposal Team Infantry Escort";
+	g_radio_channel = 9;
+	g_radio = "ACRE_PRC343";
+	crate = "crate8";
+	["en"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
 };
 
 //Special P9xx
@@ -743,9 +798,44 @@ if (!isNil "P901" && {player == P901}) then {
 	//Medical Spawner
 	ammoCrateSpawner addAction ["Spawn Medical Equipment",
 	{nul = [] execVM "client\player\boxes\smallMedical.sqf";},[],0,true,false,"",""];
-	//Zeus Watermark removal, hit ace self interact Start Camera then start Zeus
+	//Zeus Watermark removal, and spectator togle
 	_action = ["Camera","Start Camera","",{execVM "client\zeus\camera.sqf"},{true}] call ace_interact_menu_fnc_createAction;
 	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;	
+	_action2 = ["Zeus","Spectator On","",{execVM "client\zeus\spectator_on.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;	
+	_action3 = ["Zeus","Spectator Off","",{execVM "client\zeus\spectator_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action3] call ace_interact_menu_fnc_addActionToObject;	
+};
+if (!isNil "P902" && {player == P902}) then {
+    g_class = "BAF_SL";
+	g_group = "0";
+	g_unit = "000";
+	g_name = "Quartermaster Assistant";
+	g_radio_channel = 1;
+	g_radio = "ACRE_PRC343";
+	["en", "ru"] call acre_api_fnc_babelSetSpokenLanguages;
+	["en", "ru"] call acre_api_fnc_babelSetSpeakingLanguage;
+	hint "You are the Quartermaster";
+	//Ammo Spawner
+	ammoCrateSpawner addAction ["Spawn Small UK Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUK.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small US Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUS.sqf";},[],0,true,false,"",""];
+	ammoCrateSpawner addAction ["Spawn Small USMC Ammobox",
+	{nul = [] execVM "client\player\boxes\smallCrateUSMC.sqf";},[],0,true,false,"",""];
+	//Mortar spawner
+	ammoCrateSpawner addAction ["Spawn M6 Mortar box",
+	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//Medical Spawner
+	ammoCrateSpawner addAction ["Spawn Medical Equipment",
+	{nul = [] execVM "client\player\boxes\smallMedical.sqf";},[],0,true,false,"",""];
+	//Zeus Watermark removal, and spectator togle
+	_action = ["Camera","Start Camera","",{execVM "client\zeus\camera.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;	
+	_action2 = ["Zeus","Spectator On","",{execVM "client\zeus\spectator_on.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;	
+	_action3 = ["Zeus","Spectator Off","",{execVM "client\zeus\spectator_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action3] call ace_interact_menu_fnc_addActionToObject;	
 };
 
 //Ammobox init
@@ -782,6 +872,9 @@ TWC_fnc_getQMList = {
    execVM "client\playerlist\qm.sqf";
 };
 
+TWC_fnc_getEODList = {
+   execVM "client\playerlist\eod.sqf";
+};
 playerListAction = ["thisStartsTheList","Player List","", {},{true}] call ace_interact_menu_fnc_createAction;
 alphaAction = ["AlphaList","Alpha List","", {call TWC_fnc_getAlphaList;},{true}] call ace_interact_menu_fnc_createAction;
 bravoAction = ["BravoList","Bravo List","", {call TWC_fnc_getBravoList;},{true}] call ace_interact_menu_fnc_createAction;
@@ -790,6 +883,7 @@ airAction = ["AirList","Air List","", {call TWC_fnc_getAirList;},{true}] call ac
 armourAction = ["ArmourList","Armour List","", {call TWC_fnc_getArmourList;},{true}] call ace_interact_menu_fnc_createAction;
 sniperteamAction = ["SniperteamList","Sniperteam List","", {call TWC_fnc_getSniperteamList;},{true}] call ace_interact_menu_fnc_createAction;
 qmAction = ["QuartermasterList","Quartermaster","", {call TWC_fnc_getQMList;},{true}] call ace_interact_menu_fnc_createAction;
+eodAction = ["EODList","EOD","", {call TWC_fnc_getQMList;},{true}] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], playerListAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], alphaAction] call ace_interact_menu_fnc_addActionToObject;
@@ -799,6 +893,7 @@ qmAction = ["QuartermasterList","Quartermaster","", {call TWC_fnc_getQMList;},{t
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], armourAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], sniperteamAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], qmAction] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "thisStartsTheList"], eodAction] call ace_interact_menu_fnc_addActionToObject;
 
 //Action at repairpoint
 ammoCrateSpawner addAction ["Repair/Rearm/Refuel Vehicle",

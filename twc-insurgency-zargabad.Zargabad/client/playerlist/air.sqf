@@ -1,14 +1,34 @@
-//made by hartzie edited by FakeMatty
+//made by hartzie edited by Adam[TWC]
 
-_player1 = if(!isPlayer p38)then{""}else{(name p38)};
-_player2 = if(!isPlayer p39)then{""}else{(name p39)};
+//BAF Transport pilot and crew cheif
+_player1 = if(!isNil "P501")then{if(!isPlayer P501)then{"";}else{(name P501);};}else{"";};
+_player2 = if(!isNil "P502")then{if(!isPlayer P502)then{"";}else{(name P502);};}else{"";};
+//US Transport pilot and crew cheif
+_player3 = if(!isNil "P503")then{if(!isPlayer P503)then{"";}else{(name P503);};}else{"";};
+_player4 = if(!isNil "P504")then{if(!isPlayer P504)then{"";}else{(name P504);};}else{"";};
+//Attack Jet Pilot
+_player5 = if(!isNil "P505")then{if(!isPlayer P505)then{"";}else{(name P505);};}else{"";};
+//BAF Apache Pilot and Gunner
+_player7 = if(!isNil "P507")then{if(!isPlayer P507)then{"";}else{(name P507);};}else{"";};
+_player8 = if(!isNil "P508")then{if(!isPlayer P508)then{"";}else{(name P508);};}else{"";};
 
 
-
-
-g_playerlist = [["Air Assets", [["Black Hawk/Chinook", [_player1, "Pilot"],[_player2, "Crew Cheif"]]]]				
-				
-				];
+g_playerlist = [
+	["Air Assets", 
+		[["BAF Transport", 
+			[_player1, "BAF Transport Pilot"],
+			[_player2, "BAF Crew Cheif"]],
+		["US Transport", 
+			[_player3, "US Transport Pilot"],
+			[_player4, "US Crew Cheif"]],
+		["Jet", 
+			[_player5, "Attack Jet Pilot"]],
+		["BAF Apache", 
+			[_player7, "Apache Pilot"],
+			[_player8, "Apache Gunner"]]
+		]
+	]				
+];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
 _headline = "<t color='#CCCC00' size='1.2' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
