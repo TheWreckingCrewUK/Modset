@@ -4,5 +4,5 @@ _radioNames = ["radio_1","radio_2","radio_3","radio_4"];
 {
 	_location = createLocation ["NameLocal",getMarkerPos _x,30,30];
 	_location setText "Radio Site";
-	[getMarkerPos _x, _radioMarker,"placeHolder",1] call twc_fnc_createSite;
+	[_location, _radioMarker,"placeHolder",1] call twc_fnc_createSite;
 }forEach _radioNames;

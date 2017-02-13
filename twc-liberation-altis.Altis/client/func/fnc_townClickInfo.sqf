@@ -6,7 +6,7 @@ _place = 0;
 _maxAttempts = 100;
 _attempts = 1;
 while{_itemFound == 0 && _attempts < _maxAttempts}do{
-	_town = ((townInfoArray select _place) select 0);
+	_town = ((townInfoArray select _place) select 1);
 	if (_town == _nearestCity)then{
 		_itemFound = 1;
 	}else{

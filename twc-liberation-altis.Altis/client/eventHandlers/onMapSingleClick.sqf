@@ -6,9 +6,9 @@ onMapSingleClick {
 		hint _return;
 	};
 	if(typeName _return == "ARRAY")then{
-		_location = _return select 0;
-		_pop = _return select 1;
-		_money = _return select 2;
+		_location = _return select 1;
+		_pop = _return select 2;
+		_money = _return select 3;
 		hint format["Name = %1 \n Population = %2 \n Money = %3", _location, _pop, _money];
 	};
 };

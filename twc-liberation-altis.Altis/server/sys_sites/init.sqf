@@ -21,24 +21,24 @@ townLocationArray = nearestLocations [[worldSize / 2, worldSize / 2], ["NameVill
 	call{
 		if(text _x in _stupidNames)exitWith{};
 		if(text _x in _townNames)exitWith{
-			[getPos _x, _townMarker,"placeHolder",1] call twc_fnc_createTown;
+			[_x, _townMarker,"placeHolder",1] call twc_fnc_createTown;
 		};
 		if(text _x in _installationNames)exitWith{
-			[getPos _x,_installationMarker,"placeHolder",1] call twc_fnc_createSite;
+			[_x,_installationMarker,"placeHolder",1] call twc_fnc_createSite;
 		};
 		if(text _x in _smallTownNames)exitWith{
-			[getPos _x,_smallTownMarker,"placeHolder",1] call twc_fnc_createSite;
+			[_x,_smallTownMarker,"placeHolder",1] call twc_fnc_createSite;
 		};
 		if(text _x in _navalNames)exitWith{
-			[getPos _x,_navalMarker,"placeHolder",1] call twc_fnc_createSite;
+			[_x,_navalMarker,"placeHolder",1] call twc_fnc_createSite;
 		};
 		if(text _x in _airfieldNames)exitWith{
-			[getPos _x,_airfieldMarker,"placeHolder",1] call twc_fnc_createSite;
+			[_x,_airfieldMarker,"placeHolder",1] call twc_fnc_createSite;
 		};
 		if(text _x in _militaryNames)exitWith{
-			[getPos _x,_militaryMarker,"placeHolder",1] call twc_fnc_createSite;
+			[_x,_militaryMarker,"placeHolder",1] call twc_fnc_createSite;
 		};		
-		[getPos _x,_infMarker,"placeHolder",1] call twc_fnc_createSite;
+		[_x,_infMarker,"placeHolder",1] call twc_fnc_createSite;
 	};	
 }forEach townLocationArray;
 //Makes the townInforArray public. It is simply very convenient to do it now:

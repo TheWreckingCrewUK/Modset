@@ -1,7 +1,7 @@
 //Imported with missionConfigFile >> "options_menu"
 class options_menu
 {
-	idd=-1
+	idd=-1;
 	movingenable=false;
 	class controls
 	{

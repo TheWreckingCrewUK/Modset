@@ -20,6 +20,7 @@ while{_num < _numRoadBlocks}do{
 	}forEach _roadBlockArray;
 	if(_near == 0)then{
 		[_pos,_dir] call twc_fnc_createRoadBlock;
+		_roadBlockArray pushback _pos;
 		_num = _num + 1;
 	};
 };

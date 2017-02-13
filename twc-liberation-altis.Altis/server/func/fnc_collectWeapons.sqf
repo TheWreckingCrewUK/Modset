@@ -85,3 +85,29 @@ while {_backpackPlace < _numberOfbackpacks}do{
 	_backpackPlace = _backpackPlace + 1;
 	_place = 0;
 };
+
+//Creates marker so players can find the box
+_markerstr = createMarker [str (random 1000),_location];
+_markerstr setMarkerShape "ICON";
+_markerstr setMarkerType "mil_marker";
+_markerstr setMarkerText "Looted Gear Crate";
+_markerstr setMarkerColor "colorWest";
+
+//When blufor leaves it checks if crate has moved. If it hasn't it is delete. Marker gets deleted.
+[_markerstr,_crate,_location] spawn{
+_bluClose = 1;
+	while{_bluClose == 1}do{
+		_obj = nearestObjects [(_this select 2),["Man","Car","Truck","Tank"],600];
+		{
+			if(side _x == West)exitWith{
+				_bluClose = 1
+			};
+			_bluClose = 0;
+		}forEach _obj;
+	};
+	deleteMarker (_this select 0);
+
+	if((getPos (_this select 1)) distance2D (_this select 2) < 5) then{
+		deleteVehicle (_this select 1);
+	};
+};

@@ -1,15 +1,16 @@
-params["_location"];
+params["_location","_pos"];
 
 _array = [_location] call twc_fnc_getTownInfo;
-_name = _array select 0;
-_pop = _array select 1;
-_wealth = _array select 2;
+_location = _array select 0;
+_name = _array select 1;
+_pop = _array select 2;
+_wealth = _array select 3;
 
 _group = createGroup civilian;
-[_group,_location,_pop,_name]spawn{
+[_group,_pos,_pop,_name,_location]spawn{
 	for "_i" from 1 to (_this select 2) do {
 		_individualCiv = (_this select 0) createUnit ["C_man_1", (_this select 1), [], 200, "NONE"];
-		_individualCiv setVariable ["unitsHome",(_this select 1),false];
+		_individualCiv setVariable ["unitsHome",[(_this select 4),(_this select 1)],false];
 		_individualCiv addEventHandler ["killed", {
 			if(_this select 0 != _this select 1 && !isNull (_this select 3))then{
 				[(_this select 0),-1,0] call twc_fnc_editTownInfo;
@@ -22,7 +23,7 @@ _group = createGroup civilian;
 
 _num = 0;
 _amountToSpawn = 5;
-_roadList = _location nearRoads 200;
+_roadList = _pos nearRoads 200;
 while{_num < _amountToSpawn}do{
 	_roadPos = _roadList call BIS_fnc_selectRandom;
 	_car = civillianCarList call BIS_fnc_selectRandom;
@@ -43,7 +44,7 @@ while{_num < _amountToSpawn}do{
 				(getPosATL _newVehicle select 1) + _yAxis, 0];
 			_newVehicle setDir (random 360);
 		};
-		_newVehicle setVariable ["unitsHome",_name,false];
+		_newVehicle setVariable ["unitsHome",[_location,_name],false];
 		_newVehicle addEventHandler ["killed", {
 			if(_this select 0 != _this select 1 && !isNull (_this select 1))then{
 				[(_this select 0),0,-100] call twc_fnc_editTownInfo
