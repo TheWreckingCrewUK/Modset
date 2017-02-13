@@ -4,3 +4,5 @@ waitUntil {scriptDone _script};
 easyGearPickup = true;
 
 missionNameSpace setVariable ["playerBase_Marksman", true, true];
+missionNameSpace setVariable ["playerBase_Roadblock", true,true];
+missionNameSpace setVariable ["playerBase_Garage", true,true];

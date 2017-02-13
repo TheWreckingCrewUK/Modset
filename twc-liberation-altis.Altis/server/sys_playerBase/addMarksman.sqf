@@ -1,4 +1,4 @@
-_variable  = missionNameSpace getVariable "playerBase_Marksman";
+_variable = missionNameSpace getVariable "playerBase_Marksman";
 if(_variable)exitWith{hint "Player Base already has a marksman."};
 
 _chair = "Land_CampingChair_V2_F" createVehicle [5390.163,17885.855,15.258];
