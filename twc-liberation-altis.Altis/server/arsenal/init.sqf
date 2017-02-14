@@ -18,8 +18,3 @@ publicVariable "arsenalAmmoBox";
 [arsenalAmmoBox,[true],true] call BIS_fnc_removeVirtualItemCargo;
 [arsenalAmmoBox,[true],true] call BIS_fnc_removeVirtualBackpackCargo;
 
-/*
-doesn't Work:
-
-[arsenalAmmoBox,["HandGrenade","SmokeShell","Chemlight_green"],true] call BIS_fnc_addVirtualMagazineCargo;
-[arsenalAmmoBox,["FirstAidKit","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"],true] call Bis_fnc_addVirtualItemCargo;
