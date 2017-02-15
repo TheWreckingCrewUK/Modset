@@ -1,4 +1,4 @@
-params ["_enabled","_range"];
+params ["_range"];
 
 if(!hasInterface)exitWith{};
 

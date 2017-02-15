@@ -17,6 +17,8 @@ missionNameSpace setVariable ["run",(_logic getVariable "run"),true];
 missionNameSpace setVariable ["safeZone",(_logic getVariable "safeZone"),true];
 missionNameSpace setVariable ["zuesObjects",(_logic getVariable "zuesObjects"),true];
 
+missionNameSpace setVariable ["twcModuleFinished",true,true];
+
 //Runs the server side part of the module.
 [(_logic getVariable "boatSafety")] call twc_fnc_boatSafety;
 [(_logic getVariable "civilianEquipment")] call twc_fnc_civillianEquipment;

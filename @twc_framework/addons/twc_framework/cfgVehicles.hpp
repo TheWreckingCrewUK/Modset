@@ -75,7 +75,7 @@ class cfgVehicles
 				displayName = "Added Protection From Boats";
 				description = "Enable to keep players from being squished by rhibs.";
 				typeName = "BOOL";
-				defaultValue = 1;
+				defaultValue = 0;
 			};
 			class civilianEquipment
 			{
@@ -117,7 +117,7 @@ class cfgVehicles
 				displayName = "Roll Sleeves";
 				description = "Enable to allow Rolling Sleeves";
 				typeName = "BOOL";
-				defaultValue = 1;
+				defaultValue = 0;
 			};
 			class run
 			{

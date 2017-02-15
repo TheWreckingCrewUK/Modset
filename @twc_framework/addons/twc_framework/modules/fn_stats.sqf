@@ -19,4 +19,4 @@ _handle = addMissionEventHandler ["Ended",{
 	{
 		diag_log _x;
 	}forEach twc_killList;
-};
+}];

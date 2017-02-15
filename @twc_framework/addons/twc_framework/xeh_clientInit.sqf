@@ -3,6 +3,9 @@ if(!hasInterface)exitWith{};
 
 if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {};
 
+
+waitUntil{missionNameSpace getVariable "twcModuleFinished"};
+
 [(missionNameSpace getVariable "era")] call twc_fnc_era;
 [(missionNameSpace getVariable "forwardBase")] spawn twc_fnc_forwardBase;
 [(missionNameSpace getVariable "giveRadio")] spawn twc_fnc_giveRadio;
