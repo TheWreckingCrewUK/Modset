@@ -3,5 +3,6 @@ twc_fnc_playerBaseClear = compile preprocessfilelinenumbers "server\sys_playerBa
 
 _trg = createTrigger ["EmptyDetector", (getMarkerPos "playerBase")];
 _trg setTriggerArea [600, 600, 0, false];
+_trg setTriggerTimeout [5,5,5,true];
 _trg setTriggerActivation ["WEST", "PRESENT", false];
-_trg setTriggerStatements ["(player in thisList)", "[] spawn twc_fnc_playerBaseSetup", ""];
+_trg setTriggerStatements ["(player in thisList) || (vehicle player in thisList)", "[] spawn twc_fnc_playerBaseSetup", ""];

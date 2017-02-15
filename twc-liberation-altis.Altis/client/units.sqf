@@ -1,4 +1,4 @@
-params["_type"];
+params["_type","_cost"];
 /*types are:
 B_G_Soldier_F //standard rifleman
 B_G_Soldier_AR_F //automatic rifleman

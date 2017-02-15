@@ -7,6 +7,16 @@ if(_start == 1)then{
 	_markerstr setMarkerType _type;
 	_markerstr setMarkerColor "colorIndependent";
 	
+	_mkr = createMarker [str (random 10000),(_pos)];
+	_mkr setMarkerShape "ELLIPSE";
+	_mkr setMarkerColor "colorBlack";
+	_mkr setMarkerBrush "Border";
+	_mkr setMarkerSize [2000,2000];
+	_mkr setMarkerAlpha 0;
+	
+	townEllipses pushback _mkr;
+	publicVariable "townEllipses";
+	
 	_name = text _location;
 	townInfoArray pushback [_location,_name,20,1000];
 };

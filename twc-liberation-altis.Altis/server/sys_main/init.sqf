@@ -2,14 +2,14 @@
 * This is used for all time based events.
 * obviusly we want to avoid this as much as possible
 */
-enemyManpower = 1000;
+enemyManpower = 10000;
 publicVariable "enemyManpower";
-enemyMoney = 1000000;
+enemyMoney = 100000;
 publicVariable "enemyMoney";
 
 friendlyManpower = 0;
 publicVariable "friendlyManpower";
-friendlyMoney = 1000;
+friendlyMoney = 10000;
 publicVariable "friendlyMoney";
 
 opforOpinion = 0;

@@ -6,8 +6,8 @@
 */
 //Step 1
 [arsenalAmmoBox,[""],false] call Bis_fnc_addVirtualWeaponCargo;
-[arsenalAmmoBox,["FirstAidKit","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_red","Chemlight_yellow","Chemlight_blue"],false] call BIS_fnc_addVirtualMagazineCargo;
-[arsenalAmmoBox,["ItemMap","ItemCompass","ItemWatch","NVGoggles"],false] call Bis_fnc_addVirtualItemCargo;
+[arsenalAmmoBox,["HandGrenade","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_red","Chemlight_yellow","Chemlight_blue"],false] call BIS_fnc_addVirtualMagazineCargo;
+[arsenalAmmoBox,["FirstAidKit","ItemMap","ItemCompass","ItemWatch","NVGoggles"],false] call Bis_fnc_addVirtualItemCargo;
 //step 2
 if (!isNil "tank1" && {player == tank1}) then {
 	execVM "client\arsenal\armour_co.sqf";

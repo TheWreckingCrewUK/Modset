@@ -53,5 +53,6 @@ _unitsArray = if(_var)then{
 missionNameSpace setVariable ["playerBase_UnitsArray",_unitsArray];
 _trg = createTrigger ["EmptyDetector", (getMarkerPos "playerBase")];
 _trg setTriggerArea [800, 800, 0, false];
+_trg setTriggerTimeout [5,5,5,true];
 _trg setTriggerActivation ["WEST", "PRESENT", false];
-_trg setTriggerStatements ["this && !(player in thisList)", format["[] spawn twc_fnc_playerBaseClear",_unitsArray], ""];
+_trg setTriggerStatements ["!(player in thisList) && !(vehicle player in thisList)", format["[] spawn twc_fnc_playerBaseClear",_unitsArray], ""];
