@@ -183,8 +183,8 @@
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
-			"CUP_hgun_Makarov",
-			"CUP_hgun_Makarov",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
 			"CUP_1Rnd_HE_GP25_M",
 			"CUP_1Rnd_HE_GP25_M",
 			"CUP_1Rnd_HE_GP25_M",
@@ -203,8 +203,8 @@
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
-			"CUP_hgun_Makarov",
-			"CUP_hgun_Makarov",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
 			"CUP_1Rnd_HE_GP25_M",
 			"CUP_1Rnd_HE_GP25_M",
 			"CUP_1Rnd_HE_GP25_M",
@@ -805,8 +805,8 @@
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
-			"CUP_hgun_Makarov",
-			"CUP_hgun_Makarov",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
 			"CUP_HandGrenade_RGD5",
 			"SmokeShell"
 		};
@@ -816,8 +816,8 @@
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
-			"CUP_hgun_Makarov",
-			"CUP_hgun_Makarov",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
 			"CUP_HandGrenade_RGD5",
 			"SmokeShell"
 		};
@@ -910,8 +910,8 @@
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
-			"CUP_hgun_Makarov",
-			"CUP_hgun_Makarov",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -919,8 +919,8 @@
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
-			"CUP_hgun_Makarov",
-			"CUP_hgun_Makarov",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
 			"SmokeShell"
 		};
 	};
@@ -957,16 +957,16 @@
 		};
 		magazines[]=
 		{
-			"CUP_hgun_Makarov",
-			"CUP_hgun_Makarov",
-			"CUP_hgun_Makarov",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{			
-			"CUP_hgun_Makarov",
-			"CUP_hgun_Makarov",
-			"CUP_hgun_Makarov",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
 			"SmokeShell"
 		};
 	};
