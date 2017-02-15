@@ -1,6 +1,6 @@
 1. Open initplayerLocal.sqf and insert Operation Name.
 
-2. In description.ext  insert Operation, OnLoad and Creator Name.
+2. In description.ext insert Operation and Creator Name.
 
 3. If not done already, place down a base marker named base.
 
