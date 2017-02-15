@@ -1,26 +1,25 @@
-1. Open initplayerLocal.sqf and put the title text under theme. For example adding "Cliff" to Operation.
+1. Open initplayerLocal.sqf and insert Operation Name.
 
-2. In description.ext add author name, op name, and onLoadName. (Same name as above)
+2. In description.ext  insert Operation, OnLoad and Creator Name.
 
-3. Using TWC Operations groups place units where mission maker specified.
+3. If not done already, place down a base marker named base.
 
-4. Don't forget the ammo box + smaller box or other vehicles.
+4. Place down the Operations Units.
+	4.1 Name the Groups and Units.
+	4.2 Set Medics to Medics in ACE.
+	4.3 Place down Ammobox(es).
+	4.4 Place down Medical Tent and set as medical facility in ACE.
+	4.5 Place down vehicles if applicable.
 
-5. place down:
-	ACE Medic Class-name the medic, "medic" No Quotes
-	ACE medical facilities and vehicles
-	Place zeus module and set as #adminLogged
-	Place a zeus module with the owners as:
-	76561198070630639 <--- jayman
-	76561198005456546 < ----- bosenator
-	76561198103286410 < --- Adam
-	
-	*make sure all zues modules are set to be all addons*
-	
-6. base flag named base
+5. Place down the Zeus modules with For all addons:
+	5.1 One with owner #adminLogged.
+	5.2 One with owner 76561198070630639 (Jayman).
+	5.2 One with owner 76561198050180681 (Saxon).
+	5.3 One with owner 76561198103286410 (Adam).
+	5.2 One with owner 76561198005456546 (Bosenator).
 
-7. Add 3 Headless Clients named HC HC2 HC3 and make them playable.
+6. Place down the Headless Client:
+	6.1 Place down the Headless Module.
+	6.2 Place down 3 Headless Client Logic Entities names HC1, HC2, and HC3 and set them as playable.
 
-8. Name the groups. NOT UNITS the GROUP
-
-9. twc operations module and set up properly
+7. Place down TWC Operations Module and set up as desired.
