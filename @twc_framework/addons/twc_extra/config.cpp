@@ -22,4 +22,15 @@ class CfgPatches
 		versionAr[]={1};
 	};
 };
+class CfgFunctions
+{
+	class TWC
+	{
+		class Functions
+		{
+			file="twc_extra\functions";
+			class putWeaponOnBack {};
+		};
+	};
+};
 #include cfgEventHandlers
