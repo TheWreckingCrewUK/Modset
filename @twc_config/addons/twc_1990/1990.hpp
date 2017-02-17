@@ -86,21 +86,17 @@
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
-			"twc_browninghp"
+			"UK3CB_BAF_L85A1_SUSAT3D_Lazer"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
-			"twc_browninghp"
+			"UK3CB_BAF_L85A1_SUSAT3D_Lazer"
 		};
 		magazines[]=
 		{
-			"rhsusf_mag_7x45acp_MHP",
-			"rhsusf_mag_7x45acp_MHP",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd_T",
@@ -112,8 +108,6 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhsusf_mag_7x45acp_MHP",
-			"rhsusf_mag_7x45acp_MHP",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd_T",
@@ -128,7 +122,51 @@
 	{
 		scope=2;
 		displayName="RifleMan(90`s Woodland)";
-		backpack="UK3CB_BAF_B_Bergen_DPMT_Rifleman_A";
+		backpack="";
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};	
+	};
+	class 1990_British_Rifleman_AT: 1990_British_Base
+	{
+		scope=2;
+		displayName="RifleMan AT(90`s Woodland)";
+		backpack="";
 		weapons[]=
 		{
 			"Throw",
@@ -148,6 +186,7 @@
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
@@ -157,6 +196,7 @@
 		};
 		Respawnmagazines[]=
 		{
+			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -248,21 +288,17 @@
 			"Throw",
 			"Put",
 			"Binocular",
-			"UK3CB_BAF_L85A1_SUSAT3D",
-			"twc_browninghp"
+			"UK3CB_BAF_L85A1_SUSAT3D"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"Binocular",
-			"UK3CB_BAF_L85A1_SUSAT3D",
-			"twc_browninghp"
+			"UK3CB_BAF_L85A1_SUSAT3D"
 		};
 		magazines[]=
 		{
-			"rhsusf_mag_7x45acp_MHP",
-			"rhsusf_mag_7x45acp_MHP",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd_T",
@@ -272,8 +308,6 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhsusf_mag_7x45acp_MHP",
-			"rhsusf_mag_7x45acp_MHP",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd_T",
@@ -400,26 +434,20 @@
 		weapons[]=
 		{
 			"Throw",
-			"Put",
-			"twc_browninghp"
+			"Put"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
-			"Put",
-			"twc_browninghp"
+			"Put"
 		};
 		magazines[]=
 		{
-			"twc_13Rnd_9mm_Mag",
-			"twc_13Rnd_9mm_Mag",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"twc_13Rnd_9mm_Mag",
-			"twc_13Rnd_9mm_Mag",
 			"SmokeShell",
 			"SmokeShell"
 		};

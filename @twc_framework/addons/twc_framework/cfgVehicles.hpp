@@ -31,8 +31,9 @@ class cfgVehicles
 		functionPriority = 1;
 		isGlobal = 0;
 		isTriggerActivated = 0;
-		isDisposable = 1;
-		class Arguments{
+		isDisposable = 0;
+		class Arguments
+		{
 			class enabled
 			{
 				displayName = "Enabled";
@@ -79,7 +80,7 @@ class cfgVehicles
 			};
 			class civilianEquipment
 			{
-				displayName = "Remove Unnecessary Civilian Equipment";
+				displayName = "Civilian Equipment";
 				description = "Enable to remove goggles and backpacks from civilians";
 				typeName = "BOOL";
 				defaultValue = 1;
@@ -123,14 +124,14 @@ class cfgVehicles
 			{
 				displayName = "Running in Base";
 				description = "Set base no run zone. 0 = Run anywhere";
-				typeName = "Number";
+				typeName = "NUMBER";
 				defaultValue = 0;
 			};
 			class saveGear
 			{
 				displayName = "Save Player Gear";
 				description = "Saves and Sets Gear for Disconects";
-				typeName = "Bool";
+				typeName = "BOOL";
 				defaultValue = 1;
 			};
 			class safeZone
@@ -144,7 +145,7 @@ class cfgVehicles
 			{
 				displayName = "Stat Saving";
 				description = "Enable to allow saving player stats";
-				typeName = "Bool";
+				typeName = "BOOL";
 				defaultValue = 0;
 			};
 			class zuesObjects

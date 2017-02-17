@@ -32,7 +32,7 @@ class CfgGroups
                                         class Unit2
                                         {
                                                 side = 1;
-                                                vehicle = "1990_British_Rifleman";
+                                                vehicle = "1990_British_Rifleman_AT";
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
@@ -53,14 +53,14 @@ class CfgGroups
 										class Unit5
                                         {
                                                 side = 1;
-                                                vehicle = "1990_British_CGG";
+                                                vehicle = "1990_British_Rifleman";
                                                 rank = "PRIVATE";
                                                 position[] = {11,0,0};
                                         };
 										class Unit6
                                         {
                                                 side = 1;
-                                                vehicle = "1990_British_CGAss";
+                                                vehicle = "1990_British_Rifleman_AT";
                                                 rank = "PRIVATE";
                                                 position[] = {13,0,0};
                                         };

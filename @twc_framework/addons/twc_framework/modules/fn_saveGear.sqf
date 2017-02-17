@@ -1,4 +1,4 @@
-params ["_enabled"]
+params ["_enabled"];
 
 if(!isServer)exitWith{};
 

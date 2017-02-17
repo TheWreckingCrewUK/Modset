@@ -57,6 +57,7 @@ class CfgFunctions
 			class patrolRoads {};
 			class placedIED {};
 			class patrolMarkers {};
+			class putWeaponOnBack {};
 			class CreateTask {};
 			class UpdateTask {};
 			class daisyCutter {};
@@ -76,6 +77,7 @@ class CfgFunctions
 			class missionModuleInit {};
 			class nightGear {};
 			class run {};
+			class saveGear {};
 			class safeZone {};
 			class stats {};
 			class zeus {};

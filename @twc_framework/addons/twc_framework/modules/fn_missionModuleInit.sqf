@@ -1,5 +1,9 @@
 params ["_logic","_units","_activated"];
 
+systemChat (str _logic);
+systemChat (str _units);
+systemChat (str _activated);
+
 if !(_activated) exitWith {};
 if !(isServer)exitWith{};
 
@@ -8,6 +12,7 @@ if !(_enabled) exitWith {};
 
 //Sets variables for connecting players to run the functions
 missionNameSpace setVariable ["twcModuleEnabled",true,true];
+
 missionNameSpace setVariable ["era",(_logic getVariable "era"),true];
 missionNameSpace setVariable ["forwardBase",(_logic getVariable "forwardBase"),true];
 missionNameSpace setVariable ["giveRadio",(_logic getVariable "giveRadio"),true];
@@ -21,7 +26,7 @@ missionNameSpace setVariable ["twcModuleFinished",true,true];
 
 //Runs the server side part of the module.
 [(_logic getVariable "boatSafety")] call twc_fnc_boatSafety;
-[(_logic getVariable "civilianEquipment")] call twc_fnc_civillianEquipment;
+[(_logic getVariable "civilianEquipment")] call twc_fnc_civilianEquipment;
 [(_logic getVariable "deadBodies")] call twc_fnc_deadBodies;
 [(_logic getVariable "saveGear")] call twc_fnc_saveGear;
 [(_logic getVariable "stats")] call twc_fnc_stats;
