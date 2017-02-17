@@ -48,5 +48,19 @@ if(isMultiplayer)then{
 			player unassignItem "itemMap"; 
 			player removeItem "itemMap"; 
 		};
+		
+		_gear = (missionNamespace getVariable "twc_disconnectGear");
+		if(!isNil "_gear")then{
+			_place = 0;
+			{
+				if((getPlayerUID player) == ((_gear select _place) select 10))then{
+					_loadout = (_gear select _place) - [((_gear select _place) select 10)];
+					player setUnitLoadout [_loadout,false];
+					_gear = _gear - [(_gear select _place)];
+				};
+				_place = _place + 1;
+			}forEach (missionNamespace getVariable "twc_disconnectGear");
+			missionNameSpace setVariable ["twc_disconnectGear",_gear,true];
+		};
 	};
 };

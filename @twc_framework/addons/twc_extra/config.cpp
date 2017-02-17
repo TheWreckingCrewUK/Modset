@@ -26,11 +26,11 @@ class CfgFunctions
 {
 	class TWC
 	{
-		class Functions
+		class extras
 		{
 			file="twc_extra\functions";
 			class putWeaponOnBack {};
 		};
 	};
 };
-#include cfgEventHandlers
+#include "cfgEventHandlers.hpp"

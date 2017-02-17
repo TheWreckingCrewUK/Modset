@@ -126,6 +126,13 @@ class cfgVehicles
 				typeName = "Number";
 				defaultValue = 0;
 			};
+			class saveGear
+			{
+				displayName = "Save Player Gear";
+				description = "Saves and Sets Gear for Disconects";
+				typeName = "Bool";
+				defaultValue = 1;
+			};
 			class safeZone
 			{
 				displayName = "Shooting in Base";
