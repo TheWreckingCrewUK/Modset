@@ -1,26 +1,26 @@
 	class ColdWar_Base: B_Soldier_base_F
 	{
 		scope=1;
-		displayName="Base (Coldwar)";
+		displayName="Base";
 		faction="twc_faction";
 		editorSubCategory = "Men_ColdWar";
 		vehicleClass="Men_ColdWar";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_Smock_DPMW";
-		backpack="UK3CB_BAF_B_Carryall_OLI";
+		uniformClass="ukcw_p60_uniform";
+		backpack="";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_OLI",
-			"SP_MkBushHelmet_Forrest",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_RUS_Smersh_1",
-			"SP_MkBushHelmet_Forrest",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -77,7 +77,7 @@
 	class ColdWar_Rifleman: ColdWar_Base
 	{
 		scope=2;
-		displayName="Rifleman (Coldwar)";
+		displayName="Rifleman";
 		weapons[]=
 		{
 			"Throw",
@@ -104,6 +104,7 @@
 			"UK3CB_BAF_762_20Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -118,12 +119,13 @@
 			"UK3CB_BAF_762_20Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 	};
 	class ColdWar_Rifleman_SUIT: ColdWar_Rifleman
 	{
-		displayName="Rifleman SUIT(Coldwar)";
+		displayName="Rifleman SUIT";
 		weapons[]=
 		{
 			"Throw",
@@ -142,13 +144,13 @@
 	class ColdWar_AT: ColdWar_Base
 	{
 		scope=2;
-		displayName="AT Rifleman(Coldwar)";
+		displayName="AT Rifleman";
 		icon="iconManAT";
-		backpack="TWC_Backpack_Cold_War_AT";
+		backpack="";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_OLI",
-			"SP_MkBushHelmet_Forrest",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
 			"tf47_optic_m3maaws",
 			"ItemCompass",
 			"itemMap",
@@ -156,8 +158,8 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_OLI",
-			"SP_MkBushHelmet_Forrest",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -166,101 +168,109 @@
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"TWC_Carl_Gustav"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"TWC_Carl_Gustav"
 		};
 		magazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"tf47_m3maaws_HEAT",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"tf47_m3maaws_HEAT",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 	};
 	class ColdWar_AT_ASS: ColdWar_Rifleman
 	{
-		displayName="AT Assistant Rifleman (Coldwar)";
+		displayName="AT Assistant Rifleman";
 		backpack="TWC_Backpack_Cold_War_AAT";
 	};
 	class ColdWar_2IC: ColdWar_Rifleman
 	{
-		displayName="2IC (Coldwar)";
+		displayName="2IC";
 		backpack="TWC_Backpack_Cold_War_2IC";
 	};
 	class ColdWar_MG: ColdWar_Base
 	{
 		scope=2;
-		displayName="Machine Gunner (Coldwar)";
+		displayName="Machine Gunner";
 		icon="iconManMG";
-		backpack="TWC_Backpack_Cold_War_MG";
+		backpack="";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L7A2",
-			"twc_browninghp"
+			"UK3CB_BAF_L7A2",			
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L7A2",
-			"twc_browninghp"
+			"UK3CB_BAF_L7A2",		
 		};
 		magazines[]=
 		{
 			"UK3CB_BAF_762_100Rnd",	
-			"rhsusf_mag_7x45acp_MHP",
-			"rhsusf_mag_7x45acp_MHP",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
 			"UK3CB_BAF_762_100Rnd",	
-			"rhsusf_mag_7x45acp_MHP",
-			"rhsusf_mag_7x45acp_MHP",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"SmokeShell",
 			"SmokeShell"
 		};		
 	};
 	class ColdWar_MG_AS: ColdWar_Rifleman
 	{
-		displayName="Machine Gunner Assistant (Coldwar)";
+		displayName="Machine Gunner Assistant";
 		backpack="TWC_Backpack_Cold_War_MGAS";
 	};
 	class ColdWar_Section_Leader: ColdWar_Rifleman
 	{
-		displayName="Section Leader (Coldwar)";
+		displayName="Section Leader";
 		icon="iconManLeader";
-		backpack="TWC_Backpack_Cold_War_SL";
+		backpack="TWC_Backpack_Cold_War_Section";
 		linkedItems[]=
 		{
 			"Binocular",		
-			"UK3CB_BAF_V_PLCE_Webbing_OLI",
-			"SP_MkBushHelmet_Forrest",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -268,8 +278,8 @@
 		respawnLinkedItems[]=
 		{
 			"Binocular",		
-			"UK3CB_BAF_V_PLCE_Webbing_OLI",
-			"SP_MkBushHelmet_Forrest",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
 			"ItemMap",	
 			"ItemCompass",
 			"ItemWatch"
@@ -279,16 +289,14 @@
 			"Throw",
 			"Put",
 			"Binocular",
-			"UK3CB_BAF_L1A1_Wood",
-			"twc_browninghp"
+			"UK3CB_BAF_L1A1_Wood"			
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"Binocular",
-			"UK3CB_BAF_L1A1_Wood",
-			"twc_browninghp"
+			"UK3CB_BAF_L1A1_Wood"			
 		};
 		magazines[]=
 		{
@@ -300,8 +308,6 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
-			"rhsusf_mag_7x45acp_MHP",
-			"rhsusf_mag_7x45acp_MHP",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE"
 		};
@@ -315,56 +321,51 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
-			"rhsusf_mag_7x45acp_MHP",
-			"rhsusf_mag_7x45acp_MHP",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE"
-
 		};	
 	};
 	class ColdWar_Platoon_Commander: ColdWar_Section_Leader
 	{
-		displayName="Platoon Commander (Coldwar)";
+		displayName="Platoon Commander";
 		weapons[]=
 		{
 			"Throw",
 			"Put",
 			"Binocular",
-			"TWC_Sterling_Sub",
-			"twc_browninghp"
+			"ukcw_sterling_sub"		
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"Binocular",
-			"TWC_Sterling_Sub",
-			"twc_browninghp"
+			"ukcw_sterling_sub"			
 		};
 		magazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"rhsusf_mag_7x45acp_MHP",
 			"rhsusf_mag_7x45acp_MHP",
 			"CUP_HandGrenade_L109A2_HE"
 		};
 		Respawnmagazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"rhsusf_mag_7x45acp_MHP",
 			"rhsusf_mag_7x45acp_MHP",
 			"CUP_HandGrenade_L109A2_HE"
@@ -372,31 +373,31 @@
 	};
 	class ColdWar_Sergeant: ColdWar_Platoon_Commander
 	{
-		displayName="Platoon Sergeant (Coldwar)";
+		displayName="Platoon Sergeant";
 		backpack="TWC_Backpack_Cold_War_Sergeant";
 	};
 	class ColdWar_Medic: ColdWar_Base
 	{
 		scope=2;
-		displayName="Platoon Medic (Coldwar)";
+		displayName="Platoon Medic";
 		icon="iconManMedic";
 		backpack="TWC_Backpack_Cold_Medic";
 		weapons[]=
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		magazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
@@ -405,8 +406,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
@@ -416,13 +417,13 @@
 	};
 	class ColdWar_FAC: ColdWar_Section_Leader
 	{
-		displayName="Platoon FAC (Coldwar)";
+		displayName="Platoon FAC";
 		backpack="TWC_Backpack_Cold_War_FAC";
 	};
 	class ColdWar_HeliPilot: ColdWar_Base
 	{
 		scope=2;
-		displayName="Helicopter Pilot (Coldwar)";
+		displayName="Helicopter Pilot";
 		uniformClass="UK3CB_BAF_B_Carryall_OLI";
 		backpack="B_AssaultPack_blk";
 		linkedItems[]=
@@ -440,39 +441,37 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
-
 		};
 		weapons[]=
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		magazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"SmokeShell"
-
 		};
 	};
 	class ColdWar_JetPilot: ColdWar_HeliPilot
 	{
-		displayName="Jet Pilot (Coldwar)";
+		displayName="Jet Pilot";
 		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_RAF";
 		backpack="B_AssaultPack_blk";
 		linkedItems[]=
@@ -494,33 +493,27 @@
 		weapons[]=
 		{
 			"Throw",
-			"Put",
-			"twc_browninghp"
+			"Put"		
 		};
 		respawnweapons[]=
 		{
 			"Throw",
-			"Put",
-			"twc_browninghp"
+			"Put"		
 		};
 		magazines[]=
 		{
-			"twc_13Rnd_9mm_Mag",
-			"twc_13Rnd_9mm_Mag",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"twc_13Rnd_9mm_Mag",
-			"twc_13Rnd_9mm_Mag",
 			"SmokeShell",
 			"SmokeShell"
 		};
 	};
 	class ColdWar_AA_Gunner: ColdWar_AT
 	{
-		displayName="AA Gunner (Coldwar)";
+		displayName="AA Gunner";
 		faction="twc_faction";
 		editorSubCategory = "Men_ColdWar";
 		vehicleClass="Men_ColdWar";
@@ -528,16 +521,16 @@
 		backpack="TWC_Backpack_Cold_War_AA";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_OLI",
-			"SP_MkBushHelmet_Forrest",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_OLI",
-			"SP_MkBushHelmet_Forrest",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -546,110 +539,74 @@
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"FIMStingerA"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"FIMStingerA"
 		};	
 	};
 	class ColdWar_AA_Assistant: ColdWar_AA_Gunner
 	{
-		displayName="AA Assistant (Coldwar)";
+		displayName="AA Assistant";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 	};
 	class ColdWar_MilanGunner: ColdWar_AT
 	{
-		displayName="Milan Gunner (Coldwar)";
+		displayName="Milan Gunner";
 		backpack="TWC_Backpack_Cold_War_Milan";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"TWC_Milan_Tripod_Disassemabled"	
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"TWC_Milan_Tripod_Disassemabled"
 		};
 	};
 	class ColdWar_MilanAssistant: ColdWar_MilanGunner
 	{
-		displayName="Milan Assistant (Coldwar)";
+		displayName="Milan Assistant";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"TWC_Milan_Launcher_Disassemabled"	
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"TWC_Milan_Launcher_Disassemabled"
 		};
 	};
-//////////////////////////////  Mechanised  //////////////////////////////
-	class ColdWar_Rifleman_Mechanised: ColdWar_Rifleman
-	{
-		displayName="Rifleman (Cold War Mechanised)";
-		backpack="";
-	};
-	class ColdWar_Rifleman_SUIT_Mechanised: ColdWar_Rifleman_SUIT
-	{
-		displayName="Rifleman SUIT (Cold War Mechanised)";
-		backpack="";
-	};
-	class ColdWar_AT_Mechanised: ColdWar_AT
-	{
-		displayName="AT Rifleman (Cold War Mechanised)";
-		backpack="";
-	};
-	class ColdWar_AT_ASS_Mechanised: ColdWar_AT_ASS
-	{
-		displayName="AT Assistant Rifleman (Cold War Mechanised)";
-		backpack="";
-	};
-	class ColdWar_2IC_Mechanised: ColdWar_2IC
-	{
-		displayName="2IC (Cold War Mechanised)";
-		backpack="";
-	};
-	class ColdWar_MG_Mechanised: ColdWar_MG
-	{
-		displayName="Machine Gunner (Cold War Mechanised)";
-		backpack="";
-	};
-	class ColdWar_MG_AS_Mechanised: ColdWar_MG_AS
-	{
-		displayName="Machine Gunner Assistant (Cold War Mechanised)";
-		backpack="";
-	};
-	class ColdWar_Vehicle_Commander: ColdWar_Base
+	class ColdWar_Tank_Commander: ColdWar_Base
 	{
 		scope=2;
-		displayName="Vehicle Commander (Coldwar)";
+		displayName="Tank Commander";
 		icon="iconManLeader";
 		uniformClass="UK3CB_BAF_U_CrewmanCoveralls_RTR";
 		backpack="B_AssaultPack_blk";
@@ -673,36 +630,57 @@
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub"	
+			"ukcw_sterling_sub"	
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		magazines[]=
 		{
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
 		"SmokeShell",
 		"SmokeShell"
 		};
 	};
-	class ColdWar_Vehicle_Crewman: ColdWar_Vehicle_Commander
+	class ColdWar_Vehicle_Commander: ColdWar_Tank_Commander
 	{
-		displayName="Vehicle Crew (Coldwar)";
+		displayName="Vehicle Commander";
+		uniformClass="ukcw_p60_uniform";
+		linkedItems[]=
+		{
+			"CUP_V_C_Police_Holster",
+			"CUP_H_BAF_Officer_Beret",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+       		"CUP_V_C_Police_Holster",
+			"CUP_H_BAF_Officer_Beret",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+	};
+	class ColdWar_Tank_Crewman: ColdWar_Tank_Commander
+	{
+		displayName="Tank Crew";
 		icon="iconMan";
 		backpack="";
 		linkedItems[]=
@@ -715,10 +693,32 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_RUS_Smersh_1",
-			"SP_MkBushHelmet_Forrest",
+			"CUP_V_C_Police_Holster",
+			"UK3CB_BAF_H_Beret_RTR",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
 		};
+	};
+	class ColdWar_Vehicle_Crewman: ColdWar_Vehicle_Commander
+	{
+		displayName="Vehicle Crew";
+		icon="iconMan";
+		backpack="";
+		linkedItems[]=
+		{
+			"CUP_V_C_Police_Holster",
+			"CUP_H_BAF_Officer_Beret",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_C_Police_Holster",
+			"CUP_H_BAF_Officer_Beret",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};		
 	};

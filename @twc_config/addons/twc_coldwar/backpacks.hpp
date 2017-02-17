@@ -1,6 +1,6 @@
-	class UK3CB_BAF_B_Carryall_OLI;
+	class CUP_B_AlicePack_Khaki;
 	
-	class TWC_Backpack_Cold_War_2IC: UK3CB_BAF_B_Carryall_OLI
+	class TWC_Backpack_Cold_War_2IC: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -22,7 +22,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_Cold_War_Section: UK3CB_BAF_B_Carryall_OLI
+	class TWC_Backpack_Cold_War_Section: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -54,7 +54,7 @@
 			};		
 		};
 	};
-	class TWC_Backpack_Cold_War_MG: UK3CB_BAF_B_Carryall_OLI
+	class TWC_Backpack_Cold_War_MG: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -66,7 +66,7 @@
 			};		
 		};
 	};
-	class TWC_Backpack_Cold_War_MGAS: UK3CB_BAF_B_Carryall_OLI
+	class TWC_Backpack_Cold_War_MGAS: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -84,7 +84,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_Cold_War_AT: UK3CB_BAF_B_Carryall_OLI
+	class TWC_Backpack_Cold_War_AT: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -96,7 +96,7 @@
 			};			
 		};
 	};
-	class TWC_Backpack_Cold_War_AAT: UK3CB_BAF_B_Carryall_OLI
+	class TWC_Backpack_Cold_War_AAT: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -113,7 +113,7 @@
 			};			
 		};
 	};
-	class TWC_Backpack_Cold_War_Platoon_Sergeant: UK3CB_BAF_B_Carryall_OLI
+	class TWC_Backpack_Cold_War_Platoon_Sergeant: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportItems
@@ -161,14 +161,14 @@
 				magazine = "UK3CB_BAF_762_100Rnd";
 				count = 1;
 			};
-			class _xx_34_rnd_sterling_mag
+			class _xx_ukcw_34_rnd_sterling_mag
 			{
 				magazine = "34_rnd_sterling_mag";
 				count = 2;
 			};
 		};
 	};
-	class TWC_Backpack_Cold_Medic: UK3CB_BAF_B_Carryall_OLI
+	class TWC_Backpack_Cold_Medic: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportItems
@@ -238,7 +238,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_Cold_War_AA: UK3CB_BAF_B_Carryall_OLI
+	class TWC_Backpack_Cold_War_AA: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -250,7 +250,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_Cold_War_Milan: UK3CB_BAF_B_Carryall_OLI
+	class TWC_Backpack_Cold_War_Milan: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportItems
