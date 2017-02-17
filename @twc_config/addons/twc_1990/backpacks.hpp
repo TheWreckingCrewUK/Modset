@@ -225,6 +225,35 @@
 			};
 		};
 	};
+	class TWC_Backpack_1990_CG: UK3CB_BAF_B_Bergen_DPMT_Rifleman_A		
+	{		
+		scope = 1;		
+		class TransportMagazines		
+		{		
+			class _xx_tf47_m3maaws_HE		
+			{		
+				magazine = "tf47_m3maaws_HE";		
+				count = 1;		
+			};		
+		};		
+	};		
+	class TWC_Backpack_1990_CGAss: UK3CB_BAF_B_Bergen_DPMT_Rifleman_A		
+	{		
+		scope = 1;		
+		class TransportMagazines		
+		{		
+			class _xx_tf47_m3maaws_HEAT		
+			{		
+				magazine = "tf47_m3maaws_HEAT";		
+				count = 1;		
+			};		
+			class _xx_tf47_m3maaws_HE		
+			{		
+				magazine = "tf47_m3maaws_HE";		
+				count = 1;		
+			};		
+		};		
+	};
 //////////////////////////////  Desert Camo  //////////////////////////////
 	
 	class UK3CB_BAF_B_Bergen_DDPM_SL_A;
@@ -452,4 +481,32 @@
 			};
 		};
 	};
-	
+	class TWC_Backpack_1990_CG_Desert: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A		
+	{		
+		scope = 1;		
+		class TransportMagazines		
+		{		
+			class _xx_tf47_m3maaws_HE		
+			{		
+				magazine = "tf47_m3maaws_HE";		
+				count = 1;		
+			};		
+		};		
+	};		
+	class TWC_Backpack_1990_CGAss_Desert: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A		
+	{		
+		scope = 1;		
+		class TransportMagazines		
+		{		
+			class _xx_tf47_m3maaws_HEAT		
+			{		
+				magazine = "tf47_m3maaws_HEAT";		
+				count = 1;		
+			};		
+			class _xx_tf47_m3maaws_HE		
+			{		
+				magazine = "tf47_m3maaws_HE";		
+				count = 1;		
+			};		
+		};		
+	};

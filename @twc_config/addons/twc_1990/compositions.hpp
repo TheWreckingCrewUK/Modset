@@ -133,6 +133,47 @@ class CfgGroups
                                                 position[] = {7,0,0};
                                         };
                                 };
+								class 1990_Recoilless_Rifle_Team
+                                {
+                                        name = "Recoilless Rifle Team"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_SectionCommander"; //Class name of desired solider
+                                                rank = "sergeant"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_CGG";
+                                                rank = "private";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_CGAss";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_CGG";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_CGAss";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+                                };
 						};
 						class 1990_Desert
 						{
@@ -287,6 +328,47 @@ class CfgGroups
                                                 position[] = {5,0,0};
                                         };
 								};
+								class 1990_Recoilless_Rifle_Team_Desert
+                                {
+                                        name = "Recoilless Rifle Team"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_SectionCommander_Desert"; //Class name of desired solider
+                                                rank = "sergeant"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_CGG_Desert";
+                                                rank = "private";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_CGAss_Desert";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_CGG_Desert";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "1990_British_CGAss_Desert";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+                                };
 						};
                     
                 };

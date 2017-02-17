@@ -313,13 +313,13 @@
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		magazines[]=
 		{
@@ -367,13 +367,13 @@
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		magazines[]=
 		{
@@ -451,7 +451,7 @@
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"TWC_Milan_Tripod_Disassemabled"
 		};
 		magazines[]=
@@ -479,7 +479,7 @@
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"TWC_Milan_Launcher_Disassemabled"
 		};
 		respawnweapons[]=
@@ -498,14 +498,14 @@
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"UK3CB_BAF_M6"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub",
+			"ukcw_sterling_sub",
 			"UK3CB_BAF_M6"
 		};
 		magazines[]=
@@ -528,6 +528,30 @@
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
 		};	
+	};
+	class 1990_British_CGG: 1990_British_Rifleman
+	{
+		displayName="Carl-Gustaf Gunner (90`s Woodland)";
+		backpack="TWC_Backpack_1990_CG";
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1_SUSAT3D",
+			"TWC_Carl_Gustav"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1_SUSAT3D",
+			"TWC_Carl_Gustav"
+		};
+	};
+	class 1990_British_CGAss: 1990_British_Rifleman
+	{
+		displayName="Carl-Gustaf Assistant(90`s Woodland)";
+		backpack="TWC_Backpack_1990_CGAss";
 	};
 	
 //////////////////////////////  Mechanised  //////////////////////////////
@@ -571,13 +595,13 @@
 		{
 			"Throw",
 			"Put",
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"TWC_Sterling_Sub"
+			"ukcw_sterling_sub"
 		};
 		magazines[]=
 		{
@@ -893,6 +917,30 @@
 			"ItemWatch"
 		};	
 	};
+	class 1990_British_CGG_Desert: 1990_British_CGG
+	{
+		displayName="Carl-Gustaf Gunner (90`s Desert)";
+		backpack="TWC_Backpack_1990_CG_Desert";
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1_SUSAT3D",
+			"TWC_Carl_Gustav"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1_SUSAT3D",
+			"TWC_Carl_Gustav"
+		};
+	};
+	class 1990_British_CGAss_Desert: 1990_British_CGAss
+	{
+		displayName="Carl-Gustaf Assistant(90`s Desert)";
+		backpack="TWC_Backpack_1990_CGAss_Desert";
+	};
 //////////////////////////////  Mechanised  //////////////////////////////
 	class 1990_British_Rifleman_Mechanised_Desert: 1990_British_Rifleman_Desert
 	{
@@ -991,13 +1039,13 @@
 		{
 		"Throw",
 		"Put",	
-		"TWC_Sterling_Sub"
+		"ukcw_sterling_sub"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"TWC_Sterling_Sub"
+		"ukcw_sterling_sub"
 		};
 		magazines[]=
 		{
@@ -1095,13 +1143,13 @@
 		{
 		"Throw",
 		"Put",	
-		"TWC_Sterling_Sub"
+		"ukcw_sterling_sub"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"TWC_Sterling_Sub"
+		"ukcw_sterling_sub"
 		};
 		magazines[]=
 		{
