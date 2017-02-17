@@ -352,8 +352,7 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"rhsusf_mag_7x45acp_MHP",
-			"rhsusf_mag_7x45acp_MHP",
+			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE"
 		};
 		Respawnmagazines[]=
@@ -366,8 +365,7 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"rhsusf_mag_7x45acp_MHP",
-			"rhsusf_mag_7x45acp_MHP",
+			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE"
 		};
 	};

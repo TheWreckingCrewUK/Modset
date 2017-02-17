@@ -14,7 +14,8 @@ class CfgPatches
 			"twc_wildcat",
 			"twc_wildcat_1990",
 			"twc_puma",
-			"twc_c5_hercules"
+			"twc_c5_hercules",
+			"TWC_fv432"
 			
 		};
 		weapons[]=
@@ -702,6 +703,109 @@ class CfgVehicles
 			{
 				magazine="UK3CB_BAF_762_20Rnd";
 				count=50;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine="UK3CB_BAF_762_100Rnd";
+				count=3;
+			};
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine="UK3CB_BAF_762_100Rnd";
+				count=3;
+			};
+			class _xx_ACE_HandFlare_White
+			{
+				magazine="ACE_HandFlare_White";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine="tf47_m3maaws_HEAT";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine="tf47_m3maaws_HE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_SMOKE
+			{
+				magazine="tf47_m3maaws_SMOKE";
+				count=2;
+			};
+			class _xx_tf47_m3maaws_ILLUM
+			{
+				magazine="tf47_m3maaws_ILLUM";
+				count=2;
+			};
+			class _xx_SmokeShell
+			{
+				magazine="SmokeShell";
+				count=4;
+			};
+			class _xx_Grenade
+			{
+				magazine="CUP_HandGrenade_L109A2_HE";
+				count=6;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 8;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 10;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 4;
+			};
+			class _xx_packing
+			{
+				name = "ACE_packingBandage";
+				count = 10;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_LAW
+			{
+				Weapon = "HAFM_LAW";
+				count = 2;
+			};
+		};
+	};
+	
+	class ukcw_fv432;
+	class TWC_fv432
+	{
+		scope = 2;
+		side = 1;
+		faction="twc_faction";
+		displayname = "FV432";
+		class TransportMagazines
+		{
+			class _xx_UK3CB_20Rnd_762x51_B_fal
+			{
+				magazine="UK3CB_BAF_762_20Rnd";
+				count=50;
+			};
+			class _xx_ukcw_34_rnd_sterling_mag
+			{
+				magazine="ukcw_34_rnd_sterling_mag";
+				count=10;
 			};
 			class _xx_UK3CB_BAF_75Rnd
 			{
