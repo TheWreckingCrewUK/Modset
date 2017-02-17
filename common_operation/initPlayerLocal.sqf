@@ -20,9 +20,9 @@ if(isMultiplayer)then{
 		titleFadeOut 15;
 		sleep 45;
 
-		if(!isNil "ForwardBase")then{
-			player setPos ForwardBase;
-			["ForwardBase"] spawn {twc_fnc_reconnected};
+		if(!isNil "ForwardBasePos")then{
+			player setPos ForwardBasePos;
+			["ForwardBasePos"] spawn {twc_fnc_reconnected};
 		}else{
 			["NormalBase"] spawn {twc_fnc_reconnected};
 		};

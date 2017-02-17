@@ -9,25 +9,25 @@ if(isNil "molar" && _unit != molar)exitWith {systemChat "Forward base is enabled
 if(player == molar || _unit == player)then{
 
 //Function to create Forward Base
-	twc_fnc_createForwardBase={
+	twc_fnc_createForwardBasePos={
 
-		if(!isNil "ForwardBase")then{
-			deleteVehicle forwardBaseFlag;
-			deleteVehicle forwardBaseTent;
-			ForwardBase = nil;
+		if(!isNil "ForwardBasePos")then{
+			deleteVehicle ForwardBasePosFlag;
+			deleteVehicle ForwardBasePosTent;
+			ForwardBasePos = nil;
 		};
 		_pos = getPos player;	
-		ForwardBase = _pos;
-		publicVariable "ForwardBase";
-		forwardBaseFlag = "Flag_UK_F" createVehicle _pos;	
-		forwardBaseTent = "Camp" createVehicle _pos;
+		ForwardBasePos = _pos;
+		publicVariable "ForwardBasePos";
+		ForwardBasePosFlag = "Flag_UK_F" createVehicle _pos;	
+		ForwardBasePosTent = "Camp" createVehicle _pos;
 		//Sets it a medical facility. I assume the player can do this. Needs testing
-		forwardBaseTent setvariable ["ace_medical_isMedicalFacility", true,true];
+		ForwardBasePosTent setvariable ["ace_medical_isMedicalFacility", true,true];
 	};
 //ACE Action to create forward Base
-	ForwardBaseAction = ["twcActions","Forward Base","", {},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], ForwardBaseAction] call ace_interact_menu_fnc_addActionToObject;
+	ForwardBasePosAction = ["twcActions","Forward Base","", {},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], ForwardBasePosAction] call ace_interact_menu_fnc_addActionToObject;
 
-	CreateBaseAction = ["ForwardBaseAction","Create Forward Base","", {[10, [], {[] spawn twc_fnc_createForwardBase;}, {}, "Creating Forward Base..."] call ace_common_fnc_progressBar;},{true}] call ace_interact_menu_fnc_createAction;
+	CreateBaseAction = ["ForwardBasePosAction","Create Forward Base","", {[10, [], {[] spawn twc_fnc_createForwardBasePos;}, {}, "Creating Forward Base..."] call ace_common_fnc_progressBar;},{true}] call ace_interact_menu_fnc_createAction;
 	[player, 1, ["ACE_SelfActions", "twcActions"], CreateBaseAction] call ace_interact_menu_fnc_addActionToObject;
 };

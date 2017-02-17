@@ -61,6 +61,7 @@ class CfgFunctions
 			class CreateTask {};
 			class UpdateTask {};
 			class daisyCutter {};
+			class reconnected {};
 			class createMarker {};
 			class virtualMortar {};
 		};
