@@ -8,6 +8,7 @@
 	class TWC_Backpack_1990_Platoon_Command: UK3CB_BAF_B_Bergen_DPMT_SL_A
 	{
 		scope = 1;
+		mass = 59.84;
 		class TransportMagazines
 		{
 			class _xx_Smoke
@@ -35,6 +36,7 @@
 	class TWC_Backpack_1990_Platoon_Sergeant: UK3CB_BAF_B_Carryall_DPMT
 	{
 		scope = 1;
+		mass = 59.84;
 		class TransportItems
 		{
 			class _xx_Wire_Cutters
@@ -145,13 +147,9 @@
 	class TWC_Backpack_1990_Sectionlead: UK3CB_BAF_B_Bergen_DPMT_SL_A
 	{
 		scope = 1;
+		mass = 59.84;
 		class TransportMagazines
 		{
-			class _xx_Stanag
-			{
-				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 2;
-			};
 			class _xx_Smoke
 			{
 				magazine = "SmokeShell";
@@ -203,35 +201,6 @@
 			};
 		};
 	};
-	class TWC_Backpack_1990_CG: UK3CB_BAF_B_Bergen_DPMT_Rifleman_A
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_tf47_m3maaws_HE
-			{
-				magazine = "tf47_m3maaws_HE";
-				count = 1;
-			};
-		};
-	};
-	class TWC_Backpack_1990_CGAss: UK3CB_BAF_B_Bergen_DPMT_Rifleman_A
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_tf47_m3maaws_HEAT
-			{
-				magazine = "tf47_m3maaws_HEAT";
-				count = 1;
-			};
-			class _xx_tf47_m3maaws_HE
-			{
-				magazine = "tf47_m3maaws_HE";
-				count = 1;
-			};
-		};
-	};
 	class TWC_Backpack_1990_Milan: UK3CB_BAF_B_Bergen_DPMT_Rifleman_A
 	{
 		scope = 1;
@@ -266,6 +235,7 @@
 	class TWC_Backpack_1990_Platoon_Command_Desert: UK3CB_BAF_B_Bergen_DDPM_SL_A
 	{
 		scope = 1;
+		mass = 59.84;
 		class TransportMagazines
 		{
 			class _xx_Smoke
@@ -293,6 +263,7 @@
 	class TWC_Backpack_1990_Platoon_Sergeant_Desert: UK3CB_BAF_B_Carryall_DDPM
 	{
 		scope = 1;
+		mass = 59.84;
 		class TransportItems
 		{
 			class _xx_Wire_Cutters
@@ -403,13 +374,9 @@
 	class TWC_Backpack_1990_Sectionlead_Desert: UK3CB_BAF_B_Bergen_DDPM_SL_A
 	{
 		scope = 1;
+		mass = 59.84;
 		class TransportMagazines
 		{
-			class _xx_Stanag
-			{
-				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 2;
-			};
 			class _xx_Smoke
 			{
 				magazine = "SmokeShell";
@@ -458,35 +425,6 @@
 			{
 				magazine = "UK3CB_BAF_556_30Rnd_T";
 				count = 4;
-			};
-		};
-	};
-	class TWC_Backpack_1990_CG_Desert: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_tf47_m3maaws_HE
-			{
-				magazine = "tf47_m3maaws_HE";
-				count = 1;
-			};
-		};
-	};
-	class TWC_Backpack_1990_CGAss_Desert: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_tf47_m3maaws_HEAT
-			{
-				magazine = "tf47_m3maaws_HEAT";
-				count = 1;
-			};
-			class _xx_tf47_m3maaws_HE
-			{
-				magazine = "tf47_m3maaws_HE";
-				count = 1;
 			};
 		};
 	};
