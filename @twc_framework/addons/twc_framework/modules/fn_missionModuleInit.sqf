@@ -1,9 +1,5 @@
 params ["_logic","_units","_activated"];
 
-systemChat (str _logic);
-systemChat (str _units);
-systemChat (str _activated);
-
 if !(_activated) exitWith {};
 if !(isServer)exitWith{};
 
