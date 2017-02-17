@@ -161,7 +161,7 @@
 		scope = 2;
 		displayName="Squadleader";
 		icon="iconManLeader";
-		backpack="BCCCCP_Squadlead";
+		backpack="BCCCCP_Backpack_Squadlead";
 		weapons[]=
 		{
 			"Throw",
@@ -580,12 +580,38 @@
 			"CUP_AT13_M"
 		};
 	};
-	class BCCCCP_ATAssistant: BCCCCP_Base
+	class BCCCCP_ATAssistant: BCCCCP_Rifleman
 	{
 		scope = 2;
 		displayName="Anti-Tank Assistant";
 		backpack="BCCCCP_Backpack_AT";
 		vehicleClass ="BCCCCP_VDV";
+		magazines[]=
+		{
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"CUP_AT13_M"
+		};
+		Respawnmagazines[]=
+		{
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"CUP_AT13_M"
+		};
 	};
 	class BCCCP_Razvedka_Observer: BCCCCP_Rifleman
 	{
