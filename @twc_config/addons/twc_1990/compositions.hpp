@@ -166,7 +166,7 @@ class CfgGroups
                                                 rank = "PRIVATE";
                                                 position[] = {7,0,0};
                                         };
-										class Unit3
+										class Unit4
                                         {
                                                 side = 1;
                                                 vehicle = "1990_British_CGAss";
@@ -361,7 +361,7 @@ class CfgGroups
                                                 rank = "PRIVATE";
                                                 position[] = {7,0,0};
                                         };
-										class Unit3
+										class Unit4
                                         {
                                                 side = 1;
                                                 vehicle = "1990_British_CGAss_Desert";
