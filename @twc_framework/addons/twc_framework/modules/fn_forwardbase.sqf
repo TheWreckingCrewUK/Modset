@@ -4,7 +4,7 @@ if(!hasInterface)exitWith{};
 
 if !(_enabled) exitWith {};
 
-if(isNil "molar" && _unit != molar)exitWith {systemChat "Forward base is enabled, but no Molar isNil. Exiting disabling forward base"};
+if(isNil "molar")exitWith {systemChat "Forward base is enabled, but no Molar isNil. Exiting disabling forward base"};
 
 if(player == molar || _unit == player)then{
 
