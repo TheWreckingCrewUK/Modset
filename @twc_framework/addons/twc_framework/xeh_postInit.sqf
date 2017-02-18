@@ -1,6 +1,9 @@
 //Calls all the functions on player start.
 if(!hasInterface)exitWith{};
 
+waitUntil { sleep 0.5; !(isNull player) };
+waitUntil { sleep 1.271; time > 0 };
+
 ACE_maxWeightDrag = 100000;
 
 //storing an extra weapon on the back.  will soon put weapon animation on it as well
