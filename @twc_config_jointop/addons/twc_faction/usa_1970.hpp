@@ -447,13 +447,19 @@
 		{
 		"CUP_7Rnd_45ACP_1911",
 		"CUP_7Rnd_45ACP_1911",
-		"CUP_7Rnd_45ACP_1911"
+		"CUP_7Rnd_45ACP_1911",
+		"SmokeShellPurple",
+		"SmokeShellPurple",
+		"SmokeShellPurple"
 		};
 		Respawnmagazines[]=
 		{
 		"CUP_7Rnd_45ACP_1911",
 		"CUP_7Rnd_45ACP_1911",
-		"CUP_7Rnd_45ACP_1911"
+		"CUP_7Rnd_45ACP_1911",
+		"SmokeShellPurple",
+		"SmokeShellPurple",
+		"SmokeShellPurple"
 		};
 		Items[]=
 		{

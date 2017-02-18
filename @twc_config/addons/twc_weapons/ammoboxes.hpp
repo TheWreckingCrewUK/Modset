@@ -330,13 +330,18 @@
 		{
 			class _xx_Sterling_34Rnd
 			{
-				magazine = "34_rnd_sterling_mag";
+				magazine = "ukcw_34_rnd_sterling_mag";
 				count = 20;
 			};
 			class _xx_UK3CB_BAF_762_20Rnd
 			{
 				magazine="UK3CB_BAF_762_20Rnd";
 				count=110;
+			};
+			class _xx_UK3CB_BAF_762_20Rnd_T
+			{
+				magazine="UK3CB_BAF_762_20Rnd_T";
+				count=20;
 			};
 			class _xx_UK3CB_BAF_100Rnd
 			{

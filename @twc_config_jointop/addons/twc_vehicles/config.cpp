@@ -789,7 +789,7 @@ class CfgVehicles
 	};
 	
 	class ukcw_fv432;
-	class TWC_fv432
+	class TWC_fv432: ukcw_fv432
 	{
 		scope = 2;
 		side = 1;

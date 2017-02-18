@@ -18,6 +18,8 @@ Switch (typeof player) do {
 	case "ColdWar_Section_Leader" : {player additemTobackpack "ACRE_PRC117F"};
 	case "ColdWar_Platoon_Commander" : {player additemTobackpack "ACRE_PRC117F"};
 	case "ColdWar_sergeant" : {player additemTobackpack "ACRE_PRC117F"};
+	case "ColdWar_Tank_Commander" : {player additemTobackpack "ACRE_PRC117F"};
+	case "ColdWar_Vehicle_Commander" : {player additemTobackpack "ACRE_PRC117F"};
 	
 	case "1990_British_Squadleader" : {player additemTobackpack "ACRE_PRC117F"};
 	case "1990_British_Platoon_Commander" : {player additemTobackpack "ACRE_PRC117F"};
@@ -32,5 +34,6 @@ Switch (typeof player) do {
 	case "bw_vehicle_commander" : {player additemTobackpack "ACRE_PRC117F"};
 	
 	case "usa_1970_leader" : {player additemTobackpack "ACRE_PRC117F"};
+	case "usa_1970_pilot" : {player additemTobackpack "ACRE_PRC117F"};
 	default{};
 };
