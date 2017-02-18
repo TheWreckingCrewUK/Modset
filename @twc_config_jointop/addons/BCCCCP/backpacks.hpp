@@ -42,6 +42,18 @@
 			};
 		};
 	};
+	class BCCCCP_Backpack_RPK: CUP_B_AlicePack_Khaki
+	{
+		cope = 1;
+		class TransportMagazines
+		{
+			class _xx_RPKMag
+			{
+				magazine = "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+				count = 4;
+			};
+		};	
+	};
 	class BCCCCP_Backpack_AA: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
