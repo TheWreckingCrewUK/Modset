@@ -323,8 +323,8 @@
 		};
 		magazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
@@ -333,8 +333,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
@@ -377,17 +377,17 @@
 		};
 		magazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"SmokeShell"
 
@@ -456,18 +456,18 @@
 		};
 		magazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell"
 		};
 	};
@@ -510,20 +510,20 @@
 		};
 		magazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
 		};
 		Respawnmagazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
@@ -605,17 +605,17 @@
 		};
 		magazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
-			"34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"SmokeShell",
 			"SmokeShell"
 		};
@@ -1049,16 +1049,16 @@
 		};
 		magazines[]=
 		{
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -1153,16 +1153,16 @@
 		};
 		magazines[]=
 		{
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"34_rnd_sterling_mag",
-		"34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
+		"ukcw_34_rnd_sterling_mag",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
