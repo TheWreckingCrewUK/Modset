@@ -17,28 +17,36 @@ player addEventHandler ["InventoryOpened",{
 		waituntil {!(isnull (findDisplay 602))};
 		 
 		_ctrl3 = findDisplay 602 ctrlCreate ["RscBackground", -1]; 
-		_ctrl3 ctrlSetPosition [1.075,0.25,0.3,0.4]; 
+		_ctrl3 ctrlSetPosition [1.075,0.1,0.3,0.58]; 
 		_ctrl3 ctrlSetBackgroundColor [0.2,0.2,0.2, 0.9];
 		_ctrl3 ctrlCommit 0; 
 		 
 		_ctrl = findDisplay 602 ctrlCreate ["RscButton", -1]; 
-		_ctrl ctrlSetPosition [1.075,0.25,0.3,0.1]; 
+		_ctrl ctrlSetPosition [1.075,0.1,0.3,0.125]; 
 		_ctrl ctrlCommit 0; 
-		_ctrl ctrlSetText "Weapon to Back"; 
+		_ctrl ctrlSetText "Weapon on Back"; 
 		_ctrl ctrlAddEventHandler ["ButtonClick", {[] call twc_fnc_putWeaponOnBack}];
 		
 		_ctrl2 = findDisplay 602 ctrlCreate ["RscPicture", -1]; 
-		_ctrl2 ctrlSetPosition [1.070,0.40,0.3,0.2];
+		_ctrl2 ctrlSetPosition [1.125,0.24,0.2,0.13];
 		_ctrl2 ctrlCommit 0;
 		if(str twc_weaponOnBack != "[]")then{
 			_ctrl2 ctrlSetText (getText (configFile >> "CfgWeapons" >> (uiNamespace getVariable "twc_uiGun") >> "picture"));
 		}else{
 			_ctrl2 ctrlSetText "a3\ui_f\data\GUI\Rsc\RscDisplayGear\ui_gear_primary_gs.paa";
+		};
+
+		_ctrl3 = findDisplay 602 ctrlCreate ["RscPicture", -1]; 
+		_ctrl3 ctrlSetPosition [1.125,0.455,0.2,0.13];
+		_ctrl3 ctrlCommit 0;
+		if(str twc_weaponOnBack != "[]")then{
+			_ctrl3 ctrlSetText (getText (configFile >> "CfgWeapons" >> (uiNamespace getVariable "twc_uiGun") >> "picture"));
+		}else{
+			_ctrl3 ctrlSetText "a3\ui_f\data\GUI\Rsc\RscDisplayGear\ui_gear_secondary_gs.paa";
 		};		
 		
 		uiNamespace setVariable ["twc_uiGun",(twc_weaponOnBack select 0)];		
 		uiNamespace setVariable ["twc_uiGun_old",_ctrl2];
-	
 	};
 }];
 

@@ -17,7 +17,7 @@ if(str twc_weaponOnBack == "[]")then{
 			
 		disableSerialization;
 		_ctrl2 = findDisplay 602 ctrlCreate ["RscPicture", -1]; 
-		_ctrl2 ctrlSetPosition [1.070,0.40,0.3,0.2]; 
+		_ctrl2 ctrlSetPosition [1.125,0.24,0.2,0.13]; 
 		_ctrl2 ctrlCommit 0;
 		_ctrl2 ctrlSetText (getText (configFile >> "CfgWeapons" >> (uiNamespace getVariable "twc_uiGun") >> "picture"));
 		uiNamespace setVariable ["twc_uiGun_old",_ctrl2];
@@ -44,7 +44,7 @@ if(str twc_weaponOnBack == "[]")then{
 	
 	disableSerialization;
 	_ctrl2 = findDisplay 602 ctrlCreate ["RscPicture", -1]; 
-	_ctrl2 ctrlSetPosition [1.070,0.40,0.3,0.2]; 
+	_ctrl2 ctrlSetPosition [1.125,0.24,0.2,0.13]; 
 	_ctrl2 ctrlCommit 0;
 	if(str twc_weaponOnBack != "[]")then{
 		_ctrl2 ctrlSetText (getText (configFile >> "CfgWeapons" >> (uiNamespace getVariable "twc_uiGun") >> "picture"));

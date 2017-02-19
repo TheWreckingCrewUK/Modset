@@ -1,6 +1,17 @@
 /*
-* Simple stat tracking. Should keep track of who kills who then prints to an rpt.
-* Is activated by the twc-module
+* Author: [TWC] jayman
+* Adds MissionEventHandler to Save player kills. It then prints it to the rpt
+*
+* Arguments:
+* 0: Enabled <BOOL>
+*
+* Return Value:
+* NOTHING
+*
+* Example:
+* [true] call twc_fnc_stats;
+*
+* Public: No
 */
 params["_enabled"];
 

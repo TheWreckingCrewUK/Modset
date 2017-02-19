@@ -1,3 +1,19 @@
+/*
+* Author: [TWC] jayman
+* Adds create base ACE Interaction
+*
+* Arguments:
+* 0: Enabled <BOOL>
+* 1: UNIT to attach to <OBJECT>
+*
+* Return Value:
+* NOTHING
+*
+* Example:
+* [true,bob] call twc_fnc_forwardBase;
+*
+* Public: No
+*/
 params ["_enabled",["_unit",objNull]];
 
 if(!hasInterface)exitWith{};
@@ -5,6 +21,7 @@ if(!hasInterface)exitWith{};
 if !(_enabled) exitWith {};
 
 _var = player getVariable "twc_isMolar";
+_var = if(_unit == player)then{true};
 
 if(isNil "_var")exitWith {};
 

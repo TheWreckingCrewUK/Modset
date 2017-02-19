@@ -1,3 +1,18 @@
+/*
+* Author: [TWC] jayman
+* Adds all units and objects to zeus continuously
+*
+* Arguments:
+* 0: Enabled <BOOL>
+*
+* Return Value:
+* NOTHING
+*
+* Example:
+* [true] call twc_fnc_zeus;
+*
+* Public: No
+*/
 params ["_enabled"];
 
 if(!isServer)exitWith{};

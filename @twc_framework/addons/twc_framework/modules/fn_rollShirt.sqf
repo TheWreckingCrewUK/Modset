@@ -1,3 +1,18 @@
+/*
+* Author: [TWC] jayman
+* Allows player to roll sleeves on uniform.
+*
+* Arguments:
+* 0: Enabled <BOOL>
+*
+* Return Value:
+* NOTHING
+*
+* Example:
+* [true] call twc_fnc_rollShirt;
+*
+* Public: No
+*/
 params ["_enabled"];
 
 if(!hasInterface)exitWith{};

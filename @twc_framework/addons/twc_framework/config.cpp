@@ -122,9 +122,9 @@ class cfgVehicles
 			class deadBodies
 			{
 				displayName="Player Base Body Cleanup";
-				description="Enable to clean up dead bodies in the base";
-				typeName="BOOL";
-				defaultValue=1;
+				description="Range. Set to 0 to Disable";
+				typeName="NUMBER";
+				defaultValue=250;
 			};
 			class forwardBase
 			{

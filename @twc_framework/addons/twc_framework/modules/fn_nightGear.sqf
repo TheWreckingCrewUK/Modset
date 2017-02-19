@@ -1,3 +1,19 @@
+/*
+* Author: [TWC] jayman
+* Adds night gear to players
+*
+* Arguments:
+* 0: Enabled <BOOL>
+* 1: ERA <STRING>
+*
+* Return Value:
+* NOTHING
+*
+* Example:
+* [true,"modern"] call twc_fnc_nightGear;
+*
+* Public: No
+*/
 params ["_enabled","_era"];
 
 if(!hasInterface)exitWith{};
