@@ -25,6 +25,14 @@
 	class TWC_Backpack_Cold_War_Section: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
 		class TransportMagazines
 		{
 			class _xx_Smoke
@@ -116,11 +124,17 @@
 	class TWC_Backpack_Cold_War_Platoon_Sergeant: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
+		maximumLoad = 500;
 		class TransportItems
 		{
 			class _xx_Wire_Cutters
 			{
 				name = "ACE_wirecutter";
+				count = 1;
+			};
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
 				count = 1;
 			};
 		};

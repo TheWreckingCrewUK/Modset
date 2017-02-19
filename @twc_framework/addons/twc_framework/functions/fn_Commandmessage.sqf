@@ -2,33 +2,26 @@ params ["_message"];
 
 
 waitUntil {player == player};
+_rankArray = [];
+{
+	_rankArray pushback (rank _x);
+}forEach allUnits;
 
+_rank = "";
 _rank = call{
-		_rank = {
-				if (rank _x == "COLONEL")exitWith{"COLONEL"}
-		}forEach allPlayers;
-		_rank = {
-				if (rank _x == "MAJOR")exitWith{"MAJOR"}
-		}forEach allPlayers;
-		_rank = {
-				if (rank _x == "CAPTAIN")exitWith{"CAPTAIN"}
-		}forEach allPlayers;
-		_rank = {
-				if (rank _x == "LIETENANT")exitWith{"LIETENANT"}
-		}forEach allPlayers;
-		_rank = {
-				if (rank _x == "SERGEANT")exitWith{"SERGEANT"}
-		}forEach allPlayers;
-		_rank = {
-				if (rank _x == "CORPORAL")exitWith{"CORPORAL"}
-		}forEach allPlayers;
-		_rank = {
-			if (rank _x == "PRIVATE")exitWith{"PRIVATE"}
-		}forEach allPlayers;
-		_rank
+	_rank = if ("COLONEL" in _rankArray)exitWith{"COLONEL"};
+	_rank = if ("MAJOR" in _rankArray)exitWith{"MAJOR"};
+	_rank = if ("CAPTAIN" in _rankArray)exitWith{"CAPTAIN"};
+	_rank = if ("LIETENANT" in _rankArray)exitWith{"LIETENANT"};
+	_rank = if ("SERGEANT" in _rankArray)exitWith{"SERGEANT"};
+	_rank = if ("CORPORAL" in _rankArray)exitWith{"CORPORAL"};
+	_rank = if ("PRIVATE" in _rankArray)exitWith{"PRIVATE"};
+	_rank
 };
 {
 	if(rank _x == _rank)then{
 		_message remoteExecCall ["hint",_x];
 	};
-}forEach allPlayers;
+}forEach allUnits;
+
+systemChat format["%1 %2",_message,_rank];

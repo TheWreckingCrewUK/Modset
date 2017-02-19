@@ -126,6 +126,11 @@
 				name = "ACE_MapTools";
 				count = 1;
 			};
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
 		};
 		class TransportMagazines
 		{
@@ -358,6 +363,14 @@
 	{
 		scope = 1;
 		mass = 59.84;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
 		class TransportMagazines
 		{
 			class _xx_HE

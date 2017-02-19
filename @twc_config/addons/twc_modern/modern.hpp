@@ -521,13 +521,21 @@
 			"UK3CB_BAF_G_Tactical_Black"
 		};
 	};
-	class Modern_British_Platoon_Sergeant: Modern_British_Squadleader
+	class Modern_British_Platoon_Sergeant: Modern_British_Platoon_Commander
 	{
 		scope=2;
 		displayName="Platoon Sergeant (Modern)";
 		faction="twc_faction";
 		icon="iconMan";
 		backpack="TWC_Backpack_Modern_Platoon_Sergeant";
+	};
+	class Modern_British_Platoon_CSM: Modern_British_Squadleader
+	{
+		displayName="Company Sergeant Major (Modern)";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
+		};
 	};
 	class Modern_British_Medic: Modern_British_Base
 	{
@@ -586,6 +594,10 @@
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell"
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
 		};
 	};
 	class Modern_British_HeliPilot: Modern_British_Base

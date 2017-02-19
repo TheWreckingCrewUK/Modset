@@ -98,6 +98,13 @@ class CfgGroups
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Platoon_CSM";
+                                                rank = "sergeant";
+                                                position[] = {7,0,0};
+                                        };
                                 };
 								class Modern_Section_Mechinized
                                 {

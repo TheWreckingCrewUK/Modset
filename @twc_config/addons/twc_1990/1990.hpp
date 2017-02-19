@@ -304,6 +304,14 @@
 		displayName="Platoon Sergeant(90`s Woodland)";
 		backpack="TWC_Backpack_1990_Platoon_Sergeant";
 	};
+	class 1990_British_Platoon_CSM: 1990_British_Platoon_Commander
+	{
+		displayName="Company Sergeant Major(90`s Woodland)";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
+		};
+	};
 	class 1990_British_Medic: 1990_British_Base
 	{
 		scope=2;
@@ -340,6 +348,10 @@
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell"
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
 		};
 	};
 	class 1990_British_HeliPilot: 1990_British_Base
@@ -798,6 +810,14 @@
 			"ItemWatch"
 		};
 	};
+	class 1990_British_Platoon_CSM_Desert: 1990_British_Platoon_Commander_Desert
+	{
+		displayName="Company Sergeant Major(90`s Desert)";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
+		};
+	};
 	class 1990_British_Medic_Desert: 1990_British_Medic
 	{
 		displayName="Medic(90`s Desert)";
@@ -820,6 +840,10 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
 		};
 	};
     class 1990_British_HeliPilot_Desert: 1990_British_HeliPilot

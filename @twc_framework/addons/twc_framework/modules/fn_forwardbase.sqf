@@ -4,9 +4,11 @@ if(!hasInterface)exitWith{};
 
 if !(_enabled) exitWith {};
 
-if(isNil "molar")exitWith {systemChat "Forward base is enabled, but no Molar isNil. Exiting disabling forward base"};
+_var = player getVariable "twc_isMolar";
 
-if(player == molar || _unit == player)then{
+if(isNil "_var")exitWith {};
+
+if(_var)then{
 
 //Function to create Forward Base
 	twc_fnc_createForwardBasePos={
@@ -30,4 +32,6 @@ if(player == molar || _unit == player)then{
 
 	CreateBaseAction = ["ForwardBasePosAction","Create Forward Base","", {[10, [], {[] spawn twc_fnc_createForwardBasePos;}, {}, "Creating Forward Base..."] call ace_common_fnc_progressBar;},{true}] call ace_interact_menu_fnc_createAction;
 	[player, 1, ["ACE_SelfActions", "twcActions"], CreateBaseAction] call ace_interact_menu_fnc_addActionToObject;
+}else{
+	systemChat "somehow molar is defined for you, yet you are not molar. This is a bug, but it won't affect anything";
 };

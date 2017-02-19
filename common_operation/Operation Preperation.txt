@@ -6,7 +6,6 @@
 
 4. Place down the Operations Units.
 	4.1 Name the Groups and Units.
-	4.2 Set Medics to Medics in ACE.
 	4.3 Place down Ammobox(es).
 	4.4 Place down Medical Tent and set as medical facility in ACE.
 	4.5 Place down vehicles if applicable.

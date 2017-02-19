@@ -11,7 +11,6 @@ missionNameSpace setVariable ["twcModuleEnabled",true,true];
 
 missionNameSpace setVariable ["era",(_logic getVariable "era"),true];
 missionNameSpace setVariable ["forwardBase",(_logic getVariable "forwardBase"),true];
-missionNameSpace setVariable ["giveRadio",(_logic getVariable "giveRadio"),true];
 missionNameSpace setVariable ["nightGear",(_logic getVariable "nightGear"),true];
 missionNameSpace setVariable ["rollSleeves",(_logic getVariable "rollSleeves"),true];
 missionNameSpace setVariable ["run",(_logic getVariable "run"),true];

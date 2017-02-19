@@ -374,6 +374,14 @@
 		displayName="Platoon Sergeant";
 		backpack="TWC_Backpack_Cold_War_Sergeant";
 	};
+	class ColdWar_CSM: ColdWar_Platoon_Commander
+	{
+		displayName="Company Sergeant Major";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
+		};
+	};
 	class ColdWar_Medic: ColdWar_Base
 	{
 		scope=2;
@@ -411,6 +419,10 @@
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell"
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
 		};
 	};
 	class ColdWar_FAC: ColdWar_Section_Leader

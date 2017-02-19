@@ -32,16 +32,30 @@
 				count = 2;
 			};
 		};
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
 	};
 	class TWC_Backpack_1990_Platoon_Sergeant: UK3CB_BAF_B_Carryall_DPMT
 	{
 		scope = 1;
 		mass = 59.84;
+		 maximumLoad = 500;
 		class TransportItems
 		{
 			class _xx_Wire_Cutters
 			{
 				name = "ACE_wirecutter";
+				count = 1;
+			};
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
 				count = 1;
 			};
 		};
@@ -148,6 +162,14 @@
 	{
 		scope = 1;
 		mass = 59.84;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
 		class TransportMagazines
 		{
 			class _xx_Smoke
@@ -265,6 +287,14 @@
 	{
 		scope = 1;
 		mass = 59.84;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
 		class TransportMagazines
 		{
 			class _xx_Smoke
@@ -293,8 +323,14 @@
 	{
 		scope = 1;
 		mass = 59.84;
+		maximumLoad = 500;
 		class TransportItems
 		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
 			class _xx_Wire_Cutters
 			{
 				name = "ACE_wirecutter";
@@ -404,6 +440,14 @@
 	{
 		scope = 1;
 		mass = 59.84;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
 		class TransportMagazines
 		{
 			class _xx_Smoke

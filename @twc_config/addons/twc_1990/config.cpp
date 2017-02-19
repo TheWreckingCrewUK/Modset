@@ -57,6 +57,7 @@ class CfgPatches
 		};
 	};
 };
+class EventHandlers;
 class CfgEditorSubCategories
 {
 	class Men_1990D

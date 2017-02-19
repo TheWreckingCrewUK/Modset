@@ -133,13 +133,6 @@ class cfgVehicles
 				typeName="BOOL";
 				defaultValue=0;
 			};
-			class giveRadio
-			{
-				displayName="Give Long Range Radios";
-				description="Enable to give Long Range Radios to Command Units";
-				typeName="BOOL";
-				defaultValue=1;
-			};
 			class nightGear
 			{
 				displayName="Nighttime Equipment";
@@ -285,9 +278,6 @@ class CfgFunctions
 			{
 			};
 			class forwardBase
-			{
-			};
-			class giveRadio
 			{
 			};
 			class missionModuleInit
