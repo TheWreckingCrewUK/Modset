@@ -215,11 +215,35 @@
 	{
 		displayName="AT Assistant Rifleman";
 		backpack="TWC_Backpack_Cold_War_AAT";
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L1A1_Wood"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L1A1_Wood"
+		};
 	};
 	class ColdWar_2IC: ColdWar_Rifleman
 	{
 		displayName="2IC";
 		backpack="TWC_Backpack_Cold_War_2IC";
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L1A1_Wood"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L1A1_Wood"
+		};
 	};
 	class ColdWar_MG: ColdWar_Base
 	{
@@ -260,6 +284,18 @@
 	{
 		displayName="Machine Gunner Assistant";
 		backpack="TWC_Backpack_Cold_War_MGAS";
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L1A1_Wood"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L1A1_Wood"
+		};
 	};
 	class ColdWar_Section_Leader: ColdWar_Rifleman
 	{
