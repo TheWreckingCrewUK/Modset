@@ -73,6 +73,14 @@
 	class usa_1970_leader_backpack: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
 		class TransportMagazines
 		{
 			class _xx_Smoke

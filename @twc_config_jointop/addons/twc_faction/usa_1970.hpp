@@ -448,6 +448,8 @@
 		"CUP_7Rnd_45ACP_1911",
 		"CUP_7Rnd_45ACP_1911",
 		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"SmokeShellPurple",
 		"SmokeShellPurple",
 		"SmokeShellPurple",
 		"SmokeShellPurple"
@@ -457,6 +459,8 @@
 		"CUP_7Rnd_45ACP_1911",
 		"CUP_7Rnd_45ACP_1911",
 		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"SmokeShellPurple",
 		"SmokeShellPurple",
 		"SmokeShellPurple",
 		"SmokeShellPurple"
