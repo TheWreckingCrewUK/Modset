@@ -18,7 +18,8 @@ class CfgPatches
 			"A3_Weapons_F",
 			"uk3cb_baf_weapons",
 			"uk3cb_baf_equipment",
-			"cup_weapons_ammoboxes"
+			"cup_weapons_ammoboxes",
+			"ace_medical"
 		};
 		version="1";
 		projectName="TWC";
@@ -27,8 +28,5 @@ class CfgPatches
 };
 class cfgVehicles
 {
-
 	#include "ammoboxes.hpp"
 };
-
-

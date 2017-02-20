@@ -18,11 +18,12 @@ player addEventHandler ["InventoryOpened",{
 		 
 		_ctrl3 = findDisplay 602 ctrlCreate ["RscBackground", -1]; 
 		_ctrl3 ctrlSetPosition [1.075,0.1,0.3,0.58]; 
-		_ctrl3 ctrlSetBackgroundColor [0.2,0.2,0.2, 0.9];
+		_ctrl3 ctrlSetBackgroundColor [0.2,0.2,0.2, 0.69999999];
 		_ctrl3 ctrlCommit 0; 
 		 
 		_ctrl = findDisplay 602 ctrlCreate ["RscButton", -1]; 
-		_ctrl ctrlSetPosition [1.075,0.1,0.3,0.125]; 
+		_ctrl ctrlSetPosition [1.075,0.1,0.3,0.125];
+		_ctrl ctrlSetBackgroundColor [0.1,0.1,0.1,1];
 		_ctrl ctrlCommit 0; 
 		_ctrl ctrlSetText "Weapon on Back"; 
 		_ctrl ctrlAddEventHandler ["ButtonClick", {[] call twc_fnc_putWeaponOnBack}];

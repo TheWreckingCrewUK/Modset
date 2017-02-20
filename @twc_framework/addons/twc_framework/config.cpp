@@ -35,6 +35,22 @@ class Extended_PostInit_EventHandlers
 		init="execVM 'twc_framework\xeh_postInit.sqf';";
 	};
 };
+class cfgWeapons
+{
+	class ItemCore;
+	class InventoryItem_Base_F;
+	class ACE_ItemCore;
+	class TWC_Syrette: ACE_ItemCore
+	{
+		scope = 2;
+		displayName = "Morphine Syrette";
+		descriptionShort = "Used to combat moderate to severe pain experiences";
+		class ItemInfo: InventoryItem_Base_F
+		{
+			mass = 1;
+		};
+	};
+};
 class cfgVehicles
 {
 	class Logic;
@@ -184,6 +200,134 @@ class cfgVehicles
 			};
 		};
 	};
+	class Man;
+	class CAManBase: Man
+	{
+		class ACE_SelfActions
+		{
+			class Medical
+			{
+				class ACE_ArmLeft
+				{
+					class Syrette
+					{
+						displayName = "Syrette Morphine";
+						distance = 5.0;
+						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
+						exceptions[] = {"isNotInside"};
+						statement = "[_player,_target, 'hand_l','TWC_Syrette'] call twc_fnc_useSyrette";
+						showDisabled = 0;
+						priority = 2;
+						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
+					};
+				};
+				class ACE_ArmRight
+				{
+					class Syrette
+					{
+						displayName = "Syrette Morphine";
+						distance = 5.0;
+						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
+						exceptions[] = {"isNotInside"};
+						statement = "[_player,_target, 'hand_r','TWC_Syrette'] call twc_fnc_useSyrette";
+						showDisabled = 0;
+						priority = 2;
+						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
+					};
+				};
+				class ACE_LegLeft
+				{
+					class Syrette
+					{
+						displayName = "Syrette Morphine";
+						distance = 5.0;
+						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
+						exceptions[] = {"isNotInside"};
+						statement = "[_player,_target, 'leg_l','TWC_Syrette'] call twc_fnc_useSyrette";
+						showDisabled = 0;
+						priority = 2;
+						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
+					};
+				};
+				class ACE_LegRight
+				{
+					class Syrette
+					{
+						displayName = "Syrette Morphine";
+						distance = 5.0;
+						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
+						exceptions[] = {"isNotInside"};
+						statement = "[_player,_target, 'leg_r','TWC_Syrette'] call twc_fnc_useSyrette";
+						showDisabled = 0;
+						priority = 2;
+						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
+					};
+				};
+			};
+		};
+		class ACE_Actions
+		{
+			class Medical
+			{
+				class ACE_ArmLeft
+				{
+					class Syrette
+					{
+						displayName = "Syrette Morphine";
+						distance = 5.0;
+						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
+						exceptions[] = {"isNotInside"};
+						statement = "[_player,_target, 'hand_l','TWC_Syrette'] call twc_fnc_useSyrette";
+						showDisabled = 0;
+						priority = 2;
+						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
+					};
+				};
+				class ACE_ArmRight
+				{
+					class Syrette
+					{
+						displayName = "Syrette Morphine";
+						distance = 5.0;
+						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
+						exceptions[] = {"isNotInside"};
+						statement = "[_player,_target, 'hand_r','TWC_Syrette'] call twc_fnc_useSyrette";
+						showDisabled = 0;
+						priority = 2;
+						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
+					};
+				};
+				class ACE_LegLeft
+				{
+					class Syrette
+					{
+						displayName = "Syrette Morphine";
+						distance = 5.0;
+						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
+						exceptions[] = {"isNotInside"};
+						statement = "[_player,_target, 'leg_l','TWC_Syrette'] call twc_fnc_useSyrette";
+						showDisabled = 0;
+						priority = 2;
+						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
+					};
+				};
+				class ACE_LegRight
+				{
+					class Syrette
+					{
+						displayName = "Syrette Morphine";
+						distance = 5.0;
+						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
+						exceptions[] = {"isNotInside"};
+						statement = "[_player,_target, 'leg_r','TWC_Syrette'] call twc_fnc_useSyrette";
+						showDisabled = 0;
+						priority = 2;
+						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
+					};
+				};
+			};
+		};
+	};
 };
 class CfgFunctions
 {
@@ -301,6 +445,17 @@ class CfgFunctions
 			class zeus
 			{
 			};
+		};
+		class medical
+		{
+			file="twc_framework\medical";
+			class itemCheck {};
+			class useSyrette {};
+		};
+		class admin
+		{
+			file="twc_framework\admin";
+			class setSpectator {};
 		};
 	};
 };

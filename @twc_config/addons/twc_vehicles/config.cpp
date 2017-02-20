@@ -5,10 +5,16 @@ class CfgPatches
 		units[]={
 			"twc_landrover_W",
 			"twc_landrover_D",
+			"twc_landrover_Special_W",
+			"twc_landrover_Special_D",
 			"twc_landrover_W_1990",
 			"twc_landrover_D_1990",
+			"twc_landrover_Special_W_1990",
+			"twc_landrover_Special_D_1900",
 			"twc_landrover_W_ColdWar",
 			"twc_landrover_D_ColdWar",
+			"twc_landrover_Special_W_ColdWar",
+			"twc_landrover_Special_D_ColdWar",
 			"TWC_Warrior_D",
 			"TWC_Warrior_W",
 			"twc_wildcat",
@@ -150,6 +156,8 @@ class CfgVehicles
 	
 	class CUP_B_LR_Transport_GB_W;
 	class CUP_B_LR_Transport_GB_D;
+	class CUP_B_LR_Special_M2_GB_W;
+	class CUP_B_LR_Special_M2_GB_D;
 	class UK3CB_BAF_Wildcat_AH1_CAS_8A;
 	class CUP_B_SA330_Puma_HC1_BAF;
 	class CUP_B_C130J_GB;
@@ -160,7 +168,7 @@ class CfgVehicles
 		side = 1;
 		faction="twc_faction";
 		displayname = "Landrover Woodland (Modern)";
-		GearModern
+		GearModern;
 	};
 	class twc_landrover_D: CUP_B_LR_Transport_GB_D
 	{
@@ -168,7 +176,23 @@ class CfgVehicles
 		side = 1;
 		faction="twc_faction";
 		displayname = "Landrover Desert (Modern)";
-		GearModern
+		GearModern;
+	};
+	class twc_landrover_Special_W: CUP_B_LR_Special_M2_GB_W
+	{
+		scope = 2;
+		side = 1;
+		faction="twc_faction";
+		displayname = "Landrover Special Woodland (Modern)";
+		GearModern;
+	};
+	class twc_landrover_Special_D: CUP_B_LR_Special_M2_GB_D
+	{
+		scope = 2;
+		side = 1;
+		faction="twc_faction";
+		displayname = "Landrover Special Desert (Modern)";
+		GearModern;
 	};
 	class twc_landrover_W_1990: CUP_B_LR_Transport_GB_W
 	{
@@ -176,7 +200,7 @@ class CfgVehicles
 		side = 1;
 		faction="twc_faction";
 		displayname = "Landrover Woodland (90`s)";
-		Gear1990
+		Gear1990;
 	};
 	class twc_landrover_D_1990: CUP_B_LR_Transport_GB_D
 	{
@@ -184,7 +208,23 @@ class CfgVehicles
 		side = 1;
 		faction="twc_faction";
 		displayname = "Landrover Desert (90`s)";
-		Gear1990
+		Gear1990;
+	};
+	class twc_landrover_Special_W_1990: CUP_B_LR_Special_M2_GB_W
+	{
+		scope = 2;
+		side = 1;
+		faction="twc_faction";
+		displayname = "Landrover Special Woodland (1990)";
+		Gear1990;
+	};
+	class twc_landrover_Special_D_1990: CUP_B_LR_Special_M2_GB_D
+	{
+		scope = 2;
+		side = 1;
+		faction="twc_faction";
+		displayname = "Landrover Special Desert (1990)";
+		GearModern;
 	};
 	class twc_landrover_W_ColdWar: CUP_B_LR_Transport_GB_W
 	{
@@ -192,7 +232,7 @@ class CfgVehicles
 		side = 1;
 		faction="twc_faction";
 		displayname = "Landrover Woodland (ColdWar)";
-		GearColdwar
+		GearColdwar;
 	};
 	class twc_landrover_D_ColdWar: CUP_B_LR_Transport_GB_D
 	{
@@ -200,7 +240,23 @@ class CfgVehicles
 		side = 1;
 		faction="twc_faction";
 		displayname = "Landrover Desert (Coldwar)";
-		GearColdwar
+		GearColdwar;
+	};
+	class twc_landrover_Special_W_ColdWar: CUP_B_LR_Special_M2_GB_W
+	{
+		scope = 2;
+		side = 1;
+		faction="twc_faction";
+		displayname = "Landrover Special Woodland (Coldwar)";
+		GearColdwar;
+	};
+	class twc_landrover_Special_D_ColdWar: CUP_B_LR_Special_M2_GB_D
+	{
+		scope = 2;
+		side = 1;
+		faction="twc_faction";
+		displayname = "Landrover Special Desert (ColdWar)";
+		GearModern;
 	};
 	class TWC_fv432: ukcw_fv432
 	{
@@ -310,7 +366,7 @@ class CfgVehicles
 		faction="twc_faction";
 		author = "3CB";
 		displayname = "Wildcat";
-		GearModern
+		GearModern;
 		class TransportBackpacks
 		{
 		};
@@ -322,7 +378,7 @@ class CfgVehicles
 		faction="twc_faction";
 		author = "3CB";
 		displayname = "Lynx";
-		Gear1990
+		Gear1990;
 		class TransportBackpacks
 		{
 		};
@@ -334,7 +390,7 @@ class CfgVehicles
 		faction="twc_faction";
 		author = "DG";
 		displayname = "Puma HC1";
-		GearColdwar
+		GearColdwar;
 	};
 	class twc_c5_hercules: CUP_B_C130J_GB
 	{
