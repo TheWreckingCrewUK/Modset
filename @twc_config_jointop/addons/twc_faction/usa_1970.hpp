@@ -185,6 +185,8 @@
 		"CUP_20Rnd_556x45_Stanag",
 		"CUP_20Rnd_556x45_Stanag",
 		"CUP_20Rnd_556x45_Stanag",
+		"SmokeShellPurple",
+		"SmokeShellPurple",
 		"CUP_HandGrenade_M67",
 		"CUP_HandGrenade_M67"
 		};
@@ -200,6 +202,8 @@
 		"CUP_20Rnd_556x45_Stanag",
 		"CUP_20Rnd_556x45_Stanag",
 		"CUP_20Rnd_556x45_Stanag",
+		"SmokeShellPurple",
+		"SmokeShellPurple",
 		"CUP_HandGrenade_M67",
 		"CUP_HandGrenade_M67"
 		};
