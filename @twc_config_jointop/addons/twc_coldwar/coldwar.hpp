@@ -408,7 +408,7 @@
 	class ColdWar_Sergeant: ColdWar_Platoon_Commander
 	{
 		displayName="Platoon Sergeant";
-		backpack="TWC_Backpack_Cold_War_Sergeant";
+		backpack="TWC_Backpack_Cold_War_Platoon_Sergeant";
 	};
 	class ColdWar_Medic: ColdWar_Base
 	{
