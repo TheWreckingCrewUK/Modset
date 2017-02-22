@@ -142,13 +142,6 @@ class cfgVehicles
 				typeName="NUMBER";
 				defaultValue=250;
 			};
-			class forwardBase
-			{
-				displayName="Forward Base";
-				description="Enable to allow CSM and Platoon to create a forward base";
-				typeName="BOOL";
-				defaultValue=0;
-			};
 			class nightGear
 			{
 				displayName="Nighttime Equipment";
@@ -162,6 +155,31 @@ class cfgVehicles
 				description="Enable to allow Rolling Sleeves";
 				typeName="BOOL";
 				defaultValue=0;
+			};
+			class respawns
+			{
+				displayName="Respawns";
+				description="Where should JIP Players go?";
+				typeName="STRING";
+				defaultValue="base";
+				class values
+				{
+					class base
+					{
+						name="Base";
+						value="base";
+					};
+					class forwardBase
+					{
+						name="Forward Base";
+						value="forwardBase";
+					};
+					class csm
+					{
+						name="On CSM";
+						value="csm";
+					};
+				};
 			};
 			class run
 			{
