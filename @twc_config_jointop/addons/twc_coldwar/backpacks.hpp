@@ -176,7 +176,7 @@
 			};
 			class _xx_ukcw_34_rnd_sterling_mag
 			{
-				magazine = "34_rnd_sterling_mag";
+				magazine = "ukcw_34_rnd_sterling_mag";
 				count = 2;
 			};
 		};
