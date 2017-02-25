@@ -1,3 +1,4 @@
+#include "basicDefines_A3.hpp"
 class CfgPatches
 {
 	class Disclose_Berezka
@@ -24,20 +25,26 @@ class CfgVehicles
 };
 class CfgWeapons
 {
-	class Uniform_Base;
-	class DISCLOSE_BEREZKA: Uniform_Base
+	class InventoryItem_Base_F;
+	class ItemCore;
+	class UniformItem: InventoryItem_Base_F
 	{
+		type = UNIFORM_SLOT; /// to what slot does the uniform fit
+	};
+	class DISCLOSE_BEREZKA: ItemCore
+	{
+		author = "Disclose, Bosenator, Anschluss";
 		scope = 2;
+		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Berezka camo suit";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_soldier";
-		
-		class UniformItem;
-		class ItemInfo: UniformItem
+		picture = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Russia\data\ui\icon_u_o_gorka_olive_ca.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d"; /// how does the uniform look when put on ground
+		class ItemInfo : UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "B_DISCLOSE_BEREZKA";
-			containerClass = "Supply60";
-			mass = 60;
+			uniformClass = B_DISCLOSE_BEREZKA;
+			containerClass = Supply60;
+			mass = 20;
 		};
 	};
 };
