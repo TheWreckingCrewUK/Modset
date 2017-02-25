@@ -22,17 +22,16 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\berezka\gorka_green_co.paa","",""};
 	};
 };
-class cfgWeapons
+class CfgWeapons
 {
 	class Uniform_Base;
-	class HeadgearItem;
-	class ItemInfo;
-	class UniformItem;
 	class DISCLOSE_BEREZKA: Uniform_Base
 	{
 		scope = 2;
 		displayName = "Berezka camo suit";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_soldier";
+		
+		class UniformItem;
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
