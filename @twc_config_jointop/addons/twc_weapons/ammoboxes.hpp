@@ -113,7 +113,7 @@
 		{
 			class _xx_bw_uzi_32rnd
 			{
-				magazine = "bw_uzi_32rnd";
+				magazine = "bw_32rnd_uzi_mag";
 				count = 20;
 			};
 			class _xx_hlc_20rnd_762x51_b_G3
