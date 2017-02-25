@@ -219,7 +219,7 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"	
+			"UK3CB_BAF_L1A1_Wood"
 		};
 		respawnweapons[]=
 		{
@@ -288,7 +288,7 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"	
+			"UK3CB_BAF_L1A1_Wood"
 		};
 		respawnweapons[]=
 		{
@@ -410,6 +410,14 @@
 		displayName="Platoon Sergeant";
 		backpack="TWC_Backpack_Cold_War_Platoon_Sergeant";
 	};
+	class ColdWar_CSM: ColdWar_Platoon_Commander
+	{
+		displayName="Company Sergeant Major";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
+		};
+	};
 	class ColdWar_Medic: ColdWar_Base
 	{
 		scope=2;
@@ -448,55 +456,9 @@
 			"SmokeShell",
 			"SmokeShell"
 		};
-		Items[]=
+		class EventHandlers: EventHandlers
 		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACRE_PRC148"			
-		};
-		respawntems[]=
-		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACRE_PRC148"			
+			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
 		};
 	};
 	class ColdWar_FAC: ColdWar_Section_Leader
@@ -713,13 +675,15 @@
 		weapons[]=
 		{
 			"Throw",
-			"Put",	
+			"Put",
+			"Binocular",			
 			"ukcw_sterling_sub"	
 		};
 		respawnweapons[]=
 		{
 			"Throw",
-			"Put",	
+			"Put",
+			"Binocular",			
 			"ukcw_sterling_sub"
 		};
 		magazines[]=
@@ -750,6 +714,7 @@
 			"CUP_V_C_Police_Holster",
 			"CUP_H_BAF_Officer_Beret",
 			"ItemCompass",
+			"Binocular",
 			"itemMap",
 			"ItemWatch"
 		};
