@@ -49,6 +49,7 @@
 			"ACE_tourniquet",
 			"ACE_tourniquet",
 			"ACRE_PRC343",
+			"ACE_MapTools",
 			"ACE_EarPlugs"
 		};
 		respawntems[]=
@@ -74,6 +75,7 @@
 			"ACE_tourniquet",
 			"ACE_tourniquet",
 			"ACRE_PRC343",
+			"ACE_MapTools",
 			"ACE_EarPlugs"
 		};
 	};
