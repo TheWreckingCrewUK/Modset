@@ -47,7 +47,9 @@
 			"ACE_epinephrine",
 			"ACE_tourniquet",
 			"ACE_tourniquet",
-			"ACRE_PRC343"	
+			"ACE_MapTools",
+			"ACRE_PRC343"
+			
 		};
 		respawntems[]=
 		{
@@ -72,6 +74,7 @@
 			"ACE_epinephrine",
 			"ACE_tourniquet",
 			"ACE_tourniquet",
+			"ACE_MapTools",
 			"ACRE_PRC343"	
 		};		
 	};
@@ -1117,6 +1120,7 @@
 		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",
+		"ACE_MapTools",
 		"UK3CB_BAF_HMNVS"
 		};
 		respawntems[]=
@@ -1133,6 +1137,7 @@
 	    "ACE_MapTools",
 		"UK3CB_BAF_HMNVS",
 		"ACRE_PRC148",
+		"ACE_MapTools",
 		"ACE_EarPlugs"
 		};
 	};
@@ -1221,6 +1226,7 @@
 		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_EarPlugs",
+		"ACE_MapTools",
 		"UK3CB_BAF_HMNVS"
 		};
 		respawntems[]=
@@ -1234,6 +1240,7 @@
 		"ACE_morphine",
 		"ACE_EarPlugs",
 		"ACRE_PRC148",
+		"ACE_MapTools",
 		"UK3CB_BAF_HMNVS"		
 		};
 	};
