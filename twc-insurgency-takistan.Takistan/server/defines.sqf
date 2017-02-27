@@ -26,13 +26,13 @@ townSquadWave = ["CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_
 vehicleList = ["CUP_C_UAZ_Unarmed_TK_CIV", "CUP_C_Skoda_Blue_CIV", "CUP_C_Datsun_Plain", "CUP_C_Ural_Open_Civ_03"];
 
 //Run Jayman's location finder script and add towns here
-townMarkerArray = ["Landay", "Chaman", "Ahmaday", "Shukurkalay", "Chak Chak", "Sakhe", "Jilavur", "Khushab", "Huzrutimam", "Sultansafe", "Kakaru", "Bala pass", "Mulladost", "Feruz Abad", "airfield", "Anar", "mine", "Loy Manara", "Jaza", "Gospandi", "Falar",  "Nagara", "Timurkalay", "Lalezar", "Bastam", "Chardarakht", "Imarat", "Garmarud", "Nur", "Hazar Bagh", "Nar", "Garmsar", "Shamali", "Sagram", "Ravanay", "Zavarak", "Karachinar"];
+townMarkerArray = ["Landay", "Rasman", "Chaman", "Ahmaday", "Shukurkalay", "Chak Chak", "Sakhe", "Jilavur", "Khushab", "Huzrutimam", "Sultansafe", "Kakaru", "Bala pass", "Mulladost", "Feruz Abad", "airfield", "Anar", "mine", "Loy Manara", "Jaza", "Gospandi", "Falar",  "Nagara", "Timurkalay", "Lalezar", "Bastam", "Chardarakht", "Imarat", "Garmarud", "Nur", "Hazar Bagh", "Nar", "Garmsar", "Shamali", "Sagram", "Ravanay", "Zavarak", "Karachinar"];
 publicVariable "townMarkerArray";
 
 enemyTechnical = ["CUP_O_LR_MG_TKM"];
 
 //Enemy will not spawn in these towns
-badTownList = ["military base", "Rasman", "Sar-e Sang pass", "Darbang pass", "Loy Manara oilfield", "Naygul valley", "Naran Darre pass", "Par-e Siah oilfield", "Nagara-1 oilfield"];
+badTownList = ["military base", "Sar-e Sang pass", "Darbang pass", "Loy Manara oilfield", "Naygul valley", "Naran Darre pass", "Par-e Siah oilfield", "Nagara-1 oilfield"];
 
 //Towns specified with a marker
 specialTowns = [];
