@@ -86,6 +86,11 @@
 				magazine = "Chemlight_red";\
 				count = 2;\
 			};\
+			class _xx_Chemlight_IR\
+			{\
+				magazine = "ACE_Chemlight_IR";\
+				count = 2;\
+			};\
 		};\
 		class TransportItems\
 		{\
@@ -165,6 +170,10 @@
 			class _xx_Chemlight_Red\
 			{\
 				magazine = "Chemlight_red";\
+				count = 2;\
+			};\
+			{\
+				magazine = "ACE_Chemlight_IR";\
 				count = 2;\
 			};\
 		};\
