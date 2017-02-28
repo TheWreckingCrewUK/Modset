@@ -48,8 +48,10 @@
 			"ACE_epinephrine",
 			"ACE_tourniquet",
 			"ACE_tourniquet",
-			"ACRE_PRC343",
-			"ACE_EarPlugs"
+			"ACE_MapTools",
+			"ACE_EarPlugs",
+			"ACRE_PRC343"
+			
 		};
 		respawntems[]=
 		{
@@ -73,8 +75,9 @@
 			"ACE_epinephrine",
 			"ACE_tourniquet",
 			"ACE_tourniquet",
-			"ACRE_PRC343",
-			"ACE_EarPlugs"
+			"ACE_MapTools",
+			"ACE_EarPlugs",
+			"ACRE_PRC343"
 		};
 	};
 	class Modern_British_Squadleader: Modern_British_Base

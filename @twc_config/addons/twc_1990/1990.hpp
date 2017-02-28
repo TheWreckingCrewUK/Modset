@@ -47,6 +47,7 @@
 			"ACE_epinephrine",
 			"ACE_tourniquet",
 			"ACE_tourniquet",
+			"ACE_MapTools",
 			"ACRE_PRC343"	
 		};
 		respawntems[]=
@@ -72,6 +73,7 @@
 			"ACE_epinephrine",
 			"ACE_tourniquet",
 			"ACE_tourniquet",
+			"ACE_MapTools",
 			"ACRE_PRC343"	
 		};		
 	};
