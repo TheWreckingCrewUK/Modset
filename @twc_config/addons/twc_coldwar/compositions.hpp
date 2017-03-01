@@ -94,23 +94,16 @@ class CfgGroups
 										class Unit2
                                         {
                                                 side = 1;
-                                                vehicle = "ColdWar_MortarGunner";
+                                                vehicle = "ColdWar_Medic";
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
                                         class Unit3
                                         {
                                                 side = 1;
-                                                vehicle = "ColdWar_Medic";
+                                                vehicle = "ColdWar_CSM";
                                                 rank = "PRIVATE";
                                                 position[] = {7,0,0};
-                                        };
-										class Unit4
-                                        {
-                                                side = 1;
-                                                vehicle = "ColdWar_CSM";
-                                                rank = "sergeant";
-                                                position[] = {9,0,0};
                                         };
                                 };
 								class Coldwar_AA

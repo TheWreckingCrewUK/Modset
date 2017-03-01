@@ -1,11 +1,16 @@
 //Calls all the functions on player start.
+if(isServer)then{execVM "twc_frameWork\cache_init.sqf"};
 if(!hasInterface)exitWith{};
 
 waitUntil { sleep 0.5; !(isNull player) };
 waitUntil { sleep 1.271; time > 0 };
 
-ACE_maxWeightDrag = 100000;
+_player = player;
+[_player] remoteExecCall ["twc_fnc_cachePlayerJoined",2];
 
+
+ACE_maxWeightDrag = 100000;
+/*
 //storing an extra weapon on the back.  will soon put weapon animation on it as well
 //made mostly for coin rifleman and csms.
 //fuck ace for not adding it themselves
@@ -70,14 +75,13 @@ player addEventHandler ["Killed",{
 	};
 }];
 
-
+*/
 if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {};
 
 
 waitUntil{missionNameSpace getVariable "twcModuleFinished"};
 
 [(missionNameSpace getVariable "era")] call twc_fnc_era;
-[(missionNameSpace getVariable "respawns")] spawn twc_fnc_respawns;
 [(missionNameSpace getVariable "nightGear"),(missionNameSpace getVariable "era")] spawn twc_fnc_nightGear;
 [(missionNameSpace getVariable "rollSleeves")] spawn twc_fnc_rollShirt;
 [(missionNameSpace getVariable "run")] spawn twc_fnc_run;

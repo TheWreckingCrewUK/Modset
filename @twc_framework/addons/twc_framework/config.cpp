@@ -156,31 +156,6 @@ class cfgVehicles
 				typeName="BOOL";
 				defaultValue=0;
 			};
-			class respawns
-			{
-				displayName="Respawns";
-				description="Where should JIP Players go?";
-				typeName="STRING";
-				defaultValue="base";
-				class values
-				{
-					class base
-					{
-						name="Base";
-						value="base";
-					};
-					class forwardBase
-					{
-						name="Forward Base";
-						value="forwardBase";
-					};
-					class csm
-					{
-						name="On CSM";
-						value="csm";
-					};
-				};
-			};
 			class run
 			{
 				displayName="Running in Base";
@@ -475,6 +450,19 @@ class CfgFunctions
 			file="twc_framework\admin";
 			class setSpectator {};
 		};
+		class cache
+		{
+			file="twc_framework\cache";
+			class aiCaching {};
+			class cacheGroup {};
+			class cachePlayerJoined {};
+			class cacheVehicle {};
+			class unCacheGroup {};
+			class unCacheGroupDefend {};
+			class unCacheVehicle {};
+			class vehicleCaching {};
+		};
+
 	};
 };
 class CfgMusic

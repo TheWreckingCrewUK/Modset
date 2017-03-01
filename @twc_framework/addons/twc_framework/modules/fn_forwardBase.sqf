@@ -10,16 +10,15 @@
 * NOTHING
 *
 * Example:
-* [true,bob] call twc_fnc_respawns;
+* [true,bob] call twc_fnc_forwardBase;
 *
 * Public: No
 */
-params ["_type",["_unit",objNull]];
+params ["_enabled",["_unit",objNull]];
 
 if(!hasInterface)exitWith{};
 
-if (_type == "none")exitWith{};
-if(_type == "csm") exitWith{systemChat "CSM Respawn not implemented yet"};
+if !(_enabled) exitWith {};
 
 _var = player getVariable "twc_isMolar";
 _var = if(_unit == player)then{true};
