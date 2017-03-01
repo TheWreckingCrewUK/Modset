@@ -1,5 +1,5 @@
 params["_group"];
-if(!(isNil {_x getVariable "twc_cacheDefending"}))exitWith{[_group] call twc_fnc_unCacheGroupDefend};
+if(!(isNil {_group getVariable "twc_cacheDefending"}))exitWith{[_group] call twc_fnc_unCacheGroupDefend};
 {
 	if(leader _x != _x)then{
 		_x enableSimulationGlobal true;

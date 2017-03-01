@@ -1,5 +1,5 @@
 params["_debug","_aicacheDistance","_vehicleCacheDistance"];
-sleep 30;
+sleep 5;
 [true,_aicacheDistance,_vehicleCacheDistance]spawn{
 	_debug = _this select 0;
 	_aicacheDistance = _this select 1;
