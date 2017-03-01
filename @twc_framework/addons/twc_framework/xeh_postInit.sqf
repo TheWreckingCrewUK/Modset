@@ -1,5 +1,5 @@
 //Calls all the functions on player start.
-if(isServer)then{execVM "twc_frameWork\cache_init.sqf"; execVM "twc_frameWork\hc_init.sqf"};
+if(isServer)then{execVM "twc_frameWork\cache_init.sqf";};
 if(!hasInterface)exitWith{};
 
 waitUntil { sleep 0.5; !(isNull player) };
