@@ -1,12 +1,9 @@
 //Calls all the functions on player start.
-if(isServer)then{execVM "twc_frameWork\cache_init.sqf";};
 if(!hasInterface)exitWith{};
 
 waitUntil { sleep 0.5; !(isNull player) };
 waitUntil { sleep 1.271; time > 0 };
 
-_player = player;
-[_player] remoteExecCall ["twc_fnc_cachePlayerJoined",2];
 
 
 ACE_maxWeightDrag = 100000;

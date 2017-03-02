@@ -14,11 +14,14 @@ if(!(isNil {_group getVariable "twc_cacheDefending"}))then{
 	};
 	{
 		_x disableAI "path";
-	}forEach (units _group);
-};
-{
-	if(leader _x != _x)then{
 		_x enableSimulationGlobal false;
 		_x hideObjectGlobal true;
-	};
-}forEach units _group;
+	}forEach (units _group);
+}else{
+	{
+		if(leader _x != _x)then{
+			_x enableSimulationGlobal false;
+			_x hideObjectGlobal true;
+		};
+	}forEach units _group;
+};

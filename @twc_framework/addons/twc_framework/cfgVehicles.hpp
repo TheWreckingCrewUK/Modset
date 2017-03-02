@@ -176,6 +176,42 @@ class cfgVehicles
 			};
 		};
 	};
+	class twc_moduelCache: Module_F
+	{
+		author="[TWC] jayman";
+		scope=2;
+		displayName="TWC Cache Module";
+		category="twc_missionSetup";
+		function="twc_fnc_cacheModuleInit";
+		functionPriority=1;
+		isGlobal=0;
+		isTriggerActivated=0;
+		isDisposable=0;
+		class Arguments
+		{
+			class enabled
+			{
+				displayName="Enabled";
+				description="Enable for Unit Caching";
+				typeName="BOOL";
+				defaultValue=1;
+			};
+			class aiRange
+			{
+				displayName="AI Range";
+				description="Range at which AI will Cache";
+				typeName="NUMBER";
+				defaultValue=2000;
+			};
+			class vehicleRange
+			{
+				displayName="End Mission";
+				description="Range at which vehicles will Cache";
+				typeName="NUMBER";
+				defaultValue=2000;
+			};
+		};
+	};
 	class Man;
 	class CAManBase: Man
 	{

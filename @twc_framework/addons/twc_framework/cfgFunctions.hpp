@@ -61,10 +61,11 @@ class CfgFunctions
 			file="twc_framework\cache";
 			class aiCaching {};
 			class cacheGroup {};
-			class cachePlayerJoined {};
+			class cacheModuleInit {};
 			class cacheVehicle {};
+			class initAICache {};
+			class initVehicleCache {};
 			class unCacheGroup {};
-			class unCacheGroupDefend {};
 			class unCacheVehicle {};
 			class vehicleCaching {};
 		};

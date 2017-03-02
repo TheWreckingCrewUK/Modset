@@ -5,7 +5,8 @@ class CfgPatches
 		units[]=
 		{
 			"twc_ModuleMission",
-			"twc_"
+			"twc_moduelHC",
+			"twc_moduelCache"
 		};
 		weapons[]={};
 		requiredVersion=1.54;
@@ -31,6 +32,10 @@ class cfgFactionClasses
 	class twc_moduelHC: NO_CATEGORY
 	{
 		displayName="TWC Headless Client Module";
+	};
+	class twc_moduelCache: NO_CATEGORY
+	{
+		displayName="TWC Cacheing";
 	};
 };
 class Extended_PostInit_EventHandlers
