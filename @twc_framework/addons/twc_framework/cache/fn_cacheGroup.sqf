@@ -1,6 +1,5 @@
 params["_group"];
 if(!(isNil {_group getVariable "twc_cacheDefending"}))then{
-	systemChat format["%1 is Defending",str _group];
 	_ready = 0;
 	_time = time + 60;
 	waitUntil{
