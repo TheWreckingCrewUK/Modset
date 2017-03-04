@@ -21,7 +21,10 @@ class CfgPatches
 			"twc_wildcat_1990",
 			"twc_puma",
 			"twc_c5_hercules",
-			"TWC_fv432"
+			"TWC_fv432",
+			"TWC_burnes_foxhound_d_a",
+			"TWC_burnes_foxhound_w_a"
+			
 			
 		};
 		weapons[]=
