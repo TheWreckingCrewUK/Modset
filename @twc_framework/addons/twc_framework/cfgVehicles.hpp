@@ -201,11 +201,11 @@ class cfgVehicles
 				displayName="AI Range";
 				description="Range at which AI will Cache";
 				typeName="NUMBER";
-				defaultValue=2000;
+				defaultValue=1500;
 			};
 			class vehicleRange
 			{
-				displayName="End Mission";
+				displayName="Vehicle Caching";
 				description="Range at which vehicles will Cache";
 				typeName="NUMBER";
 				defaultValue=2000;

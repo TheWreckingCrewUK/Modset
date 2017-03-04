@@ -23,5 +23,3 @@ _rank = call{
 		_message remoteExecCall ["hint",_x];
 	};
 }forEach allUnits;
-
-systemChat format["%1 %2",_message,_rank];
