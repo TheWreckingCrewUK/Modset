@@ -509,7 +509,6 @@
 	{
 		displayName="Platoon Sergeant";
 		backpack="TWC_Backpack_Cold_War_Platoon_Sergeant";
-		{
 		Items[]=
 		{
 			"ACE_EarPlugs",
