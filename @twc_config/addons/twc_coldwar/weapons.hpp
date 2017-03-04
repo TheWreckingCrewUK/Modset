@@ -2,6 +2,7 @@ class cfgWeapons
 {
 	class UK3CB_BAF_L1A1_Wood;
 	class tf47_m3maaws;
+	class CUP_launch_FIM92Stinger;
 	
 	class twc_L1A1_SUIT:UK3CB_BAF_L1A1_Wood
 	{
@@ -29,5 +30,10 @@ class cfgWeapons
 				item="tf47_optic_m3maaws";
 			};
 		};
+	};
+	class FIMStingerA:CUP_launch_FIM92Stinger
+	{
+		author="Jayman";
+		displayName="Stinger A";
 	};
 };
