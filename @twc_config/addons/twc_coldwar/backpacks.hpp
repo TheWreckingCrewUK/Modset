@@ -22,6 +22,28 @@
 			};
 		};
 	};
+	class TWC_Backpack_Cold_War_2IC_Dismounted: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_762_20Rnd
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 13;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_Belt
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 1;
+			};
+		};
+	};
 	class TWC_Backpack_Cold_War_Section: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
@@ -70,11 +92,16 @@
 			class _xx_UK3CB_BAF_75Rnd_T
 			{
 				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 2;
+			};
+			class _xx_UK3CB_BAF_75Rnd
+			{
+				magazine = "UK3CB_BAF_762_100Rnd";
 				count = 1;
 			};		
 		};
 	};
-	class TWC_Backpack_Cold_War_MGAS: CUP_B_AlicePack_Khaki
+	class TWC_Backpack_Cold_War_MGAss: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -90,6 +117,11 @@
 				magazine = "UK3CB_BAF_762_100Rnd";
 				count = 1;
 			};
+			class _xx_UK3CB_BAF_762_20Rnd
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 8;
+			};
 		};
 	};
 	class TWC_Backpack_Cold_War_AT: CUP_B_AlicePack_Khaki
@@ -99,12 +131,39 @@
 		{
 			class _xx_tf47_m3maaws_HE
 			{
-				magazine = "tf47_m3maaws_HE";
+				magazine = "tf47_m3maaws_HEAT";
 				count = 1;
-			};			
+			};
+			class _xx_Sterling_Mag
+			{
+				magazine = "ukcw_34_rnd_sterling_mag";
+				count = 8;
+			};		
 		};
 	};
-	class TWC_Backpack_Cold_War_AAT: CUP_B_AlicePack_Khaki
+	class TWC_Backpack_Cold_War_AT_Ass: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_tf47_m3maaws_HEAT
+			{
+				magazine = "tf47_m3maaws_HEAT";
+				count = 2;
+			};
+			class _xx_tf47_m3maaws_HE
+			{
+				magazine = "tf47_m3maaws_HE";
+				count = 1;
+			};
+			class _xx_UK3CB_BAF_762_20Rnd
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 8;
+			};		
+		};
+	};
+	class TWC_Backpack_Cold_War_AT_Ass_Dismounted: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines

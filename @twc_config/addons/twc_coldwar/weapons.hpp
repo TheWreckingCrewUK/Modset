@@ -31,6 +31,7 @@ class cfgWeapons
 			};
 		};
 	};
+	
 	class FIMStingerA:CUP_launch_FIM92Stinger
 	{
 		author="Jayman";

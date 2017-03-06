@@ -269,7 +269,7 @@ class CfgVehicles
 			class _xx_UK3CB_20Rnd_762x51_B_fal
 			{
 				magazine="UK3CB_BAF_762_20Rnd";
-				count=50;
+				count=40;
 			};
 			class _xx_ukcw_34_rnd_sterling_mag
 			{

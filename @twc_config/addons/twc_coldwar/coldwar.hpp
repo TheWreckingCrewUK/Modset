@@ -104,7 +104,6 @@
 			"UK3CB_BAF_762_20Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
-			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -190,8 +189,6 @@
 			"ukcw_34_rnd_sterling_mag",
 			"tf47_m3maaws_HEAT",
 			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE",
-			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -206,15 +203,13 @@
 			"ukcw_34_rnd_sterling_mag",
 			"tf47_m3maaws_HEAT",
 			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE",
-			"SmokeShell",
 			"SmokeShell"
 		};
 	};
-	class ColdWar_AT_ASS: ColdWar_Rifleman
+	class ColdWar_AT_Ass: ColdWar_Rifleman
 	{
 		displayName="AT Assistant Rifleman";
-		backpack="TWC_Backpack_Cold_War_AAT";
+		backpack="TWC_Backpack_Cold_War_AT_Ass";
 		weapons[]=
 		{
 			"Throw",
@@ -267,7 +262,7 @@
 		{
 			"UK3CB_BAF_762_100Rnd",	
 			"UK3CB_BAF_762_100Rnd",
-			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd_T",
 			"SmokeShell",
 			"SmokeShell"
 		};
@@ -283,7 +278,7 @@
 	class ColdWar_MG_AS: ColdWar_Rifleman
 	{
 		displayName="Machine Gunner Assistant";
-		backpack="TWC_Backpack_Cold_War_MGAS";
+		backpack="TWC_Backpack_Cold_War_MG";
 		weapons[]=
 		{
 			"Throw",
@@ -360,56 +355,6 @@
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE"
 		};	
-		Items[]=
-		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_MapTools"
-		};
-		respawntems[]=
-		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_MapTools"
-		};		
 	};
 	class ColdWar_Platoon_Commander: ColdWar_Section_Leader
 	{
@@ -454,111 +399,11 @@
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE"
 		};
-		Items[]=
-		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_MapTools"
-		};
-		respawntems[]=
-		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_MapTools"
-		};		
 	};
 	class ColdWar_Sergeant: ColdWar_Platoon_Commander
 	{
 		displayName="Platoon Sergeant";
 		backpack="TWC_Backpack_Cold_War_Platoon_Sergeant";
-		Items[]=
-		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_MapTools"
-		};
-		respawntems[]=
-		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_MapTools"
-		};		
 	};
 	class ColdWar_CSM: ColdWar_Platoon_Commander
 	{
@@ -852,128 +697,6 @@
 		"SmokeShell",
 		"SmokeShell"
 		};
-		Items[]=
-		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_MapTools"
-		};
-		respawntems[]=
-		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_MapTools"
-		};		
-		
-	};
-	class ColdWar_Vehicle_Commander: ColdWar_Tank_Commander
-	{
-		displayName="Vehicle Commander";
-		uniformClass="ukcw_p60_uniform";
-		linkedItems[]=
-		{
-			"CUP_V_C_Police_Holster",
-			"CUP_H_BAF_Officer_Beret",
-			"ItemCompass",
-			"itemMap",
-			"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-       		"CUP_V_C_Police_Holster",
-			"CUP_H_BAF_Officer_Beret",
-			"ItemCompass",
-			"itemMap",
-			"ItemWatch"
-		};
-		Items[]=
-		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_MapTools"
-		};
-		respawntems[]=
-		{
-			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_packingBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_elasticBandage",
-			"ACE_quikclot",
-			"ACE_quikclot",
-			"ACE_morphine",
-			"ACE_epinephrine",
-			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACE_MapTools"
-		};		
 	};
 	class ColdWar_Tank_Crewman: ColdWar_Tank_Commander
 	{
@@ -992,6 +715,27 @@
 		{
 			"CUP_V_C_Police_Holster",
 			"UK3CB_BAF_H_Beret_RTR",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+	};
+	class ColdWar_Vehicle_Commander: ColdWar_Tank_Commander
+	{
+		displayName="Vehicle Commander";
+		uniformClass="ukcw_p60_uniform";
+		linkedItems[]=
+		{
+			"CUP_V_C_Police_Holster",
+			"CUP_H_BAF_Officer_Beret",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+       		"CUP_V_C_Police_Holster",
+			"CUP_H_BAF_Officer_Beret",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -1018,4 +762,40 @@
 			"itemMap",
 			"ItemWatch"
 		};		
+	};
+	////////////////////// DISMOUNTED ////////////////////
+	class ColdWar_Rifleman_Dismounted: ColdWar_Rifleman
+	{
+		displayName="Rifleman (Dismounted)";
+		backpack="TWC_Backpack_Cold_War_Rifleman";
+	};
+	class ColdWar_Rifleman_SUIT_Dismounted: ColdWar_Rifleman_SUIT
+	{
+		displayName="Rifleman (Dismounted)";
+		backpack="TWC_Backpack_Cold_War_Rifleman";
+	};
+	class ColdWar_AT_Dismounted: ColdWar_Rifleman_SUIT
+	{
+		displayName="AT Rifleman (Dismounted)";
+		backpack="TWC_Backpack_Cold_War_AT";
+	};
+	class ColdWar_AT_Ass_Dismounted: ColdWar_Rifleman_SUIT
+	{
+		displayName="AT Assistant (Dismounted)";
+		backpack="TWC_Backpack_Cold_War_AT_Ass_Dismounted";
+	};
+	class ColdWar_2IC_Dismounted: ColdWar_Rifleman_SUIT
+	{
+		displayName="2IC (Dismounted)";
+		backpack="TWC_Backpack_Cold_War_2IC_Dismounted";
+	};
+	class ColdWar_MG_Dismounted: ColdWar_Rifleman_SUIT
+	{
+		displayName="Machine Gunner (Dismounted)";
+		backpack="TWC_Backpack_Cold_War_MG";
+	};
+	class ColdWar_MG_Ass_Dismounted: ColdWar_Rifleman_SUIT
+	{
+		displayName="MG Assistant (Dismounted)";
+		backpack="TWC_Backpack_Cold_War_MGAss";
 	};

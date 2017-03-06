@@ -65,4 +65,32 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	class UK3CB_BAF_U_Smock_DPMT;
+	class UK3CB_BAF_U_Smock_DDPM;
+	
+	class UniformItem;
+	
+	class TWC_Smock_Temperate: UK3CB_BAF_U_Smock_DPMT
+	{
+		scope = 1;
+		class ItemInfo: UniformItem
+        {
+			containerClass = Supply30;
+            mass = 50;
+			uniformClass = "UK3CB_BAF_Soldier_Smock_DPMT_Base";
+			uniformModel = "-";
+        };
+	};
+	class TWC_Smock_Desert: UK3CB_BAF_U_Smock_DDPM
+	{
+		scope = 1;
+		class ItemInfo: UniformItem
+        {
+			containerClass = Supply30;
+            mass = 50;
+			uniformClass = "UK3CB_BAF_Soldier_Smock_DDPM_Base";
+			uniformModel = "-";
+        };
+	};
 };

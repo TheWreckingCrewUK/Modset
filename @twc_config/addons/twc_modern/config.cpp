@@ -15,6 +15,17 @@ class CfgPatches
 			"Modern_British_Platoon_Commander",
 			"Modern_British_Platoon_Sergeant",
 			"Modern_British_Medic",
+			"Modern_British_Rifleman_Mounted",
+			"Modern_British_Grenadier_Mounted",
+			"Modern_British_Autorifleman_Mounted",
+			"Modern_British_Machinegunner_Mounted",
+			"Modern_British_Marksman_Mounted",
+			"Modern_British_Pointman",
+			"Modern_British_Grenadier_COIN",
+			"Modern_British_Autorifleman_COIN",
+			"Modern_British_2IC_COIN",
+			"Modern_British_Marksman_COIN",
+			"Modern_British_PlatoonMortar",
 			"Modern_British_HeliPilot",
 			"Modern_British_JetPilot",
 			"Modern_British_MortarGunner",
@@ -22,16 +33,6 @@ class CfgPatches
 			"Modern_British_Sniper",
 			"Modern_British_Spotter",
 			"Modern_British_FAC",
-			"Modern_British_Pointman",
-			"Modern_British_Grenadier_COIN",
-			"Modern_British_Autorifleman_COIN",
-			"Modern_British_2IC_COIN",
-			"Modern_British_Marksman_COIN",
-			"Modern_British_Rifleman_Mechanised",
-			"Modern_British_Grenadier_Mechanised",
-			"Modern_British_Autorifleman_Mechanised",
-			"Modern_British_2IC_Mechanised",
-			"Modern_British_Marksman_Mechanised",
 			"Modern_British_VehicleCrew",
 			"Modern_British_VehicleCommander"
 			
@@ -54,6 +55,10 @@ class CfgEditorSubCategories
 	class Men_Modern
 	{
 		displayName = "Men (Modern)";
+	};
+	class Men_Modern_Mounted
+	{
+		displayName = "Men (Modern Dismounted)";
 	};
 	class Men_ModernCoin
 	{
