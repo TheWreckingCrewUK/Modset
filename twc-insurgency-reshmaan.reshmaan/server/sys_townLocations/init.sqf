@@ -1,2 +1,2 @@
-#include "addedLocations.sqf";
+//#include "addedLocations.sqf";
 #include "getLocations.sqf";
