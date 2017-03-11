@@ -1,0 +1,12 @@
+name = "TWC Config Public";
+picture = "twc_logo_512.paa";
+logo = "twc_logo_64.paa";
+logoOver = "twc_logo_64.paa";
+tooltip = "TWC Config Public";
+tooltipOwned = "TWC Owned";
+overview = "TWC Config Public is a collection of assets used on TWC Public Server.";
+overviewPicture = "twc_logo_512.paa";
+author = "TWC Team";
+actionName = "Website";
+action = "http://www.thewreckingcrew.eu";
+description = "TWC - Public Units/Configs/Assets";
