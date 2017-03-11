@@ -26,6 +26,8 @@ _marker setMarkerSize [0.75, 0.75];
 
 [_killer] call InsP_fnc_counterAttack;
 
+{_x addScore 75;} forEach allUnits; // Add MP Score for everyone on the server
+
 if(InsP_ammoCaches == 3) then {
 	["Well done, all caches destroyed. Stick around to vote for the next mission.", "hint", True, True] call BIS_fnc_MP;
 	[] spawn {sleep 15; ["end1", false, 0] call BIS_fnc_endMission};

@@ -57,6 +57,8 @@ _defuseAction = [
 ["IEDLandBig_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
 ["IEDLandSmall_F", 0, ["ACE_MainActions"], _defuseAction] call ace_interact_menu_fnc_addActionToClass;
 
+{player addScore 1;} remoteExec ["bis_fnc_call", 2]; // add 1 score for connecting, forces tracking on gametracker
+
 if(isMultiplayer)then{
 	cutText ["Receiving...", "BLACK", .001];
 
