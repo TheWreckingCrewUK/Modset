@@ -320,13 +320,13 @@
 		{
 			"Throw",
 			"Put",
-			"CUP_arifle_RPK74_45"
+			"CUP_lmg_PKM"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"CUP_arifle_RPK74_45"
+			"CUP_lmg_PKM"
 		};
 		magazines[]=
 		{
