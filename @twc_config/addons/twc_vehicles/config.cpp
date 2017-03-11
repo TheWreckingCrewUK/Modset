@@ -21,7 +21,10 @@ class CfgPatches
 			"twc_wildcat_1990",
 			"twc_puma",
 			"twc_c5_hercules",
-			"TWC_fv432"
+			"TWC_fv432",
+			"TWC_burnes_foxhound_d_a",
+			"TWC_burnes_foxhound_w_a"
+			
 			
 		};
 		weapons[]=
@@ -158,6 +161,8 @@ class CfgVehicles
 	class CUP_B_LR_Transport_GB_D;
 	class CUP_B_LR_Special_M2_GB_W;
 	class CUP_B_LR_Special_M2_GB_D;
+	class burnes_foxhound_d_a;
+	class burnes_foxhound_w_a;
 	class UK3CB_BAF_Wildcat_AH1_CAS_8A;
 	class CUP_B_SA330_Puma_HC1_BAF;
 	class CUP_B_C130J_GB;
@@ -192,6 +197,22 @@ class CfgVehicles
 		side = 1;
 		faction="twc_faction";
 		displayname = "Landrover Special Desert (Modern)";
+		GearModern;
+	};
+		class twc_Foxhound_D: burnes_foxhound_d_a;
+	{
+		scope = 2;
+		side = 1;
+		faction="twc_faction";
+		displayname = "Foxhound (Desert)";
+		GearModern;
+	};
+		class twc_Foxhound_W: burnes_foxhound_w_a;
+	{
+		scope = 2;
+		side = 1;
+		faction="twc_faction";
+		displayname = "Foxhound (Woodland)";
 		GearModern;
 	};
 	class twc_landrover_W_1990: CUP_B_LR_Transport_GB_W
