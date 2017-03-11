@@ -212,6 +212,7 @@ class cfgVehicles
 			};
 		};
 	};
+/*
 	class Man;
 	class CAManBase: Man
 	{
@@ -340,4 +341,5 @@ class cfgVehicles
 			};
 		};
 	};
+*/
 };

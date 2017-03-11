@@ -1180,7 +1180,7 @@
 	//////////////////////////////  COIN  //////////////////////////////
 	class Modern_British_Pointman: Modern_British_Rifleman
 	{
-		displayName="Pointman (Modern COIN)"
+		displayName="Pointman (Modern COIN)";
 		backpack = "TWC_Backpack_Modern_Pointman";
 		linkedItems[]=
 		{
