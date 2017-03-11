@@ -199,7 +199,7 @@ class CfgVehicles
 		displayname = "Landrover Special Desert (Modern)";
 		GearModern;
 	};
-		class twc_Foxhound_D: burnes_foxhound_d_a;
+		class twc_Foxhound_D: burnes_foxhound_d_a
 	{
 		scope = 2;
 		side = 1;
