@@ -11,7 +11,7 @@ class CfgPatches
 
 class CfgMusic
 {
-	tracks[] = {"ME_Song_1", "ME_Song_2", "ME_Song_3", "ME_Song_4"};
+	tracks[] = {};
 
 	class ME_Song_1
 	{
@@ -52,5 +52,11 @@ class CfgSounds
 	{
 		name = "ME_Environment_Prayer_1";
 		sound[] = {"\twc_ambience\me_environment\prayer1.ogg", db+0, 1};
+	};
+	
+	class ME_Environment_Radio_1
+	{
+		name = "ME_Environment_Radio_1";
+		sound[] = {"\twc_ambience\me_environment\radio1.ogg", db+0, 1};
 	};
 };
