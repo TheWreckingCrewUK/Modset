@@ -73,8 +73,8 @@ class CfgFactionClasses
 {
 	class twc_faction
 	{
-		displayName="TWC Operation Units";
-		author="FakeMatty";
+		displayName="TWC Public Units";
+		author="The Wrecking Crew";
 		icon="TWClogo.paa";
 		priority=2;
 		side=1;

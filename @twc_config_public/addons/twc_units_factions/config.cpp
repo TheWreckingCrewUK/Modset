@@ -9,31 +9,21 @@ class CfgPatches
 			"1990_British_Rifleman",
 			"1990_British_Gunner",
 			"1990_British_2IC",
-			"1990_British_CGG",
-			"1990_British_CGAss",
 			"1990_British_Platoon_Commander",
 			"1990_British_Platoon_Sergeant",
 			"1990_British_Medic",
-			"1990_British_HeliPilot",
+			"1990_British_HeloPilot",
 			"1990_British_JetPilot",
-			"1990_British_MilanGunner",
-			"1990_British_MilanAssistant",
-			"1990_British_MortarGunner",
 			"1990_British_Vehicle_Commander",
 			"1990_British_Vehicle_Crew",
 			"1990_British_Squadleader_Desert",
 			"1990_British_Rifleman_Desert",
-			"1990_British_CGG_Desert",
-			"1990_British_CGAss_Desert",
 			"1990_British_Gunner_Desert",
 			"1990_British_2IC_Desert",
 			"1990_British_Platoon_Commander_Desert",
 			"1990_British_Platoon_Sergeant_Desert",
 			"1990_British_Medic_Desert",
-			"1990_British_HiloPilot_Desert",
-			"1990_British_MilanGunner_Desert",
-			"1990_British_MilanAssistant_Desert",
-			"1990_British_MortarGunner_Desert",
+			"1990_British_HeloPilot_Desert",
 			"1990_British_Tank_Commander_Desert",
 			"1990_British_Tank_Crew_Desert",
 			"Modern_British_Squadleader",
@@ -207,7 +197,7 @@ class CfgVehicles
 	class I_Soldier_F;
 	
 	#include "russianfederation.hpp"
-	#include "iraq.hpp"
+	//#include "iraq.hpp"
 	#include "african.hpp"
 	#include "irish.hpp"
 	#include "takistan.hpp"

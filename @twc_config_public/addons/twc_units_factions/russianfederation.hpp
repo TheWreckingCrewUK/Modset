@@ -33,7 +33,7 @@
 		"Throw",
 		"Put",
 		"ACE_Vector",
-		"USSR_AK74_1p29",
+		"rhs_weap_ak74m_dtk",
 		"rhs_weap_makarov_pmm"
 		};
 		respawnweapons[]=
@@ -41,7 +41,7 @@
 		"Throw",
 		"Put",
 		"ACE_Vector",
-		"USSR_AK74_1p29",
+		"rhs_weap_ak74m_dtk",
 		"rhs_weap_makarov_pmm"
 		};
 		magazines[]=
@@ -332,7 +332,7 @@
 		"Throw",
 		"Put",
 		"ACE_Vector",
-		"USSR_AK74_1p29",
+		"rhs_weap_ak74m_dtk",
 		"rhs_weap_makarov_pmm"
 		};
 		respawnweapons[]=
@@ -340,7 +340,7 @@
 		"Throw",
 		"Put",
 		"ACE_Vector",
-		"USSR_AK74_1p29",
+		"rhs_weap_ak74m_dtk",
 		"rhs_weap_makarov_pmm"
 		};
 		magazines[]=
