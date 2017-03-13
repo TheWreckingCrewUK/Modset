@@ -39,7 +39,7 @@ class CfgDebriefing
 	{
 		title = "Transport Pilot Unavailable";
 		subtitle = "More players are needed for Pilot.";
-		description = "5 player per Pilot. Including Crew Cheifs";
+		description = "5 players per Pilot. Including Crew Chiefs";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
