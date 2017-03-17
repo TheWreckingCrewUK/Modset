@@ -207,7 +207,7 @@ class CfgVehicles
 		displayname = "Foxhound (Desert)";
 		GearModern;
 	};
-		class twc_Foxhound_W: burnes_foxhound_w_a;
+		class twc_Foxhound_W: burnes_foxhound_w_a
 	{
 		scope = 2;
 		side = 1;
