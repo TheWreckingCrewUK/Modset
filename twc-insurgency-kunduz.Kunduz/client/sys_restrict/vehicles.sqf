@@ -7,7 +7,7 @@ The old one by Sa-Matra relied on a while{true}do{} loop which is shitty.
 _specialCases = ["P501","P502","P503","P504","P507","P508","P601","P602","P603","P505"];
 if(str player in _specialCases)then{
 
-//BAF Transport Pilot and Crew Cheif
+//BAF Transport Pilot and Crew Chief
 	if(str player == "P501" || str player == "P502")then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
@@ -24,7 +24,7 @@ if(str player in _specialCases)then{
 		}];
 	};
 
-//US Transport Pilot and Crew Cheif
+//US Transport Pilot and Crew Chief
 	if(str player == "P503" || str player == "P504")then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
