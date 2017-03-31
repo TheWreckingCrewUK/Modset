@@ -12,5 +12,8 @@ if((typeName _group) isEqualTo "OBJECT")then{
 }else{
 	_group setVariable ["twc_cacheDefending",true];
 };
+if((typeName _pos) isEqualTo "STRING")then{
+	_pos = getMarkerPos _pos;
+};
 
 [_group,_pos,_radius,_size,_patrol] call CBA_fnc_taskDefend;
