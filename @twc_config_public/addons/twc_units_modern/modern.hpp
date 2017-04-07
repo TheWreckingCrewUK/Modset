@@ -723,7 +723,7 @@
 	{
 		_generalMacro="Modern_JetPilot";
 		scope=2;
-		displayName="Jet Pilot(Modern)";
+		displayName="Jet Pilotb(Modern)";
 		faction="twc_faction";
 		editorSubcategory = "Men_Modern";
 		vehicleClass="Men_Modern";
