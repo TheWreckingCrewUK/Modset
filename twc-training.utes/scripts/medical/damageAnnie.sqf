@@ -9,7 +9,7 @@ switch(_difficultyLevel)do{
 	case 0: {_damageAmount = .2; _typeOfDamage = ["falling","punch","ropeburn","stab","bullet","grenade"] call BIS_fnc_selectRandom;};
 	case 1: {_damageAmount = .5; _typeOfDamage = ["grenade","vehiclecrash","bullet","stab","unknown"] call BIS_fnc_selectRandom;};
 	case 2: {_damageAmount = .9; _typeOfDamage = ["shell","explosive","grenade","vehiclecrash","unknown"] call BIS_fnc_selectRandom;};
-	default {diag_log format ["%1, %2", time, "An error occured when attempting to perform medical training."];}
+	default {diag_log format ["%1, %2", time, "An error occured when attempting to perform medical training."];};
 };
 
 medicalPacket = _typeOfDamage;
@@ -26,48 +26,48 @@ twc_fnc_DamageArmLeft ={
 
 twc_fnc_DamageArmRight ={
 	Params ["_unit"];
-	[_unit, random 1, "hand_r", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit
+	[_unit, random 1, "hand_r", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit;
 };
 
 twc_fnc_DamageLegLeft ={
 	Params ["_unit"];
-	[_unit, random 1, "leg_l", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit
+	[_unit, random 1, "leg_l", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit;
 };
 
 twc_fnc_DamageLegRight ={
 	Params ["_unit"];
-	[_unit, random 1, "leg_r", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit
+	[_unit, random 1, "leg_r", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit;
 };
 
 twc_fnc_DamageHead ={
 	Params ["_unit"];
-	[_unit, random 1, "Head", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit
+	[_unit, random 1, "Head", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit;
 };
 
 twc_fnc_DamageTorso ={
 	Params ["_unit"];
-	[_unit, random 1, "body", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit
+	[_unit, random 1, "body", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit;
 };
 
 twc_fnc_DamageBody = {
 	Params ["_unit"];
 	if (random 100<50) then {
-		[_unit, random 1, "hand_l", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit
+		[_unit, random 1, "hand_l", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit;
 	};
 	if (random 100<50) then {
-		[_unit, random 1, "hand_r", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit
+		[_unit, random 1, "hand_r", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit;
 	};
 	if (random 100<50) then {
-		[_unit, random 1, "leg_l", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit
+		[_unit, random 1, "leg_l", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit;
 	};
 	if (random 100<50) then {
-		[_unit, random 1, "leg_r", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit
+		[_unit, random 1, "leg_r", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit;
 	};
 	if (random 100<50) then {
-		[_unit, random 1, "Head", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit
+		[_unit, random 1, "Head", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit;
 	};
 	if (random 100<50) then {
-		[_unit, random 1, "body", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit
+		[_unit, random 1, "body", ["falling","punch","ropeburn","stab","bullet","grenade","vehiclecrash"] call BIS_fnc_selectRandom;] call ace_medical_fnc_addDamageToUnit;
 	};
 };
 

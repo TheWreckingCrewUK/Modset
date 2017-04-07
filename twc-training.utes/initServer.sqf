@@ -38,5 +38,5 @@ execVM "scripts\weaponLists\crates\modern.sqf";
 if(isNil "cprAnnie") then { execVM "scripts\medical\createAnnie.sqf";};
 
  "medicalPacket" addPublicVariableEventHandler {
-	_null = [_this select 1] execVM "scripts\medical\damageAnnie.sqf";};
+	_null = [_this select 1] execVM "scripts\medical\damageAnnie.sqf";
   };

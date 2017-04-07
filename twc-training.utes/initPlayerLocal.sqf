@@ -22,33 +22,33 @@ _trainers = ["S1","S2","S3","S4","S5","S6","S7","S8","S9","S10"];
 if ((str player) in _trainers) then {
 	isTrainer = true;
 	
-	_eraSelection = ["era","Era Select","", {},{true}] call ace_interact_menu_fnc_createAction;
+/* 	_eraSelection = ["era","Era Select","", {},{true}] call ace_interact_menu_fnc_createAction;
 
 	_modern = ["eraModern", "Modern", "", {ERA = 0; publicVariable "ERA"; execVM "scripts\weaponLists\playerLoadouts\modern.sqf";if !(ismultiplayer) then {execVM "scripts\weaponLists\crates\modern.sqf";}}, {true}] call ace_interact_menu_fnc_createAction;
 	_modernCoin = ["eraModernCoin","Modern Coin", "", {ERA = 1; publicVariable "ERA"; execVM "scripts\weaponLists\playerLoadouts\coin.sqf";if !(ismultiplayer) then {execVM "scripts\weaponLists\crates\coin.sqf";}}, {true}] call ace_interact_menu_fnc_createAction;
 	_coldWar = ["eraColdWar","Cold War", "", {ERA = 2; publicVariable "ERA"; execVM "scripts\weaponLists\playerLoadouts\coldwar.sqf";if !(ismultiplayer) then {execVM "scripts\weaponLists\crates\Coldwar.sqf";}},{true}] call ace_interact_menu_fnc_createAction;
-	_1990 = ["era90","90's", "", {ERA = 3; publicVariable "ERA"; execVM "scripts\weaponLists\playerLoadouts\1990.sqf";if !(ismultiplayer) then {execVM "scripts\weaponLists\crates\1990.sqf";}},{true}] call ace_interact_menu_fnc_createAction;
+	_1990 = ["era90","90's", "", {ERA = 3; publicVariable "ERA"; execVM "scripts\weaponLists\playerLoadouts\1990.sqf";if !(ismultiplayer) then {execVM "scripts\weaponLists\crates\1990.sqf";}},{true}] call ace_interact_menu_fnc_createAction; */
 	
 
-	[player, 1, ["ACE_SelfActions"], _eraSelection] call ace_interact_menu_fnc_addActionToObject;
+	/* [player, 1, ["ACE_SelfActions"], _eraSelection] call ace_interact_menu_fnc_addActionToObject;
 
 	[player, 1, ["ACE_SelfActions","era"], _modern] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","era"], _modernCoin] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","era"], _coldWar] call ace_interact_menu_fnc_addActionToObject;
-	[player, 1, ["ACE_SelfActions","era"], _1990] call ace_interact_menu_fnc_addActionToObject;
+	[player, 1, ["ACE_SelfActions","era"], _1990] call ace_interact_menu_fnc_addActionToObject; */
 	
 //Teleport and range actions
 	teleportListAction = ["Teleport","Teleport List","", {},{true}] call ace_interact_menu_fnc_createAction;
-	_Teleclick = ['TeleCLick','Teleport On Click','', {execVM "scripts\teleport\tele_onclick.sqf";},{true}] call ace_interact_menu_fnc_createAction;
+	_Teleclick = ['TeleClick','Teleport On Click','', {execVM "scripts\teleport\tele_onclick.sqf";},{true}] call ace_interact_menu_fnc_createAction;
 	
-	TWCrandomrange = ["range","TWC range randomizer","", {},{true}] call ace_interact_menu_fnc_createAction;
-	_cqb = ['CQBrandomize','CQB Range','', {call twc_fnc_randomCQB},{true}] call ace_interact_menu_fnc_createAction;
+	/* TWCrandomrange = ["range","TWC range randomizer","", {},{true}] call ace_interact_menu_fnc_createAction;
+	_cqb = ['CQBrandomize','CQB Range','', {call twc_fnc_randomCQB},{true}] call ace_interact_menu_fnc_createAction; */
 	
 	[player, 1, ["ACE_SelfActions"], teleportListAction] call ace_interact_menu_fnc_addActionToObject;
 	[player, 1, ["ACE_SelfActions","Teleport"], _Teleclick] call ace_interact_menu_fnc_addActionToObject;
 	
-	[player, 1, ["ACE_SelfActions"], TWCrandomrange] call ace_interact_menu_fnc_addActionToObject;
-	[player, 1, ["ACE_SelfActions","range"], _CQB] call ace_interact_menu_fnc_addActionToObject;
+	/* [player, 1, ["ACE_SelfActions"], TWCrandomrange] call ace_interact_menu_fnc_addActionToObject;
+	[player, 1, ["ACE_SelfActions","range"], _CQB] call ace_interact_menu_fnc_addActionToObject */;
 	
 //medical training menu	
 	_twcMedicalMenu = ["twcMedical", "Medical Training","",{},{true}] call ace_interact_menu_fnc_createAction;
