@@ -1,0 +1,813 @@
+class CfgPatches
+{
+	class twc_framework_public_modern
+	{
+		units[]=
+		{
+			"TWC_Modern_US_Army_Base",
+			"TWC_Modern_US_Army_SectionCommander",
+			"TWC_Modern_US_Army_TeamLeader",
+			"TWC_Modern_US_Army_Rifleman",
+			"TWC_Modern_US_Army_Grenadier",
+			"TWC_Modern_US_Army_AutomaticRifleman",
+			"TWC_Modern_US_Army_Marksman",
+			"TWC_Modern_US_Army_Medic",
+			"TWC_Backpack_Modern_US_Army_SL",
+			"TWC_Backpack_Modern_US_Army_Medic"
+			
+		};
+		weapons[]=
+		{
+			"twc_m4_acog_lazer",
+			"twc_m4_203_acog_lazer",
+			"twc_m249_mgo_lazer",
+			"twc_m14_ebr_lazer_bipod"
+		};
+		requiredVersion=1.54;
+		requiredAddons[]={};
+		author[]={};
+		authorUrl="";
+		version="1";
+		versionStr="1";
+		versionAr[]={1};
+	};
+};
+class CfgEditorSubCategories
+{
+	class Men_Modern
+	{
+		displayName = "Men (Modern)";
+	};
+};
+class CfgFactionClasses
+{
+	class twc_public
+	{
+		displayName="TWC Public Units";
+		author="jayman";
+		icon="TWClogo.paa";
+		priority=2;
+		side=1;
+	};
+	
+};
+class cfgWeapons
+{
+	class rhs_weap_m4a1_carryhandle;
+	class rhs_weap_m4a1_carryhandle_m203;
+	class rhs_weap_m249_pip_S;
+	class rhs_weap_m14ebrri;
+	class twc_m4_acog_lazer: rhs_weap_m4a1_carryhandle
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_ACOG_USMC";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15A";
+			};
+		};
+	};
+	class twc_m4_203_acog_lazer: rhs_weap_m4a1_carryhandle_m203
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_ACOG_USMC";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15A";
+			};
+		};
+	};
+	class twc_m249_mgo_lazer:rhs_weap_m249_pip_S
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_ELCAN";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15A";
+			};
+		};
+	};
+	class twc_m14_ebr_lazer_bipod:rhs_weap_m14ebrri
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_LEUPOLDMK4";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15A";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="UnderBarrelSlot";
+				item="rhsusf_acc_harris_bipod"
+			};
+		};
+	};
+};
+class cfgVehicles
+{
+	class rhsusf_assault_eagleaiii_ocp;
+	class TWC_Backpack_Modern_US_Army_SL:rhsusf_assault_eagleaiii_ocp
+	{
+		class transportItems
+		{
+			class _xx_radio
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_Modern_US_Army_Medic:rhsusf_assault_eagleaiii_ocp
+	{
+		class transportItems
+		{
+			class _xx_bandage_basic
+			{
+				name = "ACE_fieldDressing";
+				count = 10;
+			};
+			class _xx_bandage_packing
+			{
+				name = "ACE_packingBandage";
+				count = 10;
+			};
+			class _xx_bandage_elastic
+			{
+				name = "ACE_elasticBandage";
+				count = 20;
+			};
+			class _xx_quickclot
+			{
+				name = "ACE_quikclot";
+				count = 10;
+			};
+			class _xx_morphine
+			{
+				name = "ACE_morphine";
+				count = 10;
+			};
+			class _xx_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 5;
+			};
+			class _xx_saline
+			{
+				name = "ACE_salineIV_500";
+				count = 5;
+			};
+		};
+	};
+	
+	
+	class B_Soldier_base_F;
+	class TWC_Modern_US_Army_Base:B_Soldier_base_F
+	{
+		scope=1;
+		displayName="Base (Modern)";
+		faction="twc_public";
+		editorSubcategory = "Men_Modern";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="rhs_uniform_cu_ocp";
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACRE_PRC148",
+			"ACE_MapTools",
+			"ACE_EarPlugs"
+		};
+		respawntems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACRE_PRC148",
+			"ACE_MapTools",
+			"ACE_EarPlugs"
+		};
+	};
+	class TWC_Modern_US_Army_SectionCommander:TWC_Modern_US_Army_Base
+	{
+		scope=2;
+		displayName="Modern US Army Section Commander";
+		backpack="TWC_Backpack_Modern_US_Army_SL";
+		linkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Squadleader",
+			"rhsusf_ach_helmet_headset_ess_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Squadleader",
+			"rhsusf_ach_helmet_headset_ess_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"twc_m4_acog_lazer"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"twc_m4_acog_lazer"
+		};
+		magazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		
+	};
+	class TWC_Modern_US_Army_TeamLeader:TWC_Modern_US_Army_Base
+	{
+		scope=2;
+		displayName="Modern US Army Team Leader";
+		linkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Teamleader",
+			"rhsusf_ach_helmet_ESS_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Teamleader",
+			"rhsusf_ach_helmet_ESS_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"twc_m4_203_acog_lazer"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"twc_m4_203_acog_lazer"
+		};
+		magazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		
+	};
+	class TWC_Modern_US_Army_Rifleman:TWC_Modern_US_Army_Base
+	{
+		scope=2;
+		displayName="Modern US Army Rifleman";
+		linkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Rifleman",
+			"rhsusf_ach_helmet_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Rifleman",
+			"rhsusf_ach_helmet_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"twc_m4_acog_lazer",
+			"rhs_weap_M136"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"twc_m4_acog_lazer",
+			"rhs_weap_M136"
+		};
+		magazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		
+	};
+	class TWC_Modern_US_Army_Grenadier:TWC_Modern_US_Army_Base
+	{
+		scope=2;
+		displayName="Modern US Army Grenadier";
+		linkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Grenadier",
+			"rhsusf_ach_helmet_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Grenadier",
+			"rhsusf_ach_helmet_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"twc_m4_203_acog_lazer"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"twc_m4_203_acog_lazer"
+		};
+		magazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		
+	};
+	class TWC_Modern_US_Army_AutomaticRifleman:TWC_Modern_US_Army_Base
+	{
+		scope=2;
+		displayName="Modern US Army Automatic Rifleman";
+		linkedItems[]=
+		{
+			"rhsusf_iotv_ocp_SAW",
+			"rhsusf_ach_helmet_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsusf_iotv_ocp_SAW",
+			"rhsusf_ach_helmet_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"twc_m249_mgo_lazer"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"twc_m249_mgo_lazer"
+		};
+		magazines[]=
+		{
+			"rhs_200rnd_556x45_B_SAW",
+			"rhs_200rnd_556x45_B_SAW",
+			"rhs_200rnd_556x45_T_SAW",
+			"rhs_200rnd_556x45_T_SAW",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"rhs_200rnd_556x45_B_SAW",
+			"rhs_200rnd_556x45_B_SAW",
+			"rhs_200rnd_556x45_T_SAW",
+			"rhs_200rnd_556x45_T_SAW",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		
+	};
+	class TWC_Modern_US_Army_Marksman:TWC_Modern_US_Army_Base
+	{
+		scope=2;
+		displayName="Modern US Army Marksman";
+		linkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Rifleman",
+			"rhsusf_ach_helmet_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Rifleman",
+			"rhsusf_ach_helmet_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"twc_m14_ebr_lazer_bipod"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"twc_m14_ebr_lazer_bipod"
+		};
+		magazines[]=
+		{
+			"rhsusf_20Rnd_762x51_m993_Mag",
+			"rhsusf_20Rnd_762x51_m993_Mag",
+			"rhsusf_20Rnd_762x51_m993_Mag",
+			"rhsusf_20Rnd_762x51_m993_Mag",
+			"rhsusf_20Rnd_762x51_m62_Mag",
+			"rhsusf_20Rnd_762x51_m62_Mag",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"rhsusf_20Rnd_762x51_m993_Mag",
+			"rhsusf_20Rnd_762x51_m993_Mag",
+			"rhsusf_20Rnd_762x51_m993_Mag",
+			"rhsusf_20Rnd_762x51_m993_Mag",
+			"rhsusf_20Rnd_762x51_m62_Mag",
+			"rhsusf_20Rnd_762x51_m62_Mag",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		
+	};
+	class TWC_Modern_US_Army_Medic:TWC_Modern_US_Army_Base
+	{
+		scope=2;
+		displayName="Modern US Army Medic";
+		backpack="TWC_Backpack_Modern_US_Army_Medic";
+		linkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Medic",
+			"rhsusf_ach_helmet_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsusf_iotv_ocp_Medic",
+			"rhsusf_ach_helmet_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"twc_m4_acog_lazer"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"twc_m4_acog_lazer"
+		};
+		magazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"HandGrenade",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		
+	};
+};
+class CfgGroups
+{
+        class WEST
+        {
+                name = "Blufor"; // Name of Faction Side
+                side = 1; // 0 = Opfor , 1 = Blufor , 2 = Indep , I think
+                class TWC_Public_Blufor //Faction Class name
+                {
+                        name = "TWC Public Groups"; //Faction Name
+                        class Modern
+                        {
+                                name = "TWC Modern US Army"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+                                class US_Army
+                                {
+                                        name = "Section"; //Name of Group
+                                        faction = "twc_public"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_US_Army_SectionCommander"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_US_Army_TeamLeader";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_US_Army_Rifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_US_Army_Grenadier";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+										class Unit4
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_US_Army_AutomaticRifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+										class Unit5
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_US_Army_TeamLeader";
+                                                rank = "PRIVATE";
+                                                position[] = {11,0,0};
+                                        };
+										class Unit6
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_US_Army_AutomaticRifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {13,0,0};
+                                        };
+										class Unit7
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_US_Army_Marksman";
+                                                rank = "PRIVATE";
+                                                position[] = {15,0,0};
+                                        };
+										class Unit8
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_US_Army_Medic";
+                                                rank = "PRIVATE";
+                                                position[] = {17,0,0};
+                                        };
+                                };
+                        };
+				};
+		};
+};
