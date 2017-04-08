@@ -8,7 +8,6 @@
 		vehicleClass="TWC_Tak_Civ_Men";
 		nakedUniform="U_BasicBody";
 		uniformClass="CUP_O_TKI_Khet_Partug_05";
-		genericNames="genericNames";
 		identityTypes[]=
 		{
 			"LanguagePER_F",
