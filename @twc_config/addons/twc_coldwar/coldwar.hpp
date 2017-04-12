@@ -140,7 +140,7 @@
 			"HAFM_LAW"	
 		};
 	};
-	class ColdWar_AT: ColdWar_Base
+	class ColdWar_AT: ColdWar_Rifleman
 	{
 		scope=2;
 		displayName="AT Rifleman";
@@ -774,27 +774,27 @@
 		displayName="Rifleman (Dismounted)";
 		backpack="TWC_Backpack_Cold_War_Rifleman";
 	};
-	class ColdWar_AT_Dismounted: ColdWar_Rifleman_SUIT
+	class ColdWar_AT_Dismounted: ColdWar_AT
 	{
 		displayName="AT Rifleman (Dismounted)";
 		backpack="TWC_Backpack_Cold_War_AT";
 	};
-	class ColdWar_AT_Ass_Dismounted: ColdWar_Rifleman_SUIT
+	class ColdWar_AT_Ass_Dismounted: ColdWar_AT_Ass
 	{
 		displayName="AT Assistant (Dismounted)";
 		backpack="TWC_Backpack_Cold_War_AT_Ass_Dismounted";
 	};
-	class ColdWar_2IC_Dismounted: ColdWar_Rifleman_SUIT
+	class ColdWar_2IC_Dismounted: ColdWar_2IC
 	{
 		displayName="2IC (Dismounted)";
 		backpack="TWC_Backpack_Cold_War_2IC_Dismounted";
 	};
-	class ColdWar_MG_Dismounted: ColdWar_Rifleman_SUIT
+	class ColdWar_MG_Dismounted: ColdWar_MG
 	{
 		displayName="Machine Gunner (Dismounted)";
 		backpack="TWC_Backpack_Cold_War_MG";
 	};
-	class ColdWar_MG_Ass_Dismounted: ColdWar_Rifleman_SUIT
+	class ColdWar_MG_Ass_Dismounted: ColdWar_MG_Ass
 	{
 		displayName="MG Assistant (Dismounted)";
 		backpack="TWC_Backpack_Cold_War_MGAss";
