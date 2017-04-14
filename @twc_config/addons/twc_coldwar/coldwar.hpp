@@ -794,7 +794,7 @@
 		displayName="Machine Gunner (Dismounted)";
 		backpack="TWC_Backpack_Cold_War_MG";
 	};
-	class ColdWar_MG_Ass_Dismounted: ColdWar_MG_Ass
+	class ColdWar_MG_Ass_Dismounted: ColdWar_MG_AS
 	{
 		displayName="MG Assistant (Dismounted)";
 		backpack="TWC_Backpack_Cold_War_MGAss";
