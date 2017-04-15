@@ -3,7 +3,7 @@ onLoadName = "Operation #Operation Name#";
 loadScreen = "loading.jpg";
 disabledAI = 1;
 enableDebugConsole = 1;
-disableChannels[] = {0,2,3,5};
+disableChannels[] = {0,2,,5};
 respawnButton = 0;
 
 respawn = "base";
