@@ -35,12 +35,7 @@ class CfgPatches
 			"A3_Characters_F_Common",
 			"A3_Characters_F",
 			"a3_characters_f_beta",
-			"a3_characters_f_gamma",
-			"ukcw_man",
-			"ukcw_l4",
-			"ukcw_sterling",
-			"ukcw_hipower",
-			"ukcw_blowpipe"
+			"a3_characters_f_gamma"
 		};
 	};
 };
