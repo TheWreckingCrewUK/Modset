@@ -1,5 +1,22 @@
 	class CUP_B_AlicePack_Khaki;
 	
+	class TWC_Backpack_Cold_War_Rifleman: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_762_20Rnd
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 8;
+			};
+			class _xx_Belt
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 1;
+			};
+		};
+	};
 	class TWC_Backpack_Cold_War_2IC: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
