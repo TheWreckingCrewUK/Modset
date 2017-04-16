@@ -111,6 +111,35 @@
 			};
 		};
 	};
+	class TWC_Backpack_2000_AutoRifleman: UK3CB_BAF_B_Bergen_DPMT_Rifleman_B
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Box_Stanag
+			{
+				magazine = "UK3CB_BAF_556_200Rnd";
+				count = 2;
+			};
+			class _xx_Box_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_200Rnd_T";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_2000_AutoRifleman_Kitbag: UK3CB_BAF_B_Kitbag_DPMT
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Box_Stanag
+			{
+				magazine = "UK3CB_BAF_556_200Rnd";
+				count = 1;
+			};
+		};
+	};
 	class TWC_Backpack_1990_Platoon_Command: UK3CB_BAF_B_Bergen_DPMT_SL_A
 	{
 		scope = 1;
@@ -426,6 +455,35 @@
 			{
 				magazine = "UK3CB_BAF_556_30Rnd_T";
 				count = 5;
+			};
+		};
+	};
+	class TWC_Backpack_2000_AutoRifleman_Desert: UK3CB_BAF_B_Bergen_DDPM_Rifleman_B
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Box_Stanag
+			{
+				magazine = "UK3CB_BAF_556_200Rnd";
+				count = 2;
+			};
+			class _xx_Box_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_200Rnd_T";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_2000_AutoRifleman_Kitbag_Desert: UK3CB_BAF_B_Kitbag_DDPM
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Box_Stanag
+			{
+				magazine = "UK3CB_BAF_556_200Rnd";
+				count = 1;
 			};
 		};
 	};

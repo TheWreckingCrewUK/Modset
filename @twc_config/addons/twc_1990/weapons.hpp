@@ -65,6 +65,51 @@ class cfgWeapons
 			};
 		};
 	};
+	class UK3CB_BAF_L85A2_SUSAT3D:UK3CB_BAF_L85A2
+	{
+		scope = 1;
+		author="Saxon";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="UK3CB_BAF_SUSAT_3D";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="asdg_FrontSideRail_L85";
+				item="UK3CB_BAF_LLM_Flashlight_Black";
+			};
+		};
+	};
+	class UK3CB_BAF_L86A2_SUSAT3D:UK3CB_BAF_L86A2
+	{
+		scope = 1;
+		author="Saxon";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="UK3CB_BAF_SUSAT_3D";
+			};
+		};
+	};
+	
+	class tf47_at4_m_HEAT;
+	class tf47_at4_m_HEDP;
+	
+	class TWC_ILAW_HEAT:tf47_at4_m_HEAT
+	{
+		displayName = "ILAW (HEAT)";
+		author="Saxon";
+	};
+	class TWC_ILAW_HEDP:tf47_at4_m_HEDP
+	{
+		displayName = "ILAW (HEDP)";
+		author="Saxon";
+	};
 	
 	class UK3CB_BAF_U_Smock_DPMT;
 	class UK3CB_BAF_U_Smock_DDPM;
