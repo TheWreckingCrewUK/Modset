@@ -13,7 +13,7 @@ class CfgGroups
                                 class 1990_Section
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -75,7 +75,7 @@ class CfgGroups
 								class 1990_Section_Mounted
                                 {
 									name = "Section  (Mounted)"; //Name of Group
-									faction = "twc_faction"; //Faction
+									faction = "TWC_Millenial"; //Faction
 									side = 1; //Side
 									class Unit0
 									{
@@ -137,7 +137,7 @@ class CfgGroups
 								 class 1990_Section_Mechanised
                                 {
 									name = "Section (Mechanised)"; //Name of Group
-									faction = "twc_faction"; //Faction
+									faction = "TWC_Millenial"; //Faction
 									side = 1; //Side
 									class Unit0
 									{
@@ -206,7 +206,7 @@ class CfgGroups
 								class 1990_Milan
                                 {
                                         name = "Milan Team"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -233,7 +233,7 @@ class CfgGroups
 								class 1990_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -274,7 +274,7 @@ class CfgGroups
 								class 1990_Recoilless_Rifle_Team
                                 {
                                         name = "Recoilless Rifle Team"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -319,7 +319,7 @@ class CfgGroups
                                 class 1990_Section_Desert
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -381,7 +381,7 @@ class CfgGroups
 								class 1990_Section_Mounted
                                 {
 									name = "Section  (Mounted)"; //Name of Group
-									faction = "twc_faction"; //Faction
+									faction = "TWC_Millenial"; //Faction
 									side = 1; //Side
 									class Unit0
 									{
@@ -443,7 +443,7 @@ class CfgGroups
 								class 1990_Section_Mechanised
                                 {
 									name = "Section (Mechanised)"; //Name of Group
-									faction = "twc_faction"; //Faction
+									faction = "TWC_Millenial"; //Faction
 									side = 1; //Side
 									class Unit0
 									{
@@ -512,7 +512,7 @@ class CfgGroups
 								class 1990_Platoon_Command_Desert
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -553,7 +553,7 @@ class CfgGroups
 								class 1990_Milan_Desert
                                 {
                                         name = "Milan Team"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -580,7 +580,7 @@ class CfgGroups
 								class 1990_Vehicle_Crew
                                 {
                                         name = "Vehicle Crew"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -607,7 +607,7 @@ class CfgGroups
 								class 1990_Recoilless_Rifle_Team_Desert
                                 {
                                         name = "Recoilless Rifle Team"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -652,7 +652,7 @@ class CfgGroups
                                 class 2000_Section
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -714,7 +714,7 @@ class CfgGroups
 								class 2000_Section_Mounted
                                 {
 									name = "Section  (Mounted)"; //Name of Group
-									faction = "twc_faction"; //Faction
+									faction = "TWC_Millenial"; //Faction
 									side = 1; //Side
 									class Unit0
 									{
@@ -776,7 +776,7 @@ class CfgGroups
 								class 2000_Section_Mechanised
                                 {
 									name = "Section (Mechanised)"; //Name of Group
-									faction = "twc_faction"; //Faction
+									faction = "TWC_Millenial"; //Faction
 									side = 1; //Side
 									class Unit0
 									{
@@ -845,7 +845,7 @@ class CfgGroups
 								class 2000_Milan
                                 {
                                         name = "Milan Team"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -872,7 +872,7 @@ class CfgGroups
 								class 2000_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -913,7 +913,7 @@ class CfgGroups
 								class 2000_Recoilless_Rifle_Team
                                 {
                                         name = "Recoilless Rifle Team"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -958,7 +958,7 @@ class CfgGroups
                                 class 2000_Section_Desert
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -1020,7 +1020,7 @@ class CfgGroups
 								class 2000_Section_Mounted
                                 {
 									name = "Section  (Mounted)"; //Name of Group
-									faction = "twc_faction"; //Faction
+									faction = "TWC_Millenial"; //Faction
 									side = 1; //Side
 									class Unit0
 									{
@@ -1082,7 +1082,7 @@ class CfgGroups
 								class 2000_Section_Mechanised
                                 {
 									name = "Section (Mechanised)"; //Name of Group
-									faction = "twc_faction"; //Faction
+									faction = "TWC_Millenial"; //Faction
 									side = 1; //Side
 									class Unit0
 									{
@@ -1151,7 +1151,7 @@ class CfgGroups
 								class 2000_Platoon_Command_Desert
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -1192,7 +1192,7 @@ class CfgGroups
 								class 2000_Milan_Desert
                                 {
                                         name = "Milan Team"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -1219,7 +1219,7 @@ class CfgGroups
 								class 2000_Recoilless_Rifle_Team_Desert
                                 {
                                         name = "Recoilless Rifle Team"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Millenial"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {

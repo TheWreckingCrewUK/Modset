@@ -333,9 +333,9 @@
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_Stinger
+			class _xx_Blowpipe
 			{
-				magazine = "CUP_Stinger_M";
+				magazine = "ukcw_blowpipe_missile";
 				count = 1;
 			};
 		};

@@ -2,9 +2,9 @@
 	{
 		scope=1;
 		displayName="Base (Modern)";
-		faction="twc_faction";
-		editorSubcategory = "Men_Modern";
-		vehicleClass="Men_Modern";
+		faction="TWC_Modern";
+		editorSubcategory = "Men_Modern_Dismounted";
+		vehicleClass="Men_Modern_Dismounted";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
@@ -81,7 +81,7 @@
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
-		displayName="Section Leader (Modern)";
+		displayName="Section Leader";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
@@ -158,7 +158,7 @@
 	class Modern_British_Rifleman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Rifleman (Modern)";
+		displayName="Rifleman";
 		weapons[]=
 		{
 			"Throw",
@@ -207,7 +207,7 @@
 	class Modern_British_Grenadier: Modern_British_Base
 	{
 		scope=2;
-		displayName="Grenadier (Modern)";
+		displayName="Grenadier";
 		icon="iconManExplosive";
 		linkedItems[]=
 		{
@@ -299,7 +299,7 @@
 	class Modern_British_Autorifleman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Automatic Rifleman (Modern)";
+		displayName="Automatic Rifleman";
 		icon="iconManMG";
 		backpack="TWC_Backpack_Modern_Autorifleman_Kitbag";
 		linkedItems[]=
@@ -353,7 +353,7 @@
 	};
 	class Modern_British_2IC: Modern_British_Rifleman
 	{
-		displayName="2IC (Modern)";
+		displayName="2IC";
 		backpack="TWC_Backpack_Modern_2IC";
 		weapons[]=
 		{
@@ -407,7 +407,7 @@
 	class Modern_British_Machinegunner: Modern_British_Autorifleman
 	{
 		scope=2;
-		displayName="Machine Gunner (Modern)";
+		displayName="Machine Gunner";
 		backpack="TWC_Backpack_Modern_MachineGunner_Kitbag";
 		weapons[]=
 		{
@@ -449,7 +449,7 @@
 	class Modern_British_Marksman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Marksman (Modern)";
+		displayName="Marksman";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Marksman_A",
@@ -520,7 +520,7 @@
 	class Modern_British_Platoon_Commander: Modern_British_Squadleader
 	{
 		scope=2;
-		displayName="Platoon Commander (Modern)";
+		displayName="Platoon Commander";
 		icon="iconManLeader";
 		linkedItems[]=
 		{
@@ -546,13 +546,13 @@
 	class Modern_British_Platoon_Sergeant: Modern_British_Platoon_Commander
 	{
 		scope=2;
-		displayName="Platoon Sergeant (Modern)";
+		displayName="Platoon Sergeant";
 		icon="iconMan";
 		backpack="TWC_Backpack_Modern_Platoon_Sergeant";
 	};
 	class Modern_British_Platoon_Mortar: Modern_British_Rifleman
 	{
-		displayName="Platoon Mortar (Modern)";
+		displayName="Platoon Mortar";
 		icon="iconManExplosive";
 		backpack="TWC_Backpack_Modern_Platoon_Mortar";
 		weapons[]=
@@ -599,7 +599,7 @@
 	class Modern_British_Medic: Modern_British_Base
 	{
 		scope=2;
-		displayName="Medic(Modern)";
+		displayName="Medic";
 		icon="iconManMedic";
 		backpack="TWC_Backpack_Modern_Medic";
 		linkedItems[]=
@@ -661,7 +661,7 @@
 	};
 	class Modern_British_Platoon_CSM: Modern_British_Squadleader
 	{
-		displayName="Company Sergeant Major (Modern)";
+		displayName="Company Sergeant Major";
 		backpack="TWC_Backpack_Modern_Platoon_Sergeant";
 		class EventHandlers: EventHandlers
 		{
@@ -671,8 +671,10 @@
 	class Modern_British_HeliPilot: Modern_British_Base
 	{
 		scope=2;
-		displayName="Helicopter Pilot(Modern)";
+		displayName="Helicopter Pilot";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
+		editorSubcategory = "Men_Modern_Mounted";
+		vehicleClass="Men_Modern_Mounted";
 		backpack="B_AssaultPack_blk";
 		linkedItems[]=
 		{
@@ -724,9 +726,9 @@
 		_generalMacro="Modern_JetPilot";
 		scope=2;
 		displayName="Jet Pilot(Modern)";
-		faction="twc_faction";
-		editorSubcategory = "Men_Modern";
-		vehicleClass="Men_Modern";
+		faction="TWC_Modern";
+		editorSubcategory = "Men_Modern_Mounted";
+		vehicleClass="Men_Modern_Mounted";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="U_I_pilotCoveralls";
@@ -777,7 +779,7 @@
 	class Modern_British_MortarGunner: Modern_British_Rifleman
 	{
 		scope=2;
-		displayName="Mortar Gunner(Modern)";
+		displayName="Mortar Gunner";
 		icon="iconMan";
 		backpack="TWC_Backpack_Modern_Mortar";
 		linkedItems[]=
@@ -827,7 +829,7 @@
 	};
 	class Modern_British_MortarAssistant: Modern_British_MortarGunner
 	{
-		displayName="Mortar Assistant(Modern)";
+		displayName="Mortar Assistant";
 		backpack="TWC_Backpack_Modern_MortarAssistant";
 		weapons[]=
 		{
@@ -847,7 +849,7 @@
 	class Modern_British_Sniper: Modern_British_Base
 	{
 		scope=2;
-		displayName="Sniper (Modern)";
+		displayName="Sniper";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM";
 		backpack="TWC_Backpack_Modern_Sniper";
@@ -914,7 +916,7 @@
 	};
 	class Modern_British_Spotter: Modern_British_Sniper
 	{
-		displayName="Spotter (Modern)";
+		displayName="Spotter";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM";
@@ -969,7 +971,7 @@
 	class Modern_British_FAC: Modern_British_Base
 	{
 		scope=2;
-		displayName="Section FAC(Modern)";
+		displayName="Section FAC";
 		backpack="TWC_Backpack_Modern_FAC";
 		linkedItems[]=
 		{
@@ -1058,38 +1060,52 @@
 	//////////////////////////////  Mounted  //////////////////////////////
 	class Modern_British_Rifleman_Mounted: Modern_British_Rifleman
 	{
-		displayName="Rifleman (Modern Mounted)";
+		displayName="Rifleman";
+		editorSubcategory = "Men_Modern_Mounted";
+		vehicleClass="Men_Modern_Mounted";
 		backpack="";
 	};
 	class Modern_British_Grenadier_Mounted: Modern_British_Grenadier
 	{
-		displayName="Grenadier (Modern Mounted)";
+		displayName="Grenadier";
+		editorSubcategory = "Men_Modern_Mounted";
+		vehicleClass="Men_Modern_Mounted";
 		backpack="";
 	};
 	class Modern_British_Autorifleman_Mounted: Modern_British_Autorifleman
 	{
-		displayName="Autorifleman (Modern Mounted)";
+		displayName="Autorifleman";
+		editorSubcategory = "Men_Modern_Mounted";
+		vehicleClass="Men_Modern_Mounted";
 		backpack="TWC_Backpack_Modern_Autorifleman_Kitbag";
 	};
 	class Modern_British_Machinegunner_Mounted: Modern_British_Machinegunner
 	{
-		displayName="Machinegunner (Modern Mounted)";
+		displayName="Machinegunner";
+		editorSubcategory = "Men_Modern_Mounted";
+		vehicleClass="Men_Modern_Mounted";
 		backpack="TWC_Backpack_Modern_MachineGunner_Kitbag";
 	};
 	class Modern_British_2IC_Mounted: Modern_British_2IC
 	{
-		displayName="2IC (Modern Mounted)";
+		displayName="2IC";
+		editorSubcategory = "Men_Modern_Mounted";
+		vehicleClass="Men_Modern_Mounted";
 		backpack="TWC_Backpack_Modern_2IC_Kitbag";
 	};
 	class Modern_British_Marksman_Mounted: Modern_British_Marksman
 	{
-		displayName="Marksman (Modern Mounted)";
+		displayName="Marksman";
+		editorSubcategory = "Men_Modern_Mounted";
+		vehicleClass="Men_Modern_Mounted";
 		backpack="";
 	};
 	class Modern_British_VehicleCrew: Modern_British_Base
 	{
 		scope=2;
-		displayName="Modern Vehicle Crewman (Modern)";
+		displayName="Modern Vehicle Crewman";
+		editorSubcategory = "Men_Modern_Mounted";
+		vehicleClass="Men_Modern_Mounted";
 		icon="iconMan";
 		linkedItems[]=
 		{
@@ -1138,7 +1154,9 @@
 	};
 	class Modern_British_VehicleCommander: Modern_British_VehicleCrew
 	{
-		displayName="Modern Vehicle Commander (Modern)";
+		displayName="Modern Vehicle Commander";
+		editorSubcategory = "Men_Modern_Mounted";
+		vehicleClass="Men_Modern_Mounted";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		backpack="B_AssaultPack_blk";
@@ -1180,7 +1198,9 @@
 	//////////////////////////////  COIN  //////////////////////////////
 	class Modern_British_Pointman: Modern_British_Rifleman
 	{
-		displayName="Pointman (Modern COIN)";
+		displayName="Pointman";
+		editorSubcategory = "Men_Modern_COIN";
+		vehicleClass="Men_Modern_COIN";
 		backpack = "TWC_Backpack_Modern_Pointman";
 		linkedItems[]=
 		{
@@ -1247,7 +1267,9 @@
 	};
 	class Modern_British_Grenadier_COIN: Modern_British_Grenadier
 	{
-		displayName="Grenadier (Modern COIN)";
+		displayName="Grenadier";
+		editorSubcategory = "Men_Modern_COIN";
+		vehicleClass="Men_Modern_COIN";
 		weapons[]=
 		{
 			"Throw",
@@ -1309,7 +1331,9 @@
 	};
 	class Modern_British_Autorifleman_COIN: Modern_British_Autorifleman
 	{
-		displayName="Automatic Rifleman (Modern COIN)";
+		displayName="Automatic Rifleman";
+		editorSubcategory = "Men_Modern_COIN";
+		vehicleClass="Men_Modern_COIN";
 		weapons[]=
 		{
 			"Throw",
@@ -1349,7 +1373,9 @@
 	};
 	class Modern_British_2IC_COIN: Modern_British_Pointman
 	{
-		displayName="Grenadier (Modern COIN)";
+		displayName="Grenadier";
+		editorSubcategory = "Men_Modern_COIN";
+		vehicleClass="Men_Modern_COIN";
 		backpack="TWC_Backpack_Modern_2IC";
 		linkedItems[]=
 		{
@@ -1422,7 +1448,9 @@
 	};
 	class Modern_British_Marksman_COIN: Modern_British_Marksman
 	{
-		displayName="Marksman (Modern COIN)";
+		displayName="Marksman";
+		editorSubcategory = "Men_Modern_COIN";
+		vehicleClass="Men_Modern_COIN";
 		weapons[]=
 		{
 			"Throw",
@@ -1481,27 +1509,37 @@
 	//////////////////////////////  COIN-Mounted  //////////////////////////////
 	class Modern_British_Pointman_Mounted: Modern_British_Pointman
 	{
-		displayName="Rifleman (Modern COIN Mounted)";
+		displayName="Rifleman";
+		editorSubcategory = "Men_Modern_COIN_Mounted";
+		vehicleClass="Men_Modern_COIN_Mounted";
 		backpack="";
 	};
 	class Modern_British_Grenadier_COIN_Mounted: Modern_British_Grenadier_COIN
 	{
-		displayName="Grenadier (Modern COIN Mounted)";
+		displayName="Grenadier";
+		editorSubcategory = "Men_Modern_COIN_Mounted";
+		vehicleClass="Men_Modern_COIN_Mounted";
 		backpack="";
 	};
 	class Modern_British_Autorifleman_COIN_Mounted: Modern_British_Autorifleman_COIN
 	{
-		displayName="Autorifleman (Modern COIN Mounted)";
+		displayName="Autorifleman";
+		editorSubcategory = "Men_Modern_COIN_Mounted";
+		vehicleClass="Men_Modern_COIN_Mounted";
 		backpack="TWC_Backpack_Modern_Autorifleman_Kitbag";
 	};
 	class Modern_British_2IC_COIN_Mounted: Modern_British_2IC_COIN
 	{
-		displayName="2IC (Modern COIN Mounted)";
+		displayName="2IC";
+		editorSubcategory = "Men_Modern_COIN_Mounted";
+		vehicleClass="Men_Modern_COIN_Mounted";
 		backpack="TWC_Backpack_Modern_2IC_Kitbag";
 	};
 	class Modern_British_Marksman_COIN_Mounted: Modern_British_Marksman_COIN
 	{
-		displayName="Marksman (Modern Mounted)";
+		displayName="Marksman";
+		editorSubcategory = "Men_Modern_COIN_Mounted";
+		vehicleClass="Men_Modern_COIN_Mounted";
 		backpack="";
 	};
 	

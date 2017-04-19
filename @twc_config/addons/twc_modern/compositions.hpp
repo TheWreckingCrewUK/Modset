@@ -13,7 +13,7 @@ class CfgGroups
                                 class Modern_Section
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Modern"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -75,7 +75,7 @@ class CfgGroups
 								class Modern_Section_Mounted
                                 {
                                         name = "Section(Mounted)"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Modern"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -137,7 +137,7 @@ class CfgGroups
 								class Modern_Section_Mechanised
                                 {
                                         name = "Section(Mounted)"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Modern"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -206,7 +206,7 @@ class CfgGroups
 								class Modern_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Modern"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -240,7 +240,7 @@ class CfgGroups
 								class Modern_Sniper_Team
                                 {
                                         name = "Sniper Team"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Modern"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -264,7 +264,7 @@ class CfgGroups
                                 class Modern_Coin_Section
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Modern"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -326,7 +326,7 @@ class CfgGroups
 								class Modern_Coin_Section_Mounted
                                 {
                                         name = "Section (Mounted)"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Modern"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -388,7 +388,7 @@ class CfgGroups
 								class Modern_Coin_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_Modern"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {

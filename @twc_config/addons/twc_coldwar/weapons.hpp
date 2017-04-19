@@ -32,12 +32,7 @@ class cfgWeapons
 			};
 		};
 	};
-	
-	class FIMStingerA:CUP_launch_FIM92Stinger
-	{
-		author="Jayman";
-		displayName="Stinger A";
-	};
+
 	class CUP_arifle_RPK74;
 	class ukcw_l4: CUP_arifle_RPK74
 	{

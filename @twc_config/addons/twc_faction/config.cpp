@@ -4,80 +4,6 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"ColdWar_Base",
-			"ColdWar_Rifleman",
-			"ColdWar_Rifleman_SUIT",
-			"ColdWar_AT",
-			"ColdWar_AT_ASS",
-			"ColdWar_2IC",
-			"ColdWar_MG",
-			"ColdWar_MG_AS",
-			"ColdWar_Section_Leader",
-			"ColdWar_Platoon_Commander",
-			"ColdWar_Sergeant",
-			"ColdWar_Medic",
-			"ColdWar_FAC",
-			"ColdWar_HeliPilot",
-			"ColdWar_JetPilot",
-			"ColdWar_AA_Gunner",
-			"ColdWar_AA_Assistant",
-			"ColdWar_MilanGunner",
-			"ColdWar_MilanAssistant",
-			"ColdWar_Vehicle_Commander",
-			"ColdWar_Vehicle_Crewman",
-			"1990_British_Base",
-			"1990_British_Squadleader",
-			"1990_British_Rifleman",
-			"1990_British_Gunner",
-			"1990_British_2IC",
-			"1990_British_CGG",
-			"1990_British_CGAss",
-			"1990_British_Platoon_Commander",
-			"1990_British_Platoon_Sergeant",
-			"1990_British_Medic",
-			"1990_British_HeliPilot",
-			"1990_British_JetPilot",
-			"1990_British_MilanGunner",
-			"1990_British_MilanAssistant",
-			"1990_British_MortarGunner",
-			"1990_British_Vehicle_Commander",
-			"1990_British_Vehicle_Crew",
-			"1990_British_Squadleader_Desert",
-			"1990_British_Rifleman_Desert",
-			"1990_British_CGG_Desert",
-			"1990_British_CGAss_Desert",
-			"1990_British_Gunner_Desert",
-			"1990_British_2IC_Desert",
-			"1990_British_Platoon_Commander_Desert",
-			"1990_British_Platoon_Sergeant_Desert",
-			"1990_British_Medic_Desert",
-			"1990_British_HiloPilot_Desert",
-			"1990_British_MilanGunner_Desert",
-			"1990_British_MilanAssistant_Desert",
-			"1990_British_MortarGunner_Desert",
-			"1990_British_Tank_Commander_Desert",
-			"1990_British_Tank_Crew_Desert",
-			"Modern_British_Squadleader",
-			"Modern_British_Rifleman",
-			"Modern_British_Pointman",
-			"Modern_British_Grenadier",
-			"Modern_British_Autorifleman",
-			"Modern_British_2IC",
-			"Modern_British_Machinegunner",
-			"Modern_British_Marksman",
-			"Modern_British_Marksman_COIN",
-			"Modern_British_Platoon_Commander",
-			"Modern_British_Platoon_Sergeant",
-			"Modern_British_Medic",
-			"Modern_British_VehicleCrew",
-			"Modern_British_VehicleCommander",
-			"Modern_British_HeliPilot",
-			"Modern_British_JetPilot",
-			"Modern_British_MortarGunner",
-			"Modern_British_MortarAssistant",
-			"Modern_British_Sniper",
-			"Modern_British_Spotter",
-			"Modern_British_FAC",
 			"GulfWar_Iraqi_Squadleader",
 			"GulfWar_Iraqi_Rifleman",
 			"GulfWar_Iraqi_RPG",
@@ -166,6 +92,38 @@ class CfgEditorSubCategories
 };
 class CfgFactionClasses
 {
+	class TWC_General
+	{
+		displayName="TWC General Operation Units";
+		author="The Wrecking Crew";
+		icon="TWClogo.paa";
+		priority=2;
+		side=1;
+	};
+	class TWC_ColdWar
+	{
+		displayName="TWC Cold War Operation Units";
+		author="The Wrecking Crew";
+		icon="TWClogo.paa";
+		priority=2;
+		side=1;
+	};
+	class TWC_Millenial
+	{
+		displayName="TWC Millenial Operation Units";
+		author="The Wrecking Crew";
+		icon="TWClogo.paa";
+		priority=2;
+		side=1;
+	};
+	class TWC_Modern
+	{
+		displayName="TWC Modern Operation Units";
+		author="The Wrecking Crew";
+		icon="TWClogo.paa";
+		priority=2;
+		side=1;
+	};
 	class Iraqi_units
 	{
 		displayName="Iraqi Army Gulf War Units";

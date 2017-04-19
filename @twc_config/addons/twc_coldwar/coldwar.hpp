@@ -2,9 +2,9 @@
 	{
 		scope=1;
 		displayName="Base";
-		faction="twc_faction";
-		editorSubCategory = "Men_ColdWar";
-		vehicleClass="Men_ColdWar";
+		faction="TWC_ColdWar";
+		editorSubcategory = "Men_ColdWar_Mounted";
+		vehicleClass="Men_ColdWar_Mounted";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="ukcw_p60_uniform";
@@ -555,9 +555,9 @@
 	class ColdWar_AA_Gunner: ColdWar_AT
 	{
 		displayName="AA Gunner";
-		faction="twc_faction";
-		editorSubCategory = "Men_ColdWar";
-		vehicleClass="Men_ColdWar";
+		faction="TWC_ColdWar";
+		editorSubcategory = "Men_ColdWar_Dismounted";
+		vehicleClass="Men_ColdWar_Dismounted";
 		icon="iconManExplosive";
 		backpack="TWC_Backpack_Cold_War_AA";
 		linkedItems[]=
@@ -581,14 +581,14 @@
 			"Throw",
 			"Put",	
 			"ukcw_sterling_sub",
-			"FIMStingerA"
+			"ukcw_blowpipe"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"ukcw_sterling_sub",
-			"FIMStingerA"
+			"ukcw_blowpipe"
 		};	
 	};
 	class ColdWar_AA_Assistant: ColdWar_AA_Gunner
@@ -610,6 +610,8 @@
 	class ColdWar_MilanGunner: ColdWar_AT
 	{
 		displayName="Milan Gunner";
+		editorSubcategory = "Men_ColdWar_Dismounted";
+		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_Milan";
 		weapons[]=
 		{
@@ -767,35 +769,49 @@
 	class ColdWar_Rifleman_Dismounted: ColdWar_Rifleman
 	{
 		displayName="Rifleman (Dismounted)";
+		editorSubcategory = "Men_ColdWar_Dismounted";
+		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_Rifleman";
 	};
 	class ColdWar_Rifleman_SUIT_Dismounted: ColdWar_Rifleman_SUIT
 	{
 		displayName="Rifleman (Dismounted)";
+		editorSubcategory = "Men_ColdWar_Dismounted";
+		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_Rifleman";
 	};
 	class ColdWar_AT_Dismounted: ColdWar_AT
 	{
 		displayName="AT Rifleman (Dismounted)";
+		editorSubcategory = "Men_ColdWar_Dismounted";
+		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_AT";
 	};
 	class ColdWar_AT_Ass_Dismounted: ColdWar_AT_Ass
 	{
 		displayName="AT Assistant (Dismounted)";
+		editorSubcategory = "Men_ColdWar_Dismounted";
+		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_AT_Ass_Dismounted";
 	};
 	class ColdWar_2IC_Dismounted: ColdWar_2IC
 	{
 		displayName="2IC (Dismounted)";
+		editorSubcategory = "Men_ColdWar_Dismounted";
+		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_2IC_Dismounted";
 	};
 	class ColdWar_MG_Dismounted: ColdWar_MG
 	{
 		displayName="Machine Gunner (Dismounted)";
+		editorSubcategory = "Men_ColdWar_Dismounted";
+		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_MG";
 	};
 	class ColdWar_MG_Ass_Dismounted: ColdWar_MG_AS
 	{
 		displayName="MG Assistant (Dismounted)";
+		editorSubcategory = "Men_ColdWar_Dismounted";
+		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_MGAss";
 	};

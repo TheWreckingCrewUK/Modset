@@ -1,10 +1,10 @@
-	class 2000_British_Base: B_Soldier_base_F
+	class 1990_British_Base: B_Soldier_base_F
 	{
 		scope=1;
-		displayName="Base (00's Woodland)";
-		faction="twc_faction";
-		editorSubcategory = "Men_2000W";
-		vehicleClass="Men_2000W";
+		displayName="Base";
+		faction="TWC_Millenial";
+		editorSubcategory = "Men_1990_Woodland_Dismounted";
+		vehicleClass="Men_1990_Woodland_Dismounted";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="TWC_Smock_Temperate";
@@ -76,10 +76,10 @@
 			"ACRE_PRC343"	
 		};		
 	};
-	class 2000_British_SectionCommander: 2000_British_Base
+	class 1990_British_SectionCommander: 1990_British_Base
 	{
 		scope=2;
-		displayName="Section Leader (00's Woodland)";
+		displayName="Section Leader ";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_1990_Sectionlead";
 		weapons[]=
@@ -94,7 +94,7 @@
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"UK3CB_BAF_L85A2_SUSAT3D"
+			"UK3CB_BAF_L85A1_SUSAT3D_Lazer"
 		};
 		magazines[]=
 		{
@@ -127,22 +127,22 @@
 			"SmokeShell"
 		};
 	};
-	class 2000_British_Rifleman: 2000_British_Base
+	class 1990_British_Rifleman: 1990_British_Base
 	{
 		scope=2;
-		displayName="Rifleman(00's Woodland)";
+		displayName="Rifleman";
 		backpack="TWC_Backpack_1990_Rifleman";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D"
+			"UK3CB_BAF_L85A1_SUSAT3D"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D"
+			"UK3CB_BAF_L85A1_SUSAT3D"
 		};
 		magazines[]=
 		{
@@ -173,24 +173,24 @@
 			"SmokeShell"
 		};	
 	};
-	class 2000_British_Rifleman_AT: 2000_British_Base
+	class 1990_British_Rifleman_AT: 1990_British_Base
 	{
 		scope=2;
-		displayName="RifleMan AT(00's Woodland)";
-		backpack="TWC_Backpack_1990_Rifleman";
+		displayName="RifleMan AT";
+		backpack="";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D",
-			"TWC_ILAW_HEDP"
+			"UK3CB_BAF_L85A1_SUSAT3D",
+			"ukf_law80launcher"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D",
-			"TWC_ILAW_HEDP"
+			"UK3CB_BAF_L85A1_SUSAT3D",
+			"ukf_law80launcher"
 		};
 		magazines[]=
 		{
@@ -219,65 +219,23 @@
 			"SmokeShell"
 		};	
 	};
-	class 2000_British_AutoRifleman: 2000_British_Base
+	class 1990_British_Gunner: 1990_British_Base
 	{
 		scope=2;
-		displayName="Auto-Rifleman (00's Woodland)";
-		icon="iconManMG";
-		backpack="TWC_Backpack_2000_AutoRifleman";
-		weapons[]=
-		{
-			"Throw",
-			"Put",	
-			"UK3CB_BAF_L110A1"
-		};
-		respawnweapons[]=
-		{
-			"Throw",
-			"Put",	
-			"UK3CB_BAF_L110A1"
-		};
-		magazines[]=
-		{
-			"UK3CB_BAF_556_200Rnd",
-			"UK3CB_BAF_556_200Rnd",
-			"UK3CB_BAF_556_200Rnd_T",
-			"CUP_HandGrenade_L109A2_HE",
-			"SmokeShell",
-			"SmokeShell"
-		};
-		Respawnmagazines[]=
-		{
-			"UK3CB_BAF_556_200Rnd",
-			"UK3CB_BAF_556_200Rnd",
-			"UK3CB_BAF_556_200Rnd_T",
-			"CUP_HandGrenade_L109A2_HE",
-			"SmokeShell",
-			"SmokeShell"
-		};
-	};
-	class 2000_British_2IC: 2000_British_Rifleman
-	{
-		displayName="2IC(00's Woodland)";
-		backpack="TWC_Backpack_1990_2IC";
-	};
-	class 2000_British_Marksman: 2000_British_Base
-	{
-		scope=2;
-		displayName="Marksman (00's Woodland)";
+		displayName="Gunner";
 		icon="iconManMG";
 		backpack="TWC_Backpack_1990_Gunner";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L86A2_SUSAT3D"
+			"UK3CB_BAF_L86A1_SUSAT3D"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L86A2_SUSAT3D"
+			"UK3CB_BAF_L86A1_SUSAT3D"
 		};
 		magazines[]=
 		{
@@ -314,10 +272,15 @@
 			"SmokeShell"
 		};
 	};
-	class 2000_British_Platoon_Commander: 2000_British_Base
+	class 1990_British_2IC: 1990_British_Rifleman
+	{
+		displayName="2IC";
+		backpack="TWC_Backpack_1990_2IC";
+	};
+	class 1990_British_Platoon_Commander: 1990_British_Base
 	{
 		scope=2;
-		displayName="Platoon Commander(00's Woodland)";
+		displayName="Platoon Commander(90`s Woodland)";
 		backpack="TWC_Backpack_1990_Platoon_Command";
 		weapons[]=
 		{
@@ -352,23 +315,23 @@
 			"CUP_HandGrenade_L109A2_HE"
 		};
 	};
-	class 2000_British_Platoon_Sergeant: 2000_British_Platoon_Commander
+	class 1990_British_Platoon_Sergeant: 1990_British_Platoon_Commander
 	{
-		displayName="Platoon Sergeant(00's Woodland)";
+		displayName="Platoon Sergeant";
 		backpack="TWC_Backpack_1990_Platoon_Sergeant";
 	};
-	class 2000_British_Platoon_CSM: 2000_British_Platoon_Commander
+	class 1990_British_Platoon_CSM: 1990_British_Platoon_Commander
 	{
-		displayName="Company Sergeant Major(00's Woodland)";
+		displayName="Company Sergeant Major(90`s Woodland)";
 		class EventHandlers: EventHandlers
 		{
 			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
 		};
 	};
-	class 2000_British_Medic: 2000_British_Base
+	class 1990_British_Medic: 1990_British_Base
 	{
 		scope=2;
-		displayName="Medic(00's Woodland)";
+		displayName="Medic";
 		backpack="TWC_Backpack_1990_Medic";
 		weapons[]=
 		{
@@ -407,10 +370,10 @@
 			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
 		};
 	};
-	class 2000_British_HeliPilot: 2000_British_Base
+	class 1990_British_HeliPilot: 1990_British_Base
 	{
 		scope=2;
-		displayName="Helicopter Pilot (00's Woodland)";
+		displayName="Helicopter Pilot";
 		backpack="B_AssaultPack_blk";
 		linkedItems[]=
 		{
@@ -432,35 +395,35 @@
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub"
+			"UK3CB_BAF_L91A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub"
+			"UK3CB_BAF_L91A1"
 		};
 		magazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_9_30Rnd",
+			"UK3CB_BAF_9_30Rnd",
+			"UK3CB_BAF_9_30Rnd",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_9_30Rnd",
+			"UK3CB_BAF_9_30Rnd",
+			"UK3CB_BAF_9_30Rnd",
 			"SmokeShell",
 			"SmokeShell"
 
 		};
 	};
-	class 2000_British_JetPilot: 2000_British_HeliPilot
+	class 1990_British_JetPilot: 1990_British_HeliPilot
 	{
-		displayName="Jet Pilot (00's Woodland)";
+		displayName="Jet Pilot ";
 		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_RAF";
 		backpack="B_AssaultPack_blk";
 		linkedItems[]=
@@ -478,38 +441,18 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
-		};	
-		weapons[]=
-		{
-			"Throw",
-			"Put"
-		};
-		respawnweapons[]=
-		{
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-			"SmokeShell",
-			"SmokeShell"
-		};
-		Respawnmagazines[]=
-		{
-			"SmokeShell",
-			"SmokeShell"
 		};
 	};
-	class 2000_British_MilanGunner: 2000_British_Base
+	class 1990_British_MilanGunner: 1990_British_Base
 	{
 		scope=2;
-		displayName="Milan Gunner (00's Woodland)";
+		displayName="Milan Gunner";
 		backpack="TWC_Backpack_1990_Milan";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D",
+			"UK3CB_BAF_L85A1_SUSAT3D",
 			"TWC_Milan_Tripod_Disassemabled"
 		};
 		respawnweapons[]=
@@ -536,9 +479,9 @@
 			"SmokeShell"
 		};
 	};
-	class 2000_British_MilanAssistant: 2000_British_MilanGunner
+	class 1990_British_MilanAssistant: 1990_British_MilanGunner
 	{
-		displayName="Milan Assistant(00's Woodland)";
+		displayName="Milan Assistant";
 		backpack="TWC_Backpack_1990_Milan";
 		weapons[]=
 		{
@@ -551,13 +494,13 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D",
+			"UK3CB_BAF_L85A1_SUSAT3D",
 			"TWC_Milan_Launcher_Disassemabled"
 		};
 	};
-	class 2000_British_MortarGunner: 2000_British_Rifleman
+	class 1990_British_MortarGunner: 1990_British_Rifleman
 	{
-		displayName="Mortar Gunner(00's Woodland)";
+		displayName="Mortar Gunner(90`s Woodland)";
 		backpack="TWC_Backpack_1990_Mortar";
 		weapons[]=
 		{
@@ -594,61 +537,65 @@
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
 		};	
 	};
-	class 2000_British_CGG: 2000_British_Rifleman
+	class 1990_British_CGG: 1990_British_Rifleman
 	{
-		displayName="Carl-Gustaf Gunner (00's Woodland)";
+		displayName="Carl-Gustaf Gunner";
 		backpack="TWC_Backpack_1990_CG";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D",
+			"UK3CB_BAF_L85A1_SUSAT3D",
 			"TWC_Carl_Gustav"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D",
+			"UK3CB_BAF_L85A1_SUSAT3D",
 			"TWC_Carl_Gustav"
 		};
 	};
-	class 2000_British_CGAss: 2000_British_Rifleman
+	class 1990_British_CGAss: 1990_British_Rifleman
 	{
-		displayName="Carl-Gustaf Assistant(00's Woodland)";
+		displayName="Carl-Gustaf Assistant";
 		backpack="TWC_Backpack_1990_CGAss";
 	};
 	
 //////////////////////////////  Mounted  //////////////////////////////
-	class 2000_British_Rifleman_Mounted: 2000_British_Rifleman
+	class 1990_British_Rifleman_Mounted: 1990_British_Rifleman
 	{
-		displayName="Rifleman (00's Mounted)";
+		displayName="Rifleman";
+		editorSubcategory = "Men_1990_Woodland_Mounted";
+		vehicleClass="Men_1990_Woodland_Mounted";
 		backpack="";
 	};
-	class 2000_British_Rifleman_AT_Mounted: 2000_British_Rifleman
+	class 1990_British_Rifleman_AT_Mounted: 1990_British_Rifleman_AT
 	{
-		displayName="Rifleman AT (00's Mounted)";
+		displayName="Rifleman AT";
+		editorSubcategory = "Men_1990_Woodland_Mounted";
+		vehicleClass="Men_1990_Woodland_Mounted";
 		backpack="";
 	};
-	class 2000_British_AutoRifleman_Mounted: 2000_British_AutoRifleman
+	class 1990_British_Gunner_Mounted: 1990_British_Gunner
 	{
-		displayName="Auto-Rifleman (00's Mounted)";
-		backpack="TWC_Backpack_2000_AutoRifleman_Kitbag";
+		displayName="Gunner";
+		editorSubcategory = "Men_1990_Woodland_Mounted";
+		vehicleClass="Men_1990_Woodland_Mounted";
+		backpack="";
 	};
-	class 2000_British_2IC_Mounted: 2000_British_Marksman
+	class 1990_British_2IC_Mounted: 1990_British_Gunner
 	{
-		displayName="2IC (00's Mounted)";
+		displayName="2IC";
+		editorSubcategory = "Men_1990_Woodland_Mounted";
+		vehicleClass="Men_1990_Woodland_Mounted";
 		backpack="TWC_Backpack_1990_2IC_Mounted";
 	};
-	class 2000_British_Marksman_Mounted: 2000_British_Marksman
+	class 1990_British_Vehicle_Commander: 1990_British_Base
 	{
-		displayName="Marksman (00's Mounted)";
-		backpack="";
-	};
-	class 2000_British_Vehicle_Commander: 2000_British_Base
-	{
-		displayName="Vehicle Commander (00's Woodland)";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DPMT";
+		displayName="Vehicle Commander";
+		editorSubcategory = "Men_1990_Woodland_Mounted";
+		vehicleClass="Men_1990_Woodland_Mounted";
 		backpack="B_AssaultPack_blk";
 		linkedItems[]=
 		{
@@ -670,19 +617,19 @@
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub"
+			"UK3CB_BAF_L85A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"ukcw_sterling_sub"
+			"UK3CB_BAF_L85A1"
 		};
 		magazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell",
 			"SmokeShell"
 		};
@@ -695,22 +642,24 @@
 			"SmokeShell"
 		};
 	};
-    class 2000_British_Vehicle_Crew: 2000_British_Vehicle_Commander
+    class 1990_British_Vehicle_Crew: 1990_British_Vehicle_Commander
 	{
-		displayName="Vehicle Crew(00's Woodland)";
+		displayName="Vehicle Crew";
+		editorSubcategory = "Men_1990_Woodland_Mounted";
+		vehicleClass="Men_1990_Woodland_Mounted";
 		backpack="";
 	};
 //////////////////////////////////////////////////////////////////
 //                                                              //
-//                    2000 Desert British                       //
+//                    1990 Desert British                       //
 //                                                              //
 //////////////////////////////////////////////////////////////////
 
-	class 2000_British_SectionCommander_Desert: 2000_British_SectionCommander
+	class 1990_British_SectionCommander_Desert: 1990_British_SectionCommander
 	{
-		displayName="Section Leader(00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Section Leader";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_1990_Sectionlead_Desert";
 		linkedItems[]=
@@ -729,13 +678,13 @@
 			"ItemWatch"
 		};
 	};
-	class 2000_British_Rifleman_Desert: 2000_British_Rifleman
+	class 1990_British_Rifleman_Desert: 1990_British_Rifleman
 	{
-		displayName="RifleMan(00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Rifleman";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
-		backpack="TWC_Backpack_1990_Rifleman_Desert";
+		backpack="";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
@@ -753,13 +702,13 @@
 			"ItemWatch"
 		};
 	};
-	class 2000_British_Rifleman_AT_Desert: 2000_British_Rifleman
+	class 1990_British_Rifleman_AT_Desert: 1990_British_Rifleman
 	{
-		displayName="RifleMan AT(00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="RifleMan AT";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
-		backpack="TWC_Backpack_1990_Rifleman_Desert";
+		backpack="";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
@@ -777,13 +726,13 @@
 			"ItemWatch"
 		};
 	};
-	class 2000_British_AutoRifleman_Desert: 2000_British_AutoRifleman
+	class 1990_British_Gunner_Desert: 1990_British_Gunner
 	{
-		displayName="Auto-Rifleman (00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Gunner";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
-		backpack="TWC_Backpack_2000_AutoRifleman_Desert";
+		backpack="TWC_Backpack_1990_Gunner_Desert";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
@@ -800,11 +749,11 @@
 			"ItemWatch"
 		};
 	};
-	class 2000_British_2IC_Desert: 2000_British_2IC
+	class 1990_British_2IC_Desert: 1990_British_2IC
 	{
-		displayName="2IC (00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="2IC";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_1990_2IC_Desert";
 		linkedItems[]=
@@ -824,34 +773,11 @@
 			"ItemWatch"
 		};
 	};
-	class 2000_British_Marksman_Desert: 2000_British_Marksman
+	class 1990_British_Platoon_Commander_Desert: 1990_British_Platoon_Commander
 	{
-		displayName="Gunner(00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
-		uniformClass="TWC_Smock_Desert";
-		backpack="TWC_Backpack_1990_Gunner_Desert";
-		linkedItems[]=
-		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
-			"UK3CB_BAF_H_Mk6_DDPM_A",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch"
-		};
-	};
-	class 2000_British_Platoon_Commander_Desert: 2000_British_Platoon_Commander
-	{
-		displayName="Platoon Commander(00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Platoon Commander";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_1990_Platoon_Command_Desert";
 		linkedItems[]=
@@ -871,12 +797,12 @@
 			"ItemWatch"
 		};
 	};
-	class 2000_British_Platoon_Sergeant_Desert: 2000_British_Platoon_Sergeant
+	class 1990_British_Platoon_Sergeant_Desert: 1990_British_Platoon_Sergeant
 	{
 		scope=2;
-		displayName="Platoon Sergeant(00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Platoon Sergeant";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_1990_Platoon_Sergeant_Desert";
 		linkedItems[]=
@@ -896,19 +822,21 @@
 			"ItemWatch"
 		};
 	};
-	class 2000_British_Platoon_CSM_Desert: 2000_British_Platoon_Commander_Desert
+	class 1990_British_Platoon_CSM_Desert: 1990_British_Platoon_Commander_Desert
 	{
-		displayName="Company Sergeant Major(00's Desert)";
+		displayName="Company Sergeant Major";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		class EventHandlers: EventHandlers
 		{
 			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
 		};
 	};
-	class 2000_British_Medic_Desert: 2000_British_Medic
+	class 1990_British_Medic_Desert: 1990_British_Medic
 	{
-		displayName="Medic(00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Medic";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_1990_Medic_Desert";
 		linkedItems[]=
@@ -932,11 +860,11 @@
 			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
 		};
 	};
-    class 2000_British_HeliPilot_Desert: 2000_British_HeliPilot
+    class 1990_British_HeliPilot_Desert: 1990_British_HeliPilot
 	{
-		displayName="Helicopter Pilot(00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Helicopter Pilot";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
 		linkedItems[]=
 		{
@@ -955,11 +883,11 @@
 			"ItemWatch"
 		};
 	};
-	class 2000_British_MilanGunner_Desert: 2000_British_MilanGunner
+	class 1990_British_MilanGunner_Desert: 1990_British_MilanGunner
 	{
-		displayName="Milan Gunner(00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Milan Gunner";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_1990_Milan_Desert";
 		linkedItems[]=
@@ -979,11 +907,11 @@
 			"ItemWatch"
 		};
 	};
-	class 2000_British_MilanAssistant_Desert: 2000_British_MilanAssistant
+	class 1990_British_MilanAssistant_Desert: 1990_British_MilanAssistant
 	{
-		displayName="Milan Assistant(00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Milan Assistant";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_1990_Milan_Desert";
 		linkedItems[]=
@@ -1003,11 +931,11 @@
 			"ItemWatch"
 		};
 	};
-	class 2000_British_MortarGunner_Desert: 2000_British_MortarGunner
+	class 1990_British_MortarGunner_Desert: 1990_British_MortarGunner
 	{
-		displayName="Mortar Gunner(00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Mortar Gunner";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_1990_Mortar_Desert";
 		linkedItems[]=
@@ -1027,61 +955,68 @@
 			"ItemWatch"
 		};	
 	};
-	class 2000_British_CGG_Desert: 2000_British_CGG
+	class 1990_British_CGG_Desert: 1990_British_CGG
 	{
-		displayName="Carl-Gustaf Gunner (00's Desert)";
+		displayName="Carl-Gustaf Gunner";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		backpack="TWC_Backpack_1990_CG_Desert";
 		weapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D",
+			"UK3CB_BAF_L85A1_SUSAT3D",
 			"TWC_Carl_Gustav"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D",
+			"UK3CB_BAF_L85A1_SUSAT3D",
 			"TWC_Carl_Gustav"
 		};
 	};
-	class 2000_British_CGAss_Desert: 2000_British_CGAss
+	class 1990_British_CGAss_Desert: 1990_British_CGAss
 	{
-		displayName="Carl-Gustaf Assistant(00's Desert)";
+		displayName="Carl-Gustaf Assistant";
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
 		backpack="TWC_Backpack_1990_CGAss_Desert";
 	};
 //////////////////////////////  Mounted  //////////////////////////////
-	class 2000_British_Rifleman_Mounted_Desert: 2000_British_Rifleman_Desert
+	class 1990_British_Rifleman_Mounted_Desert: 1990_British_Rifleman_Desert
 	{
-		displayName="Rifleman (00's Mounted Desert)";
+		displayName="Rifleman";
+		editorSubcategory = "Men_1990_Desert_Mounted";
+		vehicleClass="Men_1990_Desert_Mounted";
 		backpack="";
 	};
-	class 2000_British_Rifleman_AT_Mounted_Desert: 2000_British_Rifleman_Desert
+	class 1990_British_Rifleman_AT_Mounted_Desert: 1990_British_Rifleman_AT_Desert
 	{
-		displayName="Rifleman AT (00's Mounted Desert)";
+		displayName="Rifleman AT";
+		editorSubcategory = "Men_1990_Desert_Mounted";
+		vehicleClass="Men_1990_Desert_Mounted";
 		backpack="";
 	};
-	class 2000_British_Marksman_Mounted_Desert: 2000_British_Marksman_Desert
+	class 1990_British_Gunner_Mounted_Desert: 1990_British_Gunner_Desert
 	{
-		displayName="Marksman (00's Mounted Desert)";
+		displayName="Gunner";
+		editorSubcategory = "Men_1990_Desert_Mounted";
+		vehicleClass="Men_1990_Desert_Mounted";
 		backpack="";
 	};
-	class 2000_British_AutoRifleman_Mounted_Desert: 2000_British_AutoRifleman_Desert
+	class 1990_British_2IC_Mounted_Desert: 1990_British_Gunner_Desert
 	{
-		displayName="Auto-Rifleman (00's Mounted Desert)";
-		backpack="TWC_Backpack_2000_AutoRifleman_Kitbag_Desert";
-	};
-	class 2000_British_2IC_Mounted_Desert: 2000_British_Marksman_Desert
-	{
-		displayName="2IC (00's Mounted Desert)";
+		displayName="2IC";
+		editorSubcategory = "Men_1990_Desert_Mounted";
+		vehicleClass="Men_1990_Desert_Mounted";
 		backpack="TWC_Backpack_1990_2IC_Desert_Mounted";
 	};
-    class 2000_British_Vehicle_Commander_Desert: 2000_British_Vehicle_Commander
+    class 1990_British_Vehicle_Commander_Desert: 1990_British_Vehicle_Commander
 	{
-		displayName="Vehicle Commander (00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Vehicle Commander";
+		editorSubcategory = "Men_1990_Desert_Mounted";
+		vehicleClass="Men_1990_Desert_Mounted";
 		uniformClass="TWC_Smock_Desert";
 		linkedItems[]=
 		{
@@ -1102,11 +1037,11 @@
 			"UK3CB_BAF_G_Tactical_Black"
 		};
 	};
-    class 2000_British_Vehicle_Crew_Desert: 2000_British_Vehicle_Crew
+    class 1990_British_Vehicle_Crew_Desert: 1990_British_Vehicle_Crew
 	{
-		displayName="Vehicle Crew (00's Desert)";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Vehicle Crew";
+		editorSubcategory = "Men_1990_Desert_Mounted";
+		vehicleClass="Men_1990_Desert_Mounted";
 		uniformClass="TWC_Smock_Desert";
 		linkedItems[]=
 		{
@@ -1127,14 +1062,14 @@
 			"UK3CB_BAF_G_Tactical_Black"
 		};
 	};
-	class 2000_British_Tank_Commander_Desert: B_Soldier_base_F
+	class 1990_British_Tank_Commander_Desert: B_Soldier_base_F
 	{
-		_generalMacro="2000_Desert_British_Tank Commander";
+		_generalMacro="1990_Desert_British_Tank Commander";
 		scope=2;
-		displayName="Vehicle Commander (00's Desert)";
-		faction="twc_faction";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Vehicle Commander";
+		faction="TWC_Millenial";
+		editorSubcategory = "Men_1990_Desert_Mounted";
+		vehicleClass="Men_1990_Desert_Mounted";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="TWC_Smock_Desert";
@@ -1159,26 +1094,26 @@
 		{
 		"Throw",
 		"Put",	
-		"ukcw_sterling_sub"
+		"UK3CB_BAF_L85A1"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"ukcw_sterling_sub"
+		"UK3CB_BAF_L85A1"
 		};
 		magazines[]=
 		{
-		"ukcw_34_rnd_sterling_mag",
-		"ukcw_34_rnd_sterling_mag",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"ukcw_34_rnd_sterling_mag",
-		"ukcw_34_rnd_sterling_mag",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -1232,14 +1167,13 @@
 		"ACE_EarPlugs"
 		};
 	};
-    class 2000_British_Tank_Crew_Desert: B_Soldier_base_F
+    class 1990_British_Tank_Crew_Desert: B_Soldier_base_F
 	{
-		_generalMacro="2000_Desert_Tank_Crew";
 		scope=2;
-		displayName="Vehicle Crew (00's Desert)";
-		faction="twc_faction";
-		editorSubcategory = "Men_2000D";
-		vehicleClass="Men_2000D";
+		displayName="Vehicle Crew";
+		faction="TWC_Millenial";
+		editorSubcategory = "Men_1990_Desert_Mounted";
+		vehicleClass="Men_1990_Desert_Mounted";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="TWC_Smock_Desert";
@@ -1263,26 +1197,26 @@
 		{
 		"Throw",
 		"Put",	
-		"ukcw_sterling_sub"
+		"UK3CB_BAF_L85A1"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
-		"ukcw_sterling_sub"
+		"UK3CB_BAF_L85A1"
 		};
 		magazines[]=
 		{
-		"ukcw_34_rnd_sterling_mag",
-		"ukcw_34_rnd_sterling_mag",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"ukcw_34_rnd_sterling_mag",
-		"ukcw_34_rnd_sterling_mag",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"

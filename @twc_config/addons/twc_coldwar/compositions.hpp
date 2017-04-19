@@ -13,7 +13,7 @@ class CfgGroups
                                 class Coldwar_Section
                                 {
                                         name = "Section (Mounted)"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_ColdWar"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -75,7 +75,7 @@ class CfgGroups
 								 class Coldwar_Section_Dismounted
                                 {
                                         name = "Section"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_ColdWar"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -137,7 +137,7 @@ class CfgGroups
 								 class Coldwar_Section_Mechanised
                                 {
                                         name = "Section (Mechanised)"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_ColdWar"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -206,7 +206,7 @@ class CfgGroups
 								class Coldwar_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_ColdWar"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {
@@ -247,7 +247,7 @@ class CfgGroups
 								class Coldwar_AA
 								{
 										name = "AA Team";
-										faction = "twc_faction";
+										faction = "TWC_ColdWar";
 										side = 1;
 										class Unit0
 										{
@@ -267,7 +267,7 @@ class CfgGroups
 								class Coldwar_Milan
 								{
 										name = "Milan Team";
-										faction = "twc_faction";
+										faction = "TWC_ColdWar";
 										side = 1;
 										class Unit0
 										{
@@ -294,7 +294,7 @@ class CfgGroups
 								class Coldwar_VehicleCrew
                                 {
                                         name = "Vehicle Crew"; //Name of Group
-                                        faction = "twc_faction"; //Faction
+                                        faction = "TWC_ColdWar"; //Faction
                                         side = 1; //Side
                                         class Unit0
                                         {

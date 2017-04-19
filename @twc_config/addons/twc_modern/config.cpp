@@ -45,37 +45,30 @@ class CfgPatches
 			"A3_Characters_F_Common",
 			"A3_Characters_F",
 			"a3_characters_f_beta",
-			"a3_characters_f_gamma"
+			"a3_characters_f_gamma",
+			"TWC_Faction"
 		};
 	};
 };
 class EventHandlers;
 class CfgEditorSubCategories
 {
-	class Men_Modern
-	{
-		displayName = "Men (Modern)";
-	};
 	class Men_Modern_Mounted
 	{
-		displayName = "Men (Modern Dismounted)";
+		displayName = "Men (Mounted)";
 	};
-	class Men_ModernCoin
+	class Men_Modern_Dismounted
 	{
-		displayName = "Men (Modern COIN)";
+		displayName = "Men (Dismounted)";
 	};
-};
-class CfgFactionClasses
-{
-	class twc_modern
+	class Men_Modern_COIN
 	{
-		displayName="TWC Operation Units";
-		author="FakeMatty";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
+		displayName = "Men (COIN)";
 	};
-	
+	class Men_Modern_COIN_Mounted
+	{
+		displayName = "Men (COIN Mounted)";
+	};
 };
 #include "compositions.hpp"
 class CfgVehicles
