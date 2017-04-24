@@ -57,10 +57,6 @@ class CfgPatches
 };
 class CfgEditorSubCategories
 {
-	class Men_USSR
-	{
-		displayName = "Men (USSR)";
-	};
 	class Men_RussianFederation
 	{
 		displayName = "Men (Russian Federation)";
@@ -215,7 +211,6 @@ class CfgVehicles
 	class I_Soldier_F;
 	
 	#include "russianfederation.hpp"
-	#include "ussr.hpp"
 	#include "iraq.hpp"
 	#include "argentina.hpp"
 	#include "african.hpp"
