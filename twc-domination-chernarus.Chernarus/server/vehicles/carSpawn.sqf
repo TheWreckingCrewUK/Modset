@@ -75,7 +75,7 @@ if(isModded == 0)then{
 
 if(isModded == 1)then{
 
-	_veh1 = "CUP_B_LR_Transport_GB_W" createVehicle (getMarkerPos "veh1");
+	_veh1 = "UK3CB_BAF_LandRover_Hard_Green_A" createVehicle (getMarkerPos "veh1");
 	_veh1 setdir _dir;
 	clearItemCargoGlobal _veh1;
 	clearMagazineCargoGlobal _veh1;
@@ -83,7 +83,7 @@ if(isModded == 1)then{
 	clearBackpackCargoGlobal _veh1;
 	[_veh1, _deadTime, _abandenTime, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
 	
-	_veh2 = "CUP_B_LR_Transport_GB_W" createVehicle (getMarkerPos "veh2");
+	_veh2 = "UK3CB_BAF_LandRover_Hard_FFR_Green_A" createVehicle (getMarkerPos "veh2");
 	_veh2 setdir _dir;
 	clearItemCargoGlobal _veh2;
 	clearMagazineCargoGlobal _veh2;
@@ -186,6 +186,30 @@ if(isModded == 1)then{
 	clearWeaponCargoGlobal _veh14;
 	clearBackpackCargoGlobal _veh14;
 	[_veh14, _deadTime, _abandenTime, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
+	
+	_veh15 = "CUP_B_MTVR_Repair_USMC" createVehicle (getMarkerPos "veh15");
+	_veh15 setdir 325;
+	clearItemCargoGlobal _veh15;
+	clearMagazineCargoGlobal _veh15;
+	clearWeaponCargoGlobal _veh15;
+	clearBackpackCargoGlobal _veh15;
+	[_veh15, _deadTime, _abandenTime, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
+	
+	_veh16 = "CUP_B_MTVR_Refuel_USMC" createVehicle (getMarkerPos "veh16");
+	_veh16 setdir 325;
+	clearItemCargoGlobal _veh16;
+	clearMagazineCargoGlobal _veh16;
+	clearWeaponCargoGlobal _veh16;
+	clearBackpackCargoGlobal _veh16;
+	[_veh16, _deadTime, _abandenTime, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
+	
+	_veh17 = "CUP_B_MTVR_Ammo_USMC" createVehicle (getMarkerPos "veh17");
+	_veh17 setdir 325;
+	clearItemCargoGlobal _veh17;
+	clearMagazineCargoGlobal _veh17;
+	clearWeaponCargoGlobal _veh17;
+	clearBackpackCargoGlobal _veh17;
+	[_veh17, _deadTime, _abandenTime, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
 };
 
 if(isModded == 2)then{
