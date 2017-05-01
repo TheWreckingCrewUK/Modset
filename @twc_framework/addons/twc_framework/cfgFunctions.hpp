@@ -26,6 +26,7 @@ class CfgFunctions
 			class daisyCutter{};
 			class reconnected{};
 			class createMarker{};
+			class stationaryUnits{};
 			class virtualMortar{};
 		};
 		class Modules
