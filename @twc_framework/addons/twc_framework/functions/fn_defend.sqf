@@ -22,5 +22,10 @@ _group setVariable ["twc_cacheDefending",true];
 
 waitUntil {groupOwner _group != 2};
 
+_group setVariable ["twc_cacheDefending",true];
+{
+		_x setVariable ["NOAI",1,false];
+}forEach units _group;
+
 _groupOwner = (groupOwner _group);
 [_group,_pos,_radius,_size,_patrol] remoteExecCall ["CBA_fnc_taskDefend",_groupOwner];
