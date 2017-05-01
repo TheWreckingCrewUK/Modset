@@ -5,26 +5,21 @@
 * Also starts with a sleep because of issues with headless clients so it must be spawned
 * unlike the called cba function.
 */
-params["_group",["_pos",[]],["_radius",200],["_size",2],["_patrol",false]];
+params["_unit",["_pos",[]],["_radius",200],["_size",2],["_patrol",false]];
 
-if((typeName _group) isEqualTo "OBJECT")then{
-	_group = group _group;
-}else{
-
-};
-if((typeName _pos) isEqualTo "STRING")then{
-	_pos = getMarkerPos _pos;
-};
-_group setVariable ["twc_cacheDefending",true];
+(group _unit) setVariable ["twc_cacheDefending",true];
 {
 		_x setVariable ["NOAI",1,false];
 }forEach units _group;
 
 waitUntil {groupOwner _group != 2};
 
-_group setVariable ["twc_cacheDefending",true];
+if((typeName _pos) isEqualTo "STRING")then{
+	_pos = getMarkerPos _pos;
+};
+
 {
-		_x setVariable ["NOAI",1,false];
+	_x setVariable ["NOAI",1,false];
 }forEach units _group;
 
 _groupOwner = (groupOwner _group);
