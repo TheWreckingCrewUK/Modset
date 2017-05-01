@@ -9,9 +9,15 @@ params["_group",["_pos",[]],["_radius",200],["_size",2],["_patrol",false]];
 
 if((typeName _group) isEqualTo "OBJECT")then{
 	(group _group) setVariable ["twc_cacheDefending",true];
+	{
+		_x setVariable ["NOAI",1,false];
+	}forEach units (group _group);
 	waitUntil {(groupOwner (group _group)) != 2};
 }else{
 	_group setVariable ["twc_cacheDefending",true];
+	{
+		_x setVariable ["NOAI",1,false];
+	}forEach units _group;
 	waitUntil {groupOwner _group != 2};
 };
 if((typeName _pos) isEqualTo "STRING")then{
