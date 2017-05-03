@@ -10,33 +10,37 @@
 / 5 - Only if Custom ERA: Config classname of Group
 */
 if (isServer) then {
-params ["_spawnmarker","_dropmarker","_movemarker",["_Era","Modern"],["_helicopterspawn",""],"_group"];//,
+params ["_spawnmarker","_dropmarker","_movemarker",["_ERA", "Modern"],["_helicopterType",""],["_infantryType",""]];
 
-_RUsquad = (configfile >> "CfgGroups" >> "East" >> "rhs_faction_msv" >> "rhs_group_rus_msv_infantry" >> "rhs_group_rus_msv_infantry_squad");
-_USSRsquad = (configfile >> "CfgGroups" >> "East" >> "TWC_Operation_Redfor" >> "ColdWar_USSR_INF" >> "Section_USSR_ColdWar_AirAssault");
-
-if (_Era == "Modern") then {_helicopterspawn = "RHS_Mi8mt_Cargo_vvsc";_group = _RUsquad};
-if (_Era == "Cold") then {_helicopterspawn = "SUD_MI8";_group = _USSRsquad};
+if (_Era == "Modern") then 
+{
+_helicopterType = "RHS_Mi8mt_vdv"; 
+_infantryType = (configfile >> "CfgGroups" >> "East" >> "rhs_faction_msv" >> "rhs_group_rus_msv_infantry" >> "rhs_group_rus_msv_infantry_squad");
+};
+if (_Era == "Cold") then 
+{
+_helicopterType = "BCCCCP_Mi8T";
+_infantryType = (configfile >> "CfgGroups" >> "EAST" >> "BCCCCP" >> "BBC" >> "Dismounted_Section");
+};
 if (_Era == "Custom") then {};
 
-_helipad = [getMarkerPos _dropmarker, 180, "Land_HelipadEmpty_F"] call BIS_fnc_spawnVehicle;
- _crew1 = creategroup EAST;
- _helicopter = [getMarkerPos _spawnmarker, 180, _helicopterspawn,_crew1] call BIS_fnc_spawnVehicle;
- _heliselect = _helicopter select 0;
- _p1 = [[0,0,0], EAST, _group] call BIS_fnc_spawnGroup;
- 
+_helipadSpawn =  "HeliHEmpty" createVehicle getMarkerPos _dropMarker;
+_helicopterPilots = createGroup east; 
+_helicopterVehicle = [getMarkerPos _spawnmarker, 180, _helicopterType, _helicopterPilots] call BIS_fnc_spawnVehicle;
+_infantryGroup = [getMarkerPos _spawnmarker, east, _infantryType] call BIS_fnc_spawnGroup; 
+_helicopterMCargo = _helicopterVehicle select 0;
+
 {
-    _x assignAsCargo _heliselect;
-	_x moveInCargo _heliselect;
-    } forEach (units _p1);
+_x moveInCargo _helicopterMCargo;
+} foreach (units _infantryGroup); 
 
-_droploc = _crew1 addwaypoint[getmarkerpos _dropmarker,0];// heli transport unload
-_droploc setwaypointtype"TR UNLOAD"; 
+_moveToUnloadLocation = _helicopterPilots addWaypoint [getMarkerPos _dropMarker, 1]; 
+[_helicopterPilots, 1] setWaypointType "TR UNLOAD";
 
-_deletemove = _crew1 addwaypoint[getmarkerpos "functions",0];// heli transport unload
-_deletemove setwaypointtype"MOVE"; 
-_deletemove setWaypointStatements ["true", ""];
+_infantryGetOutLocation = _infantryGroup addWaypoint [getMarkerPos _dropmarker, 1];
+[_infantryGroup, 1] setWaypointType "GETOUT";
 
-_moveloc = _p1 addwaypoint[getmarkerpos _movemarker,0,2];// inf move 
-_moveloc setwaypointtype"MOVE"; 
+_infantryMoveLocation = _infantryGroup addWaypoint [getMarkerPos _moveMarker, 2]; 
+[_infantryGroup, 2] setWaypointType "MOVE"; 
+
 };
