@@ -1,3 +1,19 @@
+/*
+* Author: [TWC] jayman
+* Updates the tasks so they work with JIP. Also only notifies via command message
+*
+* Arguments:
+* 0: TaskName <STRING>
+* 1: Task State <STRING>
+*
+* Return Value:
+* NOTHING
+*
+* Example:
+* ["task1","Failed] call twc_fnc_updateTask
+*
+* Public: no
+*/
 
 Params ["_taskname","_state"];
 

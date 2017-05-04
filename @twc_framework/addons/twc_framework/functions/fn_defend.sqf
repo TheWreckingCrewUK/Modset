@@ -1,11 +1,24 @@
 /*
-* Defend Function
+* Author: [TWC] jayman
+* Makes VCOM and HC adjustments for cba defend function
 *
-* Currently just copies and calls the cba task defend eventually will be updated.
-* Also starts with a sleep because of issues with headless clients so it must be spawned
-* unlike the called cba function.
+* Arguments:
+* 0: UNIT <OBJECT>
+* 1: Position <Marker> <Object> <Position>
+* 2: Radius <NUMBER>
+* 3: Cover Goodness <NUMBER>
+* 4: Patrol <BOOL>
+*
+* Return Value:
+* NOTHING
+*
+* Example:
+* [def1,def1,200,2,false] spawn twc_fnc_defend;
+*
+* Public: no
 */
 params["_unit",["_pos",[]],["_radius",200],["_size",2],["_patrol",false]];
+
 (group _unit) setVariable ["twc_cacheDefending",true];
 {
 	_x setVariable ["NOAI",1,true];

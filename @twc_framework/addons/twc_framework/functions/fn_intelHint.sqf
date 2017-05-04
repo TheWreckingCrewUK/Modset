@@ -1,12 +1,19 @@
 /*
-* TWC intel hint Function
-*
+* Author: [TWC] jayman
 * Gets added to a units init. The action can be seen by all units including JIPs, but the effect is local
-
-* Required Parameters:
-* 0- (object)- Unit to add action to
-* 1 - (string) Name of the action
-* 2 - (String) - Hint to be displayed:
+*
+* Arguments:
+* 0: UNIT <OBJECT>
+* 1: Name <STRING>
+* 2: Message <STRING>
+*
+* Return Value:
+* NOTHING
+*
+* Example:
+* [civ1,"Interrogate","The Taliban ran up into the mountains when they spotted you"] call twc_fnc_intelHint;
+*
+* Public: no
 */
 if(!isServer)exitWith{};
 

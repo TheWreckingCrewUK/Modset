@@ -5,28 +5,28 @@ class CfgFunctions
 		class Functions
 		{
 			file="twc_framework\functions";
-			class Defend {};
-			class Patrol {};
 			class AirAssault {};
-			class AttackPlane {};
+			class Artillery{};
 			class AttackHelicopter{};
-			class spawnIed{};
+			class AttackPlane {};
+			class CommandMessage{};
+			class createMarker{};
+			class CreateTask{};
+			class daisyCutter{};
+			class Defend {};
 			class IEDpopulate{};
 			class intelHint{};
-			class Artillery{};
-			class CommandMessage{};
 			class LightsSwitch{};
-			class Retreat{};
+			class Patrol {};
+			class patrolMarkers{};
 			class patrolRoads{};
 			class placedIED{};
-			class patrolMarkers{};
 			class putWeaponOnBack{};
-			class CreateTask{};
-			class UpdateTask{};
-			class daisyCutter{};
 			class reconnected{};
-			class createMarker{};
+			class Retreat{};
+			class spawnIed{};
 			class stationaryUnits{};
+			class UpdateTask{};
 			class virtualMortar{};
 		};
 		class Modules

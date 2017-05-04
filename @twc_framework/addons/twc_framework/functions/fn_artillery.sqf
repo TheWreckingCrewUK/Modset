@@ -1,12 +1,24 @@
 /*
-/ Required parameters
-/ 0 - Mortar Name
-/ 1 - Marker name which the mortar fires on
-/ 
-/ Additional Parameters
-/ 2 - Radius on which rounds will land around the marker, default: 200
-/ 3 - How many Rounds, default: 5
-/ 4 - What type of round you would like to use, Options: "HE", "SMOKE", "ILLUM"
+* Author: [TWC] jayman
+* Creates an artillery barrage at the selected location
+*
+* Arguments:
+* 0: Artillery Name <OBJECT>
+* 1: Target Marker <STRING>
+*
+* Additional Parameters:
+* 2: Dispersion Radius <NUMBER>
+* 3: Amount of Rounds <NUMBER>
+* 4: Type of Rounds <STRING>
+* 5: Delay <Number>
+*
+* Return Value:
+* NOTHING
+*
+* Example:
+* [mortar1,"mortarTargetMarker",150,5,"HE",15] call twc_fnc_artillery;
+*
+* Public: No
 */
 
 

@@ -1,19 +1,24 @@
 /*
+* Author: [TWC] jayman
+* Disabled all Lights in an area. Simulates power loss
 *
-* _TWC = ["0.95","Turnoffmarker",500] spawn TWC_fnc_LightsSwitch
+* Arguments:
+* 0: Damage <NUMBER>
+* 1: POSITION <MARKER>
+* 2: Radius <NUMBER>
 *
+* Return Value:
+* NOTHING
 *
+* Example:
+* ["0.95","powerMarker",500] call twc_fnc_lightsSwitch
+*
+* Public: no
 */
 
 params [["_OnOff",0.95],"_marker","_radius"];
 
-_types = ["Lamps_Base_F", "PowerLines_base_F","PowerLines_Small_base_F"];
-
-
-for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
+if(!isServer)exitwith{};
 {
-    // powercoverage is a marker I placed.
-	_lamps = getMarkerPos _marker nearObjects [_types select _i, _radius];
-	sleep 1;
-	{_x setDamage _OnOff} forEach _lamps;
-};
+	_x setDamage _OnOff
+}forEach (nearestObjects [(getMarkerPos _marker), ["Lamps_Base_F","PowerLines_base_F","PowerLines_Small_base_F"],_radius]);
