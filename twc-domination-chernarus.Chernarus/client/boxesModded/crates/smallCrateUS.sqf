@@ -8,7 +8,7 @@
 */
 
 
-_boxClass = "UK3CB_BAF_Static_Weapons_Box";
+_boxClass = "ACE_Box_Ammo";
 
 _box = _boxClass createVehicle (getPos ammoCrateSpawnPad);
 
@@ -23,14 +23,14 @@ _box AddWeaponCargoGlobal ["UK3CB_BAF_AT4_CS_AP_Launcher",2];
 
 //supplies
 
-_box AddMagazineCargoGlobal ["30Rnd_556x45_Stanag",20];
+_box AddMagazineCargoGlobal ["30Rnd_556x45_Stanag",15];
 _box AddMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red",5];
 
-_box AddMagazineCargoGlobal ["UGL_FlareWhite_F",5];
-_box AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",20];
-_box AddMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",5];
+_box AddMagazineCargoGlobal ["UGL_FlareWhite_F",3];
+_box AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",10];
+_box AddMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",3];
 
-_box AddMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",5];
+_box AddMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",4];
 
 _box AddMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag",5];
 
