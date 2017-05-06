@@ -75,7 +75,7 @@ if(isModded == 0)then{
 
 if(isModded == 1)then{
 
-	_veh1 = "CUP_B_LR_Transport_GB_W" createVehicle (getMarkerPos "veh1");
+	_veh1 = "UK3CB_BAF_LandRover_Hard_Green_A" createVehicle (getMarkerPos "veh1");
 	_veh1 setdir _dir;
 	clearItemCargoGlobal _veh1;
 	clearMagazineCargoGlobal _veh1;
@@ -83,7 +83,7 @@ if(isModded == 1)then{
 	clearBackpackCargoGlobal _veh1;
 	[_veh1, _deadTime, _abandenTime, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
 	
-	_veh2 = "CUP_B_LR_Transport_GB_W" createVehicle (getMarkerPos "veh2");
+	_veh2 = "UK3CB_BAF_LandRover_Hard_FFR_Green_A" createVehicle (getMarkerPos "veh2");
 	_veh2 setdir _dir;
 	clearItemCargoGlobal _veh2;
 	clearMagazineCargoGlobal _veh2;
@@ -186,6 +186,14 @@ if(isModded == 1)then{
 	clearWeaponCargoGlobal _veh14;
 	clearBackpackCargoGlobal _veh14;
 	[_veh14, _deadTime, _abandenTime, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
+	
+	_veh15 = "UK3CB_BAF_LandRover_Hard_RAF_A" createVehicle (getMarkerPos "veh15");
+	_veh15 setdir _dir;
+	clearItemCargoGlobal _veh15;
+	clearMagazineCargoGlobal _veh15;
+	clearWeaponCargoGlobal _veh15;
+	clearBackpackCargoGlobal _veh15;
+	[_veh1, _deadTime, _abandenTime, -1, FALSE] execVM "server\vehicles\vehicleRespawn.sqf";
 };
 
 if(isModded == 2)then{

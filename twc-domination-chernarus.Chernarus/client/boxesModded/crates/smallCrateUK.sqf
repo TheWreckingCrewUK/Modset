@@ -8,7 +8,7 @@
 */
 
 
-_boxClass = "UK3CB_BAF_Static_Weapons_Box";
+_boxClass = "ACE_Box_Ammo";
 
 _box = _boxClass createVehicle (getPos ammoCrateSpawnPad);
 
@@ -22,25 +22,25 @@ _box AddWeaponCargoGlobal ["rhs_weap_m72a7",2];
 
 
 //supplies
-_box AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd_T",1];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_75Rnd",3];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd_T",1];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd",2];
 
-_box AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd",20];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_30Rnd_T",5];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd",15];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_556_30Rnd_T",5];
 
-_box AddMagazineCargoGlobal ["UGL_FlareWhite_F",5];
-_box AddMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",20];
-_box AddMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",5];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_UGL_FlareWhite_F",3];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_HE_Grenade_shell",10];
+_box AddMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",3];
 
-_box AddMagazineCargoGlobal ["UK3CB_BAF_200Rnd",3];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_200Rnd_T",1];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_556_200Rnd",2];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_556_200Rnd_T",1];
 
-_box AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd_T",2];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_20Rnd",5];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_762_20Rnd_T",2];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_762_20Rnd",4];
 
-_box AddMagazineCargoGlobal ["UK3CB_BAF_17Rnd_9mm",10];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Pellets",8];
-_box AddMagazineCargoGlobal ["UK3CB_BAF_L128A1_Slugs",8];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_9_17Rnd",8];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_12G_Pellets",8];
+_box AddMagazineCargoGlobal ["UK3CB_BAF_12G_Slugs",8];
 
 _box addItemCargoGlobal ["ACE_fieldDressing",20];
 _box addItemCargoGlobal ["ACE_elasticBandage",20];
@@ -58,5 +58,5 @@ _trg = createTrigger ["EmptyDetector", getPos ammoCrateSpawnPad];
 _trg setTriggerArea [5,5,0,false];
 _trg setTriggerActivation ["WEST", "NOT PRESENT", false];
 _trg setTriggerTimeout [1800,1800,1800,true];
-_trg setTriggerStatements ["this", "_box = (getPos thisTrigger) nearestObject 'UK3CB_BAF_Static_Weapons_Box'; deleteVehicle _box;",""];
+_trg setTriggerStatements ["this", "_box = (getPos thisTrigger) nearestObject 'ACE_Box_Ammo'; deleteVehicle _box;",""];
 _trg attachTo [_box];

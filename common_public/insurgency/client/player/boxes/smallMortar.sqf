@@ -8,7 +8,7 @@
 */
 
 
-_boxClass = "ACE_BOX_82MM_Mo_HE";
+_boxClass = "UK3CB_BAF_Box_M6";
 
 _box = _boxClass createVehicle (getPos ammoCrateSpawnPad);
 
