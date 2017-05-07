@@ -24,6 +24,7 @@ class CfgFunctions
 			class putWeaponOnBack{};
 			class reconnected{};
 			class Retreat{};
+			class spawnGroup{};
 			class spawnIed{};
 			class stationaryUnits{};
 			class UpdateTask{};
