@@ -8,14 +8,14 @@ class EditorData
 	toggles=1090;
 	class ItemIDProvider
 	{
-		nextID=410;
+		nextID=411;
 	};
 	class Camera
 	{
-		pos[]={4769.9644,389.80438,10162.759};
-		dir[]={-0.35923418,-0.63528639,0.68364251};
-		up[]={-0.29550734,0.7722773,0.56237388};
-		aside[]={0.88522929,-2.7279602e-006,0.46516001};
+		pos[]={4744.9253,350.36136,10259.994};
+		dir[]={0.55100238,-0.41582689,-0.72352296};
+		up[]={0.25193229,0.90944278,-0.33082107};
+		aside[]={-0.79556745,-4.1301246e-006,-0.60586578};
 	};
 };
 binarizationWanted=0;
@@ -353,7 +353,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=93;
+		items=94;
 		class Item0
 		{
 			dataType="Group";
@@ -1813,6 +1813,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -1830,7 +1849,26 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1849,7 +1887,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute4
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -1868,7 +1906,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						nAttributes=5;
 					};
 				};
 				class Item1
@@ -5760,6 +5798,46 @@ class Mission
 					};
 				};
 				nAttributes=6;
+			};
+		};
+		class Item93
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4712.8198,339.79141,10304.685};
+				angles[]={0,1.0393436,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="BAFVehiclePost";
+			};
+			id=410;
+			type="Land_Noticeboard_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};

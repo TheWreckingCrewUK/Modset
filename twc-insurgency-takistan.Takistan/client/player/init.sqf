@@ -1036,9 +1036,13 @@ eodAction = ["EODList","EOD","", {call TWC_fnc_getQMList;},{true}] call ace_inte
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], qmAction] call ace_interact_menu_fnc_addActionToObject;
 [player, 1, ["ACE_SelfActions", "thisStartsTheList"], eodAction] call ace_interact_menu_fnc_addActionToObject;
 
-//Action at repairpoint
+//Actions at repairpoint
 ammoCrateSpawner addAction ["Repair/Rearm/Refuel Vehicle",
 	{[] execVM  "client\sys_blufor\fnc_vehicleRepair.sqf"},[],0,true,false,"",""];
+	
+BAFVehiclePost addAction ["Load BAF Vehicle Ammo",
+	{[] execVM  "client\player\boxes\3cbVehicleAmmo.sqf"}];
+	
 
 //Popup stating player's name and role when joined
 _name = name player;

@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=4904;
+		nextID=4905;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=185;
+		nextID=194;
 	};
 	class Camera
 	{
-		pos[]={16544.697,175.88849,3059.9087};
-		dir[]={0.043114644,-0.34985879,0.93592149};
-		up[]={0.016104909,0.9367469,0.34962714};
-		aside[]={0.99903959,1.12214e-006,-0.046020288};
+		pos[]={16503.385,106.02465,3229.707};
+		dir[]={0.82883769,-0.51254594,-0.22434789};
+		up[]={0.49474674,0.85865813,-0.13391577};
+		aside[]={-0.26127639,1.4817633e-006,-0.96526957};
 	};
 };
 binarizationWanted=0;
@@ -458,7 +458,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=178;
+		items=179;
 		class Item0
 		{
 			dataType="Object";
@@ -10868,6 +10868,46 @@ class Mission
 					};
 				};
 				nAttributes=3;
+			};
+		};
+		class Item178
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16494.061,83.58905,3329.115};
+				angles[]={0,4.7602634,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="BAFVehiclePost";
+			};
+			id=4904;
+			type="Land_Noticeboard_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};

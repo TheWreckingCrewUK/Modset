@@ -51,6 +51,7 @@ _box addItemCargoGlobal ["ACE_salineIV_500",3];
 _box addItemCargoGlobal ["ACE_atropine",5];
 _box addItemCargoGlobal ["ACE_epinephrine",5];
 _box addItemCargoGlobal ["ACE_morphine",5];
+_box addItemCargoGlobal ["ACE_Sandbag_empty", 15];
 
 //Respawn/Despawn Script
 

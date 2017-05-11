@@ -42,9 +42,6 @@ if (!isNil "helo1" && {player == helo1}) then {
 	//Medical Supplies
 	ammoCrateSpawner addAction ["Spawn Medical Supplies",
 	{nul = [] execVM "client\boxesmodded\crates\smallMedical.sqf";},[],0,true,false,"",""];	
-	//Vehicle Ammo
-	ammoCrateSpawner addAction ["Spawn BAF Vehicle Ammo",
-	{nul = [] execVM "client\boxesmodded\crates\3CBVehicleAmmo.sqf";},[],0,true,false,"",""];	
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\boxesmodded\crates\smallMortar.sqf";},[],0,true,false,"",""];
@@ -87,9 +84,6 @@ if (!isNil "helo2" && {player == helo2}) then {
 	//Medical Supplies
 	ammoCrateSpawner addAction ["Spawn Medical Supplies",
 	{nul = [] execVM "client\boxesmodded\crates\smallMedical.sqf";},[],0,true,false,"",""];	
-	//Vehicle Ammo
-	ammoCrateSpawner addAction ["Spawn BAF Vehicle Ammo",
-	{nul = [] execVM "client\boxesmodded\crates\3CBVehicleAmmo.sqf";},[],0,true,false,"",""];	
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\boxesmodded\crates\smallMortar.sqf";},[],0,true,false,"",""];
@@ -125,10 +119,7 @@ if (!isNil "helo3" && {player == helo3}) then {
 	{nul = [] execVM "client\boxesmodded\crates\largeCrateUSMC.sqf";},[],0,true,false,"",""];
 	//Medical Supplies
 	ammoCrateSpawner addAction ["Spawn Medical Supplies",
-	{nul = [] execVM "client\boxesmodded\crates\smallMedical.sqf";},[],0,true,false,"",""];	
-	//Vehicle Ammo
-	ammoCrateSpawner addAction ["Spawn BAF Vehicle Ammo",
-	{nul = [] execVM "client\boxesmodded\crates\3CBVehicleAmmo.sqf";},[],0,true,false,"",""];	
+	{nul = [] execVM "client\boxesmodded\crates\smallMedical.sqf";},[],0,true,false,"",""];		
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\boxesmodded\crates\smallMortar.sqf";},[],0,true,false,"",""];
@@ -171,9 +162,6 @@ if (!isNil "p1" && {player == p1}) then {
 	//Large Ammo Spawner
 	ammoCrateSpawner addAction ["Spawn Large Ammobox",
 	{nul = [] execVM "client\boxesmodded\crates\largeCrateUK.sqf";},[],0,true,false,"",""];
-	//Vehicle Ammo
-	ammoCrateSpawner addAction ["Spawn BAF Vehicle Ammo",
-	{nul = [] execVM "client\boxesmodded\crates\3CBVehicleAmmo.sqf";},[],0,true,false,"",""];	
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\boxesmodded\crates\smallMortar.sqf";},[],0,true,false,"",""];
@@ -210,9 +198,6 @@ if (!isNil "p5" && {player == p5}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\boxesmodded\crates\smallMortar.sqf";},[],0,true,false,"",""];
-	//Vehicle Ammo
-	ammoCrateSpawner addAction ["Spawn BAF Vehicle Ammo",
-	{nul = [] execVM "client\boxesmodded\crates\3CBVehicleAmmo.sqf";},[],0,true,false,"",""];	
 	//M32 Spawner
 	ammoCrateSpawner addAction ["Spawn M32",
 	{nul = [] execVM "client\boxesmodded\crates\smallM32.sqf";},[],0,true,false,"",""];
@@ -436,6 +421,9 @@ twc_fnc_vehicleRepair = compile preprocessfilelinenumbers "client\boxesModded\fn
 //Action at repairpoint
 ammoCrateSpawner addAction ["Repair/Rearm/Refuel Vehicle",
 	{[] execVM  "client\boxesModded\fnc_vehicleRepair.sqf"},[],0,true,false,"",""];
+	
+BAFVehiclePost addAction ["Load BAF Vehicle Ammo",
+	{[] execVM  "client\boxesModded\crates\3cbVehicleAmmo.sqf"}];
 
 execVM "client\boxesModded\crates\init.sqf";
 
