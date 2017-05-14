@@ -6,51 +6,6 @@ if(!isNil "completedTasks")then{
 	}forEach completedTasks;
 };
 
-if(era=="modern")then{
-	["TWC_Modern", [
-	"\twc_faction\ranks\private.paa",
-	"\twc_faction\ranks\lance_corporal.paa",
-	"\twc_faction\ranks\corporal.paa",
-	"\twc_faction\ranks\sergeant.paa",
-	"\twc_faction\ranks\staff_sergeant.paa",
-	"\twc_faction\ranks\second_lieutenant.paa",
-	"\twc_faction\ranks\major.paa"
-	]] call ace_nametags_fnc_setFactionRankIcons;
-};
-if(era=="coldwar")then{
-	["TWC_ColdWar", [
-	"\twc_faction\ranks\private.paa",
-	"\twc_faction\ranks\lance_corporal.paa",
-	"\twc_faction\ranks\corporal.paa",
-	"\twc_faction\ranks\sergeant.paa",
-	"\twc_faction\ranks\staff_sergeant.paa",
-	"\twc_faction\ranks\second_lieutenant.paa",
-	"\twc_faction\ranks\major.paa"
-	]] call ace_nametags_fnc_setFactionRankIcons;
-};
-if(era=="1990")then{
-	["TWC_Millenial", [
-	"\twc_faction\ranks\private.paa",
-	"\twc_faction\ranks\lance_corporal.paa",
-	"\twc_faction\ranks\corporal.paa",
-	"\twc_faction\ranks\sergeant.paa",
-	"\twc_faction\ranks\staff_sergeant.paa",
-	"\twc_faction\ranks\second_lieutenant.paa",
-	"\twc_faction\ranks\major.paa"
-	]] call ace_nametags_fnc_setFactionRankIcons;
-};
-if(era=="ww2")then{
-	["twc_faction_independent", [
-	"\twc_faction\ranks\private.paa",
-	"\twc_faction\ranks\lance_corporal.paa",
-	"\twc_faction\ranks\corporal.paa",
-	"\twc_faction\ranks\sergeant.paa",
-	"\twc_faction\ranks\staff_sergeant.paa",
-	"\twc_faction\ranks\second_lieutenant.paa",
-	"\twc_faction\ranks\major.paa"
-	]] call ace_nametags_fnc_setFactionRankIcons;
-};
-
 if(isMultiplayer)then{
 	playMusic "Theme";
 	titleCut ["", "BLACK FADED", 999];
