@@ -201,10 +201,6 @@
 		displayName="Medic (WW2)";
 		uniformClass="fow_u_uk_bd40_01_private";
 		backpack="TWC_Backpack_WW2_Medic";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Sten",
@@ -248,6 +244,10 @@
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell"
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_deleteMap"",true]};";
 		};
 	};
 	class WW2_British_Section_Leader: WW2_British_Base
@@ -258,10 +258,6 @@
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_bd40_01_corporal";
 		backpack="TWC_Backpack_WW2_SL";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Sten",
@@ -324,16 +320,16 @@
 			"SmokeShell",
 			"SmokeShell"
 		};
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
+		};
 	};
 	class WW2_British_Rifleman: WW2_British_Base
 	{
 		scope=2;
 		displayName="Rifleman (WW2)";
 		uniformClass="fow_u_uk_bd40_01_private";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -390,16 +386,16 @@
 			"fow_30Rnd_303_bren"
 
 		};
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
+		};
 	};
 	class WW2_British_2IC: WW2_British_Rifleman
 	{
 		displayName="2IC (WW2)";
 		uniformClass="fow_u_uk_bd40_01_lance_corporal";
 		backpack="TWC_Backpack_WW2_2IC";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -412,6 +408,10 @@
 			"Put",
 			"fow_w_leeenfield_no4mk1"
 		};
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
+		};
 	};
 	class WW2_British_MG: WW2_British_Base
 	{
@@ -419,10 +419,6 @@
 		displayName="Machine Gunner (WW2)";
 		icon="iconManMG";
 		uniformClass="fow_u_uk_bd40_01_private";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		linkedItems[]=
 		{
         "TWC_Vest_WW2_Bren",
@@ -469,15 +465,15 @@
 			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren"
 		};
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
+		};
 	};
 	class WW2_British_MGASS: WW2_British_Rifleman
 	{
 		displayName="Machine Gunner Assistant (WW2)";
 		backpack="TWC_Backpack_WW2_MGASS";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Bren",
@@ -493,6 +489,10 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
 		};
 	};
 	class WW2_British_Vehicle_Commander: WW2_British_Base

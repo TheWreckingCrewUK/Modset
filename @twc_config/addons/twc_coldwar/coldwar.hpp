@@ -447,10 +447,6 @@
 		displayName="Platoon Medic";
 		icon="iconManMedic";
 		backpack="TWC_Backpack_Cold_Medic";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -485,7 +481,7 @@
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
+			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_deleteMap"",true]};";
 		};
 	};
 	class ColdWar_FAC: ColdWar_Section_Leader

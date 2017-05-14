@@ -25,6 +25,7 @@ class CfgPatches
 		};
 	};
 };
+class EventHandlers;
 class CfgEditorSubCategories
 {
 	class Men_WW2
