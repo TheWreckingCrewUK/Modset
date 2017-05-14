@@ -201,6 +201,10 @@
 		displayName="Medic (WW2)";
 		uniformClass="fow_u_uk_bd40_01_private";
 		backpack="TWC_Backpack_WW2_Medic";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
+		};
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Sten",
@@ -254,6 +258,10 @@
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_bd40_01_corporal";
 		backpack="TWC_Backpack_WW2_SL";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
+		};
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Sten",
@@ -322,6 +330,10 @@
 		scope=2;
 		displayName="Rifleman (WW2)";
 		uniformClass="fow_u_uk_bd40_01_private";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
+		};
 		weapons[]=
 		{
 			"Throw",
@@ -384,6 +396,10 @@
 		displayName="2IC (WW2)";
 		uniformClass="fow_u_uk_bd40_01_lance_corporal";
 		backpack="TWC_Backpack_WW2_2IC";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
+		};
 		weapons[]=
 		{
 			"Throw",
@@ -403,6 +419,10 @@
 		displayName="Machine Gunner (WW2)";
 		icon="iconManMG";
 		uniformClass="fow_u_uk_bd40_01_private";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
+		};
 		linkedItems[]=
 		{
         "TWC_Vest_WW2_Bren",
@@ -454,6 +474,10 @@
 	{
 		displayName="Machine Gunner Assistant (WW2)";
 		backpack="TWC_Backpack_WW2_MGASS";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
+		};
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Bren",
