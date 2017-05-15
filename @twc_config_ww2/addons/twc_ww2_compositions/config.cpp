@@ -36,7 +36,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "WW2_British_Section_Commander"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
+                                                rank = "SERGEANT"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
@@ -71,7 +71,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "WW2_British_2IC";
-                                                rank = "PRIVATE";
+                                                rank = "CORPORAL";
                                                 position[] = {11,0,0};
                                         };
 										class Unit7
@@ -98,14 +98,14 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "WW2_British_Platoon_Commander"; //Class name of desired solider
-                                                rank = "lieutenant"; // Rank
+                                                rank = "MAJOR"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
                                         {
                                                 side = 1;
                                                 vehicle = "WW2_British_Platoon_Sergeant";
-                                                rank = "sergeant";
+                                                rank = "LIEUTENANT";
                                                 position[] = {3,0,0};
                                         };
                                         class Unit2

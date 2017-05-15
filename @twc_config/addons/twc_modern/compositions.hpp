@@ -19,7 +19,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_Squadleader"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
+                                                rank = "SERGEANT"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
@@ -47,7 +47,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_2IC";
-                                                rank = "PRIVATE";
+                                                rank = "CORPORAL";
                                                 position[] = {9,0,0};
                                         };
 										class Unit5
@@ -81,7 +81,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_Squadleader"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
+                                                rank = "SERGEANT"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
@@ -109,7 +109,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_2IC_Mounted";
-                                                rank = "PRIVATE";
+                                                rank = "CORPORAL";
                                                 position[] = {9,0,0};
                                         };
 										class Unit5
@@ -143,7 +143,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_Squadleader"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
+                                                rank = "SERGEANT"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
@@ -164,7 +164,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_2IC_Mounted";
-                                                rank = "PRIVATE";
+                                                rank = "CORPORAL";
                                                 position[] = {7,0,0};
                                         };
 										class Unit4
@@ -185,7 +185,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_VehicleCommander";
-                                                rank = "CORPORAL";
+                                                rank = "SERGEANT";
                                                 position[] = {13,0,0};
                                         };
 										class Unit7
@@ -212,14 +212,14 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_Platoon_Commander"; //Class name of desired solider
-                                                rank = "lieutenant"; // Rank
+                                                rank = "MAJOR"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_Platoon_Sergeant";
-                                                rank = "sergeant";
+                                                rank = "LIEUTENANT";
                                                 position[] = {3,0,0};
                                         };
                                         class Unit2
@@ -233,7 +233,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_Platoon_CSM";
-                                                rank = "sergeant";
+                                                rank = "CAPTAIN";
                                                 position[] = {7,0,0};
                                         };
                                 };
@@ -246,7 +246,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_Spotter"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
+                                                rank = "SERGEANT"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
@@ -270,7 +270,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_Squadleader"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
+                                                rank = "SERGEANT"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
@@ -298,7 +298,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_2IC_COIN";
-                                                rank = "PRIVATE";
+                                                rank = "CORPORAL";
                                                 position[] = {9,0,0};
                                         };
 										class Unit5
@@ -332,7 +332,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_Squadleader"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
+                                                rank = "SERGEANT"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
@@ -360,7 +360,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_2IC_COIN_Mounted";
-                                                rank = "PRIVATE";
+                                                rank = "CORPORAL";
                                                 position[] = {9,0,0};
                                         };
 										class Unit5
@@ -394,14 +394,14 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_Platoon_Commander"; //Class name of desired solider
-                                                rank = "lieutenant"; // Rank
+                                                rank = "MAJOR"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_British_Platoon_Sergeant";
-                                                rank = "sergeant";
+                                                rank = "LIEUTENANT";
                                                 position[] = {3,0,0};
                                         };
                                         class Unit2

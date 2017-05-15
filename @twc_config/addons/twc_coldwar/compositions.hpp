@@ -19,7 +19,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_Section_Leader"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
+                                                rank = "SERGEANT"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
@@ -54,7 +54,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_2IC";
-                                                rank = "PRIVATE";
+                                                rank = "CORPORAL";
                                                 position[] = {11,0,0};
                                         };
 										class Unit6
@@ -81,7 +81,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_Section_Leader"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
+                                                rank = "SERGEANT"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
@@ -116,7 +116,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_2IC_Dismounted";
-                                                rank = "PRIVATE";
+                                                rank = "CORPORAL";
                                                 position[] = {11,0,0};
                                         };
 										class Unit6
@@ -143,7 +143,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_Section_Leader"; //Class name of desired solider
-                                                rank = "CORPORAL"; // Rank
+                                                rank = "SERGEANT"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
@@ -171,7 +171,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_2IC";
-                                                rank = "PRIVATE";
+                                                rank = "CORPORAL";
                                                 position[] = {9,0,0};
                                         };
 										class Unit5
@@ -192,7 +192,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_Vehicle_Commander";
-                                                rank = "CORPORAL";
+                                                rank = "SERGEANT";
                                                 position[] = {15,0,0};
                                         };
 										class Unit8
@@ -212,14 +212,14 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_Platoon_Commander"; //Class name of desired solider
-                                                rank = "lieutenant"; // Rank
+                                                rank = "MAJOR"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_sergeant";
-                                                rank = "sergeant";
+                                                rank = "LIEUTENANT";
                                                 position[] = {3,0,0};
                                         };
 										class Unit2
@@ -240,7 +240,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_CSM";
-                                                rank = "sergeant";
+                                                rank = "CAPTAIN";
                                                 position[] = {9,0,0};
                                         };
                                 };
@@ -273,7 +273,7 @@ class CfgGroups
 										{
 											side = 1;
 											vehicle = "ColdWar_Section_Leader";
-											rank = "CORPORAL";
+											rank = "SERGEANT";
 											position[] = {0,3,0};
 										};
 										class Unit1
@@ -300,7 +300,7 @@ class CfgGroups
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_Vehicle_Commander"; //Class name of desired solider
-                                                rank = "sergeant"; // Rank
+                                                rank = "LIEUTENANT"; // Rank
                                                 position[] = {0,3,0}; //Position in the formation
                                         };
                                         class Unit1
