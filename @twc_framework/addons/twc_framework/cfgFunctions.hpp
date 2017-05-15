@@ -53,11 +53,6 @@ class CfgFunctions
 			class itemCheck {};
 			class useSyrette {};
 		};
-		class admin
-		{
-			file="twc_framework\admin";
-			class setSpectator {};
-		};
 		class cache
 		{
 			file="twc_framework\cache";
@@ -78,6 +73,13 @@ class CfgFunctions
 			class hcModuleInit {};
 			class rebalance {};
 			class transferGroups {};
+		};
+		class curator
+		{
+			file="twc_framework\curator";
+			class healPlayer {};
+			class killPlayer {};
+			class setSpectator {};
 		};
 
 	};

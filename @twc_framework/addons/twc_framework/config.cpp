@@ -6,7 +6,10 @@ class CfgPatches
 		{
 			"twc_ModuleMission",
 			"twc_moduelHC",
-			"twc_moduelCache"
+			"twc_moduelCache",
+			"twc_moduleHealPlayer",
+			"twc_moduleKillPlayer",
+			"twc_moduleSetSpectator"
 		};
 		weapons[]={};
 		requiredVersion=1.54;
@@ -29,13 +32,9 @@ class cfgFactionClasses
 	{
 		displayName="TWC Mission Module";
 	};
-	class twc_moduelHC: NO_CATEGORY
+	class twc_zeus: NO_CATEGORY
 	{
-		displayName="TWC Headless Client Module";
-	};
-	class twc_moduelCache: NO_CATEGORY
-	{
-		displayName="TWC Cacheing";
+		displayName = "Zeus TWC";
 	};
 };
 class Extended_PostInit_EventHandlers
