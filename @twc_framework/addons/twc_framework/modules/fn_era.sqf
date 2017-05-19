@@ -16,7 +16,7 @@
 params["_era"];
 
 switch (_era) do {
-	case "1990" {
+	case "1990": {
 		["TWC_Millenial", [
 		"\twc_faction\ranks\private.paa",
 		"\twc_faction\ranks\lance_corporal.paa",
@@ -27,7 +27,7 @@ switch (_era) do {
 		"\twc_faction\ranks\major.paa"
 		]] call ace_nametags_fnc_setFactionRankIcons;	
 	};
-	case "coldwar" {
+	case "coldwar": {
 		["TWC_ColdWar", [
 		"\twc_faction\ranks\private.paa",
 		"\twc_faction\ranks\lance_corporal.paa",
@@ -38,7 +38,7 @@ switch (_era) do {
 		"\twc_faction\ranks\major.paa"
 		]] call ace_nametags_fnc_setFactionRankIcons;	
 	};
-	case "ww2" {
+	case "ww2": {
 		["twc_faction_independent", [
 		"\twc_faction\ranks\private.paa",
 		"\twc_faction\ranks\lance_corporal.paa",
