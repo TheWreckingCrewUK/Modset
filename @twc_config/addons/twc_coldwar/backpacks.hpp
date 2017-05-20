@@ -146,9 +146,9 @@
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_tf47_m3maaws_HE
+			class _xx_ukcw_m3maaws_HE
 			{
-				magazine = "tf47_m3maaws_HEAT";
+				magazine = "ukcw_l14a1_HE";
 				count = 1;
 			};
 			class _xx_Sterling_Mag
@@ -163,14 +163,14 @@
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_tf47_m3maaws_HEAT
+			class _xx_ukcw_m3maaws_HEAT
 			{
-				magazine = "tf47_m3maaws_HEAT";
+				magazine = "ukcw_l14a1_HEAT";
 				count = 2;
 			};
-			class _xx_tf47_m3maaws_HE
+			class _xx_ukcw_m3maaws_HE
 			{
-				magazine = "tf47_m3maaws_HE";
+				magazine = "ukcw_l14a1_HE";
 				count = 1;
 			};
 			class _xx_UK3CB_BAF_762_20Rnd
@@ -185,14 +185,14 @@
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_tf47_m3maaws_HEAT
+			class _xx_ukcw_m3maaws_HEAT
 			{
-				magazine = "tf47_m3maaws_HEAT";
+				magazine = "ukcw_l14a1_HEAT";
 				count = 2;
 			};
-			class _xx_tf47_m3maaws_HE
+			class _xx_ukcw_m3maaws_HE
 			{
-				magazine = "tf47_m3maaws_HE";
+				magazine = "ukcw_l14a1_HE";
 				count = 1;
 			};			
 		};

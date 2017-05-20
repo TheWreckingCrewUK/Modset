@@ -358,24 +358,24 @@
 				magazine="ACE_HandFlare_White";
 				count=10;
 			};
-			class _xx_tf47_m3maaws_HEAT
+			class _xx_ukcw_m3maaws_HEAT
 			{
-				magazine="tf47_m3maaws_HEAT";
+				magazine="ukcw_l14a1_HEAT";
 				count=4;
 			};
-			class _xx_tf47_m3maaws_HE
+			class _xx_ukcw_m3maaws_HE
 			{
-				magazine="tf47_m3maaws_HE";
+				magazine="ukcw_l14a1_HE";
 				count=4;
 			};
-			class _xx_tf47_m3maaws_SMOKE
+			class _xx_ukcw_m3maaws_SMOKE
 			{
-				magazine="tf47_m3maaws_SMOKE";
+				magazine="ukcw_l14a1_SMOKE";
 				count=10;
 			};
-			class _xx_tf47_m3maaws_ILLUM
+			class _xx_ukcw_m3maaws_ILLUM
 			{
-				magazine="tf47_m3maaws_ILLUM";
+				magazine="ukcw_l14a1_ILLUM";
 				count=10;
 			};
 			class _xx_SmokeShell
@@ -494,24 +494,24 @@
 				magazine = "Chemlight_red";
 				count = 20;
 			};
-			class _xx_tf47_m3maaws_HEAT
+			class _xx_ukcw_m3maaws_HEAT
 			{
-				magazine="tf47_m3maaws_HEAT";
+				magazine="ukcw_l14a1_HEAT";
 				count=4;
 			};
-			class _xx_tf47_m3maaws_HE
+			class _xx_ukcw_m3maaws_HE
 			{
-				magazine="tf47_m3maaws_HE";
+				magazine="ukcw_l14a1_HE";
 				count=4;
 			};
-			class _xx_tf47_m3maaws_SMOKE
+			class _xx_ukcw_m3maaws_SMOKE
 			{
-				magazine="tf47_m3maaws_SMOKE";
+				magazine="ukcw_l14a1_SMOKE";
 				count=10;
 			};
-			class _xx_tf47_m3maaws_ILLUM
+			class _xx_ukcw_m3maaws_ILLUM
 			{
-				magazine="tf47_m3maaws_ILLUM";
+				magazine="ukcw_l14a1_ILLUM";
 				count=10;
 			};
 		};
@@ -533,6 +533,16 @@
 			class _xx_LAW
 			{
 				Weapon = "ukf_law80launcher";
+				count = 12;
+			};
+			class _xx_M72
+			{
+				Weapon = "ukcw_L1A1_law";
+				count = 12;
+			};
+			class _xx_AT4
+			{
+				Weapon = "UK3CB_BAF_AT4_CS_AP_Launcher";
 				count = 12;
 			};
 		};		

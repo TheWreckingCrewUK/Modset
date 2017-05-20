@@ -228,24 +228,24 @@
 				magazine="ACE_HandFlare_White";\
 				count=6;\
 			};\
-			class _xx_tf47_m3maaws_HEAT\
+			class _xx_ukcw_m3maaws_HEAT\
 			{\
-				magazine="tf47_m3maaws_HEAT";\
+				magazine="ukcw_l14a1_HEAT";\
 				count=2;\
 			};\
-			class _xx_tf47_m3maaws_HE\
+			class _xx_ukcw_m3maaws_HE\
 			{\
-				magazine="tf47_m3maaws_HE";\
+				magazine="ukcw_l14a1_HE";\
 				count=2;\
 			};\
-			class _xx_tf47_m3maaws_SMOKE\
+			class _xx_ukcw_m3maaws_SMOKE\
 			{\
-				magazine="tf47_m3maaws_SMOKE";\
+				magazine="ukcw_l14a1_SMOKE";\
 				count=3;\
 			};\
-			class _xx_tf47_m3maaws_ILLUM\
+			class _xx_ukcw_m3maaws_ILLUM\
 			{\
-				magazine="tf47_m3maaws_ILLUM";\
+				magazine="ukcw_l14a1_ILLUM";\
 				count=3;\
 			};\
 			class _xx_SmokeShell\

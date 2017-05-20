@@ -136,13 +136,15 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D"
+			"UK3CB_BAF_L85A2_SUSAT3D",
+			"ukcw_L1A1_law"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT3D"
+			"UK3CB_BAF_L85A2_SUSAT3D",
+			"ukcw_L1A1_law"
 		};
 		magazines[]=
 		{
@@ -183,14 +185,14 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_SUSAT3D",
-			"TWC_ILAW_HEDP"
+			"UK3CB_BAF_AT4_CS_AP_Launcher"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_SUSAT3D",
-			"TWC_ILAW_HEDP"
+			"UK3CB_BAF_AT4_CS_AP_Launcher"
 		};
 		magazines[]=
 		{
@@ -510,14 +512,14 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_SUSAT3D",
-			"TWC_Carl_Gustav"
+			"ukcw_l14a1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_SUSAT3D",
-			"TWC_Carl_Gustav"
+			"ukcw_l14a1"
 		};
 	};
 	class 2000_British_CGAss: 2000_British_Rifleman
@@ -934,14 +936,14 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_SUSAT3D",
-			"TWC_Carl_Gustav"
+			"ukcw_l14a1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_SUSAT3D",
-			"TWC_Carl_Gustav"
+			"ukcw_l14a1"
 		};
 	};
 	class 2000_British_CGAss_Desert: 2000_British_CGAss

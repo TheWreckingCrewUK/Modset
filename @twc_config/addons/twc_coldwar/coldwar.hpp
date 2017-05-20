@@ -162,7 +162,7 @@
 		{
 			"ukcw_1958_webbing",
 			"ukcw_helmet_mk3",
-			"tf47_optic_m3maaws",
+			"CUP_optic_MAAWS_Scope",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -180,14 +180,14 @@
 			"Throw",
 			"Put",
 			"ukcw_sterling_sub",
-			"TWC_Carl_Gustav"
+			"ukcw_l14a1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"ukcw_sterling_sub",
-			"TWC_Carl_Gustav"
+			"ukcw_l14a1"
 		};
 		magazines[]=
 		{
@@ -199,7 +199,7 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"tf47_m3maaws_HEAT",
+			"ukcw_l14a1_HEAT",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
@@ -213,7 +213,7 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"tf47_m3maaws_HEAT",
+			"ukcw_l14a1_HEAT",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};

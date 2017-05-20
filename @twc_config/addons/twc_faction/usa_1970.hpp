@@ -3,7 +3,7 @@
 		_generalMacro="usa_1970_medic";
 		scope=2;
 		displayName="Parajumper Medic";
-		faction="twc_faction";
+		faction="twc_usa_1970";
 		editorSubCategory = "TWC_usa_1970";
 		vehicleClass="TWC_usa_1970";
 		icon="iconMan";
@@ -138,7 +138,7 @@
 		_generalMacro="usa_1970_leader";
 		scope=2;
 		displayName="Parajumper Leader";
-		faction="twc_faction";
+		faction="twc_usa_1970";
 		editorSubCategory = "TWC_usa_1970";
 		vehicleClass="TWC_usa_1970";
 		icon="iconMan";
@@ -273,7 +273,7 @@
 		_generalMacro="usa_1970_grenadier";
 		scope=2;
 		displayName="Parajumper Grenadier";
-		faction="twc_faction";
+		faction="twc_usa_1970";
 		editorSubCategory = "TWC_usa_1970";
 		vehicleClass="TWC_usa_1970";
 		icon="iconMan";

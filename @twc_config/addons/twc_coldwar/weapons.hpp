@@ -1,7 +1,6 @@
 class cfgWeapons
 {
 	class UK3CB_BAF_L1A1_Wood;
-	class tf47_m3maaws;
 	class CUP_launch_FIM92Stinger;
 	
 	class twc_L1A1_SUIT:UK3CB_BAF_L1A1_Wood
@@ -14,21 +13,6 @@ class cfgWeapons
 			{
 				slot = "CowsSlot";
 				item= "UK3CB_BAF_SUIT";
-			};
-		};
-	};
-	
-	class TWC_Carl_Gustav:tf47_m3maaws
-	{
-		scope = 1;
-		author="FakeMatty";
-		ace_reloadlaunchers_enabled = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot="CowsSlot";
-				item="tf47_optic_m3maaws";
 			};
 		};
 	};

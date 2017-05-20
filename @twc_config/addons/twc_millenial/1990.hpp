@@ -546,14 +546,14 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A1_SUSAT3D",
-			"TWC_Carl_Gustav"
+			"ukcw_l14a1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A1_SUSAT3D",
-			"TWC_Carl_Gustav"
+			"ukcw_l14a1"
 		};
 	};
 	class 1990_British_CGAss: 1990_British_Rifleman
@@ -966,14 +966,14 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A1_SUSAT3D",
-			"TWC_Carl_Gustav"
+			"ukcw_l14a1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A1_SUSAT3D",
-			"TWC_Carl_Gustav"
+			"ukcw_l14a1"
 		};
 	};
 	class 1990_British_CGAss_Desert: 1990_British_CGAss

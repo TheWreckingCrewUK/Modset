@@ -158,6 +158,18 @@ class CfgFactionClasses
 		priority=1;
 		side=3;
 	};
+	class twc_usa_1970
+	{
+		displayName="USA 1970";
+		priority=1;
+		side=1;
+	};
+	class Russian_Federation
+	{
+		displayName="Russian Federation";
+		priority=1;
+		side=3;
+	};
 };
 class CfgVehicles
 {

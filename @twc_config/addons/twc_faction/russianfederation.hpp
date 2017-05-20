@@ -3,7 +3,7 @@
 		_generalMacro="Russian_Squadleader";
 		scope=2;
 		displayName="Section Leader";
-		faction="twc_faction";
+		faction="Russian_Federation";
 		editorSubcategory = "Men_RussianFederation";
 		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
@@ -110,7 +110,7 @@
 		_generalMacro="Russian_Rifleman";
 		scope=2;
 		displayName="Rifleman";
-		faction="twc_faction";
+		faction="Russian_Federation";
 		editorSubcategory = "Men_RussianFederation";
 		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
@@ -203,7 +203,7 @@
 		_generalMacro="Russian_Grenadier";
 		scope=2;
 		displayName="Grenadier";
-		faction="twc_faction";
+		faction="Russian_Federation";
 		editorSubcategory = "Men_RussianFederation";
 		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
@@ -302,7 +302,7 @@
 		_generalMacro="Russian_Seniorrifleman";
 		scope=2;
 		displayName="Senior Rifleman";
-		faction="twc_faction";
+		faction="Russian_Federation";
 		editorSubcategory = "Men_RussianFederation";
 		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
@@ -397,7 +397,7 @@
 		_generalMacro="Russian_Grenadierassistant";
 		scope=2;
 		displayName="Grenadier Assistant";
-		faction="twc_faction";
+		faction="Russian_Federation";
 		editorSubcategory = "Men_RussianFederation";
 		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
@@ -494,7 +494,7 @@
 		_generalMacro="Russian_Automaticrifleman";
 		scope=2;
 		displayName="Automatic Rifleman";
-		faction="twc_faction";
+		faction="Russian_Federation";
 		editorSubcategory = "Men_RussianFederation";
 		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
@@ -585,7 +585,7 @@
 		_generalMacro="Russian_Vehiclecommander";
 		scope=2;
 		displayName="Vehicle Commander";
-		faction="twc_faction";
+		faction="Russian_Federation";
 		editorSubcategory = "Men_RussianFederation";
 		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
@@ -672,7 +672,7 @@
 		_generalMacro="USSR_Vehiclecrew";
 		scope=2;
 		displayName="Vehicle Crew";
-		faction="twc_faction";
+		faction="Russian_Federation";
 		editorSubcategory = "Men_RussianFederation";
 		vehicleClass="Men_RussianFederation";
 		icon="iconMan";
