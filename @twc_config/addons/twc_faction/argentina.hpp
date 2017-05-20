@@ -198,14 +198,14 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"Throw",
 		"Put",
 		"CUP_arifle_FNFAL",
-		"tf47_m3maaws"
+		"ukcw_l14a1"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
 		"CUP_arifle_FNFAL",
-		"tf47_m3maaws"
+		"ukcw_l14a1"
 		};
 		magazines[]=
 		{
@@ -218,10 +218,10 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"CUP_HandGrenade_M67",
 		"SmokeShell",
 		"SmokeShell",
-		"tf47_m3maaws_HEAT",
-		"tf47_m3maaws_HEAT",
-		"tf47_m3maaws_HEAT",
-		"tf47_m3maaws_HEAT"
+		"ukcw_l14a1_HEAT",
+		"ukcw_l14a1_HEAT",
+		"ukcw_l14a1_HEAT",
+		"ukcw_l14a1_HEAT"
 		};
 		Respawnmagazines[]=
 		{
@@ -234,10 +234,10 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"CUP_HandGrenade_M67",
 		"SmokeShell",
 		"SmokeShell",
-        "tf47_m3maaws_HEAT",
-		"tf47_m3maaws_HEAT",
-		"tf47_m3maaws_HEAT",
-		"tf47_m3maaws_HEAT"
+        "ukcw_l14a1_HEAT",
+		"ukcw_l14a1_HEAT",
+		"ukcw_l14a1_HEAT",
+		"ukcw_l14a1_HEAT"
 		};
 		Items[]=
 		{
@@ -308,10 +308,10 @@ class Cold_War_Argentinian_Squadleader: I_Soldier_F
 		"CUP_HandGrenade_M67",
 		"SmokeShell",
 		"SmokeShell",
-		"tf47_m3maaws_HEAT",
-		"tf47_m3maaws_HEAT",
-		"tf47_m3maaws_HEAT",
-		"tf47_m3maaws_HEAT"
+		"ukcw_l14a1_HEAT",
+		"ukcw_l14a1_HEAT",
+		"ukcw_l14a1_HEAT",
+		"ukcw_l14a1_HEAT"
 		};
 		Respawnmagazines[]=
 		{
