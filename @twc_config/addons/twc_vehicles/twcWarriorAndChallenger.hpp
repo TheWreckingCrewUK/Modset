@@ -39,7 +39,7 @@ class LandVehicle;
 	class MCV80_Base: Tank_F
 	{
 		scope=0;
-		faction="twc_faction";
+		faction="TWC_General";
 		displayName="MCV-80 Warrior (BASE)";
 		class Library
 		{
@@ -1835,7 +1835,7 @@ class LandVehicle;
 	};
 	class Burnes_FV4034_base: Tank_F
 	{
-		vehicleClass="twc_faction";
+		vehicleClass="TWC_General";
 		author="Cpl Burnes(15th MEU(SOC))";
 		displayName="FV4034 Challenger 2 TWC";
 		hasCommander="true";
@@ -3678,7 +3678,7 @@ class LandVehicle;
 	{
 		accuracy=0.5;
 		side=1;
-		faction="twc_faction";
+		faction="TWC_General";
 		vehicleClass="Burnes_Vehicles";
 		crew="Burnes_Crewman_CTRG";
 		typicalCargo[]=

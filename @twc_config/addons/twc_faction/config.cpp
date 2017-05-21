@@ -65,10 +65,6 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (Iraq)";
 	};
-	class Men_Argentina
-	{
-		displayName = "Men (Argentina)";
-	};
 	class Men_AfricanMilitia
 	{
 		displayName = "Men (African Militia)";
@@ -127,14 +123,6 @@ class CfgFactionClasses
 		icon="TWClogo.paa";
 		priority=2;
 		side=0;
-	};
-	class argentinian_units
-	{
-		displayName="Argentinian Units";
-		author="Rik";
-		icon="TWClogo.paa";
-		priority=2;
-		side=2;
 	};
 	class ira_units
 	{
@@ -224,7 +212,6 @@ class CfgVehicles
 	
 	#include "russianfederation.hpp"
 	#include "iraq.hpp"
-	#include "argentina.hpp"
 	#include "african.hpp"
 	#include "irish.hpp"
 	

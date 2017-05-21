@@ -171,7 +171,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Modern";
 		displayname = "Landrover Woodland (Modern)";
 		GearModern;
 	};
@@ -179,7 +179,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Modern";
 		displayname = "Landrover Desert (Modern)";
 		GearModern;
 	};
@@ -187,7 +187,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Modern";
 		displayname = "Landrover Special Woodland (Modern)";
 		GearModern;
 	};
@@ -195,7 +195,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Modern";
 		displayname = "Landrover Special Desert (Modern)";
 		GearModern;
 	};
@@ -203,7 +203,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Modern";
 		displayname = "Foxhound (Desert)";
 		GearModern;
 	};
@@ -211,7 +211,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Modern";
 		displayname = "Foxhound (Woodland)";
 		GearModern;
 	};
@@ -219,7 +219,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Millenial";
 		displayname = "Landrover Woodland (90`s)";
 		Gear1990;
 	};
@@ -227,7 +227,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Millenial";
 		displayname = "Landrover Desert (90`s)";
 		Gear1990;
 	};
@@ -235,7 +235,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Millenial";
 		displayname = "Landrover Special Woodland (1990)";
 		Gear1990;
 	};
@@ -243,7 +243,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Millenial";
 		displayname = "Landrover Special Desert (1990)";
 		GearModern;
 	};
@@ -251,7 +251,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_ColdWar";
 		displayname = "Landrover Woodland (ColdWar)";
 		GearColdwar;
 	};
@@ -259,7 +259,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_ColdWar";
 		displayname = "Landrover Desert (Coldwar)";
 		GearColdwar;
 	};
@@ -267,7 +267,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_ColdWar";
 		displayname = "Landrover Special Woodland (Coldwar)";
 		GearColdwar;
 	};
@@ -275,7 +275,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_ColdWar";
 		displayname = "Landrover Special Desert (ColdWar)";
 		GearModern;
 	};
@@ -283,7 +283,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_ColdWar";
 		displayname = "FV432";
 		class TransportMagazines
 		{
@@ -384,7 +384,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Modern";
 		author = "3CB";
 		displayname = "Wildcat";
 		GearModern;
@@ -396,7 +396,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_Millenial";
 		author = "3CB";
 		displayname = "Lynx";
 		Gear1990;
@@ -408,7 +408,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction="twc_faction";
+		faction="TWC_ColdWar";
 		author = "DG";
 		displayname = "Puma HC1";
 		GearColdwar;
@@ -417,7 +417,7 @@ class CfgVehicles
 	{
 		scope=2;
 		side=1;
-		faction="twc_faction";
+		faction="TWC_General";
 		author="CUP";
 		displayname="C5 Hercules";
 		class TransportMagazines
