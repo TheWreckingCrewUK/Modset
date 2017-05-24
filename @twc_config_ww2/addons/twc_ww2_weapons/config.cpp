@@ -19,6 +19,7 @@ class CfgPatches
 class CfgWeapons
 {
 	class fow_w_bren;
+	class LIB_FLARE_PISTOL;
 	
 	class VestItemclass;
 	class VestItem;
@@ -37,6 +38,11 @@ class CfgWeapons
 			mass = 200;
  			allowedSlots[] = {901};
  		};
+	};
+	class TWC_No1Mk3SignalGun: LIB_FLARE_PISTOL
+	{
+		displayName = "No. 1 MkIII Signal Pistol";
+		magazines[] = {"UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
 	};
 	class TWC_Vest_WW2_Base: fow_v_uk_base
 	{
@@ -89,16 +95,78 @@ class CfgVehicles
 	class CUP_BAF_VehicleBox;
 
 //************************WW2*******************************
+	class TWC_Backpack_WW2_Base: fow_b_uk_p37
+	{
+		scope = 1;
+		maximumLoad = 200;
+	};
 	class TWC_Backpack_WW2_PlatoonCommand: fow_b_us_radio
 	{
 		scope = 1;
 		mass = 29.7;
 		maximumLoad = 400;
+		class TransportMagazines
+		{
+			class _XX_Flare_white
+			{
+				magazine="UGL_FlareWhite_F";
+				count=3;
+			};
+			class _XX_Flare_red
+			{
+				magazine="UGL_FlareRed_F";
+				count=3;
+			};
+			class _XX_Flare_green
+			{
+				magazine="UGL_FlareGreen_F";
+				count=3;
+			};
+			class _XX_Flare_yellow
+			{
+				magazine="UGL_FlareYellow_F";
+				count=3;
+			};
+			class _XX_SmokeGrenade_White
+			{
+				magazine="1Rnd_Smoke_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Red
+			{
+				magazine="1Rnd_SmokeRed_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Green
+			{
+				magazine="1Rnd_SmokeGreen_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Yellow
+			{
+				magazine="1Rnd_SmokeYellow_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Purple
+			{
+				magazine="1Rnd_SmokePurple_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Blue
+			{
+				magazine="1Rnd_SmokeBlue_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Orange
+			{
+				magazine="1Rnd_SmokeOrange_Grenade_shell";
+				count=3;
+			};
+		};
 	};
 	class TWC_Backpack_WW2_Medic: B_LIB_SOV_RA_MedicalBag_Empty
 	{
 		scope = 1;
-		maximumLoad = 150;
 		class TransportItems
 		{
             class _xx_Bandage
@@ -158,48 +226,71 @@ class CfgVehicles
 			};
 		};
 	};
-	class TWC_Backpack_WW2_SL: fow_b_uk_p37
+	class TWC_Backpack_WW2_SL: TWC_Backpack_WW2_Base
 	{
 		scope = 1;
-		maximumLoad = 150;
 		class TransportMagazines
 		{
 			class _XX_Flare_white
 			{
-				magazine="LIB_1Rnd_flare_white";
-				count=6;
+				magazine="UGL_FlareWhite_F";
+				count=3;
 			};
 			class _XX_Flare_red
 			{
-				magazine="LIB_1Rnd_flare_red";
-				count=6;
+				magazine="UGL_FlareRed_F";
+				count=3;
 			};
 			class _XX_Flare_green
 			{
-				magazine="LIB_1Rnd_flare_green";
-				count=6;
+				magazine="UGL_FlareGreen_F";
+				count=3;
 			};
 			class _XX_Flare_yellow
 			{
-				magazine="LIB_1Rnd_flare_yellow";
-				count=6;
+				magazine="UGL_FlareYellow_F";
+				count=3;
 			};
-			class _xx_SmokeShellGreen
+			class _XX_SmokeGrenade_White
 			{
-				magazine = "SmokeShellGreen";
-				count = 2;
-			};	
-			class _xx_SmokeShellRed
+				magazine="1Rnd_Smoke_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Red
 			{
-				magazine = "SmokeShellRed";
-				count = 2;
+				magazine="1Rnd_SmokeRed_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Green
+			{
+				magazine="1Rnd_SmokeGreen_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Yellow
+			{
+				magazine="1Rnd_SmokeYellow_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Purple
+			{
+				magazine="1Rnd_SmokePurple_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Blue
+			{
+				magazine="1Rnd_SmokeBlue_Grenade_shell";
+				count=3;
+			};
+			class _XX_SmokeGrenade_Orange
+			{
+				magazine="1Rnd_SmokeOrange_Grenade_shell";
+				count=3;
 			};
 		};
 	};
-	class TWC_Backpack_WW2_Sergeant:fow_b_uk_p37
+	class TWC_Backpack_WW2_Sergeant:TWC_Backpack_WW2_Base
 	{
 		scope = 1;
-		maximumLoad = 200;
 		class TransportMagazines
 		{
 			class _XX_Enfield_Mag
@@ -244,10 +335,9 @@ class CfgVehicles
 			};
 		};
 	};
-	class TWC_Backpack_WW2_2IC:fow_b_uk_p37
+	class TWC_Backpack_WW2_2IC: TWC_Backpack_WW2_Base
 	{
 		scope = 1;
-		maximumLoad = 150;
 		class TransportMagazines
 		{
 			class _XX_Enfield_Mag
@@ -262,10 +352,9 @@ class CfgVehicles
 			};
 		};
 	};
-	class TWC_Backpack_WW2_MGASS:fow_b_uk_p37
+	class TWC_Backpack_WW2_MGASS: TWC_Backpack_WW2_Base
 	{
 		scope = 1;
-		maximumLoad = 150;
 		class TransportMagazines
 		{
 			class _XX_Bren_Mag

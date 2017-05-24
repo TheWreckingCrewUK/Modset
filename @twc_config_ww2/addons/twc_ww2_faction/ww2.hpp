@@ -1,7 +1,7 @@
 	class WW2_British_Base: I_Soldier_F
 	{
 		scope=1;
-		displayName="Base (WW2)";
+		displayName="Base";
 		faction="twc_faction_independent";
 		editorSubcategory = "Men_WW2";
 		vehicleClass="Men_WW2";
@@ -75,7 +75,7 @@
 	class WW2_British_Platoon_Commander: WW2_British_Base
 	{
 		scope=2;
-		displayName="Platoon Commander (WW2)";
+		displayName="Platoon Commander";
 		uniformClass="fow_u_uk_bd40_01_lieutenant";
 		backpack="TWC_Backpack_WW2_SL";
 		linkedItems[]=
@@ -100,7 +100,7 @@
 		"Put",
 		"Binocular",
 		"fow_w_sten_mk2",
-		"LIB_FLARE_PISTOL"
+		"TWC_No1Mk3SignalGun"
 		};
 		respawnweapons[]=
 		{
@@ -108,7 +108,7 @@
 		"Put",
 		"Binocular",
 		"fow_w_sten_mk2",
-		"LIB_FLARE_PISTOL"
+		"TWC_No1Mk3SignalGun"
 		};
 		magazines[]=
 		{
@@ -134,7 +134,7 @@
 	class WW2_British_Platoon_Sergeant: WW2_British_Platoon_Commander
 	{
 		scope=2;
-		displayName="Platoon Sergeant (WW2)";
+		displayName="Platoon Sergeant";
 		uniformClass="fow_u_uk_bd40_01_sergeant";
 		backpack="TWC_Backpack_WW2_Sergeant";
 		weapons[]=
@@ -143,7 +143,7 @@
 			"Put",
 			"Binocular",
 			"fow_w_leeenfield_no4mk1",
-			"LIB_FLARE_PISTOL"
+			"TWC_No1Mk3SignalGun"
 		};
 		respawnweapons[]=
 		{
@@ -151,7 +151,7 @@
 			"Put",
 			"Binocular",
 			"fow_w_leeenfield_no4mk1",
-			"LIB_FLARE_PISTOL"
+			"TWC_No1Mk3SignalGun"
 		};
 		magazines[]=
 		{
@@ -198,7 +198,7 @@
 	class WW2_British_Medic: WW2_British_Base
 	{
 		scope=2;
-		displayName="Medic (WW2)";
+		displayName="Medic";
 		uniformClass="fow_u_uk_bd40_01_private";
 		backpack="TWC_Backpack_WW2_Medic";
 		linkedItems[]=
@@ -250,10 +250,10 @@
 			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_deleteMap"",true]};";
 		};
 	};
-	class WW2_British_Section_Leader: WW2_British_Base
+	class WW2_British_Section_Commander: WW2_British_Base
 	{
 		scope=2;
-		displayName="Section Commander (WW2)";
+		displayName="Section Commander";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_bd40_01_corporal";
@@ -261,7 +261,7 @@
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Sten",
-			"fow_h_uk_mk2",
+			"fow_h_uk_mk2_net",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -269,7 +269,7 @@
 		respawnLinkedItems[]=
 		{
 			"TWC_Vest_WW2_Sten",
-			"fow_h_uk_mk2",
+			"fow_h_uk_mk2_net",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -279,14 +279,14 @@
 			"Throw",
 			"Put",
 			"fow_w_sten_mk2",
-			"LIB_FLARE_PISTOL"
+			"TWC_No1Mk3SignalGun"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"fow_w_sten_mk2",
-			"LIB_FLARE_PISTOL"
+			"TWC_No1Mk3SignalGun"
 		};
 		magazines[]=
 		{
@@ -328,7 +328,7 @@
 	class WW2_British_Rifleman: WW2_British_Base
 	{
 		scope=2;
-		displayName="Rifleman (WW2)";
+		displayName="Rifleman";
 		uniformClass="fow_u_uk_bd40_01_private";
 		weapons[]=
 		{
@@ -393,7 +393,7 @@
 	};
 	class WW2_British_2IC: WW2_British_Rifleman
 	{
-		displayName="2IC (WW2)";
+		displayName="2IC";
 		uniformClass="fow_u_uk_bd40_01_lance_corporal";
 		backpack="TWC_Backpack_WW2_2IC";
 		weapons[]=
@@ -416,7 +416,7 @@
 	class WW2_British_MG: WW2_British_Base
 	{
 		scope=2;
-		displayName="Machine Gunner (WW2)";
+		displayName="Machine Gunner";
 		icon="iconManMG";
 		uniformClass="fow_u_uk_bd40_01_private";
 		linkedItems[]=
@@ -472,7 +472,7 @@
 	};
 	class WW2_British_MGASS: WW2_British_Rifleman
 	{
-		displayName="Machine Gunner Assistant (WW2)";
+		displayName="Machine Gunner Assistant";
 		backpack="TWC_Backpack_WW2_MGASS";
 		linkedItems[]=
 		{
@@ -493,6 +493,43 @@
 		class EventHandlers: EventHandlers
 		{
 			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
+		};
+	};
+	class WW2_British_Carrier_SMG: WW2_British_Rifleman
+	{
+		displayName="Auxiliary (SMG)";
+		backpack="TWC_Backpack_WW2_Base";
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"fow_w_sten_mk2"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"fow_w_sten_mk2"
+		};
+		magazines[]=
+		{
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten"
+			"fow_e_no36mk1"
+		};
+		Respawnmagazines[]=
+		{
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten"
+			"fow_e_no36mk1"
 		};
 	};
 	class WW2_British_Vehicle_Commander: WW2_British_Base
