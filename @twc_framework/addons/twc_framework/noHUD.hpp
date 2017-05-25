@@ -1,15 +1,3 @@
-class CfgPatches
-{
-	class NoDefaultHUD
-	{
-		name = "No Default HUD";
-		author = "Bosenator";
-		url = "http://thewreckingcrew.eu";
-		
-		requiredVersion = 1.70;
-	}
-}
-
 class DefaultVehicleSystemsDisplayManagerLeft
 {
 	componentType = "VehicleSystemsDisplayManager"; //mandatory

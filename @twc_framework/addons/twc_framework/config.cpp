@@ -12,7 +12,7 @@ class CfgPatches
 			"twc_moduleSetSpectator"
 		};
 		weapons[]={};
-		requiredVersion=1.54;
+		requiredVersion=1.7;
 		requiredAddons[]=
 		{
 			"cba_ai",
