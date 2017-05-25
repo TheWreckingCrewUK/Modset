@@ -17,14 +17,13 @@ params["_unit"];
 	if (isServer || !hasInterface) then {
 	_group = group _unit;
 	{
-		_x setVariable ["NOAI",1,false];
-		_x disableAI "path";
+		_x forceSpeed 0;
 	}forEach units _group;
 
 	if(!isMultiplayer)exitWith{};
 	waitUntil{groupOwner _group != 2};
 
 	{
-		_x disableAI "path";
+		_x forceSpeed 0;
 	}forEach units _group;
 };
