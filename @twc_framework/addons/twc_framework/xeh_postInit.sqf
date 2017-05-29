@@ -78,7 +78,7 @@ if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {};
 
 waitUntil{missionNameSpace getVariable "twcModuleFinished"};
 
-[(missionNameSpace getVariable "era")] call twc_fnc_era;
+[(missionNameSpace getVariable "era")] spawn twc_fnc_era;
 [(missionNameSpace getVariable "nightGear"),(missionNameSpace getVariable "era")] spawn twc_fnc_nightGear;
 [(missionNameSpace getVariable "rollSleeves")] spawn twc_fnc_rollShirt;
 [(missionNameSpace getVariable "run")] spawn twc_fnc_run;
