@@ -1,0 +1,290 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=25;
+	};
+	class MarkerIDProvider
+	{
+		nextID=11;
+	};
+	class LayerIndexProvider
+	{
+		nextID=3;
+	};
+	class Camera
+	{
+		pos[]={9593.3682,111.23258,7010.7017};
+		dir[]={-0.75111389,-0.35034397,-0.55954516};
+		up[]={-0.28095517,0.93662101,-0.20929837};
+		aside[]={-0.59740788,-2.7939677e-008,0.80194008};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=11054539;
+class ScenarioData
+{
+	author="Anschluss";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=3;
+		class Item0
+		{
+			dataType="Layer";
+			name="Layer 1";
+			class Entities
+			{
+				items=15;
+				class Item0
+				{
+					dataType="Marker";
+					position[]={745.48798,0,12200.365};
+					name="o_airfield_2";
+					text="Airfield";
+					type="o_hq";
+					id=15;
+					atlOffset=-28.92;
+				};
+				class Item1
+				{
+					dataType="Marker";
+					position[]={8235.9463,0,3179.939};
+					name="o_garrison_1";
+					text="Town";
+					type="o_inf";
+					id=12;
+					atlOffset=-21.671703;
+				};
+				class Item2
+				{
+					dataType="Marker";
+					position[]={5848.7969,0,3590.291};
+					name="o_garrison_2";
+					text="Town ";
+					type="o_inf";
+					id=13;
+					atlOffset=-54.943798;
+				};
+				class Item3
+				{
+					dataType="Marker";
+					position[]={7113.6099,0,6137.8872};
+					name="o_garrison_3";
+					text="Town";
+					type="o_inf";
+					id=8;
+					atlOffset=-71.419395;
+				};
+				class Item4
+				{
+					dataType="Marker";
+					position[]={3150.927,0,6376.7241};
+					name="o_garrison_4";
+					text="Town";
+					type="o_inf";
+					id=6;
+					atlOffset=-224.45091;
+				};
+				class Item5
+				{
+					dataType="Marker";
+					position[]={6021.979,0,8704.2803};
+					name="o_garrison_5";
+					text="Town";
+					type="o_inf";
+					id=14;
+					atlOffset=-125.09389;
+				};
+				class Item6
+				{
+					dataType="Marker";
+					position[]={7756.5342,0,3147.74};
+					name="o_port_1";
+					text="Port";
+					type="o_naval";
+					id=11;
+					atlOffset=-5.9549856;
+				};
+				class Item7
+				{
+					dataType="Marker";
+					position[]={7026.7798,0,9989.1748};
+					name="o_aa_1";
+					text="Anti-Air";
+					type="o_installation";
+					id=9;
+					atlOffset=-125.01;
+				};
+				class Item8
+				{
+					dataType="Marker";
+					position[]={8130.772,0,10117.189};
+					name="o_airfield_1";
+					text="Airfield";
+					type="o_hq";
+					id=5;
+					atlOffset=-29.248116;
+				};
+				class Item9
+				{
+					dataType="Marker";
+					position[]={4372.1831,0,2785.377};
+					name="o_artillery_1";
+					text="Artillery";
+					type="o_art";
+					id=10;
+					atlOffset=-121.66349;
+				};
+				class Item10
+				{
+					dataType="Marker";
+					position[]={3553.8879,0,8493.8633};
+					name="o_garrison_6";
+					text="Town";
+					type="o_inf";
+					id=21;
+					atlOffset=-128.58887;
+				};
+				class Item11
+				{
+					dataType="Marker";
+					position[]={3047.165,0,8467.4385};
+					name="o_port_2";
+					text="Port";
+					type="o_naval";
+					id=22;
+					atlOffset=-3.9068043;
+				};
+				class Item12
+				{
+					dataType="Marker";
+					position[]={4808.6899,0,6951.0889};
+					name="flag_o";
+					type="flag_CSAT";
+					a=1.5;
+					b=1.5;
+					id=19;
+					atlOffset=-413.62457;
+				};
+				class Item13
+				{
+					dataType="Marker";
+					position[]={5558.4561,0,11234.136};
+					name="o_garrison_7";
+					text="Town";
+					type="o_inf";
+					id=23;
+					atlOffset=-71.544373;
+				};
+				class Item14
+				{
+					dataType="Marker";
+					position[]={5513.7495,3.1679728,11627.253};
+					name="o_port_3";
+					text="Port";
+					type="o_naval";
+					id=24;
+				};
+			};
+			id=16;
+			atlOffset=-155.6657;
+		};
+		class Item1
+		{
+			dataType="Layer";
+			name="Layer 3";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Marker";
+					position[]={9744.5576,0,3921.5349};
+					name="flag_b";
+					type="flag_NATO";
+					a=1.5;
+					b=1.5;
+					id=3;
+					atlOffset=-38.889999;
+				};
+				class Item1
+				{
+					dataType="Marker";
+					position[]={9336.3574,0,3839.5991};
+					name="m_base_1_dock";
+					text="Port";
+					type="b_naval";
+					id=4;
+					atlOffset=-3.6800001;
+				};
+			};
+			id=18;
+			atlOffset=-31.210497;
+		};
+		class Item2
+		{
+			dataType="Layer";
+			name="Layer 2";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Marker";
+					position[]={9764.6816,0,3897.0525};
+					name="arsenal";
+					type="Empty";
+					id=0;
+					atlOffset=-38.889999;
+				};
+			};
+			id=17;
+			atlOffset=-38.889999;
+		};
+	};
+};
