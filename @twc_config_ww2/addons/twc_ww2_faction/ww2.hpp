@@ -518,7 +518,7 @@
 			"fow_32Rnd_9x19_sten",
 			"fow_32Rnd_9x19_sten",
 			"fow_32Rnd_9x19_sten",
-			"fow_32Rnd_9x19_sten"
+			"fow_32Rnd_9x19_sten",
 			"fow_e_no36mk1"
 		};
 		Respawnmagazines[]=
@@ -528,7 +528,7 @@
 			"fow_32Rnd_9x19_sten",
 			"fow_32Rnd_9x19_sten",
 			"fow_32Rnd_9x19_sten",
-			"fow_32Rnd_9x19_sten"
+			"fow_32Rnd_9x19_sten",
 			"fow_e_no36mk1"
 		};
 	};
