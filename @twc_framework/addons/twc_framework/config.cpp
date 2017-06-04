@@ -44,7 +44,7 @@ class Extended_InitPost_EventHandlers
 	{
 		class twc_moduleInitPos_eh
 		{
-			init=" [(_this select 0)] execVM 'twc_framework\xeh_postInit.sqf';";
+			init=" [(_this select 0)] execVM 'twc_framework\init.sqf';";
 		};
 	};
 };
