@@ -19,12 +19,12 @@
 			class _xx_UK3CB_BAF_75Rnd
 			{
 				magazine="UK3CB_BAF_762_100Rnd";
-				count=1;
+				count=20;
 			};
 			class _xx_UK3CB_BAF_75Rnd_T
 			{
 				magazine="UK3CB_BAF_762_100Rnd_T";
-				count=5;
+				count=10;
 			};
 			class _xx_UK3CB_BAF_20Rnd
 			{
