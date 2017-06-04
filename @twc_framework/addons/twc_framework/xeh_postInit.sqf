@@ -1,5 +1,6 @@
 //Calls all the functions on player start.
-if(!hasInterface)exitWith{};
+params["_unit"];
+if (player != _unit)exitWith {};
 
 waitUntil { sleep 0.5; !(isNull player) };
 waitUntil { sleep 1.271; time > 0 };
@@ -73,7 +74,7 @@ player addEventHandler ["Killed",{
 }];
 
 */
-if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {};
+if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {systemChat "twcMOduleEnabled was Nil"};
 
 
 waitUntil{missionNameSpace getVariable "twcModuleFinished"};
