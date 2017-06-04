@@ -222,21 +222,14 @@ class CfgGroups
                                                 rank = "LIEUTENANT";
                                                 position[] = {3,0,0};
                                         };
-										class Unit2
-                                        {
-                                                side = 1;
-                                                vehicle = "ColdWar_MortarGunner";
-                                                rank = "PRIVATE";
-                                                position[] = {5,0,0};
-                                        };
-                                        class Unit3
+                                        class Unit2
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_Medic";
                                                 rank = "PRIVATE";
                                                 position[] = {7,0,0};
                                         };
-										class Unit4
+										class Unit3
                                         {
                                                 side = 1;
                                                 vehicle = "ColdWar_CSM";
