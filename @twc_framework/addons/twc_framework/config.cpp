@@ -38,11 +38,14 @@ class cfgFactionClasses
 		displayName = "Zeus TWC";
 	};
 };
-class Extended_PostInit_EventHandlers
+class Extended_InitPost_EventHandlers
 {
-	class ADDON
+	class CAManBase
 	{
-		init="execVM 'twc_framework\xeh_postInit.sqf';";
+		class twc_moduleInitPos_eh
+		{
+			init="execVM 'twc_framework\xeh_postInit.sqf';";
+		};
 	};
 };
 #include "cfgWeapons.hpp"
