@@ -251,6 +251,19 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Join / Leave Spectator Voice";
 	};
+	class twc_moduleMedicalInfo: Module_F
+	{
+		author="[TWC] jayman";
+		category="twc_zeus";
+		scope=1;
+		scopeCurator = 2;
+		functionPriority=1;
+		isGlobal=1;
+		isTriggerActivated=0;
+		function="twc_fnc_medicalInfo";
+		curatorCanAttach = 1;
+		displayName = "Hint a units medical Info";
+	};
 /*
 	class Man;
 	class CAManBase: Man

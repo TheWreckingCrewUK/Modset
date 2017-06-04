@@ -80,6 +80,7 @@ class CfgFunctions
 			class healPlayer {};
 			class killPlayer {};
 			class setSpectator {};
+			class medicalInfo {};
 		};
 
 	};

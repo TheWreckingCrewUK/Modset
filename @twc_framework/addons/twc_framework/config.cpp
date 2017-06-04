@@ -9,7 +9,8 @@ class CfgPatches
 			"twc_moduelCache",
 			"twc_moduleHealPlayer",
 			"twc_moduleKillPlayer",
-			"twc_moduleSetSpectator"
+			"twc_moduleSetSpectator",
+			"twc_moduleMedicalInfo"
 		};
 		weapons[]={};
 		requiredVersion=1.7;
