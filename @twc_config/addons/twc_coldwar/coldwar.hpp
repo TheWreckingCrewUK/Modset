@@ -87,14 +87,14 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L1A1_Wood",
-			"HAFM_LAW"		
+			"ukcw_L1A1_law"		
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L1A1_Wood",
-			"HAFM_LAW"	
+			"ukcw_L1A1_law"	
 		};
 		magazines[]=
 		{
@@ -138,14 +138,14 @@
 			"Throw",
 			"Put",	
 			"twc_L1A1_SUIT",
-			"HAFM_LAW"		
+			"ukcw_L1A1_law"		
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"twc_L1A1_SUIT",
-			"HAFM_LAW"	
+			"ukcw_L1A1_law"	
 		};
 	};
 	class ColdWar_AT: ColdWar_Rifleman

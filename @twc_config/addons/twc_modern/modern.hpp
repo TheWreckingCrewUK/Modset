@@ -233,7 +233,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-			"HAFM_LAW"
+			"ukcw_L1A1_law"
 		};
 		respawnweapons[]=
 		{
@@ -241,7 +241,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-			"HAFM_LAW"
+			"ukcw_L1A1_law"
 		};
 		magazines[]=
 		{
@@ -1223,7 +1223,7 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"HAFM_LAW",
+			"ukcw_L1A1_law",
 			"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -1231,7 +1231,7 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"HAFM_LAW",
+			"ukcw_L1A1_law",
 			"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -1276,7 +1276,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-			"HAFM_LAW",
+			"ukcw_L1A1_law",
 			"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -1285,7 +1285,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-			"HAFM_LAW",
+			"ukcw_L1A1_law",
 			"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -1400,7 +1400,7 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"HAFM_LAW",
+			"ukcw_L1A1_law",
 			"UK3CB_BAF_L131A1"		
 		};
 		respawnweapons[]=
@@ -1408,7 +1408,7 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"HAFM_LAW",
+			"ukcw_L1A1_law",
 			"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -1457,7 +1457,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L129A1_Grippod_TA648",
-			"HAFM_LAW",
+			"ukcw_L1A1_law",
 			"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -1466,7 +1466,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L129A1_Grippod_TA648",
-			"HAFM_LAW",
+			"ukcw_L1A1_law",
 			"UK3CB_BAF_L131A1"	
 		};
 		magazines[]=
