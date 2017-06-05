@@ -8,25 +8,22 @@ class DefaultVehicleSystemsDisplayManagerLeft
 
 	class Components
 	{
-		class MinimapDisplay
-		{
-			componentType = "EmptyDisplayComponent";
-		};
-		
-		class CrewDisplay
-		{
-			componentType = "EmptyDisplayComponent";
-		};
-		
-		class EmptyDisplay
-		{
-			componentType = "EmptyDisplayComponent";
-		};
+		class SlingLoadDisplay { componentType = "EmptyDisplayComponent"; };
+		class SensorsDisplay { componentType = "EmptyDisplayComponent"; };
+		class UAVFeedDisplay { componentType = "EmptyDisplayComponent"; };
+		class VehicleDriverDisplay { componentType = "EmptyDisplayComponent"; };
+		class VehicleGunnerDisplay { componentType = "EmptyDisplayComponent"; };
+		class VehicleCommanderDisplay { componentType = "EmptyDisplayComponent"; };
+		class MissileDisplay { componentType = "EmptyDisplayComponent"; };
+		class MinimapDisplay { componentType = "EmptyDisplayComponent"; };
+		class CrewDisplay { componentType = "EmptyDisplayComponent"; };
+		class EmptyDisplay { componentType = "EmptyDisplayComponent"; };
 	};
 };
 
 class DefaultVehicleSystemsDisplayManagerRight
 {
+	componentType = "VehicleSystemsDisplayManager";
 	x = ((10 * (((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40)));
 	left = 0;
 	right = 1;
@@ -34,19 +31,15 @@ class DefaultVehicleSystemsDisplayManagerRight
 
 	class Components
 	{
-		class MinimapDisplay
-		{
-			componentType = "EmptyDisplayComponent";
-		};
-		
-		class CrewDisplay
-		{
-			componentType = "EmptyDisplayComponent";
-		};
-		
-		class EmptyDisplay
-		{
-			componentType = "EmptyDisplayComponent";
-		};
+		class SlingLoadDisplay { componentType = "EmptyDisplayComponent"; };
+		class SensorsDisplay { componentType = "EmptyDisplayComponent"; };
+		class UAVFeedDisplay { componentType = "EmptyDisplayComponent"; };
+		class VehicleDriverDisplay { componentType = "EmptyDisplayComponent"; };
+		class VehicleGunnerDisplay { componentType = "EmptyDisplayComponent"; };
+		class VehicleCommanderDisplay { componentType = "EmptyDisplayComponent"; };
+		class MissileDisplay { componentType = "EmptyDisplayComponent"; };
+		class MinimapDisplay { componentType = "EmptyDisplayComponent"; };
+		class CrewDisplay { componentType = "EmptyDisplayComponent"; };
+		class EmptyDisplay { componentType = "EmptyDisplayComponent"; };
 	};
 };

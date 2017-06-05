@@ -1,0 +1,3 @@
+This is a heavily modified version of ADV-aceCPR - by Belbo. We've altered a lot of the core logic (stripped unneeded for us customisation options), and the behaviour of various effects have on the probabilities. We've renamed classes, and functions to reflect this and to prevent potential clashes. This modification is intended for use within our group only, so your experience may be less than ideal. We highly recommend the ADV-aceCPR mod instead. He did a great amount of work, for us to build upon.
+
+Additionally this mod adds some custom bandages. These are inherited from the ACE bandages classes and have altered values for our internal game play reasons. It is rather erroneously placed here, but let's be honest. Who cares?
