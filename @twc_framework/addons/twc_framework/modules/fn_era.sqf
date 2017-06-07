@@ -25,7 +25,8 @@ switch (_era) do {
 		"\twc_faction\ranks\staff_sergeant.paa",
 		"\twc_faction\ranks\second_lieutenant.paa",
 		"\twc_faction\ranks\major.paa"
-		]] call ace_nametags_fnc_setFactionRankIcons;	
+		]] call ace_nametags_fnc_setFactionRankIcons;
+		cTab_vehicleClass_has_FBCB2 = [];
 	};
 	case "coldwar": {
 		["TWC_ColdWar", [
@@ -37,6 +38,8 @@ switch (_era) do {
 		"\twc_faction\ranks\second_lieutenant.paa",
 		"\twc_faction\ranks\major.paa"
 		]] call ace_nametags_fnc_setFactionRankIcons;	
+		cTab_vehicleClass_has_FBCB2 = [];
+		cTab_vehicleClass_has_TAD = [];
 	};
 	case "ww2": {
 		["twc_faction_independent", [
@@ -47,7 +50,9 @@ switch (_era) do {
 		"\twc_faction\ranks\staff_sergeant.paa",
 		"\twc_faction\ranks\second_lieutenant.paa",
 		"\twc_faction\ranks\major.paa"
-		]] call ace_nametags_fnc_setFactionRankIcons;	
+		]] call ace_nametags_fnc_setFactionRankIcons;
+		cTab_vehicleClass_has_FBCB2 = [];
+		cTab_vehicleClass_has_TAD = [];
 	};
 	default {
 		["TWC_Modern", [
