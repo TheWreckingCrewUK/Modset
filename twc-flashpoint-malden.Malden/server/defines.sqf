@@ -21,3 +21,4 @@ townSites = ["town_1","town_2","town_3","town_4","town_5","town_6","town_7"];
 airfieldSites = ["airfield_1","airfield_2"];
 aaSites = ["aa_1"];
 artillerySites = ["artillery_1"];
+portSites = ["port_1","port_2","port_3"];

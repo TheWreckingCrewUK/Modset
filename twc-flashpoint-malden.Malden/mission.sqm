@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=12;
 	};
 	class Camera
 	{
-		pos[]={10549.938,272.4917,3909.6216};
-		dir[]={-0.63356948,-0.17981604,0.75251472};
-		up[]={-0.11582202,0.98370081,0.13756566};
-		aside[]={0.76498532,2.7474016e-007,0.6440689};
+		pos[]={9772.7441,54.693279,3864.3162};
+		dir[]={-0.11978912,-0.37155652,0.92067814};
+		up[]={-0.047939964,0.92840624,0.36845812};
+		aside[]={0.99167001,4.1251769e-007,0.12902524};
 	};
 };
 binarizationWanted=0;
@@ -109,12 +109,12 @@ class Mission
 				class Item1
 				{
 					dataType="Marker";
-					position[]={8235.9463,0,3179.939};
+					position[]={9772.7441,54.693279,3864.3162};
 					name="town_1";
 					text="Town";
 					type="o_inf";
 					id=12;
-					atlOffset=-21.671703;
+					atlOffset=7.7776375;
 				};
 				class Item2
 				{
@@ -249,7 +249,7 @@ class Mission
 				};
 			};
 			id=16;
-			atlOffset=-157.24968;
+			atlOffset=-157.23965;
 		};
 		class Item1
 		{
@@ -380,12 +380,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={10062.695,55.76841,3846.6646};
+				position[]={9771.4258,38.889999,3887.8469};
 			};
 			name="zeus";
 			id=27;
 			type="ModuleCurator_F";
-			atlOffset=28.805397;
 			class CustomAttributes
 			{
 				class Attribute0

@@ -8,8 +8,14 @@
 */
 params["_marker"];
 
-[_marker,250] spawn twc_fnc_spawnEnemy;
-[_marker] spawn twc_fnc_spawnCiv;
+switch true do {
+	case (_marker in townSites):{[_marker,250] spawn twc_fnc_spawnEnemy;[_marker] spawn twc_fnc_spawnCiv;};
+	case (_marker in airfieldSites):{[_marker,250] spawn twc_fnc_spawnEnemy;};
+	case (_marker in aaSites):{[_marker,250] spawn twc_fnc_spawnEnemy;};
+	case (_marker in artillerySites):{[_marker,250] spawn twc_fnc_spawnEnemy;};
+	case (_marker in portSites):{[_marker,250] spawn twc_fnc_spawnEnemy;};
+	default {hint "fn_siteSetup switch statement failure"};
+};
 
 _trg = createTrigger ["EmptyDetector", (getMarkerPos _marker)];
 _trg setTriggerArea [2000, 2000, 0, false];
