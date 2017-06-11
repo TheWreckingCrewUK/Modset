@@ -27,13 +27,22 @@ class CfgFunctions {
 			class getBloodLoss {};
 		};
 	};
+	
+	/* class twc_extra {
+		tag = "twc_extra";
+		class init {
+			file = "twc_cpr\extra";
+			class actionLoadUnit {};
+			class actionUnLoadUnit {};
+		};
+	}; */
 };
 
-/* TODO: Make Self Interaction Entries for the Saline 250ml bags
-class CfgVehicles {
+/* class CfgVehicles {
 	class Man;
 	
 	class CAManBase: Man {
+		/* TODO: Make Self Interaction Entries for the Saline 250ml bags
 		class ACE_SelfActions {
 			class Medical {
 				class ACE_ArmLeft {
@@ -45,7 +54,17 @@ class CfgVehicles {
 					};
 				};
 			};
-		};
+		}; */
+		
+		/* class ACE_Actions {
+			class ACE_MainActions {
+				class Medical {
+					class ACE_Medical_loadPatient {
+						statement = "[_player, _target] call twc_extra_fnc_actionLoadUnit";
+					};
+				};
+			};
+		}; */
 	};
 }; */
 
@@ -57,7 +76,7 @@ class ACE_Medical_Actions {
 		};
 		
 		class QuikClot: fieldDressing {
-			treatmentTime = 5;
+			treatmentTime = 6;
 		};
 		
 		class ElasticBandage: fieldDressing {

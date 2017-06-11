@@ -8,7 +8,7 @@ if (_unCon) then {
 		_timeToAdd = _reviveStartTime + 20;
 		private _bloodLoss = [_caller, _target] call twc_cpr_fnc_getBloodLoss;
 		
-		if (_bloodLoss >= 0.8) then {
+		if (_bloodLoss >= 0.9) then {
 			_timeToAdd = _timeToAdd + (random 30);
 		};
 		
