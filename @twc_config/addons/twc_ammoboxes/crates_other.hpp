@@ -53,7 +53,7 @@ class TWC_AmmoBox_Other_L111_Portable: TWC_AmmoBox_Portable {
 
 class TWC_AmmoBox_Other_L7A2_Portable: TWC_AmmoBox_Portable {
 	scope       = 2;
-	displayName = "L7A2 - General Machine Gun (Portable)";
+	displayName = "L7A2 - General Purpose Machine Gun (Portable)";
 	
 	TransportMagazines = {
 		maga_nc(UK3CB_BAF_762_100Rnd_T, 2);

@@ -51,8 +51,8 @@ class CfgPatches {
 			"TWC_AmmoBox_Vehicle_Warrior",
 			"TWC_AmmoBox_Vehicle_Milan",
 			"TWC_AmmoBox_Vehicle_L134",          // GMG
-			"TWC_AmmoBox_Vehicle_L1",            // HMG
-			"TWC_AmmoBox_Vehicle_L7",            // GPMG
+			"TWC_AmmoBox_Vehicle_L111",          // HMG
+			"TWC_AmmoBox_Vehicle_L7A2",          // GPMG
 			
 			// Other
 			"TWC_AmmoBox_Other_Medical_Portable",
