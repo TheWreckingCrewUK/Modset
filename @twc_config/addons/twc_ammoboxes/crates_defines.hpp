@@ -93,7 +93,7 @@ class TWC_AmmoBox_Medical: ACE_medicalSupplyCrate {
 // Actual finished ones, because this is all they needed
 class TWC_AmmoBox_Other_Pallet: B_supplyCrate_F {
 	scope       = 2;
-	displayName = "Pallet (Cargo/Immobile)";
+	displayName = "Air Pallet (Cargo/Immobile)";
 	author      = "Bosenator";
 	
 	side = 1;
@@ -105,9 +105,10 @@ class TWC_AmmoBox_Other_Pallet: B_supplyCrate_F {
 	TransportWeapons   = { };
 	
 	// ACE Defines
-	ace_cargo_canLoad     = 0;
+	ace_cargo_canLoad     = 1;
 	ace_cargo_hasCargo    = 1;
-	ace_cargo_space       = 3; 
+	ace_cargo_space       = 3;
+	ace_cargo_size        = 3; 
 	ace_dragging_canCarry = 0;
 	ace_dragging_canDrag  = 0;
 };
