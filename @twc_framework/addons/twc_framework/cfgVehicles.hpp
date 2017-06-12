@@ -110,26 +110,12 @@ class cfgVehicles
 				typeName="NUMBER";
 				defaultValue=0;
 			};
-			class saveGear
-			{
-				displayName="Save Player Gear";
-				description="Saves and Sets Gear for Disconects";
-				typeName="BOOL";
-				defaultValue=1;
-			};
 			class safeZone
 			{
 				displayName="Shooting in Base";
 				description="Set number to set size of base no-fire zone. 0 = no safezone";
 				typeName="NUMBER";
 				defaultValue=400;
-			};
-			class stats
-			{
-				displayName="Stat Saving";
-				description="Enable to allow saving player stats";
-				typeName="BOOL";
-				defaultValue=0;
 			};
 			class zuesObjects
 			{

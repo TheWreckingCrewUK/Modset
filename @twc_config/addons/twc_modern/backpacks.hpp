@@ -15,11 +15,6 @@
 		mass = 59.84;
 		class TransportItems
 		{
-			class _xx_Maptools
-			{
-				name = "ACE_MapTools";
-				count = 1;
-			};
 			class _xx_PRC_117F
 			{
 				name = "ACRE_PRC117F";
@@ -398,14 +393,6 @@
 	class TWC_Backpack_Modern_MortarGunner: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_Maptools
-			{
-				name = "ACE_MapTools";
-				count = 1;
-			};
-		};
 		class TransportMagazines
 		{
 			class _xx_Stanag
@@ -418,14 +405,6 @@
 	class TWC_Backpack_Modern_MortarAssistant: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 	{
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_Maptools
-			{
-				name = "ACE_MapTools";
-				count = 1;
-			};
-		};
 		class TransportMagazines
 		{
             class _xx_Stanag
@@ -438,14 +417,6 @@
 	class TWC_Backpack_Modern_Sniper: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A
 	{
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_Maptools
-			{
-				name = "ACE_MapTools";
-				count = 1;
-			};
-		};
 		class TransportMagazines
 		{
 			class _xx_Lapua
@@ -463,11 +434,6 @@
 			class _xx_Spotting
 			{
 				name = "ACE_SpottingScope";
-				count = 1;
-			};
-			class _xx_Maptools
-			{
-				name = "ACE_MapTools";
 				count = 1;
 			};
 		};

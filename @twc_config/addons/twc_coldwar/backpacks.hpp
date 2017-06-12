@@ -71,6 +71,11 @@
 				name = "ACRE_PRC117F";
 				count = 1;
 			};
+			class _xx_Maptools
+			{
+				name = "ACE_MapTools";
+				count = 1;
+			};
 		};
 		class TransportMagazines
 		{
@@ -211,6 +216,11 @@
 			class _xx_PRC_117F
 			{
 				name = "ACRE_PRC117F";
+				count = 1;
+			};
+			class _xx_Maptools
+			{
+				name = "ACE_MapTools";
 				count = 1;
 			};
 		};

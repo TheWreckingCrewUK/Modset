@@ -2,6 +2,7 @@ class cfgWeapons
 {
 	class UK3CB_BAF_L1A1_Wood;
 	class CUP_launch_FIM92Stinger;
+	class ukcw_L14A1;
 	
 	class twc_L1A1_SUIT:UK3CB_BAF_L1A1_Wood
 	{
@@ -13,6 +14,19 @@ class cfgWeapons
 			{
 				slot = "CowsSlot";
 				item= "UK3CB_BAF_SUIT";
+			};
+		};
+	};
+	class twc_l14A1_scoped: ukcw_L14A1
+	{
+		scope = 1;
+		author="jayman";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="CUP_optic_MAAWS_Scope";
 			};
 		};
 	};
