@@ -180,14 +180,14 @@
 			"Throw",
 			"Put",
 			"ukcw_sterling_sub",
-			"ukcw_l14a1"
+			"twc_l14A1_scoped"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"ukcw_sterling_sub",
-			"ukcw_l14a1"
+			"twc_l14A1_scoped"
 		};
 		magazines[]=
 		{
@@ -199,7 +199,7 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"ukcw_l14a1_HEAT",
+			"twc_l14A1_scoped_HEAT",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
@@ -213,7 +213,7 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"ukcw_l14a1_HEAT",
+			"twc_l14A1_scoped_HEAT",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
@@ -481,7 +481,7 @@
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_deleteMap"",true]};";
+			init = "if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_deleteMap"",true]};";
 		};
 	};
 	class ColdWar_FAC: ColdWar_Section_Leader

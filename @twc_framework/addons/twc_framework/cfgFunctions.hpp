@@ -38,20 +38,11 @@ class CfgFunctions
 			class boatSafety{};
 			class civilianEquipment{};
 			class deadBodies{};
-			class forwardBase{};
 			class missionModuleInit{};
 			class nightGear{};
 			class run{};
-			class saveGear{};
 			class safeZone{};
-			class stats{};
 			class zeus{};
-		};
-		class medical
-		{
-			file="twc_framework\medical";
-			class itemCheck {};
-			class useSyrette {};
 		};
 		class cache
 		{

@@ -152,6 +152,11 @@
 					Weapon = "ukcw_L1A1_law";
 					count = 6;
 				};
+			class _xx_flareGun
+			{
+				weapon="rhs_weap_rsp30_white";
+				count = 10;
+			};
 		};
 		transportAmmo=100000;
 		supplyRadius=3;
@@ -318,6 +323,11 @@
 				Weapon = "ukcw_L1A1_law";
 				count = 10;
 			};
+			class _xx_flareGun
+			{
+				weapon="rhs_weap_rsp30_white";
+				count = 10;
+			};
 		};
 		transportAmmo=100000;
 		supplyRadius=3;
@@ -423,6 +433,11 @@
 			{
 				Weapon = "ukcw_L1A1_law";
 				count = 4;
+			};
+			class _xx_flareGun
+			{
+				weapon="rhs_weap_rsp30_white";
+				count = 10;
 			};
 		};
 		transportAmmo=100000;
@@ -544,6 +559,11 @@
 			{
 				Weapon = "UK3CB_BAF_AT4_CS_AP_Launcher";
 				count = 12;
+			};
+			class _xx_flareGun
+			{
+				weapon="rhs_weap_rsp30_white";
+				count = 10;
 			};
 		};		
 		transportAmmo=100000;

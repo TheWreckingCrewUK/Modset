@@ -1,0 +1,32 @@
+/*
+* Author: [TWC] jayman
+* Turns the TWC_fieldTent launcher backpack into the actual forward base
+*
+* Arguments:
+* 0: Player <Unit>
+*
+* Return Value:
+* NOTHING
+*
+* Example:
+* [player] call twc_weapons_fnc_assembleFieldTent;
+*
+* Public: No
+*/
+
+params["_unit"];
+
+_pos = getPos _unit;	
+ForwardBasePos = _pos;
+publicVariable "ForwardBasePos";
+ForwardBaseFlag = "Flag_UK_F" createVehicle _pos;	
+ForwardBaseTent = "camp" createVehicle _pos;
+ForwardBaseTent setvariable ["ace_medical_isMedicalFacility", true,true];
+
+_unit removeWeapon "twc_fieldTent";
+
+
+
+twcaction = ["LowerTent","Disassemble","",{[10, [], {[player] spawn twc_weapons_fnc_disassembleFieldTent;}, {}, 'Disassembling Forward Base...'] call ace_common_fnc_progressBar;},{true}] call ace_interact_menu_fnc_createAction;
+[ForwardBaseTent,0,["ACE_MainActions"],twcaction] call ace_interact_menu_fnc_addActionToObject;
+

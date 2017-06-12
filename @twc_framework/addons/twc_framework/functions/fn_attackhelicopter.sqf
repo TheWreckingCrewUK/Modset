@@ -23,5 +23,7 @@ Params ["_spawnmarker","_patrolmarker",["_radius",400],["_helitype","RHS_Mi24P_C
 if (isServer) then {
 	_crew1 = creategroup EAST;
 	_helicopter = [getMarkerPos _spawnmarker, 180, _helitype,_crew1] call BIS_fnc_spawnVehicle;
+	_crew1 setVariable ["twc_cacheDisabled",true];
+	_helicopter setVariable ["twc_cacheDisabled",true];
 	[_crew1, getmarkerpos _patrolmarker, _radius] call CBA_fnc_taskPatrol;
 };
