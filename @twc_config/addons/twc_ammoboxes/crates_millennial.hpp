@@ -9,7 +9,8 @@
 */
 
 class TWC_AmmoBox_Millennial_Base: TWC_AmmoBox_Base {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Base Resupply (Immobile)";
 	editorSubcategory = "TWC_Crates_Millennial";
 	
@@ -47,7 +48,8 @@ class TWC_AmmoBox_Millennial_Base: TWC_AmmoBox_Base {
 };
 
 class TWC_AmmoBox_Millennial_Section_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Section Resupply (Portable)";
 	editorSubcategory = "TWC_Crates_Millennial";
 	
@@ -84,7 +86,8 @@ class TWC_AmmoBox_Millennial_Section_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_Millennial_Mechanised_Base: TWC_AmmoBox_Base {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Mechanised Base Resupply (Immobile)";
 	editorSubcategory = "TWC_Crates_Millennial";
 	
@@ -122,7 +125,8 @@ class TWC_AmmoBox_Millennial_Mechanised_Base: TWC_AmmoBox_Base {
 };
 
 class TWC_AmmoBox_Millennial_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Mechanised Section Resupply (Portable)";
 	editorSubcategory = "TWC_Crates_Millennial";
 	
@@ -159,7 +163,8 @@ class TWC_AmmoBox_Millennial_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_Millennial_Sniper_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Sniper Resupply (Portable)";
 	editorSubcategory = "TWC_Crates_Millennial";
 	

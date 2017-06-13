@@ -6,7 +6,8 @@
 "TWC_AmmoBox_ColdWar_Blowpipe_Portable", */
 
 class TWC_AmmoBox_ColdWar_Base: TWC_AmmoBox_Base {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Base Resupply (Immobile)";
 	
 	editorSubcategory = "TWC_Crates_ColdWar";
@@ -51,7 +52,8 @@ class TWC_AmmoBox_ColdWar_Base: TWC_AmmoBox_Base {
 };
 
 class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Section Resupply (Portable)";
 	
 	editorSubcategory = "TWC_Crates_ColdWar";
@@ -91,7 +93,8 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_ColdWar_Sniper_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Sniper Resupply (Portable)";
 	
 	editorSubcategory = "TWC_Crates_ColdWar";
@@ -100,7 +103,8 @@ class TWC_AmmoBox_ColdWar_Sniper_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_ColdWar_Blowpipe_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Blowpipe Resupply (Portable)";
 	
 	editorSubcategory = "TWC_Crates_ColdWar";

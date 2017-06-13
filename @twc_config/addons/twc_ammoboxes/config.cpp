@@ -21,10 +21,6 @@ class CfgPatches {
 		"TWC_AmmoBox_Modern_Sniper_Portable",
 		"TWC_AmmoBox_Modern_M6_Portable", */
 		units[] = {
-			"TWC_AmmoBox_Base",
-			"TWC_AmmoBox_Portable",
-			"TWC_AmmoBox_Vehicle",
-			"TWC_AmmoBox_Medical",
 			"TWC_AmmoBox_Millennial_Base",
 			"TWC_AmmoBox_Millennial_Section_Portable",
 			"TWC_AmmoBox_Millennial_Mechanised_Base",
@@ -114,7 +110,6 @@ class CfgVehicles {
 	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
 	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
-	#define set_scope(a) accuracy = 1000; scope = a; scopeCurator = a
 	
 	#include "crates_defines.hpp"
 	//#include "crates_modern.hpp"

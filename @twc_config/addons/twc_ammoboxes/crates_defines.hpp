@@ -7,7 +7,7 @@ class ACE_medicalSupplyCrate;
 class Land_PaperBox_closed_F;
 
 class TWC_AmmoBox_Base: CUP_BAF_VehicleBox {
-	set_scope(1);
+	scope = 1;
 	// 1 - protected
 	// 2 - public for ((Zeus)) and Editor
 	displayName = "Ammo Box (Base)";
@@ -18,7 +18,6 @@ class TWC_AmmoBox_Base: CUP_BAF_VehicleBox {
 	class TransportWeapons   { };
 	class TransportBackpacks { };
 
-	side = 4;
 	editorCategory = "TWC_Crates";
 	editorSubcategory = "TWC_Crates_Other"; // default here
 
@@ -31,7 +30,7 @@ class TWC_AmmoBox_Base: CUP_BAF_VehicleBox {
 };
 
 class TWC_AmmoBox_Portable: Box_NATO_Ammo_F {
-	set_scope(1);
+	scope = 1;
 	displayName = "Ammo Box (Portable)";
 	author      = "Bosenator";
 	
@@ -40,7 +39,6 @@ class TWC_AmmoBox_Portable: Box_NATO_Ammo_F {
 	class TransportWeapons   { };
 	class TransportBackpacks { };
 	
-	side = 4;
 	editorCategory = "TWC_Crates";
 	editorSubcategory = "TWC_Crates_Other";
 	
@@ -54,11 +52,10 @@ class TWC_AmmoBox_Portable: Box_NATO_Ammo_F {
 };
 
 class TWC_AmmoBox_Vehicle: Box_NATO_AmmoVeh_F {
-	set_scope(1);
+	scope = 1;
 	displayName = "Vehicle Ammo Box (Immobile)";
 	author      = "Bosenator";
 
-	side = 4;
 	editorCategory = "TWC_Crates";
 	editorSubcategory = "TWC_Crates_Vehicles";
 
@@ -76,7 +73,7 @@ class TWC_AmmoBox_Vehicle: Box_NATO_AmmoVeh_F {
 };
 
 class TWC_AmmoBox_Medical: ACE_medicalSupplyCrate {
-	set_scope(1);
+	scope = 1;
 	displayName = "Medical Box (Portable)";
 	author      = "Bosenator";
 
@@ -85,7 +82,6 @@ class TWC_AmmoBox_Medical: ACE_medicalSupplyCrate {
 	class TransportWeapons   { };
 	class TransportBackpacks { };
 
-	side = 4;
 	editorCategory = "TWC_Crates";
 	editorSubcategory = "TWC_Crates_Other";
 
@@ -100,7 +96,8 @@ class TWC_AmmoBox_Medical: ACE_medicalSupplyCrate {
 
 // It's here for a myriad of reasons, all of which I can't explain...
 class TWC_AmmoBox_Other_Pallet: Land_PaperBox_closed_F  {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Cargo Pallet (Deployable/Immobile)";
 	author      = "Bosenator";
 
@@ -111,11 +108,9 @@ class TWC_AmmoBox_Other_Pallet: Land_PaperBox_closed_F  {
 	
 	icon = "iconCrate";
 	picture = "pictureThing";
-	vehicleClass = "Ammo";
 	destrType = "DestructDefault";
 	explosionEffect = "BasicAmmoExplosion";
 
-	side = 4;
 	editorCategory = "TWC_Crates";
 	editorSubcategory = "TWC_Crates_Other";
 
@@ -170,6 +165,7 @@ class TWC_AmmoBox_Other_Pallet: Land_PaperBox_closed_F  {
 };
 
 class TWC_AmmoBox_Other_Empty_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Empty Ammo Box (Portable)";
 };

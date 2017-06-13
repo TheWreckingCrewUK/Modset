@@ -102,7 +102,7 @@ class CfgFactionClasses
 	};
 	class TWC_Millenial
 	{
-		displayName="TWC Millenial Operation Units";
+		displayName="TWC Millennial Operation Units";
 		author="The Wrecking Crew";
 		icon="TWClogo.paa";
 		priority=2;

@@ -10,7 +10,8 @@
 "TWC_AmmoBox_Other_Empty_Portable"   // a nice empty crate to ((Zeus)) items in */
 
 class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Medical Supplies (Portable)";
 
 	class TransportItems {
@@ -34,7 +35,8 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 };
 
 class TWC_AmmoBox_Other_L134_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "L134 - Grenade Machine Gun (Portable)";
 	
 	class TransportMagazines {
@@ -43,7 +45,8 @@ class TWC_AmmoBox_Other_L134_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_Other_L111_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "L111 - Heavy Machine Gun (Portable)";
 	
 	class TransportMagazines {
@@ -52,7 +55,8 @@ class TWC_AmmoBox_Other_L111_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_Other_L7A2_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "L7A2 - General Purpose Machine Gun (Portable)";
 	
 	class TransportMagazines {
@@ -62,7 +66,8 @@ class TWC_AmmoBox_Other_L7A2_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "L14 - Recoilless Rifle (Portable)";
 	
 	class TransportMagazines {
@@ -74,7 +79,8 @@ class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_Other_L16_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "L16 - 81mm Mortar (Portable)";
 	
 	class TransportMagazines {
@@ -86,7 +92,8 @@ class TWC_AmmoBox_Other_L16_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_Other_Stinger_Portable: TWC_AmmoBox_Portable {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Stinger (Portable)";
 	
 	class TransportMagazines {

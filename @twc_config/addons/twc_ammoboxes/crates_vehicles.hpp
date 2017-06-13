@@ -6,7 +6,8 @@
 "TWC_AmmoBox_Vehicle_L7A2",          // GPMG */
 
 class TWC_AmmoBox_Vehicle_Warrior: TWC_AmmoBox_Vehicle {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Warrior (Immobile)";
 	
 	class TransportItems {
@@ -16,7 +17,8 @@ class TWC_AmmoBox_Vehicle_Warrior: TWC_AmmoBox_Vehicle {
 };
 
 class TWC_AmmoBox_Vehicle_Milan: TWC_AmmoBox_Vehicle {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Milan - 3CB (Immobile)";
 	
 	class TransportMagazines {
@@ -25,7 +27,8 @@ class TWC_AmmoBox_Vehicle_Milan: TWC_AmmoBox_Vehicle {
 };
 
 class TWC_AmmoBox_Vehicle_L134: TWC_AmmoBox_Vehicle {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "L134 - GMG 3CB (Immobile)";
 	
 	class TransportMagazines {
@@ -34,7 +37,8 @@ class TWC_AmmoBox_Vehicle_L134: TWC_AmmoBox_Vehicle {
 };
 
 class TWC_AmmoBox_Vehicle_L111: TWC_AmmoBox_Vehicle {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "L111 - HMG 3CB (Immobile)";
 	
 	class TransportMagazines {
@@ -43,7 +47,8 @@ class TWC_AmmoBox_Vehicle_L111: TWC_AmmoBox_Vehicle {
 };
 
 class TWC_AmmoBox_Vehicle_L7A2: TWC_AmmoBox_Vehicle {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "L7A2 - GPMG 3CB (Immobile)";
 	
 	class TransportMagazines {
@@ -54,7 +59,8 @@ class TWC_AmmoBox_Vehicle_L7A2: TWC_AmmoBox_Vehicle {
 
 // Implementation of TWC_Vehicle_Ammo_ColdWar, unsure as to the purpose of it
 class TWC_AmmoBox_Vehicle_Generic: TWC_AmmoBox_Vehicle {
-	set_scope(2);
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "Generic Vehicle Resupply (Draggable)";
 
 	transportAmmo        = 100000;
