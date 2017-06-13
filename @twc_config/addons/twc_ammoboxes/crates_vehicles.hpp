@@ -51,3 +51,13 @@ class TWC_AmmoBox_Vehicle_L7A2: TWC_AmmoBox_Vehicle {
 		maga_nc(UK3CB_BAF_762_200Rnd, 60);
 	};
 };
+
+// Implementation of TWC_Vehicle_Ammo_ColdWar, unsure as to the purpose of it
+class TWC_AmmoBox_Vehicle_Generic: TWC_AmmoBox_Vehicle {
+	set_scope(2);
+	displayName = "Generic Vehicle Resupply (Draggable)";
+
+	transportAmmo        = 100000;
+	supplyRadius         = 10;
+	ace_dragging_canDrag = 1;
+};

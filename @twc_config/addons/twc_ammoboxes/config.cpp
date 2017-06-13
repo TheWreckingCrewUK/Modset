@@ -10,65 +10,49 @@ class CfgPatches {
 			"TWC_modern_Warrior_Ammobox"
 		}; */
 		
+		/*
+		"TWC_AmmoBox_Modern_Base",
+		"TWC_AmmoBox_Modern_Section_Portable",
+		"TWC_AmmoBox_Modern_COIN_Base",
+		"TWC_AmmoBox_Modern_COIN_Section_Portable",
+		"TWC_AmmoBox_Modern_Mechanised_Base",
+		"TWC_AmmoBox_Modern_Mechanised_Section_Portable",
+		"TWC_AmmoBox_Modern_Javelin_Portable",
+		"TWC_AmmoBox_Modern_Sniper_Portable",
+		"TWC_AmmoBox_Modern_M6_Portable", */
 		units[] = {
-			// Base Classes (inherited from)
 			"TWC_AmmoBox_Base",
 			"TWC_AmmoBox_Portable",
 			"TWC_AmmoBox_Vehicle",
 			"TWC_AmmoBox_Medical",
-
-			/* // Modern
-			"TWC_AmmoBox_Modern_Base",
-			"TWC_AmmoBox_Modern_Section_Portable",
-			
-			"TWC_AmmoBox_Modern_COIN_Base",
-			"TWC_AmmoBox_Modern_COIN_Section_Portable",
-
-			"TWC_AmmoBox_Modern_Mechanised_Base",
-			"TWC_AmmoBox_Modern_Mechanised_Section_Portable",
-			
-			"TWC_AmmoBox_Modern_Javelin_Portable",
-			"TWC_AmmoBox_Modern_Sniper_Portable",
-			"TWC_AmmoBox_Modern_M6_Portable",    // M6-895, 60mm Mortar
-			
-			// Millennial
 			"TWC_AmmoBox_Millennial_Base",
 			"TWC_AmmoBox_Millennial_Section_Portable",
-			
 			"TWC_AmmoBox_Millennial_Mechanised_Base",
 			"TWC_AmmoBox_Millennial_Mechanised_Section_Portable",
-			
-			"TWC_AmmoBox_Millennial_Sniper_Portable", */
-			
-			// Cold War
+			"TWC_AmmoBox_Millennial_Sniper_Portable",
 			"TWC_AmmoBox_ColdWar_Base",
 			"TWC_AmmoBox_ColdWar_Section_Portable",
-			
 			"TWC_AmmoBox_ColdWar_Sniper_Portable",
 			"TWC_AmmoBox_ColdWar_Blowpipe_Portable",
-			
-			// Vehicles
 			"TWC_AmmoBox_Vehicle_Warrior",
 			"TWC_AmmoBox_Vehicle_Milan",
-			"TWC_AmmoBox_Vehicle_L134",          // GMG
-			"TWC_AmmoBox_Vehicle_L111",          // HMG
-			"TWC_AmmoBox_Vehicle_L7A2",          // GPMG
-			
-			// Other
+			"TWC_AmmoBox_Vehicle_L134",
+			"TWC_AmmoBox_Vehicle_L111",
+			"TWC_AmmoBox_Vehicle_L7A2",
+			"TWC_AmmoBox_Vehicle_Generic",
 			"TWC_AmmoBox_Other_Medical_Portable",
-			"TWC_AmmoBox_Other_L134_Portable",   // GMG
-			"TWC_AmmoBox_Other_L111_Portable",   // HMG
-			"TWC_AmmoBox_Other_L7A2_Portable",   // GPMG
-			"TWC_AmmoBox_Other_L14_Portable",    // recoilless rifle carl gustav
-			"TWC_AmmoBox_Other_L16_Portable",    // 81mm mortar
+			"TWC_AmmoBox_Other_L134_Portable",
+			"TWC_AmmoBox_Other_L111_Portable",
+			"TWC_AmmoBox_Other_L7A2_Portable",
+			"TWC_AmmoBox_Other_L14_Portable",
+			"TWC_AmmoBox_Other_L16_Portable",
 			"TWC_AmmoBox_Other_Stinger_Portable",
-			
-			"TWC_AmmoBox_Other_Pallet",          // has a cargo, no inventory (airborne, airmobile)
-			"TWC_AmmoBox_Other_Empty_Portable"   // a nice empty crate to ((Zeus)) items in
+			"TWC_AmmoBox_Other_Pallet",
+			"TWC_AmmoBox_Other_Empty_Portable" 
 		};
 		
 		weapons[] = {};
-		requiredVersion = 0.1;
+		requiredVersion = 1;
 		
 		requiredAddons[] = {
 			"A3_Weapons_F",
@@ -130,11 +114,11 @@ class CfgVehicles {
 	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
 	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
-	#define set_scope(a) scope = a; scopeCurator = a
+	#define set_scope(a) accuracy = 1000; scope = a; scopeCurator = a
 	
 	#include "crates_defines.hpp"
 	//#include "crates_modern.hpp"
-	//#include "crates_millennial.hpp"
+	#include "crates_millennial.hpp"
 	#include "crates_coldwar.hpp"
 	#include "crates_vehicles.hpp"
 	#include "crates_other.hpp"

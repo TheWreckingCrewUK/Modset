@@ -7,16 +7,16 @@ class ACE_medicalSupplyCrate;
 class Land_PaperBox_closed_F;
 
 class TWC_AmmoBox_Base: CUP_BAF_VehicleBox {
-	set_scope(1)
+	set_scope(1);
 	// 1 - protected
 	// 2 - public for ((Zeus)) and Editor
 	displayName = "Ammo Box (Base)";
 	author      = "Bosenator";
 
 	class TransportMagazines { };
-	class TransportItems { };
-	class TransportWeapons { };
-	class TransportBackpacks {};
+	class TransportItems     { };
+	class TransportWeapons   { };
+	class TransportBackpacks { };
 
 	side = 4;
 	editorCategory = "TWC_Crates";
@@ -31,14 +31,14 @@ class TWC_AmmoBox_Base: CUP_BAF_VehicleBox {
 };
 
 class TWC_AmmoBox_Portable: Box_NATO_Ammo_F {
-	set_scope(1)
+	set_scope(1);
 	displayName = "Ammo Box (Portable)";
 	author      = "Bosenator";
 	
 	class TransportMagazines { };
-	class TransportItems { };
-	class TransportWeapons { };
-	class TransportBackpacks {};
+	class TransportItems     { };
+	class TransportWeapons   { };
+	class TransportBackpacks { };
 	
 	side = 4;
 	editorCategory = "TWC_Crates";
@@ -54,7 +54,7 @@ class TWC_AmmoBox_Portable: Box_NATO_Ammo_F {
 };
 
 class TWC_AmmoBox_Vehicle: Box_NATO_AmmoVeh_F {
-	set_scope(1)
+	set_scope(1);
 	displayName = "Vehicle Ammo Box (Immobile)";
 	author      = "Bosenator";
 
@@ -63,9 +63,9 @@ class TWC_AmmoBox_Vehicle: Box_NATO_AmmoVeh_F {
 	editorSubcategory = "TWC_Crates_Vehicles";
 
 	class TransportMagazines { };
-	class TransportItems { };
-	class TransportWeapons { };
-	class TransportBackpacks {};
+	class TransportItems     { };
+	class TransportWeapons   { };
+	class TransportBackpacks { };
 
 	// ACE Defines
 	ace_cargo_canLoad     = 0;
@@ -76,14 +76,14 @@ class TWC_AmmoBox_Vehicle: Box_NATO_AmmoVeh_F {
 };
 
 class TWC_AmmoBox_Medical: ACE_medicalSupplyCrate {
-	set_scope(1)
+	set_scope(1);
 	displayName = "Medical Box (Portable)";
 	author      = "Bosenator";
 
 	class TransportMagazines { };
-	class TransportItems { };
-	class TransportWeapons { };
-	class TransportBackpacks {};
+	class TransportItems     { };
+	class TransportWeapons   { };
+	class TransportBackpacks { };
 
 	side = 4;
 	editorCategory = "TWC_Crates";
@@ -100,11 +100,11 @@ class TWC_AmmoBox_Medical: ACE_medicalSupplyCrate {
 
 // It's here for a myriad of reasons, all of which I can't explain...
 class TWC_AmmoBox_Other_Pallet: Land_PaperBox_closed_F  {
-	set_scope(2)
+	set_scope(2);
 	displayName = "Cargo Pallet (Deployable/Immobile)";
 	author      = "Bosenator";
 
-	// Basically make this building a Supply Crate, so ACE Cargo can work
+	// Basically make this building a supply crate, so ACE Cargo can work on it and not look reta-retardant
 	model = "\A3\Weapons_F\Ammoboxes\Supplydrop.p3d";
 	memoryPointSupply = "doplnovani";
 	slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1","SlingLoadCargo2","SlingLoadCargo3","SlingLoadCargo4"};
@@ -120,8 +120,8 @@ class TWC_AmmoBox_Other_Pallet: Land_PaperBox_closed_F  {
 	editorSubcategory = "TWC_Crates_Other";
 
 	class TransportMagazines { };
-	class TransportItems { };
-	class TransportWeapons { };
+	class TransportItems     { };
+	class TransportWeapons   { };
 	class TransportBackpacks { };
 	
 	// ACE Defines
@@ -134,7 +134,7 @@ class TWC_AmmoBox_Other_Pallet: Land_PaperBox_closed_F  {
 	ace_dragging_canDrag  = 1;
 	
 	// Disable inventory on it
-	maximumLoad = 0;
+	maximumLoad           = 0;
 	transportMaxMagazines = 0;
 	transportMaxWeapons   = 0;
 	transportMaxBackpacks = 0;
@@ -170,6 +170,6 @@ class TWC_AmmoBox_Other_Pallet: Land_PaperBox_closed_F  {
 };
 
 class TWC_AmmoBox_Other_Empty_Portable: TWC_AmmoBox_Portable {
-	set_scope(2)
+	set_scope(2);
 	displayName = "Empty Ammo Box (Portable)";
 };
