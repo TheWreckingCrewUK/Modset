@@ -10,10 +10,10 @@
 "TWC_AmmoBox_Other_Empty_Portable"   // a nice empty crate to ((Zeus)) items in */
 
 class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
-	scope       = 2;
+	set_scope(2);
 	displayName = "Medical Supplies (Portable)";
 
-	TransportItems = {
+	class TransportItems {
 		item_nc(ACE_fieldDressing, 30);
 		item_nc(ACE_elasticBandage, 30);
 		item_nc(ACE_quickclot, 30);
@@ -34,50 +34,50 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 };
 
 class TWC_AmmoBox_Other_L134_Portable: TWC_AmmoBox_Portable {
-	scope       = 2;
+	set_scope(2);
 	displayName = "L134 - Grenade Machine Gun (Portable)";
 	
-	TransportMagazines = {
+	class TransportMagazines {
 		maga_nc(UK3CB_BAF_32Rnd_40mm_G_Box, 3);
 	};
 };
 
 class TWC_AmmoBox_Other_L111_Portable: TWC_AmmoBox_Portable {
-	scope       = 2;
+	set_scope(2);
 	displayName = "L111 - Heavy Machine Gun (Portable)";
 	
-	TransportMagazines = {
+	class TransportMagazines {
 		maga_nc(UK3CB_BAF_127_100Rnd, 3);
 	};
 };
 
 class TWC_AmmoBox_Other_L7A2_Portable: TWC_AmmoBox_Portable {
-	scope       = 2;
+	set_scope(2);
 	displayName = "L7A2 - General Purpose Machine Gun (Portable)";
 	
-	TransportMagazines = {
+	class TransportMagazines {
 		maga_nc(UK3CB_BAF_762_100Rnd_T, 2);
 		maga_nc(UK3CB_BAF_762_100Rnd, 10);
 	};
 };
 
 class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
-	scope       = 2;
+	set_scope(2);
 	displayName = "L14 - Recoilless Rifle (Portable)";
 	
-	TransportMagazines = {
-		maga_nc(ukcw_l14A1_HE, 3);
-		maga_nc(ukcw_l14A1_HEAT, 3);
-		maga_nc(ukcw_l14A1_ILLUM, 1);
-		maga_nc(ukcw_l14A1_SMOKE, 1);
+	class TransportMagazines {
+		maga_nc(ukcw_l14A1_HE, 2);
+		maga_nc(ukcw_l14A1_HEAT, 2);
+		maga_nc(ukcw_l14A1_ILLUM, 2);
+		maga_nc(ukcw_l14A1_SMOKE, 2);
 	};
 };
 
 class TWC_AmmoBox_Other_L16_Portable: TWC_AmmoBox_Portable {
-	scope       = 2;
+	set_scope(2);
 	displayName = "L16 - 81mm Mortar (Portable)";
 	
-	TransportMagazines = {
+	class TransportMagazines {
 		maga_nc(UK3CB_BAF_1Rnd_81mm_Mo_Shells, 10);
 		maga_nc(UK3CB_BAF_1Rnd_81mm_Mo_Smoke_White, 4);
 		maga_nc(UK3CB_BAF_1Rnd_81mm_Mo_Flare_White, 2);
@@ -86,10 +86,10 @@ class TWC_AmmoBox_Other_L16_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_Other_Stinger_Portable: TWC_AmmoBox_Portable {
-	scope       = 2;
+	set_scope(2);
 	displayName = "Stinger (Portable)";
 	
-	TransportMagazines = {
+	class TransportMagazines {
 		maga_nc(CUP_Stinger_M, 5);
 	};
 };

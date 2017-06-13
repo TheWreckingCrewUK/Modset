@@ -17,7 +17,7 @@ class CfgPatches {
 			"TWC_AmmoBox_Vehicle",
 			"TWC_AmmoBox_Medical",
 
-			// Modern
+			/* // Modern
 			"TWC_AmmoBox_Modern_Base",
 			"TWC_AmmoBox_Modern_Section_Portable",
 			
@@ -38,7 +38,7 @@ class CfgPatches {
 			"TWC_AmmoBox_Millennial_Mechanised_Base",
 			"TWC_AmmoBox_Millennial_Mechanised_Section_Portable",
 			
-			"TWC_AmmoBox_Millennial_Sniper_Portable",
+			"TWC_AmmoBox_Millennial_Sniper_Portable", */
 			
 			// Cold War
 			"TWC_AmmoBox_ColdWar_Base",
@@ -62,6 +62,7 @@ class CfgPatches {
 			"TWC_AmmoBox_Other_L14_Portable",    // recoilless rifle carl gustav
 			"TWC_AmmoBox_Other_L16_Portable",    // 81mm mortar
 			"TWC_AmmoBox_Other_Stinger_Portable",
+			
 			"TWC_AmmoBox_Other_Pallet",          // has a cargo, no inventory (airborne, airmobile)
 			"TWC_AmmoBox_Other_Empty_Portable"   // a nice empty crate to ((Zeus)) items in
 		};
@@ -71,10 +72,12 @@ class CfgPatches {
 		
 		requiredAddons[] = {
 			"A3_Weapons_F",
+			"a3_structures_f_epa",
 			"uk3cb_baf_weapons",
 			"uk3cb_baf_equipment",
 			"cup_weapons_ammoboxes",
-			"ace_medical"
+			"ace_medical",
+			"ace_cargo"
 		};
 		
 		version = "1";
@@ -127,10 +130,11 @@ class CfgVehicles {
 	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
 	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
+	#define set_scope(a) scope = a; scopeCurator = a
 	
 	#include "crates_defines.hpp"
-	#include "crates_modern.hpp"
-	#include "crates_millennial.hpp"
+	//#include "crates_modern.hpp"
+	//#include "crates_millennial.hpp"
 	#include "crates_coldwar.hpp"
 	#include "crates_vehicles.hpp"
 	#include "crates_other.hpp"
