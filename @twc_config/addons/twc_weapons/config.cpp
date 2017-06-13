@@ -84,11 +84,3 @@ class cfgWeapons
 		};
 	};
 };
-/*
-class Extended_PostInit_EventHandlers
-{
-	class TWC_Tent_INIT
-	{
-		init="execVM '\twc_weapons\scripts\init.sqf';";
-	};
-};
