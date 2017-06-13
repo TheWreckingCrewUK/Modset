@@ -112,7 +112,7 @@ class TWC_AmmoBox_Other_Pallet: Land_PaperBox_closed_F  {
 	icon = "iconCrate";
 	picture = "pictureThing";
 	vehicleClass = "Ammo";
-	destrType = "DestructBuilding";
+	destrType = "DestructDefault";
 	explosionEffect = "BasicAmmoExplosion";
 
 	side = 4;
@@ -131,7 +131,7 @@ class TWC_AmmoBox_Other_Pallet: Land_PaperBox_closed_F  {
 	ace_cargo_size        = 4;
 	
 	ace_dragging_canCarry = 0;
-	ace_dragging_canDrag  = 0;
+	ace_dragging_canDrag  = 1;
 	
 	// Disable inventory on it
 	maximumLoad = 0;
