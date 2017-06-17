@@ -600,7 +600,7 @@
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Pilot_DPMT",
-			"UK3CB_BAF_H_CrewHelmet_DPMT",
+			"UK3CB_BAF_H_CrewHelmet_DPMT_A",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -608,7 +608,7 @@
 		respawnLinkedItems[]=
 		{
 			"UK3CB_BAF_V_Pilot_DPMT",
-			"UK3CB_BAF_H_CrewHelmet_DPMT",
+			"UK3CB_BAF_H_CrewHelmet_DPMT_A",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -647,7 +647,22 @@
 		displayName="Vehicle Crew";
 		editorSubcategory = "Men_1990_Woodland_Mounted";
 		vehicleClass="Men_1990_Woodland_Mounted";
-		backpack="";
+		backpack="";linkedItems[]=
+		{
+			"UK3CB_BAF_V_Pilot_DPMT",
+			"UK3CB_BAF_H_CrewHelmet_DPMT_ESS_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Pilot_DPMT",
+			"UK3CB_BAF_H_CrewHelmet_DPMT_ESS_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 	};
 //////////////////////////////////////////////////////////////////
 //                                                              //
