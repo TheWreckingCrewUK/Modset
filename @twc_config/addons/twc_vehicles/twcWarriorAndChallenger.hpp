@@ -1641,7 +1641,7 @@ class LandVehicle;
 	{
 		scope=2;
 		displayName="FV 510 Warrior (W)";
-		model="\CUP\TrackedVehicles\CUP_TrackedVehicles_MCV80\MCV80_BAF";
+		model="\CUP\TrackedVehicles\CUP_TrackedVehicles_MCV80\CUP_MCV80_BAF";
 		HiddenSelections[]=
 		{
 			"camo1",
