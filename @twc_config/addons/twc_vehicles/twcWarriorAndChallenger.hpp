@@ -45,7 +45,7 @@ class LandVehicle;
 		{
 			libTextDesc="$STR_BAF_CFGVEHICLES_BAF_FV510_D_LIBRARY0";
 		};
-		model="\CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\FV510_BAF";
+		model="\CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\CUP_FV510_BAF";
 		picture="\CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\ui\picture_warrior_ca.paa";
 		Icon="\CUP\TrackedVehicles\CUP_TrackedVehicles_FV510\Data\ui\icon_warrior_ca.paa";
 		mapSize=9.3000002;
@@ -1446,7 +1446,7 @@ class LandVehicle;
 	{
 		scope=2;
 		displayName="FV 510 Warrior (D)";
-		model="\CUP\TrackedVehicles\CUP_TrackedVehicles_MCV80\MCV80_BAF";
+		model = "\CUP\TrackedVehicles\CUP_TrackedVehicles_MCV80\CUP_MCV80_BAF";
 		HiddenSelections[]=
 		{
 			"camo1",
@@ -1636,25 +1636,12 @@ class LandVehicle;
 				count = 2;
 			};
 		};
-		class TransportWeapons
-		{
-			class _xx_NLAW
-			{
-				Weapon = "launch_NLAW_F";
-				count = 1;
-			};
-			class _xx_LAW
-			{
-				Weapon = "HAFM_LAW";
-				count = 2;
-			};
-		};
 	};
 	class TWC_Warrior_W: TWC_Warrior_D
 	{
 		scope=2;
 		displayName="FV 510 Warrior (W)";
-		model="\CUP\TrackedVehicles\CUP_TrackedVehicles_MCV80\MCV80_BAF";
+		model="\CUP\TrackedVehicles\CUP_TrackedVehicles_MCV80\CUP_MCV80_BAF";
 		HiddenSelections[]=
 		{
 			"camo1",
@@ -1816,19 +1803,6 @@ class LandVehicle;
 			class _xx_Morphine
 			{
 				name = "ACE_morphine";
-				count = 2;
-			};
-		};
-		class TransportWeapons
-		{
-			class _xx_NLAW
-			{
-				Weapon = "launch_NLAW_F";
-				count = 1;
-			};
-			class _xx_LAW
-			{
-				Weapon = "HAFM_LAW";
 				count = 2;
 			};
 		};
