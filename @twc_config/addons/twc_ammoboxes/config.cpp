@@ -10,17 +10,16 @@ class CfgPatches {
 			"TWC_modern_Warrior_Ammobox"
 		}; */
 		
-		/*
-		"TWC_AmmoBox_Modern_Base",
-		"TWC_AmmoBox_Modern_Section_Portable",
-		"TWC_AmmoBox_Modern_COIN_Base",
-		"TWC_AmmoBox_Modern_COIN_Section_Portable",
-		"TWC_AmmoBox_Modern_Mechanised_Base",
-		"TWC_AmmoBox_Modern_Mechanised_Section_Portable",
-		"TWC_AmmoBox_Modern_Javelin_Portable",
-		"TWC_AmmoBox_Modern_Sniper_Portable",
-		"TWC_AmmoBox_Modern_M6_Portable", */
 		units[] = {
+			"TWC_AmmoBox_Modern_Base",
+			"TWC_AmmoBox_Modern_Section_Portable",
+			"TWC_AmmoBox_Modern_COIN_Base",
+			"TWC_AmmoBox_Modern_COIN_Section_Portable",
+			"TWC_AmmoBox_Modern_Mechanised_Base",
+			"TWC_AmmoBox_Modern_Mechanised_Section_Portable",
+			"TWC_AmmoBox_Modern_Javelin_Portable",
+			"TWC_AmmoBox_Modern_Sniper_Portable",
+			"TWC_AmmoBox_Modern_M6_Portable",
 			"TWC_AmmoBox_Millennial_Base",
 			"TWC_AmmoBox_Millennial_Section_Portable",
 			"TWC_AmmoBox_Millennial_Mechanised_Base",
