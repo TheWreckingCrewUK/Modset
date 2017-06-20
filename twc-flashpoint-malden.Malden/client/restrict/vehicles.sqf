@@ -58,7 +58,7 @@ if(str player in _specialCases)then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
 				if((_this select 2) isKindOf "Tank")then{
-					if(typeOf (_this select 2) == "B_APC_Tracked_01_rcws_F" || typeOf (_this select 2) == "B_APC_Wheeled_01_cannon_F")then{
+					if(typeOf (_this select 2) == "B_MBT_01_cannon_F" || typeOf (_this select 2) == "B_APC_Wheeled_01_cannon_F")then{
 			
 					}else{
 						hint "You are the armour crew. You may only Gun,Drive,Command the armour crew vehicles";
@@ -74,7 +74,7 @@ if(str player in _specialCases)then{
 		player addEventHandler ["getInMan",{
 			if((_this select 1) != "cargo")then{
 				if((_this select 2) isKindOf "Air")then{
-					if(typeOf (_this select 2) == "B_Heli_Attack_01_F")then{
+					if(typeOf (_this select 2) == "B_Heli_Attack_01_dynamicLoadout_F")then{
 						
 					}else{
 						hint "You are an Attack Helicopter Pilot. You may only fly The Attack helicopter";

@@ -141,6 +141,15 @@ class CfgDebriefing
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
+	class End8
+	{
+		title = "You cannot play as this role.";
+		subtitle = "The airfield needs to be captured before you can use this role";
+		description = "Play as infantry or armour for now";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
 };
 
 class ACE_Settings {
