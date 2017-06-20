@@ -17,6 +17,11 @@ publicVariable "arsenalAmmoBox_2";
 [arsenalAmmoBox_2,[true],true] call BIS_fnc_removeVirtualItemCargo;
 [arsenalAmmoBox_2,[true],true] call BIS_fnc_removeVirtualBackpackCargo;
 
+// Respawn Marker Moved ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+"respawn_west" setMarkerPos (getMarkerPos "base_2_respawn");
+
+onPlayerConnected {player setPos (getMarkerPos "base_2_respawn")};
+
 // Create Flag ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 createMarker ["flag_b_2", getMarkerPos "arsenal_2"];
 "flag_b_2" setMarkerType "flag_NATO";
