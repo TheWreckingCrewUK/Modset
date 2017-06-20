@@ -47,6 +47,8 @@ class cfgFunctions
 			class spawnSiteTrigger {};
 			class spawnCiv {};
 			class townSetup {};
+			class createBase {};
+			class createAirfield {};
 		};
 		class vector
 		{
