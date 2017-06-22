@@ -20,7 +20,7 @@ publicVariable "arsenalAmmoBox_3";
 // Move Pilots ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 onPlayerConnected 
 {
-	if ((player isEqualTo "helo1") || (player isEqualTo "helo2") || (player isEqualTo "helo3") || (player isEqualTo "apache1") || (player isEqualTo "apache2") || (player isEqualTo "jet1"))
+	if ((player isEqualTo "helo1") || (player isEqualTo "helo2") || (player isEqualTo "helo3") || (player isEqualTo "apache1") || (player isEqualTo "apache2") || (player isEqualTo "jet1")) then
 	{
 		player setPos (getMarkerPos "base_aircraft")
 	};
