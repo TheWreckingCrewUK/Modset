@@ -124,7 +124,7 @@
 			};\
 			class _xx_LAW\
 			{\
-				Weapon = "HAFM_LAW";\
+				Weapon = "ukcw_L1A1_law";\
 				count = 2;\
 			};\
 		}
@@ -286,7 +286,7 @@
 		{\
 			class _xx_LAW\
 			{\
-				Weapon = "HAFM_LAW";\
+				Weapon = "ukcw_L1A1_law";\
 				count = 2;\
 			};\
 		}

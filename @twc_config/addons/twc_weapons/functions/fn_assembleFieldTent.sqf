@@ -15,6 +15,7 @@
 */
 
 params["_unit"];
+_unit = player;
 
 _pos = getPos _unit;	
 ForwardBasePos = _pos;
@@ -27,6 +28,6 @@ _unit removeWeapon "twc_fieldTent";
 
 
 
-twcaction = ["LowerTent","Disassemble","",{[10, [], {[player] spawn twc_weapons_fnc_disassembleFieldTent;}, {}, 'Disassembling Forward Base...'] call ace_common_fnc_progressBar;},{true}] call ace_interact_menu_fnc_createAction;
+twcaction = ["LowerTent","Disassemble","",{[150, [], {
+[player,'AinvPknlMstpSnonWnonDr_medicUp0S',0,false] call ace_common_fnc_doAnimation;[player] spawn twc_weapons_fnc_disassembleFieldTent;}, {}, 'Disassembling Forward Base...'] call ace_common_fnc_progressBar;},{true}] call ace_interact_menu_fnc_createAction;
 [ForwardBaseTent,0,["ACE_MainActions"],twcaction] call ace_interact_menu_fnc_addActionToObject;
-
