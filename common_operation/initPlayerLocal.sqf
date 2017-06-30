@@ -38,7 +38,7 @@ if(isMultiplayer)then{
 		titleCut ["", "BLACK IN", 5];
 		
 
-		if(player getVariable ["twc_deleteMap",false])then{ 
+		if!(player getVariable ["twc_keepMap",false])then{ 
 			player unassignItem "itemMap"; 
 			player removeItem "itemMap"; 
 		};

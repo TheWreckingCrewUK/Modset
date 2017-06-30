@@ -78,6 +78,10 @@
 		displayName="Platoon Commander";
 		uniformClass="fow_u_uk_bd40_01_lieutenant";
 		backpack="TWC_Backpack_WW2_SL";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+		};
 		linkedItems[]=
 		{
         "TWC_Vest_WW2_Officer",
@@ -245,10 +249,6 @@
 			"SmokeShell",
 			"SmokeShell"
 		};
-		class EventHandlers: EventHandlers
-		{
-			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 	};
 	class WW2_British_Section_Commander: WW2_British_Base
 	{
@@ -258,6 +258,10 @@
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_bd40_01_corporal";
 		backpack="TWC_Backpack_WW2_SL";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+		};
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Sten",
@@ -319,10 +323,6 @@
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell"
-		};
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
 		};
 	};
 	class WW2_British_Rifleman: WW2_British_Base
@@ -386,10 +386,6 @@
 			"fow_30Rnd_303_bren"
 
 		};
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 	};
 	class WW2_British_2IC: WW2_British_Rifleman
 	{
@@ -407,10 +403,6 @@
 			"Throw",
 			"Put",
 			"fow_w_leeenfield_no4mk1"
-		};
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
 		};
 	};
 	class WW2_British_MG: WW2_British_Base
@@ -465,10 +457,6 @@
 			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren"
 		};
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 	};
 	class WW2_British_MGASS: WW2_British_Rifleman
 	{
@@ -489,10 +477,6 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
-		};
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
 		};
 	};
 	class WW2_British_Carrier_SMG: WW2_British_Rifleman
