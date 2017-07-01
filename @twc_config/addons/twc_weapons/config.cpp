@@ -40,7 +40,7 @@ class cfgVehicles
 				{
 					displayname = "Assemble Field Tent";
 					condition = "(secondaryWeapon player) == 'twc_fieldTent'";
-					statement = "[10, [], {[player] spawn twc_weapons_fnc_assembleFieldTent;}, {}, 'Creating Forward Base...'] call ace_common_fnc_progressBar;";
+					statement = "[player,'AinvPknlMstpSnonWnonDr_medicUp0S',0,false] call ace_common_fnc_doAnimation;[120, [], {[player] spawn twc_weapons_fnc_assembleFieldTent;}, {}, 'Creating Forward Base...'] call ace_common_fnc_progressBar;";
 					showDisabled = 0;
 					priority = 1;
 					icon="";

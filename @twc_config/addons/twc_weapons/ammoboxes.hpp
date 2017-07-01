@@ -157,6 +157,11 @@
 				weapon="rhs_weap_rsp30_white";
 				count = 10;
 			};
+			class _xx_fieldTent
+			{
+				weapon="twc_fieldTent";
+				count = 2;
+			};
 		};
 		transportAmmo=100000;
 		supplyRadius=3;
@@ -328,6 +333,11 @@
 				weapon="rhs_weap_rsp30_white";
 				count = 10;
 			};
+			class _xx_fieldTent
+			{
+				weapon="twc_fieldTent";
+				count = 2;
+			};
 		};
 		transportAmmo=100000;
 		supplyRadius=3;
@@ -438,6 +448,11 @@
 			{
 				weapon="rhs_weap_rsp30_white";
 				count = 10;
+			};
+			class _xx_fieldTent
+			{
+				weapon="twc_fieldTent";
+				count = 2;
 			};
 		};
 		transportAmmo=100000;
@@ -565,6 +580,11 @@
 				weapon="rhs_weap_rsp30_white";
 				count = 10;
 			};
+			class _xx_fieldTent
+			{
+				weapon="twc_fieldTent";
+				count = 2;
+			};
 		};		
 		transportAmmo=100000;
 		supplyRadius=3;
@@ -604,6 +624,11 @@
 			{
 				magazine="rhs_mag_rgd5";
 				count=25;
+			};
+			class _xx_fieldTent
+			{
+				weapon="twc_fieldTent";
+				count = 2;
 			};
 		};
 		transportAmmo=1000000;
