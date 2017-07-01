@@ -7,8 +7,7 @@ class DefaultVehicleSystemsDisplayManagerLeft
 	left = 1;
 	right = 0;
 
-	class Components
-	{
+	class Components {
 		class SlingLoadDisplay { componentType = "EmptyDisplayComponent"; };
 		class SensorsDisplay { componentType = "EmptyDisplayComponent"; };
 		class UAVFeedDisplay { componentType = "EmptyDisplayComponent"; };
@@ -31,8 +30,7 @@ class DefaultVehicleSystemsDisplayManagerRight
 	left = 0;
 	right = 1;
 
-	class Components
-	{
+	class Components {
 		class SlingLoadDisplay { componentType = "EmptyDisplayComponent"; };
 		class SensorsDisplay { componentType = "EmptyDisplayComponent"; };
 		class UAVFeedDisplay { componentType = "EmptyDisplayComponent"; };

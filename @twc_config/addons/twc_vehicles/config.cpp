@@ -393,7 +393,7 @@ class CfgVehicles
 		
 		class TransportBackpacks { };
 		
-		class Components {
+		/* class Components {
 			class VehicleSystemsDisplayManagerComponentLeft {
 				componentType = "VehicleSystemsDisplayManager"; //mandatory
 				x = (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40));
@@ -410,9 +410,8 @@ class CfgVehicles
 					
 					class SensorsDisplay {
 						componentType = "SensorsDisplayComponent";
-						range[] = {4000,2000,1000};     //accepts an integer or an array of available ranges (submode)
-						showTargetTypes = 1+2+4+8+16+32+64+128+256;
-						// 1 - Sensor sectors, 2 - Threats, 4 - Marked tgt symbol, 8 - Own detection, 16 - Remote detection, 32 - Active detection, 64 - Passive detection, 128 - Ground tgts, 256 - Air tgts, 512 - Men, 1024 - Special (laser, NV)
+						range[] = {4000,2000,1000};
+						showTargetTypes = 1+2+4+8+16+32+64+128+256+512+1024;
 						resource = "RscCustomInfoSensors";
 					};
 					
@@ -428,7 +427,7 @@ class CfgVehicles
 				right = 1;
 				forcedDisplay = "SensorsDisplay";
 			};
-		};
+		}; */
 	};
 	
 	class twc_wildcat_1990: UK3CB_BAF_Wildcat_AH1_CAS_8A {
