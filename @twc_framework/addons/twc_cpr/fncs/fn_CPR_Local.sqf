@@ -4,7 +4,7 @@ if !([_target] call twc_cpr_fnc_canCPR) exitWith {};
 
 private _isMedic = _caller getVariable ["ACE_medical_medicClass", 0];
 
-_probability = 5;
+_probability = 4;
 
 if (_isMedic > 0) then {
 	_probability = 10;

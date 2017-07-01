@@ -1,10 +1,11 @@
 class DefaultVehicleSystemsDisplayManagerLeft
 {
 	componentType = "VehicleSystemsDisplayManager"; //mandatory
+	forcedDisplay = "EmptyDisplay";
 	x = (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40));
 	y = (safezoneY + safezoneH - 21 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25));
 	left = 1;
-	forcedDisplay = "EmptyDisplay";
+	right = 0;
 
 	class Components
 	{
@@ -24,10 +25,11 @@ class DefaultVehicleSystemsDisplayManagerLeft
 class DefaultVehicleSystemsDisplayManagerRight
 {
 	componentType = "VehicleSystemsDisplayManager";
-	x = ((10 * (((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40)));
+	forcedDisplay = "EmptyDisplay";
+	y = (safezoneY + safezoneH - 21 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25));
+	x = (safezoneX + safezoneW) - ((10 * (((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40));
 	left = 0;
 	right = 1;
-	forcedDisplay = "EmptyDisplay";
 
 	class Components
 	{
