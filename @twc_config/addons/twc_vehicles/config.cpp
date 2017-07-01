@@ -427,7 +427,7 @@ class CfgVehicles
 				left = 0;
 				right = 1;
 				forcedDisplay = "SensorsDisplay";
-			}
+			};
 		};
 	};
 	
