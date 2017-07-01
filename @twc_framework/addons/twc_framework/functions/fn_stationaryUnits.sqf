@@ -9,7 +9,7 @@
 * NOTHING
 *
 * Example:
-* [defender1] call twc_fnc_stationaryUnits
+* [defender1] spawn twc_fnc_stationaryUnits
 *
 * Public: no
 */

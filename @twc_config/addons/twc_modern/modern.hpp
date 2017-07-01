@@ -8,6 +8,10 @@
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Rifleman_F",

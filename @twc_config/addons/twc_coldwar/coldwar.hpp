@@ -78,10 +78,6 @@
 	{
 		scope=2;
 		displayName="Rifleman";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -129,10 +125,6 @@
 	class ColdWar_Rifleman_SUIT: ColdWar_Rifleman
 	{
 		displayName="Rifleman SUIT";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -154,10 +146,6 @@
 		displayName="AT Rifleman";
 		icon="iconManAT";
 		backpack="";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		linkedItems[]=
 		{
 			"ukcw_1958_webbing",
@@ -199,7 +187,7 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"twc_l14A1_scoped_HEAT",
+			"ukcw_l14a1_HEAT",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
@@ -213,7 +201,7 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"twc_l14A1_scoped_HEAT",
+			"ukcw_l14a1_HEAT",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
@@ -222,10 +210,6 @@
 	{
 		displayName="AT Assistant Rifleman";
 		backpack="TWC_Backpack_Cold_War_AT_Ass";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -243,10 +227,6 @@
 	{
 		displayName="2IC";
 		backpack="TWC_Backpack_Cold_War_2IC";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -266,10 +246,6 @@
 		displayName="Machine Gunner";
 		icon="iconManMG";
 		backpack="";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -303,10 +279,6 @@
 	{
 		displayName="Machine Gunner Assistant";
 		backpack="TWC_Backpack_Cold_War_MG";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -325,6 +297,10 @@
 		displayName="Section Leader";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Cold_War_Section";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+		};
 		linkedItems[]=
 		{
 			"Binocular",		
@@ -387,6 +363,10 @@
 	class ColdWar_Platoon_Commander: ColdWar_Section_Leader
 	{
 		displayName="Platoon Commander";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+		};
 		weapons[]=
 		{
 			"Throw",
@@ -436,10 +416,6 @@
 	class ColdWar_CSM: ColdWar_Platoon_Commander
 	{
 		displayName="Company Sergeant Major";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
-		};
 	};
 	class ColdWar_Medic: ColdWar_Base
 	{
@@ -479,10 +455,6 @@
 			"SmokeShell",
 			"SmokeShell"
 		};
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 	};
 	class ColdWar_FAC: ColdWar_Section_Leader
 	{
@@ -495,6 +467,10 @@
 		displayName="Helicopter Pilot";
 		uniformClass="UK3CB_BAF_B_Carryall_OLI";
 		backpack="B_AssaultPack_blk";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -543,6 +519,10 @@
 		displayName="Jet Pilot";
 		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_RAF";
 		backpack="B_AssaultPack_blk";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -588,10 +568,6 @@
 		vehicleClass="Men_ColdWar_Dismounted";
 		icon="iconManExplosive";
 		backpack="TWC_Backpack_Cold_War_AA";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		linkedItems[]=
 		{
 			"ukcw_1958_webbing",
@@ -626,10 +602,6 @@
 	class ColdWar_AA_Assistant: ColdWar_AA_Gunner
 	{
 		displayName="AA Assistant";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -649,10 +621,6 @@
 		editorSubcategory = "Men_ColdWar_Dismounted";
 		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_Milan";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -671,10 +639,6 @@
 	class ColdWar_MilanAssistant: ColdWar_MilanGunner
 	{
 		displayName="Milan Assistant";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -697,6 +661,10 @@
 		icon="iconManLeader";
 		uniformClass="UK3CB_BAF_U_CrewmanCoveralls_RTR";
 		backpack="B_AssaultPack_blk";
+		class EventHandlers: EventHandlers
+		{
+			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+		};
 		linkedItems[]=
 		{
 			"CUP_V_C_Police_Holster",
@@ -816,10 +784,6 @@
 		editorSubcategory = "Men_ColdWar_Dismounted";
 		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_Rifleman";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 	};
 	class ColdWar_Rifleman_SUIT_Dismounted: ColdWar_Rifleman_SUIT
 	{
@@ -827,10 +791,6 @@
 		editorSubcategory = "Men_ColdWar_Dismounted";
 		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_Rifleman";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 	};
 	class ColdWar_AT_Dismounted: ColdWar_AT
 	{
@@ -838,10 +798,6 @@
 		editorSubcategory = "Men_ColdWar_Dismounted";
 		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_AT";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 	};
 	class ColdWar_AT_Ass_Dismounted: ColdWar_AT_Ass
 	{
@@ -849,10 +805,6 @@
 		editorSubcategory = "Men_ColdWar_Dismounted";
 		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_AT_Ass_Dismounted";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 	};
 	class ColdWar_2IC_Dismounted: ColdWar_2IC
 	{
@@ -860,10 +812,6 @@
 		editorSubcategory = "Men_ColdWar_Dismounted";
 		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_2IC_Dismounted";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 	};
 	class ColdWar_MG_Dismounted: ColdWar_MG
 	{
@@ -871,10 +819,6 @@
 		editorSubcategory = "Men_ColdWar_Dismounted";
 		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_MG";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 	};
 	class ColdWar_MG_Ass_Dismounted: ColdWar_MG_AS
 	{
@@ -882,8 +826,4 @@
 		editorSubcategory = "Men_ColdWar_Dismounted";
 		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_MGAss";
-		class EventHandlers: EventHandlers
-		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_deleteMap"",true]};";
-		};
 	};
