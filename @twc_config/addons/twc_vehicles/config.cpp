@@ -380,32 +380,71 @@ class CfgVehicles
 			};
 		};
 	};
-	class twc_wildcat: UK3CB_BAF_Wildcat_AH1_CAS_8A
-	{
+	
+	class twc_wildcat: UK3CB_BAF_Wildcat_AH1_CAS_8A {
 		scope = 2;
+		scopeCurator = 2;
 		side = 1;
 		faction="TWC_Modern";
 		author = "3CB";
 		displayname = "Wildcat";
+		
 		GearModern;
-		class TransportBackpacks
-		{
+		
+		class TransportBackpacks { };
+		
+		class Components {
+			class VehicleSystemsDisplayManagerComponentLeft {
+				componentType = "VehicleSystemsDisplayManager"; //mandatory
+				x = (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40));
+				y = (safezoneY + safezoneH - 21 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25));
+				left = 1;
+				defaultDisplay = "EmptyDisplayComponent";
+
+				class Components
+				{
+					class SlingLoadDisplay {
+						componentType = "SlingLoadDisplayComponent";
+						resource = "RscCustomInfoSlingLoad";
+					};
+					
+					class SensorsDisplay {
+						componentType = "SensorsDisplayComponent";
+						range[] = {4000,2000,1000};     //accepts an integer or an array of available ranges (submode)
+						showTargetTypes = 1+2+4+8+16+32+64+128+256;
+						// 1 - Sensor sectors, 2 - Threats, 4 - Marked tgt symbol, 8 - Own detection, 16 - Remote detection, 32 - Active detection, 64 - Passive detection, 128 - Ground tgts, 256 - Air tgts, 512 - Men, 1024 - Special (laser, NV)
+						resource = "RscCustomInfoSensors";
+					};
+					
+					class EmptyDisplay {
+						componentType = "EmptyDisplayComponent";
+					};
+				};
+			};
+		 
+			class VehicleSystemsDisplayManagerComponentRight : VehicleSystemsDisplayManagerComponentLeft {
+				x = (safezoneX + safezoneW) - ((10 * (((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40));
+				left = 0;
+				right = 1;
+				forcedDisplay = "SensorsDisplay";
+			}
 		};
 	};
-	class twc_wildcat_1990: UK3CB_BAF_Wildcat_AH1_CAS_8A
-	{
+	
+	class twc_wildcat_1990: UK3CB_BAF_Wildcat_AH1_CAS_8A {
 		scope = 2;
+		scopeCurator = 2;
 		side = 1;
 		faction="TWC_Millenial";
 		author = "3CB";
 		displayname = "Lynx";
+
 		Gear1990;
-		class TransportBackpacks
-		{
-		};
+
+		class TransportBackpacks { };
 	};
-	class twc_puma: CUP_B_SA330_Puma_HC1_BAF
-	{
+	
+	class twc_puma: CUP_B_SA330_Puma_HC1_BAF {
 		scope = 2;
 		side = 1;
 		faction="TWC_ColdWar";
@@ -413,24 +452,16 @@ class CfgVehicles
 		displayname = "Puma HC1";
 		GearColdwar;
 	};
-	class twc_c5_hercules: CUP_B_C130J_GB
-	{
+	
+	class twc_c5_hercules: CUP_B_C130J_GB {
 		scope=2;
 		side=1;
 		faction="TWC_General";
 		author="CUP";
 		displayname="C5 Hercules";
-		class TransportMagazines
-		{
-			
-		};
-		class TransportItems
-		{
 		
-		};
-		class TransportWeapons
-		{
-			
-		};
+		class TransportMagazines { };
+		class TransportItems { };
+		class TransportWeapons { };
 	};
 };
