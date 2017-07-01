@@ -111,7 +111,7 @@ class CfgVehicles {
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 	
 	#include "crates_defines.hpp"
-	//#include "crates_modern.hpp"
+	#include "crates_modern.hpp"
 	#include "crates_millennial.hpp"
 	#include "crates_coldwar.hpp"
 	#include "crates_vehicles.hpp"

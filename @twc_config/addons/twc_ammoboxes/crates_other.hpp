@@ -17,7 +17,7 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 	class TransportItems {
 		item_nc(ACE_fieldDressing, 30);
 		item_nc(ACE_elasticBandage, 30);
-		item_nc(ACE_quickclot, 30);
+		item_nc(ACE_quikclot, 30);
 		item_nc(ACE_packingBandage, 30);
 		
 		item_nc(ACE_atropine, 5);
