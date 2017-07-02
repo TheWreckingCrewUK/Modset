@@ -17,6 +17,15 @@ class TWC_AmmoBox_Millennial_Base: TWC_AmmoBox_Base {
 	class TransportItems {
 		item_nc(DemoCharge_Remote_Mag, 5);
 		item_nc(ACE_Clacker, 5);
+		
+		item_nc(ACE_fieldDressing, 32);
+		item_nc(ACE_elasticBandage, 32);
+		item_nc(ACE_quikclot, 32);
+		item_nc(ACE_packingBandage, 32);
+		
+		item_nc(ACE_morphine, 16);
+		item_nc(ACE_epinephrine, 16);
+		item_nc(ACE_tourniquet, 16);
 	};
 	
 	class TransportMagazines {
@@ -55,8 +64,21 @@ class TWC_AmmoBox_Millennial_Section_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_Millennial";
 	
 	class TransportItems {
-		// TODO: Medical Supplies
-		//item_nc(DemoCharge_Remote_Mag, 5);
+		item_nc(ACE_fieldDressing, 32);
+		item_nc(ACE_elasticBandage, 32);
+		item_nc(ACE_quikclot, 32);
+		item_nc(ACE_packingBandage, 32);
+		
+		item_nc(ACE_atropine, 5);
+		item_nc(ACE_adenosine, 5);
+		item_nc(ACE_morphine, 20);
+		item_nc(ACE_epinephrine, 20);
+		
+		item_nc(ACE_salineIV_500, 12);
+		item_nc(ACE_tourniquet, 4);
+		item_nc(ACE_bodyBag, 5);
+		
+		item_nc(ACE_personalAidKit, 1);
 	};
 	
 	class TransportMagazines {
@@ -96,6 +118,15 @@ class TWC_AmmoBox_Millennial_Mechanised_Base: TWC_AmmoBox_Base {
 	class TransportItems {
 		item_nc(DemoCharge_Remote_Mag, 5);
 		item_nc(ACE_Clacker, 5);
+		
+		item_nc(ACE_fieldDressing, 24);
+		item_nc(ACE_elasticBandage, 24);
+		item_nc(ACE_quikclot, 24);
+		item_nc(ACE_packingBandage, 24);
+		
+		item_nc(ACE_morphine, 8);
+		item_nc(ACE_epinephrine, 8);
+		item_nc(ACE_tourniquet, 8);
 	};
 	
 	class TransportMagazines {
@@ -134,8 +165,14 @@ class TWC_AmmoBox_Millennial_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_Millennial";
 	
 	class TransportItems {
-		// TODO: Medical Supplies
-		//item_nc(DemoCharge_Remote_Mag, 5);
+		item_nc(ACE_fieldDressing, 12);
+		item_nc(ACE_elasticBandage, 12);
+		item_nc(ACE_quikclot, 12);
+		item_nc(ACE_packingBandage, 12);
+		
+		item_nc(ACE_morphine, 12);
+		item_nc(ACE_epinephrine, 12);
+		item_nc(ACE_tourniquet, 6);
 	};
 	
 	class TransportMagazines {
@@ -173,8 +210,14 @@ class TWC_AmmoBox_Millennial_Sniper_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_Millennial";
 	
 	class TransportItems {
-		// TODO: Medical Supplies
-		//item_nc(DemoCharge_Remote_Mag, 5);
+		item_nc(ACE_fieldDressing, 4);
+		item_nc(ACE_elasticBandage, 4);
+		item_nc(ACE_quikclot, 4);
+		item_nc(ACE_packingBandage, 4);
+		
+		item_nc(ACE_morphine, 2);
+		item_nc(ACE_epinephrine, 2);
+		item_nc(ACE_tourniquet, 2);
 	};
 	
 	class TransportMagazines {

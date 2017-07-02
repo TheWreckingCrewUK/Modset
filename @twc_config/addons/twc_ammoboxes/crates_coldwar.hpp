@@ -15,6 +15,15 @@ class TWC_AmmoBox_ColdWar_Base: TWC_AmmoBox_Base {
 	class TransportItems {
 		item_nc(DemoCharge_Remote_Mag, 5);
 		item_nc(ACE_Clacker, 5);
+		
+		item_nc(ACE_fieldDressing, 32);
+		item_nc(ACE_elasticBandage, 32);
+		item_nc(ACE_quikclot, 32);
+		item_nc(ACE_packingBandage, 32);
+		
+		item_nc(ACE_morphine, 16);
+		item_nc(ACE_epinephrine, 16);
+		item_nc(ACE_tourniquet, 16);
 	};
 	
 	class TransportMagazines {
@@ -59,6 +68,20 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 	
 	editorSubcategory = "TWC_Crates_ColdWar";
 	
+	class TransportItems {
+		item_nc(DemoCharge_Remote_Mag, 5);
+		item_nc(ACE_Clacker, 5);
+		
+		item_nc(ACE_fieldDressing, 16);
+		item_nc(ACE_elasticBandage, 16);
+		item_nc(ACE_quikclot, 16);
+		item_nc(ACE_packingBandage, 16);
+		
+		item_nc(ACE_morphine, 8);
+		item_nc(ACE_epinephrine, 8);
+		item_nc(ACE_tourniquet, 8);
+	};
+	
 	class TransportMagazines {
 		maga_nc(ukcw_34_rnd_sterling_mag, 6);
 
@@ -101,6 +124,17 @@ class TWC_AmmoBox_ColdWar_Sniper_Portable: TWC_AmmoBox_Portable {
 	
 	editorSubcategory = "TWC_Crates_ColdWar";
 	
+	class TransportItems {
+		item_nc(ACE_fieldDressing, 4);
+		item_nc(ACE_elasticBandage, 4);
+		item_nc(ACE_quikclot, 4);
+		item_nc(ACE_packingBandage, 4);
+		
+		item_nc(ACE_morphine, 2);
+		item_nc(ACE_epinephrine, 2);
+		item_nc(ACE_tourniquet, 2);
+	};
+	
 	// TODO: Waiting on UKCW to release L33 3nfi3ld Sn1p0r
 };
 
@@ -110,6 +144,17 @@ class TWC_AmmoBox_ColdWar_Blowpipe_Portable: TWC_AmmoBox_Portable {
 	displayName = "Blowpipe Resupply (Portable)";
 	
 	editorSubcategory = "TWC_Crates_ColdWar";
+	
+	class TransportItems {
+		item_nc(ACE_fieldDressing, 4);
+		item_nc(ACE_elasticBandage, 4);
+		item_nc(ACE_quikclot, 4);
+		item_nc(ACE_packingBandage, 4);
+		
+		item_nc(ACE_morphine, 2);
+		item_nc(ACE_epinephrine, 2);
+		item_nc(ACE_tourniquet, 2);
+	};
 	
 	class TransportMagazines {
 		maga_nc(ukcw_blowpipe_missile, 4);
