@@ -26,4 +26,5 @@ params["_unit"];
 	{
 		_x forceSpeed 0;
 	}forEach units _group;
+	_unit setVariable ["acex_headless_blacklist", true];
 };
