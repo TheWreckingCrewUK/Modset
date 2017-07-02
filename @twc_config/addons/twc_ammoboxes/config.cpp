@@ -42,6 +42,7 @@ class CfgPatches {
 			"TWC_AmmoBox_Other_L14_Portable",
 			"TWC_AmmoBox_Other_L16_Portable",
 			"TWC_AmmoBox_Other_Stinger_Portable",
+			"TWC_AmmoBox_Other_Command_Portable",
 			"TWC_AmmoBox_Other_Pallet",
 			"TWC_AmmoBox_Other_Empty_Portable" 
 		};

@@ -41,6 +41,7 @@ class TWC_AmmoBox_ColdWar_Base: TWC_AmmoBox_Base {
 		maga_nc(SmokeShellRed, 10);
 		maga_nc(SmokeShellGreen, 10);
 		maga_nc(SmokeShellBlue, 10);
+		maga_nc(SmokeShellYellow, 10);
 		
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 30);
@@ -78,10 +79,11 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 		maga_nc(ukcw_l14a1_SMOKE, 4);
 		
 		// Smoke Grenades
-		maga_nc(SmokeShell, 8);
+		maga_nc(SmokeShell, 10);
 		maga_nc(SmokeShellRed, 2);
 		maga_nc(SmokeShellGreen, 2);
 		maga_nc(SmokeShellBlue, 2);
+		maga_nc(SmokeShellYellow, 2);
 		
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 5);

@@ -29,6 +29,7 @@ class TWC_AmmoBox_Millennial_Base: TWC_AmmoBox_Base {
 		maga_nc(SmokeShellRed, 10);
 		maga_nc(SmokeShellGreen, 10);
 		maga_nc(SmokeShellBlue, 10);
+		maga_nc(SmokeShellYellow, 10);
 
 		// Night Time Party Time - IR, Chem-lights
 		maga_nc(B_IR_Grenade, 6);
@@ -68,6 +69,7 @@ class TWC_AmmoBox_Millennial_Section_Portable: TWC_AmmoBox_Portable {
 		maga_nc(SmokeShellRed, 2);
 		maga_nc(SmokeShellGreen, 2);
 		maga_nc(SmokeShellBlue, 2);
+		maga_nc(SmokeShellYellow, 2);
 		
 		// Night Time Party Time - IR, Chem-lights
 		maga_nc(B_IR_Grenade, 1);
@@ -106,6 +108,7 @@ class TWC_AmmoBox_Millennial_Mechanised_Base: TWC_AmmoBox_Base {
 		maga_nc(SmokeShellRed, 8);
 		maga_nc(SmokeShellGreen, 8);
 		maga_nc(SmokeShellBlue, 8);
+		maga_nc(SmokeShellYellow, 8);
 
 		// Night Time Party Time - IR, Chem-lights
 		maga_nc(B_IR_Grenade, 4);
@@ -145,6 +148,7 @@ class TWC_AmmoBox_Millennial_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 		maga_nc(SmokeShellRed, 2);
 		maga_nc(SmokeShellGreen, 2);
 		maga_nc(SmokeShellBlue, 2);
+		maga_nc(SmokeShellYellow, 2);
 		
 		// Night Time Party Time - IR, Chem-lights
 		maga_nc(B_IR_Grenade, 1);

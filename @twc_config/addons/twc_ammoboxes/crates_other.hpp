@@ -6,6 +6,7 @@
 "TWC_AmmoBox_Other_L14_Portable",    // recoilless rifle carl gustav
 "TWC_AmmoBox_Other_L16_Portable",    // 81mm mortar
 "TWC_AmmoBox_Other_Stinger_Portable",
+"TWC_AmmoBox_Other_Command",         // radios, binos
 "TWC_AmmoBox_Other_Pallet",          // has a cargo, no inventory (airborne, airmobile)
 "TWC_AmmoBox_Other_Empty_Portable"   // a nice empty crate to ((Zeus)) items in */
 
@@ -25,8 +26,8 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 		item_nc(ACE_morphine, 20);
 		item_nc(ACE_epinephrine, 20);
 		
-		item_nc(ACE_saline, 5);
-		item_nc(ACE_saline_500, 10);
+		item_nc(ACE_salineIV, 4);
+		item_nc(ACE_salineIV_500, 10);
 		item_nc(ACE_tourniquet, 6);
 		item_nc(ACE_bodyBag, 4);
 		
@@ -98,5 +99,16 @@ class TWC_AmmoBox_Other_Stinger_Portable: TWC_AmmoBox_Portable {
 	
 	class TransportMagazines {
 		maga_nc(CUP_Stinger_M, 5);
+	};
+};
+
+class TWC_AmmoBox_Other_Command_Portable: TWC_AmmoBox_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Command Box (Portable)";
+	
+	class TransportItems {
+		item_nc(ACRE_PRC117F, 4);
+		item_nc(Binocular, 4);
 	};
 };
