@@ -45,7 +45,10 @@ call twc_fnc_playerListAction;
 player enableFatigue false;
 player setCustomAimCoef 0.4;
 
-player setUnitLoadout defaultLoadout;
+if(!isNil "defaultLoadout")then{
+	player setUnitLoadout defaultLoadout;
+};
+
 
 player addAction ["<t color='#FF0000'>Mission Status</t>",{
 	call twc_fnc_MissionStatus;
