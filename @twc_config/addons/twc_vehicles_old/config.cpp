@@ -1,8 +1,8 @@
-class CfgPatches {
-	class twc_vehicles {
-		units[] = {
-			/* 
-			// OLD CLASS NAMES, DO NOT REUSE!
+class CfgPatches
+{
+	class twc_vehicles
+	{
+		units[]={
 			"twc_landrover_W",
 			"twc_landrover_D",
 			"twc_landrover_Special_W",
@@ -23,22 +23,18 @@ class CfgPatches {
 			"twc_c5_hercules",
 			"TWC_fv432",
 			"TWC_burnes_foxhound_d_a",
-			"TWC_burnes_foxhound_w_a" */
-		};
-
-		weapons[] = {
-			/* 
-			// OLD CLASS NAMES, DO NOT REUSE!
-			"TWC_30mm_HE_item",
-			"TWC_30mm_AP_item" */
+			"TWC_burnes_foxhound_w_a"
 			
-			// Tag is TWC, then the second should describe its type, i.e. item, magazine or ammobox
-			"TWC_Item_30mm_3rd_HET",
-			"TWC_Item_30mm_3rd_APDS"
+			
 		};
-
-		requiredVersion = 0.1;
-		requiredAddons[] = {
+		weapons[]=
+		{
+			"TWC_30mm_HE_item",
+			"TWC_30mm_AP_item"
+		};
+		requiredVersion=0.1;
+		requiredAddons[]=
+		{
 			"A3_Armor_F_Beta",
 			"Burnes_crew_CTRG",
 			"cup_wheeledvehicles_lr",
@@ -46,106 +42,119 @@ class CfgPatches {
 			"uk3cb_baf_vehicles_wildcat",
 			"cup_airvehicles_c130j"
 		};
-		
-		version = "2";
-		projectName = "TWC";
-		author = "Bosenator, Saxon, jayman, FakeMatty";
 	};
 };
-
-class CfgFunctions {
-	class twc_vehicles {
-		tag = "TWC";
-		
-		class FunctionsWarrior {
-			file = "twc_vehicles\xtra";
-			class AddAP { };
-			class AddHE { };
-			class RemoveAP { };
-			class RemoveHE { };
-			class RemoveAmmoInventory { };
-			class ShowAmmo { };
+#include "defines.hpp"
+class CfgFunctions
+{
+	class twc_vehicles
+	{
+		tag="TWC";
+		class FunctionsWarrior
+		{
+			file="twc_vehicles\functions";
+			class AddAP
+			{
+			};
+			class AddHE
+			{
+			};
+			class RemoveAP
+			{
+			};
+			class RemoveHE
+			{
+			};
+			class RemoveAmmoInventory
+			{
+			};
+			class ShowAmmo
+			{
+			};
 		};
 	};
 };
-
-class Extended_PostInit_EventHandlers {
-	class twc_vehicles_Init {
-		init = "execVM 'twc_vehicles\init.sqf';";
+class Extended_PostInit_EventHandlers
+{
+	class twc_vehicles_Init
+	{
+		init="execVM '\twc_vehicles\init.sqf';";
 	};
 };
-
-class CfgMagazines {
+class CfgMagazines
+{
 	class 140Rnd_30mm_MP_shells_Tracer_Yellow;
 	class 60Rnd_30mm_APFSDS_shells;
-	
-	class TWC_Magazine_30mm_3rd_HET: 140Rnd_30mm_MP_shells_Tracer_Yellow {
-		author = "FakeMatty, Bosenator";
-		scope = 1;
-		scopeArsenal = 0;
-		displayName = "L13A1 30mm 3rd HE-T";
-		count = 3;
+	class TWC_30mm_3rnd_HE: 140Rnd_30mm_MP_shells_Tracer_Yellow
+	{
+		author="FakeMatty";
+		scope=1;
+		scopeArsenal=0;
+		displayName="30mm HE";
+		count=3;
 	};
-	
-	class TWC_Magazine_30mm_3rd_APDS: 60Rnd_30mm_APFSDS_shells {
-		author = "FakeMatty, Bosenator";
-		scope = 1;
-		scopeArsenal = 0;
-		displayName = "L14A1 30mm 3rd APDS";
-		count = 3;
+	class TWC_30mm_3rnd_AP: 60Rnd_30mm_APFSDS_shells
+	{
+		author="FakeMatty";
+		scope=1;
+		scopeArsenal=0;
+		displayName="30mm AP";
+		count=3;
 	};
 };
-
-class CfgWeapons {
+class CfgWeapons
+{
 	class HE;
 	class AP;
 	class autocannon_30mm;
 	class CUP_Vlmg_L94A1_Coax;
 	class ACE_ItemCore;
 	class InventoryItem_Base_F;
-	
-	class TWC_GPMG: CUP_Vlmg_L94A1_Coax {
-		displayname = "L94A1";
+	class TWC_GPMG: CUP_Vlmg_L94A1_Coax
+	{
+		displayname="L94A1";
 	};
-	
-	class TWC_Rarden: autocannon_30mm {
-		displayname = "L21A1 Rarden";
-		magazineReloadTime = 1.2;
-		magazines[] = {
-			"TWC_Magazine_30mm_3rd_APDS",
-			"TWC_Magazine_30mm_3rd_HET"
+	class TWC_Rarden: autocannon_30mm
+	{
+		class AP: AP
+		{
+			displayname="L121A1 Rarden";
+			magazineReloadTime=1.2;
+			magazines[]=
+			{
+				"TWC_30mm_3rnd_AP",
+				"TWC_30mm_3rnd_HE"
+			};
 		};
 	};
-	
-	// Items, so they come up in the inventory for the reload system
-	class TWC_Item_30mm_3rd_HET: ACE_ItemCore {
-		scope = 2;
-		picture = "twc_vehicles\ui\30mmHE.paa";
-		displayName = "L13A1 30mm 3rd HE-T";
-		descriptionShort = "Used in the FV510 Warrior";
-		descriptionUse = "";
-		
-		class ItemInfo: InventoryItem_Base_F {
-			mass = 30;
+	class TWC_30mm_HE_item: ACE_ItemCore
+	{
+		scope=2;
+		picture="\twc_vehicles\pictures\30mmHE.paa";
+		displayName="30mm HE";
+		descriptionShort="Adds 1 magazine of HE ammo to a warrior.";
+		descriptionUse="";
+		class ItemInfo: InventoryItem_Base_F
+		{
+			mass=30;
 		};
 	};
-	
-	class TWC_Item_30mm_3rd_APDS: ACE_ItemCore {
-		scope = 2;
-		picture = "twc_vehicles\ui\30mmAP.paa";
-		displayName = "L14A1 30mm 3rd APDS";
-		descriptionShort = "Used in the FV510 Warrior";
-		descriptionUse = "";
-		
-		class ItemInfo: InventoryItem_Base_F {
-			mass = 30;
+	class TWC_30mm_AP_item: ACE_ItemCore
+	{
+		scope=2;
+		picture="\twc_vehicles\pictures\30mmAP.paa";
+		displayName="30mm AP";
+		descriptionShort="Adds 1 magazine of AP ammo to a warrior.";
+		descriptionUse="";
+		class ItemInfo: InventoryItem_Base_F
+		{
+			mass=30;
 		};
 	};
 };
-
 class DefaultEventhandlers;
-
-class CfgVehicles {
+class CfgVehicles
+{
 	#include "twcWarriorAndChallenger.hpp"
 	
 	class CUP_B_LR_Transport_GB_W;

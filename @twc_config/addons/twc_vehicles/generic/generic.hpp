@@ -1,0 +1,1 @@
+#define GENERIC_AMBULANCE_MOD 1
