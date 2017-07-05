@@ -16,6 +16,7 @@
 params["_unit"];
 	if (isServer || !hasInterface) then {
 	_group = group _unit;
+	_group setVariable ["twc_cacheDefending",true];
 	{
 		_x forceSpeed 0;
 	}forEach units _group;
