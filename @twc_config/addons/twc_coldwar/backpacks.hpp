@@ -61,6 +61,28 @@
 			};
 		};
 	};
+	class TWC_Backpack_Cold_War_2IC_Dismounted_Troubles: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_762_20Rnd
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 13;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_Belt
+			{
+				magazine = "ukcw_30Rnd_762x51_STANAG";
+				count = 2;
+			};
+		};
+	};
 	class TWC_Backpack_Cold_War_Section: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
@@ -121,6 +143,18 @@
 				magazine = "UK3CB_BAF_762_100Rnd";
 				count = 1;
 			};		
+		};
+	};
+	class TWC_Backpack_Cold_War_Bren: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_UK3CB_BAF_75Rnd_T
+			{
+				magazine = "ukcw_30Rnd_762x51_STANAG";
+				count = 6;
+			};
 		};
 	};
 	class TWC_Backpack_Cold_War_MGAss: CUP_B_AlicePack_Khaki

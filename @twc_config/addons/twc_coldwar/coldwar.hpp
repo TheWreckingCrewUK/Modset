@@ -881,7 +881,7 @@
 	class ColdWar_2IC_Troubles: ColdWar_Rifleman_Troubles
 	{
 		displayName="2IC (Troubles)";
-		backpack="TWC_Backpack_Cold_War_2IC";
+		backpack="TWC_Backpack_Cold_War_2IC_Dismounted_Troubles";
 		weapons[]=
 		{
 			"Throw",
@@ -917,11 +917,45 @@
 			"itemMap",
 			"ItemWatch"
 		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"ukcw_L4"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"ukcw_L4"
+		};
+		magazines[]=
+		{
+			"ukcw_30Rnd_762x51_STANAG",	
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"ukcw_30Rnd_762x51_STANAG",	
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"SmokeShell",
+			"SmokeShell"
+		};	
 	};
 	class ColdWar_MG_AS_Troubles: ColdWar_Rifleman_Troubles
 	{
 		displayName="Machine Gunner Assistant (Troubles)";
-		backpack="TWC_Backpack_Cold_War_MG";
+		backpack="TWC_Backpack_Cold_War_Bren";
 		weapons[]=
 		{
 			"Throw",
@@ -1056,6 +1090,7 @@
 		displayName="Platoon Sergeant (Troubles)";
 		backpack="TWC_Backpack_Cold_War_Platoon_Sergeant";
 	};
+	class ColdWar_Medic_Troubles: ColdWar_Base
 	{
 		scope=2;
 		displayName="Platoon Medic (Troubles)";
