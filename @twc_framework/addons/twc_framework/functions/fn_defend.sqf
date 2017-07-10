@@ -24,7 +24,9 @@ params["_unit",["_pos",[]],["_radius",200],["_size",2],["_patrol",false]];
 	_x setVariable ["NOAI",1,true];
 }forEach units (group _unit);
 
-waitUntil{groupOwner (group _unit) != 2};
+if(isMultiplayer)then{
+	waitUntil{groupOwner (group _unit) != 2};
+};
 
 if((typeName _pos) isEqualTo "STRING")then{
 	_pos = getMarkerPos _pos;
