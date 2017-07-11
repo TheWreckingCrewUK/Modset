@@ -24,7 +24,7 @@ Below is our loadouts, for all eras (including WW2) and force types if necessary
 ### Pre-Dunkirk
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
-Section Commander | Thompson, Flare Gun | 6x Thompson Mags, 2x Frags, 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, 3x Flare Colours | ---
+Section Commander | Thompson, Flare Gun | 6x Thompson Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, 3x Flare Rounds of Various Colours
 Rifleman | Lee Enfield | 8x Enfield Mags, 2x Frags | ---
 Rifleman | Lee Enfield | 8x Enfield Mags, 2x Frags | ---
 Bombadier | Lee Enfield | 8x Enfield Mags, 6x Frags | ---
@@ -39,7 +39,7 @@ Machine Gunner Assistant | Enfield | 8x Enfield Mags, 2x Frags |  8x Bren Mags
 ### Post-Dunkirk
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
-Section Commander | Sten, Flare Gun | 6x Sten Mags, 2x Frags, 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, 3x Flare Colours | ---
+Section Commander | Sten, Flare Gun | 6x Sten Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, 3x Flare Rounds of Various Colours
 Rifleman | Lee Enfield | 8x Enfield Mags, 2x Frags | ---
 Rifleman | Lee Enfield | 8x Enfield Mags, 2x Frags | ---
 Rifleman | Lee Enfield | 8x Enfield Mags, 2x Frags | ---
@@ -55,7 +55,7 @@ Machine Gunner Assistant | Enfield | 8x Enfield Mags, 2x Frags |  8x Bren Mags
 ### Pre-'56
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
-Section Commander | Sterling, Flare Gun | 6x Sterling Mags, 2x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, 3x Flare Colours | AN/PRC-77
+Section Commander | Sterling, Flare Gun | 6x Sterling Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, 3x Flare Rounds of Various Colours, AN/PRC-77
 Rifleman | L1A1 SLR | 8x SLR Mags, 2x Frags | ---
 Rifleman | L1A1 SLR | 8x SLR Mags, 2x Frags | ---
 Rifleman | L1A1 SLR | 8x SLR Mags, 2x Frags | ---
@@ -70,7 +70,7 @@ Machine Gunner Assistant | L1A1 SLR | 8x SLR Mags, 2x Frags |  8x Bren Mags
 ### Post-'56
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
-Section Commander | Sterling, Flare Gun | 6x Sterling Mags, 2x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, 3x Flare Colours | AN/PRC-77
+Section Commander | Sterling, Flare Gun | 6x Sterling Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, 3x Flare Rounds of Various Colours, AN/PRC-77
 Rifleman | L1A1 SLR | 8x SLR Mags, 2x Frags | ---
 Rifleman SUIT | L1A1 SLR with SUIT | 8x SLR Mags, 2x Frags | ---
 Rifleman AT | L1A1 SLR, Carl Gustav | 8x SLR Mags, 2x Frags, 1x CG HEAT | 1x CG HEAT
@@ -83,7 +83,7 @@ Machine Gunner Assistant | L1A1 SLR | 8x SLR Mags, 2x Frags |  4x GPMG Belts
 ### Post-'56 COIN
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
-Section Commander | Sterling, Flare Gun | 6x Sterling Mags, 2x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, 3x Flare Colours | AN/PRC-77
+Section Commander | Sterling, Flare Gun | 6x Sterling Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, 3x Flare Rounds of Various Colours, AN/PRC-77
 Rifleman | L1A1 SLR | 8x SLR Mags, 2x Frags | ---
 Rifleman | L1A1 SLR | 8x SLR Mags, 2x Frags | ---
 Rifleman SUIT | L1A1 SLR with SUIT | 8x SLR Mags, 2x Frags | ---
