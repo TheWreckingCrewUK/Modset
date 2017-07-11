@@ -21,7 +21,7 @@ Below is our loadouts, for all eras (including WW2) and force types if necessary
 > Medical supplies and auxiliary items to come. Specalist equipment for a mission are generally not included, e.g. demolition blocks.
 
 ## WW2
-### Pre-Dunkirk
+### Pre-Dunkirk Dismounted
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
 Section Commander | Thompson, Flare Gun | 6x Thompson Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, 3x Flare Rounds of Various Colours
@@ -36,7 +36,7 @@ Machine Gunner Assistant | Enfield | 8x Enfield Mags, 2x Frags |  8x Bren Mags
 
 > Requires WW2 Repo.
 
-### Post-Dunkirk
+### Post-Dunkirk Dismounted
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
 Section Commander | Sten, Flare Gun | 6x Sten Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, 3x Flare Rounds of Various Colours
@@ -52,7 +52,7 @@ Machine Gunner Assistant | Enfield | 8x Enfield Mags, 2x Frags |  8x Bren Mags
 > Requires WW2 Repo.
 
 ## Cold War
-### Pre-'56
+### Pre-'56 Dismounted
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
 Section Commander | Sterling, Flare Gun | 6x Sterling Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, 3x Flare Rounds of Various Colours, AN/PRC-77
@@ -67,7 +67,7 @@ Machine Gunner Assistant | L1A1 SLR | 8x SLR Mags, 2x Frags |  8x Bren Mags
 
 > Requires WW2 Repo.
 
-### Post-'56
+### Post-'56 Dismounted
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
 Section Commander | Sterling, Flare Gun | 6x Sterling Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, 3x Flare Rounds of Various Colours, AN/PRC-77
@@ -94,13 +94,67 @@ Machine Gunner | Bren Gun | 6x Bren Mags | ---
 Machine Gunner Assistant | L1A1 SLR | 8x SLR Mags, 2x Frags |  8x Bren Mags
 
 ## Millennial
-### Gulf War (?)
+
+> The quantities below have not been calculated, they are simply place holders for the moment.
+
+### 90's Dismounted
+
+Role | Weapon(s) | Personal Gear | Backpack
+--- | --- | --- | ---
+Section Commander | L85A1 with SUSAT | 6x STANAG Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, AN/PRC-177
+Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+Rifleman AT | L85A1 with SUSAT, LAW 80 | 8x STANAG Mags, 2x Frags | ---
+Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+ |  |  |  
+2iC | L85A1 with SUSAT | 8x SLR Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
+Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+Rifleman AT | L85A1 with SUSAT, LAW 80 | 8x STANAG Mags, 2x Frags | ---
+Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+
+### 90's Mechanised
+
+Role | Weapon(s) | Personal Gear | Backpack
+--- | --- | --- | ---
+Section Commander | L85A1 with SUSAT | 6x STANAG Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, AN/PRC-177
+Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+ |  |  |  
+2iC | L85A1 with SUSAT | 8x SLR Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
+Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+
+### 00's Dismounted
+
+Role | Weapon(s) | Personal Gear | Backpack
+--- | --- | --- | ---
+Section Commander | L85A2 with SUSAT | 6x STANAG Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, AN/PRC-177
+Rifleman | L85A2 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+Rifleman AT | L85A2 with SUSAT, ILAW AT4 | 8x STANAG Mags, 2x Frags | ---
+Auto-Rifleman | L110A2 FN Minimi | 4x Minimi Box Mags, 2x Frags | ---
+ |  |  |  
+2iC | L85A2 with SUSAT | 8x SLR Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
+Rifleman | L85A2 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+Rifleman AT | L85A2 with SUSAT, ILAW AT4 | 8x STANAG Mags, 2x Frags | ---
+Marksman | L86A2 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+
+### 00's Mechanised
+
+> Todo
+
+### 00's COIN
 
 > Todo
 
 ## Modern
+### Dismounted
 
 > Todo
+
+### Mechanised
+
+> Todo
+
+### COIN
 
 # Terminology
 * **COIN** - **Co**unter **In**surgency
