@@ -106,7 +106,7 @@ Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
 Rifleman AT | L85A1 with SUSAT, LAW 80 | 8x STANAG Mags, 2x Frags | ---
 Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
  |  |  |  
-2iC | L85A1 with SUSAT | 8x SLR Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
+2iC | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
 Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
 Rifleman AT | L85A1 with SUSAT, LAW 80 | 8x STANAG Mags, 2x Frags | ---
 Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
@@ -119,7 +119,7 @@ Section Commander | L85A1 with SUSAT | 6x STANAG Mags, 2x Frags | 6x White Smoke
 Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
 Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
  |  |  |  
-2iC | L85A1 with SUSAT | 8x SLR Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
+2iC | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
 Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
 Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
 
@@ -132,14 +132,22 @@ Rifleman | L85A2 with SUSAT | 8x STANAG Mags, 2x Frags | ---
 Rifleman AT | L85A2 with SUSAT, ILAW AT4 | 8x STANAG Mags, 2x Frags | ---
 Auto-Rifleman | L110A2 FN Minimi | 4x Minimi Box Mags, 2x Frags | ---
  |  |  |  
-2iC | L85A2 with SUSAT | 8x SLR Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
+2iC | L85A2 with SUSAT | 8x STANAG Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
 Rifleman | L85A2 with SUSAT | 8x STANAG Mags, 2x Frags | ---
 Rifleman AT | L85A2 with SUSAT, ILAW AT4 | 8x STANAG Mags, 2x Frags | ---
 Marksman | L86A2 with SUSAT | 8x STANAG Mags, 2x Frags | ---
 
 ### 00's Mechanised
 
-> Todo
+Role | Weapon(s) | Personal Gear | Backpack
+--- | --- | --- | ---
+Section Commander | L85A2 with SUSAT | 6x STANAG Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, AN/PRC-177
+Rifleman | L85A2 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+Auto-Rifleman | L110A2 FN Minimi | 4x Minimi Box Mags, 2x Frags | ---
+ |  |  |  
+2iC | L85A2 with SUSAT | 8x STANAG Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
+Rifleman | L85A2 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+Gunner | L86A2 with SUSAT | 8x STANAG Mags, 2x Frags | ---
 
 ### 00's COIN
 
