@@ -18,10 +18,12 @@ if(!_bool)exitWith{};
 addMissionEventHandler ["HandleDisconnect",{
 	_unit = (_this select 0);
 	_uid = (_this select 2);
+	_unit setVariable ["disconectedPlayerUID",_uid];
 }];
 
 ["deleteReconnected", "onPlayerConnected", {
 	{
+		if((_x getVariable ["disconectedPlayerUID",false]) == _uid)then{
 			deleteVehicle _x;
 		};
 	}forEach allDead;
