@@ -53,6 +53,13 @@ switch (_era) do {
 		]] call ace_nametags_fnc_setFactionRankIcons;
 		cTab_vehicleClass_has_FBCB2 = [];
 		cTab_vehicleClass_has_TAD = [];
+		
+		["CAManBase","init",{
+			if((side (_this select 0) == West) && (rank (_this select 0) == "PRIVATE" || rank (_this select 0) == "CORPORAL"))then{
+				(_this select 0) unassignItem "itemMap";
+				(_this select 0) removeItem "itemMap";
+			};
+		}, true, nil, true] call CBA_fnc_addClassEventHandler;
 	};
 	default {
 		["TWC_Modern", [
