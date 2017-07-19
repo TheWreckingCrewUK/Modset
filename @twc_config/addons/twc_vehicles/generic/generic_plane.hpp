@@ -6,7 +6,7 @@ class TWC_Vehicle_Generic_Hercules_RAF: CUP_B_C130J_GB {
 	ADD_FACTION;
 	
 	displayname = "Hercules - Infantry (RAF)";
-	editorSubcategory = "TWC_ForceType_Motorised";
+	editorSubcategory = "TWC_ForceType_Airborne";
 	
 	class TransportItems { }; 
 	class TransportMagazines { };

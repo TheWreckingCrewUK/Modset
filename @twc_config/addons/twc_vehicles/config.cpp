@@ -24,10 +24,20 @@ class CfgPatches {
 			"TWC_fv432",
 			"TWC_burnes_foxhound_d_a",
 			"TWC_burnes_foxhound_w_a" */
-			"TWC_Vehicle_Generic_Ambulance_Woodland",
-			"TWC_Vehicle_Generic_Ambulance_Desert",
-			"TWC_Vehicle_Generic_Ambulance_UN",
+
+			"TWC_Vehicle_Generic_LandRoverAmbulance_Woodland",
+			"TWC_Vehicle_Generic_LandRoverAmbulance_Desert",
+			"TWC_Vehicle_Generic_LandRoverAmbulance_UN",
 			"TWC_Vehicle_Generic_Hercules_RAF",
+			
+			"TWC_Vehicle_ColdWar_LandRover_Woodland",
+			"TWC_Vehicle_ColdWar_LandRover_Desert",
+			"TWC_Vehicle_ColdWar_LandRover_UN",
+			"TWC_Vehicle_ColdWar_LandRover_Woodland_COIN",
+			"TWC_Vehicle_ColdWar_LandRover_Desert_COIN",
+			"TWC_Vehicle_ColdWar_LandRover_UN_COIN",
+			
+			
 		};
 
 		weapons[] = {
@@ -165,6 +175,10 @@ class CfgVehicles {
 		Before the change of vehicle, be sure to define CURRENT_VEHICLE to the new vehicle MOD MACRO. This makes copy and pasting a lot easier, ideal for situations where you're just changing the camo.
 	*/
 
+	class UK3CB_BAF_LandRover_Soft_Green_B;
+	class UK3CB_BAF_LandRover_Soft_Sand_A;
+	class UK3CB_BAF_LandRover_Soft_UN_A;
+	
 	#include "generic\generic.hpp";
 	#include "modern\modern.hpp";
 	#include "millenial\millenial.hpp";
