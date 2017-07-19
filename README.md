@@ -10,10 +10,30 @@ Tag | PBO/Type | Category | Item Name | Modifier | Misc
 --- | --- | --- | --- | --- | ---
 TWC | Magazine | --- | Callibre | Magazine Size | Ammo Type (if applicable), tracer is _T
 TWC | AmmoBox | Era, Vehicle, or Other | Target of Resupply | Mobility (e.g. Portable) | ---
+TWC | Vehicle | Era | Vehicle Name | Camoflauge | COIN (if applicable)
 
 > This is still a work in progress. Existing classes may not follow this, but effort is being made to update them when found.
 
 If a part isn't applicable, say the category, it's skipped but the order is always maintained. For example, if I wanted to create an ammobox that was portable for a modern section, I'd name it the following: `TWC_AmmoBox_Modern_Section_Portable`
+
+# Factions
+
+Here's a list of our custom factions, and their display names. Please try to stick to these as much as possible. We also do have sub-categories, which will be listed below.
+
+Class Name | Display Name | WW2 Only
+--- | --- | ---
+TWC_General | TWC General Operation Units | No
+TWC_Modern | TWC Modern Operation Units | No
+TWC_Millenial | TWC Millennial Operation Units | No
+TWC_ColdWar | TWC Cold War Operation Units | No
+twc_faction_independent | TWC WW2 Operation Units | Yes
+ |  | 
+Iraqi_units | Iraqi Army Gulf War Units | No
+ira_units | IRA Units | No
+african_units | African Militia | No
+TWC_Tak_Civ | Takistani Civilians | No
+twc_usa_1970 | USA 1970 | No
+Russian_Federation | Russian Federation | No
 
 # Loadouts
 Below is our loadouts, for all eras (including WW2) and force types if necessary. This includes counts, but may not be accurate as of the moment. This is their intended loadout in the future. Items in the backpacks are seperated, the rest is combined. If a backpack is lined out, they don't have one. 2iCs follow a 10% rule, but may break that on occasion. Subject to change. I've also duplicated entries, to show the section size. Fire Teams are seperated by a blank row.

@@ -51,6 +51,7 @@ class CfgPatches {
 		requiredVersion = 1;
 		
 		requiredAddons[] = {
+			"TWC_Defines",
 			"A3_Weapons_F",
 			"a3_structures_f_epa",
 			"uk3cb_baf_weapons",
@@ -64,45 +65,6 @@ class CfgPatches {
 		projectName = "TWC";
 		author = "Bosenator";
 	};
-};
-
-class CfgEditorCategories {
-	class TWC_Crates {
-		displayName = "Ammo Boxes (TWC)"; 
-	};
-};
-
-class CfgEditorSubcategories {
-	/*
-		Each ERA has an ERA/Mechanised (where necessary) specific:
-			Base Crate
-			Section & Attachment Resupply Crates (Portable)
-
-		Vehicle contains vehicle resupply (i.e. warrior ammo)
-		Other contains non-era specific crates and the pallet for air-lifting/dropping
-	*/
-	class TWC_Crates_Modern {
-		displayName = "Modern";
-	};
-	
-	class TWC_Crates_Millennial {
-		displayName = "Millennial";
-	};
-	
-	class TWC_Crates_ColdWar {
-		displayName = "Cold War";
-	};
-	
-	class TWC_Crates_Vehicles {
-		displayName = "Vehicles";
-	};
-	
-	class TWC_Crates_Other {
-		displayName = "Other";
-	};
-	
-	// Future Possibility, Training Crates? These could just be the weapons/items.
-	// For the moment, I can use the op ones in conjunction with the spawn scripts.
 };
 
 class CfgVehicles {

@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class twc_man
+	class twc_ai
 	{
 		units[]={};
 		weapons[]={};

@@ -26,7 +26,7 @@
 
 // Modifiers to the total amount (used to alter different vehicle payloads)
 #define MODERN_MASTIFF_MOD 2
-#define MODERN_FOXHOUND_MOD 1.2
+#define MODERN_FOXHOUND_MOD 1
 #define MODERN_WIMIK_MILAN_MOD 0.5
 #define MODERN_SNATCH_MOD 0.5
 #define MODERN_WIMIK_MOD 0.5

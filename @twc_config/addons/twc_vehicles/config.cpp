@@ -24,6 +24,10 @@ class CfgPatches {
 			"TWC_fv432",
 			"TWC_burnes_foxhound_d_a",
 			"TWC_burnes_foxhound_w_a" */
+			"TWC_Vehicle_Generic_Ambulance_Woodland",
+			"TWC_Vehicle_Generic_Ambulance_Desert",
+			"TWC_Vehicle_Generic_Ambulance_UN",
+			"TWC_Vehicle_Generic_Hercules_RAF",
 		};
 
 		weapons[] = {
@@ -31,8 +35,7 @@ class CfgPatches {
 			// OLD CLASS NAMES, DO NOT REUSE!
 			"TWC_30mm_HE_item",
 			"TWC_30mm_AP_item" */
-			
-			// Tag is TWC, then the second should describe its type, i.e. item, magazine or ammobox
+
 			"TWC_Item_30mm_3rd_HET",
 			"TWC_Item_30mm_3rd_APDS"
 		};
@@ -77,8 +80,6 @@ class Extended_PostInit_EventHandlers {
 
 class CfgMagazines {
 	class 140Rnd_30mm_MP_shells_Tracer_Yellow;
-	class 60Rnd_30mm_APFSDS_shells;
-	
 	class TWC_Magazine_30mm_3rd_HET: 140Rnd_30mm_MP_shells_Tracer_Yellow {
 		author = "FakeMatty, Bosenator";
 		scope = 1;
@@ -87,6 +88,7 @@ class CfgMagazines {
 		count = 3;
 	};
 	
+	class 60Rnd_30mm_APFSDS_shells;
 	class TWC_Magazine_30mm_3rd_APDS: 60Rnd_30mm_APFSDS_shells {
 		author = "FakeMatty, Bosenator";
 		scope = 1;
@@ -145,6 +147,31 @@ class CfgWeapons {
 
 class DefaultEventhandlers;
 
+class CfgVehicles {
+	// Non-Conflict Add Macros for TransportMagazine, TransportWeapon & TransportItem
+	#define ADD_MAGA(a,b) class _nc_##a {magazine = a; count = b;}
+	#define ADD_WEAP(a,b) class _nc_##a {weapon = a; count = b;}
+	#define ADD_ITEM(a,b) class _nc_##a {name = a; count = b;}
+	#define ADD_QNTY(a) __EVAL(round a * CURRENT_VEHICLE)
+	#define ADD_FACTION faction = "TWC_General"
+
+	/*
+		An explanation on how the macros in each era works.
+
+		The files below include all the vehicles, and a MACRO for each vehicle called NAME_MOD. This is a modifier, which multiples the amount specified. So 0.5 will halve the amount, and 2 will double. Useful for things like a section being split amongst two vehicles, or a chinhook housing 3 sections.
+		
+		They also use the MACRO defines as defined in twc_defines. These define the quantity of each item. Edits there will be reflected amongst all loadouts, like their backpacks, vehicles and ammmoboxes.
+		
+		Before the change of vehicle, be sure to define CURRENT_VEHICLE to the new vehicle MOD MACRO. This makes copy and pasting a lot easier, ideal for situations where you're just changing the camo.
+	*/
+
+	#include "generic\generic.hpp";
+	#include "modern\modern.hpp";
+	#include "millenial\millenial.hpp";
+	#include "coldwar\coldwar.hpp";
+};
+
+/*
 class CfgVehicles {
 	#include "twcWarriorAndChallenger.hpp"
 	
@@ -418,7 +445,7 @@ class CfgVehicles {
 				right = 1;
 				forcedDisplay = "SensorsDisplay";
 			};
-		}; */
+		}; 
 	};
 	
 	class twc_wildcat_1990: UK3CB_BAF_Wildcat_AH1_CAS_8A {
@@ -454,4 +481,4 @@ class CfgVehicles {
 		class TransportItems { };
 		class TransportWeapons { };
 	};
-};
+}; */ 
