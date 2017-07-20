@@ -6,7 +6,9 @@
 #define GENERIC_AMBULANCE_MOD 1
 
 // doesn't have a loadout, at the moment
-// #define GENERIC_HERCULES_MOD 0
+#define GENERIC_HERCULES_MOD 0
+#define GENERIC_CHINOOK_MOD 0
 
 #include "generic_wheeled.hpp";
+#include "generic_helicopter.hpp";
 #include "generic_plane.hpp";

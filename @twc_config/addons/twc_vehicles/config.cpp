@@ -29,6 +29,8 @@ class CfgPatches {
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Desert",
 			"TWC_Vehicle_Generic_LandRoverAmbulance_UN",
 			"TWC_Vehicle_Generic_Hercules_RAF",
+			"TWC_Vehicle_Generic_Chinook_RAF",
+			"TWC_Vehicle_Generic_Chinook_RAF_VIV",
 			
 			"TWC_Vehicle_ColdWar_LandRover_Woodland",
 			"TWC_Vehicle_ColdWar_LandRover_Desert",
@@ -36,8 +38,8 @@ class CfgPatches {
 			"TWC_Vehicle_ColdWar_LandRover_Woodland_COIN",
 			"TWC_Vehicle_ColdWar_LandRover_Desert_COIN",
 			"TWC_Vehicle_ColdWar_LandRover_UN_COIN",
-			
-			
+			"TWC_Vehicle_ColdWar_Puma_RAF",
+			"TWC_Vehicle_ColdWar_Puma_RAF_COIN"
 		};
 
 		weapons[] = {
