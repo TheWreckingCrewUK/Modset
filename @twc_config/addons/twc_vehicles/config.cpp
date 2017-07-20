@@ -39,7 +39,9 @@ class CfgPatches {
 			"TWC_Vehicle_ColdWar_LandRover_Desert_COIN",
 			"TWC_Vehicle_ColdWar_LandRover_UN_COIN",
 			"TWC_Vehicle_ColdWar_Puma_RAF",
-			"TWC_Vehicle_ColdWar_Puma_RAF_COIN"
+			"TWC_Vehicle_ColdWar_Puma_RAF_COIN",
+			"TWC_Vehicle_ColdWar_FV432_Woodland",
+			"TWC_Vehicle_ColdWar_FV432_Woodland_COIN"
 		};
 
 		weapons[] = {
@@ -177,9 +179,11 @@ class CfgVehicles {
 		Before the change of vehicle, be sure to define CURRENT_VEHICLE to the new vehicle MOD MACRO. This makes copy and pasting a lot easier, ideal for situations where you're just changing the camo.
 	*/
 
+	// These are used across era in different configurations, and as such should be first referenced here.
 	class UK3CB_BAF_LandRover_Soft_Green_B;
 	class UK3CB_BAF_LandRover_Soft_Sand_A;
 	class UK3CB_BAF_LandRover_Soft_UN_A;
+	class ukcw_fv432;
 	
 	#include "generic\generic.hpp";
 	#include "modern\modern.hpp";
