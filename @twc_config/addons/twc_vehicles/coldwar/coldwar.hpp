@@ -31,3 +31,4 @@
 
 #include "coldwar_wheeled.hpp";
 #include "coldwar_tracked.hpp";
+#include "coldwar_helicopter.hpp";
