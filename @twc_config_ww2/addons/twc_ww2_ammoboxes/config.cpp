@@ -2,8 +2,10 @@ class CfgPatches {
 	// Builds upon the base addon
 	class TWC_WW2_AmmoBoxes {
 		units[] = {
-			"TWC_AmmoBox_WW2_Base",
-			"TWC_AmmoBox_WW2_Section_Portable"
+			"TWC_AmmoBox_WW2_Early_Base",
+			"TWC_AmmoBox_WW2_Early_Section_Portable",
+			"TWC_AmmoBox_WW2_Late_Base",
+			"TWC_AmmoBox_WW2_Late_Section_Portable"
 		};
 		
 		weapons[] = {};
@@ -39,10 +41,90 @@ class CfgVehicles {
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 	
 	class TWC_AmmoBox_Base;
-	class TWC_AmmoBox_WW2_Base: TWC_AmmoBox_Base {
+	class TWC_AmmoBox_WW2_Early_Base: TWC_AmmoBox_Base {
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Base Resupply (Immobile)";
+		displayName = "Base Resupply - Early War (Immobile)";
+		editorSubcategory = "TWC_WW2_Crates";
+		
+		class TransportItems { };
+		class TransportWeapons { };
+		class TransportBackpacks { };
+		
+		class TransportMagazines {
+			// Sten
+			maga_nc(fow_32Rnd_9x19_sten, 9);
+
+			// Enfield .303 10rnd
+			maga_nc(fow_10Rnd_303, 30);
+			
+			// Bren .303 30rnd
+			maga_nc(fow_30Rnd_303_bren, 15);
+			
+			// Smoke Grenades
+			maga_nc(SmokeShell, 20);
+			maga_nc(SmokeShellGreen, 10);
+			maga_nc(SmokeShellRed, 10);
+			
+			// Frag Grenade
+			maga_nc(fow_e_no36mk1, 20);
+			
+			// Flares
+			maga_nc(LIB_1Rnd_flare_white, 15);
+			maga_nc(LIB_1Rnd_flare_red, 15);
+			maga_nc(LIB_1Rnd_flare_green, 15);
+			maga_nc(LIB_1Rnd_flare_yellow, 15);
+		};
+	};
+	
+	class TWC_AmmoBox_Portable;
+	class TWC_AmmoBox_WW2_Early_Section_Portable: TWC_AmmoBox_Portable {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Section Resupply - Early War (Portable)";
+		editorSubcategory = "TWC_WW2_Crates";
+		
+		class TransportItems {
+			item_nc(ACE_fieldDressing, 15);
+			item_nc(ACE_elasticBandage, 15);
+			item_nc(ACE_quikclot, 15);
+			item_nc(ACE_packingBandage, 15);
+			
+			item_nc(ACE_morphine, 6);
+			item_nc(ACE_epinephrine, 6);
+			item_nc(ACE_tourniquet, 4);
+		};
+		
+		class TransportMagazines {
+			// Sten
+			maga_nc(fow_32Rnd_9x19_sten, 3);
+			
+			// Enfield .303 10rnd
+			maga_nc(fow_10Rnd_303, 18);
+			
+			// Bren .303 30rnd
+			maga_nc(fow_30Rnd_303_bren, 6);
+			
+			// Smoke Grenades
+			maga_nc(SmokeShell, 6);
+			maga_nc(SmokeShellGreen, 2);
+			maga_nc(SmokeShellRed, 2);
+			
+			// Frag Grenade
+			maga_nc(fow_e_no36mk1, 6);
+			
+			// Flares
+			maga_nc(LIB_1Rnd_flare_white, 4);
+			maga_nc(LIB_1Rnd_flare_red, 4);
+			maga_nc(LIB_1Rnd_flare_green, 4);
+			maga_nc(LIB_1Rnd_flare_yellow, 4);
+		};
+	};
+	
+	class TWC_AmmoBox_WW2_Late_Base: TWC_AmmoBox_Base {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Base Resupply - Late War (Immobile)";
 		editorSubcategory = "TWC_WW2_Crates";
 		
 		class TransportItems { };
@@ -71,12 +153,11 @@ class CfgVehicles {
 			maga_nc(LIB_1Rnd_flare_yellow, 15);
 		};
 	};
-	
-	class TWC_AmmoBox_Portable;
-	class TWC_AmmoBox_WW2_Section_Portable: TWC_AmmoBox_Portable {
+
+	class TWC_AmmoBox_WW2_Late_Section_Portable: TWC_AmmoBox_Portable {
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Section Resupply (Portable)";
+		displayName = "Section Resupply - Late War (Portable)";
 		editorSubcategory = "TWC_WW2_Crates";
 		
 		class TransportItems {
