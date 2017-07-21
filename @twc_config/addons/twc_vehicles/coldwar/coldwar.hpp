@@ -26,9 +26,6 @@
 
 #define COLDWAR_SECTION_LAW 2
 
-// doesn't have a loadout, at the moment
-// #define GENERIC_HERCULES_MOD 0
-
 #include "coldwar_wheeled.hpp";
 #include "coldwar_tracked.hpp";
 #include "coldwar_helicopter.hpp";
