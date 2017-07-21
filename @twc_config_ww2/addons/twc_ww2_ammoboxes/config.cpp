@@ -1,0 +1,115 @@
+class CfgPatches {
+	// Builds upon the base addon
+	class TWC_WW2_AmmoBoxes {
+		units[] = {
+			"TWC_AmmoBox_WW2_Base",
+			"TWC_AmmoBox_WW2_Section_Portable"
+		};
+		
+		weapons[] = {};
+		requiredVersion = 1;
+		
+		requiredAddons[] = {
+			"TWC_AmmoBoxes",
+			"A3_Weapons_F",
+			"a3_structures_f_epa",
+			"uk3cb_baf_weapons",
+			"uk3cb_baf_equipment",
+			"cup_weapons_ammoboxes",
+			"ace_medical",
+			"ace_cargo"
+		};
+		
+		version = "1";
+		projectName = "TWC";
+		author = "Bosenator";
+	};
+};
+
+class CfgEditorSubcategories {
+	class TWC_WW2_Crates {
+		displayName = "WW2";
+	};
+};
+
+class CfgVehicles {
+	// Time saving MACROs - NC = Non-Conflict
+	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
+	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
+	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
+	
+	class TWC_AmmoBox_Base;
+	class TWC_AmmoBox_WW2_Base: TWC_AmmoBox_Base {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Base Resupply (Immobile)";
+		editorSubcategory = "TWC_WW2_Crates";
+		
+		class TransportItems { };
+		class TransportWeapons { };
+		class TransportBackpacks { };
+		
+		class TransportMagazines {
+			// Enfield .303 10rnd
+			maga_nc(fow_10Rnd_303, 30);
+			
+			// Bren .303 30rnd
+			maga_nc(fow_30Rnd_303_bren, 12);
+			
+			// Smoke Grenades
+			maga_nc(SmokeShell, 20);
+			maga_nc(SmokeShellGreen, 10);
+			maga_nc(SmokeShellRed, 10);
+			
+			// Frag Grenade
+			maga_nc(fow_e_no36mk1, 20);
+			
+			// Flares
+			maga_nc(LIB_1Rnd_flare_white, 15);
+			maga_nc(LIB_1Rnd_flare_red, 15);
+			maga_nc(LIB_1Rnd_flare_green, 15);
+			maga_nc(LIB_1Rnd_flare_yellow, 15);
+		};
+	};
+	
+	class TWC_AmmoBox_Portable;
+	class TWC_AmmoBox_WW2_Section_Portable: TWC_AmmoBox_Portable {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Section Resupply (Portable)";
+		editorSubcategory = "TWC_WW2_Crates";
+		
+		class TransportItems {
+			item_nc(ACE_fieldDressing, 15);
+			item_nc(ACE_elasticBandage, 15);
+			item_nc(ACE_quikclot, 15);
+			item_nc(ACE_packingBandage, 15);
+			
+			item_nc(ACE_morphine, 6);
+			item_nc(ACE_epinephrine, 6);
+			item_nc(ACE_tourniquet, 4);
+		};
+		
+		class TransportMagazines {
+			// Enfield .303 10rnd
+			maga_nc(fow_10Rnd_303, 18);
+			
+			// Bren .303 30rnd
+			maga_nc(fow_30Rnd_303_bren, 6);
+			
+			// Smoke Grenades
+			maga_nc(SmokeShell, 6);
+			maga_nc(SmokeShellGreen, 2);
+			maga_nc(SmokeShellRed, 2);
+			
+			// Frag Grenade
+			maga_nc(fow_e_no36mk1, 6);
+			
+			// Flares
+			maga_nc(LIB_1Rnd_flare_white, 4);
+			maga_nc(LIB_1Rnd_flare_red, 4);
+			maga_nc(LIB_1Rnd_flare_green, 4);
+			maga_nc(LIB_1Rnd_flare_yellow, 4);
+		};
+	};
+};

@@ -89,6 +89,13 @@ class cfgVehicles
 				typeName="NUMBER";
 				defaultValue=250;
 			};
+			class disconectGear
+			{
+				displayName="Disconect Gear";
+				description="Removes gear from the previous body when they disconect";
+				typeName="BOOL";
+				defaultValue=1;
+			};
 			class nightGear
 			{
 				displayName="Nighttime Equipment";
