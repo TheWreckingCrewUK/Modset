@@ -19,7 +19,8 @@ class CfgPatches {
 			"uk3cb_baf_equipment",
 			"cup_weapons_ammoboxes",
 			"ace_medical",
-			"ace_cargo"
+			"ace_cargo",
+			"WW2_Core_c_WW2_Core_c"
 		};
 		
 		version = "1";
@@ -40,6 +41,29 @@ class CfgVehicles {
 	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 	
+	class LIB_BasicWeaponsBox_US;
+	class TWC_AmmoBox_WW2_Portable: LIB_BasicWeaponsBox_US {
+		scope = 1;
+		displayName = "Ammo Box WW2 (Portable)";
+		author      = "Bosenator";
+		
+		class TransportMagazines { };
+		class TransportItems     { };
+		class TransportWeapons   { };
+		class TransportBackpacks { };
+		
+		editorCategory = "TWC_Crates";
+		editorSubcategory = "TWC_Crates_Other";
+		
+		// ACE Defines
+		ace_cargo_canLoad     = 1;
+		ace_cargo_size        = 1;
+		ace_cargo_hasCargo    = 0;
+		
+		ace_dragging_canCarry = 1;
+		ace_dragging_canDrag  = 1;
+	};
+	
 	class TWC_AmmoBox_Base;
 	class TWC_AmmoBox_WW2_Early_Base: TWC_AmmoBox_Base {
 		scope = 2;
@@ -52,8 +76,8 @@ class CfgVehicles {
 		class TransportBackpacks { };
 		
 		class TransportMagazines {
-			// Sten
-			maga_nc(fow_32Rnd_9x19_sten, 9);
+			// Thompson .45 ACP 30rnd
+			maga_nc(fow_30Rnd_45acp, 9);
 
 			// Enfield .303 10rnd
 			maga_nc(fow_10Rnd_303, 30);
@@ -77,8 +101,7 @@ class CfgVehicles {
 		};
 	};
 	
-	class TWC_AmmoBox_Portable;
-	class TWC_AmmoBox_WW2_Early_Section_Portable: TWC_AmmoBox_Portable {
+	class TWC_AmmoBox_WW2_Early_Section_Portable: TWC_AmmoBox_WW2_Portable {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Section Resupply - Early War (Portable)";
@@ -96,8 +119,8 @@ class CfgVehicles {
 		};
 		
 		class TransportMagazines {
-			// Sten
-			maga_nc(fow_32Rnd_9x19_sten, 3);
+			// Thompson .45 ACP 30rnd
+			maga_nc(fow_30Rnd_45acp, 3);
 			
 			// Enfield .303 10rnd
 			maga_nc(fow_10Rnd_303, 18);
@@ -132,6 +155,9 @@ class CfgVehicles {
 		class TransportBackpacks { };
 		
 		class TransportMagazines {
+			// Sten
+			maga_nc(fow_32Rnd_9x19_sten, 9);
+			
 			// Enfield .303 10rnd
 			maga_nc(fow_10Rnd_303, 30);
 			
@@ -154,7 +180,7 @@ class CfgVehicles {
 		};
 	};
 
-	class TWC_AmmoBox_WW2_Late_Section_Portable: TWC_AmmoBox_Portable {
+	class TWC_AmmoBox_WW2_Late_Section_Portable: TWC_AmmoBox_WW2_Portable {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Section Resupply - Late War (Portable)";
@@ -172,6 +198,9 @@ class CfgVehicles {
 		};
 		
 		class TransportMagazines {
+			// Sten
+			maga_nc(fow_32Rnd_9x19_sten, 3);
+			
 			// Enfield .303 10rnd
 			maga_nc(fow_10Rnd_303, 18);
 			
