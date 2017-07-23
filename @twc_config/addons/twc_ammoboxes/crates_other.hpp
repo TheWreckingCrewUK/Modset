@@ -26,7 +26,7 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 		item_nc(ACE_morphine, 20);
 		item_nc(ACE_epinephrine, 20);
 		
-		item_nc(ACE_salineIV_500, 12);
+		item_nc(ACE_salineIV_500, 24);
 		item_nc(ACE_tourniquet, 4);
 		item_nc(ACE_bodyBag, 5);
 		
