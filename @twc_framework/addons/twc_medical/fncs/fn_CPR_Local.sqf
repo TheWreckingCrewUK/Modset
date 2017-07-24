@@ -1,13 +1,13 @@
 params ["_caller", "_target"];
 
-if !([_target] call twc_cpr_fnc_canCPR) exitWith {};
+if !([_target] call twc_medical_fnc_canCPR) exitWith {};
 
 private _isMedic = _caller getVariable ["ACE_medical_medicClass", 0];
 
-_probability = 4;
+_probability = 2;
 
 if (_isMedic > 0) then {
-	_probability = 10;
+	_probability = 6;
 };
 
 // potential issue here, needs investigating
@@ -15,7 +15,7 @@ private _gotEpi = _target getVariable ["ace_medical_epinephrine_insystem", 0];
 _probability = _probability + (5 * _gotEpi);
 
 //reduces probability depending on total blood loss of patient:
-private _bloodLoss = [_caller, _target] call twc_cpr_fnc_getBloodLoss;
+private _bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodLoss;
 _probability = _probability - (10 - (10 * _bloodLoss));
 
 private _diceRoll = 1 + floor(random 100);

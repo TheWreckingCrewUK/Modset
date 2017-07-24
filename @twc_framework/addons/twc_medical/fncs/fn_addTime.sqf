@@ -6,9 +6,9 @@ if (_unCon) then {
 	private _reviveStartTime = _target getVariable ["ace_medical_reviveStartTime", 0];
 	if (_reviveStartTime > 0) then {
 		_timeToAdd = _reviveStartTime + 20;
-		private _bloodLoss = [_caller, _target] call twc_cpr_fnc_getBloodLoss;
+		private _bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodLoss;
 		
-		if (_bloodLoss >= 0.9) then {
+		if (_bloodLoss >= 0.75) then {
 			_timeToAdd = _timeToAdd + (random 30);
 		};
 		
