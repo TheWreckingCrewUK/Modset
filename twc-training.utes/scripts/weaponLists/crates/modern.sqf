@@ -12,7 +12,6 @@ _RangeBoxRifle1 = RangeAmmoBoxRifle1;
 _RangeBoxRifle2 = RangeAmmoBoxRifle2;
 _RangeBoxAT = RangeAmmoBoxAT;
 _RangeBoxAT1 = RangeAmmoBoxAT1;
-_RangeBoxAT2 = RangeAmmoBoxAT2;
 _RangeBoxSniper = RangeAmmoBoxSniper;
 _RangeBoxGrenade = RangeAmmoGrenade;
 _RangeBoxMedic = RangeAmmoBoxMedic;
@@ -47,11 +46,6 @@ clearWeaponCargoGlobal _RangeBoxAT1;
 clearBackpackCargoGlobal _RangeBoxAT1;
 clearMagazineCargoGlobal _RangeBoxAT1;
 clearitemCargoGlobal _RangeBoxAT1;
-
-clearWeaponCargoGlobal _RangeBoxAT2;
-clearBackpackCargoGlobal _RangeBoxAT2;
-clearMagazineCargoGlobal _RangeBoxAT2;
-clearitemCargoGlobal _RangeBoxAT2;
 
 clearWeaponCargoGlobal _RangeBoxSniper;
 clearBackpackCargoGlobal _RangeBoxSniper;
@@ -109,24 +103,23 @@ _RangeBoxAT AddWeaponCargoGlobal ["TWC_Carl_Gustav",20];
 _RangeBoxAT AddMagazineCargoGlobal ["tf47_m3maaws_HE",20];
 _RangeBoxAT AddMagazineCargoGlobal ["tf47_m3maaws_HEAT",20];
 
-_RangeBoxSniper AddWeaponCargoGlobal ["ACE_Kestrel4500",10];
-_RangeBoxSniper AddWeaponCargoGlobal ["ACE_ATragMX",10];
-_RangeBoxSniper AddWeaponCargoGlobal ["ACE_MapTools",10];
-_RangeBoxSniper AddWeaponCargoGlobal ["ACE_Tripod",10];
-_RangeBoxSniper AddWeaponCargoGlobal ["ACE_SpottingScope",10];
+_RangeBoxSniper AddItemCargoGlobal ["ACE_Kestrel4500",10];
+_RangeBoxSniper AddItemCargoGlobal ["ACE_ATragMX",10];
+_RangeBoxSniper AddItemCargoGlobal ["ACE_MapTools",10];
+_RangeBoxSniper AddItemCargoGlobal ["ACE_Tripod",10];
+_RangeBoxSniper AddItemCargoGlobal ["ACE_SpottingScope",10];
 _RangeBoxSniper AddWeaponCargoGlobal ["UK3CB_BAF_L115A3",10];
 _RangeBoxSniper AddItemCargoGlobal ["RKSL_optic_PMII_525",10];
-_RangeBoxSniper AddWeaponCargoGlobal ["ACE_Vector",10];
-_RangeBoxSniper AddWeaponCargoGlobal ["ACE_MX2A",10];
+_RangeBoxSniper AddItemCargoGlobal ["ACE_Vector",10];
+_RangeBoxSniper AddItemCargoGlobal ["ACE_MX2A",10];
 _RangeBoxSniper AddBackpackCargoGlobal ["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A",10];
-_RangeBoxSniper AddWeaponCargoGlobal ["ACRE_PRC117F",10];
+_RangeBoxSniper AddItemCargoGlobal ["ACRE_PRC117F",10];
 
 _CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_L16_Tripod",8];
 _CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_L16",8];
 _CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_Tripod",16];
 _CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_L111A1",8];
 _CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_L134A1",8];
-_CrewServedWepons AddWeaponCargoGlobal ["FIMStingerA",8];
 _CrewServedWepons AddWeaponCargoGlobal ["UK3CB_BAF_M6",8];
 
 
@@ -163,14 +156,6 @@ _RangeBoxRifle2 AddWeaponCargoGlobal ["UK3CB_BAF_L85A2_RIS_AFG",20];
 _RangeBoxRifle2 AddWeaponCargoGlobal ["UK3CB_BAF_L85A2_RIS",20];
 _RangeBoxRifle2 AddWeaponCargoGlobal ["UK3CB_BAF_L85A2",20];
 _RangeBoxRifle2 AddWeaponCargoGlobal ["ACE_VMH3",20];
-
-_RangeBoxAT2 AddWeaponCargoGlobal ["UK3CB_BAF_NLAW_Launcher",20];
-_RangeBoxAT2 AddWeaponCargoGlobal ["UK3CB_BAF_AT4_CS_AT_Launcher",20];
-_RangeBoxAT2 AddWeaponCargoGlobal ["HAFM_LAW",20];
-_RangeBoxAT2 AddWeaponCargoGlobal ["TWC_Carl_Gustav",20];
-_RangeBoxAT2 AddMagazineCargoGlobal ["tf47_m3maaws_HE",20];
-_RangeBoxAT2 AddMagazineCargoGlobal ["tf47_m3maaws_HEAT",20];
-
 
 //Ammo
 _RangeBoxRifle AddMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd_T",20];
@@ -305,13 +290,9 @@ _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_32Rnd_40mm_G_Box",100];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_shells",100];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Flare_white",100];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_81mm_Mo_Smoke_white",100];
-_CrewServedWepons addItemCargoGlobal ["CUP_Stinger_M",20];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_Shells",100];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_Flare_White",100];
 _CrewServedWepons AddMagazineCargoGlobal ["UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",100];
-
-
-
 
 //items
 
