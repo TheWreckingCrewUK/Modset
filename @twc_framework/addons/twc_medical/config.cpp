@@ -1,5 +1,4 @@
-class CfgPatches
-{
+class CfgPatches {
 	class twc_medical {
 		requiredAddons[] = {"ace_medical"};
 		requiredVersion = 1.7;
