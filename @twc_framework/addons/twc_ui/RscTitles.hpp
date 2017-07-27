@@ -15,8 +15,8 @@ class RscTitles {
 		enableSimulation = 1;
 		enableDisplay = 1;
 		duration = 10e10;
-		fadeIn = 0.2;
-		fadeOut = 0.2;
+		fadeIn = 0.1;
+		fadeOut = 0.1;
 		name = "BearingDisplay";
 
 		class controls {

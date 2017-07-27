@@ -13,5 +13,21 @@ class CfgPatches {
     };
 };
 
-#include "CfgEventHandlers.hpp"
+class CfgFunctions {
+	class TWC_UI {
+		tag = "TWC_UI";
+		class init {
+			file = "TWC_UI\functions";
+			class init { postInit = 1; };
+			
+			class addDisplay {};
+			class getVisualBearingLocal {};
+			class hideBearing {};
+			class isVehicleCrew {};
+			class removeDisplay {};
+			class showBearing {};
+		};
+	};
+};
+
 #include "RscTitles.hpp"
