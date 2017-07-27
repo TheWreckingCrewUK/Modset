@@ -4,7 +4,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.7;
-		requiredAddons[] = {"cba"};
+		requiredAddons[] = {"cba_main"};
 		author = "Bosenator";
 		authors[] = {"Bosenator"};
 		url = "http://thewreckingcrew.eu";

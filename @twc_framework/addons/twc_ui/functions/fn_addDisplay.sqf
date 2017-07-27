@@ -1,9 +1,11 @@
 disableSerialization;
 if (!hasInterface) exitWith {};
-if (!isNull (uiNameSpace getVariable ["TWC_BearingDisplay_EH", null])) exitWith {};
+_uiEHID = (uiNameSpace getVariable "TWC_BearingDisplay_EH");
+if (!isNil "_uiEHID") exitWith {};
 
-uiNamespace setVariable ['TWC_BearingDisplay_EH', 
-	[missionNamespace, "Draw3D", { 
-		[{[] call TWC_UI_fnc_getVisualBearingLocal.sqf}] call TWC_UI_fnc_showBearing.sqf;
-	}, ""] call CBA_fnc_addBISEventHandler;
-];
+_ehID = addMissionEventhandler ["Draw3D", {
+	_bearingString = [] call TWC_UI_fnc_getVisualBearingLocal;
+	[_bearingString] call TWC_UI_fnc_showBearing;
+}];
+
+uiNamespace setVariable ['TWC_BearingDisplay_EH', _ehID];

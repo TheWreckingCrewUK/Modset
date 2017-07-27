@@ -5,6 +5,8 @@ if (!hasInterface) exitWith {};
 	
 	if (_playerUnit call TWC_UI_fnc_isVehicleCrew) then {
 		[] call TWC_UI_fnc_addDisplay;
+	} else {
+		[] call TWC_UI_fnc_removeDisplay;
 	};
 }] call CBA_fnc_addPlayerEventHandler;
 
@@ -13,6 +15,8 @@ if (!hasInterface) exitWith {};
 	
 	if (_playerUnit call TWC_UI_fnc_isVehicleCrew) then {
 		[] call TWC_UI_fnc_addDisplay;
+	} else {
+		[] call TWC_UI_fnc_removeDisplay;
 	};
 }, player] call CBA_fnc_addBISEventHandler;
 
@@ -21,6 +25,8 @@ if (!hasInterface) exitWith {};
 	
 	if (_playerUnit call TWC_UI_fnc_isVehicleCrew) then {
 		[] call TWC_UI_fnc_addDisplay;
+	} else {
+		[] call TWC_UI_fnc_removeDisplay;
 	};
 }, player] call CBA_fnc_addBISEventHandler;
 
@@ -29,5 +35,7 @@ if (!hasInterface) exitWith {};
 	
 	if (_playerUnit call TWC_UI_fnc_isVehicleCrew) then {
 		[] call TWC_UI_fnc_addDisplay;
+	} else {
+		[] call TWC_UI_fnc_removeDisplay;
 	};
 }, player] call CBA_fnc_addBISEventHandler;
