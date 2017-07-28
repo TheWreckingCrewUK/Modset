@@ -158,6 +158,14 @@ class CfgFactionClasses
 		priority=1;
 		side=3;
 	};
+	class TWC_PAVN
+	{
+		displayName="TWC PAVN Operation Units";
+		author="The Wrecking Crew";
+		icon="TWClogo.paa";
+		priority=2;
+		side=3;
+	};
 };
 class CfgVehicles
 {
