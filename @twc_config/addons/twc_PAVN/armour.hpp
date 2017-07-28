@@ -5,7 +5,7 @@ class ARVN_M48: uns_m48a3
 {
 	displayName="M-48 Patton";
 	armor=750;
-}
+};
 
 class PAVN_T54: BCCCCP_T55
 {

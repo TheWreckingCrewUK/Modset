@@ -21,7 +21,6 @@ class RscTitles {
 
 		class controls {
 			class BearingString: RscStructuredText {
-				access = 0;
 				type = 13;
 				idc = 17556;
 				style = 0x00;

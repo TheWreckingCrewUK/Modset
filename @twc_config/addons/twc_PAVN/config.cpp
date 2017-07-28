@@ -17,8 +17,7 @@ class CfgPatches
 			"PAVN_Medic",
 			"PAVN_TankCommander",
 			"PAVN_TankCrew",
-			"PAVN_T54",
-			"PAVN_TO54",
+			"PAVN_T54"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
