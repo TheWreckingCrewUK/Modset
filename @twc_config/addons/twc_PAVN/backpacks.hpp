@@ -6,12 +6,57 @@
 	class Backpack_PAVN_Radio: UNS_NVA_RTO
 	{
 		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_77
+			{
+				name = "ACRE_PRC77";
+				count = 1;
+			};
+		};
+	};
+	class Backpack_PAVN_Sergeant: UNS_NVA_R1
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_ACRE_PRC77
+			{
+				name = "ACRE_PRC77";
+				count = 1;
+			};
+		};
 		class TransportMagazines
 		{
-			class _xx_PRC_117F
+			class _xx_uns_ppshmag
 			{
-				name = "ACRE_PRC117F";
-				count = 1;
+				magazine = "uns_ppshmag";
+				count = 3;
+			};
+			class _xx_CUP_30Rnd_762x39_AK47_M
+			{
+				magazine = "CUP_30Rnd_762x39_AK47_M";
+				count = 5;
+			};
+			class _xx_uns_sksmag_NT
+			{
+				magazine = "uns_sksmag_NT";
+				count = 8;
+			};
+			class _xx_CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M
+			{
+				magazine = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+				count = 2;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 6;
+			};
+			class _xx_uns_t67gren
+			{
+				magazine = "CUP_PG7V_M";
+				count = 4;
 			};
 		};
 	};
@@ -37,7 +82,7 @@
 			};
 		};
 	};
-	class Backpack_PAVN_CellLeader_AT: UNS_NVA_R1
+	class Backpack_PAVN_CellLeader_AT: UNS_NVA_RPG
 	{
 		scope = 1;
 		class TransportMagazines
@@ -81,7 +126,7 @@
 			};
 		};
 	};
-	class Backpack_PAVN_AT: UNS_NVA_RPG
+	class Backpack_PAVN_RPG: UNS_NVA_RPG
 	{
 		scope = 1;
 		class TransportMagazines

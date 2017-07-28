@@ -29,7 +29,7 @@ class PAVN_T54: BCCCCP_T55
 	{
 		class _xx_CUP_30Rnd_762x39_AK47_M
 		{
-			magazine="uns_ak47mag";
+			magazine="CUP_30Rnd_762x39_AK47_M";
 			count=6;
 		};
 		class _xx_uns_sksmag_NT
