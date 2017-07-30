@@ -14,15 +14,15 @@
 * NOTHING
 *
 * Example:
-* ["planeSpawn1","planePatrol1",800,"RHS_Su25SM_KH29_vvsc"] call twc_fnc_attackHelicopter;
+* ["planeSpawn1", "planePatrol1", 800, "CUP_O_Su25_RU_2"] call twc_fnc_attackHelicopter;
 *
 * Public: No
 */
-params ["_spawnmarker","_Patrolmarker","_radius",["_planetype","RHS_Su25SM_KH29_vvsc"]];
+params ["_spawnmarker", "_Patrolmarker", "_radius", ["_planetype", "CUP_O_Su25_RU_2"]];
 if (isServer) then {
 	_crew1 = creategroup EAST;
 	_plane = [getMarkerPos _spawnmarker, 180, _planetype,_crew1] call BIS_fnc_spawnVehicle;
-	_crew1 setVariable ["twc_cacheDisabled",true];
-	_plane setVariable ["twc_cacheDisabled",true];
+	_crew1 setVariable ["twc_cacheDisabled", true];
+	_plane setVariable ["twc_cacheDisabled", true];
 	[_crew1, getmarkerpos _Patrolmarker, _radius] call CBA_fnc_taskPatrol;
 };

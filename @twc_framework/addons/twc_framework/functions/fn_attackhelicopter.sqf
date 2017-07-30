@@ -14,12 +14,12 @@
 * NOTHING
 *
 * Example:
-* ["heliSpawn1","heliPatrol1",800,"RHS_Mi24P_CAS_vdv"] call twc_fnc_attackHelicopter;
+* ["heliSpawn1", "heliPatrol1", 800, "CUP_O_Mi24_V_RU"] call twc_fnc_attackHelicopter;
 *
 * Public: No
 */
 
-Params ["_spawnmarker","_patrolmarker",["_radius",400],["_helitype","RHS_Mi24P_CAS_vdv"]];
+Params ["_spawnmarker", "_patrolmarker", ["_radius", 400], ["_helitype", "CUP_O_Mi24_V_RU"]];
 if (isServer) then {
 	_crew1 = creategroup EAST;
 	_helicopter = [getMarkerPos _spawnmarker, 180, _helitype,_crew1] call BIS_fnc_spawnVehicle;

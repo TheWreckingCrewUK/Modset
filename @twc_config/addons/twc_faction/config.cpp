@@ -218,7 +218,7 @@ class CfgVehicles
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 	
-	#include "russianfederation.hpp"
+	//#include "russianfederation.hpp" // uncomment once all rhs classes have been replaced
 	#include "iraq.hpp"
 	#include "african.hpp"
 	#include "irish.hpp"
