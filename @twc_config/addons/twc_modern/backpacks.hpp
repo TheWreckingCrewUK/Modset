@@ -6,6 +6,7 @@
 	class UK3CB_BAF_B_Bergen_MTP_Medic_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_JTAC_L_A;
+	class UK3CB_BAF_B_Bergen_MTP_Engineer_H_A
 	
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
 	
@@ -494,6 +495,42 @@
 			{
 				magazine = "1Rnd_SmokePurple_Grenade_shell";
 				count = 3;
+			};
+		};
+		class TWC_Backpack_Modern_Engineer: UK3CB_BAF_B_Bergen_MTP_Engineer_H_A
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_ACE_VMH3
+			{
+				name = "ACE_VMH3";
+				count = 1;
+			};
+			class _xx_ACE_SpraypaintBlack
+			{
+				name = "ACE_SpraypaintBlack";
+				count = 1;
+			};
+			class _xx_ACE_wirecutter
+			{
+				name = "ACE_wirecutter";
+				count = 1;
+			};
+			class _xx_ACE_Clacker
+			{
+				name = "ACE_Clacker";
+				count = 1;
+			};
+			class _xx_ACE_EntrenchingTool
+			{
+				name = "ACE_EntrenchingTool";
+				count = 1;
+			};
+			class _xx_ACE_ACE_DefusalKit;
+			{
+				name = "ACE_DefusalKit";
+				count = 1;
 			};
 		};
 	};
