@@ -1,7 +1,5 @@
-class CfgPatches
-{
-	class twc_cpr
-	{
+class CfgPatches {
+	class twc_medical {
 		requiredAddons[] = {"ace_medical"};
 		requiredVersion = 1.7;
 		version = "1";
@@ -14,10 +12,10 @@ class CfgPatches
 };
 
 class CfgFunctions {
-	class twc_cpr {
-		tag = "twc_cpr";
+	class twc_medical {
+		tag = "twc_medical";
 		class init {
-			file = "twc_cpr\fncs";
+			file = "twc_medical\fncs";
 			class action {};
 			class addTime {};
 			class init { postInit = 1; };
@@ -31,7 +29,7 @@ class CfgFunctions {
 	/* class twc_extra {
 		tag = "twc_extra";
 		class init {
-			file = "twc_cpr\extra";
+			file = "twc_medical\extra";
 			class actionLoadUnit {};
 			class actionUnLoadUnit {};
 		};
@@ -72,7 +70,7 @@ class ACE_Medical_Actions {
 	class Advanced {
 		class fieldDressing;
 		class CPR: fieldDressing {
-			callbackSuccess = "twc_cpr_fnc_action";
+			callbackSuccess = "twc_medical_fnc_action";
 		};
 		
 		class QuikClot: fieldDressing {

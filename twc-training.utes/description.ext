@@ -1,28 +1,37 @@
-
 author = "[TWC]PattyEvans & [TWC]Jayman";
 loadScreen = "scripts\pics\loading.jpg";
 onLoadName = " TWC Training";
 disabledAI = 1;
 enableDebugConsole = 1;
-disableChannels[]={0,1,2,3,4,5};
+disableChannels[]={0,2,3,4,5};
 respawnButton = 0;
 
 respawn = "base";
 respawnDelay = 5;
+
+showHUD[] = {
+	true,	// Scripted HUD (same as showHUD command)
+	true,	// Vehicle + soldier info
+	true,	// Vehicle radar
+	true,	// Vehicle compass
+	true,	// Tank direction indicator
+	false,	// Commanding menu
+	false,	// Group Bar
+	true,	// HUD Weapon Cursors
+	false	// HUD Squad Radar
+};
+
 #include "chvd\dialog.hpp"
-class CfgFunctions
-
-
-{
-#include "chvd\cfgfunctions.hpp"
+class CfgFunctions {
+	#include "chvd\cfgfunctions.hpp"
 };
 
 class CfgDebriefing
 {
 	class End1
 	{
-		title = "You joined as a ADMIN";
-		subtitle = "You are not a Management, so switch to the trainee slot!";
+		title = "You joined as Management";
+		subtitle = "You are not in Management, so please switch to a correct slot!";
 		description = "TRAINING";
 		// pictureBackground = "";
 		// picture = "";
