@@ -23,6 +23,7 @@ if (isServer) then {
 	_crew1 = creategroup EAST;
 	_plane = [getMarkerPos _spawnmarker, 180, _planetype,_crew1] call BIS_fnc_spawnVehicle;
 	_crew1 setVariable ["twc_cacheDisabled",true];
-	_plane setVariable ["twc_cacheDisabled",true];
-	[_crew1, getmarkerpos _Patrolmarker, _radius] call CBA_fnc_taskPatrol;
+	(_plane select 0) setVariable ["twc_cacheDisabled",true];
+	_wp = _crew1 addWaypoint [getMarkerPos _Patrolmarker,0];
+	[_crew1,1] setWaypointType "SAD";
 };
