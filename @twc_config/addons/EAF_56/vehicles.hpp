@@ -1,11 +1,11 @@
-class CUP_O_T34_TKA;
+class CUP_I_T34_TK_GUE;
 class LIB_M4A2_SOV;
 class LIB_Willys_MB;
 class LIB_US6_Open;
 class LIB_US6_Tent;
 class LIB_US6_Ammo;
 
-class EAF56_T34: CUP_O_T34_TKA
+class EAF56_T34: CUP_I_T34_TK_GUE
 {
 	displayName="T-34/85";
 	faction="EAF56";
