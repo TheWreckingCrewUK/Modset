@@ -26,7 +26,7 @@ class EAF56_backpack_AT: fow_b_uk_piat
 		};
 	};
 };
-class EAF56_backpack_NCO: fow_b_uk_piat
+class EAF56_backpack_NCO: fow_b_ija_backpack
 {
 	scope = 1;
 	class TransportMagazines
