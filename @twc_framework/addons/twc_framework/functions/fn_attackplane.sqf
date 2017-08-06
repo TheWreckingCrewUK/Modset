@@ -22,7 +22,8 @@ params ["_spawnmarker", "_Patrolmarker", "_radius", ["_planetype", "CUP_O_Su25_R
 if (isServer) then {
 	_crew1 = creategroup EAST;
 	_plane = [getMarkerPos _spawnmarker, 180, _planetype,_crew1] call BIS_fnc_spawnVehicle;
-	_crew1 setVariable ["twc_cacheDisabled", true];
-	_plane setVariable ["twc_cacheDisabled", true];
-	[_crew1, getmarkerpos _Patrolmarker, _radius] call CBA_fnc_taskPatrol;
+	_crew1 setVariable ["twc_cacheDisabled",true];
+	(_plane select 0) setVariable ["twc_cacheDisabled",true];
+	_wp = _crew1 addWaypoint [getMarkerPos _Patrolmarker,0];
+	[_crew1,1] setWaypointType "SAD";
 };

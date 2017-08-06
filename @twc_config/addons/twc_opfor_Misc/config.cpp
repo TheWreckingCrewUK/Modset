@@ -2,7 +2,46 @@ class CfgPatches
 {
 	class twc_faction
 	{
-		units[]={};
+		units[]=
+		{
+			"GulfWar_Iraqi_Squadleader",
+			"GulfWar_Iraqi_Rifleman",
+			"GulfWar_Iraqi_RPG",
+			"GulfWar_Iraqi_RPGAssistant",
+			"GulfWar_Iraqi_MG",
+			"GulfWar_Iraqi_MGAssistant",
+			"Russian_Squadleader",
+			"Russian_Rifleman",
+			"Russian_Grenadier",
+			"Russian_Seniorrifleman",
+			"Russian_Grenadierassistant",
+			"Russian_Automaticrifleman",
+			"Russian_Vehiclecommander",
+			"Russian_Vehiclecrew",
+			"ColdWar_USSR_Squadleader",
+			"ColdWar_USSR_Rifleman",
+			"ColdWar_USSR_Grenadier",
+			"ColdWar_USSR_Grenadierassistant",
+			"ColdWar_USSR_Efreitor",
+			"ColdWar_USSR_MachineGunner",
+			"Afr_Mil_Rifleman",
+			"Afr_Mil_AT_Assistant",
+			"Afr_Mil_RiflemanAT",
+			"Afr_Mil_Machinegunner",
+			"Afr_Mil_Teamleader",
+			"Afr_Mil_Squadleader",
+			"Afr_Mil_Officer",
+			"Afr_Mil_Crewman",
+			"IRA_Squadleader",
+			"IRA_Rifleman_M16",
+			"IRA_Rifleman_AKM",
+			"IRA_Rifleman_FAL",
+			"IRA_Rifleman_AT",
+			"IRA_Autorifleman",
+			"usa_1970_medic",
+			"usa_1970_leader",
+			"usa_1970_grenadier"
+		};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
@@ -16,40 +55,35 @@ class CfgPatches
 		};
 	};
 };
+class CfgEditorSubCategories
+{
+	class Men_RussianFederation
+	{
+		displayName = "Men (Russian Federation)";
+	};
+	class Men_Iraq
+	{
+		displayName = "Men (Iraq)";
+	};
+	class Men_AfricanMilitia
+	{
+		displayName = "Men (African Militia)";
+	};
+	class Men_IRA
+	{
+		displayName = "Men (IRA)";
+	};
+	class TWC_tak_Civ_Men
+	{
+		displayName = "Men (Takistan Militia)";
+	};
+	class TWC_usa_1970
+	{
+		displayName = "USA (1970)";
+	};
+};
 class CfgFactionClasses
 {
-	class TWC_General
-	{
-		displayName="TWC General Operation Units";
-		author="The Wrecking Crew";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
-	};
-	class TWC_ColdWar
-	{
-		displayName="TWC Cold War Operation Units";
-		author="The Wrecking Crew";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
-	};
-	class TWC_Millenial
-	{
-		displayName="TWC Millennial Operation Units";
-		author="The Wrecking Crew";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
-	};
-	class TWC_Modern
-	{
-		displayName="TWC Modern Operation Units";
-		author="The Wrecking Crew";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
-	};
 	class Iraqi_units
 	{
 		displayName="Iraqi Army Gulf War Units";
@@ -152,7 +186,7 @@ class CfgVehicles
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 	
-	//#include "russianfederation.hpp" // uncomment once all rhs classes have been replaced
+	#include "russianfederation.hpp"
 	#include "iraq.hpp"
 	#include "african.hpp"
 	#include "irish.hpp"
