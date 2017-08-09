@@ -23,4 +23,4 @@ missionNameSpace setVariable ["twcModuleFinished",true,true];
 [(_logic getVariable "boatSafety")] call twc_fnc_boatSafety;
 [(_logic getVariable "civilianEquipment")] call twc_fnc_civilianEquipment;
 [(_logic getVariable "deadBodies")] call twc_fnc_deadBodies;
-[(_logic getVariable "disconectGear")] call twc_fnc_deadBodies;
+[(_logic getVariable "disconectGear")] call twc_fnc_disconectGear;
