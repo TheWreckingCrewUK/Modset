@@ -14,6 +14,7 @@ class CfgFunctions
 			class CreateTask{};
 			class daisyCutter{};
 			class Defend {};
+			class Flagchange {};
 			class IEDpopulate{};
 			class intelHint{};
 			class LightsSwitch{};
