@@ -24,13 +24,10 @@ class EAF56_T34: CUP_I_T34_TK_GUE
 	};
 	class TransportWeapons
 	{
-		class TransportWeapons
+		class _xx_AKM
 		{
-			class _xx_AKM
-			{
-				weapon="CUP_arifle_AKM";
-				count=3;
-			};
+			weapon="CUP_arifle_AKM";
+			count=3;
 		};
 	};
 };
