@@ -100,6 +100,12 @@ class CfgVehicles
 		scope = 1;
 		maximumLoad = 200;
 	};
+	class TWC_Backpack_1956_Radio_Base: fow_b_us_radio
+	{
+		scope = 1;
+		maximumLoad = 400;
+		mass = 29.7;
+	};
 	class TWC_Backpack_WW2_PlatoonCommand: fow_b_us_radio
 	{
 		scope = 1;
@@ -365,69 +371,19 @@ class CfgVehicles
 		};
 	};
 //*******************1956************************
-	class TWC_Backpack_1956_SL:TWC_Backpack_WW2_Base
+	class TWC_Backpack_1956_SL:TWC_Backpack_1956_Radio_Base
 	{
 		scope = 1;
-		class TransportMagazines
+		class TransportItems
 		{
-			class _XX_Flare_white
+			class _xx_PRC_117F
 			{
-				magazine="UGL_FlareWhite_F";
-				count=3;
-			};
-			class _XX_Flare_red
-			{
-				magazine="UGL_FlareRed_F";
-				count=3;
-			};
-			class _XX_Flare_green
-			{
-				magazine="UGL_FlareGreen_F";
-				count=3;
-			};
-			class _XX_Flare_yellow
-			{
-				magazine="UGL_FlareYellow_F";
-				count=3;
-			};
-			class _XX_SmokeGrenade_White
-			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Red
-			{
-				magazine="1Rnd_SmokeRed_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Green
-			{
-				magazine="1Rnd_SmokeGreen_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Yellow
-			{
-				magazine="1Rnd_SmokeYellow_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Purple
-			{
-				magazine="1Rnd_SmokePurple_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Blue
-			{
-				magazine="1Rnd_SmokeBlue_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Orange
-			{
-				magazine="1Rnd_SmokeOrange_Grenade_shell";
-				count=3;
+				name = "ACRE_PRC117F";
+				count = 1;
 			};
 		};
 	};
-	class TWC_Backpack_1956_Sergeant:TWC_Backpack_WW2_Base
+	class TWC_Backpack_1956_Sergeant:TWC_Backpack_1956_Radio_Base
 	{
 		scope = 1;
 		class TransportMagazines
@@ -446,26 +402,6 @@ class CfgVehicles
 			{
 				magazine = "fow_30Rnd_303_bren";
 				count = 3;
-			};
-			class _XX_Flare_white
-			{
-				magazine="LIB_1Rnd_flare_white";
-				count=6;
-			};
-			class _XX_Flare_red
-			{
-				magazine="LIB_1Rnd_flare_red";
-				count=6;
-			};
-			class _XX_Flare_green
-			{
-				magazine="LIB_1Rnd_flare_green";
-				count=6;
-			};
-			class _XX_Flare_yellow
-			{
-				magazine="LIB_1Rnd_flare_yellow";
-				count=6;
 			};
 			class _xx_SmokeShellGreen
 			{
@@ -487,7 +423,7 @@ class CfgVehicles
 			class _xx_UK3CB_BAF_762_20Rnd
 			{
 				magazine = "UK3CB_BAF_762_20Rnd";
-				count = 5;
+				count = 10;
 			};
 			class _XX_Enfield_Mag
 			{
@@ -498,6 +434,18 @@ class CfgVehicles
 			{
 				magazine = "fow_30Rnd_303_bren";
 				count = 2;
+			};
+		};
+	};
+	class TWC_Backpack_1956_AT: TWC_Backpack_WW2_Base
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_M6A1_Rocket
+			{
+				magazine = "fow_1Rnd_m6a1";
+				count = 3;
 			};
 		};
 	};

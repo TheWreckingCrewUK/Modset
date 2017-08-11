@@ -5,7 +5,7 @@ class EAF56_Base: O_Soldier_base_F
 	displayName="Base";
 	faction="EAF56";
 	nakedUniform="U_BasicBody";
-	uniformClass="fow_u_ija_type98_khakibrown";
+	uniformClass="twc_u_eaf";
 	linkedItems[]=
 	{
 		"fow_v_uk_base",
