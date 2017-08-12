@@ -68,6 +68,7 @@ class cfgWeapons
 			containerClass = Supply40;
 			mass = 30;
 			scope = 0;
+			type=801;
 			uniformClass = "twc_base_Redfor_soldier01";
 			uniformModel = "-";
 		};

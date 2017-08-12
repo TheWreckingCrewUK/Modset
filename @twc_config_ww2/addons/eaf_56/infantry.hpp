@@ -178,13 +178,13 @@ class EAF56_MachineGunner: EAF56_Base
 	{
 		"Throw",
 		"Put",
-		"LIB_DP28"
+		"TWC_RPD"
 	};
 	respawnweapons[]=
 	{
 		"Throw",
 		"Put",
-		"LIB_DP28"
+		"TWC_RPD"
 	};
 	magazines[]=
 	{
