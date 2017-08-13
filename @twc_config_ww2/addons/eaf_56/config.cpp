@@ -48,7 +48,29 @@ class CfgFactionClasses
 };
 class CfgVehicles
 {
+	class fow_ija_soldier02;
+	class twc_base_Redfor_soldier01: fow_ija_soldier02
+	{
+		side = 0;
+	};
+	
 	#include "infantry.hpp"
 	#include "backpacks.hpp"
 	#include "vehicles.hpp"
+};
+class cfgWeapons
+{
+	class fow_u_ija_type98_khakibrown;
+	class twc_u_eaf: fow_u_ija_type98_khakibrown
+	{
+		class itemInfo
+		{
+			containerClass = Supply40;
+			mass = 30;
+			scope = 0;
+			type=801;
+			uniformClass = "twc_base_Redfor_soldier01";
+			uniformModel = "-";
+		};
+	};
 };

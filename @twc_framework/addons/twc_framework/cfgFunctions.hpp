@@ -9,11 +9,13 @@ class CfgFunctions
 			class Artillery{};
 			class AttackHelicopter{};
 			class AttackPlane {};
+			class BattlefieldSounds {};
 			class CommandMessage{};
 			class createMarker{};
 			class CreateTask{};
 			class daisyCutter{};
 			class Defend {};
+			class Flagchange {};
 			class IEDpopulate{};
 			class intelHint{};
 			class LightsSwitch{};

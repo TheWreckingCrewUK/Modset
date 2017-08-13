@@ -1,11 +1,11 @@
-class CUP_O_T34_TKA;
+class CUP_I_T34_TK_GUE;
 class LIB_M4A2_SOV;
 class LIB_Willys_MB;
 class LIB_US6_Open;
 class LIB_US6_Tent;
 class LIB_US6_Ammo;
 
-class EAF56_T34: CUP_O_T34_TKA
+class EAF56_T34: CUP_I_T34_TK_GUE
 {
 	displayName="T-34/85";
 	faction="EAF56";
@@ -18,19 +18,16 @@ class EAF56_T34: CUP_O_T34_TKA
 	{
 		class _xx_CUP_30Rnd_762x39_AK47_M
 		{
-			magazine="uns_ak47mag";
+			magazine="CUP_30Rnd_762x39_AK47_M";
 			count=9;
 		};
 	};
 	class TransportWeapons
 	{
-		class TransportWeapons
+		class _xx_AKM
 		{
-			class _xx_AKM
-			{
-				weapon="CUP_arifle_AKM";
-				count=3;
-			};
+			weapon="CUP_arifle_AKM";
+			count=3;
 		};
 	};
 };
@@ -47,19 +44,16 @@ class EAF56_M4A3: LIB_M4A2_SOV
 	{
 		class _xx_CUP_30Rnd_762x39_AK47_M
 		{
-			magazine="uns_ak47mag";
+			magazine="CUP_30Rnd_762x39_AK47_M";
 			count=9;
 		};
 	};
 	class TransportWeapons
 	{
-		class TransportWeapons
+		class _xx_AKM
 		{
-			class _xx_AKM
-			{
-				weapon="CUP_arifle_AKM";
-				count=3;
-			};
+			weapon="CUP_arifle_AKM";
+			count=3;
 		};
 	};
 };
@@ -76,7 +70,7 @@ class EAF56_MB: LIB_Willys_MB
 	{
 		class _xx_CUP_30Rnd_762x39_AK47_M
 		{
-			magazine="uns_ak47mag";
+			magazine="CUP_30Rnd_762x39_AK47_M";
 			count=9;
 		};
 		class _xx_fow_10Rnd_303
@@ -122,7 +116,7 @@ class EAF56_US6_Open: LIB_US6_Open
 	{
 		class _xx_CUP_30Rnd_762x39_AK47_M
 		{
-			magazine="uns_ak47mag";
+			magazine="CUP_30Rnd_762x39_AK47_M";
 			count=9;
 		};
 		class _xx_fow_10Rnd_303
@@ -160,7 +154,7 @@ class EAF56_US6_Tent: LIB_US6_Tent
 	{
 		class _xx_CUP_30Rnd_762x39_AK47_M
 		{
-			magazine="uns_ak47mag";
+			magazine="CUP_30Rnd_762x39_AK47_M";
 			count=9;
 		};
 		class _xx_fow_10Rnd_303
@@ -198,7 +192,7 @@ class EAF56_US6_Ammo: LIB_US6_Ammo
 	{
 		class _xx_CUP_30Rnd_762x39_AK47_M
 		{
-			magazine="uns_ak47mag";
+			magazine="CUP_30Rnd_762x39_AK47_M";
 			count=45;
 		};
 		class _xx_fow_10Rnd_303

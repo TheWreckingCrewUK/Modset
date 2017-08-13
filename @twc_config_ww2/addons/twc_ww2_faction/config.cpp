@@ -52,4 +52,5 @@ class CfgVehicles
 	class I_Soldier_F;
 	
 	#include "ww2.hpp"
+	#include "1956.hpp"
 };

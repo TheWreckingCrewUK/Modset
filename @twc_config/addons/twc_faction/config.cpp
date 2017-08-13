@@ -1,12 +1,9 @@
-class CfgPatches
-{
-	class twc_faction
-	{
-		units[]={};
-		weapons[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
+class CfgPatches {
+	class twc_faction {
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"A3_Characters_F_Common",
@@ -16,38 +13,37 @@ class CfgPatches
 		};
 	};
 };
-class CfgFactionClasses
-{
-	class TWC_General
-	{
-		displayName="TWC General Operation Units";
-		author="The Wrecking Crew";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
+
+class CfgFactionClasses {
+	class TWC_General {
+		displayName = "TWC General Operation Units";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
 	};
-	class TWC_ColdWar
-	{
-		displayName="TWC Cold War Operation Units";
-		author="The Wrecking Crew";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
+	
+	class TWC_ColdWar {
+		displayName = "TWC Cold War Operation Units";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
 	};
-	class TWC_Millenial
-	{
-		displayName="TWC Millennial Operation Units";
-		author="The Wrecking Crew";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
+	
+	class TWC_Millenial {
+		displayName = "TWC Millennial Operation Units";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
 	};
-	class TWC_Modern
-	{
-		displayName="TWC Modern Operation Units";
-		author="The Wrecking Crew";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
+	
+	class TWC_Modern {
+		displayName = "TWC Modern Operation Units";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
 	};
 };

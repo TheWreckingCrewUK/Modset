@@ -5,7 +5,7 @@ class EAF56_Base: O_Soldier_base_F
 	displayName="Base";
 	faction="EAF56";
 	nakedUniform="U_BasicBody";
-	uniformClass="CUP_U_I_RACS_PilotOverall";
+	uniformClass="twc_u_eaf";
 	linkedItems[]=
 	{
 		"fow_v_uk_base",
@@ -178,13 +178,13 @@ class EAF56_MachineGunner: EAF56_Base
 	{
 		"Throw",
 		"Put",
-		"LIB_DP28"
+		"TWC_RPD"
 	};
 	respawnweapons[]=
 	{
 		"Throw",
 		"Put",
-		"LIB_DP28"
+		"TWC_RPD"
 	};
 	magazines[]=
 	{
@@ -379,6 +379,7 @@ class EAF56_Officer: EAF56_NCO
 };
 class EAF56_Crewman: EAF56_Base
 {
+	scope=2;
 	displayName="Crewman";
 	linkedItems[]=
 	{

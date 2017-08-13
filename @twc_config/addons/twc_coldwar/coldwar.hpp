@@ -82,14 +82,14 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood",
+			"UK3CB_BAF_L1A1",
 			"ukcw_L1A1_law"		
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood",
+			"UK3CB_BAF_L1A1",
 			"ukcw_L1A1_law"	
 		};
 		magazines[]=
@@ -214,13 +214,13 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 	};
 	class ColdWar_2IC: ColdWar_Rifleman
@@ -231,13 +231,13 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 	};
 	class ColdWar_MG: ColdWar_Base
@@ -283,13 +283,13 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 	};
 	class ColdWar_Section_Leader: ColdWar_Rifleman
@@ -299,7 +299,7 @@
 		backpack="TWC_Backpack_Cold_War_Section";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{
@@ -324,14 +324,14 @@
 			"Throw",
 			"Put",
 			"Binocular",
-			"UK3CB_BAF_L1A1_Wood"			
+			"UK3CB_BAF_L1A1"			
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"Binocular",
-			"UK3CB_BAF_L1A1_Wood"			
+			"UK3CB_BAF_L1A1"			
 		};
 		magazines[]=
 		{
@@ -365,7 +365,7 @@
 		displayName="Platoon Commander";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		weapons[]=
 		{
@@ -469,7 +469,7 @@
 		backpack="B_AssaultPack_blk";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{
@@ -521,7 +521,7 @@
 		backpack="B_AssaultPack_blk";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{
@@ -663,7 +663,7 @@
 		backpack="B_AssaultPack_blk";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{
@@ -853,13 +853,13 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 	};
 	class ColdWar_Rifleman_SUIT_Troubles: ColdWar_Rifleman_Troubles
@@ -886,13 +886,13 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 	};
 	class ColdWar_MG_Troubles: ColdWar_MG
@@ -960,13 +960,13 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L1A1_Wood"
+			"UK3CB_BAF_L1A1"
 		};
 	};
 	class ColdWar_Section_Leader_Troubles: ColdWar_Rifleman_Troubles
@@ -1001,14 +1001,14 @@
 			"Throw",
 			"Put",
 			"Binocular",
-			"UK3CB_BAF_L1A1_Wood"			
+			"UK3CB_BAF_L1A1"			
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"Binocular",
-			"UK3CB_BAF_L1A1_Wood"			
+			"UK3CB_BAF_L1A1"			
 		};
 		magazines[]=
 		{
@@ -1042,7 +1042,7 @@
 		displayName="Platoon Commander (Troubles)";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		weapons[]=
 		{
