@@ -37,7 +37,9 @@ if(isMultiplayer)then{
 
 		titleCut ["", "BLACK IN", 5];
 		
-
+		if!((goggles player) in approvedFacewear)then{
+			removeGoggles player;
+		};
 		if!(player getVariable ["twc_keepMap",false])then{ 
 			player unassignItem "itemMap"; 
 			player removeItem "itemMap"; 
