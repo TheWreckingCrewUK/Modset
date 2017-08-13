@@ -16,7 +16,7 @@ if(isMultiplayer)then{
 		titleFadeOut 7;
 		sleep 5;
 
-		titleText ["Operation #Name#","PLAIN"];
+		titleText [briefingName,"PLAIN"];
 		titleFadeOut 15;
 		sleep 45;
 

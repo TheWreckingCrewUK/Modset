@@ -10,7 +10,7 @@
 		uniformClass="TWC_Smock_Temperate";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{

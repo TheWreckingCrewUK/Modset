@@ -80,7 +80,7 @@
 		backpack="TWC_Backpack_WW2_SL";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{
@@ -260,7 +260,7 @@
 		backpack="TWC_Backpack_WW2_SL";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{

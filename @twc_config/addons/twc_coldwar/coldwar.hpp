@@ -299,7 +299,7 @@
 		backpack="TWC_Backpack_Cold_War_Section";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{
@@ -365,7 +365,7 @@
 		displayName="Platoon Commander";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		weapons[]=
 		{
@@ -469,7 +469,7 @@
 		backpack="B_AssaultPack_blk";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{
@@ -521,7 +521,7 @@
 		backpack="B_AssaultPack_blk";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{
@@ -663,7 +663,7 @@
 		backpack="B_AssaultPack_blk";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{
@@ -1042,7 +1042,7 @@
 		displayName="Platoon Commander (Troubles)";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_keepMap"",true]};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		weapons[]=
 		{
