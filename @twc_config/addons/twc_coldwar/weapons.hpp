@@ -1,10 +1,10 @@
 class cfgWeapons
 {
-	class UK3CB_BAF_L1A1_Wood;
+	class UK3CB_BAF_L1A1;
 	class CUP_launch_FIM92Stinger;
 	class ukcw_L14A1;
 	
-	class twc_L1A1_SUIT:UK3CB_BAF_L1A1_Wood
+	class twc_L1A1_SUIT:UK3CB_BAF_L1A1
 	{
 		scope = 1;
 		author = "jayman";
