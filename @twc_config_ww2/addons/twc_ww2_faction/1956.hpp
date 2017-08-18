@@ -1,4 +1,78 @@
-	class Early_ColdWar_Platoon_Commander: WW2_British_Base
+	class Early_ColdWar_Base: I_Soldier_F
+	{
+		scope=1;
+		displayName="Base";
+		faction="twc_faction_independent";
+		editorSubcategory = "Men_1956";
+		vehicleClass="Men_1956";
+		nakedUniform="U_BasicBody";
+		uniformClass="fow_u_uk_parasmock";
+		linkedItems[]=
+		{
+        "TWC_Vest_WW2_Base",
+		"fow_h_uk_mk2",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+        "TWC_Vest_WW2_Base",
+		"fow_h_uk_mk2",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		Items[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
+		respawntems[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
+	};
+	class Early_ColdWar_Platoon_Commander: Early_ColdWar_Base
 	{
 		scope=2;
 		displayName="Platoon Commander";
@@ -59,7 +133,7 @@
 		"SmokeShell"
 		};
 	};
-	class Early_ColdWar_Sergeant: WW2_British_Platoon_Commander
+	class Early_ColdWar_Sergeant: Early_ColdWar_Platoon_Commander
 	{
 		scope=2;
 		displayName="Platoon Sergeant";
@@ -121,7 +195,7 @@
 
 		};
 	};
-	class Early_ColdWar_Medic: WW2_British_Base
+	class Early_ColdWar_Medic: Early_ColdWar_Base
 	{
 		scope=2;
 		displayName="Medic";
@@ -172,7 +246,7 @@
 			"SmokeShell"
 		};
 	};
-	class Early_ColdWar_Section_Leader: WW2_British_Base
+	class Early_ColdWar_Section_Leader: Early_ColdWar_Base
 	{
 		scope=2;
 		displayName="Section Commander";
@@ -245,7 +319,7 @@
 			"SmokeShell"
 		};
 	};
-	class EarlyColdWar_Rifleman: WW2_British_Base
+	class EarlyColdWar_Rifleman: Early_ColdWar_Base
 	{
 		scope=2;
 		displayName="Rifleman";
@@ -291,7 +365,7 @@
 
 		};
 	};
-	class Early_ColdWar_2IC: WW2_British_Base
+	class Early_ColdWar_2IC: Early_ColdWar_Base
 	{
 		displayName="2IC";
 		uniformClass="fow_u_uk_bd40_01_lance_corporal";
@@ -336,7 +410,7 @@
 
 		};
 	};
-	class Early_ColdWar_MG: WW2_British_Base
+	class Early_ColdWar_MG: Early_ColdWar_Base
 	{
 		scope=2;
 		displayName="Machine Gunner";
@@ -399,7 +473,7 @@
 			"fow_30Rnd_303_bren"
 		};
 	};
-	class Early_ColdWar_MG_AS: WW2_British_Base
+	class Early_ColdWar_MG_AS: Early_ColdWar_Base
 	{
 		displayName="Machine Gunner Assistant";
 		backpack="TWC_Backpack_WW2_MGASS";
@@ -459,7 +533,7 @@
 
 		};
 	};
-	class Early_ColdWar_AT: WW2_British_Base
+	class Early_ColdWar_AT: Early_ColdWar_Base
 	{
 		scope=2;
 		displayName="AT Gunner";
@@ -497,7 +571,7 @@
 
 		};
 	};
-	class Early_ColdWar_AT_Ass: WW2_British_Rifleman
+	class Early_ColdWar_AT_Ass: EarlyColdWar_Rifleman
 	{
 		scope=2;
 		displayName="AT Gunner Assistant";

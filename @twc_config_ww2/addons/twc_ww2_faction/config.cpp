@@ -32,6 +32,14 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (WW2)";
 	};
+	class Men_WW2_Para
+	{
+		displayName = "Paratroopers (WW2)";
+	};
+	class Men_1956
+	{
+		displayName = "Men (1956)";
+	};
 };
 class CfgFactionClasses
 {
@@ -53,4 +61,5 @@ class CfgVehicles
 	
 	#include "ww2.hpp"
 	#include "1956.hpp"
+	#include "ww2_para.hpp"
 };
