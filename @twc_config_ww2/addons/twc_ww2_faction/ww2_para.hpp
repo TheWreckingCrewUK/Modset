@@ -9,7 +9,7 @@
 		uniformClass="fow_u_uk_parasmock";
 		linkedItems[]=
 		{
-        "TWC_Vest_WW2_Base",
+        "TWC_Vest_WW2_Para_Base",
 		"fow_h_uk_mk2_para",
 		"ItemMap",
 		"ItemCompass",
@@ -17,7 +17,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "TWC_Vest_WW2_Base",
+        "TWC_Vest_WW2_Para_Base",
 		"fow_h_uk_mk2_para",
 		"ItemMap",
 		"ItemCompass",
@@ -84,7 +84,7 @@
 		};
 		linkedItems[]=
 		{
-        "TWC_Vest_WW2_Officer",
+        "TWC_Vest_WW2_Para_Sten",
 		"fow_h_uk_mk2_para_camo",
 		"ItemMap",
 		"ItemCompass",
@@ -92,7 +92,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "TWC_Vest_WW2_Officer",
+        "TWC_Vest_WW2_Para_Sten",
 		"fow_h_uk_mk2_para_camo",
 		"ItemMap",
 		"ItemCompass",
@@ -207,7 +207,7 @@
 		backpack="TWC_Backpack_WW2_Medic";
 		linkedItems[]=
 		{
-			"TWC_Vest_WW2_Sten",
+			"TWC_Vest_WW2_Para_Sten",
 			"fow_h_uk_mk2_para",
 			"ItemMap",
 			"ItemCompass",
@@ -215,7 +215,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"TWC_Vest_WW2_Sten",
+			"TWC_Vest_WW2_Para_Sten",
 			"fow_h_uk_mk2_para",
 			"ItemMap",
 			"ItemCompass",
@@ -264,7 +264,7 @@
 		};
 		linkedItems[]=
 		{
-			"TWC_Vest_WW2_Sten",
+			"TWC_Vest_WW2_Para_Sten",
 			"fow_h_uk_mk2_para_camo",
 			"ItemMap",
 			"ItemCompass",
@@ -272,7 +272,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"TWC_Vest_WW2_Sten",
+			"TWC_Vest_WW2_Para_Sten",
 			"fow_h_uk_mk2_para_camo",
 			"ItemMap",
 			"ItemCompass",
@@ -413,7 +413,7 @@
 		uniformClass="fow_u_uk_parasmock";
 		linkedItems[]=
 		{
-        "TWC_Vest_WW2_Bren",
+        "TWC_Vest_WW2_Para_Bren",
 		"fow_h_uk_mk2_para",
 		"ItemMap",
 		"ItemCompass",
@@ -421,7 +421,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "TWC_Vest_WW2_Bren",
+        "TWC_Vest_WW2_Para_Bren",
 		"fow_h_uk_mk2_para",
 		"ItemMap",
 		"ItemCompass",
@@ -464,7 +464,7 @@
 		backpack="TWC_Backpack_WW2_MGASS";
 		linkedItems[]=
 		{
-			"TWC_Vest_WW2_Bren",
+			"TWC_Vest_WW2_Para_Bren",
 			"fow_h_uk_mk2_para",
 			"ItemMap",
 			"ItemCompass",

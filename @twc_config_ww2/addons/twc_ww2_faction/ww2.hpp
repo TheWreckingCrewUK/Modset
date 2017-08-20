@@ -6,7 +6,7 @@
 		editorSubcategory = "Men_WW2";
 		vehicleClass="Men_WW2";
 		nakedUniform="U_BasicBody";
-		uniformClass="fow_u_uk_parasmock";
+		uniformClass="fow_u_uk_bd40_01_private";
 		linkedItems[]=
 		{
         "TWC_Vest_WW2_Base",
