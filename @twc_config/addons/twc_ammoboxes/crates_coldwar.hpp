@@ -69,17 +69,14 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_ColdWar";
 	
 	class TransportItems {
-		item_nc(DemoCharge_Remote_Mag, 5);
-		item_nc(ACE_Clacker, 5);
+		item_nc(ACE_fieldDressing, 32);
+		item_nc(ACE_elasticBandage, 32);
+		item_nc(ACE_quikclot, 32);
+		item_nc(ACE_packingBandage, 32);
 		
-		item_nc(ACE_fieldDressing, 16);
-		item_nc(ACE_elasticBandage, 16);
-		item_nc(ACE_quikclot, 16);
-		item_nc(ACE_packingBandage, 16);
-		
-		item_nc(ACE_morphine, 8);
-		item_nc(ACE_epinephrine, 8);
-		item_nc(ACE_tourniquet, 8);
+		item_nc(ACE_morphine, 16);
+		item_nc(ACE_epinephrine, 16);
+		item_nc(ACE_tourniquet, 16);
 	};
 	
 	class TransportMagazines {
@@ -112,9 +109,9 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 		maga_nc(CUP_HandGrenade_L109A2_HE, 5);
 	};
 	
-	class TransportWeapons {
+	/* class TransportWeapons {
 		weap_nc(ukcw_L1A1_law, 1);
-	};
+	}; */
 };
 
 class TWC_AmmoBox_ColdWar_Sniper_Portable: TWC_AmmoBox_Portable {
