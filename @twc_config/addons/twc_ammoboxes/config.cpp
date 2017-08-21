@@ -101,6 +101,14 @@ class CfgEditorSubcategories {
 		displayName = "Other";
 	};
 	
+	class TWC_Crates_Launchers {
+		displayName = "Launchers";
+	};
+	
+	class TWC_Crates_Training {
+		displayName = "Training";
+	};
+	
 	// Future Possibility, Training Crates? These could just be the weapons/items.
 	// For the moment, I can use the op ones in conjunction with the spawn scripts.
 };
