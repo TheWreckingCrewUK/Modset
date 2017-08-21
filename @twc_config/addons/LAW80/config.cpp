@@ -27,7 +27,7 @@ class CfgWeapons
 		model = "\law80\law80.p3d";
 		picture = "\law80\data\law80.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
-		modelOptics = "\CUP\Weapons\CUP_Weapons_Metis_AT_13\CUP_2Dscope_Metis.p3d";
+		modelOptics = "\law80\TWC_2Dscope_LAW80.p3d";
 		opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
 		cursorAim = "\a3\weapons_f\data\clear_empty";
 		cursor = "missile";
@@ -40,7 +40,7 @@ class CfgWeapons
 		distanceZoomMax = 400;
 		discreteDistance[] = {50,100,150,200,250,300,350,400};
 		discreteDistanceInitIndex = 0;
-		magazines[] = {"CUP_M136_M"};
+		magazines[] = {"ukf_law80"};
 		jsrs_soundeffect = "JSRS2_Distance_Effects_Launcher";
 		AGM_Backblast_Angle = 45;
 		AGM_Backblast_Range = 100;
@@ -103,7 +103,10 @@ class CfgWeapons
 class CfgAmmo
 {
 	class CUP_R_M136_AT;
-	class UKF_LAW80Rocket: CUP_R_M136_AT{};
+	class UKF_LAW80Rocket: CUP_R_M136_AT
+	{
+		hit = 950;		
+	};
 };
 class CfgMagazines
 {
