@@ -84,14 +84,14 @@ class TWC_AmmoBox_Modern_Section_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_Modern";
 	
 	class TransportItems {
-		item_nc(ACE_fieldDressing, 16);
-		item_nc(ACE_elasticBandage, 16);
-		item_nc(ACE_quikclot, 16);
-		item_nc(ACE_packingBandage, 16);
+		item_nc(ACE_fieldDressing, 12);
+		item_nc(ACE_elasticBandage, 12);
+		item_nc(ACE_quikclot, 12);
+		item_nc(ACE_packingBandage, 12);
 		
-		item_nc(ACE_morphine, 16);
-		item_nc(ACE_epinephrine, 16);
-		item_nc(ACE_tourniquet, 8);
+		item_nc(ACE_morphine, 12);
+		item_nc(ACE_epinephrine, 12);
+		item_nc(ACE_tourniquet, 6);
 	};
 	
 	class TransportMagazines {
@@ -221,14 +221,14 @@ class TWC_AmmoBox_Modern_COIN_Section_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_Modern";
 	
 	class TransportItems {
-		item_nc(ACE_fieldDressing, 16);
-		item_nc(ACE_elasticBandage, 16);
-		item_nc(ACE_quikclot, 16);
-		item_nc(ACE_packingBandage, 16);
+		item_nc(ACE_fieldDressing, 12);
+		item_nc(ACE_elasticBandage, 12);
+		item_nc(ACE_quikclot, 12);
+		item_nc(ACE_packingBandage, 12);
 		
-		item_nc(ACE_morphine, 16);
-		item_nc(ACE_epinephrine, 16);
-		item_nc(ACE_tourniquet, 8);
+		item_nc(ACE_morphine, 12);
+		item_nc(ACE_epinephrine, 12);
+		item_nc(ACE_tourniquet, 6);
 	};
 	
 	class TransportMagazines {
