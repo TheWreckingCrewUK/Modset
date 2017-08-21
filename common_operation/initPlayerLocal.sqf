@@ -7,10 +7,10 @@ if(!isNil "completedTasks")then{
 };
 
 if(isMultiplayer)then{
-	playMusic "Theme";
-	titleCut ["", "BLACK FADED", 999];
 		[] Spawn {
 		waitUntil{!(isNil "BIS_fnc_init")};
+		playMusic "Theme";
+		titleCut ["", "BLACK FADED", 999];
 		
 		titleText ["The Wrecking Crew","PLAIN DOWN"]; 
 		titleFadeOut 7;
@@ -44,5 +44,6 @@ if(isMultiplayer)then{
 			player unassignItem "itemMap"; 
 			player removeItem "itemMap"; 
 		};
+		1 enableChannel false;		
 	};
 };
