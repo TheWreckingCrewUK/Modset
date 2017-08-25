@@ -144,52 +144,52 @@
 			"Throw",
 			"Put",
 			"Binocular",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"Binocular",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 		magazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1"
 		};
 		Respawnmagazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1"
 
@@ -278,22 +278,22 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 		magazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren",
 			"fow_e_no36mk1",
@@ -304,12 +304,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren",
 			"fow_e_no36mk1",
@@ -374,22 +374,22 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 		magazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1",
 			"fow_30Rnd_303_bren",
@@ -397,12 +397,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1",
 			"fow_30Rnd_303_bren",
@@ -481,13 +481,13 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 		linkedItems[]=
 		{
@@ -507,12 +507,12 @@
 		};
 		magazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1",
 			"fow_30Rnd_303_bren",
@@ -520,12 +520,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1",
 			"fow_30Rnd_303_bren",
