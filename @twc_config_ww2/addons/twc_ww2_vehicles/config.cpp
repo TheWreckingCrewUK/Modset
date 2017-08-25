@@ -32,7 +32,7 @@ class CfgVehicles
 			};
 			class _xx_fow_10Rnd_303
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count=36;
 			};
 			class _xx_fow_30Rnd_303_bren
@@ -94,7 +94,7 @@ class CfgVehicles
 			};
 			class _xx_fow_10Rnd_303
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count=54;
 			};
 			class _xx_fow_30Rnd_303_bren
