@@ -1349,7 +1349,7 @@
 	};
 	class Modern_British_2IC_COIN: Modern_British_Pointman
 	{
-		displayName="Grenadier (Modern COIN)";
+		displayName="2IC (Modern COIN)";
 		backpack="TWC_Backpack_Modern_2IC";
 		linkedItems[]=
 		{

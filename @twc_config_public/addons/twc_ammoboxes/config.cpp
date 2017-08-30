@@ -14,9 +14,31 @@ class CfgPatches
 		};
 	};
 };
+class cfgWeapons
+{
+	class ItemCore;
+	class InventoryItem_Base_F;
+	class ACE_ItemCore;
+	class TWC_ForwardBase_Supplies: ACE_ItemCore
+	{
+		scope = 2;
+		displayName = "Supplies";
+		descriptionShort = "Supplies for the forward Base";
+		class ItemInfo: InventoryItem_Base_F
+		{
+			mass = 1;
+		};
+	};
+};
 class CfgVehicles
 {
 	class B_supplyCrate_F;
+	class Box_NATO_AmmoVeh_F;
+	class Land_BagFence_Corner_F;
+	class Land_BagFence_Long_F;
+	class Land_BagFence_Short_F;
+	class Land_BagFence_End_F;
+	class Land_BagFence_Round_F;
 	class twc_forwardBase_BritishAmmoBox:B_supplyCrate_F
 	{
 		displayname = "TWC forwardBase BritishAmmobox";
@@ -133,6 +155,59 @@ class CfgVehicles
 		class transportbackpacks
 		{
 			
+		};
+	};
+	class twc_SuppliesBox: Box_NATO_AmmoVeh_F
+	{
+		displayName = "TWC Supply Box";
+		ace_dragging_canDrag = 1;
+		scope = 2;
+		class ACE_Actions{
+			class ACE_MainActions{
+				selection = "";
+				distance = 2;
+				condition = "true";
+				position = "[0,0,0.4]";
+				class twc_spawnSandbagCorner{
+					displayName = "Sandbag Corner";
+					condition = "true";
+					statement = "_sandbag = ""Land_BagFence_Corner_F"" createVehicle (position this); [_sandbag,true] call ace_dragging_fnc_setCarryable";
+                    icon = "";
+				};
+				class twc_spawnSandbagLong{
+					displayName = "Sandbag Long";
+					condition = "true";
+					statement = "_sandbag = ""Land_BagFence_Long_F"" createVehicle (position this); [_sandbag,true] call ace_dragging_fnc_setCarryable";
+                    icon = "";
+				};
+				class twc_spawnSandbagShort{
+					displayName = "Sandbag Short";
+					condition = "true";
+					statement = "_sandbag = ""Land_BagFence_Short_F"" createVehicle (position this); [_sandbag,true] call ace_dragging_fnc_setCarryable";
+                    icon = "";
+				};
+				class twc_spawnSandbagEnd{
+					displayName = "Sandbag End";
+					condition = "true";
+					statement = "_sandbag = ""Land_BagFence_End_F"" createVehicle (position this); [_sandbag,true] call ace_dragging_fnc_setCarryable";
+                    icon = "";
+				};
+				class twc_spawnSandbagRound{
+					displayName = "Sandbag Round";
+					condition = "true";
+					statement = "_sandbag = ""Land_BagFence_Round_F"" createVehicle (position this); [_sandbag,true] call ace_dragging_fnc_setCarryable";
+                    icon = "";
+				};
+				
+			};
+		};
+		class transportItems
+		{
+			class _xx_supplies
+			{
+				name = "TWC_ForwardBase_Supplies";
+				count = 2000;
+			};
 		};
 	};
 };
