@@ -14,6 +14,7 @@ class CfgPatches
 		};
 	};
 };
+class EventHandlers;
 class cfgFunctions
 {
 	class TWC
@@ -38,7 +39,10 @@ class CfgVehicles
 		ace_dragging_dragPosition[] = {0,1.2,0};
 		ace_cargo_size = 1;
 		ace_cargo_canLoad = 1;
-		twc_forwardBaseDeployed = false;
+		class EventHandlers: EventHandlers
+		{
+			init = "(_this select 0) setVariable [""twc_forwardBaseDeployed"",false]";
+		};
 		class ACE_Actions{
 			class ACE_MainActions{
 				selection = "";
