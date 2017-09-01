@@ -21,4 +21,4 @@ deleteVehicle ForwardBaseTent;
 ForwardBasePos = nil;
 
 _ground = "groundWeaponHolder" createVehicle (position _unit);
-_ground addWeaponCargo ["twc_fieldTent",1];
+_ground addWeaponCargoGlobal ["twc_fieldTent",1];

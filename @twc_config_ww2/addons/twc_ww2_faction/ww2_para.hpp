@@ -1,24 +1,24 @@
-	class Early_ColdWar_Base: I_Soldier_F
+	class WW2_Para_British_Base: I_Soldier_F
 	{
 		scope=1;
 		displayName="Base";
 		faction="twc_faction_independent";
-		editorSubcategory = "Men_1956";
-		vehicleClass="Men_1956";
+		editorSubcategory = "Men_WW2_Para";
+		vehicleClass="Men_WW2_Para";
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_parasmock";
 		linkedItems[]=
 		{
-        "TWC_Vest_WW2_Base",
-		"fow_h_uk_mk2",
+        "TWC_Vest_WW2_Para_Base",
+		"fow_h_uk_mk2_para",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "TWC_Vest_WW2_Base",
-		"fow_h_uk_mk2",
+        "TWC_Vest_WW2_Para_Base",
+		"fow_h_uk_mk2_para",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -72,28 +72,28 @@
 			"ACE_tourniquet"
 		};
 	};
-	class Early_ColdWar_Platoon_Commander: Early_ColdWar_Base
+	class WW2_Para_British_Platoon_Commander: WW2_Para_British_Base
 	{
 		scope=2;
 		displayName="Platoon Commander";
-		uniformClass="fow_u_uk_bd40_01_lieutenant";
-		backpack="TWC_Backpack_1956_SL";
+		uniformClass="fow_u_uk_parasmock";
+		backpack="TWC_Backpack_WW2_SL";
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{
-        "TWC_Vest_WW2_Officer",
-		"fow_h_uk_mk3",
+        "TWC_Vest_WW2_Para_Sten",
+		"fow_h_uk_mk2_para_camo",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "TWC_Vest_WW2_Officer",
-		"fow_h_uk_mk3",
+        "TWC_Vest_WW2_Para_Sten",
+		"fow_h_uk_mk2_para_camo",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -103,14 +103,16 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"fow_w_sten_mk2"
+		"fow_w_sten_mk5",
+		"TWC_No1Mk3SignalGun"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"Binocular",
-		"fow_w_sten_mk2"
+		"fow_w_sten_mk5",
+		"TWC_No1Mk3SignalGun"
 		};
 		magazines[]=
 		{
@@ -133,25 +135,27 @@
 		"SmokeShell"
 		};
 	};
-	class Early_ColdWar_Sergeant: Early_ColdWar_Platoon_Commander
+	class WW2_Para_British_Platoon_Sergeant: WW2_Para_British_Platoon_Commander
 	{
 		scope=2;
 		displayName="Platoon Sergeant";
-		uniformClass="fow_u_uk_bd40_01_sergeant";
-		backpack="TWC_Backpack_1956_Sergeant";
+		uniformClass="fow_u_uk_parasmock";
+		backpack="TWC_Backpack_WW2_Sergeant";
 		weapons[]=
 		{
 			"Throw",
 			"Put",
 			"Binocular",
-			"bnae_mk1_virtual"
+			"bnae_mk1_virtual",
+			"TWC_No1Mk3SignalGun"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"Binocular",
-			"bnae_mk1_virtual"
+			"bnae_mk1_virtual",
+			"TWC_No1Mk3SignalGun"
 		};
 		magazines[]=
 		{
@@ -195,24 +199,24 @@
 
 		};
 	};
-	class Early_ColdWar_Medic: Early_ColdWar_Base
+	class WW2_Para_British_Medic: WW2_Para_British_Base
 	{
 		scope=2;
 		displayName="Medic";
-		uniformClass="fow_u_uk_bd40_01_private";
+		uniformClass="fow_u_uk_parasmock";
 		backpack="TWC_Backpack_WW2_Medic";
 		linkedItems[]=
 		{
-			"TWC_Vest_WW2_Sten",
-			"fow_h_uk_mk2",
+			"TWC_Vest_WW2_Para_Sten",
+			"fow_h_uk_mk2_para",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"TWC_Vest_WW2_Sten",
-			"fow_h_uk_mk2",
+			"TWC_Vest_WW2_Para_Sten",
+			"fow_h_uk_mk2_para",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -221,13 +225,13 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_sten_mk2"
+			"fow_w_sten_mk5"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_sten_mk2"
+			"fow_w_sten_mk5"
 		};
 		magazines[]=
 		{
@@ -246,30 +250,30 @@
 			"SmokeShell"
 		};
 	};
-	class Early_ColdWar_Section_Leader: Early_ColdWar_Base
+	class WW2_Para_British_Section_Commander: WW2_Para_British_Base
 	{
 		scope=2;
 		displayName="Section Commander";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="fow_u_uk_bd40_01_corporal";
-		backpack="TWC_Backpack_1956_SL";
+		uniformClass="fow_u_uk_parasmock";
+		backpack="TWC_Backpack_WW2_SL";
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		linkedItems[]=
 		{
-			"TWC_Vest_WW2_Sten",
-			"fow_h_uk_mk2_net",
+			"TWC_Vest_WW2_Para_Sten",
+			"fow_h_uk_mk2_para_camo",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"TWC_Vest_WW2_Sten",
-			"fow_h_uk_mk2_net",
+			"TWC_Vest_WW2_Para_Sten",
+			"fow_h_uk_mk2_para_camo",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -278,22 +282,24 @@
 		{
 			"Throw",
 			"Put",
-			"bnae_mk1_virtual"
+			"fow_w_sten_mk5",
+			"TWC_No1Mk3SignalGun"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"bnae_mk1_virtual"
+			"fow_w_sten_mk5",
+			"TWC_No1Mk3SignalGun"
 		};
 		magazines[]=
 		{
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
 			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren",
 			"fow_e_no36mk1",
@@ -304,12 +310,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
 			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren",
 			"fow_e_no36mk1",
@@ -319,31 +325,40 @@
 			"SmokeShell"
 		};
 	};
-	class EarlyColdWar_Rifleman: Early_ColdWar_Base
+	class WW2_Para_British_Rifleman: WW2_Para_British_Base
 	{
 		scope=2;
 		displayName="Rifleman";
-		uniformClass="fow_u_uk_bd40_01_private";
+		uniformClass="fow_u_uk_parasmock";
 		weapons[]=
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L1A1_Wood"
+			"bnae_mk1_virtual"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L1A1_Wood"
+			"bnae_mk1_virtual"
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1",
 			"fow_30Rnd_303_bren",
@@ -351,25 +366,32 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1",
-			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren"
 
 		};
 	};
-	class Early_ColdWar_2IC: Early_ColdWar_Base
+	class WW2_Para_British_2IC: WW2_Para_British_Rifleman
 	{
 		displayName="2IC";
-		uniformClass="fow_u_uk_bd40_01_lance_corporal";
-		backpack="TWC_Backpack_1956_2IC";
+		uniformClass="fow_u_uk_parasmock";
+		backpack="TWC_Backpack_WW2_2IC";
 		weapons[]=
 		{
 			"Throw",
@@ -382,52 +404,25 @@
 			"Put",
 			"bnae_mk1_virtual"
 		};
-		magazines[]=
-		{
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"fow_e_no36mk1",
-			"fow_e_no36mk1",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren"
-		};
-		Respawnmagazines[]=
-		{
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"fow_e_no36mk1",
-			"fow_e_no36mk1",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren"
-
-		};
 	};
-	class Early_ColdWar_MG: Early_ColdWar_Base
+	class WW2_Para_British_MG: WW2_Para_British_Base
 	{
 		scope=2;
 		displayName="Machine Gunner";
 		icon="iconManMG";
-		uniformClass="fow_u_uk_bd40_01_private";
+		uniformClass="fow_u_uk_parasmock";
 		linkedItems[]=
 		{
-        "TWC_Vest_WW2_Bren",
-		"fow_h_uk_mk2",
+        "TWC_Vest_WW2_Para_Bren",
+		"fow_h_uk_mk2_para",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "TWC_Vest_WW2_Bren",
-		"fow_h_uk_mk2",
+        "TWC_Vest_WW2_Para_Bren",
+		"fow_h_uk_mk2_para",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -451,11 +446,6 @@
 			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren"
 		};
 		Respawnmagazines[]=
@@ -465,34 +455,17 @@
 			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren",
 			"fow_30Rnd_303_bren"
 		};
 	};
-	class Early_ColdWar_MG_AS: Early_ColdWar_Base
+	class WW2_Para_British_MGASS: WW2_Para_British_Rifleman
 	{
 		displayName="Machine Gunner Assistant";
 		backpack="TWC_Backpack_WW2_MGASS";
-		weapons[]=
-		{
-			"Throw",
-			"Put",
-			"bnae_mk1_virtual"
-		};
-		respawnweapons[]=
-		{
-			"Throw",
-			"Put",
-			"bnae_mk1_virtual"
-		};
 		linkedItems[]=
 		{
-			"TWC_Vest_WW2_Bren",
-			"fow_h_uk_mk2",
+			"TWC_Vest_WW2_Para_Bren",
+			"fow_h_uk_mk2_para",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -500,58 +473,27 @@
 		respawnLinkedItems[]=
 		{
 			"fow_v_uk_bren",
-			"fow_h_uk_mk2",
+			"fow_h_uk_mk2_para",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
-		magazines[]=
-		{
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"fow_e_no36mk1",
-			"fow_e_no36mk1",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren"
-		};
-		Respawnmagazines[]=
-		{
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"fow_e_no36mk1",
-			"fow_e_no36mk1",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren"
-
-		};
 	};
-	class Early_ColdWar_AT: Early_ColdWar_Base
+	class WW2_Para_British_Carrier_SMG: WW2_Para_British_Rifleman
 	{
-		scope=2;
-		displayName="AT Gunner";
-		uniformClass="fow_u_uk_bd40_01_private";
-		backpack="TWC_Backpack_1956_AT";
+		displayName="Auxiliary (SMG)";
+		backpack="TWC_Backpack_WW2_Base";
 		weapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_sten_mk2",
-			"fow_w_m1a1_bazooka"
+			"fow_w_sten_mk5"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_sten_mk2",
-			"fow_w_m1a1_bazooka"
+			"fow_w_sten_mk5"
 		};
 		magazines[]=
 		{
@@ -559,7 +501,9 @@
 			"fow_32Rnd_9x19_sten",
 			"fow_32Rnd_9x19_sten",
 			"fow_32Rnd_9x19_sten",
-			"fow_1Rnd_m6a1"
+			"fow_32Rnd_9x19_sten",
+			"fow_32Rnd_9x19_sten",
+			"fow_e_no36mk1"
 		};
 		Respawnmagazines[]=
 		{
@@ -567,41 +511,8 @@
 			"fow_32Rnd_9x19_sten",
 			"fow_32Rnd_9x19_sten",
 			"fow_32Rnd_9x19_sten",
-			"fow_1Rnd_m6a1"
-
-		};
-	};
-	class Early_ColdWar_AT_Ass: EarlyColdWar_Rifleman
-	{
-		scope=2;
-		displayName="AT Gunner Assistant";
-		uniformClass="fow_u_uk_bd40_01_private";
-		backpack="TWC_Backpack_1956_AT";
-		weapons[]=
-		{
-			"Throw",
-			"Put",
-			"fow_w_sten_mk2"
-		};
-		respawnweapons[]=
-		{
-			"Throw",
-			"Put",
-			"fow_w_sten_mk2"
-		};
-		magazines[]=
-		{
 			"fow_32Rnd_9x19_sten",
 			"fow_32Rnd_9x19_sten",
-			"fow_32Rnd_9x19_sten",
-			"fow_32Rnd_9x19_sten"
-		};
-		Respawnmagazines[]=
-		{
-			"fow_32Rnd_9x19_sten",
-			"fow_32Rnd_9x19_sten",
-			"fow_32Rnd_9x19_sten",
-			"fow_32Rnd_9x19_sten"
-
+			"fow_e_no36mk1"
 		};
 	};

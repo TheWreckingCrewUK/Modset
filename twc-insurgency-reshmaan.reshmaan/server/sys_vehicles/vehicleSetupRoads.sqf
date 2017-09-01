@@ -13,7 +13,7 @@ _vehicleList = ["CUP_C_Datsun_Plain", "CUP_C_Skoda_Blue_CIV", "CUP_C_UAZ_Open_TK
 
 while {_vehicle < _amountToSpawn} do {
 	_roadPos = _roadList call BIS_fnc_selectRandom;
-	if(_roadPos distance2D (getMarkerPos "respawn_West") > 300)then{
+	if(_roadPos distance2D (getMarkerPos "base") > 300)then{
 		_selectVehicle = _vehicleList select (floor(random(count _vehicleList)));
 		_newVehicle = _selectVehicle createVehicle (getPos _roadPos);
 		_newVehicle addMPEventHandler ["MPKilled",{

@@ -80,7 +80,7 @@ class CfgVehicles {
 			maga_nc(fow_30Rnd_45acp, 9);
 
 			// Enfield .303 10rnd
-			maga_nc(fow_10Rnd_303, 30);
+			maga_nc(10Rnd_303_Magazine, 30);
 			
 			// Bren .303 30rnd
 			maga_nc(fow_30Rnd_303_bren, 15);
@@ -123,7 +123,7 @@ class CfgVehicles {
 			maga_nc(fow_30Rnd_45acp, 3);
 			
 			// Enfield .303 10rnd
-			maga_nc(fow_10Rnd_303, 18);
+			maga_nc(10Rnd_303_Magazine, 18);
 			
 			// Bren .303 30rnd
 			maga_nc(fow_30Rnd_303_bren, 6);
@@ -159,7 +159,7 @@ class CfgVehicles {
 			maga_nc(fow_32Rnd_9x19_sten, 9);
 			
 			// Enfield .303 10rnd
-			maga_nc(fow_10Rnd_303, 30);
+			maga_nc(10Rnd_303_Magazine, 30);
 			
 			// Bren .303 30rnd
 			maga_nc(fow_30Rnd_303_bren, 12);
@@ -202,7 +202,7 @@ class CfgVehicles {
 			maga_nc(fow_32Rnd_9x19_sten, 3);
 			
 			// Enfield .303 10rnd
-			maga_nc(fow_10Rnd_303, 18);
+			maga_nc(10Rnd_303_Magazine, 18);
 			
 			// Bren .303 30rnd
 			maga_nc(fow_30Rnd_303_bren, 6);

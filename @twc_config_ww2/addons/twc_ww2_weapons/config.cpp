@@ -28,7 +28,11 @@ class CfgWeapons
 	class fow_v_uk_sten;
 	class fow_v_uk_bren;
 	class fow_v_uk_officer;
-	
+
+	class fow_v_uk_para_base;
+	class fow_v_uk_para_bren;
+	class fow_v_uk_para_sten;
+
 	class TWC_Bren: fow_w_bren
 	{
 		
@@ -83,6 +87,36 @@ class CfgWeapons
             mass = 25; 
 			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_off.p3d";
         };
+	};
+	class TWC_Vest_WW2_Para_Base: fow_v_uk_para_base
+	{
+		scope = 1;
+		class ItemInfo: VestItem
+        {
+			containerClass = Supply140;
+            mass = 25;
+			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_para_pouch_base_blanco.p3d";
+        };		
+	};
+	class TWC_Vest_WW2_Para_Bren: fow_v_uk_para_bren
+	{
+		scope = 1;
+		class ItemInfo: VestItem
+        {
+            containerClass = Supply160; 
+            mass = 30;
+			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_para_pouch_bren_blanco.p3d";
+        };		
+	};
+	class TWC_Vest_WW2_Para_Sten: fow_v_uk_para_sten
+	{
+		scope = 1;
+		class ItemInfo: VestItem
+        {
+            containerClass = Supply140; 
+            mass = 30;
+			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_para_pouch_sten_blanco.p3d";
+        };		
 	};
 };
 
@@ -301,7 +335,7 @@ class CfgVehicles
 		{
 			class _XX_Enfield_Mag
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count= 10;
 			};
 			class _XX_Bren_Mag
@@ -348,7 +382,7 @@ class CfgVehicles
 		{
 			class _XX_Enfield_Mag
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count= 5;
 			};
 			class _XX_Bren_Mag
@@ -390,7 +424,7 @@ class CfgVehicles
 		{
 			class _XX_Enfield_Mag
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count= 2;
 			};
 			class _xx_UK3CB_BAF_762_20Rnd
@@ -427,7 +461,7 @@ class CfgVehicles
 			};
 			class _XX_Enfield_Mag
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count= 2;
 			};
 			class _XX_Bren_Mag
@@ -458,7 +492,7 @@ class CfgVehicles
 		{
 			class _XX_Enfield_Mag
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count=200;
 			};
 			class _XX_Bren_Mag

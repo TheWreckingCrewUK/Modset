@@ -1,1 +1,0 @@
-#include "entityKilled.sqf";
