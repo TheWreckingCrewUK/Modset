@@ -146,7 +146,7 @@
 			"Throw",
 			"Put",
 			"Binocular",
-			"fow_w_leeenfield_no4mk1",
+			"bnae_mk1_virtual",
 			"TWC_No1Mk3SignalGun"
 		};
 		respawnweapons[]=
@@ -154,46 +154,46 @@
 			"Throw",
 			"Put",
 			"Binocular",
-			"fow_w_leeenfield_no4mk1",
+			"bnae_mk1_virtual",
 			"TWC_No1Mk3SignalGun"
 		};
 		magazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1"
 		};
 		Respawnmagazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1"
 
@@ -334,31 +334,31 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 		magazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1",
 			"fow_30Rnd_303_bren",
@@ -366,21 +366,21 @@
 		};
 		Respawnmagazines[]=
 		{
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
-			"fow_10Rnd_303",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
 			"fow_e_no36mk1",
 			"fow_e_no36mk1",
 			"fow_30Rnd_303_bren"
@@ -396,13 +396,13 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_leeenfield_no4mk1"
+			"bnae_mk1_virtual"
 		};
 	};
 	class WW2_British_MG: WW2_British_Base

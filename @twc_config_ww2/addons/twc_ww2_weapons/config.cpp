@@ -335,7 +335,7 @@ class CfgVehicles
 		{
 			class _XX_Enfield_Mag
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count= 10;
 			};
 			class _XX_Bren_Mag
@@ -382,7 +382,7 @@ class CfgVehicles
 		{
 			class _XX_Enfield_Mag
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count= 5;
 			};
 			class _XX_Bren_Mag
@@ -424,7 +424,7 @@ class CfgVehicles
 		{
 			class _XX_Enfield_Mag
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count= 2;
 			};
 			class _xx_UK3CB_BAF_762_20Rnd
@@ -461,7 +461,7 @@ class CfgVehicles
 			};
 			class _XX_Enfield_Mag
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count= 2;
 			};
 			class _XX_Bren_Mag
@@ -492,7 +492,7 @@ class CfgVehicles
 		{
 			class _XX_Enfield_Mag
 			{
-				magazine="fow_10Rnd_303";
+				magazine="10Rnd_303_Magazine";
 				count=200;
 			};
 			class _XX_Bren_Mag

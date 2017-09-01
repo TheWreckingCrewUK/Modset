@@ -192,14 +192,14 @@ class cfgVehicles
 			class aiRange
 			{
 				displayName="AI Range";
-				description="Range at which AI will Cache";
+				description="Range at which AI will Cache 0 to Disable";
 				typeName="NUMBER";
 				defaultValue=1500;
 			};
 			class vehicleRange
 			{
 				displayName="Vehicle Caching";
-				description="Range at which vehicles will Cache";
+				description="Range at which vehicles will Cache 0 to Disable";
 				typeName="NUMBER";
 				defaultValue=2000;
 			};
