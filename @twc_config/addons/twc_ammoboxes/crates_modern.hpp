@@ -70,11 +70,6 @@ class TWC_AmmoBox_Modern_Base: TWC_AmmoBox_Base {
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 25);
 	};
-	
-	class TransportWeapons {
-		weap_nc(launch_NLAW_F, 4);
-		weap_nc(ukcw_L1A1_law, 6);
-	};
 };
 
 class TWC_AmmoBox_Modern_Section_Portable: TWC_AmmoBox_Portable {
@@ -84,14 +79,14 @@ class TWC_AmmoBox_Modern_Section_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_Modern";
 	
 	class TransportItems {
-		item_nc(ACE_fieldDressing, 16);
-		item_nc(ACE_elasticBandage, 16);
-		item_nc(ACE_quikclot, 16);
-		item_nc(ACE_packingBandage, 16);
+		item_nc(ACE_fieldDressing, 12);
+		item_nc(ACE_elasticBandage, 12);
+		item_nc(ACE_quikclot, 12);
+		item_nc(ACE_packingBandage, 12);
 		
-		item_nc(ACE_morphine, 16);
-		item_nc(ACE_epinephrine, 16);
-		item_nc(ACE_tourniquet, 8);
+		item_nc(ACE_morphine, 12);
+		item_nc(ACE_epinephrine, 12);
+		item_nc(ACE_tourniquet, 6);
 	};
 	
 	class TransportMagazines {
@@ -134,11 +129,6 @@ class TWC_AmmoBox_Modern_Section_Portable: TWC_AmmoBox_Portable {
 
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 6);
-	};
-	
-	class TransportWeapons {
-		weap_nc(launch_NLAW_F, 1);
-		weap_nc(ukcw_L1A1_law, 2);
 	};
 };
 
@@ -207,11 +197,6 @@ class TWC_AmmoBox_Modern_COIN_Base: TWC_AmmoBox_Base {
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 25);
 	};
-	
-	class TransportWeapons {
-		weap_nc(launch_NLAW_F, 1);
-		weap_nc(ukcw_L1A1_law, 2);
-	};
 };
 
 class TWC_AmmoBox_Modern_COIN_Section_Portable: TWC_AmmoBox_Portable {
@@ -221,14 +206,14 @@ class TWC_AmmoBox_Modern_COIN_Section_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_Modern";
 	
 	class TransportItems {
-		item_nc(ACE_fieldDressing, 16);
-		item_nc(ACE_elasticBandage, 16);
-		item_nc(ACE_quikclot, 16);
-		item_nc(ACE_packingBandage, 16);
+		item_nc(ACE_fieldDressing, 12);
+		item_nc(ACE_elasticBandage, 12);
+		item_nc(ACE_quikclot, 12);
+		item_nc(ACE_packingBandage, 12);
 		
-		item_nc(ACE_morphine, 16);
-		item_nc(ACE_epinephrine, 16);
-		item_nc(ACE_tourniquet, 8);
+		item_nc(ACE_morphine, 12);
+		item_nc(ACE_epinephrine, 12);
+		item_nc(ACE_tourniquet, 6);
 	};
 	
 	class TransportMagazines {
@@ -275,11 +260,6 @@ class TWC_AmmoBox_Modern_COIN_Section_Portable: TWC_AmmoBox_Portable {
 
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 6);
-	};
-	
-	class TransportWeapons {
-		weap_nc(launch_NLAW_F, 1);
-		weap_nc(ukcw_L1A1_law, 2);
 	};
 };
 
@@ -340,11 +320,6 @@ class TWC_AmmoBox_Modern_Mechanised_Base: TWC_AmmoBox_Base {
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 25);
 	};
-	
-	class TransportWeapons {
-		weap_nc(launch_NLAW_F, 4);
-		weap_nc(ukcw_L1A1_law, 6);
-	};
 };
 
 class TWC_AmmoBox_Modern_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
@@ -404,11 +379,6 @@ class TWC_AmmoBox_Modern_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 6);
-	};
-	
-	class TransportWeapons {
-		weap_nc(launch_NLAW_F, 1);
-		weap_nc(ukcw_L1A1_law, 2);
 	};
 };
 

@@ -39,8 +39,12 @@ class CfgPatches {
 			"TWC_AmmoBox_Other_L134_Portable",
 			"TWC_AmmoBox_Other_L111_Portable",
 			"TWC_AmmoBox_Other_L7A2_Portable",
-			"TWC_AmmoBox_Other_L14_Portable",
 			"TWC_AmmoBox_Other_L16_Portable",
+			"TWC_AmmoBox_Launchers_L14_Portable",
+			"TWC_AmmoBox_Launchers_L1A1_Portable",
+			"TWC_AmmoBox_Launchers_LAW80_Portable",
+			"TWC_AmmoBox_Launchers_L2A1_Portable",
+			"TWC_AmmoBox_Launchers_NLAW_Portable",
 			"TWC_AmmoBox_Other_Stinger_Portable",
 			"TWC_AmmoBox_Other_Command_Portable",
 			"TWC_AmmoBox_Other_Pallet",
@@ -65,6 +69,53 @@ class CfgPatches {
 		projectName = "TWC";
 		author = "Bosenator";
 	};
+};
+
+class CfgEditorCategories {
+	class TWC_Crates {
+		displayName = "Ammo Boxes (TWC)"; 
+	};
+};
+
+class CfgEditorSubcategories {
+	/*
+		Each ERA has an ERA/Mechanised (where necessary) specific:
+			Base Crate
+			Section & Attachment Resupply Crates (Portable)
+
+		Vehicle contains vehicle resupply (i.e. warrior ammo)
+		Other contains non-era specific crates and the pallet for air-lifting/dropping
+	*/
+	class TWC_Crates_Modern {
+		displayName = "Modern";
+	};
+	
+	class TWC_Crates_Millennial {
+		displayName = "Millennial";
+	};
+	
+	class TWC_Crates_ColdWar {
+		displayName = "Cold War";
+	};
+	
+	class TWC_Crates_Vehicles {
+		displayName = "Vehicles";
+	};
+	
+	class TWC_Crates_Other {
+		displayName = "Other";
+	};
+	
+	class TWC_Crates_Launchers {
+		displayName = "Launchers";
+	};
+	
+	class TWC_Crates_Training {
+		displayName = "Training";
+	};
+	
+	// Future Possibility, Training Crates? These could just be the weapons/items.
+	// For the moment, I can use the op ones in conjunction with the spawn scripts.
 };
 
 class CfgVehicles {
