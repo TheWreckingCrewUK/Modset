@@ -28,9 +28,13 @@ class CfgPatches {
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Woodland",
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Desert",
 			"TWC_Vehicle_Generic_LandRoverAmbulance_UN",
+			"TWC_Vehicle_Generic_FV432Ambulance_Woodland",
+			"TWC_Vehicle_Generic_FV432Ambulance_Desert",
 			"TWC_Vehicle_Generic_Hercules_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF_VIV",
+			"TWC_Vehicle_Generic_RHIB_Black",
+			"TWC_Vehicle_Generic_Zodiac_Black",
 			
 			"TWC_Vehicle_ColdWar_LandRover_Woodland",
 			"TWC_Vehicle_ColdWar_LandRover_Desert",
