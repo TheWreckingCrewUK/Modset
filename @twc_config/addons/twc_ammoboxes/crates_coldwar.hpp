@@ -38,13 +38,7 @@ class TWC_AmmoBox_ColdWar_Base: TWC_AmmoBox_Base {
 		maga_nc(UK3CB_BAF_762_100Rnd_T, 4);
 		
 		maga_nc(ACE_HandFlare_White, 10);
-		
-		// L14A1 Recoilless Rifle - Carl Gustav
-		maga_nc(ukcw_l14a1_HEAT, 4);
-		maga_nc(ukcw_l14a1_HE, 4);
-		maga_nc(ukcw_l14a1_ILLUM, 10);
-		maga_nc(ukcw_l14a1_SMOKE, 10);
-		
+
 		// Smoke Grenades
 		maga_nc(SmokeShell, 30);
 		maga_nc(SmokeShellRed, 10);
@@ -54,10 +48,6 @@ class TWC_AmmoBox_ColdWar_Base: TWC_AmmoBox_Base {
 		
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 30);
-	};
-	
-	class TransportWeapons {
-		weap_nc(ukcw_L1A1_law, 4);
 	};
 };
 
@@ -69,17 +59,14 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_ColdWar";
 	
 	class TransportItems {
-		item_nc(DemoCharge_Remote_Mag, 5);
-		item_nc(ACE_Clacker, 5);
+		item_nc(ACE_fieldDressing, 12);
+		item_nc(ACE_elasticBandage, 12);
+		item_nc(ACE_quikclot, 12);
+		item_nc(ACE_packingBandage, 12);
 		
-		item_nc(ACE_fieldDressing, 16);
-		item_nc(ACE_elasticBandage, 16);
-		item_nc(ACE_quikclot, 16);
-		item_nc(ACE_packingBandage, 16);
-		
-		item_nc(ACE_morphine, 8);
-		item_nc(ACE_epinephrine, 8);
-		item_nc(ACE_tourniquet, 8);
+		item_nc(ACE_morphine, 12);
+		item_nc(ACE_epinephrine, 12);
+		item_nc(ACE_tourniquet, 6);
 	};
 	
 	class TransportMagazines {
@@ -92,15 +79,9 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 		// L7A1 GPMG
 		maga_nc(UK3CB_BAF_762_100Rnd, 4);
 		maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
-		
+
 		maga_nc(ACE_HandFlare_White, 2);
-		
-		// L14A1 Recoilless Rifle - Carl Gustav
-		maga_nc(ukcw_l14a1_HEAT, 1);
-		maga_nc(ukcw_l14a1_HE, 1);
-		maga_nc(ukcw_l14a1_ILLUM, 4);
-		maga_nc(ukcw_l14a1_SMOKE, 4);
-		
+
 		// Smoke Grenades
 		maga_nc(SmokeShell, 10);
 		maga_nc(SmokeShellRed, 2);
@@ -110,10 +91,6 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 		
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 5);
-	};
-	
-	class TransportWeapons {
-		weap_nc(ukcw_L1A1_law, 1);
 	};
 };
 
@@ -136,6 +113,9 @@ class TWC_AmmoBox_ColdWar_Sniper_Portable: TWC_AmmoBox_Portable {
 	};
 	
 	// TODO: Waiting on UKCW to release L33 3nfi3ld Sn1p0r
+	class TransportMagazines {
+		maga_nc(ukcw_l42_10rnd_mag, 6);
+	};
 };
 
 class TWC_AmmoBox_ColdWar_Blowpipe_Portable: TWC_AmmoBox_Portable {

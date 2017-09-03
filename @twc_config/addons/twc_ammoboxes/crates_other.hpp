@@ -3,7 +3,7 @@
 "TWC_AmmoBox_Other_L134_Portable",   // GMG
 "TWC_AmmoBox_Other_L111_Portable",   // HMG
 "TWC_AmmoBox_Other_L7A2_Portable",   // GPMG
-"TWC_AmmoBox_Other_L14_Portable",    // recoilless rifle carl gustav
+"TWC_AmmoBox_Other_L14_Portable",    // recoilless rifle carl gustav ammo
 "TWC_AmmoBox_Other_L16_Portable",    // 81mm mortar
 "TWC_AmmoBox_Other_Stinger_Portable",
 "TWC_AmmoBox_Other_Command",         // radios, binos
@@ -68,7 +68,7 @@ class TWC_AmmoBox_Other_L7A2_Portable: TWC_AmmoBox_Portable {
 class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "L14 - Recoilless Rifle (Portable)";
+	displayName = "L14 - Recoilless Rifle Ammo (Portable)";
 	
 	class TransportMagazines {
 		maga_nc(ukcw_l14A1_HE, 2);
