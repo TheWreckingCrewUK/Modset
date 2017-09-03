@@ -49,12 +49,6 @@ class TWC_AmmoBox_Millennial_Base: TWC_AmmoBox_Base {
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 25);
 	};
-	
-	class TransportWeapons {
-		weap_nc(ukf_law80launcher, 12);
-		weap_nc(ukcw_L1A1_law, 12);
-		weap_nc(UK3CB_BAF_AT4_CS_AP_Launcher, 12);
-	};
 };
 
 class TWC_AmmoBox_Millennial_Section_Portable: TWC_AmmoBox_Portable {
@@ -95,11 +89,6 @@ class TWC_AmmoBox_Millennial_Section_Portable: TWC_AmmoBox_Portable {
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 6);
 	};
-	
-	/* class TransportWeapons {
-		weap_nc(ukcw_L1A1_law, 2);
-		weap_nc(UK3CB_BAF_AT4_CS_AP_Launcher, 2);
-	}; */
 };
 
 class TWC_AmmoBox_Millennial_Mechanised_Base: TWC_AmmoBox_Base {
@@ -143,12 +132,6 @@ class TWC_AmmoBox_Millennial_Mechanised_Base: TWC_AmmoBox_Base {
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 20);
 	};
-	
-	class TransportWeapons {
-		weap_nc(ukf_law80launcher, 8);
-		weap_nc(ukcw_L1A1_law, 8);
-		weap_nc(UK3CB_BAF_AT4_CS_AP_Launcher, 8);
-	};
 };
 
 class TWC_AmmoBox_Millennial_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
@@ -189,11 +172,6 @@ class TWC_AmmoBox_Millennial_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 		// Hand Grenade HE
 		maga_nc(CUP_HandGrenade_L109A2_HE, 4);
 	};
-	
-	/* class TransportWeapons {
-		weap_nc(ukcw_L1A1_law, 1);
-		weap_nc(UK3CB_BAF_AT4_CS_AP_Launcher, 1);
-	}; */
 };
 
 class TWC_AmmoBox_Millennial_Sniper_Portable: TWC_AmmoBox_Portable {
