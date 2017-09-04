@@ -80,7 +80,7 @@ class ace_medical_enableOverdosing {
     force = 1;
 };
 class ace_medical_bleedingCoefficient {
-    value = 0.5;
+    value = 0.6;
     typeName = "SCALAR";
     force = 1;
 };
