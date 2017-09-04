@@ -36,7 +36,7 @@ class CfgFunctions {
 	}; */
 };
 
-/* class CfgVehicles {
+class CfgVehicles {
 	class Man;
 	
 	class CAManBase: Man {
@@ -54,23 +54,53 @@ class CfgFunctions {
 			};
 		}; */
 		
-		/* class ACE_Actions {
+		class ACE_Actions {
+			class ACE_Torso {
+				class fieldDressing;
+				class Defib: fieldDressing {
+					displayName = "Defibrillate";
+					condition = "[_player, _target, 'body', 'CPR'] call twc_medical_fnc_canDefib";
+					statement = "[_player, _target, 'body', 'CPR'] call twc_medical_fnc_Defib";
+					icon = "";
+				};
+			};
+		
 			class ACE_MainActions {
 				class Medical {
-					class ACE_Medical_loadPatient {
-						statement = "[_player, _target] call twc_extra_fnc_actionLoadUnit";
+					class ACE_Torso {
+						class fieldDressing;
+						class Defib: fieldDressing {
+							displayName = "Defibrillate";
+							condition = "[_player, _target, 'body', 'CPR'] call twc_medical_fnc_canDefib";
+							statement = "[_player, _target, 'body', 'CPR'] call twc_medical_fnc_Defib";
+							icon = "";
+						};
 					};
 				};
+
+				/* class ACE_Medical_loadPatient {
+					statement = "[_player, _target] call twc_extra_fnc_actionLoadUnit";
+				}; */
 			};
 		};
 	};
-}; */
+};
 
 class ACE_Medical_Actions {
 	class Advanced {
 		class fieldDressing;
 		class CPR: fieldDressing {
 			callbackSuccess = "twc_medical_fnc_action";
+		};
+		
+		class Defib: CPR {
+			displayName = "Defibrillate";
+			displayNameProgress = "Defibrillating";
+			treatmentLocations[] = {"MedicalVehicle"};
+			allowedSelections[] = {"body"};
+			requiredMedic = 1;
+			treatmentTime = 10;
+			callbackSuccess = "twc_medical_fnc_action_Defib";
 		};
 		
 		class QuikClot: fieldDressing {
