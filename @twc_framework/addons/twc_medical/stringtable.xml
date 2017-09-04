@@ -2,13 +2,23 @@
 <Project name="adv">
     <Package name="aceCPR">
 		<Key ID="STR_TWC_CPR_COMPLETED">
-			<Original>%1 stabilized the patient with CPR</Original>
-			<English>%1 stabilized the patient with CPR</English>
+			<Original>%1 resuscitated the patient with CPR</Original>
+			<English>%1 resuscitated the patient with CPR</English>
 			<German>%1 hat den Patienten mit HLW stabilisiert</German>
 		</Key>
 		<Key ID="STR_TWC_CPR_EXECUE">
 			<Original>%1 performed CPR</Original>
 			<English>%1 performed CPR</English>
+			<German>%1 hat eine HLW durchgeführt</German>
+		</Key>
+		<Key ID="STR_TWC_DEFIB_COMPLETED">
+			<Original>%1 resuscitated the patient with defibrillators</Original>
+			<English>%1 resuscitated the patient with defibrillators</English>
+			<German>%1 hat den Patienten mit HLW stabilisiert</German>
+		</Key>
+		<Key ID="STR_TWC_DEFIB_EXECUE">
+			<Original>%1 was unsuccesful with their defibrillators</Original>
+			<English>%1 was unsuccesful with their defibrillators</English>
 			<German>%1 hat eine HLW durchgeführt</German>
 		</Key>
 	</Package>
