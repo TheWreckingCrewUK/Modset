@@ -17,11 +17,15 @@ class CfgFunctions {
 		class init {
 			file = "twc_medical\fncs";
 			class action {};
+			class action_Defib {};
 			class addTime {};
 			class init { postInit = 1; };
 			class canCPR {};
+			class canDefib {};
 			class CPR {};
 			class CPR_Local {};
+			class Defib {};
+			class Defib_Local {};
 			class getBloodLoss {};
 		};
 	};
@@ -59,8 +63,8 @@ class CfgVehicles {
 				class fieldDressing;
 				class Defib: fieldDressing {
 					displayName = "Defibrillate";
-					condition = "[_player, _target, 'body', 'CPR'] call twc_medical_fnc_canDefib";
-					statement = "[_player, _target, 'body', 'CPR'] call twc_medical_fnc_Defib";
+					condition = "[_player, _target] call twc_medical_fnc_canDefib";
+					statement = "[_player, _target] call twc_medical_fnc_Defib";
 					icon = "";
 				};
 			};
@@ -71,8 +75,8 @@ class CfgVehicles {
 						class fieldDressing;
 						class Defib: fieldDressing {
 							displayName = "Defibrillate";
-							condition = "[_player, _target, 'body', 'CPR'] call twc_medical_fnc_canDefib";
-							statement = "[_player, _target, 'body', 'CPR'] call twc_medical_fnc_Defib";
+							condition = "[_player, _target] call twc_medical_fnc_canDefib";
+							statement = "[_player, _target] call twc_medical_fnc_Defib";
 							icon = "";
 						};
 					};
