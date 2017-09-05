@@ -16,28 +16,31 @@ class CfgFunctions {
 		tag = "twc_medical";
 		class init {
 			file = "twc_medical\fncs";
-			class action {};
-			class action_Defib {};
+			// generics
 			class addTime {};
 			class init { postInit = 1; };
+			class getBloodLoss {};
+
+			// CPR
+			class action {};
 			class canCPR {};
-			class canDefib {};
 			class CPR {};
 			class CPR_Local {};
+
+			// Defib
+			class action_Defib {};
+			class canDefib {};
 			class Defib {};
 			class Defib_Local {};
-			class getBloodLoss {};
+			
+			// Patient Unload
+			// class actionLoadUnit {};
+			// class actionUnLoadUnit {};
+			
+			// Bloodlust Compat & Insta-Kill
+			class bloodlustInit {};
 		};
 	};
-	
-	/* class twc_extra {
-		tag = "twc_extra";
-		class init {
-			file = "twc_medical\extra";
-			class actionLoadUnit {};
-			class actionUnLoadUnit {};
-		};
-	}; */
 };
 
 class CfgVehicles {
@@ -84,11 +87,12 @@ class CfgVehicles {
 
 				/* 
 				class ACE_Medical_loadPatient {
-					statement = "[_player, _target] call twc_extra_fnc_actionLoadUnit";
+					statement = "[_player, _target] call twc_medical_fnc_actionLoadUnit";
 				};
 
+				// investiage if actually needed
 				class ACE_Medical_UnLoadPatient {
-					statement = "[_player, _target] call twc_extra_fnc_actionUnLoadUnit";
+					statement = "[_player, _target] call twc_medical_fnc_actionUnLoadUnit";
 				};
 				*/
 			};
