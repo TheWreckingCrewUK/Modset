@@ -73,7 +73,7 @@ class CfgVehicles {
 			};
 		
 			class ACE_MainActions {
-				class Medical {
+				/* class Medical {
 					class ACE_Torso {
 						class fieldDressing;
 						class Defib: fieldDressing {
@@ -83,7 +83,7 @@ class CfgVehicles {
 							icon = "";
 						};
 					};
-				};
+				}; */
 
 				/* 
 				class ACE_Medical_loadPatient {
@@ -104,17 +104,19 @@ class ACE_Medical_Actions {
 	class Advanced {
 		class fieldDressing;
 		class CPR: fieldDressing {
+			// condition = QUOTE(!([(_this select 1)] call ace_common_fnc_isAwake) && GVAR(enableRevive)>0);
 			callbackSuccess = "twc_medical_fnc_action";
 		};
 		
 		class Defib: CPR {
 			displayName = "Defibrillate";
-			displayNameProgress = "Defibrillating";
+			displayNameProgress = "Defibrillating...";
 			treatmentLocations[] = {"MedicalVehicle"};
 			allowedSelections[] = {"body"};
 			requiredMedic = 1;
 			treatmentTime = 10;
 			callbackSuccess = "twc_medical_fnc_action_Defib";
+			condition = "[(_this select 0), (_this select 1)] call twc_medical_fnc_canDefib";
 		};
 		
 		class QuikClot: fieldDressing {

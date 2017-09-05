@@ -15,7 +15,7 @@ private _isBleeding = [_target] call ace_medical_fnc_isInStableCondition;
 private _bloodVolume = [_caller, _target] call twc_medical_fnc_getBloodLoss; // i should change the name some time
 
 // is in need of defibs
-if (_unCon && _inMedVehicle && !(_isBleeding) && (_bloodVolume >= 0.65)) exitWith {
+if (_unCon && _inMedVehicle && !(_isBleeding) && (_bloodVolume >= 0.5)) exitWith {
 	true;
 };
 

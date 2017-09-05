@@ -3,8 +3,8 @@
  * If a user has bloodlust, they should see the vaporization - otherwise, they'll just see a ragdoll
  */
 // Make sure player is initialized
-if (isServer) exitWith {};
-if (!isServer && (player != player)) then { waitUntil {player == player}; waitUntil {time > 10}; };
+if (isDedicated) exitWith {};
+if (!isDedicated && (player != player)) then { waitUntil {player == player}; waitUntil {time > 10}; };
  
 // set default values, just incase we haven't got them
 if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {

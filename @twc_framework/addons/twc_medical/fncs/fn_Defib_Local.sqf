@@ -12,9 +12,9 @@
 */
 params ["_caller", "_target"];
 
-if !([_target] call twc_medical_fnc_canDefib) exitWith {};
+if !([_caller, _target] call twc_medical_fnc_canDefib) exitWith {}; // required, so we can play sound
 
-_probability = 25; // 30% base chance
+private _probability = 25; // 30% base chance
 
 private _gotEpi = _target getVariable ["ace_medical_epinephrine_insystem", 0];
 _probability = _probability + (10 * _gotEpi); // increase by 10% with epi
@@ -37,7 +37,7 @@ if ( _probability >= _diceRoll ) exitWith {
 	_target setVariable ["ace_medical_inReviveState", false, true];
 	_target setVariable ["ace_medical_inCardiacArrest", nil, true];
 	
-	private _newHR = floor random [40, 55, 70];
+	private _newHR = floor (random [40, 55, 70]);
 	_target setVariable ["ace_medical_heartRate", _newHR];
 	
 	_painToAdd = (random [0, 2, 4]) / 10; // they're gonna feel this one
