@@ -78,9 +78,15 @@ class CfgVehicles {
 					};
 				};
 
-				/* class ACE_Medical_loadPatient {
+				/* 
+				class ACE_Medical_loadPatient {
 					statement = "[_player, _target] call twc_extra_fnc_actionLoadUnit";
-				}; */
+				};
+
+				class ACE_Medical_UnLoadPatient {
+					statement = "[_player, _target] call twc_extra_fnc_actionUnLoadUnit";
+				};
+				*/
 			};
 		};
 	};
