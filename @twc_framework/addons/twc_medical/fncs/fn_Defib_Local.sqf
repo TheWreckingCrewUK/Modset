@@ -23,6 +23,10 @@ _probability = _probability + (10 * _gotEpi); // increase by 10% with epi
 private _bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodLoss;
 _probability = _probability - (30 - (30 * _bloodLoss));
 
+// get for later
+private _painLevel = _unit getVariable ["ace_medical_pain", 0];
+private _painToAdd = 0.05; // shockingly shocking shocks shockee, ouch
+
 private _diceRoll = floor(random 100);
 
 if (_probability < 10) then {
@@ -35,12 +39,17 @@ if ( _probability >= _diceRoll ) exitWith {
 	
 	private _newHR = floor random [40, 55, 70];
 	_target setVariable ["ace_medical_heartRate", _newHR];
+	
+	_painToAdd = (random [0, 2, 4]) / 10; // they're gonna feel this one
+	_target setVariable ["ace_medical_pain", _painLevel + _painToAdd];
 
 	[_target, "activity", localize "STR_TWC_DEFIB_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
 	[_target, "activity_view", localize "STR_TWC_DEFIB_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
 
 	true;
 };
+
+_target setVariable ["ace_medical_pain", _painLevel + _painToAdd];
 
 [_target, "activity", localize "STR_TWC_DEFIB_EXECUE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
 [_target, "activity_view", localize "STR_TWC_DEFIB_EXECUE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
