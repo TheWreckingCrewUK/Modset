@@ -3,6 +3,7 @@
  * If a user has bloodlust, they should see the vaporization - otherwise, they'll just see a ragdoll
  */
 // Make sure player is initialized
+if (isServer) exitWith {};
 if (!isServer && (player != player)) then { waitUntil {player == player}; waitUntil {time > 10}; };
  
 // set default values, just incase we haven't got them
@@ -25,11 +26,11 @@ TWC_Medical_OnUnitExplosion = {
 			 && alive _unit) exitWith {
 			_unit setVariable ["ace_medical_inReviveState", nil, true];
 			_unit setVariable ["ace_medical_reviveStartTime", nil];
-			[_unit, true, true] call "ace_medical_setDead";
+			[_unit, true] call ace_medical_fnc_setDead;
 		};
 	};
 };
 
 player addEventHandler ["Explosion", {
 	_this call TWC_Medical_OnUnitExplosion;
-}]];
+}];
