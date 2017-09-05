@@ -14,7 +14,7 @@ params ["_caller", "_target"];
 
 if !([_target] call twc_medical_fnc_canDefib) exitWith {};
 
-_probability = 30; // 30% base chance
+_probability = 25; // 30% base chance
 
 private _gotEpi = _target getVariable ["ace_medical_epinephrine_insystem", 0];
 _probability = _probability + (10 * _gotEpi); // increase by 10% with epi
@@ -29,8 +29,8 @@ private _painToAdd = 0.05; // shockingly shocking shocks shockee, ouch
 
 private _diceRoll = floor(random 100);
 
-if (_probability < 10) then {
-	_probability = 10;
+if (_probability < 5) then {
+	_probability = 5;
 };
 
 if ( _probability >= _diceRoll ) exitWith {
