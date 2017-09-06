@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6096.6909,148.64638,11553.966};
-		dir[]={-0.60059863,-0.51981854,-0.60771638};
-		up[]={-0.36546364,0.85420877,-0.36978984};
-		aside[]={-0.71133631,-2.913177e-006,0.70300496};
+		pos[]={5976.2988,103.31851,11679.491};
+		dir[]={0.81037617,-0.44400585,0.38261804};
+		up[]={0.40160722,0.8959623,0.18961394};
+		aside[]={0.42700168,-3.8197031e-006,-0.90437436};
 	};
 };
 binarizationWanted=0;
@@ -4484,7 +4484,7 @@ class Mission
 			{
 				position[]={6017.0972,83.040001,11695.502};
 			};
-			name="Adam";
+			name="Hobbs";
 			id=628;
 			type="ModuleCurator_F";
 			class CustomAttributes
@@ -4504,7 +4504,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="76561198103286410";
+							value="76561198030665694";
 						};
 					};
 				};
@@ -9344,7 +9344,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5988.0728,86.011528,11535.366};
-				angles[]={-0,0.91656584,0};
+				angles[]={0,0.91656584,0};
 			};
 			side="Empty";
 			flags=4;
@@ -9486,7 +9486,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5989.7222,84.845245,11532.99};
-				angles[]={-0,4.0765133,0};
+				angles[]={0,4.0765133,0};
 			};
 			side="Empty";
 			flags=4;
@@ -10216,6 +10216,7 @@ class Mission
 			};
 			id=839;
 			type="UK3CB_BAF_Coyote_Passenger_L134A1_D";
+			atlOffset=-7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0

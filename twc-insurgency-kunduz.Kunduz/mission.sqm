@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5172.4814,55.21693,1890.6448};
-		dir[]={-0.72897363,-0.65899134,0.18595956};
-		up[]={-0.63855368,0.75208169,0.16289386};
-		aside[]={0.24721232,2.8631184e-006,0.96907037};
+		pos[]={5176.5503,35.809559,1967.4916};
+		dir[]={-0.71928895,-0.49316105,0.48955882};
+		up[]={-0.40773997,0.86985469,0.27751446};
+		aside[]={0.56272215,2.0085135e-006,0.82677263};
 	};
 };
 binarizationWanted=0;
@@ -72,7 +72,7 @@ class AddonsMetaData
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
@@ -94,12 +94,14 @@ class AddonsMetaData
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item5
 		{
 			className="UK3CB_BAF_Vehicles_Wildcat";
-			name="UK3CB_BAF_Vehicles_Wildcat";
+			name="3CB BAF Vehicles - Wildcat";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
 		};
 		class Item6
 		{
@@ -113,26 +115,28 @@ class AddonsMetaData
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item8
 		{
 			className="UK3CB_BAF_Vehicles_Weapons";
-			name="UK3CB_BAF_Vehicles_Weapons";
+			name="3CB BAF Vehicles - Weapons";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
 		};
 		class Item9
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item10
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item11
 		{
@@ -160,21 +164,21 @@ class AddonsMetaData
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item15
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item16
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item17
 		{
@@ -209,7 +213,7 @@ class AddonsMetaData
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item22
 		{
@@ -241,7 +245,9 @@ class AddonsMetaData
 		class Item27
 		{
 			className="UK3CB_BAF_Vehicles_Merlin";
-			name="UK3CB_BAF_Vehicles_Merlin";
+			name="3CB BAF Vehicles - Merlin";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
 		};
 		class Item28
 		{
@@ -1164,6 +1170,7 @@ class Mission
 			};
 			id=33;
 			type="CUP_B_LR_Transport_GB_D";
+			atlOffset=-0.04101181;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1204,6 +1211,7 @@ class Mission
 			};
 			id=34;
 			type="CUP_B_LR_Transport_GB_D";
+			atlOffset=-0.04101181;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1284,7 +1292,7 @@ class Mission
 			};
 			id=43;
 			type="CUP_B_Ridgback_HMG_GB_D";
-			atlOffset=9.5367432e-007;
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1325,6 +1333,7 @@ class Mission
 			};
 			id=44;
 			type="CUP_B_Mastiff_HMG_GB_D";
+			atlOffset=0.0046720505;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1365,6 +1374,7 @@ class Mission
 			};
 			id=46;
 			type="CUP_B_Mastiff_GMG_GB_D";
+			atlOffset=0.002989769;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5311,7 +5321,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -5426,7 +5436,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -6102,7 +6112,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -7189,7 +7199,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -8072,7 +8082,7 @@ class Mission
 				position[]={5147.1802,10.775568,2000.304};
 				angles[]={0.0079936078,0,0};
 			};
-			name="Adam";
+			name="Hobbs";
 			id=258;
 			type="ModuleCurator_F";
 			atlOffset=0.038000107;
@@ -8093,7 +8103,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="76561198103286410";
+							value="76561198030665694";
 						};
 					};
 				};
@@ -9963,7 +9973,7 @@ class Mission
 			};
 			id=373;
 			type="CUP_B_HMMWV_Ambulance_ACR";
-			atlOffset=-9.5367432e-007;
+			atlOffset=-0.0042295456;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10042,7 +10052,7 @@ class Mission
 			};
 			id=374;
 			type="CUP_B_HMMWV_M2_GPK_ACR";
-			atlOffset=-9.5367432e-007;
+			atlOffset=-0.0042409897;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10083,7 +10093,7 @@ class Mission
 			};
 			id=375;
 			type="CUP_B_HMMWV_M2_GPK_ACR";
-			atlOffset=9.5367432e-007;
+			atlOffset=-0.0042495728;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11273,7 +11283,7 @@ class Mission
 			};
 			id=414;
 			type="CUP_B_HMMWV_Transport_USA";
-			atlOffset=-0.0021810532;
+			atlOffset=-0.0064220428;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11314,7 +11324,7 @@ class Mission
 			};
 			id=415;
 			type="CUP_B_HMMWV_Transport_USA";
-			atlOffset=-0.0037288666;
+			atlOffset=-0.0079698563;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11355,7 +11365,7 @@ class Mission
 			};
 			id=416;
 			type="CUP_B_HMMWV_AGS_GPK_ACR";
-			atlOffset=-0.003493309;
+			atlOffset=-0.007733345;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11396,6 +11406,7 @@ class Mission
 			};
 			id=417;
 			type="CUP_B_HMMWV_AGS_GPK_ACR";
+			atlOffset=-0.004240036;
 			class CustomAttributes
 			{
 				class Attribute0
