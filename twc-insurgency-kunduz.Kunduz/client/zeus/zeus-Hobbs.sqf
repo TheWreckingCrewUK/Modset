@@ -1,5 +1,5 @@
 
-_curator = Adam;
+_curator = Hobbs;
 _addCivilians = True;
 
 //adds objects placed in editor:
