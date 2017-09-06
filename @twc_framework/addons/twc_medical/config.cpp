@@ -32,6 +32,7 @@ class CfgFunctions {
 			class canDefib {};
 			class Defib {};
 			class Defib_Local {};
+			class Defib_callbackProgress {};
 			
 			// Patient Unload
 			// class actionLoadUnit {};
@@ -116,6 +117,7 @@ class ACE_Medical_Actions {
 			requiredMedic = 1;
 			treatmentTime = 10;
 			callbackSuccess = "twc_medical_fnc_action_Defib";
+			callbackProgress = "twc_medical_fnc_Defib_callbackProgress";
 			condition = "[(_this select 0), (_this select 1)] call twc_medical_fnc_canDefib";
 		};
 		

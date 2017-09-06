@@ -12,7 +12,7 @@
 */
 params ["_caller", "_target"];
 
-if !([_caller, _target] call twc_medical_fnc_canDefib) exitWith {}; // required, so we can play sound
+if !([_caller, _target] call twc_medical_fnc_canDefib) exitWith {}; 
 
 private _probability = 25; // 30% base chance
 
