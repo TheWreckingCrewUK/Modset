@@ -5,17 +5,17 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1153;
+	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=174;
+		nextID=175;
 	};
 	class Camera
 	{
-		pos[]={8315.5,422.48837,2131.7009};
-		dir[]={-0.54592419,-0.76952446,-0.33165815};
-		up[]={-0.65772921,0.63852555,-0.39958191};
-		aside[]={-0.51926136,8.4028579e-007,0.85472602};
+		pos[]={8136.5161,387.64124,2161.2014};
+		dir[]={0.407592,-0.51670212,-0.75292563};
+		up[]={0.24598654,0.85616243,-0.45439672};
+		aside[]={-0.87941301,1.1083757e-006,-0.47606573};
 	};
 };
 binarizationWanted=0;
@@ -325,7 +325,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=88;
+		items=89;
 		class Item0
 		{
 			dataType="Group";
@@ -778,7 +778,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8246.7471,296.04144,2099.3701};
-						angles[]={0,2.2776728,0};
+						angles[]={0,2.2776723,0};
 					};
 					side="West";
 					flags=5;
@@ -793,6 +793,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -811,7 +830,26 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -830,7 +868,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute4
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -849,7 +887,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						nAttributes=5;
 					};
 				};
 				class Item6
@@ -3504,7 +3542,7 @@ class Mission
 		class Item33
 		{
 			dataType="Marker";
-			position[]={8157.3511,0,2104.8269};
+			position[]={8157.8311,0,2104.5989};
 			name="veh13";
 			type="Empty";
 			angle=330.0249;
@@ -5523,6 +5561,46 @@ class Mission
 								};
 							};
 							value="[[[[""FirstAidKit""],[10]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item88
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8202.7871,296.83142,2127.3728};
+				angles[]={-0,5.7883844,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="BAFVehiclePost";
+			};
+			id=174;
+			type="Land_Noticeboard_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
 						};
 					};
 				};

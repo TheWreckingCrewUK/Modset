@@ -47,6 +47,7 @@ _box addItemCargoGlobal ["ACE_salineIV_500",2];
 _box addItemCargoGlobal ["ACE_atropine",5];
 _box addItemCargoGlobal ["ACE_epinephrine",5];
 _box addItemCargoGlobal ["ACE_morphine",5];
+_box addItemCargoGlobal ["ACE_Sandbag_empty", 15];
 
 _trg = createTrigger ["EmptyDetector", getPos ammoCrateSpawnPad];
 _trg setTriggerArea [5,5,0,false];
