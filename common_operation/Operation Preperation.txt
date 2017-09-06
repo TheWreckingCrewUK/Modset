@@ -20,7 +20,7 @@
 	6.1 One with owner #adminLogged.
 	6.2 One with owner 76561198070630639 (Jayman).
 	6.2 One with owner 76561198050180681 (Saxon).
-	6.3 One with owner 76561198103286410 (Adam).
+	6.3 One with owner 76561198030665694 (Hobbs).
 	6.2 One with owner 76561198005456546 (Bosenator).
 
 7. Set up the Headless Client:
