@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class twc_framework_public_modern
+	class twc_framework_public_modern_us
 	{
 		units[]=
 		{
@@ -15,7 +15,7 @@ class CfgPatches
 			
 		};
 		weapons[]={};
-		requiredVersion=1.54;
+		requiredVersion=0.1;
 		requiredAddons[]=
 		{
 			"A3_Characters_F_BLUFOR",
@@ -24,39 +24,34 @@ class CfgPatches
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma"
 		};
-		author[]={};
-		authorUrl="";
-		version="1";
-		versionStr="1";
-		versionAr[]={1};
+
 	};
 };
 class CfgEditorSubCategories
 {
-	class Men_Modern
+	class US_Men_Modern
 	{
-		displayName = "Men (Modern)";
+		displayName = "Men (US Army Modern)";
 	};
 };
 class CfgFactionClasses
 {
-	class twc_public
+	class twc_faction
 	{
 		displayName="TWC Public Units";
-		author="jayman";
+		author="The Wrecking Crew";
 		icon="TWClogo.paa";
 		priority=2;
 		side=1;
 	};
-	
 };
-#include "compositions.hpp"
 class CfgVehicles
 {
 	class B_Soldier_base_F;
 	
-	#include "modern.hpp"
+	#include "usarmy.hpp"
 	
-	#include "backpacks.hpp"
+	#include "usbackpacks.hpp"
 };
+
 #include "weapons.hpp"
