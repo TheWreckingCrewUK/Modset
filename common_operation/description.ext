@@ -3,7 +3,7 @@ author = "[TWC] #Author Name#";
 
 onLoadName = OperationName;
 briefingName = OperationName;
-loadScreen = "\twc_framework\addons\twc_ui\loading.paa";
+loadScreen = "\z\addons\twc_ui\loading.paa";
 disabledAI = 1;
 enableDebugConsole = 1;
 disableChannels[] = {0,2,,5};
