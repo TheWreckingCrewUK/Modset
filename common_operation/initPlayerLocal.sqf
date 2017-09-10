@@ -7,7 +7,7 @@ if(!isNil "completedTasks")then{
 };
 
 if(isMultiplayer)then{
-		[] Spawn {
+	[] Spawn {
 		waitUntil{!(isNil "BIS_fnc_init")};
 		playMusic "Theme";
 		titleCut ["", "BLACK FADED", 999];
@@ -16,14 +16,14 @@ if(isMultiplayer)then{
 		titleFadeOut 7;
 		sleep 5;
 
-		titleText [briefingName,"PLAIN"];
+		titleText [getMissionConfigValue ["onLoadName", ""], "PLAIN"];
 		titleFadeOut 15;
 		sleep 45;
 
-		if(!isNil "ForwardBasePos")then{
+		if (!isNil "ForwardBasePos") then {
 			player setPos ForwardBasePos;
 			["ForwardBasePos"] spawn {twc_fnc_reconnected};
-		}else{
+		} else {
 			["NormalBase"] spawn {twc_fnc_reconnected};
 		};
 
@@ -37,13 +37,15 @@ if(isMultiplayer)then{
 
 		titleCut ["", "BLACK IN", 5];
 		
-		if!((goggles player) in approvedFacewear)then{
+		if !((goggles player) in approvedFacewear) then {
 			removeGoggles player;
 		};
-		if!(player getVariable ["twc_keepMap",false])then{ 
+		
+		if !(player getVariable ["twc_keepMap",false]) then { 
 			player unassignItem "itemMap"; 
 			player removeItem "itemMap"; 
 		};
-		1 enableChannel false;		
+		
+		1 enableChannel false;
 	};
 };
