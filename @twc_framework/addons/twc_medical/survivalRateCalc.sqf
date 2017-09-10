@@ -142,8 +142,8 @@ while (_startingBloodVol != 0) do {
 					systemChat format [
 						"Starting Blood Vol: %1, Medic: %2, Epi'd: %3, Chance: %4, Times For Woke: %5",
 						_startingBloodVol
-						true,
-						true,
+						false,
+						false,
 						_calculatedProbability,
 						_timesTilWoke
 					];
