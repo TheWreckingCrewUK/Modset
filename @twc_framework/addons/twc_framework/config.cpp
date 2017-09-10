@@ -1,7 +1,5 @@
-class CfgPatches
-{
-	class twc_framework
-	{
+class CfgPatches {
+	class twc_framework {
 		units[]= {
 			"twc_ModuleMission",
 			"twc_moduelHC",
@@ -26,8 +24,8 @@ class CfgPatches
 		versionAr[]={1};
 	};
 };
-class cfgFactionClasses
-{
+
+class cfgFactionClasses {
 	class NO_CATEGORY;
 	class twc_missionSetup: NO_CATEGORY {
 		displayName="TWC Mission Module";
@@ -38,6 +36,12 @@ class cfgFactionClasses
 	};
 };
 
+class Extended_PreInit_EventHandlers {
+	class Add_Curator_Event {
+		serverInit  = "call compile preprocessFileLineNumbers 'twc_framework\curator\fn_curatorInit.sqf'";
+	};
+};
+
 class Extended_InitPost_EventHandlers {
 	class CAManBase {
 		class twc_moduleInitPos_eh {
@@ -45,6 +49,7 @@ class Extended_InitPost_EventHandlers {
 		};
 	};
 };
+
 #include "cfgWeapons.hpp"
 #include "cfgVehicles.hpp"
 #include "cfgFunctions.hpp"
