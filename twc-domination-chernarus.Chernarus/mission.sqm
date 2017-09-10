@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4777.9526,389.80438,10168.385};
-		dir[]={0.86233968,-0.48903394,0.13126783};
-		up[]={0.4834666,0.87226373,0.073590964};
-		aside[]={0.1504887,-2.9112562e-006,-0.98861873};
+		pos[]={4651.1523,376.89627,10271.832};
+		dir[]={0.90412694,-0.4265165,-0.025287909};
+		up[]={0.42635128,0.90447861,-0.011924802};
+		aside[]={-0.027958419,2.2788299e-008,-0.99961001};
 	};
 };
 binarizationWanted=0;
@@ -3492,7 +3492,7 @@ class Mission
 		class Item32
 		{
 			dataType="Marker";
-			position[]={4722.6763,339,10291.643};
+			position[]={4723.3525,339,10290.696};
 			name="veh1";
 			type="Empty";
 			angle=239.80424;
@@ -5303,7 +5303,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 				disableSimulation=1;
 			};
 			id=394;
@@ -5380,7 +5379,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 				disableSimulation=1;
 			};
 			id=396;
