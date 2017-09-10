@@ -1,9 +1,6 @@
-class CfgFunctions
-{
-	class TWC
-	{
-		class Functions
-		{
+class CfgFunctions {
+	class TWC {
+		class Functions {
 			file="twc_framework\functions";
 			class AirAssault {};
 			class Artillery{};
@@ -32,8 +29,8 @@ class CfgFunctions
 			class UpdateTask{};
 			class virtualMortar{};
 		};
-		class Modules
-		{
+		
+		class Modules {
 			file="twc_framework\modules";
 			class era{};
 			class rollShirt{};
@@ -47,8 +44,8 @@ class CfgFunctions
 			class safeZone{};
 			class zeus{};
 		};
-		class cache
-		{
+		
+		class cache {
 			file="twc_framework\cache";
 			class aiCaching {};
 			class cacheGroup {};
@@ -60,22 +57,26 @@ class CfgFunctions
 			class unCacheVehicle {};
 			class vehicleCaching {};
 		};
-		class headlessClient
-		{
+		
+		class headlessClient {
 			file="twc_framework\headlessClient";
 			class handleSpawn {};
 			class hcModuleInit {};
 			class rebalance {};
 			class transferGroups {};
 		};
-		class curator
-		{
+		
+		class curator {
 			file="twc_framework\curator";
 			class healPlayer {};
 			class killPlayer {};
 			class setSpectator {};
 			class medicalInfo {};
+			
+			class addAddonsCurator {};
+			class addObjectsCurator {};
+			class addCurator {};
+			class curatorInit {};
 		};
-
 	};
 };
