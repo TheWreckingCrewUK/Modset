@@ -21,20 +21,19 @@ for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
 player addItemToUniform "ACE_EarPlugs";
 player addItemToUniform "ACRE_PRC148_ID_2";
 player addVest "rhsusf_spc_light";
-for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
+player addItemToVest "HandGrenade";
+player addItemToVest "rhsusf_mag_10Rnd_STD_50BMG_mk211";
 for "_i" from 1 to 3 do {player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
-for "_i" from 1 to 8 do {player addItemToVest "rhsusf_10Rnd_762x51_m118_special_Mag";};
 player addBackpack "rhsusf_assault_eagleaiii_coy";
 for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
-player addItemToBackpack "ACE_Kestrel4500";
 player addItemToBackpack "ACE_RangeCard";
-player addItemToBackpack "ACE_ATragMX";
+player addItemToBackpack "rhsusf_mag_10Rnd_STD_50BMG_mk211";
+for "_i" from 1 to 3 do {player addItemToBackpack "rhsusf_mag_10Rnd_STD_50BMG_M33";};
 player addHeadgear "rhsusf_mich_helmet_marpatd_norotos_headset";
 
 comment "Add weapons";
-player addWeapon "rhs_weap_m40a5_d";
-player addPrimaryWeaponItem "rhsusf_acc_M8541_low_d";
-player addPrimaryWeaponItem "rhsusf_acc_harris_swivel";
+player addWeapon "rhs_weap_M107_d";
+player addPrimaryWeaponItem "rhsusf_acc_premier";
 player addWeapon "rhsusf_weap_m9";
 
 comment "Add items";

@@ -24,8 +24,20 @@ if (!isNil "P101" && {player == P101}) then {
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
 	//M32 Spawner
-	ammoCrateSpawner addAction ["Spawn Mortar",
+	ammoCrateSpawner addAction ["Spawn M32",
 	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
+	//L7A2 Spawner
+	ammoCrateSpawner addAction ["Spawn L7A2",
+	{nul = [] execVM "client\player\boxes\staticGPMG.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn L111A1",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn L134A1",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P102" && {player == P102}) then {
@@ -76,6 +88,18 @@ if (!isNil "P105" && {player == P105}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//L7A2 Spawner
+	ammoCrateSpawner addAction ["Spawn L7A2",
+	{nul = [] execVM "client\player\boxes\staticGPMG.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn L111A1",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn L134A1",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 if (!isNil "P106" && {player == P106}) then {
     g_class = "BAF_MG";
@@ -132,8 +156,17 @@ if (!isNil "P201" && {player == P201}) then {
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
 	//M32 Spawner
-	ammoCrateSpawner addAction ["Spawn Mortar",
+	ammoCrateSpawner addAction ["Spawn M32",
 	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn GMG",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P202" && {player == P202}) then {
@@ -151,6 +184,12 @@ if (!isNil "P202" && {player == P202}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P203" && {player == P203}) then {
@@ -201,6 +240,12 @@ if (!isNil "P206" && {player == P206}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P207" && {player == P207}) then {
@@ -258,8 +303,17 @@ if (!isNil "P301" && {player == P301}) then {
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
 	//M32 Spawner
-	ammoCrateSpawner addAction ["Spawn Mortar",
+	ammoCrateSpawner addAction ["Spawn M32",
 	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn GMG",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P302" && {player == P302}) then {
@@ -277,6 +331,15 @@ if (!isNil "P302" && {player == P302}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn GMG",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P303" && {player == P303}) then {
@@ -327,6 +390,15 @@ if (!isNil "P306" && {player == P306}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn GMG",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P307" && {player == P307}) then {
@@ -377,6 +449,15 @@ if (!isNil "P310" && {player == P310}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn GMG",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P311" && {player == P311}) then {
@@ -531,6 +612,21 @@ if (!isNil "P501" && {player == P501}) then {
 	//Medical Spawner
 	ammoCrateSpawner addAction ["Spawn Medical Equipment",
 	{nul = [] execVM "client\player\boxes\smallMedical.sqf";},[],0,true,false,"",""];
+	//L7A2 Spawner
+	ammoCrateSpawner addAction ["Spawn L7A2",
+	{nul = [] execVM "client\player\boxes\staticGPMG.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn GMG",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//L16 Spawner
+	ammoCrateSpawner addAction ["Spawn L16",
+	{nul = [] execVM "client\player\boxes\staticL16.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P502" && {player == P502}) then {
@@ -556,6 +652,21 @@ if (!isNil "P502" && {player == P502}) then {
 	//Medical Spawner
 	ammoCrateSpawner addAction ["Spawn Medical Equipment",
 	{nul = [] execVM "client\player\boxes\smallMedical.sqf";},[],0,true,false,"",""];
+	//L7A2 Spawner
+	ammoCrateSpawner addAction ["Spawn L7A2",
+	{nul = [] execVM "client\player\boxes\staticGPMG.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn GMG",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//L16 Spawner
+	ammoCrateSpawner addAction ["Spawn L16",
+	{nul = [] execVM "client\player\boxes\staticL16.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P503" && {player == P503}) then {
@@ -580,6 +691,15 @@ if (!isNil "P503" && {player == P503}) then {
 	//Medical Spawner
 	ammoCrateSpawner addAction ["Spawn Medical Equipment",
 	{nul = [] execVM "client\player\boxes\smallMedical.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn GMG",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P504" && {player == P504}) then {
@@ -605,6 +725,15 @@ if (!isNil "P504" && {player == P504}) then {
 	//Medical Spawner
 	ammoCrateSpawner addAction ["Spawn Medical Equipment",
 	{nul = [] execVM "client\player\boxes\smallMedical.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn GMG",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 };
 
 if (!isNil "P505" && {player == P505}) then {
@@ -630,7 +759,6 @@ if (!isNil "P507" && {player == P507}) then {
 	g_name = "Apache Pilot";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
-	execVM "client\restrict\fullApacheCrew.sqf";
 };
 
 if (!isNil "P508" && {player == P508}) then {
@@ -707,6 +835,7 @@ if (!isNil "P604" && {player == P604}) then {
 	crate = "crate8";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	execVM "client\restrict\fullSniperTeam.sqf";
 	//Change Loadout
 	Spawner addAction ["Change Loadout to BAF Sniper",
 	{nul = [] execVM "client\player\loadout\BAF_SN.sqf";},[],0,true,false,"",""];
@@ -726,6 +855,7 @@ if (!isNil "P605" && {player == P605}) then {
 	crate = "crate8";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	execVM "client\restrict\fullSniperTeam.sqf";
 	//Change Loadout
 	Spawner addAction ["Change Loadout to BAF Spotter",
 	{nul = [] execVM "client\player\loadout\BAF_SP.sqf";},[],0,true,false,"",""];
@@ -798,6 +928,18 @@ if (!isNil "P901" && {player == P901}) then {
 	//Medical Spawner
 	ammoCrateSpawner addAction ["Spawn Medical Equipment",
 	{nul = [] execVM "client\player\boxes\smallMedical.sqf";},[],0,true,false,"",""];
+	//L7A2 Spawner
+	ammoCrateSpawner addAction ["Spawn GPMG",
+	{nul = [] execVM "client\player\boxes\staticGPMG.sqf";},[],0,true,false,"",""];
+	//L111A1 Spawner
+	ammoCrateSpawner addAction ["Spawn M2",
+	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+	//L134A1 Spawner
+	ammoCrateSpawner addAction ["Spawn GMG",
+	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 	//Zeus Watermark removal, and spectator togle
 	_action = ["Camera","Start Camera","",{execVM "client\zeus\camera.sqf"},{true}] call ace_interact_menu_fnc_createAction;
 	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;	
