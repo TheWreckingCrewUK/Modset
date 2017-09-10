@@ -15,6 +15,16 @@ class CfgPatches {
 	};
 };
 
+class CfgFunctions {
+	class twc_flag {
+		tag = "twc_flag";
+		class init {
+			file = "twc_flag\fncs";
+			class add {};
+		};
+	};
+};
+
 class DefaultEventhandlers;
 class Default_Extended_Eventhandlers: DefaultEventhandlers{};
 

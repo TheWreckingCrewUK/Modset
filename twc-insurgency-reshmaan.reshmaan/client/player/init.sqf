@@ -759,7 +759,6 @@ if (!isNil "P507" && {player == P507}) then {
 	g_name = "Apache Pilot";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
-	execVM "client\restrict\fullApacheCrew.sqf";
 };
 
 if (!isNil "P508" && {player == P508}) then {
@@ -836,6 +835,7 @@ if (!isNil "P604" && {player == P604}) then {
 	crate = "crate8";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	execVM "client\restrict\fullSniperTeam.sqf";
 	//Change Loadout
 	Spawner addAction ["Change Loadout to BAF Sniper",
 	{nul = [] execVM "client\player\loadout\BAF_SN.sqf";},[],0,true,false,"",""];
@@ -855,6 +855,7 @@ if (!isNil "P605" && {player == P605}) then {
 	crate = "crate8";
 	["en"] call acre_api_fnc_babelSetSpokenLanguages;
 	["en"] call acre_api_fnc_babelSetSpeakingLanguage;
+	execVM "client\restrict\fullSniperTeam.sqf";
 	//Change Loadout
 	Spawner addAction ["Change Loadout to BAF Spotter",
 	{nul = [] execVM "client\player\loadout\BAF_SP.sqf";},[],0,true,false,"",""];
