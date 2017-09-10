@@ -1,6 +1,6 @@
 /*
 * Author: [TWC] Bosenator
-* Activates all addons, stores in global variable for server
+* Activates all addons, stores in global variable for server, adds curators at start & JIP
 *
 * Arguments:
 * <NONE>
@@ -18,7 +18,9 @@ _allowedCurators = [
 	"76561198050180681", // Saxon
 	"76561198030665694", // Hobbs
 	"76561198005456546" // Bosenator
-]; 
+];
+
+TWC_Addons_List = []; // global for server
 
 _cfgPatches = configFile >> "cfgpatches";
 for "_i" from 0 to (count _cfgPatches - 1) do {
@@ -38,8 +40,6 @@ _justPlayers = allPlayers - entities "HeadlessClient_F";
 		[_x] call TWC_fnc_addCurator;
 	};
 } forEach _justPlayers;
-
-// 
 
 ["playerConnectedCuratorEH", "PlayerConnected", {
 	params ["_id", "_uid", "_name", "_jip", "_owner"];
