@@ -39,6 +39,8 @@ while (_startingBloodVol != 0) do {
 						if ( _calculatedProbability >= _diceRoll ) then {
 							_unCon = false;
 						};
+						
+						_diceRoll = floor(random 105);
 					};
 					
 					_result pushBack _timesTilWoke;
@@ -70,6 +72,8 @@ while (_startingBloodVol != 0) do {
 						if ( _calculatedProbability >= _diceRoll ) then {
 							_unCon = false;
 						};
+						
+						_diceRoll = floor(random 105);
 					};
 					
 					_result pushBack _timesTilWoke;
@@ -105,6 +109,8 @@ while (_startingBloodVol != 0) do {
 						if ( _calculatedProbability >= _diceRoll ) then {
 							_unCon = false;
 						};
+						
+						_diceRoll = floor(random 105);
 					};
 					
 					_result pushBack _timesTilWoke;
@@ -136,6 +142,8 @@ while (_startingBloodVol != 0) do {
 						if ( _calculatedProbability >= _diceRoll ) then {
 							_unCon = false;
 						};
+						
+						_diceRoll = floor(random 105);
 					};
 					
 					_result pushBack _timesTilWoke;
