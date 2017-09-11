@@ -45,12 +45,12 @@ while (_startingBloodVol != 0) do {
 					
 					_result pushBack _timesTilWoke;
 					systemChat format [
-						"Starting Blood Vol: %1, Medic: %2, Epi'd: %3, Chance: %4, Times For Woke: %5",
+						"Starting Blood Vol: %1, Medic: %2, Epi'd: %3, Chance: %4, Time For Woke: %5",
 						_startingBloodVol
 						true,
 						true,
 						_calculatedProbability,
-						_timesTilWoke
+						(_timesTilWoke * 15)
 					];
 					_results pushBack _result;
 				} else {
@@ -78,12 +78,12 @@ while (_startingBloodVol != 0) do {
 					
 					_result pushBack _timesTilWoke;
 					systemChat format [
-						"Starting Blood Vol: %1, Medic: %2, Epi'd: %3, Chance: %4, Times For Woke: %5",
+						"Starting Blood Vol: %1, Medic: %2, Epi'd: %3, Chance: %4, Time For Woke: %5",
 						_startingBloodVol
 						true,
 						false,
 						_calculatedProbability,
-						_timesTilWoke
+						(_timesTilWoke * 15)
 					];
 					_results pushBack _result;
 				};
@@ -115,12 +115,12 @@ while (_startingBloodVol != 0) do {
 					
 					_result pushBack _timesTilWoke;
 					systemChat format [
-						"Starting Blood Vol: %1, Medic: %2, Epi'd: %3, Chance: %4, Times For Woke: %5",
+						"Starting Blood Vol: %1, Medic: %2, Epi'd: %3, Chance: %4, Time For Woke: %5",
 						_startingBloodVol
 						false,
 						true,
 						_calculatedProbability,
-						_timesTilWoke
+						(_timesTilWoke * 15)
 					];
 					_results pushBack _result;
 				} else {
@@ -148,12 +148,12 @@ while (_startingBloodVol != 0) do {
 					
 					_result pushBack _timesTilWoke;
 					systemChat format [
-						"Starting Blood Vol: %1, Medic: %2, Epi'd: %3, Chance: %4, Times For Woke: %5",
+						"Starting Blood Vol: %1, Medic: %2, Epi'd: %3, Chance: %4, Time For Woke: %5",
 						_startingBloodVol
 						false,
 						false,
 						_calculatedProbability,
-						_timesTilWoke
+						(_timesTilWoke * 15)
 					];
 					_results pushBack _result;
 				};
