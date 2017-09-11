@@ -101,13 +101,6 @@ class CfgGroups
 										class Unit3
                                         {
                                                 side = 1;
-                                                vehicle = "1990_British_MortarGunner";
-                                                rank = "PRIVATE";
-                                                position[] = {7,0,0};
-                                        };
-										class Unit4
-                                        {
-                                                side = 1;
                                                 vehicle = "1990_British_Platoon_CSM";
                                                 rank = "sergeant";
                                                 position[] = {9,0,0};
@@ -206,13 +199,6 @@ class CfgGroups
                                                 position[] = {5,0,0};
                                         };
 										class Unit3
-                                        {
-                                                side = 1;
-                                                vehicle = "1990_British_MortarGunner_Desert";
-                                                rank = "PRIVATE";
-                                                position[] = {7,0,0};
-                                        };
-										class Unit4
                                         {
                                                 side = 1;
                                                 vehicle = "1990_British_Platoon_CSM_Desert";
