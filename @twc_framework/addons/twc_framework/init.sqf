@@ -74,7 +74,7 @@ player addEventHandler ["Killed",{
 }];
 
 */
-if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {systemChat "twcMOduleEnabled was Nil"};
+if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {systemChat "twcModuleEnabled was Nil"};
 
 
 waitUntil{missionNameSpace getVariable "twcModuleFinished"};
