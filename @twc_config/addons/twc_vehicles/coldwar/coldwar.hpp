@@ -4,6 +4,9 @@
 #define COLDWAR_LANDROVERTRADITIONAL_MOD 0.5
 #define COLDWAR_PUMA_MOD 1
 #define COLDWAR_FV432_MOD 1
+#define COLDWAR_SCIMITAR_MOD 0.5
+#define COLDWAR_SCORPION_MOD 0.5
+#define COLDWAR_CHIEFTAIN_MOD 0.5
 
 // section vehicle resupply total (manipulated by modifiers)
 #define SECTION_FIELDDRESSING 20

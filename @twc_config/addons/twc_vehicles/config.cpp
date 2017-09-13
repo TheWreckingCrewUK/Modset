@@ -25,35 +25,27 @@ class CfgPatches {
 			"TWC_burnes_foxhound_d_a",
 			"TWC_burnes_foxhound_w_a" */
 
-			"TWC_Vehicle_Generic_LandRoverAmbulance_Woodland",
-			"TWC_Vehicle_Generic_LandRoverAmbulance_Desert",
-			"TWC_Vehicle_Generic_LandRoverAmbulance_UN",
-			"TWC_Vehicle_Generic_FV432Ambulance_Woodland",
-			"TWC_Vehicle_Generic_FV432Ambulance_Desert",
+			"TWC_Vehicle_Generic_LandRoverAmbulance_Chameleon",
+			"TWC_Vehicle_Generic_FV432Ambulance_Chameleon",
 			"TWC_Vehicle_Generic_Hercules_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF_VIV",
 			"TWC_Vehicle_Generic_RHIB_Black",
 			"TWC_Vehicle_Generic_Zodiac_Black",
 			
-			"TWC_Vehicle_ColdWar_LandRover_Woodland",
-			"TWC_Vehicle_ColdWar_LandRover_Desert",
-			"TWC_Vehicle_ColdWar_LandRover_UN",
-			"TWC_Vehicle_ColdWar_LandRover_Woodland_COIN",
-			"TWC_Vehicle_ColdWar_LandRover_Desert_COIN",
-			"TWC_Vehicle_ColdWar_LandRover_UN_COIN",
+			"TWC_Vehicle_ColdWar_LandRover_Chameleon",
+			"TWC_Vehicle_ColdWar_LandRover_Chameleon_COIN",
 			"TWC_Vehicle_ColdWar_Puma_RAF",
 			"TWC_Vehicle_ColdWar_Puma_RAF_COIN",
-			"TWC_Vehicle_ColdWar_FV432_Woodland",
-			"TWC_Vehicle_ColdWar_FV432_Woodland_COIN"
+			"TWC_Vehicle_ColdWar_FV432_Chameleon",
+			"TWC_Vehicle_ColdWar_FV432_Chameleon_COIN",
+			"TWC_Vehicle_ColdWar_Scimitar_Chameleon",
+			"TWC_Vehicle_ColdWar_Scorpion_Chameleon",
+			"TWC_Vehicle_ColdWar_Chieftain_Woodland"
+			
 		};
 
 		weapons[] = {
-			/* 
-			// OLD CLASS NAMES, DO NOT REUSE!
-			"TWC_30mm_HE_item",
-			"TWC_30mm_AP_item" */
-
 			"TWC_Item_30mm_3rd_HET",
 			"TWC_Item_30mm_3rd_APDS"
 		};
@@ -65,7 +57,8 @@ class CfgPatches {
 			"cup_wheeledvehicles_lr",
 			"cup_trackedvehicles_fv510",
 			"uk3cb_baf_vehicles_wildcat",
-			"cup_airvehicles_c130j"
+			"cup_airvehicles_c130j",
+			"twc_faction"
 		};
 		
 		version = "2";
@@ -188,6 +181,8 @@ class CfgVehicles {
 	class UK3CB_BAF_LandRover_Soft_Sand_A;
 	class UK3CB_BAF_LandRover_Soft_UN_A;
 	class ukcw_fv432;
+	class ukcw_cvrt_Scim_w_L1;
+	class ukcw_cvrt_Scorpion_w_L1;
 	
 	#include "generic\generic.hpp";
 	#include "modern\modern.hpp";
