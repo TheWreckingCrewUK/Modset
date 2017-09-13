@@ -178,8 +178,6 @@ class CfgVehicles {
 
 	// These are used across era in different configurations, and as such should be first referenced here.
 	class UK3CB_BAF_LandRover_Soft_Green_B;
-	class UK3CB_BAF_LandRover_Soft_Sand_A;
-	class UK3CB_BAF_LandRover_Soft_UN_A;
 	class ukcw_fv432;
 	class ukcw_cvrt_Scim_w_L1;
 	class ukcw_cvrt_Scorpion_w_L1;
