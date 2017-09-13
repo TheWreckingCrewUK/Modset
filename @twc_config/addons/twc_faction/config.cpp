@@ -40,6 +40,8 @@ class CfgFactionClasses {
 		side = 1;
 	};
 	
+	class TWC_Millennial: TWC_Millenial {};
+	
 	class TWC_Modern {
 		displayName = "TWC Modern Operation Units";
 		author = "The Wrecking Crew";
