@@ -54,5 +54,4 @@ class CfgVehicles
 	
 	#include "usbackpacks.hpp"
 };
-
 #include "weapons.hpp"
