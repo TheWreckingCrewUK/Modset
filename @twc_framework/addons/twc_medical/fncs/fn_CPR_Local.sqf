@@ -7,7 +7,7 @@ private _isMedic = _caller getVariable ["ACE_medical_medicClass", 0];
 _probability = 2;
 
 if (_isMedic > 0) then {
-	_probability = 6;
+	_probability = 5;
 };
 
 // potential issue here, needs investigating
@@ -18,7 +18,7 @@ _probability = _probability + (5 * _gotEpi);
 private _bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodLoss;
 _probability = _probability - (10 - (10 * _bloodLoss));
 
-private _diceRoll = 1 + floor(random 100);
+private _diceRoll = floor(random 105);
 
 if (_probability < 1) then {
 	_probability = 1;

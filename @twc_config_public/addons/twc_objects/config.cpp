@@ -4,7 +4,8 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"twc_radioTable"
+			"twc_radioTable",
+			"twc_portableGenerator"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -31,6 +32,7 @@ class cfgFunctions
 class CfgVehicles
 {
 	class Land_CampingTable_F;
+	class Land_Portable_generator_F;
 	class twc_radioTable:Land_CampingTable_F
 	{
 		displayname = "TWC RadioTable";
@@ -62,6 +64,15 @@ class CfgVehicles
                     icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa";
 				};
 			};
+		};
+	};
+	class twc_portableGenerator: Land_Portable_generator_F
+	{
+		ace_cargo_size = 1;
+		ace_cargo_canLoad = 1;
+		class EventHandlers: EventHandlers
+		{
+			init = "[(_this select 0),true,[0,1,0],270] call ace_dragging_fnc_setDraggable;";  
 		};
 	};
 };

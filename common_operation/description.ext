@@ -3,7 +3,7 @@ author = "[TWC] #Author Name#";
 
 onLoadName = OperationName;
 briefingName = OperationName;
-loadScreen = "\z\twc_framework\addons\twc_ui\loading.paa";
+loadScreen = "\z\addons\twc_ui\loading.paa";
 disabledAI = 1;
 enableDebugConsole = 1;
 disableChannels[] = {0,2,,5};
@@ -12,6 +12,7 @@ respawnButton = 0;
 respawn = "base";
 respawnDelay = 1000000;
 respawnTemplates[] = {"ace_spectator"};
+
 showHUD[] = {
 	true,	// Scripted HUD (same as showHUD command)
 	true,	// Vehicle + soldier info
@@ -23,6 +24,7 @@ showHUD[] = {
 	true,	// HUD Weapon Cursors
 	false	// HUD Squad Radar
 };
+
 class ACE_Settings {
 //ACE Finger
 	class ace_finger_enabled {
@@ -80,7 +82,7 @@ class ace_medical_enableOverdosing {
     force = 1;
 };
 class ace_medical_bleedingCoefficient {
-    value = 0.5;
+    value = 0.6;
     typeName = "SCALAR";
     force = 1;
 };

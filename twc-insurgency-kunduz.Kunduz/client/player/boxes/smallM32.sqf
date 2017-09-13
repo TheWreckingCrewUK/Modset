@@ -24,6 +24,6 @@ _box AddMagazineCargoGlobal ["rhsusf_mag_6Rnd_M441_HE",10];
 _box AddMagazineCargoGlobal ["rhsusf_mag_6Rnd_M715_green",10];
 
 _box AddMagazineCargoGlobal ["rhsusf_mag_6Rnd_M715_white",10];
-_box AddMagazineCargoGlobal ["rhsusf_mag_6Rnd_M715_red",10];
+//_box AddMagazineCargoGlobal ["rhsusf_mag_6Rnd_M715_red",10];
 
 [player, _box] call ace_cargo_fnc_startLoadIn;

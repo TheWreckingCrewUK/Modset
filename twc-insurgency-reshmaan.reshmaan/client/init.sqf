@@ -1,7 +1,7 @@
 waitUntil {!isNull player};
 waitUntil {player == player};
 
-#include "sys_restrict\init.sqf";
+#include "restrict\init.sqf";
 #include "sys_intel\init.sqf";
 
 execVM "client\sys_blufor\init.sqf";

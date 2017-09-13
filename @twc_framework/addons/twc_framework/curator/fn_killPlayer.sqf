@@ -25,7 +25,7 @@ if((_mouseOver select 0) != "OBJECT") then{
 	if !(_unit isKindOf "CAManBase") then{
 		hint "Unit has to be human";
 	}else{
-		_unit setDamage 1;
+		[_unit, true] call ace_medical_fnc_setDead;
 	};
 };
 

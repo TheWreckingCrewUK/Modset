@@ -177,7 +177,7 @@ class TWC_AmmoBox_Millennial_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 class TWC_AmmoBox_Millennial_Sniper_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "Sniper Resupply (Portable)";
+	displayName = "L96A1 - Sniper Resupply (Portable)";
 	editorSubcategory = "TWC_Crates_Millennial";
 	
 	class TransportItems {
@@ -192,8 +192,8 @@ class TWC_AmmoBox_Millennial_Sniper_Portable: TWC_AmmoBox_Portable {
 	};
 	
 	class TransportMagazines {
-		// .338 Rounds Lapua Magnum
-		maga_nc(UK3CB_BAF_338_5Rnd, 6);
+		// 7.62 L96A1
+		maga_nc(UK3CB_BAF_762_L42A1_10Rnd, 6);
 		
 		// Smoke Grenades
 		maga_nc(SmokeShell, 2);

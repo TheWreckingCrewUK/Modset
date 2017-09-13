@@ -32,7 +32,7 @@ aoDistanceFromSpawn = 4000;
 //adds all units to zeus. (adminLogged):
 execVM "client\zeus\zeus.sqf";
 execVM "client\zeus\zeus-jayman.sqf";
-execVM "client\zeus\zeus-Adam.sqf";
+execVM "client\zeus\zeus-Hobbs.sqf";
 //check for enemies in the base:
 if(hasInterface)then{
 	Russiancheck = 0;
