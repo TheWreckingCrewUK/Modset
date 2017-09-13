@@ -45,6 +45,7 @@ class CfgFactionClasses
 		side=1;
 	};
 };
+#include "compositions.hpp"
 class CfgVehicles
 {
 	class B_Soldier_base_F;
