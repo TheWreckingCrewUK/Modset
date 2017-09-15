@@ -18,7 +18,7 @@ _return = "";
 if(isNil "_table")exitWith{_return = "Radio Table not given to twc_fn_setUpForwardBase. Exiting..."; _return};
 
 _pos = getPos _table;
-if(_pos distance2D (getMarkerPos "respawn_West") < 1000) exitWith{_distance = _pos distance2D (getMarkerPos "respawn_West");_return = format["You cannot set up the forward base withing 1KM of the Main Base. You are only %1 Away",_distance]; _return};
+if(_pos distance2D (getMarkerPos "base") < 1000) exitWith{_distance = _pos distance2D (getMarkerPos "base");_return = format["You cannot set up the forward base withing 1KM of the Main Base. You are only %1 Away",_distance]; _return};
 _distanceGenerator = _pos nearObjects ["twc_portableGenerator",200];
 _distanceMedicalTruck = _pos nearObjects ["B_Truck_01_medical_F",200];
 if(str _distanceGenerator == "[]" || str _distanceMedicalTruck == "[]")exitWith{_return = format["Both the Generator and Medical Truck must be withing 200M of the Radio Table.\n Generator is %1 away\n Medical truck is %2 away",_distanceGenerator,_distanceMedicalTruck]; _return};

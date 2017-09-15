@@ -538,3 +538,56 @@
 		};
 		
 	};
+	class TWC_Modern_US_Army_HeliPilot:TWC_Modern_US_Army_Base
+	{
+		scope=2;
+		displayName="Modern US Army Helicotper Pilot";
+		backpack="TWC_Backpack_Modern_US_Army_SL";
+		linkedItems[]=
+		{
+			"rhs_uniform_cu_ocp",
+			"rhsusf_hgu56p",
+			"rhsusf_iotv_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhs_uniform_cu_ocp",
+			"rhsusf_hgu56p",
+			"rhsusf_iotv_ocp",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"rhs_weap_m4_carryhandle"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"rhs_weap_m4_carryhandle"
+		};
+		magazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		
+	};

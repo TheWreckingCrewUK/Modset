@@ -69,7 +69,7 @@ class cfgWeapons
 			class LinkedItemsUnderBarrelSlot
 			{
 				slot="UnderBarrelSlot";
-				item="rhsusf_acc_harris_bipod"
+				item="rhsusf_acc_harris_bipod";
 			};
 		};
 	};
