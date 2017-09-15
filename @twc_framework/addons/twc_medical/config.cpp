@@ -32,12 +32,7 @@ class CfgFunctions {
 			class canDefib {};
 			class Defib {};
 			class Defib_Local {};
-			class Defib_callbackProgress {};
-			
-			// Patient Unload
-			// class actionLoadUnit {};
-			// class actionUnLoadUnit {};
-			
+
 			// Bloodlust Compat & Insta-Kill
 			class bloodlustInit {};
 		};
@@ -73,8 +68,8 @@ class CfgVehicles {
 				};
 			};
 		
-			class ACE_MainActions {
-				/* class Medical {
+			/* class ACE_MainActions {
+				class Medical {
 					class ACE_Torso {
 						class fieldDressing;
 						class Defib: fieldDressing {
@@ -84,19 +79,8 @@ class CfgVehicles {
 							icon = "";
 						};
 					};
-				}; */
-
-				/* 
-				class ACE_Medical_loadPatient {
-					statement = "[_player, _target] call twc_medical_fnc_actionLoadUnit";
 				};
-
-				// investiage if actually needed
-				class ACE_Medical_UnLoadPatient {
-					statement = "[_player, _target] call twc_medical_fnc_actionUnLoadUnit";
-				};
-				*/
-			};
+			}; */
 		};
 	};
 };
@@ -117,8 +101,6 @@ class ACE_Medical_Actions {
 			requiredMedic = 1;
 			treatmentTime = 10;
 			callbackSuccess = "twc_medical_fnc_action_Defib";
-			callbackProgress = "twc_medical_fnc_Defib_callbackProgress";
-			condition = "[(_this select 0), (_this select 1)] call twc_medical_fnc_canDefib";
 		};
 		
 		class QuikClot: fieldDressing {

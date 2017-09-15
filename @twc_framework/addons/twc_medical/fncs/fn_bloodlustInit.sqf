@@ -6,7 +6,7 @@
 if (isDedicated) exitWith {};
 if (!isDedicated && (player != player)) then { waitUntil {player == player}; waitUntil {time > 10}; };
  
-// set default values, just incase we haven't got them
+// set default local values
 if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
 	BloodLust_VaporizationDamageThresholdMP = 1;
 	BloodLust_ExplosionDamageThresholdMP = 0.2;
@@ -19,18 +19,18 @@ TWC_Medical_OnUnitExplosion = {
 		_unit = _this select 0;
 		_damage = _this select 1;
 		
-		if (_unit getVariable ["BloodLust_IsVaporized", false]) exitWith {};
+		//if (_unit getVariable ["BloodLust_IsVaporized", false]) exitWith {};
 		
 		if (BloodLust_IsVaporizationEnabledMP 
 			 && _damage >= BloodLust_VaporizationDamageThresholdMP
 			 && alive _unit) exitWith {
 			_unit setVariable ["ace_medical_inReviveState", nil, true];
 			_unit setVariable ["ace_medical_reviveStartTime", nil];
-			[_unit, true] call ace_medical_fnc_setDead;
+			[_unit, true, true] call ace_medical_fnc_setDead;
 		};
 	};
 };
 
 player addEventHandler ["Explosion", {
-	_this call TWC_Medical_OnUnitExplosion;
+	[_this] call TWC_Medical_OnUnitExplosion;
 }];
