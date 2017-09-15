@@ -38,7 +38,7 @@ class TWC_AmmoBox_Launchers_L1A1_Portable: TWC_AmmoBox_Portable {
 class TWC_AmmoBox_Launchers_LAW80_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "LAW 80 (Portable)";
+	displayName = "L1A1 - LAW 80 (Portable)";
 	
 	editorSubcategory = "TWC_Crates_Launchers";
 	

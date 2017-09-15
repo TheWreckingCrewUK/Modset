@@ -106,7 +106,7 @@ class CfgVehicles
 			class _xx_1rnd_smoke
 			{
 				magazine = "1Rnd_Smoke_Grenade_shell";
-				count = 2
+				count = 2;
 			};
 			class _xx_handgrenade
 			{
