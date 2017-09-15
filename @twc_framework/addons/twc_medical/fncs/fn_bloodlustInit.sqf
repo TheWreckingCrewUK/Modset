@@ -9,7 +9,7 @@ if (!isDedicated && (player != player)) then { waitUntil {player == player}; wai
 // set default local values
 if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
 	BloodLust_VaporizationDamageThresholdMP = 1;
-	BloodLust_ExplosionDamageThresholdMP = 0.2;
+	//BloodLust_ExplosionDamageThresholdMP = 0.2;
 	BloodLust_IsVaporizationEnabledMP = true;
 };
 

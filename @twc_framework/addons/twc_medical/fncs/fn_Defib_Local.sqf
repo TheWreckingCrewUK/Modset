@@ -34,14 +34,15 @@ if (_probability < 5) then {
 };
 
 if ( _probability >= _diceRoll ) exitWith {
-	_target setVariable ["ace_medical_inReviveState", false, true];
 	_target setVariable ["ace_medical_inCardiacArrest", nil, true];
 	
 	private _newHR = floor (random [40, 50, 65]);
 	_target setVariable ["ace_medical_heartRate", _newHR];
 	
-	_painToAdd = (random [0, 1, 4]) / 10; // they're gonna feel this one
+	_painToAdd = ((floor (random [0, 1, 4])) / 10); // they're gonna feel this one
 	_target setVariable ["ace_medical_pain", (_painLevel + _painToAdd)];
+
+	_target setVariable ["ace_medical_inReviveState", false, true];
 
 	[_target, "activity", localize "STR_TWC_DEFIB_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
 	[_target, "activity_view", localize "STR_TWC_DEFIB_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;

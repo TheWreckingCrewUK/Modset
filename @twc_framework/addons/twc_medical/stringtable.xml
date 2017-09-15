@@ -11,6 +11,10 @@
 			<English>%1 performed CPR</English>
 			<German>%1 hat eine HLW durchgeführt</German>
 		</Key>
+		<Key ID="STR_TWC_CPR_UNNEEDED">
+			<Original>%1 performed CPR needlessly</Original>
+			<English>%1 performed CPR needlessly</English>
+		</Key>
 		<Key ID="STR_TWC_DEFIB_COMPLETED">
 			<Original>%1 resuscitated the patient with defibrillators</Original>
 			<English>%1 resuscitated the patient with defibrillators</English>
