@@ -202,7 +202,7 @@ class ace_medical_useLocation_basicEpi {
     force = 1;
 };
 class ace_medical_useLocation_PAK {
-    value = 3;
+    value = 2;
     typeName = "SCALAR";
     force = 1;
 };
