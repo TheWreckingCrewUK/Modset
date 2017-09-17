@@ -51,7 +51,7 @@ if (count _allRoads <= 0) exitWith {};
 for "_i" from 0 to _amount step 1 do {
     _road = _allRoads call BIS_fnc_selectRandom;
     _iedType = _iedTypes call BIS_fnc_selectRandom;
-    [_iedType,_road, getPos _road, 5] call TWC_fnc_spawnIed;
+    [_iedType,_road, getPos _road, 1] call TWC_fnc_spawnIed;
     _allRoads = _allRoads - [_road];
     if (count _allRoads <= 0) exitWith {};
 };
