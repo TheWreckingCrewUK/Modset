@@ -31,7 +31,7 @@ if (_probability < 1) then {
 
 if ( _probability >= _diceRoll ) exitWith {
 	_target setVariable ["ace_medical_inCardiacArrest", nil, true];
-	_target setVariable ["ace_medical_heartRate", (round(random [30, 35, 40]))];
+	_target setVariable ["ace_medical_heartRate", (round(random [30, 35, 40])), true];
 	
 	private _bloodPressure = [_target] call ace_medical_fnc_getBloodPressure;
 	_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
@@ -49,11 +49,11 @@ if ( _probability >= _diceRoll ) exitWith {
 	};
 	
 	if (_changed) then {
-		_target setVariable ["ace_medical_bloodPressure", [_bloodPressureL, _bloodPressureH]];
+		_target setVariable ["ace_medical_bloodPressure", [_bloodPressureL, _bloodPressureH], true];
 	};
 	
 	if ((_target getVariable "ace_medical_bloodVolume") < 30) then {
-		_target setVariable ["ace_medical_bloodVolume", 30];
+		_target setVariable ["ace_medical_bloodVolume", 30, true];
 	};
 	
 	_target setVariable ["ace_medical_inReviveState", false, true];

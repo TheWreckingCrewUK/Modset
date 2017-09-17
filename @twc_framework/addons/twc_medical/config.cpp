@@ -43,7 +43,7 @@ class CfgVehicles {
 	class Man;
 	
 	class CAManBase: Man {
-		/* TODO: Make Self Interaction Entries for the Saline 250ml bags
+		/* // TODO: Make Self Interaction Entries for the Saline 250ml bags
 		class ACE_SelfActions {
 			class Medical {
 				class ACE_ArmLeft {
@@ -58,7 +58,7 @@ class CfgVehicles {
 		}; */
 		
 		class ACE_Actions {
-			class ACE_Torso {
+			/* class ACE_Torso {
 				class fieldDressing;
 				class Defib: fieldDressing {
 					displayName = "Defibrillate";
@@ -66,9 +66,9 @@ class CfgVehicles {
 					statement = "[_player, _target] call twc_medical_fnc_Defib";
 					icon = "";
 				};
-			};
+			}; */
 		
-			/* class ACE_MainActions {
+			class ACE_MainActions {
 				class Medical {
 					class ACE_Torso {
 						class fieldDressing;
@@ -76,11 +76,12 @@ class CfgVehicles {
 							displayName = "Defibrillate";
 							condition = "[_player, _target] call twc_medical_fnc_canDefib";
 							statement = "[_player, _target] call twc_medical_fnc_Defib";
+							exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside", "isNotSwimming"};
 							icon = "";
 						};
 					};
 				};
-			}; */
+			};
 		};
 	};
 };
@@ -98,8 +99,11 @@ class ACE_Medical_Actions {
 			displayNameProgress = "Defibrillating...";
 			treatmentLocations[] = {"MedicalVehicle"};
 			allowedSelections[] = {"body"};
+			condition = "[(_this select 0), (_this select 1)] call twc_medical_fnc_canDefib";
+			allowSelfTreatment = 0;
 			requiredMedic = 1;
 			treatmentTime = 10;
+			patientStateCondition = 1;
 			callbackSuccess = "twc_medical_fnc_action_Defib";
 		};
 		

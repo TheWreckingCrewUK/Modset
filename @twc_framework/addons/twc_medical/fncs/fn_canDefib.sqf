@@ -9,14 +9,14 @@ if !(_target isKindOf "CAManBase") exitWith { false };
 if (_caller == _target) exitwith { false };
 
 // same uncon check as cpr
-private _unCon = [_caller, _target] call twc_medical_fnc_canCPR;
-private _inMedVehicle = [_target] call ace_medical_fnc_isInMedicalVehicle;
-private _isBleeding = [_target] call ace_medical_fnc_isInStableCondition;
+private _unCon = [_target] call twc_medical_fnc_canCPR;
+private _inMedVehicle = [_caller] call ace_medical_fnc_isInMedicalVehicle;
+private _isBleeding = _target getVariable ["ace_medical_isBleeding", false];
 private _bloodVolume = [_caller, _target] call twc_medical_fnc_getBloodLoss; // i should change the name some time
 
 // is in need of defibs
-if (_unCon && _inMedVehicle && !(_isBleeding) && (_bloodVolume >= 0.5)) exitWith {
-	true;
+if (_unCon && _inMedVehicle && !(_isBleeding) && (_bloodVolume >= 0.8)) exitWith {
+	true
 };
 
-false;
+false
