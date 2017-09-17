@@ -6,12 +6,12 @@
 #include "sys_aa\init.sqf";
 
 if (isNil "InsP_enemyMorale") then {
-	InsP_enemyMorale = 0;
+	InsP_enemyMorale = 0.5;
 	publicVariable "InsP_enemyMorale";
 };
 
 if(isNil "InsP_civTrust") then{
-	InsP_civTrust = 0;
+	InsP_civTrust = -0.5;
 	publicVariable "InsP_civTrust";
 };
 
