@@ -42,7 +42,9 @@ if ( _probability >= _diceRoll ) exitWith {
 	_painToAdd = ((floor (random [0, 3, 5])) / 10); // they're gonna feel this one
 	_target setVariable ["ace_medical_pain", (_painLevel + _painToAdd), true];
 
-	_target setVariable ["ace_medical_inReviveState", false, true];
+	if (_target getVariable ["ace_medical_inReviveState", false]) then {
+		_target setVariable ["ace_medical_inReviveState", nil, true];
+	};
 
 	[_target, "activity", localize "STR_TWC_DEFIB_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
 	[_target, "activity_view", localize "STR_TWC_DEFIB_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;

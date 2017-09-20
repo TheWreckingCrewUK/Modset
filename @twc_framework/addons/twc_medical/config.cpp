@@ -16,7 +16,7 @@ class CfgFunctions {
 		tag = "twc_medical";
 		class init {
 			file = "twc_medical\fncs";
-			// generics
+			// Generics
 			class addTime {};
 			class init { postInit = 1; };
 			class getBloodLoss {};
@@ -43,7 +43,9 @@ class CfgVehicles {
 	class Man;
 	
 	class CAManBase: Man {
-		/* // TODO: Make Self Interaction Entries for the Saline 250ml bags
+		/* 
+			// will have to be a custom function like Defib (almost exactly) for use within vehicles/facility
+			// additionally look into ww2fication of items
 		class ACE_SelfActions {
 			class Medical {
 				class ACE_ArmLeft {
@@ -90,7 +92,6 @@ class ACE_Medical_Actions {
 	class Advanced {
 		class fieldDressing;
 		class CPR: fieldDressing {
-			// condition = QUOTE(!([(_this select 1)] call ace_common_fnc_isAwake) && GVAR(enableRevive)>0);
 			callbackSuccess = "twc_medical_fnc_action";
 		};
 		
@@ -108,7 +109,7 @@ class ACE_Medical_Actions {
 		};
 		
 		class QuikClot: fieldDressing {
-			treatmentTime = 6;
+			treatmentTime = 5;
 		};
 		
 		class ElasticBandage: fieldDressing {

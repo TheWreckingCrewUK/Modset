@@ -52,11 +52,14 @@ if ( _probability >= _diceRoll ) exitWith {
 		_target setVariable ["ace_medical_bloodPressure", [_bloodPressureL, _bloodPressureH], true];
 	};
 	
-	if ((_target getVariable "ace_medical_bloodVolume") < 30) then {
+	if ((_target getVariable ["ace_medical_bloodVolume", 0]) < 30) then {
 		_target setVariable ["ace_medical_bloodVolume", 30, true];
 	};
 	
-	_target setVariable ["ace_medical_inReviveState", false, true];
+	_target setVariable ["ACE_isUnconscious", false, true];
+	if (_target getVariable ["ace_medical_inReviveState", false]) then {
+		_target setVariable ["ace_medical_inReviveState", nil, true];
+	};
 	
 	[_target, "activity", localize "STR_TWC_CPR_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
 	[_target, "activity_view", localize "STR_TWC_CPR_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
