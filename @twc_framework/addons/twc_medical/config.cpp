@@ -16,31 +16,36 @@ class CfgFunctions {
 		tag = "twc_medical";
 		class init {
 			file = "twc_medical\fncs";
-			class action {};
+			// Generics
 			class addTime {};
 			class init { postInit = 1; };
+			class getBloodLoss {};
+
+			// CPR
+			class action {};
 			class canCPR {};
 			class CPR {};
 			class CPR_Local {};
-			class getBloodLoss {};
+
+			// Defib
+			class action_Defib {};
+			class canDefib {};
+			class Defib {};
+			class Defib_Local {};
+
+			// Bloodlust Compat & Insta-Kill
+			class bloodlustInit {};
 		};
 	};
-	
-	/* class twc_extra {
-		tag = "twc_extra";
-		class init {
-			file = "twc_medical\extra";
-			class actionLoadUnit {};
-			class actionUnLoadUnit {};
-		};
-	}; */
 };
 
-/* class CfgVehicles {
+class CfgVehicles {
 	class Man;
 	
 	class CAManBase: Man {
-		/* TODO: Make Self Interaction Entries for the Saline 250ml bags
+		/* 
+			// will have to be a custom function like Defib (almost exactly) for use within vehicles/facility
+			// additionally look into ww2fication of items
 		class ACE_SelfActions {
 			class Medical {
 				class ACE_ArmLeft {
@@ -54,17 +59,34 @@ class CfgFunctions {
 			};
 		}; */
 		
-		/* class ACE_Actions {
+		class ACE_Actions {
+			/* class ACE_Torso {
+				class fieldDressing;
+				class Defib: fieldDressing {
+					displayName = "Defibrillate";
+					condition = "[_player, _target] call twc_medical_fnc_canDefib";
+					statement = "[_player, _target] call twc_medical_fnc_Defib";
+					icon = "";
+				};
+			}; */
+		
 			class ACE_MainActions {
 				class Medical {
-					class ACE_Medical_loadPatient {
-						statement = "[_player, _target] call twc_extra_fnc_actionLoadUnit";
+					class ACE_Torso {
+						class fieldDressing;
+						class Defib: fieldDressing {
+							displayName = "Defibrillate";
+							condition = "[_player, _target] call twc_medical_fnc_canDefib";
+							statement = "[_player, _target] call twc_medical_fnc_Defib";
+							exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside", "isNotSwimming"};
+							icon = "";
+						};
 					};
 				};
 			};
 		};
 	};
-}; */
+};
 
 class ACE_Medical_Actions {
 	class Advanced {
@@ -73,8 +95,21 @@ class ACE_Medical_Actions {
 			callbackSuccess = "twc_medical_fnc_action";
 		};
 		
+		class Defib: CPR {
+			displayName = "Defibrillate";
+			displayNameProgress = "Defibrillating...";
+			treatmentLocations[] = {"MedicalVehicle"};
+			allowedSelections[] = {"body"};
+			condition = "[(_this select 0), (_this select 1)] call twc_medical_fnc_canDefib";
+			allowSelfTreatment = 0;
+			requiredMedic = 1;
+			treatmentTime = 10;
+			patientStateCondition = 1;
+			callbackSuccess = "twc_medical_fnc_action_Defib";
+		};
+		
 		class QuikClot: fieldDressing {
-			treatmentTime = 6;
+			treatmentTime = 5;
 		};
 		
 		class ElasticBandage: fieldDressing {

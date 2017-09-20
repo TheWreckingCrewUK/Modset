@@ -1,3 +1,9 @@
+if(serverTime < 600)then{
+	_index = player createDiarySubject ["loadout","Loadouts"];
+
+	[player,"briefingLoadout.sqf"]remoteExec ["execVM",(group player)];
+};
+
 [] execVM "tasks.sqf";
 
 if(!isNil "completedTasks")then{

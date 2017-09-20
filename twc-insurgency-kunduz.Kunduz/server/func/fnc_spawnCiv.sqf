@@ -21,6 +21,9 @@
 _group = createGroup civilian;
 params["_pos", "_civnum", "_civradius"];
 
+_civnum = floor random[1.6,1.9,2.7] * (3 * ((500 * ((insp_civtrust * -1.1) + 2)) / (_this select 0 distance getMarkerPos "respawn_west")))
+;
+
 for "_i" from 1 to _civnum do {
 	_individualCiv = _group createUnit [civilianType, _pos, [], _civradius, "NONE"];
 	_civHeading = (random 360);

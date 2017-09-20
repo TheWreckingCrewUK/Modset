@@ -4,9 +4,11 @@ systemChat str _givenNumber;
 
 if (_civilianQuestioned in nonQuestionableList) then {
 	hintSilent "I've already told you what I know.";
+			InsP_civtrust = InsP_civtrust - 0.03; publicVariable "InsP_civtrust";
 }else{
 	nonQuestionableList pushBack _civilianQuestioned;
 	publicVariable "nonQuestionableList";
+			InsP_civtrust = InsP_civtrust + 0.06; publicVariable "InsP_civtrust";
 
 	if (_givenNumber == 0) then {
 		switch (True) do {
@@ -19,7 +21,7 @@ if (_civilianQuestioned in nonQuestionableList) then {
 			case (floor InsP_civTrust >= 3):{hintSilent "I believe they are somewhere around here. Good luck."};
 			default {hintSilent "For some reson this Civilian doesn't know the morale status. Please inform management of this bug."};
 		};
-		_rand = (floor (random 4));
+		_rand = (floor (random 2)) - (floor (insp_civtrust)) + 2;
 		if (_rand <= 1)then{
 			_color = "ColorOrange";
 			_object = InsP_cacheGroup call BIS_fnc_selectRandom;

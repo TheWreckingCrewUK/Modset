@@ -3,7 +3,7 @@ author = "[TWC] #Author Name#";
 
 onLoadName = OperationName;
 briefingName = OperationName;
-loadScreen = "\z\addons\twc_ui\loading.paa";
+loadScreen = "twc_ui\loading.paa";
 disabledAI = 1;
 enableDebugConsole = 1;
 disableChannels[] = {0,2,,5};
@@ -202,7 +202,7 @@ class ace_medical_useLocation_basicEpi {
     force = 1;
 };
 class ace_medical_useLocation_PAK {
-    value = 3;
+    value = 2;
     typeName = "SCALAR";
     force = 1;
 };

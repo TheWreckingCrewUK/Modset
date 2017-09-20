@@ -2,7 +2,7 @@ params["_unit"];
 [_unit] spawn{
 	_bluClose = 1;
 	while{_bluClose == 1}do{
-		_obj = nearestObjects [(_this select 0),["Man","Car","Truck"],400];
+		_obj = nearestObjects [(_this select 0),["Man","Car","Truck"],500];
 		{
 			if(side _x == West)exitWith{
 				_bluClose = 1
