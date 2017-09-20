@@ -42,6 +42,7 @@ if ( _probability >= _diceRoll ) exitWith {
 	_painToAdd = ((floor (random [0, 3, 5])) / 10); // they're gonna feel this one
 	_target setVariable ["ace_medical_pain", (_painLevel + _painToAdd), true];
 
+	_target setVariable ["ACE_isUnconscious", false, true]; // might flash conciousness - kinda like it tbh
 	if (_target getVariable ["ace_medical_inReviveState", false]) then {
 		_target setVariable ["ace_medical_inReviveState", nil, true];
 	};
