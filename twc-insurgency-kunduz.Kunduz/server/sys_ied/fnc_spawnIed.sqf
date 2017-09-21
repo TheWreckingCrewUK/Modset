@@ -43,8 +43,8 @@ _trigger setTriggerStatements [
         false
     } forEach thisList;",
     "[thislist select 0] spawn TWC_fnc_iedAttack; (thisTrigger getVariable ['InsP_ied', objNull]) setDamage 1;
-		InsP_enemyMorale = InsP_enemyMorale + 0.15;
-	publicVariable "InsP_enemyMorale";",
+	InsP_enemyMorale = InsP_enemyMorale + 0.15;
+	publicVariable ""InsP_enemyMorale"";",
     ""
 ];
 
