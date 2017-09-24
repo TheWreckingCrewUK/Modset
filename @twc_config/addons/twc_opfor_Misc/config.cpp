@@ -201,10 +201,10 @@ class CFgMarkers
 	class twc_PAC_flag: Flag
 	{
 		name = "Pan-Asian Coalition";
-		icon = "twc_opfor_Misc\data\data\pac_flag.paa";
-		texture = "twc_opfor_Misc\data\data\pac_flag.paa";
+		icon = "twc_opfor_Misc\data\pac_flag.paa";
+		texture = "twc_opfor_Misc\data\pac_flag.paa";
 		size = 32;
-		scope = 1;
+		scope = 2;
 		shadow = 0;
 		color[] = {1,1,1,1};
 		markerClass = "Flags";
