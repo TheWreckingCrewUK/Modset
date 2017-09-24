@@ -46,7 +46,7 @@ class CfgGroups
 										class Unit4
                                         {
                                                 side = 1;
-                                                vehicle = "TWC_Modern_US_Army_AutomaticRifleman";
+                                                vehicle = "Modern_USMC_Autorifleman";
                                                 rank = "PRIVATE";
                                                 position[] = {9,0,0};
                                         };
