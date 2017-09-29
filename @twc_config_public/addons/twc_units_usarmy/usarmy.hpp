@@ -63,7 +63,7 @@
 	class TWC_Modern_US_Army_SectionCommander:TWC_Modern_US_Army_Base
 	{
 		scope=2;
-		displayName="Modern US Army Section Commander";
+		displayName="Bravo Section Commander";
 		backpack="TWC_Backpack_Modern_US_Army_SL";
 		linkedItems[]=
 		{
@@ -210,7 +210,7 @@
 	class TWC_Modern_US_Army_Rifleman:TWC_Modern_US_Army_Base
 	{
 		scope=2;
-		displayName="Modern US Army Rifleman";
+		displayName="Bravo Rifleman";
 		linkedItems[]=
 		{
 			"rhsusf_iotv_ocp_Rifleman",
@@ -274,7 +274,7 @@
 	class TWC_Modern_US_Army_Grenadier:TWC_Modern_US_Army_Base
 	{
 		scope=2;
-		displayName="Modern US Army Grenadier";
+		displayName="Bravo Grenadier";
 		linkedItems[]=
 		{
 			"rhsusf_iotv_ocp_Grenadier",
@@ -356,7 +356,7 @@
 	class TWC_Modern_US_Army_AutomaticRifleman:TWC_Modern_US_Army_Base
 	{
 		scope=2;
-		displayName="Modern US Army Automatic Rifleman";
+		displayName="Bravo Automatic Rifleman";
 		linkedItems[]=
 		{
 			"rhsusf_iotv_ocp_SAW",
@@ -414,7 +414,7 @@
 	class TWC_Modern_US_Army_Marksman:TWC_Modern_US_Army_Base
 	{
 		scope=2;
-		displayName="Modern US Army Marksman";
+		displayName="Bravo Marksman";
 		linkedItems[]=
 		{
 			"rhsusf_iotv_ocp_Rifleman",
@@ -478,7 +478,7 @@
 	class TWC_Modern_US_Army_Medic:TWC_Modern_US_Army_Base
 	{
 		scope=2;
-		displayName="Modern US Army Medic";
+		displayName="Bravo Medic";
 		backpack="TWC_Backpack_Modern_US_Army_Medic";
 		linkedItems[]=
 		{
