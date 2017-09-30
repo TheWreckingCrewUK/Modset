@@ -260,7 +260,8 @@ class CfgVehicles
 				count = 3;
 			};
 		};
-	};s USSR_RPG_bag: CUP_B_RPGPack_Khaki
+	};
+	class USSR_RPG_bag: CUP_B_RPGPack_Khaki
 	{
 		class TransportMagazines
 		{
