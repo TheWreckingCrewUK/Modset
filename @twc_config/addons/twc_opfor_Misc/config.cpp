@@ -190,54 +190,8 @@ class CfgVehicles
 			};
 		};
 	};
-	class sansumka;
-	class USSR_small_medic_bag: sansumka
-	{
-		scope = 1;
-		class TransportItems
-		{
-            class _xx_Bandage
-			{
-				name = "ACE_fieldDressing";
-				count = 8;
-			};
-			class _xx_Morphine
-			{
-				name = "ACE_morphine";
-				count = 5;
-			};
-			class _xx_ACE_elasticBandage
-			{
-				name = "ACE_elasticBandage";
-				count = 10;
-			};
-			class _xxACE_quikclot
-			{
-				name = "ACE_quikclot";
-				count = 6;
-			};
-			class _xxACE_packingBandage
-			{
-				name = "ACE_packingBandage";
-				count = 10;
-			};
-			class _xxACE_tourniquet
-			{
-				name = "ACE_tourniquet";
-				count = 4;
-			};
-		};
-		class TransportMagazines
-		{
-			class _xx_Smoke
-			{
-				magazine = "rhs_mag_rdg2_white";
-				count = 2;
-			};
-		};
-		
-	};
-	class USSR_big_medic_bag: sansumka
+	class rhs_medic_bag;
+	class USSR_big_medic_bag: rhs_medic_bag
 	{
 		scope = 1;
 		class TransportItems

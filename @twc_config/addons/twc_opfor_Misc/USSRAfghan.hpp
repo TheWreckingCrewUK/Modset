@@ -3,11 +3,11 @@ class oksv_gp;
 class oksv_machinegunne;
 class oksv_sniper;
 class oksv_officer;
+class oksv_crew;
 class TWC_USSR_Afghan_Rifleman_Medic: oksv_rifleman
 {
 	faction="TWC_USSR_Afghan";
 	uniformClass="rhs_uniform_m88_patchless";
-	backpack="USSR_small_medic_bag";
 	Items[]=
 	{
 		"ACE_EarPlugs",
@@ -235,6 +235,7 @@ class TWC_USSR_Afghan_Grenadier_Assistant: TWC_USSR_Afghan_Rifleman_Medic
 };
 class TWC_USSR_Afghan_AutoRifleman: TWC_USSR_Afghan_Rifleman
 {
+	backpack= "rhs_sidor";
 	weapons[]=
 	{
 		"Throw",
@@ -274,6 +275,7 @@ class TWC_USSR_Afghan_MachineGunner: oksv_machinegunne
 {
 	faction="TWC_USSR_Afghan";
 	uniformClass="rhs_uniform_m88_patchless";
+	backpack= "rhs_sidor";
 	Items[]=
 	{
 		"ACE_EarPlugs",
@@ -446,6 +448,7 @@ class TWC_USSR_Afghan_Officer: oksv_officer
 {
 	faction="TWC_USSR_Afghan";
 	uniformClass="rhs_uniform_m88_patchless";
+	backpack= "rhs_sidor";
 	linkedItems[] =
 	{
 		"6B3_RHS_OF",
@@ -548,4 +551,83 @@ class TWC_USSR_Afghan_Sergeant: TWC_USSR_Afghan_Officer
 class TWC_USSR_Afghan_Medic: TWC_USSR_Afghan_Officer
 {
 	backpack="USSR_big_medic_bag";
+};
+class TWC_USSR_Afghan_crewman: oksv_crew
+{
+	faction="TWC_USSR_Afghan";
+	uniformClass="rhs_uniform_m88_patchless";
+	Items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_tourniquet"
+	};
+	respawntems[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_packingBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_quikclot",
+		"ACE_quikclot",
+		"ACE_morphine",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_tourniquet"		
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AKS74U"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AKS74U"
+	};
+	magazines[]=
+	{
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"rhs_mag_rdg2_white"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"rhs_mag_rdg2_white"
+	};
 };
