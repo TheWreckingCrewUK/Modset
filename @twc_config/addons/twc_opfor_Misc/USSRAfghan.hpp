@@ -103,6 +103,7 @@ class TWC_USSR_Afghan_Senior_Rifleman: oksv_gp
 {
 	faction="TWC_USSR_Afghan";
 	uniformClass="rhs_uniform_m88_patchless";
+	backpack="USSR_Serg_bag";
 	Items[]=
 	{
 		"ACE_EarPlugs",
@@ -542,9 +543,9 @@ class TWC_USSR_Afghan_Officer: oksv_officer
 };
 class TWC_USSR_Afghan_Sergeant: TWC_USSR_Afghan_Officer
 {
-	backpack="rhs_sidor";
+	backpack="USSR_Serg_bag";
 };
 class TWC_USSR_Afghan_Medic: TWC_USSR_Afghan_Officer
 {
-	backpack="Medic";
+	backpack="USSR_big_medic_bag";
 };

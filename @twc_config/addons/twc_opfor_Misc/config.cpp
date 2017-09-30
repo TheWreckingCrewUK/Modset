@@ -237,7 +237,76 @@ class CfgVehicles
 		};
 		
 	};
-	class USSR_RPG_bag: CUP_B_RPGPack_Khaki
+	class USSR_big_medic_bag: sansumka
+	{
+		scope = 1;
+		class TransportItems
+		{
+            class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 12;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 10;
+			};
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 15;
+			};
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 6;
+			};
+			class _xxACE_adenosine
+			{
+				name = "ACE_adenosine";
+				count = 4;
+			};
+			class _xxACE_atropine
+			{
+				name = "ACE_atropine";
+				count = 4;
+			};
+			class _xxACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _xxACE_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 15;
+			};
+			class _xxACE_personalAidKit
+			{
+				name = "ACE_personalAidKit";
+				count = 1;
+			};
+			class _xxACE_salineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 6;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 4;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+		};
+	};s USSR_RPG_bag: CUP_B_RPGPack_Khaki
 	{
 		class TransportMagazines
 		{
