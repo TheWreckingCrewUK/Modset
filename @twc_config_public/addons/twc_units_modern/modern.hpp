@@ -81,7 +81,7 @@
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
-		displayName="Section Leader (Modern)";
+		displayName="Alpha Section Leader";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
@@ -158,7 +158,7 @@
 	class Modern_British_Rifleman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Rifleman (Modern)";
+		displayName="Alpha Rifleman";
 		weapons[]=
 		{
 			"Throw",
@@ -207,7 +207,7 @@
 	class Modern_British_Grenadier: Modern_British_Base
 	{
 		scope=2;
-		displayName="Grenadier (Modern)";
+		displayName="Alpha Grenadier";
 		icon="iconManExplosive";
 		linkedItems[]=
 		{
@@ -299,7 +299,7 @@
 	class Modern_British_Autorifleman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Automatic Rifleman (Modern)";
+		displayName="Alpha Automatic Rifleman";
 		icon="iconManMG";
 		backpack="TWC_Backpack_Modern_Autorifleman_Kitbag";
 		linkedItems[]=
@@ -353,7 +353,7 @@
 	};
 	class Modern_British_2IC: Modern_British_Rifleman
 	{
-		displayName="2IC (Modern)";
+		displayName="Alpha 2IC";
 		backpack="TWC_Backpack_Modern_2IC";
 		weapons[]=
 		{
@@ -407,7 +407,7 @@
 	class Modern_British_Machinegunner: Modern_British_Autorifleman
 	{
 		scope=2;
-		displayName="Machine Gunner (Modern)";
+		displayName="Alpha Machine Gunner";
 		backpack="TWC_Backpack_Modern_MachineGunner_Kitbag";
 		weapons[]=
 		{

@@ -134,6 +134,14 @@ class CfgFactionClasses
 		priority=2;
 		side=3;
 	};
+	class TWC_USSR_Afghan
+	{
+		displayName="TWC Red Army Afghanistan Operation Units";
+		author="The Wrecking Crew";
+		icon="TWClogo.paa";
+		priority=2;
+		side=3;
+	};
 };
 class CfgVehicles
 {
@@ -182,6 +190,110 @@ class CfgVehicles
 			};
 		};
 	};
+	class rhs_medic_bag;
+	class USSR_big_medic_bag: rhs_medic_bag
+	{
+		scope = 1;
+		class TransportItems
+		{
+            class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 12;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 10;
+			};
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 15;
+			};
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 6;
+			};
+			class _xxACE_adenosine
+			{
+				name = "ACE_adenosine";
+				count = 4;
+			};
+			class _xxACE_atropine
+			{
+				name = "ACE_atropine";
+				count = 4;
+			};
+			class _xxACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _xxACE_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 15;
+			};
+			class _xxACE_personalAidKit
+			{
+				name = "ACE_personalAidKit";
+				count = 1;
+			};
+			class _xxACE_salineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 6;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 4;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+		};
+	};
+	class USSR_RPG_bag: CUP_B_RPGPack_Khaki
+	{
+		class TransportMagazines
+		{
+			class _xx_RPG7
+			{
+				magazine="rhs_rpg7_PG7V_mag";
+				count=3;
+			};
+		};
+	};
+	class rhs_sidor;
+	class USSR_Serg_bag: rhs_sidor
+	{
+		class TransportMagazines
+		{
+			class _xx_AK
+			{
+				magazine="CUP_30Rnd_545x39_AK_M";
+				count=6;
+			};
+			class _xx_RPK
+			{
+				magazine="CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+				count=2;
+			};
+			class _xx_MM
+			{
+				magazine="CUP_10Rnd_762x54_SVD_M";
+				count=4;
+			};
+		};
+	};
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
@@ -191,7 +303,24 @@ class CfgVehicles
 	#include "african.hpp"
 	#include "irish.hpp"
 	
+	#include "USSRAfghan.hpp"
+	
 	#include "takistan.hpp"
 	
 	#include "usa_1970.hpp"
+};
+class CFgMarkers 
+{
+	class flag;
+	class twc_PAC_flag: Flag
+	{
+		name = "Pan-Asian Coalition";
+		icon = "twc_opfor_Misc\data\pac_flag.paa";
+		texture = "twc_opfor_Misc\data\pac_flag.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};	
 };

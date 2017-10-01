@@ -81,7 +81,7 @@ respawntems[]=
 class Modern_USMC_Squadleader: Modern_USMC_Base
 {
 scope=2;
-displayName="Squad Leader (Modern)";
+displayName="Charlie Squad Leader";
 icon="iconManLeader";
 backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
@@ -156,7 +156,7 @@ Respawnmagazines[]=
 class Modern_USMC_Teamleader: Modern_USMC_Base
 {
 scope=2;
-displayName="Team Leader (Modern)";
+displayName="Charlie Team Leader";
 icon="iconManLeader";
 backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
@@ -231,7 +231,7 @@ Respawnmagazines[]=
 class Modern_USMC_Rifleman: Modern_USMC_Base
 {
 scope=2;
-displayName="Rifleman (Modern)";
+displayName="Charlie Rifleman";
 backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
@@ -305,7 +305,7 @@ Respawnmagazines[]=
 class Modern_USMC_Autorifleman: Modern_USMC_Base
 {
 scope=2;
-displayName="Autorifleman (Modern)";
+displayName="Charlie Autorifleman";
 backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
@@ -369,7 +369,7 @@ Respawnmagazines[]=
 class Modern_USMC_AsstAutorifleman: Modern_USMC_Base
 {
 scope=2;
-displayName="Asst. Automatic Rifleman (Modern)";
+displayName="Charlie Asst. Automatic Rifleman";
 icon="iconManMG";
 backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
@@ -437,10 +437,150 @@ Respawnmagazines[]=
 "SmokeShell"
 };
 };
+class Modern_USMC_MachineGunner: Modern_USMC_Base
+{
+scope=2;
+displayName="Charlie Machine Gunner";
+icon="iconManMG";
+backpack="rhsusf_assault_eagleaiii_coy";
+linkedItems[]=
+{
+"rhsusf_spc_mg",
+"rhsusf_mich_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch",
+"UK3CB_BAF_G_Tactical_Black"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_mg",
+"rhsusf_mich_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch",
+"UK3CB_BAF_G_Tactical_Black"
+};
+weapons[]=
+{
+"Throw",
+"Put",
+"rhs_weap_m240b",
+"rhsusf_weap_m9"
+};
+respawnweapons[]=
+{
+"Throw",
+"Put",
+"rhs_weap_m240b",
+"rhsusf_weap_m9"
+};
+magazines[]=
+{
+"rhsusf_mag_15Rnd_9x19_JHP",
+"rhsusf_mag_15Rnd_9x19_JHP",
+"rhsusf_100Rnd_762x51",
+"rhsusf_100Rnd_762x51",
+"rhsusf_100Rnd_762x51_m62_tracer",
+"rhsusf_100Rnd_762x51_m62_tracer",
+"CUP_HandGrenade_L109A2_HE",
+"CUP_HandGrenade_L109A2_HE",
+"SmokeShell",
+"SmokeShell",
+"SmokeShell"
+};
+Respawnmagazines[]=
+{
+"rhsusf_mag_15Rnd_9x19_JHP",
+"rhsusf_mag_15Rnd_9x19_JHP",
+"rhsusf_100Rnd_762x51",
+"rhsusf_100Rnd_762x51",
+"rhsusf_100Rnd_762x51_m62_tracer",
+"rhsusf_100Rnd_762x51_m62_tracer",
+"CUP_HandGrenade_L109A2_HE",
+"CUP_HandGrenade_L109A2_HE",
+"SmokeShell",
+"SmokeShell",
+"SmokeShell"
+};
+};
+class Modern_USMC_AsstMachineGunner: Modern_USMC_Base
+{
+scope=2;
+displayName="Charlie Asst. Machine Gunner";
+icon="iconManMG";
+backpack="rhsusf_assault_eagleaiii_coy";
+linkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_mich_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch",
+"UK3CB_BAF_G_Tactical_Black"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_mich_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch",
+"UK3CB_BAF_G_Tactical_Black"
+};
+weapons[]=
+{
+"Throw",
+"Put",
+"rhs_weap_m16a4_carryhandle_grip",
+"rhs_weap_M136_hedp",
+"rhsusf_weap_m9"
+};
+respawnweapons[]=
+{
+"Throw",
+"Put",
+"rhs_weap_m16a4_carryhandle_grip",
+"rhs_weap_M136_hedp",
+"rhsusf_weap_m9"
+};
+magazines[]=
+{
+"rhsusf_mag_15Rnd_9x19_JHP",
+"rhsusf_mag_15Rnd_9x19_JHP",
+"30Rnd_556x45_Stanag",
+"30Rnd_556x45_Stanag",
+"30Rnd_556x45_Stanag",
+"30Rnd_556x45_Stanag",
+"30Rnd_556x45_Stanag_Tracer_Red",
+"30Rnd_556x45_Stanag_Tracer_Red",
+"CUP_HandGrenade_L109A2_HE",
+"CUP_HandGrenade_L109A2_HE",
+"SmokeShell",
+"SmokeShell",
+"SmokeShell"
+};
+Respawnmagazines[]=
+{
+"rhsusf_mag_15Rnd_9x19_JHP",
+"rhsusf_mag_15Rnd_9x19_JHP",
+"30Rnd_556x45_Stanag",
+"30Rnd_556x45_Stanag",
+"30Rnd_556x45_Stanag",
+"30Rnd_556x45_Stanag",
+"30Rnd_556x45_Stanag_Tracer_Red",
+"30Rnd_556x45_Stanag_Tracer_Red",
+"CUP_HandGrenade_L109A2_HE",
+"CUP_HandGrenade_L109A2_HE",
+"SmokeShell",
+"SmokeShell",
+"SmokeShell"
+};
+};
 class Modern_USMC_Medic: Modern_USMC_Base
 {
 scope=2;
-displayName="Medic (Modern)";
+displayName="Charlie Medic";
 icon="iconManMedic";
 backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
@@ -515,7 +655,7 @@ init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ac
 class Modern_USMC_Platoon_Commander: Modern_USMC_Squadleader
 {
 scope=2;
-displayName="USMC Platoon Commander (Modern)";
+displayName="USMC Platoon Commander";
 backpack="rhsusf_assault_eagleaiii_coy";
 icon="iconManLeader";
 linkedItems[]=
@@ -542,7 +682,7 @@ respawnLinkedItems[]=
 class Modern_USMC_Platoon_Sergeant: Modern_USMC_Platoon_Commander
 {
 scope=2;
-displayName="USMC Platoon Commander (Modern)";
+displayName="USMC Platoon Commander";
 backpack="rhsusf_assault_eagleaiii_coy";
 icon="iconManLeader";
 linkedItems[]=
@@ -569,7 +709,7 @@ respawnLinkedItems[]=
 class Modern_USMC_HeliPilot: Modern_USMC_Base
 {
 scope=2;
-displayName="USMC Helicopter Pilot(Modern)";
+displayName="USMC Helicopter Pilot";
 uniformClass="CUP_U_B_USArmy_PilotOverall";
 backpack="rhsusf_falconii_coy";
 linkedItems[]=
@@ -629,14 +769,14 @@ class Modern_USMC_JetPilot: Modern_USMC_Base
 {
 _generalMacro="Modern_USMCJetPilot";
 scope=2;
-displayName="USMC Jet Pilot(Modern)";
+displayName="USMC Jet Pilot";
 faction="twc_faction";
 editorSubcategory = "Men_Modern";
 vehicleClass="Men_Modern";
 icon="iconMan";
 nakedUniform="U_BasicBody";
 uniformClass="CUP_U_B_USMC_PilotOverall";
-backpack="B_AssaultPack_blk";
+backpack="rhsusf_falconii";
 linkedItems[]=
 {
 "RHS_jetpilot_usaf",
@@ -685,7 +825,7 @@ Respawnmagazines[]=
 class Modern_USMC_MortarGunner: Modern_USMC_Rifleman
 {
 scope=2;
-displayName="USMC Mortar Gunner(Modern)";
+displayName="USMC Mortar Gunner";
 icon="iconMan";
 backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
@@ -735,7 +875,7 @@ Respawnmagazines[]=
 };
 class Modern_USMC_MortarAssistant: Modern_USMC_MortarGunner
 {
-displayName="USMC Mortar Assistant(Modern)";
+displayName="USMC Mortar Assistant";
 backpack="rhsusf_assault_eagleaiii_coy";
 weapons[]=
 {
@@ -755,7 +895,7 @@ respawnweapons[]=
 class Modern_USMC_Sniper: Modern_USMC_Base
 {
 scope=2;
-displayName="USMC Sniper (Modern)";
+displayName="USMC Sniper";
 nakedUniform="U_BasicBody";
 uniformClass="rhs_uniform_FROG01_d";
 backpack="rhsusf_assault_eagleaiii_coy";
@@ -823,7 +963,7 @@ Respawnmagazines[]=
 };
 class Modern_USMC_Spotter: Modern_USMC_Sniper
 {
-displayName="USMC Spotter (Modern)";
+displayName="USMC Spotter";
 icon="iconManLeader";
 nakedUniform="U_BasicBody";
 uniformClass="rhs_uniform_FROG01_d";
@@ -876,7 +1016,7 @@ Respawnmagazines[]=
 class Modern_USMC_FAC: Modern_USMC_Base
 {
 scope=2;
-displayName="USMC FAC(Modern)";
+displayName="USMC FAC";
 backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {

@@ -4,7 +4,7 @@
  */
 // Make sure player is initialized
 if (isDedicated) exitWith {};
-if (!isDedicated && (player != player)) then { waitUntil {player == player}; waitUntil {time > 10}; };
+if (player != player) then { waitUntil {player == player}; waitUntil {time > 10}; };
  
 // set default local values
 if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
@@ -26,6 +26,12 @@ TWC_Medical_OnUnitExplosion = {
 			 && alive _unit) exitWith {
 			_unit setVariable ["ace_medical_inReviveState", nil, true];
 			_unit setVariable ["ace_medical_reviveStartTime", nil];
+			
+			removeAllItems _unit;
+			removeAllWeapons _unit;
+			removeAllAssignedItems _unit;
+			_unit removeItems "ItemMap";
+			
 			[_unit, true, true] call ace_medical_fnc_setDead;
 		};
 	};

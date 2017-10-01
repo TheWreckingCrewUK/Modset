@@ -1,3 +1,5 @@
+1. In the mission, go to addon settings and define the ACRE - Operations room for channel switching & force it.
+
 2. In description.ext insert Operation and Creator Name.
 
 3. If not done already, place down a base marker named base.

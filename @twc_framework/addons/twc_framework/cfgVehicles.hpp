@@ -242,7 +242,7 @@ class cfgVehicles
 		isTriggerActivated=0;
 		function="twc_fnc_setSpectator";
 		curatorCanAttach = 1;
-		displayName = "Join / Leave Spectator Voice";
+		displayName = "Toggle Unit ACRE Spectator";
 	};
 	class twc_moduleMedicalInfo: Module_F
 	{
@@ -255,7 +255,7 @@ class cfgVehicles
 		isTriggerActivated=0;
 		function="twc_fnc_medicalInfo";
 		curatorCanAttach = 1;
-		displayName = "Hint a units medical Info";
+		displayName = "Hint Unit Medical Info";
 	};
 /*
 	class Man;
