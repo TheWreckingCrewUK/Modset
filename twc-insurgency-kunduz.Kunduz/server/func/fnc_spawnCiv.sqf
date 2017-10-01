@@ -11,7 +11,7 @@
 *
 * 1 - Interger   Amount of civillians   Default: 7
 * 
-*
+*(3 * ((500 * ((insp_civtrust * 0.5)) + 2) / (_this select 0 distance getMarkerPos *"respawn_west")))
 * Example:
 *
 *["bastam",7] spawn twc_fnc_SpawnCiv
@@ -21,7 +21,12 @@
 _group = createGroup civilian;
 params["_pos", "_civnum", "_civradius"];
 
-_civnum = floor random[1.6,1.9,2.7] * (3 * ((500 * ((insp_civtrust * 1.1) + 2)) / (_this select 0 distance getMarkerPos "respawn_west")))
+
+
+
+_civnum = random[3,4,5] * (2+(((_this select 0 distance getMarkerPos "respawn_west")- 2500)* (insp_civtrust * -0.001))
+
+)
 ;
 
 for "_i" from 1 to _civnum do {
