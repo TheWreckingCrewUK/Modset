@@ -26,6 +26,10 @@ TWC_Medical_OnUnitExplosion = {
 			 && alive _unit) exitWith {
 			_unit setVariable ["ace_medical_inReviveState", nil, true];
 			_unit setVariable ["ace_medical_reviveStartTime", nil];
+			
+			removeAllItems _unit;
+			removeAllWeapons _unit;
+			
 			[_unit, true, true] call ace_medical_fnc_setDead;
 		};
 	};
