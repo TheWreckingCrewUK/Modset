@@ -22,7 +22,7 @@ if (_civilianQuestioned in nonQuestionableList) then {
 			default {hintSilent "For some reson this Civilian doesn't know the morale status. Please inform management of this bug."};
 		};
 		_rand = (floor (random 2)) - (floor (insp_civtrust)) + 2;
-		if (_rand <= 1)then{
+		if (_rand < 2)then{
 			_color = "ColorOrange";
 			_object = InsP_cacheGroup call BIS_fnc_selectRandom;
 			_distance = [250,500,500,750,750,1000,1000,1500,2000] call BIS_fnc_selectRandom;
@@ -41,7 +41,7 @@ if (_civilianQuestioned in nonQuestionableList) then {
 				default {hint "Something went wrong";};
 			};
 		};
-		if (_rand == 2)then{
+		if (_rand >= 2)then{
 			_color = "ColorBlue";
 			_object = InsP_aaGroup call BIS_fnc_selectRandom;
 			_distance = [250,500,500,750,750,1000,1000,1500] call BIS_fnc_selectRandom;
@@ -59,7 +59,7 @@ if (_civilianQuestioned in nonQuestionableList) then {
 				default {hint "Something went wrong";};
 			};
 		};
-		if (_rand >= 3)then{
+		if (_rand >= 30)then{
 			_color = "ColorYellow";
 			_object = InsP_iedGroup call BIS_fnc_selectRandom;
 			_distance = [100,200] call BIS_fnc_selectRandom;
