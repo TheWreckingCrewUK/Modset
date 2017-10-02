@@ -26,9 +26,6 @@ for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
 for "_i" from 1 to 3 do {player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
 for "_i" from 1 to 8 do {player addItemToUniform "rhsusf_5Rnd_762x51_m118_special_Mag";};
 player addBackpack "rhsusf_assault_eagleaiii_ocp";
-player addItemToBackpack "ACE_Kestrel4500";
-player addItemToBackpack "ACE_RangeCard";
-player addItemToBackpack "ACE_ATragMX";
 player addHeadgear "rhsusf_ach_helmet_headset_ocp";
 player addGoggles "UK3CB_BAF_G_Tactical_Black";
 

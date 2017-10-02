@@ -29,8 +29,9 @@ for "_i" from 1 to 3 do {player addItemToBackpack "SmokeShell";};
 player addHeadgear "UK3CB_BAF_H_Mk7_Scrim_E";
 
 comment "Add weapons";
-player addWeapon "UK3CB_BAF_L129A1_FGrip";
+player addWeapon "UK3CB_BAF_L129A1";
 player addPrimaryWeaponItem "UK3CB_BAF_LLM_IR_Black";
+player addPrimaryWeaponItem "UK3CB_underbarrel_acc_fgrip_bipod";
 player addPrimaryWeaponItem "UK3CB_BAF_TA648_308";
 player addWeapon "launch_NLAW_F";
 player addWeapon "ACE_Vector";

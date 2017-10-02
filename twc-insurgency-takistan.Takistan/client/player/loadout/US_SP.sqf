@@ -28,8 +28,6 @@ for "_i" from 1 to 5 do {player addItemToVest "1Rnd_HE_Grenade_shell";};
 for "_i" from 1 to 2 do {player addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";};
 player addBackpack "rhsusf_assault_eagleaiii_ocp";
 player addItemToBackpack "ACRE_PRC117F_ID_1";
-for "_i" from 1 to 4 do {player addItemToBackpack "1Rnd_HE_Grenade_shell";};
-for "_i" from 1 to 3 do {player addItemToBackpack "1Rnd_SmokeRed_Grenade_shell";};
 player addItemToBackpack "HandGrenade";
 player addItemToBackpack "ACE_Kestrel4500";
 player addItemToBackpack "ACE_RangeCard";
