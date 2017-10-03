@@ -3,7 +3,7 @@
  * If a user has bloodlust, they should see the vaporization - otherwise, they'll just see a ragdoll
  */
 // Make sure player is initialized
-if (isDedicated) exitWith {};
+/* if (isDedicated) exitWith {};
 if (player != player) then { waitUntil {player == player}; waitUntil {time > 10}; };
  
 // set default local values
@@ -39,4 +39,25 @@ TWC_Medical_OnUnitExplosion = {
 
 player addEventHandler ["Explosion", {
 	[_this] call TWC_Medical_OnUnitExplosion;
-}];
+}]; */
+
+if (!isDedicated) exitWith {};
+
+_TWC_VaporizedUnitCompat = {
+	params ["_unit", "_damage"];
+	private _isUnitVaporized = _unit getVariable ["BloodLust_IsVaporized", false];
+	
+	if (_isUnitVaporized) then {
+		_unit setVariable ["ace_medical_inReviveState", nil, true];
+		_unit setVariable ["ace_medical_reviveStartTime", nil];
+		
+		removeAllItems _unit;
+		removeAllWeapons _unit;
+		removeAllAssignedItems _unit;
+		_unit removeItems "ItemMap";
+		
+		[_unit, true, true] call ace_medical_fnc_setDead;
+	};
+};
+
+BloodLust_OnUnitExplosionPostEventHandlers pushBack _TWC_VaporizedUnitCompat;
