@@ -29,6 +29,6 @@
 
 #define COLDWAR_SECTION_LAW 2
 
-#include "coldwar_wheeled.hpp";
-#include "coldwar_tracked.hpp";
-#include "coldwar_helicopter.hpp";
+#include "coldwar_wheeled.hpp"
+#include "coldwar_tracked.hpp"
+#include "coldwar_helicopter.hpp"

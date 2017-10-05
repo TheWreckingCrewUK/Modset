@@ -20,12 +20,13 @@
 #define MILLENNIAL_SECTION_EARLY_RIFLE 20
 #define MILLENNIAL_SECTION_EARLY_RIFLE_T 10
 
-#define MILLENNIAL_SECTION_MECHANISED_EARLY_RIFLE 20
-#define MILLENNIAL_SECTION_MECHANISED_EARLY_RIFLE_T 10
+#define MILLENNIAL_SECTION_MECHANISED_EARLY_RIFLE 30
+#define MILLENNIAL_SECTION_MECHANISED_EARLY_RIFLE_T 16
+
+#define MILLENNIAL_SECTION_LAW80 2
 
 // late millennial (oughts)
 
-
-#include "millennial_wheeled.hpp";
-#include "millennial_tracked.hpp";
+#include "millennial_wheeled.hpp"
+#include "millennial_tracked.hpp"
 //#include "millennial_helicopter.hpp"; // currently don't have it

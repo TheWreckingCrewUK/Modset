@@ -68,19 +68,7 @@ class CfgPatches {
 };
 
 class CfgFunctions {
-	class twc_vehicles {
-		tag = "TWC";
-		
-		class FunctionsWarrior {
-			file = "twc_vehicles\xtra";
-			class AddAP { };
-			class AddHE { };
-			class RemoveAP { };
-			class RemoveHE { };
-			class RemoveAmmoInventory { };
-			class ShowAmmo { };
-		};
-	};
+	#include "CfgFunctions.hpp"
 };
 
 class Extended_PostInit_EventHandlers {
@@ -90,70 +78,11 @@ class Extended_PostInit_EventHandlers {
 };
 
 class CfgMagazines {
-	class 140Rnd_30mm_MP_shells_Tracer_Yellow;
-	class TWC_Magazine_30mm_3rd_HET: 140Rnd_30mm_MP_shells_Tracer_Yellow {
-		author = "FakeMatty, Bosenator";
-		scope = 1;
-		scopeArsenal = 0;
-		displayName = "L13A1 30mm 3rd HE-T";
-		count = 3;
-	};
-	
-	class 60Rnd_30mm_APFSDS_shells;
-	class TWC_Magazine_30mm_3rd_APDS: 60Rnd_30mm_APFSDS_shells {
-		author = "FakeMatty, Bosenator";
-		scope = 1;
-		scopeArsenal = 0;
-		displayName = "L14A1 30mm 3rd APDS";
-		count = 3;
-	};
+	#include "CfgMagazines.hpp"
 };
 
 class CfgWeapons {
-	class HE;
-	class AP;
-	class autocannon_30mm;
-	class CUP_Vlmg_L94A1_Coax;
-	class ACE_ItemCore;
-	class InventoryItem_Base_F;
-	
-	class TWC_GPMG: CUP_Vlmg_L94A1_Coax {
-		displayname = "L94A1";
-	};
-	
-	class TWC_Rarden: autocannon_30mm {
-		displayname = "L21A1 Rarden";
-		magazineReloadTime = 1.2;
-		magazines[] = {
-			"TWC_Magazine_30mm_3rd_APDS",
-			"TWC_Magazine_30mm_3rd_HET"
-		};
-	};
-	
-	// Items, so they come up in the inventory for the reload system
-	class TWC_Item_30mm_3rd_HET: ACE_ItemCore {
-		scope = 2;
-		picture = "twc_vehicles\ui\30mmHE.paa";
-		displayName = "L13A1 30mm 3rd HE-T";
-		descriptionShort = "Used in the FV510 Warrior";
-		descriptionUse = "";
-		
-		class ItemInfo: InventoryItem_Base_F {
-			mass = 30;
-		};
-	};
-	
-	class TWC_Item_30mm_3rd_APDS: ACE_ItemCore {
-		scope = 2;
-		picture = "twc_vehicles\ui\30mmAP.paa";
-		displayName = "L14A1 30mm 3rd APDS";
-		descriptionShort = "Used in the FV510 Warrior";
-		descriptionUse = "";
-		
-		class ItemInfo: InventoryItem_Base_F {
-			mass = 30;
-		};
-	};
+	#include "CfgWeapons.hpp"
 };
 
 class DefaultEventhandlers;

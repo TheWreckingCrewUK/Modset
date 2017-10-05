@@ -8,6 +8,6 @@
 // doesn't have a loadout, at the moment
 #define GENERIC_EMPTY 0
 
-#include "generic_wheeled.hpp";
-#include "generic_helicopter.hpp";
-#include "generic_plane.hpp";
+#include "generic_wheeled.hpp"
+#include "generic_helicopter.hpp"
+#include "generic_plane.hpp"

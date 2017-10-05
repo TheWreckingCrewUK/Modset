@@ -99,7 +99,7 @@ class TWC_Vehicle_ColdWar_Scimitar_Chameleon: ukcw_cvrt_Scim_w_L1 {
 
 #define CURRENT_VEHICLE COLDWAR_SCORPION_MOD
 
-class TWC_Vehicle_ColdWar_Scimitar_Chameleon: ukcw_cvrt_Scorpion_w_L1 {
+class TWC_Vehicle_ColdWar_Scorpion_Chameleon: ukcw_cvrt_Scorpion_w_L1 {
 	scope = 2;
 	side = 1;
 	ADD_FACTION;
