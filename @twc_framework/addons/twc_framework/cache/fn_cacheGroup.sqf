@@ -19,7 +19,7 @@ if(!(isNil {_group getVariable "twc_cacheDefending"}))then{
 	}forEach (units _group);
 }else{
 	{
-		if(leader _x != _x || str (assignedVehicleRole _x) != ["Driver"])then{
+		if(leader _x != _x || str (assignedVehicleRole _x) != "['Driver']")then{
 			_x enableSimulationGlobal false;
 			_x hideObjectGlobal true;
 		};
