@@ -24,9 +24,7 @@ class CfgFunctions
 		class Func
 		{
 			file="oh_round_chute\data\functions";
-			class Jumpout
-			{
-			};
+			class Jumpout {};
 		};
 	};
 };
@@ -66,7 +64,7 @@ class Extended_InitPost_EventHandlers
 	{
 		class oh_jump_init
 		{
-			init="[_this select 0] execVM ""oh_round_chute\data\scripts\jump_init.sqf"";";
+			init="[_this select 0] execVM ""oh_round_chute\data\scripts\init.sqf"";";
 		};
 	};
 };
