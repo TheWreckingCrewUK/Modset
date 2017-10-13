@@ -24,9 +24,7 @@ class CfgFunctions
 		class Func
 		{
 			file="oh_round_chute\data\functions";
-			class Jumpout
-			{
-			};
+			class Jumpout {};
 		};
 	};
 };
