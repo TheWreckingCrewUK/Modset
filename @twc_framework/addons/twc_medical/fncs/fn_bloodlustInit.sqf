@@ -4,7 +4,6 @@
  */
 // Make sure player is initialized
 /* if (isDedicated) exitWith {};
-if (player != player) then { waitUntil {player == player}; waitUntil {time > 10}; };
  
 // set default local values
 if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
@@ -40,8 +39,8 @@ TWC_Medical_OnUnitExplosion = {
 player addEventHandler ["Explosion", {
 	[_this] call TWC_Medical_OnUnitExplosion;
 }]; */
-
 if (!isDedicated) exitWith {};
+if (player != player) then { waitUntil {player == player}; waitUntil {time > 10}; };
 
 _TWC_VaporizedUnitCompat = {
 	params ["_unit", "_damage"];
