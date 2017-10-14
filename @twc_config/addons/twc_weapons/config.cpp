@@ -66,7 +66,7 @@ class cfgWeapons
 		_generalMacro="Launch_NLAW_F";
 		scope=2;
 		displayname="Field Tent";
-		model = "\UK3CB_BAF_Weapons\addons\UK3CB_BAF_Weapons_Static\Static_Tripod_Bag_equipped.p3d";
+		model = "\UK3CB_BAF_Weapons\addons\UK3CB_BAF_Weapons_Static\uk3cb_static_tripod_bag_equipped.p3d";
 		picture = "\UK3CB_BAF_Weapons\addons\UK3CB_BAF_Weapons_Static\data\gear_L16_tripod_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
 		handAnim[]={};

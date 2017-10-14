@@ -1,7 +1,5 @@
 params["_debug","_group","_aicacheDistance"];
 
-sleep 2;
-
 if(isNull _group)exitWith{systemChat "The group was null. Exiting"; deleteGroup _group};
 
 _leader = leader _group;

@@ -23,7 +23,7 @@ if (isNil "_positionOveride") then {
 	if !(_positionOverride isEqualTo []) then {
 		throw "positionOverride needs to be an array";
 	} else {
-		if (_positionOveride count > 3 || _positionOveride count < 3) then {
+		if (count _positionOveride > 3 || count _positionOveride < 3) then {
 			throw "positionOverride needs [x, y, z]";
 		} else {
 			_attachLocation = _positionOveride;
