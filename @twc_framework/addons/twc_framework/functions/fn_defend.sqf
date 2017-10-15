@@ -24,7 +24,7 @@ params["_unit",["_pos",[]],["_radius",200],["_size",2],["_patrol",false]];
 	_x setVariable ["NOAI",1,true];
 }forEach units (group _unit);
 
-if(isMultiplayer && (count (entities "HeadlessClient_F") == 0))then{
+if(isMultiplayer && (count (entities "HeadlessClient_F") != 0))then{
 	waitUntil{groupOwner (group _unit) != 2};
 };
 

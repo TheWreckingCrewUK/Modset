@@ -6,6 +6,7 @@
 	class UK3CB_BAF_B_Bergen_MTP_Medic_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_JTAC_L_A;
+	class B_AssaultPack_blk;
 	
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
 	
@@ -528,6 +529,18 @@
 			{
 				magazine = "1Rnd_SmokePurple_Grenade_shell";
 				count = 3;
+			};
+		};
+	};
+	class TWC_Backpack_Modern_HeloPilot: B_AssaultPack_blk
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
 			};
 		};
 	};

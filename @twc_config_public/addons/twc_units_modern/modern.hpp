@@ -32,6 +32,7 @@
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
+			"ACE_fieldDressing",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
@@ -673,7 +674,7 @@
 		scope=2;
 		displayName="Helicopter Pilot(Modern)";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
-		backpack="B_AssaultPack_blk";
+		backpack="TWC_Backpack_Modern_HeloPilot";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -681,7 +682,7 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_microDAGR_Item"
+			"itemCTAB"
 		};
 		respawnLinkedItems[]=
 		{
@@ -690,7 +691,7 @@
 			"ItemMap",		
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_microDAGR_Item"
+			"itemCTAB"
 		};
 		weapons[]=
 		{
@@ -737,7 +738,7 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_microDAGR_Item"
+			"ACE_microDAGR"
 		};
 		respawnLinkedItems[]=
 		{
@@ -745,7 +746,7 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_microDAGR_Item"
+			"ACE_microDAGR"
 		};
 		weapons[]=
 		{
