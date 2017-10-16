@@ -565,7 +565,40 @@
 		displayName="Carl-Gustaf Assistant";
 		backpack="TWC_Backpack_1990_CGAss";
 	};
-	
+	class 1990_British_Engineer: 1990_British_Base
+	{
+		scope=2;
+		displayName="Engineer";
+		backpack="TWC_Backpack_1990_Engineer";
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell"
+		};	
+	};
 //////////////////////////////  Mounted  //////////////////////////////
 	class 1990_British_Rifleman_Mounted: 1990_British_Rifleman
 	{
@@ -1285,4 +1318,45 @@
 		"ACRE_PRC148",
 		"UK3CB_BAF_HMNVS"		
 		};
+	};
+// Winter Units
+	class 1990_British_Platoon_Commander_Artic: 1990_British_Platoon_Commander
+	{
+		uniformClass = "TWC_Smock_Artic";
+	};
+	class 1990_British_Platoon_Sergeant_Artic: 1990_British_Platoon_Sergeant
+	{
+		uniformClass = "TWC_Smock_Artic";
+	};
+	class 1990_British_Medic_Artic: 1990_British_Medic
+	{
+		uniformClass = "TWC_Smock_Artic";
+	};
+	class 1990_British_Platoon_CSM_Artic: 1990_British_Platoon_CSM
+	{
+		uniformClass = "TWC_Smock_Artic";
+	};
+	class 1990_British_SectionCommander_Artic: 1990_British_SectionCommander
+	{
+		uniformClass = "TWC_Smock_Artic";
+	};
+	class 1990_British_Rifleman_Artic: 1990_British_Rifleman
+	{
+		uniformClass = "TWC_Smock_Artic";
+	};
+	class 1990_British_Rifleman_AT_Artic: 1990_British_Rifleman_AT
+	{
+		uniformClass = "TWC_Smock_Artic";
+	};
+	class 1990_British_Gunner_Artic: 1990_British_Gunner
+	{
+		uniformClass = "TWC_Smock_Artic";
+	};
+	class 1990_British_2IC_Artic: 1990_British_2IC
+	{
+		uniformClass = "TWC_Smock_Artic";
+	};
+	class 1990_British_Engineer_Artic: 1990_British_Engineer
+	{
+		uniformClass = "TWC_Smock_Artic";
 	};

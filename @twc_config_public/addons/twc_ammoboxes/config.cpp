@@ -34,11 +34,6 @@ class CfgVehicles
 {
 	class B_supplyCrate_F;
 	class Box_NATO_AmmoVeh_F;
-	class Land_BagFence_Corner_F;
-	class Land_BagFence_Long_F;
-	class Land_BagFence_Short_F;
-	class Land_BagFence_End_F;
-	class Land_BagFence_Round_F;
 	class twc_forwardBase_BritishAmmoBox:B_supplyCrate_F
 	{
 		displayname = "TWC forwardBase BritishAmmobox";
@@ -168,34 +163,35 @@ class CfgVehicles
 				distance = 2;
 				condition = "true";
 				position = "[0,0,0.4]";
+				ace_dragging_dragPosition[] = {0,4,0};
 				class twc_spawnSandbagCorner{
 					displayName = "Sandbag Corner";
 					condition = "true";
-					statement = "_sandbag = ""Land_BagFence_Corner_F"" createVehicle (position this); [_sandbag,true] call ace_dragging_fnc_setCarryable";
+					statement = "[_target,""twc_Land_BagFence_Corner_F"",[100]] call twc_fnc_createDefenses;";
                     icon = "";
 				};
 				class twc_spawnSandbagLong{
 					displayName = "Sandbag Long";
 					condition = "true";
-					statement = "_sandbag = ""Land_BagFence_Long_F"" createVehicle (position this); [_sandbag,true] call ace_dragging_fnc_setCarryable";
+					statement = "[_target,""twc_Land_BagFence_Long_F"",[100]] call twc_fnc_createDefenses;";
                     icon = "";
 				};
 				class twc_spawnSandbagShort{
 					displayName = "Sandbag Short";
 					condition = "true";
-					statement = "_sandbag = ""Land_BagFence_Short_F"" createVehicle (position this); [_sandbag,true] call ace_dragging_fnc_setCarryable";
+					statement = "[_target,""twc_Land_BagFence_Short_F"",[100]] call twc_fnc_createDefenses;";
                     icon = "";
 				};
 				class twc_spawnSandbagEnd{
 					displayName = "Sandbag End";
 					condition = "true";
-					statement = "_sandbag = ""Land_BagFence_End_F"" createVehicle (position this); [_sandbag,true] call ace_dragging_fnc_setCarryable";
+					statement = "[_target,""twc_Land_BagFence_End_F"",[100]] call twc_fnc_createDefenses;";
                     icon = "";
 				};
 				class twc_spawnSandbagRound{
 					displayName = "Sandbag Round";
 					condition = "true";
-					statement = "_sandbag = ""Land_BagFence_Round_F"" createVehicle (position this); [_sandbag,true] call ace_dragging_fnc_setCarryable";
+					statement = "[_target,""twc_Land_BagFence_Round_F"",[100]] call twc_fnc_createDefenses;";
                     icon = "";
 				};
 				

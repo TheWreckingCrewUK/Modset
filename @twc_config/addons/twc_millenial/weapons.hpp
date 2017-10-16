@@ -113,6 +113,7 @@ class cfgWeapons
 	
 	class UK3CB_BAF_U_Smock_DPMT;
 	class UK3CB_BAF_U_Smock_DDPM;
+	class UK3CB_BAF_U_Smock_Arctic;
 	
 	class UniformItem;
 	
@@ -135,6 +136,17 @@ class cfgWeapons
 			containerClass = Supply30;
             mass = 50;
 			uniformClass = "UK3CB_BAF_Soldier_Smock_DDPM_Base";
+			uniformModel = "-";
+        };
+	};
+	class TWC_Smock_Artic: UK3CB_BAF_U_Smock_Arctic
+	{
+		scope = 1;
+		class ItemInfo: UniformItem
+        {
+			containerClass = Supply30;
+            mass = 50;
+			uniformClass = "UK3CB_BAF_Soldier_Smock_Arctic_Base";
 			uniformModel = "-";
         };
 	};
