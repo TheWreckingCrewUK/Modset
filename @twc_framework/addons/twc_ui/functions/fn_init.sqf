@@ -3,7 +3,7 @@ if (!hasInterface) exitWith {};
 ["vehicle", {
 	params ["_playerUnit", "_newVehicle"];
 	
-	if (_playerUnit call TWC_UI_fnc_isVehicleCrew) then {
+	if (_playerUnit call TWC_UI_fnc_shouldDisplay) then {
 		[] call TWC_UI_fnc_addDisplay;
 	} else {
 		[] call TWC_UI_fnc_removeDisplay;
@@ -13,7 +13,7 @@ if (!hasInterface) exitWith {};
 [player, "GetInMan", {
 	params ["_playerUnit"];
 	
-	if (_playerUnit call TWC_UI_fnc_isVehicleCrew) then {
+	if (_playerUnit call TWC_UI_fnc_shouldDisplay) then {
 		[] call TWC_UI_fnc_addDisplay;
 	} else {
 		[] call TWC_UI_fnc_removeDisplay;
@@ -23,7 +23,7 @@ if (!hasInterface) exitWith {};
 [player, "GetOutMan", {
 	params ["_playerUnit"];
 	
-	if (_playerUnit call TWC_UI_fnc_isVehicleCrew) then {
+	if (_playerUnit call TWC_UI_fnc_shouldDisplay) then {
 		[] call TWC_UI_fnc_addDisplay;
 	} else {
 		[] call TWC_UI_fnc_removeDisplay;
@@ -33,7 +33,7 @@ if (!hasInterface) exitWith {};
 [player, "SeatSwitchedMan", {
 	params ["_playerUnit"];
 	
-	if (_playerUnit call TWC_UI_fnc_isVehicleCrew) then {
+	if (_playerUnit call TWC_UI_fnc_shouldDisplay) then {
 		[] call TWC_UI_fnc_addDisplay;
 	} else {
 		[] call TWC_UI_fnc_removeDisplay;

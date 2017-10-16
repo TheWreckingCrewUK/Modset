@@ -4,7 +4,12 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.7;
-		requiredAddons[] = {"cba_main"};
+		
+		requiredAddons[] = {
+			"cba_main",
+			"A3_Modules_F"
+		};
+		
 		author = "Bosenator";
 		authors[] = {"Bosenator"};
 		url = "http://thewreckingcrew.eu";
@@ -23,7 +28,7 @@ class CfgFunctions {
 			class addDisplay {};
 			class getVisualBearingLocal {};
 			class hideBearing {};
-			class isVehicleCrew {};
+			class shouldDisplay {};
 			class removeDisplay {};
 			class showBearing {};
 		};
@@ -31,3 +36,4 @@ class CfgFunctions {
 };
 
 #include "RscTitles.hpp"
+#include "DefaultVehicleSystemsDisplayManager.hpp"
