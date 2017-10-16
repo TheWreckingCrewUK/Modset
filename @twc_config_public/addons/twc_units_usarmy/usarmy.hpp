@@ -128,7 +128,7 @@
 	class TWC_Modern_US_Army_TeamLeader:TWC_Modern_US_Army_Base
 	{
 		scope=2;
-		displayName="Modern US Army Team Leader";
+		displayName="Bravo Team Leader";
 		linkedItems[]=
 		{
 			"rhsusf_iotv_ocp_Teamleader",
@@ -541,7 +541,7 @@
 	class TWC_Modern_US_Army_HeliPilot:TWC_Modern_US_Army_Base
 	{
 		scope=2;
-		displayName="Modern US Army Helicotper Pilot";
+		displayName="Bravo Helicotper Pilot";
 		backpack="TWC_Backpack_Modern_US_Army_SL";
 		linkedItems[]=
 		{

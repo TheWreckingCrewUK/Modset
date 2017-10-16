@@ -26,6 +26,8 @@ class cfgFunctions
 			class setUpForwardBase{};
 			class tearDownForwardBase{};
 			
+			class createDefenses{};
+			
 		};
 	};
 };
@@ -33,6 +35,48 @@ class CfgVehicles
 {
 	class Land_CampingTable_F;
 	class Land_Portable_generator_F;
+	
+	class Land_BagFence_Corner_F;
+	class Land_BagFence_Long_F;
+	class Land_BagFence_Short_F;
+	class Land_BagFence_End_F;
+	class Land_BagFence_Round_F;
+	
+	class twc_Land_BagFence_Corner_F: Land_BagFence_Corner_F
+	{
+		class EventHandlers: EventHandlers
+		{
+			init = "[(_this select 0),true,[0,1,0],0] call ace_dragging_fnc_setCarryable;";  
+		};
+	};
+	class twc_Land_BagFence_Long_F: Land_BagFence_Long_F
+	{
+		class EventHandlers: EventHandlers
+		{
+			init = "[(_this select 0),true,[0,1,0],0] call ace_dragging_fnc_setCarryable;";  
+		};
+	};
+	class twc_Land_BagFence_Short_F: Land_BagFence_Short_F
+	{
+		class EventHandlers: EventHandlers
+		{
+			init = "[(_this select 0),true,[0,1,0],0] call ace_dragging_fnc_setCarryable;";  
+		};
+	};
+	class twc_Land_BagFence_End_F: Land_BagFence_End_F
+	{
+		class EventHandlers: EventHandlers
+		{
+			init = "[(_this select 0),true,[0,1,0],0] call ace_dragging_fnc_setCarryable;";  
+		};
+	};
+	class twc_Land_BagFence_Round_F: Land_BagFence_Round_F
+	{
+		class EventHandlers: EventHandlers
+		{
+			init = "[(_this select 0),true,[0,1,0],0] call ace_dragging_fnc_setCarryable;";  
+		};
+	};
 	class twc_radioTable:Land_CampingTable_F
 	{
 		displayname = "TWC RadioTable";

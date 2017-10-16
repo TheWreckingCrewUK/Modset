@@ -346,6 +346,23 @@
 			};		
 		};		
 	};
+	class TWC_Backpack_1990_Engineer: UK3CB_BAF_B_Carryall_DPMT
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_EntrenchingTool
+			{
+				name = "ACE_EntrenchingTool";
+				count = 1;
+			};
+			class _xx_Wire_Cutters
+			{
+				name = "ACE_wirecutter";
+				count = 1;
+			};
+		};
+	};
 //////////////////////////////  Desert Camo  //////////////////////////////
 	
 	class UK3CB_BAF_B_Bergen_DDPM_SL_A;
