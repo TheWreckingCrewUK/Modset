@@ -206,7 +206,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class rhs_medic_bag;
+	/* class rhs_medic_bag;
 	class USSR_big_medic_bag: rhs_medic_bag
 	{
 		scope = 1;
@@ -309,7 +309,7 @@ class CfgVehicles
 				count=4;
 			};
 		};
-	};
+	}; */
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
@@ -320,7 +320,7 @@ class CfgVehicles
 	#include "african.hpp"
 	#include "irish.hpp"
 	
-	#include "USSRAfghan.hpp"
+	//#include "USSRAfghan.hpp"
 	
 	#include "takistan.hpp"
 	
