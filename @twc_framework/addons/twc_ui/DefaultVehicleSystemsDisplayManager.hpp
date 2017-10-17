@@ -1,7 +1,7 @@
 class DefaultVehicleSystemsDisplayManagerLeft
 {
-	componentType = "VehicleSystemsDisplayManager"; //mandatory
-	forcedDisplay = "EmptyDisplay";
+	componentType = "EmptyDisplayComponent"; //mandatory
+	/* forcedDisplay = "EmptyDisplay";
 	x = (safezoneX + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40));
 	y = (safezoneY + safezoneH - 21 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25));
 	left = 1;
@@ -17,14 +17,15 @@ class DefaultVehicleSystemsDisplayManagerLeft
 		class MissileDisplay { componentType = "EmptyDisplayComponent"; };
 		class MinimapDisplay { componentType = "EmptyDisplayComponent"; };
 		class CrewDisplay { componentType = "EmptyDisplayComponent"; };
+		class MineDetectorDisplay { componentType = "MineDetectorDisplayComponent"; };
 		class EmptyDisplay { componentType = "EmptyDisplayComponent"; };
-	};
+	}; */
 };
 
 class DefaultVehicleSystemsDisplayManagerRight
 {
-	componentType = "VehicleSystemsDisplayManager";
-	forcedDisplay = "EmptyDisplay";
+	componentType = "EmptyDisplayComponent";
+	/* forcedDisplay = "EmptyDisplay";
 	y = (safezoneY + safezoneH - 21 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25));
 	x = (safezoneX + safezoneW) - ((10 * (((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * (((safezoneW / safezoneH) min 1.2) / 40));
 	left = 0;
@@ -40,6 +41,7 @@ class DefaultVehicleSystemsDisplayManagerRight
 		class MissileDisplay { componentType = "EmptyDisplayComponent"; };
 		class MinimapDisplay { componentType = "EmptyDisplayComponent"; };
 		class CrewDisplay { componentType = "EmptyDisplayComponent"; };
+		class MineDetectorDisplay { componentType = "MineDetectorDisplayComponent"; };
 		class EmptyDisplay { componentType = "EmptyDisplayComponent"; };
-	};
+	}; */
 };

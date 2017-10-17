@@ -52,4 +52,3 @@ class Extended_InitPost_EventHandlers
 #include "cfgVehicles.hpp"
 #include "cfgFunctions.hpp"
 #include "cfgMusic.hpp"
-#include "noHUD.hpp"
