@@ -1,6 +1,7 @@
 #define CURRENT_VEHICLE COLDWAR_LANDROVERTRADITIONAL_MOD
 class TWC_Vehicle_ColdWar_LandRover_Woodland: UK3CB_BAF_LandRover_Soft_Green_B {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	
@@ -66,6 +67,7 @@ class TWC_Vehicle_ColdWar_LandRover_Desert: TWC_Vehicle_ColdWar_LandRover_Woodla
 
 class TWC_Vehicle_ColdWar_LandRover_Woodland_COIN: UK3CB_BAF_LandRover_Soft_Green_B {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	

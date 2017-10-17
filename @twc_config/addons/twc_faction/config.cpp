@@ -17,7 +17,7 @@ class CfgPatches {
 // CfgFactionClasses is used for vehicles/units 
 class CfgFactionClasses {
 	class TWC_General {
-		displayName = "TWC General Operation Units";
+		displayName = "TWC Operations - Multi-Era";
 		author = "The Wrecking Crew";
 		icon = "TWClogo.paa";
 		priority = 2;
@@ -25,7 +25,7 @@ class CfgFactionClasses {
 	};
 	
 	class TWC_ColdWar {
-		displayName = "TWC Cold War Operation Units";
+		displayName = "TWC Operations - Cold War";
 		author = "The Wrecking Crew";
 		icon = "TWClogo.paa";
 		priority = 2;
@@ -33,7 +33,7 @@ class CfgFactionClasses {
 	};
 	
 	class TWC_Millenial {
-		displayName = "TWC Millennial Operation Units";
+		displayName = "TWC Operations - Millennial";
 		author = "The Wrecking Crew";
 		icon = "TWClogo.paa";
 		priority = 2;
@@ -43,7 +43,7 @@ class CfgFactionClasses {
 	class TWC_Millennial: TWC_Millenial {};
 	
 	class TWC_Modern {
-		displayName = "TWC Modern Operation Units";
+		displayName = "TWC Operations - Modern";
 		author = "The Wrecking Crew";
 		icon = "TWClogo.paa";
 		priority = 2;

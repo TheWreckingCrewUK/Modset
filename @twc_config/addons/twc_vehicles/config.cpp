@@ -141,10 +141,13 @@ class CfgVehicles {
 	class ukcw_cvrt_Scim_w_L1;
 	class ukcw_cvrt_Scorpion_w_L1;
 	
-	#include "generic\generic.hpp";
-	#include "coldwar\coldwar.hpp";
-	#include "millenial\millenial.hpp";
-	#include "modern\modern.hpp";
+	// Custom TWC vehicles are defined below (they may inherit from above)
+	#include "vehicles\warriors.hpp"
+	
+	#include "generic\generic.hpp"
+	#include "coldwar\coldwar.hpp"
+	#include "millenial\millenial.hpp"
+	#include "modern\modern.hpp"
 };
 
 /*

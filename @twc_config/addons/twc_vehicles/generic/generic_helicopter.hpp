@@ -2,6 +2,7 @@
 class CUP_B_CH47F_GB;
 class TWC_Vehicle_Generic_Chinook_RAF: CUP_B_CH47F_GB {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	
@@ -17,6 +18,7 @@ class TWC_Vehicle_Generic_Chinook_RAF: CUP_B_CH47F_GB {
 class CUP_B_CH47F_VIV_GB;
 class TWC_Vehicle_Generic_Chinook_RAF_VIV: CUP_B_CH47F_VIV_GB {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	

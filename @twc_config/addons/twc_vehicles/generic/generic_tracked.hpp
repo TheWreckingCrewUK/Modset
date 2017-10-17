@@ -2,6 +2,7 @@
 class ukcw_fv432_ambulance;
 class TWC_Vehicle_Generic_FV432Ambulance_Woodland: ukcw_fv432_ambulance {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	

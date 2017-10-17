@@ -2,6 +2,7 @@
 class I_C_Boat_Transport_02_F;
 class TWC_Vehicle_Generic_RHIB_Black: I_C_Boat_Transport_02_F {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	
@@ -19,6 +20,7 @@ class TWC_Vehicle_Generic_RHIB_Black: I_C_Boat_Transport_02_F {
 class I_C_Boat_Transport_01_F;
 class TWC_Vehicle_Generic_Zodiac_Black: I_C_Boat_Transport_01_F {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	

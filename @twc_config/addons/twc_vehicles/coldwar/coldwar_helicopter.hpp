@@ -3,6 +3,7 @@
 class CUP_B_SA330_Puma_HC1_BAF;
 class TWC_Vehicle_ColdWar_Puma_RAF: CUP_B_SA330_Puma_HC1_BAF {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	
@@ -38,6 +39,7 @@ class TWC_Vehicle_ColdWar_Puma_RAF: CUP_B_SA330_Puma_HC1_BAF {
 
 class TWC_Vehicle_ColdWar_Puma_RAF_COIN: CUP_B_SA330_Puma_HC1_BAF {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	

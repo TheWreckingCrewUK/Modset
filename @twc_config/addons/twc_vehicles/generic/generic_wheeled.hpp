@@ -2,6 +2,7 @@
 class UK3CB_BAF_LandRover_Amb_Green_A;
 class TWC_Vehicle_Generic_LandRoverAmbulance_Woodland: UK3CB_BAF_LandRover_Amb_Green_A {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	

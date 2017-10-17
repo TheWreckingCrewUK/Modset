@@ -2,6 +2,7 @@
 class CUP_B_C130J_GB;
 class TWC_Vehicle_Generic_Hercules_RAF: CUP_B_C130J_GB {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	
@@ -17,6 +18,7 @@ class TWC_Vehicle_Generic_Hercules_RAF: CUP_B_C130J_GB {
 class CUP_B_C130J_Cargo_GB;
 class TWC_Vehicle_Generic_Hercules_RAF_VIV: CUP_B_C130J_Cargo_GB {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	

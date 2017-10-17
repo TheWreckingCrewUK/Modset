@@ -1,6 +1,7 @@
 #define CURRENT_VEHICLE MILLENNIAL_FV432_MOD
 class TWC_Vehicle_Millennial_FV432_Woodland: ukcw_fv432 {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	
@@ -37,9 +38,12 @@ class TWC_Vehicle_Millennial_FV432_Woodland: ukcw_fv432 {
 	// currently no difference, might be in future regarding things like handcuffs
 }; */
 
+// TODO: warrior here
+
 #define CURRENT_VEHICLE MILL_SCIMITAR_MOD
 class TWC_Vehicle_Millennial_Scimitar_Chameleon: ukcw_cvrt_Scim_w_L1 {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	
@@ -67,6 +71,7 @@ class TWC_Vehicle_Millennial_Scimitar_Chameleon: ukcw_cvrt_Scim_w_L1 {
 #define CURRENT_VEHICLE MILL_SCORPION_MOD
 class TWC_Vehicle_Millennial_Scorpion_Chameleon: ukcw_cvrt_Scorpion_w_L1 {
 	scope = 2;
+	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	
