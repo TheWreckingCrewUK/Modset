@@ -101,22 +101,6 @@ class cfgWeapons
 	};
 //////////////////////////////  Others  //////////////////////////////	
 	class UK3CB_BAF_L115A3_Ghillie;
-/* 	class rhs_weap_ak74m_dtk; //base ussr AK
-	class rhs_acc_1p29; //ussr section lead and 2IC scope
-	
-	class USSR_AK74_1p29: rhs_weap_ak74m_dtk
-	{
-		scope = 1;
-		author="Jayman";
-		class LinkedItems
-		{
-			class linkedItemsOptic
-			{
-				slot="CowsSlot";
-				item="rhs_acc_1p29";
-			};
-		};
-	}; */
 	class twc_l129a1_spotter: UK3CB_BAF_L129A1_Grippod
 	{
 		scope = 1;

@@ -531,6 +531,57 @@
 		displayName="Carl-Gustaf Assistant";
 		backpack="TWC_Backpack_1990_CGAss";
 	};
+	class 2000_British_Engineer: 2000_British_Base
+	{
+		scope=2;
+		displayName="Engineer";
+		backpack="TWC_Backpack_1990_Engineer";
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A2_SUSAT3D"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A2_SUSAT3D"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell"
+		};	
+	};
+	class 2000_British_FAC: 2000_British_Platoon_Commander
+	{
+		displayName="FAC";
+		backpack="TWC_Backpack_1990_FAC";
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
+			"UK3CB_BAF_Soflam_Laserdesignator"
+		};
+		rrespawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
+			"UK3CB_BAF_Soflam_Laserdesignator"
+		};
+	};
 	
 //////////////////////////////  Mounted  //////////////////////////////
 	class 2000_British_Rifleman_Mounted: 2000_British_Rifleman
@@ -955,6 +1006,25 @@
 		displayName="Carl-Gustaf Assistant";
 		backpack="TWC_Backpack_1990_CGAss_Desert";
 	};
+	class 2000_British_FAC_Desert: 2000_British_Platoon_Commander_Desert
+	{
+		displayName="FAC";
+		backpack="TWC_Backpack_1990_FAC";
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
+			"UK3CB_BAF_Soflam_Laserdesignator"
+		};
+		rrespawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
+			"UK3CB_BAF_Soflam_Laserdesignator"
+		};
+	};
 //////////////////////////////  Mounted  //////////////////////////////
 	class 2000_British_Rifleman_Mounted_Desert: 2000_British_Rifleman_Desert
 	{
@@ -1244,4 +1314,71 @@
 		"ACRE_PRC148",
 		"UK3CB_BAF_HMNVS"		
 		};
+	};
+	
+	class 2000_British_Platoon_Commander_Arctic: 2000_British_Platoon_Commander
+	{
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_2000_Arctic_Dismounted";
+		vehicleClass="Men_2000_Arctic_Dismounted";
+	};
+	class 2000_British_Platoon_Sergeant_Arctic: 2000_British_Platoon_Sergeant
+	{
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_2000_Arctic_Dismounted";
+		vehicleClass="Men_2000_Arctic_Dismounted";
+	};
+	class 2000_British_Medic_Arctic: 2000_British_Medic
+	{
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_2000_Arctic_Dismounted";
+		vehicleClass="Men_2000_Arctic_Dismounted";
+	};
+	class 2000_British_Platoon_CSM_Arctic: 2000_British_Platoon_CSM
+	{
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_2000_Arctic_Dismounted";
+		vehicleClass="Men_2000_Arctic_Dismounted";
+	};
+	class 2000_British_SectionCommander_Arctic: 2000_British_SectionCommander
+	{
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_2000_Arctic_Dismounted";
+		vehicleClass="Men_2000_Arctic_Dismounted";
+	};
+	class 2000_British_Rifleman_Arctic: 2000_British_Rifleman
+	{
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_2000_Arctic_Dismounted";
+		vehicleClass="Men_2000_Arctic_Dismounted";
+	};
+	class 2000_British_Rifleman_AT_Arctic: 2000_British_Rifleman_AT
+	{
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_2000_Arctic_Dismounted";
+		vehicleClass="Men_2000_Arctic_Dismounted";
+	};
+	class 2000_British_AutoRifleman_Arctic: 2000_British_AutoRifleman
+	{
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_2000_Arctic_Dismounted";
+		vehicleClass="Men_2000_Arctic_Dismounted";
+	};
+	class 2000_British_2IC_Arctic: 2000_British_2IC
+	{
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_2000_Arctic_Dismounted";
+		vehicleClass="Men_2000_Arctic_Dismounted";
+	};
+	class 2000_British_Marksman_Arctic: 2000_British_Marksman
+	{
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_2000_Arctic_Dismounted";
+		vehicleClass="Men_2000_Arctic_Dismounted";
+	};
+	class 2000_British_Engineer_Arctic: 2000_British_Engineer
+	{
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_2000_Arctic_Dismounted";
+		vehicleClass="Men_2000_Arctic_Dismounted";
 	};

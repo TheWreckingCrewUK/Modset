@@ -19,11 +19,13 @@ class CfgPatches
 			"1990_British_MilanGunner",
 			"1990_British_MilanAssistant",
 			"1990_British_MortarGunner",
+			"1990_British_FAC",
 			"1990_British_Rifleman_Mechanised",
 			"1990_British_Gunner_Mechanised",
 			"1990_British_2IC_Mechanised",
 			"1990_British_Vehicle_Commander",
 			"1990_British_Vehicle_Crew",
+			
 			"1990_British_SectionCommander_Desert",
 			"1990_British_Rifleman_Desert",
 			"1990_British_CGG_Desert",
@@ -37,6 +39,7 @@ class CfgPatches
 			"1990_British_MilanGunner_Desert",
 			"1990_British_MilanAssistant_Desert",
 			"1990_British_MortarGunner_Desert",
+			"1990_British_FAC_Desert",
 			"1990_British_Rifleman_Mechanised_Desert",
 			"1990_British_Gunner_Mechanised_Desert",
 			"1990_British_2IC_Mechanised_Desert",
@@ -44,6 +47,8 @@ class CfgPatches
 			"1990_British_Vehicle_Crew_Desert",
 			"1990_British_Tank_Commander_Desert",
 			"1990_British_Tank_Crew_Desert",
+			
+			
 			"2000_British_Base",
 			"2000_British_SectionCommander",
 			"2000_British_Rifleman",
@@ -58,6 +63,7 @@ class CfgPatches
 			"2000_British_MilanGunner",
 			"2000_British_MilanAssistant",
 			"2000_British_MortarGunner",
+			"2000_British_FAC",
 			"2000_British_CGG",
 			"2000_British_CGAss",
 			"2000_British_Rifleman_Mounted",
@@ -66,7 +72,8 @@ class CfgPatches
 			"2000_British_2IC_Mounted",
 			"2000_British_Marksman_Mounted",
 			"2000_British_Vehicle_Commander",
-			"2000_British_Vehicle_Crew",
+			"2000_British_Vehicle_Crew",			
+			
 			"2000_British_SectionCommander_Desert",
 			"2000_British_Rifleman_Desert",
 			"2000_British_Rifleman_AT_Desert",
@@ -80,6 +87,7 @@ class CfgPatches
 			"2000_British_MilanGunner_Desert",
 			"2000_British_MilanAssistant_Desert",
 			"2000_British_MortarGunner_Desert",
+			"2000_British_FAC_Desert",
 			"2000_British_CGG_Desert",
 			"2000_British_CGAss_Desert",
 			"2000_British_Rifleman_Mounted_Desert",
@@ -104,6 +112,10 @@ class CfgPatches
 class EventHandlers;
 class CfgEditorSubCategories
 {
+	class Men_1990_Arctic_Dismounted
+	{
+		displayName = "Men (90's Arctic Dismounted)";
+	};
 	class Men_1990_Desert_Dismounted
 	{
 		displayName = "Men (90's Desert Dismounted)";
@@ -119,6 +131,10 @@ class CfgEditorSubCategories
 	class Men_1990_Woodland_Mounted
 	{
 		displayName = "Men (90's Woodland Mounted)";
+	};
+	class Men_2000_Arctic_Dismounted
+	{
+		displayName = "Men (00's Arctic Dismounted)";
 	};
 	class Men_2000_Desert_Dismounted
 	{
@@ -142,12 +158,16 @@ class CfgEditorSubCategories
 
 class CfgVehicles
 {
+	// Time saving MACROs - NC = Non-Conflict
+	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
+	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
+	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
+	
+	//Needed for 1990 + 2000 base class
 	class B_Soldier_base_F;
 	
-	#include "1990.hpp"
-	
-	#include "2000.hpp"
-	
+	#include "1990.hpp"	
+	#include "2000.hpp"	
 	#include "backpacks.hpp"
 };
 #include "weapons.hpp"

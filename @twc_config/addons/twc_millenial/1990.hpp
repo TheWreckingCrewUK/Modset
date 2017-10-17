@@ -77,7 +77,8 @@
 			"ACE_epinephrine",
 			"ACE_tourniquet",
 			"ACE_tourniquet",
-			"ACRE_PRC343"	
+			"ACE_MapTools",
+			"ACRE_PRC343"
 		};		
 	};
 	class 1990_British_SectionCommander: 1990_British_Base
@@ -181,7 +182,7 @@
 	{
 		scope=2;
 		displayName="RifleMan AT";
-		backpack="";
+		backpack="TWC_Backpack_1990_Rifleman";
 		weapons[]=
 		{
 			"Throw",
@@ -329,7 +330,7 @@
 		displayName="Company Sergeant Major(90`s Woodland)";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
+			init = "(_this select 0) setVariable [""twc_isMolar"",true];";
 		};
 	};
 	class 1990_British_Medic: 1990_British_Base
@@ -371,21 +372,22 @@
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
+			init = "(_this select 0) setVariable [""ace_medical_medicClass"",1];";
 		};
 	};
 	class 1990_British_HeliPilot: 1990_British_Base
 	{
 		scope=2;
 		displayName="Helicopter Pilot";
-		backpack="B_AssaultPack_blk";
+		backpack="TWC_Backpack_1990_Helicopter_Pilot";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
 			"UK3CB_BAF_V_Pilot_DPMT",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ItemGPS"
 		};
 		respawnLinkedItems[]=
 		{
@@ -393,7 +395,8 @@
 			"UK3CB_BAF_V_Pilot_DPMT",
 			"ItemMap",		
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ItemGPS"
 		};
 		weapons[]=
 		{
@@ -425,26 +428,50 @@
 
 		};
 	};
-	class 1990_British_JetPilot: 1990_British_HeliPilot
+	class 1990_British_JetPilot: 1990_British_Base
 	{
 		displayName="Jet Pilot ";
 		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_RAF";
-		backpack="B_AssaultPack_blk";
+		backpack="TWC_Backpack_1990_Jet_Pilot";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_H_PilotHelmetHeli_A",
-			"CUP_V_B_PilotVest",
+			"H_PilotHelmetFighter_B",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ItemGPS"
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_H_PilotHelmetHeli_A",
-			"CUP_V_B_PilotVest",
+			"H_PilotHelmetFighter_B",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ItemGPS"
+		};
+		weapons[]=
+		{
+			"ukcw_hipower"
+		};
+		respawnweapons[]=
+		{
+			"ukcw_hipower"
+		};
+		magazines[]=
+		{
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"SmokeShell",
+			"SmokeShell"
 		};
 	};
 	class 1990_British_MilanGunner: 1990_British_Base
@@ -456,7 +483,7 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A1_SUSAT3D",
+			"ukcw_sterling_sub",
 			"TWC_Milan_Tripod_Disassemabled"
 		};
 		respawnweapons[]=
@@ -498,7 +525,7 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A1_SUSAT3D",
+			"ukcw_sterling_sub",
 			"TWC_Milan_Launcher_Disassemabled"
 		};
 	};
@@ -599,6 +626,25 @@
 			"SmokeShell"
 		};	
 	};
+	class 1990_British_FAC: 1990_British_Platoon_Commander
+	{
+		displayName="FAC";
+		backpack="TWC_Backpack_1990_FAC";
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
+			"UK3CB_BAF_Soflam_Laserdesignator"
+		};
+		rrespawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
+			"UK3CB_BAF_Soflam_Laserdesignator"
+		};
+	};
 //////////////////////////////  Mounted  //////////////////////////////
 	class 1990_British_Rifleman_Mounted: 1990_British_Rifleman
 	{
@@ -621,7 +667,7 @@
 		vehicleClass="Men_1990_Woodland_Mounted";
 		backpack="";
 	};
-	class 1990_British_2IC_Mounted: 1990_British_Gunner
+	class 1990_British_2IC_Mounted: 1990_British_2IC
 	{
 		displayName="2IC";
 		editorSubcategory = "Men_1990_Woodland_Mounted";
@@ -881,7 +927,7 @@
 		vehicleClass="Men_1990_Desert_Dismounted";
 		class EventHandlers: EventHandlers
 		{
-			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
+			init = "(_this select 0) setVariable [""twc_isMolar"",true];";
 		};
 	};
 	class 1990_British_Medic_Desert: 1990_British_Medic
@@ -909,7 +955,7 @@
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
+			init = "init = (_this select 0) setVariable [""ace_medical_medicClass"",1];";
 		};
 	};
     class 1990_British_HeliPilot_Desert: 1990_British_HeliPilot
@@ -1035,6 +1081,13 @@
 		vehicleClass="Men_1990_Desert_Dismounted";
 		backpack="TWC_Backpack_1990_CGAss_Desert";
 	};
+	class 1990_British_FAC_Desert: 1990_British_FAC
+	{
+		editorSubcategory = "Men_1990_Desert_Dismounted";
+		vehicleClass="Men_1990_Desert_Dismounted";
+		uniformClass="TWC_Smock_Desert";
+		backpack="TWC_Backpack_FAC_Desert";
+	}
 //////////////////////////////  Mounted  //////////////////////////////
 	class 1990_British_Rifleman_Mounted_Desert: 1990_British_Rifleman_Desert
 	{
@@ -1320,43 +1373,63 @@
 		};
 	};
 // Winter Units
-	class 1990_British_Platoon_Commander_Artic: 1990_British_Platoon_Commander
+	class 1990_British_Platoon_Commander_Arctic: 1990_British_Platoon_Commander
 	{
-		uniformClass = "TWC_Smock_Artic";
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_1990_Arctic_Dismounted";
+		vehicleClass="Men_1990_Arctic_Dismounted";
 	};
-	class 1990_British_Platoon_Sergeant_Artic: 1990_British_Platoon_Sergeant
+	class 1990_British_Platoon_Sergeant_Arctic: 1990_British_Platoon_Sergeant
 	{
-		uniformClass = "TWC_Smock_Artic";
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_1990_Arctic_Dismounted";
+		vehicleClass="Men_1990_Arctic_Dismounted";
 	};
-	class 1990_British_Medic_Artic: 1990_British_Medic
+	class 1990_British_Medic_Arctic: 1990_British_Medic
 	{
-		uniformClass = "TWC_Smock_Artic";
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_1990_Arctic_Dismounted";
+		vehicleClass="Men_1990_Arctic_Dismounted";
 	};
-	class 1990_British_Platoon_CSM_Artic: 1990_British_Platoon_CSM
+	class 1990_British_Platoon_CSM_Arctic: 1990_British_Platoon_CSM
 	{
-		uniformClass = "TWC_Smock_Artic";
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_1990_Arctic_Dismounted";
+		vehicleClass="Men_1990_Arctic_Dismounted";
 	};
-	class 1990_British_SectionCommander_Artic: 1990_British_SectionCommander
+	class 1990_British_SectionCommander_Arctic: 1990_British_SectionCommander
 	{
-		uniformClass = "TWC_Smock_Artic";
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_1990_Arctic_Dismounted";
+		vehicleClass="Men_1990_Arctic_Dismounted";
 	};
-	class 1990_British_Rifleman_Artic: 1990_British_Rifleman
+	class 1990_British_Rifleman_Arctic: 1990_British_Rifleman
 	{
-		uniformClass = "TWC_Smock_Artic";
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_1990_Arctic_Dismounted";
+		vehicleClass="Men_1990_Arctic_Dismounted";
 	};
-	class 1990_British_Rifleman_AT_Artic: 1990_British_Rifleman_AT
+	class 1990_British_Rifleman_AT_Arctic: 1990_British_Rifleman_AT
 	{
-		uniformClass = "TWC_Smock_Artic";
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_1990_Arctic_Dismounted";
+		vehicleClass="Men_1990_Arctic_Dismounted";
 	};
-	class 1990_British_Gunner_Artic: 1990_British_Gunner
+	class 1990_British_Gunner_Arctic: 1990_British_Gunner
 	{
-		uniformClass = "TWC_Smock_Artic";
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_1990_Arctic_Dismounted";
+		vehicleClass="Men_1990_Arctic_Dismounted";
 	};
-	class 1990_British_2IC_Artic: 1990_British_2IC
+	class 1990_British_2IC_Arctic: 1990_British_2IC
 	{
-		uniformClass = "TWC_Smock_Artic";
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_1990_Arctic_Dismounted";
+		vehicleClass="Men_1990_Arctic_Dismounted";
 	};
-	class 1990_British_Engineer_Artic: 1990_British_Engineer
+	class 1990_British_Engineer_Arctic: 1990_British_Engineer
 	{
-		uniformClass = "TWC_Smock_Artic";
+		uniformClass = "TWC_Smock_Arctic";
+		editorSubcategory = "Men_1990_Arctic_Dismounted";
+		vehicleClass="Men_1990_Arctic_Dismounted";
 	};
