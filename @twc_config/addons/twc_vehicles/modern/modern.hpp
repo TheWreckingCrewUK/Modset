@@ -1,4 +1,5 @@
 // All the various weapons and other pieces of equipment (some force type specific)
+#define ADD_FACTION faction = "TWC_Modern"
 
 // Classname, Amount Per Section
 #define MODERN_RIFLE ["UK3CB_BAF_556_30Rnd", 24]
@@ -32,3 +33,7 @@
 #define MODERN_WIMIK_MOD 0.5
 #define MODERN_LANDROVER_MOD 0.5
 
+#include "modern_helicopter.hpp"
+#include "modern_plane.hpp"
+#include "modern_tracked.hpp"
+#include "modern_wheeled.hpp"
