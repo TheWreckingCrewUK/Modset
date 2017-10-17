@@ -1,6 +1,6 @@
 #define CURRENT_VEHICLE GENERIC_EMPTY
-//class CUP_B_CH47F_GB;
-class TWC_Vehicle_Generic_RHIB_Black: CUP_B_CH47F_GB {
+class I_C_Boat_Transport_02_F;
+class TWC_Vehicle_Generic_RHIB_Black: I_C_Boat_Transport_02_F {
 	scope = 2;
 	side = 1;
 	ADD_FACTION;
@@ -14,7 +14,8 @@ class TWC_Vehicle_Generic_RHIB_Black: CUP_B_CH47F_GB {
 	class TransportBackpacks { };
 };
 
-class TWC_Vehicle_Generic_Zodiac_Black: CUP_B_CH47F_VIV_GB {
+class I_C_Boat_Transport_01_F;
+class TWC_Vehicle_Generic_Zodiac_Black: I_C_Boat_Transport_01_F {
 	scope = 2;
 	side = 1;
 	ADD_FACTION;

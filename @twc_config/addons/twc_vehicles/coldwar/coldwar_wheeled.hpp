@@ -1,5 +1,5 @@
 #define CURRENT_VEHICLE COLDWAR_LANDROVERTRADITIONAL_MOD
-class TWC_Vehicle_ColdWar_LandRover_Chameleon: UK3CB_BAF_LandRover_Soft_Green_B {
+class TWC_Vehicle_ColdWar_LandRover_Woodland: UK3CB_BAF_LandRover_Soft_Green_B {
 	scope = 2;
 	side = 1;
 	ADD_FACTION;
@@ -32,9 +32,39 @@ class TWC_Vehicle_ColdWar_LandRover_Chameleon: UK3CB_BAF_LandRover_Soft_Green_B 
 	};
 
 	class TransportBackpacks { };
+	
+	class AnimationSources {
+		class AerialAtuR_Hide {
+			initPhase = 1;
+		};
+
+		class AerialFR_Hide {
+			initPhase = 1;
+		};
+		
+		class ClanLogo_Hide {
+			initPhase = 1;
+		};
+	};
 };
 
-class TWC_Vehicle_ColdWar_LandRover_Chameleon_COIN: UK3CB_BAF_LandRover_Soft_Green_B {
+class TWC_Vehicle_ColdWar_LandRover_Desert: TWC_Vehicle_ColdWar_LandRover_Woodland {
+	displayname = "Land Rover (Desert)";
+
+	hiddenSelectionsTextures[] = {
+		"",
+		"",
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_base_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_hardtop_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
+	};
+	
+	class AnimationSources {
+		class Mudguards_Hide {
+			initPhase = 1;
+		};
+	};
+};
+
+class TWC_Vehicle_ColdWar_LandRover_Woodland_COIN: UK3CB_BAF_LandRover_Soft_Green_B {
 	scope = 2;
 	side = 1;
 	ADD_FACTION;
@@ -63,4 +93,34 @@ class TWC_Vehicle_ColdWar_LandRover_Chameleon_COIN: UK3CB_BAF_LandRover_Soft_Gre
 	
 	class TransportWeapons { };
 	class TransportBackpacks { };
+	
+	class AnimationSources {
+		class AerialAtuR_Hide {
+			initPhase = 1;
+		};
+
+		class AerialFR_Hide {
+			initPhase = 1;
+		};
+		
+		class ClanLogo_Hide {
+			initPhase = 1;
+		};
+	};
+};
+
+class TWC_Vehicle_ColdWar_LandRover_Desert_COIN: TWC_Vehicle_ColdWar_LandRover_Woodland_COIN {
+	displayname = "Land Rover - COIN (Desert)";
+	
+	hiddenSelectionsTextures[] = {
+		"",
+		"",
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_base_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_hardtop_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
+	};
+	
+	class AnimationSources {
+		class Mudguards_Hide {
+			initPhase = 1;
+		};
+	};
 };

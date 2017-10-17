@@ -5,7 +5,7 @@ class TWC_Vehicle_Generic_Chinook_RAF: CUP_B_CH47F_GB {
 	side = 1;
 	ADD_FACTION;
 	
-	displayname = "Chinook - Infantry (RAF)";
+	displayname = "Chinook (RAF)";
 	editorSubcategory = "TWC_ForceType_AirMobility";
 
 	class TransportItems { }; 
@@ -14,12 +14,13 @@ class TWC_Vehicle_Generic_Chinook_RAF: CUP_B_CH47F_GB {
 	class TransportBackpacks { };
 };
 
+class CUP_B_CH47F_VIV_GB;
 class TWC_Vehicle_Generic_Chinook_RAF_VIV: CUP_B_CH47F_VIV_GB {
 	scope = 2;
 	side = 1;
 	ADD_FACTION;
 	
-	displayname = "Chinook - Vehicles (RAF)";
+	displayname = "Chinook - VIV (RAF)";
 	editorSubcategory = "TWC_ForceType_AirMobility";
 
 	class TransportItems { }; 

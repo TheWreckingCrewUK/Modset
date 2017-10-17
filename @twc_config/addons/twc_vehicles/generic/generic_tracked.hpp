@@ -1,5 +1,6 @@
 #define CURRENT_VEHICLE GENERIC_AMBULANCE_MOD
-class TWC_Vehicle_Generic_FV432Ambulance_Chameleon: ukcw_fv432_ambulance {
+class ukcw_fv432_ambulance;
+class TWC_Vehicle_Generic_FV432Ambulance_Woodland: ukcw_fv432_ambulance {
 	scope = 2;
 	side = 1;
 	ADD_FACTION;

@@ -1,5 +1,5 @@
 class CfgPatches {
-	class twc_vehicles {
+	class TWC_Vehicles {
 		units[] = {
 			/* 
 			// OLD CLASS NAMES, DO NOT REUSE!
@@ -25,24 +25,32 @@ class CfgPatches {
 			"TWC_burnes_foxhound_d_a",
 			"TWC_burnes_foxhound_w_a" */
 
-			"TWC_Vehicle_Generic_LandRoverAmbulance_Chameleon",
-			"TWC_Vehicle_Generic_FV432Ambulance_Chameleon",
+			"TWC_Vehicle_Generic_LandRoverAmbulance_Woodland",
+			"TWC_Vehicle_Generic_LandRoverAmbulance_Desert",
+			"TWC_Vehicle_Generic_FV432Ambulance_Woodland",
+			"TWC_Vehicle_Generic_FV432Ambulance_Desert",
 			"TWC_Vehicle_Generic_Hercules_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF_VIV",
 			"TWC_Vehicle_Generic_RHIB_Black",
 			"TWC_Vehicle_Generic_Zodiac_Black",
 			
-			"TWC_Vehicle_ColdWar_LandRover_Chameleon",
-			"TWC_Vehicle_ColdWar_LandRover_Chameleon_COIN",
+			"TWC_Vehicle_ColdWar_LandRover_Woodland",
+			"TWC_Vehicle_ColdWar_LandRover_Desert",
+			"TWC_Vehicle_ColdWar_LandRover_Woodland_COIN",
+			"TWC_Vehicle_ColdWar_LandRover_Desert_COIN",
 			"TWC_Vehicle_ColdWar_Puma_RAF",
 			"TWC_Vehicle_ColdWar_Puma_RAF_COIN",
-			"TWC_Vehicle_ColdWar_FV432_Chameleon",
-			"TWC_Vehicle_ColdWar_FV432_Chameleon_COIN",
+			"TWC_Vehicle_ColdWar_FV432_Woodland",
+			"TWC_Vehicle_ColdWar_FV432_Woodland_COIN",
 			"TWC_Vehicle_ColdWar_Scimitar_Chameleon",
 			"TWC_Vehicle_ColdWar_Scorpion_Chameleon",
-			"TWC_Vehicle_ColdWar_Chieftain_Woodland"
+			"TWC_Vehicle_ColdWar_Chieftain_Woodland",
+			"TWC_Vehicle_ColdWar_HarrierGR3_RAF",
 			
+			"TWC_Vehicle_Millennial_HarrierGR5_RAF",
+			
+			"TWC_Vehicle_Modern_HarrierGR9_RAF"
 		};
 
 		weapons[] = {
@@ -53,12 +61,35 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"A3_Armor_F_Beta",
-			"Burnes_crew_CTRG",
-			"cup_wheeledvehicles_lr",
-			"cup_trackedvehicles_fv510",
-			"uk3cb_baf_vehicles_wildcat",
-			"cup_airvehicles_c130j",
-			"twc_faction"
+			
+			"A3_Boat_F_Exp_Boat_Transport_01",
+			"A3_Boat_F_Exp_Boat_Transport_02",
+			"burnes_foxhound",
+			"Burnes_FV4034",
+			"UK3CB_BAF_Vehicles_Apache",
+			"UK3CB_BAF_Vehicles_Wildcat",
+			"UK3CB_BAF_Vehicles_Merlin",
+			"UK3CB_BAF_Vehicles_Coyote_Jackal",
+			"UK3CB_BAF_Vehicles_LandRover",
+			"CUP_TrackedVehicles_Bulldog",
+			"CUP_TrackedVehicles_MCV80",
+			"CUP_WheeledVehicles_Mastiff",
+			"CUP_AirVehicles_C130J",
+			"CUP_AirVehicles_CH47",
+			"CUP_AirVehicles_AV8B",
+			"CUP_AirVehicles_F35",
+			"CUP_AirVehciles_SA330",
+			"ukcw_bedford",
+			"ukcw_chieftain",
+			"ukcw_cvrt",
+			"ukcw_fv432",
+			"ukcw_gazelleelle",
+
+			"TWC_Faction",
+			"ace_cargo",
+			"ace_interaction",
+			"ace_medical",
+			"cba_xeh"
 		};
 		
 		version = "2";
@@ -99,22 +130,20 @@ class CfgVehicles {
 		An explanation on how the macros in each era works.
 
 		The files below include all the vehicles, and a MACRO for each vehicle called NAME_MOD. This is a modifier, which multiples the amount specified. So 0.5 will halve the amount, and 2 will double. Useful for things like a section being split amongst two vehicles, or a chinhook housing 3 sections.
-		
-		They also use the MACRO defines as defined in twc_defines. These define the quantity of each item. Edits there will be reflected amongst all loadouts, like their backpacks, vehicles and ammmoboxes.
-		
+
 		Before the change of vehicle, be sure to define CURRENT_VEHICLE to the new vehicle MOD MACRO. This makes copy and pasting a lot easier, ideal for situations where you're just changing the camo.
 	*/
 
-	// These are used across era in different configurations, and as such should be first referenced here.
+	// These are used across eras in different configurations, and as such should be first referenced here.
 	class UK3CB_BAF_LandRover_Soft_Green_B;
 	class ukcw_fv432;
 	class ukcw_cvrt_Scim_w_L1;
 	class ukcw_cvrt_Scorpion_w_L1;
 	
 	#include "generic\generic.hpp";
-	#include "modern\modern.hpp";
-	#include "millenial\millenial.hpp";
 	#include "coldwar\coldwar.hpp";
+	#include "millenial\millenial.hpp";
+	#include "modern\modern.hpp";
 };
 
 /*
