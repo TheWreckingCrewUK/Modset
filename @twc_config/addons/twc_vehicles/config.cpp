@@ -48,6 +48,7 @@ class CfgPatches {
 			"TWC_Vehicle_ColdWar_Chieftain_Woodland",
 			"TWC_Vehicle_ColdWar_HarrierGR3_RAF",
 			
+			
 			"TWC_Vehicle_Millennial_HarrierGR5_RAF",
 			
 			"TWC_Vehicle_Modern_HarrierGR9_RAF"

@@ -12,6 +12,8 @@ class TWC_Vehicle_Generic_RHIB_Black: I_C_Boat_Transport_02_F {
 	class TransportMagazines { };
 	class TransportWeapons { };
 	class TransportBackpacks { };
+
+	ace_interaction_canPush = 1;
 };
 
 class I_C_Boat_Transport_01_F;
@@ -27,4 +29,6 @@ class TWC_Vehicle_Generic_Zodiac_Black: I_C_Boat_Transport_01_F {
 	class TransportMagazines { };
 	class TransportWeapons { };
 	class TransportBackpacks { };
+
+	ace_interaction_canPush = 1;
 };

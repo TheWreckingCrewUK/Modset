@@ -31,16 +31,11 @@ class TWC_Vehicle_Millennial_FV432_Woodland: ukcw_fv432 {
 	class TransportBackpacks { };
 };
 
-class TWC_Vehicle_Millennial_FV432_Woodland_COIN: TWC_Vehicle_Millennial_FV432_Woodland {
+/* class TWC_Vehicle_Millennial_FV432_Woodland_COIN: TWC_Vehicle_Millennial_FV432_Woodland {
 	displayname = "FV432 - COIN (Woodland)";
-
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MILLENNIAL_SECTION_MECHANISED_EARLY_RIFLE));
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MILLENNIAL_SECTION_MECHANISED_EARLY_RIFLE_T));
-		
-		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
-	};
-};
+	
+	// currently no difference, might be in future regarding things like handcuffs
+}; */
 
 #define CURRENT_VEHICLE MILL_SCIMITAR_MOD
 class TWC_Vehicle_Millennial_Scimitar_Chameleon: ukcw_cvrt_Scim_w_L1 {
