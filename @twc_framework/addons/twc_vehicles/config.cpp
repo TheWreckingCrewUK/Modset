@@ -1,10 +1,10 @@
 class CfgPatches {
-	class TWC_FRAMEWORK_VEHICLES {
-		name = "TWC_FRAMEWORK_VEHICLES";
+	class TWC_Framework_Vehicles {
+		name = "TWC_Framework_Vehicles";
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.7;
-		requiredAddons[] = {"cba_main"};
+		requiredAddons[] = {"cba_main", "ace_interaction"};
 		author = "Bosenator";
 		authors[] = {"Bosenator"};
 		url = "http://thewreckingcrew.eu";
@@ -14,8 +14,8 @@ class CfgPatches {
 };
 
 class CfgFunctions {
-	class TWC_FRAMEWORK_VEHICLES {
-		tag = "TWC_vehicles";
+	class TWC_Framework_Vehicles {
+		tag = "TWC_Vehicles";
 
 		class init {
 			file = "twc_vehicles\functions";

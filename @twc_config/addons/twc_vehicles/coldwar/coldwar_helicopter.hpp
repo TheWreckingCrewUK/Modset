@@ -1,5 +1,5 @@
+#undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_PUMA_MOD
-
 class CUP_B_SA330_Puma_HC1_BAF;
 class TWC_Vehicle_ColdWar_Puma_RAF: CUP_B_SA330_Puma_HC1_BAF {
 	scope = 2;

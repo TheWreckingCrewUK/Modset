@@ -1,4 +1,5 @@
 // All the various weapons and other pieces of equipment (some force type specific)
+#undef ADD_FACTION
 #define ADD_FACTION faction = "TWC_Modern"
 
 // Classname, Amount Per Section

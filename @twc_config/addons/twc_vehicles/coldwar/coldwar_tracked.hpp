@@ -1,3 +1,4 @@
+#undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_FV432_MOD
 class TWC_Vehicle_ColdWar_FV432_Woodland: ukcw_fv432 {
 	scope = 2;
@@ -78,6 +79,7 @@ class TWC_Vehicle_ColdWar_FV432_Woodland_COIN: ukcw_fv432 {
 	displayname = "FV432 - COIN (Desert)";
 }; */
 
+#undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_SCIMITAR_MOD
 class TWC_Vehicle_ColdWar_Scimitar_Woodland: ukcw_cvrt_Scim_w_L1 {
 	scope = 2;
@@ -133,6 +135,7 @@ class TWC_Vehicle_ColdWar_Scimitar_Desert: ukcw_cvrt_Scim_d_L1 {
 	class TransportBackpacks { };
 };
 
+#undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_SCORPION_MOD
 class TWC_Vehicle_ColdWar_Scorpion_Woodland: ukcw_cvrt_Scorpion_w_L1 {
 	scope = 2;
@@ -188,6 +191,7 @@ class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_cvrt_Scorpion_d_L1 {
 	class TransportBackpacks { };
 };
 
+#undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_CHIEFTAIN_MOD
 class ukcw_chieftainmk10;
 class TWC_Vehicle_ColdWar_Chieftain_Woodland: ukcw_chieftainmk10 {

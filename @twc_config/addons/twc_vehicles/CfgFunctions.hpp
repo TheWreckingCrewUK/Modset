@@ -1,7 +1,7 @@
-class twc_vehicles {
+class TWC_Vehicles {
 	tag = "TWC";
 	
-	class FunctionsWarrior {
+	/* class FunctionsWarrior {
 		file = "twc_vehicles\xtra";
 		class AddAP { };
 		class AddHE { };
@@ -9,5 +9,5 @@ class twc_vehicles {
 		class RemoveHE { };
 		class RemoveAmmoInventory { };
 		class ShowAmmo { };
-	};
+	}; */
 };

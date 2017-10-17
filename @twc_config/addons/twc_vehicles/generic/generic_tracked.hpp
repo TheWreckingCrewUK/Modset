@@ -1,3 +1,4 @@
+#undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE GENERIC_AMBULANCE_MOD
 class ukcw_fv432_ambulance;
 class TWC_Vehicle_Generic_FV432Ambulance_Woodland: ukcw_fv432_ambulance {

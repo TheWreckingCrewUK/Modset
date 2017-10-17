@@ -1,5 +1,6 @@
+#undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_LANDROVERTRADITIONAL_MOD
-class TWC_Vehicle_ColdWar_LandRover_Woodland: UK3CB_BAF_LandRover_Soft_Green_B {
+class TWC_Vehicle_ColdWar_LandRover_Woodland: TWC_Vehicles_LR_Soft_Base_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -34,17 +35,29 @@ class TWC_Vehicle_ColdWar_LandRover_Woodland: UK3CB_BAF_LandRover_Soft_Green_B {
 
 	class TransportBackpacks { };
 	
-	class AnimationSources {
-		class AerialAtuR_Hide {
-			initPhase = 1;
-		};
-
-		class AerialFR_Hide {
+	class AnimationSources: AnimationSources {
+		class AerialAtuR_Hide: AerialAtuR_Hide {
 			initPhase = 1;
 		};
 		
-		class ClanLogo_Hide {
+		class AerialAtuL_Hide: AerialAtuL_Hide {
 			initPhase = 1;
+		};
+
+		class AerialFR_Hide: AerialFR_Hide {
+			initPhase = 1;
+		};
+		
+		class AerialFL_Hide: AerialFL_Hide {
+			initPhase = 0;
+		};
+		
+		class ClanLogo_Hide: ClanLogo_Hide {
+			initPhase = 1;
+		};
+		
+		class Mudguards_Hide: Mudguards_Hide {
+			initPhase = 0;
 		};
 	};
 };
@@ -58,14 +71,14 @@ class TWC_Vehicle_ColdWar_LandRover_Desert: TWC_Vehicle_ColdWar_LandRover_Woodla
 		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_base_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_hardtop_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
 	};
 	
-	class AnimationSources {
-		class Mudguards_Hide {
+	class AnimationSources: AnimationSources {
+		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 1;
 		};
 	};
 };
 
-class TWC_Vehicle_ColdWar_LandRover_Woodland_COIN: UK3CB_BAF_LandRover_Soft_Green_B {
+class TWC_Vehicle_ColdWar_LandRover_Woodland_COIN: TWC_Vehicles_LR_Soft_Base_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -96,16 +109,28 @@ class TWC_Vehicle_ColdWar_LandRover_Woodland_COIN: UK3CB_BAF_LandRover_Soft_Gree
 	class TransportWeapons { };
 	class TransportBackpacks { };
 	
-	class AnimationSources {
-		class AerialAtuR_Hide {
-			initPhase = 1;
-		};
-
-		class AerialFR_Hide {
+	class AnimationSources: AnimationSources {
+		class AerialAtuR_Hide: AerialAtuR_Hide {
 			initPhase = 1;
 		};
 		
-		class ClanLogo_Hide {
+		class AerialAtuL_Hide: AerialAtuL_Hide {
+			initPhase = 1;
+		};
+
+		class AerialFR_Hide: AerialFR_Hide {
+			initPhase = 1;
+		};
+		
+		class AerialFL_Hide: AerialFL_Hide {
+			initPhase = 0;
+		};
+		
+		class ClanLogo_Hide: ClanLogo_Hide {
+			initPhase = 1;
+		};
+		
+		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 1;
 		};
 	};
@@ -120,9 +145,9 @@ class TWC_Vehicle_ColdWar_LandRover_Desert_COIN: TWC_Vehicle_ColdWar_LandRover_W
 		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_base_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_hardtop_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
 	};
 	
-	class AnimationSources {
-		class Mudguards_Hide {
-			initPhase = 1;
+	class AnimationSources: AnimationSources {
+		class Mudguards_Hide: Mudguards_Hide {
+			initPhase = 0;
 		};
 	};
 };

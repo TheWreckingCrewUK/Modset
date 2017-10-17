@@ -1,3 +1,4 @@
+#undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE GENERIC_EMPTY
 class I_C_Boat_Transport_02_F;
 class TWC_Vehicle_Generic_RHIB_Black: I_C_Boat_Transport_02_F {

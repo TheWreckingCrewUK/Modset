@@ -1,3 +1,4 @@
+#undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MILLENNIAL_FV432_MOD
 class TWC_Vehicle_Millennial_FV432_Woodland: ukcw_fv432 {
 	scope = 2;
@@ -40,7 +41,8 @@ class TWC_Vehicle_Millennial_FV432_Woodland: ukcw_fv432 {
 
 // TODO: warrior here
 
-#define CURRENT_VEHICLE MILL_SCIMITAR_MOD
+#undef CURRENT_VEHICLE
+#define CURRENT_VEHICLE MILLENNIAL_SCIMITAR_MOD
 class TWC_Vehicle_Millennial_Scimitar_Chameleon: ukcw_cvrt_Scim_w_L1 {
 	scope = 2;
 	scopeCurator = 2;
@@ -68,7 +70,8 @@ class TWC_Vehicle_Millennial_Scimitar_Chameleon: ukcw_cvrt_Scim_w_L1 {
 	class TransportBackpacks { };
 };
 
-#define CURRENT_VEHICLE MILL_SCORPION_MOD
+#undef CURRENT_VEHICLE
+#define CURRENT_VEHICLE MILLENNIAL_SCORPION_MOD
 class TWC_Vehicle_Millennial_Scorpion_Chameleon: ukcw_cvrt_Scorpion_w_L1 {
 	scope = 2;
 	scopeCurator = 2;

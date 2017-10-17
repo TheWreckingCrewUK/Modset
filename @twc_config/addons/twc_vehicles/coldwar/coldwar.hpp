@@ -1,4 +1,5 @@
 // What ERA?
+#undef ADD_FACTION
 #define ADD_FACTION faction = "TWC_ColdWar"
 
 #define COLDWAR_LANDROVERTRADITIONAL_MOD 0.5

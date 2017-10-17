@@ -1,3 +1,4 @@
+#undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE GENERIC_EMPTY
 class CUP_B_CH47F_GB;
 class TWC_Vehicle_Generic_Chinook_RAF: CUP_B_CH47F_GB {

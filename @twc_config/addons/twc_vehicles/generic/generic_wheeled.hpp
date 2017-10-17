@@ -1,3 +1,4 @@
+//#undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE GENERIC_AMBULANCE_MOD
 class UK3CB_BAF_LandRover_Amb_Green_A;
 class TWC_Vehicle_Generic_LandRoverAmbulance_Woodland: UK3CB_BAF_LandRover_Amb_Green_A {

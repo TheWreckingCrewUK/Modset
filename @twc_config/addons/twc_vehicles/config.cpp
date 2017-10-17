@@ -24,6 +24,12 @@ class CfgPatches {
 			"TWC_fv432",
 			"TWC_burnes_foxhound_d_a",
 			"TWC_burnes_foxhound_w_a" */
+			
+			// TWC Vehicles
+			"TWC_Vehicle_FV510_D_SLAT",
+			"TWC_Vehicle_FV510_W_SLAT",
+			"TWC_Vehicle_FV510_D",
+			"TWC_Vehicle_FV510_W",
 
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Woodland",
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Desert",
@@ -87,10 +93,11 @@ class CfgPatches {
 			"ukcw_gazelleelle",
 
 			"TWC_Faction",
+
 			"ace_cargo",
 			"ace_interaction",
 			"ace_medical",
-			"cba_xeh"
+			"cba_main"
 		};
 		
 		version = "2";
@@ -104,15 +111,16 @@ class CfgFunctions {
 };
 
 class Extended_PostInit_EventHandlers {
-	class twc_vehicles_Init {
+	/* class twc_vehicles_Init {
 		init = "execVM 'twc_vehicles\init.sqf';";
-	};
+	}; */
 };
 
 class CfgMagazines {
 	#include "CfgMagazines.hpp"
 };
 
+class Mode_FullAuto;
 class CfgWeapons {
 	#include "CfgWeapons.hpp"
 };
@@ -136,17 +144,19 @@ class CfgVehicles {
 	*/
 
 	// These are used across eras in different configurations, and as such should be first referenced here.
-	class UK3CB_BAF_LandRover_Soft_Green_B;
 	class ukcw_fv432;
 	class ukcw_cvrt_Scim_w_L1;
+	class ukcw_cvrt_Scim_d_L1;
 	class ukcw_cvrt_Scorpion_w_L1;
+	class ukcw_cvrt_Scorpion_d_L1;
 	
 	// Custom TWC vehicles are defined below (they may inherit from above)
 	#include "vehicles\warriors.hpp"
+	#include "vehicles\lr_softtop.hpp"
 	
 	#include "generic\generic.hpp"
 	#include "coldwar\coldwar.hpp"
-	#include "millenial\millenial.hpp"
+	#include "millennial\millennial.hpp"
 	#include "modern\modern.hpp"
 };
 

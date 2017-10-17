@@ -1,9 +1,12 @@
 // What ERA?
+#undef ADD_FACTION
 #define ADD_FACTION faction = "TWC_Millennial"
 
 #define MILLENNIAL_LANDROVER_MOD 0.5
 #define MILLENNIAL_FV432_MOD 1
 #define MILLENNIAL_WARRIOR_MOD 0.8
+#define MILLENNIAL_SCIMITAR_MOD 1
+#define MILLENNIAL_SCORPION_MOD 1
 
 // section vehicle resupply total (manipulated by modifiers)
 #define SECTION_FIELDDRESSING 20
