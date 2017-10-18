@@ -206,7 +206,8 @@ class CfgVehicles
 			};
 		};
 	};
-	/* class rhs_medic_bag;
+/*
+	class rhs_medic_bag;
 	class USSR_big_medic_bag: rhs_medic_bag
 	{
 		scope = 1;
@@ -277,6 +278,7 @@ class CfgVehicles
 			};
 		};
 	};
+*/
 	class USSR_RPG_bag: CUP_B_RPGPack_Khaki
 	{
 		class TransportMagazines
@@ -288,6 +290,7 @@ class CfgVehicles
 			};
 		};
 	};
+/*
 	class rhs_sidor;
 	class USSR_Serg_bag: rhs_sidor
 	{
@@ -309,18 +312,19 @@ class CfgVehicles
 				count=4;
 			};
 		};
-	}; */
+	};
+*/
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 	class I_G_Soldier_base_F;
 	
-	#include "russianfederation.hpp"
+//	#include "russianfederation.hpp"
 	#include "iraq.hpp"
 	#include "african.hpp"
 	#include "irish.hpp"
 	
-	//#include "USSRAfghan.hpp"
+//	#include "USSRAfghan.hpp"
 	
 	#include "takistan.hpp"
 	

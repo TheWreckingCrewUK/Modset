@@ -139,7 +139,7 @@ class cfgWeapons
 			uniformModel = "-";
         };
 	};
-	class TWC_Smock_Artic: UK3CB_BAF_U_Smock_Arctic
+	class TWC_Smock_Arctic: UK3CB_BAF_U_Smock_Arctic
 	{
 		scope = 1;
 		class ItemInfo: UniformItem
