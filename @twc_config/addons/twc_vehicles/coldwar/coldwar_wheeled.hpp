@@ -1,6 +1,6 @@
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_LANDROVERTRADITIONAL_MOD
-class TWC_Vehicle_ColdWar_LandRover_Woodland: TWC_Vehicles_LR_Soft_Base_F {
+class TWC_Vehicle_ColdWar_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -78,7 +78,7 @@ class TWC_Vehicle_ColdWar_LandRover_Desert: TWC_Vehicle_ColdWar_LandRover_Woodla
 	};
 };
 
-class TWC_Vehicle_ColdWar_LandRover_Woodland_COIN: TWC_Vehicles_LR_Soft_Base_F {
+class TWC_Vehicle_ColdWar_LandRover_Woodland_COIN: TWC_BaseClass_LR_Soft_Base_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;

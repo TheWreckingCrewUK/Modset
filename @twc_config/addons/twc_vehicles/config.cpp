@@ -26,11 +26,6 @@ class CfgPatches {
 			"TWC_burnes_foxhound_w_a" */
 			
 			// TWC Vehicles
-			"TWC_Vehicle_FV510_D_SLAT",
-			"TWC_Vehicle_FV510_W_SLAT",
-			"TWC_Vehicle_FV510_D",
-			"TWC_Vehicle_FV510_W",
-
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Woodland",
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Desert",
 			"TWC_Vehicle_Generic_FV432Ambulance_Woodland",

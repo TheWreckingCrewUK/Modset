@@ -7,29 +7,7 @@ class TWC_Weapon_762_GPMG_Vehicle: CUP_Vlmg_L94A1_Coax {
 	displayname = "L94A1 GPMG";
 };
 
-/* class autocannon_30mm;
-class autocannon_30mm_F: autocannon_30mm { class AP; class HE; };
-class TWC_Weapon_30mm_3rd_Rarden_Vehicle: autocannon_30mm_F {
-	class AP: AP {
-		displayname = "L21A1 Rarden";
-		magazineReloadTime = 1.2;
-
-		magazines[] = {
-			"TWC_Magazine_30mm_3rd_APDS"
-		};
-	};
-	
-	class HE: HE {
-		displayname = "L21A1 Rarden";
-		magazineReloadTime = 1.2;
-
-		magazines[] = {
-			"TWC_Magazine_30mm_3rd_HET"
-		};
-	};
-}; */
-
-class TWC_Weapon_30mm_3rd_Rarden_Vehicle: autocannon_Base_F {
+class TWC_Weapon_30mm_Rarden_Vehicle: autocannon_Base_F {
 	displayName = "L21A1 Rarden";
 	magazines[] = {"TWC_Magazine_30mm_3rd_APDS", "TWC_Magazine_30mm_3rd_HET"};
 	

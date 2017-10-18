@@ -11,6 +11,9 @@ Tag | PBO/Type | Category | Item Name | Modifier | Misc
 TWC | Magazine | --- | Callibre | Magazine Size | Ammo Type (if applicable), tracer is _T
 TWC | AmmoBox | Era, Vehicle, or Other | Target of Resupply | Mobility (e.g. Portable) | ---
 TWC | Vehicle | Era | Vehicle Name | Camoflauge | COIN (if applicable)
+TWC | Item | --- | Name | --- | ---
+TWC | Weapon | Callibre | Weapon Name | Vehicle | ---
+TWC | BaseClass | --- | Name | _F (if extending) | ---
 
 > This is still a work in progress. Existing classes may not follow this, but effort is being made to update them when found.
 
