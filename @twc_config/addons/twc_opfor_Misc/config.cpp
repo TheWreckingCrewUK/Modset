@@ -345,5 +345,38 @@ class CFgMarkers
 		shadow = 0;
 		color[] = {1,1,1,1};
 		markerClass = "Flags";
-	};	
+	};
+	class twc_novastrana_flag: Flag
+	{
+		name = "Novastrana";
+		icon = "twc_opfor_Misc\data\novastranag.paa";
+		texture = "twc_opfor_Misc\data\novastrana.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
+	class twc_SSUBI_flag: Flag
+	{
+		name = "SSUBI";
+		icon = "twc_opfor_Misc\data\SSUBI.paa";
+		texture = "twc_opfor_Misc\data\SSUBI.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
+	class twc_free_taviana_flag: Flag
+	{
+		name = "Free Taviana";
+		icon = "twc_opfor_Misc\data\free_taviana.paa";
+		texture = "twc_opfor_Misc\data\free_taviana.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
 };
