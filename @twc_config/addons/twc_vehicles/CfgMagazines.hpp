@@ -1,6 +1,6 @@
 class 140Rnd_30mm_MP_shells_Tracer_Red;
 class TWC_Magazine_30mm_3rd_HET: 140Rnd_30mm_MP_shells_Tracer_Red {
-	ammo = "B_30mm_MP_Tracer_Red";
+	ammo = "B_30mm_HE_Tracer_Red";
 	author = "FakeMatty, Bosenator";
 	scope = 1;
 	scopeArsenal = 0;
@@ -11,6 +11,7 @@ class TWC_Magazine_30mm_3rd_HET: 140Rnd_30mm_MP_shells_Tracer_Red {
 
 class 60Rnd_30mm_APFSDS_shells;
 class TWC_Magazine_30mm_3rd_APDS: 60Rnd_30mm_APFSDS_shells {
+	ammo = "B_30mm_APFSDS_Tracer_Red";
 	author = "FakeMatty, Bosenator";
 	scope = 1;
 	scopeArsenal = 0;
