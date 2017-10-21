@@ -730,7 +730,7 @@
 		displayName="Vehicle Crew";
 		editorSubcategory = "Men_1990_Woodland_Mounted";
 		vehicleClass="Men_1990_Woodland_Mounted";
-		backpack="";linkedItems[]=
+		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Pilot_DPMT",
 			"UK3CB_BAF_H_CrewHelmet_DPMT_ESS_A",
@@ -1087,7 +1087,7 @@
 		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_FAC_Desert";
-	}
+	};
 //////////////////////////////  Mounted  //////////////////////////////
 	class 1990_British_Rifleman_Mounted_Desert: 1990_British_Rifleman_Desert
 	{

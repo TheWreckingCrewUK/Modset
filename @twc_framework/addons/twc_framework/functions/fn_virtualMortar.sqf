@@ -22,7 +22,7 @@
 
 
 if (isServer) then {	
-	Params ["_marker",["_radius",200],["_rounds",5],["_Roundselect",""],["_delay",10]];
+	Params ["_marker",["_radius",200],["_rounds",5],["_Roundselect",""],["_delay",10],["_safeArea","nil"]];
 	_Roundtype = 0;
 	switch (_Roundselect) do {
 		case "HE": {_Roundtype = "ModuleOrdnanceMortar_F";};
@@ -34,7 +34,8 @@ if (isServer) then {
 	_pos = getMarkerPos _marker;
 
 	for "_i" from 0 to _rounds do{
-		_position =  [_pos, _radius] call CBA_fnc_randPos;		
+		_position =  [_pos, _radius] call CBA_fnc_randPos;
+		if(_position inArea _safeArea)exitWith{};
 		_Roundtype createVehicle _position;
 		sleep _delay;
 	};
