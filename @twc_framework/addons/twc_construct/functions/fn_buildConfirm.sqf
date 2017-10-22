@@ -1,4 +1,4 @@
-params["_unit",];
+params["_unit"];
 
 [_unit, "forceWalk", "ACE_Sandbag", false] call ace_common_fnc_statusEffect_set;
 

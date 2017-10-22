@@ -1,6 +1,5 @@
 params["_unit","_type","_cost"];
 
-//These have to be global because AddActionEventHandler Needs It
 twc_construct_type = _type;
 twc_construct_cost = _cost;
 
@@ -12,9 +11,6 @@ ace_sandbag_sandbag = _veh;
 
 _veh disableCollisionWith _unit;
 
-hint "Please remember that even though the sandbag can't hurt you it can hurt others";
-
-//Event Handler to see the object and help place it
 ace_sandbag_deployPFH =[{
 	(_this select 0) params ["_unit","_veh"];
 	
@@ -28,11 +24,10 @@ ace_sandbag_deployPFH =[{
 
 [localize "STR_ace_sandbag_ConfirmDeployment", localize "STR_ace_sandbag_CancelDeployment", localize "STR_ace_sandbag_ScrollAction"] call ace_interaction_fnc_showMouseHint;
 
-//Builds the object when you select build
 _unit setVariable ["ace_sandbag_Deploy", [
 _unit, "DefaultAction",
 {ace_sandbag_deployPFH != -1},
-{[_this select 0] call twc_fnc_buildConfirm}
+{[_this select 0] call twc_construct_fnc_buildConfirm}
 ] call ace_common_fnc_addActionEventHandler];
 
 _unit setVariable ["ace_sandbag_isDeploying", true, true];

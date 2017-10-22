@@ -5,11 +5,7 @@ class CfgPatches
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.7;
-		requiredAddons[]=
-		{
-			"cba_ai",
-			"A3_Modules_F"
-		};
+		requiredAddons[]={};
 		author[]={};
 		authorUrl="";
 		version="1";
@@ -19,10 +15,11 @@ class CfgPatches
 };
 class cfgFunctions
 {
-	class TWC
+	class TWC_Construct
 	{
 		class Functions
 		{
+			tag = "twc_construct";
 			file="twc_construct\functions";
 			class build{};
 			class buildConfirm{};
