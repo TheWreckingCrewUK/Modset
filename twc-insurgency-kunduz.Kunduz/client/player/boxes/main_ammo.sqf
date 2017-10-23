@@ -388,8 +388,8 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_556_30Rnd",50],
 		["UK3CB_BAF_556_30Rnd_T",50],
 		["CUP_5Rnd_762x51_M24",50],
-		["rhsusf_5Rnd_762x51_m118_special_Mag", 50],
-		["rhsusf_10Rnd_762x51_m118_special_Mag", 50],
+		["UK3CB_BAF_762_L42A1_20Rnd", 50],
+		["UK3CB_BAF_762_L42A1_20Rnd_T", 50],
 		["rhsusf_mag_17Rnd_9x19_JHP",15],
 		["HandGrenade",5]
 	];
