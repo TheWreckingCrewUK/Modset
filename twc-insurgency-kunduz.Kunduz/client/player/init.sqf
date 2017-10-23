@@ -947,6 +947,12 @@ if (!isNil "P901" && {player == P901}) then {
 	[player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;	
 	_action3 = ["Zeus","Spectator Off","",{execVM "client\zeus\spectator_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
 	[player, 1, ["ACE_SelfActions"], _action3] call ace_interact_menu_fnc_addActionToObject;	
+	_action4 = ["Zeus","Basemode On","",{execVM "client\zeus\basemode_on.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action4] call ace_interact_menu_fnc_addActionToObject;	
+		_action5 = ["Zeus","Basemode Off","",{execVM "client\zeus\basemode_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action5] call ace_interact_menu_fnc_addActionToObject
+	;
+};
 };
 if (!isNil "P902" && {player == P902}) then {
     g_class = "BAF_SL";
