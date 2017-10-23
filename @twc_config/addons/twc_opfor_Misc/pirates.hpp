@@ -11,7 +11,7 @@ class Afr_Pirate_Base: I_G_Soldier_base_F
 	identityTypes[]=
 	{
 		"LanguageENG_F",
-		"Head_African",
+		"Head_African"
 	};
 	Items[]=
 	{
