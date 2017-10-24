@@ -942,18 +942,17 @@ if (!isNil "P901" && {player == P901}) then {
 	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
 	//Zeus Watermark removal, and spectator togle
 	_action = ["Camera","Start Camera","",{execVM "client\zeus\camera.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 	_action2 = ["Zeus","Spectator On","",{execVM "client\zeus\spectator_on.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;
 	_action3 = ["Zeus","Spectator Off","",{execVM "client\zeus\spectator_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action3] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action3] call ace_interact_menu_fnc_addActionToObject;
 	_action4 = ["Zeus","Basemode On","",{execVM "client\zeus\basemode_on.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action4] call ace_interact_menu_fnc_addActionToObject;	
-		_action5 = ["Zeus","Basemode Off","",{execVM "client\zeus\basemode_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action5] call ace_interact_menu_fnc_addActionToObject
-	;
+	[player, 1, ["ACE_SelfActions"], _action4] call ace_interact_menu_fnc_addActionToObject;
+	_action5 = ["Zeus","Basemode Off","",{execVM "client\zeus\basemode_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action5] call ace_interact_menu_fnc_addActionToObject;
 };
-};
+
 if (!isNil "P902" && {player == P902}) then {
     g_class = "BAF_SL";
 	g_group = "0";
@@ -979,11 +978,15 @@ if (!isNil "P902" && {player == P902}) then {
 	{nul = [] execVM "client\player\boxes\smallMedical.sqf";},[],0,true,false,"",""];
 	//Zeus Watermark removal, and spectator togle
 	_action = ["Camera","Start Camera","",{execVM "client\zeus\camera.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 	_action2 = ["Zeus","Spectator On","",{execVM "client\zeus\spectator_on.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;
 	_action3 = ["Zeus","Spectator Off","",{execVM "client\zeus\spectator_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action3] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action3] call ace_interact_menu_fnc_addActionToObject;
+	_action4 = ["Zeus","Basemode On","",{execVM "client\zeus\basemode_on.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action4] call ace_interact_menu_fnc_addActionToObject;
+	_action5 = ["Zeus","Basemode Off","",{execVM "client\zeus\basemode_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action5] call ace_interact_menu_fnc_addActionToObject;
 };
 
 //Ammobox init
