@@ -3,7 +3,7 @@ _player1 = if(!isPlayer p606)then{""}else{(name p606)};
 _player2 = if(!isPlayer p607)then{""}else{(name p607)};
 _player3 = if(!isPlayer p608)then{""}else{(name p608)};
 
-g_playerlist = [["EOD Team", [["EOD TL", [_player1, "EOD TL"], [_player2, "EOD Technician"], [_player2, "EOD Infantry Escort"]]]]				
+g_playerlist = [["EOD Team", [["EOD TL", [_player1, "EOD TL"], [_player2, "EOD Technician"], [_player3, "EOD Infantry Escort"]]]]				
 ];
 
 _bigheadline = "<t color='#CCCC00' size='1.5' shadow='1' shadowColor='#000000' align='left'>%1</t><br />";
