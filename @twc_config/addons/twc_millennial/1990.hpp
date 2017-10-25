@@ -372,7 +372,7 @@
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "(_this select 0) setVariable [""ace_medical_medicClass"",1];";
+			init = "(_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 	};
 	class 1990_British_HeliPilot: 1990_British_Base
@@ -624,7 +624,12 @@
 			"UK3CB_BAF_556_30Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
-		};	
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "[(_this select 0) execVM ""twc_construct\init.sqf"";(_this select 0) setVariable [""twc_keepMap"",true];"
+		}
+		
 	};
 	class 1990_British_FAC: 1990_British_Platoon_Commander
 	{
@@ -955,7 +960,7 @@
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "init = (_this select 0) setVariable [""ace_medical_medicClass"",1];";
+			init = "init = (_this select 0) setVariable [""ace_medical_medicClass"",1];(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 	};
     class 1990_British_HeliPilot_Desert: 1990_British_HeliPilot

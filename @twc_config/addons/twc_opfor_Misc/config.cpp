@@ -349,7 +349,7 @@ class CFgMarkers
 	class twc_novastrana_flag: Flag
 	{
 		name = "Novastrana";
-		icon = "twc_opfor_Misc\data\novastranag.paa";
+		icon = "twc_opfor_Misc\data\novastrana.paa";
 		texture = "twc_opfor_Misc\data\novastrana.paa";
 		size = 32;
 		scope = 2;

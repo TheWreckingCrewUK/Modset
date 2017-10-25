@@ -15,9 +15,10 @@ private _return = false;
 
 if (_return) then {
 	_return = switch (true) do {
-		case (_vehicle isKindOf "Tank"): 
-		case (_vehicle isKindOf "Helicopter"):
-		case (_vehicle isKindOf "Plane"):
+		case (_vehicle isKindOf "ParachuteBase"): { false; };
+		case (_vehicle isKindOf "Tank");
+		case (_vehicle isKindOf "Helicopter");
+		case (_vehicle isKindOf "Plane");
 		case (_vehicle isKindOf "Ship"): { true; };
 		default { false; };
 	};

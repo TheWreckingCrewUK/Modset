@@ -167,7 +167,7 @@ class CfgVehicles
 	class B_Soldier_base_F;
 	
 	#include "1990.hpp"	
-	#include "2000.hpp"	
+//	#include "2000.hpp"	
 	#include "backpacks.hpp"
 };
 #include "weapons.hpp"

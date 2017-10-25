@@ -68,9 +68,9 @@ if(isMultiplayer)then{
 	titleText ["Insurgency Plus 4","PLAIN DOWN"];
 	titleFadeOut 7;
 	sleep 5;
-	titleText ["Join us at: www.thewreckingcrew.eu","PLAIN DOWN"];
-	titleFadeOut 7;
-	sleep 5;
+	titleText ["<t color='#CC4D00' size='5'>Join us at: www.thewreckingcrew.eu</t>","PLAIN DOWN"];
+	titleFadeOut 12;
+	sleep 10;
 	titleText ["TS3: ts.thewreckingcrew.eu","PLAIN DOWN"];
 	titleFadeOut 7;
 	sleep 5;
