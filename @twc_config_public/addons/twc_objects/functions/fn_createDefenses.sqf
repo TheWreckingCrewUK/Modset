@@ -26,5 +26,5 @@ _item createVehicle (position _crate);
 clearItemCargo _crate;
 _crate addItemCargo ["TWC_ForwardBase_Supplies", _supplies - _cost];
 
-_return = format["%1 spawned successfully",getText(configFile >> "CfgVehicles" >> _item >> "displayName");];
+_return = format["%1 spawned successfully",getText(configFile >> "CfgVehicles" >> _item >> "displayName")];
 _return;
