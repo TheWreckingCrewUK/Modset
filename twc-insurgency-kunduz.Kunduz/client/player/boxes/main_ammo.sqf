@@ -16,10 +16,13 @@
 _weapons = [];
 _magazines = [["SmokeShell",5], ["SmokeShellYellow",5], ["SmokeShellRed",5], ["SmokeShellGreen",5], ["SmokeShellPurple",5], ["SmokeShellBlue",5], ["SmokeShellOrange",5], ["Chemlight_green",5], ["Chemlight_yellow",5], ["Chemlight_red",5], ["Chemlight_blue",5],["ACE_Chemlight_IR",5]];
 _items = [["ACE_EarPlugs",1],["ACE_MapTools",1],["rhsusf_ANPVS_14",1],["ACE_Flashlight_KSF1", 1],["ACE_IR_Strobe_Item",1],["ACE_HandFlare_White",5],["ACE_HandFlare_Green",5],["ACE_CableTie",2],["ACE_fieldDressing",10],["ACE_morphine",10],["ACE_elasticBandage",10],["ACE_quikclot",10],["ACE_packingBandage",10], ["ACE_tourniquet", 2],["ACE_SpraypaintGreen",1], ["ACE_EntrenchingTool", 1], ["ACE_wirecutter", 1]];
+_backpacks = [];
+
 
 _tmp_weapons = [];
 _tmp_magazines = [];
 _tmp_items = [];
+_tmp_backpacks = [];
 
 //BAF Section Leader
 if (g_class == "BAF_SL") then {
@@ -57,6 +60,11 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_LLM_IR_Black",1],
 		["itemCTAB",1]
     ];
+			_tmp_backpacks = 
+	[
+		["UK3CB_BAF_B_Bergen_MTP_SL_L_A",1],
+		["UK3CB_BAF_B_Bergen_MTP_Radio_L_A",1]
+	];
 };
 
 //BAF Rifleman Pointman
@@ -96,6 +104,12 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["UK3CB_BAF_Javelin_CLU",1],
 		["UK3CB_BAF_LLM_IR_Black",1]
+	];
+	
+		_tmp_backpacks = 
+	[
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B",1],
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C",1]
 	];
 };
 
@@ -139,6 +153,11 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1],
 		["UK3CB_BAF_LLM_IR_Black",1]
 	];
+			_tmp_backpacks = 
+	[
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A",1],
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D",1]
+	];
 };
 
 //BAF Automatic Rifleman
@@ -171,6 +190,11 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["ACRE_PRC343",1],
 		["UK3CB_BAF_LLM_IR_Black",1]
+	];
+			_tmp_backpacks = 
+	[
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A",1],
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B",1]
 	];
 };
 
@@ -229,6 +253,11 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1],
 		["UK3CB_BAF_LLM_IR_Black",1]
 	];
+			_tmp_backpacks = 
+	[
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D",1],
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B",1]
+	];
 };
 
 //BAF Machine Gunner
@@ -255,6 +284,11 @@ if (g_class == "BAF_SL") then {
 		["STKR_Predator",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["ACRE_PRC343",1]
+	];
+			_tmp_backpacks = 
+	[
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A",1],
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D",1]
 	];
 };
  
@@ -288,6 +322,11 @@ if (g_class == "BAF_SL") then {
 		["UK3CB_BAF_Javelin_CLU",1],
 		["ACRE_PRC343",1]
 	];	
+			_tmp_backpacks = 
+	[
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C",1],
+		["UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B",1]
+	];
 };
 
 //BAF Medic
@@ -329,6 +368,11 @@ if (g_class == "BAF_SL") then {
 		["ACRE_PRC343",1],
 		["UK3CB_BAF_G_Tactical_Black",1],
 		["UK3CB_BAF_LLM_IR_Black",1]
+	];
+			_tmp_backpacks = 
+	[
+		["UK3CB_BAF_B_Bergen_MTP_Medic_L_A",1],
+		["UK3CB_BAF_B_Bergen_MTP_Medic_L_B",1]
 	];
 };
 
@@ -1643,6 +1687,10 @@ if (g_class == "ANA_TL") then {
         _items set [count _items, _x];
 } forEach _tmp_items;
 
+{
+        _backpacks set [count _backpacks, _x];
+} forEach _tmp_backpacks;
+
 // empty it.
 clearWeaponCargo crateBox;
 clearMagazineCargo crateBox;
@@ -1656,4 +1704,6 @@ clearbackPackCargo crateBox;
 {crateBox addMagazineCargo [(_x select 0),(_x select 1)]} foreach _magazines;
 
 {crateBox addItemCargo [(_x select 0),(_x select 1)]} foreach _items;
+
+{crateBox addbackpackCargo [(_x select 0),(_x select 1)]} foreach _backpacks;
 
