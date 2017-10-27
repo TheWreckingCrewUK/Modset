@@ -4,6 +4,7 @@ class cfgWeapons
 	class rhs_weap_m4a1;
 	class rhs_weap_m249_pip_L;
 	class rhs_weap_m240B;
+	class rhs_weap_m27iar_grip;
 	
 	class twc_rhs_weap_m4a1_m203_acog_lazer: rhs_weap_m4a1_m203
 	{
@@ -69,6 +70,27 @@ class cfgWeapons
 			{
 				slot="PointerSlot";
 				item="rhsusf_acc_anpeq15A";
+			};
+		};
+	};
+	class twc_rhs_weap_m27iar_grip_acog_lazer: rhs_weap_m27iar_grip
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_ACOG";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15A";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="UnderBarrelSlot";
+				item="bipod_01_F_blk";
 			};
 		};
 	};
