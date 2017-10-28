@@ -23,9 +23,9 @@ if (!isNil "P101" && {player == P101}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
-	//M32 Spawner
-	ammoCrateSpawner addAction ["Spawn M32",
-	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
+		//Hearts and Minds crate Spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
+	{nul = [] execVM "client\player\boxes\heartsminds.sqf";},[],0,true,false,"",""];
 	//L7A2 Spawner
 	ammoCrateSpawner addAction ["Spawn L7A2",
 	{nul = [] execVM "client\player\boxes\staticGPMG.sqf";},[],0,true,false,"",""];
@@ -155,6 +155,9 @@ if (!isNil "P201" && {player == P201}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+			//Hearts and Minds crate Spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//M32 Spawner
 	ammoCrateSpawner addAction ["Spawn M32",
 	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
@@ -184,6 +187,9 @@ if (!isNil "P202" && {player == P202}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+			//Hearts and Minds crate Spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
@@ -243,6 +249,9 @@ if (!isNil "P206" && {player == P206}) then {
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+			//Hearts and Minds crate Spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//Box Clearer
 	ammoCrateSpawner addAction ["Clear Boxes",
 	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
@@ -302,6 +311,9 @@ if (!isNil "P301" && {player == P301}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+			//Hearts and Minds crate Spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//M32 Spawner
 	ammoCrateSpawner addAction ["Spawn M32",
 	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
@@ -331,6 +343,9 @@ if (!isNil "P302" && {player == P302}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+			//Hearts and Minds crate Spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
@@ -390,6 +405,9 @@ if (!isNil "P306" && {player == P306}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+				//Hearts and Minds crate Spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
@@ -449,6 +467,9 @@ if (!isNil "P310" && {player == P310}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
+				//Hearts and Minds crate Spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
