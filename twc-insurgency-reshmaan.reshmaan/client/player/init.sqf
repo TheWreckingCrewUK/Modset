@@ -35,7 +35,10 @@ if (!isNil "P101" && {player == P101}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
-
+	//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds.sqf";},[],0,true,false,"",""];
+	
 	//L7A2 Spawner
 	ammoCrateSpawner addAction ["Spawn L7A2",
 	{nul = [] execVM "client\player\boxes\staticGPMG.sqf";},[],0,true,false,"",""];
@@ -105,6 +108,9 @@ if (!isNil "P105" && {player == P105}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn L134A1",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+		//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds.sqf";},[],0,true,false,"",""];
 
 };
 if (!isNil "P106" && {player == P106}) then {
@@ -170,6 +176,9 @@ if (!isNil "P201" && {player == P201}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+		//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 
 };
 
@@ -191,6 +200,9 @@ if (!isNil "P202" && {player == P202}) then {
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+			//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 
 };
 
@@ -245,6 +257,9 @@ if (!isNil "P206" && {player == P206}) then {
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
+			//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 
 };
 
@@ -311,6 +326,9 @@ if (!isNil "P301" && {player == P301}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+			//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 
 };
 
@@ -335,6 +353,9 @@ if (!isNil "P302" && {player == P302}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+			//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 
 };
 
@@ -392,6 +413,9 @@ if (!isNil "P306" && {player == P306}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+			//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 
 };
 
@@ -449,6 +473,9 @@ if (!isNil "P310" && {player == P310}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+			//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 
 };
 
@@ -616,6 +643,9 @@ if (!isNil "P501" && {player == P501}) then {
 	//L16 Spawner
 	ammoCrateSpawner addAction ["Spawn L16",
 	{nul = [] execVM "client\player\boxes\staticL16.sqf";},[],0,true,false,"",""];
+			//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds.sqf";},[],0,true,false,"",""];
 
 };
 
@@ -654,6 +684,9 @@ if (!isNil "P502" && {player == P502}) then {
 	//L16 Spawner
 	ammoCrateSpawner addAction ["Spawn L16",
 	{nul = [] execVM "client\player\boxes\staticL16.sqf";},[],0,true,false,"",""];
+			//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds.sqf";},[],0,true,false,"",""];
 
 };
 
@@ -685,6 +718,9 @@ if (!isNil "P503" && {player == P503}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+			//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 
 };
 
@@ -717,6 +753,9 @@ if (!isNil "P504" && {player == P504}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
+			//hearts and minds box spawner
+	ammoCrateSpawner addAction ["Spawn Hearts and Minds Box",
+	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 
 };
 
@@ -933,6 +972,10 @@ if (!isNil "P901" && {player == P901}) then {
 	[player, 1, ["ACE_SelfActions"], _action4] call ace_interact_menu_fnc_addActionToObject;
 	_action5 = ["Zeus","Basemode Off","",{execVM "client\zeus\basemode_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
 	[player, 1, ["ACE_SelfActions"], _action5] call ace_interact_menu_fnc_addActionToObject;
+	
+		_action5 = ["Zeus","Insurgent Box","",{execVM "client\player\boxes\insurgent.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action5] call ace_interact_menu_fnc_addActionToObject;
+		
 };
 
 if (!isNil "P902" && {player == P902}) then {
@@ -969,7 +1012,12 @@ if (!isNil "P902" && {player == P902}) then {
 	[player, 1, ["ACE_SelfActions"], _action4] call ace_interact_menu_fnc_addActionToObject;
 	_action5 = ["Zeus","Basemode Off","",{execVM "client\zeus\basemode_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
 	[player, 1, ["ACE_SelfActions"], _action5] call ace_interact_menu_fnc_addActionToObject;
-};
+
+			_action5 = ["Zeus","Insurgent Box","",{execVM "client\player\boxes\insurgent.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action5] call ace_interact_menu_fnc_addActionToObject;
+		
+	
+	};
 
 //Ammobox init
 execVM "client\player\boxes\init.sqf";
