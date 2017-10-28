@@ -1,4 +1,4 @@
-deletemarker "nofire";
-nofire = 1;
-	publicVariable "nofire";
+
+basemode = 1;
+	publicVariable "basemode";
 	

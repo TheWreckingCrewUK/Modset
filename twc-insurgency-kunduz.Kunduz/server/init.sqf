@@ -15,11 +15,10 @@ if(isNil "InsP_civTrust") then{
 	publicVariable "InsP_civTrust";
 };
 
-if(isNil "nofire") then{
-	nofire = 0;
-	publicVariable "nofire";
+if(isNil "basemode") then{
+	basemode = 0;
+	publicVariable "basemode";
 };
-
 
 #include "sys_ied\init.sqf";
 #include "sys_vehicles\init.sqf";

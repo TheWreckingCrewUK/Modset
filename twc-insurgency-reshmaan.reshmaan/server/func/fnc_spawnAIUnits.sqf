@@ -22,9 +22,9 @@ _dir1 = _dir - 30;
 _dir2 = _dir + 30;
 
 _num = 0;
-_total = 10;
+_total = ((count allplayers / 25)+1) * random[1.5,1.6,1.8] * (3 * ((_this select 0 distance getMarkerPos "respawn_west") / (800 * ((insp_enemymorale * -0.8) + 2))));
 _group = createGroup East;
-_spawnPos = [_pos,_groupradius,[_dir1,_dir2]] call SHK_pos;
+_spawnPos = [_pos, 50] call CBA_fnc_randPos;
 for "_i" from 1 to _total do{
 	_unit = _group createUnit [(townSpawn select _num), _spawnPos,[], 5,"NONE"];
 	_unit addEventHandler ["Killed",{

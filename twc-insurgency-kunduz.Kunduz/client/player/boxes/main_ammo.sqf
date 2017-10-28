@@ -265,6 +265,7 @@ if (g_class == "BAF_SL") then {
     _tmp_weapons =
     [
         ["UK3CB_BAF_L7A2",1],
+        ["UK3CB_BAF_Tripod",1],
 		["Binocular",1],
 		["rhsusf_weap_glock17g4",1],
 		["rhs_weap_m72a7",4]

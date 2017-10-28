@@ -19,6 +19,46 @@ skipTime (_time - dayTime + 24)%24;
 InsP_playersKilledAsCivs = [];
 publicVariable "InsP_playersKilledAsCivs";
 
+
+
+addMissionEventHandler ["EntityKilled", 
+{
+    params ["_killed", "_killer"];
+	_killer = _killed getVariable ["ace_medical_lastDamageSource", objNull];
+    
+    if (_killed isKindOf "CAManBase" && {side group _killed isEqualTo civilian} && {side group _killer == West}) then
+    {
+					InsP_civTrust = InsP_civTrust - 0.4;
+	publicVariable "InsP_civTrust";
+    };
+}];
+
+addMissionEventHandler ["EntityKilled", 
+{
+    params ["_killed1", "_killer1"];
+	_killer1 = _killed1 getVariable ["ace_medical_lastDamageSource", objNull];
+    
+    if (_killed1 isKindOf "CAManBase" && {side group _killed1 isEqualTo east} && {side group _killer1 == West}) then
+    {
+					InsP_enemyMorale = InsP_enemyMorale - 0.05;
+	publicVariable "InsP_enemyMorale";
+    };
+}];
+
+addMissionEventHandler ["EntityKilled", 
+{
+    params ["_killed1", "_killer1"];
+	_killer1 = _killed1 getVariable ["ace_medical_lastDamageSource", objNull];
+    
+    if (_killed1 isKindOf "CAManBase" && {side group _killed1 isEqualTo west} && {side group _killer1 == east}) then
+    {
+					InsP_enemyMorale = InsP_enemyMorale + 0.5;
+	publicVariable "InsP_enemyMorale";
+    };
+}];
+
+
+
 timeEventHandler = addMissionEventHandler ["PlayerDisconnected",{
 	if(!((_this select 1) in memberIDArray))exitWith{};
 	

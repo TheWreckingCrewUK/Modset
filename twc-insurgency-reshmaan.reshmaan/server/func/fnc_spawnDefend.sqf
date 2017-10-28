@@ -19,7 +19,7 @@ params["_pos"];
 [_pos]spawn{
 _pos = (_this select 0);
 _num = 0;
-_total = 10;
+_total = ((count allplayers / 25)+1) * random[0.2,0.3,0.4] * (3 * ((_this select 0 distance getMarkerPos "respawn_west") / (800 * ((insp_enemymorale * -0.8) + 2))));
 _group = createGroup East;
 	for "_i" from 1 to _total do{
 		_unit = _group createUnit [(townSpawn select _num), _pos,[], 5,"NONE"];
