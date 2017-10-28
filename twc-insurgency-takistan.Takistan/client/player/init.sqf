@@ -6,6 +6,18 @@ g_unit = "";
 ["en", "English"] call acre_api_fnc_babelAddLanguageType;
 ["ru", "Pashto"] call acre_api_fnc_babelAddLanguageType;
 
+	//Box Clearer
+	ammoCrateSpawner addAction ["Clear Boxes",
+	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+	
+		//Vehicle Ammo
+	ammoCrateSpawner addAction ["Spawn 7.62 Vehicle Ammo",
+	{nul = [] execVM "client\player\boxes\762ammo.sqf";},[],0,true,false,"",""];
+	
+			//Vehicle Ammo
+	ammoCrateSpawner addAction ["Spawn .50 Vehicle Ammo",
+	{nul = [] execVM "client\player\boxes\50calammo.sqf";},[],0,true,false,"",""];
+
 //BAF Infantry units P1xx
 if (!isNil "P101" && {player == P101}) then {
     g_class = "BAF_SL";
@@ -23,9 +35,7 @@ if (!isNil "P101" && {player == P101}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
-		//Hearts and Minds crate Spawner
-	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
-	{nul = [] execVM "client\player\boxes\heartsminds.sqf";},[],0,true,false,"",""];
+
 	//L7A2 Spawner
 	ammoCrateSpawner addAction ["Spawn L7A2",
 	{nul = [] execVM "client\player\boxes\staticGPMG.sqf";},[],0,true,false,"",""];
@@ -35,9 +45,7 @@ if (!isNil "P101" && {player == P101}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn L134A1",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P102" && {player == P102}) then {
@@ -97,9 +105,7 @@ if (!isNil "P105" && {player == P105}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn L134A1",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 if (!isNil "P106" && {player == P106}) then {
     g_class = "BAF_MG";
@@ -155,9 +161,6 @@ if (!isNil "P201" && {player == P201}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
-			//Hearts and Minds crate Spawner
-	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
-	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//M32 Spawner
 	ammoCrateSpawner addAction ["Spawn M32",
 	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
@@ -167,9 +170,7 @@ if (!isNil "P201" && {player == P201}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P202" && {player == P202}) then {
@@ -187,15 +188,10 @@ if (!isNil "P202" && {player == P202}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
-			//Hearts and Minds crate Spawner
-	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
-	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P203" && {player == P203}) then {
@@ -249,12 +245,7 @@ if (!isNil "P206" && {player == P206}) then {
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
-			//Hearts and Minds crate Spawner
-	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
-	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P207" && {player == P207}) then {
@@ -311,9 +302,6 @@ if (!isNil "P301" && {player == P301}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
-			//Hearts and Minds crate Spawner
-	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
-	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//M32 Spawner
 	ammoCrateSpawner addAction ["Spawn M32",
 	{nul = [] execVM "client\player\boxes\smallM32.sqf";},[],0,true,false,"",""];
@@ -323,9 +311,7 @@ if (!isNil "P301" && {player == P301}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P302" && {player == P302}) then {
@@ -343,18 +329,13 @@ if (!isNil "P302" && {player == P302}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
-			//Hearts and Minds crate Spawner
-	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
-	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P303" && {player == P303}) then {
@@ -405,18 +386,13 @@ if (!isNil "P306" && {player == P306}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
-				//Hearts and Minds crate Spawner
-	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
-	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P307" && {player == P307}) then {
@@ -467,18 +443,13 @@ if (!isNil "P310" && {player == P310}) then {
 	//Mortar Spawner
 	ammoCrateSpawner addAction ["Spawn Mortar",
 	{nul = [] execVM "client\player\boxes\smallMortar.sqf";},[],0,true,false,"",""];
-				//Hearts and Minds crate Spawner
-	ammoCrateSpawner addAction ["Spawn Hearts and Minds box",
-	{nul = [] execVM "client\player\boxes\heartsminds_us.sqf";},[],0,true,false,"",""];
 	//L111A1 Spawner
 	ammoCrateSpawner addAction ["Spawn M2",
 	{nul = [] execVM "client\player\boxes\staticL111A1.sqf";},[],0,true,false,"",""];
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P311" && {player == P311}) then {
@@ -645,9 +616,7 @@ if (!isNil "P501" && {player == P501}) then {
 	//L16 Spawner
 	ammoCrateSpawner addAction ["Spawn L16",
 	{nul = [] execVM "client\player\boxes\staticL16.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P502" && {player == P502}) then {
@@ -685,9 +654,7 @@ if (!isNil "P502" && {player == P502}) then {
 	//L16 Spawner
 	ammoCrateSpawner addAction ["Spawn L16",
 	{nul = [] execVM "client\player\boxes\staticL16.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P503" && {player == P503}) then {
@@ -718,9 +685,7 @@ if (!isNil "P503" && {player == P503}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P504" && {player == P504}) then {
@@ -752,9 +717,7 @@ if (!isNil "P504" && {player == P504}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 };
 
 if (!isNil "P505" && {player == P505}) then {
@@ -958,17 +921,20 @@ if (!isNil "P901" && {player == P901}) then {
 	//L134A1 Spawner
 	ammoCrateSpawner addAction ["Spawn GMG",
 	{nul = [] execVM "client\player\boxes\staticL134A1.sqf";},[],0,true,false,"",""];
-	//Box Clearer
-	ammoCrateSpawner addAction ["Clear Boxes",
-	{nul = [] execVM "client\player\boxes\clearboxes.sqf";},[],0,true,false,"",""];
+
 	//Zeus Watermark removal, and spectator togle
 	_action = ["Camera","Start Camera","",{execVM "client\zeus\camera.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 	_action2 = ["Zeus","Spectator On","",{execVM "client\zeus\spectator_on.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;
 	_action3 = ["Zeus","Spectator Off","",{execVM "client\zeus\spectator_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action3] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action3] call ace_interact_menu_fnc_addActionToObject;
+	_action4 = ["Zeus","Basemode On","",{execVM "client\zeus\basemode_on.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action4] call ace_interact_menu_fnc_addActionToObject;
+	_action5 = ["Zeus","Basemode Off","",{execVM "client\zeus\basemode_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action5] call ace_interact_menu_fnc_addActionToObject;
 };
+
 if (!isNil "P902" && {player == P902}) then {
     g_class = "BAF_SL";
 	g_group = "0";
@@ -994,11 +960,15 @@ if (!isNil "P902" && {player == P902}) then {
 	{nul = [] execVM "client\player\boxes\smallMedical.sqf";},[],0,true,false,"",""];
 	//Zeus Watermark removal, and spectator togle
 	_action = ["Camera","Start Camera","",{execVM "client\zeus\camera.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 	_action2 = ["Zeus","Spectator On","",{execVM "client\zeus\spectator_on.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action2] call ace_interact_menu_fnc_addActionToObject;
 	_action3 = ["Zeus","Spectator Off","",{execVM "client\zeus\spectator_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
-	[player, 1, ["ACE_SelfActions"], _action3] call ace_interact_menu_fnc_addActionToObject;	
+	[player, 1, ["ACE_SelfActions"], _action3] call ace_interact_menu_fnc_addActionToObject;
+	_action4 = ["Zeus","Basemode On","",{execVM "client\zeus\basemode_on.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action4] call ace_interact_menu_fnc_addActionToObject;
+	_action5 = ["Zeus","Basemode Off","",{execVM "client\zeus\basemode_off.sqf"},{true}] call ace_interact_menu_fnc_createAction;
+	[player, 1, ["ACE_SelfActions"], _action5] call ace_interact_menu_fnc_addActionToObject;
 };
 
 //Ammobox init
