@@ -20,7 +20,7 @@ if(missionNameSpace getVariable "twc_cachingAiRange" > 0)then{
 			_group = group (_this select 0);
 			[false,(group (_this select 0)),(missionNameSpace getVariable "twc_cachingAiRange")] spawn twc_fnc_initAICache
 		};
-	}, true, nil, true] call CBA_fnc_addClassEventHandler;
+	}, true, [], true] call CBA_fnc_addClassEventHandler;
 };
 
 if(missionNameSpace getVariable "twc_cachingVehicleRange" > 0)then{
