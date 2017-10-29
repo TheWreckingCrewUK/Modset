@@ -8,6 +8,7 @@
 
 params["_marker", "_civnum", "_civradius"];
 _random = random 100;
+
 if (_random < 50) then {
 	if (isServer) then {
 		_groupSpawn = [getMarkerPos _marker, East, smallTownSquad,[],[],[],[],[],180] call BIS_fnc_spawnGroup;

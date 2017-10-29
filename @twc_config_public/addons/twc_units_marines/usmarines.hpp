@@ -7,11 +7,11 @@ editorSubcategory = "Men_Modern";
 vehicleClass="Men_Modern";
 icon="iconMan";
 nakedUniform="U_BasicBody";
-uniformClass="rhs_uniform_FROG01_d";
+uniformClass="rhs_uniform_FROG01_wd";
 linkedItems[]=
 {
 "rhsusf_spc_rifleman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -20,7 +20,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_rifleman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -87,7 +87,7 @@ backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_squadleader",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
@@ -97,7 +97,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_squadleader",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
@@ -109,7 +109,7 @@ weapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"rhs_weap_m16a4_carryhandle_pmag",
+"twc_rhs_weap_m4a1_m203_acog_lazer",
 "rhsusf_weap_m9"
 };
 respawnweapons[]=
@@ -117,7 +117,7 @@ respawnweapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"rhs_weap_m16a4_carryhandle_pmag",
+"twc_rhs_weap_m4a1_m203_acog_lazer",
 "rhsusf_weap_m9"
 };
 magazines[]=
@@ -162,7 +162,7 @@ backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_squadleader",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
@@ -172,7 +172,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_squadleader",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
@@ -184,7 +184,7 @@ weapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"rhs_weap_m16a4_carryhandle_pmag",
+"twc_rhs_weap_m4a1_m203_acog_lazer",
 "rhsusf_weap_m9",
 };
 respawnweapons[]=
@@ -192,7 +192,7 @@ respawnweapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"rhs_weap_m16a4_carryhandle_pmag",
+"twc_rhs_weap_m4a1_m203_acog_lazer",
 "rhsusf_weap_m9"
 };
 magazines[]=
@@ -236,7 +236,7 @@ backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_rifleman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -245,7 +245,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_rifleman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -256,7 +256,7 @@ weapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"rhs_weap_m16a4_carryhandle_grip",
+"twc_rhs_weap_m4a1_acog_lazer",
 "rhs_weap_M136_hedp",
 "rhsusf_weap_m9"
 };
@@ -265,7 +265,7 @@ respawnweapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"rhs_weap_m16a4_carryhandle_grip",
+"twc_rhs_weap_m4a1_acog_lazer",
 "rhs_weap_M136_hedp",
 "rhsusf_weap_m9"
 };
@@ -310,7 +310,7 @@ backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_mg",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -319,7 +319,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_rifleman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -330,7 +330,7 @@ weapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"rhs_weap_m249_pip_L",
+"twc_rhs_weap_m249_pip_L_mgo_lazer",
 "rhsusf_weap_m9"
 };
 respawnweapons[]=
@@ -338,7 +338,7 @@ respawnweapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"rhs_weap_m249_pip_L",
+"twc_rhs_weap_m249_pip_L_mgo_lazer",
 "rhsusf_weap_m9"
 };
 magazines[]=
@@ -375,7 +375,7 @@ backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_rifleman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -384,7 +384,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_rifleman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -394,14 +394,14 @@ weapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m16a4_carryhandle_grip",
+"twc_rhs_weap_m4a1_acog_lazer",
 "rhsusf_weap_m9"
 };
 respawnweapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m16a4_carryhandle_grip",
+"twc_rhs_weap_m4a1_acog_lazer",
 "rhsusf_weap_m9"
 };
 magazines[]=
@@ -446,7 +446,7 @@ backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_mg",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -455,7 +455,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_mg",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -465,14 +465,14 @@ weapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m240b",
+"twc_rhs_weap_m240B_mgo_lazer",
 "rhsusf_weap_m9"
 };
 respawnweapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m240b",
+"twc_rhs_weap_m240B_mgo_lazer",
 "rhsusf_weap_m9"
 };
 magazines[]=
@@ -513,7 +513,7 @@ backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_rifleman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -522,7 +522,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_rifleman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -532,7 +532,7 @@ weapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m16a4_carryhandle_grip",
+"twc_rhs_weap_m4a1_acog_lazer",
 "rhs_weap_M136_hedp",
 "rhsusf_weap_m9"
 };
@@ -540,7 +540,7 @@ respawnweapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m16a4_carryhandle_grip",
+"twc_rhs_weap_m4a1_acog_lazer",
 "rhs_weap_M136_hedp",
 "rhsusf_weap_m9"
 };
@@ -586,7 +586,7 @@ backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_corpsman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -595,7 +595,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_corpsman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
@@ -605,14 +605,14 @@ weapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m16a4_carryhandle_grip",
+"twc_rhs_weap_m4a1_acog_lazer",
 "rhsusf_weap_m9"
 };
 respawnweapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m16a4_carryhandle_grip",
+"twc_rhs_weap_m4a1_acog_lazer",
 "rhsusf_weap_m9"
 };
 magazines[]=
@@ -661,7 +661,7 @@ icon="iconManLeader";
 linkedItems[]=
 {
 "rhsusf_spc_squadleader",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
@@ -671,7 +671,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_squadleader",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
@@ -848,14 +848,14 @@ weapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m16a4_carryhandle_pmag",
+"twc_rhs_weap_m4a1_acog_lazer",
 "UK3CB_BAF_L16"
 };
 respawnweapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m16a4_carryhandle_pmag",
+"twc_rhs_weap_m4a1_acog_lazer",
 "UK3CB_BAF_L16"
 };
 magazines[]=
@@ -881,14 +881,14 @@ weapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m16a4_carryhandle_pmag",
+"twc_rhs_weap_m4a1_acog_lazer",
 "UK3CB_BAF_L16_Tripod"
 };
 respawnweapons[]=
 {
 "Throw",
 "Put",
-"rhs_weap_m16a4_carryhandle_pmag",
+"twc_rhs_weap_m4a1_acog_lazer",
 "UK3CB_BAF_L16_Tripod"
 };
 };
@@ -902,7 +902,7 @@ backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_light",
-"rhsusf_mich_helmet_marpatd_norotos_headset",
+"rhsusf_mich_helmet_marpatwd_norotos_headset",
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
@@ -911,7 +911,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_light",
-"rhsusf_mich_helmet_marpatd_norotos_headset",
+"rhsusf_mich_helmet_marpatwd_norotos_headset",
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
@@ -1021,7 +1021,7 @@ backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_crewman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
@@ -1030,7 +1030,7 @@ linkedItems[]=
 respawnLinkedItems[]=
 {
 "rhsusf_spc_crewman",
-"rhsusf_mich_helmet_marpatd",
+"rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemcTab",
 "ItemCompass",

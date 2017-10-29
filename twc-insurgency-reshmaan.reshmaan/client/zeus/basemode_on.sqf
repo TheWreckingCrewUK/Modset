@@ -1,4 +1,3 @@
-
-basemode = 0;
+basemode = 1;
 	publicVariable "basemode";
 	

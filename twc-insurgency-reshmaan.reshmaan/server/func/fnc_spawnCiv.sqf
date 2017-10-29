@@ -21,6 +21,9 @@
 _group = createGroup civilian;
 params["_pos", "_civnum", "_civradius"];
 
+_civnum = random[3,4,5] * (2+((((_this select 0 distance getMarkerPos "respawn_west")/5)- 500)* (insp_civtrust * -0.001)))
+;
+
 for "_i" from 1 to _civnum do {
 	_individualCiv = _group createUnit [civilianType, _pos, [], _civradius, "NONE"];
 	_civHeading = (random 360);
@@ -64,3 +67,5 @@ for "_i" from 1 to _civnum do {
 	] call BIS_fnc_selectRandom;
 	_individualCiv forceadduniform _clothes;
 };
+
+	[_group, _group, 200, 3, True] call CBA_fnc_TaskDefend;

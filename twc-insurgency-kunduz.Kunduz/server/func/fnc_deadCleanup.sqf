@@ -1,8 +1,8 @@
 params["_pos"];
-
+	if (basemode == 0) then {
 [_pos]spawn{
 	sleep 300;
-	_enemy = nearestObjects [(_this select 0), ["Man","WeaponHolder","GroundWeaponHolder"], 600];
+	_enemy = nearestObjects [(_this select 0), ["Man","WeaponHolder","GroundWeaponHolder"], 800];
 	{
 		if(alive _x) then{
 			_enemy = _enemy - [_x];
@@ -16,4 +16,5 @@ params["_pos"];
 	{
 		deleteGroup _x
 	}forEach allGroups;
+};
 };
