@@ -28,7 +28,7 @@
 
 #define MILLENNIAL_SECTION_LAW80 2
 
-// late millennial (oughts)
+// late millennial (oughts) - not doing for the moe
 
 #include "millennial_plane.hpp"
 #include "millennial_tracked.hpp"
