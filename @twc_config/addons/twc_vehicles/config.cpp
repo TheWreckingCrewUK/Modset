@@ -49,8 +49,11 @@ class CfgPatches {
 			"TWC_Vehicle_ColdWar_Chieftain_Woodland",
 			"TWC_Vehicle_ColdWar_HarrierGR3_RAF",
 			
-			
 			"TWC_Vehicle_Millennial_HarrierGR5_RAF",
+			"TWC_Vehicle_Millennial_LandRover_Woodland",
+			"TWC_Vehicle_Millennial_LandRover_Desert",
+			"TWC_Vehicle_Millennial_LandRover_Woodland_COIN",
+			"TWC_Vehicle_Millennial_LandRover_Desert_COIN",
 			
 			"TWC_Vehicle_Modern_HarrierGR9_RAF"
 		};

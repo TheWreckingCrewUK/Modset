@@ -1,6 +1,6 @@
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MILLENNIAL_LANDROVER_MOD
-class TWC_Vehicle_ColdWar_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
+class TWC_Vehicle_Millennial_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -59,7 +59,7 @@ class TWC_Vehicle_ColdWar_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 	};
 };
 
-class TWC_Vehicle_ColdWar_LandRover_Desert: TWC_Vehicle_ColdWar_LandRover_Woodland {
+class TWC_Vehicle_Millennial_LandRover_Desert: TWC_Vehicle_ColdWar_LandRover_Woodland {
 	displayname = "Land Rover (Desert)";
 
 	hiddenSelectionsTextures[] = {
@@ -75,7 +75,7 @@ class TWC_Vehicle_ColdWar_LandRover_Desert: TWC_Vehicle_ColdWar_LandRover_Woodla
 	};
 };
 
-class TWC_Vehicle_ColdWar_LandRover_Woodland_COIN: TWC_BaseClass_LR_Soft_Base_F {
+class TWC_Vehicle_Millennial_LandRover_Woodland_COIN: TWC_BaseClass_LR_Soft_Base_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -131,7 +131,7 @@ class TWC_Vehicle_ColdWar_LandRover_Woodland_COIN: TWC_BaseClass_LR_Soft_Base_F 
 	};
 };
 
-class TWC_Vehicle_ColdWar_LandRover_Desert_COIN: TWC_Vehicle_ColdWar_LandRover_Woodland_COIN {
+class TWC_Vehicle_Millennial_LandRover_Desert_COIN: TWC_Vehicle_ColdWar_LandRover_Woodland_COIN {
 	displayname = "Land Rover - COIN (Desert)";
 	
 	hiddenSelectionsTextures[] = {
