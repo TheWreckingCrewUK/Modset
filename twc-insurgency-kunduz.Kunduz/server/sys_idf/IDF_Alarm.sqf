@@ -23,7 +23,7 @@ sleep 26;
 alarm = 0;
 	publicvariable "alarm";
 	
-	sleep 60;
+	sleep 120;
 	if (alarm == 0) then {
 	if (idfsafe == 0) then {
 	idfsafe = 1;
