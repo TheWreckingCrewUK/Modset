@@ -24,6 +24,10 @@ deleteMarker "respawn_forwardBase";
 {
 	deleteVehicle _x;
 }forEach attachedObjects _table;
+
+_truck = (getPos _table) nearObjects ["twc_medical_hemtt",250];
+(_truck select 0) setFuel 1;
+
 _table setVariable ["twc_forwardBaseDeployed",false];
 _table setVariable ["ace_dragging_canDrag",1];
 _table setVariable ["ace_cargo_canLoad",1];
