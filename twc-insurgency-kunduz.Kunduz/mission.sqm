@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=815;
+		nextID=816;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5202.3662,22.612532,1869.8235};
-		dir[]={0.27168283,-0.13749556,0.95265567};
-		up[]={0.037751041,0.99047178,0.13236724};
-		aside[]={0.96175623,-7.4022682e-007,-0.27428082};
+		pos[]={5104.2095,62.191406,1784.8428};
+		dir[]={0.39269546,-0.3452768,0.85240322};
+		up[]={0.14447311,0.9384979,0.31360072};
+		aside[]={0.90825522,-5.075708e-008,-0.41842696};
 	};
 };
 binarizationWanted=0;
@@ -10948,10 +10948,11 @@ class Mission
 		class Item210
 		{
 			dataType="Marker";
-			position[]={5200.708,11.937,1913.925};
+			position[]={5141.5537,11.450073,1863.3879};
 			name="respawn_west";
 			type="Empty";
 			id=707;
+			atlOffset=-0.0021686554;
 		};
 		class Item211
 		{
