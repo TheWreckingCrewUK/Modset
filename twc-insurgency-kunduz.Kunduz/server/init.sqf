@@ -20,10 +20,16 @@ if(isNil "basemode") then{
 	publicVariable "basemode";
 };
 
+if(isNil "alarm") then{
+	alarm = 0;
+	publicvariable "alarm";
+};
+
 #include "sys_ied\init.sqf";
 #include "sys_vehicles\init.sqf";
 
 //#include "sys_smallTown\init.sqf";
 #include "sys_townLocations\init.sqf";
 #include "sys_cache\init.sqf";
+#include "sys_idf\idf.sqf";
 //#include "sys_sideMissions\init.sqf";
