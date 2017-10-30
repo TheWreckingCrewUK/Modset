@@ -39,14 +39,14 @@ class CfgGroups
 										class Unit3
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_USMC_AsstAutorifleman";
+                                                vehicle = "Modern_USMC_Autorifleman";
                                                 rank = "PRIVATE";
                                                 position[] = {7,0,0};
                                         };
 										class Unit4
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_USMC_Autorifleman";
+                                                vehicle = "Modern_USMC_AsstAutorifleman";
                                                 rank = "PRIVATE";
                                                 position[] = {9,0,0};
                                         };
@@ -83,28 +83,28 @@ class CfgGroups
                                                 side = 1;
                                                 vehicle = "Modern_USMC_Teamleader";
                                                 rank = "PRIVATE";
-                                                position[] = {11,0,0};
+                                                position[] = {19,0,0};
                                         };
 										class Unit10
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_USMC_Rifleman";
+                                                vehicle = "Modern_USMC_MachineGunner";
                                                 rank = "PRIVATE";
-                                                position[] = {13,0,0};
+                                                position[] = {21,0,0};
                                         };
 										class Unit11
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_USMC_Autorifleman";
+                                                vehicle = "Modern_USMC_AsstMachineGunner";
                                                 rank = "PRIVATE";
-                                                position[] = {15,0,0};
+                                                position[] = {23,0,0};
                                         };
 										class Unit12
                                         {
                                                 side = 1;
                                                 vehicle = "Modern_USMC_Medic";
                                                 rank = "PRIVATE";
-                                                position[] = {17,0,0};
+                                                position[] = {25,0,0};
                                         };
                                 };
                         };

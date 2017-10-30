@@ -14,8 +14,7 @@ linkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 respawnLinkedItems[]=
 {
@@ -23,8 +22,7 @@ respawnLinkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 Items[]=
 {
@@ -92,8 +90,7 @@ linkedItems[]=
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 respawnLinkedItems[]=
 {
@@ -102,8 +99,7 @@ respawnLinkedItems[]=
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 weapons[]=
 {
@@ -137,6 +133,7 @@ magazines[]=
 "30Rnd_556x45_Stanag_Tracer_Red",
 "CUP_HandGrenade_L109A2_HE",
 "CUP_HandGrenade_L109A2_HE",
+"1Rnd_HE_Grenade_shell",
 "SmokeShell",
 "SmokeShell"
 };
@@ -156,6 +153,7 @@ Respawnmagazines[]=
 "30Rnd_556x45_Stanag_Tracer_Red",
 "CUP_HandGrenade_L109A2_HE",
 "CUP_HandGrenade_L109A2_HE",
+"1Rnd_HE_Grenade_shell",
 "SmokeShell",
 "SmokeShell"
 };
@@ -173,8 +171,7 @@ linkedItems[]=
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 respawnLinkedItems[]=
 {
@@ -183,8 +180,7 @@ respawnLinkedItems[]=
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 weapons[]=
 {
@@ -218,6 +214,7 @@ magazines[]=
 "30Rnd_556x45_Stanag_Tracer_Red",
 "CUP_HandGrenade_L109A2_HE",
 "CUP_HandGrenade_L109A2_HE",
+"1Rnd_HE_Grenade_shell",
 "SmokeShell",
 "SmokeShell"
 };
@@ -237,6 +234,7 @@ Respawnmagazines[]=
 "30Rnd_556x45_Stanag_Tracer_Red",
 "CUP_HandGrenade_L109A2_HE",
 "CUP_HandGrenade_L109A2_HE",
+"1Rnd_HE_Grenade_shell",
 "SmokeShell",
 "SmokeShell"
 };
@@ -252,8 +250,7 @@ linkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 respawnLinkedItems[]=
 {
@@ -261,8 +258,7 @@ respawnLinkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 weapons[]=
 {
@@ -332,8 +328,7 @@ linkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 respawnLinkedItems[]=
 {
@@ -341,8 +336,7 @@ respawnLinkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 weapons[]=
 {
@@ -397,8 +391,7 @@ linkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 respawnLinkedItems[]=
 {
@@ -406,8 +399,7 @@ respawnLinkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 weapons[]=
 {
@@ -474,8 +466,7 @@ linkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 respawnLinkedItems[]=
 {
@@ -483,8 +474,7 @@ respawnLinkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 weapons[]=
 {
@@ -535,8 +525,7 @@ linkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 respawnLinkedItems[]=
 {
@@ -544,8 +533,7 @@ respawnLinkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 weapons[]=
 {
@@ -605,15 +593,14 @@ class Modern_USMC_Medic: Modern_USMC_Base
 scope=2;
 displayName="Charlie Medic";
 icon="iconManMedic";
-backpack="rhsusf_assault_eagleaiii_coy";
+backpack="TWC_Backpack_USMC_Medic";
 linkedItems[]=
 {
 "rhsusf_spc_corpsman",
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 respawnLinkedItems[]=
 {
@@ -621,8 +608,7 @@ respawnLinkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 weapons[]=
 {
@@ -686,8 +672,7 @@ linkedItems[]=
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 respawnLinkedItems[]=
 {
@@ -696,8 +681,7 @@ respawnLinkedItems[]=
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 };
 class Modern_USMC_Platoon_Sergeant: Modern_USMC_Platoon_Commander
@@ -713,8 +697,7 @@ linkedItems[]=
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 respawnLinkedItems[]=
 {
@@ -723,8 +706,7 @@ respawnLinkedItems[]=
 "ItemMap",
 "ItemcTab",
 "ItemCompass",
-"ItemWatch",
-"UK3CB_BAF_G_Tactical_Black"
+"ItemWatch"
 };
 };
 class Modern_USMC_HeliPilot: Modern_USMC_Base
