@@ -145,6 +145,7 @@ class CfgFactionClasses
 		side=3;
 	};
 };
+class EventHandlers;
 class CfgVehicles
 {
 	class CUP_B_AlicePack_Khaki;
@@ -201,4 +202,5 @@ class CfgVehicles
 	#include "african.hpp"
 	#include "irish.hpp"
 	#include "takistan.hpp"
+	#include "greek.hpp"
 };
