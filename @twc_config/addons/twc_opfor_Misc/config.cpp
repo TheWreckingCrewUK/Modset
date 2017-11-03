@@ -158,6 +158,22 @@ class CfgFactionClasses
 		priority=2;
 		side=2;
 	};
+	class TWC_Afr_Pirates_RF
+	{
+		displayName="Pirates (African)";
+		author="The Wrecking Crew";
+		icon="twc_opfor_Misc\data\Jolly_Roger.paa";
+		priority=2;
+		side=0;
+	};
+	class TWC_Asn_Pirates_RF
+	{
+		displayName="Pirates (Asian)";
+		author="The Wrecking Crew";
+		icon="twc_opfor_Misc\data\chinese_pirates.paa";
+		priority=2;
+		side=0;
+	};
 };
 class CfgVehicles
 {
