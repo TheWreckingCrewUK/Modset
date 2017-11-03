@@ -31,7 +31,7 @@ player addHeadgear "rhsusf_mich_helmet_marpatd";
 comment "Add weapons";
 player addWeapon "rhs_weap_m16a4_carryhandle_grip";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
-player addPrimaryWeaponItem "UK3CB_BAF_TA31F_3D";
+player addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
 player addWeapon "rhs_weap_M136_hedp";
 
 comment "Add items";
