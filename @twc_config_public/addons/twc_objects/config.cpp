@@ -33,6 +33,8 @@ class cfgFunctions
 };
 class CfgVehicles
 {
+	class B_Truck_01_medical_F;
+	
 	class Land_CampingTable_F;
 	class Land_Portable_generator_F;
 	
@@ -41,6 +43,15 @@ class CfgVehicles
 	class Land_BagFence_Short_F;
 	class Land_BagFence_End_F;
 	class Land_BagFence_Round_F;
+	
+	class twc_medical_hemtt: B_Truck_01_medical_F
+	{
+		ace_cargo_hasCargo = -1;
+		class EventHandlers: EventHandlers
+		{
+			init = "(_this select 0) setVariable [""ace_medical_isMedicalFacility"",true,true];";
+		};
+	};
 	
 	class twc_Land_BagFence_Corner_F: Land_BagFence_Corner_F
 	{
