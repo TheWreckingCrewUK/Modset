@@ -303,21 +303,23 @@
 		};
 		linkedItems[]=
 		{
-			"Binocular",		
+			"Binocular",
 			"ukcw_1958_webbing",
 			"ukcw_helmet_mk3",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_MapTools"
 		};
 		respawnLinkedItems[]=
 		{
-			"Binocular",		
+			"Binocular",
 			"ukcw_1958_webbing",
 			"ukcw_helmet_mk3",
-			"ItemMap",	
+			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_MapTools"
 		};
 		weapons[]=
 		{

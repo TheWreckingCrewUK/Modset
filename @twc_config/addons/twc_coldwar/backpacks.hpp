@@ -88,9 +88,9 @@
 		scope = 1;
 		class TransportItems
 		{
-			class _xx_PRC_117F
+			class _xx_PRC_77
 			{
-				name = "ACRE_PRC117F";
+				name = "ACRE_PRC77";
 				count = 1;
 			};
 			class _xx_Maptools
@@ -247,9 +247,9 @@
 				name = "ACE_wirecutter";
 				count = 1;
 			};
-			class _xx_PRC_117F
+			class _xx_PRC_77
 			{
-				name = "ACRE_PRC117F";
+				name = "ACRE_PRC77";
 				count = 1;
 			};
 			class _xx_Maptools
