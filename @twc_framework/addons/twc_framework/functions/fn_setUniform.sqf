@@ -1,6 +1,6 @@
 params["_unit"];
 
-_newUniform = ["U_BG_Guerilla2_2","CUP_I_B_PMC_Unit_11","CUP_U_C_Citizen_02","CUP_U_O_CHDKZ_Lopotev","U_BG_Guerilla2_3","U_C_Poloshirt_salmon"];
+_newUniform = ["U_BG_Guerilla2_2","CUP_I_B_PMC_Unit_11","CUP_U_C_Citizen_02","CUP_U_O_CHDKZ_Lopotev","U_BG_Guerilla2_3","U_C_Poloshirt_salmon"] call bis_fnc_selectRandom;
 
 _items = uniformitems _unit;
 _magazines = magazinesAmmo (uniformContainer _unit);
