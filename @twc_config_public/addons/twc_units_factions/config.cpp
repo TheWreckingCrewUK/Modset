@@ -83,7 +83,8 @@ class CfgPatches
 			"twc_greek_rifleman_at",
 			"twc_greek_grenadier",
 			"twc_greek_ar",
-			"twc_greek_mg"
+			"twc_greek_mg",
+			"twc_greek_aa"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
