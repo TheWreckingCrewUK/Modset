@@ -109,13 +109,13 @@ class CfgVehicles
 				class twc_placeRadio{
 					displayName = "Activate Forward Base";
 					condition = "!(_target getVariable 'twc_forwardBaseDeployed')";
-					statement = "_return = [_target] call twc_fnc_setUpForwardBase; hint _return;";
+					statement = "_return = [_target,_player] call twc_fnc_setUpForwardBase; hint _return;";
                     icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa";
 				};
 				class twc_RemoveRadio{
 					displayName = "Tear Down Forward Base";
 					condition = "(_target getVariable 'twc_forwardBaseDeployed')";
-					statement = "_return = [_target] call twc_fnc_tearDownForwardBase; hint _return;";
+					statement = "_return = [_target,_player] call twc_fnc_tearDownForwardBase; hint _return;";
                     icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa";
 				};
 			};

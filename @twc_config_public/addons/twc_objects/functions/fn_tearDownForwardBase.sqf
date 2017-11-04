@@ -14,9 +14,9 @@
 * Public: No
 */
 
-params["_table"];
+params["_table",["_player",leader (allUnits select 0)]];
 _return = "";
-
+if(leader _player != _player)exitWith{_return = "Only Section Leaders can Deactivate the Forward Base"; _return};
 if(isNil "_table")exitWith{_return = "Radio Table not given to twc_fn_tearDownForwardBase. Exiting..."; _return};
 
 [missionNamespace,"respawn_forwardBase"] call BIS_fnc_removeRespawnPosition;
@@ -29,8 +29,6 @@ _truck = (getPos _table) nearObjects ["twc_medical_hemtt",250];
 (_truck select 0) setFuel 1;
 
 _table setVariable ["twc_forwardBaseDeployed",false];
-_table setVariable ["ace_dragging_canDrag",1];
-_table setVariable ["ace_cargo_canLoad",1];
 
 _return = "Forward Base Torn Down Successfully";
 _return;
