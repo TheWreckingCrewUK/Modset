@@ -188,7 +188,7 @@ weapons[]=
 "Put",
 "ACE_Vector",
 "twc_rhs_weap_m4a1_m203_acog_lazer",
-"rhsusf_weap_m1911a1",
+"rhsusf_weap_m1911a1"
 };
 respawnweapons[]=
 {
