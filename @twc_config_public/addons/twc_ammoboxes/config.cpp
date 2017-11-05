@@ -167,31 +167,31 @@ class CfgVehicles
 				class twc_spawnSandbagCorner{
 					displayName = "Sandbag Corner";
 					condition = "true";
-					statement = "[_target,""twc_Land_BagFence_Corner_F"",[100]] call twc_fnc_createDefenses;";
+					statement = "_return = [_target,""twc_Land_BagFence_Corner_F"",100] call twc_fnc_createDefenses; hint _return;";
                     icon = "";
 				};
 				class twc_spawnSandbagLong{
 					displayName = "Sandbag Long";
 					condition = "true";
-					statement = "[_target,""twc_Land_BagFence_Long_F"",[100]] call twc_fnc_createDefenses;";
+					statement = "_return = [_target,""twc_Land_BagFence_Long_F"",100] call twc_fnc_createDefenses;hint _return;";
                     icon = "";
 				};
 				class twc_spawnSandbagShort{
 					displayName = "Sandbag Short";
 					condition = "true";
-					statement = "[_target,""twc_Land_BagFence_Short_F"",[100]] call twc_fnc_createDefenses;";
+					statement = "_return = [_target,""twc_Land_BagFence_Short_F"",100] call twc_fnc_createDefenses;hint _return;";
                     icon = "";
 				};
 				class twc_spawnSandbagEnd{
 					displayName = "Sandbag End";
 					condition = "true";
-					statement = "[_target,""twc_Land_BagFence_End_F"",[100]] call twc_fnc_createDefenses;";
+					statement = "_return = [_target,""twc_Land_BagFence_End_F"",100] call twc_fnc_createDefenses;hint _return;";
                     icon = "";
 				};
 				class twc_spawnSandbagRound{
 					displayName = "Sandbag Round";
 					condition = "true";
-					statement = "[_target,""twc_Land_BagFence_Round_F"",[100]] call twc_fnc_createDefenses;";
+					statement = "_return = [_target,""twc_Land_BagFence_Round_F"",100] call twc_fnc_createDefenses; hint _return;";
                     icon = "";
 				};
 				
