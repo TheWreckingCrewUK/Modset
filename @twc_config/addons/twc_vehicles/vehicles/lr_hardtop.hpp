@@ -4,7 +4,7 @@ class TWC_BaseClass_LR_Hard_Base: UK3CB_BAF_LandRover_Hard_FFR_Green_B {
 	class AnimationSources;
 };
 
-class TWC_BaseClass_LR_Soft_Hard_F: TWC_BaseClass_LR_Hard_Base {
+class TWC_BaseClass_LR_Hard_Base_F: TWC_BaseClass_LR_Hard_Base {
 	class AnimationSources: AnimationSources {
 		class AerialFL_Hide;
 		class AerialFR_Hide;
