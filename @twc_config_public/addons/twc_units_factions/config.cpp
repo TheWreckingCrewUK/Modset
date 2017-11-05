@@ -74,7 +74,17 @@ class CfgPatches
 			"IRA_Rifleman_AKM",
 			"IRA_Rifleman_FAL",
 			"IRA_Rifleman_AT",
-			"IRA_Autorifleman"
+			"IRA_Autorifleman",
+			
+			
+			"twc_greek_officer",
+			"twc_greek_rifleman",
+			"twc_greek_rifleman_2",
+			"twc_greek_rifleman_at",
+			"twc_greek_grenadier",
+			"twc_greek_ar",
+			"twc_greek_mg",
+			"twc_greek_aa"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -111,6 +121,10 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (Takistan Militia)";
 	};
+	class Men_Greek
+	{
+		displayName="Men (Greek)";
+	};
 };
 class CfgFactionClasses
 {
@@ -144,7 +158,14 @@ class CfgFactionClasses
 		priority=1;
 		side=3;
 	};
+	class greek_units
+	{
+		displayName="Greek Units";
+		priority=2;
+		side=2;
+	};
 };
+class EventHandlers;
 class CfgVehicles
 {
 	class CUP_B_AlicePack_Khaki;
@@ -201,4 +222,5 @@ class CfgVehicles
 	#include "african.hpp"
 	#include "irish.hpp"
 	#include "takistan.hpp"
+	#include "greek.hpp"
 };
