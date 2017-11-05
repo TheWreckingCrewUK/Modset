@@ -34,6 +34,8 @@ _marker setMarkerText "Forward Base";
 _radio = "Vysilacka" createVehicle (position _table);
 _radio attachTo [_table,[0,0,1.5]];
 _radio setDir ((getDir _table)+270);
+[_table, false] call ace_dragging_fnc_setDraggable;
+[_distanceGenerator select 0,false] call ace_dragging_fnc_setDraggable;
 _table setVariable ["twc_forwardBaseDeployed",true];
 _return = "Forward Base Created Successfully";
 _return
