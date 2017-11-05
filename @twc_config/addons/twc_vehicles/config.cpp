@@ -54,6 +54,10 @@ class CfgPatches {
 			"TWC_Vehicle_Millennial_LandRover_Desert",
 			"TWC_Vehicle_Millennial_LandRover_Woodland_COIN",
 			"TWC_Vehicle_Millennial_LandRover_Desert_COIN",
+			"TWC_Vehicle_Millennial_LandRoverHard_Woodland",
+			"TWC_Vehicle_Millennial_LandRoverHard_Desert",
+			"TWC_Vehicle_Millennial_LandRoverHard_Woodland_COIN",
+			"TWC_Vehicle_Millennial_LandRoverHard_Desert_COIN",
 			
 			"TWC_Vehicle_Modern_HarrierGR9_RAF"
 		};
