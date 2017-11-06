@@ -266,7 +266,7 @@
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="U_OG_Guerrilla_6_1";
-		backpack="";
+		backpack="Afr_Backpack_AT";
 		linkedItems[]=
 		{
         "V_TacVest_blk",
@@ -287,13 +287,15 @@
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_M16A2"
+		"CUP_arifle_M16A2",
+		"CUP_launch_RPG7V"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_M16A2"
+		"CUP_arifle_M16A2",
+		"CUP_launch_RPG7V"
 		};
 		magazines[]=
 		{
