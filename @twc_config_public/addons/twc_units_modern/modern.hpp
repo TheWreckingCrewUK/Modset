@@ -8,6 +8,10 @@
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
+		class EventHandlers: EventHandlers
+		{
+			init = "init =(_this select 0) setVariable [""twc_setRadio"",[""ACRE_PRC343"",1]]";
+		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Rifleman_F",
@@ -657,7 +661,7 @@
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
+			init = "init = (_this select 0) setVariable [""ace_medical_medicClass"",1];";
 		};
 	};
 	class Modern_British_Platoon_CSM: Modern_British_Squadleader

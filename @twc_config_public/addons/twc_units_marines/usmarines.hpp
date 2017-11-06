@@ -8,6 +8,10 @@ vehicleClass="Men_Modern";
 icon="iconMan";
 nakedUniform="U_BasicBody";
 uniformClass="rhs_uniform_FROG01_wd";
+class EventHandlers: EventHandlers
+{
+	init = "init =(_this select 0) setVariable [""twc_setRadio"",[""ACRE_PRC148"",3]]";
+};
 linkedItems[]=
 {
 "rhsusf_spc_rifleman",
