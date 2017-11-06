@@ -266,7 +266,7 @@
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="U_OG_Guerrilla_6_1";
-		backpack="Afr_Backpack_AT";
+		backpack="greek_Backpack_AT";
 		linkedItems[]=
 		{
         "V_TacVest_blk",
@@ -304,6 +304,7 @@
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_30Rnd_556x45_Stanag",
+		"CUP_PG7V_M",
 		"HandGrenade",
 		"HandGrenade",
 		"SmokeShell"
@@ -315,6 +316,7 @@
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_30Rnd_556x45_Stanag",
+		"CUP_PG7V_M",
 		"HandGrenade",
 		"HandGrenade",
 		"SmokeShell"

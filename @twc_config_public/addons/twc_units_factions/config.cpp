@@ -213,6 +213,17 @@ class CfgVehicles
 			};
 		};
 	};
+	class greek_Backpack_AT: CUP_B_RPGPack_Khaki
+	{
+		class TransportMagazines
+		{
+			class _xx_RPG7
+			{
+				magazine="CUP_PG7V_M";
+				count=3;
+			};
+		};
+	};
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
