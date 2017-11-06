@@ -64,7 +64,7 @@ class cfgWeapons
 			class LinkedItemsBipod
 			{
 				slot="UK3CB_underbarrel_rifle_slot";
-				item="UK3CB_underbarrel_acc_bipod";
+				item="UK3CB_underbarrel_acc_fgrip_bipod";
 			};
 		};
 	};

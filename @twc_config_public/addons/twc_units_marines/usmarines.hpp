@@ -8,10 +8,8 @@ vehicleClass="Men_Modern";
 icon="iconMan";
 nakedUniform="U_BasicBody";
 uniformClass="rhs_uniform_FROG01_wd";
-class EventHandlers: EventHandlers
-{
-	init = "init = (_this select 0) setVariable [""twc_setRadio"",[""ACRE_PRC148"",3]]";
-};
+twc_radioType = "ACRE_PRC148";
+twc_radioChannel = 3;
 linkedItems[]=
 {
 "rhsusf_spc_rifleman",
@@ -592,6 +590,7 @@ scope=2;
 displayName="Charlie Medic";
 icon="iconManMedic";
 backpack="TWC_Backpack_USMC_Medic";
+attendant = 1;
 linkedItems[]=
 {
 "rhsusf_spc_corpsman",
@@ -651,10 +650,6 @@ Respawnmagazines[]=
 "CUP_HandGrenade_L109A2_HE",
 "SmokeShell",
 "SmokeShell"
-};
-class EventHandlers: EventHandlers
-{
-init = "init =(_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_setRadio"",[""ACRE_PRC148"",3]]";
 };
 };
 class Modern_USMC_Platoon_Commander: Modern_USMC_Squadleader

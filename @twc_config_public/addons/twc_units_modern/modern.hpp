@@ -8,18 +8,15 @@
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
-		class EventHandlers: EventHandlers
-		{
-			init = "init = (_this select 0) setVariable [""twc_setRadio"",[""ACRE_PRC343"",1]]";
-		};
+		twc_radioType = "ACRE_PRC343";
+		twc_radioChannel = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Rifleman_F",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -27,8 +24,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		Items[]=
 		{
@@ -96,8 +92,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -106,8 +101,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -220,8 +214,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_A",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -229,8 +222,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_A",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -313,8 +305,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_C",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -322,8 +313,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_C",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -461,8 +451,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_E",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -470,8 +459,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_E",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -534,8 +522,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -544,8 +531,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 	};
 	class Modern_British_Platoon_Sergeant: Modern_British_Platoon_Commander
@@ -607,15 +593,14 @@
 		displayName="Alpha Medic";
 		icon="iconManMedic";
 		backpack="TWC_Backpack_Modern_Medic";
-		twc_nonInitVariableTest = "Wow this would be so much Easier";
+		attendant = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Medic_D",
 			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -623,8 +608,7 @@
 			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -659,10 +643,6 @@
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell"
-		};
-		class EventHandlers: EventHandlers
-		{
-			init = "init = (_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_setRadio"",[""ACRE_PRC343"",1]]";
 		};
 	};
 	class Modern_British_Platoon_CSM: Modern_British_Squadleader
@@ -1001,8 +981,7 @@
 			"UK3CB_BAF_V_Osprey",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1010,8 +989,7 @@
 			"UK3CB_BAF_V_Osprey",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -1053,8 +1031,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{		
@@ -1063,8 +1040,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
