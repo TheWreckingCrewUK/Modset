@@ -10,7 +10,7 @@ nakedUniform="U_BasicBody";
 uniformClass="rhs_uniform_FROG01_wd";
 class EventHandlers: EventHandlers
 {
-	init = "init =(_this select 0) setVariable [""twc_setRadio"",[""ACRE_PRC148"",3]]";
+	init = "init = (_this select 0) setVariable [""twc_setRadio"",[""ACRE_PRC148"",3]]";
 };
 linkedItems[]=
 {
@@ -654,7 +654,7 @@ Respawnmagazines[]=
 };
 class EventHandlers: EventHandlers
 {
-init = "init =(_this select 0) setVariable [""ace_medical_medicClass"",1]";
+init = "init =(_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_setRadio"",[""ACRE_PRC148"",3]]";
 };
 };
 class Modern_USMC_Platoon_Commander: Modern_USMC_Squadleader
@@ -710,7 +710,7 @@ respawnLinkedItems[]=
 class Modern_USMC_HeliPilot: Modern_USMC_Base
 {
 scope=2;
-displayName="USMC Helicopter Pilot";
+displayName="Charlie Helicopter Pilot";
 uniformClass="CUP_U_B_USArmy_PilotOverall";
 backpack="rhsusf_falconii_coy";
 linkedItems[]=
