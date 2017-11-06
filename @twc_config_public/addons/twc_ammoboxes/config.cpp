@@ -152,6 +152,109 @@ class CfgVehicles
 			
 		};
 	};
+	class twc_forwardBase_CharlieAmmoBox:B_supplyCrate_F
+	{
+		displayname = "TWC PatrolBase Charlie Ammobox";
+		ace_dragging_canDrag = 1;
+		class transportWeapons
+		{
+			class _xx_at4
+			{
+				weapon = "rhs_weap_M136_hedp";
+				count = 1;
+			};
+			class _xx_law
+			{
+				weapon = "rhs_weap_m72a7";
+				count = 1;
+			};
+		};
+		class transportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "UK3CB_BAF_556_30Rnd";
+				count = 30;
+			};
+			class _xx_stanagTracer
+			{
+				magazine = "UK3CB_BAF_556_30Rnd_T";
+				count = 10;
+			};
+			class _xx_stanag_box
+			{
+				magazine = "rhsusf_200Rnd_556x45_soft_pouch";
+				count = 6;
+			};
+			class _xx_762_box
+			{
+				magazine = "rhsusf_100Rnd_762x51";
+				count = 2;
+			};
+			class _xx_762_boxTracer
+			{
+				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
+				count = 1;
+			};
+			class _xx_1rnd_he
+			{
+				magazine = "1Rnd_HE_Grenade_shell";
+				count = 3;
+			};
+			class _xx_1rnd_smoke
+			{
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 2;
+			};
+			class _xx_handgrenade
+			{
+				magazine = "CUP_HandGrenade_L109A2_HE";
+				count = 2;
+			};
+			class _xx_smokeshell
+			{
+				magazine = "SmokeShell";
+				count = 4;
+			};
+		};
+		class transportItems
+		{
+			class _xx_fieldDressing
+			{
+				name = "ACE_fieldDressing";
+				count = 10;
+			};
+			class _xx_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 10;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 10;
+			};
+			class quickclot
+			{
+				name = "ACE_quickclot";
+				count = 10;
+			};
+			class morphine
+			{
+				name = "ACE_morphine";
+				count = 5;
+			};
+			class epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 2;
+			};
+		};
+		class transportbackpacks
+		{
+			
+		};
+	};
 	class twc_SuppliesBox: Box_NATO_AmmoVeh_F
 	{
 		displayName = "TWC Supply Box";
@@ -192,6 +295,12 @@ class CfgVehicles
 					displayName = "Sandbag Round";
 					condition = "true";
 					statement = "_return = [_target,""twc_Land_BagFence_Round_F"",100] call twc_fnc_createDefenses; hint _return;";
+                    icon = "";
+				};
+				class twc_spawnConcertinaWire{
+					displayName = "Concertina Wire";
+					condition = "true";
+					statement = "_return = [_target,""ACE_ConcertinaWireCoil"",250] call twc_fnc_createDefenses; hint _return;";
                     icon = "";
 				};
 				

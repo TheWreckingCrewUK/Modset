@@ -29,13 +29,13 @@ if(str _distanceGenerator == "[]" || str _distanceMedicalTruck == "[]")exitWith{
 _marker = createMarker ["respawn_forwardBase",_pos];
 _marker setMarkerShape "ICON";
 _marker setMarkerType "b_installation";
-_marker setMarkerText "Forward Base";
-[missionNamespace,_marker,"Forward Base"] call BIS_fnc_addRespawnPosition;
+_marker setMarkerText "Patrol Base";
+[missionNamespace,_marker,"Patrol Base"] call BIS_fnc_addRespawnPosition;
 _radio = "Vysilacka" createVehicle (position _table);
 _radio attachTo [_table,[0,0,1.5]];
 _radio setDir ((getDir _table)+270);
 [_table, false] call ace_dragging_fnc_setDraggable;
 [_distanceGenerator select 0,false] call ace_dragging_fnc_setDraggable;
 _table setVariable ["twc_forwardBaseDeployed",true];
-_return = "Forward Base Created Successfully";
+_return = "Patrol Base Created Successfully";
 _return

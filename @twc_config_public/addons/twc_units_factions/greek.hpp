@@ -266,7 +266,7 @@
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		uniformClass="U_OG_Guerrilla_6_1";
-		backpack="";
+		backpack="greek_Backpack_AT";
 		linkedItems[]=
 		{
         "V_TacVest_blk",
@@ -287,13 +287,15 @@
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_M16A2"
+		"CUP_arifle_M16A2",
+		"CUP_launch_RPG7V"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_M16A2"
+		"CUP_arifle_M16A2",
+		"CUP_launch_RPG7V"
 		};
 		magazines[]=
 		{
@@ -302,6 +304,7 @@
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_30Rnd_556x45_Stanag",
+		"CUP_PG7V_M",
 		"HandGrenade",
 		"HandGrenade",
 		"SmokeShell"
@@ -313,6 +316,7 @@
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_30Rnd_556x45_Stanag",
+		"CUP_PG7V_M",
 		"HandGrenade",
 		"HandGrenade",
 		"SmokeShell"

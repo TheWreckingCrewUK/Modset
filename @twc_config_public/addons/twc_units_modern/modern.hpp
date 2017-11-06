@@ -8,6 +8,10 @@
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
+		class EventHandlers: EventHandlers
+		{
+			init = "init = (_this select 0) setVariable [""twc_setRadio"",[""ACRE_PRC343"",1]]";
+		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Rifleman_F",
@@ -82,7 +86,7 @@
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Section Leader";
+		displayName="Alpha Section Leader@Alpha Squad";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
@@ -603,6 +607,7 @@
 		displayName="Alpha Medic";
 		icon="iconManMedic";
 		backpack="TWC_Backpack_Modern_Medic";
+		twc_nonInitVariableTest = "Wow this would be so much Easier";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Medic_D",
@@ -657,7 +662,7 @@
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
+			init = "init = (_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_setRadio"",[""ACRE_PRC343"",1]]";
 		};
 	};
 	class Modern_British_Platoon_CSM: Modern_British_Squadleader
@@ -1147,6 +1152,7 @@
 	class Modern_British_Grenadier_COIN: Modern_British_Grenadier
 	{
 		displayName="Alpha Grenadier";
+		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]=
 		{
 			"Throw",
@@ -1322,6 +1328,7 @@
 	class Modern_British_Marksman_COIN: Modern_British_Marksman
 	{
 		displayName="Alpha Marksman";
+		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]=
 		{
 			"Throw",
