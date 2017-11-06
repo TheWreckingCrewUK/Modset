@@ -80,7 +80,7 @@ respawntems[]=
 class Modern_USMC_Squadleader: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Squad Leader";
+displayName="Charlie Squad Leader@Charlie Squad";
 icon="iconManLeader";
 backpack="TWC_Backpack_USMC_Sectionleader";
 linkedItems[]=
@@ -169,7 +169,6 @@ linkedItems[]=
 "rhsusf_spc_squadleader",
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
-"ItemcTab",
 "ItemCompass",
 "ItemWatch"
 };
@@ -178,7 +177,6 @@ respawnLinkedItems[]=
 "rhsusf_spc_squadleader",
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
-"ItemcTab",
 "ItemCompass",
 "ItemWatch"
 };

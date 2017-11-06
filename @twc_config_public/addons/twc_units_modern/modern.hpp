@@ -82,7 +82,7 @@
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Section Leader";
+		displayName="Alpha Section Leader@Alpha Squad";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
@@ -1147,6 +1147,7 @@
 	class Modern_British_Grenadier_COIN: Modern_British_Grenadier
 	{
 		displayName="Alpha Grenadier";
+		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]=
 		{
 			"Throw",
@@ -1322,6 +1323,7 @@
 	class Modern_British_Marksman_COIN: Modern_British_Marksman
 	{
 		displayName="Alpha Marksman";
+		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]=
 		{
 			"Throw",
