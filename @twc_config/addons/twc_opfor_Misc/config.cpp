@@ -174,11 +174,20 @@ class CfgFactionClasses
 		priority=2;
 		side=0;
 	};
+	class TWC_WaPArmy_Taviana
+	{
+		displayName="Workers and Peasants Army of Taviana";
+		author="Saxon";
+		priority=2;
+		side=0;
+	};
 };
 class CfgVehicles
 {
 	class CUP_B_AlicePack_Khaki;
 	class CUP_B_RPGPack_Khaki;
+	class CUP_B_HikingPack_Civ;
+	
 	class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki
 	{
 		class TransportMagazines
@@ -330,6 +339,55 @@ class CfgVehicles
 		};
 	};
 */
+	class WaPAT_Backpack_RPK: CUP_B_HikingPack_Civ
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_RPK
+			{
+				magazine="CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+				count=3;
+			};
+		};
+	};
+	class WaPAT_Backpack_UK59: CUP_B_HikingPack_Civ
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_UK59
+			{
+				magazine="CUP_50Rnd_UK59_762x54R_Tracer";
+				count=4;
+			};
+		};
+	};
+	class WaPAT_Backpack_AA: CUP_B_HikingPack_Civ
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_RPKMag
+			{
+				magazine = "CUP_launch_9K32Strela";
+				count = 2;
+			};
+		};
+	};
+	class WaPAT_Backpack_AT: CUP_B_HikingPack_Civ
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_RPKMag
+			{
+				magazine = "CUP_AT13_M";
+				count = 2;
+			};
+		};
+	};
+	
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
