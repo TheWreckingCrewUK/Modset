@@ -2271,4 +2271,4 @@ class RF_Asn_Pirate_MM_SVD: RF_Afr_Pirate_MM_SVD
 		"Head_Asian",
 		"G_CIVIL_male"
 	};
-};;
+};
