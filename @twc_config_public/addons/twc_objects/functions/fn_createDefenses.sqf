@@ -23,8 +23,8 @@ _supplies = ({_x == "TWC_ForwardBase_Supplies"}count (itemCargo _crate));
 if(_supplies < _cost)exitWith{_return = "There is not enough supplies to create that item"; _return};
 
 _item createVehicle (position _crate);
-clearItemCargo _crate;
-_crate addItemCargo ["TWC_ForwardBase_Supplies", _supplies - _cost];
+clearItemCargoGlobal _crate;
+_crate addItemCargoGlobal ["TWC_ForwardBase_Supplies", _supplies - _cost];
 
 _return = format["%1 spawned successfully",getText(configFile >> "CfgVehicles" >> _item >> "displayName")];
 _return
