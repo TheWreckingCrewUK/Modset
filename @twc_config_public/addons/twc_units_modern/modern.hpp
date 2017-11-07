@@ -8,14 +8,15 @@
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
+		twc_radioType = "ACRE_PRC343";
+		twc_radioChannel = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Rifleman_F",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -23,8 +24,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		Items[]=
 		{
@@ -82,7 +82,7 @@
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Section Leader";
+		displayName="Alpha Section Leader@Alpha Squad";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
@@ -92,8 +92,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -102,8 +101,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -216,8 +214,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_A",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -225,8 +222,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_A",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -309,8 +305,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_C",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -318,8 +313,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_C",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -450,15 +444,14 @@
 	class Modern_British_Marksman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Marksman (Modern)";
+		displayName="Alpha Marksman";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Marksman_A",
 			"UK3CB_BAF_H_Mk7_Scrim_E",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -466,8 +459,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_E",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -530,8 +522,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -540,8 +531,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 	};
 	class Modern_British_Platoon_Sergeant: Modern_British_Platoon_Commander
@@ -600,17 +590,17 @@
 	class Modern_British_Medic: Modern_British_Base
 	{
 		scope=2;
-		displayName="Medic(Modern)";
+		displayName="Alpha Medic";
 		icon="iconManMedic";
 		backpack="TWC_Backpack_Modern_Medic";
+		attendant = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Medic_D",
 			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -618,8 +608,7 @@
 			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -655,10 +644,6 @@
 			"SmokeShell",
 			"SmokeShell"
 		};
-		class EventHandlers: EventHandlers
-		{
-			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
-		};
 	};
 	class Modern_British_Platoon_CSM: Modern_British_Squadleader
 	{
@@ -672,7 +657,7 @@
 	class Modern_British_HeliPilot: Modern_British_Base
 	{
 		scope=2;
-		displayName="Helicopter Pilot(Modern)";
+		displayName="Alpha Helicopter Pilot";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
 		backpack="TWC_Backpack_Modern_HeloPilot";
 		linkedItems[]=
@@ -773,76 +758,6 @@
 			"UK3CB_BAF_9_17Rnd",	
 			"SmokeShell",
 			"SmokeShell"
-		};
-	};
-	class Modern_British_MortarGunner: Modern_British_Rifleman
-	{
-		scope=2;
-		displayName="Mortar Gunner(Modern)";
-		icon="iconMan";
-		backpack="TWC_Backpack_Modern_Mortar";
-		linkedItems[]=
-		{
-			"UK3CB_BAF_V_Osprey",
-			"UK3CB_BAF_H_Mk7_Camo_D",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-			"UK3CB_BAF_V_Osprey",
-			"UK3CB_BAF_H_Mk7_Camo_D",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch"
-		};
-		weapons[]=
-		{
-			"Throw",
-			"Put",	
-			"UK3CB_BAF_L85A2",
-			"UK3CB_BAF_L16"
-		};
-		respawnweapons[]=
-		{
-			"Throw",
-			"Put",	
-			"UK3CB_BAF_L85A2",
-			"UK3CB_BAF_L16"
-		};
-		magazines[]=
-		{
-			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
-			"SmokeShell"
-		};
-		Respawnmagazines[]=
-		{
-			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
-			"SmokeShell"
-		};
-	};
-	class Modern_British_MortarAssistant: Modern_British_MortarGunner
-	{
-		displayName="Mortar Assistant(Modern)";
-		backpack="TWC_Backpack_Modern_MortarAssistant";
-		weapons[]=
-		{
-			"Throw",
-			"Put",	
-			"UK3CB_BAF_L85A2",
-			"UK3CB_BAF_L16_Tripod"
-		};
-		respawnweapons[]=
-		{
-			"Throw",
-			"Put",	
-			"UK3CB_BAF_L85A2",
-			"UK3CB_BAF_L16_Tripod"
 		};
 	};
 	class Modern_British_Sniper: Modern_British_Base
@@ -1055,38 +970,6 @@
 			"B_IR_Grenade"
 		};
 	};
-
-	//////////////////////////////  Mounted  //////////////////////////////
-	class Modern_British_Rifleman_Mounted: Modern_British_Rifleman
-	{
-		displayName="Rifleman (Modern Mounted)";
-		backpack="";
-	};
-	class Modern_British_Grenadier_Mounted: Modern_British_Grenadier
-	{
-		displayName="Grenadier (Modern Mounted)";
-		backpack="";
-	};
-	class Modern_British_Autorifleman_Mounted: Modern_British_Autorifleman
-	{
-		displayName="Autorifleman (Modern Mounted)";
-		backpack="TWC_Backpack_Modern_Autorifleman_Kitbag";
-	};
-	class Modern_British_Machinegunner_Mounted: Modern_British_Machinegunner
-	{
-		displayName="Machinegunner (Modern Mounted)";
-		backpack="TWC_Backpack_Modern_MachineGunner_Kitbag";
-	};
-	class Modern_British_2IC_Mounted: Modern_British_2IC
-	{
-		displayName="2IC (Modern Mounted)";
-		backpack="TWC_Backpack_Modern_2IC_Kitbag";
-	};
-	class Modern_British_Marksman_Mounted: Modern_British_Marksman
-	{
-		displayName="Marksman (Modern Mounted)";
-		backpack="";
-	};
 	class Modern_British_VehicleCrew: Modern_British_Base
 	{
 		scope=2;
@@ -1098,8 +981,7 @@
 			"UK3CB_BAF_V_Osprey",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1107,8 +989,7 @@
 			"UK3CB_BAF_V_Osprey",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -1150,8 +1031,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{		
@@ -1160,8 +1040,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -1181,7 +1060,7 @@
 	//////////////////////////////  COIN  //////////////////////////////
 	class Modern_British_Pointman: Modern_British_Rifleman
 	{
-		displayName="Pointman (Modern COIN)";
+		displayName="Alpha Pointman";
 		backpack = "TWC_Backpack_Modern_Pointman";
 		linkedItems[]=
 		{
@@ -1248,7 +1127,8 @@
 	};
 	class Modern_British_Grenadier_COIN: Modern_British_Grenadier
 	{
-		displayName="Grenadier (Modern COIN)";
+		displayName="Alpha Grenadier";
+		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]=
 		{
 			"Throw",
@@ -1310,7 +1190,7 @@
 	};
 	class Modern_British_Autorifleman_COIN: Modern_British_Autorifleman
 	{
-		displayName="Automatic Rifleman (Modern COIN)";
+		displayName="Alpha Automatic Rifleman";
 		weapons[]=
 		{
 			"Throw",
@@ -1350,7 +1230,7 @@
 	};
 	class Modern_British_2IC_COIN: Modern_British_Pointman
 	{
-		displayName="2IC (Modern COIN)";
+		displayName="Alpha 2IC";
 		backpack="TWC_Backpack_Modern_2IC";
 		linkedItems[]=
 		{
@@ -1423,7 +1303,8 @@
 	};
 	class Modern_British_Marksman_COIN: Modern_British_Marksman
 	{
-		displayName="Marksman (Modern COIN)";
+		displayName="Alpha Marksman";
+		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]=
 		{
 			"Throw",
@@ -1479,30 +1360,3 @@
 			"SmokeShell"
 		};
 	};
-	//////////////////////////////  COIN-Mounted  //////////////////////////////
-	class Modern_British_Pointman_Mounted: Modern_British_Pointman
-	{
-		displayName="Rifleman (Modern COIN Mounted)";
-		backpack="";
-	};
-	class Modern_British_Grenadier_COIN_Mounted: Modern_British_Grenadier_COIN
-	{
-		displayName="Grenadier (Modern COIN Mounted)";
-		backpack="";
-	};
-	class Modern_British_Autorifleman_COIN_Mounted: Modern_British_Autorifleman_COIN
-	{
-		displayName="Autorifleman (Modern COIN Mounted)";
-		backpack="TWC_Backpack_Modern_Autorifleman_Kitbag";
-	};
-	class Modern_British_2IC_COIN_Mounted: Modern_British_2IC_COIN
-	{
-		displayName="2IC (Modern COIN Mounted)";
-		backpack="TWC_Backpack_Modern_2IC_Kitbag";
-	};
-	class Modern_British_Marksman_COIN_Mounted: Modern_British_Marksman_COIN
-	{
-		displayName="Marksman (Modern Mounted)";
-		backpack="";
-	};
-	

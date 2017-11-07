@@ -2,7 +2,7 @@ class cfgWeapons
 {
 //////////////////////////////  Modern  //////////////////////////////
 	class UK3CB_BAF_L85A2_RIS;
-	class UK3CB_BAF_L110A2;
+	class UK3CB_BAF_L110A2RIS;
 	class UK3CB_BAF_L129A1_Grippod;
 	class UK3CB_BAF_L128A1;
 	class UK3CB_BAF_L85A2_UGL;
@@ -23,11 +23,11 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_L85";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="UK3CB_BAF_LLM_IR_Black";
 			};
 		};
 	};
-	class UK3CB_BAF_L110A2_ELCAN3D: UK3CB_BAF_L110A2
+	class UK3CB_BAF_L110A2_ELCAN3D: UK3CB_BAF_L110A2RIS
 	{
 		scope = 1;
 		author="FakeMatty";
@@ -41,7 +41,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_UK3CB_BAF_L110A2";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="UK3CB_BAF_LLM_IR_Black";
 			};
 		};
 	};
@@ -59,7 +59,12 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_UK3CB_BAF_L129A1";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="UK3CB_BAF_LLM_IR_Black";
+			};
+			class LinkedItemsBipod
+			{
+				slot="UK3CB_underbarrel_rifle_slot";
+				item="UK3CB_underbarrel_acc_fgrip_bipod";
 			};
 		};
 	};
@@ -77,7 +82,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_UK3CB_BAF_L128A1";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="UK3CB_BAF_LLM_IR_Black";
 			};
 		};
 	};
@@ -95,28 +100,12 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_L85";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="UK3CB_BAF_LLM_IR_Black";
 			};
 		};
 	};
 //////////////////////////////  Others  //////////////////////////////	
 	class UK3CB_BAF_L115A3_Ghillie;
-	class rhs_weap_ak74m_dtk; //base ussr AK
-	class rhs_acc_1p29; //ussr section lead and 2IC scope
-	
-	class USSR_AK74_1p29: rhs_weap_ak74m_dtk
-	{
-		scope = 1;
-		author="Jayman";
-		class LinkedItems
-		{
-			class linkedItemsOptic
-			{
-				slot="CowsSlot";
-				item="rhs_acc_1p29";
-			};
-		};
-	};
 	class twc_l129a1_spotter: UK3CB_BAF_L129A1_Grippod
 	{
 		scope = 1;

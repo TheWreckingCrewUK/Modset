@@ -35,7 +35,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15A";
+				item="rhsusf_acc_anpeq15_bk_light";
 			};
 		};
 	};
@@ -85,7 +85,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15A";
+				item="rhsusf_acc_anpeq15_bk_light";
 			};
 			class LinkedItemsUnderBarrelSlot
 			{

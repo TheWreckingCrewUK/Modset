@@ -16,7 +16,7 @@ missionNameSpace setVariable ["twc_cachingVehicleRange",(_logic getVariable "veh
 
 if(missionNameSpace getVariable "twc_cachingAiRange" > 0)then{
 	["CAManBase","init",{
-		if(leader (_this select 0) == (_this select 0))then{
+		if(leader (_this select 0) == (_this select 0) && {isPlayer _x}count Units (group (_this select 0)) == 0)then{
 			_group = group (_this select 0);
 			[false,(group (_this select 0)),(missionNameSpace getVariable "twc_cachingAiRange")] spawn twc_fnc_initAICache
 		};

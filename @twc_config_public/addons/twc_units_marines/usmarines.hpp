@@ -8,6 +8,8 @@ vehicleClass="Men_Modern";
 icon="iconMan";
 nakedUniform="U_BasicBody";
 uniformClass="rhs_uniform_FROG01_wd";
+twc_radioType = "ACRE_PRC148";
+twc_radioChannel = 3;
 linkedItems[]=
 {
 "rhsusf_spc_rifleman",
@@ -80,7 +82,7 @@ respawntems[]=
 class Modern_USMC_Squadleader: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Squad Leader";
+displayName="Charlie Squad Leader@Charlie Squad";
 icon="iconManLeader";
 backpack="TWC_Backpack_USMC_Sectionleader";
 linkedItems[]=
@@ -169,7 +171,6 @@ linkedItems[]=
 "rhsusf_spc_squadleader",
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
-"ItemcTab",
 "ItemCompass",
 "ItemWatch"
 };
@@ -178,7 +179,6 @@ respawnLinkedItems[]=
 "rhsusf_spc_squadleader",
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
-"ItemcTab",
 "ItemCompass",
 "ItemWatch"
 };
@@ -188,7 +188,7 @@ weapons[]=
 "Put",
 "ACE_Vector",
 "twc_rhs_weap_m4a1_m203_acog_lazer",
-"rhsusf_weap_m1911a1",
+"rhsusf_weap_m1911a1"
 };
 respawnweapons[]=
 {
@@ -264,7 +264,6 @@ weapons[]=
 {
 "Throw",
 "Put",
-"ACE_Vector",
 "twc_rhs_weap_m4a1_acog_lazer",
 "rhs_weap_M136_hedp",
 "rhsusf_weap_m1911a1"
@@ -273,7 +272,6 @@ respawnweapons[]=
 {
 "Throw",
 "Put",
-"ACE_Vector",
 "twc_rhs_weap_m4a1_acog_lazer",
 "rhs_weap_M136_hedp",
 "rhsusf_weap_m1911a1"
@@ -342,7 +340,6 @@ weapons[]=
 {
 "Throw",
 "Put",
-"ACE_Vector",
 "twc_rhs_weap_m249_pip_L_mgo_lazer",
 "rhsusf_weap_m1911a1"
 };
@@ -350,7 +347,6 @@ respawnweapons[]=
 {
 "Throw",
 "Put",
-"ACE_Vector",
 "twc_rhs_weap_m249_pip_L_mgo_lazer",
 "rhsusf_weap_m1911a1"
 };
@@ -594,6 +590,7 @@ scope=2;
 displayName="Charlie Medic";
 icon="iconManMedic";
 backpack="TWC_Backpack_USMC_Medic";
+attendant = 1;
 linkedItems[]=
 {
 "rhsusf_spc_corpsman",
@@ -654,10 +651,6 @@ Respawnmagazines[]=
 "SmokeShell",
 "SmokeShell"
 };
-class EventHandlers: EventHandlers
-{
-init = "init =(_this select 0) setVariable [""ace_medical_medicClass"",1]";
-};
 };
 class Modern_USMC_Platoon_Commander: Modern_USMC_Squadleader
 {
@@ -712,7 +705,7 @@ respawnLinkedItems[]=
 class Modern_USMC_HeliPilot: Modern_USMC_Base
 {
 scope=2;
-displayName="USMC Helicopter Pilot";
+displayName="Charlie Helicopter Pilot";
 uniformClass="CUP_U_B_USArmy_PilotOverall";
 backpack="rhsusf_falconii_coy";
 linkedItems[]=
