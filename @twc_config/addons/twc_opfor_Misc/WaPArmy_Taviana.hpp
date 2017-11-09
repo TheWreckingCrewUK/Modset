@@ -460,6 +460,7 @@ class TWC_WaPArmy_Taviana_Crewman_Camo: TWC_WaPArmy_Taviana_Base
 };
 class TWC_WaPArmy_Taviana_Crewman_Black: TWC_WaPArmy_Taviana_Base
 {
+	scope = 2;
 	displayName="Crewman (Black)";
 	uniformClass="CUP_U_O_SLA_Overalls_Tank";
 	linkedItems[]=
