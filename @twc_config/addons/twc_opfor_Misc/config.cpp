@@ -405,6 +405,8 @@ class CfgVehicles
 	#include "usa_1970.hpp"
 	
 	#include "pirates.hpp"
+	
+	#include "WaPArmy_Taviana.hpp"
 };
 class CFgMarkers 
 {

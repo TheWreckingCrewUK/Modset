@@ -5,7 +5,7 @@ class TWC_WaPArmy_Taviana_Base: O_Soldier_base_F
 {
 	displayName="Base";
 	faction="TWC_WaPArmy_Taviana";
-	uniformClass="CUP_U_O_RUS_Gorka_Partizan";
+	uniformClass="CUP_U_O_CHDKZ_Kam_02";
 	genericNames = "CUP_Names_RussianMen";
 	identityTypes[]=
 	{
