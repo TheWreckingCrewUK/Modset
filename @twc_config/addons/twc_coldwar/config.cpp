@@ -26,6 +26,8 @@ class CfgPatches
 			"ColdWar_MilanAssistant",
 			"ColdWar_Tank_Commander",
 			"ColdWar_Tank_Crewman",
+			"ColdWar_Sniper",
+			"coldWar_Spotter",
 			"ColdWar_Vehicle_Commander",
 			"ColdWar_Vehicle_Crewman",
 			"ColdWar_Rifleman_Dismounted",
