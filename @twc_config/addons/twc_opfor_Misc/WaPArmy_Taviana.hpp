@@ -154,7 +154,7 @@ class TWC_WaPArmy_Taviana_Grenadier: TWC_WaPArmy_Taviana_Rifleman
 {
 	displayName="Grenadier";
 	icon="iconManAT";
-	backpack = "RPG_bag";
+	backpack = "USSR_RPG_bag";
 	weapons[]=
 	{
 		"Throw",
@@ -195,7 +195,7 @@ class TWC_WaPArmy_Taviana_Grenadier: TWC_WaPArmy_Taviana_Rifleman
 class TWC_WaPArmy_Taviana_Grenadier_Ass: TWC_WaPArmy_Taviana_Rifleman
 {
 	displayName="Grenadier Assistant";
-	backpack = "RPG_bag";
+	backpack = "USSR_RPG_bag";
 };
 class TWC_WaPArmy_Taviana_AutoRifleman: TWC_WaPArmy_Taviana_Base
 {
