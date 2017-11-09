@@ -391,8 +391,8 @@
 		{
 			class _xx_Milan
 			{
-				name = "TWC_MilanMissileItem";
-				count = 1;
+				name = "ukcw_milan_ace_missile";
+				count = 2;
 			};
 		};
 	};
