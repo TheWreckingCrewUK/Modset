@@ -484,7 +484,7 @@
 	class BCCCCP_AAGunner: BCCCCP_Rifleman
 	{
 		displayName="Anti-Air Gunner";
-		backpack="BCCCCP_Backpack_AA";
+		//backpack="BCCCCP_Backpack_AA";
 		vehicleClass ="BCCCCP_VDV";
 		weapons[]=
 		{
@@ -510,8 +510,7 @@
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_HandGrenade_RGD5",
-			"SmokeShell",
-			"CUP_launch_9K32Strela"
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
@@ -523,14 +522,13 @@
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_HandGrenade_RGD5",
-			"SmokeShell",
-			"CUP_launch_9K32Strela"
+			"SmokeShell"
 		};
 	};
 	class BCCCCP_AAAssistant: BCCCCP_Rifleman
 	{
 		displayName="Anti-Air Assistant";
-		backpack="BCCCCP_Backpack_AA";
+		//backpack="BCCCCP_Backpack_AA";
 		vehicleClass ="BCCCCP_VDV";
 	};
 	class BCCCCP_ATGunner: BCCCCP_Rifleman
