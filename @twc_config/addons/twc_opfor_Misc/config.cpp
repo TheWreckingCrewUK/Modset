@@ -404,7 +404,7 @@ class CfgVehicles
 		{
 			class _xx_RPG7
 			{
-				magazine="rhs_rpg7_PG7V_mag";
+				magazine="CUP_PG7V_M";
 				count=3;
 			};
 		};
