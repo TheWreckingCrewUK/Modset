@@ -296,7 +296,7 @@ class TWC_WaPArmy_Taviana_Sniper: TWC_WaPArmy_Taviana_Rifleman
 		"CUP_10Rnd_762x54_SVD_M",
 		"CUP_10Rnd_762x54_SVD_M",
 		"CUP_10Rnd_762x54_SVD_M",
-		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5"
 	};
 	Respawnmagazines[]=
 	{
@@ -309,7 +309,7 @@ class TWC_WaPArmy_Taviana_Sniper: TWC_WaPArmy_Taviana_Rifleman
 		"CUP_10Rnd_762x54_SVD_M",
 		"CUP_10Rnd_762x54_SVD_M",
 		"CUP_10Rnd_762x54_SVD_M",
-		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5"
 	};
 };
 class TWC_WaPArmy_Taviana_AAGunner: TWC_WaPArmy_Taviana_Base

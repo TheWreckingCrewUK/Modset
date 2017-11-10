@@ -71,7 +71,7 @@
 			"ACE_morphine",
 			"ACE_epinephrine",
 			"ACE_tourniquet",
-			"ACE_tourniquet"		
+			"ACE_tourniquet"
 		};		
 	};
 	class ColdWar_Rifleman: ColdWar_Base
@@ -83,7 +83,7 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L1A1_Wood",
-			"ukcw_L1A1_law"		
+			"ukcw_L1A1_law"
 		};
 		respawnweapons[]=
 		{
@@ -627,13 +627,13 @@
 		{
 			"Throw",
 			"Put",	
-			"ukcw_sterling_sub",
+			"ukcw_sterling_sub"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"ukcw_sterling_sub",
+			"ukcw_sterling_sub"
 		};
 	};
 	class ColdWar_MilanAssistant: ColdWar_MilanGunner
