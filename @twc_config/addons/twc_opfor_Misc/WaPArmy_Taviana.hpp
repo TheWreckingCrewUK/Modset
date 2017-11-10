@@ -5,7 +5,7 @@ class TWC_WaPArmy_Taviana_Base: O_Soldier_base_F
 {
 	displayName="Base";
 	faction="TWC_WaPArmy_Taviana";
-	uniformClass="CUP_U_O_RUS_Gorka_Partizan";
+	uniformClass="CUP_U_O_CHDKZ_Kam_02";
 	genericNames = "CUP_Names_RussianMen";
 	identityTypes[]=
 	{
@@ -86,8 +86,8 @@ class TWC_WaPArmy_Taviana_Base: O_Soldier_base_F
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
-		"rhs_mag_rgd5",
-		"rhs_mag_rgd5"
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5"
 	};
 	Respawnmagazines[]=
 	{
@@ -98,8 +98,8 @@ class TWC_WaPArmy_Taviana_Base: O_Soldier_base_F
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
-		"rhs_mag_rgd5",
-		"rhs_mag_rgd5"
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5"
 	};
 	
 };
@@ -154,7 +154,7 @@ class TWC_WaPArmy_Taviana_Grenadier: TWC_WaPArmy_Taviana_Rifleman
 {
 	displayName="Grenadier";
 	icon="iconManAT";
-	backpack = "RPG_bag";
+	backpack = "USSR_RPG_bag";
 	weapons[]=
 	{
 		"Throw",
@@ -178,7 +178,7 @@ class TWC_WaPArmy_Taviana_Grenadier: TWC_WaPArmy_Taviana_Rifleman
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
-		"rhs_mag_rgd5"
+		"CUP_HandGrenade_RGD5"
 	};
 	Respawnmagazines[]=
 	{
@@ -189,13 +189,13 @@ class TWC_WaPArmy_Taviana_Grenadier: TWC_WaPArmy_Taviana_Rifleman
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
-		"rhs_mag_rgd5"
+		"CUP_HandGrenade_RGD5"
 	};
 };
 class TWC_WaPArmy_Taviana_Grenadier_Ass: TWC_WaPArmy_Taviana_Rifleman
 {
 	displayName="Grenadier Assistant";
-	backpack = "RPG_bag";
+	backpack = "USSR_RPG_bag";
 };
 class TWC_WaPArmy_Taviana_AutoRifleman: TWC_WaPArmy_Taviana_Base
 {
@@ -220,14 +220,14 @@ class TWC_WaPArmy_Taviana_AutoRifleman: TWC_WaPArmy_Taviana_Base
 		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
 		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
 		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"rhs_mag_rgd5"
+		"CUP_HandGrenade_RGD5"
 	};
 	Respawnmagazines[]=
 	{
 		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
 		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
 		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"rhs_mag_rgd5"
+		"CUP_HandGrenade_RGD5"
 	};
 };
 class TWC_WaPArmy_Taviana_MG: TWC_WaPArmy_Taviana_AutoRifleman
@@ -252,7 +252,7 @@ class TWC_WaPArmy_Taviana_MG: TWC_WaPArmy_Taviana_AutoRifleman
 		"CUP_50Rnd_UK59_762x54R_Tracer",
 		"CUP_50Rnd_UK59_762x54R_Tracer",
 		"CUP_50Rnd_UK59_762x54R_Tracer",
-		"rhs_mag_rgd5"
+		"CUP_HandGrenade_RGD5"
 	};
 	Respawnmagazines[]=
 	{
@@ -264,7 +264,7 @@ class TWC_WaPArmy_Taviana_MG: TWC_WaPArmy_Taviana_AutoRifleman
 		"CUP_50Rnd_UK59_762x54R_Tracer",
 		"CUP_50Rnd_UK59_762x54R_Tracer",
 		"CUP_50Rnd_UK59_762x54R_Tracer",
-		"rhs_mag_rgd5"
+		"CUP_HandGrenade_RGD5"
 	};
 };
 class TWC_WaPArmy_Taviana_Sniper: TWC_WaPArmy_Taviana_Rifleman
@@ -460,6 +460,7 @@ class TWC_WaPArmy_Taviana_Crewman_Camo: TWC_WaPArmy_Taviana_Base
 };
 class TWC_WaPArmy_Taviana_Crewman_Black: TWC_WaPArmy_Taviana_Base
 {
+	scope = 2;
 	displayName="Crewman (Black)";
 	uniformClass="CUP_U_O_SLA_Overalls_Tank";
 	linkedItems[]=
@@ -615,43 +616,43 @@ class TWC_WaPArmy_Taviana_Grenadier_Ass_Winter: TWC_WaPArmy_Taviana_Grenadier_As
 };
 class TWC_WaPArmy_Taviana_AutoRifleman_Winter: TWC_WaPArmy_Taviana_AutoRifleman
 {
-	displayName="Auto Rifleman";
+	displayName="Auto Rifleman (Winter)";
 	editorSubcategory = "TWC_WaPArmy_Taviana_Men_Winter";
 	uniformClass="CUP_U_O_CHDKZ_Commander";
 };
 class TWC_WaPArmy_Taviana_MG_Winter: TWC_WaPArmy_Taviana_MG
 {
-	displayName="Machine Gunner";
+	displayName="Machine Gunner (Winter)";
 	editorSubcategory = "TWC_WaPArmy_Taviana_Men_Winter";
 	uniformClass="CUP_U_O_CHDKZ_Commander";
 };
 class TWC_WaPArmy_Taviana_Sniper_Winter: TWC_WaPArmy_Taviana_Sniper
 {
-	displayName="Sniper";
+	displayName="Sniper (Winter)";
 	editorSubcategory = "TWC_WaPArmy_Taviana_Men_Winter";
 	uniformClass="CUP_U_O_CHDKZ_Commander";
 };
 class TWC_WaPArmy_Taviana_AAGunner_Winter: TWC_WaPArmy_Taviana_AAGunner
 {
-	displayName="Anti-Air Gunner";
+	displayName="Anti-Air Gunner (Winter)";
 	editorSubcategory = "TWC_WaPArmy_Taviana_Men_Winter";
 	uniformClass="CUP_U_O_CHDKZ_Commander";
 };
 class TWC_WaPArmy_Taviana_AAAssistant_Winter: TWC_WaPArmy_Taviana_AAAssistant
 {
-	displayName="Anti-Air Assistant";
+	displayName="Anti-Air Assistant (Winter)";
 	editorSubcategory = "TWC_WaPArmy_Taviana_Men_Winter";
 	uniformClass="CUP_U_O_CHDKZ_Commander";
 };
 class TWC_WaPArmy_Taviana_ATGunner_Winter: TWC_WaPArmy_Taviana_ATGunner
 {
-	displayName="Anti-Tank Gunner";
+	displayName="Anti-Tank Gunner (Winter)";
 	editorSubcategory = "TWC_WaPArmy_Taviana_Men_Winter";
 	uniformClass="CUP_U_O_CHDKZ_Commander";
 };
 class TWC_WaPArmy_Taviana_ATAssistant_Winter: TWC_WaPArmy_Taviana_ATGunner
 {
-	displayName="Anti-Tank Assistant";
+	displayName="Anti-Tank Assistant (Winter)";
 	editorSubcategory = "TWC_WaPArmy_Taviana_Men_Winter";
 	uniformClass="CUP_U_O_CHDKZ_Commander";
 };
@@ -663,7 +664,7 @@ class TWC_WaPArmy_Taviana_Crewman_Camo_Winter: TWC_WaPArmy_Taviana_Crewman_Camo
 };
 class TWC_WaPArmy_Taviana_Driver_Winter: TWC_WaPArmy_Taviana_Driver
 {
-	displayName="Driver";
+	displayName="Driver (Winter)";
 	editorSubcategory = "TWC_WaPArmy_Taviana_Men_Winter";
 	uniformClass="CUP_U_O_CHDKZ_Commander";
 };
