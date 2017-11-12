@@ -670,7 +670,8 @@
 			"UK3CB_BAF_H_Beret_RTR_PRR_Over",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"Binocular"
 		};
 		respawnLinkedItems[]=
 		{
@@ -678,18 +679,19 @@
 			"UK3CB_BAF_H_Beret_RTR_PRR_Over",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"Binocular"
 		};
 		weapons[]=
 		{
 			"Throw",
-			"Put",	
+			"Put",
 			"ukcw_sterling_sub"	
 		};
 		respawnweapons[]=
 		{
 			"Throw",
-			"Put",	
+			"Put",
 			"ukcw_sterling_sub"
 		};
 		magazines[]=
@@ -743,7 +745,8 @@
 			"UK3CB_BAF_H_Beret_PWRR_PRR_Over",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"Binocular"
 		};
 		respawnLinkedItems[]=
 		{
@@ -751,7 +754,8 @@
 			"UK3CB_BAF_H_Beret_PWRR_PRR_Over",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"Binocular"
 		};
 	};
 	class ColdWar_Vehicle_Crewman: ColdWar_Vehicle_Commander
@@ -774,7 +778,7 @@
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
-		};		
+		};
 	};
 	class ColdWar_Sniper: ColdWar_Base
 	{
