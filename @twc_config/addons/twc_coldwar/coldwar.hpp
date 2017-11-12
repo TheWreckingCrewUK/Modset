@@ -72,7 +72,7 @@
 			"ACE_epinephrine",
 			"ACE_tourniquet",
 			"ACE_tourniquet"
-		};		
+		};
 	};
 	class ColdWar_Rifleman: ColdWar_Base
 	{
@@ -309,7 +309,8 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_MapTools"
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
@@ -319,7 +320,8 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_MapTools"
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
 		};
 		weapons[]=
 		{
@@ -479,7 +481,8 @@
 			"UK3CB_BAF_V_Pilot_DPMW",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
@@ -487,7 +490,8 @@
 			"UK3CB_BAF_V_Pilot_DPMW",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		weapons[]=
 		{
@@ -531,7 +535,8 @@
 			"CUP_V_B_PilotVest",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
@@ -539,7 +544,8 @@
 			"CUP_V_B_PilotVest",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		weapons[]=
 		{
@@ -659,7 +665,7 @@
 		displayName="Tank Commander";
 		icon="iconManLeader";
 		uniformClass="UK3CB_BAF_U_CrewmanCoveralls_RTR";
-		backpack="B_AssaultPack_blk";
+		backpack="TWC_Backpack_Cold_War_Tank";
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -671,7 +677,8 @@
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch",
-			"Binocular"
+			"Binocular",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
@@ -680,7 +687,8 @@
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch",
-			"Binocular"
+			"Binocular",
+			"ACE_Flashlight_MX991"
 		};
 		weapons[]=
 		{
@@ -746,7 +754,8 @@
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch",
-			"Binocular"
+			"Binocular",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
@@ -755,7 +764,8 @@
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch",
-			"Binocular"
+			"Binocular",
+			"ACE_Flashlight_MX991"
 		};
 	};
 	class ColdWar_Vehicle_Crewman: ColdWar_Vehicle_Commander
@@ -1196,7 +1206,8 @@
 			"UK3CB_BAF_H_Beret_Rifles",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1205,7 +1216,8 @@
 			"UK3CB_BAF_H_Beret_Rifles",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"ACE_Flashlight_MX991"
 		};
 		weapons[]=
 		{
