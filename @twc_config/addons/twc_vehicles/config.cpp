@@ -58,6 +58,10 @@ class CfgPatches {
 			"TWC_Vehicle_Millennial_LandRoverHard_Desert",
 			"TWC_Vehicle_Millennial_LandRoverHard_Woodland_COIN",
 			"TWC_Vehicle_Millennial_LandRoverHard_Desert_COIN",
+			"TWC_Vehicle_Millennial_LandRoverSnatch_Woodland",
+			"TWC_Vehicle_Millennial_LandRoverSnatch_Desert",
+			"TWC_Vehicle_Millennial_LandRoverSnatch_Woodland_COIN",
+			"TWC_Vehicle_Millennial_LandRoverSnatch_Desert_COIN",
 			
 			"TWC_Vehicle_Modern_HarrierGR9_RAF"
 		};
@@ -155,6 +159,8 @@ class CfgVehicles {
 	// Custom TWC vehicles are defined below (they may inherit from above)
 	#include "vehicles\warriors.hpp"
 	#include "vehicles\lr_softtop.hpp"
+	#include "vehicles\lr_hardtop.hpp"
+	#include "vehicles\lr_snatch.hpp"
 	
 	#include "generic\generic.hpp"
 	#include "coldwar\coldwar.hpp"
