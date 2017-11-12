@@ -7,36 +7,35 @@ if !([_target] call twc_medical_fnc_canCPR) exitWith {
 	false;
 };
 
-private _isMedic = _caller getVariable ["ACE_medical_medicClass", 0];
-
+_isMedic = _caller getVariable ["ACE_medical_medicClass", 0];
 _probability = 2;
 
 if (_isMedic > 0) then {
-	_probability = 5;
+	_probability = 7;
 };
 
 // potential issue here, needs investigating
-private _gotEpi = _target getVariable ["ace_medical_epinephrine_insystem", 0];
+_gotEpi = _target getVariable ["ace_medical_epinephrine_insystem", 0];
 _probability = _probability + (5 * _gotEpi);
 
 //reduces probability depending on total blood loss of patient:
-private _bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodLoss;
+_bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodLoss;
 _probability = _probability - (10 - (10 * _bloodLoss));
 
-private _diceRoll = floor(random 105);
+_diceRoll = floor(random 105);
 
-if (_probability < 1) then {
-	_probability = 1;
+if (_probability < 2) then {
+	_probability = 2;
 };
 
 if ( _probability >= _diceRoll ) exitWith {
 	_target setVariable ["ace_medical_inCardiacArrest", nil, true];
 	_target setVariable ["ace_medical_heartRate", (round(random [30, 35, 40])), true];
 	
-	private _bloodPressure = [_target] call ace_medical_fnc_getBloodPressure;
+	_bloodPressure = [_target] call ace_medical_fnc_getBloodPressure;
 	_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 	
-	private _changed = false;
+	_changed = false;
 	
 	if (_bloodPressureH < 60) then {
 		_bloodPressureH = 60;

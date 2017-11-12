@@ -4,7 +4,7 @@
 		<Key ID="STR_TWC_CPR_COMPLETED">
 			<Original>%1 resuscitated the patient with CPR</Original>
 			<English>%1 resuscitated the patient with CPR</English>
-			<German>%1 hat den Patienten mit HLW stabilisiert</German>
+			<German>%1 hat den Patienten mit HLW wiederbelebt</German>
 		</Key>
 		<Key ID="STR_TWC_CPR_EXECUE">
 			<Original>%1 performed CPR</Original>
@@ -14,16 +14,17 @@
 		<Key ID="STR_TWC_CPR_UNNEEDED">
 			<Original>%1 performed CPR needlessly</Original>
 			<English>%1 performed CPR needlessly</English>
+			<German>%1 führte HLW unnötiger Weise aus</German>
 		</Key>
 		<Key ID="STR_TWC_DEFIB_COMPLETED">
-			<Original>%1 resuscitated the patient with defibrillators</Original>
-			<English>%1 resuscitated the patient with defibrillators</English>
-			<German>%1 hat den Patienten mit HLW stabilisiert</German>
+			<Original>%1 resuscitated the patient with defibrillator</Original>
+			<English>%1 resuscitated the patient with defibrillator</English>
+			<German>%1 hat den Patienten mittels Defibrillator wiederbelebt</German>
 		</Key>
 		<Key ID="STR_TWC_DEFIB_EXECUE">
-			<Original>%1 was unsuccesful with their defibrillators</Original>
-			<English>%1 was unsuccesful with their defibrillators</English>
-			<German>%1 hat eine HLW durchgeführt</German>
+			<Original>%1 was unsuccesful with their defibrillator</Original>
+			<English>%1 was unsuccesful with their defibrillator</English>
+			<German>%1 hatte keinen Erfolg mit dem Defibrillator</German>
 		</Key>
 	</Package>
 </Project>

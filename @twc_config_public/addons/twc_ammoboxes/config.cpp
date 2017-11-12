@@ -268,39 +268,9 @@ class CfgVehicles
 				position = "[0,0,0.4]";
 				ace_dragging_dragPosition[] = {0,4,0};
 				class twc_spawnSandbagCorner{
-					displayName = "Sandbag Corner";
+					displayName = "Spawn Defenses";
 					condition = "true";
-					statement = "_return = [_target,""twc_Land_BagFence_Corner_F"",100] call twc_fnc_createDefenses; hint _return;";
-                    icon = "";
-				};
-				class twc_spawnSandbagLong{
-					displayName = "Sandbag Long";
-					condition = "true";
-					statement = "_return = [_target,""twc_Land_BagFence_Long_F"",100] call twc_fnc_createDefenses;hint _return;";
-                    icon = "";
-				};
-				class twc_spawnSandbagShort{
-					displayName = "Sandbag Short";
-					condition = "true";
-					statement = "_return = [_target,""twc_Land_BagFence_Short_F"",100] call twc_fnc_createDefenses;hint _return;";
-                    icon = "";
-				};
-				class twc_spawnSandbagEnd{
-					displayName = "Sandbag End";
-					condition = "true";
-					statement = "_return = [_target,""twc_Land_BagFence_End_F"",100] call twc_fnc_createDefenses;hint _return;";
-                    icon = "";
-				};
-				class twc_spawnSandbagRound{
-					displayName = "Sandbag Round";
-					condition = "true";
-					statement = "_return = [_target,""twc_Land_BagFence_Round_F"",100] call twc_fnc_createDefenses; hint _return;";
-                    icon = "";
-				};
-				class twc_spawnConcertinaWire{
-					displayName = "Concertina Wire";
-					condition = "true";
-					statement = "_return = [_target,""ACE_ConcertinaWireCoil"",250] call twc_fnc_createDefenses; hint _return;";
+					statement = "[_player,_target] spawn twc_fnc_showSandBagItems";
                     icon = "";
 				};
 				

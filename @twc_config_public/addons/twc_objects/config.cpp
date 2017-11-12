@@ -43,6 +43,7 @@ class CfgVehicles
 	class Land_BagFence_Short_F;
 	class Land_BagFence_End_F;
 	class Land_BagFence_Round_F;
+	class Land_BagBunker_Small_F;
 	
 	class twc_medical_hemtt: rhsusf_m1085a1p2_B_WD_Medical_fmtv_usarmy
 	{
@@ -86,6 +87,13 @@ class CfgVehicles
 		class EventHandlers: EventHandlers
 		{
 			init = "[(_this select 0),true,[0,1,0],0] call ace_dragging_fnc_setCarryable;";  
+		};
+	};
+	class twc_Land_BagBunker_Small_F: Land_BagBunker_Small_F
+	{
+		class EventHandlers: EventHandlers
+		{
+			init = "[(_this select 0),true,[0,0,0],180] call ace_dragging_fnc_setCarryable;";  
 		};
 	};
 	class twc_radioTable:Land_CampingTable_F
