@@ -9,23 +9,19 @@
 * NOTHING
 *
 * Example:
-* [defender1] spawn twc_fnc_stationaryUnits
+* [defender1] call twc_fnc_stationaryUnits
 *
 * Public: no
 */
 params["_unit"];
-	if (isServer || !hasInterface) then {
+
+if (isServer || !hasInterface) then {
 	_group = group _unit;
-	_group setVariable ["twc_cacheDefending",true];
-	{
-		_x forceSpeed 0;
-	}forEach units _group;
-
-	if(!isMultiplayer)exitWith{};
-	waitUntil{groupOwner _group != 2};
+	_group setVariable ["twc_cacheDefending", true, true];
+	_group setVariable ["twc_statioGroup", true, true];
 
 	{
 		_x forceSpeed 0;
-	}forEach units _group;
-	_unit setVariable ["acex_headless_blacklist", true];
+		_x disableAI "PATH";
+	} forEach units _group;
 };
