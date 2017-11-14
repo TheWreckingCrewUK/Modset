@@ -158,6 +158,7 @@
 	{
 		scope=2;
 		displayName="Alpha Rifleman";
+		backpack="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]=
 		{
 			"Throw",
@@ -208,6 +209,7 @@
 		scope=2;
 		displayName="Alpha Grenadier";
 		icon="iconManExplosive";
+		backpack="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Grenadier_B",
@@ -445,6 +447,7 @@
 	{
 		scope=2;
 		displayName="Alpha Marksman";
+		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Marksman_A",
