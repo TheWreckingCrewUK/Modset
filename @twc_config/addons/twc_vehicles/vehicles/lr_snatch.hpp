@@ -1,5 +1,5 @@
-class UK3CB_BAF_LandRover_Snatch_Green_B; // TODO CHECK
-class TWC_BaseClass_LR_Snatch_Base: UK3CB_BAF_LandRover_Snatch_Green_B {
+class UK3CB_BAF_LandRover_Snatch_NI_A; // TODO CHECK
+class TWC_BaseClass_LR_Snatch_Base: UK3CB_BAF_LandRover_Snatch_NI_A {
 	scope = 0;
 	class AnimationSources;
 };
