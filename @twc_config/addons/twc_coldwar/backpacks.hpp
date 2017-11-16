@@ -1,4 +1,15 @@
 	class CUP_B_AlicePack_Khaki;
+	class B_AssaultPack_blk;
+	
+	class TWC_Backpack_Cold_War_Tank: B_AssaultPack_blk {
+		scope = 1;
+		class TransportItems {
+			class _xx_PRC_77 {
+				name = "ACRE_PRC77";
+				count = 1;
+			};
+		};
+	};
 	
 	class TWC_Backpack_Cold_War_Rifleman: CUP_B_AlicePack_Khaki
 	{

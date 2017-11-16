@@ -109,7 +109,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
@@ -117,7 +117,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
 		{
@@ -158,6 +158,7 @@
 	{
 		scope=2;
 		displayName="Alpha Rifleman";
+		backpack="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]=
 		{
 			"Throw",
@@ -208,6 +209,7 @@
 		scope=2;
 		displayName="Alpha Grenadier";
 		icon="iconManExplosive";
+		backpack="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Grenadier_B",
@@ -409,14 +411,14 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L7A2",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L7A2",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
 		{
@@ -445,6 +447,7 @@
 	{
 		scope=2;
 		displayName="Alpha Marksman";
+		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Marksman_A",
@@ -614,13 +617,13 @@
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L85A2"
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L85A2"
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D"
 		};
 		magazines[]=
 		{
@@ -682,13 +685,13 @@
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L22"
+			"UK3CB_BAF_L22A2"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L22"
+			"UK3CB_BAF_L22A2"
 		};
 		magazines[]=
 		{
@@ -737,13 +740,13 @@
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
 		{
@@ -1084,7 +1087,7 @@
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
 			"rhs_weap_m72a7",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
@@ -1092,7 +1095,7 @@
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
 			"rhs_weap_m72a7",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
 		{
@@ -1136,7 +1139,7 @@
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
 			"rhs_weap_m72a7",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
@@ -1145,7 +1148,7 @@
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
 			"rhs_weap_m72a7",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
 		{
@@ -1196,14 +1199,14 @@
 			"Throw",
 			"Put",
 			"UK3CB_BAF_L110A2_ELCAN3D",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L110A2_ELCAN3D",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
 		{
@@ -1256,7 +1259,7 @@
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
 			"rhs_weap_m72a7",
-			"UK3CB_BAF_L131A1"		
+			"rhsusf_weap_glock17g4"		
 		};
 		respawnweapons[]=
 		{
@@ -1264,7 +1267,7 @@
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
 			"rhs_weap_m72a7",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
 		{
@@ -1312,7 +1315,7 @@
 			"ACE_Vector",
 			"UK3CB_BAF_L129A1_Grippod_TA648",
 			"rhs_weap_m72a7",
-			"UK3CB_BAF_L131A1"
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
@@ -1321,7 +1324,7 @@
 			"ACE_Vector",
 			"UK3CB_BAF_L129A1_Grippod_TA648",
 			"rhs_weap_m72a7",
-			"UK3CB_BAF_L131A1"	
+			"rhsusf_weap_glock17g4"	
 		};
 		magazines[]=
 		{
