@@ -387,7 +387,7 @@
 			class _xx_Smoke
 			{
 				magazine = "SmokeShell";
-				count = 3;
+				count = 4;
 			};
 		};
 	};
