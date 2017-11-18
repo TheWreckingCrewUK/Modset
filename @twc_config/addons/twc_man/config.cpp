@@ -29,7 +29,7 @@ class CfgVehicles {
  * Overwrites ACE AI in order to make the AI more skilled
  */
 class CfgAISkill {
-	aimingAccuracy[] = {0,0, 1, 0.6};
+	aimingAccuracy[] = {0,0, 1, 0.7};
 	aimingShake[]    = {0,0, 1, 0.6};
 	aimingSpeed[]    = {0,0, 1, 0.7};
 	commanding[]     = {0,0, 1, 0.8};
@@ -39,5 +39,5 @@ class CfgAISkill {
 	// apparently breaks rapid firing in single fire mode for players
 	//reloadSpeed[]    = {0,0, 1,0.8};
 	spotDistance[]   = {0,0, 1, 1};
-	spotTime[]       = {0,0, 1, 0.7};
+	spotTime[]       = {0,0, 1, 0.8};
 };
