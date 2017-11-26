@@ -24,7 +24,11 @@ if(isMultiplayer)then{
 
 		titleText [getMissionConfigValue ["onLoadName", ""], "PLAIN"];
 		titleFadeOut 15;
-		sleep 45;
+		sleep 15;
+
+		titleText ["To prevent desync, don't move until the go ahead is given.", "PLAIN"];
+		titleFadeOut 20;
+		sleep 30;
 
 		if (!isNil "ForwardBasePos") then {
 			player setPos ForwardBasePos;
@@ -32,7 +36,6 @@ if(isMultiplayer)then{
 		} else {
 			["NormalBase"] spawn {twc_fnc_reconnected};
 		};
-
 
 		sleep 3;
 		"dynamicBlur" ppEffectEnable true;   

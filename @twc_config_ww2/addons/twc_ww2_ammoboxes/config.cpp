@@ -83,7 +83,7 @@ class CfgVehicles {
 			maga_nc(10Rnd_303_Magazine, 30);
 			
 			// Bren .303 30rnd
-			maga_nc(fow_30Rnd_303_bren, 15);
+			maga_nc(fow_30Rnd_303_bren, 20;
 			
 			// Smoke Grenades
 			maga_nc(SmokeShell, 20);
@@ -126,7 +126,7 @@ class CfgVehicles {
 			maga_nc(10Rnd_303_Magazine, 18);
 			
 			// Bren .303 30rnd
-			maga_nc(fow_30Rnd_303_bren, 6);
+			maga_nc(fow_30Rnd_303_bren, 10;
 			
 			// Smoke Grenades
 			maga_nc(SmokeShell, 6);
@@ -205,7 +205,7 @@ class CfgVehicles {
 			maga_nc(10Rnd_303_Magazine, 18);
 			
 			// Bren .303 30rnd
-			maga_nc(fow_30Rnd_303_bren, 6);
+			maga_nc(fow_30Rnd_303_bren, 10);
 			
 			// Smoke Grenades
 			maga_nc(SmokeShell, 6);

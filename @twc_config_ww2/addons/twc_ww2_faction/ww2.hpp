@@ -524,22 +524,27 @@
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_bd40_01_sergeant";
 		backpack="TWC_Backpack_WW2_PlatoonCommand";
-		linkedItems[]=
-		{
-		"H_Beret_blk",
-		"V_LIB_SOV_RA_Belt",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+		
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
-		respawnLinkedItems[]=
-		{
-		"H_Beret_blk",
-		"V_LIB_SOV_RA_Belt",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"V_LIB_SOV_RA_Belt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"V_LIB_SOV_RA_Belt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		
 		weapons[]=
 		{
 		"Throw",
