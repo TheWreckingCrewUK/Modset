@@ -11,7 +11,9 @@ class CfgPatches
 			"twc_moduleKillPlayer",
 			"twc_moduleSetSpectator",
 			"twc_moduleMedicalInfo",
-			"TWC_Module_StationaryUnits"
+			"TWC_Module_StationaryUnits",
+			"TWC_Module_ArtillerySpotter",
+			"TWC_Module_ArtilleryPieces"
 		};
 		weapons[]={};
 		requiredVersion=1.7;

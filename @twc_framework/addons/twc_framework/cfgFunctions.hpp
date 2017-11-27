@@ -49,7 +49,6 @@ class CfgFunctions
 			class safeZone{};
 			class zeus{};
 
-			
 			class moduleStationaryUnits{};
 		};
 		class cache
@@ -82,5 +81,10 @@ class CfgFunctions
 			class medicalInfo {};
 		};
 
+		class artillery {
+			file = "twc_framework\artillery";
+			class moduleArtillerySpotter {};
+			class moduleArtilleryPieces {};
+		};
 	};
 };

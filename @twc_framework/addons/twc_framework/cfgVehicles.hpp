@@ -264,7 +264,7 @@ class cfgVehicles {
 	class TWC_Module_StationaryUnits: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";
-		displayName = "Stationary Units";
+		displayName = "Set Stationary Units";
 		function = "twc_fnc_moduleStationaryUnits";
 		scope = 1;
 		isGlobal = 0;
@@ -273,8 +273,89 @@ class cfgVehicles {
 		functionPriority = 1;
 		class Arguments {};
 		class ModuleDescription: ModuleDescription {
-			description = "Set Units as Stationary";
+			description = "Set Unit(s) as Stationary";
 			sync[] = {"AnyAI"};
+		};
+	};
+
+	class TWC_Module_ArtillerySpotter: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Artillery System - Set Spotter(s)";
+		function = "twc_fnc_moduleArtillerySpotter";
+		scope = 1;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {
+			class maxRange {
+				displayName = "Maximum Range";
+				description = "How far can the spotter(s) spot out to? Targets beyond this range, or go further than this range won't be fired upon. Set in meters.";
+				typeName = "NUMBER";
+				defaultValue = 1000;
+			};
+
+			class minDelay {
+				displayName = "Minimum Delay";
+				description = "How fast after spotting the target, should the call be made. In seconds. Set to 0 to be random between 2 and 5 minutes.";
+				typeName = "NUMBER";
+				defaultValue = 120;
+			};
+
+			class startingRadius {
+				displayName = "Starting Radius";
+				description = "The initial radius before zeroing correction narrows it down, closer to the target. Set in meters.";
+				typeName = "NUMBER";
+				defaultValue = 500;
+			};
+
+			class skillLevel {
+				displayName = "Skill Level";
+				description = "Sets the Skill Level of the Spotter(s). Affects correction accuracy, and speed of communication.";
+				typeName = "STRING";
+				defaultValue = "untrained";
+				
+				class values {
+					class trained {
+						name = "Trained";
+						value = "trained";
+					};
+					
+					class untrained {
+						name = "Untrained";
+						value = "untrained";
+					};
+				};
+			};
+
+			class illuminationOnly {
+				displayName = "Illumination Only";
+				description = "Should this spotter only call in for Illumination? Tick to enable.";
+				typeName = "BOOL";
+				defaultValue = 0;
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Set Unit(s) as Artillery Spotter(s)";
+			sync[] = {"AnyAI"};
+		};
+	};
+	
+	class TWC_Module_ArtilleryPieces: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Artillery System - Set Piece(s)";
+		function = "twc_fnc_moduleArtilleryPieces";
+		scope = 1;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Set Piece(s) Available to Spotter(s)";
+			sync[] = {"AnyVehicle"};
 		};
 	};
 };
