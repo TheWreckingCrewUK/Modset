@@ -20,7 +20,6 @@ class CfgFunctions
 			class intelHint{};
 			class LightsSwitch{};
 			class Patrol {};
-			class patrolMarkers{};
 			class patrolRoads{};
 			class placedIED{};
 			class putWeaponOnBack{};
@@ -53,6 +52,14 @@ class CfgFunctions
 
 			class moduleStationaryUnits{};
 			class moduleVirtualArtillery{};
+			class moduleUpdateTask{};
+			class moduleDefend{};
+			class moduleAirAssault{};
+			class moduleAttackPlane{};
+			class moduleCommandMessage{};
+			class moduleLightsSwitch{};
+			class moduleIntelHint{};
+			class moduleDaisyCutter{};
 		};
 		class cache
 		{

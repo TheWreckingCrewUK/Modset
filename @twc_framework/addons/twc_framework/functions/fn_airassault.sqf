@@ -11,6 +11,9 @@
 */
 if (isServer) then {
 	params ["_spawnmarker", "_dropmarker", "_movemarker", ["_ERA", "Modern"], ["_helicopterType", ""], ["_infantryType", ""]];
+	_pos = [0,0,0];
+	if(typeName _spawnmarker == "STRING")then{_pos = getMarkerPos _spawnmarker};
+	if(typeName _spawnmarker == "ARRAY")then{_pos = _spawnmarker};
 
 	if (_Era == "Modern") then {
 		// _helicopterType = "CUP_O_Mi8_RU"; // attempted to rename
@@ -26,8 +29,8 @@ if (isServer) then {
 
 	_helipadSpawn =  "HeliHEmpty" createVehicle getMarkerPos _dropMarker;
 	_helicopterPilots = createGroup east; 
-	_helicopterVehicle = [getMarkerPos _spawnmarker, 180, _helicopterType, _helicopterPilots] call BIS_fnc_spawnVehicle;
-	_infantryGroup = [getMarkerPos _spawnmarker, east, _infantryType] call BIS_fnc_spawnGroup; 
+	_helicopterVehicle = [_pos, 180, _helicopterType, _helicopterPilots] call BIS_fnc_spawnVehicle;
+	_infantryGroup = [_pos, east, _infantryType] call BIS_fnc_spawnGroup; 
 	_helicopterMCargo = _helicopterVehicle select 0;
 
 	{

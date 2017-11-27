@@ -335,6 +335,329 @@ class cfgVehicles {
 		};
 	};
 	
+	class TWC_Module_CompleteTask: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Complete Task";
+		function = "twc_fnc_moduleUpdateTask";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {
+			class TaskID
+			{
+				displayName="TaskID";
+				description="Task1, Task2, Task3 etc";
+				typeName="STRING";
+				defaultValue="";
+			};
+			class Status
+			{
+				displayName = "Task Status";
+				description="Succeeded/Failed";
+				typeName="String";
+				defaultValue="Succeeded";
+				class values
+				{
+					class SUCCEEDED
+					{
+						name="SUCCEEDED";
+						value="SUCCEEDED";
+					};
+					class FAILED
+					{
+						name="FAILED";
+						value="FAILED";
+					};
+					class CANCELED
+					{
+						name="CANCELED";
+						value="CANCELED";
+					};
+				};
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Update Task";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+	
+	class TWC_Module_Defend: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Defend";
+		function = "twc_fnc_moduleDefend";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class Radius
+			{
+				displayName="Radius";
+				description="Radius";
+				typeName="Number";
+				defaultValue=100;
+			};
+			class Size
+			{
+				displayName="Size";
+				description="Size";
+				typeName="Number";
+				defaultValue=2;
+			};
+			class Patrol
+			{
+				displayName="Patrol";
+				description="Have Units Patrol?";
+				typeName="BOOl";
+				defaultValue=0;
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "TWC Defend Function";
+			sync[] = {"AnyAI"};
+		};
+	};
+	
+	class TWC_Module_AirAssault: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Air Assault";
+		function = "twc_fnc_moduleAirAssault";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class LZ
+			{
+				displayName="LZ";
+				description="Landing Zone";
+				typeName="String";
+				defaultValue="";
+			};
+			class InfantryMarker
+			{
+				displayName="Infantry Move";
+				description="Marker That Infantry Will Move To";
+				typeName="String";
+				defaultValue="";
+			};
+			class ERA
+			{
+				displayName="ERA";
+				description="Era for Type Of Units";
+				typeName="String";
+				defaultValue="Modern";
+				class values
+				{
+					class Modern
+					{
+						name="Modern";
+						value="Modern";
+					};
+					class Cold
+					{
+						name="Cold";
+						value="Cold";
+					};
+					class Custom
+					{
+						name="Custom";
+						value="Custom";
+					};
+				};
+			};
+			class HeloClass
+			{
+				displayName="Helicopter Classname";
+				description="If custom please input helicopter Classname";
+				typeName="String";
+				defaultValue="";
+			};
+			class InfClass
+			{
+				displayName="Infantry Classname";
+				description="If custom please input Infantry Group Classname";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Call in Air Assault";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_AttackPlane: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Attack Plane";
+		function = "twc_fnc_moduleAttackPlane";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class Patrol
+			{
+				displayName="Patrol";
+				description="Marker Plane Will Patrol Around";
+				typeName="String";
+				defaultValue="";
+			};
+			class Radius
+			{
+				displayName="Radius";
+				description="Radius plane will fly around marker";
+				typeName="Number";
+				defaultValue=0;
+			};
+			class Type
+			{
+				displayName="Type Of Atack Plane";
+				description="ClassName";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Call in Attack Plane";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_CommandMessage: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Command Message";
+		function = "twc_fnc_moduleCommandMessage";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class Message
+			{
+				displayName="Message";
+				description="Text To Display";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Send Command A Message";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_IntelHint: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Intel Action Hint";
+		function = "twc_fnc_moduleIntelHint";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class Title
+			{
+				displayName="Title";
+				description="Title To Display";
+				typeName="String";
+				defaultValue="";
+			};
+			class Message
+			{
+				displayName="Message";
+				description="Text To Display";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Intel Hint";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_LightsSwitch: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Lights Switch";
+		function = "twc_fnc_moduleLightsSwitch";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class Status
+			{
+				displayName="On/Off";
+				description="Select On or Off";
+				typeName="Number";
+				defaultValue=0.95;
+				class values
+				{
+					class On
+					{
+						name="On";
+						value=0;
+					};
+					class Off
+					{
+						name="OFF";
+						value=0.95;
+					};
+				};
+			};
+			class Radius
+			{
+				displayName="Radius";
+				description="Radius From Module to Disable Lights";
+				typeName="Number";
+				defaultValue=0;
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Turn off the lights";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_DaisyCutter: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Daisy Cutter";
+		function = "twc_fnc_moduleDaisyCutter";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 01;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class ModuleDescription: ModuleDescription {
+			description = "Boom";
+			sync[] = {""};
+		};
+	};
+		
 	class TWC_Module_StationaryUnits: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";
