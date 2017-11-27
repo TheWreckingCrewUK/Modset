@@ -48,6 +48,9 @@ class CfgFunctions
 			class run{};
 			class safeZone{};
 			class zeus{};
+
+			
+			class moduleStationaryUnits{};
 		};
 		class cache
 		{

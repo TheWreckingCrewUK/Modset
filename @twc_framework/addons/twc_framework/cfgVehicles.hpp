@@ -1,10 +1,13 @@
-class cfgVehicles
-{
+class cfgVehicles {
 	class Logic;
-	class Module_F: Logic
-	{
-		class AttributesBase
-		{
+	
+	class Module_Base: Logic {
+		class AttributesBase;
+		class ModuleDescription;
+	};
+	
+	class Module_F: Module_Base {
+		class AttributesBase: AttributesBase {
 			class Default;
 			class Edit;
 			class Combo;
@@ -13,13 +16,13 @@ class cfgVehicles
 			class ModuleDescription;
 			class Units;
 		};
-		class ModuleDescription
-		{
+		
+		class ModuleDescription: ModuleDescription {
 			class Player;
 		};
 	};
-	class twc_ModuleMission: Module_F
-	{
+	
+	class twc_ModuleMission: Module_F {
 		author="[TWC] jayman";
 		scope=2;
 		displayName="TWC Mission Module";
@@ -133,8 +136,8 @@ class cfgVehicles
 			};
 		};
 	};
-	class twc_moduelHC: Module_F
-	{
+	
+	class twc_moduelHC: Module_F {
 		author="[TWC] jayman";
 		scope=2;
 		displayName="TWC Headless Client Module";
@@ -169,8 +172,8 @@ class cfgVehicles
 			};
 		};
 	};
-	class twc_moduelCache: Module_F
-	{
+	
+	class twc_moduelCache: Module_F {
 		author="[TWC] jayman";
 		scope=2;
 		displayName="TWC Cache Module";
@@ -205,8 +208,8 @@ class cfgVehicles
 			};
 		};
 	};
-	class twc_moduleHealPlayer: Module_F
-	{
+	
+	class twc_moduleHealPlayer: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -218,8 +221,8 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Heal Player";
 	};
-	class twc_moduleKillPlayer: Module_F
-	{
+	
+	class twc_moduleKillPlayer: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -231,8 +234,8 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Kill Player";
 	};
-	class twc_modulesetSpectator: Module_F
-	{
+	
+	class twc_modulesetSpectator: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -244,8 +247,8 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Toggle Unit ACRE Spectator";
 	};
-	class twc_moduleMedicalInfo: Module_F
-	{
+
+	class twc_moduleMedicalInfo: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -257,134 +260,21 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Hint Unit Medical Info";
 	};
-/*
-	class Man;
-	class CAManBase: Man
-	{
-		class ACE_SelfActions
-		{
-			class Medical
-			{
-				class ACE_ArmLeft
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_ArmRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegLeft
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-			};
-		};
-		class ACE_Actions
-		{
-			class Medical
-			{
-				class ACE_ArmLeft
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_ArmRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegLeft
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-			};
+
+	class TWC_Module_StationaryUnits: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Stationary Units";
+		function = "twc_fnc_moduleStationaryUnits";
+		scope = 1;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Set Units as Stationary";
+			sync[] = {"AnyAI"};
 		};
 	};
-*/
 };
