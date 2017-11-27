@@ -71,10 +71,10 @@ class TWC_AmmoBox_Millennial_Section_Portable: TWC_AmmoBox_Portable {
 	class TransportMagazines {
 		// L85/L86 Stanag
 		maga_nc(UK3CB_BAF_556_30Rnd, 24);
-		maga_nc(UK3CB_BAF_556_30Rnd_T, 6);
+		maga_nc(UK3CB_BAF_556_30Rnd_T, 8);
 		
 		// Smoke Grenades
-		maga_nc(SmokeShell, 10);
+		maga_nc(SmokeShell, 8);
 		maga_nc(SmokeShellRed, 2);
 		maga_nc(SmokeShellGreen, 2);
 		maga_nc(SmokeShellBlue, 2);
@@ -157,7 +157,7 @@ class TWC_AmmoBox_Millennial_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 		maga_nc(UK3CB_BAF_556_30Rnd_T, 4);
 		
 		// Smoke Grenades
-		maga_nc(SmokeShell, 8);
+		maga_nc(SmokeShell, 6);
 		maga_nc(SmokeShellRed, 2);
 		maga_nc(SmokeShellGreen, 2);
 		maga_nc(SmokeShellBlue, 2);

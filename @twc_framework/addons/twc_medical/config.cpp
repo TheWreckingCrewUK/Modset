@@ -129,6 +129,10 @@ class ACE_Medical_Actions {
 		class SalineIV_250: BloodIV {
 			allowSelfTreatment = 1;
 		};
+		
+		class Tourniquet: fieldDressing {
+			treatmentTime = 2;
+		};
 	};
 };
 
@@ -137,6 +141,13 @@ class ACE_Medical_Advanced {
 		class Medication {
 			class Morphine {
 				painReduce = 0.5;
+				viscosityChange = -20;
+			};
+			
+			class Epinephrine {
+				timeInSystem = 300;
+				maxDose = 4;
+				viscosityChange = 10;
 			};
 		};
 	};
