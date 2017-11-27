@@ -60,6 +60,7 @@ class CfgFunctions
 			class moduleLightsSwitch{};
 			class moduleIntelHint{};
 			class moduleDaisyCutter{};
+			class moduleDisableCaching {};
 		};
 		class cache
 		{
