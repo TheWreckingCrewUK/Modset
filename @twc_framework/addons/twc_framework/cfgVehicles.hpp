@@ -370,8 +370,8 @@ class cfgVehicles {
 					};
 					class CANCELED
 					{
-						name="CANCELED";
-						value="CANCELED";
+						name="CANCELLED";
+						value="CANCELLED";
 					};
 				};
 			};
