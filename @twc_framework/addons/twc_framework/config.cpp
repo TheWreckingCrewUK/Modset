@@ -46,6 +46,10 @@ class Extended_InitPost_EventHandlers
 		{
 			init=" [(_this select 0)] execVM 'twc_framework\init.sqf';";
 		};
+		
+		class twc_functionInit {
+			init = "[(_this select 0)] call twc_fnc_init;";
+		};
 	};
 };
 #include "cfgWeapons.hpp"
