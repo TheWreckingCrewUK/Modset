@@ -13,7 +13,9 @@ class CfgPatches
 			"twc_moduleMedicalInfo",
 			"TWC_Module_StationaryUnits",
 			"TWC_Module_ArtillerySpotter",
-			"TWC_Module_ArtilleryPieces"
+			"TWC_Module_ArtilleryPieces",
+			"TWC_Module_DisableCaching",
+			"TWC_Module_VirtualArtillery"
 		};
 		weapons[]={};
 		requiredVersion=1.7;

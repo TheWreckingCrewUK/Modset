@@ -208,9 +208,6 @@ class cfgVehicles {
 			};
 		};
 	};
-	
-
-	
 
 	class twc_moduleHealPlayer: Module_F {
 		author="[TWC] jayman";
@@ -349,6 +346,23 @@ class cfgVehicles {
 		class ModuleDescription: ModuleDescription {
 			description = "Set Unit(s) as Stationary";
 			sync[] = {"AnyAI"};
+		};
+	};
+
+	class TWC_Module_DisableCaching: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Disable Caching on Units";
+		function = "twc_fnc_moduleDisableCaching";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Disable Cache On Unit(s)";
+			sync[] = {"AnyAI", "AnyVehicle"};
 		};
 	};
 

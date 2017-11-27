@@ -51,8 +51,9 @@ class CfgFunctions
 			class safeZone{};
 			class zeus{};
 
-			class moduleStationaryUnits{};
-			class moduleVirtualArtillery{};
+			class moduleStationaryUnits {};
+			class moduleDisableCaching {};
+			class moduleVirtualArtillery {};
 		};
 		class cache
 		{
