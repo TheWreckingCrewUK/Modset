@@ -52,6 +52,7 @@ class CfgFunctions
 			class zeus{};
 
 			class moduleStationaryUnits{};
+			class moduleVirtualArtillery{};
 		};
 		class cache
 		{

@@ -209,6 +209,9 @@ class cfgVehicles {
 		};
 	};
 	
+
+	
+
 	class twc_moduleHealPlayer: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
@@ -261,12 +264,83 @@ class cfgVehicles {
 		displayName = "Hint Unit Medical Info";
 	};
 
+	class TWC_Module_VirtualArtillery: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Virtual Artillery";
+		function = "twc_fnc_moduleVirtualArtillery";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {
+			class Type
+			{
+				displayName="Type";
+				description="Type Of Ordinance";
+				typeName="STRING";
+				defaultValue="HE";
+				class values
+				{
+					class HE
+					{
+						name="HE";
+						value="HE";
+					};
+					class Smoke
+					{
+						name="Smoke";
+						value="smoke";
+					};
+					class Illum
+					{
+						name="Illum";
+						value="illum";
+					};
+				};
+			};
+			class Rounds
+			{
+				displayName = "Rounds";
+				description="Number of Rounds";
+				typeName="Number";
+				defaultValue=5;
+			};
+			class Dispersion
+			{
+				displayName = "Dispersion";
+				description="Dispersion Diameter";
+				typeName="Number";
+				defaultValue=250;
+			};
+			class Delay
+			{
+				displayName = "Delay";
+				description="Delay Between Rounds";
+				typeName="Number";
+				defaultValue=10;
+			};
+			class SafeArea
+			{
+				displayName = "SafeArea";
+				description="Area Marker Defined SafeZone";
+				typeName="String";
+				defaultValue="nil";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Call in Virtual Artillery";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+	
 	class TWC_Module_StationaryUnits: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";
 		displayName = "Set Stationary Units";
 		function = "twc_fnc_moduleStationaryUnits";
-		scope = 1;
+		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
 		icon = ""; // TODO
@@ -283,7 +357,7 @@ class cfgVehicles {
 		category = "twc_mission_framework";
 		displayName = "Artillery System - Set Spotter(s)";
 		function = "twc_fnc_moduleArtillerySpotter";
-		scope = 1;
+		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
 		icon = ""; // TODO
@@ -347,7 +421,7 @@ class cfgVehicles {
 		category = "twc_mission_framework";
 		displayName = "Artillery System - Set Piece(s)";
 		function = "twc_fnc_moduleArtilleryPieces";
-		scope = 1;
+		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
 		icon = ""; // TODO
