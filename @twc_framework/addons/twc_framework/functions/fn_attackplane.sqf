@@ -20,8 +20,11 @@
 */
 params ["_spawnmarker", "_Patrolmarker", "_radius", ["_planetype", "CUP_O_Su25_RU_2"]];
 if (isServer) then {
+	_pos = [0,0,0];
+	if(typeName _spawnmarker == "STRING")then{_pos = getMarkerPos _spawnmarker};
+	if(typeName _spawnmarker == "ARRAY")then{_pos = _spawnmarker};
 	_crew1 = creategroup EAST;
-	_plane = [getMarkerPos _spawnmarker, 180, _planetype,_crew1] call BIS_fnc_spawnVehicle;
+	_plane = [_pos, 180, _planetype,_crew1] call BIS_fnc_spawnVehicle;
 	_crew1 setVariable ["twc_cacheDisabled",true];
 	(_plane select 0) setVariable ["twc_cacheDisabled",true];
 	_wp = _crew1 addWaypoint [getMarkerPos _Patrolmarker,0];

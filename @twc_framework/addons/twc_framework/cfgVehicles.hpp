@@ -1,10 +1,13 @@
-class cfgVehicles
-{
+class cfgVehicles {
 	class Logic;
-	class Module_F: Logic
-	{
-		class AttributesBase
-		{
+	
+	class Module_Base: Logic {
+		class AttributesBase;
+		class ModuleDescription;
+	};
+	
+	class Module_F: Module_Base {
+		class AttributesBase: AttributesBase {
 			class Default;
 			class Edit;
 			class Combo;
@@ -13,13 +16,13 @@ class cfgVehicles
 			class ModuleDescription;
 			class Units;
 		};
-		class ModuleDescription
-		{
+		
+		class ModuleDescription: ModuleDescription {
 			class Player;
 		};
 	};
-	class twc_ModuleMission: Module_F
-	{
+	
+	class twc_ModuleMission: Module_F {
 		author="[TWC] jayman";
 		scope=2;
 		displayName="TWC Mission Module";
@@ -133,8 +136,8 @@ class cfgVehicles
 			};
 		};
 	};
-	class twc_moduelHC: Module_F
-	{
+	
+	class twc_moduelHC: Module_F {
 		author="[TWC] jayman";
 		scope=2;
 		displayName="TWC Headless Client Module";
@@ -169,8 +172,8 @@ class cfgVehicles
 			};
 		};
 	};
-	class twc_moduelCache: Module_F
-	{
+	
+	class twc_moduelCache: Module_F {
 		author="[TWC] jayman";
 		scope=2;
 		displayName="TWC Cache Module";
@@ -205,8 +208,8 @@ class cfgVehicles
 			};
 		};
 	};
-	class twc_moduleHealPlayer: Module_F
-	{
+
+	class twc_moduleHealPlayer: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -218,8 +221,8 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Heal Player";
 	};
-	class twc_moduleKillPlayer: Module_F
-	{
+	
+	class twc_moduleKillPlayer: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -231,8 +234,8 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Kill Player";
 	};
-	class twc_modulesetSpectator: Module_F
-	{
+	
+	class twc_modulesetSpectator: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -244,8 +247,8 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Toggle Unit ACRE Spectator";
 	};
-	class twc_moduleMedicalInfo: Module_F
-	{
+
+	class twc_moduleMedicalInfo: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
 		scope=1;
@@ -257,134 +260,513 @@ class cfgVehicles
 		curatorCanAttach = 1;
 		displayName = "Hint Unit Medical Info";
 	};
-/*
-	class Man;
-	class CAManBase: Man
-	{
-		class ACE_SelfActions
-		{
-			class Medical
+
+	class TWC_Module_VirtualArtillery: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Virtual Artillery";
+		function = "twc_fnc_moduleVirtualArtillery";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {
+			class Type
 			{
-				class ACE_ArmLeft
+				displayName="Type";
+				description="Type Of Ordinance";
+				typeName="STRING";
+				defaultValue="HE";
+				class values
 				{
-					class Syrette
+					class HE
 					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
+						name="HE";
+						value="HE";
+					};
+					class Smoke
+					{
+						name="Smoke";
+						value="smoke";
+					};
+					class Illum
+					{
+						name="Illum";
+						value="illum";
 					};
 				};
-				class ACE_ArmRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegLeft
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
+			};
+			class Rounds
+			{
+				displayName = "Rounds";
+				description="Number of Rounds";
+				typeName="Number";
+				defaultValue=5;
+			};
+			class Dispersion
+			{
+				displayName = "Dispersion";
+				description="Dispersion Diameter";
+				typeName="Number";
+				defaultValue=250;
+			};
+			class Delay
+			{
+				displayName = "Delay";
+				description="Delay Between Rounds";
+				typeName="Number";
+				defaultValue=10;
+			};
+			class SafeArea
+			{
+				displayName = "SafeArea";
+				description="Area Marker Defined SafeZone";
+				typeName="String";
+				defaultValue="nil";
 			};
 		};
-		class ACE_Actions
-		{
-			class Medical
-			{
-				class ACE_ArmLeft
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_ArmRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'hand_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegLeft
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_l','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-				class ACE_LegRight
-				{
-					class Syrette
-					{
-						displayName = "Syrette Morphine";
-						distance = 5.0;
-						condition = "[_player,_target, 'TWC_Syrette'] call twc_fnc_itemCheck";
-						exceptions[] = {"isNotInside"};
-						statement = "[_player,_target, 'leg_r','TWC_Syrette'] call twc_fnc_useSyrette";
-						showDisabled = 0;
-						priority = 2;
-						icon = "\z\ace\addons\medical\UI\icons\autoInjector.paa";
-					};
-				};
-			};
+		class ModuleDescription: ModuleDescription {
+			description = "Call in Virtual Artillery";
+			sync[] = {"EmptyDetector"};
 		};
 	};
-*/
+	
+	class TWC_Module_CompleteTask: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Complete Task";
+		function = "twc_fnc_moduleUpdateTask";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {
+			class TaskID
+			{
+				displayName="TaskID";
+				description="Task1, Task2, Task3 etc";
+				typeName="STRING";
+				defaultValue="";
+			};
+			class Status
+			{
+				displayName = "Task Status";
+				description="Succeeded/Failed";
+				typeName="String";
+				defaultValue="Succeeded";
+				class values
+				{
+					class SUCCEEDED
+					{
+						name="SUCCEEDED";
+						value="SUCCEEDED";
+					};
+					class FAILED
+					{
+						name="FAILED";
+						value="FAILED";
+					};
+					class CANCELED
+					{
+						name="CANCELLED";
+						value="CANCELLED";
+					};
+				};
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Update Task";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+	
+	class TWC_Module_Defend: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Defend";
+		function = "twc_fnc_moduleDefend";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class Radius
+			{
+				displayName="Radius";
+				description="Radius";
+				typeName="Number";
+				defaultValue=100;
+			};
+			class Size
+			{
+				displayName="Size";
+				description="Size";
+				typeName="Number";
+				defaultValue=2;
+			};
+			class Patrol
+			{
+				displayName="Patrol";
+				description="Have Units Patrol?";
+				typeName="BOOl";
+				defaultValue=0;
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "TWC Defend Function";
+			sync[] = {"AnyAI"};
+		};
+	};
+	
+	class TWC_Module_AirAssault: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Air Assault";
+		function = "twc_fnc_moduleAirAssault";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class LZ
+			{
+				displayName="LZ";
+				description="Landing Zone";
+				typeName="String";
+				defaultValue="";
+			};
+			class InfantryMarker
+			{
+				displayName="Infantry Move";
+				description="Marker That Infantry Will Move To";
+				typeName="String";
+				defaultValue="";
+			};
+			class ERA
+			{
+				displayName="ERA";
+				description="Era for Type Of Units";
+				typeName="String";
+				defaultValue="Modern";
+				class values
+				{
+					class Modern
+					{
+						name="Modern";
+						value="Modern";
+					};
+					class Cold
+					{
+						name="Cold";
+						value="Cold";
+					};
+					class Custom
+					{
+						name="Custom";
+						value="Custom";
+					};
+				};
+			};
+			class HeloClass
+			{
+				displayName="Helicopter Classname";
+				description="If custom please input helicopter Classname";
+				typeName="String";
+				defaultValue="";
+			};
+			class InfClass
+			{
+				displayName="Infantry Classname";
+				description="If custom please input Infantry Group Classname";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Call in Air Assault";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_AttackPlane: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Attack Plane";
+		function = "twc_fnc_moduleAttackPlane";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class Patrol
+			{
+				displayName="Patrol";
+				description="Marker Plane Will Patrol Around";
+				typeName="String";
+				defaultValue="";
+			};
+			class Radius
+			{
+				displayName="Radius";
+				description="Radius plane will fly around marker";
+				typeName="Number";
+				defaultValue=0;
+			};
+			class Type
+			{
+				displayName="Type Of Atack Plane";
+				description="ClassName";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Call in Attack Plane";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_CommandMessage: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Command Message";
+		function = "twc_fnc_moduleCommandMessage";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class Message
+			{
+				displayName="Message";
+				description="Text To Display";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Send Command A Message";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_IntelHint: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Intel Action Hint";
+		function = "twc_fnc_moduleIntelHint";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class Title
+			{
+				displayName="Title";
+				description="Title To Display";
+				typeName="String";
+				defaultValue="";
+			};
+			class Message
+			{
+				displayName="Message";
+				description="Text To Display";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Intel Hint";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_LightsSwitch: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Lights Switch";
+		function = "twc_fnc_moduleLightsSwitch";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class Status
+			{
+				displayName="On/Off";
+				description="Select On or Off";
+				typeName="Number";
+				defaultValue=0.95;
+				class values
+				{
+					class On
+					{
+						name="On";
+						value=0;
+					};
+					class Off
+					{
+						name="OFF";
+						value=0.95;
+					};
+				};
+			};
+			class Radius
+			{
+				displayName="Radius";
+				description="Radius From Module to Disable Lights";
+				typeName="Number";
+				defaultValue=0;
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Turn off the lights";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_DaisyCutter: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Daisy Cutter";
+		function = "twc_fnc_moduleDaisyCutter";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 01;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class ModuleDescription: ModuleDescription {
+			description = "Boom";
+			sync[] = {""};
+		};
+	};
+		
+	class TWC_Module_StationaryUnits: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Set Stationary Units";
+		function = "twc_fnc_moduleStationaryUnits";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Set Unit(s) as Stationary";
+			sync[] = {"AnyAI"};
+		};
+	};
+
+	class TWC_Module_DisableCaching: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Disable Caching on Units";
+		function = "twc_fnc_moduleDisableCaching";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Disable Cache On Unit(s)";
+			sync[] = {"AnyAI", "AnyVehicle"};
+		};
+	};
+
+	class TWC_Module_ArtillerySpotter: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Artillery System - Set Spotter(s)";
+		function = "twc_fnc_moduleArtillerySpotter";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {
+			class maxRange {
+				displayName = "Maximum Range";
+				description = "How far can the spotter(s) spot out to? Targets beyond this range, or go further than this range won't be fired upon. Set in meters.";
+				typeName = "NUMBER";
+				defaultValue = 1000;
+			};
+
+			class minDelay {
+				displayName = "Minimum Delay";
+				description = "How fast after spotting the target, should the call be made. In seconds. Set to 0 to be random between 2 and 5 minutes.";
+				typeName = "NUMBER";
+				defaultValue = 120;
+			};
+
+			class startingRadius {
+				displayName = "Starting Radius";
+				description = "The initial radius before zeroing correction narrows it down, closer to the target. Set in meters.";
+				typeName = "NUMBER";
+				defaultValue = 500;
+			};
+
+			class skillLevel {
+				displayName = "Skill Level";
+				description = "Sets the Skill Level of the Spotter(s). Affects correction accuracy, and speed of communication.";
+				typeName = "STRING";
+				defaultValue = "untrained";
+				
+				class values {
+					class trained {
+						name = "Trained";
+						value = "trained";
+					};
+					
+					class untrained {
+						name = "Untrained";
+						value = "untrained";
+					};
+				};
+			};
+
+			class illuminationOnly {
+				displayName = "Illumination Only";
+				description = "Should this spotter only call in for Illumination? Tick to enable.";
+				typeName = "BOOL";
+				defaultValue = 0;
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Set Unit(s) as Artillery Spotter(s)";
+			sync[] = {"AnyAI"};
+		};
+	};
+	
+	class TWC_Module_ArtilleryPieces: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Artillery System - Set Piece(s)";
+		function = "twc_fnc_moduleArtilleryPieces";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Set Piece(s) Available to Spotter(s)";
+			sync[] = {"AnyVehicle"};
+		};
+	};
 };

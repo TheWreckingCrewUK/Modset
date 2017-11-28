@@ -18,7 +18,10 @@
 
 params [["_OnOff",0.95],"_marker","_radius"];
 
+_pos = [0,0,0];
+if(typeName _marker == "STRING")then{_pos = getMarkerPos _marker};
+if(typeName _marker == "ARRAY")then{_pos = _marker};
 if(!isServer)exitwith{};
 {
 	_x setDamage _OnOff
-}forEach (nearestObjects [(getMarkerPos _marker), ["Lamps_Base_F","PowerLines_base_F","PowerLines_Small_base_F"],_radius]);
+}forEach (nearestObjects [_pos, ["Lamps_Base_F","PowerLines_base_F","PowerLines_Small_base_F"],_radius]);

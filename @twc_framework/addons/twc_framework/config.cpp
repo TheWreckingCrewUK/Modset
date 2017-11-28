@@ -10,7 +10,12 @@ class CfgPatches
 			"twc_moduleHealPlayer",
 			"twc_moduleKillPlayer",
 			"twc_moduleSetSpectator",
-			"twc_moduleMedicalInfo"
+			"twc_moduleMedicalInfo",
+			"TWC_Module_StationaryUnits",
+			"TWC_Module_ArtillerySpotter",
+			"TWC_Module_ArtilleryPieces",
+			"TWC_Module_DisableCaching",
+			"TWC_Module_VirtualArtillery"
 		};
 		weapons[]={};
 		requiredVersion=1.7;
@@ -26,25 +31,27 @@ class CfgPatches
 		versionAr[]={1};
 	};
 };
-class cfgFactionClasses
-{
+
+class cfgFactionClasses {
 	class NO_CATEGORY;
-	class twc_missionSetup: NO_CATEGORY
-	{
-		displayName="TWC Mission Module";
+
+	class twc_missionSetup: NO_CATEGORY {
+		displayName = "TWC - Mission Prep (Mgmt Use Mainly)";
 	};
-	class twc_zeus: NO_CATEGORY
-	{
-		displayName = "Zeus TWC";
+
+	class twc_zeus: NO_CATEGORY {
+		displayName = "TWC - Zeus";
+	};
+	
+	class twc_mission_framework: NO_CATEGORY {
+		displayName = "TWC - Mission Framework";
 	};
 };
-class Extended_InitPost_EventHandlers
-{
-	class CAManBase
-	{
-		class twc_moduleInitPos_eh
-		{
-			init=" [(_this select 0)] execVM 'twc_framework\init.sqf';";
+
+class Extended_InitPost_EventHandlers {
+	class CAManBase {
+		class twc_moduleInitPos_eh {
+			init = "[(_this select 0)] execVM 'twc_framework\init.sqf';";
 		};
 		
 		class twc_functionInit {
@@ -52,6 +59,7 @@ class Extended_InitPost_EventHandlers
 		};
 	};
 };
+
 #include "cfgWeapons.hpp"
 #include "cfgVehicles.hpp"
 #include "cfgFunctions.hpp"
