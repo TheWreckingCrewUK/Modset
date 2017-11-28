@@ -20,7 +20,6 @@ class CfgFunctions
 			class intelHint{};
 			class LightsSwitch{};
 			class Patrol {};
-			class patrolMarkers{};
 			class patrolRoads{};
 			class placedIED{};
 			class putWeaponOnBack{};
@@ -50,6 +49,18 @@ class CfgFunctions
 			class run{};
 			class safeZone{};
 			class zeus{};
+
+			class moduleStationaryUnits{};
+			class moduleVirtualArtillery{};
+			class moduleUpdateTask{};
+			class moduleDefend{};
+			class moduleAirAssault{};
+			class moduleAttackPlane{};
+			class moduleCommandMessage{};
+			class moduleLightsSwitch{};
+			class moduleIntelHint{};
+			class moduleDaisyCutter{};
+			class moduleDisableCaching {};
 		};
 		class cache
 		{
@@ -81,5 +92,10 @@ class CfgFunctions
 			class medicalInfo {};
 		};
 
+		class artillery {
+			file = "twc_framework\artillery";
+			class moduleArtillerySpotter {};
+			class moduleArtilleryPieces {};
+		};
 	};
 };
