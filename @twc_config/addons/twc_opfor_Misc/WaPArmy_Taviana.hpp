@@ -339,8 +339,7 @@ class TWC_WaPArmy_Taviana_AAGunner: TWC_WaPArmy_Taviana_Base
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
-		"CUP_HandGrenade_RGD5",
-		"CUP_launch_9K32Strela"
+		"CUP_HandGrenade_RGD5"
 	};
 	Respawnmagazines[]=
 	{
@@ -351,8 +350,7 @@ class TWC_WaPArmy_Taviana_AAGunner: TWC_WaPArmy_Taviana_Base
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
 		"CUP_30Rnd_Sa58_M",
-		"CUP_HandGrenade_RGD5",
-		"CUP_launch_9K32Strela"
+		"CUP_HandGrenade_RGD5"
 	};
 };
 class TWC_WaPArmy_Taviana_AAAssistant: TWC_WaPArmy_Taviana_Base
