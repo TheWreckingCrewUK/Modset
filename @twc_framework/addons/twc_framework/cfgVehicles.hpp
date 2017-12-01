@@ -269,7 +269,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\virtual_artillery_ca.paa";
 		functionPriority = 1;
 		class Arguments {
 			class Type
@@ -340,7 +340,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\complete_task_ca.paa";
 		functionPriority = 1;
 		class Arguments {
 			class TaskID
@@ -390,7 +390,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\defend_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -430,7 +430,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\air_assault_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -502,7 +502,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\attack_plane_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -542,7 +542,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\command_message_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -568,7 +568,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\intel_action_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -601,7 +601,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\light_switch_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -647,7 +647,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 01;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\daisy_cutter_ca.paa";
 		functionPriority = 1;
 		class ModuleDescription: ModuleDescription {
 			description = "Boom";
@@ -663,7 +663,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\stationary_units_ca.paa";
 		functionPriority = 1;
 		class Arguments {};
 		class ModuleDescription: ModuleDescription {
@@ -680,7 +680,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\disable_caching_ca.paa";
 		functionPriority = 1;
 		class Arguments {};
 		class ModuleDescription: ModuleDescription {
@@ -689,7 +689,7 @@ class cfgVehicles {
 		};
 	};
 
-	class TWC_Module_ArtillerySpotter: Module_F {
+	/* class TWC_Module_ArtillerySpotter: Module_F {
 		author = "[TWC] Bosenator";
 		category = "twc_mission_framework";
 		displayName = "Artillery System - Set Spotter(s)";
@@ -768,5 +768,5 @@ class cfgVehicles {
 			description = "Set Piece(s) Available to Spotter(s)";
 			sync[] = {"AnyVehicle"};
 		};
-	};
+	}; */
 };
