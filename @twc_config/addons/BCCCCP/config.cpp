@@ -81,6 +81,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
+			"A3_Characters_F"
 			//"cup_creatures_people_military_sla",
 			//"cup_creatures_people_military_russia",
 			//"cup_airvehicles_mi6",
