@@ -6,7 +6,7 @@ class CfgPatches
 	{
 		weapons[] = {"ukf_law80launcher"};
 		requiredVersion = 1;
-		requiredAddons[] = {};
+		requiredAddons[] = {"A3_Characters_F"};
 	};
 };
 class Mode_SemiAuto{};

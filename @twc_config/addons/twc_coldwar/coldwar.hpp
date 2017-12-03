@@ -1048,6 +1048,297 @@
 		vehicleClass="Men_ColdWar_Dismounted";
 		backpack="TWC_Backpack_Cold_War_MGAss";
 	};
+	////////////////////// AIRBORNE ////////////////////
+	class ColdWar_Rifleman_Para: ColdWar_Rifleman
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+	};
+	class ColdWar_Rifleman_SUIT_Para: ColdWar_Rifleman_SUIT
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};		
+	};
+	class ColdWar_AT_Para: ColdWar_AT
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+	};
+	class ColdWar_AT_Ass_Para: ColdWar_AT_Ass
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};		
+	};
+	class ColdWar_2IC_Para: ColdWar_2IC
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};		
+	};
+	class ColdWar_MG_Para: ColdWar_MG
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};	
+	};
+	class ColdWar_MG_AS_Para: ColdWar_MG_AS
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};		
+	};
+	class ColdWar_Section_Leader_Para: ColdWar_Section_Leader
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
+		};
+		respawnLinkedItems[]=
+		{
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
+		};	
+	};
+	class ColdWar_Platoon_Commander_Para: ColdWar_Platoon_Commander
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
+		};
+		respawnLinkedItems[]=
+		{
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
+		};	
+	};
+	class ColdWar_Sergeant_Para: ColdWar_Sergeant
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
+		};
+		respawnLinkedItems[]=
+		{
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
+		};	
+	};
+	class ColdWar_CSM_Para: ColdWar_CSM
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
+		};
+		respawnLinkedItems[]=
+		{
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
+		};		
+	};
+	class ColdWar_Medic_Para: ColdWar_Medic
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+	};
+	class ColdWar_FAC_Para: ColdWar_FAC
+	{
+		editorSubcategory = "Men_ColdWar_Airborne";
+		linkedItems[]=
+		{
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
+		};
+		respawnLinkedItems[]=
+		{
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_para",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools",
+			"ACE_Flashlight_MX991"
+		};
+	};
 	////////////////////// TROUBLES ////////////////////
 	class ColdWar_Rifleman_Troubles: ColdWar_Rifleman
 	{

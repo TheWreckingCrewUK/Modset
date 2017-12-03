@@ -58,6 +58,10 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (Mounted)";
 	};
+	class Men_ColdWar_Airborne
+	{
+		displayName = "Men (Airborne)";
+	};
 };
 #include "compositions.hpp"
 class CfgVehicles

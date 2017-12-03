@@ -152,7 +152,7 @@ class cfgVehicles {
 			class enabled
 			{
 				displayName="Enabled";
-				description="Enable for Headless Clients";
+				description="Enable for headless clients";
 				typeName="BOOL";
 				defaultValue=1;
 			};
@@ -166,7 +166,7 @@ class cfgVehicles {
 			class endMission
 			{
 				displayName="End Mission";
-				description="Ends Mission when all Players Disconnect";
+				description="Ends mission when all players disconnect";
 				typeName="BOOL";
 				defaultValue=0;
 			};
@@ -188,21 +188,21 @@ class cfgVehicles {
 			class enabled
 			{
 				displayName="Enabled";
-				description="Enable for Unit Caching";
+				description="Enable for unit caching";
 				typeName="BOOL";
 				defaultValue=1;
 			};
 			class aiRange
 			{
 				displayName="AI Range";
-				description="Range at which AI will Cache 0 to Disable";
+				description="Range at which AI will cache. 0 to disable.";
 				typeName="NUMBER";
 				defaultValue=1500;
 			};
 			class vehicleRange
 			{
 				displayName="Vehicle Caching";
-				description="Range at which vehicles will Cache 0 to Disable";
+				description="Range at which vehicles will cache. 0 to disable.";
 				typeName="NUMBER";
 				defaultValue=2000;
 			};
@@ -269,7 +269,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\virtual_artillery_ca.paa";
 		functionPriority = 1;
 		class Arguments {
 			class Type
@@ -300,28 +300,28 @@ class cfgVehicles {
 			class Rounds
 			{
 				displayName = "Rounds";
-				description="Number of Rounds";
+				description="Number of rounds";
 				typeName="Number";
 				defaultValue=5;
 			};
 			class Dispersion
 			{
 				displayName = "Dispersion";
-				description="Dispersion Diameter";
+				description="Dispersion diameter";
 				typeName="Number";
 				defaultValue=250;
 			};
 			class Delay
 			{
 				displayName = "Delay";
-				description="Delay Between Rounds";
+				description="Delay between rounds";
 				typeName="Number";
 				defaultValue=10;
 			};
 			class SafeArea
 			{
 				displayName = "SafeArea";
-				description="Area Marker Defined SafeZone";
+				description="Area marker defined SafeZone";
 				typeName="String";
 				defaultValue="nil";
 			};
@@ -340,7 +340,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\complete_task_ca.paa";
 		functionPriority = 1;
 		class Arguments {
 			class TaskID
@@ -390,7 +390,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\defend_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -411,7 +411,7 @@ class cfgVehicles {
 			class Patrol
 			{
 				displayName="Patrol";
-				description="Have Units Patrol?";
+				description="Have units patrol?";
 				typeName="BOOl";
 				defaultValue=0;
 			};
@@ -430,7 +430,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\air_assault_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -444,14 +444,14 @@ class cfgVehicles {
 			class InfantryMarker
 			{
 				displayName="Infantry Move";
-				description="Marker That Infantry Will Move To";
+				description="Marker that infantry will move to";
 				typeName="String";
 				defaultValue="";
 			};
 			class ERA
 			{
 				displayName="ERA";
-				description="Era for Type Of Units";
+				description="Era for type of units";
 				typeName="String";
 				defaultValue="Modern";
 				class values
@@ -476,14 +476,14 @@ class cfgVehicles {
 			class HeloClass
 			{
 				displayName="Helicopter Classname";
-				description="If custom please input helicopter Classname";
+				description="If custom please input helicopter classname";
 				typeName="String";
 				defaultValue="";
 			};
 			class InfClass
 			{
 				displayName="Infantry Classname";
-				description="If custom please input Infantry Group Classname";
+				description="If custom please input infantry group classname";
 				typeName="String";
 				defaultValue="";
 			};
@@ -502,14 +502,14 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\attack_plane_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
 			class Patrol
 			{
 				displayName="Patrol";
-				description="Marker Plane Will Patrol Around";
+				description="Marker plane will patrol around";
 				typeName="String";
 				defaultValue="";
 			};
@@ -522,7 +522,7 @@ class cfgVehicles {
 			};
 			class Type
 			{
-				displayName="Type Of Atack Plane";
+				displayName="Type Of Attack Plane";
 				description="ClassName";
 				typeName="String";
 				defaultValue="";
@@ -542,7 +542,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\command_message_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -568,7 +568,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\intel_action_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -601,7 +601,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\light_switch_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -620,7 +620,7 @@ class cfgVehicles {
 					};
 					class Off
 					{
-						name="OFF";
+						name="Off";
 						value=0.95;
 					};
 				};
@@ -628,7 +628,7 @@ class cfgVehicles {
 			class Radius
 			{
 				displayName="Radius";
-				description="Radius From Module to Disable Lights";
+				description="Radius from module to disable lights";
 				typeName="Number";
 				defaultValue=0;
 			};
@@ -647,7 +647,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 01;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\daisy_cutter_ca.paa";
 		functionPriority = 1;
 		class ModuleDescription: ModuleDescription {
 			description = "Boom";
@@ -663,7 +663,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\stationary_units_ca.paa";
 		functionPriority = 1;
 		class Arguments {};
 		class ModuleDescription: ModuleDescription {
@@ -680,7 +680,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\disable_caching_ca.paa";
 		functionPriority = 1;
 		class Arguments {};
 		class ModuleDescription: ModuleDescription {
@@ -689,7 +689,7 @@ class cfgVehicles {
 		};
 	};
 
-	class TWC_Module_ArtillerySpotter: Module_F {
+	/* class TWC_Module_ArtillerySpotter: Module_F {
 		author = "[TWC] Bosenator";
 		category = "twc_mission_framework";
 		displayName = "Artillery System - Set Spotter(s)";
@@ -768,5 +768,5 @@ class cfgVehicles {
 			description = "Set Piece(s) Available to Spotter(s)";
 			sync[] = {"AnyVehicle"};
 		};
-	};
+	}; */
 };
