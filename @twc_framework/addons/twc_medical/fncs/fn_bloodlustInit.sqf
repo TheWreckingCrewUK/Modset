@@ -11,9 +11,11 @@ if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
 	BloodLust_IsVaporizationGibsEnabledMP = false;
 };
 
-_unit addEventHandler ["Explosion", {
-	// explosion is a local event only, so rebroadcast to the server to handle
-	_this remoteExec ["_TWC_VaporizedUnitCompat"];
+// explosion is a local event only, so rebroadcast to the server to handle
+if (hasInterface) then {
+	player addEventHandler ["Explosion", {
+		_this remoteExec ["_TWC_VaporizedUnitCompat"];
+	};
 };
 
 _TWC_VaporizedUnitCompat = {
