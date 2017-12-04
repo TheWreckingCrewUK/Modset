@@ -225,7 +225,7 @@ class cfgVehicles {
 				displayName = "Enabled";
 				description = "Enable debug mode";
 				typeName = "BOOL";
-				defaultValue = 1;
+				defaultValue = 0;
 			};
 		};
 	};
