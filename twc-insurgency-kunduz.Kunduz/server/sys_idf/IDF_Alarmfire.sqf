@@ -12,7 +12,7 @@ if (side group _shooter isEqualTo East) then {
 
 if ((_shooter) distance (getmarkerpos "base") < 2000) then
 {
-systemchat format ["%1, %2", _direction, _direction + (_distance / _distancescale)];
+//systemchat format ["%1, %2", _direction, _direction + (_distance / _distancescale)];
 if ((_direction > ((360 - _accuracy) + (_distance / _distancescale))) or {_direction < ((0 + _accuracy) - (_distance / _distancescale))}) then
 {
 idfsafe = 0;
@@ -23,7 +23,7 @@ publicvariable "alarm";
 sleep _time;
 
 
-systemchat "middle man sees the shell";
+//systemchat "middle man sees the shell";
 sleep 2;
 
 execVM "client\idfalarm\IDF_Alarm.sqf";
