@@ -457,7 +457,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class WaPAT_Backpack_AA: CUP_B_HikingPack_Civ
+	/*class WaPAT_Backpack_AA: CUP_B_HikingPack_Civ
 	{
 		scope = 1;
 		class TransportMagazines
@@ -468,7 +468,7 @@ class CfgVehicles
 				count = 2;
 			};
 		};
-	};
+	};*/
 	class WaPAT_Backpack_AT: CUP_B_HikingPack_Civ
 	{
 		scope = 1;
