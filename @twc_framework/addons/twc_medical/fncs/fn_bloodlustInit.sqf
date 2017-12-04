@@ -3,6 +3,12 @@
  * If a user has bloodlust, they should see the vaporization - otherwise, they'll just see a ragdoll
  */
 
+_debugMode = missionNameSpace getVariable ["twc_debugEnabled", false];
+
+if (_debugMode) then {
+	"bloodlustInit called" remoteExec ["hint", -2, true];
+};
+
 // defaults just incase server hasn't broadcasted values
 if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
 	BloodLust_VaporizationDamageThresholdMP = 1;
@@ -15,6 +21,10 @@ if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
 if (hasInterface) then {
 	player addEventHandler ["Explosion", {
 		_this remoteExec ["_TWC_VaporizedUnitCompat"];
+		
+		if (_debugMode) then {
+			player globalChat "Explosion event fired";
+		};
 	};
 };
 
@@ -25,6 +35,10 @@ _TWC_VaporizedUnitCompat = {
 	
 	if (BloodLust_IsVaporizationEnabledMP && _damage >= BloodLust_VaporizationDamageThresholdMP) then {
 		[_TWC_VaporizeKillUnit, [_unit], 1] call CBA_fnc_waitAndExecute; // wait for all other events to fire first
+
+		if (_debugMode) then {
+			"_TWC_VaporizedUnitCompat called" remoteExec ["hint", -2, true];
+		};
 	};
 };
 
@@ -34,6 +48,10 @@ _TWC_VaporizeKillUnit = {
 	// as it's been a second, should fire just fine (tm)
 	_isUnitVaporized = _unit getVariable ["BloodLust_IsVaporized", false];
 
+	if (_debugMode) then {
+		"_TWC_VaporizeKillUnit called" remoteExec ["hint", -2, true];
+	};
+
 	if (_isUnitVaporized) then {
 		removeAllItems _unit;
 		removeAllWeapons _unit;
@@ -42,5 +60,9 @@ _TWC_VaporizeKillUnit = {
 		_unit removeItems "ItemMap";
 		
 		[_unit, true, true] call ace_medical_fnc_setDead;
+
+		if (_debugMode) then {
+			"setDead called" remoteExec ["hint", -2, true];
+		};
 	};
 };

@@ -15,12 +15,16 @@ params ["_unit"];
 if (!alive _unit) exitWith {}; // already dead
 if (!local _unit) exitWith {}; // no longer local unit
 
+_debugMode = missionNameSpace getVariable ["twc_debugEnabled", false];
 _bloodVolume = (_unit getVariable ["ace_medical_bloodVolume", 100]);
 _heartRate = (_unit getVariable ["ace_medical_heartRate", 80]);
 
 if (_bloodVolume <= 0 && _heartRate <= 0) then {
 	[_unit, true, false] call ace_medical_fnc_setDead;
-};
 
+	if (_debugMode) then {
+		"setDead called" remoteExec ["hint", -2, true];
+	};
+};
 
 [twc_medical_fnc_extendedVitalLoop, [_unit], 1] call CBA_fnc_waitAndExecute; // execute this fnc again in a second
