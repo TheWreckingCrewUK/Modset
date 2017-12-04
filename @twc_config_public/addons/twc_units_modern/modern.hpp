@@ -121,8 +121,8 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -138,8 +138,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -422,8 +422,8 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_100Rnd",
 			"UK3CB_BAF_762_100Rnd",
 			"UK3CB_BAF_762_100Rnd_T",
@@ -433,8 +433,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_100Rnd",
 			"UK3CB_BAF_762_100Rnd",
 			"UK3CB_BAF_762_100Rnd_T",
@@ -750,15 +750,15 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",	
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",	
 			"SmokeShell",
 			"SmokeShell"
 		};
@@ -802,8 +802,8 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_338_5Rnd",
 			"UK3CB_BAF_338_5Rnd",
 			"UK3CB_BAF_338_5Rnd",
@@ -817,8 +817,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_338_5Rnd",
 			"UK3CB_BAF_338_5Rnd",
 			"UK3CB_BAF_338_5Rnd",
@@ -854,8 +854,8 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
@@ -870,8 +870,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
@@ -1099,8 +1099,8 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd",
@@ -1114,8 +1114,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd",
@@ -1152,8 +1152,8 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -1172,8 +1172,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -1210,8 +1210,8 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_556_200Rnd",
 			"UK3CB_BAF_556_200Rnd",
 			"UK3CB_BAF_556_200Rnd_T",
@@ -1221,8 +1221,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_556_200Rnd",
 			"UK3CB_BAF_556_200Rnd",
 			"UK3CB_BAF_556_200Rnd_T",
@@ -1271,8 +1271,8 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -1288,8 +1288,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -1328,8 +1328,8 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
@@ -1346,8 +1346,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
