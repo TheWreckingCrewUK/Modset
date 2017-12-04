@@ -18,16 +18,16 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "V_BandollierB_oli",
-		"G_Balaclava_blk",
+        "rhsgref_alice_webbing",
+		"CUP_TK_NeckScarf",
 		"ItemMap",
 		"ItemCompass",
 		"Binocular"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_BandollierB_oli",
-		"G_Balaclava_blk",
+        "rhsgref_alice_webbing",
+		"CUP_TK_NeckScarf",
 		"ItemMap",
 		"ItemCompass",
 		"Binocular"
@@ -36,33 +36,31 @@
 		{
 		"Throw",
 		"Put",
-		"CUP_srifle_M14"
+		"CUP_hgun_SA61"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"CUP_srifle_M14"
+		"CUP_hgun_SA61"
 		};
 		magazines[]=
 		{
-		"CUP_20Rnd_762x51_DMR",
-		"CUP_20Rnd_762x51_DMR",
-		"CUP_20Rnd_762x51_DMR",
-		"CUP_20Rnd_762x51_DMR",
-		"CUP_20Rnd_762x51_DMR",
-		"HandGrenade",
+		"CUP_20Rnd_B_765x17_Ball_M",
+		"CUP_20Rnd_B_765x17_Ball_M",
+		"CUP_20Rnd_B_765x17_Ball_M",
+		"CUP_20Rnd_B_765x17_Ball_M",
+		"CUP_20Rnd_B_765x17_Ball_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"CUP_20Rnd_762x51_DMR",
-		"CUP_20Rnd_762x51_DMR",
-		"CUP_20Rnd_762x51_DMR",
-		"CUP_20Rnd_762x51_DMR",
-		"CUP_20Rnd_762x51_DMR",
-		"HandGrenade",
+		"CUP_20Rnd_B_765x17_Ball_M",
+		"CUP_20Rnd_B_765x17_Ball_M",
+		"CUP_20Rnd_B_765x17_Ball_M",
+		"CUP_20Rnd_B_765x17_Ball_M",
+		"CUP_20Rnd_B_765x17_Ball_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
@@ -97,20 +95,20 @@
 		vehicleClass="Men_Greek";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_OG_Guerilla1_1";
+		uniformClass="rhsgref_uniform_dpm_olive";
 		backpack="";
 		linkedItems[]=
 		{
-        "V_BandollierB_oli",
-		"G_Balaclava_blk",
+        "rhsgref_alice_webbing",
+		"CUP_TK_NeckScarf",
 		"ItemMap",
 		"ItemCompass",
 		"Binocular"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_BandollierB_oli",
-		"G_Balaclava_blk",
+        "rhsgref_alice_webbing",
+		"CUP_TK_NeckScarf",
 		"ItemMap",
 		"ItemCompass",
 		"Binocular"
@@ -135,7 +133,6 @@
 		"CUP_30Rnd_545x39_AK_M",
 		"CUP_30Rnd_545x39_AK_M",
 		"HandGrenade",
-		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -145,7 +142,6 @@
 		"CUP_30Rnd_545x39_AK_M",
 		"CUP_30Rnd_545x39_AK_M",
 		"CUP_30Rnd_545x39_AK_M",
-		"HandGrenade",
 		"HandGrenade",
 		"SmokeShell"
 		};
@@ -184,7 +180,7 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "V_BandollierB_oli",
+        "CUP_V_O_Ins_Carrier_Rig",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -192,7 +188,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "V_BandollierB_oli",
+        "CUP_V_O_Ins_Carrier_Rig",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -219,8 +215,6 @@
 		"CUP_30Rnd_Sa58_M_TracerG",
 		"CUP_30Rnd_Sa58_M_TracerG",
 		"CUP_30Rnd_Sa58_M_TracerG",
-		"HandGrenade",
-		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -230,8 +224,6 @@
 		"CUP_30Rnd_Sa58_M_TracerG",
 		"CUP_30Rnd_Sa58_M_TracerG",
 		"CUP_30Rnd_Sa58_M_TracerG",
-		"HandGrenade",
-		"HandGrenade",
 		"SmokeShell"
 		};
 		Items[]=
@@ -269,7 +261,7 @@
 		backpack="greek_Backpack_AT";
 		linkedItems[]=
 		{
-        "V_TacVest_blk",
+        "rhsgref_alice_webbing",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -277,7 +269,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "V_TacVest_blk",
+        "rhsgref_alice_webbing",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -306,7 +298,6 @@
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_PG7V_M",
 		"HandGrenade",
-		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -317,7 +308,6 @@
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_PG7V_M",
-		"HandGrenade",
 		"HandGrenade",
 		"SmokeShell"
 		};
@@ -356,7 +346,7 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "V_Chestrig_blk",
+        "CUP_V_O_Ins_Carrier_Rig",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -364,7 +354,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "V_Chestrig_blk",
+        "CUP_V_O_Ins_Carrier_Rig",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -445,7 +435,7 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "V_TacVest_blk",
+        "CUP_V_OI_TKI_Jacket1_04",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -453,7 +443,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "V_TacVest_blk",
+        "CUP_V_OI_TKI_Jacket1_04",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -463,24 +453,24 @@
 		{
 		"Throw",
 		"Put",
-		"CUP_lmg_m249_pip1"
+		"CUP_arifle_RPK74"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"CUP_lmg_m249_pip1"
+		"CUP_arifle_RPK74"
 		};
 		magazines[]=
 		{
-		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
-		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
-		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
 		"SmokeShell"
 		};
 		Items[]=
@@ -514,20 +504,20 @@
 		vehicleClass="Men_Greek";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_OG_Guerilla2_1";
-		backpack="";
+		uniformClass="rhsgref_uniform_altis_lizard_olive";
+		backpack="UK3CB_BAF_B_Bergen_OLI_Rifleman_A";
 		linkedItems[]=
 		{
-        "V_TacVest_blk",
-		"G_Balaclava_blk",
+        "CUP_V_O_Ins_Carrier_Rig_MG",
+		"CUP_TK_NeckScarf",
 		"ItemMap",
 		"ItemCompass",
 		"Binocular"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_TacVest_blk",
-		"G_Balaclava_blk",
+        "CUP_V_O_Ins_Carrier_Rig_MG",
+		"CUP_TK_NeckScarf",
 		"ItemMap",
 		"ItemCompass",
 		"Binocular"
@@ -546,6 +536,8 @@
 		};
 		magazines[]=
 		{
+		"CUP_50Rnd_UK59_762x54R_Tracer",
+		"CUP_50Rnd_UK59_762x54R_Tracer",
 		"CUP_50Rnd_UK59_762x54R_Tracer",
 		"CUP_50Rnd_UK59_762x54R_Tracer",
 		"CUP_50Rnd_UK59_762x54R_Tracer",
@@ -589,11 +581,10 @@
 		vehicleClass="Men_Greek";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_OG_Guerilla1_1";
-		backpack="";
+		uniformClass="rhs_uniform_gorka_r_g";
+		backpack="UK3CB_BAF_B_Bergen_OLI_Rifleman_A";
 		linkedItems[]=
 		{
-        "V_BandollierB_oli",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -601,7 +592,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "V_BandollierB_oli",
+        "CUP_V_O_Ins_Carrier_Rig",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -661,4 +652,100 @@
 		"ACE_morphine",
 		"ACE_morphine"
 		};
+	};
+	
+	class twc_greek_heavy: O_G_Soldier_F
+	{
+		class eventhandlers {
+		};
+		_generalMacro="Greek_Heavy";
+		scope=2;
+		displayName="Heavy Rifleman";
+		faction="greek_units";
+		editorSubcategory = "Men_Greek";
+		vehicleClass="Men_Greek";
+		icon="iconManLeader";
+		nakedUniform="U_BasicBody";
+		uniformClass="rhsgref_uniform_olive";
+		backpack="";
+		linkedItems[]=
+		{
+        "CUP_V_I_RACS_Carrier_Vest_wdl",
+		"rhs_altyn_visordown",
+		"G_Bandanna_blk",
+		"ItemMap",
+		"ItemCompass",
+		"Binocular"
+		};
+		respawnLinkedItems[]=
+		{
+        "CUP_V_I_RACS_Carrier_Vest_wdl",
+		"G_Bandanna_blk",
+		"ItemMap",
+		"ItemCompass",
+		"rhs_altyn_visordown",
+		"Binocular"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_ak74m_2mag",
+		"rhs_weap_makarov_pm"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_ak74m_2mag",
+		"rhs_weap_makarov_pm"
+		};
+		magazines[]=
+		{
+		"rhs_30Rnd_545x39_AK",
+		"rhs_30Rnd_545x39_AK",
+		"rhs_30Rnd_545x39_AK",
+		"rhs_30Rnd_545x39_AK",
+		"rhs_30Rnd_545x39_AK",
+		"rhs_mag_9x18_8_57N181S",
+		"rhs_mag_9x18_8_57N181S",
+		"rhs_mag_9x18_8_57N181S",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"rhs_30Rnd_545x39_AK",
+		"rhs_30Rnd_545x39_AK",
+		"rhs_30Rnd_545x39_AK",
+		"rhs_30Rnd_545x39_AK",
+		"rhs_30Rnd_545x39_AK",
+		"rhs_mag_9x18_8_57N181S",
+		"rhs_mag_9x18_8_57N181S",
+		"rhs_mag_9x18_8_57N181S",
+		"SmokeShell"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine"
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine"
+		
+		};
+
+	
+
 	};
