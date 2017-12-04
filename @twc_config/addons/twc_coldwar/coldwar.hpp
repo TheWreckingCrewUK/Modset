@@ -427,6 +427,7 @@
 		displayName="Platoon Medic";
 		icon="iconManMedic";
 		backpack="TWC_Backpack_Cold_Medic";
+		attendant = 1;
 		weapons[]=
 		{
 			"Throw",
@@ -1611,6 +1612,7 @@
 		icon="iconManMedic";
 		uniformClass="UK3CB_BAF_U_JumperUniform_Plain";
 		backpack="TWC_Backpack_Cold_Medic";
+		attendant = 1;
 		linkedItems[]=
 		{
 			"CUP_V_CDF_6B3_1_Green",

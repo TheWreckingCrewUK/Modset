@@ -205,6 +205,7 @@
 		displayName="Medic";
 		uniformClass="fow_u_uk_parasmock";
 		backpack="TWC_Backpack_WW2_Medic";
+		attendant = 1;
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Para_Sten",
