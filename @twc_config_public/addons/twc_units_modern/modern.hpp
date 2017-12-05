@@ -154,6 +154,84 @@
 			"B_IR_Grenade"
 		};
 	};
+	class Modern_British_Quartermaster: Modern_British_Base
+	{
+		scope=2;
+		displayName="Quartermaster";
+		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		icon="iconManLeader";
+		backpack="TWC_Backpack_Modern_quartermaster";
+		linkedItems[]=
+		{
+			"V_Rangemaster_belt",
+			"UK3CB_BAF_H_Mk7_Camo_D",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_Rangemaster_belt",
+			"UK3CB_BAF_H_Mk7_Camo_D",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"UK3CB_BAF_L128A1_Eotech",
+			"rhsusf_weap_glock17g4"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"UK3CB_BAF_L128A1_Eotech",
+			"rhsusf_weap_glock17g4"
+		};
+		magazines[]=
+		{
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_12G_Slugs",
+			"UK3CB_BAF_12G_Slugs",
+			"UK3CB_BAF_12G_Slugs",
+			"UK3CB_BAF_12G_Slugs",
+			"UK3CB_BAF_12G_Pellets",
+			"UK3CB_BAF_12G_Pellets",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"B_IR_Grenade"
+		};
+		Respawnmagazines[]=
+		{
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_12G_Slugs",
+			"UK3CB_BAF_12G_Slugs",
+			"UK3CB_BAF_12G_Slugs",
+			"UK3CB_BAF_12G_Slugs",
+			"UK3CB_BAF_12G_Pellets",
+			"UK3CB_BAF_12G_Pellets",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"B_IR_Grenade"
+		};
+	};
+
+
 	class Modern_British_Rifleman: Modern_British_Base
 	{
 		scope=2;
