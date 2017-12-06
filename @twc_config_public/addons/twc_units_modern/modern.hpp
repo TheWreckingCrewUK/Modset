@@ -164,7 +164,6 @@
 		linkedItems[]=
 		{
 			"V_Rangemaster_belt",
-			"UK3CB_BAF_H_Mk7_Camo_D",
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
@@ -1441,3 +1440,158 @@
 			"SmokeShell"
 		};
 	};
+	
+		class Modern_British_Sniper_coin: Modern_British_Base
+	{
+		scope=2;
+		displayName="Sniper (COIN)";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
+		icon="iconManLeader";
+		backpack="";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"UK3CB_BAF_H_Mk7_Scrim_D",
+			"ItemMap",
+			"ItemCompass",	
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"UK3CB_BAF_H_Mk7_Scrim_D",
+			"ItemMap",
+			"ItemCompass",		
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"twc_l115a3_wd",
+			"rhsusf_weap_glock17g4"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"twc_l115a3_wd",
+			"rhsusf_weap_glock17g4"
+		};
+		magazines[]=
+		{
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_338_5Rnd",
+			"UK3CB_BAF_338_5Rnd",
+			"UK3CB_BAF_338_5Rnd",
+			"UK3CB_BAF_338_5Rnd",
+			"UK3CB_BAF_338_5Rnd",
+			"UK3CB_BAF_338_5Rnd",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"B_IR_Grenade"
+		};
+		Respawnmagazines[]=
+		{
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_338_5Rnd",
+			"UK3CB_BAF_338_5Rnd",
+			"UK3CB_BAF_338_5Rnd",
+			"UK3CB_BAF_338_5Rnd",
+			"UK3CB_BAF_338_5Rnd",
+			"UK3CB_BAF_338_5Rnd",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"B_IR_Grenade"
+		};
+	};
+
+		class Modern_British_Spotter_coin: Modern_British_Base
+	{
+		scope=2;
+		displayName="Spotter (COIN)";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
+		icon="iconManLeader";
+		backpack="TWC_Backpack_Modern_Spotter_coin";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"UK3CB_BAF_H_Mk7_Scrim_A",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ACE_Vector",
+			"ACE_Kestrel4500",
+			"ACE_ATragMX",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"UK3CB_BAF_H_Mk7_Scrim_A",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ACE_Vector",
+			"ACE_Kestrel4500",
+			"ACE_ATragMX",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"twc_l129a1_spotter",
+			"rhsusf_weap_glock17g4"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"twc_l129a1_spotter",
+			"rhsusf_weap_glock17g4"
+		};
+		magazines[]=
+		{
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd_T",
+			"UK3CB_BAF_762_L42A1_20Rnd_T",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"B_IR_Grenade"
+		};
+		Respawnmagazines[]=
+		{
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd_T",
+			"UK3CB_BAF_762_L42A1_20Rnd_T",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"B_IR_Grenade"
+		};
+	};
+
