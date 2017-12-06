@@ -338,6 +338,7 @@
 		scope=2;
 		displayName="Medic";
 		backpack="TWC_Backpack_1990_Medic";
+		attendant = 1;
 		weapons[]=
 		{
 			"Throw",
@@ -372,7 +373,7 @@
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "(_this select 0) setVariable [""ace_medical_medicClass"",1]; (_this select 0) setVariable [""twc_keepMap"",true]";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 	};
 	class 1990_British_HeliPilot: 1990_British_Base
@@ -959,7 +960,7 @@
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "init = (_this select 0) setVariable [""ace_medical_medicClass"",1];(_this select 0) setVariable [""twc_keepMap"",true]";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 	};
     class 1990_British_HeliPilot_Desert: 1990_British_HeliPilot

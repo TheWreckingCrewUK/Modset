@@ -427,6 +427,7 @@
 		displayName="Platoon Medic";
 		icon="iconManMedic";
 		backpack="TWC_Backpack_Cold_Medic";
+		attendant = 1;
 		weapons[]=
 		{
 			"Throw",
@@ -469,8 +470,8 @@
 	{
 		scope=2;
 		displayName="Helicopter Pilot";
-		uniformClass="UK3CB_BAF_B_Carryall_OLI";
-		backpack="B_AssaultPack_blk";
+		uniformClass="ukcw_p60_uniform";
+		backpack="TWC_Backpack_Cold_War_Tank";
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -524,7 +525,7 @@
 	{
 		displayName="Jet Pilot";
 		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_RAF";
-		backpack="B_AssaultPack_blk";
+		backpack="TWC_Backpack_Cold_War_Tank";
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -1611,6 +1612,7 @@
 		icon="iconManMedic";
 		uniformClass="UK3CB_BAF_U_JumperUniform_Plain";
 		backpack="TWC_Backpack_Cold_Medic";
+		attendant = 1;
 		linkedItems[]=
 		{
 			"CUP_V_CDF_6B3_1_Green",

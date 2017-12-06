@@ -606,6 +606,7 @@
 		displayName="Medic";
 		icon="iconManMedic";
 		backpack="TWC_Backpack_Modern_Medic";
+		attendant = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Medic_D",
@@ -657,10 +658,6 @@
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell"
-		};
-		class EventHandlers: EventHandlers
-		{
-			init = "init = if(local (_this select 0))then{(_this select 0) setVariable [""ace_medical_medicClass"",1]};";
 		};
 	};
 	class Modern_British_Platoon_CSM: Modern_British_Squadleader

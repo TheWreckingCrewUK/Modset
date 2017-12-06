@@ -201,6 +201,7 @@
 		displayName="Medic";
 		uniformClass="fow_u_uk_bd40_01_private";
 		backpack="TWC_Backpack_WW2_Medic";
+		attendant = 1;
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Sten",

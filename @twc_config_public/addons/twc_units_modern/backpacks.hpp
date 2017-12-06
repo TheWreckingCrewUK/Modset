@@ -6,6 +6,7 @@
 	class UK3CB_BAF_B_Bergen_MTP_Medic_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_JTAC_L_A;
+	class UK3CB_BAF_B_Bergen_TAN_Rifleman_B;
 	class B_AssaultPack_blk;
 	
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
@@ -46,6 +47,45 @@
 			};
 		};
 	};
+	
+	class TWC_Backpack_Modern_quartermaster: UK3CB_BAF_B_Bergen_TAN_Rifleman_B
+	{
+		scope = 1;
+		mass = 59.84;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 2;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "SmokeShellRed";
+				count = 3;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "SmokeShellBlue";
+				count = 3;
+			};
+		};
+	};
+	
+	
 	class TWC_Backpack_Modern_Rifleman: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
 		scope = 1;
