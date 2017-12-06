@@ -1,0 +1,1 @@
+this folder is only here so that the idf radar can be fired to the redux and the legacy missions without needing multiple eventhandlers in the config

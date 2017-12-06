@@ -22,14 +22,14 @@ _num = 0;
 _total = ((count allplayers / 25)+1) * random[0.5,0.6,0.7] * (3 * ((_this select 0 distance getMarkerPos "respawn_west") / (800 * ((insp_enemymorale * -0.8) + 2))));
 _group = createGroup East;
 	for "_i" from 1 to _total do{
-		_unit = _group createUnit [(townSpawn select _num), _pos,[], 5,"NONE"];
+		_unit = _group createUnit [(townSpawn select (floor random (count townspawn))), _pos,[], 5,"NONE"];
 		_unit addEventHandler ["Killed",{
 			[(_this select 0)] call twc_fnc_deleteDead;
 			if (side (_this select 1) == WEST) then{
 				InsP_enemyMorale = InsP_enemyMorale + 0.06; publicVariable "InsP_enemyMorale";
 			};
 		}];
-		_unit addMagazines ["handGrenade",2];
+		_unit addMagazines ["handGrenade",floor random 2];
 		_unit setVariable ["unitsHome",_pos,false];
 		_num = _num + 1;
 		sleep 0.2;

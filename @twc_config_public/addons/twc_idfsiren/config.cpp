@@ -30,7 +30,7 @@ class staticweapon;
   class staticmortar: staticweapon {
 
 	class EventHandlers{
-   fired="[_this select 0, _this select 6] execVM ""server\sys_idf\IDF_Alarmfire.sqf""";
+   fired="[_this select 0, _this select 6] execVM ""insurgency_core\server\sys_idf\IDF_Alarmfire.sqf""";
 };
 
 	};

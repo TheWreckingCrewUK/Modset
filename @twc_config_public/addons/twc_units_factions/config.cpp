@@ -76,6 +76,34 @@ class CfgPatches
 			"IRA_Rifleman_AT",
 			"IRA_Autorifleman",
 			
+			"greek_Civ_Men_1",
+			"greek_Civ_Men_2",
+			"greek_Civ_Men_3",
+			"greek_Civ_Men_4",
+			"greek_Civ_Men_5",
+			"greek_Civ_Men_6",
+			"greek_Civ_Men_7",
+			"greek_Civ_Men_8",
+			"greek_Civ_Men_9",
+			"greek_Civ_Men_10",
+			"greek_Civ_Men_11",
+			"greek_Civ_Men_12",
+			"greek_Civ_Men_13",
+			"greek_Civ_Men_14",
+			
+			
+			"Tak_twc_ins_Men_B1",
+			"Tak_twc_ins_Men_B2",
+			"Tak_twc_ins_Men_R1",
+			"Tak_twc_ins_Men_RPG1",
+			"Tak_twc_ins_Men_R2",
+			"Tak_twc_ins_Men_AR1",
+			"Tak_twc_ins_Men_MG1",
+			"Tak_twc_ins_Men_R3",
+			"Tak_twc_ins_Men_a1",
+			"Tak_twc_ins_Men_a2",
+			"Tak_twc_ins_Men_sniper",
+			"Tak_twc_ins_Men_Scout",			
 			
 			"twc_greek_officer",
 			"twc_greek_rifleman",
@@ -84,7 +112,10 @@ class CfgPatches
 			"twc_greek_grenadier",
 			"twc_greek_ar",
 			"twc_greek_mg",
-			"twc_greek_aa"
+			"twc_greek_aa",
+			"twc_greek_heavy"
+			
+		
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -119,7 +150,11 @@ class CfgEditorSubCategories
 	};
 	class TWC_tak_Civ_Men
 	{
-		displayName = "Men (Takistan Militia)";
+		displayName = "Men (TWC)";
+	};
+		class TWC_greek_Civ_Men
+	{
+		displayName = "Men (Greek)";
 	};
 	class Men_Greek
 	{
@@ -159,7 +194,13 @@ class CfgFactionClasses
 	class TWC_Tak_Civ
 	{
 		displayName="Takistani Civilians";
-		priority=1;
+		priority=2;
+		side=3;
+	};
+		class TWC_greek_Civ
+	{
+		displayName="Civilians (Greek)";
+		priority=2;
 		side=3;
 	};
 	class greek_units
@@ -271,5 +312,6 @@ class CfgVehicles
 	#include "irish.hpp"
 	#include "takistan.hpp"
 	#include "greek.hpp"
+	#include "greek_civ.hpp"
 	#include "takistanins.hpp"
 };

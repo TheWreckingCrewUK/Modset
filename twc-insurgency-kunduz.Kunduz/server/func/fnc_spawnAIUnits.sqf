@@ -31,7 +31,7 @@ _total =
 _group = createGroup East;
 _spawnPos = [_pos,_groupradius,[_dir1,_dir2]] call SHK_pos;
 for "_i" from 1 to _total do{
-	_unit = _group createUnit [(townSpawn select _num), _spawnPos,[], 5,"NONE"];
+	_unit = _group createUnit [(townSpawn select (floor random (count townspawn))), _spawnPos,[], 5,"NONE"];
 	_unit addEventHandler ["Killed",{
 		[(_this select 0)] call twc_fnc_deleteDead;
 		if (side (_this select 1) == WEST) then{

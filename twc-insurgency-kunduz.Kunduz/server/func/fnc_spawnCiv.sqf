@@ -30,7 +30,7 @@ _civnum = random[3,4,5] * (2+(((_this select 0 distance getMarkerPos "respawn_we
 ;
 
 for "_i" from 1 to _civnum do {
-	_individualCiv = _group createUnit [civilianType, _pos, [], _civradius, "NONE"];
+	_individualCiv = _group createUnit [(civilianType select (floor random (count civilianType))), _pos, [], _civradius, "NONE"];
 	_civHeading = (random 360);
 	_individualCiv setFormDir _civHeading;
 	_individualCiv setDir _civHeading;
