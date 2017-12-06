@@ -117,7 +117,7 @@ class CfgPatches
 			
 		
 		};
-		weapons[]={};
+		weapons[]={"CUP_launch_RPG7V"};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
@@ -285,7 +285,7 @@ class CfgVehicles
 		{
 			class _xx_RPG7
 			{
-				magazine="CUP_OG7_M";
+				magazine="twc_og7_c_m";
 				count=4;
 			};
 		};
@@ -315,3 +315,4 @@ class CfgVehicles
 	#include "greek_civ.hpp"
 	#include "takistanins.hpp"
 };
+	#include "weapons.hpp"

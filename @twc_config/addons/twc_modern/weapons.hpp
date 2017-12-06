@@ -127,12 +127,12 @@ class cfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				slot = "CowsSlot";
-				item = "RKSL_optic_PMII_312_sunshade_wdl";
+				slot = "asdg_OpticRail_UK3CB_BAF_L115";
+				item = "RKSL_optic_PMII_525";
 			};
 			class LinkedItemsMuzzle
 			{
-				slot = "MuzzleSlot";
+				slot = "asdg_muzzleslot_UK3CB_BAF_L115";
 				item= "UK3CB_BAF_Silencer_L115A3";
 			};
 		};
