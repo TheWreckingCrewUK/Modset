@@ -125,6 +125,10 @@ class CfgEditorSubCategories
 	{
 		displayName="Men (Greek)";
 	};
+		class Men_tak_twc_ins
+	{
+		displayName="Men (TWC)";
+	};
 };
 class CfgFactionClasses
 {
@@ -164,12 +168,21 @@ class CfgFactionClasses
 		priority=2;
 		side=2;
 	};
+
+	class TWC_Tak_Ins
+	{
+		displayName="Takistani Militia (TWC)";
+		priority=2;
+		side=2;
+	};
+	
 };
 class EventHandlers;
 class CfgVehicles
 {
 	class CUP_B_AlicePack_Khaki;
 	class CUP_B_RPGPack_Khaki;
+	class rhs_sidor;
 	class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki
 	{
 		class TransportMagazines
@@ -224,6 +237,30 @@ class CfgVehicles
 			};
 		};
 	};
+	
+		class Backpack_AT_og7: CUP_B_RPGPack_Khaki
+	{
+		class TransportMagazines
+		{
+			class _xx_RPG7
+			{
+				magazine="CUP_OG7_M";
+				count=4;
+			};
+		};
+	};
+	
+			class Backpack_rpk: rhs_sidor
+	{
+		class TransportMagazines
+		{
+			class _xx_RPk
+			{
+				magazine="CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+				count=4;
+			};
+		};
+	};
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
@@ -234,4 +271,5 @@ class CfgVehicles
 	#include "irish.hpp"
 	#include "takistan.hpp"
 	#include "greek.hpp"
+	#include "takistanins.hpp"
 };
