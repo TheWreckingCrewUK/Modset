@@ -126,7 +126,13 @@ class CfgPatches
 			"A3_Characters_F_Common",
 			"A3_Characters_F",
 			"a3_characters_f_beta",
-			"a3_characters_f_gamma"
+			"a3_characters_f_gamma",
+			
+			"CUP_Weapons_WeaponsCore",
+			"CUP_Weapons_Ammunition",
+			"CUP_Weapons_Sounds",
+			"Extended_EventHandlers",
+			"cba_main"
 		};
 	};
 };
@@ -285,7 +291,7 @@ class CfgVehicles
 		{
 			class _xx_RPG7
 			{
-				magazine="twc_og7_c_m";
+				magazine="CUP_OG7_M";
 				count=4;
 			};
 		};

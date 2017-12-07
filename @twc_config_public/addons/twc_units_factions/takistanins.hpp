@@ -188,14 +188,14 @@
 		"Throw",
 		"Put",
 		"CUP_arifle_AKS",
-		"CUP_launch_RPG7V_twc"
+		"CUP_launch_RPG7V"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"CUP_arifle_AKS",
-		"CUP_launch_RPG7V_twc"
+		"CUP_launch_RPG7V"
 		};
 		magazines[]=
 		{
@@ -204,8 +204,8 @@
 		"CUP_30Rnd_762x39_AK47_M",
 		"CUP_30Rnd_762x39_AK47_M",
 		"CUP_30Rnd_762x39_AK47_M",
-		"twc_og7_c_m",
-		"twc_og7_c_m",
+		"CUP_OG7_M",
+		"CUP_OG7_M",
 		"handgrenade",
 		"SmokeShell"
 		};
