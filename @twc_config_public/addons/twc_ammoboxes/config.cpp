@@ -48,7 +48,7 @@ class CfgVehicles
 			class _xx_law
 			{
 				weapon = "rhs_weap_m72a7";
-				count = 1;
+				count = 2;
 			};
 		};
 		class transportMagazines
@@ -96,7 +96,7 @@ class CfgVehicles
 			class _xx_1rnd_he
 			{
 				magazine = "1Rnd_HE_Grenade_shell";
-				count = 3;
+				count = 10;
 			};
 			class _xx_1rnd_smoke
 			{
@@ -106,7 +106,7 @@ class CfgVehicles
 			class _xx_handgrenade
 			{
 				magazine = "CUP_HandGrenade_L109A2_HE";
-				count = 2;
+				count = 4;
 			};
 			class _xx_smokeshell
 			{
@@ -189,17 +189,17 @@ class CfgVehicles
 			class _xx_762_box
 			{
 				magazine = "rhsusf_100Rnd_762x51";
-				count = 2;
+				count = 5;
 			};
 			class _xx_762_boxTracer
 			{
 				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
-				count = 1;
+				count = 2;
 			};
 			class _xx_1rnd_he
 			{
 				magazine = "1Rnd_HE_Grenade_shell";
-				count = 3;
+				count = 10;
 			};
 			class _xx_1rnd_smoke
 			{
@@ -209,7 +209,7 @@ class CfgVehicles
 			class _xx_handgrenade
 			{
 				magazine = "CUP_HandGrenade_L109A2_HE";
-				count = 2;
+				count = 4;
 			};
 			class _xx_smokeshell
 			{
