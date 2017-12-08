@@ -789,7 +789,7 @@
 	{
 		_generalMacro="Modern_JetPilot";
 		scope=2;
-		displayName="Jet Pilotb(Modern)";
+		displayName="GB Jet Pilot(Modern)";
 		faction="twc_faction";
 		editorSubcategory = "Men_Modern";
 		vehicleClass="Men_Modern";
