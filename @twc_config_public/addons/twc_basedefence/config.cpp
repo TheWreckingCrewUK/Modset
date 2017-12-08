@@ -11,18 +11,19 @@ class CfgPatches
 	};
 };
 
+
+
 class CfgFunctions 
 {
 	class TWC
 	{
-		class siren_Functions
+		class idf_Functions
 		{
-			file = "\twc_idfsiren\functions";
+			file = "\twc_basedefence\functions";
 			class init{postInit = 1;};
 		};
 	};
 };
-
 
 class CfgVehicles {
 
@@ -30,7 +31,7 @@ class staticweapon;
   class staticmortar: staticweapon {
 
 	class EventHandlers{
-   fired="[_this select 0, _this select 6] execVM ""insurgency_core\server\sys_idf\IDF_Alarmfire.sqf""";
+   fired="[_this select 0, _this select 6] execVM ""insurgency_core\server\sys_basedefence\IDF_Alarmfire.sqf""";
 };
 
 	};
@@ -41,14 +42,14 @@ class CfgSounds
 	class TWC_sound_idfsiren
 	{
 		name = "";
-		sound[] = {"\sounds\idfalarm.ogg", 2, 1};
+		sound[] = {"\sounds\idfalarm.wav", 2, 1};
 		titles[] = {};
 	};
 	
 	class TWC_sound_idfclear
 	{
 		name = "";
-		sound[] = {"\sounds\idfclear.ogg", 2, 1};
+		sound[] = {"\sounds\idfclear.wav", 2, 1};
 		titles[] = {};
 	};
 };
