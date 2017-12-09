@@ -312,6 +312,15 @@ class CfgVehicles
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 	
+	class CUP_2b14_82mm_Base;
+	class CUP_O_2b14_82mm_TK_INS: CUP_2b14_82mm_Base
+{
+accuracy=0.01;
+
+
+};
+
+	
 	#include "russianfederation.hpp"
 	//#include "iraq.hpp"
 	#include "african.hpp"

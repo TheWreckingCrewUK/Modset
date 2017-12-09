@@ -41,14 +41,14 @@ class CfgSounds
 {
 	class TWC_sound_idfsiren
 	{
-		name = "";
+		name = "TWC_sound_idfsiren";
 		sound[] = {"\sounds\idfalarm.wav", 2, 1};
 		titles[] = {};
 	};
 	
 	class TWC_sound_idfclear
 	{
-		name = "";
+		name = "TWC_sound_idfclear";
 		sound[] = {"\sounds\idfclear.wav", 2, 1};
 		titles[] = {};
 	};
