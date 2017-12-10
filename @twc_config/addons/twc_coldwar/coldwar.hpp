@@ -184,18 +184,12 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
 			"ukcw_l14a1_HEAT",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
@@ -263,7 +257,6 @@
 			"UK3CB_BAF_762_100Rnd",	
 			"UK3CB_BAF_762_100Rnd",
 			"UK3CB_BAF_762_100Rnd_T",
-			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -271,7 +264,6 @@
 			"UK3CB_BAF_762_100Rnd",	
 			"UK3CB_BAF_762_100Rnd",
 			"UK3CB_BAF_762_100Rnd",
-			"SmokeShell",
 			"SmokeShell"
 		};		
 	};
@@ -309,8 +301,7 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_MapTools",
-			"ACE_Flashlight_MX991"
+			"ACE_MapTools"
 		};
 		respawnLinkedItems[]=
 		{
@@ -320,8 +311,7 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_MapTools",
-			"ACE_Flashlight_MX991"
+			"ACE_MapTools"
 		};
 		weapons[]=
 		{
@@ -348,7 +338,16 @@
 			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE"
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellRed",
+			"SmokeShellBlue",
+			"SmokeShellBlue"
 		};
 		Respawnmagazines[]=
 		{
@@ -361,12 +360,72 @@
 			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE"
-		};	
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellRed",
+			"SmokeShellBlue",
+			"SmokeShellBlue"
+		};
+		Items[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
+		respawntems[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
 	};
 	class ColdWar_Platoon_Commander: ColdWar_Section_Leader
 	{
 		displayName="Platoon Commander";
+		backpack = "TWC_Backpack_Cold_War_Platoon_Commander";
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -390,26 +449,14 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE"
+			"ukcw_34_rnd_sterling_mag"
 		};
 		Respawnmagazines[]=
 		{
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE"
+			"ukcw_34_rnd_sterling_mag"
 		};
 	};
 	class ColdWar_Sergeant: ColdWar_Platoon_Commander
@@ -569,30 +616,13 @@
 			"SmokeShell"
 		};
 	};
-	class ColdWar_AA_Gunner: ColdWar_AT
+	class ColdWar_AA_Gunner: ColdWar_Base
 	{
 		displayName="AA Gunner";
 		faction="TWC_ColdWar";
 		editorSubcategory = "Men_ColdWar_Dismounted";
 		vehicleClass="Men_ColdWar_Dismounted";
 		icon="iconManExplosive";
-		backpack="TWC_Backpack_Cold_War_AA";
-		linkedItems[]=
-		{
-			"ukcw_1958_webbing",
-			"ukcw_helmet_mk3",
-			"ItemCompass",
-			"itemMap",
-			"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-			"ukcw_1958_webbing",
-			"ukcw_helmet_mk3",
-			"ItemCompass",
-			"itemMap",
-			"ItemWatch"
-		};
 		weapons[]=
 		{
 			"Throw",
@@ -606,11 +636,30 @@
 			"Put",	
 			"ukcw_sterling_sub",
 			"ukcw_blowpipe"
-		};	
+		};
+		magazines[]=
+		{
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"SmokeShell",
+			"ukcw_blowpipe_missile"
+		};
+		Respawnmagazines[]=
+		{
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"SmokeShell",
+			"ukcw_blowpipe_missile"
+		};
 	};
 	class ColdWar_AA_Assistant: ColdWar_AA_Gunner
 	{
 		displayName="AA Assistant";
+		backpack = "TWC_Backpack_Cold_War_AA";
 		weapons[]=
 		{
 			"Throw",
@@ -622,6 +671,22 @@
 			"Throw",
 			"Put",	
 			"ukcw_sterling_sub"
+		};
+		magazines[]=
+		{
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
+			"SmokeShell"
 		};
 	};
 	class ColdWar_MilanGunner: ColdWar_AT

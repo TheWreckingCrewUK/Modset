@@ -48,7 +48,7 @@ class CfgPatches
 			"1990_British_Tank_Commander_Desert",
 			"1990_British_Tank_Crew_Desert",
 			
-			
+/*			
 			"2000_British_Base",
 			"2000_British_SectionCommander",
 			"2000_British_Rifleman",
@@ -99,6 +99,7 @@ class CfgPatches
 			"2000_British_Vehicle_Crew_Desert",
 			"2000_British_Tank_Commander_Desert",
 			"2000_British_Tank_Crew_Desert"
+*/
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -132,6 +133,7 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (90's Woodland Mounted)";
 	};
+/*
 	class Men_2000_Arctic_Dismounted
 	{
 		displayName = "Men (00's Arctic Dismounted)";
@@ -152,6 +154,7 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (00's Woodland Mounted)";
 	};
+*/
 };
 
 #include "compositions.hpp"
