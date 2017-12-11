@@ -6,6 +6,7 @@
 	class UK3CB_BAF_B_Bergen_MTP_Medic_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_JTAC_L_A;
+	class UK3CB_BAF_B_Bergen_TAN_Rifleman_B;
 	class B_AssaultPack_blk;
 	
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
@@ -46,6 +47,45 @@
 			};
 		};
 	};
+	
+	class TWC_Backpack_Modern_quartermaster: UK3CB_BAF_B_Bergen_TAN_Rifleman_B
+	{
+		scope = 1;
+		mass = 59.84;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 2;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "SmokeShellRed";
+				count = 3;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "SmokeShellBlue";
+				count = 3;
+			};
+		};
+	};
+	
+	
 	class TWC_Backpack_Modern_Rifleman: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
 		scope = 1;
@@ -432,11 +472,7 @@
 		scope = 1;
 		class TransportItems
 		{
-			class _xx_Spotting
-			{
-				name = "ACE_SpottingScope";
-				count = 1;
-			};
+
 		};
 		class TransportMagazines
 		{
@@ -577,5 +613,56 @@
 				magazine = "UK3CB_BAF_12G_Pellets";
 				count = 2;
 			};		
+		};
+	};
+	
+		class TWC_Backpack_Modern_Spotter_coin: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
+	{
+		scope = 1;
+				class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+						class _xx_tripod
+			{
+				name = "ACE_Tripod";
+				count = 1;
+			};
+						class _xx_Spotting
+			{
+				name = "ACE_SpottingScope";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_338
+			{
+				magazine = "UK3CB_BAF_338_5Rnd";
+				count = 6;
+			};
+			class _xx_762
+			{
+				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
+				count = 4;
+			};
+			class _xx_762_t
+			{
+				magazine = "UK3CB_BAF_762_L42A1_20Rnd_T";
+				count = 3;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 1;
+			};
+			class _xx_Grenade
+			{
+				magazine = "CUP_HandGrenade_L109A2_HE";
+				count = 1;
+			};
 		};
 	};

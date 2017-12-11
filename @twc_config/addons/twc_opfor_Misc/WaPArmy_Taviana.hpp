@@ -315,7 +315,7 @@ class TWC_WaPArmy_Taviana_Sniper: TWC_WaPArmy_Taviana_Rifleman
 class TWC_WaPArmy_Taviana_AAGunner: TWC_WaPArmy_Taviana_Base
 {
 	displayName="Anti-Air Gunner";
-	backpack="WaPAT_Backpack_AA";
+	//backpack="WaPAT_Backpack_AA";
 	weapons[]=
 	{
 		"Throw",
@@ -356,7 +356,7 @@ class TWC_WaPArmy_Taviana_AAGunner: TWC_WaPArmy_Taviana_Base
 class TWC_WaPArmy_Taviana_AAAssistant: TWC_WaPArmy_Taviana_Base
 {
 	displayName="Anti-Air Assistant";
-	backpack="WaPAT_Backpack_AA";
+	//backpack="WaPAT_Backpack_AA";
 };
 class TWC_WaPArmy_Taviana_ATGunner: TWC_WaPArmy_Taviana_Base
 {

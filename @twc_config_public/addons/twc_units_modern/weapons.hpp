@@ -3,10 +3,11 @@ class cfgWeapons
 //////////////////////////////  Modern  //////////////////////////////
 	class UK3CB_BAF_L85A2_RIS;
 	class UK3CB_BAF_L110A2RIS;
-	class UK3CB_BAF_L129A1_Grippod;
+	class UK3CB_BAF_L129A1;
 	class UK3CB_BAF_L128A1;
 	class UK3CB_BAF_L85A2_UGL;
 	class UK3CB_BAF_L7A2;
+	class UK3CB_BAF_L115A3;
 	
 	
 	class UK3CB_BAF_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS
@@ -45,7 +46,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class UK3CB_BAF_L129A1_Grippod_TA648: UK3CB_BAF_L129A1_Grippod
+	class UK3CB_BAF_L129A1_Grippod_TA648: UK3CB_BAF_L129A1
 	{
 		scope = 1;
 		author="FakeMatty";
@@ -105,8 +106,8 @@ class cfgWeapons
 		};
 	};
 //////////////////////////////  Others  //////////////////////////////	
-	class UK3CB_BAF_L115A3_Ghillie;
-	class twc_l129a1_spotter: UK3CB_BAF_L129A1_Grippod
+
+	class twc_l129a1_spotter: UK3CB_BAF_L129A1
 	{
 		scope = 1;
 		author="FakeMatty";
@@ -115,16 +116,21 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L129A1";
-				item="RKSL_optic_PMII_312_sunshade";
+				item="UK3CB_BAF_TA648_308";
 			};
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_UK3CB_BAF_L129A1";
 				item="UK3CB_BAF_LLM_Flashlight_Black";
 			};
+			class LinkedItemsBipod
+			{
+				slot="UK3CB_underbarrel_rifle_slot";
+				item="UK3CB_underbarrel_acc_fgrip_bipod";
+			};
 		};
 	};
-	class twc_l115a3_wd: UK3CB_BAF_L115A3_Ghillie
+	class twc_l115a3_wd: UK3CB_BAF_L115A3
 	{
 		scope = 1;
 		author = "jayman";
@@ -132,13 +138,8 @@ class cfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				slot = "CowsSlot";
-				item = "RKSL_optic_PMII_312_sunshade_wdl";
-			};
-			class LinkedItemsMuzzle
-			{
-				slot = "MuzzleSlot";
-				item= "UK3CB_BAF_Silencer_L115A3";
+				slot = "asdg_OpticRail_UK3CB_BAF_L115";
+				item = "RKSL_optic_PMII_525";
 			};
 		};
 	};

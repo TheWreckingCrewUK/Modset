@@ -76,6 +76,34 @@ class CfgPatches
 			"IRA_Rifleman_AT",
 			"IRA_Autorifleman",
 			
+			"greek_Civ_Men_1",
+			"greek_Civ_Men_2",
+			"greek_Civ_Men_3",
+			"greek_Civ_Men_4",
+			"greek_Civ_Men_5",
+			"greek_Civ_Men_6",
+			"greek_Civ_Men_7",
+			"greek_Civ_Men_8",
+			"greek_Civ_Men_9",
+			"greek_Civ_Men_10",
+			"greek_Civ_Men_11",
+			"greek_Civ_Men_12",
+			"greek_Civ_Men_13",
+			"greek_Civ_Men_14",
+			
+			
+			"Tak_twc_ins_Men_B1",
+			"Tak_twc_ins_Men_B2",
+			"Tak_twc_ins_Men_R1",
+			"Tak_twc_ins_Men_RPG1",
+			"Tak_twc_ins_Men_R2",
+			"Tak_twc_ins_Men_AR1",
+			"Tak_twc_ins_Men_MG1",
+			"Tak_twc_ins_Men_R3",
+			"Tak_twc_ins_Men_a1",
+			"Tak_twc_ins_Men_a2",
+			"Tak_twc_ins_Men_sniper",
+			"Tak_twc_ins_Men_Scout",			
 			
 			"twc_greek_officer",
 			"twc_greek_rifleman",
@@ -84,9 +112,12 @@ class CfgPatches
 			"twc_greek_grenadier",
 			"twc_greek_ar",
 			"twc_greek_mg",
-			"twc_greek_aa"
+			"twc_greek_aa",
+			"twc_greek_heavy"
+			
+		
 		};
-		weapons[]={};
+		weapons[]={"CUP_launch_RPG7V"};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
@@ -95,7 +126,13 @@ class CfgPatches
 			"A3_Characters_F_Common",
 			"A3_Characters_F",
 			"a3_characters_f_beta",
-			"a3_characters_f_gamma"
+			"a3_characters_f_gamma",
+			
+			"CUP_Weapons_WeaponsCore",
+			"CUP_Weapons_Ammunition",
+			"CUP_Weapons_Sounds",
+			"Extended_EventHandlers",
+			"cba_main"
 		};
 	};
 };
@@ -119,11 +156,19 @@ class CfgEditorSubCategories
 	};
 	class TWC_tak_Civ_Men
 	{
-		displayName = "Men (Takistan Militia)";
+		displayName = "Men (TWC)";
+	};
+		class TWC_greek_Civ_Men
+	{
+		displayName = "Men (Greek)";
 	};
 	class Men_Greek
 	{
 		displayName="Men (Greek)";
+	};
+		class Men_tak_twc_ins
+	{
+		displayName="Men (TWC)";
 	};
 };
 class CfgFactionClasses
@@ -155,7 +200,13 @@ class CfgFactionClasses
 	class TWC_Tak_Civ
 	{
 		displayName="Takistani Civilians";
-		priority=1;
+		priority=2;
+		side=3;
+	};
+		class TWC_greek_Civ
+	{
+		displayName="Civilians (Greek)";
+		priority=2;
 		side=3;
 	};
 	class greek_units
@@ -164,12 +215,21 @@ class CfgFactionClasses
 		priority=2;
 		side=2;
 	};
+
+	class TWC_Tak_Ins
+	{
+		displayName="Takistani Militia (TWC)";
+		priority=2;
+		side=2;
+	};
+	
 };
 class EventHandlers;
 class CfgVehicles
 {
 	class CUP_B_AlicePack_Khaki;
 	class CUP_B_RPGPack_Khaki;
+	class rhs_sidor;
 	class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki
 	{
 		class TransportMagazines
@@ -224,9 +284,42 @@ class CfgVehicles
 			};
 		};
 	};
+	
+		class Backpack_AT_og7: CUP_B_RPGPack_Khaki
+	{
+		class TransportMagazines
+		{
+			class _xx_RPG7
+			{
+				magazine="CUP_OG7_M";
+				count=4;
+			};
+		};
+	};
+	
+			class Backpack_rpk: rhs_sidor
+	{
+		class TransportMagazines
+		{
+			class _xx_RPk
+			{
+				magazine="CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+				count=4;
+			};
+		};
+	};
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
+	
+	class CUP_2b14_82mm_Base;
+	class CUP_O_2b14_82mm_TK_INS: CUP_2b14_82mm_Base
+{
+accuracy=0.01;
+
+
+};
+
 	
 	#include "russianfederation.hpp"
 	//#include "iraq.hpp"
@@ -234,4 +327,7 @@ class CfgVehicles
 	#include "irish.hpp"
 	#include "takistan.hpp"
 	#include "greek.hpp"
+	#include "greek_civ.hpp"
+	#include "takistanins.hpp"
 };
+	#include "weapons.hpp"
