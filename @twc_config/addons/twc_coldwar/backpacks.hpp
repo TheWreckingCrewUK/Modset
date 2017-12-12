@@ -3,6 +3,7 @@
 	
 	class TWC_Backpack_Cold_War_Tank: B_AssaultPack_blk {
 		scope = 1;
+
 		class TransportItems {
 			class _xx_PRC_77 {
 				name = "ACRE_PRC77";
@@ -11,37 +12,32 @@
 		};
 	};
 	
-	class TWC_Backpack_Cold_War_Rifleman: CUP_B_AlicePack_Khaki
-	{
+	class TWC_Backpack_Cold_War_Rifleman: CUP_B_AlicePack_Khaki {
 		scope = 1;
-		class TransportMagazines
-		{
+		class TransportMagazines {
 			maga_nc(UK3CB_BAF_762_20Rnd,8);
 			maga_nc(UK3CB_BAF_762_100Rnd_T,1);
 		};
 	};
-	class TWC_Backpack_Cold_War_2IC: CUP_B_AlicePack_Khaki
-	{
+
+	class TWC_Backpack_Cold_War_2IC: CUP_B_AlicePack_Khaki {
 		scope = 1;
-		class TransportMagazines
-		{
-			class TransportMagazines
-		{
+		class TransportMagazines {
 			maga_nc(UK3CB_BAF_762_20Rnd,5);
 			maga_nc(SmokeShell,3);
 			maga_nc(UK3CB_BAF_762_100Rnd_T,1);
 		};
 	};
-	class TWC_Backpack_Cold_War_2IC_Dismounted: CUP_B_AlicePack_Khaki
-	{
+
+	class TWC_Backpack_Cold_War_2IC_Dismounted: CUP_B_AlicePack_Khaki {
 		scope = 1;
-		class TransportMagazines
-		{
+		class TransportMagazines {
 			maga_nc(UK3CB_BAF_762_20Rnd,15);
 			maga_nc(SmokeShell,3);
 			maga_nc(UK3CB_BAF_762_100Rnd_T,1);
 		};
 	};
+
 	class TWC_Backpack_Cold_War_2IC_Dismounted_Troubles: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
