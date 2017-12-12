@@ -4,7 +4,8 @@
 		author="Saxon";
 		scope=1;
 		displayName="Takistani Civilian Base";
-		faction="TWC_Tak_Civ";
+		faction="CUP_C_TK";
+		editorSubcategory = "TWC_tak_Civ_Men";
 		vehicleClass="TWC_Tak_Civ_Men";
 		nakedUniform="U_BasicBody";
 		uniformClass="CUP_O_TKI_Khet_Partug_05";

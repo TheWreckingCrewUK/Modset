@@ -21,7 +21,7 @@ class cfgVehicles {
 			class Player;
 		};
 	};
-	
+
 	class twc_ModuleMission: Module_F {
 		author="[TWC] jayman";
 		scope=2;
@@ -699,7 +699,7 @@ class cfgVehicles {
 		displayName = "Disable Caching on Units";
 		function = "twc_fnc_moduleDisableCaching";
 		scope = 2;
-		isGlobal = 0;
+		isGlobal = 1;
 		isTriggerActivated = 0;
 		icon = "\twc_framework\ui\disable_caching_ca.paa";
 		functionPriority = 1;
@@ -708,6 +708,19 @@ class cfgVehicles {
 			description = "Disable Cache On Unit(s)";
 			sync[] = {"AnyAI", "AnyVehicle"};
 		};
+	};
+
+	class TWC_Module_GrabComposition: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_missionSetup";
+		displayName = "Log Composition to RPT file";
+		function = "twc_fnc_moduleGrabComposition";
+		scope = 2;
+		scopeCurator = 0;
+		isGlobal = 1;
+		isTriggerActivated = 0;
+		is3DEN = 1;
+		functionPriority = 1;
 	};
 
 	/* class TWC_Module_ArtillerySpotter: Module_F {

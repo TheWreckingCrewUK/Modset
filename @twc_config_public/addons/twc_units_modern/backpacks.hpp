@@ -7,8 +7,8 @@
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_JTAC_L_A;
 	class UK3CB_BAF_B_Bergen_TAN_Rifleman_B;
+	class UK3CB_BAF_B_Bergen_MTP_Radio_L_A;
 	class B_AssaultPack_blk;
-	
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
 	
 	class TWC_Backpack_Modern_Sectionlead: UK3CB_BAF_B_Bergen_MTP_SL_L_A
@@ -542,6 +542,18 @@
 			class _xx_PRC_117F
 			{
 				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_Modern_FSTForwardObserver: UK3CB_BAF_B_Bergen_MTP_Radio_L_A
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_SpottingScope
+			{
+				name = "ACE_SpottingScope";
 				count = 1;
 			};
 		};

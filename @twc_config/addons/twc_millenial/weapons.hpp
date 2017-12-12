@@ -110,7 +110,7 @@ class cfgWeapons
 		displayName = "ILAW (HEDP)";
 		author="Saxon";
 	};
-	
+
 	class UK3CB_BAF_U_Smock_DPMT;
 	class UK3CB_BAF_U_Smock_DDPM;
 	class UK3CB_BAF_U_Smock_Arctic;

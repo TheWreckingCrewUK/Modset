@@ -138,10 +138,9 @@ class cfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				slot = "cowsslot";
+				slot = "asdg_OpticRail_UK3CB_BAF_L115";
 				item = "RKSL_optic_PMII_525";
 			};
-
 		};
 	};
 };

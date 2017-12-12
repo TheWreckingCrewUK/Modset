@@ -66,6 +66,11 @@ class CfgEditorSubCategories
 #include "compositions.hpp"
 class CfgVehicles
 {
+	// Time saving MACROs - NC = Non-Conflict
+	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
+	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
+	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
+	
 	class B_Soldier_base_F;
 	
 	#include "coldwar.hpp"

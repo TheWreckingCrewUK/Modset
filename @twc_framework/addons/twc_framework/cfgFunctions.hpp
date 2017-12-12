@@ -32,6 +32,7 @@ class CfgFunctions
 			class UpdateTask{};
 			class virtualMortar{};
 			class toggleSpectator {};
+			class grabComposition {};
 			
 			class init{};
 		};
@@ -62,6 +63,7 @@ class CfgFunctions
 			class moduleIntelHint{};
 			class moduleDaisyCutter{};
 			class moduleDisableCaching {};
+			class moduleGrabComposition {};
 		};
 		class cache
 		{
