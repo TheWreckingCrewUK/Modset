@@ -1,1 +1,0 @@
-CBA_fnc_addWaypoint = compile preprocessfilelinenumbers "server\cba\fnc_addWaypoint.sqf";
