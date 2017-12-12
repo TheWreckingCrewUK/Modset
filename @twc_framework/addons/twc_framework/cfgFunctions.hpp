@@ -46,6 +46,7 @@ class CfgFunctions
 			class deadBodies{};
 			class disconectGear{};
 			class missionModuleInit{};
+			class moduleDebug{};
 			class nightGear{};
 			class run{};
 			class safeZone{};

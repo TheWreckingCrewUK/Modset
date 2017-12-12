@@ -209,6 +209,27 @@ class cfgVehicles {
 		};
 	};
 
+	class twc_moduleDebug: Module_F {
+		author = "[TWC] Bosenator";
+		scope = 2;
+		displayName = "Debug Mode";
+		category = "twc_missionSetup";
+		function = "twc_fnc_moduleDebug";
+		functionPriority = 1;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+
+		class Arguments {
+			class enabled {
+				displayName = "Enabled";
+				description = "Enable debug mode";
+				typeName = "BOOL";
+				defaultValue = 0;
+			};
+		};
+	};
+
 	class twc_moduleHealPlayer: Module_F {
 		author="[TWC] jayman";
 		category="twc_zeus";
