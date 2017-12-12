@@ -29,7 +29,10 @@ class CfgPatches
 			"Modern_British_Spotter",
 			"Modern_British_FAC",
 			"Modern_British_VehicleCrew",
-			"Modern_British_VehicleCommander"
+			"Modern_British_VehicleCommander",
+			"Modern_British_FSTCommander",
+			"Modern_British_FSTForwardObserver",
+			"Modern_British_FSTAssistant"
 			
 		};
 		weapons[]={};
