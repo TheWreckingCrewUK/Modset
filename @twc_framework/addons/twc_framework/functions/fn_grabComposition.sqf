@@ -67,7 +67,7 @@ _currentObjectNumber = 0;
 _outputText = "
 class NEW_COMPOSITION_NAME
 {
-	name=""Zeus Display Name"";
+	name=""Display Name"";
 ";
 
 {
