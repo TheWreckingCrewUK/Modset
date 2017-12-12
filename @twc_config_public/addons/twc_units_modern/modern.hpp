@@ -1669,7 +1669,7 @@
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
-	}
+	};
 	
 	class Modern_British_FSTForwardObserver: Modern_British_Base
 	{
