@@ -1,1 +1,0 @@
-TWC_fnc_GlobalChat = compile preprocessfilelinenumbers "server\globalChat\fnc_GlobalChat.sqf";

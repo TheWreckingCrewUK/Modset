@@ -20,6 +20,7 @@ class CfgFunctions {
 			class addTime {};
 			class init { postInit = 1; };
 			class getBloodLoss {};
+			class extendedVitalLoop {};
 
 			// CPR
 			class action {};

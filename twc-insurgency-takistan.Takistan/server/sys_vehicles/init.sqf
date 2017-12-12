@@ -1,1 +1,0 @@
-[(sqrt 2 *(worldSize / 2)), 40] execVM "server\sys_vehicles\vehicleSetupRoads.sqf";
