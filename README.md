@@ -1,5 +1,5 @@
 # The Wrecking Crew
-This repo contains our various public sever missions, our unit configs (loadouts), and our frame work. Currently those latter two are operations only, but effort is being made to bring them to public as well.
+This repo contains our various unit configs (loadouts), and our frame work for public, operations and training.
 
 You can find our group at: http://thewreckingcrew.eu - join us on TS, if you have any questions!
 
