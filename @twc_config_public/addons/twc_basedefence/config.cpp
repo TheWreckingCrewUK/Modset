@@ -41,13 +41,13 @@ class CfgSounds {
 	class TWC_sound_idfsiren {
 		name = "TWC_sound_idfsiren";
 		// filename, volume, pitch, distance
-		sound[] = {"\twc_basedefence\sounds\idfalarm.ogg", 2, 1, 500};
-		titles[] = {0, "IDF SIREN"};
+		sound[] = {"\twc_basedefence\sounds\idfalarm.wav", db+30, 1, 500};
+		titles[] = {0, ""};
 	};
 	
 	class TWC_sound_idfclear {
 		name = "TWC_sound_idfclear";
-		sound[] = {"\twc_basedefence\sounds\idfclear.ogg", 2, 1, 500};
-		titles[] = {0, "IDF CLEAR"};
+		sound[] = {"\twc_basedefence\sounds\idfclear.wav", db+30, 1, 500};
+		titles[] = {0, ""};
 	};
 };
