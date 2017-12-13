@@ -5,7 +5,7 @@ language: python
 python:
 - '3.4'
 before_script:
-- pip3 install sqflint
+- pip3 install git+https://github.com/TheWreckingCrewUK/sqf.git
 script:
 - python3 tools/sqf_validator.py
 - python3 tools/sqf_linter.py
