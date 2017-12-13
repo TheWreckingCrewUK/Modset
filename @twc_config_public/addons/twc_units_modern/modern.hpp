@@ -1528,8 +1528,6 @@
 			"ItemcTab",
 			"ItemCompass",
 			"ACE_Vector",
-			"ACE_Kestrel4500",
-			"ACE_ATragMX",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -1540,14 +1538,23 @@
 			"ItemcTab",
 			"ItemCompass",
 			"ACE_Vector",
-			"ACE_Kestrel4500",
-			"ACE_ATragMX",
 			"ItemWatch"
+		};
+				Items[]=
+		{
+			"ACE_Kestrel4500",
+			"ACE_ATragMX"
+		};
+		respawnItems[]=
+		{
+			"ACE_Kestrel4500",
+			"ACE_ATragMX"
 		};
 		weapons[]=
 		{
 			"Throw",
 			"Put",
+			"ACE_Vector",
 			"twc_l129a1_spotter",
 			"rhsusf_weap_glock17g4"
 		};
@@ -1555,6 +1562,7 @@
 		{
 			"Throw",
 			"Put",
+			"ACE_Vector",
 			"twc_l129a1_spotter",
 			"rhsusf_weap_glock17g4"
 		};
