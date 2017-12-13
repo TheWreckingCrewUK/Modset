@@ -25,7 +25,7 @@ if (hasInterface) then {
 		if (_debugMode) then {
 			player globalChat "Explosion event fired";
 		};
-	};
+	}];
 };
 
 _TWC_VaporizedUnitCompat = {
