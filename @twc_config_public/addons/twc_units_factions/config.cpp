@@ -113,7 +113,12 @@ class CfgPatches
 			"twc_greek_ar",
 			"twc_greek_mg",
 			"twc_greek_aa",
-			"twc_greek_heavy"
+			"twc_greek_heavy",
+			"twc_greek_sniper",
+			"twc_greek_smg",
+			"twc_greek_at2",
+			"twc_greek_farmer",
+			"twc_greek_rifleman_fal"
 			
 		
 		};
