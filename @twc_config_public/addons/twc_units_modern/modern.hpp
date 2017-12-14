@@ -1381,6 +1381,7 @@
 			"B_IR_Grenade"
 		};
 	};
+
 	class Modern_British_Marksman_COIN: Modern_British_Marksman
 	{
 		displayName="Alpha Marksman";
@@ -1401,7 +1402,7 @@
 			"ACE_Vector",
 			"UK3CB_BAF_L129A1_Grippod_TA648",
 			"rhs_weap_m72a7",
-			"rhsusf_weap_glock17g4"	
+			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
 		{
@@ -1440,8 +1441,8 @@
 			"SmokeShell"
 		};
 	};
-		class Modern_British_Sniper_coin: Modern_British_Base
-	{
+
+	class Modern_British_Sniper_coin: Modern_British_Base {
 		scope=2;
 		displayName="Sniper (COIN)";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
@@ -1452,7 +1453,7 @@
 			"UK3CB_BAF_V_Osprey_Marksman_A",
 			"UK3CB_BAF_H_Mk7_Scrim_D",
 			"ItemMap",
-			"ItemCompass",	
+			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -1460,7 +1461,7 @@
 			"UK3CB_BAF_V_Osprey_Marksman_A",
 			"UK3CB_BAF_H_Mk7_Scrim_D",
 			"ItemMap",
-			"ItemCompass",		
+			"ItemCompass",
 			"ItemWatch"
 		};
 		weapons[]=
@@ -1513,8 +1514,7 @@
 		};
 	};
 
-		class Modern_British_Spotter_coin: Modern_British_Base
-	{
+	class Modern_British_Spotter_coin: Modern_British_Base {
 		scope=2;
 		displayName="Spotter (COIN)";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
@@ -1540,7 +1540,7 @@
 			"ACE_Vector",
 			"ItemWatch"
 		};
-				Items[]=
+		Items[]=
 		{
 			"ACE_Kestrel4500",
 			"ACE_ATragMX"
@@ -1602,8 +1602,7 @@
 		};
 	};
 	
-	class Modern_British_FSTCommander: Modern_British_Base
-	{
+	class Modern_British_FSTCommander: Modern_British_Base {
 		scope=2;
 		displayName="FST Commander@Fire Support Team";
 		icon="iconManLeader";
@@ -1678,9 +1677,8 @@
 			"B_IR_Grenade"
 		};
 	};
-	
-	class Modern_British_FSTForwardObserver: Modern_British_Base
-	{
+
+	class Modern_British_FSTForwardObserver: Modern_British_Base {
 		scope=2;
 		displayName="FST Forward Observer";
 		icon="iconManExplosive";
@@ -1693,7 +1691,7 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACRE_PRC152";
+			"ACRE_PRC152"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1702,7 +1700,7 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACRE_PRC152";
+			"ACRE_PRC152"
 		};
 		weapons[]=
 		{
@@ -1750,14 +1748,15 @@
 			"Laserbatteries",
 			"SmokeShell"
 		};
-	};	
-	class Modern_British_FSTAssistant: Modern_British_Base
-	{
+	};
+
+	class Modern_British_FSTAssistant: Modern_British_Base {
 		scope=2;
 		displayName="FST Assistant";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 		backpack="UK3CB_BAF_B_Carryall_MTP";
-			linkedItems[]=
+		
+		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Lite",
 			"UK3CB_BAF_H_Mk7_Net_D",
@@ -1776,7 +1775,7 @@
 		weapons[]=
 		{
 			"Throw",
-			"Put",	
+			"Put",
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
 			"rhsusf_weap_glock17g4"
 		};

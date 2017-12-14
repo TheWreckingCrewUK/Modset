@@ -19,49 +19,41 @@
 		};
 		
 	};
-	class Tak_twc_ins_Men_B1: Tak_twc_ins_Men_Base
-	{
+
+	class Tak_twc_ins_Men_B1: Tak_twc_ins_Men_Base {
 		scope=2;
 		displayName="Bomber 1";
 		uniformClass="CUP_O_TKI_Khet_Jeans_04";
-		linkedItems[]=
-		{
-			"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-			"ItemWatch"
-		};
-				weapons[]=
-		{
-		"Throw",
-		"Put",
-		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put",
-		};
-		magazines[]=
-		{
 
+		linkedItems[]= {
+			"ItemWatch"
+		};
+		
+		respawnLinkedItems[]= {
+			"ItemWatch"
+		};
+		
+		weapons[]= {
+			"Throw",
+			"Put"
+		};
+		respawnweapons[]= {
+			"Throw",
+			"Put"
+		};
+
+		magazines[]= {
 			"CUP_handgrenade_RGD5",
 			"handgrenade"
 		};
-		Respawnmagazines[]=
-		{
 
+		Respawnmagazines[]= {
 			"CUP_handgrenade_RGD5",
 			"handgrenade"
 		};
-		Items[]=
-		{
-
-		};
-		respawntems[]=
-		{
-
-		};
+		
+		Items[]= { };
+		respawntems[]= { };
 	};
 	
 	class Tak_twc_ins_Men_B2: Tak_twc_ins_Men_Base
@@ -80,12 +72,12 @@
 				weapons[]=
 		{
 		"Throw",
-		"Put",
+		"Put"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
-		"Put",
+		"Put"
 		};
 		magazines[]=
 		{
