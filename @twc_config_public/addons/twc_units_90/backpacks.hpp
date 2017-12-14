@@ -51,7 +51,12 @@
             class _xx_Stanag
 			{
 				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 8;
+				count = 12;
+			};
+			            class _xx_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_30Rnd_T";
+				count = 12;
 			};
 			class _xx_Smoke
 			{

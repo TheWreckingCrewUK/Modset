@@ -36,7 +36,7 @@ class CfgVehicles {
 };
 
 class CfgSounds {
-	sounds[] = {TWC_sound_idfsiren, TWC_sound_idfclear};
+	sounds[] = {TWC_sound_idfsiren, TWC_sound_idfclear, TWC_sound_infsiren};
 
 	class TWC_sound_idfsiren {
 		name = "TWC_sound_idfsiren";
@@ -48,6 +48,13 @@ class CfgSounds {
 	class TWC_sound_idfclear {
 		name = "TWC_sound_idfclear";
 		sound[] = {"\twc_basedefence\sounds\idfclear.wav", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
+		class TWC_sound_infsiren {
+		name = "TWC_sound_idfsiren";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\infalarm.ogg", db+30, 1, 500};
 		titles[] = {0, ""};
 	};
 };

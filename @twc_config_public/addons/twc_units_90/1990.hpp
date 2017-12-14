@@ -676,6 +676,18 @@
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_1990_Medic_Desert";
+				weapons[]=
+		{
+		"Throw",
+		"UK3CB_BAF_L85A2",
+		"Put"
+		};
+				respawnweapons[]=
+		{
+		"Throw",
+		"UK3CB_BAF_L85A2",
+		"Put"
+		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
@@ -691,6 +703,22 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
+		};
+				magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		class EventHandlers: EventHandlers
 		{
