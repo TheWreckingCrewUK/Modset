@@ -8,7 +8,7 @@ class CfgPatches {
 		authorUrl = "http://thewreckingcrew.eu";
 		units[]={};
 		weapons[]={};
-    };
+	};
 };
 
 class CfgFunctions {
