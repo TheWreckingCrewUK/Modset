@@ -182,7 +182,8 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A1_SUSAT3D"
+			"UK3CB_BAF_L85A1_SUSAT3D",
+			"rhs_weap_m72a7"
 		};
 		respawnweapons[]=
 		{
@@ -994,7 +995,7 @@
 		};
 	};
 	
-	    class 1990_British_Sniper: B_Soldier_base_F
+	    class 1990_British_Sniper_desert: B_Soldier_base_F
 	{
 		_generalMacro="1990_Desert_Sniper";
 		scope=2;
@@ -1083,7 +1084,7 @@
 		};
 	};
 	
-		    class 1990_British_Spotter: B_Soldier_base_F
+		    class 1990_British_Spotter_desert: B_Soldier_base_F
 	{
 		_generalMacro="1990_Desert_spotter";
 		scope=2;
