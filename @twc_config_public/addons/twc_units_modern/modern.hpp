@@ -376,7 +376,7 @@
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_MG_A",
-			"UK3CB_BAF_H_Mk7_Scrim_C",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1652,7 +1652,6 @@
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
-			"B_IR_Grenade"
 		};
 		Respawnmagazines[]=
 		{
