@@ -1651,7 +1651,7 @@
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
 			"SmokeShell",
-			"SmokeShell",
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
