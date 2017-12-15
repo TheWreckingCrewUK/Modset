@@ -167,12 +167,13 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
+			"UK3CB_BAF_H_Beret_RLC_Commando_PRR",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
 			"V_Rangemaster_belt",
-			"UK3CB_BAF_H_Mk7_Camo_D",
+			"UK3CB_BAF_H_Beret_RLC_Commando_PRR",
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
@@ -183,7 +184,7 @@
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"UK3CB_BAF_L128A1_Eotech",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN",
 			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
@@ -191,19 +192,16 @@
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"UK3CB_BAF_L128A1_Eotech",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN",
 			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
 		{
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_12G_Slugs",
-			"UK3CB_BAF_12G_Slugs",
-			"UK3CB_BAF_12G_Slugs",
-			"UK3CB_BAF_12G_Slugs",
-			"UK3CB_BAF_12G_Pellets",
-			"UK3CB_BAF_12G_Pellets",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
@@ -215,12 +213,9 @@
 		{
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_12G_Slugs",
-			"UK3CB_BAF_12G_Slugs",
-			"UK3CB_BAF_12G_Slugs",
-			"UK3CB_BAF_12G_Slugs",
-			"UK3CB_BAF_12G_Pellets",
-			"UK3CB_BAF_12G_Pellets",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
