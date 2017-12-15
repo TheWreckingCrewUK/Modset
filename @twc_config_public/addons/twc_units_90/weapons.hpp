@@ -66,6 +66,38 @@ class cfgWeapons
 		};
 	};
 	
+		class UK3CB_BAF_L115A3;
+	class UK3CB_BAF_L115A3_DE;
+	class twc_l96_w: UK3CB_BAF_L115A3
+	{
+		scope = 2;
+		displayname = "L96A1";
+		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L115";
+				item="CUP_optic_Leupold_VX3";
+			};
+		};
+	};
+	class twc_l96_d: UK3CB_BAF_L115A3_DE
+	{
+		scope = 2;
+		displayname = "L96A1";
+		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L115";
+				item="CUP_optic_Leupold_VX3";
+			};
+		};
+	};
+	
+	
 	class UK3CB_BAF_U_Smock_DPMT;
 	class UK3CB_BAF_U_Smock_DDPM;
 	
