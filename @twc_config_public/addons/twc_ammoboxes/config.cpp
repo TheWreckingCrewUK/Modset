@@ -179,7 +179,7 @@ class CfgVehicles
 			class _xx_stanag
 			{
 				magazine = "30Rnd_556x45_Stanag";
-				count = 30;
+				count = 50;
 			};
 			class _xx_stanagTracer
 			{
@@ -189,17 +189,17 @@ class CfgVehicles
 			class _xx_stanag_box
 			{
 				magazine = "rhsusf_200Rnd_556x45_soft_pouch";
-				count = 10;
+				count = 15;
 			};
 			class _xx_762_box
 			{
 				magazine = "rhsusf_100Rnd_762x51";
-				count = 7;
+				count = 10;
 			};
 			class _xx_762_boxTracer
 			{
 				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
-				count = 2;
+				count = 3;
 			};
 			class _xx_1rnd_he
 			{

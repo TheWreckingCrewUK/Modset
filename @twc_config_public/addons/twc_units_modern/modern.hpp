@@ -223,6 +223,19 @@
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
+		
+
+			
+		class ACE_SelfActions: Modern_British_Base {
+			class ACE_SelfActions {
+				class base_Interact {
+					displayName = "Base";
+					condition = "true";
+					exceptions[] = {};
+					statement = "true";
+				};
+            };
+        };
 	};
 
 
