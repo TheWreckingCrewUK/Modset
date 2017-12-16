@@ -146,14 +146,18 @@ class ACE_Medical_Actions {
 };
 
 class ACE_Medical_Advanced {
-	class Treatment {
-		class Medication {
-			class Morphine {
+	class Treatment;
+	class Treatment: Treatment {
+		class Medication;
+		class Medication: Medication {
+			class Morphine;
+			class Morphine: Morphine {
 				painReduce = 0.5;
 				viscosityChange = -20;
 			};
 			
-			class Epinephrine {
+			class Epinephrine;
+			class Epinephrine: Epinephrine {
 				timeInSystem = 300;
 				maxDose = 4;
 				viscosityChange = 10;
