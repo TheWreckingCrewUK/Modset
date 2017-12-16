@@ -40,13 +40,13 @@ class CfgFunctions {
 	};
 };
 
-class Extended_InitPost_EventHandlers {
+/* class Extended_InitPost_EventHandlers {
 	class CAManBase {
 		class twc_medicalInitPos_eh {
 			clientInit = "[twc_medical_fnc_extendedVitalLoop, [(_this select 0)], 30] call CBA_fnc_waitAndExecute;";
 		};
 	};
-};
+}; */
 
 class CfgVehicles {
 	class Man;

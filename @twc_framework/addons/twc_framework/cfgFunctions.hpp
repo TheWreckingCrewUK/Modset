@@ -44,7 +44,7 @@ class CfgFunctions
 			class boatSafety{};
 			class civilianEquipment{};
 			class deadBodies{};
-			class disconectGear{};
+			class disconnectGear{};
 			class missionModuleInit{};
 			class moduleDebug{};
 			class nightGear{};
