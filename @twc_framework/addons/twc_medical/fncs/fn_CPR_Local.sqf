@@ -22,7 +22,7 @@ _probability = _probability + (5 * _gotEpi);
 _bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodLoss;
 _probability = _probability - (10 - (10 * _bloodLoss));
 
-_diceRoll = floor(random 105);
+_diceRoll = floor(random 100);
 
 if (_probability < 2) then {
 	_probability = 2;
@@ -32,7 +32,7 @@ if ( _probability >= _diceRoll ) exitWith {
 	_target setVariable ["ace_medical_inCardiacArrest", nil, true];
 	_target setVariable ["ace_medical_heartRate", (round(random [30, 35, 40])), true];
 	
-	_bloodPressure = [_target] call ace_medical_fnc_getBloodPressure;
+	/* _bloodPressure = [_target] call ace_medical_fnc_getBloodPressure;
 	_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 	
 	_changed = false;
@@ -53,7 +53,27 @@ if ( _probability >= _diceRoll ) exitWith {
 	
 	if ((_target getVariable ["ace_medical_bloodVolume", 0]) < 30) then {
 		_target setVariable ["ace_medical_bloodVolume", 30, true];
-	};
+	}; */
+	
+	// Q  = 19.04761
+	// bV = 50
+	// HR = 40
+	
+	// (50/19.04761) + (40/80-1)
+	// 2.625 [...] + -0.5
+	// 2.125
+	
+	// (2.125 * 0.229)
+	// bPH = 0.486625 (*100)
+	// (2.125 * 0.1524)
+	// bPL = 0.32385 (*100)
+	
+	_target setVariable ["ace_medical_bloodVolume", 50, true];
+	_resistance = (_target getVariable ["ace_medical_peripheralResistance", 100]);
+	
+	_bloodPressureH = (0.486625 * _resistance);
+	_bloodPressureL = (0.32385 * _resistance);
+	_target setVariable ["ace_medical_bloodPressure", [_bloodPressureL, _bloodPressureH], true];
 	
 	_target setVariable ["ACE_isUnconscious", false, true];
 	if (_target getVariable ["ace_medical_inReviveState", false]) then {
