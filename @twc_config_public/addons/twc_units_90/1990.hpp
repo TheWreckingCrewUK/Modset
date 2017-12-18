@@ -444,6 +444,209 @@
 			"SmokeShell"
 		};
 	};
+		class 1990_British_FSTCommander: 1990_British_Base 
+	{
+		scope=2;
+		displayName="FST Commander (90's Woodland)@Fire Support Team";
+		icon="iconManLeader";
+		uniformClass="UK3CB_BAF_U_Smock_DPMW";
+		backpack="TWC_Backpack_1990_Sectionlead";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_H_Mk6_DPMW_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_H_Mk6_DPMW_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell",
+			"B_IR_Grenade"
+		};
+	};
+
+	class 1990_British_FSTForwardObserver: 1990_British_Base
+	{
+		scope=2;
+		displayName="FST Forward Observer (90's Woodland)";
+		icon="iconManExplosive";
+		uniformClass="UK3CB_BAF_U_Smock_DPMW";
+		backpack="UK3CB_BAF_B_Bergen_DPMW_Rifleman_B";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_H_Mk6_DPMW_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_H_Mk6_DPMW_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"CUP_SOFLAM",
+			"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"CUP_SOFLAM",
+			"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"Laserbatteries"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell",
+			"Laserbatteries"
+		};
+	};
+
+	class 1990_British_FSTAssistant: 1990_British_Base 
+	{
+		scope=2;
+		displayName="FST Assistant (90's Woodland)";
+		uniformClass="UK3CB_BAF_U_Smock_DPMW";
+		backpack="UK3CB_BAF_B_Carryall_DPMW";
+		
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_H_Mk6_DPMW_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_H_Mk6_DPMW_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+	};
 		
 //////////////////////////////  Mounted  //////////////////////////////
 	class 1990_British_Vehicle_Commander: 1990_British_Base
@@ -759,6 +962,83 @@
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
 			"UK3CB_BAF_V_Pilot_DDPM",
 			"ItemMap",		
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	
+	class 1990_British_FSTCommander_Desert: 1990_British_FSTCommander
+	{
+		scope=2;
+		displayName="FST Commander (90's Desert)@Fire Support Team";
+		icon="iconManLeader";
+		editorSubcategory = "Men_1990D";
+		vehicleClass= "Men_1990D";
+		uniformClass="UK3CB_BAF_U_Smock_DDPM";
+		backpack="TWC_Backpack_1990_Sectionlead_Desert";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Mk6_DDPM_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Mk6_DDPM_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};	
+	class 1990_British_FSTForwardObserver_Desert: 1990_British_FSTForwardObserver
+	{
+		scope=2;
+		displayName="FST Forward Observer (90's Desert)";
+		editorSubcategory = "Men_1990D";
+		vehicleClass="Men_1990D";
+		uniformClass="UK3CB_BAF_U_Smock_DDPM";
+		backpack="UK3CB_BAF_B_Bergen_DDPM_Rifleman_B";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Mk6_DDPM_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Mk6_DDPM_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	class 1990_British_FSTAssistant_Desert: 1990_British_FSTAssistant
+	{
+		scope=2;
+		displayName="FST Assistant (90's Desert)";
+		editorSubcategory = "Men_1990D";
+		vehicleClass="Men_1990D";
+		uniformClass="UK3CB_BAF_U_Smock_DDPM";
+		backpack="UK3CB_BAF_B_Carryall_DDPM";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Mk6_DDPM_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_H_Mk6_DPMW_C",
+			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
