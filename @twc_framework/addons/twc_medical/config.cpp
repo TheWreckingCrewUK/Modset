@@ -6,8 +6,8 @@ class CfgPatches {
 		versionStr = "1";
 		author = "Bosenator";
 		authorUrl = "http://thewreckingcrew.eu";
-		units[]={};
-		weapons[]={};
+		units[] = {};
+		weapons[] = {};
 	};
 };
 
@@ -146,18 +146,14 @@ class ACE_Medical_Actions {
 };
 
 class ACE_Medical_Advanced {
-	class Treatment;
-	class Treatment: Treatment {
-		class Medication;
-		class Medication: Medication {
-			class Morphine;
-			class Morphine: Morphine {
+	class Treatment {
+		class Medication {
+			class Morphine {
 				painReduce = 0.5;
-				viscosityChange = -20;
+				viscosityChange = -15;
 			};
 			
-			class Epinephrine;
-			class Epinephrine: Epinephrine {
+			class Epinephrine {
 				timeInSystem = 300;
 				maxDose = 4;
 				viscosityChange = 10;
@@ -165,4 +161,3 @@ class ACE_Medical_Advanced {
 		};
 	};
 };
-
