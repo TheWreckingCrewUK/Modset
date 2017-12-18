@@ -33,11 +33,30 @@ class TWC_Vehicle_Millennial_FV432_Woodland: ukcw_fv432 {
 	class TransportBackpacks { };
 };
 
-/* class TWC_Vehicle_Millennial_FV432_Woodland_COIN: TWC_Vehicle_Millennial_FV432_Woodland {
+class TWC_Vehicle_Millennial_FV432_Woodland_COIN: TWC_Vehicle_Millennial_FV432_Woodland {
 	displayname = "FV432 - COIN (Woodland)";
 	
-	// currently no difference, might be in future regarding things like handcuffs
-}; */
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
+		ADD_ITEM(ACE_elasticBandage, ADD_QNTY(SECTION_ELASTICBANDAGE));
+		ADD_ITEM(ACE_quikclot, ADD_QNTY(SECTION_QUIKCLOT));
+		ADD_ITEM(ACE_packingBandage, ADD_QNTY(SECTION_PACKINGBANDAGE));
+		ADD_ITEM(ACE_tourniquet, ADD_QNTY(SECTION_TOURNIQUET));
+		ADD_ITEM(ACE_morphine, ADD_QNTY(SECTION_MORPHINE));
+		ADD_ITEM(ACE_epinephrine, ADD_QNTY(SECTION_EPINEPHRINE));
+		ADD_ITEM(ACE_CableTie, ADD_QNTY(8));
+	}; 
+	
+	class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MILLENNIAL_SECTION_MECHANISED_EARLY_RIFLE));
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MILLENNIAL_SECTION_MECHANISED_EARLY_RIFLE_T));
+		
+		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
+	};
+	
+	class TransportWeapons { };
+	class TransportBackpacks { };
+};
 
 // TODO: warrior here
 
