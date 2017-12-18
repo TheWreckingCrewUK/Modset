@@ -553,6 +553,20 @@
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
 		backpack="";
+						weapons[]=
+		{
+		"Throw",
+		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
+		"rhs_weap_m72a7",
+		"Put"
+		};
+				respawnweapons[]=
+		{
+		"Throw",
+		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
+		"rhs_weap_m72a7",
+		"Put"
+		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
@@ -1279,4 +1293,13 @@
 			"ItemCompass",
 			"ItemWatch"
 		};
+					class ACE_SelfActions:B_Soldier_base_F {
+				class base_Interact {
+					displayName = "Base";
+					condition = "true";
+					exceptions[] = {};
+					statement = "true";
+				};
+            
+        };
 	};

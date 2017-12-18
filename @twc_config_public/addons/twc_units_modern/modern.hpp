@@ -226,15 +226,14 @@
 		
 
 			
-		class ACE_SelfActions: Modern_British_Base {
-			class ACE_SelfActions {
+			class ACE_SelfActions:B_Soldier_base_F {
 				class base_Interact {
 					displayName = "Base";
 					condition = "true";
 					exceptions[] = {};
 					statement = "true";
 				};
-            };
+            
         };
 	};
 
