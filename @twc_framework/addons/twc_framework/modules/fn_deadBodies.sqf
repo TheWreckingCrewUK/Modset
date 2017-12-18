@@ -1,6 +1,6 @@
 /*
 * Author: [TWC] jayman
-* Adds MissionEventHandler to Delete Dead bodies in Base
+* Adds MissionEventHandler to delete dead bodies in base
 *
 * Arguments:
 * 0: RANGE <NUMBER>
@@ -16,17 +16,20 @@
 */
 params ["_range",["_marker","base"]];
 
-if(!isServer)exitWith{};
+if (!isServer) exitWith {};
+if (_range <= 0 || isNil "_range") exitWith {};
 
-if (_range == 0) exitWith {};
+if (getMarkerColor _marker isEqualTo "") exitWith {
+	systemChat "Dead body cleanup in base is enabled, but no base marker is defined";
+};
 
-if (getMarkerColor _marker isEqualTo "") exitWith {systemChat "Dead Body cleanup in base is Enabled, but no base marker is defined"};
-
-twc_deadBodiesMarker = _marker;
+twc_deadBodiesMarkerPos = getMarkerPos _marker;
 twc_deadBodiesRange = _range;
 
-_handle = addMissionEventHandler ["HandleDisconnect",{
-	if((_this select 0) distance2D twc_deadBodiesMarker < twc_deadBodiesRange) then{
-		deleteVehicle (_this select 0);
+_handle = addMissionEventHandler ["HandleDisconnect", {
+	if (!(isNil "twc_deadBodiesMarkerPos") && !(isNil"twc_deadBodiesMarker")) then {
+		if ((_this select 0) distance2D twc_deadBodiesMarkerPos <= twc_deadBodiesRange) then {
+			deleteVehicle (_this select 0);
+		};
 	};
 }];

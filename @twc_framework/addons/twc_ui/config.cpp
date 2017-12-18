@@ -31,7 +31,14 @@ class CfgFunctions {
 			class shouldDisplay {};
 			class removeDisplay {};
 			class showBearing {};
+			class hudReset {};
 		};
+	};
+};
+
+class Extended_DisplayUnload_EventHandlers {
+	class RscDiary {
+		ace_ui = "[{[] call TWC_UI_fnc_hudReset}] call CBA_fnc_execNextFrame";
 	};
 };
 

@@ -1,6 +1,6 @@
 /*
 * Author: [TWC] jayman
-* Sets rank insignias for friendly units. Changes default ACE pictures
+* Deletes the bodies of those who reconnect in, if enabled.
 *
 * Arguments:
 * 0: ERA <STRING>
@@ -9,22 +9,23 @@
 * NOTHING
 *
 * Example:
-* [true] call disconectGear;
+* [true] call disconnectGear;
 *
 * Public: No
 */
 params["_bool"];
-if(!_bool)exitWith{};
-addMissionEventHandler ["HandleDisconnect",{
+if (!_bool) exitWith {};
+
+addMissionEventHandler ["HandleDisconnect", {
 	_unit = (_this select 0);
 	_uid = (_this select 2);
-	_unit setVariable ["disconectedPlayerUID",_uid];
+	_unit setVariable ["disconnectedPlayerUID", _uid];
 }];
 
 ["deleteReconnected", "onPlayerConnected", {
 	{
-		if((_x getVariable ["disconectedPlayerUID",false]) == _uid)then{
+		if ((_x getVariable ["disconnectedPlayerUID", -1]) == _uid) then {
 			deleteVehicle _x;
 		};
-	}forEach allDeadmen;
+	} forEach allDeadmen;
 }] call BIS_fnc_addStackedEventHandler;

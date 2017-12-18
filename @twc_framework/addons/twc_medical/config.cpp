@@ -6,9 +6,9 @@ class CfgPatches {
 		versionStr = "1";
 		author = "Bosenator";
 		authorUrl = "http://thewreckingcrew.eu";
-		units[]={};
-		weapons[]={};
-    };
+		units[] = {};
+		weapons[] = {};
+	};
 };
 
 class CfgFunctions {
@@ -36,6 +36,14 @@ class CfgFunctions {
 
 			// Bloodlust Compat & Insta-Kill
 			class bloodlustInit {};
+		};
+	};
+};
+
+class Extended_InitPost_EventHandlers {
+	class CAManBase {
+		class twc_medicalInitPos_eh {
+			clientInit = "[twc_medical_fnc_extendedVitalLoop, [(_this select 0)], 30] call CBA_fnc_waitAndExecute;";
 		};
 	};
 };
@@ -142,7 +150,7 @@ class ACE_Medical_Advanced {
 		class Medication {
 			class Morphine {
 				painReduce = 0.5;
-				viscosityChange = -20;
+				viscosityChange = -15;
 			};
 			
 			class Epinephrine {
@@ -153,4 +161,3 @@ class ACE_Medical_Advanced {
 		};
 	};
 };
-

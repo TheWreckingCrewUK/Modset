@@ -8,6 +8,7 @@ class cfgWeapons
 	class UK3CB_BAF_L85A2_UGL;
 	class UK3CB_BAF_L7A2;
 	class UK3CB_BAF_L115A3;
+	class UK3CB_BAF_L85A2_RIS_Tan;
 	
 	
 	class UK3CB_BAF_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS
@@ -28,6 +29,20 @@ class cfgWeapons
 			};
 		};
 	};
+		class UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN: UK3CB_BAF_L85A2_RIS_Tan
+	{
+		scope = 1;
+		author="Hobbs";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="RKSL_optic_LDS";
+			};
+		};
+	};
+	
 	class UK3CB_BAF_L110A2_ELCAN3D: UK3CB_BAF_L110A2RIS
 	{
 		scope = 1;

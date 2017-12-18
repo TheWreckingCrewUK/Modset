@@ -628,27 +628,26 @@
 		};
 	};
 	
-		class TWC_Backpack_Modern_Spotter_coin: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
-	{
+	class TWC_Backpack_Modern_Spotter_coin: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C {
 		scope = 1;
-				class TransportItems
-		{
-			class _xx_PRC_117F
-			{
+		
+		class TransportItems {
+			class _xx_PRC_117F {
 				name = "ACRE_PRC117F";
 				count = 1;
 			};
-						class _xx_tripod
-			{
+			
+			class _xx_tripod {
 				name = "ACE_Tripod";
 				count = 1;
 			};
-						class _xx_Spotting
-			{
+			
+			class _xx_Spotting {
 				name = "ACE_SpottingScope";
 				count = 1;
 			};
 		};
+
 		class TransportMagazines
 		{
 			class _xx_338

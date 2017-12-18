@@ -19,7 +19,7 @@ class CfgVehicles {
 	
 	class B_Soldier_base_F: SoldierWB {
 		threat[] = { 1, 1, 1};
-		camouflage = 4;
+		camouflage = 6;
 		accuracy = 0.2;
 		cost = 10;
 	};

@@ -24,4 +24,6 @@ _owner = owner HC1;
 	}forEach allGroups;
 };
 
-diag_log format["twc_hc1Array %1 has been cached",twc_hc1Array];
+if (!(isNil "twc_hc1Array")) then {
+	diag_log format["twc_hc1Array %1 has been cached",twc_hc1Array];
+};

@@ -5,7 +5,7 @@
 	class UK3CB_BAF_B_Bergen_DPMT_Rifleman_B;
 	class UK3CB_BAF_B_Carryall_DPMT;
 	class UK3CB_BAF_B_Kitbag_DPMT;
-	
+	class UK3CB_BAF_B_Bergen_TAN_SL_A;
 	
 	class TWC_Backpack_1990_Sectionlead: UK3CB_BAF_B_Bergen_DPMT_SL_A
 	{
@@ -51,7 +51,12 @@
             class _xx_Stanag
 			{
 				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 8;
+				count = 12;
+			};
+			            class _xx_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_30Rnd_T";
+				count = 12;
 			};
 			class _xx_Smoke
 			{
@@ -360,6 +365,18 @@
 			};
 		};
 	};
+		class TWC_Backpack_1990_machineGunner_Desert: UK3CB_BAF_B_Bergen_DDPM_Rifleman_B
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Stanag
+			{
+				magazine = "UK3CB_BAF_762_200Rnd";
+				count = 2;
+			};
+		};
+	};
 	class TWC_Backpack_1990_Platoon_Command_Desert: UK3CB_BAF_B_Bergen_DDPM_SL_A
 	{
 		scope = 1;
@@ -511,5 +528,20 @@
 				magazine = "SmokeShell";
 				count = 3;
 			};
+		};
+	};
+	
+	class TWC_Backpack_1990_quartermaster_desert: UK3CB_BAF_B_Bergen_TAN_SL_A
+	{
+		scope = 1;
+		mass = 59.84;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+
 		};
 	};

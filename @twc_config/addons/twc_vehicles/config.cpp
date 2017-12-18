@@ -179,6 +179,9 @@ class CfgVehicles {
 	class CUP_B_SA330_Puma_HC1_BAF;
 	class CUP_B_C130J_GB;
 	class ukcw_fv432;
+	
+	class UK3CB_BAF_LandRover_Soft_Green_B;
+	
 	class twc_landrover_W: CUP_B_LR_Transport_GB_W
 	{
 		scope = 2;
@@ -227,14 +230,61 @@ class CfgVehicles {
 		displayname = "Foxhound (Woodland)";
 		GearModern;
 	};
-	class twc_landrover_W_1990: CUP_B_LR_Transport_GB_W
-	{
+	
+
+	class TWC_BaseClass_LR_Soft_Base: UK3CB_BAF_LandRover_Soft_Green_B {
+		scope = 0;
+		class AnimationSources;
+	};
+
+	class TWC_BaseClass_LR_Soft_Base_F: TWC_BaseClass_LR_Soft_Base {
+		class AnimationSources: AnimationSources {
+			class AerialFL_Hide;
+			class AerialFR_Hide;
+			class AerialAtuL_Hide;
+			class AerialAtuR_Hide;
+			class ClanLogo_Hide;
+			class Mudguards_Hide;
+		};
+	};
+
+	class twc_landrover_W_1990: TWC_BaseClass_LR_Soft_Base_F {
 		scope = 2;
 		side = 1;
-		faction="TWC_Millenial";
+		faction = "TWC_Millenial";
 		displayname = "Landrover Woodland (90`s)";
 		Gear1990;
+		
+		class TransportBackpacks { };
+		
+		class AnimationSources: AnimationSources {
+			class AerialAtuR_Hide: AerialAtuR_Hide {
+				initPhase = 1;
+			};
+			
+			class AerialAtuL_Hide: AerialAtuL_Hide {
+				initPhase = 1;
+			};
+
+			class AerialFR_Hide: AerialFR_Hide {
+				initPhase = 1;
+			};
+			
+			class AerialFL_Hide: AerialFL_Hide {
+				initPhase = 0;
+			};
+			
+			class ClanLogo_Hide: ClanLogo_Hide {
+				initPhase = 1;
+			};
+			
+			class Mudguards_Hide: Mudguards_Hide {
+				initPhase = 0;
+			};
+		};
 	};
+
+
 	class twc_landrover_D_1990: CUP_B_LR_Transport_GB_D
 	{
 		scope = 2;

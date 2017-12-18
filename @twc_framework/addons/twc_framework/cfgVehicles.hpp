@@ -699,7 +699,7 @@ class cfgVehicles {
 		displayName = "Disable Caching on Units";
 		function = "twc_fnc_moduleDisableCaching";
 		scope = 2;
-		isGlobal = 1;
+		isGlobal = 0;
 		isTriggerActivated = 0;
 		icon = "\twc_framework\ui\disable_caching_ca.paa";
 		functionPriority = 1;

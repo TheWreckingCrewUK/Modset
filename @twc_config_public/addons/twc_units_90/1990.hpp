@@ -182,7 +182,8 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A1_SUSAT3D"
+			"UK3CB_BAF_L85A1_SUSAT3D",
+			"rhs_weap_m72a7"
 		};
 		respawnweapons[]=
 		{
@@ -552,6 +553,20 @@
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
 		backpack="";
+						weapons[]=
+		{
+		"Throw",
+		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
+		"rhs_weap_m72a7",
+		"Put"
+		};
+				respawnweapons[]=
+		{
+		"Throw",
+		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
+		"rhs_weap_m72a7",
+		"Put"
+		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
@@ -676,6 +691,18 @@
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_1990_Medic_Desert";
+				weapons[]=
+		{
+		"Throw",
+		"UK3CB_BAF_L85A2",
+		"Put"
+		};
+				respawnweapons[]=
+		{
+		"Throw",
+		"UK3CB_BAF_L85A2",
+		"Put"
+		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
@@ -691,6 +718,22 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
+		};
+				magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		class EventHandlers: EventHandlers
 		{
@@ -964,4 +1007,299 @@
 		"ACRE_PRC148",
 		"UK3CB_BAF_HMNVS"		
 		};
+	};
+	
+	    class 1990_British_Sniper_desert: B_Soldier_base_F
+	{
+		_generalMacro="1990_Desert_Sniper";
+		scope=2;
+		displayName="Sniper (90`s Desert)";
+		faction="twc_faction";
+		editorSubcategory = "Men_1990D";
+		vehicleClass="Men_1990D";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="TWC_Smock_Desert";
+		linkedItems[]=
+		{
+        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_C",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_C",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"Binocular",
+		"twc_l96_d"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"Binocular",
+		"twc_l96_d"
+		};
+		magazines[]=
+		{
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_RangeCard",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs",
+		"UK3CB_BAF_HMNVS"	
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_RangeCard",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs",
+		"UK3CB_BAF_HMNVS"		
+		};
+	};
+	
+		    class 1990_British_Spotter_desert: B_Soldier_base_F
+	{
+		_generalMacro="1990_Desert_spotter";
+		scope=2;
+		displayName="Spotter (90`s Desert)";
+		faction="twc_faction";
+		editorSubcategory = "Men_1990D";
+		vehicleClass="Men_1990D";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="TWC_Smock_Desert";
+		linkedItems[]=
+		{
+        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_C",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_C",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"Binocular",
+		"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"Binocular",
+		"UK3CB_BAF_L85A1_SUSAT3D"
+		};
+		magazines[]=
+		{
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_t",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_t",
+		"UK3CB_BAF_556_30Rnd",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_t",
+		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_556_30Rnd_t",
+		"UK3CB_BAF_556_30Rnd",
+		"SmokeShell",
+		"SmokeShell"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_Tripod",
+		"ACE_SpottingScope",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs",
+		"UK3CB_BAF_HMNVS"	
+		};
+		respawntems[]=
+		{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_Tripod",
+		"ACE_SpottingScope",
+		"ACE_morphine",
+		"ACE_morphine",
+		"ACE_EarPlugs",
+		"UK3CB_BAF_HMNVS"		
+		};
+	};
+	
+		class 1990_British_MachineGunner_Desert: 1990_British_Gunner
+	{
+		displayName="GPMG Gunner (90`s Desert)";
+		editorSubcategory = "Men_1990D";
+		vehicleClass="Men_1990D";
+		uniformClass="TWC_Smock_Desert";
+		backpack="TWC_Backpack_1990_machineGunner_Desert";
+				weapons[]=
+		{
+		"Throw",
+		"Put",
+		"UK3CB_BAF_L7A2"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"UK3CB_BAF_L7A2"
+		};
+				magazines[]=
+		{
+		"UK3CB_BAF_762_200Rnd",
+		"UK3CB_BAF_762_200Rnd",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"UK3CB_BAF_762_200Rnd",
+		"UK3CB_BAF_762_200Rnd",
+		"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	
+		class 1990_British_mg_assistant_Desert: 1990_British_Rifleman
+	{
+		displayName="GPMG Assistant (90`s Desert)";
+		editorSubcategory = "Men_1990D";
+		vehicleClass="Men_1990D";
+		uniformClass="TWC_Smock_Desert";
+		backpack="TWC_Backpack_1990_machineGunner_Desert";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	
+		class 1990_British_quartermaster_Desert: 1990_British_SectionCommander
+	{
+		displayName="Quartermaster (90`s Desert)";
+		editorSubcategory = "Men_1990D";
+		vehicleClass="Men_1990D";
+		uniformClass="TWC_Smock_Desert";
+		backpack="TWC_Backpack_1990_quartermaster_desert";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Beret_PWRR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Beret_PWRR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+			class ACE_SelfActions:B_Soldier_base_F {
+				class base_Interact {
+					displayName = "Base";
+					condition = "true";
+					exceptions[] = {};
+					statement = "true";
+				};
+            
+        };
 	};
