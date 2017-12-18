@@ -56,24 +56,26 @@ if ( _probability >= _diceRoll ) exitWith {
 	}; */
 	
 	// Q  = 19.04761
-	// bV = 50
+	// bV = 60
 	// HR = 40
 	
-	// (50/19.04761) + (40/80-1)
-	// 2.625 [...] + -0.5
-	// 2.125
+	// (60/19.04761) + (40/80-1)
+	// 3.1500 [...] + -0.5
+	// 2.65
 	
-	// (2.125 * 0.229)
-	// bPH = 0.486625 (*100)
-	// (2.125 * 0.1524)
-	// bPL = 0.32385 (*100)
+	// (2.65 * 0.229)
+	// bPH = 0.60685 (*100)
+	// (2.65 * 0.1524)
+	// bPL = 0.40386 (*100)
 	
-	_target setVariable ["ace_medical_bloodVolume", 50, true];
-	_resistance = (_target getVariable ["ace_medical_peripheralResistance", 100]);
-	
-	_bloodPressureH = (0.486625 * _resistance);
-	_bloodPressureL = (0.32385 * _resistance);
-	_target setVariable ["ace_medical_bloodPressure", [_bloodPressureL, _bloodPressureH], true];
+	if ((_target getVariable ["ace_medical_bloodVolume", 0]) < 60) then {
+		_target setVariable ["ace_medical_bloodVolume", 60, true];
+		_resistance = (_target getVariable ["ace_medical_peripheralResistance", 100]);
+		
+		_bloodPressureH = (0.60685 * _resistance);
+		_bloodPressureL = (0.40386 * _resistance);
+		_target setVariable ["ace_medical_bloodPressure", [_bloodPressureL, _bloodPressureH], true];
+	};
 	
 	_target setVariable ["ACE_isUnconscious", false, true];
 	if (_target getVariable ["ace_medical_inReviveState", false]) then {
