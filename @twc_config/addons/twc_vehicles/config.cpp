@@ -33,6 +33,7 @@ class CfgPatches {
 			"TWC_Vehicle_Generic_Hercules_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF_VIV",
+			"TWC_Vehicle_Generic_Gazelle",
 			"TWC_Vehicle_Generic_RHIB_Black",
 			"TWC_Vehicle_Generic_Zodiac_Black",
 			
@@ -50,6 +51,10 @@ class CfgPatches {
 			"TWC_Vehicle_ColdWar_HarrierGR3_RAF",
 			
 			"TWC_Vehicle_Millennial_HarrierGR5_RAF",
+			"TWC_Vehicle_Millennial_FV432_Woodland",
+			"TWC_Vehicle_Millennial_FV432_Woodland_COIN",
+			"TWC_Vehicle_Millennial_Scimitar_Chameleon",
+			"TWC_Vehicle_Millennial_Scorpion_Chameleon",
 			"TWC_Vehicle_Millennial_LandRover_Woodland",
 			"TWC_Vehicle_Millennial_LandRover_Desert",
 			"TWC_Vehicle_Millennial_LandRover_Woodland_COIN",
