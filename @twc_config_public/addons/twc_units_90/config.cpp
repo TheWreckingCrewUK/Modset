@@ -23,6 +23,9 @@ class CfgPatches
 			"1990_British_2IC_Mechanised",
 			"1990_British_Vehicle_Commander",
 			"1990_British_Vehicle_Crew",
+			"1990_British_FSTCommander",
+			"1990_British_FSTForwardObserver",
+			"1990_British_FSTAssistant",
 			"1990_British_SectionCommander_Desert",
 			"1990_British_Rifleman_Desert",
 			"1990_British_CGG_Desert",
@@ -41,7 +44,10 @@ class CfgPatches
 			"1990_British_Vehicle_Commander_Desert",
 			"1990_British_Vehicle_Crew_Desert",
 			"1990_British_Tank_Commander_Desert",
-			"1990_British_Tank_Crew_Desert"
+			"1990_British_Tank_Crew_Desert",
+			"1990_British_FSTCommander_Desert",
+			"1990_British_FSTForwardObserver_Desert",
+			"1990_British_FSTAssistant_Desert"
 		};
 		weapons[]={};
 		requiredVersion=0.1;

@@ -1,13 +1,14 @@
 //////////////////////////////  Woodland Camo  //////////////////////////////
 	
 	class UK3CB_BAF_B_Bergen_DPMT_SL_A;
+	class UK3CB_BAF_B_Bergen_DPMW_SL_A;
 	class UK3CB_BAF_B_Bergen_DPMT_Rifleman_A;
 	class UK3CB_BAF_B_Bergen_DPMT_Rifleman_B;
 	class UK3CB_BAF_B_Carryall_DPMT;
 	class UK3CB_BAF_B_Kitbag_DPMT;
 	class UK3CB_BAF_B_Bergen_TAN_SL_A;
 	
-	class TWC_Backpack_1990_Sectionlead: UK3CB_BAF_B_Bergen_DPMT_SL_A
+	class TWC_Backpack_1990_Sectionlead: UK3CB_BAF_B_Bergen_DPMW_SL_A
 	{
 		scope = 1;
 		mass = 59.84;
