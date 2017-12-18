@@ -34,6 +34,8 @@
 #define MODERN_WIMIK_MOD 0.5
 #define MODERN_LANDROVER_MOD 0.5
 
+#define MODERN_WILDCAT_MOD 1
+
 #include "modern_helicopter.hpp"
 #include "modern_plane.hpp"
 #include "modern_tracked.hpp"

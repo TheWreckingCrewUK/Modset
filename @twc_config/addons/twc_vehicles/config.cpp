@@ -65,7 +65,8 @@ class CfgPatches {
 			"TWC_Vehicle_Millennial_LandRoverHard_Desert_COIN",
 			"TWC_Vehicle_Millennial_LandRoverSnatch_NI_COIN",
 			
-			"TWC_Vehicle_Modern_HarrierGR9_RAF"
+			"TWC_Vehicle_Modern_HarrierGR9_RAF",
+			"TWC_Vehicle_Modern_Wildcat_RAF"
 		};
 
 		weapons[] = {
