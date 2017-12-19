@@ -73,6 +73,10 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (1990 Woodland)";
 	};
+		class Men_1990RM
+	{
+		displayName = "Marines (1990 Mixed)";
+	};
 };
 class CfgFactionClasses
 {

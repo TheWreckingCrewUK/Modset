@@ -2,10 +2,10 @@
 	
 	class UK3CB_BAF_B_Bergen_DPMT_SL_A;
 	class UK3CB_BAF_B_Bergen_DPMW_SL_A;
-	class UK3CB_BAF_B_Bergen_DPMT_Rifleman_A;
-	class UK3CB_BAF_B_Bergen_DPMT_Rifleman_B;
-	class UK3CB_BAF_B_Carryall_DPMT;
-	class UK3CB_BAF_B_Kitbag_DPMT;
+	class UK3CB_BAF_B_Bergen_DPMW_Rifleman_A;
+	class UK3CB_BAF_B_Bergen_DPMW_Rifleman_B;
+	class UK3CB_BAF_B_Carryall_DPMW;
+	class UK3CB_BAF_B_Kitbag_DPMW;
 	class UK3CB_BAF_B_Bergen_TAN_SL_A;
 	
 	class TWC_Backpack_1990_Sectionlead: UK3CB_BAF_B_Bergen_DPMW_SL_A
@@ -44,7 +44,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_1990_2IC: UK3CB_BAF_B_Bergen_DPMT_Rifleman_B
+	class TWC_Backpack_1990_2IC: UK3CB_BAF_B_Bergen_DPMW_Rifleman_B
 	{
 		scope = 1;
 		class TransportMagazines
@@ -66,7 +66,7 @@
 			};			
 		};
 	};
-	class TWC_Backpack_1990_2IC_Mounted: UK3CB_BAF_B_Kitbag_DPMT
+	class TWC_Backpack_1990_2IC_Mounted: UK3CB_BAF_B_Kitbag_DPMW
 	{
 		scope = 1;
 		class TransportMagazines
@@ -83,7 +83,7 @@
 			};			
 		};
 	};
-	class TWC_Backpack_1990_Rifleman: UK3CB_BAF_B_Bergen_DPMT_Rifleman_B
+	class TWC_Backpack_1990_Rifleman: UK3CB_BAF_B_Bergen_DPMW_Rifleman_B
 	{
 		scope = 1;
 		class TransportMagazines
@@ -100,7 +100,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_1990_Gunner: UK3CB_BAF_B_Bergen_DPMT_Rifleman_B
+	class TWC_Backpack_1990_Gunner: UK3CB_BAF_B_Bergen_DPMW_Rifleman_B
 	{
 		scope = 1;
 		class TransportMagazines
@@ -117,7 +117,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_1990_Platoon_Command: UK3CB_BAF_B_Bergen_DPMT_SL_A
+	class TWC_Backpack_1990_Platoon_Command: UK3CB_BAF_B_Bergen_DPMW_SL_A
 	{
 		scope = 1;
 		mass = 59.84;
@@ -153,7 +153,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_1990_Platoon_Sergeant: UK3CB_BAF_B_Carryall_DPMT
+	class TWC_Backpack_1990_Platoon_Sergeant: UK3CB_BAF_B_Carryall_DPMW
 	{
 		scope = 1;
 		mass = 59.84;
@@ -200,7 +200,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_1990_Medic: UK3CB_BAF_B_Bergen_DPMT_Rifleman_B
+	class TWC_Backpack_1990_Medic: UK3CB_BAF_B_Bergen_DPMW_Rifleman_B
 	{
 		scope = 1;
 		class TransportItems
@@ -266,6 +266,19 @@
 			class _xx_Smoke
 			{
 				magazine = "SmokeShell";
+				count = 3;
+			};
+		};
+	};
+
+	class TWC_Backpack_1990_Minimi: UK3CB_BAF_B_Bergen_DPMW_Rifleman_A
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Box_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_200Rnd_T";
 				count = 3;
 			};
 		};
