@@ -161,6 +161,7 @@
 		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_quartermaster";
+		attendant = 1;
 		linkedItems[]=
 		{
 			"V_Rangemaster_belt",

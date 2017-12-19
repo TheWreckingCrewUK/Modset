@@ -328,6 +328,7 @@
 		scope=2;
 		displayName="Medic (90`s Woodland)";
 		backpack="TWC_Backpack_1990_Medic";
+		attendant = 1;
 		weapons[]=
 		{
 			"Throw",
@@ -893,6 +894,7 @@
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
+		attendant = 1;
 		backpack="TWC_Backpack_1990_Medic_Desert";
 				weapons[]=
 		{
@@ -1556,6 +1558,7 @@
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
+		attendant = 1;
 		backpack="TWC_Backpack_1990_quartermaster_desert";
 		linkedItems[]=
 		{
