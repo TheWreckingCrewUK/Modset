@@ -72,7 +72,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		displayname = "L96A1";
-		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
+		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd", "UK3CB_BAF_762_L42A1_10Rnd_T"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -86,7 +86,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		displayname = "L96A1";
-		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
+		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd", "UK3CB_BAF_762_L42A1_10Rnd_T"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic

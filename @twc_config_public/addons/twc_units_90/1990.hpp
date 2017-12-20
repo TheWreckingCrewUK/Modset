@@ -1045,7 +1045,7 @@
 			"ItemWatch"
 		};
 	};
-//////////////////////////////  Mounted  //////////////////////////////
+//////////////////////////////  Royal Marines  //////////////////////////////
 
 	class 1990_RM_base: 1990_British_SectionCommander_Desert
 	{
@@ -1207,7 +1207,19 @@
 
 	};
 
+		class 1990_RM_British_Medic_Mix: 1990_RM_base
+	{
+		displayName="Medic (90`s RM)";
+		editorSubcategory = "Men_1990RM";
+		scope = 2;
+		attendant = 1;
+		vehicleClass="Men_1990RM";
+		backpack="TWC_Backpack_1990_Medic";
 
+	};
+
+	//////////////////////////////  Mounted  //////////////////////////////
+	
     class 1990_British_Vehicle_Commander_Desert: 1990_British_Vehicle_Commander
 	{
 		displayName="Vehicle Commander (90`s Desert)";
@@ -1517,6 +1529,7 @@
 		Items[]=
 		{
 		"ACE_fieldDressing",
+		"ACRE_PRC343",	
 		"ACE_RangeCard",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1530,6 +1543,7 @@
 		respawntems[]=
 		{
 		"ACE_fieldDressing",
+		"ACRE_PRC343",	
 		"ACE_RangeCard",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1614,6 +1628,7 @@
 		Items[]=
 		{
 		"ACE_fieldDressing",
+		"ACRE_PRC343",	
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1628,6 +1643,7 @@
 		respawntems[]=
 		{
 		"ACE_fieldDressing",
+		"ACRE_PRC343",	
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
