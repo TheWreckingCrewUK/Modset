@@ -139,7 +139,6 @@ class CfgPatches
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds",
 			"Extended_EventHandlers",
-			"rhs_weapons",
 			"cba_main"
 		};
 	};
