@@ -915,6 +915,7 @@
 			"SmokeShell",
 			"SmokeShell"
 		};
+		
 	};
 	class Modern_British_Spotter: Modern_British_Sniper
 	{
@@ -969,6 +970,58 @@
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_microDAGR",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACRE_PRC343",
+			"ACE_MapTools",
+			"ACE_EarPlugs"
+		};
+		respawntems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_microDAGR",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACRE_PRC343",
+			"ACE_EarPlugs"
+		};		
 	};
 	class Modern_British_FAC: Modern_British_Base
 	{
