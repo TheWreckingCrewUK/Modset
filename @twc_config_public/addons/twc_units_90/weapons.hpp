@@ -68,11 +68,12 @@ class cfgWeapons
 	
 		class UK3CB_BAF_L115A3;
 	class UK3CB_BAF_L115A3_DE;
+	class CUP_hgun_Colt1911;
 	class twc_l96_w: UK3CB_BAF_L115A3
 	{
 		scope = 2;
 		displayname = "L96A1";
-		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
+		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd", "UK3CB_BAF_762_L42A1_10Rnd_T"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -86,7 +87,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		displayname = "L96A1";
-		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
+		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd", "UK3CB_BAF_762_L42A1_10Rnd_T"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -95,6 +96,14 @@ class cfgWeapons
 				item="CUP_optic_Leupold_VX3";
 			};
 		};
+	};
+	
+		class twc_browning_hp: CUP_hgun_Colt1911
+	{
+		scope = 2;
+		displayname = "Browning Hi-Power";
+		magazines[] = {"CUP_15Rnd_9x19_M9", "CUP_10Rnd_9x19_Compact"};
+
 	};
 	
 	

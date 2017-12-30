@@ -103,7 +103,9 @@ class CfgPatches
 			"Tak_twc_ins_Men_a1",
 			"Tak_twc_ins_Men_a2",
 			"Tak_twc_ins_Men_sniper",
-			"Tak_twc_ins_Men_Scout",			
+			"Tak_twc_ins_Men_sniper_h",
+			"Tak_twc_ins_Men_Scout",
+			"Tak_twc_ins_Men_Bombmaker",
 			
 			"twc_greek_officer",
 			"twc_greek_rifleman",
@@ -298,6 +300,41 @@ class CfgVehicles
 			{
 				magazine="CUP_OG7_M";
 				count=4;
+			};
+		};
+	};
+	
+			class Backpack_twc_bombmaker: rhs_sidor
+	{
+		class TransportMagazines
+		{
+			class _xx_ied1
+			{
+				magazine="rhs_mag_mine_pfm1";
+				count=6;
+			};
+
+			class _xx_ied2
+			{
+				magazine="IEDLandSmall_Remote_Mag";
+				count=1;
+			};
+
+			class _xx_ied3
+			{
+				magazine="IEDUrbanSmall_Remote_Mag";
+				count=1;
+			};
+
+
+		};
+
+				class TransportItems
+		{
+			class _xx_cellphone
+			{
+				name = "ACE_Cellphone";
+				count = 1;
 			};
 		};
 	};

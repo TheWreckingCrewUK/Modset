@@ -29,6 +29,24 @@ class CUP_R_PG7VL_AT: rocketbase
 	AirFriction =0.001;
 
 };
+
+
+};
+
+class cfgmagazines{
+	class CUP_250Rnd_TE2_Red_Tracer_GSh23_23mm_APHE_M;
+	
+	class twc_23mm_1rnd: CUP_250Rnd_TE2_Red_Tracer_GSh23_23mm_APHE_M
+{
+	descriptionShort = "Used in: Improvised Sniper Rifle";
+count = 1;
+displayName = "23 mm Round";
+weight = 0;
+picture = "\A3\weapons_f\data\UI\M_5rnd_127x108_CA.paa";
+mass = 4;
+ammo = "CUP_B_23mm_APHE_Tracer_Red";
+};
+
 };
 
 
@@ -49,6 +67,17 @@ class cfgweapons{
 
 		magazines[] = {"CUP_PG7V_M", "CUP_PG7VM_M", "CUP_PG7VL_M", "CUP_PG7VR_M", "CUP_OG7_M", "CUP_TBG7V_M", "twc_og7_c_m"};
 		};
+		
+		
+	class CUP_srifle_ksvk_PSO3;
+	class twc_ksvk: CUP_srifle_ksvk_PSO3
+	{
+		scope = 2;
+		displayname = "Improvised Sniper Rifle";
+		magazines[] = {"twc_23mm_1rnd"};
+
+	};
+		
 		
 
 		
