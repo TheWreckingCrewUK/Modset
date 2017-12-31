@@ -1,4 +1,4 @@
-//////////////////////////////  Woodland Camo  //////////////////////////////
+//////////////////////////////  British Woodland Camo  //////////////////////////////
 	
 	class UK3CB_BAF_B_Bergen_DPMT_SL_A;
 	class UK3CB_BAF_B_Bergen_DPMW_SL_A;
@@ -284,7 +284,7 @@
 		};
 	};
 	
-//////////////////////////////  Desert Camo  //////////////////////////////
+////////////////////////////// British Desert Camo  //////////////////////////////
 	
 	class UK3CB_BAF_B_Bergen_DDPM_SL_A;
 	class UK3CB_BAF_B_Bergen_DDPM_Rifleman_A;
@@ -557,5 +557,154 @@
 				count = 1;
 			};
 
+		};
+	};
+
+////////////////////////////// US Woodland Camo  //////////////////////////////
+	class rhsgref_wdl_alicepack;
+	class twc_men_1990_us_w_backpack_squadlead: rhsgref_wdl_alicepack
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "SmokeShellRed";
+				count = 2;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 2;
+			};
+			class _xx_Smoke_Yellow
+			{
+				magazine = "SmokeShellYellow";
+				count = 2;
+			};
+			class _xx_CUP_1Rnd_HE_M203
+			{
+				magazine = "CUP_1Rnd_HE_M203";
+				count = 14;				
+			};
+			class _xx_CUP_1Rnd_SmokeRed_M203
+			{
+				magazine = "CUP_1Rnd_SmokeRed_M203";
+				count = 2;				
+			};
+			class _xx_CUP_1Rnd_SmokeGreen_M203
+			{
+				magazine = "CUP_1Rnd_SmokeGreen_M203";
+				count = 2;				
+			};
+			class _xx_CUP_1Rnd_SmokeYellow_M203
+			{
+				magazine = "CUP_1Rnd_SmokeYellow_M203";
+				count = 2;				
+			};
+			class _xx_CUP_1Rnd_Smoke_M203
+			{
+				magazine = "CUP_1Rnd_Smoke_M203";
+				count = 6;				
+			};
+		};		
+	};
+	class twc_men_1990_us_w_backpack_teamlead: rhsgref_wdl_alicepack
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+            class _xx_Stanag
+			{
+				magazine = "30Rnd_556x45_Stanag";
+				count = 8;
+			};
+			class _xx_Stanag_T
+			{
+				magazine = "30Rnd_556x45_Stanag_Tracer_Red";
+				count = 4;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 2;
+			};
+			class _xx_CUP_1Rnd_HE_M203
+			{
+				magazine = "CUP_1Rnd_HE_M203";
+				count = 14;				
+			};
+			class _xx_CUP_1Rnd_SmokeRed_M203
+			{
+				magazine = "CUP_1Rnd_SmokeRed_M203";
+				count = 2;				
+			};
+			class _xx_CUP_1Rnd_SmokeGreen_M203
+			{
+				magazine = "CUP_1Rnd_SmokeGreen_M203";
+				count = 2;				
+			};
+			class _xx_CUP_1Rnd_SmokeYellow_M203
+			{
+				magazine = "CUP_1Rnd_SmokeYellow_M203";
+				count = 2;				
+			};
+			class _xx_CUP_1Rnd_Smoke_M203
+			{
+				magazine = "CUP_1Rnd_Smoke_M203";
+				count = 6;				
+			};			
+		};		
+	};
+	class twc_men_1990_us_w_backpack_rifleman: rhsgref_wdl_alicepack
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+            class _xx_Stanag
+			{
+				magazine = "30Rnd_556x45_Stanag";
+				count = 16;
+			};
+			class _xx_Stanag_T
+			{
+				magazine = "30Rnd_556x45_Stanag_Tracer_Red";
+				count = 8;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 2;
+			};	
+		};
+	};
+	class twc_men_1990_us_w_backpack_autorifleman: rhsgref_wdl_alicepack
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+            class _xx_Stanag
+			{
+				magazine = "rhs_200rnd_556x45_B_SAW";
+				count = 6;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 2;
+			};	
 		};
 	};

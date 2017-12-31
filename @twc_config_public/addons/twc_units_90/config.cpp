@@ -58,7 +58,8 @@ class CfgPatches
 			"A3_Characters_F",
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
-			"ace_interact_menu"
+			"ace_interact_menu",
+			"rhsgref_c_troops"
 		};
 	};
 };
@@ -76,6 +77,14 @@ class CfgEditorSubCategories
 		class Men_1990RM
 	{
 		displayName = "Marines (1990 Mixed)";
+	};
+	class twc_men_1990_us_w
+	{
+		displayname = "Men US (1990 Woodland)";
+	};
+	class twc_men_1990_us_d
+	{
+		displayname = "Men US (1990 Desert)";
 	};
 };
 class CfgFactionClasses
