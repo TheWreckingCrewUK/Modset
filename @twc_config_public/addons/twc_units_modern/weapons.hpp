@@ -158,4 +158,32 @@ class cfgWeapons
 			};
 		};
 	};
+	class rhs_weap_rsp30_green;
+		class twc_L5A4_green: rhs_weap_rsp30_green
+	{
+		scope = 2;
+		displayname = "L5A4 Parachuting Flare Green";
+		descriptionShort = "Rocket Hand Fired Illuminating Para";
+
+	};
+	
+		class rhs_weap_rsp30_red;
+		class twc_L5A4_red: rhs_weap_rsp30_red
+	{
+		scope = 2;
+		displayname = "L5A4 Parachuting Flare Red";
+		descriptionShort = "Rocket Hand Fired Illuminating Para";
+	
+
+	};
+	
+			class rhs_weap_rsp30_white;
+		class twc_L5A4_white: rhs_weap_rsp30_white
+	{
+		scope = 2;
+		displayName = "L5A4 Parachuting Flare White";
+		descriptionShort = "Rocket Hand Fired Illuminating Para";
+
+	};
+	
 };

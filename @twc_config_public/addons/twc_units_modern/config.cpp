@@ -39,7 +39,8 @@ class CfgPatches {
 			"A3_Characters_F_Common",
 			"A3_Characters_F",
 			"a3_characters_f_beta",
-			"a3_characters_f_gamma"
+			"a3_characters_f_gamma",
+			"rhs_c_weapons"
 		};
 	};
 };
