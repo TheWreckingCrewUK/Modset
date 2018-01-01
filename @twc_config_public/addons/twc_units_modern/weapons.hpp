@@ -164,7 +164,7 @@ class cfgWeapons
 		scope = 2;
 		displayname = "L5A4 Parachuting Flare Green";
 		descriptionShort = "Rocket Hand Fired Illuminating Para";
-
+		magazines[] = {"twc_l5a4_g"};
 	};
 	
 		class rhs_weap_rsp30_red;
@@ -173,6 +173,7 @@ class cfgWeapons
 		scope = 2;
 		displayname = "L5A4 Parachuting Flare Red";
 		descriptionShort = "Rocket Hand Fired Illuminating Para";
+		magazines[] = {"twc_l5a4_r"};
 	
 
 	};
@@ -183,10 +184,33 @@ class cfgWeapons
 		scope = 2;
 		displayName = "L5A4 Parachuting Flare White";
 		descriptionShort = "Rocket Hand Fired Illuminating Para";
+		magazines[] = {"twc_l5a4_w"};
 
 	};
 	
 };
+
+class cfgmagazines{
+		class UGL_FlareGreen_F;
+		class twc_l5a4_g : UGL_FlareGreen_F
+		{
+			ammo = rhs_40mm_green;
+			displayName="L5A4 Round (Green)";
+		};	
+		class UGL_Flarered_F;
+		class twc_l5a4_r : UGL_Flarered_F
+		{
+			ammo = rhs_40mm_red;
+			displayName="L5A4 Round (Red)";
+		};	
+		class UGL_Flarewhite_F;
+		class twc_l5a4_w : UGL_Flarewhite_F
+		{
+			ammo = rhs_40mm_white;
+			displayName="L5A4 Round (White)";
+		};			
+};	
+
 
 class cfgammo
 {
