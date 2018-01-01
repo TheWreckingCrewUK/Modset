@@ -1,3 +1,16 @@
+
+class CfgFunctions 
+{
+	class TWC
+	{
+		class twc_flare_Functions
+		{
+			file = "\twc_units_modern\functions";
+		};
+	};
+};
+
+
 class cfgWeapons
 {
 //////////////////////////////  Modern  //////////////////////////////
@@ -185,10 +198,16 @@ class cfgWeapons
 		displayName = "L5A4 Parachuting Flare White";
 		descriptionShort = "Rocket Hand Fired Illuminating Para";
 		magazines[] = {"twc_l5a4_w"};
+		class EventHandlers {
+			fired = "_this select 1 call TWC_fnc_deleteflare";
+		};
 
 	};
 	
 };
+
+
+
 
 class cfgmagazines{
 		class UGL_FlareGreen_F;
