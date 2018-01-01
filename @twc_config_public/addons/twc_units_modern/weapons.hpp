@@ -187,3 +187,37 @@ class cfgWeapons
 	};
 	
 };
+
+class cfgammo
+{
+	class F_40mm_Red;
+	class rhs_40mm_red : F_40mm_Red
+	{
+		lightColor[] = {0.75,0.5,0.5,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160
+	};
+	
+		class F_40mm_white;
+	class rhs_40mm_white : F_40mm_white
+	{
+		lightColor[] = {0.75,0.75,0.75,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160
+	};
+	
+		class F_40mm_green;
+	class rhs_40mm_green : F_40mm_green
+	{
+		lightColor[] = {0.5,0.75,0.5,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160
+	};
+	
+};
