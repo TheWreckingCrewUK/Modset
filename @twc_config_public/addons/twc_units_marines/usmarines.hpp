@@ -702,10 +702,68 @@ respawnLinkedItems[]=
 "ItemWatch"
 };
 };
+class Modern_USMC_VehicleCommander: Modern_USMC_Base
+{
+scope=2;
+displayName="USMC Vehicle Commander";
+uniformClass="CUP_U_B_USArmy_PilotOverall";
+backpack="TWC_Backpack_USMC_vehiclecommander";
+linkedItems[]=
+{
+"UK3CB_BAF_H_CrewHelmet_B",
+"rhsusf_spc_crewman",
+"ItemMap",
+"ItemCompass",
+"ItemWatch",
+"ItemcTab"
+};
+respawnlinkedItems[]=
+{
+"UK3CB_BAF_H_CrewHelmet_B",
+"rhsusf_spc_crewman",
+"ItemMap",
+"ItemCompass",
+"ItemWatch",
+"ItemcTab"
+};
+weapons[]=
+{
+"Throw",
+"Put",
+"rhs_weap_m4"
+};
+respawnweapons[]=
+{
+"Throw",
+"Put",
+"rhs_weap_m4"
+};
+magazines[]=
+{
+"rhs_mag_30Rnd_556x45_Mk318_Stanag",
+"rhs_mag_30Rnd_556x45_Mk318_Stanag",
+"rhs_mag_30Rnd_556x45_Mk318_Stanag",
+"SmokeShell",
+"SmokeShell"
+};
+Respawnmagazines[]=
+{
+"rhs_mag_30Rnd_556x45_Mk318_Stanag",
+"rhs_mag_30Rnd_556x45_Mk318_Stanag",
+"rhs_mag_30Rnd_556x45_Mk318_Stanag",
+"SmokeShell",
+"SmokeShell"
+};
+};
+class Modern_USMC_VehicleCrew:Modern_USMC_vehiclecommander
+{
+	backpack ="";
+displayName="USMC Vehicle Crew";
+};
 class Modern_USMC_HeliPilot: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Helicopter Pilot";
+displayName="USMC Helicopter Pilot";
 uniformClass="CUP_U_B_USArmy_PilotOverall";
 backpack="rhsusf_falconii_coy";
 linkedItems[]=
@@ -761,11 +819,19 @@ Respawnmagazines[]=
 "SmokeShell"
 };
 };
+
+class Modern_USMC_crewchief:Modern_USMC_HeliPilot
+{
+scope=2;
+displayName="USMC Helicopter Crew Chief";
+uniformClass="CUP_U_B_USArmy_PilotOverall";
+backpack="rhsusf_falconii_coy";
+};
 class Modern_USMC_JetPilot: Modern_USMC_Base
 {
 _generalMacro="Modern_USMCJetPilot";
 scope=2;
-displayName="USMC Jet Pilot";
+displayName="USMC Fixed Wing Pilot";
 faction="twc_faction";
 editorSubcategory = "Men_Modern";
 vehicleClass="Men_Modern";

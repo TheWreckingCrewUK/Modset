@@ -745,7 +745,7 @@
 	class Modern_British_HeliPilot: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Helicopter Pilot";
+		displayName="GB Helicopter Pilot";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
 		backpack="TWC_Backpack_Modern_HeloPilot";
 		linkedItems[]=
@@ -793,11 +793,18 @@
 			"SmokeShell"
 		};
 	};
+
+class Modern_British_crewchief:Modern_British_HeliPilot
+{
+scope=2;
+displayName="GB Helicopter Crew Chief";
+};
+
 	class Modern_British_JetPilot: Modern_British_Base
 	{
 		_generalMacro="Modern_JetPilot";
 		scope=2;
-		displayName="GB Jet Pilot(Modern)";
+		displayName="GB Fixed Wing Pilot (Modern)";
 		faction="twc_faction";
 		editorSubcategory = "Men_Modern";
 		vehicleClass="Men_Modern";
@@ -1149,7 +1156,7 @@
 	class Modern_British_VehicleCrew: Modern_British_Base
 	{
 		scope=2;
-		displayName="Modern Vehicle Crewman (Modern)";
+		displayName="GB Vehicle Crewman";
 		icon="iconMan";
 		linkedItems[]=
 		{
@@ -1196,7 +1203,7 @@
 	};
 	class Modern_British_VehicleCommander: Modern_British_VehicleCrew
 	{
-		displayName="Modern Vehicle Commander (Modern)";
+		displayName="GB Vehicle Commander";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		backpack="B_AssaultPack_blk";
