@@ -82,7 +82,7 @@ respawntems[]=
 class Modern_USMC_Squadleader: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Squad Leader@Charlie Squad";
+displayName="Charlie Squad Leader@Charlie Section";
 icon="iconManLeader";
 backpack="TWC_Backpack_USMC_Sectionleader";
 linkedItems[]=

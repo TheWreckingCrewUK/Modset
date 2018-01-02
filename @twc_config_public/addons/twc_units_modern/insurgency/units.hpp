@@ -335,16 +335,6 @@
 
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
 			"UK3CB_BAF_338_5Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
@@ -356,16 +346,6 @@
 
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
 			"UK3CB_BAF_338_5Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
@@ -474,12 +454,7 @@
 
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
@@ -491,12 +466,7 @@
 
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
