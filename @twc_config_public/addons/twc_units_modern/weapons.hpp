@@ -198,10 +198,6 @@ class cfgWeapons
 		displayName = "L5A4 Parachuting Flare White";
 		descriptionShort = "Rocket Hand Fired Illuminating Para";
 		magazines[] = {"twc_l5a4_w"};
-		class EventHandlers {
-			fired = "_this select 1 call TWC_fnc_deleteflare";
-		};
-
 	};
 	
 };
@@ -240,7 +236,7 @@ class cfgammo
 		brightness  = 75;
 		intensity = 1000000;
 		coefgravity = 0.15;
-		timeToLive = 160
+		timeToLive = 160;
 	};
 	
 		class F_40mm_white;
@@ -250,7 +246,7 @@ class cfgammo
 		brightness  = 75;
 		intensity = 1000000;
 		coefgravity = 0.15;
-		timeToLive = 160
+		timeToLive = 160;
 	};
 	
 		class F_40mm_green;
@@ -260,7 +256,7 @@ class cfgammo
 		brightness  = 75;
 		intensity = 1000000;
 		coefgravity = 0.15;
-		timeToLive = 160
+		timeToLive = 160;
 	};
 	
 };
