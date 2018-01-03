@@ -82,7 +82,7 @@
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Section Leader@Alpha Squad";
+		displayName="Alpha Section Leader@Alpha Section";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
@@ -745,7 +745,7 @@
 	class Modern_British_HeliPilot: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Helicopter Pilot";
+		displayName="GB Helicopter Pilot";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
 		backpack="TWC_Backpack_Modern_HeloPilot";
 		linkedItems[]=
@@ -793,11 +793,18 @@
 			"SmokeShell"
 		};
 	};
+
+class Modern_British_crewchief:Modern_British_HeliPilot
+{
+scope=2;
+displayName="GB Helicopter Crew Chief";
+};
+
 	class Modern_British_JetPilot: Modern_British_Base
 	{
 		_generalMacro="Modern_JetPilot";
 		scope=2;
-		displayName="GB Jet Pilot(Modern)";
+		displayName="GB Fixed Wing Pilot (Modern)";
 		faction="twc_faction";
 		editorSubcategory = "Men_Modern";
 		vehicleClass="Men_Modern";
@@ -886,16 +893,6 @@
 
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
 			"UK3CB_BAF_338_5Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
@@ -907,16 +904,6 @@
 
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
-			"UK3CB_BAF_338_5Rnd",
 			"UK3CB_BAF_338_5Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
@@ -1025,12 +1012,7 @@
 
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
@@ -1042,12 +1024,7 @@
 
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd",
-			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
@@ -1149,7 +1126,7 @@
 	class Modern_British_VehicleCrew: Modern_British_Base
 	{
 		scope=2;
-		displayName="Modern Vehicle Crewman (Modern)";
+		displayName="GB Vehicle Crewman";
 		icon="iconMan";
 		linkedItems[]=
 		{
@@ -1196,7 +1173,7 @@
 	};
 	class Modern_British_VehicleCommander: Modern_British_VehicleCrew
 	{
-		displayName="Modern Vehicle Commander (Modern)";
+		displayName="GB Vehicle Commander";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		backpack="B_AssaultPack_blk";
@@ -1456,4 +1433,68 @@
 			"SmokeShell",
 			"SmokeShell"
 		};
+	};
+	
+		class Modern_Artillery_Commander: Modern_British_Base
+	{
+		scope=2;
+		displayName="Artillery Gun Commander";
+		icon="iconManLeader";
+		backpack="TWC_Backpack_Modern_Sectionlead";
+		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_MG_A",
+			"UK3CB_BAF_H_Mk7_Camo_D",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_MG_A",
+			"UK3CB_BAF_H_Mk7_Camo_D",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"SmokeShell",
+			"SmokeShell"
+		};
+	};
+
+			class Modern_Artillery_Gunner: Modern_Artillery_Commander
+	{
+		scope=2;
+		displayName="Artillery Gun Operator";
+		backpack="";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_TShirt";
+		
 	};

@@ -150,13 +150,13 @@ class ACE_Medical_Advanced {
 		class Medication {
 			class Morphine {
 				painReduce = 0.5;
-				viscosityChange = -15;
+				viscosityChange = -5;
 			};
 			
 			class Epinephrine {
 				timeInSystem = 300;
 				maxDose = 4;
-				viscosityChange = 10;
+				viscosityChange = 5;
 			};
 		};
 	};

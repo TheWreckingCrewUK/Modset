@@ -1,4 +1,5 @@
 	class rhsusf_assault_eagleaiii_coy;
+	class B_AssaultPack_cbr;
 	
 	class TWC_Backpack_USMC_Sectionleader: rhsusf_assault_eagleaiii_coy
 	{
@@ -16,6 +17,21 @@
 			maga_nc(SmokeShellGreen,2);
 		};
 	};
+	
+		
+	class TWC_Backpack_USMC_vehiclecommander: B_AssaultPack_cbr
+	{
+		class TransportItems
+		{
+			item_nc(ACRE_PRC117F,1);
+		};
+		class TransportMagazines
+		{
+			maga_nc(SmokeShellRed,2);
+			maga_nc(SmokeShellGreen,2);
+		};
+	};
+	
 	class TWC_Backpack_USMC_Teamleader: rhsusf_assault_eagleaiii_coy
 	{
 		class TransportMagazines

@@ -653,17 +653,17 @@
 			class _xx_338
 			{
 				magazine = "UK3CB_BAF_338_5Rnd";
-				count = 6;
+				count = 1;
 			};
 			class _xx_762
 			{
 				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
-				count = 4;
+				count = 1;
 			};
 			class _xx_762_t
 			{
 				magazine = "UK3CB_BAF_762_L42A1_20Rnd_T";
-				count = 3;
+				count = 1;
 			};
 			class _xx_Smoke
 			{

@@ -1,3 +1,16 @@
+
+class CfgFunctions 
+{
+	class TWC
+	{
+		class twc_flare_Functions
+		{
+			file = "\twc_units_modern\functions";
+		};
+	};
+};
+
+
 class cfgWeapons
 {
 //////////////////////////////  Modern  //////////////////////////////
@@ -158,4 +171,92 @@ class cfgWeapons
 			};
 		};
 	};
+	class rhs_weap_rsp30_green;
+		class twc_L5A4_green: rhs_weap_rsp30_green
+	{
+		scope = 2;
+		displayname = "L5A4 Parachuting Flare Green";
+		descriptionShort = "Rocket Hand Fired Illuminating Para";
+		magazines[] = {"twc_l5a4_g"};
+	};
+	
+		class rhs_weap_rsp30_red;
+		class twc_L5A4_red: rhs_weap_rsp30_red
+	{
+		scope = 2;
+		displayname = "L5A4 Parachuting Flare Red";
+		descriptionShort = "Rocket Hand Fired Illuminating Para";
+		magazines[] = {"twc_l5a4_r"};
+	
+
+	};
+	
+			class rhs_weap_rsp30_white;
+		class twc_L5A4_white: rhs_weap_rsp30_white
+	{
+		scope = 2;
+		displayName = "L5A4 Parachuting Flare White";
+		descriptionShort = "Rocket Hand Fired Illuminating Para";
+		magazines[] = {"twc_l5a4_w"};
+	};
+	
+};
+
+
+
+
+class cfgmagazines{
+		class UGL_FlareGreen_F;
+		class twc_l5a4_g : UGL_FlareGreen_F
+		{
+			ammo = rhs_40mm_green;
+			displayName="L5A4 Round (Green)";
+		};	
+		class UGL_Flarered_F;
+		class twc_l5a4_r : UGL_Flarered_F
+		{
+			ammo = rhs_40mm_red;
+			displayName="L5A4 Round (Red)";
+		};	
+		class UGL_Flarewhite_F;
+		class twc_l5a4_w : UGL_Flarewhite_F
+		{
+			ammo = rhs_40mm_white;
+			displayName="L5A4 Round (White)";
+		};			
+};	
+
+
+class cfgammo
+{
+	class F_40mm_Red;
+	class rhs_40mm_red : F_40mm_Red
+	{
+		lightColor[] = {0.75,0.5,0.5,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160;
+	};
+	
+		class F_40mm_white;
+	class rhs_40mm_white : F_40mm_white
+	{
+		lightColor[] = {0.75,0.75,0.75,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160;
+	};
+	
+		class F_40mm_green;
+	class rhs_40mm_green : F_40mm_green
+	{
+		lightColor[] = {0.5,0.75,0.5,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160;
+	};
+	
 };
