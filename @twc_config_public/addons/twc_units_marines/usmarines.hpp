@@ -773,7 +773,7 @@ linkedItems[]=
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
-"ACE_microDAGR_Item"
+"ACE_microDAGR"
 };
 respawnLinkedItems[]=
 {
@@ -782,7 +782,7 @@ respawnLinkedItems[]=
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
-"ACE_microDAGR_Item"
+"ACE_microDAGR"
 };
 weapons[]=
 {
@@ -846,7 +846,7 @@ linkedItems[]=
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
-"ACE_microDAGR_Item"
+"ACE_microDAGR"
 };
 respawnLinkedItems[]=
 {
@@ -855,7 +855,7 @@ respawnLinkedItems[]=
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
-"ACE_microDAGR_Item"
+"ACE_microDAGR"
 };
 weapons[]=
 {
