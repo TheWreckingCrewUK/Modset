@@ -44,7 +44,7 @@ if ( _probability >= _diceRoll ) exitWith {
 
 	_target setVariable ["ACE_isUnconscious", false, true]; // might flash conciousness - kinda like it tbh
 	if (_target getVariable ["ace_medical_inReviveState", false]) then {
-		_target setVariable ["ace_medical_inReviveState", nil, true];
+		_target setVariable ["ace_medical_inReviveState", false, true];
 	};
 
 	[_target, "activity", localize "STR_TWC_DEFIB_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
