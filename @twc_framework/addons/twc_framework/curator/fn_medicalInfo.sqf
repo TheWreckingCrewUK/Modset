@@ -25,7 +25,7 @@ if((_mouseOver select 0) != "OBJECT") then{
 	if !(_unit isKindOf "CAManBase") then{
 		hint "Unit has to be human";
 	}else{
-		hint parseText format ["<t align='center'><t size='1.2' shadow='1' shadowColor='#000000' color='#ff0000'>Medical Status: <br/> %1</t><br/><br/><t shadow='1' shadowColor='#000000'>Blood Volume</t>: %2 \100<br/><t shadow='1' shadowColor='#000000'>Pain: %3</t><br/><t shadow='1' shadowColor='#000000'>Heart Rate: %4</t><br/><t shadow='1' shadowColor='#000000'>Blood Pressure: %5<br/><br/>", (name _unit), (_unit getVariable "ace_medical_bloodVolume"), (_unit getVariable "ace_medical_pain"), (_unit getVariable "ace_medical_heartRate"), (_unit getVariable "ace_medical_bloodPressure")];
+		hint parseText format ["<t align='center'><t size='1.2' shadow='1' shadowColor='#000000' color='#ff0000'>Medical Status: <br/> %1</t><br/><br/><t shadow='1' shadowColor='#000000'>Blood Volume</t>: %2 \100<br/><t shadow='1' shadowColor='#000000'>Pain: %3</t><br/><t shadow='1' shadowColor='#000000'>Heart Rate: %4</t><br/><t shadow='1' shadowColor='#000000'>Blood Pressure: %5<br/><t shadow='1' shadowColor='#000000'>Revive State: %6</t><br/><br/>", (name _unit), (_unit getVariable "ace_medical_bloodVolume"), (_unit getVariable "ace_medical_pain"), (_unit getVariable "ace_medical_heartRate"), (_unit getVariable "ace_medical_bloodPressure"), (_unit getVariable "ace_medical_inReviveState")];
 	};
 };
 
