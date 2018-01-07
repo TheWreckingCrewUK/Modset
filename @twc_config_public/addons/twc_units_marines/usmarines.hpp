@@ -707,7 +707,7 @@ class Modern_USMC_VehicleCommander: Modern_USMC_Base
 scope=2;
 displayName="USMC Vehicle Commander";
 uniformClass="CUP_U_B_USArmy_PilotOverall";
-backpack="TWC_Backpack_USMC_vehiclecommander";
+backpack="TWC_Backpack_Modern_HeloPilot";
 linkedItems[]=
 {
 "UK3CB_BAF_H_CrewHelmet_B",
@@ -825,7 +825,7 @@ class Modern_USMC_crewchief:Modern_USMC_HeliPilot
 scope=2;
 displayName="USMC Helicopter Crew Chief";
 uniformClass="CUP_U_B_USArmy_PilotOverall";
-backpack="";
+backpack="TWC_Backpack_Modern_HeloPilot";
 };
 class Modern_USMC_JetPilot: Modern_USMC_Base
 {
