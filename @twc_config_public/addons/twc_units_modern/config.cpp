@@ -81,19 +81,6 @@ class CfgVehicles
 	
 	#include "insurgency\units.hpp"
 	
-	#include "backpacks.hpp"
-	
-		class twc_public_c5_hercules: CUP_B_C130J_GB {
-		scope=2;
-		side=1;
-		faction="twc_faction";
-		author="CUP";
-		displayname="C5 Hercules";
-		
-		class TransportMagazines { };
-		class TransportItems { };
-		class TransportWeapons { };
-	};
-	
+	#include "backpacks.hpp"	
 };
 #include "weapons.hpp"

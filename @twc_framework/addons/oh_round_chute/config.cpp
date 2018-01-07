@@ -1,6 +1,8 @@
 class CfgPatches {
 	class parachute {
-		units[]={};
+		units[]={
+			"twc_c5_hercules"
+		};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]={};
@@ -8,6 +10,7 @@ class CfgPatches {
 };
 
 class DefaultEventhandlers;
+class Eventhandlers;
 
 class CfgMovesBasic {
 	class DefaultDie;
@@ -15,11 +18,23 @@ class CfgMovesBasic {
 		OH_Para_Pilot = "OH_Para_Pilot";
 	};
 };
+class CfgFactionClasses {
+	class TWC_General {
+		displayName = "TWC General Operation Units";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
+	};
+};
 
-class CfgFunctions {
-	class TWC {
-		class Func {
-			file="oh_round_chute\data\scripts";
+class CfgFunctions 
+{
+	class TWC
+	{
+		class TWC_Paradrop
+		{
+			file="oh_round_chute\functions";
 			class Jumpout {};
 		};
 	};
@@ -47,14 +62,6 @@ class CfgMovesMaleSdr: CfgMovesBasic {
 				"KIA_Para_Pilot",
 				1
 			};
-		};
-	};
-};
-
-class Extended_InitPost_EventHandlers {
-	class Air {
-		class oh_jump_init {
-			init = "[_this select 0] execVM ""oh_round_chute\data\scripts\init.sqf"";";
 		};
 	};
 };
@@ -209,5 +216,21 @@ class CfgVehicles {
 		scope=1;
 		displayname="T-10";
 		parachuteclass="OH_T10_Parachute";
+	};
+	class CUP_B_C130J_GB;
+	class twc_c5_hercules: CUP_B_C130J_GB {
+		scope=2;
+		side=1;
+		faction="TWC_General";
+		author="CUP";
+		displayname="C5 Hercules";
+		
+		class TransportMagazines { };
+		class TransportItems { };
+		class TransportWeapons { };
+		class Eventhandlers: Eventhandlers
+		{
+			init = "[(_this select 0)] execVM 'oh_round_chute\init.sqf';";
+		};		
 	};
 };
