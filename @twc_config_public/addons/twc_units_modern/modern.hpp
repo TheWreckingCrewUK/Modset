@@ -798,7 +798,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 {
 		scope=2;
 		displayName="GB Helicopter Crew Chief";
-		backpack="";
+		backpack="TWC_Backpack_Modern_HeloPilot";
 };
 
 	class Modern_British_JetPilot: Modern_British_Base
@@ -1179,7 +1179,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		displayName="GB Vehicle Commander";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		backpack="B_AssaultPack_blk";
+		backpack="TWC_Backpack_Modern_HeloPilot";
 		linkedItems[]=
 		{	
 			"UK3CB_BAF_H_CrewHelmet_ESS_A",
