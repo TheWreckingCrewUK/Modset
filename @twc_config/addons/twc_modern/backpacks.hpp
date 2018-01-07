@@ -278,6 +278,11 @@
 		mass = 59.84;
 		class TransportItems
 		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
 			class _xx_Wire_Cutters
 			{
 				name = "ACE_wirecutter";
