@@ -380,10 +380,10 @@
 	
 	// NEW IRA Units - "Troubles"
 	// Old ones kept for compatability
-	class IRA_L42Sniper: I_Soldier_F {
-		_generalMacro = "IRA_L42Sniper";
+	class IRA_Field_L42Sniper: I_Soldier_F {
+		_generalMacro = "IRA_Field_L42Sniper";
 		scope = 2;
-		displayName = "Sniper (L42)";
+		displayName = "Field Fighter (L42 Sniper)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
 		vehicleClass = "Men_Troubles";
@@ -438,6 +438,1049 @@
 			"HandGrenade",
 			"CUP_7Rnd_45ACP_1911",
 			"CUP_7Rnd_45ACP_1911"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_Bren: I_Soldier_F {
+		_generalMacro = "IRA_Field_Bren";
+		scope = 2;
+		displayName = "Field Fighter (Bren Gunner)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CUP_U_I_GUE_Anorak_02";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_OLI",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_OLI",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"ukcw_L4",
+			"ukcw_hipower"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"ukcw_L4",
+			"ukcw_hipower"
+		};
+
+		magazines[] = {
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19"
+		};
+
+		Respawnmagazines[] = {
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_30Rnd_762x51_STANAG",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_Falv1: I_Soldier_F {
+		_generalMacro = "IRA_Field_Falv1";
+		scope = 2;
+		displayName = "Field Fighter (FN FAL V1)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CUP_U_B_FR_Light";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"CUP_V_OI_TKI_Jacket1_03",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"CUP_V_OI_TKI_Jacket1_03",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_FNFAL"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_FNFAL"
+		};
+
+		magazines[] = {
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGO"
+		};
+
+		Respawnmagazines[] = {
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGO"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_Falv2: I_Soldier_F {
+		_generalMacro = "IRA_Field_Falv2";
+		scope = 2;
+		displayName = "Field Fighter (FN FAL V2)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_Smock_MTP_DPMW";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_oli",
+			"V_BandollierB_oli",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_oli",
+			"V_BandollierB_oli",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_FNFAL"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_FNFAL"
+		};
+
+		magazines[] = {
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_AK74V1: I_Soldier_F {
+		_generalMacro = "IRA_Field_AK74V1";
+		scope = 2;
+		displayName = "Field Fighter (AK-74 V1)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CUP_U_I_GUE_Flecktarn2";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_oli",
+			"V_Pocketed_black_F",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_oli",
+			"V_Pocketed_black_F",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_AK74"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_AK74"
+		};
+
+		magazines[] = {
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_AK74V2: I_Soldier_F {
+		_generalMacro = "IRA_Field_AK74V2";
+		scope = 2;
+		displayName = "Field Fighter (AK-74 V2)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CUP_U_I_GUE_Anorak_02";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_AK74"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_AK74"
+		};
+
+		magazines[] = {
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_M16A2v1: I_Soldier_F {
+		_generalMacro = "IRA_Field_M16A2v1";
+		scope = 2;
+		displayName = "Field Fighter (M16A2 V1)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CUP_U_O_SLA_Overalls_Tank";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Bandanna_aviator",
+			"V_Pocketed_black_F",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Bandanna_aviator",
+			"V_Pocketed_black_F",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_M16A2"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_M16A2"
+		};
+
+		magazines[] = {
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_M16A2v2: I_Soldier_F {
+		_generalMacro = "IRA_Field_M16A2v2";
+		scope = 2;
+		displayName = "Field Fighter (M16A2 V2)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CUP_U_B_FR_Scout";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMT",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMT",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_M16A2"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_M16A2"
+		};
+
+		magazines[] = {
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_SLRv1: I_Soldier_F {
+		_generalMacro = "IRA_Field_SLRv1";
+		scope = 2;
+		displayName = "Field Fighter (SLR V1)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CUP_U_O_TK_Green";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"CUP_V_OI_TKI_Jacket4_05",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"CUP_V_OI_TKI_Jacket4_05",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L1A1_Wood"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L1A1_Wood"
+		};
+
+		magazines[] = {
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_SLRv2: I_Soldier_F {
+		_generalMacro = "IRA_Field_SLRv2";
+		scope = 2;
+		displayName = "Field Fighter (SLR V2)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_Smock_DPMW";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_oli",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_oli",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L1A1_Wood"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L1A1_Wood"
+		};
+
+		magazines[] = {
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+	
+	class IRA_Field_SLR_AT: I_Soldier_F {
+		_generalMacro = "IRA_Field_SLR_AT";
+		scope = 2;
+		displayName = "Field Fighter (SLR/LAW)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_JumperUniform_DPMW";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_MTP",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_MTP",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L1A1_Wood",
+			"CUP_launch_M72A6"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L1A1_Wood",
+			"CUP_launch_M72A6"
+		};
+
+		magazines[] = {
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_M16A2_AT: I_Soldier_F {
+		_generalMacro = "IRA_Field_M16A2_AT";
+		scope = 2;
+		displayName = "Field Fighter (M16A2/RPG18)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CUP_U_I_GUE_Anorak_02";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_oli",
+			"CUP_V_I_Carrier_Belt",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_oli",
+			"CUP_V_I_Carrier_Belt",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_M16A2",
+			"CUP_launch_RPG18"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_M16A2",
+			"CUP_launch_RPG18"
+		};
+
+		magazines[] = {
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_Enfieldv1: I_Soldier_F {
+		_generalMacro = "IRA_Field_Enfieldv1";
+		scope = 2;
+		displayName = "Field Fighter (Enfield V1)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CUP_U_I_GUE_Anorak_02";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"CUP_V_O_TK_OfficerBelt",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"CUP_V_O_TK_OfficerBelt",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"CUP_srifle_LeeEnfield"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"CUP_srifle_LeeEnfield"
+		};
+
+		magazines[] = {
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_Enfieldv2: I_Soldier_F {
+		_generalMacro = "IRA_Field_Enfieldv2";
+		scope = 2;
+		displayName = "Field Fighter (Enfield V2)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CUP_U_C_Woodlander_01";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_oli",
+			"CUP_V_O_TK_OfficerBelt",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Balaclava_oli",
+			"CUP_V_O_TK_OfficerBelt",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"CUP_srifle_LeeEnfield"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"CUP_srifle_LeeEnfield"
+		};
+
+		magazines[] = {
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_RPK: I_Soldier_F {
+		_generalMacro = "IRA_Field_RPK";
+		scope = 2;
+		displayName = "Field Fighter (RPK)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CUP_U_I_GUE_Anorak_01";
+		backpack = "B_Messenger_Black_F";
+		
+		linkedItems[] = {
+			"G_Balaclava_blk",
+			"V_BandollierB_rgr",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"G_Balaclava_blk",
+			"V_BandollierB_rgr",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_RPK74"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"CUP_arifle_RPK74"
+		};
+
+		magazines[] = {
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Respawnmagazines[] = {
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
+
+	class IRA_Field_M79: I_Soldier_F {
+		_generalMacro = "IRA_Field_M79";
+		scope = 2;
+		displayName = "Field Fighter (M79 Grenadier)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_JumperUniform_DPMW";
+		backpack = "";
+		
+		linkedItems[] = {
+			"G_Bandanna_aviator",
+			"G_Balaclava_blk",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"G_Bandanna_aviator",
+			"G_Balaclava_blk",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"CUP_glaunch_M79",
+			"ukcw_hipower"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"CUP_glaunch_M79",
+			"ukcw_hipower"
+		};
+
+		magazines[] = {
+			"CUP_1Rnd_HE_M203",
+			"CUP_1Rnd_HE_M203",
+			"CUP_1Rnd_HE_M203",
+			"CUP_1Rnd_HE_M203",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19"
+		};
+
+		Respawnmagazines[] = {
+			"CUP_1Rnd_HE_M203",
+			"CUP_1Rnd_HE_M203",
+			"CUP_1Rnd_HE_M203",
+			"CUP_1Rnd_HE_M203",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19"
 		};
 
 		Items[] = {
