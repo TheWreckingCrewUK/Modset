@@ -38,6 +38,7 @@ class CfgPatches
 			"IRA_Rifleman_FAL",
 			"IRA_Rifleman_AT",
 			"IRA_Autorifleman",
+			"IRA_L42Sniper",
 			"usa_1970_medic",
 			"usa_1970_leader",
 			"usa_1970_grenadier",
@@ -162,6 +163,10 @@ class CfgEditorSubCategories
 	class Men_IRA
 	{
 		displayName = "Men (IRA)";
+	};
+	class Men_Troubles
+	{
+		displayName = "Men (Troubles)";
 	};
 	class TWC_tak_Civ_Men
 	{
