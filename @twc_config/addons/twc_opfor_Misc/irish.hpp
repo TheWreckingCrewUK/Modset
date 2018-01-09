@@ -1,6 +1,7 @@
 	class IRA_Squadleader: I_Soldier_F {
 		_generalMacro = "IRA_Squadleader";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Section Leader";
 		faction = "ira_units";
 		editorSubcategory = "Men_IRA";
@@ -66,6 +67,7 @@
 	class IRA_Rifleman_M16: I_Soldier_F {
 		_generalMacro = "IRA_Rifleman_M16";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Rifleman (M16)";
 		faction = "ira_units";
 		editorSubcategory = "Men_IRA";
@@ -133,6 +135,7 @@
 	class IRA_Rifleman_AKM: I_Soldier_F {
 		_generalMacro = "IRA_Rifleman_AKM";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Rifleman (AKM)";
 		faction = "ira_units";
 		editorSubcategory = "Men_IRA";
@@ -196,6 +199,7 @@
 	class IRA_Rifleman_FAL: I_Soldier_F {
 		_generalMacro = "IRA_Rifleman_FAL";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Rifleman (FAL)";
 		faction = "ira_units";
 		editorSubcategory = "Men_IRA";
@@ -261,6 +265,7 @@
 	class IRA_Rifleman_AT: I_Soldier_F {
 		_generalMacro = "IRA_Rifleman_AT";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "AT Rifleman";
 		faction = "ira_units";
 		editorSubcategory = "Men_IRA";
@@ -326,6 +331,7 @@
 	class IRA_Autorifleman: I_Soldier_F {
 		_generalMacro = "IRA_Autorifleman";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Autorifleman";
 		faction = "ira_units";
 		editorSubcategory = "Men_IRA";
@@ -383,6 +389,7 @@
 	class IRA_Field_L42Sniper: I_Soldier_F {
 		_generalMacro = "IRA_Field_L42Sniper";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (L42 Sniper)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -452,6 +459,7 @@
 	class IRA_Field_Bren: I_Soldier_F {
 		_generalMacro = "IRA_Field_Bren";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (Bren Gunner)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -525,6 +533,7 @@
 	class IRA_Field_Falv1: I_Soldier_F {
 		_generalMacro = "IRA_Field_Falv1";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (FN FAL V1)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -592,6 +601,7 @@
 	class IRA_Field_Falv2: I_Soldier_F {
 		_generalMacro = "IRA_Field_Falv2";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (FN FAL V2)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -661,6 +671,7 @@
 	class IRA_Field_AK74V1: I_Soldier_F {
 		_generalMacro = "IRA_Field_AK74V1";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (AK-74 V1)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -732,6 +743,7 @@
 	class IRA_Field_AK74V2: I_Soldier_F {
 		_generalMacro = "IRA_Field_AK74V2";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (AK-74 V2)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -803,6 +815,7 @@
 	class IRA_Field_M16A2v1: I_Soldier_F {
 		_generalMacro = "IRA_Field_M16A2v1";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (M16A2 V1)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -872,6 +885,7 @@
 	class IRA_Field_M16A2v2: I_Soldier_F {
 		_generalMacro = "IRA_Field_M16A2v2";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (M16A2 V2)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -941,6 +955,7 @@
 	class IRA_Field_SLRv1: I_Soldier_F {
 		_generalMacro = "IRA_Field_SLRv1";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (SLR V1)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1010,6 +1025,7 @@
 	class IRA_Field_SLRv2: I_Soldier_F {
 		_generalMacro = "IRA_Field_SLRv2";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (SLR V2)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1079,6 +1095,7 @@
 	class IRA_Field_SLR_AT: I_Soldier_F {
 		_generalMacro = "IRA_Field_SLR_AT";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (SLR/LAW)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1150,6 +1167,7 @@
 	class IRA_Field_M16A2_AT: I_Soldier_F {
 		_generalMacro = "IRA_Field_M16A2_AT";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (M16A2/RPG18)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1219,6 +1237,7 @@
 	class IRA_Field_Enfieldv1: I_Soldier_F {
 		_generalMacro = "IRA_Field_Enfieldv1";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (Enfield V1)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1288,6 +1307,7 @@
 	class IRA_Field_Enfieldv2: I_Soldier_F {
 		_generalMacro = "IRA_Field_Enfieldv2";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (Enfield V2)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1357,6 +1377,7 @@
 	class IRA_Field_RPK: I_Soldier_F {
 		_generalMacro = "IRA_Field_RPK";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (RPK)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1428,6 +1449,7 @@
 	class IRA_Field_M79: I_Soldier_F {
 		_generalMacro = "IRA_Field_M79";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Field Fighter (M79 Grenadier)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1495,6 +1517,7 @@
 	class IRA_Urban_Sterling: I_Soldier_F {
 		_generalMacro = "IRA_Urban_Sterling";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Urban Fighter (Sterling)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1562,6 +1585,7 @@
 	class IRA_Urban_Pistoleer: I_Soldier_F {
 		_generalMacro = "IRA_Urban_Pistoleer";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Urban Fighter (Pistol/Grenades)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1621,6 +1645,7 @@
 	class IRA_Urban_AKS74U: I_Soldier_F {
 		_generalMacro = "IRA_Urban_AKS74U";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Urban Fighter (AKS-74U)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1682,6 +1707,7 @@
 	class IRA_Urban_MP5: I_Soldier_F {
 		_generalMacro = "IRA_Urban_MP5";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Urban Fighter (MP5)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
@@ -1753,6 +1779,7 @@
 	class IRA_Urban_Skorpion: I_Soldier_F {
 		_generalMacro = "IRA_Urban_Skorpion";
 		scope = 2;
+		scopeCurator = 2;
 		displayName = "Urban Fighter (Skorpion)";
 		faction = "ira_units";
 		editorSubcategory = "Men_Troubles";
