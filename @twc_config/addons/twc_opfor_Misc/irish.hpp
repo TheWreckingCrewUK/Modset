@@ -540,7 +540,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "CUP_U_B_FR_Light";
+		uniformClass = "CUP_U_I_GUE_Flecktarn3";
 		backpack = "";
 		
 		linkedItems[] = {
@@ -608,7 +608,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "UK3CB_BAF_U_Smock_MTP_DPMW";
+		uniformClass = "CUP_U_I_GUE_Flecktarn2";
 		backpack = "";
 		
 		linkedItems[] = {
@@ -822,7 +822,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "CUP_U_O_SLA_Overalls_Tank";
+		uniformClass = "U_IG_Guerilla3_1";
 		backpack = "";
 		
 		linkedItems[] = {
@@ -892,7 +892,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "CUP_U_B_FR_Scout";
+		uniformClass = "CUP_U_I_GUE_Anorak_02";
 		backpack = "";
 		
 		linkedItems[] = {
@@ -962,7 +962,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "CUP_U_O_TK_Green";
+		uniformClass = "CUP_U_I_GUE_Anorak_02";
 		backpack = "";
 		
 		linkedItems[] = {
@@ -1032,7 +1032,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "UK3CB_BAF_U_Smock_DPMW";
+		uniformClass = "CUP_U_I_GUE_Anorak_02";
 		backpack = "";
 		
 		linkedItems[] = {
@@ -1102,7 +1102,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "UK3CB_BAF_U_JumperUniform_DPMW";
+		uniformClass = "CUP_U_I_GUE_Anorak_02";
 		backpack = "";
 		
 		linkedItems[] = {
@@ -1314,7 +1314,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "CUP_U_C_Woodlander_01";
+		uniformClass = "CUP_U_I_GUE_Anorak_02";
 		backpack = "";
 		
 		linkedItems[] = {
@@ -1456,7 +1456,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "UK3CB_BAF_U_JumperUniform_DPMW";
+		uniformClass = "CUP_U_I_GUE_Flecktarn3";
 		backpack = "";
 		
 		linkedItems[] = {
@@ -1652,7 +1652,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "CUP_B_USMC_Navy_White";
+		uniformClass = "CUP_U_I_GUE_Anorak_03";
 		backpack = "";
 		
 		linkedItems[] = {
@@ -1714,7 +1714,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "CUP_U_C_Woodlander_01";
+		uniformClass = "CUP_U_I_GUE_Flecktarn3";
 		backpack = "";
 		
 		linkedItems[] = {
@@ -1786,7 +1786,7 @@
 		vehicleClass = "Men_Troubles";
 		icon = "iconManLeader";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "CUP_U_C_Profiteer_03";
+		uniformClass = "CUP_U_I_GUE_Anorak_03";
 		backpack = "";
 		
 		linkedItems[] = {
