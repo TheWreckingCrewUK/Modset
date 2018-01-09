@@ -54,6 +54,8 @@ class CfgPatches
 			"IRA_Field_Enfieldv2",
 			"IRA_Field_RPK",
 			"IRA_Field_M79",
+			"IRA_Field_AA",
+			"IRA_Field_Static",
 			"IRA_Urban_Sterling",
 			"IRA_Urban_Pistoleer",
 			"IRA_Urban_AKS74U",

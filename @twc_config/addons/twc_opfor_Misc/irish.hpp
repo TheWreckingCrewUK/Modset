@@ -1842,4 +1842,128 @@
 		};
 	};
 	
+	class IRA_Field_AA: I_Soldier_F {
+		_generalMacro = "IRA_Field_AA";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Field Fighter (Igla AA)";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "U_BG_Guerilla2_3";
+		backpack = "B_LegStrapBag_black_F";
+		
+		linkedItems[] = {
+			"CUP_V_I_Guerilla_Jacket",
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"CUP_V_I_Guerilla_Jacket",
+			"H_Beret_blk",
+			"G_Balaclava_blk",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"ukcw_hipower",
+			"CUP_launch_Igla"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"ukcw_hipower",
+			"CUP_launch_Igla"
+		};
+
+		magazines[] = {
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ACE_PreloadedMissileDummy_Igla_CUP"
+		};
+
+		Respawnmagazines[] = {
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ACE_PreloadedMissileDummy_Igla_CUP"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
 	
+	class IRA_Field_Static: I_Soldier_F {
+		_generalMacro = "IRA_Field_Static";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Static Gunner";
+		faction = "ira_units";
+		editorSubcategory = "Men_Troubles";
+		vehicleClass = "Men_Troubles";
+		icon = "iconManLeader";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "U_BG_Guerrilla_6_1";
+		backpack = "";
+		
+		linkedItems[] = {
+			"H_Beret_blk",
+			"G_Bandanna_aviator",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"H_Beret_blk",
+			"G_Bandanna_aviator",
+			"ItemWatch"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put",
+			"ukcw_hipower"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put",
+			"ukcw_hipower"
+		};
+
+		magazines[] = {
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ACE_PreloadedMissileDummy_Igla_CUP"
+		};
+
+		Respawnmagazines[] = {
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"ACE_PreloadedMissileDummy_Igla_CUP"
+		};
+
+		Items[] = {
+			"ACE_fieldDressing"
+		};
+
+		respawntems[] = {
+			"ACE_fieldDressing"
+		};
+	};
