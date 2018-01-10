@@ -1,4 +1,4 @@
-params [["_target", objNull, [objNull]]];
+params [["_target", objNull]];
 
 _unCon = _target getVariable ["ace_medical_inReviveState", false];
 
