@@ -29,6 +29,9 @@ respawnLinkedItems[]=
 Items[]=
 {
 "ACE_fieldDressing",
+"ACRE_PRC148",
+"ACE_EarPlugs",
+"rhsusf_ANPVS_15",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
@@ -48,13 +51,14 @@ Items[]=
 "ACE_epinephrine",
 "ACE_tourniquet",
 "ACE_tourniquet",
-"ACRE_PRC148",
-"ACE_MapTools",
-"ACE_EarPlugs"
+"ACE_MapTools"
 };
 respawntems[]=
 {
 "ACE_fieldDressing",
+"ACRE_PRC148",
+"ACE_EarPlugs",
+"rhsusf_ANPVS_15",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
@@ -74,9 +78,7 @@ respawntems[]=
 "ACE_epinephrine",
 "ACE_tourniquet",
 "ACE_tourniquet",
-"ACRE_PRC148",
-"ACE_MapTools",
-"ACE_EarPlugs"
+"ACE_MapTools"
 };
 };
 class Modern_USMC_Squadleader: Modern_USMC_Base
