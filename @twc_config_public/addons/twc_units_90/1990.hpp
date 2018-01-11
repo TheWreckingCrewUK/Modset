@@ -1995,7 +1995,7 @@
 			"ACE_MapTools",
 			"ACRE_PRC148"	
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
 			"ACE_EarPlugs",
 			"ACRE_PRC148",

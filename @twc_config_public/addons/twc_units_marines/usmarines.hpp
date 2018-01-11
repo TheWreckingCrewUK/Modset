@@ -31,7 +31,7 @@ Items[]=
 "ACE_fieldDressing",
 "ACRE_PRC148",
 "ACE_EarPlugs",
-"rhsusf_ANPVS_15",
+"rhsusf_ANPVS_14",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
@@ -53,12 +53,12 @@ Items[]=
 "ACE_tourniquet",
 "ACE_MapTools"
 };
-respawntems[]=
+respawnitems[]=
 {
 "ACE_fieldDressing",
 "ACRE_PRC148",
 "ACE_EarPlugs",
-"rhsusf_ANPVS_15",
+"rhsusf_ANPVS_14",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
@@ -174,6 +174,8 @@ linkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
+"ACE_EarPlugs",
+"ACRE_PRC343",
 "ItemWatch"
 };
 respawnLinkedItems[]=
@@ -182,6 +184,8 @@ respawnLinkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
+"ACE_EarPlugs",
+"ACRE_PRC343",
 "ItemWatch"
 };
 weapons[]=

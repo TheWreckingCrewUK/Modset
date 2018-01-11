@@ -30,7 +30,7 @@
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_15",
+			"rhsusf_ANPVS_14",
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -54,11 +54,11 @@
 			"ACE_tourniquet",
 			"ACE_MapTools"
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_15",
+			"rhsusf_ANPVS_14",
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -950,7 +950,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_ATragMX",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_15",
+			"rhsusf_ANPVS_14",
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -977,7 +977,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_Kestrel4500",
 			"ACE_ATragMX",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_15",
+			"rhsusf_ANPVS_14",
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
