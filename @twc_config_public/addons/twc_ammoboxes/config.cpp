@@ -14,7 +14,7 @@ class CfgPatches
 		};
 	};
 };
-class cfgWeapons
+class cfgMagazines
 {
 	class ItemCore;
 	class InventoryItem_Base_F;
