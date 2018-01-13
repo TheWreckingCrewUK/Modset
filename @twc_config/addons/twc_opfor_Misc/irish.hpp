@@ -544,14 +544,12 @@
 		backpack = "";
 		
 		linkedItems[] = {
-			"H_Beret_blk",
 			"G_Balaclava_blk",
 			"CUP_V_OI_TKI_Jacket1_03",
 			"ItemWatch"
 		};
 
 		respawnLinkedItems[] = {
-			"H_Beret_blk",
 			"G_Balaclava_blk",
 			"CUP_V_OI_TKI_Jacket1_03",
 			"ItemWatch"
@@ -1719,14 +1717,12 @@
 		
 		linkedItems[] = {
 			"G_Balaclava_blk",
-			"H_Beret_blk",
 			"CUP_V_O_TK_OfficerBelt",
 			"ItemWatch"
 		};
 
 		respawnLinkedItems[] = {
 			"G_Balaclava_blk",
-			"H_Beret_blk",
 			"CUP_V_O_TK_OfficerBelt",
 			"ItemWatch"
 		};
