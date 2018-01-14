@@ -29,6 +29,9 @@ respawnLinkedItems[]=
 Items[]=
 {
 "ACE_fieldDressing",
+"ACRE_PRC148",
+"ACE_EarPlugs",
+"rhsusf_ANPVS_14",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
@@ -48,13 +51,14 @@ Items[]=
 "ACE_epinephrine",
 "ACE_tourniquet",
 "ACE_tourniquet",
-"ACRE_PRC148",
-"ACE_MapTools",
-"ACE_EarPlugs"
+"ACE_MapTools"
 };
-respawntems[]=
+respawnitems[]=
 {
 "ACE_fieldDressing",
+"ACRE_PRC148",
+"ACE_EarPlugs",
+"rhsusf_ANPVS_14",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
@@ -74,9 +78,7 @@ respawntems[]=
 "ACE_epinephrine",
 "ACE_tourniquet",
 "ACE_tourniquet",
-"ACRE_PRC148",
-"ACE_MapTools",
-"ACE_EarPlugs"
+"ACE_MapTools"
 };
 };
 class Modern_USMC_Squadleader: Modern_USMC_Base
@@ -172,6 +174,8 @@ linkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
+"ACE_EarPlugs",
+"ACRE_PRC343",
 "ItemWatch"
 };
 respawnLinkedItems[]=
@@ -180,6 +184,8 @@ respawnLinkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
+"ACE_EarPlugs",
+"ACRE_PRC343",
 "ItemWatch"
 };
 weapons[]=
@@ -707,7 +713,7 @@ class Modern_USMC_VehicleCommander: Modern_USMC_Base
 scope=2;
 displayName="USMC Vehicle Commander";
 uniformClass="CUP_U_B_USArmy_PilotOverall";
-backpack="TWC_Backpack_USMC_vehiclecommander";
+backpack="TWC_Backpack_Modern_HeloPilot";
 linkedItems[]=
 {
 "UK3CB_BAF_H_CrewHelmet_B",
@@ -765,7 +771,7 @@ class Modern_USMC_HeliPilot: Modern_USMC_Base
 scope=2;
 displayName="USMC Helicopter Pilot";
 uniformClass="CUP_U_B_USArmy_PilotOverall";
-backpack="rhsusf_falconii_coy";
+backpack="TWC_Backpack_Modern_HeloPilot";
 linkedItems[]=
 {
 "CUP_H_USMC_Helmet_Pilot",
@@ -773,7 +779,7 @@ linkedItems[]=
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
-"ACE_microDAGR"
+"ItemcTab"
 };
 respawnLinkedItems[]=
 {
@@ -782,7 +788,7 @@ respawnLinkedItems[]=
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
-"ACE_microDAGR"
+"ItemcTab"
 };
 weapons[]=
 {
@@ -825,7 +831,7 @@ class Modern_USMC_crewchief:Modern_USMC_HeliPilot
 scope=2;
 displayName="USMC Helicopter Crew Chief";
 uniformClass="CUP_U_B_USArmy_PilotOverall";
-backpack="rhsusf_falconii_coy";
+backpack="TWC_Backpack_Modern_HeloPilot";
 };
 class Modern_USMC_JetPilot: Modern_USMC_Base
 {
@@ -838,48 +844,48 @@ vehicleClass="Men_Modern";
 icon="iconMan";
 nakedUniform="U_BasicBody";
 uniformClass="CUP_U_B_USMC_PilotOverall";
-backpack="rhsusf_falconii";
+backpack="TWC_Backpack_Modern_HeloPilot";
 linkedItems[]=
 {
 "RHS_jetpilot_usaf",
-"rhsusf_falconii",
+"CUP_V_B_PilotVest",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
-"ACE_microDAGR"
+"ItemcTab"
 };
 respawnLinkedItems[]=
 {
 "RHS_jetpilot_usaf",
-"rhsusf_falconii",
+"CUP_V_B_PilotVest",
 "ItemMap",
 "ItemCompass",
 "ItemWatch",
-"ACE_microDAGR"
+"ItemcTab"
 };
 weapons[]=
 {
 "Throw",
 "Put",
-"rhsusf_weap_m1911a1"
+"rhsusf_weap_m9"
 };
 respawnweapons[]=
 {
 "Throw",
 "Put",
-"rhsusf_weap_m1911a1"
+"rhsusf_weap_m9"
 };
 magazines[]=
 {
-"rhsusf_mag_7x45acp_MHP",
-"rhsusf_mag_7x45acp_MHP",
+"rhsusf_mag_15Rnd_9x19_JHP",
+"rhsusf_mag_15Rnd_9x19_JHP",
 "SmokeShell",
 "SmokeShell"
 };
 Respawnmagazines[]=
 {
-"rhsusf_mag_7x45acp_MHP",
-"rhsusf_mag_7x45acp_MHP",
+"rhsusf_mag_15Rnd_9x19_JHP",
+"rhsusf_mag_15Rnd_9x19_JHP",
 "SmokeShell",
 "SmokeShell"
 };

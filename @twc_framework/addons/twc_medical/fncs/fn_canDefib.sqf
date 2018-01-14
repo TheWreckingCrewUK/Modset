@@ -15,7 +15,7 @@ _isBleeding = _target getVariable ["ace_medical_isBleeding", false];
 _bloodVolume = [_caller, _target] call twc_medical_fnc_getBloodLoss; // i should change the name some time
 
 // is in need of defibs
-if (_unCon && _inMedVehicle && !(_isBleeding) && (_bloodVolume >= 0.8)) exitWith {
+if (_unCon && _inMedVehicle && !(_isBleeding) && (_bloodVolume >= 0.5)) exitWith {
 	true
 };
 

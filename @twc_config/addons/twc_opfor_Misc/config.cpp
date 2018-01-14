@@ -38,6 +38,29 @@ class CfgPatches
 			"IRA_Rifleman_FAL",
 			"IRA_Rifleman_AT",
 			"IRA_Autorifleman",
+			"IRA_Field_L42Sniper",
+			"IRA_Field_Bren",
+			"IRA_Field_Falv1",
+			"IRA_Field_Falv2",
+			"IRA_Field_AK74V1",
+			"IRA_Field_AK74V2",
+			"IRA_Field_M16A2v1",
+			"IRA_Field_M16A2v2",
+			"IRA_Field_SLRv1",
+			"IRA_Field_SLRv2",
+			"IRA_Field_SLR_AT",
+			"IRA_Field_M16A2_AT",
+			"IRA_Field_Enfieldv1",
+			"IRA_Field_Enfieldv2",
+			"IRA_Field_RPK",
+			"IRA_Field_M79",
+			"IRA_Field_AA",
+			"IRA_Field_Static",
+			"IRA_Urban_Sterling",
+			"IRA_Urban_Pistoleer",
+			"IRA_Urban_AKS74U",
+			"IRA_Urban_MP5",
+			"IRA_Urban_Skorpion",
 			"usa_1970_medic",
 			"usa_1970_leader",
 			"usa_1970_grenadier",
@@ -162,6 +185,10 @@ class CfgEditorSubCategories
 	class Men_IRA
 	{
 		displayName = "Men (IRA)";
+	};
+	class Men_Troubles
+	{
+		displayName = "Men (Troubles)";
 	};
 	class TWC_tak_Civ_Men
 	{

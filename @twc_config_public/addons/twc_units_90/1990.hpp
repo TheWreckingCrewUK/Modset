@@ -28,6 +28,8 @@
 		{
 			"ACE_EarPlugs",
 			"ACE_fieldDressing",
+			"ACRE_PRC343",	
+			"rhsusf_ANPVS_14",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -47,13 +49,14 @@
 			"ACE_epinephrine",
 			"ACE_tourniquet",
 			"ACE_tourniquet",
-			"ACE_MapTools",
-			"ACRE_PRC343"	
+			"ACE_MapTools"
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
 			"ACE_EarPlugs",
 			"ACE_fieldDressing",
+			"ACRE_PRC343",	
+			"rhsusf_ANPVS_14",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -72,8 +75,7 @@
 			"ACE_morphine",
 			"ACE_epinephrine",
 			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACRE_PRC343"	
+			"ACE_tourniquet"
 		};		
 	};
 	class 1990_British_SectionCommander: 1990_British_Base
@@ -1468,6 +1470,9 @@
 		};
 		Items[]=
 		{
+		"ACE_EarPlugs",
+		"ACRE_PRC148",
+		"rhsusf_ANPVS_14",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1495,11 +1500,14 @@
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_tourniquet",
-		"ACE_EarPlugs",
-		"UK3CB_BAF_HMNVS"
+		"ACE_EarPlugs"
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
+		"ACE_EarPlugs",
+		"ACRE_PRC148",
+		"rhsusf_ANPVS_14",
+		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1509,10 +1517,7 @@
 		"ACE_morphine",
 		"ACE_Flashlight_KSF1",
 		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS",
-		"ACRE_PRC148",
-		"ACE_EarPlugs"
+	    "ACE_MapTools"
 		};
 	};
     class 1990_British_Tank_Crew_Desert: B_Soldier_base_F
@@ -1568,6 +1573,9 @@
 		{
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_EarPlugs",
+		"ACRE_PRC148",
+		"rhsusf_ANPVS_14",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1593,21 +1601,19 @@
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_tourniquet",
-		"ACE_EarPlugs",
-		"UK3CB_BAF_HMNVS"
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
 		"ACE_EarPlugs",
 		"ACRE_PRC148",
-		"UK3CB_BAF_HMNVS"		
+		"rhsusf_ANPVS_14",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine"		
 		};
 	};
 	
@@ -1685,28 +1691,28 @@
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
 		"ACE_RangeCard",
+		"rhsusf_ANPVS_14",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_EarPlugs",
-		"UK3CB_BAF_HMNVS"	
+		"ACE_EarPlugs"	
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
 		"ACE_RangeCard",
+		"rhsusf_ANPVS_14",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_EarPlugs",
-		"UK3CB_BAF_HMNVS"		
+		"ACE_EarPlugs"		
 		};
 	};
 	
@@ -1792,6 +1798,8 @@
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
+		"rhsusf_ANPVS_14",
+		"ACE_EarPlugs",	
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1799,14 +1807,14 @@
 		"ACE_Tripod",
 		"ACE_SpottingScope",
 		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs",
-		"UK3CB_BAF_HMNVS"	
+		"ACE_morphine"
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
+		"rhsusf_ANPVS_14",
+		"ACE_EarPlugs",	
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1814,9 +1822,7 @@
 		"ACE_Tripod",
 		"ACE_SpottingScope",
 		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs",
-		"UK3CB_BAF_HMNVS"		
+		"ACE_morphine"		
 		};
 	};
 	
@@ -1966,8 +1972,8 @@
 		Items[]=
 		{
 			"ACE_EarPlugs",
-			"ACE_fieldDressing",
-			"ACE_fieldDressing",
+			"ACRE_PRC148",
+			"rhsusf_ANPVS_14",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_packingBandage",
@@ -1989,9 +1995,11 @@
 			"ACE_MapTools",
 			"ACRE_PRC148"	
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
 			"ACE_EarPlugs",
+			"ACRE_PRC148",
+			"rhsusf_ANPVS_14",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -2011,8 +2019,7 @@
 			"ACE_morphine",
 			"ACE_epinephrine",
 			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACRE_PRC148"	
+			"ACE_tourniquet"
 		};		
 	};
 	class twc_men_1990_us_w_SquadLeader: twc_men_1990_us_w_base

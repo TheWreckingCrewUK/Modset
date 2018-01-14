@@ -8,7 +8,7 @@
 	class UK3CB_BAF_B_Bergen_MTP_JTAC_L_A;
 	class UK3CB_BAF_B_Bergen_TAN_Rifleman_B;
 	class UK3CB_BAF_B_Bergen_MTP_Radio_L_A;
-	class B_AssaultPack_blk;
+	class B_AssaultPack_rgr;
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
 	
 	class TWC_Backpack_Modern_Sectionlead: UK3CB_BAF_B_Bergen_MTP_SL_L_A
@@ -534,7 +534,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_Modern_HeloPilot: B_AssaultPack_blk
+	class TWC_Backpack_Modern_HeloPilot: B_AssaultPack_rgr
 	{
 		scope = 1;
 		class TransportItems

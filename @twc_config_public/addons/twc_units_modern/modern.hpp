@@ -30,6 +30,9 @@
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -49,14 +52,15 @@
 			"ACE_epinephrine",
 			"ACE_tourniquet",
 			"ACE_tourniquet",
-			"ACRE_PRC343",
-			"ACE_MapTools",
-			"ACE_EarPlugs"
+			"ACE_MapTools"
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_packingBandage",
@@ -74,9 +78,7 @@
 			"ACE_morphine",
 			"ACE_epinephrine",
 			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACRE_PRC343",
-			"ACE_EarPlugs"
+			"ACE_tourniquet"
 		};
 	};
 	class Modern_British_Squadleader: Modern_British_Base
@@ -796,8 +798,9 @@
 
 class Modern_British_crewchief:Modern_British_HeliPilot
 {
-scope=2;
-displayName="GB Helicopter Crew Chief";
+		scope=2;
+		displayName="GB Helicopter Crew Chief";
+		backpack="TWC_Backpack_Modern_HeloPilot";
 };
 
 	class Modern_British_JetPilot: Modern_British_Base
@@ -810,23 +813,25 @@ displayName="GB Helicopter Crew Chief";
 		vehicleClass="Men_Modern";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_I_pilotCoveralls";
-		backpack="B_AssaultPack_blk";
+		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_Army";
+		backpack="TWC_Backpack_Modern_HeloPilot";
 		linkedItems[]=
 		{
 			"H_PilotHelmetFighter_B",
+			"CUP_V_B_PilotVest",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_microDAGR"
+			"ItemcTab"
 		};
 		respawnLinkedItems[]=
 		{
 			"H_PilotHelmetFighter_B",
+			"CUP_V_B_PilotVest",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_microDAGR"
+			"ItemcTab"
 		};
 		weapons[]=
 		{
@@ -945,6 +950,9 @@ displayName="GB Helicopter Crew Chief";
 			"ACE_ATragMX",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_microDAGR",
@@ -962,15 +970,16 @@ displayName="GB Helicopter Crew Chief";
 			"ACE_morphine",
 			"ACE_epinephrine",
 			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACRE_PRC343",
-			"ACE_EarPlugs"
+			"ACE_tourniquet"
 		};
 
 		respawnItems[]= {
 			"ACE_Kestrel4500",
 			"ACE_ATragMX",
 			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -989,9 +998,7 @@ displayName="GB Helicopter Crew Chief";
 			"ACE_morphine",
 			"ACE_epinephrine",
 			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACRE_PRC343",
-			"ACE_EarPlugs"
+			"ACE_tourniquet"
 		};
 
 		weapons[]= {
@@ -1176,7 +1183,7 @@ displayName="GB Helicopter Crew Chief";
 		displayName="GB Vehicle Commander";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		backpack="B_AssaultPack_blk";
+		backpack="TWC_Backpack_Modern_HeloPilot";
 		linkedItems[]=
 		{	
 			"UK3CB_BAF_H_CrewHelmet_ESS_A",

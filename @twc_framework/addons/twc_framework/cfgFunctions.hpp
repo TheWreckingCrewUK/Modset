@@ -93,6 +93,7 @@ class CfgFunctions
 			class killPlayer {};
 			class setSpectator {};
 			class medicalInfo {};
+			class toggleCon {};
 		};
 
 		class artillery {

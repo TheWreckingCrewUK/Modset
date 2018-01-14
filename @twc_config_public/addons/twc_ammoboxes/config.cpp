@@ -17,14 +17,14 @@ class CfgPatches
 class cfgWeapons
 {
 	class ItemCore;
-	class InventoryItem_Base_F;
+	class CBA_MiscItem_ItemInfo;
 	class ACE_ItemCore;
 	class TWC_ForwardBase_Supplies: ACE_ItemCore
 	{
 		scope = 2;
 		displayName = "Supplies";
 		descriptionShort = "Supplies for the forward Base";
-		class ItemInfo: InventoryItem_Base_F
+		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass = 1;
 		};

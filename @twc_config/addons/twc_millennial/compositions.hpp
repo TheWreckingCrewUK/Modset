@@ -746,7 +746,7 @@ class CfgGroups
                                         };
                                 };
 						};
-						class 2000
+						/*class 2000
 						{
 								name = "TWC 2000 symetrical"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
                                 class 2000_Section
@@ -1051,8 +1051,8 @@ class CfgGroups
                                                 position[] = {9,0,0};
                                         };
                                 };
-						};
-						class 2000_Desert
+						}; */
+						/*class 2000_Desert
 						{
 								name = "TWC 2000 Desert symetrical"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
                                 class 2000_Section_Desert
@@ -1357,7 +1357,7 @@ class CfgGroups
                                                 position[] = {9,0,0};
                                         };
                                 };
-						};
+						}; */
                 };
         };
 };

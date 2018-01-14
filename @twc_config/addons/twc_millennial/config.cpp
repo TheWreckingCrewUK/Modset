@@ -46,7 +46,7 @@ class CfgPatches
 			"1990_British_Vehicle_Commander_Desert",
 			"1990_British_Vehicle_Crew_Desert",
 			"1990_British_Tank_Commander_Desert",
-			"1990_British_Tank_Crew_Desert",
+			"1990_British_Tank_Crew_Desert"
 			
 /*			
 			"2000_British_Base",

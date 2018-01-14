@@ -35,4 +35,10 @@
 
 10. Place down the ACEX Sitting
 
-11. Place down the ACE Advanced Fatigue and set to disabled.
+11. Set up ACE Advanced Fatigue:
+	11.1 Place down the ACE Advanced Fatigue Module.
+	11.2 Set Performance Factor to 1.1
+	11.3 Set Recovery Factor to 2
+	11.4 Set Load Factor to 0.8
+	11.5 Set Terrain Gradient Factor to 3.5
+	11.6 Set the Medics Performance Factor to 1.3

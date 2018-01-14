@@ -20,7 +20,6 @@ class CfgPatches {
 			"twc_wildcat",
 			"twc_wildcat_1990",
 			"twc_puma",
-			"twc_c5_hercules",
 			"TWC_fv432",
 			"TWC_burnes_foxhound_d_a",
 			"TWC_burnes_foxhound_w_a" */
@@ -519,16 +518,4 @@ class CfgVehicles {
 		displayname = "Puma HC1";
 		GearColdwar;
 	};
-	
-	class twc_c5_hercules: CUP_B_C130J_GB {
-		scope=2;
-		side=1;
-		faction="TWC_General";
-		author="CUP";
-		displayname="C5 Hercules";
-		
-		class TransportMagazines { };
-		class TransportItems { };
-		class TransportWeapons { };
-	};
-}; */ 
+};
