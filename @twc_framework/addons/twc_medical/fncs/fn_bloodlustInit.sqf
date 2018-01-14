@@ -39,6 +39,8 @@ _TWC_VaporizedUnitCompat = {
 		if (_debugMode) then {
 			"_TWC_VaporizedUnitCompat called" remoteExec ["hint", -2, true];
 		};
+	} else {
+		[{ if (alive _unit) then { _unit hideObjectGlobal false; }; }, [_unit], 1] call CBA_fnc_waitAndExecute; // double check (will blink 1 sec, if they were invisible)
 	};
 };
 
