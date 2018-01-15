@@ -41,6 +41,7 @@ class CfgVehicles {
 	class Land_BagFence_End_F;
 	class Land_BagFence_Round_F;
 	class Land_BagBunker_Small_F;
+	class Land_File_research_F;
 	
 	class twc_medical_hemtt: rhsusf_m1085a1p2_B_WD_Medical_fmtv_usarmy {
 		ace_cargo_hasCargo = -1;
@@ -131,15 +132,11 @@ class CfgVehicles {
 		};
 	};
 
-	/* class TWC_Item_Public_Base_LOCSTAT {
+	class TWC_Item_Public_Base_LOCSTAT: Land_File_research_F {
 		displayName = "LOCSTAT Reports";
 		ace_cargo_canLoad = 0;
 		ace_dragging_canDrag = 0;
 		ace_cargo_size = 10000; // pretty big... for you
-		
-		class EventHandlers: EventHandlers {
-			init = ""; // todo
-		};
 		
 		class ACE_Actions {
 			class ACE_MainActions {
@@ -151,10 +148,10 @@ class CfgVehicles {
 				class TWC_Item_Public_Base_LOCSTAT_Report {
 					displayName = "Retrieve Latest Report";
 					condition = "true";
-					statement = ""; // todo
-					icon = ""; // todo
+					statement = "[] spawn twc_fnc_getLOCSTATReport;";
+					icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa";
 				};
 			};
 		};
-	}; */
+	};
 };
