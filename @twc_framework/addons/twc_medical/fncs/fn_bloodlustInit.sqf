@@ -17,6 +17,16 @@ if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
 	BloodLust_IsVaporizationGibsEnabledMP = false;
 };
 
+if (isServer) then {
+	addMissionEventHandler ["EntityRespawned", {
+		_player = (_this select 1);
+		
+		if (isPlayer _player) then {
+			_player hideObjectGlobal false; // force visibility on spawn
+		};
+	}];
+};
+
 // explosion is a local event only, so rebroadcast to the server to handle
 if (hasInterface) then {
 	player addEventHandler ["Explosion", {
