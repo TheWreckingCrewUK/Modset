@@ -36,9 +36,9 @@ class CfgEditorSubCategories
 };
 class CfgFactionClasses
 {
-	class twc_faction
+	class twc_public_us
 	{
-		displayName="TWC Public Units";
+		displayName="TWC Public US Units";
 		author="The Wrecking Crew";
 		icon="TWClogo.paa";
 		priority=2;

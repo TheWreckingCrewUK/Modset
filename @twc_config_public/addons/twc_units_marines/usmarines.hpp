@@ -2,7 +2,7 @@ class Modern_USMC_Base: B_Soldier_base_F
 {
 scope=1;
 displayName="Base (Modern)";
-faction="twc_faction";
+faction="twc_public_usmc";
 editorSubcategory = "Men_Modern";
 vehicleClass="Men_Modern";
 icon="iconMan";
@@ -838,7 +838,7 @@ class Modern_USMC_JetPilot: Modern_USMC_Base
 _generalMacro="Modern_USMCJetPilot";
 scope=2;
 displayName="USMC Fixed Wing Pilot";
-faction="twc_faction";
+faction="twc_public_usmc";
 editorSubcategory = "Men_Modern";
 vehicleClass="Men_Modern";
 icon="iconMan";

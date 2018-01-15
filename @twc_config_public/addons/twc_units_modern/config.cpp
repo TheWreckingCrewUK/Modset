@@ -62,8 +62,8 @@ class CfgEditorSubCategories {
 };
 
 class CfgFactionClasses {
-	class twc_modern {
-		displayName="TWC Public Units";
+	class twc_public_baf {
+		displayName="TWC Public BAF Units";
 		author="FakeMatty";
 		icon="TWClogo.paa";
 		priority=2;

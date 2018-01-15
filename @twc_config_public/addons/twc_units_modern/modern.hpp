@@ -2,7 +2,7 @@
 	{
 		scope=1;
 		displayName="Base (Modern)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_Modern";
 		vehicleClass="Men_Modern";
 		icon="iconMan";
@@ -808,7 +808,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		_generalMacro="Modern_JetPilot";
 		scope=2;
 		displayName="GB Fixed Wing Pilot (Modern)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_Modern";
 		vehicleClass="Men_Modern";
 		icon="iconMan";
