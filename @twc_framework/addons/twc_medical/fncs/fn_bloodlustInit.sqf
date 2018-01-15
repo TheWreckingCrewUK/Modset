@@ -71,6 +71,9 @@ _TWC_VaporizeKillUnit = {
 		_unit removeWeaponGlobal "Binocular";
 		_unit removeItems "ItemMap";
 		
+		_weapon nearestObject [getPos (_unit), ["weaponholder"]];
+		deleteVehicle _weapon;
+		
 		[_unit, true, true] call ace_medical_fnc_setDead;
 
 		if (_debugMode) then {
