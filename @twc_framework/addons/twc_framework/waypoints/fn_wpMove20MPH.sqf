@@ -5,5 +5,6 @@ _commander = effectiveCommander _vehicle;
 _commander forceSpeed 8.9408;
 _commander doMove _position;
 waitUntil {_vehicle distance2D _position < 25};
+_commander forceSpeed -1;
 
 true

@@ -23,6 +23,7 @@ if (isServer) then {
 		
 		if (isPlayer _player) then {
 			_player hideObjectGlobal false; // force visibility on spawn
+			_player setVariable ["ace_medical_inReviveState", false, true];
 		};
 	}];
 };
