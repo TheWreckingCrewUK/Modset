@@ -13,7 +13,7 @@ respawn = "base";
 respawnDelay = 1000000;
 respawnTemplates[] = {"ace_spectator"};
 
-showHUD[] = {
+/* showHUD[] = {
 	true,	// Scripted HUD (same as showHUD command)
 	true,	// Vehicle + soldier info
 	true,	// Vehicle radar
@@ -23,7 +23,7 @@ showHUD[] = {
 	false,	// Group Bar
 	true,	// HUD Weapon Cursors
 	false	// HUD Squad Radar
-};
+}; */
 
 class ACE_Settings {
 //ACE Finger
