@@ -33,6 +33,7 @@ class CfgFunctions
 			class virtualMortar{};
 			class toggleSpectator {};
 			class grabComposition {};
+			class sendCTabMessage {};
 			
 			class init{};
 		};
