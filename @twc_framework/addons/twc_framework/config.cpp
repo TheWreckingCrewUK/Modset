@@ -1,9 +1,6 @@
-class CfgPatches
-{
-	class twc_framework
-	{
-		units[]=
-		{
+class CfgPatches {
+	class twc_framework {
+		units[] = {
 			"twc_ModuleMission",
 			"twc_moduelHC",
 			"twc_moduelCache",
@@ -17,13 +14,15 @@ class CfgPatches
 			"TWC_Module_DisableCaching",
 			"TWC_Module_VirtualArtillery"
 		};
-		weapons[]={};
-		requiredVersion=1.7;
-		requiredAddons[]=
-		{
+		
+		weapons[] = {};
+		requiredVersion = 1.7;
+
+		requiredAddons[] = {
 			"cba_ai",
 			"A3_Modules_F"
 		};
+
 		author[]={};
 		authorUrl="";
 		version="1";
@@ -65,3 +64,4 @@ class Extended_InitPost_EventHandlers {
 #include "cfgFunctions.hpp"
 #include "cfgMusic.hpp"
 #include "cfgSounds.hpp"
+#include "cfgWaypoints.hpp"
