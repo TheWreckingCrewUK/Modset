@@ -14,6 +14,9 @@
 * Public: No
 */
 params ["_message"];
+if(isNil "twc_JIP_CommandMessage")then{
+	twc_JIP_CommandMessage = [];
+};
 _rankArray = [];
 {
 	_rankArray pushback (rank _x);
@@ -33,5 +36,9 @@ _rank = call{
 {
 	if(rank _x in _rank)then{
 		_message remoteExecCall ["hint",_x];
+		_x createDiaryRecord ["Diary",["Intel",_message]];
 	};
 }forEach allPlayers;
+
+twc_JIP_CommandMessage pushback [_rank,_message];
+publicVariable "twc_JIP_CommandMessage";
