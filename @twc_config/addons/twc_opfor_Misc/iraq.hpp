@@ -12,7 +12,7 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
 		"CUP_H_SLA_Helmet",
 		"ItemMap",
 		"ItemCompass",
@@ -20,7 +20,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05",
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -107,12 +107,12 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
 		"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown"
 		};
 		weapons[]=
 		{
@@ -195,15 +195,15 @@
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
 		uniformClass="CUP_U_O_TK_Green";
-		backpack="B_mas_m_Bergen_rpg";
+		backpack="Afr_Backpack_AT";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
 		"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown"
 		};
 		weapons[]=
 		{
@@ -292,15 +292,15 @@
 		icon="iconManMG";
 		nakedUniform="U_BasicBody";
 		uniformClass="CUP_U_O_TK_Green";
-		backpack="B_SUD_RPG";
+		backpack="Afr_Backpack_AT";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
 		"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown"
 		};
 		weapons[]=
 		{
@@ -389,12 +389,12 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
 		"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown"
 		};
 		weapons[]=
 		{
@@ -472,12 +472,12 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
 		"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown"
 		};
 		weapons[]=
 		{
