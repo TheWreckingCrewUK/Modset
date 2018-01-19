@@ -1,7 +1,6 @@
-// todo: THIS WHOLE ROTTEN THING ;)
-openMap [true, false];
+OpenMap [true, false]; 
 
-_friendlyGroups = [];
+_friendlyGroups = []; 
 
 {
 	if (!((group _x) in _friendlyGroups)) then {
@@ -9,23 +8,24 @@ _friendlyGroups = [];
 	};
 } forEach allPlayers;
 
-_leaderMarkers = [];
+leaderMarkers = []; 
 
 {
-	_markerText = groupId (group _x);
-	
+	_markerText = groupId _x; 
+
 	if (!((leader _x) in (leader _x))) then {
 		_markerText = _markerText + " (Mounted)";
 	};
-	
-	_markerstr = createMarkerLocal [name (leader _x), getPos (leader _x)];
-	_markerstr setMarkerShape "ICON";
-	_markerstr setMarkerType "mil_triangle";
-	_markerstr setMarkerDir (getDir (leader _x));
-	_markerstr setMarkerText _markerText;
-	_leaderMarkers pushback _markerstr;
+
+	_markerstr = createMarkerLocal [name (leader _x) + str random 1000, getPos (leader _x)];
+	_markerstr setMarkerShapeLocal "ICON";
+	_markerstr setMarkerTypeLocal "mil_triangle";
+	_markerstr setMarkerDirLocal (getDir (leader _x));
+	_markerstr setMarkerTextLocal _markerText;
+	leaderMarkers pushback _markerstr;
 } forEach _friendlyGroups;
 
-waitUntil {!visibleMap};
-
-{ deleteMarker _x; } forEach _leaderMarkers;
+[] spawn {
+	waitUntil { !visibleMap };
+	{ deleteMarkerLocal _x; } forEach leaderMarkers;
+};

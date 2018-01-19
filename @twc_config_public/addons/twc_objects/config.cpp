@@ -148,7 +148,7 @@ class CfgVehicles {
 				class TWC_Item_Public_Base_LOCSTAT_Report {
 					displayName = "Retrieve Latest Report";
 					condition = "true";
-					statement = "[] spawn twc_fnc_getLOCSTATReport;";
+					statement = "[] call twc_fnc_getLOCSTATReport;";
 					icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa";
 				};
 			};
