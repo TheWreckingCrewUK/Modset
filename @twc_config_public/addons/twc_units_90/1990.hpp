@@ -1600,7 +1600,7 @@
 		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_tourniquet",
+		"ACE_tourniquet"
 		};
 		respawnitems[]=
 		{
@@ -1613,7 +1613,7 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_morphine",
-		"ACE_morphine"		
+		"ACE_morphine"
 		};
 	};
 	
