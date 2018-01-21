@@ -19,7 +19,7 @@ class CfgFunctions {
 			// Generics
 			class addTime {};
 			class init { postInit = 1; };
-			class getBloodLoss {};
+			class getBloodVolume {};
 			class extendedVitalLoop {};
 
 			// CPR

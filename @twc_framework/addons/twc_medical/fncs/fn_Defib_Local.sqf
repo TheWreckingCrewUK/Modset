@@ -20,12 +20,12 @@ _gotEpi = _target getVariable ["ace_medical_epinephrine_insystem", 0];
 _probability = _probability + (5 * _gotEpi); // increase by 5% with epi
 
 //reduces probability depending on total blood loss of patient:
-_bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodLoss;
+_bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodVolume;
 _probability = _probability - (30 - (30 * _bloodLoss));
 
 // get for later
 _painLevel = _unit getVariable ["ace_medical_pain", 0];
-_painToAdd = 0.05; // shockingly shocking shocks shockee, ouch
+_painToAdd = 0.1; // shockingly shocking shocks shockee, ouch
 
 _diceRoll = floor(random 100);
 
