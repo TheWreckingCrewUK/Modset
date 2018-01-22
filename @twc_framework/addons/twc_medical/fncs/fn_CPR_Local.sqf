@@ -14,15 +14,19 @@ if (_isMedic > 0) then {
 	_probability = 7;
 };
 
-// potential issue here, needs investigating
+.//increases probability based on how much epi is in their system
 _gotEpi = _target getVariable ["ace_medical_epinephrine_insystem", 0];
 _probability = _probability + (5 * _gotEpi);
+
+//reduces probability based on how much blood thinners there is in their system (morphine, atropine, adenosine)
+_resistance = _target getVariable ["ace_medical_peripheralResistance", 100];
+_probability = _probability - (5 * (1 - (_resistance / 100)));
 
 //reduces probability depending on total blood loss of patient:
 _bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodVolume;
 _probability = _probability - (10 - (10 * _bloodLoss));
 
-_diceRoll = floor(random 100);
+_diceRoll = floor(random 110);
 
 if (_probability < 2) then {
 	_probability = 2;
@@ -49,8 +53,7 @@ if ( _probability >= _diceRoll ) exitWith {
 	
 	if ((_target getVariable ["ace_medical_bloodVolume", 0]) < 60) then {
 		_target setVariable ["ace_medical_bloodVolume", 60, true];
-		_resistance = (_target getVariable ["ace_medical_peripheralResistance", 100]);
-		
+
 		_bloodPressureH = (0.60685 * _resistance);
 		_bloodPressureL = (0.40386 * _resistance);
 		_target setVariable ["ace_medical_bloodPressure", [_bloodPressureL, _bloodPressureH], true];
