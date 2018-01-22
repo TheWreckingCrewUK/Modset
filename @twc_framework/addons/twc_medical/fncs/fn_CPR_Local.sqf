@@ -14,7 +14,7 @@ if (_isMedic > 0) then {
 	_probability = 7;
 };
 
-.//increases probability based on how much epi is in their system
+//increases probability based on how much epi is in their system
 _gotEpi = _target getVariable ["ace_medical_epinephrine_insystem", 0];
 _probability = _probability + (5 * _gotEpi);
 
