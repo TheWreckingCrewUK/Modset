@@ -18,9 +18,9 @@ if (_unCon) then {
 		_numOfNearPeople = count ((allUnits select {_x distance _target < 2}) - [_caller, _target]);
 
 		if (_numOfNearPeople > 0) then {
-			_timeToAdd = (_reviveStartTime + 15) + ((30 * _bloodVolume) / _numOfNearPeople);
+			_timeToAdd = (_reviveStartTime + 15) + (30 * _bloodVolume) + (10 / _numOfNearPeople);
 		} else {
-			_timeToAdd = (_reviveStartTime + 15) + (30 * _bloodVolume);
+			_timeToAdd = (_reviveStartTime + 15) + (30 * _bloodVolume) + 10;
 		};
 
 		if ((_reviveStartTime + (_maxTime - _maxTimeMod)) > CBA_missionTime) then {
