@@ -243,6 +243,9 @@ class CfgFactionClasses
 	
 };
 class EventHandlers;
+
+#include "compositions.hpp"
+
 class CfgVehicles
 {
 	class CUP_B_AlicePack_Khaki;

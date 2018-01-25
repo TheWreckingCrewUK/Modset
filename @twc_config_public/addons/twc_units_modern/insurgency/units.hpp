@@ -548,6 +548,7 @@
 		"ACE_fieldDressing",
 		"ACRE_PRC148",
 		"ACE_EarPlugs",
+		"CUP_NVG_PVS14",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -555,11 +556,12 @@
 		"ACE_morphine",
 		"ACE_morphine"
 		};
-		respawntems[]=
+		respawnItems[]=
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC148",
 		"ACE_EarPlugs",
+		"CUP_NVG_PVS14",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -593,7 +595,7 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_akms"
+		"rhs_weap_akm"
 		};
 		respawnweapons[]=
 		{
@@ -644,7 +646,7 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_akms"
+		"rhs_weap_akm"
 		};
 		respawnweapons[]=
 		{
@@ -703,6 +705,7 @@
 		};
 		magazines[]=
 		{
+		"rhs_rpg7_OG7V_mag",
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
@@ -715,6 +718,7 @@
 		};
 		Respawnmagazines[]=
 		{
+		"rhs_rpg7_OG7V_mag",
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
@@ -774,7 +778,7 @@
 		};
 	};
 
-		class ana_mg_as: twc_ana_base
+		class twc_ana_mg_as: twc_ana_base
 	{
 		_generalMacro="ana_mg_as";
 		scope=2;
@@ -826,7 +830,7 @@
 		};
 	};
 	
-		class ana_marksman: twc_ana_base
+		class twc_ana_marksman: twc_ana_base
 	{
 		_generalMacro="ana_marksman";
 		scope=2;
