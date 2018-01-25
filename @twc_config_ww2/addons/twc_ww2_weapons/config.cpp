@@ -16,8 +16,8 @@ class CfgPatches
 		author="jayman";
 	};
 };
-class CfgWeapons
-{
+
+class CfgWeapons {
 	class fow_w_bren;
 	class LIB_FLARE_PISTOL;
 	
@@ -33,95 +33,351 @@ class CfgWeapons
 	class fow_v_uk_para_bren;
 	class fow_v_uk_para_sten;
 
-	class TWC_Bren: fow_w_bren
-	{
-		
-		class WeaponSlotsInfo
- 		{
- 			displayName = "Bren Gun";
+	class TWC_Bren: fow_w_bren {
+		class WeaponSlotsInfo {
+			displayName = "Bren Gun";
 			mass = 200;
- 			allowedSlots[] = {901};
- 		};
+			allowedSlots[] = {901};
+		};
 	};
+
 	class TWC_No1Mk3SignalGun: LIB_FLARE_PISTOL
 	{
 		displayName = "No. 1 MkIII Signal Pistol";
 		magazines[] = {"UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
 	};
-	class TWC_Vest_WW2_Base: fow_v_uk_base
-	{
+
+	class TWC_Vest_WW2_Base: fow_v_uk_base {
 		scope = 1;
-		class ItemInfo: VestItem
-        {
+		descriptionShort = "Webbing - it's all the fashion these days";
+		class ItemInfo: VestItem {
 			containerClass = Supply140;
-            mass = 25;
+			mass = 25;
 			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_pouch_base.p3d";
-        };
+			
+			class HitpointsProtectionInfo {
+				class Neck {
+					hitpointName = "HitNeck";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Arms {
+					hitpointName = "HitArms";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Chest {
+					hitpointName = "HitChest"; 
+					armor = 3; 
+					passThrough = 0.15;
+				};
+
+				class Diaphragm {
+					hitpointName = "HitDiaphragm";
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Abdomen {
+					hitpointName = "HitAbdomen"; 
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Body {
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+				};
+			};
+		};
 	};
-	class TWC_Vest_WW2_Sten: fow_v_uk_sten
-	{
+
+	class TWC_Vest_WW2_Sten: fow_v_uk_sten {
 		scope = 1;
-		class ItemInfo: VestItem
-        {
-            containerClass = Supply140; 
-            mass = 30;
+		descriptionShort = "Sten Webbing - mighty but compact";
+		class ItemInfo: VestItem {
+			containerClass = Supply140; 
+			mass = 30;
 			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_pouch_sten.p3d";
-        };
+			
+			class HitpointsProtectionInfo {
+				class Neck {
+					hitpointName = "HitNeck";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Arms {
+					hitpointName = "HitArms";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Chest {
+					hitpointName = "HitChest"; 
+					armor = 3; 
+					passThrough = 0.15;
+				};
+
+				class Diaphragm {
+					hitpointName = "HitDiaphragm";
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Abdomen {
+					hitpointName = "HitAbdomen"; 
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Body {
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+				};
+			};
+		};
 	};
-	class TWC_Vest_WW2_Bren: fow_v_uk_bren
-	{
+
+	class TWC_Vest_WW2_Bren: fow_v_uk_bren {
 		scope = 1;
-		class ItemInfo: VestItem
-        {
-            containerClass = Supply160; 
-            mass = 30;
+		descriptionShort = "Bren Webbing - bigger than life pouches";
+		class ItemInfo: VestItem {
+			containerClass = Supply160;
+			mass = 30;
 			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_pouch_bren.p3d";
-        };
+			
+			class HitpointsProtectionInfo {
+				class Neck {
+					hitpointName = "HitNeck";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Arms {
+					hitpointName = "HitArms";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Chest {
+					hitpointName = "HitChest";
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Diaphragm {
+					hitpointName = "HitDiaphragm";
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Abdomen {
+					hitpointName = "HitAbdomen";
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Body {
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+				};
+			};
+		};
 	};
-	class TWC_Vest_WW2_Officer: fow_v_uk_officer
-	{
+
+	class TWC_Vest_WW2_Officer: fow_v_uk_officer {
 		scope = 1;
-		class ItemInfo: VestItem
-        {
-            containerClass = Supply140;
-            mass = 25; 
-			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_off.p3d";
-        };
-	};
-	class TWC_Vest_WW2_Para_Base: fow_v_uk_para_base
-	{
-		scope = 1;
-		class ItemInfo: VestItem
-        {
+		descriptionShort = "Officer Webbing - the finest of materials";
+		class ItemInfo: VestItem {
 			containerClass = Supply140;
-            mass = 25;
+			mass = 25; 
+			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_off.p3d";
+
+			class HitpointsProtectionInfo {
+				class Neck {
+					hitpointName = "HitNeck";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Arms {
+					hitpointName = "HitArms";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Chest {
+					hitpointName = "HitChest"; 
+					armor = 3; 
+					passThrough = 0.1;
+				};
+
+				class Diaphragm {
+					hitpointName = "HitDiaphragm";
+					armor = 3;
+					passThrough = 0.1;
+				};
+
+				class Abdomen {
+					hitpointName = "HitAbdomen"; 
+					armor = 3;
+					passThrough = 0.1;
+				};
+
+				class Body {
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+				};
+			};
+        };
+	};
+
+	class TWC_Vest_WW2_Para_Base: fow_v_uk_para_base {
+		scope = 1;
+		descriptionShort = "Para Webbing - suicidal storage";
+		class ItemInfo: VestItem {
+			containerClass = Supply140;
+			mass = 25;
 			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_para_pouch_base_blanco.p3d";
-        };		
+			
+			class HitpointsProtectionInfo {
+				class Neck {
+					hitpointName = "HitNeck";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Arms {
+					hitpointName = "HitArms";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Chest {
+					hitpointName = "HitChest"; 
+					armor = 3; 
+					passThrough = 0.15;
+				};
+
+				class Diaphragm {
+					hitpointName = "HitDiaphragm";
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Abdomen {
+					hitpointName = "HitAbdomen"; 
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Body {
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+				};
+			};
+		};
 	};
-	class TWC_Vest_WW2_Para_Bren: fow_v_uk_para_bren
-	{
+
+	class TWC_Vest_WW2_Para_Bren: fow_v_uk_para_bren {
 		scope = 1;
-		class ItemInfo: VestItem
-        {
-            containerClass = Supply160; 
-            mass = 30;
+		descriptionShort = "Para Bren Webbing - lightweight, big pockets";
+		class ItemInfo: VestItem {
+			containerClass = Supply160;
+			mass = 30;
 			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_para_pouch_bren_blanco.p3d";
-        };		
+			
+			class HitpointsProtectionInfo {
+				class Neck {
+					hitpointName = "HitNeck";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Arms {
+					hitpointName = "HitArms";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Chest {
+					hitpointName = "HitChest"; 
+					armor = 3; 
+					passThrough = 0.15;
+				};
+
+				class Diaphragm {
+					hitpointName = "HitDiaphragm";
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Abdomen {
+					hitpointName = "HitAbdomen"; 
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Body {
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+				};
+			};
+		};
 	};
-	class TWC_Vest_WW2_Para_Sten: fow_v_uk_para_sten
-	{
+
+	class TWC_Vest_WW2_Para_Sten: fow_v_uk_para_sten {
 		scope = 1;
-		class ItemInfo: VestItem
-        {
-            containerClass = Supply140; 
-            mass = 30;
+		descriptionShort = "Para Sten Webbing - lightweight and functional";
+		class ItemInfo: VestItem {
+			containerClass = Supply140; 
+			mass = 30;
 			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_para_pouch_sten_blanco.p3d";
-        };		
+
+			class HitpointsProtectionInfo {
+				class Neck {
+					hitpointName = "HitNeck";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Arms {
+					hitpointName = "HitArms";
+					armor = 2;
+					passThrough = 0.5;
+				};
+
+				class Chest {
+					hitpointName = "HitChest"; 
+					armor = 3; 
+					passThrough = 0.15;
+				};
+
+				class Diaphragm {
+					hitpointName = "HitDiaphragm";
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Abdomen {
+					hitpointName = "HitAbdomen"; 
+					armor = 3;
+					passThrough = 0.15;
+				};
+
+				class Body {
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+				};
+			};
+		};
 	};
 };
 
-class CfgVehicles
-{
+class CfgVehicles {
 	class fow_b_uk_p37;
 	class fow_b_us_radio;
 	class B_LIB_SOV_RA_MedicalBag_Empty;
@@ -222,7 +478,7 @@ class CfgVehicles
 			class _xx_ACE_elasticBandage
 			{
 				name = "ACE_elasticBandage";
-				count = 15;
+				count = 16;
 			};
 			class _xxACE_quikclot
 			{
@@ -232,12 +488,12 @@ class CfgVehicles
 			class _xxACE_adenosine
 			{
 				name = "ACE_adenosine";
-				count = 4;
+				count = 2;
 			};
 			class _xxACE_atropine
 			{
 				name = "ACE_atropine";
-				count = 4;
+				count = 2;
 			};
 			class _xxACE_epinephrine
 			{
@@ -247,7 +503,7 @@ class CfgVehicles
 			class _xxACE_packingBandage
 			{
 				name = "ACE_packingBandage";
-				count = 15;
+				count = 16;
 			};
 			class _xxACE_personalAidKit
 			{
