@@ -29,7 +29,15 @@ class CfgPatches {
 			"Modern_British_VehicleCommander",
 			"Modern_British_FSTCommander",
 			"Modern_British_FSTForwardObserver",
-			"Modern_British_FSTAssistant"
+			"Modern_British_FSTAssistant",
+			"twc_ana_base",
+			"twc_ana_commander",
+			"twc_ana_subcommander",
+			"twc_ana_rifleman_at",
+			"twc_ana_mg",
+			"twc_ana_mg_as",
+			"twc_ana_marksman",
+			"twc_ana_medic"
 		};
 
 		weapons[]={};
