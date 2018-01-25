@@ -117,6 +117,20 @@
 			};
 		};
 	};
+	
+			class TWC_Backpack_1990_machineGunner: UK3CB_BAF_B_Bergen_DPMW_Rifleman_B
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Stanag
+			{
+				magazine = "UK3CB_BAF_762_200Rnd";
+				count = 2;
+			};
+		};
+	};
+	
 	class TWC_Backpack_1990_Platoon_Command: UK3CB_BAF_B_Bergen_DPMW_SL_A
 	{
 		scope = 1;
@@ -253,6 +267,11 @@
 			class _xxACE_salineIV_500
 			{
 				name = "ACE_salineIV_500";
+				count = 6;
+			};
+			class _xxACE_salineIV_250
+			{
+				name = "ACE_salineIV_250";
 				count = 6;
 			};
 			class _xxACE_tourniquet
