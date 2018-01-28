@@ -41,6 +41,24 @@
 			maga_nc(1Rnd_SmokeRed_Grenade_shell,3);
 		};
 	};
+	
+	class TWC_Backpack_USMC_Breacher: rhsusf_assault_eagleaiii_coy
+	{
+		class TransportMagazines
+		{
+			maga_nc(30Rnd_556x45_Stanag,5);
+			maga_nc(30Rnd_556x45_Stanag_Tracer_Red,3);
+		};
+		
+		class TransportWeapons
+		{
+            class _xx_Rifle
+			{
+				weapon = "twc_rhs_weap_m4a1_acog_lazer";
+				count = 1;
+			};
+		};
+	};
 	class TWC_Backpack_USMC_AutomaticRifleman: rhsusf_assault_eagleaiii_coy
 	{
 		class TransportMagazines

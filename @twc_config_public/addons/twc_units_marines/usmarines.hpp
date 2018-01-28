@@ -3,7 +3,7 @@ class Modern_USMC_Base: B_Soldier_base_F
 scope=1;
 displayName="Base (Modern)";
 faction="twc_public_usmc";
-editorSubcategory = "Men_Modern";
+editorSubcategory = "USMC_Modern_WD";
 vehicleClass="Men_Modern";
 icon="iconMan";
 nakedUniform="U_BasicBody";
@@ -81,10 +81,20 @@ respawnitems[]=
 "ACE_MapTools"
 };
 };
+
+class Modern_USMC_Base_d: B_Soldier_base_F
+{
+scope=1;
+editorSubcategory = "USMC_Modern_D";
+uniformClass="rhs_uniform_FROG01_d";
+
+};
+
+
 class Modern_USMC_Squadleader: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Squad Leader@Charlie Section";
+displayName="Squad Leader (USMC)@USMC Section";
 icon="iconManLeader";
 backpack="TWC_Backpack_USMC_Sectionleader";
 linkedItems[]=
@@ -110,7 +120,7 @@ weapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"twc_rhs_weap_m4a1_m203_acog_lazer",
+"twc_rhs_weap_m16a4_m203_acog_lazer",
 "rhsusf_weap_m1911a1"
 };
 respawnweapons[]=
@@ -118,7 +128,7 @@ respawnweapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"twc_rhs_weap_m4a1_m203_acog_lazer",
+"twc_rhs_weap_m16a4_m203_acog_lazer",
 "rhsusf_weap_m1911a1"
 };
 magazines[]=
@@ -165,7 +175,7 @@ Respawnmagazines[]=
 class Modern_USMC_Teamleader: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Team Leader";
+displayName="Team Leader (USMC)";
 icon="iconManLeader";
 backpack="TWC_Backpack_USMC_Teamleader";
 linkedItems[]=
@@ -248,7 +258,7 @@ Respawnmagazines[]=
 class Modern_USMC_Rifleman: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Rifleman";
+displayName="Rifleman AT (USMC)";
 backpack="";
 linkedItems[]=
 {
@@ -270,7 +280,7 @@ weapons[]=
 {
 "Throw",
 "Put",
-"twc_rhs_weap_m4a1_acog_lazer",
+"twc_rhs_weap_m16a4_acog_lazer",
 "rhs_weap_M136_hedp",
 "rhsusf_weap_m1911a1"
 };
@@ -278,7 +288,7 @@ respawnweapons[]=
 {
 "Throw",
 "Put",
-"twc_rhs_weap_m4a1_acog_lazer",
+"twc_rhs_weap_m16a4_acog_lazer",
 "rhs_weap_M136_hedp",
 "rhsusf_weap_m1911a1"
 };
@@ -321,10 +331,82 @@ Respawnmagazines[]=
 "SmokeShell"
 };
 };
+class Modern_USMC_Breacher: Modern_USMC_Base
+{
+scope=2;
+displayName="Breacher (USMC)";
+backpack="TWC_Backpack_USMC_Breacher";
+linkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_mich_helmet_marpatwd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_mich_helmet_marpatwd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+weapons[]=
+{
+"Throw",
+"Put",
+"rhs_weap_M590_8RD",
+"rhsusf_weap_m1911a1"
+};
+respawnweapons[]=
+{
+"Throw",
+"Put",
+"rhs_weap_M590_8RD",
+"rhsusf_weap_m1911a1"
+};
+magazines[]=
+{
+"rhsusf_mag_7x45acp_MHP",
+"rhsusf_mag_7x45acp_MHP",
+"rhsusf_8Rnd_00Buck",
+"rhsusf_8Rnd_00Buck",
+"rhsusf_8Rnd_00Buck",
+"rhsusf_8Rnd_00Buck",
+"rhsusf_8Rnd_00Buck",
+"rhsusf_8Rnd_Slug",
+"rhsusf_8Rnd_Slug",
+"rhsusf_8Rnd_Slug",
+"rhsusf_8Rnd_Slug",
+"CUP_HandGrenade_L109A2_HE",
+"CUP_HandGrenade_L109A2_HE",
+"SmokeShell",
+"SmokeShell"
+};
+Respawnmagazines[]=
+{
+"rhsusf_mag_7x45acp_MHP",
+"rhsusf_mag_7x45acp_MHP",
+"rhsusf_8Rnd_00Buck",
+"rhsusf_8Rnd_00Buck",
+"rhsusf_8Rnd_00Buck",
+"rhsusf_8Rnd_00Buck",
+"rhsusf_8Rnd_00Buck",
+"rhsusf_8Rnd_Slug",
+"rhsusf_8Rnd_Slug",
+"rhsusf_8Rnd_Slug",
+"rhsusf_8Rnd_Slug",
+"CUP_HandGrenade_L109A2_HE",
+"CUP_HandGrenade_L109A2_HE",
+"SmokeShell",
+"SmokeShell"
+};
+};
 class Modern_USMC_Autorifleman: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Autorifleman";
+displayName="Autorifleman (USMC)";
 backpack="TWC_Backpack_USMC_AutomaticRifleman";
 linkedItems[]=
 {
@@ -384,7 +466,7 @@ Respawnmagazines[]=
 class Modern_USMC_AsstAutorifleman: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Asst. Automatic Rifleman";
+displayName="Asst. Automatic Rifleman (USMC)";
 icon="iconManMG";
 backpack="TWC_Backpack_USMC_AutomaticRifleman";
 linkedItems[]=
@@ -459,7 +541,7 @@ Respawnmagazines[]=
 class Modern_USMC_MachineGunner: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Machine Gunner";
+displayName="Machine Gunner (USMC)";
 icon="iconManMG";
 backpack="TWC_Backpack_USMC_MachineGunner";
 linkedItems[]=
@@ -518,7 +600,7 @@ Respawnmagazines[]=
 class Modern_USMC_AsstMachineGunner: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Asst. Machine Gunner";
+displayName="Asst. Machine Gunner (USMC)";
 icon="iconManMG";
 backpack="TWC_Backpack_USMC_MachineGunner";
 linkedItems[]=
@@ -593,7 +675,7 @@ Respawnmagazines[]=
 class Modern_USMC_Medic: Modern_USMC_Base
 {
 scope=2;
-displayName="Charlie Medic";
+displayName="Corpsman (USMC)";
 icon="iconManMedic";
 backpack="TWC_Backpack_USMC_Medic";
 attendant = 1;
@@ -658,6 +740,236 @@ Respawnmagazines[]=
 "SmokeShell"
 };
 };
+
+class Modern_USMC_Squadleader_d: Modern_USMC_Squadleader
+{
+scope=2;
+displayName="Squad Leader (USMC)@USMC Section";
+icon="iconManLeader";
+editorSubcategory = "USMC_Modern_D";
+uniformClass="rhs_uniform_FROG01_d";
+linkedItems[]=
+{
+"rhsusf_spc_squadleader",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemcTab",
+"ItemCompass",
+"ItemWatch"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_squadleader",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemcTab",
+"ItemCompass",
+"ItemWatch"
+};
+};
+class Modern_USMC_Teamleader_d: Modern_USMC_Teamleader
+{
+scope=2;
+displayName="Team Leader (USMC)";
+editorSubcategory = "USMC_Modern_D";
+uniformClass="rhs_uniform_FROG01_d";
+linkedItems[]=
+{
+"rhsusf_spc_squadleader",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ACE_EarPlugs",
+"ACRE_PRC343",
+"ItemWatch"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_squadleader",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ACE_EarPlugs",
+"ACRE_PRC343",
+"ItemWatch"
+};
+};
+class Modern_USMC_Rifleman_d: Modern_USMC_Rifleman
+{
+scope=2;
+editorSubcategory = "USMC_Modern_D";
+uniformClass="rhs_uniform_FROG01_d";
+displayName="Rifleman AT (USMC)";
+backpack="";
+linkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+};
+
+class Modern_USMC_Breacher_d: Modern_USMC_Breacher
+{
+scope=2;
+editorSubcategory = "USMC_Modern_D";
+uniformClass="rhs_uniform_FROG01_d";
+displayName="Breacher (USMC)";
+linkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+};
+
+class Modern_USMC_Autorifleman_d: Modern_USMC_Autorifleman
+{
+scope=2;
+displayName="Autorifleman (USMC)";
+editorSubcategory = "USMC_Modern_D";
+uniformClass="rhs_uniform_FROG01_d";
+backpack="TWC_Backpack_USMC_AutomaticRifleman";
+linkedItems[]=
+{
+"rhsusf_spc_mg",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+};
+class Modern_USMC_AsstAutorifleman_d: Modern_USMC_AsstAutorifleman
+{
+scope=2;
+displayName="Asst. Automatic Rifleman (USMC)";
+icon="iconManMG";
+editorSubcategory = "USMC_Modern_D";
+uniformClass="rhs_uniform_FROG01_d";
+backpack="TWC_Backpack_USMC_AutomaticRifleman";
+linkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+};
+class Modern_USMC_MachineGunner_d: Modern_USMC_MachineGunner
+{
+scope=2;
+displayName="Machine Gunner (USMC)";
+icon="iconManMG";
+editorSubcategory = "USMC_Modern_D";
+uniformClass="rhs_uniform_FROG01_d";
+backpack="TWC_Backpack_USMC_MachineGunner";
+linkedItems[]=
+{
+"rhsusf_spc_mg",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_mg",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+};
+class Modern_USMC_AsstMachineGunner_d: Modern_USMC_AsstMachineGunner
+{
+scope=2;
+displayName="Asst. Machine Gunner (USMC)";
+icon="iconManMG";
+editorSubcategory = "USMC_Modern_D";
+uniformClass="rhs_uniform_FROG01_d";
+backpack="TWC_Backpack_USMC_MachineGunner";
+linkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_rifleman",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+};
+class Modern_USMC_Medic_d: Modern_USMC_Medic
+{
+scope=2;
+displayName="Corpsman (USMC)";
+icon="iconManMedic";
+editorSubcategory = "USMC_Modern_D";
+uniformClass="rhs_uniform_FROG01_d";
+backpack="TWC_Backpack_USMC_Medic";
+attendant = 1;
+linkedItems[]=
+{
+"rhsusf_spc_corpsman",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+respawnLinkedItems[]=
+{
+"rhsusf_spc_corpsman",
+"rhsusf_lwh_helmet_marpatd",
+"ItemMap",
+"ItemCompass",
+"ItemWatch"
+};
+};
+
+
 class Modern_USMC_Platoon_Commander: Modern_USMC_Squadleader
 {
 scope=2;
@@ -711,7 +1023,7 @@ respawnLinkedItems[]=
 class Modern_USMC_VehicleCommander: Modern_USMC_Base
 {
 scope=2;
-displayName="USMC Vehicle Commander";
+displayName="Vehicle Commander (USMC)";
 uniformClass="CUP_U_B_USArmy_PilotOverall";
 backpack="TWC_Backpack_Modern_HeloPilot";
 linkedItems[]=
@@ -764,7 +1076,7 @@ Respawnmagazines[]=
 class Modern_USMC_VehicleCrew:Modern_USMC_vehiclecommander
 {
 	backpack ="";
-displayName="USMC Vehicle Crew";
+displayName="Vehicle Crew (USMC)";
 };
 class Modern_USMC_HeliPilot: Modern_USMC_Base
 {
@@ -829,7 +1141,7 @@ Respawnmagazines[]=
 class Modern_USMC_crewchief:Modern_USMC_HeliPilot
 {
 scope=2;
-displayName="USMC Helicopter Crew Chief";
+displayName="Helicopter Crew Chief (USMC)";
 uniformClass="CUP_U_B_USArmy_PilotOverall";
 backpack="TWC_Backpack_Modern_HeloPilot";
 };
@@ -837,7 +1149,7 @@ class Modern_USMC_JetPilot: Modern_USMC_Base
 {
 _generalMacro="Modern_USMCJetPilot";
 scope=2;
-displayName="USMC Fixed Wing Pilot";
+displayName="Fixed Wing Pilot (USMC)";
 faction="twc_public_usmc";
 editorSubcategory = "Men_Modern";
 vehicleClass="Men_Modern";

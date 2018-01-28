@@ -1133,7 +1133,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 	class Modern_British_VehicleCrew: Modern_British_Base
 	{
 		scope=2;
-		displayName="Vehicle Crewman";
+		displayName="Armour Crewman";
 		icon="iconMan";
 		linkedItems[]=
 		{
@@ -1180,7 +1180,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 	};
 	class Modern_British_VehicleCommander: Modern_British_VehicleCrew
 	{
-		displayName="Vehicle Commander";
+		displayName="Armour Commander";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		backpack="TWC_Backpack_Modern_HeloPilot";
@@ -1442,7 +1442,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 	};
 	
-		class Modern_Artillery_Commander: Modern_British_Base
+	class Modern_Artillery_Commander: Modern_British_Base
 	{
 		scope=2;
 		displayName="Artillery Gun Commander";
@@ -1497,7 +1497,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 	};
 
-			class Modern_Artillery_Gunner: Modern_Artillery_Commander
+	class Modern_Artillery_Gunner: Modern_Artillery_Commander
 	{
 		scope=2;
 		displayName="Artillery Gun Operator";

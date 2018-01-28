@@ -2,7 +2,7 @@
 	{
 		scope=1;
 		displayName="Base (90`s Woodland)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_1990W";
 		vehicleClass="Men_1990W";
 		icon="iconMan";
@@ -1472,7 +1472,7 @@
 		_generalMacro="1990_Desert_British_Tank Commander";
 		scope=2;
 		displayName="Vehicle Commander (90`s Desert)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		icon="iconMan";
@@ -1574,7 +1574,7 @@
 		_generalMacro="1990_Desert_Tank_Crew";
 		scope=2;
 		displayName="Vehicle Crew (90`s Desert)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		icon="iconMan";
@@ -1671,7 +1671,7 @@
 		_generalMacro="1990_Desert_Sniper";
 		scope=2;
 		displayName="Sniper (90`s Desert)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		icon="iconMan";
@@ -1770,7 +1770,7 @@
 		_generalMacro="1990_Desert_spotter";
 		scope=2;
 		displayName="Spotter (90`s Desert)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		icon="iconMan";

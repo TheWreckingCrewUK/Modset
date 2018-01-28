@@ -34,6 +34,15 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (US Army Modern)";
 	};
+	
+	class USMC_Modern_WD
+	{
+		displayName = "Men (Woodland)";
+	};
+	class USMC_Modern_D
+	{
+		displayName = "Men (Desert)";
+	};
 };
 class CfgFactionClasses
 {
