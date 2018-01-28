@@ -646,13 +646,13 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_akm"
+		"rhs_weap_pm63"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_akms"
+		"rhs_weap_pm63"
 		};
 		magazines[]=
 		{
@@ -800,13 +800,13 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_akm"
+		"rhs_weap_pm63"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_akm"
+		"rhs_weap_pm63"
 		};
 		magazines[]=
 		{

@@ -200,6 +200,23 @@ class cfgWeapons
 		magazines[] = {"twc_l5a4_w"};
 	};
 	
+	class rhs_weap_ak74m_Base_F;
+	class rhs_weap_akm: rhs_weap_ak74m_Base_F
+	{
+		magazines[] = {"CUP_30Rnd_762x39_AK47_M", "rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm_tracer", "rhs_30Rnd_762x39mm_89", "rhs_30Rnd_762x39mm_U"};
+	};
+	
+	class rhs_weap_ak74m;
+	class rhs_weap_svd: rhs_weap_ak74m
+	{
+		magazines[] = {"rhs_10Rnd_762x54mmR_7N1", "CUP_10Rnd_762x54_SVD_M"};
+	};
+	
+	class rhs_weap_pkp;
+	class rhs_weap_pkm: rhs_weap_pkp
+	{
+		magazines[] = {	"rhs_100Rnd_762x54mmR", "rhs_100Rnd_762x54mmR_green", "rhs_100Rnd_762x54mmR_7N13", "rhs_100Rnd_762x54mmR_7N26", "rhs_100Rnd_762x54mmR_7BZ3", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"};
+	};
 };
 
 
