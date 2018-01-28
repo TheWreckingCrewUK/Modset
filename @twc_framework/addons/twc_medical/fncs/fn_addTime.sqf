@@ -8,9 +8,9 @@ if (_unCon) then {
 	_bloodVol = [_caller, _target] call twc_medical_fnc_getBloodVolume;
 
 	if (_bloodVol > 0) then {
-		_maxTimeMod = ((_maxTime / 2) - ((_maxTime / 2) * _bloodVol));
+		_maxTimeMod = ((_maxTime / 3) - ((_maxTime / 3) * _bloodVol));
 	} else {
-		_maxTimeMod = (_maxTime / 2);
+		_maxTimeMod = (_maxTime / 3);
 	};
 
 	if (_reviveStartTime > 0) then {
