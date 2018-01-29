@@ -112,6 +112,12 @@ class TWC_AmmoBox_Other_Pallet: B_supplyCrate_F  {
 	ace_dragging_canCarry = 0;
 	ace_dragging_canDrag  = 1;
 	
+	// ACE Defines
+	ace_cargo_canLoad     = 1;
+	ace_cargo_size        = 5;
+	ace_cargo_hasCargo    = 1;
+	ace_cargo_space = 5;
+
 	// Disable inventory on it
 	maximumLoad           = 0;
 	transportMaxMagazines = 0;
