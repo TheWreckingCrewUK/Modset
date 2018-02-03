@@ -6,5 +6,6 @@ if (!local _unit) exitWith {};
 // prevents waking up temp knock outs prematurely
 
 if (_isUncon) then {
-	[twc_medical_fnc_extendedUnconLoop, [_unit], 5] call CBA_fnc_waitAndExecute;
+	_unconTimer = ceil(random 5) + 1;
+	[twc_medical_fnc_extendedUnconLoop, [_unit], _unconTimer] call CBA_fnc_waitAndExecute;
 };
