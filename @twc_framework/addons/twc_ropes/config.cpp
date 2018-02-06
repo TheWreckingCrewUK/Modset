@@ -30,6 +30,23 @@ class CfgFunctions {
 		class Functions {
 			file = "twc_ropes\functions";
 			class init {};
+			
+			class adjustMass {};
+			class areRopesDeployed {};
+			class attachRopes {};
+			class canAttachRope {};
+			class canDropRope {};
+			class canPickupRope {};
+			class deployRopes {};
+			class dropRopes {};
+			class extendRopes {};
+			class findNearbyCargoHeli {};
+			class getLiftCapabiltiy {};
+			class pickUpRopes {};
+			class releaseCargo {};
+			class retractRopes {};
+			class setMass {};
+			class shortenRopes {};
 		};
 	};
 };
