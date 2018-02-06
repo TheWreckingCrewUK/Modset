@@ -25,7 +25,7 @@ _probability = _probability - (30 - (30 * _bloodLoss));
 
 // get for later
 _painLevel = _unit getVariable ["ace_medical_pain", 0];
-_painToAdd = 0.1; // shockingly shocking shocks shockee, ouch
+_painToAdd = 0.25; // shockingly shocking shocks shockee, ouch
 
 _diceRoll = floor(random 100);
 
