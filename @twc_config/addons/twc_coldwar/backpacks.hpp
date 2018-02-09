@@ -68,6 +68,11 @@
 			item_nc(ACRE_PRC77,1);
 		};
 	};
+	
+	class TWC_Backpack_Cold_War_Arty: CUP_B_AlicePack_Khaki {
+		scope = 1;
+		class TransportItems { };
+	};
 	class TWC_Backpack_Cold_War_MG: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;

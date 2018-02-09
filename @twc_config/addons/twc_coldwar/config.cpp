@@ -36,7 +36,10 @@ class CfgPatches
 			"ColdWar_AT_Ass_Dismounted",
 			"ColdWar_2IC_Dismounted",
 			"ColdWar_MG_Dismounted",
-			"ColdWar_MG_Ass_Dismounted"
+			"ColdWar_MG_Ass_Dismounted",
+			"ColdWar_ForwardObserver",
+			"Coldwar_Arty_Commander",
+			"Coldwar_Arty_Crew"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
