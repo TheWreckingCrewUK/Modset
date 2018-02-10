@@ -504,7 +504,7 @@
 	};
 
 	class Coldwar_Arty_Crew: Coldwar_Arty_Commander {
-		displayName = "Artillery Commander";
+		displayName = "Artillery Crew";
 		backpack = "TWC_Backpack_Cold_War_Arty";
 
 		class EventHandlers: EventHandlers {
