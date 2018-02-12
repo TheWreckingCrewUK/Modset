@@ -102,7 +102,7 @@ class TWC_AmmoBox_Other_L118_Portable: TWC_AmmoBox_Portable {
 	
 	class TransportMagazines {
 		maga_nc(ACE_CUP_30Rnd_105mmHE_M119_M, 10);
-		maga_nc(ACE_CUP_30Rnd_105mmSMOKE_M119_M, 4);
+		maga_nc(ACE_CUP_30Rnd_105mmSMOKE_M119_M, 6);
 		maga_nc(ACE_CUP_30Rnd_105mmILLUM_M119_M, 4);
 	};	
 };
