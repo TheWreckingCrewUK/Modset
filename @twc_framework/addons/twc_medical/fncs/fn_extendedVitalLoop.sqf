@@ -19,7 +19,12 @@ if (alive _unit) then {
 	_bloodVolume = (_unit getVariable ["ace_medical_bloodVolume", 100]);
 	_heartRate = (_unit getVariable ["ace_medical_heartRate", 80]);
 
-	if (_bloodVolume <= 0 && _heartRate <= 0) exitWith {
+	// makes time to death dynamic based on current blood level, will restore with saline
+	_defaultMaxTime = missionNamespace getVariable ["twc_medical_defaultMaxTime", (missionNamespace getVariable ["ace_medical_maxReviveTime", 180])];
+	_adjustedMaxTime = _defaultMaxTime - ((_defaultMaxTime / 3) * (1 - _bloodVolume));
+	missionNamespace setVariable ["ace_medical_maxReviveTime", _adjustedMaxTime];
+
+	if (_bloodVolume <= 0) exitWith {
 		[_unit, true, false] call ace_medical_fnc_setDead;
 
 		if (_debugMode) then {
