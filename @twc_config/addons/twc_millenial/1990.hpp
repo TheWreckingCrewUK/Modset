@@ -787,7 +787,7 @@
 		editorSubcategory = "Men_1990_Desert_Dismounted";
 		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
-		backpack="";
+		backpack="TWC_Backpack_1990_Rifleman_Desert";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
@@ -805,13 +805,13 @@
 			"ItemWatch"
 		};
 	};
-	class 1990_British_Rifleman_AT_Desert: 1990_British_Rifleman
+	class 1990_British_Rifleman_AT_Desert: 1990_British_Rifleman_AT
 	{
 		displayName="RifleMan AT";
 		editorSubcategory = "Men_1990_Desert_Dismounted";
 		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
-		backpack="";
+		backpack="TWC_Backpack_1990_Rifleman_Desert";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
@@ -969,6 +969,7 @@
 		editorSubcategory = "Men_1990_Desert_Dismounted";
 		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
+		backpack="TWC_Backpack_1990_Jet_Pilot";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -1091,7 +1092,23 @@
 		editorSubcategory = "Men_1990_Desert_Dismounted";
 		vehicleClass="Men_1990_Desert_Dismounted";
 		uniformClass="TWC_Smock_Desert";
-		backpack="TWC_Backpack_FAC_Desert";
+		backpack="TWC_Backpack_1990_FAC_Desert";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 	};
 //////////////////////////////  Mounted  //////////////////////////////
 	class 1990_British_Rifleman_Mounted_Desert: 1990_British_Rifleman_Desert
