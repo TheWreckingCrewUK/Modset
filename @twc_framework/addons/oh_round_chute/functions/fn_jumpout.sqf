@@ -1,21 +1,20 @@
-_veh = _this select 0;
-_caller = _this select 1;
-_pos = getPosASL _veh;
+params ["_veh", "_caller"];
 
-if (((getPosASL _veh select 2) <50) or ((getPos _veh select 2) < 50)) then {
+_pos = visiblePosition _veh;
+
+if ((_pos select 2) < 50) then {
 	_dir = getDir _veh;
-	_newDir = _dir +90;
+	_newDir = _dir + 90;
 	
 	//Get Jumper out of aircraft
 	moveOut _caller;
 	unassignVehicle _caller;
-	_caller attachTo [_veh,[0,-20,-4],"jump_outL"]; 
+	_caller attachTo [_veh, [0,-20,-4], "jump_outL"];
 	_caller setdir _newDir;
 	//Move Jumper to safe location
 	detach _caller;
 } else {
 	_caller allowDamage false;
-
 
 	if (!isNull (unitBackpack _caller)) then {
 		private ["_pack","_class","_magazines","_weapons","_items"];
@@ -64,41 +63,46 @@ if (((getPosASL _veh select 2) <50) or ((getPos _veh select 2) < 50)) then {
 	};
 
 	_caller addBackPack "B_OH_T10_Parachute";
-	
-	
+
 	_dir = getDir _veh;
 	_newDir = _dir -120;
-	
-	
+
 	moveOut _caller;
-	_callerMoveaway = _caller setpos [(getpos _caller select 0),(getpos _caller select 1)-20,(getpos _caller select 2)];
+	
+	_paddingRandomness = random (10);
+	_callerMoveaway = _caller setpos [(getpos _caller select 0), (getpos _caller select 1) - (10 + _paddingRandomness), (getpos _caller select 2)];
 	_caller setdir _newDir;
-	_caller attachTo [_veh,[0,-20,-4],"jump_outL"]; 
+	_caller attachTo [_veh,[0,-20,-4], "jump_outL"];
 	detach _caller;
 	
-	_pos2 = getPosASL _caller;
-	_vUp = vectorUp _caller;
-	_vDir = vectorDir _caller;
-	_vel = velocity _caller;
-	
-	sleep 1;
-	_caller action ["OpenParachute",_caller];
-	_caller say3D "ChuteOpen";
-	
-	_chute = vehicle _caller;
-	
-	_chute allowDamage false;
-	_chute setVectorDirAndUp [_vDir, _vUp];
-	_chute setVelocity _vel;
-	_caller setVelocity _vel;
-	
-	waitUntil {(getPosATL _caller select 2) < 1};
-	moveOut _caller;
-	_pos_ground = getpos _caller;
-	_caller setpos _pos_ground;
-	waitUntil {isTouchingGround _caller};
-	deletevehicle _chute;
-	_caller allowDamage true;
+	[_caller] spawn {
+		params ["_caller"];
+
+		_vUp = vectorUp _caller;
+		_vDir = vectorDir _caller;
+		_vel = velocity _caller;
+
+		sleep 1;
+
+		_caller action ["OpenParachute", _caller];
+		_caller say3D "ChuteOpen";
+		
+		_chute = vehicle _caller;
+		
+		_chute allowDamage false;
+		_chute setVectorDirAndUp [_vDir, _vUp];
+		_chute setVelocity _vel;
+		_caller setVelocity _vel;
+		
+		waitUntil {((visiblePosition _caller) select 2) < 1};
+		moveOut _caller;
+		_pos_ground = getpos _caller;
+		_caller setpos _pos_ground;
+		waitUntil {isTouchingGround _caller};
+		deletevehicle _chute;
+
+		_caller allowDamage true;
+	};
 };
 
 

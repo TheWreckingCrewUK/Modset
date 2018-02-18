@@ -19,6 +19,7 @@ params["_unit"];
 deleteVehicle ForwardBaseFlag;
 deleteVehicle ForwardBaseTent;
 ForwardBasePos = nil;
+publicVariable "ForwardBasePos";
 
 _ground = "groundWeaponHolder" createVehicle (position _unit);
 _ground addWeaponCargoGlobal ["twc_fieldTent",1];

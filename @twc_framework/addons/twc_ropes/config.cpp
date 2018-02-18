@@ -29,8 +29,8 @@ class CfgFunctions {
 	class TWC_Ropes {
 		class Functions {
 			file = "twc_ropes\functions";
-			class init {};
 			
+			class init {};
 			class adjustMass {};
 			class areRopesDeployed {};
 			class attachRopes {};
