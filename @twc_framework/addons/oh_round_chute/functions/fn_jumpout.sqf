@@ -1,15 +1,15 @@
 params ["_veh", "_caller"];
 
-_pos = getPosASL _veh;
+_pos = visiblePosition _veh;
 
-if (((getPosASL _veh select 2) < 50) or ((getPos _veh select 2) < 50)) then {
+if ((_pos select 2) < 50) then {
 	_dir = getDir _veh;
 	_newDir = _dir + 90;
 	
 	//Get Jumper out of aircraft
 	moveOut _caller;
 	unassignVehicle _caller;
-	_caller attachTo [_veh,[0,-20,-4], "jump_outL"];
+	_caller attachTo [_veh, [0,-20,-4], "jump_outL"];
 	_caller setdir _newDir;
 	//Move Jumper to safe location
 	detach _caller;
@@ -76,7 +76,7 @@ if (((getPosASL _veh select 2) < 50) or ((getPos _veh select 2) < 50)) then {
 	detach _caller;
 	
 	[_caller] spawn {
-		parmas ["_caller"];
+		params ["_caller"];
 
 		_vUp = vectorUp _caller;
 		_vDir = vectorDir _caller;
@@ -94,7 +94,7 @@ if (((getPosASL _veh select 2) < 50) or ((getPos _veh select 2) < 50)) then {
 		_chute setVelocity _vel;
 		_caller setVelocity _vel;
 		
-		waitUntil {(getPosATL _caller select 2) < 1};
+		waitUntil {((visiblePosition _caller) select 2) < 1};
 		moveOut _caller;
 		_pos_ground = getpos _caller;
 		_caller setpos _pos_ground;
