@@ -19,8 +19,12 @@ class CfgFunctions {
 			// Generics
 			class addTime {};
 			class init { postInit = 1; };
-			class getBloodLoss {};
+			class getBloodVolume {};
 			class extendedVitalLoop {};
+			
+			// Uncon Loop
+			class extendedUnconLoop {};
+			class handleUncon {};
 
 			// CPR
 			class action {};
@@ -43,7 +47,7 @@ class CfgFunctions {
 class Extended_InitPost_EventHandlers {
 	class CAManBase {
 		class twc_medicalInitPos_eh {
-			clientInit = "[twc_medical_fnc_extendedVitalLoop, [(_this select 0)], 30] call CBA_fnc_waitAndExecute;";
+			clientInit = "[twc_medical_fnc_extendedVitalLoop, [(_this select 0)], 10] call CBA_fnc_waitAndExecute;";
 		};
 	};
 };
@@ -122,7 +126,7 @@ class ACE_Medical_Actions {
 		};
 		
 		class ElasticBandage: fieldDressing {
-			treatmentTime = 12;
+			treatmentTime = 11;
 		};
 		
 		class BloodIV: fieldDressing{};

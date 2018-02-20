@@ -36,11 +36,11 @@ class CfgFunctions {
 	};
 };
 
-class Extended_DisplayUnload_EventHandlers {
+/* class Extended_DisplayUnload_EventHandlers {
 	class RscDiary {
 		ace_ui = "[{[] call TWC_UI_fnc_hudReset}] call CBA_fnc_execNextFrame";
 	};
-};
+}; */
 
 #include "RscTitles.hpp"
 #include "DefaultVehicleSystemsDisplayManager.hpp"

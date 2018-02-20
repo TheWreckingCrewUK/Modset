@@ -2,7 +2,7 @@
 	{
 		scope=1;
 		displayName="Base (usarmy)";
-		faction="twc_faction";
+		faction="twc_public_us";
 		editorSubcategory = "US_Men_Modern";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";

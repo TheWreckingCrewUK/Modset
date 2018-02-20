@@ -237,6 +237,26 @@ class CfgGroups
                                                 position[] = {9,0,0};
                                         };
                                 };
+								class Coldwar_Artillery_Crew
+								{
+										name = "Artillery Crew";
+										faction = "TWC_ColdWar";
+										side = 1;
+										class Unit0
+										{
+											side = 1;
+											vehicle = "Coldwar_Arty_Commander";
+											rank = "SERGEANT";
+											position[] = {0,3,0};
+										};
+										class Unit1
+										{
+											side = 1;
+											vehicle = "Coldwar_Arty_Crew";
+											rank = "Private";
+											position[] = {3,0,0};
+										};
+								};
 								class Coldwar_AA
 								{
 										name = "AA Team";

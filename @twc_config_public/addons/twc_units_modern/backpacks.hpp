@@ -10,6 +10,196 @@
 	class UK3CB_BAF_B_Bergen_MTP_Radio_L_A;
 	class B_AssaultPack_rgr;
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
+	class CUP_B_RPGPack_Khaki;
+	class CUP_B_CivPack_WDL;
+	class CUP_B_AlicePack_Khaki;
+	
+		class ana_backpack_medic: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		class TransportItems
+		{
+            class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 12;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 10;
+			};
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 15;
+			};
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 6;
+			};
+			class _xxACE_adenosine
+			{
+				name = "ACE_adenosine";
+				count = 4;
+			};
+			class _xxACE_atropine
+			{
+				name = "ACE_atropine";
+				count = 4;
+			};
+			class _xxACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _xxACE_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 15;
+			};
+			class _xxACE_personalAidKit
+			{
+				name = "ACE_personalAidKit";
+				count = 1;
+			};
+			class _xxACE_salineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 6;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 4;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 4;
+			};
+		};
+	};
+
+	
+	class ana_backpack_rpg: CUP_B_RPGPack_Khaki
+	{
+		scope = 1;
+		
+		class TransportMagazines
+		{
+			class _xx_og7
+			{
+				magazine = "rhs_rpg7_OG7V_mag";
+				count = 3;
+			};
+			
+			class _xx_pg7
+			{
+				magazine = "rhs_rpg7_PG7V_mag";
+				count = 2;
+			};
+		};
+		
+	};
+	
+	class ana_backpack_mg: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		
+		class TransportMagazines
+		{
+			class _xx_pkm
+			{
+				magazine = "rhs_100Rnd_762x54mmR_green";
+				count = 4;
+			};
+			
+		};
+		
+	};
+	
+		class ana_backpack_leader: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 2;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "SmokeShellRed";
+				count = 3;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "SmokeShellBlue";
+				count = 3;
+			};
+		};
+		
+	};
+	
+			class ana_backpack_2ic: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 2;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "SmokeShellRed";
+				count = 3;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "SmokeShellBlue";
+				count = 3;
+			};
+		};
+		
+	};
+
+	
 	
 	class TWC_Backpack_Modern_Sectionlead: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 	{

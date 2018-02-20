@@ -7,7 +7,7 @@ class CfgGroups
                 class TWC_Operation_Blufor //Faction Class name
                 {
                         name = "TWC Operation Groups"; //Faction Name
-                        class Modern_Symetrical
+/*                        class Modern_Symetrical
                         {
                                 name = "TWC Modern symetrical"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
                                 class Modern_Section
@@ -258,12 +258,13 @@ class CfgGroups
                                         };
                                 };
                         };
+*/
 						class Modern_Coin
                         {
-                                name = "TWC Modern Coin"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+                                name = "TWC Modern BAF"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
                                 class Modern_Coin_Section
                                 {
-                                        name = "Section"; //Name of Group
+                                        name = "Section COIN"; //Name of Group
                                         faction = "twc_faction"; //Faction
                                         side = 1; //Side
                                         class Unit0
@@ -321,6 +322,13 @@ class CfgGroups
                                                 vehicle = "Modern_British_Marksman_COIN";
                                                 rank = "PRIVATE";
                                                 position[] = {15,0,0};
+                                        };
+										class Unit8
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Medic";
+                                                rank = "PRIVATE";
+                                                position[] = {17,0,0};
                                         };
                                 };
 								class Modern_Coin_Section_Mounted
@@ -385,7 +393,288 @@ class CfgGroups
                                                 position[] = {15,0,0};
                                         };
                                 };
-								class Modern_Coin_Platoon_Command
+
+								class Modern_ana_section
+                                {
+                                        name = "ANA Section"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "twc_ana_commander"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "twc_ana_base";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "twc_ana_rifleman_at";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+                                        class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "twc_ana_medic";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+                                        class Unit4
+                                        {
+                                                side = 1;
+                                                vehicle = "twc_ana_subcommander";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+                                        class Unit5
+                                        {
+                                                side = 1;
+                                                vehicle = "twc_ana_mg";
+                                                rank = "PRIVATE";
+                                                position[] = {11,0,0};
+                                        };
+                                        class Unit6
+                                        {
+                                                side = 1;
+                                                vehicle = "twc_ana_mg_as";
+                                                rank = "PRIVATE";
+                                                position[] = {13,0,0};
+                                        };
+                                        class Unit7
+                                        {
+                                                side = 1;
+                                                vehicle = "twc_ana_marksman";
+                                                rank = "PRIVATE";
+                                                position[] = {15,0,0};
+                                        };
+                                };								
+                               class Modern_Section
+                                {
+                                        name = "Section"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Squadleader"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Rifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Grenadier";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Autorifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+										class Unit4
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_2IC";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+										class Unit5
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Autorifleman";
+                                                rank = "PRIVATE";
+                                                position[] = {11,0,0};
+                                        };
+										class Unit6
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Machinegunner";
+                                                rank = "PRIVATE";
+                                                position[] = {13,0,0};
+                                        };
+										class Unit7
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Marksman";
+                                                rank = "PRIVATE";
+                                                position[] = {15,0,0};
+                                        };
+										class Unit8
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Medic";
+                                                rank = "PRIVATE";
+                                                position[] = {17,0,0};
+                                        };
+									};
+                               class Modern_FST
+                                {
+                                        name = "Fire Support Team"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_FSTCommander"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_FSTAssistant";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_FSTAssistant";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+										class Unit4
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_FSTForwardObserver";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+                                };
+                               class Modern_Sniperteam
+                                {
+                                        name = "Sniper Team"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Spotter"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Sniper";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                };
+                               class Modern_Sniperteam_coin
+                                {
+                                        name = "Sniper Team (COIN)"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Spotter_coin"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Sniper_coin";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                };
+								class Modern_helicrew
+                                {
+                                        name = "Heli Crew"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_HeliPilot"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_crewchief";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                };
+								class Modern_armourcrew
+                                {
+                                        name = "Armour Crew"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_VehicleCommander"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_VehicleCrew";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_VehicleCrew";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+                                };
+								class Modern_artcrew
+                                {
+                                        name = "Artillery Crew"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_Artillery_Commander"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_Artillery_Gunner";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_Artillery_Gunner";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+                                };
+								
+								/*								class Modern_Coin_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
                                         faction = "twc_faction"; //Faction
@@ -412,7 +701,7 @@ class CfgGroups
                                                 position[] = {5,0,0};
                                         };
                                 };
-                        };
+*/                        };
 				};
 		};
 };

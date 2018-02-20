@@ -45,6 +45,41 @@ class CfgSounds {
 		titles[] = {0, ""};
 	};
 	
+	class TWC_sound_allclearvoice {
+		name = "TWC_sound_allclearvoice";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\allclearvoice.wav", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
+	class TWC_sound_contactvoice {
+		name = "TWC_sound_contactvoice";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\contactvoice.wav", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
+	class TWC_sound_incomingvoice1 {
+		name = "TWC_sound_incomingvoice1";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\incomingvoice1.wav", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
+	class TWC_sound_incomingvoice2 {
+		name = "TWC_sound_incomingvoice2";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\incomingvoice2.wav", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
+	class TWC_sound_standtovoice {
+		name = "TWC_sound_standtovoice";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\standtovoice.wav", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
 	class TWC_sound_idfclear {
 		name = "TWC_sound_idfclear";
 		sound[] = {"\twc_basedefence\sounds\idfclear.wav", db+30, 1, 500};

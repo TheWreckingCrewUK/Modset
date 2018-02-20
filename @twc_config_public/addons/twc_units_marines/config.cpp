@@ -34,12 +34,21 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (US Army Modern)";
 	};
+	
+	class USMC_Modern_WD
+	{
+		displayName = "Men (Woodland)";
+	};
+	class USMC_Modern_D
+	{
+		displayName = "Men (Desert)";
+	};
 };
 class CfgFactionClasses
 {
-	class twc_faction
+	class twc_public_usmc
 	{
-		displayName="TWC Public Units";
+		displayName="TWC Public USMC Units";
 		author="The Wrecking Crew";
 		icon="TWClogo.paa";
 		priority=2;

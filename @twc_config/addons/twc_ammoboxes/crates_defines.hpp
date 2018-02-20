@@ -4,7 +4,7 @@ class CUP_BAF_VehicleBox;
 class Box_NATO_Ammo_F;
 class Box_NATO_AmmoVeh_F;
 class ACE_medicalSupplyCrate;
-class Land_PaperBox_closed_F;
+class B_supplyCrate_F;
 
 class TWC_AmmoBox_Base: CUP_BAF_VehicleBox {
 	scope = 1;
@@ -95,21 +95,11 @@ class TWC_AmmoBox_Medical: ACE_medicalSupplyCrate {
 };
 
 // It's here for a myriad of reasons, all of which I can't explain...
-class TWC_AmmoBox_Other_Pallet: Land_PaperBox_closed_F  {
+class TWC_AmmoBox_Other_Pallet: B_supplyCrate_F  {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "Cargo Pallet (Deployable/Immobile)";
 	author      = "Bosenator";
-
-	// Basically make this building a supply crate, so ACE Cargo can work on it and not look reta-retardant
-	model = "\A3\Weapons_F\Ammoboxes\Supplydrop.p3d";
-	memoryPointSupply = "doplnovani";
-	slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1","SlingLoadCargo2","SlingLoadCargo3","SlingLoadCargo4"};
-	
-	icon = "iconCrate";
-	picture = "pictureThing";
-	destrType = "DestructDefault";
-	explosionEffect = "BasicAmmoExplosion";
 
 	editorCategory = "TWC_Crates";
 	editorSubcategory = "TWC_Crates_Other";
@@ -119,49 +109,20 @@ class TWC_AmmoBox_Other_Pallet: Land_PaperBox_closed_F  {
 	class TransportWeapons   { };
 	class TransportBackpacks { };
 	
-	// ACE Defines
-	ace_cargo_hasCargo    = 1;
-	ace_cargo_space       = 3;
-	ace_cargo_canLoad     = 1;
-	ace_cargo_size        = 4;
-	
 	ace_dragging_canCarry = 0;
 	ace_dragging_canDrag  = 1;
 	
+	// ACE Defines
+	ace_cargo_canLoad     = 1;
+	ace_cargo_size        = 5;
+	ace_cargo_hasCargo    = 1;
+	ace_cargo_space = 5;
+
 	// Disable inventory on it
 	maximumLoad           = 0;
 	transportMaxMagazines = 0;
 	transportMaxWeapons   = 0;
 	transportMaxBackpacks = 0;
-	
-	class DestructionEffects {
-		class Smoke2 {
-			simulation = "particles";
-			type = "AmmoSmokeParticles2";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 2;
-		};
-		
-		class Bullets {
-			simulation = "particles";
-			type = "AmmoBulletCore";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1.2;
-		};
-		
-		class HouseDestr {
-			simulation = "destroy";
-			type = "DelayedDestructionAmmoBox";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 10;
-		};
-	};
 };
 
 class TWC_AmmoBox_Other_Empty_Portable: TWC_AmmoBox_Portable {

@@ -173,6 +173,11 @@ class CfgEditorSubCategories
 	{
 		displayName="Men (Greek)";
 	};
+	
+	class Men_ana
+	{
+		displayName="Men";
+	};
 		class Men_tak_twc_ins
 	{
 		displayName="Men (TWC)";
@@ -222,6 +227,12 @@ class CfgFactionClasses
 		priority=2;
 		side=2;
 	};
+	class ana_units
+	{
+		displayName="Afghan National Army";
+		priority=2;
+		side=1;
+	};
 
 	class TWC_Tak_Ins
 	{
@@ -232,6 +243,9 @@ class CfgFactionClasses
 	
 };
 class EventHandlers;
+
+#include "compositions.hpp"
+
 class CfgVehicles
 {
 	class CUP_B_AlicePack_Khaki;

@@ -8,19 +8,19 @@
 		vehicleClass="Men_Iraq";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_NKR_Rg";
+		uniformClass="CUP_U_O_TK_Green";
 		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
-		"SP_M1Helmet_GrayDim",
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
+		"CUP_H_SLA_Helmet",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05",
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -103,16 +103,16 @@
 		vehicleClass="Men_Iraq";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_NKR_Rg";
+		uniformClass="CUP_U_O_TK_Green";
 		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
-		"SP_M1Helmet_GrayDim"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
+		"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown"
 		};
 		weapons[]=
 		{
@@ -194,16 +194,16 @@
 		vehicleClass="Men_Iraq";
 		icon="iconManExplosive";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_NKR_Rg";
-		backpack="B_mas_m_Bergen_rpg";
+		uniformClass="CUP_U_O_TK_Green";
+		backpack="Afr_Backpack_AT";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
-		"SP_M1Helmet_GrayDim"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
+		"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown"
 		};
 		weapons[]=
 		{
@@ -291,16 +291,16 @@
 		vehicleClass="Men_Iraq";
 		icon="iconManMG";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_NKR_Rg";
-		backpack="B_SUD_RPG";
+		uniformClass="CUP_U_O_TK_Green";
+		backpack="Afr_Backpack_AT";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
-		"SP_M1Helmet_GrayDim"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
+		"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown"
 		};
 		weapons[]=
 		{
@@ -327,9 +327,9 @@
 		"CUP_30Rnd_545x39_AK_M",
 		"CUP_30Rnd_545x39_AK_M",
 		"CUP_8Rnd_9x18_Makarov_M",
-		"SUD_PG7VL",
-		"SUD_PG7VL",
-		"SUD_PG7VL",
+		"CUP_PG7V_M",
+		"CUP_PG7V_M",
+		"CUP_PG7V_M",
 		"CUP_HandGrenade_RGO",
 		"CUP_HandGrenade_RGO",
 		"SmokeShell",
@@ -385,16 +385,16 @@
 		vehicleClass="Men_Iraq";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_NKR_Rg";
+		uniformClass="CUP_U_O_TK_Green";
 		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
-		"SP_M1Helmet_GrayDim"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
+		"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown"
 		};
 		weapons[]=
 		{
@@ -468,16 +468,16 @@
 		vehicleClass="Men_Iraq";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="MNP_CombatUniform_NKR_Rg";
+		uniformClass="CUP_U_O_TK_Green";
 		backpack="";
 		linkedItems[]=
 		{
-        "V_sud_ussr_vest05",
-		"SP_M1Helmet_GrayDim"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown",
+		"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_sud_ussr_vest05"
+        "CUP_V_B_GER_Carrier_Rig_2_Brown"
 		};
 		weapons[]=
 		{

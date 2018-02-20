@@ -12,7 +12,7 @@ if (_caller == _target) exitwith { false };
 _unCon = [_target] call twc_medical_fnc_canCPR;
 _inMedVehicle = [_caller] call ace_medical_fnc_isInMedicalVehicle;
 _isBleeding = _target getVariable ["ace_medical_isBleeding", false];
-_bloodVolume = [_caller, _target] call twc_medical_fnc_getBloodLoss; // i should change the name some time
+_bloodVolume = [_caller, _target] call twc_medical_fnc_getBloodVolume; // i should change the name some time
 
 // is in need of defibs
 if (_unCon && _inMedVehicle && !(_isBleeding) && (_bloodVolume >= 0.5)) exitWith {

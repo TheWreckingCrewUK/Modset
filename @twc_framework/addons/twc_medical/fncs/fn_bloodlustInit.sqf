@@ -17,6 +17,17 @@ if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
 	BloodLust_IsVaporizationGibsEnabledMP = false;
 };
 
+if (isServer) then {
+	addMissionEventHandler ["EntityRespawned", {
+		_player = (_this select 1);
+		
+		if (isPlayer _player) then {
+			_player hideObjectGlobal false; // force visibility on spawn
+			_player setVariable ["ace_medical_inReviveState", false, true];
+		};
+	}];
+};
+
 // explosion is a local event only, so rebroadcast to the server to handle
 if (hasInterface) then {
 	player addEventHandler ["Explosion", {
@@ -39,6 +50,8 @@ _TWC_VaporizedUnitCompat = {
 		if (_debugMode) then {
 			"_TWC_VaporizedUnitCompat called" remoteExec ["hint", -2, true];
 		};
+	} else {
+		[{ if (alive _unit) then { _unit hideObjectGlobal false; }; }, [_unit], 1] call CBA_fnc_waitAndExecute; // double check (will blink 1 sec, if they were invisible)
 	};
 };
 
@@ -58,6 +71,9 @@ _TWC_VaporizeKillUnit = {
 		removeAllAssignedItems _unit;
 		_unit removeWeaponGlobal "Binocular";
 		_unit removeItems "ItemMap";
+		
+		_weapon = nearestObject [(getPos _unit), "weaponholder"];
+		deleteVehicle _weapon;
 		
 		[_unit, true, true] call ace_medical_fnc_setDead;
 

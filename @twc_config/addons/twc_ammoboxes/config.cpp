@@ -40,6 +40,10 @@ class CfgPatches {
 			"TWC_AmmoBox_Other_L111_Portable",
 			"TWC_AmmoBox_Other_L7A2_Portable",
 			"TWC_AmmoBox_Other_L16_Portable",
+			"TWC_AmmoBox_Other_L118_Portable",
+			"TWC_AmmoBox_Other_L118_Portable_HE",
+			"TWC_AmmoBox_Other_L118_Portable_SMOKE",
+			"TWC_AmmoBox_Other_L118_Portable_ILLUM",
 			"TWC_AmmoBox_Launchers_L14_Portable",
 			"TWC_AmmoBox_Launchers_L1A1_Portable",
 			"TWC_AmmoBox_Launchers_LAW80_Portable",
@@ -62,7 +66,8 @@ class CfgPatches {
 			"uk3cb_baf_equipment",
 			"cup_weapons_ammoboxes",
 			"ace_medical",
-			"ace_cargo"
+			"ace_cargo",
+			"ace_cup_artillery"
 		};
 		
 		version = "1";

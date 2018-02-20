@@ -58,3 +58,12 @@ if(isMultiplayer)then{
 		1 enableChannel false;
 	};
 };
+
+player createDiarySubject ["Intel","Intel"];
+if(!(isNIl "twc_JIP_CommandMessage"))then{
+	{
+		if(rank player == (_x select 0))then{
+			player createDiaryRecord ["Diary",["Intel",(_x select 1)]];
+		};	
+	}forEach twc_JIP_CommandMessage;
+};

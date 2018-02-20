@@ -2,24 +2,24 @@
 	{
 		scope=1;
 		displayName="Base (90`s Woodland)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_1990W";
 		vehicleClass="Men_1990W";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="TWC_Smock_Temperate";
+		uniformClass="UK3CB_BAF_U_Smock_DPMW";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DPMT",
-			"UK3CB_BAF_H_Mk6_DPMT_A",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DPMT",
-			"UK3CB_BAF_H_Mk6_DPMT_A",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -284,6 +284,45 @@
 		displayName="2IC (90`s Woodland)";
 		backpack="TWC_Backpack_1990_2IC";
 	};
+	
+			class 1990_British_MachineGunner: 1990_British_Gunner
+	{
+		displayName="GPMG Gunner (90`s Woodland)";
+		backpack="TWC_Backpack_1990_machineGunner";
+				weapons[]=
+		{
+		"Throw",
+		"Put",
+		"UK3CB_BAF_L7A2"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"UK3CB_BAF_L7A2"
+		};
+				magazines[]=
+		{
+		"UK3CB_BAF_762_200Rnd",
+		"UK3CB_BAF_762_200Rnd",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"UK3CB_BAF_762_200Rnd",
+		"UK3CB_BAF_762_200Rnd",
+		"SmokeShell"
+		};
+	};
+	
+		class 1990_British_mg_assistant: 1990_British_Rifleman
+	{
+		displayName="GPMG Assistant (90`s Woodland)";
+		backpack="TWC_Backpack_1990_machineGunner";
+	};
+	
+
+	
 	class 1990_British_Platoon_Commander: 1990_British_Base
 	{
 		scope=2;
@@ -340,16 +379,22 @@
 		weapons[]=
 		{
 			"Throw",
-			"Put"
+			"Put",
+			"twc_browning_hp"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
-			"Put"
+			"Put",
+			"twc_browning_hp"
 		};
 		magazines[]=
 		{
 			"SmokeShell",
+			"CUP_15Rnd_9x19_M9",
+			"CUP_15Rnd_9x19_M9",
+			"CUP_15Rnd_9x19_M9",
+			"CUP_15Rnd_9x19_M9",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
@@ -358,6 +403,10 @@
 		Respawnmagazines[]=
 		{
 			"SmokeShell",
+			"CUP_15Rnd_9x19_M9",
+			"CUP_15Rnd_9x19_M9",
+			"CUP_15Rnd_9x19_M9",
+			"CUP_15Rnd_9x19_M9",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
@@ -1423,7 +1472,7 @@
 		_generalMacro="1990_Desert_British_Tank Commander";
 		scope=2;
 		displayName="Vehicle Commander (90`s Desert)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		icon="iconMan";
@@ -1525,7 +1574,7 @@
 		_generalMacro="1990_Desert_Tank_Crew";
 		scope=2;
 		displayName="Vehicle Crew (90`s Desert)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		icon="iconMan";
@@ -1600,7 +1649,7 @@
 		"ACE_quikclot",
 		"ACE_morphine",
 		"ACE_morphine",
-		"ACE_tourniquet",
+		"ACE_tourniquet"
 		};
 		respawnitems[]=
 		{
@@ -1613,7 +1662,7 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_morphine",
-		"ACE_morphine"		
+		"ACE_morphine"
 		};
 	};
 	
@@ -1622,7 +1671,7 @@
 		_generalMacro="1990_Desert_Sniper";
 		scope=2;
 		displayName="Sniper (90`s Desert)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		icon="iconMan";
@@ -1721,7 +1770,7 @@
 		_generalMacro="1990_Desert_spotter";
 		scope=2;
 		displayName="Spotter (90`s Desert)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		icon="iconMan";
@@ -1946,11 +1995,12 @@
 	class twc_men_1990_us_w_base: B_Soldier_base_F
 	{
 		scope=1;
-		displayName="Base (90's Woodland)";
+		displayName="Rifleman (90's US Army Woodland)";
 		faction="twc_faction";
 		editorSubcategory = "twc_men_1990_us_w";
 		vehicleClass="twc_men_1990_us_w";
 		icon="iconMan";
+		backpack="twc_men_1990_us_w_backpack_rifleman";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhsgref_uniform_woodland";
 		linkedItems[]=
@@ -2025,7 +2075,7 @@
 	class twc_men_1990_us_w_SquadLeader: twc_men_1990_us_w_base
 	{
 		scope=2;
-		displayName="Squad Leader";
+		displayName="Squad Leader (90's US Army Woodland)";
 		icon="iconManLeader";
 		backpack="twc_men_1990_us_w_backpack_squadlead";
 		weapons[]=
@@ -2076,7 +2126,7 @@
 	class twc_men_1990_us_w_teamleader: twc_men_1990_us_w_base
 	{
 		scope=2;
-		displayName="Team Leader";
+		displayName="Team Leader (90's US Army Woodland)";
 		icon="iconManLeader";
 		backpack="twc_men_1990_us_w_backpack_teamlead";
 		weapons[]=
@@ -2098,11 +2148,11 @@
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag_Tracer_Red",
 			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -2113,11 +2163,11 @@
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag_Tracer_Red",
 			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -2127,6 +2177,7 @@
 	class twc_men_1990_us_w_rifleman: twc_men_1990_us_w_base
 	{
 		scope=2;
+		displayName="Rifleman (90's US Army Woodland)";
 		backpack="twc_men_1990_us_w_backpack_rifleman";
 		weapons[]=
 		{
@@ -2172,6 +2223,7 @@
 	class twc_men_1990_us_w_rifleman_at: twc_men_1990_us_w_base
 	{
 		scope=2;
+		displayName="Rifleman AT (90's US Army Woodland)";
 		backpack="twc_men_1990_us_w_backpack_rifleman";
 		weapons[]=
 		{
@@ -2219,7 +2271,7 @@
 	class twc_men_1990_us_w_autorifleman: twc_men_1990_us_w_base
 	{
 		scope=2;
-		displayName="Autorifleman";
+		displayName="Autorifleman (90's US Army Woodland)";
 		icon="iconManMG";
 		backpack="twc_men_1990_us_w_backpack_autorifleman";
 		weapons[]=
