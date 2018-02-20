@@ -107,6 +107,19 @@ class CfgPatches
 			"Tak_twc_ins_Men_Scout",
 			"Tak_twc_ins_Men_Bombmaker",
 			
+			"twc_farc_men_rif_m92",
+			"twc_farc_men_off",
+			"twc_farc_men_mg_m60",
+			"twc_farc_men_mg_pkp",
+			"twc_farc_men_mg_as",
+			"twc_farc_men_rif_akm",
+			"twc_farc_men_rif_m21",
+			"twc_farc_men_rif_hk416",
+			"twc_farc_men_rif_ak104",
+			"twc_farc_men_rif_ak74",
+			"twc_farc_men_rif_m16",
+			"twc_farc_men_rif_m4",
+			
 			"twc_greek_officer",
 			"twc_greek_rifleman",
 			"twc_greek_rifleman_2",
@@ -251,6 +264,17 @@ class CfgVehicles
 	class CUP_B_AlicePack_Khaki;
 	class CUP_B_RPGPack_Khaki;
 	class rhs_sidor;
+	class twc_Backpack_m60: CUP_B_AlicePack_Khaki
+	{
+		class TransportMagazines
+		{
+			class _xx_mgMags
+			{
+				magazine="CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M";
+				count=3;
+			};
+		};
+	};
 	class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki
 	{
 		class TransportMagazines
@@ -385,5 +409,6 @@ accuracy=0.01;
 	#include "greek.hpp"
 	#include "greek_civ.hpp"
 	#include "takistanins.hpp"
+	#include "farcrebels.hpp"
 };
 	#include "weapons.hpp"
