@@ -1,20 +1,14 @@
 
-	class twc_farc_Men_Base: O_G_Survivor_F
+	class twc_heavy_Men_Base: O_G_Survivor_F
 	{
 		author="Hobbs";
 		scope=1;
-		displayName="farc rebel Base";
+		displayName="generic heavy Base";
 		faction="twc_faction";
-		editorSubcategory = "Men_twc_farc";
-		vehicleClass="Men_twc_farc";
+		editorSubcategory = "Men_twc_genheavy";
+		vehicleClass="Men_twc_genheavy";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhsgref_uniform_olive";
-		identityTypes[]=
-		{
-			"LanguagePER_F",
-			"Head_African",
-			"G_GUERIL_default"
-		};
 		
 		linkedItems[]= {
 			"rhsgref_alice_webbing"
@@ -24,72 +18,60 @@
 			"rhsgref_alice_webbing"
 		};
 		
+Items[]=
+{
+"ACE_fieldDressing",
+"ACE_fieldDressing",
+"ACE_packingBandage",
+"ACE_elasticBandage",
+"ACE_elasticBandage",
+"ACE_elasticBandage",
+"ACE_elasticBandage",
+"ACE_elasticBandage",
+"ACE_quikclot",
+"ACE_quikclot",
+"ACE_morphine",
+"ACE_morphine",
+"ACE_epinephrine",
+"ACE_tourniquet"
+};
+respawnitems[]=
+{
+"ACE_fieldDressing",
+"ACE_fieldDressing",
+"ACE_packingBandage",
+"ACE_elasticBandage",
+"ACE_elasticBandage",
+"ACE_elasticBandage",
+"ACE_elasticBandage",
+"ACE_elasticBandage",
+"ACE_quikclot",
+"ACE_quikclot",
+"ACE_morphine",
+"ACE_morphine",
+"ACE_epinephrine",
+"ACE_tourniquet"
+};
 	};
 
-	class twc_farc_men_rif_m92: twc_farc_men_Base {
+	class twc_heavy_men_rif_m4: twc_heavy_men_Base {
 		scope=2;
-		displayName="Rifleman M92";
+		displayName="Rifleman M4";
 		uniformClass="rhsgref_uniform_dpm_olive";
 
 		weapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m92_fold"
+			"rhs_m4_acog2_usmc"
 		};
 		respawnweapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m92_fold"
+			"rhs_m4_acog2_usmc"
 		};
 		magazines[]=
 		{
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm"
-		};
-		Respawnmagazines[]=
-		{
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm"
-		};
-
-	};
-	
-	class twc_farc_men_off: twc_farc_men_Base {
-		scope=2;
-		displayName="Officer";
-		uniformClass="rhsgref_uniform_tigerstripe";
-
-		weapons[]= {
-			"Throw",
-			"Put",
-			"rhs_weap_m4a1_blockII_wd"
-		};
-		respawnweapons[]= {
-			"Throw",
-			"Put",
-			"rhs_weap_m4a1_blockII_wd"
-		};
-		linkedItems[]= {
-			"V_BandollierB_oli",
-			"rhsgref_fieldcap_ttsko_mountain",
-			"H_Bandanna_gry"
-		};
-		
-		respawnlinkedItems[]= {
-			"V_BandollierB_oli",
-			"rhsgref_fieldcap_ttsko_mountain",
-			"H_Bandanna_gry"
-		};
-		magazines[]=
-		{
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
@@ -106,26 +88,76 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag"
 		};
 
 	};
 	
-	class twc_farc_men_mg_m60: twc_farc_men_Base {
+	class twc_heavy_men_com: twc_heavy_men_Base {
 		scope=2;
-		displayName="Machinegunner M60";
+		displayName="Commander";
 		uniformClass="rhsgref_uniform_tigerstripe";
-		backpack="twc_Backpack_m60";
 
 		weapons[]= {
 			"Throw",
 			"Put",
-			"CUP_lmg_M60E4"
+			"rhs_weap_45th_ak74m_pkas"
 		};
 		respawnweapons[]= {
 			"Throw",
 			"Put",
-			"CUP_lmg_M60E4"
+			"rhs_weap_45th_ak74m_pkas"
+		};
+		linkedItems[]= {
+			"V_BandollierB_oli",
+			"rhsgref_fieldcap_ttsko_mountain",
+			"H_Bandanna_gry"
+		};
+		
+		respawnlinkedItems[]= {
+			"V_BandollierB_oli",
+			"rhsgref_fieldcap_ttsko_mountain",
+			"H_Bandanna_gry"
+		};
+		magazines[]=
+		{
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK"
+		};
+		Respawnmagazines[]=
+		{
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK"
+		};
+
+	};
+	
+	class twc_heavy_men_ar: twc_heavy_men_Base {
+		scope=2;
+		displayName="Autorifleman";
+		uniformClass="rhsgref_uniform_tigerstripe";
+		backpack="twc_Backpack_m249";
+
+		weapons[]= {
+			"Throw",
+			"Put",
+			"CUP_lmg_M249_E2"
+		};
+		respawnweapons[]= {
+			"Throw",
+			"Put",
+			"CUP_lmg_M249_E2"
 		};
 		linkedItems[]= {
 			"CUP_V_O_Ins_Carrier_Rig_MG",
@@ -138,21 +170,20 @@
 		};
 		magazines[]=
 		{
-			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
-			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249"
 		};
 		Respawnmagazines[]=
 		{
-			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
-			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249"
 		};
 
 	};
 	
-	class twc_farc_men_mg_pkp: twc_farc_men_Base {
+	class twc_heavy_men_mg: twc_heavy_men_Base {
 		scope=2;
 		displayName="Machinegunner PKP";
-		uniformClass="CUP_U_O_SLA_MixedCamo";
 		backpack="Afr_Backpack_MG";
 
 		weapons[]= {
@@ -185,7 +216,7 @@
 
 	};
 	
-	class twc_farc_men_mg_as: twc_farc_men_Base {
+	class twc_heavy_men_mg_as: twc_heavy_men_Base {
 		scope=2;
 		displayName="Machinegunner Assistant";
 		backpack="Afr_Backpack_MG";
@@ -193,12 +224,12 @@
 		weapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m4a1_wd_mstock"
+			"rhs_weap_hk416d10_acog"
 		};
 		respawnweapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m4a1_wd_mstock"
+			"rhs_weap_hk416d10_acog"
 		};
 		linkedItems[]= {
 			"CUP_V_O_Ins_Carrier_Rig_MG"
@@ -225,56 +256,63 @@
 		};
 
 	};
-	class twc_farc_men_rif_akm: twc_farc_men_Base {
+	class twc_heavy_men_gren_m203: twc_heavy_men_Base {
 		scope=2;
-		displayName="Rifleman AKM";
+		displayName="Grenadier (M203)";
 
 		weapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_akmn"
+			"rhs_m4_m203s_acog_usmc"
 		};
 		respawnweapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_akmn"
+			"rhs_m4_m203s_acog_usmc"
 		};
 		magazines[]=
 		{
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M"
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell"
 		};
 		Respawnmagazines[]=
 		{
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M"
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell"
 		};
 
 	};
 	
-	class twc_farc_men_rif_m21: twc_farc_men_Base {
+	class twc_heavy_men_gren_gp25: twc_heavy_men_Base {
 		scope=2;
-		displayName="Rifleman M21";
+		displayName="Grenadier (GP-25)";
+		uniformClass="rhsgref_uniform_tigerstripe";
 
 		weapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m21a_fold"
+			"rhs_weap_ak74m_fullplum_gp25_folded"
 		};
 		respawnweapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m21a_fold"
+			"rhs_weap_ak74m_fullplum_gp25_folded"
 		};
 		linkedItems[]= {
 			"CUP_V_O_Ins_Carrier_Rig_Com",
@@ -287,39 +325,50 @@
 		};
 		magazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21"
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25"
 		};
 		Respawnmagazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21"
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_30Rnd_545x39_AK",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25"
 		};
 
 	};
 	
-	class twc_farc_men_rif_hk416: twc_farc_men_Base {
+	class twc_heavy_men_rif_at: twc_heavy_men_Base {
 		scope=2;
-		displayName="Rifleman HK416";
+		displayName="Rifleman AT";
 		uniformClass="rhsgref_uniform_dpm_olive";
+		backpack="twc_Backpack_m3maaws";
 
 		weapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_hk416d145"
+			"rhs_weap_hk416d10_acog",
+			"rhs_weap_maaws"
 		};
 		respawnweapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_hk416d145"
+			"rhs_weap_hk416d10_acog",
+			"rhs_weap_maaws"
 		};
 		magazines[]=
 		{
@@ -327,7 +376,9 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag"
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_maaws_HEAT",
+			"rhs_mag_maaws_HEAT"
 		};
 		Respawnmagazines[]=
 		{
@@ -335,48 +386,52 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag"
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_maaws_HEAT",
+			"rhs_mag_maaws_HEAT"
 		};
 
 	};
 	
-	class twc_farc_men_rif_ak104: twc_farc_men_Base {
+	class twc_heavy_men_mk: twc_heavy_men_Base {
 		scope=2;
-		displayName="Rifleman AK-104";
+		displayName="Marksman";
 		uniformClass="rhsgref_uniform_dpm_olive";
 
 		weapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_ak104"
+			"rhs_weap_sr25_leo"
 		};
 		respawnweapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_ak104"
+			"rhs_weap_sr25_leo"
 		};
 		magazines[]=
 		{
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M"
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag"
 		};
 		Respawnmagazines[]=
 		{
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M"
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag",
+			"rhsusf_20Rnd_762x51_m118_special_Mag"
 		};
 
 	};
 	
-	class twc_farc_men_rif_ak74: twc_farc_men_Base {
+	class twc_heavy_men_rif_ak74: twc_heavy_men_Base {
 		scope=2;
 		displayName="Rifleman AK-74";
 
@@ -413,7 +468,7 @@
 
 	};
 	
-	class twc_farc_men_rif_m16: twc_farc_men_Base {
+	class twc_heavy_men_rif_m16: twc_heavy_men_Base {
 		scope=2;
 		displayName="Rifleman M16";
 
@@ -450,49 +505,6 @@
 
 	};
 	
-	class twc_farc_men_rif_m4: twc_farc_men_Base {
-		scope=2;
-		displayName="Rifleman M4";
-
-		linkedItems[]= {
-			"CUP_V_RUS_Smersh_2"
-		};
-		
-		respawnlinkedItems[]= {
-			"CUP_V_RUS_Smersh_2"
-		};
-		
-		weapons[]= {
-			"Throw",
-			"Put",
-			"CUP_arifle_M4A1"
-		};
-		respawnweapons[]= {
-			"Throw",
-			"Put",
-			"CUP_arifle_M4A1"
-		};
-		magazines[]=
-		{
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag"
-		};
-		Respawnmagazines[]=
-		{
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag"
-		};
-
-	};
+	
 	
 	
