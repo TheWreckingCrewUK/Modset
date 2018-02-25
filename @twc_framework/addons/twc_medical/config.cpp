@@ -21,6 +21,7 @@ class CfgFunctions {
 			class init { postInit = 1; };
 			class getBloodVolume {};
 			class extendedVitalLoop {};
+			class logToRPT {};
 			
 			// Uncon Loop
 			class extendedUnconLoop {};
@@ -119,6 +120,13 @@ class ACE_Medical_Actions {
 			treatmentTime = 10;
 			patientStateCondition = 1;
 			callbackSuccess = "twc_medical_fnc_action_Defib";
+		};
+
+		class Diagnose;
+		class LogDebug: Diagnose {
+			displayName = "Medical to RPT (DEBUG)";
+			displayNameProgress = "Logging Medical State";
+			callbackSuccess = "twc_medical_fnc_logToRPT";
 		};
 		
 		class QuikClot: fieldDressing {
