@@ -76,6 +76,54 @@ class CfgSounds {
 		};
 		titles[]={};
 	};
+	
+	class TWC_Parachute_Landing_1 {
+		name = "TWC_Parachute_Landing_1";
+		sound[] = {"\oh_round_chute\sounds\landing1.ogg", 2, 1};
+		titles[] = {};
+	};
+
+	class TWC_Parachute_Landing_2 {
+		name = "TWC_Parachute_Landing_2";
+		sound[] = {"\oh_round_chute\sounds\landing2.ogg", 2, 1};
+		titles[] = {};
+	};
+
+	class TWC_Parachute_Landing_3 {
+		name = "TWC_Parachute_Landing_1";
+		sound[] = {"\oh_round_chute\sounds\landing3.ogg", 2, 1};
+		titles[] = {};
+	};
+
+	class TWC_Parachute_Landing_4 {
+		name = "TWC_Parachute_Landing_4";
+		sound[] = {"\oh_round_chute\sounds\landing4.ogg", 2, 1};
+		titles[] = {};
+	};
+
+	class TWC_Parachute_Landing_5 {
+		name = "TWC_Parachute_Landing_5";
+		sound[] = {"\oh_round_chute\sounds\landing5.ogg", 2, 1};
+		titles[] = {};
+	};
+
+	class TWC_Parachute_Landing_6 {
+		name = "TWC_Parachute_Landing_6";
+		sound[] = {"\oh_round_chute\sounds\landing6.ogg", 2, 1};
+		titles[] = {};
+	};
+
+	class TWC_Parachute_Landing_7 {
+		name = "TWC_Parachute_Landing_7";
+		sound[] = {"\oh_round_chute\sounds\landing7.ogg", 2, 1};
+		titles[] = {};
+	};
+
+	class TWC_Parachute_Landing_8 {
+		name = "TWC_Parachute_Landing_8";
+		sound[] = {"\oh_round_chute\sounds\landing8.ogg", 2, 1};
+		titles[] = {};
+	};
 };
 
 class CfgVehicles {
