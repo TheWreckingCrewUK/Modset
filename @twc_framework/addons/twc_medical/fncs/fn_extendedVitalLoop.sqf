@@ -21,7 +21,7 @@ if (alive _unit) then {
 
 	// makes time to death dynamic based on current blood level, will restore with saline
 	_defaultMaxTime = missionNamespace getVariable ["twc_medical_defaultMaxTime", (missionNamespace getVariable ["ace_medical_maxReviveTime", 180])];
-	_adjustedMaxTime = _defaultMaxTime - ((_defaultMaxTime / 3) * (1 - _bloodVolume));
+	_adjustedMaxTime = _defaultMaxTime - ((_defaultMaxTime / 2) * (1 - _bloodVolume));
 	
 	if (!isAbleToBreathe _unit) then {
 		_adjustedMaxTime = (_adjustedMaxTime - (_adjustedMaxTime / 2)) max 30;

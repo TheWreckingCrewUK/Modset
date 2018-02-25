@@ -7,6 +7,8 @@ _continue = true;
 _unCon = (_unit getVariable ["ACE_isUnconscious", false]);
 
 if (_unCon) then {
+	_unit hideObjectGlobal false;
+
 	if (!([_unit] call ace_medical_fnc_getUnconsciousCondition)) then {
 		_unit setVariable ["ACE_isUnconscious", false, true];
 		_continue = false;
