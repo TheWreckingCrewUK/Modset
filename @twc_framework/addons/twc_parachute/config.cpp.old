@@ -18,6 +18,7 @@ class CfgMovesBasic {
 		OH_Para_Pilot = "OH_Para_Pilot";
 	};
 };
+
 class CfgFactionClasses {
 	class TWC_General {
 		displayName = "TWC General Operation Units";
@@ -265,20 +266,21 @@ class CfgVehicles {
 		displayname="T-10";
 		parachuteclass="OH_T10_Parachute";
 	};
+
 	class CUP_B_C130J_GB;
 	class twc_c5_hercules: CUP_B_C130J_GB {
 		scope=2;
 		side=1;
-		faction="TWC_General";
-		author="CUP";
-		displayname="C5 Hercules";
+		faction = "TWC_General";
+		author = "CUP";
+		displayname = "C5 Hercules";
 		
 		class TransportMagazines { };
 		class TransportItems { };
 		class TransportWeapons { };
-		class Eventhandlers: Eventhandlers
-		{
+
+		class Eventhandlers: Eventhandlers {
 			init = "[(_this select 0)] execVM 'oh_round_chute\init.sqf';";
-		};		
+		};
 	};
 };

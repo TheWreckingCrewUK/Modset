@@ -1,5 +1,3 @@
-//BRIDGE Tank Knocking Script
-
 TWC_fnc_knockOnTank = {
 	_tank = _this select 0;
 	[[_tank], "TWC_fnc_knockedOn"] call BIS_fnc_MP;
