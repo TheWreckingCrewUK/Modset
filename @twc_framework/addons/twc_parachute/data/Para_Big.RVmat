@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="DEGA_Parachutes\data\Para_Big_NOHQ.paa";
+	texture="twc_parachute\data\Para_Big_NOHQ.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="DEGA_Parachutes\data\Roof1_soft_512_DT.paa";
+	texture="twc_parachute\data\Roof1_soft_512_DT.paa";
 	uvSource="tex";
 	class uvTransform
 	{
