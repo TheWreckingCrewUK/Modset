@@ -17,13 +17,11 @@
 	6.2 One with owner 76561198070630639 (Jayman).
 	6.3 One with owner 76561198030665694 (Hobbs).
 	6.4 One with owner 76561198005456546 (Bosenator).
+	6.5 One wit owner 76561198072029517 (Mallas)
 
 7. Set up the Headless Client:
-	6.1 Place down the Headless Module.
-	6.2 Place down 3 Headless Client Logic Entities names HC1, HC2, and HC3 and set them as playable.
+	6.2 Place down 1 Headless Client Logic Entities names HC1 it as playable.
 
 8. Place down the TWC Operations Module and set up as desired.
-
-9. Place down the TWC Caching Module.
 
 10. Place down the ACEX Sitting Module.
