@@ -1,24 +1,23 @@
 class CfgPatches {
 	class TWC_Parachute {
 		units[] = {
-			"twc_c5_hercules"
+			"twc_c5_hercules",
+			"TWC_T10_Parachute",
+			"TWC_T10_Parachute_backpack"
 		};
 
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {
+			"A3_Air_F",
+			"A3_Characters_F",
+			"A3_Weapons_F",
+			"A3_Anims_F",
+			"A3_Anims_F_Config_Sdr",
+			"A3_Air_F_Beta",
+			"CBA_XEH_A3",
 			"ace_common"
 		};
-	};
-};
-
-class DefaultEventhandlers;
-class Eventhandlers;
-
-class CfgMovesBasic {
-	class DefaultDie;
-	class ManActions {
-		OH_Para_Pilot = "OH_Para_Pilot";
 	};
 };
 
@@ -44,91 +43,31 @@ class CfgFunctions {
 	};
 };
 
+class CfgMovesBasic {
+	class DefaultDie;
+	class ManActions {
+		chute_pos = "chute_pos";
+	};
+};
+
+class CfgCoreData {
+	cobraLight = "twc_parachute\cobraSvetlo.p3d";
+	marker = "twc_parachute\obrysove svetlo.p3d";
+};
+
 class CfgMovesMaleSdr: CfgMovesBasic {
 	class States {
-		class OH_KIA_Para_Pilot: DefaultDie {
-			actions="DeadActions";
-			file="twc_parachute\data\anim\KIA_Para_Pilot.rtm";
-			speed=0.5;
-			looped="false";
-			terminal=1;
-			soundEnabled=0;
-			connectTo[]= {
-				"DeadState",
-				0.1
-			};
-		};
-		
 		class Crew;
-		class OH_Para_Pilot: Crew {
-			file="twc_parachute\data\anim\chute_pos.rtm";
-			interpolateTo[]= {
-				"KIA_Para_Pilot",
-				1
-			};
+		class KIA_Para_Pilot;
+		class chute_pos: Crew {
+			file= "twc_parachute\data\anim\chute_pos";
+			interpolateTo[]={KIA_Para_Pilot,1};
 		};
 	};
 };
 
-class CfgSounds {
-	class ChuteOpen {
-		name="ChuteOpen";
-		sound[]= {
-			"\twc_parachute\data\sound\padak_getIN.wss",
-			"db+10",
-			1
-		};
-		titles[]={};
-	};
-	
-	class TWC_Parachute_Landing_1 {
-		name = "TWC_Parachute_Landing_1";
-		sound[] = {"\twc_parachute\sounds\landing1.ogg", 2, 1};
-		titles[] = {};
-	};
-
-	class TWC_Parachute_Landing_2 {
-		name = "TWC_Parachute_Landing_2";
-		sound[] = {"\twc_parachute\sounds\landing2.ogg", 2, 1};
-		titles[] = {};
-	};
-
-	class TWC_Parachute_Landing_3 {
-		name = "TWC_Parachute_Landing_1";
-		sound[] = {"\twc_parachute\sounds\landing3.ogg", 2, 1};
-		titles[] = {};
-	};
-
-	class TWC_Parachute_Landing_4 {
-		name = "TWC_Parachute_Landing_4";
-		sound[] = {"\twc_parachute\sounds\landing4.ogg", 2, 1};
-		titles[] = {};
-	};
-
-	class TWC_Parachute_Landing_5 {
-		name = "TWC_Parachute_Landing_5";
-		sound[] = {"\twc_parachute\sounds\landing5.ogg", 2, 1};
-		titles[] = {};
-	};
-
-	class TWC_Parachute_Landing_6 {
-		name = "TWC_Parachute_Landing_6";
-		sound[] = {"\twc_parachute\sounds\landing6.ogg", 2, 1};
-		titles[] = {};
-	};
-
-	class TWC_Parachute_Landing_7 {
-		name = "TWC_Parachute_Landing_7";
-		sound[] = {"\twc_parachute\sounds\landing7.ogg", 2, 1};
-		titles[] = {};
-	};
-
-	class TWC_Parachute_Landing_8 {
-		name = "TWC_Parachute_Landing_8";
-		sound[] = {"\twc_parachute\sounds\landing8.ogg", 2, 1};
-		titles[] = {};
-	};
-};
+#include "CfgSounds.hpp"
+#include "CfgVehicles.hpp"
 
 class CfgVehicles {
 	class Steerable_Parachute_F;
