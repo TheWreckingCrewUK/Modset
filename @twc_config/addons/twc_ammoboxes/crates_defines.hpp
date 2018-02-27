@@ -95,7 +95,7 @@ class TWC_AmmoBox_Medical: ACE_medicalSupplyCrate {
 };
 
 // It's here for a myriad of reasons, all of which I can't explain...
-class TWC_AmmoBox_Other_Pallet: B_supplyCrate_F  {
+class TWC_AmmoBox_Other_Pallet: B_supplyCrate_F {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "Cargo Pallet (Deployable/Immobile)";
