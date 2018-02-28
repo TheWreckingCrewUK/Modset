@@ -40,6 +40,8 @@ class CfgFunctions {
 			class JumpOut { };
 			class CutChute { };
 			class LandingSound { };
+			
+			class PrepJump { };
 		};
 	};
 };

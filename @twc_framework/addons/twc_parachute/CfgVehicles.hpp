@@ -10,7 +10,7 @@ class CfgVehicles {
 		crew = "B_Soldier_F";
 
 		mapSize = 20;
-		camouflage = 2;
+		camouflage = 4;
 		
 		class SpeechVariants {
 			class Default {
@@ -151,6 +151,8 @@ class CfgVehicles {
 		accuracy=0;
 		armor=5;
 		weight = 200;
+		
+		// potentially add ace interact here to "pack it" aka delete
 	};
 
 	class CUP_B_C130J_GB;
@@ -164,11 +166,6 @@ class CfgVehicles {
 		class TransportMagazines { };
 		class TransportItems { };
 		class TransportWeapons { };
-
-		class Eventhandlers: Eventhandlers {
-			// convert to vehicle add action jump out (condition being they're inside vehicle player != player)
-			init = "[(_this select 0)] execVM 'twc_parachute\functions\init.sqf';";
-		};
 		
 		class ACE_SelfActions {
 			class ACE_MainActions {
@@ -178,6 +175,15 @@ class CfgVehicles {
 					statement = "[_this] call TWC_parachute_fnc_JumpOut;";
 					exceptions[] = {};
 					icon = "\twc_parachute\data\UI\icomap_para_ca.paa";
+				};
+
+				class TWC_PrepJump {
+					displayName = "Prep Jump";
+					condition = "(driver _target) == _caller";
+					statement = "[_target] call TWC_parachute_fnc_PrepJump;";
+					exceptions[] = {};
+					// TODO: Prep Jump ICON (Door or something akin)
+					//icon = "\twc_parachute\data\UI\icomap_para_ca.paa";
 				};
 			};
 		};

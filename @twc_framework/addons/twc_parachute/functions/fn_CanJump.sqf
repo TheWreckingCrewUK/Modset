@@ -7,8 +7,9 @@
  */
 _result = true;
 
-// if plane is above X altitude & ramp is open
-	
+// if plane is above X altitude
+	// is plane "prepped for jump" - aka door_2_1 & door_2_2 are open
+	//_vehicle getVariable ["TWC_JumpPrepped", false];
 
 // return true for testing
 _result
