@@ -61,7 +61,7 @@ class CfgVehicles {
 		driverCanEject = 0;
 		openingTime=5;
 
-		class ACE_Actions {
+		class ACE_SelfActions {
 			class ACE_MainActions {
 				class TWC_Parachute {
 					displayName = "Cut Parachute";
@@ -170,7 +170,7 @@ class CfgVehicles {
 			init = "[(_this select 0)] execVM 'twc_parachute\functions\init.sqf';";
 		};
 		
-		class ACE_Actions {
+		class ACE_SelfActions {
 			class ACE_MainActions {
 				class TWC_Parachute {
 					displayName = "Jump Out";
