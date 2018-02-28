@@ -722,6 +722,23 @@ class cfgVehicles {
 		is3DEN = 1;
 		functionPriority = 1;
 	};
+	
+	class TWC_Module_IgnoreForwardBase: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Ignore Forward Base";
+		function = "twc_fnc_moduleIgnoreForwardBase";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = "";
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Make unit ignore the Forward Base";
+			sync[] = {"AnyAI"};
+		};
+	};
 
 	/* class TWC_Module_ArtillerySpotter: Module_F {
 		author = "[TWC] Bosenator";

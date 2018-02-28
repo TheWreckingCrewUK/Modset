@@ -30,7 +30,7 @@ if(isMultiplayer)then{
 		titleFadeOut 20;
 		sleep 30;
 
-		if (!isNil "ForwardBasePos") then {
+		if (!isNil "ForwardBasePos" && !(player getVariable ["twc_ignoreForwardBase",false])) then {
 			player setPos ForwardBasePos;
 			["ForwardBasePos"] spawn {twc_fnc_reconnected};
 		} else {
