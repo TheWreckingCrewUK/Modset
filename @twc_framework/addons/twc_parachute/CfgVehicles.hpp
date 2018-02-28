@@ -61,19 +61,17 @@ class CfgVehicles {
 		driverCanEject = 0;
 		openingTime=5;
 
-/* 		// turn into ace interact
-		class UserActions {
-			class cutParachute {
-				displayName= "<t color='#FF0000'>Cut Parachute</t>"; //Red
-				displayNameDefault = "";
-				position="";
-				radius=20;
-				onlyForplayer=true;
-				condition="(player == (driver this) && (alive this))";
-				statement="this call DEGA_fnc_cutParachute";
-				priority=15;
+		class ACE_Actions {
+			class ACE_MainActions {
+				class TWC_Parachute {
+					displayName = "Cut Parachute";
+					condition = "(_player == (driver _target) && (alive _target))";
+					statement = "[_this] call TWC_parachute_fnc_CutChute";
+					exceptions[] = {};
+					icon = "\twc_parachute\UI\fall_ca.paa";
+				};
 			};
-		}; */
+		};
 
 		class TransportMagazines { };
 		class TransportItems { };
@@ -170,6 +168,18 @@ class CfgVehicles {
 		class Eventhandlers: Eventhandlers {
 			// convert to vehicle add action jump out (condition being they're inside vehicle player != player)
 			init = "[(_this select 0)] execVM 'twc_parachute\functions\init.sqf';";
+		};
+		
+		class ACE_Actions {
+			class ACE_MainActions {
+				class TWC_Parachute {
+					displayName = "Jump Out";
+					condition = "[_this] call TWC_parachute_fnc_CanJump;";
+					statement = "[_this] call TWC_parachute_fnc_JumpOut;";
+					exceptions[] = {};
+					icon = "\twc_parachute\data\UI\icomap_para_ca.paa";
+				};
+			};
 		};
 	};
 };

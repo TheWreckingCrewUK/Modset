@@ -36,6 +36,7 @@ class CfgFunctions {
 		class TWC_Paradrop {
 			file = "twc_parachute\functions";
 
+			class CanJump { };
 			class JumpOut { };
 			class CutChute { };
 			class LandingSound { };
