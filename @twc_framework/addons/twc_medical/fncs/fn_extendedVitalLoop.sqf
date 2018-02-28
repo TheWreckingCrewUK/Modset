@@ -18,6 +18,7 @@ if (alive _unit) then {
 	_debugMode = missionNameSpace getVariable ["twc_debugEnabled", false];
 	_bloodVolume = (_unit getVariable ["ace_medical_bloodVolume", 100]);
 	_heartRate = (_unit getVariable ["ace_medical_heartRate", 80]);
+	_inReviveState = (_unit getVariable ["ace_medical_inReviveState", false]);
 
 	// makes time to death dynamic based on current blood level, will restore with saline
 	_defaultMaxTime = missionNamespace getVariable ["twc_medical_defaultMaxTime", (missionNamespace getVariable ["ace_medical_maxReviveTime", 180])];
@@ -34,6 +35,13 @@ if (alive _unit) then {
 
 		if (_debugMode) then {
 			"setDead called" remoteExec ["hint", -2, true];
+		};
+	};
+	
+	if (_inReviveState) then {
+		// should we be ?
+		if (_heartRate >= 30 && _bloodVolume >= 50) then {
+			_unit setVariable ["ace_medical_inReviveState", false, true];
 		};
 	};
 };
