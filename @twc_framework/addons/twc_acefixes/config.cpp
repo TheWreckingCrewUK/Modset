@@ -25,6 +25,6 @@ class cfgFunctions {
 
 class Extended_PostInit_EventHandlers {
 	class TWC_acefixes {
-		serverInit = "twc_acefixes_fnc_handleParadrop;";
+		serverInit = "[] call twc_acefixes_fnc_handleParadrop;";
 	};
 };
