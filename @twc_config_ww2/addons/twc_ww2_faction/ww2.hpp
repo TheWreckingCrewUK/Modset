@@ -358,12 +358,8 @@
 			"10Rnd_303_Magazine",
 			"10Rnd_303_Magazine",
 			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"fow_e_no36mk1",
-			"fow_e_no36mk1",
-			"fow_30Rnd_303_bren",
-			"fow_30Rnd_303_bren"
+			"twc_no82",
+			"fow_e_no36mk1"
 		};
 		Respawnmagazines[]=
 		{
@@ -380,11 +376,8 @@
 			"10Rnd_303_Magazine",
 			"10Rnd_303_Magazine",
 			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"10Rnd_303_Magazine",
-			"fow_e_no36mk1",
-			"fow_e_no36mk1",
-			"fow_30Rnd_303_bren"
+			"twc_no82",
+			"fow_e_no36mk1"
 
 		};
 	};
@@ -478,6 +471,51 @@
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"bnae_mk1_virtual"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"bnae_mk1_virtual"
+		};
+		magazines[]=
+		{
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine"
+		};
+		Respawnmagazines[]=
+		{
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine"
+
 		};
 	};
 	class WW2_British_Carrier_SMG: WW2_British_Rifleman

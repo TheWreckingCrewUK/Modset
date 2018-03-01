@@ -93,6 +93,9 @@ class CfgVehicles {
 			// Frag Grenade
 			maga_nc(fow_e_no36mk1, 20);
 			
+			// AT Grenade
+			maga_nc(twc_no82, 10);
+			
 			// Flares
 			maga_nc(LIB_1Rnd_flare_white, 15);
 			maga_nc(LIB_1Rnd_flare_red, 15);
@@ -136,6 +139,9 @@ class CfgVehicles {
 			// Frag Grenade
 			maga_nc(fow_e_no36mk1, 6);
 			
+			// AT Grenade
+			maga_nc(twc_no82, 2);
+			
 			// Flares
 			maga_nc(LIB_1Rnd_flare_white, 4);
 			maga_nc(LIB_1Rnd_flare_red, 4);
@@ -171,6 +177,9 @@ class CfgVehicles {
 			
 			// Frag Grenade
 			maga_nc(fow_e_no36mk1, 20);
+			
+			// AT Grenade
+			maga_nc(twc_no82, 10);
 			
 			// Flares
 			maga_nc(LIB_1Rnd_flare_white, 15);
@@ -214,6 +223,9 @@ class CfgVehicles {
 			
 			// Frag Grenade
 			maga_nc(fow_e_no36mk1, 6);
+			
+			// AT Grenade
+			maga_nc(twc_no82, 2);
 			
 			// Flares
 			maga_nc(LIB_1Rnd_flare_white, 4);
