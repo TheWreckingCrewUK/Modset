@@ -14,9 +14,11 @@ if (isServer) then {
 					[_this select 1] call CBA_fnc_removePerFrameHandler;
 				};
 
-				if (getPos _item select 2 < 2) then {
+				if ((getPosATL _item select 2) < 1) then {
 					if (!isNull attachedTo _item) then {
+						_groundPosition = getPos _item;
 						detach _item;
+						_item setPos ([_groundPosition select 0, _groundPosition select 1, 0]);
 					};
 
 					[_this select 1] call CBA_fnc_removePerFrameHandler;
