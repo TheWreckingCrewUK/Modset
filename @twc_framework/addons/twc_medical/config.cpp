@@ -95,6 +95,15 @@ class CfgVehicles {
 							exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside", "isNotSwimming"};
 							icon = "";
 						};
+						
+						class Diagnose;
+						class LogDebug: Diagnose {
+							displayName = "Medical to RPT (DEBUG)";
+							condition = "true";
+							statement = "[_player, _target] call twc_medical_fnc_logToRPT";
+							exceptions[] = {"isNotDragging", "isNotCarrying", "isNotSwimming"};
+							icon = "";
+						};
 					};
 				};
 			};

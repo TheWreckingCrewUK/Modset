@@ -58,27 +58,22 @@ _TWC_VaporizedUnitCompat = {
 _TWC_VaporizeKillUnit = {
 	params ["_unit"];
 
-	// as it's been a second, should fire just fine (tm)
-	_isUnitVaporized = _unit getVariable ["BloodLust_IsVaporized", false];
-
 	if (_debugMode) then {
 		"_TWC_VaporizeKillUnit called" remoteExec ["hint", -2, true];
 	};
 
-	if (_isUnitVaporized) then {
-		removeAllItems _unit;
-		removeAllWeapons _unit;
-		removeAllAssignedItems _unit;
-		_unit removeWeaponGlobal "Binocular";
-		_unit removeItems "ItemMap";
-		
-		_weapon = nearestObject [(getPos _unit), "GroundWeaponHolder"];
-		deleteVehicle _weapon;
-		
-		[_unit, true, true] call ace_medical_fnc_setDead;
+	removeAllItems _unit;
+	removeAllWeapons _unit;
+	removeAllAssignedItems _unit;
+	_unit removeWeaponGlobal "Binocular";
+	_unit removeItems "ItemMap";
+	
+	_weapon = nearestObject [(getPos _unit), "GroundWeaponHolder"];
+	deleteVehicle _weapon;
+	
+	[_unit, true, true] call ace_medical_fnc_setDead;
 
-		if (_debugMode) then {
-			"setDead called" remoteExec ["hint", -2, true];
-		};
+	if (_debugMode) then {
+		"setDead called" remoteExec ["hint", -2, true];
 	};
 };
