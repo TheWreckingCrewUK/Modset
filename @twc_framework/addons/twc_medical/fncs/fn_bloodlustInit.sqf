@@ -14,7 +14,7 @@ if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
 	BloodLust_VaporizationDamageThresholdMP = 1;
 	BloodLust_ExplosionDamageThresholdMP = 0.2;
 	BloodLust_IsVaporizationEnabledMP = true;
-	BloodLust_IsVaporizationGibsEnabledMP = false;
+	BloodLust_IsVaporizationGibsEnabledMP = true;
 };
 
 if (isServer) then {
