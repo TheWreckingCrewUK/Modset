@@ -131,8 +131,8 @@ class ACE_Medical_Actions {
 			callbackSuccess = "twc_medical_fnc_action_Defib";
 		};
 
-		class Diagnose;
-		class LogDebug: Diagnose {
+		class CheckPulse;
+		class LogDebug: CheckPulse {
 			displayName = "Medical to RPT (DEBUG)";
 			displayNameProgress = "Logging Medical State";
 			callbackSuccess = "twc_medical_fnc_logToRPT";
