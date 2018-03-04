@@ -18,8 +18,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -27,8 +26,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		Items[]=
 		{
@@ -95,8 +93,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -105,8 +102,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -217,8 +213,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_A",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -226,8 +221,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_A",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -310,8 +304,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_C",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -319,8 +312,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_C",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -456,8 +448,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_E",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -465,8 +456,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_E",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -529,8 +519,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -539,8 +528,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 	};
 	class Modern_British_Platoon_Sergeant: Modern_British_Platoon_Commander
@@ -609,8 +597,7 @@
 			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -618,8 +605,7 @@
 			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -1106,8 +1092,7 @@
 			"UK3CB_BAF_V_Osprey",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1115,8 +1100,7 @@
 			"UK3CB_BAF_V_Osprey",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -1160,8 +1144,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{		
@@ -1170,8 +1153,7 @@
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
@@ -1376,8 +1358,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
@@ -1385,8 +1366,7 @@
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
-			"ItemWatch",
-			"UK3CB_BAF_G_Tactical_Black"
+			"ItemWatch"
 		};
 		weapons[]=
 		{
