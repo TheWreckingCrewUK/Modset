@@ -9,15 +9,45 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"cup_weapons_ammoboxes"
+			"cup_weapons_ammoboxes",
+			"fow_weapons",
+			"fow_weapons_c",
+			
 		};
 		version="1";
 		projectName="TWC";
 		author="jayman";
 	};
 };
-
+class cfgAmmo{
+	class fow_e_no82;
+	class twc_no82: fow_e_no82{
+		hit = 100;
+		indirectHit = 325;
+		indirectHItRange = 2;
+		caliber = 4;
+	};
+	
+};
+class cfgMagazines {
+	class fow_e_no82;
+	class twc_no82: fow_e_no82 {
+		ammo = "twc_no82";
+		displayName = "NO. 82 AT Grenade";
+	};
+};
 class CfgWeapons {
+	class Default;
+	class GrenadeLauncher;
+	class Throw : GrenadeLauncher {
+		muzzles[] += {"twc_no82_muzzle"};
+		class ThrowMuzzle: GrenadeLauncher {};
+		
+		class twc_no82_muzzle: ThrowMuzzle
+		{
+			magazines[] = {"twc_no82"};
+		};
+	};
 	class fow_w_bren;
 	class LIB_FLARE_PISTOL;
 	
@@ -644,7 +674,7 @@ class CfgVehicles {
 			class _XX_Bren_Mag
 			{
 				magazine = "fow_30Rnd_303_bren";
-				count = 2;
+				count = 4;
 			};
 		};
 	};
@@ -656,7 +686,7 @@ class CfgVehicles {
 			class _XX_Bren_Mag
 			{
 				magazine = "fow_30Rnd_303_bren";
-				count = 5;
+				count = 10;
 			};
 		};
 	};
@@ -775,6 +805,11 @@ class CfgVehicles {
 			{
 				magazine="fow_e_no36mk1";
 				count=30;
+			};
+			class _xx_ATGrenade
+			{
+				magazine = "twc_no82";
+				count = 10;
 			};
 			class _XX_Flare_white
 			{

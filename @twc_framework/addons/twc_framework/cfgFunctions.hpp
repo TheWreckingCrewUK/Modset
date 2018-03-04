@@ -65,6 +65,7 @@ class CfgFunctions
 			class moduleDaisyCutter{};
 			class moduleDisableCaching {};
 			class moduleGrabComposition {};
+			class moduleIgnoreForwardBase {};
 		};
 		class cache
 		{

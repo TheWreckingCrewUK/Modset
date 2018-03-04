@@ -79,6 +79,43 @@ class cfgweapons{
 	};
 		
 		
+	class rhs_weap_hk416d10;
+		class rhs_weap_hk416d10_acog: rhs_weap_hk416d10
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_ACOG";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15A";
+			};
+		};
+	};
+	class rhs_weap_sr25;
+		class rhs_weap_sr25_leo: rhs_weap_sr25
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_LEUPOLDMK4_2";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="UnderBarrelSlot";
+				item="rhsusf_acc_harris_bipod";
+			};
+		};
+	};
+	
+	
+		
 
 		
 	};

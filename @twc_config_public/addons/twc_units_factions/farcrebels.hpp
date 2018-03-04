@@ -5,8 +5,8 @@
 		scope=1;
 		displayName="farc rebel Base";
 		faction="twc_faction";
-		editorSubcategory = "Men_tak_twc_ins";
-		vehicleClass="Men_tak_twc_ins";
+		editorSubcategory = "Men_twc_farc";
+		vehicleClass="Men_twc_farc";
 		nakedUniform="U_BasicBody";
 		uniformClass="rhsgref_uniform_olive";
 		identityTypes[]=
@@ -26,23 +26,28 @@
 		
 	};
 
-	class twc_farc_men_rif_m92: twc_farc_men_Base {
+	class twc_farc_men_rif_at: twc_farc_men_Base {
 		scope=2;
-		displayName="Rifleman M92";
+		displayName="Rifleman AT";
 		uniformClass="rhsgref_uniform_dpm_olive";
+		backpack="greek_Backpack_AT";
 
 		weapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m92_fold"
+			"rhs_weap_m92_fold",
+		"CUP_launch_RPG7V"
 		};
 		respawnweapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m92_fold"
+			"rhs_weap_m92_fold",
+		"CUP_launch_RPG7V"
 		};
 		magazines[]=
 		{
+		"CUP_OG7_M",
+		"CUP_OG7_M",
 			"rhs_30Rnd_762x39mm",
 			"rhs_30Rnd_762x39mm",
 			"rhs_30Rnd_762x39mm",
@@ -52,6 +57,8 @@
 		};
 		Respawnmagazines[]=
 		{
+		"CUP_OG7_M",
+		"CUP_OG7_M",
 			"rhs_30Rnd_762x39mm",
 			"rhs_30Rnd_762x39mm",
 			"rhs_30Rnd_762x39mm",

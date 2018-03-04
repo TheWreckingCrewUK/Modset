@@ -244,13 +244,13 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L7A2"
+			"twc_L7A2"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L7A2"
+			"twc_L7A2"
 		};
 		magazines[]=
 		{

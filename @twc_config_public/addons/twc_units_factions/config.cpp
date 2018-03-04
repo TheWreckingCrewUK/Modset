@@ -120,6 +120,18 @@ class CfgPatches
 			"twc_farc_men_rif_m16",
 			"twc_farc_men_rif_m4",
 			
+			"twc_heavy_men_rif_m4",
+			"twc_heavy_men_com",
+			"twc_heavy_men_ar",
+			"twc_heavy_men_mg",
+			"twc_heavy_men_mg_as",
+			"twc_heavy_men_gren_m203",
+			"twc_heavy_men_gren_gp25",
+			"twc_heavy_men_rif_at",
+			"twc_heavy_men_mk",
+			"twc_heavy_men_rif_ak74",
+			"twc_heavy_men_rif_m16",
+			
 			"twc_greek_officer",
 			"twc_greek_rifleman",
 			"twc_greek_rifleman_2",
@@ -195,6 +207,15 @@ class CfgEditorSubCategories
 	{
 		displayName="Men (TWC)";
 	};
+	class Men_twc_farc
+	{
+		displayName="Men (FARC)";
+	};
+	class Men_twc_genheavy
+	{
+		displayName="Men (Generic Heavy)";
+	};
+
 };
 class CfgFactionClasses
 {
@@ -275,6 +296,30 @@ class CfgVehicles
 			};
 		};
 	};
+		class twc_Backpack_m249: CUP_B_AlicePack_Khaki
+	{
+		class TransportMagazines
+		{
+			class _xx_mgMags
+			{
+				magazine="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+				count=4;
+			};
+		};
+	};
+
+		class twc_Backpack_m3maaws: CUP_B_AlicePack_Khaki
+	{
+		class TransportMagazines
+		{
+			class _xx_mgMags
+			{
+				magazine="rhs_mag_maaws_HEAT";
+				count=4;
+			};
+		};
+	};
+
 	class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki
 	{
 		class TransportMagazines
@@ -410,5 +455,6 @@ accuracy=0.01;
 	#include "greek_civ.hpp"
 	#include "takistanins.hpp"
 	#include "farcrebels.hpp"
+	#include "gen_heavy.hpp"
 };
 	#include "weapons.hpp"

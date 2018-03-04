@@ -42,6 +42,16 @@ class CfgVehicles {
 	class Land_BagFence_Round_F;
 	class Land_BagBunker_Small_F;
 	class Land_File_research_F;
+	class FlagSmall_F;
+	
+	class twc_flag_eod: FlagSmall_F {
+		displayname = "TWC EOD Flag";
+		ace_dragging_canDrag = 1;
+		ace_dragging_carryDirection = 0;
+		ace_dragging_dragPosition[] = {0,1.2,0};
+		ace_cargo_size = 1;
+		ace_cargo_canLoad = 1;		
+	};
 	
 	class twc_medical_hemtt: rhsusf_m1085a1p2_B_WD_Medical_fmtv_usarmy {
 		ace_cargo_hasCargo = -1;
