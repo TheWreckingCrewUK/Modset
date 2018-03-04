@@ -43,7 +43,7 @@ class TWC_AmmoBox_Launchers_LAW80_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_Launchers";
 	
 	class TransportWeapons {
-		weap_nc(ukf_law80launcher, 4);
+		weap_nc(ukf_law80launcher, 2);
 	};
 };
 
@@ -56,7 +56,7 @@ class TWC_AmmoBox_Launchers_L2A1_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_Launchers";
 	
 	class TransportWeapons {
-		weap_nc(UK3CB_BAF_AT4_CS_AP_Launcher, 4);
+		weap_nc(UK3CB_BAF_AT4_CS_AP_Launcher, 2);
 	};
 };
 
@@ -68,7 +68,7 @@ class TWC_AmmoBox_Launchers_NLAW_Portable: TWC_AmmoBox_Portable {
 	editorSubcategory = "TWC_Crates_Launchers";
 	
 	class TransportWeapons {
-		weap_nc(launch_NLAW_F, 4);
+		weap_nc(launch_NLAW_F, 2);
 	};
 };
 

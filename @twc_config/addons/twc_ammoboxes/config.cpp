@@ -134,4 +134,5 @@ class CfgVehicles {
 	#include "crates_coldwar.hpp"
 	#include "crates_vehicles.hpp"
 	#include "crates_other.hpp"
+	#include "crates_launchers.hpp"
 };
