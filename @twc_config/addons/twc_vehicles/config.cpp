@@ -163,6 +163,7 @@ class CfgVehicles {
 	#include "vehicles\lr_softtop.hpp"
 	#include "vehicles\lr_hardtop.hpp"
 	#include "vehicles\lr_snatch.hpp"
+	#include "vehicles\wildcat.hpp"
 	
 	#include "generic\generic.hpp"
 	#include "coldwar\coldwar.hpp"
@@ -518,4 +519,4 @@ class CfgVehicles {
 		displayname = "Puma HC1";
 		GearColdwar;
 	};
-};
+};*/

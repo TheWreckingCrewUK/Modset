@@ -27,7 +27,7 @@ class TWC_Vehicle_Modern_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukf_law80launcher, ADD_QNTY(Modern_SECTION_LAW80));
+		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
 	};
 
 	class TransportBackpacks { };
@@ -95,8 +95,8 @@ class TWC_Vehicle_Modern_LandRover_Woodland_COIN: TWC_BaseClass_LR_Soft_Base_F {
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(Modern_SECTION_EARLY_RIFLE));
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(Modern_SECTION_EARLY_RIFLE_T));
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 	};
@@ -167,14 +167,14 @@ class TWC_Vehicle_Modern_LandRoverHard_Woodland: TWC_BaseClass_LR_Hard_Base_F {
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(Modern_SECTION_EARLY_RIFLE));
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(Modern_SECTION_EARLY_RIFLE_T));
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukf_law80launcher, ADD_QNTY(Modern_SECTION_LAW80));
+		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
 	};
 
 	class TransportBackpacks { };
@@ -242,8 +242,8 @@ class TWC_Vehicle_Modern_LandRoverHard_Woodland_COIN: TWC_BaseClass_LR_Hard_Base
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(Modern_SECTION_EARLY_RIFLE));
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(Modern_SECTION_EARLY_RIFLE_T));
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 	};
@@ -314,8 +314,8 @@ class TWC_Vehicle_Modern_LandRoverSnatch_NI_COIN: TWC_BaseClass_LR_Snatch_Base_F
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(Modern_SECTION_EARLY_RIFLE));
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(Modern_SECTION_EARLY_RIFLE_T));
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 	};

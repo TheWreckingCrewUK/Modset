@@ -26,6 +26,8 @@
 #define MODERN_MACHINEGUNNER 2
 #define MODERN_MACHINEGUNNER_T 1
 
+#define MODERN_NLAW 2
+
 // Modifiers to the total amount (used to alter different vehicle payloads)
 #define MODERN_MASTIFF_MOD 2
 #define MODERN_FOXHOUND_MOD 1
