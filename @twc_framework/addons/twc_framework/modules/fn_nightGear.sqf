@@ -29,6 +29,9 @@ if(leader player == player)then{
 //If modern or 1990 give nvgs
 if(_era isEqualTo "modern" || _era isEqualTo "1990")then{
 	player linkItem "UK3CB_BAF_HMNVS";
+	if(leader player == player)then{
+		player addItem "B_IR_Grenade";
+	};
 };
 //If not ww2 then chemlights for everyone
 if(_era != "ww2")then{

@@ -138,8 +138,7 @@
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
 			"SmokeShell",
-			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
@@ -156,7 +155,6 @@
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
-			"B_IR_Grenade"
 		};
 	};
 	class Modern_British_Rifleman: Modern_British_Base
@@ -387,8 +385,7 @@
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
 			"SmokeShell",
-			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
@@ -404,8 +401,7 @@
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
 			"SmokeShell",
-			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 	};
 	class Modern_British_Machinegunner: Modern_British_Autorifleman
@@ -417,14 +413,14 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L7A2",
+			"twc_L7A2",
 			"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L7A2",
+			"twc_L7A2",
 			"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -949,8 +945,7 @@
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
 			"SmokeShell",
-			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
@@ -965,8 +960,7 @@
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
 			"SmokeShell",
-			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 	};
 	class Modern_British_FAC: Modern_British_Base
@@ -1028,8 +1022,7 @@
 			"SmokeShellRed",
 			"SmokeShellPurple",
 			"SmokeShellPurple",
-			"SmokeShellPurple",
-			"B_IR_Grenade"
+			"SmokeShellPurple"
 		};
 		Respawnmagazines[]=
 		{
@@ -1053,8 +1046,7 @@
 			"SmokeShellRed",
 			"SmokeShellPurple",
 			"SmokeShellPurple",
-			"SmokeShellPurple",
-			"B_IR_Grenade"
+			"SmokeShellPurple"
 		};
 	};
 
@@ -1426,8 +1418,7 @@
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
 			"SmokeShell",
-			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
@@ -1443,8 +1434,7 @@
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
 			"SmokeShell",
-			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 	};
 	class Modern_British_Marksman_COIN: Modern_British_Marksman
