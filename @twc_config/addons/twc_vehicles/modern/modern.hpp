@@ -3,16 +3,17 @@
 #define ADD_FACTION faction = "TWC_Modern"
 
 // Amount Per Section
-#define MODERN_RIFLE 24
-#define MODERN_RIFLE_T 4
+#define MODERN_RIFLE 18
+#define MODERN_RIFLE_T 3
 
 #define MODERN_SHOTGUN_SLUG 4
-#define MODERN_SHOTGUN_BUCK 4
+#define MODERN_SHOTGUN_BUCK 8
 
-#define MODERN_UGL_HE 6
+#define MODERN_UGL_HE 8
 #define MODERN_UGL_RED 2
 #define MODERN_UGL_BLUE 2
-#define MODERN_UGL_WHITE 2
+#define MODERN_UGL_GREEN 2
+#define MODERN_UGL_WHITE 4
 
 #define MODERN_AUTORIFLE 4
 #define MODERN_AUTORIFLE_T 2

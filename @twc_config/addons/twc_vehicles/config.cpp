@@ -158,6 +158,18 @@ class CfgVehicles {
 	class ukcw_cvrt_Scorpion_w_L1;
 	class ukcw_cvrt_Scorpion_d_L1;
 	
+	// section modifiers all eras/types
+	#define SECTION_FIELDDRESSING 20
+	#define SECTION_QUIKCLOT 20
+	#define SECTION_ELASTICBANDAGE 20
+	#define SECTION_PACKINGBANDAGE 20
+	#define SECTION_TOURNIQUET 6
+	#define SECTION_MORPHINE 10
+	#define SECTION_EPINEPHRINE 6
+
+	#define SECTION_SMOKE 6
+	#define SECTION_GRENADE 6
+	
 	// Custom TWC vehicles are defined below (they may inherit from above)
 	#include "vehicles\warriors.hpp"
 	#include "vehicles\lr_softtop.hpp"
