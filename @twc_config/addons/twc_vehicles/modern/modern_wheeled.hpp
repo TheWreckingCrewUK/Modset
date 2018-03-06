@@ -441,6 +441,7 @@ class TWC_Vehicle_Modern_LandRoverSnatch_Desert_COIN: TWC_BaseClass_LR_Snatch_Ba
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MODERN_FOXHOUND_MOD
+class burnes_foxhound_d_a;
 class TWC_Vehicle_Modern_Foxhound_Desert: burnes_foxhound_d_a {
 	scope = 2;
 	scopeCurator = 2;
@@ -752,8 +753,8 @@ class TWC_Vehicle_Modern_Mastiff_HMG_Desert_COIN: TWC_Vehicle_Modern_Mastiff_HMG
 	};
 };
 
-class CUP_B_Mastiff_GMG_GB_D;
-class TWC_Vehicle_Modern_Mastiff_GMG_Woodland: CUP_B_Mastiff_GMG_GB_D {
+class CUP_B_Mastiff_GMG_GB_W;
+class TWC_Vehicle_Modern_Mastiff_GMG_Woodland: CUP_B_Mastiff_GMG_GB_W {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
