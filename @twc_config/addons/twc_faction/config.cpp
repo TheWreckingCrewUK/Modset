@@ -105,6 +105,14 @@ class CfgEditorSubcategories {
 		displayName = "Motorised";
 	};
 	
+	class TWC_ForceType_LightMobility {
+		displayName = "Light Protected Mobility";
+	};
+	
+	class TWC_ForceType_HeavyMobility {
+		displayName = "Heavy Protected Mobility";
+	};
+	
 	class TWC_ForceType_Mechanised {
 		displayName = "Mechanised";
 	};
