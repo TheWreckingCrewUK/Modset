@@ -1,8 +1,7 @@
 class CfgPatches {
 	class TWC_Vehicles {
 		units[] = {
-			/* 
-			// OLD CLASS NAMES, DO NOT REUSE!
+			// OLD CLASS NAMES, DELETE IN A FEW MONTHS
 			"twc_landrover_W",
 			"twc_landrover_D",
 			"twc_landrover_Special_W",
@@ -22,7 +21,7 @@ class CfgPatches {
 			"twc_puma",
 			"TWC_fv432",
 			"TWC_burnes_foxhound_d_a",
-			"TWC_burnes_foxhound_w_a" */
+			"TWC_burnes_foxhound_w_a",
 			
 			// TWC Vehicles
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Woodland",
@@ -63,9 +62,44 @@ class CfgPatches {
 			"TWC_Vehicle_Millennial_LandRoverHard_Woodland_COIN",
 			"TWC_Vehicle_Millennial_LandRoverHard_Desert_COIN",
 			"TWC_Vehicle_Millennial_LandRoverSnatch_NI_COIN",
+			"TWC_Vehicle_Millennial_Wildcat_RAF",
+			"TWC_Vehicle_Millennial_Puma_RAF",
 			
 			"TWC_Vehicle_Modern_HarrierGR9_RAF",
 			"TWC_Vehicle_Modern_Wildcat_RAF"
+			"TWC_Vehicle_Modern_Wildcat_RAF_COIN",
+			"TWC_Vehicle_Modern_LandRover_Woodland",
+			"TWC_Vehicle_Modern_LandRover_Desert",
+			"TWC_Vehicle_Modern_LandRover_Woodland_COIN",
+			"TWC_Vehicle_Modern_LandRover_Desert_COIN",
+			"TWC_Vehicle_Modern_LandRoverHard_Woodland",
+			"TWC_Vehicle_Modern_LandRoverHard_Desert",
+			"TWC_Vehicle_Modern_LandRoverHard_Woodland_COIN",
+			"TWC_Vehicle_Modern_LandRoverHard_Desert_COIN",
+			"TWC_Vehicle_Modern_Foxhound_Desert",
+			"TWC_Vehicle_Modern_Foxhound_Desert_COIN",
+			"TWC_Vehicle_Modern_Foxhound_Woodland",
+			"TWC_Vehicle_Modern_Foxhound_Woodland_COIN",
+			"TWC_Vehicle_Modern_Mastiff_HMG_Woodland",
+			"TWC_Vehicle_Modern_Mastiff_HMG_Woodland_COIN",
+			"TWC_Vehicle_Modern_Mastiff_HMG_Desert",
+			"TWC_Vehicle_Modern_Mastiff_HMG_Desert_COIN",
+			"TWC_Vehicle_Modern_Mastiff_GMG_Woodland",
+			"TWC_Vehicle_Modern_Mastiff_GMG_Woodland_COIN",
+			"TWC_Vehicle_Modern_Mastiff_GMG_Desert",
+			"TWC_Vehicle_Modern_Mastiff_GMG_Desert_COIN",
+			"TWC_Vehicle_Modern_LandRoverWMIK_GMG_Woodland_COIN",
+			"TWC_Vehicle_Modern_LandRoverWMIK_GMG_Woodland",
+			"TWC_Vehicle_Modern_LandRoverWMIK_GMG_Desert_COIN",
+			"TWC_Vehicle_Modern_LandRoverWMIK_GMG_Desert",
+			"TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Woodland_COIN",
+			"TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Woodland",
+			"TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Desert_COIN",
+			"TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Desert",
+			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert_COIN",
+			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert",
+			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland_COIN",
+			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland"
 		};
 
 		weapons[] = {
@@ -181,6 +215,9 @@ class CfgVehicles {
 	#include "coldwar\coldwar.hpp"
 	#include "millennial\millennial.hpp"
 	#include "modern\modern.hpp"
+	
+	// delete this in a few months once we've gone through submitted ops
+	#include "oldVehicles.hpp"
 };
 
 /*
