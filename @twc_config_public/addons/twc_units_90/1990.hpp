@@ -1477,42 +1477,50 @@
 		vehicleClass="Men_1990D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="TWC_Smock_Desert";
-		backpack="TWC_Backpack_1990_Platoon_Command";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		backpack="TWC_Backpack_USMC_vehiclecommander";
 		linkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_CrewHelmet_DDPM_ESS_A",
+        "UK3CB_BAF_V_Pilot_DDPM",
+		"UK3CB_BAF_H_CrewHelmet_B",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_CrewHelmet_DDPM_ESS_A",
+        "UK3CB_BAF_V_Pilot_DDPM",
+		"UK3CB_BAF_H_CrewHelmet_B",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		weapons[]=
 		{
+		"CUP_smg_MP5A5",
 		"Throw",
 		"Put"
 		};
 		respawnweapons[]=
 		{
+		"CUP_smg_MP5A5",
 		"Throw",
 		"Put"
 		};
 		magazines[]=
 		{
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
@@ -1569,102 +1577,18 @@
 	    "ACE_MapTools"
 		};
 	};
-    class 1990_British_Tank_Crew_Desert: B_Soldier_base_F
+    class 1990_British_Tank_Crew_Desert: 1990_British_Tank_Commander_Desert
 	{
 		_generalMacro="1990_Desert_Tank_Crew";
 		scope=2;
 		displayName="Vehicle Crew (90`s Desert)";
 		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
+		backpack="";
 		vehicleClass="Men_1990D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="TWC_Smock_Desert";
-		linkedItems[]=
-		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_CrewHelmet_DDPM_A",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_CrewHelmet_DDPM_A",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
-		};
-		weapons[]=
-		{
-		"Throw",
-		"Put"
-		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put"
-		};
-		magazines[]=
-		{
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Respawnmagazines[]=
-		{
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_EarPlugs",
-		"ACRE_PRC148",
-		"rhsusf_ANPVS_14",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_tourniquet"
-		};
-		respawnitems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_EarPlugs",
-		"ACRE_PRC148",
-		"rhsusf_ANPVS_14",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine"
-		};
-	};
+};
 	
 	    class 1990_British_Sniper_desert: B_Soldier_base_F
 	{
