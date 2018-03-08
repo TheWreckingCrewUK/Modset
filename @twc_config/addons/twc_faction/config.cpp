@@ -120,4 +120,9 @@ class CfgEditorSubcategories {
 	class TWC_ForceType_Dismounted {
 		displayName = "Dismounted";
 	};
+	
+	// Attachments & Other
+	class TWC_ForceType_Special {
+		displayName = "Special";
+	};
 };
