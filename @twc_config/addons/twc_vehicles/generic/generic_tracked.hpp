@@ -1,13 +1,13 @@
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE GENERIC_AMBULANCE_MOD
 class ukcw_fv432_ambulance;
-class TWC_Vehicle_Generic_FV432Ambulance_Woodland: ukcw_fv432_ambulance {
+class TWC_Vehicle_Generic_FV432Ambulance_Chameleon: ukcw_fv432_ambulance {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
 	ADD_FACTION;
 	
-	displayname = "FV432 - Ambulance (Woodland)";
+	displayname = "FV432 - Ambulance (Chameleon)";
 	editorSubcategory = "TWC_ForceType_Mechanised";
 
 	class TransportItems {
@@ -22,6 +22,7 @@ class TWC_Vehicle_Generic_FV432Ambulance_Woodland: ukcw_fv432_ambulance {
 		ADD_ITEM(ACE_atropine, ADD_QNTY(5));
 		ADD_ITEM(ACE_adenosine, ADD_QNTY(5));
 		ADD_ITEM(ACE_salineIV_500, ADD_QNTY(12));
+		ADD_ITEM(ACE_bloodIV, ADD_QNTY(20));
 		ADD_ITEM(ACE_bodyBag, ADD_QNTY(5));
 		ADD_ITEM(ACE_personalAidKit, 1); // always only one
 	}; 

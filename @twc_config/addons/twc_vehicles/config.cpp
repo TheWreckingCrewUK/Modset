@@ -26,8 +26,7 @@ class CfgPatches {
 			// TWC Vehicles
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Woodland",
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Desert",
-			"TWC_Vehicle_Generic_FV432Ambulance_Woodland",
-			"TWC_Vehicle_Generic_FV432Ambulance_Desert",
+			"TWC_Vehicle_Generic_FV432Ambulance_Chameleon",
 			"TWC_Vehicle_Generic_Hercules_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF_VIV",
@@ -51,6 +50,8 @@ class CfgPatches {
 			"TWC_Vehicle_Millennial_HarrierGR5_RAF",
 			"TWC_Vehicle_Millennial_FV432_Woodland",
 			"TWC_Vehicle_Millennial_FV432_Woodland_COIN",
+			"TWC_Vehicle_Millennial_Warrior_Woodland",
+			"TWC_Vehicle_Millennial_Warrior_Desert",
 			"TWC_Vehicle_Millennial_Scimitar_Chameleon",
 			"TWC_Vehicle_Millennial_Scorpion_Chameleon",
 			"TWC_Vehicle_Millennial_LandRover_Woodland",
