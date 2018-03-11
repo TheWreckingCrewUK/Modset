@@ -15,26 +15,26 @@
 	class TWC_Backpack_Cold_War_Rifleman: CUP_B_AlicePack_Khaki {
 		scope = 1;
 		class TransportMagazines {
-			maga_nc(UK3CB_BAF_762_20Rnd,8);
-			maga_nc(UK3CB_BAF_762_100Rnd_T,1);
+			maga_nc(UK3CB_BAF_762_20Rnd, 8);
+			maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
 		};
 	};
 
 	class TWC_Backpack_Cold_War_2IC: CUP_B_AlicePack_Khaki {
 		scope = 1;
 		class TransportMagazines {
-			maga_nc(UK3CB_BAF_762_20Rnd,5);
-			maga_nc(SmokeShell,3);
-			maga_nc(UK3CB_BAF_762_100Rnd_T,1);
+			maga_nc(UK3CB_BAF_762_20Rnd, 10);
+			maga_nc(SmokeShell, 4);
+			maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
 		};
 	};
 
 	class TWC_Backpack_Cold_War_2IC_Dismounted: CUP_B_AlicePack_Khaki {
 		scope = 1;
 		class TransportMagazines {
-			maga_nc(UK3CB_BAF_762_20Rnd,15);
-			maga_nc(SmokeShell,3);
-			maga_nc(UK3CB_BAF_762_100Rnd_T,1);
+			maga_nc(UK3CB_BAF_762_20Rnd, 15);
+			maga_nc(SmokeShell, 3);
+			maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
 		};
 	};
 
@@ -110,7 +110,7 @@
 		class TransportMagazines
 		{
 			maga_nc(ukcw_l14a1_HE,1);
-			maga_nc(ukcw_34_rnd_sterling_mag,5);		
+			maga_nc(ukcw_34_rnd_sterling_mag,6);
 		};
 	};
 	class TWC_Backpack_Cold_War_AT_Ass: CUP_B_AlicePack_Khaki
@@ -118,7 +118,7 @@
 		scope = 1;
 		class TransportMagazines
 		{
-			maga_nc(ukcw_l14a1_HEAT,2);
+			maga_nc(ukcw_l14a1_HEAT,3);
 			maga_nc(ukcw_l14a1_HE,1);
 		};
 	};
@@ -127,9 +127,9 @@
 		scope = 1;
 		class TransportMagazines
 		{
-			maga_nc(ukcw_l14a1_HEAT,2);
+			maga_nc(ukcw_l14a1_HEAT,3);
 			maga_nc(ukcw_l14a1_HE,1);
-			maga_nc(UK3CB_BAF_762_20Rnd,4);				
+			maga_nc(UK3CB_BAF_762_20Rnd,4);
 		};
 	};
 	class TWC_Backpack_Cold_War_Platoon_Commander: CUP_B_AlicePack_Khaki
@@ -160,9 +160,9 @@
 			maga_nc(SmokeShell,3);
 			maga_nc(SmokeShellRed,2);
 			maga_nc(SmokeShellBlue,2);
-			maga_nc(UK3CB_BAF_762_20Rnd,10);
-			maga_nc(UK3CB_BAF_762_100Rnd_T,1);
-			maga_nc(ukcw_34_rnd_sterling_mag,2);
+			maga_nc(UK3CB_BAF_762_20Rnd,20);
+			maga_nc(UK3CB_BAF_762_100Rnd_T,2);
+			maga_nc(ukcw_34_rnd_sterling_mag,5);
 		};
 	};
 	class TWC_Backpack_Cold_Medic: CUP_B_AlicePack_Khaki
@@ -170,7 +170,7 @@
 		scope = 1;
 		class TransportItems
 		{
-            item_nc(ACE_fieldDressing,12);
+			item_nc(ACE_fieldDressing,12);
 			item_nc(ACE_morphine,10);
 			item_nc(ACE_elasticBandage,15);
 			item_nc(ACE_quikclot,6);
