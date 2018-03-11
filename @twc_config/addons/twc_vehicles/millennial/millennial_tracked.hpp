@@ -117,3 +117,59 @@ class TWC_Vehicle_Millennial_Scorpion_Chameleon: ukcw_cvrt_Scorpion_w_L1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 };
+
+#undef CURRENT_VEHICLE
+#define CURRENT_VEHICLE MILLENNIAL_WARRIOR_MOD
+class TWC_Vehicle_Millennial_Warrior_Woodland: TWC_Vehicle_FV510_W {
+	scope = 2;
+	scopeCurator = 2;
+	side = 1;
+	ADD_FACTION;
+	
+	displayname = "Warrior (Woodland)";
+	editorSubcategory = "TWC_ForceType_Mechanised";
+
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
+		ADD_ITEM(ACE_elasticBandage, ADD_QNTY(SECTION_ELASTICBANDAGE));
+		ADD_ITEM(ACE_quikclot, ADD_QNTY(SECTION_QUIKCLOT));
+		ADD_ITEM(ACE_packingBandage, ADD_QNTY(SECTION_PACKINGBANDAGE));
+		ADD_ITEM(ACE_tourniquet, ADD_QNTY(SECTION_TOURNIQUET));
+		ADD_ITEM(ACE_morphine, ADD_QNTY(SECTION_MORPHINE));
+		ADD_ITEM(ACE_epinephrine, ADD_QNTY(SECTION_EPINEPHRINE));
+	}; 
+	
+	class TransportMagazines {
+		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
+	};
+	
+	class TransportWeapons { };
+	class TransportBackpacks { };
+};
+
+class TWC_Vehicle_Millennial_Warrior_Desert: TWC_Vehicle_FV510_D {
+	scope = 2;
+	scopeCurator = 2;
+	side = 1;
+	ADD_FACTION;
+	
+	displayname = "Warrior (Desert)";
+	editorSubcategory = "TWC_ForceType_Mechanised";
+
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
+		ADD_ITEM(ACE_elasticBandage, ADD_QNTY(SECTION_ELASTICBANDAGE));
+		ADD_ITEM(ACE_quikclot, ADD_QNTY(SECTION_QUIKCLOT));
+		ADD_ITEM(ACE_packingBandage, ADD_QNTY(SECTION_PACKINGBANDAGE));
+		ADD_ITEM(ACE_tourniquet, ADD_QNTY(SECTION_TOURNIQUET));
+		ADD_ITEM(ACE_morphine, ADD_QNTY(SECTION_MORPHINE));
+		ADD_ITEM(ACE_epinephrine, ADD_QNTY(SECTION_EPINEPHRINE));
+	}; 
+	
+	class TransportMagazines {
+		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
+	};
+	
+	class TransportWeapons { };
+	class TransportBackpacks { };
+};
