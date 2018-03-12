@@ -102,12 +102,16 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
@@ -184,12 +188,14 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"ukcw_l14a1_HEAT",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
+			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
@@ -335,6 +341,8 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
@@ -357,6 +365,8 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
