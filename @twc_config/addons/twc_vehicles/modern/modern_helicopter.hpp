@@ -7,7 +7,7 @@ class TWC_Vehicle_Modern_Wildcat_RAF: TWC_BaseClass_Wildcat_F {
 	ADD_FACTION;
 	
 	displayname = "Wildcat CAS (RAF)";
-	editorSubcategory = "TWC_ForceType_AirMobility";
+	editorSubcategory = "TWC_ForceType_AirAssault";
 	
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
@@ -53,7 +53,7 @@ class TWC_Vehicle_Modern_Wildcat_RAF_COIN: TWC_BaseClass_Wildcat_F {
 	ADD_FACTION;
 	
 	displayname = "Wildcat CAS - COIN (RAF)";
-	editorSubcategory = "TWC_ForceType_AirMobility";
+	editorSubcategory = "TWC_ForceType_AirAssault";
 	
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));

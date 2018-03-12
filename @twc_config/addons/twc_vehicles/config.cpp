@@ -40,6 +40,7 @@ class CfgPatches {
 			"TWC_Vehicle_ColdWar_LandRover_Desert_COIN",
 			"TWC_Vehicle_ColdWar_Puma_RAF",
 			"TWC_Vehicle_ColdWar_Puma_RAF_COIN",
+			"TWC_Vehicle_ColdWar_Chinook_RAF",
 			"TWC_Vehicle_ColdWar_FV432_Woodland",
 			"TWC_Vehicle_ColdWar_FV432_Woodland_COIN",
 			"TWC_Vehicle_ColdWar_Scimitar_Chameleon",
@@ -63,7 +64,7 @@ class CfgPatches {
 			"TWC_Vehicle_Millennial_LandRoverHard_Woodland_COIN",
 			"TWC_Vehicle_Millennial_LandRoverHard_Desert_COIN",
 			"TWC_Vehicle_Millennial_LandRoverSnatch_NI_COIN",
-			"TWC_Vehicle_Millennial_Wildcat_RAF",
+			"TWC_Vehicle_Millennial_Lynx_RAF",
 			"TWC_Vehicle_Millennial_Puma_RAF",
 			
 			"TWC_Vehicle_Modern_HarrierGR9_RAF",
@@ -192,6 +193,7 @@ class CfgVehicles {
 	class ukcw_cvrt_Scim_d_L1;
 	class ukcw_cvrt_Scorpion_w_L1;
 	class ukcw_cvrt_Scorpion_d_L1;
+	class CUP_B_SA330_Puma_HC1_BAF;
 	
 	// section modifiers all eras/types
 	#define SECTION_FIELDDRESSING 20
