@@ -13,7 +13,7 @@ class twc_landrover_Special_D_ColdWar: TWC_Vehicle_Modern_LandRoverWMIK_GMG_Dese
 class TWC_Warrior_D: TWC_Vehicle_Modern_Bulldog_Desert { scope = 1; };
 class TWC_Warrior_W: TWC_Vehicle_Modern_Bulldog_Woodland { scope = 1; };
 class twc_wildcat: TWC_Vehicle_Modern_Wildcat_RAF { scope = 1; };
-class twc_wildcat_1990: TWC_Vehicle_Millennial_Wildcat_RAF;
+class twc_wildcat_1990: TWC_Vehicle_Millennial_Wildcat_RAF { scope = 1; };
 class twc_puma: TWC_Vehicle_ColdWar_Puma_RAF { scope = 1; };
 class TWC_fv432: TWC_Vehicle_ColdWar_FV432_Woodland { scope = 1; };
 class TWC_burnes_foxhound_d_a: TWC_Vehicle_Modern_Foxhound_Desert { scope = 1; };

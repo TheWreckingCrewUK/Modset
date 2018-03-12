@@ -67,7 +67,7 @@ class CfgPatches {
 			"TWC_Vehicle_Millennial_Puma_RAF",
 			
 			"TWC_Vehicle_Modern_HarrierGR9_RAF",
-			"TWC_Vehicle_Modern_Wildcat_RAF"
+			"TWC_Vehicle_Modern_Wildcat_RAF",
 			"TWC_Vehicle_Modern_Wildcat_RAF_COIN",
 			"TWC_Vehicle_Modern_LandRover_Woodland",
 			"TWC_Vehicle_Modern_LandRover_Desert",

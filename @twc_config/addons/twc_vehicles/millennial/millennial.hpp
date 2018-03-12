@@ -7,6 +7,7 @@
 #define MILLENNIAL_WARRIOR_MOD 0.8
 #define MILLENNIAL_SCIMITAR_MOD 1
 #define MILLENNIAL_SCORPION_MOD 1
+#define MILLENNIAL_WILDCAT_MOD 1
 
 // section vehicle resupply total (manipulated by modifiers)
 #define SECTION_FIELDDRESSING 20
