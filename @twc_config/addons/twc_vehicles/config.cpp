@@ -101,7 +101,9 @@ class CfgPatches {
 			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert_COIN",
 			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert",
 			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland_COIN",
-			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland"
+			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland",
+			"TWC_Vehicle_Modern_Challenger2_Desert",
+			"TWC_Vehicle_Modern_Challenger2_Woodland"
 		};
 
 		weapons[] = {
@@ -213,6 +215,7 @@ class CfgVehicles {
 	#include "vehicles\lr_hardtop.hpp"
 	#include "vehicles\lr_snatch.hpp"
 	#include "vehicles\wildcat.hpp"
+	#include "vehicles\challenger2.hpp"
 	
 	#include "generic\generic.hpp"
 	#include "coldwar\coldwar.hpp"

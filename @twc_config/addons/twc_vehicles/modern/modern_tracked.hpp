@@ -417,3 +417,67 @@ class TWC_Vehicle_Modern_Bulldog_COIN_Woodland: CUP_B_FV432_Bulldog_GB_W {
 
 	class TransportBackpacks { };
 };
+
+#undef CURRENT_VEHICLE
+#define CURRENT_VEHICLE MODERN_CHALLENGER2_MOD
+class TWC_Vehicle_Modern_Challenger2_Desert: TWC_Vehicle_FV4034_Base {
+	scope = 2;
+	scopeCurator = 2;
+	side = 1;
+	ADD_FACTION;
+	
+	displayname = "Challenger 2 (Desert)";
+	editorSubcategory = "TWC_ForceType_Armoured";
+	
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
+		ADD_ITEM(ACE_elasticBandage, ADD_QNTY(SECTION_ELASTICBANDAGE));
+		ADD_ITEM(ACE_quikclot, ADD_QNTY(SECTION_QUIKCLOT));
+		ADD_ITEM(ACE_packingBandage, ADD_QNTY(SECTION_PACKINGBANDAGE));
+		ADD_ITEM(ACE_tourniquet, ADD_QNTY(SECTION_TOURNIQUET));
+		ADD_ITEM(ACE_morphine, ADD_QNTY(SECTION_MORPHINE));
+		ADD_ITEM(ACE_epinephrine, ADD_QNTY(SECTION_EPINEPHRINE));
+	};
+	
+	hiddenSelectionsTextures[] = {
+		"\Burnes_Challenger\data\PH\challenger2_desert_co.paa",
+		"#(argb,512,512,1)r2t(rendertarget3000,1.0)",
+		"#(argb,512,512,1)r2t(rendertarget66,1.0)",
+		"\Burnes_Challenger\data\PH\challenger2_turret_des_co.paa",
+		"\Burnes_Challenger\data\PH\challengerV2_hull_des_co.paa",
+		"\Burnes_Challenger\data\callsigns\11.paa",
+		"\Burnes_Challenger\data\callsigns\scot.paa",
+		"\Burnes_Challenger\data\PH\hatches_des_co"
+	};
+};
+
+class TWC_Vehicle_Modern_Challenger2_Woodland: TWC_Vehicle_FV4034_Base {
+	scope = 2;
+	scopeCurator = 2;
+	side = 1;
+	ADD_FACTION;
+	
+	displayname = "Challenger 2 (Woodland)";
+	editorSubcategory = "TWC_ForceType_Armoured";
+	
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
+		ADD_ITEM(ACE_elasticBandage, ADD_QNTY(SECTION_ELASTICBANDAGE));
+		ADD_ITEM(ACE_quikclot, ADD_QNTY(SECTION_QUIKCLOT));
+		ADD_ITEM(ACE_packingBandage, ADD_QNTY(SECTION_PACKINGBANDAGE));
+		ADD_ITEM(ACE_tourniquet, ADD_QNTY(SECTION_TOURNIQUET));
+		ADD_ITEM(ACE_morphine, ADD_QNTY(SECTION_MORPHINE));
+		ADD_ITEM(ACE_epinephrine, ADD_QNTY(SECTION_EPINEPHRINE));
+	};
+	
+	hiddenSelectionsTextures[] = {
+		"\Burnes_Challenger\data\PH\challenger2_woodland_co",
+		"#(argb,512,512,1)r2t(rendertarget3000,1.0)",
+		"#(argb,512,512,1)r2t(rendertarget66,1.0)",
+		"\Burnes_Challenger\data\PH\challenger2_turret_wood_co.paa",
+		"\Burnes_Challenger\data\PH\challengerV2_hull_wood_co.paa",
+		"\Burnes_Challenger\data\callsigns\11.paa",
+		"\Burnes_Challenger\data\callsigns\scot.paa",
+		"\Burnes_Challenger\data\PH\hatches_co"
+	};
+};

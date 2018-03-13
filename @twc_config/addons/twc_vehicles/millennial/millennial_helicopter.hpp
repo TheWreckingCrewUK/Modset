@@ -30,6 +30,8 @@
 	class TransportBackpacks { };
 }; */
 
+#undef CURRENT_VEHICLE
+#define CURRENT_VEHICLE MILLENNIAL_PUMA_MOD
 class TWC_Vehicle_Millennial_Puma_RAF: CUP_B_SA330_Puma_HC1_BAF {
 	scope = 2;
 	scopeCurator = 2;
