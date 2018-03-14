@@ -136,7 +136,7 @@ class CfgPatches {
 			"ukcw_chieftain",
 			"ukcw_cvrt",
 			"ukcw_fv432",
-			"ukcw_gazelleelle",
+			"ukcw_gazelle",
 
 			"TWC_Faction",
 
@@ -193,8 +193,8 @@ class CfgVehicles {
 	class ukcw_fv432;
 	class ukcw_cvrt_Scim_w_L1;
 	class ukcw_cvrt_Scim_d_L1;
-	class ukcw_cvrt_Scorpion_w_L1;
-	class ukcw_cvrt_Scorpion_d_L1;
+	class ukcw_Scorpion_w_L1;
+	class ukcw_Scorpion_d_L1;
 	class CUP_B_SA330_Puma_HC1_BAF;
 	
 	// section modifiers all eras/types
@@ -214,6 +214,7 @@ class CfgVehicles {
 	#include "vehicles\lr_softtop.hpp"
 	#include "vehicles\lr_hardtop.hpp"
 	#include "vehicles\lr_snatch.hpp"
+	#include "vehicles\lr_wmik.hpp"
 	#include "vehicles\wildcat.hpp"
 	#include "vehicles\challenger2.hpp"
 	

@@ -91,7 +91,7 @@ class TWC_Vehicle_Millennial_Scimitar_Chameleon: ukcw_cvrt_Scim_w_L1 {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MILLENNIAL_SCORPION_MOD
-class TWC_Vehicle_Millennial_Scorpion_Chameleon: ukcw_cvrt_Scorpion_w_L1 {
+class TWC_Vehicle_Millennial_Scorpion_Chameleon: ukcw_Scorpion_w_L1 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;

@@ -137,7 +137,7 @@ class TWC_Vehicle_ColdWar_Scimitar_Desert: ukcw_cvrt_Scim_d_L1 {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_SCORPION_MOD
-class TWC_Vehicle_ColdWar_Scorpion_Woodland: ukcw_cvrt_Scorpion_w_L1 {
+class TWC_Vehicle_ColdWar_Scorpion_Woodland: ukcw_Scorpion_w_L1 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -164,7 +164,7 @@ class TWC_Vehicle_ColdWar_Scorpion_Woodland: ukcw_cvrt_Scorpion_w_L1 {
 	class TransportBackpacks { };
 };
  
-class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_cvrt_Scorpion_d_L1 {
+class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_Scorpion_d_L1 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;

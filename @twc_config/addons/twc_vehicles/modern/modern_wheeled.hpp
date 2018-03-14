@@ -354,7 +354,10 @@ class TWC_Vehicle_Modern_LandRoverHard_Desert_COIN: TWC_Vehicle_Modern_LandRover
 	hiddenSelectionsTextures[] = {
 		"",
 		"",
-		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_base_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_hardtop_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_base_baf_sand_co.paa",
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_hardtop_baf_sand_co.paa",
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa",
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
 	};
 	
 	class AnimationSources: AnimationSources {
@@ -436,6 +439,17 @@ class TWC_Vehicle_Modern_LandRoverSnatch_Desert_COIN: TWC_BaseClass_LR_Snatch_Ba
 		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 1;
 		};
+	};
+	
+	hiddenSelectionsTextures[] = {
+		"",
+		"",
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_base_baf_snatch_sand_co.paa",
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_hardtop_baf_sand_co.paa",
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa",
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_snatch_baf_sand_co.paa",
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\camonet_nato_sand_co.paa",
+		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
 	};
 };
 
@@ -907,8 +921,7 @@ class TWC_Vehicle_Modern_Mastiff_GMG_Desert_COIN: TWC_Vehicle_Modern_Mastiff_GMG
 	};
 };
 
-class UK3CB_BAF_LandRover_WMIK_GMG_FFR_Green_B;
-class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Woodland_COIN: UK3CB_BAF_LandRover_WMIK_GMG_FFR_Green_B {
+class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Woodland_COIN: TWC_BaseClass_LR_WMIK_GMG_Green_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -956,28 +969,24 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Woodland_COIN: UK3CB_BAF_LandRover_WM
 	class TransportWeapons { };
 	class TransportBackpacks { };
 	
-	class AnimationSources {
-		class AerialAtuR_Hide {
+	class AnimationSources: AnimationSources {
+		class AerialAtuR_Hide: AerialAtuR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialAtuL_Hide {
+		class AerialAtuL_Hide: AerialAtuL_Hide {
 			initPhase = 1;
 		};
 
-		class AerialFR_Hide {
+		class AerialFR_Hide: AerialFR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialFL_Hide {
+		class AerialFL_Hide: AerialFL_Hide {
 			initPhase = 0;
 		};
 		
-		class ClanLogo_Hide {
-			initPhase = 1;
-		};
-		
-		class Mudguards_Hide {
+		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 1;
 		};
 	};
@@ -1010,8 +1019,7 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Woodland: TWC_Vehicle_Modern_LandRove
 	};
 };
 
-class UK3CB_BAF_LandRover_WMIK_GMG_FFR_Sand_B;
-class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Desert_COIN: UK3CB_BAF_LandRover_WMIK_GMG_FFR_Sand_B {
+class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Desert_COIN: TWC_BaseClass_LR_WMIK_GMG_Sand_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -1059,28 +1067,24 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Desert_COIN: UK3CB_BAF_LandRover_WMIK
 	class TransportWeapons { };
 	class TransportBackpacks { };
 	
-	class AnimationSources {
-		class AerialAtuR_Hide {
+	class AnimationSources: AnimationSources {
+		class AerialAtuR_Hide: AerialAtuR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialAtuL_Hide {
+		class AerialAtuL_Hide: AerialAtuL_Hide {
 			initPhase = 1;
 		};
 
-		class AerialFR_Hide {
+		class AerialFR_Hide: AerialFR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialFL_Hide {
+		class AerialFL_Hide: AerialFL_Hide {
 			initPhase = 0;
 		};
 		
-		class ClanLogo_Hide {
-			initPhase = 1;
-		};
-		
-		class Mudguards_Hide {
+		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 1;
 		};
 	};
@@ -1113,8 +1117,7 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Desert: TWC_Vehicle_Modern_LandRoverW
 	};
 };
 
-class UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Green_B;
-class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Woodland_COIN: UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Green_B {
+class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Woodland_COIN: TWC_BaseClass_LR_WMIK_GPMG_Green_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -1162,28 +1165,24 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Woodland_COIN: UK3CB_BAF_LandRover_W
 	class TransportWeapons { };
 	class TransportBackpacks { };
 	
-	class AnimationSources {
-		class AerialAtuR_Hide {
+	class AnimationSources: AnimationSources {
+		class AerialAtuR_Hide: AerialAtuR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialAtuL_Hide {
+		class AerialAtuL_Hide: AerialAtuL_Hide {
 			initPhase = 1;
 		};
 
-		class AerialFR_Hide {
+		class AerialFR_Hide: AerialFR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialFL_Hide {
+		class AerialFL_Hide: AerialFL_Hide {
 			initPhase = 0;
 		};
 		
-		class ClanLogo_Hide {
-			initPhase = 1;
-		};
-		
-		class Mudguards_Hide {
+		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 1;
 		};
 	};
@@ -1216,8 +1215,7 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Woodland: TWC_Vehicle_Modern_LandRov
 	};
 };
 
-class UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Sand_B;
-class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Desert_COIN: UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Sand_B {
+class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Desert_COIN: TWC_BaseClass_LR_WMIK_GPMG_Sand_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -1265,28 +1263,24 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Desert_COIN: UK3CB_BAF_LandRover_WMI
 	class TransportWeapons { };
 	class TransportBackpacks { };
 	
-	class AnimationSources {
-		class AerialAtuR_Hide {
+	class AnimationSources: AnimationSources {
+		class AerialAtuR_Hide: AerialAtuR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialAtuL_Hide {
+		class AerialAtuL_Hide: AerialAtuL_Hide {
 			initPhase = 1;
 		};
 
-		class AerialFR_Hide {
+		class AerialFR_Hide: AerialFR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialFL_Hide {
+		class AerialFL_Hide: AerialFL_Hide {
 			initPhase = 0;
 		};
 		
-		class ClanLogo_Hide {
-			initPhase = 1;
-		};
-		
-		class Mudguards_Hide {
+		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 1;
 		};
 	};
@@ -1319,8 +1313,7 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Desert: TWC_Vehicle_Modern_LandRover
 	};
 };
 
-class UK3CB_BAF_LandRover_WMIK_HMG_FFR_Sand_A;
-class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert_COIN: UK3CB_BAF_LandRover_WMIK_HMG_FFR_Sand_A {
+class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert_COIN: TWC_BaseClass_LR_WMIK_HMG_Sand_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -1368,28 +1361,24 @@ class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert_COIN: UK3CB_BAF_LandRover_WMIK
 	class TransportWeapons { };
 	class TransportBackpacks { };
 	
-	class AnimationSources {
-		class AerialAtuR_Hide {
+	class AnimationSources: AnimationSources {
+		class AerialAtuR_Hide: AerialAtuR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialAtuL_Hide {
+		class AerialAtuL_Hide: AerialAtuL_Hide {
 			initPhase = 1;
 		};
 
-		class AerialFR_Hide {
+		class AerialFR_Hide: AerialFR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialFL_Hide {
+		class AerialFL_Hide: AerialFL_Hide {
 			initPhase = 0;
 		};
 		
-		class ClanLogo_Hide {
-			initPhase = 1;
-		};
-		
-		class Mudguards_Hide {
+		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 1;
 		};
 	};
@@ -1422,8 +1411,7 @@ class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert: TWC_Vehicle_Modern_LandRoverW
 	};
 };
 
-class UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_B;
-class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland_COIN: UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_B {
+class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland_COIN: TWC_BaseClass_LR_WMIK_HMG_Green_F {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -1471,28 +1459,24 @@ class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland_COIN: UK3CB_BAF_LandRover_WM
 	class TransportWeapons { };
 	class TransportBackpacks { };
 	
-	class AnimationSources {
-		class AerialAtuR_Hide {
+	class AnimationSources: AnimationSources {
+		class AerialAtuR_Hide: AerialAtuR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialAtuL_Hide {
+		class AerialAtuL_Hide: AerialAtuL_Hide {
 			initPhase = 1;
 		};
 
-		class AerialFR_Hide {
+		class AerialFR_Hide: AerialFR_Hide {
 			initPhase = 1;
 		};
 		
-		class AerialFL_Hide {
+		class AerialFL_Hide: AerialFL_Hide {
 			initPhase = 0;
 		};
 		
-		class ClanLogo_Hide {
-			initPhase = 1;
-		};
-		
-		class Mudguards_Hide {
+		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 1;
 		};
 	};
