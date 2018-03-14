@@ -27,7 +27,7 @@ Class Name | Display Name | WW2 Only
 --- | --- | ---
 TWC_General | TWC General Operation Units | No
 TWC_Modern | TWC Modern Operation Units | No
-TWC_Millenial | TWC Millennial Operation Units | No
+TWC_Millennial | TWC Millennial Operation Units | No
 TWC_ColdWar | TWC Cold War Operation Units | No
 twc_faction_independent | TWC WW2 Operation Units | Yes
  |  | 

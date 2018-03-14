@@ -2,7 +2,7 @@
 	{
 		scope=1;
 		displayName="Base";
-		faction="TWC_Millenial";
+		faction="TWC_Millennial";
 		editorSubcategory = "Men_2000_Woodland_Dismounted";
 		vehicleClass="Men_2000_Woodland_Dismounted";
 		icon="iconMan";
@@ -1115,7 +1115,7 @@
 	{
 		scope=2;
 		displayName="Vehicle Commander";
-		faction="TWC_Millenial";
+		faction="TWC_Millennial";
 		editorSubcategory = "Men_2000_Desert_Mounted";
 		vehicleClass="Men_2000_Desert_Mounted";
 		icon="iconMan";
@@ -1219,7 +1219,7 @@
 	{
 		scope=2;
 		displayName="Vehicle Crew";
-		faction="TWC_Millenial";
+		faction="TWC_Millennial";
 		editorSubcategory = "Men_2000_Desert_Mounted";
 		vehicleClass="Men_2000_Desert_Mounted";
 		icon="iconMan";

@@ -2,7 +2,7 @@
 	{
 		scope=1;
 		displayName="Base";
-		faction="TWC_Millenial";
+		faction="TWC_Millennial";
 		editorSubcategory = "Men_1990_Woodland_Dismounted";
 		vehicleClass="Men_1990_Woodland_Dismounted";
 		icon="iconMan";
@@ -1194,7 +1194,7 @@
 		_generalMacro="1990_Desert_British_Tank Commander";
 		scope=2;
 		displayName="Vehicle Commander";
-		faction="TWC_Millenial";
+		faction="TWC_Millennial";
 		editorSubcategory = "Men_1990_Desert_Mounted";
 		vehicleClass="Men_1990_Desert_Mounted";
 		icon="iconMan";
@@ -1298,7 +1298,7 @@
 	{
 		scope=2;
 		displayName="Vehicle Crew";
-		faction="TWC_Millenial";
+		faction="TWC_Millennial";
 		editorSubcategory = "Men_1990_Desert_Mounted";
 		vehicleClass="Men_1990_Desert_Mounted";
 		icon="iconMan";

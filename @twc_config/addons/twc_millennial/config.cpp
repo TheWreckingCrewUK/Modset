@@ -72,7 +72,7 @@ class CfgPatches
 			"2000_British_2IC_Mounted",
 			"2000_British_Marksman_Mounted",
 			"2000_British_Vehicle_Commander",
-			"2000_British_Vehicle_Crew",			
+			"2000_British_Vehicle_Crew",
 			
 			"2000_British_SectionCommander_Desert",
 			"2000_British_Rifleman_Desert",
