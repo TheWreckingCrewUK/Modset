@@ -45,7 +45,7 @@ class CfgFactionClasses
 {
 	class twc_faction_independent
 	{
-		displayName="TWC Operation Units";
+		displayName="TWC WW2 Operation Units";
 		author="FakeMatty";
 		icon="TWClogo.paa";
 		priority=2;

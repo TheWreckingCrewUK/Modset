@@ -10,10 +10,14 @@ class CfgPatches {
 };
 
 class CfgFunctions {
-	class TWC {
-		class Knock_Functions {
-			file = "\twc_knocking\functions";
-			class init{postInit = 1;};
+	class TWC_Knocking {
+		tag = "TWC_Knocking";
+
+		class init {
+			file = "twc_knocking\functions";
+
+			class knockOnTank {};
+			class TankKnockedOn {};
 		};
 	};
 };
@@ -22,6 +26,7 @@ class CfgFunctions {
 class CfgVehicles {
 	class LandVehicle;
 	class Tank: LandVehicle {
+
 	class ACE_Actions {
 			class ACE_MainActions {
 				class TWC_knock {
@@ -39,7 +44,7 @@ class CfgVehicles {
 };
 
 class CfgSounds {
-	sounds[] = {TWC_sound_knockMetal};
+	sounds[] = {TWC_sound_knockMetal, TWC_sound_knockMetalInside};
 
 	class TWC_sound_knockMetal {
 		name = "TWC_sound_knockMetal";

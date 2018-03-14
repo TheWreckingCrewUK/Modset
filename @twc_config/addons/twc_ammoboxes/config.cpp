@@ -59,6 +59,7 @@ class CfgPatches {
 		requiredVersion = 1;
 		
 		requiredAddons[] = {
+			"TWC_Defines",
 			"A3_Weapons_F",
 			"a3_structures_f_epa",
 			"uk3cb_baf_weapons",
