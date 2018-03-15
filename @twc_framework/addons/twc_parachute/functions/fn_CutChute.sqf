@@ -1,6 +1,4 @@
-params ["_chute", "_caller", "_id"];
-
-_caller removeAction _id;
+params ["_chute", "_caller"];
 
 moveOut _caller;
 deleteVehicle _chute;

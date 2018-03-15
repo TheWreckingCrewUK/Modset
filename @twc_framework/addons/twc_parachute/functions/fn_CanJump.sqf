@@ -5,11 +5,16 @@
  * But as it currently stands, I don't think that's necessary.
  *
  */
+params ["_vehicle", "_caller"];
 _result = true;
 
-// if plane is above X altitude
-	// is plane "prepped for jump" - aka door_2_1 & door_2_2 are open
-	//_vehicle getVariable ["TWC_JumpPrepped", false];
+_isPrepped = _vehicle getVariable ["TWC_JumpPrepped", false];
+
+if (((getPosATL _caller select 2) > 50) && _isPrepped) then {
+	_result = true;
+} else {
+	_result = false;
+};
 
 // return true for testing
 _result

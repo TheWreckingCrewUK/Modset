@@ -66,7 +66,7 @@ class CfgVehicles {
 				class TWC_Parachute {
 					displayName = "Cut Parachute";
 					condition = "(_player == (driver _target) && (alive _target))";
-					statement = "[_this] call TWC_parachute_fnc_CutChute";
+					statement = "[_target, _player] call TWC_parachute_fnc_CutChute";
 					exceptions[] = {};
 					icon = "\twc_parachute\UI\fall_ca.paa";
 				};
@@ -76,6 +76,7 @@ class CfgVehicles {
 		class TransportMagazines { };
 		class TransportItems { };
 		class TransportWeapons { };
+		class TransportBackpacks { };
 
 		animationOpen = "A3\Air_F_Beta\Parachute_01\Data\Anim\para_opening.rtm";
 		animationDrop = "A3\Air_F_Beta\Parachute_01\Data\Anim\para_landing.rtm";
@@ -153,19 +154,34 @@ class CfgVehicles {
 		weight = 200;
 		
 		// potentially add ace interact here to "pack it" aka delete
+		class ACE_Actions {
+			class ACE_MainActions {
+				class TWC_ParachutePack {
+					displayName = "Pack Parachute";
+					condition = "true";
+					statement = "deleteVehicle _target";
+					exceptions[] = {};
+					icon = "\twc_parachute\UI\pack_ca.paa";
+				};
+			};
+		};
 	};
 
 	class CUP_B_C130J_GB;
-	class twc_c5_hercules: CUP_B_C130J_GB {
-		scope=2;
-		side=1;
+	class TWC_Vehicle_Generic_Hercules_RAF: CUP_B_C130J_GB {
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
 		faction = "TWC_General";
+		editorSubcategory = "TWC_ForceType_Airborne";
 		author = "CUP";
-		displayname = "C5 Hercules";
+		
+		displayname = "Hercules (RAF)";
 		
 		class TransportMagazines { };
 		class TransportItems { };
 		class TransportWeapons { };
+		class TransportBackpacks { };
 		
 		class ACE_SelfActions {
 			class ACE_MainActions {
@@ -182,10 +198,11 @@ class CfgVehicles {
 					condition = "(driver _target) == _caller";
 					statement = "[_target] call TWC_parachute_fnc_PrepJump;";
 					exceptions[] = {};
-					// TODO: Prep Jump ICON (Door or something akin)
-					//icon = "\twc_parachute\data\UI\icomap_para_ca.paa";
+					icon = "\twc_parachute\UI\prep_ca.paa";
 				};
 			};
 		};
 	};
+	
+	class twc_c5_hercules: TWC_Vehicle_Generic_Hercules_RAF { };
 };
