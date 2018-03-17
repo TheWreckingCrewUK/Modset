@@ -628,7 +628,7 @@
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "[(_this select 0) execVM ""twc_construct\init.sqf"";(_this select 0) setVariable [""twc_keepMap"",true];";
+			init = "[(_this select 0)] execVM ""twc_construct\init.sqf"";(_this select 0) setVariable [""twc_keepMap"",true];";
 		};
 	};
 	class 1990_British_FAC: 1990_British_Platoon_Commander

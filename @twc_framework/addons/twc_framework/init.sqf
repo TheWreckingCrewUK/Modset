@@ -8,6 +8,7 @@ waitUntil { sleep 1.271; time > 0 };
 
 
 ACE_maxWeightDrag = 100000;
+ACE_maxWeightCarry = 100000;
 /*
 //storing an extra weapon on the back.  will soon put weapon animation on it as well
 //made mostly for coin rifleman and csms.

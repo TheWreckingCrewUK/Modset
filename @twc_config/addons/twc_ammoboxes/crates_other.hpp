@@ -162,9 +162,9 @@ class TWC_AmmoBox_Engineer_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "Engineer Resupply (Portable)";
-	editorSubcategory = "TWC_Crates_Millennial";
 	
 	class TransportItems {
+		item_nc(ACE_Clacker,2);
 		item_nc(DemoCharge_Remote_Mag, 5);
 		item_nc(ATMine_Range_Mag, 5);
 		item_nc(APERSTripMine_Wire_Mag, 5);
