@@ -27,6 +27,8 @@ if (alive _unit) then {
 	};
 	
 	missionNamespace setVariable ["ace_medical_maxReviveTime", _adjustedMaxTime];
+	
+	systemChat "Extended Vital Loop Executed";
 };
 
 // will keep checking during spectate, but does give respawn compat (public)

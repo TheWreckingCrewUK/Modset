@@ -19,7 +19,7 @@ if (_unCon) then {
 		};
 	};
 
-	if (_bloodVolume <= 0) exitWith {
+	if (_bloodVolume <= 25) exitWith {
 		[_unit, true, false] call ace_medical_fnc_setDead;
 	};
 
