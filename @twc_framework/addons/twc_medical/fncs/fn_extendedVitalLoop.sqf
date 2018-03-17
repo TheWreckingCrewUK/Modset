@@ -27,14 +27,6 @@ if (alive _unit) then {
 	};
 	
 	missionNamespace setVariable ["ace_medical_maxReviveTime", _adjustedMaxTime];
-
-	if (_bloodVolume <= 0) exitWith {
-		[_unit, true, false] call ace_medical_fnc_setDead;
-
-		if (_debugMode) then {
-			"setDead called via 0 blood" remoteExec ["hint", -2, true];
-		};
-	};
 };
 
 // will keep checking during spectate, but does give respawn compat (public)

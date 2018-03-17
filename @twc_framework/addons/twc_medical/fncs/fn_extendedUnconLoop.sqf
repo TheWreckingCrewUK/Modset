@@ -19,6 +19,10 @@ if (_unCon) then {
 		};
 	};
 
+	if (_bloodVolume <= 0) exitWith {
+		[_unit, true, false] call ace_medical_fnc_setDead;
+	};
+
 	if (!([_unit] call ace_medical_fnc_getUnconsciousCondition)) then {
 		_unit setVariable ["ACE_isUnconscious", false, true];
 		_continue = false;
