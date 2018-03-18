@@ -150,7 +150,7 @@
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
 			"SmokeShell",
-			"SmokeShell",
+			"SmokeShell"
 		};
 	};
 	class Modern_British_Rifleman: Modern_British_Base
@@ -160,7 +160,7 @@
 		weapons[]=
 		{
 			"Throw",
-			"Put",	
+			"Put",
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
 			"launch_NLAW_F"
 		};
@@ -553,7 +553,7 @@
 		respawnweapons[]=
 		{
 			"Throw",
-			"Put",	
+			"Put",
 			"UK3CB_BAF_L85A2",
 			"UK3CB_BAF_M6"
 		};
@@ -754,7 +754,7 @@
 		Respawnmagazines[]=
 		{
 			"UK3CB_BAF_9_17Rnd",
-			"UK3CB_BAF_9_17Rnd",	
+			"UK3CB_BAF_9_17Rnd",
 			"SmokeShell",
 			"SmokeShell"
 		};
