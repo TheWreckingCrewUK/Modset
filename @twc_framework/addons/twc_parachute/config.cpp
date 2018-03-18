@@ -24,7 +24,7 @@ class CfgPatches {
 class CfgFactionClasses {
 	// Included again, to make it not rely on config entries for public
 	class TWC_General {
-		displayName = "TWC General Operation Units";
+		displayName = "TWC Operations - Multi-Era";
 		author = "The Wrecking Crew";
 		icon = "TWClogo.paa";
 		priority = 2;
@@ -39,8 +39,9 @@ class CfgEditorSubcategories {
 };
 
 class CfgFunctions {
-	class TWC {
-		class TWC_Paradrop {
+	class TWC_Parachute {
+		tag = "twc_parachute";
+		class TWC_Parachute {
 			file = "twc_parachute\functions";
 
 			class CanJump { };

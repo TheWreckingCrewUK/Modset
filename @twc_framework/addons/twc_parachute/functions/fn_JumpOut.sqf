@@ -71,7 +71,7 @@ if (_isEven) then {
 	//waitUntil {animationState _caller == "chute_pos"};
 
 	// touch down!
-	waitUntil {(getPosATL _caller select 2) < 1.5};
+	waitUntil {(getPosATL _caller select 2) < 1};
 	_chute allowDamage false;
 	_caller allowDamage false;
 
@@ -99,5 +99,7 @@ if (_isEven) then {
 	_caller allowDamage true;
 	_caller switchMove "AmovPercMevaSrasWrflDf_AmovPknlMstpSrasWrflDnon";
 	[] call twc_parachute_fnc_LandingSound;
-	_ParachuteLanded = "T10_Landed" createVehicle (getpos _caller);
+	_ParachuteLanded = createVehicle ["T10_Landed", [0, 0, -100], [], 0, "CAN_COLLIDE"];
+	_ParachuteLanded setDir (getDir _caller);
+	_ParachuteLanded setPos (_caller modelToWorld [0, -7, 0]);
 };

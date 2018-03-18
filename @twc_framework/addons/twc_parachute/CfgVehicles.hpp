@@ -9,6 +9,9 @@ class CfgVehicles {
 		vehicleClass = "Air";
 		crew = "B_Soldier_F";
 
+		ace_reserveParachute = "";
+		ace_hasReserveParachute = 0;
+
 		mapSize = 20;
 		camouflage = 4;
 		
@@ -121,6 +124,9 @@ class CfgVehicles {
 		ParachuteClass = "TWC_T10_Parachute";
 		maximumLoad = 0;
 		mass = 10;
+		
+		ace_reserveParachute = "";
+		ace_hasReserveParachute = 0;
 	};
 
 	class Thing;
@@ -184,25 +190,23 @@ class CfgVehicles {
 		class TransportBackpacks { };
 		
 		class ACE_SelfActions {
-			class ACE_MainActions {
-				class TWC_Parachute {
-					displayName = "Jump Out";
-					condition = "[_this] call TWC_parachute_fnc_CanJump;";
-					statement = "[_this] call TWC_parachute_fnc_JumpOut;";
-					exceptions[] = {};
-					icon = "\twc_parachute\data\UI\icomap_para_ca.paa";
-				};
+			class TWC_Parachute {
+				displayName = "Jump Out";
+				condition = "[_target, _player] call TWC_parachute_fnc_CanJump";
+				statement = "[_target, _player] call TWC_parachute_fnc_JumpOut";
+				exceptions[] = {};
+				icon = "\twc_parachute\data\UI\icomap_para_ca.paa";
+			};
 
-				class TWC_PrepJump {
-					displayName = "Prep Jump";
-					condition = "(driver _target) == _caller";
-					statement = "[_target] call TWC_parachute_fnc_PrepJump;";
-					exceptions[] = {};
-					icon = "\twc_parachute\UI\prep_ca.paa";
-				};
+			class TWC_PrepJump {
+				displayName = "Prep Jump";
+				condition = "(driver _target) == _player";
+				statement = "[_target] call TWC_parachute_fnc_PrepJump";
+				exceptions[] = {};
+				icon = "\twc_parachute\UI\prep_ca.paa";
 			};
 		};
 	};
 	
-	class twc_c5_hercules: TWC_Vehicle_Generic_Hercules_RAF { };
+	class twc_c5_hercules: TWC_Vehicle_Generic_Hercules_RAF { scope = 1; scopeCurator = 1; };
 };

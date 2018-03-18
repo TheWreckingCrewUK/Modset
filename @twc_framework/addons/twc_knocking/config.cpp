@@ -32,7 +32,7 @@ class CfgVehicles {
 				class TWC_knock {
 					displayName = "Knock";
 					condition = "vehicle player == player";
-					statement = "_this call TWC_fnc_knockOnTank;";
+					statement = "[_target] call TWC_fnc_knockOnTank";
 					showDisabled = 0;
 					priority = 1;
 					distance = 4.5;

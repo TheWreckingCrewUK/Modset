@@ -6,14 +6,11 @@
  *
  */
 params ["_vehicle", "_caller"];
-_result = true;
-
+_result = false;
 _isPrepped = _vehicle getVariable ["TWC_JumpPrepped", false];
 
 if (((getPosATL _caller select 2) > 50) && _isPrepped) then {
 	_result = true;
-} else {
-	_result = false;
 };
 
 // return true for testing
