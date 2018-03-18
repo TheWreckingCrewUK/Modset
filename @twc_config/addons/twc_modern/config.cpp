@@ -35,7 +35,6 @@ class CfgPatches
 			"Modern_British_FAC",
 			"Modern_British_VehicleCrew",
 			"Modern_British_VehicleCommander"
-			
 		};
 		weapons[]={};
 		requiredVersion=0.1;
