@@ -30,7 +30,7 @@ class TWC_Vehicle_FV510_D_SLAT: TWC_BaseClass_Warrior_F {
 	displayname = "FV510 D SLAT (EMPTY)";
 	editorSubcategory = "TWC_ForceType_Mechanised";
 
-	class TransportItems     { }; 
+	class TransportItems     { };
 	class TransportMagazines { };
 	class TransportWeapons   { };
 	class TransportBackpacks { };
