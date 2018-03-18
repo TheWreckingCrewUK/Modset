@@ -27,6 +27,7 @@ class TWC_Vehicle_ColdWar_FV432_Woodland: ukcw_fv432 {
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, ADD_QNTY(COLDWAR_SECTION_MG_T));
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
+		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
 	class TransportWeapons {
@@ -66,6 +67,7 @@ class TWC_Vehicle_ColdWar_FV432_Woodland_COIN: ukcw_fv432 {
 		ADD_MAGA(ukcw_30Rnd_762x51_STANAG, ADD_QNTY(COLDWAR_SECTION_COIN_MG));
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
+		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
 	class TransportWeapons {

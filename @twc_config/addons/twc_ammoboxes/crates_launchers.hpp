@@ -16,10 +16,10 @@ class TWC_AmmoBox_Launchers_L14_Portable: TWC_AmmoBox_Portable {
 
 	class TransportMagazines {
 		// L14A1 Recoilless Rifle - Carl Gustav
-		maga_nc(ukcw_l14a1_HEAT, 2);
-		maga_nc(ukcw_l14a1_HE, 2);
-		maga_nc(ukcw_l14a1_ILLUM, 8);
-		maga_nc(ukcw_l14a1_SMOKE, 8);
+		maga_nc(ukcw_l14a1_HEAT, 3);
+		maga_nc(ukcw_l14a1_HE, 3);
+		maga_nc(ukcw_l14a1_ILLUM, 1);
+		maga_nc(ukcw_l14a1_SMOKE, 1);
 	};
 };
 

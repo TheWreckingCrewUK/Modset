@@ -56,6 +56,8 @@ class TWC_Vehicle_Millennial_Puma_RAF: CUP_B_SA330_Puma_HC1_BAF {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MILLENNIAL_SECTION_EARLY_RIFLE_T));
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
+		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
+		
 	};
 	
 	class TransportWeapons { };
