@@ -50,6 +50,7 @@ class CfgFunctions {
 			class LandingSound { };
 			
 			class PrepJump { };
+			class CancelJump { };
 		};
 	};
 };

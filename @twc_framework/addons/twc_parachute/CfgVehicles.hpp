@@ -161,14 +161,13 @@ class CfgVehicles {
 		
 		// potentially add ace interact here to "pack it" aka delete
 		class ACE_Actions {
-			class ACE_MainActions {
-				class TWC_ParachutePack {
-					displayName = "Pack Parachute";
-					condition = "true";
-					statement = "deleteVehicle _target";
-					exceptions[] = {};
-					icon = "\twc_parachute\UI\pack_ca.paa";
-				};
+			class TWC_ParachutePack {
+				displayName = "Pack Parachute";
+				condition = "true";
+				statement = "deleteVehicle _target";
+				exceptions[] = {};
+				icon = "\twc_parachute\UI\pack_ca.paa";
+				distance = 3;
 			};
 		};
 	};
@@ -204,6 +203,14 @@ class CfgVehicles {
 				statement = "[_target] call TWC_parachute_fnc_PrepJump";
 				exceptions[] = {};
 				icon = "\twc_parachute\UI\prep_ca.paa";
+			};
+
+			class TWC_CancelJump {
+				displayName = "Cancel Jump";
+				condition = "(driver _target) == _player";
+				statement = "[_target] call TWC_parachute_fnc_CancelJump";
+				exceptions[] = {};
+				icon = "\twc_parachute\UI\cancel_ca.paa";
 			};
 		};
 	};
