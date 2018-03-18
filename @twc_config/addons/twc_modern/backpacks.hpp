@@ -283,15 +283,8 @@
 				name = "ACRE_PRC117F";
 				count = 1;
 			};
-			class _xx_Wire_Cutters
-			{
+			class _xx_Wire_Cutters {
 				name = "ACE_wirecutter";
-				count = 1;
-			};
-
-			class _xx_PRC_117F
-			{
-				name = "ACRE_PRC117F";
 				count = 1;
 			};
 		};
