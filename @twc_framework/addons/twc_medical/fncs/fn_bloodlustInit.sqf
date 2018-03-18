@@ -3,7 +3,7 @@
  * If a user has bloodlust, they should see the vaporization - otherwise, they'll just see a ragdoll
  */
 
-if (!isServer) exithWith {};
+if (!isServer) exitWith {};
 
 ["TWC_UnitVaporized", {
 	params ["_unit"];
