@@ -199,7 +199,7 @@ class CfgVehicles {
 
 			class TWC_PrepJump {
 				displayName = "Prep Jump";
-				condition = "(driver _target) == _player";
+				condition = "(driver _target) == _player && !(_target getVariable [""TWC_JumpPrepped"", false])";
 				statement = "[_target] call TWC_parachute_fnc_PrepJump";
 				exceptions[] = {};
 				icon = "\twc_parachute\UI\prep_ca.paa";
@@ -207,7 +207,7 @@ class CfgVehicles {
 
 			class TWC_CancelJump {
 				displayName = "Cancel Jump";
-				condition = "(driver _target) == _player";
+				condition = "(driver _target) == _player && (_target getVariable [""TWC_JumpPrepped"", false])";
 				statement = "[_target] call TWC_parachute_fnc_CancelJump";
 				exceptions[] = {};
 				icon = "\twc_parachute\UI\cancel_ca.paa";
