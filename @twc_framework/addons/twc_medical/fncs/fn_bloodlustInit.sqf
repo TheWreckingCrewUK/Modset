@@ -11,16 +11,15 @@ if (!isServer) exitWith {};
 	if (alive _unit) then {
 		// might be needed in the future
 		//if (!(_unit getVariable ["BloodLust_IsVaporized", false])) exitWith {};
+		[_unit, true, true] call ace_medical_fnc_setDead;
 
 		removeAllItems _unit;
 		removeAllWeapons _unit;
 		removeAllAssignedItems _unit;
 		_unit removeWeaponGlobal "Binocular";
 		_unit removeItems "ItemMap";
-		
+
 		_weapon = nearestObject [(getPos _unit), "GroundWeaponHolder"];
 		deleteVehicle _weapon;
-		
-		[_unit, true, true] call ace_medical_fnc_setDead;
 	};
 }] call CBA_fnc_addEventHandler;
