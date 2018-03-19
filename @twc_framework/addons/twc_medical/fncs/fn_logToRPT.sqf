@@ -13,6 +13,7 @@ TRACELOG("ace_medical_heartRate", (_target getVariable ["ace_medical_heartRate",
 TRACELOG("ace_medical_peripheralResistance", (_target getVariable ["ace_medical_peripheralResistance", "Error"]));
 TRACELOG("ace_medical_epinephrine_insystem", (_target getVariable ["ace_medical_epinephrine_insystem", "Error"]));
 TRACELOG("ACE_medical_lastMomentValuesSynced", (_target getVariable ["ACE_medical_lastMomentValuesSynced", "Error"]));
+TRACELOG("ace_medical_reviveStartTime", (_target getVariable ["ace_medical_reviveStartTime", "Error"]));
 TRACELOG("CBA_missionTime", CBA_missionTime);
 TRACELOG("ACE_medical_medicClass", (_caller getVariable ["ACE_medical_medicClass", "Error"]));
 TRACELOG("ACE_isUnconscious", (_target getVariable ["ACE_isUnconscious", "Error"]));
