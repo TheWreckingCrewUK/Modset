@@ -9,13 +9,7 @@ if (_unCon) then {
 	_timeToAdd = _reviveStartTime;
 
 	if (_reviveStartTime > 0) then {
-		_numOfNearPeople = count ((allUnits select {_x distance _target < 2}) - [_caller, _target]);
-
-		if (_numOfNearPeople > 0) then {
-			_timeToAdd = (_reviveStartTime + 15) + (30 * _bloodVolume) + (20 / _numOfNearPeople);
-		} else {
-			_timeToAdd = (_reviveStartTime + 15) + (30 * _bloodVolume) + 20;
-		};
+		_timeToAdd = (_reviveStartTime + 35) + (30 * _bloodVolume);
 
 		if ((CBA_missionTime -_timeToAdd - _maxTime) < 0) then {
 			_timeToAdd = (_reviveStartTime + 20); // severly reduce effectiveness when stacked over max cap of life

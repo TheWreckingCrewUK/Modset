@@ -116,6 +116,9 @@ class ACE_Medical_Actions {
 		class fieldDressing;
 		class CPR: fieldDressing {
 			callbackSuccess = "twc_medical_fnc_action";
+			animationCaller = "AinvPknlMstpSnonWnonDr_medic0";
+			animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+			animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
 		};
 		
 		class Defib: CPR {
