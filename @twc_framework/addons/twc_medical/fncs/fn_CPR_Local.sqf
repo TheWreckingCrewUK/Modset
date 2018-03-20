@@ -63,7 +63,6 @@ if ( _probability >= _diceRoll ) exitWith {
 
 	_forceSync = (CBA_missionTime - 60);
 	_target setVariable ["ACE_medical_lastMomentValuesSynced", _forceSync, true];
-	[_target] call ACE_medical_fnc_handleUnitVitals;
 
 	[_target, "activity", localize "STR_TWC_CPR_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
 	[_target, "activity_view", localize "STR_TWC_CPR_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
