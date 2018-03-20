@@ -65,14 +65,12 @@ class CfgVehicles {
 		openingTime=5;
 
 		class ACE_SelfActions {
-			class ACE_MainActions {
-				class TWC_Parachute {
-					displayName = "Cut Parachute";
-					condition = "(_player == (driver _target) && (alive _target))";
-					statement = "[_target, _player] call TWC_parachute_fnc_CutChute";
-					exceptions[] = {};
-					icon = "\twc_parachute\UI\fall_ca.paa";
-				};
+			class TWC_Parachute {
+				displayName = "Cut Parachute";
+				condition = "(_player == (driver _target) && (alive _target))";
+				statement = "[_target, _player] call TWC_parachute_fnc_CutChute";
+				exceptions[] = {};
+				icon = "\twc_parachute\UI\fall_ca.paa";
 			};
 		};
 

@@ -4,8 +4,8 @@ if (!local _unit) exitWith {};
 if (!alive _unit) exitWith {};
 if (!isPlayer _unit) exitWith {};
 
-_continue = true;
 _unCon = (_unit getVariable ["ACE_isUnconscious", false]);
+_continue = _unCon;
 
 if (_unCon) then {
 	_unit hideObjectGlobal false;

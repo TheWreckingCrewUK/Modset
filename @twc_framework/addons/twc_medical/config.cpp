@@ -55,35 +55,8 @@ class Extended_InitPost_EventHandlers {
 
 class CfgVehicles {
 	class Man;
-	
 	class CAManBase: Man {
-		/* 
-			// will have to be a custom function like Defib (almost exactly) for use within vehicles/facility
-			// additionally look into ww2fication of items
-		class ACE_SelfActions {
-			class Medical {
-				class ACE_ArmLeft {
-					class SalineIV_250: SalineIV {
-						displayName = "$STR_ACE_Actions_Saline4_250";
-						condition = QUOTE([ARR_4(_player, _target, 'hand_l', 'SalineIV_250')] call DFUNC(canTreatCached));
-						statement = QUOTE([ARR_4(_player, _target, 'hand_l', 'SalineIV_250')] call DFUNC(treatment));
-						exceptions[] = {"isNotInside"};
-					};
-				};
-			};
-		}; */
-		
 		class ACE_Actions {
-			/* class ACE_Torso {
-				class fieldDressing;
-				class Defib: fieldDressing {
-					displayName = "Defibrillate";
-					condition = "[_player, _target] call twc_medical_fnc_canDefib";
-					statement = "[_player, _target] call twc_medical_fnc_Defib";
-					icon = "";
-				};
-			}; */
-		
 			class ACE_MainActions {
 				class Medical {
 					class ACE_Torso {
@@ -116,9 +89,6 @@ class ACE_Medical_Actions {
 		class fieldDressing;
 		class CPR: fieldDressing {
 			callbackSuccess = "twc_medical_fnc_action";
-			animationCaller = "AinvPknlMstpSnonWnonDr_medic0";
-			animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-			animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
 		};
 		
 		class Defib: CPR {
