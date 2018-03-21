@@ -71,7 +71,7 @@ if (_isEven) then {
 	//waitUntil {animationState _caller == "chute_pos"};
 
 	// touch down!
-	waitUntil {(getPosVisual _caller select 2) < 0.5};
+	waitUntil {(getPosVisual _caller select 2) < 0.3};
 	_chute allowDamage false;
 	_caller allowDamage false;
 

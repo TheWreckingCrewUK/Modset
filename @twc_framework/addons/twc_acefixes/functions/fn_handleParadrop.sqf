@@ -7,23 +7,16 @@ if (isServer) then {
 		params ["_item", "_vehicle", ["_type", ""]];
 
 		if (_type == "paradrop") then {
-			[{
-				params ["_item"];
-
-				if (isNull _item) exitWith {
-					[_this select 1] call CBA_fnc_removePerFrameHandler;
-				};
-
-				if ((getPosATL _item select 2) < 1) then {
-					if (!isNull attachedTo _item) then {
-						_groundPosition = getPos _item;
-						detach _item;
-						_item setPos ([_groundPosition select 0, _groundPosition select 1, 0]);
-					};
-
-					[_this select 1] call CBA_fnc_removePerFrameHandler;
-				};
-			}, 1, [_item]] call CBA_fnc_addPerFrameHandler;
+			[_item] spawn {
+				params ["_crate"];
+				
+				if (isNull _crate) exitWith {}; // obj doesn't exist
+				
+				waitUntil {(getPosVisual _crate select 2) < 1};
+				_groundPosition = getPos _crate;
+				detach _crate;
+				_crate setPos ([_groundPosition select 0, _groundPosition select 1, 0]);
+			};
 		};
 	}] call CBA_fnc_addEventHandler;
 };
