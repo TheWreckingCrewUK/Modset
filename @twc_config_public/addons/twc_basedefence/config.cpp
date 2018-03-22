@@ -30,7 +30,7 @@ class CfgVehicles {
 	class staticmortar: staticweapon {
 
 		class EventHandlers {
-			fired = "[(_this select 0), (_this select 6)] execVM ""insurgency_core\server\sys_basedefence\IDF_Alarmfire.sqf""";
+			fired = "[(_this select 0), (_this select 6)] call twc_fnc_idf";
 		};
 	};
 };
