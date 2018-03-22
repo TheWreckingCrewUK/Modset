@@ -22,16 +22,7 @@ class cfgWeapons
 	class UK3CB_BAF_L115A3;
 	class UK3CB_BAF_L85A2_RIS_Tan;
 	
-	
-	class Rifle_Long_Base_F;
-	class UK3CB_BAF_L7A2: Rifle_Long_Base_F{
-		displayname = "TWC Edited L7A2";
-		class WeaponSlotsInfo{
-			class asdg_OpticRail_UK3CB_BAF_L7A2{
-				
-			};
-		};
-	};
+
 	
 	class UK3CB_BAF_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS
 	{
