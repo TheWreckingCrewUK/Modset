@@ -421,7 +421,7 @@
 	{
 		scope=2;
 		displayName="Helicopter Pilot (90`s Woodland)";
-		backpack="B_AssaultPack_blk";
+		backpack="TWC_Backpack_USMC_vehiclecommander";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
