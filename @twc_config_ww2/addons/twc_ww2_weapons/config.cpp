@@ -34,7 +34,7 @@ class cfgMagazines {
 	class twc_no82: fow_e_no82 {
 		ammo = "twc_no82";
 		displayName = "NO. 82 AT Grenade";
-	};
+	};	
 };
 class CfgWeapons {
 	class Default;
@@ -46,6 +46,19 @@ class CfgWeapons {
 		class twc_no82_muzzle: ThrowMuzzle
 		{
 			magazines[] = {"twc_no82"};
+		};
+	};
+	class ItemCore;
+	class CBA_MiscItem_ItemInfo;
+	class ACE_ItemCore;
+	class twc_looseAmmoBox_303: ACE_ItemCore
+	{
+		scope = 2;
+		displayName = "Box of Loose .303";
+		descriptionShort = "Self Interact to convert to Enfield Clips";
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass = 228;
 		};
 	};
 	class fow_w_bren;
@@ -410,6 +423,7 @@ class CfgWeapons {
 class CfgVehicles {
 	class fow_b_uk_p37;
 	class fow_b_us_radio;
+	class fow_b_uk_piat_at;
 	class B_LIB_SOV_RA_MedicalBag_Empty;
 	
 	class CUP_BAF_VehicleBox;
@@ -617,13 +631,17 @@ class CfgVehicles {
 	class TWC_Backpack_WW2_Sergeant:TWC_Backpack_WW2_Base
 	{
 		scope = 1;
+		maximumLoad = 400;
+		class TransportItems
+		{
+			class _XX_Enfield_LooseAmmo
+			{
+				name="twc_looseAmmoBox_303";
+				count= 1;
+			};
+		};
 		class TransportMagazines
 		{
-			class _XX_Enfield_Mag
-			{
-				magazine="10Rnd_303_Magazine";
-				count= 10;
-			};
 			class _XX_Bren_Mag
 			{
 				magazine = "fow_30Rnd_303_bren";
@@ -631,22 +649,22 @@ class CfgVehicles {
 			};
 			class _XX_Flare_white
 			{
-				magazine="LIB_1Rnd_flare_white";
+				magazine="UGL_FlareWhite_F";
 				count=6;
 			};
 			class _XX_Flare_red
 			{
-				magazine="LIB_1Rnd_flare_red";
+				magazine="UGL_FlareRed_F";
 				count=6;
 			};
 			class _XX_Flare_green
 			{
-				magazine="LIB_1Rnd_flare_green";
+				magazine="UGL_FlareGreen_F";
 				count=6;
 			};
 			class _XX_Flare_yellow
 			{
-				magazine="LIB_1Rnd_flare_yellow";
+				magazine="UGL_FlareYellow_F";
 				count=6;
 			};
 			class _xx_SmokeShellGreen
@@ -687,6 +705,18 @@ class CfgVehicles {
 			{
 				magazine = "fow_30Rnd_303_bren";
 				count = 10;
+			};
+		};
+	};
+	class TWC_Backpack_PIAT: fow_b_uk_piat_at
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			Class _XX_PIAT_HEAT
+			{
+				magazine = "fow_1Rnd_piat_HEAT";
+				count = 3;
 			};
 		};
 	};
@@ -813,17 +843,17 @@ class CfgVehicles {
 			};
 			class _XX_Flare_white
 			{
-				magazine="LIB_1Rnd_flare_white";
+				magazine="UGL_FlareWhite_F";
 				count=15;
 			};
 			class _XX_Flare_red
 			{
-				magazine="LIB_1Rnd_flare_red";
+				magazine="UGL_FlareRed_F";
 				count=15;
 			};
 			class _XX_Flare_green
 			{
-				magazine="LIB_1Rnd_flare_green";
+				magazine="UGL_FlareGreen_F";
 				count=15;
 			};
 			class _XX_Flare_yellow

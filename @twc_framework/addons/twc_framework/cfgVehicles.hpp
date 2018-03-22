@@ -819,5 +819,30 @@ class cfgVehicles {
 			description = "Set Piece(s) Available to Spotter(s)";
 			sync[] = {"AnyVehicle"};
 		};
-	}; */
+	};	*/
+	
+	class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class twc_looseAmmo303 {
+                displayName = "Convert Loose Ammo";
+                condition = "'twc_looseAmmoBox_303' in backpackItems _player";
+                exceptions[] = {};
+                statement = "_player call twc_fnc_looseTo303";
+                icon = "";
+			};
+			class twc_clipToBren {
+                displayName = "Convert Enfield To Bren";
+                condition = "{_x == '10Rnd_303_Magazine'} count (magazines player) > 2";
+                exceptions[] = {};
+                statement = "_player call twc_fnc_enfieldToBren";
+                icon = "";
+			};
+		};
+	};
+	
+	
+	
+	
+	
 };
