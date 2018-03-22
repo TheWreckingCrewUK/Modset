@@ -713,7 +713,7 @@ class CfgVehicles {
 		scope = 1;
 		class TransportMagazines
 		{
-			Class _XX_PIAT_HEAT
+			class _XX_PIAT_HEAT
 			{
 				magazine = "fow_1Rnd_piat_HEAT";
 				count = 3;
