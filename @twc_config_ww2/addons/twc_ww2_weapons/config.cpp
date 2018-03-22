@@ -11,7 +11,7 @@ class CfgPatches
 		{
 			"cup_weapons_ammoboxes",
 			"fow_weapons",
-			"fow_weapons_c",
+			"fow_weapons_c"
 			
 		};
 		version="1";

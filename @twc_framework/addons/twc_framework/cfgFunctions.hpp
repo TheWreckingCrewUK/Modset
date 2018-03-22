@@ -107,6 +107,7 @@ class CfgFunctions
 			file = "twc_framework\looseAmmo";
 			class looseTo303 {};
 			class enfieldToBren {};
+			class brenToEnfield {};
 		};
 	};
 };

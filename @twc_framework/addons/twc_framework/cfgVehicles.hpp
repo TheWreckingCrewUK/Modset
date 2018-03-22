@@ -838,6 +838,13 @@ class cfgVehicles {
                 statement = "_player call twc_fnc_enfieldToBren";
                 icon = "";
 			};
+			class twc_brenToClip {
+                displayName = "Convert Bren To Enfield";
+                condition = "'fow_30Rnd_303_bren' in (magazines _player)";
+                exceptions[] = {};
+                statement = "_player call twc_fnc_brenToEnfield";
+                icon = "";
+			};
 		};
 	};
 	

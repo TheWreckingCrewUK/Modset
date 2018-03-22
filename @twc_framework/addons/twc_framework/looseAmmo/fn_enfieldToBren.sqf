@@ -1,6 +1,7 @@
 params["_player"];
 
 _number = {_x == "10Rnd_303_Magazine"} count (magazines player);
+_number = _number - 3;
 
 [5, [_player],
 {
