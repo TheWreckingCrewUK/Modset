@@ -295,4 +295,26 @@ class CfgVehicles
 			};
 		};
 	};
+	
+	class rhs_3Ya40_1_single;
+	class TWC_Public_AmmoBox_Hobbs_Precious: rhs_3Ya40_1_single {
+		scope = 2;
+		scopeCurator = 1; // hide from zeus
+		displayName = "Storage Box (Hobbs Trick Box)";
+		author      = "Bosenator";
+
+		class TransportMagazines { };
+		class TransportItems     { };
+		class TransportWeapons   { };
+		class TransportBackpacks { };
+
+		maximumLoad = 1000;
+
+		// ACE Defines
+		ace_cargo_canLoad     = 0;
+		ace_cargo_hasCargo    = 0;
+
+		ace_dragging_canCarry = 0;
+		ace_dragging_canDrag  = 0;
+	};
 };
