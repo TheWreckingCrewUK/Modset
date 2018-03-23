@@ -11,7 +11,7 @@ if (!isNull _target && _target distance _player < 5 && _target != _heli) then {
 		// make this a sound for muh 'mersion, like the winch coming to a halt ?
 		// i really do dislike this lazy way of informing the user atm
 	} else {
-		[_heli,_player] call twc_ropes_fnc_dropRopes;
+		[_heli, _player] call twc_ropes_fnc_dropRopes;
 
 		_bbr = boundingBoxReal _target;
 		_p1 = _bbr select 0;
