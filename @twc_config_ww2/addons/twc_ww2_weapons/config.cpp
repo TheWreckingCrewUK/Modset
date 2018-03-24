@@ -874,6 +874,14 @@ class CfgVehicles {
 				count=15;
 			};
 		};
+		class TransportItems
+		{
+			class _xx_303Box
+			{
+				name = "twc_looseAmmoBox_303";
+				count = 3;
+			};
+		};
 		transportAmmo=100000;
 		supplyRadius=3;
 	};
