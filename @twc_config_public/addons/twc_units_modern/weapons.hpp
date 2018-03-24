@@ -22,6 +22,7 @@ class cfgWeapons
 	class UK3CB_BAF_L115A3;
 	class UK3CB_BAF_L85A2_RIS_Tan;
 	
+
 	
 	class UK3CB_BAF_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS
 	{

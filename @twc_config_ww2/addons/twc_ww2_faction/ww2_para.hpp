@@ -506,6 +506,82 @@
 
 		};
 	};
+	class WW2_Para_British_AT: WW2_British_Base
+	{
+		scope=2;
+		displayName="PIAT Gunner";
+		uniformClass="fow_u_uk_parasmock";
+		editorSubcategory = "Men_WW2_Para";
+		vehicleClass="Men_WW2_Para";
+		backpack = "TWC_Backpack_PIAT";
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"fow_w_piat"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"fow_w_piat"
+		};
+		magazines[]=
+		{
+			"fow_1Rnd_piat_HEAT",
+			"twc_no82"
+		};
+		Respawnmagazines[]=
+		{
+			"fow_1Rnd_piat_HEAT",
+			"twc_no82"
+
+		};
+	};
+	class WW2_Para_British_AAT: WW2_British_Base
+	{
+		scope=2;
+		displayName="Assistant PIAT Gunner";
+		uniformClass="fow_u_uk_parasmock";
+		editorSubcategory = "Men_WW2_Para";
+		vehicleClass="Men_WW2_Para";
+		backpack="TWC_Backpack_PIAT";
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"bnae_mk1_virtual"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"bnae_mk1_virtual"
+		};
+		magazines[]=
+		{
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"twc_no82",
+			"twc_no82"
+		};
+		Respawnmagazines[]=
+		{
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"10Rnd_303_Magazine",
+			"twc_no82",
+			"twc_no82"
+
+		};
+	};
 	class WW2_Para_British_Carrier_SMG: WW2_Para_British_Rifleman
 	{
 		displayName="Auxiliary (SMG)";

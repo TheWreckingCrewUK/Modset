@@ -1,5 +1,5 @@
 class CfgPatches {
-	class TWC_acefixes {
+	class twc_acefixes {
 		units[]={};
 		weapons[]={};
 		requiredVersion = 1.7;
@@ -13,9 +13,9 @@ class CfgPatches {
 };
 
 class cfgFunctions {
-	class TWC_acefixes {
-		class Functions {
-			tag = "twc_acefixes";
+	class twc_acefixes {
+		tag = "twc_acefixes";
+		class init {
 			file = "twc_acefixes\functions";
 
 			class handleParadrop {};
@@ -24,7 +24,7 @@ class cfgFunctions {
 };
 
 class Extended_PostInit_EventHandlers {
-	class TWC_acefixes {
-		serverInit = "[] call twc_acefixes_fnc_handleParadrop;";
+	class twc_acefixes {
+		init = "[] call twc_acefixes_fnc_handleParadrop;";
 	};
 };

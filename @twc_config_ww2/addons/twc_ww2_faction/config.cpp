@@ -13,8 +13,22 @@ class CfgPatches
 			"WW2_British_2IC",
 			"WW2_British_MG",
 			"WW2_British_MGASS",
+			"WW2_British_AT",
+			"WW2_British_AAT",
 			"WW2_British_Vehicle_Commander",
-			"WW2_British_Vehicle_Crewman"
+			"WW2_British_Vehicle_Crewman",
+			
+			"WW2_Para_British_Platoon_Commander",
+			"WW2_Para_British_Platoon_Sergeant",
+			"WW2_Para_British_Medic",
+			"WW2_Para_British_Section_Commander",
+			"WW2_Para_British_Rifleman",
+			"WW2_Para_British_2IC",
+			"WW2_Para_British_MG",
+			"WW2_Para_British_MGASS",
+			"WW2_Para_British_AT",
+			"WW2_Para_British_AAT",
+			"WW2_Para_British_Carrier_SMG"
 		};
 		weapons[]={};
 		requiredVersion=0.1;

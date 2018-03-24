@@ -3,7 +3,8 @@ class CfgPatches {
 		units[]={};
 		weapons[]={};
 		requiredVersion = 1.7;
-		requiredAddons[] = {};
+		requiredAddons[] = {
+			"uk3cb_baf_weapons_smallarms"};
 		author[]={};
 		authorUrl="";
 		version="1";
@@ -12,9 +13,9 @@ class CfgPatches {
 	};
 };
 class cfgWeapons{
-	class UK3CB_BAF_L7A2;
-	class twc_L7A2: UK3CB_BAF_L7A2{
-		displayname = "TWC Edited L7A2";
+	class Rifle_Long_Base_F;
+	class UK3CB_BAF_L7A2: Rifle_Long_Base_F{
+		displayname = "L7A2 GPMG";
 		class WeaponSlotsInfo{
 			class asdg_OpticRail_UK3CB_BAF_L7A2{
 				
