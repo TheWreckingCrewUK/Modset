@@ -33,6 +33,10 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (US Army Modern)";
 	};
+	class US_Men_2000
+	{
+		displayName = "Men (US Army 2000)";
+	};
 };
 class CfgFactionClasses
 {
