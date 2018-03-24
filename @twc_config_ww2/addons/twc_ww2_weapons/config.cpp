@@ -422,6 +422,7 @@ class CfgWeapons {
 
 class CfgVehicles {
 	class fow_b_uk_p37;
+	class fow_b_uk_bergenpack;
 	class fow_b_us_radio;
 	class fow_b_uk_piat_at;
 	class B_LIB_SOV_RA_MedicalBag_Empty;
@@ -628,7 +629,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class TWC_Backpack_WW2_Sergeant:TWC_Backpack_WW2_Base
+	class TWC_Backpack_WW2_Sergeant:fow_b_uk_bergenpack
 	{
 		scope = 1;
 		maximumLoad = 400;

@@ -105,6 +105,7 @@ class CfgFunctions
 		};
 		class looseAmmo {
 			file = "twc_framework\looseAmmo";
+			class addLooseAmmoEH {};
 			class looseTo303 {};
 			class enfieldToBren {};
 			class brenToEnfield {};
