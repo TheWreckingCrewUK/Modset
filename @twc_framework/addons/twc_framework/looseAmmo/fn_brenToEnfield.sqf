@@ -26,5 +26,6 @@ params["_player"];
 	_player addItem "10Rnd_303_Magazine";
 	_player addItem "10Rnd_303_Magazine";
 	_player addItem "10Rnd_303_Magazine";
+	_player addItem "TWC_EmptyBrenMag";
 	
 }, {}, "Converting Ammo..."] call ace_common_fnc_progressBar;

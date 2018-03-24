@@ -511,6 +511,8 @@
 		scope=2;
 		displayName="PIAT Gunner";
 		uniformClass="fow_u_uk_parasmock";
+		editorSubcategory = "Men_WW2_Para";
+		vehicleClass="Men_WW2_Para";
 		backpack = "TWC_Backpack_PIAT";
 		weapons[]=
 		{
@@ -541,6 +543,8 @@
 		scope=2;
 		displayName="Assistant PIAT Gunner";
 		uniformClass="fow_u_uk_parasmock";
+		editorSubcategory = "Men_WW2_Para";
+		vehicleClass="Men_WW2_Para";
 		backpack="TWC_Backpack_PIAT";
 		weapons[]=
 		{

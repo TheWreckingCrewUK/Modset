@@ -61,6 +61,17 @@ class CfgWeapons {
 			mass = 228;
 		};
 	};
+	class TWC_EmptyBrenMag: ACE_ItemCore
+	{
+		scope = 2;
+		displayName = "30Rnd 303 Bren";
+		descriptionShort = "Used in Conjuction with Loose Ammo to Form Bren Mags";
+		picture = "\fow\fow_weapons\bren\data\ui\m_bren_ca.paa";
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass = 6.6;
+		};
+	};
 	class fow_w_bren;
 	class LIB_FLARE_PISTOL;
 	

@@ -17,13 +17,14 @@ params["_player"];
 			if(count _index != 3)exitWith{};
 		};
 	}forEach _mags;
-	if(count _index != 3)exitWith{hint "You need 3 Full Enfield Clips to Convert"};
+	if(count _index != 3)exitWith{hint "You need 3 Full Enfield Clips to Convert and an empty Bren mag"};
 	_index sort false;
 	{
 		_mags deleteAt _x;
 	}forEach _index;
 	
 	_player removeMagazines "10Rnd_303_Magazine";
+	_player removeItem "TWC_EmptyBrenMag";
 	{
 		_player addMagazine [_x select 0,_x select 1];
 	}forEach _mags;

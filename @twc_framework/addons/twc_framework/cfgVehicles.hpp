@@ -833,7 +833,7 @@ class cfgVehicles {
 			};
 			class twc_clipToBren {
                 displayName = "Convert Enfield To Bren";
-                condition = "{_x in [['10Rnd_303_Magazine',10]]} count (magazinesAmmo _player) > 2";
+                condition = "{_x in [['10Rnd_303_Magazine',10]]} count (magazinesAmmo _player) > 2 && 'TWC_EmptyBrenMag' in (items _player)";
                 exceptions[] = {};
                 statement = "_player call twc_fnc_enfieldToBren";
                 icon = "";
