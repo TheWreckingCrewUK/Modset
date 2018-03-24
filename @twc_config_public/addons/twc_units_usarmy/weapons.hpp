@@ -118,6 +118,7 @@ class cfgWeapons
 		displayName = "M16 SDM-R";
 		author="Hobbs";
 		modes[] = {"Single"};
+		dispersion = 0.0001;
 		class LinkedItems
 		{
 			class LinkedItemsOptic
