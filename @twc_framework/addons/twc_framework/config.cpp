@@ -59,7 +59,7 @@ class Extended_InitPost_EventHandlers {
 		};
 		
 		class twc_looseAmmoEH {
-			init= "[(_this select 0)] call twc_fnc_addLooseAmmoEH"
+			init= "[(_this select 0)] call twc_fnc_addLooseAmmoEH";
 		};
 	};
 };
