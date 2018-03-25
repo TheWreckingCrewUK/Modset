@@ -11,7 +11,7 @@ class CfgPatches
 		{
 			"cup_weapons_ammoboxes",
 			"fow_weapons",
-			"fow_weapons_c",
+			"fow_weapons_c"
 			
 		};
 		version="1";
@@ -59,6 +59,17 @@ class CfgWeapons {
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass = 228;
+		};
+	};
+	class TWC_EmptyBrenMag: ACE_ItemCore
+	{
+		scope = 2;
+		displayName = "30Rnd 303 Bren";
+		descriptionShort = "Used in Conjuction with Loose Ammo to Form Bren Mags";
+		picture = "\fow\fow_weapons\bren\data\ui\m_bren_ca.paa";
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass = 6.6;
 		};
 	};
 	class fow_w_bren;
@@ -422,6 +433,7 @@ class CfgWeapons {
 
 class CfgVehicles {
 	class fow_b_uk_p37;
+	class fow_b_uk_bergenpack;
 	class fow_b_us_radio;
 	class fow_b_uk_piat_at;
 	class B_LIB_SOV_RA_MedicalBag_Empty;
@@ -628,7 +640,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class TWC_Backpack_WW2_Sergeant:TWC_Backpack_WW2_Base
+	class TWC_Backpack_WW2_Sergeant:fow_b_uk_bergenpack
 	{
 		scope = 1;
 		maximumLoad = 400;
@@ -713,7 +725,7 @@ class CfgVehicles {
 		scope = 1;
 		class TransportMagazines
 		{
-			Class _XX_PIAT_HEAT
+			class _XX_PIAT_HEAT
 			{
 				magazine = "fow_1Rnd_piat_HEAT";
 				count = 3;
@@ -860,6 +872,14 @@ class CfgVehicles {
 			{
 				magazine="LIB_1Rnd_flare_yellow";
 				count=15;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_303Box
+			{
+				name = "twc_looseAmmoBox_303";
+				count = 3;
 			};
 		};
 		transportAmmo=100000;

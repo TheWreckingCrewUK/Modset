@@ -310,6 +310,7 @@
 	class UK3CB_BAF_B_Bergen_DDPM_Rifleman_B;
 	class UK3CB_BAF_B_Carryall_DDPM;
 	class UK3CB_BAF_B_Kitbag_DDPM;
+	class rhsusf_assault_eagleaiii_ucp;
 
 	class TWC_Backpack_1990_Sectionlead_Desert: UK3CB_BAF_B_Bergen_DDPM_SL_A
 	{
@@ -727,3 +728,68 @@
 			};	
 		};
 	};
+	
+	
+	// 2000's
+	
+	
+		class TWC_Backpack_2000_2IC_Desert: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+            class _xx_Stanag
+			{
+				magazine = "UK3CB_BAF_556_30Rnd";
+				count = 4;
+			};
+			            class _xx_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_30Rnd_T";
+				count = 4;
+			};
+			class _xx_Box_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_200Rnd_T";
+				count = 2;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 2;
+			};	
+			class _xx_40mm
+			{
+				magazine = "1Rnd_HE_Grenade_shell";
+				count = 3;
+			};		
+		};
+	};
+
+		class TWC_Backpack_2000_Minimi_D: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Box_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_200Rnd_T";
+				count = 3;
+			};
+		};
+	};
+
+			class TWC_Backpack_2000_vehicle: rhsusf_assault_eagleaiii_ucp
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+	};
+	
+	

@@ -2,6 +2,7 @@ class cfgWeapons
 {
 	class UK3CB_BAF_L85A2;
 	class UK3CB_BAF_L86A2;
+	class UK3CB_BAF_L85A2_UGL;
 	class UK3CB_BAF_SUSAT_3D;
 	class UK3CB_BAF_L86A1:UK3CB_BAF_L86A2
 	{
@@ -45,6 +46,7 @@ class cfgWeapons
 			};
 		};
 	};
+
 	class UK3CB_BAF_L85A1_SUSAT3D_Lazer:UK3CB_BAF_L85A2
 	{
 		scope = 1;
@@ -105,7 +107,35 @@ class cfgWeapons
 		magazines[] = {"CUP_15Rnd_9x19_M9", "CUP_10Rnd_9x19_Compact"};
 
 	};
+		class UK3CB_BAF_L85A2_SUSAT:UK3CB_BAF_L85A2
+	{
+		scope = 1;
+		displayName = "L85A2";
+		author="Hobbs";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="UK3CB_BAF_SUSAT_3D";
+			};
+		};
+	};
 	
+		class UK3CB_BAF_L85A2_UGL_SUSAT:UK3CB_BAF_L85A2_UGL
+	{
+		scope = 1;
+		displayName = "L85A2/L123UGL";
+		author="Hobbs";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="UK3CB_BAF_SUSAT_3D";
+			};
+		};
+	};
 	
 	class UK3CB_BAF_U_Smock_DPMT;
 	class UK3CB_BAF_U_Smock_DDPM;

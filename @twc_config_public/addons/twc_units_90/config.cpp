@@ -66,6 +66,14 @@ class CfgPatches
 class EventHandlers;
 class CfgEditorSubCategories
 {
+	class Men_2000D
+	{
+		displayName = "Men (2000 Desert)";
+	};
+	class Men_2000W
+	{
+		displayName = "Men (2000 Woodland)";
+	};
 	class Men_1990D
 	{
 		displayName = "Men (1990 Desert)";
@@ -104,6 +112,7 @@ class CfgVehicles
 	class B_Soldier_base_F;
 	
 	#include "1990.hpp"
+	#include "2000.hpp"
 	
 	#include "backpacks.hpp"
 };

@@ -833,9 +833,16 @@ class cfgVehicles {
 			};
 			class twc_clipToBren {
                 displayName = "Convert Enfield To Bren";
-                condition = "{_x == '10Rnd_303_Magazine'} count (magazines player) > 2";
+                condition = "{_x in [['10Rnd_303_Magazine',10]]} count (magazinesAmmo _player) > 2 && 'TWC_EmptyBrenMag' in (items _player)";
                 exceptions[] = {};
                 statement = "_player call twc_fnc_enfieldToBren";
+                icon = "";
+			};
+			class twc_brenToClip {
+                displayName = "Convert Bren To Enfield";
+                condition = "['fow_30Rnd_303_bren',30] in (magazinesAmmo _player)";
+                exceptions[] = {};
+                statement = "_player call twc_fnc_brenToEnfield";
                 icon = "";
 			};
 		};

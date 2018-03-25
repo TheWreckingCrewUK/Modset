@@ -20,7 +20,8 @@ class CfgPatches {
 
 		requiredAddons[] = {
 			"cba_ai",
-			"A3_Modules_F"
+			"A3_Modules_F",
+			"ace_magazinerepack"
 		};
 
 		author[]={};
@@ -55,6 +56,10 @@ class Extended_InitPost_EventHandlers {
 		
 		class twc_functionInit {
 			init = "[(_this select 0)] call twc_fnc_init;";
+		};
+		
+		class twc_looseAmmoEH {
+			init= "[(_this select 0)] call twc_fnc_addLooseAmmoEH";
 		};
 	};
 };
