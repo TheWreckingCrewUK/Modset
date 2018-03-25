@@ -26,6 +26,7 @@ class CfgFunctions {
 			// Uncon Loop
 			class extendedUnconLoop {};
 			class handleUncon {};
+			class handleAIUncon {};
 
 			// CPR
 			class action {};
