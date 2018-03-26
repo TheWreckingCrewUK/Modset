@@ -32,12 +32,12 @@ class CfgAISkill {
 	aimingAccuracy[] = {0,0, 1, 0.7};
 	aimingShake[]    = {0,0, 0.8, 0.4};
 	aimingSpeed[]    = {0,0, 1, 0.8};
-	commanding[]     = {0,0, 1, 0.5};
-	courage[]        = {0,0, 3, 1};
+	commanding[]     = {0,0.1, 1, 0.6};
+	courage[]        = {0,0.5, 1, 1};
 	//endurance[]      = {0,0, 1, 0.7};
 	general[]        = {0,0, 1, 0.9};
 	// apparently breaks rapid firing in single fire mode for players
 	//reloadSpeed[]    = {0,0, 1,0.8};
-	spotDistance[]   = {0,0,10, 5};
-	spotTime[]       = {0,0, 1, 0.8};
+	spotDistance[]   = {0,0.5,1, 2};
+	spotTime[]       = {0,0.5, 1, 1};
 };
