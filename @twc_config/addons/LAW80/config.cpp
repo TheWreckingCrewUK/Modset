@@ -48,8 +48,8 @@ class CfgWeapons
 
 		ACE_UsedTube = "LAW80_used";
 		ace_overpressure_angle = 45;
-		ace_overpressure_range = 100;
-		ace_overpressure_damage = 0.7;
+		ace_overpressure_range = 20;
+		ace_overpressure_damage = 0.5;
 		
 		class GunParticles {
 			class effect1 {
