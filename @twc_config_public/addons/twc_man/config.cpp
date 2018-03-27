@@ -35,6 +35,6 @@ class CfgAISkill {
 	commanding[]     = {0, 0.1,   1, 0.6};
 	courage[]        = {0, 0.5,   1,   1};
 	general[]        = {0,   0,   1, 0.9};
-	spotDistance[]   = {0,   0,   1,   1};
+	spotDistance[]   = {0,   1,   1,   1};
 	spotTime[]       = {0, 0.5,   1,   1};
 };
