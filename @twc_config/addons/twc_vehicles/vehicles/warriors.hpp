@@ -19,6 +19,15 @@ class TWC_BaseClass_Warrior_F: TWC_BaseClass_Warrior {
 		class HideProxy_Desert;
 		class HideProxy_Woodland;
 	};
+
+	camShakeCoef = 0;
+
+	class CamShake {
+		power = 4;
+		minSpeed = 5;
+		frequency = 20;
+		distance = 30;
+	};
 };
 
 class TWC_Vehicle_FV510_D_SLAT: TWC_BaseClass_Warrior_F {
