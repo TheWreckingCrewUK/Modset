@@ -5,7 +5,8 @@ class CfgPatches {
 		requiredVersion = 1.7;
 
 		requiredAddons[] = {
-			"uk3cb_baf_weapons_smallarms"
+			"uk3cb_baf_weapons_smallarms",
+			"UK3CB_BAF_Vehicles_LoadOrder"
 		};
 
 		author[]={};
@@ -24,6 +25,13 @@ class CfgWeapons {
 		class WeaponSlotsInfo {
 			class asdg_OpticRail_UK3CB_BAF_L7A2 { };
 		};
+	};
+
+	class missiles_titan;
+	class UK3CB_BAF_Milan_Launcher: missiles_titan {
+		ace_overpressure_angle = 90;
+		ace_overpressure_range = 40;
+		ace_overpressure_damage = 0.7;
 	};
 };
 
