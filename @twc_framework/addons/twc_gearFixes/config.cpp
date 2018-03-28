@@ -6,7 +6,7 @@ class CfgPatches {
 
 		requiredAddons[] = {
 			"uk3cb_baf_weapons_smallarms",
-			"UK3CB_BAF_Vehicles_LoadOrder"
+			"UK3CB_BAF_Vehicles"
 		};
 
 		author[]={};
