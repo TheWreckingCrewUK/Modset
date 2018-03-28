@@ -5,6 +5,13 @@
 
 if (!isServer) exitWith {};
 
+if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
+	BloodLust_VaporizationDamageThresholdMP = 1;
+	BloodLust_ExplosionDamageThresholdMP = 0.2;
+	BloodLust_IsVaporizationEnabledMP = true;
+	BloodLust_IsVaporizationGibsEnabledMP = true;
+};
+
 ["TWC_UnitVaporized", {
 	params ["_unit"];
 

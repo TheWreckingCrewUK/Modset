@@ -134,3 +134,11 @@ class TWC_Item_30mm_3rd_APDS: ACE_ItemCore {
 		mass = 30;
 	};
 };
+
+// Challenger 2 Gun (for ACE)
+class cannon_125mm;
+class CHAL_125_MAINGUN: cannon_125mm {
+	ace_overpressure_angle = 90;
+	ace_overpressure_range = 60;
+	ace_overpressure_damage = 0.8;
+};

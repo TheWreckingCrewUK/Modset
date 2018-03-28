@@ -45,16 +45,20 @@ class CfgWeapons
 		AGM_Backblast_Angle = 45;
 		AGM_Backblast_Range = 100;
 		AGM_Backblast_Damage = 0.7;
+
 		ACE_UsedTube = "LAW80_used";
-		class GunParticles
-		{
-			class effect1
-			{
+		ace_overpressure_angle = 45;
+		ace_overpressure_range = 20;
+		ace_overpressure_damage = 0.5;
+		
+		class GunParticles {
+			class effect1 {
 				positionName = "konec hlavne";
 				directionName = "usti hlavne";
 				effectName = "RocketBackEffectsRPGNT";
 			};
 		};
+
 		sounds[] = {"StandardSound"};
 		class BaseSoundModeType
 		{

@@ -19,6 +19,15 @@ class TWC_BaseClass_Warrior_F: TWC_BaseClass_Warrior {
 		class HideProxy_Desert;
 		class HideProxy_Woodland;
 	};
+
+	camShakeCoef = 0;
+
+	class CamShake {
+		power = 4;
+		minSpeed = 5;
+		frequency = 20;
+		distance = 30;
+	};
 };
 
 class TWC_Vehicle_FV510_D_SLAT: TWC_BaseClass_Warrior_F {
@@ -113,15 +122,15 @@ class TWC_Vehicle_FV510_D_SLAT: TWC_BaseClass_Warrior_F {
 
 	class AnimationSources: AnimationSources {
 		class recoil_source: recoil_source {
-			weapon = "TWC_Weapon_30mm_3rd_Rarden";
+			weapon = "TWC_Weapon_30mm_Rarden_Vehicle";
 		};
 
 		class muzzle_rot_ctws: muzzle_rot_ctws {
-			weapon = "TWC_Weapon_30mm_3rd_Rarden";
+			weapon = "TWC_Weapon_30mm_Rarden_Vehicle";
 		};
 
 		class muzzle_hide_ctws: muzzle_hide_ctws {
-			weapon = "TWC_Weapon_30mm_3rd_Rarden";
+			weapon = "TWC_Weapon_30mm_Rarden_Vehicle";
 		};
 
 		class muzzle_rot_coax: muzzle_rot_coax {

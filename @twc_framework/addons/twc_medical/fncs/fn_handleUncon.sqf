@@ -7,5 +7,10 @@ if (!local _unit) exitWith {};
 
 if (_isUncon) then {
 	_unconTimer = ceil(random 5) + 1;
-	[twc_medical_fnc_extendedUnconLoop, [_unit], _unconTimer] call CBA_fnc_waitAndExecute;
+	
+	if (isPlayer _unit) then {
+		[twc_medical_fnc_extendedUnconLoop, [_unit], _unconTimer] call CBA_fnc_waitAndExecute;
+	} else {
+		[twc_medical_fnc_handleAIUncon, [_unit], _unconTimer] call CBA_fnc_waitAndExecute;
+	};
 };
