@@ -576,4 +576,15 @@ class CFgMarkers
 		color[] = {1,1,1,1};
 		markerClass = "Flags";
 	};
+	class twc_unsc_flag: Flag
+	{
+		name = "United Nations Space Command";
+		icon = "twc_opfor_Misc\data\unsc.paa";
+		texture = "twc_opfor_Misc\data\unsc.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";		
+	};
 };
