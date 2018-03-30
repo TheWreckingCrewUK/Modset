@@ -1191,6 +1191,7 @@
 		scope=2;
 		displayName="Medic (00's US Army)";
 		backpack="TWC_Backpack_2000_US_Army_Medic";
+		attendant = 1;
 		linkedItems[]=
 		{
 			"rhsusf_iotv_ucp_Medic",
