@@ -9,7 +9,7 @@ if (_unCon) then {
 	_timeToAdd = _reviveStartTime;
 
 	if (_reviveStartTime > 0) then {
-		_timeToAdd = (_reviveStartTime + 20) + (30 * _bloodVolume);
+		_timeToAdd = (_reviveStartTime + 10) + (20 * _bloodVolume);
 
 		if ((CBA_missionTime -_timeToAdd - _maxTime) <= 0) then {
 			_timeToAdd = (_reviveStartTime + 18); // severly reduce effectiveness when stacked over max cap of life

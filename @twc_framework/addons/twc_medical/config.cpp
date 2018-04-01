@@ -85,6 +85,23 @@ class CfgVehicles {
 	};
 };
 
+class CfgWeapons {
+	class ItemCore;
+	class CBA_MiscItem_ItemInfo;
+	class ACE_ItemCore;
+	class TWC_Item_Medical_AirwayClearer: ACE_ItemCore {
+		scope = 2;
+		displayName = "Airways Clearer";
+		descriptionShort = "Get a load of this";
+		picture = "\twc_medical\UI\airwayclearer.paa";
+		icon = "iconObject_circle";
+
+		class ItemInfo: CBA_MiscItem_ItemInfo {
+			mass = 1;
+		};
+	};
+};
+
 class ACE_Medical_Actions {
 	class Advanced {
 		class fieldDressing;
