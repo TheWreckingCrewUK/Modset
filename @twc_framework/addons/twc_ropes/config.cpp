@@ -37,7 +37,6 @@ class CfgFunctions {
 			class pickUpRopes {};
 			class releaseCargo {};
 			class retractRopes {};
-			class ropeSetMass {};
 			class setMass {};
 			class shortenRopes {};
 		};

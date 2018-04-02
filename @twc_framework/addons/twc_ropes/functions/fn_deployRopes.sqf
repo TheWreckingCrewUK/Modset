@@ -6,7 +6,7 @@ if (_heli isKindOf "Helicopter") then {
 	if (!_cargoRopesDeployed) then {
 		_heli setVariable ["twc_rope_cargo_ropes_deployed", true, true];
 
-		_cargoRopes = _heli getVariable ["twc_rope_cargo_ropes",[]];
+		_cargoRopes = _heli getVariable ["twc_rope_cargo_ropes", []];
 		{ ropeDestroy _x } forEach _cargoRopes;
 
 		_cargoRopes = _cargoRopes + [ropeCreate [_heli, "slingload0", 0]]; 
@@ -15,7 +15,7 @@ if (_heli isKindOf "Helicopter") then {
 		_cargoRopes = _cargoRopes + [ropeCreate [_heli, "slingload0", 0]]; 
 		{ ropeUnwind [_x, 5, _length]; } forEach _cargoRopes;
 
-		_lastRope = (_cargoRopes select (count _cargoRopes) - 1)));
+		_lastRope = (_cargoRopes select ((count _cargoRopes) - 1));
 		_lastRope setVariable ["twc_rope_end", true, true];
 
 		_heli setVariable ["twc_rope_cargo_ropes", _cargoRopes, true];

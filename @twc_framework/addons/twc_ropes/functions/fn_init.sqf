@@ -5,8 +5,9 @@ if(!isDedicated) then {
 
 		while {true} do {
 			_nearCargoHelis = call twc_ropes_fnc_findNearbyCargoHeli;
+			
 			{
-				if!( _x in _cargoHelisWithActions ) then {
+				if !(_x in _cargoHelisWithActions) then {
 					_action = player addAction ["Pick Up Cargo Ropes", { 
 						[[_this select 3, player],"twc_ropes_fnc_pickUpRopes",_this select 3,false,true] spawn BIS_fnc_MP
 					}, _x, 0, false, true, "", "call twc_ropes_fnc_canPickupRope"];

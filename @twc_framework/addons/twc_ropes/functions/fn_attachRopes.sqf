@@ -1,4 +1,4 @@
-params ["_target", "_player"];
+params ["_heli", "_player", "_target"];
 
 _ropes = _heli getVariable ["twc_rope_cargo_ropes", [objNull, objNull, objNull, objNull]];
 
