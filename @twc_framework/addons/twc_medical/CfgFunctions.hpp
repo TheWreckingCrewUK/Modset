@@ -10,6 +10,7 @@ class CfgFunctions {
 			class extendedVitalLoop {};
 			class logToRPT {};
 			class moduleMedical {};
+			class fullyBandageUnit {};
 			
 			// Uncon Loop
 			class extendedUnconLoop {};

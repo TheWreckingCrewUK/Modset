@@ -16,7 +16,7 @@ if (_unCon) then {
 	} else {
 		if (_diceRoll == 9) then {
 			// rolled nat 10, get healed'
-			[_unit, _unit] call ace_medical_fnc_treatmentAdvanced_fullHeal;
+			[_unit] call twc_medical_fnc_fullyBandageUnit;
 		};
 	};
 
