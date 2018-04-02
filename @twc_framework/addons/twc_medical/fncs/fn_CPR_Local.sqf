@@ -27,7 +27,7 @@ _bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodVolume;
 _probability = _probability - (10 - (10 * _bloodLoss));
 
 _isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
-if (_isPublic) { _probability = _probability + 5; };
+if (_isPublic) then { _probability = _probability + 5; };
 
 _diceRoll = floor(random 110);
 
