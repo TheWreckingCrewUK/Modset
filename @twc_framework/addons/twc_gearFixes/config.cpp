@@ -26,6 +26,8 @@ class CfgWeapons {
 			class asdg_OpticRail_UK3CB_BAF_L7A2 { };
 		};
 	};
+	
+	class twc_L7A2: UK3CB_BAF_L7A2 {};
 
 	class missiles_titan;
 	class UK3CB_BAF_Milan_Launcher: missiles_titan {
