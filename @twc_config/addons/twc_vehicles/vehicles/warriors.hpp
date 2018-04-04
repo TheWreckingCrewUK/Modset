@@ -23,10 +23,10 @@ class TWC_BaseClass_Warrior_F: TWC_BaseClass_Warrior {
 	camShakeCoef = 0;
 
 	class CamShake {
-		power = 4;
-		minSpeed = 5;
-		frequency = 20;
-		distance = 30;
+		power = 2;
+		minSpeed = 2;
+		frequency = 15;
+		distance = 20;
 	};
 };
 

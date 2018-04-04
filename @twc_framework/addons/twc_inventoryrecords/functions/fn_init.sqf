@@ -1,0 +1,2 @@
+if !(isPlayer player) exitWith {};
+
