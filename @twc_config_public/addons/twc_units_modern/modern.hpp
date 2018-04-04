@@ -1,5 +1,16 @@
 /*attempt at affecting the hmg gunner zoom into longer range. currently throws a rotational speed error.
-class UK3CB_BAF_LandRover_Base;
+*/
+
+class UK3CB_BAF_LandRover_Base
+{
+	class Turrets
+	{
+		class MainTurret
+		{
+			class ViewOptics;
+		};
+	};
+};
 class UK3CB_BAF_LandRover_WMIK_Base: UK3CB_BAF_LandRover_Base
 {
 	class Turrets
@@ -7,9 +18,9 @@ class UK3CB_BAF_LandRover_WMIK_Base: UK3CB_BAF_LandRover_Base
 		class MainTurret
 		{
 			class ViewOptics;
-		}
-	}
+		};
 	};
+};
 
 class UK3CB_BAF_LandRover_WMIK_HMG_Base: UK3CB_BAF_LandRover_WMIK_Base
 {
@@ -17,14 +28,14 @@ class UK3CB_BAF_LandRover_WMIK_HMG_Base: UK3CB_BAF_LandRover_WMIK_Base
 	class Turrets: Turrets {
 		class HMG_Turret: MainTurret {
 			class ViewGunner: ViewOptics {
-initFov = 0.95;
-maxFov = 2.25;
-minFov = 0.15;
-}
-		}
-	}
+				initFov = 0.95;
+				maxFov = 2.25;
+				minFov = 0.15;
+			};
+		};
+	};
 };
-*/
+
 
 	class Modern_British_Base: B_Soldier_base_F
 	{
