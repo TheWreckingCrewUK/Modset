@@ -8,6 +8,7 @@
 	class UK3CB_BAF_B_Bergen_MTP_JTAC_L_A;
 	
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
+	class B_AssaultPack_blk;
 	
 	class TWC_Backpack_Modern_Sectionlead: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 	{
@@ -45,6 +46,21 @@
 			};
 		};
 	};
+	
+	class TWC_Backpack_Modern_VehicleCommander: B_AssaultPack_blk {
+		scope = 1;
+		mass = 59.84;
+		
+		class TransportItems {
+			class _xx_PRC_117F {
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		
+		class TransportMagazines {};
+	};
+	
 	class TWC_Backpack_Modern_Rifleman: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
 		scope = 1;

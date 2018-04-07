@@ -1136,7 +1136,7 @@
 		vehicleClass="Men_Modern_Mounted";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		backpack="B_AssaultPack_blk";
+		backpack="TWC_Backpack_Modern_VehicleCommander";
 		linkedItems[]=
 		{	
 			"UK3CB_BAF_H_CrewHelmet_ESS_A",
