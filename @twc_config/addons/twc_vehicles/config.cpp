@@ -162,6 +162,10 @@ class Extended_PostInit_EventHandlers {
 	}; */
 };
 
+class CfgAmmo {
+	#include "CfgAmmo.hpp"
+};
+
 class CfgMagazines {
 	#include "CfgMagazines.hpp"
 };
