@@ -14,16 +14,20 @@
 * Public: No
 */
 params ["_message"];
-if(isNil "twc_JIP_CommandMessage")then{
+
+if (_message == "") exitWith {};
+
+if (isNil "twc_JIP_CommandMessage") then {
 	twc_JIP_CommandMessage = [];
 };
+
 _rankArray = [];
 {
 	_rankArray pushback (rank _x);
-}forEach allPlayers;
+} forEach allPlayers;
 
 _rank = "";
-_rank = call{
+_rank = call {
 	_rank = if ("COLONEL" in _rankArray)exitWith{["COLONEL","MAJOR"]};
 	_rank = if ("MAJOR" in _rankArray)exitWith{["MAJOR","CAPTAIN"]};
 	_rank = if ("CAPTAIN" in _rankArray)exitWith{["CAPTAIN","LIEUTENANT"]};
@@ -33,12 +37,13 @@ _rank = call{
 	_rank = if ("PRIVATE" in _rankArray)exitWith{["PRIVATE"]};
 	_rank
 };
+
 {
-	if(rank _x in _rank)then{
-		_message remoteExecCall ["hint",_x];
-		_x createDiaryRecord ["Diary",["Intel",_message]];
+	if (rank _x in _rank) then {
+		_message remoteExecCall ["hint", _x];
+		_x createDiaryRecord ["Diary", ["Intel", _message]];
 	};
-}forEach allPlayers;
+} forEach allPlayers;
 
 twc_JIP_CommandMessage pushback [_rank,_message];
 publicVariable "twc_JIP_CommandMessage";

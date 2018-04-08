@@ -15,16 +15,20 @@
 * Public: no
 */
 
-Params ["_taskname","_state"];
+Params ["_taskname", "_state", ["_message", nil]];
 
-[_taskname,_state,false] call BIS_fnc_taskSetState;
+[_taskname, _state, false] call BIS_fnc_taskSetState;
 
-format["%1 has %2",_taskname, _state] call twc_fnc_commandMessage;
+if (isNil "_message") then {
+	format["%1 has %2", _taskname, _state] call twc_fnc_commandMessage;
+} else {
+	format["%1", _message] call twc_fnc_commandMessage;
+};
 
-if(isNil "completedTasks") then{
+if (isNil "completedTasks") then {
 	completedTasks = [[_taskname, _state]];
 	publicVariable "completedTasks";
-}else{
+} else {
 	completedTasks = completedTasks + [[_taskname, _state]];
 	publicVariable "completedTasks";
 };
