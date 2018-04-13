@@ -12,6 +12,31 @@
 		};
 	};
 	
+	class TWC_Backpack_Cold_War_FAC: B_AssaultPack_blk {
+		scope = 1;
+
+		class TransportItems {
+			class _xx_PRC_77 {
+				name = "ACRE_PRC77";
+				count = 1;
+			};
+
+			class _xx_LaserBatteries {
+				name = "Laserbatteries";
+				count = 1;
+			};
+		};
+
+		class TransportMagazines {
+			maga_nc(SmokeShell, 5);
+			maga_nc(SmokeShellGreen, 5);
+			maga_nc(SmokeShellBlue, 5);
+			maga_nc(SmokeShellOrange, 5);
+			maga_nc(SmokeShellRed, 5);
+			maga_nc(SmokeShellPurple, 5);
+		};
+	};
+	
 	class TWC_Backpack_Cold_War_Rifleman: CUP_B_AlicePack_Khaki {
 		scope = 1;
 		class TransportMagazines {

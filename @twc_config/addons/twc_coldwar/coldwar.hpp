@@ -586,11 +586,29 @@
 			"SmokeShell"
 		};
 	};
+
 	class ColdWar_FAC: ColdWar_Section_Leader
 	{
-		displayName="Platoon FAC";
-		backpack="TWC_Backpack_Cold_War_FAC";
+		displayName = "Platoon FAC";
+		backpack = "TWC_Backpack_Cold_War_FAC";
+		
+		weapons[] = {
+			"Throw",
+			"Put",
+			"Binocular",
+			"UK3CB_BAF_L1A1_Wood",
+			"UK3CB_BAF_Soflam_Laserdesignator"
+		};
+		
+		respawnWeapons[] = {
+			"Throw",
+			"Put",
+			"Binocular",
+			"UK3CB_BAF_L1A1_Wood",
+			"UK3CB_BAF_Soflam_Laserdesignator"
+		};
 	};
+
 	class ColdWar_HeliPilot: ColdWar_Base
 	{
 		scope=2;
