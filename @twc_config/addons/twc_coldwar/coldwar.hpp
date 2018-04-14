@@ -1480,7 +1480,6 @@
 		editorSubcategory = "Men_ColdWar_Airborne";
 		linkedItems[]=
 		{
-			"Binocular",
 			"ukcw_1958_webbing",
 			"ukcw_helmet_para",
 			"ItemMap",
@@ -1491,7 +1490,6 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"Binocular",
 			"ukcw_1958_webbing",
 			"ukcw_helmet_para",
 			"ItemMap",
