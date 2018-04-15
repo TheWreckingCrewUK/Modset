@@ -16,7 +16,8 @@ class CfgPatches {
 			"A3_Anims_F_Config_Sdr",
 			"A3_Air_F_Beta",
 			"CBA_XEH_A3",
-			"ace_common"
+			"ace_common",
+			"ace_interaction"
 		};
 	};
 };
