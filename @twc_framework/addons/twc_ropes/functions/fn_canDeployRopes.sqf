@@ -1,5 +1,12 @@
 params ["_heli", "_player"];
 
-// TODO: might want to expand this in the future, to include a blacklist system
-// can either be set via variable on the object, or config (for public/op compat)
-// should prevent things like ropes from the gazelle
+// check config entry first and foremost
+private _vehicleCfg = configFile >> "CfgVehicles" >> typeOf (_heli);
+private _isCfgBanned = isNumber (_vehicleCfg >> "TWC_CantDeployRopes") && {(getNumber (_vehicleCfg >> "TWC_CantDeployRopes")) == 1};
+
+if (_isCfgBanned) then {
+	false;
+} else {
+	// isn't config banned, perhaps we're on public though, return obj variable status
+	_heli getVariable ["TWC_CantDeployRopes", false];
+}
