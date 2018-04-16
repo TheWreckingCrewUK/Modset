@@ -50,6 +50,7 @@ if (_isEven) then {
 	
 	// actual jump
 	detach _caller;
+	_caller allowDamage false;
 	sleep 1; // a second of freefall for the chute
 	
 	_pos2 = getPosASL _caller;
@@ -64,16 +65,15 @@ if (_isEven) then {
 	_chute setVelocity _vel;
 	
 	_caller setVelocity _vel;
-	_caller allowDamage true;
-	_chute allowDamage true;
 	
 	// wait until parachute is open, not necessary atm
-	//waitUntil {animationState _caller == "chute_pos"};
+	/* waitUntil {animationState _caller == "chute_pos"};
+	_caller allowDamage true; */
 
 	// touch down!
 	waitUntil {(getPosVisual _caller select 2) < 0.3};
-	_chute allowDamage false;
-	_caller allowDamage false;
+	/* _chute allowDamage false; */
+	_caller allowDamage true;
 
 	if (_hadBackpack) then {
 		/* re-add equipment */
@@ -96,9 +96,10 @@ if (_isEven) then {
 	
 	waitUntil {isTouchingGround _caller};
 	deletevehicle _chute;
-	_caller allowDamage true;
-	_caller switchMove "AmovPercMevaSrasWrflDf_AmovPknlMstpSrasWrflDnon";
+
+	[_caller] call ace_common_fnc_goKneeling;
 	[] call twc_parachute_fnc_LandingSound;
+
 	_ParachuteLanded = createVehicle ["T10_Landed", [0, 0, -100], [], 0, "CAN_COLLIDE"];
 	_ParachuteLanded setDir (getDir _caller);
 	_ParachuteLanded setPos (_caller modelToWorld [0, -7, 0]);
