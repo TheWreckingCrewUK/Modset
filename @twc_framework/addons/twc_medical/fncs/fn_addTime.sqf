@@ -12,7 +12,7 @@ if (_unCon) then {
 		_timeToAdd = (_reviveStartTime + 15) + (20 * _bloodVolume);
 
 		if ((CBA_missionTime -_timeToAdd - _maxTime) <= 0) then {
-			_timeToAdd = (_reviveStartTime + 15); // severly reduce effectiveness when stacked over max cap of life
+			_timeToAdd = (_reviveStartTime + 20); // severly reduce effectiveness when stacked over max cap of life
 		};
 
 		_target setVariable ["ace_medical_reviveStartTime", _timeToAdd min CBA_missionTime, true];
