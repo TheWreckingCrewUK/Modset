@@ -571,6 +571,73 @@
 		};
 	};
 	
+			class twc_ana_interpreter: twc_ana_base
+	{
+		_generalMacro="ana_interpreter";
+		scope=2;
+		displayName="Interpreter (ANA)";
+		backpack="";
+		linkedItems[]=
+		{
+        "rhsusf_ach_helmet_M81",
+		"ItemMap",
+		"ItemCompass"
+		};
+		respawnLinkedItems[]=
+		{
+        "rhsusf_ach_helmet_M81",
+		"ItemMap",
+		"ItemCompass"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put"
+		};
+		magazines[]=
+		{
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"SmokeShell"
+		};
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACRE_PRC148",
+		"ACRE_PRC152",
+		"ACE_EarPlugs",
+		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine"
+		};
+		respawnItems[]=
+		{
+		"ACE_fieldDressing",
+		"ACRE_PRC148",
+		"ACRE_PRC152",
+		"ACE_EarPlugs",
+		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine"
+		};
+	};
+
+	
 			class twc_ana_commander: twc_ana_base
 	{
 		_generalMacro="ana_squadleader";
