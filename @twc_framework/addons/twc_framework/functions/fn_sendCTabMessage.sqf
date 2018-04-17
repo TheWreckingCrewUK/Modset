@@ -26,7 +26,7 @@ if (_hour < 10) then {_hour = format ["0%1", _hour];};
 if (_min < 10) then {_min = format ["0%1", _min];};
 
 _time = format ["%1:%2", _hour, _min];
-_msgTitle = format ["%1 - %2:%3 (%4)", _time, groupId group _sender, [_sender] call CBA_fnc_getGroupIndex, name _sender];
+_msgTitle = format ["%1 - %2:%3 (%4)", _time, groupId (group _sender), [_sender] call CBA_fnc_getGroupIndex, name _sender];
 _playerEncryptionKey = missionNamespace getVariable [format ["cTab_encryptionKey_%1", side _sender], ""];
 
 ["cTab_msg_receive", [_recipient, _msgTitle, _message, _playerEncryptionKey, _sender]] call CBA_fnc_whereLocalEvent;
