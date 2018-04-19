@@ -1364,7 +1364,7 @@
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		attendant = 1;
-		backpack="TWC_Backpack_2000_quartermaster_desert";
+		backpack="TWC_Backpack_1990_quartermaster_desert";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_DDPM2",
