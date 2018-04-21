@@ -1356,6 +1356,9 @@ class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert_COIN: TWC_BaseClass_LR_WMIK_HM
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
+		
+		ADD_MAGA(UK3CB_BAF_127_100Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, 6);
 	};
 	
 	class TransportWeapons { };
@@ -1408,6 +1411,9 @@ class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert: TWC_Vehicle_Modern_LandRoverW
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
+		
+		ADD_MAGA(UK3CB_BAF_127_100Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, 6);
 	};
 };
 
@@ -1454,6 +1460,9 @@ class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland_COIN: TWC_BaseClass_LR_WMIK_
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
+		
+		ADD_MAGA(UK3CB_BAF_127_100Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, 6);
 	};
 	
 	class TransportWeapons { };
@@ -1506,5 +1515,8 @@ class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland: TWC_Vehicle_Modern_LandRove
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
+		
+		ADD_MAGA(UK3CB_BAF_127_100Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, 6);
 	};
 };

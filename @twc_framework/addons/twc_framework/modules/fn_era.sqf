@@ -18,13 +18,23 @@ params["_era"];
 switch (_era) do {
 	case "1990": {
 		["TWC_Millenial", [
-		"\twc_faction\ranks\private.paa",
-		"\twc_faction\ranks\lance_corporal.paa",
-		"\twc_faction\ranks\corporal.paa",
-		"\twc_faction\ranks\sergeant.paa",
-		"\twc_faction\ranks\staff_sergeant.paa",
-		"\twc_faction\ranks\second_lieutenant.paa",
-		"\twc_faction\ranks\major.paa"
+			"\twc_faction\ranks\private.paa",
+			"\twc_faction\ranks\lance_corporal.paa",
+			"\twc_faction\ranks\corporal.paa",
+			"\twc_faction\ranks\sergeant.paa",
+			"\twc_faction\ranks\staff_sergeant.paa",
+			"\twc_faction\ranks\second_lieutenant.paa",
+			"\twc_faction\ranks\major.paa"
+		]] call ace_nametags_fnc_setFactionRankIcons;
+		
+		["TWC_Millennial", [
+			"\twc_faction\ranks\private.paa",
+			"\twc_faction\ranks\lance_corporal.paa",
+			"\twc_faction\ranks\corporal.paa",
+			"\twc_faction\ranks\sergeant.paa",
+			"\twc_faction\ranks\staff_sergeant.paa",
+			"\twc_faction\ranks\second_lieutenant.paa",
+			"\twc_faction\ranks\major.paa"
 		]] call ace_nametags_fnc_setFactionRankIcons;
 		cTab_vehicleClass_has_FBCB2 = [];
 		
@@ -39,7 +49,7 @@ switch (_era) do {
 		"\twc_faction\ranks\staff_sergeant.paa",
 		"\twc_faction\ranks\second_lieutenant.paa",
 		"\twc_faction\ranks\major.paa"
-		]] call ace_nametags_fnc_setFactionRankIcons;	
+		]] call ace_nametags_fnc_setFactionRankIcons;
 		cTab_vehicleClass_has_FBCB2 = [];
 		cTab_vehicleClass_has_TAD = [];
 		
