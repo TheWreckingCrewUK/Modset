@@ -1,5 +1,7 @@
 params ["_heli"];
 
+if (!isServer) exitWith {};
+
 if( _heli isKindOf "Helicopter" ) then {
 	_cargoRopesDeployed = _heli getVariable ["twc_rope_cargo_ropes_deployed", false];
 	
@@ -20,6 +22,6 @@ if( _heli isKindOf "Helicopter" ) then {
 				_heli setVariable ["twc_rope_cargo_ropes_deployed", false, true];
 				_heli setVariable ["twc_rope_cargo_ropes", [], true];
 			};
-		} forEach (_heli getVariable ["twc_rope_cargo_ropes",[]]);
+		} forEach (_heli getVariable ["twc_rope_cargo_ropes", []]);
 	};
 };

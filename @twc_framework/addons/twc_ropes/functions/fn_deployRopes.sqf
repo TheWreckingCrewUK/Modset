@@ -1,5 +1,7 @@
 params ["_heli", "_length"];
 
+if (!isServer) exitWith {};
+
 if (_heli isKindOf "Helicopter") then {
 	_cargoRopesDeployed = _heli getVariable ["twc_rope_cargo_ropes_deployed", false];
 
