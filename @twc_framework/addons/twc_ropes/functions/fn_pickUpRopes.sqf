@@ -1,6 +1,6 @@
 params ["_heli", "_player"];
 
-if (local vehicle) then {
+if (local _heli) then {
 	{
 		_attachedObj = _x;
 		{

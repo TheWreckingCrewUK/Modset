@@ -1,6 +1,6 @@
 params ["_heli", "_length"];
 
-if (local vehicle) then {
+if (local _heli) then {
 	if (_heli isKindOf "Helicopter") then {
 		_cargoRopesDeployed = _heli getVariable ["twc_rope_cargo_ropes_deployed", false];
 
