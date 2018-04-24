@@ -1,4 +1,45 @@
 	class O_G_Survivor_F;
+	class CUP_O_TK_INS_Commander;
+		class CUP_O_TK_INS_Commander_twc: CUP_O_TK_INS_Commander
+	{
+		scope=2;
+		displayName="Warlord (Gold)";
+
+				weapons[]=
+		{
+		"CUP_arifle_AKS_Gold",
+		"Throw",
+		"Put"
+		};
+		respawnweapons[]=
+		{
+		"CUP_arifle_AKS_Gold",
+		"Throw",
+		"Put"
+		};
+		magazines[]=
+		{
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"handgrenade"
+		};
+		Respawnmagazines[]=
+		{
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"handgrenade"
+		};
+
+	};
+
 	
 	
 	class Tak_twc_ins_Men_Base: O_G_Survivor_F
