@@ -579,12 +579,14 @@
 		backpack="";
 		linkedItems[]=
 		{
+        "rhsusf_iotv_ucp",
         "rhsusf_ach_helmet_M81",
 		"ItemMap",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
+        "rhsusf_iotv_ucp",
         "rhsusf_ach_helmet_M81",
 		"ItemMap",
 		"ItemCompass"

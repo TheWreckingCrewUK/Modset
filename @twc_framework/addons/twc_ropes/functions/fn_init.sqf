@@ -8,7 +8,7 @@ if(!isDedicated) then {
 			
 			{
 				if !(_x in _cargoHelisWithActions) then {
-					_action = player addAction ["Pick Up Cargo Ropes", { 
+					_action = player addAction ["Pick Up Cargo Ropes", {
 						[[_this select 3, player],"twc_ropes_fnc_pickUpRopes",_this select 3,false,true] spawn BIS_fnc_MP
 					}, _x, 0, false, true, "", "call twc_ropes_fnc_canPickupRope"];
 					_x setVariable ["TWC_Rope_Pickup_Action", _action];
@@ -26,6 +26,7 @@ if(!isDedicated) then {
 			} forEach _nearCargoHelis;
 			
 			_cargoHelisNotNearbyWithActions = _cargoHelisWithActions - _nearCargoHelis;
+			
 			{
 				player removeAction (_x getVariable "TWC_Rope_Pickup_Action");
 				player removeAction (_x getVariable "TWC_Rope_Drop_Action");
