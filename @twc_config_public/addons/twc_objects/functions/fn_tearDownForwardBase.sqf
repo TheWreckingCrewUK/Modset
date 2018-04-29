@@ -28,10 +28,11 @@ deleteMarker "respawn_forwardBase";
 	deleteVehicle _x;
 }forEach attachedObjects _table;
 
-_truck = (getPos _table) nearObjects ["twc_medical_hemtt",250];
-_generator = _pos nearObjects ["twc_portableGenerator",200];
-(_truck select 0) setFuel 1;
 
+_generator = _pos nearObjects ["twc_portableGenerator",200];
+
+
+[_table, 2] call ace_cargo_fnc_setSize;
 _table setVariable ["twc_forwardBaseDeployed",false];
 [_table, true] call ace_dragging_fnc_setDraggable;
 [_generator select 0,false] call ace_dragging_fnc_setDraggable;

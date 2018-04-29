@@ -105,7 +105,7 @@ class CfgWeapons {
 		scope = 1;
 		descriptionShort = "Webbing - it's all the fashion these days";
 		class ItemInfo: VestItem {
-			containerClass = Supply140;
+			containerClass = Supply160;
 			mass = 25;
 			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_pouch_base.p3d";
 			
@@ -293,7 +293,7 @@ class CfgWeapons {
 		scope = 1;
 		descriptionShort = "Para Webbing - suicidal storage";
 		class ItemInfo: VestItem {
-			containerClass = Supply140;
+			containerClass = Supply160;
 			mass = 25;
 			uniformModel = "\fow\fow_characters\uk\lodu_vest_brit_para_pouch_base_blanco.p3d";
 			
