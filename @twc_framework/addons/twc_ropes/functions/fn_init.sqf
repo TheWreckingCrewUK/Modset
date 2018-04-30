@@ -1,7 +1,7 @@
 if(!isDedicated) then {
 	player addEventHandler ["Respawn", {
 		player setVariable ["TWC_Actions_Loaded", false];
-	};
+	}];
 	
 	[] spawn {
 		private ["_cargoHelisWithActions","_nearCargoHelis","_action","_cargoHelisNotNearbyWithActions"];
