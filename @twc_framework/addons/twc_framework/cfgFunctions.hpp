@@ -6,6 +6,7 @@ class CfgFunctions
 		{
 			file="twc_framework\functions";
 			class AirAssault {};
+			class Airborne {};
 			class Artillery{};
 			class AttackHelicopter{};
 			class AttackPlane {};
