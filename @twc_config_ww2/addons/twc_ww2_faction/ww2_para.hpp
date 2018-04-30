@@ -259,10 +259,7 @@
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_parasmock";
 		backpack="TWC_Backpack_WW2_SL";
-		class EventHandlers: EventHandlers
-		{
-			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
-		};
+
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Para_Sten",

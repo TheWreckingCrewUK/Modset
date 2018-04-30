@@ -259,10 +259,7 @@
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_bd40_01_corporal";
 		backpack="TWC_Backpack_WW2_SL";
-		class EventHandlers: EventHandlers
-		{
-			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
-		};
+
 		linkedItems[]=
 		{
 			"TWC_Vest_WW2_Sten",
@@ -271,6 +268,7 @@
 			"ItemCompass",
 			"ItemWatch"
 		};
+
 		respawnLinkedItems[]=
 		{
 			"TWC_Vest_WW2_Sten",
