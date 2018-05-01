@@ -35,6 +35,7 @@ class CfgFunctions
 			class toggleSpectator {};
 			class grabComposition {};
 			class sendCTabMessage {};
+			class isHigherRank {};
 			
 			class init{};
 		};
