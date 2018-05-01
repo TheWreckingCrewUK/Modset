@@ -1,0 +1,110 @@
+/*
+	class rhs_medic_bag;
+	class USSR_big_medic_bag: rhs_medic_bag
+	{
+		scope = 1;
+		class TransportItems
+		{
+            class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 12;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 10;
+			};
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 15;
+			};
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 6;
+			};
+			class _xxACE_adenosine
+			{
+				name = "ACE_adenosine";
+				count = 4;
+			};
+			class _xxACE_atropine
+			{
+				name = "ACE_atropine";
+				count = 4;
+			};
+			class _xxACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _xxACE_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 15;
+			};
+			class _xxACE_personalAidKit
+			{
+				name = "ACE_personalAidKit";
+				count = 1;
+			};
+			class _xxACE_salineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 6;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 4;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+		};
+	};
+*/
+
+/*
+	class rhs_sidor;
+	class USSR_Serg_bag: rhs_sidor
+	{
+		class TransportMagazines
+		{
+			class _xx_AK
+			{
+				magazine="CUP_30Rnd_545x39_AK_M";
+				count=6;
+			};
+			class _xx_RPK
+			{
+				magazine="CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+				count=2;
+			};
+			class _xx_MM
+			{
+				magazine="CUP_10Rnd_762x54_SVD_M";
+				count=4;
+			};
+		};
+	};
+*/
+
+/*class WaPAT_Backpack_AA: CUP_B_HikingPack_Civ {
+	scope = 1;
+	class TransportMagazines
+	{
+		class _xx_RPKMag
+		{
+			magazine = "CUP_launch_9K32Strela";
+			count = 2;
+		};
+	};
+};*/

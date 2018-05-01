@@ -514,6 +514,127 @@ class cfgVehicles {
 			sync[] = {""};
 		};
 	};
+
+	class TWC_Module_Airborne: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Airborne Assault";
+		function = "twc_fnc_moduleAirborne";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = ""; // TODO
+		functionPriority = 1;
+		class Arguments
+		{
+			class Destination
+			{
+				displayName="Destination";
+				description="Location where the plane will drop the units";
+				typeName="String";
+				defaultValue="";
+			};
+			class End
+			{
+				displayName="End Location";
+				description="Location where the plane will delete";
+				typeName="String";
+				defaultValue="";
+			};
+			class Plane_Units
+			{
+				displayName="Plane/Units";
+				description="Type of units and plane to spawn";
+				typeName="String";
+				defaultValue="Modern_VDV";
+				class values
+				{
+					class Modern_British
+					{
+						name="Modern British Section (C-130)";
+						value="Modern_British";
+					};
+					class Cold_British
+					{
+						name="Cold War British Section (C-130)";
+						value="Cold_British";
+					};
+					class 1990_British
+					{
+						name="1990's British Section (C-130)";
+						value="1990_British";
+					};
+					class WW2_British
+					{
+						name="WWII British Section (C-47)";
+						value="WW2_British";
+					};
+					class Cold_VDV
+					{
+						name="Cold War VDV Section (An-12)";
+						value="Cold_VDV";						
+					};
+					class Modern_VDV
+					{
+						name="Modern VDV Section (An-12)";
+						value="Modern_VDV";						
+					};
+					class SLA
+					{
+						name="SLA Section (Li-2)";
+						value="SLA";						
+					};
+					class RACS
+					{
+						name="RACS Section (C-130)";
+						value="RACS";						
+					};
+					class Takistani_Army_1
+					{
+						name="Takistani Section (C-130)";
+						value="Takistani_Army_1";						
+					};
+					class Takistani_Army_2
+					{
+						name="Takistani Section (An-2)";
+						value="Takistani_Army_2";						
+					};
+				};
+			};
+			class Type_Plane
+			{
+				displayName="Type (Plane)";
+				description="Class name of a plane that overrides the selection";
+				typeName="String";
+				defaultValue="";
+			};
+			class Type_Cargo
+			{
+				displayName="Type (Cargo)";
+				description="An array of units to make a group that overrides the selection";
+				typeName="String";
+				defaultValue="";
+			};
+			class Amount_Cargo
+			{
+				displayName="Size";
+				description="Amount of groups to drop";
+				typeName="Number";
+				defaultValue=0;
+			};
+			class Infantry_Attack_Location
+			{
+				displayName="Infantry Attack";
+				description="Location the infantry will move to after their drop";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Call in airborne group";
+			sync[] = {""};
+		};
+	};
 	
 	class TWC_Module_AttackPlane: Module_F {
 		author = "[TWC] Bosenator & jayman";

@@ -29,7 +29,7 @@ class CfgVehicles {
  * Overwrites ACE AI in order to make the AI more skilled
  */
 class CfgAISkill {
-	aimingAccuracy[] = {0,   0,   1, 0.7};
+	aimingAccuracy[] = {0,   0.1,   1, 0.5};
 	aimingShake[]    = {0,   0, 0.8, 0.4};
 	aimingSpeed[]    = {0,   0,   1, 0.8};
 	commanding[]     = {0, 0.1,   1, 0.6};

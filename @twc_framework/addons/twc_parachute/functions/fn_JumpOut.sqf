@@ -100,7 +100,13 @@ if (_isEven) then {
 	[_caller] call ace_common_fnc_goKneeling;
 	[] call twc_parachute_fnc_LandingSound;
 
-	_ParachuteLanded = createVehicle ["T10_Landed", [0, 0, -100], [], 0, "CAN_COLLIDE"];
-	_ParachuteLanded setDir (getDir _caller);
-	_ParachuteLanded setPos (_caller modelToWorld [0, -7, 0]);
+
+	_ParachutePos = (_caller modelToWorld [0, -7, 0]); 
+	_isEmpty = !(_ParachutePos isFlatEmpty  [1, -1, -1, 1, 0, false, _caller] isEqualTo []); 
+
+	if (_isEmpty) then { 
+		_ParachuteLanded = createVehicle ["T10_Landed", [0, 0, -100], [], 0, "CAN_COLLIDE"]; 
+		_ParachuteLanded setDir (getDir _caller); 
+		_ParachuteLanded setPos _ParachutePos; 
+	};
 };

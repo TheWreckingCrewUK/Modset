@@ -1,9 +1,6 @@
-class CfgPatches
-{
-	class twc_faction
-	{
-		units[]=
-		{
+class CfgPatches {
+	class twc_faction {
+		units[] = {
 			"GulfWar_Iraqi_Squadleader",
 			"GulfWar_Iraqi_Rifleman",
 			"GulfWar_Iraqi_RPG",
@@ -155,10 +152,10 @@ class CfgPatches
 			"TWC_WaPArmy_Taviana_T72A",
 			"TWC_WaPArmy_Taviana_ZSU23"
 		};
-		weapons[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
+		
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"A3_Characters_F_Common",
@@ -168,423 +165,39 @@ class CfgPatches
 		};
 	};
 };
-class CfgEditorSubCategories
-{
-	class Men_RussianFederation
-	{
-		displayName = "Men (Russian Federation)";
-	};
-	class Men_Iraq
-	{
-		displayName = "Men (Iraq)";
-	};
-	class Men_AfricanMilitia
-	{
-		displayName = "Men (African Militia)";
-	};
-	class Men_IRA
-	{
-		displayName = "Men (IRA)";
-	};
-	class Men_Troubles
-	{
-		displayName = "Men (Troubles)";
-	};
-	class TWC_tak_Civ_Men
-	{
-		displayName = "Men (Takistan Militia)";
-	};
-	class TWC_usa_1970
-	{
-		displayName = "USA (1970)";
-	};
-	class TWC_WaPArmy_Taviana_Men_Winter
-	{
-		displayName = "Men (Winter)";
-	};
-};
-class CfgFactionClasses
-{
-	class Iraqi_units
-	{
-		displayName="Iraqi Army Gulf War Units";
-		author="Rik";
-		icon="TWClogo.paa";
-		priority=2;
-		side=0;
-	};
-	class ira_units
-	{
-		displayName="IRA Units";
-		author="Jayman";
-		icon="TWClogo.paa";
-		priority=2;
-		side=2;
-	};
-	class african_units
-	{
-		displayName="African Militia";
-		author="Saxon";
-		icon="TWClogo.paa";
-		priority=2;
-		side=2;
-	};
-	class TWC_Tak_Civ
-	{
-		displayName="Takistani Civilians";
-		priority=1;
-		side=3;
-	};
-	class twc_usa_1970
-	{
-		displayName="USA 1970";
-		priority=1;
-		side=1;
-	};
-	class Russian_Federation
-	{
-		displayName="Russian Federation";
-		priority=1;
-		side=3;
-	};
-	class TWC_PAVN
-	{
-		displayName="TWC PAVN Operation Units";
-		author="The Wrecking Crew";
-		icon="TWClogo.paa";
-		priority=2;
-		side=3;
-	};
-	class TWC_USSR_Afghan
-	{
-		displayName="TWC Red Army Afghanistan Operation Units";
-		author="The Wrecking Crew";
-		icon="TWClogo.paa";
-		priority=2;
-		side=3;
-	};
-	class TWC_Afr_Pirates
-	{
-		displayName="Pirates (African)";
-		author="The Wrecking Crew";
-		icon="twc_opfor_Misc\data\Jolly_Roger.paa";
-		priority=2;
-		side=2;
-	};
-	class TWC_Asn_Pirates
-	{
-		displayName="Pirates (Asian)";
-		author="The Wrecking Crew";
-		icon="twc_opfor_Misc\data\chinese_pirates.paa";
-		priority=2;
-		side=2;
-	};
-	class TWC_Afr_Pirates_RF
-	{
-		displayName="Pirates (African)";
-		author="The Wrecking Crew";
-		icon="twc_opfor_Misc\data\Jolly_Roger.paa";
-		priority=2;
-		side=0;
-	};
-	class TWC_Asn_Pirates_RF
-	{
-		displayName="Pirates (Asian)";
-		author="The Wrecking Crew";
-		icon="twc_opfor_Misc\data\chinese_pirates.paa";
-		priority=2;
-		side=0;
-	};
-	class TWC_WaPArmy_Taviana
-	{
-		displayName="Workers and Peasants Army of Taviana";
-		author="Saxon";
-		priority=2;
-		side=0;
-	};
-};
-class CfgVehicles
-{
-	class CUP_B_AlicePack_Khaki;
-	class CUP_B_RPGPack_Khaki;
-	class CUP_B_HikingPack_Civ;
-	
-	class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki
-	{
-		class TransportMagazines
-		{
-			class _xx_AKMags
-			{
-				magazine="CUP_30Rnd_762x39_AK47_M";
-				count=6;
-			};
-			class _xx_PKMags
-			{
-				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
-				count=1;
-			};
-		};
-	};
-	class Afr_Backpack_MG: CUP_B_AlicePack_Khaki
-	{
-		class TransportMagazines
-		{
-			class _xx_PKMags
-			{
-				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
-				count=2;
-			};
-		};
-	};
-	class Afr_Backpack_AT: CUP_B_RPGPack_Khaki
-	{
-		class TransportMagazines
-		{
-			class _xx_AKMags
-			{
-				magazine="CUP_30Rnd_762x39_AK47_M";
-				count=2;
-			};
-			class _xx_RPG7
-			{
-				magazine="CUP_PG7V_M";
-				count=2;
-			};
-		};
-	};
-/*
-	class rhs_medic_bag;
-	class USSR_big_medic_bag: rhs_medic_bag
-	{
-		scope = 1;
-		class TransportItems
-		{
-            class _xx_Bandage
-			{
-				name = "ACE_fieldDressing";
-				count = 12;
-			};
-			class _xx_Morphine
-			{
-				name = "ACE_morphine";
-				count = 10;
-			};
-			class _xx_ACE_elasticBandage
-			{
-				name = "ACE_elasticBandage";
-				count = 15;
-			};
-			class _xxACE_quikclot
-			{
-				name = "ACE_quikclot";
-				count = 6;
-			};
-			class _xxACE_adenosine
-			{
-				name = "ACE_adenosine";
-				count = 4;
-			};
-			class _xxACE_atropine
-			{
-				name = "ACE_atropine";
-				count = 4;
-			};
-			class _xxACE_epinephrine
-			{
-				name = "ACE_epinephrine";
-				count = 10;
-			};
-			class _xxACE_packingBandage
-			{
-				name = "ACE_packingBandage";
-				count = 15;
-			};
-			class _xxACE_personalAidKit
-			{
-				name = "ACE_personalAidKit";
-				count = 1;
-			};
-			class _xxACE_salineIV_500
-			{
-				name = "ACE_salineIV_500";
-				count = 6;
-			};
-			class _xxACE_tourniquet
-			{
-				name = "ACE_tourniquet";
-				count = 4;
-			};
-		};
-		class TransportMagazines
-		{
-			class _xx_Smoke
-			{
-				magazine = "SmokeShell";
-				count = 3;
-			};
-		};
-	};
-*/
-	class USSR_RPG_bag: CUP_B_RPGPack_Khaki
-	{
-		class TransportMagazines
-		{
-			class _xx_RPG7
-			{
-				magazine="CUP_PG7V_M";
-				count=3;
-			};
-		};
-	};
-/*
-	class rhs_sidor;
-	class USSR_Serg_bag: rhs_sidor
-	{
-		class TransportMagazines
-		{
-			class _xx_AK
-			{
-				magazine="CUP_30Rnd_545x39_AK_M";
-				count=6;
-			};
-			class _xx_RPK
-			{
-				magazine="CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
-				count=2;
-			};
-			class _xx_MM
-			{
-				magazine="CUP_10Rnd_762x54_SVD_M";
-				count=4;
-			};
-		};
-	};
-*/
-	class WaPAT_Backpack_RPK: CUP_B_HikingPack_Civ
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_RPK
-			{
-				magazine="CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
-				count=3;
-			};
-		};
-	};
-	class WaPAT_Backpack_UK59: CUP_B_HikingPack_Civ
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_UK59
-			{
-				magazine="CUP_50Rnd_UK59_762x54R_Tracer";
-				count=4;
-			};
-		};
-	};
-	/*class WaPAT_Backpack_AA: CUP_B_HikingPack_Civ
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_RPKMag
-			{
-				magazine = "CUP_launch_9K32Strela";
-				count = 2;
-			};
-		};
-	};*/
-	class WaPAT_Backpack_AT: CUP_B_HikingPack_Civ
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_RPKMag
-			{
-				magazine = "CUP_AT13_M";
-				count = 2;
-			};
-		};
-	};
-	
+
+#include "CfgEditorSubCategories.hpp"
+#include "CfgFactionClasses.hpp"
+
+class CfgVehicles {
+	// Time saving MACROs - NC = Non-Conflict
+	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
+	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
+	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
+
+	#include "vehicles/backpacks.hpp"
+
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 	class I_G_Soldier_base_F;
 	
 //	#include "russianfederation.hpp"
-	#include "iraq.hpp"
-	#include "african.hpp"
-	#include "irish.hpp"
+	#include "units/iraq.hpp"
+	#include "units/african.hpp"
+	
+	/* UNITS - INDIVIDUAL DEFINES */
+	#include "units/ira.hpp"
+	
+	/* COMPOSITIONS - GROUP DEFINES */
+	#include "compositions/ira.hpp"
 	
 //	#include "USSRAfghan.hpp"
 	
-	#include "takistan.hpp"
-	
-	#include "usa_1970.hpp"
-	
-	#include "pirates.hpp"
-	
-	#include "WaPArmy_Taviana.hpp"
+	#include "units/takistan.hpp"
+	#include "units/usa_1970.hpp"
+	#include "units/pirates.hpp"
+	#include "units/WaPArmy_Taviana.hpp"
 };
-class CFgMarkers 
-{
-	class flag;
-	class twc_PAC_flag: Flag
-	{
-		name = "Pan-Asian Coalition";
-		icon = "twc_opfor_Misc\data\pac_flag.paa";
-		texture = "twc_opfor_Misc\data\pac_flag.paa";
-		size = 32;
-		scope = 2;
-		shadow = 0;
-		color[] = {1,1,1,1};
-		markerClass = "Flags";
-	};
-	class twc_novastrana_flag: Flag
-	{
-		name = "Novastrana";
-		icon = "twc_opfor_Misc\data\novastrana.paa";
-		texture = "twc_opfor_Misc\data\novastrana.paa";
-		size = 32;
-		scope = 2;
-		shadow = 0;
-		color[] = {1,1,1,1};
-		markerClass = "Flags";
-	};
-	class twc_SSUBI_flag: Flag
-	{
-		name = "SSUBI";
-		icon = "twc_opfor_Misc\data\SSUBI.paa";
-		texture = "twc_opfor_Misc\data\SSUBI.paa";
-		size = 32;
-		scope = 2;
-		shadow = 0;
-		color[] = {1,1,1,1};
-		markerClass = "Flags";
-	};
-	class twc_free_taviana_flag: Flag
-	{
-		name = "Free Taviana";
-		icon = "twc_opfor_Misc\data\free_taviana.paa";
-		texture = "twc_opfor_Misc\data\free_taviana.paa";
-		size = 32;
-		scope = 2;
-		shadow = 0;
-		color[] = {1,1,1,1};
-		markerClass = "Flags";
-	};
-	class twc_unsc_flag: Flag
-	{
-		name = "United Nations Space Command";
-		icon = "twc_opfor_Misc\data\unsc.paa";
-		texture = "twc_opfor_Misc\data\unsc.paa";
-		size = 32;
-		scope = 2;
-		shadow = 0;
-		color[] = {1,1,1,1};
-		markerClass = "Flags";		
-	};
-};
+
+#include "CfgMarkers.hpp"

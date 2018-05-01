@@ -14,14 +14,14 @@ params ["_caller", "_target"];
 
 //if !([_caller, _target] call twc_medical_fnc_canDefib) exitWith {}; 
 
-_probability = 25; // 25% base chance
+_probability = 40;
 
 _gotEpi = _target getVariable ["ace_medical_epinephrine_insystem", 0];
 _probability = _probability + (5 * _gotEpi); // increase by 5% with epi
 
 //reduces probability depending on total blood loss of patient:
 _bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodVolume;
-_probability = _probability - (20 - (20 * _bloodLoss));
+_probability = _probability - (35 - (35 * _bloodLoss));
 
 // get for later
 _painLevel = _target getVariable ["ace_medical_pain", 0];
