@@ -523,7 +523,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
-		icon = ""; // TODO
+		icon = "\twc_framework\ui\airborne_ca.paa"; // TODO
 		functionPriority = 1;
 		class Arguments
 		{
@@ -572,32 +572,32 @@ class cfgVehicles {
 					class Cold_VDV
 					{
 						name="Cold War VDV Section (An-12)";
-						value="Cold_VDV";						
+						value="Cold_VDV";
 					};
 					class Modern_VDV
 					{
 						name="Modern VDV Section (An-12)";
-						value="Modern_VDV";						
+						value="Modern_VDV";
 					};
 					class SLA
 					{
 						name="SLA Section (Li-2)";
-						value="SLA";						
+						value="SLA";
 					};
 					class RACS
 					{
 						name="RACS Section (C-130)";
-						value="RACS";						
+						value="RACS";
 					};
 					class Takistani_Army_1
 					{
 						name="Takistani Section (C-130)";
-						value="Takistani_Army_1";						
+						value="Takistani_Army_1";
 					};
 					class Takistani_Army_2
 					{
 						name="Takistani Section (An-2)";
-						value="Takistani_Army_2";						
+						value="Takistani_Army_2";
 					};
 				};
 			};
@@ -941,36 +941,4 @@ class cfgVehicles {
 			sync[] = {"AnyVehicle"};
 		};
 	};	*/
-	
-	class Man;
-    class CAManBase: Man {
-        class ACE_SelfActions {
-            class twc_looseAmmo303 {
-                displayName = "Convert Loose Ammo";
-                condition = "'twc_looseAmmoBox_303' in backpackItems _player";
-                exceptions[] = {};
-                statement = "_player call twc_fnc_looseTo303";
-                icon = "";
-			};
-			class twc_clipToBren {
-                displayName = "Convert Enfield To Bren";
-                condition = "{_x in [['10Rnd_303_Magazine',10]]} count (magazinesAmmo _player) > 2 && 'TWC_EmptyBrenMag' in (items _player)";
-                exceptions[] = {};
-                statement = "_player call twc_fnc_enfieldToBren";
-                icon = "";
-			};
-			class twc_brenToClip {
-                displayName = "Convert Bren To Enfield";
-                condition = "['fow_30Rnd_303_bren',30] in (magazinesAmmo _player)";
-                exceptions[] = {};
-                statement = "_player call twc_fnc_brenToEnfield";
-                icon = "";
-			};
-		};
-	};
-	
-	
-	
-	
-	
 };
