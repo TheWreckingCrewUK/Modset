@@ -1,8 +1,9 @@
 class CfgPatches {
 	class twc_weapons {
-		units[]={ };
-		weapons[]={};
+		units[]= { };
+		weapons[]= { };
 		requiredVersion=0.1;
+		
 		requiredAddons[]= {
 			"A3_Weapons_F",
 			"uk3cb_baf_weapons",
@@ -94,5 +95,4 @@ class CfgWeapons {
 			};
 		};
 	};
-};
 };
