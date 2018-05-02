@@ -23,3 +23,11 @@ class CfgFunctions {
 		};
 	};
 };
+
+class Extended_FiredBIS_EventHandlers {
+	class CAManBase {
+		class twc_disposable_fired {
+			clientFiredBIS = "_this call twc_disposable_fnc_addDisposablehandler;";
+		};
+	};
+};
