@@ -45,7 +45,8 @@ class CfgPatches
 			"A3_Characters_F",
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
-			"TWC_Faction"
+			"TWC_Faction",
+			"twc_weapons"
 		};
 	};
 };
