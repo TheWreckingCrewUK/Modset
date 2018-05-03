@@ -49,6 +49,14 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 1;
 	};
+	
+	class TWC_Training {
+		displayName = "TWC Training";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
+	};
 };
 
 // CfgEditorCategories is used for props
@@ -124,5 +132,10 @@ class CfgEditorSubcategories {
 	// Attachments & Other
 	class TWC_ForceType_Special {
 		displayName = "Special";
+	};
+	
+	// Unit Catergories
+	class TWC_Training {
+		displayName = "Men (Training)";
 	};
 };
