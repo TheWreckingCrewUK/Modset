@@ -4,6 +4,8 @@ class CfgFunctions {
 	class twc_training {
 		file = "twc_training\functions";
 
-		class teleport {};
+		class mapTeleport {};
+		class setNearestPlayersPos {};
+		class isTrainer {};
 	};
 };
