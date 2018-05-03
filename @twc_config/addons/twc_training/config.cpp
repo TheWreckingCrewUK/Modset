@@ -6,7 +6,6 @@ class CfgPatches {
 		units[] = {
 			"TWC_Units_Training_Trainer",
 			"TWC_Units_Training_Medical_Trainer"
-			"TWC_Units_Training_Medical_Trainee"
 		};
 
 		requiredAddons[] = {
