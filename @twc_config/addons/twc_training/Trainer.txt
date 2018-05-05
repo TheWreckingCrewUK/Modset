@@ -1,7 +1,0 @@
-// Exported from Arsenal by Bosenator
-uniform = "UK3CB_BAF_U_CombatUniform_MTP";
-backpack = "TWC_Backpack_Modern_Sectionlead";
-weapons[] = {"UK3CB_BAF_L85A2_RIS","UK3CB_BAF_L131A1","ACE_Vector","Throw","Put"};
-magazines[] = {"UK3CB_BAF_9_17Rnd","UK3CB_BAF_556_30Rnd","UK3CB_BAF_556_30Rnd","UK3CB_BAF_556_30Rnd","UK3CB_BAF_556_30Rnd_T","UK3CB_BAF_556_30Rnd_T","CUP_HandGrenade_L109A2_HE","CUP_HandGrenade_L109A2_HE","SmokeShell","SmokeShell","SmokeShell","SmokeShell","SmokeShell","SmokeShellRed","SmokeShellRed","SmokeShellRed","SmokeShellGreen","SmokeShellGreen","SmokeShellGreen","SmokeShellBlue","SmokeShellBlue","SmokeShellBlue"};
-items[] = {"ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet","ACRE_PRC343","ACE_MapTools","ACE_EarPlugs","ACRE_PRC117F"};
-linkedItems[] = {"UK3CB_BAF_V_Osprey_HiVis","UK3CB_BAF_H_Mk7_Scrim_ESS_B","UK3CB_BAF_G_Tactical_Clear","ItemMap","ItemCompass","ItemWatch","ItemcTab"};
