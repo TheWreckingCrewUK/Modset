@@ -5,6 +5,7 @@ class Box_NATO_Ammo_F;
 class Box_NATO_AmmoVeh_F;
 class ACE_medicalSupplyCrate;
 class B_supplyCrate_F;
+class Box_NATO_WpsLaunch_F;
 
 class TWC_AmmoBox_Base: CUP_BAF_VehicleBox {
 	scope = 1;
@@ -32,6 +33,28 @@ class TWC_AmmoBox_Base: CUP_BAF_VehicleBox {
 class TWC_AmmoBox_Portable: Box_NATO_Ammo_F {
 	scope = 1;
 	displayName = "Ammo Box (Portable)";
+	author      = "Bosenator";
+	
+	class TransportMagazines { };
+	class TransportItems     { };
+	class TransportWeapons   { };
+	class TransportBackpacks { };
+	
+	editorCategory = "TWC_Crates";
+	editorSubcategory = "TWC_Crates_Other";
+	
+	// ACE Defines
+	ace_cargo_canLoad     = 1;
+	ace_cargo_size        = 1;
+	ace_cargo_hasCargo    = 0;
+	
+	ace_dragging_canCarry = 1;
+	ace_dragging_canDrag  = 1;
+};
+
+class TWC_AmmoBox_Launcher_Portable: Box_NATO_WpsLaunch_F {
+	scope = 1;
+	displayName = "Launcher Box (Portable)";
 	author      = "Bosenator";
 	
 	class TransportMagazines { };
