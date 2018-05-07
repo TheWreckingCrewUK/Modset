@@ -211,6 +211,50 @@ class cfgWeapons
 	{
 		magazines[] = {"rhs_10Rnd_762x54mmR_7N1", "CUP_10Rnd_762x54_SVD_M"};
 	};
+	class rhs_weap_m4a1;
+	class twc_m4_acog_grip_laser: rhs_weap_m4a1
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_ACOG";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15_bk";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="UnderBarrelSlot";
+				item="rhsusf_acc_grip1";
+			};
+		};
+	};
+	
+	class rhs_weap_m4_m203;
+	class twc_m4_m203_acog_light: rhs_weap_m4_m203
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_ACOG";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhs_acc_2dpZenit_ris";
+			};
+		};
+	};
+	
+	
 	/*
 	class rhs_weapon_base;
 	class rhs_weap_m4_Base: rhs_weapon_base

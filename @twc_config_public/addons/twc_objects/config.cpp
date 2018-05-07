@@ -164,4 +164,33 @@ class CfgVehicles {
 			};
 		};
 	};
+	class B_supplyCrate_F;
+	class TWC_AmmoBox_Other_Pallet_pub: B_supplyCrate_F {
+	scope = 1;
+	scopeCurator = 2;
+	displayName = "Cargo Pallet";
+	author      = "Bosenator";
+
+
+	class TransportMagazines { };
+	class TransportItems     { };
+	class TransportWeapons   { };
+	class TransportBackpacks { };
+	
+	ace_dragging_canCarry = 0;
+	ace_dragging_canDrag  = 1;
+	
+	// ACE Defines
+	ace_cargo_canLoad     = 1;
+	ace_cargo_size        = 5;
+	ace_cargo_hasCargo    = 1;
+	ace_cargo_space = 8;
+
+	// Disable inventory on it
+	maximumLoad           = 0;
+	transportMaxMagazines = 0;
+	transportMaxWeapons   = 0;
+	transportMaxBackpacks = 0;
+};
+
 };
