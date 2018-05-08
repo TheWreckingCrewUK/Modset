@@ -4,8 +4,9 @@ _votesCasted = missionNamespace getVariable ["twc_skip_votes", []];
 _votesCastedCount = count _votesCasted;
 _playerCount = count (allPlayers - entities "HeadlessClient_F");
 _neededVotes = floor ((_playerCount / 10) * 7.5);
+_neededPlayers = missionNamespace getVariable ["twc_skip_votes_needed", 4];
 
-if (_playerCount <= 4) exitWith {
+if (_playerCount <= _neededPlayers) exitWith {
 	["systemChatClient", "There are not enough soldiers deployed to consider retreat."] call CBA_fnc_globalEvent;
 	missionNamespace setVariable ["twc_skip_votes", []];
 };
