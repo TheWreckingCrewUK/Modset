@@ -23,6 +23,7 @@ class CfgFunctions {
 			
 			class clientHandler {};
 			class voteHandler {};
+			class checkResults {};
 		};
 	};
 };
