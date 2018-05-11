@@ -1088,6 +1088,12 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine"
 		};
@@ -1101,6 +1107,12 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine"
 		};
@@ -1155,6 +1167,12 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine"
 		};
@@ -1169,6 +1187,12 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine"
 		};
@@ -1285,6 +1309,12 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine"
 		};
@@ -1299,6 +1329,12 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_elasticBandage",
+		"ACE_epinephrine",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine"
 		};
