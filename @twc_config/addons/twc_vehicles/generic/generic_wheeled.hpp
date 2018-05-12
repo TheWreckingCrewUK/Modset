@@ -30,20 +30,6 @@ class TWC_Vehicle_Generic_LandRoverAmbulance_Woodland: UK3CB_BAF_LandRover_Amb_G
 	class TransportMagazines { };
 	class TransportWeapons { };
 	class TransportBackpacks { };
-	
-	class AnimationSources {
-		class AerialAtuR_Hide {
-			initPhase = 1;
-		};
-
-		class AerialFR_Hide {
-			initPhase = 1;
-		};
-		
-		class ClanLogo_Hide {
-			initPhase = 1;
-		};
-	};
 };
 
 class TWC_Vehicle_Generic_LandRoverAmbulance_Desert: TWC_Vehicle_Generic_LandRoverAmbulance_Woodland {
