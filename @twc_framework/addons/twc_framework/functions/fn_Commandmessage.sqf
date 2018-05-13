@@ -43,5 +43,5 @@ _findTopRanks = {
 	};
 } forEach allPlayers;
 
-twc_JIP_CommandMessage pushback [_rank, _message];
+twc_JIP_CommandMessage pushback [_topRanks, _message];
 publicVariable "twc_JIP_CommandMessage";
