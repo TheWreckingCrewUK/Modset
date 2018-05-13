@@ -16,34 +16,32 @@
 params ["_message"];
 
 if (_message == "") exitWith {};
+if (isNil "twc_JIP_CommandMessage") then { twc_JIP_CommandMessage = []; };
 
-if (isNil "twc_JIP_CommandMessage") then {
-	twc_JIP_CommandMessage = [];
-};
+_rankHashMap = [["COLONEL", 0], ["MAJOR", 0], ["CAPTAIN", 0], ["LIEUTENANT", 0], ["SERGEANT", 0], ["CORPORAL", 0], ["PRIVATE", 0]] call CBA_fnc_hashCreate;
+_topRanks = [];
 
-_rankArray = [];
 {
-	_rankArray pushback (rank _x);
+	_currentCount = [_rankHashMap, (rank _x)] call CBA_fnc_hashGet;
+	[_rankHashMap, (rank _x), { _currentCount + 1 }] call CBA_fnc_hashSet;
 } forEach allPlayers;
 
-_rank = "";
-_rank = call {
-	_rank = if ("COLONEL" in _rankArray)exitWith{["COLONEL","MAJOR"]};
-	_rank = if ("MAJOR" in _rankArray)exitWith{["MAJOR","CAPTAIN"]};
-	_rank = if ("CAPTAIN" in _rankArray)exitWith{["CAPTAIN","LIEUTENANT"]};
-	_rank = if ("LIEUTENANT" in _rankArray)exitWith{["LIEUTENANT","SERGEANT"]};
-	_rank = if ("SERGEANT" in _rankArray)exitWith{["SERGEANT","CORPORAL"]};
-	_rank = if ("CORPORAL" in _rankArray)exitWith{["CORPORAL","PRIVATE"]};
-	_rank = if ("PRIVATE" in _rankArray)exitWith{["PRIVATE"]};
-	_rank
+_findTopRanks = {
+	if ((count _topRanks) > 1) exitWith {};
+	if (_value == 0) exitWith {};
+	
+	_topRanks pushBack _key;
 };
 
+[_rankHashMap, _findTopRanks] call CBA_fnc_hashEachPair;
+
 {
-	if (rank _x in _rank) then {
+	if ((rank _x) in _topRanks) then {
 		_message remoteExecCall ["hint", _x];
-		_x createDiaryRecord ["Diary", ["Intel", _message]];
+
+		["twc_evh_createDiaryRecord", [_message], _x] call CBA_fnc_targetEvent;
 	};
 } forEach allPlayers;
 
-twc_JIP_CommandMessage pushback [_rank,_message];
+twc_JIP_CommandMessage pushback [_rank, _message];
 publicVariable "twc_JIP_CommandMessage";

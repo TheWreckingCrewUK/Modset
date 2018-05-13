@@ -5,8 +5,6 @@ if (player != _unit)exitWith {};
 waitUntil { sleep 0.5; !(isNull player) };
 waitUntil { sleep 1.271; time > 0 };
 
-
-
 ACE_maxWeightDrag = 100000;
 ACE_maxWeightCarry = 100000;
 /*
@@ -76,6 +74,7 @@ player addEventHandler ["Killed",{
 
 */
 ["twc_evh_fnc_setSpectator", { [(_this select 0)] call twc_fnc_toggleSpectator; }] call CBA_fnc_addEventHandler;
+["twc_evh_createDiaryRecord", { player createDiaryRecord ["Diary", ["Intel", (_this select 0)]]; }] call CBA_fnc_addEventHandler;
 
 if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {systemChat "twcModuleEnabled was Nil"};
 
