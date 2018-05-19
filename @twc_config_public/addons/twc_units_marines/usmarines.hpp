@@ -259,7 +259,7 @@ class Modern_USMC_Rifleman: Modern_USMC_Base
 {
 scope=2;
 displayName="Rifleman AT (USMC)";
-backpack="";
+backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_rifleman",
@@ -800,7 +800,7 @@ scope=2;
 editorSubcategory = "USMC_Modern_D";
 uniformClass="rhs_uniform_FROG01_d";
 displayName="Rifleman AT (USMC)";
-backpack="";
+backpack="rhsusf_assault_eagleaiii_coy";
 linkedItems[]=
 {
 "rhsusf_spc_rifleman",
