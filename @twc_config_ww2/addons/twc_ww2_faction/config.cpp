@@ -76,4 +76,11 @@ class CfgVehicles
 	#include "ww2.hpp"
 	#include "1956.hpp"
 	#include "ww2_para.hpp"
+	#include "backpacks.hpp"
+};
+
+
+// class fow_b_uk_p37_blanco;
+class CfgWeapons {
+	#include "vests.hpp"
 };
