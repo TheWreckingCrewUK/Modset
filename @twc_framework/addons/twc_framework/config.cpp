@@ -9,6 +9,7 @@ class CfgPatches {
 			"twc_moduleSetSpectator",
 			"twc_moduleMedicalInfo",
 			"TWC_Module_StationaryUnits",
+			"TWC_Module_MovableUnits",
 			"TWC_Module_ArtillerySpotter",
 			"TWC_Module_ArtilleryPieces",
 			"TWC_Module_DisableCaching",

@@ -30,6 +30,7 @@ class CfgFunctions
 			class spawnIed{};
 			class setUniform{};
 			class stationaryUnits{};
+			class movableUnits{};
 			class UpdateTask{};
 			class virtualMortar{};
 			class toggleSpectator {};
@@ -56,6 +57,7 @@ class CfgFunctions
 			class zeus{};
 
 			class moduleStationaryUnits{};
+			class moduleMovableUnits{};
 			class moduleVirtualArtillery{};
 			class moduleUpdateTask{};
 			class moduleDefend{};

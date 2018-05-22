@@ -813,6 +813,23 @@ class cfgVehicles {
 			sync[] = {"AnyAI"};
 		};
 	};
+	
+	class TWC_Module_MovableUnits: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Set Movable Units";
+		function = "twc_fnc_moduleMovableUnits";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = "\twc_framework\ui\movable_units_ca.paa";
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Set Unit(s) as Movable";
+			sync[] = {"AnyAI"};
+		};
+	};
 
 	class TWC_Module_DisableCaching: Module_F {
 		author = "[TWC] Bosenator & jayman";
@@ -852,7 +869,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
-		icon = "";
+		icon = "\twc_framework\ui\ignore_foward_base_ca.paa";
 		functionPriority = 1;
 		class Arguments {};
 		class ModuleDescription: ModuleDescription {
