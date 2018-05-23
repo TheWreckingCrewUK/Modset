@@ -1323,7 +1323,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"Throw",
 			"Put",
-			"CUP_SOFLAM",
+			"UK3CB_BAF_Soflam_Laserdesignator",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
 			"rhsusf_weap_glock17g4"
 		};
@@ -1331,7 +1331,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"Throw",
 			"Put",
-			"CUP_SOFLAM",
+			"UK3CB_BAF_Soflam_Laserdesignator",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
 			"rhsusf_weap_glock17g4"
 		};
