@@ -18,7 +18,7 @@ params ["_message"];
 if (_message == "") exitWith {};
 if (isNil "twc_JIP_CommandMessage") then { twc_JIP_CommandMessage = []; };
 
-_rankHashMap = [["COLONEL", 0], ["MAJOR", 0], ["CAPTAIN", 0], ["LIEUTENANT", 0], ["SERGEANT", 0], ["CORPORAL", 0], ["PRIVATE", 0]] call CBA_fnc_hashCreate;
+_rankHashMap = [[["COLONEL", 0], ["MAJOR", 0], ["CAPTAIN", 0], ["LIEUTENANT", 0], ["SERGEANT", 0], ["CORPORAL", 0], ["PRIVATE", 0]], -1] call CBA_fnc_hashCreate;
 _topRanks = [];
 
 {
@@ -30,7 +30,7 @@ _topRanks = [];
 
 _findTopRanks = {
 	if ((count _topRanks) > 1) exitWith {};
-	if (_value == 0) exitWith {};
+	if (_value == 0 || _value == -1) exitWith {};
 	
 	_topRanks pushBack _key;
 };
