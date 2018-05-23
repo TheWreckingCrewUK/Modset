@@ -24,7 +24,7 @@ _topRanks = [];
 {
 	if (alive _x) then {
 		_currentCount = [_rankHashMap, (rank _x)] call CBA_fnc_hashGet;
-		[_rankHashMap, (rank _x), { _currentCount + 1 }] call CBA_fnc_hashSet;
+		[_rankHashMap, (rank _x), ( _currentCount + 1 )] call CBA_fnc_hashSet;
 	};
 } forEach allPlayers;
 
