@@ -22,8 +22,10 @@ _rankHashMap = [["COLONEL", 0], ["MAJOR", 0], ["CAPTAIN", 0], ["LIEUTENANT", 0],
 _topRanks = [];
 
 {
-	_currentCount = [_rankHashMap, (rank _x)] call CBA_fnc_hashGet;
-	[_rankHashMap, (rank _x), { _currentCount + 1 }] call CBA_fnc_hashSet;
+	if (alive _x) then {
+		_currentCount = [_rankHashMap, (rank _x)] call CBA_fnc_hashGet;
+		[_rankHashMap, (rank _x), { _currentCount + 1 }] call CBA_fnc_hashSet;
+	};
 } forEach allPlayers;
 
 _findTopRanks = {
@@ -38,9 +40,9 @@ _findTopRanks = {
 {
 	if ((rank _x) in _topRanks) then {
 		_message remoteExecCall ["hint", _x];
-
-		["twc_evh_createDiaryRecord", [_message], _x] call CBA_fnc_targetEvent;
 	};
+
+	["twc_evh_createDiaryRecord", [_message], _x] call CBA_fnc_targetEvent;
 } forEach allPlayers;
 
 twc_JIP_CommandMessage pushback [_topRanks, _message];
