@@ -115,4 +115,15 @@ class CfgMarkers
 		color[] = {1,1,1,1};
 		markerClass = "Flags";
 	};
+	class ww2_australia_flag: Flag
+	{
+		name = "Australia";
+		icon = "ww2_flags\data\ww2_australia";
+		texture = "ww2_flags\data\ww2_australia";
+		size = 32;
+		scope = 1;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
 };
