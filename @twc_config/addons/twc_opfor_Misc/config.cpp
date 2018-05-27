@@ -169,6 +169,34 @@ class CfgPatches {
 #include "CfgEditorSubCategories.hpp"
 #include "CfgFactionClasses.hpp"
 
+class CfgGroups {
+	class East {
+		name = "OPFOR";
+		side = 0;
+		
+		class TWC_Operation_Opfor_ColdWar {
+			name = "TWC Operations - Cold War";
+			
+			/* COLDWAR COMPOSITIONS - GROUP DEFINES */
+			#include "compositions/coldwar_ira.hpp"
+		};
+		
+		class TWC_Operation_Opfor_Millennial {
+			name = "TWC Operations - Millennial";
+			
+			/* MILLENNIAL COMPOSITIONS - GROUP DEFINES */
+			// todo
+		};
+		
+		class TWC_Operation_Opfor_Modern {
+			name = "TWC Operations - Modern";
+			
+			/* MODERN COMPOSITIONS - GROUP DEFINES */
+			// todo
+		};
+	};
+};
+
 class CfgVehicles {
 	// Time saving MACROs - NC = Non-Conflict
 	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
@@ -188,9 +216,7 @@ class CfgVehicles {
 	
 	/* UNITS - INDIVIDUAL DEFINES */
 	#include "units/ira.hpp"
-	
-	/* COMPOSITIONS - GROUP DEFINES */
-	#include "compositions/ira.hpp"
+
 	
 //	#include "USSRAfghan.hpp"
 	
