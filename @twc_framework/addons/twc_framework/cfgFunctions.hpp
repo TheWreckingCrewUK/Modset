@@ -19,6 +19,7 @@ class CfgFunctions
 			class Defend {};
 			class Flagchange {};
 			class intelHint{};
+			class intelHintWithVariable{};
 			class LightsSwitch{};
 			class Patrol {};
 			class patrolRoads{};
@@ -66,6 +67,7 @@ class CfgFunctions
 			class moduleCommandMessage{};
 			class moduleLightsSwitch{};
 			class moduleIntelHint{};
+			class moduleIntelHintWithVariable{};
 			class moduleDaisyCutter{};
 			class moduleDisableCaching {};
 			class moduleGrabComposition {};

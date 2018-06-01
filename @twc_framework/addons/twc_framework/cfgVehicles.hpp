@@ -735,6 +735,46 @@ class cfgVehicles {
 		};
 	};
 	
+	class TWC_Module_IntelHintWithVariable: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Intel Action Hint with Variable";
+		function = "twc_fnc_moduleIntelHintWithVariable";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		icon = "\twc_framework\ui\intel_action_variable_ca.paa";
+		functionPriority = 1;
+		
+		class Arguments {
+			class Title {
+				displayName = "Title";
+				description = "Title To Display";
+				typeName = "String";
+				defaultValue = "";
+			};
+
+			class Message {
+				displayName = "Message";
+				description = "Text To Display";
+				typeNam e= "String";
+				defaultValue = "";
+			};
+
+			class VariableName {
+				displayName = "Variable Name";
+				description = "Name of the GLOBAL variable to use";
+				typeName = "String";
+				defaultValue = "";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Intel Hint with Variable";
+			sync[] = {""};
+		};
+	};
+	
 	class TWC_Module_LightsSwitch: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";
