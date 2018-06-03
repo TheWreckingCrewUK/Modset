@@ -32,7 +32,7 @@ class ACE_Medical_Actions {
 		};
 		
 		class ElasticBandage: fieldDressing {
-			treatmentTime = 11;
+			treatmentTime = 12;
 		};
 		
 		class BloodIV: fieldDressing{};
