@@ -682,6 +682,7 @@ class cfgVehicles {
 		displayName = "Command Message";
 		function = "twc_fnc_moduleCommandMessage";
 		scope = 2;
+		isDisposable = 1;
 		isGlobal = 0;
 		isTriggerActivated = 1;
 		icon = "\twc_framework\ui\command_message_ca.paa";

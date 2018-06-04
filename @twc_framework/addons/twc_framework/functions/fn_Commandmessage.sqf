@@ -45,5 +45,5 @@ _findTopRanks = {
 	["twc_evh_createDiaryRecord", [_message], _x] call CBA_fnc_targetEvent;
 } forEach allPlayers;
 
-twc_JIP_CommandMessage pushback [_topRanks, _message];
+twc_JIP_CommandMessage pushback [_message];
 publicVariable "twc_JIP_CommandMessage";

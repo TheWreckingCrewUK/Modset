@@ -1,18 +1,18 @@
-if(serverTime < 600)then{
+if (serverTime < 600) then {
 	_index = player createDiarySubject ["loadout","Loadouts"];
 
-	[player]remoteExecCall ["twc_fnc_briefingLoadout",(group player)];
+	[player] remoteExecCall ["twc_fnc_briefingLoadout", (group player)];
 };
 
 [] execVM "tasks.sqf";
 
-if(!isNil "completedTasks")then{
+if (!isNil "completedTasks") then {
 	{
 		[_x select 0, _x select 1, false] call BIS_fnc_taskSetState;
-	}forEach completedTasks;
+	} forEach completedTasks;
 };
 
-if(isMultiplayer)then{
+if (isMultiplayer) then {
 	[] Spawn {
 		waitUntil{!(isNil "BIS_fnc_init")};
 		playMusic "Theme";
@@ -50,7 +50,7 @@ if(isMultiplayer)then{
 			removeGoggles player;
 		};
 		
-		if !(player getVariable ["twc_keepMap",false]) then { 
+		if !(player getVariable ["twc_keepMap",false]) then {
 			player unassignItem "itemMap"; 
 			player removeItem "itemMap"; 
 		};
@@ -61,10 +61,8 @@ if(isMultiplayer)then{
 
 player createDiarySubject ["Intel", "Intel"];
 
-if (!(isNIl "twc_JIP_CommandMessage")) then {
+if (!(isNil "twc_JIP_CommandMessage")) then {
 	{
-		if ((rank player) in (_x select 0)) then {
-			player createDiaryRecord ["Diary", ["Intel", (_x select 1)]];
-		};
+		player createDiaryRecord ["Diary", ["Intel", _x]];
 	} forEach twc_JIP_CommandMessage;
 };
