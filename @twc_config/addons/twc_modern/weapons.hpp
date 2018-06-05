@@ -61,6 +61,11 @@ class cfgWeapons
 				slot="asdg_FrontSideRail_UK3CB_BAF_L129A1";
 				item="UK3CB_BAF_LLM_Flashlight_Black";
 			};
+			class LinkedItemsBipod
+			{
+				slot="UK3CB_underbarrel_rifle_slot";
+				item="UK3CB_underbarrel_acc_fgrip_bipod";
+			};
 		};
 	};
 	class UK3CB_BAF_L128A1_Eotech: UK3CB_BAF_L128A1
