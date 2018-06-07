@@ -862,7 +862,7 @@ class cfgVehicles {
 		function = "twc_fnc_moduleMovableUnits";
 		scope = 2;
 		isGlobal = 0;
-		isTriggerActivated = 0;
+		isTriggerActivated = 1;
 		icon = "\twc_framework\ui\movable_units_ca.paa";
 		functionPriority = 1;
 		class Arguments {};
