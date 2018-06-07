@@ -758,7 +758,7 @@ class cfgVehicles {
 			class Message {
 				displayName = "Message";
 				description = "Text To Display";
-				typeNam e= "String";
+				typeName = "String";
 				defaultValue = "";
 			};
 
