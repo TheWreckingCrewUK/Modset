@@ -13,7 +13,9 @@ class CfgPatches {
 			"TWC_Module_ArtillerySpotter",
 			"TWC_Module_ArtilleryPieces",
 			"TWC_Module_DisableCaching",
-			"TWC_Module_VirtualArtillery"
+			"TWC_Module_VirtualArtillery",
+			"TWC_Module_IntelHint",
+			"TWC_Module_IntelHintWithVariable"
 		};
 		
 		weapons[] = {};
