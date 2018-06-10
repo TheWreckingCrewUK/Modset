@@ -1131,6 +1131,51 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"B_IR_Grenade"
 		};
 	};
+	class Modern_British_logitech: Modern_British_Base
+	{
+		scope=2;
+		displayName="Logistics Technician";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
+		icon="iconMan";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A2_RIS_AFG"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A2_RIS_AFG"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+		};
+	};
 	class Modern_British_VehicleCrew: Modern_British_Base
 	{
 		scope=2;
