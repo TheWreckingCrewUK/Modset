@@ -14,8 +14,8 @@ class TWC_Vehicle_FV4034_Base: Burnes_FV4034_01 {
 	class TransportBackpacks { };
 
 	accuracy = 1000;
-	armor = 600;
-	armorStructural = 5;
+	/*armor = 600;
+	armorStructural = 5;*/
 
 	camShakeCoef = 0;
 	

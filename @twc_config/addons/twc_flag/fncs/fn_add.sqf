@@ -17,6 +17,8 @@ if (isNil "_positionOveride") then {
 	switch (typeOf _vehicle) do {
 		case "ukcw_chieftainMK10": { _attachLocation = [-1, -3, 0.5]; };
 		case "ukcw_ChieftainARRV": { _attachLocation = [-1, -2.8, 0.5]; };
+		case "TWC_Vehicle_Modern_Challenger2_Desert": { _attachLocation = [-1, -4, 0.5]; };
+		case "TWC_Vehicle_Modern_Challenger2_Woodland": { _attachLocation = [-1, -4, 0.5]; };
 		default { throw "vehicle type not supported, either add it or provide positionOverride"; };
 	};
 } else {
