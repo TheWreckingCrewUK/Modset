@@ -681,6 +681,7 @@
 	};
 	class 1990_British_Vehicle_Commander: 1990_British_Base
 	{
+		scope = 2;
 		displayName="Vehicle Commander";
 		editorSubcategory = "Men_1990_Woodland_Mounted";
 		vehicleClass="Men_1990_Woodland_Mounted";
@@ -723,9 +724,9 @@
 		};
 		Respawnmagazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell",
 			"SmokeShell"
 		};
@@ -1189,209 +1190,109 @@
 			"UK3CB_BAF_G_Tactical_Black"
 		};
 	};
-	class 1990_British_Tank_Commander_Desert: B_Soldier_base_F
+	class 1990_British_Tank_Commander_Desert: 1990_British_Base
 	{
-		_generalMacro="1990_Desert_British_Tank Commander";
 		scope=2;
-		displayName="Vehicle Commander";
-		faction="TWC_Millennial";
+		displayName="Tank Commander";
 		editorSubcategory = "Men_1990_Desert_Mounted";
 		vehicleClass="Men_1990_Desert_Mounted";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
 		uniformClass="TWC_Smock_Desert";
-		backpack="TWC_Backpack_1990_Platoon_Command";
+		backpack="TWC_Backpack_1990_Platoon_Command_Desert";
 		linkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_CrewHelmet_DDPM_ESS_A",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_CrewHelmet_DDPM_ESS_A",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 		weapons[]=
 		{
-		"Throw",
-		"Put",	
-		"UK3CB_BAF_L85A1"
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1"
 		};
 		respawnweapons[]=
 		{
-		"Throw",
-		"Put",	
-		"UK3CB_BAF_L85A1"
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs",
-		"UK3CB_BAF_HMNVS"
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-	    "ACE_MapTools",
-		"UK3CB_BAF_HMNVS",
-		"ACRE_PRC148",
-		"ACE_EarPlugs"
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
 		};
 	};
-    class 1990_British_Tank_Crew_Desert: B_Soldier_base_F
+    class 1990_British_Tank_Crew_Desert: 1990_British_Base
 	{
 		scope=2;
-		displayName="Vehicle Crew";
-		faction="TWC_Millennial";
+		displayName="Tank Crew";
 		editorSubcategory = "Men_1990_Desert_Mounted";
 		vehicleClass="Men_1990_Desert_Mounted";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
 		uniformClass="TWC_Smock_Desert";
 		linkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_CrewHelmet_DDPM_A",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_CrewHelmet_DDPM_A",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 		weapons[]=
 		{
-		"Throw",
-		"Put",	
-		"UK3CB_BAF_L85A1"
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1"
 		};
 		respawnweapons[]=
 		{
-		"Throw",
-		"Put",	
-		"UK3CB_BAF_L85A1"
+			"Throw",
+			"Put",	
+			"UK3CB_BAF_L85A1"
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd",
-		"SmokeShell",
-		"SmokeShell",
-		"SmokeShell"
-		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_EarPlugs",
-		"UK3CB_BAF_HMNVS"
-		};
-		respawntems[]=
-		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs",
-		"ACRE_PRC148",
-		"UK3CB_BAF_HMNVS"		
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
 		};
 	};
 // Winter Units
