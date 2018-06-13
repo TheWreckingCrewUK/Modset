@@ -16,6 +16,16 @@ class TWC_Vehicle_FV4034_Base: Burnes_FV4034_01 {
 	accuracy = 1000;
 	/*armor = 600;
 	armorStructural = 5;*/
+	class complexGearbox {
+		GearboxRatios[] = {"R1",-0.4,"N",0,"D1",6.00,"D2",5.0,"D3",3.5,"D4",1.6};
+		TransmissionRatios[] = {"High",6.0};
+		gearBoxMode = "auto";
+		moveOffGear = 3;
+		driveString = "D";
+		neutralString = "N";
+		reverseString = "R";
+		transmissionDelay = 0.1;
+	};
 
 	camShakeCoef = 0;
 	
