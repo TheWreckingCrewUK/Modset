@@ -1,8 +1,8 @@
 params [["_vehicle", ""], ["_texture", ""], "_positionOverride"];
 
-if (isServer) exitWith {}; // server doesn't need to run it
+if (isDedicated) exitWith {}; // server doesn't need to run it
 
-if (_vehicle == "" || _texture == "") then {
+if (isNil "_vehicle" || isNil "_texture") then {
 	throw "object (this) and texture are required for twc_flag_add";
 	false;
 };
