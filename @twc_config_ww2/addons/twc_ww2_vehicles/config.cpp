@@ -26,7 +26,51 @@ class CfgVehicles
 	class LIB_MKI_HADRIAN;
 	class LIB_HORSA_RAF;
 	class LIB_US_Willys_MB;
-	class fow_v_universalCarrier;
+	/*	A3 DEFAULT INHERITANCE TREE START */
+	// Do not modify the inheritance tree, unless you want to alter game's internal configs, or REALLY know what you're doing.
+	class LandVehicle;
+	class Tank: LandVehicle {
+		class NewTurret;
+		class Sounds;
+		class HitPoints;
+	};
+	class Tank_F: Tank {
+		class Turrets {
+			class MainTurret:NewTurret {
+				class Turrets {
+					class CommanderOptics;
+				};
+			};
+		};
+		class AnimationSources;
+		class ViewPilot;
+		class ViewOptics;
+		class ViewCargo;
+		class HeadLimits;
+		class HitPoints: HitPoints {
+			class HitHull;
+			class HitEngine;
+			class HitLTrack;
+			class HitRTrack;
+		};
+		class Sounds: Sounds {
+			class Engine;
+			class Movement;
+		};
+		class EventHandlers;
+	};
+	/*	A3 DEFAULT INHERITANCE TREE END	*/
+	class fow_v_universalCarrier: Tank_F
+	{
+		class Turrets: Turrets
+		{
+			class CargoTurret_01;
+			class CargoTurret_02;
+			class CargoTurret_03;
+			class Turret_1;
+			class Turret_2;			
+		};
+	};
 	class TWC_Willys_MB: LIB_US_Willys_MB
 	{
 		faction = "twc_faction_independent";
@@ -37,7 +81,24 @@ class CfgVehicles
 	{
 		faction = "twc_faction_independent";
         ace_cargo_size = 14;
-        ace_cargo_canLoad = 1;		
+        ace_cargo_canLoad = 1;
+		class Turrets: Turrets
+		{
+			class CargoTurret_01: CargoTurret_01
+			{
+				gunnerCompartments = "Compartment1";			
+			};
+			class CargoTurret_02: CargoTurret_02
+			{
+				gunnerCompartments = "Compartment1";			
+			};
+			class CargoTurret_03: CargoTurret_03
+			{
+				gunnerCompartments = "Compartment1";			
+			};
+			class Turret_1: Turret_1 {};
+			class Turret_2: Turret_2 {};
+		};
 	};
 	class TWC_HADRIAN: LIB_MKI_HADRIAN
 	{
