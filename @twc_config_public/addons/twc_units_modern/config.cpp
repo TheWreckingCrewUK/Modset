@@ -93,6 +93,5 @@ class CfgVehicles
 	
 	#include "backpacks.hpp"
 	
-	#include "vehicles.hpp"	
 };
 #include "weapons.hpp"
