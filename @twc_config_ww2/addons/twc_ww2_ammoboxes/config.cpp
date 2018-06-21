@@ -77,7 +77,7 @@ class CfgVehicles {
 		
 		class TransportMagazines {
 			// Thompson .45 ACP 30rnd
-			maga_nc(fow_30Rnd_45acp, 9);
+			maga_nc(LIB_30Rnd_45ACP, 9);
 
 			// Enfield .303 10rnd
 			maga_nc(10Rnd_303_Magazine, 30);
@@ -123,7 +123,7 @@ class CfgVehicles {
 		
 		class TransportMagazines {
 			// Thompson .45 ACP 30rnd
-			maga_nc(fow_30Rnd_45acp, 5);
+			maga_nc(LIB_30Rnd_45ACP, 5);
 			
 			// Enfield .303 10rnd
 			maga_nc(10Rnd_303_Magazine, 18);
