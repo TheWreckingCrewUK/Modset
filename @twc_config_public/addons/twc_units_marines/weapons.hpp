@@ -40,6 +40,15 @@ class cfgWeapons
 	};
 	
 		
+	class twc_ana_m16a4: rhs_weap_m16a4_carryhandle
+	{
+		
+		class WeaponSlotsInfo {
+			class CowsSlot { };
+		};
+	};
+	
+		
 	class twc_rhs_weap_m16a4_acog_lazer: rhs_weap_m16a4_carryhandle
 	{
 		class LinkedItems
