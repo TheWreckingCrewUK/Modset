@@ -31,7 +31,7 @@ class cfgVehicles {
 		functionPriority=1;
 		isGlobal=0;
 		isTriggerActivated=0;
-		isDisposable=0;
+		isDisposable = 0;
 		class Arguments
 		{
 			class enabled
@@ -290,6 +290,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
+		isDisposable = 0;
 		icon = "\twc_framework\ui\virtual_artillery_ca.paa";
 		functionPriority = 1;
 		class Arguments {
@@ -361,6 +362,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
+		isDisposable = 0;
 		icon = "\twc_framework\ui\complete_task_ca.paa";
 		functionPriority = 1;
 		class Arguments {
@@ -411,6 +413,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
+		isDisposable = 0;
 		icon = "\twc_framework\ui\defend_ca.paa";
 		functionPriority = 1;
 		class Arguments
@@ -451,6 +454,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
+		isDisposable = 0;
 		icon = "\twc_framework\ui\air_assault_ca.paa";
 		functionPriority = 1;
 		class Arguments
@@ -523,6 +527,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
+		isDisposable = 0;
 		icon = "\twc_framework\ui\airborne_ca.paa"; // TODO
 		functionPriority = 1;
 		class Arguments
@@ -644,6 +649,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
+		isDisposable = 0;
 		icon = "\twc_framework\ui\attack_plane_ca.paa";
 		functionPriority = 1;
 		class Arguments
@@ -682,24 +688,24 @@ class cfgVehicles {
 		displayName = "Command Message";
 		function = "twc_fnc_moduleCommandMessage";
 		scope = 2;
-		isDisposable = 1;
 		isGlobal = 0;
 		isTriggerActivated = 1;
 		icon = "\twc_framework\ui\command_message_ca.paa";
-		functionPriority = 1;
-		class Arguments
-		{
-			class Message
-			{
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Message {
 				displayName="Message";
 				description="Text To Display";
 				typeName="String";
 				defaultValue="";
 			};
 		};
+
 		class ModuleDescription: ModuleDescription {
 			description = "Send Command A Message";
-			sync[] = {""};
+			sync[] = {"EmptyDetector"};
 		};
 	};
 	
@@ -713,6 +719,7 @@ class cfgVehicles {
 		isTriggerActivated = 0;
 		icon = "\twc_framework\ui\intel_action_ca.paa";
 		functionPriority = 1;
+		isDisposable = 0;
 		class Arguments
 		{
 			class Title
@@ -746,6 +753,7 @@ class cfgVehicles {
 		isTriggerActivated = 0;
 		icon = "\twc_framework\ui\intel_action_variable_ca.paa";
 		functionPriority = 1;
+		isDisposable = 0;
 		
 		class Arguments {
 			class Title {
@@ -786,6 +794,7 @@ class cfgVehicles {
 		isTriggerActivated = 1;
 		icon = "\twc_framework\ui\light_switch_ca.paa";
 		functionPriority = 1;
+		isDisposable = 0;
 		class Arguments
 		{
 			class Status
@@ -829,7 +838,8 @@ class cfgVehicles {
 		function = "twc_fnc_moduleDaisyCutter";
 		scope = 2;
 		isGlobal = 0;
-		isTriggerActivated = 01;
+		isTriggerActivated = 1;
+		isDisposable = 0;
 		icon = "\twc_framework\ui\daisy_cutter_ca.paa";
 		functionPriority = 1;
 		class ModuleDescription: ModuleDescription {
@@ -846,6 +856,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
+		isDisposable = 0;
 		icon = "\twc_framework\ui\stationary_units_ca.paa";
 		functionPriority = 1;
 		class Arguments {};
@@ -863,6 +874,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 1;
+		isDisposable = 0;
 		icon = "\twc_framework\ui\movable_units_ca.paa";
 		functionPriority = 1;
 		class Arguments {};
@@ -880,6 +892,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
+		isDisposable = 0;
 		icon = "\twc_framework\ui\disable_caching_ca.paa";
 		functionPriority = 1;
 		class Arguments {};
@@ -898,6 +911,7 @@ class cfgVehicles {
 		scopeCurator = 0;
 		isGlobal = 1;
 		isTriggerActivated = 0;
+		isDisposable = 0;
 		is3DEN = 1;
 		functionPriority = 1;
 	};
@@ -910,6 +924,7 @@ class cfgVehicles {
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
+		isDisposable = 0;
 		icon = "\twc_framework\ui\ignore_foward_base_ca.paa";
 		functionPriority = 1;
 		class Arguments {};

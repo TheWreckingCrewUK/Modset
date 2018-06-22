@@ -15,6 +15,8 @@
 */
 params ["_message"];
 
+if (!isServer) exitWith {};
+
 if (_message == "") exitWith {};
 if (isNil "twc_JIP_CommandMessage") then { twc_JIP_CommandMessage = []; };
 
@@ -45,5 +47,5 @@ _findTopRanks = {
 	["twc_evh_createDiaryRecord", [_message], _x] call CBA_fnc_targetEvent;
 } forEach allPlayers;
 
-twc_JIP_CommandMessage pushback [_message];
+twc_JIP_CommandMessage pushBack [_message];
 publicVariable "twc_JIP_CommandMessage";
