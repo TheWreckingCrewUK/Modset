@@ -238,7 +238,7 @@ class CfgVehicles {
 	class LIB_AmmoCrate_Mortar_SU;
 	class TWC_AmmoBox_WW2_Static_Portable: LIB_AmmoCrate_Mortar_SU {
 		displayName = "Static Resupply";
-		ace_rearm_defaultSupply = 250;
+		ace_rearm_defaultSupply = 100;
 		
 		scope = 2;
 		scopeCurator = 2;
