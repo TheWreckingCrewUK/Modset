@@ -4,5 +4,5 @@ class CfgLeaflets {
 		text = "We shall fight them on the beaches; we shall never surrender!";
 		texture = "dynamo\images\dunkirk_leaflet_co.paa";
 		model = "";
-	}
+	};
 };
