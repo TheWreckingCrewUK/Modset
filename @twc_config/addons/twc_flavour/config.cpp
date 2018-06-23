@@ -9,3 +9,4 @@ class CfgPatches {
 
 #include "CfgSounds.hpp"
 #include "CfgLeaflets.hpp"
+#include "CfgFunctions.hpp"

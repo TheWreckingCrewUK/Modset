@@ -234,4 +234,18 @@ class CfgVehicles {
 			maga_nc(LIB_1Rnd_flare_yellow, 4);
 		};
 	};
+	
+	class TWC_AmmoBox_WW2_Static_Portable: LIB_BasicWeaponsBox_US {
+		displayName = "Static Resupply";
+		ace_rearm_defaultSupply = 1000;
+		
+		scope = 2;
+		scopeCurator = 2;
+		editorSubcategory = "TWC_WW2_Crates";
+		
+		class TransportWeapons {};
+		class TransportBackpacks {};
+		class TransportItems {};
+		class TransportMagazines {};
+	};
 };
