@@ -235,9 +235,10 @@ class CfgVehicles {
 		};
 	};
 	
-	class TWC_AmmoBox_WW2_Static_Portable: LIB_BasicWeaponsBox_US {
+	class LIB_AmmoCrate_Mortar_SU;
+	class TWC_AmmoBox_WW2_Static_Portable: LIB_AmmoCrate_Mortar_SU {
 		displayName = "Static Resupply";
-		ace_rearm_defaultSupply = 1000;
+		ace_rearm_defaultSupply = 250;
 		
 		scope = 2;
 		scopeCurator = 2;

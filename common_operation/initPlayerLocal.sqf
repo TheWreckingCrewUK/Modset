@@ -4,8 +4,6 @@ if (serverTime < 600) then {
 	[player] remoteExecCall ["twc_fnc_briefingLoadout", (group player)];
 };
 
-[] execVM "tasks.sqf";
-
 if (!isNil "completedTasks") then {
 	{
 		[_x select 0, _x select 1, false] call BIS_fnc_taskSetState;
