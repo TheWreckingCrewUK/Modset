@@ -44,19 +44,19 @@ class CfgPatches {
 class EventHandlers;
 class CfgEditorSubCategories {
 	class Men_WW2 {
-		displayName = "Regular (Late)";
+		displayName = "Infantry (Late)";
 	};
 
 	class Men_WW2_Para {
-		displayName = "Paratroopers (Late)";
+		displayName = "Infantry - Paratroopers (Late)";
 	};
 
 	class Men_1956 {
-		displayName = "Regular (1956)";
+		displayName = "Infantry (1956)";
 	};
 
 	class Regular_Early_WW2 {
-		displayName = "Regular (Early)";
+		displayName = "Infantry (Early)";
 	};
 };
 
@@ -80,7 +80,9 @@ class CfgVehicles {
 	#include "ww2_para.hpp"
 	#include "backpacks.hpp"
 
-	#include "early\regular.hpp"
+	#include "early\infantry.hpp"
+	//#include "late\infantry.hpp"
+	//#include "1956\infantry.hpp"
 };
 
 // class fow_b_uk_p37_blanco;
