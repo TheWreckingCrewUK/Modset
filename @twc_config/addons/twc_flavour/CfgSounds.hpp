@@ -10,24 +10,24 @@ class CfgSounds
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
 	};
-	class twc_banzai_2: banzai_1
+	class twc_banzai_2: twc_banzai_1
 	{
 		name = "banzai_2";
-		sound[] = {"twc_flavour\basilone\sounds\banzai_2.ogg", 30, 1};
+		sound[] = {"twc_flavour\basilone\sounds\banzai_2.ogg", 10, 1};
 	};
-	class twc_banzai_3: banzai_1
+	class twc_banzai_3: twc_banzai_1
 	{
 		name = "banzai_2";
-		sound[] = {"twc_flavour\basilone\sounds\banzai_2.ogg", 30, 1};		
+		sound[] = {"twc_flavour\basilone\sounds\banzai_2.ogg", 10, 1};
 	};
-	class twc_banzai_4: banzai_1
+	class twc_banzai_4: twc_banzai_1
 	{
 		name = "banzai_2";
-		sound[] = {"twc_flavour\basilone\sounds\banzai_2.ogg", 30, 1};		
+		sound[] = {"twc_flavour\basilone\sounds\banzai_2.ogg", 10, 1};
 	};
-	class twc_banzai_5: banzai_1
+	class twc_banzai_5: twc_banzai_1
 	{
 		name = "banzai_2";
-		sound[] = {"twc_flavour\basilone\sounds\banzai_2.ogg", 30, 1};		
+		sound[] = {"twc_flavour\basilone\sounds\banzai_2.ogg", 10, 1};
 	};
 };
