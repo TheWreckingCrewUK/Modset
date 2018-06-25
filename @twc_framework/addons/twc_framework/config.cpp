@@ -8,11 +8,15 @@ class CfgPatches {
 			"twc_moduleKillPlayer",
 			"twc_moduleSetSpectator",
 			"twc_moduleMedicalInfo",
+			"TWC_Module_CommandMessage",
 			"TWC_Module_StationaryUnits",
+			"TWC_Module_MovableUnits",
 			"TWC_Module_ArtillerySpotter",
 			"TWC_Module_ArtilleryPieces",
 			"TWC_Module_DisableCaching",
-			"TWC_Module_VirtualArtillery"
+			"TWC_Module_VirtualArtillery",
+			"TWC_Module_IntelHint",
+			"TWC_Module_IntelHintWithVariable"
 		};
 		
 		weapons[] = {};

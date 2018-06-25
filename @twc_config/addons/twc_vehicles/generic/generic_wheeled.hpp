@@ -30,20 +30,6 @@ class TWC_Vehicle_Generic_LandRoverAmbulance_Woodland: UK3CB_BAF_LandRover_Amb_G
 	class TransportMagazines { };
 	class TransportWeapons { };
 	class TransportBackpacks { };
-	
-	class AnimationSources {
-		class AerialAtuR_Hide {
-			initPhase = 1;
-		};
-
-		class AerialFR_Hide {
-			initPhase = 1;
-		};
-		
-		class ClanLogo_Hide {
-			initPhase = 1;
-		};
-	};
 };
 
 class TWC_Vehicle_Generic_LandRoverAmbulance_Desert: TWC_Vehicle_Generic_LandRoverAmbulance_Woodland {
@@ -53,11 +39,5 @@ class TWC_Vehicle_Generic_LandRoverAmbulance_Desert: TWC_Vehicle_Generic_LandRov
 		"",
 		"",
 		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_base_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_hardtop_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_amb_ext_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
-	};
-
-	class AnimationSources {
-		class Mudguards_Hide {
-			initPhase = 1;
-		};
 	};
 };

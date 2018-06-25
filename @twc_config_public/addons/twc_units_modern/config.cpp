@@ -91,6 +91,7 @@ class CfgVehicles
 	
 	#include "insurgency\units.hpp"
 	
-	#include "backpacks.hpp"	
+	#include "backpacks.hpp"
+	
 };
 #include "weapons.hpp"

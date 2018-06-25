@@ -77,7 +77,7 @@ class CfgVehicles {
 		
 		class TransportMagazines {
 			// Thompson .45 ACP 30rnd
-			maga_nc(fow_30Rnd_45acp, 9);
+			maga_nc(LIB_30Rnd_45ACP, 9);
 
 			// Enfield .303 10rnd
 			maga_nc(10Rnd_303_Magazine, 30);
@@ -123,7 +123,7 @@ class CfgVehicles {
 		
 		class TransportMagazines {
 			// Thompson .45 ACP 30rnd
-			maga_nc(fow_30Rnd_45acp, 5);
+			maga_nc(LIB_30Rnd_45ACP, 5);
 			
 			// Enfield .303 10rnd
 			maga_nc(10Rnd_303_Magazine, 18);
@@ -233,5 +233,20 @@ class CfgVehicles {
 			maga_nc(LIB_1Rnd_flare_green, 4);
 			maga_nc(LIB_1Rnd_flare_yellow, 4);
 		};
+	};
+	
+	class LIB_AmmoCrate_Mortar_SU;
+	class TWC_AmmoBox_WW2_Static_Portable: LIB_AmmoCrate_Mortar_SU {
+		displayName = "Static Resupply";
+		ace_rearm_defaultSupply = 100;
+		
+		scope = 2;
+		scopeCurator = 2;
+		editorSubcategory = "TWC_WW2_Crates";
+		
+		class TransportWeapons {};
+		class TransportBackpacks {};
+		class TransportItems {};
+		class TransportMagazines {};
 	};
 };

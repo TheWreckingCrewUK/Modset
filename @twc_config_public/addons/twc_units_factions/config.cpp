@@ -203,6 +203,10 @@ class CfgEditorSubCategories
 	{
 		displayName="Men";
 	};
+	class Men_nac
+	{
+		displayName="Men";
+	};
 		class Men_tak_twc_ins
 	{
 		displayName="Men (TWC)";
@@ -264,6 +268,12 @@ class CfgFactionClasses
 	class ana_units
 	{
 		displayName="Afghan National Army";
+		priority=2;
+		side=1;
+	};
+	class nac_units
+	{
+		displayName="National Colombian Army";
 		priority=2;
 		side=1;
 	};

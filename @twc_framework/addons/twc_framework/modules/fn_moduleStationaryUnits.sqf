@@ -23,5 +23,5 @@ if (!_activated || !isServer) exitWith {};
 }, [_units], 0.05] call CBA_fnc_waitAndExecute;
 
 if (!isNull _logic) then {
-    deleteVehicle _logic;
+	deleteVehicle _logic;
 };

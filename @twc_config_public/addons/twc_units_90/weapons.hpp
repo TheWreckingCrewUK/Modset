@@ -100,13 +100,8 @@ class cfgWeapons
 		};
 	};
 	
-		class twc_browning_hp: CUP_hgun_Colt1911
-	{
-		scope = 2;
-		displayname = "Browning Hi-Power";
-		magazines[] = {"CUP_15Rnd_9x19_M9", "CUP_10Rnd_9x19_Compact"};
 
-	};
+	
 		class UK3CB_BAF_L85A2_SUSAT:UK3CB_BAF_L85A2
 	{
 		scope = 1;

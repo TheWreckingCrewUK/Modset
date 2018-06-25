@@ -7,6 +7,20 @@ class cfgWeapons
 	class rhs_weap_m27iar_grip;
 	class rhs_weap_m16a4_carryhandle;
 	class rhs_weap_m16a4_carryhandle_M203;
+	class rhs_weap_smaw_green;
+	
+	class twc_smaw: rhs_weap_smaw_green
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhs_weap_optic_smaw";
+			};
+		};
+	};
+	
 	
 	class twc_rhs_weap_m4a1_m203_acog_lazer: rhs_weap_m4a1_m203
 	{
@@ -22,6 +36,15 @@ class cfgWeapons
 				slot="PointerSlot";
 				item="rhsusf_acc_anpeq15A";
 			};
+		};
+	};
+	
+		
+	class twc_ana_m16a4: rhs_weap_m16a4_carryhandle
+	{
+		
+		class WeaponSlotsInfo {
+			class CowsSlot { };
 		};
 	};
 	

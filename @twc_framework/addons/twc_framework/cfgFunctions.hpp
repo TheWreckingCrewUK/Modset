@@ -1,10 +1,7 @@
-class CfgFunctions
-{
-	class TWC
-	{
-		class Functions
-		{
-			file="twc_framework\functions";
+class CfgFunctions {
+	class TWC {
+		class functions {
+			file = "twc_framework\functions";
 			class AirAssault {};
 			class Airborne {};
 			class Artillery{};
@@ -19,6 +16,7 @@ class CfgFunctions
 			class Defend {};
 			class Flagchange {};
 			class intelHint{};
+			class intelHintWithVariable{};
 			class LightsSwitch{};
 			class Patrol {};
 			class patrolRoads{};
@@ -30,6 +28,7 @@ class CfgFunctions
 			class spawnIed{};
 			class setUniform{};
 			class stationaryUnits{};
+			class movableUnits{};
 			class UpdateTask{};
 			class virtualMortar{};
 			class toggleSpectator {};
@@ -39,9 +38,9 @@ class CfgFunctions
 			
 			class init{};
 		};
-		class Modules
-		{
-			file="twc_framework\modules";
+		
+		class modules {
+			file = "twc_framework\modules";
 			class era{};
 			class rollShirt{};
 			class boatSafety{};
@@ -56,6 +55,7 @@ class CfgFunctions
 			class zeus{};
 
 			class moduleStationaryUnits{};
+			class moduleMovableUnits{};
 			class moduleVirtualArtillery{};
 			class moduleUpdateTask{};
 			class moduleDefend{};
@@ -64,14 +64,15 @@ class CfgFunctions
 			class moduleCommandMessage{};
 			class moduleLightsSwitch{};
 			class moduleIntelHint{};
+			class moduleIntelHintWithVariable{};
 			class moduleDaisyCutter{};
 			class moduleDisableCaching {};
 			class moduleGrabComposition {};
 			class moduleIgnoreForwardBase {};
 		};
-		class cache
-		{
-			file="twc_framework\cache";
+		
+		class cache {
+			file = "twc_framework\cache";
 			class aiCaching {};
 			class cacheGroup {};
 			class cacheModuleInit {};
@@ -82,17 +83,17 @@ class CfgFunctions
 			class unCacheVehicle {};
 			class vehicleCaching {};
 		};
-		class headlessClient
-		{
-			file="twc_framework\headlessClient";
+		
+		class headlessClient {
+			file = "twc_framework\headlessClient";
 			class handleSpawn {};
 			class hcModuleInit {};
 			class rebalance {};
 			class transferGroups {};
 		};
-		class curator
-		{
-			file="twc_framework\curator";
+
+		class curator {
+			file = "twc_framework\curator";
 			class healPlayer {};
 			class killPlayer {};
 			class setSpectator {};
@@ -105,6 +106,7 @@ class CfgFunctions
 			class moduleArtillerySpotter {};
 			class moduleArtilleryPieces {};
 		};
+
 		class looseAmmo {
 			file = "twc_framework\looseAmmo";
 			class addLooseAmmoEH {};

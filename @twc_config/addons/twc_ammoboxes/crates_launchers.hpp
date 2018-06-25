@@ -3,7 +3,7 @@
 	"TWC_AmmoBox_Launchers_L1A1_Portable", // m72 law
 */
 
-class TWC_AmmoBox_Launchers_L14_Portable: TWC_AmmoBox_Portable {
+class TWC_AmmoBox_Launchers_L14_Portable: TWC_AmmoBox_Launcher_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "L14A1 - Carl Gustav (Portable)";
@@ -23,7 +23,7 @@ class TWC_AmmoBox_Launchers_L14_Portable: TWC_AmmoBox_Portable {
 	};
 };
 
-class TWC_AmmoBox_Launchers_L1A1_Portable: TWC_AmmoBox_Portable {
+class TWC_AmmoBox_Launchers_L1A1_Portable: TWC_AmmoBox_Launcher_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "L1A1 - M72 LAW (Portable)";
@@ -35,7 +35,7 @@ class TWC_AmmoBox_Launchers_L1A1_Portable: TWC_AmmoBox_Portable {
 	};
 };
 
-class TWC_AmmoBox_Launchers_LAW80_Portable: TWC_AmmoBox_Portable {
+class TWC_AmmoBox_Launchers_LAW80_Portable: TWC_AmmoBox_Launcher_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "L1A1 - LAW 80 (Portable)";
@@ -48,7 +48,7 @@ class TWC_AmmoBox_Launchers_LAW80_Portable: TWC_AmmoBox_Portable {
 };
 
 // Took Riks word for the desgination
-class TWC_AmmoBox_Launchers_L2A1_Portable: TWC_AmmoBox_Portable {
+class TWC_AmmoBox_Launchers_L2A1_Portable: TWC_AmmoBox_Launcher_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "L2A1 - AT4 CS AP (Portable)";
@@ -60,7 +60,7 @@ class TWC_AmmoBox_Launchers_L2A1_Portable: TWC_AmmoBox_Portable {
 	};
 };
 
-class TWC_AmmoBox_Launchers_NLAW_Portable: TWC_AmmoBox_Portable {
+class TWC_AmmoBox_Launchers_NLAW_Portable: TWC_AmmoBox_Launcher_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "NLAW (Portable)";
