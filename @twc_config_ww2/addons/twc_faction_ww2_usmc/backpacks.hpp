@@ -108,4 +108,4 @@ class TWC_Backpack_WW2_USMC_Rockets: fow_b_us_rocket_bag
 			count = 3;
 		};
 	};		
-} 
+};
