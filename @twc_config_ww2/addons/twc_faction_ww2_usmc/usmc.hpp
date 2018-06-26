@@ -713,7 +713,7 @@
 		scope=2;
 		displayName="MG";
 		icon="iconManMG";
-		backpack="fow_b_usa_m1919_support";
+		backpack="";
 		weapons[]=
 		{
 			"Throw",
@@ -741,7 +741,7 @@
 	};
 	class TWC_WW2_USMC_MG_Ass: TWC_WW2_USMC_Rifleman
 	{
-		displayName="MG Assistant";
+		displayName="MG Assistant 1";
 		backpack="TWC_Backpack_WW2_USMC_MG_Ass";
 		linkedItems[]=
 		{
@@ -790,5 +790,10 @@
 			"fow_5Rnd_762x63",
 			"fow_5Rnd_762x63",
 			"fow_5Rnd_762x63"
-		};		
+		};
+	};
+	class TWC_WW2_USMC_MG_Ass_2: TWC_WW2_USMC_MG_Ass
+	{
+		displayName="MG Assistant 2";
+		backpack="fow_b_usa_m1919_support";
 	};

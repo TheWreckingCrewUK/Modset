@@ -1,6 +1,5 @@
 params ["_target", "_player"];
 
-if (!isServer) exitWith {};
 _pos = getPos _target; 
 deleteVehicle _target; 
 _static = "twc_m1919a4_static" createVehicle _pos;

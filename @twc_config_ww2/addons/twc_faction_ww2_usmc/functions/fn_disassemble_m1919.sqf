@@ -1,7 +1,5 @@
 params ["_target","_player"];
 
-if (!isServer) exitWith {}; 
-
 //Get M1919 static position.
 _pos = getPos _target; 
 

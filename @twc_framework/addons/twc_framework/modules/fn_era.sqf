@@ -79,6 +79,21 @@ switch (_era) do {
 			}, true, nil, true] call CBA_fnc_addClassEventHandler;
 		};
 	};
+	case "mmo": {
+		cTab_vehicleClass_has_FBCB2 = [];
+		cTab_vehicleClass_has_TAD = [];
+		
+		approvedFacewear = ["G_Aviator","G_LIB_Dienst_Brille","G_LIB_Dienst_Brille2","G_LIB_Dust_Goggles","G_LIB_GER_Gloves4","G_LIB_GER_Gloves5","G_LIB_GER_Gloves2","G_LIB_GER_Gloves1","G_LIB_GER_Gloves3","CUP_TK_NeckScarf","CUP_FR_NeckScarf","CUP_FR_NeckScarf2","G_Spectacles","G_Squares_Tinted","G_Squares","G_Spectacles_Tinted","G_LIB_Watch2","G_LIB_Watch1"];
+
+		if(isServer)then{
+			["CAManBase","init",{
+				if((side (_this select 0) == West) && (rank (_this select 0) == "PRIVATE" || rank (_this select 0) == "CORPORAL"))then{
+					(_this select 0) unassignItem "itemMap";
+					(_this select 0) removeItem "itemMap";
+				};
+			}, true, nil, true] call CBA_fnc_addClassEventHandler;
+		};
+	};
 	default {
 		["TWC_Modern", [
 		"\twc_framework\ranks\private.paa",

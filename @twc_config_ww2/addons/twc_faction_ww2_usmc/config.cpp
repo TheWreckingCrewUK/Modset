@@ -35,7 +35,7 @@ class Extended_PostInit_EventHandlers
 {
     class twc_faction_ww2_usmc_postinit
     {
-		init = "_action = ['Assemble_M1919A4', 'Assemble M1919A4', '', {[_target, _player] call TWC_WW2_fnc_assemble_m1919}, {(primaryWeapon _player == 'fow_w_m1919a4') && (((getBackpackCargo _target select 0) select 0) == 'fow_b_usa_m1919_support')}] call ace_interact_menu_fnc_createAction; ['GroundWeaponHolder', 0, ['ACE_MainActions'], _action] call ace_interact_menu_fnc_addActionToClass;";
+		init = "_action = ['Assemble_M1919A4', 'Assemble M1919A4', '', {[_target, _player] call TWC_WW2_fnc_assemble_m1919}, {(primaryWeapon _player == 'fow_w_m1919a4') && (((getBackpackCargo _target select 0) select 0) == 'fow_b_usa_m1919_support')}, {}, '', [0, -0.5, 0]] call ace_interact_menu_fnc_createAction; ['GroundWeaponHolder', 0, ['ACE_MainActions'], _action] call ace_interact_menu_fnc_addActionToClass;";
     };
 };
 class CfgFunctions

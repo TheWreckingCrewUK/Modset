@@ -69,6 +69,11 @@ class cfgVehicles {
 						name="WW2";
 						value="ww2";
 					};
+					class mmo
+					{
+						name="MMO";
+						value="mmo";
+					};
 				};
 			};
 			class boatSafety
