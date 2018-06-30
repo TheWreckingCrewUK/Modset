@@ -43,7 +43,7 @@ class UK3CB_BAF_LandRover_Hard_Base: UK3CB_BAF_LandRover_Base
 		
 
 		class EventHandlers: EventHandlers {
-			init = "			_car = (_this select 0);	 _obj = 'TWC_Public_AmmoBox_Hobbs_Precious' createvehicle [0,0,0];  _obj attachto [_car, [-0.9,-0.3,-1.15]];   _obj setVectorDirAndUp [[0,1,0],[1,0,0]]; 		 _obj = 'TWC_Public_AmmoBox_Hobbs_Precious' createvehicle [0,0,0];  _obj attachto [_car, [0.9,-0.35,-1.05]];   _obj setVectorDirAndUp [[0,1,0],[1,0,0]];	_car animate ['sparewheel_hide', 1];		_obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-1.1,-0.25,-0.35]];   _obj setVectorDirAndUp [[0.1,0,1],[0,0,1]]; 	";
+			init = "			_car = (_this select 0);	 _obj = 'TWC_Public_AmmoBox_Hobbs_Precious' createvehicle [0,0,0];  _obj attachto [_car, [-0.9,-0.3,-1.15]];   _obj setVectorDirAndUp [[0,1,0],[1,0,0]]; 		 _obj = 'TWC_Public_AmmoBox_Hobbs_Precious' createvehicle [0,0,0];  _obj attachto [_car, [0.9,-0.35,-1.05]];   _obj setVectorDirAndUp [[0,1,0],[1,0,0]];	_car animate ['sparewheel_hide', 1];		_obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-1.05,-0.25,-0.35]];   _obj setVectorDirAndUp [[0.1,0,1],[0,0,1]]; 	";
 			
 			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
 		};
@@ -124,6 +124,27 @@ class CUP_Wolfhound_Base : Wheeled_APC_F
 			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
 		};
 	};
+	
+	
+	class UK3CB_BAF_LandRover_Hard_FFR_Green_A;
+    class UK3CB_BAF_LandRover_Hard_FFR_Green_A_TWCBaseRadio: UK3CB_BAF_LandRover_Hard_FFR_Green_A {
+		displayname = "Land Rover TWC Base Radio";
+        class AcreRacks {
+           class Rack_1 {
+               displayName = "Dash"; // Name is displayed in the interaction menu.
+               shortName = "Dash";
+               componentName = "ACRE_VRC103";
+               allowedPositions[] = {"inside", "external"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+               disabledPositions[] = {};
+               defaultComponents[] = {};
+               mountedRadio = "ACRE_PRC117F";                 // Predefined mounted radio
+               isRadioRemovable = 0;
+    
+           };
+       }
+    };
+	
+	
 	
 	/*
 	

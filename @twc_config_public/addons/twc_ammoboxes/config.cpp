@@ -302,6 +302,7 @@ class CfgVehicles
 		scopeCurator = 1; // hide from zeus
 		displayName = "Storage Box (Hobbs Trick Box)";
 		author      = "Bosenator";
+		model = "a3\structures_f\Items\Tools\DustMask_F.p3d";
 
 		class TransportMagazines { };
 		class TransportItems     { };
