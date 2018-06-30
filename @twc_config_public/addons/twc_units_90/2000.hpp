@@ -364,7 +364,7 @@
 	{
 		scope=2;
 		displayName="Helicopter Pilot (00's Woodland)";
-		backpack="TWC_Backpack_USMC_vehiclecommander";
+		backpack="";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -673,7 +673,7 @@
 		displayName="Vehicle Commander (00's Woodland)";
 		scope=2;
 		uniformClass="CUP_U_B_USArmy_Soft";
-		backpack="TWC_Backpack_2000_vehicle";
+		backpack="";
 		linkedItems[]=
 		{
 			"rhsusf_iotv_ucp_Repair",
@@ -723,6 +723,22 @@
 	{
 		displayName="Vehicle Crew (00's Woodland)";
 		backpack="";
+		linkedItems[]=
+		{
+			"CUP_V_PMC_IOTV_Black_Empty",
+			"UK3CB_BAF_H_CrewHelmet_B",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_PMC_IOTV_Black_Empty",
+			"UK3CB_BAF_H_CrewHelmet_B",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 	};
 //////////////////////////////////////////////////////////////////
 //                                                              //
@@ -1505,13 +1521,4 @@
 			"ItemCompass",
 			"ItemWatch"
 		};
-			class ACE_SelfActions:B_Soldier_base_F {
-				class base_Interact {
-					displayName = "Base";
-					condition = "true";
-					exceptions[] = {};
-					statement = "true";
-				};
-            
-        };
 	};

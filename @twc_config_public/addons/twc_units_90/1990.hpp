@@ -1896,15 +1896,6 @@
 			"ItemCompass",
 			"ItemWatch"
 		};
-			class ACE_SelfActions:B_Soldier_base_F {
-				class base_Interact {
-					displayName = "Base";
-					condition = "true";
-					exceptions[] = {};
-					statement = "true";
-				};
-            
-        };
 	};
 //////////////////////////////////////////////////////////////////
 //                                                              //

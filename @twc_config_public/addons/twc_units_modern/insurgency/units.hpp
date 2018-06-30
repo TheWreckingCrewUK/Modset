@@ -955,6 +955,35 @@
 		"HandGrenade",
 		"SmokeShell"
 		};
+		
+		Items[]=
+		{
+		"ACE_fieldDressing",
+		"ACRE_PRC148",
+		"ACE_EarPlugs",
+		"CUP_NVG_PVS14",
+		"ACE_RangeCard",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine"
+		};
+		respawnItems[]=
+		{
+		"ACE_fieldDressing",
+		"ACRE_PRC148",
+		"ACE_EarPlugs",
+		"CUP_NVG_PVS14",
+		"ACE_RangeCard",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_morphine"
+		};
 	};
 	
 		class twc_ana_medic: twc_ana_base
