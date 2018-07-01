@@ -50,6 +50,7 @@ class CfgPatches {
 			"a3_characters_f_gamma",
 			"rhs_c_weapons",
 			"rhsusf_c_weapons",
+			"uk3cb_baf_vehicles_landrover",
 			"uk3cb_baf_weapons_smallarms"
 		};
 	};
@@ -92,6 +93,8 @@ class CfgVehicles
 	#include "insurgency\units.hpp"
 	
 	#include "backpacks.hpp"
+	
+	#include "vehicles.hpp"
 	
 };
 #include "weapons.hpp"

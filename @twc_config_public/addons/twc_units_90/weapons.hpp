@@ -81,7 +81,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L115";
-				item="CUP_optic_Leupold_VX3";
+				item="rhsusf_acc_M8541";
 			};
 		};
 	};
@@ -95,7 +95,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L115";
-				item="CUP_optic_Leupold_VX3";
+				item="rhsusf_acc_M8541";
 			};
 		};
 	};

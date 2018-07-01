@@ -229,16 +229,6 @@
 		};
 		
 
-			
-			class ACE_SelfActions:B_Soldier_base_F {
-				class base_Interact {
-					displayName = "Base";
-					condition = "true";
-					exceptions[] = {};
-					statement = "true";
-				};
-            
-        };
 	};
 
 
@@ -750,7 +740,7 @@
 		scope=2;
 		displayName="Helicopter Pilot";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
-		backpack="TWC_Backpack_Modern_HeloPilot";
+		backpack="";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -801,7 +791,25 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 {
 		scope=2;
 		displayName="Helicopter Crew Chief";
-		backpack="TWC_Backpack_Modern_HeloPilot";
+		backpack="";
+		linkedItems[]=
+		{
+			"H_PilotHelmetHeli_B",
+			"UK3CB_BAF_V_Pilot_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"itemCTAB"
+		};
+		respawnLinkedItems[]=
+		{
+			"H_PilotHelmetHeli_B",
+			"UK3CB_BAF_V_Pilot_A",
+			"ItemMap",		
+			"ItemCompass",
+			"ItemWatch",
+			"itemCTAB"
+		};
 };
 
 	class Modern_British_JetPilot: Modern_British_Base
@@ -1168,12 +1176,12 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		magazines[]=
 		{
 			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd"
 		};
 		Respawnmagazines[]=
 		{
 			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd"
 		};
 	};
 	class Modern_British_VehicleCrew: Modern_British_Base
@@ -1229,7 +1237,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		displayName="Armour Commander";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		backpack="TWC_Backpack_Modern_HeloPilot";
+		backpack="";
 		linkedItems[]=
 		{	
 			"UK3CB_BAF_H_CrewHelmet_ESS_A",

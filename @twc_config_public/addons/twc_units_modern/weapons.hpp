@@ -211,6 +211,7 @@ class cfgWeapons
 	{
 		magazines[] = {"rhs_10Rnd_762x54mmR_7N1", "CUP_10Rnd_762x54_SVD_M"};
 	};
+	
 	class rhs_weap_m4a1;
 	class twc_m4_acog_grip_laser: rhs_weap_m4a1
 	{
@@ -252,6 +253,59 @@ class cfgWeapons
 				item="rhs_acc_2dpZenit_ris";
 			};
 		};
+	};
+	/////////////////////////
+	//adding scope turrets
+	
+	class ItemCore;
+	class RKSL_optic_LDS: ItemCore {
+	
+	
+		ACE_ScopeAdjust_Horizontal[] = {-4,4};
+		ACE_ScopeAdjust_HorizontalIncrement = 0.1;
+		ACE_ScopeAdjust_Vertical[] = {-10,10};
+		ACE_ScopeAdjust_VerticalIncrement = 0.1;
+		ACE_ScopeHeightAboveRail = 3.9386;
+		
+	};
+	
+	
+	
+	class UK3CB_BAF_SUSAT: ItemCore {
+	
+	
+		ACE_ScopeAdjust_Horizontal[] = {-4,4};
+		ACE_ScopeAdjust_HorizontalIncrement = 0.5;
+		ACE_ScopeAdjust_Vertical[] = {-10,10};
+		ACE_ScopeAdjust_VerticalIncrement = 0.5;
+		ACE_ScopeHeightAboveRail = 4.21386;
+		
+	};
+	
+	
+	
+	class UK3CB_BAF_TA648: ItemCore {
+	
+	
+		ACE_ScopeAdjust_Horizontal[] = {-4,4};
+		ACE_ScopeAdjust_HorizontalIncrement = 0.1;
+		ACE_ScopeAdjust_Vertical[] = {-10,10};
+		ACE_ScopeAdjust_VerticalIncrement = 0.1;
+		ACE_ScopeHeightAboveRail = 4.21386;
+		
+	};
+	
+	
+	class rhs_acc_sniper_base;
+	class rhs_acc_pso1m2: rhs_acc_sniper_base {
+	
+	
+		ACE_ScopeAdjust_Horizontal[] = {-4,4};
+		ACE_ScopeAdjust_HorizontalIncrement = 0.5;
+		ACE_ScopeAdjust_Vertical[] = {-10,10};
+		ACE_ScopeAdjust_VerticalIncrement = 0.5;
+		ACE_ScopeHeightAboveRail = 4.41386;
+		
 	};
 	
 	
