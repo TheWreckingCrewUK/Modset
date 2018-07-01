@@ -1176,12 +1176,12 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		magazines[]=
 		{
 			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd"
 		};
 		Respawnmagazines[]=
 		{
 			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd"
 		};
 	};
 	class Modern_British_VehicleCrew: Modern_British_Base
