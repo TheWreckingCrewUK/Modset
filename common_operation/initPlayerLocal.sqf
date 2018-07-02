@@ -57,10 +57,11 @@ if (isMultiplayer) then {
 	};
 };
 
-player createDiarySubject ["Intel", "Intel"];
+player createDiarySubject ["Intel", "Radio Messages"];
+player createDiarySubject ["Convo", "Conversations Log"];
 
 if (!(isNil "twc_JIP_CommandMessage")) then {
 	{
-		player createDiaryRecord ["Diary", ["Intel", _x]];
+		player createDiaryRecord ["Diary", ["Radio Message", _x]];
 	} forEach twc_JIP_CommandMessage;
 };

@@ -17,8 +17,24 @@
 */
 if(!isServer)exitWith{};
 
-params["_unit","_name","_string"];
+params["_unit", "_name", "_string"];
 
-_unit setVariable ["intelHint",_string,true];
+_unit setVariable ["intelHint", _string, true];
 
-[_unit, [_name,{hint ((_this select 0) getVariable "intelHint")},nil,6,true,false,"","true",7,false]] remoteExecCall ["addAction",[0,-2] select isDedicated,true];
+[_unit
+	[_name,
+		{
+			_message = ((_this select 0) getVariable "intelHint");
+			hint _message;
+			player createDiaryRecord ["Convo", ["Conversation", _message]];
+		},
+		nil,
+		6,
+		true,
+		false,
+		"",
+		"true",
+		7,
+		false
+	]
+] remoteExecCall ["addAction", [0, -2] select isDedicated, true];

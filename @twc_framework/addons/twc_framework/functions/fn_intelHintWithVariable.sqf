@@ -24,20 +24,22 @@ params["_unit", "_name", "_string", "_variableName"];
 _unit setVariable ["intelHint", _string, true];
 missionNamespace setVariable [_variableName, false, true];
 
-[_unit, 
+[_unit,
 	[
 	_name,
-	{
-		hint ((_this select 0) getVariable "intelHint");
-		missionNamespace setVariable [(_this select 3), true, true];
-	},
-	_variableName,
-	6,
-	true,
-	false,
-	"",
-	"true",
-	7,
-	false
+		{
+			_message = ((_this select 0) getVariable "intelHint");
+			hint _message;
+			player createDiaryRecord ["Convo", ["Conversation", _message]];
+			missionNamespace setVariable [(_this select 3), true, true];
+		},
+		_variableName,
+		6,
+		true,
+		false,
+		"",
+		"true",
+		7,
+		false
 	]
 ] remoteExecCall ["addAction", [0,-2] select isDedicated, true];

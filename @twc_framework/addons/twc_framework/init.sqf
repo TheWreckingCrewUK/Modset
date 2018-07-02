@@ -74,7 +74,8 @@ player addEventHandler ["Killed",{
 
 */
 ["twc_evh_fnc_setSpectator", { [(_this select 0)] call twc_fnc_toggleSpectator; }] call CBA_fnc_addEventHandler;
-["twc_evh_createDiaryRecord", { player createDiaryRecord ["Diary", ["Intel", (_this select 0)]]; }] call CBA_fnc_addEventHandler;
+["twc_evh_createDiaryRecord", { player createDiaryRecord ["Diary", ["Radio Message", (_this select 0)]]; }] call CBA_fnc_addEventHandler;
+["twc_evh_createConvoRecord", { player createDiaryRecord ["Convo", ["Conversation", (_this select 0)]]; }] call CBA_fnc_addEventHandler;
 
 if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {systemChat "twcModuleEnabled was Nil"};
 
