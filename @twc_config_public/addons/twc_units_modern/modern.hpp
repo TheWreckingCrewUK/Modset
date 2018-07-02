@@ -785,6 +785,42 @@
 			"SmokeShell",
 			"SmokeShell"
 		};
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACRE_PRC148",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
+		respawnitems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACRE_PRC148",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
 	};
 
 class Modern_British_crewchief:Modern_British_HeliPilot
