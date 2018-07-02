@@ -5,6 +5,7 @@ class CfgPatches {
 		requiredVersion = 1.7;
 
 		requiredAddons[] = {
+			"cup_airvehicles_av8b",
 			"uk3cb_baf_weapons_smallarms",
 			"UK3CB_BAF_Vehicles"
 		};
@@ -37,3 +38,21 @@ class CfgWeapons {
 	};
 };
 
+class CfgVehicles {
+	class Plane;
+	class CUP_AV8B_Base : Plane {
+		class AcreRacks {
+	   		class Rack_1 {
+		       		displayName = "Radio"; // Name is displayed in the interaction menu.
+				shortName = "Radio";
+				componentName = "ACRE_VRC103";
+				allowedPositions[] = {"inside", "external"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+				disabledPositions[] = {};
+				defaultComponents[] = {};
+				mountedRadio = "ACRE_PRC117F"; // Predefined mounted radio
+				isRadioRemovable = 0;
+			};
+       		};
+			
+	};	
+};
