@@ -254,6 +254,25 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	class rhs_weap_m24sws_blk;
+	class rhs_weap_m24sws_blk_ana: rhs_weap_m24sws_blk
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_M8541";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="UnderBarrelSlot";
+				item="rhsusf_acc_harris_swivel";
+			};
+		};
+	};
 	/////////////////////////
 	//adding scope turrets
 	
@@ -285,6 +304,19 @@ class cfgWeapons
 	
 	
 	class UK3CB_BAF_TA648: ItemCore {
+	
+	
+		ACE_ScopeAdjust_Horizontal[] = {-4,4};
+		ACE_ScopeAdjust_HorizontalIncrement = 0.1;
+		ACE_ScopeAdjust_Vertical[] = {-10,10};
+		ACE_ScopeAdjust_VerticalIncrement = 0.1;
+		ACE_ScopeHeightAboveRail = 4.21386;
+		
+	};
+	
+	
+	
+	class UK3CB_BAF_Kite: ItemCore {
 	
 	
 		ACE_ScopeAdjust_Horizontal[] = {-4,4};
@@ -359,7 +391,14 @@ class cfgmagazines{
 		{
 			ammo = rhs_40mm_white;
 			displayName="L5A4 Round (White)";
-		};			
+		};	
+
+
+
+		class CA_Magazine;
+		class 10Rnd_RHS_50BMG_Box: CA_Magazine {
+			mass = 48;
+		};
 };	
 
 
