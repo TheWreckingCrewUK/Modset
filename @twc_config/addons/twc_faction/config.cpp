@@ -139,7 +139,7 @@ class CfgEditorSubcategories {
 		displayName = "Infantry (COIN)";
 	};
 	
-	class TWC_Infantry_Dismounted {
+	class TWC_Infantry_Dismounted_COIN {
 		displayName = "Infantry (COIN) - Dismounted";
 	};
 };
