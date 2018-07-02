@@ -33,7 +33,7 @@ class WW2_British_Platoon_Commander_Early: WW2_British_Base {
 		"TWC_No1Mk3SignalGun"
 	};
 
-	respawnweapons[] = {
+	respawnWeapons[] = {
 		"Throw",
 		"Put",
 		"Binocular",
@@ -52,7 +52,7 @@ class WW2_British_Platoon_Commander_Early: WW2_British_Base {
 		"SmokeShell"
 	};
 
-	Respawnmagazines[] = {
+	respawnMagazines[] = {
 		"LIB_30Rnd_45ACP",
 		"LIB_30Rnd_45ACP",
 		"LIB_30Rnd_45ACP",
@@ -94,7 +94,7 @@ class WW2_British_Medic_Early: WW2_British_Base {
 		"LIB_M1928_Thompson"
 	};
 
-	respawnweapons[] = {
+	respawnWeapons[] = {
 		"Throw",
 		"Put",
 		"LIB_M1928_Thompson"
@@ -109,7 +109,7 @@ class WW2_British_Medic_Early: WW2_British_Base {
 		"SmokeShell"
 	};
 
-	Respawnmagazines[] = {
+	respawnMagazines[] = {
 		"LIB_50Rnd_45ACP",
 		"LIB_30Rnd_45ACP",
 		"LIB_30Rnd_45ACP",
@@ -151,7 +151,7 @@ class WW2_British_Section_Commander_Early: WW2_British_Base {
 		"TWC_No1Mk3SignalGun"
 	};
 
-	respawnweapons[] = {
+	respawnWeapons[] = {
 		"Throw",
 		"Put",
 		"LIB_M1928_Thompson",
@@ -174,7 +174,7 @@ class WW2_British_Section_Commander_Early: WW2_British_Base {
 		"SmokeShell"
 	};
 
-	Respawnmagazines[] = {
+	respawnMagazines[] = {
 		"LIB_30Rnd_45ACP",
 		"LIB_30Rnd_45ACP",
 		"LIB_30Rnd_45ACP",
