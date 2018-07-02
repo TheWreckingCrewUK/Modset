@@ -17,7 +17,8 @@ class CfgPatches {
 			"A3_Air_F_Beta",
 			"CBA_XEH_A3",
 			"ace_common",
-			"ace_interaction"
+			"ace_interaction",
+			"TWC_gearFixes"
 		};
 	};
 };

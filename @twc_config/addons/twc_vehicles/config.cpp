@@ -114,6 +114,7 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"A3_Armor_F_Beta",
+			"TWC_gearFixes"
 			
 			"A3_Boat_F_Exp_Boat_Transport_01",
 			"A3_Boat_F_Exp_Boat_Transport_02",
