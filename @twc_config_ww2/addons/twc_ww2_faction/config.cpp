@@ -69,16 +69,18 @@ class CfgVehicles {
 
 	#include "base_units.hpp"
 
-	#include "1956.hpp"
-	#include "backpacks.hpp"
-
 	#include "early\infantry.hpp"
 	#include "late\infantry.hpp"
 	#include "late\paratroopers.hpp"
-	//#include "1956\infantry.hpp"
+	#include "1956\infantry.hpp"
+	
+	#include "aussie\backpacks.hpp"
 };
 
 // class fow_b_uk_p37_blanco;
 class CfgWeapons {
-	#include "vests.hpp"
+	class ItemCore;
+	class VestItem;
+
+	#include "aussie\vests.hpp"
 };
