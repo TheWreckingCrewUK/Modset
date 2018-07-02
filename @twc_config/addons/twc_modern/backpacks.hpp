@@ -6,6 +6,7 @@
 	class UK3CB_BAF_B_Bergen_MTP_Medic_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A;
 	class UK3CB_BAF_B_Bergen_MTP_JTAC_L_A;
+	class UK3CB_BAF_B_Bergen_MTP_Radio_L_B;
 	
 	class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
 	class B_AssaultPack_blk;
@@ -514,6 +515,24 @@
 			{
 				magazine = "1Rnd_SmokePurple_Grenade_shell";
 				count = 3;
+			};
+		};
+	};
+	class TWC_Backpack_Modern_FO: UK3CB_BAF_B_Bergen_MTP_Radio_L_B
+	{
+		scope = 1;
+		mass = 59.84;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+			class _xx_ACE_DAGR
+			{
+				name = "ACE_DAGR";
+				count = 1;
 			};
 		};
 	};

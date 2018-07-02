@@ -956,7 +956,7 @@
 	class Modern_British_FAC: Modern_British_Base
 	{
 		scope=2;
-		displayName="Section FAC";
+		displayName="Platoon FAC";
 		backpack="TWC_Backpack_Modern_FAC";
 		linkedItems[]=
 		{
@@ -1038,6 +1038,135 @@
 			"SmokeShellPurple",
 			"SmokeShellPurple"
 		};
+	};
+	class Modern_British_FO: Modern_British_Base
+	{
+		scope=2;
+		displayName="Platoon FO";
+		backpack="TWC_Backpack_Modern_FO";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
+			"UK3CB_BAF_H_Mk7_Net_ESS_A",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
+			"UK3CB_BAF_H_Mk7_Net_ESS_A",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_VectorDay",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_VectorDay",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell"
+		};
+	};
+	class Modern_British_Artillery_Commander: Modern_British_Base
+	{
+		scope=2;
+		displayName="Artillery Commander";
+		backpack="TWC_Backpack_Modern_FO";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
+			"UK3CB_BAF_H_Mk7_Net_ESS_A",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
+			"UK3CB_BAF_H_Mk7_Net_ESS_A",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_VectorDay",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_VectorDay",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell"
+		};		
+	};
+	class Modern_British_Artillery_Crew: Modern_British_Artillery_Commander
+	{
+		displayName="Artillery Crew";
+		backpack="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A";		
 	};
 
 	//////////////////////////////  Mounted  //////////////////////////////

@@ -30,4 +30,10 @@ class CfgSounds
 		name = "banzai_2";
 		sound[] = {"twc_flavour\basilone\sounds\banzai_2.ogg", 1, 1};
 	};
+	class twc_radio_chatter
+	{
+		name = "radio_chatter";
+		sound[] = {"twc_flavour\basilone\sounds\banzai_1.ogg", 1, 1};
+		titles[] = {};		
+	};
 };
