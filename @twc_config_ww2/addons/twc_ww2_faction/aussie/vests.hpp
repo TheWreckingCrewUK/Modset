@@ -1,6 +1,3 @@
-class ItemCore;
-class VestItem;
-
 class fow_v_base;
 class fow_v_uk_base: fow_v_base { class ItemInfo; };
 class fow_v_uk_base_green: fow_v_uk_base {

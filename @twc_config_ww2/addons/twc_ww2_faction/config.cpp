@@ -43,26 +43,18 @@ class CfgPatches {
 
 class EventHandlers;
 class CfgEditorSubCategories {
-	class Men_WW2 {
-		displayName = "Regular (Late)";
+	class TWC_Infantry_WW2_1956 {
+		displayName = "Infantry (1956)";
 	};
 
-	class Men_WW2_Para {
-		displayName = "Paratroopers (Late)";
-	};
-
-	class Men_1956 {
-		displayName = "Regular (1956)";
-	};
-
-	class Regular_Early_WW2 {
-		displayName = "Regular (Early)";
+	class TWC_Infantry_WW2_Early {
+		displayName = "Infantry (Pre 42)";
 	};
 };
 
 class CfgFactionClasses {
 	class twc_faction_independent {
-		displayName = "TWC WW2 Operation Units";
+		displayName = "TWC Operations - WW2";
 		author = "Saxon, Bosenator, Rik";
 		icon = "TWClogo.paa";
 		priority = 2;
@@ -75,15 +67,20 @@ class CfgVehicles {
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 
-	#include "ww2.hpp"
-	#include "1956.hpp"
-	#include "ww2_para.hpp"
-	#include "backpacks.hpp"
+	#include "base_units.hpp"
 
-	#include "early\regular.hpp"
+	#include "early\infantry.hpp"
+	#include "late\infantry.hpp"
+	#include "late\paratroopers.hpp"
+	#include "1956\infantry.hpp"
+	
+	#include "aussie\backpacks.hpp"
 };
 
 // class fow_b_uk_p37_blanco;
 class CfgWeapons {
-	#include "vests.hpp"
+	class ItemCore;
+	class VestItem;
+
+	#include "aussie\vests.hpp"
 };
