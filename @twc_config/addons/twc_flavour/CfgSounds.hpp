@@ -36,4 +36,10 @@ class CfgSounds
 		sound[] = {"twc_flavour\sounds\radio_chatter.ogg", 1, 1};
 		titles[] = {};		
 	};
+	class twc_bugle_call
+	{
+		name = "bugle_call";
+		sound[] = {"twc_flavour\sounds\bugle_call.ogg", 1, 1};
+		titles[] = {};			
+	};
 };
