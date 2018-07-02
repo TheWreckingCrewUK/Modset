@@ -28,7 +28,7 @@ missionNamespace setVariable [_variableName, false, true];
 	[
 	_name,
 		{
-			_message = ((_this select 0) getVariable "intelHint");
+			_message = (_this select 0) getVariable ["intelHint", ""];
 			hint _message;
 			player createDiaryRecord ["Convo", ["Conversation", _message]];
 			missionNamespace setVariable [(_this select 3), true, true];

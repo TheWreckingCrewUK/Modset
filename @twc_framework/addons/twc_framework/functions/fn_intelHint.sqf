@@ -25,11 +25,11 @@ _unit setVariable ["intelHint", _string, true];
 	[
 	_name,
 		{
-			_message = ((_this select 0) getVariable "intelHint");
+			_message = (_this select 0) getVariable ["intelHint", ""];
 			hint _message;
 			player createDiaryRecord ["Convo", ["Conversation", _message]];
 		},
-		nil,
+		[],
 		6,
 		true,
 		false,
