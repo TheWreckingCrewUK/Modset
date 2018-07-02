@@ -21,7 +21,7 @@ params["_unit", "_name", "_string"];
 
 _unit setVariable ["intelHint", _string, true];
 
-[_unit
+[_unit,
 	[
 	_name,
 		{
