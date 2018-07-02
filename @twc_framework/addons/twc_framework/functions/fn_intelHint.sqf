@@ -22,7 +22,8 @@ params["_unit", "_name", "_string"];
 _unit setVariable ["intelHint", _string, true];
 
 [_unit
-	[_name,
+	[
+	_name,
 		{
 			_message = ((_this select 0) getVariable "intelHint");
 			hint _message;
