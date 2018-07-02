@@ -1,7 +1,7 @@
 class WW2_British_Platoon_Commander_Early: WW2_British_Base {
 	scope = 2;
 	displayName = "Platoon Commander";
-	editorSubcategory = "Regular_Early_WW2";
+	editorSubcategory = "TWC_Infantry_WW2_Early";
 	uniformClass = "fow_u_uk_bd40_01_lieutenant";
 	backpack = "TWC_Backpack_WW2_SL";
 
@@ -67,7 +67,7 @@ class WW2_British_Platoon_Commander_Early: WW2_British_Base {
 class WW2_British_Medic_Early: WW2_British_Base {
 	scope = 2;
 	displayName = "Medic";
-	editorSubcategory = "Regular_Early_WW2";
+	editorSubcategory = "TWC_Infantry_WW2_Early";
 	uniformClass = "fow_u_uk_bd40_01_private";
 	backpack = "TWC_Backpack_WW2_Medic";
 	attendant = 1;
@@ -122,7 +122,7 @@ class WW2_British_Medic_Early: WW2_British_Base {
 class WW2_British_Section_Commander_Early: WW2_British_Base {
 	scope = 2;
 	displayName = "Section Commander";
-	editorSubcategory = "Regular_Early_WW2";
+	editorSubcategory = "TWC_Infantry_WW2_Early";
 	icon = "iconManLeader";
 	nakedUniform = "U_BasicBody";
 	uniformClass = "fow_u_uk_bd40_01_corporal";

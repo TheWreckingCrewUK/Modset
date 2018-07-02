@@ -43,19 +43,11 @@ class CfgPatches {
 
 class EventHandlers;
 class CfgEditorSubCategories {
-	class Men_WW2 {
-		displayName = "Infantry";
-	};
-
-	class Men_WW2_Para {
-		displayName = "Paratroopers";
-	};
-
-	class Men_1956 {
+	class TWC_Infantry_WW2_1956 {
 		displayName = "Infantry (1956)";
 	};
 
-	class Regular_Early_WW2 {
+	class TWC_Infantry_WW2_Early {
 		displayName = "Infantry (Pre 42)";
 	};
 };
@@ -78,11 +70,11 @@ class CfgVehicles {
 	#include "base_units.hpp"
 
 	#include "1956.hpp"
-	#include "ww2_para.hpp"
 	#include "backpacks.hpp"
 
 	#include "early\infantry.hpp"
 	#include "late\infantry.hpp"
+	#include "late\paratroopers.hpp"
 	//#include "1956\infantry.hpp"
 };
 

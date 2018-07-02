@@ -3,8 +3,8 @@
 		scope=1;
 		displayName="Base";
 		faction="twc_faction_independent";
-		editorSubcategory = "Men_1956";
-		vehicleClass="Men_1956";
+		editorSubcategory = "TWC_Infantry_WW2_1956";
+		vehicleClass="TWC_Infantry_WW2_1956";
 		nakedUniform="U_BasicBody";
 		uniformClass="fow_u_uk_parasmock";
 		linkedItems[]=

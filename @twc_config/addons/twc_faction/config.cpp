@@ -117,12 +117,29 @@ class CfgEditorSubcategories {
 		displayName = "Mechanised";
 	};
 	
-	class TWC_ForceType_Dismounted {
-		displayName = "Dismounted";
-	};
-	
 	// Attachments & Other
 	class TWC_ForceType_Special {
 		displayName = "Special";
+	};
+	
+	// Infantry Related
+	class TWC_Infantry_Regular {
+		displayName = "Infantry";
+	};
+	
+	class TWC_Infantry_Dismounted {
+		displayName = "Infantry - Dismounted";
+	};
+	
+	class TWC_Infantry_Paratroopers {
+		displayName = "Paratroopers";
+	};
+	
+	class TWC_Infantry_Regular_COIN {
+		displayName = "Infantry (COIN)";
+	};
+	
+	class TWC_Infantry_Dismounted {
+		displayName = "Infantry (COIN) - Dismounted";
 	};
 };
