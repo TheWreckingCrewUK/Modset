@@ -111,3 +111,21 @@ class CUP_B_C130J_Cargo_GB: CUP_C130J_VIV_Base {
 		};
 	};
 };
+
+class CUP_B_F35B_USMC;
+class CUP_B_F35B_BAF: CUP_B_F35B_USMC {
+	acre_hasInfantryPhone = 0;
+
+	class AcreRacks {
+		class Rack_1 {
+			displayName = "Vehicle Radio";
+			shortName = "Vehicle Radio";
+			componentName = "ACRE_VRC103";
+			allowedPositions[] = {"inside"};
+			disabledPositions[] = {};
+			defaultComponents[] = {};
+			mountedRadio = "ACRE_PRC117F";
+			isRadioRemovable = 0;
+		};
+	};
+};
