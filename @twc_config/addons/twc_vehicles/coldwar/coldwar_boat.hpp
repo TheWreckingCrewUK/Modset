@@ -21,11 +21,11 @@ class TWC_Vehicle_ColdWar_RHIB_Black: I_C_Boat_Transport_02_F {
 		class Rack_1 {
 			displayName = "Vehicle Radio";
 			shortName = "Vehicle Radio";
-			componentName = "ACRE_VRC103";
+			componentName = "ACRE_VRC64";
 			allowedPositions[] = {"driver"};
 			disabledPositions[] = {};
 			defaultComponents[] = {};
-			mountedRadio = "ACRE_PRC117F";
+			mountedRadio = "ACRE_PRC77";
 			isRadioRemovable = 0;
 		};
 	};

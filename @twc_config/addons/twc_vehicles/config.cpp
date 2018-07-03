@@ -1,28 +1,6 @@
 class CfgPatches {
 	class TWC_Vehicles {
 		units[] = {
-			// OLD CLASS NAMES, DELETE IN A FEW MONTHS
-			"twc_landrover_W",
-			"twc_landrover_D",
-			"twc_landrover_Special_W",
-			"twc_landrover_Special_D",
-			"twc_landrover_W_1990",
-			"twc_landrover_D_1990",
-			"twc_landrover_Special_W_1990",
-			"twc_landrover_Special_D_1900",
-			"twc_landrover_W_ColdWar",
-			"twc_landrover_D_ColdWar",
-			"twc_landrover_Special_W_ColdWar",
-			"twc_landrover_Special_D_ColdWar",
-			"TWC_Warrior_D",
-			"TWC_Warrior_W",
-			"twc_wildcat",
-			"twc_wildcat_1990",
-			"twc_puma",
-			"TWC_fv432",
-			"TWC_burnes_foxhound_d_a",
-			"TWC_burnes_foxhound_w_a",
-			
 			// TWC Vehicles
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Woodland",
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Desert",
