@@ -27,7 +27,7 @@ class CfgPatches {
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Woodland",
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Desert",
 			"TWC_Vehicle_Generic_FV432Ambulance_Chameleon",
-			"TWC_Vehicle_Generic_Hercules_RAF",
+			"TWC_Vehicle_Generic_Hercules_RAF_VIV",
 			"TWC_Vehicle_Generic_Chinook_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF_VIV",
 			"TWC_Vehicle_Generic_Gazelle",
@@ -47,6 +47,8 @@ class CfgPatches {
 			"TWC_Vehicle_ColdWar_Scorpion_Chameleon",
 			"TWC_Vehicle_ColdWar_Chieftain_Woodland",
 			"TWC_Vehicle_ColdWar_HarrierGR3_RAF",
+			"TWC_Vehicle_ColdWar_RHIB_Black",
+			"TWC_Vehicle_ColdWar_Hercules_RAF_VIV",
 			
 			"TWC_Vehicle_Millennial_HarrierGR5_RAF",
 			"TWC_Vehicle_Millennial_FV432_Woodland",
