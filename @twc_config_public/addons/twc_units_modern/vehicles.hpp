@@ -17,7 +17,7 @@ class EventHandlers;};
 		antiRollbarForceCoef = 4.0;
 		antiRollbarForceLimit = 3;
 		differentialType = "all_limited";
-		frontRearSplit = 0.3
+		frontRearSplit = 0.3;
 		frontBias = 1.1;
 		rearBias = 2.5;
 		centreBias = 1.5;
