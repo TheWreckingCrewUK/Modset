@@ -13,6 +13,7 @@ if (!isNil "completedTasks") then {
 if (isMultiplayer) then {
 	[] Spawn {
 		waitUntil{!(isNil "BIS_fnc_init")};
+		enableRadio false;
 		playMusic "Theme";
 		titleCut ["", "BLACK FADED", 999];
 		

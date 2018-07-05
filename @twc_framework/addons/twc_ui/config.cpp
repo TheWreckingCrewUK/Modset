@@ -15,7 +15,7 @@ class CfgPatches {
 		url = "http://thewreckingcrew.eu";
 		version = 1;
 		versionStr = "1";
-    };
+	};
 };
 
 class CfgFunctions {
@@ -44,3 +44,4 @@ class CfgFunctions {
 
 #include "RscTitles.hpp"
 #include "DefaultVehicleSystemsDisplayManager.hpp"
+#include "RadioProtocolBase.hpp"
