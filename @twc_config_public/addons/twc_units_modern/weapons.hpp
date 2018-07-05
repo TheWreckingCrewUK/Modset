@@ -162,6 +162,7 @@ class cfgWeapons
 	{
 		scope = 1;
 		author = "jayman";
+		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -270,6 +271,20 @@ class cfgWeapons
 			{
 				slot="UnderBarrelSlot";
 				item="rhsusf_acc_harris_swivel";
+			};
+		};
+	};
+	
+	class rhs_weap_M107;
+	class twc_rhs_weap_M107: rhs_weap_M107
+	{
+		accessories[] = {"rhsusf_acc_premier"};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_premier";
 			};
 		};
 	};

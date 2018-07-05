@@ -335,7 +335,7 @@
 
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_338_5Rnd",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
@@ -346,7 +346,7 @@
 
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_338_5Rnd",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
