@@ -7,7 +7,8 @@ class CfgPatches {
 		
 		requiredAddons[] = {
 			"cba_main",
-			"A3_Modules_F"
+			"A3_Modules_F",
+			"A3_Dubbing_Radio_F"
 		};
 		
 		author = "Bosenator";
