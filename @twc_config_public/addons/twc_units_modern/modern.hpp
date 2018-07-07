@@ -1271,6 +1271,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		scope=2;
 		displayName="MERT Medic";
 		icon="iconManMedic";
+		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
 		attendant = 1;
 		linkedItems[]=
 		{
