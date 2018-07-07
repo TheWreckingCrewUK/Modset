@@ -121,11 +121,18 @@ class Wheeled_APC_F: Car_F {
 	};
 	
 		
-class UK3CB_BAF_LandRover_WMIK_Base: UK3CB_BAF_LandRover_Base {
+	class UK3CB_BAF_LandRover_WMIK_Base: UK3CB_BAF_LandRover_Base {
 			class EventHandlers;
-};
+	};
 
+	class CUP_CH47F_base;
+	class CUP_B_CH47F_GB: CUP_CH47F_base {
+		class EventHandlers;
+	};
 	
+	class twc_mert_ch47: CUP_B_CH47F_GB {
+		displayname = "CH-47D (MERT)";
+	};
 	
 	
 	class Quadbike_01_base_F: Car_F {

@@ -735,6 +735,7 @@
 			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
 		};
 	};
+
 	class Modern_British_HeliPilot: Modern_British_Base
 	{
 		scope=2;
@@ -847,6 +848,51 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"itemCTAB"
 		};
 };
+	class Modern_British_MERT_HeliPilot: Modern_British_HeliPilot
+	{
+		scope=2;
+		displayName="MERT Helicopter Pilot";
+		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		backpack="";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Pilot_A",
+			"CUP_H_BAF_Helmet_Pilot",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"itemCTAB"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Pilot_A",
+			"CUP_H_BAF_Helmet_Pilot",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"itemCTAB"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"SmokeShell",
+			"SmokeShell"
+		};
+	};
 
 	class Modern_British_JetPilot: Modern_British_Base
 	{
@@ -1218,6 +1264,147 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd"
+		};
+	};
+	class Modern_British_Medic_Mert: Modern_British_Base
+	{
+		scope=2;
+		displayName="MERT Medic";
+		icon="iconManMedic";
+		attendant = 1;
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Medic_C",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Medic_C",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		items[]=
+		{
+			"ACE_personalAidKit",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
+		Respawnitems[]=
+		{
+			"ACE_personalAidKit",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
 		};
 	};
 	class Modern_British_VehicleCrew: Modern_British_Base
