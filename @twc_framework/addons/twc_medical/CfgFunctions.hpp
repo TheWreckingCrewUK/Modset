@@ -30,6 +30,7 @@ class CfgFunctions {
 			class Defib_Local {};
 
 			// Suture
+			class canSuture {};
 			class sutureKitTime {};
 			class sutureKitProgress {};
 			class removeSutureThread {};

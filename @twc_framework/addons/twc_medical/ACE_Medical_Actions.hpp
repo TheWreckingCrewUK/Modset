@@ -6,7 +6,7 @@ class ACE_Medical_Actions {
 			animationCaller = "AinvPknlMstpSnonWnonDr_medic0";
 			animationCallerProne = "AinvPknlMstpSnonWnonDr_medic0";
 		};
-		
+
 		class Defib: CPR {
 			displayName = "Defibrillate";
 			displayNameProgress = "Defibrillating...";
@@ -57,6 +57,7 @@ class ACE_Medical_Actions {
 			displayName = "Use Suture Kit";
 			displayNameProgress = "Suturing";
 			category = "advanced";
+			condition = "[(_this select 0), (_this select 1)] call twc_medical_fnc_canSuture";
 
 			items[] = {
 				"TWC_Item_Medical_SutureKit_1",
@@ -90,7 +91,12 @@ class ACE_Medical_Actions {
 			callbackProgress = "this call twc_medical_fnc_sutureKitProgress"; // removes suture kit per wound
 			itemConsumed = 0;
 			animationCaller = "AinvPknlMstpSnonWnonDnon_medic1";
-			litter[] = { {"All", "", {"ACE_MedicalLitter_gloves"} }};
+
+			litter[] = {
+				{"All", "", {"ACE_MedicalLitter_gloves"}},
+				{"All", "", {{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}},
+				{"All", "", {{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}}
+			};
 		};
 	};
 };
