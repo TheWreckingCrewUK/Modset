@@ -11,7 +11,7 @@ class CfgFunctions {
 			class logToRPT {};
 			class moduleMedical {};
 			class fullyBandageUnit {};
-			
+
 			// Uncon Loop
 			class extendedUnconLoop {};
 			class handleUncon {};
@@ -28,6 +28,10 @@ class CfgFunctions {
 			class canDefib {};
 			class Defib {};
 			class Defib_Local {};
+
+			// Suture
+			class sutureKitTime {};
+			class sutureKitProgress {};
 
 			// Bloodlust Compat & Insta-Kill
 			class bloodlustInit {};
