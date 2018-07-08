@@ -11,7 +11,7 @@ params ["_caller"];
 		// decrease the count by one, this is why we have common classname structure!
 		_sutureArray = _x splitString "_";
 		_suturePriorCount = parseNumber (_sutureArray select 4);
-		_sutureNewCount = (_sutureNewCount - 1);
+		_sutureNewCount = (_suturePriorCount - 1);
 
 		_caller removeItem _x;
 		// something went horribly wrong ?
