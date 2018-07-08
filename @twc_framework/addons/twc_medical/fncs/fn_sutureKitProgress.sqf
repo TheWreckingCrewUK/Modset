@@ -13,6 +13,13 @@ if ({_x isKindOf "TWC_Item_Medical_SutureKit_1"} count (items _caller) < 1) exit
 if ((_totalTime - _elapsedTime) <= (((count _bandagedWounds) - 1) * 20)) then {
 	_bandagedWounds deleteAt 0;
 	_target setVariable ["ace_medical_bandagedWounds", _bandagedWounds, true];
+
+	if !(isNull objectParent player) then {
+		playSound3D ["twc_medical\sounds\suturing.ogg", player, false, getPosASL player, 5, 1, 10];
+	} else {
+		playSound3D ["twc_medical\sounds\suturing.ogg", vehicle player, true, getPosASL (vehicle player), 5, 1, 8];
+	};
+
 	[_caller] call twc_medical_fnc_removeSutureThread;
 };
 

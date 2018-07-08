@@ -49,6 +49,7 @@ class Extended_InitPost_EventHandlers {
 };
 
 #include "CfgFunctions.hpp"
+#include "CfgSounds.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "ACE_Medical_Actions.hpp"
