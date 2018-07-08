@@ -32,6 +32,7 @@ class CfgFunctions {
 			// Suture
 			class sutureKitTime {};
 			class sutureKitProgress {};
+			class removeSutureThread {};
 
 			// Bloodlust Compat & Insta-Kill
 			class bloodlustInit {};

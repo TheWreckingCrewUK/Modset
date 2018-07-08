@@ -18,7 +18,7 @@ class CfgWeapons {
 	class TWC_Item_Medical_SutureKit_1: ACE_surgicalKit {
 		scope = 2;
 		author = "Bosenator";
-		displayName= "Suture Kit (1 Use)";
+		displayName= "Suture Kit (1 Thread)";
 		descriptionShort = "One suture remaining, consumed on use";
 		descriptionUse = "One suture remaining, consumed on use";
 
@@ -29,7 +29,7 @@ class CfgWeapons {
 
 	#define ADD_SUTURE_KIT(NUMBER) \
 	class TWC_Item_Medical_SutureKit_##NUMBER : TWC_Item_Medical_SutureKit_1 { \
-		displayName = "Suture Kit (##NUMBER Uses)"; \
+		displayName = "Suture Kit (##NUMBER Thread)"; \
 	}
 
 	ADD_SUTURE_KIT(2);
