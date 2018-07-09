@@ -190,3 +190,55 @@ class WW2_British_Section_Commander_Early: WW2_British_Base {
 		"SmokeShell"
 	};
 };
+
+class WW2_British_AT_Early: WW2_British_Base {
+	scope = 2;
+	displayName = "AT Rifleman";
+	editorSubcategory = "TWC_Infantry_WW2_Early";
+	uniformClass = "fow_u_uk_bd40_01_private";
+	backpack = "TWC_Backpack_WW2_Boys";
+
+	weapons[] = {
+		"Throw",
+		"Put",
+		"twc_boys_at_rifle",
+		"fow_w_webley"
+	};
+
+	respawnWeapons[] = {
+		"Throw",
+		"Put",
+		"twc_boys_at_rifle",
+		"fow_w_webley"
+	};
+
+	magazines[] = {
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"fow_6Rnd_455",
+		"fow_6Rnd_455",
+		"twc_no82"
+	};
+
+	respawnMagazines[] = {
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"twc_boys_5rnd_mag",
+		"fow_6Rnd_455",
+		"fow_6Rnd_455",
+		"twc_no82"
+	};	
+};

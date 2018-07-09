@@ -70,7 +70,9 @@ class CfgVehicles {
 	#include "base_units.hpp"
 
 	#include "early\infantry.hpp"
+	#include "early\backpacks.hpp"
 	#include "late\infantry.hpp"
+	#include "late\backpacks.hpp"
 	#include "late\paratroopers.hpp"
 	#include "1956\infantry.hpp"
 	
