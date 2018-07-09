@@ -47,11 +47,11 @@ _return = "Patrol Base Created Successfully";
 _return
 
 
-_trg = createTrigger ["EmptyDetector", _pos];
+/* _trg = createTrigger ["EmptyDetector", _pos];
 _trg setTriggerArea [400 , 400, 0, false];
 _trg setTriggerActivation ["east", "PRESENT", true];
 _trg setTriggerTimeout [30,30,30, true];
-_trg setTriggerStatements ["this","_table = nearestobject [getpos thistrigger,'twc_radioTable']; [_table] call twc_fnc_tearDownForwardBase; deletevehicle thistrigger",""];
+_trg setTriggerStatements ["this","_table = nearestobject [getpos thistrigger,'twc_radioTable']; [_table] call twc_fnc_tearDownForwardBase; deletevehicle thistrigger",""]; */
 
 }
 else
