@@ -287,6 +287,51 @@ class cfgVehicles {
 		displayName = "Hint Unit Medical Info";
 	};
 
+	class TWC_Module_CreateTask: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Create Task";
+		function = "twc_fnc_moduleCreateTask";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\complete_task_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Id {
+				displayName="Task ID";
+				description="Unique Task ID";
+				typeName="String";
+				defaultValue="";
+			};
+			class Description {
+				displayName="Description";
+				description="Task Description";
+				typeName="String";
+				defaultValue="";
+			};
+			class Title {
+				displayName="Title";
+				description="Task Title";
+				typeName="String";
+				defaultValue="";
+			};
+			class Position {
+				displayName="Position";
+				description="Position can be either marker, object, or position.";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Creates a new Task.";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+
 	class TWC_Module_VirtualArtillery: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";

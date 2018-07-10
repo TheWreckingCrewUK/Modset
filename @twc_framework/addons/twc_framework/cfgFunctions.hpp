@@ -53,7 +53,7 @@ class CfgFunctions {
 			class run{};
 			class safeZone{};
 			class zeus{};
-
+			class moduleCreateTask;
 			class moduleStationaryUnits{};
 			class moduleMovableUnits{};
 			class moduleVirtualArtillery{};
