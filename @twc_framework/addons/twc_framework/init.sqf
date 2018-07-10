@@ -88,3 +88,19 @@ waitUntil{missionNameSpace getVariable "twcModuleFinished"};
 [(missionNameSpace getVariable "run")] spawn twc_fnc_run;
 [(missionNameSpace getVariable "safeZone")] spawn twc_fnc_safeZone;
 [(missionNameSpace getVariable "zuesObjects")] spawn twc_fnc_zeus;
+
+EM_blacklist_obj = [
+	"Land_Mil_WiredFence_F", 
+	"Land_New_WireFence_5m_F", 
+	"Land_New_WiredFence_5m_F",
+	"Land_New_WireFence_10m_F",
+	"Land_I44_Buildings_Barbedwire2",
+	"Land_I44_Buildings_Barbedwire",
+	"Land_CSA38_zataras2",
+	"Land_fow_Barbedwire",
+	"WireFence",
+	"Wire",
+	"Fort_RazorWire",
+	"Land_WW2_wire_1",
+	"LIB_B_Hedgerows_big"
+];

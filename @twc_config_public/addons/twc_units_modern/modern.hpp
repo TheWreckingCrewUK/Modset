@@ -954,12 +954,11 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 	class Modern_British_Sniper: Modern_British_Base {
 		scope=2;
 		displayName="Sniper";
-		uniformClass="U_B_FullGhillie_sard";
+		uniformClass="CUP_U_B_BAF_DPM_Ghillie";
 		icon="iconManLeader";
 		backpack="";
 		linkedItems[]= {
 			"UK3CB_BAF_V_PLCE_Webbing_MTP",
-			"UK3CB_BAF_H_Mk7_Scrim_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -967,7 +966,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 
 		respawnLinkedItems[]= {
 			"UK3CB_BAF_V_PLCE_Webbing_MTP",
-			"UK3CB_BAF_H_Mk7_Scrim_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -990,6 +988,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
@@ -1001,6 +1001,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
@@ -1010,31 +1012,10 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 	};
 
-	class Modern_British_Spotter: Modern_British_Base {
+	class Modern_British_Spotter: Modern_British_Sniper {
 		scope=2;
 		displayName="Spotter";
-		uniformClass="U_B_FullGhillie_sard";
 		icon="iconManLeader";
-		backpack="TWC_Backpack_Modern_Spotter_coin";
-		linkedItems[]= {
-			"UK3CB_BAF_V_PLCE_Webbing_MTP",
-			"UK3CB_BAF_H_Mk7_Scrim_A",
-			"ItemMap",
-			"ItemcTab",
-			"ItemCompass",
-			"ACE_Vector",
-			"ItemWatch"
-		};
-
-		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_PLCE_Webbing_MTP",
-			"UK3CB_BAF_H_Mk7_Scrim_A",
-			"ItemMap",
-			"ItemcTab",
-			"ItemCompass",
-			"ACE_Vector",
-			"ItemWatch"
-		};
 
 		Items[]= {
 			"ACE_Kestrel4500",

@@ -57,6 +57,7 @@ class CfgFunctions {
 			class moduleStationaryUnits{};
 			class moduleMovableUnits{};
 			class moduleVirtualArtillery{};
+			class moduleArtillery{};
 			class moduleUpdateTask{};
 			class moduleDefend{};
 			class moduleAirAssault{};

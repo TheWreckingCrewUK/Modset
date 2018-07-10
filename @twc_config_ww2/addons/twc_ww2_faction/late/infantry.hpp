@@ -444,22 +444,28 @@ class WW2_British_AT: WW2_British_Base {
 	weapons[] = {
 		"Throw",
 		"Put",
-		"fow_w_piat"
+		"fow_w_piat",
+		"fow_w_webley"
 	};
 
 	respawnWeapons[] = {
 		"Throw",
 		"Put",
-		"fow_w_piat"
+		"fow_w_piat",
+		"fow_w_webley"
 	};
 
 	magazines[] = {
 		"fow_1Rnd_piat_HEAT",
+		"fow_6Rnd_455",
+		"fow_6Rnd_455",
 		"twc_no82"
 	};
 
 	respawnMagazines[] = {
 		"fow_1Rnd_piat_HEAT",
+		"fow_6Rnd_455",
+		"fow_6Rnd_455",
 		"twc_no82"
 	};
 };
