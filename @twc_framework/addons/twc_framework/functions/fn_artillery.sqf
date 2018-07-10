@@ -31,9 +31,14 @@ if (isServer || !hasInterface) then {
 		case "ILLUM": {_Roundtype = 1;};
 		default { _Roundtype =  0;};
 	};
-	_mortar dowatch getmarkerpos _marker;
-	
-	_center = markerPos _marker;
+	_center = _marker;
+	if (typeName _marker == "OBJECT") then {
+		_center = markerPos _marker;
+	};
+	if (typeName _mortar == "ARRAY") then {
+		_mortar = _mortar select 0;
+	};
+	_mortar dowatch _center;
 	
 	for "_i" from 0 to _rounds do {
 
@@ -42,6 +47,16 @@ if (isServer || !hasInterface) then {
 		(_center select 1) - _radius + (2 * random _radius),
 		0
 	];
+
+	if (typeOf _mortar == "LIB_GrWr34_ACE") then {
+		_magazine = "";
+		switch (_Roundtype) do {
+			case 0: {_magazine = "LIB_1Rnd_81mm_Mo_HE"};
+			case 1: {_magazine = "LIB_1Rnd_81mm_Mo_Illum"};
+			case 2: {_magazine = "LIB_1Rnd_81mm_Mo_Smoke"};
+		};
+		_mortar addMagazineTurret [_magazine, [0]];
+	};
 
 	_mortar commandArtilleryFire [
 		_pos,

@@ -315,12 +315,12 @@ class cfgVehicles {
 					class Smoke
 					{
 						name="Smoke";
-						value="smoke";
+						value="SMOKE";
 					};
 					class Illum
 					{
 						name="Illum";
-						value="illum";
+						value="ILLUM";
 					};
 				};
 			};
@@ -351,6 +351,71 @@ class cfgVehicles {
 				description="Area marker defined SafeZone";
 				typeName="String";
 				defaultValue="nil";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Call in Virtual Artillery";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+	
+	class TWC_Module_Artillery: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Artillery";
+		function = "twc_fnc_moduleArtillery";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\virtual_artillery_ca.paa";
+		functionPriority = 1;
+		class Arguments {
+			class Type
+			{
+				displayName="Type";
+				description="Type Of Ordinance";
+				typeName="STRING";
+				defaultValue="HE";
+				class values
+				{
+					class HE
+					{
+						name="HE";
+						value="HE";
+					};
+					class Smoke
+					{
+						name="Smoke";
+						value="SMOKE";
+					};
+					class Illum
+					{
+						name="Illum";
+						value="ILLUM";
+					};
+				};
+			};
+			class Rounds
+			{
+				displayName = "Rounds";
+				description="Number of rounds";
+				typeName="Number";
+				defaultValue=5;
+			};
+			class Dispersion
+			{
+				displayName = "Dispersion";
+				description="Dispersion diameter";
+				typeName="Number";
+				defaultValue=250;
+			};
+			class Delay
+			{
+				displayName = "Delay";
+				description="Delay between rounds";
+				typeName="Number";
+				defaultValue=10;
 			};
 		};
 		class ModuleDescription: ModuleDescription {
