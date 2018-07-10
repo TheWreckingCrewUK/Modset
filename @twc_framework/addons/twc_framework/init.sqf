@@ -89,7 +89,7 @@ waitUntil{missionNameSpace getVariable "twcModuleFinished"};
 [(missionNameSpace getVariable "safeZone")] spawn twc_fnc_safeZone;
 [(missionNameSpace getVariable "zuesObjects")] spawn twc_fnc_zeus;
 
-EM_blacklist_obj = [ 
+EM_blacklist_obj = [
 	"Land_Mil_WiredFence_F", 
 	"Land_New_WireFence_5m_F", 
 	"Land_New_WiredFence_5m_F",
