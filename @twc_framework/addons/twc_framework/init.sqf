@@ -101,5 +101,6 @@ EM_blacklist_obj = [
 	"WireFence",
 	"Wire",
 	"Fort_RazorWire",
-	"Land_WW2_wire_1"
+	"Land_WW2_wire_1",
+	"LIB_B_Hedgerows_big"
 ];
