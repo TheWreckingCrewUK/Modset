@@ -31,7 +31,7 @@ if (isServer) then {
 	switch (_Roundselect) do {
 		case "HE": {_Roundtype = "ModuleOrdnanceMortar_F";};
 		case "SMOKE": {_Roundtype = "Smokeshell";};
-		case "ILLUM": {_Roundtype = "ACE_HandFlare_White";};
+		case "ILLUM": {_Roundtype = "F_40mm_White";};
 		default { _Roundtype =  "ModuleOrdnanceMortar_F";};
 	};
 

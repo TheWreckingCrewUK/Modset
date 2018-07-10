@@ -22,7 +22,3 @@ _dispersion = _logic getVariable "Dispersion";
 _delay = _logic getVariable "Delay";
 
 [_units, getPos _logic, _dispersion, _rounds, _type, _delay] call twc_fnc_artillery;
-
-if (!isNull _logic) then {
-	deleteVehicle _logic;
-};
