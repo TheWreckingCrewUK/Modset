@@ -213,6 +213,97 @@ class cfgWeapons
 		magazines[] = {"rhs_10Rnd_762x54mmR_7N1", "CUP_10Rnd_762x54_SVD_M"};
 	};
 	
+	class rhs_weap_ak74m_zenitco01_b33;
+	class twc_ak74_pol: rhs_weap_ak74m_zenitco01_b33
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_eotech_552";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhs_acc_2dpZenit";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhs_acc_dtk1";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="GripodSlot";
+				item="rhsusf_acc_grip3";
+			};
+		};
+	};
+	
+	class rhs_weap_ak74m_2mag_npz;
+	class twc_ak74_pol_2: rhs_weap_ak74m_2mag_npz
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_eotech_552";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhs_acc_2dpZenit";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="GripodSlot";
+				item="rhs_acc_dtk1";
+			};
+		};
+	};
+	
+	class rhs_weap_ak74mr_gp25;
+	class twc_ak74_gp25_pol: rhs_weap_ak74mr_gp25
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_eotech_552";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhs_acc_2dpZenit";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhs_acc_dtk1";
+			};
+		};
+	};
+	
+	class rhs_weap_rpg7;
+	class twc_rpg_pol: rhs_weap_rpg7
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhs_acc_pgo7v3";
+			};
+		};
+	};
+	
 	class rhs_weap_m4a1;
 	class twc_m4_acog_grip_laser: rhs_weap_m4a1
 	{
