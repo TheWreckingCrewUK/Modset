@@ -70,7 +70,7 @@
 		{
 			class _xx_pkm
 			{
-				magazine = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
+				magazine = "rhs_100Rnd_762x54mmR_7N26";
 				count = 4;
 			};
 			
