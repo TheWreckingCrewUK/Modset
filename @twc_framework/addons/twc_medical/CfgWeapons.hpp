@@ -28,7 +28,7 @@ class CfgWeapons {
 	};
 
 	#define ADD_SUTURE_KIT(NUMBER) class TWC_Item_Medical_SutureKit_##NUMBER : TWC_Item_Medical_SutureKit_1 { \
-		displayName = "Suture Kit (##NUMBER Threads)"; \
+		displayName = __EVAL("Suture Kit (" + str NUMBER + " Threads)"); \
 	}
 
 	ADD_SUTURE_KIT(2);

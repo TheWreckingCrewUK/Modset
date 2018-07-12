@@ -2,7 +2,7 @@ params ["_caller"];
 
 {
 	// first one we come across, we'll remove
-	if (_x isKindOf "TWC_Item_Medical_SutureKit_1") exitWith {
+	if (_x isKindOf ["TWC_Item_Medical_SutureKit_1", configFile >> "CfgWeapons"]) exitWith {
 		// no threads left, good bye kit!
 		if (_x == "TWC_Item_Medical_SutureKit_1") exitWith {
 			_caller removeItem _x;

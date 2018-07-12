@@ -59,36 +59,15 @@ class ACE_Medical_Actions {
 			category = "advanced";
 			condition = "[(_this select 0), (_this select 1)] call twc_medical_fnc_canSuture";
 
-			items[] = {
-				"TWC_Item_Medical_SutureKit_1",
-				"TWC_Item_Medical_SutureKit_2",
-				"TWC_Item_Medical_SutureKit_3",
-				"TWC_Item_Medical_SutureKit_4",
-				"TWC_Item_Medical_SutureKit_5",
-				"TWC_Item_Medical_SutureKit_6",
-				"TWC_Item_Medical_SutureKit_7",
-				"TWC_Item_Medical_SutureKit_8",
-				"TWC_Item_Medical_SutureKit_9",
-				"TWC_Item_Medical_SutureKit_10",
-				"TWC_Item_Medical_SutureKit_11",
-				"TWC_Item_Medical_SutureKit_12",
-				"TWC_Item_Medical_SutureKit_13",
-				"TWC_Item_Medical_SutureKit_14",
-				"TWC_Item_Medical_SutureKit_15",
-				"TWC_Item_Medical_SutureKit_16",
-				"TWC_Item_Medical_SutureKit_17",
-				"TWC_Item_Medical_SutureKit_18",
-				"TWC_Item_Medical_SutureKit_19",
-				"TWC_Item_Medical_SutureKit_20"
-			};
-
+			// custom handler for items check, to ignore shared gear
+			items[] = {};
 			treatmentLocations[] = {"All"};
 			allowSelfTreatment = 0;
 			requiredMedic = 1;
 			patientStateCondition = 0;
-			treatmentTime = "[_target] call twc_medical_fnc_sutureKitTime";
+			treatmentTime = "twc_medical_fnc_sutureKitTime";
 			callbackSuccess = "";
-			callbackProgress = "this call twc_medical_fnc_sutureKitProgress"; // removes suture kit per wound
+			callbackProgress = "twc_medical_fnc_sutureKitProgress"; // removes suture kit per wound
 			itemConsumed = 0;
 			animationCaller = "AinvPknlMstpSnonWnonDnon_medic1";
 
