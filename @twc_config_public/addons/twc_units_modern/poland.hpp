@@ -434,6 +434,7 @@
 	{
 		scope=2;
 		displayName="Medic";
+		attendant = 1;
 		backpack="pol_backpack_medic";
 	};
 	
