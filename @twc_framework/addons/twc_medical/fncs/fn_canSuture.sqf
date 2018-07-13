@@ -1,4 +1,4 @@
-params ["_caller", "_target", "_selection"];
+params ["_caller", "_target", "_selectionName"];
 
 if !(_target isKindOf "CAManBase") exitWith { false };
 if (_caller == _target) exitwith { false };

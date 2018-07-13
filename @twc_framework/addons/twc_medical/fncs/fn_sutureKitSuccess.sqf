@@ -1,26 +1,34 @@
-params ["_args", "_elapsedTime", "_totalTime"];
-_args params ["_caller", "_target"];
+params ["_args"];
+_args params ["_caller", "_target", "_selectionName", "_className", "_items", "_usersOfItems"];
 
-private _bandagedWounds = _target getVariable ["ace_medical_bandagedWounds", []];
-
-//In case two people stitch up one patient and the last wound has already been closed we can stop already
-if (count _bandagedWounds == 0) exitWith { false };
+// reset sound boolean
+_caller setVariable ["TWC_Played_Suture", false, true];
 
 // check if the treater has at least one suture thread
 if (({_x isKindOf ["TWC_Item_Medical_SutureKit_1", configFile >> "CfgWeapons"]} count (items player)) < 1) exitWith { false };
 
-//Has enough time elapsed that we can close another wound?
-if ((_totalTime - _elapsedTime) <= (((count _bandagedWounds) - 1) * 20)) then {
-	_bandagedWounds deleteAt 0;
-	_target setVariable ["ace_medical_bandagedWounds", _bandagedWounds, true];
+private _returnData = [_target, _selectionName] call twc_medical_fnc_selectSutureWound;
+private _isBandagedWound = _returnData[0];
+private _woundData = _returnData[1];
 
-	if !(isNull objectParent player) then {
-		playSound3D ["twc_medical\sounds\suturing.ogg", player, false, getPosASL player, 15, 1, 10];
-	} else {
-		playSound3D ["twc_medical\sounds\suturing.ogg", vehicle player, true, getPosASL (vehicle player), 10, 1, 8];
-	};
+private _openWounds = _target getVariable ['ACE_Medical_openWounds', []];
+private _bandagedWounds = _target getVariable ['ACE_Medical_bandagedWounds', []];
 
-	[_caller] call twc_medical_fnc_removeSutureThread;
+if ((count _woundData) < 1) exitWith { false };
+
+private _openWoundData = +_woundData;
+private _bandagedWoundData = +_woundData;
+
+if (_isBandagedWound) then { _openWoundData set [3, 0]; };
+
+_openWounds deleteAt (_openWounds find _openWoundData);
+_target setVariable ["ACE_Medical_openWounds", _openWounds, true];
+
+if (_isBandagedWound) then {
+	_bandagedWounds deleteAt (_bandagedWounds find _bandagedWoundData);
+	_target setVariable ["ACE_Medical_bandagedWounds", _bandagedWounds, true];
 };
+
+[_caller] call twc_medical_fnc_removeSutureThread;
 
 true
