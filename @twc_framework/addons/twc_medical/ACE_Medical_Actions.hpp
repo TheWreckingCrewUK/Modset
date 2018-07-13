@@ -57,7 +57,7 @@ class ACE_Medical_Actions {
 			displayName = "Use Suture Kit";
 			displayNameProgress = "Suturing";
 			category = "advanced";
-			condition = "[(_this select 0), (_this select 1)] call twc_medical_fnc_canSuture";
+			condition = "twc_medical_fnc_canSuture";
 
 			// custom handler for items check, to ignore shared gear
 			items[] = {};
@@ -66,8 +66,8 @@ class ACE_Medical_Actions {
 			requiredMedic = 1;
 			patientStateCondition = 0;
 			treatmentTime = "twc_medical_fnc_sutureKitTime";
-			callbackSuccess = "";
-			callbackProgress = "twc_medical_fnc_sutureKitProgress"; // removes suture kit per wound
+			callbackSuccess = "twc_medical_fnc_sutureKitSuccess";
+			callbackProgress = "";
 			itemConsumed = 0;
 			animationCaller = "AinvPknlMstpSnonWnonDnon_medic1";
 

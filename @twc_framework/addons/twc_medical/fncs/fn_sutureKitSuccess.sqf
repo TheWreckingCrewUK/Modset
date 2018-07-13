@@ -15,9 +15,9 @@ if ((_totalTime - _elapsedTime) <= (((count _bandagedWounds) - 1) * 20)) then {
 	_target setVariable ["ace_medical_bandagedWounds", _bandagedWounds, true];
 
 	if !(isNull objectParent player) then {
-		playSound3D ["twc_medical\sounds\suturing.ogg", player, false, getPosASL player, 5, 1, 10];
+		playSound3D ["twc_medical\sounds\suturing.ogg", player, false, getPosASL player, 15, 1, 10];
 	} else {
-		playSound3D ["twc_medical\sounds\suturing.ogg", vehicle player, true, getPosASL (vehicle player), 5, 1, 8];
+		playSound3D ["twc_medical\sounds\suturing.ogg", vehicle player, true, getPosASL (vehicle player), 10, 1, 8];
 	};
 
 	[_caller] call twc_medical_fnc_removeSutureThread;
