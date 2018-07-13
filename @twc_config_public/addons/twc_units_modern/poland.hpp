@@ -200,7 +200,7 @@
 	{
 		scope=2;
 		displayName="Grenadier";
-		backpack="pol_backpack_mg";
+		backpack="pol_backpack_rif";
 		weapons[]=
 		{
 			"Throw",
@@ -434,6 +434,7 @@
 	{
 		scope=2;
 		displayName="Medic";
+		attendant = 1;
 		backpack="pol_backpack_medic";
 	};
 	

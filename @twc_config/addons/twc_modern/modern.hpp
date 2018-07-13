@@ -1481,7 +1481,7 @@
 	};
 	class Modern_British_2IC_COIN: Modern_British_Pointman
 	{
-		displayName="Grenadier";
+		displayName="2iC";
 		editorSubcategory = "Men_Modern_COIN";
 		vehicleClass="Men_Modern_COIN";
 		backpack="TWC_Backpack_Modern_2IC";
