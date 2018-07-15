@@ -1,7 +1,7 @@
 	//////////////////////////////  COIN  //////////////////////////////
 	class Modern_British_Pointman: Modern_British_Rifleman
 	{
-		displayName="Alpha Pointman";
+		displayName="Pointman";
 		backpack = "TWC_Backpack_Modern_Pointman";
 		linkedItems[]= {
 			"UK3CB_BAF_V_Osprey_Rifleman_B",
@@ -67,7 +67,7 @@
 	};
 
 	class Modern_British_Grenadier_COIN: Modern_British_Grenadier {
-		displayName="Alpha Grenadier";
+		displayName="Grenadier";
 		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]= {
 			"Throw",
@@ -129,7 +129,7 @@
 	};
 
 	class Modern_British_Autorifleman_COIN: Modern_British_Autorifleman {
-		displayName="Alpha Automatic Rifleman";
+		displayName="Automatic Rifleman";
 		weapons[]= {
 			"Throw",
 			"Put",
@@ -168,7 +168,7 @@
 	};
 
 	class Modern_British_2IC_COIN: Modern_British_Pointman {
-		displayName="Alpha 2IC";
+		displayName="2IC";
 		backpack="TWC_Backpack_Modern_2IC";
 		linkedItems[]= {
 			"UK3CB_BAF_V_Osprey_Rifleman_B",
@@ -240,7 +240,7 @@
 	};
 
 	class Modern_British_Marksman_COIN: Modern_British_Marksman {
-		displayName="Alpha Marksman";
+		displayName="Marksman";
 		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]= {
 			"Throw",
@@ -483,7 +483,7 @@
 	{
 		_generalMacro="ana_base";
 		scope=2;
-		displayName="Rifleman (ANA)";
+		displayName="Rifleman";
 		faction="ana_units";
 		editorSubcategory = "Men_ana";
 		vehicleClass="Men_ana";
@@ -575,7 +575,7 @@
 	{
 		_generalMacro="ana_interpreter";
 		scope=2;
-		displayName="Interpreter (ANA)";
+		displayName="Interpreter";
 		backpack="";
 		linkedItems[]=
 		{
@@ -644,7 +644,7 @@
 	{
 		_generalMacro="ana_squadleader";
 		scope=2;
-		displayName="Section Commander (ANA)";
+		displayName="Section Commander @Afghan National Army";
 		backpack="ana_backpack_leader";
 		linkedItems[]=
 		{
@@ -695,7 +695,7 @@
 	{
 		_generalMacro="ana_subleader";
 		scope=2;
-		displayName="Section Subcommander (ANA)";
+		displayName="Section Subcommander";
 		backpack="ana_backpack_2ic";
 		linkedItems[]=
 		{
@@ -744,7 +744,7 @@
 	{
 		_generalMacro="ana_rifleman_at";
 		scope=2;
-		displayName="RPG Grenadier (ANA)";
+		displayName="RPG Grenadier";
 		backpack="ana_backpack_rpg";
 		linkedItems[]=
 		{
@@ -805,7 +805,7 @@
 	{
 		_generalMacro="ana_mg";
 		scope=2;
-		displayName="Machinegunner (ANA)";
+		displayName="Machinegunner";
 		backpack="";
 		linkedItems[]=
 		{
@@ -851,7 +851,7 @@
 	{
 		_generalMacro="ana_mg_as";
 		scope=2;
-		displayName="Machinegunner Assistant (ANA)";
+		displayName="Machinegunner Assistant";
 		backpack="ana_backpack_mg";
 		linkedItems[]=
 		{
@@ -903,7 +903,7 @@
 	{
 		_generalMacro="ana_marksman";
 		scope=2;
-		displayName="Marksman (ANA)";
+		displayName="Marksman";
 		backpack="";
 		linkedItems[]=
 		{
@@ -991,7 +991,7 @@
 		_generalMacro="ana_medic";
 		scope=2;
 		attendant = 1;
-		displayName="Medic (ANA)";
+		displayName="Medic";
 		backpack="ana_backpack_medic";
 		linkedItems[]=
 		{
@@ -1049,7 +1049,7 @@
 	{
 		_generalMacro="nac_base";
 		scope=2;
-		displayName="Rifleman (NAC)";
+		displayName="Rifleman";
 		faction="nac_units";
 		editorSubcategory = "Men_nac";
 		vehicleClass="Men_nac";
@@ -1151,7 +1151,7 @@
 	{
 		_generalMacro="nac_interpreter";
 		scope=2;
-		displayName="Interpreter (NAC)";
+		displayName="Interpreter";
 		backpack="";
 		linkedItems[]=
 		{
@@ -1232,7 +1232,7 @@
 	{
 		_generalMacro="nac_squadleader";
 		scope=2;
-		displayName="Section Commander (NAC)";
+		displayName="Section Commander @National Army of Colombia";
 		backpack="nac_backpack_leader";
 		linkedItems[]=
 		{
@@ -1287,7 +1287,7 @@
 	{
 		_generalMacro="nac_subleader";
 		scope=2;
-		displayName="Section Subcommander (NAC)";
+		displayName="Section Subcommander";
 		backpack="nac_backpack_2ic";
 		weapons[]=
 		{
@@ -1374,7 +1374,7 @@
 	{
 		_generalMacro="nac_mg";
 		scope=2;
-		displayName="Machinegunner (NAC)";
+		displayName="Machinegunner";
 		backpack="nac_backpack_mg";
 		
 		weapons[]=
@@ -1410,7 +1410,7 @@
 		_generalMacro="nac_medic";
 		scope=2;
 		attendant = 1;
-		displayName="Medic (NAC)";
+		displayName="Medic";
 		backpack="nac_backpack_medic";
 		linkedItems[]=
 		{

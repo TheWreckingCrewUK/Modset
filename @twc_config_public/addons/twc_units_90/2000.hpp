@@ -1,7 +1,7 @@
 	class 2000_British_Base: B_Soldier_base_F
 	{
 		scope=1;
-		displayName="Base (00's Woodland)";
+		displayName="Base";
 		faction="twc_public_baf";
 		editorSubcategory = "Men_2000W";
 		vehicleClass="Men_2000W";
@@ -81,7 +81,7 @@
 	class 2000_British_SectionCommander: 2000_British_Base
 	{
 		scope=2;
-		displayName="Section Leader (00's Woodland)";
+		displayName="Section Leader @British Army";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_2000_Sectionlead";
 		weapons[]=
@@ -187,7 +187,7 @@
 	class 2000_British_Grenadier: 2000_British_Base
 	{
 		scope=2;
-		displayName="Grenadier (00's Woodland)";
+		displayName="Grenadier";
 		backpack="";
 		weapons[]=
 		{
@@ -238,7 +238,7 @@
 	class 2000_British_Gunner: 2000_British_Base
 	{
 		scope=2;
-		displayName="Autorifleman (00's Woodland)";
+		displayName="Autorifleman";
 		icon="iconManMG";
 		backpack="TWC_Backpack_1990_Minimi";
 		weapons[]=
@@ -270,13 +270,13 @@
 	};
 	class 2000_British_2IC: 2000_British_Rifleman
 	{
-		displayName="2IC (00's Woodland)";
+		displayName="2IC";
 		backpack="TWC_Backpack_2000_2IC";
 	};
 	
 			class 2000_British_MachineGunner: 2000_British_Gunner
 	{
-		displayName="GPMG Gunner (00's Woodland)";
+		displayName="GPMG Gunner";
 		backpack="TWC_Backpack_2000_machineGunner";
 				weapons[]=
 		{
@@ -306,7 +306,7 @@
 	
 		class 2000_British_mg_assistant: 2000_British_Rifleman
 	{
-		displayName="GPMG Assistant (00's Woodland)";
+		displayName="GPMG Assistant";
 		backpack="TWC_Backpack_2000_machineGunner";
 	};
 	
@@ -314,7 +314,7 @@
 	class 2000_British_Medic: 2000_British_Base
 	{
 		scope=2;
-		displayName="Medic (00's Woodland)";
+		displayName="Medic";
 		backpack="TWC_Backpack_2000_Medic";
 		attendant = 1;
 		weapons[]=
@@ -363,7 +363,7 @@
 	class 2000_British_HeliPilot: 2000_British_Base
 	{
 		scope=2;
-		displayName="Helicopter Pilot (00's Woodland)";
+		displayName="Helicopter Pilot";
 		backpack="";
 		linkedItems[]=
 		{
@@ -411,7 +411,7 @@
 	};
 	class 2000_British_JetPilot: 2000_British_HeliPilot
 	{
-		displayName="Jet Pilot (00's Woodland)";
+		displayName="Jet Pilot";
 		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_RAF";
 		backpack="B_AssaultPack_blk";
 		linkedItems[]=
@@ -460,7 +460,7 @@
 		class 2000_British_FSTCommander: 2000_British_Base 
 	{
 		scope=2;
-		displayName="FST Commander (00's Woodland)@Fire Support Team";
+		displayName="FST Commander@Fire Support Team";
 		icon="iconManLeader";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="TWC_Backpack_2000_Sectionlead";
@@ -534,7 +534,7 @@
 	class 2000_British_FSTForwardObserver: 2000_British_Base
 	{
 		scope=2;
-		displayName="FST Forward Observer (00's Woodland)";
+		displayName="FST Forward Observer";
 		icon="iconManExplosive";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="UK3CB_BAF_B_Bergen_DPMW_Rifleman_B";
@@ -603,7 +603,7 @@
 	class 2000_British_FSTAssistant: 2000_British_Base 
 	{
 		scope=2;
-		displayName="FST Assistant (00's Woodland)";
+		displayName="FST Assistant";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
 		backpack="UK3CB_BAF_B_Carryall_DPMW";
 		
@@ -670,7 +670,7 @@
 //////////////////////////////  Mounted  //////////////////////////////
 	class 2000_British_Vehicle_Commander: 2000_British_Base
 	{
-		displayName="Vehicle Commander (00's Woodland)";
+		displayName="Vehicle Commander";
 		scope=2;
 		uniformClass="CUP_U_B_USArmy_Soft";
 		backpack="";
@@ -721,7 +721,7 @@
 	};
     class 2000_British_Vehicle_Crew: 2000_British_Vehicle_Commander
 	{
-		displayName="Vehicle Crew (00's Woodland)";
+		displayName="Vehicle Crew";
 		backpack="";
 		linkedItems[]=
 		{
@@ -748,7 +748,7 @@
 
 	class 2000_British_SectionCommander_Desert: 2000_British_SectionCommander
 	{
-		displayName="Section Leader (00's Desert)";
+		displayName="Section Leader @British Army";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -823,7 +823,7 @@
 	};
 	class 2000_British_Rifleman_Desert: 2000_British_Rifleman
 	{
-		displayName="RifleMan (00's Desert)";
+		displayName="RifleMan";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -847,7 +847,7 @@
 	};
 	class 2000_British_Grenadier_Desert: 2000_British_Grenadier
 	{
-		displayName="Grenadier (00's Desert)";
+		displayName="Grenadier";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -883,7 +883,7 @@
 	};
 	class 2000_British_Gunner_Desert: 2000_British_Gunner
 	{
-		displayName="Autorifleman (00's Desert)";
+		displayName="Autorifleman";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -906,7 +906,7 @@
 	};
 	class 2000_British_2IC_Desert: 2000_British_2IC
 	{
-		displayName="2IC (00's Desert)";
+		displayName="2IC";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -930,7 +930,7 @@
 	};
 	class 2000_British_Medic_Desert: 2000_British_Medic
 	{
-		displayName="Medic (00's Desert)";
+		displayName="Medic";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -991,7 +991,7 @@
 	};
     class 2000_British_HeliPilot_Desert: 2000_British_HeliPilot
 	{
-		displayName="Helicopter Pilot (00's Desert)";
+		displayName="Helicopter Pilot";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -1016,7 +1016,7 @@
 	class 2000_British_FSTCommander_Desert: 2000_British_FSTCommander
 	{
 		scope=2;
-		displayName="FST Commander (00's Desert)@Fire Support Team";
+		displayName="FST Commander@Fire Support Team";
 		icon="iconManLeader";
 		editorSubcategory = "Men_2000D";
 		vehicleClass= "Men_2000D";
@@ -1042,7 +1042,7 @@
 	class 2000_British_FSTForwardObserver_Desert: 2000_British_FSTForwardObserver
 	{
 		scope=2;
-		displayName="FST Forward Observer (00's Desert)";
+		displayName="FST Forward Observer";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_Smock_DDPM";
@@ -1067,7 +1067,7 @@
 	class 2000_British_FSTAssistant_Desert: 2000_British_FSTAssistant
 	{
 		scope=2;
-		displayName="FST Assistant (00's Desert)";
+		displayName="FST Assistant";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_Smock_DDPM";
@@ -1095,7 +1095,7 @@
 	{
 		_generalMacro="2000_Desert_Sniper";
 		scope=2;
-		displayName="Sniper (00's Desert)";
+		displayName="Sniper";
 		faction="twc_public_baf";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
@@ -1194,7 +1194,7 @@
 	{
 		_generalMacro="2000_Desert_spotter";
 		scope=2;
-		displayName="Spotter (00's Desert)";
+		displayName="Spotter";
 		faction="twc_public_baf";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
@@ -1302,7 +1302,7 @@
 	
 		class 2000_British_MachineGunner_Desert: 2000_British_Gunner
 	{
-		displayName="GPMG Gunner (00's Desert)";
+		displayName="GPMG Gunner";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -1351,7 +1351,7 @@
 	
 		class 2000_British_mg_assistant_Desert: 2000_British_Rifleman
 	{
-		displayName="GPMG Assistant (00's Desert)";
+		displayName="GPMG Assistant";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -1377,7 +1377,7 @@
 	
 	class 2000_British_Marksman_Desert: 2000_British_Gunner
 	{
-		displayName="Marksman (00's Desert)";
+		displayName="Marksman";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -1499,7 +1499,7 @@
 	
 		class 2000_British_quartermaster_Desert: 2000_British_SectionCommander
 	{
-		displayName="Quartermaster (00's Desert)";
+		displayName="Quartermaster @Management";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";

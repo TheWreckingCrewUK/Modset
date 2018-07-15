@@ -1,7 +1,7 @@
 	class 1990_British_Base: B_Soldier_base_F
 	{
 		scope=1;
-		displayName="Base (90`s Woodland)";
+		displayName="Base";
 		faction="twc_public_baf";
 		editorSubcategory = "Men_1990W";
 		vehicleClass="Men_1990W";
@@ -81,7 +81,7 @@
 	class 1990_British_SectionCommander: 1990_British_Base
 	{
 		scope=2;
-		displayName="Section Leader (90`s Woodland)";
+		displayName="Section Leader @British Army";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_1990_Sectionlead";
 		weapons[]=
@@ -184,7 +184,7 @@
 	class 1990_British_Rifleman_AT: 1990_British_Base
 	{
 		scope=2;
-		displayName="RifleMan AT (90`s Woodland)";
+		displayName="RifleMan AT";
 		backpack="";
 		weapons[]=
 		{
@@ -229,7 +229,7 @@
 	class 1990_British_Gunner: 1990_British_Base
 	{
 		scope=2;
-		displayName="Gunner (90`s Woodland)";
+		displayName="Gunner";
 		icon="iconManMG";
 		backpack="TWC_Backpack_1990_Gunner";
 		weapons[]=
@@ -281,13 +281,13 @@
 	};
 	class 1990_British_2IC: 1990_British_Rifleman
 	{
-		displayName="2IC (90`s Woodland)";
+		displayName="2IC";
 		backpack="TWC_Backpack_1990_2IC";
 	};
 	
 			class 1990_British_MachineGunner: 1990_British_Gunner
 	{
-		displayName="GPMG Gunner (90`s Woodland)";
+		displayName="GPMG Gunner";
 		backpack="TWC_Backpack_1990_machineGunner";
 				weapons[]=
 		{
@@ -317,7 +317,7 @@
 	
 		class 1990_British_mg_assistant: 1990_British_Rifleman
 	{
-		displayName="GPMG Assistant (90`s Woodland)";
+		displayName="GPMG Assistant";
 		backpack="TWC_Backpack_1990_machineGunner";
 	};
 	
@@ -326,7 +326,7 @@
 	class 1990_British_Platoon_Commander: 1990_British_Base
 	{
 		scope=2;
-		displayName="Platoon Commander (90`s Woodland)";
+		displayName="Platoon Commander";
 		backpack="TWC_Backpack_1990_Platoon_Command";
 		weapons[]=
 		{
@@ -363,17 +363,17 @@
 	};
 	class 1990_British_Platoon_Sergeant: 1990_British_Platoon_Commander
 	{
-		displayName="Platoon Sergeant (90`s Woodland)";
+		displayName="Platoon Sergeant";
 		backpack="TWC_Backpack_1990_Platoon_Sergeant";
 	};
 	class 1990_British_Platoon_CSM: 1990_British_Platoon_Commander
 	{
-		displayName="Company Sergeant Major (90`s Woodland)";
+		displayName="Company Sergeant Major";
 	};
 	class 1990_British_Medic: 1990_British_Base
 	{
 		scope=2;
-		displayName="Medic (90`s Woodland)";
+		displayName="Medic";
 		backpack="TWC_Backpack_1990_Medic";
 		attendant = 1;
 		weapons[]=
@@ -420,7 +420,7 @@
 	class 1990_British_HeliPilot: 1990_British_Base
 	{
 		scope=2;
-		displayName="Helicopter Pilot (90`s Woodland)";
+		displayName="Helicopter Pilot";
 		backpack="TWC_Backpack_USMC_vehiclecommander";
 		linkedItems[]=
 		{
@@ -468,7 +468,7 @@
 	};
 	class 1990_British_JetPilot: 1990_British_HeliPilot
 	{
-		displayName="Jet Pilot (90`s Woodland)";
+		displayName="Jet Pilot";
 		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_RAF";
 		backpack="B_AssaultPack_blk";
 		linkedItems[]=
@@ -727,7 +727,7 @@
 //////////////////////////////  Mounted  //////////////////////////////
 	class 1990_British_Vehicle_Commander: 1990_British_Base
 	{
-		displayName="Vehicle Commander (90`s Woodland)";
+		displayName="Vehicle Commander";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DPMT";
 		backpack="B_AssaultPack_blk";
 		linkedItems[]=
@@ -769,7 +769,7 @@
 	};
     class 1990_British_Vehicle_Crew: 1990_British_Vehicle_Commander
 	{
-		displayName="Vehicle Crew (90`s Woodland)";
+		displayName="Vehicle Crew";
 		backpack="";
 	};
 //////////////////////////////////////////////////////////////////
@@ -780,7 +780,7 @@
 
 	class 1990_British_SectionCommander_Desert: 1990_British_SectionCommander
 	{
-		displayName="Section Leader (90`s Desert)";
+		displayName="Section Leader @British Army";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -855,7 +855,7 @@
 	};
 	class 1990_British_Rifleman_Desert: 1990_British_Rifleman
 	{
-		displayName="RifleMan (90`s Desert)";
+		displayName="RifleMan";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -879,7 +879,7 @@
 	};
 	class 1990_British_Rifleman_AT_Desert: 1990_British_Rifleman
 	{
-		displayName="RifleMan AT (90`s Desert)";
+		displayName="RifleMan AT";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -917,7 +917,7 @@
 	};
 	class 1990_British_Gunner_Desert: 1990_British_Gunner
 	{
-		displayName="Gunner (90`s Desert)";
+		displayName="Gunner";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -940,7 +940,7 @@
 	};
 	class 1990_British_2IC_Desert: 1990_British_2IC
 	{
-		displayName="2IC (90`s Desert)";
+		displayName="2IC";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -964,7 +964,7 @@
 	};
 	class 1990_British_Platoon_Commander_Desert: 1990_British_Platoon_Commander
 	{
-		displayName="Platoon Commander (90`s Desert)";
+		displayName="Platoon Commander";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -989,7 +989,7 @@
 	class 1990_British_Platoon_Sergeant_Desert: 1990_British_Platoon_Sergeant
 	{
 		scope=2;
-		displayName="Platoon Sergeant (90`s Desert)";
+		displayName="Platoon Sergeant";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -1017,7 +1017,7 @@
 	};
 	class 1990_British_Medic_Desert: 1990_British_Medic
 	{
-		displayName="Medic (90`s Desert)";
+		displayName="Medic";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -1074,7 +1074,7 @@
 	};
     class 1990_British_HeliPilot_Desert: 1990_British_HeliPilot
 	{
-		displayName="Helicopter Pilot (90`s Desert)";
+		displayName="Helicopter Pilot";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -1176,7 +1176,7 @@
 
 	class 1990_RM_base: 1990_British_SectionCommander_Desert
 	{
-		displayName="Section Leader (90`s RM)";
+		displayName="Section Leader";
 		scope = 1;
 		editorSubcategory = "Men_1990RM";
 		vehicleClass="Men_1990RM";
@@ -1245,7 +1245,7 @@
 
 	class 1990_RM_British_SectionCommander_Mix: 1990_RM_base
 	{
-		displayName="Section Leader (90`s RM)";
+		displayName="Section Leader";
 		editorSubcategory = "Men_1990RM";
 		scope = 2;
 		vehicleClass="Men_1990RM";
@@ -1306,7 +1306,7 @@
 	};
 	class 1990_RM_British_Rifleman_Mix: 1990_RM_base
 	{
-		displayName="RifleMan (90`s RM)";
+		displayName="RifleMan";
 		editorSubcategory = "Men_1990RM";
 		scope = 2;
 		vehicleClass="Men_1990RM";
@@ -1315,7 +1315,7 @@
 	};
 	class 1990_RM_British_Rifleman_AT_Mix: 1990_RM_base
 	{
-		displayName="RifleMan AT (90`s RM)";
+		displayName="RifleMan AT";
 		editorSubcategory = "Men_1990RM";
 		scope = 2;
 		vehicleClass="Men_1990RM";
@@ -1338,7 +1338,7 @@
 	};
 	class 1990_RM_British_Gunner_Mix: 1990_RM_base
 	{
-		displayName="Gunner (90`s RM)";
+		displayName="Gunner";
 		editorSubcategory = "Men_1990RM";
 		scope = 2;
 		vehicleClass="Men_1990RM";
@@ -1371,7 +1371,7 @@
 	};
 		class 1990_RM_British_Marksman_Mix: 1990_British_Gunner_Desert
 	{
-		displayName="Marksman (90`s RM)";
+		displayName="Marksman";
 		editorSubcategory = "Men_1990RM";
 		vehicleClass="Men_1990RM";
 		uniformClass="UK3CB_BAF_U_Smock_DPMW_DDPM";
@@ -1396,7 +1396,7 @@
 	};
 	class 1990_RM_British_2IC_Mix: 1990_RM_base
 	{
-		displayName="2IC (90`s RM)";
+		displayName="2IC";
 		editorSubcategory = "Men_1990RM";
 		scope = 2;
 		vehicleClass="Men_1990RM";
@@ -1406,7 +1406,7 @@
 
 		class 1990_RM_British_Medic_Mix: 1990_RM_base
 	{
-		displayName="Medic (90`s RM)";
+		displayName="Medic";
 		editorSubcategory = "Men_1990RM";
 		scope = 2;
 		attendant = 1;
@@ -1419,7 +1419,7 @@
 	
     class 1990_British_Vehicle_Commander_Desert: 1990_British_Vehicle_Commander
 	{
-		displayName="Vehicle Commander (90`s Desert)";
+		displayName="Vehicle Commander";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -1444,7 +1444,7 @@
 	};
     class 1990_British_Vehicle_Crew_Desert: 1990_British_Vehicle_Crew
 	{
-		displayName="Vehicle Crew (90`s Desert)";
+		displayName="Vehicle Crew";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -1471,14 +1471,14 @@
 	{
 		_generalMacro="1990_Desert_British_Tank Commander";
 		scope=2;
-		displayName="Vehicle Commander (90`s Desert)";
+		displayName="Vehicle Commander";
 		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
-		backpack="TWC_Backpack_USMC_vehiclecommander";
+		backpack="";
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_Pilot_DDPM",
@@ -1581,7 +1581,7 @@
 	{
 		_generalMacro="1990_Desert_Tank_Crew";
 		scope=2;
-		displayName="Vehicle Crew (90`s Desert)";
+		displayName="Vehicle Crew";
 		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		backpack="";
@@ -1594,7 +1594,7 @@
 	{
 		_generalMacro="1990_Desert_Sniper";
 		scope=2;
-		displayName="Sniper (90`s Desert)";
+		displayName="Sniper";
 		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
@@ -1693,7 +1693,7 @@
 	{
 		_generalMacro="1990_Desert_spotter";
 		scope=2;
-		displayName="Spotter (90`s Desert)";
+		displayName="Spotter";
 		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
@@ -1801,7 +1801,7 @@
 	
 		class 1990_British_MachineGunner_Desert: 1990_British_Gunner
 	{
-		displayName="GPMG Gunner (90`s Desert)";
+		displayName="GPMG Gunner";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -1849,7 +1849,7 @@
 	
 		class 1990_British_mg_assistant_Desert: 1990_British_Rifleman
 	{
-		displayName="GPMG Assistant (90`s Desert)";
+		displayName="GPMG Assistant";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -1874,7 +1874,7 @@
 	
 		class 1990_British_quartermaster_Desert: 1990_British_SectionCommander
 	{
-		displayName="Quartermaster (90`s Desert)";
+		displayName="Quartermaster";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -1910,8 +1910,8 @@
 	class twc_men_1990_us_w_base: B_Soldier_base_F
 	{
 		scope=1;
-		displayName="Rifleman (90's US Army Woodland)";
-		faction="twc_faction";
+		displayName="Rifleman";
+		faction="twc_public_us";
 		editorSubcategory = "twc_men_1990_us_w";
 		vehicleClass="twc_men_1990_us_w";
 		icon="iconMan";
@@ -1990,7 +1990,7 @@
 	class twc_men_1990_us_w_SquadLeader: twc_men_1990_us_w_base
 	{
 		scope=2;
-		displayName="Squad Leader (90's US Army Woodland)";
+		displayName="Squad Leader @US Army";
 		icon="iconManLeader";
 		backpack="twc_men_1990_us_w_backpack_squadlead";
 		weapons[]=
@@ -2041,7 +2041,7 @@
 	class twc_men_1990_us_w_teamleader: twc_men_1990_us_w_base
 	{
 		scope=2;
-		displayName="Team Leader (90's US Army Woodland)";
+		displayName="Team Leader";
 		icon="iconManLeader";
 		backpack="twc_men_1990_us_w_backpack_teamlead";
 		weapons[]=
@@ -2092,7 +2092,7 @@
 	class twc_men_1990_us_w_rifleman: twc_men_1990_us_w_base
 	{
 		scope=2;
-		displayName="Rifleman (90's US Army Woodland)";
+		displayName="Rifleman";
 		backpack="twc_men_1990_us_w_backpack_rifleman";
 		weapons[]=
 		{
@@ -2138,7 +2138,7 @@
 	class twc_men_1990_us_w_rifleman_at: twc_men_1990_us_w_base
 	{
 		scope=2;
-		displayName="Rifleman AT (90's US Army Woodland)";
+		displayName="Rifleman AT";
 		backpack="twc_men_1990_us_w_backpack_rifleman";
 		weapons[]=
 		{
@@ -2186,7 +2186,7 @@
 	class twc_men_1990_us_w_autorifleman: twc_men_1990_us_w_base
 	{
 		scope=2;
-		displayName="Autorifleman (90's US Army Woodland)";
+		displayName="Autorifleman";
 		icon="iconManMG";
 		backpack="twc_men_1990_us_w_backpack_autorifleman";
 		weapons[]=
