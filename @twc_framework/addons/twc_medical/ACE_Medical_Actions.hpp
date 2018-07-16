@@ -56,7 +56,7 @@ class ACE_Medical_Actions {
 		class SutureKit: fieldDressing {
 			displayName = "Use Suture Kit";
 			displayNameProgress = "Suturing";
-			category = "bandage";
+			category = "advanced";
 			condition = "twc_medical_fnc_canSuture";
 
 			// custom handler for items check, to ignore shared gear
