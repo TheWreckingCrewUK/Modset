@@ -6,7 +6,7 @@ class CfgGroups
                 side = 1; // 0 = Opfor , 1 = Blufor , 2 = Indep , I think
                 class TWC_Operation_Blufor //Faction Class name
                 {
-                        name = "TWC Operation Groups"; //Faction Name
+                        name = "TWC Public Groups"; //Faction Name
 /*                        class Modern_Symetrical
                         {
                                 name = "TWC Modern symetrical"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
@@ -580,6 +580,13 @@ class CfgGroups
                                                 vehicle = "twc_ana_marksman";
                                                 rank = "PRIVATE";
                                                 position[] = {15,0,0};
+                                        };
+                                        class Unit8
+                                        {
+                                                side = 1;
+                                                vehicle = "twc_ana_interpreter";
+                                                rank = "PRIVATE";
+                                                position[] = {17,0,0};
                                         };
                                 };								
                                class Modern_Section

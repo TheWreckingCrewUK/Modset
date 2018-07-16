@@ -7,6 +7,7 @@
 	class UK3CB_BAF_B_Carryall_DPMW;
 	class UK3CB_BAF_B_Kitbag_DPMW;
 	class UK3CB_BAF_B_Bergen_TAN_SL_A;
+	class UK3CB_BAF_B_Bergen_DPMW_JTAC_H_A;
 	
 	class TWC_Backpack_1990_Sectionlead: UK3CB_BAF_B_Bergen_DPMW_SL_A
 	{
@@ -214,7 +215,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_1990_Medic: UK3CB_BAF_B_Bergen_DPMW_Rifleman_B
+	class TWC_Backpack_1990_Medic: UK3CB_BAF_B_Kitbag_DPMW
 	{
 		scope = 1;
 		class TransportItems
@@ -290,7 +291,7 @@
 		};
 	};
 
-	class TWC_Backpack_1990_Minimi: UK3CB_BAF_B_Bergen_DPMW_Rifleman_A
+	class TWC_Backpack_1990_Minimi: UK3CB_BAF_B_Kitbag_DPMW
 	{
 		scope = 1;
 		class TransportMagazines
@@ -299,6 +300,78 @@
 			{
 				magazine = "UK3CB_BAF_556_200Rnd_T";
 				count = 3;
+			};
+		};
+	};
+
+	class TWC_Backpack_2000_2IC: UK3CB_BAF_B_Kitbag_DPMW
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Box_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_200Rnd_T";
+				count = 2;
+			};
+			
+            class _xx_Stanag
+			{
+				magazine = "UK3CB_BAF_556_30Rnd";
+				count = 8;
+			};
+		};
+	};
+
+	class TWC_Backpack_2000_machineGunner: UK3CB_BAF_B_Kitbag_DPMW
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Belt_762
+			{
+				magazine = "UK3CB_BAF_762_100Rnd";
+				count = 4;
+			};
+			
+		};
+	};
+
+	class TWC_Backpack_2000_observer: UK3CB_BAF_B_Bergen_DPMW_JTAC_H_A
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			
+            class _xx_smoke_1
+			{
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 6;
+			};
+            class _xx_smoke_4
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 5;
+			};
+			
+            class _xx_smoke_5
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 5;
+			};
+			
+            class _xx_smoke_6
+			{
+				magazine = "1Rnd_SmokeOrange_Grenade_shell";
+				count = 5;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
 			};
 		};
 	};
