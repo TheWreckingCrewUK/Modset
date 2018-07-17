@@ -217,6 +217,9 @@ class TWC_Vehicle_ColdWar_Chieftain_Woodland: ukcw_chieftainmk10 {
 	
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
+		ADD_MAGA(ukcw_l15a4_apds, 40);
+		ADD_MAGA(ukcw_l31_hesh, 20);
+		ADD_MAGA(ukcw_l34_smoke, 4);
 	};
 	
 	class TransportWeapons { };
