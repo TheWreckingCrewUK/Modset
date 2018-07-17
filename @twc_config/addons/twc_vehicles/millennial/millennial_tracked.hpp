@@ -188,7 +188,6 @@ class TWC_Vehicle_Millennial_Warrior_Desert: TWC_Vehicle_FV510_D {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MILLENNIAL_CHIEFTAIN_MOD
-class ukcw_chieftainmk10;
 class TWC_Vehicle_Millennial_Chieftain_Woodland: ukcw_chieftainmk10 {
 	scope = 2;
 	scopeCurator = 2;

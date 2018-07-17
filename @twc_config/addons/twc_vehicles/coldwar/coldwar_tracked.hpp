@@ -195,7 +195,6 @@ class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_Scorpion_d_L1 {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_CHIEFTAIN_MOD
-class ukcw_chieftainmk10;
 class TWC_Vehicle_ColdWar_Chieftain_Woodland: ukcw_chieftainmk10 {
 	scope = 2;
 	scopeCurator = 2;

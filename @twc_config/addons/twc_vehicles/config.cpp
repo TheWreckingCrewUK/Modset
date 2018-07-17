@@ -200,6 +200,7 @@ class CfgVehicles {
 	class ukcw_Scorpion_w_L1;
 	class ukcw_Scorpion_d_L1;
 	class CUP_B_SA330_Puma_HC1_BAF;
+	class ukcw_chieftainmk10;
 	
 	// section modifiers all eras/types
 	#define SECTION_FIELDDRESSING 20
