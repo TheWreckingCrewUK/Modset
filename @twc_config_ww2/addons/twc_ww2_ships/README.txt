@@ -1,0 +1,1 @@
+This contains unbinarized versions of the Liberty Ship models. Before putting this on the server, make sure to build locally and depbo so that the server receives a binarized p3d.
