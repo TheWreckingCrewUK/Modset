@@ -209,9 +209,9 @@ class TWC_Vehicle_Millennial_Chieftain_Woodland: ukcw_chieftainmk10 {
 	
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
-		ADD_MAGA(ukcw_l23a1_apfsds, 40);
-		ADD_MAGA(ukcw_l31_hesh, 20);
-		ADD_MAGA(ukcw_l34_smoke, 4);
+		ADD_MAGA(ukcw_l23a1_apfsds_hull, 40);
+		ADD_MAGA(ukcw_l31_hesh_hull, 20);
+		ADD_MAGA(ukcw_l34_smoke_hull, 4);
 	};
 	
 	class TransportWeapons { };
