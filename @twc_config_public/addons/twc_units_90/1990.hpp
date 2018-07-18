@@ -138,7 +138,7 @@
 	class 1990_British_Rifleman: 1990_British_Base
 	{
 		scope=2;
-		displayName="RifleMan(90`s Woodland)";
+		displayName="Rifleman(90`s Woodland)";
 		backpack="TWC_Backpack_1990_Rifleman";
 		weapons[]=
 		{
@@ -184,7 +184,7 @@
 	class 1990_British_Rifleman_AT: 1990_British_Base
 	{
 		scope=2;
-		displayName="RifleMan AT";
+		displayName="Rifleman AT";
 		backpack="";
 		weapons[]=
 		{
@@ -855,7 +855,7 @@
 	};
 	class 1990_British_Rifleman_Desert: 1990_British_Rifleman
 	{
-		displayName="RifleMan";
+		displayName="Rifleman";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -879,7 +879,7 @@
 	};
 	class 1990_British_Rifleman_AT_Desert: 1990_British_Rifleman
 	{
-		displayName="RifleMan AT";
+		displayName="Rifleman AT";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
@@ -1306,7 +1306,7 @@
 	};
 	class 1990_RM_British_Rifleman_Mix: 1990_RM_base
 	{
-		displayName="RifleMan";
+		displayName="Rifleman";
 		editorSubcategory = "Men_1990RM";
 		scope = 2;
 		vehicleClass="Men_1990RM";
@@ -1315,7 +1315,7 @@
 	};
 	class 1990_RM_British_Rifleman_AT_Mix: 1990_RM_base
 	{
-		displayName="RifleMan AT";
+		displayName="Rifleman AT";
 		editorSubcategory = "Men_1990RM";
 		scope = 2;
 		vehicleClass="Men_1990RM";

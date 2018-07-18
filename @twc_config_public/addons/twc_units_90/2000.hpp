@@ -473,6 +473,15 @@
 			"ACE_tourniquet"
 		};
 	};
+	
+	
+	class 2000_British_CrewChief: 2000_British_HeliPilot
+	{
+		scope=2;
+		displayName="Helicopter Crew Chief";
+	};
+	
+	
 	class 2000_British_JetPilot: 2000_British_HeliPilot
 	{
 		displayName="Jet Pilot";
@@ -1397,6 +1406,14 @@
 			"ItemWatch"
 		};
 	};
+	
+	
+	class 2000_British_CrewChief_Desert: 2000_British_HeliPilot_Desert
+	{
+		scope=2;
+		displayName="Helicopter Crew Chief";
+	};
+	
 	
 	class 2000_British_FSTCommander_Desert: 2000_British_FSTCommander
 	{
