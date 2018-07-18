@@ -91,9 +91,10 @@ waitUntil{missionNameSpace getVariable "twcModuleFinished"};
 
 EM_blacklist_obj = [
 	"Land_Mil_WiredFence_F", 
-	"Land_New_WireFence_5m_F", 
+	"Land_New_WireFence_5m_F",
 	"Land_New_WiredFence_5m_F",
 	"Land_New_WireFence_10m_F",
+	"Land_New_WiredFence_10m_F",
 	"Land_I44_Buildings_Barbedwire2",
 	"Land_I44_Buildings_Barbedwire",
 	"Land_CSA38_zataras2",
@@ -102,5 +103,6 @@ EM_blacklist_obj = [
 	"Wire",
 	"Fort_RazorWire",
 	"Land_WW2_wire_1",
-	"LIB_B_Hedgerows_big"
+	"LIB_B_Hedgerows_big",
+	"Land_I44_bwf_6_mlod"
 ];
