@@ -8,8 +8,8 @@ _caller setVariable ["TWC_Played_Suture", false, true];
 if (({_x isKindOf ["TWC_Item_Medical_SutureKit_1", configFile >> "CfgWeapons"]} count (items player)) < 1) exitWith { false };
 
 private _returnData = [_target, _selectionName] call twc_medical_fnc_selectSutureWound;
-private _isBandagedWound = _returnData[0];
-private _woundData = _returnData[1];
+private _isBandagedWound = _returnData select 0;
+private _woundData = _returnData select 1;
 
 private _openWounds = _target getVariable ['ACE_Medical_openWounds', []];
 private _bandagedWounds = _target getVariable ['ACE_Medical_bandagedWounds', []];

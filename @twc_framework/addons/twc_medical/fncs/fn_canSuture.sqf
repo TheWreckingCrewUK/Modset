@@ -8,6 +8,6 @@ if (({_x isKindOf ["TWC_Item_Medical_SutureKit_1", configFile >> "CfgWeapons"]} 
 
 // any suturable wounds on this selection?
 private _returnData = [_target, _selectionName] call twc_medical_fnc_selectSutureWound;
-if ((count _returnData[1]) < 1) exitWith { false };
+if ((count (_returnData select 1)) < 1) exitWith { false };
 
 true

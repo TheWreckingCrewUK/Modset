@@ -5,7 +5,7 @@ _args params ["_caller", "_target", "_selectionName", "_className", "_items", "_
 if (({_x isKindOf ["TWC_Item_Medical_SutureKit_1", configFile >> "CfgWeapons"]} count (items player)) < 1) exitWith { false };
 
 private _returnData = [_target, _selectionName] call twc_medical_fnc_selectSutureWound;
-if ((count _returnData[1]) < 1) exitWith { false }; // either invalid wound, or none at all (could be healed at same time)
+if ((count (_returnData select 1)) < 1) exitWith { false }; // either invalid wound, or none at all (could be healed at same time)
 
 private _hasPlayedSound = _caller getVariable ["TWC_Played_Suture", false];
 
