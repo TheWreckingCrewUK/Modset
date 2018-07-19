@@ -1,12 +1,28 @@
 class ACE_Medical_Actions {
 	class Advanced {
-		class fieldDressing;
-		class CPR: fieldDressing {
+		class Bandage;
+		class FieldDressing: Bandage {
+			treatmentTime = 9;
+		};
+		
+		class QuikClot: FieldDressing {
+			treatmentTime = 4;
+		};
+		
+		class PackingBandage: FieldDressing {
+			treatmentTime = 6;
+		};
+		
+		class ElasticBandage: FieldDressing {
+			treatmentTime = 15;
+		};
+		
+		class CPR: FieldDressing {
 			callbackSuccess = "twc_medical_fnc_action";
 			animationCaller = "AinvPknlMstpSnonWnonDr_medic0";
 			animationCallerProne = "AinvPknlMstpSnonWnonDr_medic0";
 		};
-
+		
 		class Defib: CPR {
 			displayName = "Defibrillate";
 			displayNameProgress = "Defibrillating...";
@@ -19,7 +35,7 @@ class ACE_Medical_Actions {
 			patientStateCondition = 1;
 			callbackSuccess = "twc_medical_fnc_action_Defib";
 		};
-
+		
 		class CheckPulse;
 		class LogDebug: CheckPulse {
 			displayName = "Medical to RPT (DEBUG)";
@@ -27,15 +43,7 @@ class ACE_Medical_Actions {
 			callbackSuccess = "twc_medical_fnc_logToRPT";
 		};
 		
-		class QuikClot: fieldDressing {
-			treatmentTime = 5;
-		};
-		
-		class ElasticBandage: fieldDressing {
-			treatmentTime = 12;
-		};
-		
-		class BloodIV: fieldDressing{};
+		class BloodIV: FieldDressing{};
 		
 		class BloodIV_250: BloodIV {
 			allowSelfTreatment = 1;
@@ -49,11 +57,11 @@ class ACE_Medical_Actions {
 			allowSelfTreatment = 1;
 		};
 		
-		class Tourniquet: fieldDressing {
+		class Tourniquet: FieldDressing {
 			treatmentTime = 2;
 		};
 		
-		class SutureKit: fieldDressing {
+		class SutureKit: FieldDressing {
 			displayName = "Use Suture Kit";
 			displayNameProgress = "Suturing";
 			category = "advanced";
