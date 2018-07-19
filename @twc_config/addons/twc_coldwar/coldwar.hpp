@@ -101,9 +101,6 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
@@ -117,12 +114,8 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
-			"SmokeShell",
 			"SmokeShell"
 		};
 	};
@@ -189,7 +182,7 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"ukcw_l14a1_HEAT",
+			"ukcw_34_rnd_sterling_mag",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
@@ -201,7 +194,7 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
-			"ukcw_l14a1_HEAT",
+			"ukcw_34_rnd_sterling_mag",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
@@ -260,16 +253,14 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_762_100Rnd",	
 			"UK3CB_BAF_762_100Rnd",
 			"UK3CB_BAF_762_100Rnd_T",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_762_100Rnd",	
 			"UK3CB_BAF_762_100Rnd",
-			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd_T",
 			"SmokeShell"
 		};		
 	};
@@ -280,13 +271,13 @@
 		weapons[]=
 		{
 			"Throw",
-			"Put",	
+			"Put",
 			"UK3CB_BAF_L1A1_Wood"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
-			"Put",	
+			"Put",
 			"UK3CB_BAF_L1A1_Wood"
 		};
 	};
@@ -331,7 +322,7 @@
 			"Throw",
 			"Put",
 			"Binocular",
-			"UK3CB_BAF_L1A1_Wood"			
+			"UK3CB_BAF_L1A1_Wood"
 		};
 		magazines[]=
 		{
@@ -340,22 +331,11 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
-			"SmokeShell",
-			"SmokeShell",
-			"SmokeShell",
-			"SmokeShell",
-			"SmokeShellRed",
-			"SmokeShellRed",
-			"SmokeShellBlue",
-			"SmokeShellBlue"
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
@@ -364,22 +344,11 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd",
-			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
-			"SmokeShell",
-			"SmokeShell",
-			"SmokeShell",
-			"SmokeShell",
-			"SmokeShellRed",
-			"SmokeShellRed",
-			"SmokeShellBlue",
-			"SmokeShellBlue"
+			"SmokeShell"
 		};
 		Items[]=
 		{

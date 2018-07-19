@@ -1,6 +1,17 @@
 class cfgWeapons
 {
-	class UK3CB_BAF_L1A1_Wood;
+	class Rifle;
+	class Rifle_Base_F: Rifle
+	{
+		class WeaponSlotsInfo;
+	};
+	class UK3CB_BAF_L1A1_Wood: Rifle_Base_F
+	{
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 95.61;
+		};
+	};
 	class CUP_launch_FIM92Stinger;
 	class ukcw_L14A1;
 	

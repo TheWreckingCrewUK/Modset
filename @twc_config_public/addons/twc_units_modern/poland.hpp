@@ -339,7 +339,7 @@
 	class Modern_pol_commander: Modern_pol_Base
 	{
 		scope=2;
-		displayName="Section Commander";
+		displayName="Section Commander @Polish Land Forces";
 		backpack="pol_backpack_leader";
 		linkedItems[]=
 		{
@@ -401,7 +401,7 @@
 	class Modern_pol_subcommander: Modern_pol_commander
 	{
 		scope=2;
-		displayName="Section Subcommander";
+		displayName="2ic";
 		backpack="pol_backpack_2ic";
 	};
 	

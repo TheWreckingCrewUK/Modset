@@ -195,7 +195,6 @@ class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_Scorpion_d_L1 {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_CHIEFTAIN_MOD
-class ukcw_chieftainmk10;
 class TWC_Vehicle_ColdWar_Chieftain_Woodland: ukcw_chieftainmk10 {
 	scope = 2;
 	scopeCurator = 2;
@@ -217,6 +216,9 @@ class TWC_Vehicle_ColdWar_Chieftain_Woodland: ukcw_chieftainmk10 {
 	
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
+		ADD_MAGA(ukcw_l15a4_apds_hull, 40);
+		ADD_MAGA(ukcw_l31_hesh_hull, 20);
+		ADD_MAGA(ukcw_l34_smoke_hull, 4);
 	};
 	
 	class TransportWeapons { };

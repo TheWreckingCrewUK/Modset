@@ -85,7 +85,7 @@
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Section Leader@Alpha Section";
+		displayName="Section Leader @British Army";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
@@ -160,7 +160,7 @@
 	class Modern_British_Quartermaster: Modern_British_Base
 	{
 		scope=2;
-		displayName="Quartermaster";
+		displayName="Quartermaster @Management";
 		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_quartermaster";
@@ -235,7 +235,7 @@
 	class Modern_British_Rifleman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Rifleman";
+		displayName="Rifleman";
 		backpack="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]=
 		{
@@ -285,7 +285,7 @@
 	class Modern_British_Grenadier: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Grenadier";
+		displayName="Grenadier";
 		icon="iconManExplosive";
 		backpack="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		linkedItems[]=
@@ -376,7 +376,7 @@
 	class Modern_British_Autorifleman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Automatic Rifleman";
+		displayName="Automatic Rifleman";
 		icon="iconManMG";
 		backpack="TWC_Backpack_Modern_Autorifleman_Kitbag";
 		linkedItems[]=
@@ -428,7 +428,7 @@
 	};
 	class Modern_British_2IC: Modern_British_Rifleman
 	{
-		displayName="Alpha 2IC";
+		displayName="2IC";
 		backpack="TWC_Backpack_Modern_2IC";
 		weapons[]=
 		{
@@ -482,7 +482,7 @@
 	class Modern_British_Machinegunner: Modern_British_Autorifleman
 	{
 		scope=2;
-		displayName="Alpha Machine Gunner";
+		displayName="Machine Gunner";
 		backpack="TWC_Backpack_Modern_MachineGunner_Kitbag";
 		weapons[]=
 		{
@@ -524,7 +524,7 @@
 	class Modern_British_Marksman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Marksman";
+		displayName="Marksman";
 		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		linkedItems[]=
 		{
@@ -671,7 +671,7 @@
 	class Modern_British_Medic: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Medic";
+		displayName="Medic";
 		icon="iconManMedic";
 		backpack="TWC_Backpack_Modern_Medic";
 		attendant = 1;
