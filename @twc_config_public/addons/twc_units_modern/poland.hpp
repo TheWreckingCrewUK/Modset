@@ -347,6 +347,7 @@
 			"CUP_H_CDF_H_PASGT_FST",
 			"ItemMap",
 			"ItemCompass",
+			"itemCTAB",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -355,6 +356,7 @@
 			"CUP_H_CDF_H_PASGT_FST",
 			"ItemMap",
 			"ItemCompass",
+			"itemCTAB",
 			"ItemWatch"
 		};
 		weapons[]=
@@ -385,6 +387,7 @@
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
+			"itemCTAB",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -393,6 +396,7 @@
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
+			"itemCTAB",
 			"ItemWatch"
 		};
 	};
@@ -403,6 +407,22 @@
 		scope=2;
 		displayName="2ic";
 		backpack="pol_backpack_2ic";
+		linkedItems[]=
+		{
+			"CUP_V_B_RRV_Officer",
+			"CUP_H_CDF_H_PASGT_FST",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_RRV_Officer",
+			"CUP_H_CDF_H_PASGT_FST",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 	};
 	
 	class Modern_pol_subcommander_d: Modern_pol_subcommander

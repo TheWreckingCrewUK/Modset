@@ -150,7 +150,7 @@
 			};
 			class _xx_m21
 			{
-				magazine = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
+				magazine = "rhs_100Rnd_762x54mmR_green";
 				count = 2;
 			};
 			class _xx_40mm
