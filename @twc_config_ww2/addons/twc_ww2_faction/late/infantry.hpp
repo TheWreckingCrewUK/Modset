@@ -314,7 +314,7 @@ class WW2_British_Marksman: WW2_British_Rifleman {
 };
 
 class WW2_British_SMG: WW2_British_Rifleman {
-	displayName = "Submachine Gunner"
+	displayName = "Submachine Gunner";
 	weapons[] = {
 		"Throw",
 		"Put",
