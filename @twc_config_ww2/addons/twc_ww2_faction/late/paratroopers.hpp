@@ -298,7 +298,7 @@ class WW2_Para_British_Rifleman: WW2_Para_British_Base {
 		"10Rnd_303_Magazine",
 		"10Rnd_303_Magazine",
 		"twc_no82",
-		"fow_e_no36mk1"
+		"fow_e_no36mk1",
 		"fow_e_no36mk1"
 	};
 };
