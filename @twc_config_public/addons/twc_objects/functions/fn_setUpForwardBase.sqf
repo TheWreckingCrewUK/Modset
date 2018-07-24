@@ -44,14 +44,14 @@ _locstat setDir ((getDir _table)+210);
 [_table, -1] call ace_cargo_fnc_setSize;
 _table setVariable ["twc_forwardBaseDeployed",true];
 _return = "Patrol Base Created Successfully";
-_return
+_return;
 
 
-/* _trg = createTrigger ["EmptyDetector", _pos];
-_trg setTriggerArea [400 , 400, 0, false];
+_trg = createTrigger ["EmptyDetector", _pos];
+_trg setTriggerArea [200 , 200, 50, false];
 _trg setTriggerActivation ["east", "PRESENT", true];
-_trg setTriggerTimeout [30,30,30, true];
-_trg setTriggerStatements ["this","_table = nearestobject [getpos thistrigger,'twc_radioTable']; [_table] call twc_fnc_tearDownForwardBase; deletevehicle thistrigger",""]; */
+_trg setTriggerTimeout [60,60,60, true];
+_trg setTriggerStatements ["count thislist > 3","_table = nearestobject [getpos thistrigger,'twc_radioTable']; [_table] call twc_fnc_tearDownForwardBase; deletevehicle thistrigger;'PATROL BASE IN CONTACT, RESPAWN DISABLED' remoteExec ['hint'];",""];
 
 }
 else

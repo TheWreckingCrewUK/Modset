@@ -28,7 +28,7 @@
 		{
 			class _xx_mag
 			{
-				magazine = "rhs_30Rnd_545x39_AK";
+				magazine = "rhsgref_30rnd_556x45_m21";
 				count = 5;
 			};
 
@@ -145,7 +145,7 @@
 			};
 			class _xx_stanag
 			{
-				magazine = "rhs_30Rnd_545x39_AK";
+				magazine = "rhsgref_30rnd_556x45_m21";
 				count = 5;
 			};
 			class _xx_m21

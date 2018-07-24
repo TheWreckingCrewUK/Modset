@@ -96,13 +96,13 @@
 		};
 		magazines[]=
 		{
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
@@ -111,13 +111,13 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
@@ -215,11 +215,11 @@
 		};
 		magazines[]=
 		{
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",
@@ -231,11 +231,11 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",

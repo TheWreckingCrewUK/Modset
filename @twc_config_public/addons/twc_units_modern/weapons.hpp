@@ -210,13 +210,31 @@ class cfgWeapons
 	class rhs_weap_ak74m;
 	class rhs_weap_svd: rhs_weap_ak74m
 	{
-		magazines[] = {"rhs_10Rnd_762x54mmR_7N1", "CUP_10Rnd_762x54_SVD_M"};
+		magazines[] = {"rhs_10Rnd_762x54mmR_7N1", "CUP_10Rnd_762x54_SVD_M", "twc_10Rnd_762x54mmR_7N1_P"};
 	};
 	
-	class rhs_weap_ak74m_zenitco01_b33;
-	class twc_ak74_pol: rhs_weap_ak74m_zenitco01_b33
+	class rhs_weap_ak74m_zenitco01;
+	class rhs_weap_ak74m_zenitco01_b33: rhs_weap_ak74m_zenitco01
 	{
 		
+		magazines[] = {"rhsgref_30rnd_556x45_m21", "rhsgref_30rnd_556x45_m21_t"};
+		displayName = "wz.2004 Beryl";
+		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+	};
+	
+	
+	class twc_ak74_pol_base: rhs_weap_ak74m_zenitco01_b33
+	{
+		displayName = "wz.2004 Beryl";
+		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+		};
+	
+
+	class twc_ak74_pol: twc_ak74_pol_base
+	{
+		
+		displayName = "wz.2004 Beryl";
+		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -243,9 +261,18 @@ class cfgWeapons
 	};
 	
 	class rhs_weap_ak74m_2mag_npz;
-	class twc_ak74_pol_2: rhs_weap_ak74m_2mag_npz
+	class twc_ak74_pol_2_base: rhs_weap_ak74m_2mag_npz
 	{
 		
+		magazines[] = {"rhsgref_30rnd_556x45_m21", "rhsgref_30rnd_556x45_m21_t"};
+	};
+	
+
+	class twc_ak74_pol_2: twc_ak74_pol_2_base
+	{
+		
+		displayName = "wz.2004 Beryl";
+		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -266,10 +293,22 @@ class cfgWeapons
 		};
 	};
 	
+	
 	class rhs_weap_ak74mr_gp25;
-	class twc_ak74_gp25_pol: rhs_weap_ak74mr_gp25
+	class twc_ak74_gp25_pol_base: rhs_weap_ak74mr_gp25
 	{
 		
+		magazines[] = {"rhsgref_30rnd_556x45_m21", "rhsgref_30rnd_556x45_m21_t"};
+	};
+	
+	
+
+	class twc_ak74_gp25_pol: twc_ak74_gp25_pol_base
+	{
+		
+
+		displayName = "wz.2004 Beryl (wz. 74)";
+		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -300,6 +339,21 @@ class cfgWeapons
 			{
 				slot="CowsSlot";
 				item="rhs_acc_pgo7v3";
+			};
+		};
+	};
+	
+	
+	class rhs_weap_svdp_npz;
+	class twc_pol_svd: rhs_weap_svdp_npz
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_M8541_low";
 			};
 		};
 	};
@@ -498,12 +552,30 @@ class cfgmagazines{
 			ammo = rhs_40mm_white;
 			displayName="L5A4 Round (White)";
 		};	
-
+		
+		class rhs_10Rnd_762x54mmR_7N1;
+		class twc_10Rnd_762x54mmR_7N1_P : rhs_10Rnd_762x54mmR_7N1
+		{
+			tracersEvery = 1;
+			displaynameshort = "7N1-P";
+			descriptionShort = "Caliber: 7.62x54mmR Tracer<br />Rounds: 10<br />Used in: SVD";
+			displayName = "7N1-P 10Rnd SVD Mag";
+		};	
 
 
 		class CA_Magazine;
 		class 10Rnd_RHS_50BMG_Box: CA_Magazine {
 			mass = 48;
+		};
+		
+		class rhsgref_30rnd_556x45_m21: CA_Magazine {
+			descriptionshort = "Caliber: 5.56x45mm<br />Rounds: 30";
+			displayName = "5.56mm 30rnd Mag";
+		};
+		
+		class rhsgref_30rnd_556x45_m21_t: rhsgref_30rnd_556x45_m21 {
+			descriptionshort = "Caliber: 5.56x45mm Tracer<br />Rounds: 30";
+			displayName = "5.56mm 30rnd Tracer Mag";
 		};
 };	
 
