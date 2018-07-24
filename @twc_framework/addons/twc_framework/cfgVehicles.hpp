@@ -331,6 +331,33 @@ class cfgVehicles {
 			sync[] = {"EmptyDetector"};
 		};
 	};
+	
+	class TWC_Module_GliderTakeOff: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Glider Take Off Action";
+		function = "twc_fnc_moduleGliderTakeOff";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\airborne_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Capturedata {
+				displayName="Capture Data";
+				description="A variable that has the capture data.";
+				//typeName="STRING";
+				defaultValue="";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Creates an action for commanders that allows them to control when the gliders take off.";
+			sync[] = {"EmptyDetector", "Plane_F"};
+		};
+	};
 
 	class TWC_Module_VirtualArtillery: Module_F {
 		author = "[TWC] Bosenator & jayman";
@@ -643,7 +670,7 @@ class cfgVehicles {
 		isGlobal = 0;
 		isTriggerActivated = 1;
 		isDisposable = 0;
-		icon = "\twc_framework\ui\airborne_ca.paa"; // TODO
+		icon = "\twc_framework\ui\airborne_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
