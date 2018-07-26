@@ -1484,6 +1484,7 @@
         "UK3CB_BAF_V_Pilot_DDPM",
 		"UK3CB_BAF_H_CrewHelmet_B",
 		"ItemMap",
+		"Binocular",
 		"ItemCompass",
 		"ItemWatch"
 		};
@@ -1492,6 +1493,7 @@
         "UK3CB_BAF_V_Pilot_DDPM",
 		"UK3CB_BAF_H_CrewHelmet_B",
 		"ItemMap",
+		"Binocular",
 		"ItemCompass",
 		"ItemWatch"
 		};

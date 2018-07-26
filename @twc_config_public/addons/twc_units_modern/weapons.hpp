@@ -172,6 +172,21 @@ class cfgWeapons
 			};
 		};
 	};
+	class UK3CB_BAF_L115A3_Ghillie;
+	class twc_l115a3_gh: UK3CB_BAF_L115A3_Ghillie
+	{
+		scope = 1;
+		author = "jayman";
+		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "asdg_OpticRail_UK3CB_BAF_L115";
+				item = "RKSL_optic_PMII_525";
+			};
+		};
+	};
 	class rhs_weap_rsp30_green;
 		class twc_L5A4_green: rhs_weap_rsp30_green
 	{

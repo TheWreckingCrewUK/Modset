@@ -752,6 +752,7 @@
 			"UK3CB_BAF_H_CrewHelmet_DPMW_A",
 			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"ItemMap",
+			"Binocular",
 			"ItemCompass",
 			"ItemWatch"
 		};
@@ -760,6 +761,7 @@
 			"UK3CB_BAF_H_CrewHelmet_DPMW_A",
 			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"ItemMap",
+			"Binocular",
 			"ItemCompass",
 			"ItemWatch"
 		};
