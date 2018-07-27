@@ -14,7 +14,7 @@
  */
 params ["_logic", "_units", "_activated"];
 
-if (!_activated || !isServer) exitWith {};
+if (!_activated) exitWith {};
 
 _captureData = _logic getVariable "Capturedata";
 _plane = (_units select {typeOf _x == "LIB_C47_RAF"}) select 0;
