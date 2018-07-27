@@ -17,5 +17,11 @@
 */
 params ["_plane", "_glider", "_planeCaptureData"];
 
-_action = ["glidertakeoff", "Tow Plane Take Off", "", {((_this select 2) select 0) setFuel 1; [(_this select 2) select 0, missionNamespace getVariable ((_this select 2) select 1), [(_this select 2) select 0, "CaptureFinished"]] spawn BIS_fnc_UnitPlay}, {(rank _player in ["COLONEL", "MAJOR", "CAPTAIN", "LIEUTENANT"]) && (_player in _target)}, {}, [_plane, _planeCaptureData]] call ace_interact_menu_fnc_createAction;
-[_glider, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+_action = ["glidertakeoff", "Tow Plane Take Off", "",
+{
+	_plane = (_this select 2) select 0;
+	_capturedata = (_this select 2) select 1;
+	[_plane, 1] remoteExecCall ["setFuel", _plane];
+	[_plane, missionNamespace getVariable _capturedata, [_plane, "CaptureFinished"]] remoteExec ["BIS_fnc_UnitPlay", 2];
+}, {(rank _player in ["COLONEL", "MAJOR", "CAPTAIN", "LIEUTENANT"]) && (_player in _target)}, {}, [_plane, _planeCaptureData]] call ace_interact_menu_fnc_createAction;
+[_glider, 1, ["ACE_SelfActions"], _action] remoteExec ["ace_interact_menu_fnc_addActionToObject"];

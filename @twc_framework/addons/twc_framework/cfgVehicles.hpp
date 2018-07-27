@@ -339,10 +339,10 @@ class cfgVehicles {
 		function = "twc_fnc_moduleGliderTakeOff";
 		scope = 2;
 		isGlobal = 2;
-		isTriggerActivated = 1;
+		isTriggerActivated = 0;
 		icon = "\twc_framework\ui\airborne_ca.paa";
 		functionPriority = 5;
-		isDisposable = 0;
+		isDisposable = 1;
 
 		class Arguments {
 			class Capturedata {
