@@ -123,23 +123,43 @@ class CfgEditorSubcategories {
 	};
 	
 	// Infantry Related
-	class TWC_Infantry_Regular {
-		displayName = "Infantry";
+	class TWC_Infantry_Regular_Woodland {
+		displayName = "Infantry (Woodland)";
 	};
 	
-	class TWC_Infantry_Dismounted {
-		displayName = "Infantry - Dismounted";
+	class TWC_Infantry_Regular_Desert {
+		displayName = "Infantry (Desert)";
 	};
 	
-	class TWC_Infantry_Paratroopers {
-		displayName = "Paratroopers";
+	class TWC_Infantry_Dismounted_Woodland {
+		displayName = "Infantry - (Dismounted, Woodland)";
 	};
 	
-	class TWC_Infantry_Regular_COIN {
-		displayName = "Infantry (COIN)";
+	class TWC_Infantry_Dismounted_Desert {
+		displayName = "Infantry (Dismounted, Desert)";
+	};	
+	
+	class TWC_Infantry_Airborne_Woodland {
+		displayName = "Infantry (Airborne, Woodland)";
 	};
 	
-	class TWC_Infantry_Dismounted_COIN {
-		displayName = "Infantry (COIN) - Dismounted";
+	class TWC_Infantry_Airborne_Desert {
+		displayName = "Infantry (Airborne, Desert)";
+	};
+	
+	class TWC_Infantry_Regular_COIN_Woodland {
+		displayName = "Infantry (COIN, Woodland)";
+	};
+	
+	class TWC_Infantry_Regular_COIN_Desert {
+		displayName = "Infantry (COIN, Desert)";
+	};
+	
+	class TWC_Infantry_Dismounted_COIN_Woodland {
+		displayName = "Infantry (COIN, Dismounted, Woodland)";
+	};
+	
+	class TWC_Infantry_Dismounted_COIN_Desert {
+		displayName = "Infantry (COIN, Dismounted, Desert)";
 	};
 };
