@@ -147,19 +147,19 @@ class CfgEditorSubcategories {
 		displayName = "Infantry (Airborne, Desert)";
 	};
 	
-	class TWC_Infantry_Regular_COIN_Woodland {
+	class TWC_Infantry_COIN_Woodland {
 		displayName = "Infantry (COIN, Woodland)";
 	};
 	
-	class TWC_Infantry_Regular_COIN_Desert {
+	class TWC_Infantry_COIN_Desert {
 		displayName = "Infantry (COIN, Desert)";
 	};
 	
-	class TWC_Infantry_Dismounted_COIN_Woodland {
+	class TWC_Infantry_COIN_Dismounted_Woodland {
 		displayName = "Infantry (COIN, Dismounted, Woodland)";
 	};
 	
-	class TWC_Infantry_Dismounted_COIN_Desert {
+	class TWC_Infantry_COIN_Dismounted_Desert {
 		displayName = "Infantry (COIN, Dismounted, Desert)";
 	};
 };
