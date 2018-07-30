@@ -753,6 +753,109 @@
 			"ItemWatch"
 		};
 	};
+	class 1990_British_Tank_Commander: 1990_British_Base
+	{
+		scope=2;
+		displayName="Tank Commander";
+		editorSubcategory = "Men_1990_Woodland_Mounted";
+		vehicleClass="Men_1990_Woodland_Mounted";
+		backpack="TWC_Backpack_1990_Platoon_Command";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMT",
+			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMT",
+			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A1"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A1"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+	};
+	class 1990_British_Tank_Crew: 1990_British_Base
+	{
+		scope=2;
+		displayName="Tank Crew";
+		editorSubcategory = "Men_1990_Woodland_Mounted";
+		vehicleClass="Men_1990_Woodland_Mounted";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMT",
+			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMT",
+			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A1"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"UK3CB_BAF_L85A1"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+	};
 //////////////////////////////////////////////////////////////////
 //                                                              //
 //                    1990 Desert British                       //

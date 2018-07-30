@@ -88,12 +88,15 @@
 	class TWC_Backpack_Cold_War_Section: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
-		class TransportItems
+		class TransportMagazines
 		{
-			item_nc(ACRE_PRC77,1);
 			maga_nc(SmokeShell,3);
 			maga_nc(SmokeShellRed,2);
 			maga_nc(SmokeShellBlue,2);
+		};
+		class TransportItems
+		{
+			item_nc(ACRE_PRC77,1);
 		};
 	};
 	

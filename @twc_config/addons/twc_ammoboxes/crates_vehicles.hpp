@@ -67,3 +67,16 @@ class TWC_AmmoBox_Vehicle_Generic: TWC_AmmoBox_Vehicle {
 	supplyRadius         = 10;
 	ace_dragging_canDrag = 1;
 };
+class TWC_AmmoBox_Vehicle_Generic_Loadable: TWC_AmmoBox_Vehicle {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Generic Vehicle Resupply (Loadable)";
+	model = "\A3\Supplies_F_Exp\Ammoboxes\Equipment_Box_F.p3d";
+
+	ace_rearm_defaultSupply = 600;
+	ace_cargo_size = 2;
+	ace_cargo_canLoad = 0;
+	transportAmmo        = 0;
+	supplyRadius         = 0;
+	ace_dragging_canDrag = 1;
+};

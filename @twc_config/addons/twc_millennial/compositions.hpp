@@ -312,6 +312,33 @@ class CfgGroups
                                                 position[] = {9,0,0};
                                         };
                                 };
+								class 1990_Tank_Crew
+								{
+									name = "Tank Crew";
+									faction = "TWC_Millennial";
+									side = 1;
+									class Unit0
+									{
+										side = 1;
+										vehicle = "1990_British_Tank_Commander";
+										rank = "SERGEANT";
+										position[] = {0,3,0};
+									};
+									class Unit1
+									{
+										side = 1;
+										vehicle = "1990_British_Tank_Crew";
+										rank = "PRIVATE";
+										position[] = {3,0,0};
+									};
+									class Unit2
+									{
+										side = 1;
+										vehicle = "1990_British_Tank_Crew";
+										rank = "PRIVATE";
+										position[] = {5,0,0};
+									};
+								};
 						};
 						class 1990_Desert
 						{

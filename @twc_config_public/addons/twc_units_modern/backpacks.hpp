@@ -28,7 +28,7 @@
 		{
 			class _xx_mag
 			{
-				magazine = "rhs_30Rnd_545x39_AK";
+				magazine = "rhsgref_30rnd_556x45_m21";
 				count = 5;
 			};
 
@@ -145,12 +145,12 @@
 			};
 			class _xx_stanag
 			{
-				magazine = "rhs_30Rnd_545x39_AK";
+				magazine = "rhsgref_30rnd_556x45_m21";
 				count = 5;
 			};
 			class _xx_m21
 			{
-				magazine = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
+				magazine = "rhs_100Rnd_762x54mmR_green";
 				count = 2;
 			};
 			class _xx_40mm

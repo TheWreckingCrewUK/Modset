@@ -79,7 +79,7 @@ class CfgSoundSets
 	class twc_Breda30_shot_soundset
 	{
 		soundShaders[] = {"twc_Breda30_closure_soundshader","twc_Breda30_closeShot_soundshader","twc_Breda30_midShot_soundshader","twc_Breda30_distShot_soundshader"};
-		volumeFactor = 2.5;
+		volumeFactor = 1;
 		volumeCurve = "CUP_rifleSoundCurve";
 		sound3DProcessingType = "WeaponMediumShot3DProcessingType";
 		distanceFilter = "CUP_defaultDistanceFilter";
@@ -91,7 +91,7 @@ class CfgSoundSets
 	{
 		soundShaders[] = {"twc_Breda30_tailInterior_SoundShader","twc_Breda30_tailTrees_SoundShader","twc_Breda30_tailForest_SoundShader","twc_Breda30_tailMeadows_SoundShader","twc_Breda30_tailHouses_SoundShader"};
 		soundShadersLimit = 2;
-		volumeFactor = 2.5;
+		volumeFactor = 0.8;
 		volumeCurve = "CUP_rifleSoundCurve";
 		frequencyRandomizerMin = 0.01;
 		frequencyRandomizer = 0.05;

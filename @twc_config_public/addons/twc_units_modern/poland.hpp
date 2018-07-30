@@ -96,13 +96,13 @@
 		};
 		magazines[]=
 		{
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
@@ -111,13 +111,13 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
@@ -215,11 +215,11 @@
 		};
 		magazines[]=
 		{
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",
@@ -231,11 +231,11 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
-			"rhs_30Rnd_545x39_AK",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
+			"rhsgref_30rnd_556x45_m21",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",
@@ -347,6 +347,7 @@
 			"CUP_H_CDF_H_PASGT_FST",
 			"ItemMap",
 			"ItemCompass",
+			"itemCTAB",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -355,6 +356,7 @@
 			"CUP_H_CDF_H_PASGT_FST",
 			"ItemMap",
 			"ItemCompass",
+			"itemCTAB",
 			"ItemWatch"
 		};
 		weapons[]=
@@ -385,6 +387,7 @@
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
+			"itemCTAB",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
@@ -393,6 +396,7 @@
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
+			"itemCTAB",
 			"ItemWatch"
 		};
 	};
@@ -403,6 +407,22 @@
 		scope=2;
 		displayName="2ic";
 		backpack="pol_backpack_2ic";
+		linkedItems[]=
+		{
+			"CUP_V_B_RRV_Officer",
+			"CUP_H_CDF_H_PASGT_FST",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_RRV_Officer",
+			"CUP_H_CDF_H_PASGT_FST",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 	};
 	
 	class Modern_pol_subcommander_d: Modern_pol_subcommander
