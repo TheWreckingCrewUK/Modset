@@ -13,9 +13,9 @@ if (_target getVariable ["ace_medical_isBleeding", false]) then {
 	_genericMessages pushBack [localize "STR_ACE_medical_Status_Bleeding", [1, 0.1, 0.1, 1]];
 };
 
-if (_target getVariable ["ace_medical_hasLostBlood", 0] > 1) then {
+/* if (_target getVariable ["ace_medical_hasLostBlood", 0] > 1) then {
 	_genericMessages pushBack [localize "STR_ACE_medical_Status_Lost_Blood", [1, 0.1, 0.1, 1]];
-};
+}; */
 
 if (((_target getVariable ["ace_medical_tourniquets", [0, 0, 0, 0, 0, 0]]) select _selectionN) > 0) then {
 	_genericMessages pushBack [localize "STR_ACE_medical_Status_Tourniquet_Applied", [0.77, 0.51, 0.08, 1]];
