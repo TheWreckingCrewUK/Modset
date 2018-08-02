@@ -37,9 +37,40 @@ class twc_l14A1_scoped: ukcw_L14A1
 		};
 	};
 };
-
-class CUP_arifle_RPK74;
-class ukcw_l4: CUP_arifle_RPK74
+class LMG_Zafir_F;
+class sp_l4_lmg: LMG_Zafir_F
 {
-	magazines[] = {"ukcw_30Rnd_762x51_STANAG","CUP_20Rnd_762x51_FNFAL_M","UK3CB_BAF_762_20Rnd"};
+	magazines[] = {"SP_30Rnd_762_L4","UK3CB_BAF_762_20Rnd"};
+};
+
+//Uniform Cargo Fixes
+class UniformItem;
+class SP_UniformBase_Item;
+class SP_60PatCombats_DPM_1_Item: SP_UniformBase_Item
+{
+	class ItemInfo: UniformItem
+	{
+		containerClass = "Supply40";
+	};
+};
+class SP_60PatCombatsRolled_Khaki_1_Item: SP_UniformBase_Item
+{
+	class ItemInfo: UniformItem
+	{
+		containerClass = "Supply40";
+	};
+};
+class SP_72Para_DenisonKhaki_1_Item: SP_UniformBase_Item
+{
+	class ItemInfo: UniformItem
+	{
+		containerClass = "Supply40";
+	};
+};
+class SP_72Para_DenisonTrops_1_Item: SP_UniformBase_Item
+{
+	class ItemInfo: UniformItem
+	{
+		containerClass = "Supply40";
+	};
 };

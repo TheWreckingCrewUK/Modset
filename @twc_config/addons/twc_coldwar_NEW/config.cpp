@@ -7,7 +7,12 @@ class CfgPatches {
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"twc_faction",
-			"uk3cb_baf_weapons_l1a1"
+			"uk3cb_baf_weapons_l1a1",
+			"sp_uniforms",
+			"sp_weapons",
+			"sp_webbing",
+			"sp_headgear",
+			"sp_facewear"
 		};
 	};
 };
@@ -26,7 +31,7 @@ class CfgVehicles {
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 	
-	#define MEDICAL_LOADOUT "ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
+	#define MEDICAL_LOADOUT "ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
 	#define MAG_2(a) a, a
 	#define MAG_3(a) a, a, a
 	#define MAG_4(a) a, a, a, a
@@ -174,10 +179,10 @@ class CfgVehicles {
 	#include "regular\desert.hpp"
 	#include "regular\desert_dismounted.hpp"
 	
-	/*#include "coin\woodland.hpp"
-	#include "coin\woodland_dismounted.hpp"
+	#include "coin\woodland.hpp"
+	//#include "coin\woodland_dismounted.hpp"
 	#include "coin\desert.hpp"
-	#include "coin\desert_dismounted.hpp"*/
+	//#include "coin\desert_dismounted.hpp"
 	
 	#include "airborne\woodland.hpp"
 	#include "airborne\desert.hpp"

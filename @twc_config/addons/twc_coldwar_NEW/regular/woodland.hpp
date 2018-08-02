@@ -56,14 +56,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Rifleman: TWC_Infantry_ColdWar_Regul
 	weapons[]=
 	{
 		"UK3CB_BAF_L1A1_Wood",
-		"SP_law66_round",
+		"sp_l1a1_law66",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[]=
 	{
 		"UK3CB_BAF_L1A1_Wood",
-		"SP_law66_round",
+		"sp_l1a1_law66",
 		"Throw",
 		"Put"
 	};
@@ -71,12 +71,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Rifleman: TWC_Infantry_ColdWar_Regul
 	{
 		MAG_7("UK3CB_BAF_762_20Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SP_law66_round",
 		"SmokeShell"
 	};
 	respawnmagazines[]=
 	{
 		MAG_7("UK3CB_BAF_762_20Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SP_law66_round",
 		"SmokeShell"
 	};
 };
@@ -86,14 +88,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar_
 	weapons[]=
 	{
 		"TWC_L1A1_SUIT",
-		"SP_law66_round",
+		"sp_l1a1_law66",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[]=
 	{
 		"TWC_L1A1_SUIT",
-		"SP_law66_round",
+		"sp_l1a1_law66",
 		"Throw",
 		"Put"
 	};	
@@ -180,6 +182,30 @@ class TWC_Infantry_ColdWar_Regular_Woodland_ASSAT: TWC_Infantry_ColdWar_Regular_
 {
 	displayName="Assistant AT Rifleman";
 	backpack="TWC_Backpack_ColdWar_Regular_ASSAT";
+	weapons[]=
+	{
+		"UK3CB_BAF_L1A1_Wood",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"UK3CB_BAF_L1A1_Wood",
+		"Throw",
+		"Put"
+	};
+	magazines[]=
+	{
+		MAG_7("UK3CB_BAF_762_20Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SmokeShell"
+	};
+	respawnmagazines[]=
+	{
+		MAG_7("UK3CB_BAF_762_20Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SmokeShell"
+	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_MG: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
 {
@@ -213,6 +239,18 @@ class TWC_Infantry_ColdWar_Regular_Woodland_ASSMG: TWC_Infantry_ColdWar_Regular_
 {
 	displayName="Assistant Machine Gunner";
 	backpack="TWC_Backpack_ColdWar_Regular_ASSMG";
+	weapons[]=
+	{
+		"UK3CB_BAF_L1A1_Wood",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"UK3CB_BAF_L1A1_Wood",
+		"Throw",
+		"Put"
+	};
 	magazines[]=
 	{
 		MAG_7("UK3CB_BAF_762_20Rnd"),
@@ -338,7 +376,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 		"ItemWatch"
 	};
 };
-class TWC_Infantry_ColdWar_Regular_Woodland_CSM :TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Sergeant
+class TWC_Infantry_ColdWar_Regular_Woodland_CSM: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Sergeant
 {
 	displayName="Company Sergeant Major";
 };
