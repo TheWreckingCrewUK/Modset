@@ -1,5 +1,5 @@
-class Rifle;
-class UK3CB_BAF_L1A1: Rifle
+class Rifle_Base_F;
+class UK3CB_BAF_L1A1: Rifle_Base_F
 {
 	class WeaponSlotsInfo;
 };

@@ -132,7 +132,7 @@ class CfgEditorSubcategories {
 	};
 	
 	class TWC_Infantry_Dismounted_Woodland {
-		displayName = "Infantry - (Dismounted, Woodland)";
+		displayName = "Infantry (Dismounted, Woodland)";
 	};
 	
 	class TWC_Infantry_Dismounted_Desert {

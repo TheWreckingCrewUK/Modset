@@ -6,7 +6,8 @@ class CfgPatches {
 		requiredAddons[] = {
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
-			"twc_faction"
+			"twc_faction",
+			"uk3cb_baf_weapons_l1a1"
 		};
 	};
 };
@@ -37,6 +38,8 @@ class CfgVehicles {
 	#define MAG_10(a) a, a, a, a, a, a, a, a, a, a
 	#define MAG_11(a) a, a, a, a, a, a, a, a, a, a, a
 	#define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
+	#define CATEGORY(a) editorSubcategory = a;\
+						vehicleClass= a;
 	
 	//GENERIC
 	class TWC_Infantry_ColdWar_Plane_Pilot: B_Soldier_base_F
@@ -149,14 +152,12 @@ class CfgVehicles {
 		magazines[]=
 		{
 			MAG_3("SP_30Rnd_9x19_L2A3_Sterling"),
-			"SmokeShell",
-			"SmokeShell"
+			MAG_2("SmokeShell")
 		};
 		respawnmagazines[]=
 		{
 			MAG_3("SP_30Rnd_9x19_L2A3_Sterling"),
-			"SmokeShell",
-			"SmokeShell"
+			MAG_2("SmokeShell")
 		};
 	};
 	class TWC_Infantry_ColdWar_Tank_Crew: TWC_Infantry_ColdWar_Tank_Commander
@@ -168,16 +169,16 @@ class CfgVehicles {
 		};
 		
 	};
-	#include regular\woodland.hpp
-	#include regular\woodland_dismounted.hpp
-	#include regular\desert.hpp
-	#include regular\desert_dismounted.hpp
+	#include "regular\woodland.hpp"
+	#include "regular\woodland_dismounted.hpp"
+	#include "regular\desert.hpp"
+	#include "regular\desert_dismounted.hpp"
 	
-	#include coin\woodland.hpp
-	#include coin\woodland_dismounted.hpp
-	#include coin\desert.hpp
-	#include coin\desert_dismounted.hpp
+	/*#include "coin\woodland.hpp"
+	#include "coin\woodland_dismounted.hpp"
+	#include "coin\desert.hpp"
+	#include "coin\desert_dismounted.hpp"*/
 	
-	#include airborne\woodland.hpp
-	#include airborne\desert.hpp
+	#include "airborne\woodland.hpp"
+	#include "airborne\desert.hpp"
 };

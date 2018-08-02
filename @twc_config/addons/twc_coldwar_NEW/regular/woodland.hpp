@@ -5,8 +5,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Base: B_Soldier_base_F
 	scope=1;
 	displayName="Base";
 	faction="TWC_ColdWar";
-	editorSubcategory = "TWC_Infantry_Regular_Woodland";
-	vehicleClass="TWC_Infantry_Regular_Woodland";
+	CATEGORY(TWC_Infantry_Regular_Woodland)
 	icon="iconMan";
 	nakedUniform="U_BasicBody";
 	uniformClass="SP_60PatCombats_DPM_1_Item";
@@ -238,7 +237,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander: TWC_Infantry_Cold
 	linkedItems[]=
 	{
 		"SP_Helmet_MkV_ODNet",
-		"SP_Helmet_MkV_OD_FoliageMid",
+		"SP_P58_FightingOrderNBC",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -246,7 +245,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander: TWC_Infantry_Cold
 	respawnLinkedItems[]=
 	{
 		"SP_Helmet_MkV_ODNet",
-		"SP_Helmet_MkV_OD_FoliageMid",
+		"SP_P58_FightingOrderNBC",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -325,7 +324,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 	linkedItems[]=
 	{
 		"SP_Helmet_MkV_ODMedicNet",
-		"SP_Helmet_MkV_OD_FoliageMid",
+		"SP_P58_FightingOrderNBC",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -333,13 +332,16 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 	respawnLinkedItems[]=
 	{
 		"SP_Helmet_MkV_ODMedicNet",
-		"SP_Helmet_MkV_OD_FoliageMid",
+		"SP_P58_FightingOrderNBC",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 };
-class TWC_Infantry_ColdWar_Regular_Woodland_CSM;
+class TWC_Infantry_ColdWar_Regular_Woodland_CSM :TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Sergeant
+{
+	displayName="Company Sergeant Major";
+};
 
 //AT + AA
 class TWC_Infantry_ColdWar_Regular_Woodland_MILAN_Gunner: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
@@ -377,6 +379,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_MILAN_Ass: TWC_Infantry_ColdWar_Regu
 class TWC_Infantry_ColdWar_Regular_Woodland_Blowpipe_Gunner: TWC_Infantry_ColdWar_Regular_Woodland_MILAN_Gunner
 {
 	displayName="Blowpipe Gunner";
+	backpack="";
 	weapons[]=
 	{
 		"sp_smg_sterling",
@@ -441,14 +444,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Sniper: TWC_Infantry_ColdWar_Regular
 	};
 	magazines[]=
 	{
-		MAG_9("ukcw_l42_10rnd_mag")
+		MAG_9("ukcw_l42_10rnd_mag"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellGreen")
 	};
 	Respawnmagazines[]=
 	{
-		MAG_9("ukcw_l42_10rnd_mag")
+		MAG_9("ukcw_l42_10rnd_mag"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellGreen")
@@ -484,14 +487,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Spotter: TWC_Infantry_ColdWar_Regula
 	};
 	magazines[]=
 	{
-		MAG_9("UK3CB_BAF_762_20Rnd")
+		MAG_9("UK3CB_BAF_762_20Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
 		MAG_2("ClaymoreDirectionalMine_Remote_Mag")
 	};
 	Respawnmagazines[]=
 	{
-		MAG_9("UK3CB_BAF_762_20Rnd")
+		MAG_9("UK3CB_BAF_762_20Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
 		MAG_2("ClaymoreDirectionalMine_Remote_Mag")
