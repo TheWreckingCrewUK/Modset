@@ -1,0 +1,58 @@
+//REGULAR, DISMOUNTED, DESERT
+//Section
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_Rifleman: TWC_Infantry_ColdWar_Regular_Desert_Rifleman
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+	backpack = "TWC_Backpack_ColdWar_Regular_Dismounted_Rifleman";
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_Rifleman_SUIT: TWC_Infantry_ColdWar_Regular_Desert_Rifleman_SUIT
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+	backpack = "TWC_Backpack_ColdWar_Regular_Dismounted_Rifleman";
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_SectionCommander: TWC_Infantry_ColdWar_Regular_Desert_SectionCommander
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_2iC: TWC_Infantry_ColdWar_Regular_Desert_2iC
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_AT: TWC_Infantry_ColdWar_Regular_Desert_AT
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+	backpack = "TWC_Backpack_ColdWar_Regular_Dismounted_AT";
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_ASSAT: TWC_Infantry_ColdWar_Regular_Desert_ASSAT
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+	backpack = "TWC_Backpack_ColdWar_Regular_Dismounted_ATASS";
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_MG: TWC_Infantry_ColdWar_Regular_Desert_MG
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+	backpack = "TWC_Backpack_ColdWar_Regular_Dismounted_MG";
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_ASSMG: TWC_Infantry_ColdWar_Regular_Desert_ASSMG
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+	backpack = "TWC_Backpack_ColdWar_Regular_Dismounted_ASSMG";
+};
+
+//Platoon Command
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_Platoon_Commander: TWC_Infantry_ColdWar_Regular_Desert_Platoon_Commander
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_Platoon_Sergeant: TWC_Infantry_ColdWar_Regular_Desert_Platoon_Sergeant
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_Platoon_Medic: TWC_Infantry_ColdWar_Regular_Desert_Platoon_Medic
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_CSM: TWC_Infantry_ColdWar_Regular_Desert_CSM
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+};
