@@ -52,7 +52,7 @@ if(_era != "ww2") then {
 
 //Cold War Pilot NVGs.
 if(_era == "coldwar") then {
-	if (player getvariable "twc_keepMap")
+	if (player getvariable "twc_keepMap") then
 	{
 		player addItem "ACE_Flashlight_MX991";
 	};
