@@ -28,6 +28,7 @@ if(leader player == player)then{
 };
 //If modern or 1990 give nvgs
 if(_era isEqualTo "modern" || _era isEqualTo "1990") then {
+	player addItem "ACE_Flashlight_MX991";
 	player linkItem "UK3CB_BAF_HMNVS";
 	if(leader player == player)then{
 		player addItem "B_IR_Grenade";
@@ -50,6 +51,13 @@ if(_era != "ww2") then {
 };
 
 //Cold War Pilot NVGs.
-if((_era == "coldwar") && (typeOf player == "ColdWar_JetPilot")) then {
-	player linkItem "CUP_NVG_PVS7";
+if(_era == "coldwar") then {
+	if (player getvariable "twc_keepMap")
+	{
+		player addItem "ACE_Flashlight_MX991";
+	};
+	if (typeOf player == "ColdWar_JetPilot") then
+	{
+		player linkItem "CUP_NVG_PVS7";
+	};
 };

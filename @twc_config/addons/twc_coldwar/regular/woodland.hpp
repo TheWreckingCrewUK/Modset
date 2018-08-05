@@ -104,6 +104,9 @@ class TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander: TWC_Infantry_ColdW
 {
 	displayName="Section Commander";
 	backpack="TWC_Backpack_ColdWar_Regular_SectionCommander";
+	class EventHandlers: EventHandlers {
+		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+	};
 	weapons[]=
 	{
 		"UK3CB_BAF_L1A1_Wood",
@@ -135,6 +138,9 @@ class TWC_Infantry_ColdWar_Regular_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Wo
 {
 	displayName="2iC";
 	backpack="TWC_Backpack_ColdWar_Regular_2iC";
+	class EventHandlers: EventHandlers {
+		init = "";
+	};
 	weapons[]=
 	{
 		"UK3CB_BAF_L1A1_Wood",
@@ -168,12 +174,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_AT: TWC_Infantry_ColdWar_Regular_Woo
 	magazines[]=
 	{
 		MAG_7("SP_30Rnd_9x19_L2A3_Sterling"),
+		"ukcw_l14a1_HEAT",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell"
 	};
 	respawnmagazines[]=
 	{
 		MAG_7("SP_30Rnd_9x19_L2A3_Sterling"),
+		"ukcw_l14a1_HEAT",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell"
 	};	

@@ -82,6 +82,16 @@ class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
 	};
 };
 
+class TWC_AmmoBox_Other_MILAN_Portable: TWC_AmmoBox_Launcher_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "MILAN (Portable)";
+	
+	class TransportMagazines {
+		maga_nc(ukcw_milan_ace_missile, 6);
+	};
+};
+
 class TWC_AmmoBox_Other_L16_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
@@ -104,7 +114,7 @@ class TWC_AmmoBox_Other_L118_Portable: TWC_AmmoBox_Portable {
 		maga_nc(ACE_CUP_30Rnd_105mmHE_M119_M, 10);
 		maga_nc(ACE_CUP_30Rnd_105mmSMOKE_M119_M, 6);
 		maga_nc(ACE_CUP_30Rnd_105mmILLUM_M119_M, 4);
-	};	
+	};
 };
 
 class TWC_AmmoBox_Other_L118_Portable_HE: TWC_AmmoBox_Portable {

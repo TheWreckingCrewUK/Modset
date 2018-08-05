@@ -20,6 +20,10 @@ class CfgPatches
 
 class EventHandlers;
 
+class CfgMagazines
+{
+	#include "magazines.hpp"
+};
 class CfgWeapons
 {
 	#include "weapons.hpp"
