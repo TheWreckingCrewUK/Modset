@@ -328,12 +328,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_ColdW
 	weapons[]=
 	{
 		"UK3CB_BAF_L1A1_Wood",
+		"Binocular",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[]=
 	{
 		"UK3CB_BAF_L1A1_Wood",
+		"Binocular",
 		"Throw",
 		"Put"
 	};
@@ -352,6 +354,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 {
 	displayName="Platoon Medic";
 	backpack="TWC_Backpack_ColdWar_Regular_Platoon_Medic";
+	attendant = 1;
 	class EventHandlers: EventHandlers {
 		init = "";
 	};

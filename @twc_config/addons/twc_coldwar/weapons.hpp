@@ -40,7 +40,7 @@ class twc_l14A1_scoped: ukcw_L14A1
 class LMG_Zafir_F;
 class sp_l4_lmg: LMG_Zafir_F
 {
-	magazines[] = {"SP_30Rnd_762_L4","UK3CB_BAF_762_20Rnd"};
+	magazines[] = {"SP_30Rnd_762_L4","UK3CB_BAF_762_20Rnd","UK3CB_BAF_762_20Rnd_T"};
 };
 class launch_RPG7_F;
 class sp_l1a1_law66: launch_RPG7_F
