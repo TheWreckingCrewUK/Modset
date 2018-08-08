@@ -65,7 +65,7 @@ class TWC_Backpack_ColdWar_Regular_Dismounted_AT: SP_Backpack_LargePack_CarlGust
 	maximumLoad = 200;
 	class TransportMagazines {
 		ADD_MAGA(ukcw_l14a1_HE,1);
-		ADD_MAGA(ukcw_l14a1_HEAT);
+		ADD_MAGA(ukcw_l14a1_HEAT,1);
 		ADD_MAGA(SP_30Rnd_9x19_L2A3_Sterling,6);
 	};
 };
