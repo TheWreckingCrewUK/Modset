@@ -26,6 +26,7 @@ class TWC_Backpack_ColdWar_Regular_SectionCommander: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_2iC: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 250;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd, 10);
 		ADD_MAGA(SmokeShell, 4);
@@ -44,6 +45,7 @@ class TWC_Backpack_ColdWar_Regular_ASSAT: SP_Backpack_CarlGustavCarrier
 class TWC_Backpack_ColdWar_Regular_ASSMG: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 200;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2);
 		ADD_MAGA(UK3CB_BAF_762_100Rnd,1);
@@ -90,6 +92,7 @@ class TWC_Backpack_ColdWar_Regular_Dismounted_MG: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_Dismounted_ASSMG: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 250;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2);
 		ADD_MAGA(UK3CB_BAF_762_100Rnd,1);
@@ -131,6 +134,7 @@ class TWC_Backpack_ColdWar_COIN_ASSMG: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_COIN_Dismounted_Rifleman: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 200;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd, 8);
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 1);
@@ -148,6 +152,7 @@ class TWC_Backpack_ColdWar_COIN_Dismounted_MG: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_Platoon_Commander: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 200;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
 	};
@@ -196,6 +201,7 @@ class TWC_Backpack_ColdWar_Regular_Platoon_Medic: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_COIN_Platoon_Commander: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 200;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
 	};
@@ -272,6 +278,7 @@ class TWC_Backpack_ColdWar_Regular_Spotter: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_Artillery_Commander: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 250;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
 	};
@@ -279,6 +286,7 @@ class TWC_Backpack_ColdWar_Regular_Artillery_Commander: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_FO: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 200;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
 	};
