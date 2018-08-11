@@ -32,12 +32,41 @@ class cfgWeapons
 	
 	class rhs_weap_ak74m_Base_F: Rifle_Base_F
 	{
-		recoil = "twc_rifle_1";
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	class rhs_weap_lmg_minimipara;
+	class rhs_weap_lmg_minimi_railed: rhs_weap_lmg_minimipara
+	{
+		class FullAuto;
+	};
+	
+	class rhs_weap_m249_pip_L: rhs_weap_lmg_minimi_railed
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class FullAuto:FullAuto {
+			dispersion = 0.003;
+		};
+	};
+	
+	class rhs_weap_M590_5RD: Rifle_Base_F
+	{
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_rifle_762_prone";
+	};
+	class rhs_weap_M249_base;
+	class rhs_weap_m240_base: rhs_weap_M249_base
+	{
+		recoil = "twc_mg_762";
+		recoilProne = "twc_mg_prone";
 	};
 	
 	class rhs_weap_m4_Base: arifle_MX_Base_F
 	{
-		recoil = "twc_rifle_1";
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
 		class Single:Single {
 			dispersion = 0.001;
 		};
@@ -55,7 +84,8 @@ class cfgWeapons
 	
 	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F
 	{
-		recoil = "twc_rifle_1";
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
 		class Single:Single {
 			dispersion = 0.001;
 		};
@@ -580,7 +610,7 @@ class cfgWeapons
 	class rhs_weap_pkp;
 	class rhs_weap_pkm: rhs_weap_pkp
 	{
-		recoil = "twc_mg_2";
+		recoil = "twc_mg_762";
 		recoilProne = "twc_mg_prone";
 		magazines[] = {"rhs_100Rnd_762x54mmR", "rhs_100Rnd_762x54mmR_green", "rhs_100Rnd_762x54mmR_7N13", "rhs_100Rnd_762x54mmR_7N26", "rhs_100Rnd_762x54mmR_7BZ3", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"};
 	};
@@ -590,40 +620,6 @@ class cfgWeapons
 
 
 
-class cfgRecoils
-{
-	class twc_rifle_1
-	{
-		muzzleOuter[]	= { 0.05,  0.2,  0.02,  0.1 };
-		kickBack[]	= { 0.02, 0.04 };
-		permanent	= 0.3;
-		temporary	= 0.1;
-	};
-	
- class twc_mg_1
-	{
-		muzzleOuter[]	= { 0.05,  0.3,  0.03,  0.1 };
-		kickBack[]	= { 0.04, 0.06 };
-		permanent	= 0.4;
-		temporary	= 0.1;
-	};
-	
- class twc_mg_2
-	{
-		muzzleOuter[]	= { 0.05,  0.3,  0.035,  0.1 };
-		kickBack[]	= { 0.04, 0.07 };
-		permanent	= 0.45;
-		temporary	= 0.1;
-	};
-	
- class twc_mg_prone
-	{
-		muzzleOuter[]	= { 0.01,  0.15,  0.05,  0.15 };
-		kickBack[]	= { 0.06, 0.08 };
-		permanent	= 0.2;
-		temporary	= 0.05;
-	};
-};
 
 
 class cfgmagazines{
