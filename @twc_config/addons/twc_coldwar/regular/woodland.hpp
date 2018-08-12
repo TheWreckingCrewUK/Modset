@@ -107,6 +107,16 @@ class TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander: TWC_Infantry_ColdW
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 	};
+	Items[]=
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	respawnItems[]=
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
 	weapons[]=
 	{
 		"UK3CB_BAF_L1A1_Wood",
@@ -296,6 +306,16 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander: TWC_Infantry_Cold
 		"itemMap",
 		"ItemWatch"
 	};
+	Items[]=
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	respawnItems[]=
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
 	weapons[]=
 	{
 		"sp_smg_sterling",
@@ -357,6 +377,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 	attendant = 1;
 	class EventHandlers: EventHandlers {
 		init = "";
+	};
+	Items[]=
+	{
+		MEDICAL_LOADOUT
+	};
+	respawnItems[]=
+	{
+		MEDICAL_LOADOUT
 	};
 	weapons[]=
 	{
@@ -484,11 +512,13 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Sniper: TWC_Infantry_ColdWar_Regular
 	Items[]=
 	{
 		MEDICAL_LOADOUT,
+		"ACE_MapTools",
 		"ACE_Tripod"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
+		"ACE_MapTools",
 		"ACE_Tripod"
 	};
 	magazines[]=
@@ -525,12 +555,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Spotter: TWC_Infantry_ColdWar_Regula
 	Items[]=
 	{
 		MEDICAL_LOADOUT,
+		"ACE_MapTools",
 		"ACE_Clacker",
 		"ACE_RangeCard"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
+		"ACE_MapTools",
 		"ACE_Clacker",
 		"ACE_RangeCard"
 	};
@@ -625,11 +657,13 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_ColdW
 	};
 	Items[]=
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
 	};
 	respawnItems[]=
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
 	};
 	weapons[]=
 	{

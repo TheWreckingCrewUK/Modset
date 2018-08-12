@@ -8,6 +8,7 @@ class CfgPatches
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"twc_faction",
+			"twc_ai",
 			"uk3cb_baf_weapons_l1a1",
 			"sp_uniforms",
 			"sp_weapons",
@@ -82,11 +83,13 @@ class CfgVehicles
 		};
 		Items[]=
 		{
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"ACE_MapTools"
 		};
 		respawnItems[]=
 		{
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"ACE_MapTools"
 		};
 		weapons[]=
 		{
@@ -142,11 +145,13 @@ class CfgVehicles
 		};
 		Items[]=
 		{
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"ACE_MapTools"
 		};
 		respawnItems[]=
 		{
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"ACE_MapTools"
 		};
 		weapons[]=
 		{
