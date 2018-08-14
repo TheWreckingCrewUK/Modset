@@ -95,4 +95,17 @@ class CfgFactionClasses {
 		priority=2;
 		side=0;
 	};
+
+	class TWC_OPFOR_Units_Aden {
+		displayName="Aden Emergency Insurgents";
+		author="[TWC] Rik";
+		priority=2;
+		side=0;
+	};
+	class TWC_INDEP_Units_Aden {
+		displayName="Aden Emergency Arab Police";
+		author="[TWC] Rik";
+		priority=2;
+		side=2;
+	};
 };
