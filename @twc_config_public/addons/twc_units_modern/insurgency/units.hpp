@@ -489,6 +489,7 @@
 		vehicleClass="Men_ana";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
+		identityTypes[] = {"LanguagePER_F","Head_TK","G_IRAN_default"};
 		uniformClass="CUP_U_O_SLA_Green";
 		backpack="";
 		linkedItems[]=
