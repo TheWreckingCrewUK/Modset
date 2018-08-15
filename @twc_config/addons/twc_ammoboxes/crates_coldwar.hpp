@@ -137,6 +137,6 @@ class TWC_AmmoBox_ColdWar_Blowpipe_Portable: TWC_AmmoBox_Portable {
 	};
 	
 	class TransportMagazines {
-		maga_nc(ukcw_blowpipe_missile, 4);
+		maga_nc(SP_Blowpipe_round, 4);
 	};
 };
