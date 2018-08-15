@@ -8,6 +8,7 @@ class SP_Backpack_LargePack_CarlGustav;
 class SP_Backpack_CarlGustavCarrier;
 class SP_Backpack_RucksackGS_CarlGustav;
 class SP_Backpack_RucksackGS;
+class SP_Backpack_BlowpipeCarrier;
 
 //Section, regular
 class TWC_Backpack_ColdWar_Regular_SectionCommander: SP_Backpack_LargePack
@@ -255,12 +256,12 @@ class TWC_Backpack_ColdWar_Regular_MILAN_Ass: SP_Backpack_LargePack_CarlGustav
 		ADD_ITEM(ukcw_milan_ace_missile,2);
 	};
 };
-class TWC_Backpack_ColdWar_Regular_Blowpipe_Ass: SP_Backpack_LargePack_CarlGustav
+class TWC_Backpack_ColdWar_Regular_Blowpipe_Ass: SP_Backpack_BlowpipeCarrier
 {
 	scope = 1;
-	maximumLoad = 500;
+	maximumLoad = 200;
 	class TransportMagazines {
-		ADD_MAGA(ukcw_blowpipe_missile,2);
+		ADD_MAGA(SP_Blowpipe_round,2);
 	};
 };
 class TWC_Backpack_ColdWar_Regular_Spotter: SP_Backpack_LargePack

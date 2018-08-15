@@ -460,14 +460,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Blowpipe_Gunner: TWC_Infantry_ColdWa
 	weapons[]=
 	{
 		"sp_smg_sterling",
-		"ukcw_blowpipe",
+		"SP_Blowpipe",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[]=
 	{
 		"sp_smg_sterling",
-		"ukcw_blowpipe",
+		"SP_Blowpipe",
 		"Throw",
 		"Put"
 	};
@@ -475,13 +475,13 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Blowpipe_Gunner: TWC_Infantry_ColdWa
 	{
 		MAG_5("SP_30Rnd_9x19_L2A3_Sterling"),
 		MAG_2("SmokeShell"),
-		"ukcw_blowpipe_missile"
+		"SP_Blowpipe_round"
 	};
 	respawnmagazines[]=
 	{
 		MAG_5("SP_30Rnd_9x19_L2A3_Sterling"),
 		MAG_2("SmokeShell"),
-		"ukcw_blowpipe_missile"
+		"SP_Blowpipe_round"
 	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_Blowpipe_Ass: TWC_Infantry_ColdWar_Regular_Woodland_MILAN_Ass
