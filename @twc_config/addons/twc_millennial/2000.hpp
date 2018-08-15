@@ -141,14 +141,14 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_SUSAT3D",
-			"ukcw_L1A1_law"
+			"sp_l1a1_law66"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_SUSAT3D",
-			"ukcw_L1A1_law"
+			"sp_l1a1_law66"
 		};
 		magazines[]=
 		{
@@ -429,23 +429,23 @@
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub",
+			"UK3CB_BAF_L85A2_SUSAT3D",
 			"TWC_Milan_Tripod_Disassemabled"
 		};
 		magazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell"
 		};
 	};
@@ -457,7 +457,7 @@
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub",
+			"UK3CB_BAF_L85A2_SUSAT3D",
 			"TWC_Milan_Launcher_Disassemabled"
 		};
 		respawnweapons[]=
@@ -476,32 +476,32 @@
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub",
+			"UK3CB_BAF_L85A2_SUSAT3D",
 			"UK3CB_BAF_M6"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub",
+			"UK3CB_BAF_L85A2_SUSAT3D",
 			"UK3CB_BAF_M6"
 		};
 		magazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
 		};
 		Respawnmagazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
