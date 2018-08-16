@@ -2,8 +2,8 @@ class WW2_British_Base: I_Soldier_F {
 	scope = 1;
 	displayName = "Base";
 	faction = "twc_faction_independent";
-	editorSubcategory = "TWC_Infantry_Regular";
-	vehicleClass = "TWC_Infantry_Regular";
+	editorSubcategory = "TWC_Infantry_Regular_Woodland";
+	vehicleClass = "TWC_Infantry_Regular_Woodland";
 	nakedUniform = "U_BasicBody";
 	uniformClass = "fow_u_uk_bd40_01_private";
 
@@ -80,8 +80,8 @@ class WW2_Para_British_Base: I_Soldier_F {
 	scope = 1;
 	displayName = "Base";
 	faction = "twc_faction_independent";
-	editorSubcategory = "TWC_Infantry_Paratroopers";
-	vehicleClass = "TWC_Infantry_Paratroopers";
+	editorSubcategory = "TWC_Infantry_Airborne_Woodland";
+	vehicleClass = "TWC_Infantry_Airborne_Woodland";
 	nakedUniform = "U_BasicBody";
 	uniformClass = "fow_u_uk_parasmock";
 

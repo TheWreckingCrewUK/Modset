@@ -21,8 +21,78 @@ class cfgWeapons
 	class UK3CB_BAF_L85A2_UGL;
 	class UK3CB_BAF_L115A3;
 	class UK3CB_BAF_L85A2_RIS_Tan;
+	class arifle_Mk20_F;
+	class Rifle_Base_F;
 	
+	class arifle_MX_Base_F: Rifle_Base_F
+	{
+		class Single;
+		class FullAuto;
+	};
+	
+	class rhs_weap_ak74m_Base_F: Rifle_Base_F
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	class rhs_weap_lmg_minimipara;
+	class rhs_weap_lmg_minimi_railed: rhs_weap_lmg_minimipara
+	{
+		class FullAuto;
+	};
+	
+	class rhs_weap_m249_pip_L: rhs_weap_lmg_minimi_railed
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class FullAuto:FullAuto {
+			dispersion = 0.003;
+		};
+	};
+	
+	class rhs_weap_M590_5RD: Rifle_Base_F
+	{
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_rifle_762_prone";
+	};
+	class rhs_weap_M249_base;
+	class rhs_weap_m240_base: rhs_weap_M249_base
+	{
+		recoil = "twc_mg_762";
+		recoilProne = "twc_mg_prone";
+	};
+	
+	class rhs_weap_m4_Base: arifle_MX_Base_F
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class Single:Single {
+			dispersion = 0.001;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.001;
+		};
+	};
 
+	
+	class arifle_Mk20_plain_F: arifle_Mk20_F
+	{
+		class Single;
+		class FullAuto;
+	};
+	
+	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class Single:Single {
+			dispersion = 0.001;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.001;
+		};
+	};
 	
 	class UK3CB_BAF_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS
 	{
@@ -216,7 +286,7 @@ class cfgWeapons
 		magazines[] = {"twc_l5a4_w"};
 	};
 	
-	class rhs_weap_ak74m_Base_F;
+	
 	class rhs_weap_akm: rhs_weap_ak74m_Base_F
 	{
 		magazines[] = {"CUP_30Rnd_762x39_AK47_M", "rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm_tracer", "rhs_30Rnd_762x39mm_89", "rhs_30Rnd_762x39mm_U"};
@@ -540,10 +610,14 @@ class cfgWeapons
 	class rhs_weap_pkp;
 	class rhs_weap_pkm: rhs_weap_pkp
 	{
+		recoil = "twc_mg_762";
+		recoilProne = "twc_mg_prone";
 		magazines[] = {"rhs_100Rnd_762x54mmR", "rhs_100Rnd_762x54mmR_green", "rhs_100Rnd_762x54mmR_7N13", "rhs_100Rnd_762x54mmR_7N26", "rhs_100Rnd_762x54mmR_7BZ3", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"};
 	};
 	
+
 };
+
 
 
 

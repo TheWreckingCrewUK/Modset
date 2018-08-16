@@ -1,237 +1,315 @@
-	class CUP_B_AlicePack_Khaki;
-	class B_AssaultPack_blk;
-	
-	class TWC_Backpack_Cold_War_Tank: B_AssaultPack_blk {
-		scope = 1;
+#define ADD_MAGA(a,b) class _nc_##a {magazine = a; count = b;}
+#define ADD_WEAP(a,b) class _nc_##a {weapon = a; count = b;}
+#define ADD_ITEM(a,b) class _nc_##a {name = a; count = b;}
 
-		class TransportItems {
-			class _xx_PRC_77 {
-				name = "ACRE_PRC77";
-				count = 1;
-			};
-		};
-	};
-	
-	class TWC_Backpack_Cold_War_FAC: B_AssaultPack_blk {
-		scope = 1;
+//Base Classes
+class SP_Backpack_LargePack;
+class SP_Backpack_LargePack_CarlGustav;
+class SP_Backpack_CarlGustavCarrier;
+class SP_Backpack_RucksackGS_CarlGustav;
+class SP_Backpack_RucksackGS;
+class SP_Backpack_BlowpipeCarrier;
 
-		class TransportItems {
-			class _xx_PRC_77 {
-				name = "ACRE_PRC77";
-				count = 1;
-			};
+//Section, regular
+class TWC_Backpack_ColdWar_Regular_SectionCommander: SP_Backpack_LargePack
+{
+	scope = 1;
+	maximumLoad = 200;
+	class TransportMagazines {
+		ADD_MAGA(SmokeShell,3);
+		ADD_MAGA(SmokeShellRed,2);
+		ADD_MAGA(SmokeShellBlue,2);
+	};
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
+	};
+};
+class TWC_Backpack_ColdWar_Regular_2iC: SP_Backpack_LargePack
+{
+	scope = 1;
+	maximumLoad = 250;
+	class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_762_20Rnd, 10);
+		ADD_MAGA(SmokeShell, 4);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 1);
+	};
+};
+class TWC_Backpack_ColdWar_Regular_ASSAT: SP_Backpack_CarlGustavCarrier
+{
+	scope = 1;
+	maximumLoad = 250;
+	class TransportMagazines {
+		ADD_MAGA(ukcw_l14a1_HEAT,2);
+		ADD_MAGA(ukcw_l14a1_HE,1);
+	};
+};
+class TWC_Backpack_ColdWar_Regular_ASSMG: SP_Backpack_LargePack
+{
+	scope = 1;
+	maximumLoad = 200;
+	class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd,1);
+	};
+};
 
-			class _xx_LaserBatteries {
-				name = "Laserbatteries";
-				count = 1;
-			};
-		};
+//Section, regular, dismounted
+class TWC_Backpack_ColdWar_Regular_Dismounted_Rifleman: SP_Backpack_LargePack
+{
+	scope = 1;
+	class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_762_20Rnd, 8);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 1);
+	};
+};
+class TWC_Backpack_ColdWar_Regular_Dismounted_AT: SP_Backpack_LargePack_CarlGustav
+{
+	scope = 1;
+	maximumLoad = 200;
+	class TransportMagazines {
+		ADD_MAGA(ukcw_l14a1_HE,1);
+		ADD_MAGA(ukcw_l14a1_HEAT,1);
+		ADD_MAGA(SP_30Rnd_9x19_L2A3_Sterling,6);
+	};
+};
+class TWC_Backpack_ColdWar_Regular_Dismounted_ATASS: SP_Backpack_LargePack_CarlGustav
+{
+	scope = 1;
+	maximumLoad = 300;
+	class TransportMagazines {
+		ADD_MAGA(ukcw_l14a1_HEAT,2);
+		ADD_MAGA(ukcw_l14a1_HE,1);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd,4);
+	};
+};
+class TWC_Backpack_ColdWar_Regular_Dismounted_MG: SP_Backpack_LargePack
+{
+	scope = 1;
+	class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,1);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd,1);
+	};
+};
+class TWC_Backpack_ColdWar_Regular_Dismounted_ASSMG: SP_Backpack_LargePack
+{
+	scope = 1;
+	maximumLoad = 250;
+	class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd,1);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd,8);
+	};
+};
 
-		class TransportMagazines {
-			maga_nc(SmokeShell, 5);
-			maga_nc(SmokeShellGreen, 5);
-			maga_nc(SmokeShellBlue, 5);
-			maga_nc(SmokeShellOrange, 5);
-			maga_nc(SmokeShellRed, 5);
-			maga_nc(SmokeShellPurple, 5);
-		};
+//Section, COIN
+class TWC_Backpack_ColdWar_COIN_SectionCommander: SP_Backpack_LargePack
+{
+	scope = 1;
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
 	};
-	
-	class TWC_Backpack_Cold_War_Rifleman: CUP_B_AlicePack_Khaki {
-		scope = 1;
-		class TransportMagazines {
-			maga_nc(UK3CB_BAF_762_20Rnd, 8);
-			maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
-		};
+	class TransportMagazines {
+		ADD_MAGA(SmokeShell,3);
+		ADD_MAGA(SmokeShellRed,2);
+		ADD_MAGA(SmokeShellBlue,2);
 	};
+};
+class TWC_Backpack_ColdWar_COIN_2iC: SP_Backpack_LargePack
+{
+	scope = 1;
+	class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_762_20Rnd, 10);
+		ADD_MAGA(SmokeShell, 4);
+		ADD_MAGA(SP_30Rnd_762_L4, 3);
+	};
+};
+class TWC_Backpack_ColdWar_COIN_ASSMG: SP_Backpack_LargePack
+{
+	scope = 1;
+	class TransportMagazines {
+		ADD_MAGA(SP_30Rnd_762_L4, 6);
+	};
+};
 
-	class TWC_Backpack_Cold_War_2IC: CUP_B_AlicePack_Khaki {
-		scope = 1;
-		class TransportMagazines {
-			maga_nc(UK3CB_BAF_762_20Rnd, 10);
-			maga_nc(SmokeShell, 4);
-			maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
-		};
+//Section, COIN, dismounted
+class TWC_Backpack_ColdWar_COIN_Dismounted_Rifleman: SP_Backpack_LargePack
+{
+	scope = 1;
+	maximumLoad = 200;
+	class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_762_20Rnd, 8);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 1);
 	};
+};
+class TWC_Backpack_ColdWar_COIN_Dismounted_MG: SP_Backpack_LargePack
+{
+	scope = 1;
+	class TransportMagazines {
+		ADD_MAGA(SP_30Rnd_762_L4, 10);
+	};
+};
 
-	class TWC_Backpack_Cold_War_2IC_Dismounted: CUP_B_AlicePack_Khaki {
-		scope = 1;
-		class TransportMagazines {
-			maga_nc(UK3CB_BAF_762_20Rnd, 15);
-			maga_nc(SmokeShell, 3);
-			maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
-		};
+//Platoon Command, regular
+class TWC_Backpack_ColdWar_Regular_Platoon_Commander: SP_Backpack_LargePack
+{
+	scope = 1;
+	maximumLoad = 200;
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
 	};
+	class TransportMagazines {
+		ADD_MAGA(SmokeShell,3);
+		ADD_MAGA(SmokeShellRed,2);
+		ADD_MAGA(SmokeShellBlue,2);
+	};
+};
+class TWC_Backpack_ColdWar_Regular_Platoon_Sergeant: SP_Backpack_LargePack
+{
+	scope = 1;
+	maximumLoad = 500;
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
+		ADD_ITEM(ACE_wirecutter,1);
+	};
+	class TransportMagazines {
+		ADD_MAGA(SmokeShell,3);
+		ADD_MAGA(SmokeShellRed,2);
+		ADD_MAGA(SmokeShellBlue,2);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd,20);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2);
+		ADD_MAGA(SP_30Rnd_9x19_L2A3_Sterling,5);
+	};
+};
+class TWC_Backpack_ColdWar_Regular_Platoon_Medic: SP_Backpack_LargePack
+{
+	scope = 1;
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing,20);
+		ADD_ITEM(ACE_morphine,10);
+		ADD_ITEM(ACE_elasticBandage,20);
+		ADD_ITEM(ACE_quikclot,20);
+		ADD_ITEM(ACE_packingBandage,20);
+		ADD_ITEM(ACE_adenosine,4);
+		ADD_ITEM(ACE_atropine,4);
+		ADD_ITEM(ACE_epinephrine,10);
+		ADD_ITEM(ACE_salineIV_500,6);
+		ADD_ITEM(ACE_tourniquet,4);
+		ADD_ITEM(ACE_personalAidKit,1);
+	};
+};
 
-	class TWC_Backpack_Cold_War_2IC_Dismounted_Troubles: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_UK3CB_BAF_762_20Rnd
-			{
-				magazine = "UK3CB_BAF_762_20Rnd";
-				count = 13;
-			};
-			class _xx_Smoke
-			{
-				magazine = "SmokeShell";
-				count = 3;
-			};
-			class _xx_Belt
-			{
-				magazine = "ukcw_30Rnd_762x51_STANAG";
-				count = 2;
-			};
-		};
+//Platoon Command, COIN
+class TWC_Backpack_ColdWar_COIN_Platoon_Commander: SP_Backpack_LargePack
+{
+	scope = 1;
+	maximumLoad = 200;
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
 	};
-	class TWC_Backpack_Cold_War_Section: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			maga_nc(SmokeShell,3);
-			maga_nc(SmokeShellRed,2);
-			maga_nc(SmokeShellBlue,2);
-		};
-		class TransportItems
-		{
-			item_nc(ACRE_PRC77,1);
-		};
+	class TransportMagazines {
+		ADD_MAGA(SmokeShell,3);
+		ADD_MAGA(SmokeShellRed,2);
+		ADD_MAGA(SmokeShellBlue,2);
 	};
-	
-	class TWC_Backpack_Cold_War_Arty: CUP_B_AlicePack_Khaki {
-		scope = 1;
-		class TransportItems { };
+};
+class TWC_Backpack_ColdWar_COIN_Platoon_Sergeant: SP_Backpack_LargePack
+{
+	scope = 1;
+	maximumLoad = 500;
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
+		ADD_ITEM(ACE_wirecutter,1);
 	};
-	class TWC_Backpack_Cold_War_MG: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			maga_nc(UK3CB_BAF_762_100Rnd_T,1);
-			maga_nc(UK3CB_BAF_762_100Rnd,1);
-		};
+	class TransportMagazines {
+		ADD_MAGA(SmokeShell,3);
+		ADD_MAGA(SmokeShellRed,2);
+		ADD_MAGA(SmokeShellBlue,2);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd,20);
+		ADD_MAGA(SP_30Rnd_762_L4,6);
+		ADD_MAGA(SP_30Rnd_9x19_L2A3_Sterling,5);
 	};
-	class TWC_Backpack_Cold_War_Bren: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_UK3CB_BAF_75Rnd_T
-			{
-				magazine = "ukcw_30Rnd_762x51_STANAG";
-				count = 6;
-			};
-		};
+};
+class TWC_Backpack_ColdWar_COIN_Platoon_Medic: SP_Backpack_LargePack
+{
+	scope = 1;
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing,20);
+		ADD_ITEM(ACE_morphine,10);
+		ADD_ITEM(ACE_elasticBandage,20);
+		ADD_ITEM(ACE_quikclot,20);
+		ADD_ITEM(ACE_packingBandage,20);
+		ADD_ITEM(ACE_adenosine,4);
+		ADD_ITEM(ACE_atropine,4);
+		ADD_ITEM(ACE_epinephrine,10);
+		ADD_ITEM(ACE_salineIV_500,6);
+		ADD_ITEM(ACE_tourniquet,4);
+		ADD_ITEM(ACE_personalAidKit,1);
 	};
-	class TWC_Backpack_Cold_War_MGAss: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			maga_nc(UK3CB_BAF_762_100Rnd_T,2);
-			maga_nc(UK3CB_BAF_762_100Rnd,1);
-			maga_nc(UK3CB_BAF_762_20Rnd,8);
-		};
+};
+
+//Attachments
+class TWC_Backpack_ColdWar_Regular_MILAN_Ass: SP_Backpack_LargePack_CarlGustav
+{
+	scope = 1;
+	maximumLoad = 500;
+	class TransportItems {
+		ADD_ITEM(ukcw_milan_ace_missile,2);
 	};
-	class TWC_Backpack_Cold_War_AT: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			maga_nc(ukcw_l14a1_HE,1);
-			maga_nc(ukcw_34_rnd_sterling_mag,6);
-		};
+};
+class TWC_Backpack_ColdWar_Regular_Blowpipe_Ass: SP_Backpack_BlowpipeCarrier
+{
+	scope = 1;
+	maximumLoad = 200;
+	class TransportMagazines {
+		ADD_MAGA(SP_Blowpipe_round,2);
 	};
-	class TWC_Backpack_Cold_War_AT_Ass: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			maga_nc(ukcw_l14a1_HEAT,3);
-			maga_nc(ukcw_l14a1_HE,1);
-		};
+};
+class TWC_Backpack_ColdWar_Regular_Spotter: SP_Backpack_LargePack
+{
+	scope = 1;
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
 	};
-	class TWC_Backpack_Cold_War_AT_Ass_Dismounted: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			maga_nc(ukcw_l14a1_HEAT,3);
-			maga_nc(ukcw_l14a1_HE,1);
-			maga_nc(UK3CB_BAF_762_20Rnd,4);
-		};
+	class TransportMagazines {
+		ADD_MAGA(SmokeShell,3);
+		ADD_MAGA(SmokeShellRed,2);
+		ADD_MAGA(SmokeShellBlue,2);
 	};
-	class TWC_Backpack_Cold_War_Platoon_Commander: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportItems
-		{
-			item_nc(ACRE_PRC77,1);
-		};
-		class TransportMagazines
-		{
-			maga_nc(SmokeShell,3);
-			maga_nc(SmokeShellRed,2);
-			maga_nc(SmokeShellBlue,2);
-		};
+};
+class TWC_Backpack_ColdWar_Regular_Artillery_Commander: SP_Backpack_LargePack
+{
+	scope = 1;
+	maximumLoad = 250;
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
 	};
-	class TWC_Backpack_Cold_War_Platoon_Sergeant: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		maximumLoad = 500;
-		class TransportItems
-		{
-			item_nc(ACRE_PRC77,1);
-			item_nc(ACE_wirecutter,1);
-		};
-		class TransportMagazines
-		{
-			maga_nc(SmokeShell,3);
-			maga_nc(SmokeShellRed,2);
-			maga_nc(SmokeShellBlue,2);
-			maga_nc(UK3CB_BAF_762_20Rnd,20);
-			maga_nc(UK3CB_BAF_762_100Rnd_T,2);
-			maga_nc(ukcw_34_rnd_sterling_mag,5);
-		};
+};
+class TWC_Backpack_ColdWar_Regular_FO: SP_Backpack_LargePack
+{
+	scope = 1;
+	maximumLoad = 200;
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
 	};
-	class TWC_Backpack_Cold_Medic: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportItems
-		{
-			item_nc(ACE_fieldDressing,12);
-			item_nc(ACE_morphine,10);
-			item_nc(ACE_elasticBandage,15);
-			item_nc(ACE_quikclot,6);
-			item_nc(ACE_packingBandage,15);
-			item_nc(ACE_adenosine,4);
-			item_nc(ACE_atropine,4);
-			item_nc(ACE_epinephrine,10);
-			item_nc(ACE_salineIV_500,6);
-			item_nc(ACE_tourniquet,4);
-			item_nc(ACE_personalAidKit,1);
-		};
+	class TransportMagazines {
+		ADD_MAGA(SmokeShell,3);
+		ADD_MAGA(SmokeShellRed,2);
+		ADD_MAGA(SmokeShellBlue,2);
 	};
-	class TWC_Backpack_Cold_War_AA: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		maximumLoad = 500;
-		class TransportMagazines
-		{
-			maga_nc(ukcw_blowpipe_missile,2);
-		};
+};
+class TWC_Backpack_ColdWar_Regular_FAC: SP_Backpack_LargePack
+{
+	scope = 1;
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
 	};
-	class TWC_Backpack_Cold_War_Milan: CUP_B_AlicePack_Khaki
-	{
-		scope = 1;
-		class TransportItems
-		{
-			class _xx_Milan
-			{
-				name = "ukcw_milan_ace_missile";
-				count = 2;
-			};
-		};
+	class TransportMagazines {
+		ADD_MAGA(SmokeShell, 5);
+		ADD_MAGA(SmokeShellGreen, 5);
+		ADD_MAGA(SmokeShellBlue, 5);
+		ADD_MAGA(SmokeShellOrange, 5);
+		ADD_MAGA(SmokeShellRed, 5);
+		ADD_MAGA(SmokeShellPurple, 5);
 	};
+};
+

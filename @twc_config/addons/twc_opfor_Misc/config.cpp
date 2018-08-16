@@ -178,7 +178,8 @@ class CfgGroups {
 			name = "TWC Operations - Cold War";
 			
 			/* COLDWAR COMPOSITIONS - GROUP DEFINES */
-			#include "compositions/coldwar_ira.hpp"
+			#include "compositions\coldwar_ira.hpp"
+			#include "compositions\coldwar_aden.hpp"
 		};
 		
 		class TWC_Operation_Opfor_Millennial {
@@ -203,27 +204,33 @@ class CfgVehicles {
 	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 
-	#include "vehicles/backpacks.hpp"
+	#include "vehicles\backpacks.hpp"
 
 	class B_Soldier_base_F;
-	class O_Soldier_base_F;
+	class SoldierEB;
+	class O_Soldier_base_F: SoldierEB
+	{
+		class EventHandlers;
+	};
 	class I_Soldier_F;
+	class I_Soldier_base_F;
 	class I_G_Soldier_base_F;
 	
 //	#include "russianfederation.hpp"
-	#include "units/iraq.hpp"
-	#include "units/african.hpp"
+	#include "units\iraq.hpp"
+	#include "units\african.hpp"
 	
 	/* UNITS - INDIVIDUAL DEFINES */
-	#include "units/ira.hpp"
+	#include "units\ira.hpp"
 
 	
 //	#include "USSRAfghan.hpp"
 	
-	#include "units/takistan.hpp"
-	#include "units/usa_1970.hpp"
-	#include "units/pirates.hpp"
-	#include "units/WaPArmy_Taviana.hpp"
+	#include "units\takistan.hpp"
+	#include "units\usa_1970.hpp"
+	#include "units\pirates.hpp"
+	#include "units\WaPArmy_Taviana.hpp"
+	#include "units\aden.hpp"
 };
 
 #include "CfgMarkers.hpp"

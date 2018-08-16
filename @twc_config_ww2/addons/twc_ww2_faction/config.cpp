@@ -40,7 +40,8 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"A3_Characters_F_BLUFOR",
-			"A3_Characters_F_OPFOR"
+			"A3_Characters_F_OPFOR",
+			"twc_faction"
 		};
 	};
 };

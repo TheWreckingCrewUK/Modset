@@ -343,18 +343,18 @@
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub"
+			"UK3CB_BAF_L85A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
-			"Put",	
-			"ukcw_sterling_sub"
+			"Put",
+			"UK3CB_BAF_L85A1"
 		};
 		magazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
@@ -363,8 +363,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
@@ -394,7 +394,7 @@
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
 			"UK3CB_BAF_V_Pilot_DPMT",
-			"ItemMap",		
+			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemGPS"
@@ -483,31 +483,29 @@
 		weapons[]=
 		{
 			"Throw",
-			"Put",	
-			"ukcw_sterling_sub",
-			"TWC_Milan_Tripod_Disassemabled"
+			"Put",
+			"UK3CB_BAF_L85A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub",
-			"TWC_Milan_Tripod_Disassemabled"
+			"UK3CB_BAF_L85A1"
 		};
 		magazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell"
 		};
 	};
@@ -519,15 +517,13 @@
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub",
-			"TWC_Milan_Launcher_Disassemabled"
+			"UK3CB_BAF_L85A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
-			"Put",	
-			"ukcw_sterling_sub",
-			"TWC_Milan_Launcher_Disassemabled"
+			"Put",
+			"UK3CB_BAF_L85A1"
 		};
 	};
 	class 1990_British_MortarGunner: 1990_British_Rifleman
@@ -538,32 +534,32 @@
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub",
+			"UK3CB_BAF_L85A1",
 			"UK3CB_BAF_M6"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"ukcw_sterling_sub",
+			"UK3CB_BAF_L85A1",
 			"UK3CB_BAF_M6"
 		};
 		magazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"
 		};
 		Respawnmagazines[]=
 		{
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
 			"UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White"

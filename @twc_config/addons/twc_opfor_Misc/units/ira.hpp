@@ -486,37 +486,37 @@
 		weapons[] = {
 			"Throw",
 			"Put",
-			"ukcw_L4",
+			"sp_l4_lmg",
 			"ukcw_hipower"
 		};
 
 		respawnweapons[] = {
 			"Throw",
 			"Put",
-			"ukcw_L4",
+			"sp_l4_lmg",
 			"ukcw_hipower"
 		};
 
 		magazines[] = {
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
 			"ukcw_13rd_9x19",
 			"ukcw_13rd_9x19"
 		};
 
 		Respawnmagazines[] = {
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
-			"ukcw_30Rnd_762x51_STANAG",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
+			"SP_30Rnd_762_L4",
 			"ukcw_13rd_9x19",
 			"ukcw_13rd_9x19"
 		};
@@ -1540,23 +1540,23 @@
 		weapons[] = {
 			"Throw",
 			"Put",
-			"UKCW_Sterling_Sub",
+			"sp_smg_sterling",
 			"ukcw_hipower"
 		};
 
 		respawnweapons[] = {
 			"Throw",
 			"Put",
-			"UKCW_Sterling_Sub",
+			"sp_smg_sterling",
 			"ukcw_hipower"
 		};
 
 		magazines[] = {
 			"ukcw_13rd_9x19",
 			"ukcw_13rd_9x19",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"SP_30Rnd_9x19_L2A3_Sterling",
+			"SP_30Rnd_9x19_L2A3_Sterling",
+			"SP_30Rnd_9x19_L2A3_Sterling",
 			"CUP_HandGrenade_RGO",
 			"CUP_HandGrenade_RGO"
 		};
@@ -1564,9 +1564,9 @@
 		Respawnmagazines[] = {
 			"ukcw_13rd_9x19",
 			"ukcw_13rd_9x19",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
-			"ukcw_34_rnd_sterling_mag",
+			"SP_30Rnd_9x19_L2A3_Sterling",
+			"SP_30Rnd_9x19_L2A3_Sterling",
+			"SP_30Rnd_9x19_L2A3_Sterling",
 			"CUP_HandGrenade_RGO",
 			"CUP_HandGrenade_RGO"
 		};
