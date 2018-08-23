@@ -86,6 +86,8 @@ class cfgWeapons
 	{
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";
+		reloadAction = "CUP_GestureReloadSA80";
+		reloadMagazineSound[] = {"\CUP\Weapons\CUP_Weapons_L85\data\sounds\l85_Reload",1,1,10};
 		class Single:Single {
 			dispersion = 0.001;
 		};
