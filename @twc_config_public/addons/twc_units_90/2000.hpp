@@ -263,13 +263,13 @@
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L110A2_SUSAT"
+		"TWC_UK3CB_BAF_L110A2_SUSAT"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L110A2_SUSAT"
+		"TWC_UK3CB_BAF_L110A2_SUSAT"
 		};
 						magazines[]=
 		{

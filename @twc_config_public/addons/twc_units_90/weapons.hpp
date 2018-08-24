@@ -25,6 +25,21 @@ class cfgWeapons
 			};
 		};
 	};
+	class UK3CB_BAF_L110A2;
+		class TWC_UK3CB_BAF_L110A2_SUSAT: UK3CB_BAF_L110A2
+	{
+		scope = 1;
+		author="Hobbs";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L110A2";
+				item="UK3CB_BAF_SUSAT";
+			};
+		};
+	};
+	
 	class UK3CB_BAF_L85A1:UK3CB_BAF_L85A2
 	{
 		displayName = "L85A1";
