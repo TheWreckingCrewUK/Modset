@@ -18,6 +18,7 @@ class CfgPatches {
 	};
 };
 
+class mode_fullauto;
 class CfgWeapons {
 	class Rifle_Base_F;
 	class UK3CB_BAF_L1A1: Rifle_Base_F {
@@ -35,6 +36,8 @@ class CfgWeapons {
 	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F {
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";
+		reloadAction = "CUP_GestureReloadSA80";
+		reloadMagazineSound[] = {"\CUP\Weapons\CUP_Weapons_L85\data\sounds\l85_Reload",1,1,10};
 	};
 	
 	
@@ -53,6 +56,10 @@ class CfgWeapons {
 		class WeaponSlotsInfo {
 			class asdg_OpticRail_UK3CB_BAF_L7A2 { };
 		};
+		class fullauto: mode_fullauto
+		{
+			reloadTime = 0.08;
+		};
 	};
 	
 	class twc_L7A2: UK3CB_BAF_L7A2 {};
@@ -66,6 +73,13 @@ class CfgWeapons {
 	};
 	
 	class UK3CB_BAF_L110A2RIS: UK3CB_BAF_L110_556_Base
+	{
+		class FullAuto:FullAuto {
+			dispersion = 0.003;
+		};
+	};
+	
+	class UK3CB_BAF_L110A2: UK3CB_BAF_L110_556_Base
 	{
 		class FullAuto:FullAuto {
 			dispersion = 0.003;

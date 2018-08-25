@@ -84,8 +84,6 @@ class cfgWeapons
 	
 	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F
 	{
-		recoil = "twc_rifle_556";
-		recoilProne = "twc_rifle_556_prone";
 		class Single:Single {
 			dispersion = 0.001;
 		};
