@@ -2,6 +2,7 @@ class CfgPatches {
 	class twc_medical {
 		requiredAddons[] = {
 			"ace_medical",
+			"ace_medical_menu",
 			"twc_framework"
 		};
 
@@ -10,12 +11,33 @@ class CfgPatches {
 		versionStr = "1";
 		author = "Bosenator";
 		authorUrl = "http://thewreckingcrew.eu";
-		
+
 		units[] = {
 			"TWC_Module_Medical"
 		};
-		
-		weapons[] = {};
+
+		weapons[] = {
+			"TWC_Item_Medical_SutureKit_1",
+			"TWC_Item_Medical_SutureKit_2",
+			"TWC_Item_Medical_SutureKit_3",
+			"TWC_Item_Medical_SutureKit_4",
+			"TWC_Item_Medical_SutureKit_5",
+			"TWC_Item_Medical_SutureKit_6",
+			"TWC_Item_Medical_SutureKit_7",
+			"TWC_Item_Medical_SutureKit_8",
+			"TWC_Item_Medical_SutureKit_9",
+			"TWC_Item_Medical_SutureKit_10",
+			"TWC_Item_Medical_SutureKit_11",
+			"TWC_Item_Medical_SutureKit_12",
+			"TWC_Item_Medical_SutureKit_13",
+			"TWC_Item_Medical_SutureKit_14",
+			"TWC_Item_Medical_SutureKit_15",
+			"TWC_Item_Medical_SutureKit_16",
+			"TWC_Item_Medical_SutureKit_17",
+			"TWC_Item_Medical_SutureKit_18",
+			"TWC_Item_Medical_SutureKit_19",
+			"TWC_Item_Medical_SutureKit_20"
+		};
 	};
 };
 
@@ -27,7 +49,9 @@ class Extended_InitPost_EventHandlers {
 	};
 };
 
+#include "ui\menu.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgSounds.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "ACE_Medical_Actions.hpp"

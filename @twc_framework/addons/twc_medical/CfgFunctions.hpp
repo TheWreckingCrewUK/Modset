@@ -1,4 +1,19 @@
 class CfgFunctions {
+	// Core ACE adjustments
+	class ace_medical_menu {
+		tag = "ace_medical_menu";
+		
+		class ace_medical_menu {
+			class updateUIInfo {
+				file = "twc_medical\fncs\fn_updateUIInfo.sqf";
+			};
+			
+			class updateBodyImage {
+				file = "twc_medical\fncs\fn_updateBodyImage.sqf";
+			};
+		};
+	};
+	
 	class twc_medical {
 		tag = "twc_medical";
 		class init {
@@ -11,7 +26,7 @@ class CfgFunctions {
 			class logToRPT {};
 			class moduleMedical {};
 			class fullyBandageUnit {};
-			
+
 			// Uncon Loop
 			class extendedUnconLoop {};
 			class handleUncon {};
@@ -28,6 +43,15 @@ class CfgFunctions {
 			class canDefib {};
 			class Defib {};
 			class Defib_Local {};
+
+			// Suture
+			class canSuture {};
+			class sutureKitTime {};
+			class sutureKitSuccess {};
+			class sutureKitProgress {};
+			class sutureKitFailure {};
+			class removeSutureThread {};
+			class selectSutureWound {};
 
 			// Bloodlust Compat & Insta-Kill
 			class bloodlustInit {};
