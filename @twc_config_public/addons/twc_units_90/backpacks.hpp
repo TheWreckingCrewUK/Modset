@@ -260,6 +260,11 @@
 				name = "ACE_packingBandage";
 				count = 15;
 			};
+			class _xxACE_surgKit
+			{
+				name = "ACE_surgicalKit";
+				count = 1;
+			};
 			class _xxACE_personalAidKit
 			{
 				name = "ACE_personalAidKit";
@@ -611,6 +616,11 @@
 			{
 				name = "ACE_packingBandage";
 				count = 15;
+			};
+			class _xxACE_surgKit
+			{
+				name = "ACE_surgicalKit";
+				count = 1;
 			};
 			class _xxACE_personalAidKit
 			{
