@@ -1,5 +1,15 @@
 class CfgFunctions {
 	// Core ACE adjustments
+	class ace_medical {
+		tag = "ace_medical";
+		
+		class ace_medical {
+			class displayPatientInformation {
+				file = "twc_medical\fncs\fn_displayPatientInformation.sqf";
+			};
+		};
+	};
+	
 	class ace_medical_menu {
 		tag = "ace_medical_menu";
 		
