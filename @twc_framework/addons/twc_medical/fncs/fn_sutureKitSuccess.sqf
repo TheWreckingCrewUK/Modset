@@ -5,7 +5,7 @@ _args params ["_caller", "_target", "_selectionName", "_className", "_items", "_
 _caller setVariable ["TWC_Played_Suture", false, true];
 
 // check if the treater has at least one suture thread
-if (({_x isKindOf ["TWC_Item_Medical_SutureKit_1", configFile >> "CfgWeapons"]} count (items player)) < 1) exitWith { false };
+if (({_x isKindOf ["TWC_Item_Medical_SutureKit_1", configFile >> "CfgWeapons"]} count (items _caller)) < 1) exitWith { false };
 
 private _returnData = [_target, _selectionName] call twc_medical_fnc_selectSutureWound;
 private _isBandagedWound = _returnData select 0;

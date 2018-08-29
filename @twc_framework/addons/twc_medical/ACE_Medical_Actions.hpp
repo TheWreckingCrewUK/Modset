@@ -64,7 +64,6 @@ class ACE_Medical_Actions {
 		class SutureKit: FieldDressing {
 			displayName = "Use Suture Kit";
 			displayNameProgress = "Suturing";
-			category = "advanced";
 			condition = "twc_medical_fnc_canSuture";
 
 			// custom handler for items check, to ignore shared gear
@@ -73,7 +72,6 @@ class ACE_Medical_Actions {
 			allowedSelections[] = {"All"};
 			allowSelfTreatment = 0;
 			requiredMedic = 1;
-			patientStateCondition = 0;
 			treatmentTime = "twc_medical_fnc_sutureKitTime";
 			callbackSuccess = "twc_medical_fnc_sutureKitSuccess";
 			callbackProgress = "twc_medical_fnc_sutureKitProgress";

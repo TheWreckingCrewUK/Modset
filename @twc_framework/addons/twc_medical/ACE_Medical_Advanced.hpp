@@ -2,7 +2,7 @@ class ACE_Medical_Advanced {
 	class Treatment {
 		class Medication {
 			class Morphine {
-				painReduce = 0.5;
+				painReduce = 0.7;
 				maxDose = 2;
 				viscosityChange = -10;
 			};
