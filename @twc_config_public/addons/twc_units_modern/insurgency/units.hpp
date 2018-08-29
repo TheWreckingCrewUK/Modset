@@ -296,6 +296,389 @@
 			"SmokeShell"
 		};
 	};
+	
+	class Modern_British_Squadleader_Light: Modern_British_Squadleader
+	{
+		editorSubcategory = "Men_Modern_Light";
+		displayName="Section Leader @BAF Light Mobility";
+		backpack="";
+		twc_nobackpack = 1;
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_SL_D",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_SL_D",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACRE_PRC148",
+			"ACE_MapTools"
+		};
+		respawnitems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACRE_PRC148",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
+	};
+	
+	class Modern_British_Pointman_Light: Modern_British_Pointman
+	{
+		editorSubcategory = "Men_Modern_Light";
+		backpack="";
+		twc_nobackpack = 1;
+		linkedItems[]= {
+			"UK3CB_BAF_V_Osprey_Rifleman_E",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[]= {
+			"UK3CB_BAF_V_Osprey_Rifleman_E",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	
+	class Modern_British_Grenadier_COIN_Light: Modern_British_Grenadier_COIN
+	{
+		editorSubcategory = "Men_Modern_Light";
+		backpack="";
+		twc_nobackpack = 1;
+		linkedItems[]= {
+			"UK3CB_BAF_V_Osprey_Rifleman_E",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[]= {
+			"UK3CB_BAF_V_Osprey_Rifleman_E",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	
+	class Modern_British_Autorifleman_COIN_Light: Modern_British_Autorifleman_COIN
+	{
+		editorSubcategory = "Men_Modern_Light";
+		backpack="";
+		twc_nobackpack = 1;
+		linkedItems[]= {
+			"UK3CB_BAF_V_Osprey_MG_B",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[]= {
+			"UK3CB_BAF_V_Osprey_MG_B",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	
+	class Modern_British_2IC_COIN_Light: Modern_British_2IC_COIN
+	{
+		editorSubcategory = "Men_Modern_Light";
+		backpack="";
+		twc_nobackpack = 1;
+		linkedItems[]= {
+			"UK3CB_BAF_V_Osprey_Rifleman_E",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[]= {
+			"UK3CB_BAF_V_Osprey_Rifleman_E",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	
+	class Modern_British_Machinegunner_Light: Modern_British_Machinegunner
+	{
+		editorSubcategory = "Men_Modern_Light";
+		backpack="";
+		twc_nobackpack = 1;
+		linkedItems[]= {
+			"UK3CB_BAF_V_Osprey_MG_B",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[]= {
+			"UK3CB_BAF_V_Osprey_MG_B",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	
+	class Modern_British_Marksman_COIN_Light: Modern_British_Marksman_COIN
+	{
+		editorSubcategory = "Men_Modern_Light";
+		backpack="";
+		twc_nobackpack = 1;
+		linkedItems[]= {
+			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[]= {
+			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	
+	class Modern_British_Medic_Light: Modern_British_Medic
+	{
+		editorSubcategory = "Men_Modern_Light";
+		backpack="";
+		twc_nobackpack = 1;
+		linkedItems[]= {
+			"UK3CB_BAF_V_Osprey_Medic_B",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[]= {
+			"UK3CB_BAF_V_Osprey_Medic_B",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_salineIV_250",
+			"ACE_salineIV_250",
+			"ACE_salineIV_250",
+			"ACE_salineIV_250",
+			"ACE_salineIV_250",
+			"ACE_salineIV_250",
+			"ACE_salineIV_500",
+			"ACE_salineIV_500",
+			"ACE_salineIV_500",
+			"ACE_salineIV_500",
+			"ACE_salineIV_500",
+			"ACE_salineIV_500",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_personalAidKit",
+			"ACE_surgicalKit",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
+		respawnitems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_salineIV_250",
+			"ACE_salineIV_250",
+			"ACE_salineIV_250",
+			"ACE_salineIV_250",
+			"ACE_salineIV_250",
+			"ACE_salineIV_250",
+			"ACE_salineIV_500",
+			"ACE_salineIV_500",
+			"ACE_salineIV_500",
+			"ACE_salineIV_500",
+			"ACE_salineIV_500",
+			"ACE_salineIV_500",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_personalAidKit",
+			"ACE_surgicalKit",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
+	};
 
 	class Modern_British_Sniper_coin: Modern_British_Base {
 		scope=2;
@@ -486,6 +869,9 @@
 		displayName="Rifleman";
 		faction="ana_units";
 		editorSubcategory = "Men_ana";
+		twc_radioType = "ACRE_PRC148";
+		twc_radioChannel = 4;
+		twc_nobackpack = 1;
 		vehicleClass="Men_ana";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
@@ -647,6 +1033,7 @@
 		scope=2;
 		displayName="Section Commander @Afghan National Army";
 		backpack="ana_backpack_leader";
+		twc_nobackpack = 0;
 		linkedItems[]=
 		{
         "CUP_V_CDF_CrewBelt",
@@ -698,6 +1085,7 @@
 		scope=2;
 		displayName="Section Subcommander";
 		backpack="ana_backpack_2ic";
+		twc_nobackpack = 0;
 		linkedItems[]=
 		{
         "CUP_V_CDF_CrewBelt",
@@ -747,6 +1135,7 @@
 		scope=2;
 		displayName="RPG Grenadier";
 		backpack="ana_backpack_rpg";
+		twc_nobackpack = 0;
 		linkedItems[]=
 		{
         "CUP_V_O_Ins_Carrier_Rig_Com",
@@ -854,6 +1243,7 @@
 		scope=2;
 		displayName="Machinegunner Assistant";
 		backpack="ana_backpack_mg";
+		twc_nobackpack = 0;
 		linkedItems[]=
 		{
         "CUP_V_O_Ins_Carrier_Rig_MG",
@@ -994,6 +1384,7 @@
 		attendant = 1;
 		displayName="Medic";
 		backpack="ana_backpack_medic";
+		twc_nobackpack = 0;
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_OLI",

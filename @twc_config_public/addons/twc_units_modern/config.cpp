@@ -83,6 +83,10 @@ class CfgEditorSubCategories {
 		displayName = "Men (Modern Dismounted)";
 	};
 
+	class Men_Modern_Light {
+		displayName = "Men (Light Mobility)";
+	};
+
 	class Men_ModernCoin {
 		displayName = "Men (Modern COIN)";
 	};

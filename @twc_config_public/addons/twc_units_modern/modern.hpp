@@ -708,6 +708,8 @@
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
@@ -716,6 +718,8 @@
 		};
 		Respawnmagazines[]=
 		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -956,6 +960,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		displayName="Sniper";
 		uniformClass="CUP_U_B_BAF_DPM_Ghillie";
 		icon="iconManLeader";
+		twc_nobackpack = 1;
 		backpack="";
 		linkedItems[]= {
 			"UK3CB_BAF_V_PLCE_Webbing_MTP",
@@ -1254,6 +1259,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		icon="iconManMedic";
 		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
 		attendant = 1;
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Medic_C",
@@ -1394,6 +1400,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		scope=2;
 		displayName="Armour Crewman";
 		icon="iconMan";
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_CrewHelmet_A",
@@ -1443,6 +1450,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		backpack="";
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{	
 			"UK3CB_BAF_H_CrewHelmet_ESS_A",
@@ -1764,3 +1772,4 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_TShirt";
 		
 	};
+	
