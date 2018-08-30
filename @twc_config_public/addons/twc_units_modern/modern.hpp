@@ -594,33 +594,50 @@
 	class Modern_British_Platoon_Commander: Modern_British_Squadleader
 	{
 		scope=2;
-		displayName="Platoon Commander (Modern)";
-		icon="iconManLeader";
+		displayName="Platoon Commander @HQ";
+		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_Holster",
-			"UK3CB_BAF_H_Mk7_Camo_D",
+			"UK3CB_BAF_V_Osprey_SL_A",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"UK3CB_BAF_H_Mk7_Camo_B",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_SL_A",
+			"UK3CB_BAF_H_Mk7_Camo_B",
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
 			"ItemWatch"
 		};
-		respawnLinkedItems[]=
+		weapons[]=
 		{
-			"UK3CB_BAF_V_Osprey_Holster",
-			"UK3CB_BAF_H_Mk7_Camo_D",
-			"ItemMap",
-			"ItemcTab",
-			"ItemCompass",
-			"ItemWatch"
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN",
+			"rhsusf_weap_glock17g4"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN",
+			"rhsusf_weap_glock17g4"
 		};
 	};
 	class Modern_British_Platoon_Sergeant: Modern_British_Platoon_Commander
 	{
 		scope=2;
-		displayName="Platoon Sergeant (Modern)";
+		displayName="Platoon Sergeant";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
 		icon="iconMan";
-		backpack="TWC_Backpack_Modern_Platoon_Sergeant";
 	};
 	class Modern_British_Platoon_Mortar: Modern_British_Rifleman
 	{
