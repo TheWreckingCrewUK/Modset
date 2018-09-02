@@ -52,32 +52,7 @@ class cfgmagazines{
 
 
 class cfgweapons{
-	
-		class Launcher;
-	class Launcher_Base_F
-	{
-		class EventHandlers;
-	};
-	
-	class CUP_launch_RPG7V: Launcher_Base_F
-	{
-		class EventHandlers: EventHandlers {
-			fired = "_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];";
-		};
-		scope=2;
-		aiDispersionCoefX=1.03;
-		aiDispersionCoefY=1.05;
-		dispersion = 0.02;
-		minrange=50;
-		minrangeprobab=0.4;
-		midrange=600;
-		midrangeprobab=0.3;
-		maxrange=1000;
-		maxrangeprobab=0.9;
 
-		magazines[] = {"CUP_PG7V_M", "CUP_PG7VM_M", "CUP_PG7VL_M", "CUP_PG7VR_M", "CUP_OG7_M", "CUP_TBG7V_M", "twc_og7_c_m"};
-		};
-		
 		
 	class CUP_srifle_ksvk_PSO3;
 	class twc_ksvk: CUP_srifle_ksvk_PSO3

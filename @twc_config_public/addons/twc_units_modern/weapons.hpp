@@ -24,6 +24,19 @@ class cfgWeapons
 	class arifle_Mk20_F;
 	class Rifle_Base_F;
 	
+	class CUP_Vlmg_M240_M1Abrams_Coax;
+	class CUP_M240_Coax_M1_Abrams_W: CUP_Vlmg_M240_M1Abrams_Coax
+	{
+		class manual;
+	};
+	class ukcw_l20a1: CUP_M240_Coax_M1_Abrams_W
+	{
+		class manual: manual
+		{
+			dispersion = 0.01;
+		};
+	};
+	
 	class arifle_MX_Base_F: Rifle_Base_F
 	{
 		class Single;

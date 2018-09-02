@@ -1,14 +1,17 @@
 class CfgPatches {
 	class TWC_gearFixes {
 		units[]={};
-		weapons[]={};
+		weapons[]={"CUP_launch_RPG7V"};
 		requiredVersion = 1.7;
 
 		requiredAddons[] = {
 			"a3_weapons_f",
 			"cup_airvehicles_av8b",
 			"uk3cb_baf_weapons_smallarms",
-			"UK3CB_BAF_Vehicles"
+			"UK3CB_BAF_Vehicles",
+			"CUP_Weapons_WeaponsCore",
+			"CUP_Weapons_Ammunition",
+			"CUP_Weapons_Sounds"
 		};
 
 		author[]={};
@@ -34,6 +37,34 @@ class CfgAmmo {
 
 class mode_fullauto;
 class CfgWeapons {
+	
+		
+	class Launcher;
+	class Launcher_Base_F: Launcher
+	{
+		class EventHandlers;
+	};
+	
+	class CUP_launch_RPG7V: Launcher_Base_F
+	{
+		class EventHandlers: EventHandlers {
+			fired = "_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];";
+		};
+		scope=2;
+		aiDispersionCoefX=1.03;
+		aiDispersionCoefY=1.05;
+		dispersion = 0.02;
+		minrange=50;
+		minrangeprobab=0.4;
+		midrange=600;
+		midrangeprobab=0.3;
+		maxrange=1000;
+		maxrangeprobab=0.9;
+
+		magazines[] = {"CUP_PG7V_M", "CUP_PG7VM_M", "CUP_PG7VL_M", "CUP_PG7VR_M", "CUP_OG7_M", "CUP_TBG7V_M", "twc_og7_c_m"};
+		};
+		
+	
 	class Rifle_Base_F;
 	class UK3CB_BAF_L1A1: Rifle_Base_F {
 		recoil = "twc_rifle_762";
@@ -200,4 +231,230 @@ class CfgVehicles {
        		};
 			
 	};	
+	
+	
+//handling modifications
+
+	class Car_F;
+	
+	class UK3CB_BAF_LandRover_Base: Car_F {
+		
+
+		antiRollbarForceCoef = 4.0;
+		antiRollbarForceLimit = 3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.3;
+		frontBias = 1.1;
+		rearBias = 2.5;
+		centreBias = 1.5;
+		class Wheels {
+			class LF {
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				frictionVsSlipGraph[] = {[0,1.6],[0.6,1.7],[1,1.6]};
+				latStiffX = 10;
+				latStiffY = 20;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 3250;
+				maxCompression = 0.25;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 0;
+				moi = 6;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = 0.285;
+				};
+				class LR: LF {
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				frictionVsSlipGraph[] = {[0,1.5],[0.2,1.7],[1,0.9]};
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 2950;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 9000;
+				moi = 6;
+				side = "left";
+				sprungMass = 525;
+				steering = 0;
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				width = 0.285;
+				};
+				class RF: LF {
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 3250;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 0;
+				moi = 6;
+				side = "right";
+				steering = 1;
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				width = 0.285;
+				};
+				class RR: LR {
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 2950;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 9000;
+				moi = 6;
+				side = "right";
+				steering = 0;
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				width = 0.285;
+				};
+			};
+		
+	};
+	class Wheeled_APC_F;
+	class CUP_Mastiff_Base : Wheeled_APC_F
+	{
+		antiRollbarForceCoef = 0;
+		antiRollbarForceLimit = 0;
+		terrainCoef = 5.0;
+		turncoef = 3.0;
+		armor = 800;
+		clutchStrength = 150;
+
+
+		class Wheels {
+			class LF {
+				boneName = "wheel_1_1";
+				steering = 1;
+				side = "left";
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.2";
+				mass = 80;
+				MOI = 85;
+				dampingRate = 0.1;
+				dampingRateInAir = 2;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 300;
+				maxBrakeTorque = 4500;
+				maxHandBrakeTorque = 0;
+				suspTravelDirection[] = {0,-1,0};
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.4;
+				//MaxDroop = 0.2;
+				sprungMass = 8250;
+				springStrength = 500;
+				springDamperRate = 13000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {[0,0.7],[0.2,1.2],[0.5,0.5],[1,0.2],[2,0.1]};
+			};
+		};
+		
+			class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.4; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 3.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+             
+           turnDecreaseConst  = 2.0; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.7; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class CUP_Wolfhound_Base : Wheeled_APC_F
+	{
+		antiRollbarForceCoef = 0;
+		antiRollbarForceLimit = 0;
+		terrainCoef = 5.0;
+		turncoef = 3.0;
+		armor = 800;
+		clutchStrength = 150;
+
+
+		class Wheels {
+			class LF {
+				boneName = "wheel_1_1";
+				steering = 1;
+				side = "left";
+				center = "wheel_1_1_axis";
+				boundary = "wheel_1_1_bound";
+				width = "0.2";
+				mass = 80;
+				MOI = 85;
+				dampingRate = 0.1;
+				dampingRateInAir = 2;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 300;
+				maxBrakeTorque = 4500;
+				maxHandBrakeTorque = 0;
+				suspTravelDirection[] = {0,-1,0};
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				maxCompression = 0.4;
+				//MaxDroop = 0.2;
+				sprungMass = 8250;
+				springStrength = 500;
+				springDamperRate = 13000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 5;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = {[0,0.7],[0.2,1.2],[0.5,0.5],[1,0.2],[2,0.1]};
+			};
+		};
+		
+			class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.4; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 3.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+             
+           turnDecreaseConst  = 2.0; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.7; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	
 };
+
