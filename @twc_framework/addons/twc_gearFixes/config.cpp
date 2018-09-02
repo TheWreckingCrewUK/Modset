@@ -5,6 +5,7 @@ class CfgPatches {
 		requiredVersion = 1.7;
 
 		requiredAddons[] = {
+			"a3_weapons_f",
 			"cup_airvehicles_av8b",
 			"uk3cb_baf_weapons_smallarms",
 			"UK3CB_BAF_Vehicles"
@@ -15,6 +16,19 @@ class CfgPatches {
 		version="1";
 		versionStr="1";
 		versionAr[]={1};
+	};
+};
+
+class CfgAmmo {
+	class GrenadeHand;
+	class GrenadeHand_stone: GrenadeHand
+	{
+		simulation = "shotShell";
+		SoundSetExplosion[] = {};
+		soundHit1[] = {};
+		soundHit2[] = {};
+		soundHit3[] = {};
+		soundHit4[] = {};
 	};
 };
 
