@@ -41,6 +41,7 @@ class ACE_Medical_Actions {
 			displayName = "Medical to RPT (DEBUG)";
 			displayNameProgress = "Logging Medical State";
 			callbackSuccess = "twc_medical_fnc_logToRPT";
+			condition = "false"; // comment out to re-enable
 		};
 		
 		class BloodIV: FieldDressing{};

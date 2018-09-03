@@ -14,9 +14,9 @@ if (((_totalTime - _elapsedTime) <= (_totalTime / 2)) && !_hasPlayedSound) then 
 	_caller setVariable ["TWC_Played_Suture", true, true];
 
 	if !(isNull objectParent _caller) then {
-		playSound3D ["twc_medical\sounds\suturing.ogg", _caller, false, getPosASL _caller, 16, 1, 10];
+		playSound3D ["twc_medical\sounds\suturing.ogg", _caller, false, getPosASL _caller, 20, 1, 10];
 	} else {
-		playSound3D ["twc_medical\sounds\suturing.ogg", vehicle _caller, true, getPosASL (vehicle _caller), 10, 1, 8];
+		playSound3D ["twc_medical\sounds\suturing.ogg", vehicle _caller, true, getPosASL (vehicle _caller), 15, 1, 8];
 	};
 };
 
