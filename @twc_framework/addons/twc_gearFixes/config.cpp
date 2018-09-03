@@ -243,9 +243,9 @@ class CfgVehicles {
 		antiRollbarForceCoef = 4.0;
 		antiRollbarForceLimit = 3;
 		differentialType = "all_limited";
-		frontRearSplit = 0.3;
-		frontBias = 1.1;
-		rearBias = 2.5;
+		frontRearSplit = 0.9;
+		frontBias = 1.5;
+		rearBias = 1.5;
 		centreBias = 1.5;
 		class Wheels {
 			class LF {
@@ -256,8 +256,8 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {[0,1.6],[0.6,1.7],[1,1.6]};
-				latStiffX = 10;
+				frictionVsSlipGraph[] = {{ 0.0, 1.0 }, { 0.3, 0.5 }, { 1.0, 0.3 }};
+				latStiffX = 15;
 				latStiffY = 20;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
@@ -284,7 +284,7 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {[0,1.5],[0.2,1.7],[1,0.9]};
+				frictionVsSlipGraph[] = {{ 0.0, 1.2 }, { 0.5, 1 }, { 1.0, 0.3 }};
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 2950;
@@ -351,8 +351,9 @@ class CfgVehicles {
 		antiRollbarForceLimit = 0;
 		terrainCoef = 5.0;
 		turncoef = 3.0;
-		armor = 800;
+		armor = 700;
 		clutchStrength = 150;
+		differentialType = "all_open";
 
 
 		class Wheels {
@@ -367,8 +368,8 @@ class CfgVehicles {
 				MOI = 85;
 				dampingRate = 0.1;
 				dampingRateInAir = 2;
-				dampingRateDamaged = 1;
-				dampingRateDestroyed = 300;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
 				maxBrakeTorque = 4500;
 				maxHandBrakeTorque = 0;
 				suspTravelDirection[] = {0,-1,0};
@@ -376,13 +377,13 @@ class CfgVehicles {
 				tireForceAppPointOffset = "wheel_1_1_axis";
 				maxCompression = 0.4;
 				//MaxDroop = 0.2;
-				sprungMass = 8250;
-				springStrength = 500;
-				springDamperRate = 13000;
+				sprungMass = 4250;
+				springStrength = 15000;
+				springDamperRate = 6000;
 				longitudinalStiffnessPerUnitGravity = 10000;
-				latStiffX = 5;
+				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = {[0,0.7],[0.2,1.2],[0.5,0.5],[1,0.2],[2,0.1]};
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
 			};
 		};
 		
@@ -432,7 +433,7 @@ class CfgVehicles {
 				maxCompression = 0.4;
 				//MaxDroop = 0.2;
 				sprungMass = 8250;
-				springStrength = 500;
+				springStrength = 5000;
 				springDamperRate = 13000;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 5;
