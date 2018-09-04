@@ -78,38 +78,39 @@ Machine Gunner Assistant | Enfield | 8x Enfield Mags, 2x Frags |  8x Bren Mags
 ### Section
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
-Section Commander | L1A1 SLR (Wooden stock), Binoculars | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
+Section Commander | L1A1 SLR (Wooden stock), Binoculars | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 1x AN/PRC-77, 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
 Rifleman | L1A1 SLR (Wooden stock), L1A1 66mm Rocket HEAT | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x LAW 66 Rocket, 1x M83 Smoke Grenade (White) | 
 Rifleman (SUIT) | L1A1 SLR (Wooden stock), L1A1 66mm Rocket HEAT | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x LAW 66 Rocket, 1x M83 Smoke Grenade (White) | 
 AT Rifleman | L2A3 Sterling SMG, L14A1 | 7x 9mm 30rnd Sterling Mag (Ball), 1x FFV751 HEAT, 1x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
-Assistant AT Rifleman | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 1x FFV441 HE
-2iC | L1A1 SLR (Wooden stock) | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 1x 7.62mm 100rnd Tracer Belt
+Assistant AT Rifleman | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 2x FFV751 HEAT, 1x FFV441 HE
+2iC | L1A1 SLR (Wooden stock) | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 10x 7.62mm 20rnd Mag, 4x M83 Smoke Grenade (White), 1x 7.62mm 100rnd Tracer Belt
 Machine Gunner | L7A2 GPMG | 2x 7.62mm 100rnd Belt, 1x 7.62mm 100rnd Tracer Belt, 1x M83 Smoke Grenade (White) | 
-Assistant Machine Gunner | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 1x M83 Smoke Grenade (White) | 1x 7.62mm 100rnd Belt
+Assistant Machine Gunner | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 1x M83 Smoke Grenade (White) | 2x 7.62mm 100rnd Tracer Belt, 1x 7.62mm 100rnd Belt
 
 ### Section (Mechanised)
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
-Section Commander | L1A1 SLR (Wooden stock), Binoculars | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
+Section Commander | L1A1 SLR (Wooden stock), Binoculars | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 1x AN/PRC-77, 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
 Rifleman | L1A1 SLR (Wooden stock), L1A1 66mm Rocket HEAT | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x LAW 66 Rocket, 1x M83 Smoke Grenade (White) | 
 Rifleman (SUIT) | L1A1 SLR (Wooden stock), L1A1 66mm Rocket HEAT | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x LAW 66 Rocket, 1x M83 Smoke Grenade (White) | 
 AT Rifleman | L2A3 Sterling SMG, L14A1 | 7x 9mm 30rnd Sterling Mag (Ball), 1x FFV751 HEAT, 1x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
-Assistant AT Rifleman | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 1x FFV441 HE
-2iC | L1A1 SLR (Wooden stock) | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 1x 7.62mm 100rnd Tracer Belt
+Assistant AT Rifleman | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 2x FFV751 HEAT, 1x FFV441 HE
+2iC | L1A1 SLR (Wooden stock) | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 10x 7.62mm 20rnd Mag, 4x M83 Smoke Grenade (White), 1x 7.62mm 100rnd Tracer Belt
 Machine Gunner | L7A2 GPMG | 2x 7.62mm 100rnd Belt, 1x 7.62mm 100rnd Tracer Belt, 1x M83 Smoke Grenade (White) | 
-Assistant Machine Gunner | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 1x M83 Smoke Grenade (White) | 1x 7.62mm 100rnd Belt
+Assistant Machine Gunner | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 1x M83 Smoke Grenade (White) | 2x 7.62mm 100rnd Tracer Belt, 1x 7.62mm 100rnd Belt
 Vehicle Commander | L2A3 Sterling SMG | 3x 9mm 30rnd Sterling Mag (Ball), 2x M83 Smoke Grenade (White) | 
 Vehicle Crew | L2A3 Sterling SMG | 3x 9mm 30rnd Sterling Mag (Ball), 2x M83 Smoke Grenade (White) | 
 
-### Section (COIN)
+## Infantry (COIN)
+### Section
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
-Section Commander | L1A1 SLR (Wooden stock), Binoculars | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
-Rifleman | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 1x 7.62mm 100rnd Tracer Belt
-Rifleman (SUIT) | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 1x 7.62mm 100rnd Tracer Belt
-Rifleman | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 1x 7.62mm 100rnd Tracer Belt
-Rifleman | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 1x 7.62mm 100rnd Tracer Belt
-2iC | L1A1 SLR (Wooden stock) | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 3x 7.62mm 30rnd L4 Mag (Ball + Tracer)
+Section Commander | L1A1 SLR (Wooden stock), Binoculars | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 1x AN/PRC-77, 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
+Rifleman | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 7.62mm 20rnd Mag, 1x 7.62mm 100rnd Tracer Belt
+Rifleman (SUIT) | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 7.62mm 20rnd Mag, 1x 7.62mm 100rnd Tracer Belt
+Rifleman | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 7.62mm 20rnd Mag, 1x 7.62mm 100rnd Tracer Belt
+Rifleman | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 7.62mm 20rnd Mag, 1x 7.62mm 100rnd Tracer Belt
+2iC | L1A1 SLR (Wooden stock) | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 10x 7.62mm 20rnd Mag, 4x M83 Smoke Grenade (White), 3x 7.62mm 30rnd L4 Mag (Ball + Tracer)
 Machine Gunner | L4 LMG | 10x 7.62mm 30rnd L4 Mag (Ball + Tracer), 1x M83 Smoke Grenade (White) | 10x 7.62mm 30rnd L4 Mag (Ball + Tracer)
 Assistant Machine Gunner | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 1x M83 Smoke Grenade (White) | 6x 7.62mm 30rnd L4 Mag (Ball + Tracer)
 

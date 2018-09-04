@@ -74,7 +74,7 @@ for "_i" from 0 to ((count _groupCfg) - 1) do {
 
 						{
 							_magazineName = getText (configFile >> "CfgMagazines" >> getText (_x >> "magazine") >> "displayName");
-							if (_forEachIndex != 0 && _count > 0) then {
+							if (_unitBackpackOutput != "") then {
 								_unitBackpackOutput = _unitBackpackOutput + ", " + str getNumber (_x >> "count") + "x " + _magazineName;
 							} else {
 								_unitBackpackOutput = str getNumber (_x >> "count") + "x " + _magazineName;
@@ -86,7 +86,7 @@ for "_i" from 0 to ((count _groupCfg) - 1) do {
 
 						{
 							_weaponName = getText (configFile >> "CfgWeapons" >> getText (_x >> "weapon") >> "displayName");
-							if (_forEachIndex != 0 && _count > 0) then {
+							if (_unitBackpackOutput != "") then {
 								_unitBackpackOutput = _unitBackpackOutput + ", " + str getNumber (_x >> "count") + "x " + _weaponName;
 							} else {
 								_unitBackpackOutput = str getNumber (_x >> "count") + "x " + _weaponName;
