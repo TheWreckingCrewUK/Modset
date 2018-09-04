@@ -6,7 +6,7 @@ for "_i" from 0 to ((count _groupCfg) - 1) do {
 	_currentTitle = getText (_groupCfgEntry >> "name");
 
 	if (_currentTitle != "") then {
-		_a = "###" + _currentTitle + endl;
+		_a = "## " + _currentTitle + endl;
 		_groupsWithin = configProperties [_groupCfg select _i, "true", true];
 		_groupsOutput = "";
 
@@ -14,7 +14,7 @@ for "_i" from 0 to ((count _groupCfg) - 1) do {
 			_groupName = getText ((_groupsWithin select _y) >> "name");
 
 			if (_groupName != "") then {
-				_b = "####" + _groupName + endl;
+				_b = "### " + _groupName + endl;
 				_unitsWithin = configProperties [_groupsWithin select _y, "true", true];
 				_unitsOuput = "Role | Weapon(s) | Personal Gear | Backpack" + endl + "--- | --- | --- | ---" + endl;
 				

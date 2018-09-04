@@ -74,8 +74,8 @@ Machine Gunner Assistant | Enfield | 8x Enfield Mags, 2x Frags |  8x Bren Mags
 
 > Requires WW2 Repo.
 
-##Cold War
-###Section
+## Cold War
+### Section
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
 Section Commander | L1A1 SLR (Wooden stock), Binoculars | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
@@ -87,7 +87,7 @@ Assistant AT Rifleman | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 2x L109A2
 Machine Gunner | L7A2 GPMG | 2x 7.62mm 100rnd Belt, 1x 7.62mm 100rnd Tracer Belt, 1x M83 Smoke Grenade (White) | 
 Assistant Machine Gunner | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 1x M83 Smoke Grenade (White) | 1x 7.62mm 100rnd Belt
 
-###Section (Mechanised)
+### Section (Mechanised)
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
 Section Commander | L1A1 SLR (Wooden stock), Binoculars | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
@@ -101,7 +101,7 @@ Assistant Machine Gunner | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 1x M83
 Vehicle Commander | L2A3 Sterling SMG | 3x 9mm 30rnd Sterling Mag (Ball), 2x M83 Smoke Grenade (White) | 
 Vehicle Crew | L2A3 Sterling SMG | 3x 9mm 30rnd Sterling Mag (Ball), 2x M83 Smoke Grenade (White) | 
 
-###Section (COIN)
+### Section (COIN)
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
 Section Commander | L1A1 SLR (Wooden stock), Binoculars | 5x 7.62mm 20rnd Mag, 2x 7.62mm 20rnd Tracer Mag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
