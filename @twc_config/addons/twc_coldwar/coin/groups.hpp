@@ -403,7 +403,7 @@ class TWC_Groups_ColdWar_COIN_Dismounted_Desert
 		class Unit2
 		{
 				side = 1;
-				vehicle = "TWC_Infantry_ColdWar_COIN_Dismounted_Woodland_Rifleman_SUIT";
+				vehicle = "TWC_Infantry_ColdWar_COIN_Dismounted_Desert_Rifleman_SUIT";
 				rank = "PRIVATE";
 				position[] = {4,0,0};
 		};

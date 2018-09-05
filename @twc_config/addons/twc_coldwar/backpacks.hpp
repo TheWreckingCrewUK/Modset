@@ -138,7 +138,6 @@ class TWC_Backpack_ColdWar_COIN_Dismounted_Rifleman: SP_Backpack_LargePack
 	maximumLoad = 200;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd, 8);
-		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 1);
 	};
 };
 class TWC_Backpack_ColdWar_COIN_Dismounted_MG: SP_Backpack_LargePack
