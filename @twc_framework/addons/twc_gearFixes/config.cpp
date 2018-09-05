@@ -354,11 +354,16 @@ class CfgVehicles {
 			};
 		
 	};
-	class Wheeled_APC_F;
+	class Wheeled_APC_F : Car_F
+	{
+		class eventhandlers;
+	};
 	class CUP_Mastiff_Base : Wheeled_APC_F
 	{
-		antiRollbarForceCoef = 0;
-		antiRollbarForceLimit = 0;
+		antiRollbarForceCoef = 6;
+		antiRollbarForceLimit = 150;
+		antiRollbarSpeedMin = 30;
+		antiRollbarSpeedMax = 100;
 		terrainCoef = 5.0;
 		turncoef = 3.0;
 		armor = 700;
@@ -388,8 +393,8 @@ class CfgVehicles {
 				maxCompression = 0.4;
 				//MaxDroop = 0.2;
 				sprungMass = 4250;
-				springStrength = 15000;
-				springDamperRate = 6000;
+				springStrength = 25000;
+				springDamperRate = 8000;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -397,28 +402,36 @@ class CfgVehicles {
 			};
 		};
 		
-			class PlayerSteeringCoefficients /// steering sensitivity configuration
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
            turnIncreaseConst  = 0.4; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 3.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           turnIncreaseLinear = 2.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 2.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
              
            turnDecreaseConst  = 2.0; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
            turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
            turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
              
-           maxTurnHundred     = 0.7; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+           maxTurnHundred     = 0.1; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
        };
+	   
+		class EventHandlers: EventHandlers {
+			init = "_car = (_this select 0); _car setCenterOfMass [-0.00687825,-0.814309,1.4]";
+			
+		};
 	};
 	
 	class CUP_Wolfhound_Base : Wheeled_APC_F
 	{
-		antiRollbarForceCoef = 0;
-		antiRollbarForceLimit = 0;
+		antiRollbarForceCoef = 6;
+		antiRollbarForceLimit = 150;
+		antiRollbarSpeedMin = 30;
+		antiRollbarSpeedMax = 100;
 		terrainCoef = 5.0;
 		turncoef = 3.0;
-		armor = 800;
+		armor = 700;
 		clutchStrength = 150;
+		differentialType = "all_open";
 
 
 		class Wheels {
@@ -433,8 +446,8 @@ class CfgVehicles {
 				MOI = 85;
 				dampingRate = 0.1;
 				dampingRateInAir = 2;
-				dampingRateDamaged = 1;
-				dampingRateDestroyed = 300;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
 				maxBrakeTorque = 4500;
 				maxHandBrakeTorque = 0;
 				suspTravelDirection[] = {0,-1,0};
@@ -442,30 +455,33 @@ class CfgVehicles {
 				tireForceAppPointOffset = "wheel_1_1_axis";
 				maxCompression = 0.4;
 				//MaxDroop = 0.2;
-				sprungMass = 8250;
-				springStrength = 5000;
-				springDamperRate = 13000;
+				sprungMass = 4250;
+				springStrength = 25000;
+				springDamperRate = 8000;
 				longitudinalStiffnessPerUnitGravity = 10000;
-				latStiffX = 5;
+				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = {[0,0.7],[0.2,1.2],[0.5,0.5],[1,0.2],[2,0.1]};
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
 			};
 		};
 		
-			class PlayerSteeringCoefficients /// steering sensitivity configuration
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
            turnIncreaseConst  = 0.4; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 3.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           turnIncreaseLinear = 2.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 2.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
              
            turnDecreaseConst  = 2.0; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
            turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
            turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
              
-           maxTurnHundred     = 0.7; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+           maxTurnHundred     = 0.1; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
        };
+	   
+		class EventHandlers: EventHandlers {
+			init = "	_car = (_this select 0); _car setCenterOfMass [-0.00687825,-0.814309,1.3]";
+			
+		};
 	};
-	
-	
 };
 
