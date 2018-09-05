@@ -3,7 +3,12 @@ class CfgPatches {
 		units[]={};
 		weapons[]={};
 		requiredVersion = 1.7;
-		requiredAddons[] = {"ace_common"};
+
+		requiredAddons[] = {
+			"ace_common",
+			"acre_main"
+		};
+
 		author[]={};
 		authorUrl="";
 		version="1";
@@ -19,6 +24,16 @@ class cfgFunctions {
 			file = "twc_acefixes\functions";
 
 			class handleParadrop {};
+		};
+	};
+	
+	class acre_sys_core {
+		tag = "acre_sys_core";
+		
+		class acre_sys_core {
+			class processDirectSpeaker {
+				file = "twc_acefixes\functions\fn_processDirectSpeaker.sqf";
+			};
 		};
 	};
 };
