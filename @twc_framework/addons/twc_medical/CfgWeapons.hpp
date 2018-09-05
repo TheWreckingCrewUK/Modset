@@ -16,7 +16,7 @@ class CfgWeapons {
 
 	class ACE_surgicalKit;
 	class TWC_Item_Medical_SutureKit_1: ACE_surgicalKit {
-		scope = 2;
+		scope = 1;
 		author = "Bosenator";
 		displayName= "Suture Kit (1 Thread)";
 		descriptionShort = "One suture remaining, consumed on use";
@@ -50,4 +50,13 @@ class CfgWeapons {
 	ADD_SUTURE_KIT(18);
 	ADD_SUTURE_KIT(19);
 	ADD_SUTURE_KIT(20);
+	ADD_SUTURE_KIT(21);
+	ADD_SUTURE_KIT(22);
+	ADD_SUTURE_KIT(23);
+	ADD_SUTURE_KIT(24);
+	
+	class TWC_Item_Medical_SutureKit_25: TWC_Item_Medical_SutureKit_1 {
+		scope = 2;
+		displayName = "Suture Kit (25 Threads)";
+	};
 };

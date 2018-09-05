@@ -35,6 +35,7 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 		item_nc(ACE_bodyBag, 5);
 		
 		item_nc(ACE_personalAidKit, 1);
+		item_nc(TWC_Item_Medical_SutureKit_25, 1);
 	};
 };
 
