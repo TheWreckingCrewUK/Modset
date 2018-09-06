@@ -36,6 +36,16 @@ class cfgFunctions {
 			};
 		};
 	};
+	
+	class ace_mk6mortar {
+		tag = "ace_mk6mortar";
+		
+		class ace_mk6mortar {
+			class mortarInit {
+				file = "twc_acefixes\functions\fn_mortarInit.sqf";
+			};
+		};
+	};
 };
 
 class Extended_PostInit_EventHandlers {
