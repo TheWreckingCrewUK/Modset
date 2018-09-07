@@ -244,8 +244,34 @@ class CfgVehicles {
 	
 	
 //handling modifications
-
-	class Car_F;
+	class Car;
+	class Car_F: Car{
+		class Wheels {
+			class LF {};
+		};
+	};
+	
+	class UK3CB_BAF_Jackal_Base_D : Car_F {
+		antiRollbarSpeedMin = 15;
+		frontBias = 0.8;
+		rearBias = 0.8;
+		centreBias = 0.8;
+		maxSpeed = 150;
+		enginePower = 185;
+		armor = 310;
+		class Wheels:Wheels {
+			class LF:LF {
+				springDamperRate = 22000;
+				springStrength = 40000;
+				maxCompression = 0.3;
+				maxBrakeTorque = 10000;
+				maxHandBrakeTorque = 11000;
+				frictionVsSlipGraph[] = {{ 0.0, 1.0 }, { 0.3, 0.7 }, { 1.0, 0.5 }};
+			};
+		};
+		
+	};
+			
 	
 	class UK3CB_BAF_LandRover_Base: Car_F {
 		
@@ -257,8 +283,8 @@ class CfgVehicles {
 		frontBias = 1.5;
 		rearBias = 1.5;
 		centreBias = 1.5;
-		class Wheels {
-			class LF {
+		class Wheels:Wheels {
+			class LF:LF {
 				boneName = "wheel_1_1_damper";
 				boundary = "wheel_1_1_bound";
 				center = "wheel_1_1_axis";
@@ -357,11 +383,14 @@ class CfgVehicles {
 	class Wheeled_APC_F : Car_F
 	{
 		class eventhandlers;
+		class Wheels {
+			class LF {};
+		};
 	};
 	class CUP_Mastiff_Base : Wheeled_APC_F
 	{
-		antiRollbarForceCoef = 6;
-		antiRollbarForceLimit = 150;
+		antiRollbarForceCoef = 60;
+		antiRollbarForceLimit = 40;
 		antiRollbarSpeedMin = 30;
 		antiRollbarSpeedMax = 100;
 		terrainCoef = 5.0;
@@ -371,8 +400,8 @@ class CfgVehicles {
 		differentialType = "all_open";
 
 
-		class Wheels {
-			class LF {
+		class Wheels:wheels {
+			class LF:LF {
 				boneName = "wheel_1_1";
 				steering = 1;
 				side = "left";
@@ -416,15 +445,15 @@ class CfgVehicles {
        };
 	   
 		class EventHandlers: EventHandlers {
-			init = "_car = (_this select 0); _car setCenterOfMass [-0.00687825,-0.814309,1.4]";
+			init = "_car = (_this select 0); _car setCenterOfMass [-0.00687825,-0.814309,1.7]";
 			
 		};
 	};
 	
 	class CUP_Wolfhound_Base : Wheeled_APC_F
 	{
-		antiRollbarForceCoef = 6;
-		antiRollbarForceLimit = 150;
+		antiRollbarForceCoef = 60;
+		antiRollbarForceLimit = 40;
 		antiRollbarSpeedMin = 30;
 		antiRollbarSpeedMax = 100;
 		terrainCoef = 5.0;
@@ -434,8 +463,8 @@ class CfgVehicles {
 		differentialType = "all_open";
 
 
-		class Wheels {
-			class LF {
+		class Wheels:wheels {
+			class LF:LF {
 				boneName = "wheel_1_1";
 				steering = 1;
 				side = "left";
@@ -479,9 +508,10 @@ class CfgVehicles {
        };
 	   
 		class EventHandlers: EventHandlers {
-			init = "	_car = (_this select 0); _car setCenterOfMass [-0.00687825,-0.814309,1.3]";
+			init = "_car = (_this select 0); _car setCenterOfMass [-0.00687825,-0.814309,1.5]";
 			
 		};
 	};
+	
 };
 
