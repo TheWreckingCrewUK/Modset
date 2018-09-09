@@ -23,11 +23,11 @@ class CfgWeapons
 class CfgVehicles
 {
 	#include "backpacks.hpp"
-	
+
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
-	
+
 	#define MEDICAL_LOADOUT "ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
 	#define MAG_2(a) a, a
 	#define MAG_3(a) a, a, a
@@ -41,21 +41,64 @@ class CfgVehicles
 	#define MAG_11(a) a, a, a, a, a, a, a, a, a, a, a
 	#define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 	#define CATEGORY(a) editorSubcategory = a;\
-						vehicleClass= a;
-	
+			vehicleClass = a;
+
 	//GENERIC
-	class TWC_Infantry_Millennial_Plane_Pilot: B_Soldier_base_F
+	class TWC_Infantry_Millennial_Base: B_Soldier_base_F
 	{
-		scope=2;
-		displayName="Jet Pilot";
-		faction="TWC_Millennial";
-		editorSubcategory = "TWC_ForceType_Airborne";
-		vehicleClass="TWC_ForceType_Airborne";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_RAF";
-		backpack="";
-		linkedItems[]=
+		scope = 1;
+		displayName = "Base";
+		faction = "TWC_Millennial";
+		CATEGORY(TWC_Infantry_Regular_Woodland)
+		icon = "iconMan";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_Smock_DPMW";
+		backpack = "";
+		linkedItems[] =
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[] =
+		{
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		Items[] =
+		{
+			MEDICAL_LOADOUT
+		};
+		respawnItems[] =
+		{
+			MEDICAL_LOADOUT
+		};
+		weapons[] =
+		{
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"Throw",
+			"Put"
+		};
+		magazines[] = {};
+		respawnmagazines[] = {};
+	};
+	class TWC_Infantry_Millennial_Plane_Pilot: TWC_Infantry_Millennial_Base
+	{
+		scope = 2;
+		displayName = "Jet Pilot";
+		faction = "TWC_Millennial";
+		CATEGORY(TWC_ForceType_Airborne)
+		uniformClass = "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
+		linkedItems[] =
 		{
 			"CUP_V_B_PilotVest",
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -63,7 +106,7 @@ class CfgVehicles
 			"itemMap",
 			"ItemWatch"
 		};
-		respawnLinkedItems[]=
+		respawnLinkedItems[] =
 		{
 			"CUP_V_B_PilotVest",
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -71,53 +114,45 @@ class CfgVehicles
 			"itemMap",
 			"ItemWatch"
 		};
-		Items[]=
+		Items[] =
 		{
 			MEDICAL_LOADOUT,
 			"ACE_MapTools"
 		};
-		respawnItems[]=
+		respawnItems[] =
 		{
 			MEDICAL_LOADOUT,
 			"ACE_MapTools"
 		};
-		weapons[]=
+		weapons[] =
 		{
 			"Throw",
 			"Put"
 		};
-		respawnweapons[]=
+		respawnweapons[] =
 		{
 			"Throw",
 			"Put"
 		};
-		magazines[]=
+		magazines[] =
 		{
 			"SmokeShell",
 			"SmokeShell"
 		};
-		respawnmagazines[]=
+		respawnmagazines[] =
 		{
 			"SmokeShell",
 			"SmokeShell"
 		};
 	};
-	class TWC_Infantry_Millennial_Tank_Commander: B_Soldier_base_F
+	class TWC_Infantry_Millennial_Tank_Commander: TWC_Infantry_Millennial_Base
 	{
-		scope=2;
-		displayName="Tank Commander";
-		faction="TWC_ColdWar";
-		editorSubcategory = "TWC_ForceType_Armoured";
-		vehicleClass="TWC_ForceType_Armoured";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_CrewmanCoveralls_RTR";
-		backpack="";
-		class EventHandlers: EventHandlers
-		{
-			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
-		};
-		linkedItems[]=
+		scope = 2;
+		displayName = "Tank Commander";
+		faction = "TWC_Millennial";
+		CATEGORY(TWC_ForceType_Armoured)
+		uniformClass = "UK3CB_BAF_U_CrewmanCoveralls_RTR";
+		linkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",
 			"UK3CB_BAF_H_Beret_RTR_PRR",
@@ -125,7 +160,7 @@ class CfgVehicles
 			"itemMap",
 			"ItemWatch"
 		};
-		respawnLinkedItems[]=
+		respawnLinkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",
 			"UK3CB_BAF_H_Beret_RTR_PRR",
@@ -133,57 +168,62 @@ class CfgVehicles
 			"itemMap",
 			"ItemWatch"
 		};
-		Items[]=
+		Items[] =
 		{
 			MEDICAL_LOADOUT,
 			"ACE_MapTools"
 		};
-		respawnItems[]=
+		respawnItems[] =
 		{
 			MEDICAL_LOADOUT,
 			"ACE_MapTools"
 		};
-		weapons[]=
+		weapons[] =
 		{
-			"sp_smg_sterling",
+			"TWC_Weapon_L85A1",
 			"Throw",
 			"Put"
 		};
-		respawnweapons[]=
+		respawnweapons[] =
 		{
-			"sp_smg_sterling",
+			"TWC_Weapon_L85A1",
 			"Throw",
 			"Put"
 		};
-		magazines[]=
+		magazines[] =
 		{
-			MAG_3("SP_30Rnd_9x19_L2A3_Sterling"),
+			MAG_3("UK3CB_BAF_556_30Rnd"),
 			MAG_2("SmokeShell")
 		};
-		respawnmagazines[]=
+		respawnmagazines[] =
 		{
-			MAG_3("SP_30Rnd_9x19_L2A3_Sterling"),
+			MAG_3("UK3CB_BAF_556_30Rnd"),
 			MAG_2("SmokeShell")
 		};
 	};
 	class TWC_Infantry_Millennial_Tank_Crew: TWC_Infantry_Millennial_Tank_Commander
 	{
-		displayName="Tank Crew";
-		class EventHandlers: EventHandlers
-		{
-			init = "";
-		};
-		
+		displayName = "Tank Crew";
 	};
-	#include "regular\woodland.hpp"
-	#include "regular\woodland_dismounted.hpp"
-	#include "regular\desert.hpp"
-	#include "regular\desert_dismounted.hpp"
+	#include "1990_regular\woodland.hpp"
+	#include "1990_regular\woodland_dismounted.hpp"
+	#include "1990_regular\desert.hpp"
+	#include "1990_regular\desert_dismounted.hpp"
 
-	#include "coin\woodland.hpp"
-	#include "coin\woodland_dismounted.hpp"
-	#include "coin\desert.hpp"
-	#include "coin\desert_dismounted.hpp"
+	/*#include "1990_coin\woodland.hpp"
+	#include "1990_coin\woodland_dismounted.hpp"
+	#include "1990_coin\desert.hpp"
+	#include "1990_coin\desert_dismounted.hpp"
+
+	#include "2000_regular\woodland.hpp"
+	#include "2000_regular\woodland_dismounted.hpp"
+	#include "2000_regular\desert.hpp"
+	#include "2000_regular\desert_dismounted.hpp"
+
+	#include "2000_coin\woodland.hpp"
+	#include "2000_coin\woodland_dismounted.hpp"
+	#include "2000_coin\desert.hpp"
+	#include "2000_coin\desert_dismounted.hpp"*/
 };
 
 class CfgGroups
@@ -193,8 +233,8 @@ class CfgGroups
 		class TWC_Groups_Millennial
 		{
 			name = "TWC Groups Millennial";
-			#include "regular\groups.hpp"
-			#include "coin\groups.hpp"
+			//#include "regular\groups.hpp"
+			//#include "coin\groups.hpp"
 			class TWC_Groups_Millennial_Generic
 			{
 				name = "Generic";
