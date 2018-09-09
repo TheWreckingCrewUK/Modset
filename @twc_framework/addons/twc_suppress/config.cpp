@@ -9,16 +9,6 @@ class CfgPatches {
 	};
 };
 
-class CfgFunctions {
-	class twc_suppress {
-		tag = "twc_suppress";
-
-		class init {
-			file = "twc_suppress\functions";
-
-			class module {};
-		};
-	};
-};
-
+#include "CfgFunctions.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgEventHandlers.hpp"
