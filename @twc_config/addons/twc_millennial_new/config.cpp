@@ -233,8 +233,8 @@ class CfgGroups
 		class TWC_Groups_Millennial
 		{
 			name = "TWC Groups Millennial";
-			//#include "regular\groups.hpp"
-			//#include "coin\groups.hpp"
+			#include "1990_regular\groups.hpp"
+			#include "1990_coin\groups.hpp"
 			class TWC_Groups_Millennial_Generic
 			{
 				name = "Generic";
