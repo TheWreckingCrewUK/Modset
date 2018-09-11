@@ -17,16 +17,6 @@ params["_era"];
 
 switch (_era) do {
 	case "1990": {
-		["TWC_Millenial", [
-			"\twc_framework\ranks\private.paa",
-			"\twc_framework\ranks\lance_corporal.paa",
-			"\twc_framework\ranks\corporal.paa",
-			"\twc_framework\ranks\sergeant.paa",
-			"\twc_framework\ranks\staff_sergeant.paa",
-			"\twc_framework\ranks\second_lieutenant.paa",
-			"\twc_framework\ranks\major.paa"
-		]] call ace_nametags_fnc_setFactionRankIcons;
-		
 		["TWC_Millennial", [
 			"\twc_framework\ranks\private.paa",
 			"\twc_framework\ranks\lance_corporal.paa",
