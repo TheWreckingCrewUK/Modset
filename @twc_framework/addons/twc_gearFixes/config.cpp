@@ -252,7 +252,8 @@ class CfgVehicles {
 	};
 	
 	class UK3CB_BAF_Jackal_Base_D : Car_F {
-		antiRollbarSpeedMin = 15;
+		antiRollbarForceCoef = 15;
+		antiRollbarForceLimit = 15;
 		frontBias = 0.8;
 		rearBias = 0.8;
 		centreBias = 0.8;
@@ -270,6 +271,31 @@ class CfgVehicles {
 			};
 		};
 		
+	};
+	class UK3CB_BAF_Coyote_L111A1_Base_D;
+	class UK3CB_BAF_Jackal2_L111A1_Base_D: UK3CB_BAF_Coyote_L111A1_Base_D {
+		
+		antiRollbarForceCoef = 15;
+		antiRollbarForceLimit = 15;
+	};
+	
+	
+	class UK3CB_BAF_Coyote_Passenger_L111A1_D: UK3CB_BAF_Coyote_L111A1_Base_D {
+		
+		antiRollbarForceCoef = 15;
+		antiRollbarForceLimit = 15;
+	};
+	class UK3CB_BAF_Coyote_L134A1_Base_D;
+	class UK3CB_BAF_Jackal2_L134A1_Base_D: UK3CB_BAF_Coyote_L134A1_Base_D {
+		
+		antiRollbarForceCoef = 15;
+		antiRollbarForceLimit = 15;
+	};
+		
+	class UK3CB_BAF_Coyote_Passenger_L134A1_D: UK3CB_BAF_Coyote_L134A1_Base_D {
+		
+		antiRollbarForceCoef = 15;
+		antiRollbarForceLimit = 15;
 	};
 			
 	
@@ -292,7 +318,7 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 1.0 }, { 0.3, 0.5 }, { 1.0, 0.3 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
 				latStiffX = 15;
 				latStiffY = 20;
 				longitudinalStiffnessPerUnitGravity = 10000;
@@ -320,7 +346,7 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 1.2 }, { 0.5, 1 }, { 1.0, 0.3 }};
+				frictionVsSlipGraph[] = {{ 0.0, 1.2 }, { 0.5, 1 }, { 1.0, 0.6 }};
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 2950;
@@ -389,9 +415,9 @@ class CfgVehicles {
 	};
 	class CUP_Mastiff_Base : Wheeled_APC_F
 	{
-		antiRollbarForceCoef = 60;
+		antiRollbarForceCoef = 50;
 		antiRollbarForceLimit = 40;
-		antiRollbarSpeedMin = 30;
+		antiRollbarSpeedMin = 5;
 		antiRollbarSpeedMax = 100;
 		terrainCoef = 5.0;
 		turncoef = 3.0;

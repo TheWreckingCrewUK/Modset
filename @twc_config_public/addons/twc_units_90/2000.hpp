@@ -1425,7 +1425,7 @@
 		editorSubcategory = "Men_2000D";
 		vehicleClass= "Men_2000D";
 		uniformClass="UK3CB_BAF_U_Smock_DDPM";
-		backpack="TWC_Backpack_2000_Sectionlead_Desert";
+		backpack="TWC_Backpack_1990_Sectionlead_Desert";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_DDPM2",
@@ -1605,7 +1605,7 @@
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
-		backpack="TWC_Backpack_2000_Sectionlead_Desert";
+		backpack="TWC_Backpack_1990_Sectionlead_Desert";
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_Osprey_DDPM2",
