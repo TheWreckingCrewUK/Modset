@@ -210,12 +210,12 @@ class CfgVehicles
 	#include "1990_regular\desert.hpp"
 	#include "1990_regular\desert_dismounted.hpp"
 
-	/*#include "1990_coin\woodland.hpp"
+	#include "1990_coin\woodland.hpp"
 	#include "1990_coin\woodland_dismounted.hpp"
 	#include "1990_coin\desert.hpp"
 	#include "1990_coin\desert_dismounted.hpp"
 
-	#include "2000_regular\woodland.hpp"
+	/*#include "2000_regular\woodland.hpp"
 	#include "2000_regular\woodland_dismounted.hpp"
 	#include "2000_regular\desert.hpp"
 	#include "2000_regular\desert_dismounted.hpp"

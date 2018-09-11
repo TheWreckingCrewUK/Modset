@@ -172,7 +172,7 @@ class TWC_Backpack_1990_Regular_Dismounted_Woodland_Gunner: UK3CB_BAF_B_Bergen_D
 	scope = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,6);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
 	};
 };
 class TWC_Backpack_1990_Regular_Dismounted_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_DPMW_SL_A
@@ -183,7 +183,7 @@ class TWC_Backpack_1990_Regular_Dismounted_Woodland_SectionCommander: UK3CB_BAF_
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,6);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
 	};
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
@@ -207,7 +207,7 @@ class TWC_Backpack_1990_Regular_Dismounted_Woodland_Platoon_Commander: UK3CB_BAF
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,6);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,2);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,2);
 	};
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
@@ -420,7 +420,7 @@ class TWC_Backpack_1990_Regular_Dismounted_Desert_Gunner: UK3CB_BAF_B_Bergen_DDP
 	scope = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,6);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
 	};
 };
 class TWC_Backpack_1990_Regular_Dismounted_Desert_SectionCommander: UK3CB_BAF_B_Bergen_DDPM_SL_A
@@ -431,7 +431,7 @@ class TWC_Backpack_1990_Regular_Dismounted_Desert_SectionCommander: UK3CB_BAF_B_
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,6);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
 	};
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
@@ -455,7 +455,7 @@ class TWC_Backpack_1990_Regular_Dismounted_Desert_Platoon_Commander: UK3CB_BAF_B
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,6);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,2);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,2);
 	};
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
