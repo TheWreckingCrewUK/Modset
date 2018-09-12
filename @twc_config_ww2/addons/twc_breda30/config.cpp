@@ -6,14 +6,14 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {"twc_breda30"};
 		requiredversion = 1;
-		requiredAddons[] = {"A3_Data_F","A3_Weapons_F","A3_Characters_F","A3_Characters_F_BLUFOR", "CUP_Weapons_AK"};
+		requiredAddons[] = {"A3_Data_F","A3_Weapons_F","A3_Characters_F","A3_Characters_F_BLUFOR"};
 	};
 };
 class CfgSoundShaders
 {
 	class twc_Breda30_closure_soundshader
 	{
-		samples[] = {{"\CUP\Weapons\CUP_Weapons_Sounds\M240\closure_1",1}};
+		samples[] = {{"\A3\Sounds_F\arsenal\weapons\Machineguns\Zafir\Zafir_closure_01",1}};
 		volume = 0.4466836;
 		range = 5;
 	};
@@ -80,9 +80,9 @@ class CfgSoundSets
 	{
 		soundShaders[] = {"twc_Breda30_closure_soundshader","twc_Breda30_closeShot_soundshader","twc_Breda30_midShot_soundshader","twc_Breda30_distShot_soundshader"};
 		volumeFactor = 1;
-		volumeCurve = "CUP_rifleSoundCurve";
+		volumeCurve = "InverseSquare2Curve";
 		sound3DProcessingType = "WeaponMediumShot3DProcessingType";
-		distanceFilter = "CUP_defaultDistanceFilter";
+		distanceFilter = "weaponShotDistanceFreqAttenuationFilter";
 		spatial = "true";
 		doppler = "false";
 		loop = "false";
@@ -92,11 +92,11 @@ class CfgSoundSets
 		soundShaders[] = {"twc_Breda30_tailInterior_SoundShader","twc_Breda30_tailTrees_SoundShader","twc_Breda30_tailForest_SoundShader","twc_Breda30_tailMeadows_SoundShader","twc_Breda30_tailHouses_SoundShader"};
 		soundShadersLimit = 2;
 		volumeFactor = 0.8;
-		volumeCurve = "CUP_rifleSoundCurve";
+		volumeCurve = "InverseSquare2Curve";
 		frequencyRandomizerMin = 0.01;
 		frequencyRandomizer = 0.05;
 		sound3DProcessingType = "WeaponMediumShot3DProcessingType";
-		distanceFilter = "CUP_defaultDistanceFilter";
+		distanceFilter = "weaponShotTailDistanceFreqAttenuationFilter";
 		spatial = "true";
 		doppler = "false";
 		loop = "false";
@@ -119,7 +119,7 @@ class CfgMagazines
 		count = 20;
 		descriptionshort = "Caliber: 6.5×53mm<br />Rounds: 20<br />Used in: Breda 30";
 		displayname = "20rnd 6.5×57mm";
-		picture = "\CUP\Weapons\CUP_Weapons_Ammunition\data\ui\m_M24_CA.paa";
+		picture = "\A3\weapons_f\data\UI\m_M24_CA.paa";
 	};
 };
 class Mode_SemiAuto;
@@ -132,13 +132,13 @@ class PointerSlot;
 class UnderBarrelSlot;
 class CfgWeapons
 {
-	class CUP_arifle_AK74;
-	class CUP_arifle_RPK74: CUP_arifle_AK74
+	class Rifle_Base_F;
+	class arifle_MX_Base_F: Rifle_Base_F
 	{
 		class FullAuto;
 		class Single;
 	};
-	class twc_breda30: CUP_arifle_RPK74
+	class twc_breda30: arifle_MX_Base_F
 	{
 		author = "Anschluss";
 		scope = 2;
@@ -147,7 +147,7 @@ class CfgWeapons
 		magazines[] = {"twc_20rnd_65x52_carcano"};
 		displayname = "Breda 30";
 		ace_overheating_mrbs = 80;
-		handAnim[] = {"OFP2_ManSkeleton","\CUP\Weapons\CUP_Weapons_AK\Data\Anim\AK.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_Beta\Machineguns\Zafir\Data\Anim\zafir.rtm"};
 		reloadMagazineSound[] = {"mas_ww2_army\weapon\sounds\breda_reload.wss",1,1,10};
 		selectionFireAnim = "muzzleFlash";
 		class FullAuto: FullAuto
