@@ -201,44 +201,44 @@ class WW2_British_AT_Early: WW2_British_Base {
 	weapons[] = {
 		"Throw",
 		"Put",
-		"twc_boys_at_rifle",
+		"BBB_BoysATR",
 		"fow_w_webley"
 	};
 
 	respawnWeapons[] = {
 		"Throw",
 		"Put",
-		"twc_boys_at_rifle",
+		"BBB_BoysATR",
 		"fow_w_webley"
 	};
 
 	magazines[] = {
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
+		"BBB_5Rnd_1397x99_B",
+		"BBB_5Rnd_1397x99_B",
+		"BBB_5Rnd_1397x99_B",
+		"BBB_5Rnd_1397x99_B",
+		"BBB_5Rnd_1397x99_B",
+		"BBB_5Rnd_1397x99_T",
+		"BBB_5Rnd_1397x99_T",
+		"BBB_5Rnd_1397x99_T",
+		"BBB_5Rnd_1397x99_T",
 		"fow_6Rnd_455",
 		"fow_6Rnd_455",
 		"twc_no82"
 	};
 
 	respawnMagazines[] = {
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
-		"twc_boys_5rnd_mag",
+		"BBB_5Rnd_1397x99_B",
+		"BBB_5Rnd_1397x99_B",
+		"BBB_5Rnd_1397x99_B",
+		"BBB_5Rnd_1397x99_B",
+		"BBB_5Rnd_1397x99_B",
+		"BBB_5Rnd_1397x99_T",
+		"BBB_5Rnd_1397x99_T",
+		"BBB_5Rnd_1397x99_T",
+		"BBB_5Rnd_1397x99_T",
 		"fow_6Rnd_455",
 		"fow_6Rnd_455",
 		"twc_no82"
-	};	
+	};
 };

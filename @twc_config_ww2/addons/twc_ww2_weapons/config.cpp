@@ -11,8 +11,8 @@ class CfgPatches
 		{
 			"cup_weapons_ammoboxes",
 			"fow_weapons",
-			"fow_weapons_c"
-			
+			"fow_weapons_c",
+			"BBB_BoysATR"
 		};
 		version="1";
 		projectName="TWC";
@@ -87,6 +87,16 @@ class CfgWeapons {
 	class fow_v_uk_para_base;
 	class fow_v_uk_para_bren;
 	class fow_v_uk_para_sten;
+
+	class Rifle_Base_F;
+
+	class BBB_BoysATR: Rifle_Base_F
+	{
+		class EventHandlers
+		{
+			fired = "_this execVM '\twc_ww2_weapons\scripts\twc_boys_fire.sqf';";
+		};
+	};
 
 	class TWC_Bren: fow_w_bren {
 		class WeaponSlotsInfo {
