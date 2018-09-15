@@ -483,6 +483,7 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Commander: TWC_Infantry_1990_Regula
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
 		"ACE_VMM3",
+		"ACE_Vector",
 		"Throw",
 		"Put"
 	};
@@ -490,6 +491,7 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Commander: TWC_Infantry_1990_Regula
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
 		"ACE_VMM3",
+		"ACE_Vector",
 		"Throw",
 		"Put"
 	};
@@ -498,6 +500,8 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Commander: TWC_Infantry_1990_Regula
 		MEDICAL_LOADOUT,
 		"ACE_M26_Clacker",
 		"ACE_DefusalKit",
+		"ACE_SpraypaintGreen",
+		"ACE_SpraypaintRed",
 		"ACE_MapTools"
 	};
 	respawnItems[] =
@@ -505,6 +509,8 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Commander: TWC_Infantry_1990_Regula
 		MEDICAL_LOADOUT,
 		"ACE_M26_Clacker",
 		"ACE_DefusalKit",
+		"ACE_SpraypaintGreen",
+		"ACE_SpraypaintRed",
 		"ACE_MapTools"
 	};
 	magazines[] =
@@ -527,14 +533,14 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Gunner: TWC_Infantry_1990_Regular_W
 	weapons[] =
 	{
 		"TWC_Weapon_L135A1",
-		"ACE_VMM3",
+		"ukcw_hipower",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L135A1",
-		"ACE_VMM3",
+		"ukcw_hipower",
 		"Throw",
 		"Put"
 	};
@@ -553,11 +559,13 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Gunner: TWC_Infantry_1990_Regular_W
 	magazines[] =
 	{
 		MAG_7("UK3CB_BAF_127_10Rnd"),
+		MAG_3("ukcw_13rd_9x19"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
+		MAG_3("ukcw_13rd_9x19"),
 		MAG_2("SmokeShell")
 	};
 };
