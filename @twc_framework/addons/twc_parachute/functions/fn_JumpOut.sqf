@@ -62,10 +62,14 @@ if (_isEven) then {
 	_caller action ["OpenParachute", _caller];
 	
 	_chute = vehicle _caller;
+
+	if (typeOf _chute != "TWC_T10_Parachute") then {
+		systemChat "error:fn_JumpOut.sqf:65 class mismatch, expected parachute got unknown";
+	};
+
 	_chute allowDamage false;
 	_chute setVectorDirAndUp [_vDir, _vUp];
 	_chute setVelocity _vel;
-	
 	_caller setVelocity _vel;
 	
 	// wait until parachute is open, not necessary atm
