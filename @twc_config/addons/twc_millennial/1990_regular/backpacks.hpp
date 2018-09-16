@@ -135,7 +135,7 @@ class TWC_Backpack_1990_Regular_Woodland_EOD_Commander: UK3CB_BAF_B_Bergen_DPMW_
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_1990_Regular_Woodland_FAC: UK3CB_BAF_B_Bergen_DPMW_SL_A
+class TWC_Backpack_1990_Regular_Woodland_FAC: UK3CB_BAF_B_Bergen_JTAC_H_A
 {
 	scope = 1;
 	class TransportItems {
@@ -202,6 +202,7 @@ class TWC_Backpack_1990_Regular_Dismounted_Woodland_2iC: UK3CB_BAF_B_Bergen_DPMW
 //Platoon Command
 class TWC_Backpack_1990_Regular_Dismounted_Woodland_Platoon_Commander: UK3CB_BAF_B_Bergen_DPMW_SL_A
 {
+	scope = 1;
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
@@ -383,7 +384,7 @@ class TWC_Backpack_1990_Regular_Desert_EOD_Commander: UK3CB_BAF_B_Bergen_DDPM_SL
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_1990_Regular_Desert_FAC: UK3CB_BAF_B_Bergen_DDPM_SL_A
+class TWC_Backpack_1990_Regular_Desert_FAC: UK3CB_BAF_B_Bergen_JTAC_H_A
 {
 	scope = 1;
 	class TransportItems {
@@ -450,6 +451,7 @@ class TWC_Backpack_1990_Regular_Dismounted_Desert_2iC: UK3CB_BAF_B_Bergen_DDPM_R
 //Platoon Command
 class TWC_Backpack_1990_Regular_Dismounted_Desert_Platoon_Commander: UK3CB_BAF_B_Bergen_DDPM_SL_A
 {
+	scope = 1;
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
@@ -631,7 +633,7 @@ class TWC_Backpack_1990_Regular_Tropic_EOD_Commander: UK3CB_BAF_B_Bergen_DPMT_SL
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_1990_Regular_Tropic_FAC: UK3CB_BAF_B_Bergen_DPMT_SL_A
+class TWC_Backpack_1990_Regular_Tropic_FAC: UK3CB_BAF_B_Bergen_JTAC_H_A
 {
 	scope = 1;
 	class TransportItems {
@@ -698,6 +700,7 @@ class TWC_Backpack_1990_Regular_Dismounted_Tropic_2iC: UK3CB_BAF_B_Bergen_DPMT_R
 //Platoon Command
 class TWC_Backpack_1990_Regular_Dismounted_Tropic_Platoon_Commander: UK3CB_BAF_B_Bergen_DPMT_SL_A
 {
+	scope = 1;
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
@@ -879,7 +882,7 @@ class TWC_Backpack_1990_Regular_Arctic_EOD_Commander: UK3CB_BAF_B_Bergen_Arctic_
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_1990_Regular_Arctic_FAC: UK3CB_BAF_B_Bergen_Arctic_SL_A
+class TWC_Backpack_1990_Regular_Arctic_FAC: UK3CB_BAF_B_Bergen_JTAC_H_A
 {
 	scope = 1;
 	class TransportItems {
@@ -946,6 +949,7 @@ class TWC_Backpack_1990_Regular_Dismounted_Arctic_2iC: UK3CB_BAF_B_Bergen_Arctic
 //Platoon Command
 class TWC_Backpack_1990_Regular_Dismounted_Arctic_Platoon_Commander: UK3CB_BAF_B_Bergen_Arctic_SL_A
 {
+	scope = 1;
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
