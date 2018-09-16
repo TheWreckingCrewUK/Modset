@@ -135,7 +135,7 @@ class TWC_Backpack_1990_Regular_Woodland_EOD_Commander: UK3CB_BAF_B_Bergen_DPMW_
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_1990_Regular_Woodland_FAC: UK3CB_BAF_B_Bergen_JTAC_H_A
+class TWC_Backpack_1990_Regular_Woodland_FAC: UK3CB_BAF_B_Bergen_DPMW_JTAC_H_A
 {
 	scope = 1;
 	class TransportItems {
@@ -384,7 +384,7 @@ class TWC_Backpack_1990_Regular_Desert_EOD_Commander: UK3CB_BAF_B_Bergen_DDPM_SL
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_1990_Regular_Desert_FAC: UK3CB_BAF_B_Bergen_JTAC_H_A
+class TWC_Backpack_1990_Regular_Desert_FAC: UK3CB_BAF_B_Bergen_DDPM_JTAC_H_A
 {
 	scope = 1;
 	class TransportItems {
@@ -633,7 +633,7 @@ class TWC_Backpack_1990_Regular_Tropic_EOD_Commander: UK3CB_BAF_B_Bergen_DPMT_SL
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_1990_Regular_Tropic_FAC: UK3CB_BAF_B_Bergen_JTAC_H_A
+class TWC_Backpack_1990_Regular_Tropic_FAC: UK3CB_BAF_B_Bergen_DPMT_JTAC_H_A
 {
 	scope = 1;
 	class TransportItems {
@@ -882,7 +882,7 @@ class TWC_Backpack_1990_Regular_Arctic_EOD_Commander: UK3CB_BAF_B_Bergen_Arctic_
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_1990_Regular_Arctic_FAC: UK3CB_BAF_B_Bergen_JTAC_H_A
+class TWC_Backpack_1990_Regular_Arctic_FAC: UK3CB_BAF_B_Bergen_Arctic_JTAC_H_A
 {
 	scope = 1;
 	class TransportItems {
