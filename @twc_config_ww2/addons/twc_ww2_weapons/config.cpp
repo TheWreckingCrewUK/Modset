@@ -34,7 +34,7 @@ class cfgMagazines {
 	class twc_no82: fow_e_no82 {
 		ammo = "twc_no82";
 		displayName = "NO. 82 AT Grenade";
-	};	
+	};
 };
 class CfgWeapons {
 	class Default;
@@ -88,13 +88,20 @@ class CfgWeapons {
 	class fow_v_uk_para_bren;
 	class fow_v_uk_para_sten;
 
-	class Rifle_Base_F;
+	class Rifle;
+	class Rifle_Base_F: Rifle
+	{
+		class EventHandlers;
+	};
 
 	class BBB_BoysATR: Rifle_Base_F
 	{
-		class EventHandlers
+		class EventHandlers: EventHandlers
 		{
-			fired = "_this execVM '\twc_ww2_weapons\scripts\twc_boys_fire.sqf';";
+			class twc_ww2_weapons
+			{
+				fired = "_this execVM '\twc_ww2_weapons\scripts\twc_boys_fire.sqf';";
+			};
 		};
 	};
 
