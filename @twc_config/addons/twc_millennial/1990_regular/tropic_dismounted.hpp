@@ -3,47 +3,47 @@
 class TWC_Infantry_1990_Regular_Dismounted_Tropic_Rifleman: TWC_Infantry_1990_Regular_Tropic_Rifleman
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
-	backpack = "TWC_Backpack_1990_Regular_Dismounted_Desert_Rifleman";
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_Rifleman";
 };
 class TWC_Infantry_1990_Regular_Dismounted_Tropic_AT: TWC_Infantry_1990_Regular_Tropic_AT
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
-	backpack = "TWC_Backpack_1990_Regular_Dismounted_Desert_AT";
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_AT";
 };
 class TWC_Infantry_1990_Regular_Dismounted_Tropic_Gunner: TWC_Infantry_1990_Regular_Tropic_Gunner
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
-	backpack = "TWC_Backpack_1990_Regular_Dismounted_Desert_Gunner";
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_Gunner";
 };
 class TWC_Infantry_1990_Regular_Dismounted_Tropic_SectionCommander: TWC_Infantry_1990_Regular_Tropic_SectionCommander
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
-	backpack = "TWC_Backpack_1990_Regular_Dismounted_Desert_SectionCommander";
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_SectionCommander";
 };
 class TWC_Infantry_1990_Regular_Dismounted_Tropic_2iC: TWC_Infantry_1990_Regular_Tropic_2iC
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
-	backpack = "TWC_Backpack_1990_Regular_Dismounted_Desert_2iC";
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_2iC";
 };
 
 //Platoon Command
 class TWC_Infantry_1990_Regular_Dismounted_Tropic_Platoon_Commander: TWC_Infantry_1990_Regular_Tropic_Platoon_Commander
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
-	backpack = "TWC_Backpack_1990_Regular_Dismounted_Desert_Platoon_Commander";
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_Platoon_Commander";
 };
 class TWC_Infantry_1990_Regular_Dismounted_Tropic_Platoon_Sergeant: TWC_Infantry_1990_Regular_Tropic_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
-	backpack = "TWC_Backpack_1990_Regular_Dismounted_Desert_Platoon_Sergeant";
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_Platoon_Sergeant";
 };
 class TWC_Infantry_1990_Regular_Dismounted_Tropic_Platoon_Medic: TWC_Infantry_1990_Regular_Tropic_Platoon_Medic
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
-	backpack = "TWC_Backpack_1990_Regular_Dismounted_Desert_Platoon_Medic";
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_Platoon_Medic";
 };
 class TWC_Infantry_1990_Regular_Dismounted_Tropic_Platoon_CSM: TWC_Infantry_1990_Regular_Tropic_Platoon_CSM
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
-	backpack = "TWC_Backpack_1990_Regular_Dismounted_Desert_Platoon_Sergeant";
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_Platoon_Sergeant";
 };

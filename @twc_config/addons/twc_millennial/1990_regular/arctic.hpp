@@ -67,7 +67,7 @@ class TWC_Infantry_1990_Regular_Arctic_SectionCommander: TWC_Infantry_1990_Regul
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_SectionCommander";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_SectionCommander";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -89,7 +89,7 @@ class TWC_Infantry_1990_Regular_Arctic_2iC: TWC_Infantry_1990_Regular_Woodland_2
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_2iC";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_2iC";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -113,7 +113,7 @@ class TWC_Infantry_1990_Regular_Arctic_Platoon_Commander: TWC_Infantry_1990_Regu
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_Platoon_Commander";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_Platoon_Commander";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -135,7 +135,7 @@ class TWC_Infantry_1990_Regular_Arctic_Platoon_Sergeant: TWC_Infantry_1990_Regul
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_Platoon_Sergeant";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_Platoon_Sergeant";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -157,7 +157,7 @@ class TWC_Infantry_1990_Regular_Arctic_Platoon_Medic: TWC_Infantry_1990_Regular_
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_Platoon_Medic";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_Platoon_Medic";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -179,7 +179,7 @@ class TWC_Infantry_1990_Regular_Arctic_Platoon_CSM: TWC_Infantry_1990_Regular_Wo
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_Platoon_Sergeant";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_Platoon_Sergeant";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -224,7 +224,7 @@ class TWC_Infantry_1990_Regular_Arctic_MILAN_Ass: TWC_Infantry_1990_Regular_Wood
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_MILAN_Ass";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_MILAN_Ass";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -267,7 +267,7 @@ class TWC_Infantry_1990_Regular_Arctic_Blowpipe_Ass: TWC_Infantry_1990_Regular_W
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_Blowpipe_Ass";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_Blowpipe_Ass";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -310,7 +310,7 @@ class TWC_Infantry_1990_Regular_Arctic_L14A1_Ass: TWC_Infantry_1990_Regular_Wood
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_L14A1_Ass";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_L14A1_Ass";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -367,7 +367,7 @@ class TWC_Infantry_1990_Regular_Arctic_Spotter: TWC_Infantry_1990_Regular_Woodla
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_Spotter";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_Spotter";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -405,7 +405,7 @@ class TWC_Infantry_1990_Regular_Arctic_Artillery_Commander: TWC_Infantry_1990_Re
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_Artillery_Commander";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_Artillery_Commander";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -449,7 +449,7 @@ class TWC_Infantry_1990_Regular_Arctic_FO: TWC_Infantry_1990_Regular_Woodland_FO
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_FO";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_FO";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -473,7 +473,7 @@ class TWC_Infantry_1990_Regular_Arctic_EOD_Commander: TWC_Infantry_1990_Regular_
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_EOD_Commander";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_EOD_Commander";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
@@ -518,7 +518,7 @@ class TWC_Infantry_1990_Regular_Arctic_FAC: TWC_Infantry_1990_Regular_Woodland_F
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_1990_Regular_Desert_FAC";
+	backpack = "TWC_Backpack_1990_Regular_Arctic_FAC";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Winter",
