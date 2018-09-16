@@ -427,7 +427,7 @@ class TWC_Infantry_1990_Regular_Tropic_Artillery_Crew: TWC_Infantry_1990_Regular
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
 	uniformClass = "TWC_Smock_Temperate";
-	backpack = "UK3CB_BAF_B_Bergen_DDPM_Rifleman_B";
+	backpack = "UK3CB_BAF_B_Bergen_DPMT_Rifleman_B";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_DPMT",
@@ -539,10 +539,10 @@ class TWC_Infantry_1990_Regular_Tropic_FAC: TWC_Infantry_1990_Regular_Woodland_F
 class TWC_Infantry_1990_Regular_Tropic_Helicopter_Pilot: TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT_ShortSleeve";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_Pilot_DDPM",
+		"UK3CB_BAF_V_Pilot_DPMT",
 		"UK3CB_BAF_H_PilotHelmetHeli_A",
 		"ItemCompass",
 		"itemMap",
@@ -550,7 +550,7 @@ class TWC_Infantry_1990_Regular_Tropic_Helicopter_Pilot: TWC_Infantry_1990_Regul
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_Pilot_DDPM",
+		"UK3CB_BAF_V_Pilot_DPMT",
 		"UK3CB_BAF_H_PilotHelmetHeli_A",
 		"ItemCompass",
 		"itemMap",
@@ -587,7 +587,7 @@ class TWC_Infantry_1990_Regular_Tropic_Vehicle_Crew: TWC_Infantry_1990_Regular_W
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_DPMT",
-		"UK3CB_BAF_H_CrewHelmet_DDPM_A",
+		"UK3CB_BAF_H_CrewHelmet_DPMT_A",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -595,7 +595,7 @@ class TWC_Infantry_1990_Regular_Tropic_Vehicle_Crew: TWC_Infantry_1990_Regular_W
 	respawnLinkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_DPMT",
-		"UK3CB_BAF_H_CrewHelmet_DDPM_A",
+		"UK3CB_BAF_H_CrewHelmet_DPMT_A",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
