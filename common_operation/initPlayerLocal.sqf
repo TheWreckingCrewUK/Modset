@@ -58,9 +58,6 @@ if (isMultiplayer) then {
 	};
 };
 
-player createDiarySubject ["Intel", "Radio Messages"];
-player createDiarySubject ["Convo", "Conversations Log"];
-
 if (!(isNil "twc_JIP_CommandMessage")) then {
 	{
 		player createDiaryRecord ["Diary", ["Radio Message", _x]];

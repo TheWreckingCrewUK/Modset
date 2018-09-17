@@ -1,5 +1,8 @@
 class CUP_B_MCV80_GB_D_SLAT;
 class TWC_BaseClass_Warrior: CUP_B_MCV80_GB_D_SLAT {
+	scope = 0;
+	scopeCurator = 0;
+
 	class Turrets;
 	class AnimationSources;
 };
@@ -31,8 +34,6 @@ class TWC_BaseClass_Warrior_F: TWC_BaseClass_Warrior {
 };
 
 class TWC_Vehicle_FV510_D_SLAT: TWC_BaseClass_Warrior_F {
-	scope = 0;
-	scopeCurator = 0;
 	side = 1;
 	faction = "TWC_General";
 
