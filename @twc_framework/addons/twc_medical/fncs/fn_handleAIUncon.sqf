@@ -14,7 +14,7 @@ if (_unCon) then {
 	if (_diceRoll < 4) then {
 		[_unit, true] call ace_medical_fnc_setDead;
 	} else {
-		if (_diceRoll == 9) then {
+		if (_diceRoll >= 8) then {
 			// rolled nat 10, get healed'
 			[_unit] call twc_medical_fnc_fullyBandageUnit;
 		};
@@ -28,6 +28,6 @@ if (_unCon) then {
 
 if (_continue) then {
 	// execute this fnc again in a bit
-	_delay = (floor random (6)) + 4;
+	_delay = (floor random (16)) + 4;
 	[twc_medical_fnc_handleAIUncon, [_unit], _delay] call CBA_fnc_waitAndExecute;
 };
