@@ -78,6 +78,141 @@
 			"ACE_tourniquet"
 		};		
 	};
+	class 2000_British_Platoon_Commander: 2000_British_Base
+	{
+		scope=2;
+		displayName="Platoon Commander @HQ";
+		icon="iconManLeader";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW_ShortSleeve";
+		backpack="";
+		linkedItems[]=
+		{
+			"CUP_V_B_RRV_Officer",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemGPS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_RRV_Officer",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemGPS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"Binocular",
+			"UK3CB_BAF_L85A2_SUSAT",
+			"ukcw_hipower"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"Binocular",
+			"UK3CB_BAF_L85A2_SUSAT",
+			"ukcw_hipower"
+		};
+		magazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"UK3CB_BAF_556_30Rnd",
+			"ukcw_13rd_9x19",
+			"ukcw_13rd_9x19",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd_T",
+			"CUP_HandGrenade_L109A2_HE",
+			"CUP_HandGrenade_L109A2_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Items[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACRE_PRC343",	
+			"rhsusf_ANPVS_14",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACRE_PRC148",	
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
+		respawnitems[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACRE_PRC343",	
+			"rhsusf_ANPVS_14",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACRE_PRC148",	
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};	
+	};
+	class 2000_British_Platoon_Sergeant: 2000_British_Platoon_Commander
+	{
+		scope=2;
+		displayName="Platoon Sergeant";
+		backpack="TWC_Backpack_1990_Platoon_Sergeant";
+	};
 	class 2000_British_SectionCommander: 2000_British_Base
 	{
 		scope=2;
@@ -1140,6 +1275,41 @@
 //                                                              //
 //////////////////////////////////////////////////////////////////
 
+	
+	class 2000_British_Platoon_Commander_Desert: 2000_British_Platoon_Commander
+	{
+		scope=2;
+		editorSubcategory = "Men_2000D";
+		vehicleClass="Men_2000D";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		backpack="";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"CUP_V_B_Eagle_SPC_TL",
+			"ItemGPS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"CUP_V_B_Eagle_SPC_TL",
+			"ItemGPS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	
+		class 2000_British_Platoon_Sergeant_Desert: 2000_British_Platoon_Commander_Desert
+	{
+		scope=2;
+		displayName="Platoon Sergeant";
+		backpack="TWC_Backpack_1990_Platoon_Sergeant_Desert";
+	};
+	
 	class 2000_British_SectionCommander_Desert: 2000_British_SectionCommander
 	{
 		displayName="Section Leader @British Army";

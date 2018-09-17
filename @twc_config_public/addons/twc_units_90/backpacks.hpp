@@ -6,6 +6,8 @@
 	class UK3CB_BAF_B_Bergen_DPMW_Rifleman_B;
 	class UK3CB_BAF_B_Carryall_DPMW;
 	class UK3CB_BAF_B_Kitbag_DPMW;
+	class UK3CB_BAF_B_Kitbag_OLI;
+	class UK3CB_BAF_B_Kitbag_TAN;
 	class UK3CB_BAF_B_Bergen_TAN_SL_A;
 	class UK3CB_BAF_B_Bergen_DPMW_JTAC_H_A;
 	
@@ -168,7 +170,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_1990_Platoon_Sergeant: UK3CB_BAF_B_Carryall_DPMW
+	class TWC_Backpack_1990_Platoon_Sergeant: UK3CB_BAF_B_Kitbag_OLI
 	{
 		scope = 1;
 		mass = 59.84;
@@ -178,11 +180,6 @@
 			class _xx_Wire_Cutters
 			{
 				name = "ACE_wirecutter";
-				count = 1;
-			};
-			class _xx_PRC_117F
-			{
-				name = "ACRE_PRC117F";
 				count = 1;
 			};
 		};
@@ -525,7 +522,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_1990_Platoon_Sergeant_Desert: UK3CB_BAF_B_Carryall_DDPM
+	class TWC_Backpack_1990_Platoon_Sergeant_Desert: UK3CB_BAF_B_Kitbag_TAN
 	{
 		scope = 1;
 		mass = 59.84;

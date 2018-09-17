@@ -326,8 +326,82 @@
 	class 1990_British_Platoon_Commander: 1990_British_Base
 	{
 		scope=2;
-		displayName="Platoon Commander";
-		backpack="TWC_Backpack_1990_Platoon_Command";
+		displayName="Platoon Commander @HQ";
+		backpack="";
+		linkedItems[]=
+		{
+			"rhsgref_alice_webbing",
+			"UK3CB_BAF_H_Beret_RM_Officer_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsgref_alice_webbing",
+			"UK3CB_BAF_H_Beret_RM_Officer_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		Items[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACRE_PRC343",	
+			"rhsusf_ANPVS_14",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACRE_PRC148",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};	
+		respawnitems[]=
+		{
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACRE_PRC343",	
+			"rhsusf_ANPVS_14",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACRE_PRC148",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};	
 		weapons[]=
 		{
 			"Throw",
@@ -346,25 +420,43 @@
 		{
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd_T",
-			"UK3CB_BAF_556_30Rnd_T",
-			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE"
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd_T",
-			"UK3CB_BAF_556_30Rnd_T",
-			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE"
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"SmokeShell",
+			"SmokeShell"
 		};
 	};
 	class 1990_British_Platoon_Sergeant: 1990_British_Platoon_Commander
 	{
 		displayName="Platoon Sergeant";
 		backpack="TWC_Backpack_1990_Platoon_Sergeant";
+		linkedItems[]=
+		{
+			"rhsgref_alice_webbing",
+			"UK3CB_BAF_H_Mk6_DPMW_F",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsgref_alice_webbing",
+			"UK3CB_BAF_H_Mk6_DPMW_F",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 	};
 	class 1990_British_Platoon_CSM: 1990_British_Platoon_Commander
 	{
@@ -964,23 +1056,23 @@
 	};
 	class 1990_British_Platoon_Commander_Desert: 1990_British_Platoon_Commander
 	{
-		displayName="Platoon Commander";
+		displayName="Platoon Commander @HQ";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="TWC_Smock_Desert";
-		backpack="TWC_Backpack_1990_Platoon_Command_Desert";
+		uniformClass="UK3CB_BAF_U_Smock_DPMW_DDPM";
+		backpack="";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
-			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"rhsgref_alice_webbing",
+			"UK3CB_BAF_H_Beret_RM_Officer_PRR",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
-			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"rhsgref_alice_webbing",
+			"UK3CB_BAF_H_Beret_RM_Officer_PRR",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -992,20 +1084,20 @@
 		displayName="Platoon Sergeant";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="TWC_Smock_Desert";
-		backpack="TWC_Backpack_1990_Platoon_Sergeant_Desert";
+		uniformClass="UK3CB_BAF_U_Smock_DPMW_DDPM";
+		backpack="TWC_Backpack_1990_Platoon_Sergeant";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
-			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"rhsgref_alice_webbing",
+			"UK3CB_BAF_H_Mk6_DPMW_F",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
-			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"rhsgref_alice_webbing",
+			"UK3CB_BAF_H_Mk6_DPMW_F",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
