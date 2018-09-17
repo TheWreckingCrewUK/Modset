@@ -1,9 +1,9 @@
 /*
 * Author: [TWC] Bosenator
-* ACRE set spectator is a local only function, this is called via a targetted EH in order to add MP compatability.
+* ACRE toggle spectator is a local only function, this is called via a targetted EH in order to add MP compatability.
 *
 * Arguments:
-* 0: Set Spectator To <BOOLEAN>
+* 0: false <BOOLEAN> (legacy paramater)
 *
 * Return Value:
 * NONE
@@ -12,4 +12,5 @@
 */
 params [["_setSpectator", false]];
 
-[_setSpectator] call acre_api_fnc_setSpectator;
+_isSpec = [player] call acre_api_fnc_isSpectator;
+[!(_isSpec)] call acre_api_fnc_setSpectator;
