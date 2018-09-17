@@ -17,7 +17,7 @@ if (!isNull (unitBackpack _caller)) then {
 	removeBackPack _caller;
 };
 
-_caller addBackPack "TWC_T10_Parachute_backpack";
+_caller addBackPackGlobal "TWC_T10_Parachute_backpack";
 _caller allowDamage false;
 
 moveOut _caller;
@@ -100,8 +100,8 @@ if (_isEven) then {
 	};
 	
 	moveOut _caller;
-	_groundPos = getpos _caller;
-	_caller setpos _groundPos;
+	//_groundPos = getpos _caller;
+	//_caller setpos _groundPos;
 	
 	waitUntil {isTouchingGround _caller};
 
