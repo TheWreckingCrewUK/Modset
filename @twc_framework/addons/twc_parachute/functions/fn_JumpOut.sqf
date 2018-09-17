@@ -1,5 +1,7 @@
 params ["_vehicle", "_caller"];
 
+if !(local _caller) exitWith {};
+
 _hadBackpack = false;
 _class = "";
 _magazines = [];
