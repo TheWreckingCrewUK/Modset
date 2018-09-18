@@ -13,18 +13,13 @@ class TWC_Backpack_WW2_USMC_Sergeant: fow_b_usmc_m1928_02
 		};
 		class _XX_Springfield_Mag
 		{
-			magazine = "fow_5Rnd_762x63";
+			magazine = "fow_8Rnd_762x63";
 			count = 16;
-		};
-		class _XX_Carbine_Mag
-		{
-			magazine = "fow_20Rnd_45acp";
-			count = 12;
 		};
 		class _XX_SMG_Mag
 		{
 			magazine = "fow_30Rnd_45acp";
-			count = 4;
+			count = 16;
 		};
 	};
 };
@@ -57,7 +52,7 @@ class TWC_Backpack_WW2_USMC_TL: fow_b_usmc_m1928_02
 		};
 		class _XX_Springfield_Mag
 		{
-			magazine = "fow_5Rnd_762x63";
+			magazine = "fow_8Rnd_762x63";
 			count = 2;
 		};
 		class _xx_Smoke

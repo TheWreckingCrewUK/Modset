@@ -3,9 +3,9 @@ class TWC_Backpack_WW2_Boys: TWC_Backpack_WW2_Base
 {
 		class TransportMagazines
 		{
-			class _XX_twc_boys_5rnd_mag
+			class _XX_BBB_5Rnd_1397x99_B
 			{
-				magazine = "twc_boys_5rnd_mag";
+				magazine = "BBB_5Rnd_1397x99_B";
 				count = 4;
 			};
 		};	
