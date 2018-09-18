@@ -20,7 +20,9 @@ _unit = player;
 _pos = getPos _unit;	
 ForwardBasePos = _pos;
 publicVariable "ForwardBasePos";
-ForwardBaseFlag = "Flag_UK_F" createVehicle _pos;	
+_flagtype = "Flag_UK_F";
+if (_unit isKindOf "TWC_WW2_USMC_Base") then {_flagtype = "LIB_FlagCarrier_USA"}; 
+ForwardBaseFlag = _flagtype createVehicle _pos;
 ForwardBaseTent = "camp" createVehicle _pos;
 ForwardBaseTent setvariable ["ace_medical_isMedicalFacility", true,true];
 

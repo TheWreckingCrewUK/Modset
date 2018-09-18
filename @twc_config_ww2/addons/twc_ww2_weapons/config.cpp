@@ -11,8 +11,8 @@ class CfgPatches
 		{
 			"cup_weapons_ammoboxes",
 			"fow_weapons",
-			"fow_weapons_c"
-			
+			"fow_weapons_c",
+			"BBB_BoysATR"
 		};
 		version="1";
 		projectName="TWC";
@@ -74,6 +74,7 @@ class CfgWeapons {
 	};
 	class fow_w_bren;
 	class LIB_FLARE_PISTOL;
+	class bnae_mk1_t_virtual;
 	
 	class VestItemclass;
 	class VestItem;
@@ -87,11 +88,35 @@ class CfgWeapons {
 	class fow_v_uk_para_bren;
 	class fow_v_uk_para_sten;
 
+	class Rifle_Base_F;
+
+	class BBB_BoysATR: Rifle_Base_F
+	{
+		class EventHandlers
+		{
+			fired = "_this execVM '\twc_ww2_weapons\scripts\twc_boys_fire.sqf';";
+		};
+	};
+
 	class TWC_Bren: fow_w_bren {
 		class WeaponSlotsInfo {
 			displayName = "Bren Gun";
 			mass = 200;
 			allowedSlots[] = {901};
+		};
+	};
+
+	class twc_mk1t: bnae_mk1_t_virtual
+	{
+		scope = 1;
+		author = "Anschluss";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item= "bnae_scope_v3_virtual";
+			};
 		};
 	};
 
@@ -518,10 +543,11 @@ class CfgVehicles {
 	};
 	class TWC_Backpack_WW2_Medic: B_LIB_SOV_RA_MedicalBag_Empty
 	{
+		maximumLoad = 120;
 		scope = 1;
 		class TransportItems
 		{
-            class _xx_Bandage
+			class _xx_Bandage
 			{
 				name = "ACE_fieldDressing";
 				count = 12;

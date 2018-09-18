@@ -35,7 +35,7 @@ class CfgFunctions {
 			class grabComposition {};
 			class sendCTabMessage {};
 			class isHigherRank {};
-			
+			class GliderTakeOff {};
 			class init{};
 		};
 		
@@ -53,10 +53,11 @@ class CfgFunctions {
 			class run{};
 			class safeZone{};
 			class zeus{};
-
+			class moduleCreateTask;
 			class moduleStationaryUnits{};
 			class moduleMovableUnits{};
 			class moduleVirtualArtillery{};
+			class moduleArtillery{};
 			class moduleUpdateTask{};
 			class moduleDefend{};
 			class moduleAirAssault{};
@@ -69,6 +70,7 @@ class CfgFunctions {
 			class moduleDisableCaching {};
 			class moduleGrabComposition {};
 			class moduleIgnoreForwardBase {};
+			class moduleGliderTakeOff {};
 		};
 		
 		class cache {

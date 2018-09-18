@@ -21,8 +21,89 @@ class cfgWeapons
 	class UK3CB_BAF_L85A2_UGL;
 	class UK3CB_BAF_L115A3;
 	class UK3CB_BAF_L85A2_RIS_Tan;
+	class arifle_Mk20_F;
+	class Rifle_Base_F;
 	
+	class CUP_Vlmg_M240_M1Abrams_Coax;
+	class CUP_M240_Coax_M1_Abrams_W: CUP_Vlmg_M240_M1Abrams_Coax
+	{
+		class manual;
+	};
+	class ukcw_l20a1: CUP_M240_Coax_M1_Abrams_W
+	{
+		class manual: manual
+		{
+			dispersion = 0.01;
+		};
+	};
+	
+	class arifle_MX_Base_F: Rifle_Base_F
+	{
+		class Single;
+		class FullAuto;
+	};
+	
+	class rhs_weap_ak74m_Base_F: Rifle_Base_F
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	class rhs_weap_lmg_minimipara;
+	class rhs_weap_lmg_minimi_railed: rhs_weap_lmg_minimipara
+	{
+		class FullAuto;
+	};
+	
+	class rhs_weap_m249_pip_L: rhs_weap_lmg_minimi_railed
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class FullAuto:FullAuto {
+			dispersion = 0.003;
+		};
+	};
+	
+	class rhs_weap_M590_5RD: Rifle_Base_F
+	{
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_rifle_762_prone";
+	};
+	class rhs_weap_M249_base;
+	class rhs_weap_m240_base: rhs_weap_M249_base
+	{
+		recoil = "twc_mg_762";
+		recoilProne = "twc_mg_prone";
+	};
+	
+	class rhs_weap_m4_Base: arifle_MX_Base_F
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class Single:Single {
+			dispersion = 0.001;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.001;
+		};
+	};
 
+	
+	class arifle_Mk20_plain_F: arifle_Mk20_F
+	{
+		class Single;
+		class FullAuto;
+	};
+	
+	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F
+	{
+		class Single:Single {
+			dispersion = 0.001;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.001;
+		};
+	};
 	
 	class UK3CB_BAF_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS
 	{
@@ -162,6 +243,22 @@ class cfgWeapons
 	{
 		scope = 1;
 		author = "jayman";
+		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "asdg_OpticRail_UK3CB_BAF_L115";
+				item = "RKSL_optic_PMII_525";
+			};
+		};
+	};
+	class UK3CB_BAF_L115A3_Ghillie;
+	class twc_l115a3_gh: UK3CB_BAF_L115A3_Ghillie
+	{
+		scope = 1;
+		author = "jayman";
+		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -200,7 +297,7 @@ class cfgWeapons
 		magazines[] = {"twc_l5a4_w"};
 	};
 	
-	class rhs_weap_ak74m_Base_F;
+	
 	class rhs_weap_akm: rhs_weap_ak74m_Base_F
 	{
 		magazines[] = {"CUP_30Rnd_762x39_AK47_M", "rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm_tracer", "rhs_30Rnd_762x39mm_89", "rhs_30Rnd_762x39mm_U"};
@@ -209,8 +306,154 @@ class cfgWeapons
 	class rhs_weap_ak74m;
 	class rhs_weap_svd: rhs_weap_ak74m
 	{
-		magazines[] = {"rhs_10Rnd_762x54mmR_7N1", "CUP_10Rnd_762x54_SVD_M"};
+		magazines[] = {"rhs_10Rnd_762x54mmR_7N1", "CUP_10Rnd_762x54_SVD_M", "twc_10Rnd_762x54mmR_7N1_P"};
 	};
+	
+	class rhs_weap_ak74m_zenitco01;
+	class rhs_weap_ak74m_zenitco01_b33: rhs_weap_ak74m_zenitco01
+	{
+		
+		magazines[] = {"rhsgref_30rnd_556x45_m21", "rhsgref_30rnd_556x45_m21_t"};
+		displayName = "wz.2004 Beryl";
+		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+	};
+	
+	
+	class twc_ak74_pol_base: rhs_weap_ak74m_zenitco01_b33
+	{
+		displayName = "wz.2004 Beryl";
+		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+		};
+	
+
+	class twc_ak74_pol: twc_ak74_pol_base
+	{
+		
+		displayName = "wz.2004 Beryl";
+		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_eotech_552";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhs_acc_2dpZenit";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhs_acc_dtk1";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="GripodSlot";
+				item="rhsusf_acc_grip3";
+			};
+		};
+	};
+	
+	class rhs_weap_ak74m_2mag_npz;
+	class twc_ak74_pol_2_base: rhs_weap_ak74m_2mag_npz
+	{
+		
+		magazines[] = {"rhsgref_30rnd_556x45_m21", "rhsgref_30rnd_556x45_m21_t"};
+	};
+	
+
+	class twc_ak74_pol_2: twc_ak74_pol_2_base
+	{
+		
+		displayName = "wz.2004 Beryl";
+		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_eotech_552";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhs_acc_2dpZenit";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="GripodSlot";
+				item="rhs_acc_dtk1";
+			};
+		};
+	};
+	
+	
+	class rhs_weap_ak74mr_gp25;
+	class twc_ak74_gp25_pol_base: rhs_weap_ak74mr_gp25
+	{
+		
+		magazines[] = {"rhsgref_30rnd_556x45_m21", "rhsgref_30rnd_556x45_m21_t"};
+	};
+	
+	
+
+	class twc_ak74_gp25_pol: twc_ak74_gp25_pol_base
+	{
+		
+
+		displayName = "wz.2004 Beryl (wz. 74)";
+		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_eotech_552";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhs_acc_2dpZenit";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhs_acc_dtk1";
+			};
+		};
+	};
+	
+	class rhs_weap_rpg7;
+	class twc_rpg_pol: rhs_weap_rpg7
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhs_acc_pgo7v3";
+			};
+		};
+	};
+	
+	
+	class rhs_weap_svdp_npz;
+	class twc_pol_svd: rhs_weap_svdp_npz
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_M8541_low";
+			};
+		};
+	};
+	
 	class rhs_weap_m4a1;
 	class twc_m4_acog_grip_laser: rhs_weap_m4a1
 	{
@@ -254,6 +497,105 @@ class cfgWeapons
 		};
 	};
 	
+	class rhs_weap_m24sws_blk;
+	class rhs_weap_m24sws_blk_ana: rhs_weap_m24sws_blk
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_M8541";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="UnderBarrelSlot";
+				item="rhsusf_acc_harris_swivel";
+			};
+		};
+	};
+	
+	class rhs_weap_M107;
+	class twc_rhs_weap_M107: rhs_weap_M107
+	{
+		accessories[] = {"rhsusf_acc_premier"};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_premier";
+			};
+		};
+	};
+	/////////////////////////
+	//adding scope turrets
+	
+	class ItemCore;
+	class RKSL_optic_LDS: ItemCore {
+	
+	
+		ACE_ScopeAdjust_Horizontal[] = {-4,4};
+		ACE_ScopeAdjust_HorizontalIncrement = 0.1;
+		ACE_ScopeAdjust_Vertical[] = {-10,10};
+		ACE_ScopeAdjust_VerticalIncrement = 0.1;
+		ACE_ScopeHeightAboveRail = 3.9386;
+		
+	};
+	
+	
+	
+	class UK3CB_BAF_SUSAT: ItemCore {
+	
+	
+		ACE_ScopeAdjust_Horizontal[] = {-4,4};
+		ACE_ScopeAdjust_HorizontalIncrement = 0.5;
+		ACE_ScopeAdjust_Vertical[] = {-10,10};
+		ACE_ScopeAdjust_VerticalIncrement = 0.5;
+		ACE_ScopeHeightAboveRail = 4.21386;
+		
+	};
+	
+	
+	
+	class UK3CB_BAF_TA648: ItemCore {
+	
+	
+		ACE_ScopeAdjust_Horizontal[] = {-4,4};
+		ACE_ScopeAdjust_HorizontalIncrement = 0.1;
+		ACE_ScopeAdjust_Vertical[] = {-10,10};
+		ACE_ScopeAdjust_VerticalIncrement = 0.1;
+		ACE_ScopeHeightAboveRail = 4.21386;
+		
+	};
+	
+	
+	
+	class UK3CB_BAF_Kite: ItemCore {
+	
+	
+		ACE_ScopeAdjust_Horizontal[] = {-4,4};
+		ACE_ScopeAdjust_HorizontalIncrement = 0.1;
+		ACE_ScopeAdjust_Vertical[] = {-10,10};
+		ACE_ScopeAdjust_VerticalIncrement = 0.1;
+		ACE_ScopeHeightAboveRail = 4.21386;
+		
+	};
+	
+	
+	class rhs_acc_sniper_base;
+	class rhs_acc_pso1m2: rhs_acc_sniper_base {
+	
+	
+		ACE_ScopeAdjust_Horizontal[] = {-4,4};
+		ACE_ScopeAdjust_HorizontalIncrement = 0.5;
+		ACE_ScopeAdjust_Vertical[] = {-10,10};
+		ACE_ScopeAdjust_VerticalIncrement = 0.5;
+		ACE_ScopeHeightAboveRail = 4.41386;
+		
+	};
+	
 	
 	/*
 	class rhs_weapon_base;
@@ -279,10 +621,14 @@ class cfgWeapons
 	class rhs_weap_pkp;
 	class rhs_weap_pkm: rhs_weap_pkp
 	{
+		recoil = "twc_mg_762";
+		recoilProne = "twc_mg_prone";
 		magazines[] = {"rhs_100Rnd_762x54mmR", "rhs_100Rnd_762x54mmR_green", "rhs_100Rnd_762x54mmR_7N13", "rhs_100Rnd_762x54mmR_7N26", "rhs_100Rnd_762x54mmR_7BZ3", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"};
 	};
 	
+
 };
+
 
 
 
@@ -305,7 +651,32 @@ class cfgmagazines{
 		{
 			ammo = rhs_40mm_white;
 			displayName="L5A4 Round (White)";
-		};			
+		};	
+		
+		class rhs_10Rnd_762x54mmR_7N1;
+		class twc_10Rnd_762x54mmR_7N1_P : rhs_10Rnd_762x54mmR_7N1
+		{
+			tracersEvery = 1;
+			displaynameshort = "7N1-P";
+			descriptionShort = "Caliber: 7.62x54mmR Tracer<br />Rounds: 10<br />Used in: SVD";
+			displayName = "7N1-P 10Rnd SVD Mag";
+		};	
+
+
+		class CA_Magazine;
+		class 10Rnd_RHS_50BMG_Box: CA_Magazine {
+			mass = 48;
+		};
+		
+		class rhsgref_30rnd_556x45_m21: CA_Magazine {
+			descriptionshort = "Caliber: 5.56x45mm<br />Rounds: 30";
+			displayName = "5.56mm 30rnd Mag";
+		};
+		
+		class rhsgref_30rnd_556x45_m21_t: rhsgref_30rnd_556x45_m21 {
+			descriptionshort = "Caliber: 5.56x45mm Tracer<br />Rounds: 30";
+			displayName = "5.56mm 30rnd Tracer Mag";
+		};
 };	
 
 

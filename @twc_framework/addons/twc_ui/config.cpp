@@ -7,7 +7,8 @@ class CfgPatches {
 		
 		requiredAddons[] = {
 			"cba_main",
-			"A3_Modules_F"
+			"A3_Modules_F",
+			"A3_Dubbing_Radio_F"
 		};
 		
 		author = "Bosenator";
@@ -15,7 +16,7 @@ class CfgPatches {
 		url = "http://thewreckingcrew.eu";
 		version = 1;
 		versionStr = "1";
-    };
+	};
 };
 
 class CfgFunctions {
@@ -44,3 +45,4 @@ class CfgFunctions {
 
 #include "RscTitles.hpp"
 #include "DefaultVehicleSystemsDisplayManager.hpp"
+#include "RadioProtocolBase.hpp"

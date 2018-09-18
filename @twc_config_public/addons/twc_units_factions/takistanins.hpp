@@ -63,34 +63,44 @@
 
 	class Tak_twc_ins_Men_B1: Tak_twc_ins_Men_Base {
 		scope=2;
-		displayName="Bomber 1";
-		uniformClass="CUP_O_TKI_Khet_Jeans_04";
+		displayName="Rifleman (M4)";
+		uniformClass="CUP_O_TKI_Khet_Jeans_01";
 
 		linkedItems[]= {
+			"CUP_V_OI_TKI_Jacket4_05",
+			"H_ShemagOpen_khk",
 			"ItemWatch"
 		};
 		
 		respawnLinkedItems[]= {
+			"CUP_V_OI_TKI_Jacket4_05",
+			"H_ShemagOpen_khk",
 			"ItemWatch"
 		};
 		
 		weapons[]= {
+			"twc_rhs_weap_m4a1_acog_lazer",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]= {
+			"twc_rhs_weap_m4a1_acog_lazer",
 			"Throw",
 			"Put"
 		};
 
 		magazines[]= {
-			"CUP_handgrenade_RGD5",
-			"handgrenade"
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag"
 		};
 
 		Respawnmagazines[]= {
-			"CUP_handgrenade_RGD5",
-			"handgrenade"
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag"
 		};
 		
 		Items[]= { };
@@ -100,50 +110,55 @@
 	class Tak_twc_ins_Men_B2: Tak_twc_ins_Men_Base
 	{
 		scope=2;
-		displayName="Bomber 2";
-		uniformClass="CUP_O_TKI_Khet_Partug_03";
-		linkedItems[]=
-		{
+		displayName="Rifleman (M70)";
+		uniformClass="CUP_O_TKI_Khet_Partug_02";
+
+		linkedItems[]= {
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_OLI",
+			"CUP_H_TKI_Lungee_Open_01",
 			"ItemWatch"
 		};
-		respawnLinkedItems[]=
-		{
+		
+		respawnLinkedItems[]= {
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_OLI",
+			"CUP_H_TKI_Lungee_Open_01",
 			"ItemWatch"
 		};
-				weapons[]=
-		{
-		"Throw",
-		"Put"
+		
+		weapons[]= {
+			"rhs_weap_m70b1",
+			"Throw",
+			"Put"
 		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put"
+		respawnweapons[]= {
+			"rhs_weap_m70b1",
+			"Throw",
+			"Put"
 		};
-		magazines[]=
-		{
 
-			"CUP_handgrenade_RGD5",
-			"handgrenade"
+		magazines[]= {
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm"
 		};
-		Respawnmagazines[]=
-		{
 
-			"CUP_handgrenade_RGD5",
-			"handgrenade"
+		Respawnmagazines[]= {
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm"
 		};
-		Items[]=
-		{
-
-
-		};
-		respawntems[]=
-		{
-
-
-		};
+		
+		Items[]= { };
+		respawntems[]= { };
 	};
-
 	class Tak_twc_ins_Men_Bombmaker: Tak_twc_ins_Men_Base
 	{
 		scope=2;
@@ -444,46 +459,50 @@
 	class Tak_twc_ins_Men_R3: Tak_twc_ins_Men_Base
 	{
 		scope=2;
-		displayName="Rifleman (FAL)";
-		uniformClass="CUP_O_TKI_Khet_Partug_07";
+		displayName="Rifleman (SAvz)";
+		uniformClass="CUP_O_TKI_Khet_Partug_01";
 		linkedItems[]=
 		{
-			"CUP_H_TKI_SkullCap_02",
+			"H_Shemag_olive",
+			"CUP_V_I_RACS_Carrier_Rig_2",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_H_TKI_SkullCap_02",
+			"H_Shemag_olive",
+			"CUP_V_I_RACS_Carrier_Rig_2",
 			"ItemWatch"
 		};
 						weapons[]=
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_FNFAL"
+		"rhs_weap_savz58p"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-	"CUP_arifle_FNFAL"
+		"rhs_weap_savz58p"
 		};
 		magazines[]=
 		{
-		"CUP_20Rnd_762x51_FNFAL_M",
-		"CUP_20Rnd_762x51_FNFAL_M",
-		"CUP_20Rnd_762x51_FNFAL_M",
-		"CUP_20Rnd_762x51_FNFAL_M",
-		"CUP_20Rnd_762x51_FNFAL_M",
+		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm_Savz58",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"CUP_20Rnd_762x51_FNFAL_M",
-		"CUP_20Rnd_762x51_FNFAL_M",
-		"CUP_20Rnd_762x51_FNFAL_M",
-		"CUP_20Rnd_762x51_FNFAL_M",
-		"CUP_20Rnd_762x51_FNFAL_M",
+		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm_Savz58",
 		"SmokeShell"
 		};
 		Items[]=

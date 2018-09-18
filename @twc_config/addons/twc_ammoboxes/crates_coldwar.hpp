@@ -27,7 +27,7 @@ class TWC_AmmoBox_ColdWar_Base: TWC_AmmoBox_Base {
 	};
 	
 	class TransportMagazines {
-		maga_nc(ukcw_34_rnd_sterling_mag, 20);
+		maga_nc(SP_30Rnd_9x19_L2A3_Sterling, 20);
 
 		// L1A1 SLR
 		maga_nc(UK3CB_BAF_762_20Rnd, 110);
@@ -70,7 +70,7 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 	};
 	
 	class TransportMagazines {
-		maga_nc(ukcw_34_rnd_sterling_mag, 6);
+		maga_nc(SP_30Rnd_9x19_L2A3_Sterling, 6);
 
 		// L1A1 SLR
 		maga_nc(UK3CB_BAF_762_20Rnd, 20);
@@ -137,6 +137,6 @@ class TWC_AmmoBox_ColdWar_Blowpipe_Portable: TWC_AmmoBox_Portable {
 	};
 	
 	class TransportMagazines {
-		maga_nc(ukcw_blowpipe_missile, 4);
+		maga_nc(SP_Blowpipe_round, 4);
 	};
 };

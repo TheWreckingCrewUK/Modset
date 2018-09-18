@@ -16,6 +16,221 @@
 	class UK3CB_BAF_B_Bergen_OLI_SL_A;
 	class CUP_B_SLA_Medicbag;
 	class UK3CB_BAF_B_Carryall_OLI;
+	class CUP_B_ACRScout_m95;
+	class UK3CB_BAF_B_Kitbag_OLI;
+	
+	
+	class pol_backpack_rif: CUP_B_ACRScout_m95
+	{
+		scope = 1;
+		
+		class TransportMagazines
+		{
+			class _xx_mag
+			{
+				magazine = "rhsgref_30rnd_556x45_m21";
+				count = 5;
+			};
+
+		};
+		
+	};
+	
+	
+	
+	class pol_backpack_rpg: CUP_B_RPGPack_Khaki
+	{
+		scope = 1;
+		
+		class TransportMagazines
+		{
+			class _xx_og7
+			{
+				magazine = "rhs_rpg7_PG7VL_mag";
+				count = 1;
+			};
+			
+			class _xx_pg7
+			{
+				magazine = "rhs_rpg7_TBG7V_mag";
+				count = 1;
+			};
+		};
+		
+	};
+	
+	
+	
+	
+	class pol_backpack_mg: UK3CB_BAF_B_Kitbag_OLI
+	{
+		scope = 1;
+		
+		class TransportMagazines
+		{
+			class _xx_pkm
+			{
+				magazine = "rhs_100Rnd_762x54mmR_7N26";
+				count = 4;
+			};
+			
+		};
+		
+	};
+	
+		class pol_backpack_leader: UK3CB_BAF_B_Bergen_OLI_SL_A
+	{
+		scope = 1;
+		
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 2;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "SmokeShellRed";
+				count = 3;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "SmokeShellBlue";
+				count = 3;
+			};
+		};
+		
+	};
+	
+			class pol_backpack_2ic: UK3CB_BAF_B_Carryall_OLI
+	{
+		scope = 1;
+		
+
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 2;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "SmokeShellRed";
+				count = 3;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 3;
+			};
+			class _xx_Smoke_Blue
+			{
+				magazine = "SmokeShellBlue";
+				count = 3;
+			};
+			class _xx_stanag
+			{
+				magazine = "rhsgref_30rnd_556x45_m21";
+				count = 5;
+			};
+			class _xx_m21
+			{
+				magazine = "rhs_100Rnd_762x54mmR_green";
+				count = 2;
+			};
+			class _xx_40mm
+			{
+				magazine = "rhs_VOG25";
+				count = 10;
+			};
+		};
+		
+	};
+
+	
+	
+		class pol_backpack_medic: UK3CB_BAF_B_Kitbag_OLI
+	{
+		scope = 1;
+		class TransportItems
+		{
+            class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 12;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 10;
+			};
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 15;
+			};
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 6;
+			};
+			class _xxACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _xxACE_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 15;
+			};
+			class _xxACE_surgKit
+			{
+				name = "ACE_surgicalKit";
+				count = 1;
+			};
+			class _xxACE_personalAidKit
+			{
+				name = "ACE_personalAidKit";
+				count = 1;
+			};
+			class _xxACE_salineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 6;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 4;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 4;
+			};
+		};
+	};
+
+	
 	
 		class nac_backpack_medic: CUP_B_SLA_Medicbag
 	{
@@ -51,6 +266,11 @@
 			{
 				name = "ACE_packingBandage";
 				count = 15;
+			};
+			class _xxACE_surgKit
+			{
+				name = "ACE_surgicalKit";
+				count = 1;
 			};
 			class _xxACE_personalAidKit
 			{
@@ -232,6 +452,11 @@
 			{
 				name = "ACE_packingBandage";
 				count = 15;
+			};
+			class _xxACE_surgKit
+			{
+				name = "ACE_surgicalKit";
+				count = 1;
 			};
 			class _xxACE_personalAidKit
 			{
@@ -762,6 +987,11 @@
 			{
 				name = "ACE_packingBandage";
 				count = 15;
+			};
+			class _xxACE_surgKit
+			{
+				name = "ACE_surgicalKit";
+				count = 1;
 			};
 			class _xxACE_personalAidKit
 			{

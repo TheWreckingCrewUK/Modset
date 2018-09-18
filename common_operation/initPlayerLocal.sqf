@@ -13,6 +13,7 @@ if (!isNil "completedTasks") then {
 if (isMultiplayer) then {
 	[] Spawn {
 		waitUntil{!(isNil "BIS_fnc_init")};
+		enableRadio false;
 		playMusic "Theme";
 		titleCut ["", "BLACK FADED", 999];
 		
@@ -57,10 +58,11 @@ if (isMultiplayer) then {
 	};
 };
 
-player createDiarySubject ["Intel", "Intel"];
+player createDiarySubject ["Intel", "Radio Messages"];
+player createDiarySubject ["Convo", "Conversations Log"];
 
 if (!(isNil "twc_JIP_CommandMessage")) then {
 	{
-		player createDiaryRecord ["Diary", ["Intel", _x]];
+		player createDiaryRecord ["Diary", ["Radio Message", _x]];
 	} forEach twc_JIP_CommandMessage;
 };

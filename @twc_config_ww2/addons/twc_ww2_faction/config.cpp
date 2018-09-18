@@ -7,6 +7,8 @@ class CfgPatches {
 			"WW2_British_Medic",
 			"WW2_British_Section_Leader",
 			"WW2_British_Rifleman",
+			"WW2_British_Marksman",
+			"WW2_British_SMG",
 			"WW2_British_2IC",
 			"WW2_British_MG",
 			"WW2_British_MGASS",
@@ -20,6 +22,8 @@ class CfgPatches {
 			"WW2_Para_British_Medic",
 			"WW2_Para_British_Section_Commander",
 			"WW2_Para_British_Rifleman",
+			"WW2_Para_British_Marksman",
+			"WW2_Para_British_SMG",
 			"WW2_Para_British_2IC",
 			"WW2_Para_British_MG",
 			"WW2_Para_British_MGASS",
@@ -36,33 +40,26 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"A3_Characters_F_BLUFOR",
-			"A3_Characters_F_OPFOR"
+			"A3_Characters_F_OPFOR",
+			"twc_faction"
 		};
 	};
 };
 
 class EventHandlers;
 class CfgEditorSubCategories {
-	class Men_WW2 {
-		displayName = "Regular (Late)";
+	class TWC_Infantry_WW2_1956 {
+		displayName = "Infantry (1956)";
 	};
 
-	class Men_WW2_Para {
-		displayName = "Paratroopers (Late)";
-	};
-
-	class Men_1956 {
-		displayName = "Regular (1956)";
-	};
-
-	class Regular_Early_WW2 {
-		displayName = "Regular (Early)";
+	class TWC_Infantry_WW2_Early {
+		displayName = "Infantry (Pre 42)";
 	};
 };
 
 class CfgFactionClasses {
 	class twc_faction_independent {
-		displayName = "TWC WW2 Operation Units";
+		displayName = "TWC Operations - WW2";
 		author = "Saxon, Bosenator, Rik";
 		icon = "TWClogo.paa";
 		priority = 2;
@@ -75,15 +72,22 @@ class CfgVehicles {
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 
-	#include "ww2.hpp"
-	#include "1956.hpp"
-	#include "ww2_para.hpp"
-	#include "backpacks.hpp"
+	#include "base_units.hpp"
 
-	#include "early\regular.hpp"
+	#include "early\infantry.hpp"
+	#include "early\backpacks.hpp"
+	#include "late\infantry.hpp"
+	#include "late\backpacks.hpp"
+	#include "late\paratroopers.hpp"
+	//#include "1956\infantry.hpp"
+	
+	#include "aussie\backpacks.hpp"
 };
 
 // class fow_b_uk_p37_blanco;
 class CfgWeapons {
-	#include "vests.hpp"
+	class ItemCore;
+	class VestItem;
+
+	#include "aussie\vests.hpp"
 };

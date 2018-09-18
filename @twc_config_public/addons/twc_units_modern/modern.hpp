@@ -85,7 +85,7 @@
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Section Leader@Alpha Section";
+		displayName="Section Leader @British Army";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
@@ -160,7 +160,7 @@
 	class Modern_British_Quartermaster: Modern_British_Base
 	{
 		scope=2;
-		displayName="Quartermaster";
+		displayName="Quartermaster @Management";
 		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_quartermaster";
@@ -229,23 +229,13 @@
 		};
 		
 
-			
-			class ACE_SelfActions:B_Soldier_base_F {
-				class base_Interact {
-					displayName = "Base";
-					condition = "true";
-					exceptions[] = {};
-					statement = "true";
-				};
-            
-        };
 	};
 
 
 	class Modern_British_Rifleman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Rifleman";
+		displayName="Rifleman";
 		backpack="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		weapons[]=
 		{
@@ -295,7 +285,7 @@
 	class Modern_British_Grenadier: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Grenadier";
+		displayName="Grenadier";
 		icon="iconManExplosive";
 		backpack="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		linkedItems[]=
@@ -386,7 +376,7 @@
 	class Modern_British_Autorifleman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Automatic Rifleman";
+		displayName="Automatic Rifleman";
 		icon="iconManMG";
 		backpack="TWC_Backpack_Modern_Autorifleman_Kitbag";
 		linkedItems[]=
@@ -438,7 +428,7 @@
 	};
 	class Modern_British_2IC: Modern_British_Rifleman
 	{
-		displayName="Alpha 2IC";
+		displayName="2IC";
 		backpack="TWC_Backpack_Modern_2IC";
 		weapons[]=
 		{
@@ -492,7 +482,7 @@
 	class Modern_British_Machinegunner: Modern_British_Autorifleman
 	{
 		scope=2;
-		displayName="Alpha Machine Gunner";
+		displayName="Machine Gunner";
 		backpack="TWC_Backpack_Modern_MachineGunner_Kitbag";
 		weapons[]=
 		{
@@ -534,7 +524,7 @@
 	class Modern_British_Marksman: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Marksman";
+		displayName="Marksman";
 		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		linkedItems[]=
 		{
@@ -604,33 +594,50 @@
 	class Modern_British_Platoon_Commander: Modern_British_Squadleader
 	{
 		scope=2;
-		displayName="Platoon Commander (Modern)";
-		icon="iconManLeader";
+		displayName="Platoon Commander @HQ";
+		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_Holster",
-			"UK3CB_BAF_H_Mk7_Camo_D",
+			"UK3CB_BAF_V_Osprey_SL_A",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"UK3CB_BAF_H_Mk7_Camo_B",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_SL_A",
+			"UK3CB_BAF_H_Mk7_Camo_B",
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
 			"ItemWatch"
 		};
-		respawnLinkedItems[]=
+		weapons[]=
 		{
-			"UK3CB_BAF_V_Osprey_Holster",
-			"UK3CB_BAF_H_Mk7_Camo_D",
-			"ItemMap",
-			"ItemcTab",
-			"ItemCompass",
-			"ItemWatch"
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN",
+			"rhsusf_weap_glock17g4"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"ACE_Vector",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN",
+			"rhsusf_weap_glock17g4"
 		};
 	};
 	class Modern_British_Platoon_Sergeant: Modern_British_Platoon_Commander
 	{
 		scope=2;
-		displayName="Platoon Sergeant (Modern)";
+		displayName="Platoon Sergeant";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
 		icon="iconMan";
-		backpack="TWC_Backpack_Modern_Platoon_Sergeant";
 	};
 	class Modern_British_Platoon_Mortar: Modern_British_Rifleman
 	{
@@ -681,7 +688,7 @@
 	class Modern_British_Medic: Modern_British_Base
 	{
 		scope=2;
-		displayName="Alpha Medic";
+		displayName="Medic";
 		icon="iconManMedic";
 		backpack="TWC_Backpack_Modern_Medic";
 		attendant = 1;
@@ -718,6 +725,8 @@
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
@@ -726,6 +735,8 @@
 		};
 		Respawnmagazines[]=
 		{
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -745,12 +756,13 @@
 			init = "if(local (_this select 0)) then{(_this select 0) setVariable [""twc_isMolar"",true]};";
 		};
 	};
+
 	class Modern_British_HeliPilot: Modern_British_Base
 	{
 		scope=2;
 		displayName="Helicopter Pilot";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
-		backpack="TWC_Backpack_Modern_HeloPilot";
+		backpack="";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -795,14 +807,113 @@
 			"SmokeShell",
 			"SmokeShell"
 		};
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACRE_PRC148",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
+		respawnitems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACRE_PRC148",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
 	};
 
 class Modern_British_crewchief:Modern_British_HeliPilot
 {
 		scope=2;
 		displayName="Helicopter Crew Chief";
-		backpack="TWC_Backpack_Modern_HeloPilot";
+		backpack="";
+		linkedItems[]=
+		{
+			"H_PilotHelmetHeli_B",
+			"UK3CB_BAF_V_Pilot_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"itemCTAB"
+		};
+		respawnLinkedItems[]=
+		{
+			"H_PilotHelmetHeli_B",
+			"UK3CB_BAF_V_Pilot_A",
+			"ItemMap",		
+			"ItemCompass",
+			"ItemWatch",
+			"itemCTAB"
+		};
 };
+	class Modern_British_MERT_HeliPilot: Modern_British_HeliPilot
+	{
+		scope=2;
+		displayName="MERT Helicopter Pilot";
+		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		backpack="";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Pilot_A",
+			"CUP_H_BAF_Helmet_Pilot",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"itemCTAB"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Pilot_A",
+			"CUP_H_BAF_Helmet_Pilot",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"itemCTAB"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"SmokeShell",
+			"SmokeShell"
+		};
+	};
 
 	class Modern_British_JetPilot: Modern_British_Base
 	{
@@ -864,12 +975,12 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 	class Modern_British_Sniper: Modern_British_Base {
 		scope=2;
 		displayName="Sniper";
-		uniformClass="U_B_FullGhillie_sard";
+		uniformClass="CUP_U_B_BAF_DPM_Ghillie";
 		icon="iconManLeader";
+		twc_nobackpack = 1;
 		backpack="";
 		linkedItems[]= {
 			"UK3CB_BAF_V_PLCE_Webbing_MTP",
-			"UK3CB_BAF_H_Mk7_Scrim_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -877,7 +988,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 
 		respawnLinkedItems[]= {
 			"UK3CB_BAF_V_PLCE_Webbing_MTP",
-			"UK3CB_BAF_H_Mk7_Scrim_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -899,7 +1009,9 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_338_5Rnd",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
@@ -910,7 +1022,9 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_338_5Rnd",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell",
@@ -920,31 +1034,10 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 	};
 
-	class Modern_British_Spotter: Modern_British_Base {
+	class Modern_British_Spotter: Modern_British_Sniper {
 		scope=2;
 		displayName="Spotter";
-		uniformClass="U_B_FullGhillie_sard";
 		icon="iconManLeader";
-		backpack="TWC_Backpack_Modern_Spotter_coin";
-		linkedItems[]= {
-			"UK3CB_BAF_V_PLCE_Webbing_MTP",
-			"UK3CB_BAF_H_Mk7_Scrim_A",
-			"ItemMap",
-			"ItemcTab",
-			"ItemCompass",
-			"ACE_Vector",
-			"ItemWatch"
-		};
-
-		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_PLCE_Webbing_MTP",
-			"UK3CB_BAF_H_Mk7_Scrim_A",
-			"ItemMap",
-			"ItemcTab",
-			"ItemCompass",
-			"ACE_Vector",
-			"ItemWatch"
-		};
 
 		Items[]= {
 			"ACE_Kestrel4500",
@@ -1168,12 +1261,155 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		magazines[]=
 		{
 			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd"
 		};
 		Respawnmagazines[]=
 		{
 			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd"
+		};
+	};
+	class Modern_British_Medic_Mert: Modern_British_Base
+	{
+		scope=2;
+		displayName="MERT Medic";
+		icon="iconManMedic";
+		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		attendant = 1;
+		twc_nobackpack = 1;
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Medic_C",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Medic_C",
+			"UK3CB_BAF_H_Mk7_Camo_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		items[]=
+		{
+			"ACE_personalAidKit",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
+		Respawnitems[]=
+		{
+			"ACE_personalAidKit",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_epinephrine",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
 		};
 	};
 	class Modern_British_VehicleCrew: Modern_British_Base
@@ -1181,6 +1417,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		scope=2;
 		displayName="Armour Crewman";
 		icon="iconMan";
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_CrewHelmet_A",
@@ -1229,7 +1466,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		displayName="Armour Commander";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		backpack="TWC_Backpack_Modern_HeloPilot";
+		backpack="";
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{	
 			"UK3CB_BAF_H_CrewHelmet_ESS_A",
@@ -1261,6 +1499,62 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L22A2"
+		};
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACRE_PRC148",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
+		respawnitems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACRE_PRC148",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
 		};
 	};
 
@@ -1551,3 +1845,4 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_TShirt";
 		
 	};
+	

@@ -219,6 +219,14 @@ class CfgEditorSubCategories
 	{
 		displayName="Men (Generic Heavy)";
 	};
+	class Men_twc_woodland
+	{
+		displayName="Men (Woodland)";
+	};
+	class Men_twc_desert
+	{
+		displayName="Men (Desert)";
+	};
 
 };
 class CfgFactionClasses
@@ -268,6 +276,12 @@ class CfgFactionClasses
 	class ana_units
 	{
 		displayName="Afghan National Army";
+		priority=2;
+		side=1;
+	};
+	class pol_units
+	{
+		displayName="Polish Military Forces";
 		priority=2;
 		side=1;
 	};

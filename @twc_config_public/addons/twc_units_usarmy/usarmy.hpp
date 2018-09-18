@@ -70,6 +70,7 @@
 			"rhsusf_iotv_ocp_Squadleader",
 			"rhsusf_ach_helmet_headset_ess_ocp",
 			"ItemMap",
+			"ItemGPS",
 			"ItemCompass",
 			"ItemWatch"
 		};
@@ -78,6 +79,7 @@
 			"rhsusf_iotv_ocp_Squadleader",
 			"rhsusf_ach_helmet_headset_ess_ocp",
 			"ItemMap",
+			"ItemGPS",
 			"ItemCompass",
 			"ItemWatch"
 		};
@@ -717,7 +719,7 @@
 		class TWC_2000_US_Army_SectionCommander:TWC_2000_US_Army_Base
 	{
 		scope=2;
-		displayName="Section Commander (00's US Army)";
+		displayName="Section Commander @US Army";
 		backpack="TWC_Backpack_2000_US_Army_SL";
 		linkedItems[]=
 		{
@@ -783,7 +785,7 @@
 	class TWC_2000_US_Army_TeamLeader:TWC_2000_US_Army_Base
 	{
 		scope=2;
-		displayName="Team Leader (00's US Army)";
+		displayName="Team Leader";
 		linkedItems[]=
 		{
 			"rhsusf_iotv_ucp_Teamleader",
@@ -865,7 +867,7 @@
 	class TWC_2000_US_Army_Rifleman:TWC_2000_US_Army_Base
 	{
 		scope=2;
-		displayName="Rifleman (00's US Army)";
+		displayName="Rifleman";
 		linkedItems[]=
 		{
 			"rhsusf_iotv_ucp_Rifleman",
@@ -929,7 +931,7 @@
 	class TWC_2000_US_Army_Grenadier:TWC_2000_US_Army_Base
 	{
 		scope=2;
-		displayName="Grenadier (00's US Army)";
+		displayName="Grenadier";
 		linkedItems[]=
 		{
 			"rhsusf_iotv_ucp_Grenadier",
@@ -1009,7 +1011,7 @@
 	class TWC_2000_US_Army_AutomaticRifleman:TWC_2000_US_Army_Base
 	{
 		scope=2;
-		displayName="Automatic Rifleman (00's US Army)";
+		displayName="Automatic Rifleman";
 		backpack="TWC_Backpack_2000_US_Army_AR";
 		linkedItems[]=
 		{
@@ -1068,7 +1070,7 @@
 	class TWC_2000_US_Army_Marksman:TWC_2000_US_Army_Base
 	{
 		scope=2;
-		displayName="Marksman (00's US Army)";
+		displayName="Marksman";
 		linkedItems[]=
 		{
 			"rhsusf_iotv_ucp_Rifleman",
@@ -1189,7 +1191,7 @@
 	class TWC_2000_US_Army_Medic:TWC_2000_US_Army_Base
 	{
 		scope=2;
-		displayName="Medic (00's US Army)";
+		displayName="Medic";
 		backpack="TWC_Backpack_2000_US_Army_Medic";
 		attendant = 1;
 		linkedItems[]=

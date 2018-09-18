@@ -1,7 +1,23 @@
 class ACE_Medical_Actions {
 	class Advanced {
-		class fieldDressing;
-		class CPR: fieldDressing {
+		class Bandage;
+		class FieldDressing: Bandage {
+			treatmentTime = 9;
+		};
+		
+		class QuikClot: FieldDressing {
+			treatmentTime = 4;
+		};
+		
+		class PackingBandage: FieldDressing {
+			treatmentTime = 6;
+		};
+		
+		class ElasticBandage: FieldDressing {
+			treatmentTime = 15;
+		};
+		
+		class CPR: FieldDressing {
 			callbackSuccess = "twc_medical_fnc_action";
 			animationCaller = "AinvPknlMstpSnonWnonDr_medic0";
 			animationCallerProne = "AinvPknlMstpSnonWnonDr_medic0";
@@ -19,23 +35,16 @@ class ACE_Medical_Actions {
 			patientStateCondition = 1;
 			callbackSuccess = "twc_medical_fnc_action_Defib";
 		};
-
+		
 		class CheckPulse;
 		class LogDebug: CheckPulse {
 			displayName = "Medical to RPT (DEBUG)";
 			displayNameProgress = "Logging Medical State";
 			callbackSuccess = "twc_medical_fnc_logToRPT";
+			condition = "false"; // comment out to re-enable
 		};
 		
-		class QuikClot: fieldDressing {
-			treatmentTime = 5;
-		};
-		
-		class ElasticBandage: fieldDressing {
-			treatmentTime = 12;
-		};
-		
-		class BloodIV: fieldDressing{};
+		class BloodIV: FieldDressing{};
 		
 		class BloodIV_250: BloodIV {
 			allowSelfTreatment = 1;
@@ -49,8 +58,32 @@ class ACE_Medical_Actions {
 			allowSelfTreatment = 1;
 		};
 		
-		class Tourniquet: fieldDressing {
+		class Tourniquet: FieldDressing {
 			treatmentTime = 2;
+		};
+		
+		class SutureKit: FieldDressing {
+			displayName = "Use Suture Kit";
+			displayNameProgress = "Suturing";
+			condition = "twc_medical_fnc_canSuture";
+
+			// custom handler for items check, to ignore shared gear
+			items[] = {};
+			treatmentLocations[] = {"All"};
+			allowedSelections[] = {"All"};
+			allowSelfTreatment = 0;
+			requiredMedic = 1;
+			treatmentTime = "twc_medical_fnc_sutureKitTime";
+			callbackSuccess = "twc_medical_fnc_sutureKitSuccess";
+			callbackProgress = "twc_medical_fnc_sutureKitProgress";
+			callbackFailure = "twc_medical_fnc_sutureKitFailure";
+			itemConsumed = 0;
+			animationCaller = "AinvPknlMstpSnonWnonDnon_medic1";
+
+			litter[] = {
+				{"All", "", {"ACE_MedicalLitter_gloves"}},
+				{"All", "", {{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}}
+			};
 		};
 	};
 };
