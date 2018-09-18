@@ -139,7 +139,8 @@
 	{
 		scope=2;
 		displayName="Rifleman(90`s Woodland)";
-		backpack="TWC_Backpack_1990_Rifleman";
+		backpack="";
+		twc_nobackpack = 1;
 		weapons[]=
 		{
 			"Throw",
@@ -186,6 +187,7 @@
 		scope=2;
 		displayName="Rifleman AT";
 		backpack="";
+		twc_nobackpack = 1;
 		weapons[]=
 		{
 			"Throw",
@@ -283,6 +285,7 @@
 	{
 		displayName="2IC";
 		backpack="TWC_Backpack_1990_2IC";
+		twc_nobackpack = 0;
 	};
 	
 			class 1990_British_MachineGunner: 1990_British_Gunner
@@ -319,6 +322,7 @@
 	{
 		displayName="GPMG Assistant";
 		backpack="TWC_Backpack_1990_machineGunner";
+		twc_nobackpack = 0;
 	};
 	
 
@@ -328,6 +332,7 @@
 		scope=2;
 		displayName="Platoon Commander @HQ";
 		backpack="";
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{
 			"rhsgref_alice_webbing",
@@ -441,6 +446,7 @@
 	{
 		displayName="Platoon Sergeant";
 		backpack="TWC_Backpack_1990_Platoon_Sergeant";
+		twc_nobackpack = 0;
 		linkedItems[]=
 		{
 			"rhsgref_alice_webbing",
@@ -863,6 +869,7 @@
 	{
 		displayName="Vehicle Crew";
 		backpack="";
+		twc_nobackpack = 1;
 	};
 //////////////////////////////////////////////////////////////////
 //                                                              //
@@ -952,6 +959,7 @@
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
 		backpack="";
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
@@ -976,6 +984,7 @@
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
 		backpack="";
+		twc_nobackpack = 1;
 						weapons[]=
 		{
 		"Throw",
@@ -1061,6 +1070,7 @@
 		vehicleClass="Men_1990D";
 		uniformClass="UK3CB_BAF_U_Smock_DPMW_DDPM";
 		backpack="";
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{
 			"rhsgref_alice_webbing",
@@ -1086,6 +1096,7 @@
 		vehicleClass="Men_1990D";
 		uniformClass="UK3CB_BAF_U_Smock_DPMW_DDPM";
 		backpack="TWC_Backpack_1990_Platoon_Sergeant";
+		twc_nobackpack = 0;
 		linkedItems[]=
 		{
 			"rhsgref_alice_webbing",
@@ -1403,6 +1414,7 @@
 		scope = 2;
 		vehicleClass="Men_1990RM";
 		backpack="";
+		twc_nobackpack = 1;
 
 	};
 	class 1990_RM_British_Rifleman_AT_Mix: 1990_RM_base
@@ -1412,6 +1424,7 @@
 		scope = 2;
 		vehicleClass="Men_1990RM";
 		backpack="";
+		twc_nobackpack = 1;
 						weapons[]=
 		{
 		"Throw",
@@ -1571,6 +1584,7 @@
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		backpack="";
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_Pilot_DDPM",
@@ -1679,6 +1693,7 @@
 		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		backpack="";
+		twc_nobackpack = 1;
 		vehicleClass="Men_1990D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
@@ -1948,6 +1963,7 @@
 		vehicleClass="Men_1990D";
 		uniformClass="TWC_Smock_Desert";
 		backpack="TWC_Backpack_1990_machineGunner_Desert";
+		twc_nobackpack = 0;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",

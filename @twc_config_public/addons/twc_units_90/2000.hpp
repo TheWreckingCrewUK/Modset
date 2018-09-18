@@ -85,6 +85,7 @@
 		icon="iconManLeader";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW_ShortSleeve";
 		backpack="";
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{
 			"CUP_V_B_RRV_Officer",
@@ -212,6 +213,7 @@
 		scope=2;
 		displayName="Platoon Sergeant";
 		backpack="TWC_Backpack_1990_Platoon_Sergeant";
+		twc_nobackpack = 0;
 	};
 	class 2000_British_SectionCommander: 2000_British_Base
 	{
@@ -293,6 +295,7 @@
 		scope=2;
 		displayName="Rifleman";
 		backpack="";
+		twc_nobackpack = 1;
 		weapons[]=
 		{
 			"Throw",
@@ -342,6 +345,7 @@
 		scope=2;
 		displayName="Grenadier";
 		backpack="";
+		twc_nobackpack = 1;
 		weapons[]=
 		{
 			"Throw",
@@ -425,12 +429,14 @@
 	{
 		displayName="2IC";
 		backpack="TWC_Backpack_2000_2IC";
+		twc_nobackpack = 0;
 	};
 	
 			class 2000_British_MachineGunner: 2000_British_Gunner
 	{
 		displayName="GPMG Gunner";
 		backpack="";
+		twc_nobackpack = 1;
 				weapons[]=
 		{
 		"Throw",
@@ -461,6 +467,7 @@
 	{
 		displayName="GPMG Assistant";
 		backpack="TWC_Backpack_2000_machineGunner";
+		twc_nobackpack = 0;
 	};
 	
 
@@ -510,6 +517,7 @@
 		scope=2;
 		displayName="Helicopter Pilot";
 		backpack="";
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -882,6 +890,7 @@
 		scope=2;
 		uniformClass="UK3CB_BAF_U_Smock_DPMW_OLI";
 		backpack="";
+		twc_nobackpack = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_CrewHelmet_DPMW_A",
@@ -1064,6 +1073,7 @@
 		uniformClass="CUP_U_B_BAF_DPM_Ghillie";
 		icon="iconManLeader";
 		backpack="";
+		twc_nobackpack = 1;
 		linkedItems[]= {
 			"UK3CB_BAF_V_PLCE_Webbing_OLI",
 			"ItemMap",
@@ -1173,6 +1183,7 @@
 		uniformClass="CUP_U_B_BAF_DPM_Ghillie";
 		icon="iconManLeader";
 		backpack="";
+		twc_nobackpack = 1;
 		weapons[]= {
 			"Throw",
 			"Put",
@@ -1418,6 +1429,7 @@
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		backpack="";
+		twc_nobackpack = 1;
 						weapons[]=
 		{
 		"Throw",
@@ -1673,6 +1685,7 @@
 		faction="twc_public_baf";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
+		twc_nobackpack = 1;
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -1772,6 +1785,7 @@
 		faction="twc_public_baf";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
+		twc_nobackpack = 1;
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
@@ -1797,7 +1811,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT",
+		"twc_l96_d",
 		"ukcw_hipower"
 		};
 		respawnweapons[]=
@@ -1805,7 +1819,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"UK3CB_BAF_L85A2_SUSAT",
+		"twc_l96_d",
 		"ukcw_hipower"
 		};
 		magazines[]=
@@ -1817,11 +1831,10 @@
 		"ukcw_13rd_9x19",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
-		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -1834,11 +1847,10 @@
 		"ukcw_13rd_9x19",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
-		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
-		"UK3CB_BAF_556_30Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -1930,6 +1942,7 @@
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		backpack="TWC_Backpack_1990_machineGunner_Desert";
+		twc_nobackpack = 0;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_DDPM2",
@@ -1956,6 +1969,7 @@
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		backpack="";
+		twc_nobackpack = 1;
 				weapons[]=
 		{
 		"Throw",

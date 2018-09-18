@@ -9,6 +9,10 @@ class CfgPatches {
 			"cup_airvehicles_av8b",
 			"uk3cb_baf_weapons_smallarms",
 			"UK3CB_BAF_Vehicles",
+			"cup_wheeledvehicles_mastiff",
+			"cup_trackedvehicles_mcv80",
+			"uk3cb_baf_vehicles_landrover",
+			"uk3cb_baf_vehicles_coyote_jackal",
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds"
@@ -19,6 +23,19 @@ class CfgPatches {
 		version="1";
 		versionStr="1";
 		versionAr[]={1};
+	};
+};
+
+class CfgMagazines {
+	class 6Rnd_30mm_L21A1_APDS;
+	class 3Rnd_30mm_L21A1_APDS: 6Rnd_30mm_L21A1_APDS
+	{
+		count = 3;
+	};
+	class 6Rnd_30mm_L21A1_HE;
+	class 3Rnd_30mm_L21A1_HE: 6Rnd_30mm_L21A1_HE
+	{
+		count = 3;
 	};
 };
 
@@ -101,7 +118,10 @@ class CfgWeapons {
 		recoilProne = "twc_rifle_556_long_prone";
 	};
 	
-	class Rifle_Long_Base_F;
+	class Rifle_Long_Base_F:Rifle_Base_F
+	{
+		class eventhandlers;
+	};
 	
 	class UK3CB_BAF_L7A2: Rifle_Long_Base_F {
 		displayname = "L7A2 GPMG";
@@ -115,18 +135,91 @@ class CfgWeapons {
 		{
 			reloadTime = 0.08;
 		};
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];};twc_gpmglastfired = time;";
+		};
+	};
+	
+	class MGunCore;
+	class MGun: MGunCore
+	{
+		class eventhandlers;
+		class mode_fullauto;
+	};
+	class LMG_RCWS: MGun {
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 16) - 8, (velocity _bullet select 1) + (random 16) - 8, 	(velocity _bullet select 2) + (random 8) - 4];};twc_gpmglastfired = time;";
+		};
+	};
+	class GMG_F: MGun {
+		reloadtime = 0.22;
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4,  (velocity _bullet select 2) + (random 24) - 12];};twc_gpmglastfired = time;";
+		};
+	};
+	
+	class CannonCore;
+	class autocannon_Base_F: CannonCore
+	{
+		class eventhandlers;
+		class HE;
+	};
+	class autocannon_30mm_CTWS: autocannon_Base_F {
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
+		};
+	};
+	class L21A1_RARDEN: autocannon_Base_F {
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
+		};
+		magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE"};
+		magazineReloadTime = 1;
+		ReloadTime = 0.3;
+		autoReload = 0;
+	};
+	
+	class autocannon_40mm_CTWS: autocannon_Base_F
+	{
+		class HE;
+		class EventHandlers;
+	};
+	
+	class CUP_Rarden_CTWS_veh: autocannon_40mm_CTWS
+	{
+		magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE"};
+		magazineReloadTime = 1;
+		muzzles[] = {"HE"};
+		ReloadTime = 0.3;
+		autoReload = 0;
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
+		};
+		class HE: HE
+		{
+			magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE"};
+			magazineReloadTime = 1;
+			ReloadTime = 0.3;
+			autoReload = 0;
+		};
 	};
 	
 	class twc_L7A2: UK3CB_BAF_L7A2 {};
 
-	class UK3CB_BAF_L110_Base;
+	class UK3CB_BAF_L110_Base:Rifle_Long_Base_F
+	{
+		class eventhandlers;
+	};
 	class UK3CB_BAF_L110_556_Base: UK3CB_BAF_L110_Base
 	{
 		//recoil = "twc_rifle_556_long";
 		//recoilProne = "twc_rifle_556_long_prone";
 		class FullAuto;
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_minimilastfired') then {twc_minimilastfired = 0}; if (time > twc_minimilastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];};twc_minimilastfired = time;";
+		};
 	};
-	
+	/*
 	class UK3CB_BAF_L110A2RIS: UK3CB_BAF_L110_556_Base
 	{
 		class FullAuto:FullAuto {
@@ -140,7 +233,7 @@ class CfgWeapons {
 			dispersion = 0.003;
 		};
 	};
-	
+	*/
 	
 	
 	
@@ -242,7 +335,37 @@ class CfgVehicles {
 			
 	};	
 	
+	class Tank;
+	class Tank_F: Tank
+	{
+		class Turrets
+		{
+			class MainTurret;
+		};
+	};
 	
+	class CUP_MCV80_Base : Tank_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+			};
+		};
+	};
+	
+	class ukcw_cvrt_Scim_base : Tank_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+			};
+		};
+	};
+
 //handling modifications
 	class Car;
 	class Car_F: Car{
