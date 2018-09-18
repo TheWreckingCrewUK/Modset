@@ -56,7 +56,7 @@
 			"ACE_MapTools",
 			"ACE_EarPlugs"
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -87,7 +87,7 @@
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
-		displayName="Section Leader";
+		displayName="Section Commander";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
