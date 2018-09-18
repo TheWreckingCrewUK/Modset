@@ -25,7 +25,6 @@ class TWC_Vehicle_Generic_LandRoverAmbulance_Woodland: UK3CB_BAF_LandRover_Amb_G
 		ADD_ITEM(ACE_bloodIV, ADD_QNTY(20));
 		ADD_ITEM(ACE_bodyBag, ADD_QNTY(5));
 		ADD_ITEM(ACE_personalAidKit, 1); // always only one
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25, 2);
 	}; 
 	
 	class TransportMagazines { };
