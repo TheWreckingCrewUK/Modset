@@ -79,7 +79,7 @@ class CfgVehicles {
 	#include "late\infantry.hpp"
 	#include "late\backpacks.hpp"
 	#include "late\paratroopers.hpp"
-	#include "1956\infantry.hpp"
+	//#include "1956\infantry.hpp"
 	
 	#include "aussie\backpacks.hpp"
 };
