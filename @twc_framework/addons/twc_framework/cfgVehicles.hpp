@@ -1,5 +1,6 @@
 class cfgVehicles {
 	class Logic;
+	class ModuleOrdnanceMortar_F;
 	
 	class Module_Base: Logic {
 		class AttributesBase;
@@ -140,6 +141,10 @@ class cfgVehicles {
 				defaultValue=1;
 			};
 		};
+	};
+	
+	class twc_ModuleOrdnanceMortar_Dummy: ModuleOrdnanceMortar_F {
+		ammo = "twc_dummyround_artillery";
 	};
 	
 	class twc_moduelHC: Module_F {
@@ -384,6 +389,11 @@ class cfgVehicles {
 						name="HE";
 						value="HE";
 					};
+					class HE_Harmless
+					{
+						name="HE Harmless";
+						value="HE_Harmless";
+					};
 					class Smoke
 					{
 						name="Smoke";
@@ -584,6 +594,23 @@ class cfgVehicles {
 		};
 		class ModuleDescription: ModuleDescription {
 			description = "TWC Defend Function";
+			sync[] = {"AnyAI"};
+		};
+	};
+	
+	class TWC_Module_DummyBullets: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Harmless Static";
+		function = "twc_fnc_moduleDummyBullets";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\stationary_units_ca.paa";
+		functionPriority = 1;
+		class ModuleDescription: ModuleDescription {
+			description = "TWC Dummy Bullets Function";
 			sync[] = {"AnyAI"};
 		};
 	};

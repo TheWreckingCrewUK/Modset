@@ -14,6 +14,7 @@ class CfgFunctions {
 			class CreateTask{};
 			class daisyCutter{};
 			class Defend {};
+			class dummyBullets {};
 			class Flagchange {};
 			class intelHint{};
 			class intelHintWithVariable{};
@@ -60,6 +61,7 @@ class CfgFunctions {
 			class moduleArtillery{};
 			class moduleUpdateTask{};
 			class moduleDefend{};
+			class moduleDummyBullets {};
 			class moduleAirAssault{};
 			class moduleAttackPlane{};
 			class moduleCommandMessage{};

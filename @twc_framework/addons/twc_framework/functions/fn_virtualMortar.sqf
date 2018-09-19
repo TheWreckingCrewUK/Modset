@@ -21,7 +21,7 @@
 */
 
 
-if (isServer) then {	
+if (isServer) then {
 	Params ["_marker",["_radius",200],["_rounds",5],["_Roundselect",""],["_delay",10],["_safeArea", "nil"]];
 	_pos = [0, 0, 0];
 	if(typeName _marker == "STRING") then {_ps = getMarkerPos _marker};
@@ -30,6 +30,7 @@ if (isServer) then {
 	_Roundtype = 0;
 	switch (_Roundselect) do {
 		case "HE": {_Roundtype = "ModuleOrdnanceMortar_F";};
+		case "HE_Harmless": {_Roundtype = "twc_ModuleOrdnanceMortar_Dummy"};
 		case "SMOKE": {_Roundtype = "Smokeshell";};
 		case "ILLUM": {_Roundtype = "F_40mm_White";};
 		default { _Roundtype =  "ModuleOrdnanceMortar_F";};
