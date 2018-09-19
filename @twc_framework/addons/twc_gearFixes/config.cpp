@@ -128,6 +128,7 @@ class CfgWeapons {
 
 		recoil = "twc_mg_762";
 		recoilProne = "twc_mg_prone";
+		twc_openbolt = 1;
 		class WeaponSlotsInfo {
 			class asdg_OpticRail_UK3CB_BAF_L7A2 { };
 		};
@@ -209,11 +210,12 @@ class CfgWeapons {
 	class UK3CB_BAF_L110_Base:Rifle_Long_Base_F
 	{
 		class eventhandlers;
+		twc_openbolt = 1;
 	};
 	class UK3CB_BAF_L110_556_Base: UK3CB_BAF_L110_Base
 	{
-		//recoil = "twc_rifle_556_long";
-		//recoilProne = "twc_rifle_556_long_prone";
+		recoil = "twc_mg_556";
+		recoilProne = "twc_mg_556_prone";
 		class FullAuto;
 		class EventHandlers: EventHandlers {
 			fired = "if (isnil 'twc_minimilastfired') then {twc_minimilastfired = 0}; if (time > twc_minimilastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];};twc_minimilastfired = time;";
@@ -277,6 +279,21 @@ class cfgRecoils
 		temporary	= 0.1;
 	};
 	
+	class twc_mg_556
+	{
+		muzzleOuter[]	= { 0.07,  0.15,  0.02,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
+		kickBack[]	= { 0.03, 0.05 }; //min/max force
+		permanent	= 0.2; //muzzle climb post-recoil, means nothing when on bipod
+		temporary	= 0.05; //muzzle jump
+	};
+	class twc_mg_556_prone
+	{
+		muzzleOuter[]	= { 0.05,  0.1,  0.02,  0.1 };
+		kickBack[]	= { 0.03, 0.05 };
+		permanent	= 0.25;
+		temporary	= 0.1;
+	};
+	
 	class twc_rifle_762
 	{
 		muzzleOuter[]	= { 0.1,  0.5,  0.02,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
@@ -302,10 +319,10 @@ class cfgRecoils
 	
  class twc_mg_prone
 	{
-		muzzleOuter[]	= { 0.1,  0.1,  0.25,  0.45 };
+		muzzleOuter[]	= { 0.1,  0.1,  0.5,  0.45 };
 		kickBack[]	= { 0.06, 0.08 };
 		permanent	= 0.4;
-		temporary	= 0.2;
+		temporary	= 0.15;
 	};
 	
 	class twc_shotgun_1
