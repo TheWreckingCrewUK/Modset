@@ -364,6 +364,9 @@
 			"fow_8Rnd_762x63",
 			"fow_8Rnd_762x63",
 			"fow_8Rnd_762x63",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
 			"fow_e_mk2",
 			"fow_e_mk2"
 		};
@@ -382,6 +385,9 @@
 			"fow_8Rnd_762x63",
 			"fow_8Rnd_762x63",
 			"fow_8Rnd_762x63",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
 			"fow_e_mk2",
 			"fow_e_mk2"
 		};

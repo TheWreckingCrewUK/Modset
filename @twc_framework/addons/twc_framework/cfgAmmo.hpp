@@ -5,6 +5,8 @@ class CfgAmmo
 	class B_762x54_Tracer_Green;
 	class B_127x99_Ball_Tracer_Green;
 	class ModuleOrdnanceMortar_F_ammo;
+	class ModuleOrdnanceHowitzer_F_ammo;
+	class ModuleOrdnanceRocket_F_ammo;
 
 	class twc_dummyround_pistol: B_9x21_Ball_Tracer_Green
 	{
@@ -38,9 +40,21 @@ class CfgAmmo
 		cost = 0;
 		typicalSpeed = 100000;
 	};
-	class twc_dummyround_artillery: ModuleOrdnanceMortar_F_ammo
+	class twc_dummyround_artillery_small: ModuleOrdnanceMortar_F_ammo
+	{
+		displayname = "82mm Dummy Round";
+		hit = 0;
+		indirectHit = 0;
+	};
+	class twc_dummyround_artillery_medium: ModuleOrdnanceHowitzer_F_ammo
 	{
 		displayname = "155mm Dummy Round";
+		hit = 0;
+		indirectHit = 0;
+	};
+	class twc_dummyround_artillery_big: ModuleOrdnanceRocket_F_ammo
+	{
+		displayname = "203mm Dummy Round";
 		hit = 0;
 		indirectHit = 0;
 	};

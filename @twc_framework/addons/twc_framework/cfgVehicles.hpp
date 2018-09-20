@@ -143,8 +143,17 @@ class cfgVehicles {
 		};
 	};
 	
-	class twc_ModuleOrdnanceMortar_Dummy: ModuleOrdnanceMortar_F {
+	class twc_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
+		scope = 1;
 		ammo = "twc_dummyround_artillery";
+	};
+	class twc_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_dummyround_artillery_medium";
+	};
+	class twc_ModuleOrdnanceMortar_Dummy_big: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_dummyround_artillery_big";
 	};
 	
 	class twc_moduelHC: Module_F {
@@ -365,7 +374,7 @@ class cfgVehicles {
 	};
 
 	class TWC_Module_VirtualArtillery: Module_F {
-		author = "[TWC] Bosenator & jayman";
+		author = "[TWC] Bosenator & jayman & Rik";
 		category = "twc_mission_framework";
 		displayName = "Virtual Artillery";
 		function = "twc_fnc_moduleVirtualArtillery";
@@ -389,10 +398,20 @@ class cfgVehicles {
 						name="HE";
 						value="HE";
 					};
-					class HE_Harmless
+					class HE_Harmless_small
 					{
-						name="HE Harmless";
-						value="HE_Harmless";
+						name="HE Harmless (Small)";
+						value="HE_Harmless_Small";
+					};
+					class HE_Harmless_medium
+					{
+						name="HE Harmless (Medium)";
+						value="HE_Harmless_Medium";
+					};
+					class HE_Harmless_big
+					{
+						name="HE Harmless (Big)";
+						value="HE_Harmless_Big";
 					};
 					class Smoke
 					{

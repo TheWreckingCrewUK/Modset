@@ -30,7 +30,9 @@ if (isServer) then {
 	_Roundtype = 0;
 	switch (_Roundselect) do {
 		case "HE": {_Roundtype = "ModuleOrdnanceMortar_F";};
-		case "HE_Harmless": {_Roundtype = "twc_ModuleOrdnanceMortar_Dummy"};
+		case "HE_Harmless_Small": {_Roundtype = "twc_ModuleOrdnanceMortar_Dummy_small"};
+		case "HE_Harmless_Medium": {_Roundtype = "twc_ModuleOrdnanceMortar_Dummy_medium"};
+		case "HE_Harmless_Big": {_Roundtype = "twc_ModuleOrdnanceMortar_Dummy_big"};
 		case "SMOKE": {_Roundtype = "Smokeshell";};
 		case "ILLUM": {_Roundtype = "F_40mm_White";};
 		default { _Roundtype =  "ModuleOrdnanceMortar_F";};
