@@ -22,6 +22,8 @@ class cfgVehicles {
 			class Player;
 		};
 	};
+	
+	class ModuleCAS_F;
 
 	class twc_ModuleMission: Module_F {
 		author="[TWC] jayman";
@@ -866,6 +868,79 @@ class cfgVehicles {
 		};
 		class ModuleDescription: ModuleDescription {
 			description = "Call in Attack Plane";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_Amient_AttackPlane: ModuleCAS_F
+	{
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Ambient Attack Plane";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\attack_plane_ca.paa";
+		functionPriority = 1;
+		class Arguments
+		{
+			class Type
+			{
+				description = "";
+				displayName = "Type";
+				typeName = "NUMBER";
+				class values
+				{
+					class Bomb
+					{
+						name = "CAS - Bomb Strike";
+						value = 3;
+					};
+					class Gun
+					{
+						default = 1;
+						name = "CAS - Gun Run";
+						value = 0;
+					};
+					class GunMissiles
+					{
+						name = "CAS - Gun and Missiles";
+						value = 2;
+					};
+					class Missiles
+					{
+						name = "CAS - Missile Strike";
+						value = 1;
+					};
+				};
+			};
+			class Vehicle
+			{
+				description = "";
+				displayName = "Plane";
+				class values
+				{
+					/*class Spitfire
+					{
+						name = "Spitfire";
+						value = "spitfire_v_G";
+					}; Todo after the spitfire gets fixed.*/
+					class Hellcat_US
+					{
+						name = "Hellcat (US)";
+						value = "fow_va_f6f_c";
+					};
+					class Hellcat_UK
+					{
+						name = "Hellcat (UK)";
+						value = "fow_va_f6f_c_faa";
+					};
+				};
+			};
+		};
+		class ModuleDescription  {
+			description = "Call in Ambient Attack Plane, automatically despawned";
 			sync[] = {""};
 		};
 	};
