@@ -73,7 +73,7 @@
 	class IRA_Rifleman_M16: IRA_Squadleader
 	{
 		_generalMacro="IRA_Rifleman_M16";
-		displayName="Rifleman (M16)";
+		displayName="Rifleman (M16 1)";
 		icon="iconManLeader";
 		uniformClass="rhsgref_uniform_dpm_olive";
 		backpack="";
@@ -140,14 +140,20 @@
 	class IRA_Rifleman_M16_4: IRA_Rifleman_M16
 	{
 		displayName="Rifleman (M16 4)";
-		uniformClass="U_BG_Guerrilla_6_1";
+		uniformClass="UK3CB_BAF_U_Smock_DPMW_OLI";
+	};
+	
+	class IRA_Rifleman_FAL: IRA_Rifleman_M16
+	{
+		displayName="Rifleman (M16 5)";
+		uniformClass="rhsgref_uniform_woodland_olive";
 	};
 	class IRA_Rifleman_AKM: IRA_Squadleader
 	{
 		_generalMacro="IRA_Rifleman_AKM";
 		displayName="Rifleman (AKM)";
 		icon="iconManLeader";
-		uniformClass="UK3CB_BAF_U_JumperUniform_DPMW";
+		uniformClass="UK3CB_BAF_U_Smock_DPMW_OLI";
 		backpack="";
 		linkedItems[]=
 		{
@@ -193,61 +199,6 @@
 		"CUP_30Rnd_762x39_AK47_M",
 		"CUP_30Rnd_762x39_AK47_M",
 		"CUP_30Rnd_762x39_AK47_M",
-		"SmokeShell"
-		};
-	};
-	
-	class IRA_Rifleman_FAL: IRA_Squadleader
-	{
-		_generalMacro="IRA_Rifleman_FAL";
-		scope=2;
-		displayName="Rifleman (FAL)";
-		uniformClass="rhsgref_uniform_olive";
-		backpack="";
-		linkedItems[]=
-		{
-        "CUP_V_I_RACS_Carrier_Rig_wdl_2",
-		"G_Balaclava_blk",
-		"ItemMap",
-		"ItemCompass"
-		};
-		respawnLinkedItems[]=
-		{
-        "CUP_V_I_RACS_Carrier_Rig_wdl_2",
-		"G_Balaclava_blk",
-		"ItemMap",
-		"ItemCompass"
-		};
-		weapons[]=
-		{
-		"Throw",
-		"Put",
-		"UK3CB_BAF_L1A1_Wood"
-		};
-		respawnweapons[]=
-		{
-		"Throw",
-		"Put",
-		"UK3CB_BAF_L1A1_Wood"
-		};
-		magazines[]=
-		{
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"SmokeShell"
-		};
-		Respawnmagazines[]=
-		{
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
-		"UK3CB_BAF_762_20Rnd",
 		"SmokeShell"
 		};
 	};

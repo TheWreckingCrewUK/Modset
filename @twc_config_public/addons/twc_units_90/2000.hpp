@@ -244,7 +244,7 @@
 			"Throw",
 			"Put",
 			"Binocular",
-			"UK3CB_BAF_L85A2_SUSAT",
+			"UK3CB_BAF_L85A2_RIS_SUSAT",
 			"UK3CB_BAF_L107A1"
 		};
 		respawnweapons[]=
@@ -252,7 +252,7 @@
 			"Throw",
 			"Put",
 			"Binocular",
-			"UK3CB_BAF_L85A2_SUSAT",
+			"UK3CB_BAF_L85A2_RIS_SUSAT",
 			"UK3CB_BAF_L107A1"
 		};
 		magazines[]=
@@ -300,13 +300,13 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT"
+			"UK3CB_BAF_L85A2_RIS_ACOG"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_SUSAT"
+			"UK3CB_BAF_L85A2_RIS_ACOG"
 		};
 		magazines[]=
 		{
@@ -350,13 +350,13 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_UGL_SUSAT"
+			"UK3CB_BAF_L85A2_UGL_ACOG"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L85A2_UGL_SUSAT"
+			"UK3CB_BAF_L85A2_UGL_ACOG"
 		};
 		magazines[]=
 		{
@@ -380,12 +380,19 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd_T",
 			"HandGrenade",
@@ -1345,22 +1352,6 @@
 			"ItemCompass",
 			"ItemWatch"
 		};
-				weapons[]=
-		{
-			"Throw",
-			"Put",
-			"Binocular",
-			"UK3CB_BAF_L85A2_SUSAT",
-			"UK3CB_BAF_L107A1"
-		};
-		respawnweapons[]=
-		{
-			"Throw",
-			"Put",
-			"Binocular",
-			"UK3CB_BAF_L85A2_SUSAT",
-			"UK3CB_BAF_L107A1"
-		};
 		magazines[]=
 		{
 			"UK3CB_BAF_556_30Rnd_T",
@@ -1430,18 +1421,6 @@
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		backpack="";
 		twc_nobackpack = 1;
-						weapons[]=
-		{
-		"Throw",
-		"UK3CB_BAF_L85A2_UGL_SUSAT",
-		"Put"
-		};
-				respawnweapons[]=
-		{
-		"Throw",
-		"UK3CB_BAF_L85A2_UGL_SUSAT",
-		"Put"
-		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_DDPM3",
@@ -1514,18 +1493,6 @@
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		attendant = 1;
 		backpack="TWC_Backpack_1990_Medic_Desert";
-				weapons[]=
-		{
-		"Throw",
-		"UK3CB_BAF_L85A2_SUSAT",
-		"Put"
-		};
-				respawnweapons[]=
-		{
-		"Throw",
-		"UK3CB_BAF_L85A2_SUSAT",
-		"Put"
-		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_DDPM2",

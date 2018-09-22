@@ -281,13 +281,13 @@
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_pkp"
+			"rhs_weap_pkm"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_pkp"
+			"rhs_weap_pkm"
 		};
 		magazines[]=
 		{

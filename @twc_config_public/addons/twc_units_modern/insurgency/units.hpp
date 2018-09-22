@@ -686,6 +686,7 @@
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 		icon="iconManLeader";
 		backpack="";
+		twc_nobackpack = 1;
 		linkedItems[]= {
 			"UK3CB_BAF_V_Osprey_Marksman_A",
 			"UK3CB_BAF_H_Mk7_Scrim_D",
@@ -719,7 +720,12 @@
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"HandGrenade",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell",
@@ -730,7 +736,12 @@
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"HandGrenade",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell",
