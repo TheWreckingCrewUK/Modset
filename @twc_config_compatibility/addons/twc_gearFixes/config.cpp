@@ -158,8 +158,11 @@ class CfgWeapons {
 			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4,  (velocity _bullet select 2) + (random 24) - 12];};twc_gpmglastfired = time;";
 		};
 	};
-	
-	class CannonCore;
+	class Default;
+	class CannonCore: Default
+	{
+		class eventhandlers;
+	};
 	class autocannon_Base_F: CannonCore
 	{
 		class eventhandlers;
@@ -194,7 +197,7 @@ class CfgWeapons {
 		ReloadTime = 0.3;
 		autoReload = 0;
 		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
 		};
 		class HE: HE
 		{
@@ -202,6 +205,67 @@ class CfgWeapons {
 			magazineReloadTime = 1;
 			ReloadTime = 0.3;
 			autoReload = 0;
+		};
+	};
+	
+	class gatling_30mm: CannonCore
+	{
+		class EventHandlers;
+		class Mode_FullAuto;
+		class manual;
+	};
+	class rhs_weap_M197: gatling_30mm
+	{
+		class manual:gatling_30mm
+		{
+			dispersion=0.009;
+		};
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
+		};
+	};
+	
+	class rhs_weap_M230: rhs_weap_M197
+	{
+		class manual:manual
+		{
+			dispersion=0.009;
+		};
+	};
+	
+	
+	class gatling_30mm_base: CannonCore
+	{
+		class EventHandlers;
+		class Mode_FullAuto;
+		class manual;
+	};
+	
+	class UK3CB_gatling_30mm_base: gatling_30mm_base
+	{
+		modes[] = {"Burst50","close","short","medium","far"};
+		class Burst10;
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
+		};
+	};
+	
+	class UK3CB_BAF_CannonM230: UK3CB_gatling_30mm_base
+	{
+		class Burst20:Burst10
+		{
+			dispersion=0.009;
+		};
+	};
+	
+	class CUP_Vacannon_M230_veh: CannonCore
+	{
+		class manual: CannonCore
+		{
+			dispersion=0.009;
+		};
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
 		};
 	};
 	
@@ -382,7 +446,45 @@ class CfgVehicles {
 			};
 		};
 	};
+	class Heli_Attack_01_base_F;
+	class RHS_AH64_base: Heli_Attack_01_base_F
+	{
+		class hitpoints
+		{
+			class HitHRotor;
+		};
+		
+	};
+	
+	class RHS_AH64D: RHS_AH64_base
+	{
+		armor = 70;
+		armorStructural = 50;
+		cyclicAsideForceCoef = 3.1;
+		cyclicForwardForceCoef = 1.7;
+		backRotorForceCoef = 1;
+		liftForceCoef = 0.9;
 
+		class hitpoints: hitpoints
+		{
+			class HitHRotor: HitHRotor
+			{
+				armor = 2;
+			};
+		};
+	};
+	
+	class Helicopter_Base_H;
+	class CUP_CH47F_base: Helicopter_Base_H
+	{
+		backRotorForceCoef = 0.9;
+		cyclicForwardForceCoef = 2.2;
+		cyclicAsideForceCoef = 1.3;
+		liftForceCoef = 0.9;
+		bodyFrictionCoef = 1.4;
+	};
+		
+		
 //handling modifications
 	class Car;
 	class Car_F: Car{
