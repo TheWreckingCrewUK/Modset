@@ -147,7 +147,7 @@ class cfgVehicles {
 	
 	class twc_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
 		scope = 1;
-		ammo = "twc_dummyround_artillery";
+		ammo = "twc_dummyround_artillery_small";
 	};
 	class twc_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
 		scope = 1;
