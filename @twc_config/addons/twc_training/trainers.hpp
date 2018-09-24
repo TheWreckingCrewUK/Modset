@@ -86,6 +86,7 @@ class TWC_Units_Training_Trainer: TWC_Units_Training_Trainer_Base {
 };
 
 class TWC_Units_Training_Medical_Trainer: TWC_Units_Training_Trainer_Base {
+	scope = 2;
 	displayName = "Trainer (Medical)";
 	icon = "iconManMedic";
 	backpack = "TWC_Backpack_Trainer_Medical";
