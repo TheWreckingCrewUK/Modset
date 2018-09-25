@@ -23,6 +23,32 @@ class cfgWeapons
 	class UK3CB_BAF_L85A2_RIS_Tan;
 	class arifle_Mk20_F;
 	class Rifle_Base_F;
+	class cannoncore;
+	
+	class gatling_30mm: CannonCore
+	{
+		class EventHandlers;
+		class Mode_FullAuto;
+		class manual;
+	};
+	class rhs_weap_M197: gatling_30mm
+	{
+		class manual:gatling_30mm
+		{
+			dispersion=0.012;
+		};
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
+		};
+	};
+	
+	class rhs_weap_M230: rhs_weap_M197
+	{
+		class manual:manual
+		{
+			dispersion=0.012;
+		};
+	};
 	
 	class CUP_Vlmg_M240_M1Abrams_Coax;
 	class CUP_M240_Coax_M1_Abrams_W: CUP_Vlmg_M240_M1Abrams_Coax
