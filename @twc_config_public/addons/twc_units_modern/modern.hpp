@@ -763,6 +763,8 @@
 		displayName="Helicopter Pilot";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
 		backpack="";
+		twc_radioType = "ACRE_PRC343";
+		twc_radioChannel = 5;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -977,6 +979,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		displayName="Sniper";
 		uniformClass="CUP_U_B_BAF_DPM_Ghillie";
 		icon="iconManLeader";
+		twc_radioType = "ACRE_PRC343";
+		twc_radioChannel = 4;
 		twc_nobackpack = 1;
 		backpack="";
 		linkedItems[]= {
@@ -1278,6 +1282,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		icon="iconManMedic";
 		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
 		attendant = 1;
+		twc_radioType = "ACRE_PRC343";
+		twc_radioChannel = 5;
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
@@ -1567,6 +1573,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		icon="iconManLeader";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 		backpack="TWC_Backpack_Modern_Sectionlead";
+		twc_radioType = "ACRE_PRC343";
+		twc_radioChannel = 3;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Osprey_Lite",
@@ -1649,6 +1657,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
+			"ACRE_PRC343",
 			"ACRE_PRC152"
 		};
 		respawnLinkedItems[]=
@@ -1658,6 +1667,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
+			"ACRE_PRC343",
 			"ACRE_PRC152"
 		};
 		weapons[]=
@@ -1717,6 +1727,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		displayName="FST Assistant";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 		backpack="UK3CB_BAF_B_Carryall_MTP";
+		twc_radioType = "ACRE_PRC343";
+		twc_radioChannel = 3;
 		
 		linkedItems[]=
 		{

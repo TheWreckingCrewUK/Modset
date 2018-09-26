@@ -685,6 +685,8 @@
 		displayName="Sniper (COIN)";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 		icon="iconManLeader";
+		twc_radioType = "ACRE_PRC343";
+		twc_radioChannel = 4;
 		backpack="";
 		twc_nobackpack = 1;
 		linkedItems[]= {
@@ -755,6 +757,8 @@
 		displayName="Spotter (COIN)";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 		icon="iconManLeader";
+		twc_radioType = "ACRE_PRC343";
+		twc_radioChannel = 4;
 		backpack="TWC_Backpack_Modern_Spotter_coin";
 		linkedItems[]= {
 			"UK3CB_BAF_V_Osprey_Marksman_A",

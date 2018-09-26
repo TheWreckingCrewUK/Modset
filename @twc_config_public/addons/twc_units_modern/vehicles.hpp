@@ -40,8 +40,8 @@ class Wheeled_APC_F: Car_F {
 	{
 		armor = 70;
 		armorStructural = 200;
-		cyclicAsideForceCoef = 3.1;
-		cyclicForwardForceCoef = 1.7;
+		cyclicAsideForceCoef = 1.6;
+		cyclicForwardForceCoef = 1.4;
 		backRotorForceCoef = 1;
 		liftForceCoef = 0.9;
 

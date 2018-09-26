@@ -169,14 +169,8 @@ class CfgWeapons {
 		class HE;
 	};
 	class autocannon_30mm_CTWS: autocannon_Base_F {
-		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
-		};
 	};
 	class L21A1_RARDEN: autocannon_Base_F {
-		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
-		};
 		magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE"};
 		magazineReloadTime = 1;
 		ReloadTime = 0.3;
@@ -426,7 +420,7 @@ class CfgVehicles {
 	class CUP_CH47F_base: Helicopter_Base_H
 	{
 		backRotorForceCoef = 0.9;
-		cyclicForwardForceCoef = 2.2;
+		cyclicForwardForceCoef = 1.5;
 		cyclicAsideForceCoef = 1.3;
 		liftForceCoef = 0.9;
 		bodyFrictionCoef = 1.4;
