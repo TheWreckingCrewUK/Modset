@@ -690,7 +690,7 @@
 			};
 			class _xx_Grenade
 			{
-				magazine = "CUP_HandGrenade_L109A2_HE";
+				magazine = "HandGrenade";
 				count = 1;
 			};
 		};
@@ -717,7 +717,7 @@
 			};
 			class _xx_Grenade
 			{
-				magazine = "CUP_HandGrenade_L109A2_HE";
+				magazine = "HandGrenade";
 				count = 1;
 			};
 			class _xx_HE
@@ -1239,13 +1239,13 @@
 		{
 			class _xx_338
 			{
-				magazine = "UK3CB_BAF_338_5Rnd";
-				count = 1;
+				magazine = "ACE_10Rnd_338_300gr_HPBT_Mag";
+				count = 5;
 			};
 			class _xx_762
 			{
 				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
-				count = 1;
+				count = 3;
 			};
 			class _xx_762_t
 			{
@@ -1259,7 +1259,7 @@
 			};
 			class _xx_Grenade
 			{
-				magazine = "CUP_HandGrenade_L109A2_HE";
+				magazine = "HandGrenade";
 				count = 1;
 			};
 		};

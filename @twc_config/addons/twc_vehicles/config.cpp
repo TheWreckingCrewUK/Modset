@@ -32,6 +32,7 @@ class CfgPatches {
 			"TWC_Vehicle_Generic_Chinook_RAF_VIV",
 			"TWC_Vehicle_Generic_Gazelle",
 			"TWC_Vehicle_Generic_RHIB_Black",
+			"TWC_Vehicle_Generic_RHIB_HMG_Black",
 			"TWC_Vehicle_Generic_Zodiac_Black",
 			
 			"TWC_Vehicle_ColdWar_LandRover_Woodland",

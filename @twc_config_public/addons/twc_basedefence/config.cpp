@@ -73,6 +73,13 @@ class CfgSounds {
 		titles[] = {0, ""};
 	};
 	
+	class TWC_sound_incomingvoice3 {
+		name = "TWC_sound_incomingvoice3";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\incomingvoice3.ogg", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
 	class TWC_sound_standtovoice {
 		name = "TWC_sound_standtovoice";
 		// filename, volume, pitch, distance
@@ -90,6 +97,48 @@ class CfgSounds {
 		name = "TWC_sound_idfsiren";
 		// filename, volume, pitch, distance
 		sound[] = {"\twc_basedefence\sounds\infalarm.ogg", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
+		class TWC_sound_down01 {
+		name = "TWC_sound_down01";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\down01.ogg", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
+		class TWC_sound_down02 {
+		name = "TWC_sound_down02";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\down02.ogg", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
+		class TWC_sound_down03 {
+		name = "TWC_sound_down03";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\down03.ogg", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
+		class TWC_sound_down04 {
+		name = "TWC_sound_down04";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\down04.ogg", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
+		class TWC_sound_down05 {
+		name = "TWC_sound_down05";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\down05.ogg", db+30, 1, 500};
+		titles[] = {0, ""};
+	};
+	
+		class TWC_sound_down06 {
+		name = "TWC_sound_down06";
+		// filename, volume, pitch, distance
+		sound[] = {"\twc_basedefence\sounds\down06.ogg", db+30, 1, 500};
 		titles[] = {0, ""};
 	};
 };

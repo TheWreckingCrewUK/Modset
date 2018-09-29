@@ -364,6 +364,9 @@
 			"fow_8Rnd_762x63",
 			"fow_8Rnd_762x63",
 			"fow_8Rnd_762x63",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
 			"fow_e_mk2",
 			"fow_e_mk2"
 		};
@@ -382,6 +385,9 @@
 			"fow_8Rnd_762x63",
 			"fow_8Rnd_762x63",
 			"fow_8Rnd_762x63",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
 			"fow_e_mk2",
 			"fow_e_mk2"
 		};
@@ -796,4 +802,72 @@
 	{
 		displayName="MG Assistant 2";
 		backpack="fow_b_usa_m1919_support";
+	};
+	class TWC_WW2_USMC_VehicleCommander: TWC_WW2_USMC_Rifleman
+	{
+		scope=2;
+		displayName="Vehicle Commander";
+		uniformClass="fow_u_usmc_p41_01_private";
+		linkedItems[]=
+		{
+			"fow_v_usmc_thompson_nco",
+			"fow_h_usmc_m1_camo_02",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"fow_v_usmc_thompson_nco",
+			"fow_h_usmc_m1_camo_02",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"fow_w_m3"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"fow_w_m3"
+		};
+		magazines[]=
+		{
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp"
+		};
+		Respawnmagazines[]=
+		{
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp"
+		};
+	};
+	class TWC_WW2_USMC_VehicleCrew: TWC_WW2_USMC_VehicleCommander
+	{
+		displayName="Vehicle Crew";
+		linkedItems[]=
+		{
+			"fow_v_usmc_45",
+			"fow_h_us_m1_folded",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"fow_v_usmc_45",
+			"fow_h_us_m1_folded",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 	};
