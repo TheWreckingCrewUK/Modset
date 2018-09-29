@@ -19,7 +19,18 @@ if (!_bool) exitWith {};
 addMissionEventHandler ["HandleDisconnect", {
 	_unit = (_this select 0);
 	_uid = (_this select 2);
+
 	_unit setVariable ["disconnectedPlayerUID", _uid];
+
+/* 	if !(_unit getVariable ["wasKilled", false]) then {
+		deleteVehicle _unit;
+	}; */
+
+	// remove bodies always first 60 seconds of the op
+	_synced = time + 60;
+	if (time <= _synced) then {
+		deleteVehicle _unit;
+	};
 }];
 
 ["deleteReconnected", "onPlayerConnected", {
