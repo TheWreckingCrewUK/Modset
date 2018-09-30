@@ -1,9 +1,9 @@
 //Calls all the functions on player start.
 params["_unit"];
-if (player != _unit)exitWith {};
+if (player != _unit) exitWith {};
 
-waitUntil { sleep 0.5; !(isNull player) };
-waitUntil { sleep 1.271; time > 0 };
+/* waitUntil { sleep 0.5; !(isNull player) };
+waitUntil { sleep 1.271; time > 0 }; */
 
 ACE_maxWeightDrag = 100000;
 ACE_maxWeightCarry = 100000;
@@ -77,18 +77,6 @@ player addEventHandler ["Killed",{
 ["twc_evh_createDiaryRecord", { player createDiaryRecord ["Diary", ["Radio Message", (_this select 0)]]; }] call CBA_fnc_addEventHandler;
 ["twc_evh_createConvoRecord", { player createDiaryRecord ["Diary", ["Conversation", (_this select 0)]]; }] call CBA_fnc_addEventHandler;
 
-if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {systemChat "twcModuleEnabled was Nil"};
-
-
-waitUntil{missionNameSpace getVariable "twcModuleFinished"};
-
-[(missionNameSpace getVariable "era")] spawn twc_fnc_era;
-[(missionNameSpace getVariable "nightGear"),(missionNameSpace getVariable "era")] spawn twc_fnc_nightGear;
-[(missionNameSpace getVariable "rollSleeves")] spawn twc_fnc_rollShirt;
-[(missionNameSpace getVariable "run")] spawn twc_fnc_run;
-[(missionNameSpace getVariable "safeZone")] spawn twc_fnc_safeZone;
-[(missionNameSpace getVariable "zuesObjects")] spawn twc_fnc_zeus;
-
 EM_blacklist_obj = [
 	"Land_Mil_WiredFence_F", 
 	"Land_New_WireFence_5m_F",
@@ -146,3 +134,13 @@ EM_blacklist_obj = [
 	"Land_CSA38_jezci",
 	"Land_WW2_wire_bruno"
 ];
+
+if (isNil {missionNameSpace getVariable "twcModuleEnabled"}) exitWith { systemChat "twcModuleEnabled was Nil"; };
+waitUntil { missionNameSpace getVariable ["twcModuleFinished", false] };
+
+[(missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_era;
+[(missionNameSpace getVariable ["nightGear", false]), (missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_nightGear;
+[(missionNameSpace getVariable ["rollSleeves", false])] spawn twc_fnc_rollShirt;
+[(missionNameSpace getVariable ["run", 0])] spawn twc_fnc_run;
+[(missionNameSpace getVariable ["safeZone", 0])] spawn twc_fnc_safeZone;
+[(missionNameSpace getVariable ["zuesObjects", true])] spawn twc_fnc_zeus;
