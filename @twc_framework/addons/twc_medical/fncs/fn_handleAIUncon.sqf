@@ -11,10 +11,11 @@ if (_unCon) then {
 
 	_diceRoll = floor random (10);
 
-	if (_diceRoll < 4) then {
+	if (_diceRoll <= 4) then {
 		[_unit, true] call ace_medical_fnc_setDead;
+		_continue = false;
 	} else {
-		if (_diceRoll >= 8) then {
+		if (_diceRoll > 8) then {
 			// rolled nat 10, get healed'
 			[_unit] call twc_medical_fnc_fullyBandageUnit;
 		};
