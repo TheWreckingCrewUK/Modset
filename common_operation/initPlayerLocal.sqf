@@ -1,6 +1,5 @@
 if (serverTime < 600) then {
-	_index = player createDiarySubject ["loadout","Loadouts"];
-
+	_index = player createDiarySubject ["loadout", "Loadouts"];
 	[player] remoteExecCall ["twc_fnc_briefingLoadout", (group player)];
 };
 
