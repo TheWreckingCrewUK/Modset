@@ -34,7 +34,7 @@ addMissionEventHandler ["HandleDisconnect", {
 
 ["deleteReconnected", "onPlayerConnected", {
 	{
-		if ((_x getVariable ["disconnectedPlayerUID", -1]) == _uid) then {
+		if ((_x getVariable ["disconnectedPlayerUID", -1]) == _uid) exitWith {
 			deleteVehicle _x;
 		};
 	} forEach allDeadmen;
