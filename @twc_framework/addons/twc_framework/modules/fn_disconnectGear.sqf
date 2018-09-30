@@ -27,8 +27,7 @@ addMissionEventHandler ["HandleDisconnect", {
 	}; */
 
 	// remove bodies always first 60 seconds of the op
-	_synced = time + 60;
-	if (time <= _synced) then {
+	if (time <= 60) then {
 		deleteVehicle _unit;
 	};
 }];
