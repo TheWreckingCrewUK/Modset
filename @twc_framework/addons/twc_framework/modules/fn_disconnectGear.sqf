@@ -15,6 +15,7 @@
 */
 params["_bool"];
 if (!_bool) exitWith {};
+if (!isServer) exitWith {};
 
 addMissionEventHandler ["HandleDisconnect", {
 	_unit = (_this select 0);
