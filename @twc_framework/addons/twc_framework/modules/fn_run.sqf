@@ -19,7 +19,7 @@ params ["_range", ["_marker", "base"]];
 if (!hasInterface) exitWith {};
 if (_range == 0) exitWith {};
 
-if (getMarkerColor _marker == "") exitWith {
+/* if (getMarkerColor _marker == "") exitWith {
 	systemChat "No Running in base is enabled, but no base marker is defined";
 };
 
@@ -27,4 +27,4 @@ while { alive player } do {
 	if (player distance getmarkerpos _marker < _range) then { player forceWalk true; };
 	sleep .5;
 	if (player distance getmarkerpos _marker > _range) exitWith { player forceWalk false; };
-};
+}; */

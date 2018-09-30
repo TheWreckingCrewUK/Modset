@@ -135,7 +135,7 @@ EM_blacklist_obj = [
 	"Land_WW2_wire_bruno"
 ];
 
-if (isNil {missionNameSpace getVariable "twcModuleEnabled"}) exitWith { systemChat "twcModuleEnabled was Nil"; };
+if (missionNameSpace getVariable ["twcModuleEnabled", false]) exitWith { systemChat "WARNING: TWC Mission Module wasn't placed down, or enabled."; };
 waitUntil { missionNameSpace getVariable ["twcModuleFinished", false] };
 
 [(missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_era;

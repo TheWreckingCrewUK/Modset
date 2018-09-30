@@ -36,11 +36,11 @@ if (isMultiplayer) then {
 		};
 
 		sleep 3;
-		"dynamicBlur" ppEffectEnable true;   
-		"dynamicBlur" ppEffectAdjust [6];   
-		"dynamicBlur" ppEffectCommit 0;     
-		"dynamicBlur" ppEffectAdjust [0.0];  
-		"dynamicBlur" ppEffectCommit 5;  
+		"dynamicBlur" ppEffectEnable true;
+		"dynamicBlur" ppEffectAdjust [6];
+		"dynamicBlur" ppEffectCommit 0;
+		"dynamicBlur" ppEffectAdjust [0.0];
+		"dynamicBlur" ppEffectCommit 5;
 
 		titleCut ["", "BLACK IN", 5];
 		
