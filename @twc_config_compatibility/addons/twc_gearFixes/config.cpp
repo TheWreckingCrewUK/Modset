@@ -60,6 +60,23 @@ class CfgAmmo {
 		soundHit3[] = {};
 		soundHit4[] = {};
 	};
+	
+	class Chemlight_base;
+	class ACE_G_Chemlight_IR: Chemlight_base {
+		timeToLive = 150000;
+	};
+	class Chemlight_Blue: Chemlight_base {
+		timeToLive = 150000;
+	};
+	class Chemlight_Red: Chemlight_base {
+		timeToLive = 150000;
+	};
+	class Chemlight_Green: Chemlight_base {
+		timeToLive = 150000;
+	};
+	class Chemlight_Yellow: Chemlight_base {
+		timeToLive = 150000;
+	};
 };
 
 class mode_fullauto;
@@ -190,9 +207,6 @@ class CfgWeapons {
 		muzzles[] = {"HE"};
 		ReloadTime = 0.3;
 		autoReload = 0;
-		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
-		};
 		class HE: HE
 		{
 			magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE"};
