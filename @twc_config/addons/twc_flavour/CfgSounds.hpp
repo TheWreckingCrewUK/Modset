@@ -42,4 +42,10 @@ class CfgSounds
 		sound[] = {"twc_flavour\sounds\bugle_call.ogg", 1, 1};
 		titles[] = {};			
 	};
+	class twc_arab_crowd
+	{
+		name = "arab_crowd";
+		sound[] = {"twc_flavour\sounds\arab_crowd.ogg", 1, 1};
+		titles[] = {};
+	};
 };

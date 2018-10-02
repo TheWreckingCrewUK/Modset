@@ -26,7 +26,7 @@ if (alive _unit) then {
 	if (!isAbleToBreathe _unit) then {
 		_adjustedMaxTime = (_adjustedMaxTime - (_adjustedMaxTime / 2)) max 30;
 	};
-	
+
 	missionNamespace setVariable ["ace_medical_maxReviveTime", _adjustedMaxTime];
 };
 

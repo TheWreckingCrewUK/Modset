@@ -37,7 +37,23 @@ class CfgPatches {
 			"twc_ana_mg",
 			"twc_ana_mg_as",
 			"twc_ana_marksman",
-			"twc_ana_medic"
+			"twc_ana_medic",
+			
+			"Modern_pol_Base",
+			"Modern_pol_rifleman_at",
+			"Modern_pol_grenadier",
+			"Modern_pol_mg",
+			"Modern_pol_commander",
+			"Modern_pol_subcommander",
+			"Modern_pol_medic",
+			
+			"Modern_pol_Base_d",
+			"Modern_pol_rifleman_at_d",
+			"Modern_pol_grenadier_d",
+			"Modern_pol_mg_d",
+			"Modern_pol_commander_d",
+			"Modern_pol_subcommander_d",
+			"Modern_pol_medic_d"
 		};
 
 		weapons[]={};
@@ -67,6 +83,10 @@ class CfgEditorSubCategories {
 		displayName = "Men (Modern Dismounted)";
 	};
 
+	class Men_Modern_Light {
+		displayName = "Men (Light Mobility)";
+	};
+
 	class Men_ModernCoin {
 		displayName = "Men (Modern COIN)";
 	};
@@ -89,6 +109,7 @@ class CfgVehicles
 	class CUP_B_C130J_GB;
 	
 	#include "modern.hpp"
+	#include "poland.hpp"
 	
 	#include "insurgency\units.hpp"
 	

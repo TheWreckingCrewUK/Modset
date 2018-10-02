@@ -1,5 +1,5 @@
-class CUP_B_GR9_DYN_GB;
-class TWC_Vehicle_ColdWar_HarrierGR3_RAF: CUP_B_GR9_DYN_GB {
+class CUP_B_GR9_GBU12_GB;
+class TWC_Vehicle_ColdWar_HarrierGR3_RAF: CUP_B_GR9_GBU12_GB {
 	scope = 2;
 	scopeCurator = 0; // dynamic loadout, sort of fuck'd if we need to spawn mid game
 	side = 1;

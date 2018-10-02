@@ -1,5 +1,5 @@
 class CfgPatches {
-	class twc_man {
+	class twc_ai {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;

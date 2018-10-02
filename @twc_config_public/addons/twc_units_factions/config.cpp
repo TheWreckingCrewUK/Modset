@@ -71,10 +71,17 @@ class CfgPatches
 			"Afr_Mil_Crewman",
 			"IRA_Squadleader",
 			"IRA_Rifleman_M16",
+			"IRA_Rifleman_M16_2",
+			"IRA_Rifleman_M16_3",
+			"IRA_Rifleman_M16_4",
+			"IRA_pistol_1",
+			"IRA_pistol_2",
+			"IRA_pistol_3",
 			"IRA_Rifleman_AKM",
 			"IRA_Rifleman_FAL",
 			"IRA_Rifleman_AT",
 			"IRA_Autorifleman",
+			"IRA_Autorifleman_2",
 			
 			"greek_Civ_Men_1",
 			"greek_Civ_Men_2",
@@ -219,6 +226,14 @@ class CfgEditorSubCategories
 	{
 		displayName="Men (Generic Heavy)";
 	};
+	class Men_twc_woodland
+	{
+		displayName="Men (Woodland)";
+	};
+	class Men_twc_desert
+	{
+		displayName="Men (Desert)";
+	};
 
 };
 class CfgFactionClasses
@@ -268,6 +283,12 @@ class CfgFactionClasses
 	class ana_units
 	{
 		displayName="Afghan National Army";
+		priority=2;
+		side=1;
+	};
+	class pol_units
+	{
+		displayName="Polish Military Forces";
 		priority=2;
 		side=1;
 	};

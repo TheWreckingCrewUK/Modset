@@ -1,5 +1,4 @@
 	class O_G_officer_F;
-	class O_G_Soldier_F;
 	class O_G_Soldier_LAT_F;
 	class O_G_Soldier_GL_F;
 	class O_G_Soldier_AR_F;
@@ -51,7 +50,7 @@
 		"CUP_20Rnd_B_765x17_Ball_M",
 		"CUP_20Rnd_B_765x17_Ball_M",
 		"CUP_20Rnd_B_765x17_Ball_M",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -61,7 +60,7 @@
 		"CUP_20Rnd_B_765x17_Ball_M",
 		"CUP_20Rnd_B_765x17_Ball_M",
 		"CUP_20Rnd_B_765x17_Ball_M",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Items[]=
@@ -132,7 +131,7 @@
 		"CUP_30Rnd_545x39_AK_M",
 		"CUP_30Rnd_545x39_AK_M",
 		"CUP_30Rnd_545x39_AK_M",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -142,7 +141,7 @@
 		"CUP_30Rnd_545x39_AK_M",
 		"CUP_30Rnd_545x39_AK_M",
 		"CUP_30Rnd_545x39_AK_M",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Items[]=
@@ -297,7 +296,7 @@
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_PG7V_M",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -308,7 +307,7 @@
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_30Rnd_556x45_Stanag",
 		"CUP_PG7V_M",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Items[]=
@@ -795,7 +794,7 @@
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -805,7 +804,7 @@
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
 		"CUP_20Rnd_762x51_FNFAL_M",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Items[]=
@@ -875,7 +874,7 @@
 		"rhsgref_5Rnd_762x54_m38",
 		"rhsgref_5Rnd_762x54_m38",
 		"rhsgref_5Rnd_762x54_m38",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -885,7 +884,7 @@
 		"rhsgref_5Rnd_762x54_m38",
 		"rhsgref_5Rnd_762x54_m38",
 		"rhsgref_5Rnd_762x54_m38",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Items[]=
@@ -955,7 +954,7 @@ class twc_greek_at2: O_G_Soldier_LAT_F
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
-		"HandGrenade",
+		 
 		"CUP_OG7_M",
 		"SmokeShell"
 		};
@@ -966,7 +965,7 @@ class twc_greek_at2: O_G_Soldier_LAT_F
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
-		"HandGrenade",
+		 
 		"CUP_OG7_M",
 		"SmokeShell"
 		};
@@ -1036,7 +1035,7 @@ class twc_greek_smg: O_G_Soldier_LAT_F
 		"CUP_30Rnd_9x19_MP5",
 		"CUP_30Rnd_9x19_MP5",
 		"CUP_30Rnd_9x19_MP5",
-		"HandGrenade",
+		 
 		"CUP_OG7_M",
 		"SmokeShell"
 		};
@@ -1047,7 +1046,7 @@ class twc_greek_smg: O_G_Soldier_LAT_F
 		"CUP_30Rnd_9x19_MP5",
 		"CUP_30Rnd_9x19_MP5",
 		"CUP_30Rnd_9x19_MP5",
-		"HandGrenade",
+		 
 		"CUP_OG7_M",
 		"SmokeShell"
 		};
@@ -1122,7 +1121,7 @@ class twc_greek_sniper: O_G_Soldier_LAT_F
 		"CUP_5Rnd_762x51_M24",
 		"CUP_5Rnd_762x51_M24",
 		"CUP_5Rnd_762x51_M24",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -1133,7 +1132,7 @@ class twc_greek_sniper: O_G_Soldier_LAT_F
 		"CUP_5Rnd_762x51_M24",
 		"CUP_5Rnd_762x51_M24",
 		"CUP_5Rnd_762x51_M24",
-		"HandGrenade",
+		 
 		"SmokeShell"
 		};
 		Items[]=

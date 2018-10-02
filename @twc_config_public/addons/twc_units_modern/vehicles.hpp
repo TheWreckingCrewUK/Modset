@@ -10,122 +10,49 @@ class Wheeled_APC_F: Car_F {
 
 //handling modifications
 	
-	class UK3CB_BAF_LandRover_Base: Car_F {
+	class UK3CB_BAF_LandRover_Base;
+	
 		
-			
-		class EventHandlers;
+	class UK3CB_BAF_LandRover_WMIK_Base: UK3CB_BAF_LandRover_Base {
+			class EventHandlers;
+	};
 
-		antiRollbarForceCoef = 4.0;
-		antiRollbarForceLimit = 3;
-		differentialType = "all_limited";
-		frontRearSplit = 0.3;
-		frontBias = 1.1;
-		rearBias = 2.5;
-		centreBias = 1.5;
-		class Wheels {
-			class LF {
-				boneName = "wheel_1_1_damper";
-				boundary = "wheel_1_1_bound";
-				center = "wheel_1_1_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {[0,1.6],[0.6,1.7],[1,1.6]};
-				latStiffX = 10;
-				latStiffY = 20;
-				longitudinalStiffnessPerUnitGravity = 10000;
-				mass = 30;
-				maxBrakeTorque = 3250;
-				maxCompression = 0.25;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 0;
-				moi = 6;
-				side = "left";
-				springDamperRate = 4500;
-				springStrength = 36000;
-				sprungMass = 525;
-				steering = 1;
-				suspForceAppPointOffset = "wheel_1_1_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_1_1_axis";
-				width = 0.285;
-				};
-				class LR: LF {
-				boneName = "wheel_1_2_damper";
-				boundary = "wheel_1_2_bound";
-				center = "wheel_1_2_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {[0,1.5],[0.2,1.7],[1,0.9]};
-				longitudinalStiffnessPerUnitGravity = 10000;
-				mass = 30;
-				maxBrakeTorque = 2950;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 9000;
-				moi = 6;
-				side = "left";
-				sprungMass = 525;
-				steering = 0;
-				suspForceAppPointOffset = "wheel_1_2_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_1_2_axis";
-				width = 0.285;
-				};
-				class RF: LF {
-				boneName = "wheel_2_1_damper";
-				boundary = "wheel_2_1_bound";
-				center = "wheel_2_1_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0.8;
-				longitudinalStiffnessPerUnitGravity = 10000;
-				mass = 30;
-				maxBrakeTorque = 3250;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 0;
-				moi = 6;
-				side = "right";
-				steering = 1;
-				suspForceAppPointOffset = "wheel_2_1_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_2_1_axis";
-				width = 0.285;
-				};
-				class RR: LR {
-				boneName = "wheel_2_2_damper";
-				boundary = "wheel_2_2_bound";
-				center = "wheel_2_2_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0.8;
-				longitudinalStiffnessPerUnitGravity = 10000;
-				mass = 30;
-				maxBrakeTorque = 2950;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 9000;
-				moi = 6;
-				side = "right";
-				steering = 0;
-				suspForceAppPointOffset = "wheel_2_2_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_2_2_axis";
-				width = 0.285;
-				};
-			};
+	class CUP_CH47F_base;
+	class CUP_B_CH47F_GB: CUP_CH47F_base {
+		class EventHandlers;
+	};
+	
+	class twc_mert_ch47: CUP_B_CH47F_GB {
+		displayname = "CH-47D (MERT)";
+	};
+	
+	class Heli_Attack_01_base_F;
+	class RHS_AH64_base: Heli_Attack_01_base_F
+	{
+		class hitpoints
+		{
+			class HitHRotor;
+		};
 		
 	};
 	
-		
-class UK3CB_BAF_LandRover_WMIK_Base: UK3CB_BAF_LandRover_Base {
-			class EventHandlers;
-};
+	class RHS_AH64D: RHS_AH64_base
+	{
+		armor = 70;
+		armorStructural = 200;
+		cyclicAsideForceCoef = 1.6;
+		cyclicForwardForceCoef = 1.4;
+		backRotorForceCoef = 1;
+		liftForceCoef = 0.9;
 
-	
+		class hitpoints: hitpoints
+		{
+			class HitHRotor: HitHRotor
+			{
+				armor = 2;
+			};
+		};
+	};
 	
 	
 	class Quadbike_01_base_F: Car_F {
@@ -291,6 +218,294 @@ class CUP_Wolfhound_Base : Wheeled_APC_F
 				isRadioRemovable = 0;
 			};
        	};
+	};	
+	
+	
+	class UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_A;
+	class UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_A_TWC: UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_A {
+		displayname = "Land Rover WMIK HMG (Rack+Ammo)";
+		maximumLoad = 5000;
+		enginePower = 120;
+		peakTorque = 430;
+		class AcreRacks {
+	   		class Rack_1 {
+		       		displayName = "Dash"; // Name is displayed in the interaction menu.
+				shortName = "Dash";
+				componentName = "ACRE_VRC103";
+				allowedPositions[] = {"inside", "external"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
+				disabledPositions[] = {};
+				defaultComponents[] = {};
+				mountedRadio = "ACRE_PRC117F"; // Predefined mounted radio
+				isRadioRemovable = 0;
+			};
+       	};
+		class transportWeapons
+		{
+			class _xx_law
+			{
+				weapon = "rhs_weap_m72a7";
+				count = 2;
+			};
+			class _xx_tripod
+			{
+				weapon = "UK3CB_BAF_Tripod";
+				count = 1;
+			};
+		};
+		class transportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "UK3CB_BAF_556_30Rnd";
+				count = 25;
+			};
+			class _xx_stanagTracer
+			{
+				magazine = "UK3CB_BAF_556_30Rnd_T";
+				count = 15;
+			};
+			class _xx_pistolmag
+			{
+				magazine = "rhsusf_mag_17Rnd_9x19_JHP";
+				count = 10;
+			};
+			class _xx_stanag_box
+			{
+				magazine = "UK3CB_BAF_556_200Rnd";
+				count = 10;
+			};
+			class _xx_stanag_boxTracer
+			{
+				magazine ="UK3CB_BAF_556_200Rnd_T";
+				count = 7;
+			};
+			class _xx_127_box
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 6;
+			};
+			class _xx_762_belt
+			{
+				magazine = "UK3CB_BAF_762_100Rnd";
+				count = 10;
+			};
+			class _xx_762_beltTracer
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 3;
+			};
+			class _xx_762_mag
+			{
+				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
+				count = 10;
+			};
+			class _xx_762_magTracer
+			{
+				magazine = "UK3CB_BAF_762_L42A1_20Rnd_T";
+				count = 5;
+			};
+			class _xx_1rnd_he
+			{
+				magazine = "1Rnd_HE_Grenade_shell";
+				count = 20;
+			};
+			class _xx_1rnd_smoke
+			{
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 5;
+			};
+			class _xx_handgrenade
+			{
+				magazine = "CUP_HandGrenade_L109A2_HE";
+				count = 5;
+			};
+			class _xx_smokeshell
+			{
+				magazine = "SmokeShell";
+				count = 5;
+			};
+			class _xx_smokeshell_red
+			{
+				magazine = "SmokeShellRed";
+				count = 2;
+			};
+			class _xx_smokeshell_blue
+			{
+				magazine = "SmokeShellBlue";
+				count = 2;
+			};
+		};
+		class transportItems
+		{
+			class _xx_defusalkit
+			{
+				name = "ACE_DefusalKit";
+				count = 2;
+			};
+			class _xx_shovel
+			{
+				name = "ACE_EntrenchingTool";
+				count = 2;
+			};
+			class _xx_cabletie
+			{
+				name = "ACE_CableTie";
+				count = 10;
+			};
+			class _xx_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 15;
+			};
+			class _xx_fieldDressing
+			{
+				name = "ACE_fieldDressing";
+				count = 25;
+			};
+			class _xx_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 25;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 25;
+			};
+			class quickclot
+			{
+				name = "ACE_quickclot";
+				count = 25;
+			};
+			class morphine
+			{
+				name = "ACE_morphine";
+				count = 20;
+			};
+			class epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class saline_250
+			{
+				name = "ACE_salineIV_250";
+				count = 20;
+			};
+			class saline
+			{
+				name = "ACE_salineIV_500";
+				count = 20;
+			};
+		};
+				class Wheels {
+			class LF {
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				frictionVsSlipGraph[] = {[0,1.3],[0.6,1.4],[1,1.3]};
+				latStiffX = 10;
+				latStiffY = 20;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 3250;
+				maxCompression = 0.25;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 0;
+				moi = 6;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 625;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = 0.285;
+				};
+				class LR: LF {
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				frictionVsSlipGraph[] = {[0,1.2],[0.2,1.5],[1,0.6]};
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 2950;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 9000;
+				moi = 6;
+				side = "left";
+				sprungMass = 625;
+				steering = 0;
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				width = 0.285;
+				};
+				class RF: LF {
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 3250;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 0;
+				moi = 6;
+				side = "right";
+				steering = 1;
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				width = 0.285;
+				};
+				class RR: LR {
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 2950;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 9000;
+				moi = 6;
+				side = "right";
+				steering = 0;
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				width = 0.285;
+				};
+			};
+			
+			class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.5; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+             
+           turnDecreaseConst  = 5.0; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 3.0; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.7; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
 	};	
 	
 	

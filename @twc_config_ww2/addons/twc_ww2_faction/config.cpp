@@ -7,6 +7,8 @@ class CfgPatches {
 			"WW2_British_Medic",
 			"WW2_British_Section_Leader",
 			"WW2_British_Rifleman",
+			"WW2_British_Marksman",
+			"WW2_British_SMG",
 			"WW2_British_2IC",
 			"WW2_British_MG",
 			"WW2_British_MGASS",
@@ -20,6 +22,8 @@ class CfgPatches {
 			"WW2_Para_British_Medic",
 			"WW2_Para_British_Section_Commander",
 			"WW2_Para_British_Rifleman",
+			"WW2_Para_British_Marksman",
+			"WW2_Para_British_SMG",
 			"WW2_Para_British_2IC",
 			"WW2_Para_British_MG",
 			"WW2_Para_British_MGASS",
@@ -36,7 +40,8 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"A3_Characters_F_BLUFOR",
-			"A3_Characters_F_OPFOR"
+			"A3_Characters_F_OPFOR",
+			"twc_faction"
 		};
 	};
 };
@@ -70,9 +75,11 @@ class CfgVehicles {
 	#include "base_units.hpp"
 
 	#include "early\infantry.hpp"
+	#include "early\backpacks.hpp"
 	#include "late\infantry.hpp"
+	#include "late\backpacks.hpp"
 	#include "late\paratroopers.hpp"
-	#include "1956\infantry.hpp"
+	//#include "1956\infantry.hpp"
 	
 	#include "aussie\backpacks.hpp"
 };

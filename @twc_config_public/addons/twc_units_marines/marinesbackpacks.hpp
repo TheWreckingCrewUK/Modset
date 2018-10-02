@@ -78,6 +78,7 @@
 		scope = 1;
 		class TransportItems
 		{
+			item_nc(ACE_surgicalKit,1);
 			item_nc(ACE_personalAidKit,1);
             item_nc(ACE_fieldDressing,12);
 			item_nc(ACE_elasticBandage,15);

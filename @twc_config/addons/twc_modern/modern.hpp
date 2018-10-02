@@ -56,7 +56,7 @@
 			"ACE_MapTools",
 			"ACE_EarPlugs"
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -87,7 +87,7 @@
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
-		displayName="Section Leader";
+		displayName="Section Commander";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
@@ -233,7 +233,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-			"ukcw_L1A1_law"
+			"CUP_launch_M72A6"
 		};
 		respawnweapons[]=
 		{
@@ -241,7 +241,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-			"ukcw_L1A1_law"
+			"CUP_launch_M72A6"
 		};
 		magazines[]=
 		{
@@ -1331,7 +1331,7 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"ukcw_L1A1_law",
+			"CUP_launch_M72A6",
 			"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -1339,7 +1339,7 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"ukcw_L1A1_law",
+			"CUP_launch_M72A6",
 			"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -1384,7 +1384,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-			"ukcw_L1A1_law",
+			"CUP_launch_M72A6",
 			"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -1393,7 +1393,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-			"ukcw_L1A1_law",
+			"CUP_launch_M72A6",
 			"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -1481,7 +1481,7 @@
 	};
 	class Modern_British_2IC_COIN: Modern_British_Pointman
 	{
-		displayName="Grenadier";
+		displayName="2iC";
 		editorSubcategory = "Men_Modern_COIN";
 		vehicleClass="Men_Modern_COIN";
 		backpack="TWC_Backpack_Modern_2IC";
@@ -1506,7 +1506,7 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"ukcw_L1A1_law",
+			"CUP_launch_M72A6",
 			"UK3CB_BAF_L131A1"		
 		};
 		respawnweapons[]=
@@ -1514,7 +1514,7 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"ukcw_L1A1_law",
+			"CUP_launch_M72A6",
 			"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
@@ -1561,7 +1561,7 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L129A1_Grippod_TA648",
-			"ukcw_L1A1_law",
+			"CUP_launch_M72A6",
 			"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
@@ -1570,8 +1570,8 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L129A1_Grippod_TA648",
-			"ukcw_L1A1_law",
-			"UK3CB_BAF_L131A1"	
+			"CUP_launch_M72A6",
+			"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
 		{

@@ -10,6 +10,7 @@ class TWC_Weapon_762_GPMG_Vehicle: CUP_Vlmg_L94A1_Coax {
 class TWC_Weapon_30mm_Rarden_Vehicle: autocannon_Base_F {
 	displayName = "L21A1 Rarden";
 	magazines[] = {"TWC_Magazine_30mm_3rd_APDS", "TWC_Magazine_30mm_3rd_HET"};
+	magazineReloadTime = 1.2;
 	
 	class player: Mode_FullAuto {
 		magazineReloadTime = 1.2;

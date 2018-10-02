@@ -379,6 +379,203 @@ class CfgGroups
 								position[] = {17,0,0};
 						};
 					};
+					class 2000_FST_Desert
+					{
+						name = "Fire Support Team"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
+						{
+								side = 1;
+								vehicle = "2000_British_FSTCommander_Desert"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "2000_British_FSTAssistant_Desert";
+								rank = "PRIVATE";
+								position[] = {3,0,0};
+						};
+						class Unit2
+						{
+								side = 1;
+								vehicle = "2000_British_FSTAssistant_Desert";
+								rank = "PRIVATE";
+								position[] = {5,0,0};
+						};
+					};
+				};
+				class 2000_Woodland
+				{
+					name = "TWC 2000 Woodland"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+					class 2000_Section_Desert
+					{
+						name = "Section"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
+						{
+								side = 1;
+								vehicle = "2000_British_SectionCommander"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "2000_British_Rifleman";
+								rank = "PRIVATE";
+								position[] = {3,0,0};
+						};
+						class Unit2
+						{
+								side = 1;
+								vehicle = "2000_British_Gunner";
+								rank = "PRIVATE";
+								position[] = {5,0,0};
+						};
+						class Unit3
+						{
+								side = 1;
+								vehicle = "2000_British_Grenadier";
+								rank = "PRIVATE";
+								position[] = {7,0,0};
+						};
+						class Unit4
+						{
+								side = 1;
+								vehicle = "2000_British_2IC";
+								rank = "PRIVATE";
+								position[] = {9,0,0};
+						};
+						class Unit5
+						{
+								side = 1;
+								vehicle = "2000_British_Rifleman";
+								rank = "PRIVATE";
+								position[] = {11,0,0};
+						};
+						class Unit6
+						{
+								side = 1;
+								vehicle = "2000_British_MachineGunner";
+								rank = "PRIVATE";
+								position[] = {13,0,0};
+						};
+						class Unit7
+						{
+								side = 1;
+								vehicle = "2000_British_mg_assistant";
+								rank = "PRIVATE";
+								position[] = {15,0,0};
+						};
+						class Unit8
+						{
+								side = 1;
+								vehicle = "2000_British_Medic";
+								rank = "PRIVATE";
+								position[] = {17,0,0};
+						};
+					};
+					
+					class 2000_FST
+					{
+						name = "Fire Support Team"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
+						{
+								side = 1;
+								vehicle = "2000_British_FSTCommander"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "2000_British_FSTAssistant";
+								rank = "PRIVATE";
+								position[] = {3,0,0};
+						};
+						class Unit2
+						{
+								side = 1;
+								vehicle = "2000_British_FSTAssistant";
+								rank = "PRIVATE";
+								position[] = {5,0,0};
+						};
+					};
+					
+					class 2000_Sniperteam
+					{
+						name = "Sniper Team"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
+						{
+								side = 1;
+								vehicle = "2000_British_Spotter"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "2000_British_Sniper";
+								rank = "PRIVATE";
+								position[] = {3,0,0};
+						};
+					};
+					
+					class 2000_jetteam
+					{
+						name = "Jet Team"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
+						{
+								side = 1;
+								vehicle = "2000_British_FSTForwardObserver"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "2000_British_JetPilot";
+								rank = "PRIVATE";
+								position[] = {3,0,0};
+						};
+					};
+					class 2000_armourcrew
+					{
+						name = "Armour Crew"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
+						{
+								side = 1;
+								vehicle = "2000_British_Vehicle_Commander"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "2000_British_Vehicle_Crew";
+								rank = "PRIVATE";
+								position[] = {3,0,0};
+						};
+						class Unit2
+						{
+								side = 1;
+								vehicle = "2000_British_Vehicle_Crew";
+								rank = "PRIVATE";
+								position[] = {5,0,0};
+						};
+					};
 				};
 
 

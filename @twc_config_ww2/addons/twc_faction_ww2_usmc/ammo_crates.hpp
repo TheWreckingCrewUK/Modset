@@ -57,22 +57,16 @@ class TWC_AmmoBox_TWC_USMC_Squad: TWC_AmmoBox_WW2_Portable
 	
 	class TransportMagazines 
 	{
-		// M1A1 Thompson
+		// M1A1 Thompson/M3 Grease Gun
 		class _XX_SMG_Mag
 		{
 			magazine = "fow_30Rnd_45acp";
-			count = 6;
-		};		
-		// M55 Reising
-		class _XX_Carbine_Mag
-		{
-			magazine = "fow_20Rnd_45acp";
-			count = 15;
-		};				
-		// M1903 Springfield
+			count = 21;
+		};
+		// M1 Garand
 		class _XX_Rifle_Mag
 		{
-			magazine = "fow_5Rnd_762x63";
+			magazine = "fow_8Rnd_762x63";
 			count = 30;
 		};
 		// M1918 BAR
@@ -125,7 +119,7 @@ class TWC_AmmoBox_TWC_USMC_Rockets: TWC_AmmoBox_WW2_Portable
 		};
 		class _XX_Carbine_Mag
 		{
-			magazine = "fow_20Rnd_45acp";
+			magazine = "fow_30Rnd_45acp";
 			count = 6;
 		};
 	};

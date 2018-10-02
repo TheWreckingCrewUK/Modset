@@ -299,6 +299,71 @@ class WW2_British_Rifleman: WW2_British_Base {
 	};
 };
 
+class WW2_British_Marksman: WW2_British_Rifleman {
+	displayName = "Marksman";
+	weapons[] = {
+		"Throw",
+		"Put",
+		"twc_mk1t"
+	};
+	respawnWeapons[] = {
+		"Throw",
+		"Put",
+		"twc_mk1t"
+	};
+};
+
+class WW2_British_SMG: WW2_British_Rifleman {
+	displayName = "Submachine Gunner";
+	weapons[] = {
+		"Throw",
+		"Put",
+		"fow_w_sten_mk2"
+	};
+
+	respawnWeapons[] = {
+		"Throw",
+		"Put",
+		"fow_w_sten_mk2"
+	};
+
+	magazines[] = {
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"twc_no82",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1"
+	};
+
+	respawnMagazines[] = {
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"fow_32Rnd_9x19_sten",
+		"twc_no82",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1",
+		"fow_e_no36mk1"
+	};
+};
+
 class WW2_British_2IC: WW2_British_Rifleman {
 	displayName = "2iC";
 	uniformClass = "fow_u_uk_bd40_01_lance_corporal";
@@ -444,22 +509,28 @@ class WW2_British_AT: WW2_British_Base {
 	weapons[] = {
 		"Throw",
 		"Put",
-		"fow_w_piat"
+		"fow_w_piat",
+		"fow_w_webley"
 	};
 
 	respawnWeapons[] = {
 		"Throw",
 		"Put",
-		"fow_w_piat"
+		"fow_w_piat",
+		"fow_w_webley"
 	};
 
 	magazines[] = {
 		"fow_1Rnd_piat_HEAT",
+		"fow_6Rnd_455",
+		"fow_6Rnd_455",
 		"twc_no82"
 	};
 
 	respawnMagazines[] = {
 		"fow_1Rnd_piat_HEAT",
+		"fow_6Rnd_455",
+		"fow_6Rnd_455",
 		"twc_no82"
 	};
 };

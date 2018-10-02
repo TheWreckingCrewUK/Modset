@@ -23,6 +23,8 @@ class TWC_Vehicle_ColdWar_FV432_Woodland: ukcw_fv432 {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd, ADD_QNTY(COLDWAR_SECTION_RIFLE));
 		ADD_MAGA(UK3CB_BAF_762_20Rnd_T, ADD_QNTY(COLDWAR_SECTION_RIFLE_T));
 		
+		ADD_MAGA(SP_30Rnd_9x19_L2A3_Sterling, ADD_QNTY(COLDWAR_SECTION_STERLING));
+		
 		ADD_MAGA(UK3CB_BAF_762_100Rnd, ADD_QNTY(COLDWAR_SECTION_MG));
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, ADD_QNTY(COLDWAR_SECTION_MG_T));
 		
@@ -31,7 +33,7 @@ class TWC_Vehicle_ColdWar_FV432_Woodland: ukcw_fv432 {
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukcw_L1A1_law, ADD_QNTY(COLDWAR_SECTION_LAW));
+		ADD_WEAP(sp_l1a1_law66, ADD_QNTY(COLDWAR_SECTION_LAW));
 	};
 
 	class TransportBackpacks { };
@@ -64,14 +66,14 @@ class TWC_Vehicle_ColdWar_FV432_Woodland_COIN: ukcw_fv432 {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd, ADD_QNTY(COLDWAR_SECTION_RIFLE));
 		ADD_MAGA(UK3CB_BAF_762_20Rnd_T, ADD_QNTY(COLDWAR_SECTION_RIFLE_T));
 		
-		ADD_MAGA(ukcw_30Rnd_762x51_STANAG, ADD_QNTY(COLDWAR_SECTION_COIN_MG));
+		ADD_MAGA(SP_30Rnd_762_L4, ADD_QNTY(COLDWAR_SECTION_COIN_MG));
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukcw_L1A1_law, ADD_QNTY(COLDWAR_SECTION_LAW));
+		ADD_WEAP(sp_l1a1_law66, ADD_QNTY(COLDWAR_SECTION_LAW));
 	};
 
 	class TransportBackpacks { };
@@ -195,7 +197,6 @@ class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_Scorpion_d_L1 {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_CHIEFTAIN_MOD
-class ukcw_chieftainmk10;
 class TWC_Vehicle_ColdWar_Chieftain_Woodland: ukcw_chieftainmk10 {
 	scope = 2;
 	scopeCurator = 2;
@@ -217,6 +218,9 @@ class TWC_Vehicle_ColdWar_Chieftain_Woodland: ukcw_chieftainmk10 {
 	
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
+		ADD_MAGA(ukcw_l15a4_apds_hull, 40);
+		ADD_MAGA(ukcw_l31_hesh_hull, 20);
+		ADD_MAGA(ukcw_l34_smoke_hull, 4);
 	};
 	
 	class TransportWeapons { };

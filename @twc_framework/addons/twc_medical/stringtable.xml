@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="adv">
-    <Package name="aceCPR">
+	<Package name="aceCPR">
 		<Key ID="STR_TWC_CPR_COMPLETED">
 			<Original>%1 resuscitated the patient with CPR</Original>
 			<English>%1 resuscitated the patient with CPR</English>
@@ -25,6 +25,11 @@
 			<Original>%1 was unsuccesful with their defibrillator</Original>
 			<English>%1 was unsuccesful with their defibrillator</English>
 			<German>%1 hatte keinen Erfolg mit dem Defibrillator</German>
+		</Key>
+		<Key ID="STR_TWC_SUTURE_EXECUE">
+			<Original>%1 sutured a wound</Original>
+			<English>%1 sutured a wound</English>
+			<German>%1 hat eine Wunde vernäht</German>
 		</Key>
 	</Package>
 </Project>

@@ -1,5 +1,6 @@
 class cfgVehicles {
 	class Logic;
+	class ModuleOrdnanceMortar_F;
 	
 	class Module_Base: Logic {
 		class AttributesBase;
@@ -21,6 +22,8 @@ class cfgVehicles {
 			class Player;
 		};
 	};
+	
+	class ModuleCAS_F;
 
 	class twc_ModuleMission: Module_F {
 		author="[TWC] jayman";
@@ -140,6 +143,19 @@ class cfgVehicles {
 				defaultValue=1;
 			};
 		};
+	};
+	
+	class twc_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_dummyround_artillery_small";
+	};
+	class twc_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_dummyround_artillery_medium";
+	};
+	class twc_ModuleOrdnanceMortar_Dummy_big: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_dummyround_artillery_big";
 	};
 	
 	class twc_moduelHC: Module_F {
@@ -287,8 +303,80 @@ class cfgVehicles {
 		displayName = "Hint Unit Medical Info";
 	};
 
+	class TWC_Module_CreateTask: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Create Task";
+		function = "twc_fnc_moduleCreateTask";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\complete_task_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Id {
+				displayName="Task ID";
+				description="Unique Task ID";
+				typeName="String";
+				defaultValue="";
+			};
+			class Description {
+				displayName="Description";
+				description="Task Description";
+				typeName="String";
+				defaultValue="";
+			};
+			class Title {
+				displayName="Title";
+				description="Task Title";
+				typeName="String";
+				defaultValue="";
+			};
+			class Position {
+				displayName="Position";
+				description="Position can be either marker, object, or position.";
+				typeName="String";
+				defaultValue="";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Creates a new Task.";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+	
+	class TWC_Module_GliderTakeOff: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Glider Take Off Action";
+		function = "twc_fnc_moduleGliderTakeOff";
+		scope = 2;
+		isGlobal = 2;
+		isTriggerActivated = 0;
+		icon = "\twc_framework\ui\airborne_ca.paa";
+		functionPriority = 5;
+		isDisposable = 1;
+
+		class Arguments {
+			class Capturedata {
+				displayName="Capture Data";
+				description="A variable that has the capture data.";
+				//typeName="STRING";
+				defaultValue="";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Creates an action for commanders that allows them to control when the gliders take off.";
+			sync[] = {"EmptyDetector", "Plane_F"};
+		};
+	};
+
 	class TWC_Module_VirtualArtillery: Module_F {
-		author = "[TWC] Bosenator & jayman";
+		author = "[TWC] Bosenator & jayman & Rik";
 		category = "twc_mission_framework";
 		displayName = "Virtual Artillery";
 		function = "twc_fnc_moduleVirtualArtillery";
@@ -312,15 +400,30 @@ class cfgVehicles {
 						name="HE";
 						value="HE";
 					};
+					class HE_Harmless_small
+					{
+						name="HE Harmless (Small)";
+						value="HE_Harmless_Small";
+					};
+					class HE_Harmless_medium
+					{
+						name="HE Harmless (Medium)";
+						value="HE_Harmless_Medium";
+					};
+					class HE_Harmless_big
+					{
+						name="HE Harmless (Big)";
+						value="HE_Harmless_Big";
+					};
 					class Smoke
 					{
 						name="Smoke";
-						value="smoke";
+						value="SMOKE";
 					};
 					class Illum
 					{
 						name="Illum";
-						value="illum";
+						value="ILLUM";
 					};
 				};
 			};
@@ -351,6 +454,71 @@ class cfgVehicles {
 				description="Area marker defined SafeZone";
 				typeName="String";
 				defaultValue="nil";
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Call in Virtual Artillery";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+	
+	class TWC_Module_Artillery: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Artillery";
+		function = "twc_fnc_moduleArtillery";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\virtual_artillery_ca.paa";
+		functionPriority = 1;
+		class Arguments {
+			class Type
+			{
+				displayName="Type";
+				description="Type Of Ordinance";
+				typeName="STRING";
+				defaultValue="HE";
+				class values
+				{
+					class HE
+					{
+						name="HE";
+						value="HE";
+					};
+					class Smoke
+					{
+						name="Smoke";
+						value="SMOKE";
+					};
+					class Illum
+					{
+						name="Illum";
+						value="ILLUM";
+					};
+				};
+			};
+			class Rounds
+			{
+				displayName = "Rounds";
+				description="Number of rounds";
+				typeName="Number";
+				defaultValue=5;
+			};
+			class Dispersion
+			{
+				displayName = "Dispersion";
+				description="Dispersion diameter";
+				typeName="Number";
+				defaultValue=250;
+			};
+			class Delay
+			{
+				displayName = "Delay";
+				description="Delay between rounds";
+				typeName="Number";
+				defaultValue=10;
 			};
 		};
 		class ModuleDescription: ModuleDescription {
@@ -451,6 +619,23 @@ class cfgVehicles {
 		};
 	};
 	
+	class TWC_Module_DummyBullets: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Harmless Static";
+		function = "twc_fnc_moduleDummyBullets";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\stationary_units_ca.paa";
+		functionPriority = 1;
+		class ModuleDescription: ModuleDescription {
+			description = "TWC Dummy Bullets Function";
+			sync[] = {"AnyAI"};
+		};
+	};
+	
 	class TWC_Module_AirAssault: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";
@@ -533,7 +718,7 @@ class cfgVehicles {
 		isGlobal = 0;
 		isTriggerActivated = 1;
 		isDisposable = 0;
-		icon = "\twc_framework\ui\airborne_ca.paa"; // TODO
+		icon = "\twc_framework\ui\airborne_ca.paa";
 		functionPriority = 1;
 		class Arguments
 		{
@@ -683,6 +868,79 @@ class cfgVehicles {
 		};
 		class ModuleDescription: ModuleDescription {
 			description = "Call in Attack Plane";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_Amient_AttackPlane: ModuleCAS_F
+	{
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Ambient Attack Plane";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\attack_plane_ca.paa";
+		functionPriority = 1;
+		class Arguments
+		{
+			class Type
+			{
+				description = "";
+				displayName = "Type";
+				typeName = "NUMBER";
+				class values
+				{
+					class Bomb
+					{
+						name = "CAS - Bomb Strike";
+						value = 3;
+					};
+					class Gun
+					{
+						default = 1;
+						name = "CAS - Gun Run";
+						value = 0;
+					};
+					class GunMissiles
+					{
+						name = "CAS - Gun and Missiles";
+						value = 2;
+					};
+					class Missiles
+					{
+						name = "CAS - Missile Strike";
+						value = 1;
+					};
+				};
+			};
+			class Vehicle
+			{
+				description = "";
+				displayName = "Plane";
+				class values
+				{
+					/*class Spitfire
+					{
+						name = "Spitfire";
+						value = "spitfire_v_G";
+					}; Todo after the spitfire gets fixed.*/
+					class Hellcat_US
+					{
+						name = "Hellcat (US)";
+						value = "fow_va_f6f_c";
+					};
+					class Hellcat_UK
+					{
+						name = "Hellcat (UK)";
+						value = "fow_va_f6f_c_faa";
+					};
+				};
+			};
+		};
+		class ModuleDescription  {
+			description = "Call in Ambient Attack Plane, automatically despawned";
 			sync[] = {""};
 		};
 	};
