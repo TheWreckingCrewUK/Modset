@@ -177,4 +177,22 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	class rhs_weap_m4a1_m203s_d;
+	class twc_rhs_weap_m4a1_m203_d_LDS: rhs_weap_m4a1_m203s_d
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="RKSL_optic_LDS";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="UK3CB_BAF_LLM_IR_Black";
+			};
+		};
+	};
 };

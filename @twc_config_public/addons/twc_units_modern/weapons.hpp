@@ -19,7 +19,6 @@ class cfgWeapons
 	class UK3CB_BAF_L129A1;
 	class UK3CB_BAF_L128A1;
 	class UK3CB_BAF_L85A2_UGL;
-	class UK3CB_BAF_L115A3;
 	class UK3CB_BAF_L85A2_RIS_Tan;
 	class arifle_Mk20_F;
 	class Rifle_Base_F;
@@ -262,35 +261,6 @@ class cfgWeapons
 			{
 				slot="UK3CB_underbarrel_rifle_slot";
 				item="UK3CB_underbarrel_acc_fgrip_bipod";
-			};
-		};
-	};
-	class twc_l115a3_wd: UK3CB_BAF_L115A3
-	{
-		scope = 1;
-		author = "jayman";
-		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "asdg_OpticRail_UK3CB_BAF_L115";
-				item = "RKSL_optic_PMII_525";
-			};
-		};
-	};
-	class UK3CB_BAF_L115A3_Ghillie;
-	class twc_l115a3_gh: UK3CB_BAF_L115A3_Ghillie
-	{
-		scope = 1;
-		author = "jayman";
-		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "asdg_OpticRail_UK3CB_BAF_L115";
-				item = "RKSL_optic_PMII_525";
 			};
 		};
 	};

@@ -1897,6 +1897,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACRE_PRC148",
+			"itemCTAB",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -1928,6 +1929,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACRE_PRC148",
+			"itemCTAB",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_packingBandage",
@@ -1953,7 +1955,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"Put",
 			"UK3CB_BAF_Soflam_Laserdesignator",
 			"rhsusf_weap_glock17g4",
-			"twc_rhs_weap_m4a1_d_LDS"
+			"twc_rhs_weap_m4a1_m203_d_LDS"
 		};
 		respawnweapons[]=
 		{
@@ -1961,7 +1963,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"Put",
 			"UK3CB_BAF_Soflam_Laserdesignator",
 			"rhsusf_weap_glock17g4",
-			"twc_rhs_weap_m4a1_d_LDS"
+			"twc_rhs_weap_m4a1_m203_d_LDS"
 		};
 		magazines[]=
 		{
@@ -1974,6 +1976,13 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"Laserbatteries",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeGreen_Grenade_shell",
+			"1Rnd_SmokeGreen_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"rhsusf_mag_17Rnd_9x19_JHP"
 		};
@@ -1988,6 +1997,13 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"Laserbatteries",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeGreen_Grenade_shell",
+			"1Rnd_SmokeGreen_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"rhsusf_mag_17Rnd_9x19_JHP"
 		};
@@ -2204,6 +2220,38 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_Vector",
 			"rhsusf_weap_glock17g4",
 			"twc_rhs_weap_m4a1_d_LDS"
+		};
+		magazines[]=
+		{
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP"
+		};
+		Respawnmagazines[]=
+		{
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP"
 		};
 	};
 	

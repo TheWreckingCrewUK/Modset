@@ -77,6 +77,13 @@ class CfgAmmo {
 	class Chemlight_Yellow: Chemlight_base {
 		timeToLive = 150000;
 	};
+	
+	class B_338_Ball;
+	class ACE_338_Ball_API526: B_338_Ball
+	{
+		caliber = 6;
+		penetrationDirDistribution = 0.05;
+	};
 };
 
 class mode_fullauto;
@@ -107,6 +114,47 @@ class CfgWeapons {
 
 		magazines[] = {"CUP_PG7V_M", "CUP_PG7VM_M", "CUP_PG7VL_M", "CUP_PG7VR_M", "CUP_OG7_M", "CUP_TBG7V_M", "twc_og7_c_m"};
 		};
+		
+	class UK3CB_BAF_L115A3;
+	class twc_l115a3_wd: UK3CB_BAF_L115A3
+	{
+		scope = 1;
+		author = "jayman";
+		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "asdg_OpticRail_UK3CB_BAF_L115";
+				item = "RKSL_optic_PMII_525";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "asdg_muzzleslot_UK3CB_BAF_L115";
+				item= "UK3CB_BAF_Silencer_L115A3";
+			};
+		};
+	};
+	class UK3CB_BAF_L115A3_Ghillie;
+	class twc_l115a3_gh: UK3CB_BAF_L115A3_Ghillie
+	{
+		scope = 1;
+		author = "jayman";
+		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "asdg_OpticRail_UK3CB_BAF_L115";
+				item = "RKSL_optic_PMII_525";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "asdg_muzzleslot_UK3CB_BAF_L115";
+				item= "UK3CB_BAF_Silencer_L115A3";
+			};
+		};
+	};
 		
 	
 	class Rifle_Base_F;
@@ -163,6 +211,7 @@ class CfgWeapons {
 	{
 		class eventhandlers;
 		class mode_fullauto;
+		class manual;
 	};
 	class LMG_RCWS: MGun {
 		class EventHandlers: EventHandlers {
@@ -172,7 +221,7 @@ class CfgWeapons {
 	class GMG_F: MGun {
 		reloadtime = 0.22;
 		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4,  (velocity _bullet select 2) + (random 24) - 12];};twc_gpmglastfired = time;";
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5,  (velocity _bullet select 2) + (random 20) - 10];} else {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4,  (velocity _bullet select 2) + (random 6) - 3];};twc_gpmglastfired = time;";
 		};
 	};
 	class Default;
@@ -415,7 +464,7 @@ class CfgVehicles {
 		{
 			class MainTurret : MainTurret
 			{
-				magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+				magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
 			};
 		};
 	};
@@ -462,7 +511,7 @@ class CfgVehicles {
 		class Wheels:Wheels {
 			class LF:LF {
 				springDamperRate = 22000;
-				springStrength = 40000;
+				springStrength = 80000;
 				maxCompression = 0.3;
 				maxBrakeTorque = 10000;
 				maxHandBrakeTorque = 11000;
@@ -647,7 +696,7 @@ class CfgVehicles {
 				maxCompression = 0.4;
 				//MaxDroop = 0.2;
 				sprungMass = 4250;
-				springStrength = 25000;
+				springStrength = 75000;
 				springDamperRate = 8000;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
