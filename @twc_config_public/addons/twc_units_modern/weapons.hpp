@@ -294,17 +294,6 @@ class cfgWeapons
 	};
 	
 	
-	class rhs_weap_akm: rhs_weap_ak74m_Base_F
-	{
-		magazines[] = {"CUP_30Rnd_762x39_AK47_M", "rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm_tracer", "rhs_30Rnd_762x39mm_89", "rhs_30Rnd_762x39mm_U"};
-	};
-	
-	class rhs_weap_ak74m;
-	class rhs_weap_svd: rhs_weap_ak74m
-	{
-		magazines[] = {"rhs_10Rnd_762x54mmR_7N1", "CUP_10Rnd_762x54_SVD_M", "twc_10Rnd_762x54mmR_7N1_P"};
-	};
-	
 	class rhs_weap_ak74m_zenitco01;
 	class rhs_weap_ak74m_zenitco01_b33: rhs_weap_ak74m_zenitco01
 	{
