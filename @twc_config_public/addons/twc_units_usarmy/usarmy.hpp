@@ -99,12 +99,12 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -113,12 +113,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -163,12 +163,12 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -186,12 +186,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -245,12 +245,12 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -259,12 +259,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -309,12 +309,12 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -332,12 +332,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -512,12 +512,12 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -526,12 +526,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -577,17 +577,17 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"SmokeShell",
 			"SmokeShell"
 		};
@@ -686,12 +686,12 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -700,12 +700,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -754,12 +754,12 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -768,12 +768,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -818,12 +818,12 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -841,12 +841,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -900,12 +900,12 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -914,12 +914,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -962,12 +962,12 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -985,12 +985,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -1101,14 +1101,14 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1117,14 +1117,14 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1224,12 +1224,12 @@
 		};
 		magazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1238,12 +1238,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",

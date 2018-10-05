@@ -87,6 +87,8 @@ class Modern_USMC_Base_d: B_Soldier_base_F
 scope=1;
 editorSubcategory = "USMC_Modern_D";
 uniformClass="rhs_uniform_FROG01_d";
+twc_radioType = "ACRE_PRC148";
+twc_radioChannel = 3;
 
 };
 
