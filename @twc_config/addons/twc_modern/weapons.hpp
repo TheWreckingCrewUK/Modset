@@ -122,6 +122,16 @@ class cfgWeapons
 				slot="asdg_FrontSideRail_UK3CB_BAF_L129A1";
 				item="UK3CB_BAF_LLM_Flashlight_Black";
 			};
+			class LinkedItemsBipod
+			{
+				slot="UK3CB_underbarrel_rifle_slot";
+				item="UK3CB_underbarrel_acc_bipod";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="asdg_MuzzleSlot_UK3CB_BAF_L129A1";
+				item="UK3CB_BAF_Silencer_L115A3";
+			};
 		};
 	};
 };

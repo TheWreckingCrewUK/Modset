@@ -130,7 +130,7 @@ class CfgWeapons {
 			};
 			class LinkedItemsMuzzle
 			{
-				slot = "asdg_muzzleslot_UK3CB_BAF_L115";
+				slot = "asdg_MuzzleSlot_UK3CB_BAF_L115";
 				item= "UK3CB_BAF_Silencer_L115A3";
 			};
 		};

@@ -442,7 +442,7 @@
 		{
 			class _xx_Lapua
 				{
-					magazine = "UK3CB_BAF_762_100Rnd";
+					magazine = "ACE_10Rnd_338_300gr_HPBT_Mag";
 					count = 5;
 				};
 		};
@@ -462,8 +462,8 @@
 		{
 			class _xx_Lapua
 			{
-				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 5;
+				magazine = "ACE_10Rnd_338_300gr_HPBT_Mag";
+				count = 10;
 			};
 			class _xx_MarksmanMag
 			{
