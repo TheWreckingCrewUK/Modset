@@ -322,16 +322,20 @@
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L110A2_ELCAN3D"
+			"UK3CB_BAF_L110A2_ELCAN3D",
+			"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
-			"Put",	
-			"UK3CB_BAF_L110A2_ELCAN3D"
+			"Put",
+			"UK3CB_BAF_L110A2_ELCAN3D",
+			"UK3CB_BAF_L131A1"
 		};
 		magazines[]=
 		{
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_556_200Rnd",
 			"UK3CB_BAF_556_200Rnd",
 			"UK3CB_BAF_556_200Rnd_T",
@@ -341,6 +345,8 @@
 		};
 		Respawnmagazines[]=
 		{
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_556_200Rnd",
 			"UK3CB_BAF_556_200Rnd",
 			"UK3CB_BAF_556_200Rnd_T",
@@ -879,9 +885,6 @@
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_API526_Mag",
 			"ACE_10Rnd_338_API526_Mag",
 			"ACE_10Rnd_338_API526_Mag",
 			"ACE_10Rnd_338_API526_Mag",
@@ -901,9 +904,6 @@
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_API526_Mag",
 			"ACE_10Rnd_338_API526_Mag",
 			"ACE_10Rnd_338_API526_Mag",
 			"ACE_10Rnd_338_API526_Mag",

@@ -404,8 +404,14 @@ class TWC_AmmoBox_Modern_Javelin_Portable: TWC_AmmoBox_Portable {
 class TWC_AmmoBox_Modern_Sniper_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "UNFINISHED - Sniper Resupply (Portable)";
+	displayName = "Sniper Resupply (Portable)";
 	editorSubcategory = "TWC_Crates_Modern";
+	
+	class TransportMagazines {
+		maga_nc(UK3CB_BAF_762_L42A1_20Rnd, 4);
+		maga_nc(ACE_10Rnd_338_300gr_HPBT_Mag, 4);
+		maga_nc(ACE_10Rnd_338_API526_Mag, 2);
+	};
 	
 	class TransportItems {
 		item_nc(ACE_fieldDressing, 4);
