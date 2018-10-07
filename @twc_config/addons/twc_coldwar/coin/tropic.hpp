@@ -1,12 +1,12 @@
-//COIN, Desert
+//COIN, TROPIC
 //Section
-class TWC_Infantry_ColdWar_COIN_Desert_Rifleman: TWC_Infantry_ColdWar_Regular_Desert_Rifleman
+class TWC_Infantry_ColdWar_COIN_Tropic_Rifleman: TWC_Infantry_ColdWar_Regular_Tropic_Rifleman
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -14,7 +14,7 @@ class TWC_Infantry_ColdWar_COIN_Desert_Rifleman: TWC_Infantry_ColdWar_Regular_De
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -44,13 +44,13 @@ class TWC_Infantry_ColdWar_COIN_Desert_Rifleman: TWC_Infantry_ColdWar_Regular_De
 		"SmokeShell"
 	};
 };
-class TWC_Infantry_ColdWar_COIN_Desert_Rifleman_SUIT: TWC_Infantry_ColdWar_Regular_Desert_Rifleman_SUIT
+class TWC_Infantry_ColdWar_COIN_Tropic_Rifleman_SUIT: TWC_Infantry_ColdWar_Regular_Tropic_Rifleman_SUIT
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -58,7 +58,7 @@ class TWC_Infantry_ColdWar_COIN_Desert_Rifleman_SUIT: TWC_Infantry_ColdWar_Regul
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -88,14 +88,14 @@ class TWC_Infantry_ColdWar_COIN_Desert_Rifleman_SUIT: TWC_Infantry_ColdWar_Regul
 		"SmokeShell"
 	};
 };
-class TWC_Infantry_ColdWar_COIN_Desert_SectionCommander: TWC_Infantry_ColdWar_Regular_Desert_SectionCommander
+class TWC_Infantry_ColdWar_COIN_Tropic_SectionCommander: TWC_Infantry_ColdWar_Regular_Tropic_SectionCommander
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	backpack = "TWC_Backpack_ColdWar_COIN_SectionCommander";
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -103,20 +103,20 @@ class TWC_Infantry_ColdWar_COIN_Desert_SectionCommander: TWC_Infantry_ColdWar_Re
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 };
-class TWC_Infantry_ColdWar_COIN_Desert_2iC: TWC_Infantry_ColdWar_Regular_Desert_2iC
+class TWC_Infantry_ColdWar_COIN_Tropic_2iC: TWC_Infantry_ColdWar_Regular_Tropic_2iC
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	backpack = "TWC_Backpack_ColdWar_COIN_2iC";
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -124,19 +124,19 @@ class TWC_Infantry_ColdWar_COIN_Desert_2iC: TWC_Infantry_ColdWar_Regular_Desert_
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 };
-class TWC_Infantry_ColdWar_COIN_Desert_MG: TWC_Infantry_ColdWar_Regular_Desert_MG
+class TWC_Infantry_ColdWar_COIN_Tropic_MG: TWC_Infantry_ColdWar_Regular_Tropic_MG
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -144,7 +144,7 @@ class TWC_Infantry_ColdWar_COIN_Desert_MG: TWC_Infantry_ColdWar_Regular_Desert_M
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -172,14 +172,14 @@ class TWC_Infantry_ColdWar_COIN_Desert_MG: TWC_Infantry_ColdWar_Regular_Desert_M
 		"SmokeShell"
 	};
 };
-class TWC_Infantry_ColdWar_COIN_Desert_ASSMG: TWC_Infantry_ColdWar_Regular_Desert_ASSMG
+class TWC_Infantry_ColdWar_COIN_Tropic_ASSMG: TWC_Infantry_ColdWar_Regular_Tropic_ASSMG
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	backpack = "TWC_Backpack_ColdWar_COIN_ASSMG";
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -187,7 +187,7 @@ class TWC_Infantry_ColdWar_COIN_Desert_ASSMG: TWC_Infantry_ColdWar_Regular_Deser
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -195,14 +195,14 @@ class TWC_Infantry_ColdWar_COIN_Desert_ASSMG: TWC_Infantry_ColdWar_Regular_Deser
 };
 
 //Platoon Command
-class TWC_Infantry_ColdWar_COIN_Desert_Platoon_Commander: TWC_Infantry_ColdWar_Regular_Desert_Platoon_Commander
+class TWC_Infantry_ColdWar_COIN_Tropic_Platoon_Commander: TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -210,20 +210,20 @@ class TWC_Infantry_ColdWar_COIN_Desert_Platoon_Commander: TWC_Infantry_ColdWar_R
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 };
-class TWC_Infantry_ColdWar_COIN_Desert_Platoon_Sergeant: TWC_Infantry_ColdWar_Regular_Desert_Platoon_Sergeant
+class TWC_Infantry_ColdWar_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Sergeant
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Sergeant";
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -231,20 +231,20 @@ class TWC_Infantry_ColdWar_COIN_Desert_Platoon_Sergeant: TWC_Infantry_ColdWar_Re
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 };
-class TWC_Infantry_ColdWar_COIN_Desert_Platoon_Medic: TWC_Infantry_ColdWar_Regular_Desert_Platoon_Medic
+class TWC_Infantry_ColdWar_COIN_Tropic_Platoon_Medic: TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Medic
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Medic";
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -252,20 +252,20 @@ class TWC_Infantry_ColdWar_COIN_Desert_Platoon_Medic: TWC_Infantry_ColdWar_Regul
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 };
-class TWC_Infantry_ColdWar_COIN_Desert_CSM: TWC_Infantry_ColdWar_Regular_Desert_CSM
+class TWC_Infantry_ColdWar_COIN_Tropic_CSM: TWC_Infantry_ColdWar_Regular_Tropic_CSM
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Sergeant";
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -273,7 +273,7 @@ class TWC_Infantry_ColdWar_COIN_Desert_CSM: TWC_Infantry_ColdWar_Regular_Desert_
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -281,13 +281,13 @@ class TWC_Infantry_ColdWar_COIN_Desert_CSM: TWC_Infantry_ColdWar_Regular_Desert_
 };
 
 //Sniper Team
-class TWC_Infantry_ColdWar_COIN_Desert_Sniper: TWC_Infantry_ColdWar_Regular_Desert_Sniper
+class TWC_Infantry_ColdWar_COIN_Tropic_Sniper: TWC_Infantry_ColdWar_Regular_Tropic_Sniper
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -295,19 +295,19 @@ class TWC_Infantry_ColdWar_COIN_Desert_Sniper: TWC_Infantry_ColdWar_Regular_Dese
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 };
-class TWC_Infantry_ColdWar_COIN_Desert_Spotter: TWC_Infantry_ColdWar_Regular_Desert_Spotter
+class TWC_Infantry_ColdWar_COIN_Tropic_Spotter: TWC_Infantry_ColdWar_Regular_Tropic_Spotter
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -315,7 +315,7 @@ class TWC_Infantry_ColdWar_COIN_Desert_Spotter: TWC_Infantry_ColdWar_Regular_Des
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -323,13 +323,13 @@ class TWC_Infantry_ColdWar_COIN_Desert_Spotter: TWC_Infantry_ColdWar_Regular_Des
 };
 
 //Artillery Crew
-class TWC_Infantry_ColdWar_COIN_Desert_Artillery_Commander: TWC_Infantry_ColdWar_Regular_Desert_Artillery_Commander
+class TWC_Infantry_ColdWar_COIN_Tropic_Artillery_Commander: TWC_Infantry_ColdWar_Regular_Tropic_Artillery_Commander
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -337,19 +337,19 @@ class TWC_Infantry_ColdWar_COIN_Desert_Artillery_Commander: TWC_Infantry_ColdWar
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 };
-class TWC_Infantry_ColdWar_COIN_Desert_Artillery_Crew: TWC_Infantry_ColdWar_Regular_Desert_Artillery_Crew
+class TWC_Infantry_ColdWar_COIN_Tropic_Artillery_Crew: TWC_Infantry_ColdWar_Regular_Tropic_Artillery_Crew
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -357,19 +357,19 @@ class TWC_Infantry_ColdWar_COIN_Desert_Artillery_Crew: TWC_Infantry_ColdWar_Regu
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 };
-class TWC_Infantry_ColdWar_COIN_Desert_FO: TWC_Infantry_ColdWar_Regular_Desert_FO
+class TWC_Infantry_ColdWar_COIN_Tropic_FO: TWC_Infantry_ColdWar_Regular_Tropic_FO
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -377,7 +377,7 @@ class TWC_Infantry_ColdWar_COIN_Desert_FO: TWC_Infantry_ColdWar_Regular_Desert_F
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -385,13 +385,13 @@ class TWC_Infantry_ColdWar_COIN_Desert_FO: TWC_Infantry_ColdWar_Regular_Desert_F
 };
 
 //Aircraft
-class TWC_Infantry_ColdWar_COIN_Desert_FAC: TWC_Infantry_ColdWar_Regular_Desert_FAC
+class TWC_Infantry_ColdWar_COIN_Tropic_FAC: TWC_Infantry_ColdWar_Regular_Tropic_FAC
 {
-	CATEGORY(TWC_Infantry_COIN_Desert)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -399,7 +399,7 @@ class TWC_Infantry_ColdWar_COIN_Desert_FAC: TWC_Infantry_ColdWar_Regular_Desert_
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_RA",
+		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
