@@ -3,7 +3,9 @@ class CfgPatches {
 		units[] = {
 			"twc_c5_hercules",
 			"TWC_T10_Parachute",
-			"TWC_T10_Parachute_backpack"
+			"TWC_T10_Parachute_backpack",
+			"TWC_Vehicle_Generic_Hercules_RAF",
+			"TWC_Vehicle_ColdWar_Hercules_RAF"
 		};
 
 		weapons[] = {};
@@ -17,7 +19,8 @@ class CfgPatches {
 			"A3_Air_F_Beta",
 			"CBA_XEH_A3",
 			"ace_common",
-			"ace_interaction"
+			"ace_interaction",
+			"TWC_gearFixes"
 		};
 	};
 };

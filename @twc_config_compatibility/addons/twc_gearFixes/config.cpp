@@ -432,6 +432,13 @@ class cfgRecoils
 };
 
 class CfgVehicles {
+	#include "acre_apcs.hpp"
+	#include "acre_boats.hpp"
+	#include "acre_cars.hpp"
+	#include "acre_helicopters.hpp"
+	#include "acre_planes.hpp"
+	#include "acre_tanks.hpp"
+
 	class Plane;
 	class CUP_AV8B_Base : Plane {
 		class AcreRacks {
