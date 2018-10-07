@@ -17,16 +17,5 @@ class TWC_Vehicle_ColdWar_RHIB_Black: I_C_Boat_Transport_02_F {
 
 	ace_interaction_canPush = 1;
 
-	class AcreRacks {
-		class Rack_1 {
-			displayName = "Vehicle Radio";
-			shortName = "Vehicle Radio";
-			componentName = "ACRE_VRC64";
-			allowedPositions[] = {"driver"};
-			disabledPositions[] = {};
-			defaultComponents[] = {};
-			mountedRadio = "ACRE_PRC77";
-			isRadioRemovable = 0;
-		};
-	};
+	REGULAR_77({"driver"}, {""})
 };

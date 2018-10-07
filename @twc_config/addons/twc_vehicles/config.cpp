@@ -95,8 +95,7 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"A3_Armor_F_Beta",
-			"TWC_gearFixes"
-			
+			"TWC_gearFixes",
 			"A3_Boat_F_Exp_Boat_Transport_01",
 			"A3_Boat_F_Exp_Boat_Transport_02",
 			"burnes_foxhound",
@@ -119,9 +118,7 @@ class CfgPatches {
 			"ukcw_cvrt",
 			"ukcw_fv432",
 			"ukcw_gazelle",
-
 			"TWC_Faction",
-
 			"ace_cargo",
 			"ace_interaction",
 			"ace_medical",
@@ -195,7 +192,40 @@ class CfgVehicles {
 
 	#define SECTION_SMOKE 6
 	#define SECTION_GRENADE 6
-	
+
+	//Vehicle Radios
+	#define PILOT_POSITIONS {"driver", "copilot"}
+
+	#define REGULAR_117(POSITIONS, INTERCOM) \
+	class AcreRacks { \
+		class Rack_1 { \
+			displayName = "Vehicle Radio"; \
+			shortName = "Vehicle Radio"; \
+			componentName = "ACRE_VRC103"; \
+			allowedPositions[] = POSITIONS; \
+			disabledPositions[] = {}; \
+			defaultComponents[] = {}; \
+			mountedRadio = "ACRE_PRC117F"; \
+			isRadioRemovable = 0;\
+			intercom[] = INTERCOM; \
+		}; \
+	};
+
+	#define REGULAR_77(POSITIONS, INTERCOM) \
+	class AcreRacks { \
+		class Rack_1 { \
+			displayName = "Vehicle Radio"; \
+			shortName = "Vehicle Radio"; \
+			componentName = "ACRE_VRC64"; \
+			allowedPositions[] = POSITIONS; \
+			disabledPositions[] = {}; \
+			defaultComponents[] = {}; \
+			mountedRadio = "ACRE_PRC77"; \
+			isRadioRemovable = 0;\
+			intercom[] = INTERCOM; \
+		}; \
+	};
+
 	// Custom TWC vehicles are defined below (they may inherit from above)
 	#include "vehicles\warriors.hpp"
 	#include "vehicles\lr_softtop.hpp"

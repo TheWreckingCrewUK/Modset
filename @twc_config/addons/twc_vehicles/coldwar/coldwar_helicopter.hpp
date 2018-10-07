@@ -38,19 +38,7 @@ class TWC_Vehicle_ColdWar_Puma_RAF: CUP_B_SA330_Puma_HC1_BAF {
 
 	class TransportBackpacks { };
 
-	class AcreRacks {
-		class Rack_1 {
-			displayName = "Vehicle Radio";
-			shortName = "Vehicle Radio";
-			componentName = "ACRE_VRC64";
-			allowedPositions[] = {"driver", "copilot"};
-			disabledPositions[] = {};
-			defaultComponents[] = {};
-			mountedRadio = "ACRE_PRC77";
-			isRadioRemovable = 0;
-			intercom[] = {"Intercom_2"};
-		};
-	};
+	REGULAR_77(PILOT_POSITIONS, {"Intercom_2"})
 };
 
 class TWC_Vehicle_ColdWar_Puma_RAF_COIN: CUP_B_SA330_Puma_HC1_BAF {
@@ -88,19 +76,7 @@ class TWC_Vehicle_ColdWar_Puma_RAF_COIN: CUP_B_SA330_Puma_HC1_BAF {
 
 	class TransportBackpacks { };
 
-	class AcreRacks {
-		class Rack_1 {
-			displayName = "Vehicle Radio";
-			shortName = "Vehicle Radio";
-			componentName = "ACRE_VRC64";
-			allowedPositions[] = {"driver", "copilot"};
-			disabledPositions[] = {};
-			defaultComponents[] = {};
-			mountedRadio = "ACRE_PRC77";
-			isRadioRemovable = 0;
-			intercom[] = {"Intercom_2"};
-		};
-	};
+	REGULAR_77(PILOT_POSITIONS, {"Intercom_2"})
 };
 
 #undef CURRENT_VEHICLE
@@ -129,17 +105,5 @@ class TWC_Vehicle_ColdWar_Chinook_RAF: ukcw_chinook_hc1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 	
-	class AcreRacks {
-		class Rack_1 {
-			displayName = "Vehicle Radio";
-			shortName = "Vehicle Radio";
-			componentName = "ACRE_VRC64";
-			allowedPositions[] = {"driver", "copilot"};
-			disabledPositions[] = {};
-			defaultComponents[] = {};
-			mountedRadio = "ACRE_PRC77";
-			isRadioRemovable = 0;
-			intercom[] = {"Intercom_2"};
-		};
-	};
+	REGULAR_77(PILOT_POSITIONS, {"Intercom_2"})
 };
