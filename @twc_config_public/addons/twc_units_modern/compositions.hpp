@@ -401,6 +401,76 @@ class CfgGroups
                                         };
                                 };
 
+								class Modern_Section_Mech
+                                {
+                                        name = "Section (Mechanised)"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Squadleader_Light"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Pointman_Light";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Grenadier_COIN_Light";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit4
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_2IC_COIN_Light";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+										class Unit5
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Autorifleman_COIN_Light";
+                                                rank = "PRIVATE";
+                                                position[] = {11,0,0};
+                                        };
+										class Unit8
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Medic_Light";
+                                                rank = "PRIVATE";
+                                                position[] = {17,0,0};
+                                        };
+										class Unit9
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_VehicleCommander";
+                                                rank = "PRIVATE";
+                                                position[] = {19,0,0};
+                                        };
+										class Unit10
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_VehicleCrew";
+                                                rank = "PRIVATE";
+                                                position[] = {21,0,0};
+                                        };
+										class Unit11
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_VehicleCrew";
+                                                rank = "PRIVATE";
+                                                position[] = {23,0,0};
+                                        };
+                                };
+
 								class Modern_pol_section
                                 {
                                         name = "Polish Section (Woodland)"; //Name of Group
@@ -819,6 +889,13 @@ class CfgGroups
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
+                                        class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_VehicleCrew";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
                                 };
 								class Modern_artcrew
                                 {
@@ -848,7 +925,7 @@ class CfgGroups
                                         };
                                 };
 								
-								/*								class Modern_Coin_Platoon_Command
+							class Modern_Coin_Platoon_Command
                                 {
                                         name = "Platoon Command"; //Name of Group
                                         faction = "twc_faction"; //Faction
@@ -867,15 +944,8 @@ class CfgGroups
                                                 rank = "sergeant";
                                                 position[] = {3,0,0};
                                         };
-                                        class Unit2
-                                        {
-                                                side = 1;
-                                                vehicle = "Modern_British_Medic";
-                                                rank = "PRIVATE";
-                                                position[] = {5,0,0};
-                                        };
                                 };
-*/                        };
+                       };
 				};
 		};
 };

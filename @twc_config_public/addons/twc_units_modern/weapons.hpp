@@ -19,7 +19,6 @@ class cfgWeapons
 	class UK3CB_BAF_L129A1;
 	class UK3CB_BAF_L128A1;
 	class UK3CB_BAF_L85A2_UGL;
-	class UK3CB_BAF_L115A3;
 	class UK3CB_BAF_L85A2_RIS_Tan;
 	class arifle_Mk20_F;
 	class Rifle_Base_F;
@@ -265,35 +264,6 @@ class cfgWeapons
 			};
 		};
 	};
-	class twc_l115a3_wd: UK3CB_BAF_L115A3
-	{
-		scope = 1;
-		author = "jayman";
-		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "asdg_OpticRail_UK3CB_BAF_L115";
-				item = "RKSL_optic_PMII_525";
-			};
-		};
-	};
-	class UK3CB_BAF_L115A3_Ghillie;
-	class twc_l115a3_gh: UK3CB_BAF_L115A3_Ghillie
-	{
-		scope = 1;
-		author = "jayman";
-		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "asdg_OpticRail_UK3CB_BAF_L115";
-				item = "RKSL_optic_PMII_525";
-			};
-		};
-	};
 	class rhs_weap_rsp30_green;
 		class twc_L5A4_green: rhs_weap_rsp30_green
 	{
@@ -323,17 +293,6 @@ class cfgWeapons
 		magazines[] = {"twc_l5a4_w"};
 	};
 	
-	
-	class rhs_weap_akm: rhs_weap_ak74m_Base_F
-	{
-		magazines[] = {"CUP_30Rnd_762x39_AK47_M", "rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm_tracer", "rhs_30Rnd_762x39mm_89", "rhs_30Rnd_762x39mm_U"};
-	};
-	
-	class rhs_weap_ak74m;
-	class rhs_weap_svd: rhs_weap_ak74m
-	{
-		magazines[] = {"rhs_10Rnd_762x54mmR_7N1", "CUP_10Rnd_762x54_SVD_M", "twc_10Rnd_762x54mmR_7N1_P"};
-	};
 	
 	class rhs_weap_ak74m_zenitco01;
 	class rhs_weap_ak74m_zenitco01_b33: rhs_weap_ak74m_zenitco01
