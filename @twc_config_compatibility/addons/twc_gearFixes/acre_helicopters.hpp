@@ -94,7 +94,6 @@ class UK3CB_BAF_Wildcat_AH1_CAS_8A: UK3CB_BAF_Wildcat_AH1_8_Base {
 	};
 };
 
-class CUP_CH47F_base;
 class CUP_B_CH47F_GB: CUP_CH47F_base {
 	class AcreIntercoms {
 		class Intercom_1 {

@@ -432,29 +432,6 @@ class cfgRecoils
 };
 
 class CfgVehicles {
-	#include "acre_apcs.hpp"
-	#include "acre_boats.hpp"
-	#include "acre_cars.hpp"
-	#include "acre_helicopters.hpp"
-	#include "acre_planes.hpp"
-	#include "acre_tanks.hpp"
-
-	class Plane;
-	class CUP_AV8B_Base : Plane {
-		class AcreRacks {
-	   		class Rack_1 {
-		       		displayName = "Radio"; // Name is displayed in the interaction menu.
-				shortName = "Radio";
-				componentName = "ACRE_VRC103";
-				allowedPositions[] = {"inside", "external"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
-				disabledPositions[] = {};
-				defaultComponents[] = {};
-				mountedRadio = "ACRE_PRC117F"; // Predefined mounted radio
-				isRadioRemovable = 0;
-			};
-       		};
-			
-	};	
 	
 	class Tank;
 	class Tank_F: Tank
@@ -794,5 +771,11 @@ class CfgVehicles {
 		};
 	};
 	
+	#include "acre_apcs.hpp"
+	#include "acre_boats.hpp"
+	#include "acre_cars.hpp"
+	#include "acre_helicopters.hpp"
+	#include "acre_planes.hpp"
+	#include "acre_tanks.hpp"
 };
 
