@@ -28,7 +28,7 @@ class TWC_Infantry_ColdWar_COIN_Dismounted_Tropic_MG: TWC_Infantry_ColdWar_COIN_
 class TWC_Infantry_ColdWar_COIN_Dismounted_Tropic_ASSMG: TWC_Infantry_ColdWar_COIN_Tropic_ASSMG
 {
 	CATEGORY(TWC_Infantry_COIN_Dismounted_Tropic)
-	backpack = "TWC_Backpack_ColdWar_COIN_ASSMG";
+	backpack = "TWC_Backpack_ColdWar_COIN_Dismounted_ASSMG";
 };
 
 //Platoon Command

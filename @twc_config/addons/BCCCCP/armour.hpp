@@ -110,6 +110,8 @@
 		{
 			"BCCCCP_Crewman_Camo"
 		};
+		hiddenSelectionsMaterials[] = {"\CUP\WheeledVehicles\CUP_WheeledVehicles_BTR60\data\textures\russia\russia_body.rvmat","\CUP\WheeledVehicles\CUP_WheeledVehicles_BTR60\data\textures\russia\russia_detail.rvmat"};
+		hiddenselectionstextures[] = {"\CUP\WheeledVehicles\CUP_WheeledVehicles_BTR60\data\textures\russia\russia_body_green_co.paa","\CUP\WheeledVehicles\CUP_WheeledVehicles_BTR60\data\textures\russia\russia_detail_green_co.paa"};
 	};
 	class BCCCCP_T55: CUP_I_T55_TK_GUE
 	{

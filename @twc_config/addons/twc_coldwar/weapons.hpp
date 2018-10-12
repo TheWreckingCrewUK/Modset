@@ -69,6 +69,13 @@ class SP_60PatCombats_DPM_1_Item: SP_UniformBase_Item
 		containerClass = "Supply40";
 	};
 };
+class SP_60PatCombatsRolled_DPM_1_Item: SP_UniformBase_Item
+{
+	class ItemInfo: UniformItem
+	{
+		containerClass = "Supply40";
+	};
+};
 class SP_60PatCombatsRolled_Khaki_1_Item: SP_UniformBase_Item
 {
 	class ItemInfo: UniformItem
@@ -84,6 +91,13 @@ class SP_72Para_DenisonKhaki_1_Item: SP_UniformBase_Item
 	};
 };
 class SP_72Para_DenisonTrops_1_Item: SP_UniformBase_Item
+{
+	class ItemInfo: UniformItem
+	{
+		containerClass = "Supply40";
+	};
+};
+class SP_60PatCombatsRolled_OD_1_Item: SP_UniformBase_Item
 {
 	class ItemInfo: UniformItem
 	{
