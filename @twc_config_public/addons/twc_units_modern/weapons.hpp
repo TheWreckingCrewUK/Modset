@@ -1,4 +1,4 @@
-
+
 class CfgFunctions 
 {
 	class TWC
