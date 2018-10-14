@@ -37,6 +37,7 @@ class CfgFunctions {
 			class sendCTabMessage {};
 			class isHigherRank {};
 			class GliderTakeOff {};
+			class confiscateBadItems {};
 			class init{};
 		};
 		

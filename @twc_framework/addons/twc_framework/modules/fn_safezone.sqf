@@ -20,7 +20,7 @@ if (!hasInterface) exitWith {};
 if (_range == 0) exitWith {};
 
 if (getMarkerColor _marker == "") exitWith {
-	systemChat "No shooting in base is enabled, but no base marker is defined";
+	systemChat "No shooting in base is enabled, but no base marker is defined.";
 };
 
 //I really wish this wasn't a global variable

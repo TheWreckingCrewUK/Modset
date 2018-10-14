@@ -1,9 +1,10 @@
 //Calls all the functions on player start.
 params["_unit"];
 if (player != _unit) exitWith {};
+if (!hasInterface || isDedicated) exitWith {};
 
-/* waitUntil { sleep 0.5; !(isNull player) };
-waitUntil { sleep 1.271; time > 0 }; */
+waitUntil { sleep 0.5; !(isNull player) };
+waitUntil { sleep 1.271; time > 0 };
 
 ACE_maxWeightDrag = 100000;
 ACE_maxWeightCarry = 100000;
@@ -135,7 +136,10 @@ EM_blacklist_obj = [
 	"Land_WW2_wire_bruno"
 ];
 
-if (missionNameSpace getVariable ["twcModuleEnabled", false]) exitWith { systemChat "WARNING: TWC Mission Module wasn't placed down, or enabled."; };
+if (missionNameSpace getVariable ["twcModuleEnabled", false]) exitWith {
+	systemChat "TWC Mission Module wasn't placed down, or enabled.";
+};
+
 waitUntil { missionNameSpace getVariable ["twcModuleFinished", false] };
 
 [(missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_era;

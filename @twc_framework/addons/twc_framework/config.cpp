@@ -61,6 +61,10 @@ class Extended_InitPost_EventHandlers {
 		class twc_functionInit {
 			init = "[(_this select 0)] call twc_fnc_init;";
 		};
+		
+		class twc_AIItemCheckInit {
+			init = "[(_this select 0)] call twc_fnc_confiscateBadItems;";
+		};
 	};
 };
 

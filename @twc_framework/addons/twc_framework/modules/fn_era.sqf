@@ -44,18 +44,6 @@ switch (_era) do {
 		cTab_vehicleClass_has_TAD = [];
 		
 		approvedFacewear = ["G_Aviator","G_LIB_Dienst_Brille","G_LIB_Dienst_Brille2","G_LIB_Dust_Goggles","G_LIB_GER_Gloves4","G_LIB_GER_Gloves5","G_LIB_GER_Gloves2","G_LIB_GER_Gloves1","G_LIB_GER_Gloves3","CUP_TK_NeckScarf","CUP_FR_NeckScarf","CUP_FR_NeckScarf2","G_Spectacles","G_Squares_Tinted","G_Squares","G_Spectacles_Tinted","G_LIB_Watch2","G_LIB_Watch1","G_Shades_Black","G_Shades_Blue","G_Shades_Green","G_Shades_Red"];
-
-		if (isServer) then {
-			["CAManBase", "init", {
-				_unit = (_this select 0);
-				_keepMap = _unit getVariable ["twc_keepMap", false];
-				
-				if (!_keepMap && !isPlayer _unit) then {
-					_unit unassignItem "itemMap";
-					_unit removeItem "itemMap";
-				};
-			}, true, nil, true] call CBA_fnc_addClassEventHandler;
-		};
 	};
 	case "ww2": {
 		["twc_faction_independent", [
@@ -71,36 +59,12 @@ switch (_era) do {
 		cTab_vehicleClass_has_TAD = [];
 		
 		approvedFacewear = ["G_Aviator","G_LIB_Dienst_Brille","G_LIB_Dienst_Brille2","G_LIB_Dust_Goggles","G_LIB_GER_Gloves4","G_LIB_GER_Gloves5","G_LIB_GER_Gloves2","G_LIB_GER_Gloves1","G_LIB_GER_Gloves3","CUP_TK_NeckScarf","CUP_FR_NeckScarf","CUP_FR_NeckScarf2","G_Spectacles","G_Squares_Tinted","G_Squares","G_Spectacles_Tinted","G_LIB_Watch2","G_LIB_Watch1"];
-
-		if (isServer) then {
-			["CAManBase", "init", {
-				_unit = (_this select 0);
-				_keepMap = _unit getVariable ["twc_keepMap", false];
-				
-				if (!_keepMap && !isPlayer _unit) then {
-					_unit unassignItem "itemMap";
-					_unit removeItem "itemMap";
-				};
-			}, true, nil, true] call CBA_fnc_addClassEventHandler;
-		};
 	};
 	case "mmo": {
 		cTab_vehicleClass_has_FBCB2 = [];
 		cTab_vehicleClass_has_TAD = [];
 		
 		approvedFacewear = ["G_Aviator","G_LIB_Dienst_Brille","G_LIB_Dienst_Brille2","G_LIB_Dust_Goggles","G_LIB_GER_Gloves4","G_LIB_GER_Gloves5","G_LIB_GER_Gloves2","G_LIB_GER_Gloves1","G_LIB_GER_Gloves3","CUP_TK_NeckScarf","CUP_FR_NeckScarf","CUP_FR_NeckScarf2","G_Spectacles","G_Squares_Tinted","G_Squares","G_Spectacles_Tinted","G_LIB_Watch2","G_LIB_Watch1"];
-
-		if (isServer) then {
-			["CAManBase", "init", {
-				_unit = (_this select 0);
-				_keepMap = _unit getVariable ["twc_keepMap", false];
-				
-				if (!_keepMap && !isPlayer _unit) then {
-					_unit unassignItem "itemMap";
-					_unit removeItem "itemMap";
-				};
-			}, true, nil, true] call CBA_fnc_addClassEventHandler;
-		};
 	};
 	default {
 		["TWC_Modern", [
