@@ -828,6 +828,7 @@
 		displayName="Vehicle Commander";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DPMT";
 		backpack="B_AssaultPack_blk";
+		scope=2;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_Pilot_DPMT",

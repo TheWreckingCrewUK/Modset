@@ -1,4 +1,4 @@
-
+
 class CfgFunctions 
 {
 	class TWC
@@ -250,7 +250,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L129A1";
-				item="UK3CB_BAF_TA648_308";
+				item="rhsusf_acc_premier";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -260,7 +260,12 @@ class cfgWeapons
 			class LinkedItemsBipod
 			{
 				slot="UK3CB_underbarrel_rifle_slot";
-				item="UK3CB_underbarrel_acc_fgrip_bipod";
+				item="UK3CB_underbarrel_acc_bipod";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="asdg_MuzzleSlot_UK3CB_BAF_L129A1";
+				item="UK3CB_BAF_Silencer_L115A3";
 			};
 		};
 	};

@@ -85,7 +85,7 @@
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
-		displayName="Section Leader @British Army";
+		displayName="Section Commander @British Army";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
