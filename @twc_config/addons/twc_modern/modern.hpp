@@ -1706,6 +1706,117 @@
 			"SmokeShell"
 		};
 	};
+	
+	class Modern_British_Sniper_COIN: Modern_British_Sniper
+	{
+		scope=2;
+		nakedUniform="U_BasicBody";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
+		editorSubcategory = "Men_Modern_COIN";
+		vehicleClass="Men_Modern_COIN";
+		backpack="";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
+			"UK3CB_BAF_H_Mk7_Scrim_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
+			"UK3CB_BAF_H_Mk7_Scrim_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	class Modern_British_Spotter_COIN: Modern_British_Spotter
+	{
+		scope=2;
+		nakedUniform="U_BasicBody";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
+		editorSubcategory = "Men_Modern_COIN";
+		vehicleClass="Men_Modern_COIN";
+		backpack="TWC_Backpack_Modern_Spotter";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
+			"UK3CB_BAF_H_Mk7_Scrim_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
+			"UK3CB_BAF_H_Mk7_Scrim_C",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_Kestrel4500",
+			"ACE_ATragMX",
+			"ACRE_PRC343",
+			"ACE_MapTools",
+			"ACE_EarPlugs"
+		};
+		respawnitems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_Kestrel4500",
+			"ACE_ATragMX",
+			"ACRE_PRC343",
+			"ACE_MapTools",
+			"ACE_EarPlugs"
+		};
+	};
 	//////////////////////////////  COIN-Mounted  //////////////////////////////
 	class Modern_British_Pointman_Mounted: Modern_British_Pointman
 	{

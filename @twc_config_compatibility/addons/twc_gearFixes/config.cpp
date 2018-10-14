@@ -115,6 +115,21 @@ class CfgWeapons {
 		magazines[] = {"CUP_PG7V_M", "CUP_PG7VM_M", "CUP_PG7VL_M", "CUP_PG7VR_M", "CUP_OG7_M", "CUP_TBG7V_M", "twc_og7_c_m"};
 		};
 		
+		
+	class Rifle_Short_Base_F;
+	class SMG_02_base_F: Rifle_Short_Base_F
+	{
+		class FullAuto;
+	};
+	class SP_smg_sterling: SMG_02_base_F
+	{
+		class FullAuto: FullAuto
+		{
+			Burst = 1;
+		};
+	};
+	
+		
 	class UK3CB_BAF_L115A3;
 	class twc_l115a3_wd: UK3CB_BAF_L115A3
 	{

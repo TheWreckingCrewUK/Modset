@@ -102,6 +102,7 @@ class cfgWeapons
 	
 	class twc_rhs_weap_m249_pip_L_mgo_lazer: rhs_weap_m249_pip_L
 	{
+		twc_openbolt = 1;
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -119,6 +120,7 @@ class cfgWeapons
 	
 	class twc_rhs_weap_m240B_mgo_lazer: rhs_weap_m240B
 	{
+		twc_openbolt = 1;
 		class LinkedItems
 		{
 			class LinkedItemsOptic

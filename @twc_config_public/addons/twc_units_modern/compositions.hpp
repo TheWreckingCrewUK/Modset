@@ -619,14 +619,14 @@ class CfgGroups
                                         class Unit2
                                         {
                                                 side = 1;
-                                                vehicle = "twc_ana_rifleman_at";
+                                                vehicle = "twc_ana_base";
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
                                         class Unit3
                                         {
                                                 side = 1;
-                                                vehicle = "twc_ana_medic";
+                                                vehicle = "twc_ana_rifleman_at";
                                                 rank = "PRIVATE";
                                                 position[] = {7,0,0};
                                         };
@@ -654,7 +654,7 @@ class CfgGroups
                                         class Unit7
                                         {
                                                 side = 1;
-                                                vehicle = "twc_ana_marksman";
+                                                vehicle = "twc_ana_medic";
                                                 rank = "PRIVATE";
                                                 position[] = {15,0,0};
                                         };
@@ -764,7 +764,7 @@ class CfgGroups
 										class Unit4
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_FSTForwardObserver";
+                                                vehicle = "Modern_British_logitech";
                                                 rank = "PRIVATE";
                                                 position[] = {9,0,0};
                                         };
@@ -801,6 +801,26 @@ class CfgGroups
                                                 vehicle = "Modern_British_Recce_Autorifleman";
                                                 rank = "PRIVATE";
                                                 position[] = {9,0,0};
+                                        };
+                                };
+                               class Modern_jetteam
+                                {
+                                        name = "Jet Team"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_JetPilot"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_FSTForwardObserver";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
                                         };
                                 };
                                class Modern_Sniperteam
