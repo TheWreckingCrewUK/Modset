@@ -31,6 +31,11 @@ if (_unCon) then {
 		[_unit, true, false] call ace_medical_fnc_setDead;
 		_continue = false;
 	};
+	
+	if (_bloodPressureH < 20 && _bloodPressureL < 20) exitWith {
+		[_unit, true, false] call ace_medical_fnc_setDead;
+		_continue = false;
+	};
 
 	if (!([_unit] call ace_medical_fnc_getUnconsciousCondition)) then {
 		_unit setVariable ["ACE_isUnconscious", false, true];
