@@ -43,6 +43,19 @@ class TWC_Vehicle_Generic_RHIB_HMG_Black: UK3CB_BAF_RHIB_HMG {
 	class TransportBackpacks { };
 
 	ace_interaction_canPush = 1;
+
+	class AcreRacks {
+		class Rack_1 {
+			displayName = "Vehicle Radio";
+			shortName = "Vehicle Radio";
+			componentName = "ACRE_VRC103";
+			allowedPositions[] = {"driver"};
+			disabledPositions[] = {};
+			defaultComponents[] = {};
+			mountedRadio = "ACRE_PRC117F";
+			isRadioRemovable = 0;
+		};
+	};
 };
 
 class I_C_Boat_Transport_01_F;

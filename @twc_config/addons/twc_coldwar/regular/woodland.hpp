@@ -708,12 +708,38 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Vehicle_Commander: TWC_Infantry_Cold
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
-	};	
+	};
+	weapons[]=
+	{
+		"sp_smg_sterling",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"sp_smg_sterling",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_Vehicle_Crew: TWC_Infantry_ColdWar_Regular_Woodland_Vehicle_Commander
 {
 	displayName="Vehicle Crew";
 	class EventHandlers: EventHandlers {
 		init = "";
+	};
+	weapons[]=
+	{
+		"sp_smg_sterling",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"sp_smg_sterling",
+		"Throw",
+		"Put"
 	};
 };

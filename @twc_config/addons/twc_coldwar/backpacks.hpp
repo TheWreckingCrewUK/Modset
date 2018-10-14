@@ -147,6 +147,14 @@ class TWC_Backpack_ColdWar_COIN_Dismounted_MG: SP_Backpack_LargePack
 		ADD_MAGA(SP_30Rnd_762_L4, 10);
 	};
 };
+class TWC_Backpack_ColdWar_COIN_Dismounted_ASSMG: SP_Backpack_LargePack
+{
+	scope = 1;
+	class TransportMagazines {
+		ADD_MAGA(SP_30Rnd_762_L4, 6);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd, 6);
+	};
+};
 
 //Platoon Command, regular
 class TWC_Backpack_ColdWar_Regular_Platoon_Commander: SP_Backpack_LargePack
