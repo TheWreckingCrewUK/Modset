@@ -110,13 +110,5 @@ class CfgFunctions {
 			class moduleArtillerySpotter {};
 			class moduleArtilleryPieces {};
 		};
-
-		class looseAmmo {
-			file = "twc_framework\looseAmmo";
-			class addLooseAmmoEH {};
-			class looseTo303 {};
-			class enfieldToBren {};
-			class brenToEnfield {};
-		};
 	};
 };
