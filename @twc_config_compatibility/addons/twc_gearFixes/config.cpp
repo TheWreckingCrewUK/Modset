@@ -119,6 +119,7 @@ class CfgWeapons {
 	class Rifle_Short_Base_F;
 	class SMG_02_base_F: Rifle_Short_Base_F
 	{
+		class FullAuto;
 	};
 	class SP_smg_sterling: SMG_02_base_F
 	{
