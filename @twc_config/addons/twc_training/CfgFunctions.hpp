@@ -7,5 +7,7 @@ class CfgFunctions {
 		class mapTeleport {};
 		class setNearestPlayersPos {};
 		class isTrainer {};
+		class addChangeLoadout {};
+		class addResetLoadout {};
 	};
 };
