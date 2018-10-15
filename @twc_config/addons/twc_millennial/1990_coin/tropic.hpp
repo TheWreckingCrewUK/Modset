@@ -1,8 +1,8 @@
-//COIN, ARCTIC
+//COIN, TROPIC
 //Section
-class TWC_Infantry_1990_COIN_Arctic_Rifleman: TWC_Infantry_1990_Regular_Arctic_Rifleman
+class TWC_Infantry_1990_COIN_Tropic_Rifleman: TWC_Infantry_1990_Regular_Tropic_Rifleman
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -14,9 +14,9 @@ class TWC_Infantry_1990_COIN_Arctic_Rifleman: TWC_Infantry_1990_Regular_Arctic_R
 		MAG_2("ACE_CableTie")
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_AT: TWC_Infantry_1990_Regular_Arctic_AT
+class TWC_Infantry_1990_COIN_Tropic_AT: TWC_Infantry_1990_Regular_Tropic_AT
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -42,9 +42,9 @@ class TWC_Infantry_1990_COIN_Arctic_AT: TWC_Infantry_1990_Regular_Arctic_AT
 		"Put"
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_Gunner: TWC_Infantry_1990_Regular_Arctic_Gunner
+class TWC_Infantry_1990_COIN_Tropic_Gunner: TWC_Infantry_1990_Regular_Tropic_Gunner
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -56,10 +56,10 @@ class TWC_Infantry_1990_COIN_Arctic_Gunner: TWC_Infantry_1990_Regular_Arctic_Gun
 		MAG_2("ACE_CableTie")
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_SectionCommander: TWC_Infantry_1990_Regular_Arctic_SectionCommander
+class TWC_Infantry_1990_COIN_Tropic_SectionCommander: TWC_Infantry_1990_Regular_Tropic_SectionCommander
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
-	backpack = "TWC_Backpack_1990_COIN_Arctic_SectionCommander";
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_SectionCommander";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -73,10 +73,10 @@ class TWC_Infantry_1990_COIN_Arctic_SectionCommander: TWC_Infantry_1990_Regular_
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_2iC: TWC_Infantry_1990_Regular_Arctic_2iC
+class TWC_Infantry_1990_COIN_Tropic_2iC: TWC_Infantry_1990_Regular_Tropic_2iC
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
-	backpack = "TWC_Backpack_1990_COIN_Arctic_2iC";
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_2iC";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -92,10 +92,10 @@ class TWC_Infantry_1990_COIN_Arctic_2iC: TWC_Infantry_1990_Regular_Arctic_2iC
 };
 
 //Platoon Command
-class TWC_Infantry_1990_COIN_Arctic_Platoon_Commander: TWC_Infantry_1990_Regular_Arctic_Platoon_Commander
+class TWC_Infantry_1990_COIN_Tropic_Platoon_Commander: TWC_Infantry_1990_Regular_Tropic_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
-	backpack = "TWC_Backpack_1990_COIN_Arctic_Platoon_Commander";
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_Platoon_Commander";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -109,10 +109,10 @@ class TWC_Infantry_1990_COIN_Arctic_Platoon_Commander: TWC_Infantry_1990_Regular
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_Platoon_Sergeant: TWC_Infantry_1990_Regular_Arctic_Platoon_Sergeant
+class TWC_Infantry_1990_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_1990_Regular_Tropic_Platoon_Sergeant
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
-	backpack = "TWC_Backpack_1990_COIN_Arctic_Platoon_Sergeant";
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_Platoon_Sergeant";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -126,10 +126,10 @@ class TWC_Infantry_1990_COIN_Arctic_Platoon_Sergeant: TWC_Infantry_1990_Regular_
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_Platoon_Medic: TWC_Infantry_1990_Regular_Arctic_Platoon_Medic
+class TWC_Infantry_1990_COIN_Tropic_Platoon_Medic: TWC_Infantry_1990_Regular_Tropic_Platoon_Medic
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
-	backpack = "TWC_Backpack_1990_COIN_Arctic_Platoon_Medic";
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_Platoon_Medic";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -141,10 +141,10 @@ class TWC_Infantry_1990_COIN_Arctic_Platoon_Medic: TWC_Infantry_1990_Regular_Arc
 		MAG_2("ACE_CableTie")
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_Platoon_CSM: TWC_Infantry_1990_Regular_Arctic_Platoon_CSM
+class TWC_Infantry_1990_COIN_Tropic_Platoon_CSM: TWC_Infantry_1990_Regular_Tropic_Platoon_CSM
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
-	backpack = "TWC_Backpack_1990_COIN_Arctic_Platoon_Sergeant";
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_Platoon_Sergeant";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -160,9 +160,9 @@ class TWC_Infantry_1990_COIN_Arctic_Platoon_CSM: TWC_Infantry_1990_Regular_Arcti
 };
 
 //Sniper Team
-class TWC_Infantry_1990_COIN_Arctic_Sniper: TWC_Infantry_1990_Regular_Arctic_Sniper
+class TWC_Infantry_1990_COIN_Tropic_Sniper: TWC_Infantry_1990_Regular_Tropic_Sniper
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -178,10 +178,10 @@ class TWC_Infantry_1990_COIN_Arctic_Sniper: TWC_Infantry_1990_Regular_Arctic_Sni
 		"ACE_Tripod"
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_Spotter: TWC_Infantry_1990_Regular_Arctic_Spotter
+class TWC_Infantry_1990_COIN_Tropic_Spotter: TWC_Infantry_1990_Regular_Tropic_Spotter
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
-	backpack = "TWC_Backpack_1990_COIN_Arctic_Spotter";
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_Spotter";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -201,10 +201,10 @@ class TWC_Infantry_1990_COIN_Arctic_Spotter: TWC_Infantry_1990_Regular_Arctic_Sp
 };
 
 //Artillery Crew
-class TWC_Infantry_1990_COIN_Arctic_Artillery_Commander: TWC_Infantry_1990_Regular_Arctic_Artillery_Commander
+class TWC_Infantry_1990_COIN_Tropic_Artillery_Commander: TWC_Infantry_1990_Regular_Tropic_Artillery_Commander
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
-	backpack = "TWC_Backpack_1990_COIN_Arctic_Artillery_Commander";
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_Artillery_Commander";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -218,9 +218,9 @@ class TWC_Infantry_1990_COIN_Arctic_Artillery_Commander: TWC_Infantry_1990_Regul
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_Artillery_Crew: TWC_Infantry_1990_Regular_Arctic_Artillery_Crew
+class TWC_Infantry_1990_COIN_Tropic_Artillery_Crew: TWC_Infantry_1990_Regular_Tropic_Artillery_Crew
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -234,10 +234,10 @@ class TWC_Infantry_1990_COIN_Arctic_Artillery_Crew: TWC_Infantry_1990_Regular_Ar
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_FO: TWC_Infantry_1990_Regular_Arctic_FO
+class TWC_Infantry_1990_COIN_Tropic_FO: TWC_Infantry_1990_Regular_Tropic_FO
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
-	backpack = "TWC_Backpack_1990_COIN_Arctic_FO";
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_FO";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -253,10 +253,10 @@ class TWC_Infantry_1990_COIN_Arctic_FO: TWC_Infantry_1990_Regular_Arctic_FO
 };
 
 //EOD Team
-class TWC_Infantry_1990_COIN_Arctic_EOD_Commander: TWC_Infantry_1990_Regular_Arctic_EOD_Commander
+class TWC_Infantry_1990_COIN_Tropic_EOD_Commander: TWC_Infantry_1990_Regular_Tropic_EOD_Commander
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
-	backpack = "TWC_Backpack_1990_COIN_Arctic_EOD_Commander";
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_EOD_Commander";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -274,9 +274,9 @@ class TWC_Infantry_1990_COIN_Arctic_EOD_Commander: TWC_Infantry_1990_Regular_Arc
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_EOD_Gunner: TWC_Infantry_1990_Regular_Arctic_EOD_Gunner
+class TWC_Infantry_1990_COIN_Tropic_EOD_Gunner: TWC_Infantry_1990_Regular_Tropic_EOD_Gunner
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -294,10 +294,10 @@ class TWC_Infantry_1990_COIN_Arctic_EOD_Gunner: TWC_Infantry_1990_Regular_Arctic
 };
 
 //Aircraft
-class TWC_Infantry_1990_COIN_Arctic_FAC: TWC_Infantry_1990_Regular_Arctic_FAC
+class TWC_Infantry_1990_COIN_Tropic_FAC: TWC_Infantry_1990_Regular_Tropic_FAC
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
-	backpack = "TWC_Backpack_1990_COIN_Arctic_FAC";
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_FAC";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -313,9 +313,9 @@ class TWC_Infantry_1990_COIN_Arctic_FAC: TWC_Infantry_1990_Regular_Arctic_FAC
 };
 
 //FVs
-class TWC_Infantry_1990_COIN_Arctic_Vehicle_Commander: TWC_Infantry_1990_Regular_Arctic_Vehicle_Commander
+class TWC_Infantry_1990_COIN_Tropic_Vehicle_Commander: TWC_Infantry_1990_Regular_Tropic_Vehicle_Commander
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -329,9 +329,9 @@ class TWC_Infantry_1990_COIN_Arctic_Vehicle_Commander: TWC_Infantry_1990_Regular
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_1990_COIN_Arctic_Vehicle_Crew: TWC_Infantry_1990_Regular_Arctic_Vehicle_Crew
+class TWC_Infantry_1990_COIN_Tropic_Vehicle_Crew: TWC_Infantry_1990_Regular_Tropic_Vehicle_Crew
 {
-	CATEGORY(TWC_Infantry_COIN_Arctic)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
