@@ -136,15 +136,17 @@ EM_blacklist_obj = [
 	"Land_WW2_wire_bruno"
 ];
 
-if (missionNameSpace getVariable ["twcModuleEnabled", false]) exitWith {
-	systemChat "TWC Mission Module wasn't placed down, or enabled.";
-};
+[{
+	if (isNil {missionNameSpace getVariable "twcModuleEnabled"}) exitWith {
+		systemChat "TWC Mission Module wasn't placed down, or enabled.";
+	};
 
-waitUntil { missionNameSpace getVariable ["twcModuleFinished", false] };
+	waitUntil { missionNameSpace getVariable ["twcModuleFinished", false] };
 
-[(missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_era;
-[(missionNameSpace getVariable ["nightGear", false]), (missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_nightGear;
-[(missionNameSpace getVariable ["rollSleeves", false])] spawn twc_fnc_rollShirt;
-[(missionNameSpace getVariable ["run", 0])] spawn twc_fnc_run;
-[(missionNameSpace getVariable ["safeZone", 0])] spawn twc_fnc_safeZone;
-[(missionNameSpace getVariable ["zuesObjects", true])] spawn twc_fnc_zeus;
+	[(missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_era;
+	[(missionNameSpace getVariable ["nightGear", false]), (missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_nightGear;
+	[(missionNameSpace getVariable ["rollSleeves", false])] spawn twc_fnc_rollShirt;
+	[(missionNameSpace getVariable ["run", 0])] spawn twc_fnc_run;
+	[(missionNameSpace getVariable ["safeZone", 0])] spawn twc_fnc_safeZone;
+	[(missionNameSpace getVariable ["zuesObjects", true])] spawn twc_fnc_zeus;
+}, [], 1] call CBA_fnc_waitAndExecute;
