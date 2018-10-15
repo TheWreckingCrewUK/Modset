@@ -1,5 +1,6 @@
 //REGULAR
 #define BACKPACK_REGULAR_SECTIONCOMMANDER(CAMO, INHERIT) \
+class TWC_Backpack_1990_Regular_##CAMO##_SectionCommander: INHERIT \
 { \
 	scope = 1; \
 	class TransportMagazines { \
