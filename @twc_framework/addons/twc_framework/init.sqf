@@ -137,7 +137,7 @@ EM_blacklist_obj = [
 ];
 
 [{
-	if (missionNameSpace getVariable ["twcModuleEnabled", false]) exitWith {
+	if (isNil {missionNameSpace getVariable "twcModuleEnabled"}) exitWith {
 		systemChat "TWC Mission Module wasn't placed down, or enabled.";
 	};
 
