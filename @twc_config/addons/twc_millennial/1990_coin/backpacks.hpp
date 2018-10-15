@@ -1,899 +1,346 @@
+//COIN
+#define BACKPACK_COIN_SECTIONCOMMANDER(CAMO, INHERIT) \
+{ \
+	scope = 1; \
+	class TransportMagazines { \
+		ADD_MAGA(SmokeShell,3); \
+		ADD_MAGA(SmokeShellRed,2); \
+		ADD_MAGA(SmokeShellBlue,2); \
+	}; \
+	class TransportItems { \
+		ADD_ITEM(ACRE_PRC117F,1); \
+	}; \
+};
+
+#define BACKPACK_COIN_2IC(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_##CAMO##_2IC: INHERIT \
+{ \
+	scope = 1; \
+	class TransportMagazines { \
+		ADD_MAGA(SmokeShell,3); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,10); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,4); \
+	}; \
+};
+
+class TWC_Backpack_1990_COIN_##CAMO##_Platoon_Commander: INHERIT \
+{ \
+	scope = 1; \
+	class TransportItems { \
+		ADD_ITEM(ACRE_PRC117F,1); \
+	}; \
+	class TransportMagazines { \
+		ADD_MAGA(SmokeShell,3); \
+		ADD_MAGA(SmokeShellRed,2); \
+		ADD_MAGA(SmokeShellBlue,2); \
+	}; \
+};
+
+class TWC_Backpack_1990_COIN_##CAMO##_Platoon_Sergeant: INHERIT \
+{ \
+	scope = 1; \
+	class TransportItems { \
+		ADD_ITEM(ACRE_PRC117F,1); \
+	}; \
+	class TransportMagazines { \
+		ADD_MAGA(SmokeShell,3); \
+		ADD_MAGA(SmokeShellRed,2); \
+		ADD_MAGA(SmokeShellBlue,2); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,20); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8); \
+	}; \
+};
+
+class TWC_Backpack_1990_COIN_##CAMO##_Platoon_Medic: INHERIT \
+{ \
+	scope = 1; \
+	class TransportItems { \
+		ADD_ITEM(ACE_fieldDressing,20); \
+		ADD_ITEM(ACE_morphine,10); \
+		ADD_ITEM(ACE_elasticBandage,20); \
+		ADD_ITEM(ACE_quikclot,20); \
+		ADD_ITEM(ACE_packingBandage,20); \
+		ADD_ITEM(ACE_adenosine,4); \
+		ADD_ITEM(ACE_atropine,4); \
+		ADD_ITEM(ACE_epinephrine,10); \
+		ADD_ITEM(ACE_salineIV_500,6); \
+		ADD_ITEM(ACE_tourniquet,4); \
+		ADD_ITEM(ACE_personalAidKit,1); \
+		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1); \
+	}; \
+};
+
+#define BACKPACK_COIN_SPOTTER(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_##CAMO##_Spotter: INHERIT \
+{ \
+	scope = 1; \
+	class TransportItems { \
+		ADD_ITEM(ACRE_PRC77,1); \
+		ADD_ITEM(ACE_Tripod,1); \
+		ADD_ITEM(ACE_SpottingScope,1); \
+	}; \
+};
+
+#define BACKPACK_COIN_ARTILLERY_COMMANDER(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_##CAMO##_Artillery_Commander: INHERIT \
+{ \
+	scope = 1; \
+	maximumLoad = 300; \
+	class TransportItems { \
+		ADD_ITEM(ACRE_PRC77,1); \
+	}; \
+};
+
+#define BACKPACK_COIN_FO(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_##CAMO##_FO: INHERIT \
+{ \
+	scope = 1; \
+	maximumLoad = 200; \
+	class TransportItems { \
+		ADD_ITEM(ACRE_PRC117F,1); \
+	}; \
+	class TransportMagazines { \
+		ADD_MAGA(SmokeShell,3); \
+		ADD_MAGA(SmokeShellRed,2); \
+		ADD_MAGA(SmokeShellBlue,2); \
+	}; \
+};
+
+#define BACKPACK_COIN_EOD_COMMANDER(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_##CAMO##_EOD_Commander: INHERIT \
+{ \
+	scope = 1; \
+	class TransportItems { \
+		ADD_ITEM(ACRE_PRC117F,1); \
+	}; \
+	class TransportMagazines { \
+		ADD_MAGA(SmokeShell,3); \
+		ADD_MAGA(SmokeShellRed,2); \
+		ADD_MAGA(SmokeShellBlue,2); \
+	}; \
+};
+
+#define BACKPACK_COIN_FAC(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_##CAMO##_FAC: INHERIT \
+{ \
+	scope = 1; \
+	class TransportItems { \
+		ADD_ITEM(ACRE_PRC117F,1); \
+	}; \
+	class TransportMagazines { \
+		ADD_MAGA(SmokeShell, 5); \
+		ADD_MAGA(SmokeShellGreen, 5); \
+		ADD_MAGA(SmokeShellBlue, 5); \
+		ADD_MAGA(SmokeShellOrange, 5); \
+		ADD_MAGA(SmokeShellRed, 5); \
+		ADD_MAGA(SmokeShellPurple, 5); \
+	}; \
+};
+
+//COIN, DISMOUNTED
+#define BACKPACK_COIN_DISMOUNTED_RIFLEMAN(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_Dismounted_##CAMO##_Rifleman: INHERIT \
+{ \
+	scope = 1; \
+	class TransportMagazines { \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,8); \
+	}; \
+};
+
+#define BACKPACK_COIN_DISMOUNTED_AT(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_Dismounted_##CAMO##_AT: INHERIT \
+{ \
+	scope = 1; \
+	class TransportMagazines { \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,8); \
+	}; \
+};
+
+#define BACKPACK_COIN_DISMOUNTED_GUNNER(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_Dismounted_##CAMO##_Gunner: INHERIT \
+{ \
+	scope = 1; \
+	class TransportMagazines { \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,10); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6); \
+	}; \
+};
+
+#define BACKPACK_COIN_DISMOUNTED_SECTIONCOMMANDER(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_Dismounted_##CAMO##_SectionCommander: INHERIT \
+{ \
+	scope = 1; \
+	class TransportMagazines { \
+		ADD_MAGA(SmokeShell,3); \
+		ADD_MAGA(SmokeShellRed,2); \
+		ADD_MAGA(SmokeShellBlue,2); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,10); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6); \
+	}; \
+	class TransportItems { \
+		ADD_ITEM(ACRE_PRC117F,1); \
+	}; \
+};
+
+#define BACKPACK_COIN_DISMOUNTED_2IC(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_Dismounted_##CAMO##_2iC: INHERIT \
+{ \
+	scope = 1; \
+	class TransportMagazines { \
+		ADD_MAGA(SmokeShell,3); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,20); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8); \
+	}; \
+};
+
+#define BACKPACK_COIN_DISMOUNTED_PLATOON_COMMANDER(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_Dismounted_##CAMO##_Platoon_Commander: INHERIT \
+{ \
+	scope = 1; \
+	class TransportMagazines { \
+		ADD_MAGA(SmokeShell,3); \
+		ADD_MAGA(SmokeShellRed,2); \
+		ADD_MAGA(SmokeShellBlue,2); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,6); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,2); \
+	}; \
+	class TransportItems { \
+		ADD_ITEM(ACRE_PRC117F,1); \
+	}; \
+};
+
+#define BACKPACK_COIN_DISMOUNTED_PLATOON_SERGEANT(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_Dismounted_##CAMO##_Platoon_Sergeant: INHERIT \
+{ \
+	scope = 1; \
+	class TransportItems { \
+		ADD_ITEM(ACRE_PRC117F,1); \
+	}; \
+	class TransportMagazines { \
+		ADD_MAGA(SmokeShell,3); \
+		ADD_MAGA(SmokeShellRed,2); \
+		ADD_MAGA(SmokeShellBlue,2); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,20); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8); \
+	}; \
+};
+
+#define BACKPACK_COIN_DISMOUNTED_PLATOON_MEDIC(CAMO, INHERIT) \
+class TWC_Backpack_1990_COIN_Dismounted_##CAMO##_Platoon_Medic: INHERIT \
+{ \
+	scope = 1; \
+	class TransportItems { \
+		ADD_ITEM(ACE_fieldDressing,20); \
+		ADD_ITEM(ACE_morphine,10); \
+		ADD_ITEM(ACE_elasticBandage,20); \
+		ADD_ITEM(ACE_quikclot,20); \
+		ADD_ITEM(ACE_packingBandage,20); \
+		ADD_ITEM(ACE_adenosine,4); \
+		ADD_ITEM(ACE_atropine,4); \
+		ADD_ITEM(ACE_epinephrine,10); \
+		ADD_ITEM(ACE_salineIV_500,6); \
+		ADD_ITEM(ACE_tourniquet,4); \
+		ADD_ITEM(ACE_personalAidKit,1); \
+		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1); \
+	}; \
+};
+
 //WOODLAND, COIN
 //Section
-class TWC_Backpack_1990_COIN_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_DPMW_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Woodland_2iC: UK3CB_BAF_B_Bergen_DPMW_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,4);
-	};
-};
+BACKPACK_COIN_SECTIONCOMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
+BACKPACK_COIN_2IC(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
 
 //Platoon Command
-class TWC_Backpack_1990_COIN_Woodland_Platoon_Commander: UK3CB_BAF_B_Bergen_DPMW_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Woodland_Platoon_Sergeant: UK3CB_BAF_B_Bergen_DPMW_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_DPMW_Rifleman_B
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing,20);
-		ADD_ITEM(ACE_morphine,10);
-		ADD_ITEM(ACE_elasticBandage,20);
-		ADD_ITEM(ACE_quikclot,20);
-		ADD_ITEM(ACE_packingBandage,20);
-		ADD_ITEM(ACE_adenosine,4);
-		ADD_ITEM(ACE_atropine,4);
-		ADD_ITEM(ACE_epinephrine,10);
-		ADD_ITEM(ACE_salineIV_500,6);
-		ADD_ITEM(ACE_tourniquet,4);
-		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
-	};
-};
+BACKPACK_COIN_PLATOON_COMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
+BACKPACK_COIN_PLATOON_SERGEANT(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
+BACKPACK_COIN_PLATOON_MEDIC(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_B)
 
 //Attachments
-class TWC_Backpack_1990_COIN_Woodland_Spotter: UK3CB_BAF_B_Bergen_DPMW_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC77,1);
-		ADD_ITEM(ACE_Tripod,1);
-		ADD_ITEM(ACE_SpottingScope,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Woodland_Artillery_Commander: UK3CB_BAF_B_Bergen_DPMW_SL_A
-{
-	scope = 1;
-	maximumLoad = 300;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC77,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Woodland_FO: UK3CB_BAF_B_Bergen_DPMW_SL_A
-{
-	scope = 1;
-	maximumLoad = 200;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Woodland_EOD_Commander: UK3CB_BAF_B_Bergen_DPMW_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Woodland_FAC: UK3CB_BAF_B_Bergen_DPMW_JTAC_H_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell, 5);
-		ADD_MAGA(SmokeShellGreen, 5);
-		ADD_MAGA(SmokeShellBlue, 5);
-		ADD_MAGA(SmokeShellOrange, 5);
-		ADD_MAGA(SmokeShellRed, 5);
-		ADD_MAGA(SmokeShellPurple, 5);
-	};	
-};
 
 //WOODLAND, COIN, DISMOUNTED
 //Section
-class TWC_Backpack_1990_COIN_Dismounted_Woodland_Rifleman: UK3CB_BAF_B_Bergen_DPMW_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Woodland_AT: UK3CB_BAF_B_Bergen_DPMW_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Woodland_Gunner: UK3CB_BAF_B_Bergen_DPMW_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_DPMW_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Woodland_2iC: UK3CB_BAF_B_Bergen_DPMW_Rifleman_B
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
+BACKPACK_COIN_DISMOUNTED_RIFLEMAN(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_AT(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_GUNNER(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_SECTIONCOMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
+BACKPACK_COIN_DISMOUNTED_2IC(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_B)
 
 //Platoon Command
-class TWC_Backpack_1990_COIN_Dismounted_Woodland_Platoon_Commander: UK3CB_BAF_B_Bergen_DPMW_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,6);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,2);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Woodland_Platoon_Sergeant: UK3CB_BAF_B_Bergen_DPMW_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_DPMW_Rifleman_B
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing,20);
-		ADD_ITEM(ACE_morphine,10);
-		ADD_ITEM(ACE_elasticBandage,20);
-		ADD_ITEM(ACE_quikclot,20);
-		ADD_ITEM(ACE_packingBandage,20);
-		ADD_ITEM(ACE_adenosine,4);
-		ADD_ITEM(ACE_atropine,4);
-		ADD_ITEM(ACE_epinephrine,10);
-		ADD_ITEM(ACE_salineIV_500,6);
-		ADD_ITEM(ACE_tourniquet,4);
-		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
-	};
-};
+BACKPACK_COIN_DISMOUNTED_PLATOON_COMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
+BACKPACK_COIN_DISMOUNTED_PLATOON_SERGEANT(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
+BACKPACK_COIN_DISMOUNTED_PLATOON_MEDIC(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_B)
 
 //DESERT, REGULAR
 //Section
-class TWC_Backpack_1990_COIN_Desert_SectionCommander: UK3CB_BAF_B_Bergen_DDPM_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Desert_2iC: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,4);
-	};
-};
+BACKPACK_COIN_SECTIONCOMMANDER(Desert, UK3CB_BAF_B_Bergen_DDPM_SL_A)
+BACKPACK_COIN_2IC(Desert, UK3CB_BAF_B_Bergen_DDPM_Rifleman_A)
 
 //Platoon Command
-class TWC_Backpack_1990_COIN_Desert_Platoon_Commander: UK3CB_BAF_B_Bergen_DDPM_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Desert_Platoon_Sergeant: UK3CB_BAF_B_Bergen_DDPM_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Desert_Platoon_Medic: UK3CB_BAF_B_Bergen_DDPM_Rifleman_B
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing,20);
-		ADD_ITEM(ACE_morphine,10);
-		ADD_ITEM(ACE_elasticBandage,20);
-		ADD_ITEM(ACE_quikclot,20);
-		ADD_ITEM(ACE_packingBandage,20);
-		ADD_ITEM(ACE_adenosine,4);
-		ADD_ITEM(ACE_atropine,4);
-		ADD_ITEM(ACE_epinephrine,10);
-		ADD_ITEM(ACE_salineIV_500,6);
-		ADD_ITEM(ACE_tourniquet,4);
-		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
-	};
-};
+BACKPACK_COIN_PLATOON_COMMANDER(Desert, UK3CB_BAF_B_Bergen_DDPM_SL_A)
+BACKPACK_COIN_PLATOON_SERGEANT(Desert, UK3CB_BAF_B_Bergen_DDPM_SL_A)
+BACKPACK_COIN_PLATOON_MEDIC(Desert, UK3CB_BAF_B_Bergen_DDPM_Rifleman_B)
 
 //Attachments
-class TWC_Backpack_1990_COIN_Desert_Spotter: UK3CB_BAF_B_Bergen_DDPM_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC77,1);
-		ADD_ITEM(ACE_Tripod,1);
-		ADD_ITEM(ACE_SpottingScope,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Desert_Artillery_Commander: UK3CB_BAF_B_Bergen_DDPM_SL_A
-{
-	scope = 1;
-	maximumLoad = 300;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC77,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Desert_FO: UK3CB_BAF_B_Bergen_DDPM_SL_A
-{
-	scope = 1;
-	maximumLoad = 200;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Desert_EOD_Commander: UK3CB_BAF_B_Bergen_DDPM_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Desert_FAC: UK3CB_BAF_B_Bergen_DDPM_JTAC_H_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell, 5);
-		ADD_MAGA(SmokeShellGreen, 5);
-		ADD_MAGA(SmokeShellBlue, 5);
-		ADD_MAGA(SmokeShellOrange, 5);
-		ADD_MAGA(SmokeShellRed, 5);
-		ADD_MAGA(SmokeShellPurple, 5);
-	};	
-};
 
-//DESERT, REGULAR, DISMOUNTED
+//DESERT, COIN, DISMOUNTED
 //Section
-class TWC_Backpack_1990_COIN_Dismounted_Desert_Rifleman: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Desert_AT: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Desert_Gunner: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Desert_SectionCommander: UK3CB_BAF_B_Bergen_DDPM_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Desert_2iC: UK3CB_BAF_B_Bergen_DDPM_Rifleman_B
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
+BACKPACK_COIN_DISMOUNTED_RIFLEMAN(Desert, UK3CB_BAF_B_Bergen_DDPM_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_AT(Desert, UK3CB_BAF_B_Bergen_DDPM_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_GUNNER(Desert, UK3CB_BAF_B_Bergen_DDPM_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_SECTIONCOMMANDER(Desert, UK3CB_BAF_B_Bergen_DDPM_SL_A)
+BACKPACK_COIN_DISMOUNTED_2IC(Desert, UK3CB_BAF_B_Bergen_DDPM_Rifleman_B)
 
 //Platoon Command
-class TWC_Backpack_1990_COIN_Dismounted_Desert_Platoon_Commander: UK3CB_BAF_B_Bergen_DDPM_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,6);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,2);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Desert_Platoon_Sergeant: UK3CB_BAF_B_Bergen_DDPM_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Desert_Platoon_Medic: UK3CB_BAF_B_Bergen_DDPM_Rifleman_B
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing,20);
-		ADD_ITEM(ACE_morphine,10);
-		ADD_ITEM(ACE_elasticBandage,20);
-		ADD_ITEM(ACE_quikclot,20);
-		ADD_ITEM(ACE_packingBandage,20);
-		ADD_ITEM(ACE_adenosine,4);
-		ADD_ITEM(ACE_atropine,4);
-		ADD_ITEM(ACE_epinephrine,10);
-		ADD_ITEM(ACE_salineIV_500,6);
-		ADD_ITEM(ACE_tourniquet,4);
-		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
-	};
-};
+BACKPACK_COIN_DISMOUNTED_PLATOON_COMMANDER(Desert, UK3CB_BAF_B_Bergen_DDPM_SL_A)
+BACKPACK_COIN_DISMOUNTED_PLATOON_SERGEANT(Desert, UK3CB_BAF_B_Bergen_DDPM_SL_A)
+BACKPACK_COIN_DISMOUNTED_PLATOON_MEDIC(Desert, UK3CB_BAF_B_Bergen_DDPM_Rifleman_B)
 
 //TROPIC, COIN
 //Section
-class TWC_Backpack_1990_COIN_Tropic_SectionCommander: UK3CB_BAF_B_Bergen_DPMT_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Tropic_2iC: UK3CB_BAF_B_Bergen_DPMT_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,4);
-	};
-};
+BACKPACK_COIN_SECTIONCOMMANDER(Tropic, UK3CB_BAF_B_Bergen_DPMT_SL_A)
+BACKPACK_COIN_2IC(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_A)
 
 //Platoon Command
-class TWC_Backpack_1990_COIN_Tropic_Platoon_Commander: UK3CB_BAF_B_Bergen_DPMT_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Tropic_Platoon_Sergeant: UK3CB_BAF_B_Bergen_DPMT_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Tropic_Platoon_Medic: UK3CB_BAF_B_Bergen_DPMT_Rifleman_B
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing,20);
-		ADD_ITEM(ACE_morphine,10);
-		ADD_ITEM(ACE_elasticBandage,20);
-		ADD_ITEM(ACE_quikclot,20);
-		ADD_ITEM(ACE_packingBandage,20);
-		ADD_ITEM(ACE_adenosine,4);
-		ADD_ITEM(ACE_atropine,4);
-		ADD_ITEM(ACE_epinephrine,10);
-		ADD_ITEM(ACE_salineIV_500,6);
-		ADD_ITEM(ACE_tourniquet,4);
-		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
-	};
-};
+BACKPACK_COIN_PLATOON_COMMANDER(Tropic, UK3CB_BAF_B_Bergen_DPMT_SL_A)
+BACKPACK_COIN_PLATOON_SERGEANT(Tropic, UK3CB_BAF_B_Bergen_DPMT_SL_A)
+BACKPACK_COIN_PLATOON_MEDIC(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_B)
 
 //Attachments
-class TWC_Backpack_1990_COIN_Tropic_Spotter: UK3CB_BAF_B_Bergen_DPMT_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC77,1);
-		ADD_ITEM(ACE_Tripod,1);
-		ADD_ITEM(ACE_SpottingScope,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Tropic_Artillery_Commander: UK3CB_BAF_B_Bergen_DPMT_SL_A
-{
-	scope = 1;
-	maximumLoad = 300;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC77,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Tropic_FO: UK3CB_BAF_B_Bergen_DPMT_SL_A
-{
-	scope = 1;
-	maximumLoad = 200;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Tropic_EOD_Commander: UK3CB_BAF_B_Bergen_DPMT_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Tropic_FAC: UK3CB_BAF_B_Bergen_DPMT_JTAC_H_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell, 5);
-		ADD_MAGA(SmokeShellGreen, 5);
-		ADD_MAGA(SmokeShellBlue, 5);
-		ADD_MAGA(SmokeShellOrange, 5);
-		ADD_MAGA(SmokeShellRed, 5);
-		ADD_MAGA(SmokeShellPurple, 5);
-	};	
-};
 
 //TROPIC, COIN, DISMOUNTED
 //Section
-class TWC_Backpack_1990_COIN_Dismounted_Tropic_Rifleman: UK3CB_BAF_B_Bergen_DPMT_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Tropic_AT: UK3CB_BAF_B_Bergen_DPMT_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Tropic_Gunner: UK3CB_BAF_B_Bergen_DPMT_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Tropic_SectionCommander: UK3CB_BAF_B_Bergen_DPMT_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Tropic_2iC: UK3CB_BAF_B_Bergen_DPMT_Rifleman_B
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
+BACKPACK_COIN_DISMOUNTED_RIFLEMAN(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_AT(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_GUNNER(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_SECTIONCOMMANDER(Tropic, UK3CB_BAF_B_Bergen_DPMT_SL_A)
+BACKPACK_COIN_DISMOUNTED_2IC(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_B)
 
 //Platoon Command
-class TWC_Backpack_1990_COIN_Dismounted_Tropic_Platoon_Commander: UK3CB_BAF_B_Bergen_DPMT_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,6);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,2);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Tropic_Platoon_Sergeant: UK3CB_BAF_B_Bergen_DPMT_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Tropic_Platoon_Medic: UK3CB_BAF_B_Bergen_DPMT_Rifleman_B
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing,20);
-		ADD_ITEM(ACE_morphine,10);
-		ADD_ITEM(ACE_elasticBandage,20);
-		ADD_ITEM(ACE_quikclot,20);
-		ADD_ITEM(ACE_packingBandage,20);
-		ADD_ITEM(ACE_adenosine,4);
-		ADD_ITEM(ACE_atropine,4);
-		ADD_ITEM(ACE_epinephrine,10);
-		ADD_ITEM(ACE_salineIV_500,6);
-		ADD_ITEM(ACE_tourniquet,4);
-		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
-	};
-};
+BACKPACK_COIN_DISMOUNTED_PLATOON_COMMANDER(Tropic, UK3CB_BAF_B_Bergen_DPMT_SL_A)
+BACKPACK_COIN_DISMOUNTED_PLATOON_SERGEANT(Tropic, UK3CB_BAF_B_Bergen_DPMT_SL_A)
+BACKPACK_COIN_DISMOUNTED_PLATOON_MEDIC(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_B)
 
 //ARCTIC, COIN
 //Section
-class TWC_Backpack_1990_COIN_Arctic_SectionCommander: UK3CB_BAF_B_Bergen_Arctic_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Arctic_2iC: UK3CB_BAF_B_Bergen_Arctic_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,4);
-	};
-};
+BACKPACK_COIN_SECTIONCOMMANDER(Arctic, UK3CB_BAF_B_Bergen_Arctic_SL_A)
+BACKPACK_COIN_2IC(Arctic, UK3CB_BAF_B_Bergen_Arctic_Rifleman_A)
 
 //Platoon Command
-class TWC_Backpack_1990_COIN_Arctic_Platoon_Commander: UK3CB_BAF_B_Bergen_Arctic_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Arctic_Platoon_Sergeant: UK3CB_BAF_B_Bergen_Arctic_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Arctic_Platoon_Medic: UK3CB_BAF_B_Bergen_Arctic_Rifleman_B
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing,20);
-		ADD_ITEM(ACE_morphine,10);
-		ADD_ITEM(ACE_elasticBandage,20);
-		ADD_ITEM(ACE_quikclot,20);
-		ADD_ITEM(ACE_packingBandage,20);
-		ADD_ITEM(ACE_adenosine,4);
-		ADD_ITEM(ACE_atropine,4);
-		ADD_ITEM(ACE_epinephrine,10);
-		ADD_ITEM(ACE_salineIV_500,6);
-		ADD_ITEM(ACE_tourniquet,4);
-		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
-	};
-};
+BACKPACK_COIN_PLATOON_COMMANDER(Arctic, UK3CB_BAF_B_Bergen_Arctic_SL_A)
+BACKPACK_COIN_PLATOON_SERGEANT(Arctic, UK3CB_BAF_B_Bergen_Arctic_SL_A)
+BACKPACK_COIN_PLATOON_MEDIC(Arctic, UK3CB_BAF_B_Bergen_Arctic_Rifleman_B)
 
 //Attachments
-class TWC_Backpack_1990_COIN_Arctic_Spotter: UK3CB_BAF_B_Bergen_Arctic_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC77,1);
-		ADD_ITEM(ACE_Tripod,1);
-		ADD_ITEM(ACE_SpottingScope,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Arctic_Artillery_Commander: UK3CB_BAF_B_Bergen_Arctic_SL_A
-{
-	scope = 1;
-	maximumLoad = 300;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC77,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Arctic_FO: UK3CB_BAF_B_Bergen_Arctic_SL_A
-{
-	scope = 1;
-	maximumLoad = 200;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Arctic_EOD_Commander: UK3CB_BAF_B_Bergen_Arctic_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-	};
-};
-class TWC_Backpack_1990_COIN_Arctic_FAC: UK3CB_BAF_B_Bergen_Arctic_JTAC_H_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell, 5);
-		ADD_MAGA(SmokeShellGreen, 5);
-		ADD_MAGA(SmokeShellBlue, 5);
-		ADD_MAGA(SmokeShellOrange, 5);
-		ADD_MAGA(SmokeShellRed, 5);
-		ADD_MAGA(SmokeShellPurple, 5);
-	};	
-};
 
 //ARCTIC, COIN, DISMOUNTED
 //Section
-class TWC_Backpack_1990_COIN_Dismounted_Arctic_Rifleman: UK3CB_BAF_B_Bergen_Arctic_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Arctic_AT: UK3CB_BAF_B_Bergen_Arctic_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Arctic_Gunner: UK3CB_BAF_B_Bergen_Arctic_Rifleman_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Arctic_SectionCommander: UK3CB_BAF_B_Bergen_Arctic_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,10);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Arctic_2iC: UK3CB_BAF_B_Bergen_Arctic_Rifleman_B
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
+BACKPACK_COIN_DISMOUNTED_RIFLEMAN(Arctic, UK3CB_BAF_B_Bergen_Arctic_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_AT(Arctic, UK3CB_BAF_B_Bergen_Arctic_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_GUNNER(Arctic, UK3CB_BAF_B_Bergen_Arctic_Rifleman_A)
+BACKPACK_COIN_DISMOUNTED_SECTIONCOMMANDER(Arctic, UK3CB_BAF_B_Bergen_Arctic_SL_A)
+BACKPACK_COIN_DISMOUNTED_2IC(Arctic, UK3CB_BAF_B_Bergen_Arctic_Rifleman_B)
 
 //Platoon Command
-class TWC_Backpack_1990_COIN_Dismounted_Arctic_Platoon_Commander: UK3CB_BAF_B_Bergen_Arctic_SL_A
-{
-	scope = 1;
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,6);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,2);
-	};
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Arctic_Platoon_Sergeant: UK3CB_BAF_B_Bergen_Arctic_SL_A
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC117F,1);
-	};
-	class TransportMagazines {
-		ADD_MAGA(SmokeShell,3);
-		ADD_MAGA(SmokeShellRed,2);
-		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20);
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8);
-	};
-};
-class TWC_Backpack_1990_COIN_Dismounted_Arctic_Platoon_Medic: UK3CB_BAF_B_Bergen_Arctic_Rifleman_B
-{
-	scope = 1;
-	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing,20);
-		ADD_ITEM(ACE_morphine,10);
-		ADD_ITEM(ACE_elasticBandage,20);
-		ADD_ITEM(ACE_quikclot,20);
-		ADD_ITEM(ACE_packingBandage,20);
-		ADD_ITEM(ACE_adenosine,4);
-		ADD_ITEM(ACE_atropine,4);
-		ADD_ITEM(ACE_epinephrine,10);
-		ADD_ITEM(ACE_salineIV_500,6);
-		ADD_ITEM(ACE_tourniquet,4);
-		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
-	};
-};
+BACKPACK_COIN_DISMOUNTED_PLATOON_COMMANDER(Arctic, UK3CB_BAF_B_Bergen_Arctic_SL_A)
+BACKPACK_COIN_DISMOUNTED_PLATOON_SERGEANT(Arctic, UK3CB_BAF_B_Bergen_Arctic_SL_A)
+BACKPACK_COIN_DISMOUNTED_PLATOON_MEDIC(Arctic, UK3CB_BAF_B_Bergen_Arctic_Rifleman_B)
