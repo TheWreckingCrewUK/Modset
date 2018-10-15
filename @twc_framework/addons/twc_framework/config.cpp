@@ -62,12 +62,14 @@ class Extended_InitPost_EventHandlers {
 			init = "[(_this select 0)] call twc_fnc_init;";
 		};
 		
-		class twc_looseAmmoEH {
-			init= "[(_this select 0)] call twc_fnc_addLooseAmmoEH";
+		class twc_AIItemCheckInit {
+			init = "[(_this select 0)] call twc_fnc_confiscateBadItems;";
 		};
 	};
 };
 
+#include "cfgAmmo.hpp"
+#include "cfgMagazines.hpp"
 #include "cfgWeapons.hpp"
 #include "cfgVehicles.hpp"
 #include "cfgFunctions.hpp"

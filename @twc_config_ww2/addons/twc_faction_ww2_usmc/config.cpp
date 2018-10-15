@@ -63,7 +63,6 @@ class CfgWeapons
 	class fow_w_m1919a4_mounted;
 	class fow_w_m1919a4_static: fow_w_m1919a4_mounted
 	{
-		magazines[] = {"fow_100Rnd_762x63","fow_50Rnd_762x63","fow_30Rnd_762x63"};
 		magazineReloadTime=8;
 	};
 };

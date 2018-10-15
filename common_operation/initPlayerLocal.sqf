@@ -1,6 +1,5 @@
 if (serverTime < 600) then {
-	_index = player createDiarySubject ["loadout","Loadouts"];
-
+	_index = player createDiarySubject ["loadout", "Loadouts"];
 	[player] remoteExecCall ["twc_fnc_briefingLoadout", (group player)];
 };
 
@@ -37,11 +36,11 @@ if (isMultiplayer) then {
 		};
 
 		sleep 3;
-		"dynamicBlur" ppEffectEnable true;   
-		"dynamicBlur" ppEffectAdjust [6];   
-		"dynamicBlur" ppEffectCommit 0;     
-		"dynamicBlur" ppEffectAdjust [0.0];  
-		"dynamicBlur" ppEffectCommit 5;  
+		"dynamicBlur" ppEffectEnable true;
+		"dynamicBlur" ppEffectAdjust [6];
+		"dynamicBlur" ppEffectCommit 0;
+		"dynamicBlur" ppEffectAdjust [0.0];
+		"dynamicBlur" ppEffectCommit 5;
 
 		titleCut ["", "BLACK IN", 5];
 		
@@ -57,9 +56,6 @@ if (isMultiplayer) then {
 		1 enableChannel false;
 	};
 };
-
-player createDiarySubject ["Intel", "Radio Messages"];
-player createDiarySubject ["Convo", "Conversations Log"];
 
 if (!(isNil "twc_JIP_CommandMessage")) then {
 	{

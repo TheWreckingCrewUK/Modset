@@ -26,6 +26,34 @@ class Wheeled_APC_F: Car_F {
 		displayname = "CH-47D (MERT)";
 	};
 	
+	class Heli_Attack_01_base_F;
+	class RHS_AH64_base: Heli_Attack_01_base_F
+	{
+		class hitpoints
+		{
+			class HitHRotor;
+		};
+		
+	};
+	
+	class RHS_AH64D: RHS_AH64_base
+	{
+		armor = 70;
+		armorStructural = 200;
+		cyclicAsideForceCoef = 1.6;
+		cyclicForwardForceCoef = 1.4;
+		backRotorForceCoef = 1;
+		liftForceCoef = 0.9;
+
+		class hitpoints: hitpoints
+		{
+			class HitHRotor: HitHRotor
+			{
+				armor = 2;
+			};
+		};
+	};
+	
 	
 	class Quadbike_01_base_F: Car_F {
 		ace_cargo_size = 15;

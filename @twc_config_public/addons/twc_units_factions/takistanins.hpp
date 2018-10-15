@@ -63,7 +63,7 @@
 
 	class Tak_twc_ins_Men_B1: Tak_twc_ins_Men_Base {
 		scope=2;
-		displayName="Rifleman (M4)";
+		displayName="Rifleman (M1)";
 		uniformClass="CUP_O_TKI_Khet_Jeans_01";
 
 		linkedItems[]= {
@@ -79,28 +79,38 @@
 		};
 		
 		weapons[]= {
-			"twc_rhs_weap_m4a1_acog_lazer",
+			"rhs_weap_m1garand_sa43",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]= {
-			"twc_rhs_weap_m4a1_acog_lazer",
+			"rhs_weap_m1garand_sa43",
 			"Throw",
 			"Put"
 		};
 
 		magazines[]= {
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag"
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle"
 		};
 
 		Respawnmagazines[]= {
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag"
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle",
+			"rhsgref_8Rnd_762x63_M2B_M1rifle"
 		};
 		
 		Items[]= { };

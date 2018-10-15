@@ -6,6 +6,7 @@ class cfgWeapons
 	class rhs_weap_m249_pip_L_para;
 	class rhs_weap_m14ebrri;
 	class rhs_weap_m16a4_carryhandle;
+	class rhs_weap_m4_m320;
 	class twc_m4_acog_lazer: rhs_weap_m4a1_carryhandle
 	{
 		class LinkedItems
@@ -19,6 +20,11 @@ class cfgWeapons
 			{
 				slot="PointerSlot";
 				item="rhsusf_acc_anpeq15A";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="UnderBarrelSlot";
+				item="rhsusf_acc_grip3";
 			};
 		};
 	};
@@ -38,8 +44,25 @@ class cfgWeapons
 			};
 		};
 	};
+	class twc_m4_320_lds_lazer: rhs_weap_m4_m320
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_su230_mrds";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15";
+			};
+		};
+	};
 	class twc_m249_mgo_lazer:rhs_weap_m249_pip_S
 	{
+		twc_openbolt = 1;
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -158,11 +181,34 @@ class cfgWeapons
 		};
 	};
 	
+	class twc_m4_eotech_vfg_laser:rhs_weap_m4a1_carryhandle
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_eotech_552";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="UnderBarrelSlot";
+				item="rhsusf_acc_grip1";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15";
+			};
+		};
+	};
+	
 	
 	
 	
 	class twc_m249_para_acog: rhs_weap_m249_pip_L_para
 	{
+		twc_openbolt = 1;
 		class LinkedItems
 		{
 			class LinkedItemsOptic

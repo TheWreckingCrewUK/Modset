@@ -187,11 +187,11 @@ class ACE_Medical_Advanced {
 				};
 				class AvulsionsMinor: Avulsions {
 					effectiveness = 0.9;
-					reopeningChance = 0.1;
+					reopeningChance = 0.2;
 				};
 				class AvulsionsMedium: Avulsions {
 					effectiveness = 0.8;
-					reopeningChance = 0.15;
+					reopeningChance = 0.2;
 				};
 				class AvulsionsLarge: Avulsions {
 					effectiveness = 0.7;

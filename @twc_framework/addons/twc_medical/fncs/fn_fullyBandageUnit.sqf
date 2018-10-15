@@ -8,6 +8,6 @@ _openWounds = _unit getVariable ["ace_medical_openWounds", []];
 
 	if (_amount * _percentage > 0) then {
 		_selection = ["head","body","hand_l","hand_r","leg_l","leg_r"] select _index;
-		[_unit, _unit, _selection, "Bandage", "Bandage", -1] call ace_medical_fnc_treatmentAdvanced_bandage;
+		[_unit, _unit, _selection, "ElasticBandage", "ElasticBandage", -1] call ace_medical_fnc_treatmentAdvanced_bandage;
 	};
 } forEach _openWounds;

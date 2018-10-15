@@ -19,10 +19,35 @@ class cfgWeapons
 	class UK3CB_BAF_L129A1;
 	class UK3CB_BAF_L128A1;
 	class UK3CB_BAF_L85A2_UGL;
-	class UK3CB_BAF_L115A3;
 	class UK3CB_BAF_L85A2_RIS_Tan;
 	class arifle_Mk20_F;
 	class Rifle_Base_F;
+	class cannoncore;
+	
+	class gatling_30mm: CannonCore
+	{
+		class EventHandlers;
+		class Mode_FullAuto;
+		class manual;
+	};
+	class rhs_weap_M197: gatling_30mm
+	{
+		class manual:gatling_30mm
+		{
+			dispersion=0.012;
+		};
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
+		};
+	};
+	
+	class rhs_weap_M230: rhs_weap_M197
+	{
+		class manual:manual
+		{
+			dispersion=0.012;
+		};
+	};
 	
 	class CUP_Vlmg_M240_M1Abrams_Coax;
 	class CUP_M240_Coax_M1_Abrams_W: CUP_Vlmg_M240_M1Abrams_Coax
@@ -225,7 +250,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L129A1";
-				item="UK3CB_BAF_TA648_308";
+				item="rhsusf_acc_premier";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -235,36 +260,12 @@ class cfgWeapons
 			class LinkedItemsBipod
 			{
 				slot="UK3CB_underbarrel_rifle_slot";
-				item="UK3CB_underbarrel_acc_fgrip_bipod";
+				item="UK3CB_underbarrel_acc_bipod";
 			};
-		};
-	};
-	class twc_l115a3_wd: UK3CB_BAF_L115A3
-	{
-		scope = 1;
-		author = "jayman";
-		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
-		class LinkedItems
-		{
-			class LinkedItemsOptic
+			class LinkedItemsMuzzle
 			{
-				slot = "asdg_OpticRail_UK3CB_BAF_L115";
-				item = "RKSL_optic_PMII_525";
-			};
-		};
-	};
-	class UK3CB_BAF_L115A3_Ghillie;
-	class twc_l115a3_gh: UK3CB_BAF_L115A3_Ghillie
-	{
-		scope = 1;
-		author = "jayman";
-		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "asdg_OpticRail_UK3CB_BAF_L115";
-				item = "RKSL_optic_PMII_525";
+				slot="asdg_MuzzleSlot_UK3CB_BAF_L129A1";
+				item="UK3CB_BAF_Silencer_L115A3";
 			};
 		};
 	};
@@ -298,17 +299,6 @@ class cfgWeapons
 	};
 	
 	
-	class rhs_weap_akm: rhs_weap_ak74m_Base_F
-	{
-		magazines[] = {"CUP_30Rnd_762x39_AK47_M", "rhs_30Rnd_762x39mm", "rhs_30Rnd_762x39mm_tracer", "rhs_30Rnd_762x39mm_89", "rhs_30Rnd_762x39mm_U"};
-	};
-	
-	class rhs_weap_ak74m;
-	class rhs_weap_svd: rhs_weap_ak74m
-	{
-		magazines[] = {"rhs_10Rnd_762x54mmR_7N1", "CUP_10Rnd_762x54_SVD_M", "twc_10Rnd_762x54mmR_7N1_P"};
-	};
-	
 	class rhs_weap_ak74m_zenitco01;
 	class rhs_weap_ak74m_zenitco01_b33: rhs_weap_ak74m_zenitco01
 	{
@@ -323,6 +313,7 @@ class cfgWeapons
 	{
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
 		};
 	
 
@@ -331,6 +322,7 @@ class cfgWeapons
 		
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1", "rhsusf_acc_grip3"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -369,6 +361,7 @@ class cfgWeapons
 		
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -405,6 +398,7 @@ class cfgWeapons
 
 		displayName = "wz.2004 Beryl (wz. 74)";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -597,32 +591,12 @@ class cfgWeapons
 	};
 	
 	
-	/*
-	class rhs_weapon_base;
-	class rhs_weap_m4_Base: rhs_weapon_base
-	{
-		magazines[] = {"rhs_mag_30Rnd_556x45_M855_Stanag", "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red", "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Green", "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Yellow", "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Orange", "rhs_mag_30Rnd_556x45_M855A1_Stanag", "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Yellow", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Orange", "rhs_mag_30Rnd_556x45_Mk318_Stanag", "rhs_mag_30Rnd_556x45_Mk262_Stanag", "rhs_mag_30Rnd_556x45_M200_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag_Tracer_Yellow", "UK3CB_BAF_556_30Rnd", "UK3CB_BAF_556_30Rnd_T", "UK3CB_BAF_556_30Rnd_Blank"};
-	};*/
-	
-	/* 3cb stuff isn't taking at the moment
-	class UK3CB_BAF_WeaponsPrimaryMG_Base;
-	class UK3CB_BAF_L7A2: UK3CB_BAF_WeaponsPrimaryMG_Base
-	{
-		accessories[] = {};
-		magazines[] = {"rhsusf_50Rnd_762x51", "rhsusf_50Rnd_762x51_m61_ap", "rhsusf_50Rnd_762x51_m62_tracer", "rhsusf_50Rnd_762x51_m80a1epr", "rhsusf_50Rnd_762x51_m82_blank", "rhsusf_100Rnd_762x51", "rhsusf_100Rnd_762x51_m61_ap", "rhsusf_100Rnd_762x51_m62_tracer", "rhsusf_100Rnd_762x51_m80a1epr", "rhsusf_100Rnd_762x51_m82_blank", "rhsusf_50Rnd_762x51_m993", "rhsusf_100Rnd_762x51_m993", "UK3CB_BAF_762_200Rnd_T", "UK3CB_BAF_762_200Rnd", "UK3CB_BAF_762_200Rnd_Blank", "UK3CB_BAF_762_100Rnd_T", "UK3CB_BAF_762_100Rnd", "UK3CB_BAF_762_100Rnd_Blank"};
-	};
-	class UK3CB_BAF_WeaponsPrimary_Base;
-	class UK3CB_BAF_L85A2: UK3CB_BAF_WeaponsPrimary_Base
-	{
-		magazines[] = {"rhs_mag_30Rnd_556x45_M855_Stanag", "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red", "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Green", "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Yellow", "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Orange", "rhs_mag_30Rnd_556x45_M855A1_Stanag", "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Yellow", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Orange", "rhs_mag_30Rnd_556x45_Mk318_Stanag", "rhs_mag_30Rnd_556x45_Mk262_Stanag", "rhs_mag_30Rnd_556x45_M200_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag_Tracer_Yellow", "UK3CB_BAF_556_30Rnd", "UK3CB_BAF_556_30Rnd_T", "UK3CB_BAF_556_30Rnd_Blank"};
-	};	
-	
-	*/
 	class rhs_weap_pkp;
 	class rhs_weap_pkm: rhs_weap_pkp
 	{
 		recoil = "twc_mg_762";
 		recoilProne = "twc_mg_prone";
+		accessories[] = {};
 		magazines[] = {"rhs_100Rnd_762x54mmR", "rhs_100Rnd_762x54mmR_green", "rhs_100Rnd_762x54mmR_7N13", "rhs_100Rnd_762x54mmR_7N26", "rhs_100Rnd_762x54mmR_7BZ3", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"};
 	};
 	

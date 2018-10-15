@@ -667,6 +667,132 @@
 		};
 	};
 	
+	class UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A;
+	class TWC_Backpack_Modern_Rifleman_heavy: UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A
+	{
+		scope = 1;
+		mass = 64;
+		class TransportItems
+		{
+			class _xx_satchel
+			{
+				name = "SatchelCharge_Remote_Mag";
+				count = 1;
+			};
+			class _xx_det
+			{
+				name = "ACE_Clacker";
+				count = 1;
+			};
+			class _xx_wirecutter
+			{
+				name = "ACE_wirecutter";
+				count = 1;
+			};
+			class _xx_shovel
+			{
+				name = "ACE_EntrenchingTool";
+				count = 1;
+			};
+			class _xx_scope
+			{
+				name = "ACE_SpottingScope";
+				count = 1;
+			};
+			class _xx_sswt
+			{
+				name = "ACE_Tripod";
+				count = 1;
+			};
+			class _xx_kite
+			{
+				name = "UK3CB_BAF_Kite";
+				count = 1;
+			};
+			class _xx_chemlight_ir
+			{
+				name = "ACE_G_Chemlight_IR";
+				count = 2;
+			};
+			class _xx_chemlight_red
+			{
+				name = "Chemlight_Red";
+				count = 2;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 1;
+			};
+		};
+	};
+	
+	class UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B;
+	class TWC_Backpack_Modern_AutoRifleman_heavy: UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B
+	{
+		scope = 1;
+		mass = 61;
+		class TransportItems
+		{
+			class _xx_satchel
+			{
+				name = "SatchelCharge_Remote_Mag";
+				count = 1;
+			};
+			class _xx_det
+			{
+				name = "ACE_Clacker";
+				count = 1;
+			};
+			class _xx_shovel
+			{
+				name = "ACE_EntrenchingTool";
+				count = 1;
+			};
+			class _xx_scope
+			{
+				name = "ACE_SpottingScope";
+				count = 1;
+			};
+			class _xx_sswt
+			{
+				name = "ACE_Tripod";
+				count = 1;
+			};
+			class _xx_kite
+			{
+				name = "UK3CB_BAF_Kite";
+				count = 1;
+			};
+			class _xx_chemlight_ir
+			{
+				name = "ACE_G_Chemlight_IR";
+				count = 2;
+			};
+			class _xx_chemlight_red
+			{
+				name = "Chemlight_Red";
+				count = 2;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_box
+			{
+				magazine = "UK3CB_BAF_556_100Rnd_T";
+				count = 2;
+			};
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 1;
+			};
+		};
+	};
+	
 	
 	class TWC_Backpack_Modern_Rifleman: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 	{
@@ -690,7 +816,7 @@
 			};
 			class _xx_Grenade
 			{
-				magazine = "CUP_HandGrenade_L109A2_HE";
+				magazine = "HandGrenade";
 				count = 1;
 			};
 		};
@@ -717,7 +843,7 @@
 			};
 			class _xx_Grenade
 			{
-				magazine = "CUP_HandGrenade_L109A2_HE";
+				magazine = "HandGrenade";
 				count = 1;
 			};
 			class _xx_HE
@@ -1239,13 +1365,13 @@
 		{
 			class _xx_338
 			{
-				magazine = "UK3CB_BAF_338_5Rnd";
-				count = 1;
+				magazine = "ACE_10Rnd_338_300gr_HPBT_Mag";
+				count = 5;
 			};
 			class _xx_762
 			{
 				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
-				count = 1;
+				count = 3;
 			};
 			class _xx_762_t
 			{
@@ -1259,7 +1385,7 @@
 			};
 			class _xx_Grenade
 			{
-				magazine = "CUP_HandGrenade_L109A2_HE";
+				magazine = "HandGrenade";
 				count = 1;
 			};
 		};

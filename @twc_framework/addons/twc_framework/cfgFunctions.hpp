@@ -14,6 +14,7 @@ class CfgFunctions {
 			class CreateTask{};
 			class daisyCutter{};
 			class Defend {};
+			class dummyBullets {};
 			class Flagchange {};
 			class intelHint{};
 			class intelHintWithVariable{};
@@ -36,6 +37,7 @@ class CfgFunctions {
 			class sendCTabMessage {};
 			class isHigherRank {};
 			class GliderTakeOff {};
+			class confiscateBadItems {};
 			class init{};
 		};
 		
@@ -60,6 +62,7 @@ class CfgFunctions {
 			class moduleArtillery{};
 			class moduleUpdateTask{};
 			class moduleDefend{};
+			class moduleDummyBullets {};
 			class moduleAirAssault{};
 			class moduleAttackPlane{};
 			class moduleCommandMessage{};
@@ -107,14 +110,6 @@ class CfgFunctions {
 			file = "twc_framework\artillery";
 			class moduleArtillerySpotter {};
 			class moduleArtilleryPieces {};
-		};
-
-		class looseAmmo {
-			file = "twc_framework\looseAmmo";
-			class addLooseAmmoEH {};
-			class looseTo303 {};
-			class enfieldToBren {};
-			class brenToEnfield {};
 		};
 	};
 };

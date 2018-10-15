@@ -65,13 +65,13 @@ class TWC_Infantry_ColdWar_COIN_Desert_Rifleman_SUIT: TWC_Infantry_ColdWar_Regul
 	};
 	weapons[]=
 	{
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_L1A1_SUIT",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[]=
 	{
-		"UK3CB_BAF_L1A1_Wood",
+		"TWC_L1A1_SUIT",
 		"Throw",
 		"Put"
 	};

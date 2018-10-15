@@ -28,7 +28,7 @@ class TWC_Infantry_ColdWar_COIN_Dismounted_Woodland_MG: TWC_Infantry_ColdWar_COI
 class TWC_Infantry_ColdWar_COIN_Dismounted_Woodland_ASSMG: TWC_Infantry_ColdWar_COIN_Woodland_ASSMG
 {
 	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
-	backpack = "TWC_Backpack_ColdWar_COIN_ASSMG";
+	backpack = "TWC_Backpack_ColdWar_COIN_Dismounted_ASSMG";
 };
 
 //Platoon Command

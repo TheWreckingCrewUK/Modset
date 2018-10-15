@@ -32,15 +32,10 @@
 	{
 		class TransportMagazines
 		{
-			class _xx_AKMags
-			{
-				magazine="CUP_30Rnd_762x39_AK47_M";
-				count=2;
-			};
 			class _xx_RPG7
 			{
 				magazine="CUP_PG7V_M";
-				count=2;
+				count=3;
 			};
 		};
 	};

@@ -51,6 +51,3 @@ if (_ship getVariable ["CUP_WaterVehicles_loadVehicleCargo",false]) then {
 	[_ship,"VehicleCargo"] call CUP_fnc_createVehicleCargo;
 	[_ship,"FlightDeckCargo"] call CUP_fnc_createVehicleCargo;
 };
-
-[_ship] call CUP_fnc_spawnShipWeapons;
-[_ship] call CUP_fnc_spawnShipLights;
