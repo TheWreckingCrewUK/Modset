@@ -8,7 +8,7 @@ if (!(_mortar turretLocal [0])) exitWith {TRACE_1("Exit - turret not local",_mor
 // Changes behaviour to an include methodology, as opposed to an exclude one.
 _doEmptyClass = [(configFile >> "CfgVehicles" >> typeOf(_mortar)), "TWC_HandleAmmo_Include", false] call BIS_fnc_returnConfigEntry;
 _doEmptyObject = _mortar getVariable ["TWC_handleAmmo_include", false];
-if (!_doEmptyClass && !_doEmptyObject) exitWith {};
+if (_doEmptyClass || _doEmptyObject) exitWith {};
 
 // Remove all magazines from turret
 if (count magazines _mortar > 0) then {
