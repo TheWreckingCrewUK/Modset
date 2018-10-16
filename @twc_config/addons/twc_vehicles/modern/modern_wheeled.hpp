@@ -257,7 +257,7 @@ class TWC_Vehicle_Modern_LandRoverHard_Woodland: TWC_BaseClass_LR_Hard_Base_F {
 	};
 };
 
-class TWC_Vehicle_Modern_LandRoverHard_Desert: TWC_Vehicle_Modern_LandRover_Woodland {
+class TWC_Vehicle_Modern_LandRoverHard_Desert: TWC_Vehicle_Modern_LandRoverHard_Woodland {
 	displayname = "Land Rover - Hard Top (Desert)";
 
 	hiddenSelectionsTextures[] = {
@@ -273,7 +273,7 @@ class TWC_Vehicle_Modern_LandRoverHard_Desert: TWC_Vehicle_Modern_LandRover_Wood
 	};
 };
 
-class TWC_Vehicle_Modern_LandRoverHard_Woodland_COIN: TWC_BaseClass_LR_Hard_Base_F {
+class TWC_Vehicle_Modern_LandRoverHard_Woodland_COIN: TWC_Vehicle_Modern_LandRoverHard_Woodland {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
