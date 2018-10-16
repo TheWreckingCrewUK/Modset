@@ -24,8 +24,10 @@ if (!isServer || !_enabled) exitWith {};
 		if (!isServer) exitWith {};
 
 		[{
+			if !(_this isEqualType []) then { _this = [_this]; };
+
 			{
-				_x addCuratorEditableObjects [[_this], true];
+				_x addCuratorEditableObjects [_this, true];
 			} forEach allCurators;
 		}, _this] call CBA_fnc_execNextFrame;
 	},
