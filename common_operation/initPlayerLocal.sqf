@@ -9,12 +9,13 @@ if (!isNil "completedTasks") then {
 	} forEach completedTasks;
 };
 
-[ACE_player, currentWeapon ACE_player, currentMuzzle ACE_player] call ace_safemode_fnc_lockSafety;
-
 if (isMultiplayer) then {
 	[] Spawn {
 		waitUntil{!(isNil "BIS_fnc_init")};
+		[ACE_player, currentWeapon ACE_player, currentMuzzle ACE_player] call ace_safemode_fnc_lockSafety;
 		enableRadio false;
+		player disableConversation true;
+
 		playMusic "Theme";
 		titleCut ["", "BLACK FADED", 999];
 		
