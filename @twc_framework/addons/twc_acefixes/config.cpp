@@ -46,6 +46,16 @@ class cfgFunctions {
 			};
 		};
 	};
+	
+	class ace_cup_artillery {
+		tag = "ace_cup_artillery";
+		
+		class ace_cup_artillery {
+			class mortarInit {
+				file = "twc_acefixes\functions\fn_mortarInit.sqf";
+			};
+		};
+	};
 };
 
 class Extended_PostInit_EventHandlers {
