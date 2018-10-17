@@ -20,11 +20,20 @@ class CfgPatches {
 			"A3_Data_F_Argo_Loadorder",
 			"A3_Data_F_Patrol_Loadorder",
 			"A3_Data_F_Orange_Loadorder",
-			"A3_Data_F_Tacops_Loadorder"
+			"A3_Data_F_Tacops_Loadorder",
+			"ace_common",
+			"ace_map_gestures"
 		};
 	};
 };
 
 #include "CfgFunctions.hpp"
+#include "CfgVehicles.hpp"
+
+class Extended_PostInit_EventHandlers {
+	class twc_map {
+		clientInit = "[] call ace_map_fnc_initPost;";
+	};
+};
 
 #include "HidePlayer.hpp"
