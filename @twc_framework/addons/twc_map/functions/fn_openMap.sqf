@@ -1,5 +1,4 @@
 params ["_mapObject"];
-disableSerialization;
 
 _mapID = _mapObject getVariable ["twc_map_owner", 0];
 _mapOwnersMarkers = _mapObject ["twc_map_tempMarkers", []];
