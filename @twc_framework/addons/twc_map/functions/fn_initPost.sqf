@@ -2,6 +2,7 @@ if (!hasInterface || isServer) exitWith {};
 
 twc_map_temporary = false;
 twc_map_lookingAt = 0;
+twc_map_temporaryMarkers = [];
 
 ["visibleMap", {
 	params ["_visible"];
@@ -19,6 +20,7 @@ twc_map_lookingAt = 0;
 
 	if (twc_map_lookingAt == _mapID) then {
 		twc_map_lookingAt = 0;
+		[] call twc_map_removeTempMarkers;
 		openMap false;
 	};
 }] call CBA_fnc_addEventHandler;
@@ -35,6 +37,7 @@ twc_map_lookingAt = 0;
 	};
 
 	openMap true;
+	ctrlSetFocus ((findDisplay 51) displayCtrl 12);
 }] call CBA_fnc_addEventHandler;
 
 ["ace_settingsInitialized", {
