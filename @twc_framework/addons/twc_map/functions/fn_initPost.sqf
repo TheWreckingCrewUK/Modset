@@ -73,4 +73,16 @@ twc_map_lookingAt = 0;
 			["twc_map_newMarker", [_caller, _x]] call CBA_fnc_localEvent;
 		} forEach _markersArray;
 	}] call CBA_fnc_addEventHandler;
+	
+	/* ["created", {
+		params ["_marker"];
+		
+		
+	}] call CBA_fnc_addMarkerEventHandler;
+	
+	["deleted", {
+		params ["_marker"];
+		
+		
+	}] call CBA_fnc_addMarkerEventHandler; */
 }] call CBA_fnc_addEventHandler;
