@@ -136,6 +136,32 @@ EM_blacklist_obj = [
 	"Land_WW2_wire_bruno"
 ];
 
+
+[] spawn {
+
+	for "_i" from 1 to 10 do {
+	
+	_openboltcoef = getNumber (configFile >> "cfgWeapons" >> (primaryweapon player) >> "twc_openbolt_coef");
+	if ((isnil "_openboltcoef")) then {
+		_openboltcoef = 1;
+	} else {
+		if (_openboltcoef == 0) then {
+			_openboltcoef = 1;
+		};
+	};
+	_chance = 6000 / _openboltcoef;
+		sleep (200 + (random _chance));
+		_openbolt = getNumber (configFile >> "cfgWeapons" >> (primaryweapon player) >> "twc_openbolt");
+
+		if (!isnil "_openbolt") then {
+
+			if (_openbolt == 1) then {
+			[player, primaryweapon player] call ace_overheating_fnc_jamWeapon;
+			};
+		};
+	};
+};
+
 [{
 	if (isNil {missionNameSpace getVariable "twcModuleEnabled"}) exitWith {
 		systemChat "TWC Mission Module wasn't placed down, or enabled.";
