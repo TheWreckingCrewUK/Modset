@@ -136,31 +136,55 @@ EM_blacklist_obj = [
 	"Land_WW2_wire_bruno"
 ];
 
+openBoltFnc = {
+	_openbolt = [(configFile >> "CfgWeapons" >> (primaryweapon player)), "twc_openbolt", 0] call BIS_fnc_returnConfigEntry;
 
-[] spawn {
+	if (_openbolt > 0) then {
+		_openboltcoef = [(configFile >> "CfgWeapons" >> (primaryweapon player)), "twc_openbolt_coef", 1] call BIS_fnc_returnConfigEntry;
 
-	for "_i" from 1 to 10 do {
-	
-	_openboltcoef = getNumber (configFile >> "cfgWeapons" >> (primaryweapon player) >> "twc_openbolt_coef");
-	if ((isnil "_openboltcoef")) then {
-		_openboltcoef = 1;
-	} else {
-		if (_openboltcoef == 0) then {
-			_openboltcoef = 1;
-		};
-	};
-	_chance = 6000 / _openboltcoef;
-		sleep (200 + (random _chance));
-		_openbolt = getNumber (configFile >> "cfgWeapons" >> (primaryweapon player) >> "twc_openbolt");
-
-		if (!isnil "_openbolt") then {
-
-			if (_openbolt == 1) then {
+		[{
 			[player, primaryweapon player] call ace_overheating_fnc_jamWeapon;
-			};
-		};
+			
+			[] call openBoltFnc;
+		}, [], (random (6000 / _openboltcoef)) + 200] call CBA_fnc_waitAndExecute;
 	};
 };
+
+
+
+/* twc_player_OpenWeapon = objNull;
+twc_player_OpenJamPending = 0;
+
+player addEventHandler ["Fired", {
+	params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+
+	if (player != _unit) exitWith {};
+
+	_openbolt = [(configFile >> "CfgWeapons" >> typeOf(_weapon)), "twc_openbolt", 0] call BIS_fnc_returnConfigEntry;
+
+	if (_openbolt > 0) then {
+		twc_player_OpenWeapon = _weapon;
+		_openboltcoef = [(configFile >> "CfgWeapons" >> typeOf(_weapon)), "twc_openbolt_coef", 1] call BIS_fnc_returnConfigEntry;
+
+		if (twc_player_OpenJamPending < 10) then {
+			[
+				{
+					params ["_weapon"];
+					
+					if (twc_player_OpenWeapon == _weapon) then {
+						[player, _weapon] call ace_overheating_fnc_jamWeapon;
+					};
+					
+					twc_player_OpenJamPending = twc_player_OpenJamPending - 1;
+				},
+				[_weapon],
+				(random (6000 / _openboltcoef))
+			] call CBA_fnc_waitAndExecute;
+			
+			twc_player_OpenJamPending = twc_player_OpenJamPending + 1;
+		};
+	};
+}]; */
 
 [{
 	if (isNil {missionNameSpace getVariable "twcModuleEnabled"}) exitWith {
