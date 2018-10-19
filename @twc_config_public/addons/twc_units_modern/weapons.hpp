@@ -49,6 +49,13 @@ class cfgWeapons
 		};
 	};
 	
+	class Rifle_Long_Base_F;
+	class rhs_pkp_base: Rifle_Long_Base_F
+	{
+		twc_openbolt = 1;
+		twc_openbolt_coef = 1.1;
+	};
+	
 	class CUP_Vlmg_M240_M1Abrams_Coax;
 	class CUP_M240_Coax_M1_Abrams_W: CUP_Vlmg_M240_M1Abrams_Coax
 	{
@@ -73,6 +80,17 @@ class cfgWeapons
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";
 	};
+	
+	class rhs_weap_saw_base: Rifle_Base_F
+	{
+		twc_openbolt = 1;
+	};
+	
+	class LMG_Mk200_F: Rifle_Long_Base_F
+	{
+		twc_openbolt = 1;
+	};
+		
 	
 	class rhs_weap_lmg_minimipara;
 	class rhs_weap_lmg_minimi_railed: rhs_weap_lmg_minimipara
@@ -303,9 +321,10 @@ class cfgWeapons
 	class rhs_weap_ak74m_zenitco01_b33: rhs_weap_ak74m_zenitco01
 	{
 		
-		magazines[] = {"rhsgref_30rnd_556x45_m21", "rhsgref_30rnd_556x45_m21_t"};
+		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
+		magazineWell[] = {};
 	};
 	
 	
@@ -314,6 +333,7 @@ class cfgWeapons
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
 		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
+		magazineWell[] = {};
 		};
 	
 
@@ -323,6 +343,7 @@ class cfgWeapons
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
 		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1", "rhsusf_acc_grip3"};
+		magazineWell[] = {};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -352,7 +373,8 @@ class cfgWeapons
 	class twc_ak74_pol_2_base: rhs_weap_ak74m_2mag_npz
 	{
 		
-		magazines[] = {"rhsgref_30rnd_556x45_m21", "rhsgref_30rnd_556x45_m21_t"};
+		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
+		magazineWell[] = {};
 	};
 	
 
@@ -362,6 +384,7 @@ class cfgWeapons
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
 		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
+		magazineWell[] = {};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -387,7 +410,8 @@ class cfgWeapons
 	class twc_ak74_gp25_pol_base: rhs_weap_ak74mr_gp25
 	{
 		
-		magazines[] = {"rhsgref_30rnd_556x45_m21", "rhsgref_30rnd_556x45_m21_t"};
+		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
+		magazineWell[] = {};
 	};
 	
 	
@@ -399,6 +423,7 @@ class cfgWeapons
 		displayName = "wz.2004 Beryl (wz. 74)";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
 		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
+		magazineWell[] = {};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -642,12 +667,13 @@ class cfgmagazines{
 			mass = 48;
 		};
 		
-		class rhsgref_30rnd_556x45_m21: CA_Magazine {
+		class rhs_30Rnd_545x39_7N10_AK;
+		class twc_rhsgref_30rnd_556x45_m21: rhs_30Rnd_545x39_7N10_AK {
 			descriptionshort = "Caliber: 5.56x45mm<br />Rounds: 30";
 			displayName = "5.56mm 30rnd Mag";
 		};
 		
-		class rhsgref_30rnd_556x45_m21_t: rhsgref_30rnd_556x45_m21 {
+		class twc_rhsgref_30rnd_556x45_m21_t: twc_rhsgref_30rnd_556x45_m21 {
 			descriptionshort = "Caliber: 5.56x45mm Tracer<br />Rounds: 30";
 			displayName = "5.56mm 30rnd Tracer Mag";
 		};

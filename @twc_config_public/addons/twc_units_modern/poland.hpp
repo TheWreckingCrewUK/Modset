@@ -96,13 +96,13 @@
 		};
 		magazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -111,13 +111,13 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -215,11 +215,11 @@
 		};
 		magazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",
@@ -231,11 +231,11 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",
