@@ -61,6 +61,12 @@ class CfgAmmo {
 		soundHit4[] = {};
 	};
 	
+	class default;
+	class B_IRstrobe: default
+	{
+		timeToLive=150000;
+	};
+	
 	class Chemlight_base;
 	class ACE_G_Chemlight_IR: Chemlight_base {
 		timeToLive = 150000;
