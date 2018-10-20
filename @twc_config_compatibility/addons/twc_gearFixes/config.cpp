@@ -123,8 +123,6 @@ class CfgWeapons {
 	};
 	class SP_smg_sterling: SMG_02_base_F
 	{
-		twc_openbolt = 1;
-		twc_openbolt_coef = 0.8;
 		class FullAuto: FullAuto
 		{
 			Burst = 1;
