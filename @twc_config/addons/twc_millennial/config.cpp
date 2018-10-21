@@ -54,6 +54,11 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UK3CB_BAF_U_Smock_DPMW";
 		backpack = "";
+		
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+		};
+		
 		linkedItems[] =
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
