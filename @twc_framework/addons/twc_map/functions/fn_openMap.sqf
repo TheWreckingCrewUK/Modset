@@ -1,7 +1,7 @@
 params ["_mapObject"];
 
 _mapID = _mapObject getVariable ["twc_map_owner", 0];
-_mapOwnersMarkers = _mapObject ["twc_map_tempMarkers", []];
+_mapOwnersMarkers = _mapObject getVariable ["twc_map_tempMarkers", []];
 
 // dim all our own markers, so the common & map owner ones are prominent
 { _x setMarkerAlphaLocal 0.4; } forEach allMapMarkers;

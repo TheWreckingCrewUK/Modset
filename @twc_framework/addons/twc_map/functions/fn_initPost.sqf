@@ -1,26 +1,24 @@
-if (!hasInterface || isServer) exitWith {};
-
-twc_map_temporary = false;
-twc_map_lookingAt = 0;
-twc_map_temporaryMarkers = [];
-
 ["visibleMap", {
-	params ["_visible"];
+	params ["", "_visible"];
 	
 	if (!_visible) then {
 		if (twc_map_temporary) then {
 			player unlinkItem "ItemMap";
 			twc_map_temporary = false;
 		};
+
+		twc_map_lookingAt = 0; // assert reset
 	};
 }] call CBA_fnc_addPlayerEventHandler;
 
 ["twc_map_closed", {
 	params ["_mapID"];
 
-	if (twc_map_lookingAt == _mapID) then {
+	if (!visibleMap) exitWith {};
+
+	if (twc_map_lookingAt isEqualTo _mapID) then {
 		twc_map_lookingAt = 0;
-		[] call twc_map_removeTempMarkers;
+		[] call twc_map_fnc_removeTempMarkers;
 		openMap false;
 	};
 }] call CBA_fnc_addEventHandler;
@@ -33,11 +31,11 @@ twc_map_temporaryMarkers = [];
 
 	if !(_ownsAMap) then {
 		twc_map_temporary = true;
-		player assignItem "ItemMap";
+		player linkItem "ItemMap";
 	};
 
 	openMap true;
-	ctrlSetFocus ((findDisplay 51) displayCtrl 12);
+	ctrlSetFocus ((findDisplay 12) displayCtrl 51);
 }] call CBA_fnc_addEventHandler;
 
 ["ace_settingsInitialized", {

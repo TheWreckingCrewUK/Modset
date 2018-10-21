@@ -30,9 +30,15 @@ class CfgPatches {
 #include "CfgFunctions.hpp"
 #include "CfgVehicles.hpp"
 
+class Extended_PreInit_EventHandlers {
+	class twc_map {
+		clientInit = "call twc_map_fnc_preInit;";
+	};
+};
+
 class Extended_PostInit_EventHandlers {
 	class twc_map {
-		clientInit = "[] call ace_map_fnc_initPost;";
+		clientInit = "call twc_map_fnc_initPost;";
 	};
 };
 
