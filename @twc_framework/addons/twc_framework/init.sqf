@@ -149,7 +149,7 @@ openBoltFnc = {
 			[] call openBoltFnc;
 		}, [], (random (6000 / _openboltcoef)) + 200] call CBA_fnc_waitAndExecute;
 	} else {
-		[{ [] call openBoltFnc; }, [], (random (6000)) + 200] call CBA_fnc_waitAndExecute;
+		[{ [] call openBoltFnc; }, [], 900] call CBA_fnc_waitAndExecute;
 	};
 };
 

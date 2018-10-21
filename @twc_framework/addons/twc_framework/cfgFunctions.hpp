@@ -38,6 +38,7 @@ class CfgFunctions {
 			class isHigherRank {};
 			class GliderTakeOff {};
 			class confiscateBadItems {};
+			class addToGroup {};
 			class init{};
 		};
 		

@@ -1,4 +1,16 @@
-class cfgVehicles {
+class CfgVehicles {
+	class Man;
+	class CAManBase: Man {
+		class ACE_MainActions {
+			class TWC_AddToGroup {
+				displayName = "Add To Group";
+				condition = "[_caller, _target] call twc_framework_fnc_isHigherRank && group _target != group _caller";
+				statement = "[_target] joinSilent _caller"; // can be function in future for notice
+				exceptions[] = {"isNotSwimming"};
+			};
+		};
+	};
+
 	class Logic;
 	class ModuleOrdnanceMortar_F;
 	
