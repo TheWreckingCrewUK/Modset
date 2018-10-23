@@ -175,6 +175,56 @@ class WW2_British_Medic: WW2_British_Base {
 	};
 };
 
+class WW2_British_Mortar: WW2_British_Base {
+	scope = 2;
+	displayName = "Platoon Mortar";
+	uniformClass = "fow_u_uk_bd40_01_sergeant";
+	backpack = "TWC_Backpack_WW2_Mortar";
+	class EventHandlers: EventHandlers {
+		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+	};
+
+	weapons[] = {
+		"bnae_mk1_virtual",
+		"twc_2inch_bag",
+		"Throw",
+		"Put",
+		"Binocular"
+	};
+
+	respawnWeapons[] = {
+		"bnae_mk1_virtual",
+		"twc_2inch_bag",
+		"Throw",
+		"Put",
+		"Binocular"
+	};
+
+	magazines[] = {
+		"10Rnd_303_Magazine",
+		"10Rnd_303_Magazine",
+		"10Rnd_303_Magazine",
+		"10Rnd_303_Magazine",
+		"10Rnd_303_Magazine",
+		"twc_2inch_he_1rnd",
+		"twc_2inch_he_1rnd",
+		"twc_2inch_he_1rnd",
+		"twc_2inch_he_1rnd"
+	};
+
+	respawnMagazines[] = {
+		"10Rnd_303_Magazine",
+		"10Rnd_303_Magazine",
+		"10Rnd_303_Magazine",
+		"10Rnd_303_Magazine",
+		"10Rnd_303_Magazine",
+		"twc_2inch_he_1rnd",
+		"twc_2inch_he_1rnd",
+		"twc_2inch_he_1rnd",
+		"twc_2inch_he_1rnd"
+	};
+};
+
 class WW2_British_Section_Commander: WW2_British_Base {
 	scope = 2;
 	displayName = "Section Commander";
