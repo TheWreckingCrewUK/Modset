@@ -518,6 +518,7 @@
 		scope=2;
 		displayName="Medic";
 		backpack="TWC_Backpack_Modern_US_Army_Medic";
+		attendant = 1;
 		linkedItems[]=
 		{
 			"rhsusf_spcs_ocp_medic",
