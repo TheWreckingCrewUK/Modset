@@ -41,7 +41,14 @@ _callerMarkers = [];
 		_mapObject setVariable ["twc_map_owner", getPlayerUID _caller, true];
 
 		{
-			_callerMarkers pushBack ([_x] call twc_map_markerToArray);
+			private "_string";
+			_string = toArray _x;
+			_string resize 15;
+			
+			// check if it's a players marker, if so then deal with it
+			if (toString _string == "_USER_DEFINED #") then {
+				_callerMarkers pushBack ([_x] call twc_map_fnc_markerToArray);
+			};
 		} forEach allMapMarkers;
 
 		_mapObject setVariable ["twc_map_tempMarkers", _callerMarkers, true];
