@@ -22,6 +22,13 @@
                     statement  = "[_target, _player] call twc_map_fnc_pickupMap"; \
                     icon = "A3\Ui_f\data\MAP\Markers\Military\pickup_ca.paa"; \
                 }; \
+                class TWC_Map_CopyMarkers { \
+                    displayName = "Copy Markers"; \
+                    distance = 2; \
+                    condition = "true"; \
+                    statement  = "[_target] call twc_map_fnc_copyMarkers"; \
+                    icon = "\twc_map\icons\copymarkers_ca.paa"; \
+                }; \
             }; \
         }; \
     };

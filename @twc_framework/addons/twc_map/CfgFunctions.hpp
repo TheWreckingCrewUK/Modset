@@ -11,6 +11,7 @@ class CfgFunctions {
 			class unfoldMap {};
 			class pickupMap {};
 			class openMap {};
+			class copyMarkers {};
 			class removeTempMarkers {};
 
 			/** HELPER FUNCTIONS **/
