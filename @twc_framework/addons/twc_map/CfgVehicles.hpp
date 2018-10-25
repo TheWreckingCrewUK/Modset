@@ -44,7 +44,7 @@ class CfgVehicles {
 	};
 
 	class Items_Base_F;
-	ADD_MAP(Land_Map_blank_F);
-	ADD_MAP(Land_Map_altis_F);
-	ADD_MAP(Land_Map_stratis_F);
+	ADD_MAP(Land_Map_blank_F)
+	ADD_MAP(Land_Map_altis_F)
+	ADD_MAP(Land_Map_stratis_F)
 };
