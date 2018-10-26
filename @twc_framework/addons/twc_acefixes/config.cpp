@@ -5,8 +5,7 @@ class CfgPatches {
 		requiredVersion = 1.7;
 
 		requiredAddons[] = {
-			"ace_common",
-			"acre_main"
+			"ace_common"
 		};
 
 		author[]={};
@@ -26,17 +25,7 @@ class cfgFunctions {
 			class handleParadrop {};
 		};
 	};
-	
-	class acre_sys_core {
-		tag = "acre_sys_core";
-		
-		class acre_sys_core {
-			class processDirectSpeaker {
-				file = "twc_acefixes\functions\fn_processDirectSpeaker.sqf";
-			};
-		};
-	};
-	
+
 	class ace_mk6mortar {
 		tag = "ace_mk6mortar";
 		
