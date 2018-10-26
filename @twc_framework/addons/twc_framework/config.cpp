@@ -73,6 +73,4 @@ class Extended_InitPost_EventHandlers {
 #include "cfgWeapons.hpp"
 #include "cfgVehicles.hpp"
 #include "cfgFunctions.hpp"
-#include "cfgMusic.hpp"
-#include "cfgSounds.hpp"
 #include "cfgWaypoints.hpp"
