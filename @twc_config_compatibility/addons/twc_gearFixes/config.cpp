@@ -668,12 +668,12 @@ class CfgVehicles {
 	};
 	class CUP_Mastiff_Base : Wheeled_APC_F
 	{
-		antiRollbarForceCoef = 50;
+		antiRollbarForceCoef = 60;
 		antiRollbarForceLimit = 40;
 		antiRollbarSpeedMin = 5;
 		antiRollbarSpeedMax = 100;
 		terrainCoef = 5.0;
-		turncoef = 3.0;
+		turncoef = 2.0;
 		armor = 700;
 		clutchStrength = 150;
 		differentialType = "all_open";
@@ -736,7 +736,7 @@ class CfgVehicles {
 		antiRollbarSpeedMin = 30;
 		antiRollbarSpeedMax = 100;
 		terrainCoef = 5.0;
-		turncoef = 3.0;
+		turncoef = 2.0;
 		armor = 700;
 		clutchStrength = 150;
 		differentialType = "all_open";
