@@ -1,5 +1,5 @@
 class CfgPatches {
-	class TWC_Intro {
+	class TWC_Incorporeal {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.7;

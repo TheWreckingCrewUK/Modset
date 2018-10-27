@@ -1,7 +1,7 @@
 #define ADD_MUSIC(CLASSNAME,FOLDER) \
-	class CLASSNAME { \
-		name = #CLASSNAME; \
-		sound[] = {"twc_intro\themes\##FOLDER##\##CLASSNAME##.ogg", 10, 1}; \
+	class TWC_##CLASSNAME { \
+		name = "TWC_##CLASSNAME##"; \
+		sound[] = {"twc_intro\sounds\##FOLDER##\##CLASSNAME##.ogg", 10, 1}; \
 	}
 
 class CfgMusic {
