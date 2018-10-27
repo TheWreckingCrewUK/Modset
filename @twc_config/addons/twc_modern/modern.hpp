@@ -1853,4 +1853,250 @@
 		vehicleClass="Men_Modern_COIN_Mounted";
 		backpack="";
 	};
-	
+	//////////////////////////////  NBC-Mounted-COIN //////////////////////////////
+	class Modern_NBC_British_Platoon_Commander: Modern_British_Platoon_Commander
+	{
+		uniformClass="SP_NBCMk3_HoodUp_Item";
+		editorSubcategory = "TWC_Infantry_COIN_NBC";
+		vehicleClass="TWC_Infantry_COIN_NBC";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Holster",
+			"UK3CB_BAF_H_Mk7_Camo_D",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Holster",
+			"UK3CB_BAF_H_Mk7_Camo_D",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	class Modern_NBC_British_Platoon_Sergeant: Modern_British_Platoon_Sergeant
+	{
+		uniformClass="SP_NBCMk3_HoodUp_Item";
+		editorSubcategory = "TWC_Infantry_COIN_NBC";
+		vehicleClass="TWC_Infantry_COIN_NBC";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Holster",
+			"UK3CB_BAF_H_Mk7_Camo_D",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Holster",
+			"UK3CB_BAF_H_Mk7_Camo_D",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	class Modern_NBC_British_Medic: Modern_British_Medic
+	{
+		uniformClass="SP_NBCMk3_HoodUp_Item";
+		editorSubcategory = "TWC_Infantry_COIN_NBC";
+		vehicleClass="TWC_Infantry_COIN_NBC";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Medic_D",
+			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Medic_D",
+			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	class Modern_NBC_British_Squadleader: Modern_British_Squadleader
+	{
+		uniformClass="SP_NBCMk3_HoodUp_Item";
+		editorSubcategory = "TWC_Infantry_COIN_NBC";
+		vehicleClass="TWC_Infantry_COIN_NBC";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_SL_D",
+			"UK3CB_BAF_H_Mk7_Scrim_ESS_B",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_SL_D",
+			"UK3CB_BAF_H_Mk7_Scrim_ESS_B",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemcTab",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	class Modern_NBC_British_Pointman_Mounted: Modern_British_Pointman_Mounted
+	{
+		uniformClass="SP_NBCMk3_HoodUp_Item";
+		editorSubcategory = "TWC_Infantry_COIN_NBC";
+		vehicleClass="TWC_Infantry_COIN_NBC";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_B",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_B",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	class Modern_NBC_British_Grenadier_COIN_Mounted: Modern_British_Grenadier_COIN_Mounted
+	{
+		uniformClass="SP_NBCMk3_HoodUp_Item";
+		editorSubcategory = "TWC_Infantry_COIN_NBC";
+		vehicleClass="TWC_Infantry_COIN_NBC";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Grenadier_B",
+			"UK3CB_BAF_H_Mk7_Scrim_A",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Grenadier_B",
+			"UK3CB_BAF_H_Mk7_Scrim_A",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	class Modern_NBC_British_Autorifleman_COIN_Mounted: Modern_British_Autorifleman_COIN_Mounted
+	{
+		uniformClass="SP_NBCMk3_HoodUp_Item";
+		editorSubcategory = "TWC_Infantry_COIN_NBC";
+		vehicleClass="TWC_Infantry_COIN_NBC";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_MG_A",
+			"UK3CB_BAF_H_Mk7_Scrim_C",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_MG_A",
+			"UK3CB_BAF_H_Mk7_Scrim_C",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	class Modern_NBC_British_2IC_COIN_Mounted: Modern_British_2IC_COIN_Mounted
+	{
+		uniformClass="SP_NBCMk3_HoodUp_Item";
+		editorSubcategory = "TWC_Infantry_COIN_NBC";
+		vehicleClass="TWC_Infantry_COIN_NBC";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_B",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_B",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	class Modern_NBC_British_Marksman_COIN_Mounted: Modern_British_Marksman_COIN_Mounted
+	{
+		uniformClass="SP_NBCMk3_HoodUp_Item";
+		editorSubcategory = "TWC_Infantry_COIN_NBC";
+		vehicleClass="TWC_Infantry_COIN_NBC";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"UK3CB_BAF_H_Mk7_Scrim_E",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"UK3CB_BAF_H_Mk7_Scrim_E",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	class Modern_NBC_British_Machinegunner_Mounted: Modern_British_Machinegunner_Mounted
+	{
+		uniformClass="SP_NBCMk3_HoodUp_Item";
+		editorSubcategory = "TWC_Infantry_COIN_NBC";
+		vehicleClass="TWC_Infantry_COIN_NBC";
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_MG_A",
+			"UK3CB_BAF_H_Mk7_Scrim_C",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_MG_A",
+			"UK3CB_BAF_H_Mk7_Scrim_C",
+			"SP_Gasmask_S6",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
