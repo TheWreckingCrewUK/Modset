@@ -1,10 +1,17 @@
-
+#define ADD_MUSIC(CLASSNAME,FOLDER) \
+	class CLASSNAME { \
+		name = #CLASSNAME; \
+		sound[] = {"twc_intro\themes\##FOLDER##\##CLASSNAME##.ogg", 10, 1}; \
+	}
 
 class CfgMusic {
-	tracks[]={};
+	tracks[] = {};
 	
-	class modern_intro {
-		name = "modern_intro";
-		sound[] = {"twc_intro\themes\day\modern_intro.ogg", db + 10, 1};
-	};
+	/** classname must be same as filename **/
+	ADD_MUSIC(modern_day_intro, operation);
+	ADD_MUSIC(modern_night_intro, operation);
+	ADD_MUSIC(millennial_day_intro, operation);
+	ADD_MUSIC(millennial_night_intro, operation);
+	ADD_MUSIC(coldwar_day_intro, operation);
+	ADD_MUSIC(coldwar_night_intro, operation);
 };
