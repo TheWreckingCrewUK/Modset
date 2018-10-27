@@ -24,3 +24,4 @@ TWC incorporeal also handles the death screen. The death screen informs the play
 * Cardiac Arrest
 * Medication Overdose (defer which one, too)
 * Clinical Death (aka no heart beating, no breathing - no CPR performed to replace this)
+* Drowned
