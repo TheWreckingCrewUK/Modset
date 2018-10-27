@@ -16,7 +16,9 @@ class CfgPatches {
 	};
 };
 
+#include "CfgDeathScreens.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgFunctions.hpp"
-#include "CfgSounds.hpp"
 #include "CfgMusic.hpp"
+#include "CfgOutros.hpp"
+#include "CfgSounds.hpp"

@@ -12,5 +12,9 @@ class CfgSounds {
 	
 	/** DEATHSCREEN SOUNDS **/
 	ADD_SOUND(bleed_out, death);
+	ADD_SOUND(cardiac_arrest, death);
+	ADD_SOUND(clinical_death, death);
+	ADD_SOUND(drowned, death);
 	ADD_SOUND(instant_death, death);
+	ADD_SOUND(overdose, death);
 };
