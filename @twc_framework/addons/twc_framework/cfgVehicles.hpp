@@ -4,8 +4,8 @@ class CfgVehicles {
 		class ACE_MainActions {
 			class TWC_AddToGroup {
 				displayName = "Add To Group";
-				condition = "[_caller, _target] call twc_framework_fnc_isHigherRank && group _target != group _caller";
-				statement = "[_target] joinSilent _caller"; // can be function in future for notice
+				condition = "group _target != group _player && { [_player, _target] call twc_framework_fnc_isHigherRank }";
+				statement = "[_target] joinSilent _player"; // can be function in future for notice
 				exceptions[] = {"isNotSwimming"};
 			};
 		};
