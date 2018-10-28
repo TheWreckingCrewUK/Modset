@@ -2,36 +2,42 @@ class CfgDeathScreens {
 	class bleed_out {
 		text = "bled out";
 		sound = "twc_bleed_out";
-		fadeOut = 61; // fade at this time (seconds)
+		fadeBegins = 30; // when's the music start to fade? (duration = out - begins).
+		fadeOut = 61;
 	};
 	
 	class cardiac_arrest {
 		text = "suffered a cardiac arrest";
 		sound = "twc_cardiac_arrest";
+		fadeBegins = 30;
 		fadeOut = 50;
 	};
 	
 	class clinical_death {
-		text = "declared clinically dead";
+		text = "was declared clinically dead";
 		sound = "clinical_death";
+		fadeBegins = 30;
 		fadeOut = 88;
 	};
 	
 	class drowned {
 		text = "drowned";
 		sound = "twc_drowned";
+		fadeBegins = 30;
 		fadeOut = 67;
 	};
 	
 	class instant_death {
 		text = "was killed instantaneously";
 		sound = "twc_instant_death";
+		fadeBegins = 30;
 		fadeOut = 63;
 	};
 	
 	class overdose {
 		text = "died via overdose";
 		sound = "twc_overdose";
+		fadeBegins = 30;
 		fadeOut = 80;
 	};
 	

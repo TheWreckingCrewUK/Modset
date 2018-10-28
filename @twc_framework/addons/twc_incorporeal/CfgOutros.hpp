@@ -41,4 +41,19 @@ class CfgOutros {
 		song = "";
 		duration = 0;
 	};
+	
+	class National_Embarrassment {
+		title = "National Embarrassment";
+		defaultText = "There will be articles in the Daily Mail about this.";
+		song = "";
+		duration = 0;
+	};
+	
+	class Surrendered {
+		title = "Surrendered";
+		defaultText = "Remaining forces have surrendered themselves to the enemy.";
+		song = "";
+		duration = 0;
+	};
 };
+

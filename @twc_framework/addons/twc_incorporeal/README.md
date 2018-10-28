@@ -16,7 +16,7 @@ TWC incorporeal also handles the TWC custom mission finished screen, that incorp
 Outro also features a location module, that if placed by the mission maker will be part of the end screen. This can either be the default circle around the module (with camera properties defined by it, i.e. distance, fov etc.), but if it's sync'd with two markers, it will pan between them focusing on the module itself, allowing for a panning shot.
 
 ## Death Screen
-TWC incorporeal also handles the death screen. The death screen informs the player of how they died, and gives them a moments reflection. The music that plays changes slightly depending on their circumstance. Attempts to fade them into spectate, as opposed to a hard shunt. This is used to pass data to the outro system, as well.
+TWC incorporeal also handles the death screen. The death screen informs the player of how they died, and gives them a moments reflection. The music that plays changes depending on their circumstance. Attempts to fade them into spectate, as opposed to a hard shunt. This is used to pass data to the outro system, as well.
 
 ## Death Types
 * Instantly Killed
