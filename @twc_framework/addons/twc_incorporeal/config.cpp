@@ -20,6 +20,7 @@ class CfgPatches {
 #include "CfgDeathScreens.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgIntros.hpp"
 #include "CfgMusic.hpp"
 #include "CfgOutros.hpp"
 #include "CfgSounds.hpp"

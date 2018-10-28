@@ -14,4 +14,6 @@ class CfgMusic {
 	ADD_MUSIC(millennial_night_intro, operation);
 	ADD_MUSIC(coldwar_day_intro, operation);
 	ADD_MUSIC(coldwar_night_intro, operation);
+	ADD_MUSIC(ww2_day_intro, operation);
+	ADD_MUSIC(ww2_night_intro, operation);
 };

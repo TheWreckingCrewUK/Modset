@@ -168,4 +168,6 @@ openBoltFnc = {
 	[(missionNameSpace getVariable ["run", 0])] spawn twc_fnc_run;
 	[(missionNameSpace getVariable ["safeZone", 0])] spawn twc_fnc_safeZone;
 	[(missionNameSpace getVariable ["zuesObjects", true])] spawn twc_fnc_zeus;
+
+	["twc_framework_initComplete", []] call CBA_fnc_localEvent;
 }, [], 1] call CBA_fnc_waitAndExecute;
