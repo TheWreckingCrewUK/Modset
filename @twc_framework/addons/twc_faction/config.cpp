@@ -150,6 +150,10 @@ class CfgEditorSubcategories {
 		displayName = "Infantry (Tropic)";
 	};
 	
+	class TWC_Infantry_Regular_NBC {
+		displayName = "Infantry (NBC)";
+	};
+	
 	class TWC_Infantry_Dismounted_Woodland {
 		displayName = "Infantry (Dismounted, Woodland)";
 	};
@@ -164,6 +168,10 @@ class CfgEditorSubcategories {
 	
 	class TWC_Infantry_Dismounted_Tropic {
 		displayName = "Infantry (Dismounted, Tropic)";
+	};
+	
+	class TWC_Infantry_Dismounted_NBC {
+		displayName = "Infantry (Dismounted, NBC)";
 	};
 	
 	class TWC_Infantry_Airborne_Woodland {
@@ -190,6 +198,10 @@ class CfgEditorSubcategories {
 		displayName = "Infantry (COIN, Tropic)";
 	};
 	
+	class TWC_Infantry_COIN_NBC {
+		displayName = "Infantry (COIN, NBC)";
+	};
+	
 	class TWC_Infantry_COIN_Dismounted_Woodland {
 		displayName = "Infantry (COIN, Dismounted, Woodland)";
 	};
@@ -204,5 +216,9 @@ class CfgEditorSubcategories {
 	
 	class TWC_Infantry_COIN_Dismounted_Tropic {
 		displayName = "Infantry (COIN, Dismounted, Tropic)";
+	};
+	
+	class TWC_Infantry_COIN_Dismounted_NBC {
+		displayName = "Infantry (COIN, Dismounted, NBC)";
 	};
 };

@@ -33,16 +33,15 @@ class CfgFunctions {
 			class removeDisplay {};
 			class showBearing {};
 			class hudReset {};
+			
+			/** adds hide functionality to ace spectator camera **/
+			class handleSpectateCompass {};
+			class toggleSpectateCompass {};
 		};
 	};
 };
 
-/* class Extended_DisplayUnload_EventHandlers {
-	class RscDiary {
-		ace_ui = "[{[] call TWC_UI_fnc_hudReset}] call CBA_fnc_execNextFrame";
-	};
-}; */
-
 #include "RscTitles.hpp"
 #include "DefaultVehicleSystemsDisplayManager.hpp"
 #include "RadioProtocolBase.hpp"
+#include "ACE_Spectator_Display.hpp"
