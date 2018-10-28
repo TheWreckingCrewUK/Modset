@@ -1,14 +1,4 @@
 
-class CfgFunctions 
-{
-	class TWC
-	{
-		class twc_flare_Functions
-		{
-			file = "\twc_units_modern\functions";
-		};
-	};
-};
 
 
 class cfgWeapons
@@ -548,6 +538,35 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	
+	
+	class mortar_82mm: CannonCore
+	{
+		class eventhandlers;
+	};
+	
+	class rhs_weap_2b14: mortar_82mm
+	{
+		
+		class EventHandlers: EventHandlers {
+			fired = "_gunner = _this select 7; _gunner setvariable ['twc_mortar_walking', 1];[_this select 6, _this select 7] call  twc_fnc_mortarwalk_fnc_mortarwalk;";
+		};
+	};
+	
+	class mortar_155mm_AMOS: CannonCore
+	{
+		class eventhandlers;
+	};
+	
+	class RHS_Weap_d30: mortar_155mm_AMOS
+	{
+		
+		class EventHandlers: EventHandlers {
+			fired = "_gunner = _this select 7; _gunner setvariable ['twc_mortar_walking', 1];[_this select 6, _this select 7] call  twc_fnc_mortarwalk_fnc_mortarwalk;";
+		};
+	};
+	
 	/////////////////////////
 	//adding scope turrets
 	

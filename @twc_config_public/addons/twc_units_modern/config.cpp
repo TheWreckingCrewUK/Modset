@@ -102,6 +102,16 @@ class CfgFactionClasses {
 	};
 };
 
+class CfgFunctions {
+	class twc_fnc_mortarwalk {
+		class functions {
+			tag = "twc_fnc_mortarwalk";
+			file = "twc_units_modern\functions";
+			class mortarwalk{};
+		};
+	};
+};
+
 #include "compositions.hpp"
 class CfgVehicles
 {

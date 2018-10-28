@@ -285,8 +285,19 @@ class CfgWeapons {
 			autoReload = 0;
 		};
 	};
-	
-	
+	/*
+	class weapon_Cannon_Phalanx: CannonCore
+	{
+		class manual: CannonCore {
+			soundContinuous = 1;
+			soundBurst = 0;
+			class StandardSound {
+			begin1[] = {"A3\Sounds_F\arsenal\weapons_vehicles\gatling_30mm\30mm_01_burst",5.62341,1,1500,[25704,32159]};
+			soundBegin[] = {"begin1",1};
+			};
+		};
+	};
+	*/
 	
 	class gatling_30mm_base: CannonCore
 	{
