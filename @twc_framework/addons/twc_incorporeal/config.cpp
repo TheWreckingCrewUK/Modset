@@ -5,7 +5,8 @@ class CfgPatches {
 		requiredVersion = 1.7;
 
 		requiredAddons[] = {
-			"twc_framework"
+			"twc_framework",
+			"twc_ui"
 		};
 
 		author[] = {"Bosenator"};

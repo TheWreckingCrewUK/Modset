@@ -2,7 +2,7 @@
 class CfgOutros {
 	class Outstanding_Victory {
 		title = "Outstanding Victory";
-		defaultText = "Smashing job, chaps. We've bloody well and made text book of that.";
+		defaultText = "Smashing job, chaps. That's bloody textbook case.";
 		song = "";
 		duration = 0;
 	};
@@ -54,6 +54,11 @@ class CfgOutros {
 		defaultText = "Remaining forces have surrendered themselves to the enemy.";
 		song = "";
 		duration = 0;
+
+		// end of op, there's always player lock + 5 second fade to black
+		// these determine timings and style of transition: first is base/locations, then players, then titles
+		transitionsWLoc = [[5, 10, "fadeIn"], [62, 65, "crossFade"], [93, 93, "cut"]];
+		transitionsWoLoc = [[5, 10, "fadeIn"], [93, 93, "cut"]];
 	};
 };
 
