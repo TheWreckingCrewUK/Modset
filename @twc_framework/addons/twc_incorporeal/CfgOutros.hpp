@@ -23,7 +23,7 @@ class CfgOutros {
 	
 	class Close_Defeat {
 		title = "Close Defeat";
-		defaultText = "Defeat was snatched from the claws of victory. We were close, but no cigar.";
+		defaultText = "Defeat was snatched from the claws of victory. We were close, but not close enough.";
 		song = "";
 		duration = 0;
 	};
