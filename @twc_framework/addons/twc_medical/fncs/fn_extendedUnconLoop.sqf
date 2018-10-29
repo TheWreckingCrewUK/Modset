@@ -28,11 +28,13 @@ if (_unCon) then {
 	};
 
 	if (_bloodVolume <= 20) exitWith {
+		["TWC_Unit_Perished", [_unit, "bleed_out"]] call CBA_fnc_globalEvent;
 		[_unit, true, false] call ace_medical_fnc_setDead;
 		_continue = false;
 	};
 	
 	if (_bloodPressureH < 20 && _bloodPressureL < 20) exitWith {
+		["TWC_Unit_Perished", [_unit, "clinical_death"]] call CBA_fnc_globalEvent;
 		[_unit, true, false] call ace_medical_fnc_setDead;
 		_continue = false;
 	};

@@ -16,5 +16,6 @@ _deathScreenData = [_deathSong, _fadeBegins, _fadeOut];
 	_roleDesc,
 	_deathText,
 	_time,
-	_deathScreenData
+	_deathScreenData,
+	(getPos _unit)
 ];
