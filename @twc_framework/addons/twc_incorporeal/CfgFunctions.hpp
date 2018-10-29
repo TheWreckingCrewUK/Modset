@@ -19,6 +19,7 @@ class CfgFunctions {
 			
 			/** HELPER FUNCTIONS **/
 			class getGroupData {};
+			class getDeathData {};
 		};
 	};
 };
