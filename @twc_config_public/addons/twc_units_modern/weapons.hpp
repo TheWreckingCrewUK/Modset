@@ -539,7 +539,7 @@ class cfgWeapons
 		};
 	};
 	
-	
+	/*
 	
 	class mortar_82mm: CannonCore
 	{
@@ -566,7 +566,7 @@ class cfgWeapons
 			fired = "_gunner = _this select 7; _gunner setvariable ['twc_mortar_walking', 1];[_this select 6, _this select 7] call  twc_fnc_mortarwalk_fnc_mortarwalk;";
 		};
 	};
-	
+	*/
 	/////////////////////////
 	//adding scope turrets
 	
