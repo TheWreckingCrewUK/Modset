@@ -9,14 +9,16 @@ class CfgFunctions {
 			
 			/** INTRO **/
 			class startIntro {};
+			class startLegacyIntro {};
 			class getIntroSong {};
-			class getIntroGroupCamData {};
+			class getIntroData {};
 			
 			/** DEATH SCREEN **/
 			
 			/** OUTRO **/
 			
 			/** HELPER FUNCTIONS **/
+			class getGroupData {};
 		};
 	};
 };

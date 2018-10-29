@@ -4,12 +4,12 @@ if (isDedicated || !hasInterface) exitWith {};
 ["twc_framework_initComplete", {
 	_operationEra = missionNameSpace getVariable ["era", "modern"];
 	_isNightOp = missionNameSpace getVariable ["nightGear", false];
-	_groupName = "Section"; // default
-	
-	{
-		_roleDesc = (roleDescription _x) splitString "@" param [1, ""];
-		if (_roleDesc != "") exitWith { _groupName = _roleDesc; };
-	} forEach units group player;
+	_isDisabled = missionNameSpace getVariable ["TWC_Intro_isDisabled", false];
 
-	[_operationEra, _isNightOp, _groupName] call TWC_Incorporeal_fnc_startIntro;
+	if (_isDisabled || (serverTime > 60)) exitWith {
+		[_operationEra, _isNightOp] call TWC_Incorporeal_fnc_startLegacyIntro;
+	};
+
+	_introData = [] call TWC_Incorporeal_fnc_getIntroData;
+	[_operationEra, _isNightOp, _introData] call TWC_Incorporeal_fnc_startIntro;
 }] call CBA_fnc_addEventHandler;
