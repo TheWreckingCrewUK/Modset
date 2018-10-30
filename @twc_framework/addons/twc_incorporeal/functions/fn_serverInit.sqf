@@ -14,7 +14,7 @@ TWC_Dead_Players = [];
 	["TWC_Unit_Perished", [_unit, "instant_death"]] call CBA_fnc_globalEvent;
 }] call CBA_fnc_addEventHandler;
 
-["TWC_Unit_Perished", {
+["TWC_addPerishedToServer", {
 	params ["_unit", ["_reason", "clinical_death"]];
 	
 	if (getPlayerUID _unit == "" || getPlayerUID _unit == "_SP_AI_") exitWith {};

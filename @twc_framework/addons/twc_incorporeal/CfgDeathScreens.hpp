@@ -15,7 +15,7 @@ class CfgDeathScreens {
 	
 	class clinical_death {
 		text = "was declared clinically dead";
-		sound = "clinical_death";
+		sound = "twc_clinical_death";
 		fadeBegins = 30;
 		fadeOut = 88;
 	};

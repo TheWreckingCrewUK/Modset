@@ -1,7 +1,7 @@
 class CfgFunctions {
 	class TWC_Incorporeal {
 		class functions {
-			file = "TWC_Incorporeal\functions";
+			file = "twc_incorporeal\functions";
 			
 			/** INIT **/
 			class clientInit {};
