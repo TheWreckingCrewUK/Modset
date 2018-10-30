@@ -5,6 +5,7 @@ _isEnabled = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
 if (_isEnabled) exitWith {};
 
 TWC_Death_AlreadyExecuted = false;
+TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue ["briefingName", "Untitled"]];
 
 // Wait until mission module has been initalized.
 ["twc_framework_initComplete", {
@@ -87,7 +88,7 @@ player addEventHandler ["Killed", {
 		"<t color='#FF0000' size='3'>%1 %2</t><br/><t color='#FFFFFF' size='2'>Perished during %3 at T+%4</t><br/><br/><br/><br/>If you believe you died unfairly, disconnect immediately and inform management.",
 		(_deathData select 0),
 		(_deathData select 3),
-		"Operation TEST",
+		TWC_Operation_Name
 		(_deathData select 4)
 	];
 
