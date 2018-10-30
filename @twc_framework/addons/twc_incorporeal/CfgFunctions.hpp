@@ -20,6 +20,7 @@ class CfgFunctions {
 			/** HELPER FUNCTIONS **/
 			class getGroupData {};
 			class getDeathData {};
+			class fadeInSound {};
 		};
 	};
 };

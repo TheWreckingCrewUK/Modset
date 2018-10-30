@@ -66,7 +66,7 @@ player addEventHandler ["Killed", {
 	if (_unit != player) exitWith {};
 	
 	554 cutText ["", "BLACK", 0.01, true];
-	["TWC_Dead", 0, true] call ace_common_fnc_setHearingCapability;
+	["TWC_Dead" + str (0), 0, true] call ace_common_fnc_setHearingCapability;
 }];
 
 ["TWC_Unit_Perished", {
@@ -100,10 +100,7 @@ player addEventHandler ["Killed", {
 		555 cutFadeOut 3;
 		(_duration / 100) fadeSpeech 0;
 		
-		[{
-			// TODO audio smoothing somehow.
-			["TWC_Dead", 0, false] call ace_common_fnc_setHearingCapability;
-		}, [], (_duration / 100)] call CBA_fnc_waitAndExecute;
+		[] spawn TWC_Incorporeal_fnc_fadeInSound;
 	}, [_duration], (_deathScreenData select 1)] call CBA_fnc_waitAndExecute;
 
 	["TWC_addPerishedToServer", [_unit, _reason]] call CBA_fnc_serverEvent;
