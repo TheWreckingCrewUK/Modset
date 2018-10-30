@@ -9,6 +9,28 @@ class Wheeled_APC_F: Car_F {
 
 
 //handling modifications
+	class MRAP_01_base_F;
+	class rhsusf_hmmwe_base: MRAP_01_base_F
+	{
+		class Wheels {
+			class LF;
+		};
+	};
+		
+	class rhsusf_m998_w_2dr: rhsusf_hmmwe_base
+	{
+		class Wheels:Wheels {
+			class LF:LF {
+				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
+				maxCompression = 0.25;
+				maxDroop = 0.1;
+				springDamperRate = 4500;
+				springStrength = 36000;
+			};
+		};
+	};
+	
+		
 	
 	class UK3CB_BAF_LandRover_Base;
 	
@@ -54,7 +76,6 @@ class Wheeled_APC_F: Car_F {
 		};
 	};
 	
-	class MRAP_01_base_F;
 	class rhsusf_mrzr_base: MRAP_01_base_F {
 		
 		ace_cargo_size = 25;

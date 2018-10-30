@@ -14,6 +14,47 @@ class cfgWeapons
 	class Rifle_Base_F;
 	class cannoncore;
 	
+	
+	class Launcher;
+	class Launcher_Base_F: Launcher
+	{
+		class EventHandlers;
+	};
+	
+	class rhs_weap_rpg7: Launcher_Base_F
+	{
+		class EventHandlers: EventHandlers {
+			fired = "if (!isserver) exitwith {};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5, 	(velocity _bullet select 2) + (random 4) - 2];";
+		};
+		scope=2;
+		aiDispersionCoefX=1.03;
+		aiDispersionCoefY=1.05;
+		dispersion = 0.02;
+		minrange=50;
+		minrangeprobab=0.4;
+		midrange=300;
+		midrangeprobab=0.3;
+		maxrange=500;
+		maxrangeprobab=0.9;
+	};
+	
+	class rhs_weap_rpg26: Launcher_Base_F
+	{
+		class EventHandlers: EventHandlers {
+			fired = "if (!isserver) exitwith {};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 18) - 9, (velocity _bullet select 1) + (random 18) - 9, 	(velocity _bullet select 2) + (random 2) - 1];";
+		};
+		scope=2;
+		aiDispersionCoefX=1.03;
+		aiDispersionCoefY=1.05;
+		dispersion = 0.02;
+		minrange=10;
+		minrangeprobab=0.4;
+		midrange=150;
+		midrangeprobab=0.6;
+		maxrange=300;
+		maxrangeprobab=0.3;
+	};
+	
 	class gatling_30mm: CannonCore
 	{
 		class EventHandlers;
@@ -434,7 +475,6 @@ class cfgWeapons
 		};
 	};
 	
-	class rhs_weap_rpg7;
 	class twc_rpg_pol: rhs_weap_rpg7
 	{
 		

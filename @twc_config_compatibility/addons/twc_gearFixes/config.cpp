@@ -516,8 +516,11 @@ class CfgVehicles {
 	};
 	
 	class UK3CB_BAF_Jackal_Base_D : Car_F {
-		antiRollbarForceCoef = 15;
-		antiRollbarForceLimit = 15;
+		antiRollbarForceCoef = 20;
+		antiRollbarForceLimit = 17;
+		antiRollbarSpeedMin = 5;
+		antiRollbarSpeedMax = 100;
+		turnCoef = 1.8;
 		frontBias = 0.8;
 		rearBias = 0.8;
 		centreBias = 0.8;
@@ -529,9 +532,9 @@ class CfgVehicles {
 				springDamperRate = 22000;
 				springStrength = 80000;
 				maxCompression = 0.3;
-				maxBrakeTorque = 10000;
+				maxBrakeTorque = 7000;
 				maxHandBrakeTorque = 11000;
-				frictionVsSlipGraph[] = {{ 0.0, 1.0 }, { 0.3, 0.7 }, { 1.0, 0.5 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.75 }, { 0.3, 0.7 }, { 1.0, 0.65 }};
 			};
 		};
 		
@@ -539,28 +542,33 @@ class CfgVehicles {
 	class UK3CB_BAF_Coyote_L111A1_Base_D;
 	class UK3CB_BAF_Jackal2_L111A1_Base_D: UK3CB_BAF_Coyote_L111A1_Base_D {
 		
-		antiRollbarForceCoef = 15;
-		antiRollbarForceLimit = 15;
+		antiRollbarForceCoef = 20;
+		antiRollbarForceLimit = 17;
+		turnCoef = 1.8;
 	};
 	
 	
 	class UK3CB_BAF_Coyote_Passenger_L111A1_D: UK3CB_BAF_Coyote_L111A1_Base_D {
 		
-		antiRollbarForceCoef = 15;
-		antiRollbarForceLimit = 15;
+		antiRollbarForceCoef = 20;
+		antiRollbarForceLimit = 17;
+		turnCoef = 1.8;
 	};
 	class UK3CB_BAF_Coyote_L134A1_Base_D;
 	class UK3CB_BAF_Jackal2_L134A1_Base_D: UK3CB_BAF_Coyote_L134A1_Base_D {
 		
-		antiRollbarForceCoef = 15;
-		antiRollbarForceLimit = 15;
+		antiRollbarForceCoef = 20;
+		antiRollbarForceLimit = 17;
+		turnCoef = 1.8;
 	};
 		
 	class UK3CB_BAF_Coyote_Passenger_L134A1_D: UK3CB_BAF_Coyote_L134A1_Base_D {
 		
-		antiRollbarForceCoef = 15;
-		antiRollbarForceLimit = 15;
+		antiRollbarForceCoef = 20;
+		antiRollbarForceLimit = 17;
+		turnCoef = 1.8;
 	};
+	
 			
 	
 	class UK3CB_BAF_LandRover_Base: Car_F {
