@@ -27,9 +27,11 @@ TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue 
 	
 	if (player != _unit) exitWith {}; // ignore
 
-	if (!TWC_Death_AlreadyExecuted) then {
-		[_unit] call TWC_Incorporeal_fnc_bestGuessDeath;
-	};
+	[{
+		if (!TWC_Death_AlreadyExecuted) then {
+			[_unit] call TWC_Incorporeal_fnc_bestGuessDeath;
+		};
+	}, []] call CBA_fnc_execNextFrame;
 }] call CBA_fnc_addEventHandler;
 
 /** We cut on the killed event, so we have minimal chance of the spectate UI showing **/
@@ -44,11 +46,13 @@ player addEventHandler ["Killed", {
 	[] call ace_spectator_fnc_ui_toggleUI;
 	((findDisplay 60000) displayCtrl 60020) ctrlShow false;
 	((findDisplay 60000) displayCtrl 60021) ctrlShow false;
-	// hide compass
+	[false, false] call TWC_UI_fnc_toggleSpectateCompass;
 	
-	if (!TWC_Death_AlreadyExecuted) then {
-		[_unit] call TWC_Incorporeal_fnc_bestGuessDeath;
-	};
+	[{
+		if (!TWC_Death_AlreadyExecuted) then {
+			[_unit] call TWC_Incorporeal_fnc_bestGuessDeath;
+		};
+	}, []] call CBA_fnc_execNextFrame;
 }];
 
 player addEventHandler ["Respawn", {
