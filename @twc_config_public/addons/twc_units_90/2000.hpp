@@ -1551,7 +1551,7 @@
 		vehicleClass="Men_2000D";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		attendant = 1;
-		backpack="TWC_Backpack_2000_Medic";
+		backpack="TWC_Backpack_1990_Medic_Desert";
 		linkedItems[]=
 		{
 			"rhsusf_mbav_medic",

@@ -23,6 +23,7 @@
 	class pol_backpack_rif: CUP_B_ACRScout_m95
 	{
 		scope = 1;
+	hiddenselectionstextures[] = {"\A3\Weapons_F\Ammoboxes\Bags\Data\backpack_small_oli_co.paa"};
 		
 		class TransportMagazines
 		{
@@ -41,6 +42,7 @@
 	class pol_backpack_rpg: CUP_B_RPGPack_Khaki
 	{
 		scope = 1;
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
 		
 		class TransportMagazines
 		{

@@ -1432,6 +1432,22 @@
 		vehicleClass="Men_1990RM";
 		backpack="";
 		twc_nobackpack = 1;
+		linkedItems[]=
+		{
+			"twc_lightwebbing_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_lightwebbing_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 
 	};
 	class 1990_RM_British_Rifleman_AT_Mix: 1990_RM_base
@@ -1442,6 +1458,22 @@
 		vehicleClass="Men_1990RM";
 		backpack="";
 		twc_nobackpack = 1;
+		linkedItems[]=
+		{
+			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 						weapons[]=
 		{
 		"Throw",
@@ -1465,6 +1497,22 @@
 		scope = 2;
 		vehicleClass="Men_1990RM";
 		backpack="TWC_Backpack_1990_Minimi";
+		linkedItems[]=
+		{
+			"twc_rhs_6sh92_oli",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_rhs_6sh92_oli",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 
 		weapons[]=
 		{
@@ -1740,6 +1788,8 @@
 		faction="twc_public_baf";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
+		backpack="";
+		twc_nobackpack = 1;
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="TWC_Smock_Desert";
@@ -1785,6 +1835,11 @@
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -1795,6 +1850,11 @@
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",

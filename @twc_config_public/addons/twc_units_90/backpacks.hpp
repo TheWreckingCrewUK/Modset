@@ -19,6 +19,13 @@ uk3cb_baf_equipment\uniform\data\uniform_dpm_co.paa
 
 uk3cb_baf_equipment\uniform\data\uniform_ddpm_co.paa
 */
+class rhsusf_assault_eagleaiii_ocp;
+class twc_genbackPack_tan: rhsusf_assault_eagleaiii_ocp
+{
+	displayname = "Miltec Backpack Tan";
+	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
+};
+ 
 class B_AssaultPack_dgtl;
 class twc_back_webbing: B_AssaultPack_dgtl
 {
@@ -85,6 +92,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 	class UK3CB_BAF_B_Bergen_TAN_SL_A;
 	class UK3CB_BAF_B_Bergen_DPMW_JTAC_H_A;
 	class UK3CB_BAF_B_Carryall_TAN;
+	class CUP_B_GER_Medic_Desert;
 	
 	class TWC_Backpack_1990_Sectionlead: UK3CB_BAF_B_Bergen_DPMW_SL_A
 	{
@@ -464,7 +472,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 	class CUP_B_Bergen_BAF;
 	class B_Kitbag_cbr;
 	
-	class TWC_Backpack_1990_Sectionlead_Desert: CUP_B_Bergen_BAF
+	class TWC_Backpack_1990_Sectionlead_Desert: twc_genbackPack_tan
 	{
 		scope = 1;
 		mass = 59.84;
@@ -646,7 +654,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 		};
 	};
-	class TWC_Backpack_1990_Medic_Desert: UK3CB_BAF_B_Bergen_DDPM_Rifleman_B
+	class TWC_Backpack_1990_Medic_Desert: CUP_B_GER_Medic_Desert
 	{
 		scope = 1;
 		class TransportItems
@@ -1048,7 +1056,15 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			class _xx_mag_762
 			{
 				magazine = "UK3CB_BAF_762_L42A1_10Rnd";
-				count = 15;
+				count = 6;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
 			};
 		};
 	};
