@@ -14,11 +14,11 @@ TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue 
 	_isDisabled = missionNameSpace getVariable ["TWC_Intro_isDisabled", false];
 
 	if (_isDisabled || (serverTime > 60)) exitWith {
-		[_operationEra, _isNightOp] call TWC_Incorporeal_fnc_startLegacyIntro;
+		[TWC_Operation_Name, _operationEra, _isNightOp] call TWC_Incorporeal_fnc_startLegacyIntro;
 	};
 
 	_introData = [] call TWC_Incorporeal_fnc_getIntroData;
-	[_operationEra, _isNightOp, _introData] call TWC_Incorporeal_fnc_startIntro;
+	[TWC_Operation_Name, _operationEra, _isNightOp, _introData] call TWC_Incorporeal_fnc_startIntro;
 }] call CBA_fnc_addEventHandler;
 
 ["ace_killed", {
