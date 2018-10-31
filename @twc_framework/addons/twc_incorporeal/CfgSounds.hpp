@@ -4,7 +4,7 @@
 		name = "TWC_##CLASSNAME"; \
 		sound[] = { \
 			twc_incorporeal\sounds\##FOLDER##\##CLASSNAME##.ogg \
-			, 1, 1.0 }; \
+			, -5, 1.0 }; \
 		titles[] = {0, "" }; \
 	}
 

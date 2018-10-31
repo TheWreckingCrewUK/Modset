@@ -27,36 +27,9 @@ TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue 
 	
 	if (player != _unit) exitWith {}; // ignore
 
-	_unitEpi = _unit getVariable ["ace_medical_epinephrine_insystem", 0];
-	_unitMorph = _unit getVariable ["ace_medical_morphine_insystem", 0];
-
-	_CA = _unit getVariable ["ace_medical_inCardiacArrest", false];
-	if (_CA) then { _deathReason = "cardiac_arrest"; };
-
-	if (_unitEpi > 0) then {
-		_epiLimit = [
-			(configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "Medication" >> "Epinephrine"),
-			"maxDose",
-			3
-		] call BIS_fnc_returnConfigEntry;
-
-		if (_unitEpi >= _epiLimit) then { _deathReason = "overdose_epinephrine"; };
+	if (!TWC_Death_AlreadyExecuted) then {
+		[_unit] call TWC_Incorporeal_fnc_bestGuessDeath;
 	};
-
-	if (_unitMorph > 0) then {
-		_morpLimit = [
-			(configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "Medication" >> "Morphine"),
-			"maxDose",
-			2
-		] call BIS_fnc_returnConfigEntry;
-
-		if (_unitMorph >= _morpLimit) then { _deathReason = "overdose_morphine"; };
-	};
-
-	_drowned = _unit getVariable ["TWC_isDrowning", false];
-	if (_drowned) then { _deathReason = "drowned"; };
-
-	["TWC_Unit_Perished", [_unit, _deathReason]] call CBA_fnc_globalEvent;
 }] call CBA_fnc_addEventHandler;
 
 /** We cut on the killed event, so we have minimal chance of the spectate UI showing **/
@@ -68,6 +41,23 @@ player addEventHandler ["Killed", {
 	
 	554 cutText ["", "BLACK", 0.01, true];
 	["TWC_Dead" + str (0), 0, true] call ace_common_fnc_setHearingCapability;
+	[] call ace_spectator_fnc_ui_toggleUI;
+	((findDisplay 60000) displayCtrl 60020) ctrlShow false;
+	((findDisplay 60000) displayCtrl 60021) ctrlShow false;
+	// hide compass
+	
+	if (!TWC_Death_AlreadyExecuted) then {
+		[_unit] call TWC_Incorporeal_fnc_bestGuessDeath;
+	};
+}];
+
+player addEventHandler ["Respawn", {
+	params ["_unit"];
+	
+	if (_unit != player) exitWith {};
+	
+	TWC_Death_AlreadyExecuted = false;
+	_unit setVariable ["TWC_Death_Data", [], true];
 }];
 
 ["TWC_Unit_Perished", {
@@ -88,7 +78,7 @@ player addEventHandler ["Killed", {
 		"<t color='#FF0000' size='3'>%1 %2</t><br/><t color='#FFFFFF' size='2'>Perished during %3 at T+%4</t><br/><br/><br/><br/>If you believe you died unfairly, disconnect immediately and inform management.",
 		(_deathData select 0),
 		(_deathData select 3),
-		TWC_Operation_Name
+		TWC_Operation_Name,
 		(_deathData select 4)
 	];
 

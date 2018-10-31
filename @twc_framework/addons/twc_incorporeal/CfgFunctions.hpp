@@ -21,6 +21,7 @@ class CfgFunctions {
 			class getGroupData {};
 			class getDeathData {};
 			class fadeInSound {};
+			class bestGuessDeath {};
 		};
 	};
 };
