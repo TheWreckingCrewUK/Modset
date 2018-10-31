@@ -6,6 +6,7 @@ if (_isEnabled) exitWith {};
 
 TWC_Death_AlreadyExecuted = false;
 TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue ["briefingName", "Untitled"]];
+TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 
 // Wait until mission module has been initalized.
 ["twc_framework_initComplete", {
@@ -14,11 +15,11 @@ TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue 
 	_isDisabled = missionNameSpace getVariable ["TWC_Intro_isDisabled", false];
 
 	if (_isDisabled || (serverTime > 60)) exitWith {
-		[TWC_Operation_Name, _operationEra, _isNightOp] call TWC_Incorporeal_fnc_startLegacyIntro;
+		[TWC_Operation_Name, TWC_Operation_Creator, _operationEra, _isNightOp] call TWC_Incorporeal_fnc_startLegacyIntro;
 	};
 
 	_introData = [] call TWC_Incorporeal_fnc_getIntroData;
-	[TWC_Operation_Name, _operationEra, _isNightOp, _introData] call TWC_Incorporeal_fnc_startIntro;
+	[TWC_Operation_Name, TWC_Operation_Creator, _operationEra, _isNightOp, _introData] call TWC_Incorporeal_fnc_startIntro;
 }] call CBA_fnc_addEventHandler;
 
 ["ace_killed", {

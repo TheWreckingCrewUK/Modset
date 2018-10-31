@@ -1,4 +1,4 @@
-params ["_operationName", "_operationEra", "_isNightOp"];
+params ["_operationName", "_author", "_operationEra", "_isNightOp"];
 
 _song = [_operationEra, _isNightOp] call TWC_Incorporeal_fnc_getIntroSong;
 
@@ -14,15 +14,13 @@ if (!isNil "completedTasks") then {
 };
 
 if (isMultiplayer) then {
-	[] Spawn {
-		titleCut ["", "BLACK FADED", 999];
+	titleCut ["", "BLACK FADED", 999];
 
+	[] spawn {
 		waitUntil{!(isNil "BIS_fnc_init")};
-		[ACE_player, currentWeapon ACE_player, currentMuzzle ACE_player] call ace_safemode_fnc_lockSafety;
-		enableRadio false;
-		player disableConversation true;
+		playMusic _song; // play calculated tune
 
-		playMusic _song;
+		[] call TWC_Incorporeal_fnc_setPlayerUp;
 
 		titleText ["The Wrecking Crew","PLAIN DOWN"]; 
 		titleFadeOut 7;
@@ -36,12 +34,6 @@ if (isMultiplayer) then {
 		titleFadeOut 20;
 		sleep 30;
 
-		if (!isNil "ForwardBasePos" && !(player getVariable ["twc_ignoreForwardBase",false])) then {
-			player setPos ForwardBasePos;
-			["ForwardBasePos"] spawn {twc_fnc_reconnected};
-		} else {
-			["NormalBase"] spawn {twc_fnc_reconnected};
-		};
 
 		sleep 3;
 		"dynamicBlur" ppEffectEnable true;
@@ -51,17 +43,6 @@ if (isMultiplayer) then {
 		"dynamicBlur" ppEffectCommit 5;
 
 		titleCut ["", "BLACK IN", 5];
-		
-		if !((goggles player) in approvedFacewear) then {
-			removeGoggles player;
-		};
-		
-		if !(player getVariable ["twc_keepMap",false]) then {
-			player unassignItem "itemMap"; 
-			player removeItem "itemMap"; 
-		};
-		
-		1 enableChannel false;
 	};
 };
 
