@@ -887,7 +887,7 @@
 		backpack="TWC_Backpack_1990_Sectionlead_Desert";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_rhs_6sh92_radio_ddpm",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -895,7 +895,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_rhs_6sh92_radio_ddpm",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -963,7 +963,7 @@
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_rhs_6sh92_ddpm",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -971,7 +971,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_rhs_6sh92_ddpm",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -986,6 +986,22 @@
 		uniformClass="TWC_Smock_Desert";
 		backpack="";
 		twc_nobackpack = 1;
+		linkedItems[]=
+		{
+			"twc_lightcarrier_ddpm",
+			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_lightcarrier_ddpm",
+			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 						weapons[]=
 		{
 		"Throw",
@@ -1000,22 +1016,6 @@
 		"rhs_weap_m72a7",
 		"Put"
 		};
-		linkedItems[]=
-		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
-			"UK3CB_BAF_H_Mk6_DDPM_A",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
-			"UK3CB_BAF_H_Mk6_DDPM_A",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch"
-		};
 	};
 	class 1990_British_Gunner_Desert: 1990_British_Gunner
 	{
@@ -1026,7 +1026,7 @@
 		backpack="TWC_Backpack_1990_Gunner_Desert";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_lightcarrier_tan",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1034,7 +1034,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_lightcarrier_tan",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1049,7 +1049,7 @@
 		backpack="TWC_Backpack_1990_2IC_Desert";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_rhs_6sh92_ddpm",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1057,7 +1057,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_rhs_6sh92_ddpm",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1354,6 +1354,22 @@
 		scope = 2;
 		vehicleClass="Men_1990RM";
 		backpack="TWC_Backpack_1990_Sectionlead";
+		linkedItems[]=
+		{
+			"twc_rhs_6sh92_radio_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_rhs_6sh92_radio_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 		weapons[]=
 		{
 			"Throw",
@@ -1507,6 +1523,22 @@
 		scope = 2;
 		vehicleClass="Men_1990RM";
 		backpack="TWC_Backpack_1990_2IC";
+		linkedItems[]=
+		{
+			"rhsgref_alice_webbing",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsgref_alice_webbing",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 
 	};
 

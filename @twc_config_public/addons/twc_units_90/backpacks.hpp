@@ -1,3 +1,77 @@
+/*
+
+backpak texture classnames
+
+alice tan: uk3cb_baf_equipment\backpacks\data\backpack_fast_ddpm_co.paa
+
+alice green "uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"
+CUP_B_RPGPack_Khaki
+
+alice dark green, pub only: "rhsgref\addons\rhsgref_infantry\data_tanoa\alicepack_co.paa"
+
+uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa
+
+uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa
+
+uk3cb_baf_equipment\backpacks\data\backpack_dpm_co.paa
+
+uk3cb_baf_equipment\uniform\data\uniform_dpm_co.paa
+
+uk3cb_baf_equipment\uniform\data\uniform_ddpm_co.paa
+*/
+class B_AssaultPack_dgtl;
+class twc_back_webbing: B_AssaultPack_dgtl
+{
+	displayname = "SPC";
+	model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USMC\CUP_USMC_Eagle_SPC_2.p3d";
+	hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
+};
+
+class CUP_B_AlicePack_Khaki;
+class twc_AlicePack_ddpm: CUP_B_AlicePack_Khaki
+{
+	displayname = "Alice Pack DDPM";
+	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_fast_ddpm_co.paa"};
+};
+
+class CUP_B_ACRScout_m95;
+class twc_scoutpack_olive: CUP_B_ACRScout_m95
+{
+	displayname = "CZ Scout Pack (Olive)";
+	hiddenselectionstextures[] = {"\A3\Weapons_F\Ammoboxes\Bags\Data\backpack_small_oli_co.paa"};
+};
+class twc_scoutpack_tan: CUP_B_ACRScout_m95
+{
+	displayname = "CZ Scout Pack (Tan)";
+	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
+};
+class twc_scoutpack_dpm: CUP_B_ACRScout_m95
+{
+	displayname = "CZ Scout Pack (DPM)";
+	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_fast_cs95_dpm_co.paa"};
+};
+class twc_scoutpack_ddpm: CUP_B_ACRScout_m95
+{
+	displayname = "CZ Scout Pack (DDPM)";
+	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa"};
+};
+class twc_scoutpack_wd: CUP_B_ACRScout_m95
+{
+	displayname = "CZ Scout Pack (Woodland)";
+	hiddenselectionstextures[] = {"rhsgref\addons\rhsgref_infantry\data_cdf\alicepack_co_gref_woodland.paa"};
+};
+class twc_AlicePack_tan: CUP_B_AlicePack_Khaki
+{
+	displayname = "Alice Pack Tan";
+	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
+};
+class twc_AlicePack_green: CUP_B_AlicePack_Khaki
+{
+	displayname = "Alice Pack Green";
+	hiddenselectionstextures[] = {"\A3\Weapons_F\Ammoboxes\Bags\Data\backpack_small_oli_co.paa"};
+};
+
+
 //////////////////////////////  British Woodland Camo  //////////////////////////////
 	
 	class UK3CB_BAF_B_Bergen_DPMT_SL_A;
@@ -10,6 +84,7 @@
 	class UK3CB_BAF_B_Kitbag_TAN;
 	class UK3CB_BAF_B_Bergen_TAN_SL_A;
 	class UK3CB_BAF_B_Bergen_DPMW_JTAC_H_A;
+	class UK3CB_BAF_B_Carryall_TAN;
 	
 	class TWC_Backpack_1990_Sectionlead: UK3CB_BAF_B_Bergen_DPMW_SL_A
 	{
@@ -386,8 +461,10 @@
 	class UK3CB_BAF_B_Carryall_DDPM;
 	class UK3CB_BAF_B_Kitbag_DDPM;
 	class rhsusf_assault_eagleaiii_ucp;
-
-	class TWC_Backpack_1990_Sectionlead_Desert: UK3CB_BAF_B_Bergen_DDPM_SL_A
+	class CUP_B_Bergen_BAF;
+	class B_Kitbag_cbr;
+	
+	class TWC_Backpack_1990_Sectionlead_Desert: CUP_B_Bergen_BAF
 	{
 		scope = 1;
 		mass = 59.84;
@@ -423,7 +500,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_1990_2IC_Desert: UK3CB_BAF_B_Bergen_DDPM_Rifleman_B
+	class TWC_Backpack_1990_2IC_Desert: B_Kitbag_cbr
 	{
 		scope = 1;
 		class TransportMagazines
@@ -457,7 +534,7 @@
 			};
 		};
 	};
-	class TWC_Backpack_1990_Gunner_Desert: UK3CB_BAF_B_Bergen_DDPM_Rifleman_B
+	class TWC_Backpack_1990_Gunner_Desert: B_Kitbag_cbr
 	{
 		scope = 1;
 		class TransportMagazines
@@ -465,12 +542,12 @@
 			class _xx_Stanag
 			{
 				magazine = "UK3CB_BAF_556_30Rnd";
-				count = 7;
+				count = 12;
 			};
 			class _xx_Stanag_T
 			{
 				magazine = "UK3CB_BAF_556_30Rnd_T";
-				count = 5;
+				count = 8;
 			};
 		};
 	};
@@ -811,9 +888,46 @@
 	
 	
 	// 2000's
+
+	class TWC_Backpack_2000_Sectionlead_Desert: UK3CB_BAF_B_Kitbag_TAN
+	{
+		scope = 1;
+		mass = 59.84;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+			class _xx_Smoke_Red
+			{
+				magazine = "SmokeShellRed";
+				count = 2;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 2;
+			};
+			class _xx_Smoke_Yellow
+			{
+				magazine = "SmokeShellYellow";
+				count = 2;
+			};
+		};
+	};
 	
 	
-		class TWC_Backpack_2000_2IC_Desert: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
+		class TWC_Backpack_2000_2IC_Desert: UK3CB_BAF_B_Carryall_TAN
 	{
 		scope = 1;
 		class TransportMagazines
@@ -846,7 +960,7 @@
 		};
 	};
 
-		class TWC_Backpack_2000_Minimi_D: UK3CB_BAF_B_Bergen_DDPM_Rifleman_A
+		class TWC_Backpack_2000_Minimi_D: UK3CB_BAF_B_Kitbag_TAN
 	{
 		scope = 1;
 		class TransportMagazines
@@ -854,10 +968,172 @@
 			class _xx_Box_Stanag_T
 			{
 				magazine = "UK3CB_BAF_556_200Rnd_T";
+				count = 4;
+			};
+		};
+	};
+
+		class TWC_Backpack_2000_gren_D: UK3CB_BAF_B_Kitbag_DDPM
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_30Rnd";
+				count = 6;
+			};
+			class _xx_40mm
+			{
+				magazine = "1Rnd_HE_Grenade_shell";
+				count = 10;
+			};
+		};
+	};
+
+		class TWC_Backpack_2000_rif_D: twc_AlicePack_green
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_30Rnd";
+				count = 12;
+			};
+			class _xx_Box_Stanag_T
+			{
+				magazine = "UK3CB_BAF_556_200Rnd_T";
+				count = 2;
+			};
+			class _xx_Belt_762_t
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 2;
+			};
+		};
+	};
+	
+		class TWC_Backpack_2000_GPMG_D: twc_AlicePack_tan
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Belt_762_t
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 5;
+			};
+		};
+	};
+	
+			class TWC_Backpack_2000_GPMG_ass_d: UK3CB_BAF_B_Kitbag_TAN
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Belt_762_t
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
 				count = 3;
 			};
 		};
 	};
+	
+		class TWC_Backpack_2000_sniper_D: twc_back_webbing
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_mag_762
+			{
+				magazine = "UK3CB_BAF_762_L42A1_10Rnd";
+				count = 15;
+			};
+		};
+	};
+	
+	class TWC_Backpack_2000_Medic: UK3CB_BAF_B_Kitbag_TAN
+	{
+		scope = 1;
+		class TransportItems
+		{
+            class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 12;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 10;
+			};
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 15;
+			};
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 6;
+			};
+			class _xxACE_adenosine
+			{
+				name = "ACE_adenosine";
+				count = 4;
+			};
+			class _xxACE_atropine
+			{
+				name = "ACE_atropine";
+				count = 4;
+			};
+			class _xxACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _xxACE_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 15;
+			};
+			class _xxACE_surgKit
+			{
+				name = "ACE_surgicalKit";
+				count = 1;
+			};
+			class _xxACE_personalAidKit
+			{
+				name = "ACE_personalAidKit";
+				count = 1;
+			};
+			class _xxACE_salineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 6;
+			};
+			class _xxACE_salineIV_250
+			{
+				name = "ACE_salineIV_250";
+				count = 6;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 4;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke
+			{
+				magazine = "SmokeShell";
+				count = 3;
+			};
+		};
+	};
+
 
 			class TWC_Backpack_2000_vehicle: rhsusf_assault_eagleaiii_ucp
 	{

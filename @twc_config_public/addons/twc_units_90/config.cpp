@@ -98,6 +98,8 @@ class CfgPatches
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
 			"ace_interact_menu",
+			"UK3CB_BAF_Equipment_Backpacks",
+			"A3_Weapons_F_Ammoboxes",
 			"rhsgref_c_troops"
 		};
 	};
