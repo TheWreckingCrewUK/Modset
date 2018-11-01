@@ -1,4 +1,7 @@
+params ["_entity"];
+
 if (isDedicated || !hasInterface) exitWith {};
+if (!local _entity) exitWith {};
 
 // Don't run on public.
 _isEnabled = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
@@ -44,7 +47,8 @@ player addEventHandler ["Killed", {
 	params ["_unit"];
 	
 	// safety check!
-	if (_unit != player) exitWith {};
+	if (player != _unit) exitWith {};
+	if !(local _unit) exitWith {};
 	
 	554 cutText ["", "BLACK", 0.01, true];
 	["TWC_Dead" + str (0), 0, true] call ace_common_fnc_setHearingCapability;
@@ -54,6 +58,7 @@ player addEventHandler ["Killed", {
 		((findDisplay 60000) displayCtrl 60020) ctrlShow false;
 		((findDisplay 60000) displayCtrl 60021) ctrlShow false;
 		[false, false] call TWC_UI_fnc_toggleSpectateCompass;
+		("acre_sys_gui_vehicleInfo" call BIS_fnc_rscLayer) cutText ["", "PLAIN"];
 	}] call CBA_fnc_waitUntilAndExecute;
 
 	[{
@@ -78,9 +83,10 @@ player addEventHandler ["Respawn", {
 	params ["_unit", ["_reason", "clinical_death"]];
 
 	if (player != _unit) exitWith {};
+	if !(local _unit) exitWith {};
 
-	// hacky as fuck
-	if (!TWC_Death_AlreadyExecuted) then { TWC_Death_AlreadyExecuted = true; };
+	if (TWC_Death_AlreadyExecuted) exitWith {};
+	TWC_Death_AlreadyExecuted = true;
 
 	_deathData = [_unit, _reason] call TWC_Incorporeal_fnc_getDeathData;
 	_deathScreenData = (_deathData select 5);
@@ -113,6 +119,8 @@ player addEventHandler ["Respawn", {
 
 		_duration fadeSpeech 0;
 		[] spawn TWC_Incorporeal_fnc_fadeInSound;
+		
+		[{ [] call ace_spectator_fnc_ui_toggleUI; }, [], _duration] call CBA_fnc_waitAndExecute;
 	}, [_duration], (_deathScreenData select 1)] call CBA_fnc_waitAndExecute;
 
 	["TWC_addPerishedToServer", [_unit, _reason]] call CBA_fnc_serverEvent;

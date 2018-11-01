@@ -14,6 +14,7 @@ params ["_unit"];
 
 if (!local _unit) exitWith {}; // no longer local unit
 if (!isPlayer _unit) exitWith {}; // don't care
+if (isDedicated || !hasInterface) exitWith {};
 
 if (alive _unit) then {
 	_debugMode = missionNameSpace getVariable ["twc_debugEnabled", false];

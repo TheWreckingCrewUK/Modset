@@ -15,8 +15,8 @@ if (_unCon) then {
 	_inReviveState = (_unit getVariable ["ace_medical_inReviveState", false]);
 	
 	// sync every second over the network our diagnosable vitals when uncon, as it's important
-	_unit setVariable["ace_medical_heartRate", _heartRate, true];
-	_unit setVariable["ace_medical_bloodPressure", _bloodPressure, true];
+	_unit setVariable ["ace_medical_heartRate", _heartRate, true];
+	_unit setVariable ["ace_medical_bloodPressure", _bloodPressure, true];
 	
 	_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 
@@ -29,14 +29,12 @@ if (_unCon) then {
 
 	if (_bloodVolume <= 20) exitWith {
 		["TWC_Unit_Perished", [_unit, "bleed_out"]] call CBA_fnc_globalEvent;
-		diag_log "Bleed out.";
 		[_unit, true, false] call ace_medical_fnc_setDead;
 		_continue = false;
 	};
-	
+
 	if (_bloodPressureH < 20 && _bloodPressureL < 20) exitWith {
-		["TWC_Unit_Perished", [_unit, "clinical_death"]] call CBA_fnc_globalEvent;
-		diag_log "BL Pressure.";
+		//["TWC_Unit_Perished", [_unit, "clinical_death"]] call CBA_fnc_globalEvent;
 		[_unit, true, false] call ace_medical_fnc_setDead;
 		_continue = false;
 	};

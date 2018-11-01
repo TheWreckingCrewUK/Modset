@@ -5,7 +5,7 @@ class CfgFunctions {
 			
 			/** INIT **/
 			class clientInit {};
-			class serverInit {};
+			class serverInit { postInit = 1; };
 			
 			/** INTRO **/
 			class startIntro {};
