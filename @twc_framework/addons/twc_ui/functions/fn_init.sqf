@@ -39,3 +39,11 @@ if (!hasInterface) exitWith {};
 		[] call TWC_UI_fnc_removeDisplay;
 	};
 }, player] call CBA_fnc_addBISEventHandler;
+
+[player, "Killed", {
+	params ["_unit"];
+	
+	if (_unit == player) then {
+		[] call TWC_UI_fnc_removeDisplay;
+	};
+}, player] call CBA_fnc_addBISEventHandler;
