@@ -14,37 +14,33 @@ if (!isNil "completedTasks") then {
 };
 
 if (isMultiplayer) then {
-	titleCut ["", "BLACK FADED", 999];
-
-	[{!(isNil "BIS_fnc_init")}, {
-		params ["_operationName", "_operationEra", "_song"];
+	[_operationName, _author, _song] spawn {
+		waitUntil {!(isNil "BIS_fnc_init")};
+		params ["_operationName", "_author", "_song"];
 
 		playMusic _song; // play calculated tune
 
-		[] call TWC_Incorporeal_fnc_setPlayerUp;
+		[] spawn TWC_Incorporeal_fnc_setPlayerUp;
 
-		titleText ["The Wrecking Crew","PLAIN DOWN"]; 
+		titleText ["<t color='#ffffff' size='3'>The Wrecking Crew</t><br/><t color='#FFFFFF' size='1'>Presents</t>", "PLAIN", -1, true, true];
 		titleFadeOut 7;
 
 		[{
-			params ["_operationName, _author"];
+			params ["_operationName", "_author"];
 
 			_titleText = format [
-				"<t color='#ff6633' size='3'>%1</t><br/><t color='#FFFFFF' size='2'>by %2</t>",
+				"<t color='#ff6633' size='4'>%1</t><br/><t color='#FFFFFF' size='1'>by %2</t>",
 				_operationName,
 				_author
 			];
 
-			/* cutText [_titleText, "PLAIN"];
-			titleFadeOut 15; */
-			
-			[parseText _titleText, true, nil, 15, 5, 0] spawn BIS_fnc_textTiles;
-		}, [_operationName, _author], 7] call CBA_fnc_waitAndExecute;
+			[parseText _titleText, [0.3, 0.3, 1, 1], nil, 10, 7, 0] spawn BIS_fnc_textTiles;
+		}, [_operationName, _author], 10] call CBA_fnc_waitAndExecute;
 
 		[{
 			titleText ["To prevent desync, don't move until the go ahead is given.", "PLAIN"];
 			titleFadeOut 20;
-		}, [], 22] call CBA_fnc_waitAndExecute;
+		}, [], 35] call CBA_fnc_waitAndExecute;
 
 		[{
 			"dynamicBlur" ppEffectEnable true;
@@ -54,8 +50,8 @@ if (isMultiplayer) then {
 			"dynamicBlur" ppEffectCommit 5;
 
 			titleCut ["", "BLACK IN", 5];
-		}, [], 60] call CBA_fnc_waitAndExecute;
-	}, [_operationName, _author, _song]] call CBA_fnc_waitUntilAndExecute;
+		}, [], 57] call CBA_fnc_waitAndExecute;
+	};
 };
 
 if (!(isNil "twc_JIP_CommandMessage")) then {

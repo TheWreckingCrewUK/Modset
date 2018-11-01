@@ -12,16 +12,17 @@ class CfgFunctions {
 			class startLegacyIntro {};
 			class getIntroSong {};
 			class getIntroData {};
+			class setPlayerUp {};
 			
 			/** DEATH SCREEN **/
+			class bestGuessDeath {};
+			class getDeathData {};
 			
 			/** OUTRO **/
 			
 			/** HELPER FUNCTIONS **/
 			class getGroupData {};
-			class getDeathData {};
 			class fadeInSound {};
-			class bestGuessDeath {};
 		};
 	};
 };
