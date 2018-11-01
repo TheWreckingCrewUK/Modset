@@ -49,15 +49,15 @@ player addEventHandler ["Killed", {
 	554 cutText ["", "BLACK", 0.01, true];
 	["TWC_Dead" + str (0), 0, true] call ace_common_fnc_setHearingCapability;
 
+	[{!isNull (findDisplay 60000)}, {
+		[] call ace_spectator_fnc_ui_toggleUI;
+		((findDisplay 60000) displayCtrl 60020) ctrlShow false;
+		((findDisplay 60000) displayCtrl 60021) ctrlShow false;
+		[false, false] call TWC_UI_fnc_toggleSpectateCompass;
+	}] call CBA_fnc_waitUntilAndExecute;
+
 	[{
 		params ["_unit"];
-		
-		[{!isNull ([] call BIS_fnc_displayMission)}, {
-			[] call ace_spectator_fnc_ui_toggleUI;
-			((findDisplay 60000) displayCtrl 60020) ctrlShow false;
-			((findDisplay 60000) displayCtrl 60021) ctrlShow false;
-			[false, false] call TWC_UI_fnc_toggleSpectateCompass;
-		}] call CBA_fnc_waitUntilAndExecute;
 
 		if (!TWC_Death_AlreadyExecuted) then {
 			[_unit] call TWC_Incorporeal_fnc_bestGuessDeath;
@@ -86,6 +86,8 @@ player addEventHandler ["Respawn", {
 	_deathScreenData = (_deathData select 5);
 	_duration = ((_deathScreenData select 2) - (_deathScreenData select 1));
 
+	enableRadio true;
+	player disableConversation false;
 	playSound [(_deathScreenData select 0), true];
 
 	_deathString = format [
@@ -101,12 +103,15 @@ player addEventHandler ["Respawn", {
 	[{
 		params [["_duration", 5]];
 
-		[] spawn {
+		[_duration] spawn {
+			params ["_duration"];
+
 			554 cutFadeOut 3;
 			555 cutFadeOut 3;
 			cutText ["", "BLACK IN", _duration, true];
 		};
-		//_duration fadeSpeech 0;
+
+		_duration fadeSpeech 0;
 		[] spawn TWC_Incorporeal_fnc_fadeInSound;
 	}, [_duration], (_deathScreenData select 1)] call CBA_fnc_waitAndExecute;
 
