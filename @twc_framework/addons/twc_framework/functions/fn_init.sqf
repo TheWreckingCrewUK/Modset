@@ -1,3 +1,5 @@
+if (hasInterface) exitWith {};
+
 ["CAManBase","init",{
 	params["_unit"];
 	_unit addEventHandler ["Local", {
