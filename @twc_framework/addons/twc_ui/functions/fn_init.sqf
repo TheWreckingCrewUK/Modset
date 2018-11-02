@@ -1,4 +1,5 @@
 if (!hasInterface) exitWith {};
+//if (!isPlayer player) exitWith {};
 
 ["vehicle", {
 	params ["_playerUnit", "_newVehicle"];

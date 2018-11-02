@@ -131,7 +131,7 @@ class CfgEditorSubcategories {
 	// Unit Catergories
 	class TWC_Training {
 		displayName = "Men (Training)";
-        };
+	};
 
 	// Infantry Related
 	class TWC_Infantry_Regular_Woodland {

@@ -1,4 +1,6 @@
 // Monitors Take & Put local events, and translates them to global events for framework
+if (!hasInterface) exitWith {};
+
 player addEventHandler ["Take", {
 	params ["_unit", "_container", "_item"];
 
