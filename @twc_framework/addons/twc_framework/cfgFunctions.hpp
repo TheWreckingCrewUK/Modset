@@ -65,6 +65,7 @@ class CfgFunctions {
 			class moduleDefend{};
 			class moduleDummyBullets {};
 			class moduleAirAssault{};
+			class moduleAirborne {};
 			class moduleAttackPlane{};
 			class moduleCommandMessage{};
 			class moduleLightsSwitch{};

@@ -57,7 +57,7 @@ if (isServer) then
 			case ("RACS"): {_type_plane = "CUP_I_C130J_RACS"; _type_cargo = ["CUP_I_RACS_SL", "CUP_I_RACS_MMG", "CUP_I_RACS_Soldier", "CUP_I_RACS_GL", "CUP_I_RACS_MMG", "CUP_I_RACS_Soldier_MAT", "CUP_I_RACS_GL", "CUP_I_RACS_Medic", "CUP_I_RACS_Sniper"]; _side = 2;};
 			case ("Takistani_Army_1"): {_type_plane = "CUP_O_C130J_TKA"; _type_cargo = ["CUP_O_TK_Soldier_SL", "CUP_O_TK_Soldier_MG", "CUP_O_TK_Soldier_AT", "CUP_O_TK_Soldier_GL", "CUP_O_TK_Soldier_MG", "CUP_O_TK_Soldier_LAT", "CUP_O_TK_Soldier_GL", "CUP_O_TK_Soldier_AAT", "CUP_O_TK_Soldier_AMG"]; _side = 0;};
 			case ("Takistani_Army_2"): {_type_plane = "CUP_O_AN2_TK"; _type_cargo = ["CUP_O_TK_Soldier_SL", "CUP_O_TK_Soldier_MG", "CUP_O_TK_Soldier_AT", "CUP_O_TK_Soldier_GL", "CUP_O_TK_Soldier_MG", "CUP_O_TK_Soldier_LAT", "CUP_O_TK_Soldier_GL", "CUP_O_TK_Soldier_AAT", "CUP_O_TK_Soldier_AMG"]; _side = 0;};
-		};		
+		};
 	} else 
 	{
 		_side = getNumber (configFile >> "cfgVehicles" >> (_type_cargo select 0) >> "side");
@@ -73,6 +73,12 @@ if (isServer) then
 	
 	_vehicle = [_pos, _dir, _type_plane, _side] call BIS_fnc_spawnVehicle;
 	_plane = _vehicle select 0;
+	if (_type_plane == "an12BK_RU") then {
+		_plane setObjectTextureGlobal[0,"\an12bkv3\liveries\18\An12main01.pac"];
+		_plane setObjectTextureGlobal[1,"\an12bkv3\liveries\18\An12main02.pac"];
+		_plane setObjectTextureGlobal[2,"\an12bkv3\liveries\18\An12main03.pac"];
+		_plane setObjectTextureGlobal[3,"\an12bkv3\liveries\18\An12wing.pac"];
+	};
 	_crewGroup = _vehicle select 2;
 	
 	_plane flyInHeight 200;
