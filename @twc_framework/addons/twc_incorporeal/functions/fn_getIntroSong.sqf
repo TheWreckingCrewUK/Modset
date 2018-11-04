@@ -1,5 +1,15 @@
 params [["_era", "modern"], ["_isNight", false]];
 
+_specialSong = missionNamespace getVariable ["TWC_Intro_specialSong", ""];
+
+if (_specialSong != "") then {
+	_specialSongClass = [(configFile >> "CfgSounds"), _specialSong, ""] call BIS_fnc_returnConfigEntry;
+	
+	if (_specialSongClass != "") exitWith {
+		_specialSongClass;
+	};
+};
+
 if (_era == "1990") then { _era = "millennial"; };
 
 if (_isNight) exitWith {

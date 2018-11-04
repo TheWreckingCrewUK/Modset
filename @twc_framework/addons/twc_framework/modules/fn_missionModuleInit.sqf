@@ -17,6 +17,7 @@ missionNameSpace setVariable ["run", (_logic getVariable "run"), true];
 missionNameSpace setVariable ["safeZone", (_logic getVariable "safeZone"), true];
 missionNameSpace setVariable ["zuesObjects", (_logic getVariable "zuesObjects"), true];
 missionNameSpace setVariable ["TWC_Intro_isDisabled", (_logic getVariable "disableIntro"), true];
+missionNameSpace setVariable ["TWC_Intro_specialSong", (_logic getVariable ["specialIntro", ""]), true];
 
 missionNameSpace setVariable ["twcModuleFinished", true, true];
 

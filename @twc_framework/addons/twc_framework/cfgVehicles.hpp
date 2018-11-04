@@ -159,6 +159,13 @@ class CfgVehicles {
 				typeName = "BOOL";
 				defaultValue = 0;
 			};
+
+			class specialIntro {
+				displayName = "Special Intro";
+				description = "CfgSound entry of special intro here, otherwise leave blank";
+				typeName = "STRING";
+				defaultValue = 0;
+			};
 		};
 	};
 	
