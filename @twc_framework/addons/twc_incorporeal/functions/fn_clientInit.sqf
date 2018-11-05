@@ -24,8 +24,7 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 		[TWC_Operation_Name, TWC_Operation_Creator, _operationEra, _isNightOp] call TWC_Incorporeal_fnc_startLegacyIntro;
 	};
 
-	_introData = [] call TWC_Incorporeal_fnc_getIntroData;
-	[TWC_Operation_Name, TWC_Operation_Creator, _operationEra, _isNightOp, _introData] call TWC_Incorporeal_fnc_startIntro;
+	[TWC_Operation_Name, TWC_Operation_Creator, _operationEra, _isNightOp] spawn TWC_Incorporeal_fnc_startIntro;
 }] call CBA_fnc_addEventHandler;
 
 ["ace_killed", {
