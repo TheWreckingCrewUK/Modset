@@ -1,6 +1,6 @@
 /** Run once player object is initalized. **/
 
-[player, currentWeapon player, currentMuzzle player] call ace_safemode_fnc_lockSafety;
+[player, currentWeapon player, currentMuzzle player] call TWC_fnc_silentSafety;
 enableRadio false;
 player disableConversation true;
 
