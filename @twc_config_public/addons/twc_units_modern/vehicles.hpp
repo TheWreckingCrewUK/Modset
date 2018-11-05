@@ -30,6 +30,27 @@ class Wheeled_APC_F: Car_F {
 		};
 	};
 	
+	class rhsusf_m998_w_4dr_halftop;
+	class rhsusf_m998_w_4dr_fulltop: rhsusf_m998_w_4dr_halftop
+	{
+		class Wheels {
+			class LF;
+		};
+	};
+	
+	class rhsusf_m1025_w: rhsusf_m998_w_4dr_fulltop
+	{
+		class Wheels:Wheels {
+			class LF:LF {
+				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
+				maxCompression = 0.25;
+				maxDroop = 0.1;
+				springDamperRate = 4500;
+				springStrength = 36000;
+			};
+		};
+	};
+	
 		
 	
 	class UK3CB_BAF_LandRover_Base;

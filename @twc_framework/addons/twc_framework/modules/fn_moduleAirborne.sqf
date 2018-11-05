@@ -34,5 +34,5 @@ _attackpos = _logic getVariable "Infantry_Attack_Location";
 [_pos, _Destination, _End, _Plane_Units, _Type_Plane, _Type_Cargo, _Amount_Cargo, _attackpos] call twc_fnc_Airborne;
 
 if (!isNull _logic) then {
-    deleteVehicle _logic;
+	deleteVehicle _logic;
 };
