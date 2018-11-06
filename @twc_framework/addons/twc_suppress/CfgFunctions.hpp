@@ -5,15 +5,25 @@ class CfgFunctions {
 		class init {
 			file = "twc_suppress\functions";
 
+			// Init
+			class preInit {};
+			class postInit {};
+
 			// AI
 			class module {};
 			class doSuppress {};
 			class doSuppressLocal {};
 
-			// Effects
+			// Player Effect
 			class fired {};
-			class pinned {};
 			class impact {};
+			class mainHandler {};
+			class pinnedHandler {};
+			class thresholdHandler {};
+			class clearPinnedEffect {};
+			class clearImpactEffect {};
+			
+			// Util
 			class readCache {};
 		};
 	};

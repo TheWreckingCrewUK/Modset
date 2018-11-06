@@ -6,11 +6,14 @@ class Extended_FiredBIS_EventHandlers {
 	};
 };
 
-class Extended_Init_EventHandlers {
-	class Man {
-		class TWC_Suppress {
-			onRespawn = true;
-			clientInit = "[] call twc_suppress_fnc_init";
-		};
+class Extended_PreInit_EventHandlers {
+	class TWC_Suppress {
+		init = "call twc_suppress_fnc_preInit";
+	};
+};
+
+class Extended_PostInit_EventHandlers {
+	class TWC_Suppress {
+		init = "call twc_suppress_fnc_postInit";
 	};
 };
