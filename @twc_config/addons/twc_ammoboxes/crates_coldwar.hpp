@@ -94,6 +94,48 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 	};
 };
 
+class TWC_AmmoBox_ColdWar_Section_Portable_COIN: TWC_AmmoBox_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Section Resupply (COIN, Portable)";
+	
+	editorSubcategory = "TWC_Crates_ColdWar";
+	
+	class TransportItems {
+		item_nc(ACE_fieldDressing, 12);
+		item_nc(ACE_elasticBandage, 12);
+		item_nc(ACE_quikclot, 12);
+		item_nc(ACE_packingBandage, 12);
+		
+		item_nc(ACE_morphine, 12);
+		item_nc(ACE_epinephrine, 12);
+		item_nc(ACE_tourniquet, 6);
+	};
+	
+	class TransportMagazines {
+		maga_nc(SP_30Rnd_9x19_L2A3_Sterling, 6);
+
+		// L1A1 SLR
+		maga_nc(UK3CB_BAF_762_20Rnd, 20);
+		maga_nc(UK3CB_BAF_762_20Rnd_T, 5);
+
+		// L7A1 GPMG
+		maga_nc(SP_30Rnd_762_L4, 16);
+
+		maga_nc(ACE_HandFlare_White, 2);
+
+		// Smoke Grenades
+		maga_nc(SmokeShell, 10);
+		maga_nc(SmokeShellRed, 2);
+		maga_nc(SmokeShellGreen, 2);
+		maga_nc(SmokeShellBlue, 2);
+		maga_nc(SmokeShellYellow, 2);
+		
+		// Hand Grenade HE
+		maga_nc(CUP_HandGrenade_L109A2_HE, 5);
+	};
+};
+
 class TWC_AmmoBox_ColdWar_Sniper_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;

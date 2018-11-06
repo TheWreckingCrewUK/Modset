@@ -25,6 +25,6 @@ player addEventHandler ["GetOutMan",{
 	if(typeOf (_this select 2) isEqualTo twc_boatSafetyType) then{
 		player allowDamage false;
 		sleep 3;
-		player allowDamage True;
+		player allowDamage true;
 	};
 }];

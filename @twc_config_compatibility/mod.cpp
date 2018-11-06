@@ -1,0 +1,12 @@
+name = "TWC Config Compatibility";
+picture = "twc_logo_512.paa";
+logo = "twc_logo_64.paa";
+logoOver = "twc_logo_64.paa";
+tooltip = "TWC Config WW2";
+tooltipOwned = "TWC Owned";
+overview = "TWC Config is a collection of assets used in TWC Operations. This part ensures compatibility between public and operations.";
+overviewPicture = "twc_logo_512.paa";
+author = "TWC Team";
+actionName = "Website";
+action = "http://www.thewreckingcrew.eu";
+description = "TWC Config Compatibility";

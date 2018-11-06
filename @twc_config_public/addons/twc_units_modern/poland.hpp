@@ -11,7 +11,7 @@
 		uniformClass="CUP_U_B_CDF_FST_1";
 		twc_radioType = "ACRE_PRC148";
 		backpack="pol_backpack_rif";
-		twc_radioChannel = 4;
+		twc_radioChannel = 3;
 		linkedItems[]=
 		{
 			"CUP_V_B_RRV_Scout",
@@ -96,30 +96,30 @@
 		};
 		magazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"HandGrenade",
+			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
 		Respawnmagazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"HandGrenade",
+			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell",
 			"B_IR_Grenade"
@@ -215,33 +215,33 @@
 		};
 		magazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",
-			"CUP_HandGrenade_L109A2_HE",
+			"HandGrenade",
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
 		Respawnmagazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
+			"twc_rhsgref_30rnd_556x45_m21",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",
 			"rhs_VOG25",
-			"CUP_HandGrenade_L109A2_HE",
+			"HandGrenade",
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
@@ -281,19 +281,19 @@
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_pkp"
+			"rhs_weap_pkm"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_pkp"
+			"rhs_weap_pkm"
 		};
 		magazines[]=
 		{
 			"rhs_100Rnd_762x54mmR_7N26",
-			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE",
+			"HandGrenade",
+			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
@@ -302,8 +302,8 @@
 		Respawnmagazines[]=
 		{
 			"rhs_100Rnd_762x54mmR_7N26",
-			"CUP_HandGrenade_L109A2_HE",
-			"CUP_HandGrenade_L109A2_HE",
+			"HandGrenade",
+			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",

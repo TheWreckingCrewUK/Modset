@@ -496,8 +496,8 @@ class WW2_Para_British_AT: WW2_British_Base {
 	scope = 2;
 	displayName = "PIAT Gunner";
 	uniformClass = "fow_u_uk_parasmock";
-	editorSubcategory = "TWC_Infantry_Paratroopers";
-	vehicleClass = "TWC_Infantry_Paratroopers";
+	editorSubcategory = "TWC_Infantry_Airborne_Woodland";
+	vehicleClass = "TWC_Infantry_Airborne_Woodland";
 	backpack = "TWC_Backpack_PIAT";
 
 	weapons[] = {
@@ -527,8 +527,8 @@ class WW2_Para_British_AAT: WW2_British_Base {
 	scope = 2;
 	displayName = "Assistant PIAT Gunner";
 	uniformClass = "fow_u_uk_parasmock";
-	editorSubcategory = "TWC_Infantry_Paratroopers";
-	vehicleClass = "TWC_Infantry_Paratroopers";
+	editorSubcategory = "TWC_Infantry_Airborne_Woodland";
+	vehicleClass = "TWC_Infantry_Airborne_Woodland";
 	backpack = "TWC_Backpack_PIAT";
 
 	weapons[] = {

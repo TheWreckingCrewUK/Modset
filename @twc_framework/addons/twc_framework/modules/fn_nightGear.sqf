@@ -29,18 +29,19 @@ if(leader player == player)then{
 //If modern or 1990 give nvgs
 if(_era isEqualTo "modern" || _era isEqualTo "1990") then {
 	player addItem "ACE_Flashlight_MX991";
-	player linkItem "UK3CB_BAF_HMNVS";
+	player linkItem "twc_nightvision_gen3";
 	if(leader player == player)then{
 		player addItem "B_IR_Grenade";
 	};
 	//If a grenadier then flare rounds
-	if(typeOf player in ["Modern_British_Grenadier","Modern_British_Grenadier_Mounted","Modern_British_Grenadier_COIN","Modern_British_Grenadier_COIN_Mounted"]) then {
+	if ((typeOf player) find "Grenadier" != -1) then {
 		player addItem "UGL_FlareWhite_F";
 		player addItem "UGL_FlareWhite_F";
 		player addItem "UGL_FlareWhite_F";
 	};
 	//If a marksman then NV scope
-	if(typeOf player in ["Modern_British_Marksman","Modern_British_Marksman_Mounted","Modern_British_Marksman_COIN","Modern_British_Marksman_COIN_Mounted"]) then {
+	
+	if ((typeOf player) find "Marksman" != -1) then {
 		player addItem "UK3CB_BAF_MaxiKite";
 	};
 };
@@ -56,8 +57,8 @@ if(_era == "coldwar") then {
 	{
 		player addItem "ACE_Flashlight_MX991";
 	};
-	if (typeOf player == "ColdWar_JetPilot") then
+	if ((typeOf player) find "Pilot" != -1) then
 	{
-		player linkItem "CUP_NVG_PVS7";
+		player linkItem "twc_nightvision_gen2";
 	};
 };

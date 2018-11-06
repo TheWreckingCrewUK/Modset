@@ -23,4 +23,20 @@ class cfgWeapons
 			mass = 6.6;
 		};
 	};
+	class CUP_Vhmg_M2_static;
+	class CUP_Vhmg_DSHKM_veh;
+	class CUP_Vhmg_KORD_veh;
+
+	class twc_dummyweapon_CUP_Vhmg_M2_static: CUP_Vhmg_M2_static
+	{
+		magazines[] = {"twc_dummymag_heavy"};
+	};
+	class twc_dummyweapon_CUP_Vhmg_DSHKM_veh: CUP_Vhmg_DSHKM_veh
+	{
+		magazines[] = {"twc_dummymag_heavy"};
+	};
+	class twc_dummyweapon_CUP_Vhmg_KORD_veh: CUP_Vhmg_KORD_veh
+	{
+		magazines[] = {"twc_dummymag_heavy"};
+	};
 };

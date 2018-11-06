@@ -71,10 +71,17 @@ class CfgPatches
 			"Afr_Mil_Crewman",
 			"IRA_Squadleader",
 			"IRA_Rifleman_M16",
+			"IRA_Rifleman_M16_2",
+			"IRA_Rifleman_M16_3",
+			"IRA_Rifleman_M16_4",
+			"IRA_pistol_1",
+			"IRA_pistol_2",
+			"IRA_pistol_3",
 			"IRA_Rifleman_AKM",
 			"IRA_Rifleman_FAL",
 			"IRA_Rifleman_AT",
 			"IRA_Autorifleman",
+			"IRA_Autorifleman_2",
 			
 			"greek_Civ_Men_1",
 			"greek_Civ_Men_2",
@@ -311,6 +318,7 @@ class CfgVehicles
 	class rhs_sidor;
 	class twc_Backpack_m60: CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_mgMags
@@ -322,6 +330,7 @@ class CfgVehicles
 	};
 		class twc_Backpack_m249: CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_mgMags
@@ -334,6 +343,7 @@ class CfgVehicles
 
 		class twc_Backpack_m3maaws: CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_mgMags
@@ -346,6 +356,7 @@ class CfgVehicles
 
 	class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_AKMags
@@ -362,6 +373,7 @@ class CfgVehicles
 	};
 	class Afr_Backpack_MG: CUP_B_AlicePack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_PKMags
@@ -373,6 +385,7 @@ class CfgVehicles
 	};
 	class Afr_Backpack_AT: CUP_B_RPGPack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_AKMags
@@ -389,6 +402,7 @@ class CfgVehicles
 	};
 	class greek_Backpack_AT: CUP_B_RPGPack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_RPG7
@@ -401,6 +415,7 @@ class CfgVehicles
 	
 		class Backpack_AT_og7: CUP_B_RPGPack_Khaki
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_RPG7
@@ -413,6 +428,7 @@ class CfgVehicles
 	
 			class Backpack_twc_bombmaker: rhs_sidor
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_ied1
@@ -448,6 +464,7 @@ class CfgVehicles
 	
 			class Backpack_rpk: rhs_sidor
 	{
+		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_RPk

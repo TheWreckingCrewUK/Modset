@@ -64,6 +64,7 @@ class CfgPatches {
 			"A3_Characters_F",
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
+			"rhsusf_vehicles",
 			"rhs_c_weapons",
 			"rhsusf_c_weapons",
 			"uk3cb_baf_vehicles_landrover",
@@ -99,6 +100,16 @@ class CfgFactionClasses {
 		icon="TWClogo.paa";
 		priority=2;
 		side=1;
+	};
+};
+
+class CfgFunctions {
+	class twc_fnc_mortarwalk {
+		class functions {
+			tag = "twc_fnc_mortarwalk";
+			file = "twc_units_modern\functions";
+			class mortarwalk{};
+		};
 	};
 };
 

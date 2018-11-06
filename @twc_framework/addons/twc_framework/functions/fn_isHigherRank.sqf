@@ -18,4 +18,4 @@ _ranks = ["PRIVATE", "CORPORAL", "SERGEANT", "LIEUTENANT", "CAPTAIN", "MAJOR", "
 _callerRank = _ranks find (rank _caller);
 _targetRank = _ranks find (rank _target);
 
-(_callerRank > _targetRank)
+if (_callerRank > _targetRank) then { true; } else { false; };

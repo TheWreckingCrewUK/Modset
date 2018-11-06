@@ -1,6 +1,7 @@
 //Calls all the functions on player start.
 params["_unit"];
-if (player != _unit)exitWith {};
+if (player != _unit) exitWith {};
+if (!hasInterface || isDedicated) exitWith {};
 
 waitUntil { sleep 0.5; !(isNull player) };
 waitUntil { sleep 1.271; time > 0 };
@@ -75,19 +76,7 @@ player addEventHandler ["Killed",{
 */
 ["twc_evh_fnc_setSpectator", { [(_this select 0)] call twc_fnc_toggleSpectator; }] call CBA_fnc_addEventHandler;
 ["twc_evh_createDiaryRecord", { player createDiaryRecord ["Diary", ["Radio Message", (_this select 0)]]; }] call CBA_fnc_addEventHandler;
-["twc_evh_createConvoRecord", { player createDiaryRecord ["Convo", ["Conversation", (_this select 0)]]; }] call CBA_fnc_addEventHandler;
-
-if (isNil {missionNameSpace getVariable "twcModuleEnabled"})exitWith {systemChat "twcModuleEnabled was Nil"};
-
-
-waitUntil{missionNameSpace getVariable "twcModuleFinished"};
-
-[(missionNameSpace getVariable "era")] spawn twc_fnc_era;
-[(missionNameSpace getVariable "nightGear"),(missionNameSpace getVariable "era")] spawn twc_fnc_nightGear;
-[(missionNameSpace getVariable "rollSleeves")] spawn twc_fnc_rollShirt;
-[(missionNameSpace getVariable "run")] spawn twc_fnc_run;
-[(missionNameSpace getVariable "safeZone")] spawn twc_fnc_safeZone;
-[(missionNameSpace getVariable "zuesObjects")] spawn twc_fnc_zeus;
+["twc_evh_createConvoRecord", { player createDiaryRecord ["Diary", ["Conversation", (_this select 0)]]; }] call CBA_fnc_addEventHandler;
 
 EM_blacklist_obj = [
 	"Land_Mil_WiredFence_F", 
@@ -146,3 +135,37 @@ EM_blacklist_obj = [
 	"Land_CSA38_jezci",
 	"Land_WW2_wire_bruno"
 ];
+
+openBoltFnc = {
+	_openbolt = [(configFile >> "CfgWeapons" >> (primaryweapon player)), "twc_openbolt", 0] call BIS_fnc_returnConfigEntry;
+
+	if (_openbolt > 0) then {
+		_openboltcoef = [(configFile >> "CfgWeapons" >> (primaryweapon player)), "twc_openbolt_coef", 1] call BIS_fnc_returnConfigEntry;
+
+		[{
+
+			[player, primaryweapon player] call ace_overheating_fnc_jamWeapon;
+
+			[] call openBoltFnc;
+		}, [], (random (6000 / _openboltcoef)) + 200] call CBA_fnc_waitAndExecute;
+	} else {
+		[{ [] call openBoltFnc; }, [], 900] call CBA_fnc_waitAndExecute;
+	};
+};
+
+[] call openBoltFnc;
+
+[{
+	if (isNil {missionNameSpace getVariable "twcModuleEnabled"}) exitWith {
+		systemChat "TWC Mission Module wasn't placed down, or enabled.";
+	};
+
+	waitUntil { missionNameSpace getVariable ["twcModuleFinished", false] };
+
+	[(missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_era;
+	[(missionNameSpace getVariable ["nightGear", false]), (missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_nightGear;
+	[(missionNameSpace getVariable ["rollSleeves", false])] spawn twc_fnc_rollShirt;
+	[(missionNameSpace getVariable ["run", 0])] spawn twc_fnc_run;
+	[(missionNameSpace getVariable ["safeZone", 0])] spawn twc_fnc_safeZone;
+	[(missionNameSpace getVariable ["zuesObjects", true])] spawn twc_fnc_zeus;
+}, [], 1] call CBA_fnc_waitAndExecute;

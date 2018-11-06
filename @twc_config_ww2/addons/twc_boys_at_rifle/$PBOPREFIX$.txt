@@ -1,5 +1,0 @@
-///'twc_boys_at_rifle.pbo' from Mikero's dos tools, dll version 5.66///
-prefix=twc_boys_at_rifle
-Pbo Type is: Arma Addon
-Sha: '7B42796C6864C79769DFF1D4A8E2F1E5B0FE2621'
-//////</HEADER>//////

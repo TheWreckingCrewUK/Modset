@@ -20,19 +20,20 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 	displayName = "Medical Supplies (Portable)";
 
 	class TransportItems {
-		item_nc(ACE_fieldDressing, 32);
-		item_nc(ACE_elasticBandage, 32);
-		item_nc(ACE_quikclot, 32);
-		item_nc(ACE_packingBandage, 32);
+		item_nc(ACE_fieldDressing, 15);
+		item_nc(ACE_elasticBandage, 15);
+		item_nc(ACE_quikclot, 15);
+		item_nc(ACE_packingBandage, 15);
 		
-		item_nc(ACE_atropine, 5);
-		item_nc(ACE_adenosine, 5);
-		item_nc(ACE_morphine, 20);
-		item_nc(ACE_epinephrine, 20);
+		item_nc(ACE_atropine, 2);
+		item_nc(ACE_adenosine, 2);
+		item_nc(ACE_morphine, 6);
+		item_nc(ACE_epinephrine, 6);
 		
-		item_nc(ACE_salineIV_500, 24);
+		item_nc(ACE_salineIV_500, 12);
+		item_nc(ACE_salineIV_250, 2);
 		item_nc(ACE_tourniquet, 4);
-		item_nc(ACE_bodyBag, 5);
+		item_nc(ACE_bodyBag, 6);
 		
 		item_nc(ACE_personalAidKit, 1);
 		item_nc(TWC_Item_Medical_SutureKit_25, 1);

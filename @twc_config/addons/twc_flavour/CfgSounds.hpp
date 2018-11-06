@@ -34,18 +34,30 @@ class CfgSounds
 	{
 		name = "radio_chatter";
 		sound[] = {"twc_flavour\sounds\radio_chatter.ogg", 1, 1};
-		titles[] = {};		
+		titles[] = {};
 	};
 	class twc_bugle_call
 	{
 		name = "bugle_call";
 		sound[] = {"twc_flavour\sounds\bugle_call.ogg", 1, 1};
-		titles[] = {};			
+		titles[] = {};
 	};
 	class twc_arab_crowd
 	{
 		name = "arab_crowd";
 		sound[] = {"twc_flavour\sounds\arab_crowd.ogg", 1, 1};
+		titles[] = {};
+	};
+	class twc_sound_airraid_warning
+	{
+		name = "airraid_warning";
+		sound[] = {"twc_flavour\sounds\air_raid_warning.ogg", 1, 1};
+		titles[] = {};
+	};
+	class twc_sound_airraid_allclear
+	{
+		name = "airraid_allclear";
+		sound[] = {"twc_flavour\sounds\air_raid_allclear.ogg", 1, 1};
 		titles[] = {};
 	};
 };

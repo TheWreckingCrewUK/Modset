@@ -11,8 +11,8 @@ class CfgPatches
 		{
 			"cup_weapons_ammoboxes",
 			"fow_weapons",
-			"fow_weapons_c"
-			
+			"fow_weapons_c",
+			"BBB_BoysATR"
 		};
 		version="1";
 		projectName="TWC";
@@ -34,7 +34,7 @@ class cfgMagazines {
 	class twc_no82: fow_e_no82 {
 		ammo = "twc_no82";
 		displayName = "NO. 82 AT Grenade";
-	};	
+	};
 };
 class CfgWeapons {
 	class Default;
@@ -87,6 +87,23 @@ class CfgWeapons {
 	class fow_v_uk_para_base;
 	class fow_v_uk_para_bren;
 	class fow_v_uk_para_sten;
+
+	class Rifle;
+	class Rifle_Base_F: Rifle
+	{
+		class EventHandlers;
+	};
+
+	class BBB_BoysATR: Rifle_Base_F
+	{
+		class EventHandlers: EventHandlers
+		{
+			class twc_ww2_weapons
+			{
+				fired = "_this execVM '\twc_ww2_weapons\scripts\twc_boys_fire.sqf';";
+			};
+		};
+	};
 
 	class TWC_Bren: fow_w_bren {
 		class WeaponSlotsInfo {
@@ -443,6 +460,63 @@ class CfgWeapons {
 				};
 			};
 		};
+	};
+
+	class LIB_MG34_Tripod;
+	class LIB_MG42_Tripod;
+	class LIB_Maxim_M30;
+	class LIB_M1919A4_tripod;
+	class fow_w_type92;
+	class fow_w_mg42_mounted;
+	class fow_w_vickers_mounted;
+	class fow_w_m1919a4_static;
+	class CSA38_ZB53mg;
+	class CSA38_TKVZ24mg;
+	class csa38_ZB26mg;
+
+	class twc_dummyweapon_LIB_MG34_Tripod: LIB_MG34_Tripod
+	{
+		magazines[] = {"twc_dummymag_machinegun"};
+	};
+	class twc_dummyweapon_LIB_MG42_Tripod: LIB_MG42_Tripod
+	{
+		magazines[] = {"twc_dummymag_machinegun"};
+	};
+	class twc_dummyweapon_LIB_Maxim_M30: LIB_Maxim_M30
+	{
+		magazines[] = {"twc_dummymag_machinegun"};
+	};
+	class twc_dummyweapon_LIB_M1919A4_tripod: LIB_M1919A4_tripod
+	{
+		magazines[] = {"twc_dummymag_machinegun"};
+	};
+	class twc_dummyweapon_fow_w_type92: fow_w_type92
+	{
+		magazines[] = {"twc_dummymag_heavy"};
+	};
+	class twc_dummyweapon_fow_w_mg42_mounted: fow_w_mg42_mounted
+	{
+		magazines[] = {"twc_dummymag_machinegun"};
+	};
+	class twc_dummyweapon_fow_w_vickers_mounted: fow_w_vickers_mounted
+	{
+		magazines[] = {"twc_dummymag_machinegun"};
+	};
+	class twc_dummyweapon_fow_w_m1919a4_static: fow_w_m1919a4_static
+	{
+		magazines[] = {"twc_dummymag_machinegun"};
+	};
+	class twc_dummyweapon_CSA38_ZB53mg: CSA38_ZB53mg
+	{
+		magazines[] = {"twc_dummymag_machinegun"};
+	};
+	class twc_dummyweapon_CSA38_TKVZ24mg: CSA38_TKVZ24mg
+	{
+		magazines[] = {"twc_dummymag_machinegun"};
+	};
+	class twc_dummyweapon_csa38_ZB26mg: csa38_ZB26mg
+	{
+		magazines[] = {"twc_dummymag_machinegun"};
 	};
 };
 

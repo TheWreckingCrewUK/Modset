@@ -25,13 +25,7 @@ if((_mouseOver select 0) != "OBJECT") then{
 	if !(isPlayer _unit) then {
 		hint "Unit has to be a player";
 	} else {
-		private _isSpec = [_unit] call acre_api_fnc_isSpectator;
-		
-		if (local _unit) then {
-			[(!(_isSpec))] call acre_api_fnc_setSpectator;
-		} else {
-			["twc_evh_fnc_setSpectator", [(!(_isSpec))], _unit] call CBA_fnc_targetEvent;
-		};
+		["twc_evh_fnc_setSpectator", [false], _unit] call CBA_fnc_targetEvent;
 	};
 };
 

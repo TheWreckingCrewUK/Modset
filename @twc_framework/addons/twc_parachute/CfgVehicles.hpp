@@ -213,5 +213,28 @@ class CfgVehicles {
 		};
 	};
 	
+	class TWC_Vehicle_ColdWar_Hercules_RAF: TWC_Vehicle_Generic_Hercules_RAF {
+		scope = 2;
+		side = 1;
+		faction = "TWC_ColdWar";
+
+		displayname = "Hercules (Cold War) - VIV (RAF)";
+		editorSubcategory = "TWC_ForceType_Airborne";
+
+		class AcreRacks {
+			class Rack_1 {
+				displayName = "Vehicle Radio";
+				shortName = "Vehicle Radio";
+				componentName = "ACRE_VRC64";
+				allowedPositions[] = {"crew"};
+				disabledPositions[] = {};
+				defaultComponents[] = {};
+				mountedRadio = "ACRE_PRC77";
+				isRadioRemovable = 0;
+				intercom[] = {"Intercom_2"};
+			};
+		};
+	};
+	
 	class twc_c5_hercules: TWC_Vehicle_Generic_Hercules_RAF { scope = 1; scopeCurator = 1; };
 };

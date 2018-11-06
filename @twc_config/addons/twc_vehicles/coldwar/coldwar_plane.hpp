@@ -1,5 +1,5 @@
-class CUP_B_GR9_DYN_GB;
-class TWC_Vehicle_ColdWar_HarrierGR3_RAF: CUP_B_GR9_DYN_GB {
+class CUP_B_GR9_GBU12_GB;
+class TWC_Vehicle_ColdWar_HarrierGR3_RAF: CUP_B_GR9_GBU12_GB {
 	scope = 2;
 	scopeCurator = 0; // dynamic loadout, sort of fuck'd if we need to spawn mid game
 	side = 1;
@@ -14,4 +14,17 @@ class TWC_Vehicle_ColdWar_HarrierGR3_RAF: CUP_B_GR9_DYN_GB {
 	class TransportMagazines { };
 	class TransportWeapons { };
 	class TransportBackpacks { };
+	
+	REGULAR_77({"crew"}, {"Intercom_1"})
+};
+
+class TWC_Vehicle_ColdWar_Hercules_RAF_VIV: TWC_Vehicle_Generic_Hercules_RAF_VIV {
+	scope = 2;
+	side = 1;
+	ADD_FACTION;
+
+	displayname = "Hercules (Cold War) - VIV (RAF)";
+	editorSubcategory = "TWC_ForceType_Airborne";
+
+	REGULAR_77({"crew"}, {"Intercom_2"})
 };

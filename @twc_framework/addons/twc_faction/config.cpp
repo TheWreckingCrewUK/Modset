@@ -32,7 +32,7 @@ class CfgFactionClasses {
 		side = 1;
 	};
 	
-	class TWC_Millenial {
+	class TWC_Millennial {
 		displayName = "TWC Operations - Millennial";
 		author = "The Wrecking Crew";
 		icon = "TWClogo.paa";
@@ -40,10 +40,16 @@ class CfgFactionClasses {
 		side = 1;
 	};
 	
-	class TWC_Millennial: TWC_Millenial {};
-	
 	class TWC_Modern {
 		displayName = "TWC Operations - Modern";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
+	};
+	
+	class TWC_Training {
+		displayName = "TWC Training";
 		author = "The Wrecking Crew";
 		icon = "TWClogo.paa";
 		priority = 2;
@@ -122,6 +128,11 @@ class CfgEditorSubcategories {
 		displayName = "Special";
 	};
 	
+	// Unit Catergories
+	class TWC_Training {
+		displayName = "Men (Training)";
+        };
+
 	// Infantry Related
 	class TWC_Infantry_Regular_Woodland {
 		displayName = "Infantry (Woodland)";
@@ -131,13 +142,37 @@ class CfgEditorSubcategories {
 		displayName = "Infantry (Desert)";
 	};
 	
+	class TWC_Infantry_Regular_Arctic {
+		displayName = "Infantry (Arctic)";
+	};
+	
+	class TWC_Infantry_Regular_Tropic {
+		displayName = "Infantry (Tropic)";
+	};
+	
+	class TWC_Infantry_Regular_NBC {
+		displayName = "Infantry (NBC)";
+	};
+	
 	class TWC_Infantry_Dismounted_Woodland {
 		displayName = "Infantry (Dismounted, Woodland)";
 	};
 	
 	class TWC_Infantry_Dismounted_Desert {
 		displayName = "Infantry (Dismounted, Desert)";
-	};	
+	};
+	
+	class TWC_Infantry_Dismounted_Arctic {
+		displayName = "Infantry (Dismounted, Arctic)";
+	};
+	
+	class TWC_Infantry_Dismounted_Tropic {
+		displayName = "Infantry (Dismounted, Tropic)";
+	};
+	
+	class TWC_Infantry_Dismounted_NBC {
+		displayName = "Infantry (Dismounted, NBC)";
+	};
 	
 	class TWC_Infantry_Airborne_Woodland {
 		displayName = "Infantry (Airborne, Woodland)";
@@ -155,11 +190,35 @@ class CfgEditorSubcategories {
 		displayName = "Infantry (COIN, Desert)";
 	};
 	
+	class TWC_Infantry_COIN_Arctic {
+		displayName = "Infantry (COIN, Arctic)";
+	};
+	
+	class TWC_Infantry_COIN_Tropic {
+		displayName = "Infantry (COIN, Tropic)";
+	};
+	
+	class TWC_Infantry_COIN_NBC {
+		displayName = "Infantry (COIN, NBC)";
+	};
+	
 	class TWC_Infantry_COIN_Dismounted_Woodland {
 		displayName = "Infantry (COIN, Dismounted, Woodland)";
 	};
 	
 	class TWC_Infantry_COIN_Dismounted_Desert {
 		displayName = "Infantry (COIN, Dismounted, Desert)";
+	};
+	
+	class TWC_Infantry_COIN_Dismounted_Arctic {
+		displayName = "Infantry (COIN, Dismounted, Arctic)";
+	};
+	
+	class TWC_Infantry_COIN_Dismounted_Tropic {
+		displayName = "Infantry (COIN, Dismounted, Tropic)";
+	};
+	
+	class TWC_Infantry_COIN_Dismounted_NBC {
+		displayName = "Infantry (COIN, Dismounted, NBC)";
 	};
 };

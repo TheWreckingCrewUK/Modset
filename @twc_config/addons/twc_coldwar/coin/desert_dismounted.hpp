@@ -28,7 +28,7 @@ class TWC_Infantry_ColdWar_COIN_Dismounted_Desert_MG: TWC_Infantry_ColdWar_COIN_
 class TWC_Infantry_ColdWar_COIN_Dismounted_Desert_ASSMG: TWC_Infantry_ColdWar_COIN_Desert_ASSMG
 {
 	CATEGORY(TWC_Infantry_COIN_Dismounted_Desert)
-	backpack = "TWC_Backpack_ColdWar_COIN_ASSMG";
+	backpack = "TWC_Backpack_ColdWar_COIN_Dismounted_ASSMG";
 };
 
 //Platoon Command

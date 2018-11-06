@@ -6,11 +6,11 @@
 		editorSubcategory = "Men_WW2_USMC";
 		vehicleClass="Men_WW2_USMC";
 		nakedUniform="U_BasicBody";
-		uniformClass="fow_u_usmc_p41_01_private";
+		uniformClass="fow_u_usmc_p42_01_camo02_1_private";
 		linkedItems[]=
 		{
 			"fow_v_usmc_garand",
-			"fow_h_us_m1",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -18,7 +18,7 @@
 		respawnLinkedItems[]=
 		{
 			"fow_v_usmc_garand",
-			"fow_h_us_m1",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -84,7 +84,7 @@
 		linkedItems[]=
 		{
 			"fow_v_usmc_thompson_nco",
-			"fow_h_us_m1_officer",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -92,7 +92,7 @@
 		respawnLinkedItems[]=
 		{
 			"fow_v_usmc_thompson_nco",
-			"fow_h_us_m1_officer",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -142,7 +142,7 @@
 		linkedItems[]=
 		{
 			"fow_v_usmc_carbine",
-			"fow_h_us_m1_nco",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -150,7 +150,7 @@
 		respawnLinkedItems[]=
 		{
 			"fow_v_usmc_carbine",
-			"fow_h_us_m1_nco",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -160,52 +160,52 @@
 			"Throw",
 			"Put",
 			"Binocular",
-			"fow_w_m55_reising"
+			"fow_w_m3"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"Binocular",
-			"fow_w_m55_reising"
+			"fow_w_m3"
 		};
 		magazines[]=
 		{
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
 			"fow_e_mk2",
 			"fow_e_mk2"
 		};
 		Respawnmagazines[]=
 		{
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
 			"fow_e_mk2",
 			"fow_e_mk2"
 
@@ -237,28 +237,28 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_m55_reising"
+			"fow_w_m3"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_m55_reising"
+			"fow_w_m3"
 		};
 		magazines[]=
 		{
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell"
@@ -273,7 +273,7 @@
 		linkedItems[]=
 		{
 			"fow_v_usmc_thompson_nco",
-			"fow_h_us_m1_nco",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -281,7 +281,7 @@
 		respawnLinkedItems[]=
 		{
 			"fow_v_usmc_thompson_nco",
-			"fow_h_us_m1_nco",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -341,47 +341,53 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_m1903A1"
+			"fow_w_m1_garand"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_m1903A1"
+			"fow_w_m1_garand"
 		};
 		magazines[]=
 		{
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
 			"fow_e_mk2",
 			"fow_e_mk2"
 		};
 		Respawnmagazines[]=
 		{
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
+			"fow_1Rnd_m9a1",
 			"fow_e_mk2",
 			"fow_e_mk2"
 		};
@@ -439,7 +445,7 @@
 			"fow_5Rnd_12G_Pellets",
 			"fow_e_mk2",
 			"fow_e_mk2"
-		};				
+		};
 	};
 	class TWC_WW2_USMC_Team_Leader: TWC_WW2_USMC_Rifleman
 	{
@@ -448,7 +454,7 @@
 		linkedItems[]=
 		{
 			"fow_v_usmc_carbine",
-			"fow_h_us_m1_nco",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -456,7 +462,7 @@
 		respawnLinkedItems[]=
 		{
 			"fow_v_usmc_carbine",
-			"fow_h_us_m1_nco",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -465,47 +471,47 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_m55_reising"
+			"fow_w_m3"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_m55_reising"
+			"fow_w_m3"
 		};
 		magazines[]=
 		{
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
 			"fow_e_mk2",
 			"fow_e_mk2"
 		};
 		Respawnmagazines[]=
 		{
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
 			"fow_e_mk2",
 			"fow_e_mk2"
 
@@ -519,7 +525,7 @@
 		linkedItems[]=
 		{
 			"fow_v_usmc_bar",
-			"fow_h_us_m1",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -527,7 +533,7 @@
 		respawnLinkedItems[]=
 		{
 			"fow_v_usmc_bar",
-			"fow_h_us_m1",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -580,7 +586,7 @@
 		linkedItems[]=
 		{
 			"fow_v_usmc_bar",
-			"fow_h_us_m1",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -588,7 +594,7 @@
 		respawnLinkedItems[]=
 		{
 			"fow_v_usmc_bar",
-			"fow_h_us_m1",
+			"fow_h_usmc_m1_camo_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -597,45 +603,45 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_m1903A1"
+			"fow_w_m1_garand"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_m1903A1"
+			"fow_w_m1_garand"
 		};
 		magazines[]=
 		{
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63"
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63"
 		};
 		Respawnmagazines[]=
 		{
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63"
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63"
 
 		};
 	};
@@ -647,28 +653,28 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_m55_reising",
+			"fow_w_m3",
 			"fow_w_m1a1_bazooka"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_m55_reising",
+			"fow_w_m3",
 			"fow_w_m1a1_bazooka"
 		};
 		magazines[]=
 		{
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
 			"fow_1Rnd_m6a1"
 		};
 		Respawnmagazines[]=
 		{
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
 			"fow_1Rnd_m6a1"
 		};
 	};
@@ -681,31 +687,31 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_m55_reising"
+			"fow_w_m3"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_m55_reising"
+			"fow_w_m3"
 		};
 		magazines[]=
 		{
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp"
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp"
 		};
 		Respawnmagazines[]=
 		{
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp",
-			"fow_20Rnd_45acp"
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp"
 		};
 	};
 	class TWC_WW2_USMC_MG: TWC_WW2_USMC_Gunner
@@ -737,7 +743,7 @@
 			"fow_100Rnd_762x63",
 			"fow_100Rnd_762x63",
 			"fow_100Rnd_762x63"
-		};		
+		};
 	};
 	class TWC_WW2_USMC_MG_Ass: TWC_WW2_USMC_Rifleman
 	{
@@ -763,37 +769,105 @@
 		{
 			"Throw",
 			"Put",
-			"fow_w_m1903A1"
+			"fow_w_m1_garand"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"fow_w_m1903A1"
+			"fow_w_m1_garand"
 		};
 		magazines[]=
 		{
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63"
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63"
 		};
 		Respawnmagazines[]=
 		{
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63",
-			"fow_5Rnd_762x63"
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63",
+			"fow_8Rnd_762x63"
 		};
 	};
 	class TWC_WW2_USMC_MG_Ass_2: TWC_WW2_USMC_MG_Ass
 	{
 		displayName="MG Assistant 2";
 		backpack="fow_b_usa_m1919_support";
+	};
+	class TWC_WW2_USMC_VehicleCommander: TWC_WW2_USMC_Rifleman
+	{
+		scope=2;
+		displayName="Vehicle Commander";
+		uniformClass="fow_u_usmc_p41_01_private";
+		linkedItems[]=
+		{
+			"fow_v_usmc_thompson_nco",
+			"fow_h_usmc_m1_camo_02",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"fow_v_usmc_thompson_nco",
+			"fow_h_usmc_m1_camo_02",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"fow_w_m3"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"fow_w_m3"
+		};
+		magazines[]=
+		{
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp"
+		};
+		Respawnmagazines[]=
+		{
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp",
+			"fow_30Rnd_45acp"
+		};
+	};
+	class TWC_WW2_USMC_VehicleCrew: TWC_WW2_USMC_VehicleCommander
+	{
+		displayName="Vehicle Crew";
+		linkedItems[]=
+		{
+			"fow_v_usmc_45",
+			"fow_h_us_m1_folded",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"fow_v_usmc_45",
+			"fow_h_us_m1_folded",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 	};

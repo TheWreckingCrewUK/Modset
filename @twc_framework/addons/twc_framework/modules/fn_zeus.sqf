@@ -15,28 +15,44 @@
 */
 params ["_enabled"];
 
-if(!isServer)exitWith{};
+if (!isServer || !_enabled) exitWith {};
 
-if !(_enabled) exitWith {};
+[
+	"AllVehicles",
+	"InitPost",
+	{
+		if (!isServer) exitWith {};
 
-//adds objects placed in editor:
+		[{
+			if !(_this isEqualType []) then { _this = [_this]; };
+
+			{
+				_x addCuratorEditableObjects [_this, true];
+			} forEach allCurators;
+		}, _this] call CBA_fnc_execNextFrame;
+	},
+	true,
+	[],
+	true
+] call CBA_fnc_addClassEventHandler;
+
+/* //adds objects placed in editor:
 {
-	_x addCuratorEditableObjects [vehicles,true];
-	_x addCuratorEditableObjects [(allMissionObjects "Man"),false];
-	_x addCuratorEditableObjects [(allMissionObjects "Air"),true];
-	_x addCuratorEditableObjects [(allMissionObjects "Ammo"),false];
-}foreach allcurators;
+	_x addCuratorEditableObjects [vehicles, true];
+	_x addCuratorEditableObjects [(allMissionObjects "Man"), false];
+	_x addCuratorEditableObjects [(allMissionObjects "Air"), true];
+	_x addCuratorEditableObjects [(allMissionObjects "Ammo"), false];
 	
-//makes all units continuously available to Zeus (for respawning players and AI that's being spawned by a script.)
-while {true} do {
-			
-			
-				{
-					_x addCuratorEditableObjects [allUnits, true];
-					_x addCuratorEditableObjects [vehicles, true];
-				}foreach allcurators;
-	
-	sleep 10;
-};
+	_x addEventhandler ["CuratorObjectRegistered", {
+		(_this select 0) addCuratorEditableObjects [(_this select 1), true];
+	}];
+} foreach allCurators;
 
-if (true) exitWith {};
+while {true} do {
+	{
+		_x addCuratorEditableObjects [allUnits, true];
+		_x addCuratorEditableObjects [vehicles, true];
+	} foreach allCurators;
+
+	sleep 10;
+}; */

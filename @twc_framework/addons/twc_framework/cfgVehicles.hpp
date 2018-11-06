@@ -1,5 +1,18 @@
-class cfgVehicles {
+class CfgVehicles {
+	class Man;
+	class CAManBase: Man {
+		class ACE_MainActions {
+			class TWC_AddToGroup {
+				displayName = "Add To Group";
+				condition = "group _target != group _player && { [_player, _target] call twc_fnc_isHigherRank }";
+				statement = "[_target] joinSilent _player"; // can be function in future for notice
+				exceptions[] = {"isNotSwimming"};
+			};
+		};
+	};
+
 	class Logic;
+	class ModuleOrdnanceMortar_F;
 	
 	class Module_Base: Logic {
 		class AttributesBase;
@@ -21,6 +34,8 @@ class cfgVehicles {
 			class Player;
 		};
 	};
+	
+	class ModuleCAS_F;
 
 	class twc_ModuleMission: Module_F {
 		author="[TWC] jayman";
@@ -140,6 +155,19 @@ class cfgVehicles {
 				defaultValue=1;
 			};
 		};
+	};
+	
+	class twc_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_dummyround_artillery_small";
+	};
+	class twc_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_dummyround_artillery_medium";
+	};
+	class twc_ModuleOrdnanceMortar_Dummy_big: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_dummyround_artillery_big";
 	};
 	
 	class twc_moduelHC: Module_F {
@@ -360,7 +388,7 @@ class cfgVehicles {
 	};
 
 	class TWC_Module_VirtualArtillery: Module_F {
-		author = "[TWC] Bosenator & jayman";
+		author = "[TWC] Bosenator & jayman & Rik";
 		category = "twc_mission_framework";
 		displayName = "Virtual Artillery";
 		function = "twc_fnc_moduleVirtualArtillery";
@@ -383,6 +411,21 @@ class cfgVehicles {
 					{
 						name="HE";
 						value="HE";
+					};
+					class HE_Harmless_small
+					{
+						name="HE Harmless (Small)";
+						value="HE_Harmless_Small";
+					};
+					class HE_Harmless_medium
+					{
+						name="HE Harmless (Medium)";
+						value="HE_Harmless_Medium";
+					};
+					class HE_Harmless_big
+					{
+						name="HE Harmless (Big)";
+						value="HE_Harmless_Big";
 					};
 					class Smoke
 					{
@@ -584,6 +627,23 @@ class cfgVehicles {
 		};
 		class ModuleDescription: ModuleDescription {
 			description = "TWC Defend Function";
+			sync[] = {"AnyAI"};
+		};
+	};
+	
+	class TWC_Module_DummyBullets: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Harmless Static";
+		function = "twc_fnc_moduleDummyBullets";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\stationary_units_ca.paa";
+		functionPriority = 1;
+		class ModuleDescription: ModuleDescription {
+			description = "TWC Dummy Bullets Function";
 			sync[] = {"AnyAI"};
 		};
 	};
@@ -820,6 +880,79 @@ class cfgVehicles {
 		};
 		class ModuleDescription: ModuleDescription {
 			description = "Call in Attack Plane";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_Amient_AttackPlane: ModuleCAS_F
+	{
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Ambient Attack Plane";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\attack_plane_ca.paa";
+		functionPriority = 1;
+		class Arguments
+		{
+			class Type
+			{
+				description = "";
+				displayName = "Type";
+				typeName = "NUMBER";
+				class values
+				{
+					class Bomb
+					{
+						name = "CAS - Bomb Strike";
+						value = 3;
+					};
+					class Gun
+					{
+						default = 1;
+						name = "CAS - Gun Run";
+						value = 0;
+					};
+					class GunMissiles
+					{
+						name = "CAS - Gun and Missiles";
+						value = 2;
+					};
+					class Missiles
+					{
+						name = "CAS - Missile Strike";
+						value = 1;
+					};
+				};
+			};
+			class Vehicle
+			{
+				description = "";
+				displayName = "Plane";
+				class values
+				{
+					/*class Spitfire
+					{
+						name = "Spitfire";
+						value = "spitfire_v_G";
+					}; Todo after the spitfire gets fixed.*/
+					class Hellcat_US
+					{
+						name = "Hellcat (US)";
+						value = "fow_va_f6f_c";
+					};
+					class Hellcat_UK
+					{
+						name = "Hellcat (UK)";
+						value = "fow_va_f6f_c_faa";
+					};
+				};
+			};
+		};
+		class ModuleDescription  {
+			description = "Call in Ambient Attack Plane, automatically despawned";
 			sync[] = {""};
 		};
 	};

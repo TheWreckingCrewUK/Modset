@@ -122,23 +122,15 @@ class cfgWeapons
 				slot="asdg_FrontSideRail_UK3CB_BAF_L129A1";
 				item="UK3CB_BAF_LLM_Flashlight_Black";
 			};
-		};
-	};
-	class twc_l115a3_wd: UK3CB_BAF_L115A3_Ghillie
-	{
-		scope = 1;
-		author = "jayman";
-		class LinkedItems
-		{
-			class LinkedItemsOptic
+			class LinkedItemsBipod
 			{
-				slot = "asdg_OpticRail_UK3CB_BAF_L115";
-				item = "RKSL_optic_PMII_525";
+				slot="UK3CB_underbarrel_rifle_slot";
+				item="UK3CB_underbarrel_acc_bipod";
 			};
 			class LinkedItemsMuzzle
 			{
-				slot = "asdg_muzzleslot_UK3CB_BAF_L115";
-				item= "UK3CB_BAF_Silencer_L115A3";
+				slot="asdg_MuzzleSlot_UK3CB_BAF_L129A1";
+				item="UK3CB_BAF_Silencer_L115A3";
 			};
 		};
 	};

@@ -9,6 +9,49 @@ class Wheeled_APC_F: Car_F {
 
 
 //handling modifications
+	class MRAP_01_base_F;
+	class rhsusf_hmmwe_base: MRAP_01_base_F
+	{
+		class Wheels {
+			class LF;
+		};
+	};
+		
+	class rhsusf_m998_w_2dr: rhsusf_hmmwe_base
+	{
+		class Wheels:Wheels {
+			class LF:LF {
+				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
+				maxCompression = 0.25;
+				maxDroop = 0.1;
+				springDamperRate = 4500;
+				springStrength = 36000;
+			};
+		};
+	};
+	
+	class rhsusf_m998_w_4dr_halftop;
+	class rhsusf_m998_w_4dr_fulltop: rhsusf_m998_w_4dr_halftop
+	{
+		class Wheels {
+			class LF;
+		};
+	};
+	
+	class rhsusf_m1025_w: rhsusf_m998_w_4dr_fulltop
+	{
+		class Wheels:Wheels {
+			class LF:LF {
+				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
+				maxCompression = 0.25;
+				maxDroop = 0.1;
+				springDamperRate = 4500;
+				springStrength = 36000;
+			};
+		};
+	};
+	
+		
 	
 	class UK3CB_BAF_LandRover_Base;
 	
@@ -25,6 +68,98 @@ class Wheeled_APC_F: Car_F {
 	class twc_mert_ch47: CUP_B_CH47F_GB {
 		displayname = "CH-47D (MERT)";
 	};
+	
+	class Heli_Attack_01_base_F;
+	class RHS_AH64_base: Heli_Attack_01_base_F
+	{
+		class hitpoints
+		{
+			class HitHRotor;
+		};
+		
+	};
+	
+	class RHS_AH64D: RHS_AH64_base
+	{
+		armor = 70;
+		armorStructural = 200;
+		cyclicAsideForceCoef = 1.6;
+		cyclicForwardForceCoef = 1.4;
+		backRotorForceCoef = 1;
+		liftForceCoef = 0.9;
+
+		class hitpoints: hitpoints
+		{
+			class HitHRotor: HitHRotor
+			{
+				armor = 2;
+			};
+		};
+	};
+	
+	class rhsusf_mrzr_base: MRAP_01_base_F {
+		
+		ace_cargo_size = 25;
+		ace_cargo_canLoad = 1;
+		ace_cargo_hasCargo = 1;
+		ace_cargo_space = 2;
+		differentialType = "front_limited";
+		frontBias = 1.1;
+		rearBias = 2.5;
+		turnCoef = 2;
+		maxSpeed = 145;
+		normalSpeedForwardCoef = 1.1;
+		latency = 0.4;
+		gearBox[] = {-8,0,10,6.15,4.44,2.33,2.8,2.5};
+		class Wheels {
+			class LF {
+			boneName = "wheel_1_1_damper";
+			boundary = "wheel_1_1_bound";
+			center = "wheel_1_1_axis";
+			dampingRate = 0.1;
+			dampingRateDamaged = 1;
+			dampingRateDestroyed = 1000;
+			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.5, 0.5 }, { 1.0, 0.35 }};
+			latStiffX = 20;
+			latStiffY = 120;
+			longitudinalStiffnessPerUnitGravity = 9000;
+			mass = 40;
+			maxBrakeTorque = 2000;
+			maxCompression = 0.2;
+			maxDroop = 0.12;
+			maxHandBrakeTorque = 0;
+			MOI = 1.97192;
+			side = "left";
+			springDamperRate = 2500;
+			springStrength = 14000;
+			sprungMass = -1;
+			steering = 1;
+			suspForceAppPointOffset = "wheel_1_1_axis";
+			suspTravelDirection[] = {0,-1,0};
+			tireForceAppPointOffset = "wheel_1_1_axis";
+			width = 0.2;
+			};
+			class RF:LF {};
+			class RR: RF {
+			frictionVsSlipGraph[] = {{ 0.0, 0.55 }, { 0.8, 0.5 }, { 1.0, 0.4 }};
+			};
+			class LR: LF {
+			frictionVsSlipGraph[] = {{ 0.0, 0.55 }, { 0.8, 0.5 }, { 1.0, 0.4 }};
+			};
+			
+		};
+		class complexGearbox {
+			driveString = "D";
+			gearBoxMode = "auto";
+			GearboxRatios[] = {"R1",-2.47,"N",0,"D1",3.55,"D2",1.8,"D3",1.1};
+			moveOffGear = 1;
+			neutralString = "N";
+			reverseString = "R";
+			TransmissionRatios[] = {"High",6.8};
+		};
+		
+	};
+	
 	
 	
 	class Quadbike_01_base_F: Car_F {

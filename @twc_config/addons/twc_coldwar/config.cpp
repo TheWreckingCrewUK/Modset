@@ -189,11 +189,15 @@ class CfgVehicles
 	#include "regular\woodland_dismounted.hpp"
 	#include "regular\desert.hpp"
 	#include "regular\desert_dismounted.hpp"
+	#include "regular\tropic.hpp"
+	#include "regular\tropic_dismounted.hpp"
 	
 	#include "coin\woodland.hpp"
 	#include "coin\woodland_dismounted.hpp"
 	#include "coin\desert.hpp"
 	#include "coin\desert_dismounted.hpp"
+	#include "coin\tropic.hpp"
+	#include "coin\tropic_dismounted.hpp"
 	
 	#include "airborne\woodland.hpp"
 	#include "airborne\desert.hpp"

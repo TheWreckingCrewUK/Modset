@@ -441,10 +441,23 @@
 		class TransportMagazines
 		{
 			class _xx_Lapua
-				{
-					magazine = "UK3CB_BAF_762_100Rnd";
-					count = 5;
-				};
+			{
+				magazine = "ACE_10Rnd_338_300gr_HPBT_Mag";
+				count = 10;
+			};
+			class _xx_Lapua_AP
+			{
+				magazine = "ACE_10Rnd_338_API526_Mag";
+				count = 2;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_Tripod
+			{
+				name = "ACE_Tripod";
+				count = 1;
+			};
 		};
 	};
 	class TWC_Backpack_Modern_Spotter: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A
@@ -457,18 +470,28 @@
 				name = "ACE_SpottingScope";
 				count = 1;
 			};
+			class _xx_Tripod
+			{
+				name = "ACE_Tripod";
+				count = 1;
+			};
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
 		};
 		class TransportMagazines
 		{
-			class _xx_Lapua
+			class _xx_SmokeShell
 			{
-				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 5;
-			};
-			class _xx_MarksmanMag
-			{
-				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
+				magazine = "SmokeShell";
 				count = 2;
+			};
+			class _xx_SmokeShell_Red
+			{
+				magazine = "SmokeShellRed";
+				count = 1;
 			};
 		};
 	};

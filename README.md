@@ -117,31 +117,79 @@ Assistant Machine Gunner | L1A1 SLR (Wooden stock) | 7x 7.62mm 20rnd Mag, 1x M83
 
 > The quantities below have not been calculated, they are simply place holders for the moment.
 
-### 90's Dismounted
-
+### 90's Section
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
-Section Commander | L85A1 with SUSAT | 6x STANAG Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, AN/PRC-177
-Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
-Rifleman AT | L85A1 with SUSAT, LAW 80 | 8x STANAG Mags, 2x Frags | ---
-Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
- |  |  |  
-2iC | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
-Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
-Rifleman AT | L85A1 with SUSAT, LAW 80 | 8x STANAG Mags, 2x Frags | ---
-Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+Section Commander | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 1x AN/PRC-117F, 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
+Rifleman | L85A1 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Rifleman (AT) | L85A1, LAW-80 Launcher | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 
+2iC | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 10x 5.56mm 30rnd Mag, 4x 5.56mm 30rnd Tracer Mag
+Rifleman | L85A1 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Rifleman (AT) | L85A1, LAW-80 Launcher | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 
 
-### 90's Mechanised
-
+### 90's Section (Mechanised)
 Role | Weapon(s) | Personal Gear | Backpack
 --- | --- | --- | ---
-Section Commander | L85A1 with SUSAT | 6x STANAG Mags, 2x Frags | 6x White Smoke, 2x Red/Blue/Green/Yellow Smoke, AN/PRC-177
-Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
-Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
- |  |  |  
-2iC | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | 10x STANAG Mags, 4x Frags, 6x White Smoke, 2x Red/Green/Blue/Yellow Smoke, Extra Medical Supplies
-Rifleman | L85A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
-Gunner | L86A1 with SUSAT | 8x STANAG Mags, 2x Frags | ---
+Section Commander | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 1x AN/PRC-117F, 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
+Rifleman (AT) | L85A1, LAW-80 Launcher | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 
+2iC | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 10x 5.56mm 30rnd Mag, 4x 5.56mm 30rnd Tracer Mag
+Rifleman (AT) | L85A1, LAW-80 Launcher | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 
+Vehicle Commander | L85A1 | 3x 5.56mm 30rnd Mag, 2x M83 Smoke Grenade (White) | 
+Vehicle Crew | L85A1 | 3x 5.56mm 30rnd Mag, 2x M83 Smoke Grenade (White) | 
+Vehicle Crew | L85A1 | 3x 5.56mm 30rnd Mag, 2x M83 Smoke Grenade (White) | 
+
+### 90's Section (Dismounted)
+Role | Weapon(s) | Personal Gear | Backpack
+--- | --- | --- | ---
+Section Commander | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 1x AN/PRC-117F, 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue), 10x 5.56mm 30rnd Mag, 6x 5.56mm 30rnd Tracer Mag
+Rifleman | L85A1 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 5.56mm 30rnd Mag
+Rifleman (AT) | L85A1, LAW-80 Launcher | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 5.56mm 30rnd Mag
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 10x 5.56mm 30rnd Mag, 6x 5.56mm 30rnd Tracer Mag
+2iC | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 20x 5.56mm 30rnd Mag, 8x 5.56mm 30rnd Tracer Mag
+Rifleman | L85A1 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 5.56mm 30rnd Mag
+Rifleman (AT) | L85A1, LAW-80 Launcher | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 5.56mm 30rnd Mag
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 10x 5.56mm 30rnd Mag, 6x 5.56mm 30rnd Tracer Mag
+
+### 90's Section (COIN)
+Role | Weapon(s) | Personal Gear | Backpack
+--- | --- | --- | ---
+Section Commander | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 1x AN/PRC-117F, 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
+Rifleman | L85A1 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Rifleman (AT) | L85A1, M72A6 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 
+2iC | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 10x 5.56mm 30rnd Mag, 4x 5.56mm 30rnd Tracer Mag
+Rifleman | L85A1 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Rifleman (AT) | L85A1, M72A6 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 
+
+### 90's Section (Mechanised, COIN)
+Role | Weapon(s) | Personal Gear | Backpack
+--- | --- | --- | ---
+Section Commander | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 1x AN/PRC-117F, 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue)
+Rifleman (AT) | L85A1, M72A6 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 
+2iC | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 10x 5.56mm 30rnd Mag, 4x 5.56mm 30rnd Tracer Mag
+Rifleman (AT) | L85A1, M72A6 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 
+Vehicle Commander | L85A1 | 3x 5.56mm 30rnd Mag, 2x M83 Smoke Grenade (White) | 
+Vehicle Crew | L85A1 | 3x 5.56mm 30rnd Mag, 2x M83 Smoke Grenade (White) | 
+Vehicle Crew | L85A1 | 3x 5.56mm 30rnd Mag, 2x M83 Smoke Grenade (White) | 
+
+### 90's Section (Dismounted, COIN)
+Role | Weapon(s) | Personal Gear | Backpack
+--- | --- | --- | ---
+Section Commander | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 1x AN/PRC-117F, 3x M83 Smoke Grenade (White), 2x M18 Smoke Grenade (Red), 2x M18 Smoke Grenade (Blue), 10x 5.56mm 30rnd Mag, 6x 5.56mm 30rnd Tracer Mag
+Rifleman | L85A1 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 5.56mm 30rnd Mag
+Rifleman (AT) | L85A1, M72A6 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 5.56mm 30rnd Mag
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 10x 5.56mm 30rnd Mag, 6x 5.56mm 30rnd Tracer Mag
+2iC | L85A1, Vector 21 Nite | 5x 5.56mm 30rnd Mag, 2x 5.56mm 30rnd Tracer Mag, 2x L109A2 Frag, 2x M83 Smoke Grenade (White) | 3x M83 Smoke Grenade (White), 20x 5.56mm 30rnd Mag, 8x 5.56mm 30rnd Tracer Mag
+Rifleman | L85A1 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 5.56mm 30rnd Mag
+Rifleman (AT) | L85A1, M72A6 | 7x 5.56mm 30rnd Mag, 2x L109A2 Frag, 1x M83 Smoke Grenade (White) | 8x 5.56mm 30rnd Mag
+Gunner | L86A1 | 7x 5.56mm 30rnd Mag, 5x 5.56mm 30rnd Tracer Mag, 1x M83 Smoke Grenade (White) | 10x 5.56mm 30rnd Mag, 6x 5.56mm 30rnd Tracer Mag
 
 ### 00's Dismounted
 

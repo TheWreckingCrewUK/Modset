@@ -3,7 +3,7 @@ params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projecti
 if (!local _unit || !isPlayer _unit) exitWith {};
 
 _weaponUsed = [(configFile >> "CfgWeapons" >> _weapon), "ACE_UsedTube", ""] call BIS_fnc_returnConfigEntry;
-if (_weaponUsed == "") exitWith {};
+if (_weaponUsed == "" || _weaponUsed == "sp_l1a1_law66_used") exitWith {};
 
 [_unit, _weapon, _weaponUsed] spawn {
 	params ["_unit", "_weapon", "_weaponUsed"];
