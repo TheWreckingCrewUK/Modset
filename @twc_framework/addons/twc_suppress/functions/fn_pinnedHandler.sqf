@@ -8,12 +8,7 @@ if (TWC_Suppress_threshold >= MIN_THRESHOLD) then {
 	TWC_Suppress_isSuppressed = true;
 
 	_power = (TWC_Suppress_threshold - MIN_THRESHOLD) / (MAX_THRESHOLD - MIN_THRESHOLD);
-
-	addCamShake [
-		(_power * 1),
-		2 + (_power * 23),
-		1.5
-	];
+	addCamShake [(_power * 1), 2 + (_power * 23), 1.5];
 
 	TWC_Suppress_blur ppEffectAdjust [(_power * 1.15)];
 	TWC_Suppress_blur ppEffectCommit 0.5;
