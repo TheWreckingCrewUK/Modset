@@ -10,7 +10,7 @@ class CfgFunctions {
 			class postInit {};
 
 			// AI
-			class module {};
+			class moduleSuppress {};
 			class doSuppress {};
 			class doSuppressLocal {};
 
@@ -20,8 +20,8 @@ class CfgFunctions {
 			class mainHandler {};
 			class pinnedHandler {};
 			class thresholdHandler {};
-			class clearPinnedEffect {};
 			class clearImpactEffect {};
+			class clearPinnedEffect {};
 			
 			// Util
 			class readCache {};
