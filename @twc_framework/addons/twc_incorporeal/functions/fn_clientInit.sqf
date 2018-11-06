@@ -43,7 +43,7 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 		if (!TWC_Death_AlreadyExecuted) then {
 			[_unit] call TWC_Incorporeal_fnc_bestGuessDeath;
 		};
-	}, [_unit]] call CBA_fnc_execNextFrame;
+	}, [_unit], 1] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_addEventHandler;
 
 /** We cut on the killed event, so we have minimal chance of the spectate UI showing **/
@@ -71,7 +71,7 @@ player addEventHandler ["Killed", {
 		if (!TWC_Death_AlreadyExecuted) then {
 			[_unit] call TWC_Incorporeal_fnc_bestGuessDeath;
 		};
-	}, [_unit]] call CBA_fnc_execNextFrame;
+	}, [_unit], 1] call CBA_fnc_waitAndExecute;
 }];
 
 player addEventHandler ["Respawn", {

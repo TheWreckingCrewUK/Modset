@@ -19,6 +19,7 @@ _introData = [] call TWC_Incorporeal_fnc_getIntroData;
 // Calculate time per section for panning shot. Overall time limit is 40 seconds, divided by element count. Min of 4 seconds per group.
 _totalAssetCount = count _introData;
 _panTimePerAsset = (40 / (_totalAssetCount)) max 4;
+disableUserInput true;
 
 waitUntil {!(isNil "BIS_fnc_init")};
 // some way of nicely transitioning into the game before group info ??
@@ -31,7 +32,7 @@ playMusic _song; // play calculated tune
 
 titleText ["<t color='#ffffff' size='3'>The Wrecking Crew</t><br/><t color='#FFFFFF' size='1'>Presents</t>", "PLAIN", -1, true, true];
 titleFadeOut 5;
-sleep 5;
+sleep 6;
 
 _titleText = format [
 	"<t color='#ff6633' size='4' align='center'>%1</t><br/><t color='#FFFFFF' size='1' align='center'>by %2</t>",
@@ -44,7 +45,7 @@ sleep 10;
 
 titleCut ["", "BLACK IN", 5];
 _cam camCommit 5;
-sleep 5;
+sleep 4;
 
 {
 	_x params ["_groupName", "_groupUnits"];
@@ -83,6 +84,11 @@ sleep 5;
 _cam = "camera" camCreate (player modelToWorld [0, 2, 5]);
 _cam cameraEffect ["terminate", "back"];
 camDestroy _cam;
+
+// KillZone trick to fix a bug, apparently
+disableUserInput false;
+disableUserInput true;
+disableUserInput false;
 
 "dynamicBlur" ppEffectEnable true;
 "dynamicBlur" ppEffectAdjust [6];
