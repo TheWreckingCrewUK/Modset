@@ -30,8 +30,9 @@ _Type_Cargo = _logic getVariable "Type_Cargo";
 
 _Amount_Cargo = _logic getVariable "Amount_Cargo";
 _attackpos = _logic getVariable "Infantry_Attack_Location";
+_script = _logic getVariable "Script";
 
-[_pos, _Destination, _End, _Plane_Units, _Type_Plane, _Type_Cargo, _Amount_Cargo, _attackpos] call twc_fnc_Airborne;
+[_pos, _Destination, _End, _Plane_Units, _Type_Plane, _Type_Cargo, _Amount_Cargo, _attackpos, _script] call twc_fnc_Airborne;
 
 if (!isNull _logic) then {
 	deleteVehicle _logic;
