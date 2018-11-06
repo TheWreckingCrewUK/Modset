@@ -22,8 +22,8 @@ if (isMultiplayer) then {
 
 		[] spawn TWC_Incorporeal_fnc_setPlayerUp;
 
-		titleText ["<t color='#ffffff' size='3'>The Wrecking Crew</t><br/><t color='#FFFFFF' size='1'>Presents</t>", "PLAIN", 3, true, true];
-		titleFadeOut 7;
+		titleText ["<t color='#ffffff' size='3'>The Wrecking Crew</t><br/><t color='#FFFFFF' size='1'>Presents</t>", "PLAIN", -1, true, true];
+		titleFadeOut 5;
 
 		[{
 			params ["_operationName", "_author"];
@@ -35,12 +35,12 @@ if (isMultiplayer) then {
 			];
 
 			[parseText _titleText, [0, 0.3, 1, 1], nil, 7, 7, 0] spawn BIS_fnc_textTiles;
-		}, [_operationName, _author], 13] call CBA_fnc_waitAndExecute;
+		}, [_operationName, _author], 7] call CBA_fnc_waitAndExecute;
 
 		[{
 			titleText ["To prevent desync, don't move until the go ahead is given.", "PLAIN"];
 			titleFadeOut 20;
-		}, [], 35] call CBA_fnc_waitAndExecute;
+		}, [], 30] call CBA_fnc_waitAndExecute;
 
 		[{
 			"dynamicBlur" ppEffectEnable true;

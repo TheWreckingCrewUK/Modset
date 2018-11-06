@@ -74,7 +74,7 @@ class CfgVehicles {
 					};
 
 					class coldwar {
-						name="Cold War";
+						name = "Cold War";
 						value = "coldwar";
 					};
 
@@ -108,7 +108,7 @@ class CfgVehicles {
 				displayName = "Player Base Body Cleanup";
 				description = "Range. Set to 0 to Disable";
 				typeName = "NUMBER";
-				defaultValue=250;
+				defaultValue = 250;
 			};
 
 			class disconectGear {
@@ -164,7 +164,7 @@ class CfgVehicles {
 				displayName = "Special Intro";
 				description = "CfgSound entry of special intro here, otherwise leave blank";
 				typeName = "STRING";
-				defaultValue = 0;
+				defaultValue = "";
 			};
 		};
 	};

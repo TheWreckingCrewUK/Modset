@@ -2,6 +2,17 @@ params ["_operationName", "_author", "_operationEra", "_isNightOp"];
 
 _song = [_operationEra, _isNightOp] call TWC_Incorporeal_fnc_getIntroSong;
 
+if (serverTime < 600) then {
+	_index = player createDiarySubject ["loadout", "Loadouts"];
+	[player] remoteExecCall ["twc_fnc_briefingLoadout", (group player)];
+};
+
+if (!isNil "completedTasks") then {
+	{
+		[_x select 0, _x select 1, false] call BIS_fnc_taskSetState;
+	} forEach completedTasks;
+};
+
 // Need to support special intro camera stuff here. Hmmm.
 _introData = [] call TWC_Incorporeal_fnc_getIntroData;
 
@@ -9,20 +20,37 @@ _introData = [] call TWC_Incorporeal_fnc_getIntroData;
 _totalAssetCount = count _introData;
 _panTimePerAsset = (40 / (_totalAssetCount)) max 4;
 
+waitUntil {!(isNil "BIS_fnc_init")};
 // some way of nicely transitioning into the game before group info ??
 _cam = "camera" camCreate (player modelToWorld [0, 2, 5]);
-_cam camSetTarget (_firstUnit modelToWorld [0, 0, 0]);
+_cam camSetTarget (player modelToWorld [0, 0, 0]);
 _cam cameraEffect ["internal", "back"];
-_cam camCommit 5;
 
-//TODO SET UP, PRESENTS, TITLE, FADE IN TO CAMERA etc.
-sleep 20;
+playMusic _song; // play calculated tune
+[] spawn TWC_Incorporeal_fnc_setPlayerUp;
+
+titleText ["<t color='#ffffff' size='3'>The Wrecking Crew</t><br/><t color='#FFFFFF' size='1'>Presents</t>", "PLAIN", -1, true, true];
+titleFadeOut 5;
+sleep 5;
+
+_titleText = format [
+	"<t color='#ff6633' size='4' align='center'>%1</t><br/><t color='#FFFFFF' size='1' align='center'>by %2</t>",
+	_operationName,
+	_author
+];
+
+[parseText _titleText, [0, 0.3, 1, 1], nil, 5, 5, 0] spawn BIS_fnc_textTiles;
+sleep 10;
+
+titleCut ["", "BLACK IN", 5];
+_cam camCommit 5;
+sleep 5;
 
 {
 	_x params ["_groupName", "_groupUnits"];
 	_displayString = "";
-	_firstUnit = (_groupUnits select 0);
-	_lastUnit = (_groupUnits select (count _groupUnits - 1));
+	_firstUnit = ((_groupUnits select 0) select 2);
+	_lastUnit = ((_groupUnits select (count _groupUnits - 1)) select 2);
 	
 	// Build Group Display List
 	{
@@ -48,10 +76,22 @@ sleep 20;
 	_cam cameraEffect ["internal", "back"];
 	_cam camCommit _panTimePerAsset;
 	
-	_waitFor = (_forEachIndex + 1) * _panTimePerAsset;
-	sleep _waitFor;
+	//_waitFor = (_forEachIndex + 1) * _panTimePerAsset;
+	sleep _panTimePerAsset;
 } forEach _introData;
 
+_cam = "camera" camCreate (player modelToWorld [0, 2, 5]);
 _cam cameraEffect ["terminate", "back"];
 camDestroy _cam;
 
+"dynamicBlur" ppEffectEnable true;
+"dynamicBlur" ppEffectAdjust [6];
+"dynamicBlur" ppEffectCommit 0;
+"dynamicBlur" ppEffectAdjust [0.0];
+"dynamicBlur" ppEffectCommit 5;
+
+if (!(isNil "twc_JIP_CommandMessage")) then {
+	{
+		player createDiaryRecord ["Diary", ["Radio Message", _x]];
+	} forEach twc_JIP_CommandMessage;
+};

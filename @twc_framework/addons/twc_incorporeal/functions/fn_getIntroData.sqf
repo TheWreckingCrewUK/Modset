@@ -7,7 +7,10 @@ _returnArray = [];
 
 	if (_isLeaderPlayer) then {
 		_groupData = [_x] call TWC_Incorporeal_fnc_getGroupData;
-		_returnArray pushBack _groupData;
+		
+		if ((count (_groupData select 1)) > 0) then {
+			_returnArray pushBack _groupData;
+		};
 	};
 } forEach allGroups;
 
