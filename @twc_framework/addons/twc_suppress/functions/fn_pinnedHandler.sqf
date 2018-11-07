@@ -1,13 +1,12 @@
 if (!(hasInterface) || isDedicated) exitWith {};
 
 #define MIN_THRESHOLD 8
-#define MAX_THRESHOLD 20
 
 if (TWC_Suppress_threshold >= MIN_THRESHOLD) then {
 	if (!alive player) exitWith {};
 	TWC_Suppress_isSuppressed = true;
 
-	_power = (TWC_Suppress_threshold - MIN_THRESHOLD) / (MAX_THRESHOLD - MIN_THRESHOLD);
+	_power = (TWC_Suppress_threshold - MIN_THRESHOLD) / (TWC_Suppress_maxThreshold - MIN_THRESHOLD);
 	addCamShake [(_power * 1), 2 + (_power * 23), 1.5];
 
 	TWC_Suppress_blur ppEffectAdjust [(_power * 1.2)];

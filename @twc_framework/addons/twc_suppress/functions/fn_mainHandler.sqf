@@ -1,6 +1,5 @@
 #define OH_DIV 22.15
 #define IM_DIV 15.50
-#define MAX_THRESHOLD 20
 
 private _deleted = false;
 
@@ -28,7 +27,7 @@ private _deleted = false;
 			
 			if (_divisor != 0) then {
 				if ((vehicle player == player) || (isTurnedOut player)) then {
-					TWC_Suppress_threshold = (TWC_Suppress_threshold + (_hit/_divisor)) min MAX_THRESHOLD;
+					TWC_Suppress_threshold = (TWC_Suppress_threshold + (_hit/_divisor)) min TWC_Suppress_maxThreshold;
 				};
 			};
 			
