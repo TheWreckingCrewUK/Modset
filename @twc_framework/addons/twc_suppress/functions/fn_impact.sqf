@@ -3,7 +3,7 @@ if !(alive player) exitWith {};
 
 // Should it run?
 if (((vehicle player) == player) || (isTurnedOut player)) then {
-	TWC_Suppress_impactBlur ppEffectAdjust [0.01, 0.01, 0.15, 0.15];
+	TWC_Suppress_impactBlur ppEffectAdjust [0.02, 0.2, 0.2, 0.2];
 	TWC_Suppress_impactBlur ppEffectCommit 0;
 	TWC_Suppress_impactCC ppEffectAdjust [1, 1, 0, [0, 0, 0, 0.25], [1, 1, 1, 1], [1, 1, 1, 0]];
 	TWC_Suppress_impactCC ppEffectCommit 0;

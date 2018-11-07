@@ -2,7 +2,7 @@ params ["_unit", "_weapon", "", "", "_ammo", "", "_projectile"];
 
 //if (!(hasInterface) || isDedicated) exitWith
 if (toLower(_weapon) in ["put", "throw"]) exitWith {};
-//if (_unit == player) exitWith {}; // don't trigger ourself
+if (side _unit == side player) exitWith {}; // don't trigger ourselves
 if ((player distance _unit) >= 1000) exitWith {};
 if (isNull _projectile) then { _projectile = nearestObject [_unit, _ammo]; };
 

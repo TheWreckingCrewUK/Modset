@@ -1,6 +1,6 @@
 #define OH_DIV 22.15
 #define IM_DIV 15.50
-#define MAX_THRESHOLD 30
+#define MAX_THRESHOLD 20
 
 private _deleted = false;
 

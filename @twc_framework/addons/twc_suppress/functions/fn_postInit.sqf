@@ -1,14 +1,14 @@
 if (!(hasInterface) || isDedicated) exitWith {};
 
 TWC_Suppress_CC = ppEffectCreate ["colorCorrections", 1501];
-TWC_Suppress_cc ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 1], [1, 1, 1, 0]];
-TWC_Suppress_cc ppEffectCommit 0;
-TWC_Suppress_cc ppEffectCreate true;
+TWC_Suppress_CC ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 1], [1, 1, 1, 0]];
+TWC_Suppress_CC ppEffectCommit 0;
+TWC_Suppress_CC ppEffectEnable true;
 
 TWC_Suppress_blur = ppEffectCreate ["DynamicBlur", 800];
 TWC_Suppress_blur ppEffectAdjust [0];
 TWC_Suppress_blur ppEffectCommit 0;
-TWC_Suppress_blur ppEffectCreate true;
+TWC_Suppress_blur ppEffectEnable true;
 
 TWC_Suppress_radialBlur = ppEffectCreate ["RadialBlur", 1003];
 TWC_Suppress_radialBlur ppEffectAdjust [0, 0, 0, 0];
@@ -25,9 +25,9 @@ TWC_Suppress_impactCC ppEffectAdjust [1, 1, 0, [0,0,0,0], [1,1,1,1],[1,1,1,0]];
 TWC_Suppress_impactCC ppEffectCommit 0;
 TWC_Suppress_impactCC ppEffectEnable true;
 
-TWC_Suppress_mainHandlerID = [[] call twc_fnc_suppress_mainHandler, 1] call CBA_fnc_addPerFrameHandler;
-TWC_Suppress_pinnedHandlerID = [[] call twc_fnc_suppress_pinnedHandler, 0.5] call CBA_fnc_addPerFrameHandler;
-TWC_Suppress_thresholdHandlerID = [[] call twc_fnc_suppress_thresholdHandler] call CBA_fnc_addPerFrameHandler;
+TWC_Suppress_mainHandlerID = [{[] call twc_suppress_fnc_mainHandler}] call CBA_fnc_addPerFrameHandler;
+TWC_Suppress_pinnedHandlerID = [{[] call twc_suppress_fnc_pinnedHandler}, 0.5] call CBA_fnc_addPerFrameHandler;
+TWC_Suppress_thresholdHandlerID = [{[] call twc_suppress_fnc_thresholdHandler}, 1] call CBA_fnc_addPerFrameHandler;
 
 // Disable on spectator.
 player addEventHandler ["Killed", {
@@ -52,7 +52,7 @@ player addEventHandler ["Killed", {
 	[TWC_Suppress_pinnedHandlerID] call CBA_fnc_removePerFrameHandler;
 	[TWC_Suppress_thresholdHandlerID] call CBA_fnc_removePerFrameHandler;
 
-	TWC_Suppress_mainHandlerID = [[] call twc_fnc_suppress_mainHandler, 1] call CBA_fnc_addPerFrameHandler;
-	TWC_Suppress_pinnedHandlerID = [[] call twc_fnc_suppress_pinnedHandler, 0.5] call CBA_fnc_addPerFrameHandler;
-	TWC_Suppress_thresholdHandlerID = [[] call twc_fnc_suppress_thresholdHandler] call CBA_fnc_addPerFrameHandler;
+	TWC_Suppress_mainHandlerID = [{[] call twc_suppress_fnc_mainHandler}] call CBA_fnc_addPerFrameHandler;
+	TWC_Suppress_pinnedHandlerID = [{[] call twc_suppress_fnc_pinnedHandler}, 0.5] call CBA_fnc_addPerFrameHandler;
+	TWC_Suppress_thresholdHandlerID = [{[] call twc_suppress_fnc_thresholdHandler}, 1] call CBA_fnc_addPerFrameHandler;
 }] call CBA_fnc_addPlayerEventHandler;

@@ -30,29 +30,36 @@ class CfgVehicles {
 		icon = "\twc_suppress\ui\suppress_ca.paa";
 
 		class Arguments {
-			class Target: Combo {
+			class target {
 				displayName = "Suppression Target";
 				description = "What should the sync'd units suppress?";
 				typeName = "STRING";
-				defaultValue = "Module";
+				defaultValue = "T_Module";
 				
-				class Values {
+				class values {
 					class T_Module {
 						name = "Module Position";
-						value = "Module";
+						value = "T_Module";
 					};
 
 					class T_PlayerRand {
 						name = "Random Trigger Player"; 
-						value = "RandomPlayer";
+						value = "T_PlayerRand";
 					};
 				};
+			};
+			
+			class triggerName {
+				displayName = "Trigger Variable Name";
+				description = "The variable name of the associated area trigger";
+				typeName = "String";
+				defaultValue = "";
 			};
 		};
 
 		class ModuleDescription: ModuleDescription {
 			description = "Set Unit(s) that'll Suppress";
-			sync[] = {"EmptyDetector", "AnyAI"};
+			sync[] = {"AnyAI"};
 		};
 	};
 };
