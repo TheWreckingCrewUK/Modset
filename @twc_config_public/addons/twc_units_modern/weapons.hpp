@@ -630,6 +630,22 @@ class cfgWeapons
 		};
 	};
 	
+	class GMG_F;
+	
+	class GMG_20mm: GMG_F
+	{
+		class manual;
+	};
+	
+	class RHS_MK19: GMG_20mm
+	{
+		magazineReloadTime = 20;
+		class manual: manual
+		{
+			reloadtime = 0.22;
+		};
+	};
+	
 	/*
 	
 	class mortar_82mm: CannonCore
