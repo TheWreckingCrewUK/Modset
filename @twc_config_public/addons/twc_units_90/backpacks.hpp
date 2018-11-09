@@ -542,7 +542,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 		};
 	};
-	class TWC_Backpack_1990_Gunner_Desert: B_Kitbag_cbr
+	class TWC_Backpack_1990_Gunner_Desert: twc_AlicePack_green
 	{
 		scope = 1;
 		class TransportMagazines

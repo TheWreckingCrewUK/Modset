@@ -848,6 +848,13 @@ class CfgVehicles {
 				typeName="String";
 				defaultValue="";
 			};
+			class Script
+			{
+				displayName="Post-WP Script";
+				description="Script to execute once infantry has reached the attack location.";
+				typeName="String";
+				defaultValue="";
+			};
 		};
 		class ModuleDescription: ModuleDescription {
 			description = "Call in airborne group";

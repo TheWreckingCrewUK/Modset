@@ -305,7 +305,7 @@
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_SL_D",
+			"twc_mtp_spcs_SL",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemcTab",
@@ -314,7 +314,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_SL_D",
+			"twc_mtp_spcs_SL",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemcTab",
@@ -386,7 +386,7 @@
 		backpack="";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Rifleman_E",
+			"twc_mtp_spc_rifleman",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -394,7 +394,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Rifleman_E",
+			"twc_mtp_spc_rifleman",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -452,7 +452,7 @@
 		backpack="";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Rifleman_E",
+			"twc_mtp_spc_rifleman_alt",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -460,7 +460,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Rifleman_E",
+			"twc_mtp_spc_rifleman_alt",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -474,7 +474,7 @@
 		backpack="";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"UK3CB_BAF_V_Osprey_MG_B",
+			"twc_mtp_spcs_mg",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -482,11 +482,39 @@
 		};
 
 		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_Osprey_MG_B",
+			"twc_mtp_spcs_mg",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
+		};
+		magazines[]=
+		{
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"HandGrenade",
+			"SmokeShell",
+			"SmokeShell"
 		};
 	};
 	
@@ -496,7 +524,7 @@
 		backpack="";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"twc_mtp_spcs_Marksman",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -504,7 +532,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"twc_mtp_spcs_Marksman",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -518,7 +546,7 @@
 		backpack="";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Medic_B",
+			"twc_mtp_spcs_medic",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -526,7 +554,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Medic_B",
+			"twc_mtp_spcs_medic",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
