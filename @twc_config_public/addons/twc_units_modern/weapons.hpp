@@ -14,6 +14,57 @@ class cfgWeapons
 	class Rifle_Base_F;
 	class cannoncore;
 	
+	class rhsusf_spcs_ocp_teamleader;
+	class twc_mtp_spcs_SL: rhsusf_spcs_ocp_teamleader
+	{
+		displayName = "SPCS MTP (SL)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	
+	class rhsusf_spcs_ocp_sniper;
+	class twc_mtp_spcs_Marksman: rhsusf_spcs_ocp_sniper
+	{
+		displayName = "SPCS MTP (Marksman)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	
+	class rhsusf_spcs_ocp_medic;
+	class twc_mtp_spcs_medic: rhsusf_spcs_ocp_medic
+	{
+		displayName = "SPCS MTP (Medic)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	class rhsusf_spcs_ocp;
+	class rhsusf_spcs_ocp_saw : rhsusf_spcs_ocp
+	{
+		class iteminfo;
+	};
+	class twc_mtp_spcs_mg: rhsusf_spcs_ocp_saw
+	{
+		displayName = "SPCS MTP (MG)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+		class iteminfo: iteminfo
+		{
+			containerClass = "Supply200";
+		};
+	};
+	
+	class rhsusf_spc_rifleman;
+	class twc_mtp_spc_rifleman: rhsusf_spc_rifleman
+	{
+		displayName = "SPC MTP (Rifleman)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa"};
+	};
+	
+	class rhsusf_spc_iar;
+	class twc_mtp_spc_rifleman_alt: rhsusf_spc_iar
+	{
+		displayName = "SPC MTP (Rifleman Alt)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa"};
+	};
+	
+	
+	
 	
 	class Launcher;
 	class Launcher_Base_F: Launcher
@@ -576,6 +627,22 @@ class cfgWeapons
 				slot="CowsSlot";
 				item="rhsusf_acc_premier";
 			};
+		};
+	};
+	
+	class GMG_F;
+	
+	class GMG_20mm: GMG_F
+	{
+		class manual;
+	};
+	
+	class RHS_MK19: GMG_20mm
+	{
+		magazineReloadTime = 20;
+		class manual: manual
+		{
+			reloadtime = 0.22;
 		};
 	};
 	
