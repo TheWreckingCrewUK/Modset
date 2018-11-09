@@ -10,8 +10,8 @@ if (((vehicle player) == player) || (isTurnedOut player)) then {
 	
 	[true] call TWC_Suppress_fnc_clearImpactEffect;
 	
-	// Flinch at first shot, if it's been 5 minutes since last being shot at
-	if ((time - TWC_Suppress_lastShotTime) >= 300) then {
+	// Flinch at first shot, if it's been 3 minutes since last being shot at
+	if ((time - TWC_Suppress_lastShotTime) >= 180) then {
 		addCamShake [3, 0.4, 80];
 	};
 };

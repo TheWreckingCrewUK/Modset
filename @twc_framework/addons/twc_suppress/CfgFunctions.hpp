@@ -13,6 +13,8 @@ class CfgFunctions {
 			class moduleSuppress {};
 			class doSuppress {};
 			class doSuppressLocal {};
+			class suppressRandPlayersInArea {};
+			class suppressPos {};
 
 			// Player Effect
 			class fired {};
@@ -22,7 +24,7 @@ class CfgFunctions {
 			class thresholdHandler {};
 			class clearImpactEffect {};
 			class clearPinnedEffect {};
-			
+
 			// Util
 			class readCache {};
 		};

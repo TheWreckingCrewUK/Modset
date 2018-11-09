@@ -42,11 +42,18 @@ class CfgVehicles {
 						value = "T_Module";
 					};
 
-					class T_PlayerRand {
-						name = "Random Trigger Player"; 
+					class T_PlayersRand {
+						name = "Random Trigger Players";
 						value = "T_PlayerRand";
 					};
 				};
+			};
+			
+			class radius {
+				displayName = "Random Radius";
+				description = "Radius in which to pick a random position each cycle & unit.";
+				typeName = "NUMBER";
+				defaultValue = 0;
 			};
 			
 			class triggerName {
