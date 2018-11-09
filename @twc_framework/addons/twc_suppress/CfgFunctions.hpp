@@ -13,7 +13,8 @@ class CfgFunctions {
 			class moduleSuppress {};
 			class doSuppress {};
 			class doSuppressLocal {};
-			class suppressRandPlayersInArea {};
+			class suppressTriggerPlayers {};
+			class suppressPlayers {};
 			class suppressPos {};
 
 			// Player Effect
