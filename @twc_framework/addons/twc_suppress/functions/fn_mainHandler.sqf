@@ -26,7 +26,9 @@ private _deleted = false;
 			};
 			
 			if (_divisor != 0) then {
-				if ((vehicle player == player) || (isTurnedOut player)) then {
+				if (isWeaponDeployed player) then { _hit = (_hit / 2); };
+				
+				if ((vehicle player == player) || (isTurnedOut player) || (TWC_Suppress_inExposedVehicle)) then {
 					TWC_Suppress_threshold = (TWC_Suppress_threshold + (_hit/_divisor)) min TWC_Suppress_maxThreshold;
 				};
 			};

@@ -35,6 +35,7 @@ player addEventHandler ["Killed", {
 	TWC_Suppress_isSuppressed = false;
 	TWC_Suppress_lastShotTime = 0;
 	TWC_Suppress_threshold = 0;
+	TWC_Suppress_inExposedVehicle = false;
 	
 	[] call TWC_Suppress_fnc_clearImpactEffect;
 	[] call TWC_Suppress_fnc_clearPinnedEffect;
@@ -50,6 +51,7 @@ player addEventHandler ["Killed", {
 	TWC_Suppress_isSuppressed = false;
 	TWC_Suppress_lastShotTime = 0;
 	TWC_Suppress_threshold = 0;
+	TWC_Suppress_inExposedVehicle = false;
 	
 	[] call TWC_Suppress_fnc_clearImpactEffect;
 	[] call TWC_Suppress_fnc_clearPinnedEffect;
@@ -64,3 +66,15 @@ player addEventHandler ["Killed", {
 	TWC_Suppress_pinnedHandlerID = [{[] call twc_suppress_fnc_pinnedHandler}, 0.5] call CBA_fnc_addPerFrameHandler;
 	TWC_Suppress_thresholdHandlerID = [{[] call twc_suppress_fnc_thresholdHandler}, 1] call CBA_fnc_addPerFrameHandler;
 }] call CBA_fnc_addPlayerEventHandler;
+
+player addEventHandler ["GetInMan", {
+	params ["_unit", "", "_vehicle", "_turret"];
+	
+	TWC_Suppress_inExposedVehicle = [(configFile >> "CfgVehicles" >> (typeOf _vehicle)), "TWC_isExposedVehicle", false] call BIS_fnc_returnConfigEntry;
+}];
+
+player addEventHandler ["GetOutMan", {
+	params ["_unit", "", "_vehicle", "_turret"];
+	
+	TWC_Suppress_inExposedVehicle = false;
+}];
