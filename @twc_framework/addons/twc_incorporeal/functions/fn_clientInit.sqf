@@ -13,6 +13,9 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 
 // Always block screen on spawn.
 [{ getClientStateNumber > 9 }, {
+	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
+	if (_isPublic) exitWith {};
+	
 	[(_this select 0)] spawn {
 		if (player == (_this select 0)) then {
 			titleCut ["", "BLACK FADED", 999];
@@ -27,6 +30,9 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 	_isDisabled = missionNameSpace getVariable ["TWC_Intro_isDisabled", false];
 	_missionStarted = missionNameSpace getVariable ["TWC_Intro_Started", false];
 	_isDebug = missionNameSpace getVariable ["twc_debugEnabled", false];
+	
+	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
+	if (_isPublic) exitWith {};
 	
 	if (_isDebug) exitWith { systemChat "Skipping intro, due to debug mode..."; };
 	
@@ -43,6 +49,8 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 	private ["_drowned", "_morpOD", "_epiOD", "_CA"];
 	
 	if (player != _unit) exitWith {}; // ignore
+	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
+	if (_isPublic) exitWith {};
 
 	[{
 		params ["_unit"];
@@ -59,6 +67,8 @@ player addEventHandler ["Killed", {
 	// safety check!
 	if (player != _unit) exitWith {};
 	if !(local _unit) exitWith {};
+	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
+	if (_isPublic) exitWith {};
 	
 	554 cutText ["", "BLACK", 0.01, true];
 	["TWC_Dead" + str (0), 0, true] call ace_common_fnc_setHearingCapability;
@@ -86,6 +96,8 @@ player addEventHandler ["Respawn", {
 	params ["_unit"];
 	
 	if (_unit != player) exitWith {};
+	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
+	if (_isPublic) exitWith {};
 	
 	TWC_Death_AlreadyExecuted = false;
 	_unit setVariable ["TWC_Death_Data", [], true];
@@ -96,6 +108,9 @@ player addEventHandler ["Respawn", {
 
 	if (player != _unit) exitWith {};
 	if !(local _unit) exitWith {};
+
+	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
+	if (_isPublic) exitWith {};
 
 	if (TWC_Death_AlreadyExecuted) exitWith {};
 	TWC_Death_AlreadyExecuted = true;
