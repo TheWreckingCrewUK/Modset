@@ -18,6 +18,7 @@ if (_unCon) then {
 		if (_diceRoll > 8) then {
 			// rolled nat 10, get healed'
 			[_unit] call twc_medical_fnc_fullyBandageUnit;
+			_continue = false;
 		};
 	};
 
