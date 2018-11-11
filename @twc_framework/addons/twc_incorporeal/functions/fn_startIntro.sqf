@@ -23,11 +23,11 @@ disableUserInput true;
 
 waitUntil {!(isNil "BIS_fnc_init")};
 // some way of nicely transitioning into the game before group info ??
-_cam = "camera" camCreate (player modelToWorld [0, 2, 5]);
+_cam = "camera" camCreate (player modelToWorld [0, 3, 4]);
 _cam camSetTarget (player modelToWorld [0, 0, 0]);
 _cam cameraEffect ["internal", "back"];
 
-playMusic _song; // play calculated tune
+[_song] spawn { playMusic (_this select 0); }; // play calculated tune
 [] spawn TWC_Incorporeal_fnc_setPlayerUp;
 
 titleText ["<t color='#ffffff' size='3'>The Wrecking Crew</t><br/><t color='#FFFFFF' size='1'>Presents</t>", "PLAIN", -1, true, true];
@@ -43,7 +43,7 @@ _titleText = format [
 [parseText _titleText, [0, 0.3, 1, 1], nil, 5, 5, 0] spawn BIS_fnc_textTiles;
 sleep 10;
 
-titleCut ["", "BLACK IN", 5];
+titleCut ["", "BLACK IN", 10];
 _cam camCommit 5;
 sleep 4;
 

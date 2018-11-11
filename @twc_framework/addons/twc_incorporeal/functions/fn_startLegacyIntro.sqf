@@ -18,7 +18,7 @@ if (isMultiplayer) then {
 		waitUntil {!(isNil "BIS_fnc_init")};
 		params ["_operationName", "_author", "_song"];
 
-		playMusic _song; // play calculated tune
+		[_song] spawn { playMusic (_this select 0); }; // play calculated tune
 
 		[] spawn TWC_Incorporeal_fnc_setPlayerUp;
 

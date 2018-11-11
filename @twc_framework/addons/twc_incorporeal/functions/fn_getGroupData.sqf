@@ -2,7 +2,7 @@ params [["_group", grpNull]];
 
 if (_group isEqualTo grpNull) exitWith {};
 
-_groupName = "Untitled Group";
+_groupName = groupId _group;
 _groupPlayers = [];
 
 {
@@ -17,7 +17,8 @@ _groupPlayers = [];
 		};
 
 		_role = [(configFile >> "CfgVehicles" >> typeOf (_x)), "displayName", "Unknown Role"] call BIS_fnc_returnConfigEntry;
-		_isCommandRole = false; // planned feature
+		_isCommandRoleInt = [(configFile >> "CfgVehicles" >> typeOf (_x)), "TWC_isCommandRole", 0] call BIS_fnc_returnConfigEntry;
+		_isCommandRole = if (_isCommandRoleInt > 0) then { true; } else { false; };
 		_groupPlayers pushBack [_role, _isCommandRole, _x];
 	};
 } forEach units _group;

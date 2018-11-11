@@ -70,7 +70,9 @@ player addEventHandler ["Killed", {
 player addEventHandler ["GetInMan", {
 	params ["_unit", "", "_vehicle", "_turret"];
 	
-	TWC_Suppress_inExposedVehicle = [(configFile >> "CfgVehicles" >> (typeOf _vehicle)), "TWC_isExposedVehicle", false] call BIS_fnc_returnConfigEntry;
+	_returnNum = [(configFile >> "CfgVehicles" >> (typeOf _vehicle)), "TWC_isExposedVehicle", 0] call BIS_fnc_returnConfigEntry;
+	TWC_Suppress_inExposedVehicle = if (_returnNum > 0) then { true; } else { false; };
+	
 }];
 
 player addEventHandler ["GetOutMan", {
