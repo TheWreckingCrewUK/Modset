@@ -7,10 +7,10 @@ params ["_players", "_units", ["_radius", 0]];
 	//_x doSuppressiveFire _player;
 	if (_radius == 0) then {
 		_playerPos = getPosASL _player;
-		["ace_zeus_suppressiveFire", [_x, _playerPos, ""], _x] CBA_fnc_targetEvent;
+		["ace_zeus_suppressiveFire", [_x, _playerPos, ""], _x] call CBA_fnc_targetEvent;
 	} else {
 		_pos = getPosASL ([[[position _player, _radius]], []] call BIS_fnc_randomPos);
-		["ace_zeus_suppressiveFire", [_x, _pos, ""], _x] CBA_fnc_targetEvent;
+		["ace_zeus_suppressiveFire", [_x, _pos, ""], _x] call CBA_fnc_targetEvent;
 	};
 } forEach _units;
 
