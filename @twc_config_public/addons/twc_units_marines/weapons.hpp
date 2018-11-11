@@ -157,8 +157,8 @@ class cfgWeapons
 		};
 	};
 	
-	class rhs_weap_m4a1_d;
-	class twc_rhs_weap_m4a1_d_LDS: rhs_weap_m4a1_d
+	class rhs_weap_m4a1_d_grip2;
+	class twc_rhs_weap_m4a1_d_LDS: rhs_weap_m4a1_d_grip2
 	{
 		class LinkedItems
 		{

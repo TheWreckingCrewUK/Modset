@@ -29,7 +29,7 @@
 		{
 			class _xx_mag
 			{
-				magazine = "rhsgref_30rnd_556x45_m21";
+				magazine = "twc_rhsgref_30rnd_556x45_m21";
 				count = 5;
 			};
 
