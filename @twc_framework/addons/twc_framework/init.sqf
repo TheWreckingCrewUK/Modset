@@ -50,7 +50,7 @@ player addEventHandler ["InventoryOpened",{
 			_ctrl3 ctrlSetText "a3\ui_f\data\GUI\Rsc\RscDisplayGear\ui_gear_secondary_gs.paa";
 		};		
 		
-		uiNamespace setVariable ["twc_uiGun",(twc_weaponOnBack select 0)];		
+		uiNamespace setVariable ["twc_uiGun",(twc_weaponOnBack select 0)];
 		uiNamespace setVariable ["twc_uiGun_old",_ctrl2];
 	};
 }];
@@ -169,6 +169,15 @@ openBoltFnc = {
 	[(missionNameSpace getVariable ["run", 0])] spawn twc_fnc_run;
 	[(missionNameSpace getVariable ["safeZone", 0])] spawn twc_fnc_safeZone;
 	[(missionNameSpace getVariable ["zuesObjects", true])] spawn twc_fnc_zeus;
+
+	_hasWorld = isClass (configFile >> "CfgWorlds" >> worldName);
+	if !(_hasWorld) then {
+		player globalChat "I am missing the required map for this mission.";
+		
+		for [{_i=0}, {_i<5}, {_i=_i+1}] do {
+			systemChat "You are missing the map required for this mission!";
+		};
+	};
 
 	["twc_framework_initComplete", []] call CBA_fnc_localEvent;
 }, [], 1] call CBA_fnc_waitAndExecute;
