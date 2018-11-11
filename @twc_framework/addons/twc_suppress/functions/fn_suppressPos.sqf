@@ -2,10 +2,11 @@ params ["_modulePos", "_units", ["_radius", 0]];
 
 {
 	if (_radius == 0) then {
-		["ace_zeus_suppressiveFire", [_x, (getPosASL _modulePos), ""], _x] CBA_fnc_targetEvent;
+		_modulePos = getPosASL _modulePos;
+		["ace_zeus_suppressiveFire", [_x, _modulePos, ""], _x] CBA_fnc_targetEvent;
 	} else {
-		_pos = [[[position _modulePos, _radius]], []] call BIS_fnc_randomPos;
-		["ace_zeus_suppressiveFire", [_x, (getPosASL _pos), ""], _x] CBA_fnc_targetEvent;
+		_pos = getPosASL ([[[position _modulePos, _radius]], []] call BIS_fnc_randomPos);
+		["ace_zeus_suppressiveFire", [_x, _pos, ""], _x] CBA_fnc_targetEvent;
 	};
 } forEach _units;
 
