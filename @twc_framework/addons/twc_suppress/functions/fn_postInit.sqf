@@ -32,6 +32,14 @@ TWC_Suppress_thresholdHandlerID = [{[] call twc_suppress_fnc_thresholdHandler}, 
 // Disable on spectator.
 player addEventHandler ["Killed", {
 	//params ["_unit", "_killer", "_instigator", "_useEffects"];
+	TWC_Suppress_isSuppressed = false;
+	TWC_Suppress_lastShotTime = 0;
+	TWC_Suppress_threshold = 0;
+	
+	[] call TWC_Suppress_fnc_clearImpactEffect;
+	[] call TWC_Suppress_fnc_clearPinnedEffect;
+	
+	resetCamShake;
 
 	[TWC_Suppress_mainHandlerID] call CBA_fnc_removePerFrameHandler;
 	[TWC_Suppress_pinnedHandlerID] call CBA_fnc_removePerFrameHandler;

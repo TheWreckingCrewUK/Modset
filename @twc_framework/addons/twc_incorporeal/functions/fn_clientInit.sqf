@@ -12,7 +12,13 @@ TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue 
 TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 
 // Always block screen on spawn.
-[{ getClientStateNumber > 9 }, { [] spawn { titleCut ["", "BLACK FADED", 999]; }; }] call CBA_fnc_waitUntilAndExecute;
+[{ getClientStateNumber > 9 }, {
+	[(_this select 0)] spawn {
+		if (player == (_this select 0)) then {
+			titleCut ["", "BLACK FADED", 999];
+		};
+	};
+}, [player]] call CBA_fnc_waitUntilAndExecute;
 
 // Wait until mission module has been initalized.
 ["twc_framework_initComplete", {
