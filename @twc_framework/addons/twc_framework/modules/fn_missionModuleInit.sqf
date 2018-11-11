@@ -16,8 +16,17 @@ missionNameSpace setVariable ["rollSleeves", (_logic getVariable "rollSleeves"),
 missionNameSpace setVariable ["run", (_logic getVariable "run"), true];
 missionNameSpace setVariable ["safeZone", (_logic getVariable "safeZone"), true];
 missionNameSpace setVariable ["zuesObjects", (_logic getVariable "zuesObjects"), true];
+missionNameSpace setVariable ["TWC_Intro_isDisabled", (_logic getVariable "disableIntro"), true];
+missionNameSpace setVariable ["TWC_Intro_specialSong", (_logic getVariable ["specialIntro", ""]), true];
+missionNameSpace setVariable ["TWC_Intro_Started", false, true];
 
 missionNameSpace setVariable ["twcModuleFinished", true, true];
+
+[{ getClientStateNumber > 9 }, {
+	// This measure is used to inform clients whether or not the mission has started.
+	// There needs to be a delay, to account for latency etc.
+	[{ missionNameSpace setVariable ["TWC_Intro_Started", true, true]; }, [], 30] call CBA_fnc_waitAndExecute;
+}] call CBA_fnc_waitUntilAndExecute;
 
 //Runs the server side part of the module.
 [(_logic getVariable "boatSafety")] call twc_fnc_boatSafety;

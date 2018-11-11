@@ -59,20 +59,18 @@ class Extended_InitPost_EventHandlers {
 		};
 		
 		class twc_functionInit {
-			init = "[(_this select 0)] call twc_fnc_init;";
+			init = "_this call twc_fnc_init;";
 		};
 		
 		class twc_AIItemCheckInit {
-			init = "[(_this select 0)] call twc_fnc_confiscateBadItems;";
+			init = "_this call twc_fnc_confiscateBadItems;";
 		};
 	};
 };
 
 #include "cfgAmmo.hpp"
-#include "cfgMagazines.hpp"
-#include "cfgWeapons.hpp"
-#include "cfgVehicles.hpp"
 #include "cfgFunctions.hpp"
-#include "cfgMusic.hpp"
-#include "cfgSounds.hpp"
+#include "cfgMagazines.hpp"
+#include "cfgVehicles.hpp"
 #include "cfgWaypoints.hpp"
+#include "cfgWeapons.hpp"

@@ -39,6 +39,7 @@ class CfgFunctions {
 			class GliderTakeOff {};
 			class confiscateBadItems {};
 			class addToGroup {};
+			class silentSafety {};
 			class init{};
 		};
 		
