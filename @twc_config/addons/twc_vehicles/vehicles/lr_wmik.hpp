@@ -3,6 +3,8 @@ class TWC_BaseClass_LR_WMIK_GMG_Green_Base: UK3CB_BAF_LandRover_WMIK_GMG_FFR_Gre
 	scope = 0;
 	TWC_isExposedVehicle = 1;
 	class AnimationSources;
+	class AcreIntercoms {};
+	class AcreRacks {};
 };
 
 class TWC_BaseClass_LR_WMIK_GMG_Green_F: TWC_BaseClass_LR_WMIK_GMG_Green_Base {
@@ -21,6 +23,8 @@ class TWC_BaseClass_LR_WMIK_GMG_Sand_Base: UK3CB_BAF_LandRover_WMIK_GMG_FFR_Sand
 	scope = 0;
 	TWC_isExposedVehicle = 1;
 	class AnimationSources;
+	class AcreIntercoms {};
+	class AcreRacks {};
 };
 
 class TWC_BaseClass_LR_WMIK_GMG_Sand_F: TWC_BaseClass_LR_WMIK_GMG_Sand_Base {
@@ -39,6 +43,8 @@ class TWC_BaseClass_LR_WMIK_GPMG_Green_Base: UK3CB_BAF_LandRover_WMIK_GPMG_FFR_G
 	scope = 0;
 	TWC_isExposedVehicle = 1;
 	class AnimationSources;
+	class AcreIntercoms {};
+	class AcreRacks {};
 };
 
 class TWC_BaseClass_LR_WMIK_GPMG_Green_F: TWC_BaseClass_LR_WMIK_GPMG_Green_Base {
@@ -57,6 +63,8 @@ class TWC_BaseClass_LR_WMIK_GPMG_Sand_Base: UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Sa
 	scope = 0;
 	TWC_isExposedVehicle = 1;
 	class AnimationSources;
+	class AcreIntercoms {};
+	class AcreRacks {};
 };
 
 class TWC_BaseClass_LR_WMIK_GPMG_Sand_F: TWC_BaseClass_LR_WMIK_GPMG_Sand_Base {
@@ -75,6 +83,8 @@ class TWC_BaseClass_LR_WMIK_HMG_Sand_Base: UK3CB_BAF_LandRover_WMIK_HMG_FFR_Sand
 	scope = 0;
 	TWC_isExposedVehicle = 1;
 	class AnimationSources;
+	class AcreIntercoms {};
+	class AcreRacks {};
 };
 
 class TWC_BaseClass_LR_WMIK_HMG_Sand_F: TWC_BaseClass_LR_WMIK_HMG_Sand_Base {
@@ -93,6 +103,8 @@ class TWC_BaseClass_LR_WMIK_HMG_Green_Base: UK3CB_BAF_LandRover_WMIK_HMG_FFR_Gre
 	scope = 0;
 	TWC_isExposedVehicle = 1;
 	class AnimationSources;
+	class AcreIntercoms {};
+	class AcreRacks {};
 };
 
 class TWC_BaseClass_LR_WMIK_HMG_Green_F: TWC_BaseClass_LR_WMIK_HMG_Green_Base {
