@@ -20,13 +20,13 @@ private _deleted = false;
 				_divisor = IM_DIV;
 				TWC_Suppress_lastShotTime = time;
 				
-				if ((_pPos distance player) <= 4.3) then {
+				if ((_pPos distance player) <= 4.8) then {
 					[] call TWC_Suppress_fnc_impact;
 				};
 			};
 			
 			if (_divisor != 0) then {
-				if (isWeaponDeployed player) then { _hit = (_hit / 2); };
+				if (isWeaponDeployed player) then { _hit = _hit - (_hit / 5); };
 				
 				if ((vehicle player == player) || (isTurnedOut player) || (TWC_Suppress_inExposedVehicle)) then {
 					TWC_Suppress_threshold = (TWC_Suppress_threshold + (_hit/_divisor)) min TWC_Suppress_maxThreshold;
