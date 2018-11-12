@@ -111,6 +111,13 @@ class CfgFunctions {
 			class mortarwalk{};
 		};
 	};
+	class twc_fnc_gunwalk {
+		class functions {
+			tag = "twc_fnc_gunwalk";
+			file = "twc_units_modern\functions";
+			class gunwalk{};
+		};
+	};
 };
 
 #include "compositions.hpp"
