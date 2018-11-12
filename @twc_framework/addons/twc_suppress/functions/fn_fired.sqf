@@ -1,6 +1,6 @@
 params ["_unit", "_weapon", "", "", "_ammo", "", "_projectile"];
 
-if (!(hasInterface) || isDedicated) exitWith
+if (!(hasInterface) || isDedicated) exitWith {};
 if (side _unit == side player) exitWith {}; // don't trigger ourselves
 if (toLower(_weapon) in ["put", "throw"]) exitWith {};
 if ((player distance _unit) >= 1000) exitWith {};
