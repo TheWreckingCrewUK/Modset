@@ -19,6 +19,7 @@ _introData = [] call TWC_Incorporeal_fnc_getIntroData;
 // Calculate time per section for panning shot. Overall time limit is 40 seconds, divided by element count. Min of 4 seconds per group.
 _totalAssetCount = count _introData;
 _panTimePerAsset = (40 / (_totalAssetCount)) max 4;
+// [true] call ace_common_fnc_disableUserInput;
 disableUserInput true;
 
 waitUntil {!(isNil "BIS_fnc_init")};
