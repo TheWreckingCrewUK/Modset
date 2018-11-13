@@ -121,7 +121,7 @@ player addEventHandler ["Respawn", {
 
 	enableRadio true;
 	player disableConversation false;
-	[_deathScreenData] spawn { playSound [(this select 0), true]; }; // false sounds break script scope?
+	[_deathScreenData] spawn { playSound [(_this select 0), true]; }; // false sounds break script scope?
 
 	_deathString = format [
 		"<t color='#FF0000' size='3'>%1 %2</t><br/><t color='#FFFFFF' size='2'>Perished during %3 at T+%4</t><br/><br/><br/><br/>If you believe you died unfairly, disconnect immediately and inform management.",
