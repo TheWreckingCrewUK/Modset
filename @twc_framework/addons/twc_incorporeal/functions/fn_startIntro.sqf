@@ -23,8 +23,8 @@ disableUserInput true;
 
 waitUntil {!(isNil "BIS_fnc_init")};
 // some way of nicely transitioning into the game before group info ??
-_cam = "camera" camCreate (player modelToWorld [0, 3, 4]);
-_cam camSetTarget (player modelToWorld [0, 0, 0]);
+_cam = "camera" camCreate (player modelToWorld [0, 3, 5]);
+_cam camSetTarget (player modelToWorld [0, 0, 1.5]);
 _cam camSetPos (player modelToWorld [0, 2, 1.5]);
 _cam cameraEffect ["internal", "back"];
 
