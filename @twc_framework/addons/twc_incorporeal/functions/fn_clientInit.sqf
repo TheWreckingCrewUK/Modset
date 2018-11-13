@@ -21,7 +21,7 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 			titleCut ["", "BLACK FADED", 999];
 		};
 	};
-}, [player]] call CBA_fnc_waitUntilAndExecute;
+}, [_entity]] call CBA_fnc_waitUntilAndExecute;
 
 // Wait until mission module has been initalized.
 ["twc_framework_initComplete", {

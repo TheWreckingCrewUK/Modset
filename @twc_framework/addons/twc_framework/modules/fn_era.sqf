@@ -16,7 +16,7 @@
 params["_era"];
 
 switch (_era) do {
-	case "Millennial";
+	case "millennial";
 	case "1990": {
 		["TWC_Millennial", [
 			"\twc_framework\ranks\private.paa",

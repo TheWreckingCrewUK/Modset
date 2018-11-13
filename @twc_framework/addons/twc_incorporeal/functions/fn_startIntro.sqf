@@ -59,7 +59,7 @@ sleep 4;
 		_color = "#FFFFFF";
 		if (_x select 1) then { _color = "#ff9933"; };
 
-		_tmpString = "<t color='" + _color + "' size='1' align='left'>" + (_x select 0) + "</t>: " + name (_x select 2) + "<br />";
+		_tmpString = "<t color='" + _color + "' size='1' align='left'>" + (_x select 0) + "</t><t align='left'>: " + name (_x select 2) + "</t><br />";
 		_displayString = _displayString + _tmpString;
 	} forEach _groupUnits;
 	

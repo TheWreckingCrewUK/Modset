@@ -69,7 +69,7 @@ class CfgVehicles {
 					};
 
 					class millennial {
-						name = "millennial";
+						name = "Millennial";
 						value = "millennial";
 					};
 
