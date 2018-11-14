@@ -219,37 +219,36 @@ class CfgVehicles {
 	};
 	
 	class twc_moduelCache: Module_F {
-		author="[TWC] jayman";
-		scope=2;
-		displayName="TWC Cache Module";
-		category="twc_missionSetup";
-		function="twc_fnc_cacheModuleInit";
-		functionPriority=1;
-		isGlobal=0;
-		isTriggerActivated=0;
-		isDisposable=0;
-		class Arguments
-		{
-			class enabled
-			{
-				displayName="Enabled";
-				description="Enable for unit caching";
-				typeName="BOOL";
-				defaultValue=1;
+		author = "[TWC] jayman";
+		scope = 2;
+		displayName = "Cache Configuration";
+		category = "twc_cache_modules";
+		function = "twc_fnc_cacheModuleInit";
+		functionPriority = 1;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+
+		class Arguments {
+			class enabled {
+				displayName = "Enabled";
+				description = "Enable Caching (highly recommended)";
+				typeName = "BOOL";
+				defaultValue = 1;
 			};
-			class aiRange
-			{
-				displayName="AI Range";
-				description="Range at which AI will cache. 0 to disable.";
-				typeName="NUMBER";
-				defaultValue=1500;
+
+			class aiRange {
+				displayName = "AI Range";
+				description = "Range at which AI will cache. 0 to disable.";
+				typeName = "NUMBER";
+				defaultValue = 1500;
 			};
-			class vehicleRange
-			{
-				displayName="Vehicle Caching";
-				description="Range at which vehicles will cache. 0 to disable.";
-				typeName="NUMBER";
-				defaultValue=2000;
+
+			class vehicleRange {
+				displayName = "Vehicle Caching";
+				description = "Range at which vehicles will cache. 0 to disable.";
+				typeName = "NUMBER";
+				defaultValue = 2000;
 			};
 		};
 	};
@@ -1180,7 +1179,7 @@ class CfgVehicles {
 
 	class TWC_Module_DisableCaching: Module_F {
 		author = "[TWC] Bosenator & jayman";
-		category = "twc_mission_framework";
+		category = "twc_cache_modules";
 		displayName = "Disable Caching on Units";
 		function = "twc_fnc_moduleDisableCaching";
 		scope = 2;
@@ -1198,7 +1197,7 @@ class CfgVehicles {
 
 	class TWC_Module_TriggerUncache: Module_F {
 		author = "[TWC] Bosenator & jayman";
-		category = "twc_mission_framework";
+		category = "twc_cache_modules";
 		displayName = "Trigger Unit(s) Uncache";
 		function = "twc_fnc_moduleTriggerUncache";
 		scope = 2;
@@ -1210,6 +1209,25 @@ class CfgVehicles {
 		class Arguments {};
 		class ModuleDescription: ModuleDescription {
 			description = "Disable Cache On Unit(s)";
+			sync[] = {"AnyAI", "AnyVehicle"};
+		};
+	};
+
+	class TWC_Module_SetUrbanUnitsCache: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_cache_modules";
+		displayName = "Set Urban Unit(s)";
+		function = "twc_fnc_moduleSetUrbanUnitsCache";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\disable_caching_ca.paa";
+		functionPriority = 1;
+
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Set Urban Unit(s)";
 			sync[] = {"AnyAI", "AnyVehicle"};
 		};
 	};

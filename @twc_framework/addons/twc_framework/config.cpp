@@ -17,7 +17,8 @@ class CfgPatches {
 			"TWC_Module_VirtualArtillery",
 			"TWC_Module_IntelHint",
 			"TWC_Module_IntelHintWithVariable",
-			"TWC_Module_TriggerUncache"
+			"TWC_Module_TriggerUncache",
+			"TWC_Module_SetUrbanUnitsCache"
 		};
 		
 		weapons[] = {};
@@ -50,6 +51,10 @@ class cfgFactionClasses {
 	
 	class twc_mission_framework: NO_CATEGORY {
 		displayName = "TWC - Mission Framework";
+	};
+	
+	class twc_cache_modules: NO_CATEGORY {
+		displayName = "TWC - Cache Modules";
 	};
 };
 
