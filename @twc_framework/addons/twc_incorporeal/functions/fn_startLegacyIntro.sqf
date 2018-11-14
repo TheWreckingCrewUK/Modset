@@ -1,8 +1,9 @@
-params ["_operationName", "_author", "_operationEra", "_isNightOp"];
+params ["_operationName", "_author", "_operationEra", "_isNightOp", ["_missionStarted", false]];
 
 _song = [_operationEra, _isNightOp] call TWC_Incorporeal_fnc_getIntroSong;
 
-if (serverTime < 600) then {
+// Don't execute this, if the mission has already started!
+if (_missionStarted) then {
 	_index = player createDiarySubject ["loadout", "Loadouts"];
 	[player] remoteExecCall ["twc_fnc_briefingLoadout", (group player)];
 };

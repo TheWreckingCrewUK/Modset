@@ -8,6 +8,7 @@ _isEnabled = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
 if (_isEnabled) exitWith {};
 
 TWC_Death_AlreadyExecuted = false;
+TWC_Death_ExecutionFinished = false;
 TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue ["briefingName", "Untitled"]];
 TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 
@@ -38,7 +39,7 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 	
 	// JIP'd in, don't show the camera stuff.
 	if (_isDisabled || _missionStarted) exitWith {
-		[TWC_Operation_Name, TWC_Operation_Creator, _operationEra, _isNightOp] call TWC_Incorporeal_fnc_startLegacyIntro;
+		[TWC_Operation_Name, TWC_Operation_Creator, _operationEra, _isNightOp, _missionStarted] call TWC_Incorporeal_fnc_startLegacyIntro;
 	};
 
 	[TWC_Operation_Name, TWC_Operation_Creator, _operationEra, _isNightOp] spawn TWC_Incorporeal_fnc_startIntro;
@@ -89,7 +90,11 @@ player addEventHandler ["Killed", {
 		};
 	}, [_unit], 1] call CBA_fnc_waitAndExecute;
 	
-	[{ cutText ["", "BLACK IN", 15, true]; }, [], 60] call CBA_fnc_waitAndExecute;
+	[{
+		if !(TWC_Death_ExecutionFinished) then {
+			cutText ["", "BLACK IN", 15, true];
+		};
+	}, [], 60] call CBA_fnc_waitAndExecute;
 }];
 
 player addEventHandler ["Respawn", {
@@ -142,6 +147,7 @@ player addEventHandler ["Respawn", {
 			554 cutFadeOut 3;
 			555 cutFadeOut 3;
 			cutText ["", "BLACK IN", _duration, true];
+			TWC_Death_ExecutionFinished = true;
 		};
 
 		_duration fadeSpeech 0;

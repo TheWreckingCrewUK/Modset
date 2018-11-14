@@ -2,10 +2,8 @@ params ["_operationName", "_author", "_operationEra", "_isNightOp"];
 
 _song = [_operationEra, _isNightOp] call TWC_Incorporeal_fnc_getIntroSong;
 
-if (serverTime < 600) then {
-	_index = player createDiarySubject ["loadout", "Loadouts"];
-	[player] remoteExecCall ["twc_fnc_briefingLoadout", (group player)];
-};
+_index = player createDiarySubject ["loadout", "Loadouts"];
+[player] remoteExecCall ["twc_fnc_briefingLoadout", (group player)];
 
 if (!isNil "completedTasks") then {
 	{
