@@ -36,7 +36,32 @@ class CfgPatches {
 			"TWC_Item_Medical_SutureKit_17",
 			"TWC_Item_Medical_SutureKit_18",
 			"TWC_Item_Medical_SutureKit_19",
-			"TWC_Item_Medical_SutureKit_20"
+			"TWC_Item_Medical_SutureKit_20",
+			"TWC_Item_Medical_SutureKit_21",
+			"TWC_Item_Medical_SutureKit_22",
+			"TWC_Item_Medical_SutureKit_23",
+			"TWC_Item_Medical_SutureKit_24",
+			"TWC_Item_Medical_SutureKit_25",
+			"TWC_Item_Medical_SurgicalMasks_1",
+			"TWC_Item_Medical_SurgicalMasks_2",
+			"TWC_Item_Medical_SurgicalMasks_3",
+			"TWC_Item_Medical_SurgicalMasks_4",
+			"TWC_Item_Medical_SurgicalMasks_5",
+			"TWC_Item_Medical_SurgicalMasks_6",
+			"TWC_Item_Medical_SurgicalMasks_7",
+			"TWC_Item_Medical_SurgicalMasks_8",
+			"TWC_Item_Medical_SurgicalMasks_9",
+			"TWC_Item_Medical_SurgicalMasks_10",
+			"TWC_Item_Medical_SurgicalMasks_11",
+			"TWC_Item_Medical_SurgicalMasks_12",
+			"TWC_Item_Medical_SurgicalMasks_13",
+			"TWC_Item_Medical_SurgicalMasks_14",
+			"TWC_Item_Medical_SurgicalMasks_15",
+			"TWC_Item_Medical_SurgicalMasks_16",
+			"TWC_Item_Medical_SurgicalMasks_17",
+			"TWC_Item_Medical_SurgicalMasks_18",
+			"TWC_Item_Medical_SurgicalMasks_19",
+			"TWC_Item_Medical_SurgicalMasks_20"
 		};
 	};
 };
