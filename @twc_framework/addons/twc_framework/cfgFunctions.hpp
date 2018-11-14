@@ -41,6 +41,10 @@ class CfgFunctions {
 			class addToGroup {};
 			class silentSafety {};
 			class init{};
+			
+			/** UTILITY FUNCTIONS **/
+			class findGreatestDistanceWithArray {};
+			class findGreatestDistancePairInArray {};
 		};
 		
 		class modules {
