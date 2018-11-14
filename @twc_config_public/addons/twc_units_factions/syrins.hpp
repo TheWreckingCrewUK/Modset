@@ -82,28 +82,6 @@
 		respawnlinkedItems[]= {
 			"twc_lightcarrier_tan"
 		};
-		magazines[]=
-		{
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M"
-		};
-		Respawnmagazines[]=
-		{
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M",
-			"CUP_30Rnd_762x39_AK47_M"
-		};
 	};
 	
 	class syr_twc_ins_Men_rif3: syr_twc_ins_Men_rif1
@@ -209,46 +187,12 @@
 		displayName="Grenadier 2";
 		uniformClass="U_BG_Guerilla2_1";
 		backpack="twc_Backpack_spc_VOG25";
-		weapons[]= {
-			"Throw",
-			"Put",
-			"rhs_weap_akmn_gp25"
-		};
-		respawnweapons[]= {
-			"Throw",
-			"Put",
-			"rhs_weap_akmn_gp25"
-		};
 		linkedItems[]= {
 			"CUP_V_B_Eagle_SPC_Rifleman"
 		};
 		
 		respawnlinkedItems[]= {
 			"CUP_V_B_Eagle_SPC_Rifleman"
-		};
-		magazines[]=
-		{
-			"rhs_VOG25",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm"
-		};
-		Respawnmagazines[]=
-		{
-			"rhs_VOG25",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm"
 		};
 	};
 	
@@ -306,7 +250,7 @@
 		};
 	};
 	
-	class syr_twc_ins_Men_rpgH: syr_twc_ins_Men_rpg1
+	class syr_twc_ins_Men_rpgH: syr_twc_ins_Men_rpgL
 	{
 		displayName="RPG Gunner Heavy";
 		uniformClass="UK3CB_BAF_U_JumperUniform_DPMT";
@@ -475,18 +419,6 @@
 			"H_Shemag_olive",
 			"twc_rhs_6sh92_radio_oli"
 		};
-		magazines[]=
-		{
-			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"
-		};
-		Respawnmagazines[]=
-		{
-			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"
-		};
 	};
+	
+	

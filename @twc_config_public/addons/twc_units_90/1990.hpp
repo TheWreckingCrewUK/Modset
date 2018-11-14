@@ -1147,18 +1147,6 @@
 		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
 		attendant = 1;
 		backpack="TWC_Backpack_1990_Medic_Desert";
-				weapons[]=
-		{
-		"Throw",
-		"UK3CB_BAF_L85A2",
-		"Put"
-		};
-				respawnweapons[]=
-		{
-		"Throw",
-		"UK3CB_BAF_L85A2",
-		"Put"
-		};
 		linkedItems[]=
 		{
 			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
