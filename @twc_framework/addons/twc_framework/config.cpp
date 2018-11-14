@@ -16,7 +16,8 @@ class CfgPatches {
 			"TWC_Module_DisableCaching",
 			"TWC_Module_VirtualArtillery",
 			"TWC_Module_IntelHint",
-			"TWC_Module_IntelHintWithVariable"
+			"TWC_Module_IntelHintWithVariable",
+			"TWC_Module_TriggerUncache"
 		};
 		
 		weapons[] = {};

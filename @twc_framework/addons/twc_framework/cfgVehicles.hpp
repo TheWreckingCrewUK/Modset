@@ -1196,6 +1196,24 @@ class CfgVehicles {
 		};
 	};
 
+	class TWC_Module_TriggerUncache: Module_F {
+		author = "[TWC] Bosenator & jayman";
+		category = "twc_mission_framework";
+		displayName = "Trigger Unit(s) Uncache";
+		function = "twc_fnc_moduleTriggerUncache";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\disable_caching_ca.paa";
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Disable Cache On Unit(s)";
+			sync[] = {"AnyAI", "AnyVehicle"};
+		};
+	};
+
 	class TWC_Module_GrabComposition: Module_F {
 		author = "[TWC] Bosenator";
 		category = "twc_missionSetup";
