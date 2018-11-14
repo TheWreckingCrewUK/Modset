@@ -85,5 +85,21 @@ class ACE_Medical_Actions {
 				{"All", "", {{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}}
 			};
 		};
+		
+		class Surgery: SutureKit {
+			//TODO: Think of something better to call this
+			displayName = "Handover Patient";
+			displayNameProgress = "Handing Over Patient";
+			condition = "twc_medical_fnc_canSurgery";
+			
+			allowedSelections[] = {"body"};
+			treatmentLocations[] = {"MedicalFacility"};
+			requiredMedic = 0; // handled by canSurgery
+			treatmentTime = 1;
+			callbackSuccess = "twc_medical_fnc_surgerySuccess";
+			callbackFailure = "twc_medical_fnc_surgeryFailure";
+			animationCaller = "";
+			litter[] = {};
+		};
 	};
 };
