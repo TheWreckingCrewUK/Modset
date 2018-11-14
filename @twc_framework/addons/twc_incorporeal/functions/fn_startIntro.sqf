@@ -17,8 +17,8 @@ _introData = [] call TWC_Incorporeal_fnc_getIntroData;
 // Calculate time per section for panning shot. Overall time limit is 40 seconds, divided by element count. Min of 4 seconds per group.
 _totalAssetCount = count _introData;
 _panTimePerAsset = (40 / (_totalAssetCount)) max 4;
-// [true] call ace_common_fnc_disableUserInput;
-disableUserInput true;
+[true] call ace_common_fnc_disableUserInput;
+//disableUserInput true;
 
 waitUntil {!(isNil "BIS_fnc_init")};
 // some way of nicely transitioning into the game before group info ??
@@ -85,10 +85,11 @@ _cam = "camera" camCreate (player modelToWorld [0, 2, 5]);
 _cam cameraEffect ["terminate", "back"];
 camDestroy _cam;
 
-// KillZone trick to fix a bug, apparently
+/* // KillZone trick to fix a bug, apparently
 disableUserInput false;
 disableUserInput true;
-disableUserInput false;
+disableUserInput false; */
+[false] call ace_common_fnc_disableUserInput;
 
 "dynamicBlur" ppEffectEnable true;
 "dynamicBlur" ppEffectAdjust [6];
