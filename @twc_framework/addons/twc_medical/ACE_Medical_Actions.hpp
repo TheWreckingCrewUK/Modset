@@ -87,11 +87,11 @@ class ACE_Medical_Actions {
 		};
 
 		/** Field Tent Action. Used to fully heal individuals in a field tent. Limited use. **/
-		class Surgery: SutureKit {
+		class FieldSurgery: SutureKit {
 			displayName = "Field Surgery";
 			displayNameProgress = "Conducting Field Surgery";
 			condition = "twc_medical_fnc_canSurgery";
-			
+			category = "advanced";
 			allowedSelections[] = {"body"};
 			treatmentLocations[] = {"MedicalFacility"};
 			requiredMedic = 2;
@@ -99,7 +99,12 @@ class ACE_Medical_Actions {
 			callbackSuccess = "twc_medical_fnc_surgerySuccess";
 			callbackFailure = "twc_medical_fnc_surgeryFailure";
 			animationCaller = "";
-			litter[] = {};
+			litter[] = {
+				{"All", "", {"ACE_MedicalLitter_gloves"}},
+				{"All", "_bloodLossOnSelection > 0", {{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}},
+				{"All", "_bloodLossOnSelection > 0", {{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}},
+				{"All", "_bloodLossOnSelection <= 0", {"ACE_MedicalLitter_clean"}}
+			};
 		};
 		
 		/** Handover Action. Used to fully heal individuals in a permenant bulding. Limited use (no item requirement, however). **/
@@ -107,7 +112,7 @@ class ACE_Medical_Actions {
 			displayName = "Handover Patient";
 			displayNameProgress = "Handing Over Patient";
 			condition = "twc_medical_fnc_canHandover";
-			
+			category = "advanced";
 			allowedSelections[] = {"body"};
 			treatmentLocations[] = {"MedicalFacility"};
 			requiredMedic = 0; // handled by canHandover
