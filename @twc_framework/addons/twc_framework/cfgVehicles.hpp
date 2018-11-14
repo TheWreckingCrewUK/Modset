@@ -250,6 +250,13 @@ class CfgVehicles {
 				typeName = "NUMBER";
 				defaultValue = 2000;
 			};
+
+			class urbanRange {
+				displayName = "Urban Caching";
+				description = "Range at which urban units will cache. 0 to disable.";
+				typeName = "NUMBER";
+				defaultValue = 750;
+			};
 		};
 	};
 

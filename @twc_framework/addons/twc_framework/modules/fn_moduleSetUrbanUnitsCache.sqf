@@ -16,16 +16,12 @@ params ["_logic", "_units", "_activated"];
 
 if (!_activated || !isServer) exitWith {};
 
-// Wait until PostInit has completed, then execute our function
-{
-	if (_x isKindOf "CAManBase") then {
-		(group _x) setVariable ["twc_cacheDisabled", true, true];
-		[(group _x)] call twc_fnc_unCacheGroup;
-	} else {
-		_x setVariable ["twc_cacheDisabled", true, true];
-		[_x] call twc_fnc_unCacheVehicle;
-	};
-} forEach _units;
+_aiCacheRange = missionNamespace getVarible ["twc_cachingAIRange", 1500];
+_urbanCacheRange = (missionNamespace getVarible ["TWC_Cache_UrbanRange", 750]) min _aiCacheRange;
+
+if (_urbanCacheRange > 0) then {
+	_group setVariable ["TWC_Cache_Range", _urbanCacheRange];
+};
 
 if (!isNull _logic) then {
 	deleteVehicle _logic;

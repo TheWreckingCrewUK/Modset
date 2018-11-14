@@ -1,5 +1,4 @@
-params["_debug", "_vehicle", "_vehicleCacheDistance"];
-sleep 2;
+params ["_debug", "_vehicle", "_vehicleCacheDistance"];
 
 if (isNil {_vehicle getVariable "twc_cacheDisabled"}) then {
 	if (isNil {_vehicle getVariable "twc_isCaching"}) then {

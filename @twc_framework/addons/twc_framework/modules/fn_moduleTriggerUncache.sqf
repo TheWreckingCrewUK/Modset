@@ -16,7 +16,6 @@ params ["_logic", "_units", "_activated"];
 
 if (!_activated || !isServer) exitWith {};
 
-// Wait until PostInit has completed, then execute our function
 {
 	if (_x isKindOf "CAManBase") then {
 		(group _x) setVariable ["twc_cacheDisabled", true, true];
