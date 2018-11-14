@@ -14,14 +14,6 @@ class CfgVehicles {
 							icon = "";
 						};
 						
-						class Surgery: fieldDressing {
-							displayName = "Surgery";
-							condition = "[_player, _target] call twc_medical_fnc_canSurgery";
-							statement = "[_player, _target] call twc_medical_fnc_surgery";
-							exceptions[] = {"isNotDragging", "isNotCarrying", "isNotSwimming"};
-							icon = "";
-						};
-						
 						class Diagnose;
 						class LogDebug: Diagnose {
 							displayName = "Medical to RPT (DEBUG)";

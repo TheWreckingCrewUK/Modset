@@ -30,7 +30,7 @@ class ACE_Medical_Actions {
 			allowedSelections[] = {"body"};
 			condition = "[(_this select 0), (_this select 1)] call twc_medical_fnc_canDefib";
 			allowSelfTreatment = 0;
-			requiredMedic = 1;
+			requiredMedic = 2;
 			treatmentTime = 10;
 			patientStateCondition = 1;
 			callbackSuccess = "twc_medical_fnc_action_Defib";
@@ -72,7 +72,7 @@ class ACE_Medical_Actions {
 			treatmentLocations[] = {"All"};
 			allowedSelections[] = {"All"};
 			allowSelfTreatment = 0;
-			requiredMedic = 1;
+			requiredMedic = 2;
 			treatmentTime = "twc_medical_fnc_sutureKitTime";
 			callbackSuccess = "twc_medical_fnc_sutureKitSuccess";
 			callbackProgress = "twc_medical_fnc_sutureKitProgress";
@@ -85,19 +85,35 @@ class ACE_Medical_Actions {
 				{"All", "", {{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}}
 			};
 		};
-		
+
+		/** Field Tent Action. Used to fully heal individuals in a field tent. Limited use. **/
 		class Surgery: SutureKit {
-			//TODO: Think of something better to call this
-			displayName = "Handover Patient";
-			displayNameProgress = "Handing Over Patient";
+			displayName = "Field Surgery";
+			displayNameProgress = "Conducting Field Surgery";
 			condition = "twc_medical_fnc_canSurgery";
 			
 			allowedSelections[] = {"body"};
 			treatmentLocations[] = {"MedicalFacility"};
-			requiredMedic = 0; // handled by canSurgery
-			treatmentTime = 1;
+			requiredMedic = 2;
+			treatmentTime = 10;
 			callbackSuccess = "twc_medical_fnc_surgerySuccess";
 			callbackFailure = "twc_medical_fnc_surgeryFailure";
+			animationCaller = "";
+			litter[] = {};
+		};
+		
+		/** Handover Action. Used to fully heal individuals in a permenant bulding. Limited use (no item requirement, however). **/
+		class Handover: SutureKit {
+			displayName = "Handover Patient";
+			displayNameProgress = "Handing Over Patient";
+			condition = "twc_medical_fnc_canHandover";
+			
+			allowedSelections[] = {"body"};
+			treatmentLocations[] = {"MedicalFacility"};
+			requiredMedic = 0; // handled by canHandover
+			treatmentTime = 1; // handled on the patients end
+			callbackSuccess = "twc_medical_fnc_handoverSuccess";
+			callbackFailure = "twc_medical_fnc_handoverFailure";
 			animationCaller = "";
 			litter[] = {};
 		};
