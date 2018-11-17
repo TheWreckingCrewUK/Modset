@@ -66,6 +66,7 @@ class CfgPatches {
 			"a3_characters_f_gamma",
 			"rhsusf_vehicles",
 			"rhs_c_weapons",
+			"rhsgref_c_weapons",
 			"rhsusf_c_weapons",
 			"uk3cb_baf_vehicles_landrover",
 			"uk3cb_baf_weapons_smallarms"
