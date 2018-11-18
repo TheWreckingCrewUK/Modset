@@ -40,6 +40,8 @@ class CfgFunctions {
 			class confiscateBadItems {};
 			class addToGroup {};
 			class silentSafety {};
+			class gunwalk {};
+			class mortarwalk {};
 			class init{};
 			
 			/** UTILITY FUNCTIONS **/
