@@ -22,7 +22,9 @@ _urbanRange = missionNamespace getVarible ["TWC_Cache_UrbanRange", 750];
 _urbanCacheRange = _urbanRange min _aiCacheRange;
 
 if (_urbanCacheRange > 0) then {
-	_group setVariable ["TWC_Cache_Range", _urbanCacheRange];
+	{
+		(group _x) setVariable ["TWC_Cache_Range", _urbanCacheRange];
+	} forEach _units;
 };
 
 if (!isNull _logic) then {
