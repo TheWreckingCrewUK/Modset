@@ -1,12 +1,14 @@
 class CfgVehicles {
 	class Man;
 	class CAManBase: Man {
-		class ACE_MainActions {
-			class TWC_AddToGroup {
-				displayName = "Add To Group";
-				condition = "group _target != group _player && { [_player, _target] call twc_fnc_isHigherRank }";
-				statement = "[_target] joinSilent _player"; // can be function in future for notice
-				exceptions[] = {"isNotSwimming"};
+		class ACE_Actions {
+			class ACE_MainActions {
+				class TWC_AddToGroup {
+					displayName = "Add To Group";
+					condition = "group _target != group _player && { [_player, _target] call twc_fnc_isHigherRank }";
+					statement = "[_target] joinSilent _player"; // can be function in future for notice
+					exceptions[] = {"isNotSwimming"};
+				};
 			};
 		};
 	};
