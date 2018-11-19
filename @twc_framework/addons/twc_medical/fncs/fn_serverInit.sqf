@@ -3,6 +3,7 @@
 [] call twc_medical_fnc_bloodlustInit;
 
 GURNEY_BACKLOG = [];
+missionNamespace setVariable ["TWC_Medical_spareGurneys", 20, true]; // 20 available for now
 
 ["twc_medical_server_gurneyUsed", {
 	params ["_caller", "_target"];
