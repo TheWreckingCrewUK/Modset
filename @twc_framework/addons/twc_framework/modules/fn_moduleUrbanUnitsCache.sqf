@@ -1,4 +1,4 @@
-/*
+/**
  * Author: Bosenator
  * Module function to trigger the uncaching of connected unit(s).
  *
@@ -19,11 +19,9 @@ if (!_activated || !isServer) exitWith {};
 _aiCacheRange = missionNamespace getVarible ["twc_cachingAIRange", 1500];
 _urbanRange = missionNamespace getVarible ["TWC_Cache_UrbanRange", 750];
 
-_urbanCacheRange = _urbanRange min _aiCacheRange;
-
-if (_urbanCacheRange > 0) then {
+if (_aiCacheRange > _urbanRange) then {
 	{
-		(group _x) setVariable ["TWC_Cache_Range", _urbanCacheRange];
+		(group _x) setVariable ["TWC_Cache_Range", _urbanCacheRange, true];
 	} forEach _units;
 };
 
