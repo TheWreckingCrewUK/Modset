@@ -18,7 +18,7 @@ class CfgVehicles {
 		class AttributesBase;
 		class ModuleDescription;
 	};
-	
+
 	class Module_F: Module_Base {
 		class AttributesBase: AttributesBase {
 			class Default;
@@ -34,7 +34,7 @@ class CfgVehicles {
 			class Player;
 		};
 	};
-	
+
 	class ModuleCAS_F;
 
 	class twc_ModuleMission: Module_F {

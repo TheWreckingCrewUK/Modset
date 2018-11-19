@@ -28,9 +28,12 @@ class CfgFunctions {
 		tag = "twc_medical";
 		class init {
 			file = "twc_medical\fncs";
+			// Init
+			class init {};
+			class serverInit {};
+			
 			// Generics
 			class addTime {};
-			class init { postInit = 1; };
 			class getBloodVolume {};
 			class extendedVitalLoop {};
 			class logToRPT {};
@@ -62,6 +65,15 @@ class CfgFunctions {
 			class sutureKitFailure {};
 			class removeSutureThread {};
 			class selectSutureWound {};
+
+			// Field Surgery
+			
+
+			// Surgery
+			class canSurgery {};
+			class surgery {};
+			class surgeryLocal {};
+			class surgeryTime {};
 
 			// Bloodlust Compat & Insta-Kill
 			class bloodlustInit {};

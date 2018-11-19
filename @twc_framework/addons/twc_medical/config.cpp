@@ -72,6 +72,11 @@ class Extended_InitPost_EventHandlers {
 			clientInit = "[twc_medical_fnc_extendedVitalLoop, [(_this select 0)], 10] call CBA_fnc_waitAndExecute;";
 		};
 	};
+	
+	class TWC_Medical {
+		clientInit = "[] call twc_medical_fnc_init;";
+		serverInit = "[] call twc_medical_fnc_serverInit;";
+	};
 };
 
 #include "ui\menu.hpp"
