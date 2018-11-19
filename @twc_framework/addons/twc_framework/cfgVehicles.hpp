@@ -1220,11 +1220,11 @@ class CfgVehicles {
 		};
 	};
 
-	class TWC_Module_SetUrbanUnitsCache: Module_F {
+	class TWC_Module_UrbanUnitsCache: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_cache_modules";
 		displayName = "Set Urban Unit(s)";
-		function = "twc_fnc_moduleSetUrbanUnitsCache";
+		function = "twc_fnc_moduleUrbanUnitsCache";
 		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;

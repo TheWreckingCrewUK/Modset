@@ -84,6 +84,7 @@ class CfgFunctions {
 			class moduleIgnoreForwardBase {};
 			class moduleGliderTakeOff {};
 			class moduleTriggerUncache {};
+			class moduleUrbanUnitsCache {};
 		};
 		
 		class cache {
