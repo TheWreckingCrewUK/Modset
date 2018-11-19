@@ -83,6 +83,8 @@ class CfgFunctions {
 			class moduleGrabComposition {};
 			class moduleIgnoreForwardBase {};
 			class moduleGliderTakeOff {};
+			class moduleTriggerUncache {};
+			class moduleUrbanUnitsCache {};
 		};
 		
 		class cache {
