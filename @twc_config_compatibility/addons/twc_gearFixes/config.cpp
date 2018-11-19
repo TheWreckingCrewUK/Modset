@@ -61,8 +61,8 @@ class CfgAmmo {
 		soundHit4[] = {};
 	};
 	
-	class default;
-	class B_IRstrobe: default
+	class IRStrobeBase;
+	class B_IRstrobe: IRStrobeBase
 	{
 		timeToLive=150000;
 	};

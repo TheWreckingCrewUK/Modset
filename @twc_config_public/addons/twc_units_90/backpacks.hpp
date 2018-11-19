@@ -25,6 +25,11 @@ class twc_genbackPack_tan: rhsusf_assault_eagleaiii_ocp
 	displayname = "Miltec Backpack Tan";
 	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
 };
+class twc_genbackPack_oli: rhsusf_assault_eagleaiii_ocp
+{
+	displayname = "Miltec Backpack Olive";
+	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
+};
  
 class B_AssaultPack_dgtl;
 class twc_back_webbing: B_AssaultPack_dgtl

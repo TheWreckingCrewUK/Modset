@@ -106,6 +106,18 @@ class cfgWeapons
 		maxrangeprobab=0.3;
 	};
 	
+	class rhs_weap_panzerfaust60: Launcher_Base_F
+	{
+		displayname = "RPG-76";
+		initSpeed = 745;
+		mass = 2.1;
+	};
+	
+	class rhs_weap_panzerfaust60_used: rhs_weap_panzerfaust60
+	{
+		displayname = "RPG-76 (used)";
+	};
+	
 	class gatling_30mm: CannonCore
 	{
 		class EventHandlers;
@@ -803,6 +815,13 @@ class cfgmagazines{
 			descriptionshort = "Caliber: 5.56x45mm Tracer<br />Rounds: 30";
 			displayName = "5.56mm 30rnd Tracer Mag";
 		};
+		
+		class FakeMagazine;
+		class rhs_panzerfaust60_mag: FakeMagazine
+		{
+			displayname = "RPG-76 Rocket";
+			//ammo = "rhs_rpg7v2_pg7vl";
+		};
 };	
 
 
@@ -818,7 +837,7 @@ class cfgammo
 		timeToLive = 160;
 	};
 	
-		class F_40mm_white;
+	class F_40mm_white;
 	class rhs_40mm_white : F_40mm_white
 	{
 		lightColor[] = {0.75,0.75,0.75,0};
@@ -828,7 +847,7 @@ class cfgammo
 		timeToLive = 160;
 	};
 	
-		class F_40mm_green;
+	class F_40mm_green;
 	class rhs_40mm_green : F_40mm_green
 	{
 		lightColor[] = {0.5,0.75,0.5,0};
@@ -836,6 +855,15 @@ class cfgammo
 		intensity = 1000000;
 		coefgravity = 0.15;
 		timeToLive = 160;
+	};
+	
+	
+	class R_PG32V_F;
+	class rhs_ammo_panzerfaust60_rocket : R_PG32V_F
+	{
+		maxSpeed = 320;
+		thrust = 150;
+		thrustTime = 0.2;
 	};
 	
 };
