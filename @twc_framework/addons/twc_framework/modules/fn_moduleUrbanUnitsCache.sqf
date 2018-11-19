@@ -17,7 +17,9 @@ params ["_logic", "_units", "_activated"];
 if (!_activated || !isServer) exitWith {};
 
 _aiCacheRange = missionNamespace getVarible ["twc_cachingAIRange", 1500];
-_urbanCacheRange = (missionNamespace getVarible ["TWC_Cache_UrbanRange", 750]) min _aiCacheRange;
+_urbanRange = missionNamespace getVarible ["TWC_Cache_UrbanRange", 750];
+
+_urbanCacheRange = _urbanRange min _aiCacheRange;
 
 if (_urbanCacheRange > 0) then {
 	_group setVariable ["TWC_Cache_Range", _urbanCacheRange];
