@@ -147,7 +147,7 @@
 			};
 			class _xx_stanag
 			{
-				magazine = "rhsgref_30rnd_556x45_m21";
+				magazine = "twc_rhsgref_30rnd_556x45_m21";
 				count = 5;
 			};
 			class _xx_m21
