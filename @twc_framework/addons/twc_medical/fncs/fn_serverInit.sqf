@@ -1,11 +1,6 @@
-/** HEADLESS CLIENT & SERVER FIRST - AI SUPPORT **/
-if (hasInterface) exitWith {};
-
+/** HEADLESS CLIENT IS TECHNICALLY "CLIENT" INIT **/
 ["ace_unconscious", {_this call twc_medical_fnc_handleUncon }] call CBA_fnc_addEventHandler;
 [] call twc_medical_fnc_bloodlustInit;
-
-/** SERVER ONLY - PLAYER SYNC & JIP SUPPORT **/
-if (!isDedicated) exitWith {};
 
 GURNEY_BACKLOG = [];
 

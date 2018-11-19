@@ -1,6 +1,9 @@
 ["ace_unconscious", {_this call twc_medical_fnc_handleUncon }] call CBA_fnc_addEventHandler;
 [] call twc_medical_fnc_bloodlustInit;
 
+// Don't progress further if it's a headless client
+if (!hasInterface) exitWith {};
+
 ["twc_medical_evh_gurneyUsed", {
 	params ["_message"];
 
