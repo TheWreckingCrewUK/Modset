@@ -2,7 +2,7 @@
 [] call twc_medical_fnc_bloodlustInit;
 
 // Don't progress further if it's a headless client
-if (!hasInterface) exitWith {};
+if !(hasInterface) exitWith {};
 
 ["twc_medical_evh_gurneyUsed", {
 	params ["_message"];
