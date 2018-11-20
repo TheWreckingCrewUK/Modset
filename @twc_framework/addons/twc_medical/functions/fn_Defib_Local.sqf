@@ -34,16 +34,11 @@ if (_probability < 5) then {
 };
 
 if ( _probability >= _diceRoll ) exitWith {
-	_target setVariable ["ace_medical_inReviveState", false, true];
-	_target setVariable ["ace_medical_inCardiacArrest", false, true];
-	
-	_newHR = floor (random [40, 50, 65]);
-	_target setVariable ["ace_medical_heartRate", _newHR, true];
-	
 	_painToAdd = ((floor (random [0, 3, 5])) / 10); // they're gonna feel this one
 	_target setVariable ["ace_medical_pain", (_painLevel + _painToAdd), true];
 
-	_target setVariable ["ACE_isUnconscious", false, true];
+	_wakeUp = [_caller, _target, false] call twc_medical_fnc_getWakeUp;
+	[_target, [40, 50, 65], false, _wakeUp] call twc_medical_fnc_resuscitate;
 
 	_forceSync = (CBA_missionTime - 60);
 	_target setVariable ["ACE_medical_lastMomentValuesSynced", _forceSync, true];

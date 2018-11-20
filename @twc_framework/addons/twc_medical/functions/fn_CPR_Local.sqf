@@ -39,33 +39,8 @@ if (_probability < 2) then {
 };
 
 if ( _probability >= _diceRoll ) exitWith {
-	_target setVariable ["ace_medical_inReviveState", false, true];
-	_target setVariable ["ace_medical_inCardiacArrest", false, true];
-
-	_target setVariable ["ace_medical_heartRate", (round(random [30, 35, 40])), true];
-
-	// Q  = 19.04761
-	// bV = 60
-	// HR = 40
-	
-	// (60/19.04761) + (40/80-1)
-	// 3.1500 [...] + -0.5
-	// 2.65
-	
-	// (2.65 * 0.229)
-	// bPH = 0.60685 (*100)
-	// (2.65 * 0.1524)
-	// bPL = 0.40386 (*100)
-	
-	if ((_target getVariable ["ace_medical_bloodVolume", 0]) < 60) then {
-		_target setVariable ["ace_medical_bloodVolume", 60, true];
-
-		_bloodPressureH = (0.60685 * _resistance);
-		_bloodPressureL = (0.40386 * _resistance);
-		_target setVariable ["ace_medical_bloodPressure", [_bloodPressureL, _bloodPressureH], true];
-	};
-	
-	_target setVariable ["ACE_isUnconscious", false, true];
+	_wakeUp = [_caller, _target] call twc_medical_fnc_getWakeUp;
+	[_target, [30, 35, 40], true, _wakeUp] call twc_medical_fnc_resuscitate;
 
 	_forceSync = (CBA_missionTime - 60);
 	_target setVariable ["ACE_medical_lastMomentValuesSynced", _forceSync, true];

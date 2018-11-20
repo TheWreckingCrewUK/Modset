@@ -40,6 +40,8 @@ class CfgFunctions {
 			class fullyBandageUnit {};
 			class fullHealWithoutLog {};
 			class isInFieldTent {};
+			class resuscitate {};
+			class getWakeUp {};
 
 			// Uncon Loop
 			class extendedUnconLoop {};
