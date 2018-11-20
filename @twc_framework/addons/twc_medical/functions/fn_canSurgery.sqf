@@ -1,5 +1,8 @@
 params ["_caller", "_target"];
 
+_isInFieldTent = [_caller] call twc_medical_fnc_isInFieldTent;
+if (_isInFieldTent) exitWith { false; }; // field surgery, not staff!
+
 _spareGurney = missionNamespace getVariable ["TWC_Medical_spareGurneys", 0];
 if (_spareGurney <= 0) exitWith { false; };
 
