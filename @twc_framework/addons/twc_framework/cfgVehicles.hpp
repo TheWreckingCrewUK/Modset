@@ -282,32 +282,6 @@ class CfgVehicles {
 			};
 		};
 	};
-
-	class twc_moduleHealPlayer: Module_F {
-		author="[TWC] jayman";
-		category="twc_zeus";
-		scope=1;
-		scopeCurator = 2;
-		functionPriority=1;
-		isGlobal=1;
-		isTriggerActivated=0;
-		function="twc_fnc_healPlayer";
-		curatorCanAttach = 1;
-		displayName = "Heal Player";
-	};
-	
-	class twc_moduleKillPlayer: Module_F {
-		author="[TWC] jayman";
-		category="twc_zeus";
-		scope=1;
-		scopeCurator = 2;
-		functionPriority=1;
-		isGlobal=1;
-		isTriggerActivated=0;
-		function="twc_fnc_killPlayer";
-		curatorCanAttach = 1;
-		displayName = "Kill Player";
-	};
 	
 	class twc_modulesetSpectator: Module_F {
 		author="[TWC] jayman";
@@ -320,19 +294,6 @@ class CfgVehicles {
 		function="twc_fnc_setSpectator";
 		curatorCanAttach = 1;
 		displayName = "Toggle Unit ACRE Spectator";
-	};
-
-	class twc_moduleMedicalInfo: Module_F {
-		author="[TWC] jayman";
-		category="twc_zeus";
-		scope=1;
-		scopeCurator = 2;
-		functionPriority=1;
-		isGlobal=1;
-		isTriggerActivated=0;
-		function="twc_fnc_medicalInfo";
-		curatorCanAttach = 1;
-		displayName = "Hint Unit Medical Info";
 	};
 
 	class TWC_Module_CreateTask: Module_F {

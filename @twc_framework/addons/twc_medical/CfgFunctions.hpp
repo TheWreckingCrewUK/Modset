@@ -92,6 +92,7 @@ class CfgFunctions {
 			
 			class resuscitateUnit {};
 			class fullHealUnit {};
+			class killUnit {};
 			class inspectUnit {};
 			class logUnit {}; // adds the above to RPT
 		};

@@ -18,6 +18,8 @@ missionNamespace setVariable ["TWC_Medical_spareGurneys", 20, true]; // 20 avail
 	["twc_medical_evh_gurneyUsed", [_message]] call CBA_fnc_globalEvent;
 }] call CBA_fnc_addEventHandler;
 
+["twc_medical_evh_fullHeal", { _this call twc_medical_fnc_fullHealWithoutLog; }] call CBA_fnc_addEventHandler;
+
 addMissionEventHandler ["PlayerConnected", {
 	params ["_id", "_uid", "_name", "_jip", "_owner"];
 
