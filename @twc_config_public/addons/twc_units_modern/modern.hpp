@@ -795,8 +795,8 @@
 		displayName="Helicopter Pilot";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
 		backpack="";
-		twc_radioType = "ACRE_PRC343";
-		twc_radioChannel = 5;
+		twc_radioType = "ACRE_PRC148";
+		twc_radioChannel = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -847,7 +847,6 @@
 			"ACE_fieldDressing",
 			"rhsusf_ANPVS_14",
 			"ACE_EarPlugs",
-			"ACRE_PRC343",
 			"ACRE_PRC148",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -865,7 +864,6 @@
 			"ACE_fieldDressing",
 			"rhsusf_ANPVS_14",
 			"ACE_EarPlugs",
-			"ACRE_PRC343",
 			"ACRE_PRC148",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
