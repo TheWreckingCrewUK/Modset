@@ -40,8 +40,29 @@ class Wheeled_APC_F: Car_F {
 				springStrength = 36000;
 			};
 		};
+		
 	};
-
+	
+	class StaticWeapon;
+	class StaticATWeapon: StaticWeapon
+	{
+		class Turrets
+		{
+			class MainTurret;
+		};
+	};
+	
+	class RHS_TOW_TriPod_base: StaticATWeapon
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {"rhs_mag_TOW2A", "rhs_mag_TOW2A", "rhs_mag_TOW2A"};
+			};
+		};
+	};
+	
 	class UK3CB_BAF_LandRover_Base;
 
 	class UK3CB_BAF_LandRover_WMIK_Base: UK3CB_BAF_LandRover_Base {
