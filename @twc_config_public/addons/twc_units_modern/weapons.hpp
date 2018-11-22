@@ -77,12 +77,7 @@ class cfgWeapons
 		};
 	};
 	
-	class Launcher: LauncherCore
-	{
-		class EventHandlers: EventHandlers {
-			fired = "[_this select 6] call twc_fnc_aps;";
-		};
-	};
+	class Launcher;
 	
 	
 	class Launcher_Base_F: Launcher
@@ -660,6 +655,7 @@ class cfgWeapons
 	};
 	
 	class GMG_F;
+		
 	
 	class GMG_20mm: GMG_F
 	{
