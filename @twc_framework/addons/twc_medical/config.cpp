@@ -80,6 +80,7 @@ class Extended_InitPost_EventHandlers {
 };
 
 #include "ui\menu.hpp"
+#include "CfgEden.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgSounds.hpp"
 #include "CfgVehicles.hpp"

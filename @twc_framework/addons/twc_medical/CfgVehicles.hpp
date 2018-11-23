@@ -49,7 +49,7 @@ class CfgVehicles {
 			class Player;
 		};
 	};
-
+	
 	/** EDITOR ONLY MODULES **/
 	class TWC_Module_Medical: Module_F {
 		author = "[TWC] Bosenator";
@@ -136,5 +136,19 @@ class CfgVehicles {
 		function = "twc_medical_fnc_logUnit";
 		curatorCanAttach = 1;
 		displayName = "log Unit (Medically)";
+	};
+	
+	class TWC_Module_setFieldTent: Module_F {
+		author = "[TWC] Bosenator";
+		scope = 1;
+		scopeCurator = 2;
+		displayName = "Set Field Tent";
+		category = "twc_zeus";
+		function = "twc_medical_fnc_setFieldTent";
+		functionPriority = 1;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisplosable = 0;
+		curatorCanAttach = 1;
 	};
 };

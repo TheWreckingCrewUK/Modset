@@ -70,7 +70,10 @@ class CfgFunctions {
 			class selectSutureWound {};
 
 			// Field Surgery
-			
+			class canFieldSurgery {};
+			class fieldSurgery {};
+			class fieldSurgeryLocal {};
+			class fieldSurgeryTime {};
 
 			// Surgery
 			class canSurgery {};
@@ -97,6 +100,7 @@ class CfgFunctions {
 			class killUnit {};
 			class inspectUnit {};
 			class logUnit {}; // adds the above to RPT
+			class setFieldTent {};
 		};
 	};
 };
