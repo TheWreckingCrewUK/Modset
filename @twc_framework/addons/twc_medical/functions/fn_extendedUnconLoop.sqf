@@ -9,6 +9,10 @@ _continue = _unCon;
 
 if (_unCon) then {
 	_unit hideObjectGlobal false;
+	
+	_isForced = (_unit getVariable ["TWC_Medical_forcedUncon", false]);
+	if (_isForced) exitWith {};
+	
 	_bloodVolume = (_unit getVariable ["ace_medical_bloodVolume", 100]);
 	_bloodPressure = [_unit] call ACE_medical_fnc_getBloodPressure;
 	_heartRate = (_unit getVariable ["ace_medical_heartRate", 80]);
