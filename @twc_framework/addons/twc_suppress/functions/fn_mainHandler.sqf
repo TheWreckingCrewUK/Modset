@@ -1,5 +1,5 @@
-#define OH_DIV 22.15
-#define IM_DIV 15.50
+#define OH_DIV 24.15
+#define IM_DIV 17.50
 
 private _deleted = false;
 
@@ -26,7 +26,7 @@ private _deleted = false;
 			};
 			
 			if (_divisor != 0) then {
-				if (isWeaponDeployed player) then { _hit = _hit - (_hit / 5); };
+				if (isWeaponDeployed player) then { _hit = _hit - (_hit / 4); };
 				
 				if ((vehicle player == player) || (isTurnedOut player) || (TWC_Suppress_inExposedVehicle)) then {
 					TWC_Suppress_threshold = (TWC_Suppress_threshold + (_hit/_divisor)) min TWC_Suppress_maxThreshold;
