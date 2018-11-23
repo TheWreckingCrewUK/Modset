@@ -37,9 +37,14 @@
 			<German>%1 handed over the patient to a surgical team</German>
 		</Key>
 		<Key ID="STR_TWC_SURGERY_COMPLETED">
-			<Original>%1 was fully healed by the surgical team</Original>
-			<English>%1 was fully healed by the surgical team</English>
-			<German>%1 was fully healed by the surgical team</German>
+			<Original>%1 was released by the surgical team</Original>
+			<English>%1 was released by the surgical team</English>
+			<German>%1 was released by the surgical team</German>
+		</Key>
+		<Key ID="STR_TWC_FIELDSURGERY_COMPLETED">
+			<Original>%1 was fully cared for by %2</Original>
+			<English>%1 was fully cared for by %2</English>
+			<German>%1 was fully cared for by %2</German>
 		</Key>
 	</Package>
 </Project>

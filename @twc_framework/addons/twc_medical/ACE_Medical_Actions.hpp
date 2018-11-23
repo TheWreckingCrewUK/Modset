@@ -90,15 +90,15 @@ class ACE_Medical_Actions {
 		class FieldSurgery: SutureKit {
 			displayName = "Field Surgery";
 			displayNameProgress = "Conducting Field Surgery";
-			condition = "twc_medical_fnc_canSurgery";
+			condition = "twc_medical_fnc_canFieldSurgery";
 			category = "advanced";
 			allowedSelections[] = {"body"};
 			treatmentLocations[] = {"MedicalFacility"};
 			requiredMedic = 2;
-			treatmentTime = 10;
-			callbackSuccess = "twc_medical_fnc_surgerySuccess";
-			callbackFailure = "twc_medical_fnc_surgeryFailure";
-			animationCaller = "";
+			treatmentTime = "_this call twc_medical_fnc_fieldSurgeryTime";
+			callbackSuccess = "_this call twc_medical_fnc_fieldSurgery";
+			callbackFailure = "";
+			animationCaller = "AinvPknlMstpSnonWnonDnon_medic1";
 			litter[] = {
 				{"All", "", {"ACE_MedicalLitter_gloves"}},
 				{"All", "_bloodLossOnSelection > 0", {{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}},
@@ -111,15 +111,15 @@ class ACE_Medical_Actions {
 		class Handover: SutureKit {
 			displayName = "Handover Patient";
 			displayNameProgress = "Handing Over Patient";
-			condition = "twc_medical_fnc_canHandover";
+			condition = "_this call twc_medical_fnc_canSurgery";
 			category = "advanced";
 			allowedSelections[] = {"body"};
 			treatmentLocations[] = {"MedicalFacility"};
 			requiredMedic = 0; // handled by canHandover
 			treatmentTime = 1; // handled on the patients end
-			callbackSuccess = "twc_medical_fnc_handoverSuccess";
-			callbackFailure = "twc_medical_fnc_handoverFailure";
-			animationCaller = "";
+			callbackSuccess = "_this call twc_medical_fnc_surgery";
+			callbackFailure = "";
+			animationCaller = "AinvPknlMstpSnonWnonDnon_medic1";
 			litter[] = {};
 		};
 	};
