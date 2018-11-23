@@ -14,7 +14,7 @@ _startingLocation = position _target;
 ["twc_medical_server_gurneyUsed", [_caller, _target]] call CBA_fnc_serverEvent;
 
 // TODO: Play sound loop for the duration, and put them in the on back animation
-[[{ ((_this select 0) getVariable ["TWC_Medical_forcedUncon", false]) }]] call ace_medical_fnc_addUnconsciousCondition
+[[{ ((_this select 0) getVariable ["TWC_Medical_forcedUncon", false]) }]] call ace_medical_fnc_addUnconsciousCondition;
 
 // Log them being handed over
 [_target, "activity", localize "STR_TWC_SURGERY_HANDED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
