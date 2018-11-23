@@ -65,8 +65,21 @@ class cfgWeapons
 	
 	
 	
+	class default;
+	class LauncherCore
+	{
+		class eventhandlers;
+	};
+	class MissileLauncher: LauncherCore
+	{
+		class EventHandlers: EventHandlers {
+			fired = "[_this select 6] call twc_fnc_aps;";
+		};
+	};
 	
 	class Launcher;
+	
+	
 	class Launcher_Base_F: Launcher
 	{
 		class EventHandlers;
@@ -105,7 +118,6 @@ class cfgWeapons
 		maxrange=300;
 		maxrangeprobab=0.3;
 	};
-	
 	class rhs_weap_panzerfaust60: Launcher_Base_F
 	{
 		displayname = "RPG-76";
@@ -643,6 +655,7 @@ class cfgWeapons
 	};
 	
 	class GMG_F;
+		
 	
 	class GMG_20mm: GMG_F
 	{
@@ -820,7 +833,7 @@ class cfgmagazines{
 		class rhs_panzerfaust60_mag: FakeMagazine
 		{
 			displayname = "RPG-76 Rocket";
-			//ammo = "rhs_rpg7v2_pg7vl";
+			//ammo = "twc_rpg75_rocket";
 		};
 };	
 
@@ -862,8 +875,6 @@ class cfgammo
 	class rhs_ammo_panzerfaust60_rocket : R_PG32V_F
 	{
 		maxSpeed = 320;
-		thrust = 150;
-		thrustTime = 0.2;
 	};
 	
 };

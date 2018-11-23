@@ -64,6 +64,7 @@ class CfgPatches {
 			"A3_Characters_F",
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
+			"A3_Data_F",
 			"rhsusf_vehicles",
 			"rhs_c_weapons",
 			"rhsgref_c_weapons",
