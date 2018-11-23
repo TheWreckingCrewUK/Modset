@@ -130,6 +130,82 @@ class cfgWeapons
 		displayname = "RPG-76 (used)";
 	};
 	
+	class rhs_weap_nsvt;
+	class rhs_weap_nsvt_effects: rhs_weap_nsvt
+	{
+		class manual;
+	};
+	class rhs_weap_kord: rhs_weap_nsvt_effects
+	{
+		class manual: manual
+		{
+			class standardsound;
+		};
+		class close: manual
+		{
+			class standardsound;
+		};
+		class far: close
+		{
+			class standardsound;
+		};
+		class medium: close
+		{
+			class standardsound;
+		};
+		class short: close
+		{
+			class standardsound;
+		};
+	};
+	
+	class twc_rhs_weap_kord_20: rhs_weap_kord
+	{
+		magazines[] = {"200Rnd_20mm_G_belt"};
+		reloadtime = 1.2;
+		class manual: manual
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class close: close
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class far: far
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class medium: medium
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class short: short
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+				//soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_DSHKM_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+	};
+	
 	class gatling_30mm: CannonCore
 	{
 		class EventHandlers;
