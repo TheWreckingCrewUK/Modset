@@ -887,6 +887,13 @@ class cfgmagazines{
 			descriptionShort = "Caliber: 7.62x54mmR Tracer<br />Rounds: 10<br />Used in: SVD";
 			displayName = "7N1-P 10Rnd SVD Mag";
 		};	
+		
+		class 200Rnd_20mm_G_belt;
+		class twc_200Rnd_20mm_G_belt_1: 200Rnd_20mm_G_belt
+		{
+			ammo = "twc_G_20mm_HE";
+			initSpeed = 550;
+		};
 
 
 		class CA_Magazine;
@@ -909,6 +916,7 @@ class cfgmagazines{
 		class rhs_panzerfaust60_mag: FakeMagazine
 		{
 			displayname = "RPG-76 Rocket";
+			initSpeed = 105;
 			//ammo = "twc_rpg75_rocket";
 		};
 };	
@@ -946,11 +954,19 @@ class cfgammo
 		timeToLive = 160;
 	};
 	
+	class G_20mm_HE;
+	class twc_G_20mm_HE: G_20mm_HE
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",1.1,0.7,250};
+	};
+	
 	
 	class R_PG32V_F;
 	class rhs_ammo_panzerfaust60_rocket : R_PG32V_F
 	{
 		maxSpeed = 320;
+		timeToLive = 60;
+		explosionEffects = "GrenadeExplosion";
 	};
 	
 };

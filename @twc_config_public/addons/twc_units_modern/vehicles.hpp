@@ -40,9 +40,22 @@ class Wheeled_APC_F: Car_F {
 				springStrength = 36000;
 			};
 		};
+		//class Turrets;
 		
 	};
-	
+	/*
+	class rhsusf_m966_w: rhsusf_m1025_w
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+			class TowTurret: MainTurret
+			{
+				magazines[] = {"rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A"};
+			};
+		};
+	};
+	*/
 	class StaticWeapon;
 	class StaticATWeapon: StaticWeapon
 	{
