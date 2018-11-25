@@ -163,6 +163,7 @@ class cfgWeapons
 	{
 		magazines[] = {"200Rnd_20mm_G_belt"};
 		reloadtime = 1.2;
+		displayname = "KORD (20MM)";
 		class manual: manual
 		{
 			reloadtime = 1.2;
@@ -892,7 +893,7 @@ class cfgmagazines{
 		class twc_200Rnd_20mm_G_belt_1: 200Rnd_20mm_G_belt
 		{
 			ammo = "twc_G_20mm_HE";
-			initSpeed = 550;
+			initSpeed = 350;
 		};
 
 

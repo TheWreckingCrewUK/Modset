@@ -144,9 +144,9 @@ openBoltFnc = {
 		_openboltcoef = [(configFile >> "CfgWeapons" >> (primaryweapon player)), "twc_openbolt_coef", 1] call BIS_fnc_returnConfigEntry;
 
 		[{
-
-			[player, primaryweapon player] call ace_overheating_fnc_jamWeapon;
-
+			if (random 1 < 0.5) then {
+				[player, primaryweapon player] call ace_overheating_fnc_jamWeapon;
+			};
 			[] call openBoltFnc;
 		}, [], (random (6000 / _openboltcoef)) + 200] call CBA_fnc_waitAndExecute;
 	} else {
