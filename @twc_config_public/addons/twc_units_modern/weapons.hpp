@@ -130,6 +130,83 @@ class cfgWeapons
 		displayname = "RPG-76 (used)";
 	};
 	
+	class rhs_weap_nsvt;
+	class rhs_weap_nsvt_effects: rhs_weap_nsvt
+	{
+		class manual;
+	};
+	class rhs_weap_kord: rhs_weap_nsvt_effects
+	{
+		class manual: manual
+		{
+			class standardsound;
+		};
+		class close: manual
+		{
+			class standardsound;
+		};
+		class far: close
+		{
+			class standardsound;
+		};
+		class medium: close
+		{
+			class standardsound;
+		};
+		class short: close
+		{
+			class standardsound;
+		};
+	};
+	
+	class twc_rhs_weap_kord_20: rhs_weap_kord
+	{
+		magazines[] = {"200Rnd_20mm_G_belt"};
+		reloadtime = 1.2;
+		displayname = "KORD (20MM)";
+		class manual: manual
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class close: close
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class far: far
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class medium: medium
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class short: short
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+				//soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_DSHKM_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+	};
+	
 	class gatling_30mm: CannonCore
 	{
 		class EventHandlers;
@@ -811,6 +888,13 @@ class cfgmagazines{
 			descriptionShort = "Caliber: 7.62x54mmR Tracer<br />Rounds: 10<br />Used in: SVD";
 			displayName = "7N1-P 10Rnd SVD Mag";
 		};	
+		
+		class 200Rnd_20mm_G_belt;
+		class twc_200Rnd_20mm_G_belt_1: 200Rnd_20mm_G_belt
+		{
+			ammo = "twc_G_20mm_HE";
+			initSpeed = 350;
+		};
 
 
 		class CA_Magazine;
@@ -833,6 +917,7 @@ class cfgmagazines{
 		class rhs_panzerfaust60_mag: FakeMagazine
 		{
 			displayname = "RPG-76 Rocket";
+			initSpeed = 105;
 			//ammo = "twc_rpg75_rocket";
 		};
 };	
@@ -870,11 +955,19 @@ class cfgammo
 		timeToLive = 160;
 	};
 	
+	class G_20mm_HE;
+	class twc_G_20mm_HE: G_20mm_HE
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",1.1,0.7,250};
+	};
+	
 	
 	class R_PG32V_F;
 	class rhs_ammo_panzerfaust60_rocket : R_PG32V_F
 	{
 		maxSpeed = 320;
+		timeToLive = 60;
+		explosionEffects = "GrenadeExplosion";
 	};
 	
 };

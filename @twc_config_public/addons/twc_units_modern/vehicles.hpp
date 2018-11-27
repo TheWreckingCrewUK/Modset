@@ -40,9 +40,22 @@ class Wheeled_APC_F: Car_F {
 				springStrength = 36000;
 			};
 		};
+		//class Turrets;
 		
 	};
-	
+	/*
+	class rhsusf_m966_w: rhsusf_m1025_w
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+			class TowTurret: MainTurret
+			{
+				magazines[] = {"rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A"};
+			};
+		};
+	};
+	*/
 	class StaticWeapon;
 	class StaticATWeapon: StaticWeapon
 	{
@@ -62,6 +75,33 @@ class Wheeled_APC_F: Car_F {
 			};
 		};
 	};
+	class RHS_KORD_Base;
+	class RHS_KORD_high_base: RHS_KORD_Base
+	{
+		class Turrets;
+	};
+	
+	class rhs_KORD_high_VMF: RHS_KORD_high_base
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	
+	class twc_KORD_high_20mm: rhs_KORD_high_VMF
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {"200Rnd_20mm_G_belt", "200Rnd_20mm_G_belt", "200Rnd_20mm_G_belt"};
+				weapons[] = {"twc_rhs_weap_kord_20"};
+			};
+		};
+	};
+	
+	//class rhs_KORD_high_VMF;
 	
 	class UK3CB_BAF_LandRover_Base;
 

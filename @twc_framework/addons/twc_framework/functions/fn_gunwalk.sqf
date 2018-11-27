@@ -54,7 +54,7 @@ _master = _gunner;
 _nataccinit = (10 / (0.5 + (_skill / 2))) * (1 + ((_batterysize) / 30));
 _natacc = ((random _nataccinit) - (_nataccinit / 2));
 _natacc2 = ((random _nataccinit) - (_nataccinit / 2));
-_natacc3 = ((random _nataccinit) - (_nataccinit / 2));
+_natacc3 = ((random _nataccinit) - (_nataccinit / 1.7));
 
 _mod1 = _master getvariable [_twc_mortar_acc1, ((_startdev + (random _natdev)) / _skill) min _natdev];
 _mod2 = _master getvariable [_twc_mortar_acc2, ((_startdev + (random _natdev)) / _skill) min _natdev];
@@ -78,7 +78,13 @@ if (((time - _prev) > _bursttime) && (_master == _gunner)) then {
 	};
 	_gunner setvariable [_twc_mortar_acc1, (_mod1 / (1.2 + (random _learncoef))) * _ranmult];
 	_ranmult = 1;
-	if ((random 1) < 0.2) then {
+	
+	_flipchance = 0.2;
+	
+	if ((_master getvariable [_twc_mortar_acc3, 0]) < 0) then {
+		_flipchance = 0.5;
+	};
+	if ((random 1) < _flipchance) then {
 		_ranmult = -1;
 	};
 	_gunner setvariable [_twc_mortar_acc2, (_mod1 / (1.2 + (random _learncoef))) * _ranmult];
@@ -104,7 +110,7 @@ _gunner setvariable [_twc_mortar_acc3, _mod3];
 
 // if it's more than an hour since last firing, it's too much time and the modifier needs a reset
 
-if ((time - _prev) > 400) then {
+if ((time - _prev) > 200) then {
 	
 	_gunner setvariable [_twc_mortar_acc1, ((_startdev + (random _natdev)) / _skill) min _natdev];
 	_gunner setvariable [_twc_mortar_acc2, ((_startdev + (random _natdev)) / _skill) min _natdev];
@@ -115,5 +121,7 @@ _mod1 = _master getvariable [_twc_mortar_acc1, (((random _natdev) / _skill) min 
 _mod2 = _master getvariable [_twc_mortar_acc2, (((random _natdev) / _skill) min _natdev) max (_natdev * -1)];
 _mod3 = _master getvariable [_twc_mortar_acc3, (((random _natdev) / _skill) min _natdev) max (_natdev * -1)];
 
-_projectile setvelocity [(velocity _projectile select 0) + _natacc + _mod1, (velocity _projectile select 1) + _natacc2 + _mod2, (velocity _projectile select 2) + (_natacc3 / 1) + (_mod3/ 0.5)];
+_speedmod = 1 - (0.5 / (((speed _projectile) + 1) / 800));
+
+_projectile setvelocity [(velocity _projectile select 0) + _natacc + (_mod1 / 0.7), (velocity _projectile select 1) + _natacc2 + (_mod2 / 0.7), (velocity _projectile select 2) + (_natacc3 / 1) + (_mod3/ _speedmod)];
 
