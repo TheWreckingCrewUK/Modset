@@ -29,6 +29,12 @@ _painToAdd = 0.1; // shockingly shocking shocks shockee, ouch
 
 _diceRoll = floor(random 100);
 
+if !(isNull objectParent _caller) then {
+	playSound3D ["twc_medical\sounds\defib.ogg", _caller, false, getPosASL _caller, 20, 1, 10];
+} else {
+	playSound3D ["twc_medical\sounds\defib.ogg", vehicle _caller, true, getPosASL (vehicle _caller), 15, 1, 8];
+};
+
 if (_probability < 5) then {
 	_probability = 5;
 };
