@@ -234,10 +234,12 @@ class CfgWeapons {
 	{
 		class eventhandlers;
 	};
-	
+	//for barrel swapping, put a ACE_SpareBarrel in the player's inventory
 	class UK3CB_BAF_L7A2: Rifle_Long_Base_F {
 		displayname = "L7A2 GPMG";
-
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_dispersion = 1.1;
+		ace_overheating_slowdownFactor = 1.5;
 		recoil = "twc_mg_762";
 		recoilProne = "twc_mg_prone";
 		twc_openbolt = 1;
@@ -251,6 +253,46 @@ class CfgWeapons {
 		class EventHandlers: EventHandlers {
 			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];};twc_gpmglastfired = time;";
 		};
+	};
+	
+	class CUP_lmg_PKM: Rifle_Long_Base_F
+	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_mrbs = 3500;
+		ace_overheating_dispersion = 1.0;
+		ace_overheating_slowdownFactor = 1.5;
+		
+	};
+	
+	class rhs_pkp_base: Rifle_Long_Base_F
+	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_mrbs = 3500;
+		ace_overheating_dispersion = 1.0;
+		ace_overheating_slowdownFactor = 1.5;
+	};
+	
+	class UK3CB_BAF_L110_Base: Rifle_Long_Base_F
+	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_mrbs = 2900;
+		ace_overheating_dispersion = 1.1;
+		ace_overheating_slowdownFactor = 1.2;
+	};
+	
+	class rhs_weap_saw_base: Rifle_Base_F
+	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_mrbs = 2900;
+		ace_overheating_dispersion = 1.1;
+		ace_overheating_slowdownFactor = 1.2;
+	};
+	//rhs m240, because it's called m249 in config which would be confusing
+	class LMG_Mk200_F: Rifle_Base_F
+	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_dispersion = 1.1;
+		ace_overheating_slowdownFactor = 1.5;
 	};
 	
 	class MGunCore;
