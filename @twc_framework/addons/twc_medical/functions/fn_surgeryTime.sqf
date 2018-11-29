@@ -7,4 +7,4 @@ _bloodVolume = [_caller, _target] call twc_medical_fnc_getBloodVolume;
 _openWounds = _target getVariable ['ACE_Medical_openWounds', []];
 _openWoundTime = (count _openWounds) * 20;
 
-(((180 - (120 * _bloodVolume)) / _medic) + _openWoundTime);
+(((((180 - (120 * _bloodVolume)) / _medic) + _openWoundTime) max 0) min 180);

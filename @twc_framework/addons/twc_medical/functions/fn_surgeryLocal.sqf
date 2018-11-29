@@ -19,6 +19,10 @@ _target setUnconscious true;
 
 // play the audio locally, for the patient
 
+// add time to their revive counter, to prevent them from dying during the surgery
+_reviveStartTime = _target getVariable ["ace_medical_reviveStartTime", 0];
+_timeToAdd = _reviveStartTime + 600;
+_target setVariable ["ace_medical_reviveStartTime", _timeToAdd, true];
 
 // Log them being handed over
 [_target, "activity", localize "STR_TWC_SURGERY_HANDED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;

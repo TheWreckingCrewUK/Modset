@@ -73,6 +73,7 @@ class CfgFunctions {
 			class canFieldSurgery {};
 			class fieldSurgery {};
 			class fieldSurgeryLocal {};
+			class fieldSurgeryProgress {};
 			class fieldSurgeryTime {};
 
 			// Surgery
