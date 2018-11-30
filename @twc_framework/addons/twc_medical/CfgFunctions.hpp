@@ -41,6 +41,7 @@ class CfgFunctions {
 			class fullHealWithoutLog {};
 			class isInFieldTent {};
 			class resuscitate {};
+			class removeMedicalItem {};
 			class getWakeUp {};
 
 			// Uncon Loop
@@ -66,7 +67,6 @@ class CfgFunctions {
 			class sutureKitSuccess {};
 			class sutureKitProgress {};
 			class sutureKitFailure {};
-			class removeSutureThread {};
 			class selectSutureWound {};
 
 			// Field Surgery
