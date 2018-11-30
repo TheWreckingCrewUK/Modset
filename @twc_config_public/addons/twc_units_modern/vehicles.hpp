@@ -22,22 +22,7 @@ class Wheeled_APC_F: Car_F {
 			};
 		};
 	};
-	/*
-	class Car: LandVehicle 
-	{};
-	class Car_F: Car
-	{};
-	class MRAP_01_base_F: Car_F
-	{};
-	class rhsusf_hmmwe_base: MRAP_01_base_F
-	{};
-	class rhsusf_m998_w_2dr: rhsusf_hmmwe_base
-	{};
-	class rhsusf_m998_w_4dr: rhsusf_m998_w_2dr
-	{};
-	class rhsusf_m998_w_4dr_halftop: rhsusf_m998_w_4dr
-	{};
-	*/
+	
 	class rhsusf_m998_w_4dr_halftop;
 	class rhsusf_m998_w_4dr_fulltop: rhsusf_m998_w_4dr_halftop {
 		class Wheels {
