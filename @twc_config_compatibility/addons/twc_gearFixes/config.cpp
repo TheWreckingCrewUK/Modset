@@ -90,6 +90,16 @@ class CfgAmmo {
 		caliber = 6;
 		penetrationDirDistribution = 0.05;
 	};
+	class BulletBase;
+	class B_127x99_Ball: BulletBase
+	{
+		class CamShakePlayerFire {
+			distance = 1;
+			duration = 1;
+			frequency = 10;
+			power = 30;
+		};
+	};
 };
 
 class mode_fullauto;
@@ -513,6 +523,7 @@ class cfgRecoils
 
 class CfgVehicles {
 	
+	
 	class Tank;
 	class Tank_F: Tank
 	{
@@ -558,12 +569,17 @@ class CfgVehicles {
 //handling modifications
 	class Car;
 	class Car_F: Car{
+		class turrets;
 		class Wheels {
 			class LF {};
 		};
 	};
 	
 	class UK3CB_BAF_Jackal_Base_D : Car_F {
+		class turrets: turrets
+		{
+			class mainturret;
+		};
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
 		antiRollbarSpeedMin = 5;
@@ -587,7 +603,30 @@ class CfgVehicles {
 		};
 		
 	};
-	class UK3CB_BAF_Coyote_L111A1_Base_D;
+	class UK3CB_BAF_Coyote_L111A1_Base_D: UK3CB_BAF_Jackal_Base_D
+	{
+		class Turrets: Turrets
+		{
+			class L111A1_MainTurret: MainTurret {
+				class viewoptics
+				{
+					initAngleX = 0;
+					initAngleY = 0;
+					initElev = 0;
+					initFov = 0.1;
+					maxAngleX = 30;
+					maxAngleY = 100;
+					maxElev = 40;
+					maxFov = 0.1;
+					minAngleX = -30;
+					minAngleY = -100;
+					minElev = -25;
+					minFov = 0.1;
+					visionMode[] = {"Normal"};
+				};
+			};
+		};
+	};
 	class UK3CB_BAF_Jackal2_L111A1_Base_D: UK3CB_BAF_Coyote_L111A1_Base_D {
 		
 		antiRollbarForceCoef = 20;
@@ -629,6 +668,7 @@ class CfgVehicles {
 		frontBias = 1.5;
 		rearBias = 1.5;
 		centreBias = 1.5;
+		class Turrets;
 		class Wheels:Wheels {
 			class LF:LF {
 				boneName = "wheel_1_1_damper";
@@ -856,6 +896,40 @@ class CfgVehicles {
 		class EventHandlers: EventHandlers {
 			init = "_car = (_this select 0); _car setCenterOfMass [-0.00687825,-0.814309,1.5]";
 			
+		};
+	};
+	
+	
+	class UK3CB_BAF_LandRover_WMIK_Base:UK3CB_BAF_LandRover_Base
+	{
+		class Turrets: Turrets
+		{
+			class mainturret;
+		};
+	};
+	
+	class UK3CB_BAF_LandRover_WMIK_HMG_Base: UK3CB_BAF_LandRover_WMIK_Base
+	{
+		class Turrets: Turrets
+		{
+			class HMG_Turret: MainTurret {
+				class viewoptics
+				{
+					initAngleX = 0;
+					initAngleY = 0;
+					initElev = 0;
+					initFov = 0.1;
+					maxAngleX = 30;
+					maxAngleY = 100;
+					maxElev = 40;
+					maxFov = 0.1;
+					minAngleX = -30;
+					minAngleY = -100;
+					minElev = -25;
+					minFov = 0.1;
+					visionMode[] = {"Normal"};
+				};
+			};
 		};
 	};
 	

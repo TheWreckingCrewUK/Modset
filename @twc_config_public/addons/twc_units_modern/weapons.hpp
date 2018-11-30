@@ -470,6 +470,7 @@ class cfgWeapons
 			};
 		};
 	};
+	
 	class rhs_weap_rsp30_green;
 		class twc_L5A4_green: rhs_weap_rsp30_green
 	{

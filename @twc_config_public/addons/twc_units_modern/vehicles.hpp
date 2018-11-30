@@ -22,7 +22,22 @@ class Wheeled_APC_F: Car_F {
 			};
 		};
 	};
-	
+	/*
+	class Car: LandVehicle 
+	{};
+	class Car_F: Car
+	{};
+	class MRAP_01_base_F: Car_F
+	{};
+	class rhsusf_hmmwe_base: MRAP_01_base_F
+	{};
+	class rhsusf_m998_w_2dr: rhsusf_hmmwe_base
+	{};
+	class rhsusf_m998_w_4dr: rhsusf_m998_w_2dr
+	{};
+	class rhsusf_m998_w_4dr_halftop: rhsusf_m998_w_4dr
+	{};
+	*/
 	class rhsusf_m998_w_4dr_halftop;
 	class rhsusf_m998_w_4dr_fulltop: rhsusf_m998_w_4dr_halftop {
 		class Wheels {
@@ -40,22 +55,22 @@ class Wheeled_APC_F: Car_F {
 				springStrength = 36000;
 			};
 		};
-		//class Turrets;
+		class Turrets;
 		
 	};
-	/*
+	
 	class rhsusf_m966_w: rhsusf_m1025_w
 	{
 		class Turrets: Turrets
 		{
-			class MainTurret;
-			class TowTurret: MainTurret
+			class mainturret;
+			class Tow_Turret: mainturret
 			{
 				magazines[] = {"rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A"};
 			};
 		};
 	};
-	*/
+	
 	class StaticWeapon;
 	class StaticATWeapon: StaticWeapon
 	{
