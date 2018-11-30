@@ -272,14 +272,6 @@ class CfgWeapons {
 		ace_overheating_slowdownFactor = 1.5;
 	};
 	
-	class UK3CB_BAF_L110_Base: Rifle_Long_Base_F
-	{
-		ace_overheating_allowSwapBarrel = 1;
-		ace_overheating_mrbs = 2900;
-		ace_overheating_dispersion = 1.1;
-		ace_overheating_slowdownFactor = 1.2;
-	};
-	
 	class rhs_weap_saw_base: Rifle_Base_F
 	{
 		ace_overheating_allowSwapBarrel = 1;
@@ -406,6 +398,10 @@ class CfgWeapons {
 
 	class UK3CB_BAF_L110_Base:Rifle_Long_Base_F
 	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_mrbs = 2900;
+		ace_overheating_dispersion = 1.1;
+		ace_overheating_slowdownFactor = 1.2;
 		class eventhandlers;
 		twc_openbolt = 1;
 	};
@@ -418,22 +414,6 @@ class CfgWeapons {
 			fired = "if (isnil 'twc_minimilastfired') then {twc_minimilastfired = 0}; if (time > twc_minimilastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];};twc_minimilastfired = time;";
 		};
 	};
-	/*
-	class UK3CB_BAF_L110A2RIS: UK3CB_BAF_L110_556_Base
-	{
-		class FullAuto:FullAuto {
-			dispersion = 0.003;
-		};
-	};
-	
-	class UK3CB_BAF_L110A2: UK3CB_BAF_L110_556_Base
-	{
-		class FullAuto:FullAuto {
-			dispersion = 0.003;
-		};
-	};
-	*/
-	
 	
 	
 	class missiles_titan;
@@ -480,8 +460,8 @@ class cfgRecoils
 	{
 		muzzleOuter[]	= { 0.07,  0.15,  0.02,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
 		kickBack[]	= { 0.03, 0.05 }; //min/max force
-		permanent	= 0.2; //muzzle climb post-recoil, means nothing when on bipod
-		temporary	= 0.05; //muzzle jump
+		permanent	= 0.1; //muzzle climb post-recoil, means nothing when on bipod
+		temporary	= 0.07; //muzzle jump
 	};
 	class twc_mg_556_prone
 	{
