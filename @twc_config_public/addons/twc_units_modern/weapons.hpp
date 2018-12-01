@@ -283,8 +283,8 @@ class cfgWeapons
 	
 	class rhs_weap_m249_pip_L: rhs_weap_lmg_minimi_railed
 	{
-		recoil = "twc_rifle_556";
-		recoilProne = "twc_rifle_556_prone";
+		recoil = "twc_mg_556";
+		recoilProne = "twc_mg_556_prone";
 		class FullAuto:FullAuto {
 			dispersion = 0.003;
 		};
@@ -470,6 +470,7 @@ class cfgWeapons
 			};
 		};
 	};
+	
 	class rhs_weap_rsp30_green;
 		class twc_L5A4_green: rhs_weap_rsp30_green
 	{
