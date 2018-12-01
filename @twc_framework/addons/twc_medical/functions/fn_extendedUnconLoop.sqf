@@ -8,10 +8,13 @@ _unCon = (_unit getVariable ["ACE_isUnconscious", false]);
 _continue = _unCon;
 
 if (_unCon) then {
-	_unit hideObjectGlobal false;
-	
+	//_unit hideObjectGlobal false;
+
 	_isForced = (_unit getVariable ["TWC_Medical_forcedUncon", false]);
-	if (_isForced) exitWith {};
+	// still execute the check again in a second, but skip everything else!
+	if (_isForced) exitWith {
+		[twc_medical_fnc_extendedUnconLoop, [_unit], 1] call CBA_fnc_waitAndExecute;
+	};
 	
 	_bloodVolume = (_unit getVariable ["ace_medical_bloodVolume", 100]);
 	_bloodPressure = [_unit] call ACE_medical_fnc_getBloodPressure;
@@ -25,7 +28,7 @@ if (_unCon) then {
 		_unit setVariable ["ace_medical_heartRate", _heartRate, true];
 		_unit setVariable ["ace_medical_bloodPressure", _bloodPressure, true];
 
-		_unit setVariable ["TWC_Medical_cacheUnitVitals", CBA_missionTime + 3];
+		_unit setVariable ["TWC_Medical_cacheUnitVitals", CBA_missionTime + 2];
 	};
 	
 	_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
@@ -36,8 +39,9 @@ if (_unCon) then {
 			_unit setVariable ["ace_medical_inReviveState", false, true];
 		};
 	};
-
-	if (_bloodVolume <= 20) exitWith {
+	
+	// ACE Medical is less than 30, we need to catch it ahead of that.
+	if (_bloodVolume <= 31) exitWith {
 		["TWC_Unit_Perished", [_unit, "bleed_out"]] call CBA_fnc_globalEvent;
 		[_unit, true, false] call ace_medical_fnc_setDead;
 		_continue = false;
