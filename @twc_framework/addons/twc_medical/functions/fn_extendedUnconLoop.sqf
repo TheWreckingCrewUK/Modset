@@ -18,9 +18,15 @@ if (_unCon) then {
 	_heartRate = (_unit getVariable ["ace_medical_heartRate", 80]);
 	_inReviveState = (_unit getVariable ["ace_medical_inReviveState", false]);
 	
-	// sync every second over the network our diagnosable vitals when uncon, as it's important
-	_unit setVariable ["ace_medical_heartRate", _heartRate, true];
-	_unit setVariable ["ace_medical_bloodPressure", _bloodPressure, true];
+	// sync every three seconds over the network our diagnosable vitals when uncon, as it's important
+	_unitVitalCacheTime = (_unit getVariable ["TWC_Medical_cacheUnitVitals", -9]);
+
+	if (CBA_missionTime > _unitVitalCacheTime) then {
+		_unit setVariable ["ace_medical_heartRate", _heartRate, true];
+		_unit setVariable ["ace_medical_bloodPressure", _bloodPressure, true];
+
+		_unit setVariable ["TWC_Medical_cacheUnitVitals", CBA_missionTime + 3];
+	};
 	
 	_bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 
