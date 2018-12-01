@@ -24,7 +24,7 @@ _baseItemClassWoNumber = (_itemClassArrayDuplicate joinString "_");
 		_itemNewCount = (_itemClassNumber - 1);
 
 		// something went horribly wrong ?
-		if (_itemNewCount < 1) exitWith { "Error: Tried removing item, when one remained. Should have already happened."; };
+		if (_itemNewCount < 1) exitWith { systemChat "Error: Tried removing item, when one remained. Should have already happened."; };
 		_caller removeItem _x;
 
 		_newItem = format ["%1_%2", _baseItemClassWoNumber, _itemNewCount];
