@@ -1022,7 +1022,7 @@ class cfgweapons
 			
 		};
 	};
-	
+	//RHS has crazy firemodes and CUP has crazy inheritance, take your pic
 	class CUP_arifle_AK_Base: Rifle_Base_F
 	{
 		class Single;
