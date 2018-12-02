@@ -1,6 +1,9 @@
 class CfgPatches {
 	class TWC_gearFixes {
-		units[]={};
+		units[]={
+			"twc_B_AAA_System_01_F",
+			"twc_B_AAA_System_01_F_S"
+		};
 		weapons[]={"CUP_launch_RPG7V"};
 		requiredVersion = 1.7;
 
@@ -141,7 +144,7 @@ class CfgWeapons {
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
-			fired = "_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];";
+			fired = "_mult = 1; if (!isserver) then {_mult = 0.5};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];";
 		};
 		scope=2;
 		aiDispersionCoefX=1.03;
@@ -523,6 +526,21 @@ class cfgRecoils
 
 class CfgVehicles {
 	
+	class B_AAA_System_01_F;
+	class twc_B_AAA_System_01_F: B_AAA_System_01_F
+	{
+		shadow = 0;
+		hiddenSelectionsTextures[] = {"",""};
+		displayname = "TWC Base Target";
+	};
+	class twc_B_AAA_System_01_F_S: B_AAA_System_01_F
+	{
+		shadow = 0;
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {""};
+		model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
+		displayname = "TWC Base Target (Small)";
+	};
 	
 	class Tank;
 	class Tank_F: Tank
