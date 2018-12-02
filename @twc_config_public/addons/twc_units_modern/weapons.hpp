@@ -89,7 +89,7 @@ class cfgWeapons
 	{
 		reloadAction = "RHS_GestureReloadRPG7";
 		reloadMagazineSound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final",0.562341,1,50};
-	}
+	};
 	class rhs_weap_rpg7: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
