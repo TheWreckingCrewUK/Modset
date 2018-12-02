@@ -64,6 +64,37 @@ class CfgAmmo {
 		soundHit4[] = {};
 	};
 	
+	
+	class RocketBase;
+	class CUP_R_OG7_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7V_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7VL_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7VM_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7VR_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_RPG18_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",2,0.9,500};
+	};
+	class CUP_R_TBG7V_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	
 	class IRStrobeBase;
 	class B_IRstrobe: IRStrobeBase
 	{

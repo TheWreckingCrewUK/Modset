@@ -85,6 +85,11 @@ class cfgWeapons
 		class EventHandlers;
 	};
 	
+	class CUP_launch_RPG7V: Launcher_Base_F
+	{
+		reloadAction = "RHS_GestureReloadRPG7";
+		reloadMagazineSound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final",0.562341,1,50};
+	}
 	class rhs_weap_rpg7: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
@@ -163,7 +168,7 @@ class cfgWeapons
 	{
 		magazines[] = {"200Rnd_20mm_G_belt"};
 		reloadtime = 1.2;
-		displayname = "KORD (20MM)";
+		displayName = "KORD (20MM)";
 		class manual: manual
 		{
 			reloadtime = 1.2;
@@ -969,6 +974,16 @@ class cfgammo
 		maxSpeed = 320;
 		timeToLive = 60;
 		explosionEffects = "GrenadeExplosion";
+	};
+	
+	class rhs_rpg26_rocket: R_PG32V_F
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",2,0.9,500};
+	};
+	
+	class rhs_ammo_rpgShell_base: R_PG32V_F
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
 	};
 	
 };
