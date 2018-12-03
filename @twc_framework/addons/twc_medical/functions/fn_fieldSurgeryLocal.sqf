@@ -4,15 +4,12 @@ params ["_caller", "_target"];
 _shouldRun = [_caller, _target] call twc_medical_fnc_canFieldSurgery;
 if !(_shouldRun) exitWith {};
 
-// TODO: Consume users Surgical Mask
-// 
-
-// TODO: Play sound loop for the duration, and put them in the on back animation
-
+[_caller, "TWC_Item_Medical_SurgicalMasks_1"] call twc_medical_fnc_removeMedicalItem;
 [_target] call twc_medical_fnc_fullHealWithoutLog;
 
 [
-	_target, "activity",
+	_target,
+	"activity",
 	localize "STR_TWC_FIELDSURGERY_COMPLETED",
 	[
 		[[_target, false, true] call ace_common_fnc_getName],
@@ -21,7 +18,8 @@ if !(_shouldRun) exitWith {};
 ] call ace_medical_fnc_addToLog;
 
 [
-	_target, "activity_view",
+	_target,
+	"activity_view",
 	localize "STR_TWC_FIELDSURGERY_COMPLETED",
 	[
 		[[_target, false, true] call ace_common_fnc_getName],
