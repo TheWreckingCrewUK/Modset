@@ -90,7 +90,7 @@ EM_blacklist_obj = [
 	"Wire",
 	"Fort_RazorWire",
 	"LIB_B_Hedgerows_big",
-	"Land_I44_bwf_6_mlod",
+	"Land_I44_Bwf_6_Mlod",
 	"Land_I44_Buildings_Barbedwire",
 	"Land_I44_Buildings_Barbedwire2",
 	"Land_I44_Buildings_Bush_Long",
@@ -117,9 +117,9 @@ EM_blacklist_obj = [
 	"Land_WW2_Element_C",
 	"Land_WW2_Hemmbalken_1",
 	"Land_I44_HedgeHog",
-	"Land_WW2_wire_3",
-	"Land_WW2_wire_2",
-	"Land_WW2_wire_1",
+	"Land_WW2_Wire_3",
+	"Land_WW2_Wire_2",
+	"Land_WW2_Wire_1",
 	"Land_CSA38_zataras",
 	"Land_CSA38_zatkol2",
 	"Land_CSA38_zataras3",
@@ -134,7 +134,9 @@ EM_blacklist_obj = [
 	"Land_CSA38_zataras4",
 	"Land_fow_Barbedwire",
 	"Land_CSA38_jezci",
-	"Land_WW2_wire_bruno"
+	"Land_WW2_Wire_Bruno",
+	"Land_I44_Buildings_Bunker_AA",
+	"Land_I44_Buildings_CT_Straight"
 ];
 
 openBoltFnc = {
