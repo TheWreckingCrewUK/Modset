@@ -658,10 +658,10 @@ class cfgRecoils
 	};
 	class twc_mg_556_prone
 	{
-		muzzleOuter[]	= { 0.05,  0.1,  0.02,  0.1 };
-		kickBack[]	= { 0.03, 0.05 };
-		permanent	= 0.25;
-		temporary	= 0.1;
+		muzzleOuter[]	= { 0.05,  0.1,  0.02,  0.02 };
+		kickBack[]	= { 0.04, 0.06 };
+		permanent	= 0.1;
+		temporary	= 0.3;
 	};
 	
 	class twc_rifle_762
@@ -690,9 +690,9 @@ class cfgRecoils
  class twc_mg_prone
 	{
 		muzzleOuter[]	= { 0.1,  0.1,  0.5,  0.45 };
-		kickBack[]	= { 0.06, 0.08 };
-		permanent	= 0.4;
-		temporary	= 0.15;
+		kickBack[]	= { 0.02, 0.04 };
+		permanent	= 0.1;
+		temporary	= 0.5;
 	};
 	
 	class twc_shotgun_1
