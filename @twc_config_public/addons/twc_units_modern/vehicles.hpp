@@ -91,6 +91,7 @@ class Wheeled_APC_F: Car_F {
 	
 	class twc_KORD_high_20mm: rhs_KORD_high_VMF
 	{
+		displayName = "KORD (20MM)";
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret

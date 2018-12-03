@@ -97,6 +97,31 @@ class cfgsoundshaders
 			{10,0}
 		};
 	};
+	class jsrs_rocketpods_distance_0m_to_5m_shot_soundshader;
+	class twc_rocketpods_distance_0m_to_5m_shot_soundshader: jsrs_rocketpods_distance_0m_to_5m_shot_soundshader
+	{
+		frequency = 0.5;
+	};
+	class jsrs_rpg7v_distance_5m_to_100m_shot_soundshader;
+	class twc_rpg7v_distance_5m_to_100m_shot_soundshader: jsrs_rpg7v_distance_5m_to_100m_shot_soundshader
+	{
+		samples[]=
+		{
+			
+			{
+				"jsrs_soundmod_snd_weapons\sounds\shot\gm6\close_distance_1.ogg",
+				1
+			}
+		};
+		volume=1.5;
+		rangecurve[]=
+		{
+			{0,0},
+			{5,1.5},
+			{60,0.80000001},
+			{100,0}
+		};
+	};
 	class twc_sniper_silenced_click_soundset
 	{
 		samples[]=
@@ -411,10 +436,18 @@ class cfgsoundsets
 		frequencyrandomizer = 0.5;
 	};
 	
+	
 	class jsrs_kar98k_shot_soundset;
 	class twc_beryl_Shot_Soundset: jsrs_kar98k_shot_soundset
 	{
 		volumefactor = 1.5;
+		frequencyFactor = 0.7;
+	};
+	
+	class jsrs_Rocketpods_shot_soundset;
+	class twc_rpg7v_shot_soundset: jsrs_Rocketpods_shot_soundset
+	{
+		volumefactor = 1.7;
 		frequencyFactor = 0.7;
 	};
 	
@@ -1022,7 +1055,7 @@ class cfgweapons
 			
 		};
 	};
-	
+	//RHS has crazy firemodes and CUP has crazy inheritance, take your pic
 	class CUP_arifle_AK_Base: Rifle_Base_F
 	{
 		class Single;
@@ -1050,6 +1083,166 @@ class cfgweapons
 	};
 	
 	class CUP_arifle_AK74_GL: CUP_arifle_AK_Base
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_AK74M: CUP_arifle_AK_Base
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_AK74M_GL: CUP_arifle_AK_Base
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_AKS_Base: CUP_arifle_AK_Base
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_AKS74: CUP_arifle_AKS_Base
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_AKS74U: CUP_arifle_AKS_Base
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_AK107_Base: CUP_arifle_AK_Base
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_AK107: CUP_arifle_AK107_Base
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {"jsrs_akm_shell_soundset","jsrs_ak74_shot_soundset","jsrs_556mm_echo_soundset","jsrs_5x56mm_reflector_1"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_AK107_GL: CUP_arifle_AK107_Base
 	{
 		
 		class Single:Single {
@@ -1457,8 +1650,8 @@ class cfgweapons
 			class standardsound {
 				soundsetshot[]=
 				{
-					"jsrs_sniper_shake_soundset",
-					"jsrs_rpg7v_shot_soundset",
+					"twc_rocketpods_distance_0m_to_5m_shot_soundshader",
+					"twc_rpg7v_shot_soundset",
 					"jsrs_warhead_reflector_1"
 				};
 			};
@@ -1472,8 +1665,8 @@ class cfgweapons
 			class standardsound {
 				soundsetshot[]=
 				{
-					"jsrs_sniper_shake_soundset",
-					"jsrs_rpg7v_shot_soundset",
+					"twc_rocketpods_distance_0m_to_5m_shot_soundshader",
+					"twc_rpg7v_shot_soundset",
 					"jsrs_warhead_reflector_1"
 				};
 			};

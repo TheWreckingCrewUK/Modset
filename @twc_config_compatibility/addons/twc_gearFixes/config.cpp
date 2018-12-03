@@ -1,6 +1,9 @@
 class CfgPatches {
 	class TWC_gearFixes {
-		units[]={};
+		units[]={
+			"twc_B_AAA_System_01_F",
+			"twc_B_AAA_System_01_F_S"
+		};
 		weapons[]={"CUP_launch_RPG7V"};
 		requiredVersion = 1.7;
 
@@ -59,6 +62,37 @@ class CfgAmmo {
 		soundHit2[] = {};
 		soundHit3[] = {};
 		soundHit4[] = {};
+	};
+	
+	
+	class RocketBase;
+	class CUP_R_OG7_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7V_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7VL_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7VM_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7VR_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_RPG18_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",2,0.9,500};
+	};
+	class CUP_R_TBG7V_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
 	};
 	
 	class IRStrobeBase;
@@ -141,7 +175,7 @@ class CfgWeapons {
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
-			fired = "_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];";
+			fired = "_mult = 1; if (!isserver) then {_mult = 0.5};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];";
 		};
 		scope=2;
 		aiDispersionCoefX=1.03;
@@ -424,13 +458,162 @@ class CfgWeapons {
 			fired = "if (isnil 'twc_minimilastfired') then {twc_minimilastfired = 0}; if (time > twc_minimilastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];};twc_minimilastfired = time;";
 		};
 	};
-	
-	
+
 	class missiles_titan;
 	class UK3CB_BAF_Milan_Launcher: missiles_titan {
 		ace_overpressure_angle = 90;
 		ace_overpressure_range = 40;
 		ace_overpressure_damage = 0.7;
+	};
+
+	class cannon_125mm;
+	class CUP_Vacannon_D10: cannon_125mm
+	{
+		muzzles[] = {"TWC_Muzzle_AP","TWC_Muzzle_HE"};
+		class TWC_Muzzle_AP: cannon_125mm
+		{
+			displayName = "D-10T 100mm AP";
+			descriptionShort = "AP";
+			magazines[] = {CUP_20Rnd_100mmHEAT_D10};
+			
+			nameSound="cannon";
+			cursor = "EmptyCursor";
+			cursorAim = "cannon";
+			cursorSize = 1;
+			class StandardSound
+			{
+				soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
+			};
+			minRange=10;minRangeProbab=0.7;
+			midRange=1800;midRangeProbab=0.7;
+			maxRange=3000;maxRangeProbab=0.1;
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			autoReload = 1;
+			canLock = 0;
+			ballisticsComputer = 2;
+		};
+		class TWC_Muzzle_HE: cannon_125mm
+		{
+			displayName = "D-10T 100mm HE";
+			descriptionShort = "HE";
+			magazines[] = {CUP_15Rnd_100mmHEFRAG_D10};
+
+			nameSound="cannon";
+			cursor = "EmptyCursor";
+			cursorAim = "cannon";
+			cursorSize = 1;
+			class StandardSound
+			{
+				soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
+			};
+			minRange=10;minRangeProbab=0.7;
+			midRange=1800;midRangeProbab=0.7;
+			maxRange=3000;maxRangeProbab=0.1;
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			autoReload = 1;
+			canLock = 0;
+			ballisticsComputer = 2;
+		};
+	};
+	class CUP_Vacannon_D5_T34: cannon_125mm
+	{
+		muzzles[] = {"TWC_Muzzle_AP","TWC_Muzzle_HE"};
+		class TWC_Muzzle_AP: cannon_125mm
+		{
+			displayName = "D-5T 85mm AP";
+			nameSound="cannon";
+			cursor = "EmptyCursor";
+			cursorAim = "cannon";
+			cursorSize = 1;
+			class StandardSound
+			{
+				soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
+			};
+			magazines[] = {CUP_40Rnd_85mmHEAT_D5};
+			minRange=10;minRangeProbab=0.7;
+			midRange=1800;midRangeProbab=0.7;
+			maxRange=3000;maxRangeProbab=0.1;
+			reloadTime = 6;
+			magazineReloadTime = 6;
+			autoReload = 1;
+			canLock = 0;
+			ballisticsComputer = 2;
+		};
+		class TWC_Muzzle_HE: cannon_125mm
+		{
+			displayName = "D-5T 85mm AP";
+			nameSound="cannon";
+			cursor = "EmptyCursor";
+			cursorAim = "cannon";
+			cursorSize = 1;
+			class StandardSound
+			{
+				soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
+			};
+			magazines[] = {CUP_20Rnd_85mmHEFRAG_D5};
+			minRange=10;minRangeProbab=0.7;
+			midRange=1800;midRangeProbab=0.7;
+			maxRange=3000;maxRangeProbab=0.1;
+			reloadTime = 6;
+			magazineReloadTime = 6;
+			autoReload = 1;
+			canLock = 0;
+			ballisticsComputer = 2;
+		};
+	};
+	class CUP_Vcannon_2A46_Txx: cannon_125mm
+	{
+		muzzles[] = {"TWC_Muzzle_APFSDS","TWC_Muzzle_HE","TWC_Muzzle_AT"};
+		class TWC_Muzzle_APFSDS: cannon_125mm
+		{
+			displayName = "2A46 Cannon 125mm APFSDS";
+			magazines[] = {"CUP_22Rnd_2A46_APFSDS_T_M"};
+			canLock=0;
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			autoReload = 0;
+			ballisticsComputer = 16;
+			weaponLockSystem = 0;
+			showaimcursorinternal = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "EmptyCursor";
+			cursoraimon = "EmptyCursor";
+			reloadsound[] = {"CUP\Weapons\CUP_Weapons_VehicleWeapons\2A46\data\sound\Reload_Cannon", 13.16228, 1, 10};
+		};
+		class TWC_Muzzle_HE: cannon_125mm
+		{
+			displayName = "2A46 Cannon 125mm HE";
+			magazines[] = {"CUP_12Rnd_2A46_HE_T_M","CUP_17Rnd_2A46_HE_T_M"};
+			canLock=0;
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			autoReload = 0;
+			ballisticsComputer = 16;
+			weaponLockSystem = 0;
+			showaimcursorinternal = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "EmptyCursor";
+			cursoraimon = "EmptyCursor";
+			reloadsound[] = {"CUP\Weapons\CUP_Weapons_VehicleWeapons\2A46\data\sound\Reload_Cannon", 13.16228, 1, 10};
+		};
+		class TWC_Muzzle_AT: cannon_125mm
+		{
+			displayName = "2A46 Cannon 125mm AT";
+			magazines[] = {"CUP_5Rnd_AT11_M"};
+			canLock=0;
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			autoReload = 0;
+			ballisticsComputer = 16;
+			weaponLockSystem = 0;
+			showaimcursorinternal = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "EmptyCursor";
+			cursoraimon = "EmptyCursor";
+			reloadsound[] = {"CUP\Weapons\CUP_Weapons_VehicleWeapons\2A46\data\sound\Reload_Cannon", 13.16228, 1, 10};
+		};
 	};
 };
 
@@ -523,6 +706,21 @@ class cfgRecoils
 
 class CfgVehicles {
 	
+	class B_AAA_System_01_F;
+	class twc_B_AAA_System_01_F: B_AAA_System_01_F
+	{
+		shadow = 0;
+		hiddenSelectionsTextures[] = {"",""};
+		displayname = "TWC Base Target";
+	};
+	class twc_B_AAA_System_01_F_S: B_AAA_System_01_F
+	{
+		shadow = 0;
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {""};
+		model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
+		displayname = "TWC Base Target (Small)";
+	};
 	
 	class Tank;
 	class Tank_F: Tank
