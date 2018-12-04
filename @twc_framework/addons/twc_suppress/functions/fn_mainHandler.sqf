@@ -1,4 +1,4 @@
-#define OH_DIV 24.15
+#define OH_DIV 25.00
 #define IM_DIV 17.50
 
 private _deleted = false;
@@ -20,7 +20,7 @@ private _deleted = false;
 				_divisor = IM_DIV;
 				TWC_Suppress_lastShotTime = time;
 				
-				if ((_pPos distance player) <= 4.8) then {
+				if ((_pPos distance player) <= 3.8) then {
 					[] call TWC_Suppress_fnc_impact;
 				};
 			};
