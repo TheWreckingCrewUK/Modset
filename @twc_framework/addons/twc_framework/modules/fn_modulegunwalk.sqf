@@ -16,22 +16,25 @@ params ["_logic", "_units", "_activated"];
 
 if (!_activated || !isServer) exitWith {systemchat "failed init";};
 
-// Wait until PostInit has completed, then execute our function
-[{
-	params ["_units"];
-	{
-		if (((vehicle _x) getvariable ["twc_isgwalking", 0]) == 0) then {
-			(vehicle _x) addEventHandler ["Fired", {
-				if (((vehicle (_this select 0)) getvariable ["twc_isgwalking", 0]) == 1) then {
-					[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;
-				};
-			}];
-			(vehicle _x) setvariable ["twc_haswalked", 1, true];
-			(vehicle _x) setvariable ["twc_isgwalking", 1, true];
-		};
-	} forEach _units;
-}, [_units], 0.05] call CBA_fnc_waitAndExecute;
 
+[_units] spawn {
+	waituntil {!isnil "twc_walkinitcomplete"};
+	params ["_units"];
+
+	// Wait until PostInit has completed, then execute our function
+	[{
+		params ["_units"];
+		{
+			if (((vehicle _x) getvariable ["twc_isgwalking", 0]) == 0) then {
+				
+				//systemchat "gun init";
+				["twc_addcbagwalk", [_x], (vehicle _x)] call CBA_fnc_targetEvent;
+				(vehicle _x) setvariable ["twc_haswalked", 1, true];
+				(vehicle _x) setvariable ["twc_isgwalking", 1, true];
+			};
+		} forEach _units;
+	}, [_units], 0.05] call CBA_fnc_waitAndExecute;
+};
 
 if (!isNull _logic) then {
 	deleteVehicle _logic;

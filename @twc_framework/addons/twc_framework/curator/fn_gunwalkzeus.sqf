@@ -43,18 +43,8 @@ if((_mouseOver select 0) != "OBJECT") then{
 				(vehicle _unit) setvariable ["twc_isgwalking", 1, true];
 				
 				["Mortar System Activated"] call ace_zeus_fnc_showMessage;
-				twc_addwalkevent_gun = {
-					params ["_unit"];
-					(vehicle _unit) addEventHandler ["Fired", {
-						_unit = _this select 0;
-						if (((vehicle _unit) getvariable ["twc_isgwalking", 0]) == 1) then {
-							
-							[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;; 
-						};
-					}];
-				};
 				
-				[_unit] remoteexec ["twc_addwalkevent_gun", 2];
+				["twc_addcbagwalk", [_unit], (vehicle _unit)] call CBA_fnc_targetEvent;
 				
 			};
 			

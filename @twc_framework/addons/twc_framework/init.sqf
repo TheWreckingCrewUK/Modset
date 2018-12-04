@@ -198,6 +198,30 @@ twc_fnc_togglemortarwalk = {
 	};
 };
 
+["twc_addcbagwalk", {
+	params ["_x"];
+	(vehicle _x) addEventHandler ["Fired", {
+		if (((vehicle (_this select 0)) getvariable ["twc_isgwalking", 0]) == 1) then {
+			[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;
+		};
+	}];
+}] call CBA_fnc_addEventHandler;
+
+["twc_addcbamwalk", {
+	params ["_x"];
+	(vehicle _x) addEventHandler ["Fired", {
+		if (((vehicle (_this select 0)) getvariable ["twc_ismwalking", 0]) == 1) then {
+			[_this select 6, _this select 7] call twc_fnc_mortarwalk; 
+		};
+	}];
+}] call CBA_fnc_addEventHandler;
+
+[] spawn {
+	sleep 1;
+	twc_walkinitcomplete = 1;
+	publicVariable "twc_walkinitcomplete";
+};
+
 [{
 	if (isNil {missionNameSpace getVariable "twcModuleEnabled"}) exitWith {
 		systemChat "TWC Mission Module wasn't placed down, or enabled.";
