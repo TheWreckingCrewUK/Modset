@@ -335,6 +335,32 @@ class CfgVehicles {
 		displayName = "Hint Unit Medical Info";
 	};
 
+	class twc_modulegunwalkzeus: Module_F {
+		author="[TWC] Hobbs";
+		category="twc_zeus";
+		scope=1;
+		scopeCurator = 2;
+		functionPriority=1;
+		isGlobal=1;
+		isTriggerActivated=0;
+		function="twc_fnc_gunwalkzeus";
+		curatorCanAttach = 1;
+		displayName = "Activate AI Heavy Gun System";
+	};
+
+	class twc_modulemortarwalkzeus: Module_F {
+		author="[TWC] Hobbs";
+		category="twc_zeus";
+		scope=1;
+		scopeCurator = 2;
+		functionPriority=1;
+		isGlobal=1;
+		isTriggerActivated=0;
+		function="twc_fnc_mortarwalkzeus";
+		curatorCanAttach = 1;
+		displayName = "Activate AI Artillery System";
+	};
+
 	class TWC_Module_CreateTask: Module_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
@@ -1270,6 +1296,46 @@ class CfgVehicles {
 		class ModuleDescription: ModuleDescription {
 			description = "Make unit ignore the Forward Base";
 			sync[] = {"AnyAI"};
+		};
+	};
+	
+	class TWC_Module_gunwalking: Module_F {
+		author = "[TWC] Hobbs";
+		category = "twc_missionSetup";
+		displayName = "Enable AI Heavy Weapon System";
+		function = "twc_fnc_modulegunwalk";
+		scope = 2;
+		scopeCurator = 2;
+		curatorCanAttach = 1;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\ignore_foward_base_ca.paa";
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Activate advanced AI learning for synced static weapons, tanks, attack helicopters and other heavy assets";
+			sync[] = {"AnyAI", "AnyVehicle"};
+		};
+	};
+	
+	class TWC_Module_mortarwalking: Module_F {
+		author = "[TWC] Hobbs";
+		category = "twc_missionSetup";
+		displayName = "Enable AI Artillery System";
+		function = "twc_fnc_modulemortarwalk";
+		scope = 2;
+		scopeCurator = 2;
+		curatorCanAttach = 1;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\ignore_foward_base_ca.paa";
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Activate advanced AI learning for synced mortars and other indirect fire pieces";
+			sync[] = {"AnyAI", "AnyVehicle"};
 		};
 	};
 

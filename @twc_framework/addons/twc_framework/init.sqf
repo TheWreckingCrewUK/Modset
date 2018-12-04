@@ -158,6 +158,46 @@ openBoltFnc = {
 
 [] call openBoltFnc;
 
+twc_fnc_togglegunwalk = {
+
+	params ["_unit", "_set"];
+
+	if (!_activated || !isServer) exitWith {};
+
+	// Wait until PostInit has completed, then execute our function
+	[{
+		params ["_unit", "_set"];
+		
+			(vehicle _unit) setvariable ["twc_isgwalking", _set, true];
+		
+	}, [_unit, _set], 0.05] call CBA_fnc_waitAndExecute;
+
+
+	if (!isNull _logic) then {
+		deleteVehicle _logic;
+	};
+};
+
+twc_fnc_togglemortarwalk = {
+
+	params ["_unit", "_set"];
+
+	if (!_activated || !isServer) exitWith {};
+
+	// Wait until PostInit has completed, then execute our function
+	[{
+		params ["_unit", "_set"];
+		
+			(vehicle _unit) setvariable ["twc_ismwalking", _set, true];
+		
+	}, [_unit, _set], 0.05] call CBA_fnc_waitAndExecute;
+
+
+	if (!isNull _logic) then {
+		deleteVehicle _logic;
+	};
+};
+
 [{
 	if (isNil {missionNameSpace getVariable "twcModuleEnabled"}) exitWith {
 		systemChat "TWC Mission Module wasn't placed down, or enabled.";

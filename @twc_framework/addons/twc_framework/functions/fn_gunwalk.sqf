@@ -1,5 +1,7 @@
 params [["_weapon", ""], "_projectile", "_gunner"];
 
+if ((typeof _projectile) iskindof ["MissileCore", configFile >> "CfgAmmo"]) exitwith {};
+//systemchat "gun";
 _prev = _gunner getvariable ["twc_mortar_lastfired", 0]; 
 //systemchat format ["%1", _gunner];
 _gunner setvariable ["twc_mortar_lastfired", time]; 
@@ -51,7 +53,15 @@ _master = _gunner;
 
 //if (_master == _gunner) then {systemchat "I am the captain of my soul";};
 
-_nataccinit = (10 / (0.5 + (_skill / 2))) * (1 + ((_batterysize) / 30));
+_nataccmult = 1;
+
+//exempting the 20mm grenade because an insurgency weapon uses it and needs to be inaccurate
+if (!((typeof _projectile) == "G_20mm_HE")) then {
+	if (_weapon iskindof ["Mgun", configFile >> "CfgWeapons"]) then {
+		_nataccmult = 0.3;
+	};
+};
+_nataccinit = ((10 / (0.5 + (_skill / 2))) * (1 + ((_batterysize) / 30))) * _nataccmult;
 _natacc = ((random _nataccinit) - (_nataccinit / 2));
 _natacc2 = ((random _nataccinit) - (_nataccinit / 2));
 _natacc3 = ((random _nataccinit) - (_nataccinit / 1.7));

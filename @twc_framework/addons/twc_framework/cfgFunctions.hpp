@@ -85,6 +85,8 @@ class CfgFunctions {
 			class moduleGliderTakeOff {};
 			class moduleTriggerUncache {};
 			class moduleUrbanUnitsCache {};
+			class modulegunwalk {};
+			class modulemortarwalk {};
 		};
 		
 		class cache {
@@ -115,6 +117,8 @@ class CfgFunctions {
 			class setSpectator {};
 			class medicalInfo {};
 			class toggleCon {};
+			class gunwalkzeus {};
+			class mortarwalkzeus {};
 		};
 
 		class artillery {

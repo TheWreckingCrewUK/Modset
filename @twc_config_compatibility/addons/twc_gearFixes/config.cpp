@@ -16,6 +16,7 @@ class CfgPatches {
 			"cup_trackedvehicles_mcv80",
 			"uk3cb_baf_vehicles_landrover",
 			"uk3cb_baf_vehicles_coyote_jackal",
+			"UK3CB_BAF_Equipment_Backpacks",
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds"
@@ -720,6 +721,14 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {""};
 		model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
 		displayname = "TWC Base Target (Small)";
+	};
+	
+	class UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A;
+	class TWC_BAF_B_Bergen_OLI_Rifleman_XL_A: UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A
+	{
+		displayname = "Bergen XL (Olive)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_us.rvmat"};
 	};
 	
 	class Tank;
