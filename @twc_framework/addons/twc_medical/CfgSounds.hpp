@@ -10,4 +10,10 @@ class CfgSounds {
 		sound[] = {"\twc_medical\sounds\defib.ogg", 3, 1};
 		titles[] = {};
 	};
+	
+	class TWC_Sound_Medical_Surgery {
+		name = "TWC_Sound_Medical_Surgery";
+		sound[] = {"\twc_medical\sounds\surgery.ogg", 3, 1};
+		titles[] = {};
+	};
 };

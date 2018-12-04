@@ -18,6 +18,7 @@ _startingLocation = position _target;
 _target setUnconscious true;
 
 // play the audio locally, for the patient
+playSound "TWC_Sound_Medical_Surgery";
 
 // add time to their revive counter, to prevent them from dying during the surgery
 _reviveStartTime = _target getVariable ["ace_medical_reviveStartTime", 0];
@@ -30,6 +31,10 @@ _target setVariable ["ace_medical_reviveStartTime", _timeToAdd, true];
 
 [{
 	params ["_caller", "_target", "_startingLocation"];
+	
+	// stop the sound, regardless of circumstance
+	_sound = ASLToAGL [0,0,0] nearestObject "#soundonvehicle";
+	deleteVehicle _sound;
 	
 	if (((position _target) distance _startingLocation) >= 50) exitWith {
 		// DEAD. LOL.
