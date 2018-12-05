@@ -197,7 +197,7 @@ twc_fnc_togglemortarwalk = {
 		deleteVehicle _logic;
 	};
 };
-
+/*
 ["twc_addcbagwalk", {
 	params ["_x"];
 	(vehicle _x) addEventHandler ["Fired", {
@@ -215,6 +215,24 @@ twc_fnc_togglemortarwalk = {
 		};
 	}];
 }] call CBA_fnc_addEventHandler;
+*/
+twc_addgunwalkevent = {
+	params ["_x"];
+	(vehicle _x) addEventHandler ["Fired", {
+		if (((vehicle (_this select 0)) getvariable ["twc_isgwalking", 0]) == 1) then {
+			[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;
+		};
+	}];
+};
+
+twc_addmortarwalkevent = {
+	params ["_x"];
+	(vehicle _x) addEventHandler ["Fired", {
+		if (((vehicle (_this select 0)) getvariable ["twc_ismwalking", 0]) == 1) then {
+			[_this select 6, _this select 7] call twc_fnc_mortarwalk; 
+		};
+	}];
+};
 
 [] spawn {
 	sleep 1;

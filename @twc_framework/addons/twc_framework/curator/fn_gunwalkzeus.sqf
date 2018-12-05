@@ -44,8 +44,8 @@ if((_mouseOver select 0) != "OBJECT") then{
 				
 				["Mortar System Activated"] call ace_zeus_fnc_showMessage;
 				
-				["twc_addcbagwalk", [_unit], (vehicle _unit)] call CBA_fnc_targetEvent;
-				
+				//["twc_addcbagwalk", [_unit], (vehicle _unit)] call CBA_fnc_targetEvent;
+				[_unit] call twc_addgunwalkevent;
 			};
 			
 			

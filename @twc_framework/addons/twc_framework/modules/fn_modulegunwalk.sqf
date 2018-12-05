@@ -28,7 +28,8 @@ if (!_activated || !isServer) exitWith {systemchat "failed init";};
 			if (((vehicle _x) getvariable ["twc_isgwalking", 0]) == 0) then {
 				
 				//systemchat "gun init";
-				["twc_addcbagwalk", [_x], (vehicle _x)] call CBA_fnc_targetEvent;
+				//["twc_addcbagwalk", [_x], (vehicle _x)] call CBA_fnc_targetEvent;
+				[_x] call twc_addgunwalkevent;
 				(vehicle _x) setvariable ["twc_haswalked", 1, true];
 				(vehicle _x) setvariable ["twc_isgwalking", 1, true];
 			};

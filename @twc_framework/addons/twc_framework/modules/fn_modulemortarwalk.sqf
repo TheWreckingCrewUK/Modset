@@ -28,7 +28,8 @@ if (!_activated || !isServer) exitWith {};
 		{
 			if (((vehicle _x) getvariable ["twc_ismwalking", 0]) == 0) then {
 				//systemchat "mortar init";
-				["twc_addcbamwalk", [_x], (vehicle _x)] call CBA_fnc_targetEvent;
+				//["twc_addcbamwalk", [_x], (vehicle _x)] call CBA_fnc_targetEvent;
+				[_x] call twc_addmortarwalkevent;
 				(vehicle _x) setvariable ["twc_haswalked", 1, true];
 				(vehicle _x) setvariable ["twc_ismwalking", 1, true];
 			};

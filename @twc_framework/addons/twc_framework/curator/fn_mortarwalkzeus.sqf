@@ -43,7 +43,8 @@ if((_mouseOver select 0) != "OBJECT") then{
 				(vehicle _unit) setvariable ["twc_ismwalking", 1, true];
 				
 				["Mortar System Activated"] call ace_zeus_fnc_showMessage;
-				["twc_addcbamwalk", [_unit], (vehicle _unit)] call CBA_fnc_targetEvent;
+				//["twc_addcbamwalk", [_unit], (vehicle _unit)] call CBA_fnc_targetEvent;
+				[_unit] call twc_addmortarwalkevent;
 				
 			};
 			
