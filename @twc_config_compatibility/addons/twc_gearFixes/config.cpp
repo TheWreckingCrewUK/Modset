@@ -30,19 +30,6 @@ class CfgPatches {
 	};
 };
 
-class CfgMagazines {
-	class 6Rnd_30mm_L21A1_APDS;
-	class ukcw_3rd_L21A1_APDS: 6Rnd_30mm_L21A1_APDS
-	{
-		count = 3;
-	};
-	class 6Rnd_30mm_L21A1_HE;
-	class ukcw_3rd_L21A1_HE: 6Rnd_30mm_L21A1_HE
-	{
-		count = 3;
-	};
-};
-
 class CfgAmmo {
 	class GrenadeHand;
 	class GrenadeHand_stone: GrenadeHand
