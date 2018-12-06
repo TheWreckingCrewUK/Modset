@@ -7,7 +7,7 @@ if !(hasInterface) exitWith {};
 ["twc_medical_evh_gurneyUsed", {
 	params ["_message"];
 
-	player createDiaryRecord ["Medical", ["Surgery", _message]];}
+	player createDiaryRecord ["Medical", ["Surgery", _message]];
 }] call CBA_fnc_addEventHandler;
 
 ["twc_medical_evh_fullHeal", { _this call twc_medical_fnc_fullHealWithoutLog; }] call CBA_fnc_addEventHandler;
