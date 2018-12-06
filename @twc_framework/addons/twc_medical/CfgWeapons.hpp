@@ -86,6 +86,8 @@ class CfgWeapons {
 		displayName = "Surgical Masks (1 Mask)";
 		descriptionShort = "One surgical mask remaining, consumed on use";
 		descriptionUse = "One surgical mask remaining, consumed on use";
+		picture = "\twc_medical\UI\surgical_mask.paa";
+		icon = "iconObject_circle";
 	};
 	
 	#define ADD_SURGICAL_MASK(NUMBER) class TWC_Item_Medical_SurgicalMasks_##NUMBER : TWC_Item_Medical_SurgicalMasks_1 { \
