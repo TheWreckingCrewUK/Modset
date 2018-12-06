@@ -25,8 +25,12 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_small_oli_co.paa","rhsusf\addons\rhsusf_infantry\gear\backpacks\data\falconii_rgr_co.paa"};
 	};
 		
+	class CUP_Vest_TK_Camo_Base;
 	
-	class CUP_V_O_TK_Vest_1;
+	class CUP_V_O_TK_Vest_1: CUP_Vest_TK_Camo_Base
+	{
+		hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
+	};
 	class twc_lightcarrier_tan: CUP_V_O_TK_Vest_1
 	{
 		displayName = "MilTec Light Carrier (Tan)";

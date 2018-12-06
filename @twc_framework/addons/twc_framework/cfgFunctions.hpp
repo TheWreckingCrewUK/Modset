@@ -43,6 +43,7 @@ class CfgFunctions {
 			class gunwalk {};
 			class mortarwalk {};
 			class init{};
+			class canAddToGroup {};
 			
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
@@ -85,6 +86,8 @@ class CfgFunctions {
 			class moduleGliderTakeOff {};
 			class moduleTriggerUncache {};
 			class moduleUrbanUnitsCache {};
+			class modulegunwalk {};
+			class modulemortarwalk {};
 		};
 		
 		class cache {

@@ -11,7 +11,7 @@ _prevdevmod = (_gunner getvariable ["twc_mortar_error_prev", 1]) + 0.01;
 
 _startdev = 10 * _devmod;
 _natdev = 10 * _devmod;
-
+//systemchat "mortar";
 
 if (!(_devmod == _prevdevmod)) then {
 

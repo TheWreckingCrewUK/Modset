@@ -16,6 +16,7 @@ class CfgPatches {
 			"cup_trackedvehicles_mcv80",
 			"uk3cb_baf_vehicles_landrover",
 			"uk3cb_baf_vehicles_coyote_jackal",
+			"UK3CB_BAF_Equipment_Backpacks",
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds"
@@ -26,19 +27,6 @@ class CfgPatches {
 		version="1";
 		versionStr="1";
 		versionAr[]={1};
-	};
-};
-
-class CfgMagazines {
-	class 6Rnd_30mm_L21A1_APDS;
-	class 3Rnd_30mm_L21A1_APDS: 6Rnd_30mm_L21A1_APDS
-	{
-		count = 3;
-	};
-	class 6Rnd_30mm_L21A1_HE;
-	class 3Rnd_30mm_L21A1_HE: 6Rnd_30mm_L21A1_HE
-	{
-		count = 3;
 	};
 };
 
@@ -361,12 +349,6 @@ class CfgWeapons {
 	};
 	class autocannon_30mm_CTWS: autocannon_Base_F {
 	};
-	class L21A1_RARDEN: autocannon_Base_F {
-		magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE"};
-		magazineReloadTime = 1;
-		ReloadTime = 0.3;
-		autoReload = 0;
-	};
 	
 	class autocannon_40mm_CTWS: autocannon_Base_F
 	{
@@ -376,14 +358,14 @@ class CfgWeapons {
 	
 	class CUP_Rarden_CTWS_veh: autocannon_40mm_CTWS
 	{
-		magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE"};
+		magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE"};
 		magazineReloadTime = 1;
 		muzzles[] = {"HE"};
 		ReloadTime = 0.3;
 		autoReload = 0;
 		class HE: HE
 		{
-			magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE"};
+			magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE"};
 			magazineReloadTime = 1;
 			ReloadTime = 0.3;
 			autoReload = 0;
@@ -658,10 +640,10 @@ class cfgRecoils
 	};
 	class twc_mg_556_prone
 	{
-		muzzleOuter[]	= { 0.05,  0.1,  0.02,  0.1 };
-		kickBack[]	= { 0.03, 0.05 };
-		permanent	= 0.25;
-		temporary	= 0.1;
+		muzzleOuter[]	= { 0.05,  0.1,  0.02,  0.02 };
+		kickBack[]	= { 0.04, 0.06 };
+		permanent	= 0.1;
+		temporary	= 0.3;
 	};
 	
 	class twc_rifle_762
@@ -690,9 +672,9 @@ class cfgRecoils
  class twc_mg_prone
 	{
 		muzzleOuter[]	= { 0.1,  0.1,  0.5,  0.45 };
-		kickBack[]	= { 0.06, 0.08 };
-		permanent	= 0.4;
-		temporary	= 0.15;
+		kickBack[]	= { 0.02, 0.04 };
+		permanent	= 0.1;
+		temporary	= 0.5;
 	};
 	
 	class twc_shotgun_1
@@ -722,6 +704,14 @@ class CfgVehicles {
 		displayname = "TWC Base Target (Small)";
 	};
 	
+	class UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A;
+	class TWC_BAF_B_Bergen_OLI_Rifleman_XL_A: UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A
+	{
+		displayname = "Bergen XL (Olive)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_us.rvmat"};
+	};
+	
 	class Tank;
 	class Tank_F: Tank
 	{
@@ -737,23 +727,20 @@ class CfgVehicles {
 		{
 			class MainTurret : MainTurret
 			{
-				magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+				magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
 			};
 		};
 	};
 	
-	class ukcw_cvrt_Scim_base : Tank_F
-	{
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
-			};
-		};
-	};
 	class Helicopter_Base_H;
-	class CUP_CH47F_base;
+	class CUP_CH47F_base: Helicopter_Base_H
+	{
+		backRotorForceCoef = 0.9;
+		cyclicForwardForceCoef = 1.5;
+		cyclicAsideForceCoef = 1.3;
+		bodyFrictionCoef = 1.4;
+		armorStructural = 20;
+	};
 
 //handling modifications
 	class Car;

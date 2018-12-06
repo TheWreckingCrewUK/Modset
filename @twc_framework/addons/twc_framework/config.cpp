@@ -8,6 +8,8 @@ class CfgPatches {
 			"twc_moduleKillPlayer",
 			"twc_moduleSetSpectator",
 			"twc_moduleMedicalInfo",
+			"twc_modulegunwalkzeus",
+			"twc_modulemortarwalkzeus",
 			"TWC_Module_CommandMessage",
 			"TWC_Module_StationaryUnits",
 			"TWC_Module_MovableUnits",

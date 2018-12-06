@@ -436,6 +436,11 @@ class cfgsoundsets
 		frequencyrandomizer = 0.5;
 	};
 	
+	class twc_L86_Shot_Soundset: twc_L85_Shot_Soundset
+	{
+		frequencyFactor = 0.8;
+	};
+	
 	
 	class jsrs_kar98k_shot_soundset;
 	class twc_beryl_Shot_Soundset: jsrs_kar98k_shot_soundset
@@ -727,6 +732,20 @@ class cfgweapons
 		class FullAuto:FullAuto {
 			class standardsound {
 				soundSetShot[] = {"twc_L85_closure_soundshader","twc_L85_Shot_Soundset"};
+			};			
+		};
+	};
+	
+	class UK3CB_BAF_L86A2: UK3CB_BAF_L85A2
+	{
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {"twc_L85_closure_soundshader","twc_L86_Shot_Soundset"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {"twc_L85_closure_soundshader","twc_L86_Shot_Soundset"};
 			};			
 		};
 	};
