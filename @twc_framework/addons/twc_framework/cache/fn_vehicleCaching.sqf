@@ -1,4 +1,4 @@
-params ["_debug", "_vehicle", "_vehicleCacheDistance"];
+params ["_debug", "_vehicle", ["_vehicleCacheDistance", 1500]];
 
 sleep 2;
 
