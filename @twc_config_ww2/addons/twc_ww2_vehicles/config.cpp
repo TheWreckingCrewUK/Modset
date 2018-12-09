@@ -21,6 +21,36 @@ class CfgPatches
 		};
 	};
 };
+class CfgWeapons
+{
+	class HMG_M2;
+	class Bomb_04_Plane_CAS_01_F;
+	class GMG_20mm;
+	
+	//Spitfire CAS Module Compatibility
+	class 4xBrowning_303: HMG_M2 {
+		cursor = "EmptyCursor";
+		cursoraim = "mg";
+	};
+	class hispano_mkII_20mm: GMG_20mm {
+		cursor = "EmptyCursor";
+		cursoraim = "mg";
+	};
+	class 7Y_Bomblauncher: Bomb_04_Plane_CAS_01_F {
+		cursor = "EmptyCursor";
+		cursorAim = "bomb";
+	};
+	
+	//P-47 CAS Module Compatibility
+	class LIB_PlaneMGun_base;
+	class RocketPods;
+	class LIB_8xM2_P47: LIB_PlaneMGun_base {
+		cursoraim = "mg";
+	};
+	class LIB_M8_Launcher_P47: RocketPods {
+		cursorAim = "missile";
+	};
+};
 class CfgVehicles
 {
 	class LIB_MKI_HADRIAN;
@@ -68,33 +98,33 @@ class CfgVehicles
 			class CargoTurret_02;
 			class CargoTurret_03;
 			class Turret_1;
-			class Turret_2;			
+			class Turret_2;
 		};
 	};
 	class TWC_Willys_MB: LIB_US_Willys_MB
 	{
 		faction = "twc_faction_independent";
-        ace_cargo_size = 10;
-        ace_cargo_canLoad = 1;	
+		ace_cargo_size = 10;
+		ace_cargo_canLoad = 1;	
 	};
 	class TWC_UniversalCarrier: fow_v_universalCarrier
 	{
 		faction = "twc_faction_independent";
-        ace_cargo_size = 14;
-        ace_cargo_canLoad = 1;
+		ace_cargo_size = 14;
+		ace_cargo_canLoad = 1;
 		class Turrets: Turrets
 		{
 			class CargoTurret_01: CargoTurret_01
 			{
-				gunnerCompartments = "Compartment1";			
+				gunnerCompartments = "Compartment1";
 			};
 			class CargoTurret_02: CargoTurret_02
 			{
-				gunnerCompartments = "Compartment1";			
+				gunnerCompartments = "Compartment1";
 			};
 			class CargoTurret_03: CargoTurret_03
 			{
-				gunnerCompartments = "Compartment1";			
+				gunnerCompartments = "Compartment1";
 			};
 			class Turret_1: Turret_1 {};
 			class Turret_2: Turret_2 {};

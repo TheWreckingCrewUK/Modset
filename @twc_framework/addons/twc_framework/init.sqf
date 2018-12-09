@@ -217,8 +217,8 @@ twc_fnc_togglemortarwalk = {
 }] call CBA_fnc_addEventHandler;
 */
 twc_addgunwalkevent = {
-	params ["_x"];
-	(vehicle _x) addEventHandler ["Fired", {
+	params ["_unit"];
+	(vehicle _unit) addEventHandler ["Fired", {
 		if (((vehicle (_this select 0)) getvariable ["twc_isgwalking", 0]) == 1) then {
 			[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;
 		};
@@ -226,8 +226,8 @@ twc_addgunwalkevent = {
 };
 
 twc_addmortarwalkevent = {
-	params ["_x"];
-	(vehicle _x) addEventHandler ["Fired", {
+	params ["_unit"];
+	(vehicle _unit) addEventHandler ["Fired", {
 		if (((vehicle (_this select 0)) getvariable ["twc_ismwalking", 0]) == 1) then {
 			[_this select 6, _this select 7] call twc_fnc_mortarwalk; 
 		};

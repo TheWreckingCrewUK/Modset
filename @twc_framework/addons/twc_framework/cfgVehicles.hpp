@@ -898,8 +898,7 @@ class CfgVehicles {
 		};
 	};
 	
-	class TWC_Module_Amient_AttackPlane: ModuleCAS_F
-	{
+	class TWC_Module_Amient_AttackPlane: ModuleCAS_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
 		displayName = "Ambient Attack Plane";
@@ -947,11 +946,11 @@ class CfgVehicles {
 				displayName = "Plane";
 				class values
 				{
-					/*class Spitfire
+					class Spitfire
 					{
-						name = "Spitfire";
+						name = "Spitfire (UK)";
 						value = "spitfire_v_G";
-					}; Todo after the spitfire gets fixed.*/
+					};
 					class Hellcat_US
 					{
 						name = "Hellcat (US)";
@@ -961,6 +960,11 @@ class CfgVehicles {
 					{
 						name = "Hellcat (UK)";
 						value = "fow_va_f6f_c_faa";
+					};
+					class P47
+					{
+						name = "P-47 (US)";
+						value = "LIB_P47";
 					};
 				};
 			};
