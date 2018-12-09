@@ -1,5 +1,5 @@
 #define OH_DIV 25.00
-#define IM_DIV 17.50
+#define IM_DIV 16.50
 
 private _deleted = false;
 
