@@ -17,6 +17,7 @@ if ((_mouseOver select 0) != "OBJECT") then {
 		} else {
 			if (!(_unit getVariable ["TWC_Medical_isFieldTent", false])) then {
 				_unit setVariable ["TWC_Medical_isFieldTent", true, true];
+				_unit setVariable ["ace_medical_isMedicalFacility", true, true];
 			};
 		};
 	};

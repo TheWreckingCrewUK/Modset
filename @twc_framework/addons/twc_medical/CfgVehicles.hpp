@@ -72,6 +72,32 @@ class CfgVehicles {
 		};
 	};
 	
+	class TWC_Module_AssignFieldTent: Module_F {
+		author = "[TWC] Bosenator";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "TWC Medical Configuration";
+		category = "twc_missionSetup";
+		function = "twc_medical_fnc_moduleAssignFieldTent";
+		functionPriority = 10;
+		isGlobal = 2;
+		isTriggerActivated = 0;
+		isDisplosable = 0;
+		
+		class Arguments {
+			class enabled {
+				displayName = "Set as Field Tent";
+				description = "Set as Field Tent";
+				typeName = "BOOL";
+			};
+		};
+		
+		class ModuleDescription {
+			description = "Object(s) to set as Field Tent";
+			sync[] = {};
+		};
+	};
+	
 	/** ZEUS/CURATOR ONLY MODULES **/
 	class TWC_Curator_fullHealUnit: Module_F {
 		author = "[TWC] Bosenator";
@@ -138,7 +164,7 @@ class CfgVehicles {
 		displayName = "log Unit (Medically)";
 	};
 	
-	class TWC_Module_setFieldTent: Module_F {
+	class TWC_Curator_setFieldTent: Module_F {
 		author = "[TWC] Bosenator";
 		scope = 1;
 		scopeCurator = 2;
