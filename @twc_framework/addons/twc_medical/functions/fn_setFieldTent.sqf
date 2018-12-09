@@ -15,8 +15,8 @@ if ((_mouseOver select 0) != "OBJECT") then {
 		if !(alive _unit) then {
 			["Don't be shit. That building is destroyed."] call ace_zeus_fnc_showMessage;
 		} else {
-			if (!(_unit getVariable setVariable ["TWC_Medical_isFieldTent", false])) then {
-				_unit setVariable setVariable ["TWC_Medical_isFieldTent", true, true];
+			if (!(_unit getVariable ["TWC_Medical_isFieldTent", false])) then {
+				_unit setVariable ["TWC_Medical_isFieldTent", true, true];
 			};
 		};
 	};
