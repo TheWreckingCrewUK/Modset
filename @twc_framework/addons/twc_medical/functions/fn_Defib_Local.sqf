@@ -29,21 +29,22 @@ _painToAdd = 0.1; // shockingly shocking shocks shockee, ouch
 
 _diceRoll = floor(random 100);
 
+if !(isNull objectParent _caller) then {
+	playSound3D ["twc_medical\sounds\defib.ogg", _caller, false, getPosASL _caller, 20, 1, 10];
+} else {
+	playSound3D ["twc_medical\sounds\defib.ogg", vehicle _caller, true, getPosASL (vehicle _caller), 15, 1, 8];
+};
+
 if (_probability < 5) then {
 	_probability = 5;
 };
 
 if ( _probability >= _diceRoll ) exitWith {
-	_target setVariable ["ace_medical_inReviveState", false, true];
-	_target setVariable ["ace_medical_inCardiacArrest", false, true];
-	
-	_newHR = floor (random [40, 50, 65]);
-	_target setVariable ["ace_medical_heartRate", _newHR, true];
-	
 	_painToAdd = ((floor (random [0, 3, 5])) / 10); // they're gonna feel this one
 	_target setVariable ["ace_medical_pain", (_painLevel + _painToAdd), true];
 
-	_target setVariable ["ACE_isUnconscious", false, true];
+	_wakeUp = [_caller, _target, false] call twc_medical_fnc_getWakeUp;
+	[_target, [40, 50, 65], false, _wakeUp] call twc_medical_fnc_resuscitate;
 
 	_forceSync = (CBA_missionTime - 60);
 	_target setVariable ["ACE_medical_lastMomentValuesSynced", _forceSync, true];
@@ -56,7 +57,7 @@ if ( _probability >= _diceRoll ) exitWith {
 
 _target setVariable ["ace_medical_pain", (_painLevel + _painToAdd), true];
 
-[_target, "activity", localize "STR_TWC_DEFIB_EXECUE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
-[_target, "activity_view", localize "STR_TWC_DEFIB_EXECUE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
+[_target, "activity", localize "STR_TWC_DEFIB_EXECUTE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
+[_target, "activity_view", localize "STR_TWC_DEFIB_EXECUTE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
 
 false;

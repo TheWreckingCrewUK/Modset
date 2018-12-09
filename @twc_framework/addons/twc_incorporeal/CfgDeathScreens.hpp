@@ -31,7 +31,7 @@ class CfgDeathScreens {
 		text = "was killed instantaneously";
 		sound = "twc_instant_death";
 		fadeBegins = 30;
-		fadeOut = 63;
+		fadeOut = 57;
 	};
 	
 	class overdose {
@@ -39,6 +39,13 @@ class CfgDeathScreens {
 		sound = "twc_overdose";
 		fadeBegins = 30;
 		fadeOut = 80;
+	};
+	
+	class removed_from_surgery {
+		text = "was removed from surgery early";
+		sound = "twc_cardiac_arrest"; // placeholder
+		fadeBegins = 30;
+		fadeOut = 50;
 	};
 	
 	class overdose_morphine: overdose {

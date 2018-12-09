@@ -113,13 +113,8 @@ class CfgFunctions {
 
 		class curator {
 			file = "twc_framework\curator";
-			class healPlayer {};
-			class killPlayer {};
 			class setSpectator {};
-			class medicalInfo {};
-			class toggleCon {};
-			class gunwalkzeus {};
-			class mortarwalkzeus {};
+			// medical moved to twc_medical
 		};
 
 		class artillery {

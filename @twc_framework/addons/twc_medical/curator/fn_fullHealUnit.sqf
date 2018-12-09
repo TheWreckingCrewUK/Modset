@@ -1,5 +1,5 @@
 /*
-* Author: [TWC] jayman
+* Author: [TWC] jayman / Bosenator
 * Zeus Function for module to full heal player
 *
 * Arguments:
@@ -12,7 +12,7 @@
 *
 * Public: No
 */
-params["_logic","_units","_activated"];
+params["_logic", "_units", "_activated"];
 
 if !(_activated && local _logic) exitWith {};
 
@@ -22,10 +22,11 @@ if((_mouseOver select 0) != "OBJECT") then{
 	hint "Please click on a unit";
 }else{
 	_unit = effectiveCommander (_mouseOver select 1);
-	if !(_unit isKindOf "CAManBase") then{
+
+	if !(_unit isKindOf "CAManBase") then {
 		hint "Unit has to be human";
-	}else{
-		[_unit,_unit] call ace_medical_fnc_treatmentAdvanced_fullHeal
+	} else {
+		["twc_medical_evh_fullHeal", [_unit], _unit] call CBA_fnc_targetEvent;
 	};
 };
 

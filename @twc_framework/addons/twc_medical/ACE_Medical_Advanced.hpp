@@ -50,7 +50,7 @@ class ACE_Medical_Advanced {
 				};
 
 				class Avulsions: Abrasion {
-					effectiveness = 1.5;
+					effectiveness = 1.3;
 					reopeningChance = 0.15;
 					reopeningMinDelay = 150;
 					reopeningMaxDelay = 2700;
@@ -59,10 +59,10 @@ class ACE_Medical_Advanced {
 					reopeningChance = 0.1;
 				};
 				class AvulsionsMedium: Avulsions {
-					effectiveness = 1.25;
+					effectiveness = 1.1;
 				};
 				class AvulsionsLarge: Avulsions {
-					effectiveness = 1;
+					effectiveness = 0.9;
 				};
 
 				class Contusion: Abrasion {

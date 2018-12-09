@@ -24,9 +24,9 @@ class CfgFunctions {
 
 class CfgVehicles {
 	class LandVehicle;
-	class Tank: LandVehicle {
 
-	class ACE_Actions {
+	class Tank: LandVehicle {
+		class ACE_Actions {
 			class ACE_MainActions {
 				class TWC_knock {
 					displayName = "Knock";

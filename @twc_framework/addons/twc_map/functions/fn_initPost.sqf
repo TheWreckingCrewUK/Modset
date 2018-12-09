@@ -1,3 +1,5 @@
+if !(hasInterface) exitWith {};
+
 ["visibleMap", {
 	params ["", "_visible"];
 	

@@ -27,9 +27,9 @@ if (!_isBandagedWound) then {
 	_target setVariable ["ACE_Medical_bandagedWounds", _bandagedWounds, true];
 };
 
-[_caller] call twc_medical_fnc_removeSutureThread;
+[_caller, "TWC_Item_Medical_SutureKit_1"] call twc_medical_fnc_removeMedicalItem;
 
-[_target, "activity", localize "STR_TWC_SUTURE_EXECUE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
-[_target, "activity_view", localize "STR_TWC_SUTURE_EXECUE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
+[_target, "activity", localize "STR_TWC_SUTURE_EXECUTE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
+[_target, "activity_view", localize "STR_TWC_SUTURE_EXECUTE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
 
 true
