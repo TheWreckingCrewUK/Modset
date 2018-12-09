@@ -69,10 +69,12 @@ class CfgPatches {
 class Extended_InitPost_EventHandlers {
 	class CAManBase {
 		class twc_medicalInitPos_eh {
-			clientInit = "[twc_medical_fnc_extendedVitalLoop, [(_this select 0)], 10] call CBA_fnc_waitAndExecute;";
+			clientInit = "if (local (_this select 0)) then { [twc_medical_fnc_extendedVitalLoop, [(_this select 0)], 10] call CBA_fnc_waitAndExecute; };";
 		};
 	};
-	
+};
+
+class Extended_PostInit_EventHandlers {
 	class TWC_Medical {
 		clientInit = "[] call twc_medical_fnc_init;";
 		serverInit = "[] call twc_medical_fnc_serverInit;";
