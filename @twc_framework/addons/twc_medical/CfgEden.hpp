@@ -20,7 +20,7 @@ class Cfg3DEN {
 						control = "Checkbox";
 						displayName = "Set as Medical Field Tent";
 						tooltip = "Sets the facility as a medical field tent, disabling staff features";
-						expression = "_this setVariable ['TWC_Medical_isFieldTent', _value, true]; _this setVariable ['ace_medical_isMedicalFacility', true, true];";
+						expression = "_this setVariable ['TWC_Medical_isFieldTent', _value, true]; _this setVariable ['ace_medical_isMedicalFacility', _value, true];";
 						typeName = "BOOL";
 						condition = "(1 - objectBrain) * (1 - objectVehicle)";
 						defaultValue = "false";
