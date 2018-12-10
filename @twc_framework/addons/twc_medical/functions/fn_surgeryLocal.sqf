@@ -15,6 +15,7 @@ _startingLocation = position _target;
 
 // TODO: Play sound loop for the duration, and put them in the on back animation
 [[{ ((_this select 0) getVariable ["TWC_Medical_forcedUncon", false]) }]] call ace_medical_fnc_addUnconsciousCondition;
+_target setVariable ["ACE_isUnconscious", true, true];
 _target setUnconscious true;
 
 // play the audio locally, for the patient
