@@ -14,7 +14,7 @@ _startingLocation = position _target;
 ["twc_medical_server_gurneyUsed", [_caller, _target]] call CBA_fnc_serverEvent;
 
 // TODO: Play sound loop for the duration, and put them in the on back animation
-[[{ ((_this select 0) getVariable ["TWC_Medical_forcedUncon", false]) }]] call ace_medical_fnc_addUnconsciousCondition;
+_target setVariable ["TWC_Medical_forcedUncon", true, true];
 _target setVariable ["ACE_isUnconscious", true, true];
 _target setUnconscious true;
 
