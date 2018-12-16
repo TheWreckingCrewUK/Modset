@@ -18,7 +18,7 @@ _baseItemClassWoNumber = (_itemClassArrayDuplicate joinString "_");
 	// first one we come across, we'll remove
 	if (_x isKindOf [_baseItemClass, configFile >> "CfgWeapons"]) exitWith {
 		// no threads left, good bye kit!
-		if (_x == _baseItemClass) exitWith { _caller removeItem _x; };
+		if (typeOf _x == _baseItemClass) exitWith { _caller removeItem _x; };
 
 		// decrease the count by one, this is why we have common classname structure!
 		_itemNewCount = (_itemClassNumber - 1);
