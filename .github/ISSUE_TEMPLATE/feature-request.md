@@ -1,7 +1,7 @@
 ---
 name: Feature Request
 about: Suggest a new feature, or an improvement to an existing one.
-title: "[SUGGESTION] Placehold Title"
+title: "[SUGGESTION] "
 labels: Suggestions
 assignees: ''
 
