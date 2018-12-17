@@ -139,3 +139,15 @@ class CfgVehicles
 	
 };
 #include "weapons.hpp"
+
+class CfgGesturesMale
+{
+	class states
+	{
+		class GestureReloadBase;
+		class GestureReloadSPAR_01: GestureReloadBase
+		{
+			speed = -3;
+		};
+	};
+};

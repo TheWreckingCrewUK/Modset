@@ -311,6 +311,8 @@ class cfgWeapons
 	{
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";
+		reloadAction = "GestureReloadSPAR_01";
+		reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_reload",1,0.85,10};
 		class Single:Single {
 			dispersion = 0.001;
 		};
