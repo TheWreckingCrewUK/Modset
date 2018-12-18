@@ -25,6 +25,11 @@ class twc_genbackPack_tan: rhsusf_assault_eagleaiii_ocp
 	displayname = "Miltec Backpack Tan";
 	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
 };
+class twc_genbackPack_oli: rhsusf_assault_eagleaiii_ocp
+{
+	displayname = "Miltec Backpack Olive";
+	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
+};
  
 class B_AssaultPack_dgtl;
 class twc_back_webbing: B_AssaultPack_dgtl
@@ -39,6 +44,7 @@ class twc_AlicePack_ddpm: CUP_B_AlicePack_Khaki
 {
 	displayname = "Alice Pack DDPM";
 	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_fast_ddpm_co.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
 };
 
 class CUP_B_ACRScout_m95;
@@ -46,36 +52,43 @@ class twc_scoutpack_olive: CUP_B_ACRScout_m95
 {
 	displayname = "CZ Scout Pack (Olive)";
 	hiddenselectionstextures[] = {"\A3\Weapons_F\Ammoboxes\Bags\Data\backpack_small_oli_co.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
 };
 class twc_scoutpack_tan: CUP_B_ACRScout_m95
 {
 	displayname = "CZ Scout Pack (Tan)";
 	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
 };
 class twc_scoutpack_dpm: CUP_B_ACRScout_m95
 {
 	displayname = "CZ Scout Pack (DPM)";
 	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_fast_cs95_dpm_co.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
 };
 class twc_scoutpack_ddpm: CUP_B_ACRScout_m95
 {
 	displayname = "CZ Scout Pack (DDPM)";
 	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
 };
 class twc_scoutpack_wd: CUP_B_ACRScout_m95
 {
 	displayname = "CZ Scout Pack (Woodland)";
 	hiddenselectionstextures[] = {"rhsgref\addons\rhsgref_infantry\data_cdf\alicepack_co_gref_woodland.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
 };
 class twc_AlicePack_tan: CUP_B_AlicePack_Khaki
 {
 	displayname = "Alice Pack Tan";
 	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
 };
 class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 {
 	displayname = "Alice Pack Green";
 	hiddenselectionstextures[] = {"\A3\Weapons_F\Ammoboxes\Bags\Data\backpack_small_oli_co.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
 };
 
 
@@ -542,7 +555,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 		};
 	};
-	class TWC_Backpack_1990_Gunner_Desert: B_Kitbag_cbr
+	class TWC_Backpack_1990_Gunner_Desert: twc_AlicePack_green
 	{
 		scope = 1;
 		class TransportMagazines

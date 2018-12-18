@@ -2,6 +2,8 @@ class UK3CB_BAF_LandRover_Hard_FFR_Green_B;
 class TWC_BaseClass_LR_Hard_Base: UK3CB_BAF_LandRover_Hard_FFR_Green_B {
 	scope = 0;
 	class AnimationSources;
+	class AcreIntercoms {};
+	class AcreRacks {};
 };
 
 class TWC_BaseClass_LR_Hard_Base_F: TWC_BaseClass_LR_Hard_Base {

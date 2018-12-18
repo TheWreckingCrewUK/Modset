@@ -64,8 +64,10 @@ class CfgPatches {
 			"A3_Characters_F",
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
+			"A3_Data_F",
 			"rhsusf_vehicles",
 			"rhs_c_weapons",
+			"rhsgref_c_weapons",
 			"rhsusf_c_weapons",
 			"uk3cb_baf_vehicles_landrover",
 			"uk3cb_baf_weapons_smallarms"
@@ -111,6 +113,13 @@ class CfgFunctions {
 			class mortarwalk{};
 		};
 	};
+	class twc_fnc_gunwalk {
+		class functions {
+			tag = "twc_fnc_gunwalk";
+			file = "twc_units_modern\functions";
+			class gunwalk{};
+		};
+	};
 };
 
 #include "compositions.hpp"
@@ -130,3 +139,15 @@ class CfgVehicles
 	
 };
 #include "weapons.hpp"
+
+class CfgGesturesMale
+{
+	class states
+	{
+		class GestureReloadBase;
+		class GestureReloadSPAR_01: GestureReloadBase
+		{
+			speed = -3;
+		};
+	};
+};

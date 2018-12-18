@@ -1,5 +1,3 @@
-#define _ARMA_
-
 class CfgPatches
 {
 	class ukf_ukweps
@@ -34,22 +32,18 @@ class CfgWeapons
 		cursorSize = 1;
 		reloadAction = "ReloadRPG";
 		handAnim[] = {"OFP2_ManSkeleton","\CUP\Weapons\CUP_Weapons_M136\Data\Anim\m136.rtm"};
-		maxZeroing = 400;
 		weaponInfoType = "RscWeaponZeroing";
 		distanceZoomMin = 50;
 		distanceZoomMax = 400;
-		discreteDistance[] = {50,100,150,200,250,300,350,400};
+		discreteDistance[] = {100};
 		discreteDistanceInitIndex = 0;
 		magazines[] = {"ukf_law80"};
 		jsrs_soundeffect = "JSRS2_Distance_Effects_Launcher";
-		AGM_Backblast_Angle = 45;
-		AGM_Backblast_Range = 100;
-		AGM_Backblast_Damage = 0.7;
 
 		ACE_UsedTube = "LAW80_used";
 		ace_overpressure_angle = 45;
 		ace_overpressure_range = 20;
-		ace_overpressure_damage = 0.5;
+		ace_overpressure_damage = 0.8;
 		
 		class GunParticles {
 			class effect1 {
@@ -57,6 +51,44 @@ class CfgWeapons
 				directionName = "usti hlavne";
 				effectName = "RocketBackEffectsRPGNT";
 			};
+		};
+
+		muzzles[] = {"this", "LAW80_spottingRifle"};
+		class LAW80_spottingRifle: Launcher_Base_F
+		{
+			modelOptics = "\law80\TWC_2Dscope_LAW80.p3d";
+
+			magazines[] = {"UKF_LAW80_Spotting"};
+			displayName = "Spotting Rifle";
+			displayNameShort = "Spotting Rifle";
+			descriptionShort = "9mm Spotting Rifle";
+
+			useActionTitle = "Spotting Rifle";
+			dispersion = 0;
+			recoil = "recoil_single_law";
+			reloadAction = "CUP_smaw_spottingReload";
+			reloadTime = 0.3;
+			muzzlePos="usti spotting"; //might not work
+			muzzleEnd="konec spotting"; //might not work
+
+			sounds[] = {"StandardSound"};
+
+			jsrs_soundeffect = ""; //Unknown Value ATM
+
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "DefaultRifle";
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"CUP\Weapons\CUP_Weapons_SMAW\data\sfx\SMAW_s1",8,1,1300};
+				soundBegin[] = {"begin1",1};
+			};
+
+			// do ACE entries in a config really hurt?
+			ace_overpressure_angle = 0;
+			ace_overpressure_range = 0;
+			ace_overpressure_damage = 0;
 		};
 
 		sounds[] = {"StandardSound"};
@@ -107,26 +139,53 @@ class CfgWeapons
 class CfgAmmo
 {
 	class CUP_R_M136_AT;
+	class CUP_R_SMAW_Spotting;
+	class ammo_Penetrator_MRAAWS;
 	class UKF_LAW80Rocket: CUP_R_M136_AT
 	{
-		hit = 950;		
+		hit = 150;
+		warheadName = "TandemHEAT";
+		submunitionAmmo = "UKF_LAW80_Penetrator";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitialOffset[] = {0,0,-0.2};
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0;
+		sideAirFriction = 0;
+		typicalSpeed = 234;
+	};
+	class UKF_LAW80_Penetrator: ammo_Penetrator_MRAAWS
+	{
+		hit = 750;
+	};
+	class UKF_LAW80_SpottingRound: CUP_R_SMAW_Spotting
+	{
+		thrust = 0;
+		thrusttime = 0;
+		airfriction = 0;
+		sideAirFriction = 0;
+		typicalSpeed = 234;
 	};
 };
 class CfgMagazines
 {
 	class CUP_M136_M;
+	class CUP_SMAW_Spotting;
 	class ukf_law80: CUP_M136_M
 	{
 		scope = 2;
 		displayName = "LAW-80 Rocket";
-		type = "5 * 		256";
+		type = "5 * 256";
 		ammo = "UKF_LAW80Rocket";
 		picture = "\law80\data\m_LAW80.paa";
+		initspeed = 234;
+	};
+	class UKF_LAW80_Spotting: CUP_SMAW_Spotting
+	{
+		displayName = "6rnd Spotting Magazine";
+		description = "";
+		descriptionShort = "";
+		ammo = "UKF_LAW80_SpottingRound";
+		initspeed = 234;
+		count = 6;
 	};
 };
-class cfgMods
-{
-	author = "[TWC] Rik";
-	timepacked = "1485305193";
-};
-//};

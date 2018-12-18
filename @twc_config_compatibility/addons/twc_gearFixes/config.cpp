@@ -1,6 +1,9 @@
 class CfgPatches {
 	class TWC_gearFixes {
-		units[]={};
+		units[]={
+			"twc_B_AAA_System_01_F",
+			"twc_B_AAA_System_01_F_S"
+		};
 		weapons[]={"CUP_launch_RPG7V"};
 		requiredVersion = 1.7;
 
@@ -13,6 +16,7 @@ class CfgPatches {
 			"cup_trackedvehicles_mcv80",
 			"uk3cb_baf_vehicles_landrover",
 			"uk3cb_baf_vehicles_coyote_jackal",
+			"UK3CB_BAF_Equipment_Backpacks",
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds"
@@ -23,19 +27,6 @@ class CfgPatches {
 		version="1";
 		versionStr="1";
 		versionAr[]={1};
-	};
-};
-
-class CfgMagazines {
-	class 6Rnd_30mm_L21A1_APDS;
-	class 3Rnd_30mm_L21A1_APDS: 6Rnd_30mm_L21A1_APDS
-	{
-		count = 3;
-	};
-	class 6Rnd_30mm_L21A1_HE;
-	class 3Rnd_30mm_L21A1_HE: 6Rnd_30mm_L21A1_HE
-	{
-		count = 3;
 	};
 };
 
@@ -61,8 +52,39 @@ class CfgAmmo {
 		soundHit4[] = {};
 	};
 	
-	class default;
-	class B_IRstrobe: default
+	
+	class RocketBase;
+	class CUP_R_OG7_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7V_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7VL_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7VM_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_PG7VR_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	class CUP_R_RPG18_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",2,0.9,500};
+	};
+	class CUP_R_TBG7V_AT: RocketBase
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
+	};
+	
+	class IRStrobeBase;
+	class B_IRstrobe: IRStrobeBase
 	{
 		timeToLive=150000;
 	};
@@ -89,6 +111,16 @@ class CfgAmmo {
 	{
 		caliber = 6;
 		penetrationDirDistribution = 0.05;
+	};
+	class BulletBase;
+	class B_127x99_Ball: BulletBase
+	{
+		class CamShakePlayerFire {
+			distance = 1;
+			duration = 1;
+			frequency = 10;
+			power = 30;
+		};
 	};
 };
 
@@ -131,7 +163,7 @@ class CfgWeapons {
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
-			fired = "_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];";
+			fired = "_mult = 1; if (!isserver) then {_mult = 0.5};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];";
 		};
 		scope=2;
 		aiDispersionCoefX=1.03;
@@ -234,10 +266,12 @@ class CfgWeapons {
 	{
 		class eventhandlers;
 	};
-	
+	//for barrel swapping, put a ACE_SpareBarrel in the player's inventory
 	class UK3CB_BAF_L7A2: Rifle_Long_Base_F {
 		displayname = "L7A2 GPMG";
-
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_dispersion = 1.1;
+		ace_overheating_slowdownFactor = 1.5;
 		recoil = "twc_mg_762";
 		recoilProne = "twc_mg_prone";
 		twc_openbolt = 1;
@@ -251,6 +285,38 @@ class CfgWeapons {
 		class EventHandlers: EventHandlers {
 			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];};twc_gpmglastfired = time;";
 		};
+	};
+	
+	class CUP_lmg_PKM: Rifle_Long_Base_F
+	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_mrbs = 3500;
+		ace_overheating_dispersion = 1.0;
+		ace_overheating_slowdownFactor = 1.5;
+		
+	};
+	
+	class rhs_pkp_base: Rifle_Long_Base_F
+	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_mrbs = 3500;
+		ace_overheating_dispersion = 1.0;
+		ace_overheating_slowdownFactor = 1.5;
+	};
+	
+	class rhs_weap_saw_base: Rifle_Base_F
+	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_mrbs = 2900;
+		ace_overheating_dispersion = 1.1;
+		ace_overheating_slowdownFactor = 1.2;
+	};
+	//rhs m240, because it's called m249 in config which would be confusing
+	class LMG_Mk200_F: Rifle_Base_F
+	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_dispersion = 1.1;
+		ace_overheating_slowdownFactor = 1.5;
 	};
 	
 	class MGunCore;
@@ -268,7 +334,7 @@ class CfgWeapons {
 	class GMG_F: MGun {
 		reloadtime = 0.22;
 		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5,  (velocity _bullet select 2) + (random 20) - 10];} else {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4,  (velocity _bullet select 2) + (random 6) - 3];};twc_gpmglastfired = time;";
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5,  (velocity _bullet select 2) + (random 20) - 10];} else {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4,  (velocity _bullet select 2) + (random 6) - 3];};twc_gpmglastfired = time;[_this select 6] call twc_fnc_aps;";
 		};
 	};
 	class Default;
@@ -283,12 +349,6 @@ class CfgWeapons {
 	};
 	class autocannon_30mm_CTWS: autocannon_Base_F {
 	};
-	class L21A1_RARDEN: autocannon_Base_F {
-		magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE"};
-		magazineReloadTime = 1;
-		ReloadTime = 0.3;
-		autoReload = 0;
-	};
 	
 	class autocannon_40mm_CTWS: autocannon_Base_F
 	{
@@ -298,14 +358,14 @@ class CfgWeapons {
 	
 	class CUP_Rarden_CTWS_veh: autocannon_40mm_CTWS
 	{
-		magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE"};
+		magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE"};
 		magazineReloadTime = 1;
 		muzzles[] = {"HE"};
 		ReloadTime = 0.3;
 		autoReload = 0;
 		class HE: HE
 		{
-			magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE"};
+			magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE"};
 			magazineReloadTime = 1;
 			ReloadTime = 0.3;
 			autoReload = 0;
@@ -364,6 +424,10 @@ class CfgWeapons {
 
 	class UK3CB_BAF_L110_Base:Rifle_Long_Base_F
 	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_mrbs = 2900;
+		ace_overheating_dispersion = 1.1;
+		ace_overheating_slowdownFactor = 1.2;
 		class eventhandlers;
 		twc_openbolt = 1;
 	};
@@ -376,29 +440,162 @@ class CfgWeapons {
 			fired = "if (isnil 'twc_minimilastfired') then {twc_minimilastfired = 0}; if (time > twc_minimilastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 24) - 12, (velocity _bullet select 1) + (random 24) - 12, 	(velocity _bullet select 2) + (random 4) - 2];};twc_minimilastfired = time;";
 		};
 	};
-	/*
-	class UK3CB_BAF_L110A2RIS: UK3CB_BAF_L110_556_Base
-	{
-		class FullAuto:FullAuto {
-			dispersion = 0.003;
-		};
-	};
-	
-	class UK3CB_BAF_L110A2: UK3CB_BAF_L110_556_Base
-	{
-		class FullAuto:FullAuto {
-			dispersion = 0.003;
-		};
-	};
-	*/
-	
-	
-	
+
 	class missiles_titan;
 	class UK3CB_BAF_Milan_Launcher: missiles_titan {
 		ace_overpressure_angle = 90;
 		ace_overpressure_range = 40;
 		ace_overpressure_damage = 0.7;
+	};
+
+	class cannon_125mm;
+	class CUP_Vacannon_D10: cannon_125mm
+	{
+		muzzles[] = {"TWC_Muzzle_AP","TWC_Muzzle_HE"};
+		class TWC_Muzzle_AP: cannon_125mm
+		{
+			displayName = "D-10T 100mm AP";
+			descriptionShort = "AP";
+			magazines[] = {CUP_20Rnd_100mmHEAT_D10};
+			
+			nameSound="cannon";
+			cursor = "EmptyCursor";
+			cursorAim = "cannon";
+			cursorSize = 1;
+			class StandardSound
+			{
+				soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
+			};
+			minRange=10;minRangeProbab=0.7;
+			midRange=1800;midRangeProbab=0.7;
+			maxRange=3000;maxRangeProbab=0.1;
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			autoReload = 1;
+			canLock = 0;
+			ballisticsComputer = 2;
+		};
+		class TWC_Muzzle_HE: cannon_125mm
+		{
+			displayName = "D-10T 100mm HE";
+			descriptionShort = "HE";
+			magazines[] = {CUP_15Rnd_100mmHEFRAG_D10};
+
+			nameSound="cannon";
+			cursor = "EmptyCursor";
+			cursorAim = "cannon";
+			cursorSize = 1;
+			class StandardSound
+			{
+				soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
+			};
+			minRange=10;minRangeProbab=0.7;
+			midRange=1800;midRangeProbab=0.7;
+			maxRange=3000;maxRangeProbab=0.1;
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			autoReload = 1;
+			canLock = 0;
+			ballisticsComputer = 2;
+		};
+	};
+	class CUP_Vacannon_D5_T34: cannon_125mm
+	{
+		muzzles[] = {"TWC_Muzzle_AP","TWC_Muzzle_HE"};
+		class TWC_Muzzle_AP: cannon_125mm
+		{
+			displayName = "D-5T 85mm AP";
+			nameSound="cannon";
+			cursor = "EmptyCursor";
+			cursorAim = "cannon";
+			cursorSize = 1;
+			class StandardSound
+			{
+				soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
+			};
+			magazines[] = {CUP_40Rnd_85mmHEAT_D5};
+			minRange=10;minRangeProbab=0.7;
+			midRange=1800;midRangeProbab=0.7;
+			maxRange=3000;maxRangeProbab=0.1;
+			reloadTime = 6;
+			magazineReloadTime = 6;
+			autoReload = 1;
+			canLock = 0;
+			ballisticsComputer = 2;
+		};
+		class TWC_Muzzle_HE: cannon_125mm
+		{
+			displayName = "D-5T 85mm AP";
+			nameSound="cannon";
+			cursor = "EmptyCursor";
+			cursorAim = "cannon";
+			cursorSize = 1;
+			class StandardSound
+			{
+				soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
+			};
+			magazines[] = {CUP_20Rnd_85mmHEFRAG_D5};
+			minRange=10;minRangeProbab=0.7;
+			midRange=1800;midRangeProbab=0.7;
+			maxRange=3000;maxRangeProbab=0.1;
+			reloadTime = 6;
+			magazineReloadTime = 6;
+			autoReload = 1;
+			canLock = 0;
+			ballisticsComputer = 2;
+		};
+	};
+	class CUP_Vcannon_2A46_Txx: cannon_125mm
+	{
+		muzzles[] = {"TWC_Muzzle_APFSDS","TWC_Muzzle_HE","TWC_Muzzle_AT"};
+		class TWC_Muzzle_APFSDS: cannon_125mm
+		{
+			displayName = "2A46 Cannon 125mm APFSDS";
+			magazines[] = {"CUP_22Rnd_2A46_APFSDS_T_M"};
+			canLock=0;
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			autoReload = 0;
+			ballisticsComputer = 16;
+			weaponLockSystem = 0;
+			showaimcursorinternal = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "EmptyCursor";
+			cursoraimon = "EmptyCursor";
+			reloadsound[] = {"CUP\Weapons\CUP_Weapons_VehicleWeapons\2A46\data\sound\Reload_Cannon", 13.16228, 1, 10};
+		};
+		class TWC_Muzzle_HE: cannon_125mm
+		{
+			displayName = "2A46 Cannon 125mm HE";
+			magazines[] = {"CUP_12Rnd_2A46_HE_T_M","CUP_17Rnd_2A46_HE_T_M"};
+			canLock=0;
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			autoReload = 0;
+			ballisticsComputer = 16;
+			weaponLockSystem = 0;
+			showaimcursorinternal = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "EmptyCursor";
+			cursoraimon = "EmptyCursor";
+			reloadsound[] = {"CUP\Weapons\CUP_Weapons_VehicleWeapons\2A46\data\sound\Reload_Cannon", 13.16228, 1, 10};
+		};
+		class TWC_Muzzle_AT: cannon_125mm
+		{
+			displayName = "2A46 Cannon 125mm AT";
+			magazines[] = {"CUP_5Rnd_AT11_M"};
+			canLock=0;
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			autoReload = 0;
+			ballisticsComputer = 16;
+			weaponLockSystem = 0;
+			showaimcursorinternal = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "EmptyCursor";
+			cursoraimon = "EmptyCursor";
+			reloadsound[] = {"CUP\Weapons\CUP_Weapons_VehicleWeapons\2A46\data\sound\Reload_Cannon", 13.16228, 1, 10};
+		};
 	};
 };
 
@@ -438,15 +635,15 @@ class cfgRecoils
 	{
 		muzzleOuter[]	= { 0.07,  0.15,  0.02,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
 		kickBack[]	= { 0.03, 0.05 }; //min/max force
-		permanent	= 0.2; //muzzle climb post-recoil, means nothing when on bipod
-		temporary	= 0.05; //muzzle jump
+		permanent	= 0.1; //muzzle climb post-recoil, means nothing when on bipod
+		temporary	= 0.07; //muzzle jump
 	};
 	class twc_mg_556_prone
 	{
-		muzzleOuter[]	= { 0.05,  0.1,  0.02,  0.1 };
-		kickBack[]	= { 0.03, 0.05 };
-		permanent	= 0.25;
-		temporary	= 0.1;
+		muzzleOuter[]	= { 0.05,  0.1,  0.02,  0.02 };
+		kickBack[]	= { 0.04, 0.06 };
+		permanent	= 0.1;
+		temporary	= 0.3;
 	};
 	
 	class twc_rifle_762
@@ -475,9 +672,9 @@ class cfgRecoils
  class twc_mg_prone
 	{
 		muzzleOuter[]	= { 0.1,  0.1,  0.5,  0.45 };
-		kickBack[]	= { 0.06, 0.08 };
-		permanent	= 0.4;
-		temporary	= 0.15;
+		kickBack[]	= { 0.02, 0.04 };
+		permanent	= 0.1;
+		temporary	= 0.5;
 	};
 	
 	class twc_shotgun_1
@@ -490,6 +687,30 @@ class cfgRecoils
 };
 
 class CfgVehicles {
+	
+	class B_AAA_System_01_F;
+	class twc_B_AAA_System_01_F: B_AAA_System_01_F
+	{
+		shadow = 0;
+		hiddenSelectionsTextures[] = {"",""};
+		displayname = "TWC Base Target";
+	};
+	class twc_B_AAA_System_01_F_S: B_AAA_System_01_F
+	{
+		shadow = 0;
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {""};
+		model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
+		displayname = "TWC Base Target (Small)";
+	};
+	
+	class UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A;
+	class TWC_BAF_B_Bergen_OLI_Rifleman_XL_A: UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A
+	{
+		displayname = "Bergen XL (Olive)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_us.rvmat"};
+	};
 	
 	class Tank;
 	class Tank_F: Tank
@@ -506,42 +727,35 @@ class CfgVehicles {
 		{
 			class MainTurret : MainTurret
 			{
-				magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+				magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
 			};
 		};
 	};
 	
-	class ukcw_cvrt_Scim_base : Tank_F
-	{
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				magazines[] = {"3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_APDS","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","3Rnd_30mm_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
-			};
-		};
-	};
 	class Helicopter_Base_H;
 	class CUP_CH47F_base: Helicopter_Base_H
 	{
 		backRotorForceCoef = 0.9;
 		cyclicForwardForceCoef = 1.5;
 		cyclicAsideForceCoef = 1.3;
-		liftForceCoef = 0.9;
 		bodyFrictionCoef = 1.4;
 		armorStructural = 20;
 	};
-		
-		
+
 //handling modifications
 	class Car;
 	class Car_F: Car{
+		class turrets;
 		class Wheels {
 			class LF {};
 		};
 	};
 	
 	class UK3CB_BAF_Jackal_Base_D : Car_F {
+		class turrets: turrets
+		{
+			class mainturret;
+		};
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
 		antiRollbarSpeedMin = 5;
@@ -565,7 +779,30 @@ class CfgVehicles {
 		};
 		
 	};
-	class UK3CB_BAF_Coyote_L111A1_Base_D;
+	class UK3CB_BAF_Coyote_L111A1_Base_D: UK3CB_BAF_Jackal_Base_D
+	{
+		class Turrets: Turrets
+		{
+			class L111A1_MainTurret: MainTurret {
+				class viewoptics
+				{
+					initAngleX = 0;
+					initAngleY = 0;
+					initElev = 0;
+					initFov = 0.1;
+					maxAngleX = 30;
+					maxAngleY = 100;
+					maxElev = 40;
+					maxFov = 0.1;
+					minAngleX = -30;
+					minAngleY = -100;
+					minElev = -25;
+					minFov = 0.1;
+					visionMode[] = {"Normal"};
+				};
+			};
+		};
+	};
 	class UK3CB_BAF_Jackal2_L111A1_Base_D: UK3CB_BAF_Coyote_L111A1_Base_D {
 		
 		antiRollbarForceCoef = 20;
@@ -607,6 +844,7 @@ class CfgVehicles {
 		frontBias = 1.5;
 		rearBias = 1.5;
 		centreBias = 1.5;
+		class Turrets;
 		class Wheels:Wheels {
 			class LF:LF {
 				boneName = "wheel_1_1_damper";
@@ -834,6 +1072,40 @@ class CfgVehicles {
 		class EventHandlers: EventHandlers {
 			init = "_car = (_this select 0); _car setCenterOfMass [-0.00687825,-0.814309,1.5]";
 			
+		};
+	};
+	
+	
+	class UK3CB_BAF_LandRover_WMIK_Base:UK3CB_BAF_LandRover_Base
+	{
+		class Turrets: Turrets
+		{
+			class mainturret;
+		};
+	};
+	
+	class UK3CB_BAF_LandRover_WMIK_HMG_Base: UK3CB_BAF_LandRover_WMIK_Base
+	{
+		class Turrets: Turrets
+		{
+			class HMG_Turret: MainTurret {
+				class viewoptics
+				{
+					initAngleX = 0;
+					initAngleY = 0;
+					initElev = 0;
+					initFov = 0.1;
+					maxAngleX = 30;
+					maxAngleY = 100;
+					maxElev = 40;
+					maxFov = 0.1;
+					minAngleX = -30;
+					minAngleY = -100;
+					minElev = -25;
+					minFov = 0.1;
+					visionMode[] = {"Normal"};
+				};
+			};
 		};
 	};
 	

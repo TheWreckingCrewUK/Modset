@@ -103,6 +103,7 @@ class CfgVehicles
 		faction = "TWC_Millennial";
 		CATEGORY(TWC_ForceType_Airborne)
 		uniformClass = "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
+		TWC_isCommandRole = 1;
 		linkedItems[] =
 		{
 			"CUP_V_B_PilotVest",
@@ -157,6 +158,7 @@ class CfgVehicles
 		faction = "TWC_Millennial";
 		CATEGORY(TWC_ForceType_Armoured)
 		uniformClass = "UK3CB_BAF_U_CrewmanCoveralls_RTR";
+		TWC_isCommandRole = 1;
 		linkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",
@@ -209,6 +211,7 @@ class CfgVehicles
 	class TWC_Infantry_Millennial_Tank_Crew: TWC_Infantry_Millennial_Tank_Commander
 	{
 		displayName = "Tank Crew";
+		TWC_isCommandRole = 0;
 	};
 	#include "1990_regular\woodland.hpp"
 	#include "1990_regular\woodland_dismounted.hpp"

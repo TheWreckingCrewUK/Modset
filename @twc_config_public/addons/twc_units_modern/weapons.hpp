@@ -14,13 +14,82 @@ class cfgWeapons
 	class Rifle_Base_F;
 	class cannoncore;
 	
+	class rhsusf_spcs_ocp_teamleader;
+	class twc_mtp_spcs_SL: rhsusf_spcs_ocp_teamleader
+	{
+		displayName = "SPCS MTP (SL)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	
+	class rhsusf_spcs_ocp_sniper;
+	class twc_mtp_spcs_Marksman: rhsusf_spcs_ocp_sniper
+	{
+		displayName = "SPCS MTP (Marksman)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	
+	class rhsusf_spcs_ocp_medic;
+	class twc_mtp_spcs_medic: rhsusf_spcs_ocp_medic
+	{
+		displayName = "SPCS MTP (Medic)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	class rhsusf_spcs_ocp;
+	class rhsusf_spcs_ocp_saw : rhsusf_spcs_ocp
+	{
+		class iteminfo;
+	};
+	class twc_mtp_spcs_mg: rhsusf_spcs_ocp_saw
+	{
+		displayName = "SPCS MTP (MG)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+		class iteminfo: iteminfo
+		{
+			containerClass = "Supply200";
+		};
+	};
+	
+	class rhsusf_spc_rifleman;
+	class twc_mtp_spc_rifleman: rhsusf_spc_rifleman
+	{
+		displayName = "SPC MTP (Rifleman)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa"};
+	};
+	
+	class rhsusf_spc_iar;
+	class twc_mtp_spc_rifleman_alt: rhsusf_spc_iar
+	{
+		displayName = "SPC MTP (Rifleman Alt)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa"};
+	};
+	
+	
+	
+	class default;
+	class LauncherCore
+	{
+		class eventhandlers;
+	};
+	class MissileLauncher: LauncherCore
+	{
+		class EventHandlers: EventHandlers {
+			fired = "[_this select 6] call twc_fnc_aps;";
+		};
+	};
 	
 	class Launcher;
+	
+	
 	class Launcher_Base_F: Launcher
 	{
 		class EventHandlers;
 	};
 	
+	class CUP_launch_RPG7V: Launcher_Base_F
+	{
+		reloadAction = "RHS_GestureReloadRPG7";
+		reloadMagazineSound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final",0.562341,1,50};
+	};
 	class rhs_weap_rpg7: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
@@ -53,6 +122,94 @@ class cfgWeapons
 		midrangeprobab=0.6;
 		maxrange=300;
 		maxrangeprobab=0.3;
+	};
+	class rhs_weap_panzerfaust60: Launcher_Base_F
+	{
+		displayname = "RPG-76";
+		initSpeed = 745;
+		mass = 2.1;
+	};
+	
+	class rhs_weap_panzerfaust60_used: rhs_weap_panzerfaust60
+	{
+		displayname = "RPG-76 (used)";
+	};
+	
+	class rhs_weap_nsvt;
+	class rhs_weap_nsvt_effects: rhs_weap_nsvt
+	{
+		class manual;
+	};
+	class rhs_weap_kord: rhs_weap_nsvt_effects
+	{
+		class manual: manual
+		{
+			class standardsound;
+		};
+		class close: manual
+		{
+			class standardsound;
+		};
+		class far: close
+		{
+			class standardsound;
+		};
+		class medium: close
+		{
+			class standardsound;
+		};
+		class short: close
+		{
+			class standardsound;
+		};
+	};
+	
+	class twc_rhs_weap_kord_20: rhs_weap_kord
+	{
+		magazines[] = {"200Rnd_20mm_G_belt"};
+		reloadtime = 1.2;
+		displayName = "KORD (20MM)";
+		class manual: manual
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class close: close
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class far: far
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class medium: medium
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
+		class short: short
+		{
+			reloadtime = 1.2;
+			class standardsound: standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+				//soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_DSHKM_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
 	};
 	
 	class gatling_30mm: CannonCore
@@ -131,8 +288,8 @@ class cfgWeapons
 	
 	class rhs_weap_m249_pip_L: rhs_weap_lmg_minimi_railed
 	{
-		recoil = "twc_rifle_556";
-		recoilProne = "twc_rifle_556_prone";
+		recoil = "twc_mg_556";
+		recoilProne = "twc_mg_556_prone";
 		class FullAuto:FullAuto {
 			dispersion = 0.003;
 		};
@@ -154,6 +311,8 @@ class cfgWeapons
 	{
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";
+		reloadAction = "GestureReloadSPAR_01";
+		reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_reload",1,0.85,10};
 		class Single:Single {
 			dispersion = 0.001;
 		};
@@ -318,6 +477,7 @@ class cfgWeapons
 			};
 		};
 	};
+	
 	class rhs_weap_rsp30_green;
 		class twc_L5A4_green: rhs_weap_rsp30_green
 	{
@@ -579,6 +739,23 @@ class cfgWeapons
 		};
 	};
 	
+	class GMG_F;
+		
+	
+	class GMG_20mm: GMG_F
+	{
+		class manual;
+	};
+	
+	class RHS_MK19: GMG_20mm
+	{
+		magazineReloadTime = 20;
+		class manual: manual
+		{
+			reloadtime = 0.22;
+		};
+	};
+	
 	/*
 	
 	class mortar_82mm: CannonCore
@@ -719,6 +896,13 @@ class cfgmagazines{
 			descriptionShort = "Caliber: 7.62x54mmR Tracer<br />Rounds: 10<br />Used in: SVD";
 			displayName = "7N1-P 10Rnd SVD Mag";
 		};	
+		
+		class 200Rnd_20mm_G_belt;
+		class twc_200Rnd_20mm_G_belt_1: 200Rnd_20mm_G_belt
+		{
+			ammo = "twc_G_20mm_HE";
+			initSpeed = 350;
+		};
 
 
 		class CA_Magazine;
@@ -736,6 +920,14 @@ class cfgmagazines{
 			descriptionshort = "Caliber: 5.56x45mm Tracer<br />Rounds: 30";
 			displayName = "5.56mm 30rnd Tracer Mag";
 		};
+		
+		class FakeMagazine;
+		class rhs_panzerfaust60_mag: FakeMagazine
+		{
+			displayname = "RPG-76 Rocket";
+			initSpeed = 105;
+			//ammo = "twc_rpg75_rocket";
+		};
 };	
 
 
@@ -751,7 +943,7 @@ class cfgammo
 		timeToLive = 160;
 	};
 	
-		class F_40mm_white;
+	class F_40mm_white;
 	class rhs_40mm_white : F_40mm_white
 	{
 		lightColor[] = {0.75,0.75,0.75,0};
@@ -761,7 +953,7 @@ class cfgammo
 		timeToLive = 160;
 	};
 	
-		class F_40mm_green;
+	class F_40mm_green;
 	class rhs_40mm_green : F_40mm_green
 	{
 		lightColor[] = {0.5,0.75,0.5,0};
@@ -769,6 +961,31 @@ class cfgammo
 		intensity = 1000000;
 		coefgravity = 0.15;
 		timeToLive = 160;
+	};
+	
+	class G_20mm_HE;
+	class twc_G_20mm_HE: G_20mm_HE
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",1.1,0.7,250};
+	};
+	
+	
+	class R_PG32V_F;
+	class rhs_ammo_panzerfaust60_rocket : R_PG32V_F
+	{
+		maxSpeed = 320;
+		timeToLive = 60;
+		explosionEffects = "GrenadeExplosion";
+	};
+	
+	class rhs_rpg26_rocket: R_PG32V_F
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",2,0.9,500};
+	};
+	
+	class rhs_ammo_rpgShell_base: R_PG32V_F
+	{
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
 	};
 	
 };

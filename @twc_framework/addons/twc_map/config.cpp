@@ -2,7 +2,7 @@ class CfgPatches {
 	class twc_map {
 		units[] = {};
 		weapons[] = {};
-		author[] = {"Bosenator"};
+		author = "Bosenator";
 		authorUrl = "www.thewreckingcrew.eu";
 
 		requiredVersion = 0.1;
@@ -22,12 +22,15 @@ class CfgPatches {
 			"A3_Data_F_Orange_Loadorder",
 			"A3_Data_F_Tacops_Loadorder",
 			"ace_common",
-			"ace_map_gestures"
+			"ace_map_gestures",
+			"ace_markers"
 		};
 	};
 };
 
 #include "CfgFunctions.hpp"
+#include "CfgMarkerClasses.hpp"
+#include "CfgMarkers.hpp"
 #include "CfgVehicles.hpp"
 
 class Extended_PreInit_EventHandlers {

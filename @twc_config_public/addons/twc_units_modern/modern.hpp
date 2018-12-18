@@ -90,7 +90,7 @@
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_SL_D",
+			"twc_mtp_spcs_SL",
 			"UK3CB_BAF_H_Mk7_Scrim_ESS_B",
 			"ItemMap",
 			"ItemcTab",
@@ -99,7 +99,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_SL_D",
+			"twc_mtp_spcs_SL",
 			"UK3CB_BAF_H_Mk7_Scrim_ESS_B",
 			"ItemMap",
 			"ItemcTab",
@@ -237,6 +237,22 @@
 		scope=2;
 		displayName="Rifleman";
 		backpack="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
+		linkedItems[]=
+		{
+			"twc_mtp_spc_rifleman",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_mtp_spc_rifleman",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 		weapons[]=
 		{
 			"Throw",
@@ -430,6 +446,22 @@
 	{
 		displayName="2IC";
 		backpack="TWC_Backpack_Modern_2IC";
+		linkedItems[]=
+		{
+			"twc_mtp_spc_rifleman_alt",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_mtp_spc_rifleman_alt",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 		weapons[]=
 		{
 			"Throw",
@@ -528,7 +560,7 @@
 		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"twc_mtp_spcs_Marksman",
 			"UK3CB_BAF_H_Mk7_Scrim_E",
 			"ItemMap",
 			"ItemCompass",
@@ -536,7 +568,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"twc_mtp_spcs_Marksman",
 			"UK3CB_BAF_H_Mk7_Scrim_E",
 			"ItemMap",
 			"ItemCompass",
@@ -694,7 +726,7 @@
 		attendant = 1;
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_Medic_D",
+			"twc_mtp_spcs_medic",
 			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
 			"ItemMap",
 			"ItemCompass",
@@ -702,7 +734,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_Medic_D",
+			"twc_mtp_spcs_medic",
 			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
 			"ItemMap",
 			"ItemCompass",
@@ -763,8 +795,8 @@
 		displayName="Helicopter Pilot";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
 		backpack="";
-		twc_radioType = "ACRE_PRC343";
-		twc_radioChannel = 5;
+		twc_radioType = "ACRE_PRC148";
+		twc_radioChannel = 1;
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_PilotHelmetHeli_A",
@@ -815,7 +847,6 @@
 			"ACE_fieldDressing",
 			"rhsusf_ANPVS_14",
 			"ACE_EarPlugs",
-			"ACRE_PRC343",
 			"ACRE_PRC148",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -833,7 +864,6 @@
 			"ACE_fieldDressing",
 			"rhsusf_ANPVS_14",
 			"ACE_EarPlugs",
-			"ACRE_PRC343",
 			"ACRE_PRC148",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",

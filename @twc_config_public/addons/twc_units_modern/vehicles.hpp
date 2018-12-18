@@ -1,24 +1,17 @@
-
 class Car_F;
-	
 class Wheeled_APC_F: Car_F {
 	class EventHandlers;
 };
 
-	
-
-
 //handling modifications
 	class MRAP_01_base_F;
-	class rhsusf_hmmwe_base: MRAP_01_base_F
-	{
+	class rhsusf_hmmwe_base: MRAP_01_base_F {
 		class Wheels {
 			class LF;
 		};
 	};
-		
-	class rhsusf_m998_w_2dr: rhsusf_hmmwe_base
-	{
+
+	class rhsusf_m998_w_2dr: rhsusf_hmmwe_base {
 		class Wheels:Wheels {
 			class LF:LF {
 				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
@@ -31,15 +24,13 @@ class Wheeled_APC_F: Car_F {
 	};
 	
 	class rhsusf_m998_w_4dr_halftop;
-	class rhsusf_m998_w_4dr_fulltop: rhsusf_m998_w_4dr_halftop
-	{
+	class rhsusf_m998_w_4dr_fulltop: rhsusf_m998_w_4dr_halftop {
 		class Wheels {
 			class LF;
 		};
 	};
 	
-	class rhsusf_m1025_w: rhsusf_m998_w_4dr_fulltop
-	{
+	class rhsusf_m1025_w: rhsusf_m998_w_4dr_fulltop {
 		class Wheels:Wheels {
 			class LF:LF {
 				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
@@ -49,15 +40,74 @@ class Wheeled_APC_F: Car_F {
 				springStrength = 36000;
 			};
 		};
+		class Turrets;
+		
 	};
 	
-		
+	class rhsusf_m966_w: rhsusf_m1025_w
+	{
+		class Turrets: Turrets
+		{
+			class mainturret;
+			class Tow_Turret: mainturret
+			{
+				magazines[] = {"rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A","rhs_mag_TOW2A"};
+			};
+		};
+	};
+	
+	class StaticWeapon;
+	class StaticATWeapon: StaticWeapon
+	{
+		class Turrets
+		{
+			class MainTurret;
+		};
+	};
+	
+	class RHS_TOW_TriPod_base: StaticATWeapon
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {"rhs_mag_TOW2A", "rhs_mag_TOW2A", "rhs_mag_TOW2A"};
+			};
+		};
+	};
+	class RHS_KORD_Base;
+	class RHS_KORD_high_base: RHS_KORD_Base
+	{
+		class Turrets;
+	};
+	
+	class rhs_KORD_high_VMF: RHS_KORD_high_base
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	
+	class twc_KORD_high_20mm: rhs_KORD_high_VMF
+	{
+		displayName = "KORD (20MM)";
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {"200Rnd_20mm_G_belt", "200Rnd_20mm_G_belt", "200Rnd_20mm_G_belt"};
+				weapons[] = {"twc_rhs_weap_kord_20"};
+			};
+		};
+	};
+	
+	//class rhs_KORD_high_VMF;
 	
 	class UK3CB_BAF_LandRover_Base;
-	
-		
+
 	class UK3CB_BAF_LandRover_WMIK_Base: UK3CB_BAF_LandRover_Base {
-			class EventHandlers;
+		class EventHandlers;
 	};
 
 	class CUP_CH47F_base;
@@ -70,10 +120,8 @@ class Wheeled_APC_F: Car_F {
 	};
 	
 	class Heli_Attack_01_base_F;
-	class RHS_AH64_base: Heli_Attack_01_base_F
-	{
-		class hitpoints
-		{
+	class RHS_AH64_base: Heli_Attack_01_base_F {
+		class hitpoints {
 			class HitHRotor;
 		};
 		
@@ -242,80 +290,48 @@ class Wheeled_APC_F: Car_F {
 		
 	};
 	
-	
-
-
-class UK3CB_BAF_LandRover_WMIK_GPMG_Base: UK3CB_BAF_LandRover_WMIK_Base
-	{
-		
-
+	class UK3CB_BAF_LandRover_WMIK_GPMG_Base: UK3CB_BAF_LandRover_WMIK_Base {
 		class EventHandlers: EventHandlers {
 			init = " if (!isServer) exitWith {};			_car = (_this select 0);			_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [0.85,0.28,-0.8]];			_obj setVectorDirAndUp [[1,0,0.2],[0,0,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;	[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;	_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [0.85,-0.2,-0.8]];		_obj setVectorDirAndUp [[1,0,0.2],[0,0,1]];					[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;		_car animate ['sparewheel_hide', 1];		_car animate ['gear_hide', 1];		 _obj = 'fuel_can' createvehicle [0,0,0];  _obj attachto [_car, [-1.11,-1.7,-1.5]];   _obj setVectorDirAndUp [[1,0,0],[0,0,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;			  _obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-0.1,2.95,-1.4]];   _obj setVectorDirAndUp [[0,-0.1,1],[0,1,0]]; 		 _obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-1.1,-0.2,-0.8]];   _obj setVectorDirAndUp [[0.2,0,1],[0,0,1]];		 _obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-1.1,-1.3,-0.7]];   _obj setVectorDirAndUp [[0.2,0,1],[0,0,1]]; 		";
 			
 			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
 		};
 	};
-	
-class UK3CB_BAF_LandRover_WMIK_HMG_Base: UK3CB_BAF_LandRover_WMIK_Base
-	{
-		
 
+	class UK3CB_BAF_LandRover_WMIK_HMG_Base: UK3CB_BAF_LandRover_WMIK_Base {
 		class EventHandlers: EventHandlers {
 			init = " if (!isServer) exitWith {};			_car = (_this select 0);			_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [0.85,0.28,-0.7]];			_obj setVectorDirAndUp [[1,0,0.2],[0,0,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;	[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;	_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [0.85,-0.2,-0.7]];		_obj setVectorDirAndUp [[1,0,0.2],[0,0,1]];					[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;		_car animate ['sparewheel_hide', 1];		_car animate ['gear_hide', 1];		 _obj = 'fuel_can' createvehicle [0,0,0];  _obj attachto [_car, [-1.11,-1.7,-1.4]];   _obj setVectorDirAndUp [[1,0,0],[0,0,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;			  _obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-0.1,2.95,-1.3]];   _obj setVectorDirAndUp [[0,-0.1,1],[0,1,0]]; 		 _obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-1.1,-0.2,-0.7]];   _obj setVectorDirAndUp [[0.2,0,1],[0,0,1]];		 _obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-1.1,-1.3,-0.6]];   _obj setVectorDirAndUp [[0.2,0,1],[0,0,1]]; 		";
-			
 			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
 		};
 	};
 	
-	
-class UK3CB_BAF_LandRover_Snatch_Base: UK3CB_BAF_LandRover_Base
-	{
-		
-
+	class UK3CB_BAF_LandRover_Snatch_Base: UK3CB_BAF_LandRover_Base {
 		class EventHandlers: EventHandlers {
 			init = " if (!isServer) exitWith {};			_car = (_this select 0);			_obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [0,2.65,-0.9]];   _obj setVectorDirAndUp [[0,0,1],[0,1,0]]; _car animate ['sparewheel_hide', 1];	";
-			
 			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
 		};
 	};
 	
-	
-class UK3CB_BAF_LandRover_Hard_Base: UK3CB_BAF_LandRover_Base
-	{
-		
-
+	class UK3CB_BAF_LandRover_Hard_Base: UK3CB_BAF_LandRover_Base {
 		class EventHandlers: EventHandlers {
 			init = " if (!isServer) exitWith {};			_car = (_this select 0);		_car animate ['sparewheel_hide', 1];		_obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-1.05,-0.25,-0.35]];   _obj setVectorDirAndUp [[0.1,0,1],[0,0,1]]; 	";
-			
 			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
 		};
 	};
 	
-	
-	
-
-	
-
-
-	
-class CUP_Wolfhound_Base : Wheeled_APC_F
-	{
-		
-
+	class CUP_Wolfhound_Base : Wheeled_APC_F {
 		class EventHandlers: EventHandlers {
 			init = " if (!isServer) exitWith {};			_car = (_this select 0);					_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [-1.2,2.5,1.69]];			_obj setVectorDirAndUp [[-1,0,0],[0,0.1,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;			_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [-1.05,2.5,1.69]];			_obj setVectorDirAndUp [[-1,0,0],[0,0.1,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;					_obj = 'Box_NATO_AmmoVeh_F' createvehicle [0,0,0];		_obj attachto [_car, [-0.3,-3.5,2.3]];						_obj = 'UK3CB_BAF_Box_762_Ammo' createvehicle [0,0,0];		_obj attachto [_car, [0.8,-4.5,2.0]];				_obj = 'UK3CB_BAF_Box_556_Ammo' createvehicle [0,0,0];		_obj attachto [_car, [0.8,-3.75,2.0]];				_obj = 'UK3CB_BAF_Box_40_Ammo' createvehicle [0,0,0];		_obj attachto [_car, [0.8,-3.0,2.0]];			";
-			
 			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
 		};
 	};
-	
 	
 	class UK3CB_BAF_LandRover_Hard_FFR_Green_A;
 	class UK3CB_BAF_LandRover_Hard_FFR_Green_A_TWCBaseRadio: UK3CB_BAF_LandRover_Hard_FFR_Green_A {
 		displayname = "Land Rover TWC Base Radio";
 		class AcreRacks {
-	   		class Rack_1 {
-		       		displayName = "Dash"; // Name is displayed in the interaction menu.
+			class Rack_1 {
+				displayName = "Dash"; // Name is displayed in the interaction menu.
 				shortName = "Dash";
 				componentName = "ACRE_VRC103";
 				allowedPositions[] = {"inside", "external"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
@@ -324,9 +340,10 @@ class CUP_Wolfhound_Base : Wheeled_APC_F
 				mountedRadio = "ACRE_PRC117F"; // Predefined mounted radio
 				isRadioRemovable = 0;
 			};
-       	};
-	};	
-	
+		};
+
+		class AcreIntercoms {};
+	};
 	
 	class UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_A;
 	class UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_A_TWC: UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_A {
@@ -334,9 +351,10 @@ class CUP_Wolfhound_Base : Wheeled_APC_F
 		maximumLoad = 5000;
 		enginePower = 120;
 		peakTorque = 430;
+		
 		class AcreRacks {
-	   		class Rack_1 {
-		       		displayName = "Dash"; // Name is displayed in the interaction menu.
+			class Rack_1 {
+				displayName = "Dash"; // Name is displayed in the interaction menu.
 				shortName = "Dash";
 				componentName = "ACRE_VRC103";
 				allowedPositions[] = {"inside", "external"}; // Who has access. "inside" - anyone inside, "external" - provides access upto 10m away, "driver", "gunner", "copilot", "commander"
@@ -345,29 +363,27 @@ class CUP_Wolfhound_Base : Wheeled_APC_F
 				mountedRadio = "ACRE_PRC117F"; // Predefined mounted radio
 				isRadioRemovable = 0;
 			};
-       	};
-		class transportWeapons
-		{
-			class _xx_law
-			{
+		};
+
+		class AcreIntercoms {};
+		class transportWeapons {
+			class _xx_law {
 				weapon = "rhs_weap_m72a7";
 				count = 2;
 			};
-			class _xx_tripod
-			{
+
+			class _xx_tripod {
 				weapon = "UK3CB_BAF_Tripod";
 				count = 1;
 			};
 		};
-		class transportMagazines
-		{
-			class _xx_stanag
-			{
+
+		class transportMagazines {
+			class _xx_stanag {
 				magazine = "UK3CB_BAF_556_30Rnd";
 				count = 25;
 			};
-			class _xx_stanagTracer
-			{
+			class _xx_stanagTracer {
 				magazine = "UK3CB_BAF_556_30Rnd_T";
 				count = 15;
 			};
@@ -505,7 +521,8 @@ class CUP_Wolfhound_Base : Wheeled_APC_F
 				count = 20;
 			};
 		};
-				class Wheels {
+		
+		class Wheels {
 			class LF {
 				boneName = "wheel_1_1_damper";
 				boundary = "wheel_1_1_bound";

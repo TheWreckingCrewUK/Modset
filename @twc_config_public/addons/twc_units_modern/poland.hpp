@@ -107,7 +107,7 @@
 			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
@@ -122,7 +122,7 @@
 			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 	};
 
@@ -227,7 +227,7 @@
 			"rhs_VOG25",
 			"HandGrenade",
 			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
@@ -243,7 +243,7 @@
 			"rhs_VOG25",
 			"HandGrenade",
 			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 	};
 	
@@ -297,7 +297,7 @@
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
@@ -307,7 +307,7 @@
 			"SmokeShell",
 			"SmokeShell",
 			"SmokeShell",
-			"B_IR_Grenade"
+			"SmokeShell"
 		};
 	};
 	

@@ -719,13 +719,13 @@
 		{
 			"Throw",
 			"Put",
-			"rhs_m4a1_compm4"
+			"rhs_m4_compm4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"rhs_m4a1_compm4"
+			"rhs_m4_compm4"
 		};
 		magazines[]=
 		{
@@ -931,14 +931,14 @@
 		{
 			"Throw",
 			"Put",
-			"twc_m4_cco_vfg",
+			"rhs_m4_compm4",
 			"rhs_weap_M136"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_m4_cco_vfg",
+			"rhs_m4_compm4",
 			"rhs_weap_M136"
 		};
 		magazines[]=

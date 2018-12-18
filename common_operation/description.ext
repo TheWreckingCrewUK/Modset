@@ -1,4 +1,4 @@
-#define OperationName "#Operation Name#"
+#define OperationName "Operation #Name#"
 author = "[TWC] #Author Name#";
 
 onLoadName = OperationName;

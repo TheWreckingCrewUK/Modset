@@ -46,7 +46,7 @@ _master = _gunner;
 	};
 } foreach _battery;
 
-if (_master == _gunner) then {systemchat "I am the captain of my soul";};
+//if (_master == _gunner) then {systemchat "I am the captain of my soul";};
 
 _nataccinit = (4 / (0.5 + (_skill / 2))) * (1 + ((_batterysize) / 20));
 _natacc = ((random _nataccinit) - (_nataccinit / 2));

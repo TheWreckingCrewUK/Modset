@@ -1,7 +1,8 @@
 //Calls all the functions on player start.
 params["_unit"];
-if (player != _unit) exitWith {};
+
 if (!hasInterface || isDedicated) exitWith {};
+if (player != _unit) exitWith {};
 
 waitUntil { sleep 0.5; !(isNull player) };
 waitUntil { sleep 1.271; time > 0 };
@@ -49,7 +50,7 @@ player addEventHandler ["InventoryOpened",{
 			_ctrl3 ctrlSetText "a3\ui_f\data\GUI\Rsc\RscDisplayGear\ui_gear_secondary_gs.paa";
 		};		
 		
-		uiNamespace setVariable ["twc_uiGun",(twc_weaponOnBack select 0)];		
+		uiNamespace setVariable ["twc_uiGun",(twc_weaponOnBack select 0)];
 		uiNamespace setVariable ["twc_uiGun_old",_ctrl2];
 	};
 }];
@@ -89,7 +90,7 @@ EM_blacklist_obj = [
 	"Wire",
 	"Fort_RazorWire",
 	"LIB_B_Hedgerows_big",
-	"Land_I44_bwf_6_mlod",
+	"Land_I44_Bwf_6_Mlod",
 	"Land_I44_Buildings_Barbedwire",
 	"Land_I44_Buildings_Barbedwire2",
 	"Land_I44_Buildings_Bush_Long",
@@ -116,9 +117,9 @@ EM_blacklist_obj = [
 	"Land_WW2_Element_C",
 	"Land_WW2_Hemmbalken_1",
 	"Land_I44_HedgeHog",
-	"Land_WW2_wire_3",
-	"Land_WW2_wire_2",
-	"Land_WW2_wire_1",
+	"Land_WW2_Wire_3",
+	"Land_WW2_Wire_2",
+	"Land_WW2_Wire_1",
 	"Land_CSA38_zataras",
 	"Land_CSA38_zatkol2",
 	"Land_CSA38_zataras3",
@@ -133,7 +134,9 @@ EM_blacklist_obj = [
 	"Land_CSA38_zataras4",
 	"Land_fow_Barbedwire",
 	"Land_CSA38_jezci",
-	"Land_WW2_wire_bruno"
+	"Land_WW2_Wire_Bruno",
+	"Land_I44_Buildings_Bunker_AA",
+	"Land_I44_Buildings_CT_Straight"
 ];
 
 openBoltFnc = {
@@ -143,9 +146,9 @@ openBoltFnc = {
 		_openboltcoef = [(configFile >> "CfgWeapons" >> (primaryweapon player)), "twc_openbolt_coef", 1] call BIS_fnc_returnConfigEntry;
 
 		[{
-
-			[player, primaryweapon player] call ace_overheating_fnc_jamWeapon;
-
+			if (random 1 < 0.5) then {
+				[player, primaryweapon player] call ace_overheating_fnc_jamWeapon;
+			};
 			[] call openBoltFnc;
 		}, [], (random (6000 / _openboltcoef)) + 200] call CBA_fnc_waitAndExecute;
 	} else {
@@ -154,6 +157,88 @@ openBoltFnc = {
 };
 
 [] call openBoltFnc;
+
+twc_fnc_togglegunwalk = {
+
+	params ["_unit", "_set"];
+
+	if (!_activated || !isServer) exitWith {};
+
+	// Wait until PostInit has completed, then execute our function
+	[{
+		params ["_unit", "_set"];
+		
+			(vehicle _unit) setvariable ["twc_isgwalking", _set, true];
+		
+	}, [_unit, _set], 0.05] call CBA_fnc_waitAndExecute;
+
+
+	if (!isNull _logic) then {
+		deleteVehicle _logic;
+	};
+};
+
+twc_fnc_togglemortarwalk = {
+
+	params ["_unit", "_set"];
+
+	if (!_activated || !isServer) exitWith {};
+
+	// Wait until PostInit has completed, then execute our function
+	[{
+		params ["_unit", "_set"];
+		
+			(vehicle _unit) setvariable ["twc_ismwalking", _set, true];
+		
+	}, [_unit, _set], 0.05] call CBA_fnc_waitAndExecute;
+
+
+	if (!isNull _logic) then {
+		deleteVehicle _logic;
+	};
+};
+/*
+["twc_addcbagwalk", {
+	params ["_x"];
+	(vehicle _x) addEventHandler ["Fired", {
+		if (((vehicle (_this select 0)) getvariable ["twc_isgwalking", 0]) == 1) then {
+			[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;
+		};
+	}];
+}] call CBA_fnc_addEventHandler;
+
+["twc_addcbamwalk", {
+	params ["_x"];
+	(vehicle _x) addEventHandler ["Fired", {
+		if (((vehicle (_this select 0)) getvariable ["twc_ismwalking", 0]) == 1) then {
+			[_this select 6, _this select 7] call twc_fnc_mortarwalk; 
+		};
+	}];
+}] call CBA_fnc_addEventHandler;
+*/
+twc_addgunwalkevent = {
+	params ["_unit"];
+	(vehicle _unit) addEventHandler ["Fired", {
+		if (((vehicle (_this select 0)) getvariable ["twc_isgwalking", 0]) == 1) then {
+			[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;
+		};
+	}];
+};
+
+twc_addmortarwalkevent = {
+	params ["_unit"];
+	(vehicle _unit) addEventHandler ["Fired", {
+		if (((vehicle (_this select 0)) getvariable ["twc_ismwalking", 0]) == 1) then {
+			[_this select 6, _this select 7] call twc_fnc_mortarwalk; 
+		};
+	}];
+};
+
+[] spawn {
+	sleep 1;
+	twc_walkinitcomplete = 1;
+	publicVariable "twc_walkinitcomplete";
+};
 
 [{
 	if (isNil {missionNameSpace getVariable "twcModuleEnabled"}) exitWith {
@@ -168,4 +253,15 @@ openBoltFnc = {
 	[(missionNameSpace getVariable ["run", 0])] spawn twc_fnc_run;
 	[(missionNameSpace getVariable ["safeZone", 0])] spawn twc_fnc_safeZone;
 	[(missionNameSpace getVariable ["zuesObjects", true])] spawn twc_fnc_zeus;
+
+	_hasWorld = isClass (configFile >> "CfgWorlds" >> worldName);
+	if !(_hasWorld) then {
+		player globalChat "I am missing the required map for this mission.";
+		
+		for [{_i=0}, {_i<5}, {_i=_i+1}] do {
+			systemChat "You are missing the map required for this mission!";
+		};
+	};
+
+	["twc_framework_initComplete", []] call CBA_fnc_localEvent;
 }, [], 1] call CBA_fnc_waitAndExecute;

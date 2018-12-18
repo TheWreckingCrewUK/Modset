@@ -79,6 +79,7 @@ class TWC_Infantry_1990_Regular_Woodland_SectionCommander: TWC_Infantry_1990_Reg
 {
 	displayName = "Section Commander";
 	backpack = "TWC_Backpack_1990_Regular_Woodland_SectionCommander";
+	TWC_isCommandRole = 1;
 	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D_Laser",
@@ -130,6 +131,7 @@ class TWC_Infantry_1990_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 	scope = 2;
 	displayName = "Platoon Commander";
 	backpack = "TWC_Backpack_1990_Regular_Woodland_Platoon_Commander";
+	TWC_isCommandRole = 1;
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -176,6 +178,7 @@ class TWC_Infantry_1990_Regular_Woodland_Platoon_Medic: TWC_Infantry_1990_Regula
 {
 	displayName = "Platoon Medic";
 	backpack = "TWC_Backpack_1990_Regular_Woodland_Platoon_Medic";
+	TWC_isCommandRole = 0;
 	attendant = 1;
 	Items[] =
 	{
@@ -369,6 +372,7 @@ class TWC_Infantry_1990_Regular_Woodland_Spotter: TWC_Infantry_1990_Regular_Wood
 {
 	displayname = "Spotter";
 	backpack = "TWC_Backpack_1990_Regular_Woodland_Spotter";
+	TWC_isCommandRole = 1;
 	weapons[]=
 	{
 		"TWC_Weapon_L96_Woodland",
@@ -416,6 +420,7 @@ class TWC_Infantry_1990_Regular_Woodland_Artillery_Commander: TWC_Infantry_1990_
 {
 	displayName = "Artillery Commander";
 	backpack = "TWC_Backpack_1990_Regular_Woodland_Artillery_Commander";
+	TWC_isCommandRole = 1;
 	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
@@ -455,6 +460,7 @@ class TWC_Infantry_1990_Regular_Woodland_Artillery_Crew: TWC_Infantry_1990_Regul
 {
 	displayName = "Artillery Crew";
 	backpack = "UK3CB_BAF_B_Bergen_DPMW_Rifleman_B";
+	TWC_isCommandRole = 0;
 	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
@@ -472,6 +478,7 @@ class TWC_Infantry_1990_Regular_Woodland_FO: TWC_Infantry_1990_Regular_Woodland_
 {
 	displayName = "Forward Observer";
 	backpack = "TWC_Backpack_1990_Regular_Woodland_FO";
+	TWC_isCommandRole = 0;
 };
 
 //EOD Team
@@ -479,6 +486,7 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Commander: TWC_Infantry_1990_Regula
 {
 	displayName = "EOD Commander";
 	backpack = "TWC_Backpack_1990_Regular_Woodland_EOD_Commander";
+	TWC_isCommandRole = 1;
 	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
@@ -530,6 +538,7 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Gunner: TWC_Infantry_1990_Regular_W
 {
 	displayName = "EOD Gunner";
 	backpack = "";
+	TWC_isCommandRole = 0;
 	weapons[] =
 	{
 		"TWC_Weapon_L135A1",
@@ -575,6 +584,7 @@ class TWC_Infantry_1990_Regular_Woodland_FAC: TWC_Infantry_1990_Regular_Woodland
 {
 	displayName = "Forward Air Controller";
 	backpack = "TWC_Backpack_1990_Regular_Woodland_FAC";
+	TWC_isCommandRole = 0;
 	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D_Laser",
@@ -607,6 +617,7 @@ class TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millenni
 	scope = 2;
 	displayName = "Helicopter Pilot";
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMW_ShortSleeve";
+	TWC_isCommandRole = 1;
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Pilot_DPMW",
@@ -672,4 +683,5 @@ class TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander: TWC_Infantry_1990_Re
 class TWC_Infantry_1990_Regular_Woodland_Vehicle_Crew: TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander
 {
 	displayName = "Vehicle Crew";
+	TWC_isCommandRole = 0;
 };

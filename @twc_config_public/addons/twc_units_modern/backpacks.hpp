@@ -24,12 +24,13 @@
 	{
 		scope = 1;
 	hiddenselectionstextures[] = {"\A3\Weapons_F\Ammoboxes\Bags\Data\backpack_small_oli_co.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
 		
 		class TransportMagazines
 		{
 			class _xx_mag
 			{
-				magazine = "rhsgref_30rnd_556x45_m21";
+				magazine = "twc_rhsgref_30rnd_556x45_m21";
 				count = 5;
 			};
 
@@ -147,7 +148,7 @@
 			};
 			class _xx_stanag
 			{
-				magazine = "rhsgref_30rnd_556x45_m21";
+				magazine = "twc_rhsgref_30rnd_556x45_m21";
 				count = 5;
 			};
 			class _xx_m21

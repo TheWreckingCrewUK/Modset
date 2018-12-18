@@ -39,7 +39,17 @@ class CfgFunctions {
 			class GliderTakeOff {};
 			class confiscateBadItems {};
 			class addToGroup {};
+			class silentSafety {};
+			class gunwalk {};
+			class mortarwalk {};
 			class init{};
+			class canAddToGroup {};
+			class addACEInteraction {};
+			class soundLoop {};
+			
+			/** UTILITY FUNCTIONS **/
+			class findGreatestDistanceWithArray {};
+			class findGreatestDistancePairInArray {};
 		};
 		
 		class modules {
@@ -76,6 +86,12 @@ class CfgFunctions {
 			class moduleGrabComposition {};
 			class moduleIgnoreForwardBase {};
 			class moduleGliderTakeOff {};
+			class moduleTriggerUncache {};
+			class moduleUrbanUnitsCache {};
+			class modulegunwalk {};
+			class modulemortarwalk {};
+			class moduleACEInteract {};
+			class moduleAmbientSound {};
 		};
 		
 		class cache {
@@ -101,11 +117,8 @@ class CfgFunctions {
 
 		class curator {
 			file = "twc_framework\curator";
-			class healPlayer {};
-			class killPlayer {};
 			class setSpectator {};
-			class medicalInfo {};
-			class toggleCon {};
+			// medical moved to twc_medical
 		};
 
 		class artillery {

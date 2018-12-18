@@ -139,6 +139,17 @@ class CfgPatches
 			"twc_heavy_men_rif_ak74",
 			"twc_heavy_men_rif_m16",
 			
+			"syr_twc_ins_Men_rif1",
+			"syr_twc_ins_Men_rif2",
+			"syr_twc_ins_Men_rif3",
+			"syr_twc_ins_Men_gren1",
+			"syr_twc_ins_Men_gren2",
+			"syr_twc_ins_Men_rpg1",
+			"syr_twc_ins_Men_rpg2",
+			"syr_twc_ins_Men_marksman",
+			"syr_twc_ins_Men_mg1",
+			"syr_twc_ins_Men_mg2",
+			
 			"twc_greek_officer",
 			"twc_greek_rifleman",
 			"twc_greek_rifleman_2",
@@ -305,6 +316,13 @@ class CfgFactionClasses
 		priority=2;
 		side=2;
 	};
+
+	class TWC_Syr_Ins
+	{
+		displayName="Syrian Militia (TWC)";
+		priority=2;
+		side=2;
+	};
 	
 };
 class EventHandlers;
@@ -413,6 +431,49 @@ class CfgVehicles
 		};
 	};
 	
+	class Backpack_AT_og7_olive: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		hiddenselectionstextures[] = {"\A3\Weapons_F\Ammoboxes\Bags\Data\backpack_small_oli_co.paa"};
+		class TransportMagazines
+		{
+			class _xx_RPG7
+			{
+				magazine="CUP_OG7_M";
+				count=7;
+			};
+		};
+	};
+	
+	
+	class twc_Backpack_MG_olive: CUP_B_AlicePack_Khaki
+	{
+		scope = 1;
+		hiddenselectionstextures[] = {"\A3\Weapons_F\Ammoboxes\Bags\Data\backpack_small_oli_co.paa"};
+		class TransportMagazines
+		{
+			class _xx_belt
+			{
+				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+				count=4;
+			};
+		};
+	};
+	
+	class CUP_B_RUS_Backpack;
+	class Backpack_AT_pg7_spet: CUP_B_RUS_Backpack
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_RPG7
+			{
+				magazine="CUP_PG7V_M";
+				count=5;
+			};
+		};
+	};
+	
 		class Backpack_AT_og7: CUP_B_RPGPack_Khaki
 	{
 		scope = 1;
@@ -422,6 +483,33 @@ class CfgVehicles
 			{
 				magazine="CUP_OG7_M";
 				count=4;
+			};
+		};
+	};
+	class twc_back_webbing;
+		class twc_Backpack_spc_VOG25: twc_back_webbing
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_VOG25
+			{
+				magazine="rhs_VOG25";
+				count=5;
+			};
+		};
+	};
+	
+	class CUP_B_CivPack_WDL;
+		class twc_Backpack_civ_VOG25: CUP_B_CivPack_WDL
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_VOG25
+			{
+				magazine="rhs_VOG25";
+				count=5;
 			};
 		};
 	};
@@ -497,5 +585,6 @@ accuracy=0.01;
 	#include "takistanins.hpp"
 	#include "farcrebels.hpp"
 	#include "gen_heavy.hpp"
+	#include "syrins.hpp"
 };
 	#include "weapons.hpp"

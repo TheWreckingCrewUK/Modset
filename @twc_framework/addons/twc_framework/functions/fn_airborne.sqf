@@ -15,11 +15,11 @@
 * NOTHING
 *
 * Example:
-* ["planeSpawn", "planeDrop", "planeDelete", "Modern_British", "", "", 2, "attack_location"] call twc_fnc_Airborne;
+* ["planeSpawn", "planeDrop", "planeDelete", "Modern_British", "", "", 2, "attack_location", "this execVM 'infantry_move.sqf'"] call twc_fnc_Airborne;
 *
 * Public: No
 */
-params ["_pos", "_destination", "_end", "_Plane_Units", "_type_plane", "_type_cargo", "_amount_cargo", "_attackpos"];
+params ["_pos", "_destination", "_end", "_Plane_Units", "_type_plane", "_type_cargo", "_amount_cargo", "_attackpos", "_script"];
 
 if (isServer) then 
 {
@@ -73,6 +73,7 @@ if (isServer) then
 	
 	_vehicle = [_pos, _dir, _type_plane, _side] call BIS_fnc_spawnVehicle;
 	_plane = _vehicle select 0;
+	_plane setVariable ["twc_cacheDisabled",true];
 	if (_type_plane == "an12BK_RU") then {
 		_plane setObjectTextureGlobal[0,"\an12bkv3\liveries\18\An12main01.pac"];
 		_plane setObjectTextureGlobal[1,"\an12bkv3\liveries\18\An12main02.pac"];
@@ -94,6 +95,7 @@ if (isServer) then
 		
 		_waypoint_infantry = _group addWaypoint [_attackpos, 50];
 		_waypoint_infantry setWaypointType "SAD";
+		_waypoint_infantry setWaypointStatements ["true", _script];
 	};
 	
 	twc_ai_paradrop = 
@@ -130,7 +132,7 @@ if (isServer) then
 		{
 			(group _x) leaveVehicle _v;
 			_x enableCollisionWith _v;
-		} foreach _cargo;	
+		} foreach _cargo;
 	};
 
 	_waypoint_plane_1 = _crewGroup addWaypoint [_destination, 0];

@@ -49,7 +49,8 @@ class CfgVehicles {
 			class Player;
 		};
 	};
-
+	
+	/** EDITOR ONLY MODULES **/
 	class TWC_Module_Medical: Module_F {
 		author = "[TWC] Bosenator";
 		scope = 2;
@@ -69,5 +70,111 @@ class CfgVehicles {
 				defaultValue = 0;
 			};
 		};
+	};
+	
+	class TWC_Module_AssignFieldTent: Module_F {
+		author = "[TWC] Bosenator";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "TWC Medical Configuration";
+		category = "twc_missionSetup";
+		function = "twc_medical_fnc_moduleAssignFieldTent";
+		functionPriority = 10;
+		isGlobal = 2;
+		isTriggerActivated = 0;
+		isDisplosable = 0;
+		
+		class Arguments {
+			class enabled {
+				displayName = "Set as Field Tent";
+				description = "Set as Field Tent";
+				typeName = "BOOL";
+			};
+		};
+		
+		class ModuleDescription {
+			description = "Object(s) to set as Field Tent";
+			sync[] = {};
+		};
+	};
+	
+	/** ZEUS/CURATOR ONLY MODULES **/
+	class TWC_Curator_fullHealUnit: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_zeus";
+		scope = 1;
+		scopeCurator = 2;
+		functionPriority = 1;
+		isGlobal = 1;
+		isTriggerActivated = 0;
+		function = "twc_medical_fnc_fullHealUnit";
+		curatorCanAttach = 1;
+		displayName = "Fully Heal Unit";
+	};
+	
+	class TWC_Curator_killUnit: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_zeus";
+		scope = 1;
+		scopeCurator = 2;
+		functionPriority = 1;
+		isGlobal = 1;
+		isTriggerActivated = 0;
+		function = "twc_medical_fnc_killUnit";
+		curatorCanAttach = 1;
+		displayName = "Kill Unit";
+	};
+	
+	class TWC_Curator_resuscitateUnit: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_zeus";
+		scope = 1;
+		scopeCurator = 2;
+		functionPriority = 1;
+		isGlobal = 1;
+		isTriggerActivated = 0;
+		function = "twc_medical_fnc_resuscitateUnit";
+		curatorCanAttach = 1;
+		displayName = "Resuscitate Unit";
+	};
+	
+	class TWC_Curator_inspectUnit: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_zeus";
+		scope = 1;
+		scopeCurator = 2;
+		functionPriority = 1;
+		isGlobal = 1;
+		isTriggerActivated = 0;
+		function = "twc_medical_fnc_inspectUnit";
+		curatorCanAttach = 1;
+		displayName = "Inspect Unit (Medically)";
+	};
+	
+	class TWC_Curator_logUnit: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_zeus";
+		scope = 1;
+		scopeCurator = 2;
+		functionPriority = 1;
+		isGlobal = 1;
+		isTriggerActivated = 0;
+		function = "twc_medical_fnc_logUnit";
+		curatorCanAttach = 1;
+		displayName = "log Unit (Medically)";
+	};
+	
+	class TWC_Curator_setFieldTent: Module_F {
+		author = "[TWC] Bosenator";
+		scope = 1;
+		scopeCurator = 2;
+		displayName = "Set Field Tent";
+		category = "twc_zeus";
+		function = "twc_medical_fnc_setFieldTent";
+		functionPriority = 1;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisplosable = 0;
+		curatorCanAttach = 1;
 	};
 };
