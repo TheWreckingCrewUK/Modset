@@ -45,6 +45,7 @@ class CfgFunctions {
 			class init{};
 			class canAddToGroup {};
 			class addACEInteraction {};
+			class soundLoop {};
 			
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
@@ -90,6 +91,7 @@ class CfgFunctions {
 			class modulegunwalk {};
 			class modulemortarwalk {};
 			class moduleACEInteract {};
+			class moduleAmbientSound {};
 		};
 		
 		class cache {

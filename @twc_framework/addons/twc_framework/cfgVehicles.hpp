@@ -1346,6 +1346,70 @@ class CfgVehicles {
 			sync[] = {"AnyStaticObject"};
 		};
 	};
+	
+	class TWC_Module_AmbientSound: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Ambient Sound";
+		function = "twc_fnc_moduleAmbientSound";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\ambient_sound_ca.paa";
+		functionPriority = 1;
+		
+		class Arguments {
+			class soundFilePath {
+				displayName = "Sound File Path";
+				description = "Sound File Path...";
+				typeName = "String";
+				defaultValue = "CSA38II_sounds\a_battle\csa38_battle1.ogg";
+			};
+			
+			class min {
+				displayName = "min time";
+				description = "min time to wait between loops";
+				typeName = "Number";
+				defaultValue = 30;
+			};
+			
+			class mid {
+				displayName = "mid time";
+				description = "mid time to wait between loops";
+				typeName = "Number";
+				defaultValue = 45;
+			};
+			
+			class max {
+				displayName = "max time";
+				description = "max time to wait between loops";
+				typeName = "Number";
+				defaultValue = 45;
+			};
+			
+			class condition {
+				displayName = "Stop Condition";
+				description = "Condition to check when to stop";
+				typeName = "String";
+				defaultValue = "triggerActivated forExample";
+			};
+			
+			class isInside {
+				displayName = "Is Inside?";
+				description = "Is the sound coming from inside something?";
+				typeName = "BOOL";
+				defaultValue = 0;
+			};
+			
+			class soundArgs {
+				displayName = "soundArgs array";
+				description = "[volume, pitch, distance]";
+				typeName = "String";
+				defaultValue = "[4, 1, 1000]";
+			};
+		};
+	};
 
 	/* class TWC_Module_ArtillerySpotter: Module_F {
 		author = "[TWC] Bosenator";
