@@ -44,6 +44,7 @@ class CfgFunctions {
 			class mortarwalk {};
 			class init{};
 			class canAddToGroup {};
+			class addACEInteraction {};
 			
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
@@ -88,6 +89,7 @@ class CfgFunctions {
 			class moduleUrbanUnitsCache {};
 			class modulegunwalk {};
 			class modulemortarwalk {};
+			class moduleACEInteract {};
 		};
 		
 		class cache {

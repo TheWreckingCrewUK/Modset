@@ -1304,6 +1304,49 @@ class CfgVehicles {
 		};
 	};
 
+	class TWC_Module_ACEInteract: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_missionSetup";
+		displayName = "Add ACE Interact";
+		function = "twc_fnc_moduleACEInteract";
+		scope = 2;
+		scopeCurator = 0;
+		curatorCanAttach = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\ace_interact_ca.paa";
+		functionPriority = 1;
+		
+		class Arguments {
+			class interactName {
+				displayName = "Interaction Display Name";
+				description = "What should it say when they interact?";
+				typeName = "String";
+				defaultValue = "";
+			};
+			
+			class interactCondition {
+				displayName = "Interaction Condition";
+				description = "Condition Logic for it to exist";
+				typeName = "String";
+				defaultValue = "true";
+			};
+			
+			class interactExecute {
+				displayName = "Interaction Execute";
+				description = "Code to Execute once Interacted";
+				typeName = "String";
+				defaultValue = "hint 'example';";
+			};
+		};
+		
+		class ModuleDescription: ModuleDescription {
+			description = "Add ACE Interaction";
+			sync[] = {"AnyStaticObject"};
+		};
+	};
+
 	/* class TWC_Module_ArtillerySpotter: Module_F {
 		author = "[TWC] Bosenator";
 		category = "twc_mission_framework";
