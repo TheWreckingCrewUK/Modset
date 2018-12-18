@@ -61,7 +61,7 @@ class TWC_Vehicle_ColdWar_FV432_Woodland: ukcw_fv432 {
 		};
 	};
 
-	REGULAR_77({"crew", {"turnedout", "crew"}}, {"Intercom_1"})
+	REGULAR_77({"driver","commander"}, {"Intercom_1"})
 };
 
 /* class TWC_Vehicle_ColdWar_FV432_Desert: TWC_Vehicle_ColdWar_FV432_Woodland {
@@ -126,7 +126,7 @@ class TWC_Vehicle_ColdWar_FV432_Woodland_COIN: ukcw_fv432 {
 		};
 	};
 
-	REGULAR_77({"crew", {"turnedout", "crew"}}, {"Intercom_1"})
+	REGULAR_77({"driver","commander"}}, {"Intercom_1"})
 };
 
 /* class TWC_Vehicle_ColdWar_FV432_Desert_COIN: TWC_Vehicle_ColdWar_FV432_Woodland_COIN {
@@ -161,7 +161,7 @@ class TWC_Vehicle_ColdWar_Scimitar_Woodland: ukcw_cvrt_Scim_w_L1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"crew", {"turnedout", "crew"}}, {"Intercom_1"})
+	REGULAR_77({"driver","commander","gunner"}, {"Intercom_1"})
 };
 
 class TWC_Vehicle_ColdWar_Scimitar_Desert: ukcw_cvrt_Scim_d_L1 {
@@ -190,7 +190,7 @@ class TWC_Vehicle_ColdWar_Scimitar_Desert: ukcw_cvrt_Scim_d_L1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"crew", {"turnedout", "crew"}}, {"Intercom_1"})
+	REGULAR_77({"driver","commander","gunner"}, {"Intercom_1"})
 };
 
 #undef CURRENT_VEHICLE
@@ -221,7 +221,7 @@ class TWC_Vehicle_ColdWar_Scorpion_Woodland: ukcw_Scorpion_w_L1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"crew", {"turnedout", "crew"}}, {"Intercom_1"})
+	REGULAR_77({"driver","commander","gunner"}, {"Intercom_1"})
 };
  
 class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_Scorpion_d_L1 {
@@ -250,7 +250,7 @@ class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_Scorpion_d_L1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"crew", {"turnedout", "crew"}}, {"Intercom_1"})
+	REGULAR_77({"driver","commander","gunner"}, {"Intercom_1"})
 };
 
 #undef CURRENT_VEHICLE
@@ -284,5 +284,5 @@ class TWC_Vehicle_ColdWar_Chieftain_Woodland: ukcw_chieftainmk10 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"crew", {"turnedout", "crew"}}, {"Intercom_1"})
+	REGULAR_77({"driver","commander","gunner"}, {"Intercom_1"})
 };
