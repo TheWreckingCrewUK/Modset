@@ -17,7 +17,7 @@ class CfgPatches {
 };
 
 class CfgFunctions {
-	class twc_acefixes {
+	class TWC_Fixes {
 		tag = "twc_fixes";
 		class init {
 			file = "twc_fixes\functions";
@@ -50,14 +50,14 @@ class CfgFunctions {
 
 class Extended_PostInit_EventHandlers {
 	class TWC_Fixes {
-		serverInit = "[] call twc_fixes_fnc_serverInit;";
+		serverInit = "[] call TWC_Fixes_fnc_serverInit;";
 	};
 };
 
 class Extended_InitPost_EventHandlers {
 	class Helicopter {
 		class TWC_Fixes_EH {
-			init = "_this call twc_fixes_fnc_helicopterInit;";
+			init = "_this call TWC_Fixes_fnc_helicopterInit;";
 		};
 	};
 };
