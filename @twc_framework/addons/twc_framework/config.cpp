@@ -16,7 +16,8 @@ class CfgPatches {
 			"TWC_Module_IntelHint",
 			"TWC_Module_IntelHintWithVariable",
 			"TWC_Module_TriggerUncache",
-			"TWC_Module_SetUrbanUnitsCache"
+			"TWC_Module_SetUrbanUnitsCache",
+			"TWC_Module_ACEInteract"
 		};
 		
 		weapons[] = {};
