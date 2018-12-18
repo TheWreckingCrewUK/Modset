@@ -126,7 +126,7 @@ class TWC_Vehicle_ColdWar_FV432_Woodland_COIN: ukcw_fv432 {
 		};
 	};
 
-	REGULAR_77({"driver","commander"}}, {"Intercom_1"})
+	REGULAR_77({"driver","commander"}, {"Intercom_1"})
 };
 
 /* class TWC_Vehicle_ColdWar_FV432_Desert_COIN: TWC_Vehicle_ColdWar_FV432_Woodland_COIN {
