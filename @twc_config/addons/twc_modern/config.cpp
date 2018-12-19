@@ -98,7 +98,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Jet Pilot";
-		faction = "TWC_Millennial";
+		faction = "TWC_Modern";
 		CATEGORY(TWC_ForceType_Airborne)
 		uniformClass = "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
 		linkedItems[] =
@@ -152,12 +152,12 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Tank Commander";
-		faction = "TWC_Millennial";
+		faction = "TWC_Modern";
 		CATEGORY(TWC_ForceType_Armoured)
-		uniformClass = "UK3CB_BAF_U_CrewmanCoveralls_RTR";
+		uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
 		linkedItems[] =
 		{
-			"SP_P58_UrbanPatrol",
+			"UK3CB_BAF_V_Osprey_Belt_A",
 			"UK3CB_BAF_H_Beret_RTR_PRR",
 			"ItemCompass",
 			"itemMap",
@@ -165,7 +165,7 @@ class CfgVehicles
 		};
 		respawnLinkedItems[] =
 		{
-			"SP_P58_UrbanPatrol",
+			"UK3CB_BAF_V_Osprey_Belt_A",
 			"UK3CB_BAF_H_Beret_RTR_PRR",
 			"ItemCompass",
 			"itemMap",
@@ -183,13 +183,13 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"UK3CB_BAF_L22A2",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"UK3CB_BAF_L22A2",
 			"Throw",
 			"Put"
 		};
@@ -208,23 +208,11 @@ class CfgVehicles
 	{
 		displayName = "Tank Crew";
 	};
-	#include "1990_regular\woodland.hpp"
-	#include "1990_regular\woodland_dismounted.hpp"
-	#include "1990_regular\desert.hpp"
-	#include "1990_regular\desert_dismounted.hpp"
-	#include "1990_regular\arctic.hpp"
-	#include "1990_regular\arctic_dismounted.hpp"
-	#include "1990_regular\tropic.hpp"
-	#include "1990_regular\tropic_dismounted.hpp"
+	#include "regular\woodland.hpp"
+	#include "regular\woodland_dismounted.hpp"
 
-	#include "1990_coin\woodland.hpp"
-	#include "1990_coin\woodland_dismounted.hpp"
-	#include "1990_coin\desert.hpp"
-	#include "1990_coin\desert_dismounted.hpp"
-	#include "1990_coin\arctic.hpp"
-	#include "1990_coin\arctic_dismounted.hpp"
-	#include "1990_coin\tropic.hpp"
-	#include "1990_coin\tropic_dismounted.hpp"
+	#include "coin\woodland.hpp"
+	#include "coin\woodland_dismounted.hpp"
 };
 
 class CfgGroups
@@ -234,34 +222,34 @@ class CfgGroups
 		class TWC_Groups_Modern
 		{
 			name = "TWC Groups Modern";
-			#include "1990_regular\groups.hpp"
-			#include "1990_coin\groups.hpp"
-			class TWC_Groups_Millennial_Generic
+			#include "regular\groups.hpp"
+			#include "coin\groups.hpp"
+			class TWC_Groups_Modern_Generic
 			{
 				name = "Generic";
 				class Tank_Crew
 				{
 					name = "Tank Crew";
-					faction = "TWC_Millennial";
+					faction = "TWC_Modern";
 					side = 1;
 					class Unit0
 					{
 						side = 1;
-						vehicle = "TWC_Infantry_Millennial_Tank_Commander";
+						vehicle = "TWC_Infantry_Modern_Tank_Commander";
 						rank = "SERGEANT";
 						position[] = {0,0,0};
 					};
 					class Unit1
 					{
 						side = 1;
-						vehicle = "TWC_Infantry_Millennial_Tank_Crew";
+						vehicle = "TWC_Infantry_Modern_Tank_Crew";
 						rank = "PRIVATE";
 						position[] = {2,0,0};
 					};
 					class Unit2
 					{
 						side = 1;
-						vehicle = "TWC_Infantry_Millennial_Tank_Crew";
+						vehicle = "TWC_Infantry_Modern_Tank_Crew";
 						rank = "PRIVATE";
 						position[] = {4,0,0};
 					};
