@@ -184,12 +184,14 @@ class CfgVehicles
 		weapons[] =
 		{
 			"UK3CB_BAF_L22A2",
+			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
 			"UK3CB_BAF_L22A2",
+			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
@@ -207,6 +209,18 @@ class CfgVehicles
 	class TWC_Infantry_Modern_Tank_Crew: TWC_Infantry_Modern_Tank_Commander
 	{
 		displayName = "Tank Crew";
+		weapons[] =
+		{
+			"UK3CB_BAF_L22A2",
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"UK3CB_BAF_L22A2",
+			"Throw",
+			"Put"
+		};
 	};
 	#include "regular\woodland.hpp"
 	#include "regular\woodland_dismounted.hpp"
