@@ -8,11 +8,11 @@ assignees: ''
 ---
 
 **I'm experiencing an issue with:**
-- [] Incorrect Unit Config
-- [] Incorrect Weapon Config
-- [] Incorrect Vehicle Config
-- [] Incorrect Module Behaviour
-- [] Script/Logic Error
+- Incorrect Unit Config
+- Incorrect Weapon Config
+- Incorrect Vehicle Config
+- Incorrect Module Behaviour
+- Script/Logic Error
 
 **Describe the problem briefly**
 A clear and concise description of the bug.
