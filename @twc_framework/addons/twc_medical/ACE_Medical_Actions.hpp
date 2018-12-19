@@ -72,7 +72,7 @@ class ACE_Medical_Actions {
 			treatmentLocations[] = {"All"};
 			allowedSelections[] = {"All"};
 			allowSelfTreatment = 0;
-			requiredMedic = 2;
+			requiredMedic = 1;
 			treatmentTime = "twc_medical_fnc_sutureKitTime";
 			callbackSuccess = "twc_medical_fnc_sutureKitSuccess";
 			callbackProgress = "twc_medical_fnc_sutureKitProgress";
@@ -116,7 +116,7 @@ class ACE_Medical_Actions {
 			category = "advanced";
 			allowedSelections[] = {"body"};
 			treatmentLocations[] = {"MedicalFacility"};
-			requiredMedic = 0; // handled by canHandover
+			requiredMedic = 2; // handled by canHandover
 			treatmentTime = 1; // handled on the patients end
 			callbackSuccess = "twc_medical_fnc_surgery";
 			callbackFailure = "";
