@@ -228,6 +228,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Marksman: TWC_Infantry_Modern_Regular
 class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Section Commander";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_SectionCommander";
 	TWC_isCommandRole = 1;
 	Items[] =
 	{
@@ -289,6 +290,7 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 class TWC_Infantry_Modern_Regular_Woodland_2iC: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "2iC";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_2iC";
 	TWC_isCommandRole = 1;
 	weapons[] =
 	{
@@ -324,6 +326,7 @@ class TWC_Infantry_Modern_Regular_Woodland_2iC: TWC_Infantry_Modern_Regular_Wood
 class TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander: TWC_Infantry_Modern_Regular_Woodland_SectionCommander
 {
 	displayName = "Platoon Commander";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Platoon_Commander";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_B",
@@ -358,10 +361,12 @@ class TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander: TWC_Infantry_Moder
 class TWC_Infantry_Modern_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
 	displayName = "Platoon Sergeant";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Platoon_Sergeant";
 };
 class TWC_Infantry_Modern_Regular_Woodland_Platoon_Medic: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Platoon Medic";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Platoon_Medic";
 	attendant = 1;
 	linkedItems[] =
 	{
@@ -405,6 +410,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Platoon_Medic: TWC_Infantry_Modern_Re
 class TWC_Infantry_Modern_Regular_Woodland_Platoon_Mortar: TWC_Infantry_Modern_Regular_Woodland_Platoon_Sergeant
 {
 	displayName = "Platoon Mortar";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Platoon_Mortar";
 	TWC_isCommandRole = 0;
 	linkedItems[] =
 	{
@@ -490,6 +496,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner: TWC_Infantry_Modern_R
 class TWC_Infantry_Modern_Regular_Woodland_Javelin_Ass: TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner
 {
 	displayName = "Javelin Assistant";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Javelin_Assistant";
 	weapons[] =
 	{
 		"TWC_Weapon_L85A2_RIS_ELCAN3D",
@@ -565,6 +572,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Sniper: TWC_Infantry_Modern_Regular_W
 class TWC_Infantry_Modern_Regular_Woodland_Spotter: TWC_Infantry_Modern_Regular_Woodland_Sniper
 {
 	displayName = "Spotter";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Spotter";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_MTP",
@@ -619,15 +627,18 @@ class TWC_Infantry_Modern_Regular_Woodland_Spotter: TWC_Infantry_Modern_Regular_
 class TWC_Infantry_Modern_Regular_Woodland_Artillery_Commander: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
 	displayName = "Artillery Commander";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Artillery_Commander";
 };
 class TWC_Infantry_Modern_Regular_Woodland_Artillery_Crew: TWC_Infantry_Modern_Regular_Woodland_Artillery_Commander
 {
 	displayName = "Artillery Crew";
+	backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
 	TWC_isCommandRole = 0;
 };
 class TWC_Infantry_Modern_Regular_Woodland_FO: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
 	displayName = "Forward Observer";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_FO";
 	TWC_isCommandRole = 0;
 };
 
@@ -635,17 +646,18 @@ class TWC_Infantry_Modern_Regular_Woodland_FO: TWC_Infantry_Modern_Regular_Woodl
 class TWC_Infantry_Modern_Regular_Woodland_FAC: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
 	displayName = "Forward Air Controller";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_FAC";
 	TWC_isCommandRole = 0;
 	weapons[] =
 	{
-		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"TWC_Weapon_L85A2_UGL_ELCAN3D",
 		"UK3CB_BAF_Soflam_Laserdesignator",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"TWC_Weapon_L85A2_UGL_ELCAN3D",
 		"UK3CB_BAF_Soflam_Laserdesignator",
 		"Throw",
 		"Put"
@@ -744,7 +756,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Commander: TWC_Infantry_Moder
 		"Put"
 	};
 };
-class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Crew
+class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Crew: TWC_Infantry_Modern_Regular_Woodland_Vehicle_Commander
 {
 	displayName = "Vehicle Crew";
 	TWC_isCommandRole = 0;
