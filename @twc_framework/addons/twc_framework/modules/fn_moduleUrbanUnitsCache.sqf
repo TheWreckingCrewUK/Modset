@@ -21,7 +21,7 @@ _urbanRange = missionNamespace getVariable ["TWC_Cache_UrbanRange", 750];
 
 if (_aiCacheRange > _urbanRange) then {
 	{
-		(group _x) setVariable ["TWC_Cache_Range", _urbanCacheRange, true];
+		(group _x) setVariable ["TWC_Cache_Range", _urbanRange, true];
 	} forEach _units;
 };
 
