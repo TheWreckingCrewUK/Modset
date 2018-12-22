@@ -17,15 +17,12 @@ _baseItemClassWoNumber = (_itemClassArrayDuplicate joinString "_");
 {
 	// first one we come across, we'll remove
 	if (_x isKindOf [_baseItemClass, configFile >> "CfgWeapons"]) exitWith {
-		// no threads left, good bye kit!
-		if (typeOf _x == _baseItemClass) exitWith { _caller removeItem _x; };
-
 		// decrease the count by one, this is why we have common classname structure!
 		_itemNewCount = (_itemClassNumber - 1);
 
 		// something went horribly wrong ?
-		if (_itemNewCount < 1) exitWith { systemChat "Error: Tried removing item, when one remained. Should have already happened."; };
 		_caller removeItem _x;
+		if (_itemNewCount < 1) exitWith {};
 
 		_newItem = format ["%1_%2", _baseItemClassWoNumber, _itemNewCount];
 		_caller addItem _newItem;
