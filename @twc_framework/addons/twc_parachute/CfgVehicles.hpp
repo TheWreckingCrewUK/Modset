@@ -144,11 +144,11 @@ class CfgVehicles {
 	};
 
 	class T10_Landed: Thing {
-		scope=1;
+		scope=2;
 		side=-1;
 		model="twc_parachute\T10_Landed.p3d";
 		icon="";
-		displayName="T10 Parachute";
+		displayName="T10 Parachute Landed";
 		nameSound="";
 		destrType="DestructNo";
 		simulation="thingx";
