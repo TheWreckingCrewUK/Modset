@@ -5,22 +5,21 @@
  */
 params ["_caller", "_baseItemClass"];
 
-_itemClassArray = _baseItemClass splitString "_";
-if (count _itemClassArray == 0) exitWith { systemChat "Error splitting item class string for removal."; };
-_itemClassNumber = parseNumber (_itemClassArray select (count _itemClassArray - 1));
-if (_itemClassNumber != 1) exitWith { systemChat "Error removing item. Provided class wasn't base string."; };
+_baseClassArray = _baseItemClass splitString "_";
+if (count _baseClassArray == 0) exitWith { systemChat "Error splitting item class string for removal."; };
+_baseClassNumber = parseNumber (_baseClassArray select ((count _baseClassArray) - 1));
+if (_baseClassNumber != 1) exitWith { systemChat "Error removing item. Provided class wasn't base string."; };
 
-_itemClassArrayDuplicate = +_itemClassArray;
-_itemClassArrayDuplicate deleteAt (count _itemClassArrayDuplicate - 1); // remove the number!
+_itemClassArrayDuplicate = +_baseClassArray;
+_itemClassArrayDuplicate deleteAt ((count _itemClassArrayDuplicate) - 1);
 _baseItemClassWoNumber = (_itemClassArrayDuplicate joinString "_");
 
 {
-	// first one we come across, we'll remove
 	if (_x isKindOf [_baseItemClass, configFile >> "CfgWeapons"]) exitWith {
-		// decrease the count by one, this is why we have common classname structure!
+		_itemClassArray = _x splitString "_";
+		_itemClassNumber = parseNumber (_itemClassArray select ((count _itemClassArray) - 1));
 		_itemNewCount = (_itemClassNumber - 1);
 
-		// something went horribly wrong ?
 		_caller removeItem _x;
 		if (_itemNewCount < 1) exitWith {};
 
