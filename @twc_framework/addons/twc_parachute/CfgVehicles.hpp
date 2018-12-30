@@ -144,17 +144,17 @@ class CfgVehicles {
 	};
 
 	class T10_Landed: Thing {
-		scope=1;
-		side=-1;
-		model="twc_parachute\T10_Landed.p3d";
-		icon="";
-		displayName="T10 Parachute";
-		nameSound="";
-		destrType="DestructNo";
-		simulation="thingx";
-		mapSize=0;
-		accuracy=0;
-		armor=5;
+		scope = 2;
+		side = 4;
+		model = "twc_parachute\T10_Landed.p3d";
+		icon = "";
+		displayName = "T10 Parachute Landed";
+		nameSound = "";
+		destrType = "DestructNo";
+		simulation = "thingx";
+		mapSize = 0;
+		accuracy = 0;
+		armor = 5;
 		weight = 200;
 		
 		// potentially add ace interact here to "pack it" aka delete

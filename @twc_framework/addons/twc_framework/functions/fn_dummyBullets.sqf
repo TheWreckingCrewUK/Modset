@@ -21,15 +21,18 @@ _owner = _static turretOwner [0];
 _weapon = (_static weaponsTurret [0]) select 0;
 
 _dummyWeapon = ["twc_dummyweapon_", _weapon] joinString "";
-if (!(isClass (configFile >> "CfgWeapons" >> _dummyWeapon))) exitwith {hint "This weapon does not yet have a dummy weapon defined. Please contact management to get it added"};
+
+if (!(isClass (configFile >> "CfgWeapons" >> _dummyWeapon))) exitwith {
+	hint format ["This weapon does not yet have a dummy weapon defined. Please contact management to get it added: %1", _dummyWeapon];
+};
 
 _magazines = _static magazinesTurret [0];
 _magazineCount = count _magazines;
 _static removeWeaponTurret [_weapon, [0]];
 _static addWeaponTurret [_dummyWeapon, [0]];
 _magazineType = (getArray (configFile >> "CfgWeapons" >> _dummyWeapon >> "magazines")) select 0;
-for "_i" from 1 to _magazineCount do
-{
+
+for "_i" from 1 to _magazineCount do {
 	_static addMagazineTurret [_magazineType, [0]];
 };
 

@@ -473,6 +473,11 @@ class CfgWeapons {
 	class CSA38_ZB53mg;
 	class CSA38_TKVZ24mg;
 	class csa38_ZB26mg;
+	class csa38_MG34MG;
+	
+	class twc_dummyweapon_csa38_MG34MG: csa38_MG34MG {
+		magazines[] = {"twc_dummymag_machinegun"};
+	};
 
 	class twc_dummyweapon_LIB_MG34_Tripod: LIB_MG34_Tripod
 	{

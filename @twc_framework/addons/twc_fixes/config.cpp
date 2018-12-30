@@ -16,6 +16,14 @@ class CfgPatches {
 	};
 };
 
+class CfgWorlds {
+	class CAWorld;
+	class Chernarus: CAWorld {};
+	class Caribou: Chernarus {
+		newRoadsShape = "";
+	};
+};
+
 class CfgFunctions {
 	class TWC_Fixes {
 		tag = "twc_fixes";
