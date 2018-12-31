@@ -24,280 +24,101 @@ class CfgVehicles {
 		maximumLoad = 400;
 
 		class TransportMagazines {
-			class _XX_Flare_white {
-				magazine = "UGL_FlareWhite_F";
-				count = 3;
-			};
-
-			class _XX_Flare_red {
-				magazine="UGL_FlareRed_F";
-				count = 3;
-			};
-
-			class _XX_Flare_green
-			{
-				magazine="UGL_FlareGreen_F";
-				count=3;
-			};
-			class _XX_Flare_yellow
-			{
-				magazine="UGL_FlareYellow_F";
-				count=3;
-			};
-			class _XX_SmokeGrenade_White
-			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Red
-			{
-				magazine="1Rnd_SmokeRed_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Green
-			{
-				magazine="1Rnd_SmokeGreen_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Yellow
-			{
-				magazine="1Rnd_SmokeYellow_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Purple
-			{
-				magazine="1Rnd_SmokePurple_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Blue
-			{
-				magazine="1Rnd_SmokeBlue_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Orange
-			{
-				magazine="1Rnd_SmokeOrange_Grenade_shell";
-				count=3;
-			};
+			ADD_MAGA(UGL_FlareWhite_F, 3);
+			ADD_MAGA(UGL_FlareRed_F, 3);
+			ADD_MAGA(UGL_FlareGreen_F, 3);
+			ADD_MAGA(UGL_FlareYellow_F, 3);
+			ADD_MAGA(1Rnd_Smoke_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokeYellow_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokePurple_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokeOrange_Grenade_shell, 3);
 		};
 	};
-	class TWC_Backpack_WW2_Medic: B_LIB_SOV_RA_MedicalBag_Empty
-	{
+
+	class TWC_Backpack_WW2_Medic: B_LIB_SOV_RA_MedicalBag_Empty {
 		maximumLoad = 120;
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_Bandage
-			{
-				name = "ACE_fieldDressing";
-				count = 12;
-			};
-			class _xx_Morphine
-			{
-				name = "ACE_morphine";
-				count = 10;
-			};
-			class _xx_ACE_elasticBandage
-			{
-				name = "ACE_elasticBandage";
-				count = 16;
-			};
-			class _xxACE_quikclot
-			{
-				name = "ACE_quikclot";
-				count = 6;
-			};
-			class _xxACE_adenosine
-			{
-				name = "ACE_adenosine";
-				count = 2;
-			};
-			class _xxACE_atropine
-			{
-				name = "ACE_atropine";
-				count = 2;
-			};
-			class _xxACE_epinephrine
-			{
-				name = "ACE_epinephrine";
-				count = 10;
-			};
-			class _xxACE_packingBandage
-			{
-				name = "ACE_packingBandage";
-				count = 16;
-			};
-			class _xxACE_personalAidKit
-			{
-				name = "ACE_personalAidKit";
-				count = 1;
-			};
-			class _xxACE_salineIV_500
-			{
-				name = "ACE_salineIV_500";
-				count = 6;
-			};
-			class _xxACE_tourniquet
-			{
-				name = "ACE_tourniquet";
-				count = 4;
-			};
+
+		class TransportItems {
+			ADD_ITEM(ACE_quikclot, 15);
+			ADD_ITEM(ACE_fieldDressing, 15);
+			ADD_ITEM(ACE_elasticBandage, 15);
+			ADD_ITEM(ACE_packingBandage, 15);
+			ADD_ITEM(ACE_morphine, 10);
+			ADD_ITEM(ACE_epinephrine, 10);
+			ADD_ITEM(ACE_adenosine, 2);
+			ADD_ITEM(ACE_atropine, 2);
+			ADD_ITEM(ACE_personalAidKit, 1);
+			ADD_ITEM(ACE_salineIV_500, 8);
+			ADD_ITEM(ACE_tourniquet, 4);
+			ADD_ITEM(TWC_Item_Medical_SutureKit_25, 1);
 		};
 	};
-	class TWC_Backpack_WW2_SL: TWC_Backpack_WW2_Base
-	{
+
+	class TWC_Backpack_WW2_SL: TWC_Backpack_WW2_Base {
 		scope = 1;
-		class TransportMagazines
-		{
-			class _XX_Flare_white
-			{
-				magazine="UGL_FlareWhite_F";
-				count=3;
-			};
-			class _XX_Flare_red
-			{
-				magazine="UGL_FlareRed_F";
-				count=3;
-			};
-			class _XX_Flare_green
-			{
-				magazine="UGL_FlareGreen_F";
-				count=3;
-			};
-			class _XX_Flare_yellow
-			{
-				magazine="UGL_FlareYellow_F";
-				count=3;
-			};
-			class _XX_SmokeGrenade_White
-			{
-				magazine="1Rnd_Smoke_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Red
-			{
-				magazine="1Rnd_SmokeRed_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Green
-			{
-				magazine="1Rnd_SmokeGreen_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Yellow
-			{
-				magazine="1Rnd_SmokeYellow_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Purple
-			{
-				magazine="1Rnd_SmokePurple_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Blue
-			{
-				magazine="1Rnd_SmokeBlue_Grenade_shell";
-				count=3;
-			};
-			class _XX_SmokeGrenade_Orange
-			{
-				magazine="1Rnd_SmokeOrange_Grenade_shell";
-				count=3;
-			};
+
+		class TransportMagazines {
+			ADD_MAGA(UGL_FlareWhite_F, 3);
+			ADD_MAGA(UGL_FlareRed_F, 3);
+			ADD_MAGA(UGL_FlareGreen_F, 3);
+			ADD_MAGA(UGL_FlareYellow_F, 3);
+			ADD_MAGA(1Rnd_Smoke_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokeYellow_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokePurple_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 3);
+			ADD_MAGA(1Rnd_SmokeOrange_Grenade_shell, 3);
 		};
 	};
-	class TWC_Backpack_WW2_Sergeant:fow_b_uk_bergenpack
-	{
+
+	class TWC_Backpack_WW2_Sergeant: fow_b_uk_bergenpack {
 		scope = 1;
 		maximumLoad = 400;
-		class TransportItems
-		{
-			class _XX_Enfield_LooseAmmo
-			{
-				name="twc_looseAmmoBox_303";
-				count= 1;
-			};
-		};
-		class TransportMagazines
-		{
-			class _XX_Bren_Mag
-			{
-				magazine = "fow_30Rnd_303_bren";
-				count = 3;
-			};
-			class _XX_Flare_white
-			{
-				magazine="UGL_FlareWhite_F";
-				count=6;
-			};
-			class _XX_Flare_red
-			{
-				magazine="UGL_FlareRed_F";
-				count=6;
-			};
-			class _XX_Flare_green
-			{
-				magazine="UGL_FlareGreen_F";
-				count=6;
-			};
-			class _XX_Flare_yellow
-			{
-				magazine="UGL_FlareYellow_F";
-				count=6;
-			};
-			class _xx_SmokeShellGreen
-			{
-				magazine = "SmokeShellGreen";
-				count = 2;
-			};	
-			class _xx_SmokeShellRed
-			{
-				magazine = "SmokeShellRed";
-				count = 2;
-			};
+
+		class TransportItems {};
+
+		class TransportMagazines {
+			ADD_MAGA(fow_30Rnd_303_bren, 9);
+			ADD_MAGA(10Rnd_303_Magazine, 24);
+			ADD_MAGA(UGL_FlareWhite_F, 6);
+			ADD_MAGA(UGL_FlareRed_F, 6);
+			ADD_MAGA(UGL_FlareGreen_F, 6);
+			ADD_MAGA(UGL_FlareYellow_F, 6);
+			ADD_MAGA(SmokeShellGreen, 6);
+			ADD_MAGA(SmokeShellRed, 6);
 		};
 	};
-	class TWC_Backpack_WW2_2IC: TWC_Backpack_WW2_Base
-	{
+
+	class TWC_Backpack_WW2_2IC: TWC_Backpack_WW2_Base {
 		scope = 1;
-		class TransportMagazines
-		{
-			class _XX_Enfield_Mag
-			{
-				magazine="10Rnd_303_Magazine";
-				count= 5;
-			};
-			class _XX_Bren_Mag
-			{
-				magazine = "fow_30Rnd_303_bren";
-				count = 4;
-			};
+
+		class TransportMagazines {
+			ADD_MAGA(10Rnd_303_Magazine, 12);
+			ADD_MAGA(fow_30Rnd_303_bren, 4);
 		};
 	};
-	class TWC_Backpack_WW2_MGASS: TWC_Backpack_WW2_Base
-	{
+
+	class TWC_Backpack_WW2_MGASS: TWC_Backpack_WW2_Base {
 		scope = 1;
-		class TransportMagazines
-		{
-			class _XX_Bren_Mag
-			{
-				magazine = "fow_30Rnd_303_bren";
-				count = 10;
-			};
+
+		class TransportMagazines {
+			ADD_MAGA(fow_30Rnd_303_bren, 10);
 		};
 	};
-	class TWC_Backpack_PIAT: fow_b_uk_piat_at
-	{
+
+	class TWC_Backpack_PIAT: fow_b_uk_piat_at {
 		scope = 1;
-		class TransportMagazines
-		{
-			class _XX_PIAT_HEAT
-			{
-				magazine = "fow_1Rnd_piat_HEAT";
-				count = 3;
-			};
+		
+		class TransportMagazines {
+			ADD_MAGA(fow_1Rnd_piat_HEAT, 3);
 		};
 	};
+
 //*******************1956************************
 	class TWC_Backpack_1956_SL:TWC_Backpack_1956_Radio_Base
 	{
@@ -440,15 +261,10 @@ class CfgVehicles {
 				count=15;
 			};
 		};
-		class TransportItems
-		{
-			class _xx_303Box
-			{
-				name = "twc_looseAmmoBox_303";
-				count = 3;
-			};
-		};
-		transportAmmo=100000;
-		supplyRadius=3;
+
+		class TransportItems {};
+
+		transportAmmo = 100000;
+		supplyRadius = 3;
 	};
 };
