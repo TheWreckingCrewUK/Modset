@@ -230,16 +230,6 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 	displayName = "Section Commander";
 	backpack = "TWC_Backpack_Modern_Regular_Woodland_SectionCommander";
 	TWC_isCommandRole = 1;
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		"ACE_MapTools"
-	};
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_B",
@@ -257,6 +247,16 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
 	};
 	weapons[] =
 	{
