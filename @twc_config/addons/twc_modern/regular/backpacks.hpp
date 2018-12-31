@@ -3,6 +3,7 @@
 class TWC_Backpack_Modern_Regular_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
@@ -15,6 +16,7 @@ class TWC_Backpack_Modern_Regular_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_
 class TWC_Backpack_Modern_Regular_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, 6);
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, 2);
@@ -28,6 +30,7 @@ class TWC_Backpack_Modern_Regular_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rifleman_
 class TWC_Backpack_Modern_Regular_Woodland_Platoon_Commander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
@@ -40,6 +43,7 @@ class TWC_Backpack_Modern_Regular_Woodland_Platoon_Commander: UK3CB_BAF_B_Bergen
 class TWC_Backpack_Modern_Regular_Woodland_Platoon_Sergeant: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
@@ -54,6 +58,7 @@ class TWC_Backpack_Modern_Regular_Woodland_Platoon_Sergeant: UK3CB_BAF_B_Bergen_
 class TWC_Backpack_Modern_Regular_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP_Medic_L_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing,20);
 		ADD_ITEM(ACE_morphine,10);
@@ -72,6 +77,7 @@ class TWC_Backpack_Modern_Regular_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP
 class TWC_Backpack_Modern_Regular_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 16);
 		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 6);
@@ -83,6 +89,7 @@ class TWC_Backpack_Modern_Regular_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MT
 class TWC_Backpack_Modern_Regular_Woodland_Javelin_Assistant: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
 {
 	scope = 1;
+	scopeArsenal = 1;
 	maximumLoad = 600;
 	class TransportWeapons {
 		ADD_WEAP(UK3CB_BAF_Javelin_Slung_Tube,1);
@@ -91,11 +98,13 @@ class TWC_Backpack_Modern_Regular_Woodland_Javelin_Assistant: UK3CB_BAF_B_Bergen
 /*class TWC_Backpack_Modern_Regular_Woodland_Starstreak_Assistant: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
 {
 	scope = 1;
+	scopeArsenal = 1;
 	maximumLoad = 600;
 };*/
 class TWC_Backpack_Modern_Regular_Woodland_Spotter: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 		ADD_ITEM(ACE_Tripod,1);
@@ -110,6 +119,7 @@ class TWC_Backpack_Modern_Regular_Woodland_Spotter: UK3CB_BAF_B_Bergen_MTP_SL_L_
 class TWC_Backpack_Modern_Regular_Woodland_Artillery_Commander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
@@ -117,6 +127,7 @@ class TWC_Backpack_Modern_Regular_Woodland_Artillery_Commander: UK3CB_BAF_B_Berg
 class TWC_Backpack_Modern_Regular_Woodland_FO: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 		ADD_ITEM(ACE_DAGR,1);
@@ -125,6 +136,7 @@ class TWC_Backpack_Modern_Regular_Woodland_FO: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 class TWC_Backpack_Modern_Regular_Woodland_FAC: UK3CB_BAF_B_Bergen_MTP_JTAC_H_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 		ADD_ITEM(ACE_DAGR,1);
@@ -144,6 +156,7 @@ class TWC_Backpack_Modern_Regular_Woodland_FAC: UK3CB_BAF_B_Bergen_MTP_JTAC_H_A
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Rifleman: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
 	};
@@ -151,6 +164,7 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Rifleman: UK3CB_BAF_B_Berg
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Grenadier: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
 		ADD_MAGA(UK3CB_BAF_1Rnd_HE_Grenade_Shell,16);
@@ -162,6 +176,7 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Grenadier: UK3CB_BAF_B_Ber
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Autorifleman: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_200Rnd,1);
 		ADD_MAGA(UK3CB_BAF_556_200Rnd_T,1);
@@ -170,6 +185,7 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Autorifleman: UK3CB_BAF_B_
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_MG: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_100Rnd,1);
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,1);
@@ -178,6 +194,7 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_MG: UK3CB_BAF_B_Bergen_MTP
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Marksman: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_L42A1_20Rnd,5);
 		ADD_MAGA(UK3CB_BAF_762_L42A1_20Rnd_T,3);
@@ -186,6 +203,7 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Marksman: UK3CB_BAF_B_Berg
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
@@ -199,6 +217,7 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_SectionCommander: UK3CB_BA
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, 8);
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, 3);
@@ -212,6 +231,7 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_2iC: UK3CB_BAF_B_Bergen_MT
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Commander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
@@ -226,6 +246,7 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Commander: UK3CB_B
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Sergeant: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
@@ -240,6 +261,7 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Sergeant: UK3CB_BA
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP_Medic_L_A
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing,20);
 		ADD_ITEM(ACE_morphine,10);
@@ -258,6 +280,7 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Medic: UK3CB_BAF_B
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
 {
 	scope = 1;
+	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 20);
 		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 8);
