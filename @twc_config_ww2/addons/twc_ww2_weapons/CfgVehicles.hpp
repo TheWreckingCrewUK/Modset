@@ -120,151 +120,41 @@ class CfgVehicles {
 	};
 
 //*******************1956************************
-	class TWC_Backpack_1956_SL:TWC_Backpack_1956_Radio_Base
-	{
+	class TWC_Backpack_1956_SL: TWC_Backpack_1956_Radio_Base {
 		scope = 1;
-		class TransportItems
-		{
-			class _xx_PRC_117F
-			{
-				name = "ACRE_PRC117F";
-				count = 1;
-			};
-		};
-	};
-	class TWC_Backpack_1956_Sergeant:TWC_Backpack_1956_Radio_Base
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _XX_Enfield_Mag
-			{
-				magazine="10Rnd_303_Magazine";
-				count= 2;
-			};
-			class _xx_UK3CB_BAF_762_20Rnd
-			{
-				magazine = "UK3CB_BAF_762_20Rnd";
-				count = 10;
-			};
-			class _XX_Bren_Mag
-			{
-				magazine = "fow_30Rnd_303_bren";
-				count = 3;
-			};
-			class _xx_SmokeShellGreen
-			{
-				magazine = "SmokeShellGreen";
-				count = 2;
-			};	
-			class _xx_SmokeShellRed
-			{
-				magazine = "SmokeShellRed";
-				count = 2;
-			};
-		};
-	};
-	class TWC_Backpack_1956_2IC: TWC_Backpack_WW2_Base
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_UK3CB_BAF_762_20Rnd
-			{
-				magazine = "UK3CB_BAF_762_20Rnd";
-				count = 10;
-			};
-			class _XX_Enfield_Mag
-			{
-				magazine="10Rnd_303_Magazine";
-				count= 2;
-			};
-			class _XX_Bren_Mag
-			{
-				magazine = "fow_30Rnd_303_bren";
-				count = 2;
-			};
-		};
-	};
-	class TWC_Backpack_1956_AT: TWC_Backpack_WW2_Base
-	{
-		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_M6A1_Rocket
-			{
-				magazine = "fow_1Rnd_m6a1";
-				count = 3;
-			};
-		};
-	};
-//Ammo Boxes
-	class TWC_Operation_WW2_Ammobox: CUP_BAF_VehicleBox
-	{
-		author="FakeMatty";
-		displayName="TWC WW2 AmmoBox";
-		class TransportMagazines
-		{
-			class _XX_Enfield_Mag
-			{
-				magazine="10Rnd_303_Magazine";
-				count=200;
-			};
-			class _XX_Bren_Mag
-			{
-				magazine="fow_30Rnd_303_bren";
-				count=40;
-			};
-			class _xx_SmokeShell
-			{
-				magazine="SmokeShell";
-				count=20;
-			};
-			class _xx_SmokeShellGreen
-			{
-				magazine = "SmokeShellGreen";
-				count = 10;
-			};	
-			class _xx_SmokeShellRed
-			{
-				magazine = "SmokeShellRed";
-				count = 10;
-			};
-			class _xx_Grenade
-			{
-				magazine="fow_e_no36mk1";
-				count=30;
-			};
-			class _xx_ATGrenade
-			{
-				magazine = "twc_no82";
-				count = 10;
-			};
-			class _XX_Flare_white
-			{
-				magazine="UGL_FlareWhite_F";
-				count=15;
-			};
-			class _XX_Flare_red
-			{
-				magazine="UGL_FlareRed_F";
-				count=15;
-			};
-			class _XX_Flare_green
-			{
-				magazine="UGL_FlareGreen_F";
-				count=15;
-			};
-			class _XX_Flare_yellow
-			{
-				magazine="LIB_1Rnd_flare_yellow";
-				count=15;
-			};
-		};
 
-		class TransportItems {};
+		class TransportItems {
+			ADD_ITEM(ACRE_PRC117F, 1);
+		};
+	};
 
-		transportAmmo = 100000;
-		supplyRadius = 3;
+	class TWC_Backpack_1956_Sergeant: TWC_Backpack_1956_Radio_Base {
+		scope = 1;
+
+		class TransportMagazines {
+			ADD_MAGA(10Rnd_303_Magazine, 2);
+			ADD_MAGA(UK3CB_BAF_762_20Rnd, 10);
+			ADD_MAGA(fow_30Rnd_303_bren, 3);
+			ADD_MAGA(SmokeShellGreen, 2);
+			ADD_MAGA(SmokeShellRed, 2);
+		};
+	};
+
+	class TWC_Backpack_1956_2IC: TWC_Backpack_WW2_Base {
+		scope = 1;
+
+		class TransportMagazines {
+			ADD_MAGA(10Rnd_303_Magazine, 2);
+			ADD_MAGA(UK3CB_BAF_762_20Rnd, 10);
+			ADD_MAGA(fow_30Rnd_303_bren, 2);
+		};
+	};
+
+	class TWC_Backpack_1956_AT: TWC_Backpack_WW2_Base {
+		scope = 1;
+
+		class TransportMagazines {
+			ADD_MAGA(fow_1Rnd_m6a1, 3);
+		};
 	};
 };
