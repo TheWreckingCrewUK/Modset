@@ -7,6 +7,7 @@ class UK3CB_BAF_B_Bergen_MTP_JTAC_H_A;
 class UK3CB_BAF_B_Bergen_MTP_Medic_L_A;
 class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C;
 class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D;
+class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
 
 #include "regular\backpacks.hpp"
 #include "coin\backpacks.hpp"

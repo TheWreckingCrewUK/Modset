@@ -3,6 +3,7 @@
 class TWC_Backpack_1990_Regular_##CAMO##_SectionCommander: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportMagazines { \
 		ADD_MAGA(SmokeShell,3); \
 		ADD_MAGA(SmokeShellRed,2); \
@@ -17,6 +18,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_SectionCommander: INHERIT \
 class TWC_Backpack_1990_Regular_##CAMO##_2iC: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportMagazines { \
 		ADD_MAGA(SmokeShell,3); \
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,10); \
@@ -28,6 +30,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_2iC: INHERIT \
 class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Commander: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
@@ -42,6 +45,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Commander: INHERIT \
 class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Sergeant: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
@@ -58,6 +62,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Sergeant: INHERIT \
 class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Medic: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportItems { \
 		ADD_ITEM(ACE_fieldDressing,20); \
 		ADD_ITEM(ACE_morphine,10); \
@@ -78,6 +83,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Medic: INHERIT \
 class TWC_Backpack_1990_Regular_##CAMO##_MILAN_Ass: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	maximumLoad = 500; \
 	class TransportItems { \
 		ADD_ITEM(ukcw_milan_ace_missile,2); \
@@ -88,6 +94,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_MILAN_Ass: INHERIT \
 class TWC_Backpack_1990_Regular_##CAMO##_Blowpipe_Ass: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	maximumLoad = 200; \
 	class TransportMagazines { \
 		ADD_MAGA(SP_Blowpipe_round,2); \
@@ -108,6 +115,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_L14A1_Ass: INHERIT \
 class TWC_Backpack_1990_Regular_##CAMO##_Spotter: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC77,1); \
 		ADD_ITEM(ACE_Tripod,1); \
@@ -119,6 +127,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_Spotter: INHERIT \
 class TWC_Backpack_1990_Regular_##CAMO##_Artillery_Commander: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	maximumLoad = 300; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC77,1); \
@@ -129,6 +138,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_Artillery_Commander: INHERIT \
 class TWC_Backpack_1990_Regular_##CAMO##_FO: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	maximumLoad = 200; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
@@ -144,6 +154,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_FO: INHERIT \
 class TWC_Backpack_1990_Regular_##CAMO##_EOD_Commander: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
@@ -158,6 +169,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_EOD_Commander: INHERIT \
 class TWC_Backpack_1990_Regular_##CAMO##_FAC: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
@@ -176,6 +188,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_FAC: INHERIT \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Rifleman: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportMagazines { \
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,8); \
 	}; \
@@ -185,6 +198,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Rifleman: INHERIT \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_AT: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportMagazines { \
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,8); \
 	}; \
@@ -194,6 +208,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_AT: INHERIT \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Gunner: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportMagazines { \
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,10); \
 		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6); \
@@ -204,6 +219,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Gunner: INHERIT \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_SectionCommander: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportMagazines { \
 		ADD_MAGA(SmokeShell,3); \
 		ADD_MAGA(SmokeShellRed,2); \
@@ -220,6 +236,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_SectionCommander: INHERIT \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_2iC: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportMagazines { \
 		ADD_MAGA(SmokeShell,3); \
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,20); \
@@ -231,6 +248,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_2iC: INHERIT \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Platoon_Commander: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportMagazines { \
 		ADD_MAGA(SmokeShell,3); \
 		ADD_MAGA(SmokeShellRed,2); \
@@ -247,6 +265,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Platoon_Commander: INHERIT \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Platoon_Sergeant: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
@@ -263,6 +282,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Platoon_Sergeant: INHERIT \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Platoon_Medic: INHERIT \
 { \
 	scope = 1; \
+	scopeArsenal = 1; \
 	class TransportItems { \
 		ADD_ITEM(ACE_fieldDressing,20); \
 		ADD_ITEM(ACE_morphine,10); \

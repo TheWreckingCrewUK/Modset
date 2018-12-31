@@ -634,6 +634,34 @@ class TWC_Infantry_Modern_Regular_Woodland_Artillery_Crew: TWC_Infantry_Modern_R
 	displayName = "Artillery Crew";
 	backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
 	TWC_isCommandRole = 0;
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_Rifleman_F",
+		"UK3CB_BAF_H_Mk7_Camo_D",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_Rifleman_F",
+		"UK3CB_BAF_H_Mk7_Camo_D",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	weapons[] =
+	{
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"Throw",
+		"Put"
+	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_FO: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
@@ -760,4 +788,20 @@ class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Crew: TWC_Infantry_Modern_Reg
 {
 	displayName = "Vehicle Crew";
 	TWC_isCommandRole = 0;
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey",
+		"UK3CB_BAF_H_CrewHelmet_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey",
+		"UK3CB_BAF_H_CrewHelmet_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
 };
