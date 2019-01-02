@@ -1182,28 +1182,28 @@ class CfgGroups
 					class Unit0
 					{
 						side = EAST;
-						vehicle = "BCCCCP_VDV_Rifleman_Para"; //Class name of desired solider
+						vehicle = "BCCCCP_VDV_Squadlead_Para"; //Class name of desired solider
 						rank = "SERGEANT"; // Rank
 						position[] = {0,3,0}; //Position in the formation
 					};
 					class Unit1
 					{
 						side = EAST;
-						vehicle = "BCCCCP_VDV_Rifleman_Para"; //Class name of desired solider
+						vehicle = "BCCCCP_VDV_MG_RPK_Para"; //Class name of desired solider
 						rank = "PRIVATE"; // Rank
 						position[] = {1,0,0}; //Position in the formation
 					};
 					class Unit2
 					{
 						side = EAST;
-						vehicle = "BCCCCP_VDV_Rifleman_Para"; //Class name of desired solider
+						vehicle = "BCCCCP_VDV_Grenadier_Para"; //Class name of desired solider
 						rank = "PRIVATE"; // Rank
 						position[] = {3,0,0}; //Position in the formation
 					};
 					class Unit3
 					{
 						side = EAST;
-						vehicle = "BCCCCP_VDV_Rifleman_Para"; //Class name of desired solider
+						vehicle = "BCCCCP_VDV_GrenadierAss_Para"; //Class name of desired solider
 						rank = "PRIVATE"; // Rank
 						position[] = {5,0,0}; //Position in the formation
 					};
@@ -1238,9 +1238,50 @@ class CfgGroups
 					class Unit8
 					{
 						side = EAST;
-						vehicle = "BCCCCP_VDV_Rifleman_Para"; //Class name of desired solider
+						vehicle = "BCCCCP_VDV_SenRifleman_Para"; //Class name of desired solider
 						rank = "CORPORAL"; // Rank
 						position[] = {15,0,0}; //Position in the formation
+					};
+				};
+				class Airborne_PltCommand
+				{
+					name = "Airborne Platoon Command";
+					faction = "BCCCCP";
+					side = EAST;
+					class Unit0
+					{
+						side = EAST;
+						vehicle = "BCCCCP_VDV_Squadlead_Para"; //Class name of desired solider
+						rank = "LIEUTENANT"; // Rank
+						position[] = {0,3,0}; //Position in the formation
+					};
+					class Unit1
+					{
+						side = EAST;
+						vehicle = "BCCCCP_VDV_Squadlead_Para"; //Class name of desired solider
+						rank = "SERGEANT"; // Rank
+						position[] = {1,0,0}; //Position in the formation
+					};
+					class Unit2
+					{
+						side = EAST;
+						vehicle = "BCCCCP_VDV_MG_PKM_Para"; //Class name of desired solider
+						rank = "PRIVATE"; // Rank
+						position[] = {3,0,0}; //Position in the formation
+					};
+					class Unit3
+					{
+						side = EAST;
+						vehicle = "BCCCCP_VDV_MGAss_Para"; //Class name of desired solider
+						rank = "PRIVATE"; // Rank
+						position[] = {5,0,0}; //Position in the formation
+					};
+					class Unit4
+					{
+						side = EAST;
+						vehicle = "BCCCCP_VDV_Sniper_Para"; //Class name of desired solider
+						rank = "PRIVATE"; // Rank
+						position[] = {7,0,0}; //Position in the formation
 					};
 				};
 			};

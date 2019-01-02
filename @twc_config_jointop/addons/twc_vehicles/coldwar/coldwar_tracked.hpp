@@ -161,7 +161,7 @@ class TWC_Vehicle_ColdWar_Scimitar_Woodland: ukcw_cvrt_Scim_w_L1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"commander", "gunner"}, {"Intercom_1"})
+	REGULAR_77({"commander","gunner"}, {"Intercom_1"})
 };
 
 class TWC_Vehicle_ColdWar_Scimitar_Desert: ukcw_cvrt_Scim_d_L1 {
@@ -190,7 +190,7 @@ class TWC_Vehicle_ColdWar_Scimitar_Desert: ukcw_cvrt_Scim_d_L1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"commander", "gunner"}, {"Intercom_1"})
+	REGULAR_77({"commander","gunner"}, {"Intercom_1"})
 };
 
 #undef CURRENT_VEHICLE
