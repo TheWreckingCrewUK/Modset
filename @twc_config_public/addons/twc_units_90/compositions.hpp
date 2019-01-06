@@ -398,6 +398,75 @@ class CfgGroups
 								position[] = {17,0,0};
 						};
 					};
+					class twc_men_1990_us_d_squad
+					{
+						name = "US Squad"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
+						{
+							side = 1;
+							vehicle = "twc_men_1990_us_d_SquadLeader"; //Class name of desired solider
+							rank = "SERGEANT"; // Rank
+							position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+							side = 1;
+							vehicle = "twc_men_1990_us_d_teamleader";
+							rank = "CORPORAL";
+							position[] = {3,0,0};
+						};
+						class Unit2
+						{
+							side = 1;
+							vehicle = "twc_men_1990_us_d_rifleman";
+							rank = "PRIVATE";
+							position[] = {5,0,0};
+						};
+						class Unit3
+						{
+							side = 1;
+							vehicle = "twc_men_1990_us_d_rifleman_at";
+							rank = "PRIVATE";
+							position[] = {7,0,0};
+						};
+						class Unit4
+						{
+							side = 1;
+							vehicle = "twc_men_1990_us_d_autorifleman";
+							rank = "PRIVATE";
+							position[] = {9,0,0};
+						};
+						class Unit5
+						{
+							side = 1;
+							vehicle = "twc_men_1990_us_d_teamleader";
+							rank = "CORPORAL";
+							position[] = {11,0,0};
+						};
+						class Unit6
+						{
+							side = 1;
+							vehicle = "twc_men_1990_us_d_rifleman";
+							rank = "PRIVATE";
+							position[] = {13,0,0};
+						};
+						class Unit7
+						{
+							side = 1;
+							vehicle = "twc_men_1990_us_d_rifleman_at";
+							rank = "PRIVATE";
+							position[] = {15,0,0};
+						};
+						class Unit8
+						{
+							side = 1;
+							vehicle = "twc_men_1990_us_d_autorifleman";
+							rank = "PRIVATE";
+							position[] = {17,0,0};
+						};
+					};
 								class Modern_ana_section
                                 {
                                         name = "ANA Section"; //Name of Group

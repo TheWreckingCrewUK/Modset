@@ -1448,6 +1448,22 @@ class cfgweapons
 			};			
 		};
 	};
+	class CUP_arifle_M16A2_GL: CUP_arifle_M16_Base
+	{
+		
+		class Single:Mode_SemiAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
 	
 	class CUP_arifle_FNFAL: Rifle_Base_F
 	{
@@ -1629,12 +1645,7 @@ class cfgweapons
 		{
 			sounds[] = {"StandardSound"};
 			class standardsound {
-				soundsetshot[]=
-				{
-					"jsrs_zafir_closure_soundshader",
-					"jsrs_m249_shot_soundset",
-					"jsrs_mg_echo_soundset"
-				};
+				soundSetShot[] = {"jsrs_zafir_closure_soundshader","jsrs_1903_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
 		};
 	};
@@ -1650,12 +1661,7 @@ class cfgweapons
 		{
 			sounds[] = {"StandardSound"};
 			class standardsound {
-				soundsetshot[]=
-				{
-					"jsrs_mk200_closure_soundshader",
-					"jsrs_m240_shot_soundset",
-					"jsrs_mg_echo_soundset"
-				};
+				soundSetShot[] = {"jsrs_mk200_closure_soundshader","twc_l7_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
 		};
 	};

@@ -219,6 +219,23 @@ class cfgWeapons
 		};
 	};
 	
+	class Rifle_Base_F;
+	class CUP_arifle_M16_Base: Rifle_Base_F
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	class CUP_arifle_M16A2: CUP_arifle_M16_Base
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	class CUP_arifle_M16A2_GL: CUP_arifle_M16_Base
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
 	
 	
 	

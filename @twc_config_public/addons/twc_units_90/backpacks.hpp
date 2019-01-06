@@ -759,8 +759,8 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 	};
 
 ////////////////////////////// US Woodland Camo  //////////////////////////////
-	class rhsgref_wdl_alicepack;
-	class twc_men_1990_us_w_backpack_squadlead: rhsgref_wdl_alicepack
+	
+	class twc_men_1990_us_w_backpack_squadlead: twc_AlicePack_green
 	{
 		scope = 1;
 		class TransportItems
@@ -820,7 +820,8 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 		};		
 	};
-	class twc_men_1990_us_w_backpack_teamlead: rhsgref_wdl_alicepack
+	class CUP_B_AlicePack_OD;
+	class twc_men_1990_us_w_backpack_teamlead: CUP_B_AlicePack_OD
 	{
 		scope = 1;
 		class TransportMagazines
@@ -867,7 +868,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};			
 		};		
 	};
-	class twc_men_1990_us_w_backpack_rifleman: rhsgref_wdl_alicepack
+	class twc_men_1990_us_w_backpack_rifleman: CUP_B_AlicePack_OD
 	{
 		scope = 1;
 		class TransportMagazines
@@ -889,7 +890,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};	
 		};
 	};
-	class twc_men_1990_us_w_backpack_autorifleman: rhsgref_wdl_alicepack
+	class twc_men_1990_us_w_backpack_autorifleman: CUP_B_AlicePack_OD
 	{
 		scope = 1;
 		class TransportMagazines
