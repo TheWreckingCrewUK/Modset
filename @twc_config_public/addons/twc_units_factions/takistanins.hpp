@@ -243,6 +243,41 @@
 
 		};
 	};
+	class Tak_twc_ins_Men_R1_2: Tak_twc_ins_Men_R1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_04";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R1_3: Tak_twc_ins_Men_R1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_02";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R1_4: Tak_twc_ins_Men_R1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_03";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R1_5: Tak_twc_ins_Men_R1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_06";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R1_6: Tak_twc_ins_Men_R1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_05";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R1_7: Tak_twc_ins_Men_R1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_08";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R1_8: Tak_twc_ins_Men_R1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_07";
+		scope=1;
+	};
 	class Tak_twc_ins_Men_RPG1: Tak_twc_ins_Men_Base
 	{
 		scope=2;
@@ -307,6 +342,41 @@
 		
 		
 	};
+	class Tak_twc_ins_Men_RPG1_2: Tak_twc_ins_Men_RPG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_01";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_RPG1_3: Tak_twc_ins_Men_RPG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_02";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_RPG1_4: Tak_twc_ins_Men_RPG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_03";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_RPG1_5: Tak_twc_ins_Men_RPG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_06";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_RPG1_6: Tak_twc_ins_Men_RPG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_05";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_RPG1_7: Tak_twc_ins_Men_RPG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_08";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_RPG1_8: Tak_twc_ins_Men_RPG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_07";
+		scope=1;
+	};
 	class Tak_twc_ins_Men_R2: Tak_twc_ins_Men_Base
 	{
 		scope=2;
@@ -362,6 +432,41 @@
 
 		};
 	};
+	class Tak_twc_ins_Men_R2_2: Tak_twc_ins_Men_R2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_01";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R2_3: Tak_twc_ins_Men_R2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_02";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R2_4: Tak_twc_ins_Men_R2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_03";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R2_5: Tak_twc_ins_Men_R2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_06";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R2_6: Tak_twc_ins_Men_R2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_05";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R2_7: Tak_twc_ins_Men_R2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_08";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R2_8: Tak_twc_ins_Men_R2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_07";
+		scope=1;
+	};
 	class Tak_twc_ins_Men_AR1: Tak_twc_ins_Men_Base
 	{
 		scope=2;
@@ -412,6 +517,41 @@
 
 		};
 	};
+	class Tak_twc_ins_Men_AR1_2: Tak_twc_ins_Men_AR1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_01";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_AR1_3: Tak_twc_ins_Men_AR1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_06";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_AR1_4: Tak_twc_ins_Men_AR1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_03";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_AR1_5: Tak_twc_ins_Men_AR1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_04";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_AR1_6: Tak_twc_ins_Men_AR1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_05";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_AR1_7: Tak_twc_ins_Men_AR1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_08";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_AR1_8: Tak_twc_ins_Men_AR1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_07";
+		scope=1;
+	};
 	class Tak_twc_ins_Men_MG1: Tak_twc_ins_Men_Base
 	{
 		scope=2;
@@ -440,7 +580,7 @@
 		{
 		"Throw",
 		"Put",
-	"CUP_lmg_PKM"
+		"CUP_lmg_PKM"
 		};
 		magazines[]=
 		{
@@ -466,10 +606,45 @@
 
 		};
 	};
+	class Tak_twc_ins_Men_MG1_2: Tak_twc_ins_Men_MG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_06";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_MG1_3: Tak_twc_ins_Men_MG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_02";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_MG1_4: Tak_twc_ins_Men_MG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_03";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_MG1_5: Tak_twc_ins_Men_MG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_04";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_MG1_6: Tak_twc_ins_Men_MG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_05";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_MG1_7: Tak_twc_ins_Men_MG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_08";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_MG1_8: Tak_twc_ins_Men_MG1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_07";
+		scope=1;
+	};
 	class Tak_twc_ins_Men_R3: Tak_twc_ins_Men_Base
 	{
 		scope=2;
-		displayName="Rifleman (SAvz)";
+		displayName="Rifleman (Type 56)";
 		uniformClass="CUP_O_TKI_Khet_Partug_01";
 		linkedItems[]=
 		{
@@ -487,32 +662,32 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_savz58p"
+		"CUP_arifle_TYPE_56_2"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_savz58p"
+		"CUP_arifle_TYPE_56_2"
 		};
 		magazines[]=
 		{
-		"rhs_30Rnd_762x39mm_Savz58",
-		"rhs_30Rnd_762x39mm_Savz58",
-		"rhs_30Rnd_762x39mm_Savz58",
-		"rhs_30Rnd_762x39mm_Savz58",
-		"rhs_30Rnd_762x39mm_Savz58",
-		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm",
+		"rhs_30Rnd_762x39mm",
+		"rhs_30Rnd_762x39mm",
+		"rhs_30Rnd_762x39mm",
+		"rhs_30Rnd_762x39mm",
+		"rhs_30Rnd_762x39mm",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_30Rnd_762x39mm_Savz58",
-		"rhs_30Rnd_762x39mm_Savz58",
-		"rhs_30Rnd_762x39mm_Savz58",
-		"rhs_30Rnd_762x39mm_Savz58",
-		"rhs_30Rnd_762x39mm_Savz58",
-		"rhs_30Rnd_762x39mm_Savz58",
+		"rhs_30Rnd_762x39mm",
+		"rhs_30Rnd_762x39mm",
+		"rhs_30Rnd_762x39mm",
+		"rhs_30Rnd_762x39mm",
+		"rhs_30Rnd_762x39mm",
+		"rhs_30Rnd_762x39mm",
 		"SmokeShell"
 		};
 		Items[]=
@@ -523,6 +698,41 @@
 		{
 
 		};
+	};
+	class Tak_twc_ins_Men_R3_2: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_08";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R3_3: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_02";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R3_4: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_03";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R3_5: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_04";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R3_6: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_05";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R3_7: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_06";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R3_8: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_07";
+		scope=1;
 	};
 	class Tak_twc_ins_Men_a1: Tak_twc_ins_Men_Base
 	{
@@ -549,7 +759,7 @@
 		{
 		"Throw",
 		"Put",
-	"rhs_weap_M590_5RD"
+		"rhs_weap_M590_5RD"
 		};
 		magazines[]=
 		{
@@ -581,6 +791,41 @@
 
 		};
 	};
+	class Tak_twc_ins_Men_a1_2: Tak_twc_ins_Men_a1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_01";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a1_3: Tak_twc_ins_Men_a1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_02";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a1_4: Tak_twc_ins_Men_a1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_03";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a1_5: Tak_twc_ins_Men_a1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_04";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a1_6: Tak_twc_ins_Men_a1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_05";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a1_7: Tak_twc_ins_Men_a1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_06";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a1_8: Tak_twc_ins_Men_a1
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_07";
+		scope=1;
+	};
 	class Tak_twc_ins_Men_a2: Tak_twc_ins_Men_Base
 	{
 		scope=2;
@@ -606,7 +851,7 @@
 		{
 		"Throw",
 		"Put",
-	"rhs_weap_savz61"
+		"rhs_weap_savz61"
 		};
 		magazines[]=
 		{
@@ -636,6 +881,41 @@
 
 		};
 	};	
+	class Tak_twc_ins_Men_a2_2: Tak_twc_ins_Men_a2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_01";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a2_3: Tak_twc_ins_Men_a2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_02";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a2_4: Tak_twc_ins_Men_a2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_03";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a2_5: Tak_twc_ins_Men_a2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_04";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a2_6: Tak_twc_ins_Men_a2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_05";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a2_7: Tak_twc_ins_Men_a2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_08";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_a2_8: Tak_twc_ins_Men_a2
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_07";
+		scope=1;
+	};
 	class Tak_twc_ins_Men_sniper: Tak_twc_ins_Men_Base
 	{
 		scope=2;

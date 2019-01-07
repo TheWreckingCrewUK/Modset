@@ -14,11 +14,33 @@ class cfgWeapons
 	class Rifle_Base_F;
 	class cannoncore;
 	
+	class CUP_H_US_H_PASGT_desert;
+	class twc_CUP_H_US_H_PASGT_trp: CUP_H_US_H_PASGT_desert
+	{
+		displayName = "PASGT (Trepentarn)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa"};
+	};
+	class twc_CUP_H_US_H_PASGT_flk: CUP_H_US_H_PASGT_desert
+	{
+		displayName = "PASGT (Flecktarn)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa"};
+	};
+	
 	class rhsusf_spcs_ocp_teamleader;
 	class twc_mtp_spcs_SL: rhsusf_spcs_ocp_teamleader
 	{
 		displayName = "SPCS MTP (SL)";
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	class twc_trp_spcs_SL: rhsusf_spcs_ocp_teamleader
+	{
+		displayName = "SPCS Trepentarn (SL)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	class twc_flk_spcs_SL: rhsusf_spcs_ocp_teamleader
+	{
+		displayName = "SPCS Flecktarn (SL)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
 	};
 	
 	class rhsusf_spcs_ocp_sniper;
@@ -47,6 +69,28 @@ class cfgWeapons
 		{
 			containerClass = "Supply200";
 		};
+	};
+	class twc_trp_spcs_MG: rhsusf_spcs_ocp_saw
+	{
+		displayName = "SPCS Trepentarn (MG)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	class twc_flk_spcs_MG: rhsusf_spcs_ocp_saw
+	{
+		displayName = "SPCS Flecktarn (MG)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	
+	class rhsusf_spcs_ocp_rifleman_alt;
+	class twc_trp_spcs_rif: rhsusf_spcs_ocp_rifleman_alt
+	{
+		displayName = "SPCS Trepentarn (Rifleman)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	class twc_flk_spcs_rif: rhsusf_spcs_ocp_rifleman_alt
+	{
+		displayName = "SPCS Flecktarn (Rifleman)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
 	};
 	
 	class rhsusf_spc_rifleman;
@@ -293,6 +337,25 @@ class cfgWeapons
 		class FullAuto:FullAuto {
 			dispersion = 0.003;
 		};
+	};
+	class rhs_weap_m249_pip;
+	class twc_HK_MG4: rhs_weap_m249_pip
+	{
+		displayname = "HK MG4";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_g33_xps3";
+			};
+		};
+	};
+	class rhs_weap_mg42;
+	class twc_HK_MG3: rhs_weap_mg42
+	{
+		displayname = "HK MG3";
+		twc_openbolt = 1;
 	};
 	
 	class rhs_weap_M590_5RD: Rifle_Base_F

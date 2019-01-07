@@ -130,6 +130,7 @@ class CfgVehicles
 	
 	#include "modern.hpp"
 	#include "poland.hpp"
+	#include "germany.hpp"
 	
 	#include "insurgency\units.hpp"
 	

@@ -1360,6 +1360,40 @@ class cfgweapons
 			};			
 		};
 	};
+	class CUP_arifle_TYPE_56_2: CUP_arifle_AKM
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"jsrs_akm_shot_soundset",
+					"jsrs_akm_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"jsrs_akm_shot_soundset",
+					"jsrs_akm_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"jsrs_akm_shot_soundset",
+					"jsrs_akm_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
+			};			
+		};
+	};
 	
 	class CUP_arifle_AK47: CUP_arifle_AK_Base
 	{
@@ -1476,6 +1510,21 @@ class cfgweapons
 		class FullAuto:mode_fullauto {
 			class standardsound {
 				soundSetShot[] = {"3CB_BAF_L1A1_Closure_SoundSet","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_G36_Base: Rifle_Base_F
+	{
+		
+		class Single:Mode_SemiAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_g36_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class FullAuto:mode_fullauto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_g36_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};			
 		};
 	};
