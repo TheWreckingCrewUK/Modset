@@ -571,10 +571,10 @@ class cfgWeapons
 	};
 	
 	
-	class rhs_weap_ak74m_zenitco01;
-	class rhs_weap_ak74m_zenitco01_b33: rhs_weap_ak74m_zenitco01
+	class rhs_weap_ak74mr;
+	class twc_beryl_base: rhs_weap_ak74mr
 	{
-		
+		scope = 1;
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
@@ -582,7 +582,7 @@ class cfgWeapons
 	};
 	
 	
-	class twc_ak74_pol_base: rhs_weap_ak74m_zenitco01_b33
+	class twc_ak74_pol_base: twc_beryl_base
 	{
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
@@ -608,7 +608,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhs_acc_2dpZenit";
+				item="rhsusf_acc_wmx_bk";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -649,7 +649,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhs_acc_2dpZenit";
+				item="rhsusf_acc_wmx_bk";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -676,7 +676,7 @@ class cfgWeapons
 
 		displayName = "wz.2004 Beryl (wz. 74)";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
-		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
+		accessories[] = {"rhsusf_acc_eotech_552", "rhsusf_acc_wmx_bk", "rhs_acc_dtk1"};
 		magazineWell[] = {};
 		class LinkedItems
 		{
@@ -688,7 +688,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhs_acc_2dpZenit";
+				item="rhsusf_acc_wmx_bk";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -725,6 +725,21 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	class CUP_arifle_MG36;
+	class twc_MG36_eotech: CUP_arifle_MG36
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="UK3CB_BAF_Eotech";
+			};
+		};
+	};
+	
 	
 	class rhs_weap_m4a1;
 	class twc_m4_acog_grip_laser: rhs_weap_m4a1

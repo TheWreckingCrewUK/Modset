@@ -1529,6 +1529,21 @@ class cfgweapons
 		};
 	};
 	
+	class CUP_arifle_G36C: Rifle_Base_F
+	{
+		
+		class Single:Mode_SemiAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_g36_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class FullAuto:mode_fullauto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_g36_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
+	
 	class Rifle_Long_Base_F: Rifle_Base_F
 	{
 		
