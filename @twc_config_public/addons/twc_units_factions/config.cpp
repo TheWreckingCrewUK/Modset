@@ -543,7 +543,7 @@ class CfgVehicles
 		{
 			class _xx_RPG7
 			{
-				magazine="CUP_OG7_M";
+				magazine="rhs_rpg7_PG7V_mag";
 				count=4;
 			};
 		};

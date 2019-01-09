@@ -307,6 +307,26 @@ class cfgWeapons
 		class FullAuto;
 	};
 	
+	
+	class CUP_arifle_G36_Base: Rifle_Base_F
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	class CUP_arifle_G36C: Rifle_Base_F
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	class CUP_arifle_MG36: CUP_arifle_G36C
+	{
+		recoil = "twc_rifle_556_long";
+		recoilProne = "twc_rifle_556_long_prone";
+	};
+	
+	
 	class rhs_weap_ak74m_Base_F: Rifle_Base_F
 	{
 		recoil = "twc_rifle_556";
@@ -711,6 +731,14 @@ class cfgWeapons
 		};
 	};
 	
+	class twc_rhs_rpg7_ins: rhs_weap_rpg7
+	{
+		
+		class EventHandlers: EventHandlers {
+			fired = "_mult = 1; if (!isserver) then {_mult = 0.5};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];";
+		};
+	};
+	
 	
 	class rhs_weap_svdp_npz;
 	class twc_pol_svd: rhs_weap_svdp_npz
@@ -726,7 +754,7 @@ class cfgWeapons
 		};
 	};
 	
-	class CUP_arifle_MG36;
+	
 	class twc_MG36_eotech: CUP_arifle_MG36
 	{
 		

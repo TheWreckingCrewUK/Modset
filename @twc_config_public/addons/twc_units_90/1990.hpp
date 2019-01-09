@@ -1411,7 +1411,7 @@
 
 	class 1990_RM_British_SectionCommander_Mix: 1990_RM_base
 	{
-		displayName="Section Leader";
+		displayName="Section Leader @Royal Marines";
 		editorSubcategory = "Men_1990RM";
 		scope = 2;
 		vehicleClass="Men_1990RM";

@@ -694,14 +694,20 @@ class CfgVehicles {
 		shadow = 0;
 		hiddenSelectionsTextures[] = {"",""};
 		displayname = "TWC Base Target";
+		class EventHandlers {
+			init = " if (!isServer) exitWith {};params ['_entity'];[_entity] spawn twc_fnc_baseobject";
+		};
 	};
 	class twc_B_AAA_System_01_F_S: B_AAA_System_01_F
 	{
-		shadow = 0;
-		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {""};
-		model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
-		displayname = "TWC Base Target (Small)";
+		//shadow = 0;
+		//hiddenSelections[] = {"Camo"};
+		//hiddenSelectionsTextures[] = {""};
+		model = "\A3\Structures_F_Exp\Military\Trenches\Trench_01_grass_F.p3d";
+		displayname = "TWC Base Target (Trench)";
+		class EventHandlers {
+			init = " if (!isServer) exitWith {};params ['_entity'];[_entity] spawn twc_fnc_baseobject";
+		};
 	};
 	
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A;
