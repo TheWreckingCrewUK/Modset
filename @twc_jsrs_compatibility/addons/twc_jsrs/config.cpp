@@ -424,6 +424,18 @@ class cfgsoundshaders
 		volume=2;
 		frequency = 0.5;
 	};
+	
+	class jsrs_awm_distance_0m_to_5m_shot_soundshader;
+	class twc_jsrs_awm_distance_0m_to_5m_shot_soundshader: jsrs_awm_distance_0m_to_5m_shot_soundshader
+	{
+		rangecurve[]=
+		{
+			{0,1},
+			{3.5,0.7},
+			{5,0}
+		};
+	};
+		
 
 };
 
@@ -458,7 +470,7 @@ class cfgsoundsets
 	class twc_beryl_Shot_Soundset: jsrs_kar98k_shot_soundset
 	{
 		volumefactor = 1.5;
-		frequencyFactor = 0.7;
+		frequencyFactor = 0.9;
 	};
 	
 	class jsrs_Rocketpods_shot_soundset;
@@ -568,7 +580,7 @@ class cfgsoundsets
 		soundshaders[] = {"jsrs_m240_closure_soundshader",
 			"jsrs_awm_interior_shot_soundshader",
 			"jsrs_awm_interior_shot_2_soundshader",
-			"jsrs_awm_distance_0m_to_5m_shot_soundshader",
+			"twc_jsrs_awm_distance_0m_to_5m_shot_soundshader",
 			"jsrs_M2_distance_5m_to_100m_shot_soundshader",
 			"jsrs_M2_distance_100m_to_400m_shot_soundshader",
 			"jsrs_M2_distance_400m_to_800m_shot_soundshader",

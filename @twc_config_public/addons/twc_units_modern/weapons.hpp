@@ -1020,11 +1020,14 @@ class cfgmagazines{
 		class twc_rhsgref_30rnd_556x45_m21: rhs_30Rnd_545x39_7N10_AK {
 			descriptionshort = "Caliber: 5.56x45mm<br />Rounds: 30";
 			displayName = "5.56mm 30rnd Mag";
+			ammo = "B_556x45_Ball";
 		};
 		
 		class twc_rhsgref_30rnd_556x45_m21_t: twc_rhsgref_30rnd_556x45_m21 {
 			descriptionshort = "Caliber: 5.56x45mm Tracer<br />Rounds: 30";
 			displayName = "5.56mm 30rnd Tracer Mag";
+			ammo = "B_556x45_Ball";
+			tracersEvery = 1;
 		};
 		
 		class FakeMagazine;
@@ -1093,5 +1096,37 @@ class cfgammo
 	{
 		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
 	};
+	
+	class BulletBase;
+	class rhs_ammo_762x51_M80_Ball: BulletBase
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	class rhs_B_762x54_Ball;
+	class rhs_B_762x54_Ball_Tracer_Green: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_762x54_7BZ3_Ball: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_762x54_7N13_Ball: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_762x54_7N14_Ball: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_762x54_7N1_Ball: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_762x54_7N26_Ball: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	
 	
 };

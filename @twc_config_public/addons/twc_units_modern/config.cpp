@@ -53,7 +53,23 @@ class CfgPatches {
 			"Modern_pol_mg_d",
 			"Modern_pol_commander_d",
 			"Modern_pol_subcommander_d",
-			"Modern_pol_medic_d"
+			"Modern_pol_medic_d",
+			
+			"modern_ger_Base",
+			"Modern_ger_rif_AT",
+			"modern_ger_grenadier",
+			"modern_ger_mg",
+			"modern_ger_commander",
+			"modern_ger_subcommander",
+			"modern_ger_medic",
+			
+			"modern_ger_Base_d",
+			"Modern_ger_rif_AT_d",
+			"modern_ger_grenadier_d",
+			"modern_ger_mg_d",
+			"modern_ger_commander_d",
+			"modern_ger_subcommander_d",
+			"modern_ger_medic_d"
 		};
 
 		weapons[]={};
