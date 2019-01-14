@@ -3,7 +3,7 @@ params["_object", "_thislist"];
 
 _gunner = (gunner _object);
 if ((side _gunner) == west) then {
-	_gunner joinSilent (selectRandom _thislist);
+	_gunner joinSilent (group (selectRandom _thislist));
 };
 
 
