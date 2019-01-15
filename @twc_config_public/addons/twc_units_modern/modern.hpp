@@ -534,8 +534,8 @@
 		{
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_762_100Rnd",
-			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd_T",
+			"UK3CB_BAF_762_100Rnd_T",
 			"UK3CB_BAF_762_100Rnd_T",
 			"HandGrenade",
 			"SmokeShell",
@@ -545,8 +545,8 @@
 		{
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_762_100Rnd",
-			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd_T",
+			"UK3CB_BAF_762_100Rnd_T",
 			"UK3CB_BAF_762_100Rnd_T",
 			"HandGrenade",
 			"SmokeShell",

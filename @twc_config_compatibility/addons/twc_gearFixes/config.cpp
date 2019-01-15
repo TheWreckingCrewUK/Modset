@@ -30,6 +30,7 @@ class CfgPatches {
 	};
 };
 
+
 class CfgAmmo {
 	class GrenadeHand;
 	class GrenadeHand_stone: GrenadeHand
@@ -126,6 +127,14 @@ class CfgAmmo {
 	
 	
 	class B_556x45_Ball;
+	class rhs_ammo_556x45_M855A1_Ball: B_556x45_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	class rhs_ammo_556x45_M855A1_Ball_Red: rhs_ammo_556x45_M855A1_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
 	class B_556x45_Ball_Tracer_Red: B_556x45_Ball
 	{
 		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
@@ -734,7 +743,8 @@ class cfgRecoils
 class Extended_FiredBIS_EventHandlers {
 	class CAManBase {
 		class gunshake {
-			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2; if ((_this select 1) in ['UK3CB_BAF_L7A2','rhs_weap_pkm']) then {_rec = 3};addCamShake [_rec, 0.3, 15]};";
+			//clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2.5; if ((_this select 1) in ['UK3CB_BAF_L7A2','rhs_weap_pkm','twc_rhs_weap_m240B_mgo_lazer']) then {_rec = 3};addCamShake [_rec, 0.3, 15]};";
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {addCamShake [2.5, 0.3, 15]};";
 		};
 	};
 	class Helicopter_Base_F {
@@ -742,7 +752,7 @@ class Extended_FiredBIS_EventHandlers {
 			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2; addCamShake [_rec, 0.5, 15]};";
 		};
 	};
-	class Plane_Base_F {
+	class Plane {
 		class gunshake {
 			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2; addCamShake [_rec, 0.5, 15]};";
 		};
@@ -792,36 +802,57 @@ class Extended_FiredBIS_EventHandlers {
 			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};addCamShake [_rec, _time, 15]};";
 		};
 	};
+	class UK3CB_BAF_FV432_Mk3_Base {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2; addCamShake [_rec, 0.3, 15]};";
+		};
+	};
 	class MBT_01_base_F {
 		class gunshake {
-			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2;_time = 0.3; if (((gunner (vehicle (_this select_0))) == player) || ((commander (vehicle (_this select_0))) == player)) then {_rec = 0.2;_time = 0.3;if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 4;_time = 1;};};addCamShake [_rec, _time, 15]};";
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class MBT_02_base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class MBT_03_base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class MBT_04_base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class rhs_tank_base {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+};
+
+class Extended_Init_EventHandlers
+{
+	class CBA_B_InvisibleTarget
+	{
+		class baseobject
+		{
+			serverinit = "params ['_entity']; [_entity] spawn {params ['_entity']; waituntil {!isnil 'twc_fnc_baseobject'};[_entity] spawn twc_fnc_baseobject}";
 		};
 	};
 };
 class CfgVehicles {
-	
-	class B_AAA_System_01_F;
-	class twc_B_AAA_System_01_F: B_AAA_System_01_F
+	/*class B_TargetSoldier ;
+	class CBA_B_InvisibleTarget : B_TargetSoldier 
 	{
-		shadow = 0;
-		hiddenSelectionsTextures[] = {"",""};
-		displayname = "TWC Base Target";
 		class EventHandlers {
-			init = " if (!isServer) exitWith {};params ['_entity'];[_entity] spawn twc_fnc_baseobject";
+			init = " systemchat 'normal';if (!isServer) exitWith {};params ['_entity'];[_entity] spawn twc_fnc_baseobject";
 		};
 	};
-	class twc_B_AAA_System_01_F_S: B_AAA_System_01_F
-	{
-		//shadow = 0;
-		//hiddenSelections[] = {"Camo"};
-		//hiddenSelectionsTextures[] = {""};
-		model = "\A3\Structures_F_Exp\Military\Trenches\Trench_01_grass_F.p3d";
-		displayname = "TWC Base Target (Trench)";
-		class EventHandlers {
-			init = " if (!isServer) exitWith {};params ['_entity'];[_entity] spawn twc_fnc_baseobject";
-		};
-	};
-	
+	*/
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A;
 	class TWC_BAF_B_Bergen_OLI_Rifleman_XL_A: UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A
 	{

@@ -291,7 +291,7 @@
 		};
 		magazines[]=
 		{
-			"rhs_100Rnd_762x54mmR_7N26",
+			"rhs_100Rnd_762x54mmR_green",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -301,7 +301,7 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_100Rnd_762x54mmR_7N26",
+			"rhs_100Rnd_762x54mmR_green",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",

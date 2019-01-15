@@ -488,7 +488,7 @@
 		{
 			class _xx_pkm
 			{
-				magazine = "rhs_100Rnd_762x54mmR_7N26";
+				magazine = "rhs_100Rnd_762x54mmR_green";
 				count = 4;
 			};
 			
@@ -1379,15 +1379,10 @@
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_Belt
-			{
-				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 1;
-			};
 			class _xx_Belt_T
 			{
 				magazine = "UK3CB_BAF_762_100Rnd_T";
-				count = 1;
+				count = 2;
 			};
 		};
 	};
@@ -1396,15 +1391,10 @@
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_Belt
-			{
-				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 1;
-			};
 			class _xx_Belt_T
 			{
 				magazine = "UK3CB_BAF_762_100Rnd_T";
-				count = 1;
+				count = 2;
 			};
 		};
 	};

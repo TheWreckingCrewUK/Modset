@@ -897,7 +897,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 		{
             class _xx_Stanag
 			{
-				magazine = "rhs_200rnd_556x45_B_SAW";
+				magazine = "rhs_200rnd_556x45_T_SAW";
 				count = 6;
 			};
 			class _xx_Smoke

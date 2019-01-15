@@ -2640,17 +2640,17 @@
 		};
 		magazines[]=
 		{
-			"rhs_200rnd_556x45_B_SAW",
-			"rhs_200rnd_556x45_B_SAW",
-			"rhsusf_100Rnd_556x45_soft_pouch",
+			"rhs_200rnd_556x45_T_SAW",
+			"rhs_200rnd_556x45_T_SAW",
+			"rhs_200rnd_556x45_T_SAW",
 			"HandGrenade",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_200rnd_556x45_B_SAW",
-			"rhs_200rnd_556x45_B_SAW",
-			"rhsusf_100Rnd_556x45_soft_pouch",
+			"rhs_200rnd_556x45_T_SAW",
+			"rhs_200rnd_556x45_T_SAW",
+			"rhs_200rnd_556x45_T_SAW",
 			"HandGrenade",
 			"SmokeShell"
 		};		

@@ -23,7 +23,6 @@ class cfgFunctions {
 			class tearDownForwardBase {};
 			class createDefenses {};
 			class setcamocoef {};
-			class baseswitchside {};
 			class baseobject {};
 		};
 		

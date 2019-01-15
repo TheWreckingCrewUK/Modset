@@ -376,6 +376,7 @@ class cfgWeapons
 	{
 		displayname = "HK MG3";
 		twc_openbolt = 1;
+		magazines[] = {"UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_T","UK3CB_BAF_762_200Rnd_Blank"};
 	};
 	
 	class rhs_weap_M590_5RD: Rifle_Base_F
@@ -591,8 +592,8 @@ class cfgWeapons
 	};
 	
 	
-	class rhs_weap_ak74mr;
-	class twc_beryl_base: rhs_weap_ak74mr
+	class rhs_weap_ak74m_npz;
+	class twc_beryl_base: rhs_weap_ak74m_npz
 	{
 		scope = 1;
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
@@ -608,7 +609,7 @@ class cfgWeapons
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
 		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
 		magazineWell[] = {};
-		};
+	};
 	
 
 	class twc_ak74_pol: twc_ak74_pol_base
@@ -625,26 +626,11 @@ class cfgWeapons
 				slot="CowsSlot";
 				item="rhsusf_acc_eotech_552";
 			};
-			class LinkedItemsFrontSideRail
-			{
-				slot="PointerSlot";
-				item="rhsusf_acc_wmx_bk";
-			};
-			class LinkedItemsMuzzleSlot
-			{
-				slot="MuzzleSlot";
-				item="rhs_acc_dtk1";
-			};
-			class LinkedItemsUnderBarrelSlot
-			{
-				slot="GripodSlot";
-				item="rhsusf_acc_grip3";
-			};
 		};
 	};
 	
-	class rhs_weap_ak74m_2mag_npz;
-	class twc_ak74_pol_2_base: rhs_weap_ak74m_2mag_npz
+	class rhs_weap_ak74m_desert_npz;
+	class twc_ak74_pol_2_base: rhs_weap_ak74m_desert_npz
 	{
 		
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
@@ -680,8 +666,8 @@ class cfgWeapons
 	};
 	
 	
-	class rhs_weap_ak74mr_gp25;
-	class twc_ak74_gp25_pol_base: rhs_weap_ak74mr_gp25
+	class rhs_weap_ak74m_gp25_npz;
+	class twc_ak74_gp25_pol_base: rhs_weap_ak74m_gp25_npz
 	{
 		
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
@@ -704,16 +690,6 @@ class cfgWeapons
 			{
 				slot="CowsSlot";
 				item="rhsusf_acc_eotech_552";
-			};
-			class LinkedItemsFrontSideRail
-			{
-				slot="PointerSlot";
-				item="rhsusf_acc_wmx_bk";
-			};
-			class LinkedItemsMuzzleSlot
-			{
-				slot="MuzzleSlot";
-				item="rhs_acc_dtk1";
 			};
 		};
 	};
@@ -1002,6 +978,20 @@ class cfgmagazines{
 			descriptionShort = "Caliber: 7.62x54mmR Tracer<br />Rounds: 10<br />Used in: SVD";
 			displayName = "7N1-P 10Rnd SVD Mag";
 		};	
+		// when 3cb does proxies, this is gonna have to go
+		class UK3CB_BAF_762_100Rnd_T;
+		class UK3CB_BAF_762_200Rnd_T: UK3CB_BAF_762_100Rnd_T
+		{
+			modelSpecial = "rhsgref\addons\rhsgref_weapons\mag_proxies\rhs_mag_792x57_belt_296rnd";
+			modelSpecialIsProxy = 1;
+		};
+		
+		class UK3CB_BAF_762_100Rnd;
+		class UK3CB_BAF_762_200Rnd: UK3CB_BAF_762_100Rnd
+		{
+			modelSpecial = "rhsgref\addons\rhsgref_weapons\mag_proxies\rhs_mag_792x57_belt_296rnd";
+			modelSpecialIsProxy = 1;
+		};
 		
 		class 200Rnd_20mm_G_belt;
 		class twc_200Rnd_20mm_G_belt_1: 200Rnd_20mm_G_belt
@@ -1009,7 +999,6 @@ class cfgmagazines{
 			ammo = "twc_G_20mm_HE";
 			initSpeed = 350;
 		};
-
 
 		class CA_Magazine;
 		class 10Rnd_RHS_50BMG_Box: CA_Magazine {
