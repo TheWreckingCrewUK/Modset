@@ -25,6 +25,9 @@ TWC_Suppress_impactCC ppEffectAdjust [1, 1, 0, [0,0,0,0], [1,1,1,1],[1,1,1,0]];
 TWC_Suppress_impactCC ppEffectCommit 0;
 TWC_Suppress_impactCC ppEffectEnable true;
 
+_isPublic = missionNameSpace getVariable ["TWC_enablePussySuppress", false];
+if (_isPublic) then { TWC_Suppress_modifier = 1.25; };
+
 TWC_Suppress_mainHandlerID = [{[] call twc_suppress_fnc_mainHandler}] call CBA_fnc_addPerFrameHandler;
 TWC_Suppress_pinnedHandlerID = [{[] call twc_suppress_fnc_pinnedHandler}, 0.5] call CBA_fnc_addPerFrameHandler;
 TWC_Suppress_thresholdHandlerID = [{[] call twc_suppress_fnc_thresholdHandler}, 1] call CBA_fnc_addPerFrameHandler;
