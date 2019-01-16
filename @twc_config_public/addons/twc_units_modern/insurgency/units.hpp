@@ -710,7 +710,7 @@
 
 	class Modern_British_Sniper_coin: Modern_British_Base {
 		scope=2;
-		displayName="Sniper (COIN)";
+		displayName="Sniper";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 		icon="iconManLeader";
 		twc_radioType = "ACRE_PRC343";
@@ -782,7 +782,7 @@
 
 	class Modern_British_Spotter_coin: Modern_British_Base {
 		scope=2;
-		displayName="Spotter (COIN)";
+		displayName="Spotter";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 		icon="iconManLeader";
 		twc_radioType = "ACRE_PRC343";

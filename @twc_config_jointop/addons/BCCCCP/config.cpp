@@ -51,13 +51,21 @@ class CfgPatches
 			"BCCCCP_VDV_Rifleman",
 			"BCCCCP_VDV_Rifleman_Para",
 			"BCCCCP_VDV_SenRifleman",
+			"BCCCCP_VDV_SenRifleman_Para",
 			"BCCCCP_VDV_Squadlead",
+			"BCCCCP_VDV_Squadlead_Para",
 			"BCCCCP_VDV_Grenadier",
+			"BCCCCP_VDV_Grenadier_Para",
 			"BCCCCP_VDV_GrenadierAss",
+			"BCCCCP_VDV_GrenadierAss_Para",
 			"BCCCCP_VDV_MG_RPK",
+			"BCCCCP_VDV_MG_RPK_Para",
 			"BCCCCP_VDV_MG_PKM",
+			"BCCCCP_VDV_MG_PKM_Para",
 			"BCCCCP_VDV_MGAss",
+			"BCCCCP_VDV_MGAss_Para",
 			"BCCCCP_VDV_Sniper",
+			"BCCCCP_VDV_Sniper_Para",
 			"BCCCCP_AAGunner",
 			"BCCCCP_AAAssistant",
 			"BCCCCP_ATGunner",
@@ -73,6 +81,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
+			"A3_Characters_F"
 			//"cup_creatures_people_military_sla",
 			//"cup_creatures_people_military_russia",
 			//"cup_airvehicles_mi6",

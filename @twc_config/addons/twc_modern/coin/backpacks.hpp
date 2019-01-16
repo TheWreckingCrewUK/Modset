@@ -9,7 +9,7 @@ class TWC_Backpack_Modern_Regular_Woodland_Pointman: UK3CB_BAF_B_Bergen_MTP_Poin
 		ADD_MAGA(UK3CB_BAF_12G_Pellets,8);
 	};
 	class TransportWeapons {
-		ADD_WEAP(UK3CB_BAF_L128A1,1)
+		ADD_WEAP(UK3CB_BAF_L128A1,1);
 	};
 };
 class TWC_Backpack_Modern_COIN_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
@@ -171,6 +171,9 @@ class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Pointman: UK3CB_BAF_B_Bergen_
 	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
+	};
+	class TransportWeapons {
+		ADD_WEAP(UK3CB_BAF_L128A1,1);
 	};
 };
 class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Grenadier: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C

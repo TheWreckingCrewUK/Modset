@@ -102,13 +102,69 @@ class CfgPatches
 			"Tak_twc_ins_Men_B1",
 			"Tak_twc_ins_Men_B2",
 			"Tak_twc_ins_Men_R1",
+			"Tak_twc_ins_Men_R1_2",
+			"Tak_twc_ins_Men_R1_3",
+			"Tak_twc_ins_Men_R1_4",
+			"Tak_twc_ins_Men_R1_5",
+			"Tak_twc_ins_Men_R1_6",
+			"Tak_twc_ins_Men_R1_7",
+			"Tak_twc_ins_Men_R1_8",
 			"Tak_twc_ins_Men_RPG1",
+			"Tak_twc_ins_Men_RPG1_2",
+			"Tak_twc_ins_Men_RPG1_3",
+			"Tak_twc_ins_Men_RPG1_4",
+			"Tak_twc_ins_Men_RPG1_5",
+			"Tak_twc_ins_Men_RPG1_6",
+			"Tak_twc_ins_Men_RPG1_7",
+			"Tak_twc_ins_Men_RPG1_8",
 			"Tak_twc_ins_Men_R2",
+			"Tak_twc_ins_Men_R2_2",
+			"Tak_twc_ins_Men_R2_3",
+			"Tak_twc_ins_Men_R2_4",
+			"Tak_twc_ins_Men_R2_5",
+			"Tak_twc_ins_Men_R2_6",
+			"Tak_twc_ins_Men_R2_7",
+			"Tak_twc_ins_Men_R2_8",
 			"Tak_twc_ins_Men_AR1",
+			"Tak_twc_ins_Men_AR1_2",
+			"Tak_twc_ins_Men_AR1_3",
+			"Tak_twc_ins_Men_AR1_4",
+			"Tak_twc_ins_Men_AR1_5",
+			"Tak_twc_ins_Men_AR1_6",
+			"Tak_twc_ins_Men_AR1_7",
+			"Tak_twc_ins_Men_AR1_8",
 			"Tak_twc_ins_Men_MG1",
+			"Tak_twc_ins_Men_MG1_2",
+			"Tak_twc_ins_Men_MG1_3",
+			"Tak_twc_ins_Men_MG1_4",
+			"Tak_twc_ins_Men_MG1_5",
+			"Tak_twc_ins_Men_MG1_6",
+			"Tak_twc_ins_Men_MG1_7",
+			"Tak_twc_ins_Men_MG1_8",
 			"Tak_twc_ins_Men_R3",
+			"Tak_twc_ins_Men_R3_2",
+			"Tak_twc_ins_Men_R3_3",
+			"Tak_twc_ins_Men_R3_4",
+			"Tak_twc_ins_Men_R3_5",
+			"Tak_twc_ins_Men_R3_6",
+			"Tak_twc_ins_Men_R3_7",
+			"Tak_twc_ins_Men_R3_8",
 			"Tak_twc_ins_Men_a1",
+			"Tak_twc_ins_Men_a1_2",
+			"Tak_twc_ins_Men_a1_3",
+			"Tak_twc_ins_Men_a1_4",
+			"Tak_twc_ins_Men_a1_5",
+			"Tak_twc_ins_Men_a1_6",
+			"Tak_twc_ins_Men_a1_7",
+			"Tak_twc_ins_Men_a1_8",
 			"Tak_twc_ins_Men_a2",
+			"Tak_twc_ins_Men_a2_2",
+			"Tak_twc_ins_Men_a2_3",
+			"Tak_twc_ins_Men_a2_4",
+			"Tak_twc_ins_Men_a2_5",
+			"Tak_twc_ins_Men_a2_6",
+			"Tak_twc_ins_Men_a2_7",
+			"Tak_twc_ins_Men_a2_8",
 			"Tak_twc_ins_Men_sniper",
 			"Tak_twc_ins_Men_sniper_h",
 			"Tak_twc_ins_Men_Scout",
@@ -303,6 +359,12 @@ class CfgFactionClasses
 		priority=2;
 		side=1;
 	};
+	class ger_units
+	{
+		displayName="Bundeswehr (TWC)";
+		priority=2;
+		side=1;
+	};
 	class nac_units
 	{
 		displayName="National Colombian Army";
@@ -481,7 +543,7 @@ class CfgVehicles
 		{
 			class _xx_RPG7
 			{
-				magazine="CUP_OG7_M";
+				magazine="rhs_rpg7_PG7V_mag";
 				count=4;
 			};
 		};

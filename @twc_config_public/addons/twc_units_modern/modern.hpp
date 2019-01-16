@@ -534,8 +534,8 @@
 		{
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_762_100Rnd",
-			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd_T",
+			"UK3CB_BAF_762_100Rnd_T",
 			"UK3CB_BAF_762_100Rnd_T",
 			"HandGrenade",
 			"SmokeShell",
@@ -545,8 +545,8 @@
 		{
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_762_100Rnd",
-			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd_T",
+			"UK3CB_BAF_762_100Rnd_T",
 			"UK3CB_BAF_762_100Rnd_T",
 			"HandGrenade",
 			"SmokeShell",
@@ -947,7 +947,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 	};
 
-	class Modern_British_JetPilot: Modern_British_Base
+	class Modern_British_JetPilot: Modern_British_HeliPilot
 	{
 		_generalMacro="Modern_JetPilot";
 		scope=2;
@@ -958,7 +958,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_Army";
-		backpack="TWC_Backpack_Modern_HeloPilot";
+		backpack="";
 		linkedItems[]=
 		{
 			"H_PilotHelmetFighter_B",

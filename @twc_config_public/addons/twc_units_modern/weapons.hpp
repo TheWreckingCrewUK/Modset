@@ -14,11 +14,33 @@ class cfgWeapons
 	class Rifle_Base_F;
 	class cannoncore;
 	
+	class CUP_H_US_H_PASGT_desert;
+	class twc_CUP_H_US_H_PASGT_trp: CUP_H_US_H_PASGT_desert
+	{
+		displayName = "PASGT (Trepentarn)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa"};
+	};
+	class twc_CUP_H_US_H_PASGT_flk: CUP_H_US_H_PASGT_desert
+	{
+		displayName = "PASGT (Flecktarn)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa"};
+	};
+	
 	class rhsusf_spcs_ocp_teamleader;
 	class twc_mtp_spcs_SL: rhsusf_spcs_ocp_teamleader
 	{
 		displayName = "SPCS MTP (SL)";
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	class twc_trp_spcs_SL: rhsusf_spcs_ocp_teamleader
+	{
+		displayName = "SPCS Trepentarn (SL)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	class twc_flk_spcs_SL: rhsusf_spcs_ocp_teamleader
+	{
+		displayName = "SPCS Flecktarn (SL)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
 	};
 	
 	class rhsusf_spcs_ocp_sniper;
@@ -47,6 +69,28 @@ class cfgWeapons
 		{
 			containerClass = "Supply200";
 		};
+	};
+	class twc_trp_spcs_MG: rhsusf_spcs_ocp_saw
+	{
+		displayName = "SPCS Trepentarn (MG)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	class twc_flk_spcs_MG: rhsusf_spcs_ocp_saw
+	{
+		displayName = "SPCS Flecktarn (MG)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	
+	class rhsusf_spcs_ocp_rifleman_alt;
+	class twc_trp_spcs_rif: rhsusf_spcs_ocp_rifleman_alt
+	{
+		displayName = "SPCS Trepentarn (Rifleman)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_tropen_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
+	};
+	class twc_flk_spcs_rif: rhsusf_spcs_ocp_rifleman_alt
+	{
+		displayName = "SPCS Flecktarn (Rifleman)";
+		hiddenSelectionsTextures[] = {"cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","cup\weapons\cup_weapons_backpacks\data\backpack_us_fleck_co.paa","rhsusf\addons\rhsusf_weapons\grenades\m18\data\m18_green_ca.paa","rhsusf\addons\rhsusf_weapons2\mk14\data\mk14_co.paa"};
 	};
 	
 	class rhsusf_spc_rifleman;
@@ -263,6 +307,26 @@ class cfgWeapons
 		class FullAuto;
 	};
 	
+	
+	class CUP_arifle_G36_Base: Rifle_Base_F
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	class CUP_arifle_G36C: Rifle_Base_F
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	class CUP_arifle_MG36: CUP_arifle_G36C
+	{
+		recoil = "twc_rifle_556_long";
+		recoilProne = "twc_rifle_556_long_prone";
+	};
+	
+	
 	class rhs_weap_ak74m_Base_F: Rifle_Base_F
 	{
 		recoil = "twc_rifle_556";
@@ -293,6 +357,26 @@ class cfgWeapons
 		class FullAuto:FullAuto {
 			dispersion = 0.003;
 		};
+	};
+	class rhs_weap_m249_pip;
+	class twc_HK_MG4: rhs_weap_m249_pip
+	{
+		displayname = "HK MG4";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_g33_xps3";
+			};
+		};
+	};
+	class rhs_weap_mg42;
+	class twc_HK_MG3: rhs_weap_mg42
+	{
+		displayname = "HK MG3";
+		twc_openbolt = 1;
+		magazines[] = {"UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_T","UK3CB_BAF_762_200Rnd_Blank"};
 	};
 	
 	class rhs_weap_M590_5RD: Rifle_Base_F
@@ -508,10 +592,10 @@ class cfgWeapons
 	};
 	
 	
-	class rhs_weap_ak74m_zenitco01;
-	class rhs_weap_ak74m_zenitco01_b33: rhs_weap_ak74m_zenitco01
+	class rhs_weap_ak74m_npz;
+	class twc_beryl_base: rhs_weap_ak74m_npz
 	{
-		
+		scope = 1;
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
@@ -519,13 +603,13 @@ class cfgWeapons
 	};
 	
 	
-	class twc_ak74_pol_base: rhs_weap_ak74m_zenitco01_b33
+	class twc_ak74_pol_base: twc_beryl_base
 	{
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
 		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
 		magazineWell[] = {};
-		};
+	};
 	
 
 	class twc_ak74_pol: twc_ak74_pol_base
@@ -542,26 +626,11 @@ class cfgWeapons
 				slot="CowsSlot";
 				item="rhsusf_acc_eotech_552";
 			};
-			class LinkedItemsFrontSideRail
-			{
-				slot="PointerSlot";
-				item="rhs_acc_2dpZenit";
-			};
-			class LinkedItemsMuzzleSlot
-			{
-				slot="MuzzleSlot";
-				item="rhs_acc_dtk1";
-			};
-			class LinkedItemsUnderBarrelSlot
-			{
-				slot="GripodSlot";
-				item="rhsusf_acc_grip3";
-			};
 		};
 	};
 	
-	class rhs_weap_ak74m_2mag_npz;
-	class twc_ak74_pol_2_base: rhs_weap_ak74m_2mag_npz
+	class rhs_weap_ak74m_desert_npz;
+	class twc_ak74_pol_2_base: rhs_weap_ak74m_desert_npz
 	{
 		
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
@@ -586,7 +655,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhs_acc_2dpZenit";
+				item="rhsusf_acc_wmx_bk";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -597,8 +666,8 @@ class cfgWeapons
 	};
 	
 	
-	class rhs_weap_ak74mr_gp25;
-	class twc_ak74_gp25_pol_base: rhs_weap_ak74mr_gp25
+	class rhs_weap_ak74m_gp25_npz;
+	class twc_ak74_gp25_pol_base: rhs_weap_ak74m_gp25_npz
 	{
 		
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
@@ -613,7 +682,7 @@ class cfgWeapons
 
 		displayName = "wz.2004 Beryl (wz. 74)";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
-		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
+		accessories[] = {"rhsusf_acc_eotech_552", "rhsusf_acc_wmx_bk", "rhs_acc_dtk1"};
 		magazineWell[] = {};
 		class LinkedItems
 		{
@@ -621,16 +690,6 @@ class cfgWeapons
 			{
 				slot="CowsSlot";
 				item="rhsusf_acc_eotech_552";
-			};
-			class LinkedItemsFrontSideRail
-			{
-				slot="PointerSlot";
-				item="rhs_acc_2dpZenit";
-			};
-			class LinkedItemsMuzzleSlot
-			{
-				slot="MuzzleSlot";
-				item="rhs_acc_dtk1";
 			};
 		};
 	};
@@ -648,6 +707,14 @@ class cfgWeapons
 		};
 	};
 	
+	class twc_rhs_rpg7_ins: rhs_weap_rpg7
+	{
+		
+		class EventHandlers: EventHandlers {
+			fired = "_mult = 1; if (!isserver) then {_mult = 0.5};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];";
+		};
+	};
+	
 	
 	class rhs_weap_svdp_npz;
 	class twc_pol_svd: rhs_weap_svdp_npz
@@ -662,6 +729,21 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	
+	class twc_MG36_eotech: CUP_arifle_MG36
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="UK3CB_BAF_Eotech";
+			};
+		};
+	};
+	
 	
 	class rhs_weap_m4a1;
 	class twc_m4_acog_grip_laser: rhs_weap_m4a1
@@ -896,6 +978,20 @@ class cfgmagazines{
 			descriptionShort = "Caliber: 7.62x54mmR Tracer<br />Rounds: 10<br />Used in: SVD";
 			displayName = "7N1-P 10Rnd SVD Mag";
 		};	
+		// when 3cb does proxies, this is gonna have to go
+		class UK3CB_BAF_762_100Rnd_T;
+		class UK3CB_BAF_762_200Rnd_T: UK3CB_BAF_762_100Rnd_T
+		{
+			modelSpecial = "rhsgref\addons\rhsgref_weapons\mag_proxies\rhs_mag_792x57_belt_296rnd";
+			modelSpecialIsProxy = 1;
+		};
+		
+		class UK3CB_BAF_762_100Rnd;
+		class UK3CB_BAF_762_200Rnd: UK3CB_BAF_762_100Rnd
+		{
+			modelSpecial = "rhsgref\addons\rhsgref_weapons\mag_proxies\rhs_mag_792x57_belt_296rnd";
+			modelSpecialIsProxy = 1;
+		};
 		
 		class 200Rnd_20mm_G_belt;
 		class twc_200Rnd_20mm_G_belt_1: 200Rnd_20mm_G_belt
@@ -903,7 +999,6 @@ class cfgmagazines{
 			ammo = "twc_G_20mm_HE";
 			initSpeed = 350;
 		};
-
 
 		class CA_Magazine;
 		class 10Rnd_RHS_50BMG_Box: CA_Magazine {
@@ -914,11 +1009,14 @@ class cfgmagazines{
 		class twc_rhsgref_30rnd_556x45_m21: rhs_30Rnd_545x39_7N10_AK {
 			descriptionshort = "Caliber: 5.56x45mm<br />Rounds: 30";
 			displayName = "5.56mm 30rnd Mag";
+			ammo = "B_556x45_Ball";
 		};
 		
 		class twc_rhsgref_30rnd_556x45_m21_t: twc_rhsgref_30rnd_556x45_m21 {
 			descriptionshort = "Caliber: 5.56x45mm Tracer<br />Rounds: 30";
 			displayName = "5.56mm 30rnd Tracer Mag";
+			ammo = "B_556x45_Ball";
+			tracersEvery = 1;
 		};
 		
 		class FakeMagazine;
@@ -987,5 +1085,37 @@ class cfgammo
 	{
 		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
 	};
+	
+	class BulletBase;
+	class rhs_ammo_762x51_M80_Ball: BulletBase
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	class rhs_B_762x54_Ball;
+	class rhs_B_762x54_Ball_Tracer_Green: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_762x54_7BZ3_Ball: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_762x54_7N13_Ball: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_762x54_7N14_Ball: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_762x54_7N1_Ball: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_762x54_7N26_Ball: rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	
 	
 };

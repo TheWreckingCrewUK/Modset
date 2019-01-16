@@ -1,5 +1,11 @@
 class Plane;
 class CUP_AV8B_Base: Plane {
+	
+	thrustCoef[] = {1,1,0.9,0.9,0.9,0.9,0.8,0.7,0.5,0.2,0.1,0,0};
+	flapsFrictionCoef = 0.8;
+	gearsUpFrictionCoef = 0.9;
+	camouflage = 500;
+	
 	acre_hasInfantryPhone = 0;
 
 	class AcreRacks {

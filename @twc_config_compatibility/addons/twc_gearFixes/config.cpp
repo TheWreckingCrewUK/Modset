@@ -30,6 +30,7 @@ class CfgPatches {
 	};
 };
 
+
 class CfgAmmo {
 	class GrenadeHand;
 	class GrenadeHand_stone: GrenadeHand
@@ -122,6 +123,42 @@ class CfgAmmo {
 			power = 30;
 		};
 	};
+	
+	
+	
+	class B_556x45_Ball;
+	class rhs_ammo_556x45_M855A1_Ball: B_556x45_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	class rhs_ammo_556x45_M855A1_Ball_Red: rhs_ammo_556x45_M855A1_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	class B_556x45_Ball_Tracer_Red: B_556x45_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	
+	class UK3CB_BAF_556_Ball_Tracer_Red: B_556x45_Ball_Tracer_Red
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	
+	class B_762x51_Ball;
+	class UK3CB_BAF_762_Ball_L42A1_Tracer_Red: B_762x51_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	class B_762x51_Tracer_Red: B_762x51_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	class UK3CB_BAF_762_Ball_Tracer_Red: B_762x51_Tracer_Red
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	
 };
 
 class mode_fullauto;
@@ -234,9 +271,57 @@ class CfgWeapons {
 			};
 		};
 	};
-		
 	
-	class Rifle_Base_F;
+	
+	class Default;
+	class CannonCore: Default
+	{
+		class eventhandlers;
+	};
+	
+	class autocannon_Base_F: CannonCore
+	{
+		class EventHandlers: EventHandlers {
+		//	fired = "if ((_this select 0) == player) then {addCamShake [3, 0.3, 15]};";
+		};
+		
+		class HE;
+	};
+	
+	class MGunCore;
+	class MGun: MGunCore
+	{
+		class eventhandlers;
+		class mode_fullauto;
+		class manual;
+	};
+	class GMG_F: MGun
+	{
+		reloadtime = 0.22;
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5,  (velocity _bullet select 2) + (random 20) - 10];} else {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4,  (velocity _bullet select 2) + (random 6) - 3];};twc_gpmglastfired = time;[_this select 6] call twc_fnc_aps;";
+		};
+	};
+	
+	
+	class LMG_RCWS: MGun {
+		class EventHandlers: EventHandlers {
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 16) - 8, (velocity _bullet select 1) + (random 16) - 8, 	(velocity _bullet select 2) + (random 8) - 4];};twc_gpmglastfired = time;";
+		};
+	};
+	class RifleCore;
+	class Rifle:RifleCore
+	{
+		class eventhandlers;
+	};
+	
+	class Rifle_Base_F:Rifle
+	{
+		class EventHandlers: EventHandlers {
+		//	fired = "if ((_this select 0) == player) then {addCamShake [3, 0.3, 15]};";
+		};
+	};
+	
 	class UK3CB_BAF_L1A1: Rifle_Base_F {
 		recoil = "twc_rifle_762";
 		recoilProne = "twc_rifle_762_prone";
@@ -256,12 +341,10 @@ class CfgWeapons {
 		reloadMagazineSound[] = {"\CUP\Weapons\CUP_Weapons_L85\data\sounds\l85_Reload",1,1,10};
 	};
 	
-	
 	class UK3CB_BAF_L86A2: UK3CB_BAF_L85A2 {
 		recoil = "twc_rifle_556_long";
 		recoilProne = "twc_rifle_556_long_prone";
 	};
-	
 	class Rifle_Long_Base_F:Rifle_Base_F
 	{
 		class eventhandlers;
@@ -319,34 +402,6 @@ class CfgWeapons {
 		ace_overheating_slowdownFactor = 1.5;
 	};
 	
-	class MGunCore;
-	class MGun: MGunCore
-	{
-		class eventhandlers;
-		class mode_fullauto;
-		class manual;
-	};
-	class LMG_RCWS: MGun {
-		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 16) - 8, (velocity _bullet select 1) + (random 16) - 8, 	(velocity _bullet select 2) + (random 8) - 4];};twc_gpmglastfired = time;";
-		};
-	};
-	class GMG_F: MGun {
-		reloadtime = 0.22;
-		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5,  (velocity _bullet select 2) + (random 20) - 10];} else {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4,  (velocity _bullet select 2) + (random 6) - 3];};twc_gpmglastfired = time;[_this select 6] call twc_fnc_aps;";
-		};
-	};
-	class Default;
-	class CannonCore: Default
-	{
-		class eventhandlers;
-	};
-	class autocannon_Base_F: CannonCore
-	{
-		class eventhandlers;
-		class HE;
-	};
 	class autocannon_30mm_CTWS: autocannon_Base_F {
 	};
 	
@@ -664,7 +719,7 @@ class cfgRecoils
  class twc_mg_762
 	{
 		muzzleOuter[]	= { 0.1,  0.15,  0.03,  0.1 };
-		kickBack[]	= { 0.04, 0.06 };
+		kickBack[]	= { 0.03, 0.04 };
 		permanent	= 0.4;
 		temporary	= 0.1;
 	};
@@ -672,7 +727,7 @@ class cfgRecoils
  class twc_mg_prone
 	{
 		muzzleOuter[]	= { 0.1,  0.1,  0.5,  0.45 };
-		kickBack[]	= { 0.02, 0.04 };
+		kickBack[]	= { 0.02, 0.03 };
 		permanent	= 0.1;
 		temporary	= 0.5;
 	};
@@ -685,25 +740,184 @@ class cfgRecoils
 		temporary	= 0.2; //muzzle jump
 	};
 };
+class Extended_FiredBIS_EventHandlers {
+	class Car {
+		class gunwalk {
+			serverFiredBIS = "[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;";
+		};
+	};
+	class Helicopter {
+		class gunwalk {
+			serverFiredBIS = "[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;";
+		};
+	};
+	class Tank {
+		class gunwalk {
+			serverFiredBIS = "[_this select 1, _this select 6, _this select 7, 2] call twc_fnc_gunwalk;";
+		};
+	};
+	class CAManBase {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {addCamShake [2.5, 0.3, 15]};";
+		};
+	};
+	class Helicopter_Base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2; addCamShake [_rec, 0.5, 15]};";
+		};
+	};
+	class Plane {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2; addCamShake [_rec, 0.5, 15]};";
+		};
+	};
+	class Car_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_time = 0.3;_rec = 2; _freq = 15; if (((_this select 1) isKindOf ['HMG_127', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['GMG_F', configFile >> 'CfgWeapons'])) then {_rec = 3} else {if ((_this select 4) isKindOf ['missilebase', configFile >> 'CfgAmmo']) then {_rec = 4; _time = 2; _freq = 15;};};addCamShake [_rec, _time, _freq]};";
+		};
+	};
+	class StaticMGWeapon {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2; if (((_this select 1) isKindOf ['HMG_127', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['GMG_F', configFile >> 'CfgWeapons'])) then {_rec = 3};addCamShake [_rec, 0.3, 15]};";
+			serverFiredBIS = "[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;";
+		};
+	};
+	class StaticGrenadeLauncher {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 3; addCamShake [_rec, 0.5, 15]};";
+			serverFiredBIS = "[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;";
+		};
+	};
+	class StaticMortar {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 3; addCamShake [_rec, 0.8, 15]};";
+			serverFiredBIS = "[_this select 6, _this select 7] call twc_fnc_mortarwalk;";
+		};
+	};
+	class StaticCannon {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 9; addCamShake [_rec, 1, 15]};";
+			serverFiredBIS = "[_this select 6, _this select 7] call twc_fnc_mortarwalk;";
+		};
+	};
+	class CUP_MCV80_Base {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2;_time = 0.5; if ((_this select 1) == 'CUP_Vlmg_L94A1_Coax') then {_rec = 0.1;_time = 0.3};addCamShake [_rec, _time, 15]};";
+		};
+	};
+	class ukcw_Chieftain_Base {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.1;_time = 0.3; if ((_this select 1) == 'UKCW_Chieftain_L11A5') then {_rec = 4;_time = 1};addCamShake [_rec, _time, 15]};";
+		};
+	};
+	class ukcw_cvrt_Scim_base {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2;_time = 0.5; if ((_this select 1) == 'ukcw_l37a1_coax') then {_rec = 0.1;_time = 0.3};addCamShake [_rec, _time, 15]};";
+		};
+	};
+	class APC_Tracked_01_base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};addCamShake [_rec, _time, 15]};";
+		};
+	};
+	class APC_Tracked_02_base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};addCamShake [_rec, _time, 15]};";
+		};
+	};
+	class APC_Tracked_03_base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};addCamShake [_rec, _time, 15]};";
+		};
+	};
+	class UK3CB_BAF_FV432_Mk3_Base {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2; addCamShake [_rec, 0.3, 15]};";
+		};
+	};
+	class MBT_01_base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class MBT_02_base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class MBT_03_base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class MBT_04_base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class rhs_tank_base {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	//ww2 tanks, not as much recoil management or optic magnification so a bit more shake
+	class LIB_Tank_base {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class fow_v_cromwell {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.3;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class churchill_base_F {
+		class gunshake {
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+		};
+	};
+};
 
+class Extended_Init_EventHandlers
+{
+	class CBA_B_InvisibleTarget
+	{
+		class baseobject
+		{
+			serverinit = "params ['_entity']; [_entity] spawn {params ['_entity']; waituntil {!isnil 'twc_fnc_baseobject'};[_entity] spawn twc_fnc_baseobject}";
+		};
+	};
+	class Tank
+	{
+		class aihearing
+		{
+			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,10];";
+		};
+	};
+	class Helicopter
+	{
+		class aihearing
+		{
+			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,300];";
+		};
+	};
+	class Plane
+	{
+		class aihearing
+		{
+			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,500];";
+		};
+	};
+};
 class CfgVehicles {
-	
-	class B_AAA_System_01_F;
-	class twc_B_AAA_System_01_F: B_AAA_System_01_F
+	/*class B_TargetSoldier ;
+	class CBA_B_InvisibleTarget : B_TargetSoldier 
 	{
-		shadow = 0;
-		hiddenSelectionsTextures[] = {"",""};
-		displayname = "TWC Base Target";
+		class EventHandlers {
+			init = " systemchat 'normal';if (!isServer) exitWith {};params ['_entity'];[_entity] spawn twc_fnc_baseobject";
+		};
 	};
-	class twc_B_AAA_System_01_F_S: B_AAA_System_01_F
-	{
-		shadow = 0;
-		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {""};
-		model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Tortila";
-		displayname = "TWC Base Target (Small)";
-	};
-	
+	*/
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A;
 	class TWC_BAF_B_Bergen_OLI_Rifleman_XL_A: UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A
 	{
@@ -741,7 +955,7 @@ class CfgVehicles {
 		bodyFrictionCoef = 1.4;
 		armorStructural = 20;
 	};
-
+	
 //handling modifications
 	class Car;
 	class Car_F: Car{

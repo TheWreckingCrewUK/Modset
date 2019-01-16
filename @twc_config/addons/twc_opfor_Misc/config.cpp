@@ -206,6 +206,17 @@ class CfgGroups {
 			// todo
 		};
 	};
+
+	class Independent {
+		name = "INDEPENDENT";
+		side = 2;
+		class TWC_Operation_INDEP_ColdWar {
+			name = "TWC Operations - Cold War";
+			
+			/* COLDWAR COMPOSITIONS - GROUP DEFINES */
+			#include "compositions\1980_argentina.hpp"
+		};
+	};
 };
 
 class CfgVehicles {
@@ -241,6 +252,7 @@ class CfgVehicles {
 	#include "units\pirates.hpp"
 	#include "units\WaPArmy_Taviana.hpp"
 	#include "units\aden.hpp"
+	#include "units\argentina_1980.hpp"
 };
 
 #include "CfgMarkers.hpp"

@@ -1,5 +1,9 @@
 params ["_projectile", "_gunner"];
 
+if ((typeof (vehicle _gunner)) iskindof ["CUP_D30_AT_base", configFile >> "CfgVehicles"]) exitwith {
+	["cannon_120mm", _projectile, _gunner]  call twc_fnc_gunwalk;
+};
+
 _prev = _gunner getvariable ["twc_mortar_lastfired", 0]; 
 //systemchat format ["%1", _gunner];
 _gunner setvariable ["twc_mortar_lastfired", time]; 
