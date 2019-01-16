@@ -86,17 +86,15 @@ class CfgWeapons {
 		displayName = "No. 1 Mk III Signal Pistol";
 
 		magazines[] = {
-			"UGL_FlareWhite_F",
-			"UGL_FlareGreen_F",
-			"UGL_FlareRed_F",
-			"UGL_FlareYellow_F",
-			"1Rnd_Smoke_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
-			"1Rnd_SmokeGreen_Grenade_shell",
-			"1Rnd_SmokeYellow_Grenade_shell",
-			"1Rnd_SmokePurple_Grenade_shell",
-			"1Rnd_SmokeBlue_Grenade_shell",
-			"1Rnd_SmokeOrange_Grenade_shell"
+			"TWC_Magazine_SignalFlare_Green",
+			"TWC_Magazine_SignalFlare_Red",
+			"TWC_Magazine_SignalFlare_Yellow",
+			"TWC_Magazine_SignalFlare_Blue",
+			
+			"TWC_Magazine_SignalSmoke_Green",
+			"TWC_Magazine_SignalSmoke_Red",
+			"TWC_Magazine_SignalSmoke_Yellow",
+			"TWC_Magazine_SignalSmoke_Blue"
 		};
 	};
 
