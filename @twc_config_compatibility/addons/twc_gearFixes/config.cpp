@@ -19,7 +19,8 @@ class CfgPatches {
 			"UK3CB_BAF_Equipment_Backpacks",
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
-			"CUP_Weapons_Sounds"
+			"CUP_Weapons_Sounds",
+			"CUP_Weapons_VehicleWeapons"
 		};
 
 		author[]={};
@@ -552,6 +553,117 @@ class CfgWeapons {
 			autoReload = 1;
 			canLock = 0;
 			ballisticsComputer = 2;
+		};
+	};
+	class CUP_Vacannon_2A28: CUP_Vacannon_D10
+	{
+		muzzles[] = {"TWC_Muzzle_AP","TWC_Muzzle_HE"};
+		class TWC_Muzzle_AP: CUP_Vacannon_D10
+		{
+			scope = 1;
+			canLock=1;
+			author = "$STR_CUP_AUTHOR_STRING";
+			displayName = "2A28 Grom";
+			magazines[] = {CUP_PG15V};
+			reloadTime = 5;
+			magazineReloadTime = 7;
+			autoReload = 0;
+			ballisticsComputer = 2;
+			weaponLockSystem = 0;
+			showaimcursorinternal = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "EmptyCursor";
+			cursoraimon = "EmptyCursor";
+			minRange=5;
+			minRangeProbab=0.89999998;
+			midRange=700;
+			midRangeProbab=1;
+			maxRange=1300;
+			maxRangeProbab=0.40000001;
+			class player;
+		};
+		class TWC_Muzzle_HE: CUP_Vacannon_D10
+		{
+			scope = 1;
+			canLock=1;
+			author = "$STR_CUP_AUTHOR_STRING";
+			displayName = "2A28 Grom";
+			magazines[] = {CUP_OG15V};
+			reloadTime = 5;
+			magazineReloadTime = 7;
+			autoReload = 0;
+			ballisticsComputer = 2;
+			weaponLockSystem = 0;
+			showaimcursorinternal = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "EmptyCursor";
+			cursoraimon = "EmptyCursor";
+			minRange=5;
+			minRangeProbab=0.89999998;
+			midRange=700;
+			midRangeProbab=1;
+			maxRange=1300;
+			maxRangeProbab=0.40000001;
+			class player;
+		};
+		class player;
+	};
+	class CUP_Vacannon_SPG9_veh: CUP_Vacannon_2A28
+	{
+		muzzles[] = {"TWC_Muzzle_AP","TWC_Muzzle_HE"};
+		class TWC_Muzzle_AP: CUP_Vacannon_2A28
+		{
+			author = "$STR_CUP_AUTHOR_STRING";
+			displayName = "SPG-9";
+			magazines[] = {"CUP_16Rnd_PG9_AT_M"};
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			showaimcursorinternal = 1;
+			reloadSound[] = {"\CUP\Weapons\CUP_Weapons_SMAW\data\sfx\reload.wss",10,1,20};
+			reloadMagazineSound[] = {"\CUP\Weapons\CUP_Weapons_SMAW\data\sfx\reload.wss",10,1,20};
+			class player: player
+			{
+				class StandardSound
+				{
+					weaponSoundEffect = "DefaultRifle";
+					begin1[] = {"\CUP\Weapons\CUP_Weapons_StaticWeapons\Sounds\spg9_1.wss","db20",1,1200};
+					soundBegin[] = {"begin1",1};
+				};
+			};
+			class GunParticles {
+				class FirstEffect {
+					effectName = "RocketBackEffectsRPGNT";
+					positionName = "Usti hlavne";
+					directionName = "Konec hlavne";
+				};
+			};
+		};
+		class TWC_Muzzle_HE: CUP_Vacannon_2A28
+		{
+			author = "$STR_CUP_AUTHOR_STRING";
+			displayName = "SPG-9";
+			magazines[] = {"CUP_16Rnd_OG9_HE_M"};
+			reloadTime = 8;
+			magazineReloadTime = 8;
+			showaimcursorinternal = 1;
+			reloadSound[] = {"\CUP\Weapons\CUP_Weapons_SMAW\data\sfx\reload.wss",10,1,20};
+			reloadMagazineSound[] = {"\CUP\Weapons\CUP_Weapons_SMAW\data\sfx\reload.wss",10,1,20};
+			class player: player
+			{
+				class StandardSound
+				{
+					weaponSoundEffect = "DefaultRifle";
+					begin1[] = {"\CUP\Weapons\CUP_Weapons_StaticWeapons\Sounds\spg9_1.wss","db20",1,1200};
+					soundBegin[] = {"begin1",1};
+				};
+			};
+			class GunParticles {
+				class FirstEffect {
+					effectName = "RocketBackEffectsRPGNT";
+					positionName = "Usti hlavne";
+					directionName = "Konec hlavne";
+				};
+			};
 		};
 	};
 	class CUP_Vacannon_D5_T34: cannon_125mm
