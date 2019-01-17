@@ -30,7 +30,7 @@ class CfgAmmo{
 	};
 	
 	class TWC_Ammo_SignalFlare_Blue: F_40mm_Yellow {
-		lightColor[] = {0.25,0.25,0.5,0}; // default has no blue flare ...
+		lightColor[] = {0.25,0.25,0.75,0}; // default has no blue flare ...
 		intensity = 30000; // brighter
 		timeToLive = 45; // longer
 		coefGravity = 0.25; // slower
@@ -41,7 +41,7 @@ class CfgAmmo{
 		simulation = "shotSmoke";
 		deflectionSlowDown = 0.1;
 		timeToLive = 45;
-		coefGravity = 0.25;
+		coefGravity = 0.05;
 		airFriction = 0;
 	};
 	
@@ -50,7 +50,7 @@ class CfgAmmo{
 		simulation = "shotSmoke";
 		deflectionSlowDown = 0.1;
 		timeToLive = 45;
-		coefGravity = 0.25;
+		coefGravity = 0.05;
 		airFriction = 0;
 	};
 	
@@ -59,7 +59,7 @@ class CfgAmmo{
 		simulation = "shotSmoke";
 		deflectionSlowDown = 0.1;
 		timeToLive = 45;
-		coefGravity = 0.25;
+		coefGravity = 0.05;
 		airFriction = 0;
 	};
 	
@@ -68,7 +68,7 @@ class CfgAmmo{
 		simulation = "shotSmoke";
 		deflectionSlowDown = 0.1;
 		timeToLive = 45;
-		coefGravity = 0.25;
+		coefGravity = 0.05;
 		airFriction = 0;
 	};
 };
