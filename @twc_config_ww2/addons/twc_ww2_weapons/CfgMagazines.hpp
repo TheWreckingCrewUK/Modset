@@ -45,7 +45,7 @@ class CfgMagazines {
 		count = 1;
 		displayName = "Signal Smoke - Green";
 		descriptionShort = "Used to signal in green";
-		initSpeed = 40;
+		initSpeed = 50;
 	};
 
 	class 1Rnd_SmokeRed_Grenade_shell;
@@ -54,7 +54,7 @@ class CfgMagazines {
 		count = 1;
 		displayName = "Signal Smoke - Red";
 		descriptionShort = "Used to signal in red";
-		initSpeed = 40;
+		initSpeed = 50;
 	};
 
 	class 1Rnd_SmokeYellow_Grenade_shell;
@@ -63,7 +63,7 @@ class CfgMagazines {
 		count = 1;
 		displayName = "Signal Smoke - Yellow";
 		descriptionShort = "Used to signal in yellow";
-		initSpeed = 40;
+		initSpeed = 50;
 	};
 
 	class 1Rnd_SmokeBlue_Grenade_shell;
@@ -72,6 +72,6 @@ class CfgMagazines {
 		count = 1;
 		displayName = "Signal Smoke - Blue";
 		descriptionShort = "Used to signal in blue";
-		initSpeed = 40;
+		initSpeed = 50;
 	};
 };
