@@ -77,6 +77,7 @@ class Extended_InitPost_EventHandlers {
 #include "cfgAmmo.hpp"
 #include "cfgFunctions.hpp"
 #include "cfgMagazines.hpp"
+#include "cfgManagement.hpp"
 #include "cfgVehicles.hpp"
 #include "cfgWaypoints.hpp"
 #include "cfgWeapons.hpp"
