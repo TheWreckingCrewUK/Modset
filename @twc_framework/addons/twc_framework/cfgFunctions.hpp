@@ -44,18 +44,6 @@ class CfgFunctions {
 			class init{};
 			class canAddToGroup {};
 			class addACEInteraction {};
-			class soundLoop {};
-			
-			/** UTILITY FUNCTIONS **/
-			class findGreatestDistanceWithArray {};
-			class findGreatestDistancePairInArray {};
-			
-			/** PLAYER INFORMATION CHECKS **/
-			class isMember {};
-			class isManagement {};
-			class isHigherRank {};
-			//class isHighestRank {};
-			//class isInTopRanks {}; // variant of above, to account for any potential 2ic
 		};
 		
 		class modules {
