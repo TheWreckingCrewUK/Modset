@@ -1,4 +1,4 @@
-//COIN, Dismounted, Desert
+//COIN, DISMOUNTED, DESERT
 //Section
 class TWC_Infantry_ColdWar_COIN_Dismounted_Desert_Rifleman: TWC_Infantry_ColdWar_COIN_Desert_Rifleman
 {

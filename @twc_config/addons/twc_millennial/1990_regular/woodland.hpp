@@ -328,14 +328,14 @@ class TWC_Infantry_1990_Regular_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodl
 	weapons[] =
 	{
 		"TWC_Weapon_L96_Woodland",
-		"ukcw_hipower",
+		"UK3CB_BAF_L9A1",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L96_Woodland",
-		"ukcw_hipower",
+		"UK3CB_BAF_L9A1",
 		"Throw",
 		"Put"
 	};
@@ -354,7 +354,7 @@ class TWC_Infantry_1990_Regular_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodl
 	magazines[] =
 	{
 		MAG_9("UK3CB_BAF_762_L42A1_10Rnd"),
-		MAG_3("ukcw_13rd_9x19"),
+		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellGreen")
@@ -362,7 +362,7 @@ class TWC_Infantry_1990_Regular_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodl
 	Respawnmagazines[] =
 	{
 		MAG_9("UK3CB_BAF_762_L42A1_10Rnd"),
-		MAG_3("ukcw_13rd_9x19"),
+		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellGreen")

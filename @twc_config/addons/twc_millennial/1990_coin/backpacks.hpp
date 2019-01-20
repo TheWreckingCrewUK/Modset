@@ -85,7 +85,7 @@ class TWC_Backpack_1990_COIN_##CAMO##_Spotter: INHERIT \
 	scope = 1; \
 	scopeArsenal = 1; \
 	class TransportItems { \
-		ADD_ITEM(ACRE_PRC77,1); \
+		ADD_ITEM(ACRE_PRC117F,1); \
 		ADD_ITEM(ACE_Tripod,1); \
 		ADD_ITEM(ACE_SpottingScope,1); \
 	}; \
@@ -98,7 +98,7 @@ class TWC_Backpack_1990_COIN_##CAMO##_Artillery_Commander: INHERIT \
 	scopeArsenal = 1; \
 	maximumLoad = 300; \
 	class TransportItems { \
-		ADD_ITEM(ACRE_PRC77,1); \
+		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
 };
 
