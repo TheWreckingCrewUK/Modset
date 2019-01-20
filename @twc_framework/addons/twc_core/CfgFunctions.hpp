@@ -6,12 +6,12 @@ class CfgFunctions {
 			/** MISC FUNCTIONALITY **/
 			class soundLoop {};
 			
-			/** PLAYER INFORMATION CHECKS **/
+			/** PLAYER(S) INFORMATION **/
 			class isMember {};
 			class isManagement {};
 			class isHigherRank {};
-			//class isHighestRank {};
-			//class isInTopRanks {}; // variant of above, to account for any potential 2ic
+			class isHighestRank {};
+			class getTopRanks {};
 			
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};

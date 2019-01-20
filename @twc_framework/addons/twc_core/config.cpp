@@ -4,7 +4,7 @@ class CfgPatches {
 		weapons[] = {};
 		requiredVersion = 1.7;
 		
-		requiredAddons[] = {"cba_xeh"};
+		requiredAddons[] = {"cba_main"};
 		
 		author[] = {"Bosenator"};
 		authorUrl = "thewreckingcrew.eu";
@@ -16,3 +16,4 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgManagement.hpp"
