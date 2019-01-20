@@ -487,14 +487,14 @@
 			"Throw",
 			"Put",
 			"sp_l4_lmg",
-			"ukcw_hipower"
+			"UK3CB_BAF_L9A1"
 		};
 
 		respawnweapons[] = {
 			"Throw",
 			"Put",
 			"sp_l4_lmg",
-			"ukcw_hipower"
+			"UK3CB_BAF_L9A1"
 		};
 
 		magazines[] = {
@@ -505,8 +505,8 @@
 			"SP_30Rnd_762_L4",
 			"SP_30Rnd_762_L4",
 			"SP_30Rnd_762_L4",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19"
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd"
 		};
 
 		Respawnmagazines[] = {
@@ -517,8 +517,8 @@
 			"SP_30Rnd_762_L4",
 			"SP_30Rnd_762_L4",
 			"SP_30Rnd_762_L4",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19"
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd"
 		};
 
 		Items[] = {
@@ -1473,14 +1473,14 @@
 			"Throw",
 			"Put",
 			"CUP_glaunch_M79",
-			"ukcw_hipower"
+			"UK3CB_BAF_L9A1"
 		};
 
 		respawnweapons[] = {
 			"Throw",
 			"Put",
 			"CUP_glaunch_M79",
-			"ukcw_hipower"
+			"UK3CB_BAF_L9A1"
 		};
 
 		magazines[] = {
@@ -1488,9 +1488,9 @@
 			"CUP_1Rnd_HE_M203",
 			"CUP_1Rnd_HE_M203",
 			"CUP_1Rnd_HE_M203",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19"
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd"
 		};
 
 		Respawnmagazines[] = {
@@ -1498,9 +1498,9 @@
 			"CUP_1Rnd_HE_M203",
 			"CUP_1Rnd_HE_M203",
 			"CUP_1Rnd_HE_M203",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19"
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd"
 		};
 
 		Items[] = {
@@ -1541,19 +1541,19 @@
 			"Throw",
 			"Put",
 			"sp_smg_sterling",
-			"ukcw_hipower"
+			"UK3CB_BAF_L9A1"
 		};
 
 		respawnweapons[] = {
 			"Throw",
 			"Put",
 			"sp_smg_sterling",
-			"ukcw_hipower"
+			"UK3CB_BAF_L9A1"
 		};
 
 		magazines[] = {
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
 			"SP_30Rnd_9x19_L2A3_Sterling",
 			"SP_30Rnd_9x19_L2A3_Sterling",
 			"SP_30Rnd_9x19_L2A3_Sterling",
@@ -1562,8 +1562,8 @@
 		};
 
 		Respawnmagazines[] = {
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
 			"SP_30Rnd_9x19_L2A3_Sterling",
 			"SP_30Rnd_9x19_L2A3_Sterling",
 			"SP_30Rnd_9x19_L2A3_Sterling",
@@ -1606,27 +1606,27 @@
 		weapons[] = {
 			"Throw",
 			"Put",
-			"ukcw_hipower"
+			"UK3CB_BAF_L9A1"
 		};
 
 		respawnweapons[] = {
 			"Throw",
 			"Put",
-			"ukcw_hipower"
+			"UK3CB_BAF_L9A1"
 		};
 
 		magazines[] = {
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
 			"CUP_HandGrenade_RGO",
 			"CUP_HandGrenade_RGO"
 		};
 
 		Respawnmagazines[] = {
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
 			"CUP_HandGrenade_RGO",
 			"CUP_HandGrenade_RGO"
 		};
@@ -1745,8 +1745,8 @@
 			"CUP_30Rnd_9x19_MP5",
 			"CUP_30Rnd_9x19_MP5",
 			"CUP_30Rnd_9x19_MP5",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
 			"CUP_HandGrenade_RGO",
 			"CUP_HandGrenade_RGO"
 		};
@@ -1757,8 +1757,8 @@
 			"CUP_30Rnd_9x19_MP5",
 			"CUP_30Rnd_9x19_MP5",
 			"CUP_30Rnd_9x19_MP5",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
 			"CUP_HandGrenade_RGO",
 			"CUP_HandGrenade_RGO"
 		};
@@ -1868,30 +1868,30 @@
 		weapons[] = {
 			"Throw",
 			"Put",
-			"ukcw_hipower",
+			"UK3CB_BAF_L9A1",
 			"CUP_launch_Igla"
 		};
 
 		respawnweapons[] = {
 			"Throw",
 			"Put",
-			"ukcw_hipower",
+			"UK3CB_BAF_L9A1",
 			"CUP_launch_Igla"
 		};
 
 		magazines[] = {
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
 			"ACE_PreloadedMissileDummy_Igla_CUP"
 		};
 
 		Respawnmagazines[] = {
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
 			"ACE_PreloadedMissileDummy_Igla_CUP"
 		};
 
@@ -1932,26 +1932,26 @@
 		weapons[] = {
 			"Throw",
 			"Put",
-			"ukcw_hipower"
+			"UK3CB_BAF_L9A1"
 		};
 
 		respawnweapons[] = {
 			"Throw",
 			"Put",
-			"ukcw_hipower"
+			"UK3CB_BAF_L9A1"
 		};
 
 		magazines[] = {
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
 			"ACE_PreloadedMissileDummy_Igla_CUP"
 		};
 
 		Respawnmagazines[] = {
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
-			"ukcw_13rd_9x19",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
+			"UK3CB_BAF_9_13Rnd",
 			"ACE_PreloadedMissileDummy_Igla_CUP"
 		};
 

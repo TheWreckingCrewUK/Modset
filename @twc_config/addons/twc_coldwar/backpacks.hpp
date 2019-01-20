@@ -296,7 +296,7 @@ class TWC_Backpack_ColdWar_Regular_Artillery_Commander: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_FO: SP_Backpack_LargePack
 {
 	scope = 1;
-	maximumLoad = 200;
+	maximumLoad = 250;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
 	};
@@ -309,6 +309,7 @@ class TWC_Backpack_ColdWar_Regular_FO: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_FAC: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 250;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
 	};
