@@ -27,7 +27,8 @@ class CfgPatches {
 		requiredAddons[] = {
 			"cba_ai",
 			"A3_Modules_F",
-			"ace_magazinerepack"
+			"ace_magazinerepack",
+			"TWC_Core"
 		};
 
 		author[]={};
