@@ -35,7 +35,6 @@ class CfgFunctions {
 			class toggleSpectator {};
 			class grabComposition {};
 			class sendCTabMessage {};
-			class isHigherRank {};
 			class GliderTakeOff {};
 			class confiscateBadItems {};
 			class addToGroup {};
@@ -50,6 +49,13 @@ class CfgFunctions {
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
 			class findGreatestDistancePairInArray {};
+			
+			/** PLAYER INFORMATION CHECKS **/
+			class isMember {};
+			class isManagement {};
+			class isHigherRank {};
+			//class isHighestRank {};
+			//class isInTopRanks {}; // variant of above, to account for any potential 2ic
 		};
 		
 		class modules {
