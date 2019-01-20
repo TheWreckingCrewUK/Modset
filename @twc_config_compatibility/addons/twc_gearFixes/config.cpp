@@ -146,12 +146,25 @@ class CfgAmmo {
 		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
 	};
 	
+	class UK3CB_BAF_556_Ball: B_556x45_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	
 	class B_762x51_Ball;
 	class UK3CB_BAF_762_Ball_L42A1_Tracer_Red: B_762x51_Ball
 	{
 		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
 	};
+	class UK3CB_BAF_762_Ball_L42A1: B_762x51_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
 	class B_762x51_Tracer_Red: B_762x51_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	class UK3CB_BAF_762_Ball: B_762x51_Ball
 	{
 		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
 	};
@@ -201,7 +214,7 @@ class CfgWeapons {
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
-			fired = "_mult = 1; if (!isserver) then {_mult = 0.5};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];";
+			fired = "_mult = 1; if (!isserver) then {_mult = 0.3};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];";
 		};
 		scope=2;
 		aiDispersionCoefX=1.03;
@@ -855,17 +868,17 @@ class cfgRecoils
 class Extended_FiredBIS_EventHandlers {
 	class Car {
 		class gunwalk {
-			serverFiredBIS = "[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;";
+			FiredBIS = "[_this select 1, _this select 4, _this select 6, _this select 7] call twc_fnc_gunwalk;";
 		};
 	};
 	class Helicopter {
 		class gunwalk {
-			serverFiredBIS = "[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;";
+			FiredBIS = "[_this select 1, _this select 4, _this select 6, _this select 7] call twc_fnc_gunwalk;";
 		};
 	};
 	class Tank {
 		class gunwalk {
-			serverFiredBIS = "[_this select 1, _this select 6, _this select 7, 2] call twc_fnc_gunwalk;";
+			FiredBIS = "[_this select 1, _this select 4, _this select 6, _this select 7, 2] call twc_fnc_gunwalk;";
 		};
 	};
 	class CAManBase {
@@ -891,25 +904,25 @@ class Extended_FiredBIS_EventHandlers {
 	class StaticMGWeapon {
 		class gunshake {
 			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2; if (((_this select 1) isKindOf ['HMG_127', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['GMG_F', configFile >> 'CfgWeapons'])) then {_rec = 3};addCamShake [_rec, 0.3, 15]};";
-			serverFiredBIS = "[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;";
+			FiredBIS = "[_this select 1, _this select 4, _this select 6, _this select 7] call twc_fnc_gunwalk;";
 		};
 	};
 	class StaticGrenadeLauncher {
 		class gunshake {
 			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 3; addCamShake [_rec, 0.5, 15]};";
-			serverFiredBIS = "[_this select 1, _this select 6, _this select 7] call twc_fnc_gunwalk;";
+			FiredBIS = "[_this select 1, _this select 4, _this select 6, _this select 7] call twc_fnc_gunwalk;";
 		};
 	};
 	class StaticMortar {
 		class gunshake {
 			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 3; addCamShake [_rec, 0.8, 15]};";
-			serverFiredBIS = "[_this select 6, _this select 7] call twc_fnc_mortarwalk;";
+			FiredBIS = "[_this select 6, _this select 4, _this select 7] call twc_fnc_mortarwalk;";
 		};
 	};
 	class StaticCannon {
 		class gunshake {
 			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 9; addCamShake [_rec, 1, 15]};";
-			serverFiredBIS = "[_this select 6, _this select 7] call twc_fnc_mortarwalk;";
+			FiredBIS = "[_this select 6, _this select 4, _this select 7] call twc_fnc_mortarwalk;";
 		};
 	};
 	class CUP_MCV80_Base {
@@ -1252,7 +1265,7 @@ class CfgVehicles {
 		antiRollbarForceLimit = 5;
 		antiRollbarSpeedMin = 5;
 		antiRollbarSpeedMax = 100;
-		ace_cargo_size = 15;
+		ace_cargo_size = 10;
 		ace_cargo_canLoad = 1;	
 		torqueCurve[] = {{0,0.2},{0.278,0.3},{0.35,0.35},{0.461,0.4},{0.7,0.3},{0.75,0.3},{0.8,0.25},{1,0.2}};
 		enginepower = 10;
@@ -1266,7 +1279,7 @@ class CfgVehicles {
 		centreBias = 1.8;
 		maxOmega = 200;
 		maxSpeed = 100;
-		turnCoef = 3.5;
+		turnCoef = 2.5;
 			class Wheels {
 				class LF {
 				boneName = "wheel_1_1_damper";
@@ -1330,6 +1343,17 @@ class CfgVehicles {
 				};
 			};
 		
+		
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+			maxTurnHundred = 0.5;
+			turnDecreaseConst = 9;
+			turnDecreaseLinear = 0;
+			turnDecreaseTime = 0;
+			turnIncreaseConst = 0.1;
+			turnIncreaseLinear = 2.5;
+			turnIncreaseTime = 1;
+       };
 	};
 	
 	
@@ -1390,6 +1414,8 @@ class CfgVehicles {
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
 		turnCoef = 1.8;
+		ace_cargo_size = 40;
+		ace_cargo_canLoad = 1;
 	};
 	
 	
@@ -1405,6 +1431,8 @@ class CfgVehicles {
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
 		turnCoef = 1.8;
+		ace_cargo_size = 40;
+		ace_cargo_canLoad = 1;
 	};
 		
 	class UK3CB_BAF_Coyote_Passenger_L134A1_D: UK3CB_BAF_Coyote_L134A1_Base_D {
@@ -1418,7 +1446,8 @@ class CfgVehicles {
 	
 	class UK3CB_BAF_LandRover_Base: Car_F {
 		
-
+		ace_cargo_size = 35;
+		ace_cargo_canLoad = 1;	
 		antiRollbarForceCoef = 4.0;
 		antiRollbarForceLimit = 3;
 		differentialType = "all_limited";

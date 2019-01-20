@@ -1,4 +1,8 @@
-params ["_projectile", "_gunner"];
+params ["_projectile", "_ammo", "_gunner"];
+
+if ((hasInterface) && ((vehicle _gunner) == (vehicle player))) exitwith {};
+
+if (isNull _projectile) then { _projectile = nearestObject [_gunner, _ammo]; };
 
 if ((typeof (vehicle _gunner)) iskindof ["CUP_D30_AT_base", configFile >> "CfgVehicles"]) exitwith {
 	["cannon_120mm", _projectile, _gunner]  call twc_fnc_gunwalk;

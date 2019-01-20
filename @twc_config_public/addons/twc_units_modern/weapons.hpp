@@ -107,7 +107,17 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa"};
 	};
 	
+	class UK3CB_BAF_L111A1_vehicle;
+	class UK3CB_BAF_Landrover_L111A1: UK3CB_BAF_L111A1_vehicle
+	{
+		displayname = "M2 .50";
+	};
 	
+	class UK3CB_BAF_L134A1_vehicle;
+	class UK3CB_BAF_Landrover_L134A1: UK3CB_BAF_L134A1_vehicle
+	{
+		displayname = "MK19";
+	};
 	
 	class default;
 	class LauncherCore

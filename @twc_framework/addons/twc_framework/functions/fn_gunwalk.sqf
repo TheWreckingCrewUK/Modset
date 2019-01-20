@@ -1,4 +1,8 @@
-params [["_weapon", ""], "_projectile", "_gunner", ["_type", 1]];
+params [["_weapon", ""], "_ammo", "_projectile", "_gunner", ["_type", 1]];
+
+if ((hasInterface) && ((vehicle _gunner) == (vehicle player))) exitwith {};
+
+if (isNull _projectile) then { _projectile = nearestObject [_gunner, _ammo]; };
 
 if (((vehicle _gunner) getvariable ["twc_dontwalk", 0]) == 1) exitwith {
 	

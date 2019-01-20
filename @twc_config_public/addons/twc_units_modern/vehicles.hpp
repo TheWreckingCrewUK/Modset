@@ -1,11 +1,378 @@
-class Car_F;
-class Wheeled_APC_F: Car_F {
-	class EventHandlers;
-};
+
+	class rhsusf_Cougar_base;
+	class rhsusf_cougar_GPK_base: rhsusf_Cougar_base
+	{
+		class Turrets;
+	};
+	class rhsusf_CGRCAT1A2_M2_usmc_d: rhsusf_cougar_GPK_base
+	{
+		
+		class Turrets: Turrets
+		{
+			class MainTurret;
+			class M2_Turret: MainTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 7;
+			};
+		};
+		class Transportitems
+		{};
+		class TransportWeapons
+		{};
+		class TransportBackpacks
+		{};
+	};
+
+	class rhsusf_caiman_base;
+	class rhsusf_caiman_GPK_base: rhsusf_caiman_base
+	{
+		class Turrets;
+	};
+	class rhsusf_M1220_M2_usarmy_d: rhsusf_caiman_GPK_base
+	{
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			class M2_Turret: NewTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		};
+		class Transportitems
+		{};
+		class TransportWeapons
+		{};
+		class TransportBackpacks
+		{};
+	};
+	
+	class Car;
+	class Car_F: Car
+	{
+        class NewTurret;
+        class Turrets
+        {
+            class MainTurret: NewTurret
+            {
+            };
+        };
+	};
+	class Wheeled_APC_F: Car_F
+	{
+		class EventHandlers;
+		class Turrets;
+	};
+	class CUP_Mastiff_Base: Wheeled_APC_F
+	{
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		
+			delete _xx_Chemlight_Red;
+			delete _xx_CUP_1Rnd_HEDP_M203;
+			delete _xx_CUP_200Rnd_TE4_Red_Tracer_556x45_M249;
+			delete _xx_CUP_30Rnd_556x45_Stanag;
+			delete _xx_CUP_HandGrenade_M67;
+			delete _xx_CUP_M136_M;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellOrange;
+		};
+		class Transportitems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_MediKit;
+			delete _xx_ToolKit;
+		};
+		class TransportWeapons
+		{
+			delete _xx_CUP_arifle_L85A2_G;
+			delete _xx_CUP_launch_M136;
+		};
+		class TransportBackpacks
+		{
+			delete _xx_CUP_B_Bergen_BAF;
+		};
+	};
+	
+	class CUP_B_Mastiff_HMG_GB_D: CUP_Mastiff_Base
+	{
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		
+			delete _xx_Chemlight_Red;
+			delete _xx_CUP_1Rnd_HEDP_M203;
+			delete _xx_CUP_200Rnd_TE4_Red_Tracer_556x45_M249;
+			delete _xx_CUP_30Rnd_556x45_Stanag;
+			delete _xx_CUP_HandGrenade_M67;
+			delete _xx_CUP_M136_M;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellOrange;
+		};
+		class Transportitems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_MediKit;
+			delete _xx_ToolKit;
+		};
+		class TransportWeapons
+		{
+			delete _xx_CUP_arifle_L85A2_G;
+			delete _xx_CUP_launch_M136;
+		};
+		class TransportBackpacks
+		{
+			delete _xx_CUP_B_Bergen_BAF;
+		};
+	};
+	
+	class CUP_B_Mastiff_HMG_GB_W: CUP_Mastiff_Base
+	{
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		
+			delete _xx_Chemlight_Red;
+			delete _xx_CUP_1Rnd_HEDP_M203;
+			delete _xx_CUP_200Rnd_TE4_Red_Tracer_556x45_M249;
+			delete _xx_CUP_30Rnd_556x45_Stanag;
+			delete _xx_CUP_HandGrenade_M67;
+			delete _xx_CUP_M136_M;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellOrange;
+		};
+		class Transportitems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_MediKit;
+			delete _xx_ToolKit;
+		};
+		class TransportWeapons
+		{
+			delete _xx_CUP_arifle_L85A2_G;
+			delete _xx_CUP_launch_M136;
+		};
+		class TransportBackpacks
+		{
+			delete _xx_CUP_B_Bergen_BAF;
+		};
+	};
+	
+	class CUP_Wolfhound_Base: Wheeled_APC_F
+	{
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		
+			delete _xx_Chemlight_Red;
+			delete _xx_CUP_1Rnd_HEDP_M203;
+			delete _xx_CUP_200Rnd_TE4_Red_Tracer_556x45_M249;
+			delete _xx_CUP_30Rnd_556x45_Stanag;
+			delete _xx_CUP_HandGrenade_M67;
+			delete _xx_CUP_M136_M;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellOrange;
+		};
+		class Transportitems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_MediKit;
+			delete _xx_ToolKit;
+		};
+		class TransportWeapons
+		{
+			delete _xx_CUP_arifle_L85A2_G;
+			delete _xx_CUP_launch_M136;
+		};
+		class TransportBackpacks
+		{
+			delete _xx_CUP_B_Bergen_BAF;
+		};
+		class EventHandlers: EventHandlers {
+			init = " if (!isServer) exitWith {};			_car = (_this select 0);					_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [-1.2,2.5,1.69]];			_obj setVectorDirAndUp [[-1,0,0],[0,0.1,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;			_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [-1.05,2.5,1.69]];			_obj setVectorDirAndUp [[-1,0,0],[0,0.1,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;					_obj = 'Box_NATO_AmmoVeh_F' createvehicle [0,0,0];		_obj attachto [_car, [-0.3,-3.5,2.3]];						_obj = 'UK3CB_BAF_Box_762_Ammo' createvehicle [0,0,0];		_obj attachto [_car, [0.8,-4.5,2.0]];				_obj = 'UK3CB_BAF_Box_556_Ammo' createvehicle [0,0,0];		_obj attachto [_car, [0.8,-3.75,2.0]];				_obj = 'UK3CB_BAF_Box_40_Ammo' createvehicle [0,0,0];		_obj attachto [_car, [0.8,-3.0,2.0]];			";
+			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
+		};
+	};
+	
+	class CUP_B_Wolfhound_HMG_GB_D: CUP_Wolfhound_Base
+	{
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		
+			delete _xx_Chemlight_Red;
+			delete _xx_CUP_1Rnd_HEDP_M203;
+			delete _xx_CUP_200Rnd_TE4_Red_Tracer_556x45_M249;
+			delete _xx_CUP_30Rnd_556x45_Stanag;
+			delete _xx_CUP_HandGrenade_M67;
+			delete _xx_CUP_M136_M;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellOrange;
+		};
+		class Transportitems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_MediKit;
+			delete _xx_ToolKit;
+		};
+		class TransportWeapons
+		{
+			delete _xx_CUP_arifle_L85A2_G;
+			delete _xx_CUP_launch_M136;
+		};
+		class TransportBackpacks
+		{
+			delete _xx_CUP_B_Bergen_BAF;
+		};
+	};
+	
+	class CUP_B_Wolfhound_HMG_GB_W: CUP_Wolfhound_Base
+	{
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		
+			delete _xx_Chemlight_Red;
+			delete _xx_CUP_1Rnd_HEDP_M203;
+			delete _xx_CUP_200Rnd_TE4_Red_Tracer_556x45_M249;
+			delete _xx_CUP_30Rnd_556x45_Stanag;
+			delete _xx_CUP_HandGrenade_M67;
+			delete _xx_CUP_M136_M;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellOrange;
+		};
+		class Transportitems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_MediKit;
+			delete _xx_ToolKit;
+		};
+		class TransportWeapons
+		{
+			delete _xx_CUP_arifle_L85A2_G;
+			delete _xx_CUP_launch_M136;
+		};
+		class TransportBackpacks
+		{
+			delete _xx_CUP_B_Bergen_BAF;
+		};
+	};
+	
+	class CUP_HMMWV_Base: Car_F
+	{
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+            };
+        };
+	};
+	class CUP_HMMWV_Crows_M2_Base: CUP_HMMWV_Base
+	{
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+            };
+        };
+	};
+	class CUP_B_HMMWV_Crows_M2_USA: CUP_HMMWV_Crows_M2_Base
+	{
+		//class NewTurret;
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 7;
+			};
+		};
+		class Transportitems
+		{};
+		class TransportWeapons
+		{};
+		class TransportBackpacks
+		{};
+	};
 
 //handling modifications
 	class MRAP_01_base_F;
 	class rhsusf_hmmwe_base: MRAP_01_base_F {
+		ace_cargo_size = 35;
+		ace_cargo_canLoad = 1;	
 		class Wheels {
 			class LF;
 		};
@@ -30,6 +397,7 @@ class Wheeled_APC_F: Car_F {
 		};
 	};
 	
+	
 	class rhsusf_m1025_w: rhsusf_m998_w_4dr_fulltop {
 		class Wheels:Wheels {
 			class LF:LF {
@@ -44,6 +412,59 @@ class Wheeled_APC_F: Car_F {
 		
 	};
 	
+	class rhsusf_m1025_w_m2: rhsusf_m1025_w
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+			class M2_Turret: MainTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 7;
+			};
+		};
+		class Transportitems
+		{};
+		class TransportWeapons
+		{};
+		class TransportBackpacks
+		{};
+	};
+	
+	class rhsusf_m1025_w_mk19: rhsusf_m1025_w_m2
+	{
+		class Turrets: Turrets
+		{
+			class M2_Turret: M2_Turret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L134A1"};
+				magazines[] = {"UK3CB_BAF_32Rnd_40mm_G_Box"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_40mm
+			{
+				magazine = "UK3CB_BAF_32Rnd_40mm_G_Box";
+				count = 7;
+			};
+		};
+		class Transportitems
+		{};
+		class TransportWeapons
+		{};
+		class TransportBackpacks
+		{};
+	};
+		
 	class rhsusf_m966_w: rhsusf_m1025_w
 	{
 		class Turrets: Turrets
@@ -55,6 +476,7 @@ class Wheeled_APC_F: Car_F {
 			};
 		};
 	};
+	
 	
 	class StaticWeapon;
 	class StaticATWeapon: StaticWeapon
@@ -236,14 +658,6 @@ class Wheeled_APC_F: Car_F {
 			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
 		};
 	};
-	
-	class CUP_Wolfhound_Base : Wheeled_APC_F {
-		class EventHandlers: EventHandlers {
-			init = " if (!isServer) exitWith {};			_car = (_this select 0);					_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [-1.2,2.5,1.69]];			_obj setVectorDirAndUp [[-1,0,0],[0,0.1,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;			_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [-1.05,2.5,1.69]];			_obj setVectorDirAndUp [[-1,0,0],[0,0.1,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;					_obj = 'Box_NATO_AmmoVeh_F' createvehicle [0,0,0];		_obj attachto [_car, [-0.3,-3.5,2.3]];						_obj = 'UK3CB_BAF_Box_762_Ammo' createvehicle [0,0,0];		_obj attachto [_car, [0.8,-4.5,2.0]];				_obj = 'UK3CB_BAF_Box_556_Ammo' createvehicle [0,0,0];		_obj attachto [_car, [0.8,-3.75,2.0]];				_obj = 'UK3CB_BAF_Box_40_Ammo' createvehicle [0,0,0];		_obj attachto [_car, [0.8,-3.0,2.0]];			";
-			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
-		};
-	};
-	
 	class UK3CB_BAF_LandRover_Hard_FFR_Green_A;
 	class UK3CB_BAF_LandRover_Hard_FFR_Green_A_TWCBaseRadio: UK3CB_BAF_LandRover_Hard_FFR_Green_A {
 		displayname = "Land Rover TWC Base Radio";
@@ -550,7 +964,118 @@ class Wheeled_APC_F: Car_F {
        };
 	};	
 	
+	/*
+	class car_F: Car
+    {
+        class Components;
+        explosionEffect = "";
+        // class ViewOptics;
+        class HitPoints
+        {
+            class HitLFWheel;
+            class HitLBWheel;
+            class HitLMWheel;
+            class HitLF2Wheel;
+            class HitRFWheel;
+            class HitRBWheel;
+            class HitRMWheel;
+            class HitRF2Wheel;
+            class HitGlass1;
+            class HitGlass2;
+            class HitGlass3;
+            class HitGlass4;
+            class HitGlass5;
+            class HitGlass6;
+            class HitFuel;
+            class HitEngine;
+            class HitHull;
+        };
+        class NewTurret;
+        class Turrets
+        {
+            class MainTurret: NewTurret
+            {
+                class Components;
+                class ViewGunner;
+                // class ViewOptics;
+                class HitPoints;
+            };
+        };
+        class AnimationSources;
+       
+        class Sounds;
+    };
+    class Wheeled_APC: car_F{
+        explosionEffect = "";
+    };
+    
 	
-	
-
-	
+    class CUP_HMMWV_Base: Car_F
+    {
+        tf_hasLRradio_api = 1;
+        faction = "rhs_faction_usmc_wd";
+        class HitEngine
+            {
+                class DestructionEffects
+                {
+                    ammoExplosionEffect = "";
+                    class RHS_Engine_Smoke
+                    {
+                            simulation = "particles";
+                            type = "SmallWreckSmoke";
+                            position = "engine_smoke1";
+                            intensity = 0.5;
+                            interval = 1;
+                            lifeTime = 60;
+                    };
+                    class RHS_Engine_Fire: RHS_Engine_Smoke
+                    {
+                            type = "SmallFireFPlace";
+                    };
+                    class RHS_Engine_Sparks: RHS_Engine_Smoke
+                    {
+                            type = "FireSparks";
+                    };
+                    class RHS_Engine_Sounds: RHS_Engine_Smoke
+                    {
+                            simulation = "sound";
+                            type = "Fire";
+                    };
+                    class RHS_Engine_Smoke_small1: RHS_Engine_Smoke
+                    {
+                            type = "WeaponWreckSmoke";
+                            position = "engine_smoke2";
+                    };
+                    class RHS_Engine_Smoke_small2: RHS_Engine_Smoke_small1
+                    {
+                            position = "engine_smoke3";
+                    };
+                };
+            };
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] = {"BN_RHS_M2"};
+                magazines[] = {"rhs_mag_100rnd_127x99_mag"};
+            };
+        };
+    };
+   
+   
+    class CUP_HMMWV_Crows_M2_Base: CUP_HMMWV_Base
+    {
+        cargoAction[] = {"RHS_HMMWV_Cargo","RHS_HMMWV_Cargo"};
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                turretInfoType = "RscWeaponRangeZeroing";
+                discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+                discreteDistanceInitIndex = 5;
+                weapons[] = {"tu_CUP_Vhmg_M2_CROWS_gunner","SmokeLauncher"};
+                magazines[] = {"rhs_mag_100rnd_127x99_mag","rhs_mag_100rnd_127x99_mag","rhs_mag_100rnd_127x99_mag","rhs_mag_100rnd_127x99_mag","rhs_mag_100rnd_127x99_mag","rhs_mag_100rnd_127x99_mag","SmokeLauncherMag"};
+            };
+        };
+	};
+*/
