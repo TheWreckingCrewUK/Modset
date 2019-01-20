@@ -2,9 +2,6 @@ params ["_operationName", "_author", "_operationEra", "_isNightOp"];
 
 _song = [_operationEra, _isNightOp] call TWC_Incorporeal_fnc_getIntroSong;
 
-_index = player createDiarySubject ["loadout", "Loadouts"];
-[player] remoteExecCall ["twc_fnc_briefingLoadout", (group player)];
-
 if (!isNil "completedTasks") then {
 	{
 		[_x select 0, _x select 1, false] call BIS_fnc_taskSetState;

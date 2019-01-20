@@ -7,6 +7,9 @@ if (!local _entity) exitWith {};
 _isEnabled = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
 if (_isEnabled) exitWith {};
 
+_index = player createDiarySubject ["loadout", "Loadouts"];
+[player] remoteExecCall ["twc_fnc_briefingLoadout", (group player)];
+
 TWC_Death_AlreadyExecuted = false;
 TWC_Death_ExecutionFinished = false;
 TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue ["briefingName", "Untitled"]];
