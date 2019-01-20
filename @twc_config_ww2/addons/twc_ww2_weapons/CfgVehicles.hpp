@@ -24,17 +24,14 @@ class CfgVehicles {
 		maximumLoad = 400;
 
 		class TransportMagazines {
-			ADD_MAGA(UGL_FlareWhite_F, 3);
-			ADD_MAGA(UGL_FlareRed_F, 3);
-			ADD_MAGA(UGL_FlareGreen_F, 3);
-			ADD_MAGA(UGL_FlareYellow_F, 3);
-			ADD_MAGA(1Rnd_Smoke_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokeYellow_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokePurple_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokeOrange_Grenade_shell, 3);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
+			ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
+			ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
+			ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
+			ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 		};
 	};
 
@@ -62,17 +59,14 @@ class CfgVehicles {
 		scope = 1;
 
 		class TransportMagazines {
-			ADD_MAGA(UGL_FlareWhite_F, 3);
-			ADD_MAGA(UGL_FlareRed_F, 3);
-			ADD_MAGA(UGL_FlareGreen_F, 3);
-			ADD_MAGA(UGL_FlareYellow_F, 3);
-			ADD_MAGA(1Rnd_Smoke_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokeYellow_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokePurple_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 3);
-			ADD_MAGA(1Rnd_SmokeOrange_Grenade_shell, 3);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
+			ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
+			ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
+			ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
+			ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 		};
 	};
 
@@ -85,10 +79,10 @@ class CfgVehicles {
 		class TransportMagazines {
 			ADD_MAGA(fow_30Rnd_303_bren, 9);
 			ADD_MAGA(10Rnd_303_Magazine, 24);
-			ADD_MAGA(UGL_FlareWhite_F, 6);
-			ADD_MAGA(UGL_FlareRed_F, 6);
-			ADD_MAGA(UGL_FlareGreen_F, 6);
-			ADD_MAGA(UGL_FlareYellow_F, 6);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 6);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Red, 6);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Green, 6);
+			ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 6);
 			ADD_MAGA(SmokeShellGreen, 6);
 			ADD_MAGA(SmokeShellRed, 6);
 		};
