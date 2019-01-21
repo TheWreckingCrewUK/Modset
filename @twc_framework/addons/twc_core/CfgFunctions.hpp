@@ -26,6 +26,9 @@ class CfgFunctions {
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
 			class findGreatestDistancePairInArray {};
+			
+			/** DEBUG TOOLS **/
+			class drawBoundingBox {};
 		};
 	};
 };
