@@ -1,18 +1,4 @@
 class CfgVehicles {
-	class Man;
-	class CAManBase: Man {
-		class ACE_Actions {
-			class ACE_MainActions {
-				class TWC_AddToGroup {
-					displayName = "Add To Group";
-					condition = "[_target, _player] call twc_fnc_canAddToGroup";
-					statement = "[_target] joinSilent _player"; // can be function in future for notice
-					exceptions[] = {"isNotSwimming"};
-				};
-			};
-		};
-	};
-
 	class Logic;
 	class ModuleOrdnanceMortar_F;
 	

@@ -3,15 +3,21 @@ class CfgFunctions {
 		class functions {
 			file = "twc_core\functions";
 			
+			/** EVENT HANDLERS **/
+			class serverEventHandlers {};
+			class clientEventHandlers {};
+			
 			/** MISC FUNCTIONALITY **/
 			class soundLoop {};
 			
-			/** PLAYER(S) INFORMATION **/
+			/** PLAYER RELATED **/
 			class isMember {};
 			class isManagement {};
 			class isHigherRank {};
 			class isHighestRank {};
 			class getTopRanks {};
+			class addedToGroup {};
+			class addToGroup {};
 			
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
