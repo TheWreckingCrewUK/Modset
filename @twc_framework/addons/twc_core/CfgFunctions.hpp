@@ -9,6 +9,7 @@ class CfgFunctions {
 			
 			/** MISC FUNCTIONALITY **/
 			class soundLoop {};
+			class inString {};
 			
 			/** PLAYER RELATED **/
 			class isMember {};
