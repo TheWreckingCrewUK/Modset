@@ -9,10 +9,7 @@ class CfgFunctions {
 			
 			/** MISC FUNCTIONALITY **/
 			class soundLoop {};
-			class inString {};
-			class reverseArray {};
-			class floatToString {};
-			class positionToString {};
+			class setDirFly {};
 			
 			/** PLAYER RELATED **/
 			class isMember {};
@@ -26,6 +23,10 @@ class CfgFunctions {
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
 			class findGreatestDistancePairInArray {};
+			class inString {};
+			class reverseArray {};
+			class floatToString {};
+			class positionToString {};
 			
 			/** DEBUG TOOLS **/
 			class drawBoundingBox {};
