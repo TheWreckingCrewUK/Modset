@@ -1,3 +1,9 @@
+/*
+ * EXAMPLE:
+ * _plane = createVehicle ["O_Plane_CAS_02_F", position player, [], 0, "FLY"];
+ * [_plane, -45] call TWC_fnc_setDirFLY;
+ * createVehicleCrew _plane;
+ */
 params ["_veh", "_dir"];
 
 _v = velocity _veh;

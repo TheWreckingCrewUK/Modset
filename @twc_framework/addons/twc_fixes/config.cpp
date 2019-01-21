@@ -40,4 +40,10 @@ class Extended_InitPost_EventHandlers {
 			init = "_this call TWC_Fixes_fnc_helicopterInit;";
 		};
 	};
+	
+	class Tank {
+		class TWC_Fixes_EH {
+			init = "_this call TWC_fixes_fnc_tankCrewAdjust;";
+		};
+	};
 };
