@@ -10,6 +10,9 @@ class CfgFunctions {
 			/** MISC FUNCTIONALITY **/
 			class soundLoop {};
 			class inString {};
+			class reverseArray {};
+			class floatToString {};
+			class positionToString {};
 			
 			/** PLAYER RELATED **/
 			class isMember {};
