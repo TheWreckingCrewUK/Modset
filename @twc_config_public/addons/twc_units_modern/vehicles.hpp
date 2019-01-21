@@ -318,6 +318,96 @@
 		};
 	};
 	
+	class CUP_B_Wolfhound_LMG_GB_D: CUP_Wolfhound_Base
+	{
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L7A2_1"};
+				magazines[] = {"UK3CB_BAF_762_200Rnd_T"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_762_200Rnd_T";
+				count = 15;
+			};
+		
+			delete _xx_Chemlight_Red;
+			delete _xx_CUP_1Rnd_HEDP_M203;
+			delete _xx_CUP_200Rnd_TE4_Red_Tracer_556x45_M249;
+			delete _xx_CUP_30Rnd_556x45_Stanag;
+			delete _xx_CUP_HandGrenade_M67;
+			delete _xx_CUP_M136_M;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellOrange;
+		};
+		class Transportitems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_MediKit;
+			delete _xx_ToolKit;
+		};
+		class TransportWeapons
+		{
+			delete _xx_CUP_arifle_L85A2_G;
+			delete _xx_CUP_launch_M136;
+		};
+		class TransportBackpacks
+		{
+			delete _xx_CUP_B_Bergen_BAF;
+		};
+	};
+	
+	class CUP_B_Wolfhound_LMG_GB_W: CUP_Wolfhound_Base
+	{
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L7A2_1"};
+				magazines[] = {"UK3CB_BAF_762_200Rnd_T"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_762_200Rnd_T";
+				count = 15;
+			};
+		
+			delete _xx_Chemlight_Red;
+			delete _xx_CUP_1Rnd_HEDP_M203;
+			delete _xx_CUP_200Rnd_TE4_Red_Tracer_556x45_M249;
+			delete _xx_CUP_30Rnd_556x45_Stanag;
+			delete _xx_CUP_HandGrenade_M67;
+			delete _xx_CUP_M136_M;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellOrange;
+		};
+		class Transportitems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_MediKit;
+			delete _xx_ToolKit;
+		};
+		class TransportWeapons
+		{
+			delete _xx_CUP_arifle_L85A2_G;
+			delete _xx_CUP_launch_M136;
+		};
+		class TransportBackpacks
+		{
+			delete _xx_CUP_B_Bergen_BAF;
+		};
+	};
+	
 	class CUP_HMMWV_Base: Car_F
 	{
         class Turrets: Turrets
