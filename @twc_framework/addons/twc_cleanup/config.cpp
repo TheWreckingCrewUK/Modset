@@ -27,8 +27,7 @@ class CfgFunctions {
 			class cleanBuildingUp {};
 			
 			/** CORPSE MANAGEMENT **/
-			// TODO!
-			// class corpseManager {}; // add on EH, max queue it, delete based on FIFO
+			class corpseManager {}; // max queue it, delete based on FIFO
 			// (time stamp managed too, with an ignore flag)
 		};
 	};
