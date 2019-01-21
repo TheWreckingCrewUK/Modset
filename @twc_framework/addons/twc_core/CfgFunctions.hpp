@@ -29,6 +29,7 @@ class CfgFunctions {
 			
 			/** DEBUG TOOLS **/
 			class drawBoundingBox {};
+			class boundingBoxToArray {};
 		};
 	};
 };
