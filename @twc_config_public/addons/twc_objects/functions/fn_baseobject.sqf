@@ -2,7 +2,8 @@
 params["_object"];
 
 waituntil {!isnull _object};
-
+deletevehicle (gunner _object)
+/*nulling the rest because enemy ai teleports into the objects when empty.
 
 createVehicleCrew _object;
 _object setunittrait ['camouflageCoef', 500];
