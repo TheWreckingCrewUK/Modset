@@ -8,7 +8,7 @@ _longestDistance = 0;
 _longestDistancePair = [];
 
 {
-	_returnedArray = [_x, _objects] call TWC_fnc_findGreatestDistanceWithArray;
+	_returnedArray = [_x, _objects] call TWC_Core_fnc_findGreatestDistanceWithArray;
 	_returnedArray params ["_returnDistance", "_returnPair"];
 	
 	if (_returnDistance < _longestDistance) then {

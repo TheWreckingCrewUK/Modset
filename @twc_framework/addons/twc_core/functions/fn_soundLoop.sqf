@@ -31,4 +31,4 @@ playSound3D [
 
 _waitFor = random _randomPauseRange;
 
-[{ _this call TWC_fnc_soundLoop; }, _this, _waitFor] call CBA_fnc_waitAndExecute;
+[{ _this call TWC_Core_fnc_soundLoop; }, _this, _waitFor] call CBA_fnc_waitAndExecute;

@@ -1,5 +1,5 @@
 class CfgFunctions {
-	class TWC {
+	class TWC_Core {
 		class functions {
 			file = "twc_core\functions";
 			

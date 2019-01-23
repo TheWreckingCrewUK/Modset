@@ -1,8 +1,8 @@
 // Don't use this outside of debugging something!
 params ["_obj"];
 
-bbox = [boundingBox _obj] call TWC_fnc_boundingBoxToArray;
-bboxr = [boundingBoxReal _obj] call TWC_fnc_boundingBoxToArray;
+bbox = [boundingBox _obj] call TWC_Core_fnc_boundingBoxToArray;
+bboxr = [boundingBoxReal _obj] call TWC_Core_fnc_boundingBoxToArray;
 
 _id = addMissionEventHandler ["Draw3D", {
 	for "_i" from 0 to 7 step 2 do {
