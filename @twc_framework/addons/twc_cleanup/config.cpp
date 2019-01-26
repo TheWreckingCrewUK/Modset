@@ -35,14 +35,14 @@ class CfgFunctions {
 
 class Extended_PostInit_EventHandlers {
 	class twc_cleanup {
-		serverInit = "this call twc_cleanup_fnc_serverInit";
+		serverInit = "_this call twc_cleanup_fnc_serverInit";
 		disableModuload = true;
 	};
 };
 
 /* class Extended_PreInit_EventHandlers {
 	class twc_cleanup {
-		init = "this call twc_cleanup_fnc_preInit";
+		init = "_this call twc_cleanup_fnc_preInit";
 		disableModuload = true;
 	};
 }; */
