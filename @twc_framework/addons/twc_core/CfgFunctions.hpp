@@ -19,6 +19,7 @@ class CfgFunctions {
 			class getTopRanks {};
 			class addedToGroup {};
 			class addToGroup {};
+			class canAddToGroup {};
 			
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
