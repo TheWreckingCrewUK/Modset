@@ -29,7 +29,7 @@ class CfgVehicles {
 			ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
 			ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 			ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
-			ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
+			ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 			ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
 			ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 		};
@@ -63,7 +63,7 @@ class CfgVehicles {
 			ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
 			ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
 			ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
-			ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
+			ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 			ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 			ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
 			ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
