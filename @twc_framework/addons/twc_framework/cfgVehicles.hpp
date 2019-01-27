@@ -952,6 +952,86 @@ class CfgVehicles {
 						name = "P-47 (US)";
 						value = "LIB_P47";
 					};
+					class SU34_RU
+					{
+						name = "SU-34 (RU)";
+						value = "CUP_O_SU34_RU";
+					};
+					class SU25_RU
+					{
+						name = "SU-25 (RU)";
+						value = "CUP_O_Su25_Dyn_RU";
+					};
+					class SU34_SLA
+					{
+						name = "SU-34 (SLA)";
+						value = "CUP_O_SU34_SLA";
+					};
+					class SU25_SLA
+					{
+						name = "SU-25 (SLA)";
+						value = "CUP_O_Su25_Dyn_SLA";
+					};
+					class SU25_TK
+					{
+						name = "SU-25 (TK)";
+						value = "CUP_O_Su25_Dyn_TKA";
+					};
+					class L39_TK
+					{
+						name = "L-39 (TK)";
+						value = "CUP_O_L39_TK";
+					};
+					class AV8B_USMC
+					{
+						name = "AV-8B (USMC)";
+						value = "CUP_B_AV8B_DYN_USMC";
+					};
+					class F35B_USMC
+					{
+						name = "F35B (USMC)";
+						value = "CUP_B_F35B_USMC";
+					};
+					class A10_US
+					{
+						name = "A-10 (US)";
+						value = "CUP_B_A10_DYN_USA";
+					};
+					class HGR3_UK
+					{
+						name = "Harrier GR.3 (UK)";
+						value = "TWC_Vehicle_ColdWar_HarrierGR3_RAF";
+					};
+					class HGR5_UK
+					{
+						name = "Harrier GR.5 (UK)";
+						value = "TWC_Vehicle_Millennial_HarrierGR5_RAF";
+					};
+					class HGR9_UK
+					{
+						name = "Harrier GR.9 (UK)";
+						value = "TWC_Vehicle_Modern_HarrierGR9_RAF";
+					};
+					class F35_UK
+					{
+						name = "F35B (UK)";
+						value = "CUP_B_F35B_BAF";
+					};
+					class L39_CZ
+					{
+						name = "L-39 (CZ)";
+						value = "CUP_B_L39_CZ_GREY";
+					};
+					class SU25_CDF
+					{
+						name = "SU-25 (CDF)";
+						value = "CUP_B_Su25_Dyn_CDF";
+					};
+					class SU34_CDF
+					{
+						name = "SU-34 (CDF)";
+						value = "CUP_B_SU34_CDF";
+					};
 				};
 			};
 		};

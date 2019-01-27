@@ -5,7 +5,7 @@ _helicopter addEventHandler ["RopeAttach", {
 	["twc_slingload_localityFix_eh", [_helicopter, _payload]] call CBA_fnc_serverEvent;
 }];
 
-_helicopter addEventHandler ["RopeDetach", {
+_helicopter addEventHandler ["RopeBreak", {
 	params ["_helicopter", "", "_payload"];
 
 	["TWC_Item_Delivered", 

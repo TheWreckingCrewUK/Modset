@@ -517,6 +517,7 @@ class CfgWeapons {
 		ace_overpressure_damage = 0.7;
 	};
 
+	//Dual Muzzle Setups for OPFOR vehicles to make them fire HE.
 	class cannon_125mm;
 	class CUP_Vacannon_D10: cannon_125mm
 	{
@@ -776,6 +777,31 @@ class CfgWeapons {
 			cursoraimon = "EmptyCursor";
 			reloadsound[] = {"CUP\Weapons\CUP_Weapons_VehicleWeapons\2A46\data\sound\Reload_Cannon", 13.16228, 1, 10};
 		};
+	};
+
+	//Configuring various plane weapons for use with the Ambient Attack Plane module.
+	class RocketPods;
+	class Mk82BombLauncher;
+	class CUP_Vblauncher_Mk82_veh: RocketPods
+	{
+		cursorAim = "bomb";
+	};
+	class CUP_Vblauncher_KAB250_veh: RocketPods
+	{
+		cursorAim = "bomb";
+	};
+	class CUP_Vblauncher_GBU12_veh: RocketPods
+	{
+		cursorAim = "bomb";
+	};
+
+	class CUP_Vmlauncher_CRV7_veh: RocketPods
+	{
+		cursorAim = "missile";
+	};
+	class CUP_Vmlauncher_FFAR_veh: RocketPods
+	{
+		cursorAim = "missile";
 	};
 };
 
