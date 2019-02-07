@@ -6,12 +6,47 @@ class cfgWeapons
 	class UK3CB_BAF_SUSAT_3D;
 	
 	
+	class CUP_V_B_PASGT_no_bags;
+	class twc_interceptor_ddpm: CUP_V_B_PASGT_no_bags
+	{
+		displayname = "VestGuard (DDPM)";
+		hiddenSelections[] = {"Camo"};
+		//model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USMC\CUP_NAVY_LHDVest.p3d";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa","\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USArmy\data\US_PASGT_gear_CO.paa"};
+	};
+	
+	class CUP_V_B_BAF_MTP_Osprey_Mk4_Webbing;
+	class twc_osprey_webbing_dpm: CUP_V_B_BAF_MTP_Osprey_Mk4_Webbing
+	{
+		displayname = "Webbing Rig (DPM)";
+		hiddenSelectionsTextures[] = {"\UK3CB_BAF_Equipment\uniform\data\uniform_dpm_co.paa","\UK3CB_BAF_Equipment\uniform\data\uniform_dpm_co.paa"};
+	};
+	
+	class CUP_V_B_PASGT;
+	class twc_interceptor_ddpm1: CUP_V_B_PASGT
+	{
+		displayname = "VestGuard (DDP withbagsM)";
+		hiddenSelections[] = {"camo1","camo2"};
+		//model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USMC\CUP_NAVY_LHDVest.p3d";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
+	};
+	
+	class CUP_V_B_Interceptor_Rifleman_DCU;
+	class twc_interceptor_ddpm2: CUP_V_B_Interceptor_Rifleman_DCU
+	{
+		displayname = "VestGuard (DDPM2)";
+		hiddenSelections[] = {"camo","camo1","camo2"};
+		//model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USMC\CUP_NAVY_LHDVest.p3d";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa","\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USArmy\data\intcep\us_molle_webbings_brown_co.paa","\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USArmy\data\intcep\us_soldier_equip_brown_co.paa"};
+	};
+	
 	class V_HarnessO_ghex_F;
 	class twc_V_HarnessO_grn: V_HarnessO_ghex_F
 	{
 		displayName = "LBV Harness (Olive)";
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
 	};
+	
 	
 	class twc_V_HarnessO_tan: V_HarnessO_ghex_F
 	{

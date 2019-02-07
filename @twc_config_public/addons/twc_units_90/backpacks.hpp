@@ -19,6 +19,7 @@ uk3cb_baf_equipment\uniform\data\uniform_dpm_co.paa
 
 uk3cb_baf_equipment\uniform\data\uniform_ddpm_co.paa
 */
+
 class rhsusf_assault_eagleaiii_ocp;
 class twc_genbackPack_tan: rhsusf_assault_eagleaiii_ocp
 {
@@ -37,6 +38,47 @@ class twc_back_webbing: B_AssaultPack_dgtl
 	displayname = "SPC";
 	model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USMC\CUP_USMC_Eagle_SPC_2.p3d";
 	hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
+};
+class twc_dpm_belt: B_AssaultPack_dgtl
+{
+	displayname = "Webbing Belt (DPM)";
+	picture = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_BAF\CUP_vests\webbing\data\UI\osprey_mk4_webbing_ca.paa";
+	transportMaxWeapons = 0;
+	maximumLoad = 120;
+	hiddenSelections[] = {"camo1","camo2"};
+	model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_BAF\CUP_vests\webbing\osprey_mk4_belt.p3d";
+	hiddenSelectionsTextures[] = {"\UK3CB_BAF_Equipment\uniform\data\uniform_dpm_co.paa","\UK3CB_BAF_Equipment\uniform\data\uniform_dpm_co.paa"};
+};
+class twc_ddpm_belt: twc_dpm_belt
+{
+	displayname = "Webbing Belt (DDPM)";
+	hiddenSelectionsTextures[] = {"\UK3CB_BAF_Equipment\uniform\data\uniform_ddpm_co.paa","\UK3CB_BAF_Equipment\uniform\data\uniform_ddpm_co.paa"};
+};
+class twc_mtp_belt: twc_dpm_belt
+{
+	displayname = "Webbing Belt (MTP)";
+	hiddenSelectionsTextures[] = {"CUP\Creatures\People\Military\CUP_Creatures_People_Military_BAF\CUP_vests\osprey_mk4\data\equip_co.paa","CUP\Creatures\People\Military\CUP_Creatures_People_Military_BAF\CUP_vests\osprey_mk4\data\gear_co.paa"};
+};
+class twc_tan_belt: twc_dpm_belt
+{
+	displayname = "Webbing Belt (Tan)";
+	hiddenSelectionsTextures[] = {"CUP\Creatures\People\Military\CUP_Creatures_People_Military_BAF\CUP_vests\osprey_mk4\data\equip_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
+};
+class twc_oli_belt: twc_dpm_belt
+{
+	displayname = "Webbing Belt (Olive)";
+	hiddenSelectionsTextures[] = {"CUP\Creatures\People\Military\CUP_Creatures_People_Military_BAF\CUP_vests\osprey_mk4\data\equip_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
+};
+class twc_oli_belt_2: twc_dpm_belt
+{
+	displayname = "Webbing Belt (Olive ALICE)";
+	model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USArmy\CUP_v_ALICE_webbing.p3d";
+	hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
+};
+class twc_tan_belt_2: twc_oli_belt_2
+{
+	displayname = "Webbing Belt (Tan ALICE)";
+	hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
 };
 
 class CUP_B_AlicePack_Khaki;
@@ -105,6 +147,8 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 	class UK3CB_BAF_B_Bergen_TAN_SL_A;
 	class UK3CB_BAF_B_Bergen_DPMW_JTAC_H_A;
 	class UK3CB_BAF_B_Carryall_TAN;
+	class B_Carryall_cbr;
+	class UK3CB_BAF_B_Bergen_OLI_Rifleman_A;
 	class CUP_B_GER_Medic_Desert;
 	
 	class TWC_Backpack_1990_Sectionlead: UK3CB_BAF_B_Bergen_DPMW_SL_A
@@ -143,7 +187,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 		};
 	};
-	class TWC_Backpack_1990_2IC: UK3CB_BAF_B_Bergen_DPMW_Rifleman_B
+	class TWC_Backpack_1990_2IC: UK3CB_BAF_B_Carryall_DPMW
 	{
 		scope = 1;
 		class TransportMagazines
@@ -199,7 +243,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 		};
 	};
-	class TWC_Backpack_1990_Gunner: UK3CB_BAF_B_Bergen_DPMW_Rifleman_B
+	class TWC_Backpack_1990_Gunner: UK3CB_BAF_B_Bergen_DPMW_Rifleman_A
 	{
 		scope = 1;
 		class TransportMagazines
@@ -308,7 +352,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 		};
 	};
-	class TWC_Backpack_1990_Medic: UK3CB_BAF_B_Kitbag_DPMW
+	class TWC_Backpack_1990_Medic: UK3CB_BAF_B_Bergen_OLI_Rifleman_A
 	{
 		scope = 1;
 		class TransportItems
@@ -521,7 +565,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 		};
 	};
-	class TWC_Backpack_1990_2IC_Desert: B_Kitbag_cbr
+	class TWC_Backpack_1990_2IC_Desert: B_Carryall_cbr
 	{
 		scope = 1;
 		class TransportMagazines
@@ -555,7 +599,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 		};
 	};
-	class TWC_Backpack_1990_Gunner_Desert: twc_AlicePack_green
+	class TWC_Backpack_1990_Gunner_Desert: twc_AlicePack_tan
 	{
 		scope = 1;
 		class TransportMagazines
@@ -1013,7 +1057,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 		};
 	};
 
-		class TWC_Backpack_2000_rif_D: twc_AlicePack_green
+		class TWC_Backpack_2000_rif_D: twc_AlicePack_tan
 	{
 		scope = 1;
 		class TransportMagazines

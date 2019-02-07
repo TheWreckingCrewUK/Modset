@@ -84,6 +84,22 @@
 		displayName="Section Leader @British Army";
 		icon="iconManLeader";
 		backpack="TWC_Backpack_1990_Sectionlead";
+		linkedItems[]=
+		{
+			"twc_rhs_6sh92_radio_oli",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_rhs_6sh92_radio_oli",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 		weapons[]=
 		{
 			"Throw",
@@ -139,8 +155,24 @@
 	{
 		scope=2;
 		displayName="Rifleman";
-		backpack="";
+		backpack="twc_dpm_belt";
 		twc_nobackpack = 1;
+		linkedItems[]=
+		{
+			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 		weapons[]=
 		{
 			"Throw",
@@ -186,8 +218,24 @@
 	{
 		scope=2;
 		displayName="Rifleman AT";
-		backpack="";
+		backpack="twc_dpm_belt";
 		twc_nobackpack = 1;
+		linkedItems[]=
+		{
+			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 		weapons[]=
 		{
 			"Throw",
@@ -234,6 +282,22 @@
 		displayName="Gunner";
 		icon="iconManMG";
 		backpack="TWC_Backpack_1990_Gunner";
+		linkedItems[]=
+		{
+			"twc_lightcarrier_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_lightcarrier_dpm",
+			"UK3CB_BAF_H_Mk6_DPMW_A",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 		weapons[]=
 		{
 			"Throw",
@@ -945,7 +1009,7 @@
 		};
 		linkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm1",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -953,7 +1017,8 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm1",
+			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1017,11 +1082,11 @@
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
-		backpack="";
+		backpack="twc_tan_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1029,7 +1094,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1046,11 +1111,11 @@
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
-		backpack="";
+		backpack="twc_tan_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1058,7 +1123,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1092,7 +1157,7 @@
 		backpack="TWC_Backpack_1990_Gunner_Desert";
 		linkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm1",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1100,7 +1165,8 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm1",
+			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1119,7 +1185,7 @@
 		backpack="TWC_Backpack_1990_2IC_Desert";
 		linkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm2",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1127,7 +1193,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm2",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1203,7 +1269,7 @@
 		backpack="TWC_Backpack_1990_Medic_Desert";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_V_HarnessO_dpmt",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1211,7 +1277,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_V_HarnessO_dpmt",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",

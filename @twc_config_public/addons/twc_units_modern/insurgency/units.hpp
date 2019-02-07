@@ -4,7 +4,7 @@
 		displayName="Pointman";
 		backpack = "TWC_Backpack_Modern_Pointman";
 		linkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Rifleman_B",
+			"CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -12,7 +12,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Rifleman_B",
+			"CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -130,6 +130,21 @@
 
 	class Modern_British_Autorifleman_COIN: Modern_British_Autorifleman {
 		displayName="Automatic Rifleman";
+		linkedItems[]= {
+			"CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[]= {
+			"CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 		weapons[]= {
 			"Throw",
 			"Put",
@@ -147,8 +162,8 @@
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_556_200Rnd",
-			"UK3CB_BAF_556_200Rnd",
+			"UK3CB_BAF_556_200Rnd_T",
+			"UK3CB_BAF_556_200Rnd_T",
 			"UK3CB_BAF_556_200Rnd_T",
 			"HandGrenade",
 			"SmokeShell",
@@ -158,8 +173,8 @@
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"UK3CB_BAF_556_200Rnd",
-			"UK3CB_BAF_556_200Rnd",
+			"UK3CB_BAF_556_200Rnd_T",
+			"UK3CB_BAF_556_200Rnd_T",
 			"UK3CB_BAF_556_200Rnd_T",
 			"HandGrenade",
 			"SmokeShell",
@@ -171,7 +186,7 @@
 		displayName="2IC";
 		backpack="TWC_Backpack_Modern_2IC";
 		linkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Rifleman_B",
+			"CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -180,7 +195,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Rifleman_B",
+			"CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -301,7 +316,7 @@
 	{
 		editorSubcategory = "Men_Modern_Light";
 		displayName="Section Leader @BAF Light Mobility";
-		backpack="";
+		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
@@ -383,7 +398,7 @@
 	class Modern_British_Pointman_Light: Modern_British_Pointman
 	{
 		editorSubcategory = "Men_Modern_Light";
-		backpack="";
+		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
 			"twc_mtp_spc_rifleman",
@@ -405,7 +420,7 @@
 	class Modern_British_Grenadier_COIN_Light: Modern_British_Grenadier_COIN
 	{
 		editorSubcategory = "Men_Modern_Light";
-		backpack="";
+		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
 			"UK3CB_BAF_V_Osprey_Rifleman_E",
@@ -427,10 +442,10 @@
 	class Modern_British_Autorifleman_COIN_Light: Modern_British_Autorifleman_COIN
 	{
 		editorSubcategory = "Men_Modern_Light";
-		backpack="";
+		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"UK3CB_BAF_V_Osprey_MG_B",
+			"twc_mtp_spcs_mg",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -438,7 +453,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_Osprey_MG_B",
+			"twc_mtp_spcs_mg",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -449,7 +464,7 @@
 	class Modern_British_2IC_COIN_Light: Modern_British_2IC_COIN
 	{
 		editorSubcategory = "Men_Modern_Light";
-		backpack="";
+		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
 			"twc_mtp_spc_rifleman_alt",
@@ -471,7 +486,7 @@
 	class Modern_British_Machinegunner_Light: Modern_British_Machinegunner
 	{
 		editorSubcategory = "Men_Modern_Light";
-		backpack="";
+		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
 			"twc_mtp_spcs_mg",
@@ -521,7 +536,7 @@
 	class Modern_British_Marksman_COIN_Light: Modern_British_Marksman_COIN
 	{
 		editorSubcategory = "Men_Modern_Light";
-		backpack="";
+		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
 			"twc_mtp_spcs_Marksman",
@@ -543,7 +558,7 @@
 	class Modern_British_Medic_Light: Modern_British_Medic
 	{
 		editorSubcategory = "Men_Modern_Light";
-		backpack="";
+		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
 			"twc_mtp_spcs_medic",
@@ -715,10 +730,10 @@
 		icon="iconManLeader";
 		twc_radioType = "ACRE_PRC343";
 		twc_radioChannel = 4;
-		backpack="";
+		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"UK3CB_BAF_V_Osprey_Rifleman_A",
 			"UK3CB_BAF_H_Mk7_Scrim_D",
 			"ItemMap",
 			"ItemCompass",
@@ -726,7 +741,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_Osprey_Marksman_A",
+			"UK3CB_BAF_V_Osprey_Rifleman_A",
 			"UK3CB_BAF_H_Mk7_Scrim_D",
 			"ItemMap",
 			"ItemCompass",

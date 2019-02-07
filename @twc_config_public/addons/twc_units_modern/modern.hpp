@@ -397,7 +397,7 @@
 		backpack="TWC_Backpack_Modern_Autorifleman_Kitbag";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_MG_A",
+			"CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -405,7 +405,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_Osprey_MG_A",
+			"CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -425,8 +425,8 @@
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_556_200Rnd",
-			"UK3CB_BAF_556_200Rnd",
+			"UK3CB_BAF_556_200Rnd_T",
+			"UK3CB_BAF_556_200Rnd_T",
 			"UK3CB_BAF_556_200Rnd_T",
 			"HandGrenade",
 			"SmokeShell",
@@ -434,8 +434,8 @@
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_556_200Rnd",
-			"UK3CB_BAF_556_200Rnd",
+			"UK3CB_BAF_556_200Rnd_T",
+			"UK3CB_BAF_556_200Rnd_T",
 			"UK3CB_BAF_556_200Rnd_T",
 			"HandGrenade",
 			"SmokeShell",
@@ -448,7 +448,7 @@
 		backpack="TWC_Backpack_Modern_2IC";
 		linkedItems[]=
 		{
-			"twc_mtp_spc_rifleman_alt",
+			"CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -456,7 +456,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_mtp_spc_rifleman_alt",
+			"CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -1266,10 +1266,11 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		displayName="Logistics Technician";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 		icon="iconMan";
+		backpack="twc_mtp_belt";
 		linkedItems[]=
 		{
 			"UK3CB_BAF_H_Mk7_Camo_C",
-			"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman",
+			"UK3CB_BAF_V_Osprey_Rifleman_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1277,7 +1278,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		respawnLinkedItems[]=
 		{
 			"UK3CB_BAF_H_Mk7_Camo_C",
-			"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman",
+			"UK3CB_BAF_V_Osprey_Rifleman_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1455,6 +1456,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		scope=2;
 		displayName="Armour Crewman";
 		icon="iconMan";
+		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
@@ -1504,7 +1506,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		displayName="Armour Commander";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		backpack="";
+		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{	
