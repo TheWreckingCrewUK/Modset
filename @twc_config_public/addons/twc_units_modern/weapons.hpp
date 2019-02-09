@@ -1067,8 +1067,8 @@ class cfgammo
 		lightColor[] = {0.5,0.75,0.5,0};
 		brightness  = 75;
 		intensity = 1000000;
-		coefgravity = 0.15;
-		timeToLive = 160;
+		coefgravity = 0.13;
+		timeToLive = 140;
 	};
 	
 	class G_20mm_HE;

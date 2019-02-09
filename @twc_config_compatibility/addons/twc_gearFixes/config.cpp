@@ -54,7 +54,16 @@ class CfgAmmo {
 		soundHit4[] = {};
 	};
 	
-	
+	/*
+	class FlareBase;
+	class F_40mm_White: FlareBase
+	{
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.13;
+		timeToLive = 140;
+	};
+	*/
 	class RocketBase;
 	class CUP_R_OG7_AT: RocketBase
 	{
@@ -842,7 +851,7 @@ class cfgRecoils
 		muzzleOuter[]	= { 0.07,  0.15,  0.02,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
 		kickBack[]	= { 0.03, 0.05 }; //min/max force
 		permanent	= 0.1; //muzzle climb post-recoil, means nothing when on bipod
-		temporary	= 0.07; //muzzle jump
+		temporary	= 0.04; //muzzle jump
 	};
 	class twc_mg_556_prone
 	{
@@ -872,15 +881,15 @@ class cfgRecoils
 		muzzleOuter[]	= { 0.1,  0.15,  0.03,  0.1 };
 		kickBack[]	= { 0.03, 0.04 };
 		permanent	= 0.4;
-		temporary	= 0.1;
+		temporary	= 0.07;
 	};
 	
  class twc_mg_prone
 	{
-		muzzleOuter[]	= { 0.1,  0.1,  0.5,  0.45 };
+		muzzleOuter[]	= { 1.5,  1.5,  0.5,  0.45 };
 		kickBack[]	= { 0.02, 0.03 };
 		permanent	= 0.1;
-		temporary	= 0.5;
+		temporary	= 0.1;
 	};
 	
 	class twc_shotgun_1
@@ -909,7 +918,7 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class CAManBase {
 		class twc_gunshake {
-			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {addCamShake [2.5, 0.3, 15]};";
+			clientFiredBIS = "if (((getShotParents (_this select 6)) select 1) == player) then {addCamShake [2.8, 0.4, 15]};";
 		};
 	};
 	class Helicopter_Base_F {
