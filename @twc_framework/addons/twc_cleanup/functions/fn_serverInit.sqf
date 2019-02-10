@@ -1,8 +1,8 @@
 if (!isServer) exitWith {};
 
 TWC_Corpse_Queue = [] call CBA_fnc_hashCreate;
-TWC_Corpse_Queue_Max = 30; // How many is too many corpses for performance?
-TWC_Corpse_Queue_MinTime = 240; // How long should the corpse be around for, before we consider deleting it?
+TWC_Corpse_Queue_Max = 40; // How many is too many corpses for performance?
+TWC_Corpse_Queue_MinTime = 300; // How long should the corpse be around for, before we consider deleting it?
 // can potentially add a maxtime in the future
 
 addMissionEventHandler ["BuildingChanged", {

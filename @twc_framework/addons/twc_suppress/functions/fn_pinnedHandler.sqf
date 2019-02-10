@@ -1,6 +1,6 @@
 if (!(hasInterface) || isDedicated) exitWith {};
 
-#define MIN_THRESHOLD 8
+#define MIN_THRESHOLD 10
 
 if (TWC_Suppress_threshold >= MIN_THRESHOLD) then {
 	if (!alive player) exitWith {};
