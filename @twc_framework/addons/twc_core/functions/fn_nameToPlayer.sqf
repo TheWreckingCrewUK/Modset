@@ -1,7 +1,7 @@
 /**
- * Returns the player object for a given name (string). ObjNull if not found.
+ * Returns the player object for a given name (string). ObjNull if not found
  */
-params [[_name, , []]];
+params [["_name", ""]];
 private _unit = objNull;
 
 _name = toLower _name;
