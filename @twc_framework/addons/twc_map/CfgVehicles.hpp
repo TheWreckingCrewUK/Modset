@@ -68,8 +68,8 @@ class CfgVehicles {
 	// third party maps
 	CREATE_MAP(Carraigdubh);
 	CREATE_MAP(utes);
-	CREATE_MAP(Chernarus);
-	CREATE_MAP(Chernarus_Summer);
-	CREATE_MAP(Chernarus_Winter);
+	CREATE_MAP(chernarus);
+	CREATE_MAP(chernarus_summer);
+	CREATE_MAP(chernarus_winter);
 	CREATE_MAP(pja307); // Dariyah
 };
