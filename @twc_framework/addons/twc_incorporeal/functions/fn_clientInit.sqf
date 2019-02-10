@@ -1,7 +1,4 @@
-params ["_entity"];
-
 if (isDedicated || !hasInterface) exitWith {};
-if (!local _entity) exitWith {};
 
 // Don't run on public.
 _isEnabled = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
@@ -21,11 +18,9 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 	if (_isPublic) exitWith {};
 	
 	[(_this select 0)] spawn {
-		if (player == (_this select 0)) then {
-			titleCut ["", "BLACK FADED", 999];
-		};
+		titleCut ["", "BLACK FADED", 999];
 	};
-}, [_entity]] call CBA_fnc_waitUntilAndExecute;
+}, []] call CBA_fnc_waitUntilAndExecute;
 
 // Wait until mission module has been initalized.
 ["twc_framework_initComplete", {

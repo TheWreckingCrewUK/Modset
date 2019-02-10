@@ -15,14 +15,14 @@ private _deleted = false;
 			private _pPos = getPosATL _projectile;
 			private _lis = lineIntersectsSurfaces [ATLToASL _pPos, eyePos player, player];
 			if (_lis isEqualTo []) then { _dDist = _dDist * 0.65; };
-			if (isWeaponDeployed player) then { _hit = _hit - (_hit / 4); };
+			if (isWeaponDeployed player) then { _hit = _hit - (_hit / 3.8); };
 			_hit = _hit / TWC_Suppress_modifier;
 			
 			if ((_pPos distance player) <= _dDist) then {
 				_divisor = IM_DIV;
 				TWC_Suppress_lastShotTime = time;
 				
-				if ((_pPos distance player) <= 2.8) then {
+				if ((_pPos distance player) <= 2) then {
 					[] call TWC_Suppress_fnc_impact;
 				};
 			};
