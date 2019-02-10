@@ -42,14 +42,18 @@ class sp_l4_lmg: LMG_Zafir_F
 {
 	magazines[] = {"SP_30Rnd_762_L4","UK3CB_BAF_762_20Rnd","UK3CB_BAF_762_20Rnd_T"};
 };
+
 class launch_RPG7_F;
-class sp_l1a1_law66: launch_RPG7_F
-{
+class sp_l1a1_law66: launch_RPG7_F {
 	ACE_UsedTube = "sp_l1a1_law66_used";
 	magazines[] = {"SP_law66_round_disposable"};
+
+	ace_overpressure_angle = 30;
+	ace_overpressure_range = 40;
+	ace_overpressure_damage = 0.6;
 };
-class sp_l1a1_law66_used: sp_l1a1_law66 
-{
+
+class sp_l1a1_law66_used: sp_l1a1_law66 {
 	scope = 1;
 	ACE_isUsedLauncher = 1;
 	author = "[TWC] Rik";
