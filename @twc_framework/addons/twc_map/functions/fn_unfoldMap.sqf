@@ -32,6 +32,9 @@ _callerMarkers = [];
 		params ["_caller", "_target", "_pos", "_memPoint", "_vector", "_callerMarkers", "_mapObject"];
 
 		if (isNull _target) then {
+			// cut the grass too!
+			_cutter = "Land_ClutterCutter_Small_F" createVehicle [0,0,0];
+			_cutter setPos _pos;
 			_mapObject setPos _pos;
 		} else {
 			_mapObject attachTo [_target, _pos, _memPoint];
