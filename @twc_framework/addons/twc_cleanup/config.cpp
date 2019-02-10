@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.7;
-		requiredAddons[] = {"cba_xeh"};
+		requiredAddons[] = {"cba_main"};
 		author[] = {"thewreckingcrew.eu"};
 		authorUrl = "thewreckingcrew.eu";
 		version = "1";
