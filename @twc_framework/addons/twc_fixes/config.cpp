@@ -17,14 +17,6 @@ class CfgPatches {
 	};
 };
 
-class CfgWorlds {
-	class CAWorld;
-	class Chernarus: CAWorld {};
-	class Caribou: Chernarus {
-		newRoadsShape = "";
-	};
-};
-
 #include "CfgFunctions.hpp"
 #include "CfgWeapons.hpp"
 
