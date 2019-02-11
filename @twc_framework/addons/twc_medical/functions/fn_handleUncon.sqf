@@ -5,6 +5,9 @@ if (!local _unit) exitWith {};
 // the unit just went unconsicous, we don't need to double check until some time
 // prevents waking up temp knock outs prematurely
 
+_time = 2 + (random 4);
+[twc_medical_fnc_unconSoundLoop, [_unit], _time] call CBA_fnc_waitAndExecute;
+
 if (isPlayer _unit) exitWith {
 	if (_isUncon) exitWith {
 		_unconTimer = ceil(random 5) + 1;
