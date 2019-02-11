@@ -23,7 +23,7 @@
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_quikclot",
 			"ACE_quikclot",
 			"ACE_morphine",
@@ -50,7 +50,7 @@
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_quikclot",
 			"ACE_quikclot",
 			"ACE_morphine",
@@ -665,7 +665,7 @@
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_quikclot",
 			"ACE_quikclot",
 			"ACE_morphine",
@@ -692,7 +692,7 @@
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_quikclot",
 			"ACE_quikclot",
 			"ACE_morphine",
@@ -1196,7 +1196,7 @@
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_quikclot",
 			"ACE_quikclot",
 			"ACE_morphine",
@@ -1224,7 +1224,7 @@
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_quikclot",
 			"ACE_quikclot",
 			"ACE_morphine",

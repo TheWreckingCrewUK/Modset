@@ -340,7 +340,7 @@
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -369,7 +369,7 @@
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -579,7 +579,7 @@
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -652,7 +652,7 @@
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
