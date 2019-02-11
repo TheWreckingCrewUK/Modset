@@ -1,3 +1,5 @@
+if !(isServer) exitWith {};
+
 /*
  * Should fix the disappearing cargo crate (underground) issue that ACE3 is currently having.
  */
@@ -32,3 +34,11 @@
 		_payload setOwner _helicopterOwner;
 	};
 }] call CBA_fnc_addEventHandler;
+
+addMissionEventHandler ["EntityKilled", {
+	params ["_unit"];
+	
+	if ((hmd _unit) isEqualTo "NVGoggles_AI") then {
+		_unit unlinkItem (hmd _unit);
+	};
+}];
