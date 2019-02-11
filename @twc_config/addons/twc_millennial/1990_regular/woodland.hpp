@@ -35,14 +35,14 @@ class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_
 	weapons[]=
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
-		"ukf_law80launcher",
+		"ukcw_law80",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[]=
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
-		"ukf_law80launcher",
+		"ukcw_law80",
 		"Throw",
 		"Put"
 	};

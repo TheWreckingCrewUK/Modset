@@ -43,7 +43,7 @@ class TWC_AmmoBox_Launchers_LAW80_Portable: TWC_AmmoBox_Launcher_Portable {
 	editorSubcategory = "TWC_Crates_Launchers";
 	
 	class TransportWeapons {
-		weap_nc(ukf_law80launcher, 2);
+		weap_nc(ukcw_law80, 2);
 	};
 };
 

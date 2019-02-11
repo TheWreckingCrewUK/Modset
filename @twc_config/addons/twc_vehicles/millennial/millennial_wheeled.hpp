@@ -27,7 +27,7 @@ class TWC_Vehicle_Millennial_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukf_law80launcher, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(ukcw_law80, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };
@@ -174,7 +174,7 @@ class TWC_Vehicle_Millennial_LandRoverHard_Woodland: TWC_BaseClass_LR_Hard_Base_
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukf_law80launcher, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(ukcw_law80, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };
