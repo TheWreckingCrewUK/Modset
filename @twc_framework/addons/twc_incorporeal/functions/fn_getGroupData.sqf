@@ -23,7 +23,15 @@ _groupPlayers = [];
 	};
 } forEach units _group;
 
-[
-	_groupName,
-	_groupPlayers
-];
+_firstPlayer = (units _group) select 0;
+_lastPlayer = (units _group) select 0;
+
+if (count (units _group) > 1) then {
+	_returnData = [(units _group)] call TWC_Core_fnc_findGreatestDistancePairInArray;
+	_returnData params ["_dist", "_rArray"];
+
+	_firstPlayer = _rArray select 0;
+	_lastPlayer = _rArray select 1;
+};
+
+[_groupName, _groupPlayers, [_firstPlayer, _lastPlayer]];

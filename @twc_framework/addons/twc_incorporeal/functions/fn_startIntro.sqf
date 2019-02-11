@@ -13,15 +13,12 @@ _introData = [] call TWC_Incorporeal_fnc_getIntroData;
 
 // Calculate time per section for panning shot. Overall time limit is 40 seconds, divided by element count. Min of 4 seconds per group.
 _totalAssetCount = count _introData;
-_panTimePerAsset = (40 / (_totalAssetCount)) max 4;
+_panTimePerAsset = (45 / (_totalAssetCount)) max 5;
 [true] call ace_common_fnc_disableUserInput;
 //disableUserInput true;
 
 waitUntil {!(isNil "BIS_fnc_init")};
-// some way of nicely transitioning into the game before group info ??
-_cam = "camera" camCreate (player modelToWorld [0, 3, 5]);
-_cam camSetTarget (player modelToWorld [0, 0, 1.5]);
-_cam camSetPos (player modelToWorld [0, 2, 1.5]);
+_cam = "camera" camCreate (player modelToWorld [0, 3, 3]);
 _cam cameraEffect ["internal", "back"];
 
 [_song] spawn { playMusic (_this select 0); }; // play calculated tune
@@ -41,14 +38,23 @@ _titleText = format [
 sleep 10;
 
 titleCut ["", "BLACK IN", 15];
-_cam camCommit 5;
 sleep 4;
 
+_alternatePan = false;
+
 {
-	_x params ["_groupName", "_groupUnits"];
+	_x params ["_groupName", "_groupUnits", "_panArray"];
 	_displayString = "";
-	_firstUnit = ((_groupUnits select 0) select 2);
-	_lastUnit = ((_groupUnits select (count _groupUnits - 1)) select 2);
+	
+	_firstUnit = (_panArray select 0);
+	_lastUnit = (_panArray select 1);
+	
+	if (_alternatePan) then {
+		_firstUnit = (_panArray select 1);
+		_lastUnit = (_panArray select 0);
+	};
+	
+	_alternatePan = !_alternatePan;
 	
 	// Build Group Display List
 	{
