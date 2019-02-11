@@ -31,7 +31,7 @@
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -59,7 +59,7 @@
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -845,7 +845,7 @@
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC148",
 			"ACE_fieldDressing",
@@ -862,7 +862,7 @@
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC148",
 			"ACE_fieldDressing",
@@ -1078,7 +1078,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_ATragMX",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACRE_PRC148",
@@ -1106,7 +1106,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_Kestrel4500",
 			"ACE_ATragMX",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACRE_PRC148",
@@ -1544,7 +1544,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -1573,7 +1573,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -1925,7 +1925,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACRE_PRC148",
@@ -1957,7 +1957,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACRE_PRC148",
@@ -2071,7 +2071,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -2100,7 +2100,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -2185,7 +2185,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",
@@ -2215,7 +2215,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"rhsusf_ANPVS_14",
+			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
 			"ACE_fieldDressing",

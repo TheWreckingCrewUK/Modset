@@ -31,7 +31,7 @@ Items[]=
 "ACE_fieldDressing",
 "ACRE_PRC148",
 "ACE_EarPlugs",
-"rhsusf_ANPVS_14",
+
 "ACE_fieldDressing",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
@@ -58,7 +58,7 @@ respawnitems[]=
 "ACE_fieldDressing",
 "ACRE_PRC148",
 "ACE_EarPlugs",
-"rhsusf_ANPVS_14",
+
 "ACE_fieldDressing",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
