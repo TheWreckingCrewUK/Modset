@@ -5,17 +5,22 @@
 params ["_objects"];
 
 _longestDistance = 0;
-_longestDistancePair = [];
+_return = [];
 
 {
-	_returnedArray = [_x, _objects] call TWC_Core_fnc_findGreatestDistanceWithArray;
-	_returnedArray params ["_returnDistance", "_returnPair"];
-	
-	if (_returnDistance < _longestDistance) then {
-		_longestDistance = _returnDistance;
-		_longestDistancePair = _returnPair;
-	};
+	_refObj = _x;
+
+	{
+		if !(_refObj isEqualTo _x) then {
+			_currentDistance = _refObj distance _x;
+
+			if (_longestDistance < _currentDistance) then {
+				_longestDistance = _currentDistance;
+				_return = [_currentDistance, [_refObj, _x]];
+			};
+		};
+	} forEach _objects;
 } forEach _objects;
 
-// return array!
-_longestDistancePair;
+// return array! [distance, [one element, second element]]
+_return;
