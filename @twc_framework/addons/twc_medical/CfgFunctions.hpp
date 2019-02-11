@@ -48,6 +48,7 @@ class CfgFunctions {
 			class extendedUnconLoop {};
 			class handleUncon {};
 			class handleAIUncon {};
+			class unconSoundLoop {};
 
 			// CPR
 			class action {};
