@@ -405,3 +405,69 @@ class TWC_Vehicle_Millennial_LandRoverSnatch_Desert_COIN: TWC_BaseClass_LR_Snatc
 		};
 	};
 };
+
+class TWC_Vehicle_Millennial_LandRoverWMIK_GPMG_Woodland: TWC_BaseClass_LR_WMIK_GPMG_Green_Base {
+	scope = 2;
+	scopeCurator = 2;
+	side = 1;
+	ADD_FACTION;
+	
+	displayname = "Land Rover - WMIK (Woodland)";
+	editorSubcategory = "TWC_ForceType_Motorised";
+
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
+		ADD_ITEM(ACE_elasticBandage, ADD_QNTY(SECTION_ELASTICBANDAGE));
+		ADD_ITEM(ACE_quikclot, ADD_QNTY(SECTION_QUIKCLOT));
+		ADD_ITEM(ACE_packingBandage, ADD_QNTY(SECTION_PACKINGBANDAGE));
+		ADD_ITEM(ACE_tourniquet, ADD_QNTY(SECTION_TOURNIQUET));
+		ADD_ITEM(ACE_morphine, ADD_QNTY(SECTION_MORPHINE));
+		ADD_ITEM(ACE_epinephrine, ADD_QNTY(SECTION_EPINEPHRINE));
+	}; 
+	
+	class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MILLENNIAL_SECTION_EARLY_RIFLE));
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MILLENNIAL_SECTION_EARLY_RIFLE_T));
+		
+		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
+	};
+	
+	class TransportWeapons {
+		ADD_WEAP(ukcw_law80, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+	};
+	
+	class TransportBackpacks { };
+};
+
+class TWC_Vehicle_Millennial_LandRoverWMIK_GPMG_Desert: TWC_BaseClass_LR_WMIK_GPMG_Sand_Base {
+	scope = 2;
+	scopeCurator = 2;
+	side = 1;
+	ADD_FACTION;
+	
+	displayname = "Land Rover - WMIK (Desert)";
+	editorSubcategory = "TWC_ForceType_Motorised";
+
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
+		ADD_ITEM(ACE_elasticBandage, ADD_QNTY(SECTION_ELASTICBANDAGE));
+		ADD_ITEM(ACE_quikclot, ADD_QNTY(SECTION_QUIKCLOT));
+		ADD_ITEM(ACE_packingBandage, ADD_QNTY(SECTION_PACKINGBANDAGE));
+		ADD_ITEM(ACE_tourniquet, ADD_QNTY(SECTION_TOURNIQUET));
+		ADD_ITEM(ACE_morphine, ADD_QNTY(SECTION_MORPHINE));
+		ADD_ITEM(ACE_epinephrine, ADD_QNTY(SECTION_EPINEPHRINE));
+	}; 
+	
+	class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MILLENNIAL_SECTION_EARLY_RIFLE));
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MILLENNIAL_SECTION_EARLY_RIFLE_T));
+		
+		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
+	};
+	
+	class TransportWeapons {
+		ADD_WEAP(ukcw_law80, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+	};
+	
+	class TransportBackpacks { };
+};

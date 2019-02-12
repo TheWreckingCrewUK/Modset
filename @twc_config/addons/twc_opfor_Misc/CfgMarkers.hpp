@@ -88,4 +88,14 @@ class CfgMarkers {
 		color[] = {1,1,1,1};
 		markerClass = "Flags";
 	};
+	class twc_iraq_flag: Flag {
+		name = "Ba'athist Iraq";
+		icon = "twc_opfor_Misc\data\iraq.paa";
+		texture = "twc_opfor_Misc\data\iraq.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
 };
