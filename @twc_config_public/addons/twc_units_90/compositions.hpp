@@ -248,12 +248,25 @@ class CfgGroups
 								rank = "PRIVATE";
 								position[] = {5,0,0};
 						};
-						class Unit3
+					};
+					class 1990_qm
+					{
+						name = "Management Team"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
 						{
 								side = 1;
-								vehicle = "1990_British_Tank_Crew_Desert";
+								vehicle = "1990_British_quartermaster"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "1990_British_quartermaster";
 								rank = "PRIVATE";
-								position[] = {7,0,0};
+								position[] = {3,0,0};
 						};
 					};
 				};
@@ -656,12 +669,25 @@ class CfgGroups
 								rank = "PRIVATE";
 								position[] = {5,0,0};
 						};
-						class Unit3
+					};
+					class 1990_qm_d
+					{
+						name = "Management Team"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
 						{
 								side = 1;
-								vehicle = "1990_British_Tank_Crew_Desert";
+								vehicle = "1990_British_quartermaster_Desert"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "1990_British_quartermaster_Desert";
 								rank = "PRIVATE";
-								position[] = {7,0,0};
+								position[] = {3,0,0};
 						};
 					};
 				};
@@ -928,12 +954,25 @@ class CfgGroups
 								rank = "PRIVATE";
 								position[] = {5,0,0};
 						};
-						class Unit3
+					};
+					class 2000_qm_Desert
+					{
+						name = "Management Team"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
 						{
 								side = 1;
-								vehicle = "2000_British_Vehicle_Crew";
+								vehicle = "2000_British_quartermaster_Desert"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "2000_British_quartermaster_Desert";
 								rank = "PRIVATE";
-								position[] = {7,0,0};
+								position[] = {3,0,0};
 						};
 					};
 					
@@ -1236,12 +1275,25 @@ class CfgGroups
 								rank = "PRIVATE";
 								position[] = {5,0,0};
 						};
-						class Unit3
+					};
+					class 2000_qm
+					{
+						name = "Management Team"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
 						{
 								side = 1;
-								vehicle = "2000_British_Vehicle_Crew";
+								vehicle = "2000_British_quartermaster"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "2000_British_quartermaster";
 								rank = "PRIVATE";
-								position[] = {7,0,0};
+								position[] = {3,0,0};
 						};
 					};
 					

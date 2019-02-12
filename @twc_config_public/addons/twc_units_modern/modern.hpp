@@ -397,7 +397,7 @@
 		backpack="TWC_Backpack_Modern_Autorifleman_Kitbag";
 		linkedItems[]=
 		{
-			"CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman",
+			"UK3CB_BAF_V_Osprey_MG_A",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -405,7 +405,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman",
+			"UK3CB_BAF_V_Osprey_MG_A",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -448,7 +448,7 @@
 		backpack="TWC_Backpack_Modern_2IC";
 		linkedItems[]=
 		{
-			"CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer",
+			"twc_mtp_spc_rifleman_alt",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -456,7 +456,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer",
+			"twc_mtp_spc_rifleman_alt",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",

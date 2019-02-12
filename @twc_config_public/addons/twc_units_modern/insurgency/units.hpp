@@ -988,32 +988,6 @@
 		"HandGrenade",
 		"SmokeShell"
 		};
-		Items[]=
-		{
-		"ACE_fieldDressing",
-		"ACRE_PRC148",
-		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine"
-		};
-		respawnItems[]=
-		{
-		"ACE_fieldDressing",
-		"ACRE_PRC148",
-		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine"
-		};
 	};
 	
 			class twc_ana_interpreter: twc_ana_base
@@ -1060,7 +1034,7 @@
 		"ACRE_PRC148",
 		"ACRE_PRC152",
 		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1074,7 +1048,7 @@
 		"ACRE_PRC148",
 		"ACRE_PRC152",
 		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1410,7 +1384,7 @@
 		"ACE_fieldDressing",
 		"ACRE_PRC148",
 		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
 		"ACE_RangeCard",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1424,7 +1398,7 @@
 		"ACE_fieldDressing",
 		"ACRE_PRC148",
 		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
 		"ACE_RangeCard",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1562,7 +1536,7 @@
 		"ACE_fieldDressing",
 		"ACRE_PRC148",
 		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1581,7 +1555,7 @@
 		"ACE_fieldDressing",
 		"ACRE_PRC148",
 		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1641,7 +1615,7 @@
 		"ACRE_PRC148",
 		"ACRE_PRC152",
 		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1661,7 +1635,7 @@
 		"ACRE_PRC148",
 		"ACRE_PRC152",
 		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1783,7 +1757,7 @@
 		"ACE_HuntIR_monitor",
 		"ACRE_PRC148",
 		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1803,7 +1777,7 @@
 		"ACE_HuntIR_monitor",
 		"ACRE_PRC148",
 		"ACE_EarPlugs",
-		"CUP_NVG_PVS14",
+		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",

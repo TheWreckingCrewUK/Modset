@@ -2249,17 +2249,17 @@
 		};
 	};
 	
-		class 1990_British_quartermaster_Desert: 1990_British_SectionCommander
+		class 1990_British_quartermaster: 1990_British_SectionCommander
 	{
 		displayName="Quartermaster";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="TWC_Smock_Desert";
 		attendant = 1;
-		backpack="TWC_Backpack_1990_quartermaster_desert";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
+		backpack="TWC_Backpack_1990_quartermaster";
 		linkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_interceptor_od",
 			"UK3CB_BAF_H_Beret_PWRR_PRR",
 			"ItemMap",
 			"ItemCompass",
@@ -2267,7 +2267,33 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+			"twc_interceptor_od",
+			"UK3CB_BAF_H_Beret_PWRR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+	};
+	
+		class 1990_British_quartermaster_Desert: 1990_British_SectionCommander
+	{
+		displayName="Quartermaster";
+		editorSubcategory = "Men_1990D";
+		vehicleClass="Men_1990D";
+		attendant = 1;
+		uniformClass="UK3CB_BAF_U_Smock_DDPM";
+		backpack="TWC_Backpack_1990_quartermaster_desert";
+		linkedItems[]=
+		{
+			"twc_rhs_6sh92_radio_ddpm",
+			"UK3CB_BAF_H_Beret_PWRR_PRR",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"twc_rhs_6sh92_radio_ddpm",
 			"UK3CB_BAF_H_Beret_PWRR_PRR",
 			"ItemMap",
 			"ItemCompass",

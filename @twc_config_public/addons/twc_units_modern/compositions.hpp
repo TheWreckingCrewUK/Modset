@@ -1037,12 +1037,25 @@ class CfgGroups
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
-                                        class Unit3
+                                };
+								class Modern_qm
+                                {
+                                        name = "Management Team"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_VehicleCrew";
+                                                vehicle = "Modern_British_Quartermaster"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "Modern_British_Quartermaster";
                                                 rank = "PRIVATE";
-                                                position[] = {7,0,0};
+                                                position[] = {3,0,0};
                                         };
                                 };
 								class Modern_artcrew
