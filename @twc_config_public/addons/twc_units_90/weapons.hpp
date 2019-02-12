@@ -21,21 +21,6 @@ class cfgWeapons
 		//model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USMC\CUP_NAVY_LHDVest.p3d";
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_dpm_co.paa","\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USArmy\data\US_PASGT_gear_CO.paa"};
 	};
-	class rhs_6b5_ttsko;
-	class twc_interceptor_ddpm_2: rhs_6b5_ttsko
-	{
-		displayname = "VestGuard (DDPM2_bp)";
-		hiddenSelections[] = {"Camo"};
-		//model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USMC\CUP_NAVY_LHDVest.p3d";
-		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa"};
-	};
-	class twc_interceptor_ddpm_2: rhs_6b5_ttsko
-	{
-		displayname = "VestGuard (DDPM2_unif)";
-		hiddenSelections[] = {"Camo"};
-		//model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USMC\CUP_NAVY_LHDVest.p3d";
-		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\uniform\data\uniform_ddpm_co.paa"};
-	};
 	
 	class CUP_V_B_PASGT_no_bags_OD;
 	class twc_interceptor_od: CUP_V_B_PASGT_no_bags_OD

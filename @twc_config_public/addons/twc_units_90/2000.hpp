@@ -29,7 +29,6 @@
 			"ACE_EarPlugs",
 			"ACE_fieldDressing",
 			"ACRE_PRC343",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -56,7 +55,6 @@
 			"ACE_EarPlugs",
 			"ACE_fieldDressing",
 			"ACRE_PRC343",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -157,7 +155,6 @@
 			"ACE_EarPlugs",
 			"ACE_fieldDressing",
 			"ACRE_PRC343",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -185,7 +182,6 @@
 			"ACE_EarPlugs",
 			"ACE_fieldDressing",
 			"ACRE_PRC343",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -1044,7 +1040,6 @@
 			"ACE_fieldDressing",
 			"ACRE_PRC148",	
 			"ACRE_PRC343",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -1119,7 +1114,6 @@
 			"ACE_EarPlugs",
 			"ACE_fieldDressing",
 			"ACRE_PRC343",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -1146,7 +1140,6 @@
 			"ACE_EarPlugs",
 			"ACE_fieldDressing",
 			"ACRE_PRC343",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -1232,9 +1225,8 @@
 		{
 			"ACE_EarPlugs",
 			"ACE_Rangecard",
-			"ACRE_PRC343",	
+			"ACRE_PRC343",
 			"ACE_Tripod",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -1256,9 +1248,8 @@
 		{
 			"ACE_EarPlugs",
 			"ACE_Rangecard",
-			"ACRE_PRC343",	
+			"ACRE_PRC343",
 			"ACE_Tripod",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -1330,9 +1321,8 @@
 		{
 			"ACE_EarPlugs",
 			"ACE_Rangecard",
-			"ACRE_PRC343",	
+			"ACRE_PRC343",
 			"ACRE_PRC148",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -1358,9 +1348,8 @@
 		{
 			"ACE_EarPlugs",
 			"ACE_Rangecard",
-			"ACRE_PRC343",	
+			"ACRE_PRC343",
 			"ACRE_PRC148",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -2134,7 +2123,6 @@
 			"ACE_EarPlugs",
 			"ACE_fieldDressing",
 			"ACRE_PRC343",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -2161,7 +2149,6 @@
 			"ACE_EarPlugs",
 			"ACE_fieldDressing",
 			"ACRE_PRC343",	
-			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
