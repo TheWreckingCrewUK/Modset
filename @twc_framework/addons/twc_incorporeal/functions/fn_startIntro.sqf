@@ -18,7 +18,7 @@ _panTimePerAsset = (45 / (_totalAssetCount)) max 5;
 //disableUserInput true;
 
 waitUntil {!(isNil "BIS_fnc_init")};
-_cam = "camera" camCreate (player modelToWorld [0, 3, 3]);
+_cam = "camera" camCreate (player modelToWorld [0, 2, 2]);
 _cam cameraEffect ["internal", "back"];
 
 [_song] spawn { playMusic (_this select 0); }; // play calculated tune
@@ -38,7 +38,7 @@ _titleText = format [
 sleep 10;
 
 titleCut ["", "BLACK IN", 15];
-sleep 4;
+sleep 9;
 
 _alternatePan = false;
 
