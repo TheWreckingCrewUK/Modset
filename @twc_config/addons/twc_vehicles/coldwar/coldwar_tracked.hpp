@@ -61,7 +61,7 @@ class TWC_Vehicle_ColdWar_FV432_Woodland: ukcw_fv432 {
 		};
 	};
 
-	REGULAR_77("driver", "gunner"}, {"intercom_1"})
+	REGULAR_77({"driver", "gunner"}, {"intercom_1"})
 };
 
 /* class TWC_Vehicle_ColdWar_FV432_Desert: TWC_Vehicle_ColdWar_FV432_Woodland {
