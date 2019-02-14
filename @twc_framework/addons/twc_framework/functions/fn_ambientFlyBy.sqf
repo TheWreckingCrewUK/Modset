@@ -48,7 +48,7 @@ _vehicle disableAi "AUTOTARGET";
 _vehicle setCaptive true;
 _vehicleGroup allowFleeing 0;
 
-_maxSpeed = [(configFile >> "CfgVehicles" >> _class, "maxSpeed", 100] call BIS_fnc_returnConfigEntry;
+_maxSpeed = [(configFile >> "CfgVehicles" >> _class), "maxSpeed", 100] call BIS_fnc_returnConfigEntry;
 _vehicle setvelocity [0, 0, _maxSpeed]; // start them flying at maxspeed
 
 //Fly height
