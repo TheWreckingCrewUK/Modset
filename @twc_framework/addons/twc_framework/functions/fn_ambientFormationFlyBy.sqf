@@ -33,37 +33,37 @@ _spacing	= _this param [8, 50, [0]];
 
 if !(isServer) exitWith { };
 
-_anchor = [_start, _end, _height, _speed, _class, _side] call TWC_fnc_ambientFlyBy;
-_dirVector = vectorDirVisual _anchor;
+_direction = [_start, _end] call BIS_fnc_dirTo;
 
-for ("_i" from 1 to _numberOf) do {
+_anchor = [_start, _end, _height, _speed, _class, _side] call TWC_fnc_ambientFlyBy;
+
+_helipad = [_end, _direction, "HeliHEmpty", _side] call BIS_fnc_spawnVehicle;
+_endAnchor = _helipad select 0;
+
+for "_i" from 2 to _numberOf do {
 	_offsetStart = _start;
 	_offsetEnd = _end;
 
 	switch (_formation) do {
 		case "WEDGE": {
 			if (_i % 2 == 0) then {
-				_offsetStart = _anchor modelToWorld [(_i * _spacing), ((_i * _spacing) / 2), 0];
-				_distanceVector = _offsetStart vectorDistance _end;
-				_offsetEnd = [_distanceVector * (cos _dirVector), _distanceVector * (sin _dirVector), _height];
-			} else {
-				_offsetStart = _anchor modelToWorld [(_i * _spacing), (0 - ((_i * _spacing) / 2)), 0];
-				_distanceVector = _offsetStart vectorDistance _end;
-				_offsetEnd = [_distanceVector * (cos _dirVector), _distanceVector * (sin _dirVector), _height];
+					_offsetStart = _anchor modelToWorld [(_i * _spacing), (0 - (_i * _spacing)), 0];
+					_offsetEnd = _endAnchor modelToWorld [(_i * _spacing), (0 - (_i * _spacing)), 0];
+				} else {
+					_offsetStart = _anchor modelToWorld [(0 - (_i * _spacing)), (0 -(_i * _spacing)), 0];
+					_offsetEnd =  _endAnchor modelToWorld [(0 - (_i * _spacing)), (0 -(_i * _spacing)), 0];
+				};
 			};
-		};
-		default { // line 
+		default { // line
 			if (_i % 2 == 0) then {
 				_offsetStart = _anchor modelToWorld [0, ((_i * _spacing) / 2), 0];
-				_distanceVector = _offsetStart vectorDistance _end;
-				_offsetEnd = [_distanceVector * (cos _dirVector), _distanceVector * (sin _dirVector), _height];
+				_offsetEnd = _endAnchor modelToWorld [0, ((_i * _spacing) / 2), 0];
 			} else {
 				_offsetStart = _anchor modelToWorld [0, (0 - ((_i * _spacing) / 2)), 0];
-				_distanceVector = _offsetStart vectorDistance _end;
-				_offsetEnd = [_distanceVector * (cos _dirVector), _distanceVector * (sin _dirVector), _height];
+				_offsetEnd = _endAnchor modelToWorld [0, (0 - ((_i * _spacing) / 2)), 0];
 			};
 		};
 	};
-	
+
 	[_offsetStart, _offsetEnd, _height, _speed, _class, _side] call TWC_fnc_ambientFlyBy;
 };
