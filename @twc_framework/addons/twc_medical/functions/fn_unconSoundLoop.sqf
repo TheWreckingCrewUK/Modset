@@ -1,7 +1,7 @@
 params ["_unit", ["_lastPlayed", ""]];
 
 _unCon = (_unit getVariable ["ACE_isUnconscious", false]);
-if (!_unCon) exitWith {};
+if (!_unCon || !alive _unit) exitWith {};
 
 _sounds = [
 	"A3\Sounds_F\characters\human-sfx\person0\p0_breath_damage_low_01.wss",
