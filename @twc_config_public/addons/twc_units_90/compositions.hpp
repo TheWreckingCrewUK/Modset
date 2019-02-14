@@ -230,21 +230,21 @@ class CfgGroups
 						class Unit0
 						{
 								side = 1;
-								vehicle = "1990_British_Tank_Commander_Desert"; //Class name of desired solider
+								vehicle = "1990_British_Vehicle_Commander"; //Class name of desired solider
 								rank = "CORPORAL"; // Rank
 								position[] = {0,3,0}; //Position in the formation
 						};
 						class Unit1
 						{
 								side = 1;
-								vehicle = "1990_British_Tank_Crew_Desert";
+								vehicle = "1990_British_Vehicle_Crew";
 								rank = "PRIVATE";
 								position[] = {3,0,0};
 						};
 						class Unit2
 						{
 								side = 1;
-								vehicle = "1990_British_Tank_Crew_Desert";
+								vehicle = "1990_British_Vehicle_Crew";
 								rank = "PRIVATE";
 								position[] = {5,0,0};
 						};

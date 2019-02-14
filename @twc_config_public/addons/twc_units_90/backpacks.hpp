@@ -151,6 +151,31 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 	class UK3CB_BAF_B_Bergen_OLI_Rifleman_A;
 	class CUP_B_GER_Medic_Desert;
 	
+
+	class TWC_Backpack_1990_armourcrew_webbing: twc_oli_belt_2
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+	};
+	class TWC_Backpack_1990_armourcrew_webbing_d: twc_tan_belt_2
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+	};
 	class TWC_Backpack_1990_Sectionlead: UK3CB_BAF_B_Bergen_DPMW_SL_A
 	{
 		scope = 1;
