@@ -18,8 +18,8 @@ if (isPlayer _unit) exitWith {
 // AI from this point on
 if (_isUncon) then {
 	_unconTimer = ceil(random 5) + 1;
-	_unit disableAI "MOVE";
+	_unit disableAI "ANIM";
 	[twc_medical_fnc_handleAIUncon, [_unit], _unconTimer] call CBA_fnc_waitAndExecute;
 } else {
-	_unit enableAI "MOVE";
+	_unit enableAI "ANIM";
 };
