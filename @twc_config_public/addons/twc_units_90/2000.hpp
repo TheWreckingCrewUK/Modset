@@ -1281,14 +1281,14 @@
 		weapons[]= {
 			"Throw",
 			"Put",
-			"ACE_Vector",
+			"ACE_Yardage450",
 			"twc_l96_w"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"ACE_Vector",
+			"ACE_Yardage450",
 			"twc_l96_w"
 		};
 
