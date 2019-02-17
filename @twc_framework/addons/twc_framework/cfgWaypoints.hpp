@@ -9,5 +9,12 @@ class cfgWaypoints {
 			file = "twc_framework\waypoints\fn_wpMove20MPH.sqf";
 			icon = "\a3\3den\Data\CfgWaypoints\getInNearest_ca.paa";
 		};
+		
+		class wpMoveAndDelete {
+			displayName = "Move then Delete";
+			displayNameDebug = "wpMoveAndDelete";
+			file = "twc_framework\waypoints\fn_wpMoveAndDelete.sqf";
+			icon = "\a3\3den\Data\CfgWaypoints\getInNearest_ca.paa";
+		};
 	};
 };
