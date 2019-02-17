@@ -98,12 +98,12 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar_
 		"sp_l1a1_law66",
 		"Throw",
 		"Put"
-	};	
+	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
 {
-	displayName="Section Commander";
-	backpack="TWC_Backpack_ColdWar_Regular_SectionCommander";
+	displayName = "Section Commander";
+	backpack = "TWC_Backpack_ColdWar_Regular_SectionCommander";
 	TWC_isCommandRole = 1;
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -145,13 +145,11 @@ class TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander: TWC_Infantry_ColdW
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_ColdWar_Regular_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander
+class TWC_Infantry_ColdWar_Regular_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
 {
-	displayName="2iC";
-	backpack="TWC_Backpack_ColdWar_Regular_2iC";
-	class EventHandlers: EventHandlers {
-		init = "";
-	};
+	displayName = "2iC";
+	TWC_isCommandRole = 1;
+	backpack = "TWC_Backpack_ColdWar_Regular_2iC";
 	weapons[]=
 	{
 		"UK3CB_BAF_L1A1_Wood",
@@ -163,6 +161,18 @@ class TWC_Infantry_ColdWar_Regular_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Wo
 		"UK3CB_BAF_L1A1_Wood",
 		"Throw",
 		"Put"
+	};
+	magazines[]=
+	{
+		MAG_5("UK3CB_BAF_762_20Rnd"),
+		MAG_2("UK3CB_BAF_762_20Rnd_T"),
+		MAG_2("SmokeShell")
+	};
+	respawnmagazines[]=
+	{
+		MAG_5("UK3CB_BAF_762_20Rnd"),
+		MAG_2("UK3CB_BAF_762_20Rnd_T"),
+		MAG_2("SmokeShell")
 	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_AT: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman

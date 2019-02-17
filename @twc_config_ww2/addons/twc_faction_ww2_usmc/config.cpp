@@ -73,7 +73,7 @@ class CfgVehicles
 	class I_Soldier_F;
 
 	class fow_w_m1919_tripod_usmc;
-	class twc_m1919a4_static: fow_w_m1919_tripod_usmc
+	/*class twc_m1919a4_static: fow_w_m1919_tripod_usmc
 	{
 		scope = 1;
 		ace_dragging_canCarry = 1;
@@ -109,8 +109,8 @@ class CfgVehicles
 					icon = "";
 				};
 			};
-		};		
-	};
+		};
+	};*/
 	
 	#include "usmc.hpp"
 	#include "backpacks.hpp"

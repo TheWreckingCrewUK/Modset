@@ -693,12 +693,20 @@ class TWC_Infantry_Modern_Regular_Woodland_FAC: TWC_Infantry_Modern_Regular_Wood
 	magazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
-		MAG_2("SmokeShell")
+		MAG_2("SmokeShell"),
+		MAG_3(SmokeShellBlue),
+		MAG_3(SmokeShellRed),
+		MAG_3(SmokeShellGreen),
+		"Laserbatteries"
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
-		MAG_2("SmokeShell")
+		MAG_2("SmokeShell"),
+		MAG_3(SmokeShellBlue),
+		MAG_3(SmokeShellRed),
+		MAG_3(SmokeShellGreen),
+		"Laserbatteries"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Modern_Regular_Woodland_Rifleman

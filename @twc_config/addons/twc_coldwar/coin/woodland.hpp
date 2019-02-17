@@ -115,9 +115,9 @@ class TWC_Infantry_ColdWar_COIN_Woodland_SectionCommander: TWC_Infantry_ColdWar_
 class TWC_Infantry_ColdWar_COIN_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Woodland_2iC
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	uniformClass="UK3CB_BAF_U_JumperUniform_Plain";
+	uniformClass = "UK3CB_BAF_U_JumperUniform_Plain";
 	backpack = "TWC_Backpack_ColdWar_COIN_2iC";
-	linkedItems[]=
+	linkedItems[] =
 	{
 		"CUP_V_CDF_6B3_1_Green",
 		"UK3CB_BAF_H_Beret_Rifles",
@@ -125,7 +125,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Woodl
 		"itemMap",
 		"ItemWatch"
 	};
-	respawnLinkedItems[]=
+	respawnLinkedItems[] =
 	{
 		"CUP_V_CDF_6B3_1_Green",
 		"UK3CB_BAF_H_Beret_Rifles",
