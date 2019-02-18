@@ -93,7 +93,9 @@ class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regula
 		"ACE_Flashlight_MX991",
 		"UGL_FlareWhite_F",
 		"UGL_FlareWhite_F",
-		"UGL_FlareWhite_F"
+		"UGL_FlareWhite_F",
+		"Chemlight_green",
+		"Chemlight_green"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Regular_Woodland_Rifleman
@@ -234,7 +236,9 @@ class TWC_Infantry_Modern_Regular_Woodland_Marksman: TWC_Infantry_Modern_Regular
 	
 	nightItems[] = {
 		"ACE_Flashlight_MX991",
-		"UK3CB_BAF_MaxiKite"
+		"UK3CB_BAF_MaxiKite",
+		"Chemlight_green",
+		"Chemlight_green"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern_Regular_Woodland_Rifleman
@@ -302,7 +306,9 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 	nightItems[] = {
 		"B_IR_Grenade",
 		"ACE_HandFlare_White",
-		"ACE_HandFlare_White"
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green"
 	};
 };
 
@@ -380,7 +386,9 @@ class TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander: TWC_Infantry_Moder
 	nightItems[] = {
 		"B_IR_Grenade",
 		"ACE_HandFlare_White",
-		"ACE_HandFlare_White"
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
@@ -737,7 +745,9 @@ class TWC_Infantry_Modern_Regular_Woodland_FAC: TWC_Infantry_Modern_Regular_Wood
 	nightItems[] = {
 		"B_IR_Grenade",
 		"ACE_HandFlare_White",
-		"ACE_HandFlare_White"
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Modern_Regular_Woodland_Rifleman
