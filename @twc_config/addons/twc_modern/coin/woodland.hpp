@@ -1037,7 +1037,7 @@ class TWC_Infantry_Modern_COIN_Woodland_FO: TWC_Infantry_Modern_Regular_Woodland
 class TWC_Infantry_Modern_COIN_Woodland_FAC: TWC_Infantry_Modern_Regular_Woodland_FAC
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_Modern_COIN_Woodland_FAC";	
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_FAC";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_D",
@@ -1088,13 +1088,21 @@ class TWC_Infantry_Modern_COIN_Woodland_FAC: TWC_Infantry_Modern_Regular_Woodlan
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
 		MAG_2("UK3CB_BAF_9_17Rnd"),
-		MAG_2("SmokeShell")
+		MAG_2("SmokeShell"),
+		MAG_3(SmokeShellBlue),
+		MAG_3(SmokeShellRed),
+		MAG_3(SmokeShellGreen),
+		"Laserbatteries"
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
 		MAG_2("UK3CB_BAF_9_17Rnd"),
-		MAG_2("SmokeShell")
+		MAG_2("SmokeShell"),
+		MAG_3(SmokeShellBlue),
+		MAG_3(SmokeShellRed),
+		MAG_3(SmokeShellGreen),
+		"Laserbatteries"
 	};
 };
 
