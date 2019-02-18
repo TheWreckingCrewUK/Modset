@@ -87,6 +87,13 @@ class TWC_Infantry_Modern_COIN_Woodland_Grenadier: TWC_Infantry_Modern_Regular_W
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};
+	
+	nightItems[] = {
+		"ACE_Flashlight_MX991",
+		"UGL_FlareWhite_F",
+		"UGL_FlareWhite_F",
+		"UGL_FlareWhite_F"
+	};
 };
 class TWC_Infantry_Modern_COIN_Woodland_Autorifleman: TWC_Infantry_Modern_Regular_Woodland_Autorifleman
 {
