@@ -95,6 +95,16 @@ class CfgVehicles
 		};
 		magazines[] = {};
 		respawnmagazines[] = {};
+		
+		nightItems[] = {
+			"ACE_Flashlight_MX991",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+
+		nightLinkedItems[] = {
+			"twc_nightvision_gen3"
+		};
 	};
 	class TWC_Infantry_Millennial_Plane_Pilot: TWC_Infantry_Millennial_Base
 	{

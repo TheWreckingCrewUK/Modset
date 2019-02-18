@@ -248,7 +248,6 @@ twc_addmortarwalkevent = {
 	waitUntil { missionNameSpace getVariable ["twcModuleFinished", false] };
 
 	[(missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_era;
-	[(missionNameSpace getVariable ["nightGear", false]), (missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_nightGear;
 	[(missionNameSpace getVariable ["rollSleeves", false])] spawn twc_fnc_rollShirt;
 	[(missionNameSpace getVariable ["run", 0])] spawn twc_fnc_run;
 	[(missionNameSpace getVariable ["safeZone", 0])] spawn twc_fnc_safeZone;
@@ -256,8 +255,6 @@ twc_addmortarwalkevent = {
 
 	_hasWorld = isClass (configFile >> "CfgWorlds" >> worldName);
 	if !(_hasWorld) then {
-		player globalChat "I am missing the required map for this mission.";
-		
 		for [{_i=0}, {_i<5}, {_i=_i+1}] do {
 			systemChat "You are missing the map required for this mission!";
 		};

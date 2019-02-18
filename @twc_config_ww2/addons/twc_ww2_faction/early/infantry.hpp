@@ -62,6 +62,11 @@ class WW2_British_Platoon_Commander_Early: WW2_British_Base {
 		"SmokeShell",
 		"SmokeShell"
 	};
+
+	nightItems[] = {
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White"
+	};
 };
 
 class WW2_British_Medic_Early: WW2_British_Base {
@@ -188,6 +193,11 @@ class WW2_British_Section_Commander_Early: WW2_British_Base {
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
+	};
+	
+	nightItems[] = {
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White"
 	};
 };
 

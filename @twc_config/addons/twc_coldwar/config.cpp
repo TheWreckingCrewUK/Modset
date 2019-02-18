@@ -111,6 +111,16 @@ class CfgVehicles
 			"SmokeShell",
 			"SmokeShell"
 		};
+		
+		nightItems[] = {
+			"Chemlight_green",
+			"Chemlight_green",
+			"ACE_Flashlight_MX991"
+		};
+		
+		nightLinkedItems[] = {
+			"twc_nightvision_gen2"
+		};
 	};
 	class TWC_Infantry_ColdWar_Tank_Commander: B_Soldier_base_F
 	{
@@ -175,6 +185,12 @@ class CfgVehicles
 			MAG_3("SP_30Rnd_9x19_L2A3_Sterling"),
 			MAG_2("SmokeShell")
 		};
+		
+		nightItems[] = {
+			"Chemlight_green",
+			"Chemlight_green",
+			"ACE_Flashlight_MX991"
+		};
 	};
 	class TWC_Infantry_ColdWar_Tank_Crew: TWC_Infantry_ColdWar_Tank_Commander
 	{
@@ -184,6 +200,10 @@ class CfgVehicles
 			init = "";
 		};
 		
+		nightItems[] = {
+			"Chemlight_green",
+			"Chemlight_green"
+		};
 	};
 	#include "regular\woodland.hpp"
 	#include "regular\woodland_dismounted.hpp"

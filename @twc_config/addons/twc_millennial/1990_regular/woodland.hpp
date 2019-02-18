@@ -118,6 +118,14 @@ class TWC_Infantry_1990_Regular_Woodland_SectionCommander: TWC_Infantry_1990_Reg
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};
+	
+	nightItems[] = {
+		"B_IR_Grenade",
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green"
+	};
 };
 class TWC_Infantry_1990_Regular_Woodland_2iC: TWC_Infantry_1990_Regular_Woodland_SectionCommander
 {
@@ -167,6 +175,14 @@ class TWC_Infantry_1990_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 		MAG_5("UK3CB_BAF_556_30Rnd"),
 		MAG_2("UK3CB_BAF_556_30Rnd_T"),
 		MAG_2("SmokeShell")
+	};
+	
+	nightItems[] = {
+		"B_IR_Grenade",
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_1990_Regular_Woodland_Platoon_Commander
@@ -610,6 +626,14 @@ class TWC_Infantry_1990_Regular_Woodland_FAC: TWC_Infantry_1990_Regular_Woodland
 		MAG_5("UK3CB_BAF_556_30Rnd"),
 		MAG_2("SmokeShell"),
 		"Laserbatteries"
+	};
+	
+	nightItems[] = {
+		"B_IR_Grenade",
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millennial_Base

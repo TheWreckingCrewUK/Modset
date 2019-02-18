@@ -58,7 +58,6 @@ class CfgFunctions {
 			class disconnectGear{};
 			class missionModuleInit{};
 			class moduleDebug{};
-			class nightGear{};
 			class run{};
 			class safeZone{};
 			class zeus{};

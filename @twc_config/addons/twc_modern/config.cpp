@@ -44,8 +44,7 @@ class CfgVehicles
 			vehicleClass = a;
 
 	//GENERIC
-	class TWC_Infantry_Modern_Base: B_Soldier_base_F
-	{
+	class TWC_Infantry_Modern_Base: B_Soldier_base_F {
 		scope = 1;
 		displayName = "Base";
 		faction = "TWC_Modern";
@@ -54,46 +53,59 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
 		backpack = "";
+
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
-		linkedItems[] =
-		{
+
+		linkedItems[] = {
 			"UK3CB_BAF_V_Osprey_Rifleman_F",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
 		};
-		respawnLinkedItems[] =
-		{
+
+		respawnLinkedItems[] = {
 			"UK3CB_BAF_V_Osprey_Rifleman_F",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
 		};
-		Items[] =
-		{
+
+		items[] = {
 			MEDICAL_LOADOUT
 		};
-		respawnItems[] =
-		{
+
+		respawnItems[] = {
 			MEDICAL_LOADOUT
 		};
-		weapons[] =
-		{
+
+		weapons[] = {
 			"Throw",
 			"Put"
 		};
-		respawnweapons[] =
-		{
+
+		respawnweapons[] = {
 			"Throw",
 			"Put"
 		};
+
 		magazines[] = {};
 		respawnmagazines[] = {};
+
+		nightItems[] = {
+			"ACE_Flashlight_MX991",
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+
+		nightLinkedItems[] = {
+			"twc_nightvision_gen3"
+		};
 	};
+
 	class TWC_Infantry_Modern_Plane_Pilot: TWC_Infantry_Modern_Base
 	{
 		scope = 2;

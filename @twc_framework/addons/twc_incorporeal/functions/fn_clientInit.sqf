@@ -25,7 +25,7 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 // Wait until mission module has been initalized.
 ["twc_framework_initComplete", {
 	_operationEra = missionNameSpace getVariable ["era", "modern"];
-	_isNightOp = missionNameSpace getVariable ["nightGear", false];
+	_isNightOp = missionNameSpace getVariable ["TWC_NightGear", false];
 	_isDisabled = missionNameSpace getVariable ["TWC_Intro_isDisabled", false];
 	_missionStarted = missionNameSpace getVariable ["TWC_Intro_Started", false];
 	_isDebug = missionNameSpace getVariable ["twc_debugEnabled", false];

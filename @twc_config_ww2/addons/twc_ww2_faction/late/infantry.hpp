@@ -58,6 +58,11 @@ class WW2_British_Platoon_Commander: WW2_British_Base {
 		"SmokeShell",
 		"SmokeShell"
 	};
+	
+	nightItems[] = {
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White"
+	};
 };
 
 class WW2_British_Platoon_Sergeant: WW2_British_Platoon_Commander {
@@ -120,6 +125,11 @@ class WW2_British_Platoon_Sergeant: WW2_British_Platoon_Commander {
 		"10Rnd_303_Magazine",
 		"fow_e_no36mk1",
 		"fow_e_no36mk1"
+	};
+	
+	nightItems[] = {
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White"
 	};
 };
 
@@ -293,6 +303,11 @@ class WW2_British_Section_Commander: WW2_British_Base {
 		"SmokeShell",
 		"SmokeShell",
 		"SmokeShell"
+	};
+	
+	nightItems[] = {
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White"
 	};
 };
 
