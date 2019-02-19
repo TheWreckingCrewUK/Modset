@@ -29,6 +29,8 @@ class CfgFunctions {
 			class reverseArray {};
 			class floatToString {};
 			class positionToString {};
+			class isNightTime {};
+			class objectAmbientLight {};
 			
 			/** DEBUG TOOLS **/
 			class drawBoundingBox {};
