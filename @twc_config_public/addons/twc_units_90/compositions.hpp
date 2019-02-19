@@ -221,6 +221,13 @@ class CfgGroups
 							rank = "PRIVATE";
 							position[] = {17,0,0};
 						};
+						class Unit9
+						{
+							side = 1;
+							vehicle = "twc_men_1990_us_w_medic";
+							rank = "PRIVATE";
+							position[] = {19,0,0};
+						};
 					};
 					class 1990_Vehicle_Crew
 					{
@@ -478,6 +485,13 @@ class CfgGroups
 							vehicle = "twc_men_1990_us_d_autorifleman";
 							rank = "PRIVATE";
 							position[] = {17,0,0};
+						};
+						class Unit9
+						{
+							side = 1;
+							vehicle = "twc_men_1990_us_d_medic";
+							rank = "PRIVATE";
+							position[] = {19,0,0};
 						};
 					};
 								class Modern_ana_section

@@ -2,9 +2,10 @@
 
 class cfgammo{
 	class rocketbase;
-	class CUP_R_OG7_AT: rocketbase
+	class rhs_ammo_maaws_HE;
+	class CUP_R_OG7_AT: rhs_ammo_maaws_HE
 	{
-
+/*
 			scope = 2;
 			maxSpeed=152;
 			timeToLive=25;
@@ -16,7 +17,7 @@ class cfgammo{
 			coefGravity =1.5;
 			thrust=1;
 			thrusttime=10;
-
+*/
 	};
 	class CUP_R_PG7VL_AT: rocketbase
 	{
@@ -47,7 +48,13 @@ class cfgmagazines{
 		ammo = "CUP_B_23mm_APHE_Tracer_Red";
 		tracersEvery = 1;
 	};
-
+	
+	class rhs_rpg7_PG7VL_mag;
+	class rhs_rpg7_OG7V_mag: rhs_rpg7_PG7VL_mag
+	{
+		ammo = "rhs_ammo_maaws_HE";
+	};
+	
 };
 
 

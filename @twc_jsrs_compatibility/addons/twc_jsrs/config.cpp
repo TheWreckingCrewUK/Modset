@@ -626,7 +626,7 @@ class cfgsoundsets
 			"jsrs_awm_interior_shot_soundshader",
 			"jsrs_awm_interior_shot_2_soundshader",
 			"twc_jsrs_GPMG_distance_0m_to_5m_shot_soundshader",
-			"jsrs_M2_distance_5m_to_100m_shot_soundshader",
+			"jsrs_m107_distance_5m_to_100m_shot_soundshader",
 			"jsrs_M2_distance_100m_to_400m_shot_soundshader",
 			"jsrs_M2_distance_400m_to_800m_shot_soundshader",
 			"jsrs_M2_distance_800m_to_1500m_shot_soundshader",
@@ -1905,6 +1905,42 @@ class cfgweapons
 			class standardsound: basesoundmodetype
 			{
 					soundSetShot[] = {"jsrs_m16a4_closure_soundshader","twc_L129_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+				};
+			};
+	
+		class standardsound
+		{
+			soundSetShot[] = {"jsrs_mk200_closure_soundshader","twc_l7_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+				
+		};
+	};
+	
+	class UK3CB_BAF_Landrover_L7A2_1: UK3CB_BAF_L112A1_veh
+	{
+		class manual:manual {
+			class basesoundmodetype;
+	
+			class standardsound: basesoundmodetype
+			{
+					soundSetShot[] = {"jsrs_mk200_closure_soundshader","twc_l7_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+				};
+			};
+	
+		class standardsound
+		{
+			soundSetShot[] = {"jsrs_mk200_closure_soundshader","twc_l7_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+				
+		};
+	};
+	
+	class UK3CB_BAF_Landrover_L7A2_2: UK3CB_BAF_L112A1_veh
+	{
+		class manual:manual {
+			class basesoundmodetype;
+	
+			class standardsound: basesoundmodetype
+			{
+					soundSetShot[] = {"jsrs_mk200_closure_soundshader","twc_l7_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 				};
 			};
 	

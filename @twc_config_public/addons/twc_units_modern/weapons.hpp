@@ -884,9 +884,9 @@ class cfgWeapons
 	
 	
 		ACE_ScopeAdjust_Horizontal[] = {-4,4};
-		ACE_ScopeAdjust_HorizontalIncrement = 0.1;
+		ACE_ScopeAdjust_HorizontalIncrement = 0.5;
 		ACE_ScopeAdjust_Vertical[] = {-10,10};
-		ACE_ScopeAdjust_VerticalIncrement = 0.1;
+		ACE_ScopeAdjust_VerticalIncrement = 0.5;
 		ACE_ScopeHeightAboveRail = 3.9386;
 		
 	};
@@ -897,9 +897,9 @@ class cfgWeapons
 	
 	
 		ACE_ScopeAdjust_Horizontal[] = {-4,4};
-		ACE_ScopeAdjust_HorizontalIncrement = 0.5;
+		ACE_ScopeAdjust_HorizontalIncrement = 1.5;
 		ACE_ScopeAdjust_Vertical[] = {-10,10};
-		ACE_ScopeAdjust_VerticalIncrement = 0.5;
+		ACE_ScopeAdjust_VerticalIncrement = 1.5;
 		ACE_ScopeHeightAboveRail = 4.21386;
 		
 	};

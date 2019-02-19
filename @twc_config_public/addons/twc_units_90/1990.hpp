@@ -1066,7 +1066,7 @@
 		displayName="Section Leader @British Army";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		backpack="TWC_Backpack_1990_Sectionlead_Desert";
 		class EventHandlers: EventHandlers
 		{
@@ -1146,7 +1146,7 @@
 		displayName="Rifleman";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		backpack="twc_tan_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
@@ -1175,7 +1175,7 @@
 		displayName="Rifleman AT";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		backpack="twc_tan_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
@@ -1218,7 +1218,7 @@
 		displayName="Gunner";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		backpack="TWC_Backpack_1990_Gunner_Desert";
 		linkedItems[]=
 		{
@@ -1246,7 +1246,7 @@
 		displayName="2IC";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		backpack="TWC_Backpack_1990_2IC_Desert";
 		linkedItems[]=
 		{
@@ -1329,12 +1329,12 @@
 		displayName="Medic";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		attendant = 1;
 		backpack="TWC_Backpack_1990_Medic_Desert";
 		linkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm2",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1342,7 +1342,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_V_HarnessO_dpmt",
+			"twc_interceptor_ddpm2",
 			"UK3CB_BAF_H_Mk6_DDPM_A",
 			"ItemMap",
 			"ItemCompass",
@@ -2846,4 +2846,14 @@
 			"ItemCompass",
 			"ItemWatch"
 		};	
+	};
+	class twc_men_1990_us_w_medic: twc_men_1990_us_2_rifleman
+	{
+		displayName="Medic";
+		backpack="twc_men_1990_us_w_backpack_medic";
+	};
+	class twc_men_1990_us_d_medic: twc_men_1990_us_d_rifleman
+	{
+		displayName="Medic";
+		backpack="twc_men_1990_us_w_backpack_medic";
 	};
