@@ -1175,7 +1175,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 	class Modern_British_FAC: Modern_British_Base
 	{
 		scope=2;
-		displayName="Section FAC(Modern)";
+		displayName="Forward Air Controller";
 		backpack="TWC_Backpack_Modern_FAC";
 		linkedItems[]=
 		{
@@ -1678,7 +1678,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 
 	class Modern_British_FSTForwardObserver: Modern_British_Base {
 		scope=2;
-		displayName="FST Forward Observer";
+		displayName="Forward Observer";
 		icon="iconManExplosive";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 		backpack="TWC_Backpack_Modern_FSTForwardObserver";

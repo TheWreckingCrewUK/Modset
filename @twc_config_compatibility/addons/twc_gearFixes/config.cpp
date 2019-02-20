@@ -253,13 +253,26 @@ class CfgWeapons {
 		};
 	};
 	
-		
-	class UK3CB_BAF_L115A3;
+	class GM6_base_F;
+	
+	class rhs_weap_M107_Base_F: GM6_base_F
+	{
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_rifle_762_prone";
+		magazines[] = {"rhsusf_mag_10Rnd_STD_50BMG_M33", "rhsusf_mag_10Rnd_STD_50BMG_mk211"};
+	};
+	class UK3CB_BAF_L115_Base;
+	
+	class UK3CB_BAF_L115A3: UK3CB_BAF_L115_Base
+	{
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_mg_prone";
+		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
+	};
 	class twc_l115a3_wd: UK3CB_BAF_L115A3
 	{
 		scope = 1;
 		author = "jayman";
-		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -279,7 +292,6 @@ class CfgWeapons {
 	{
 		scope = 1;
 		author = "jayman";
-		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -1762,4 +1774,39 @@ class CfgVehicles {
 	#include "acre_planes.hpp"
 	#include "acre_tanks.hpp"
 };
+
+class cfgMagazines
+{
+	class CA_Magazine;
+	
+	class 10Rnd_RHS_50BMG_Box: CA_Magazine
+	{};
+	class rhsusf_mag_10Rnd_STD_50BMG_M33: 10Rnd_RHS_50BMG_Box
+	{
+		ammo = "ACE_127x99_Ball_AMAX";
+		initSpeed = 860;
+		displayName = "12.7x99mm 10Rnd (AMAX)";
+		descriptionShort = "Caliber: 12.7x99mm (AMAX)<br />Rounds: 10";
+	};
+	class rhsusf_mag_10Rnd_STD_50BMG_mk211: 10Rnd_RHS_50BMG_Box
+	{
+		initSpeed = 880;
+		displayName = "12.7x99mm 10Rnd (HEIAP)";
+		descriptionShort = "Caliber: 12.7x99mm (HEIAP)<br />High Explosive Incendiary Armour Piercing<br />Rounds: 10";
+	};
+	class 10Rnd_338_Mag;
+	class ACE_10Rnd_338_API526_Mag: 10Rnd_338_Mag
+	{
+		displayNameShort = ".338 API";
+		descriptionShort = "Caliber: .338LM (API526)<br />Armour Piercing Incendiary (526 Grain)<br />Rounds: 10";
+	};
+	class ACE_10Rnd_338_300gr_HPBT_Mag: 10Rnd_338_Mag
+	{
+		displayNameShort = ".338 HPBT";
+		descriptionShort = "Caliber: .338LM (HPBT)<br />Hollow Point Boat-Tail (300 Grain)<br />Rounds: 10";
+	};
+		
+	
+};
+
 
