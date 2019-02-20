@@ -11,7 +11,7 @@ params ["_object", ["_range", 40]];
 _ambientLightLevel = 0;
 
 {
-	_ambientLightLevel = _lightLevel max ([_object, _x] call ace_common_fnc_lightIntensityFromObject;
+	_ambientLightLevel = _lightLevel max ([_object, _x] call ace_common_fnc_lightIntensityFromObject);
 } forEach nearestObjects [_object, ["All"], _range];
 
 _lightLevelTemp = 0;
