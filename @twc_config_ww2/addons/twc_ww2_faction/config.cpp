@@ -1,93 +1,347 @@
-class CfgPatches {
-	class twc_faction_ww2 {
-		units[] = {
-			"WW2_British_Base",
-			"WW2_British_Platoon_Commander",
-			"WW2_British_Platoon_Sergeant",
-			"WW2_British_Medic",
-			"WW2_British_Section_Leader",
-			"WW2_British_Rifleman",
-			"WW2_British_Marksman",
-			"WW2_British_SMG",
-			"WW2_British_2IC",
-			"WW2_British_MG",
-			"WW2_British_MGASS",
-			"WW2_British_AT",
-			"WW2_British_AAT",
-			"WW2_British_Vehicle_Commander",
-			"WW2_British_Vehicle_Crewman",
-			
-			"WW2_Para_British_Platoon_Commander",
-			"WW2_Para_British_Platoon_Sergeant",
-			"WW2_Para_British_Medic",
-			"WW2_Para_British_Section_Commander",
-			"WW2_Para_British_Rifleman",
-			"WW2_Para_British_Marksman",
-			"WW2_Para_British_SMG",
-			"WW2_Para_British_2IC",
-			"WW2_Para_British_MG",
-			"WW2_Para_British_MGASS",
-			"WW2_Para_British_AT",
-			"WW2_Para_British_AAT",
-			"WW2_Para_British_Carrier_SMG",
-			
-			"WW2_British_Platoon_Commander_Early",
-			"WW2_British_Medic_Early",
-			"WW2_British_Section_Leader_Early"
-		};
-
+class CfgPatches
+{
+	class twc_ww2_faction {
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
-			"twc_faction"
+			"twc_faction",
+			"twc_ai"
 		};
 	};
 };
 
-class EventHandlers;
-class CfgEditorSubCategories {
-	class TWC_Infantry_WW2_1956 {
-		displayName = "Infantry (1956)";
-	};
-
-	class TWC_Infantry_WW2_Early {
-		displayName = "Infantry (Pre 42)";
-	};
-};
-
 class CfgFactionClasses {
-	class twc_faction_independent {
+	class TWC_Faction_Independent {
 		displayName = "TWC Operations - WW2";
-		author = "Saxon, Bosenator, Rik";
+		author = "Rik";
 		icon = "TWClogo.paa";
 		priority = 2;
 		side = 2;
 	};
 };
 
-class CfgVehicles {
+class CfgEditorSubcategories {
+	class TWC_Infantry_EarlyWW2_Woodland {
+		displayName = "Infantry (Early, Woodland)";
+	};
+	
+	class TWC_Infantry_EarlyWW2_Desert {
+		displayName = "Infantry (Early, Desert)";
+	};
+	
+	class TWC_Infantry_EarlyWW2_Arctic {
+		displayName = "Infantry (Early, Arctic)";
+	};
+	
+	class TWC_Infantry_EarlyWW2_Tropic {
+		displayName = "Infantry (Early, Tropic)";
+	};
+	
+	class TWC_Infantry_EarlyWW2_Dismounted_Woodland {
+		displayName = "Infantry (Early, Dismounted, Woodland)";
+	};
+	
+	class TWC_Infantry_EarlyWW2_Dismounted_Desert {
+		displayName = "Infantry (Early, Dismounted, Desert)";
+	};
+	
+	class TWC_Infantry_EarlyWW2_Dismounted_Arctic {
+		displayName = "Infantry (Early, Dismounted, Arctic)";
+	};
+	
+	class TWC_Infantry_EarlyWW2_Dismounted_Tropic {
+		displayName = "Infantry (Early, Dismounted, Tropic)";
+	};
+};
+
+class EventHandlers;
+
+class CfgWeapons
+{
+	#include "weapons.hpp"
+};
+
+class CfgVehicles
+{
+	#include "backpacks.hpp"
+
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 
-	#include "base_units.hpp"
+	#define MEDICAL_LOADOUT "ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
+	#define MAG_2(a) a, a
+	#define MAG_3(a) a, a, a
+	#define MAG_4(a) a, a, a, a
+	#define MAG_5(a) a, a, a, a, a
+	#define MAG_6(a) a, a, a, a, a, a
+	#define MAG_7(a) a, a, a, a, a, a, a
+	#define MAG_8(a) a, a, a, a, a, a, a, a
+	#define MAG_9(a) a, a, a, a, a, a, a, a, a
+	#define MAG_10(a) a, a, a, a, a, a, a, a, a, a
+	#define MAG_11(a) a, a, a, a, a, a, a, a, a, a, a
+	#define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
+	#define CATEGORY(a) editorSubcategory = a;\
+			vehicleClass = a;
 
-	#include "early\infantry.hpp"
-	#include "early\backpacks.hpp"
-	#include "late\infantry.hpp"
-	#include "late\backpacks.hpp"
-	#include "late\paratroopers.hpp"
-	//#include "1956\infantry.hpp"
+	//GENERIC
+	class TWC_Infantry_WW2_Base: B_Soldier_base_F
+	{
+		scope = 1;
+		displayName = "Base";
+		faction = "TWC_WW2";
+		CATEGORY(TWC_Infantry_Regular_Woodland)
+		icon = "iconMan";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "";
+		backpack = "";
+		
+		linkedItems[] =
+		{
+			"",
+			"",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[] =
+		{
+			"",
+			"",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		Items[] =
+		{
+			MEDICAL_LOADOUT
+		};
+		respawnItems[] =
+		{
+			MEDICAL_LOADOUT
+		};
+		weapons[] =
+		{
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"Throw",
+			"Put"
+		};
+		magazines[] = {};
+		respawnmagazines[] = {};
+		
+		nightItems[] = {
+			"Chemlight_green",
+			"Chemlight_green"
+		};
+	};
+	class TWC_Infantry_WW2_Plane_Pilot: TWC_Infantry_WW2_Base
+	{
+		scope = 2;
+		displayName = "Plane Pilot";
+		faction = "TWC_Millennial";
+		CATEGORY(TWC_ForceType_Airborne)
+		uniformClass = "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
+		TWC_isCommandRole = 1;
+		linkedItems[] =
+		{
+			"CUP_V_B_PilotVest",
+			"UK3CB_BAF_H_PilotHelmetHeli_A",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[] =
+		{
+			"CUP_V_B_PilotVest",
+			"UK3CB_BAF_H_PilotHelmetHeli_A",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		Items[] =
+		{
+			MEDICAL_LOADOUT,
+			"ACE_MapTools"
+		};
+		respawnItems[] =
+		{
+			MEDICAL_LOADOUT,
+			"ACE_MapTools"
+		};
+		weapons[] =
+		{
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"Throw",
+			"Put"
+		};
+		magazines[] =
+		{
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnmagazines[] =
+		{
+			"SmokeShell",
+			"SmokeShell"
+		};
+	};
+	class TWC_Infantry_WW2_Tank_Commander: TWC_Infantry_WW2_Base
+	{
+		scope = 2;
+		displayName = "Tank Commander";
+		faction = "TWC_Millennial";
+		CATEGORY(TWC_ForceType_Armoured)
+		uniformClass = "UK3CB_BAF_U_CrewmanCoveralls_RTR";
+		TWC_isCommandRole = 1;
+		linkedItems[] =
+		{
+			"SP_P58_UrbanPatrol",
+			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		respawnLinkedItems[] =
+		{
+			"SP_P58_UrbanPatrol",
+			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+		Items[] =
+		{
+			MEDICAL_LOADOUT,
+			"ACE_MapTools"
+		};
+		respawnItems[] =
+		{
+			MEDICAL_LOADOUT,
+			"ACE_MapTools"
+		};
+		weapons[] =
+		{
+			"TWC_Weapon_L85A1",
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"TWC_Weapon_L85A1",
+			"Throw",
+			"Put"
+		};
+		magazines[] =
+		{
+			MAG_3("UK3CB_BAF_556_30Rnd"),
+			MAG_2("SmokeShell")
+		};
+		respawnmagazines[] =
+		{
+			MAG_3("UK3CB_BAF_556_30Rnd"),
+			MAG_2("SmokeShell")
+		};
+	};
+	class TWC_Infantry_WW2_Tank_Crew: TWC_Infantry_WW2_Tank_Commander
+	{
+		displayName = "Tank Crew";
+		TWC_isCommandRole = 0;
+	};
+	#include "uk_early\woodland.hpp"
+	#include "uk_early\woodland_dismounted.hpp"
+	#include "uk_early\desert.hpp"
+	#include "uk_early\desert_dismounted.hpp"
+	#include "uk_early\arctic.hpp"
+	#include "uk_early\arctic_dismounted.hpp"
+	#include "uk_early\tropic.hpp"
+	#include "uk_early\tropic_dismounted.hpp"
+
+	#include "uk_late\woodland.hpp"
+	#include "uk_late\woodland_dismounted.hpp"
+	#include "uk_late\desert.hpp"
+	#include "uk_late\desert_dismounted.hpp"
+	#include "uk_late\arctic.hpp"
+	#include "uk_late\arctic_dismounted.hpp"
+	#include "uk_late\tropic.hpp"
+	#include "uk_late\tropic_dismounted.hpp"
 	
-	#include "aussie\backpacks.hpp"
+	#include "uk_airborne\woodland.hpp"
+	
+	#include "anzac\desert.hpp"
+	#include "anzac\desert_dismounted.hpp"
+	#include "anzac\tropic.hpp"
+	#include "anzac\tropic_dismounted.hpp"
+	
+	#include "canada\woodland.hpp"
+	#include "canada\woodland_dismounted.hpp"
+	
+	#include "indian\desert.hpp"
+	#include "indian\desert_dismounted.hpp"
+	#include "indian\tropic.hpp"
+	#include "indian\tropic_dismounted.hpp"
+	
+	#include "south_africa\woodland.hpp"
+	#include "south_africa\woodland_dismounted.hpp"
+	#include "south_africa\desert.hpp"
+	#include "south_africa\desert_dismounted.hpp"
 };
 
-// class fow_b_uk_p37_blanco;
-class CfgWeapons {
-	class ItemCore;
-	class VestItem;
-
-	#include "aussie\vests.hpp"
+class CfgGroups
+{
+	class INDEPENDENT
+	{
+		class TWC_Groups_WW2
+		{
+			name = "TWC Groups WW2";
+			#include "uk_early\groups.hpp"
+			#include "uk_late\groups.hpp"
+			#include "uk_airborne\groups.hpp"
+			#include "anzac\groups.hpp"
+			#include "canada\groups.hpp"
+			#include "indian\groups.hpp"
+			#include "south_africa\groups.hpp"
+			class TWC_Groups_WW2_Generic
+			{
+				name = "Generic";
+				class Tank_Crew
+				{
+					name = "Tank Crew";
+					faction = "TWC_Faction_Independent";
+					side = 2;
+					class Unit0
+					{
+							side = 2;
+							vehicle = "TWC_Infantry_WW2_Tank_Commander";
+							rank = "SERGEANT";
+							position[] = {0,0,0};
+					};
+					class Unit1
+					{
+							side = 2;
+							vehicle = "TWC_Infantry_WW2_Tank_Crew";
+							rank = "PRIVATE";
+							position[] = {2,0,0};
+					};
+					class Unit2
+					{
+							side = 2;
+							vehicle = "TWC_Infantry_WW2_Tank_Crew";
+							rank = "PRIVATE";
+							position[] = {4,0,0};
+					};
+				};
+			};
+		};
+	};
 };
