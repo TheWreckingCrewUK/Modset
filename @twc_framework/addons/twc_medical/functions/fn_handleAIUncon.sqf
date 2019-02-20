@@ -17,7 +17,7 @@ if (_unCon) then {
 	} else {
 		if (_diceRoll > 8) then {
 			// rolled nat 10, get healed' (except for head)
-			[_unit, "head"] call twc_medical_fnc_fullyBandageUnit;
+			[_unit, ["head"]] call twc_medical_fnc_fullyBandageUnit;
 			_continue = false;
 		};
 	};
