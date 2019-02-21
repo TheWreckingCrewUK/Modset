@@ -55,6 +55,14 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 1;
 	};
+	
+	class TWC_WW2 {
+		displayName = "TWC Operations - WW2";
+		author = "Saxon, Bosenator, Rik";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 2;
+	};
 };
 
 // CfgEditorCategories is used for props
