@@ -1070,17 +1070,6 @@ class cfgammo
 		coefgravity = 0.13;
 		timeToLive = 140;
 	};
-	
-	class B_338_Ball;
-	class ACE_338_Ball_API526: B_338_Ball
-	{
-		explosionEffects = "RHS_ExploSmallAmmoExplosion";
-		explosionSoundEffect = "DefaultExplosion";
-		explosive = 0.1;
-		indirectHit = 2;
-		indirectHitRange = 0.1;
-	};
-	
 	class rhsusf_ammo_127x99_M33_Ball;
 	class rhsusf_ammo_127x99_mk211: rhsusf_ammo_127x99_M33_Ball
 	{

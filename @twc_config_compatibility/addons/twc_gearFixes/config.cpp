@@ -122,6 +122,33 @@ class CfgAmmo {
 	{
 		caliber = 6;
 		penetrationDirDistribution = 0.05;
+		explosionEffects = "twc_APIbullet_effect";
+		explosionSoundEffect = "DefaultExplosion";
+		explosive = 0.1;
+		indirectHit = 2;
+		indirectHitRange = 0.1;
+		class HitEffects
+		{
+			Hit_Foliage_green = "ImpactLeavesGreen";
+			Hit_Foliage_Dead = "ImpactLeavesDead";
+			Hit_Foliage_Green_big = "ImpactLeavesGreenBig";
+			Hit_Foliage_Palm = "ImpactLeavesPalm";
+			Hit_Foliage_Pine = "ImpactLeavesPine";
+			hitFoliage = "ImpactLeaves";
+			hitGlass = "ImpactGlass";
+			hitGlassArmored = "twc_APIbullet_effect";
+			hitWood = "twc_APIbullet_effect";
+			hitMetal = "twc_APIbullet_effect";
+			hitMetalPlate = "twc_APIbullet_effect";
+			hitBuilding = "twc_APIbullet_effect";
+			hitPlastic = "twc_APIbullet_effect";
+			hitRubber = "twc_APIbullet_effect";
+			hitConcrete = "twc_APIbullet_effect";
+			hitMan = "twc_APIbullet_effect_man";
+			hitGroundSoft = "twc_APIbullet_effect";
+			hitGroundHard = "twc_APIbullet_effect";
+			hitWater = "ImpactEffectsWater";
+		};
 	};
 	class BulletBase;
 	class B_127x99_Ball: BulletBase
@@ -132,9 +159,29 @@ class CfgAmmo {
 			frequency = 10;
 			power = 30;
 		};
+		class HitEffects
+		{
+			Hit_Foliage_green = "ImpactLeavesGreen";
+			Hit_Foliage_Dead = "ImpactLeavesDead";
+			Hit_Foliage_Green_big = "ImpactLeavesGreenBig";
+			Hit_Foliage_Palm = "ImpactLeavesPalm";
+			Hit_Foliage_Pine = "ImpactLeavesPine";
+			hitFoliage = "ImpactLeaves";
+			hitGlass = "ImpactGlass";
+			hitGlassArmored = "twc_127_hiteffect_grey";
+			hitWood = "twc_127_hiteffect_grey";
+			hitMetal = "twc_127_hiteffect_grey";
+			hitMetalPlate = "twc_127_hiteffect_grey";
+			hitBuilding = "twc_127_hiteffect_grey";
+			hitPlastic = "twc_127_hiteffect_grey";
+			hitRubber = "twc_127_hiteffect_grey";
+			hitConcrete = "twc_127_hiteffect_grey";
+			//hitMan = "twc_APIbullet_effect_man";
+			hitGroundSoft = "twc_127_hiteffect_grey";
+			hitGroundHard = "twc_127_hiteffect_grey";
+			hitWater = "ImpactEffectsWater";
+		};
 	};
-	
-	
 	
 	class B_556x45_Ball;
 	class rhs_ammo_556x45_M855A1_Ball: B_556x45_Ball
@@ -1809,4 +1856,135 @@ class cfgMagazines
 	
 };
 
+class twc_APIbullet_effect
+{
+	class incendiary
+	{
+       simulation = "light";   //type of simulation - particles or light
+       type = "CmeasuresLight";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.08;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 0.001;
+	   interval = 1;
+   };
+	class smoke2
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       //type = "AutoCannonFired";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       type = "Cmeasures2";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+	class smoke
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "AutoCannonFired";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
 
+class twc_APIbullet_effect_ground
+{
+	class hit_target
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "ImpactDust2";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
+
+class twc_APIbullet_effect_man:twc_APIbullet_effect
+{
+	class hit_target
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "BloodMist";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.9;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
+
+class twc_127_hiteffect_grey
+{
+	class smoke
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "AutoCannonFired";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.3;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
+
+class GrenadeExplosion
+{
+	class GrenadeExp1
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "GrenadeBubbles1";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = -1;                //1 effect is enabled, -1 effect is disabled
+	   //Hobbs note, disabled intentionally
+	   intensity = 1;
+	};
+	class GrenadeBubbles
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "GrenadeBubbles1";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.1;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+	};
+	class GrenadeSmoke1
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "GrenadeSmoke1";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 1;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+	};
+	class Light1
+	{
+       simulation = "light";   //type of simulation - particles or light
+       type = "GrenadeExploLight";         //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 0.01;
+	};
+};
