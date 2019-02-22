@@ -2847,7 +2847,7 @@
 			"ItemWatch"
 		};	
 	};
-	class twc_men_1990_us_w_medic: twc_men_1990_us_2_rifleman
+	class twc_men_1990_us_w_medic: twc_men_1990_us_w_rifleman
 	{
 		displayName="Medic";
 		backpack="twc_men_1990_us_w_backpack_medic";
