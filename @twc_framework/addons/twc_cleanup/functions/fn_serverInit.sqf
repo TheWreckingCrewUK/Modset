@@ -12,6 +12,7 @@ addMissionEventHandler ["BuildingChanged", {
 TWC_Corpse_EHID = addMissionEventHandler ["EntityKilled", {
 	params ["_unit", "_killer", "_instigator", "_useEffects"];
 
+	if (!(_unit isKindOf "CAManBase")) exitWith {};
 	if (isPlayer _unit) exitWith {}; // player bodies are handled elsewhere
 	if (_unit getVariable ["TWC_IgnoreCorpse", false]) exitWith {}; // ignore flag for mission makers
 	//if (isNull _instigator) then { _instigator = UAVControl vehicle _killer select 0; }; // UAV kills
