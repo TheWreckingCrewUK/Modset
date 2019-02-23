@@ -3,11 +3,19 @@ params ["_target", "_player"];
 
 private _unitMagazines = [];
 private _unitMagCounts = [];
+private _looseAmmoMags = [];
+private _looseAmmoClasses = [];
 
 {
 	_x params ["_xClassname", "_xCount", "_xLoaded", "_xType"];
 	private _xFullMagazineCount = getNumber (configFile >> "CfgMagazines" >> _xClassname >> "count");
-
+	private _fills = (configFile >> "CfgMagazines" >> _xClassname >> "TWC_Fills") call BIS_fnc_getCfgDataArray;
+	private _continue = true;
+	
+	if !(isNil _fills) exitWith {
+		_looseAmmoClasses pushBack _xClassname;
+		{ _looseAmmoMags pushBack _x; } forEach _fills;
+	};
 
 	if ((_xCount < _xFullMagazineCount) && {_xCount > 0} && {(!_xLoaded) || {_player canAdd _xClassname}}) then {
 		private _index = _unitMagazines find _xClassname;
