@@ -959,67 +959,46 @@ class cfgweapons
 	
 	class rhs_weap_ak74m_2mag: rhs_weap_ak74m
 	{};
-	class rhs_weap_ak74m_desert_npz;
-	class twc_ak74_pol_2_base: rhs_weap_ak74m_desert_npz
+	class CUP_arifle_AK102_top_rail;
+	class twc_ak74_pol_2_base: CUP_arifle_AK102_top_rail
 	{
 		class Single;
-		class Single_AI;
 		class FullAuto;
-		class single_medium_optics1;
-		class single_far_optics2;
-		class fullauto_medium;
+		class Burst;
 	};
 	
 	class twc_ak74_pol_2: twc_ak74_pol_2_base
 	{
 		
-		class Single: Single
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
 			};
-			
 		};
-		class Single_AI: Single_AI
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
+			};			
 		};
-		class FullAuto: FullAuto
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-		class single_medium_optics1: single_medium_optics1
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-		class single_far_optics2: single_far_optics2
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-		class fullauto_medium: fullauto_medium
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
+			};			
 		};
 	};
 	
@@ -1027,139 +1006,98 @@ class cfgweapons
 	{};
 	
 	
-	class rhs_weap_ak74m_gp25: rhs_weap_ak74m
-	{};
+	class CUP_arifle_AK108_GL_top_rail;
 	
-	class rhs_weap_ak74m_gp25_npz: rhs_weap_ak74m_gp25
+	class twc_ak74_gp25_pol_base: CUP_arifle_AK108_GL_top_rail
 	{
 		class Single;
-		class Single_AI;
 		class FullAuto;
-		class single_medium_optics1;
-		class single_far_optics2;
-		class fullauto_medium;
+		class Burst;
 	};
-	class twc_ak74_gp25_pol_base: rhs_weap_ak74m_gp25_npz
+	class twc_ak74_gp25_pol: twc_ak74_gp25_pol_base
 	{
-		class Single: Single
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
 			};
-			
 		};
-		class Single_AI: Single_AI
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
+			};			
 		};
-		class FullAuto: FullAuto
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-		class single_medium_optics1: single_medium_optics1
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-		class single_far_optics2: single_far_optics2
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-		class fullauto_medium: fullauto_medium
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
+			};			
 		};
 	};
 	
-	class rhs_weap_ak74m_npz: rhs_weap_ak74m
-	{};
-	class twc_beryl_base: rhs_weap_ak74m_npz
-	{
-		class Single;
-		class Single_AI;
-		class FullAuto;
-		class single_medium_optics1;
-		class single_far_optics2;
-		class fullauto_medium;
-	};
-	
-	class twc_ak74_pol_base: twc_beryl_base
-	{
-		class Single: Single
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-		class Single_AI: Single_AI
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-		class FullAuto: FullAuto
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-		class single_medium_optics1: single_medium_optics1
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-		class single_far_optics2: single_far_optics2
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-		class fullauto_medium: fullauto_medium
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_beryl_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};
-			
-		};
-	};
 	//RHS has crazy firemodes and CUP has crazy inheritance, take your pic
 	class CUP_arifle_AK_Base: Rifle_Base_F
 	{
 		class Single;
 		class Burst;
 		class FullAuto;
+	};
+	class CUP_arifle_AK102: CUP_arifle_AK_Base
+	{};
+	class CUP_arifle_AK102_railed: CUP_arifle_AK102
+	{
+		class Single;
+		class Burst;
+		class FullAuto;
+	};
+	
+	class twc_ak74_pol_base: CUP_arifle_AK102_railed
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_7x62mm_reflector_1",
+					"jsrs_762mm_echo_soundset"};
+			};			
+		};
 	};
 	class CUP_arifle_AK74: CUP_arifle_AK_Base
 	{

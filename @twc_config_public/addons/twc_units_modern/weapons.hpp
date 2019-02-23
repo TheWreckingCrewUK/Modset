@@ -602,23 +602,57 @@ class cfgWeapons
 	};
 	
 	
-	class rhs_weap_ak74m_npz;
-	class twc_beryl_base: rhs_weap_ak74m_npz
+	class CUP_arifle_AK_Base: Rifle_Base_F
 	{
-		scope = 1;
+		class Single;
+		class Burst;
+		class FullAuto;
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	class CUP_arifle_AK102: CUP_arifle_AK_Base
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {
+					"RHS_AK74_Shot_SoundSet",
+					"RHS_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {
+					"RHS_AK74_Shot_SoundSet",
+					"RHS_Rifle1_Tail_SoundSet"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {
+					"RHS_AK74_Shot_SoundSet",
+					"RHS_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
+	class CUP_arifle_AK102_railed: CUP_arifle_AK102
+	{
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
 		displayName = "wz.2004 Beryl";
+		//magazineWell[] = {"CBA_556x45_AK"};
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
-		magazineWell[] = {};
 	};
 	
 	
-	class twc_ak74_pol_base: twc_beryl_base
+	class twc_ak74_pol_base: CUP_arifle_AK102_railed
 	{
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
-		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
-		magazineWell[] = {};
+		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit"};
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		modes[] = {"Single","FullAuto","Burst"};
 	};
 	
 
@@ -627,24 +661,32 @@ class cfgWeapons
 		
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
-		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1", "rhsusf_acc_grip3"};
-		magazineWell[] = {};
+		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit"};
+		//magazineWell[] = {};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
-				slot="CowsSlot";
+				slot="CUP_PicatinnyTopMountAK";
 				item="rhsusf_acc_eotech_552";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountAK";
+				item="cup_acc_flashlight";
 			};
 		};
 	};
 	
-	class rhs_weap_ak74m_desert_npz;
-	class twc_ak74_pol_2_base: rhs_weap_ak74m_desert_npz
+	class CUP_arifle_AK102_top_rail;
+	class twc_ak74_pol_2_base: CUP_arifle_AK102_top_rail
 	{
 		
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
-		magazineWell[] = {};
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		modes[] = {"Single","FullAuto","Burst"};
+	//	magazineWell[] = {};
 	};
 	
 
@@ -653,35 +695,38 @@ class cfgWeapons
 		
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
-		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
-		magazineWell[] = {};
+		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit"};
+	//	magazineWell[] = {};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
-				slot="CowsSlot";
+				slot="CUP_PicatinnyTopMountAK";
 				item="rhsusf_acc_eotech_552";
 			};
 			class LinkedItemsFrontSideRail
 			{
-				slot="PointerSlot";
-				item="rhsusf_acc_wmx_bk";
+				slot="CUP_PicatinnySideMountAK";
+				item="cup_acc_flashlight";
 			};
 			class LinkedItemsMuzzleSlot
 			{
 				slot="GripodSlot";
-				item="rhs_acc_dtk1";
+				item="rhsusf_acc_sf3p556";
 			};
 		};
 	};
 	
 	
-	class rhs_weap_ak74m_gp25_npz;
-	class twc_ak74_gp25_pol_base: rhs_weap_ak74m_gp25_npz
+	class CUP_arifle_AK108_GL_top_rail;
+	class twc_ak74_gp25_pol_base: CUP_arifle_AK108_GL_top_rail
 	{
 		
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
-		magazineWell[] = {};
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		modes[] = {"Single","FullAuto"};
+	//	magazineWell[] = {};
 	};
 	
 	
@@ -693,13 +738,18 @@ class cfgWeapons
 		displayName = "wz.2004 Beryl (wz. 74)";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
 		accessories[] = {"rhsusf_acc_eotech_552", "rhsusf_acc_wmx_bk", "rhs_acc_dtk1"};
-		magazineWell[] = {};
+		//magazineWell[] = {};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
-				slot="CowsSlot";
+				slot="CUP_PicatinnyTopMountAK";
 				item="rhsusf_acc_eotech_552";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountAK";
+				item="cup_acc_flashlight";
 			};
 		};
 	};
@@ -958,8 +1008,6 @@ class cfgWeapons
 
 
 
-
-
 class cfgmagazines{
 		class UGL_FlareGreen_F;
 		class twc_l5a4_g : UGL_FlareGreen_F
@@ -1015,18 +1063,15 @@ class cfgmagazines{
 			mass = 48;
 		};
 		
-		class rhs_30Rnd_545x39_7N10_AK;
-		class twc_rhsgref_30rnd_556x45_m21: rhs_30Rnd_545x39_7N10_AK {
+		class CUP_30Rnd_556x45_AK;
+		class twc_rhsgref_30rnd_556x45_m21: CUP_30Rnd_556x45_AK {
 			descriptionshort = "Caliber: 5.56x45mm<br />Rounds: 30";
-			displayName = "5.56mm 30rnd Mag";
-			ammo = "B_556x45_Ball";
+			displayName = "5.56mm 30rnd";
 		};
-		
-		class twc_rhsgref_30rnd_556x45_m21_t: twc_rhsgref_30rnd_556x45_m21 {
+		class CUP_30Rnd_TE1_Red_Tracer_556x45_AK;
+		class twc_rhsgref_30rnd_556x45_m21_t: CUP_30Rnd_TE1_Red_Tracer_556x45_AK {
 			descriptionshort = "Caliber: 5.56x45mm Tracer<br />Rounds: 30";
-			displayName = "5.56mm 30rnd Tracer Mag";
-			ammo = "B_556x45_Ball";
-			tracersEvery = 1;
+			displayName = "5.56mm 30rnd Tracer";
 		};
 		
 		class FakeMagazine;

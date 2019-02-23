@@ -1,22 +1,24 @@
 params["_unit"];
 _titleText = "NOTE: The loadout shown below is only accurate at mission start.<br />
 <br />";
-_titleText = _titleText + format["Total Weight: %1 <br/><br/>",([_unit] call ace_movement_fnc_getWeight)];
+_titleText = _titleText + format["Total Weight: %1 <br/><br/>",([_unit] call ace_common_fnc_getWeight)];
+
 _weaponText = "<font size='18'>WEAPONS:<br/></font>";
 {
 	_attachments = _x;
 	if((_attachments select 0) in assignedItems _unit)then{}else{
-		_weaponText = _weaponText + format["<img image='%1' height=48 />",getText (configFile >> "CfgWeapons" >> (_attachments select 0) >> "picture")];
-		_attachments deleteAT 0;
-		{
-			if(typeName _x == "ARRAY" || str _x == "[]" || count _x < 3)then{
+		_weaponText = _weaponText + format["<img image='%1' height=48 />", getText (configFile >> "CfgWeapons" >> (_attachments select 0) >> "picture")];
+		_attachments deleteAt 0;
 		
-			}else{
-				_weaponText = _weaponText + format["<img image='%1' height=48 />",getText (configFile >> "CfgWeapons" >> _x >> "picture")];
+		{
+			if (typeName _x == "ARRAY" || str _x == "[]" || count _x < 3) then {
+			} else {
+				_weaponText = _weaponText + format["<img image='%1' height=48 />", getText (configFile >> "CfgWeapons" >> _x >> "picture")];
 			};
 		};
-	}forEach _attachments;
-}forEach (weaponsItems _unit);
+	} forEach _attachments;
+} forEach (weaponsItems _unit);
+
 _mags = (primaryWeaponMagazine _unit + secondaryWeaponMagazine _unit + handgunMagazine _unit + magazines _unit) call BIS_fnc_consolidateArray;
 _magText = "<font size='18'><br/>Magazines:<br/></font>";
 {
