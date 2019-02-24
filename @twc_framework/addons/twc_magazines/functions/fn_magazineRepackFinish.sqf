@@ -33,7 +33,7 @@ private _structuredOutputText = if (_errorCode == 0) then {
 private _picture = getText (configFile >> "CfgMagazines" >> _magazineClassname >> "picture");
 [_structuredOutputText, _picture, nil, nil, 2.5] call ace_common_fnc_displayTextPicture;
 
-// empty magazines left over
+/* // empty magazines left over
 for "_i" from -1 to (_startingMagazineCount - (_fullMags + _partialMags)) do {
 	ACE_player addMagazine [_magazineClassname, 0];
-};
+}; */
