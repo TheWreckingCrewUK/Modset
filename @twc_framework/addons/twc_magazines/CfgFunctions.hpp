@@ -24,8 +24,14 @@ class CfgFunctions {
 		tag = "twc_magazines";
 		
 		class twc_magazines {
+			file = "twc_magazines\functions";
+			
 			class handleReloaded {};
 			class doesMagazineSupportEmpty {};
+			class magazineDetails {};
+			
+			class getMagazineActions {};
+			class startRefillingMagazine {};
 		};
 	};
 };

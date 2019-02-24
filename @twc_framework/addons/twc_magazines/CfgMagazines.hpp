@@ -5,6 +5,7 @@ class CfgMagazines {
 	// DEBUG: When finished, move to the repos respective config/weapons folder!
 	class UK3CB_BAF_556_30Rnd: CA_Magazine {
 		deleteIfEmpty = 0;
+		TWC_emptiesTo = "TWC_Magazine_LooseAmmo_556";
 	};
 
 	class TWC_Magazine_LooseAmmo_556: TWC_Loose_Ammo_Base_Class {
@@ -14,7 +15,7 @@ class CfgMagazines {
 		displayName = "Loose 5.56 Ammo";
 		displayNameShort = "Loose 5.56 Ammo";
 		descriptionShort = "Loose 5.56 Ammo";
-		picture = ""; // path
+		picture = "\twc_magazines\ui\refill_ca.paa"; // path
 		count = 300;
 		weight = 1;
 
@@ -28,7 +29,7 @@ class CfgMagazines {
 		displayName = "Loose 5.56 Tracer Ammo";
 		displayNameShort = "Loose 5.56 Tracer Ammo";
 		descriptionShort = "Loose 5.56 Tracer Ammo";
-		picture = ""; // path
+		picture = "\twc_magazines\ui\refill_ca.paa"; // path
 		count = 300;
 		weight = 1;
 
@@ -42,7 +43,7 @@ class CfgMagazines {
 		displayName = "Loose .303 Ammo";
 		displayNameShort = "Loose .303 Ammo";
 		descriptionShort = "Loose .303 Ammo";
-		picture = ""; // path
+		picture = "\twc_magazines\ui\refill_ca.paa"; // path
 		count = 100;
 		weight = 1;
 
