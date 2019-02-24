@@ -17,7 +17,7 @@ private _looseAmmoClasses = [];
 		{ _looseAmmoMags pushBack _x; } forEach _fills;
 	};
 
-	if ((_xCount < _xFullMagazineCount) && {(!_xLoaded) || {_player canAdd _xClassname}}) then {
+	if ((_xCount < _xFullMagazineCount) && {_xCount > 0} && {(!_xLoaded) || {_player canAdd _xClassname}}) then {
 		private _index = _unitMagazines find _xClassname;
 
 		if (_index == -1) then {

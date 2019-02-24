@@ -40,7 +40,9 @@ private _updateMagazinesOnPlayerFnc = {
 	ACE_player removeMagazines _magazineClassname;
 
 	{
-		ACE_player addMagazine [_magazineClassname, _x];
+		if (_x > 0) then {
+			ACE_player addMagazine [_magazineClassname, _x];
+		};
 	} forEach (_addedMagazines + _nextEventMags);
 
 	_args set [1, _nextEventMags];
