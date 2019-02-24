@@ -27,3 +27,4 @@ class Extended_Reloaded_EventHandlers {
 
 #include "CfgFunctions.hpp"
 #include "CfgMagazines.hpp"
+#include "CfgVehicles.hpp"
