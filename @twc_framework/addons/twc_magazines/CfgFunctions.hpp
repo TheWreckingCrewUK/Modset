@@ -14,13 +14,18 @@ class CfgFunctions {
 				file = "twc_magazines\functions\fn_magazineRepackProgress.sqf";
 			};
 
-			class simulateRepackEvents {
-				file = "twc_magazines\functions\fn_simulateRepackEvents.sqf";
-			};
-
 			class startRepackingMagazine {
 				file = "twc_magazines\functions\fn_startRepackingMagazine.sqf";
 			};
+		};
+	};
+	
+	class twc_magazines {
+		tag = "twc_magazines";
+		
+		class twc_magazines {
+			class handleReloaded {};
+			class doesMagazineSupportEmpty {};
 		};
 	};
 };
