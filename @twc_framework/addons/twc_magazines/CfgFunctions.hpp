@@ -32,6 +32,8 @@ class CfgFunctions {
 			
 			class getMagazineActions {};
 			class startRefillingMagazine {};
+			
+			class simulateRepackEvents {};
 		};
 	};
 };
