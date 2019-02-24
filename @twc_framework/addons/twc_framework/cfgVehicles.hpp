@@ -884,6 +884,24 @@ class CfgVehicles {
 		};
 	};
 	
+	class TWC_Module_AmbientAA: Module_F
+	{
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Ambient AA";
+		function = "twc_fnc_moduleAmbientAA";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\ambientAA_ca.paa";
+		functionPriority = 1;
+		class ModuleDescription: ModuleDescription {
+			description = "Call in Attack Plane";
+			sync[] = {""};
+		};
+	};
+	
 	class TWC_Module_Amient_AttackPlane: ModuleCAS_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
