@@ -72,4 +72,6 @@ class CfgVehicles {
 	CREATE_MAP(chernarus_summer);
 	CREATE_MAP(chernarus_winter);
 	CREATE_MAP(pja307); // Dariyah
+	CREATE_MAP(panthera3);
+	CREATE_MAP(winthera3);
 };
