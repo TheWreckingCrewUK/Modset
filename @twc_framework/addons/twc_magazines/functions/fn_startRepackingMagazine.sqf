@@ -4,13 +4,12 @@ if (isNil "_magazineClassname" || {_magazineClassname == ""}) exitWith {
 	diag_log text format ['[%1] (%2) %3: %4', toUpper 'ace', 'magazinerepack', 'ERROR', format ['%1 %2:%3', "Bad Mag Classname", "z\ace\addons\magazinerepack\functions\fnc_startRepackingMagazine.sqf", 23 + 1]];
 };
 
+if !([_player, objNull, ["isNotInside", "isNotSwimming", "isNotSitting"]] call ace_common_fnc_canInteractWith) exitWith {};
+
 private _magazineCfg = configFile >> "CfgMagazines" >> _magazineClassname;
 private _fullMagazineCount = getNumber (_magazineCfg >> "count");
 private _isBelt = isNumber (_magazineCfg >> "ACE_isBelt") && {(getNumber (_magazineCfg >> "ACE_isBelt")) == 1};
-
-private _startingMagazineCount = {_x == _magazineClassname} count ((magazines _player) + (primaryWeaponMagazine _player) + (handgunMagazine _player));
-
-if !([_player, objNull, ["isNotInside", "isNotSwimming", "isNotSitting"]] call ace_common_fnc_canInteractWith) exitWith {};
+private _startingMagazineCount = {(_x select 0) == _magazineClassname && (_x select 1) > 0} count ([_player] call TWC_Magazines_fnc_magazineDetails);
 
 [_player] call ace_common_fnc_goKneeling;
 private _startingAmmoCounts = [];
