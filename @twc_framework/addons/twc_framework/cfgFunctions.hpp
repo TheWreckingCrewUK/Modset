@@ -4,6 +4,7 @@ class CfgFunctions {
 			file = "twc_framework\functions";
 			class AirAssault {};
 			class Airborne {};
+			class AmbientAA {};
 			class Artillery{};
 			class AttackHelicopter{};
 			class AttackPlane {};
@@ -72,6 +73,7 @@ class CfgFunctions {
 			class moduleAirAssault{};
 			class moduleAirborne {};
 			class moduleAttackPlane{};
+			class moduleAmbientAA;
 			class moduleCommandMessage{};
 			class moduleLightsSwitch{};
 			class moduleIntelHint{};
