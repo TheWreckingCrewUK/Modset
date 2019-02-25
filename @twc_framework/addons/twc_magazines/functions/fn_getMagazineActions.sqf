@@ -31,9 +31,22 @@ private _emptiesTo = [(configFile >> "CfgMagazines" >> _parentMagazineClass), "T
 } forEach ([_player] call TWC_Magazines_fnc_magazineDetails);
 
 // We have some ammo in some our mags. Good enough to empty!
-if (_emptiesTo != "" && {({(_x select 0) > 0} count _unitMagCounts) > 0}) then {
-	private _action = [_parentMagazineClass, "Empty", "\z\twc_framework\addons\twc_magazines\ui\empty_ca.paa", { hint "test" }, {true}, {}, [_parentMagazineClass, _emptiesTo]] call ace_interact_menu_fnc_createAction;
-	_actions pushBack [_action, [], _player];
+if (_emptiesTo != "") then {
+	_nonEmptyMagCount = {(_x select 0) > 0} count _unitMagCounts;
+
+	if (_nonEmptyMagCount > 0) then {
+		private _action = [
+			_parentMagazineClass,
+			"Empty",
+			"\z\twc_framework\addons\twc_magazines\ui\empty_ca.paa",
+			{},
+			{true},
+			{ _this call TWC_Magazines_fnc_getEmptyActions },
+			[_parentMagazineClass, _emptiesTo, _nonEmptyMagCount]
+		] call ace_interact_menu_fnc_createAction;
+
+		_actions pushBack [_action, [], _player];
+	};
 };
 
 // We've got a couple of mags (or more) that are partial. We can repack!
