@@ -29,11 +29,17 @@ class CfgFunctions {
 			class handleReloaded {};
 			class doesMagazineSupportEmpty {};
 			class magazineDetails {};
-			
 			class getMagazineActions {};
-			class startRefillingMagazine {};
 			
+			class startRefillingMagazine {};
 			class simulateRepackEvents {};
+			
+			class getEmptyActions {};
+			/* class magazineEmptyFinish {};
+			class magazineEmptyProgress {};
+			class simulateEmptyEvents {};
+			class startEmptyingMagazine {};
+			class canEmptyMagazine {}; */
 		};
 	};
 };
