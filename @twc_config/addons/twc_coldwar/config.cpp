@@ -10,17 +10,21 @@ class CfgPatches
 			"twc_faction",
 			"twc_ai",
 			"uk3cb_baf_weapons_l1a1",
-			"sp_uniforms",
-			"sp_weapons",
 			"SP_Equipment",
-			"sp_headgear",
-			"sp_facewear"
+			"SP_Facewear",
+			"SP_Headgear",
+			"SP_Uniforms",
+			"SP_Weapons"
 		};
 	};
 };
 
 class EventHandlers;
 
+class CfgAmmo
+{
+	#include "ammo.hpp"
+};
 class CfgMagazines
 {
 	#include "magazines.hpp"
