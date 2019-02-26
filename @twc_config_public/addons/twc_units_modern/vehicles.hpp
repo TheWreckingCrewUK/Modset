@@ -1,4 +1,9 @@
-
+	class CUP_2S6M_Base;
+	class CUP_O_2S6M_RU: CUP_2S6M_Base
+	{
+		armor = 150;
+	};
+	
 	class rhsusf_Cougar_base;
 	class rhsusf_cougar_GPK_base: rhsusf_Cougar_base
 	{
