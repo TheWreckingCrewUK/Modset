@@ -15,7 +15,6 @@ private _startingAmmoCounts = [];
 	
 	if (_xClassname == _magazineClassname && {_xCount > 0}) then {
 		if (_xLoaded) then {
-
 			if (_player canAdd _magazineClassname) then {
 				switch (_xType) do {
 					case (1): { _player removePrimaryWeaponItem _magazineClassname };
@@ -33,7 +32,7 @@ private _startingAmmoCounts = [];
 			_startingAmmoCounts pushBack _xCount;
 		};
 	};
-} forEach (magazinesAmmoFull _player);
+} forEach ([_player, true] call TWC_Magazines_fnc_magazineDetails);
 
 private _simEvents = [_fullMagazineCount, _startingAmmoCounts, _numberOf] call TWC_Magazines_fnc_simulateEmptyEvents;
 private _totalTime = _simEvents select (count _simEvents - 1) select 0;
