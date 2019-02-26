@@ -1095,8 +1095,8 @@
 	class BCCCCP_Jet_Pilot: BCCCCP_Base
 	{
 		scope = 2;
-		displayName="Helicopter Pilot";
-		uniformClass="U_I_HeliPilotCoveralls";
+		displayName="Jet Pilot";
+		uniformClass="CUP_U_O_SLA_Overalls_Pilot";
 		linkedItems[]=
 		{
 			"CUP_V_O_TK_CrewBelt",
@@ -1131,7 +1131,7 @@
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
-		{			
+		{
 			"CUP_8Rnd_9x18_Makarov_M",
 			"CUP_8Rnd_9x18_Makarov_M",
 			"CUP_8Rnd_9x18_Makarov_M",

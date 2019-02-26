@@ -198,11 +198,32 @@
 		};
 	};
 	
+	class O_Plane_CAS_02_F;
+	class TCP_Su22: O_Plane_CAS_02_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		//elevatorCoef[] = {0,0.2,0.95,0.6,0.55,0.5,0.45,0.4,0.35,0.3,0.26,0.22,0.19,0.16,0.14,0.12,0.1,0.09,0.08};
+		elevatorCoef[] = {0,0.1,0.45,0.55,0.56,0.56,0.55,0.54,0.52,0.5,0.48,0.45,0.4,0.32,0.15};
+	};
+	
+	class BCCCCP_Su17: TCP_Su22
+	{
+		displayName="Su-17 (CAS)";
+		faction="BCCCCP";
+		crew="BCCCCP_Jet_Pilot";
+		typicalCargo[]=
+		{
+			"BCCCCP_Jet_Pilot"
+		};
+	};
+	
 	class CUP_O_Su25_RU_2;
 	class CUP_O_Su25_RU_3;
 	
 	class BCCCCP_Su25_CAS: CUP_O_Su25_RU_3
 	{
+		scope = 2;
 		displayName="Su-25 (CAS)";
 		faction="BCCCCP";
 		crew="BCCCCP_Jet_Pilot";
@@ -219,6 +240,7 @@
 	};
 	class BCCCCP_Su25_AT: CUP_O_Su25_RU_2
 	{
+		scope = 2;
 		displayName="Su-25 (AT)";
 		faction="BCCCCP";
 		crew="BCCCCP_Jet_Pilot";
@@ -232,4 +254,33 @@
 			"\CUP\AirVehicles\CUP_AirVehicles_Su25\data\su25_body2_rus_co.paa"
 		};
 		editorPreview="CUP\AirVehicles\CUP_AirVehicles_Su25\Data\preview\CUP_O_Su25_RU_1.jpg";
+	};
+	
+	class an12b_RUS;
+	class an12B_RU: an12b_RUS
+	{
+		class Eventhandlers;
+	};
+	
+	class BCCCCP_An12B: an12B_RU
+	{
+		scope = 2;
+		displayName="An-12B";
+		faction="BCCCCP";
+		crew="BCCCCP_Jet_Pilot";
+		typicalCargo[]=
+		{
+			"BCCCCP_Jet_Pilot"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\an12bkv3\liveries\18\An12main01.pac",
+			"\an12bkv3\liveries\18\An12main02.pac",
+			"\an12bkv3\liveries\18\An12main03.pac",
+			"\an12bkv3\liveries\18\An12wing.pac",
+		};
+		class Eventhandlers: Eventhandlers
+		{
+			init = "";
+		};
 	};
