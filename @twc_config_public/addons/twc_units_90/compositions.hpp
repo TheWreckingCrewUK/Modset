@@ -656,6 +656,13 @@ class CfgGroups
 									rank = "lieutenant"; // Rank
 									position[] = {0,3,0}; //Position in the formation
 							};
+							class Unit1
+							{
+									side = 1;
+									vehicle = "1990_British_Crewchief"; //Class name of desired solider
+									rank = "lieutenant"; // Rank
+									position[] = {3,0,0}; //Position in the formation
+							};
 					};
 					class 1990_Vehicle_Crew_desert
 					{

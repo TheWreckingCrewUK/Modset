@@ -678,6 +678,11 @@
 			"ACE_tourniquet"
 		};	
 	};
+	class 1990_British_Crewchief: 1990_British_HeliPilot
+	{
+		scope=2;
+		displayName="Helicopter Crew Chief";
+	};
 	class 1990_British_JetPilot: 1990_British_HeliPilot
 	{
 		displayName="Jet Pilot";
@@ -2851,9 +2856,11 @@
 	{
 		displayName="Medic";
 		backpack="twc_men_1990_us_w_backpack_medic";
+		attendant = 1;
 	};
 	class twc_men_1990_us_d_medic: twc_men_1990_us_d_rifleman
 	{
 		displayName="Medic";
 		backpack="twc_men_1990_us_w_backpack_medic";
+		attendant = 1;
 	};
