@@ -972,13 +972,18 @@ class CfgVehicles {
 					};
 					class SU34_RU
 					{
-						name = "SU-34 (RU)";
+						name = "Su-34 (RU)";
 						value = "CUP_O_SU34_RU";
 					};
 					class SU25_RU
 					{
-						name = "SU-25 (RU)";
+						name = "Su-25 (RU)";
 						value = "CUP_O_Su25_Dyn_RU";
+					};
+					class SU17_RU
+					{
+						name = "Su-17 (RU)";
+						value = "BCCCCP_Su17";
 					};
 					class SU34_SLA
 					{
