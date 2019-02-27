@@ -1063,6 +1063,12 @@ class CfgVehicles {
 			sync[] = {""};
 		};
 	};
+	class TWC_Module_Amient_AttackPlane_Zeus: TWC_Module_Amient_AttackPlane {
+		scope=1;
+		scopeCurator = 2;
+		isTriggerActivated=0;
+		curatorCanAttach = 1;
+	};
 	
 	class TWC_Module_CommandMessage: Module_F {
 		author = "[TWC] Bosenator & jayman";
