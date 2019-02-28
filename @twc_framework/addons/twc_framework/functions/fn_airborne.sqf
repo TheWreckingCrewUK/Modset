@@ -81,6 +81,7 @@ if (isServer) then
 		_plane setObjectTextureGlobal[3,"\an12bkv3\liveries\18\An12wing.pac"];
 	};
 	_crewGroup = _vehicle select 2;
+	_crewGroup setBehaviour "CARELESS";
 	
 	_plane flyInHeight 200;
 	_plane setVelocity [(sin _dir) * 80, (cos _dir) * 80, 0];
