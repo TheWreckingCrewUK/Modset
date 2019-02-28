@@ -1,10 +1,7 @@
 params ["_args", "_elapsedTime", "_totalTime"];
-_args params ["_magazineClassname", "_lastAmmoCount", "_simEvents", ["_startingMagazineCount", 0]];
+_args params ["_magazineClassname", "_startingAmmoCounts", "_simEvents", "_startingMagazineCount", "_emptiesTo", "_numberOf"];
 
-if !((_simEvents select 0) params ["_nextEventTime", "_nextEventIsBullet", "_nextEventMags"]) exitWith {
-	diag_log text format ['[%1] (%2) %3: %4', toUpper 'ace', 'magazinerepack', 'ERROR', format ['%1 %2:%3', "No Event", "z\ace\addons\magazinerepack\functions\fnc_magazineRepackProgress.sqf", 23 + 1]]; 
-	false
-};
+if !((_simEvents select 0) params ["_nextEventTime", "_nextEventIsBullet", "_nextEventMags"]) exitWith {};
 
 if (_nextEventTime > _elapsedTime) exitWith { true };
 
@@ -30,7 +27,7 @@ private _missingAmmo = false;
 	} else {
 		_missingAmmo = true;
 	};
-} forEach _lastAmmoCount;
+} forEach _startingAmmoCounts;
 
 if (_missingAmmo) exitWith { false };
 
