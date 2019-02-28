@@ -37,7 +37,7 @@ if (_createEmpties) then {
 } forEach (magazinesAmmoFull ACE_player);
 
 private _structuredOutputText = if (_errorCode == 0) then {
-	private _repackedMagsText = format [localize "STR_TWC_MagazineRepack_RepackedMagazinesDetail", _fullMags, _bulletsLeft, _emptyMags];
+	private _repackedMagsText = format [localize "STR_TWC_MagazineRepack_RepackedMagazinesDetail", _fullMags, _partialMags, _emptyMags];
 	format ["<t align='center'>%1</t><br/>%2", localize "STR_ace_magazinerepack_RepackComplete", _repackedMagsText];
 } else {
 	private _repackedMagsText = format [localize "STR_TWC_magazinerepack_RepackedMagazinesCount", _fullMags, _partialMags, _emptyMags];
