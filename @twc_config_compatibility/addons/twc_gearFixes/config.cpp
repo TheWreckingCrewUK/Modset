@@ -982,7 +982,7 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class Helicopter_Base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2} else {_rec = 1}; addCamShake [_rec, 0.5, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.6; addCamShake [_rec, 0.5, 15]};";
 		};
 	};
 	class Plane {

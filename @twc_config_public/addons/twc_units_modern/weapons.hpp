@@ -386,7 +386,7 @@ class cfgWeapons
 	{
 		displayname = "HK MG3";
 		twc_openbolt = 1;
-		magazines[] = {"UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_T","UK3CB_BAF_762_200Rnd_Blank"};
+		magazines[] = {"rhsusf_50Rnd_762x51","rhsusf_50Rnd_762x51_m61_ap","rhsusf_50Rnd_762x51_m62_tracer","rhsusf_50Rnd_762x51_m80a1epr","rhsusf_50Rnd_762x51_m82_blank","rhsusf_100Rnd_762x51","rhsusf_100Rnd_762x51_m61_ap","rhsusf_100Rnd_762x51_m62_tracer","rhsusf_100Rnd_762x51_m80a1epr","rhsusf_100Rnd_762x51_m82_blank","rhsusf_50Rnd_762x51_m993","rhsusf_100Rnd_762x51_m993","UK3CB_BAF_762_100Rnd","UK3CB_BAF_762_100Rnd_Blank","UK3CB_BAF_762_100Rnd_T","UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_Blank","UK3CB_BAF_762_200Rnd_T"};
 	};
 	
 	class rhs_weap_M590_5RD: Rifle_Base_F
@@ -399,7 +399,39 @@ class cfgWeapons
 	{
 		recoil = "twc_mg_762";
 		recoilProne = "twc_mg_prone";
+		magazines[] = {"rhsusf_50Rnd_762x51","rhsusf_50Rnd_762x51_m61_ap","rhsusf_50Rnd_762x51_m62_tracer","rhsusf_50Rnd_762x51_m80a1epr","rhsusf_50Rnd_762x51_m82_blank","rhsusf_100Rnd_762x51","rhsusf_100Rnd_762x51_m61_ap","rhsusf_100Rnd_762x51_m62_tracer","rhsusf_100Rnd_762x51_m80a1epr","rhsusf_100Rnd_762x51_m82_blank","rhsusf_50Rnd_762x51_m993","rhsusf_100Rnd_762x51_m993","UK3CB_BAF_762_100Rnd","UK3CB_BAF_762_100Rnd_Blank","UK3CB_BAF_762_100Rnd_T","UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_Blank","UK3CB_BAF_762_200Rnd_T"};
+		
 	};
+	class rhs_weap_m240B: rhs_weap_m240_base
+	{
+		class Manual;
+	};
+	class rhs_weap_m240B_twcslow_base: rhs_weap_m240B
+	{
+		displayname = "M240B (Slow)";
+		class Manual: Manual
+		{
+			reloadtime = 0.14;
+		};
+	};
+	class rhs_weap_m240B_twcslow: rhs_weap_m240B_twcslow_base
+	{
+		twc_openbolt = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_ELCAN";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15A";
+			};
+		};
+	};
+	
 	
 	class rhs_weap_m4_Base: arifle_MX_Base_F
 	{
@@ -790,16 +822,18 @@ class cfgWeapons
 		};
 	};
 	
-	
-	class twc_MG36_eotech: CUP_arifle_MG36
+	class CUP_arifle_G36A;
+	class twc_MG36_eotech: CUP_arifle_G36A
 	{
-		
+		displayName = "MG36";
+		descriptionShort = "Light Support Weapon<br/>Caliber: 5.56x45mm NATO";
+		magazines[] = {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag","CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag","CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag","CUP_100Rnd_556x45_BetaCMag_camo","CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_camo","CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag_camo","CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag_camo","CUP_100Rnd_556x45_BetaCMag_wdl","CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_wdl","CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag_wdl","CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag_wdl","CUP_30Rnd_556x45_G36","CUP_30Rnd_TE1_Red_Tracer_556x45_G36","CUP_30Rnd_TE1_Green_Tracer_556x45_G36","CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36","CUP_30Rnd_556x45_G36_camo","CUP_30Rnd_TE1_Red_Tracer_556x45_G36_camo","CUP_30Rnd_TE1_Green_Tracer_556x45_G36_camo","CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_camo","CUP_30Rnd_556x45_G36_wdl","CUP_30Rnd_TE1_Red_Tracer_556x45_G36_wdl","CUP_30Rnd_TE1_Green_Tracer_556x45_G36_wdl","CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_wdl","CUP_30Rnd_556x45_XM8","CUP_30Rnd_TE1_Red_Tracer_556x45_XM8","CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_TE1_Yellow_Tracer_556x45_XM8"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
-				slot="CowsSlot";
-				item="UK3CB_BAF_Eotech";
+				slot="UnderBarrelSlot";
+				item="CUP_Bipod_G36";
 			};
 		};
 	};
@@ -1086,7 +1120,15 @@ class cfgmagazines{
 
 class cfgammo
 {
-	class F_40mm_Red;
+	class FlareBase;
+	class F_40mm_Red: FlareBase
+	{
+		lightColor[] = {0.75,0.5,0.5,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160;
+	};
 	class rhs_40mm_red : F_40mm_Red
 	{
 		lightColor[] = {0.75,0.5,0.5,0};
@@ -1096,7 +1138,14 @@ class cfgammo
 		timeToLive = 160;
 	};
 	
-	class F_40mm_white;
+	class F_40mm_white: FlareBase
+	{
+		lightColor[] = {0.75,0.75,0.75,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160;
+	};
 	class rhs_40mm_white : F_40mm_white
 	{
 		lightColor[] = {0.75,0.75,0.75,0};
@@ -1106,7 +1155,14 @@ class cfgammo
 		timeToLive = 160;
 	};
 	
-	class F_40mm_green;
+	class F_40mm_green: FlareBase
+	{
+		lightColor[] = {0.5,0.75,0.5,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160;
+	};
 	class rhs_40mm_green : F_40mm_green
 	{
 		lightColor[] = {0.5,0.75,0.5,0};
