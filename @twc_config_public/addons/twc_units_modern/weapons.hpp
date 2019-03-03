@@ -1182,8 +1182,6 @@ class cfgammo
 	{
 		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",1.1,0.7,250};
 	};
-	
-	
 	class R_PG32V_F;
 	class rhs_ammo_panzerfaust60_rocket : R_PG32V_F
 	{
@@ -1207,28 +1205,14 @@ class cfgammo
 	{
 		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
 	};
-	class rhs_B_762x54_Ball;
-	class rhs_B_762x54_Ball_Tracer_Green: rhs_B_762x54_Ball
+	class B_762x51_Ball;
+	class rhs_B_762x54_Ball:B_762x51_Ball
 	{
 		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
 	};
-	class rhs_B_762x54_7BZ3_Ball: rhs_B_762x54_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
-	};
-	class rhs_B_762x54_7N13_Ball: rhs_B_762x54_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
-	};
-	class rhs_B_762x54_7N14_Ball: rhs_B_762x54_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
-	};
-	class rhs_B_762x54_7N1_Ball: rhs_B_762x54_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
-	};
-	class rhs_B_762x54_7N26_Ball: rhs_B_762x54_Ball
+	
+	class rhs_B_762x39_Ball;
+	class rhs_B_762x39_Tracer: rhs_B_762x39_Ball
 	{
 		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
 	};
