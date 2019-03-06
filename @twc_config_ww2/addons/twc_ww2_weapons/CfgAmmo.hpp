@@ -71,4 +71,21 @@ class CfgAmmo{
 		coefGravity = 0.05;
 		airFriction = 0;
 	};
+	
+	class LIB_ShellAPCR_base;
+	class LIB_S_76L55_M93: LIB_ShellAPCR_base
+	{
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_red.p3d";
+	};
+	
+	class LIB_S_76L55_APDSMk1: LIB_ShellAPCR_base
+	{
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_red.p3d";
+	};
+	
+	class LIB_ShellHE_base;
+	class LIB_S_76L55_M42: LIB_ShellHE_base
+	{
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_red.p3d";
+	};
 };
