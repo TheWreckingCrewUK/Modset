@@ -492,7 +492,7 @@ class WW2_Para_British_MGASS: WW2_Para_British_Rifleman {
 	};
 };
 
-class WW2_Para_British_AT: WW2_British_Base {
+class WW2_Para_British_AT: WW2_Para_British_Rifleman {
 	scope = 2;
 	displayName = "PIAT Gunner";
 	uniformClass = "fow_u_uk_parasmock";
@@ -523,7 +523,7 @@ class WW2_Para_British_AT: WW2_British_Base {
 	};
 };
 
-class WW2_Para_British_AAT: WW2_British_Base {
+class WW2_Para_British_AAT: WW2_Para_British_Rifleman {
 	scope = 2;
 	displayName = "Assistant PIAT Gunner";
 	uniformClass = "fow_u_uk_parasmock";

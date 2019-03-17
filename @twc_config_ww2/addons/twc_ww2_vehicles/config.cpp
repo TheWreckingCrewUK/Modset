@@ -44,7 +44,7 @@ class CfgVehicles {
 	#include "vehicles\overwrites.hpp"
 	
 	#include "vehicles\airborne.hpp"
-	//#include "vehicles/amphibious.hpp"
+	//#include "vehicles\amphibious.hpp"
 	#include "vehicles\armoured.hpp"
 	#include "vehicles\motorised.hpp"
 	
