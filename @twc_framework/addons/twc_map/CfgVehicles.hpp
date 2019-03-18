@@ -74,4 +74,6 @@ class CfgVehicles {
 	CREATE_MAP(pja307); // Dariyah
 	CREATE_MAP(panthera3);
 	CREATE_MAP(winthera3);
+	CREATE_MAP(MCN_Neaville);
+	CREATE_MAP(MCN_Neaville_winter);
 };
