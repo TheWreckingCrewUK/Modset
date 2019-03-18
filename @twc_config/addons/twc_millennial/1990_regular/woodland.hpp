@@ -4,25 +4,25 @@ class TWC_Infantry_1990_Regular_Woodland_Rifleman: TWC_Infantry_Millennial_Base
 {
 	scope = 2;
 	displayName = "Rifleman";
-	weapons[]=
+	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
 		"Throw",
 		"Put"
 	};
-	respawnweapons[]=
+	respawnweapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
 		"Throw",
 		"Put"
 	};
-	magazines[]=
+	magazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		"SmokeShell"
 	};
-	respawnmagazines[]=
+	respawnmagazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
@@ -32,20 +32,22 @@ class TWC_Infantry_1990_Regular_Woodland_Rifleman: TWC_Infantry_Millennial_Base
 class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
 	displayName = "Rifleman (AT)";
-	weapons[]=
+	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
 		"ukcw_law80",
 		"Throw",
 		"Put"
 	};
-	respawnweapons[]=
+	respawnweapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
 		"ukcw_law80",
 		"Throw",
 		"Put"
 	};
+	magazines[] += {"ukcw_law80_magazine_spotting"};
+	respawnmagazines[] += {"ukcw_law80_magazine_spotting"};
 };
 class TWC_Infantry_1990_Regular_Woodland_Gunner: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
