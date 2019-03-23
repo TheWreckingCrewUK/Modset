@@ -1483,7 +1483,148 @@ class cfgweapons
 		};
 	};
 	
-	class CUP_arifle_M16_Base;
+	class CUP_arifle_M16_Base: Rifle_Base_F
+	{
+		
+		class Single:Mode_SemiAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_M4_Base: CUP_arifle_M16_Base
+	{
+		
+		class Single:Mode_SemiAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+		class FullAuto:Mode_FullAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_HK416_145_Base: Rifle_Base_F
+	{
+		
+		class Single:Mode_SemiAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+		class FullAuto:Mode_FullAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_HK416_11_Base: CUP_arifle_HK416_145_Base
+	{
+		
+		class Single:Mode_SemiAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+		class FullAuto:Mode_FullAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_HK417_Base: CUP_arifle_HK416_145_Base
+	{
+		
+		class Single:Mode_SemiAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+		class FullAuto:Mode_FullAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
+	
+	class CUP_arifle_XM8_Base: Rifle_Base_F
+	{
+		
+		class Single:Mode_SemiAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_aug_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_aug_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+		class FullAuto:Mode_FullAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_aug_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
+	
+	class CUP_sgun_AA12: Rifle_Base_F
+	{
+		
+		class FullAuto:Mode_FullAuto {
+			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_m590_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
 	class CUP_arifle_M16A2: CUP_arifle_M16_Base
 	{
 		
