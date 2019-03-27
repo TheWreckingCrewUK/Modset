@@ -52,7 +52,8 @@ class CfgPatches {
 			"TWC_AmmoBox_Other_Stinger_Portable",
 			"TWC_AmmoBox_Other_Command_Portable",
 			"TWC_AmmoBox_Other_Pallet",
-			"TWC_AmmoBox_Other_Empty_Portable" 
+			"TWC_AmmoBox_Other_Empty_Portable",
+			"TWC_AmmoBox_Training_Medical_Base"
 		};
 		
 		weapons[] = {};
@@ -135,4 +136,5 @@ class CfgVehicles {
 	#include "crates_vehicles.hpp"
 	#include "crates_other.hpp"
 	#include "crates_launchers.hpp"
+	#include "crates_training.hpp"
 };
