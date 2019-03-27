@@ -31,6 +31,7 @@ class CfgFunctions {
 			class positionToString {};
 			class isNightTime {};
 			class objectAmbientLight {};
+			class unflipVehicleQuick {};
 			
 			/** DEBUG TOOLS **/
 			class drawBoundingBox {};
