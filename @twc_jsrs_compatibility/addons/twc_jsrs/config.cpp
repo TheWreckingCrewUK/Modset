@@ -112,8 +112,8 @@ class cfgsoundshaders
 	{
 		frequency = 0.5;
 	};
-	class jsrs_rpg7v_distance_5m_to_100m_shot_soundshader;
-	class twc_rpg7v_distance_5m_to_100m_shot_soundshader: jsrs_rpg7v_distance_5m_to_100m_shot_soundshader
+	class jsrs_rpg7v_distance_5m_to_50m_shot_soundshader;
+	class twc_rpg7v_distance_5m_to_50m_shot_soundshader: jsrs_rpg7v_distance_5m_to_50m_shot_soundshader
 	{
 		samples[]=
 		{
@@ -303,7 +303,7 @@ class cfgsoundshaders
 			{20,0}
 		};
 	};
-	class jsrs_m136_distance_5m_to_100m_shot_soundshader: jsrs_pistol_shell_inroom_soundshader
+	class jsrs_m136_distance_5m_to_50m_shot_soundshader: jsrs_pistol_shell_inroom_soundshader
 	{
 		samples[]=
 		{
@@ -322,7 +322,7 @@ class cfgsoundshaders
 			{100,0}
 		};
 	};
-	class jsrs_m136_distance_100m_to_400m_shot_soundshader: jsrs_pistol_shell_inroom_soundshader
+	class jsrs_m136_distance_50m_to_300m_shot_soundshader: jsrs_pistol_shell_inroom_soundshader
 	{
 		samples[]=
 		{
@@ -403,7 +403,7 @@ class cfgsoundshaders
 		};
 	};
 	
-	class twc_jsrs_g36_distance_5m_to_100m_shot_soundshader: jsrs_pistol_shell_inroom_soundshader
+	class twc_jsrs_g36_distance_5m_to_50m_shot_soundshader: jsrs_pistol_shell_inroom_soundshader
 	{
 		samples[]=
 		{
@@ -478,7 +478,7 @@ class cfgsoundsets
 	class twc_L85_Shot_Soundset: 3CB_BAF_L85_Shot_SoundSet
 	{
 		
-		soundshaders[] = {"jsrs_g36_interior_shot_soundshader","jsrs_g36_interior_shot_2_soundshader","jsrs_1903_distance_0m_to_5m_shot_soundshader","jsrs_fnfal_distance_5m_to_100m_shot_soundshader","jsrs_g3_distance_100m_to_400m_shot_soundshader","jsrs_g3_distance_400m_to_800m_shot_soundshader","jsrs_g3_distance_800m_to_1500m_shot_soundshader","jsrs_g3_distance_1500m_to_2500m_shot_soundshader"};
+		soundshaders[] = {"jsrs_g36_interior_shot_soundshader","jsrs_g36_interior_shot_2_soundshader","jsrs_1903_distance_0m_to_5m_shot_soundshader","jsrs_fnfal_distance_5m_to_50m_shot_soundshader","jsrs_g3_distance_50m_to_300m_shot_soundshader","jsrs_g3_distance_400m_to_800m_shot_soundshader","jsrs_g3_distance_800m_to_1500m_shot_soundshader","jsrs_g3_distance_1500m_to_2500m_shot_soundshader"};
 		volumefactor = 1.5;
 		volumecurve = "jsrs_wpn_rifle556_vl_sin";
 		sound3dprocessingtype = "jsrs_wpn_medium_prc";
@@ -522,8 +522,8 @@ class cfgsoundsets
 			"jsrs_pkm_interior_shot_soundshader",
 			"jsrs_pkm_interior_shot_2_soundshader",
 			"jsrs_cmr76_distance_0m_to_5m_shot_soundshader",
-			"jsrs_pkm_distance_5m_to_100m_shot_soundshader",
-			"jsrs_pkm_distance_100m_to_400m_shot_soundshader",
+			"jsrs_pkm_distance_5m_to_50m_shot_soundshader",
+			"jsrs_pkm_distance_50m_to_300m_shot_soundshader",
 			"jsrs_pkm_distance_400m_to_800m_shot_soundshader",
 			"jsrs_pkm_distance_800m_to_1500m_shot_soundshader",
 			"jsrs_pkm_distance_1500m_to_2500m_shot_soundshader"
@@ -560,8 +560,8 @@ class cfgsoundsets
 			"jsrs_fn3011_interior_shot_soundshader",
 			"jsrs_fn3011_interior_shot_2_soundshader",
 			"jsrs_fn3011_distance_0m_to_5m_shot_soundshader",
-			"jsrs_fn3011_distance_5m_to_100m_shot_soundshader",
-			"jsrs_fn3011_distance_100m_to_400m_shot_soundshader",
+			"jsrs_fn3011_distance_5m_to_50m_shot_soundshader",
+			"jsrs_fn3011_distance_50m_to_300m_shot_soundshader",
 			"jsrs_fn3011_distance_400m_to_800m_shot_soundshader",
 			"jsrs_fn3011_distance_800m_to_1500m_shot_soundshader",
 			"jsrs_fn3011_distance_1500m_to_2500m_shot_soundshader"
@@ -581,7 +581,7 @@ class cfgsoundsets
 	class 3CB_BAF_L129_Shot_SoundSet;
 	class twc_L129_Shot_Soundset: 3CB_BAF_L129_Shot_SoundSet
 	{
-	soundshaders[] = {"jsrs_fn3011_closure_soundshader","jsrs_fn3011_interior_shot_soundshader","jsrs_fn3011_interior_shot_2_soundshader","jsrs_fn3011_distance_0m_to_5m_shot_soundshader","jsrs_fn3011_distance_5m_to_100m_shot_soundshader","jsrs_fn3011_distance_100m_to_400m_shot_soundshader","jsrs_fn3011_distance_400m_to_800m_shot_soundshader","jsrs_fn3011_distance_800m_to_1500m_shot_soundshader","jsrs_fn3011_distance_1500m_to_2500m_shot_soundshader"};
+	soundshaders[] = {"jsrs_fn3011_closure_soundshader","jsrs_fn3011_interior_shot_soundshader","jsrs_fn3011_interior_shot_2_soundshader","jsrs_fn3011_distance_0m_to_5m_shot_soundshader","jsrs_fn3011_distance_5m_to_50m_shot_soundshader","jsrs_fn3011_distance_50m_to_300m_shot_soundshader","jsrs_fn3011_distance_400m_to_800m_shot_soundshader","jsrs_fn3011_distance_800m_to_1500m_shot_soundshader","jsrs_fn3011_distance_1500m_to_2500m_shot_soundshader"};
 		volumefactor=1.4;
 		volumecurve="jsrs_wpn_dmr_vl_sin";
 		sound3dprocessingtype="jsrs_wpn_medium_prc";
@@ -601,8 +601,8 @@ class cfgsoundsets
 		{
 			"twc_gmg_closure_soundshader",
 			"jsrs_hmg_distance_0m_to_5m_shot_soundshader",
-			"jsrs_hmg_distance_5m_to_100m_shot_soundshader",
-			"jsrs_hmg_distance_100m_to_400m_shot_soundshader",
+			"jsrs_hmg_distance_5m_to_50m_shot_soundshader",
+			"jsrs_hmg_distance_50m_to_300m_shot_soundshader",
 			"jsrs_hmg_distance_400m_to_800m_shot_soundshader",
 			"jsrs_hmg_distance_800m_to_1500m_shot_soundshader",
 			"jsrs_hmg_distance_1500m_to_2500m_shot_soundshader"
@@ -626,8 +626,8 @@ class cfgsoundsets
 			"jsrs_awm_interior_shot_soundshader",
 			"jsrs_awm_interior_shot_2_soundshader",
 			"twc_jsrs_GPMG_distance_0m_to_5m_shot_soundshader",
-			"jsrs_m107_distance_5m_to_100m_shot_soundshader",
-			"jsrs_M2_distance_100m_to_400m_shot_soundshader",
+			"jsrs_m107_distance_5m_to_50m_shot_soundshader",
+			"jsrs_m107_distance_50m_to_300m_shot_soundshader",
 			"jsrs_M2_distance_400m_to_800m_shot_soundshader",
 			"jsrs_M2_distance_800m_to_1500m_shot_soundshader",
 			"jsrs_M2_distance_1500m_to_2500m_shot_soundshader"};
@@ -651,8 +651,8 @@ class cfgsoundsets
 			"jsrs_spmg_interior_shot_soundshader",
 			"jsrs_spmg_interior_shot_2_soundshader",
 			"jsrs_spmg_distance_0m_to_5m_shot_soundshader",
-			"jsrs_spmg_distance_5m_to_100m_shot_soundshader",
-			"jsrs_spmg_distance_100m_to_400m_shot_soundshader",
+			"jsrs_spmg_distance_5m_to_50m_shot_soundshader",
+			"jsrs_spmg_distance_50m_to_300m_shot_soundshader",
 			"jsrs_spmg_distance_400m_to_800m_shot_soundshader",
 			"jsrs_spmg_distance_800m_to_1500m_shot_soundshader",
 			"jsrs_spmg_distance_1500m_to_2500m_shot_soundshader"};
@@ -672,8 +672,8 @@ class cfgsoundsets
 	class twc_L111_soundset: jsrs_m240_shot_soundset
 	{
 		soundshaders[] = {"jsrs_m107_distance_0m_to_5m_shot_soundshader",
-			"jsrs_Cannon20_distance_5m_to_100m_shot_soundshader",
-			"jsrs_Cannon30_distance_100m_to_400m_shot_soundshader",
+			"jsrs_cannon20_distance_5m_to_50m_shot_soundshader",
+			"jsrs_cannon20_distance_50m_to_300m_shot_soundshader",
 			"jsrs_Cannon30_distance_400m_to_800m_shot_soundshader",
 			"jsrs_Cannon20_distance_800m_to_1500m_shot_soundshader",
 			"jsrs_Cannon20_distance_1500m_to_2500m_shot_soundshader"};
@@ -697,8 +697,8 @@ class cfgsoundsets
 			"jsrs_type115arx_interior_shot_soundshader",
 			"jsrs_type115arx_interior_shot_2_soundshader",
 			"jsrs_m590_distance_0m_to_5m_shot_soundshader",
-			"jsrs_m590_distance_5m_to_100m_shot_soundshader",
-			"jsrs_m590_distance_100m_to_400m_shot_soundshader",
+			"jsrs_m590_distance_5m_to_50m_shot_soundshader",
+			"jsrs_m590_distance_50m_to_300m_shot_soundshader",
 			"jsrs_m590_distance_400m_to_800m_shot_soundshader",
 			"jsrs_m590_distance_800m_to_1500m_shot_soundshader",
 			"jsrs_m590_distance_1500m_to_2500m_shot_soundshader"
