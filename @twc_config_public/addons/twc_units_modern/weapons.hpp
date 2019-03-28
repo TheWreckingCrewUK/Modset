@@ -1,10 +1,20 @@
-
+class asdg_FrontSideRail;
+class asdg_OpticRail1913;
+class CUP_PicatinnyTopShortMount;
+class CUP_PicatinnySideMount;
+class UK3CB_underbarrel_rifle_slot;
+class asdg_MuzzleSlot_762_L129_3CB;
+class asdg_OpticRail1913_short;
+class asdg_UnderSlot;
+class rhs_western_rifle_scopes_slot_short;
+class rhs_western_rifle_laser_slot_top;
+class rhs_western_rifle_gripod_slot;
 
 
 class cfgWeapons
 {
 //////////////////////////////  Modern  //////////////////////////////
-	class UK3CB_BAF_L85A2_RIS;
+	
 	class UK3CB_BAF_L110A2RIS;
 	class UK3CB_BAF_L129A1;
 	class UK3CB_BAF_L128A1;
@@ -464,6 +474,11 @@ class cfgWeapons
 		};
 	};
 	
+	class UK3CB_BAF_L85A2_RIS : UK3CB_BAF_L85A2
+	{
+		class WeaponSlotsInfo;
+	};
+	
 	class UK3CB_BAF_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS
 	{
 		scope = 1;
@@ -481,6 +496,22 @@ class cfgWeapons
 				item="UK3CB_BAF_LLM_IR_Black";
 			};
 		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					RKSL_optic_LDS = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class asdg_FrontSideRail_L85: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 84;
+		};
 	};
 		class UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN: UK3CB_BAF_L85A2_RIS_Tan
 	{
@@ -493,6 +524,22 @@ class cfgWeapons
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
 				item="RKSL_optic_LDS";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					RKSL_optic_LDS = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class asdg_FrontSideRail_L85: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 84;
 		};
 	};
 	
@@ -512,6 +559,22 @@ class cfgWeapons
 				slot="asdg_FrontSideRail_UK3CB_BAF_L110A2";
 				item="UK3CB_BAF_LLM_IR_Black";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L110A2: asdg_OpticRail1913 {
+				class compatibleItems {
+					RKSL_optic_LDS = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class asdg_FrontSideRail_UK3CB_BAF_L110A2: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 176;
 		};
 	};
 	class UK3CB_BAF_L129A1_Grippod_TA648: UK3CB_BAF_L129A1
@@ -536,6 +599,32 @@ class cfgWeapons
 				item="UK3CB_underbarrel_acc_fgrip_bipod";
 			};
 		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L129A1: asdg_OpticRail1913 {
+				class compatibleItems {
+					UK3CB_BAF_TA648_308 = 1;
+					UK3CB_BAF_Kite = 1;
+					UK3CB_BAF_MaxiKite = 1;
+				};
+			};
+			class asdg_FrontSideRail_UK3CB_BAF_L129A1: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			class UK3CB_underbarrel_rifle_slot: UK3CB_underbarrel_rifle_slot {
+				class compatibleItems {
+					UK3CB_underbarrel_acc_fgrip = 1;
+					UK3CB_underbarrel_acc_afg = 1;
+					UK3CB_underbarrel_acc_grippod = 1;
+					UK3CB_underbarrel_acc_bipod = 1;
+					UK3CB_underbarrel_acc_fgrip_bipod = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 97;
+		};
 	};
 	class UK3CB_BAF_L128A1_Eotech: UK3CB_BAF_L128A1
 	{
@@ -554,6 +643,21 @@ class cfgWeapons
 				item="UK3CB_BAF_LLM_IR_Black";
 			};
 		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L128A1: asdg_OpticRail1913 {
+				class compatibleItems {
+					UK3CB_BAF_Eotech = 1;
+				};
+			};
+			class asdg_FrontSideRail_UK3CB_BAF_L128A1: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 84;
+		};
 	};
 	class UK3CB_BAF_L85A2_UGL_ELCAN3D: UK3CB_BAF_L85A2_UGL
 	{
@@ -571,6 +675,22 @@ class cfgWeapons
 				slot="asdg_FrontSideRail_L85";
 				item="UK3CB_BAF_LLM_IR_Black";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					RKSL_optic_LDS = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class asdg_FrontSideRail_L85: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 117;
 		};
 	};
 //////////////////////////////  Others  //////////////////////////////	
@@ -601,6 +721,37 @@ class cfgWeapons
 				slot="asdg_MuzzleSlot_UK3CB_BAF_L129A1";
 				item="UK3CB_BAF_Silencer_L115A3";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L129A1: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_premier = 1;
+					UK3CB_BAF_Kite = 1;
+					UK3CB_BAF_MaxiKite = 1;
+				};
+			};
+			class asdg_FrontSideRail_UK3CB_BAF_L129A1: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_Flashlight_Black = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L129A1: asdg_MuzzleSlot_762_L129_3CB {
+				class compatibleItems {
+					UK3CB_BAF_Silencer_L115A3 = 1;
+				};
+			};
+			class UK3CB_underbarrel_rifle_slot: UK3CB_underbarrel_rifle_slot {
+				class compatibleItems {
+					UK3CB_underbarrel_acc_fgrip = 1;
+					UK3CB_underbarrel_acc_afg = 1;
+					UK3CB_underbarrel_acc_grippod = 1;
+					UK3CB_underbarrel_acc_bipod = 1;
+					UK3CB_underbarrel_acc_fgrip_bipod = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 97;
 		};
 	};
 	
@@ -708,6 +859,21 @@ class cfgWeapons
 				item="cup_acc_flashlight";
 			};
 		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountAK: CUP_PicatinnyTopShortMount {
+				class compatibleItems {
+					rhsusf_acc_eotech_552 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountAK: CUP_PicatinnySideMount {
+				class compatibleItems {
+					cup_acc_flashlight = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 70.4;
+		};
 	};
 	
 	class CUP_arifle_AK102_top_rail;
@@ -747,6 +913,21 @@ class cfgWeapons
 				item="rhsusf_acc_sf3p556";
 			};
 		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountAK: CUP_PicatinnyTopShortMount {
+				class compatibleItems {
+					rhsusf_acc_eotech_552 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountAK: CUP_PicatinnySideMount {
+				class compatibleItems {
+					cup_acc_flashlight = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 70.4;
+		};
 	};
 	
 	
@@ -783,6 +964,21 @@ class cfgWeapons
 				slot="CUP_PicatinnySideMountAK";
 				item="cup_acc_flashlight";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountAK: CUP_PicatinnyTopShortMount {
+				class compatibleItems {
+					rhsusf_acc_eotech_552 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountAK: CUP_PicatinnySideMount {
+				class compatibleItems {
+					cup_acc_flashlight = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 70.4;
 		};
 	};
 	
@@ -861,6 +1057,26 @@ class cfgWeapons
 				item="rhsusf_acc_grip1";
 			};
 		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_ACOG = 1;
+				};
+			};
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					rhsusf_acc_anpeq15_bk = 1;
+				};
+			};
+			class GripodSlot: rhs_western_rifle_gripod_slot {
+				class compatibleItems {
+					rhsusf_acc_grip1 = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 73.04;
+		};
 	};
 	
 	class rhs_weap_m4_m203;
@@ -879,6 +1095,21 @@ class cfgWeapons
 				slot="PointerSlot";
 				item="rhs_acc_2dpZenit_ris";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_ACOG = 1;
+				};
+			};
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					rhs_acc_2dpZenit_ris = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 102.96;
 		};
 	};
 	
