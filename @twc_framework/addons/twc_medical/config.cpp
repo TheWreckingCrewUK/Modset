@@ -88,6 +88,7 @@ class Extended_PostInit_EventHandlers {
 	};
 };
 
+#include "ui\menu.hpp"
 #include "CfgEden.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgSounds.hpp"
