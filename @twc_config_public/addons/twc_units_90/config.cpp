@@ -122,6 +122,7 @@ class CfgPatches
 			"UK3CB_BAF_Equipment_Backpacks",
 			"A3_Weapons_F_Ammoboxes",
 			"UK3CB_BAF_Equipment_Uniforms",
+			"rhs_c_weapons",
 			"rhsusf_c_troops",
 			"rhsgref_c_troops"
 		};

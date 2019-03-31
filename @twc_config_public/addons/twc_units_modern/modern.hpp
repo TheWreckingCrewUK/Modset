@@ -819,25 +819,29 @@
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L22A2"
+			"UK3CB_BAF_L22A2",
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L22A2"
+			"UK3CB_BAF_L22A2",
+			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
 		{
 			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
 			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",	
 			"SmokeShell",
 			"SmokeShell"
 		};
@@ -1231,7 +1235,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"SmokeShellRed",
 			"SmokeShellPurple",
 			"SmokeShellPurple",
-			"SmokeShellPurple",
+			"Laserbatteries",
 			"B_IR_Grenade"
 		};
 		Respawnmagazines[]=
@@ -1256,7 +1260,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"SmokeShellRed",
 			"SmokeShellPurple",
 			"SmokeShellPurple",
-			"SmokeShellPurple",
+			"Laserbatteries",
 			"B_IR_Grenade"
 		};
 	};

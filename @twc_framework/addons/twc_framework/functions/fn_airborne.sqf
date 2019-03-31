@@ -81,6 +81,7 @@ if (isServer) then
 		_plane setObjectTextureGlobal[3,"\an12bkv3\liveries\18\An12wing.pac"];
 	};
 	_crewGroup = _vehicle select 2;
+	_crewGroup setBehaviour "CARELESS";
 	
 	_plane flyInHeight 200;
 	_plane setVelocity [(sin _dir) * 80, (cos _dir) * 80, 0];
@@ -102,7 +103,7 @@ if (isServer) then
 	{
 		params ["_v"];
 		_cargo = assignedCargo _v;
-		_delay =  (1/(((speed _v) max 55)/150));
+		_delay = (1/(((speed _v) max 55)/150));
 		{
 			// perform action only for cargo
 			_x disableAI "MOVE";
@@ -112,7 +113,8 @@ if (isServer) then
 			[_x] allowGetIn false;
 			_x setDir (getDir _v);
 
-			sleep _delay;
+			//sleep _delay;
+			sleep 0.2;
 
 			//if units don't have a parachute type backpack then create parachute for him
 			private _type = getText (configFile >> "cfgVehicles" >> backpack _x >> "ParachuteClass");
@@ -134,11 +136,15 @@ if (isServer) then
 			_x enableCollisionWith _v;
 		} foreach _cargo;
 	};
-
+	
+	_destination_2 = _destination getPos [400, _pos getDir _destination];
+	
 	_waypoint_plane_1 = _crewGroup addWaypoint [_destination, 0];
 	_waypoint_plane_1 setWaypointType "MOVE";
 	_waypoint_plane_1 setWaypointStatements ["true", "[vehicle this] spawn twc_ai_paradrop;"];
-	_waypoint_plane_2 = _crewGroup addWaypoint [_end, 0];
+	_waypoint_plane_2 = _crewGroup addWaypoint [_destination_2, 0];
 	_waypoint_plane_2 setWaypointType "MOVE";
-	_waypoint_plane_2 setWaypointStatements ["true", "_vehicle = vehicle this; {_vehicle deleteVehicleCrew _x} forEach (crew _vehicle); deleteVehicle _vehicle"];
+	_waypoint_plane_3 = _crewGroup addWaypoint [_end, 0];
+	_waypoint_plane_3 setWaypointType "MOVE";
+	_waypoint_plane_3 setWaypointStatements ["true", "_vehicle = vehicle this; {_vehicle deleteVehicleCrew _x} forEach (crew _vehicle); deleteVehicle _vehicle"];
 };

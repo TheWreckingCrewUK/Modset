@@ -31,158 +31,7 @@ class CfgPatches {
 	};
 };
 
-
-class CfgAmmo {
-	class GrenadeHand;
-	class GrenadeHand_stone: GrenadeHand
-	{
-		ace_frag_enabled = 0;
-		explosionTime = 0;
-		caliber = 0.1;
-		cost = 0;
-		dangerRadiusHit = 0;
-		minimumSafeZone = 0;
-		explosionEffectsRadius = 0;
-		/*hit = 0.1;
-		indirectHit = 0.2;
-		indirectHitRange = 0.1;*/
-		simulation = "shotShell";
-		SoundSetExplosion[] = {};
-		soundHit1[] = {};
-		soundHit2[] = {};
-		soundHit3[] = {};
-		soundHit4[] = {};
-	};
-	
-	/*
-	class FlareBase;
-	class F_40mm_White: FlareBase
-	{
-		brightness  = 75;
-		intensity = 1000000;
-		coefgravity = 0.13;
-		timeToLive = 140;
-	};
-	*/
-	class RocketBase;
-	class CUP_R_OG7_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7V_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7VL_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7VM_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7VR_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_RPG18_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",2,0.9,500};
-	};
-	class CUP_R_TBG7V_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	
-	class IRStrobeBase;
-	class B_IRstrobe: IRStrobeBase
-	{
-		timeToLive=150000;
-	};
-	
-	class Chemlight_base;
-	class ACE_G_Chemlight_IR: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Blue: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Red: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Green: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Yellow: Chemlight_base {
-		timeToLive = 150000;
-	};
-	
-	class B_338_Ball;
-	class ACE_338_Ball_API526: B_338_Ball
-	{
-		caliber = 6;
-		penetrationDirDistribution = 0.05;
-	};
-	class BulletBase;
-	class B_127x99_Ball: BulletBase
-	{
-		class CamShakePlayerFire {
-			distance = 1;
-			duration = 1;
-			frequency = 10;
-			power = 30;
-		};
-	};
-	
-	
-	
-	class B_556x45_Ball;
-	class rhs_ammo_556x45_M855A1_Ball: B_556x45_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class rhs_ammo_556x45_M855A1_Ball_Red: rhs_ammo_556x45_M855A1_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class B_556x45_Ball_Tracer_Red: B_556x45_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class UK3CB_BAF_556_Ball_Tracer_Red: B_556x45_Ball_Tracer_Red
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class UK3CB_BAF_556_Ball: B_556x45_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class B_762x51_Ball;
-	class UK3CB_BAF_762_Ball_L42A1_Tracer_Red: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class UK3CB_BAF_762_Ball_L42A1: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class B_762x51_Tracer_Red: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class UK3CB_BAF_762_Ball: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class UK3CB_BAF_762_Ball_Tracer_Red: B_762x51_Tracer_Red
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-};
+#include "CfgAmmo.hpp"
 
 class mode_fullauto;
 class CfgWeapons {
@@ -935,7 +784,7 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class Helicopter_Base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2} else {_rec = 1}; addCamShake [_rec, 0.5, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.6; addCamShake [_rec, 0.5, 15]};";
 		};
 	};
 	class Plane {
@@ -1035,17 +884,17 @@ class Extended_FiredBIS_EventHandlers {
 	//ww2 tanks, not as much recoil management or optic magnification so a bit more shake
 	class LIB_Tank_base {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 1.5)};addCamShake [_rec * 0.1, _time * 3, 9]} else {if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 4)};};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class fow_v_cromwell {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.3;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.3;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 1.5)};addCamShake [_rec * 0.1, _time * 3, 9]} else {if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 4)};};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class churchill_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 1.5)};addCamShake [_rec * 0.1, _time * 3, 9]} else {if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 4)};};addCamShake [_rec, _time, 15];};";
 		};
 	};
 };
@@ -1282,7 +1131,8 @@ class CfgVehicles {
 		{
 			class MainTurret : MainTurret
 			{
-				magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+				magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+				stabilizedInAxes = 0;
 			};
 		};
 	};
@@ -1809,4 +1659,135 @@ class cfgMagazines
 	
 };
 
+class twc_APIbullet_effect
+{
+	class incendiary
+	{
+       simulation = "light";   //type of simulation - particles or light
+       type = "CmeasuresLight";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.08;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 0.001;
+	   interval = 1;
+   };
+	class smoke2
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       //type = "AutoCannonFired";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       type = "Cmeasures2";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+	class smoke
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "AutoCannonFired";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
 
+class twc_APIbullet_effect_ground
+{
+	class hit_target
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "ImpactDust2";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
+
+class twc_APIbullet_effect_man:twc_APIbullet_effect
+{
+	class hit_target
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "BloodMist";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.9;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
+
+class twc_127_hiteffect_grey
+{
+	class smoke
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "AutoCannonFired";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.3;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
+
+class GrenadeExplosion
+{
+	class GrenadeExp1
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "GrenadeBubbles1";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = -1;                //1 effect is enabled, -1 effect is disabled
+	   //Hobbs note, disabled intentionally
+	   intensity = 1;
+	};
+	class GrenadeBubbles
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "GrenadeBubbles1";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.1;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+	};
+	class GrenadeSmoke1
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "GrenadeSmoke1";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 1;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+	};
+	class Light1
+	{
+       simulation = "light";   //type of simulation - particles or light
+       type = "GrenadeExploLight";         //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 0.01;
+	};
+};

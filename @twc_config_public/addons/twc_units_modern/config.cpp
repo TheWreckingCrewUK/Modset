@@ -88,6 +88,7 @@ class CfgPatches {
 			"cup_wheeledvehicles_mastiff",
 			"rhsusf_vehicles",
 			"rhs_c_weapons",
+			"cup_weapons_ak",
 			"rhsgref_c_weapons",
 			"rhsusf_c_weapons",
 			"uk3cb_baf_vehicles_landrover",

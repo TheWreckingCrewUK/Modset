@@ -1,10 +1,20 @@
-
+class asdg_FrontSideRail;
+class asdg_OpticRail1913;
+class CUP_PicatinnyTopShortMount;
+class CUP_PicatinnySideMount;
+class UK3CB_underbarrel_rifle_slot;
+class asdg_MuzzleSlot_762_L129_3CB;
+class asdg_OpticRail1913_short;
+class asdg_UnderSlot;
+class rhs_western_rifle_scopes_slot_short;
+class rhs_western_rifle_laser_slot_top;
+class rhs_western_rifle_gripod_slot;
 
 
 class cfgWeapons
 {
 //////////////////////////////  Modern  //////////////////////////////
-	class UK3CB_BAF_L85A2_RIS;
+	
 	class UK3CB_BAF_L110A2RIS;
 	class UK3CB_BAF_L129A1;
 	class UK3CB_BAF_L128A1;
@@ -386,7 +396,7 @@ class cfgWeapons
 	{
 		displayname = "HK MG3";
 		twc_openbolt = 1;
-		magazines[] = {"UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_T","UK3CB_BAF_762_200Rnd_Blank"};
+		magazines[] = {"rhsusf_50Rnd_762x51","rhsusf_50Rnd_762x51_m61_ap","rhsusf_50Rnd_762x51_m62_tracer","rhsusf_50Rnd_762x51_m80a1epr","rhsusf_50Rnd_762x51_m82_blank","rhsusf_100Rnd_762x51","rhsusf_100Rnd_762x51_m61_ap","rhsusf_100Rnd_762x51_m62_tracer","rhsusf_100Rnd_762x51_m80a1epr","rhsusf_100Rnd_762x51_m82_blank","rhsusf_50Rnd_762x51_m993","rhsusf_100Rnd_762x51_m993","UK3CB_BAF_762_100Rnd","UK3CB_BAF_762_100Rnd_Blank","UK3CB_BAF_762_100Rnd_T","UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_Blank","UK3CB_BAF_762_200Rnd_T"};
 	};
 	
 	class rhs_weap_M590_5RD: Rifle_Base_F
@@ -399,7 +409,39 @@ class cfgWeapons
 	{
 		recoil = "twc_mg_762";
 		recoilProne = "twc_mg_prone";
+		magazines[] = {"rhsusf_50Rnd_762x51","rhsusf_50Rnd_762x51_m61_ap","rhsusf_50Rnd_762x51_m62_tracer","rhsusf_50Rnd_762x51_m80a1epr","rhsusf_50Rnd_762x51_m82_blank","rhsusf_100Rnd_762x51","rhsusf_100Rnd_762x51_m61_ap","rhsusf_100Rnd_762x51_m62_tracer","rhsusf_100Rnd_762x51_m80a1epr","rhsusf_100Rnd_762x51_m82_blank","rhsusf_50Rnd_762x51_m993","rhsusf_100Rnd_762x51_m993","UK3CB_BAF_762_100Rnd","UK3CB_BAF_762_100Rnd_Blank","UK3CB_BAF_762_100Rnd_T","UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_Blank","UK3CB_BAF_762_200Rnd_T"};
+		
 	};
+	class rhs_weap_m240B: rhs_weap_m240_base
+	{
+		class Manual;
+	};
+	class rhs_weap_m240B_twcslow_base: rhs_weap_m240B
+	{
+		displayname = "M240B (Slow)";
+		class Manual: Manual
+		{
+			reloadtime = 0.14;
+		};
+	};
+	class rhs_weap_m240B_twcslow: rhs_weap_m240B_twcslow_base
+	{
+		twc_openbolt = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_ELCAN";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15A";
+			};
+		};
+	};
+	
 	
 	class rhs_weap_m4_Base: arifle_MX_Base_F
 	{
@@ -432,6 +474,11 @@ class cfgWeapons
 		};
 	};
 	
+	class UK3CB_BAF_L85A2_RIS : UK3CB_BAF_L85A2
+	{
+		class WeaponSlotsInfo;
+	};
+	
 	class UK3CB_BAF_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS
 	{
 		scope = 1;
@@ -449,6 +496,22 @@ class cfgWeapons
 				item="UK3CB_BAF_LLM_IR_Black";
 			};
 		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					RKSL_optic_LDS = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class asdg_FrontSideRail_L85: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 84;
+		};
 	};
 		class UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN: UK3CB_BAF_L85A2_RIS_Tan
 	{
@@ -461,6 +524,22 @@ class cfgWeapons
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
 				item="RKSL_optic_LDS";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					RKSL_optic_LDS = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class asdg_FrontSideRail_L85: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 84;
 		};
 	};
 	
@@ -480,6 +559,22 @@ class cfgWeapons
 				slot="asdg_FrontSideRail_UK3CB_BAF_L110A2";
 				item="UK3CB_BAF_LLM_IR_Black";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L110A2: asdg_OpticRail1913 {
+				class compatibleItems {
+					RKSL_optic_LDS = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class asdg_FrontSideRail_UK3CB_BAF_L110A2: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 176;
 		};
 	};
 	class UK3CB_BAF_L129A1_Grippod_TA648: UK3CB_BAF_L129A1
@@ -504,6 +599,32 @@ class cfgWeapons
 				item="UK3CB_underbarrel_acc_fgrip_bipod";
 			};
 		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L129A1: asdg_OpticRail1913 {
+				class compatibleItems {
+					UK3CB_BAF_TA648_308 = 1;
+					UK3CB_BAF_Kite = 1;
+					UK3CB_BAF_MaxiKite = 1;
+				};
+			};
+			class asdg_FrontSideRail_UK3CB_BAF_L129A1: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			class UK3CB_underbarrel_rifle_slot: UK3CB_underbarrel_rifle_slot {
+				class compatibleItems {
+					UK3CB_underbarrel_acc_fgrip = 1;
+					UK3CB_underbarrel_acc_afg = 1;
+					UK3CB_underbarrel_acc_grippod = 1;
+					UK3CB_underbarrel_acc_bipod = 1;
+					UK3CB_underbarrel_acc_fgrip_bipod = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 97;
+		};
 	};
 	class UK3CB_BAF_L128A1_Eotech: UK3CB_BAF_L128A1
 	{
@@ -522,6 +643,21 @@ class cfgWeapons
 				item="UK3CB_BAF_LLM_IR_Black";
 			};
 		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L128A1: asdg_OpticRail1913 {
+				class compatibleItems {
+					UK3CB_BAF_Eotech = 1;
+				};
+			};
+			class asdg_FrontSideRail_UK3CB_BAF_L128A1: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 84;
+		};
 	};
 	class UK3CB_BAF_L85A2_UGL_ELCAN3D: UK3CB_BAF_L85A2_UGL
 	{
@@ -539,6 +675,22 @@ class cfgWeapons
 				slot="asdg_FrontSideRail_L85";
 				item="UK3CB_BAF_LLM_IR_Black";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					RKSL_optic_LDS = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class asdg_FrontSideRail_L85: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_IR_Black = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 117;
 		};
 	};
 //////////////////////////////  Others  //////////////////////////////	
@@ -569,6 +721,37 @@ class cfgWeapons
 				slot="asdg_MuzzleSlot_UK3CB_BAF_L129A1";
 				item="UK3CB_BAF_Silencer_L115A3";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L129A1: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_premier = 1;
+					UK3CB_BAF_Kite = 1;
+					UK3CB_BAF_MaxiKite = 1;
+				};
+			};
+			class asdg_FrontSideRail_UK3CB_BAF_L129A1: asdg_FrontSideRail {
+				class compatibleItems {
+					UK3CB_BAF_LLM_Flashlight_Black = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L129A1: asdg_MuzzleSlot_762_L129_3CB {
+				class compatibleItems {
+					UK3CB_BAF_Silencer_L115A3 = 1;
+				};
+			};
+			class UK3CB_underbarrel_rifle_slot: UK3CB_underbarrel_rifle_slot {
+				class compatibleItems {
+					UK3CB_underbarrel_acc_fgrip = 1;
+					UK3CB_underbarrel_acc_afg = 1;
+					UK3CB_underbarrel_acc_grippod = 1;
+					UK3CB_underbarrel_acc_bipod = 1;
+					UK3CB_underbarrel_acc_fgrip_bipod = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 97;
 		};
 	};
 	
@@ -602,23 +785,57 @@ class cfgWeapons
 	};
 	
 	
-	class rhs_weap_ak74m_npz;
-	class twc_beryl_base: rhs_weap_ak74m_npz
+	class CUP_arifle_AK_Base: Rifle_Base_F
 	{
-		scope = 1;
+		class Single;
+		class Burst;
+		class FullAuto;
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	class CUP_arifle_AK102: CUP_arifle_AK_Base
+	{
+		
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {
+					"RHS_AK74_Shot_SoundSet",
+					"RHS_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {
+					"RHS_AK74_Shot_SoundSet",
+					"RHS_Rifle1_Tail_SoundSet"};
+			};			
+		};
+		class Burst:Burst {
+			class standardsound {
+				soundSetShot[] = {
+					"RHS_AK74_Shot_SoundSet",
+					"RHS_Rifle1_Tail_SoundSet"};
+			};			
+		};
+	};
+	class CUP_arifle_AK102_railed: CUP_arifle_AK102
+	{
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
 		displayName = "wz.2004 Beryl";
+		//magazineWell[] = {"CBA_556x45_AK"};
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
-		magazineWell[] = {};
 	};
 	
 	
-	class twc_ak74_pol_base: twc_beryl_base
+	class twc_ak74_pol_base: CUP_arifle_AK102_railed
 	{
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
-		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
-		magazineWell[] = {};
+		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit"};
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		modes[] = {"Single","FullAuto","Burst"};
 	};
 	
 
@@ -627,24 +844,47 @@ class cfgWeapons
 		
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
-		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1", "rhsusf_acc_grip3"};
-		magazineWell[] = {};
+		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit"};
+		//magazineWell[] = {};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
-				slot="CowsSlot";
+				slot="CUP_PicatinnyTopMountAK";
 				item="rhsusf_acc_eotech_552";
 			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountAK";
+				item="cup_acc_flashlight";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountAK: CUP_PicatinnyTopShortMount {
+				class compatibleItems {
+					rhsusf_acc_eotech_552 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountAK: CUP_PicatinnySideMount {
+				class compatibleItems {
+					cup_acc_flashlight = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 70.4;
 		};
 	};
 	
-	class rhs_weap_ak74m_desert_npz;
-	class twc_ak74_pol_2_base: rhs_weap_ak74m_desert_npz
+	class CUP_arifle_AK102_top_rail;
+	class twc_ak74_pol_2_base: CUP_arifle_AK102_top_rail
 	{
 		
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
-		magazineWell[] = {};
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		modes[] = {"Single","FullAuto","Burst"};
+	//	magazineWell[] = {};
 	};
 	
 
@@ -653,35 +893,53 @@ class cfgWeapons
 		
 		displayName = "wz.2004 Beryl";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
-		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit", "rhs_acc_dtk1"};
-		magazineWell[] = {};
+		accessories[] = {"rhsusf_acc_eotech_552", "rhs_acc_2dpZenit"};
+	//	magazineWell[] = {};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
-				slot="CowsSlot";
+				slot="CUP_PicatinnyTopMountAK";
 				item="rhsusf_acc_eotech_552";
 			};
 			class LinkedItemsFrontSideRail
 			{
-				slot="PointerSlot";
-				item="rhsusf_acc_wmx_bk";
+				slot="CUP_PicatinnySideMountAK";
+				item="cup_acc_flashlight";
 			};
 			class LinkedItemsMuzzleSlot
 			{
 				slot="GripodSlot";
-				item="rhs_acc_dtk1";
+				item="rhsusf_acc_sf3p556";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountAK: CUP_PicatinnyTopShortMount {
+				class compatibleItems {
+					rhsusf_acc_eotech_552 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountAK: CUP_PicatinnySideMount {
+				class compatibleItems {
+					cup_acc_flashlight = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 70.4;
 		};
 	};
 	
 	
-	class rhs_weap_ak74m_gp25_npz;
-	class twc_ak74_gp25_pol_base: rhs_weap_ak74m_gp25_npz
+	class CUP_arifle_AK108_GL_top_rail;
+	class twc_ak74_gp25_pol_base: CUP_arifle_AK108_GL_top_rail
 	{
 		
 		magazines[] = {"twc_rhsgref_30rnd_556x45_m21", "twc_rhsgref_30rnd_556x45_m21_t"};
-		magazineWell[] = {};
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		modes[] = {"Single","FullAuto"};
+	//	magazineWell[] = {};
 	};
 	
 	
@@ -693,14 +951,34 @@ class cfgWeapons
 		displayName = "wz.2004 Beryl (wz. 74)";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.56mm";
 		accessories[] = {"rhsusf_acc_eotech_552", "rhsusf_acc_wmx_bk", "rhs_acc_dtk1"};
-		magazineWell[] = {};
+		//magazineWell[] = {};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
-				slot="CowsSlot";
+				slot="CUP_PicatinnyTopMountAK";
 				item="rhsusf_acc_eotech_552";
 			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountAK";
+				item="cup_acc_flashlight";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountAK: CUP_PicatinnyTopShortMount {
+				class compatibleItems {
+					rhsusf_acc_eotech_552 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountAK: CUP_PicatinnySideMount {
+				class compatibleItems {
+					cup_acc_flashlight = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 70.4;
 		};
 	};
 	
@@ -740,16 +1018,18 @@ class cfgWeapons
 		};
 	};
 	
-	
-	class twc_MG36_eotech: CUP_arifle_MG36
+	class CUP_arifle_G36A;
+	class twc_MG36_eotech: CUP_arifle_G36A
 	{
-		
+		displayName = "MG36";
+		descriptionShort = "Light Support Weapon<br/>Caliber: 5.56x45mm NATO";
+		magazines[] = {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag","CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag","CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag","CUP_100Rnd_556x45_BetaCMag_camo","CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_camo","CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag_camo","CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag_camo","CUP_100Rnd_556x45_BetaCMag_wdl","CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_wdl","CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag_wdl","CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag_wdl","CUP_30Rnd_556x45_G36","CUP_30Rnd_TE1_Red_Tracer_556x45_G36","CUP_30Rnd_TE1_Green_Tracer_556x45_G36","CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36","CUP_30Rnd_556x45_G36_camo","CUP_30Rnd_TE1_Red_Tracer_556x45_G36_camo","CUP_30Rnd_TE1_Green_Tracer_556x45_G36_camo","CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_camo","CUP_30Rnd_556x45_G36_wdl","CUP_30Rnd_TE1_Red_Tracer_556x45_G36_wdl","CUP_30Rnd_TE1_Green_Tracer_556x45_G36_wdl","CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_wdl","CUP_30Rnd_556x45_XM8","CUP_30Rnd_TE1_Red_Tracer_556x45_XM8","CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_TE1_Yellow_Tracer_556x45_XM8"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
-				slot="CowsSlot";
-				item="UK3CB_BAF_Eotech";
+				slot="UnderBarrelSlot";
+				item="CUP_Bipod_G36";
 			};
 		};
 	};
@@ -777,6 +1057,26 @@ class cfgWeapons
 				item="rhsusf_acc_grip1";
 			};
 		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_ACOG = 1;
+				};
+			};
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					rhsusf_acc_anpeq15_bk = 1;
+				};
+			};
+			class GripodSlot: rhs_western_rifle_gripod_slot {
+				class compatibleItems {
+					rhsusf_acc_grip1 = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 73.04;
+		};
 	};
 	
 	class rhs_weap_m4_m203;
@@ -795,6 +1095,21 @@ class cfgWeapons
 				slot="PointerSlot";
 				item="rhs_acc_2dpZenit_ris";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_ACOG = 1;
+				};
+			};
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					rhs_acc_2dpZenit_ris = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 102.96;
 		};
 	};
 	
@@ -958,8 +1273,6 @@ class cfgWeapons
 
 
 
-
-
 class cfgmagazines{
 		class UGL_FlareGreen_F;
 		class twc_l5a4_g : UGL_FlareGreen_F
@@ -1015,18 +1328,15 @@ class cfgmagazines{
 			mass = 48;
 		};
 		
-		class rhs_30Rnd_545x39_7N10_AK;
-		class twc_rhsgref_30rnd_556x45_m21: rhs_30Rnd_545x39_7N10_AK {
+		class CUP_30Rnd_556x45_AK;
+		class twc_rhsgref_30rnd_556x45_m21: CUP_30Rnd_556x45_AK {
 			descriptionshort = "Caliber: 5.56x45mm<br />Rounds: 30";
-			displayName = "5.56mm 30rnd Mag";
-			ammo = "B_556x45_Ball";
+			displayName = "5.56mm 30rnd";
 		};
-		
-		class twc_rhsgref_30rnd_556x45_m21_t: twc_rhsgref_30rnd_556x45_m21 {
+		class CUP_30Rnd_TE1_Red_Tracer_556x45_AK;
+		class twc_rhsgref_30rnd_556x45_m21_t: CUP_30Rnd_TE1_Red_Tracer_556x45_AK {
 			descriptionshort = "Caliber: 5.56x45mm Tracer<br />Rounds: 30";
-			displayName = "5.56mm 30rnd Tracer Mag";
-			ammo = "B_556x45_Ball";
-			tracersEvery = 1;
+			displayName = "5.56mm 30rnd Tracer";
 		};
 		
 		class FakeMagazine;
@@ -1041,7 +1351,15 @@ class cfgmagazines{
 
 class cfgammo
 {
-	class F_40mm_Red;
+	class FlareBase;
+	class F_40mm_Red: FlareBase
+	{
+		lightColor[] = {0.75,0.5,0.5,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160;
+	};
 	class rhs_40mm_red : F_40mm_Red
 	{
 		lightColor[] = {0.75,0.5,0.5,0};
@@ -1051,7 +1369,14 @@ class cfgammo
 		timeToLive = 160;
 	};
 	
-	class F_40mm_white;
+	class F_40mm_white: FlareBase
+	{
+		lightColor[] = {0.75,0.75,0.75,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160;
+	};
 	class rhs_40mm_white : F_40mm_white
 	{
 		lightColor[] = {0.75,0.75,0.75,0};
@@ -1061,7 +1386,14 @@ class cfgammo
 		timeToLive = 160;
 	};
 	
-	class F_40mm_green;
+	class F_40mm_green: FlareBase
+	{
+		lightColor[] = {0.5,0.75,0.5,0};
+		brightness  = 75;
+		intensity = 1000000;
+		coefgravity = 0.15;
+		timeToLive = 160;
+	};
 	class rhs_40mm_green : F_40mm_green
 	{
 		lightColor[] = {0.5,0.75,0.5,0};
@@ -1070,17 +1402,6 @@ class cfgammo
 		coefgravity = 0.13;
 		timeToLive = 140;
 	};
-	
-	class B_338_Ball;
-	class ACE_338_Ball_API526: B_338_Ball
-	{
-		explosionEffects = "RHS_ExploSmallAmmoExplosion";
-		explosionSoundEffect = "DefaultExplosion";
-		explosive = 0.1;
-		indirectHit = 2;
-		indirectHitRange = 0.1;
-	};
-	
 	class rhsusf_ammo_127x99_M33_Ball;
 	class rhsusf_ammo_127x99_mk211: rhsusf_ammo_127x99_M33_Ball
 	{
@@ -1092,8 +1413,6 @@ class cfgammo
 	{
 		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",1.1,0.7,250};
 	};
-	
-	
 	class R_PG32V_F;
 	class rhs_ammo_panzerfaust60_rocket : R_PG32V_F
 	{
@@ -1117,28 +1436,14 @@ class cfgammo
 	{
 		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
 	};
-	class rhs_B_762x54_Ball;
-	class rhs_B_762x54_Ball_Tracer_Green: rhs_B_762x54_Ball
+	class B_762x51_Ball;
+	class rhs_B_762x54_Ball:B_762x51_Ball
 	{
 		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
 	};
-	class rhs_B_762x54_7BZ3_Ball: rhs_B_762x54_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
-	};
-	class rhs_B_762x54_7N13_Ball: rhs_B_762x54_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
-	};
-	class rhs_B_762x54_7N14_Ball: rhs_B_762x54_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
-	};
-	class rhs_B_762x54_7N1_Ball: rhs_B_762x54_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
-	};
-	class rhs_B_762x54_7N26_Ball: rhs_B_762x54_Ball
+	
+	class rhs_B_762x39_Ball;
+	class rhs_B_762x39_Tracer: rhs_B_762x39_Ball
 	{
 		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
 	};
