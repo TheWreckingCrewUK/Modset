@@ -20,8 +20,8 @@ class CfgPatches {
 };
 
 #include "CfgFunctions.hpp"
-#include "RadioProtocolBase.hpp"
 
 #include "ui\ACE_Spectator_Display.hpp"
 #include "ui\DefaultVehicleSystemsDisplayManager.hpp"
+#include "ui\RadioProtocolBase.hpp"
 #include "ui\RscTitles.hpp"
