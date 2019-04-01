@@ -8,8 +8,7 @@ class CfgFunctions {
 			class hideBearing {};
 			class shouldDisplay {};
 			class showBearing {};
-			class hudReset {};
-			
+
 			class handleKilled {};
 			class handleVehicle {};
 			class toggleDisplay {};
