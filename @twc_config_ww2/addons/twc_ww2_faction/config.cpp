@@ -13,16 +13,6 @@ class CfgPatches
 	};
 };
 
-class CfgFactionClasses {
-	class TWC_Faction_Independent {
-		displayName = "TWC Operations - WW2";
-		author = "Rik";
-		icon = "TWClogo.paa";
-		priority = 2;
-		side = 2;
-	};
-};
-
 class CfgEditorSubcategories {
 	class TWC_Infantry_EarlyWW2_Woodland {
 		displayName = "Infantry (Early, Woodland)";
@@ -84,11 +74,12 @@ class CfgVehicles
 	#define MAG_10(a) a, a, a, a, a, a, a, a, a, a
 	#define MAG_11(a) a, a, a, a, a, a, a, a, a, a, a
 	#define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
+	#define MAG_13(a) a, a, a, a, a, a, a, a, a, a, a, a, a
 	#define CATEGORY(a) editorSubcategory = a;\
 			vehicleClass = a;
 
 	//GENERIC
-	class TWC_Infantry_WW2_Base: B_Soldier_base_F
+	class TWC_Infantry_WW2_Base: I_Soldier_F
 	{
 		scope = 1;
 		displayName = "Base";
@@ -96,21 +87,21 @@ class CfgVehicles
 		CATEGORY(TWC_Infantry_Regular_Woodland)
 		icon = "iconMan";
 		nakedUniform = "U_BasicBody";
-		uniformClass = "";
+		uniformClass = "U_LIB_UK_P37";
 		backpack = "";
 		
 		linkedItems[] =
 		{
-			"",
-			"",
+			"V_LIB_UK_P37_Rifleman",
+			"H_LIB_UK_Helmet_Mk2",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
 		};
 		respawnLinkedItems[] =
 		{
-			"",
-			"",
+			"V_LIB_UK_P37_Rifleman",
+			"H_LIB_UK_Helmet_Mk2",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -145,22 +136,21 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Plane Pilot";
-		faction = "TWC_Millennial";
 		CATEGORY(TWC_ForceType_Airborne)
-		uniformClass = "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
+		uniformClass = "U_LIB_US_Pilot";
 		TWC_isCommandRole = 1;
 		linkedItems[] =
 		{
-			"CUP_V_B_PilotVest",
-			"UK3CB_BAF_H_PilotHelmetHeli_A",
+			"V_LIB_US_LifeVest",
+			"H_LIB_UK_Pilot_Cap",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
 		};
 		respawnLinkedItems[] =
 		{
-			"CUP_V_B_PilotVest",
-			"UK3CB_BAF_H_PilotHelmetHeli_A",
+			"V_LIB_US_LifeVest",
+			"H_LIB_UK_Pilot_Cap",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -177,45 +167,46 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
+			"LIB_Webley_mk6",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
+			"LIB_Webley_mk6",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"SmokeShell",
-			"SmokeShell"
+			MAG_3("LIB_6Rnd_455"),
+			MAG_2("SmokeShell")
 		};
 		respawnmagazines[] =
 		{
-			"SmokeShell",
-			"SmokeShell"
+			MAG_3("LIB_6Rnd_455"),
+			MAG_2("SmokeShell")
 		};
 	};
 	class TWC_Infantry_WW2_Tank_Commander: TWC_Infantry_WW2_Base
 	{
 		scope = 2;
 		displayName = "Tank Commander";
-		faction = "TWC_Millennial";
 		CATEGORY(TWC_ForceType_Armoured)
-		uniformClass = "UK3CB_BAF_U_CrewmanCoveralls_RTR";
+		uniformClass = "U_LIB_UK_P37";
 		TWC_isCommandRole = 1;
 		linkedItems[] =
 		{
-			"SP_P58_UrbanPatrol",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"V_LIB_UK_P37_Crew",
+			"H_LIB_UK_Beret_Headset",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
 		};
 		respawnLinkedItems[] =
 		{
-			"SP_P58_UrbanPatrol",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"V_LIB_UK_P37_Crew",
+			"H_LIB_UK_Beret_Headset",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -232,24 +223,24 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"LIB_Sten_Mk2",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"LIB_Sten_Mk2",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			MAG_3("UK3CB_BAF_556_30Rnd"),
+			MAG_3("LIB_32Rnd_9x19_Sten"),
 			MAG_2("SmokeShell")
 		};
 		respawnmagazines[] =
 		{
-			MAG_3("UK3CB_BAF_556_30Rnd"),
+			MAG_3("LIB_32Rnd_9x19_Sten"),
 			MAG_2("SmokeShell")
 		};
 	};
@@ -258,15 +249,6 @@ class CfgVehicles
 		displayName = "Tank Crew";
 		TWC_isCommandRole = 0;
 	};
-	#include "uk_early\woodland.hpp"
-	#include "uk_early\woodland_dismounted.hpp"
-	#include "uk_early\desert.hpp"
-	#include "uk_early\desert_dismounted.hpp"
-	#include "uk_early\arctic.hpp"
-	#include "uk_early\arctic_dismounted.hpp"
-	#include "uk_early\tropic.hpp"
-	#include "uk_early\tropic_dismounted.hpp"
-
 	#include "uk_late\woodland.hpp"
 	#include "uk_late\woodland_dismounted.hpp"
 	#include "uk_late\desert.hpp"
@@ -275,6 +257,15 @@ class CfgVehicles
 	#include "uk_late\arctic_dismounted.hpp"
 	#include "uk_late\tropic.hpp"
 	#include "uk_late\tropic_dismounted.hpp"
+	
+	#include "uk_early\woodland.hpp"
+	#include "uk_early\woodland_dismounted.hpp"
+	#include "uk_early\desert.hpp"
+	#include "uk_early\desert_dismounted.hpp"
+	#include "uk_early\arctic.hpp"
+	#include "uk_early\arctic_dismounted.hpp"
+	#include "uk_early\tropic.hpp"
+	#include "uk_early\tropic_dismounted.hpp"
 	
 	#include "uk_airborne\woodland.hpp"
 	
