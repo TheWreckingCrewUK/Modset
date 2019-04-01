@@ -1062,6 +1062,7 @@ class cfgWeapons
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					rhsusf_acc_ACOG = 1;
+					rhsusf_acc_compm4 = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -1101,6 +1102,7 @@ class cfgWeapons
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					rhsusf_acc_ACOG = 1;
+					rhsusf_acc_compm4 = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {

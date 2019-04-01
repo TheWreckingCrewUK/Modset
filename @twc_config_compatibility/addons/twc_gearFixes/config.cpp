@@ -756,7 +756,7 @@ class cfgRecoils
 	class twc_shotgun_1
 	{
 		muzzleOuter[]	= { 0.1,  0.5,  0.1,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
-		kickBack[]	= { 0.06, 0.09 }; //min/max force
+		kickBack[]	= { 0.09, 0.12 }; //min/max force
 		permanent	= 1.5; //muzzle climb post-recoil, means nothing when on bipod
 		temporary	= 0.2; //muzzle jump
 	};
