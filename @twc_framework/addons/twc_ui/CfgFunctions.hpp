@@ -4,14 +4,14 @@ class CfgFunctions {
 		class init {
 			file = "TWC_UI\functions";
 
-			class getVisualBearingLocal {};
-			class hideBearing {};
-			class shouldDisplay {};
-			class showBearing {};
-
+			/** adds a bearing read out to certain slots, on vehicles (for when they don't support it) **/
 			class handleKilled {};
 			class handleVehicle {};
 			class toggleDisplay {};
+			class showBearing {};
+			class hideBearing {};
+			class getVisualBearingLocal {};
+			class shouldDisplay {};
 			
 			/** adds hide functionality to ace spectator camera **/
 			class handleSpectateCompass {};
