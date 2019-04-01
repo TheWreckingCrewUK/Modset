@@ -14,7 +14,7 @@ private _vehicle = vehicle _player;
 private _playerRole = toLower (_player call CBA_fnc_vehicleRole); // Turret is capitalised by the engine...
 
 private _vehicleHasSetting = isArray (configFile >> "CfgVehicles" >> typeOf (_vehicle) >> "TWC_bearingPositions");
-private _bearingPositions = toLower (
+private _bearingPositions = (
 	[
 		(configFile >> "CfgVehicles" >> typeOf (_vehicle)),
 		"TWC_bearingPositions",
