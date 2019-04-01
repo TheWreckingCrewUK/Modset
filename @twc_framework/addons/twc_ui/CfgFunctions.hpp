@@ -4,16 +4,15 @@ class CfgFunctions {
 		class init {
 			file = "TWC_UI\functions";
 
-			class addDisplay {};
 			class getVisualBearingLocal {};
 			class hideBearing {};
 			class shouldDisplay {};
-			class removeDisplay {};
 			class showBearing {};
 			class hudReset {};
 			
 			class handleKilled {};
 			class handleVehicle {};
+			class toggleDisplay {};
 			
 			/** adds hide functionality to ace spectator camera **/
 			class handleSpectateCompass {};
