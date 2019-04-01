@@ -227,7 +227,9 @@ class cfgWeapons
 		displayName = "M16 SDM-R";
 		author="Hobbs";
 		modes[] = {"Single"};
-		dispersion = 0.0001;
+		recoil = "twc_rifle_556_long";
+		recoilProne = "twc_rifle_556_long_prone";
+		descriptionShort = "Match Grade Competition Rifle<br/>Caliber: 5.56x45mm NATO";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
