@@ -1,4 +1,4 @@
-//UK, DISMOUTNED, DESERT
+//UK, LATE, DISMOUTNED, DESERT
 //Section
 class TWC_Infantry_WW2_UK_Late_Dismounted_Desert_Rifleman: TWC_Infantry_WW2_UK_Late_Desert_Rifleman
 {

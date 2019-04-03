@@ -1,4 +1,4 @@
-//UK, DESERT
+//UK, LATE, DESERT
 //Section
 class TWC_Infantry_WW2_UK_Late_Desert_Rifleman: TWC_Infantry_WW2_UK_Late_Woodland_Rifleman
 {

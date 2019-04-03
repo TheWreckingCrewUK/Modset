@@ -1,4 +1,4 @@
-//UK, DISMOUTNED, ARCTIC
+//UK, LATE, DISMOUTNED, ARCTIC
 //Section
 class TWC_Infantry_WW2_UK_Late_Dismounted_Arctic_Rifleman: TWC_Infantry_WW2_UK_Late_Arctic_Rifleman
 {

@@ -1,4 +1,4 @@
-//UK, ARCTIC
+//UK, LATE, ARCTIC
 //Section
 class TWC_Infantry_WW2_UK_Late_Arctic_Rifleman: TWC_Infantry_WW2_UK_Late_Woodland_Rifleman
 {

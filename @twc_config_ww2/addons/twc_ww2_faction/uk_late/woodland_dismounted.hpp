@@ -1,4 +1,4 @@
-//UK, DISMOUTNED, WOODLAND
+//UK, LATE, DISMOUNTED, WOODLAND
 //Section
 class TWC_Infantry_WW2_UK_Late_Dismounted_Woodland_Rifleman: TWC_Infantry_WW2_UK_Late_Woodland_Rifleman
 {

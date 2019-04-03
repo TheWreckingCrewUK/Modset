@@ -1,4 +1,4 @@
-//UK, TROPIC
+//UK, LATE, TROPIC
 //Section
 class TWC_Infantry_WW2_UK_Late_Tropic_Rifleman: TWC_Infantry_WW2_UK_Late_Woodland_Rifleman
 {

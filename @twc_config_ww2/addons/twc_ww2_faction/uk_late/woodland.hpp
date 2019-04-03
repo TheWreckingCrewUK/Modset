@@ -1,4 +1,4 @@
-//UK, WOODLAND
+//UK, LATE, WOODLAND
 //Section
 class TWC_Infantry_WW2_UK_Late_Woodland_Rifleman: TWC_Infantry_WW2_Base
 {
