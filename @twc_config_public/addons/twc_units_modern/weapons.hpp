@@ -60,6 +60,7 @@ class cfgWeapons
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					rhsusf_acc_ACOG_d = 1;
+					UK3CB_BAF_Kite = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -113,11 +114,13 @@ class cfgWeapons
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					RKSL_optic_LDS_C = 1;
+					UK3CB_BAF_Kite = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
 					rhsusf_acc_anpeq15_top = 1;
+					uk3cb_baf_llm_ir_tan = 1;
 				};
 			};
 			class MuzzleSlot: rhs_western_rifle_muzzle_slot {
@@ -145,7 +148,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="rhsusf_acc_ACOG";
+				item="rhsusf_acc_acog2_usmc";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -157,7 +160,10 @@ class cfgWeapons
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					rhsusf_acc_ACOG = 1;
+					rhsusf_acc_acog2_usmc = 1;
+					rksl_optic_lds = 1;
+					UK3CB_BAF_Kite = 1;
+					rhsusf_acc_g33_t1 = 1;
 				};
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {

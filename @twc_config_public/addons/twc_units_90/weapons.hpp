@@ -43,6 +43,7 @@ class cfgWeapons
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
 					rhsusf_acc_ACOG = 1;
+					rhsusf_acc_g33_t1 = 1;
 				};
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
@@ -78,6 +79,7 @@ class cfgWeapons
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
 					rhsusf_acc_ACOG = 1;
+					rhsusf_acc_g33_t1 = 1;
 				};
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
@@ -91,7 +93,7 @@ class cfgWeapons
 	};
 	
 	class UK3CB_BAF_L119A1_CQB;
-	class TWC_UK3CB_BAF_L119A1_CQB_ACOG: UK3CB_BAF_L119A1_CQB
+	class TWC_UK3CB_BAF_L119A1_CQB_MAGNIF: UK3CB_BAF_L119A1_CQB
 	{
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";
@@ -100,7 +102,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="rhsusf_acc_g33_xps3";
+				item="rhsusf_acc_g33_t1";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -112,7 +114,7 @@ class cfgWeapons
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					rhsusf_acc_g33_xps3 = 1;
+					rhsusf_acc_g33_t1 = 1;
 				};
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {

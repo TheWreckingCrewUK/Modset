@@ -34,6 +34,7 @@ class CfgPatches {
 #include "CfgAmmo.hpp"
 
 class mode_fullauto;
+class Mode_SemiAuto;
 class CfgWeapons {
 	//TWC Night Vision
 	class CUP_NVG_PVS7;
@@ -217,7 +218,60 @@ class CfgWeapons {
 		recoilProne = "twc_rifle_762_prone";
 	};
 	
-	class arifle_Mk20_plain_F;
+	class mk20_base_F;
+	class arifle_Mk20_F: mk20_base_F
+	{
+		class FullAuto;
+		class Single;
+	};
+	
+	class arifle_Mk20_plain_F: arifle_Mk20_F {
+		class FullAuto: Mode_FullAuto {
+			
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Fullauto_medium: FullAuto {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Single: Mode_SemiAuto {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Single_medium_optics1: Single {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Single_far_optics2: Single_medium_optics1 {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+	};class UK3CB_BAF_L119_Base: arifle_Mk20_plain_F {
+		class FullAuto: FullAuto {
+			reloadTime = 0.07;
+		};
+	};
 	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F {
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";

@@ -2388,16 +2388,16 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_9_15Rnd",
-			"UK3CB_BAF_9_15Rnd",
+			"rhsusf_mag_17Rnd_9x19_FMJ",
+			"rhsusf_mag_17Rnd_9x19_FMJ",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -2405,16 +2405,16 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_9_15Rnd",
-			"UK3CB_BAF_9_15Rnd",
+			"rhsusf_mag_17Rnd_9x19_FMJ",
+			"rhsusf_mag_17Rnd_9x19_FMJ",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -2486,15 +2486,15 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"Throw",
 			"Put",
-			"twc_rhs_weap_mk18_d_supp_acog",
-			"UK3CB_BAF_L105A2"
+			"twc_rhs_weap_mk18_d_supp_LDS",
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_rhs_weap_mk18_d_supp_acog",
-			"UK3CB_BAF_L105A2"
+			"twc_rhs_weap_mk18_d_supp_LDS",
+			"rhsusf_weap_glock17g4"
 		};
 		linkedItems[]=
 		{
@@ -2525,14 +2525,14 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"Throw",
 			"Put",
 			"TWC_UK3CB_BAF_L119A1_CQB_ACOG",
-			"UK3CB_BAF_L105A2"
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"TWC_UK3CB_BAF_L119A1_CQB_ACOG",
-			"UK3CB_BAF_L105A2"
+			"rhsusf_weap_glock17g4"
 		};
 	};
 
@@ -2560,8 +2560,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -2583,8 +2583,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
 			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -2609,14 +2609,14 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"Throw",
 			"Put",
 			"twc_l129a1_spotter",
-			"UK3CB_BAF_L105A2"
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"twc_l129a1_spotter",
-			"UK3CB_BAF_L105A2"
+			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
 		{
@@ -2654,19 +2654,20 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 	{
 		displayName="Medic";
 		backpack="TWC_Backpack_USMC2000_Medic";
+		attendant = 1;
 		weapons[]=
 		{
 			"Throw",
 			"Put",
 			"twc_rhs_weap_m4a1_d_supp_lds",
-			"UK3CB_BAF_L105A2"
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"twc_rhs_weap_m4a1_d_supp_lds",
-			"UK3CB_BAF_L105A2"
+			"rhsusf_weap_glock17g4"
 		};
 	};
 
@@ -2678,14 +2679,16 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"Throw",
 			"Put",
+			"ACE_MX2A",
 			"twc_rhs_weap_m4a1_d_supp_lds",
-			"UK3CB_BAF_L105A2"
+			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
+			"ACE_MX2A",
 			"twc_rhs_weap_m4a1_d_supp_lds",
-			"UK3CB_BAF_L105A2"
+			"rhsusf_weap_glock17g4"
 		};
 	};

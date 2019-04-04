@@ -172,7 +172,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 			class _xx_stanag_Red
 			{
-				magazine = "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red";
+				magazine = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 				count = 10;
 			};
 			class _xx_Smoke_Green
