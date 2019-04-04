@@ -151,7 +151,7 @@
 		};
 		class TransportWeapons
 		{
-			weap_nc(CUP_TWC_arifle_M16A4_Grip_clean,1)
+			weap_nc(CUP_TWC_arifle_M16A4_Grip_clean,1);
 		};
 	};
 	
@@ -187,3 +187,4 @@
 			item_nc(ACE_tourniquet,4);
 		};
 	};
+	

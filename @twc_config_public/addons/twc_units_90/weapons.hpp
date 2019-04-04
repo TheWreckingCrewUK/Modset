@@ -88,7 +88,7 @@ class cfgWeapons
 				};
 			};
 			allowedslots[] = {901};
-			mass = 75;
+			mass = 105;
 		};
 	};
 	
