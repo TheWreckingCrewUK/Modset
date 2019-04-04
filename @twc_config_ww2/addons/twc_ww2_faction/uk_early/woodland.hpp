@@ -3,6 +3,16 @@
 class TWC_Infantry_WW2_UK_Early_Woodland_Rifleman: TWC_Infantry_WW2_UK_Late_Woodland_Rifleman
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -19,6 +29,16 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Rifleman: TWC_Infantry_WW2_UK_Late_Wood
 class TWC_Infantry_WW2_UK_Early_Woodland_Grenadier: TWC_Infantry_WW2_UK_Late_Woodland_Grenadier
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1_CUP",
@@ -67,6 +87,16 @@ class TWC_Infantry_WW2_UK_Early_Woodland_MG: TWC_Infantry_WW2_UK_Late_Woodland_M
 class TWC_Infantry_WW2_UK_Early_Woodland_MGASS: TWC_Infantry_WW2_UK_Late_Woodland_MGASS
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -83,6 +113,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_MGASS: TWC_Infantry_WW2_UK_Late_Woodlan
 class TWC_Infantry_WW2_UK_Early_Woodland_SectionCommander: TWC_Infantry_WW2_UK_Late_Woodland_SectionCommander
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_SectionCommander";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
@@ -109,6 +140,17 @@ class TWC_Infantry_WW2_UK_Early_Woodland_SectionCommander: TWC_Infantry_WW2_UK_L
 class TWC_Infantry_WW2_UK_Early_Woodland_2iC: TWC_Infantry_WW2_UK_Late_Woodland_2iC
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_2iC";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -127,6 +169,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_2iC: TWC_Infantry_WW2_UK_Late_Woodland_
 class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Commander: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Commander
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_Platoon_Commander";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
@@ -161,6 +204,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Commander: TWC_Infantry_WW2_UK_
 class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_Platoon_Sergeant";
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -179,6 +223,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_UK_L
 class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Medic: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Medic
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_Platoon_Medic";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
@@ -205,6 +250,16 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Medic: TWC_Infantry_WW2_UK_Late
 class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Runner: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Runner
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -221,6 +276,16 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Runner: TWC_Infantry_WW2_UK_Lat
 class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Mortar: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Mortar
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -241,6 +306,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Mortar: TWC_Infantry_WW2_UK_Lat
 class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_CSM
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_Platoon_Sergeant";
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -262,6 +328,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Boys_Gunner: TWC_Infantry_WW2_UK_Late_W
 {
 	displayName = "Boys Gunner";
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_Boys_Gunner";
 	weapons[] =
 	{
 		"BBB_BoysATR",
@@ -296,6 +363,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Boys_Gunner: TWC_Infantry_WW2_UK_Late_W
 class TWC_Infantry_WW2_UK_Early_Woodland_Artillery_Commander: TWC_Infantry_WW2_UK_Late_Woodland_Artillery_Commander
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_Artillery_Commander";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
@@ -348,6 +416,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Artillery_Crew: TWC_Infantry_WW2_UK_Lat
 class TWC_Infantry_WW2_UK_Early_Woodland_FO: TWC_Infantry_WW2_UK_Late_Woodland_FO
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_FO";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
@@ -382,6 +451,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_FO: TWC_Infantry_WW2_UK_Late_Woodland_F
 class TWC_Infantry_WW2_UK_Early_Woodland_FAC: TWC_Infantry_WW2_UK_Late_Woodland_FAC
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_FAC";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",

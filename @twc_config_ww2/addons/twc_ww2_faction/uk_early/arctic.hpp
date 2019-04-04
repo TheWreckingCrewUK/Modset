@@ -3,6 +3,16 @@
 class TWC_Infantry_WW2_UK_Early_Arctic_Rifleman: TWC_Infantry_WW2_UK_Late_Arctic_Rifleman
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -19,6 +29,16 @@ class TWC_Infantry_WW2_UK_Early_Arctic_Rifleman: TWC_Infantry_WW2_UK_Late_Arctic
 class TWC_Infantry_WW2_UK_Early_Arctic_Grenadier: TWC_Infantry_WW2_UK_Late_Arctic_Grenadier
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1_CUP",
@@ -67,6 +87,16 @@ class TWC_Infantry_WW2_UK_Early_Arctic_MG: TWC_Infantry_WW2_UK_Late_Arctic_MG
 class TWC_Infantry_WW2_UK_Early_Arctic_MGASS: TWC_Infantry_WW2_UK_Late_Arctic_MGASS
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -83,6 +113,7 @@ class TWC_Infantry_WW2_UK_Early_Arctic_MGASS: TWC_Infantry_WW2_UK_Late_Arctic_MG
 class TWC_Infantry_WW2_UK_Early_Arctic_SectionCommander: TWC_Infantry_WW2_UK_Late_Arctic_SectionCommander
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	backpack = "TWC_Backpack_WW2_UK_Early_SectionCommander";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
@@ -109,6 +140,17 @@ class TWC_Infantry_WW2_UK_Early_Arctic_SectionCommander: TWC_Infantry_WW2_UK_Lat
 class TWC_Infantry_WW2_UK_Early_Arctic_2iC: TWC_Infantry_WW2_UK_Late_Arctic_2iC
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	backpack = "TWC_Backpack_WW2_UK_Early_2iC";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -127,6 +169,7 @@ class TWC_Infantry_WW2_UK_Early_Arctic_2iC: TWC_Infantry_WW2_UK_Late_Arctic_2iC
 class TWC_Infantry_WW2_UK_Early_Arctic_Platoon_Commander: TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Commander
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	backpack = "TWC_Backpack_WW2_UK_Early_Platoon_Commander";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
@@ -161,6 +204,7 @@ class TWC_Infantry_WW2_UK_Early_Arctic_Platoon_Commander: TWC_Infantry_WW2_UK_La
 class TWC_Infantry_WW2_UK_Early_Arctic_Platoon_Sergeant: TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	backpack = "TWC_Backpack_WW2_UK_Early_Platoon_Sergeant";
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -179,6 +223,7 @@ class TWC_Infantry_WW2_UK_Early_Arctic_Platoon_Sergeant: TWC_Infantry_WW2_UK_Lat
 class TWC_Infantry_WW2_UK_Early_Arctic_Platoon_Medic: TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Medic
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	backpack = "TWC_Backpack_WW2_UK_Early_Platoon_Medic";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
@@ -205,6 +250,16 @@ class TWC_Infantry_WW2_UK_Early_Arctic_Platoon_Medic: TWC_Infantry_WW2_UK_Late_A
 class TWC_Infantry_WW2_UK_Early_Arctic_Platoon_Runner: TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Runner
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -221,6 +276,16 @@ class TWC_Infantry_WW2_UK_Early_Arctic_Platoon_Runner: TWC_Infantry_WW2_UK_Late_
 class TWC_Infantry_WW2_UK_Early_Arctic_Platoon_Mortar: TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Mortar
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_P1903_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -241,6 +306,7 @@ class TWC_Infantry_WW2_UK_Early_Arctic_Platoon_Mortar: TWC_Infantry_WW2_UK_Late_
 class TWC_Infantry_WW2_UK_Early_Arctic_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Arctic_Platoon_CSM
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	backpack = "TWC_Backpack_WW2_UK_Early_Platoon_Sergeant";
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
@@ -262,6 +328,7 @@ class TWC_Infantry_WW2_UK_Early_Arctic_Boys_Gunner: TWC_Infantry_WW2_UK_Late_Arc
 {
 	displayName = "Boys Gunner";
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	backpack = "TWC_Backpack_WW2_UK_Early_Boys_Gunner";
 	weapons[] =
 	{
 		"BBB_BoysATR",
@@ -296,6 +363,7 @@ class TWC_Infantry_WW2_UK_Early_Arctic_Boys_Gunner: TWC_Infantry_WW2_UK_Late_Arc
 class TWC_Infantry_WW2_UK_Early_Arctic_Artillery_Commander: TWC_Infantry_WW2_UK_Late_Arctic_Artillery_Commander
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	backpack = "TWC_Backpack_WW2_UK_Early_Artillery_Commander";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
@@ -348,6 +416,7 @@ class TWC_Infantry_WW2_UK_Early_Arctic_Artillery_Crew: TWC_Infantry_WW2_UK_Late_
 class TWC_Infantry_WW2_UK_Early_Arctic_FO: TWC_Infantry_WW2_UK_Late_Arctic_FO
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	backpack = "TWC_Backpack_WW2_UK_Early_FO";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
@@ -382,6 +451,7 @@ class TWC_Infantry_WW2_UK_Early_Arctic_FO: TWC_Infantry_WW2_UK_Late_Arctic_FO
 class TWC_Infantry_WW2_UK_Early_Arctic_FAC: TWC_Infantry_WW2_UK_Late_Arctic_FAC
 {
 	CATEGORY(TWC_Infantry_EarlyWW2_Arctic)
+	backpack = "TWC_Backpack_WW2_UK_Early_FAC";
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",

@@ -46,6 +46,14 @@ class TWC_Backpack_WW2_UK_Airborne_Dismounted_SectionCommander: B_LIB_UK_HSack_B
 	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(LIB_32Rnd_9x19_Sten,6);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 	};
 };
 class TWC_Backpack_WW2_UK_Airborne_Dismounted_2iC: B_LIB_UK_HSack_Blanco_Tea
@@ -68,6 +76,14 @@ class TWC_Backpack_WW2_UK_Airborne_Dismounted_Platoon_Commander: B_LIB_UK_HSack_
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 	};
 };
 class TWC_Backpack_WW2_UK_Airborne_Dismounted_Platoon_Sergeant: fow_b_uk_bergenpack
@@ -81,6 +97,14 @@ class TWC_Backpack_WW2_UK_Airborne_Dismounted_Platoon_Sergeant: fow_b_uk_bergenp
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 	};
 };
 class TWC_Backpack_WW2_UK_Airborne_Dismounted_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty
@@ -158,5 +182,15 @@ class TWC_Backpack_WW2_UK_Airborne_FAC: B_LIB_US_Radio_ACRE2
 	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
+	};
+	class TransportMagazines {
+		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 	};
 };

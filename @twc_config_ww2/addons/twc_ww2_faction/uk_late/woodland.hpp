@@ -198,7 +198,32 @@ class TWC_Infantry_WW2_UK_Late_Woodland_SectionCommander: TWC_Infantry_WW2_UK_La
 {
 	displayName = "Section Commander";
 	uniformClass = "U_LIB_UK_P37_Corporal";
+	backpack = "TWC_Backpack_WW2_UK_Late_SectionCommander";
 	TWC_isCommandRole = 1;
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"fow_i_whistle"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"fow_i_whistle"
+	};
+	weapons[] =
+	{
+		"LIB_Sten_Mk2",
+		"TWC_No1Mk3SignalGun",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"LIB_Sten_Mk2",
+		"TWC_No1Mk3SignalGun",
+		"Throw",
+		"Put"
+	};
 	magazines[] =
 	{
 		MAG_5("LIB_32Rnd_9x19_Sten"),
@@ -247,6 +272,7 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Commander: TWC_Infantry_WW2_UK_L
 	weapons[] =
 	{
 		"LIB_Sten_Mk2",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -300,6 +326,7 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_UK_La
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No4",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -307,6 +334,7 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_UK_La
 	respawnweapons[] =
 	{
 		"LIB_LeeEnfield_No4",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -596,6 +624,22 @@ class TWC_Infantry_WW2_UK_Late_Woodland_FAC: TWC_Infantry_WW2_UK_Late_Woodland_F
 {
 	displayName = "Forward Air Controller";
 	backpack = "TWC_Backpack_WW2_UK_Late_FAC";
+	weapons[] =
+	{
+		"LIB_Sten_Mk2",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"LIB_Sten_Mk2",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
 };
 
 //FVs

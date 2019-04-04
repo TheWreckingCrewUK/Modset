@@ -14,6 +14,7 @@ class CfgPatches
 };
 
 class CfgEditorSubcategories {
+	//Early
 	class TWC_Infantry_EarlyWW2_Woodland {
 		displayName = "Infantry (Early, Woodland)";
 	};
@@ -44,6 +45,23 @@ class CfgEditorSubcategories {
 	
 	class TWC_Infantry_EarlyWW2_Dismounted_Tropic {
 		displayName = "Infantry (Early, Dismounted, Tropic)";
+	};
+	
+	//ANZAC
+	class TWC_Infantry_ANZAC_Desert {
+		displayName = "Infantry (ANZAC, Desert)";
+	};
+	
+	class TWC_Infantry_ANZAC_Dismounted_Desert {
+		displayName = "Infantry (ANZAC, Dismounted, Desert)";
+	};
+	
+	class TWC_Infantry_ANZAC_Tropic {
+		displayName = "Infantry (ANZAC, Tropic)";
+	};
+	
+	class TWC_Infantry_ANZAC_Dismounted_Tropic {
+		displayName = "Infantry (ANZAC, Dismounted, Tropic)";
 	};
 };
 
@@ -188,10 +206,10 @@ class CfgVehicles
 			MAG_2("SmokeShell")
 		};
 	};
-	class TWC_Infantry_WW2_Tank_Commander: TWC_Infantry_WW2_Base
+	class TWC_Infantry_WW2_Late_Tank_Commander: TWC_Infantry_WW2_Base
 	{
 		scope = 2;
-		displayName = "Tank Commander";
+		displayName = "Tank Commander (Late)";
 		CATEGORY(TWC_ForceType_Armoured)
 		uniformClass = "U_LIB_UK_P37";
 		TWC_isCommandRole = 1;
@@ -244,10 +262,62 @@ class CfgVehicles
 			MAG_2("SmokeShell")
 		};
 	};
-	class TWC_Infantry_WW2_Tank_Crew: TWC_Infantry_WW2_Tank_Commander
+	class TWC_Infantry_WW2_Late_Tank_Crew: TWC_Infantry_WW2_Late_Tank_Commander
 	{
-		displayName = "Tank Crew";
+		displayName = "Tank Crew (Late)";
 		TWC_isCommandRole = 0;
+	};
+	class TWC_Infantry_WW2_Early_Tank_Commander: TWC_Infantry_WW2_Late_Tank_Commander
+	{
+		displayName = "Tank Commander (Early)";
+		weapons[] =
+		{
+			"LIB_M1928_Thompson",
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"LIB_M1928_Thompson",
+			"Throw",
+			"Put"
+		};
+		magazines[] =
+		{
+			MAG_3("LIB_30Rnd_45ACP"),
+			MAG_2("SmokeShell")
+		};
+		respawnmagazines[] =
+		{
+			MAG_3("LIB_30Rnd_45ACP"),
+			MAG_2("SmokeShell")
+		};
+	};
+	class TWC_Infantry_WW2_Early_Tank_Crew: TWC_Infantry_WW2_Late_Tank_Crew
+	{
+		displayName = "Tank Crew (Early)";
+		weapons[] =
+		{
+			"LIB_M1928_Thompson",
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"LIB_M1928_Thompson",
+			"Throw",
+			"Put"
+		};
+		magazines[] =
+		{
+			MAG_3("LIB_30Rnd_45ACP"),
+			MAG_2("SmokeShell")
+		};
+		respawnmagazines[] =
+		{
+			MAG_3("LIB_30Rnd_45ACP"),
+			MAG_2("SmokeShell")
+		};
 	};
 	#include "uk_late\woodland.hpp"
 	#include "uk_late\woodland_dismounted.hpp"
