@@ -1,6 +1,8 @@
 class asdg_FrontSideRail;
 class asdg_OpticRail1913;
 class CUP_PicatinnyTopShortMount;
+class CUP_M16MuzzleSlot;
+class CUP_PicatinnyTopMount;
 class CUP_PicatinnySideMount;
 class UK3CB_underbarrel_rifle_slot;
 class asdg_MuzzleSlot_762_L129_3CB;
@@ -12,7 +14,9 @@ class rhs_western_rifle_gripod_slot;
 class rhs_western_rifle_muzzle_slot;
 class asdg_MuzzleSlot_556_3CB;
 class rhs_western_rifle_underbarrel_slot;
-
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
 
 class cfgWeapons
 {
@@ -169,6 +173,267 @@ class cfgWeapons
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
 				class compatibleItems {
 					UK3CB_BAF_Silencer_L85 = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 70;
+		};
+	};
+	
+	class CUP_arifle_mk18_black;
+	class twc_L119A2_base: CUP_arifle_mk18_black
+	{
+		displayName = "L119A2";
+		class Single:Mode_SemiAuto {
+			//sounds[] = {"StandardSound"};
+			dispersion = 0.001;
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			//sounds[] = {"StandardSound"};
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};		
+		};
+		class FullAuto:Mode_FullAuto {
+			//sounds[] = {"StandardSound"};
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};	
+		};
+	};
+	
+	class twc_L119A2_10: twc_L119A2_base
+	{};
+	
+	//tiered approach for jsrs and non-jsrs compat. the adjoining tier twc_L119A2_CQB is modified in the jsrs file
+	class TWC_UK3CB_BAF_L119A2_10_ACOG: twc_L119A2_10
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_acog_rmr";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_rotex5_grey";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq15";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_acog_rmr = 1;
+					rksl_optic_lds = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class MuzzleSlot: CUP_M16MuzzleSlot {
+				class compatibleItems {
+					rhsusf_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq15 = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+	};
+	class TWC_UK3CB_BAF_L119A2_10_LDS: twc_L119A2_10
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rksl_optic_lds";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_rotex5_grey";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq15";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_acog_rmr = 1;
+					rksl_optic_lds = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class MuzzleSlot: CUP_M16MuzzleSlot {
+				class compatibleItems {
+					rhsusf_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq15 = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+	};
+	
+	class TWC_UK3CB_BAF_L119A2_10_T1: twc_L119A2_10
+	{
+		displayName = "L119A2 (T1)";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_t1_high";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_rotex5_grey";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq15";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_t1_high = 1;
+					rhsusf_acc_eotech_xps3 = 1;
+				};
+			};
+			class MuzzleSlot: CUP_M16MuzzleSlot {
+				class compatibleItems {
+					rhsusf_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq15 = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+	};
+	
+	class CUP_arifle_SBR_black;
+	class twc_L119A2_CQB_base: CUP_arifle_SBR_black
+	{
+		displayName = "L119A2 CQB";
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		descriptionShort = "CQB Variant<br/>Short Barrel<br/>Increased Rate of Fire";
+		class Single:Mode_SemiAuto {
+			//sounds[] = {"StandardSound"};
+			dispersion = 0.002;
+			reloadTime = 0.07;
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			dispersion = 0.002;
+			reloadTime = 0.07;
+			//sounds[] = {"StandardSound"};
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};		
+		};
+		class FullAuto:Mode_FullAuto {
+			dispersion = 0.002;
+			reloadTime = 0.07;
+			//sounds[] = {"StandardSound"};
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};	
+		};
+	};
+	
+	class twc_L119A2_CQB: twc_L119A2_CQB_base
+	{};
+	
+	//tiered approach for jsrs and non-jsrs compat. the adjoining tier twc_L119A2_CQB is modified in the jsrs file
+	class TWC_UK3CB_BAF_L119A2_CQB_ACOG: twc_L119A2_CQB
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_acog_rmr";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_rotex5_grey";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq15";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_acog_rmr = 1;
+				};
+			};
+			class MuzzleSlot: CUP_M16MuzzleSlot {
+				class compatibleItems {
+					rhsusf_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq15 = 1;
+					uk3cb_baf_llm_ir_tan = 1;
 				};
 			};
 			allowedslots[] = {901};

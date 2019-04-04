@@ -105,12 +105,12 @@
 			};
 			class _xx_stanag
 			{
-				magazine = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+				magazine = "CUP_30Rnd_556x45_Emag";
 				count = 10;
 			};
 			class _xx_stanag_Red
 			{
-				magazine = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+				magazine = "CUP_30Rnd_556x45_Emag_Tracer_Red";
 				count = 5;
 			};
 			class _xx_Smoke_Green
