@@ -2256,6 +2256,11 @@
 			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -2284,6 +2289,11 @@
 			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_packingBandage",

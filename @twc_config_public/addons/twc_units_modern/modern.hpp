@@ -34,6 +34,11 @@
 			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -62,6 +67,11 @@
 			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_packingBandage",
@@ -2486,6 +2496,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"Throw",
 			"Put",
+			"ACE_Vector",
 			"TWC_UK3CB_BAF_L119A2_10_LDS",
 			"rhsusf_weap_glock17g4"
 		};
@@ -2493,6 +2504,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"Throw",
 			"Put",
+			"ACE_Vector",
 			"TWC_UK3CB_BAF_L119A2_10_LDS",
 			"rhsusf_weap_glock17g4"
 		};

@@ -1,7 +1,7 @@
 class asdg_FrontSideRail;
 class asdg_OpticRail1913;
 class CUP_PicatinnyTopShortMount;
-class CUP_M16MuzzleSlot;
+class asdg_MuzzleSlot_556;
 class CUP_PicatinnyTopMount;
 class CUP_PicatinnySideMount;
 class UK3CB_underbarrel_rifle_slot;
@@ -235,7 +235,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="CUP_PicatinnySideMountMk18";
-				item="rhsusf_acc_anpeq15";
+				item="cup_acc_anpeq_15_top_flashlight_tan_f";
 			};
 		};
 		class WeaponSlotsInfo
@@ -247,14 +247,15 @@ class cfgWeapons
 					UK3CB_BAF_Kite = 1;
 				};
 			};
-			class MuzzleSlot: CUP_M16MuzzleSlot {
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
 					rhsusf_acc_rotex5_grey = 1;
 				};
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
 				class compatibleItems {
-					rhsusf_acc_anpeq15 = 1;
+					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
 					uk3cb_baf_llm_ir_tan = 1;
 				};
 			};
@@ -279,7 +280,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="CUP_PicatinnySideMountMk18";
-				item="rhsusf_acc_anpeq15";
+				item="cup_acc_anpeq_15_top_flashlight_tan_f";
 			};
 		};
 		class WeaponSlotsInfo
@@ -291,14 +292,15 @@ class cfgWeapons
 					UK3CB_BAF_Kite = 1;
 				};
 			};
-			class MuzzleSlot: CUP_M16MuzzleSlot {
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
 					rhsusf_acc_rotex5_grey = 1;
 				};
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
 				class compatibleItems {
-					rhsusf_acc_anpeq15 = 1;
+					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
 					uk3cb_baf_llm_ir_tan = 1;
 				};
 			};
@@ -325,7 +327,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="CUP_PicatinnySideMountMk18";
-				item="rhsusf_acc_anpeq15";
+				item="cup_acc_anpeq_15_top_flashlight_tan_f";
 			};
 		};
 		class WeaponSlotsInfo
@@ -336,14 +338,15 @@ class cfgWeapons
 					rhsusf_acc_eotech_xps3 = 1;
 				};
 			};
-			class MuzzleSlot: CUP_M16MuzzleSlot {
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
 					rhsusf_acc_rotex5_grey = 1;
 				};
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
 				class compatibleItems {
-					rhsusf_acc_anpeq15 = 1;
+					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
 					uk3cb_baf_llm_ir_tan = 1;
 				};
 			};
@@ -415,7 +418,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="CUP_PicatinnySideMountMk18";
-				item="rhsusf_acc_anpeq15";
+				item="cup_acc_anpeq_15_top_flashlight_tan_f";
 			};
 		};
 		class WeaponSlotsInfo
@@ -423,16 +426,18 @@ class cfgWeapons
 			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
 				class compatibleItems {
 					rhsusf_acc_acog_rmr = 1;
+					UK3CB_BAF_Kite = 1;
 				};
 			};
-			class MuzzleSlot: CUP_M16MuzzleSlot {
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
 					rhsusf_acc_rotex5_grey = 1;
 				};
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
 				class compatibleItems {
-					rhsusf_acc_anpeq15 = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_F = 1;
 					uk3cb_baf_llm_ir_tan = 1;
 				};
 			};
