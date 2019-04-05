@@ -117,12 +117,14 @@ class TWC_Infantry_WW2_UK_Early_Woodland_SectionCommander: TWC_Infantry_WW2_UK_L
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"Throw",
 		"Put"
 	};
@@ -173,6 +175,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Commander: TWC_Infantry_WW2_UK_
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -180,6 +183,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Commander: TWC_Infantry_WW2_UK_
 	respawnweapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -208,6 +212,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_UK_L
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -215,6 +220,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_UK_L
 	respawnweapons[] =
 	{
 		"LIB_LeeEnfield_No1",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -310,6 +316,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_CSM: TWC_Infantry_WW2_UK_Late_W
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -317,6 +324,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_CSM: TWC_Infantry_WW2_UK_Late_W
 	respawnweapons[] =
 	{
 		"LIB_LeeEnfield_No1",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -455,6 +463,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_FAC: TWC_Infantry_WW2_UK_Late_Woodland_
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -462,6 +471,7 @@ class TWC_Infantry_WW2_UK_Early_Woodland_FAC: TWC_Infantry_WW2_UK_Late_Woodland_
 	respawnweapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"

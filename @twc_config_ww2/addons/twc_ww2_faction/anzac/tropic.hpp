@@ -18,6 +18,7 @@ class TWC_Infantry_WW2_ANZAC_Tropic_SMG: TWC_Infantry_WW2_UK_Early_Tropic_SMG
 class TWC_Infantry_WW2_ANZAC_Tropic_MG: TWC_Infantry_WW2_UK_Early_Tropic_MG
 {
 	CATEGORY(TWC_Infantry_ANZAC_Tropic)
+	uniformClass = "fow_u_aus_m37_03_private";
 };
 class TWC_Infantry_WW2_ANZAC_Tropic_MGASS: TWC_Infantry_WW2_UK_Early_Tropic_MGASS
 {

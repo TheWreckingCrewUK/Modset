@@ -117,12 +117,14 @@ class TWC_Infantry_WW2_UK_Early_Desert_SectionCommander: TWC_Infantry_WW2_UK_Lat
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"Throw",
 		"Put"
 	};
@@ -173,6 +175,7 @@ class TWC_Infantry_WW2_UK_Early_Desert_Platoon_Commander: TWC_Infantry_WW2_UK_La
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -180,6 +183,7 @@ class TWC_Infantry_WW2_UK_Early_Desert_Platoon_Commander: TWC_Infantry_WW2_UK_La
 	respawnweapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -208,6 +212,7 @@ class TWC_Infantry_WW2_UK_Early_Desert_Platoon_Sergeant: TWC_Infantry_WW2_UK_Lat
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -215,6 +220,7 @@ class TWC_Infantry_WW2_UK_Early_Desert_Platoon_Sergeant: TWC_Infantry_WW2_UK_Lat
 	respawnweapons[] =
 	{
 		"LIB_LeeEnfield_No1",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -310,6 +316,7 @@ class TWC_Infantry_WW2_UK_Early_Desert_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Des
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No1",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -317,6 +324,7 @@ class TWC_Infantry_WW2_UK_Early_Desert_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Des
 	respawnweapons[] =
 	{
 		"LIB_LeeEnfield_No1",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -455,6 +463,7 @@ class TWC_Infantry_WW2_UK_Early_Desert_FAC: TWC_Infantry_WW2_UK_Late_Desert_FAC
 	weapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -462,6 +471,7 @@ class TWC_Infantry_WW2_UK_Early_Desert_FAC: TWC_Infantry_WW2_UK_Late_Desert_FAC
 	respawnweapons[] =
 	{
 		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"

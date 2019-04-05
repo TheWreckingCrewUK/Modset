@@ -63,6 +63,49 @@ class CfgEditorSubcategories {
 	class TWC_Infantry_ANZAC_Dismounted_Tropic {
 		displayName = "Infantry (ANZAC, Dismounted, Tropic)";
 	};
+	
+	//Canada
+	class TWC_Infantry_Canada_Woodland {
+		displayName = "Infantry (ANZAC, Woodland)";
+	};
+	
+	class TWC_Infantry_Canada_Dismounted_Woodland {
+		displayName = "Infantry (ANZAC, Dismounted, Woodland)";
+	};
+	
+	//India
+	class TWC_Infantry_India_Desert {
+		displayName = "Infantry (India, Desert)";
+	};
+	
+	class TWC_Infantry_India_Dismounted_Desert {
+		displayName = "Infantry (India, Dismounted, Desert)";
+	};
+	
+	class TWC_Infantry_India_Tropic {
+		displayName = "Infantry (India, Tropic)";
+	};
+	
+	class TWC_Infantry_India_Dismounted_Tropic {
+		displayName = "Infantry (India, Dismounted, Tropic)";
+	};
+	
+	//South Africa
+	class TWC_Infantry_SAfrica_Woodland {
+		displayName = "Infantry (South Africa, Woodland)";
+	};
+	
+	class TWC_Infantry_SAfrica_Dismounted_Woodland {
+		displayName = "Infantry (South Africa, Dismounted, Woodland)";
+	};
+	
+	class TWC_Infantry_SAfrica_Desert {
+		displayName = "Infantry (South Africa, Desert)";
+	};
+	
+	class TWC_Infantry_SAfrica_Dismounted_Desert {
+		displayName = "Infantry (South Africa, Dismounted, Desert)";
+	};
 };
 
 class EventHandlers;
@@ -103,6 +146,7 @@ class CfgVehicles
 		displayName = "Base";
 		faction = "TWC_WW2";
 		CATEGORY(TWC_Infantry_Regular_Woodland)
+		identityTypes[] = {"LanguageENGB_F","Head_NATO","G_NATO_default"};
 		icon = "iconMan";
 		nakedUniform = "U_BasicBody";
 		uniformClass = "U_LIB_UK_P37";
@@ -347,10 +391,10 @@ class CfgVehicles
 	#include "canada\woodland.hpp"
 	#include "canada\woodland_dismounted.hpp"
 	
-	#include "indian\desert.hpp"
-	#include "indian\desert_dismounted.hpp"
-	#include "indian\tropic.hpp"
-	#include "indian\tropic_dismounted.hpp"
+	#include "india\desert.hpp"
+	#include "india\desert_dismounted.hpp"
+	#include "india\tropic.hpp"
+	#include "india\tropic_dismounted.hpp"
 	
 	#include "south_africa\woodland.hpp"
 	#include "south_africa\woodland_dismounted.hpp"
@@ -360,46 +404,74 @@ class CfgVehicles
 
 class CfgGroups
 {
-	class INDEPENDENT
+	class INDEP
 	{
 		class TWC_Groups_WW2
 		{
 			name = "TWC Groups WW2";
-			#include "uk_early\groups.hpp"
+			#include "groups.hpp"
 			#include "uk_late\groups.hpp"
+			#include "uk_early\groups.hpp"
 			#include "uk_airborne\groups.hpp"
 			#include "anzac\groups.hpp"
 			#include "canada\groups.hpp"
-			#include "indian\groups.hpp"
+			#include "india\groups.hpp"
 			#include "south_africa\groups.hpp"
 			class TWC_Groups_WW2_Generic
 			{
 				name = "Generic";
-				class Tank_Crew
+				class Tank_Crew_Late
 				{
-					name = "Tank Crew";
-					faction = "TWC_Faction_Independent";
+					name = "Tank Crew (Late)";
+					faction = "TWC_WW2";
 					side = 2;
 					class Unit0
 					{
-							side = 2;
-							vehicle = "TWC_Infantry_WW2_Tank_Commander";
-							rank = "SERGEANT";
-							position[] = {0,0,0};
+						side = 2;
+						vehicle = "TWC_Infantry_WW2_Late_Tank_Commander";
+						rank = "SERGEANT";
+						position[] = {0,0,0};
 					};
 					class Unit1
 					{
-							side = 2;
-							vehicle = "TWC_Infantry_WW2_Tank_Crew";
-							rank = "PRIVATE";
-							position[] = {2,0,0};
+						side = 2;
+						vehicle = "TWC_Infantry_WW2_Late_Tank_Crew";
+						rank = "PRIVATE";
+						position[] = {2,0,0};
 					};
 					class Unit2
 					{
-							side = 2;
-							vehicle = "TWC_Infantry_WW2_Tank_Crew";
-							rank = "PRIVATE";
-							position[] = {4,0,0};
+						side = 2;
+						vehicle = "TWC_Infantry_WW2_Late_Tank_Crew";
+						rank = "PRIVATE";
+						position[] = {4,0,0};
+					};
+				};
+				class Tank_Crew_Early
+				{
+					name = "Tank Crew (Early)";
+					faction = "TWC_WW2";
+					side = 2;
+					class Unit0
+					{
+						side = 2;
+						vehicle = "TWC_Infantry_WW2_Early_Tank_Commander";
+						rank = "SERGEANT";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 2;
+						vehicle = "TWC_Infantry_WW2_Early_Tank_Crew";
+						rank = "PRIVATE";
+						position[] = {2,0,0};
+					};
+					class Unit2
+					{
+						side = 2;
+						vehicle = "TWC_Infantry_WW2_Early_Tank_Crew";
+						rank = "PRIVATE";
+						position[] = {4,0,0};
 					};
 				};
 			};
