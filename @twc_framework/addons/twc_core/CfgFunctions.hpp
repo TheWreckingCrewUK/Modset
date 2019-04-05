@@ -21,6 +21,7 @@ class CfgFunctions {
 			class addToGroup {};
 			class canAddToGroup {};
 			class nameToPlayer {};
+			class getPlayer {};
 			
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};

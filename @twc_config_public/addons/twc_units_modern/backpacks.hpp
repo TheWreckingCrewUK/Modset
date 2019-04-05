@@ -86,6 +86,41 @@
 	};
 
 	
+	class TWC_Backpack_UKSF_2IC: UK3CB_BAF_B_Carryall_OLI
+	{
+		class TransportItems
+		{
+			class _xx_cabletie
+			{
+				name = "ACE_CableTie";
+				count = 5;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_762
+			{
+				magazine = "UK3CB_BAF_762_L42A1_20Rnd_T";
+				count = 5;
+			};
+			class _xx_stanag
+			{
+				magazine = "CUP_30Rnd_556x45_Emag";
+				count = 10;
+			};
+			class _xx_stanag_Red
+			{
+				magazine = "CUP_30Rnd_556x45_Emag_Tracer_Red";
+				count = 5;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 2;
+			};
+		};
+	};
+	
 	
 	class ger_backpack_medic_flk: CUP_B_GER_Medic_FLecktarn
 	{

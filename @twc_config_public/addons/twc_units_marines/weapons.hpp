@@ -9,8 +9,8 @@ class rhs_western_rifle_laser_slot_top;
 class rhs_western_rifle_gripod_slot;
 class rhs_western_rifle_underbarrel_slot;
 class CUP_PicatinnyTopMount;
-class CUP_PicatinnySideMount;
 class asdg_OpticRail1913;
+class CUP_PicatinnyUnderMount;
 
 class cfgWeapons
 {
@@ -166,7 +166,7 @@ class cfgWeapons
 				slot="CUP_PicatinnySideMountM16";
 				item="cup_acc_anpeq_2";
 			};
-			class LinkedItemsFrontSideRail
+			class LinkedItemsUnderBarrelSlot
 			{
 				slot="CUP_PicatinnyUnderMountM16";
 				item="rhsusf_acc_harris_bipod";
