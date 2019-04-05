@@ -34,9 +34,7 @@ class CfgWeapons {
 		};
 	};
 
-	class fow_w_bren;
 	class LIB_FLARE_PISTOL;
-	class bnae_mk1_t_virtual;
 
 	class Rifle;
 	class Rifle_Base_F: Rifle {
@@ -47,25 +45,6 @@ class CfgWeapons {
 		class EventHandlers: EventHandlers {
 			class twc_ww2_weapons {
 				fired = "_this execVM '\twc_ww2_weapons\scripts\twc_boys_fire.sqf';";
-			};
-		};
-	};
-
-	class TWC_Bren: fow_w_bren {
-		class WeaponSlotsInfo {
-			displayName = "Bren Gun";
-			mass = 200;
-			allowedSlots[] = {901};
-		};
-	};
-
-	class twc_mk1t: bnae_mk1_t_virtual {
-		scope = 1;
-		author = "Anschluss";
-		class LinkedItems {
-			class LinkedItemsOptic {
-				slot = "CowsSlot";
-				item= "bnae_scope_v3_virtual";
 			};
 		};
 	};

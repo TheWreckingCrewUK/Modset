@@ -26,7 +26,7 @@ class CfgPatches
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"twc_ww2_faction",
-			"TWC_WW2_AmmoBoxes" 
+			"TWC_WW2_AmmoBoxes"
 		};
 	};
 };

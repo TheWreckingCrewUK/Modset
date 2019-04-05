@@ -2,7 +2,7 @@
 	{
 		scope=1;
 		displayName="Base";
-		faction="twc_faction_independent";
+		faction="TWC_WW2";
 		editorSubcategory = "Men_WW2_USMC";
 		vehicleClass="Men_WW2_USMC";
 		nakedUniform="U_BasicBody";
