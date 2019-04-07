@@ -70,6 +70,12 @@ class CfgWeapons {
 		class EventHandlers;
 	};
 	
+	class launch_NLAW_F: Launcher_Base_F {
+		ace_overpressure_angle = 30;
+		ace_overpressure_range = 10;
+		ace_overpressure_damage = 0.7;
+	};
+	
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
