@@ -24,6 +24,7 @@
 	class UK3CB_BAF_B_Bergen_MTP_Medic_H_B;
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A;
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A;
+	class UK3CB_BAF_B_Bergen_MTP_SL_H_A;
 	
 	
 	
@@ -150,6 +151,41 @@
 	};
 
 	
+	class TWC_Backpack_UKSF_SL_H: UK3CB_BAF_B_Bergen_MTP_SL_H_A
+	{
+		class TransportItems
+		{
+			class _xx_cabletie
+			{
+				name = "ACE_CableTie";
+				count = 10;
+			};
+			class _xx_defusal
+			{
+				name = "ACE_DefusalKit";
+				count = 1;
+			};
+			class _xx_chemblue
+			{
+				name = "Chemlight_blue";
+				count = 2;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "CUP_30Rnd_556x45_Emag";
+				count = 10;
+			};
+			class _xx_stanag_Red
+			{
+				magazine = "CUP_30Rnd_556x45_Emag_Tracer_Red";
+				count = 5;
+			};
+		};
+	};
+	
 	class TWC_Backpack_UKSF_Rifleman: UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A
 	{
 		class TransportItems
@@ -180,6 +216,42 @@
 			class _xx_stanag_Red
 			{
 				magazine = "CUP_30Rnd_556x45_Emag_Tracer_Red";
+				count = 5;
+			};
+		};
+	};
+
+	
+	class TWC_Backpack_UKSF_Marksman: UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A
+	{
+		class TransportItems
+		{
+			class _xx_cabletie
+			{
+				name = "ACE_CableTie";
+				count = 10;
+			};
+			class _xx_defusal
+			{
+				name = "ACE_DefusalKit";
+				count = 1;
+			};
+			class _xx_chemblue
+			{
+				name = "Chemlight_blue";
+				count = 2;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
+				count = 10;
+			};
+			class _xx_stanag_Red
+			{
+				magazine = "UK3CB_BAF_762_L42A1_20Rnd_T";
 				count = 5;
 			};
 		};
