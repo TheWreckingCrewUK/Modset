@@ -89,6 +89,7 @@ class CfgPatches {
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
 			"A3_Data_F",
+			"cup_weapons_m16",
 			"cup_wheeledvehicles_uphmmwv",
 			"rhsusf_c_Caiman",
 			"rhsusf_c_Cougar",

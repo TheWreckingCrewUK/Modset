@@ -2620,14 +2620,14 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"Throw",
 			"Put",
-			"twc_l129a1_spotter",
+			"TWC_HK417_scope_bipod",
 			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_l129a1_spotter",
+			"TWC_HK417_scope_bipod",
 			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=

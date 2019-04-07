@@ -1729,22 +1729,48 @@ class cfgweapons
 	{
 		
 		class Single:Mode_SemiAuto {
-			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
 		};
 		class Burst:Mode_Burst {
-			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};			
 		};
 		class FullAuto:Mode_FullAuto {
-			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};			
+		};
+	};
+	class twc_HK417_base;
+	class twc_HK417_jsrs_base: twc_HK417_base
+	{
+		scope = 1;
+		class Single:Mode_SemiAuto {
+			class StandardSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_m107_shot_silenced_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			class StandardSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_m107_shot_silenced_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};		
+		};
+		class FullAuto:Mode_FullAuto {
+			class StandardSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_m107_shot_silenced_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};	
 		};
 	};
 	

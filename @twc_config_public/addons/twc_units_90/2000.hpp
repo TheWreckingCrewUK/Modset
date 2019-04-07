@@ -2403,49 +2403,15 @@
 		{
 			"Throw",
 			"Put",
-			"TWC_CUP_smg_MP5SD6_clean",
+			"TWC_UK3CB_BAF_L119A1_CQB_ACOG",
 			"UK3CB_BAF_L105A2"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"TWC_CUP_smg_MP5SD6_clean",
+			"TWC_UK3CB_BAF_L119A1_CQB_ACOG",
 			"UK3CB_BAF_L105A2"
-		};
-		magazines[]=
-		{
-			"UK3CB_BAF_9_15Rnd",
-			"UK3CB_BAF_9_15Rnd",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"B_IR_Grenade"
-		};
-		Respawnmagazines[]=
-		{
-			"UK3CB_BAF_9_15Rnd",
-			"UK3CB_BAF_9_15Rnd",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"CUP_30Rnd_9x19_MP5",
-			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"B_IR_Grenade"
 		};
 	};
 

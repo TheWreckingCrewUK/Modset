@@ -20,6 +20,36 @@ class cfgWeapons
 	};
 		
 	
+	class UK3CB_BAF_L119A1_CQB;
+	class TWC_UK3CB_BAF_L119A1_CQB_ACOG: UK3CB_BAF_L119A1_CQB
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="rhsusf_acc_acog2_usmc";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_acog2_usmc = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 70;
+		};
+	};
+	
 	class UK3CB_BAF_L119A1_FG;
 	class TWC_UK3CB_BAF_L119A1_FG_ACOG: UK3CB_BAF_L119A1_FG
 	{
@@ -35,7 +65,7 @@ class cfgWeapons
 			class LinkedItemsMuzzleSlot
 			{
 				slot="asdg_MuzzleSlot_UK3CB_BAF_L85";
-				item="UK3CB_BAF_Silencer_L85";
+				item="uk3cb_baf_sffh";
 			};
 		};
 		class WeaponSlotsInfo
@@ -47,7 +77,8 @@ class cfgWeapons
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
 				class compatibleItems {
-					UK3CB_BAF_Silencer_L85 = 1;
+					twc_acc_rotex5_grey = 1;
+					uk3cb_baf_sffh = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -70,7 +101,7 @@ class cfgWeapons
 			class LinkedItemsMuzzleSlot
 			{
 				slot="asdg_MuzzleSlot_UK3CB_BAF_L85";
-				item="UK3CB_BAF_Silencer_L85";
+				item="uk3cb_baf_sffh";
 			};
 		};
 		class WeaponSlotsInfo
@@ -82,7 +113,8 @@ class cfgWeapons
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
 				class compatibleItems {
-					UK3CB_BAF_Silencer_L85 = 1;
+					twc_acc_rotex5_grey = 1;
+					uk3cb_baf_sffh = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -90,7 +122,6 @@ class cfgWeapons
 		};
 	};
 	
-	class UK3CB_BAF_L119A1_CQB;
 	class TWC_UK3CB_BAF_L119A1_CQB_EOTECH: UK3CB_BAF_L119A1_CQB
 	{
 		recoil = "twc_rifle_556";
@@ -112,7 +143,7 @@ class cfgWeapons
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
 				class compatibleItems {
-					UK3CB_BAF_Silencer_L85 = 1;
+					twc_acc_rotex5_grey = 1;
 				};
 			};
 			allowedslots[] = {901};

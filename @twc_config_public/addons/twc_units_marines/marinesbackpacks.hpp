@@ -164,7 +164,7 @@
 		};
 		class TransportMagazines
 		{
-			maga_nc(rhsusf_200rnd_556x45_mixed_box,4);
+			maga_nc(rhs_200rnd_556x45_T_SAW,4);
 		};
 	};
 	
