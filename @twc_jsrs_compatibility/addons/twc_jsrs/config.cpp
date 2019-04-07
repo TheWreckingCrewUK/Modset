@@ -794,6 +794,50 @@ class cfgweapons
 		class Single;
 		class FullAuto;
 	};
+	
+	class UK3CB_BAF_L119_Base: arifle_Mk20_plain_F {
+		class FullAuto: FullAuto {
+			class StandardSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
+		};
+		class Fullauto_medium: FullAuto {
+			class StandardSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
+		};
+		class Single: Single {
+			class StandardSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
+		};
+		class Single_medium_optics1: Single {
+			class StandardSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
+		};
+		class Single_far_optics2: Single_medium_optics1 {
+			class StandardSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
+		};
+	};
 	//twc_L85_closure_soundshader
 	
 	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F
@@ -851,6 +895,10 @@ class cfgweapons
 			{
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
 			
 		};
 		class Burst: Mode_Burst
@@ -859,6 +907,10 @@ class cfgweapons
 			{
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
 			
 		};
 		class Single: Mode_SemiAuto
@@ -866,6 +918,10 @@ class cfgweapons
 			class standardsound
 			{
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
 			};
 			
 		};
@@ -880,6 +936,10 @@ class cfgweapons
 			{
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
 			
 		};
 		class Single: Single
@@ -887,6 +947,10 @@ class cfgweapons
 			class standardsound
 			{
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
 			};
 			
 		};
@@ -1487,16 +1551,22 @@ class cfgweapons
 	{
 		
 		class Single:Mode_SemiAuto {
-			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
 		};
 		class Burst:Mode_Burst {
-			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};			
+			};	
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};		
 		};
 	};
 	
@@ -1504,22 +1574,91 @@ class cfgweapons
 	{
 		
 		class Single:Mode_SemiAuto {
-			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
 		};
 		class Burst:Mode_Burst {
-			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};			
 		};
 		class FullAuto:Mode_FullAuto {
-			sounds[] = {"StandardSound"};
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};	
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};		
+		};
+	};
+	
+	class twc_L119A2_base;
+	class twc_L119A2_10: twc_L119A2_base
+	{
+		
+		class Single:Mode_SemiAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
+		};
+		class Burst:Mode_Burst {
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};			
+		};
+		class FullAuto:Mode_FullAuto {
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};	
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};		
+		};
+	};
+	
+	class twc_L119A2_CQB_base;
+	class twc_L119A2_CQB: twc_L119A2_CQB_base
+	{
+		
+		class Single:Mode_SemiAuto {
+			dispersion = 0.002;
+			reloadTime = 0.07;
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
+		};
+		class Burst:Mode_Burst {
+			dispersion = 0.002;
+			reloadTime = 0.07;
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};			
+		};
+		class FullAuto:Mode_FullAuto {
+			dispersion = 0.002;
+			reloadTime = 0.07;
+			class standardsound {
+				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
+			};	
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};		
 		};
 	};
 	
@@ -1527,22 +1666,27 @@ class cfgweapons
 	{
 		
 		class Single:Mode_SemiAuto {
-			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
 		};
 		class Burst:Mode_Burst {
-			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};			
 		};
 		class FullAuto:Mode_FullAuto {
-			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};			
+			};	
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};		
 		};
 	};
 	
@@ -1554,18 +1698,30 @@ class cfgweapons
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};
 		};
 		class Burst:Mode_Burst {
 			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};			
+			};		
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};	
 		};
 		class FullAuto:Mode_FullAuto {
 			sounds[] = {"StandardSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
-			};			
+			};		
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "jsrs_6x5mm_sd_reflector_1"};
+			};	
 		};
 	};
 	

@@ -78,7 +78,7 @@
 		scope = 1;
 		class TransportItems
 		{
-			item_nc(ACE_surgicalKit,1);
+			item_nc(TWC_Item_Medical_SutureKit_25,1);
 			item_nc(ACE_personalAidKit,1);
             item_nc(ACE_fieldDressing,12);
 			item_nc(ACE_elasticBandage,15);
@@ -92,3 +92,99 @@
 			item_nc(ACE_tourniquet,4);
 		};
 	};
+	
+	class CUP_B_Kombat_Radio_Olive;
+	class TWC_Backpack_USMC2000_Sectionleader: CUP_B_Kombat_Radio_Olive
+	{
+		class TransportItems
+		{
+			item_nc(ACRE_PRC117F,1);
+			item_nc(ACE_CableTie,5);
+		};
+		class TransportMagazines
+		{
+			maga_nc(SmokeShellRed,2);
+			maga_nc(SmokeShellGreen,2);
+		};
+	};
+	
+	class UK3CB_BAF_B_Carryall_OLI;
+	class TWC_Backpack_USMC2000_Teamleader: UK3CB_BAF_B_Carryall_OLI
+	{
+		class TransportItems
+		{
+			item_nc(ACE_CableTie,5);
+		};
+		class TransportMagazines
+		{
+			maga_nc(CUP_30Rnd_556x45_Stanag,15);
+			maga_nc(CUP_30Rnd_556x45_Stanag_Tracer_Red,10);
+			maga_nc(SmokeShellGreen,2);
+		};
+	};
+	
+	class B_TacticalPack_blk;
+	class TWC_Backpack_USMC2000_Rifleman: B_TacticalPack_blk
+	{
+		class TransportItems
+		{
+			item_nc(ACE_CableTie,5);
+		};
+		class TransportMagazines
+		{
+			maga_nc(CUP_30Rnd_556x45_Stanag,10);
+			maga_nc(CUP_30Rnd_556x45_Stanag_Tracer_Red,10);
+		};
+	};
+	
+	class B_FieldPack_oli;
+	class TWC_Backpack_USMC2000_Breacher: B_FieldPack_oli
+	{
+		class TransportItems
+		{
+			item_nc(ACE_CableTie,5);
+		};
+		class TransportMagazines
+		{
+			maga_nc(CUP_30Rnd_556x45_Stanag,5);
+			maga_nc(CUP_30Rnd_556x45_Stanag_Tracer_Red,2);
+		};
+		class TransportWeapons
+		{
+			weap_nc(CUP_TWC_arifle_M16A4_Grip_clean,1);
+		};
+	};
+	
+	class twc_genbackPack_oli;
+	class TWC_Backpack_USMC2000_Autorifleman: twc_genbackPack_oli
+	{
+		class TransportItems
+		{
+			item_nc(ACE_CableTie,5);
+		};
+		class TransportMagazines
+		{
+			maga_nc(rhsusf_200rnd_556x45_mixed_box,4);
+		};
+	};
+	
+	class CUP_B_SLA_Medicbag;
+	class TWC_Backpack_USMC2000_Medic: CUP_B_SLA_Medicbag
+	{
+		class TransportItems
+		{
+			item_nc(TWC_Item_Medical_SutureKit_25,1);
+			item_nc(ACE_personalAidKit,1);
+            item_nc(ACE_fieldDressing,12);
+			item_nc(ACE_elasticBandage,15);
+			item_nc(ACE_packingBandage,15);
+			item_nc(ACE_quikclot,6);
+			item_nc(ACE_morphine,10);
+			item_nc(ACE_epinephrine,10);
+			item_nc(ACE_adenosine,4);
+			item_nc(ACE_atropine,4);
+			item_nc(ACE_salineIV_500,6);
+			item_nc(ACE_tourniquet,4);
+		};
+	};
+	

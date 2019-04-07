@@ -180,11 +180,13 @@ class TWC_Infantry_WW2_USSR_SectionCommander: TWC_Infantry_WW2_USSR_Base
 	};
 	weapons[] +=
 	{
-		"LIB_PPSh41_m"
+		"LIB_PPSh41_m",
+		"LIB_Binocular_SU"
 	};
 	respawnweapons[] +=
 	{
-		"LIB_PPSh41_m"
+		"LIB_PPSh41_m",
+		"LIB_Binocular_SU"
 	};
 	magazines[] +=
 	{
@@ -216,11 +218,13 @@ class TWC_Infantry_WW2_USSR_Platoon_Commander: TWC_Infantry_WW2_USSR_Base
 	};
 	weapons[] +=
 	{
-		"LIB_PPSh41_m"
+		"LIB_PPSh41_m",
+		"LIB_Binocular_SU"
 	};
 	respawnweapons[] +=
 	{
-		"LIB_PPSh41_m"
+		"LIB_PPSh41_m",
+		"LIB_Binocular_SU"
 	};
 	magazines[] +=
 	{
@@ -251,11 +255,13 @@ class TWC_Infantry_WW2_USSR_Platoon_Sergeant: TWC_Infantry_WW2_USSR_Base
 	};
 	weapons[] +=
 	{
-		"LIB_SVT_40"
+		"LIB_SVT_40",
+		"LIB_Binocular_SU"
 	};
 	respawnweapons[] +=
 	{
-		"LIB_SVT_40"
+		"LIB_SVT_40",
+		"LIB_Binocular_SU"
 	};
 	magazines[] +=
 	{
@@ -319,11 +325,13 @@ class TWC_Infantry_WW2_USSR_Tank_Commander: TWC_Infantry_WW2_USSR_Base
 	};
 	weapons[] +=
 	{
-		"LIB_PPSh41_m"
+		"LIB_PPSh41_m",
+		"LIB_Binocular_SU"
 	};
 	respawnweapons[] +=
 	{
-		"LIB_PPSh41_m"
+		"LIB_PPSh41_m",
+		"LIB_Binocular_SU"
 	};
 	magazines[] +=
 	{

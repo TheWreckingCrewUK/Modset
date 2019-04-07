@@ -66,6 +66,7 @@ class CfgVehicles
 	class B_Soldier_base_F;
 	
 	#include "usmarines.hpp"
+	#include "usmarines2000.hpp"
 	
 	#include "marinesbackpacks.hpp"
 };

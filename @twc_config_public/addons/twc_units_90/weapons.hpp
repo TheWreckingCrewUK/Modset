@@ -1,5 +1,6 @@
 class asdg_FrontSideRail;
 class asdg_OpticRail1913;
+class asdg_MuzzleSlot_556_3CB;
 
 class cfgWeapons
 {
@@ -8,6 +9,116 @@ class cfgWeapons
 	class UK3CB_BAF_L85A2_UGL;
 	class UK3CB_BAF_SUSAT_3D;
 	
+	class CUP_smg_MP5SD6;
+	class TWC_CUP_smg_MP5SD6_clean:CUP_smg_MP5SD6
+	{
+		class WeaponSlotsInfo
+		{
+			allowedslots[] = {701,901};
+			mass = 65;
+		};
+	};
+		
+	
+	class UK3CB_BAF_L119A1_FG;
+	class TWC_UK3CB_BAF_L119A1_FG_ACOG: UK3CB_BAF_L119A1_FG
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="rhsusf_acc_ACOG";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="asdg_MuzzleSlot_UK3CB_BAF_L85";
+				item="UK3CB_BAF_Silencer_L85";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_ACOG = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
+				class compatibleItems {
+					UK3CB_BAF_Silencer_L85 = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 85;
+		};
+	};
+	
+	class UK3CB_BAF_L119A1_UKUGL;
+	class TWC_UK3CB_BAF_L119A1_UKUGL_ACOG: UK3CB_BAF_L119A1_UKUGL
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="rhsusf_acc_ACOG";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="asdg_MuzzleSlot_UK3CB_BAF_L85";
+				item="UK3CB_BAF_Silencer_L85";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_ACOG = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
+				class compatibleItems {
+					UK3CB_BAF_Silencer_L85 = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 105;
+		};
+	};
+	
+	class UK3CB_BAF_L119A1_CQB;
+	class TWC_UK3CB_BAF_L119A1_CQB_EOTECH: UK3CB_BAF_L119A1_CQB
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="rhsusf_acc_eotech_552";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_eotech_552 = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
+				class compatibleItems {
+					UK3CB_BAF_Silencer_L85 = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 75;
+		};
+	};
 	
 	class CUP_V_B_PASGT_no_bags;
 	class twc_interceptor_ddpm: CUP_V_B_PASGT_no_bags

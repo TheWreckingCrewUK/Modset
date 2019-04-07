@@ -1,6 +1,8 @@
 class asdg_FrontSideRail;
 class asdg_OpticRail1913;
 class CUP_PicatinnyTopShortMount;
+class asdg_MuzzleSlot_556;
+class CUP_PicatinnyTopMount;
 class CUP_PicatinnySideMount;
 class UK3CB_underbarrel_rifle_slot;
 class asdg_MuzzleSlot_762_L129_3CB;
@@ -9,7 +11,12 @@ class asdg_UnderSlot;
 class rhs_western_rifle_scopes_slot_short;
 class rhs_western_rifle_laser_slot_top;
 class rhs_western_rifle_gripod_slot;
-
+class rhs_western_rifle_muzzle_slot;
+class asdg_MuzzleSlot_556_3CB;
+class rhs_western_rifle_underbarrel_slot;
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
 
 class cfgWeapons
 {
@@ -22,7 +29,468 @@ class cfgWeapons
 	class UK3CB_BAF_L85A2_RIS_Tan;
 	class arifle_Mk20_F;
 	class Rifle_Base_F;
-	class cannoncore;
+	
+	
+	class rhs_weap_mk18_d;
+	class twc_rhs_weap_mk18_d_supp_acog: rhs_weap_mk18_d
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_ACOG_d";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15_top";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="UnderBarrelSlot";
+				item="rhsusf_acc_tdstubby_tan";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_rotex5_grey";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_ACOG_d = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					rhsusf_acc_anpeq15_top = 1;
+				};
+			};
+			class MuzzleSlot: rhs_western_rifle_muzzle_slot {
+				class compatibleItems {
+					rhsusf_acc_rotex5_grey = 1;
+				};
+			};
+			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {
+				class compatibleItems {
+					rhsusf_acc_tdstubby_tan = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 54.56;
+		};
+	};
+	class twc_rhs_weap_mk18_d_supp_LDS: rhs_weap_mk18_d
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="RKSL_optic_LDS_C";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15_top";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="UnderBarrelSlot";
+				item="rhsusf_acc_tdstubby_tan";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_rotex5_grey";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					RKSL_optic_LDS_C = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					rhsusf_acc_anpeq15_top = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+				};
+			};
+			class MuzzleSlot: rhs_western_rifle_muzzle_slot {
+				class compatibleItems {
+					rhsusf_acc_rotex5_grey = 1;
+				};
+			};
+			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {
+				class compatibleItems {
+					rhsusf_acc_tdstubby_tan = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 74.56;
+		};
+	};
+	
+	class UK3CB_BAF_L119A1_CQB;
+	class TWC_UK3CB_BAF_L119A1_CQB_ACOG: UK3CB_BAF_L119A1_CQB
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="rhsusf_acc_acog2_usmc";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="asdg_MuzzleSlot_UK3CB_BAF_L85";
+				item="UK3CB_BAF_Silencer_L85";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_acog2_usmc = 1;
+					rksl_optic_lds = 1;
+					UK3CB_BAF_Kite = 1;
+					rhsusf_acc_g33_t1 = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
+				class compatibleItems {
+					UK3CB_BAF_Silencer_L85 = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 70;
+		};
+	};
+	
+	class CUP_arifle_mk18_black;
+	class twc_L119A2_base: CUP_arifle_mk18_black
+	{
+		displayName = "L119A2";
+		class Single:Mode_SemiAuto {
+			//sounds[] = {"StandardSound"};
+			dispersion = 0.001;
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			//sounds[] = {"StandardSound"};
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};		
+		};
+		class FullAuto:Mode_FullAuto {
+			//sounds[] = {"StandardSound"};
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};	
+		};
+	};
+	
+	class twc_L119A2_10: twc_L119A2_base
+	{};
+	
+	//tiered approach for jsrs and non-jsrs compat. the adjoining tier twc_L119A2_CQB is modified in the jsrs file
+	class TWC_UK3CB_BAF_L119A2_10_ACOG: twc_L119A2_10
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_acog_rmr";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_rotex5_grey";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="cup_acc_anpeq_15_top_flashlight_tan_f";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_acog_rmr = 1;
+					rksl_optic_lds = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					rhsusf_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+	};
+	class TWC_UK3CB_BAF_L119A2_10_LDS: twc_L119A2_10
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rksl_optic_lds";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_rotex5_grey";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="cup_acc_anpeq_15_top_flashlight_tan_f";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_acog_rmr = 1;
+					rksl_optic_lds = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					rhsusf_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+	};
+	
+	class TWC_UK3CB_BAF_L119A2_10_T1: twc_L119A2_10
+	{
+		displayName = "L119A2 (T1)";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_t1_high";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_rotex5_grey";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="cup_acc_anpeq_15_top_flashlight_tan_f";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_t1_high = 1;
+					rhsusf_acc_eotech_xps3 = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					rhsusf_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+	};
+	
+	class CUP_arifle_SBR_black;
+	class twc_L119A2_CQB_base: CUP_arifle_SBR_black
+	{
+		displayName = "L119A2 CQB";
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		descriptionShort = "CQB Variant<br/>Short Barrel<br/>Increased Rate of Fire";
+		class Single:Mode_SemiAuto {
+			//sounds[] = {"StandardSound"};
+			dispersion = 0.002;
+			reloadTime = 0.07;
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Burst:Mode_Burst {
+			dispersion = 0.002;
+			reloadTime = 0.07;
+			//sounds[] = {"StandardSound"};
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};		
+		};
+		class FullAuto:Mode_FullAuto {
+			dispersion = 0.002;
+			reloadTime = 0.07;
+			//sounds[] = {"StandardSound"};
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};	
+		};
+	};
+	
+	class twc_L119A2_CQB: twc_L119A2_CQB_base
+	{};
+	
+	//tiered approach for jsrs and non-jsrs compat. the adjoining tier twc_L119A2_CQB is modified in the jsrs file
+	class TWC_UK3CB_BAF_L119A2_CQB_ACOG: twc_L119A2_CQB
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_acog_rmr";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_rotex5_grey";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="cup_acc_anpeq_15_top_flashlight_tan_f";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_acog_rmr = 1;
+					UK3CB_BAF_Kite = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					rhsusf_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_F = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 70;
+		};
+	};
+	
+	class rhs_weap_m4a1_d;
+	class twc_rhs_weap_m4a1_d_supp_lds: rhs_weap_m4a1_d
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_su230a_mrds_c";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15_top";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_rotex5_grey";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_su230a_mrds_c = 1;
+				};
+			};
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					rhsusf_acc_anpeq15_top = 1;
+				};
+			};
+			class MuzzleSlot: rhs_western_rifle_muzzle_slot {
+				class compatibleItems {
+					rhsusf_acc_rotex5_grey = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 74.56;
+		};
+	};
+	
 	
 	class CUP_H_US_H_PASGT_desert;
 	class twc_CUP_H_US_H_PASGT_trp: CUP_H_US_H_PASGT_desert
@@ -276,6 +744,7 @@ class cfgWeapons
 		};
 	};
 	
+	class cannoncore;
 	class gatling_30mm: CannonCore
 	{
 		class EventHandlers;
@@ -1062,6 +1531,7 @@ class cfgWeapons
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					rhsusf_acc_ACOG = 1;
+					rhsusf_acc_compm4 = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -1101,6 +1571,7 @@ class cfgWeapons
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					rhsusf_acc_ACOG = 1;
+					rhsusf_acc_compm4 = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {

@@ -95,6 +95,14 @@ class CfgPatches
 			"1990_British_Vehicle_Crew_Desert",
 			"1990_British_Tank_Commander_Desert",
 			"1990_British_Tank_Crew_Desert",
+			
+			"2000_UKSF_Base",
+			"2000_UKSF_Sectionleader",
+			"2000_UKSF_2ic",
+			"2000_UKSF_Pointman",
+			"2000_UKSF_Grenadier",
+			"2000_UKSF_Medic",
+			
 			"twc_men_1990_us_w_SquadLeader",
 			"twc_men_1990_us_w_teamleader",
 			"twc_men_1990_us_w_rifleman",
@@ -105,6 +113,7 @@ class CfgPatches
 			"twc_men_1990_us_d_rifleman",
 			"twc_men_1990_us_d_rifleman_at",
 			"twc_men_1990_us_d_autorifleman",
+			
 			"1990_British_FSTCommander_Desert",
 			"1990_British_FSTForwardObserver_Desert",
 			"1990_British_FSTAssistant_Desert"

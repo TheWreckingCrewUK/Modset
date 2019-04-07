@@ -39,6 +39,14 @@ class CfgPatches {
 			"twc_ana_marksman",
 			"twc_ana_medic",
 			
+			"Modern_UKSF_Base",
+			"Modern_UKSF_Squadleader",
+			"Modern_UKSF_Pointman",
+			"Modern_UKSF_Grenadier",
+			"Modern_UKSF_Marksman",
+			"Modern_UKSF_Medic",
+			"Modern_UKSF_2IC",
+			
 			"Modern_pol_Base",
 			"Modern_pol_rifleman_at",
 			"Modern_pol_grenadier",

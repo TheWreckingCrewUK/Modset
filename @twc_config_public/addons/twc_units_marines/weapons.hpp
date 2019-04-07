@@ -8,6 +8,9 @@ class rhs_western_rifle_scopes_slot_short;
 class rhs_western_rifle_laser_slot_top;
 class rhs_western_rifle_gripod_slot;
 class rhs_western_rifle_underbarrel_slot;
+class CUP_PicatinnyTopMount;
+class asdg_OpticRail1913;
+class CUP_PicatinnyUnderMount;
 
 class cfgWeapons
 {
@@ -77,7 +80,37 @@ class cfgWeapons
 	};
 		
 	class CUP_arifle_M16A4_Grip;
-	class CUP_TWC_arifle_M16A4_Grip_clean: CUP_arifle_M16A4_Grip
+	class CUP_TWC_arifle_M16A4_Grip_base: CUP_arifle_M16A4_Grip
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	class UK3CB_BAF_L128A1;
+	class twc_m1014: UK3CB_BAF_L128A1
+	{
+		displayName = "M1014";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L128A1";
+				item="rhsusf_acc_compm4";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L128A1: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_compm4 = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 84.8;
+		};
+	};
+	
+	class CUP_TWC_arifle_M16A4_Grip_clean: CUP_TWC_arifle_M16A4_Grip_base
 	{
 		class WeaponSlotsInfo {
 			allowedslots[] = {901};
@@ -85,6 +118,99 @@ class cfgWeapons
 		};
 	};
 	
+		
+	class twc_CUP_arifle_M16A4_Grip_acog: CUP_TWC_arifle_M16A4_Grip_base
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountM16";
+				item="rhsusf_acc_ACOG_USMC";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountM16";
+				item="cup_acc_anpeq_2";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountM16: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_ACOG_USMC = 1;
+					rhsusf_acc_compm4 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountM16: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					cup_acc_anpeq_2 = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 74.8;
+		};
+	};
+		
+	class twc_CUP_arifle_M16A4_Grip_acog_sdmr: CUP_TWC_arifle_M16A4_Grip_base
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountM16";
+				item="rhsusf_acc_ACOG_USMC";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountM16";
+				item="cup_acc_anpeq_2";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="CUP_PicatinnyUnderMountM16";
+				item="rhsusf_acc_harris_bipod";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountM16: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_ACOG_USMC = 1;
+					rhsusf_acc_compm4 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountM16: CUP_PicatinnySideMount {
+				class compatibleItems {
+					cup_acc_anpeq_2 = 1;
+				};
+			};
+			class CUP_PicatinnyUnderMountM16: CUP_PicatinnyUnderMount {
+				class compatibleItems {
+					rhsusf_acc_harris_bipod = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 76.8;
+		};
+		recoil = "twc_rifle_556_long";
+		recoilProne = "twc_rifle_556_long_prone";
+		displayName = "M16 SDM-R";
+		modes[] = {"Single"};
+		descriptionShort = "Match Grade Competition Rifle<br/>Caliber: 5.56x45mm NATO";
+	};
+	
+	class CUP_arifle_M16A4_GL;
+	class twc_CUP_arifle_M16A4_GL: CUP_arifle_M16A4_GL
+	{
+		class WeaponSlotsInfo
+		{
+			allowedslots[] = {901};
+			mass = 106.8;
+		};
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
 		
 	class twc_rhs_weap_m16a4_acog_lazer: rhs_weap_m16a4_carryhandle
 	{
