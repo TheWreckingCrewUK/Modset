@@ -14,7 +14,7 @@ class ACE_Medical_Actions {
 		};
 		
 		class ElasticBandage: FieldDressing {
-			treatmentTime = 13;
+			treatmentTime = 12;
 		};
 		
 		class CPR: FieldDressing {
