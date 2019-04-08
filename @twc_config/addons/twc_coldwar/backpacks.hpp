@@ -37,7 +37,7 @@ class TWC_Backpack_ColdWar_Regular_2iC: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_ASSAT: SP_Backpack_CarlGustavCarrier
 {
 	scope = 1;
-	maximumLoad = 250;
+	maximumLoad = 300;
 	class TransportMagazines {
 		ADD_MAGA(ukcw_l14a1_HEAT,2);
 		ADD_MAGA(ukcw_l14a1_HE,1);
@@ -57,6 +57,7 @@ class TWC_Backpack_ColdWar_Regular_ASSMG: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_Dismounted_Rifleman: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 200;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd, 8);
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 1);
@@ -65,7 +66,7 @@ class TWC_Backpack_ColdWar_Regular_Dismounted_Rifleman: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_Dismounted_AT: SP_Backpack_LargePack_CarlGustav
 {
 	scope = 1;
-	maximumLoad = 200;
+	maximumLoad = 300;
 	class TransportMagazines {
 		ADD_MAGA(ukcw_l14a1_HE,1);
 		ADD_MAGA(ukcw_l14a1_HEAT,1);
@@ -93,7 +94,7 @@ class TWC_Backpack_ColdWar_Regular_Dismounted_MG: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_Dismounted_ASSMG: SP_Backpack_LargePack
 {
 	scope = 1;
-	maximumLoad = 250;
+	maximumLoad = 300;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2);
 		ADD_MAGA(UK3CB_BAF_762_100Rnd,1);
@@ -223,7 +224,7 @@ class TWC_Backpack_ColdWar_COIN_Platoon_Commander: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_COIN_Platoon_Sergeant: SP_Backpack_LargePack
 {
 	scope = 1;
-	maximumLoad = 500;
+	maximumLoad = 600;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
 		ADD_ITEM(ACE_wirecutter,1);
@@ -276,6 +277,7 @@ class TWC_Backpack_ColdWar_Regular_Blowpipe_Ass: SP_Backpack_BlowpipeCarrier
 class TWC_Backpack_ColdWar_Regular_Spotter: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 250;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
 	};
@@ -288,7 +290,7 @@ class TWC_Backpack_ColdWar_Regular_Spotter: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_Artillery_Commander: SP_Backpack_LargePack
 {
 	scope = 1;
-	maximumLoad = 250;
+	maximumLoad = 500;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
 	};

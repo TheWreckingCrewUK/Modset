@@ -21,6 +21,7 @@ class CfgFunctions {
 			class addToGroup {};
 			class canAddToGroup {};
 			class nameToPlayer {};
+			class getPlayer {};
 			
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
@@ -29,6 +30,9 @@ class CfgFunctions {
 			class reverseArray {};
 			class floatToString {};
 			class positionToString {};
+			class isNightTime {};
+			class objectAmbientLight {};
+			class unflipVehicleQuick {};
 			
 			/** DEBUG TOOLS **/
 			class drawBoundingBox {};

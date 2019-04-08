@@ -304,24 +304,24 @@ class ACE_Medical_Advanced {
 
 			class ElasticBandage: fieldDressing {
 				class Abrasion {
-					effectiveness = 1;
-					reopeningChance = 0.05;
+					effectiveness = 1.2;
+					reopeningChance = 0.025;
 					reopeningMinDelay = 300;
 					reopeningMaxDelay = 3600;
 				};
 				class AbrasionMinor: Abrasion {
-					effectiveness = 1;
+					effectiveness = 1.2;
 				};
 				class AbrasionMedium: Abrasion {
-					effectiveness = 0.9;
+					effectiveness = 0.95;
 				};
 				class AbrasionLarge: Abrasion {
-					effectiveness = 0.8;
+					effectiveness = 0.85;
 				};
 
 				class Avulsions: Abrasion {
 					effectiveness = 2;
-					reopeningChance = 0.05;
+					reopeningChance = 0.025;
 					reopeningMinDelay = 300;
 					reopeningMaxDelay = 3600;
 				};
@@ -347,7 +347,7 @@ class ACE_Medical_Advanced {
 
 				class CrushWound: Abrasion {
 					effectiveness = 2;
-					reopeningChance = 0.1;
+					reopeningChance = 0.05;
 					reopeningMinDelay = 300;
 					reopeningMaxDelay = 3600;
 				};
@@ -363,7 +363,7 @@ class ACE_Medical_Advanced {
 
 				class Cut: Abrasion {
 					effectiveness = 1;
-					reopeningChance = 0.05;
+					reopeningChance = 0.025;
 					reopeningMinDelay = 300;
 					reopeningMaxDelay = 3600;
 				};
@@ -379,7 +379,7 @@ class ACE_Medical_Advanced {
 
 				class Laceration: Abrasion {
 					effectiveness = 1;
-					reopeningChance = 0.05;
+					reopeningChance = 0.025;
 					reopeningMinDelay = 300;
 					reopeningMaxDelay = 3600;
 				};
@@ -394,8 +394,8 @@ class ACE_Medical_Advanced {
 				};
 
 				class velocityWound: Abrasion {
-					effectiveness = 0.9;
-					reopeningChance = 0.05;
+					effectiveness = 1;
+					reopeningChance = 0.025;
 					reopeningMinDelay = 300;
 					reopeningMaxDelay = 3600;
 				};
@@ -411,7 +411,7 @@ class ACE_Medical_Advanced {
 
 				class punctureWound: Abrasion {
 					effectiveness = 2;
-					reopeningChance = 0.05;
+					reopeningChance = 0.025;
 					reopeningMinDelay = 300;
 					reopeningMaxDelay = 3600;
 				};
@@ -429,7 +429,7 @@ class ACE_Medical_Advanced {
 			class QuikClot: fieldDressing {
 				class Abrasion {
 					effectiveness = 2;
-					reopeningChance = 0.2;
+					reopeningChance = 0.3;
 					reopeningMinDelay = 30;
 					reopeningMaxDelay = 600;
 				};
@@ -438,11 +438,11 @@ class ACE_Medical_Advanced {
 				};
 				class AbrasionMedium: Abrasion {
 					effectiveness = 1;
-					reopeningChance = 0.25;
+					reopeningChance = 0.35;
 				};
 				class AbrasionLarge: Abrasion {
 					effectiveness = 0.75;
-					reopeningChance = 0.3;
+					reopeningChance = 0.4;
 				};
 
 				class Avulsions: Abrasion {

@@ -1,7 +1,7 @@
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
 
 if (!hasInterface) exitWith {};
-if (!local _unit || !isPlayer _unit) exitWith {};
+if (!local _unit || !isPlayer _unit || {_weapon != secondaryWeapon _unit} || {_weapon != _muzzle}) exitWith {};
 
 _weaponUsed = [(configFile >> "CfgWeapons" >> _weapon), "ACE_UsedTube", ""] call BIS_fnc_returnConfigEntry;
 if (_weaponUsed == "" || _weaponUsed == "sp_l1a1_law66_used") exitWith {};

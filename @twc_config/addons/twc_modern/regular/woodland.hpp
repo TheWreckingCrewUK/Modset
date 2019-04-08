@@ -88,6 +88,15 @@ class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regula
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};
+	
+	nightItems[] = {
+		"ACE_Flashlight_MX991",
+		"UGL_FlareWhite_F",
+		"UGL_FlareWhite_F",
+		"UGL_FlareWhite_F",
+		"Chemlight_green",
+		"Chemlight_green"
+	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
@@ -224,6 +233,13 @@ class TWC_Infantry_Modern_Regular_Woodland_Marksman: TWC_Infantry_Modern_Regular
 		MAG_2("UK3CB_BAF_762_L42A1_20Rnd_T"),
 		MAG_2("SmokeShell")
 	};
+	
+	nightItems[] = {
+		"ACE_Flashlight_MX991",
+		"UK3CB_BAF_MaxiKite",
+		"Chemlight_green",
+		"Chemlight_green"
+	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
@@ -286,7 +302,16 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};
+	
+	nightItems[] = {
+		"B_IR_Grenade",
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green"
+	};
 };
+
 class TWC_Infantry_Modern_Regular_Woodland_2iC: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "2iC";
@@ -356,6 +381,14 @@ class TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander: TWC_Infantry_Moder
 		MAG_3("UK3CB_BAF_556_30Rnd"),
 		MAG_2("UK3CB_BAF_556_30Rnd_T"),
 		MAG_2("SmokeShell")
+	};
+	
+	nightItems[] = {
+		"B_IR_Grenade",
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
@@ -693,12 +726,28 @@ class TWC_Infantry_Modern_Regular_Woodland_FAC: TWC_Infantry_Modern_Regular_Wood
 	magazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
-		MAG_2("SmokeShell")
+		MAG_2("SmokeShell"),
+		MAG_3(SmokeShellBlue),
+		MAG_3(SmokeShellRed),
+		MAG_3(SmokeShellGreen),
+		"Laserbatteries"
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
-		MAG_2("SmokeShell")
+		MAG_2("SmokeShell"),
+		MAG_3(SmokeShellBlue),
+		MAG_3(SmokeShellRed),
+		MAG_3(SmokeShellGreen),
+		"Laserbatteries"
+	};
+	
+	nightItems[] = {
+		"B_IR_Grenade",
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Modern_Regular_Woodland_Rifleman

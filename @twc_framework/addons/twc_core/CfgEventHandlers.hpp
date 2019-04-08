@@ -4,3 +4,11 @@ class Extended_PostInit_EventHandlers {
 		clientInit = "[] call TWC_Core_fnc_clientEventHandlers;";
 	};
 };
+
+class Extended_Init_EventHandlers {
+	class CAManBase {
+		class twc_core_nightgear {
+			clientInit = "_this call TWC_Core_fnc_initNightGear;";
+		};
+	};
+};

@@ -4,6 +4,7 @@ class CfgFunctions {
 			file = "twc_framework\functions";
 			class AirAssault {};
 			class Airborne {};
+			class AmbientAA {};
 			class Artillery{};
 			class AttackHelicopter{};
 			class AttackPlane {};
@@ -42,6 +43,10 @@ class CfgFunctions {
 			class mortarwalk {};
 			class init{};
 			class addACEInteraction {};
+			
+			/** AMBIENT AIRCRAFT **/
+			class ambientFlyBy {};
+			class ambientFormationFlyBy {};
 		};
 		
 		class modules {
@@ -54,7 +59,6 @@ class CfgFunctions {
 			class disconnectGear{};
 			class missionModuleInit{};
 			class moduleDebug{};
-			class nightGear{};
 			class run{};
 			class safeZone{};
 			class zeus{};
@@ -69,6 +73,7 @@ class CfgFunctions {
 			class moduleAirAssault{};
 			class moduleAirborne {};
 			class moduleAttackPlane{};
+			class moduleAmbientAA;
 			class moduleCommandMessage{};
 			class moduleLightsSwitch{};
 			class moduleIntelHint{};

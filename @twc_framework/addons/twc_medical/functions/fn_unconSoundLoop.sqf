@@ -1,7 +1,7 @@
 params ["_unit", ["_lastPlayed", ""]];
 
 _unCon = (_unit getVariable ["ACE_isUnconscious", false]);
-if (!_unCon) exitWith {};
+if (!_unCon || !alive _unit) exitWith {};
 
 _sounds = [
 	"A3\Sounds_F\characters\human-sfx\person0\p0_breath_damage_low_01.wss",
@@ -45,7 +45,7 @@ _sound = selectRandom _sounds;
 
 if (_lastPlayed == _sound) then { _sound = selectRandom _sounds; };
 
-playSound3D [_sound, _unit, false, getPosASL _unit, 1.15, (random [0.9, 1, 1.1]), 20];
+playSound3D [_sound, _unit, false, (_unit modelToWorldWorld (_unit selectionPosition "head")), 1, (random [0.9, 1, 1.1]), 20];
 
-_time = 2 + (random 3);
+_time = 2 + (random 5);
 [twc_medical_fnc_unconSoundLoop, [_unit, _sound], _time] call CBA_fnc_waitAndExecute;

@@ -163,14 +163,14 @@
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_maaws",
+			"rhs_weap_maaws_optic",
 			"CUP_arifle_G36A"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_maaws",
+			"rhs_weap_maaws_optic",
 			"CUP_arifle_G36A"
 		};
 		magazines[]=

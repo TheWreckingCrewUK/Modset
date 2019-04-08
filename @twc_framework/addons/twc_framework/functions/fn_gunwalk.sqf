@@ -109,5 +109,11 @@ _mod3 = _master getvariable [_twc_mortar_acc3, (((random _natdev) / _skill) min 
 
 _speedmod = 1 - (0.5 / (((speed _projectile) + 1) / 500));
 
-_projectile setvelocity [(velocity _projectile select 0) + ((_natacc + _mod1) / (0.7 * (_type))), (velocity _projectile select 1) + ((_natacc2 + _mod2) / (0.7 * (_type))), (velocity _projectile select 2) + (((_natacc3 / 1) + _mod3)/ _speedmod)];
+_v1 = (velocity _projectile select 0) + ((_natacc + _mod1) / (0.7 * (_type)));
+_v2 = (velocity _projectile select 1) + ((_natacc2 + _mod2) / (0.7 * (_type)));
+_v3 = (velocity _projectile select 2) + (((_natacc3 / 1) + _mod3)/ _speedmod);
+
+if ((isnil "_v1")||(isnil "_v2")||(isnil "_v3")) exitwith {};
+
+_projectile setvelocity [_v1, _v2, _v3];
 

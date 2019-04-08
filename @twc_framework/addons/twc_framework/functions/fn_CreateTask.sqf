@@ -19,6 +19,16 @@
 * Public: no
 */
 
-Params ["_taskname","_description","_title",["_pos",objNull]];
+params [
+	"_taskname",
+	"_description",
+	"_title",
+	["_pos", objNull],
+	["_message", ""]
+];
 
 [player,[_taskname],[_description,_title],_pos,0,2,false] remoteExecCall ["BIS_fnc_taskCreate", [0,-2] select isDedicated, true];
+
+if (_message != "") then {
+	[_message] call twc_fnc_commandMessage;
+};

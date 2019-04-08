@@ -723,13 +723,13 @@
 		{
 			"Throw",
 			"Put",
-			"rhs_m4_compm4"
+			"twc_m4_cco_vfg"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"rhs_m4_compm4"
+			"twc_m4_cco_vfg"
 		};
 		magazines[]=
 		{
@@ -737,8 +737,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -751,8 +751,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -805,8 +805,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -819,8 +819,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -869,8 +869,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -892,8 +892,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -935,14 +935,14 @@
 		{
 			"Throw",
 			"Put",
-			"rhs_m4_compm4",
+			"twc_m4_cco_vfg",
 			"rhs_weap_M136"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"rhs_m4_compm4",
+			"twc_m4_cco_vfg",
 			"rhs_weap_M136"
 		};
 		magazines[]=
@@ -951,8 +951,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -965,8 +965,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1013,8 +1013,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -1036,8 +1036,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -1152,10 +1152,10 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1168,10 +1168,10 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1263,13 +1263,13 @@
 		{
 			"Throw",
 			"Put",
-			"rhs_m4_compm4"
+			"twc_m4_cco_vfg"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"rhs_m4_compm4"
+			"twc_m4_cco_vfg"
 		};
 		magazines[]=
 		{
@@ -1277,8 +1277,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1291,8 +1291,8 @@
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
 			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",

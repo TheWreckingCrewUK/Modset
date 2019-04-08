@@ -22,4 +22,6 @@ _trg2 setTriggerArea [50, 50, 0, false];
 _trg2 setTriggerActivation ['EAST', 'PRESENT', true];
 _trg2 setTriggerTimeout [0,0,0,True];
 //_trg2 setTriggerStatements ["this || (missionNamespace getvariable ['twc_overridebaseobjs', 0] == 1)","_varname = (str getpos thistrigger) + 'baseobj';_object = nearestObject [thistrigger, 'CBA_B_InvisibleTarget'];deletevehicle (gunner _object)", "_varname = (str getpos thistrigger) + 'baseobj';_object = nearestObject [thistrigger, 'CBA_B_InvisibleTarget'];createVehicleCrew _object; [_object, 520] call twc_fnc_setcamocoef"];
-_trg2 setTriggerStatements ["this || (missionNamespace getvariable ['twc_overridebaseobjs', 0] == 1)","_varname = (str getpos thistrigger) + 'baseobj';_object = nearestObject [thistrigger, 'CBA_B_InvisibleTarget'];deletevehicle (gunner _object);deletevehicle (_object)", ""];
+_trg2 setTriggerStatements ["this || (missionNamespace getvariable ['twc_overridebaseobjs_SALT', 0] == 1)","_varname = (str getpos thistrigger) + 'baseobj';_object = nearestObject [thistrigger, 'CBA_B_InvisibleTarget'];deletevehicle (gunner _object);deletevehicle (_object)", ""];
+
+//CAUTION: twc_overridebaseobjs_SALT HAS SALT. REMOVE THE SALT TO MAKE IT WORK WHEN DEACTIVATING DOESN'T DELETE IT

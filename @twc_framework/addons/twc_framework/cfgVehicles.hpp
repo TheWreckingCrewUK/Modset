@@ -884,6 +884,24 @@ class CfgVehicles {
 		};
 	};
 	
+	class TWC_Module_AmbientAA: Module_F
+	{
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Ambient AA";
+		function = "twc_fnc_moduleAmbientAA";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\ambientAA_ca.paa";
+		functionPriority = 1;
+		class ModuleDescription: ModuleDescription {
+			description = "Call in Attack Plane";
+			sync[] = {""};
+		};
+	};
+	
 	class TWC_Module_Amient_AttackPlane: ModuleCAS_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
@@ -954,13 +972,18 @@ class CfgVehicles {
 					};
 					class SU34_RU
 					{
-						name = "SU-34 (RU)";
+						name = "Su-34 (RU)";
 						value = "CUP_O_SU34_RU";
 					};
 					class SU25_RU
 					{
-						name = "SU-25 (RU)";
+						name = "Su-25 (RU)";
 						value = "CUP_O_Su25_Dyn_RU";
+					};
+					class SU17_RU
+					{
+						name = "Su-17 (RU)";
+						value = "BCCCCP_Su17";
 					};
 					class SU34_SLA
 					{
@@ -1039,6 +1062,12 @@ class CfgVehicles {
 			description = "Call in Ambient Attack Plane, automatically despawned";
 			sync[] = {""};
 		};
+	};
+	class TWC_Module_Amient_AttackPlane_Zeus: TWC_Module_Amient_AttackPlane {
+		scope=1;
+		scopeCurator = 2;
+		isTriggerActivated=0;
+		curatorCanAttach = 1;
 	};
 	
 	class TWC_Module_CommandMessage: Module_F {

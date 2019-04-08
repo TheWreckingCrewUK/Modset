@@ -31,160 +31,10 @@ class CfgPatches {
 	};
 };
 
-
-class CfgAmmo {
-	class GrenadeHand;
-	class GrenadeHand_stone: GrenadeHand
-	{
-		ace_frag_enabled = 0;
-		explosionTime = 0;
-		caliber = 0.1;
-		cost = 0;
-		dangerRadiusHit = 0;
-		minimumSafeZone = 0;
-		explosionEffectsRadius = 0;
-		/*hit = 0.1;
-		indirectHit = 0.2;
-		indirectHitRange = 0.1;*/
-		simulation = "shotShell";
-		SoundSetExplosion[] = {};
-		soundHit1[] = {};
-		soundHit2[] = {};
-		soundHit3[] = {};
-		soundHit4[] = {};
-	};
-	
-	/*
-	class FlareBase;
-	class F_40mm_White: FlareBase
-	{
-		brightness  = 75;
-		intensity = 1000000;
-		coefgravity = 0.13;
-		timeToLive = 140;
-	};
-	*/
-	class RocketBase;
-	class CUP_R_OG7_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7V_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7VL_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7VM_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7VR_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_RPG18_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",2,0.9,500};
-	};
-	class CUP_R_TBG7V_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	
-	class IRStrobeBase;
-	class B_IRstrobe: IRStrobeBase
-	{
-		timeToLive=150000;
-	};
-	
-	class Chemlight_base;
-	class ACE_G_Chemlight_IR: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Blue: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Red: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Green: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Yellow: Chemlight_base {
-		timeToLive = 150000;
-	};
-	
-	class B_338_Ball;
-	class ACE_338_Ball_API526: B_338_Ball
-	{
-		caliber = 6;
-		penetrationDirDistribution = 0.05;
-	};
-	class BulletBase;
-	class B_127x99_Ball: BulletBase
-	{
-		class CamShakePlayerFire {
-			distance = 1;
-			duration = 1;
-			frequency = 10;
-			power = 30;
-		};
-	};
-	
-	
-	
-	class B_556x45_Ball;
-	class rhs_ammo_556x45_M855A1_Ball: B_556x45_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class rhs_ammo_556x45_M855A1_Ball_Red: rhs_ammo_556x45_M855A1_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class B_556x45_Ball_Tracer_Red: B_556x45_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class UK3CB_BAF_556_Ball_Tracer_Red: B_556x45_Ball_Tracer_Red
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class UK3CB_BAF_556_Ball: B_556x45_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class B_762x51_Ball;
-	class UK3CB_BAF_762_Ball_L42A1_Tracer_Red: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class UK3CB_BAF_762_Ball_L42A1: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class B_762x51_Tracer_Red: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class UK3CB_BAF_762_Ball: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class UK3CB_BAF_762_Ball_Tracer_Red: B_762x51_Tracer_Red
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-};
+#include "CfgAmmo.hpp"
 
 class mode_fullauto;
+class Mode_SemiAuto;
 class CfgWeapons {
 	//TWC Night Vision
 	class CUP_NVG_PVS7;
@@ -220,6 +70,12 @@ class CfgWeapons {
 		class EventHandlers;
 	};
 	
+	class launch_NLAW_F: Launcher_Base_F {
+		ace_overpressure_angle = 30;
+		ace_overpressure_range = 10;
+		ace_overpressure_damage = 0.7;
+	};
+	
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
@@ -253,13 +109,26 @@ class CfgWeapons {
 		};
 	};
 	
-		
-	class UK3CB_BAF_L115A3;
+	class GM6_base_F;
+	
+	class rhs_weap_M107_Base_F: GM6_base_F
+	{
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_rifle_762_prone";
+		magazines[] = {"rhsusf_mag_10Rnd_STD_50BMG_M33", "rhsusf_mag_10Rnd_STD_50BMG_mk211"};
+	};
+	class UK3CB_BAF_L115_Base;
+	
+	class UK3CB_BAF_L115A3: UK3CB_BAF_L115_Base
+	{
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_mg_prone";
+		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
+	};
 	class twc_l115a3_wd: UK3CB_BAF_L115A3
 	{
 		scope = 1;
 		author = "jayman";
-		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -279,7 +148,6 @@ class CfgWeapons {
 	{
 		scope = 1;
 		author = "jayman";
-		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -356,7 +224,60 @@ class CfgWeapons {
 		recoilProne = "twc_rifle_762_prone";
 	};
 	
-	class arifle_Mk20_plain_F;
+	class mk20_base_F;
+	class arifle_Mk20_F: mk20_base_F
+	{
+		class FullAuto;
+		class Single;
+	};
+	
+	class arifle_Mk20_plain_F: arifle_Mk20_F {
+		class FullAuto: Mode_FullAuto {
+			
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Fullauto_medium: FullAuto {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Single: Mode_SemiAuto {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Single_medium_optics1: Single {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Single_far_optics2: Single_medium_optics1 {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+	};class UK3CB_BAF_L119_Base: arifle_Mk20_plain_F {
+		class FullAuto: FullAuto {
+			reloadTime = 0.07;
+		};
+	};
 	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F {
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";
@@ -895,7 +816,7 @@ class cfgRecoils
 	class twc_shotgun_1
 	{
 		muzzleOuter[]	= { 0.1,  0.5,  0.1,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
-		kickBack[]	= { 0.06, 0.09 }; //min/max force
+		kickBack[]	= { 0.09, 0.12 }; //min/max force
 		permanent	= 1.5; //muzzle climb post-recoil, means nothing when on bipod
 		temporary	= 0.2; //muzzle jump
 	};
@@ -923,7 +844,7 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class Helicopter_Base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2; addCamShake [_rec, 0.5, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.6; addCamShake [_rec, 0.5, 15]};";
 		};
 	};
 	class Plane {
@@ -933,7 +854,7 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class Car_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_time = 0.3;_rec = 2; _freq = 15; if (((_this select 1) isKindOf ['HMG_127', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['GMG_F', configFile >> 'CfgWeapons'])) then {_rec = 3} else {if ((_this select 4) isKindOf ['missilebase', configFile >> 'CfgAmmo']) then {_rec = 4; _time = 2; _freq = 15;};};addCamShake [_rec, _time, _freq]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_time = 0.3;_rec = 2; _freq = 15; if (((_this select 1) isKindOf ['HMG_127', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['GMG_F', configFile >> 'CfgWeapons'])) then {_rec = 3} else {if ((_this select 4) isKindOf ['missilebase', configFile >> 'CfgAmmo']) then {_rec = 4; _time = 2; _freq = 15;};};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, _freq]};";
 		};
 	};
 	class StaticMGWeapon {
@@ -962,12 +883,12 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class CUP_MCV80_Base {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2;_time = 0.5; if ((_this select 1) == 'CUP_Vlmg_L94A1_Coax') then {_rec = 0.1;_time = 0.3};addCamShake [_rec, _time, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2;_time = 0.5; if ((_this select 1) == 'CUP_Vlmg_L94A1_Coax') then {_rec = 0.1;_time = 0.3};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
 		};
 	};
 	class ukcw_Chieftain_Base {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) == 'UKCW_Chieftain_L11A5') then {_rec = 4;_time = 1};addCamShake [_rec, _time, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) == 'UKCW_Chieftain_L11A5') then {_rec = 4;_time = 1};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
 		};
 	};
 	class ukcw_cvrt_Scim_base {
@@ -977,63 +898,63 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class APC_Tracked_01_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};addCamShake [_rec, _time, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
 		};
 	};
 	class APC_Tracked_02_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};addCamShake [_rec, _time, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
 		};
 	};
 	class APC_Tracked_03_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};addCamShake [_rec, _time, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
 		};
 	};
 	class UK3CB_BAF_FV432_Mk3_Base {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2; addCamShake [_rec, 0.3, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2; if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, 0.3, 15]};";
 		};
 	};
 	class MBT_01_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class MBT_02_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class MBT_03_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class MBT_04_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class rhs_tank_base {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	//ww2 tanks, not as much recoil management or optic magnification so a bit more shake
 	class LIB_Tank_base {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 1.5)};addCamShake [_rec * 0.1, _time * 3, 9]} else {if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 4)};};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class fow_v_cromwell {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.3;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.3;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 1.5)};addCamShake [_rec * 0.1, _time * 3, 9]} else {if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 4)};};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class churchill_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 1.5)};addCamShake [_rec * 0.1, _time * 3, 9]} else {if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 4)};};addCamShake [_rec, _time, 15];};";
 		};
 	};
 };
@@ -1270,7 +1191,8 @@ class CfgVehicles {
 		{
 			class MainTurret : MainTurret
 			{
-				magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+				magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+				stabilizedInAxes = 0;
 			};
 		};
 	};
@@ -1763,3 +1685,169 @@ class CfgVehicles {
 	#include "acre_tanks.hpp"
 };
 
+class cfgMagazines
+{
+	class CA_Magazine;
+	
+	class 10Rnd_RHS_50BMG_Box: CA_Magazine
+	{};
+	class rhsusf_mag_10Rnd_STD_50BMG_M33: 10Rnd_RHS_50BMG_Box
+	{
+		ammo = "ACE_127x99_Ball_AMAX";
+		initSpeed = 860;
+		displayName = "12.7x99mm 10Rnd (AMAX)";
+		descriptionShort = "Caliber: 12.7x99mm (AMAX)<br />Rounds: 10";
+	};
+	class rhsusf_mag_10Rnd_STD_50BMG_mk211: 10Rnd_RHS_50BMG_Box
+	{
+		initSpeed = 880;
+		displayName = "12.7x99mm 10Rnd (HEIAP)";
+		descriptionShort = "Caliber: 12.7x99mm (HEIAP)<br />High Explosive Incendiary Armour Piercing<br />Rounds: 10";
+	};
+	class 10Rnd_338_Mag;
+	class ACE_10Rnd_338_API526_Mag: 10Rnd_338_Mag
+	{
+		displayNameShort = ".338 API";
+		descriptionShort = "Caliber: .338LM (API526)<br />Armour Piercing Incendiary (526 Grain)<br />Rounds: 10";
+	};
+	class ACE_10Rnd_338_300gr_HPBT_Mag: 10Rnd_338_Mag
+	{
+		displayNameShort = ".338 HPBT";
+		descriptionShort = "Caliber: .338LM (HPBT)<br />Hollow Point Boat-Tail (300 Grain)<br />Rounds: 10";
+	};
+		
+	
+};
+
+class twc_APIbullet_effect
+{
+	class incendiary
+	{
+       simulation = "light";   //type of simulation - particles or light
+       type = "CmeasuresLight";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.08;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 0.001;
+	   interval = 1;
+   };
+	class smoke2
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       //type = "AutoCannonFired";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       type = "Cmeasures2";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+	class smoke
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "AutoCannonFired";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
+
+class twc_APIbullet_effect_ground
+{
+	class hit_target
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "ImpactDust2";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
+
+class twc_APIbullet_effect_man:twc_APIbullet_effect
+{
+	class hit_target
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "BloodMist";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.9;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
+
+class twc_127_hiteffect_grey
+{
+	class smoke
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "AutoCannonFired";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.3;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
+
+class GrenadeExplosion
+{
+	class GrenadeExp1
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "GrenadeBubbles1";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = -1;                //1 effect is enabled, -1 effect is disabled
+	   //Hobbs note, disabled intentionally
+	   intensity = 1;
+	};
+	class GrenadeBubbles
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "GrenadeBubbles1";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.1;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+	};
+	class GrenadeSmoke1
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "GrenadeSmoke1";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 1;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+	};
+	class Light1
+	{
+       simulation = "light";   //type of simulation - particles or light
+       type = "GrenadeExploLight";         //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.2;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 0.01;
+	};
+};

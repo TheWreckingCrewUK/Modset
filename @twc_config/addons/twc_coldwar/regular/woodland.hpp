@@ -46,6 +46,11 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Base: B_Soldier_base_F
 	};
 	magazines[]= {};
 	respawnmagazines[]= {};
+	
+	nightItems[] = {
+		"Chemlight_green",
+		"Chemlight_green"
+	};
 };
 
 //Section
@@ -98,12 +103,12 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar_
 		"sp_l1a1_law66",
 		"Throw",
 		"Put"
-	};	
+	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
 {
-	displayName="Section Commander";
-	backpack="TWC_Backpack_ColdWar_Regular_SectionCommander";
+	displayName = "Section Commander";
+	backpack = "TWC_Backpack_ColdWar_Regular_SectionCommander";
 	TWC_isCommandRole = 1;
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -144,14 +149,20 @@ class TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander: TWC_Infantry_ColdW
 		MAG_2("UK3CB_BAF_762_20Rnd_T"),
 		MAG_2("SmokeShell")
 	};
-};
-class TWC_Infantry_ColdWar_Regular_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander
-{
-	displayName="2iC";
-	backpack="TWC_Backpack_ColdWar_Regular_2iC";
-	class EventHandlers: EventHandlers {
-		init = "";
+	
+	nightItems[] = {
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green",
+		"ACE_Flashlight_MX991"
 	};
+};
+class TWC_Infantry_ColdWar_Regular_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
+{
+	displayName = "2iC";
+	TWC_isCommandRole = 1;
+	backpack = "TWC_Backpack_ColdWar_Regular_2iC";
 	weapons[]=
 	{
 		"UK3CB_BAF_L1A1_Wood",
@@ -163,6 +174,18 @@ class TWC_Infantry_ColdWar_Regular_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Wo
 		"UK3CB_BAF_L1A1_Wood",
 		"Throw",
 		"Put"
+	};
+	magazines[]=
+	{
+		MAG_5("UK3CB_BAF_762_20Rnd"),
+		MAG_2("UK3CB_BAF_762_20Rnd_T"),
+		MAG_2("SmokeShell")
+	};
+	respawnmagazines[]=
+	{
+		MAG_5("UK3CB_BAF_762_20Rnd"),
+		MAG_2("UK3CB_BAF_762_20Rnd_T"),
+		MAG_2("SmokeShell")
 	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_AT: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
@@ -342,6 +365,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander: TWC_Infantry_Cold
 		MAG_5("SP_30Rnd_9x19_L2A3_Sterling"),
 		MAG_2("SmokeShell")
 	};
+	
+	nightItems[] = {
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green",
+		"ACE_Flashlight_MX991"
+	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander
 {
@@ -416,6 +447,13 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	
+	nightItems[] = {
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green"
 	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_CSM: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Sergeant
@@ -537,6 +575,12 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Sniper: TWC_Infantry_ColdWar_Regular
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellGreen")
+	};
+	
+	nightItems[] = {
+		"Chemlight_green",
+		"Chemlight_green",
+		"ACE_Flashlight_MX991"
 	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_Spotter: TWC_Infantry_ColdWar_Regular_Woodland_Sniper
@@ -695,6 +739,18 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_ColdW
 		MAG_3("SP_30Rnd_9x19_L2A3_Sterling"),
 		MAG_2("SmokeShell")
 	};
+	
+	nightItems[] = {
+		"ACE_HandFlare_White",
+		"ACE_HandFlare_White",
+		"Chemlight_green",
+		"Chemlight_green",
+		"ACE_Flashlight_MX991"
+	};
+	
+	nightLinkedItems[] = {
+		"twc_nightvision_gen2"
+	};
 };
 
 //FVs
@@ -731,6 +787,8 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Vehicle_Commander: TWC_Infantry_Cold
 		"Throw",
 		"Put"
 	};
+	
+	nightLinkedItems[] = {};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_Vehicle_Crew: TWC_Infantry_ColdWar_Regular_Woodland_Vehicle_Commander
 {

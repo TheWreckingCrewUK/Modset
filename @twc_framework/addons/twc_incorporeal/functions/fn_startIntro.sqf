@@ -13,7 +13,7 @@ _introData = [] call TWC_Incorporeal_fnc_getIntroData;
 
 // Calculate time per section for panning shot. Overall time limit is 40 seconds, divided by element count. Min of 4 seconds per group.
 _totalAssetCount = count _introData;
-_panTimePerAsset = (45 / (_totalAssetCount)) max 5;
+_panTimePerAsset = (40 / (_totalAssetCount)) max 5;
 [true] call ace_common_fnc_disableUserInput;
 //disableUserInput true;
 
@@ -25,8 +25,8 @@ _cam cameraEffect ["internal", "back"];
 [] spawn TWC_Incorporeal_fnc_setPlayerUp;
 
 titleText ["<t color='#ffffff' size='3'>The Wrecking Crew</t><br/><t color='#FFFFFF' size='1'>Presents</t>", "PLAIN", -1, true, true];
-titleFadeOut 5;
-sleep 6;
+titleFadeOut 4;
+sleep 5;
 
 _titleText = format [
 	"<t color='#ff6633' size='4' align='center'>%1</t><br/><t color='#FFFFFF' size='1' align='center'>by %2</t>",
@@ -38,7 +38,7 @@ _titleText = format [
 sleep 10;
 
 titleCut ["", "BLACK IN", 15];
-sleep 9;
+sleep 5;
 
 _alternatePan = false;
 
@@ -56,6 +56,10 @@ _alternatePan = false;
 	
 	_alternatePan = !_alternatePan;
 	
+	// prevent bad pans
+	if (!alive _firstUnit && alive _lastUnit) then { _firstUnit = _lastUnit; };
+	if (!alive _lastUnit && alive _firstUnit) then { _lastUnit = _firstUnit; };
+	
 	// Build Group Display List
 	{
 		_color = "#FFFFFF";
@@ -67,18 +71,20 @@ _alternatePan = false;
 	
 	_groupText = format ["<t color='#ff6633' size='2' align='left'>%1</t><br/>%2", _groupName, _displayString];
 	
-	titleText [_groupText, "PLAIN", -1, false, true]; 
+	titleText [_groupText, "PLAIN", -1, false, true];
 	titleFadeOut _panTimePerAsset;
 	
-	_cam camSetTarget (_firstUnit modelToWorld [0, 0, 1.5]);
-	_cam camSetPos (_firstUnit modelToWorld [0, 2, 1.5]);
-	_cam cameraEffect ["internal", "back"];
-	_cam camCommit 0;
+	if (alive _firstUnit && alive _lastUnit) then {
+		_cam camSetTarget (_firstUnit modelToWorld [0, 0, 1.5]);
+		_cam camSetPos (_firstUnit modelToWorld [0, 2, 1.5]);
+		_cam cameraEffect ["internal", "back"];
+		_cam camCommit 0;
 
-	_cam camSetTarget (_lastUnit modelToWorld [0, 0, 1.5]);
-	_cam camSetPos (_lastUnit modelToWorld [0, 2, 1.5]);
-	_cam cameraEffect ["internal", "back"];
-	_cam camCommit _panTimePerAsset;
+		_cam camSetTarget (_lastUnit modelToWorld [0, 0, 1.5]);
+		_cam camSetPos (_lastUnit modelToWorld [0, 2, 1.5]);
+		_cam cameraEffect ["internal", "back"];
+		_cam camCommit _panTimePerAsset;
+	};
 	
 	//_waitFor = (_forEachIndex + 1) * _panTimePerAsset;
 	sleep _panTimePerAsset;
