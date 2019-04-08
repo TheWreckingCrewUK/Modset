@@ -10,9 +10,9 @@ class CfgPatches {
 
 		author[] = {};
 		authorUrl = "";
-		version = "1";
-		versionStr = "1";
-		versionAr[] = {1};
+		version = 1.0.0;
+		versionStr = "1.0.0";
+		versionAr[] = {1,0,0};
 	};
 };
 
@@ -37,7 +37,7 @@ class CfgDebriefing {
 		picture = "KIA";
 		pictureColor[] = {0.6, 0.1, 0.2, 1};
 	};
-}
+};
 
 class Extended_InitPost_EventHandlers {
 	class CAManBase {
