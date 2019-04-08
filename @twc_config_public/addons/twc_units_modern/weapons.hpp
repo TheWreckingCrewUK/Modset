@@ -149,7 +149,7 @@ class cfgWeapons
 		displayName = "L119A2";
 		class Single:Mode_SemiAuto {
 			//sounds[] = {"StandardSound"};
-			dispersion = 0.001;
+			dispersion = 0.0014;
 			class StandardSound {
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
@@ -159,6 +159,7 @@ class cfgWeapons
 		};
 		class Burst:Mode_Burst {
 			//sounds[] = {"StandardSound"};
+			dispersion = 0.0014;
 			class StandardSound {
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
@@ -168,6 +169,7 @@ class cfgWeapons
 		};
 		class FullAuto:Mode_FullAuto {
 			//sounds[] = {"StandardSound"};
+			dispersion = 0.0014;
 			class StandardSound {
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
@@ -331,6 +333,7 @@ class cfgWeapons
 		recoil = "twc_rifle_762";
 		recoilProne = "twc_rifle_762_prone";
 		class Single:Mode_SemiAuto {
+			dispersion = 0.0004;
 			class StandardSound {
 				soundSetShot[] = {"RHSUSF_m14_Closure_SoundSet","RHSUSF_m14_Shot_SoundSet","RHSUSF_mmg1_Tail_SoundSet"};
 			};
@@ -339,6 +342,7 @@ class cfgWeapons
 			};
 		};
 		class Burst:Mode_Burst {
+			dispersion = 0.0004;
 			class StandardSound {
 				soundSetShot[] = {"RHSUSF_m14_Closure_SoundSet","RHSUSF_m14_Shot_SoundSet","RHSUSF_mmg1_Tail_SoundSet"};
 			};
@@ -347,6 +351,7 @@ class cfgWeapons
 			};		
 		};
 		class FullAuto:Mode_FullAuto {
+			dispersion = 0.0004;
 			class StandardSound {
 				soundSetShot[] = {"RHSUSF_m14_Closure_SoundSet","RHSUSF_m14_Shot_SoundSet","RHSUSF_mmg1_Tail_SoundSet"};
 			};

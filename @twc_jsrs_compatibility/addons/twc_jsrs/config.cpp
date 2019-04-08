@@ -1603,6 +1603,7 @@ class cfgweapons
 	{
 		
 		class Single:Mode_SemiAuto {
+			dispersion = 0.0014;
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
@@ -1612,11 +1613,13 @@ class cfgweapons
 			};
 		};
 		class Burst:Mode_Burst {
+			dispersion = 0.0014;
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};			
 		};
 		class FullAuto:Mode_FullAuto {
+			dispersion = 0.0014;
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};	
@@ -1749,6 +1752,7 @@ class cfgweapons
 	{
 		scope = 1;
 		class Single:Mode_SemiAuto {
+			dispersion = 0.0004;
 			class StandardSound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
@@ -1757,6 +1761,7 @@ class cfgweapons
 			};
 		};
 		class Burst:Mode_Burst {
+			dispersion = 0.0004;
 			class StandardSound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
@@ -1765,6 +1770,7 @@ class cfgweapons
 			};		
 		};
 		class FullAuto:Mode_FullAuto {
+			dispersion = 0.0004;
 			class StandardSound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","twc_L1A1_Shot_Soundset","3CB_BAF_Rifle1_Tail_SoundSet"};
 			};
