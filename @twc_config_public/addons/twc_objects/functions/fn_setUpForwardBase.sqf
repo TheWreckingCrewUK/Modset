@@ -22,7 +22,7 @@ if(leader _player != _player)exitWith{_return = "Only Section Leaders can activa
 if(isNil "_table")exitWith{_return = "Radio Table not given to twc_fn_setUpForwardBase. Exiting..."; _return};
 
 _pos = getPos _table;
-if(_pos distance2D (getMarkerPos "base") < 1000) exitWith{_distance = _pos distance2D (getMarkerPos "base");_return = format["You cannot set up the forward base withing 1KM of the Main Base. You are only %1 Away",_distance]; _return};
+if(_pos distance2D (getMarkerPos "base") < 1000) exitWith{_distance = _pos distance2D (getMarkerPos "base");_return = format["You cannot set up the forward base within 1KM of the Main Base. You are only %1 Away",_distance]; _return};
 _distanceGenerator = _pos nearObjects ["twc_portableGenerator",200];
 
 if(str _distanceGenerator == "[]")exitWith{_return = format["The Generator must be within 200m of the Radio Table.\n The Generator is %1m away",_pos distance2D ((_pos nearObjects ["twc_portableGenerator",worldSize]) select 0)]; _return};
@@ -44,7 +44,16 @@ _locstat setDir ((getDir _table)+210);
 [_table, -1] call ace_cargo_fnc_setSize;
 _table setVariable ["twc_forwardBaseDeployed",true];
 _return = "Patrol Base Created Successfully";
-_return}
+_return;
+
+
+_trg = createTrigger ["EmptyDetector", _pos];
+_trg setTriggerArea [200 , 200, 50, false];
+_trg setTriggerActivation ["east", "PRESENT", true];
+_trg setTriggerTimeout [60,60,60, true];
+_trg setTriggerStatements ["count thislist > 3","_table = nearestobject [getpos thistrigger,'twc_radioTable']; [_table] call twc_fnc_tearDownForwardBase; deletevehicle thistrigger;'PATROL BASE IN CONTACT, RESPAWN DISABLED' remoteExec ['hint'];",""];
+
+}
 else
 {
 //more lenient version for siege, with shorter distance and no medical truck
@@ -55,7 +64,7 @@ _pos = getPos _table;
 
 if (twc_siege_baseside == 0) then { _base = getMarkerPos "base"} else { _base = getMarkerPos "dummybase"};
 
-if((_pos distance2D _base) < 500) exitWith{_distance = _pos distance2D (getMarkerPos "base");_return = format["You cannot set up the forward base withing 0.5KM of the Main Base. You are only %1 Away",_distance]; _return};
+if((_pos distance2D _base) < 500) exitWith{_distance = _pos distance2D (getMarkerPos "base");_return = format["You cannot set up the forward base within 0.5KM of the Main Base. You are only %1 Away",_distance]; _return};
 _distanceGenerator = _pos nearObjects ["twc_portableGenerator",200];
 if(str _distanceGenerator == "[]")exitWith{_return = format["The Generator must be within 200m of the Radio Table.\n Generator is %1m away",_pos distance2D ((_pos nearObjects ["twc_portableGenerator",worldSize]) select 0)]; _return};
 

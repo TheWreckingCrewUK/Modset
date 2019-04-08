@@ -10,7 +10,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			
+			"A3_Weapons_F"
 		};
 	};
 };
@@ -302,6 +302,7 @@ class CfgVehicles
 		scopeCurator = 1; // hide from zeus
 		displayName = "Storage Box (Hobbs Trick Box)";
 		author      = "Bosenator";
+		model = "a3\structures_f\Items\Tools\DustMask_F.p3d";
 
 		class TransportMagazines { };
 		class TransportItems     { };
@@ -316,5 +317,55 @@ class CfgVehicles
 
 		ace_dragging_canCarry = 0;
 		ace_dragging_canDrag  = 0;
+	};
+	//basically a placeholder for when loose ammo comes in just to remember the model
+	class TWC_Public_AmmoBox_stanag_box: rhs_3Ya40_1_single {
+		scope = 2;
+		displayName = "Ammunition Can";
+		author      = "Hobbs";
+		model = "A3\structures_f_epb\Items\Military\Ammobox_rounds_F.p3d";
+
+		class transportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "rhs_mag_30Rnd_556x45_M855_Stanag";
+				count = 15;
+			};
+		};
+		class TransportItems     { };
+		class TransportWeapons   { };
+		class TransportBackpacks { };
+
+		maximumLoad = 140;
+
+		// ACE Defines
+		ace_cargo_canLoad     = 1;
+		ace_cargo_size     = 0.2;
+		ace_cargo_hasCargo    = 0;
+
+		ace_dragging_canCarry = 1;
+		ace_dragging_canDrag  = 1;
+	};
+	class TWC_Public_AmmoBox_medium: rhs_3Ya40_1_single {
+		scope = 2;
+		displayName = "Ammunition Box";
+		author      = "Hobbs";
+		model = "ca\buildings\furniture\bedna_ammo2x.p3d";
+
+		class transportMagazines { };
+		class TransportItems     { };
+		class TransportWeapons   { };
+		class TransportBackpacks { };
+
+		maximumLoad = 240;
+
+		// ACE Defines
+		ace_cargo_canLoad     = 1;
+		ace_cargo_size     = 0.5;
+		ace_cargo_hasCargo    = 0;
+
+		ace_dragging_canCarry = 1;
+		ace_dragging_canDrag  = 1;
 	};
 };

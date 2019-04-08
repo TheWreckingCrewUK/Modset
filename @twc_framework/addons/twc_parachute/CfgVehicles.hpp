@@ -144,17 +144,17 @@ class CfgVehicles {
 	};
 
 	class T10_Landed: Thing {
-		scope=1;
-		side=-1;
-		model="twc_parachute\T10_Landed.p3d";
-		icon="";
-		displayName="T10 Parachute";
-		nameSound="";
-		destrType="DestructNo";
-		simulation="thingx";
-		mapSize=0;
-		accuracy=0;
-		armor=5;
+		scope = 2;
+		side = 4;
+		model = "twc_parachute\T10_Landed.p3d";
+		icon = "";
+		displayName = "T10 Parachute Landed";
+		nameSound = "";
+		destrType = "DestructNo";
+		simulation = "thingx";
+		mapSize = 0;
+		accuracy = 0;
+		armor = 5;
 		weight = 200;
 		
 		// potentially add ace interact here to "pack it" aka delete
@@ -209,6 +209,29 @@ class CfgVehicles {
 				statement = "[_target] call TWC_parachute_fnc_CancelJump";
 				exceptions[] = {};
 				icon = "\twc_parachute\UI\cancel_ca.paa";
+			};
+		};
+	};
+	
+	class TWC_Vehicle_ColdWar_Hercules_RAF: TWC_Vehicle_Generic_Hercules_RAF {
+		scope = 2;
+		side = 1;
+		faction = "TWC_ColdWar";
+
+		displayname = "Hercules (Cold War) - VIV (RAF)";
+		editorSubcategory = "TWC_ForceType_Airborne";
+
+		class AcreRacks {
+			class Rack_1 {
+				displayName = "Vehicle Radio";
+				shortName = "Vehicle Radio";
+				componentName = "ACRE_VRC64";
+				allowedPositions[] = {"crew"};
+				disabledPositions[] = {};
+				defaultComponents[] = {};
+				mountedRadio = "ACRE_PRC77";
+				isRadioRemovable = 0;
+				intercom[] = {"Intercom_2"};
 			};
 		};
 	};

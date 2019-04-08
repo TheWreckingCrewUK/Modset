@@ -19,8 +19,6 @@ _message = _logic getVariable "Message";
 
 [_message] call twc_fnc_commandMessage;
 
-// TODO: change spawn to call above when alternate stationary units is introduced
-
 if (!isNull _logic) then {
-    deleteVehicle _logic;
+	deleteVehicle _logic;
 };

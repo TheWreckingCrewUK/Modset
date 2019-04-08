@@ -22,6 +22,8 @@ class cfgFunctions {
 			class setUpForwardBase {};
 			class tearDownForwardBase {};
 			class createDefenses {};
+			class setcamocoef {};
+			class baseobject {};
 		};
 		
 		class Public_Items {

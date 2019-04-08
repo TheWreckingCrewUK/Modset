@@ -15,11 +15,11 @@
 * NOTHING
 *
 * Example:
-* ["planeSpawn", "planeDrop", "planeDelete", "Modern_British", "", "", 2, "attack_location"] call twc_fnc_Airborne;
+* ["planeSpawn", "planeDrop", "planeDelete", "Modern_British", "", "", 2, "attack_location", "this execVM 'infantry_move.sqf'"] call twc_fnc_Airborne;
 *
 * Public: No
 */
-params ["_pos", "_destination", "_end", "_Plane_Units", "_type_plane", "_type_cargo", "_amount_cargo", "_attackpos"];
+params ["_pos", "_destination", "_end", "_Plane_Units", "_type_plane", "_type_cargo", "_amount_cargo", "_attackpos", "_script"];
 
 if (isServer) then 
 {
@@ -57,7 +57,7 @@ if (isServer) then
 			case ("RACS"): {_type_plane = "CUP_I_C130J_RACS"; _type_cargo = ["CUP_I_RACS_SL", "CUP_I_RACS_MMG", "CUP_I_RACS_Soldier", "CUP_I_RACS_GL", "CUP_I_RACS_MMG", "CUP_I_RACS_Soldier_MAT", "CUP_I_RACS_GL", "CUP_I_RACS_Medic", "CUP_I_RACS_Sniper"]; _side = 2;};
 			case ("Takistani_Army_1"): {_type_plane = "CUP_O_C130J_TKA"; _type_cargo = ["CUP_O_TK_Soldier_SL", "CUP_O_TK_Soldier_MG", "CUP_O_TK_Soldier_AT", "CUP_O_TK_Soldier_GL", "CUP_O_TK_Soldier_MG", "CUP_O_TK_Soldier_LAT", "CUP_O_TK_Soldier_GL", "CUP_O_TK_Soldier_AAT", "CUP_O_TK_Soldier_AMG"]; _side = 0;};
 			case ("Takistani_Army_2"): {_type_plane = "CUP_O_AN2_TK"; _type_cargo = ["CUP_O_TK_Soldier_SL", "CUP_O_TK_Soldier_MG", "CUP_O_TK_Soldier_AT", "CUP_O_TK_Soldier_GL", "CUP_O_TK_Soldier_MG", "CUP_O_TK_Soldier_LAT", "CUP_O_TK_Soldier_GL", "CUP_O_TK_Soldier_AAT", "CUP_O_TK_Soldier_AMG"]; _side = 0;};
-		};		
+		};
 	} else 
 	{
 		_side = getNumber (configFile >> "cfgVehicles" >> (_type_cargo select 0) >> "side");
@@ -73,7 +73,15 @@ if (isServer) then
 	
 	_vehicle = [_pos, _dir, _type_plane, _side] call BIS_fnc_spawnVehicle;
 	_plane = _vehicle select 0;
+	_plane setVariable ["twc_cacheDisabled",true];
+	if (_type_plane == "an12BK_RU") then {
+		_plane setObjectTextureGlobal[0,"\an12bkv3\liveries\18\An12main01.pac"];
+		_plane setObjectTextureGlobal[1,"\an12bkv3\liveries\18\An12main02.pac"];
+		_plane setObjectTextureGlobal[2,"\an12bkv3\liveries\18\An12main03.pac"];
+		_plane setObjectTextureGlobal[3,"\an12bkv3\liveries\18\An12wing.pac"];
+	};
 	_crewGroup = _vehicle select 2;
+	_crewGroup setBehaviour "CARELESS";
 	
 	_plane flyInHeight 200;
 	_plane setVelocity [(sin _dir) * 80, (cos _dir) * 80, 0];
@@ -88,13 +96,14 @@ if (isServer) then
 		
 		_waypoint_infantry = _group addWaypoint [_attackpos, 50];
 		_waypoint_infantry setWaypointType "SAD";
+		_waypoint_infantry setWaypointStatements ["true", _script];
 	};
 	
 	twc_ai_paradrop = 
 	{
 		params ["_v"];
 		_cargo = assignedCargo _v;
-		_delay =  (1/(((speed _v) max 55)/150));
+		_delay = (1/(((speed _v) max 55)/150));
 		{
 			// perform action only for cargo
 			_x disableAI "MOVE";
@@ -104,7 +113,8 @@ if (isServer) then
 			[_x] allowGetIn false;
 			_x setDir (getDir _v);
 
-			sleep _delay;
+			//sleep _delay;
+			sleep 0.2;
 
 			//if units don't have a parachute type backpack then create parachute for him
 			private _type = getText (configFile >> "cfgVehicles" >> backpack _x >> "ParachuteClass");
@@ -124,13 +134,17 @@ if (isServer) then
 		{
 			(group _x) leaveVehicle _v;
 			_x enableCollisionWith _v;
-		} foreach _cargo;	
+		} foreach _cargo;
 	};
-
+	
+	_destination_2 = _destination getPos [400, _pos getDir _destination];
+	
 	_waypoint_plane_1 = _crewGroup addWaypoint [_destination, 0];
 	_waypoint_plane_1 setWaypointType "MOVE";
 	_waypoint_plane_1 setWaypointStatements ["true", "[vehicle this] spawn twc_ai_paradrop;"];
-	_waypoint_plane_2 = _crewGroup addWaypoint [_end, 0];
+	_waypoint_plane_2 = _crewGroup addWaypoint [_destination_2, 0];
 	_waypoint_plane_2 setWaypointType "MOVE";
-	_waypoint_plane_2 setWaypointStatements ["true", "_vehicle = vehicle this; {_vehicle deleteVehicleCrew _x} forEach (crew _vehicle); deleteVehicle _vehicle"];
+	_waypoint_plane_3 = _crewGroup addWaypoint [_end, 0];
+	_waypoint_plane_3 setWaypointType "MOVE";
+	_waypoint_plane_3 setWaypointStatements ["true", "_vehicle = vehicle this; {_vehicle deleteVehicleCrew _x} forEach (crew _vehicle); deleteVehicle _vehicle"];
 };

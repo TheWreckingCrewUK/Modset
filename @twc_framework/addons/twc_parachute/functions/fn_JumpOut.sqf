@@ -1,5 +1,7 @@
 params ["_vehicle", "_caller"];
 
+if !(local _caller) exitWith {};
+
 _hadBackpack = false;
 _class = "";
 _magazines = [];
@@ -17,7 +19,7 @@ if (!isNull (unitBackpack _caller)) then {
 	removeBackPack _caller;
 };
 
-_caller addBackPack "TWC_T10_Parachute_backpack";
+_caller addBackPackGlobal "TWC_T10_Parachute_backpack";
 _caller allowDamage false;
 
 moveOut _caller;
@@ -30,13 +32,13 @@ _vehicle setVariable ["TWC_JumpIncrement", (_jumpIncrement + 1), true];
 _newDir = _dir -120;
 
 _jumpOutPosition = [
-	(getpos _caller select 0),
-	(getpos _caller select 1) - (5 + random (5)),
+	(getpos _caller select 0) - (-5 + random (10)),
+	(getpos _caller select 1) - (5 + random (10)),
 	(getpos _caller select 2)
 ];
 
-_callerMoveaway = _caller setpos _jumpOutPosition;
-_caller setdir _newDir;
+_callerMoveaway = _caller setPos _jumpOutPosition;
+_caller setDir _newDir;
 
 if (_isEven) then {
 	_caller attachTo [_vehicle, [0, -20, -2], "door_2_1"];
@@ -57,13 +59,19 @@ if (_isEven) then {
 	_vUp = vectorUp _caller;
 	_vDir = vectorDir _caller;
 	_vel = velocity _caller;
+	
+	if (typeOf vehicle _caller != "TWC_T10_Parachute") then { moveOut _caller; };
 	_caller action ["OpenParachute", _caller];
 	
 	_chute = vehicle _caller;
+
+	if (typeOf _chute != "TWC_T10_Parachute") then {
+		systemChat "error:fn_JumpOut.sqf:65 class mismatch, expected parachute got unknown";
+	};
+
 	_chute allowDamage false;
 	_chute setVectorDirAndUp [_vDir, _vUp];
 	_chute setVelocity _vel;
-	
 	_caller setVelocity _vel;
 	
 	// wait until parachute is open, not necessary atm
@@ -79,27 +87,32 @@ if (_isEven) then {
 		/* re-add equipment */
 		_caller addBackpack _class;
 		clearAllItemsFromBackpack _caller;
+		
 		for "_i" from 0 to (count (_magazines select 0) - 1) do {
 			(unitBackpack _caller) addMagazineCargoGlobal [(_magazines select 0) select _i,(_magazines select 1) select _i];
 		};
+		
 		for "_i" from 0 to (count (_weapons select 0) - 1) do {
 			(unitBackpack _caller) addWeaponCargoGlobal [(_weapons select 0) select _i,(_weapons select 1) select _i];
 		};
+		
 		for "_i" from 0 to (count (_items select 0) - 1) do {
 			(unitBackpack _caller) addItemCargoGlobal [(_items select 0) select _i,(_items select 1) select _i];
 		};
 	};
 	
 	moveOut _caller;
-	_groundPos = getpos _caller;
-	_caller setpos _groundPos;
+	//_groundPos = getpos _caller;
+	//_caller setpos _groundPos;
 	
 	waitUntil {isTouchingGround _caller};
-	deletevehicle _chute;
+
+	if (typeOf _chute == "TWC_T10_Parachute") then {
+		deleteVehicle _chute;
+	};
 
 	[_caller] call ace_common_fnc_goKneeling;
 	[] call twc_parachute_fnc_LandingSound;
-
 
 	_ParachutePos = (_caller modelToWorld [0, -7, 0]); 
 	_isEmpty = !(_ParachutePos isFlatEmpty  [1, -1, -1, 1, 0, false, _caller] isEqualTo []); 

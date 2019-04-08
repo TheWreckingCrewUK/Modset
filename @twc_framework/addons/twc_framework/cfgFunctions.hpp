@@ -1,12 +1,10 @@
-class CfgFunctions
-{
-	class TWC
-	{
-		class Functions
-		{
-			file="twc_framework\functions";
+class CfgFunctions {
+	class TWC {
+		class functions {
+			file = "twc_framework\functions";
 			class AirAssault {};
 			class Airborne {};
+			class AmbientAA {};
 			class Artillery{};
 			class AttackHelicopter{};
 			class AttackPlane {};
@@ -17,8 +15,10 @@ class CfgFunctions
 			class CreateTask{};
 			class daisyCutter{};
 			class Defend {};
+			class dummyBullets {};
 			class Flagchange {};
 			class intelHint{};
+			class intelHintWithVariable{};
 			class LightsSwitch{};
 			class Patrol {};
 			class patrolRoads{};
@@ -30,18 +30,27 @@ class CfgFunctions
 			class spawnIed{};
 			class setUniform{};
 			class stationaryUnits{};
+			class movableUnits{};
 			class UpdateTask{};
 			class virtualMortar{};
 			class toggleSpectator {};
 			class grabComposition {};
 			class sendCTabMessage {};
-			class isHigherRank {};
-			
+			class GliderTakeOff {};
+			class confiscateBadItems {};
+			class silentSafety {};
+			class gunwalk {};
+			class mortarwalk {};
 			class init{};
+			class addACEInteraction {};
+			
+			/** AMBIENT AIRCRAFT **/
+			class ambientFlyBy {};
+			class ambientFormationFlyBy {};
 		};
-		class Modules
-		{
-			file="twc_framework\modules";
+		
+		class modules {
+			file = "twc_framework\modules";
 			class era{};
 			class rollShirt{};
 			class boatSafety{};
@@ -50,28 +59,40 @@ class CfgFunctions
 			class disconnectGear{};
 			class missionModuleInit{};
 			class moduleDebug{};
-			class nightGear{};
 			class run{};
 			class safeZone{};
 			class zeus{};
-
+			class moduleCreateTask;
 			class moduleStationaryUnits{};
+			class moduleMovableUnits{};
 			class moduleVirtualArtillery{};
+			class moduleArtillery{};
 			class moduleUpdateTask{};
 			class moduleDefend{};
+			class moduleDummyBullets {};
 			class moduleAirAssault{};
+			class moduleAirborne {};
 			class moduleAttackPlane{};
+			class moduleAmbientAA;
 			class moduleCommandMessage{};
 			class moduleLightsSwitch{};
 			class moduleIntelHint{};
+			class moduleIntelHintWithVariable{};
 			class moduleDaisyCutter{};
 			class moduleDisableCaching {};
 			class moduleGrabComposition {};
 			class moduleIgnoreForwardBase {};
+			class moduleGliderTakeOff {};
+			class moduleTriggerUncache {};
+			class moduleUrbanUnitsCache {};
+			class modulegunwalk {};
+			class modulemortarwalk {};
+			class moduleACEInteract {};
+			class moduleAmbientSound {};
 		};
-		class cache
-		{
-			file="twc_framework\cache";
+		
+		class cache {
+			file = "twc_framework\cache";
 			class aiCaching {};
 			class cacheGroup {};
 			class cacheModuleInit {};
@@ -82,35 +103,25 @@ class CfgFunctions
 			class unCacheVehicle {};
 			class vehicleCaching {};
 		};
-		class headlessClient
-		{
-			file="twc_framework\headlessClient";
+		
+		class headlessClient {
+			file = "twc_framework\headlessClient";
 			class handleSpawn {};
 			class hcModuleInit {};
 			class rebalance {};
 			class transferGroups {};
 		};
-		class curator
-		{
-			file="twc_framework\curator";
-			class healPlayer {};
-			class killPlayer {};
+
+		class curator {
+			file = "twc_framework\curator";
 			class setSpectator {};
-			class medicalInfo {};
-			class toggleCon {};
+			// medical moved to twc_medical
 		};
 
 		class artillery {
 			file = "twc_framework\artillery";
 			class moduleArtillerySpotter {};
 			class moduleArtilleryPieces {};
-		};
-		class looseAmmo {
-			file = "twc_framework\looseAmmo";
-			class addLooseAmmoEH {};
-			class looseTo303 {};
-			class enfieldToBren {};
-			class brenToEnfield {};
 		};
 	};
 };

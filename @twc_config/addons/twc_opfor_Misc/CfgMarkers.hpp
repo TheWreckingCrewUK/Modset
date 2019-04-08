@@ -55,4 +55,47 @@ class CfgMarkers {
 		color[] = {1,1,1,1};
 		markerClass = "Flags";
 	};
+
+	class twc_bosnian_croat_flag: Flag {
+		name = "Croatian Republic of Herzeg-Bosnia";
+		icon = "twc_opfor_Misc\data\bosnian_croat.paa";
+		texture = "twc_opfor_Misc\data\bosnian_croat.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
+
+	class twc_krajina_flag: Flag {
+		name = "Republic of Serbian Krajina";
+		icon = "twc_opfor_Misc\data\krajina.paa";
+		texture = "twc_opfor_Misc\data\krajina.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
+
+	class twc_sfry_flag: Flag {
+		name = "Socialist Federal Republic of Yugoslavia";
+		icon = "twc_opfor_Misc\data\sfry.paa";
+		texture = "twc_opfor_Misc\data\sfry.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
+	class twc_iraq_flag: Flag {
+		name = "Ba'athist Iraq";
+		icon = "twc_opfor_Misc\data\iraq.paa";
+		texture = "twc_opfor_Misc\data\iraq.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
 };

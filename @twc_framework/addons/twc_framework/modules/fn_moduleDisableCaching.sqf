@@ -16,17 +16,13 @@ params ["_logic", "_units", "_activated"];
 
 if (!_activated || !isServer) exitWith {};
 
-// Wait until PostInit has completed, then execute our function
-[{
-	params ["_units"];
-	{
-		if (_x isKindOf "CAManBase") then {
-			(group _x) setVariable ["twc_cacheDisabled", true, true];
-		} else {
-			_x setVariable ["twc_cacheDisabled", true, true];
-		};
-	} forEach _units;
-}, [_units], 0.05] call CBA_fnc_waitAndExecute;
+{
+	if (_x isKindOf "CAManBase") then {
+		(group _x) setVariable ["twc_cacheDisabled", true, true];
+	} else {
+		_x setVariable ["twc_cacheDisabled", true, true];
+	};
+} forEach _units;
 
 if (!isNull _logic) then {
 	deleteVehicle _logic;

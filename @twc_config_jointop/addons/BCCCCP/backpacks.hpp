@@ -54,7 +54,7 @@
 			};
 		};	
 	};
-	class BCCCCP_Backpack_AA: CUP_B_AlicePack_Khaki
+	/*class BCCCCP_Backpack_AA: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -65,7 +65,7 @@
 				count = 2;
 			};
 		};
-	};
+	};*/
 	class BCCCCP_Backpack_AT: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;

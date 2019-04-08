@@ -11,6 +11,7 @@
 	class CUP_I_T72_NAPA;
 	class CUP_O_T72_RU;
 	class CUP_O_ZSU23_SLA;
+	class CUP_O_MTLB_pk_Green_RU;
 	
 	class BCCCCP_BMP1: CUP_BMP1_base
 	{
@@ -103,6 +104,17 @@
 		};
 	};
 	class BCCCCP_BTR60: CUP_O_BTR60_SLA
+	{
+		faction="BCCCCP";
+		crew="BCCCCP_Crewman_Camo";
+		typicalCargo[]=
+		{
+			"BCCCCP_Crewman_Camo"
+		};
+		hiddenSelectionsMaterials[] = {"\CUP\WheeledVehicles\CUP_WheeledVehicles_BTR60\data\textures\russia\russia_body.rvmat","\CUP\WheeledVehicles\CUP_WheeledVehicles_BTR60\data\textures\russia\russia_detail.rvmat"};
+		hiddenselectionstextures[] = {"\CUP\WheeledVehicles\CUP_WheeledVehicles_BTR60\data\textures\russia\russia_body_green_co.paa","\CUP\WheeledVehicles\CUP_WheeledVehicles_BTR60\data\textures\russia\russia_detail_green_co.paa"};
+	};
+	class BCCCCP_MTLB: CUP_O_MTLB_pk_Green_RU
 	{
 		faction="BCCCCP";
 		crew="BCCCCP_Crewman_Camo";

@@ -12,12 +12,12 @@
 if (isServer) then {
 	params ["_spawnmarker", "_dropmarker", "_movemarker", ["_ERA", "Modern"], ["_helicopterType", ""], ["_infantryType", ""]];
 	_pos = [0,0,0];
-	if(typeName _spawnmarker == "STRING")then{_pos = getMarkerPos _spawnmarker};
-	if(typeName _spawnmarker == "ARRAY")then{_pos = _spawnmarker};
+	if (typeName _spawnmarker == "STRING") then {_pos = getMarkerPos _spawnmarker};
+	if (typeName _spawnmarker == "ARRAY") then {_pos = _spawnmarker};
 
 	if (_Era == "Modern") then {
-		// _helicopterType = "CUP_O_Mi8_RU"; // attempted to rename
-		// _infantryType = (configfile >> "CfgGroups" >> "East" >> "rhs_faction_msv" >> "rhs_group_rus_msv_infantry" >> "rhs_group_rus_msv_infantry_squad");
+		_helicopterType = "CUP_O_Mi8_RU"; // attempted to rename
+		_infantryType = (configfile >> "CfgGroups" >> "East" >> "CUP_O_RU" >> "Infantry" >> "CUP_O_RU_InfSection_VDV_EMR");
 	};
 
 	if (_Era == "Cold") then {
@@ -35,10 +35,11 @@ if (isServer) then {
 
 	{
 		_x moveInCargo _helicopterMCargo;
-	} foreach (units _infantryGroup); 
+	} foreach (units _infantryGroup);
 
 	_moveToUnloadLocation = _helicopterPilots addWaypoint [getMarkerPos _dropMarker, 1]; 
 	[_helicopterPilots, 1] setWaypointType "TR UNLOAD";
+	[_helicopterPilots, 1] setWaypointBehaviour "CARELESS";
 
 	_infantryGetOutLocation = _infantryGroup addWaypoint [getMarkerPos _dropmarker, 1];
 	[_infantryGroup, 1] setWaypointType "GETOUT";

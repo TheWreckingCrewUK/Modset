@@ -1,37 +1,16 @@
 class CfgPatches {
 	class TWC_Vehicles {
 		units[] = {
-			// OLD CLASS NAMES, DELETE IN A FEW MONTHS
-			"twc_landrover_W",
-			"twc_landrover_D",
-			"twc_landrover_Special_W",
-			"twc_landrover_Special_D",
-			"twc_landrover_W_1990",
-			"twc_landrover_D_1990",
-			"twc_landrover_Special_W_1990",
-			"twc_landrover_Special_D_1900",
-			"twc_landrover_W_ColdWar",
-			"twc_landrover_D_ColdWar",
-			"twc_landrover_Special_W_ColdWar",
-			"twc_landrover_Special_D_ColdWar",
-			"TWC_Warrior_D",
-			"TWC_Warrior_W",
-			"twc_wildcat",
-			"twc_wildcat_1990",
-			"twc_puma",
-			"TWC_fv432",
-			"TWC_burnes_foxhound_d_a",
-			"TWC_burnes_foxhound_w_a",
-			
 			// TWC Vehicles
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Woodland",
 			"TWC_Vehicle_Generic_LandRoverAmbulance_Desert",
 			"TWC_Vehicle_Generic_FV432Ambulance_Chameleon",
-			"TWC_Vehicle_Generic_Hercules_RAF",
+			"TWC_Vehicle_Generic_Hercules_RAF_VIV",
 			"TWC_Vehicle_Generic_Chinook_RAF",
 			"TWC_Vehicle_Generic_Chinook_RAF_VIV",
 			"TWC_Vehicle_Generic_Gazelle",
 			"TWC_Vehicle_Generic_RHIB_Black",
+			"TWC_Vehicle_Generic_RHIB_HMG_Black",
 			"TWC_Vehicle_Generic_Zodiac_Black",
 			
 			"TWC_Vehicle_ColdWar_LandRover_Woodland",
@@ -47,6 +26,8 @@ class CfgPatches {
 			"TWC_Vehicle_ColdWar_Scorpion_Chameleon",
 			"TWC_Vehicle_ColdWar_Chieftain_Woodland",
 			"TWC_Vehicle_ColdWar_HarrierGR3_RAF",
+			"TWC_Vehicle_ColdWar_RHIB_Black",
+			"TWC_Vehicle_ColdWar_Hercules_RAF_VIV",
 			
 			"TWC_Vehicle_Millennial_HarrierGR5_RAF",
 			"TWC_Vehicle_Millennial_FV432_Woodland",
@@ -114,7 +95,7 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"A3_Armor_F_Beta",
-			
+			"TWC_gearFixes",
 			"A3_Boat_F_Exp_Boat_Transport_01",
 			"A3_Boat_F_Exp_Boat_Transport_02",
 			"burnes_foxhound",
@@ -137,9 +118,7 @@ class CfgPatches {
 			"ukcw_cvrt",
 			"ukcw_fv432",
 			"ukcw_gazelle",
-
 			"TWC_Faction",
-
 			"ace_cargo",
 			"ace_interaction",
 			"ace_medical",
@@ -200,6 +179,7 @@ class CfgVehicles {
 	class ukcw_Scorpion_w_L1;
 	class ukcw_Scorpion_d_L1;
 	class CUP_B_SA330_Puma_HC1_BAF;
+	class ukcw_chieftainmk10;
 	
 	// section modifiers all eras/types
 	#define SECTION_FIELDDRESSING 20
@@ -212,7 +192,40 @@ class CfgVehicles {
 
 	#define SECTION_SMOKE 6
 	#define SECTION_GRENADE 6
-	
+
+	//Vehicle Radios
+	#define PILOT_POSITIONS {"driver", "copilot"}
+
+	#define REGULAR_117(POSITIONS, INTERCOM) \
+	class AcreRacks { \
+		class Rack_1 { \
+			displayName = "Vehicle Radio"; \
+			shortName = "Vehicle Radio"; \
+			componentName = "ACRE_VRC103"; \
+			allowedPositions[] = POSITIONS; \
+			disabledPositions[] = {}; \
+			defaultComponents[] = {}; \
+			mountedRadio = "ACRE_PRC117F"; \
+			isRadioRemovable = 0;\
+			intercom[] = INTERCOM; \
+		}; \
+	};
+
+	#define REGULAR_77(POSITIONS, INTERCOM) \
+	class AcreRacks { \
+		class Rack_1 { \
+			displayName = "Vehicle Radio"; \
+			shortName = "Vehicle Radio"; \
+			componentName = "ACRE_VRC64"; \
+			allowedPositions[] = POSITIONS; \
+			disabledPositions[] = {}; \
+			defaultComponents[] = {}; \
+			mountedRadio = "ACRE_PRC77"; \
+			isRadioRemovable = 0;\
+			intercom[] = INTERCOM; \
+		}; \
+	};
+
 	// Custom TWC vehicles are defined below (they may inherit from above)
 	#include "vehicles\warriors.hpp"
 	#include "vehicles\lr_softtop.hpp"

@@ -1,6 +1,6 @@
 /*
- * Author: Bosenator
- * Module function to make a unit or group stationary.
+ * Author: jayman
+ * Virtual Artillery.
  *
  * Arguments:
  * 0: The Module Logic <OBJECT>
@@ -24,8 +24,3 @@ _safeArea = _logic getVariable "SafeArea";
 
 [getPos _logic,_dispersion,_rounds,_type,_delay,_safeArea] spawn twc_fnc_virtualMortar;
 
-// TODO: change spawn to call above when alternate stationary units is introduced
-
-if (!isNull _logic) then {
-    deleteVehicle _logic;
-};

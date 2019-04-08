@@ -12,84 +12,84 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "CUP_V_B_GER_Carrier_Rig_2_Brown",
-		"CUP_H_SLA_Helmet",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+			"CUP_V_B_GER_Carrier_Rig_2_Brown",
+			"CUP_H_SLA_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "CUP_V_B_GER_Carrier_Rig_2_Brown",
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch"
+			"CUP_V_B_GER_Carrier_Rig_2_Brown",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 		weapons[]=
 		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"CUP_arifle_AK74",
-		"CUP_hgun_Makarov"
+			"Throw",
+			"Put",
+			"Binocular",
+			"CUP_arifle_AK74",
+			"CUP_hgun_Makarov"
 		};
 		respawnweapons[]=
 		{
-		"Throw",
-		"Put",
-		"Binocular",
-		"CUP_arifle_AK74",
-		"CUP_hgun_Makarov"
+			"Throw",
+			"Put",
+			"Binocular",
+			"CUP_arifle_AK74",
+			"CUP_hgun_Makarov"
 		};
 		magazines[]=
 		{
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-	    "CUP_30Rnd_545x39_AK_M",
-	    "CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_8Rnd_9x18_Makarov_M",
-		"CUP_HandGrenade_RGO",
-		"CUP_HandGrenade_RGO"
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO"
 		};
 		Respawnmagazines[]=
 		{
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-	    "CUP_30Rnd_545x39_AK_M",
-	    "CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_8Rnd_9x18_Makarov_M",
-		"CUP_HandGrenade_RGO",
-		"CUP_HandGrenade_RGO"
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO"
 		};
 		Items[]=
 		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs"	
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_EarPlugs"
 		};
 		respawntems[]=
 		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs"			
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_EarPlugs"
 		};
 	};
 	
@@ -107,81 +107,81 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "CUP_V_B_GER_Carrier_Rig_2_Brown",
+			"CUP_V_B_GER_Carrier_Rig_2_Brown",
 		"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "CUP_V_B_GER_Carrier_Rig_2_Brown"
+			"CUP_V_B_GER_Carrier_Rig_2_Brown"
 		};
 		weapons[]=
 		{
-		"Throw",
-		"Put",	
-		"CUP_arifle_AK74",
-		"CUP_hgun_Makarov"
+			"Throw",
+			"Put",
+			"CUP_arifle_AK74",
+			"CUP_hgun_Makarov"
 		};
 		respawnweapons[]=
 		{
-		"Throw",
-		"Put",	
-		"CUP_arifle_AK74",
-		"CUP_hgun_Makarov"
+			"Throw",
+			"Put",
+			"CUP_arifle_AK74",
+			"CUP_hgun_Makarov"
 		};
 		magazines[]=
 		{
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_8Rnd_9x18_Makarov_M",
-		"CUP_HandGrenade_RGO",
-		"CUP_HandGrenade_RGO",
-		"SmokeShell",
-		"SmokeShell"
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_8Rnd_9x18_Makarov_M",
-		"CUP_HandGrenade_RGO",
-		"CUP_HandGrenade_RGO",
-		"SmokeShell",
-		"SmokeShell"
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		Items[]=
 		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs"
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_EarPlugs"
 		};
 		respawntems[]=
 		{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_EarPlugs"	
-		};		
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_EarPlugs"
+		};
 	};
 
 	class GulfWar_Iraqi_RPG: O_Soldier_base_F
@@ -389,50 +389,51 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "CUP_V_B_GER_Carrier_Rig_2_Brown",
-		"CUP_H_SLA_Helmet"
+			"CUP_V_B_GER_Carrier_Rig_2_Brown",
+			"CUP_H_SLA_Helmet"
 		};
 		respawnLinkedItems[]=
 		{
-        "CUP_V_B_GER_Carrier_Rig_2_Brown"
+			"CUP_V_B_GER_Carrier_Rig_2_Brown",
+			"CUP_H_SLA_Helmet"
 		};
 		weapons[]=
 		{
-		"Throw",
-		"Put",	
-		"CUP_arifle_RPK74",
-		"CUP_hgun_Makarov"
+			"Throw",
+			"Put",
+			"CUP_arifle_RPK74",
+			"CUP_hgun_Makarov"
 		};
 		respawnweapons[]=
 		{
-		"Throw",
-		"Put",	
-		"CUP_arifle_AK74",
-		"CUP_hgun_Makarov"
+			"Throw",
+			"Put",
+			"CUP_arifle_RPK74",
+			"CUP_hgun_Makarov"
 		};
 		magazines[]=
 		{
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",	
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"CUP_8Rnd_9x18_Makarov_M",
-		"CUP_HandGrenade_RGO",
-		"CUP_HandGrenade_RGO",
-		"SmokeShell",
-		"SmokeShell"
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",	
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"CUP_8Rnd_9x18_Makarov_M",
-		"CUP_HandGrenade_RGO",
-		"CUP_HandGrenade_RGO",
-		"SmokeShell",
-		"SmokeShell"
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		Items[]=
 		{
@@ -495,31 +496,31 @@
 		};
 		magazines[]=
 		{
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"CUP_8Rnd_9x18_Makarov_M",
-		"CUP_HandGrenade_RGO",
-		"CUP_HandGrenade_RGO",
-		"SmokeShell",
-		"SmokeShell"
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_30Rnd_545x39_AK_M",
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
-		"CUP_8Rnd_9x18_Makarov_M",
-		"CUP_HandGrenade_RGO",
-		"CUP_HandGrenade_RGO",
-		"SmokeShell",
-		"SmokeShell"
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		Items[]=
 		{

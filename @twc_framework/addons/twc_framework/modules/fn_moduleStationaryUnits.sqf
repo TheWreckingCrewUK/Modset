@@ -16,12 +16,10 @@ params ["_logic", "_units", "_activated"];
 
 if (!_activated || !isServer) exitWith {};
 
-// Wait until PostInit has completed, then execute our function
-[{
-	params ["_units"];
-	{ [_x] call twc_fnc_stationaryUnits; } forEach _units;
-}, [_units], 0.05] call CBA_fnc_waitAndExecute;
+{
+	[_x] call twc_fnc_stationaryUnits;
+} forEach _units;
 
 if (!isNull _logic) then {
-    deleteVehicle _logic;
+	deleteVehicle _logic;
 };

@@ -7,7 +7,8 @@ class CfgPatches {
 		
 		requiredAddons[] = {
 			"cba_main",
-			"A3_Modules_F"
+			"A3_Modules_F",
+			"A3_Dubbing_Radio_F"
 		};
 		
 		author = "Bosenator";
@@ -15,32 +16,12 @@ class CfgPatches {
 		url = "http://thewreckingcrew.eu";
 		version = 1;
 		versionStr = "1";
-    };
-};
-
-class CfgFunctions {
-	class TWC_UI {
-		tag = "TWC_UI";
-		class init {
-			file = "TWC_UI\functions";
-			class init { postInit = 1; };
-			
-			class addDisplay {};
-			class getVisualBearingLocal {};
-			class hideBearing {};
-			class shouldDisplay {};
-			class removeDisplay {};
-			class showBearing {};
-			class hudReset {};
-		};
 	};
 };
 
-/* class Extended_DisplayUnload_EventHandlers {
-	class RscDiary {
-		ace_ui = "[{[] call TWC_UI_fnc_hudReset}] call CBA_fnc_execNextFrame";
-	};
-}; */
+#include "CfgFunctions.hpp"
 
-#include "RscTitles.hpp"
-#include "DefaultVehicleSystemsDisplayManager.hpp"
+#include "ui\ACE_Spectator_Display.hpp"
+#include "ui\DefaultVehicleSystemsDisplayManager.hpp"
+#include "ui\RadioProtocolBase.hpp"
+#include "ui\RscTitles.hpp"

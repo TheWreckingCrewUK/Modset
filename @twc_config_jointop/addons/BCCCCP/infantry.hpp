@@ -320,13 +320,13 @@
 		{
 			"Throw",
 			"Put",
-			"CUP_arifle_RPK74_45"
+			"CUP_lmg_PKM"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"CUP_arifle_RPK74_45"
+			"CUP_lmg_PKM"
 		};
 		magazines[]=
 		{
@@ -440,11 +440,47 @@
 		editorSubcategory = "BCCCCP_VDV";
 		vehicleClass ="BCCCCP_VDV";
 	};
+	class BCCCCP_VDV_SenRifleman_Para: BCCCCP_VDV_SenRifleman
+	{
+		displayName="Senior Rifleman (Parajump)";
+		linkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};		
+	};
 	class BCCCCP_VDV_Squadlead: BCCCCP_Squadlead
 	{
 		uniformClass="CUP_U_O_RUS_Flora_1_VDV";
 		editorSubcategory = "BCCCCP_VDV";
 		vehicleClass ="BCCCCP_VDV";
+	};
+	class BCCCCP_VDV_Squadlead_Para: BCCCCP_VDV_Squadlead
+	{
+		displayName="Squadleader (Parajump)";
+		linkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};		
 	};
 	class BCCCCP_VDV_Grenadier: BCCCCP_Grenadier
 	{
@@ -452,16 +488,70 @@
 		editorSubcategory = "BCCCCP_VDV";
 		vehicleClass ="BCCCCP_VDV";
 	};
+	class BCCCCP_VDV_Grenadier_Para: BCCCCP_VDV_Grenadier
+	{
+		displayName="Grenadier (RPG) (Parajump)";
+		linkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};			
+	};
 	class BCCCCP_VDV_GrenadierAss: BCCCCP_GrenadierAss
 	{
 		uniformClass="CUP_U_O_RUS_Flora_1_VDV";
 		editorSubcategory = "BCCCCP_VDV";
 		vehicleClass ="BCCCCP_VDV";
 	};
+	class BCCCCP_VDV_GrenadierAss_Para: BCCCCP_VDV_GrenadierAss
+	{
+		displayName="Grenadier Assistant (Parajump)";
+		linkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};			
+	};
 	class BCCCCP_VDV_MG_RPK: BCCCCP_MG_RPK
 	{
 		uniformClass="CUP_U_O_RUS_Flora_1_VDV";
 		editorSubcategory = "BCCCCP_VDV";
+	};
+	class BCCCCP_VDV_MG_RPK_Para: BCCCCP_VDV_MG_RPK
+	{
+		displayName="Machine Gunner (RPK) (Parajump)";
+		linkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};			
 	};
 	class BCCCCP_VDV_MG_PKM: BCCCCP_MG_PKM
 	{
@@ -469,11 +559,47 @@
 		editorSubcategory = "BCCCCP_VDV";
 		vehicleClass ="BCCCCP_VDV";
 	};
+	class BCCCCP_VDV_MG_PKM_Para: BCCCCP_VDV_MG_PKM 
+	{
+		displayName="Machine Gunner (PKM) (Parajump)";
+		linkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};			
+	};
 	class BCCCCP_VDV_MGAss: BCCCCP_MGAss
 	{
 		uniformClass="CUP_U_O_RUS_Flora_1_VDV";
 		editorSubcategory = "BCCCCP_VDV";
 		vehicleClass ="BCCCCP_VDV";
+	};
+	class BCCCCP_VDV_MGAss_Para: BCCCCP_VDV_MGAss
+	{
+		displayName="Machine Gunner Assistant (Parajump)";
+		linkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};			
 	};
 	class BCCCCP_VDV_Sniper: BCCCCP_Sniper
 	{
@@ -481,10 +607,28 @@
 		editorSubcategory = "BCCCCP_VDV";
 		vehicleClass ="BCCCCP_VDV";
 	};
+	class BCCCCP_VDV_Sniper_Para: BCCCCP_VDV_Sniper
+	{
+		displayName="Sniper (Parajump)";
+		linkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"ItemCompass",
+			"ItemWatch",
+			"CUP_H_TK_TankerHelmet"
+		};			
+	};
 	class BCCCCP_AAGunner: BCCCCP_Rifleman
 	{
 		displayName="Anti-Air Gunner";
-		backpack="BCCCCP_Backpack_AA";
+		//backpack="BCCCCP_Backpack_AA";
 		vehicleClass ="BCCCCP_VDV";
 		weapons[]=
 		{
@@ -510,8 +654,7 @@
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_HandGrenade_RGD5",
-			"SmokeShell",
-			"CUP_launch_9K32Strela"
+			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
@@ -523,14 +666,13 @@
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_HandGrenade_RGD5",
-			"SmokeShell",
-			"CUP_launch_9K32Strela"
+			"SmokeShell"
 		};
 	};
 	class BCCCCP_AAAssistant: BCCCCP_Rifleman
 	{
 		displayName="Anti-Air Assistant";
-		backpack="BCCCCP_Backpack_AA";
+		//backpack="BCCCCP_Backpack_AA";
 		vehicleClass ="BCCCCP_VDV";
 	};
 	class BCCCCP_ATGunner: BCCCCP_Rifleman
