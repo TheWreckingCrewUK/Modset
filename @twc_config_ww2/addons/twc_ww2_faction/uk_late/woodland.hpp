@@ -234,6 +234,9 @@ class TWC_Infantry_WW2_UK_Late_Woodland_SectionCommander: TWC_Infantry_WW2_UK_La
 		MAG_5("LIB_32Rnd_9x19_Sten"),
 		MAG_2("SmokeShell")
 	};
+	nightItems[] = {
+		MAG_2("ACE_HandFlare_White")
+	};
 };
 class TWC_Infantry_WW2_UK_Late_Woodland_2iC: TWC_Infantry_WW2_UK_Late_Woodland_Rifleman
 {
@@ -431,6 +434,9 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Mortar: TWC_Infantry_WW2_UK_Late
 	{
 		MAG_7("LIB_10Rnd_770x56"),
 		MAG_4("twc_2inch_he_1rnd")
+	};
+	nightItems[] = {
+		MAG_8("twc_2inch_illum_1rnd")
 	};
 };
 class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Sergeant
