@@ -5,13 +5,14 @@
 import fnmatch
 import os
 import sys
+import time
 import argparse
 from sqf.parser import parse
 import sqf.analyzer
 from sqf.exceptions import SQFParserError
 
 
-def analyze(filename, writer=sys.stdout):
+def analyze(filename, startTime, writer=sys.stdout):
     warnings = 0
     errors = 0
     with open(filename, 'r') as file:
@@ -19,13 +20,17 @@ def analyze(filename, writer=sys.stdout):
         try:
             result = parse(code)
         except SQFParserError as e:
-            print("{}:".format(filename))
+            now = time.time()
+            currentTime = now - startTime
+            print("{0}: {1}".format(filename, currentTime))
             writer.write('    [%d,%d]:%s\n' % (e.position[0], e.position[1] - 1, e.message))
             return 0, 1
 
         exceptions = sqf.analyzer.analyze(result).exceptions
         if (exceptions): 
-            print("{}:".format(filename))
+            now = time.time()
+            currentTime = now - startTime
+            print("{0}: {1}".format(filename, currentTime))
             for e in exceptions:
                 if (e.message.startswith("error")):
                     errors += 1
@@ -41,6 +46,7 @@ def main():
     sqf_list = []
     all_warnings = 0
     all_errors = 0
+    start = time.time()
     
     parser = argparse.ArgumentParser()
     parser.add_argument('-m','--module', help='only search specified module addon folder', required=False, default=".")
@@ -49,10 +55,12 @@ def main():
     for root, dirnames, filenames in os.walk('../' + args.module):
         for filename in fnmatch.filter(filenames, '*.sqf'):
             if 'fn_advancedTowingInit.sqf' not in filename:
-                sqf_list.append(os.path.join(root, filename))
-        
+                filePath = os.path.join(root, filename)
+                if filePath not in sqf_list:
+                    sqf_list.append(filePath)
+    
     for filename in sqf_list:
-        warnings, errors = analyze(filename)
+        warnings, errors = analyze(filename, start, sys.stdout)
         all_warnings += warnings
         all_errors += errors
     
