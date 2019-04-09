@@ -47,14 +47,14 @@ if (_isEven) then {
 };
 
 // wrapped in a sleep for waits, needed to check for ground collision
-[_caller,_hadBackpack,_class,_magazines,_weapons,_items] spawn {
-	params ["_caller", "_hadBackpack", "_class", "_magazines", "_weapons", "_items"];
+[_caller,_hadBackpack,_class,_magazines,_weapons,_items,_isEven] spawn {
+	params ["_caller", "_hadBackpack", "_class", "_magazines", "_weapons", "_items","_isEven"];
 	
 	// actual jump
 	detach _caller;
 	_caller allowDamage false;
 	sleep 1; // a second of freefall for the chute
-	
+
 	_pos2 = getPosASL _caller;
 	_vUp = vectorUp _caller;
 	_vDir = vectorDir _caller;
@@ -71,8 +71,16 @@ if (_isEven) then {
 
 	_chute allowDamage false;
 	_chute setVectorDirAndUp [_vDir, _vUp];
-	_chute setVelocity _vel;
-	_caller setVelocity _vel;
+	/* _chute setVelocity _vel;
+	_caller setVelocity _vel; */
+	
+	if (_isEven) then {
+		_chute setVelocity [(_vel select 0), (_vel select 1) + (cos _vDir * -2), (_vel select 2)];
+		_caller setVelocity [(_vel select 0), (_vel select 1) + (cos _vDir * -2), (_vel select 2)];
+	} else {
+		_chute setVelocity [(_vel select 0), (_vel select 1) + (cos _vDir * 2), (_vel select 2)];
+		_caller setVelocity [(_vel select 0), (_vel select 1) + (cos _vDir * 2), (_vel select 2)];
+	};
 	
 	// wait until parachute is open, not necessary atm
 	/* waitUntil {animationState _caller == "chute_pos"};
