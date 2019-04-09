@@ -126,6 +126,7 @@ class cfgWeapons
 				class compatibleItems {
 					rhsusf_acc_anpeq15_top = 1;
 					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
 				};
 			};
 			class MuzzleSlot: rhs_western_rifle_muzzle_slot {
@@ -223,6 +224,7 @@ class cfgWeapons
 					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
 					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
 					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -269,6 +271,7 @@ class cfgWeapons
 					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
 					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
 					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -316,6 +319,7 @@ class cfgWeapons
 					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
 					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
 					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -485,6 +489,7 @@ class cfgWeapons
 					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
 					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_F = 1;
 					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
 				};
 			};
 			allowedslots[] = {901};
