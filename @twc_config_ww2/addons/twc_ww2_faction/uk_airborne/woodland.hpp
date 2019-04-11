@@ -65,6 +65,16 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_SMG: TWC_Infantry_WW2_UK_Late_Woodla
 		"itemMap",
 		"ItemWatch"
 	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_No4_Mk2_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_No4_Mk2_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_Sten_Mk5",
@@ -143,6 +153,16 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_SectionCommander: TWC_Infantry_WW2_U
 		"itemMap",
 		"ItemWatch"
 	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_No4_Mk2_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_No4_Mk2_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_Sten_Mk5",
@@ -201,6 +221,16 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Commander: TWC_Infantry_WW2_
 		"itemMap",
 		"ItemWatch"
 	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_No4_Mk2_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_No4_Mk2_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_Sten_Mk5",
@@ -258,6 +288,16 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Medic: TWC_Infantry_WW2_UK_L
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_No4_Mk2_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_No4_Mk2_Bayo"
 	};
 	weapons[] =
 	{
@@ -344,7 +384,6 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_PIAT_Gunner: TWC_Infantry_WW2_UK_Lat
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
 	uniformClass = "U_LIB_UK_DenisonSmock";
-	backpack = "";
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy_Blanco",

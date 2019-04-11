@@ -42,10 +42,32 @@ class CfgVehicles {
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 	
 	class LIB_BasicWeaponsBox_US;
+	class WW2_Cle_Container;
 	class TWC_AmmoBox_WW2_Portable: LIB_BasicWeaponsBox_US {
 		scope = 1;
 		displayName = "Ammo Box WW2 (Portable)";
 		author      = "Bosenator";
+		
+		class TransportMagazines { };
+		class TransportItems     { };
+		class TransportWeapons   { };
+		class TransportBackpacks { };
+		
+		editorCategory = "TWC_Crates";
+		editorSubcategory = "TWC_Crates_Other";
+		
+		// ACE Defines
+		ace_cargo_canLoad     = 1;
+		ace_cargo_size        = 1;
+		ace_cargo_hasCargo    = 0;
+		
+		ace_dragging_canCarry = 1;
+		ace_dragging_canDrag  = 1;
+	};
+	class TWC_AmmoBox_WW2_Airborne_Portable: WW2_Cle_Container {
+		scope = 1;
+		displayName = "Ammo Box WW2 Airborne (Portable)";
+		author      = "[TWC] Rik";
 		
 		class TransportMagazines { };
 		class TransportItems     { };
@@ -255,7 +277,7 @@ class CfgVehicles {
 		};
 	};
 	
-	class TWC_AmmoBox_WW2_Airborne_Section_Portable: TWC_AmmoBox_WW2_Portable {
+	class TWC_AmmoBox_WW2_Airborne_Section_Portable: TWC_AmmoBox_WW2_Airborne_Portable {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Section Resupply - Late War (Portable)";
