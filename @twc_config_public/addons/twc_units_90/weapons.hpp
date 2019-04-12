@@ -19,6 +19,9 @@ class cfgWeapons
 		};
 	};
 		
+	class uk3cb_baf_silencer_l85;
+	class twc_L85_suppressor: uk3cb_baf_silencer_l85
+	{};
 	
 	class UK3CB_BAF_L119A1_CQB;
 	class TWC_UK3CB_BAF_L119A1_CQB_ACOG: UK3CB_BAF_L119A1_CQB
@@ -42,7 +45,7 @@ class cfgWeapons
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
 				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
+					twc_L85_suppressor = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -77,7 +80,7 @@ class cfgWeapons
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
 				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
+					twc_L85_suppressor = 1;
 					uk3cb_baf_sffh = 1;
 				};
 			};
@@ -113,7 +116,7 @@ class cfgWeapons
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
 				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
+					twc_L85_suppressor = 1;
 					uk3cb_baf_sffh = 1;
 				};
 			};
@@ -143,7 +146,7 @@ class cfgWeapons
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
 				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
+					twc_L85_suppressor = 1;
 				};
 			};
 			allowedslots[] = {901};

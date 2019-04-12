@@ -545,10 +545,14 @@ class cfgWeapons
 	//duplicated suppressor classes, to enable whitelisting of certain guns versus blacklisting all of them
 	class rhsusf_acc_rotex5_grey;
 	class twc_acc_rotex5_grey: rhsusf_acc_rotex5_grey
-	{};
+	{
+		displayName = "T8 Suppressor";
+	};
 	class rhsusf_acc_nt4_tan;
 	class twc_acc_nt4_tan: rhsusf_acc_nt4_tan
-	{};
+	{
+		descriptionShort = "Suppressor<br/>Used on: HK417<br/>by www.3commandobrigade.com";
+	};
 	
 	class CUP_H_US_H_PASGT_desert;
 	class twc_CUP_H_US_H_PASGT_trp: CUP_H_US_H_PASGT_desert
