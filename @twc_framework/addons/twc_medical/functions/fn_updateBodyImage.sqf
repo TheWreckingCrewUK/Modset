@@ -1,15 +1,15 @@
 params ["_selectionBloodLoss", "_damaged", "_selectionTourniquet", "_display"];
 
 // Handle the body image coloring
-private _availableSelections = [50, 51, 52, 53, 54, 55];
+private _availableSelections = [54, 55, 56, 57, 58, 59];
 
 {
 	// Show/hide the tourniquet icon overlay
 	private _tourniquet = _selectionTourniquet select _forEachIndex;
 	if (_tourniquet > 0) then {
-		(_display displayCtrl (_x + 10)) ctrlSetTextColor [0, 0, 0.8, 1];
+		(_display displayCtrl (_x) ctrlSetTextColor [0, 0, 0.8, 1];
 	} else {
-		(_display displayCtrl (_x + 10)) ctrlSetTextColor [0, 0, 0.8, 0];
+		(_display displayCtrl (_x) ctrlSetTextColor [0, 0, 0.8, 0];
 	};
 } forEach _availableSelections;
 
