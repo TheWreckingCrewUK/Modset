@@ -41,7 +41,7 @@ if (_unCon) then {
 	};
 	
 	// ACE Medical is less than 30, we need to catch it ahead of that.
-	if (_bloodVolume <= 31) exitWith {
+	if (_bloodVolume <= 35) exitWith {
 		["TWC_Unit_Perished", [_unit, "bleed_out"]] call CBA_fnc_globalEvent;
 		[_unit, true, false] call ace_medical_fnc_setDead;
 		_continue = false;
