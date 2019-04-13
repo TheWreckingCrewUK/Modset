@@ -6,10 +6,11 @@ private _availableSelections = [54, 55, 56, 57, 58, 59];
 {
 	// Show/hide the tourniquet icon overlay
 	private _tourniquet = _selectionTourniquet select _forEachIndex;
+	
 	if (_tourniquet > 0) then {
-		(_display displayCtrl (_x) ctrlSetTextColor [0, 0, 0.8, 1];
+		(_display displayCtrl _x) ctrlSetTextColor [0, 0, 0.8, 1];
 	} else {
-		(_display displayCtrl (_x) ctrlSetTextColor [0, 0, 0.8, 0];
+		(_display displayCtrl _x) ctrlSetTextColor [0, 0, 0.8, 0];
 	};
 } forEach _availableSelections;
 
