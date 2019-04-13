@@ -77,4 +77,6 @@ class CfgVehicles {
 	CREATE_MAP(MCN_Neaville);
 	CREATE_MAP(MCN_Neaville_winter);
 	CREATE_MAP(Staszow);
+	CREATE_MAP(dingor);
+	CREATE_MAP(lingor3);
 };
