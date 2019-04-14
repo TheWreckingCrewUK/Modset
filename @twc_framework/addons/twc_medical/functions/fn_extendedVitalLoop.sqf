@@ -17,7 +17,7 @@ if (!isPlayer _unit) exitWith {}; // don't care
 if (isDedicated || !hasInterface) exitWith {};
 
 if (alive _unit) then {
-	_debugMode = missionNameSpace getVariable ["twc_debugEnabled", false];
+	//_debugMode = missionNameSpace getVariable ["twc_debugEnabled", false];
 	_bloodVolume = (_unit getVariable ["ace_medical_bloodVolume", 100]);
 
 	// makes time to death dynamic based on current blood level, will restore with saline

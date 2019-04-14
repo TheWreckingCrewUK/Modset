@@ -7,7 +7,7 @@ params ["_caller", "_target", ["_isCPR", true]];
 
 // Should equate to around 80% of the time they stay uncon.
 // Public sort of flips this, to facilitate the gameplay.
-_probability = 20;
+_probability = 10;
 _diceRoll = floor (random 100);
 
 _bloodLoss = [_caller, _target] call twc_medical_fnc_getBloodVolume;
@@ -26,7 +26,7 @@ if (_isTargetMedic > 0) then { _probability = _probability + 20; };
 _isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
 if (_isPublic) then { _probability = _probability + 80; };
 
-if !(_isCPR) then { _probability = _probability + 10; };
+if !(_isCPR) then { _probability = _probability + 20; };
 if (_probability >= _diceRoll) exitWith { true; };
 
 false;
