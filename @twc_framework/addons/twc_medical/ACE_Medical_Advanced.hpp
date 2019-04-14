@@ -1,10 +1,48 @@
 class ACE_Medical_Advanced {
+	class Injuries {
+		class wounds {
+			class Avulsions {
+				bleedingRate = 0.02;
+				pain = 0.5;
+				
+				class Minor {
+					bleedingRate = 0.025;
+				};
+				
+				class Medium {
+					bleedingRate = 0.05;
+				};
+				
+				class Large {
+					bleedingRate = 0.075;
+				};
+			};
+			
+			class velocityWound {
+				bleedingRate = 0.02;
+				pain = 0.3;
+				
+				class Minor {
+					bleedingRate = 0.05;
+				};
+				
+				class Medium {
+					bleedingRate = 0.1;
+				};
+				
+				class Large {
+					bleedingRate = 0.15;
+				};
+			};
+		};
+	};
+	
 	class Treatment {
 		class Medication {
 			class Morphine {
 				painReduce = 0.7;
 				maxDose = 2;
-				viscosityChange = -10;
+				viscosityChange = -5;
 			};
 			
 			class Epinephrine {
