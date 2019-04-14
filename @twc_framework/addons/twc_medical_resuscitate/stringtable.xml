@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="adv">
-	<Package name="aceCPR">
+<Project name="TWC Medical Resuscitate">
+	<Package name="TWC_Medical_Resuscitate">
 		<Key ID="STR_TWC_CPR_COMPLETED">
 			<Original>%1 resuscitated the patient with CPR</Original>
 			<English>%1 resuscitated the patient with CPR</English>
@@ -30,21 +30,6 @@
 			<Original>%1 sutured a wound</Original>
 			<English>%1 sutured a wound</English>
 			<German>%1 hat eine Wunde vernäht</German>
-		</Key>
-		<Key ID="STR_TWC_SURGERY_HANDED">
-			<Original>%1 handed over the patient to a surgical team</Original>
-			<English>%1 handed over the patient to a surgical team</English>
-			<German>%1 handed over the patient to a surgical team</German>
-		</Key>
-		<Key ID="STR_TWC_SURGERY_COMPLETED">
-			<Original>%1 was released by the surgical team</Original>
-			<English>%1 was released by the surgical team</English>
-			<German>%1 was released by the surgical team</German>
-		</Key>
-		<Key ID="STR_TWC_FIELDSURGERY_COMPLETED">
-			<Original>%1 was fully cared for by %2</Original>
-			<English>%1 was fully cared for by %2</English>
-			<German>%1 was fully cared for by %2</German>
 		</Key>
 	</Package>
 </Project>

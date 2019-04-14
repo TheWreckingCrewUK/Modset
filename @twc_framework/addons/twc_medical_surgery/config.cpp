@@ -48,8 +48,11 @@ class CfgPatches {
 };
 
 #include "ACE_Medical_Actions.hpp"
+#include "CfgEden.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgSounds.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"
 
 class Extended_PostInit_EventHandlers {
 	class TWC_Medical_Surgery {
