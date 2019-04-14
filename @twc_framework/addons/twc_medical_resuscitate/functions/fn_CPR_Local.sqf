@@ -35,8 +35,8 @@ if (_isPublic) then { _probability = _probability + 5; };
 
 _diceRoll = floor(random 100);
 
-if (_probability < 2) then {
-	_probability = 2;
+if (_probability < 3) then {
+	_probability = 3;
 };
 
 if ( _probability >= _diceRoll ) exitWith {

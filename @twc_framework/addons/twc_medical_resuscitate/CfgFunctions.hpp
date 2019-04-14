@@ -8,6 +8,7 @@ class CfgFunctions {
 			class resuscitate {};
 			class getWakeUp {};
 			class badLuckProtection {};
+			class handleRespawn {};
 			
 			// CPR
 			class action {};
