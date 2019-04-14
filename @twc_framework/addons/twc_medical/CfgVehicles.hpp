@@ -1,5 +1,5 @@
 class CfgVehicles {
-	class Man;
+/* 	class Man;
 	class CAManBase: Man {
 		class ACE_Actions {
 			class ACE_MainActions {
@@ -8,8 +8,8 @@ class CfgVehicles {
 						class fieldDressing;
 						class Defib: fieldDressing {
 							displayName = "Defibrillate";
-							condition = "[_player, _target] call twc_medical_fnc_canDefib";
-							statement = "[_player, _target] call twc_medical_fnc_Defib";
+							condition = "[_player, _target] call twc_medical_resuscitate_fnc_canDefib";
+							statement = "[_player, _target] call twc_medical_resuscitate_fnc_Defib";
 							exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside", "isNotSwimming"};
 							icon = "";
 						};
@@ -26,7 +26,7 @@ class CfgVehicles {
 				};
 			};
 		};
-	};
+	}; */
 	
 	class Logic;
 	class Module_Base: Logic {
@@ -69,32 +69,6 @@ class CfgVehicles {
 				typeName = "BOOL";
 				defaultValue = 0;
 			};
-		};
-	};
-	
-	class TWC_Module_AssignFieldTent: Module_F {
-		author = "[TWC] Bosenator";
-		scope = 2;
-		scopeCurator = 0;
-		displayName = "TWC Medical Configuration";
-		category = "twc_missionSetup";
-		function = "twc_medical_fnc_moduleAssignFieldTent";
-		functionPriority = 10;
-		isGlobal = 2;
-		isTriggerActivated = 0;
-		isDisplosable = 0;
-		
-		class Arguments {
-			class enabled {
-				displayName = "Set as Field Tent";
-				description = "Set as Field Tent";
-				typeName = "BOOL";
-			};
-		};
-		
-		class ModuleDescription {
-			description = "Object(s) to set as Field Tent";
-			sync[] = {};
 		};
 	};
 	
@@ -162,19 +136,5 @@ class CfgVehicles {
 		function = "twc_medical_fnc_logUnit";
 		curatorCanAttach = 1;
 		displayName = "log Unit (Medically)";
-	};
-	
-	class TWC_Curator_setFieldTent: Module_F {
-		author = "[TWC] Bosenator";
-		scope = 1;
-		scopeCurator = 2;
-		displayName = "Set Field Tent";
-		category = "twc_zeus";
-		function = "twc_medical_fnc_setFieldTent";
-		functionPriority = 1;
-		isGlobal = 0;
-		isTriggerActivated = 0;
-		isDisplosable = 0;
-		curatorCanAttach = 1;
 	};
 };
