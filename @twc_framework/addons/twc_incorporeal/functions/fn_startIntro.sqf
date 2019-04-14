@@ -12,8 +12,8 @@ if (!isNil "completedTasks") then {
 _introData = [] call TWC_Incorporeal_fnc_getIntroData;
 
 // Calculate time per section for panning shot. Overall time limit is 40 seconds, divided by element count. Min of 4 seconds per group.
-_totalAssetCount = count _introData;
-_panTimePerAsset = (40 / (_totalAssetCount)) max 5;
+_totalPlayerCount = count (allPlayers - entities "HeadlessClient_F");
+_panTimePerUnit = (40 / _totalPlayerCount) max 1.5;
 [true] call ace_common_fnc_disableUserInput;
 //disableUserInput true;
 
@@ -55,6 +55,7 @@ _alternatePan = false;
 	};
 	
 	_alternatePan = !_alternatePan;
+	_panTime = (count _groupUnits) * _panTimePerUnit;
 	
 	// prevent bad pans
 	if (!alive _firstUnit && alive _lastUnit) then { _firstUnit = _lastUnit; };
@@ -72,7 +73,7 @@ _alternatePan = false;
 	_groupText = format ["<t color='#ff6633' size='2' align='left'>%1</t><br/>%2", _groupName, _displayString];
 	
 	titleText [_groupText, "PLAIN", -1, false, true];
-	titleFadeOut _panTimePerAsset;
+	titleFadeOut _panTime;
 	
 	if (alive _firstUnit && alive _lastUnit) then {
 		_cam camSetTarget (_firstUnit modelToWorld [0, 0, 1.5]);
@@ -83,11 +84,11 @@ _alternatePan = false;
 		_cam camSetTarget (_lastUnit modelToWorld [0, 0, 1.5]);
 		_cam camSetPos (_lastUnit modelToWorld [0, 2, 1.5]);
 		_cam cameraEffect ["internal", "back"];
-		_cam camCommit _panTimePerAsset;
+		_cam camCommit _panTime;
 	};
 	
 	//_waitFor = (_forEachIndex + 1) * _panTimePerAsset;
-	sleep _panTimePerAsset;
+	sleep (_panTime + 2);
 } forEach _introData;
 
 _cam = "camera" camCreate (player modelToWorld [0, 2, 5]);
