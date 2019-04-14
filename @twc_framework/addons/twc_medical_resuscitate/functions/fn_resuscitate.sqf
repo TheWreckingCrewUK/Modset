@@ -39,3 +39,5 @@ if (_wakeUpUnit) then {
 
 _forceSync = (CBA_missionTime - 60);
 _unit setVariable ["ACE_medical_lastMomentValuesSynced", _forceSync, true];
+_unit setVariable ["TWC_Medical_Resuscitate_Defib_Attempts", 0, true];
+_unit setVariable ["TWC_Medical_Resuscitate_CPR_Attempts", 0, true];

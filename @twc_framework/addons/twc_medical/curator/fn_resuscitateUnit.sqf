@@ -11,7 +11,7 @@ if((_mouseOver select 0) != "OBJECT") then{
 	if !(_unit isKindOf "CAManBase") then{
 		hint "Unit has to be human";
 	}else{
-		[_unit, [30, 35, 40], true, true] call twc_medical_fnc_resuscitate;
+		[_unit, [30, 35, 40], true, true] call twc_medical_resuscitate_fnc_resuscitate;
 	};
 };
 

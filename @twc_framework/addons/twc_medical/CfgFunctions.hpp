@@ -40,27 +40,13 @@ class CfgFunctions {
 			class fullyBandageUnit {};
 			class fullHealWithoutLog {};
 			class isInFieldTent {};
-			class resuscitate {};
 			class removeMedicalItem {};
-			class getWakeUp {};
 
 			// Uncon Loop
 			class extendedUnconLoop {};
 			class handleUncon {};
 			class handleAIUncon {};
 			class unconSoundLoop {};
-
-			// CPR
-			class action {};
-			class canCPR {};
-			class CPR {};
-			class CPR_Local {};
-
-			// Defib
-			class action_Defib {};
-			class canDefib {};
-			class Defib {};
-			class Defib_Local {};
 
 			// Suture
 			class canSuture {};

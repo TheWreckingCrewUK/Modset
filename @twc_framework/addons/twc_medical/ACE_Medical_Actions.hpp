@@ -17,25 +17,6 @@ class ACE_Medical_Actions {
 			treatmentTime = 12;
 		};
 		
-		class CPR: FieldDressing {
-			callbackSuccess = "twc_medical_fnc_action";
-			animationCaller = "AinvPknlMstpSnonWnonDr_medic0";
-			animationCallerProne = "AinvPknlMstpSnonWnonDr_medic0";
-		};
-		
-		class Defib: CPR {
-			displayName = "Defibrillate";
-			displayNameProgress = "Defibrillating...";
-			treatmentLocations[] = {"MedicalVehicle"};
-			allowedSelections[] = {"body"};
-			condition = "[(_this select 0), (_this select 1)] call twc_medical_fnc_canDefib";
-			allowSelfTreatment = 0;
-			requiredMedic = 2;
-			treatmentTime = 10;
-			patientStateCondition = 1;
-			callbackSuccess = "twc_medical_fnc_action_Defib";
-		};
-		
 		class CheckPulse;
 		class LogDebug: CheckPulse {
 			displayName = "Medical to RPT (DEBUG)";
