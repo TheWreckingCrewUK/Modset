@@ -39,7 +39,6 @@ class CfgFunctions {
 			class logToRPT {};
 			class fullyBandageUnit {};
 			class fullHealWithoutLog {};
-			class isInFieldTent {};
 			class removeMedicalItem {};
 
 			// Uncon Loop
@@ -55,20 +54,7 @@ class CfgFunctions {
 			class sutureKitProgress {};
 			class sutureKitFailure {};
 			class selectSutureWound {};
-
-			// Field Surgery
-			class canFieldSurgery {};
-			class fieldSurgery {};
-			class fieldSurgeryLocal {};
-			class fieldSurgeryProgress {};
-			class fieldSurgeryTime {};
-
-			// Surgery
-			class canSurgery {};
-			class surgery {};
-			class surgeryLocal {};
-			class surgeryTime {};
-
+			
 			// Bloodlust Compat & Insta-Kill
 			class bloodlustInit {};
 		};
@@ -77,7 +63,6 @@ class CfgFunctions {
 			file = "twc_medical\modules";
 			
 			class moduleMedical {}; // public CPR chance
-			class moduleAssignFieldTent {}; // makes it so field surgery happens
 		};
 		
 		class curator {
@@ -88,7 +73,6 @@ class CfgFunctions {
 			class killUnit {};
 			class inspectUnit {};
 			class logUnit {}; // adds the above to RPT
-			class setFieldTent {};
 		};
 	};
 };

@@ -1,7 +1,7 @@
 params ["_caller", "_target"];
 
 // first, let's make sure it should be happening.
-_shouldRun = [_caller, _target] call twc_medical_fnc_canFieldSurgery;
+_shouldRun = [_caller, _target] call twc_medical_surgery_fnc_canFieldSurgery;
 if !(_shouldRun) exitWith {};
 
 [_caller, "TWC_Item_Medical_SurgicalMasks_1"] call twc_medical_fnc_removeMedicalItem;
