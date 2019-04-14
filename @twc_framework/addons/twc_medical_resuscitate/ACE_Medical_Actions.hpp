@@ -1,5 +1,6 @@
 class ACE_Medical_Actions {
 	class Advanced {
+		class FieldDressing;
 		class CPR: FieldDressing {
 			callbackSuccess = "twc_medical_resuscitate_fnc_action";
 			callbackProgress = "twc_medical_resuscitate_CPR_onProgress";
