@@ -1097,6 +1097,64 @@ class CfgVehicles {
 		};
 	};
 	
+	class TWC_Module_HideMarkers: Module_F
+	{
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Hide Markers";
+		function = "twc_fnc_moduleHideMarkers";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\hide_marker_ca.paa";
+		functionPriority = 1;
+		class Arguments
+		{
+			class Markers
+			{
+				description = "The variable name of the markers to hide";
+				displayName = "Side";
+				typeName = "STRING";
+				defaultValue = "";
+			};
+			class Side
+			{
+				description = "Hide markers for this side";
+				displayName = "Side";
+				typeName = "STRING";
+				class values
+				{
+					class EAST
+					{
+						name = "OPFOR";
+						value = "EAST";
+					};
+					class WEST
+					{
+						default = 1;
+						name = "BLUFOR";
+						value = "WEST";
+					};
+					class GUER
+					{
+						name = "INDEPENDENT";
+						value = "GUER";
+					};
+					class CIV
+					{
+						name = "CIVILIAN";
+						value = "CIV";
+					};
+				};
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Hide Markers for given side";
+			sync[] = {""};
+		};
+	};
+	
 	class TWC_Module_IntelHint: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";

@@ -17,6 +17,7 @@ class CfgFunctions {
 			class Defend {};
 			class dummyBullets {};
 			class Flagchange {};
+			class HideMarkers {};
 			class intelHint{};
 			class intelHintWithVariable{};
 			class LightsSwitch{};
@@ -76,6 +77,7 @@ class CfgFunctions {
 			class moduleAmbientAA;
 			class moduleCommandMessage{};
 			class moduleLightsSwitch{};
+			class moduleHideMarkers{};
 			class moduleIntelHint{};
 			class moduleIntelHintWithVariable{};
 			class moduleDaisyCutter{};
