@@ -12,7 +12,8 @@ if (!isNil "completedTasks") then {
 _introData = [] call TWC_Incorporeal_fnc_getIntroData;
 
 // Calculate time per section for panning shot. Overall time limit is 40 seconds, divided by element count. Min of 4 seconds per group.
-_totalPlayerCount = count (allPlayers - entities "HeadlessClient_F");
+_allPlayers = call BIS_fnc_listPlayers;
+_totalPlayerCount = count (_allPlayers - entities "HeadlessClient_F");
 _panTimePerUnit = (40 / _totalPlayerCount) max 1.5;
 [true] call ace_common_fnc_disableUserInput;
 //disableUserInput true;
@@ -37,7 +38,7 @@ _titleText = format [
 [parseText _titleText, [0, 0.3, 1, 1], nil, 5, 5, 0] spawn BIS_fnc_textTiles;
 sleep 10;
 
-titleCut ["", "BLACK IN", 15];
+titleCut ["", "BLACK IN", 20];
 sleep 8;
 
 _alternatePan = false;

@@ -3,7 +3,7 @@ class CfgSounds {
 	
 	class TWC_Sound_Medical_Surgery {
 		name = "TWC_Sound_Medical_Surgery";
-		sound[] = {"\TWC_Medical_Surgery\sounds\surgery.ogg", db + 20, 1};
+		sound[] = {"\TWC_Medical_Surgery\sounds\surgery.ogg", db + 25, 1};
 		titles[] = {};
 	};
 };

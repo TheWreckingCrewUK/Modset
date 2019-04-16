@@ -40,8 +40,8 @@ if (_probability < 3) then {
 };
 
 if ( _probability >= _diceRoll ) exitWith {
-	_wakeUp = [_caller, _target] call twc_medical_fnc_getWakeUp;
-	[_target, [30, 35, 40], true, _wakeUp] call twc_medical_fnc_resuscitate;
+	_wakeUp = [_caller, _target] call twc_medical_resuscitate_fnc_getWakeUp;
+	[_target, [30, 35, 40], true, _wakeUp] call twc_medical_resuscitate_fnc_resuscitate;
 
 	_forceSync = (CBA_missionTime - 60);
 	_target setVariable ["ACE_medical_lastMomentValuesSynced", _forceSync, true];

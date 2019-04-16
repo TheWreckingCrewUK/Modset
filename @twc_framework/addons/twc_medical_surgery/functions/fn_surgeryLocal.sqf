@@ -39,7 +39,7 @@ _target setVariable ["ace_medical_reviveStartTime", _timeToAdd, true];
 		deleteVehicle _sound;
 	};
 	
-	if (((position _target) distance _startingLocation) >= 50) exitWith {
+	if (((position _target) distance _startingLocation) >= 10) exitWith {
 		// DEAD. LOL.
 		["TWC_Unit_Perished", [_target, "removed_from_surgery"]] call CBA_fnc_globalEvent;
 		[_unit, true, false] call ace_medical_fnc_setDead;
