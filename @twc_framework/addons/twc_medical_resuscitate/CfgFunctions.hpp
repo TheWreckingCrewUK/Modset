@@ -3,6 +3,7 @@ class CfgFunctions {
 		tag = "twc_medical_resuscitate";
 		
 		class init {
+			file = "twc_medical_resuscitate\functions";
 			// Core
 			class clientInit {};
 			class resuscitate {};

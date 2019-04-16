@@ -8,6 +8,9 @@ class CfgFunctions {
 			class time {};
 			class requiredAmount {};
 			class unflip {};
+			
+			class preInitClient {};
+			class preInitServer {};
 		};
 	};
 };
