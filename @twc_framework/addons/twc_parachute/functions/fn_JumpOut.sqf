@@ -29,6 +29,7 @@ _jumpIncrement = _vehicle getVariable ["TWC_JumpIncrement", 0];
 if ((_jumpIncrement % 2) == 0) then { _isEven = true; } else { _isEven = false; };
 _vehicle setVariable ["TWC_JumpIncrement", (_jumpIncrement + 1), true];
 
+_dir = getDir _vehicle;
 _newDir = _dir -120;
 
 _jumpOutPosition = [
@@ -47,8 +48,8 @@ if (_isEven) then {
 };
 
 // wrapped in a sleep for waits, needed to check for ground collision
-[_caller,_hadBackpack,_class,_magazines,_weapons,_items,_isEven] spawn {
-	params ["_caller", "_hadBackpack", "_class", "_magazines", "_weapons", "_items","_isEven"];
+[_caller,_hadBackpack,_class,_magazines,_weapons,_items,_isEven,_newDir] spawn {
+	params ["_caller", "_hadBackpack", "_class", "_magazines", "_weapons", "_items","_isEven","_pDir"];
 	
 	// actual jump
 	detach _caller;
@@ -75,11 +76,11 @@ if (_isEven) then {
 	_caller setVelocity _vel; */
 	
 	if (_isEven) then {
-		_chute setVelocity [(_vel select 0), (_vel select 1) + (cos _vDir * -2), (_vel select 2)];
-		_caller setVelocity [(_vel select 0), (_vel select 1) + (cos _vDir * -2), (_vel select 2)];
+		_chute setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * -2), (_vel select 2)];
+		_caller setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * -2), (_vel select 2)];
 	} else {
-		_chute setVelocity [(_vel select 0), (_vel select 1) + (cos _vDir * 2), (_vel select 2)];
-		_caller setVelocity [(_vel select 0), (_vel select 1) + (cos _vDir * 2), (_vel select 2)];
+		_chute setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * 2), (_vel select 2)];
+		_caller setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * 2), (_vel select 2)];
 	};
 	
 	// wait until parachute is open, not necessary atm
