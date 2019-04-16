@@ -7,3 +7,5 @@ if (_elapsedTime > 0 && !_hasMoved) then {
 	_caller setPos (_caller modelToWorld [0, 0.17, 0]);
 	_hasMoved = _caller setVariable ["TWC_Medical_Resuscitate_hasMoved", true, true];
 };
+
+true
