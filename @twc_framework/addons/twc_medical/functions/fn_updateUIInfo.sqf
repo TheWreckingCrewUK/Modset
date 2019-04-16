@@ -37,7 +37,6 @@ if (_totalIvVolume >= 1) then {
 };
 
 private _damaged = [false, false, false, false, false, false];
-private _selectionTourniquet = _target getVariable ["ace_medical_tourniquets", [0,0,0,0,0,0]];
 private _selectionBloodLoss = [0, 0, 0, 0, 0, 0];
 
 private _allInjuryTexts = [];
@@ -126,8 +125,9 @@ if ((ace_medical_level >= 2) && {([_target] call ace_medical_fnc_hasMedicalEnabl
 	};
 };
 
-[_selectionBloodLoss, _damaged, _selectionTourniquet, _display] call ace_medical_menu_fnc_updateBodyImage;
+[_selectionBloodLoss, _damaged, _display] call ace_medical_menu_fnc_updateBodyImage;
 [_display, _genericMessages, _allInjuryTexts] call ace_medical_menu_fnc_updateInformationLists;
+[_display, _target getVariable ["ace_medical_tourniquets", [0,0,0,0,0,0]]] call ace_medical_fnc_updateTourniquets;
 
 [_display, _target getVariable ["ace_medical_logFile_activity_view", []]] call ace_medical_menu_fnc_updateActivityLog;
 [_display, _target getVariable ["ace_medical_logFile_quick_view", []]] call ace_medical_menu_fnc_updateQuickViewLog;
