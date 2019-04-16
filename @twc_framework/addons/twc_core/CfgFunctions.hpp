@@ -10,6 +10,8 @@ class CfgFunctions {
 			/** MISC FUNCTIONALITY **/
 			class soundLoop {};
 			class setDirFly {};
+			class canGetOutSide {};
+			class getOutSide {};
 			
 			/** PLAYER RELATED **/
 			class isMember {};
