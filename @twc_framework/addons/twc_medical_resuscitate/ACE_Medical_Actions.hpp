@@ -3,8 +3,8 @@ class ACE_Medical_Actions {
 		class FieldDressing;
 		class CPR: FieldDressing {
 			callbackSuccess = "twc_medical_resuscitate_fnc_action";
-			callbackProgress = "twc_medical_resuscitate_CPR_onProgress";
-			callbackFailure = "twc_medical_resuscitate_CPR_onFailure";
+			callbackProgress = "twc_medical_resuscitate_fnc_CPR_onProgress";
+			callbackFailure = "twc_medical_resuscitate_fnc_CPR_onFailure";
 			animationCaller = "AinvPknlMstpSnonWnonDr_medic0";
 			animationCallerProne = "AinvPknlMstpSnonWnonDr_medic0";
 		};

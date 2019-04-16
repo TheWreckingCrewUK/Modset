@@ -34,8 +34,10 @@ _target setVariable ["ace_medical_reviveStartTime", _timeToAdd, true];
 	params ["_caller", "_target", "_startingLocation"];
 	
 	// stop the sound, regardless of circumstance
-	_sound = ASLToAGL [0,0,0] nearestObject "#soundonvehicle";
-	deleteVehicle _sound;
+	[] spawn {
+		_sound = ASLToAGL [0,0,0] nearestObject "#soundonvehicle";
+		deleteVehicle _sound;
+	};
 	
 	if (((position _target) distance _startingLocation) >= 50) exitWith {
 		// DEAD. LOL.
