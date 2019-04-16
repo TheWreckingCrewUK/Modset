@@ -26,7 +26,7 @@ _cam cameraEffect ["internal", "back"];
 
 titleText ["<t color='#ffffff' size='3'>The Wrecking Crew</t><br/><t color='#FFFFFF' size='1'>Presents</t>", "PLAIN", -1, true, true];
 titleFadeOut 4;
-sleep 2;
+sleep 5;
 
 _titleText = format [
 	"<t color='#ff6633' size='4' align='center'>%1</t><br/><t color='#FFFFFF' size='1' align='center'>by %2</t>",
@@ -38,7 +38,7 @@ _titleText = format [
 sleep 10;
 
 titleCut ["", "BLACK IN", 15];
-sleep 2;
+sleep 8;
 
 _alternatePan = false;
 
@@ -56,6 +56,7 @@ _alternatePan = false;
 	
 	_alternatePan = !_alternatePan;
 	_panTime = (count _groupUnits) * _panTimePerUnit;
+	systemChat format ["panTime: %1 - _groupUnit count: %2 - panTimePerUnit: %3", _panTime, (count _groupUnits), _panTimePerUnit];
 	
 	// prevent bad pans
 	if (!alive _firstUnit && alive _lastUnit) then { _firstUnit = _lastUnit; };
@@ -87,7 +88,6 @@ _alternatePan = false;
 		_cam camCommit _panTime;
 	};
 	
-	//_waitFor = (_forEachIndex + 1) * _panTimePerAsset;
 	sleep (_panTime + 2);
 } forEach _introData;
 
