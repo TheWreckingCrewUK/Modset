@@ -21,13 +21,13 @@ class CfgVehicles {
 			class TWC_GetOut_Left {
 				displayName = "Get Out Left";
 				condition = "_this call TWC_Core_fnc_canGetOutSide";
-				condition = "[_this] call TWC_Core_fnc_getOutSide";
+				statement = "[_this] call TWC_Core_fnc_getOutSide";
 			};
 			
 			class TWC_GetOut_Right {
 				displayName = "Get Out Right";
 				condition = "_this call TWC_Core_fnc_canGetOutSide";
-				condition = "[_this, 'right'] call TWC_Core_fnc_getOutSide";
+				statement = "[_this, 'right'] call TWC_Core_fnc_getOutSide";
 			};
 		};
 	};

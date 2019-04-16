@@ -187,7 +187,7 @@ class CfgGroups {
 			name = "TWC Operations - Cold War";
 			
 			/* COLDWAR COMPOSITIONS - GROUP DEFINES */
-			#include "compositions\1980_USA.hpp"
+			#include "compositions\1980_usa.hpp"
 		};
 	};
 
