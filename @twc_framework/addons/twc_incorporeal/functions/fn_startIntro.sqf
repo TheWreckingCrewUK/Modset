@@ -26,7 +26,7 @@ _cam cameraEffect ["internal", "back"];
 
 titleText ["<t color='#ffffff' size='3'>The Wrecking Crew</t><br/><t color='#FFFFFF' size='1'>Presents</t>", "PLAIN", -1, true, true];
 titleFadeOut 4;
-sleep 5;
+sleep 2;
 
 _titleText = format [
 	"<t color='#ff6633' size='4' align='center'>%1</t><br/><t color='#FFFFFF' size='1' align='center'>by %2</t>",
@@ -38,7 +38,7 @@ _titleText = format [
 sleep 10;
 
 titleCut ["", "BLACK IN", 15];
-sleep 5;
+sleep 2;
 
 _alternatePan = false;
 
