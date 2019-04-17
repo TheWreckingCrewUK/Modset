@@ -5,7 +5,58 @@ class TWC_Vehicle_WW2_Willys_Woodland: TWC_Vehicle_WW2_Willys_F {
 	scopeCurator = 2;
 	ADD_FACTION;
 
-	displayname = "Willys (Woodland)";
+	displayname = "Willys";
+	editorSubcategory = "TWC_ForceType_Motorised";
+
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
+		ADD_ITEM(ACE_elasticBandage, ADD_QNTY(SECTION_ELASTICBANDAGE));
+		ADD_ITEM(ACE_quikclot, ADD_QNTY(SECTION_QUIKCLOT));
+		ADD_ITEM(ACE_packingBandage, ADD_QNTY(SECTION_PACKINGBANDAGE));
+		ADD_ITEM(ACE_tourniquet, ADD_QNTY(SECTION_TOURNIQUET));
+		ADD_ITEM(ACE_morphine, ADD_QNTY(SECTION_MORPHINE));
+		ADD_ITEM(ACE_epinephrine, ADD_QNTY(SECTION_EPINEPHRINE));
+	};
+	
+	class TransportMagazines {};
+	class TransportWeapons {};
+	class TransportBackpacks {};
+};
+
+#undef CURRENT_VEHICLE
+#define CURRENT_VEHICLE WW2_AUSTINK5
+class TWC_Vehicle_WW2_AustinK5: TWC_Vehicle_WW2_AustinK5_F {
+	scope = 2;
+	scopeCurator = 2;
+	ADD_FACTION;
+
+	displayname = "Austin K5";
+	editorSubcategory = "TWC_ForceType_Motorised";
+
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
+		ADD_ITEM(ACE_elasticBandage, ADD_QNTY(SECTION_ELASTICBANDAGE));
+		ADD_ITEM(ACE_quikclot, ADD_QNTY(SECTION_QUIKCLOT));
+		ADD_ITEM(ACE_packingBandage, ADD_QNTY(SECTION_PACKINGBANDAGE));
+		ADD_ITEM(ACE_tourniquet, ADD_QNTY(SECTION_TOURNIQUET));
+		ADD_ITEM(ACE_morphine, ADD_QNTY(SECTION_MORPHINE));
+		ADD_ITEM(ACE_epinephrine, ADD_QNTY(SECTION_EPINEPHRINE));
+	};
+	
+	class TransportMagazines {};
+	class TransportWeapons {};
+	class TransportBackpacks {};
+};
+
+#undef CURRENT_VEHICLE
+#define CURRENT_VEHICLE WW2_M5A1
+class LIB_UK_M3_Halftrack;
+class TWC_Vehicle_WW2_M5A1: LIB_UK_M3_Halftrack {
+	scope = 2;
+	scopeCurator = 2;
+	ADD_FACTION;
+
+	displayname = "M5A1";
 	editorSubcategory = "TWC_ForceType_Motorised";
 
 	class TransportItems {
