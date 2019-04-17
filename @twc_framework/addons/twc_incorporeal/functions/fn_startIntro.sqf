@@ -35,11 +35,10 @@ _titleText = format [
 	_author
 ];
 
-[parseText _titleText, [0, 0.3, 1, 1], nil, 5, 5, 0] spawn BIS_fnc_textTiles;
-sleep 10;
+[parseText _titleText, [0, 0.3, 1, 1], nil, 4, 4, 0] spawn BIS_fnc_textTiles;
+sleep 11;
 
 titleCut ["", "BLACK IN", 20];
-sleep 8;
 
 _alternatePan = false;
 
@@ -75,7 +74,7 @@ _alternatePan = false;
 	_groupText = format ["<t color='#ff6633' size='2' align='left'>%1</t><br/>%2", _groupName, _displayString];
 	
 	titleText [_groupText, "PLAIN", -1, false, true];
-	titleFadeOut _panTime;
+	titleFadeOut (_panTime + 2);
 	
 	if (alive _firstUnit && alive _lastUnit) then {
 		_cam camSetTarget (_firstUnit modelToWorld [0, 0, 1.5]);

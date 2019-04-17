@@ -19,7 +19,9 @@ _target setVariable ["ACE_isUnconscious", true, true];
 _target setUnconscious true;
 
 // play the audio locally, for the patient
-playSound "TWC_Sound_Medical_Surgery";
+missionNameSpace setVariable ["ace_hearing_disableVolumeUpdate", true];
+// execute next frame, so the volumeUpdate can take effect
+[{ playSound "TWC_Sound_Medical_Surgery"; }] call CBA_fnc_execNextFrame;
 
 // add time to their revive counter, to prevent them from dying during the surgery
 _reviveStartTime = _target getVariable ["ace_medical_reviveStartTime", 0];
@@ -34,6 +36,7 @@ _target setVariable ["ace_medical_reviveStartTime", _timeToAdd, true];
 	params ["_caller", "_target", "_startingLocation"];
 	
 	// stop the sound, regardless of circumstance
+	missionNameSpace setVariable ["ace_hearing_disableVolumeUpdate", false];
 	[] spawn {
 		_sound = ASLToAGL [0,0,0] nearestObject "#soundonvehicle";
 		deleteVehicle _sound;
