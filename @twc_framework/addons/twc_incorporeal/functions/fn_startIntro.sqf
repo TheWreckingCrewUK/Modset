@@ -56,7 +56,7 @@ _alternatePan = false;
 	
 	_alternatePan = !_alternatePan;
 	_panTime = (count _groupUnits) * _panTimePerUnit;
-	systemChat format ["panTime: %1 - _groupUnit count: %2 - panTimePerUnit: %3", _panTime, (count _groupUnits), _panTimePerUnit];
+	//systemChat format ["panTime: %1 - _groupUnit count: %2 - panTimePerUnit: %3", _panTime, (count _groupUnits), _panTimePerUnit];
 	
 	// prevent bad pans
 	if (!alive _firstUnit && alive _lastUnit) then { _firstUnit = _lastUnit; };
