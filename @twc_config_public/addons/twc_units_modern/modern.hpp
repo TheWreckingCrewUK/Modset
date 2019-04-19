@@ -2315,7 +2315,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		linkedItems[]=
 		{
 			"rhsusf_spcs_ocp_rifleman",
-			"rhsusf_opscore_ut",
+			"rhsusf_opscore_mc_cover",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2323,7 +2323,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		respawnLinkedItems[]=
 		{
 			"rhsusf_spcs_ocp_rifleman",
-			"rhsusf_opscore_ut",
+			"rhsusf_opscore_mc_cover",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"

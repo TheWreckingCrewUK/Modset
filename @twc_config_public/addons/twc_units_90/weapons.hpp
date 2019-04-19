@@ -21,7 +21,9 @@ class cfgWeapons
 		
 	class uk3cb_baf_silencer_l85;
 	class twc_L85_suppressor: uk3cb_baf_silencer_l85
-	{};
+	{
+		displayName = "T8 Suppressor";
+	};
 	
 	class UK3CB_BAF_L119A1_CQB;
 	class TWC_UK3CB_BAF_L119A1_CQB_ACOG: UK3CB_BAF_L119A1_CQB

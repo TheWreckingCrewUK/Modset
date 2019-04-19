@@ -94,6 +94,7 @@ class cfgWeapons
 	class CUP_arifle_mk18_black;
 	class twc_L119A2_base: CUP_arifle_mk18_black
 	{
+		picture = "\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_mk18_d_ca.paa";
 		hiddenSelectionsTextures[] = {"twc_units_modern\textures\mk18_black_co.jpg"};
 		displayName = "L119A2 CQB";
 		descriptionShort = "CQB Variant<br/>Short Barrel<br/>Increased Rate of Fire";
@@ -158,6 +159,7 @@ class cfgWeapons
 	//double base to stop the jsrs compat messing with the firemodes. Could have taken the long road and done it in a more annoying way through the jsrs file to clean it up here, will do that in time perhaps
 	class TWC_UK3CB_BAF_L119A2_14_Base: twc_L119A2_10_Base
 	{
+		picture = "\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_m4a1_blockII_d_ca.paa";
 		displayName = "L119A2";
 		descriptionShort = "Full Length Variant<br/>15.7 Inch Barrel<br/>5.56";
 		
@@ -658,11 +660,20 @@ class cfgWeapons
 		};
 	};
 	
+	class rhsusf_opscore_cover;
+	class rhsusf_opscore_mc_cover_pelt_cam: rhsusf_opscore_cover
+	{
+		hiddenSelectionsTextures[] = {"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\nsw_co.paa","\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa","twc_units_modern\textures\fs_cover_co.paa","\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"};
+	};
+	class rhsusf_opscore_mc_cover: rhsusf_opscore_cover
+	{
+		hiddenSelectionsTextures[] = {"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa","","","","twc_units_modern\textures\fs_cover_co.paa",""};
+	};
+	
 	//duplicated suppressor classes, to enable whitelisting of certain guns versus blacklisting all of them
 	class rhsusf_acc_rotex5_grey;
 	class twc_acc_rotex5_grey: rhsusf_acc_rotex5_grey
 	{
-		displayName = "T8 Suppressor";
 	};
 	class rhsusf_acc_nt4_tan;
 	class twc_acc_nt4_tan: rhsusf_acc_nt4_tan
