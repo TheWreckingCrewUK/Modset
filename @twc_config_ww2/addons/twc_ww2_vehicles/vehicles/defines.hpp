@@ -1,3 +1,18 @@
+#define REGULAR_77(POSITIONS, INTERCOM) \
+class AcreRacks { \
+	class Rack_1 { \
+		displayName = "Vehicle Radio"; \
+		shortName = "Vehicle Radio"; \
+		componentName = "ACRE_VRC64"; \
+		allowedPositions[] = POSITIONS; \
+		disabledPositions[] = {}; \
+		defaultComponents[] = {}; \
+		mountedRadio = "ACRE_PRC77"; \
+		isRadioRemovable = 0; \
+		intercom[] = INTERCOM; \
+	}; \
+};
+
 #define SECTION_FIELDDRESSING 20
 #define SECTION_QUIKCLOT 20
 #define SECTION_ELASTICBANDAGE 20

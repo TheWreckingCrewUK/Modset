@@ -166,12 +166,14 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_SectionCommander: TWC_Infantry_WW2_U
 	weapons[] =
 	{
 		"LIB_Sten_Mk5",
+		"TWC_No1Mk3SignalGun",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"LIB_Sten_Mk5",
+		"TWC_No1Mk3SignalGun",
 		"Throw",
 		"Put"
 	};
@@ -234,6 +236,7 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Commander: TWC_Infantry_WW2_
 	weapons[] =
 	{
 		"LIB_Sten_Mk5",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -241,6 +244,7 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Commander: TWC_Infantry_WW2_
 	respawnweapons[] =
 	{
 		"LIB_Sten_Mk5",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -603,6 +607,7 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_FAC: TWC_Infantry_WW2_UK_Late_Woodla
 	weapons[] =
 	{
 		"LIB_Sten_Mk5",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
@@ -610,6 +615,7 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_FAC: TWC_Infantry_WW2_UK_Late_Woodla
 	respawnweapons[] =
 	{
 		"LIB_Sten_Mk5",
+		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"

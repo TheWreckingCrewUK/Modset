@@ -226,6 +226,17 @@ class TWC_Vehicle_WW2_UniversalCarrier_F: LIB_UniversalCarrier {
 			factions[] = {};
 		};
 	};
+
+	class AcreIntercoms {
+		class Intercom_1 {};
+		class Intercom_2 {};
+	};
+	acre_hasInfantryPhone = 0;
+
+	class AcreRacks {
+		class Rack_1 {};
+		class Rack_2 {};
+	};
 };
 
 class TWC_Vehicle_WW2_Willys_F: LIB_US_Willys_MB {
@@ -259,7 +270,21 @@ class TWC_Vehicle_WW2_Willys_F: LIB_US_Willys_MB {
 	};
 };
 
-class TWC_Vehicle_WW2_Hadrian_F: LIB_MKI_HADRIAN { scope = 1; ADD_FACTION; };
+class TWC_Vehicle_WW2_Hadrian_F: LIB_MKI_HADRIAN {
+	scope = 1;
+	ADD_FACTION;
+
+	class AcreIntercoms {
+		class Intercom_1 {};
+		class Intercom_2 {};
+	};
+	acre_hasInfantryPhone = 0;
+
+	class AcreRacks {
+		class Rack_1 {};
+		class Rack_2 {};
+	};
+};
 
 class TWC_Vehicle_WW2_Hadrian_VIV_F: LIB_MKI_HADRIAN {
 	scope = 1;
@@ -274,9 +299,44 @@ class TWC_Vehicle_WW2_Hadrian_VIV_F: LIB_MKI_HADRIAN {
 		"passenger_generic01_leanright",
 		"passenger_generic01_foldhands"
 	};
-	
+
+	class AcreIntercoms {
+		class Intercom_1 {};
+		class Intercom_2 {};
+	};
+	acre_hasInfantryPhone = 0;
+
+	class AcreRacks {
+		class Rack_1 {};
+		class Rack_2 {};
+	};
+
 	ace_cargo_hasCargo = 1;
 	ace_cargo_space = 16;
 };
 
-class TWC_Vehicle_WW2_Horsa_F: LIB_HORSA_RAF { scope = 1; ADD_FACTION; };
+class TWC_Vehicle_WW2_Horsa_F: LIB_HORSA_RAF {
+	scope = 1;
+	ADD_FACTION;
+
+	class AcreIntercoms {
+		class Intercom_1 {};
+		class Intercom_2 {};
+	};
+	acre_hasInfantryPhone = 0;
+
+	class AcreRacks {
+		class Rack_1 {
+			displayName = "Vehicle Radio";
+			shortName = "Vehicle Radio";
+			componentName = "ACRE_VRC64";
+			allowedPositions[] = {"driver", "copilot"};
+			disabledPositions[] = {};
+			defaultComponents[] = {};
+			mountedRadio = "ACRE_PRC77";
+			isRadioRemovable = 0;
+			intercom[] = {};
+		};
+	};
+	//REGULAR_77({"driver", "copilot"}, {})
+};

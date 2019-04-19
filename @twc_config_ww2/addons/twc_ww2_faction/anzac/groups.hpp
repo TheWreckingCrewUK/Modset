@@ -181,26 +181,6 @@ class TWC_Groups_##ERA##_##CAMO \
 			position[] = {8,0,0}; \
 		}; \
 	}; \
-	class Sniper_Team \
-	{ \
-		name = "Sniper Team"; \
-		faction = "TWC_WW2"; \
-		side = 2; \
-		class Unit0 \
-		{ \
-			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Spotter; \
-			rank = "SERGEANT"; \
-			position[] = {0,0,0}; \
-		}; \
-		class Unit1 \
-		{ \
-			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Sniper; \
-			rank = "CORPORAL"; \
-			position[] = {2,0,0}; \
-		}; \
-	}; \
 	class Artillery_Crew \
 	{ \
 		name = "Artillery Crew"; \
