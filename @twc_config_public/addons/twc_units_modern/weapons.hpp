@@ -15,6 +15,7 @@ class rhs_western_rifle_muzzle_slot;
 class asdg_MuzzleSlot_556_3CB;
 class asdg_MuzzleSlot_762;
 class rhs_western_rifle_underbarrel_slot;
+class asdg_MuzzleSlot_9MM_SMG;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
@@ -31,6 +32,64 @@ class cfgWeapons
 	class arifle_Mk20_F;
 	class Rifle_Base_F;
 	
+	
+	class rhsusf_weap_MP7A2;
+	class rhsusf_weap_MP7A2_desert: rhsusf_weap_MP7A2
+	{
+		hiddenSelectionsTextures[] = {"twc_units_modern\textures\digicamo_co.jpg","rhsusf\addons\rhsusf_weapons2\mp7\mp7a2\data\mp7_buis_co.paa","twc_units_modern\textures\digicamo_co.jpg"};
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_t1_high";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_t1_high = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+				};
+			};
+			allowedslots[] = {701,901};
+			mass = 35;
+		};
+	
+	};
+	class CUP_smg_MP5A5_flashlight;
+	class TWC_CUP_smg_MP5A5_flashlight_clean:CUP_smg_MP5A5_flashlight
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="MuzzleSlot";
+				item="twc_acc_rotex5_grey";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_t1_high = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+				};
+			};
+			allowedslots[] = {701,901};
+			mass = 35;
+		};
+	};
 
 	class CUP_arifle_mk18_black;
 	class twc_L119A2_base: CUP_arifle_mk18_black

@@ -15,7 +15,7 @@ class cfgWeapons
 		class WeaponSlotsInfo
 		{
 			allowedslots[] = {701,901};
-			mass = 65;
+			mass = 45;
 		};
 	};
 		

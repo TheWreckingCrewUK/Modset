@@ -121,7 +121,7 @@
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"UK3CB_BAF_L85A2_RIS_ELCAN_desert",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN",
 			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
@@ -129,7 +129,7 @@
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"UK3CB_BAF_L85A2_RIS_ELCAN_desert",
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN",
 			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
@@ -477,14 +477,14 @@
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"UK3CB_BAF_L85A2_RIS_ELCAN_desert"
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"UK3CB_BAF_L85A2_RIS_ELCAN_desert"
+			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN"
 		};
 		magazines[]=
 		{
