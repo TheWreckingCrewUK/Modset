@@ -2315,7 +2315,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		linkedItems[]=
 		{
 			"rhsusf_spcs_ocp_rifleman",
-			"rhsusf_opscore_mc_cover",
+			"rhsusf_opscore_mc_cover_pelt",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2323,7 +2323,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		respawnLinkedItems[]=
 		{
 			"rhsusf_spcs_ocp_rifleman",
-			"rhsusf_opscore_mc_cover",
+			"rhsusf_opscore_mc_cover_pelt",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2510,7 +2510,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_teamleader",
+			"rhsusf_spcs_ocp_teamleader_alt",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",
@@ -2519,7 +2519,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_teamleader",
+			"rhsusf_spcs_ocp_teamleader_alt",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",
@@ -2611,6 +2611,22 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"1Rnd_SmokeRed_Grenade_shell",
 			"B_IR_Grenade"
 		};
+		linkedItems[]=
+		{
+			"rhsusf_spcs_ocp_grenadier",
+			"rhsusf_opscore_mc_cover_pelt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsusf_spcs_ocp_grenadier",
+			"rhsusf_opscore_mc_cover_pelt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 	};
 
 	class Modern_UKSF_Marksman: Modern_UKSF_Base
@@ -2660,6 +2676,22 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"UK3CB_BAF_9_15Rnd",
 			"B_IR_Grenade"
 		};
+		linkedItems[]=
+		{
+			"rhsusf_spcs_ocp_machinegunner",
+			"rhsusf_opscore_mc_cover_pelt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsusf_spcs_ocp_machinegunner",
+			"rhsusf_opscore_mc_cover_pelt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 	};
 
 	class Modern_UKSF_Medic: Modern_UKSF_Base
@@ -2688,5 +2720,21 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_MX2A",
 			"TWC_UK3CB_BAF_L119A2_10_LDS",
 			"rhsusf_weap_glock17g4"
+		};
+		linkedItems[]=
+		{
+			"rhsusf_spcs_ocp_medic",
+			"rhsusf_opscore_mc_cover_pelt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"rhsusf_spcs_ocp_medic",
+			"rhsusf_opscore_mc_cover_pelt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 	};

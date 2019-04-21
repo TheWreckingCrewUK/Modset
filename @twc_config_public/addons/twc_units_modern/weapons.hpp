@@ -669,6 +669,10 @@ class cfgWeapons
 	{
 		hiddenSelectionsTextures[] = {"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa","","","","twc_units_modern\textures\fs_cover_co.paa",""};
 	};
+	class rhsusf_opscore_mc_cover_pelt: rhsusf_opscore_cover
+	{
+		hiddenSelectionsTextures[] = {"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_co.paa","","","twc_units_modern\textures\fs_cover_co.paa",""};
+	};
 	
 	//duplicated suppressor classes, to enable whitelisting of certain guns versus blacklisting all of them
 	class rhsusf_acc_rotex5_grey;
