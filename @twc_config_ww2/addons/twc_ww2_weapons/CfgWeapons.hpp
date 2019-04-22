@@ -125,4 +125,13 @@ class CfgWeapons {
 	class twc_dummyweapon_csa38_ZB26mg: csa38_ZB26mg {
 		magazines[] = {"twc_dummymag_machinegun"};
 	};
+	
+	class CSA38_Cannon;
+	class CSA38_KWKL45: CSA38_Cannon
+	{
+		class Player: CSA38_Cannon
+		{
+			reloadTime = 5.1;
+		};
+	};
 };

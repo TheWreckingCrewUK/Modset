@@ -72,6 +72,34 @@ class CfgAmmo {
 		airFriction = 0;
 	};
 	
+	class csa38_Bullet;
+	class CSA38_7_92Mauser: csa38_Bullet
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	class CSA38_7_92MauserR: CSA38_7_92Mauser
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	class CSA38_7_92Mauser2: csa38_Bullet
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	class CSA38_7_92Mauser2R: CSA38_7_92Mauser2
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	class CSA38_7_92Mauser3: csa38_Bullet
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	
+	class LIB_Bullet_base;
+	class LIB_B_792x57_Ball: LIB_Bullet_base
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	
 	class LIB_ShellAPCR_base;
 	class LIB_S_76L55_M93: LIB_ShellAPCR_base
 	{
