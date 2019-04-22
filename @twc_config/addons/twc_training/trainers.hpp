@@ -57,14 +57,14 @@ class TWC_Units_Training_Trainer: TWC_Units_Training_Trainer_Base {
 	weapons[] = {
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L85A2_RIS_ELCAN3D",
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
 		"UK3CB_BAF_L131A1"
 	};
 	
 	respawnWeapons[] = {
 		"Throw",
 		"Put",
-		"UK3CB_BAF_L85A2_RIS_ELCAN3D",
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
 		"UK3CB_BAF_L131A1"
 	};
 	
