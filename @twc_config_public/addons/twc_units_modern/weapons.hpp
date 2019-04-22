@@ -66,14 +66,6 @@ class cfgWeapons
 	class CUP_smg_MP5A5_flashlight;
 	class TWC_CUP_smg_MP5A5_flashlight_clean:CUP_smg_MP5A5_flashlight
 	{
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot="MuzzleSlot";
-				item="twc_acc_rotex5_grey";
-			};
-		};
 		class WeaponSlotsInfo
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {

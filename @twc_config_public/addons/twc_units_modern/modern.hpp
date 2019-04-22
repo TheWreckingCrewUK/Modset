@@ -2404,8 +2404,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		magazines[]=
 		{
-			"rhsusf_mag_17Rnd_9x19_FMJ",
-			"rhsusf_mag_17Rnd_9x19_FMJ",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"CUP_30Rnd_556x45_EMAG_Tan",
 			"CUP_30Rnd_556x45_EMAG_Tan",
 			"CUP_30Rnd_556x45_EMAG_Tan",
@@ -2421,8 +2421,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		Respawnmagazines[]=
 		{
-			"rhsusf_mag_17Rnd_9x19_FMJ",
-			"rhsusf_mag_17Rnd_9x19_FMJ",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"CUP_30Rnd_556x45_EMAG_Tan",
 			"CUP_30Rnd_556x45_EMAG_Tan",
 			"CUP_30Rnd_556x45_EMAG_Tan",
@@ -2669,8 +2669,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
-			"UK3CB_BAF_9_15Rnd",
-			"UK3CB_BAF_9_15Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"B_IR_Grenade"
 		};
 		Respawnmagazines[]=
@@ -2684,8 +2684,8 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
-			"UK3CB_BAF_9_15Rnd",
-			"UK3CB_BAF_9_15Rnd",
+			"rhsusf_mag_17Rnd_9x19_JHP",
+			"rhsusf_mag_17Rnd_9x19_JHP",
 			"B_IR_Grenade"
 		};
 		linkedItems[]=
