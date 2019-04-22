@@ -9,6 +9,14 @@ class CfgPatches {
 	};
 };
 
+class Extended_Init_EventHandlers
+{
+	class TWC_B_Ju87_SingleSeat
+	{
+		TWC_Stuka_init = "(_this select 0) setVariable ['IFA3_sirenEnabled', 1]; (_this select 0) setVariable ['IFA3_sirenOn', true]";
+	};
+};
+
 class CfgVehicles {
 	class B_Soldier_base_F;
 
@@ -42,5 +50,45 @@ class CfgVehicles {
 	class CSA38_WH22: CSA38_WH1 {
 		linkedItems[] = {"Headgear_csa38_M18WH", "V_csa38_equip_GE01"};
 		respawnLinkedItems[] = {"Headgear_csa38_M18WH", "V_csa38_equip_GE01"};
+	};
+	
+	class LIB_Ju87;
+	class LIB_Ju87_Italy;
+	class LIB_Ju87_Italy2;
+	class TWC_B_Ju87_SingleSeat: LIB_Ju87
+	{
+		scope = 1;
+		class Turrets
+		{
+			delete MainTurret;
+		};
+	};
+	class TWC_B_Ju87_SingleSeat_Italy: LIB_Ju87_Italy
+	{
+		scope = 1;
+		class Turrets
+		{
+			delete MainTurret;
+		};
+	};
+	class TWC_B_Ju87_SingleSeat_Desert: LIB_Ju87_Italy2
+	{
+		scope = 1;
+		class Turrets
+		{
+			delete MainTurret;
+		};
+	};
+	class sab_he111;
+	class TWC_B_He111_SingleSeat: sab_he111
+	{
+		scope = 1;
+		class Turrets
+		{
+			delete MainTurret;
+			delete GunnerTurret;
+			delete GunnerTurret2;
+			delete GunnerTurret3;
+		};
 	};
 };

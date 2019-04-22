@@ -130,6 +130,7 @@ class TWC_Backpack_WW2_UK_Airborne_Dismounted_Platoon_Mortar: fow_b_uk_bergenpac
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 500;
 	class TransportMagazines {
 		ADD_MAGA(twc_2inch_he_1rnd,12);
 		ADD_MAGA(twc_2inch_smoke_1rnd,8);

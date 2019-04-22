@@ -902,7 +902,7 @@ class CfgVehicles {
 		};
 	};
 	
-	class TWC_Module_Amient_AttackPlane: ModuleCAS_F {
+	class TWC_Module_Ambient_AttackPlane: ModuleCAS_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
 		displayName = "Ambient Attack Plane";
@@ -950,7 +950,42 @@ class CfgVehicles {
 				displayName = "Plane";
 				class values
 				{
-					class Spitfire
+					class Bf110_DE
+					{
+						name = "Bf-110 (DE)";
+						value = "sab_bf110";
+					};
+					class Fw190_DE
+					{
+						name = "Fw-190 (DE)";
+						value = "LIB_FW190F8_2";
+					};
+					class Fw190_DE_Desert
+					{
+						name = "Fw-190 (DE, Desert)";
+						value = "LIB_FW190F8_Italy";
+					};
+					class Ju87_DE
+					{
+						name = "Ju-87 (DE)";
+						value = "TWC_B_Ju87_SingleSeat";
+					};
+					class Ju87_DE_Italy
+					{
+						name = "Ju-87 (DE, Italy)";
+						value = "TWC_B_Ju87_SingleSeat_Italy";
+					};
+					class Ju87_DE_Desert
+					{
+						name = "Ju-87 (DE, Desert)";
+						value = "TWC_B_Ju87_SingleSeat_Desert";
+					};
+					class He111_DE
+					{
+						name = "He-111 (DE)";
+						value = "TWC_B_He111_SingleSeat";
+					};
+					class Spitfire_UK
 					{
 						name = "Spitfire (UK)";
 						value = "spitfire_v_G";
@@ -965,7 +1000,7 @@ class CfgVehicles {
 						name = "Hellcat (UK)";
 						value = "fow_va_f6f_c_faa";
 					};
-					class P47
+					class P47_US
 					{
 						name = "P-47 (US)";
 						value = "LIB_P47";
@@ -1058,16 +1093,32 @@ class CfgVehicles {
 				};
 			};
 		};
-		class ModuleDescription  {
+		class ModuleDescription {
 			description = "Call in Ambient Attack Plane, automatically despawned";
 			sync[] = {""};
 		};
 	};
-	class TWC_Module_Amient_AttackPlane_Zeus: TWC_Module_Amient_AttackPlane {
-		scope=1;
+	class TWC_Module_Ambient_AttackPlane_Gun: TWC_Module_Ambient_AttackPlane {
+		displayName = "Ambient Attack Plane (Gun)";
+		category = "twc_zeus";
+		scope = 1;
 		scopeCurator = 2;
-		isTriggerActivated=0;
+		isTriggerActivated = 0;
 		curatorCanAttach = 1;
+		curatorInfoType = "RscDisplayAttributesModuleCAS";
+		moduleCAStype = 0;
+	};
+	class TWC_Module_Ambient_AttackPlane_Missile: TWC_Module_Ambient_AttackPlane_Gun {
+		displayName = "Ambient Attack Plane (Missile)";
+		moduleCAStype = 1;
+	};
+	class TWC_Module_Ambient_AttackPlane_GunMissile: TWC_Module_Ambient_AttackPlane_Gun {
+		displayName = "Ambient Attack Plane (Gun/Missile)";
+		moduleCAStype = 2;
+	};
+	class TWC_Module_Ambient_AttackPlane_Bomb: TWC_Module_Ambient_AttackPlane_Gun {
+		displayName = "Ambient Attack Plane (Bomb)";
+		moduleCAStype = 3;
 	};
 	
 	class TWC_Module_CommandMessage: Module_F {
@@ -1293,7 +1344,7 @@ class CfgVehicles {
 			sync[] = {""};
 		};
 	};
-		
+	
 	class TWC_Module_StationaryUnits: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";
