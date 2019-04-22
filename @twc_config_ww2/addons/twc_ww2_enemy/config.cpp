@@ -15,6 +15,14 @@ class Extended_Init_EventHandlers
 	{
 		TWC_Stuka_init = "(_this select 0) setVariable ['IFA3_sirenEnabled', 1]; (_this select 0) setVariable ['IFA3_sirenOn', true]";
 	};
+	class TWC_B_Ju87_SingleSeat_Italy
+	{
+		TWC_Stuka_init = "(_this select 0) setVariable ['IFA3_sirenEnabled', 1]; (_this select 0) setVariable ['IFA3_sirenOn', true]";
+	};
+	class TWC_B_Ju87_SingleSeat_Desert
+	{
+		TWC_Stuka_init = "(_this select 0) setVariable ['IFA3_sirenEnabled', 1]; (_this select 0) setVariable ['IFA3_sirenOn', true]";
+	};
 };
 
 class CfgVehicles {
