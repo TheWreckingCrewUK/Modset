@@ -134,6 +134,8 @@ class cfgWeapons
 	//tiered approach for jsrs and non-jsrs compat. the adjoining tier twc_L119A2_CQB is modified in the jsrs file
 	class twc_L119A2_10_Base: twc_L119A2_10
 	{
+		recoil = "twc_rifle_556_short";
+		recoilProne = "twc_rifle_556_short_prone";
 		displayName = "L119A2";
 		descriptionShort = "Full Length Variant<br/>15.7 Inch Barrel<br/>5.56";
 		
@@ -153,6 +155,8 @@ class cfgWeapons
 	{
 		picture = "\rhsusf\addons\rhsusf_inventoryicons\data\weapons\rhs_weap_m4a1_blockII_d_ca.paa";
 		displayName = "L119A2";
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
 		descriptionShort = "Full Length Variant<br/>15.7 Inch Barrel<br/>5.56";
 		
 		class Single:Single {
@@ -1457,8 +1461,8 @@ class cfgWeapons
 		class Single;
 		class Burst;
 		class FullAuto;
-		recoil = "twc_rifle_556";
-		recoilProne = "twc_rifle_556_prone";
+		recoil = "twc_rifle_556_short";
+		recoilProne = "twc_rifle_556_short_prone";
 	};
 	
 	class CUP_arifle_AK102: CUP_arifle_AK_Base
