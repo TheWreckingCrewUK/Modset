@@ -31,7 +31,8 @@ class CfgWeapons {
 	};
 	
 	//Ju-87 CAS Module Compatibility
-	class LIB_MG81_Ju87: LIB_PlaneMGun_base {
+	class LIB_PlaneCannon_base;
+	class LIB_2xMG151_JU87: LIB_PlaneCannon_base {
 		cursorAim = "mg";
 	};
 };
