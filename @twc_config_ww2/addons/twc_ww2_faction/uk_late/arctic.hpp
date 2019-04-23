@@ -7,7 +7,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Rifleman: TWC_Infantry_WW2_UK_Late_Woodlan
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Rifleman",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -15,7 +15,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Rifleman: TWC_Infantry_WW2_UK_Late_Woodlan
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Rifleman",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -28,7 +28,6 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Grenadier: TWC_Infantry_WW2_UK_Late_Woodla
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -36,7 +35,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Grenadier: TWC_Infantry_WW2_UK_Late_Woodla
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -49,7 +48,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_SMG: TWC_Infantry_WW2_UK_Late_Woodland_SMG
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -57,7 +56,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_SMG: TWC_Infantry_WW2_UK_Late_Woodland_SMG
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -70,7 +69,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_MG: TWC_Infantry_WW2_UK_Late_Woodland_MG
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -78,7 +77,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_MG: TWC_Infantry_WW2_UK_Late_Woodland_MG
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -91,7 +90,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_MGASS: TWC_Infantry_WW2_UK_Late_Woodland_M
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Rifleman",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -99,7 +98,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_MGASS: TWC_Infantry_WW2_UK_Late_Woodland_M
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Rifleman",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -112,7 +111,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_SectionCommander: TWC_Infantry_WW2_UK_Late
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -120,7 +119,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_SectionCommander: TWC_Infantry_WW2_UK_Late
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -133,7 +132,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_2iC: TWC_Infantry_WW2_UK_Late_Woodland_2iC
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -141,7 +140,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_2iC: TWC_Infantry_WW2_UK_Late_Woodland_2iC
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -156,7 +155,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Commander: TWC_Infantry_WW2_UK_Lat
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -164,7 +163,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Commander: TWC_Infantry_WW2_UK_Lat
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -177,7 +176,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Sergeant: TWC_Infantry_WW2_UK_Late
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -185,7 +184,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Sergeant: TWC_Infantry_WW2_UK_Late
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -198,7 +197,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Medic: TWC_Infantry_WW2_UK_Late_Wo
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -206,7 +205,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Medic: TWC_Infantry_WW2_UK_Late_Wo
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -219,7 +218,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Runner: TWC_Infantry_WW2_UK_Late_W
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Rifleman",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -227,7 +226,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Runner: TWC_Infantry_WW2_UK_Late_W
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Rifleman",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -240,7 +239,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Mortar: TWC_Infantry_WW2_UK_Late_W
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -248,7 +247,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_Mortar: TWC_Infantry_WW2_UK_Late_W
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -261,7 +260,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Wood
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -269,7 +268,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Wood
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -284,7 +283,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_PIAT_Gunner: TWC_Infantry_WW2_UK_Late_Wood
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -292,7 +291,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_PIAT_Gunner: TWC_Infantry_WW2_UK_Late_Wood
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -305,7 +304,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_PIAT_Ass: TWC_Infantry_WW2_UK_Late_Woodlan
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -313,7 +312,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_PIAT_Ass: TWC_Infantry_WW2_UK_Late_Woodlan
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -328,7 +327,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Sniper: TWC_Infantry_WW2_UK_Late_Woodland_
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Rifleman",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -336,7 +335,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Sniper: TWC_Infantry_WW2_UK_Late_Woodland_
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Rifleman",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -349,7 +348,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Spotter: TWC_Infantry_WW2_UK_Late_Woodland
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Rifleman",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -357,7 +356,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Spotter: TWC_Infantry_WW2_UK_Late_Woodland
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Rifleman",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -372,7 +371,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Artillery_Commander: TWC_Infantry_WW2_UK_L
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -380,7 +379,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Artillery_Commander: TWC_Infantry_WW2_UK_L
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -393,7 +392,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Artillery_Crew: TWC_Infantry_WW2_UK_Late_W
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -401,7 +400,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Artillery_Crew: TWC_Infantry_WW2_UK_Late_W
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -414,7 +413,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_FO: TWC_Infantry_WW2_UK_Late_Woodland_FO
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -422,7 +421,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_FO: TWC_Infantry_WW2_UK_Late_Woodland_FO
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -437,7 +436,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_FAC: TWC_Infantry_WW2_UK_Late_Woodland_FAC
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -445,7 +444,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_FAC: TWC_Infantry_WW2_UK_Late_Woodland_FAC
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -460,7 +459,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Vehicle_Commander: TWC_Infantry_WW2_UK_Lat
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -468,7 +467,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Vehicle_Commander: TWC_Infantry_WW2_UK_Lat
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -481,7 +480,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Vehicle_Crew: TWC_Infantry_WW2_UK_Late_Woo
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -489,7 +488,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Vehicle_Crew: TWC_Infantry_WW2_UK_Late_Woo
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"LIB_UK_Helmet_Mk2_w",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
