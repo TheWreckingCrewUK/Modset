@@ -257,6 +257,9 @@ class CfgVehicles
 		CATEGORY(TWC_ForceType_Armoured)
 		uniformClass = "U_LIB_UK_P37";
 		TWC_isCommandRole = 1;
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable ['twc_keepMap',true]";
+		};
 		linkedItems[] =
 		{
 			"V_LIB_UK_P37_Crew",
@@ -286,12 +289,14 @@ class CfgVehicles
 		weapons[] =
 		{
 			"LIB_Sten_Mk2",
+			"LIB_Binocular_UK",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
 			"LIB_Sten_Mk2",
+			"LIB_Binocular_UK",
 			"Throw",
 			"Put"
 		};
@@ -310,6 +315,21 @@ class CfgVehicles
 	{
 		displayName = "Tank Crew (Late)";
 		TWC_isCommandRole = 0;
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable ['twc_keepMap',false]";
+		};
+		weapons[] =
+		{
+			"LIB_Sten_Mk2",
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"LIB_Sten_Mk2",
+			"Throw",
+			"Put"
+		};
 	};
 	class TWC_Infantry_WW2_Early_Tank_Commander: TWC_Infantry_WW2_Late_Tank_Commander
 	{
@@ -317,12 +337,14 @@ class CfgVehicles
 		weapons[] =
 		{
 			"LIB_M1928_Thompson",
+			"LIB_Binocular_UK",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
 			"LIB_M1928_Thompson",
+			"LIB_Binocular_UK",
 			"Throw",
 			"Put"
 		};
