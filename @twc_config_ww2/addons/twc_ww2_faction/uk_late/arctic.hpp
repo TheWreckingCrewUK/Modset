@@ -28,6 +28,7 @@ class TWC_Infantry_WW2_UK_Late_Arctic_Grenadier: TWC_Infantry_WW2_UK_Late_Woodla
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Heavy",
+		"H_LIB_UK_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
