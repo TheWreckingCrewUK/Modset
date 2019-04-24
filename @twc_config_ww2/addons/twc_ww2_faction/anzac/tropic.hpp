@@ -169,22 +169,6 @@ class TWC_Infantry_WW2_ANZAC_Tropic_Boys_Gunner: TWC_Infantry_WW2_UK_Early_Tropi
 {
 	CATEGORY(TWC_Infantry_ANZAC_Tropic)
 	uniformClass = "fow_u_aus_m37_03_private";
-	linkedItems[] =
-	{
-		"V_LIB_UK_P37_Heavy",
-		"fow_h_uk_jungle_hat_01",
-		"ItemCompass",
-		"itemMap",
-		"ItemWatch"
-	};
-	respawnLinkedItems[] =
-	{
-		"V_LIB_UK_P37_Heavy",
-		"fow_h_uk_jungle_hat_01",
-		"ItemCompass",
-		"itemMap",
-		"ItemWatch"
-	};
 };
 
 //Artillery
