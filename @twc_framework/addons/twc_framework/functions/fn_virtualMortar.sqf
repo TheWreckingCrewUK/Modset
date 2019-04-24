@@ -24,7 +24,7 @@
 if (isServer) then {
 	Params ["_marker",["_radius",200],["_rounds",5],["_Roundselect",""],["_delay",10],["_safeArea", "nil"]];
 	_pos = [0, 0, 0];
-	if(typeName _marker == "STRING") then {_ps = getMarkerPos _marker};
+	if(typeName _marker == "STRING") then {_pos = getMarkerPos _marker};
 	if(typeName _marker == "ARRAY") then {_pos = _marker};
 
 	_Roundtype = 0;
