@@ -48,3 +48,28 @@ class RscTitles {
 		};
 	};
 };
+
+/** ADDS TOOLTIP TO CONNECT SCREEN. BE VERY CAREFUL CHANGING THIS!!!!!!! **/
+class RscStandardDisplay;
+class RscControlsGroup;
+
+class RscDisplayNotFreeze: RscStandardDisplay {
+	class controls {
+		class LoadingStart: RscControlsGroup {
+			class controls {
+				class Logo: RscStructuredText {
+					onLoad = "";
+					text = "<t align='center'>Connecting to server, please wait...<br /><br />If you've been waiting a while, the server you're connecting to could be down.<br />Hit <t color='#ff0000'>ESC</t> to go to the main menu.</t>";
+					style = 2;
+					sizeEx = "0.05";
+					shadow = 0;
+					lineSpacing = 1
+					x = "safezoneX + (safezoneW * 0.5) + 0.1";
+					y = "safezoneY + (safezoneH - 0.5)";
+					w = safezoneW * 0.5;
+					h = safezoneH * 0.5;
+				};
+			};
+		};
+	};
+};
