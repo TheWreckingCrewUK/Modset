@@ -79,4 +79,5 @@ class CfgVehicles {
 	CREATE_MAP(Staszow);
 	CREATE_MAP(dingor);
 	CREATE_MAP(lingor3);
+	CREATE_MAP(iron_excelsior_Tobruk);
 };
