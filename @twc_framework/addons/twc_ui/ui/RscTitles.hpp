@@ -63,7 +63,7 @@ class RscDisplayNotFreeze: RscStandardDisplay {
 					style = 2;
 					sizeEx = "0.05";
 					shadow = 0;
-					lineSpacing = 1
+					lineSpacing = 1;
 					x = "safezoneX + (safezoneW * 0.5) + 0.1";
 					y = "safezoneY + (safezoneH - 0.5)";
 					w = safezoneW * 0.5;
