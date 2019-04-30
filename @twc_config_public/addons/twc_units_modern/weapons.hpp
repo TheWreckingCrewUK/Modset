@@ -181,7 +181,7 @@ class cfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				slot="CUP_PicatinnyTopMountMk18";
+				slot="CowsSlot";
 				item="rksl_optic_lds_c";
 			};
 			class LinkedItemsMuzzleSlot
@@ -191,7 +191,7 @@ class cfgWeapons
 			};
 			class LinkedItemsFrontSideRail
 			{
-				slot="CUP_PicatinnySideMountMk18";
+				slot="PointerSlot";
 				item="cup_acc_anpeq_15_top_flashlight_tan_f";
 			};
 			class LinkedItemsUnderBarrelSlot
@@ -201,14 +201,14 @@ class cfgWeapons
 			};
 		};
 		
-		class WeaponSlotsInfo: weaponslotsinfo
+		class WeaponSlotsInfo
 		{
 			class GripodSlot: rhs_western_rifle_gripod_slot {
 				class compatibleItems {
 					rhsusf_acc_grip2_tan = 1;
 				};
 			};
-			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					rhsusf_acc_acog_rmr = 1;
 					rksl_optic_lds = 1;
@@ -222,7 +222,7 @@ class cfgWeapons
 					rhsusf_acc_sf3p556 = 1;
 				};
 			};
-			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
 					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
 					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;

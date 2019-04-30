@@ -668,14 +668,17 @@
 		ace_cargo_canLoad = 1;
 		ace_cargo_hasCargo = 1;
 		ace_cargo_space = 2;
-		differentialType = "front_limited";
+		differentialType = "all_limited";
 		frontBias = 1.1;
+		frontRearSplit = 0.8;
 		rearBias = 2.5;
 		turnCoef = 2;
 		maxSpeed = 145;
 		normalSpeedForwardCoef = 1.1;
+		maxOmega = 937.76;
 		latency = 0.4;
 		gearBox[] = {-8,0,10,6.15,4.44,2.33,2.8,2.5};
+		torqueCurve[] = {{0.125,0.521053},{0.25,0.718947},{0.375,0.831579},{0.5,0.884211},{0.625,0.989474},{0.75,1.042105},{0.875,1.2},{1.12513,0}};
 		class Wheels {
 			class LF {
 			boneName = "wheel_1_1_damper";
@@ -684,32 +687,46 @@
 			dampingRate = 0.1;
 			dampingRateDamaged = 1;
 			dampingRateDestroyed = 1000;
-			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.5, 0.5 }, { 1.0, 0.35 }};
+			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.5, 0.6 },{ 1, 0.5 }};
 			latStiffX = 20;
 			latStiffY = 120;
 			longitudinalStiffnessPerUnitGravity = 9000;
 			mass = 40;
-			maxBrakeTorque = 2000;
-			maxCompression = 0.2;
-			maxDroop = 0.12;
+			maxCompression = 0.4;
+			maxDroop = 0.02;
 			maxHandBrakeTorque = 0;
 			MOI = 1.97192;
 			side = "left";
-			springDamperRate = 2500;
-			springStrength = 14000;
-			sprungMass = -1;
+			springDamperRate = 6500;
+			springStrength = 16000;
+			sprungMass = 625;
+			maxBrakeTorque = 300;
 			steering = 1;
 			suspForceAppPointOffset = "wheel_1_1_axis";
 			suspTravelDirection[] = {0,-1,0};
 			tireForceAppPointOffset = "wheel_1_1_axis";
 			width = 0.2;
 			};
-			class RF:LF {};
+			class RF:LF {
+			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.5, 0.6 },{ 1, 0.5 }};
+			springDamperRate = 6500;
+			springStrength = 16000;
+			sprungMass = 625;
+			maxBrakeTorque = 300;
+			};
 			class RR: RF {
-			frictionVsSlipGraph[] = {{ 0.0, 0.55 }, { 0.8, 0.5 }, { 1.0, 0.4 }};
+			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.5, 0.6 },{ 1, 0.5 }};
+			springDamperRate = 6500;
+			springStrength = 16000;
+			sprungMass = 625;
+			maxBrakeTorque = 500;
 			};
 			class LR: LF {
-			frictionVsSlipGraph[] = {{ 0.0, 0.55 }, { 0.8, 0.5 }, { 1.0, 0.4 }};
+			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.5, 0.6 },{ 1, 0.5 }};
+			springDamperRate = 6500;
+			springStrength = 16000;
+			sprungMass = 625;
+			maxBrakeTorque = 500;
 			};
 			
 		};

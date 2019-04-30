@@ -1346,9 +1346,9 @@ class CfgVehicles {
 				springDamperRate = 22000;
 				springStrength = 80000;
 				maxCompression = 0.3;
-				maxBrakeTorque = 7000;
-				maxHandBrakeTorque = 11000;
-				frictionVsSlipGraph[] = {{ 0.0, 0.75 }, { 0.3, 0.7 }, { 1.0, 0.65 }};
+				maxBrakeTorque = 6000;
+				maxHandBrakeTorque = 5000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.3, 0.5 }, { 1.0, 0.4 }};
 			};
 		};
 		
