@@ -20,26 +20,31 @@ class Afr_Pirate_Base: I_G_Soldier_base_F
 	Items[]=
 	{
 		"ACE_fieldDressing",
-		"ACE_fieldDressing"
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage"
 	};
 	respawntems[]=
 	{
 		"ACE_fieldDressing",
-		"ACE_fieldDressing"
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_packingBandage",
+		"ACE_packingBandage"
 	};
 	class EventHandlers: EventHandlers
 	{
-		class PirateBase
-		{
-			init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
-		};
+		init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
 	};
 	
 };
-class Afr_Pirate_SquadLeader_Random: Afr_Pirate_Base
+class Afr_Pirate_Skipper: Afr_Pirate_Base
 {
 	scope=2;
-	displayName="SquadLeader (Random)";
+	displayName="Skipper";
 	icon="iconManOfficer";
 	uniformClass="CUP_I_B_PMC_Unit_3";
 	backpack="";
@@ -114,13 +119,6 @@ class Afr_Pirate_SquadLeader_Random: Afr_Pirate_Base
 		"CUP_HandGrenade_RGD5",
 		"SmokeShell"
 	};
-	class EventHandlers: EventHandlers
-	{
-		class pirateSpecific
-		{
-			init = "if (local (_this select 0)) then {[(_this select 0)] execVM ""\twc_opfor_misc\eventHandlers\commanderPirates.sqf"";};";
-		};
-	};
 };
 class Afr_Pirate_Captain: Afr_Pirate_Base
 {
@@ -187,10 +185,10 @@ class Afr_Pirate_Captain: Afr_Pirate_Base
 		"SmokeShell"
 	};
 };
-class Afr_Pirate_Rifleman_Random: Afr_Pirate_Base
+class Afr_Pirate_AK: Afr_Pirate_Base
 {
 	scope=2;
-	displayName="Pirate Rifleman (Random)";
+	displayName="Pirate (AK)";
 	uniformClass="U_I_C_Soldier_Bandit_1_F";
 	backpack="";
 	normalPirateHeadgear
@@ -242,18 +240,11 @@ class Afr_Pirate_Rifleman_Random: Afr_Pirate_Base
 		"CUP_HandGrenade_RGD5",
 		"SmokeShell"
 	};
-	class EventHandlers: EventHandlers
-	{
-		class pirateSpecific
-		{
-			init = "if (local (_this select 0)) then {[(_this select 0)] execVM ""\twc_opfor_misc\eventHandlers\riflePirates.sqf"";};";
-		};
-	};
 };
-class Afr_Pirate_Grenadier_Random: Afr_Pirate_Base
+class Afr_Pirate_AKM: Afr_Pirate_AK
 {
 	scope=2;
-	displayName="Pirate Grenadier (Random)";
+	displayName="Pirate (AKM)";
 	uniformClass="U_I_C_Soldier_Bandit_3_F";
 	backpack="";
 	normalPirateHeadgear
@@ -281,12 +272,35 @@ class Afr_Pirate_Grenadier_Random: Afr_Pirate_Base
 		"Put",
 		"CUP_arifle_AKM"
 	};
-	class EventHandlers: EventHandlers
+};
+class Afr_Pirate_AKS: Afr_Pirate_AKM
+{
+	scope=2;
+	displayName="Pirate (AKS)";
+	uniformClass="U_I_C_Soldier_Bandit_4_F";
+	backpack="";
+	normalPirateHeadgear
+	linkedItems[]=
 	{
-		class pirateSpecific
-		{
-			init = "if (local (_this select 0)) then {[(_this select 0)] execVM ""\twc_opfor_misc\eventHandlers\grenadierPirates.sqf"";};";
-		};
+		"CUP_V_OI_TKI_Jacket3_05",
+		"G_Bandanna_shades"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket3_05",
+		"G_Bandanna_shades"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AKS"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AKS"
 	};
 };
 class Afr_Pirate_RPG: Afr_Pirate_Base
@@ -345,11 +359,342 @@ class Afr_Pirate_RPG: Afr_Pirate_Base
 		"SmokeShell"
 	};
 };
-
-class Afr_Pirate_MachineGunner: Afr_Pirate_Base
+class Afr_Pirate_AK74: Afr_Pirate_Base
 {
 	scope=2;
-	displayName="Pirate MachineGunner (Random)";
+	displayName="Pirate (AK-74)";
+	uniformClass="CUP_U_I_GUE_Anorak_03";
+	backpack="";
+	normalPirateHeadgear
+	linkedItems[]=
+	{
+		"CUP_V_I_Carrier_Belt",
+		"H_Shemag_olive"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_I_Carrier_Belt",
+		"H_Shemag_olive"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AK74"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AK74"
+	};
+	magazines[]=
+	{
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+};
+class Afr_Pirate_AKS74: Afr_Pirate_AK74
+{
+	scope=2;
+	displayName="Pirate (AKS-74)";
+	uniformClass="U_I_C_Soldier_Para_2_F";
+	backpack="";
+	normalPirateHeadgear
+	linkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_02",
+		"H_ShemagOpen_tan"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_02",
+		"H_ShemagOpen_tan"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AKS74"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AKS74"
+	};
+};
+class Afr_Pirate_AK74GP25: Afr_Pirate_Base
+{
+	scope=2;
+	displayName="Grenadier Pirate";
+	uniformClass="U_I_C_Soldier_Bandit_1_F";
+	backpack="";
+	normalPirateHeadgear
+	linkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_04",
+		"H_ShemagOpen_khk"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_04",
+		"H_ShemagOpen_khk"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AK74_GL"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AK74_GL"
+	};
+	magazines[]=
+	{
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_1Rnd_HE_GP25_M",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+};
+class Afr_Pirate_FAL: Afr_Pirate_Base
+{
+	scope=2;
+	displayName="Pirate (FAL)";
+	uniformClass="U_I_C_Soldier_Bandit_5_F";
+	backpack="";
+	normalPirateHeadgear
+	linkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_01",
+		"G_Bandanna_tan"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_01",
+		"G_Bandanna_tan"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_FNFAL"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_FNFAL"
+	};
+	magazines[]=
+	{
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+};
+class Afr_Pirate_M14: Afr_Pirate_Base
+{
+	scope=2;
+	displayName="Pirate (M14)";
+	uniformClass="U_I_C_Soldier_Bandit_2_F";
+	backpack="";
+	marksmenPirateHeadgear
+	linkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket3_02",
+		"G_Bandanna_blk"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket3_02",
+		"G_Bandanna_blk"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_srifle_M14"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_srifle_M14"
+	};
+	magazines[]=
+	{
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+};
+class Afr_Pirate_SMLE: Afr_Pirate_Base
+{
+	scope=2;
+	displayName="Pirate (SMLE)";
+	uniformClass="U_I_C_Soldier_Bandit_5_F";
+	backpack="";
+	marksmenPirateHeadgear
+	linkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket3_01",
+		"G_Bandanna_blk",
+		"H_Hat_Safari_sand_F"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket3_01",
+		"G_Bandanna_blk",
+		"H_Hat_Safari_sand_F"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_srifle_LeeEnfield"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_srifle_LeeEnfield"
+	};
+	magazines[]=
+	{
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+};
+class Afr_Pirate_AR_RPD: Afr_Pirate_Base
+{
+	scope=2;
+	displayName="Auto Riflepirate (RPD)";
 	uniformClass="U_I_C_Soldier_Bandit_2_F";
 	backpack="";
 	normalPirateHeadgear
@@ -393,19 +738,157 @@ class Afr_Pirate_MachineGunner: Afr_Pirate_Base
 		"CUP_HandGrenade_RGD5",
 		"SmokeShell"
 	};
-	class EventHandlers: EventHandlers
-	{
-		class pirateSpecific
-		{
-			init = "if (local (_this select 0)) then {[(_this select 0)] execVM ""\twc_opfor_misc\eventHandlers\MachineGunPirates.sqf"";};";
-		};
-	};
 };
-
-class Afr_Pirate_Marksman_Random: Afr_Pirate_Base
+class Afr_Pirate_AR_RPK: Afr_Pirate_Base
 {
 	scope=2;
-	displayName="Pirate Marksman (Random)";
+	displayName="Auto Riflepirate (RPK)";
+	uniformClass="U_I_C_Soldier_Bandit_2_F";
+	backpack="";
+	normalPirateHeadgear
+	linkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_04",
+		"H_Shemag_olive"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_04",
+		"H_Shemag_olive"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_RPK74_45"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_RPK74_45"
+	};
+	magazines[]=
+	{
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+};
+class Afr_Pirate_MG_M60: Afr_Pirate_Base
+{
+	scope=2;
+	displayName="MG Pirate (M60)";
+	uniformClass="U_I_C_Soldier_Para_3_F";
+	backpack="";
+	normalPirateHeadgear
+	linkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket3_06",
+		"G_Bandanna_oli"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket3_06",
+		"G_Bandanna_oli"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_lmg_M60E4"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_lmg_M60E4"
+	};
+	magazines[]=
+	{
+		"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+};
+class Afr_Pirate_MG_PKM: Afr_Pirate_Base
+{
+	scope=2;
+	displayName="MG Pirate (PKM)";
+	uniformClass="U_I_C_Soldier_Bandit_1_F";
+	backpack="";
+	normalPirateHeadgear
+	linkedItems[]=
+	{
+		"CUP_V_O_Ins_Carrier_Rig_MG",
+		"H_Cap_red",
+		"G_Bandanna_aviator"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_O_Ins_Carrier_Rig_MG",
+		"H_Cap_red",
+		"G_Bandanna_aviator"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_lmg_PKM"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_lmg_PKM"
+	};
+	magazines[]=
+	{
+		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M",
+		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M",
+		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M",
+		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M",
+		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+};
+class Afr_Pirate_MM_SVD: Afr_Pirate_Base
+{
+	scope=2;
+	displayName="Markspirate (SVD)";
 	uniformClass="U_I_C_Soldier_Camo_F";
 	backpack="";
 	marksmenPirateHeadgear
@@ -463,15 +946,8 @@ class Afr_Pirate_Marksman_Random: Afr_Pirate_Base
 		"CUP_HandGrenade_RGD5",
 		"SmokeShell"
 	};
-	class EventHandlers: EventHandlers
-	{
-		class pirateSpecific
-		{
-			init = "if (local (_this select 0)) then {[(_this select 0)] execVM ""\twc_opfor_misc\eventHandlers\marksmanPirates.sqf"";};";
-		};
-	};
 };
-/*
+
 //////////// Asians//////////
 
 class Asn_Pirate_Base: I_G_Soldier_base_F
@@ -509,8 +985,7 @@ class Asn_Pirate_Base: I_G_Soldier_base_F
 	};
 	
 };
-
-class Asn_Pirate_SquadLeader_Random: Afr_Pirate_SquadLeader_Random
+class Asn_Pirate_Skipper: Afr_Pirate_Skipper
 {
 	faction="TWC_Asn_Pirates";
 	genericNames="ChineseMen";

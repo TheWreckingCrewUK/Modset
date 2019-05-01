@@ -224,9 +224,11 @@ class CfgVehicles {
 	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
 	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
+	
+	#include "headgearRandomization.hpp"
 
 	#include "vehicles\backpacks.hpp"
-
+	class EventHandlers;
 	class B_Soldier_base_F;
 	class SoldierEB;
 	class O_Soldier_base_F: SoldierEB
@@ -250,6 +252,7 @@ class CfgVehicles {
 	#include "units\takistan.hpp"
 	#include "units\usa_1970.hpp"
 	#include "units\pirates.hpp"
+//	#include "units\piratesOld.hpp"
 	#include "units\WaPArmy_Taviana.hpp"
 	#include "units\aden.hpp"
 	#include "units\argentina_1980.hpp"
