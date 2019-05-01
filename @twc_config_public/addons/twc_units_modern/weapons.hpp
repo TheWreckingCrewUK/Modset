@@ -66,11 +66,20 @@ class cfgWeapons
 	class CUP_smg_MP5A5_flashlight;
 	class TWC_CUP_smg_MP5A5_flashlight_clean:CUP_smg_MP5A5_flashlight
 	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="cup_optic_compm2_low";
+			};
+		};
 		class WeaponSlotsInfo
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					rhsusf_acc_t1_high = 1;
+					cup_optic_compm2_low = 1;
 				};
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
