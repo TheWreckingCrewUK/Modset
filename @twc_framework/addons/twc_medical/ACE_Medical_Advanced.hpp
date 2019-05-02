@@ -41,14 +41,16 @@ class ACE_Medical_Advanced {
 		class Medication {
 			class Morphine {
 				painReduce = 0.7;
-				maxDose = 2;
+				maxDose = 3;
 				viscosityChange = -5;
+				onOverDose = "_this call TWC_medical_fnc_onOverDose";
 			};
 			
 			class Epinephrine {
 				timeInSystem = 900;
-				maxDose = 3;
+				maxDose = 2;
 				viscosityChange = 5;
+				onOverDose = "_this call TWC_medical_fnc_onOverDose";
 			};
 		};
 

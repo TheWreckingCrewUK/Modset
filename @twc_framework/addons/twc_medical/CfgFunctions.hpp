@@ -36,6 +36,7 @@ class CfgFunctions {
 			class fullyBandageUnit {};
 			class fullHealWithoutLog {};
 			class removeMedicalItem {};
+			class onOverDose {};
 
 			// Uncon Loop
 			class extendedUnconLoop {};
