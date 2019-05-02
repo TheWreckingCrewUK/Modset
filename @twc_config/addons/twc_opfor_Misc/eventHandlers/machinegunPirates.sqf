@@ -17,7 +17,7 @@ _gun = selectRandomWeighted ["CUP_lmg_M60E4_norail",1,"CUP_lmg_FNMAG",1,"CUP_lmg
 
 switch (_gun)do{
 	case "CUP_lmg_M60E4_norail": {_unit addMagazine "CUP_100Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M"; _unit addWeapon "CUP_lmg_M60E4_norail"; _unit addMagazines ["CUP_100Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M",2]};
-	case "CUP_lmg_FNMAG": {_unit addMagazine "150Rnd_762x51_Box_Tracer"; _unit addWeapon "CUP_lmg_FNMAG"; _unit addMagazine "150Rnd_762x51_Box_Tracer"]};
+	case "CUP_lmg_FNMAG": {_unit addMagazine "150Rnd_762x51_Box_Tracer"; _unit addWeapon "CUP_lmg_FNMAG"; _unit addMagazine "150Rnd_762x51_Box_Tracer"};
 	case "CUP_lmg_PKM": {_unit addMagazine "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"; _unit addWeapon "CUP_lmg_PKM"; _unit addMagazines ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M",3]};
 	case "TWC_RPD": {_unit addMagazine "twc_100Rnd_762x39_RPD"; _unit addWeapon "TWC_RPD"; _unit addMagazines ["twc_100Rnd_762x39_RPD",5]};
 	case "CUP_arifle_RPK74": {_unit addMagazine "CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M"; _unit addWeapon "CUP_arifle_RPK74"; _unit addMagazines ["CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M",4]};

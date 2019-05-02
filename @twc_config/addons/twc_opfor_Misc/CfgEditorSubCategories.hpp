@@ -18,6 +18,10 @@ class CfgEditorSubCategories {
 	class Men_Troubles {
 		displayName = "Men (Troubles)";
 	};
+	
+	class Men_AfricanPirates {
+		displayName = "Men (African Pirates)";
+	};
 
 	class TWC_tak_Civ_Men {
 		displayName = "Men (Takistan Militia)";

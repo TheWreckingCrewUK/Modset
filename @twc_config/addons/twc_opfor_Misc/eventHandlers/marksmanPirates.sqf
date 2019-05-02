@@ -16,10 +16,10 @@ _unit addItemToVest "SmokeShell";
 _gun = selectRandomWeighted ["CUP_srifle_CZ550",1,"CUP_srifle_LeeEnfield",1,"CUP_srifle_M14",1,"CUP_srifle_SVD",1];
 
 switch (_gun)do{
-	case "CUP_srifle_CZ550": {_unit addWeapon "CUP_srifle_CZ550"; _unit addMagazines ["CUP_5x_22_LR_17_HMR_M",5]};
-	case "CUP_srifle_LeeEnfield": {_unit addWeapon "CUP_srifle_LeeEnfield"; _unit addMagazines ["CUP_10x_303_M",5]};
-	case "CUP_srifle_M14": {_unit addWeapon "CUP_srifle_M14"; _unit addMagazines ["CUP_20Rnd_762x51_DMR",5]};
-	case "CUP_srifle_SVD": {_unit addWeapon "CUP_srifle_SVD"; _unit addMagazines ["CUP_10Rnd_762x54_SVD_M",5], _unit addPrimaryWeaponItem "CUP_optic_PSO_1"};
+	case "CUP_srifle_CZ550": {_unit addMagazine "CUP_5x_22_LR_17_HMR_M"; _unit addWeapon "CUP_srifle_CZ550"; _unit addMagazines ["CUP_5x_22_LR_17_HMR_M",5]};
+	case "CUP_srifle_LeeEnfield": {_unit addMagazine "CUP_10x_303_M"; _unit addWeapon "CUP_srifle_LeeEnfield"; _unit addMagazines ["CUP_10x_303_M",5]};
+	case "CUP_srifle_M14": {_unit addMagazine "CUP_20Rnd_762x51_DMR"; _unit addWeapon "CUP_srifle_M14"; _unit addMagazines ["CUP_20Rnd_762x51_DMR",5]};
+	case "CUP_srifle_SVD": {_unit addMagazine "CUP_10Rnd_762x54_SVD_M"; _unit addWeapon "CUP_srifle_SVD"; _unit addMagazines ["CUP_10Rnd_762x54_SVD_M",5], _unit addPrimaryWeaponItem "CUP_optic_PSO_1"};
 	default {_unit addWeapon "CUP_arifle_AK74"; _unit addMagazines ["CUP_30Rnd_545x39_AK_M",5]};
 };
 _unit selectWeapon (primaryWeapon _unit);

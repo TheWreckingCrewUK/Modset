@@ -19,8 +19,7 @@ class Afr_Backpack_MG: CUP_B_AlicePack_Khaki {
 
 class Afr_Backpack_AT: CUP_B_RPGPack_Khaki {
 	class TransportMagazines {
-		maga_nc(CUP_30Rnd_762x39_AK47_M, 2);
-		maga_nc(CUP_PG7V_M, 2);
+		maga_nc(CUP_PG7V_M, 3);
 	};
 };
 

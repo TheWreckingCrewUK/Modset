@@ -61,6 +61,16 @@ class CfgPatches {
 			"usa_1970_medic",
 			"usa_1970_leader",
 			"usa_1970_grenadier",
+			
+			//African Pirates
+			"Afr_Pirate_SquadLeader_Random",
+			"Afr_Pirate_Rifleman_Random",
+			"Afr_Pirate_Grenadier_Random",
+			"Afr_Pirate_RPG_Random",
+			"Afr_Pirate_MachineGunner",
+			"Afr_Pirate_Marksman_Random",
+			
+			//African Pirates Old
 			"Afr_Pirate_Skipper",
 			"Afr_Pirate_Captain",
 			"Afr_Pirate_AK",
@@ -95,6 +105,8 @@ class CfgPatches {
 			"Asn_Pirate_MG_M60",
 			"Asn_Pirate_MG_PKM",
 			"Afr_Pirate_MM_SVD",
+			
+			
 			"TWC_WaPArmy_Taviana_Base",
 			"TWC_WaPArmy_Taviana_Squadleader",
 			"TWC_WaPArmy_Taviana_Grenadier",
@@ -168,94 +180,7 @@ class CfgPatches {
 
 #include "CfgEditorSubCategories.hpp"
 #include "CfgFactionClasses.hpp"
-
-class cfgWeapons
-{
-	class CUP_H_USArmy_Helmet_M1_Olive;
-	class TWC_Helmet_M1_OD: CUP_H_USArmy_Helmet_M1_Olive
-	{
-		displayName  = "M1 (OD)";
-		hiddenSelectionsTextures[] = {"twc_opfor_Misc\data\merc_g_OD_co.paa"};
-	};
-};
-
-class CfgGroups {
-	class East {
-		name = "OPFOR";
-		side = 0;
-		
-		class TWC_Operation_Opfor_ColdWar {
-			name = "TWC Operations - Cold War";
-			
-			/* COLDWAR COMPOSITIONS - GROUP DEFINES */
-			#include "compositions\coldwar_ira.hpp"
-			#include "compositions\coldwar_aden.hpp"
-		};
-		
-		class TWC_Operation_Opfor_Millennial {
-			name = "TWC Operations - Millennial";
-			
-			/* MILLENNIAL COMPOSITIONS - GROUP DEFINES */
-			// todo
-		};
-		
-		class TWC_Operation_Opfor_Modern {
-			name = "TWC Operations - Modern";
-			
-			/* MODERN COMPOSITIONS - GROUP DEFINES */
-			// todo
-		};
-	};
-
-	class Independent {
-		name = "INDEPENDENT";
-		side = 2;
-		class TWC_Operation_INDEP_ColdWar {
-			name = "TWC Operations - Cold War";
-			
-			/* COLDWAR COMPOSITIONS - GROUP DEFINES */
-			#include "compositions\1980_argentina.hpp"
-		};
-	};
-};
-
-class CfgVehicles {
-	// Time saving MACROs - NC = Non-Conflict
-	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
-	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
-	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
-	
-	#include "headgearRandomization.hpp"
-
-	#include "vehicles\backpacks.hpp"
-	class EventHandlers;
-	class B_Soldier_base_F;
-	class SoldierEB;
-	class O_Soldier_base_F: SoldierEB
-	{
-		class EventHandlers;
-	};
-	class I_Soldier_F;
-	class I_Soldier_base_F;
-	class I_G_Soldier_base_F;
-	
-//	#include "russianfederation.hpp"
-	#include "units\iraq.hpp"
-	#include "units\african.hpp"
-	
-	/* UNITS - INDIVIDUAL DEFINES */
-	#include "units\ira.hpp"
-
-	
-//	#include "USSRAfghan.hpp"
-	
-	#include "units\takistan.hpp"
-	#include "units\usa_1970.hpp"
-	#include "units\pirates.hpp"
-//	#include "units\piratesOld.hpp"
-	#include "units\WaPArmy_Taviana.hpp"
-	#include "units\aden.hpp"
-	#include "units\argentina_1980.hpp"
-};
-
+#include "cfgWeapons.hpp"
+class EventHandlers;
+#include "cfgVehicles.hpp"
 #include "CfgMarkers.hpp"

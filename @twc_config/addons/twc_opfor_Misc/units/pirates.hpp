@@ -39,7 +39,7 @@ class Afr_Pirate_Base: I_G_Soldier_base_F
 class Afr_Pirate_SquadLeader_Random: Afr_Pirate_Base
 {
 	scope=2;
-	displayName="SquadLeader (Random)";
+	displayName="Pirate SquadLeader (Random)";
 	icon="iconManOfficer";
 	uniformClass="CUP_I_B_PMC_Unit_3";
 	backpack="";
@@ -122,6 +122,7 @@ class Afr_Pirate_SquadLeader_Random: Afr_Pirate_Base
 		};
 	};
 };
+/*
 class Afr_Pirate_Captain: Afr_Pirate_Base
 {
 	scope=2;
@@ -187,6 +188,7 @@ class Afr_Pirate_Captain: Afr_Pirate_Base
 		"SmokeShell"
 	};
 };
+*/
 class Afr_Pirate_Rifleman_Random: Afr_Pirate_Base
 {
 	scope=2;
@@ -289,10 +291,10 @@ class Afr_Pirate_Grenadier_Random: Afr_Pirate_Base
 		};
 	};
 };
-class Afr_Pirate_RPG: Afr_Pirate_Base
+class Afr_Pirate_RPG_Random: Afr_Pirate_Base
 {
 	scope=2;
-	displayName="AT-Pirate";
+	displayName="AT-Pirate (Random)";
 	uniformClass="CUP_U_I_GUE_Anorak_01";
 	backpack="Afr_Backpack_AT";
 	normalPirateHeadgear
@@ -328,7 +330,6 @@ class Afr_Pirate_RPG: Afr_Pirate_Base
 		"CUP_30Rnd_762x39_AK47_M",
 		"CUP_30Rnd_762x39_AK47_M",
 		"CUP_PG7V_M",
-		"CUP_PG7V_M",
 		"CUP_HandGrenade_RGD5",
 		"SmokeShell"
 	};
@@ -340,9 +341,15 @@ class Afr_Pirate_RPG: Afr_Pirate_Base
 		"CUP_30Rnd_762x39_AK47_M",
 		"CUP_30Rnd_762x39_AK47_M",
 		"CUP_PG7V_M",
-		"CUP_PG7V_M",
 		"CUP_HandGrenade_RGD5",
 		"SmokeShell"
+	};
+	class EventHandlers: EventHandlers
+	{
+		class pirateSpecific
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0)] execVM ""\twc_opfor_misc\eventHandlers\atPirates.sqf"";};";
+		};
 	};
 };
 

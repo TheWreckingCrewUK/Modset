@@ -13,17 +13,15 @@ _unit addItemToVest "CUP_HandGrenade_RGD5";
 _unit addItemToVest "CUP_HandGrenade_RGD5";
 _unit addItemToVest "SmokeShell";
 
-_gun = selectRandomWeighted ["CUP_arifle_AK47_Early",1,"CUP_arifle_AKM_Early",1,"CUP_arifle_AKMS_Early",1,"CUP_arifle_AKS",1,"CUP_arifle_TYPE_56_2_Early",1,"CUP_arifle_AK74_Early",1,"CUP_arifle_AKS74_Early",1,"CUP_arifle_FNFAL",1,"CUP_arifle_Sa58P",1,"CUP_arifle_Sa58V",1];
+_gun = selectRandomWeighted ["CUP_arifle_AK47_Early",1,"CUP_arifle_AKM_Early",1,"CUP_arifle_AKMS_Early",1,"CUP_arifle_AKS",1,"CUP_arifle_AK74_Early",1,"CUP_arifle_AKS74_Early",1,"CUP_arifle_Sa58P",1,"CUP_arifle_Sa58V",1];
 
 switch (_gun)do{
 	case "CUP_arifle_AK47_Early": {_unit addMagazine "CUP_30Rnd_762x39_AK47_M"; _unit addWeapon "CUP_arifle_AK47_Early"; _unit addMagazines ["CUP_30Rnd_762x39_AK47_M",5]};
 	case "CUP_arifle_AKM_Early": {_unit addMagazine "CUP_30Rnd_762x39_AK47_M"; _unit addWeapon "CUP_arifle_AKM_Early"; _unit addMagazines ["CUP_30Rnd_762x39_AK47_M",5]};
 	case "CUP_arifle_AKMS_Early": {_unit addMagazine "CUP_30Rnd_762x39_AK47_M"; _unit addWeapon "CUP_arifle_AKMS_Early"; _unit addMagazines ["CUP_30Rnd_762x39_AK47_M",5]};
 	case "CUP_arifle_AKS": {_unit addMagazine "CUP_30Rnd_762x39_AK47_M"; _unit addWeapon "CUP_arifle_AKS"; _unit addMagazines ["CUP_30Rnd_762x39_AK47_M",5]};
-	case "CUP_arifle_TYPE_56_2_Early": {_unit addMagazine "CUP_30Rnd_762x39_AK47_M"; _unit addWeapon "CUP_arifle_TYPE_56_2_Early"; _unit addMagazines ["CUP_30Rnd_762x39_AK47_M",5]};
 	case "CUP_arifle_AK74_Early": {_unit addMagazine "CUP_30Rnd_545x39_AK_M"; _unit addWeapon "CUP_arifle_AK74_Early"; _unit addMagazines ["CUP_30Rnd_545x39_AK_M",5]};
 	case "CUP_arifle_AKS74_Early": {_unit addMagazine "CUP_30Rnd_545x39_AK_M"; _unit addWeapon "CUP_arifle_AKS74_Early"; _unit addMagazines ["CUP_30Rnd_545x39_AK_M",5]};
-	case "CUP_arifle_FNFAL": {_unit addMagazine "CUP_20Rnd_762x51_FNFAL_M"; _unit addWeapon "CUP_arifle_FNFAL"; _unit addMagazines ["CUP_20Rnd_762x51_FNFAL_M",5]};
 	case "CUP_arifle_Sa58P": {_unit addMagazine "CUP_30Rnd_Sa58_M"; _unit addWeapon "CUP_arifle_Sa58P"; _unit addMagazines ["CUP_30Rnd_Sa58_M",5]};
 	case "CUP_arifle_Sa58V": {_unit addMagazine "CUP_30Rnd_Sa58_M"; _unit addWeapon "CUP_arifle_Sa58V"; _unit addMagazines ["CUP_30Rnd_Sa58_M",5]};	
 	default {_unit addWeapon "CUP_arifle_AK74"; _unit addMagazines ["CUP_30Rnd_545x39_AK_M",5]};
