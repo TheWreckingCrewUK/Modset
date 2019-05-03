@@ -627,14 +627,6 @@
 		class EventHandlers;
 	};
 
-	class CUP_CH47F_base;
-	class CUP_B_CH47F_GB: CUP_CH47F_base {
-		class EventHandlers;
-	};
-	
-	class twc_mert_ch47: CUP_B_CH47F_GB {
-		displayname = "CH-47D (MERT)";
-	};
 	
 	class Heli_Attack_01_base_F;
 	class RHS_AH64_base: Heli_Attack_01_base_F {
@@ -733,7 +725,7 @@
 		class complexGearbox {
 			driveString = "D";
 			gearBoxMode = "auto";
-			GearboxRatios[] = {"R1",-2.47,"N",0,"D1",3.55,"D2",1.8,"D3",1.1};
+			GearboxRatios[] = {"R1",-2.47,"N",0,"D1",3.25,"D2",1.7,"D3",1.05};
 			moveOffGear = 1;
 			neutralString = "N";
 			reverseString = "R";

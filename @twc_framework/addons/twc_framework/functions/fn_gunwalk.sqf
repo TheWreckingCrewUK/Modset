@@ -35,7 +35,7 @@ _biggun = 1;
 
 //exempting the 20mm grenade because an insurgency weapon uses it and needs to be inaccurate
 if (!((typeof _projectile) == "G_20mm_HE")) then {
-	if (_weapon iskindof ["cannon_120mm", configFile >> "CfgWeapons"]) then {
+	if ((_weapon iskindof ["cannon_120mm", configFile >> "CfgWeapons"]) || ((typeof _projectile) iskindof ["RocketCore", configFile >> "CfgAmmo"])) then {
 		_nataccmult = 0.2;
 		_biggun = 2;
 	} else {

@@ -746,23 +746,23 @@ class cfgRecoils
 	};
 	class twc_rifle_556_prone
 	{
-		muzzleOuter[]	= { 0.05,  0.2,  0.02,  0.1 };
+		muzzleOuter[]	= { 0.06,  0.2,  0.02,  0.1 };
 		kickBack[]	= { 0.02, 0.04 };
 		permanent	= 0.3;
 		temporary	= 0.1;
 	};
 	class twc_rifle_556_short
 	{
-		muzzleOuter[]	= { 0.1,  0.25,  0.02,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
+		muzzleOuter[]	= { 0.07,  0.25,  0.015,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
 		kickBack[]	= { 0.04, 0.06 }; //min/max force
 		permanent	= 0.3; //muzzle climb post-recoil, means nothing when on bipod
-		temporary	= 0.2; //muzzle jump
+		temporary	= 0.12; //muzzle jump
 	};
 	class twc_rifle_556_short_prone
 	{
 		muzzleOuter[]	= { 0.05,  0.3,  0.1,  0.3 };
 		kickBack[]	= { 0.04, 0.06 };
-		permanent	= 0.3;
+		permanent	= 1;
 		temporary	= 0.1;
 	};
 	
