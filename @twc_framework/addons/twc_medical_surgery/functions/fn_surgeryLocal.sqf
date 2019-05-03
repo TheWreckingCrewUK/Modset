@@ -21,7 +21,15 @@ _target setUnconscious true;
 // play the audio locally, for the patient
 missionNameSpace setVariable ["ace_hearing_disableVolumeUpdate", true];
 // execute next frame, so the volumeUpdate can take effect
-[{ playSound "TWC_Sound_Medical_Surgery"; }] call CBA_fnc_execNextFrame;
+[{
+	_hasEarPlugs = [player] call ace_hearing_fnc_hasEarPlugsIn;
+	
+	if (_hasEarPlugs) then {
+		playSound "TWC_Sound_Medical_Surgery";
+	} else {
+		playSound "TWC_Sound_Medical_Surgery_NoEarPlugs";
+	};
+}] call CBA_fnc_execNextFrame;
 
 // add time to their revive counter, to prevent them from dying during the surgery
 _reviveStartTime = _target getVariable ["ace_medical_reviveStartTime", 0];
