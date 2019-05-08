@@ -34,6 +34,23 @@ class cfgWeapons
 	class Rifle_Base_F;
 	
 	
+	class CUP_V_B_BAF_MTP_Osprey_Mk4_Crewman;
+	class TWC_V_B_BAF_MTP_Osprey_Mk4_Crewman_base: CUP_V_B_BAF_MTP_Osprey_Mk4_Crewman
+	{
+		class Iteminfo;
+		scope = 0;
+	};
+	
+	class TWC_V_B_BAF_MTP_Osprey_Mk4_Crewman : TWC_V_B_BAF_MTP_Osprey_Mk4_Crewman_base
+	{
+		scope = 1;
+		class iteminfo:iteminfo
+		{
+			containerClass = "Supply50";
+		};
+	};
+	
+	
 	class rhsusf_weap_MP7A2;
 	class rhsusf_weap_MP7A2_desert: rhsusf_weap_MP7A2
 	{
@@ -125,7 +142,7 @@ class cfgWeapons
 		};
 		class FullAuto:Mode_FullAuto {
 			//sounds[] = {"StandardSound"};
-			reloadTime = 0.07;
+			reloadTime = 0.06;
 			dispersion = 0.002;
 			class StandardSound {
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
@@ -156,7 +173,7 @@ class cfgWeapons
 			dispersion = 0.002;	
 		};
 		class FullAuto:FullAuto {
-			reloadTime = 0.07;
+			reloadTime = 0.06;
 			dispersion = 0.002;
 		};
 	};
@@ -636,6 +653,7 @@ class cfgWeapons
 	class rhsusf_opscore_cover;
 	class rhsusf_opscore_mc_cover_pelt_cam: rhsusf_opscore_cover
 	{
+		ace_hearing_protection = 0.75;
 		hiddenSelectionsTextures[] = {"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\nsw_co.paa","\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa","twc_units_modern\textures\fs_cover_co.paa","\rhsusf\addons\rhsusf_infantry\gear\head\data\rhs_helmet_ach_acc_co.paa"};
 	};
 	class rhsusf_opscore_mc_cover: rhsusf_opscore_cover
@@ -644,6 +662,7 @@ class cfgWeapons
 	};
 	class rhsusf_opscore_mc_cover_pelt: rhsusf_opscore_cover
 	{
+		ace_hearing_protection = 0.75;
 		hiddenSelectionsTextures[] = {"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_co.paa","","","twc_units_modern\textures\fs_cover_co.paa",""};
 	};
 	
@@ -1099,6 +1118,30 @@ class cfgWeapons
 		class FullAuto;
 	};
 	
+	class UK3CB_BAF_L22A2;
+	class TWC_BAF_L22A2_SUSAT: UK3CB_BAF_L22A2
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="uk3cb_baf_susat";
+			};
+		};
+		
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					uk3cb_baf_susat = 1;
+				};
+			};
+			mass = 72;
+		};
+		
+	};
+	
 	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F
 	{
 		class Single:Single {
@@ -1131,6 +1174,7 @@ class cfgWeapons
 				item="UK3CB_BAF_LLM_IR_Black";
 			};
 		};
+		hiddenSelectionsTextures[] = {"\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\kio_l85a2_base_co.paa","\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\kio_l85a2_handguard_co.paa","","","\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\emag_co.paa","\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\dd_ris_co.paa"};
 		
 		class WeaponSlotsInfo
 		{

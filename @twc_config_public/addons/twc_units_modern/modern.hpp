@@ -334,7 +334,7 @@
 		{
 			"Throw",
 			"Put",
-			"ACE_Vector",
+			"ACE_Yardage450",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
 			"rhs_weap_m72a7"
 		};
@@ -342,7 +342,7 @@
 		{
 			"Throw",
 			"Put",
-			"ACE_Vector",
+			"ACE_Yardage450",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
 			"rhs_weap_m72a7"
 		};
@@ -588,7 +588,7 @@
 		{
 			"Throw",
 			"Put",
-			"ACE_Vector",
+			"ACE_Yardage450",
 			"UK3CB_BAF_L129A1_Grippod_TA648",
 			"launch_NLAW_F"
 		};
@@ -596,7 +596,7 @@
 		{
 			"Throw",
 			"Put",
-			"ACE_Vector",
+			"ACE_Yardage450",
 			"UK3CB_BAF_L129A1_Grippod_TA648",
 			"launch_NLAW_F"
 		};
@@ -829,14 +829,14 @@
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L22A2",
+			"TWC_BAF_L22A2_SUSAT",
 			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"UK3CB_BAF_L22A2",
+			"TWC_BAF_L22A2_SUSAT",
 			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
@@ -1287,20 +1287,18 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		scope=2;
 		displayName="Armour Crewman";
 		icon="iconMan";
-		backpack="twc_mtp_belt";
-		twc_nobackpack = 1;
 		linkedItems[]=
 		{
-			"UK3CB_BAF_H_CrewHelmet_A",
-			"UK3CB_BAF_V_Osprey",
+			"CUP_H_BAF_MTP_Mk6_EMPTY_PRR",
+			"TWC_V_B_BAF_MTP_Osprey_Mk4_Crewman",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"UK3CB_BAF_H_CrewHelmet_A",
-			"UK3CB_BAF_V_Osprey",
+			"CUP_H_BAF_MTP_Mk6_EMPTY_PRR",
+			"TWC_V_B_BAF_MTP_Osprey_Mk4_Crewman",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1309,19 +1307,25 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L22A2"
+			"rhsusf_weap_glock17g4",
+			"TWC_BAF_L22A2_SUSAT"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L22A2"
+			"rhsusf_weap_glock17g4",
+			"TWC_BAF_L22A2_SUSAT"
 		};
 		magazines[]=
 		{
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"rhsusf_mag_17Rnd_9x19_FMJ",
+			"rhsusf_mag_17Rnd_9x19_FMJ",
+			"rhsusf_mag_17Rnd_9x19_FMJ",
 			"smokeshell"
 		};
 		Respawnmagazines[]=
@@ -1329,6 +1333,10 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"rhsusf_mag_17Rnd_9x19_FMJ",
+			"rhsusf_mag_17Rnd_9x19_FMJ",
+			"rhsusf_mag_17Rnd_9x19_FMJ",
 			"smokeshell"
 		};
 	};
@@ -1338,38 +1346,21 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		backpack="twc_mtp_belt";
-		twc_nobackpack = 1;
-		linkedItems[]=
-		{	
-			"UK3CB_BAF_H_CrewHelmet_ESS_A",
-			"UK3CB_BAF_V_Osprey",
-			"ItemMap",
-			"ItemcTab",
-			"ItemCompass",
-			"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{		
-			"UK3CB_BAF_H_CrewHelmet_ESS_A",
-			"UK3CB_BAF_V_Osprey",
-			"ItemMap",
-			"ItemcTab",
-			"ItemCompass",
-			"ItemWatch"
-		};
 		weapons[]=
 		{
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"UK3CB_BAF_L22A2"
+			"rhsusf_weap_glock17g4",
+			"TWC_BAF_L22A2_SUSAT"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"UK3CB_BAF_L22A2"
+			"rhsusf_weap_glock17g4",
+			"TWC_BAF_L22A2_SUSAT"
 		};
 		Items[]=
 		{
@@ -1963,6 +1954,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 	class Modern_UKSF_Pointman: Modern_UKSF_Base
 	{
 		displayName="Pointman";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_TShirt_RM";
 		weapons[]=
 		{
 			"Throw",
@@ -1982,6 +1974,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 	class Modern_UKSF_Grenadier: Modern_UKSF_Base
 	{
 		displayName="Grenadier";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_TShirt_RM";
 		weapons[]=
 		{
 			"Throw",
