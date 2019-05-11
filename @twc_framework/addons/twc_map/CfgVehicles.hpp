@@ -80,4 +80,5 @@ class CfgVehicles {
 	CREATE_MAP(dingor);
 	CREATE_MAP(lingor3);
 	CREATE_MAP(iron_excelsior_Tobruk);
+	CREATE_MAP(pja314); // Leskovets
 };
