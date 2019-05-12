@@ -76,11 +76,11 @@ if (_isEven) then {
 	_caller setVelocity _vel; */
 	
 	if (_isEven) then {
-		_chute setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * -2), (_vel select 2)];
-		_caller setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * -2), (_vel select 2)];
+		_chute setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * -5), (_vel select 2)];
+		_caller setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * -5), (_vel select 2)];
 	} else {
-		_chute setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * 2), (_vel select 2)];
-		_caller setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * 2), (_vel select 2)];
+		_chute setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * 5), (_vel select 2)];
+		_caller setVelocity [(_vel select 0), (_vel select 1) + (cos _pDir * 5), (_vel select 2)];
 	};
 	
 	// wait until parachute is open, not necessary atm
