@@ -88,7 +88,7 @@ _alternatePan = false;
 		_cam camCommit _panTime;
 	};
 	
-	sleep (_panTime + 2);
+	sleep (_panTime + 1);
 } forEach _introData;
 
 _cam = "camera" camCreate (player modelToWorld [0, 2, 5]);
