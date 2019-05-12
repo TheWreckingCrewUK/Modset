@@ -3,6 +3,7 @@ class CfgPatches {
 		requiredAddons[] = {
 			"ace_medical",
 			"ace_medical_menu",
+			"TWC_Core",
 			"twc_framework"
 		};
 
