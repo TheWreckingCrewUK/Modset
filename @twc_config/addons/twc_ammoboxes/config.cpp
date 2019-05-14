@@ -60,6 +60,7 @@ class CfgPatches {
 		requiredVersion = 1;
 		
 		requiredAddons[] = {
+			"cba_main",
 			"A3_Weapons_F",
 			"a3_structures_f_epa",
 			"uk3cb_baf_weapons",
@@ -73,6 +74,14 @@ class CfgPatches {
 		version = "1";
 		projectName = "TWC";
 		author = "Bosenator";
+	};
+};
+
+class Extended_Init_EventHandlers {
+	class TWC_AmmoBox_Other_Pallet {
+		class TWC_AmmoBox_EH {
+			serverInit = "_this setMass 10; _this setCenterOfMass [0,-1,0];";
+		};
 	};
 };
 
