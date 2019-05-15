@@ -92,6 +92,41 @@
 			"ACE_tourniquet"
 		};
 	};
+	class Modern_British_Blank: Modern_British_Base
+	{
+		scope=2;
+		displayName="Blank Unit";
+		nakedUniform="U_BasicBody";
+		uniformClass="UK3CB_BAF_U_Smock_MTP";
+		linkedItems[]=
+		{
+		};
+		respawnLinkedItems[]=
+		{
+		};
+		Items[]=
+		{
+		};
+		respawnitems[]=
+		{
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+		};
+		Respawnmagazines[]=
+		{
+		};
+	};
 	class Modern_British_Squadleader: Modern_British_Base
 	{
 		scope=2;
