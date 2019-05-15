@@ -33,6 +33,17 @@ class cfgWeapons
 	class arifle_Mk20_F;
 	class Rifle_Base_F;
 	
+	class rhsusf_iotv_ocp_base;
+	class rhsusf_plateframe_sapi: rhsusf_iotv_ocp_base
+	{};
+	class rhsusf_plateframe_rifleman: rhsusf_plateframe_sapi
+	{};
+	class twc_rhsusf_plateframe_rifleman_mtp: rhsusf_plateframe_rifleman
+	{
+		//hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_infantry2\gear\vests\plateframe\data\rhs_plateframe_sapi_tan_co.paa","rhsusf\addons\rhsusf_infantry\gear\vests\data\rhs_spc_gear1_co.paa","rhsusf\addons\rhsusf_infantry\gear\vests\data\rhs_spc_gear2_co.paa","rhsusf\addons\rhsusf_infantry2\gear\vests\mbav\data\mbav_gear_co.paa","rhsusf\addons\rhsusf_infantry\gear\vests\data\rhs_vest_iotv2_co.paa","rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa","rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_magpul_black_co.paa","rhsusf\addons\rhsusf_weapons3\mk17\data\mk17_co.paa"};
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_infantry\gear\vests\data\rhs_vest_iotv2_co.paa","rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa","rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_magpul_black_co.paa","rhsusf\addons\rhsusf_weapons3\mk17\data\mk17_co.paa"};
+	};
+	
 	
 	class CUP_V_B_BAF_MTP_Osprey_Mk4_Crewman;
 	class TWC_V_B_BAF_MTP_Osprey_Mk4_Crewman_base: CUP_V_B_BAF_MTP_Osprey_Mk4_Crewman
@@ -49,8 +60,6 @@ class cfgWeapons
 			containerClass = "Supply50";
 		};
 	};
-	
-	
 	class rhsusf_weap_MP7A2;
 	class rhsusf_weap_MP7A2_desert: rhsusf_weap_MP7A2
 	{
@@ -1215,6 +1224,11 @@ class cfgWeapons
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
 				item="RKSL_optic_LDS";
 			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="asdg_FrontSideRail_L85";
+				item="UK3CB_BAF_LLM_IR_Black";
+			};
 		};
 		class WeaponSlotsInfo
 		{
@@ -1296,6 +1310,8 @@ class cfgWeapons
 				item="UK3CB_underbarrel_acc_fgrip_bipod";
 			};
 		};
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
 		class WeaponSlotsInfo
 		{
 			class asdg_OpticRail_UK3CB_BAF_L129A1: asdg_OpticRail1913 {

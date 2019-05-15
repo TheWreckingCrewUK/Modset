@@ -187,7 +187,7 @@ linkedItems[]=
 "ItemMap",
 "ItemCompass",
 "ACE_EarPlugs",
-"ACRE_PRC343",
+"ACRE_PRC148",
 "ItemWatch"
 };
 respawnLinkedItems[]=
@@ -197,7 +197,7 @@ respawnLinkedItems[]=
 "ItemMap",
 "ItemCompass",
 "ACE_EarPlugs",
-"ACRE_PRC343",
+"ACRE_PRC148",
 "ItemWatch"
 };
 weapons[]=
@@ -782,7 +782,7 @@ linkedItems[]=
 "ItemMap",
 "ItemCompass",
 "ACE_EarPlugs",
-"ACRE_PRC343",
+"ACRE_PRC148",
 "ItemWatch"
 };
 respawnLinkedItems[]=
@@ -792,7 +792,7 @@ respawnLinkedItems[]=
 "ItemMap",
 "ItemCompass",
 "ACE_EarPlugs",
-"ACRE_PRC343",
+"ACRE_PRC148",
 "ItemWatch"
 };
 };

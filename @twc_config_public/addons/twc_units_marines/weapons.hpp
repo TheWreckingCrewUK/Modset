@@ -69,6 +69,74 @@ class cfgWeapons
 		};
 	};
 	
+	class rhs_weap_m40a5_d;
+	class twc_m40_d_sniper: rhs_weap_m40a5_d
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_m8541_low_d";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="UnderBarrelSlot";
+				item="rhsusf_acc_harris_swivel";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_m8541_low_d = 1;
+				};
+			};
+			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {
+				class compatibleItems {
+					rhsusf_acc_harris_swivel = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 92.96;
+		};
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+	};
+	
+	class rhs_weap_m14ebrri;
+	class twc_m14_spotter: rhs_weap_m14ebrri
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_m8541_low";
+			};
+			class LinkedItemsUnderBarrelSlot
+			{
+				slot="UnderBarrelSlot";
+				item="rhsusf_acc_harris_bipod";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_m8541_low = 1;
+				};
+			};
+			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {
+				class compatibleItems {
+					rhsusf_acc_harris_bipod = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 92.96;
+		};
+	};
+	
 		
 	class twc_ana_m16a4: rhs_weap_m16a4_carryhandle
 	{
@@ -304,6 +372,7 @@ class cfgWeapons
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
 					rhsusf_acc_anpeq15_bk_light = 1;
+					rhsusf_acc_anpeq15_bk = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -377,6 +446,7 @@ class cfgWeapons
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
 					rhsusf_acc_anpeq15_bk_light = 1;
+					rhsusf_acc_anpeq15_bk = 1;
 				};
 			};
 			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {

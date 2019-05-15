@@ -116,7 +116,60 @@
 		class TransportBackpacks
 		{};
 	};
-	
+	class rhsusf_M1220_M153_M2_usarmy_d: rhsusf_M1220_M2_usarmy_d
+	{
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			class M2_CROWS_Turret: NewTurret 
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		};
+		class Transportitems
+		{};
+		class TransportWeapons
+		{};
+		class TransportBackpacks
+		{};
+	};
+	/*
+	class rhsusf_M1220_M153_M2_usarmy_wd: rhsusf_M1220_M153_M2_usarmy_d
+	{
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			class M2_CROWS_Turret: NewTurret 
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		};
+		class Transportitems
+		{};
+		class TransportWeapons
+		{};
+		class TransportBackpacks
+		{};
+	};
+	*/
 	class Car;
 	class Car_F: Car
 	{

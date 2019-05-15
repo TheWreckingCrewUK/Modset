@@ -2236,7 +2236,7 @@
 		linkedItems[]=
 		{
 			"CUP_V_I_RACS_Carrier_Vest_wdl",
-			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"UK3CB_BAF_H_Mk6_DDPM_C",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2244,7 +2244,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_I_RACS_Carrier_Vest_wdl",
-			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"UK3CB_BAF_H_Mk6_DDPM_C",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2370,8 +2370,8 @@
 		backpack="TWC_Backpack_USMC2000_Sectionleader";
 		linkedItems[]=
 		{
-			"CUP_V_I_RACS_Carrier_Vest_wdl",
-			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"CUP_V_B_Delta_2",
+			"UK3CB_BAF_H_Mk6_DDPM_C",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -2379,8 +2379,8 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_I_RACS_Carrier_Vest_wdl",
-			"UK3CB_BAF_H_Mk6_DDPM_A",
+			"CUP_V_B_Delta_2",
+			"UK3CB_BAF_H_Mk6_DDPM_C",
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
