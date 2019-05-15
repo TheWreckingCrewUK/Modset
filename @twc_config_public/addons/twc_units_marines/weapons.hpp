@@ -90,6 +90,7 @@ class cfgWeapons
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					rhsusf_acc_m8541_low_d = 1;
+					rhsusf_acc_premier_anpvs27 = 1;
 				};
 			};
 			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {
