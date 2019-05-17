@@ -1,9 +1,6 @@
 params ["_marker"];
 
 if ((count allMapMarkers) == 0) exitWith { false; };
-
-{
-	if (_x isEqualTo _marker) exitWith { true };
-} forEach allMapMarkers;
+if (_marker in allMapMarkers) exitWith { true; };
 
 false;
