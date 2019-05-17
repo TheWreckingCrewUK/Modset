@@ -27,6 +27,6 @@ if (!_isInTent) then {
 };
 
 //Save the results (with a 1 second expiry)
-_unit setVariable ["TWC_Medical_cacheInFieldTent", [CBA_missionTime + 1, _isInTent]];
+_unit setVariable ["TWC_Medical_cacheInFieldTent", [CBA_missionTime + 2, _isInTent]];
 
 _isInTent;
