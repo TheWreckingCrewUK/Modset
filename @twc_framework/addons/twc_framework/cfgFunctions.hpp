@@ -11,6 +11,7 @@ class CfgFunctions {
 			class BattlefieldSounds {};
 			class briefingLoadout {};
 			class CommandMessage{};
+			class crateParadrop {};
 			class createMarker{};
 			class CreateTask{};
 			class daisyCutter{};
@@ -64,6 +65,7 @@ class CfgFunctions {
 			class safeZone{};
 			class zeus{};
 			class moduleCreateTask;
+			class moduleCrateParadrop {};
 			class moduleStationaryUnits{};
 			class moduleMovableUnits{};
 			class moduleVirtualArtillery{};

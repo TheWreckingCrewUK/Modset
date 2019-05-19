@@ -1148,6 +1148,49 @@ class CfgVehicles {
 		};
 	};
 	
+	class TWC_Module_CrateParadrop: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Crate Paradrop";
+		function = "twc_fnc_moduleCrateParadrop";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\airborne_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Plane {
+				displayName = "Plane";
+				description = "Type of plane that drops the crate";
+				typeName = "String";
+				defaultValue = "C130";
+				class Values {
+					class C130 {
+						name = "C-130";
+						value = "CUP_B_C130J_GB";
+					};
+					class C47 {
+						name = "C-47";
+						value = "LIB_C47_RAF";
+					};
+				};
+			};
+			class Cargo {
+				displayName = "Cargo";
+				description = "What cargo the plane drops";
+				typeName = "String";
+				defaultValue = "";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Send a plane to aidrop crate(s)";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+	
 	class TWC_Module_HideMarkers: Module_F
 	{
 		author = "[TWC] Rik";
