@@ -9,6 +9,13 @@ class LIB_M4A3_75;
 class LIB_Crusader_Mk3;
 class csa38_valentineMkII;
 class csa38_valentineMkII2;
+class LIB_C47_Skytrain;
+
+class LIB_C47_RAF: LIB_C47_Skytrain
+{
+	ace_cargo_space = 20;
+	ace_cargo_hasCargo = 1;
+};
 
 class TWC_Vehicle_WW2_AustinK5_F: LIB_AustinK5_Tent {
 	scope = 1;

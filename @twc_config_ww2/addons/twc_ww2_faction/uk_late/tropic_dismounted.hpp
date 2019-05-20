@@ -62,7 +62,7 @@ class TWC_Infantry_WW2_UK_Late_Dismounted_Tropic_Platoon_Mortar: TWC_Infantry_WW
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
 	backpack = "TWC_Backpack_WW2_UK_Late_Dismounted_Platoon_Mortar";
 };
-class TWC_Infantry_WW2_UK_Late_Dismounted_Tropic_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Tropic_Platoon_Mortar
+class TWC_Infantry_WW2_UK_Late_Dismounted_Tropic_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Tropic_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
 	backpack = "TWC_Backpack_WW2_UK_Late_Dismounted_Platoon_Sergeant";

@@ -62,7 +62,7 @@ class TWC_Infantry_WW2_UK_Late_Dismounted_Desert_Platoon_Mortar: TWC_Infantry_WW
 	CATEGORY(TWC_Infantry_Dismounted_Desert)
 	backpack = "TWC_Backpack_WW2_UK_Late_Dismounted_Platoon_Mortar";
 };
-class TWC_Infantry_WW2_UK_Late_Dismounted_Desert_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Desert_Platoon_Mortar
+class TWC_Infantry_WW2_UK_Late_Dismounted_Desert_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Desert_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_Dismounted_Desert)
 	backpack = "TWC_Backpack_WW2_UK_Late_Dismounted_Platoon_Sergeant";
