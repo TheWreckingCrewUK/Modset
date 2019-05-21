@@ -138,7 +138,15 @@ class cfgWeapons
 			mass = 79.2;
 		};
 	};
-	class rhs_weap_m4a1_blockII;
+	
+	class rhs_weap_m4a1;
+	
+	class rhs_weap_m4a1_blockII: rhs_weap_m4a1
+	{
+		recoil = "twc_rifle_556_long";
+		recoilProne = "twc_rifle_556_long_prone";
+	};
+	
 	class twc_m4b2_us_eotech: rhs_weap_m4a1_blockII
 	{
 		class LinkedItems

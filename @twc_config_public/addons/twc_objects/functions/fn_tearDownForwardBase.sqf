@@ -22,8 +22,8 @@ if(isNil "twc_siege_baseside") then{
 if(leader _player != _player)exitWith{_return = "Only Section Leaders can Deactivate the Forward Base"; _return};
 if(isNil "_table")exitWith{_return = "Radio Table not given to twc_fn_tearDownForwardBase. Exiting..."; _return};
 
-[missionNamespace,"respawn_forwardBase"] call BIS_fnc_removeRespawnPosition;
-deleteMarker "respawn_forwardBase";
+//[missionNamespace,"respawn_west_forwardBase"] call BIS_fnc_removeRespawnPosition;
+deleteMarker "respawn_west_forwardBase";
 {
 	deleteVehicle _x;
 }forEach attachedObjects _table;
@@ -47,8 +47,8 @@ if(!(isNil "_player")) then{
 if(leader _player != _player)exitWith{_return = "Only Section Leaders can Deactivate the Forward Base"; _return}};
 if(isNil "_table")exitWith{_return = "Radio Table not given to twc_fn_tearDownForwardBase. Exiting..."; _return};
 
-[missionNamespace,"respawn_forwardBase"] call BIS_fnc_removeRespawnPosition;
-deleteMarker "respawn_forwardBase";
+[missionNamespace,"respawn_west_forwardBase"] call BIS_fnc_removeRespawnPosition;
+deleteMarker "respawn_west_forwardBase";
 {
 	deleteVehicle _x;
 }forEach attachedObjects _table;

@@ -28,11 +28,11 @@ _distanceGenerator = _pos nearObjects ["twc_portableGenerator",200];
 if(str _distanceGenerator == "[]")exitWith{_return = format["The Generator must be within 200m of the Radio Table.\n The Generator is %1m away",_pos distance2D ((_pos nearObjects ["twc_portableGenerator",worldSize]) select 0)]; _return};
 
 
-_marker = createMarker ["respawn_forwardBase",_pos];
+_marker = createMarker ["respawn_west_forwardBase",_pos];
 _marker setMarkerShape "ICON";
 _marker setMarkerType "b_installation";
 _marker setMarkerText "Patrol Base";
-[missionNamespace,_marker,"Patrol Base"] call BIS_fnc_addRespawnPosition;
+//[missionNamespace,_marker,"Patrol Base"] call BIS_fnc_addRespawnPosition;
 _radio = "Vysilacka" createVehicle (position _table);
 _radio attachTo [_table,[0,0,1.5]];
 _radio setDir ((getDir _table)+270);
@@ -69,7 +69,7 @@ _distanceGenerator = _pos nearObjects ["twc_portableGenerator",200];
 if(str _distanceGenerator == "[]")exitWith{_return = format["The Generator must be within 200m of the Radio Table.\n Generator is %1m away",_pos distance2D ((_pos nearObjects ["twc_portableGenerator",worldSize]) select 0)]; _return};
 
 
-_marker = createMarker ["respawn_forwardBase",_pos];
+_marker = createMarker ["respawn_west_forwardBase",_pos];
 _marker setMarkerShape "ICON";
 _marker setMarkerType "b_installation";
 _marker setMarkerText "Patrol Base";
