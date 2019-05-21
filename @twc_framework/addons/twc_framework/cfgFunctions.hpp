@@ -8,8 +8,10 @@ class CfgFunctions {
 			class Artillery{};
 			class AttackHelicopter{};
 			class AttackPlane {};
+			class banzaiSounds {};
 			class BattlefieldSounds {};
 			class briefingLoadout {};
+			class charge {};
 			class CommandMessage{};
 			class crateParadrop {};
 			class createMarker{};
@@ -78,6 +80,7 @@ class CfgFunctions {
 			class moduleAttackPlane{};
 			class moduleAmbientAA;
 			class moduleCommandMessage{};
+			class moduleCharge {};
 			class moduleLightsSwitch{};
 			class moduleHideMarkers{};
 			class moduleIntelHint{};
