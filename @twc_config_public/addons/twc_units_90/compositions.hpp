@@ -7,6 +7,142 @@ class CfgGroups
 		class TWC_Operation_Blufor //Faction Class name
 		{
 				name = "TWC Public Groups"; //Faction Name
+				class 1970
+				{
+					name = "TWC 1970 Woodland"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armoured
+					class 1970_Section
+					{
+						name = "Section"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
+						{
+								side = 1;
+								vehicle = "1970_British_SectionCommander"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "1970_British_pointman";
+								rank = "PRIVATE";
+								position[] = {3,0,0};
+						};
+						class Unit2
+						{
+								side = 1;
+								vehicle = "1970_British_Rifleman";
+								rank = "PRIVATE";
+								position[] = {5,0,0};
+						};
+						class Unit3
+						{
+								side = 1;
+								vehicle = "1970_British_Marksman";
+								rank = "PRIVATE";
+								position[] = {7,0,0};
+						};
+						class Unit4
+						{
+								side = 1;
+								vehicle = "1970_British_2IC";
+								rank = "PRIVATE";
+								position[] = {9,0,0};
+						};
+						class Unit5
+						{
+								side = 1;
+								vehicle = "1970_British_MachineGunner";
+								rank = "PRIVATE";
+								position[] = {11,0,0};
+						};
+						class Unit6
+						{
+								side = 1;
+								vehicle = "1970_British_mg_assistant";
+								rank = "PRIVATE";
+								position[] = {13,0,0};
+						};
+						class Unit8
+						{
+								side = 1;
+								vehicle = "1970_British_Medic";
+								rank = "PRIVATE";
+								position[] = {17,0,0};
+						};
+					};
+				
+					class 1970_helicrew
+					{
+						name = "Heli Crew"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
+						{
+								side = 1;
+								vehicle = "1970_British_HeliPilot"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "1970_British_Crewchief";
+								rank = "PRIVATE";
+								position[] = {3,0,0};
+						};
+					};
+					
+					class 1970_sniperteam
+					{
+						name = "Sniper Team"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
+						{
+								side = 1;
+								vehicle = "1970_British_Spotter"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "1970_British_sniper";
+								rank = "PRIVATE";
+								position[] = {3,0,0};
+						};
+					};
+					
+					class 1970_armourcrew
+					{
+						name = "Armour Crew"; //Name of Group
+						faction = "twc_faction"; //Faction
+						side = 1; //Side
+						class Unit0
+						{
+								side = 1;
+								vehicle = "1970_British_Vehicle_Commander"; //Class name of desired solider
+								rank = "CORPORAL"; // Rank
+								position[] = {0,3,0}; //Position in the formation
+						};
+						class Unit1
+						{
+								side = 1;
+								vehicle = "1970_British_Vehicle_Crew";
+								rank = "PRIVATE";
+								position[] = {3,0,0};
+						};
+						class Unit2
+						{
+								side = 1;
+								vehicle = "1970_British_Vehicle_Crew";
+								rank = "PRIVATE";
+								position[] = {5,0,0};
+						};
+					};
+				};
 				class 1990
 				{
 					name = "TWC 1990 Woodland"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armoured

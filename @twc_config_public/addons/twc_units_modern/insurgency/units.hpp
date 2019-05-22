@@ -927,8 +927,6 @@
 		displayName="Rifleman";
 		faction="ana_units";
 		editorSubcategory = "Men_ana";
-		twc_radioType = "ACRE_PRC148";
-		twc_radioChannel = 4;
 		twc_nobackpack = 1;
 		vehicleClass="Men_ana";
 		icon="iconManLeader";
@@ -939,13 +937,11 @@
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_OLI",
-		"ItemMap",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_OLI",
-		"ItemMap",
 		"ItemCompass"
 		};
 		weapons[]=
@@ -1031,7 +1027,6 @@
 		Items[]=
 		{
 		"ACE_fieldDressing",
-		"ACRE_PRC148",
 		"ACRE_PRC152",
 		"ACE_EarPlugs",
 		"ACE_fieldDressing",
@@ -1045,7 +1040,6 @@
 		respawnItems[]=
 		{
 		"ACE_fieldDressing",
-		"ACRE_PRC148",
 		"ACRE_PRC152",
 		"ACE_EarPlugs",
 		"ACE_fieldDressing",
@@ -1171,13 +1165,11 @@
 		linkedItems[]=
 		{
         "CUP_V_O_Ins_Carrier_Rig_Com",
-		"ItemMap",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
         "CUP_V_O_Ins_Carrier_Rig_Com",
-		"ItemMap",
 		"ItemCompass"
 		};
 		weapons[]=
@@ -1232,13 +1224,11 @@
 		linkedItems[]=
 		{
         "CUP_V_O_Ins_Carrier_Rig_MG",
-		"ItemMap",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
         "CUP_V_O_Ins_Carrier_Rig_MG",
-		"ItemMap",
 		"ItemCompass"
 		};
 		weapons[]=
@@ -1279,13 +1269,11 @@
 		linkedItems[]=
 		{
         "CUP_V_O_Ins_Carrier_Rig_MG",
-		"ItemMap",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
         "CUP_V_O_Ins_Carrier_Rig_MG",
-		"ItemMap",
 		"ItemCompass"
 		};
 		weapons[]=
@@ -1331,13 +1319,11 @@
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_OLI",
-		"ItemMap",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_OLI",
-		"ItemMap",
 		"ItemCompass"
 		};
 		weapons[]=
@@ -1382,7 +1368,6 @@
 		Items[]=
 		{
 		"ACE_fieldDressing",
-		"ACRE_PRC148",
 		"ACE_EarPlugs",
 		"ACE_fieldDressing",
 		"ACE_RangeCard",
@@ -1396,7 +1381,6 @@
 		respawnItems[]=
 		{
 		"ACE_fieldDressing",
-		"ACRE_PRC148",
 		"ACE_EarPlugs",
 		"ACE_fieldDressing",
 		"ACE_RangeCard",
@@ -1420,13 +1404,11 @@
 		linkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_OLI",
-		"ItemMap",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
         "UK3CB_BAF_V_PLCE_Webbing_OLI",
-		"ItemMap",
 		"ItemCompass"
 		};
 		weapons[]=

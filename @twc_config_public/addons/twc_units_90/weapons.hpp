@@ -9,6 +9,22 @@ class cfgWeapons
 	class UK3CB_BAF_L85A2_UGL;
 	class UK3CB_BAF_SUSAT_3D;
 	
+	class rhsgref_uniform_dpm;
+	class twc_rhsgref_uniform_dpm: rhsgref_uniform_dpm
+	{
+		modelSides[] = {0,1,2,3};
+	};
+	class rhsgref_uniform_dpm_olive;
+	class twc_rhsgref_uniform_dpm_olive: rhsgref_uniform_dpm_olive
+	{
+		modelSides[] = {0,1,2,3};
+	};
+	class rhsgref_uniform_olive;
+	class twc_rhsgref_uniform_olive: rhsgref_uniform_olive
+	{
+		modelSides[] = {0,1,2,3};
+	};
+	
 	class CUP_smg_MP5SD6;
 	class TWC_CUP_smg_MP5SD6_clean:CUP_smg_MP5SD6
 	{
@@ -23,6 +39,19 @@ class cfgWeapons
 	class twc_L85_suppressor: uk3cb_baf_silencer_l85
 	{
 		displayName = "T8 Suppressor";
+	};
+	
+	class UK3CB_BAF_L1A1_Wood;
+	class TWC_UK3CB_BAF_L1A1_Wood_SUIT: UK3CB_BAF_L1A1_Wood
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="UK3CB_BAF_SUIT";
+			};
+		};
 	};
 	
 	class UK3CB_BAF_L119A1_CQB;
@@ -53,6 +82,13 @@ class cfgWeapons
 			allowedslots[] = {901};
 			mass = 70;
 		};
+	};
+	
+	class Rifle_Base_F;
+	class CUP_srifle_LeeEnfield: Rifle_Base_F
+	{
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
 	};
 	
 	class UK3CB_BAF_L119A1_FG;

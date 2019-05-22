@@ -2386,10 +2386,10 @@
 //                    1990 Woodland American                    //
 //                                                              //
 //////////////////////////////////////////////////////////////////
-	class rhsgref_nat_base;
-	class rhsgref_nat_woodland: rhsgref_nat_base
+	class SoldierGB;
+	class rhsgref_nat_base: SoldierGB
 	{
-		modelSides[] = {0,1,3};
+		modelSides[] = {0,1,2,3};
 	};
 	class twc_men_1990_us_w_base: B_Soldier_base_F
 	{

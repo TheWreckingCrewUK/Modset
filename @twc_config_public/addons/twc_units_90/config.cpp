@@ -185,6 +185,7 @@ class CfgVehicles
 {
 	class B_Soldier_base_F;
 	
+	#include "1970.hpp"
 	#include "1990.hpp"
 	#include "2000.hpp"
 	

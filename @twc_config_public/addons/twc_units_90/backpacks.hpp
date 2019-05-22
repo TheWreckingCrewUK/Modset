@@ -73,7 +73,7 @@ class twc_oli_belt_2: twc_dpm_belt
 {
 	displayname = "Webbing Belt (Olive ALICE)";
 	model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USArmy\CUP_v_ALICE_webbing.p3d";
-	hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
+	hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
 };
 class twc_tan_belt_2: twc_oli_belt_2
 {
@@ -151,7 +151,101 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 	class UK3CB_BAF_B_Bergen_OLI_Rifleman_A;
 	class CUP_B_GER_Medic_Desert;
 	class UK3CB_BAF_B_Carryall_OLI;
+	class CUP_B_AlicePack_OD;
 	
+
+	class TWC_Backpack_1970_Sectionlead: twc_oli_belt_2
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+	};
+
+
+	class TWC_Backpack_1970_sniper: twc_oli_belt_2
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_mag
+			{
+				magazine = "ukcw_l42_10rnd_mag";
+				count = 17;
+			};
+		};
+	};
+
+	class TWC_Backpack_1970_rifleman_1: twc_oli_belt
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_mag
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 7;
+			};
+		};
+	};
+	class TWC_Backpack_1970_rifleman_2: twc_oli_belt_2
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_mag
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 7;
+			};
+		};
+	};
+	class TWC_Backpack_1970_machineGunner: twc_oli_belt_2
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_belt
+			{
+				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
+				count = 3;
+			};
+		};
+	};
+	class TWC_Backpack_1970_machineGunner_ass: CUP_B_AlicePack_OD
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_belt
+			{
+				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
+				count = 9;
+			};
+		};
+	};
+	class TWC_Backpack_1970_2ic: UK3CB_BAF_B_Carryall_OLI
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_mag
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 15;
+			};
+			class _xx_belt
+			{
+				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
+				count = 3;
+			};
+		};
+	};
 	
 	class TWC_2000_Backpack_UKSF_2IC: UK3CB_BAF_B_Carryall_OLI
 	{
@@ -1259,7 +1353,6 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 		};		
 	};
-	class CUP_B_AlicePack_OD;
 	class twc_men_1990_us_w_backpack_teamlead: CUP_B_AlicePack_OD
 	{
 		scope = 1;
