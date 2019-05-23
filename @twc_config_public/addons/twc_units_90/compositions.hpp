@@ -39,7 +39,7 @@ class CfgGroups
 						class Unit3
 						{
 								side = 1;
-								vehicle = "1970_British_Marksman";
+								vehicle = "1970_British_Rifleman";
 								rank = "PRIVATE";
 								position[] = {7,0,0};
 						};

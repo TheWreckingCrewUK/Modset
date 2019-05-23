@@ -85,6 +85,44 @@
 		{};
 	};
 
+	class CUP_FV432_Bulldog_Base;
+	class CUP_B_FV432_Bulldog_GB_D: CUP_FV432_Bulldog_Base
+	{
+		class Turrets;
+	};
+	class ukcw_fv432: CUP_B_FV432_Bulldog_GB_D
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class ukcw_fv432_gpmg: ukcw_fv432
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L7A2_1"};
+				magazines[] = {"UK3CB_BAF_762_200Rnd_T"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_762
+			{
+				magazine = "UK3CB_BAF_762_200Rnd_T";
+				count = 10;
+			};
+		};
+		class Transportitems
+		{};
+		class TransportWeapons
+		{};
+		class TransportBackpacks
+		{};
+	};
+
 	class rhsusf_caiman_base;
 	class rhsusf_caiman_GPK_base: rhsusf_caiman_base
 	{

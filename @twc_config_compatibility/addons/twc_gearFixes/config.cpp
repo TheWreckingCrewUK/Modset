@@ -910,6 +910,11 @@ class Extended_FiredBIS_EventHandlers {
 			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2;_time = 0.5; if ((_this select 1) == 'ukcw_l37a1_coax') then {_rec = 0.1;_time = 0.3};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15]};";
 		};
 	};
+	class ukcw_fv432_gpmg {
+		class twc_gunshake {
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2;_time = 0.5; if ((_this select 1) == 'ukcw_l37a1_coax') then {_rec = 0.1;_time = 0.3};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15]};";
+		};
+	};
 	class APC_Tracked_01_base_F {
 		class twc_gunshake {
 			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
@@ -998,14 +1003,14 @@ class Extended_Init_EventHandlers
 	{
 		class aihearing
 		{
-			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,300];";
+			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,1300];";
 		};
 	};
 	class Plane
 	{
 		class aihearing
 		{
-			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,500];";
+			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,1500];";
 		};
 	};
 };
