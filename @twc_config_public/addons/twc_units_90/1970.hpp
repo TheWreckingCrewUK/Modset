@@ -122,7 +122,7 @@
 		{
 			"CUP_V_CDF_6B3_2_Green",
 			"UK3CB_BAF_H_Beret_PWRR",
-			
+			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
@@ -130,7 +130,7 @@
 		{
 			"CUP_V_CDF_6B3_2_Green",
 			"UK3CB_BAF_H_Beret_PWRR",
-			
+			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
