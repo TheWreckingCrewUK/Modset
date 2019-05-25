@@ -1,5 +1,7 @@
 params ["_pos","_dir","_type","_cargo"];
 
+if (!isServer) exitwith {};
+
 if (typeName _pos == "STRING") then {_pos = getMarkerPos _pos};
 
 _spawnPos = _pos getPos [4000, _dir - 180];
@@ -38,5 +40,5 @@ _wp2 = _group addWaypoint [_deletePos, 0];
 _wp1 setWaypointType "MOVE";
 _wp2 setWaypointType "MOVE";
 
-_wp1 setWaypointStatements ["true", "{[_x, (vehicle this), false] call ace_cargo_fnc_paradropItem} forEach ((vehicle this) getVariable ['ace_cargo_loaded', []])"];
+_wp1 setWaypointStatements ["true", "if (!isServer) exitwith {}; {[_x, (vehicle this), false] call ace_cargo_fnc_paradropItem} forEach ((vehicle this) getVariable ['ace_cargo_loaded', []])"];
 _wp2 setWaypointStatements ["true", "deleteVehicle (vehicle this); {deleteVehicle _x} forEach (units this);"];
