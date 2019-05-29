@@ -1,8 +1,6 @@
 params ["_unit"];
 
-if (!isServer) exitwith {};
-
-systemChat "Executed";
+if (!isServer || !alive _unit) exitwith {};
 
 _allUnits = units _unit;
 _shouter = selectRandom _allUnits;
