@@ -2489,6 +2489,12 @@ class cfgammo
 		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
 	};
 	
+	class CUP_B_762x51_Tracer_Red;
+	class CUP_B_762x51_Tracer_Red_Splash: CUP_B_762x51_Tracer_Red
+	{
+		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
+	};
+	
 	class BulletBase;
 	class rhs_ammo_762x51_M80_Ball: BulletBase
 	{

@@ -391,11 +391,39 @@ class cfgWeapons
 				slot="CowsSlot";
 				item="rhsusf_acc_ELCAN";
 			};
-			class LinkedItemsFrontSideRail
-			{
-				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15A";
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_ELCAN = 1;
+				};
 			};
+			allowedslots[] = {901};
+			mass = 181;
+		};
+	};
+	class rhs_weap_m249_pip;
+	class twc_rhs_weap_m249_pip_acog: rhs_weap_m249_pip
+	{
+		twc_openbolt = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_ACOG";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_ACOG = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 181;
 		};
 	};
 	
