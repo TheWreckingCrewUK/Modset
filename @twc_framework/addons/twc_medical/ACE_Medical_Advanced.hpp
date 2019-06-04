@@ -52,6 +52,14 @@ class ACE_Medical_Advanced {
 				viscosityChange = 5;
 				onOverDose = "_this call TWC_medical_fnc_onOverDose";
 			};
+			
+			class PainKillers {
+				painReduce = 0.1;
+				timeInSystem = 3600;
+				maxDose = 6;
+				inCompatableMedication[] = {};
+				viscosityChange = 5;
+			};
 		};
 
 		// Reopening Chances - TODO
