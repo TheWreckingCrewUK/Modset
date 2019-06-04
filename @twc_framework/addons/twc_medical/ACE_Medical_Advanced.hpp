@@ -40,7 +40,7 @@ class ACE_Medical_Advanced {
 	class Treatment {
 		class Medication {
 			class Morphine {
-				painReduce = 0.7;
+				painReduce = 0.8;
 				maxDose = 3;
 				viscosityChange = -5;
 				onOverDose = "_this call TWC_medical_fnc_onOverDose";
