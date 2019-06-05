@@ -737,9 +737,73 @@
 	
 	
 	
+	class twc_ussf_scoutpack: CUP_B_ACRScout_m95
+	{
+		hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa"};
+		hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
+		displayname = "Scout Pack (Multicam)";
+		class TransportItems
+		{
+			class _xx_cabletie
+			{
+				name = "ACE_CableTie";
+				count = 5;
+			};
+			class _xx_fdressing
+			{
+				name = "ACE_fieldDressing";
+				count = 5;
+			};
+			class _xx_pdressing
+			{
+				name = "ACE_packingBandage";
+				count = 5;
+			};
+			class _xx_chemblue
+			{
+				name = "Chemlight_blue";
+				count = 3;
+			};
+			class _xx_chemred
+			{
+				name = "Chemlight_red";
+				count = 3;
+			};
+			class _xx_chemgreen
+			{
+				name = "Chemlight_green";
+				count = 3;
+			};
+			class _xx_torch
+			{
+				name = "ACE_Flashlight_XL50";
+				count = 1;
+			};
+			class _xx_shovel
+			{
+				name = "ACE_EntrenchingTool";
+				count = 1;
+			};
+			class _xx_defusal
+			{
+				name = "ACE_DefusalKit";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke_blue
+			{
+				magazine = "SmokeShellBlue";
+				count = 2;
+			};
+		};
+	};
+	
+	
 	class pol_backpack_rif: CUP_B_ACRScout_m95
 	{
-		scope = 1;
+	scope = 1;
 	hiddenselectionstextures[] = {"\A3\Weapons_F\Ammoboxes\Bags\Data\backpack_small_oli_co.paa"};
 	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
 		

@@ -9,6 +9,7 @@ class rhs_western_rifle_scopes_slot_short;
 class rhs_western_rifle_laser_slot_top;
 class rhs_western_rifle_gripod_slot;
 class rhs_western_rifle_underbarrel_slot;
+class CUP_PicatinnyTopMount;
 
 class cfgWeapons
 {
@@ -184,6 +185,274 @@ class cfgWeapons
 			mass = 89.2;
 		};
 	};
+	
+	class twc_m4b2_us_spectre: twc_m4b2_us_eotech
+	{
+		displayName = "MK18 (Spectre)";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_su230a_c";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_sf3p556";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq15_light";
+			};
+		};
+		
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_su230a_c = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+					rhsusf_acc_sf3p556 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq15_light = 1;
+					rhsusf_acc_anpeq15 = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
+					acc_pointer_IR = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+		
+	};
+	
+	class rhs_weap_m4a1_blockII_KAC_bk;
+	class twc_m4b2_black_us_eotech: rhs_weap_m4a1_blockII_KAC_bk
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_eotech_xps3";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_sf3p556";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq15_bk";
+			};
+		};
+		
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_eotech_xps3 = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+					rhsusf_acc_sf3p556 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq15_bk_light = 1;
+					rhsusf_acc_anpeq15_bk = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
+					acc_pointer_IR = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+		
+	};
+	
+	class rhs_weap_hk416d10_LMT_d;
+	class twc_hk416_d_base: rhs_weap_hk416d10_LMT_d
+	{
+		recoil = "twc_rifle_556_short";
+		recoilProne = "twc_rifle_556_short_prone";
+	};
+	class twc_hk416_spectre_desert: twc_hk416_d_base
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_su230a_c";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_sf3p556";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq16a_light";
+			};
+		};
+		
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_su230a_c = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+					rhsusf_acc_sf3p556 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq16a = 1;
+					rhsusf_acc_anpeq16a_light = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
+					acc_pointer_IR = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+		
+	};
+	
+	
+	class rhs_weap_hk416d10_LMT;
+	class twc_hk416_base: rhs_weap_hk416d10_LMT
+	{
+		recoil = "twc_rifle_556_short";
+		recoilProne = "twc_rifle_556_short_prone";
+	};
+	class twc_hk416_eotech_black: twc_hk416_base
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_eotech_xps3";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_sf3p556";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq16a";
+			};
+		};
+		
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_eotech_xps3 = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+					rhsusf_acc_sf3p556 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq16a = 1;
+					rhsusf_acc_anpeq16a_light = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
+					acc_pointer_IR = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+		
+	};
+	
+	
+	class twc_hk416_t1mag_black: twc_hk416_base
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_g33_t1";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_sf3p556";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq16a";
+			};
+		};
+		
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_g33_t1 = 1;
+					rhsusf_acc_g33_t1_flip = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+					rhsusf_acc_sf3p556 = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq16a = 1;
+					rhsusf_acc_anpeq16a_light = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
+					acc_pointer_IR = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+		
+	};
+	
 	class rhs_weap_m4a1_blockII_KAC;
 	class twc_m4b2_us_marksman: rhs_weap_m4a1_blockII_KAC
 	{
