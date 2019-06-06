@@ -498,7 +498,8 @@ switch _mode do {
             _return;
         };
         _isActive = {
-            (actionKeys _this) findIf {{_x call _getCameraKey} >= 0};
+            _keys = (actionKeys _this);
+			(_keys findIf {_x call _getCameraKey} >= 0);
         };
 
         _coef = 0.1;
