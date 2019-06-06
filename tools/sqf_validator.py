@@ -57,7 +57,7 @@ def check_sqf_syntax(filepath):
         for c in content:
             if (lastIsCurlyBrace):
                 lastIsCurlyBrace = False
-                checkForSemiColumn = True
+                checkForSemiColumn = not re.search('findIf', content, re.IGNORECASE)
 
             if c == '\n': # Keeping track of our line numbers
                 lineNumber += 1 # so we can print accurate line number information when we detect a possible error
