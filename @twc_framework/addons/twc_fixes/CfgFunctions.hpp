@@ -30,4 +30,12 @@ class CfgFunctions {
 			};
 		};
 	};
+	
+	class A3 {
+		class Debug {
+			class camera {
+				file = "twc_fixes\functions\fn_camera.sqf";
+			};
+		};
+	};
 };
