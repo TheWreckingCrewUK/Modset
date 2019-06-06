@@ -37,13 +37,17 @@ if (isServer) then {
 		_x moveInCargo _helicopterMCargo;
 	} foreach (units _infantryGroup);
 
-	_moveToUnloadLocation = _helicopterPilots addWaypoint [getMarkerPos _dropMarker, 1]; 
+	_moveToUnloadLocation = _helicopterPilots addWaypoint [getMarkerPos _dropmarker, 1];
 	[_helicopterPilots, 1] setWaypointType "TR UNLOAD";
 	[_helicopterPilots, 1] setWaypointBehaviour "CARELESS";
+
+	_moveToDeleteLocation = _helicopterPilots addWaypoint [_pos, 2];
+	[_helicopterPilots, 2] setWaypointType "MOVE";
+	[_helicopterPilots, 2] setWaypointStatements ["true", "deleteVehicle (vehicle this); {deleteVehicle _x} forEach (units this);"];
 
 	_infantryGetOutLocation = _infantryGroup addWaypoint [getMarkerPos _dropmarker, 1];
 	[_infantryGroup, 1] setWaypointType "GETOUT";
 
-	_infantryMoveLocation = _infantryGroup addWaypoint [getMarkerPos _moveMarker, 2]; 
+	_infantryMoveLocation = _infantryGroup addWaypoint [getMarkerPos _moveMarker, 2];
 	[_infantryGroup, 2] setWaypointType "MOVE";
 };
