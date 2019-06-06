@@ -32,6 +32,18 @@ if (alive _unit) then {
 	};
 
 	missionNamespace setVariable ["ace_medical_maxReviveTime", _adjustedMaxTime];
+	
+	_unCon = (_unit getVariable ["ACE_isUnconscious", false]);
+	if !(_unCon) then {
+		_pain = _unit getVariable ["ace_medical_pain", 0];
+		_painSuppress = _unit getVariable ["ace_medical_painSuppress", 0];
+		
+		if (_pain > _painSuppress) then {
+			if ((_pain - _painSuppress) > 2 && {random(1) > 0.8}) then {
+				[_unit] call ace_medical_fnc_setUnconscious;
+			};
+		};
+	};
 };
 
 // will keep checking during spectate, but does give respawn compat (public)
