@@ -25,6 +25,7 @@ _flagtype = "Flag_UK_F";
 if (_unit isKindOf "TWC_WW2_USMC_Base") then {_flagtype = "LIB_FlagCarrier_USA"};
 
 ForwardBaseTent = createVehicle ["camp", _pos, [], 0, "CAN_COLLIDE"];
+ForwardBaseTent setDir (getDir _unit) + 180;
 ForwardBaseFlag = _flagtype createVehicle getPos _unit;
 ForwardBaseTent setvariable ["ace_medical_isMedicalFacility", true, true];
 
