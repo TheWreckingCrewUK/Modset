@@ -9,5 +9,7 @@ if (isNil "_cachedResult") then {
 	_canBail = _cachedResult;
 };
 
+if (((getposatl _vehicle) select 2) > 10) exitWith { false };
+
 if (_canBail == 0) exitWith { false };
 true;
