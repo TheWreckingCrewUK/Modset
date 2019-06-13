@@ -960,6 +960,11 @@ class Extended_FiredBIS_EventHandlers {
 			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
 		};
 	};
+	class rhs_a3t72tank_base {
+		class twc_gunshake {
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
+		};
+	};
 	//ww2 tanks, not as much recoil management or optic magnification so a bit more shake
 	class LIB_Tank_base {
 		class twc_gunshake {
@@ -1030,6 +1035,7 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
 		hiddenSelectionsMaterials[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_us.rvmat"};
 	};
+	
 
 	class MRAP_01_base_F;
 	class UK3CB_BAF_Panther_Base: MRAP_01_base_F {
@@ -1199,6 +1205,12 @@ class CfgVehicles {
 		};
 	};
 	
+	class APC_Tracked_02_base_F;
+	class rhs_zsutank_base:APC_Tracked_02_base_F
+	{
+		armor = 150;
+		armorstructural = 450;
+	};
 	
 	class Tank;
 	class Tank_F: Tank
@@ -1207,6 +1219,10 @@ class CfgVehicles {
 		{
 			class MainTurret;
 		};
+	};
+	class rhs_a3t72tank_base: Tank_F
+	{
+		armor = 250;
 	};
 	
 	class CUP_MCV80_Base : Tank_F

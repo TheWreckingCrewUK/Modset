@@ -3,21 +3,20 @@
 class cfgammo{
 	class rocketbase;
 	class rhs_ammo_maaws_HE;
-	class CUP_R_OG7_AT: rhs_ammo_maaws_HE
+	class TWC_R_OG7_AT: rhs_ammo_maaws_HE
 	{
-/*
-			scope = 2;
-			maxSpeed=152;
-			timeToLive=25;
-			cost=80;
-			fuseDistance=25;
-			airFriction=-0.0035;
-			deflecting = 10;
-			indirectHit=10;
-			coefGravity =1.5;
-			thrust=1;
-			thrusttime=10;
-*/
+		explosionEffects = "GrenadeExplosion";
+		ace_frag_charge = 32;
+		ace_frag_classes[] = {"ace_frag_tiny_HD"};
+		ace_frag_enabled = 1;
+		ace_frag_force = 1;
+		ace_frag_gurney_c = 2700;
+		ace_frag_gurney_k = "1/2";
+		ace_frag_metal = 200;
+		hit = 80;
+		indirectHit = 8;
+		indirectHitRange = 6;
+		model = "rhsusf\addons\rhsusf_weapons2\m3maaws\ammo_m3maaws.p3d";
 	};
 	class CUP_R_PG7VL_AT: rocketbase
 	{
@@ -52,7 +51,12 @@ class cfgmagazines{
 	class rhs_rpg7_PG7VL_mag;
 	class rhs_rpg7_OG7V_mag: rhs_rpg7_PG7VL_mag
 	{
-		ammo = "rhs_ammo_maaws_HE";
+		ammo = "TWC_R_OG7_AT";
+	};
+	class CA_LauncherMagazine;
+	class CUP_OG7_M : CA_LauncherMagazine
+	{
+		ammo = "TWC_R_OG7_AT";
 	};
 	
 };

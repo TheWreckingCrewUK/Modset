@@ -838,7 +838,7 @@
 	{
 		scope=2;
 		displayName="Helicopter Pilot";
-		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
+		uniformClass="UK3CB_BAF_U_Smock_MTP";
 		backpack="";
 		twc_radioType = "ACRE_PRC148";
 		twc_radioChannel = 1;
@@ -933,7 +933,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		backpack="";
 		linkedItems[]=
 		{
-			"H_PilotHelmetHeli_B",
+			"H_CrewHelmetHeli_B",
 			"UK3CB_BAF_V_Pilot_A",
 			"ItemMap",
 			"ItemCompass",
@@ -942,7 +942,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		respawnLinkedItems[]=
 		{
-			"H_PilotHelmetHeli_B",
+			"H_CrewHelmetHeli_B",
 			"UK3CB_BAF_V_Pilot_A",
 			"ItemMap",		
 			"ItemCompass",

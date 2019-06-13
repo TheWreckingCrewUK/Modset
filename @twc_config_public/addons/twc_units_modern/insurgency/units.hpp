@@ -984,6 +984,70 @@
 		"HandGrenade",
 		"SmokeShell"
 		};
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
+		respawnitems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_CableTie",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
 	};
 	
 			class twc_ana_interpreter: twc_ana_base
@@ -1027,6 +1091,7 @@
 		Items[]=
 		{
 		"ACE_fieldDressing",
+		"ACRE_PRC343",
 		"ACRE_PRC152",
 		"ACE_EarPlugs",
 		"ACE_fieldDressing",
@@ -1040,6 +1105,7 @@
 		respawnItems[]=
 		{
 		"ACE_fieldDressing",
+		"ACRE_PRC343",
 		"ACRE_PRC152",
 		"ACE_EarPlugs",
 		"ACE_fieldDressing",

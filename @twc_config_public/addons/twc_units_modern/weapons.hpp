@@ -957,6 +957,13 @@ class cfgWeapons
 	{
 		class EventHandlers;
 	};
+	class rhs_weap_maaws: Launcher_Base_F
+	{
+		magazines[] = {"rhs_mag_maaws_HEAT","rhs_mag_maaws_HEDP","rhs_mag_maaws_HE","rhs_mag_maaws_flechette"};
+		class EventHandlers: EventHandlers {
+			fired = "params['_unit','_weapon','_muzzle','_mod','_ammo','_magazine','_projectile']; if(isNull _projectile) exitwith {}; if(_ammo != 'rhs_ammo_maaws_flechette') exitwith { };  _velocity = velocity _projectile;_magnatude = vectorMagnitude _velocity; _velocityNormal = vectorNormalized  _velocity;_dir = acos(_velocityNormal select 1); deletevehicle _projectile;for '_i' from 1 to 250 do {_dX = (_velocityNormal select 0) + (random(0.05*2)-0.05);  _dX = (_velocityNormal select 0) + (random(0.05*2)-0.05); _dY = (_velocityNormal select 1) + (random(0.05*2)-0.05);_dZ = (_velocityNormal select 2) + (random(0.05*2)-0.05);  _bVel = (vectorNormalized [_dX,_dY,_dZ]) vectorMultiply _magnatude;_bullet = 'twc_B_steelflechette' createVehiclelocal [0,0,1000];_bullet setShotParents [vehicle _unit,_unit];_bullet setVelocity _bVel; _bullet setposatl getposatl _projectile;};";
+		};
+	};
 	
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
@@ -2332,6 +2339,16 @@ class cfgmagazines{
 		modelSpecial = "\CUP\Weapons\CUP_Weapons_Ammunition\magazines_proxy\CUP_mag_20Rnd_HK417.p3d";
 		modelSpecialIsProxy = 1;
 	};
+	//area defence munition, otherwise known as flechette. paired with buckshot function in the weapons' fired eventhandler
+		class rhs_mag_maaws_HEAT;
+		class rhs_mag_maaws_flechette : rhs_mag_maaws_HEAT
+		{
+			displayName="FFV401 ADM";
+			ammo = rhs_ammo_maaws_flechette;
+			descriptionShort = "Area Defence Munition (Flechette)";
+			displaynameshort = "ADM401";
+		};	
+		
 		class UGL_FlareGreen_F;
 		class twc_l5a4_g : UGL_FlareGreen_F
 		{
@@ -2409,6 +2426,13 @@ class cfgmagazines{
 
 class cfgammo
 {
+	class B_127x99_Ball;
+	class twc_B_steelflechette: B_127x99_Ball
+	{
+		caliber = 7;
+		ace_caliber = 30;
+	};
+	
 	class FlareBase;
 	class F_40mm_Red: FlareBase
 	{
@@ -2470,6 +2494,11 @@ class cfgammo
 	class twc_G_20mm_HE: G_20mm_HE
 	{
 		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",1.1,0.7,250};
+	};
+	class rhs_ammo_maaws_HEAT;
+	class rhs_ammo_maaws_flechette : rhs_ammo_maaws_HEAT
+	{
+		
 	};
 	class R_PG32V_F;
 	class rhs_ammo_panzerfaust60_rocket : R_PG32V_F
