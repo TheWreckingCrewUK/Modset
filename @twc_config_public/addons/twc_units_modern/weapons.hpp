@@ -170,7 +170,7 @@ class cfgWeapons
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
 			class SilencedSound {
-				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+				soundSetShot[] = {"RHSGREF_sd_sbr_Shot_SoundSet","RHSGREF_sd_mmg1_Tail_SoundSet"};
 			};
 		};
 		class Burst:Mode_Burst {
@@ -180,7 +180,7 @@ class cfgWeapons
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
 			class SilencedSound {
-				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+				soundSetShot[] = {"RHSGREF_sd_sbr_Shot_SoundSet","RHSGREF_sd_mmg1_Tail_SoundSet"};
 			};		
 		};
 		class FullAuto:Mode_FullAuto {
@@ -191,7 +191,7 @@ class cfgWeapons
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
 			class SilencedSound {
-				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+				soundSetShot[] = {"RHSGREF_sd_sbr_Shot_SoundSet","RHSGREF_sd_mmg1_Tail_SoundSet"};
 			};	
 		};
 	};
@@ -718,7 +718,7 @@ class cfgWeapons
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
 			class SilencedSound {
-				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+				soundSetShot[] = {"RHSGREF_sd_sbr_Shot_SoundSet","RHSGREF_sd_mmg1_Tail_SoundSet"};
 			};
 		};
 		class Burst:Mode_Burst {
@@ -728,7 +728,7 @@ class cfgWeapons
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
 			class SilencedSound {
-				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+				soundSetShot[] = {"RHSGREF_sd_sbr_Shot_SoundSet","RHSGREF_sd_mmg1_Tail_SoundSet"};
 			};		
 		};
 		class FullAuto:Mode_FullAuto {
@@ -738,7 +738,7 @@ class cfgWeapons
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
 			class SilencedSound {
-				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+				soundSetShot[] = {"RHSGREF_sd_sbr_Shot_SoundSet","RHSGREF_sd_mmg1_Tail_SoundSet"};
 			};	
 		};
 	};
