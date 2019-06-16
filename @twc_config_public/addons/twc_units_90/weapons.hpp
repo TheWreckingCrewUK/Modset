@@ -4,8 +4,8 @@ class asdg_MuzzleSlot_556_3CB;
 
 class cfgWeapons
 {
-	class UK3CB_BAF_L85A2;
-	class UK3CB_BAF_L86A2;
+	class twc_BAF_L85A2_PUBLIC;
+	class UK3CB_BAF_L86A2_public;
 	class UK3CB_BAF_L85A2_UGL;
 	class UK3CB_BAF_SUSAT_3D;
 	
@@ -344,13 +344,13 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
 	};
 	
-	class UK3CB_BAF_L86A1:UK3CB_BAF_L86A2
+	class UK3CB_BAF_L86A1:UK3CB_BAF_L86A2_public
 	{
 		displayName = "L86A1";
 		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
 	};
-	class UK3CB_BAF_L86A1_SUSAT3D:UK3CB_BAF_L86A2
+	class UK3CB_BAF_L86A1_SUSAT3D:UK3CB_BAF_L86A2_public
 	{
 		scope = 1;
 		displayName = "L86A1";
@@ -376,8 +376,8 @@ class cfgWeapons
 			mass = 84;
 		};
 	};
-	class UK3CB_BAF_L110A2;
-		class TWC_UK3CB_BAF_L110A2_SUSAT: UK3CB_BAF_L110A2
+	class UK3CB_BAF_L110A2RIS_public;
+		class TWC_UK3CB_BAF_L110A2_SUSAT: UK3CB_BAF_L110A2RIS_public
 	{
 		scope = 1;
 		author="Hobbs";
@@ -402,7 +402,7 @@ class cfgWeapons
 		};
 	};
 	
-	class UK3CB_BAF_L85A1:UK3CB_BAF_L85A2
+	class UK3CB_BAF_L85A1:twc_BAF_L85A2_PUBLIC
 	{
 		displayName = "L85A1";
 		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
@@ -506,7 +506,7 @@ class cfgWeapons
 	
 
 	
-		class UK3CB_BAF_L85A2_SUSAT:UK3CB_BAF_L85A2
+		class UK3CB_BAF_L85A2_SUSAT:twc_BAF_L85A2_PUBLIC
 	{
 		scope = 1;
 		displayName = "L85A2";

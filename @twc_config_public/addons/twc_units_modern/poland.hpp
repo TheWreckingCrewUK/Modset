@@ -131,7 +131,7 @@
 		scope=2;
 		editorSubcategory = "Men_twc_desert";
 		vehicleClass="Men_twc_desert";
-		uniformClass="rhs_uniform_FROG01_d";
+		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
 			"CUP_V_B_RRV_Scout",
@@ -176,7 +176,7 @@
 		scope=2;
 		editorSubcategory = "Men_twc_desert";
 		vehicleClass="Men_twc_desert";
-		uniformClass="rhs_uniform_FROG01_d";
+		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
 			"CUP_V_B_RRV_Scout",
@@ -252,7 +252,7 @@
 		scope=2;
 		editorSubcategory = "Men_twc_desert";
 		vehicleClass="Men_twc_desert";
-		uniformClass="rhs_uniform_FROG01_d";
+		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
 			"CUP_V_B_RRV_Scout",
@@ -316,7 +316,7 @@
 		scope=2;
 		editorSubcategory = "Men_twc_desert";
 		vehicleClass="Men_twc_desert";
-		uniformClass="rhs_uniform_FROG01_d";
+		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
 			"CUP_V_B_RRV_Scout",
@@ -380,7 +380,7 @@
 		scope=2;
 		editorSubcategory = "Men_twc_desert";
 		vehicleClass="Men_twc_desert";
-		uniformClass="rhs_uniform_FROG01_d";
+		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
 			"CUP_V_B_RRV_Officer",
@@ -430,7 +430,7 @@
 		scope=2;
 		editorSubcategory = "Men_twc_desert";
 		vehicleClass="Men_twc_desert";
-		uniformClass="rhs_uniform_FROG01_d";
+		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
 			"CUP_V_B_RRV_Officer",
@@ -464,7 +464,7 @@
 		scope=2;
 		editorSubcategory = "Men_twc_desert";
 		vehicleClass="Men_twc_desert";
-		uniformClass="rhs_uniform_FROG01_d";
+		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
 			"CUP_V_B_RRV_Scout2",

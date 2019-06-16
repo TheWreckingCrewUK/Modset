@@ -1034,14 +1034,14 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		weapons[]= {
 			"Throw",
 			"Put",
-			"twc_l115a3_wd",
+			"twc_l115a3_wd_covered",
 			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_l115a3_wd",
+			"twc_l115a3_wd_covered",
 			"rhsusf_weap_glock17g4"
 		};
 

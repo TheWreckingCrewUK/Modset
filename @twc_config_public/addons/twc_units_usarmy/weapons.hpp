@@ -109,30 +109,35 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_su230a";
+				item="rhsusf_acc_su230_c";
 			};
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15_bk";
+				item="rhsusf_acc_anpeq15";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="rhsusf_acc_nt4_tan";
 			};
 		};
 		class WeaponSlotsInfo
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_su230a = 1;
+					rhsusf_acc_su230_c = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
-					rhsusf_acc_anpeq15_bk = 1;
-					rhsusf_acc_anpeq15_bk_light = 1;
+					rhsusf_acc_anpeq15 = 1;
+					rhsusf_acc_anpeq15_light = 1;
 				};
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
+					rhsusf_acc_nt4_tan = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -641,11 +646,6 @@ class cfgWeapons
 				slot="PointerSlot";
 				item="rhsusf_acc_anpeq15A";
 			};
-			class LinkedItemsUnderBarrelSlot
-			{
-				slot="UnderBarrelSlot";
-				item="rhsusf_acc_grip3";
-			};
 		};
 		class WeaponSlotsInfo
 		{
@@ -660,9 +660,9 @@ class cfgWeapons
 					rhsusf_acc_anpeq15A = 1;
 				};
 			};
-			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
-					rhsusf_acc_grip3 = 1;
+					twc_acc_nt4_black = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -697,6 +697,11 @@ class cfgWeapons
 					rhsusf_acc_anpeq15A = 1;
 				};
 			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_nt4_black = 1;
+				};
+			};
 			allowedslots[] = {901};
 			mass = 102.96;
 		};
@@ -727,6 +732,11 @@ class cfgWeapons
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
 					rhsusf_acc_anpeq15 = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_nt4_black = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -797,6 +807,11 @@ class cfgWeapons
 					rhsusf_acc_compm4 = 1;
 				};
 			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_nt4_black = 1;
+				};
+			};
 			allowedslots[] = {901};
 			mass = 102.96;
 		};
@@ -820,6 +835,11 @@ class cfgWeapons
 				class compatibleItems {
 					rhsusf_acc_ACOG_USMC = 1;
 					rhsusf_acc_compm4 = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_nt4_black = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -873,6 +893,11 @@ class cfgWeapons
 			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {
 				class compatibleItems {
 					rhsusf_acc_harris_bipod = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_nt4_black = 1;
 				};
 			};
 			allowedslots[] = {901};

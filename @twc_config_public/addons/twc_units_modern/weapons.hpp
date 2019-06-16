@@ -25,13 +25,15 @@ class cfgWeapons
 {
 //////////////////////////////  Modern  //////////////////////////////
 	
-	class UK3CB_BAF_L110A2RIS;
-	class UK3CB_BAF_L129A1;
+	class UK3CB_BAF_L110A2RIS_public;
+	class UK3CB_BAF_L129A1_public;
 	class UK3CB_BAF_L128A1;
-	class UK3CB_BAF_L85A2_UGL;
 	class UK3CB_BAF_L85A2_RIS_Tan;
 	class arifle_Mk20_F;
 	class Rifle_Base_F;
+	
+	
+	
 	
 	class rhsusf_iotv_ocp_base;
 	class rhsusf_plateframe_sapi: rhsusf_iotv_ocp_base
@@ -822,10 +824,18 @@ class cfgWeapons
 	class twc_acc_rotex5_grey: rhsusf_acc_rotex5_grey
 	{
 	};
+	class rhsgref_sdn6_suppressor;
+	class twc_acc_sd6_grey: rhsgref_sdn6_suppressor
+	{
+	};
+	class rhsusf_acc_nt4_black;
+	class twc_acc_nt4_black: rhsusf_acc_nt4_black
+	{
+	};
 	class rhsusf_acc_nt4_tan;
 	class twc_acc_nt4_tan: rhsusf_acc_nt4_tan
 	{
-		descriptionShort = "Suppressor<br/>Used on: HK417<br/>by www.3commandobrigade.com";
+		descriptionShort = "Suppressor<br/>Used on: HK417";
 	};
 	
 	class CUP_H_US_H_PASGT_desert;
@@ -1368,7 +1378,17 @@ class cfgWeapons
 		};
 	};
 	
-	class UK3CB_BAF_L85A2_RIS : UK3CB_BAF_L85A2
+	class twc_BAF_L85A2_PUBLIC : UK3CB_BAF_L85A2
+	{
+	};
+	
+	class UK3CB_BAF_L85A2_UGL : twc_BAF_L85A2_PUBLIC
+	{};
+	
+	class UK3CB_BAF_L85A2_UGL_HWS : twc_BAF_L85A2_PUBLIC
+	{};
+	
+	class UK3CB_BAF_L85A2_RIS : twc_BAF_L85A2_PUBLIC
 	{
 		class WeaponSlotsInfo;
 	};
@@ -1458,7 +1478,7 @@ class cfgWeapons
 		};
 	};
 	
-	class UK3CB_BAF_L110A2_ELCAN3D: UK3CB_BAF_L110A2RIS
+	class UK3CB_BAF_L110A2_ELCAN3D: UK3CB_BAF_L110A2RIS_public
 	{
 		scope = 1;
 		author="FakeMatty";
@@ -1495,7 +1515,7 @@ class cfgWeapons
 			mass = 176;
 		};
 	};
-	class UK3CB_BAF_L129A1_Grippod_TA648: UK3CB_BAF_L129A1
+	class UK3CB_BAF_L129A1_Grippod_TA648: UK3CB_BAF_L129A1_public
 	{
 		scope = 1;
 		author="FakeMatty";
@@ -1624,7 +1644,7 @@ class cfgWeapons
 	};
 //////////////////////////////  Others  //////////////////////////////	
 
-	class twc_l129a1_spotter: UK3CB_BAF_L129A1
+	class twc_l129a1_spotter: UK3CB_BAF_L129A1_public
 	{
 		scope = 1;
 		author="FakeMatty";
@@ -1684,6 +1704,42 @@ class cfgWeapons
 			};
 			allowedslots[] = {901};
 			mass = 97;
+		};
+	};
+	
+	class UK3CB_BAF_L115_pub_Base;
+	class twc_l115a3_wd_covered: UK3CB_BAF_L115_pub_Base
+	{
+		scope = 1;
+		author="FakeMatty";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L129A1";
+				item="RKSL_optic_PMII_525";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="asdg_MuzzleSlot_UK3CB_BAF_L129A1";
+				item="twc_acc_sd6_grey";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L129A1: asdg_OpticRail1913 {
+				class compatibleItems {
+					RKSL_optic_PMII_525 = 1;
+					UK3CB_BAF_MaxiKite = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L129A1: asdg_MuzzleSlot_762_L129_3CB {
+				class compatibleItems {
+					twc_acc_sd6_grey = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 147;
 		};
 	};
 	
@@ -2343,7 +2399,7 @@ class cfgmagazines{
 		class rhs_mag_maaws_HEAT;
 		class rhs_mag_maaws_flechette : rhs_mag_maaws_HEAT
 		{
-			displayName="FFV401 ADM";
+			displayName="FFV401 ADMtest";
 			ammo = rhs_ammo_maaws_flechette;
 			descriptionShort = "Area Defence Munition (Flechette)";
 			displaynameshort = "ADM401";
@@ -2366,7 +2422,7 @@ class cfgmagazines{
 		{
 			ammo = rhs_40mm_white;
 			displayName="L5A4 Round (White)";
-		};	
+		};
 		
 		class rhs_10Rnd_762x54mmR_7N1;
 		class twc_10Rnd_762x54mmR_7N1_P : rhs_10Rnd_762x54mmR_7N1
@@ -2531,6 +2587,10 @@ class cfgammo
 	};
 	class B_762x51_Ball;
 	class rhs_B_762x54_Ball:B_762x51_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_762x54_Ball_Tracer_Green:rhs_B_762x54_Ball
 	{
 		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
 	};
