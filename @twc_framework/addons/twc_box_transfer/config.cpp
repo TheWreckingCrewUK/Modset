@@ -5,7 +5,8 @@ class CfgPatches {
 		requiredVersion = 1.7;
 
 		requiredAddons[] = {
-			"ace_common"
+			"ace_common",
+			"twc_core"
 		};
 
 		author[] = {};
@@ -16,6 +17,6 @@ class CfgPatches {
 	};
 };
 
-#include "CfgEventHandlers.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgSounds.hpp"
 #include "CfgVehicles.hpp"
