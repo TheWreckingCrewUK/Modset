@@ -39,7 +39,7 @@ class TWC_Backpack_WW2_UK_Early_Dismounted_Rifleman: B_LIB_UK_HSack_Tea
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(LIB_10Rnd_770x56,20);
+		ADD_MAGA(LIB_10Rnd_770x56,12);
 	};
 };
 class TWC_Backpack_WW2_UK_Early_Dismounted_Grenadier: B_LIB_UK_HSack_Tea
@@ -47,7 +47,7 @@ class TWC_Backpack_WW2_UK_Early_Dismounted_Grenadier: B_LIB_UK_HSack_Tea
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(LIB_10Rnd_770x56,20);
+		ADD_MAGA(LIB_10Rnd_770x56,12);
 		ADD_MAGA(LIB_1Rnd_G_MillsBomb,8);
 	};
 };
@@ -96,7 +96,7 @@ class TWC_Backpack_WW2_UK_Early_Dismounted_2iC: B_LIB_UK_HSack_Tea
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(LIB_10Rnd_770x56,24);
+		ADD_MAGA(LIB_10Rnd_770x56,20);
 		ADD_MAGA(LIB_30Rnd_770x56,10);
 		ADD_MAGA(SmokeShell,2);
 	};
