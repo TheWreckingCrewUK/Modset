@@ -1,4 +1,4 @@
-params ["_pos", "_type", "_size"];
+params ["_pos", "_type", "_size", "_radius"];
 
 _civArray = switch _type do {
 	case "Arabian": {
@@ -26,7 +26,7 @@ _civArray = switch _type do {
 		"CUP_C_TK_Man_03_Coat",
 		"CUP_C_TK_Man_03_Jack",
 		"CUP_C_TK_Man_03_Waist"]
-	}:
+	};
 	case "Eastern European": {
 		["CUP_C_R_Assistant_01",
 		"CUP_C_R_Citizen_02",
@@ -94,9 +94,9 @@ _civArray = switch _type do {
 		"C_Man_casual_3_F",
 		"C_Man_casual_2_F",
 		"C_Man_casual_1_F",
-		"C_man_1"
+		"C_man_1",
 		"C_man_p_beggar_F"]
-	}:
+	};
 	case "Asian": {
 		["C_man_p_beggar_F_asia",
 		"C_Man_casual_1_F_asia",
@@ -117,7 +117,7 @@ _civArray = switch _type do {
 		"C_man_shorts_2_F_asia",
 		"C_man_shorts_3_F_asia",
 		"C_man_shorts_4_F_asia"]
-	}:
+	};
 	case "African": {
 		["C_man_p_beggar_F_afro",
 		"C_Man_casual_1_F_afro",
@@ -138,17 +138,17 @@ _civArray = switch _type do {
 		"C_man_shorts_2_F_afro",
 		"C_man_shorts_3_F_afro",
 		"C_man_shorts_4_F_afro"]
-	}:
+	};
 };
 
-_location = nearestLocation [_pos, ""];
-
-for "_i" from 0 to _size do {
-	_spawnPos = [_location] call BIS_fnc_randomPos
-	_civ = createAgent [selectRandom _civArray, nearestBuilding _spawnPos, [], 0, "NONE"];
+for "_i" from 1 to _size do {
+	_spawnPos = [[[_pos,_radius]]] call BIS_fnc_randomPos;
+	_group = createGroup civilian;
+	_civ = _group createUnit [selectRandom _civArray, nearestBuilding _spawnPos, [], 3, "NONE"];
 	
-	_movePos = [_location, [], {isOnRoad _this}] call BIS_fnc_randomPos;
-	_wp = (group _civ) addWaypoint [_movePos, 0];
+	_movePos = [[[_pos, _radius]], [], {isOnRoad _this}] call BIS_fnc_randomPos;
+	_wp = _group addWaypoint [_movePos, 0];
 	_wp setWaypointType "MOVE";
+	_wp setWaypointSpeed "LIMITED"";
 	_wp setWaypointStatements ["true", "[this] call twc_fnc_ambientCivWaypoint"];
 };
