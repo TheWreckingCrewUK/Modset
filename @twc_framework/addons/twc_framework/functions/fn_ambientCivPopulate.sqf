@@ -1,4 +1,4 @@
-params ["_pos", "_type", "_size", "_radius"];
+params ["_pos", "_type", "_size", "_radius", "_trigger"];
 
 _civArray = switch _type do {
 	case "Arabian": {
@@ -141,14 +141,21 @@ _civArray = switch _type do {
 	};
 };
 
+_civList = [];
+
 for "_i" from 1 to _size do {
 	_spawnPos = [[[_pos,_radius]]] call BIS_fnc_randomPos;
 	_group = createGroup civilian;
 	_civ = _group createUnit [selectRandom _civArray, nearestBuilding _spawnPos, [], 3, "NONE"];
+	_civList pushBack _civ;
+	_civ setVariable ["TWC_AmbientCiv_Pos", _pos];
+	_civ setVariable ["TWC_AmbientCiv_Radius", _radius];
 	
 	_movePos = [[[_pos, _radius]], [], {isOnRoad _this}] call BIS_fnc_randomPos;
 	_wp = _group addWaypoint [_movePos, 0];
 	_wp setWaypointType "MOVE";
-	_wp setWaypointSpeed "LIMITED"";
+	_wp setWaypointSpeed "LIMITED";
 	_wp setWaypointStatements ["true", "[this] call twc_fnc_ambientCivWaypoint"];
 };
+
+_trigger setVariable ["TWC_AmbientCiv", _civList];

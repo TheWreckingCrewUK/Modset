@@ -902,6 +902,66 @@ class CfgVehicles {
 		};
 	};
 	
+	class TWC_Module_AmbientCiv: Module_F
+	{
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Ambient Civilian Population";
+		function = "twc_fnc_moduleAmbientCiv";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\civPop_ca.paa";
+		functionPriority = 1;
+		class Arguments {
+			class Type {
+				displayName = "Type";
+				description = "Type of Units to spawn";
+				typeName = "STRING";
+				defaultValue = "Arabian";
+				class Values {
+					class Arabian {
+						name = "Arabian";
+						value = "Arabian";
+					};
+					class Eastern_European {
+						name = "Eastern European";
+						value = "Eastern European";
+					};
+					class Mediterranean {
+						name = "Mediterranean";
+						value = "Mediterranean";
+					};
+					class Asian {
+						name = "Asian";
+						value = "Asian";
+					};
+					class African {
+						name = "African";
+						value = "African";
+					};
+				};
+			};
+			class Size {
+				displayName = "Size";
+				description = "Amount of civilians to spawn in.";
+				typeName = "NUMBER";
+				defaultValue = 0;
+			};
+			class Radius {
+				displayName = "Radius";
+				description = "Radius of the circle in which civilians will spawn and move.";
+				typeName = "NUMBER";
+				defaultValue = 0;
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Populate an area with civilians.";
+			sync[] = {""};
+		};
+	};
+	
 	class TWC_Module_Ambient_AttackPlane: ModuleCAS_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
