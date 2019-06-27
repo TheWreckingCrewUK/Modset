@@ -4,6 +4,12 @@
 		armor = 150;
 	};
 	
+	class Tank_F;
+	class rhs_t14_base: Tank_F
+	{
+		armor = 350;
+	};
+	
 	class ACE_medicalSupplyCrate_advanced;
 	class twc_public_medicalbox_small: ACE_medicalSupplyCrate_advanced
 	{
