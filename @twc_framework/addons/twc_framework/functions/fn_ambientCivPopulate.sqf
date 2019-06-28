@@ -150,6 +150,11 @@ for "_i" from 1 to _size do {
 	_civList pushBack _civ;
 	_civ setVariable ["TWC_AmbientCiv_Pos", _pos];
 	_civ setVariable ["TWC_AmbientCiv_Radius", _radius];
+	_civ addEventHandler ["FiredNear", {
+		params ["_unit", "_firer", "_distance", "_weapon", "_muzzle", "_mode", "_ammo", "_gunner"];
+		{deleteWaypoint _x} forEach (waypoints (group _unit));
+		[_unit, getPos _unit, 50, 3, false] spawn twc_fnc_defend;
+	}];
 	
 	_movePos = [[[_pos, _radius]], [], {isOnRoad _this}] call BIS_fnc_randomPos;
 	_wp = _group addWaypoint [_movePos, 0];
