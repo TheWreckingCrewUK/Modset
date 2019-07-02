@@ -1555,7 +1555,7 @@ class CfgVehicles {
 		antiRollbarForceLimit = 40;
 		antiRollbarSpeedMin = 5;
 		antiRollbarSpeedMax = 100;
-		terrainCoef = 5.0;
+		terrainCoef = 2.0;
 		turncoef = 2.0;
 		armor = 700;
 		clutchStrength = 150;
@@ -1618,7 +1618,7 @@ class CfgVehicles {
 		antiRollbarForceLimit = 40;
 		antiRollbarSpeedMin = 30;
 		antiRollbarSpeedMax = 100;
-		terrainCoef = 5.0;
+		terrainCoef = 2.0;
 		turncoef = 2.0;
 		armor = 700;
 		clutchStrength = 150;
