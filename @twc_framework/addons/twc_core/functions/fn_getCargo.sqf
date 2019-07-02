@@ -3,6 +3,7 @@ params ["_vehicle"];
 private _weapons = getWeaponCargo _vehicle;
 private _items = getItemCargo _vehicle;
 private _backpacks = getBackpackCargo _vehicle;
+private _magazines = magazinesAmmoCargo _vehicle;
 
 private _return = [];
 
@@ -17,5 +18,9 @@ private _return = [];
 {
 	_return pushBack ["backpack", _x, ((_backpacks select 1) select _forEachIndex)];
 } forEach (_backpacks select 0);
+
+{
+	_return pushBack ["magazine", (_x select 0), (_x select 1)];
+} forEach _magazines;
 
 _return
