@@ -12,6 +12,7 @@ class CfgFunctions {
 			class setDirFly {};
 			class canGetOutSide {};
 			class getOutSide {};
+			class getCargo {};
 			
 			/** PLAYER RELATED **/
 			class isMember {};
