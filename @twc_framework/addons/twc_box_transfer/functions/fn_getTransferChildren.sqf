@@ -1,14 +1,18 @@
 params ["_target", "_player"];
 
-_vehicles = _player nearEntities [
-		["Ship", "Car", "ReammoBox_F", "Tank", "Helicopter"],
-		7.5
-	];
+_vehicles = _player nearEntities [["Ship", "Car", "ReammoBox_F", "Tank", "Helicopter"], 7.5];
 
 _vehiclesWithInventory = [];
 
 {
-	_maxLoad = [(configFile >> "CfgVehicles" >> _x), "maximumLoad", -1] call BIS_fnc_returnConfigEntry;
+	_cachedMaxLoad = _x getVariable ["TWC_maxLoad", -1];
+	
+	if (_cachedMaxLoad == -1) then {
+		_maxLoad = [(configFile >> "CfgVehicles" >> _x), "maximumLoad", 0] call BIS_fnc_returnConfigEntry;
+		_x setVariable ["TWC_maxLoad", _maxLoad, true];
+	} else {
+		_maxLoad = _cachedMaxLoad;
+	};
 	
 	if (_maxLoad > 0) then { _vehiclesWithInventory pushBack _x; };
 } forEach _vehicles;
@@ -23,7 +27,7 @@ private _actions = [];
 		_displayName,
 		"",
 		{
-			_this call TWC_Box_Transfer_fnc_transferStart;
+			[_target, _player, _x] call TWC_Box_Transfer_fnc_transferStart;
 		},
 		{
 			true
