@@ -6,7 +6,7 @@ private _time = 0;
 // magazines take 1
 // weapons & containers (backpacks) take 1.5
 
-// [time, classname, itemtype]
+// [time, count, classname, itemtype]
 private _events = [];
 
 private _currentCargoItemIndex = 0;
