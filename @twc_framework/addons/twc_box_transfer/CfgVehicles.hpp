@@ -8,7 +8,7 @@ class CfgVehicles {
 					condition = "true";
 					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
 					insertChildren = "_this call TWC_Box_Transfer_fnc_getTransferChildren";
-					icon = "";
+					icon = "twc_box_transfer\ui\transfer_ca.paa";
 				};
 			};
 		};
