@@ -9,6 +9,7 @@ private _range = 250; // hardcoded entry, in metres
 // play start sound, call this function again in a second
 if !(_started) exitWith {
 	[_player, ["TWC_Sound_Whistle_Start", _range]] remoteExecCall ["say3D"];
+	[TWC_Whistle_fnc_whistle, [_player, true], 1] call CBA_fnc_waitAndExecute;
 };
 
 if !(_player in currentlyPlaying) exitWith {

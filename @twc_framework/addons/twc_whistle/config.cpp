@@ -10,7 +10,7 @@ class CfgPatches {
 			"twc_core"
 		};
 		
-		author[] = {"Bosenator"};
+		author = "Bosenator";
 		authorUrl = "thewreckingcrew.eu";
 		version = "1";
 		versionStr = "1";

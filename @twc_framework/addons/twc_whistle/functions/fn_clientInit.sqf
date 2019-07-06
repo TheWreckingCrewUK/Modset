@@ -8,7 +8,7 @@ if (!local _player) exitWith {};
 [
 	"TWC",
 	"twc_whistle",
-	"TWC Whistle",
+	"Signalling Whistle",
 	{
 		[player] call TWC_Whistle_fnc_attempt;
 	},

@@ -1,5 +1,6 @@
-class CfgVehicles {
+class CfgWeapons {
 	class ACE_ItemCore;
+	class CBA_MiscItem_ItemInfo;
 	class TWC_Item_Whistle: ACE_ItemCore {
 		scope = 2;
 		displayName = "Signalling Whistle";
