@@ -10,10 +10,10 @@ if (!local _player) exitWith {};
 	"twc_whistle",
 	"TWC Whistle",
 	{
-		[_player] call TWC_Whistle_fnc_attempt;
+		[player] call TWC_Whistle_fnc_attempt;
 	},
 	{
-		["TWC_Whistle_Play_Stop", _player] call CBA_fnc_serverEvent;
+		["TWC_Whistle_Play_Stop", player] call CBA_fnc_serverEvent;
 	},
 	[
 		DIK_T,
