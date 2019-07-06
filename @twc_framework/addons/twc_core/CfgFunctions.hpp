@@ -26,6 +26,7 @@ class CfgFunctions {
 			class nameToPlayer {};
 			class getPlayer {};
 			class addItem {};
+			class revealPlayer {};
 			
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
