@@ -9,7 +9,7 @@ private _range = 250; // hardcoded entry, in metres
 // play start sound, call this function again in a second
 if !(_started) exitWith {
 	[_player, ["TWC_Sound_Whistle_Start", _range]] remoteExecCall ["say3D"];
-	[TWC_Whistle_fnc_whistle, [_player, true], 1] call CBA_fnc_waitAndExecute;
+	[TWC_Whistle_fnc_whistle, [_player, true], 0.5] call CBA_fnc_waitAndExecute;
 };
 
 if !(_player in currentlyPlaying) exitWith {
@@ -17,7 +17,6 @@ if !(_player in currentlyPlaying) exitWith {
 	[_player, ["TWC_Sound_Whistle_Stop", _range]] remoteExecCall ["say3D"];
 };
 
-private _pitchShift = 0.95 + ((1 / ((random 9) + 1)) / 10);
-[_player, ["TWC_Sound_Whistle_Loop", _range, _pitchShift]] remoteExecCall ["say3D"];
+[_player, ["TWC_Sound_Whistle_Loop", _range]] remoteExecCall ["say3D"];
 
-[TWC_Whistle_fnc_whistle, [_player, true], 1] call CBA_fnc_waitAndExecute;
+[TWC_Whistle_fnc_whistle, [_player, true], 0.5] call CBA_fnc_waitAndExecute;
