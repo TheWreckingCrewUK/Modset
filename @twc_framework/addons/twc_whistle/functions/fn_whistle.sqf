@@ -16,7 +16,7 @@ if !(_player in currentlyPlaying) exitWith {
 	[_player, ["TWC_Sound_Whistle_Stop", _range]] remoteExecCall ["say3D"];
 };
 
-private _pitchShift = 0.95 + (1 / ((random 9) + 1)) / 10;
+private _pitchShift = 0.95 + ((1 / ((random 9) + 1)) / 10);
 [_player, ["TWC_Sound_Whistle_Loop", _range, _pitchShift]] remoteExecCall ["say3D"];
 
 [TWC_Whistle_fnc_whistle, [_player, true], 1] call CBA_fnc_waitAndExecute;
