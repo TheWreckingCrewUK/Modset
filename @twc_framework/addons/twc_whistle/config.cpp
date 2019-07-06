@@ -6,7 +6,8 @@ class CfgPatches {
 		
 		requiredAddons[] = {
 			"ace_common",
-			"cba_main"
+			"cba_main",
+			"twc_core"
 		};
 		
 		author[] = {"Bosenator"};
