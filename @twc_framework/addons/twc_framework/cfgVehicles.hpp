@@ -1687,11 +1687,25 @@ class CfgVehicles {
 				defaultValue = 0;
 			};
 			
-			class soundArgs {
-				displayName = "soundArgs array";
-				description = "[volume, pitch, distance]";
-				typeName = "String";
-				defaultValue = "[4, 1, 1000]";
+			class volume {
+				displayName = "Volume";
+				description = "Volume, usually 1 - 20";
+				typeName = "Number";
+				defaultValue = 4;
+			};
+			
+			class pitch {
+				displayName = "Pitch";
+				description = "Pitch, usually 1";
+				typeName = "Number";
+				defaultValue = 1;
+			};
+			
+			class distance {
+				displayName = "Distance";
+				description = "Distance to be heard, usually 1000";
+				typeName = "Number";
+				defaultValue = 1000;
 			};
 		};
 	};

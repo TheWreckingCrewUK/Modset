@@ -22,11 +22,11 @@ _mid = _logic getVariable "mid";
 _max = _logic getVariable "max";
 _condition = _logic getVariable "condition";
 _isInside = _logic getVariable "isInside";
-_soundArgs = _logic getVariable "soundArgs";
+_volume = _logic getVariable "volume";
+_pitch = _logic getVariable "pitch";
+_distance = _logic getVariable "distance";
 
 _randomPauseRange = [_min, _mid, _max];
+_soundArgs = [_volume, _pitch, _distance];
 
-if (typeName _soundArgs != "ARRAY") exitWith { systemChat "Error: _soundArgs provided wasn't an array."; };
-if (count _soundArgs != 3) exitWith { systemChat "Error: _soundArgs provided malformed."; };
-
-[_fileFullPath, _logic, _isInside, _soundArgs, _randomPauseRange, _condition] call twc_fnc_soundLoop;
+[_soundFilePath, _logic, _isInside, _soundArgs, _randomPauseRange, _condition] call TWC_Core_fnc_soundLoop;

@@ -14,8 +14,9 @@ params [
 
 if (!isServer) exitWith {};
 
+_continue = true;
 _continue = call compile _continueCondition;
-if (!_continue) exitWith {}; // loop has finished.
+if !(_continue) exitWith {}; // loop has finished.
 
 //playSound3D ["CSA38II_sounds\a_battle\csa38_battle1.ogg", thisTrigger, false, getPosATL thisTrigger, 4, 1, 1000];
 
