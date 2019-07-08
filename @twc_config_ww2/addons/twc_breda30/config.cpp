@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class twc_breda30
 	{
-		author = "Anschluss";
+		author = "TWC";
 		units[] = {};
 		weapons[] = {"twc_breda30"};
 		requiredversion = 1;
@@ -140,7 +140,7 @@ class CfgWeapons
 	};
 	class twc_breda30: arifle_MX_Base_F
 	{
-		author = "Anschluss";
+		author = "TWC";
 		scope = 2;
 		model = "\twc_breda30\twc_breda30.p3d";
 		picture = "";

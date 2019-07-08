@@ -1,5 +1,5 @@
 /*
-* Author: Anschluss
+* Author: TWC
 * Adds interaction to platoon commander and sergeant to order take off in a glider.
 *
 * Arguments:

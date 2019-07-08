@@ -1,5 +1,5 @@
 /*
- * Author: Anschluss
+ * Author: TWC
  * Module function to make an existing piece of artillery fire.
  *
  * Arguments:

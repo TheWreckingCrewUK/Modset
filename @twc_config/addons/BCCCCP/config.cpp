@@ -141,7 +141,7 @@ class CfgVehicles
 	class FlagCarrier;	
 	class Flag_USSR_F: FlagCarrier
 	{
-		author="Anschluss";
+		author="TWC";
 		class SimpleObject
 		{
 			animate[]=

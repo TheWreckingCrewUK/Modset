@@ -41,7 +41,7 @@ class CfgVehicles
 			scope = 1;
 			displayname = "";
 			scopecurator = 0;
-			author="Anschluss";
+			author="TWC";
 			model="\TWC_WW2_Ships\cargo_3_back.p3d";
 			destrType=0;
 			featureSize = 100;
@@ -53,7 +53,7 @@ class CfgVehicles
 			scope = 1;
 			displayname = "";
 			scopecurator = 0;
-			author="Anschluss";
+			author="TWC";
 			model="\TWC_WW2_Ships\cargo_3_middle.p3d";
 			destrType=0;
 			featureSize = 100;
@@ -65,7 +65,7 @@ class CfgVehicles
 			scope = 1;
 			displayname = "";
 			scopecurator = 0;
-			author="Anschluss";
+			author="TWC";
 			model="\TWC_WW2_Ships\cargo_3_front.p3d";
 			destrType=0;
 			featureSize = 100;
