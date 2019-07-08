@@ -1,5 +1,5 @@
 /*
- * Author: Anschluss
+ * Author: TWC
  * Module function for an airborne assault.
  *
  * Arguments:

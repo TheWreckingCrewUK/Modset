@@ -1,5 +1,5 @@
 /*
- * Author: Anschluss
+ * Author: TWC
  * Module function to make AA fire around module position.
  *
  * Arguments:
