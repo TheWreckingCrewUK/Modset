@@ -22,6 +22,12 @@ waitUntil {!(isNil "BIS_fnc_init")};
 _cam = "camera" camCreate (player modelToWorld [0, 2, 2]);
 _cam cameraEffect ["internal", "back"];
 
+_ambientLight = [player] call ACE_map_fnc_determineMapLight;
+
+if (_ambientLight select 0) then {
+	camUseNVG true;
+};
+
 [_song] spawn { playMusic (_this select 0); }; // play calculated tune
 [] spawn TWC_Incorporeal_fnc_setPlayerUp;
 
