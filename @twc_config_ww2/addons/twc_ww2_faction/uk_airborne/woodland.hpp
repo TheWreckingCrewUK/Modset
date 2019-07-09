@@ -630,7 +630,7 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Vehicle_Commander: TWC_Infantry_WW2_
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten_Blanco",
-		"H_LIB_UK_Para_Helmet_Mk2_Camo",
+		"H_LIB_UK_Para_Beret",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -638,7 +638,7 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Vehicle_Commander: TWC_Infantry_WW2_
 	respawnLinkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten_Blanco",
-		"H_LIB_UK_Para_Helmet_Mk2_Camo",
+		"H_LIB_UK_Para_Beret",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"

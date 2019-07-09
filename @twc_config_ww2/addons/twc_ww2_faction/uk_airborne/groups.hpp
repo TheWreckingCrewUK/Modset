@@ -251,3 +251,4 @@ class TWC_Groups_##ERA##_##CAMO \
 };
 
 AIRBORNE_GROUPS(Woodland,WW2_UK_Airborne)
+AIRBORNE_GROUPS(Arctic,WW2_UK_Airborne)

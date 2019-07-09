@@ -190,6 +190,10 @@ class CfgEditorSubcategories {
 		displayName = "Infantry (Airborne, Desert)";
 	};
 	
+	class TWC_Infantry_Airborne_Arctic {
+		displayName = "Infantry (Airborne, Arctic)";
+	};
+	
 	class TWC_Infantry_COIN_Woodland {
 		displayName = "Infantry (COIN, Woodland)";
 	};
