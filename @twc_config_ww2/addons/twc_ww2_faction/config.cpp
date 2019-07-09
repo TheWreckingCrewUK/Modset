@@ -459,6 +459,7 @@ class CfgVehicles
 	#include "uk_early\tropic_dismounted.hpp"
 	
 	#include "uk_airborne\woodland.hpp"
+	#include "uk_airborne\arctic.hpp"
 	
 	#include "anzac\desert.hpp"
 	#include "anzac\desert_dismounted.hpp"
