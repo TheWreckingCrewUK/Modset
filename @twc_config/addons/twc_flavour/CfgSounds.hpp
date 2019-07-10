@@ -56,4 +56,10 @@ class CfgSounds {
 		sound[] = {"twc_flavour\sounds\alarms\air_raid_allclear.ogg", 1, 1};
 		titles[] = {};
 	};
+	
+	class twc_sound_radio_norsk {
+		name = "radio_norsk";
+		sound[] = {"twc_flavour\sounds\radio\radio_norsk.ogg", 1, 1};
+		titles[] = {};
+	};
 };
