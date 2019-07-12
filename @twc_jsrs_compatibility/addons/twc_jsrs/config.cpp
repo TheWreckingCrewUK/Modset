@@ -2548,6 +2548,10 @@ class cfgweapons
 					soundSetShot[] = {"jsrs_m16a4_closure_soundshader","twc_L129_Shot_Soundset","RHSGREF_sd_mmg1_Tail_SoundSet"};
 				};
 			};
+			class SilencedSound: BaseSoundModeType 
+			{
+				soundSetShot[] = {"jsrs_m16a4_closure_soundshader","RHSGREF_sd_sbr_Shot_SoundSet","RHSGREF_sd_mmg1_Tail_SoundSet", "jsrs_762mm_distance_silenced_soundshader"};
+			};
 		};
 	
 	class LRR_base_F;
