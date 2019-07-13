@@ -254,13 +254,13 @@ class TWC_Infantry_ColdWar_Regular_Woodland_MG: TWC_Infantry_ColdWar_Regular_Woo
 	displayName="Machine Gunner";
 	weapons[]=
 	{
-		"twc_L7A2",
+		"UK3CB_BAF_L7A2",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[]=
 	{
-		"twc_L7A2",
+		"UK3CB_BAF_L7A2",
 		"Throw",
 		"Put"
 	};

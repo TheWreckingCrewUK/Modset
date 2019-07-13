@@ -163,13 +163,13 @@ class TWC_Infantry_Modern_Regular_Woodland_MG: TWC_Infantry_Modern_Regular_Woodl
 	};
 	weapons[] =
 	{
-		"twc_L7A2",
+		"UK3CB_BAF_L7A2",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"twc_L7A2",
+		"UK3CB_BAF_L7A2",
 		"Throw",
 		"Put"
 	};
