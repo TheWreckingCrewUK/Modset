@@ -174,7 +174,7 @@ class TWC_Backpack_ColdWar_Regular_Platoon_Commander: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_Platoon_Sergeant: SP_Backpack_LargePack
 {
 	scope = 1;
-	maximumLoad = 500;
+	maximumLoad = 600;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
 		ADD_ITEM(ACE_wirecutter,1);
@@ -191,6 +191,7 @@ class TWC_Backpack_ColdWar_Regular_Platoon_Sergeant: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_Platoon_Medic: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 250;
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing,20);
 		ADD_ITEM(ACE_morphine,10);
@@ -241,6 +242,7 @@ class TWC_Backpack_ColdWar_COIN_Platoon_Sergeant: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_COIN_Platoon_Medic: SP_Backpack_LargePack
 {
 	scope = 1;
+	maximumLoad = 250;
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing,20);
 		ADD_ITEM(ACE_morphine,10);
