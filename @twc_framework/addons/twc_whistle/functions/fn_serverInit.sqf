@@ -7,6 +7,7 @@ TWC_Whistle_Play_StartEH = ["TWC_Whistle_Play_Start", {
 
 	[_player] call TWC_Whistle_fnc_whistle;
 	currentlyPlaying pushBackUnique _player;
+	["TWC_Whistle_Sounded", _player] call CBA_fnc_globalEvent;
 }] call CBA_fnc_addEventHandler;
 
 TWC_Whistle_Play_StopEH = ["TWC_Whistle_Play_Stop", {

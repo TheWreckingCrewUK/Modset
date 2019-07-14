@@ -5,6 +5,7 @@ if ("TWC_Item_Clicker" in items _player && TWC_CLICKER_PLAY && (count TWC_CLICKE
 
 	TWC_CLICKER_PLAY = false;
 	TWC_CLICKER_PLAY_QUEUE pushBack "played";
+	["TWC_Clicker_Sounded", _player] call CBA_fnc_localEvent;
 
 	[
 		{
