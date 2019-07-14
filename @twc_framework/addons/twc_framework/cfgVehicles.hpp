@@ -1709,6 +1709,128 @@ class CfgVehicles {
 			};
 		};
 	};
+	
+	#define ADD_SOUND(CLASSNAME,FOLDER) \
+	class TWC_##CLASSNAME { \
+		name = #CLASSNAME; \
+		value = "twc_sounds\sounds\##FOLDER##\##CLASSNAME##.ogg"; \
+	}
+	
+	class TWC_Module_AmbientSound_Simplified: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Ambient Sound (Simplified (((WIP))))";
+		function = "twc_fnc_moduleAmbientSoundSimple";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\ambient_sound_ca.paa";
+		functionPriority = 1;
+		
+		class Arguments {
+			class soundFilePath {
+				displayName = "Sound";
+				description = "Preselected Sounds";
+				typeName = "String";
+				defaultValue = "TWC_radio_chatter";
+				
+				class values {
+					ADD_SOUND(radio_chatter,radio);
+					ADD_SOUND(radio_dunkirk_german,radio);
+					ADD_SOUND(radio_dunkirk_us,radio);
+					ADD_SOUND(radio_norsk,radio);
+					
+					ADD_SOUND(banzai_1,ww2);
+					ADD_SOUND(banzai_2,ww2);
+					ADD_SOUND(banzai_3,ww2);
+					ADD_SOUND(banzai_4,ww2);
+					ADD_SOUND(banzai_5,ww2);
+					
+					ADD_SOUND(bugle_call,other);
+					
+					ADD_SOUND(arab_crowd,crowds);
+					
+					ADD_SOUND(airraid_warning,alarms);
+					ADD_SOUND(airraid_allclear,alarms);
+					ADD_SOUND(car_alarm,alarms);
+					
+					ADD_SOUND(cat,animals);
+					ADD_SOUND(dog,animals);
+					ADD_SOUND(dog_1,animals);
+					ADD_SOUND(dog_2,animals);
+					ADD_SOUND(dog_3,animals);
+					ADD_SOUND(dog_indoors,animals);
+					ADD_SOUND(sheep,animals);
+					ADD_SOUND(sheep_1,animals);
+					ADD_SOUND(sheep_2,animals);
+					ADD_SOUND(sheep_3,animals);
+					ADD_SOUND(sheep_4,animals);
+					ADD_SOUND(wolf,animals);
+					ADD_SOUND(wolf_1,animals);
+					ADD_SOUND(wolf_2,animals);
+					ADD_SOUND(wolf_3,animals);
+					
+					ADD_SOUND(chainsaw,environment);
+					ADD_SOUND(construction,environment);
+					ADD_SOUND(construction_1,environment);
+					ADD_SOUND(fire,environment);
+					ADD_SOUND(strong_wind,environment);
+					ADD_SOUND(wind,environment);
+					ADD_SOUND(wind_1,environment);
+				};
+			};
+			
+			class min {
+				displayName = "min time";
+				description = "min time to wait between loops";
+				typeName = "Number";
+				defaultValue = 30;
+			};
+			
+			class mid {
+				displayName = "mid time";
+				description = "mid time to wait between loops";
+				typeName = "Number";
+				defaultValue = 45;
+			};
+			
+			class max {
+				displayName = "max time";
+				description = "max time to wait between loops";
+				typeName = "Number";
+				defaultValue = 60;
+			};
+			
+			class condition {
+				displayName = "Stop Condition";
+				description = "Condition to check for when to stop";
+				typeName = "String";
+				defaultValue = "triggerActivated forExample";
+			};
+			
+			class isInside {
+				displayName = "Is Inside?";
+				description = "Is the sound coming from inside something?";
+				typeName = "BOOL";
+				defaultValue = 0;
+			};
+			
+			class volume {
+				displayName = "Volume";
+				description = "Volume, usually 1 - 20";
+				typeName = "Number";
+				defaultValue = 5;
+			};
+			
+			class distance {
+				displayName = "Distance";
+				description = "Distance to be heard, usually 1000 for battles";
+				typeName = "Number";
+				defaultValue = 50;
+			};
+		};
+	};
 
 	/* class TWC_Module_ArtillerySpotter: Module_F {
 		author = "[TWC] Bosenator";
