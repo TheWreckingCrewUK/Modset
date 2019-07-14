@@ -17,7 +17,7 @@ _totalPlayerCount = count (_allPlayers - entities "HeadlessClient_F");
 _panTimePerUnit = (40 / _totalPlayerCount) max 1.5;
 [true] call ace_common_fnc_disableUserInput;
 //disableUserInput true;
-enableSimulation false;
+player enableSimulation false;
 
 waitUntil {!(isNil "BIS_fnc_init")};
 _cam = "camera" camCreate (player modelToWorld [0, 2, 2]);
@@ -106,7 +106,7 @@ camDestroy _cam;
 disableUserInput false;
 disableUserInput true;
 disableUserInput false; */
-enableSimulation true;
+player enableSimulation true;
 [false] call ace_common_fnc_disableUserInput;
 
 "dynamicBlur" ppEffectEnable true;
