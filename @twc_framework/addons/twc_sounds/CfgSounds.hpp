@@ -38,4 +38,29 @@ class CfgSounds {
 	
 	ADD_SOUND(airraid_warning,alarms);
 	ADD_SOUND(airraid_allclear,alarms);
+	ADD_SOUND(car_alarm,alarms);
+	
+	ADD_SOUND(cat,animals);
+	ADD_SOUND(dog,animals);
+	ADD_SOUND(dog_1,animals);
+	ADD_SOUND(dog_2,animals);
+	ADD_SOUND(dog_3,animals);
+	ADD_SOUND(dog_indoors,animals);
+	ADD_SOUND(sheep,animals);
+	ADD_SOUND(sheep_1,animals);
+	ADD_SOUND(sheep_2,animals);
+	ADD_SOUND(sheep_3,animals);
+	ADD_SOUND(sheep_4,animals);
+	ADD_SOUND(wolf,animals);
+	ADD_SOUND(wolf_1,animals);
+	ADD_SOUND(wolf_2,animals);
+	ADD_SOUND(wolf_3,animals);
+	
+	ADD_SOUND(chainsaw,environment);
+	ADD_SOUND(construction,environment);
+	ADD_SOUND(construction_1,environment);
+	ADD_SOUND(fire,environment);
+	ADD_SOUND(strong_wind,environment);
+	ADD_SOUND(wind,environment);
+	ADD_SOUND(wind_1,environment);
 };
