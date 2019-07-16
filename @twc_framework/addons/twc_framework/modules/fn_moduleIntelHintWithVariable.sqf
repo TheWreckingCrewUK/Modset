@@ -18,12 +18,13 @@ if (!_activated || !isServer) exitWith {};
 _title = _logic getVariable "Title";
 _message = _logic getVariable "Message";
 _variableName = _logic getVariable "VariableName";
+_access = _logic getVariable "Access";
 
 // Wait until PostInit has completed, then execute our function
 [{
 	params ["_units","_title","_message", "_variableName"];
-	{ [_x, _title, _message, _variableName] call twc_fnc_intelHintWithVariable; } forEach _units;
-}, [_units, _title, _message, _variableName], 0.05] call CBA_fnc_waitAndExecute;
+	{ [_x, _title, _message, _variableName, _access] call twc_fnc_intelHintWithVariable; } forEach _units;
+}, [_units, _title, _message, _variableName, _access], 0.05] call CBA_fnc_waitAndExecute;
 
 if (!isNull _logic) then {
 	deleteVehicle _logic;

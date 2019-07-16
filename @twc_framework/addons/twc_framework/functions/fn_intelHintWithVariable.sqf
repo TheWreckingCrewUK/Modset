@@ -19,7 +19,7 @@
 */
 if(!isServer)exitWith{};
 
-params["_unit", "_name", "_string", "_variableName"];
+params["_unit", "_name", "_string", "_variableName", ["_access", 0, [0]]];
 
 _intelHintID = (_unit getVariable ["intelHintID", -1]) + 1;
 _unit setVariable ["intelHintID", _intelHintID, true];
@@ -29,6 +29,11 @@ _previousHints set [_intelHintID, _string];
 _unit setVariable ["intelHint", _previousHints, true];
 
 missionNamespace setVariable [_variableName, false, true];
+
+_condition = "true";
+if (_access == 1) then {
+	_condition = "[_this, false, true] call TWC_fnc_isHighestRank";
+};
 
 [_unit,
 	[
@@ -45,7 +50,7 @@ missionNamespace setVariable [_variableName, false, true];
 		true,
 		false,
 		"",
-		"true",
+		_condition,
 		7,
 		false
 	]

@@ -1314,6 +1314,25 @@ class CfgVehicles {
 				typeName="String";
 				defaultValue="";
 			};
+			
+			class Access {
+				displayName = "Who Can Interact";
+				description = "Who can activate this hint?";
+				typeName = "Number";
+				defaultValue = "0";
+				
+				class Values {
+					class 0 {
+						name = "Anybody";
+						value = 0;
+					};
+					
+					class 1 {
+						name = "Highest Two Ranks";
+						value = 1;
+					};
+				};
+			};
 		};
 		class ModuleDescription: ModuleDescription {
 			description = "Intel Hint";
@@ -1353,6 +1372,25 @@ class CfgVehicles {
 				description = "Name of the GLOBAL variable to use";
 				typeName = "String";
 				defaultValue = "";
+			};
+			
+			class Access {
+				displayName = "Who Can Interact";
+				description = "Who can activate this hint?";
+				typeName = "Number";
+				defaultValue = "0";
+				
+				class Values {
+					class 0 {
+						name = "Anybody";
+						value = 0;
+					};
+					
+					class 1 {
+						name = "Highest Two Ranks";
+						value = 1;
+					};
+				};
 			};
 		};
 
