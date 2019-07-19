@@ -25,8 +25,12 @@ class cfgWeapons
 {
 //////////////////////////////  Modern  //////////////////////////////
 	
-	class UK3CB_BAF_L110A2RIS_public;
-	class UK3CB_BAF_L129A1_public;
+	class UK3CB_BAF_L110A2RIS;
+	class UK3CB_BAF_L110A2RIS_public: UK3CB_BAF_L110A2RIS
+	{};
+	class UK3CB_BAF_L129A1;
+	class UK3CB_BAF_L129A1_public: UK3CB_BAF_L129A1
+	{};
 	class UK3CB_BAF_L128A1;
 	class UK3CB_BAF_L85A2_RIS_Tan;
 	class arifle_Mk20_F;
@@ -1707,7 +1711,9 @@ class cfgWeapons
 		};
 	};
 	
-	class UK3CB_BAF_L115_pub_Base;
+	class UK3CB_BAF_L115A3;
+	class UK3CB_BAF_L115_pub_Base: UK3CB_BAF_L115A3
+	{};
 	class twc_l115a3_wd_covered: UK3CB_BAF_L115_pub_Base
 	{
 		scope = 1;

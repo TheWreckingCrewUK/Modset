@@ -95,13 +95,13 @@
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_M16A2"
+		"CUP_arifle_M16A1"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_M16A2"
+		"CUP_arifle_M16A1"
 		};
 		magazines[]=
 		{
