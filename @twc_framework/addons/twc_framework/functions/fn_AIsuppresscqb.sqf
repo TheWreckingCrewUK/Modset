@@ -25,9 +25,9 @@ if (isnil "_enemy") then {
 	_enemy = (allplayers call bis_fnc_selectrandom);
 };
 
-if (isnull "_enemy") then {
+/* if (isnull "_enemy") then {
 	_enemy = (allplayers call bis_fnc_selectrandom);
-};
+}; */
 
 _check = 0;
 _npos = getpos _enemy;
