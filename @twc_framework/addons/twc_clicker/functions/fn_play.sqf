@@ -1,6 +1,6 @@
 params ["_player"];
 
-if ("TWC_Item_Clicker" in items _player && TWC_CLICKER_PLAY && (count TWC_CLICKER_PLAY_QUEUE < 3)) then {
+if ("TWC_Item_Clicker" in items _player && TWC_CLICKER_PLAY && (count TWC_CLICKER_PLAY_QUEUE < 5)) then {
 	[_player, "TWC_Sound_Clicker_1"] remoteExecCall ["say3D"];
 
 	TWC_CLICKER_PLAY = false;
