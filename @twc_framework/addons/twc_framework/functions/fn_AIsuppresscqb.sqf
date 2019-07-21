@@ -15,7 +15,7 @@
 */
 
 //Recieved Parameters
-params ["_unit", ["_inittime", time], "_enemy"];
+params ["_unit", "_enemy"];
 
 systemchat "mod cqb";
 
@@ -24,11 +24,11 @@ _ogroup = group _unit;
 if (isnil "_enemy") then {
 	_enemy = (allplayers call bis_fnc_selectrandom);
 };
-
+/*
 if (isnull "_enemy") then {
 	_enemy = (allplayers call bis_fnc_selectrandom);
 };
-
+*/
 _check = 0;
 _npos = getpos _enemy;
 _radius = 15;
@@ -60,4 +60,4 @@ if ((random 1) > 0.2) then {
 
 sleep 3;
 
-[_unit, _inittime] spawn TWC_fnc_aisuppress;
+[_unit] spawn TWC_fnc_aisuppress;

@@ -15,7 +15,7 @@
 */
 
 //Recieved Parameters
-params ["_unit", ["_inittime", time]];
+params ["_unit"];
 
 
 _unit setvariable ["twc_aisuppression", 1, true];
@@ -24,7 +24,10 @@ _unit setvariable ["twc_aisuppression", 1, true];
 //systemchat ("mangotest");
 //if (_inittime < (time - 600)) exitwith {_unit setvariable ["twc_aisuppression", 0];};
 
-
+_inittime = _unit getvariable ["twc_ai_inittime", -5];
+if (_inittime == -5) then {
+	_unit setvariable ["twc_ai_inittime", time];
+};
 
 while {((getSuppression _unit) < 0.02) && ((getSuppression _unit) > (-0.02)) && (alive _unit)} do {
 if ((local _unit)) then {
@@ -183,8 +186,10 @@ if ((side _unit) == civilian) then {
 };
 };
 
+_inittime = _unit getvariable ["twc_ai_inittime", -5];
 if (_inittime < (time - 600)) exitwith {
 	_unit setvariable ["twc_aisuppression", 0, true];
+	_unit setvariable ["twc_ai_inittime", -5];
 };
 
 sleep 5;
