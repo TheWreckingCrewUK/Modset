@@ -1,0 +1,38 @@
+[b]
+[color=#ff9933]Platoon Commander [/color] (T): [color=#ccccff]No-One[/color]
+[color=#ff9933]Platoon Sergeant[/color] (T): [color=#ccccff]No-One[/color]
+Platoon Medic (T): [color=#ccccff]No-One[/color]
+FAC (T): [color=#ccccff]No-One[/color]
+[color=#ff9933]Fixed-Wing Pilot[/color] (T): [color=#ccccff]No-One[/color]
+
+[color=#ff9933]Section Commander[/color] (T): [color=#ccccff]No-One[/color]
+Rifleman (AT): [color=#ccccff]No-One[/color]
+Grenadier: [color=#ccccff]No-One[/color]
+Auto-Rifleman: [color=#ccccff]No-One[/color]
+[color=#ff9933]2IC[/color] (T): [color=#ccccff]No-One[/color]
+Auto-Rifleman: [color=#ccccff]No-One[/color]
+Machine Gunner: [color=#ccccff]No-One[/color]
+Marksman (AT): [color=#ccccff]No-One[/color]
+
+[color=#ff9933]Section Commander[/color] (T): [color=#ccccff]No-One[/color]
+Rifleman (AT): [color=#ccccff]No-One[/color]
+Grenadier: [color=#ccccff]No-One[/color]
+Auto-Rifleman: [color=#ccccff]No-One[/color]
+[color=#ff9933]2IC[/color] (T): [color=#ccccff]No-One[/color]
+Auto-Rifleman: [color=#ccccff]No-One[/color]
+Machine Gunner: [color=#ccccff]No-One[/color]
+Marksman (AT): [color=#ccccff]No-One[/color]
+
+[color=#ff9933]Section Commander[/color] (T): [color=#ccccff]No-One[/color]
+Rifleman (AT): [color=#ccccff]No-One[/color]
+Grenadier: [color=#ccccff]No-One[/color]
+Auto-Rifleman: [color=#ccccff]No-One[/color]
+[color=#ff9933]2IC[/color] (T): [color=#ccccff]No-One[/color]
+Auto-Rifleman: [color=#ccccff]No-One[/color]
+Machine Gunner: [color=#ccccff]No-One[/color]
+Marksman (AT): [color=#ccccff]No-One[/color]
+[/b]
+
+(T) - This slot requires training, if you wish to play this slot you either have to be previously trained or able to attend the training this Wednesday.
+
+[b][color=#ff9933]Reserve List:[/color][/b]

@@ -1,0 +1,34 @@
+[u][color=#ffffff]Crusader III Tank[/color][/u]
+[color=#ff9933]Tank Commander[/color] (T): [color=#ccccff]No-One[/color]
+Tank Gunner (T): [color=#ccccff]No-One[/color]
+Tank Driver (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Valentine II Tank[/color][/u]
+[color=#ff9933]Tank Commander[/color] (T): [color=#ccccff]No-One[/color]
+Tank Gunner (T): [color=#ccccff]No-One[/color]
+Tank Driver (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Sherman III Tank[/color][/u]
+[color=#ff9933]Tank Commander[/color] (T): [color=#ccccff]No-One[/color]
+Tank Gunner (T): [color=#ccccff]No-One[/color]
+Tank Driver (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Sherman VC Tank[/color][/u]
+[color=#ff9933]Tank Commander[/color] (T): [color=#ccccff]No-One[/color]
+Tank Gunner (T): [color=#ccccff]No-One[/color]
+Tank Driver (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Cromwell IV Tank[/color][/u]
+[color=#ff9933]Tank Commander[/color] (T): [color=#ccccff]No-One[/color]
+Tank Gunner (T): [color=#ccccff]No-One[/color]
+Tank Driver (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Churchill III Tank[/color][/u]
+[color=#ff9933]Tank Commander[/color] (T): [color=#ccccff]No-One[/color]
+Tank Gunner (T): [color=#ccccff]No-One[/color]
+Tank Driver (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Churchill VII Tank[/color][/u]
+[color=#ff9933]Tank Commander[/color] (T): [color=#ccccff]No-One[/color]
+Tank Gunner (T): [color=#ccccff]No-One[/color]
+Tank Driver (T): [color=#ccccff]No-One[/color]
