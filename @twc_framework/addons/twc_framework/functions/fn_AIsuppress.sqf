@@ -9,7 +9,7 @@
 * <NONE>
 *
 * Example:
-* [leader _group] spawn TWC_Core_fnc_aiscramble;
+* [leader _group] spawn TWC_fnc_aisuppress;
 *
 * Public: No
 */
@@ -18,21 +18,33 @@
 params ["_unit", ["_inittime", time]];
 
 
-_unit setvariable ["twc_aisuppression", 1];
+_unit setvariable ["twc_aisuppression", 1, true];
 
 
+//systemchat ("mangotest");
 //if (_inittime < (time - 600)) exitwith {_unit setvariable ["twc_aisuppression", 0];};
 
 
 
-while {((getSuppression _unit) < 0.02) && (alive _unit)} do {
+while {((getSuppression _unit) < 0.02) && ((getSuppression _unit) > (-0.02)) && (alive _unit)} do {
+if ((local _unit)) then {
+	//diag_log ("yuppers" + (str (getSuppression _unit)));
+	} else {
+	//diag_log ("nuppers" + (str (getSuppression _unit)));
+	};
+	
 	sleep 1;
 };
 if (!(alive _unit)) exitwith {};
 
+
 _enemy = _unit findnearestenemy _unit;
+if (_enemy == objnull) then {
+	_enemy = allplayers call bis_fnc_selectrandom;
+};
+//diag_log ("appletest" + (str typeof _enemy));
 if ((_enemy distance _unit) < 80) exitwith {
-	[_unit, _inittime, _enemy] spawn TWC_Core_fnc_aisuppresscqb;
+	[_unit, _enemy] spawn TWC_fnc_aisuppresscqb;
 };
 
 _debug = missionnamespace getvariable ["twcdb", 0];
@@ -42,7 +54,28 @@ if (_debug == 1) then {
 };
 
 _ogroup = group _unit;
-_oside = side _unit;
+
+
+
+
+	_oside = _unit getvariable ["_twcscram_oside", 8];
+	_oside = 8;
+	if (side _unit == east) then {
+		_oside = 0;
+	} else {
+		if (side _unit == west) then {
+			_oside = 1;
+		} else {
+			if (side _unit == independent) then {
+				_oside = 2;
+			};
+		};
+	};
+	
+	if (_oside == 8) then {
+		_unit getvariable ["_twcscram_oside", _oside];
+	};
+
 //_ngroup = creategroup [sidelogic, true];
 _ngroup = creategroup [civilian, true];
 
@@ -83,7 +116,7 @@ if ((count units _ogroup) < 3) then {
 		hideobject _placeholderunit;
 		_placeholderunit allowdamage false;
 		_placeholderunit disableai "all";
-		sleep 30;
+		sleep 40;
 		deletevehicle _placeholderunit;
 	};
 };
@@ -111,12 +144,6 @@ _unit setspeedmode "full";
 (group _unit) setBehaviour "aware";
 _time = (_unit distance _npos) min (5 + (random 10));
 sleep _time;
-if ((count units _ogroup) == 0) then {
-	_ogroup = creategroup _oside;
-	if (_enemy != objnull) then {
-		_wp1 = _ogroup addwaypoint [getpos _enemy, 10];
-	};
-};
 [_unit] joinsilent _ogroup;
 
 _unit enableai "target";
@@ -125,11 +152,40 @@ _unit enableai "checkvisible";
 _unit setspeedmode "auto";
 (group _unit) setBehaviour "combat";
 if ((random 1) > 0.3) then {
-	[[_npos select 0,_npos select 1, 1], nil, [_unit], 3, 1, false, false] call ace_ai_fnc_garrison;
+	//[[_npos select 0,_npos select 1, 1], nil, [_unit], 3, 1, false, false] call ace_ai_fnc_garrison;
 };
 
 
+[_unit, _enemy] spawn {
+params ["_unit", "_oside", "_enemy"];
+sleep 4;
+if ((side _unit) == civilian) then {
+	_oside = _unit getvariable ["_twcscram_oside", 0];
+	if (_oside == 0) then {
+		_oside = east;
+	} else {
+		if (_oside == 1) then {
+			_oside = west;
+		} else {
+			if (_oside == 2) then {
+				_oside = independent;
+			};
+		};
+	};
+	_ogroup = creategroup _oside;
+	[_unit] joinsilent _ogroup;
+	if (isnil "_enemy") then {
+		_enemy = objnull;
+	};
+	if (_enemy != objnull) then {
+		_wp1 = _ogroup addwaypoint [getpos _enemy, 10];
+	};
+};
+};
 
-sleep 3;
+if (_inittime < (time - 600)) exitwith {
+	_unit setvariable ["twc_aisuppression", 0, true];
+};
 
-[_unit, _inittime] spawn TWC_Core_fnc_aisuppress;
+sleep 5;
+[_unit, _inittime] spawn TWC_fnc_aisuppress;

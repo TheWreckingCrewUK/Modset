@@ -47,6 +47,10 @@ class CfgFunctions {
 			class mortarwalk {};
 			class init{};
 			class addACEInteraction {};
+			class aiscramblenew {};
+			class aiscramble {};
+			class aisuppresscqb {};
+			class aisuppress {};
 			
 			/** AMBIENT AIRCRAFT **/
 			class ambientFlyBy {};

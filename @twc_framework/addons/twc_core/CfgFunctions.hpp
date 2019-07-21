@@ -39,9 +39,6 @@ class CfgFunctions {
 			class isNightTime {};
 			class objectAmbientLight {};
 			class unflipVehicleQuick {};
-			class aiscramble {};
-			class aisuppresscqb {};
-			class aisuppress {};
 			
 			/** DEBUG TOOLS **/
 			class drawBoundingBox {};

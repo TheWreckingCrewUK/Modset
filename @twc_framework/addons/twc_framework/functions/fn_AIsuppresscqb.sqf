@@ -17,11 +17,17 @@
 //Recieved Parameters
 params ["_unit", ["_inittime", time], "_enemy"];
 
-
+systemchat "mod cqb";
 
 _ogroup = group _unit;
 
+if (isnil "_enemy") then {
+	_enemy = (allplayers call bis_fnc_selectrandom);
+};
 
+if (isnull "_enemy") then {
+	_enemy = (allplayers call bis_fnc_selectrandom);
+};
 
 _check = 0;
 _npos = getpos _enemy;
@@ -47,11 +53,11 @@ sleep (4 + random 10);
 _unit setspeedmode "auto";
 _unit reveal [_enemy, 1.5];
 if ((random 1) > 0.2) then {
-	[[_npos select 0,_npos select 1, 1], nil, [_unit], 3, 1, false, false] call ace_ai_fnc_garrison;
+	//[[_npos select 0,_npos select 1, 1], nil, [_unit], 3, 1, false, false] call ace_ai_fnc_garrison;
 };
 
 
 
 sleep 3;
 
-[_unit, _inittime] spawn TWC_Core_fnc_aisuppress;
+[_unit, _inittime] spawn TWC_fnc_aisuppress;

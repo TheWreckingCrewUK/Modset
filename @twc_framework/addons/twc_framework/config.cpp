@@ -32,8 +32,9 @@ class CfgPatches {
 			"cba_ai",
 			"A3_Modules_F",
 			"ace_magazinerepack",
-			"TWC_Core",
-			"TWC_Sounds"
+			"TWC_Core"
+			//"TWC_Core",
+			//"TWC_Sounds"
 		};
 
 		author[]={};
