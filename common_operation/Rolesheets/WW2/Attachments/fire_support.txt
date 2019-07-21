@@ -1,0 +1,21 @@
+[u][color=#ffffff]PIAT Team[/color][/u]
+AT Gunner (T): [color=#ccccff]No-One[/color]
+Assistant AT Gunner (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Boys AT Rifle[/color][/u]
+AT Rifleman (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Bren Team[/color][/u]
+[color=#ff9933]MG Team Leader[/color] (T): [color=#ccccff]No-One[/color]
+Machine Gunner: [color=#ccccff]No-One[/color]
+Assistant Machine Gunner: [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Sniper Team[/color][/u]
+[color=#ff9933]Spotter[/color] (T): [color=#ccccff]No-One[/color]
+Sniper (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Marksman[/color][/u]
+Marksman (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]2 inch Mortar[/color][/u]
+Platoon Mortar (T): [color=#ccccff]No-One[/color]

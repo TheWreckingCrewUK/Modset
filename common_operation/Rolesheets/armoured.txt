@@ -1,0 +1,47 @@
+[center]
+[b]
+[color=#ff9933]Squadron Leader[/color] (T): [color=#ccccff]No-One[/color]
+[color=#ff9933]Squadron Sergeant Major[/color] (T): [color=#ccccff]No-One[/color]
+
+[color=#ff9933]1 Tank Troop Commander [/color](T):[color=#ccccff]No-One[/color]
+Gunner: [color=#ccccff]No-One[/color]
+Driver: [color=#ccccff]No-One[/color]
+
+[color=#ff9933]Tank Commander [/color](T):[color=#ccccff]No-One[/color]
+Gunner: [color=#ccccff]No-One[/color]
+Driver: [color=#ccccff]No-One[/color]
+
+[color=#ff9933]Tank Commander [/color](T):[color=#ccccff]No-One[/color]
+Gunner: [color=#ccccff]No-One[/color]
+Driver: [color=#ccccff]No-One[/color]
+
+
+[color=#ff9933]2 Tank Troop Commander [/color](T):[color=#ccccff]No-One[/color]
+Gunner: [color=#ccccff]No-One[/color]
+Driver: [color=#ccccff]No-One[/color]
+
+[color=#ff9933]Tank Commander [/color](T):[color=#ccccff]No-One[/color]
+Gunner: [color=#ccccff]No-One[/color]
+Driver: [color=#ccccff]No-One[/color]
+
+[color=#ff9933]Tank Commander [/color](T):[color=#ccccff]No-One[/color]
+Gunner: [color=#ccccff]No-One[/color]
+Driver: [color=#ccccff]No-One[/color]
+
+
+[color=#ff9933]3 Tank Troop Commander [/color](T):[color=#ccccff]No-One[/color]
+Gunner: [color=#ccccff]No-One[/color]
+Driver: [color=#ccccff]No-One[/color]
+
+[color=#ff9933]Tank Commander [/color](T):[color=#ccccff]No-One[/color]
+Gunner: [color=#ccccff]No-One[/color]
+Driver: [color=#ccccff]No-One[/color]
+
+[color=#ff9933]Tank Commander [/color](T):[color=#ccccff]No-One[/color]
+Gunner: [color=#ccccff]No-One[/color]
+Driver: [color=#ccccff]No-One[/color]
+[/b]
+
+(T) - This slot requires training, if you wish to play this slot you either have to be previously trained or able to attend the training this Wednesday.
+
+[b][color=#ff9933]Reserve List:[/b]
