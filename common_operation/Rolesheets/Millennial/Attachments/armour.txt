@@ -1,0 +1,14 @@
+[u][color=#ffffff]FV4201 Chieftain Tank[/color][/u]
+[color=#ff9933]Tank Commander[/color] (T): [color=#ccccff]No-One[/color]
+Tank Gunner (T): [color=#ccccff]No-One[/color]
+Tank Driver (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]FV101 Scorpion Tank[/color][/u]
+[color=#ff9933]Tank Commander[/color] (T): [color=#ccccff]No-One[/color]
+Tank Gunner (T): [color=#ccccff]No-One[/color]
+Tank Driver (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]FV107 Scimitar Tank[/color][/u]
+[color=#ff9933]Tank Commander[/color] (T): [color=#ccccff]No-One[/color]
+Tank Gunner (T): [color=#ccccff]No-One[/color]
+Tank Driver (T): [color=#ccccff]No-One[/color]
