@@ -1,4 +1,3 @@
-[center]
 [b]
 [color=#ff9933]Platoon Commander [/color] (T): [color=#ccccff]No-One[/color]
 [color=#ff9933]Platoon Sergeant[/color] (T): [color=#ccccff]No-One[/color]
@@ -38,4 +37,4 @@ Assistant Machine Gunner: [color=#ccccff]No-One[/color]
 
 (T) - This slot requires training, if you wish to play this slot you either have to be previously trained or able to attend the training this Wednesday.
 
-[b][color=#ff9933]Reserve List:[/b]
+[b][color=#ff9933]Reserve List:[/color][/b]
