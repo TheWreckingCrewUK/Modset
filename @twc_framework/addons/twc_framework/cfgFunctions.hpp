@@ -100,6 +100,7 @@ class CfgFunctions {
 			class modulemortarwalk {};
 			class moduleACEInteract {};
 			class moduleAmbientSound {};
+			class moduleAmbientSoundSimp {};
 		};
 		
 		class cache {
