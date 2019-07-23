@@ -1,19 +1,7 @@
 params ["_player"];
 
-if ("TWC_Item_Clicker" in items _player && TWC_CLICKER_PLAY && (count TWC_CLICKER_PLAY_QUEUE < 5)) then {
-	[_player, "TWC_Sound_Clicker_1"] remoteExecCall ["say3D"];
+// no clicker, no click
+if (({_x isKindOf ["TWC_Item_Clicker_1", configFile >> "CfgWeapons"]} count (items _caller)) < 1) exitWith { false };
 
-	TWC_CLICKER_PLAY = false;
-	TWC_CLICKER_PLAY_QUEUE pushBack "played";
-	["TWC_Clicker_Sounded", _player] call CBA_fnc_localEvent;
-
-	[
-		{
-			if (count TWC_CLICKER_PLAY_QUEUE > 0) then {
-				TWC_CLICKER_PLAY_QUEUE deleteAt 0;
-			};
-		}, 
-		[],
-		20
-	] call CBA_fnc_waitAndExecute;
-};
+[_caller, "TWC_Item_Clicker_1"] call twc_medical_fnc_removeMedicalItem;
+["TWC_Clicker_Sounded", _player] call CBA_fnc_localEvent;
