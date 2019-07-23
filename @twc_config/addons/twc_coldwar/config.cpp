@@ -14,12 +14,18 @@ class CfgPatches
 			"SP_Facewear",
 			"SP_Headgear",
 			"SP_Uniforms",
-			"SP_Weapons"
+			"SP_Weapons",
+			"SP_Enfield",
+			"SP_Sterling"
 		};
 	};
 };
 
 class EventHandlers;
+
+class CBA_DisposableLaunchers {
+	sp_l1a1_law66_ready[] = {"sp_l1a1_law66","sp_l1a1_law66_used"};
+};
 
 class CfgAmmo
 {
