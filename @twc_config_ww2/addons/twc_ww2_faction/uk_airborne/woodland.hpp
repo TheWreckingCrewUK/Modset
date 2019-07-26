@@ -21,6 +21,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Rifleman: TWC_Infantry_WW2_UK_Late_W
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 class TWC_Infantry_WW2_UK_Airborne_Woodland_Grenadier: TWC_Infantry_WW2_UK_Late_Woodland_Grenadier
 {
@@ -43,6 +46,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Grenadier: TWC_Infantry_WW2_UK_Late_
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 class TWC_Infantry_WW2_UK_Airborne_Woodland_SMG: TWC_Infantry_WW2_UK_Late_Woodland_SMG
 {
@@ -68,12 +74,14 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_SMG: TWC_Infantry_WW2_UK_Late_Woodla
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"LIB_ACC_No4_Mk2_Bayo"
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"LIB_ACC_No4_Mk2_Bayo"
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
 	};
 	weapons[] =
 	{
@@ -109,6 +117,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_MG: TWC_Infantry_WW2_UK_Late_Woodlan
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 class TWC_Infantry_WW2_UK_Airborne_Woodland_MGASS: TWC_Infantry_WW2_UK_Late_Woodland_MGASS
 {
@@ -131,6 +142,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_MGASS: TWC_Infantry_WW2_UK_Late_Wood
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 class TWC_Infantry_WW2_UK_Airborne_Woodland_SectionCommander: TWC_Infantry_WW2_UK_Late_Woodland_SectionCommander
 {
@@ -156,12 +170,14 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_SectionCommander: TWC_Infantry_WW2_U
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"LIB_ACC_No4_Mk2_Bayo"
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"LIB_ACC_No4_Mk2_Bayo"
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
 	};
 	weapons[] =
 	{
@@ -199,6 +215,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_2iC: TWC_Infantry_WW2_UK_Late_Woodla
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 
 //Platoon Command
@@ -226,12 +245,14 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Commander: TWC_Infantry_WW2_
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"LIB_ACC_No4_Mk2_Bayo"
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"LIB_ACC_No4_Mk2_Bayo"
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
 	};
 	weapons[] =
 	{
@@ -271,6 +292,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_U
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Medic: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Medic
 {
@@ -296,12 +320,14 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Medic: TWC_Infantry_WW2_UK_L
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"LIB_ACC_No4_Mk2_Bayo"
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"LIB_ACC_No4_Mk2_Bayo"
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
 	};
 	weapons[] =
 	{
@@ -337,6 +363,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Runner: TWC_Infantry_WW2_UK_
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Mortar: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Mortar
 {
@@ -359,6 +388,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Mortar: TWC_Infantry_WW2_UK_
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_CSM
 {
@@ -381,6 +413,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_CSM: TWC_Infantry_WW2_UK_Lat
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 
 //AT
@@ -404,6 +439,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_PIAT_Gunner: TWC_Infantry_WW2_UK_Lat
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 class TWC_Infantry_WW2_UK_Airborne_Woodland_PIAT_Ass: TWC_Infantry_WW2_UK_Late_Woodland_PIAT_Ass
 {
@@ -438,6 +476,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_PIAT_Ass: TWC_Infantry_WW2_UK_Late_W
 		"Throw",
 		"Put"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 
 //Sniper Team
@@ -462,6 +503,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Sniper: TWC_Infantry_WW2_UK_Late_Woo
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 class TWC_Infantry_WW2_UK_Airborne_Woodland_Spotter: TWC_Infantry_WW2_UK_Late_Woodland_Spotter
 {
@@ -484,6 +528,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Spotter: TWC_Infantry_WW2_UK_Late_Wo
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 
 //Artillery
@@ -522,6 +569,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Artillery_Commander: TWC_Infantry_WW
 		"Throw",
 		"Put"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 class TWC_Infantry_WW2_UK_Airborne_Woodland_Artillery_Crew: TWC_Infantry_WW2_UK_Late_Woodland_Artillery_Crew
 {
@@ -544,6 +594,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Artillery_Crew: TWC_Infantry_WW2_UK_
 		"itemMap",
 		"ItemWatch"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 class TWC_Infantry_WW2_UK_Airborne_Woodland_FO: TWC_Infantry_WW2_UK_Late_Woodland_FO
 {
@@ -580,6 +633,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_FO: TWC_Infantry_WW2_UK_Late_Woodlan
 		"Throw",
 		"Put"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 
 //Aircraft
@@ -620,6 +676,9 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_FAC: TWC_Infantry_WW2_UK_Late_Woodla
 		"Throw",
 		"Put"
 	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 
 //FVs
