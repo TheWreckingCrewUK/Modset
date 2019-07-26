@@ -10,8 +10,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Rifleman: TWC_Infantry_WW2_UK_Airborne
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -19,8 +18,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Rifleman: TWC_Infantry_WW2_UK_Airborne
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_Grenadier: TWC_Infantry_WW2_UK_Airborne_Woodland_Grenadier
@@ -33,8 +31,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Grenadier: TWC_Infantry_WW2_UK_Airborn
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -42,8 +39,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Grenadier: TWC_Infantry_WW2_UK_Airborn
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_SMG: TWC_Infantry_WW2_UK_Airborne_Woodland_SMG
@@ -56,8 +52,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_SMG: TWC_Infantry_WW2_UK_Airborne_Wood
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -65,8 +60,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_SMG: TWC_Infantry_WW2_UK_Airborne_Wood
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_MG: TWC_Infantry_WW2_UK_Airborne_Woodland_MG
@@ -79,8 +73,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_MG: TWC_Infantry_WW2_UK_Airborne_Woodl
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -88,8 +81,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_MG: TWC_Infantry_WW2_UK_Airborne_Woodl
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_MGASS: TWC_Infantry_WW2_UK_Airborne_Woodland_MGASS
@@ -102,8 +94,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_MGASS: TWC_Infantry_WW2_UK_Airborne_Wo
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -111,8 +102,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_MGASS: TWC_Infantry_WW2_UK_Airborne_Wo
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_SectionCommander: TWC_Infantry_WW2_UK_Airborne_Woodland_SectionCommander
@@ -125,8 +115,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_SectionCommander: TWC_Infantry_WW2_UK_
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -134,8 +123,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_SectionCommander: TWC_Infantry_WW2_UK_
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_2iC: TWC_Infantry_WW2_UK_Airborne_Woodland_2iC
@@ -148,8 +136,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_2iC: TWC_Infantry_WW2_UK_Airborne_Wood
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -157,8 +144,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_2iC: TWC_Infantry_WW2_UK_Airborne_Wood
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 
@@ -173,8 +159,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Commander: TWC_Infantry_WW2_UK
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -182,8 +167,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Commander: TWC_Infantry_WW2_UK
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Sergeant: TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Sergeant
@@ -196,8 +180,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Sergeant: TWC_Infantry_WW2_UK_
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -205,8 +188,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Sergeant: TWC_Infantry_WW2_UK_
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Medic: TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Medic
@@ -219,8 +201,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Medic: TWC_Infantry_WW2_UK_Air
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -228,8 +209,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Medic: TWC_Infantry_WW2_UK_Air
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Runner: TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Runner
@@ -242,8 +222,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Runner: TWC_Infantry_WW2_UK_Ai
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -251,8 +230,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Runner: TWC_Infantry_WW2_UK_Ai
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Mortar: TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Mortar
@@ -265,8 +243,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Mortar: TWC_Infantry_WW2_UK_Ai
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -274,8 +251,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_Mortar: TWC_Infantry_WW2_UK_Ai
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_CSM: TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_CSM
@@ -288,8 +264,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_CSM: TWC_Infantry_WW2_UK_Airbo
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -297,8 +272,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_CSM: TWC_Infantry_WW2_UK_Airbo
 		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 
@@ -313,8 +287,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_PIAT_Gunner: TWC_Infantry_WW2_UK_Airbo
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -322,8 +295,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_PIAT_Gunner: TWC_Infantry_WW2_UK_Airbo
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_PIAT_Ass: TWC_Infantry_WW2_UK_Airborne_Woodland_PIAT_Ass
@@ -336,8 +308,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_PIAT_Ass: TWC_Infantry_WW2_UK_Airborne
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -345,8 +316,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_PIAT_Ass: TWC_Infantry_WW2_UK_Airborne
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 
@@ -361,8 +331,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Sniper: TWC_Infantry_WW2_UK_Airborne_W
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -370,8 +339,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Sniper: TWC_Infantry_WW2_UK_Airborne_W
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_Spotter: TWC_Infantry_WW2_UK_Airborne_Woodland_Spotter
@@ -384,8 +352,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Spotter: TWC_Infantry_WW2_UK_Airborne_
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -393,8 +360,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Spotter: TWC_Infantry_WW2_UK_Airborne_
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 
@@ -409,8 +375,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Artillery_Commander: TWC_Infantry_WW2_
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -418,8 +383,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Artillery_Commander: TWC_Infantry_WW2_
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_Artillery_Crew: TWC_Infantry_WW2_UK_Airborne_Woodland_Artillery_Crew
@@ -432,8 +396,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Artillery_Crew: TWC_Infantry_WW2_UK_Ai
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -441,8 +404,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Artillery_Crew: TWC_Infantry_WW2_UK_Ai
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_WW2_UK_Airborne_Arctic_FO: TWC_Infantry_WW2_UK_Airborne_Woodland_FO
@@ -455,8 +417,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_FO: TWC_Infantry_WW2_UK_Airborne_Woodl
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -464,8 +425,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_FO: TWC_Infantry_WW2_UK_Airborne_Woodl
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 
@@ -480,8 +440,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_FAC: TWC_Infantry_WW2_UK_Airborne_Wood
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
@@ -489,8 +448,7 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_FAC: TWC_Infantry_WW2_UK_Airborne_Wood
 		"H_LIB_UK_Para_Helmet_Mk2_w",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch",
-		"TWC_Item_Clicker_25"
+		"ItemWatch"
 	};
 };
 
