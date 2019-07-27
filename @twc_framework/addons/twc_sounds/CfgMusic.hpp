@@ -18,4 +18,7 @@ class CfgMusic {
 	ADD_MUSIC(coldwar_night_intro,operation);
 	ADD_MUSIC(ww2_day_intro,operation);
 	ADD_MUSIC(ww2_night_intro,operation);
+	
+	/** special **/
+	ADD_MUSIC(special_1,operation);
 };
