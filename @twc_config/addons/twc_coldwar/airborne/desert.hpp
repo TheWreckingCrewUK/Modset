@@ -232,6 +232,14 @@ class TWC_Infantry_ColdWar_Airborne_Desert_Platoon_Medic: TWC_Infantry_ColdWar_R
 		"itemMap",
 		"ItemWatch"
 	};
+	weapons[] +=
+	{
+		"twc_fieldTent"
+	};
+	respawnweapons[] +=
+	{
+		"twc_fieldTent"
+	};
 };
 class TWC_Infantry_ColdWar_Airborne_Desert_CSM: TWC_Infantry_ColdWar_Regular_Dismounted_Desert_CSM
 {

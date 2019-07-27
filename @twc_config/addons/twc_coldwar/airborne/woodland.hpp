@@ -216,6 +216,7 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Medic: TWC_Infantry_ColdWar
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
 	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	"twc_fieldTent",
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
@@ -231,6 +232,14 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Medic: TWC_Infantry_ColdWar
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	weapons[] +=
+	{
+		"twc_fieldTent"
+	};
+	respawnweapons[] +=
+	{
+		"twc_fieldTent"
 	};
 };
 class TWC_Infantry_ColdWar_Airborne_Woodland_CSM: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_CSM

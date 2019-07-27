@@ -167,15 +167,13 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_SectionCommander: TWC_Infantry_WW2_U
 		"itemMap",
 		"ItemWatch"
 	};
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
 		"LIB_ACC_No4_Mk2_Bayo",
 		"TWC_Item_Clicker_25"
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		"LIB_ACC_No4_Mk2_Bayo",
 		"TWC_Item_Clicker_25"
 	};
@@ -242,15 +240,13 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Commander: TWC_Infantry_WW2_
 		"itemMap",
 		"ItemWatch"
 	};
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
 		"LIB_ACC_No4_Mk2_Bayo",
 		"TWC_Item_Clicker_25"
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		"LIB_ACC_No4_Mk2_Bayo",
 		"TWC_Item_Clicker_25"
 	};
@@ -317,27 +313,27 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_Medic: TWC_Infantry_WW2_UK_L
 		"itemMap",
 		"ItemWatch"
 	};
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
 		"LIB_ACC_No4_Mk2_Bayo",
 		"TWC_Item_Clicker_25"
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		"LIB_ACC_No4_Mk2_Bayo",
 		"TWC_Item_Clicker_25"
 	};
 	weapons[] =
 	{
 		"LIB_Sten_Mk5",
+		"twc_fieldTent",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"LIB_Sten_Mk5",
+		"twc_fieldTent",
 		"Throw",
 		"Put"
 	};

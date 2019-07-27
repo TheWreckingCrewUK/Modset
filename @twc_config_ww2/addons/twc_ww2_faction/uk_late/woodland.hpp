@@ -233,6 +233,7 @@ class TWC_Infantry_WW2_UK_Late_Woodland_SectionCommander: TWC_Infantry_WW2_UK_La
 		MAG_2("SmokeShell")
 	};
 	nightItems[] = {
+		MAG_2("Chemlight_green"),
 		MAG_2("ACE_HandFlare_White")
 	};
 };
@@ -300,6 +301,11 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Commander: TWC_Infantry_WW2_UK_L
 		MAG_2("SmokeShellBlue"),
 		MAG_2("SmokeShellRed"),
 		MAG_2("SmokeShellGreen")
+	};
+	nightItems[] = {
+		MAG_2("Chemlight_green"),
+		MAG_2("ACE_HandFlare_White"),
+		"ACE_Flashlight_MX991"
 	};
 };
 class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Commander
