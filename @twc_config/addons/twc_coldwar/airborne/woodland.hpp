@@ -216,7 +216,6 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Medic: TWC_Infantry_ColdWar
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
 	uniformClass="SP_72Para_DenisonTrops_1_Item";
-	"twc_fieldTent",
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
