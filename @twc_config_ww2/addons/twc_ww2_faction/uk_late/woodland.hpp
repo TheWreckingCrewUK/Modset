@@ -233,6 +233,7 @@ class TWC_Infantry_WW2_UK_Late_Woodland_SectionCommander: TWC_Infantry_WW2_UK_La
 		MAG_2("SmokeShell")
 	};
 	nightItems[] = {
+		MAG_2("Chemlight_green"),
 		MAG_2("ACE_HandFlare_White")
 	};
 };
@@ -270,6 +271,18 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Commander: TWC_Infantry_WW2_UK_L
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable ['twc_keepMap',true]";
 	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"fow_i_whistle",
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"fow_i_whistle",
+		"ACE_MapTools"
+	};
 	weapons[] =
 	{
 		"LIB_Sten_Mk2",
@@ -300,6 +313,11 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Commander: TWC_Infantry_WW2_UK_L
 		MAG_2("SmokeShellBlue"),
 		MAG_2("SmokeShellRed"),
 		MAG_2("SmokeShellGreen")
+	};
+	nightItems[] = {
+		MAG_2("Chemlight_green"),
+		MAG_2("ACE_HandFlare_White"),
+		"ACE_Flashlight_MX991"
 	};
 };
 class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Commander
@@ -408,6 +426,16 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Mortar: TWC_Infantry_WW2_UK_Late
 		"itemMap",
 		"ItemWatch"
 	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No4",
@@ -435,7 +463,7 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Mortar: TWC_Infantry_WW2_UK_Late
 		MAG_4("twc_2inch_he_1rnd")
 	};
 	nightItems[] = {
-		MAG_8("twc_2inch_illum_1rnd")
+		MAG_6("twc_2inch_illum_1rnd")
 	};
 };
 class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Sergeant
