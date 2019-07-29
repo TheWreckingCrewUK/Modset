@@ -39,9 +39,9 @@ if (_access == 1) then {
 			_messages = (_this select 0) getVariable ["intelHint", []];
 			_message = (_messages select (_this select 3 select 0));
 			hint _message;
-			player createDiaryRecord ["Convo", ["Conversation", _message]];
+			player createDiaryRecord ["Diary", ["Conversation", _message]];
 		},
-		[_intelHintID],
+		[_intelHintID, _unit],
 		6,
 		true,
 		false,

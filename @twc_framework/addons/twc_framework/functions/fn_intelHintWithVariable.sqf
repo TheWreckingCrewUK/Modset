@@ -42,7 +42,7 @@ if (_access == 1) then {
 			_messages = (_this select 0) getVariable ["intelHint", []];
 			_message = (_messages select (_this select 3 select 1));
 			hint _message;
-			player createDiaryRecord ["Convo", ["Conversation", _message]];
+			player createDiaryRecord ["Diary", ["Conversation", _message]];
 			missionNamespace setVariable [(_this select 3 select 0), true, true];
 		},
 		[_variableName, _intelHintID],
