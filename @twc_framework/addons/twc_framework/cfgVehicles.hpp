@@ -800,10 +800,12 @@ class CfgVehicles {
 						value="Takistani_Army_2";
 					};
 					class Fallscirmjager
+					{
 						name = "Fallschirmjäger (JU-52)";
 						value = "Fallscirmjager";
 					};
 					class Fallscirmjager_Sicily
+					{
 						name = "Fallschirmjäger Sicily (JU-52)";
 						value = "Fallscirmjager_Sicily";
 					};
