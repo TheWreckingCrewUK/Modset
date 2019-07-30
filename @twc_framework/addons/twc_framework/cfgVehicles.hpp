@@ -799,6 +799,16 @@ class CfgVehicles {
 						name="Takistani Section (An-2)";
 						value="Takistani_Army_2";
 					};
+					class Fallscirmjager
+					{
+						name = "Fallschirmjäger (JU-52)";
+						value = "Fallscirmjager";
+					};
+					class Fallscirmjager_Sicily
+					{
+						name = "Fallschirmjäger Sicily (JU-52)";
+						value = "Fallscirmjager_Sicily";
+					};
 				};
 			};
 			class Type_Plane
