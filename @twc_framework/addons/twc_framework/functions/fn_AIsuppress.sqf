@@ -131,7 +131,7 @@ _unit domove _npos;
 _unit disableai "target";
 _unit disableai "autotarget";
 _unit disableai "checkvisible";
-{_unit forgetTarget _x} foreach allplayers;
+//{_unit forgetTarget _x} foreach allplayers;
 _unit domove _npos;
 
 /*
