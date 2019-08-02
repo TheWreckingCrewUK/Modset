@@ -430,6 +430,11 @@ class CfgVehicles {
 						name="Illum";
 						value="ILLUM";
 					};
+					class Illum_IR
+					{
+						name = "Illum IR";
+						value = "ILLUM_IR";
+					};
 				};
 			};
 			class Rounds
