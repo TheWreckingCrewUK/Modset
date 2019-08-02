@@ -36,6 +36,10 @@ class CfgSounds {
 	
 	ADD_SOUND(arab_crowd,crowds);
 	
+	ADD_SOUND(artillery_1,artillery);
+	ADD_SOUND(artillery_2,artillery);
+	ADD_SOUND(artillery_3,artillery);
+	
 	ADD_SOUND(airraid_warning,alarms);
 	ADD_SOUND(airraid_allclear,alarms);
 	ADD_SOUND(car_alarm,alarms);
