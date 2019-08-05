@@ -35,6 +35,8 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 	
 	if (_isDebug) exitWith { systemChat "Skipping intro, due to debug mode..."; };
 	
+	[] call TWC_Incorporeal_fnc_setPlayerUp;
+	
 	// JIP'd in, don't show the camera stuff.
 	if (_isDisabled || _missionStarted) exitWith {
 		[TWC_Operation_Name, TWC_Operation_Creator, _operationEra, _isNightOp, _missionStarted] call TWC_Incorporeal_fnc_startLegacyIntro;
