@@ -24,7 +24,7 @@ twc_boatSafetyType = _type;
 player addEventHandler ["GetOutMan",{
 	if(typeOf (_this select 2) isEqualTo twc_boatSafetyType) then{
 		player allowDamage false;
-		sleep 3;
-		player allowDamage true;
+		
+		[{ player allowDamage true; }, [], 3] call CBA_fnc_waitAndExecute;
 	};
 }];
