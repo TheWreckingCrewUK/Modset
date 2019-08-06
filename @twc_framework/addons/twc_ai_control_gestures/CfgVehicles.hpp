@@ -15,6 +15,7 @@ class CfgVehicles {
 					displayName = "Advance";
 					condition = "true";
 					statement = "[_target] call TWC_AI_Control_Gestures_fnc_signalAdvance";
+					icon = "";
 					showDisabled = 1;
 				};
 				
@@ -22,6 +23,7 @@ class CfgVehicles {
 					displayName = "Halt";
 					condition = "true":
 					statement = "[_target] call TWC_AI_Control_Gestures_fnc_signalHalt";
+					icon = "";
 					showDisabled = 1;
 				};
 			};

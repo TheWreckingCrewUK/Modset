@@ -6,33 +6,35 @@ params ["_thisUnit"];
 // Find which one's in control
 if (!local _thisUnit) exitWith {};
 
-/**
-
-Do radi check on _unit.
-For all civilian units/vehicles in radi, act upon;
-
-For halt:
-	- set variable on unit, saying player halted
-	- add hold waypoint at their current location, order 0 (should halt immediately)
+_fnc_checkNearbyPlayers = {
+	params ["_group"];
 	
-	- check periodically whilst hold, if players are in range
-		- if none are remove hold waypoint and variable, should resume route
-	
-For advance:
-	- check if variable on unit is set
-		- if so, remove waypoint at 0 (should be hold), civ should return to route
-		- nill the variable
-
-**/
-
-["TWC_AI_Control_Gestures_doAdvance", {
-	params ["_unit"];
-	
-	
-}] call CBA_fnc_addEventHandler;
+	if ({_x distance _leader < 150} count allPlayers == 0) then {
+		deleteWaypoint [_group, 0];
+		_group setVariable ["TWC_AI_Control_Gestures_Halted", false, true];
+	} else {
+		[_fnc_checkNearbyPlayers, [_group], 3] call CBA_fnc_waitAndExecute;
+	};
+};
 
 ["TWC_AI_Control_Gestures_doHalt", {
-	params ["_unit"];
+	params ["_group"];
 	
+	_group setVariable ["TWC_AI_Control_Gestures_Halted", true, true];
+	_waypoint = _group addWaypoint [position (leader _group), 0];
+	_waypoint setWaypointType "HOLD";
+	[_group, 0] setWaypointBehaviour "CARELESS";
 	
+	_group call _fnc_checkNearbyPlayers;
+}] call CBA_fnc_addEventHandler;
+
+["TWC_AI_Control_Gestures_doAdvance", {
+	params ["_group"];
+	
+	_hasPlayerHaltedThem = _group getVariable ["TWC_AI_Control_Gestures_Halted", false];
+	
+	if (_hasPlayerHaltedThem) then {
+		deleteWaypoint [_group, 0];
+		_group setVariable ["TWC_AI_Control_Gestures_Halted", false, true];
+	};
 }] call CBA_fnc_addEventHandler;
