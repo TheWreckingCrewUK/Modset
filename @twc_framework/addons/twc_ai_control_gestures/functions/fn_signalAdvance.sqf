@@ -2,6 +2,11 @@ params ["_unit"];
 
 if (!local _unit) exitWith {};
 
+_lastTime = _unit getVariable ["TWC_AI_Control_Gestures_Advance_lastTime", 0];
+if ((time - _lastTime) < 2) exitWith {};
+
+_unit setVariable ["TWC_AI_Control_Gestures_Advance_lastTime", time];
+
 // animation
 [_unit, 'gestureFollow'] call ace_common_fnc_doGesture;
 
