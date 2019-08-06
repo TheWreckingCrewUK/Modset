@@ -12,7 +12,7 @@ if (!local _thisUnit) exitWith {};
 _fnc_checkNearbyPlayers = {
 	params ["_group"];
 	
-	if ({_x distance _leader < 50} count allPlayers == 0) then {
+	if ({_x distance (leader _group) < 50} count allPlayers == 0) then {
 		{ _x forceSpeed -1; } forEach (units _group);
 		_group setVariable ["TWC_AI_Control_Gestures_Halted", false, true];
 	} else {
