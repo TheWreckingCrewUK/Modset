@@ -5,7 +5,7 @@ class CfgVehicles {
 		class ACE_SelfActions {
 			class TWC_Gestures {
 				displayName = "Issue Order";
-				condition = "(canStand _target)";
+				condition = "(canStand _target) && { TWC_Show_Gestures == 1 }";
 				statement = "";
 				exceptions[] = {"isNotSwimming"};
 				showDisabled = 1;
