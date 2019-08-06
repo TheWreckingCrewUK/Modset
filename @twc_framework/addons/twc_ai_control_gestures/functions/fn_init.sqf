@@ -1,6 +1,3 @@
-// CBA Settings
-// DIK_NUMPAD1
-
 // HC & Server only from now on
 if (!hasInterface) exitWith {};
 
@@ -13,7 +10,7 @@ _fnc_checkNearbyPlayers = {
 	params ["_group"];
 	
 	if ({_x distance _leader < 150} count allPlayers == 0) then {
-		deleteWaypoint [_group, 0];
+		{ _x forceSpeed -1 } units _group;
 		_group setVariable ["TWC_AI_Control_Gestures_Halted", false, true];
 	} else {
 		[_fnc_checkNearbyPlayers, [_group], 3] call CBA_fnc_waitAndExecute;
@@ -27,9 +24,7 @@ _fnc_checkNearbyPlayers = {
 	
 	if !(_hasPlayerHaltedThem) then {
 		_group setVariable ["TWC_AI_Control_Gestures_Halted", true, true];
-		_waypoint = _group addWaypoint [position (leader _group), 0];
-		_waypoint setWaypointType "HOLD";
-		[_group, 0] setWaypointBehaviour "CARELESS";
+		{ _x forceSpeed 0 } units _group;
 		
 		_group call _fnc_checkNearbyPlayers;
 	};
@@ -41,7 +36,7 @@ _fnc_checkNearbyPlayers = {
 	_hasPlayerHaltedThem = _group getVariable ["TWC_AI_Control_Gestures_Halted", false];
 	
 	if (_hasPlayerHaltedThem) then {
-		deleteWaypoint [_group, 0];
+		{ _x forceSpeed -1 } units _group;
 		_group setVariable ["TWC_AI_Control_Gestures_Halted", false, true];
 	};
 }] call CBA_fnc_addEventHandler;
