@@ -35,8 +35,8 @@ if (isServer) then {
 		case "HE_Harmless_Medium": {"twc_ModuleOrdnanceMortar_Dummy_medium"};
 		case "HE_Harmless_Big": {"twc_ModuleOrdnanceMortar_Dummy_big"};
 		case "SMOKE": {"SmokeShellArty"};
-		case "ILLUM": {"twc_ammo_artillery_illumination"};
-		case "ILLUM_IR": {"twc_ammo_artillery_illumination_ir"};
+		case "ILLUM": {"TWC_ModuleOrdnanceMortar_Illum"};
+		case "ILLUM_IR": {"TWC_ModuleOrdnanceMortar_Illum_IR"};
 		default {"ModuleOrdnanceMortar_F"};
 	};
 
@@ -47,11 +47,6 @@ if (isServer) then {
 			[{
 				params ["_position", "_roundtype"];
 				_round = _roundtype createVehicle _position;
-				if (_roundtype == "twc_ammo_artillery_illumination" || _roundtype == "twc_ammo_artillery_illumination_ir") then {
-					_position set [2, 100];
-					_round setPos _position;
-					_round setVelocity [0, 0, -0.05];
-				};
 			}, [_position, _roundtype], _delay * _i] call CBA_fnc_waitAndExecute;
 		} else {
 			_i = _i - 1;
