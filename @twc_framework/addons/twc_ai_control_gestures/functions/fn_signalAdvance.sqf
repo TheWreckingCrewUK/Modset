@@ -3,7 +3,7 @@ params ["_unit"];
 if (!local _unit) exitWith {};
 
 // animation
-[_unit, selectRandom ['gestureGo','gestureGoB']] call ace_common_fnc_doGesture;
+[_unit, 'gestureFollow'] call ace_common_fnc_doGesture;
 
 _nearestUnits = _unit nearEntities [["Man", "Car", "Motorcycle"], 40];
 _temp = [];

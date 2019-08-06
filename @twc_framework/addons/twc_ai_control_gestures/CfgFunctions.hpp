@@ -9,6 +9,8 @@ class CfgFunctions {
 			
 			class signalAdvance {};
 			class signalHalt {};
+			
+			class presenceCheckLoop {};
 		};
 	};
 };

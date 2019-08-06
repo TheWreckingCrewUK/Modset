@@ -40,7 +40,16 @@
 	"TWC_Show_Gestures",
 	"CHECKBOX",
 	"Show Gestures Menu",
-	"TWC",
+	["TWC", "AI Control Gestures"],
 	true,
 	false
+] call CBA_fnc_addSetting;
+
+[
+	"TWC_Ignore_Gestures",
+	"CHECKBOX",
+	"AI Ignore Gestures (Server Setting)",
+	["TWC", "AI Control Gestures"],
+	false,
+	true
 ] call CBA_fnc_addSetting;
