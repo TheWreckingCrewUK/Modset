@@ -5,7 +5,7 @@ if (!local _unit) exitWith {};
 // animation
 [_unit, "gestureFreeze"] call ace_common_fnc_doGesture;
 
-_nearestUnits = _unit nearEntities [["Man", "Car", "Motorcycle"], 100];
+_nearestUnits = _unit nearEntities [["Man", "Car", "Motorcycle"], 40];
 _temp = [];
 
 {
