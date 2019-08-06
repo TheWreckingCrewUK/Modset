@@ -17,6 +17,14 @@ class CfgPatches {
 	};
 };
 
+class CfgFactionClasses {
+	class NO_CATEGORY;
+	
+	class TWC_AI_Control_Gestures: NO_CATEGORY {
+		displayName = "TWC - AI Control Gesture Settings";
+	};
+};
+
 #include "CfgFunctions.hpp"
 #include "CfgVehicles.hpp"
 
