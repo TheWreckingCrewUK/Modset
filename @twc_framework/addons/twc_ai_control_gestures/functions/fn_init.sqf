@@ -1,4 +1,7 @@
-// HC & Server
+// CBA Settings
+// DIK_NUMPAD1
+
+// HC & Server only from now on
 if (!hasInterface) exitWith {};
 
 params ["_thisUnit"];

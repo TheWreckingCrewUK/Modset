@@ -3,8 +3,9 @@ class CfgFunctions {
 		class functions {
 			file = "twc_ai_control_gestures\functions";
 			
-			/** Init on HC & Server **/
+			/** Init **/
 			class init {};
+			class clientPreInit {};
 			
 			class signalAdvance {};
 			class signalHalt {};

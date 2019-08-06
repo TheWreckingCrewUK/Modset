@@ -20,13 +20,16 @@ class CfgPatches {
 #include "CfgFunctions.hpp"
 #include "CfgVehicles.hpp"
 
-// Need a client init for CBA Settings.
-// Settings should be:
-// Keybind Advance/Halt Gesture
-// Disable Self-Interaction Menu
+class Extended_PreInit_EventHandlers {
+	class TWC_AI_Control_Gestures {
+		init = "_this call TWC_AI_Control_Gestures_fnc_clientPreInit;";
+	};
+};
 
-class Extended_PostInit_EventHandlers {
-	class TWC_AI_Control_Gestures_InitEH {
-		init = "_this call TWC_AI_Control_Gestures_fnc_init;";
+class Extended_InitPost_EventHandlers {
+	class CAManBase {
+		class TWC_AI_Control_Gestures {
+			init = "_this call TWC_AI_Control_Gestures_fnc_init;";
+		};
 	};
 };
