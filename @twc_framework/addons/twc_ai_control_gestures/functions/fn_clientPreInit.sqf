@@ -2,7 +2,7 @@
 
 [
 	"TWC",
-	"TWC_AI_Control_Gestures",
+	"TWC_AI_Control_Gestures_Advance",
 	"Advance Signal",
 	{
 		[player] call TWC_AI_Control_Gestures_fnc_signalAdvance;
@@ -20,14 +20,14 @@
 
 [
 	"TWC",
-	"TWC_AI_Control_Gestures",
+	"TWC_AI_Control_Gestures_Halt",
 	"Halt Signal",
 	{
 		[player] call TWC_AI_Control_Gestures_fnc_signalHalt;
 	},
 	"",
 	[
-		DIK_NUMPAD1,
+		DIK_NUMPAD2,
 		[
 			false,
 			false,
@@ -39,7 +39,7 @@
 [
 	"TWC_Show_Gestures",
 	"CHECKBOX",
-	["Show Gestures Menu", "Show the Custom TWC AI Control Gestures Menu under Self-Interaction"],
+	"Show Gestures Menu",
 	"TWC",
 	true,
 	false

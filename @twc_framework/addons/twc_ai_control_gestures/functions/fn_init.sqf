@@ -23,12 +23,16 @@ _fnc_checkNearbyPlayers = {
 ["TWC_AI_Control_Gestures_doHalt", {
 	params ["_group"];
 	
-	_group setVariable ["TWC_AI_Control_Gestures_Halted", true, true];
-	_waypoint = _group addWaypoint [position (leader _group), 0];
-	_waypoint setWaypointType "HOLD";
-	[_group, 0] setWaypointBehaviour "CARELESS";
+	_hasPlayerHaltedThem = _group getVariable ["TWC_AI_Control_Gestures_Halted", false];
 	
-	_group call _fnc_checkNearbyPlayers;
+	if !(_hasPlayerHaltedThem) then {
+		_group setVariable ["TWC_AI_Control_Gestures_Halted", true, true];
+		_waypoint = _group addWaypoint [position (leader _group), 0];
+		_waypoint setWaypointType "HOLD";
+		[_group, 0] setWaypointBehaviour "CARELESS";
+		
+		_group call _fnc_checkNearbyPlayers;
+	};
 }] call CBA_fnc_addEventHandler;
 
 ["TWC_AI_Control_Gestures_doAdvance", {

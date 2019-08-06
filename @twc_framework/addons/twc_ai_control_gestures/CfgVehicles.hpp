@@ -21,7 +21,7 @@ class CfgVehicles {
 				
 				class TWC_AI_Control_Gesture_Halt {
 					displayName = "Halt";
-					condition = "true":
+					condition = "true";
 					statement = "[_target] call TWC_AI_Control_Gestures_fnc_signalHalt";
 					icon = "";
 					showDisabled = 1;
