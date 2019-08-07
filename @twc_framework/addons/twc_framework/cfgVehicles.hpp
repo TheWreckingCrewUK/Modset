@@ -169,6 +169,10 @@ class CfgVehicles {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_big";
 	};
+	class TWC_ModuleOrdnanceMortar_Smoke: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "SmokeShell";
+	};
 	class TWC_ModuleOrdnanceMortar_Illum: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_ammo_artillery_illumination";
