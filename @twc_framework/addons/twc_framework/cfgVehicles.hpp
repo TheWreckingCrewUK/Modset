@@ -157,19 +157,27 @@ class CfgVehicles {
 		};
 	};
 	
-	class twc_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_small";
 	};
-	class twc_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_medium";
 	};
-	class twc_ModuleOrdnanceMortar_Dummy_big: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_Dummy_big: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_big";
 	};
-	
+	class TWC_ModuleOrdnanceMortar_Illum: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_ammo_artillery_illumination";
+	};
+	class TWC_ModuleOrdnanceMortar_Illum_IR: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_ammo_artillery_illumination_ir";
+	};
+
 	class twc_moduelHC: Module_F {
 		author="[TWC] jayman";
 		scope=2;
