@@ -1251,7 +1251,70 @@ class CfgVehicles {
 			sync[] = {"EmptyDetector"};
 		};
 	};
-	
+
+	class TWC_Module_CrateSlingload: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Crate Slingload";
+		function = "twc_fnc_moduleCrateSlingload";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\slingload_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Helicopter {
+				displayName = "Helicopter";
+				description = "Type of helicopter that drops the crate";
+				typeName = "String";
+				defaultValue = "HC4_Chinook";
+				class Values {
+					class HC1_Chinook {
+						name = "HC1 Chinook";
+						value = "ukcw_chinook_hc1";
+					};
+					class HC4_Chinook {
+						name = "HC4 Chinook";
+						value = "TWC_Vehicle_Generic_Chinook_RAF";
+					};
+					class AH1_Gazelle {
+						name = "AH1 Gazelle";
+						value = "TWC_Vehicle_Generic_Gazelle";
+					};
+					class HC1_Puma {
+						name = "HC1 Puma";
+						value = "TWC_Vehicle_ColdWar_Puma_RAF";
+					};
+					class AH1_Wildcat {
+						name = "AH1 Wildcat";
+						value = "TWC_Vehicle_Modern_Wildcat_RAF";
+					};
+					class HC3_Merlin {
+						name = "HC3 Merlin";
+						value = "UK3CB_BAF_Merlin_HC3_18";
+					};
+					class HC4_Merlin {
+						name = "HC4 Merlin";
+						value = "UK3CB_BAF_Merlin_HC4_18";
+					};
+				};
+			};
+			class Cargo {
+				displayName = "Cargo";
+				description = "What cargo the helicopter drops";
+				typeName = "String";
+				defaultValue = "";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Send a helicopter to slingload crate(s)";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+
 	class TWC_Module_HideMarkers: Module_F
 	{
 		author = "[TWC] Rik";
