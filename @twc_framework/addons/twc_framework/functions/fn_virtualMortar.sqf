@@ -34,7 +34,7 @@ if (isServer) then {
 		case "HE_Harmless_Small": {"twc_ModuleOrdnanceMortar_Dummy_small"};
 		case "HE_Harmless_Medium": {"twc_ModuleOrdnanceMortar_Dummy_medium"};
 		case "HE_Harmless_Big": {"twc_ModuleOrdnanceMortar_Dummy_big"};
-		case "SMOKE": {"SmokeShellArty"};
+		case "SMOKE": {"TWC_ModuleOrdnanceMortar_Smoke"};
 		case "ILLUM": {"TWC_ModuleOrdnanceMortar_Illum"};
 		case "ILLUM_IR": {"TWC_ModuleOrdnanceMortar_Illum_IR"};
 		default {"ModuleOrdnanceMortar_F"};

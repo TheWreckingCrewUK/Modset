@@ -46,6 +46,7 @@ class CfgPatches {
 			"TWC_AmmoBox_Other_L118_Portable_ILLUM",
 			"TWC_AmmoBox_Launchers_L14_Portable",
 			"TWC_AmmoBox_Launchers_L1A1_Portable",
+			"TWC_AmmoBox_Launchers_LASM_Portable",
 			"TWC_AmmoBox_Launchers_LAW80_Portable",
 			"TWC_AmmoBox_Launchers_L2A1_Portable",
 			"TWC_AmmoBox_Launchers_NLAW_Portable",

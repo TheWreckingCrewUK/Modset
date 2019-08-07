@@ -49,7 +49,7 @@
 	
 10. Various things you need to look out for:
 	10.1 If we are to be fighting units on the independent side make sure that under "Attributes" >> "Misc" >> "Independents Allegiance" is set to be hostile to BLUFOR.
-	10.2 Make sure the scenario file is set to be unbinarized under "Attributes" >> "Misc" >> "Independents Allegiance".
+	10.2 Make sure the scenario file is set to be unbinarized under "Attributes" >> "Misc".
 	10.3 The "Hide Terrain Objects" module needs to have the "Operate Locally" check mark ticked to work in multiplayer.
 	10.4 The "Edit Terrain Object" module is broken and will not work correctly in multiplayer and cannot be used.
 	10.5 On all triggers, make sure that if they execute code in their "On Activation" or "On Deactivation" fields that runs globally (check BIWiki for its effects) that the trigger atribute "Server Only" is ticked.

@@ -14,6 +14,7 @@ class CfgFunctions {
 			class charge {};
 			class CommandMessage{};
 			class crateParadrop {};
+			class crateSlingload {};
 			class createMarker{};
 			class CreateTask{};
 			class daisyCutter{};
@@ -72,6 +73,7 @@ class CfgFunctions {
 			class zeus{};
 			class moduleCreateTask;
 			class moduleCrateParadrop {};
+			class moduleCrateSlingload {};
 			class moduleStationaryUnits{};
 			class moduleMovableUnits{};
 			class moduleVirtualArtillery{};
