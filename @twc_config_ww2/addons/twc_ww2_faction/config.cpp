@@ -8,7 +8,8 @@ class CfgPatches
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"twc_faction",
-			"twc_ai"
+			"twc_ai",
+			"WW2_Assets_c_Weapons_InfantryWeapons_c"
 		};
 	};
 };
@@ -459,6 +460,7 @@ class CfgVehicles
 	#include "uk_early\tropic_dismounted.hpp"
 	
 	#include "uk_airborne\woodland.hpp"
+	#include "uk_airborne\arctic.hpp"
 	
 	#include "anzac\desert.hpp"
 	#include "anzac\desert_dismounted.hpp"

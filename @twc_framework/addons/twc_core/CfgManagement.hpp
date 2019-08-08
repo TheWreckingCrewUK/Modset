@@ -17,9 +17,9 @@ class CfgManagement {
 		zeusIgnoreRank = 0;
 	};
 	
-	class 76561198037881029 {
+/* 	class 76561198037881029 {
 		displayName = "Rik";
 		zeusAutoAdd = 1;
 		zeusIgnoreRank = 1;
-	};
+	}; */
 };

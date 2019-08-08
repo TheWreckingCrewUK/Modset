@@ -157,19 +157,31 @@ class CfgVehicles {
 		};
 	};
 	
-	class twc_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_small";
 	};
-	class twc_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_medium";
 	};
-	class twc_ModuleOrdnanceMortar_Dummy_big: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_Dummy_big: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_big";
 	};
-	
+	class TWC_ModuleOrdnanceMortar_Smoke: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "SmokeShell";
+	};
+	class TWC_ModuleOrdnanceMortar_Illum: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_ammo_artillery_illumination";
+	};
+	class TWC_ModuleOrdnanceMortar_Illum_IR: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_ammo_artillery_illumination_ir";
+	};
+
 	class twc_moduelHC: Module_F {
 		author="[TWC] jayman";
 		scope=2;
@@ -429,6 +441,11 @@ class CfgVehicles {
 					{
 						name="Illum";
 						value="ILLUM";
+					};
+					class Illum_IR
+					{
+						name = "Illum IR";
+						value = "ILLUM_IR";
 					};
 				};
 			};
@@ -798,6 +815,16 @@ class CfgVehicles {
 					{
 						name="Takistani Section (An-2)";
 						value="Takistani_Army_2";
+					};
+					class Fallscirmjager
+					{
+						name = "Fallschirmjäger (JU-52)";
+						value = "Fallscirmjager";
+					};
+					class Fallscirmjager_Sicily
+					{
+						name = "Fallschirmjäger Sicily (JU-52)";
+						value = "Fallscirmjager_Sicily";
 					};
 				};
 			};
@@ -1288,7 +1315,70 @@ class CfgVehicles {
 			sync[] = {"EmptyDetector"};
 		};
 	};
-	
+
+	class TWC_Module_CrateSlingload: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Crate Slingload";
+		function = "twc_fnc_moduleCrateSlingload";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\slingload_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Helicopter {
+				displayName = "Helicopter";
+				description = "Type of helicopter that drops the crate";
+				typeName = "String";
+				defaultValue = "HC4_Chinook";
+				class Values {
+					class HC1_Chinook {
+						name = "HC1 Chinook";
+						value = "ukcw_chinook_hc1";
+					};
+					class HC4_Chinook {
+						name = "HC4 Chinook";
+						value = "TWC_Vehicle_Generic_Chinook_RAF";
+					};
+					class AH1_Gazelle {
+						name = "AH1 Gazelle";
+						value = "TWC_Vehicle_Generic_Gazelle";
+					};
+					class HC1_Puma {
+						name = "HC1 Puma";
+						value = "TWC_Vehicle_ColdWar_Puma_RAF";
+					};
+					class AH1_Wildcat {
+						name = "AH1 Wildcat";
+						value = "TWC_Vehicle_Modern_Wildcat_RAF";
+					};
+					class HC3_Merlin {
+						name = "HC3 Merlin";
+						value = "UK3CB_BAF_Merlin_HC3_18";
+					};
+					class HC4_Merlin {
+						name = "HC4 Merlin";
+						value = "UK3CB_BAF_Merlin_HC4_18";
+					};
+				};
+			};
+			class Cargo {
+				displayName = "Cargo";
+				description = "What cargo the helicopter drops";
+				typeName = "String";
+				defaultValue = "";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Send a helicopter to slingload crate(s)";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+
 	class TWC_Module_HideMarkers: Module_F
 	{
 		author = "[TWC] Rik";
@@ -1374,6 +1464,25 @@ class CfgVehicles {
 				typeName="String";
 				defaultValue="";
 			};
+			
+			class Access {
+				displayName = "Who Can Interact";
+				description = "Who can activate this hint?";
+				typeName = "Number";
+				defaultValue = "0";
+				
+				class Values {
+					class 0 {
+						name = "Anybody";
+						value = 0;
+					};
+					
+					class 1 {
+						name = "Highest Two Ranks";
+						value = 1;
+					};
+				};
+			};
 		};
 		class ModuleDescription: ModuleDescription {
 			description = "Intel Hint";
@@ -1413,6 +1522,25 @@ class CfgVehicles {
 				description = "Name of the GLOBAL variable to use";
 				typeName = "String";
 				defaultValue = "";
+			};
+			
+			class Access {
+				displayName = "Who Can Interact";
+				description = "Who can activate this hint?";
+				typeName = "Number";
+				defaultValue = "0";
+				
+				class Values {
+					class 0 {
+						name = "Anybody";
+						value = 0;
+					};
+					
+					class 1 {
+						name = "Highest Two Ranks";
+						value = 1;
+					};
+				};
 			};
 		};
 
@@ -1747,11 +1875,147 @@ class CfgVehicles {
 				defaultValue = 0;
 			};
 			
-			class soundArgs {
-				displayName = "soundArgs array";
-				description = "[volume, pitch, distance]";
+			class volume {
+				displayName = "Volume";
+				description = "Volume, usually 1 - 20";
+				typeName = "Number";
+				defaultValue = 4;
+			};
+			
+			class pitch {
+				displayName = "Pitch";
+				description = "Pitch, usually 1";
+				typeName = "Number";
+				defaultValue = 1;
+			};
+			
+			class distance {
+				displayName = "Distance";
+				description = "Distance to be heard, usually 1000";
+				typeName = "Number";
+				defaultValue = 1000;
+			};
+		};
+	};
+	
+	#define ADD_SOUND(CLASSNAME,FOLDER) \
+	class TWC_##CLASSNAME { \
+		name = #CLASSNAME; \
+		value = "twc_sounds\sounds\##FOLDER##\##CLASSNAME##.ogg"; \
+	}
+	
+	class TWC_Module_AmbientSound_Simplified: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Ambient Sound (Simplified (((WIP))))";
+		function = "twc_fnc_moduleAmbientSoundSimple";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\ambient_sound_ca.paa";
+		functionPriority = 1;
+		
+		class Arguments {
+			class soundFilePath {
+				displayName = "Sound";
+				description = "Preselected Sounds";
 				typeName = "String";
-				defaultValue = "[4, 1, 1000]";
+				defaultValue = "TWC_radio_chatter";
+				
+				class values {
+					ADD_SOUND(radio_chatter,radio);
+					ADD_SOUND(radio_dunkirk_german,radio);
+					ADD_SOUND(radio_dunkirk_us,radio);
+					ADD_SOUND(radio_norsk,radio);
+					
+					ADD_SOUND(banzai_1,ww2);
+					ADD_SOUND(banzai_2,ww2);
+					ADD_SOUND(banzai_3,ww2);
+					ADD_SOUND(banzai_4,ww2);
+					ADD_SOUND(banzai_5,ww2);
+					
+					ADD_SOUND(bugle_call,other);
+					
+					ADD_SOUND(arab_crowd,crowds);
+					
+					ADD_SOUND(airraid_warning,alarms);
+					ADD_SOUND(airraid_allclear,alarms);
+					ADD_SOUND(car_alarm,alarms);
+					
+					ADD_SOUND(cat,animals);
+					ADD_SOUND(dog,animals);
+					ADD_SOUND(dog_1,animals);
+					ADD_SOUND(dog_2,animals);
+					ADD_SOUND(dog_3,animals);
+					ADD_SOUND(dog_indoors,animals);
+					ADD_SOUND(sheep,animals);
+					ADD_SOUND(sheep_1,animals);
+					ADD_SOUND(sheep_2,animals);
+					ADD_SOUND(sheep_3,animals);
+					ADD_SOUND(sheep_4,animals);
+					ADD_SOUND(wolf,animals);
+					ADD_SOUND(wolf_1,animals);
+					ADD_SOUND(wolf_2,animals);
+					ADD_SOUND(wolf_3,animals);
+					
+					ADD_SOUND(chainsaw,environment);
+					ADD_SOUND(construction,environment);
+					ADD_SOUND(construction_1,environment);
+					ADD_SOUND(fire,environment);
+					ADD_SOUND(strong_wind,environment);
+					ADD_SOUND(wind,environment);
+					ADD_SOUND(wind_1,environment);
+				};
+			};
+			
+			class min {
+				displayName = "min time";
+				description = "min time to wait between loops";
+				typeName = "Number";
+				defaultValue = 30;
+			};
+			
+			class mid {
+				displayName = "mid time";
+				description = "mid time to wait between loops";
+				typeName = "Number";
+				defaultValue = 45;
+			};
+			
+			class max {
+				displayName = "max time";
+				description = "max time to wait between loops";
+				typeName = "Number";
+				defaultValue = 60;
+			};
+			
+			class condition {
+				displayName = "Stop Condition";
+				description = "Condition to check for when to stop";
+				typeName = "String";
+				defaultValue = "triggerActivated forExample";
+			};
+			
+			class isInside {
+				displayName = "Is Inside?";
+				description = "Is the sound coming from inside something?";
+				typeName = "BOOL";
+				defaultValue = 0;
+			};
+			
+			class volume {
+				displayName = "Volume";
+				description = "Volume, usually 1 - 20";
+				typeName = "Number";
+				defaultValue = 5;
+			};
+			
+			class distance {
+				displayName = "Distance";
+				description = "Distance to be heard, usually 1000 for battles";
+				typeName = "Number";
+				defaultValue = 50;
 			};
 		};
 	};

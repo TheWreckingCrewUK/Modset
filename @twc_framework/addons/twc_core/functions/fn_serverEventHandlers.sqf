@@ -4,6 +4,12 @@
 	systemChat str _this;
 }] call CBA_fnc_addEventHandler; */
 
+TWC_Core_revealPlayerEH = ["TWC_Core_revealPlayer", {
+	_this call TWC_Core_fnc_revealPlayer;
+}] call CBA_fnc_addEventHandler;
+
+if (!hasInterface && !isDedicated) exitWith {};
+
 TWC_Core_aceCargoUnloadedEHID = ["ace_cargoUnloaded", {
 	params ["_crateObject", "_formerOwner"];
 

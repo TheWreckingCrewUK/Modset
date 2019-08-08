@@ -3,7 +3,7 @@ class CfgPatches
 {
 	class Disclose_Berezka
 	{
-		author = "Disclose, Bosenator, Anschluss";
+		author = "Disclose, Bosenator, TWC";
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
@@ -33,7 +33,7 @@ class CfgWeapons
 	};
 	class DISCLOSE_BEREZKA: ItemCore
 	{
-		author = "Disclose, Bosenator, Anschluss";
+		author = "Disclose, Bosenator, TWC";
 		scope = 2;
 		allowedSlots[] = { BACKPACK_SLOT };
 		displayName = "Berezka camo suit";

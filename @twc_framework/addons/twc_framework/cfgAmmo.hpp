@@ -7,6 +7,8 @@ class CfgAmmo
 	class ModuleOrdnanceMortar_F_ammo;
 	class ModuleOrdnanceHowitzer_F_ammo;
 	class ModuleOrdnanceRocket_F_ammo;
+	class F_40mm_White;
+	class F_40mm_Cir;
 
 	class twc_dummyround_pistol: B_9x21_Ball_Tracer_Green
 	{
@@ -57,5 +59,16 @@ class CfgAmmo
 		displayname = "203mm Dummy Round";
 		hit = 0;
 		indirectHit = 0;
+	};
+
+	class twc_ammo_artillery_illumination: F_40mm_White
+	{
+		intensity = 60000;
+		coefGravity = 0.25;
+	};
+	class twc_ammo_artillery_illumination_ir: F_40mm_Cir
+	{
+		intensity = 60000;
+		coefGravity = 0.25;
 	};
 };

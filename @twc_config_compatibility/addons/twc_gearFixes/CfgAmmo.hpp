@@ -116,6 +116,31 @@ class CfgAmmo {
 			hitWater = "ImpactEffectsWater";
 		};
 	};
+	class ace_338_ball: B_338_Ball {
+		hit = 25;
+		
+		class HitEffects {
+			Hit_Foliage_green = "ImpactLeavesGreen";
+			Hit_Foliage_Dead = "ImpactLeavesDead";
+			Hit_Foliage_Green_big = "ImpactLeavesGreenBig";
+			Hit_Foliage_Palm = "ImpactLeavesPalm";
+			Hit_Foliage_Pine = "ImpactLeavesPine";
+			hitFoliage = "ImpactLeaves";
+			hitGlass = "ImpactGlass";
+			hitGlassArmored = "twc_127_hiteffect_grey";
+			hitWood = "twc_127_hiteffect_grey";
+			hitMetal = "twc_127_hiteffect_grey";
+			hitMetalPlate = "twc_127_hiteffect_grey";
+			hitBuilding = "twc_127_hiteffect_grey";
+			hitPlastic = "twc_127_hiteffect_grey";
+			hitRubber = "twc_127_hiteffect_grey";
+			hitConcrete = "twc_127_hiteffect_grey";
+			hitMan = "ImpactEffectsBlood";
+			hitGroundSoft = "twc_127_hiteffect_grey";
+			hitGroundHard = "twc_127_hiteffect_grey";
+			hitWater = "ImpactEffectsWater";
+		};
+	};
 	
 	class BulletBase;
 	class B_127x99_Ball: BulletBase {

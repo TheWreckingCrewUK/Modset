@@ -17,6 +17,7 @@
 params ["_unit"];
 
 _pos = (_unit modelToWorld [0, 3, 0]);
+_tentPos = (_unit modelToWorld [2, 3, 0]);
 
 ForwardBasePos = (getPos _unit);
 publicVariable "ForwardBasePos";
@@ -26,7 +27,7 @@ if (_unit isKindOf "TWC_WW2_USMC_Base") then {_flagtype = "LIB_FlagCarrier_USA"}
 
 ForwardBaseTent = createVehicle ["camp", _pos, [], 0, "CAN_COLLIDE"];
 ForwardBaseTent setDir (getDir _unit) + 180;
-ForwardBaseFlag = _flagtype createVehicle getPos _unit;
+ForwardBaseFlag = _flagtype createVehicle _tentPos;
 ForwardBaseTent setvariable ["ace_medical_isMedicalFacility", true, true];
 
 _unit removeWeapon "twc_fieldTent";

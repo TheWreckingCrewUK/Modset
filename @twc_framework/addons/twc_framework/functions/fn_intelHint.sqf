@@ -17,7 +17,7 @@
 */
 if(!isServer)exitWith{};
 
-params["_unit", "_name", "_string"];
+params["_unit", "_name", "_string", ["_access", 0, [0]]];
 
 _intelHintID = (_unit getVariable ["intelHintID", -1]) + 1;
 _unit setVariable ["intelHintID", _intelHintID, true];
@@ -25,6 +25,11 @@ _unit setVariable ["intelHintID", _intelHintID, true];
 _previousHints = _unit getVariable ["intelHint", []];
 _previousHints set [_intelHintID, _string];
 _unit setVariable ["intelHint", _previousHints, true];
+
+_condition = "true";
+if (_access == 1) then {
+	_condition = "[_this, false, true] call TWC_fnc_isHighestRank";
+};
 
 [
 	_unit,
@@ -34,14 +39,14 @@ _unit setVariable ["intelHint", _previousHints, true];
 			_messages = (_this select 0) getVariable ["intelHint", []];
 			_message = (_messages select (_this select 3 select 0));
 			hint _message;
-			player createDiaryRecord ["Convo", ["Conversation", _message]];
+			player createDiaryRecord ["Diary", ["Conversation", _message]];
 		},
-		[_intelHintID],
+		[_intelHintID, _unit],
 		6,
 		true,
 		false,
 		"",
-		"true",
+		_condition,
 		7,
 		false
 	]

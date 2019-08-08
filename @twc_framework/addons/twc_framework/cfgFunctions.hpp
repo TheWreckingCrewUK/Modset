@@ -17,6 +17,7 @@ class CfgFunctions {
 			class charge {};
 			class CommandMessage{};
 			class crateParadrop {};
+			class crateSlingload {};
 			class createMarker{};
 			class CreateTask{};
 			class daisyCutter{};
@@ -50,6 +51,10 @@ class CfgFunctions {
 			class mortarwalk {};
 			class init{};
 			class addACEInteraction {};
+			class aiscramblenew {};
+			class aiscramble {};
+			class aisuppresscqb {};
+			class aisuppress {};
 			
 			/** AMBIENT AIRCRAFT **/
 			class ambientFlyBy {};
@@ -72,6 +77,7 @@ class CfgFunctions {
 			class moduleAmbientCiv {};
 			class moduleCreateTask;
 			class moduleCrateParadrop {};
+			class moduleCrateSlingload {};
 			class moduleStationaryUnits{};
 			class moduleMovableUnits{};
 			class moduleVirtualArtillery{};
@@ -100,6 +106,7 @@ class CfgFunctions {
 			class modulemortarwalk {};
 			class moduleACEInteract {};
 			class moduleAmbientSound {};
+			class moduleAmbientSoundSimp {};
 		};
 		
 		class cache {

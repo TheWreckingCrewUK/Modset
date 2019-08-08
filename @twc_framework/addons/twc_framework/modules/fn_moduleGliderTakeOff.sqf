@@ -1,5 +1,5 @@
 /*
- * Author: Anschluss
+ * Author: TWC
  * Module function to give the commander an ace interaction to take off.
  *
  * Arguments:

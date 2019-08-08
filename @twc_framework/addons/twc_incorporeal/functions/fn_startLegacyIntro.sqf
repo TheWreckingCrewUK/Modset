@@ -21,8 +21,6 @@ if (isMultiplayer) then {
 
 		[_song] spawn { playMusic (_this select 0); }; // play calculated tune
 
-		[] spawn TWC_Incorporeal_fnc_setPlayerUp;
-
 		titleText ["<t color='#ffffff' size='3'>The Wrecking Crew</t><br/><t color='#FFFFFF' size='1'>Presents</t>", "PLAIN", -1, true, true];
 		titleFadeOut 5;
 

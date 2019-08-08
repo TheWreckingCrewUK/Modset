@@ -5,7 +5,9 @@ class asdg_MuzzleSlot_556_3CB;
 class cfgWeapons
 {
 	class twc_BAF_L85A2_PUBLIC;
-	class UK3CB_BAF_L86A2_public;
+	class UK3CB_BAF_L86A2;
+	class UK3CB_BAF_L86A2_public:UK3CB_BAF_L86A2
+	{};
 	class UK3CB_BAF_L85A2_UGL;
 	class UK3CB_BAF_SUSAT_3D;
 	

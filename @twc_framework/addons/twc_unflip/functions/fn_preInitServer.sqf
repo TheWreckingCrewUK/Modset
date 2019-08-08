@@ -10,7 +10,7 @@
 	// Enough people, exit and unflip vehicle
 	if (_requiredUnits <= count _unflippingUnits) exitWith {
 		// divide the time by the amount of participants
-		private _time = (_vehicle call TWC_Unflip_fnc_time) / (count _unflippingUnits);
+		private _time = ((_vehicle call TWC_Unflip_fnc_time) / (count _unflippingUnits)) max 1;
 
 		[{
 			_this call TWC_Unflip_fnc_unflip;

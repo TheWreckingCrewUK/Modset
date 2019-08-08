@@ -17,13 +17,19 @@ _totalPlayerCount = count (_allPlayers - entities "HeadlessClient_F");
 _panTimePerUnit = (40 / _totalPlayerCount) max 1.5;
 [true] call ace_common_fnc_disableUserInput;
 //disableUserInput true;
+player enableSimulation false;
 
 waitUntil {!(isNil "BIS_fnc_init")};
 _cam = "camera" camCreate (player modelToWorld [0, 2, 2]);
 _cam cameraEffect ["internal", "back"];
 
+_ambientLight = [player] call ACE_map_fnc_determineMapLight;
+
+if (_ambientLight select 0) then {
+	camUseNVG true;
+};
+
 [_song] spawn { playMusic (_this select 0); }; // play calculated tune
-[] spawn TWC_Incorporeal_fnc_setPlayerUp;
 
 titleText ["<t color='#ffffff' size='3'>The Wrecking Crew</t><br/><t color='#FFFFFF' size='1'>Presents</t>", "PLAIN", -1, true, true];
 titleFadeOut 4;
@@ -99,6 +105,7 @@ camDestroy _cam;
 disableUserInput false;
 disableUserInput true;
 disableUserInput false; */
+player enableSimulation true;
 [false] call ace_common_fnc_disableUserInput;
 
 "dynamicBlur" ppEffectEnable true;

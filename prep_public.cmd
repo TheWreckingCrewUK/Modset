@@ -13,7 +13,7 @@ for /d %%i in (*) do (
 		cd !tmp!
 		for /d %%a in (*) do (
 			echo Pboing %%a
-			makePbo !tmp!\%%a
+			makePbo -ABU -X "thumbs.db,*.txt,*.h,*.dep,*.cpp,*.bak,*.png,*.log,*.pew,source" -Z=default -@=%%a !tmp!\%%a
 		)
 	)
 )
