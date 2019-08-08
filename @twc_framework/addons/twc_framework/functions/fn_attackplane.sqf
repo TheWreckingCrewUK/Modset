@@ -18,15 +18,34 @@
 *
 * Public: No
 */
-params ["_spawnmarker", "_Patrolmarker", "_radius", ["_planetype", "CUP_O_Su25_RU_2"]];
+
+params ["_spawnMarker", "_patrolMarker", "_radius", ["_planeType", "CUP_O_Su25_RU_2"]];
+
 if (isServer) then {
-	_pos = [0,0,0];
-	if(typeName _spawnmarker == "STRING")then{_pos = getMarkerPos _spawnmarker};
-	if(typeName _spawnmarker == "ARRAY")then{_pos = _spawnmarker};
-	_crew1 = creategroup EAST;
-	_plane = [_pos, 180, _planetype,_crew1] call BIS_fnc_spawnVehicle;
-	_crew1 setVariable ["twc_cacheDisabled",true];
-	(_plane select 0) setVariable ["twc_cacheDisabled",true];
-	_wp = _crew1 addWaypoint [getMarkerPos _Patrolmarker,0];
-	[_crew1,1] setWaypointType "SAD";
+	_pos = switch (typeName _spawnMarker) do {
+		case "STRING": {getMarkerPos _spawnMarker};
+		case "ARRAY": {_spawnMarker};
+		default {throw "Invalid Spawn Marker"};
+	};
+	_pos set [2, 200];
+	_patrolPos = switch (typeName _patrolMarker) do {
+		case "STRING": {getMarkerPos _patrolMarker};
+		case "ARRAY": {_patrolMarker};
+		default {throw "Invalid Patrol Marker"};
+	};
+	_side = switch (getNumber (configFile >> "CfgVehicles" >> _planetype >> "side")) do {
+		case 0: {east};
+		case 1: {west};
+		case 2: {resistance};
+		case 3: {civilian};
+	};
+	_planeArray = [_pos, _pos getDir _patrolPos, _planeType, _side] call BIS_fnc_spawnVehicle;
+	_planeArray params ["_plane", "_crew", "_group"];
+	_plane setVelocityModelSpace [0, 300, 0];
+
+	_group setVariable ["twc_cacheDisabled", true];
+	_plane setVariable ["twc_cacheDisabled", true];
+
+	_wp = _group addWaypoint [_patrolPos, 0];
+	_wp setWaypointType "SAD";
 };
