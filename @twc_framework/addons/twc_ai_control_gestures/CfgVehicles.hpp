@@ -27,7 +27,7 @@ class CfgVehicles {
 					showDisabled = 1;
 				};
 				
-				class TWC_AI_Control_Gesture_Halt {
+				class TWC_AI_Control_Surrender {
 					displayName = "Issue Surrender Request";
 					condition = "true";
 					statement = "[_target] call TWC_AI_Control_Gestures_fnc_signalSurrender";

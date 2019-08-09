@@ -44,7 +44,7 @@ if (!local _thisUnit) exitWith {};
 	params ["_group"];
 	
 	_hasPlayerHaltedThem = _group getVariable ["TWC_AI_Control_Gestures_Halted", false];
-	if (_hasPlayerHaltedThem) exitWith {};
+	if !(_hasPlayerHaltedThem) exitWith {};
 	
 	_hasSurrendered = _group getVariable ["TWC_AI_Control_Gestures_Surrendered", false];
 	if (_hasSurrendered) exitWith {};
