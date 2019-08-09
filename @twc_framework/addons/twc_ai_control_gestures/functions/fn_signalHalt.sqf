@@ -15,7 +15,7 @@ _temp = [];
 
 {
 	if !((group _x) in _temp) then {
-		if (alive _x && side _x == civilian) then {
+		if (alive _x && side _x == civilian && !(isPlayer _x)) then {
 			if (vehicle _x == _x) then {
 				["TWC_AI_Control_Gestures_doHalt", [(group _x)], (leader group _x)] call CBA_fnc_targetEvent;
 			} else {

@@ -39,3 +39,20 @@ if (!local _thisUnit) exitWith {};
 		_group setVariable ["TWC_AI_Control_Gestures_Halted", false, true];
 	};
 }] call CBA_fnc_addEventHandler;
+
+["TWC_AI_Control_Gestures_doSurrender", {
+	params ["_group"];
+	
+	_hasPlayerHaltedThem = _group getVariable ["TWC_AI_Control_Gestures_Halted", false];
+	if (_hasPlayerHaltedThem) exitWith {};
+	
+	_hasSurrendered = _group getVariable ["TWC_AI_Control_Gestures_Surrendered", false];
+	if (_hasSurrendered) exitWith {};
+	
+	_probability = _group getVariable ["TWC_AI_Control_Gestures_SurrenderChance", 100];
+	
+	if ((round (random 1) * 100) <= _probability) then {
+		{ [_x, true] call ACE_captives_fnc_setSurrendered; } forEach (units _group);
+		_group setVariable ["TWC_AI_Control_Gestures_Surrendered", false, true];
+	};
+}] call CBA_fnc_addEventHandler;
