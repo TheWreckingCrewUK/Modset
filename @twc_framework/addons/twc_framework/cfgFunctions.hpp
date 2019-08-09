@@ -7,7 +7,6 @@ class CfgFunctions {
 			class AmbientAA {};
 			class ambientCivDepopulate {};
 			class ambientCivPopulate {};
-			class ambientCivWaypoint {};
 			class Artillery{};
 			class AttackHelicopter{};
 			class AttackPlane {};

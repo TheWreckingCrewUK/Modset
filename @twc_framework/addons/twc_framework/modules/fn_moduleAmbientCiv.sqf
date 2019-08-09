@@ -16,11 +16,11 @@ params ["_logic", "_units", "_activated"];
 
 if (!isServer) exitWith {};
 
-if (!_activated) exitwith {[_units select 0] call twc_fnc_ambientCivDepopulate};
+if (!_activated) exitwith {[_logic] spawn twc_fnc_ambientCivDepopulate};
 
 _pos = getPos _logic;
 _type = _logic getVariable "Type";
 _size = _logic getVariable "Size";
 _radius = _logic getVariable "Radius";
 
-[_pos, _type, _size, _radius, _units select 0] call twc_fnc_ambientCivPopulate;
+[_pos, _type, _size, _radius, _logic] spawn twc_fnc_ambientCivPopulate;

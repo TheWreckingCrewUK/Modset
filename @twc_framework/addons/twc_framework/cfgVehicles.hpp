@@ -911,8 +911,7 @@ class CfgVehicles {
 		};
 	};
 	
-	class TWC_Module_AmbientAA: Module_F
-	{
+	class TWC_Module_AmbientAA: Module_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
 		displayName = "Ambient AA";
@@ -929,8 +928,7 @@ class CfgVehicles {
 		};
 	};
 	
-	class TWC_Module_AmbientCiv: Module_F
-	{
+	class TWC_Module_AmbientCiv: Module_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
 		displayName = "Ambient Civilian Population";
