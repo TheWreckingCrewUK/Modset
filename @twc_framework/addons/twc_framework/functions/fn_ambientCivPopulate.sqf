@@ -148,7 +148,7 @@ for "_i" from 1 to _size do {
 	_group = createGroup civilian;
 	_civ = _group createUnit [selectRandom _civArray, nearestBuilding _spawnPos, [], 3, "NONE"];
 	_civList pushBack _civ;
-	[_civ, _pos, _radius] execFSM "\twc_framework\fsms\TWC_AmbientCiv.fsm";
+	[[_civ, _pos, _radius], "\twc_framework\fsms\TWC_AmbientCiv.fsm"] remoteExecCall ["execFSM", _civ];
 };
 
 _logic setVariable ["TWC_AmbientCiv", _civList];
