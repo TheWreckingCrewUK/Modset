@@ -3,7 +3,7 @@
 [player, currentWeapon player, currentMuzzle player] call TWC_fnc_silentSafety;
 enableRadio false;
 player disableConversation true;
-player action ["WeaponOnBack", player]
+player action ["WeaponOnBack", player];
 
 if (!isNil "ForwardBasePos" && !(player getVariable ["twc_ignoreForwardBase", false])) then {
 	player setPos ForwardBasePos;
