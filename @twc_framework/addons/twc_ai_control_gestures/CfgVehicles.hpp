@@ -26,6 +26,14 @@ class CfgVehicles {
 					icon = "";
 					showDisabled = 1;
 				};
+				
+				class TWC_AI_Control_Gesture_Halt {
+					displayName = "Issue Surrender Request";
+					condition = "true";
+					statement = "[_target] call TWC_AI_Control_Gestures_fnc_signalSurrender";
+					icon = "";
+					showDisabled = 1;
+				};
 			};
 		};
 	};
@@ -81,7 +89,7 @@ class CfgVehicles {
 	};
 	
 	//missionNamespace getVariable ["TWC_AI_Control_Gestures_Disabled", false];
-	class TWC_Module_Gestures_SetHaltIgnoreChance: Module_F {
+	class TWC_Module_Gestures_SetMissionIgnoreGuestures: Module_F {
 		author = "[TWC] Bosenator";
 		category = "TWC_AI_Control_Gestures";
 		displayName = "Mission Ignore Gestures";
@@ -92,5 +100,31 @@ class CfgVehicles {
 		isDisposable = 0;
 		icon = "\twc_ai_control_gestures\ui\missionignoregestures_ca.paa";
 		functionPriority = 1;
+	};
+	
+	//_group getVariable ["TWC_AI_Control_Gestures_SurrenderChance", 10];
+	class TWC_Module_Gestures_SetSurrenderChance: Module_F {
+		author = "[TWC] Bosenator";
+		category = "TWC_AI_Control_Gestures";
+		displayName = "Set Surrender Chance";
+		function = "TWC_AI_Control_Gestures_fnc_moduleSetSurrenderChance";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+		icon = "\twc_ai_control_gestures\ui\surrenderchance_ca.paa";
+		functionPriority = 1;
+		
+		class chance {
+			displayName = "Chance of Surrendering when Ordered";
+			description = "Range, from 0 to 100. Rounded to either.";
+			typeName = "NUMBER";
+			defaultValue = 0;
+		};
+		
+		class ModuleDescription: ModuleDescription {
+			description = "Set Surrender Chance";
+			sync[] = {"AnyAI"};
+		};
 	};
 };

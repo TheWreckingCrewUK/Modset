@@ -8,14 +8,14 @@ if ((time - _lastTime) < 2) exitWith {};
 _unit setVariable ["TWC_AI_Control_Gestures_Advance_lastTime", time];
 
 // animation
-[_unit, 'gestureFollow'] call ace_common_fnc_doGesture;
+[_unit, 'gestureGoB'] call ace_common_fnc_doGesture;
 
 _nearestUnits = _unit nearEntities [["Man", "Car", "Motorcycle"], 40];
 _temp = [];
 
 {
 	if !((group _x) in _temp) then {
-		if (alive _x && side _x == civilian) then {
+		if (alive _x && side _x == civilian && !(isPlayer _x)) then {
 			if (vehicle _x == _x) then {
 				["TWC_AI_Control_Gestures_doAdvance", [(group _x)], (leader group _x)] call CBA_fnc_targetEvent;
 			} else {
