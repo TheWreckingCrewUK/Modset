@@ -1,9 +1,9 @@
 /*%FSM<COMPILE "F:\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, TWC_AmbientCiv">*/
 /*%FSM<HEAD>*/
 /*
-item0[] = {"Start_",0,4346,-251.488953,-216.886093,-161.488953,-166.886093,0.000000,"Start" \n ""};
+item0[] = {"Start_",0,250,-251.488953,-216.886093,-161.488953,-166.886093,0.000000,"Start" \n ""};
 item1[] = {"Cover_",8,218,-56.933228,146.012711,33.066780,196.012711,1.000000,"Cover?"};
-item2[] = {"Run_",2,250,41.434910,259.793274,131.434891,309.793274,0.000000,"Run!"};
+item2[] = {"Run_",2,4346,41.434910,259.793274,131.434891,309.793274,0.000000,"Run!"};
 item3[] = {"Is_safe__",4,218,-443.872498,-4.084963,-353.872498,45.915039,1.000000,"Is safe?" \n ""};
 item4[] = {"Is_not_safe_",4,218,-252.210388,-47.124359,-162.210388,2.875641,2.000000,"Is not safe?"};
 item5[] = {"Find_Cover__or_Run",2,250,-129.152115,31.506729,-39.152122,81.506729,0.000000,"Find Cover " \n "or Run" \n ""};
@@ -14,6 +14,8 @@ item9[] = {"Find_cover_",2,250,-305.921387,279.860291,-215.921265,329.860291,0.0
 item10[] = {"Ran_Enough",4,218,-85.292389,405.282837,4.707623,455.282837,0.000000,"Ran Enough"};
 item11[] = {"Freeze_",4,218,-236.900894,171.717621,-146.900787,221.717621,2.000000,"Freeze?"};
 item12[] = {"Freeze_",2,250,-291.499878,70.319168,-201.499924,120.319061,0.000000,"Freeze!"};
+item13[] = {"End_",4,218,-609.104492,139.977951,-519.104492,189.977936,0.000000,"End?"};
+item14[] = {"End_",1,250,-740.057190,259.025879,-650.057129,309.025879,0.000000,"End" \n ""};
 link0[] = {0,3};
 link1[] = {0,4};
 link2[] = {1,9};
@@ -26,13 +28,16 @@ link8[] = {5,11};
 link9[] = {6,2};
 link10[] = {7,4};
 link11[] = {7,8};
-link12[] = {8,7};
-link13[] = {9,3};
-link14[] = {10,9};
-link15[] = {11,12};
-link16[] = {12,3};
-globals[] = {0.000000,0,0,0,0,640,480,1,33,6316128,1,-850.735291,434.983093,591.719177,-241.616760,1404,910,1};
-window[] = {2,-1,-1,-32000,-32000,915,156,1596,156,3,1422};
+link12[] = {7,13};
+link13[] = {8,7};
+link14[] = {9,3};
+link15[] = {9,13};
+link16[] = {10,9};
+link17[] = {11,12};
+link18[] = {12,3};
+link19[] = {13,14};
+globals[] = {0.000000,0,0,0,0,640,480,1,35,6316128,1,-850.735291,434.983093,591.719177,-241.616760,1404,910,1};
+window[] = {2,-1,-1,-1,-1,967,208,1648,208,3,1422};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -79,9 +84,7 @@ class FSM
                         name = "Run_";
                         itemno = ;
                         init = /*%FSM<STATEINIT""">*/"_runPos = [[[position _unit, 60]]] call BIS_fnc_randomPos;" \n
-                         "_unit doMove _runPos;" \n
-                         "" \n
-                         "systemChat ""Running!"";"/*%FSM</STATEINIT""">*/;
+                         "_unit doMove _runPos;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -104,9 +107,7 @@ class FSM
                 {
                         name = "Find_Cover__or_Run";
                         itemno = ;
-                        init = /*%FSM<STATEINIT""">*/"_unit setSpeedMode ""FULL"";" \n
-                         "" \n
-                         "systemChat ""In Danger!"";"/*%FSM</STATEINIT""">*/;
+                        init = /*%FSM<STATEINIT""">*/"_unit setSpeedMode ""FULL"";"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -155,9 +156,7 @@ class FSM
                          "_unit setBehaviour ""SAFE"";" \n
                          "_unit setUnitPos ""UP"";" \n
                          "_movePos = [[[_pos, _radius]], [], {isOnRoad _this}] call BIS_fnc_randomPos;" \n
-                         "_unit doMove _movePos;" \n
-                         "" \n
-                         "systemChat ""New Move"";"/*%FSM</STATEINIT""">*/;
+                         "_unit doMove _movePos;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -183,6 +182,17 @@ class FSM
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
+                                /*%FSM<LINK "End_">*/
+                                class End_
+                                {
+                                        itemno = ;
+                                        priority = 0.000000;
+                                        to="End_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"isNull _unit"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
                         };
                 };
                 /*%FSM</STATE>*/
@@ -195,9 +205,7 @@ class FSM
                          "_positions = _building buildingPos -1;" \n
                          "_coverPos = selectRandom _positions;" \n
                          "_unit doMove _coverPos;" \n
-                         "_unit setUnitPos ""MIDDLE"";" \n
-                         "" \n
-                         "systemChat ""Finding Cover!"";"/*%FSM</STATEINIT""">*/;
+                         "_unit setUnitPos ""MIDDLE"";"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -209,6 +217,17 @@ class FSM
                                         to="Move_Around_";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"behaviour _unit != ""COMBAT"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "End_">*/
+                                class End_
+                                {
+                                        itemno = ;
+                                        priority = 0.000000;
+                                        to="End_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"isNull _unit"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -220,7 +239,8 @@ class FSM
                 {
                         name = "Freeze_";
                         itemno = ;
-                        init = /*%FSM<STATEINIT""">*/"_unit setUnitPos ""DOWN"";"/*%FSM</STATEINIT""">*/;
+                        init = /*%FSM<STATEINIT""">*/"_unit setUnitPos ""DOWN"";" \n
+                         "doStop _unit;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -238,10 +258,23 @@ class FSM
                         };
                 };
                 /*%FSM</STATE>*/
+                /*%FSM<STATE "End_">*/
+                class End_
+                {
+                        name = "End_";
+                        itemno = ;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
         };
         initState="Start_";
         finalStates[] =
         {
+                "End_",
         };
 };
 /*%FSM</COMPILE>*/
