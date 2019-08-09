@@ -37,6 +37,24 @@
 ] call CBA_fnc_addKeybind;
 
 [
+	"TWC",
+	"TWC_AI_Control_Gestures_Surrender",
+	"Issue Surrender Request",
+	{
+		[player] call TWC_AI_Control_Gestures_fnc_signalSurrender;
+	},
+	"",
+	[
+		DIK_NUMPAD3,
+		[
+			false,
+			false,
+			false
+		]
+	]
+] call CBA_fnc_addKeybind;
+
+[
 	"TWC_Show_Gestures",
 	"CHECKBOX",
 	"Show Gestures Menu",

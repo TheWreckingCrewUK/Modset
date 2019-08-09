@@ -9,12 +9,14 @@ class CfgFunctions {
 			
 			class signalAdvance {};
 			class signalHalt {};
+			class signalSurrender {};
 			
 			class presenceCheckLoop {};
 			
 			/** Modules **/
 			class moduleMissionIgnoreGestures {};
 			class moduleSetHaltIgnoreChance {};
+			class moduleSetSurrenderChance {};
 		};
 	};
 };
