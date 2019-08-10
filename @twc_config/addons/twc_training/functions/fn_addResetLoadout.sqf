@@ -1,3 +1,5 @@
+params ["_object"];
+
 _action = [
 	"ResetLoadout",
 	"Reset Loadout",
@@ -6,7 +8,8 @@ _action = [
 		player setUnitLoadout (configFile >> "CfgVehicles" >> (typeOf player));
 	},
 	{
-		vehicle _caller == _caller
+		params ["_target", "_player", "_params"];
+		vehicle _player == _player
 	},
 	{},
 	[],

@@ -13,12 +13,11 @@
 * Public: no
 */
 
-params["_pos"];
-if(!isServer)exitWith{};
-call{
-	if(typeName _pos == "STRING")exitWith{_pos = getMarkerPos _pos};
-	if(typeName _pos == "ARRAY")exitWith{};
-};
+params ["_pos"];
+if !(isServer) exitWith {};
+if (typeName _pos == "STRING") exitWith { _pos = getMarkerPos _pos; };
+if (typeName _pos == "ARRAY") exitWith {};
+
 _near = nearestTerrainObjects [_pos, ["Tree","Small Tree","Bush"], 31];
-{hideObjectGlobal _x}forEach _near;
+{ hideObjectGlobal _x } forEach _near;
 "Bo_GBU12_LGB" createVehicle _pos;

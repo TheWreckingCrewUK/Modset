@@ -26,6 +26,7 @@ _unit setVariable ["ace_medical_heartRate", (round(random _heartRateArray)), tru
 if (_addBlood) then {
 	if ((_unit getVariable ["ace_medical_bloodVolume", 0]) < 60) then {
 		_unit setVariable ["ace_medical_bloodVolume", 60, true];
+		_resistance = _unit getVariable ["ace_medical_peripheralResistance", 100];
 
 		_bloodPressureH = (0.60685 * _resistance);
 		_bloodPressureL = (0.40386 * _resistance);

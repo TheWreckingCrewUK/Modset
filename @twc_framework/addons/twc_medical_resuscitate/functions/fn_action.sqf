@@ -1,6 +1,8 @@
 params ["_caller", "_target", "_selectionName", "_className", "_items"];
 
-call {
+[_caller, _target] call {
+	params ["_caller", "_target"];
+	
 	if (local _target) exitWith {
 		["twc_medical_evh_addTime", [_caller, _target]] call CBA_fnc_localEvent;
 	};
