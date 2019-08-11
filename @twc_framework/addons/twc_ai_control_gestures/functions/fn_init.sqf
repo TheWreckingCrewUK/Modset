@@ -1,6 +1,3 @@
-// HC & Server only from now on
-if (hasInterface) exitWith {};
-
 // Server ignores it!
 if (TWC_Ignore_Gestures) exitWith {};
 
