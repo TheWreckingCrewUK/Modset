@@ -10,12 +10,13 @@ item5[] = {"Find_Cover__or_Run",2,250,-129.152115,31.506729,-39.152122,81.506729
 item6[] = {"Run_",4,218,85.925911,72.817825,175.925903,122.817833,3.000000,"Run?"};
 item7[] = {"Move_Around_",2,250,-480.536804,-147.037964,-390.536621,-97.037971,0.000000,"Move Around" \n ""};
 item8[] = {"Reached_Position",4,218,-663.711548,-21.276428,-573.711548,28.723572,1.000000,"Reached" \n "Position"};
-item9[] = {"Find_cover_",2,4346,-305.921387,279.860291,-215.921265,329.860291,0.000000,"Find cover!"};
+item9[] = {"Find_cover_",2,250,-305.921387,279.860291,-215.921265,329.860291,0.000000,"Find cover!"};
 item10[] = {"Ran_Enough",4,218,-85.292389,405.282837,4.707623,455.282837,0.000000,"Ran Enough"};
 item11[] = {"Freeze_",4,218,-236.900894,171.717621,-146.900787,221.717621,2.000000,"Freeze?"};
 item12[] = {"Freeze_",2,250,-291.499878,70.319168,-201.499924,120.319061,0.000000,"Freeze!"};
-item13[] = {"End_",4,218,-609.104492,139.977951,-519.104492,189.977936,0.000000,"End?"};
+item13[] = {"End_",4,218,-609.104492,139.977951,-519.104492,189.977936,3.000000,"End?"};
 item14[] = {"End_",1,250,-740.057190,259.025879,-650.057129,309.025879,0.000000,"End" \n ""};
+item15[] = {"No_building",4,218,-139.322693,262.688965,-49.322693,312.688965,0.000000,"No building"};
 link0[] = {0,3};
 link1[] = {0,4};
 link2[] = {1,9};
@@ -32,11 +33,13 @@ link12[] = {7,13};
 link13[] = {8,7};
 link14[] = {9,3};
 link15[] = {9,13};
-link16[] = {10,9};
-link17[] = {11,12};
-link18[] = {12,3};
-link19[] = {13,14};
-globals[] = {0.000000,0,0,0,0,640,480,1,35,6316128,1,-850.735291,434.983093,591.719177,-241.616760,1404,910,1};
+link16[] = {9,15};
+link17[] = {10,9};
+link18[] = {11,12};
+link19[] = {12,3};
+link20[] = {13,14};
+link21[] = {15,2};
+globals[] = {0.000000,0,0,0,0,640,480,1,37,6316128,1,-850.735291,434.983093,591.719177,-241.616760,1404,910,1};
 window[] = {2,-1,-1,-1,-1,915,156,1596,156,3,1422};
 *//*%FSM</HEAD>*/
 class FSM
@@ -160,6 +163,17 @@ class FSM
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
+                                /*%FSM<LINK "End_">*/
+                                class End_
+                                {
+                                        itemno = ;
+                                        priority = 3.000000;
+                                        to="End_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"isNull _unit"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
                                 /*%FSM<LINK "Is_not_safe_">*/
                                 class Is_not_safe_
                                 {
@@ -182,17 +196,6 @@ class FSM
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
-                                /*%FSM<LINK "End_">*/
-                                class End_
-                                {
-                                        itemno = ;
-                                        priority = 0.000000;
-                                        to="End_";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"isNull _unit"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
                         };
                 };
                 /*%FSM</STATE>*/
@@ -209,11 +212,25 @@ class FSM
                          "_building = selectRandom _buildings;" \n
                          "_positions = _building buildingPos -1;" \n
                          "_coverPos = selectRandom _positions;" \n
-                         "_unit doMove _coverPos;" \n
-                         "_unit setUnitPos ""MIDDLE"";"/*%FSM</STATEINIT""">*/;
+                         "if !(isNil ""_coverPos"") then {" \n
+                         "	_unit doMove _coverPos;" \n
+                         "	_unit setUnitPos ""MIDDLE"";	" \n
+                         "};" \n
+                         ""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
+                                /*%FSM<LINK "End_">*/
+                                class End_
+                                {
+                                        itemno = ;
+                                        priority = 3.000000;
+                                        to="End_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"isNull _unit"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
                                 /*%FSM<LINK "Is_safe__">*/
                                 class Is_safe__
                                 {
@@ -225,14 +242,14 @@ class FSM
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
-                                /*%FSM<LINK "End_">*/
-                                class End_
+                                /*%FSM<LINK "No_building">*/
+                                class No_building
                                 {
                                         itemno = ;
                                         priority = 0.000000;
-                                        to="End_";
+                                        to="Run_";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"isNull _unit"/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"isNil ""_coverPos"""/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
