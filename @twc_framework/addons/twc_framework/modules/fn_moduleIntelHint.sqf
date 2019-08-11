@@ -21,12 +21,12 @@ _access = _logic getVariable "Access";
 
 // Wait until PostInit has completed, then execute our function
 [{
-	params ["_units","_title","_message"];
+	params ["_units", "_title", "_message", "_access"];
 	{ [_x, _title, _message, _access] call twc_fnc_intelHint; } forEach _units;
 }, [_units, _title, _message, _access], 0.05] call CBA_fnc_waitAndExecute;
 
 // TODO: change spawn to call above when alternate stationary units is introduced
 
 if (!isNull _logic) then {
-    deleteVehicle _logic;
+	deleteVehicle _logic;
 };

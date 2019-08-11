@@ -22,7 +22,7 @@ _access = _logic getVariable "Access";
 
 // Wait until PostInit has completed, then execute our function
 [{
-	params ["_units","_title","_message", "_variableName"];
+	params ["_units","_title","_message", "_variableName", "_access"];
 	{ [_x, _title, _message, _variableName, _access] call twc_fnc_intelHintWithVariable; } forEach _units;
 }, [_units, _title, _message, _variableName, _access], 0.05] call CBA_fnc_waitAndExecute;
 

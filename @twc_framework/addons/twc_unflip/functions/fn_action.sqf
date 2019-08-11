@@ -12,6 +12,8 @@ if !(PLAYER in UNFLIPPING_UNITS) exitWith {
 private _neededUnits = _vehicle call TWC_Unflip_fnc_requiredAmount;
 
 [{
+	params ["_vehicle", "_neededUnits"];
+
 	[
 		format ["Waiting for a total of %1 push overs...", _neededUnits],
 		10,
@@ -30,6 +32,6 @@ private _neededUnits = _vehicle call TWC_Unflip_fnc_requiredAmount;
 		},
 		_this
 	] call CBA_fnc_progressBar;
-}, _this] call CBA_fnc_execNextFrame;
+}, [_vehicle, _neededUnits]] call CBA_fnc_execNextFrame;
 
 nil

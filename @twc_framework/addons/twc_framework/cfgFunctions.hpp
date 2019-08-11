@@ -5,6 +5,8 @@ class CfgFunctions {
 			class AirAssault {};
 			class Airborne {};
 			class AmbientAA {};
+			class ambientCivDepopulate {};
+			class ambientCivPopulate {};
 			class Artillery{};
 			class AttackHelicopter{};
 			class AttackPlane {};
@@ -14,6 +16,7 @@ class CfgFunctions {
 			class charge {};
 			class CommandMessage{};
 			class crateParadrop {};
+			class crateSlingload {};
 			class createMarker{};
 			class CreateTask{};
 			class daisyCutter{};
@@ -70,8 +73,10 @@ class CfgFunctions {
 			class run{};
 			class safeZone{};
 			class zeus{};
+			class moduleAmbientCiv {};
 			class moduleCreateTask;
 			class moduleCrateParadrop {};
+			class moduleCrateSlingload {};
 			class moduleStationaryUnits{};
 			class moduleMovableUnits{};
 			class moduleVirtualArtillery{};
@@ -100,6 +105,7 @@ class CfgFunctions {
 			class modulemortarwalk {};
 			class moduleACEInteract {};
 			class moduleAmbientSound {};
+			class moduleAmbientSoundSimp {};
 		};
 		
 		class cache {

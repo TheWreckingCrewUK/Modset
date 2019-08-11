@@ -17,7 +17,7 @@
 //Recieved Parameters
 params ["_unit", "_enemy"];
 
-systemchat "mod cqb";
+//systemchat "mod cqb";
 
 _ogroup = group _unit;
 

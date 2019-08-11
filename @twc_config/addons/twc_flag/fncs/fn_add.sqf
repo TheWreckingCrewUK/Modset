@@ -1,4 +1,4 @@
-params [["_vehicle", ""], ["_texture", ""], "_positionOverride"];
+params [["_vehicle", ""], ["_texture", ""], ["_positionOverride", nil]];
 
 if (isDedicated) exitWith {}; // server doesn't need to run it
 
@@ -12,7 +12,7 @@ _flag setFlagTexture _texture;
 
 _attachLocation = [0, 0, 0];
 
-if (isNil "_positionOveride") then {
+if (isNil "_positionOverride") then {
 	// hard-coded most common vehicles, for user ease
 	switch (typeOf _vehicle) do {
 		case "ukcw_chieftainMK10": { _attachLocation = [-1, -3, 0.5]; };
@@ -25,10 +25,10 @@ if (isNil "_positionOveride") then {
 	if !(_positionOverride isEqualTo []) then {
 		throw "positionOverride needs to be an array";
 	} else {
-		if (count _positionOveride > 3 || count _positionOveride < 3) then {
+		if (count _positionOverride > 3 || count _positionOverride < 3) then {
 			throw "positionOverride needs [x, y, z]";
 		} else {
-			_attachLocation = _positionOveride;
+			_attachLocation = _positionOverride;
 		};
 	};
 };

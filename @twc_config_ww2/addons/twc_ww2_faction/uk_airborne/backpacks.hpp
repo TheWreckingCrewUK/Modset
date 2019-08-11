@@ -90,6 +90,7 @@ class TWC_Backpack_WW2_UK_Airborne_Dismounted_Platoon_Sergeant: fow_b_uk_bergenp
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 250;
 	class TransportMagazines {
 		ADD_MAGA(LIB_10Rnd_770x56,16);
 		ADD_MAGA(LIB_30Rnd_770x56,8);

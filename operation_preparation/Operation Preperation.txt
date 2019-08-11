@@ -11,7 +11,7 @@
 	3.2 Place platoon command, then 1 section, then 2 section, then 3 section, then the attachment. Order of placement determines order of the rolesheet.
 	3.3 Name the group by double clicking the group icon and setting the callsign entry. They should be named "Platoon Command", "1 Section", "2 Section", "3 Section", and the name of the attachment on the rolesheet, respectively.
 	3.4 Name the group leader by double clicking on him and setting the role description entry to be "Platoon Commander@Platoon Command", "Section Commander@1 Section" etc.
-	3.5 Place down vehicles if applicable. Make sure they're the correct era and COIN variant if applicable. Ammoboxes should be placed alongside the vehicles for easy loading by the sergeant.
+	3.5 Place down vehicles if applicable. Make sure they're the correct era and COIN variant if applicable. Ammoboxes should be placed alongside the vehicles for easy loading by the sergeant. For every vehicle placed, there should be a back-up vehicle in case the first gets destroyed.
 	3.6 Place down Section Resupply Boxes. Make sure they are the correct era and COIN variant if applicable. Two boxes section boxes per section, as well as the correct launcher crate. Two medical boxes for the platoon, as well.
 	3.7 Place down a Medical Tent at base and set as Medical Facility under Attributes >> "ACE Options".
 
@@ -49,7 +49,7 @@
 	
 10. Various things you need to look out for:
 	10.1 If we are to be fighting units on the independent side make sure that under "Attributes" >> "Misc" >> "Independents Allegiance" is set to be hostile to BLUFOR.
-	10.2 Make sure the scenario file is set to be unbinarized under "Attributes" >> "Misc" >> "Independents Allegiance".
+	10.2 Make sure the scenario file is set to be unbinarized under "Attributes" >> "Misc".
 	10.3 The "Hide Terrain Objects" module needs to have the "Operate Locally" check mark ticked to work in multiplayer.
 	10.4 The "Edit Terrain Object" module is broken and will not work correctly in multiplayer and cannot be used.
 	10.5 On all triggers, make sure that if they execute code in their "On Activation" or "On Deactivation" fields that runs globally (check BIWiki for its effects) that the trigger atribute "Server Only" is ticked.

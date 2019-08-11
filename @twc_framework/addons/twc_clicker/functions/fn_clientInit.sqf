@@ -12,7 +12,6 @@ TWC_CLICKER_PLAY_QUEUE = [];
 	"twc_clicker",
 	"Clicker",
 	{
-		TWC_CLICKER_PLAY = true;
 		[player] call TWC_Clicker_fnc_play;
 	},
 	"",

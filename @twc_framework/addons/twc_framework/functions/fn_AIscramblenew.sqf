@@ -13,6 +13,9 @@
 *
 * Public: No
 */
+CIVILIAN setFriend [EAST, 1];
+CIVILIAN setFriend [WEST, 1];
+CIVILIAN setFriend [INDEPENDENT, 1];
 
 //Recieved Parameters
 params ["_leader", ["_supponly", 0]];

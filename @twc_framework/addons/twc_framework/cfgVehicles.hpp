@@ -157,19 +157,31 @@ class CfgVehicles {
 		};
 	};
 	
-	class twc_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_small";
 	};
-	class twc_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_medium";
 	};
-	class twc_ModuleOrdnanceMortar_Dummy_big: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_Dummy_big: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_big";
 	};
-	
+	class TWC_ModuleOrdnanceMortar_Smoke: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "SmokeShell";
+	};
+	class TWC_ModuleOrdnanceMortar_Illum: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_ammo_artillery_illumination";
+	};
+	class TWC_ModuleOrdnanceMortar_Illum_IR: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_ammo_artillery_illumination_ir";
+	};
+
 	class twc_moduelHC: Module_F {
 		author="[TWC] jayman";
 		scope=2;
@@ -429,6 +441,11 @@ class CfgVehicles {
 					{
 						name="Illum";
 						value="ILLUM";
+					};
+					class Illum_IR
+					{
+						name = "Illum IR";
+						value = "ILLUM_IR";
 					};
 				};
 			};
@@ -799,6 +816,16 @@ class CfgVehicles {
 						name="Takistani Section (An-2)";
 						value="Takistani_Army_2";
 					};
+					class Fallscirmjager
+					{
+						name = "Fallschirmjäger (JU-52)";
+						value = "Fallscirmjager";
+					};
+					class Fallscirmjager_Sicily
+					{
+						name = "Fallschirmjäger Sicily (JU-52)";
+						value = "Fallscirmjager_Sicily";
+					};
 				};
 			};
 			class Type_Plane
@@ -884,8 +911,7 @@ class CfgVehicles {
 		};
 	};
 	
-	class TWC_Module_AmbientAA: Module_F
-	{
+	class TWC_Module_AmbientAA: Module_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
 		displayName = "Ambient AA";
@@ -898,6 +924,65 @@ class CfgVehicles {
 		functionPriority = 1;
 		class ModuleDescription: ModuleDescription {
 			description = "Call in Attack Plane";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_AmbientCiv: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Ambient Civilian Population";
+		function = "twc_fnc_moduleAmbientCiv";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\civPop_ca.paa";
+		functionPriority = 1;
+		class Arguments {
+			class Type {
+				displayName = "Type";
+				description = "Type of Units to spawn";
+				typeName = "STRING";
+				defaultValue = "Arabian";
+				class Values {
+					class Arabian {
+						name = "Arabian";
+						value = "Arabian";
+					};
+					class Eastern_European {
+						name = "Eastern European";
+						value = "Eastern European";
+					};
+					class Mediterranean {
+						name = "Mediterranean";
+						value = "Mediterranean";
+					};
+					class Asian {
+						name = "Asian";
+						value = "Asian";
+					};
+					class African {
+						name = "African";
+						value = "African";
+					};
+				};
+			};
+			class Size {
+				displayName = "Size";
+				description = "Amount of civilians to spawn in.";
+				typeName = "NUMBER";
+				defaultValue = 0;
+			};
+			class Radius {
+				displayName = "Radius";
+				description = "Radius of the circle in which civilians will spawn and move.";
+				typeName = "NUMBER";
+				defaultValue = 0;
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Populate an area with civilians.";
 			sync[] = {""};
 		};
 	};
@@ -1228,7 +1313,70 @@ class CfgVehicles {
 			sync[] = {"EmptyDetector"};
 		};
 	};
-	
+
+	class TWC_Module_CrateSlingload: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Crate Slingload";
+		function = "twc_fnc_moduleCrateSlingload";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\slingload_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Helicopter {
+				displayName = "Helicopter";
+				description = "Type of helicopter that drops the crate";
+				typeName = "String";
+				defaultValue = "HC4_Chinook";
+				class Values {
+					class HC1_Chinook {
+						name = "HC1 Chinook";
+						value = "ukcw_chinook_hc1";
+					};
+					class HC4_Chinook {
+						name = "HC4 Chinook";
+						value = "TWC_Vehicle_Generic_Chinook_RAF";
+					};
+					class AH1_Gazelle {
+						name = "AH1 Gazelle";
+						value = "TWC_Vehicle_Generic_Gazelle";
+					};
+					class HC1_Puma {
+						name = "HC1 Puma";
+						value = "TWC_Vehicle_ColdWar_Puma_RAF";
+					};
+					class AH1_Wildcat {
+						name = "AH1 Wildcat";
+						value = "TWC_Vehicle_Modern_Wildcat_RAF";
+					};
+					class HC3_Merlin {
+						name = "HC3 Merlin";
+						value = "UK3CB_BAF_Merlin_HC3_18";
+					};
+					class HC4_Merlin {
+						name = "HC4 Merlin";
+						value = "UK3CB_BAF_Merlin_HC4_18";
+					};
+				};
+			};
+			class Cargo {
+				displayName = "Cargo";
+				description = "What cargo the helicopter drops";
+				typeName = "String";
+				defaultValue = "";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Send a helicopter to slingload crate(s)";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+
 	class TWC_Module_HideMarkers: Module_F
 	{
 		author = "[TWC] Rik";

@@ -8,7 +8,8 @@ class CfgPatches
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"twc_faction",
-			"twc_ai"
+			"twc_ai",
+			"WW2_Assets_c_Weapons_InfantryWeapons_c"
 		};
 	};
 };

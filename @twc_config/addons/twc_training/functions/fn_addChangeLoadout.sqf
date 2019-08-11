@@ -7,7 +7,9 @@ _action = [
 	_actionName,
 	"",
 	{
-		_caller setUnitLoadout (configFile >> "CfgVehicles" >> _unitClass);
+		params ["_target", "_player", "_params"];
+		_params params ["_unitClass"];
+		player setUnitLoadout (configFile >> "CfgVehicles" >> _unitClass);
 	},
 	{
 		true
