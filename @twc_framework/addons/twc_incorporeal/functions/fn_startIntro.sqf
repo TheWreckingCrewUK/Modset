@@ -23,7 +23,7 @@ waitUntil {!(isNil "BIS_fnc_init")};
 _cam = "camera" camCreate (player modelToWorld [0, 2, 2]);
 _cam cameraEffect ["internal", "back"];
 
-_lightLevel = 0.04 + (0.96 * call ACE_common_fnc_ambientBrightness;
+_lightLevel = 0.04 + (0.96 * call ACE_common_fnc_ambientBrightness);
 
 if (_lightLevel < 0.5) then {
 	camUseNVG true;
