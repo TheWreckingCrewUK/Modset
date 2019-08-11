@@ -54,6 +54,7 @@ class CfgFunctions {
 			
 			// Bloodlust Compat & Insta-Kill
 			class bloodlustInit {};
+			class checkDamage {};
 		};
 		
 		class modules {

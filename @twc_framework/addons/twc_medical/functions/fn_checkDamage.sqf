@@ -7,6 +7,6 @@ _damage = _body;
 
 { _damage = _damage + _x; } forEach _aceHitpoints;
 
-if (_head > 4) exitWith { [_unit, true] call ace_medical_fnc_setDead; };
-if (_body > 6) exitWith { [_unit, true] call ace_medical_fnc_setDead; };
-if (_damage > 20) exitWith { [_unit, true] call ace_medical_fnc_setDead; };
+if (_head > 12) exitWith { [_unit, true] call ace_medical_fnc_setDead; };
+if (_body > 18) exitWith { [_unit, true] call ace_medical_fnc_setDead; };
+if (_damage > 30) exitWith { [_unit, true] call ace_medical_fnc_setDead; };
