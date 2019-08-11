@@ -2,6 +2,9 @@ params ["_unit", "_isUncon"];
 
 if (!local _unit) exitWith {};
 
+// first, let's make sure they haven't passed the death threshold (in 2 frames)
+[{ [TWC_Medical_fnc_checkDamage, _this] call CBA_fnc_execNextFrame; }, _unit] call CBA_fnc_execNextFrame;
+
 // the unit just went unconsicous, we don't need to double check until some time
 // prevents waking up temp knock outs prematurely
 
