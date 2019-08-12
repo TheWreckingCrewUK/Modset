@@ -2405,7 +2405,7 @@ class cfgmagazines{
 		class rhs_mag_maaws_HEAT;
 		class rhs_mag_maaws_flechette : rhs_mag_maaws_HEAT
 		{
-			displayName="FFV401 ADMtest";
+			displayName="FFV401 ADM";
 			ammo = rhs_ammo_maaws_flechette;
 			descriptionShort = "Area Defence Munition (Flechette)";
 			displaynameshort = "ADM401";

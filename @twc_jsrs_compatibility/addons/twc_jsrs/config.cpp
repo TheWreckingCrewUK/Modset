@@ -1788,7 +1788,7 @@ class cfgweapons
 	{
 		
 		class Single:Mode_SemiAuto {
-			sounds[] = {"StandardSound"};
+			sounds[] = {"StandardSound", "SilencedSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","jsrs_30mm_reflector_1"};
 			};
@@ -1798,7 +1798,7 @@ class cfgweapons
 			};
 		};
 		class Burst:Mode_Burst {
-			sounds[] = {"StandardSound"};
+			sounds[] = {"StandardSound", "SilencedSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","jsrs_30mm_reflector_1"};
 			};		
@@ -1808,7 +1808,7 @@ class cfgweapons
 			};	
 		};
 		class FullAuto:Mode_FullAuto {
-			sounds[] = {"StandardSound"};
+			sounds[] = {"StandardSound", "SilencedSound"};
 			class standardsound {
 				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","jsrs_30mm_reflector_1"};
 			};		
