@@ -27,6 +27,7 @@ class CfgFunctions {
 			// Init
 			class init {};
 			class serverInit {};
+			class settings {};
 			
 			// Generics
 			class addTime {};

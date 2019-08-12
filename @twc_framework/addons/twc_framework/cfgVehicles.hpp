@@ -281,15 +281,15 @@ class CfgVehicles {
 		};
 	};
 	
-	class twc_modulesetSpectator: Module_F {
-		author="[TWC] jayman";
-		category="twc_zeus";
-		scope=1;
+	class twc_moduleSetSpectator: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_zeus";
+		scope = 1;
 		scopeCurator = 2;
-		functionPriority=1;
-		isGlobal=1;
-		isTriggerActivated=0;
-		function="twc_fnc_setSpectator";
+		functionPriority = 1;
+		isGlobal = 1;
+		isTriggerActivated = 0;
+		function = "twc_fnc_setSpectator";
 		curatorCanAttach = 1;
 		displayName = "Toggle Unit ACRE Spectator";
 	};

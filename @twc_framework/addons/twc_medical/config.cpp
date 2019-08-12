@@ -52,18 +52,24 @@ class CfgPatches {
 	};
 };
 
+class Extended_PreInit_EventHandlers {
+	class TWC_Medical_PreInitEH {
+		init = "_this call twc_medical_fnc_settings;";
+	};
+};
+
 class Extended_InitPost_EventHandlers {
 	class CAManBase {
-		class twc_medicalInitPos_eh {
+		class TWC_Medical_Player_InitPostEH {
 			clientInit = "if (local (_this select 0)) then { [twc_medical_fnc_extendedVitalLoop, [(_this select 0)], 10] call CBA_fnc_waitAndExecute; };";
 		};
 	};
 };
 
 class Extended_PostInit_EventHandlers {
-	class TWC_Medical {
-		clientInit = "[] call twc_medical_fnc_init;";
-		serverInit = "[] call twc_medical_fnc_serverInit;";
+	class TWC_Medical_PostInitEH {
+		clientInit = "_this call twc_medical_fnc_init;";
+		serverInit = "_this call twc_medical_fnc_serverInit;";
 	};
 };
 
