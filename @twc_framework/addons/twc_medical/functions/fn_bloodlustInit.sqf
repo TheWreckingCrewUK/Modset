@@ -3,7 +3,7 @@
  * If a user has bloodlust, they should see the vaporization - otherwise, they'll just see a ragdoll
  */
 
-if (!isServer) exitWith {};
+if !(isServer) exitWith {};
 
 if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
 	BloodLust_VaporizationDamageThresholdMP = 1;
@@ -18,15 +18,18 @@ if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
 	if (alive _unit) then {
 		// might be needed in the future
 		//if (!(_unit getVariable ["BloodLust_IsVaporized", false])) exitWith {};
-		[_unit, true, true] call ace_medical_fnc_setDead;
+		[_unit, true] call ace_medical_fnc_setDead;
 
-		removeAllItems _unit;
-		removeAllWeapons _unit;
-		removeAllAssignedItems _unit;
-		_unit removeWeaponGlobal "Binocular";
-		_unit removeItems "ItemMap";
+		[{
+			params ["_unit"];
 
-		_weapon = nearestObject [(getPos _unit), "GroundWeaponHolder"];
-		deleteVehicle _weapon;
+			removeAllItems _unit;
+			removeAllWeapons _unit;
+			removeAllAssignedItems _unit;
+			_unit removeWeaponGlobal "Binocular";
+			_unit removeItems "ItemMap";
+
+			deleteVehicle (nearestObject [_unit, "WeaponHolderSimulated"]);
+		}, _unit] call CBA_fnc_execNextFrame;
 	};
 }] call CBA_fnc_addEventHandler;
