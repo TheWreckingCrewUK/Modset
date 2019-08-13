@@ -1,6 +1,7 @@
 class CfgFunctions {
 	class TWC_UI {
 		tag = "TWC_UI";
+		
 		class init {
 			file = "TWC_UI\functions";
 
@@ -16,6 +17,19 @@ class CfgFunctions {
 			/** adds hide functionality to ace spectator camera **/
 			class handleSpectateCompass {};
 			class toggleSpectateCompass {};
+			
+			/** used in inventory screen **/
+			class getRankTexture {};
+		};
+	};
+	
+	class ace_movement {
+		tag = "ace_movement";
+		
+		class ace_movement {
+			class inventoryDisplayLoad {
+				file = "twc_ui\functions\fn_inventoryDisplayLoad.sqf";
+			};
 		};
 	};
 };
