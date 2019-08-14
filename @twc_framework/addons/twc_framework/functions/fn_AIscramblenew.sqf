@@ -24,34 +24,32 @@ sleep 2;
 _group = group _leader;
 
 _checker = leader _group;
-/*
-if ((behaviour (_checker)) != ("COMBAT")) exitwith {
-	_group setvariable ["twc_aiscramkey", 0, true];
-};	
-*/
+
+
+	_osideo = _leader getvariable ["twcscram_oside", 8];
+	_oside = 8;
+	if (side _leader == east) then {
+		_oside = 0;
+	} else {
+		if (side _leader == west) then {
+			_oside = 1;
+		} else {
+			if (side _leader == independent) then {
+				_oside = 2;
+			};
+		};
+	};
+	
+	if (_osideo == 8) then {
+		{_x setvariable ["twcscram_oside", _oside];} foreach (units _group);
+	};
+	
+	
 _keycheck = _group getvariable ["twc_aiscramkey", 0];
 
-//if (_keycheck == 1) exitwith {diag_log "bad key";};
 _group setvariable ["twc_aiscramkey", (_keycheck + 1), true];
 
-//diag_log ("mangoinitscramble");
 
-_comcheck = 0;
-/*
-while {_comcheck == 0} do {
-
-	sleep (10 + (random 10));
-	_checker = leader _group;
-	if ((behaviour (_checker)) == ("COMBAT")) then {
-		_comcheck = 1;
-	diag_log ("yuppers" + (behaviour (_checker)));
-	} else {
-	diag_log ("nuppers" + (behaviour (_checker)));
-	};
-};
-*/
-
-//diag_log ("mangocombatscramble");
 _leader = leader _leader;
 
 _group setSpeedMode "full";
@@ -64,17 +62,14 @@ if (_enemy == objnull) then {
 {
 	if ((_x getvariable ["twc_aisuppression", 0]) == 0) then {
 		[_x] spawn TWC_fnc_aisuppress;
-//diag_log ("mangostartsuppressfromscramble");
 	};
 } foreach units _group;
 
 if (_supponly == 1) exitwith {};
 
 [(units _group)] call ace_ai_fnc_unGarrison;
-//{[[_x]] call ace_ai_fnc_unGarrison;} foreach (units _group);
+
 {
-	//[_enemy, _x] spawn {
-		//params ["_enemy", "_unit"];
 		_unit = _x;
 		_check = 0;
 		_pos = getpos _enemy;
@@ -83,7 +78,6 @@ if (_supponly == 1) exitwith {};
 			_pos = [_unit, 1, _radius, 10, 0, 20, 0] call BIS_fnc_findSafePos;
 			_pos2 = AtlToAsl ([_pos select 0,_pos select 1, (1 + (random 3))]);
 			_vis = [objNull, "VIEW"] checkVisibility [(GETPosasl _enemy) vectoradd [0,0,(1 + (random 7))], _pos2];
-			//_vis = lineIntersects [(GETPos _enemy) vectoradd [0,0,(1 + (random 3))], (_pos2), _enemy, _unit];
 			if (_vis == 0) then {
 				_check = 1;
 			} else {
@@ -97,12 +91,9 @@ if (_supponly == 1) exitwith {};
 			
 			[_unit, _pos] spawn {
 				params ["_unit", "_pos"];
-				//[[_unit]] call ace_ai_fnc_unGarrison;
 				sleep 3;
-				//[[_unit]] call ace_ai_fnc_unGarrison;
 				if ((random 1) > 0.3) then {
 					sleep 10;
-					//[[_pos select 0,_pos select 1, 1], nil, [_unit], 10, 1, true, false] call ace_ai_fnc_garrison;
 				};
 			};
 			
@@ -111,7 +102,6 @@ if (_supponly == 1) exitwith {};
 			if ((leader group _unit) == _unit) then {
 			};
 		};
-	//};
 } foreach units _group;
 
 sleep 30;

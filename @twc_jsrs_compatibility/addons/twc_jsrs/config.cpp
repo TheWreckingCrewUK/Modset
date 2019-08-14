@@ -1720,42 +1720,6 @@ class cfgweapons
 			};		
 		};
 	};
-	
-	class twc_L119A2_CQB_base;
-	class twc_L119A2_CQB: twc_L119A2_CQB_base
-	{
-		
-		class Single:Mode_SemiAuto {
-			dispersion = 0.002;
-			reloadTime = 0.07;
-			class standardsound {
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","RHSGREF_sd_mmg1_Tail_SoundSet"};
-			};
-			class SilencedSound {
-				soundsetshot[]=
-				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "RHSGREF_sd_mmg1_Tail_SoundSet"};
-			};
-		};
-		class Burst:Mode_Burst {
-			dispersion = 0.002;
-			reloadTime = 0.07;
-			class standardsound {
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","RHSGREF_sd_mmg1_Tail_SoundSet"};
-			};			
-		};
-		class FullAuto:Mode_FullAuto {
-			dispersion = 0.002;
-			reloadTime = 0.07;
-			class standardsound {
-				soundSetShot[] = {"jsrs_m16a4_shell_soundset","jsrs_kar98k_shot_soundset","RHSGREF_sd_mmg1_Tail_SoundSet"};
-			};	
-			class SilencedSound {
-				soundsetshot[]=
-				{"jsrs_m16a4_shell_soundset", "jsrs_mx_shot_silenced_soundset", "RHSGREF_sd_mmg1_Tail_SoundSet"};
-			};		
-		};
-	};
-	
 	class CUP_arifle_HK416_145_Base: Rifle_Base_F
 	{
 		

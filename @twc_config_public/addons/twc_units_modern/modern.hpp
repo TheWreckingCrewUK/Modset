@@ -1837,14 +1837,14 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		{
 			"Throw",
 			"Put",
-			"TWC_UK3CB_BAF_L119A2_14_LDS",
+			"TWC_UK3CB_BAF_L119A2_14_ACOG_black",
 			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"TWC_UK3CB_BAF_L119A2_14_LDS",
+			"TWC_UK3CB_BAF_L119A2_14_ACOG_black",
 			"rhsusf_weap_glock17g4"
 		};
 		magazines[]=
@@ -1954,7 +1954,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"TWC_UK3CB_BAF_L119A2_14_LDS",
+			"TWC_UK3CB_BAF_L119A2_14_ACOG_black",
 			"rhsusf_weap_glock17g4"
 		};
 		respawnweapons[]=
@@ -1962,7 +1962,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"TWC_UK3CB_BAF_L119A2_14_LDS",
+			"TWC_UK3CB_BAF_L119A2_14_ACOG_black",
 			"rhsusf_weap_glock17g4"
 		};
 		linkedItems[]=

@@ -3,13 +3,18 @@ params [["_weapon", ""], "_ammo", "_projectile", "_gunner", ["_type", 1]];
 if ((hasInterface) && ((vehicle _gunner) == (vehicle player))) exitwith {};
 
 if (isNull _projectile) then { _projectile = nearestObject [_gunner, _ammo]; };
+_disperseonly = ((vehicle _gunner) getvariable ["twc_walk_onlydisperse", 0]);
+
+if (_disperseonly > 0) exitwith {
+	_mult = _disperseonly;_bullet = _projectile; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];
+};
 
 if (((vehicle _gunner) getvariable ["twc_dontwalk", 0]) == 1) exitwith {
 	
 };
 
 if ((typeof _projectile) iskindof ["MissileCore", configFile >> "CfgAmmo"]) exitwith {};
-//systemchat "gun";
+//future: get the ATGM code from op aesir
 _prev = _gunner getvariable ["twc_mortar_lastfired", 0]; 
 //systemchat format ["%1", _gunner];
 _gunner setvariable ["twc_mortar_lastfired", time]; 

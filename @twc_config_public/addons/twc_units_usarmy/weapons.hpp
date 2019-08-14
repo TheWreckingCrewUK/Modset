@@ -69,10 +69,53 @@ class cfgWeapons
 			mass = 89.2;
 		};
 	};
+	class rhs_weap_m4a1_blockII_bk: rhs_weap_m4a1_blockII
+	{};
+	class twc_m4b2_us_shortdot: rhs_weap_m4a1_blockII_bk
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="optic_dms";
+				//cup update
+				//item="cup_optic_sb_11_4x20_pm";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_anpeq15_bk";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					optic_dms = 1;
+					rhsusf_acc_eotech_xps3 = 1;
+					cup_optic_sb_11_4x20_pm = 1;
+				};
+			};
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					rhsusf_acc_anpeq15_bk = 1;
+					rhsusf_acc_anpeq15_bk_light = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 89.2;
+		};
+	};
 	
 	class twc_m4b2_us_spectre: twc_m4b2_us_eotech
 	{
-		displayName = "MK18 (Spectre)";
+		displayName = "M4 Block II (Spectre)";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -117,7 +160,7 @@ class cfgWeapons
 	
 	class twc_m4b2_us_mag: twc_m4b2_us_eotech
 	{
-		displayName = "MK18 (G33)";
+		displayName = "M4 Block II (G33)";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -269,7 +312,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="optic_dms";
+				item="rhsusf_acc_acog_mdo";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -291,7 +334,7 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					optic_dms = 1;
+					rhsusf_acc_acog_mdo = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -326,11 +369,13 @@ class cfgWeapons
 			{
 				slot="CowsSlot";
 				item="optic_dms";
+				//rhs update
+				//item="rhsusf_acc_premier_mrds";
 			};
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15side_bk";
+				item="cup_acc_anpeq_15_flashlight_black_l";
 			};
 			class LinkedItemsUnderBarrelSlot
 			{
@@ -343,11 +388,13 @@ class cfgWeapons
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					optic_dms = 1;
+					rhsusf_acc_premier_mrds = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
-					rhsusf_acc_anpeq15side_bk = 1;
+					cup_acc_anpeq_15_flashlight_black_l = 1;
+					cup_acc_anpeq_15_flashlight_black = 1;
 				};
 			};
 			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {
