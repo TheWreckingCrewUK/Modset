@@ -295,6 +295,29 @@ class CfgVehicles
 			};
 		};
 	};
+	class twc_SuppliesBox_Large: Box_NATO_AmmoVeh_F
+	{
+		displayName = "Large supply Box";
+		ace_dragging_canDrag = 1;
+		scope = 2;
+		class ACE_Actions{
+			class ACE_MainActions{
+				selection = "";
+				distance = 2;
+				condition = "true";
+				position = "[0,0,0.4]";
+				ace_dragging_dragPosition[] = {0,4,0};				
+			};
+		};
+		class transportItems
+		{
+			class _xx_supplies
+			{
+				name = "TWC_ForwardBase_Supplies";
+				count = 2000;
+			};
+		};
+	};
 	
 	class rhs_3Ya40_1_single;
 	class TWC_Public_AmmoBox_Hobbs_Precious: rhs_3Ya40_1_single {
