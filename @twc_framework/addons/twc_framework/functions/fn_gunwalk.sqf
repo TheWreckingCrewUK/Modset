@@ -5,13 +5,13 @@ if ((hasInterface) && ((vehicle _gunner) == (vehicle player))) exitwith {};
 if (isNull _projectile) then { _projectile = nearestObject [_gunner, _ammo]; };
 _disperseonly = ((vehicle _gunner) getvariable ["twc_walk_onlydisperse", 0]);
 
-if (_disperseonly > 0) exitwith {
-	_mult = _disperseonly;_bullet = _projectile; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];
+if (_disperseonly > 0) exitWith {
+	_mult = _disperseonly;
+	_bullet = _projectile;
+	_bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), (velocity _bullet select 2) + (((random 4) - 2) * _mult)];
 };
 
-if (((vehicle _gunner) getvariable ["twc_dontwalk", 0]) == 1) exitwith {
-	
-};
+if (((vehicle _gunner) getVariable ["twc_dontwalk", 0]) == 1) exitwith {};
 
 if ((typeof _projectile) iskindof ["MissileCore", configFile >> "CfgAmmo"]) exitwith {};
 //future: get the ATGM code from op aesir
@@ -19,7 +19,6 @@ _prev = _gunner getvariable ["twc_mortar_lastfired", 0];
 //systemchat format ["%1", _gunner];
 _gunner setvariable ["twc_mortar_lastfired", time]; 
 _skill = (0.5 + (skill _gunner));
-
 
 _testdev = missionnamespace getvariable ["walkvar", 20];
 
@@ -30,11 +29,7 @@ _twc_mortar_acc1 = "twc_mortar_acc1" + _weapon;
 _twc_mortar_acc2 = "twc_mortar_acc2" + _weapon;
 _twc_mortar_acc3 = "twc_mortar_acc3" + _weapon;
 
-
-
 _master = _gunner;
-
-
 _nataccmult = 1 * _type;
 _biggun = 1;
 
@@ -49,6 +44,7 @@ if (!((typeof _projectile) == "G_20mm_HE")) then {
 		};
 	};
 };
+
 _batterysize = 1;
 
 _nataccinit = ((4 / (0.5 + (_skill / 2))) * (1 + ((_batterysize) / 30))) * _nataccmult;
@@ -100,9 +96,7 @@ if (((time - _prev) > _bursttime) && (_master == _gunner)) then {
 
 
 // if it's more than an hour since last firing, it's too much time and the modifier needs a reset
-
 if ((time - _prev) > 200) then {
-	
 	_gunner setvariable [_twc_mortar_acc1, ((_startdev) / _skill)];
 	_gunner setvariable [_twc_mortar_acc2, ((_startdev) / _skill)];
 	_gunner setvariable [_twc_mortar_acc3, ((_startdev) / _skill)];
@@ -121,4 +115,3 @@ _v3 = (velocity _projectile select 2) + (((_natacc3 / 1) + _mod3)/ _speedmod);
 if ((isnil "_v1")||(isnil "_v2")||(isnil "_v3")) exitwith {};
 
 _projectile setvelocity [_v1, _v2, _v3];
-
