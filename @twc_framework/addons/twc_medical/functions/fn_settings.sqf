@@ -5,7 +5,7 @@
 	"SLIDER",
 	"Head Damage Threshold",
 	["TWC", "Damage Threshold Settings (Testing)"],
-	[1, 30, 12, 0],
+	[1, 30, 8, 0],
 	true
 ] call CBA_fnc_addSetting;
 
@@ -14,7 +14,7 @@
 	"SLIDER",
 	"Body Damage Threshold",
 	["TWC", "Damage Threshold Settings (Testing)"],
-	[1, 30, 18, 0],
+	[1, 30, 12, 0],
 	true
 ] call CBA_fnc_addSetting;
 
@@ -23,6 +23,6 @@
 	"SLIDER",
 	"Total Damage Threshold",
 	["TWC", "Damage Threshold Settings (Testing)"],
-	[1, 50, 30, 0],
+	[1, 50, 24, 0],
 	true
 ] call CBA_fnc_addSetting;
