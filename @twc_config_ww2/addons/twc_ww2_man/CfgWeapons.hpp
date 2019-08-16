@@ -3,7 +3,7 @@ class CfgWeapons {
 	class RifleCore;
 
 	class MGunCore: Default {
-		aiDispersionCoefX = 1.25;
+		aiDispersionCoefX = 1.2;
 		aiDispersionCoefY = 1;
 	};
 
