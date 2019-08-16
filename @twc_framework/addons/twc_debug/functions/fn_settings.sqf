@@ -12,6 +12,6 @@
 	"SLIDER",
 	"Player Limit Before Disabling Debugging",
 	["TWC", "Debugging"],
-	[1, 4, 10, 0],
+	[1, 10, 4, 0],
 	true
 ] call CBA_fnc_addSetting;

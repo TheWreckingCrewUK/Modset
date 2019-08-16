@@ -14,4 +14,4 @@
 	};
 
 	systemChat format ["[TWC %1]: %2", _tag, _message];
-}]
+}] call CBA_fnc_addEventHandler;
