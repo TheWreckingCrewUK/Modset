@@ -4,7 +4,7 @@ class Extended_PreInit_EventHandlers {
 	};
 };
 
-class Extended_InitPost_EventHandlers {
+class Extended_PostInit_EventHandlers {
 	class TWC_AI_Control_Gestures {
 		init = "_this call TWC_Debug_fnc_init;";
 	};
