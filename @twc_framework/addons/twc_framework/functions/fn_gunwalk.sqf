@@ -1,6 +1,8 @@
 params [["_weapon", ""], "_ammo", "_projectile", "_gunner", ["_type", 1]];
 
-if ((hasInterface) && ((vehicle _gunner) == (vehicle player))) exitwith {};
+if ((hasInterface) && (isplayer _gunner)) exitwith {};
+
+if (((vehicle _gunner) getVariable ["twc_dontwalk", 0]) == 1) exitwith {};
 
 if (isNull _projectile) then { _projectile = nearestObject [_gunner, _ammo]; };
 _disperseonly = ((vehicle _gunner) getvariable ["twc_walk_onlydisperse", 0]);
@@ -11,10 +13,17 @@ if (_disperseonly > 0) exitWith {
 	_bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), (velocity _bullet select 2) + (((random 4) - 2) * _mult)];
 };
 
-if (((vehicle _gunner) getVariable ["twc_dontwalk", 0]) == 1) exitwith {};
+if ((typeof _projectile) iskindof ["MissileCore", configFile >> "CfgAmmo"]) exitwith {
+	[_projectile, _gunner] spawn {
+		params ["_projectile", "_gunner"];
+		while {alive _projectile} do {
+			sleep random 1;
+			_mult = ((_projectile distance _gunner) / 260) min 5;
+			_projectile setvelocity [(velocity _projectile select 0) + (((random 24) - 12) * _mult), (velocity _projectile select 1) + (((random 24) - 12) * _mult),  (velocity _projectile select 2) + (((random 4) - 2) * _mult)];
+		};
+	};
+};
 
-if ((typeof _projectile) iskindof ["MissileCore", configFile >> "CfgAmmo"]) exitwith {};
-//future: get the ATGM code from op aesir
 _prev = _gunner getvariable ["twc_mortar_lastfired", 0]; 
 //systemchat format ["%1", _gunner];
 _gunner setvariable ["twc_mortar_lastfired", time]; 
