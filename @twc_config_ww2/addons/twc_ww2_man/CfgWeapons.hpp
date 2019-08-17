@@ -1,11 +1,5 @@
 class CfgWeapons {
 	class Default;
-	class RifleCore;
-
-	class MGunCore: Default {
-		aiDispersionCoefX = 1.2;
-		aiDispersionCoefY = 1;
-	};
 
 	class GrenadeLauncher: Default {
 		aiDispersionCoefX = 25;
