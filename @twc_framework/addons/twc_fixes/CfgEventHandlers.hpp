@@ -1,5 +1,5 @@
 class Extended_PostInit_EventHandlers {
-	class TWC_Fixes {
+	class TWC_Fixes_EH {
 		serverInit = "[] call TWC_Fixes_fnc_serverInit;";
 	};
 };
@@ -20,8 +20,16 @@ class Extended_InitPost_EventHandlers {
 
 class Extended_GetOutMan_EventHandlers {
 	class CAManBase {
-		class TWC_UI {
+		class TWC_Fixes_EH {
 			getOutMan = "_this call TWC_fixes_fnc_checkIfRocket";
+		};
+	};
+};
+
+class Extended_Reloaded_EventHandlers {
+	class CAManBase {
+		class TWC_Fixes_EH {
+			reloaded = "_this call TWC_fixes_fnc_aiReload";
 		};
 	};
 };

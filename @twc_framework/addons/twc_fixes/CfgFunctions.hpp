@@ -8,6 +8,7 @@ class CfgFunctions {
 			class helicopterInit {};
 			class tankCrewAdjust {};
 			class checkIfRocket {};
+			class aiReload {};
 		};
 	};
 

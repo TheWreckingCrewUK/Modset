@@ -1,5 +1,58 @@
+class Mode_SemiAuto {
+	aiDispersionCoefX = 1.6;
+	aiDispersionCoefY = 1.9;
+	
+	aiRateOfFire = 1.35;
+	aiRateOfFireDistance = 550;
+	minRange = 0;
+	minRangeProbab = 0.7;
+	midRange = 300;
+	midRangeProbab = 0.5;
+	maxRange = 650;
+	maxRangeProbab = 0.1;
+};
+
+class Mode_Burst: Mode_SemiAuto {
+	aiDispersionCoefX = 2.1;
+	aiDispersionCoefY = 2.7;
+	
+	aiRateOfFire = 1;
+	aiRateOfFireDistance = 150;
+	minRange = 0;
+	minRangeProbab = 0.8;
+	midRange = 150;
+	midRangeProbab = 0.7;
+	maxRange = 250;
+	maxRangeProbab = 0.1;
+};
+
+class Mode_FullAuto: Mode_SemiAuto {
+	aiDispersionCoefX = 2.4;
+	aiDispersionCoefY = 3;
+	
+	aiRateOfFire = 0.1;
+	aiRateOfFireDistance = 50;
+	minRange = 0;
+	minRangeProbab = 0.2;
+	midRange = 60;
+	midRangeProbab = 0.5;
+	maxRange = 120;
+	maxRangeProbab = 0.1;
+};
+
 class CfgWeapons {
 	class Default;
+	class RifleCore;
+
+	class Rifle: RifleCore {
+		aiDispersionCoefX = 7;
+		aiDispersionCoefY = 7;
+	};
+	
+	class MGunCore: Default {
+		aiDispersionCoefX = 17;
+		aiDispersionCoefY = 18;
+	};
 
 	class GrenadeLauncher: Default {
 		aiDispersionCoefX = 25;
