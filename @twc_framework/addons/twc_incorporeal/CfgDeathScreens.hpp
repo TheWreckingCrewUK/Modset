@@ -34,6 +34,18 @@ class CfgDeathScreens {
 		fadeOut = 57;
 	};
 	
+	class head_shot: instant_death {
+		text = "had their head blown off";
+	};
+	
+	class shot_through_the_heart: instant_death {
+		text = "was shot through the heart";
+	};
+	
+	class shot_to_pieces: instant_death {
+		text = "was turned into a colander";
+	};
+	
 	class overdose {
 		text = "died via overdose";
 		sound = "twc_overdose";
