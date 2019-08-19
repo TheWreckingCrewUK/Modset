@@ -1,6 +1,6 @@
 class Mode_SemiAuto {
-	aiDispersionCoefX = 1.6;
-	aiDispersionCoefY = 1.9;
+	aiDispersionCoefX = 1.7;
+	aiDispersionCoefY = 2;
 	
 	aiRateOfFire = 1.35;
 	aiRateOfFireDistance = 550;
@@ -14,7 +14,7 @@ class Mode_SemiAuto {
 
 class Mode_Burst: Mode_SemiAuto {
 	aiDispersionCoefX = 2.1;
-	aiDispersionCoefY = 2.7;
+	aiDispersionCoefY = 2.6;
 	
 	aiRateOfFire = 1;
 	aiRateOfFireDistance = 150;
@@ -45,13 +45,13 @@ class CfgWeapons {
 	class RifleCore;
 
 	class Rifle: RifleCore {
-		aiDispersionCoefX = 7;
-		aiDispersionCoefY = 7;
+		aiDispersionCoefX = 8;
+		aiDispersionCoefY = 8;
 	};
 	
 	class MGunCore: Default {
 		aiDispersionCoefX = 17;
-		aiDispersionCoefY = 18;
+		aiDispersionCoefY = 17;
 	};
 
 	class GrenadeLauncher: Default {
