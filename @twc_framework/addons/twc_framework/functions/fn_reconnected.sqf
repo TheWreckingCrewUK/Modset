@@ -1,7 +1,7 @@
 params ["_base"];
 
 private _missionStarted = missionNameSpace getVariable ["TWC_Intro_Started", false];
-if (_missionStarted) exitWith {};
+if !(_missionStarted) exitWith {};
 
 private _molarPresent = false;
 private _molar = objNull;
