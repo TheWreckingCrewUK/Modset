@@ -1967,7 +1967,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_teamleader_alt",
+			"twc_rhsusf_mbav_rifleman_mtp",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",
@@ -1976,7 +1976,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_teamleader_alt",
+			"twc_rhsusf_mbav_rifleman_mtp",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",
@@ -2182,7 +2182,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_medic",
+			"twc_rhsusf_mbav_rifleman_mtp",
 			"rhsusf_opscore_mc_cover_pelt",
 			"ItemMap",
 			"ItemCompass",
@@ -2190,7 +2190,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_medic",
+			"twc_rhsusf_mbav_rifleman_mtp",
 			"rhsusf_opscore_mc_cover_pelt",
 			"ItemMap",
 			"ItemCompass",

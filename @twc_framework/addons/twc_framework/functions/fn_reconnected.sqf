@@ -1,21 +1,30 @@
 params ["_base"];
-	
-//Check for Molar. Without molar function ends
-if (isNil "molar") exitWith {
-	hint "Molar is Missing in Action. Poke management";
-};
+
+_mgmt = [];
+
+{
+	if ([_x] call TWC_Core_fnc_ismanagement) then {
+		_mgmt pushback _x;
+	};
+} foreach allplayers;
 	
 _name = name player;
-sleep 3;
+
+//longer sleep since they're blind for a while when spawning
+sleep 20;
 if (serverTime > 120) then {
 	if (_base == "ForwardBasePos") then {
-		while {player distance2D ForwardBasePos < 200 || player distance2D molar < 50} do {
-			format ["%1 has Reconnected and is at the Forward Base", _name] remoteExecCall ["hint", "molar"];
+		while {player distance2D ForwardBasePos < 200} do {
+			{
+				format ["%1 has Reconnected and is at the Forward Base", _name] remoteExecCall ["hint", "molar"];
+			} foreach _mgmt;
 			sleep 30;
 		};
 	} else {
-		while {player distance2D (getMarkerPos "base") < 200 || player distance2D molar < 50} do {
-			format ["%1 has Reconnected and is at the Base", _name] remoteExecCall ["hint", "molar"];
+		while {player distance2D (getMarkerPos "base") < 200} do {
+			{
+				format ["%1 has Reconnected and is at the Base", _name] remoteExecCall ["hint", "molar"];
+			} foreach _mgmt;
 			sleep 30;
 		};
 	};

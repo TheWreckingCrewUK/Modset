@@ -77,11 +77,31 @@ class cfgWeapons
 	{
 		hiddenSelectionsTextures[] = {"twc_units_modern\textures\digicamo_co.jpg","twc_units_modern\textures\digicamo_co.jpg","twc_units_modern\textures\digicamo_co.jpg","twc_units_modern\textures\digicamo_co.jpg","rhsusf\addons\rhsusf_infantry\gear\vests\data\rhs_vest_iotv2_co.paa","rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa","rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_magpul_black_co.paa","rhsusf\addons\rhsusf_weapons3\mk17\data\mk17_co.paa"};
 	};
+	class twc_rhsusf_plateframe_SL_mtp: rhsusf_plateframe_teamleader
+	{
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_infantry\gear\vests\data\rhs_vest_iotv2_co.paa","rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa","rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_magpul_black_co.paa","rhsusf\addons\rhsusf_weapons3\mk17\data\mk17_co.paa"};
+	};
+	class rhsusf_plateframe_grenadier;
+	class twc_rhsusf_plateframe_grenadier_mtp: rhsusf_plateframe_grenadier
+	{
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_infantry\gear\vests\data\rhs_vest_iotv2_co.paa","rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_usgi_alum_co.paa","rhsusf\addons\rhsusf_weapons\mag_proxies\data\rhs_30rn_magpul_black_co.paa","rhsusf\addons\rhsusf_weapons3\mk17\data\mk17_co.paa"};
+	};
 	
 	class rhsusf_mbav_medic;
 	class twc_rhsusf_mbav_medic_aor1: rhsusf_mbav_medic
 	{
 		hiddenSelectionsTextures[] = {"twc_units_modern\textures\digicamo_co.jpg","rhsusf\addons\rhsusf_infantry2\gear\vests\mbav\data\mbav_gear_co.paa"};
+	};
+	
+	class rhsusf_mbav_rifleman;
+	class twc_rhsusf_mbav_rifleman_mtp: rhsusf_mbav_rifleman
+	{
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_infantry2\gear\vests\mbav\data\mbav_gear_co.paa"};
+	};
+	class rhsusf_mbav_grenadier;
+	class twc_rhsusf_mbav_grenadier_mtp: rhsusf_mbav_grenadier
+	{
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_infantry2\gear\vests\mbav\data\mbav_gear_co.paa"};
 	};
 	
 	
@@ -792,6 +812,13 @@ class cfgWeapons
 	
 	class rhsusf_spc_rifleman;
 	class twc_mtp_spc_rifleman: rhsusf_spc_rifleman
+	{
+		displayName = "SPC MTP (Rifleman)";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa"};
+	};
+	
+	class rhsusf_spc_squadleader;
+	class twc_mtp_spc_squadleader: rhsusf_spc_squadleader
 	{
 		displayName = "SPC MTP (Rifleman)";
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa"};
