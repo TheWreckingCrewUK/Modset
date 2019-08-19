@@ -1,31 +1,26 @@
 params ["_base"];
 
-_mgmt = [];
+private _missionStarted = missionNameSpace getVariable ["TWC_Intro_Started", false];
+if (_missionStarted) exitWith {};
+
+private _molarPresent = false;
+private _molar = objNull;
 
 {
-	if ([_x] call TWC_Core_fnc_ismanagement) then {
-		_mgmt pushback _x;
-	};
-} foreach allplayers;
+	private _isMolar = _x getVariable ["TWC_isMolar", false];
 	
+	if (_isMolar) exitWith {
+		_molarPresent = true;
+		_molar = _x;
+	};
+} forEach allPlayers;
+
 _name = name player;
 
-//longer sleep since they're blind for a while when spawning
-sleep 20;
-if (serverTime > 120) then {
+if (_molarPresent) then {
 	if (_base == "ForwardBasePos") then {
-		while {player distance2D ForwardBasePos < 200} do {
-			{
-				format ["%1 has Reconnected and is at the Forward Base", _name] remoteExecCall ["hint", "molar"];
-			} foreach _mgmt;
-			sleep 30;
-		};
+		format ["%1 is awaiting at the Forward Base", _name] remoteExecCall ["hint", _molar];
 	} else {
-		while {player distance2D (getMarkerPos "base") < 200} do {
-			{
-				format ["%1 has Reconnected and is at the Base", _name] remoteExecCall ["hint", "molar"];
-			} foreach _mgmt;
-			sleep 30;
-		};
+		format ["%1 is awaiting at the Base", _name] remoteExecCall ["hint", _molar];
 	};
 };
