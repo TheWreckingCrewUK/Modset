@@ -1967,7 +1967,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"twc_rhsusf_mbav_rifleman_mtp",
+			"twc_mtp_spc_squadleader",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",
@@ -1976,7 +1976,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_rhsusf_mbav_rifleman_mtp",
+			"twc_mtp_spc_squadleader",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",

@@ -394,7 +394,7 @@ class cfgWeapons
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
 					cup_acc_anpeq_15_flashlight_black_l = 1;
-					cup_acc_anpeq_15_flashlight_black = 1;
+					cup_acc_anpeq_15_flashlight_black_f = 1;
 				};
 			};
 			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {

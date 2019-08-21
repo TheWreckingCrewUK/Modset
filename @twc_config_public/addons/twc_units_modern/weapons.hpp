@@ -818,10 +818,20 @@ class cfgWeapons
 	};
 	
 	class rhsusf_spc_squadleader;
+	class twc_aor1_spc_squadleader: rhsusf_spc_squadleader
+	{
+		displayName = "SPC AOR1";
+		hiddenSelectionsTextures[] = {"twc_units_modern\textures\digicamo_co.jpg","twc_units_modern\textures\digicamo_co.jpg","twc_units_modern\textures\digicamo_co.jpg","twc_units_modern\textures\digicamo_co.jpg"};
+	};
 	class twc_mtp_spc_squadleader: rhsusf_spc_squadleader
 	{
-		displayName = "SPC MTP (Rifleman)";
+		displayName = "SPC MTP";
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa"};
+	};
+	class twc_oli_spc_squadleader: rhsusf_spc_squadleader
+	{
+		displayName = "SPC Olive";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
 	};
 	
 	class rhsusf_spc_iar;
