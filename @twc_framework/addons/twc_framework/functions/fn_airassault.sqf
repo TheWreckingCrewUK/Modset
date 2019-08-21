@@ -11,9 +11,11 @@
 */
 if (isServer) then {
 	params ["_spawnmarker", "_dropmarker", "_movemarker", ["_ERA", "Modern"], ["_helicopterType", ""], ["_infantryType", ""]];
-	_pos = [0,0,0];
-	if (typeName _spawnmarker == "STRING") then {_pos = getMarkerPos _spawnmarker};
-	if (typeName _spawnmarker == "ARRAY") then {_pos = _spawnmarker};
+	_pos = switch (typeName _spawnmarker) do {
+		case "STRING": {getMarkerPos _spawnmarker};
+		case "ARRAY": {_spawnmarker};
+		default {throw "Incorrect Position Type"};
+	};
 
 	if (_Era == "Modern") then {
 		_helicopterType = "CUP_O_Mi8_RU"; // attempted to rename
@@ -25,12 +27,17 @@ if (isServer) then {
 		_infantryType = (configfile >> "CfgGroups" >> "EAST" >> "BCCCCP" >> "BBC" >> "Dismounted_Section");
 	};
 
-	if (_Era == "Custom") then {};
+	_side = switch (getNumber (configFile >> "CfgVehicles" >> _planetype >> "side")) do {
+		case 0: {east};
+		case 1: {west};
+		case 2: {resistance};
+		case 3: {civilian};
+	};
 
 	_helipadSpawn =  "HeliHEmpty" createVehicle getMarkerPos _dropMarker;
-	_helicopterPilots = createGroup east; 
+	_helicopterPilots = createGroup _side;
 	_helicopterVehicle = [_pos, 180, _helicopterType, _helicopterPilots] call BIS_fnc_spawnVehicle;
-	_infantryGroup = [_pos, east, _infantryType] call BIS_fnc_spawnGroup; 
+	_infantryGroup = [_pos, _side, _infantryType] call BIS_fnc_spawnGroup; 
 	_helicopterMCargo = _helicopterVehicle select 0;
 
 	{
