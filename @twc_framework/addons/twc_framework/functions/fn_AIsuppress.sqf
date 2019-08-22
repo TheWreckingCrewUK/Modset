@@ -106,7 +106,7 @@ _unit domove _npos;
 
 
 _unit setspeedmode "full";
-(group _unit) setBehaviour "aware";
+(group _unit) setBehaviour "combat";
 _time = (_unit distance _npos) min (5 + (random 10));
 sleep _time;
 [_unit] joinsilent _ogroup;
