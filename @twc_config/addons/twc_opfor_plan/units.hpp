@@ -180,14 +180,14 @@ class TWC_Infantry_PLAN_Regular_SectionCommander: TWC_Infantry_PLAN_Regular_Rifl
 		MAG_5("VME_QBZ95_1_30Rnd_DBP10"),
 		MAG_2("VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"),
 		MAG_3("VME_1Rnd_HE_GL"),
-		MAG_3("VME_1Rnd_Smoke_GL"),
+		MAG_3("VME_1Rnd_Smoke_GL")
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("VME_QBZ95_1_30Rnd_DBP10"),
 		MAG_2("VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"),
 		MAG_3("VME_1Rnd_HE_GL"),
-		MAG_3("VME_1Rnd_Smoke_GL"),
+		MAG_3("VME_1Rnd_Smoke_GL")
 	};
 };
 class TWC_Infantry_PLAN_Regular_2iC: TWC_Infantry_PLAN_Regular_Rifleman
@@ -235,14 +235,14 @@ class TWC_Infantry_PLAN_Regular_Platoon_Commander: TWC_Infantry_PLAN_Regular_Sec
 		MAG_3("VME_QBZ95_1_30Rnd_DBP10"),
 		MAG_2("VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"),
 		MAG_3("VME_1Rnd_HE_GL"),
-		MAG_3("VME_1Rnd_Smoke_GL"),
+		MAG_3("VME_1Rnd_Smoke_GL")
 	};
 	respawnmagazines[] =
 	{
 		MAG_3("VME_QBZ95_1_30Rnd_DBP10"),
 		MAG_2("VME_QBZ95_1_30Rnd_DBP10_Tracer_Green"),
 		MAG_3("VME_1Rnd_HE_GL"),
-		MAG_3("VME_1Rnd_Smoke_GL"),
+		MAG_3("VME_1Rnd_Smoke_GL")
 	};
 	
 	nightItems[] = {

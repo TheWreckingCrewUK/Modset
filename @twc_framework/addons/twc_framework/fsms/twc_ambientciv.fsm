@@ -2,24 +2,26 @@
 /*%FSM<HEAD>*/
 /*
 item0[] = {"Start_",0,250,-251.488953,-216.886093,-161.488953,-166.886093,0.000000,"Start" \n ""};
-item1[] = {"Cover_",8,218,-56.933228,146.012711,33.066780,196.012711,1.000000,"Cover?"};
-item2[] = {"Run_",2,250,41.434910,259.793274,131.434891,309.793274,0.000000,"Run!"};
+item1[] = {"Cover_",8,218,-0.545065,69.974121,89.454987,119.974083,1.000000,"Cover?"};
+item2[] = {"Run_",2,250,156.774338,294.822296,246.774307,344.822174,0.000000,"Run!"};
 item3[] = {"Is_safe__",4,218,-443.872498,-4.084963,-353.872498,45.915039,1.000000,"Is safe?" \n ""};
 item4[] = {"Is_not_safe_",4,218,-252.210388,-47.124359,-162.210388,2.875641,2.000000,"Is not safe?"};
-item5[] = {"Find_Cover__or_Run",2,250,-129.152115,31.506729,-39.152122,81.506729,0.000000,"Find Cover " \n "or Run" \n ""};
-item6[] = {"Run_",4,218,85.925911,72.817825,175.925903,122.817833,3.000000,"Run?"};
+item5[] = {"Find_Cover__or_Run",2,250,-18.938875,-53.075520,71.061127,-3.075531,0.000000,"Find Cover " \n "or Run" \n ""};
+item6[] = {"Run_",4,218,150.857742,27.536415,240.857727,77.536407,3.000000,"Run?"};
 item7[] = {"Move_Around_",2,250,-480.536804,-147.037964,-390.536621,-97.037971,0.000000,"Move Around" \n ""};
 item8[] = {"Reached_Position",4,218,-663.711548,-21.276428,-573.711548,28.723572,1.000000,"Reached" \n "Position"};
-item9[] = {"Find_cover_",2,250,-305.921387,279.860291,-215.921265,329.860291,0.000000,"Find cover!"};
-item10[] = {"Ran_Enough",4,218,-85.292389,405.282837,4.707623,455.282837,0.000000,"Ran Enough"};
-item11[] = {"Freeze_",4,218,-236.900894,171.717621,-146.900787,221.717621,2.000000,"Freeze?"};
-item12[] = {"Freeze_",2,250,-291.499878,70.319168,-201.499924,120.319061,0.000000,"Freeze!"};
+item9[] = {"Find_cover_",2,250,-343.513428,221.763397,-253.513336,271.763367,0.000000,"Find cover!"};
+item10[] = {"Ran_Enough",4,218,24.920851,386.486786,114.920868,436.486786,0.000000,"Ran Enough"};
+item11[] = {"Freeze_",4,218,-131.813843,29.892834,-41.813744,79.892807,2.000000,"Freeze?"};
+item12[] = {"Freeze_",2,250,-282.101807,42.125084,-192.101883,92.124977,0.000000,"Freeze!"};
 item13[] = {"End_",4,218,-609.104492,139.977951,-519.104492,189.977936,3.000000,"End?"};
 item14[] = {"End_",1,250,-740.057190,259.025879,-650.057129,309.025879,0.000000,"End" \n ""};
-item15[] = {"No_building",4,218,-139.322693,262.688965,-49.322693,312.688965,0.000000,"No building"};
+item15[] = {"No__building_",4,218,-161.189240,139.892609,-71.189240,189.892609,1.000000,"" \n "No " \n "building" \n ""};
+item16[] = {"Try_and_find_bui",2,250,1.140367,226.183655,91.140411,276.183777,0.000000,"Try and" \n "find building"};
+item17[] = {"Found__Building",4,4314,-197.926971,287.697998,-107.926971,337.697998,0.000000,"Found " \n "Building"};
 link0[] = {0,3};
 link1[] = {0,4};
-link2[] = {1,9};
+link2[] = {1,16};
 link3[] = {2,10};
 link4[] = {3,7};
 link5[] = {4,5};
@@ -33,14 +35,16 @@ link12[] = {7,13};
 link13[] = {8,7};
 link14[] = {9,3};
 link15[] = {9,13};
-link16[] = {9,15};
-link17[] = {10,9};
-link18[] = {11,12};
-link19[] = {12,3};
-link20[] = {13,14};
-link21[] = {15,2};
-globals[] = {0.000000,0,0,0,0,640,480,1,37,6316128,1,-850.735291,434.983093,591.719177,-241.616760,1404,910,1};
-window[] = {2,-1,-1,-1,-1,915,156,1596,156,3,1422};
+link16[] = {10,16};
+link17[] = {11,12};
+link18[] = {12,3};
+link19[] = {13,14};
+link20[] = {15,12};
+link21[] = {16,15};
+link22[] = {16,17};
+link23[] = {17,9};
+globals[] = {0.000000,0,0,0,0,640,480,1,41,6316128,1,-809.934570,385.323730,474.173218,-303.299988,1399,910,1};
+window[] = {2,-1,-1,-32000,-32000,811,52,1492,52,3,1417};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -96,7 +100,7 @@ class FSM
                                 {
                                         itemno = ;
                                         priority = 0.000000;
-                                        to="Find_cover_";
+                                        to="Try_and_find_bui";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"((position _unit) distance _runPos) < 3"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -141,7 +145,7 @@ class FSM
                                 {
                                         itemno = ;
                                         priority = 1.000000;
-                                        to="Find_cover_";
+                                        to="Try_and_find_bui";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -204,18 +208,10 @@ class FSM
                 {
                         name = "Find_cover_";
                         itemno = ;
-                        init = /*%FSM<STATEINIT""">*/"_buildings = (position _unit) nearObjects [""Building"", 50];" \n
-                         "_buildings = _buildings select {" \n
-                         "	_positions = _x buildingPos -1;" \n
-                         "	count (_positions) >= 1" \n
-                         "};" \n
-                         "_building = selectRandom _buildings;" \n
-                         "_positions = _building buildingPos -1;" \n
-                         "_coverPos = selectRandom _positions;" \n
-                         "if !(isNil ""_coverPos"") then {" \n
-                         "	_unit doMove _coverPos;" \n
-                         "	_unit setUnitPos ""MIDDLE"";	" \n
-                         "};" \n
+                        init = /*%FSM<STATEINIT""">*/"_coverPos = selectRandom _positions;" \n
+                         "_unit doMove _coverPos;" \n
+                         "_unit setUnitPos ""MIDDLE"";	" \n
+                         "" \n
                          ""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
@@ -239,17 +235,6 @@ class FSM
                                         to="Move_Around_";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"behaviour _unit != ""COMBAT"""/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
-                                /*%FSM<LINK "No_building">*/
-                                class No_building
-                                {
-                                        itemno = ;
-                                        priority = 0.000000;
-                                        to="Run_";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"isNil ""_coverPos"""/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -289,6 +274,46 @@ class FSM
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Try_and_find_bui">*/
+                class Try_and_find_bui
+                {
+                        name = "Try_and_find_bui";
+                        itemno = ;
+                        init = /*%FSM<STATEINIT""">*/"_buildings = (position _unit) nearObjects [""Building"", 50];" \n
+                         "_buildings = _buildings select {" \n
+                         "	_positions = _x buildingPos -1;" \n
+                         "	count (_positions) >= 1" \n
+                         "};" \n
+                         "_building = selectRandom _buildings;" \n
+                         "_positions = _building buildingPos -1;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "No__building_">*/
+                                class No__building_
+                                {
+                                        itemno = ;
+                                        priority = 1.000000;
+                                        to="Freeze_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(count _positions) == 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Found__Building">*/
+                                class Found__Building
+                                {
+                                        itemno = ;
+                                        priority = 0.000000;
+                                        to="Find_cover_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(count _positions) > 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
                         };
                 };
                 /*%FSM</STATE>*/
