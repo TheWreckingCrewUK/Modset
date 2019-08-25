@@ -27,6 +27,7 @@ if (isServer) then {
 		_infantryType = (configfile >> "CfgGroups" >> "EAST" >> "BCCCCP" >> "BBC" >> "Dismounted_Section");
 	};
 
+	private _side = east; // define default
 	_side = switch (getNumber (configFile >> "CfgVehicles" >> _planetype >> "side")) do {
 		case 0: {east};
 		case 1: {west};

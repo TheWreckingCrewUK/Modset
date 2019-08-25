@@ -107,24 +107,24 @@ class TWC_Infantry_PLAN_Regular_MG: TWC_Infantry_PLAN_Regular_Rifleman
 	displayName = "Machine Gunner";
 	weapons[] =
 	{
-		"vme_pla_qjb95_1_mix",
+		"VME_PLA_QJY88",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"vme_pla_qjb95_1_mix",
+		"VME_PLA_QJY88",
 		"Throw",
 		"Put"
 	};
 	magazines[] =
 	{
-		MAG_3("VME_QJY88_200Rnd_DVP88_Heavy"),
+		MAG_2("VME_200Rnd_DPB10"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
-		MAG_3("VME_QJY88_200Rnd_DVP88_Heavy"),
+		MAG_2("VME_200Rnd_DPB10"),
 		MAG_2("SmokeShell")
 	};
 };
