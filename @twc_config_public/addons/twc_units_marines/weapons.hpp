@@ -294,7 +294,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15side_bk";
+				item="rhsusf_acc_anpeq15_bk_light";
 			};
 		};
 		class WeaponSlotsInfo
@@ -307,7 +307,8 @@ class cfgWeapons
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
-					rhsusf_acc_anpeq15side_bk = 1;
+					rhsusf_acc_anpeq15_bk_light = 1;
+					rhsusf_acc_anpeq15_bk = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -444,6 +445,29 @@ class cfgWeapons
 				slot="PointerSlot";
 				item="rhsusf_acc_anpeq15A";
 			};
+		};
+	};
+	class rhs_weap_m240G;
+	class twc_rhs_weap_m240G_mdo_lazer: rhs_weap_m240G
+	{
+		twc_openbolt = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_acog_mdo";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_acog_mdo = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 255.2;
 		};
 	};
 	class twc_rhs_weap_m27iar_grip_acog_lazer: rhs_weap_m27iar_grip

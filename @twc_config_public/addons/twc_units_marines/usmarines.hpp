@@ -566,14 +566,14 @@ weapons[]=
 {
 "Throw",
 "Put",
-"twc_rhs_weap_m240B_mgo_lazer",
+"twc_rhs_weap_m240G_mdo_lazer",
 "rhsusf_weap_m1911a1"
 };
 respawnweapons[]=
 {
 "Throw",
 "Put",
-"twc_rhs_weap_m240B_mgo_lazer",
+"twc_rhs_weap_m240G_mdo_lazer",
 "rhsusf_weap_m1911a1"
 };
 magazines[]=
