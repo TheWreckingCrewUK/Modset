@@ -28,7 +28,7 @@ if (isServer) then {
 	};
 
 	private _side = east; // define default
-	_side = switch (getNumber (configFile >> "CfgVehicles" >> _planetype >> "side")) do {
+	_side = switch (getNumber (configFile >> "CfgVehicles" >> _helicopterType >> "side")) do {
 		case 0: {east};
 		case 1: {west};
 		case 2: {resistance};
