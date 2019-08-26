@@ -23,6 +23,6 @@
 	"SLIDER",
 	"Total Damage Threshold",
 	["TWC", "Damage Threshold Settings (Testing)"],
-	[1, 50, 24, 0],
+	[1, 50, 22, 0],
 	true
 ] call CBA_fnc_addSetting;
