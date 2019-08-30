@@ -119,12 +119,12 @@ class TWC_Infantry_PLAN_Regular_MG: TWC_Infantry_PLAN_Regular_Rifleman
 	};
 	magazines[] =
 	{
-		MAG_2("VME_200Rnd_DPB10"),
+		MAG_2("VME_QJY88_200Rnd_DBP10"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
-		MAG_2("VME_200Rnd_DPB10"),
+		MAG_2("VME_QJY88_200Rnd_DBP10"),
 		MAG_2("SmokeShell")
 	};
 };
