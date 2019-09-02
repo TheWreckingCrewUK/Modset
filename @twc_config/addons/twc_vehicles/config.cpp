@@ -172,7 +172,7 @@ class CfgVehicles {
 	*/
 
 	// These are used across eras in different configurations, and as such should be first referenced here.
-	class ukcw_fv432;
+	class ukcw_fv432_gpmg;
 	class ukcw_cvrt_Scim_w_L1;
 	class ukcw_cvrt_Scim_d_L1;
 	class ukcw_Scorpion_w_L1;
