@@ -1,6 +1,6 @@
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_FV432_MOD
-class TWC_Vehicle_ColdWar_FV432_Woodland: ukcw_fv432 {
+class TWC_Vehicle_ColdWar_FV432_Woodland: ukcw_fv432_gpmg {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -68,7 +68,7 @@ class TWC_Vehicle_ColdWar_FV432_Woodland: ukcw_fv432 {
 	displayname = "FV432 (Desert)";
 }; */
 
-class TWC_Vehicle_ColdWar_FV432_Woodland_COIN: ukcw_fv432 {
+class TWC_Vehicle_ColdWar_FV432_Woodland_COIN: ukcw_fv432_gpmg {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;

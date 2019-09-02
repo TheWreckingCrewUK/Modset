@@ -144,9 +144,11 @@ _civArray = switch _type do {
 _civList = [];
 
 for "_i" from 1 to _size do {
-	_spawnPos = [[[_pos,_radius]]] call BIS_fnc_randomPos;
+	_spawnPos = [[[_pos, _radius]]] call BIS_fnc_randomPos;
 	_group = createGroup civilian;
-	_civ = _group createUnit [selectRandom _civArray, nearestBuilding _spawnPos, [], 3, "NONE"];
+	_building = nearestBuilding _spawnPos;
+	if !(isNull _building) then {_building = _spawnPos};
+	_civ = _group createUnit [selectRandom _civArray, _building, [], 3, "NONE"];
 	_civList pushBack _civ;
 	[[_civ, _pos, _radius], "\twc_framework\fsms\TWC_AmbientCiv.fsm"] remoteExecCall ["execFSM", _civ];
 };
