@@ -1015,7 +1015,7 @@ class Extended_Init_EventHandlers
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.45]";
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.5]";
 		};
 	};
 	
@@ -1173,6 +1173,79 @@ class CfgVehicles {
 				center = "wheel_2_3_axis";
 				suspForceAppPointOffset = "wheel_2_3_axis";
 				tireForceAppPointOffset = "wheel_2_3_axis";
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class Van_01_base_F: Truck_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.15;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
 			};
 		};
 	};
@@ -1348,6 +1421,372 @@ class CfgVehicles {
 		};
 	};
 	
+	class CUP_C_Golf4_Base: Car_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.15;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+			};
+		};
+	};
+	
+	class CUP_C_Golf4_Civ_Base: CUP_C_Golf4_Base
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.15;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+			};
+		};
+	};
+	
+	class CUP_C_Golf4_Civ_sport_Base: CUP_C_Golf4_Civ_Base
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.15;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+			};
+		};
+	};
+	
+	class CUP_SUV_Base: Car_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.15;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+			};
+		};
+	};
+	
+	class CUP_SUV_Unarmed_Base: CUP_SUV_Base
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.15;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+			};
+		};
+	};
+	
+	class CUP_Datsun_Base: Car_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.05;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.05;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 56000;
+				sprungMass = 725;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+			};
+		};
+	};
+	
 	class CUP_UAZ_Base: Car_F
 	{
 		class Wheels
@@ -1372,9 +1811,9 @@ class CfgVehicles {
 				mMaxDroop = 0.15;
 				MOI = 40;
 				side = "left";
-				springDamperRate = 5000;
-				springStrength = 25000;
-				sprungMass = 1450;
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				suspTravelDirection[] = {0,-0.8,0};
