@@ -1023,7 +1023,7 @@ class Extended_Init_EventHandlers
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.01,0.7]";
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.01,0.65]";
 		};
 	};
 	
@@ -1623,14 +1623,14 @@ class CfgVehicles {
 				mass = 90;
 				maxBrakeTorque = 9000;
 				maxCompression = 0.4;
-				MaxDroop = 0.15;
+				MaxDroop = 0.05;
 				maxHandBrakeTorque = 1500;
-				mMaxDroop = 0.15;
+				mMaxDroop = 0.05;
 				MOI = 40;
 				side = "left";
-				springDamperRate = 4500;
-				springStrength = 36000;
-				sprungMass = 525;
+				springDamperRate = 1300;
+				springStrength = 13000;
+				sprungMass = 925;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				suspTravelDirection[] = {0,-0.8,0};
@@ -1644,6 +1644,7 @@ class CfgVehicles {
 				center = "wheel_1_2_axis";
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
+				steering = 0;
 			};
 			class RF: LF
 			{
@@ -1661,6 +1662,7 @@ class CfgVehicles {
 				center = "wheel_2_2_axis";
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
+				steering = 0;
 			};
 		};
 	};
@@ -1689,9 +1691,9 @@ class CfgVehicles {
 				mMaxDroop = 0.15;
 				MOI = 40;
 				side = "left";
-				springDamperRate = 4500;
-				springStrength = 36000;
-				sprungMass = 525;
+				springDamperRate = 1300;
+				springStrength = 13000;
+				sprungMass = 925;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				suspTravelDirection[] = {0,-0.8,0};
@@ -1705,6 +1707,7 @@ class CfgVehicles {
 				center = "wheel_1_2_axis";
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
+				steering = 0;
 			};
 			class RF: LF
 			{
@@ -1722,6 +1725,7 @@ class CfgVehicles {
 				center = "wheel_2_2_axis";
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
+				steering = 0;
 			};
 		};
 	};
@@ -1745,13 +1749,13 @@ class CfgVehicles {
 				mass = 90;
 				maxBrakeTorque = 9000;
 				maxCompression = 0.4;
-				MaxDroop = 0.05;
+				MaxDroop = 0.15;
+				mMaxDroop = 0.15;
 				maxHandBrakeTorque = 1500;
-				mMaxDroop = 0.05;
 				MOI = 40;
 				side = "left";
-				springDamperRate = 4500;
-				springStrength = 56000;
+				springDamperRate = 1000;
+				springStrength = 13000;
 				sprungMass = 725;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
@@ -1806,14 +1810,14 @@ class CfgVehicles {
 				mass = 90;
 				maxBrakeTorque = 9000;
 				maxCompression = 0.4;
-				MaxDroop = 0.15;
+				MaxDroop = 0.0;
 				maxHandBrakeTorque = 1500;
-				mMaxDroop = 0.15;
+				mMaxDroop = 0.0;
 				MOI = 40;
 				side = "left";
-				springDamperRate = 4500;
-				springStrength = 36000;
-				sprungMass = 525;
+				springDamperRate = 1100;
+				springStrength = 14000;
+				sprungMass = 725;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				suspTravelDirection[] = {0,-0.8,0};
