@@ -1015,7 +1015,7 @@ class Extended_Init_EventHandlers
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.5]";
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.35]";
 		};
 	};
 	
