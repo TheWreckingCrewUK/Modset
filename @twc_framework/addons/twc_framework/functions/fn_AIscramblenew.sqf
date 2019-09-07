@@ -13,17 +13,23 @@
 *
 * Public: No
 */
+
+
+_check = missionnamespace getvariable ["twc_stopscramble", 0];
+if (_check == 1) exitwith {};
+
 CIVILIAN setFriend [EAST, 1];
 CIVILIAN setFriend [WEST, 1];
 CIVILIAN setFriend [INDEPENDENT, 1];
 
 //Recieved Parameters
-params ["_leader", ["_supponly", 0]];
-sleep 2;
-//making sure only one instance is run on a group at a time
+params ["_leader", "_supponly"];
 _group = group _leader;
 
 _checker = leader _group;
+_keycheck = _group getvariable ["twc_aiscramkey", 0];
+if (_keycheck > 0) exitwith {};
+_group setvariable ["twc_aiscramkey", (_keycheck + 1), true];
 
 
 	_osideo = _leader getvariable ["twcscram_oside", 8];
@@ -45,9 +51,7 @@ _checker = leader _group;
 	};
 	
 	
-_keycheck = _group getvariable ["twc_aiscramkey", 0];
 
-_group setvariable ["twc_aiscramkey", (_keycheck + 1), true];
 
 
 _leader = leader _leader;
@@ -59,13 +63,26 @@ if (_enemy == objnull) then {
 	_enemy = allplayers call bis_fnc_selectrandom;
 };
 
+if ((vehicle _leader) != _leader) then {
+	_chkunit = _leader;
+	if ((gunner (vehicle _leader)) != objnull) then {
+		_chkunit = gunner (vehicle _leader);
+	};
+	_chkdir = _chkunit getreldir _enemy;
+	//if the enemy is too close for comfort and the gunner isn't on it, dehorse the vehicle
+	if (((_enemy distance (vehicle _leader)) < 60) && ((_chkdir > 20) && (_chkdir < 340))) then {
+		{doGetOut _x} forEach (crew (vehicle _leader));
+	};
+};
+
 {
 	if ((_x getvariable ["twc_aisuppression", 0]) == 0) then {
-		[_x] spawn TWC_fnc_aisuppress;
+		[_x, _supponly] spawn TWC_fnc_aisuppress;
 	};
 } foreach units _group;
 
 if (_supponly == 1) exitwith {};
+if (_supponly == 3) exitwith {};
 
 [(units _group)] call ace_ai_fnc_unGarrison;
 
@@ -109,5 +126,6 @@ sleep 30;
 _group setvariable ["twc_aiscramkey", 0];
 if ((count units _group)> 0) then {
 	_group setvariable ["twc_aiscramkey", 0, true];
+	_group setvariable ["twc_isscrambling", 0];
 	[leader _group] spawn TWC_fnc_aiscramble;
 };
