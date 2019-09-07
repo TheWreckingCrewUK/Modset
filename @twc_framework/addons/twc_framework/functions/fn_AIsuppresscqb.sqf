@@ -14,8 +14,11 @@
 * Public: No
 */
 
+_check = missionnamespace getvariable ["twc_stopscramble", 0];
+if (_check == 1) exitwith {};
+
 //Recieved Parameters
-params ["_unit", "_enemy"];
+params ["_unit", "_enemy", "_cqbonly"];
 
 _ogroup = group _unit;
 
@@ -49,4 +52,4 @@ _unit reveal [_enemy, 1.5];
 
 sleep 3;
 
-[_unit] spawn TWC_fnc_aisuppress;
+[_unit, _cqbonly] spawn TWC_fnc_aisuppress;
