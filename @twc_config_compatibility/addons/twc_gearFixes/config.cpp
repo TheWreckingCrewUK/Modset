@@ -2070,11 +2070,13 @@ class CfgVehicles {
 		antiRollbarSpeedMax = 100;
 		ace_cargo_size = 10;
 		ace_cargo_canLoad = 1;	
-		torqueCurve[] = {{0,0.2},{0.278,0.3},{0.35,0.35},{0.461,0.4},{0.7,0.3},{0.75,0.3},{0.8,0.25},{1,0.2}};
+		//torqueCurve[] = {{0,0.3},{0.278,0.35},{0.35,0.35},{0.461,0.4},{0.7,0.3},{0.75,0.3},{0.8,0.25},{1,0.2}};
+		torqueCurve[] = {{0,0.6},{0.2,0.65},{0.3,0.8},{0.7,0.95},{0.8,1},{0.9,0.95},{1,0.5}};
+		peakTorque = 220;
 		enginepower = 10;
 		ace_cargo_hasCargo = 1;
 		ace_cargo_space = 2;
-		clutchStrength = 30;
+		clutchStrength = 10;
 		differentialType = "all_limited";
 		frontRearSplit = 0.1;
 		frontBias = 1.1;
@@ -2097,14 +2099,14 @@ class CfgVehicles {
 				longitudinalStiffnessPerUnitGravity = 5000;
 				mass = 30;
 				maxBrakeTorque = 700;
-				maxCompression = 0.25;
+				maxCompression = 0.4;
 				maxDroop = 0.25;
 				maxHandBrakeTorque = 0;
 				MOI = 20;
 				side = "left";
 				springDamperRate = 1000;
-				springStrength = 9050;
-				sprungMass = 150;
+				springStrength = 50;
+				sprungMass = 100;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				suspTravelDirection[] = {-0.125,-1,0};
@@ -2118,7 +2120,7 @@ class CfgVehicles {
 				maxHandBrakeTorque = 800;
 				frictionVsSlipGraph[] = {[0,0.8],[0.5,0.9],[1,0.5]};
 				latStiffX = 25;
-				springDamperRate = 650;
+				springDamperRate = 1500;
 				steering = 0;
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
@@ -2139,7 +2141,7 @@ class CfgVehicles {
 				maxHandBrakeTorque = 800;
 				frictionVsSlipGraph[] = {[0,0.8],[0.5,0.9],[1,0.5]};
 				latStiffX = 25;
-				springDamperRate = 650;
+				springDamperRate = 1500;
 				steering = 0;
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
@@ -2151,10 +2153,10 @@ class CfgVehicles {
        {
 			maxTurnHundred = 0.5;
 			turnDecreaseConst = 9;
-			turnDecreaseLinear = 0;
+			turnDecreaseLinear = 1;
 			turnDecreaseTime = 0;
 			turnIncreaseConst = 0.1;
-			turnIncreaseLinear = 2.5;
+			turnIncreaseLinear = 1;
 			turnIncreaseTime = 1;
        };
 	};
