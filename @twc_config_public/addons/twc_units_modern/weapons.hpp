@@ -1341,10 +1341,6 @@ class cfgWeapons
 		
 	};
 	
-	class UK3CB_BAF_L85A2_RIS_ELCAN_desert: UK3CB_BAF_L85A2_RIS_ELCAN3D
-	{
-		hiddenSelectionsTextures[] = {"\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\kio_l85a2_base_co.paa","\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\kio_l85a2_handguard_co.paa","\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\kio_l85a2_ironsights_co.paa","\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\kio_l85a2_picatinnysight_co.paa","\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\emag_co.paa","twc_units_modern\textures\l85_desertris.jpg"};
-	};
 		class UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN: UK3CB_BAF_L85A2_RIS_Tan
 	{
 		scope = 1;
