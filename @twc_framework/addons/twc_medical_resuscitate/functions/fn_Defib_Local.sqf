@@ -12,6 +12,13 @@
 */
 params ["_caller", "_target"];
 
+if !(alive _target) exitWith {
+	[_target, "activity", localize "STR_TWC_CPR_EXECUTE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
+	[_target, "activity_view", localize "STR_TWC_CPR_EXECUTE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
+	
+	false;
+};
+
 _probability = 40;
 
 _gotEpi = _target getVariable ["ace_medical_epinephrine_insystem", 0];
