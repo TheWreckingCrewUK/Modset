@@ -45,8 +45,8 @@ class CfgWeapons {
 	class RifleCore;
 
 	class Rifle: RifleCore {
-		aiDispersionCoefX = 10;
-		aiDispersionCoefY = 10;
+		aiDispersionCoefX = 9;
+		aiDispersionCoefY = 9;
 	};
 	
 	class MGunCore: Default {
