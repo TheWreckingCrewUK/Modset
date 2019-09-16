@@ -37,4 +37,5 @@ class CfgAISkill {
 	spotTime[]       = {0, 0.3, 1, 0.8};  // {0,0,1,0.7};
 };
 
+#include "CfgBrains.hpp"
 #include "CfgWeapons.hpp"
