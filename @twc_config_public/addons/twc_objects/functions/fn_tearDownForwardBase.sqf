@@ -36,6 +36,12 @@ _generator = _pos nearObjects ["twc_portableGenerator",200];
 _table setVariable ["twc_forwardBaseDeployed",false];
 [_table, true] call ace_dragging_fnc_setDraggable;
 [_generator select 0,false] call ace_dragging_fnc_setDraggable;
+_check  = profilenamespace getvariable ["twcpb" + missionname, []];
+
+if ((count _check) > 0) then {
+	profilenamespace setvariable ["twcpb" + missionname, []];
+	saveprofilenamespace;
+};
 
 _return = "Forward Base Torn Down Successfully";
 _return;}

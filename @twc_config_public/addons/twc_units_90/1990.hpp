@@ -2421,7 +2421,6 @@
 		Items[]=
 		{
 			"ACE_EarPlugs",
-			"ACRE_PRC148",
 			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
