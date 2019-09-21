@@ -46,6 +46,7 @@ class TWC_Backpack_1990_COIN_##CAMO##_Platoon_Sergeant: INHERIT \
 { \
 	scope = 1; \
 	scopeArsenal = 1; \
+	maximumLoad = 430; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
