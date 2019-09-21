@@ -57,6 +57,10 @@ class TWC_AmmoBox_Launchers_LAW80_Portable: TWC_AmmoBox_Launcher_Portable {
 	class TransportWeapons {
 		weap_nc(ukcw_law80_loaded, 2);
 	};
+	
+	class TransportMagazines {
+		maga_nc(ukcw_law80_magazine_spotting, 2);
+	};
 };
 
 // Took Riks word for the desgination
