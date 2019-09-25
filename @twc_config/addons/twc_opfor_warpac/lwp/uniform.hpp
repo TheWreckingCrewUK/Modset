@@ -8,7 +8,7 @@ class TWC_Uniform_LWP_Moro : ItemCore {
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
-		uniformClass = "CUP_O_TK_Soldier_01"; //Change to actual classname
+		uniformClass = "TWC_OPFOR_WARPAC_LWP_Base";
 		containerClass = Supply30;
 		mass = 20;
 	};

@@ -10,7 +10,7 @@ class TWC_OPFOR_WARPAC_NVA_Base: O_Soldier_base_F {
 	genericNames = "CUP_Names_GermanMen";
 	backpack = "";
 	identityTypes[] = {
-		"LanguageGRE_F",
+		"LanguagePOL_F",
 		"Head_Euro",
 		"G_GUERIL_default"
 	};
