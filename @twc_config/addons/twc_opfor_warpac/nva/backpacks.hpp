@@ -1,4 +1,4 @@
-//Section
+//Group
 class TWC_Backpack_WARPAC_NVA_GL: CUP_B_AlicePack_Khaki {
 	scope = 1;
 	class TransportMagazines {

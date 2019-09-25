@@ -429,7 +429,7 @@ class TWC_Groups_WARPAC_NVA {
 				position[] = {12,0,0};
 			};
 		};
-		class MG_Team_BMP1 {
+		class MG_Team_BMP {
 			name = "MG Team (BMP)";
 			faction = "TWC_OPFOR_Units_NVA";
 			side = 0;
