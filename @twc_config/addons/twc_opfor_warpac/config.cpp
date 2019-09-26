@@ -66,8 +66,8 @@ class CfgMarkers {
 	};
 	class TWC_Flag_NVA: Flag {
 		name = "German Democratic Republic";
-		icon = "twc_opfor_warpac\csla\data\nva_flag_ca.paa";
-		texture = "twc_opfor_warpac\csla\data\nva_flag_ca.paa";
+		icon = "twc_opfor_warpac\nva\data\nva_flag_ca.paa";
+		texture = "twc_opfor_warpac\nva\data\nva_flag_ca.paa";
 		size = 32;
 		scope = 2;
 		shadow = 0;
@@ -137,6 +137,14 @@ class CfgVehicles {
 	class CUP_O_Ural_Empty_RU;
 	class CUP_O_Ural_ZU23_RU;
 	class CUP_O_BM21_SLA;
+
+	class CUP_B_RM70_CZ;
+
+	class CUP_I_V3S_Open_TKG;
+	class CUP_I_V3S_Covered_TKG;
+	class CUP_I_V3S_Rearm_TKG;
+	class CUP_I_V3S_Refuel_TKG;
+	class CUP_I_V3S_Repair_TKG;
 
 	class CUP_BMP1_base;
 	class CUP_O_BRDM2_SLA;

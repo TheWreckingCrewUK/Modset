@@ -56,7 +56,6 @@ class TWC_OPFOR_WARPAC_LWP_BMP1: CUP_BMP1_base {
 	editorPreview = "CUP\TrackedVehicles\CUP_TrackedVehicles_BMP\Data\preview\CUP_I_BMP1_TK_GUE.jpg";
 };
 class TWC_OPFOR_WARPAC_LWP_BRDM: CUP_O_BRDM2_SLA {
-	
 	faction = "TWC_OPFOR_Units_LWP";
 	crew = "TWC_OPFOR_WARPAC_LWP_Crewman";
 	typicalCargo[] = {

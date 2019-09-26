@@ -7,7 +7,7 @@ class TWC_OPFOR_WARPAC_LWP_Base: O_Soldier_base_F {
 	nakedUniform = "U_BasicBody";
 	uniformClass = "TWC_Uniform_LWP_Moro";
 	model = "\A3\Characters_F_Beta\INDEP\ia_officer.p3d";
-	genericNames = "CUP_Names_GermanMen";
+	genericNames = "EnochMen";
 	backpack = "";
 	identityTypes[] = {
 		"LanguagePOL_F",
