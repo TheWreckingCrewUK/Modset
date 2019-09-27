@@ -132,12 +132,12 @@ class TWC_OPFOR_WARPAC_CSLA_Crewman: TWC_OPFOR_WARPAC_CSLA_Rifleman {
 		"ItemWatch"
 	};
 	weapons[] = {
-		"CUP_smg_SA6",
+		"CUP_smg_SA61",
 		"Throw",
 		"Put"
 	};
 	respawnWeapons[] = {
-		"CUP_smg_SA6",
+		"CUP_smg_SA61",
 		"Throw",
 		"Put"
 	};
