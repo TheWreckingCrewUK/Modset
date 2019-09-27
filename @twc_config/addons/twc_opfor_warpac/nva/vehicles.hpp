@@ -87,7 +87,7 @@ class TWC_OPFOR_WARPAC_NVA_BM21: CUP_O_BM21_SLA {
 	};
 };
 
-class TWC_OPFOR_WARPAC_NVA_BM21: CUP_B_RM70_CZ {
+class TWC_OPFOR_WARPAC_NVA_RM70: CUP_B_RM70_CZ {
 	side = 0;
 	faction = "TWC_OPFOR_Units_NVA";
 	crew = "TWC_OPFOR_WARPAC_NVA_Rifleman";
