@@ -248,6 +248,10 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (Russian Federation)";
 	};
+	class Men_Russiansof
+	{
+		displayName = "Men (Russian SOF)";
+	};
 	class Men_Iraq
 	{
 		displayName = "Men (Iraq)";
@@ -408,7 +412,7 @@ class CfgVehicles
 			};
 		};
 	};
-		class twc_Backpack_m249: CUP_B_AlicePack_Khaki
+	class twc_Backpack_m249: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -416,6 +420,34 @@ class CfgVehicles
 			class _xx_mgMags
 			{
 				magazine="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+				count=4;
+			};
+		};
+	};
+	
+	class B_RadioBag_01_eaf_F;
+	class twc_russof_SL_backpack: B_RadioBag_01_eaf_F
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Mags
+			{
+				magazine="CUP_30Rnd_545x39_AK74M_desert_M";
+				count=4;
+			};
+		};
+	};
+	
+	class twc_AlicePack_green;
+	class twc_russof_MG_backpack: twc_AlicePack_green
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Mags
+			{
+				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 				count=4;
 			};
 		};
