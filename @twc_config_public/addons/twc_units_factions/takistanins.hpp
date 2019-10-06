@@ -866,7 +866,7 @@
 		uniformClass="CUP_O_TKI_Khet_Partug_07";
 		scope=1;
 	};
-	class Tak_twc_ins_Men_R4: Tak_twc_ins_Men_Base
+	class Tak_twc_ins_Men_R5: Tak_twc_ins_Men_Base
 	{
 		scope=2;
 		displayName="Rifleman (M4)";
