@@ -2337,7 +2337,7 @@
 		vehicleClass="Men_1990D";
 		attendant = 1;
 		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
-		backpack="TWC_Backpack_1990_quartermaster";
+		backpack="";
 		linkedItems[]=
 		{
 			"twc_interceptor_od",
@@ -2363,7 +2363,7 @@
 		vehicleClass="Men_1990D";
 		attendant = 1;
 		uniformClass="UK3CB_BAF_U_Smock_DDPM";
-		backpack="TWC_Backpack_1990_quartermaster_desert";
+		backpack="";
 		linkedItems[]=
 		{
 			"twc_rhs_6sh92_radio_ddpm",

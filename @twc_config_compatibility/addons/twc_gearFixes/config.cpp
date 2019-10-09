@@ -2178,12 +2178,14 @@ class CfgVehicles {
 		maxSpeed = 150;
 		enginePower = 185;
 		armor = 310;
+		brakeIdleSpeed = 1.2;
 		class Wheels:Wheels {
 			class LF:LF {
 				springDamperRate = 22000;
 				springStrength = 80000;
 				maxCompression = 0.3;
 				maxBrakeTorque = 6000;
+				MOI = 70;
 				maxHandBrakeTorque = 5000;
 				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.3, 0.5 }, { 1.0, 0.4 }};
 			};
