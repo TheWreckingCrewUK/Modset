@@ -97,12 +97,14 @@
 		scope=2;
 		displayName="Blank Unit";
 		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_Smock_MTP";
+		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
 		linkedItems[]=
 		{
+			"UK3CB_BAF_H_Beret_RLC_Commando"
 		};
 		respawnLinkedItems[]=
 		{
+			"UK3CB_BAF_H_Beret_RLC_Commando"
 		};
 		Items[]=
 		{
@@ -208,7 +210,7 @@
 		displayName="Quartermaster @Management";
 		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
 		icon="iconManLeader";
-		backpack="TWC_Backpack_Modern_quartermaster";
+		backpack="";
 		attendant = 1;
 		linkedItems[]=
 		{
