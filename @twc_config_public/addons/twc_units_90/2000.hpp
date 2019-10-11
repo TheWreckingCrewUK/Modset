@@ -1811,22 +1811,22 @@
 		faction="twc_public_baf";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
-		twc_nobackpack = 1;
+		backpack="TWC_Backpack_2000_sniper_D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		linkedItems[]=
 		{
-        "twc_V_HarnessO_tan",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "UK3CB_BAF_V_Osprey_DDPM7",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "twc_V_HarnessO_tan",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "UK3CB_BAF_V_Osprey_DDPM7",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -1853,11 +1853,23 @@
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_9_15Rnd",
 		"UK3CB_BAF_9_15Rnd",
-		"UK3CB_BAF_9_15Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
-		"SmokeShell",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -1866,11 +1878,23 @@
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_9_15Rnd",
 		"UK3CB_BAF_9_15Rnd",
-		"UK3CB_BAF_9_15Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
-		"SmokeShell",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"SmokeShell"
 		};
 		Items[]=
@@ -1878,11 +1902,14 @@
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
 		"ACE_RangeCard",
+		"ACE_Kestrel4500",
 		
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs"	
@@ -1892,11 +1919,14 @@
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
 		"ACE_RangeCard",
+		"ACE_Kestrel4500",
 		
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs"		
@@ -1911,22 +1941,22 @@
 		faction="twc_public_baf";
 		editorSubcategory = "Men_2000D";
 		vehicleClass="Men_2000D";
-		backpack="TWC_Backpack_2000_sniper_D";
+		backpack="TWC_Backpack_2000_spotter_D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		linkedItems[]=
 		{
-        "twc_rhs_6sh92_radio_tan",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "UK3CB_BAF_V_Osprey_DDPM2",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "twc_rhs_6sh92_radio_tan",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "UK3CB_BAF_V_Osprey_DDPM2",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -1935,7 +1965,7 @@
 		{
 		"Throw",
 		"Put",
-		"Binocular",
+		"ACE_Yardage450",
 		"twc_l96_d",
 		"UK3CB_BAF_L107A1"
 		};
@@ -1943,7 +1973,7 @@
 		{
 		"Throw",
 		"Put",
-		"Binocular",
+		"ACE_Yardage450",
 		"twc_l96_d",
 		"UK3CB_BAF_L107A1"
 		};
@@ -1953,14 +1983,24 @@
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_9_15Rnd",
 		"UK3CB_BAF_9_15Rnd",
-		"UK3CB_BAF_9_15Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
-		"SmokeShell",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
@@ -1969,14 +2009,24 @@
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_9_15Rnd",
 		"UK3CB_BAF_9_15Rnd",
-		"UK3CB_BAF_9_15Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
-		"SmokeShell",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"SmokeShell"
 		};
 		Items[]=
@@ -1989,8 +2039,10 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
-		"ACE_Tripod",
-		"ACE_SpottingScope",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
+		"ACE_RangeCard",
+		"ACE_Kestrel4500",
 		"ACE_morphine",
 		"ACE_morphine"
 		};
@@ -2004,8 +2056,10 @@
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
-		"ACE_Tripod",
-		"ACE_SpottingScope",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
+		"ACE_RangeCard",
+		"ACE_Kestrel4500",
 		"ACE_morphine",
 		"ACE_morphine"		
 		};

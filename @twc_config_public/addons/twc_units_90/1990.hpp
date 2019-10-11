@@ -2044,22 +2044,21 @@
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		backpack="";
-		twc_nobackpack = 1;
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="TWC_Smock_Desert";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 		linkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "twc_V_HarnessO_tan",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "twc_V_HarnessO_tan",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -2095,6 +2094,12 @@
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -2113,6 +2118,12 @@
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -2120,12 +2131,12 @@
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
-		"ACE_RangeCard",
-		
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs"	
@@ -2134,12 +2145,12 @@
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
-		"ACE_RangeCard",
-		
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs"		
@@ -2156,20 +2167,20 @@
 		vehicleClass="Men_1990D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="TWC_Smock_Desert";
-		backpack="TWC_Backpack_1990_Sectionlead_Desert";
+		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		backpack="TWC_Backpack_1990_spotter";
 		linkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "twc_interceptor_ddpm",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "twc_interceptor_ddpm",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -2192,50 +2203,37 @@
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_762_L42A1_10Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
-		"UK3CB_BAF_9_13Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
 		"UK3CB_BAF_556_30Rnd",
-		"SmokeShell",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_762_L42A1_10Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
-		"UK3CB_BAF_9_13Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
 		"UK3CB_BAF_556_30Rnd",
-		"SmokeShell",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell"
 		};
 		Items[]=
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
+		"ACE_RangeCard",
+		"ACE_tourniquet",
+		"ACE_tourniquet",	
 		
 		"ACE_EarPlugs",	
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
-		"ACE_Tripod",
-		"ACE_SpottingScope",
 		"ACE_morphine",
 		"ACE_morphine"
 		};
@@ -2243,14 +2241,15 @@
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
+		"ACE_RangeCard",	
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		
 		"ACE_EarPlugs",	
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
-		"ACE_Tripod",
-		"ACE_SpottingScope",
 		"ACE_morphine",
 		"ACE_morphine"		
 		};

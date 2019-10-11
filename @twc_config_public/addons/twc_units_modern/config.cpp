@@ -25,6 +25,8 @@ class CfgPatches {
 			"Modern_British_Sniper",
 			"Modern_British_Spotter",
 			"Modern_British_FAC",
+			"Modern_British_Blank",
+			"Modern_British_Quartermaster",
 			"Modern_British_VehicleCrew",
 			"Modern_British_VehicleCommander",
 			"Modern_British_FSTCommander",

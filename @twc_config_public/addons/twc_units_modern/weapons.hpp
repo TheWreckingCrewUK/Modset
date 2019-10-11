@@ -667,12 +667,18 @@ class cfgWeapons
 				slot="UnderBarrelSlot";
 				item="CUP_bipod_Harris_1A2_L";
 			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="twc_hk417_siderail";
+				item="rhsusf_acc_anpeq16a";
+			};
 		};
 		class WeaponSlotsInfo
 		{
 			class CowsSlot: CUP_PicatinnyTopMount {
 				class compatibleItems {
 					RKSL_optic_PMII_312_des = 1;
+					cup_optic_an_pas_13c1 = 1;
 					UK3CB_BAF_MaxiKite = 1;
 				};
 			};
@@ -684,6 +690,11 @@ class cfgWeapons
 			class UnderBarrelSlot: asdg_UnderSlot {
 				class compatibleItems {
 					CUP_bipod_Harris_1A2_L = 1;
+				};
+			};
+			class twc_hk417_siderail {
+				class compatibleItems {
+					rhsusf_acc_anpeq16a = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -1634,6 +1645,8 @@ class cfgWeapons
 				class compatibleItems {
 					RKSL_optic_PMII_525 = 1;
 					UK3CB_BAF_MaxiKite = 1;
+					cup_optic_an_pas_13c1 = 1;
+					rhsusf_acc_premier_anpvs27 = 1;
 				};
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L129A1: asdg_MuzzleSlot_762_L129_3CB {

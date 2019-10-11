@@ -4,6 +4,15 @@ class CfgPatches
 	{
 		units[]=
 		{
+			"TWC_2000_US_Army_Base",
+			"TWC_2000_US_Army_SectionCommander",
+			"TWC_2000_US_Army_TeamLeader",
+			"TWC_2000_US_Army_Rifleman",
+			"TWC_2000_US_Army_Grenadier",
+			"TWC_2000_US_Army_AutomaticRifleman",
+			"TWC_2000_US_Army_Marksman",
+			"TWC_2000_US_Army_Medic",
+			
 			"TWC_Modern_US_Army_Base",
 			"TWC_Modern_US_Army_SectionCommander",
 			"TWC_Modern_US_Army_TeamLeader",
