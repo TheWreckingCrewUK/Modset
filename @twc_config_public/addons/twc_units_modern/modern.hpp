@@ -1017,17 +1017,16 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		icon="iconManLeader";
 		twc_radioType = "ACRE_PRC343";
 		twc_radioChannel = 4;
-		twc_nobackpack = 1;
-		backpack="";
+		backpack="TWC_Backpack_Modern_Sniper";
 		linkedItems[]= {
-			"UK3CB_BAF_V_PLCE_Webbing_MTP",
+			"V_Rangemaster_belt",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 
 		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_PLCE_Webbing_MTP",
+			"V_Rangemaster_belt",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1053,9 +1052,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
@@ -1066,9 +1062,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
@@ -1078,6 +1071,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		scope=2;
 		displayName="Spotter";
 		icon="iconManLeader";
+		backpack="TWC_Backpack_Modern_Spotter";
 
 		Items[]= {
 			"ACE_Kestrel4500",
@@ -1087,10 +1081,10 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
-			"ACRE_PRC148",
+			"ACRE_PRC152",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"ACE_microDAGR",
+			"ItemcTab",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
@@ -1100,9 +1094,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
-			"ACE_CableTie",
-			"ACE_CableTie",
-			"ACE_CableTie",
 			"ACE_quikclot",
 			"ACE_quikclot",
 			"ACE_morphine",
@@ -1118,11 +1109,11 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
-			"ACRE_PRC148",
+			"ACRE_PRC152",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"ACE_microDAGR",
+			"ItemcTab",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
@@ -1132,9 +1123,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
-			"ACE_CableTie",
-			"ACE_CableTie",
-			"ACE_CableTie",
 			"ACE_quikclot",
 			"ACE_quikclot",
 			"ACE_morphine",
@@ -1162,11 +1150,9 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
@@ -1174,11 +1160,9 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
