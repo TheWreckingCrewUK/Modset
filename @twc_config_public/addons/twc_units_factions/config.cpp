@@ -26,6 +26,13 @@ class CfgPatches
 			"1990_British_HeloPilot_Desert",
 			"1990_British_Tank_Commander_Desert",
 			"1990_British_Tank_Crew_Desert",
+			
+			
+			"TWC_Russian_SF_Base",
+			"TWC_Russian_SF_SL",
+			"TWC_Russian_SF_MG",
+			"TWC_Russian_SF_SMG",
+			
 			"Modern_British_Squadleader",
 			"Modern_British_Rifleman",
 			"Modern_British_Pointman",
@@ -433,7 +440,7 @@ class CfgVehicles
 		{
 			class _xx_Mags
 			{
-				magazine="CUP_30Rnd_545x39_AK74M_desert_M";
+				magazine="rhs_30Rnd_545x39_7N22_desert_AK";
 				count=4;
 			};
 		};
@@ -447,7 +454,7 @@ class CfgVehicles
 		{
 			class _xx_Mags
 			{
-				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+				magazine="rhs_100Rnd_762x54mmR_7N26";
 				count=4;
 			};
 		};
