@@ -1751,7 +1751,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		twc_radioChannel = 2;
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_rifleman",
+			"CUP_V_B_JPC_MCam",
 			"rhsusf_opscore_mc_cover_pelt",
 			"ItemMap",
 			"ItemCompass",
@@ -1759,7 +1759,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_rifleman",
+			"CUP_V_B_JPC_MCam",
 			"rhsusf_opscore_mc_cover_pelt",
 			"ItemMap",
 			"ItemCompass",
@@ -1953,7 +1953,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"twc_mtp_spc_squadleader",
+			"CUP_V_B_Armatus_BB_MCam",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",
@@ -1962,7 +1962,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_mtp_spc_squadleader",
+			"CUP_V_B_Armatus_BB_MCam",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",
@@ -1989,6 +1989,22 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"Put",
 			"TWC_UK3CB_BAF_L119A2_10_LDS",
 			"rhsusf_weap_glock17g4"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_JPC_Tan",
+			"rhsusf_opscore_mc_cover_pelt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_JPC_Tan",
+			"rhsusf_opscore_mc_cover_pelt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 	};
 
@@ -2123,16 +2139,16 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_machinegunner",
-			"rhsusf_opscore_mc_cover_pelt",
+			"CUP_V_B_Armatus_BB_MCam",
+			"CUP_H_OpsCore_Covered_MCAM_SF",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_machinegunner",
-			"rhsusf_opscore_mc_cover_pelt",
+			"CUP_V_B_Armatus_BB_MCam",
+			"CUP_H_OpsCore_Covered_MCAM_SF",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2168,16 +2184,16 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"twc_rhsusf_mbav_rifleman_mtp",
-			"rhsusf_opscore_mc_cover_pelt",
+			"CUP_V_B_Ciras_Olive",
+			"CUP_H_OpsCore_Spray_SF",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_rhsusf_mbav_rifleman_mtp",
-			"rhsusf_opscore_mc_cover_pelt",
+			"CUP_V_B_Ciras_Olive",
+			"CUP_H_OpsCore_Spray_SF",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
