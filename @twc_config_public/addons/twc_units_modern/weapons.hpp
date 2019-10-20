@@ -18,6 +18,7 @@ class rhs_western_rifle_underbarrel_slot;
 class CUP_TopMountG36;
 class asdg_MuzzleSlot_9MM_SMG;
 class Mode_SemiAuto;
+class Single;
 class Mode_Burst;
 class Mode_FullAuto;
 
@@ -31,7 +32,7 @@ class cfgWeapons
 	class UK3CB_BAF_L129A1;
 	class UK3CB_BAF_L129A1_public: UK3CB_BAF_L129A1
 	{};
-	class UK3CB_BAF_L128A1;
+	class CUP_sgun_M1014_vfg;
 	class UK3CB_BAF_L85A2_RIS_Tan;
 	class arifle_Mk20_F;
 	class Rifle_Base_F;
@@ -143,6 +144,47 @@ class cfgWeapons
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
 					twc_acc_rotex5_grey = 1;
+				};
+			};
+			allowedslots[] = {701,901};
+			mass = 35;
+		};
+	
+	};
+	class CUP_hgun_MP7_desert;
+	class CUP_hgun_MP7A1_desert: CUP_hgun_MP7_desert
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_t1_high";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="cup_acc_anpeq_15_top_flashlight_tan_f";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_t1_high = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+				};
+			};
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					acc_pointer_IR = 1;
+					rhsusf_acc_anpeq15side = 1;
+					ACE_acc_pointer_red = 1;
 				};
 			};
 			allowedslots[] = {701,901};
@@ -276,13 +318,13 @@ class cfgWeapons
 	{
 		displayName = "L119A2 (LDS)";
 		
-		//cup update: change the lds to cup_optic_acog_ta01nsn_rmr_tan 
+		//cup update: change the lds to CUP_optic_ACOG_TA01NSN_RMR_Black_PIP 
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rksl_optic_lds_c";
+				item="CUP_optic_ACOG_TA01NSN_RMR_Black_PIP";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -310,9 +352,8 @@ class cfgWeapons
 			};
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_acog_rmr = 1;
-					rksl_optic_lds = 1;
-					rksl_optic_lds_c = 1;
+					CUP_optic_ACOG_TA01NSN_RMR_Black_PIP = 1;
+					CUP_optic_Elcan_reflex_pip = 1;
 					UK3CB_BAF_Kite = 1;
 				};
 			};
@@ -347,7 +388,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_acog_rmr";
+				item="CUP_optic_ACOG_TA01NSN_RMR_Black_PIP";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -375,8 +416,8 @@ class cfgWeapons
 			};
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rksl_optic_lds = 1;
-					rhsusf_acc_acog_rmr = 1;
+					CUP_optic_Elcan_reflex_pip = 1;
+					CUP_optic_ACOG_TA01NSN_RMR_Black_PIP = 1;
 					UK3CB_BAF_Kite = 1;
 				};
 			};
@@ -516,7 +557,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
-				item="rhsusf_acc_acog_rmr";
+				item="CUP_optic_ACOG_TA01NSN_RMR_Black_PIP";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -533,8 +574,8 @@ class cfgWeapons
 		{
 			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
 				class compatibleItems {
-					rhsusf_acc_acog_rmr = 1;
-					rksl_optic_lds = 1;
+					CUP_optic_ACOG_TA01NSN_RMR_Black_PIP = 1;
+					CUP_optic_Elcan_reflex_pip = 1;
 					UK3CB_BAF_Kite = 1;
 				};
 			};
@@ -1318,7 +1359,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="RKSL_optic_LDS";
+				item="CUP_optic_Elcan_reflex_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -1332,8 +1373,7 @@ class cfgWeapons
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					RKSL_optic_LDS_c = 1;
-					RKSL_optic_LDS = 1;
+					CUP_optic_Elcan_reflex_pip = 1;
 					UK3CB_BAF_Kite = 1;
 				};
 			};
@@ -1361,7 +1401,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="RKSL_optic_LDS";
+				item="CUP_optic_Elcan_reflex_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -1373,7 +1413,7 @@ class cfgWeapons
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					RKSL_optic_LDS = 1;
+					CUP_optic_Elcan_reflex_pip = 1;
 					UK3CB_BAF_Kite = 1;
 				};
 			};
@@ -1399,7 +1439,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L110A2";
-				item="RKSL_optic_LDS";
+				item="CUP_optic_Elcan_reflex_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -1411,7 +1451,7 @@ class cfgWeapons
 		{
 			class asdg_OpticRail_UK3CB_BAF_L110A2: asdg_OpticRail1913 {
 				class compatibleItems {
-					RKSL_optic_LDS = 1;
+					CUP_optic_Elcan_reflex_pip = 1;
 					UK3CB_BAF_Kite = 1;
 				};
 			};
@@ -1481,10 +1521,17 @@ class cfgWeapons
 			mass = 97;
 		};
 	};
-	class UK3CB_BAF_L128A1_Eotech: UK3CB_BAF_L128A1
+	class UK3CB_BAF_L128A1_Eotech: CUP_sgun_M1014_vfg
 	{
 		scope = 1;
 		author="FakeMatty";
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_rifle_762_prone";
+		reloadTime = 0.15;
+		class Single: Single
+		{
+			reloadTime = 0.15;
+		};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -1526,7 +1573,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="RKSL_optic_LDS";
+				item="CUP_optic_Elcan_reflex_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -1538,7 +1585,7 @@ class cfgWeapons
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					RKSL_optic_LDS = 1;
+					CUP_optic_Elcan_reflex_pip = 1;
 					UK3CB_BAF_Kite = 1;
 				};
 			};
@@ -1947,7 +1994,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CUP_PicatinnyTopMountG36";
-				item="rhsusf_acc_acog_rmr";
+				item="cup_optic_hensoldtzo_low_rds";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -1960,7 +2007,7 @@ class cfgWeapons
 		{
 			class CUP_PicatinnyTopMountG36: CUP_TopMountG36 {
 				class compatibleItems {
-					rhsusf_acc_acog_rmr = 1;
+					cup_optic_hensoldtzo_low_rds = 1;
 				};
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
@@ -1983,7 +2030,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CUP_PicatinnyTopMountG36";
-				item="rhsusf_acc_acog_rmr";
+				item="cup_optic_hensoldtzo_low_rds";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -1996,7 +2043,7 @@ class cfgWeapons
 		{
 			class CUP_PicatinnyTopMountG36: CUP_TopMountG36 {
 				class compatibleItems {
-					rhsusf_acc_acog_rmr = 1;
+					cup_optic_hensoldtzo_low_rds = 1;
 				};
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
@@ -2018,7 +2065,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CUP_PicatinnyTopMountG36";
-				item="rhsusf_acc_acog_rmr";
+				item="cup_optic_hensoldtzo_low_rds";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -2031,7 +2078,7 @@ class cfgWeapons
 		{
 			class CUP_PicatinnyTopMountG36: CUP_TopMountG36 {
 				class compatibleItems {
-					rhsusf_acc_acog_rmr = 1;
+					cup_optic_hensoldtzo_low_rds = 1;
 				};
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
@@ -2057,7 +2104,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_ACOG";
+				item="cup_optic_acog2";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -2074,7 +2121,7 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_ACOG = 1;
+					cup_optic_acog2 = 1;
 					rhsusf_acc_compm4 = 1;
 				};
 			};
@@ -2102,7 +2149,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_ACOG";
+				item="cup_optic_acog2";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -2114,7 +2161,7 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_ACOG = 1;
+					cup_optic_acog2 = 1;
 					rhsusf_acc_compm4 = 1;
 				};
 			};
@@ -2210,17 +2257,6 @@ class cfgWeapons
 	//adding scope turrets
 	
 	class ItemCore;
-	class RKSL_optic_LDS: ItemCore {
-	
-	
-		ACE_ScopeAdjust_Horizontal[] = {-4,4};
-		ACE_ScopeAdjust_HorizontalIncrement = 0.5;
-		ACE_ScopeAdjust_Vertical[] = {-10,10};
-		ACE_ScopeAdjust_VerticalIncrement = 0.5;
-		ACE_ScopeHeightAboveRail = 3.9386;
-		
-	};
-	
 	
 	
 	class UK3CB_BAF_SUSAT: ItemCore {

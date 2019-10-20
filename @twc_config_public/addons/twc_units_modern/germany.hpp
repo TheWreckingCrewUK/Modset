@@ -299,7 +299,7 @@
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_GER_PVest_Trop_Gren",
 			"rhsusf_ach_bare_tan_ess",
 			"ItemMap",
 			"ItemCompass",
@@ -307,7 +307,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_GER_PVest_Trop_Gren",
 			"rhsusf_ach_bare_tan_ess",
 			"ItemMap",
 			"ItemCompass",

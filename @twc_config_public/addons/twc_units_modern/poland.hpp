@@ -14,7 +14,7 @@
 		twc_radioChannel = 3;
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_LBT_LBV_OD",
 			"CUP_H_CDF_H_PASGT_FST",
 			"ItemMap",
 			"ItemCompass",
@@ -22,7 +22,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_LBT_LBV_OD",
 			"CUP_H_CDF_H_PASGT_FST",
 			"ItemMap",
 			"ItemCompass",
@@ -134,7 +134,7 @@
 		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_LBT_LBV_OD",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -142,7 +142,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_LBT_LBV_OD",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -179,7 +179,7 @@
 		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_LBT_LBV_OD",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -187,7 +187,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_LBT_LBV_OD",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -255,7 +255,7 @@
 		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_LBT_LBV_OD",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -263,7 +263,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_LBT_LBV_OD",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -319,7 +319,7 @@
 		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_LBT_LBV_OD",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -327,7 +327,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_LBT_LBV_OD",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -343,7 +343,7 @@
 		backpack="pol_backpack_leader";
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Officer",
+			"CUP_V_B_Ciras_Olive",
 			"CUP_H_CDF_H_PASGT_FST",
 			"ItemMap",
 			"ItemCompass",
@@ -352,7 +352,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Officer",
+			"CUP_V_B_Ciras_Olive",
 			"CUP_H_CDF_H_PASGT_FST",
 			"ItemMap",
 			"ItemCompass",
@@ -383,7 +383,7 @@
 		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Officer",
+			"CUP_V_B_Ciras_Olive",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -392,7 +392,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Officer",
+			"CUP_V_B_Ciras_Olive",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -409,7 +409,7 @@
 		backpack="pol_backpack_2ic";
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Officer",
+			"CUP_V_B_LBT_LBV_GRN",
 			"CUP_H_CDF_H_PASGT_FST",
 			"ItemMap",
 			"ItemCompass",
@@ -417,7 +417,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Officer",
+			"CUP_V_B_LBT_LBV_GRN",
 			"CUP_H_CDF_H_PASGT_FST",
 			"ItemMap",
 			"ItemCompass",
@@ -433,7 +433,7 @@
 		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Officer",
+			"CUP_V_B_LBT_LBV_GRN",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -441,7 +441,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Officer",
+			"CUP_V_B_LBT_LBV_GRN",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -467,7 +467,7 @@
 		uniformClass="CUP_U_B_CDF_DST_2";
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout2",
+			"CUP_V_B_LBT_LBV_OD",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",
@@ -475,7 +475,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout2",
+			"CUP_V_B_LBT_LBV_OD",
 			"rhsgref_helmet_pasgt_olive",
 			"ItemMap",
 			"ItemCompass",

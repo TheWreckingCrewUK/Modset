@@ -2034,12 +2034,12 @@
 		{
             class _xx_Slug
 			{
-				magazine = "UK3CB_BAF_12G_Slugs";
+				magazine = "CUP_8Rnd_B_Beneli_74Slug";
 				count = 5;
 			};
             class _xx_Buck
 			{
-				magazine = "UK3CB_BAF_12G_Pellets";
+				magazine = "CUP_8Rnd_B_Beneli_74Pellets";
 				count = 7;
 			};
 		};
@@ -2084,12 +2084,12 @@
 			};	
             class _xx_Slug
 			{
-				magazine = "UK3CB_BAF_12G_Slugs";
+				magazine = "CUP_8Rnd_B_Beneli_74Slug";
 				count = 2;
 			};
             class _xx_Buck
 			{
-				magazine = "UK3CB_BAF_12G_Pellets";
+				magazine = "CUP_8Rnd_B_Beneli_74Pellets";
 				count = 2;
 			};		
 		};
