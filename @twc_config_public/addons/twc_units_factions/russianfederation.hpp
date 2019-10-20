@@ -1,4 +1,4 @@
-/*post cup update, russian sf enemies for domination
+//post cup update, russian sf enemies for domination
 	class TWC_Russian_SF_Base:O_Soldier_base_F
 	{
 		scope=2;
@@ -8,28 +8,35 @@
 		vehicleClass="Men_Russiansof";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="twc_cryeG3_russof_roll";
+		uniformClass="rhs_uniform_gorka_r_g";
+		identityTypes[] = {"LanguageRUS","Head_Russian","Head_Asian"};
+		//uniformClass="twc_cryeG3_russof_roll";
 		backpack="";
 		linkedItems[]=
 		{
-        "CUP_H_OpsCore_Covered_MCAM_SF",
+        "rhsusf_opscore_mar_fg_pelt",
+        //"CUP_H_OpsCore_Covered_MCAM_SF",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"CUP_V_B_Armatus_BB_MCam"
+		"twc_oli_spc_squadleader"
+		//"CUP_V_B_Armatus_BB_MCam"
 		};
 		respawnLinkedItems[]=
 		{
-        "CUP_H_OpsCore_Covered_MCAM_SF",
+        "rhsusf_opscore_mar_fg_pelt",
+        //"CUP_H_OpsCore_Covered_MCAM_SF",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"CUP_V_B_Armatus_BB_MCam"
+		"twc_oli_spc_squadleader"
+		//"CUP_V_B_Armatus_BB_MCam"
 		};
 		weapons[]=
 		{
 		"Throw",
 		"Put",
+		"rhs_weap_rpg26",
 		"twc_ak74_sof",
 		"rhsusf_weap_glock17g4"
 		};
@@ -37,6 +44,7 @@
 		{
 		"Throw",
 		"Put",
+		"rhs_weap_rpg26",
 		"twc_ak74_sof",
 		"rhsusf_weap_glock17g4"
 		};
@@ -44,28 +52,26 @@
 		{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		"rhsusf_mag_17Rnd_9x19_JHP",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"SmokeShell",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		"rhsusf_mag_17Rnd_9x19_JHP",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"SmokeShell",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
 		"SmokeShell"
 		};
 		Items[]=
@@ -97,19 +103,23 @@
 		backpack="twc_russof_SL_backpack";
 		linkedItems[]=
 		{
-        "CUP_H_OpsCore_Covered_MCAM_SF",
+        //"CUP_H_OpsCore_Covered_MCAM_SF",
+        "rhs_6b28_green_ess_bala",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"CUP_V_B_LBT_LBV_MCam"
+		"rhs_6b23_6sh116_od"
+		//"CUP_V_B_LBT_LBV_MCam"
 		};
 		respawnLinkedItems[]=
 		{
-        "CUP_H_OpsCore_Covered_MCAM_SF",
+        //"CUP_H_OpsCore_Covered_MCAM_SF",
+        "rhs_6b28_green_ess_bala",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"CUP_V_B_LBT_LBV_MCam"
+		"rhs_6b23_6sh116_od"
+		//"CUP_V_B_LBT_LBV_MCam"
 		};
 		weapons[]=
 		{
@@ -129,13 +139,13 @@
 		{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		"rhsusf_mag_17Rnd_9x19_JHP",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -143,36 +153,106 @@
 		{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		"rhsusf_mag_17Rnd_9x19_JHP",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
-		"CUP_30Rnd_545x39_AK74M_desert_M",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
+		"rhs_30Rnd_545x39_7N22_desert_AK",
 		"SmokeShell",
 		"SmokeShell"
+		};	
+	};
+	class TWC_Russian_SF_SMG:TWC_Russian_SF_Base
+	{
+		displayName="Submachinegunner";
+		linkedItems[]=
+		{
+        //"CUP_H_OpsCore_Covered_MCAM_SF",
+        "rhs_6b7_1m_ess_bala",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"rhs_6b23_6sh116_od"
+		//"CUP_V_B_LBT_LBV_MCam"
+		};
+		respawnLinkedItems[]=
+		{
+        //"CUP_H_OpsCore_Covered_MCAM_SF",
+        "rhs_6b7_1m_ess_bala",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"rhs_6b23_6sh116_od"
+		//"CUP_V_B_LBT_LBV_MCam"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_rpg26",
+		"CUP_smg_bizon_snds",
+		"rhsusf_weap_glock17g4"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_rpg26",
+		"CUP_smg_bizon_snds",
+		"rhsusf_weap_glock17g4"
+		};
+		magazines[]=
+		{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M"
+		};
+		Respawnmagazines[]=
+		{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M",
+		"CUP_64Rnd_9x19_Bizon_M"
 		};	
 	};
 	class TWC_Russian_SF_MG:TWC_Russian_SF_Base
 	{
-		displayName="Macehingunner";
+		displayName="Machinegunner";
 		backpack="twc_russof_MG_backpack";
 		linkedItems[]=
 		{
-        "CUP_H_OpsCore_Covered_MCAM_SF",
+        //"CUP_H_OpsCore_Covered_MCAM_SF",
+        "rhsusf_opscore_rg_cover",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"rhsusf_spcs_ocp_saw"
+		"rhs_6b23_6sh116_od"
 		};
 		respawnLinkedItems[]=
 		{
-        "CUP_H_OpsCore_Covered_MCAM_SF",
+        //"CUP_H_OpsCore_Covered_MCAM_SF",
+        "rhsusf_opscore_rg_cover",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
-		"rhsusf_spcs_ocp_saw"
+		"rhs_6b23_6sh116_od"
 		};
 		weapons[]=
 		{
@@ -192,24 +272,22 @@
 		{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		"rhsusf_mag_17Rnd_9x19_JHP",
-		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-		"SmokeShell",
+		"rhs_100Rnd_762x54mmR_7N26",
+		"rhs_100Rnd_762x54mmR_7N26",
+		"rhs_100Rnd_762x54mmR_7N26",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		"rhsusf_mag_17Rnd_9x19_JHP",
-		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
-		"SmokeShell",
+		"rhs_100Rnd_762x54mmR_7N26",
+		"rhs_100Rnd_762x54mmR_7N26",
+		"rhs_100Rnd_762x54mmR_7N26",
 		"SmokeShell"
 		};	
 	};
-*/
+
 	class Russian_Squadleader:O_Soldier_base_F
 	{
 		_generalMacro="Russian_Squadleader";
