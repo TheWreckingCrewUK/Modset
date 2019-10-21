@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/setup-ruby@v1
       - name: Send Discord Notification
+        if: always()
         env:
           JOB_STATUS: ${{ job.status }}
           WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
