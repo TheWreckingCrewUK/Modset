@@ -1,4 +1,4 @@
-name: Config & SQF Check
+name: Config and SQF Check
 
 on: [push, pull_request]
 
