@@ -1,28 +1,12 @@
 name: Config & SQF Check
 
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches: 
-      - master
+on: [push, pull_request]
 
 jobs:
   post:
     name: Post to Discord (Test)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-ruby@v1
-      - name: Send Webhook Notification
-        if: always()
-        env:
-          JOB_STATUS: ${{ job.status }}
-          WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
-          HOOK_OS_NAME: ${{ runner.os }}
-          WORKFLOW_NAME: ${{ github.workflow }}
-        run: |
-          echo Status: $JOB_STATUS
-          git clone https://github.com/DiscordHooks/github-actions-discord-webhook.git webhook
-          bash webhook/send.sh $JOB_STATUS $WEBHOOK_URL
-        shell: bash
+      - uses: actions/checkout@v1
+      - name: Test
+        run: echo Hello, world!
