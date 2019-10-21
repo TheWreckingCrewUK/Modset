@@ -3,8 +3,10 @@ name: Arma
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
+    branches: 
+      - master
 
 jobs:
   validate:
