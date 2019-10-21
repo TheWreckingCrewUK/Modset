@@ -11,6 +11,10 @@ jobs:
         uses: actions/checkout@master
         with:
           fetch-depth: 1
+      - uses: actions/setup-python@v1
+        with:
+          python-version: '3.5'
+          architecture: 'x64'
       - name: Install Check Dependencies
         run: pip3 install git+https://github.com/TheWreckingCrewUK/sqf.git --upgrade
       - name: Validate SQF
