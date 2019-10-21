@@ -12,7 +12,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: Install Check Dependencies
-        run: pip install git+https://github.com/TheWreckingCrewUK/sqf.git --upgrade
+        run: pip3 install git+https://github.com/TheWreckingCrewUK/sqf.git --upgrade
       - name: Validate SQF
         run: python3 tools/sqf_validator.py
       - name: Lint (sqflint)
