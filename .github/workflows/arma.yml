@@ -16,21 +16,7 @@ jobs:
       with:
         fetch-depth: 1
 
-    - name: Set up Python 3.5
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.5
-        
-    - name: Install Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip3 install git+https://github.com/TheWreckingCrewUK/sqf.git
-      
-    - name: Validate SQF
-      run: python3 tools/sqf_validator.py
-      
-    - name: Validate Config
-      run: python3 tools/config_validator.py
+
 
   lint:
     name: Lint Check
@@ -40,9 +26,7 @@ jobs:
       with:
         fetch-depth: 1
           
-    - name: Lint (sqflint)
-      uses: arma-actions/sqflint@master
-      continue-on-error: true # No failure due to many false-positives
+
 
   post:
     name: Post to Discord (Test)
