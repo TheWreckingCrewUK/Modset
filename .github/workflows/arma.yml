@@ -1,3 +1,4 @@
+---
 name: Config & SQF Check
 
 on:
@@ -12,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
 
     - name: Set up Python 3.5
       uses: actions/setup-python@v1
@@ -34,6 +37,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+          
     - name: Lint (sqflint)
       uses: arma-actions/sqflint@master
       continue-on-error: true # No failure due to many false-positives
