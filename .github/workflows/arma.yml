@@ -14,8 +14,8 @@ jobs:
       - name: Validate SQF
         run: python3 tools/sqf_validator.py
       - name: Lint (sqflint)
-        uses: arma-actions/sqflint@master
-        continue-on-error: true # No failure due to many false-positives
+        run: python3 tools/sqf_linter.py
+        continue-on-error: true
       - name: Validate Config
         run: python3 tools/config_validator.py
       - uses: actions/setup-ruby@v1
