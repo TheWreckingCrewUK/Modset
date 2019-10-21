@@ -1,43 +1,25 @@
-name: Arma
+name: Config & SQF Check
 
 on:
   push:
     branches:
       - master
   pull_request:
-    branches: 
-      - master
 
 jobs:
   validate:
+    name: Validate SQF & Config
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v1
+
     - name: Set up Python 3.5
       uses: actions/setup-python@v1
       with:
         python-version: 3.5
-    - name: Set up PIP requirements
-      run: |
-        python -m pip install --upgrade pip
-        pip3 install git+https://github.com/TheWreckingCrewUK/sqf.git
-    - name: Checkout the source code
-      uses: actions/checkout@master
+      
+    - name: Validate SQF
+      run: python3 tools/sqf_validator.py
+      
     - name: Validate Config
-      run: python3 tools/config_style_checker.py
-    - name: Check for BOM
-      uses: arma-actions/bom-check@master
-    - name: Lint (sqflint)
-      uses: arma-actions/sqflint@master
-    - uses: actions/setup-ruby@v1
-    - name: Send Webhook Notification
-      if: always()
-      env:
-        JOB_STATUS: ${{ job.status }}
-        WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
-        HOOK_OS_NAME: ${{ runner.os }}
-        WORKFLOW_NAME: ${{ github.workflow }}
-      run: |
-        echo Status: $JOB_STATUS
-        git clone $WEBHOOK_REPO webhook
-        bash webhook/send.sh $JOB_STATUS $WEBHOOK_URL
-      shell: bash
+      run: python3 tools/config_validator.py
