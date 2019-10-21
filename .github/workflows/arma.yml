@@ -1,12 +1,11 @@
-name: Config and SQF Check
+name: Test
 
 on: [push, pull_request]
 
 jobs:
   post:
-    name: Post to Discord (Test)
+    name: Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
       - name: Test
         run: echo Hello, world!
