@@ -17,6 +17,6 @@ jobs:
           WORKFLOW_NAME: ${{ github.workflow }}
         run: |
           echo Status: $JOB_STATUS
-          git clone https://github.com/DiscordHooks/github-actions-discord-webhook.git webhook
+          git clone https://github.com/Bosenator/github-actions-discord-webhook.git webhook
           bash webhook/send.sh $JOB_STATUS $WEBHOOK_URL
         shell: bash
