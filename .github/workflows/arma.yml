@@ -11,6 +11,10 @@ jobs:
         uses: actions/checkout@master
       - name: Validate SQF
         run: python3 tools/sqf_validator.py
+      - name: Validate Lint
+        run: python3 tools/sqf_linter.py
+      - name: Validate Config
+        run: python3 tools/config_validator.py
       - uses: actions/setup-ruby@v1
       - name: Send Discord Notification
         if: always()
