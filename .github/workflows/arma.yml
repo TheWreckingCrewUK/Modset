@@ -37,8 +37,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-        with:
-          fetch-depth: 1
+      with:
+        fetch-depth: 1
           
     - name: Lint (sqflint)
       uses: arma-actions/sqflint@master
