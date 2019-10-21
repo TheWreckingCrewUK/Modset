@@ -1,46 +1,45 @@
----
 name: Config & SQF Check
 
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
     branches: 
-    - master
+      - master
 
 jobs:
   validate:
     name: Validate SQF & Config
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-      with:
-        fetch-depth: 1
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 1
 
   lint:
     name: Lint Check
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-      with:
-        fetch-depth: 1
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 1
 
   post:
     name: Post to Discord (Test)
     runs-on: ubuntu-latest
     needs: [validate, lint]
     steps:
-    - uses: actions/setup-ruby@v1
-    - name: Send Webhook Notification
-      if: always()
-      env:
-        JOB_STATUS: ${{ job.status }}
-        WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
-        HOOK_OS_NAME: ${{ runner.os }}
-        WORKFLOW_NAME: ${{ github.workflow }}
-      run: |
-        echo Status: $JOB_STATUS
-        git clone https://github.com/DiscordHooks/github-actions-discord-webhook.git webhook
-        bash webhook/send.sh $JOB_STATUS $WEBHOOK_URL
-      shell: bash
+      - uses: actions/setup-ruby@v1
+      - name: Send Webhook Notification
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
+          HOOK_OS_NAME: ${{ runner.os }}
+          WORKFLOW_NAME: ${{ github.workflow }}
+        run: |
+          echo Status: $JOB_STATUS
+          git clone https://github.com/DiscordHooks/github-actions-discord-webhook.git webhook
+          bash webhook/send.sh $JOB_STATUS $WEBHOOK_URL
+        shell: bash
