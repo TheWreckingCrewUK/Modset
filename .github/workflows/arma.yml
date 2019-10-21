@@ -20,20 +20,19 @@ jobs:
       run: python3 tools/config_validator.py
     - name: Check for BOM
       uses: arma-actions/bom-check@master
-
-  lint:
-    runs-on: ubuntu-latest
-    steps:
     - name: Lint (sqflint)
       uses: arma-actions/sqflint@master
       continue-on-error: true # No failure due to many false-positives
-    - name: Discord notification
-      if: success()
+    - uses: actions/setup-ruby@v1
+    - name: Send Webhook Notification
+      if: always()
       env:
-        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-      uses: Ilshidur/action-discord@mast
-    - name: Discord notification
-      if: failure()
-      env:
-        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-      uses: Ilshidur/action-discord@master
+        JOB_STATUS: ${{ job.status }}
+        WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
+        HOOK_OS_NAME: ${{ runner.os }}
+        WORKFLOW_NAME: ${{ github.workflow }}
+      run: |
+        echo Status: $JOB_STATUS
+        git clone $WEBHOOK_REPO webhook
+        bash webhook/send.sh $JOB_STATUS $WEBHOOK_URL
+      shell: bash
