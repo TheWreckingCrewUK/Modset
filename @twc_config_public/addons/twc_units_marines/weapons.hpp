@@ -34,6 +34,18 @@ class cfgWeapons
 			};
 		};
 	};
+	class CUP_sgun_M1014;
+	class twc_benelli_m4: CUP_sgun_M1014
+	{
+		scope = 1;
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_rifle_762_prone";
+		class WeaponSlotsInfo
+		{
+			allowedslots[] = {901};
+			mass = 84;
+		};
+	};
 	
 	
 	class twc_rhs_weap_m4a1_m203_acog_lazer: rhs_weap_m4a1_m203

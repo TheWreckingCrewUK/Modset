@@ -4,16 +4,16 @@
 		displayName="Pointman";
 		backpack = "TWC_Backpack_Modern_Pointman";
 		linkedItems[]= {
-			"CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman",
-			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"twc_warriorvest_dcs",
+			"UK3CB_BAF_H_Mk7_Camo_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 
 		respawnLinkedItems[]= {
-			"CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman",
-			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"twc_warriorvest_dcs",
+			"UK3CB_BAF_H_Mk7_Camo_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -44,6 +44,8 @@
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -55,6 +57,8 @@
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd_T",
+			"UK3CB_BAF_556_30Rnd",
+			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -132,7 +136,7 @@
 		displayName="Automatic Rifleman";
 		linkedItems[]= {
 			"CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman",
-			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"UK3CB_BAF_H_Mk7_Camo_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -140,7 +144,7 @@
 
 		respawnLinkedItems[]= {
 			"CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman",
-			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"UK3CB_BAF_H_Mk7_Camo_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -187,7 +191,7 @@
 		backpack="TWC_Backpack_Modern_2IC";
 		linkedItems[]= {
 			"CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer",
-			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"UK3CB_BAF_H_Mk7_Camo_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -196,7 +200,7 @@
 
 		respawnLinkedItems[]= {
 			"CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer",
-			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"UK3CB_BAF_H_Mk7_Camo_D",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
