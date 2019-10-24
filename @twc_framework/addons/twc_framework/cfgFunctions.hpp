@@ -46,6 +46,7 @@ class CfgFunctions {
 			class GliderTakeOff {};
 			class confiscateBadItems {};
 			class silentSafety {};
+			class checkvehicleID {};
 			class gunwalk {};
 			class mortarwalk {};
 			class init{};
@@ -101,8 +102,6 @@ class CfgFunctions {
 			class moduleGliderTakeOff {};
 			class moduleTriggerUncache {};
 			class moduleUrbanUnitsCache {};
-			class modulegunwalk {};
-			class modulemortarwalk {};
 			class moduleACEInteract {};
 			class moduleAmbientSound {};
 			class moduleAmbientSoundSimp {};
