@@ -18,20 +18,20 @@
 #define MODERN_AUTORIFLE 4
 #define MODERN_AUTORIFLE_T 2
 
-#define MODERN_MECHA_AUTORIFLE 2
-#define MODERN_MECHA_AUTORIFLE_T 1
+#define MODERN_MECHA_AUTORIFLE 3
+#define MODERN_MECHA_AUTORIFLE_T 2
 
 #define MODERN_MARKSMAN 6
 #define MODERN_MARKSMAN_T 2
 
-#define MODERN_MACHINEGUNNER 2
-#define MODERN_MACHINEGUNNER_T 1
+#define MODERN_MACHINEGUNNER 3
+#define MODERN_MACHINEGUNNER_T 2
 
 #define MODERN_NLAW 2
 
 #define MODERN_GMG 4
 #define MODERN_HMG 4
-#define MODERN_GPMG 4
+#define MODERN_GPMG 5
 
 // Modifiers to the total amount (used to alter different vehicle payloads)
 #define MODERN_MASTIFF_MOD 1

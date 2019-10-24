@@ -105,6 +105,14 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa","rhsusf\addons\rhsusf_infantry2\gear\vests\mbav\data\mbav_gear_co.paa"};
 	};
 	
+	class CUP_V_B_Ciras_MCam;
+	class twc_warriorvest_dcs: CUP_V_B_Ciras_MCam
+	{
+		displayName = "Warrior Assault Systems DCS";
+		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_mtp_co.paa"};
+	};
+	
+	
 	
 	class CUP_V_B_BAF_MTP_Osprey_Mk4_Crewman;
 	class TWC_V_B_BAF_MTP_Osprey_Mk4_Crewman_base: CUP_V_B_BAF_MTP_Osprey_Mk4_Crewman
@@ -1524,14 +1532,8 @@ class cfgWeapons
 	class UK3CB_BAF_L128A1_Eotech: CUP_sgun_M1014_vfg
 	{
 		scope = 1;
-		author="FakeMatty";
 		recoil = "twc_shotgun_1";
 		recoilProne = "twc_rifle_762_prone";
-		reloadTime = 0.15;
-		class Single: Single
-		{
-			reloadTime = 0.15;
-		};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -1539,29 +1541,6 @@ class cfgWeapons
 				slot="asdg_OpticRail_UK3CB_BAF_L128A1";
 				item="UK3CB_BAF_Eotech";
 			};
-			class LinkedItemsFrontSideRail
-			{
-				slot="asdg_FrontSideRail_UK3CB_BAF_L128A1";
-				item="UK3CB_BAF_LLM_IR_Black";
-			};
-		};
-		class WeaponSlotsInfo
-		{
-			class asdg_OpticRail_UK3CB_BAF_L128A1: asdg_OpticRail1913 {
-				class compatibleItems {
-					UK3CB_BAF_Eotech = 1;
-				};
-			};
-			class asdg_FrontSideRail_UK3CB_BAF_L128A1: asdg_FrontSideRail {
-				class compatibleItems {
-					UK3CB_BAF_LLM_IR_Black = 1;
-					UK3CB_BAF_LLM_Flashlight_Black = 1;
-					acc_pointer_IR = 1;
-					ACE_acc_pointer_red = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 84;
 		};
 	};
 	class UK3CB_BAF_L85A2_UGL_ELCAN3D: UK3CB_BAF_L85A2_UGL

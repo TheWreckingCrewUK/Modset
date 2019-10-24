@@ -1873,6 +1873,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 	{
 		scope=2;
 		displayName="Section Commander @SAS";
+		backpack="twc_ussf_scoutpack";
 		Items[]=
 		{
 			"ACE_fieldDressing",
@@ -1953,7 +1954,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"CUP_V_B_Armatus_BB_MCam",
+			"twc_warriorvest_dcs",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",
@@ -1962,7 +1963,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_Armatus_BB_MCam",
+			"twc_warriorvest_dcs",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",

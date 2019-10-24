@@ -20,6 +20,7 @@ class CfgPatches {
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds",
+			"CUP_Weapons_M1014",
 			"CUP_Weapons_VehicleWeapons"
 		};
 
@@ -35,6 +36,8 @@ class CfgPatches {
 
 class mode_fullauto;
 class Mode_SemiAuto;
+class asdg_OpticRail1913;
+
 class CfgWeapons {
 	//TWC Night Vision
 	class CUP_NVG_PVS7;
@@ -162,8 +165,6 @@ class CfgWeapons {
 			};
 		};
 	};
-	
-	
 	class Default;
 	class CannonCore: Default
 	{
@@ -212,6 +213,27 @@ class CfgWeapons {
 		//	fired = "if ((_this select 0) == player) then {addCamShake [3, 0.3, 15]};";
 		};
 	};
+	
+	class CUP_sgun_M1014_base: Rifle_Base_F
+	{};
+	class CUP_sgun_M1014_vfg: CUP_sgun_M1014_base
+	{};
+	class TWC_L128A1_Eotech: CUP_sgun_M1014_vfg
+	{
+		scope = 1;
+		displayname = "L128A1 Shotgun";
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_rifle_762_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L128A1";
+				item="UK3CB_BAF_Eotech";
+			};
+		};
+	};
+	
 	
 	class UK3CB_BAF_L1A1: Rifle_Base_F {
 		recoil = "twc_rifle_762";
@@ -829,10 +851,10 @@ class cfgRecoils
 	
 	class twc_shotgun_1
 	{
-		muzzleOuter[]	= { 0.1,  0.5,  0.1,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
+		muzzleOuter[]	= { 0.3,  0.5,  0.15,  0.15 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
 		kickBack[]	= { 0.09, 0.12 }; //min/max force
 		permanent	= 1.1; //muzzle climb post-recoil, means nothing when on bipod
-		temporary	= 0.2; //muzzle jump
+		temporary	= 0.1; //muzzle jump
 	};
 };
 class Extended_FiredBIS_EventHandlers {

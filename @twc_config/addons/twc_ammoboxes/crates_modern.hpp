@@ -178,8 +178,8 @@ class TWC_AmmoBox_Modern_COIN_Base: TWC_AmmoBox_Base {
 		maga_nc(1Rnd_SmokeBlue_Grenade_shell, 10);
 		
 		// Shotgun 12g
-		maga_nc(UK3CB_BAF_12G_Slugs, 30);
-		maga_nc(UK3CB_BAF_12G_Pellets, 30);
+		maga_nc(CUP_8Rnd_B_Beneli_74Slug, 30);
+		maga_nc(CUP_8Rnd_B_Beneli_74Pellets, 30);
 
 		// Smoke Grenades
 		maga_nc(SmokeShell, 40);
@@ -230,8 +230,8 @@ class TWC_AmmoBox_Modern_COIN_Section_Portable: TWC_AmmoBox_Portable {
 		maga_nc(UK3CB_BAF_762_L42A1_20Rnd_T, 1);
 		
 		// Shotgun 12g
-		maga_nc(UK3CB_BAF_12G_Slugs, 2);
-		maga_nc(UK3CB_BAF_12G_Pellets, 2);
+		maga_nc(CUP_8Rnd_B_Beneli_74Slug, 2);
+		maga_nc(CUP_8Rnd_B_Beneli_74Pellets, 2);
 		
 		// FN Minimi AR
 		maga_nc(UK3CB_BAF_556_200Rnd, 6);

@@ -2047,7 +2047,7 @@
 		{
             class _xx_Shotgun
 			{
-				weapon = "UK3CB_BAF_L128A1_Eotech";
+				weapon = "TWC_L128A1_Eotech";
 				count = 1;
 			};
 		};

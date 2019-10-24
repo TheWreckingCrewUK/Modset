@@ -20,8 +20,8 @@ class TWC_Vehicle_Modern_Warrior_Woodland: TWC_Vehicle_FV510_W_SLAT {
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_12G_Slugs, ADD_QNTY(MODERN_SHOTGUN_SLUG));
-		ADD_MAGA(UK3CB_BAF_12G_Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Slug, ADD_QNTY(MODERN_SHOTGUN_SLUG));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
 		
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
 		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
@@ -72,8 +72,8 @@ class TWC_Vehicle_Modern_Warrior_COIN_Woodland: TWC_Vehicle_FV510_W_SLAT {
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_12G_Slugs, ADD_QNTY(MODERN_SHOTGUN_SLUG));
-		ADD_MAGA(UK3CB_BAF_12G_Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Slug, ADD_QNTY(MODERN_SHOTGUN_SLUG));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
 		
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
 		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
@@ -124,8 +124,8 @@ class TWC_Vehicle_Modern_Warrior_Desert: TWC_Vehicle_FV510_D_SLAT {
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_12G_Slugs, ADD_QNTY(MODERN_SHOTGUN_SLUG));
-		ADD_MAGA(UK3CB_BAF_12G_Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Slug, ADD_QNTY(MODERN_SHOTGUN_SLUG));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
 		
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
 		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
@@ -176,8 +176,8 @@ class TWC_Vehicle_Modern_Warrior_COIN_Desert: TWC_Vehicle_FV510_D_SLAT {
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_12G_Slugs, ADD_QNTY(MODERN_SHOTGUN_SLUG));
-		ADD_MAGA(UK3CB_BAF_12G_Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Slug, ADD_QNTY(MODERN_SHOTGUN_SLUG));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
 		
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
 		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
@@ -208,8 +208,8 @@ class TWC_Vehicle_Modern_Warrior_COIN_Desert: TWC_Vehicle_FV510_D_SLAT {
 	class TransportBackpacks { };
 };
 
-class CUP_B_FV432_Bulldog_GB_D;
-class TWC_Vehicle_Modern_Bulldog_Desert: CUP_B_FV432_Bulldog_GB_D {
+class UK3CB_BAF_FV432_Mk3_GPMG_Sand;
+class TWC_Vehicle_Modern_Bulldog_Desert: UK3CB_BAF_FV432_Mk3_GPMG_Sand {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -229,8 +229,8 @@ class TWC_Vehicle_Modern_Bulldog_Desert: CUP_B_FV432_Bulldog_GB_D {
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_12G_Slugs, ADD_QNTY(MODERN_SHOTGUN_SLUG));
-		ADD_MAGA(UK3CB_BAF_12G_Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Slug, ADD_QNTY(MODERN_SHOTGUN_SLUG));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
 		
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
 		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
@@ -244,6 +244,7 @@ class TWC_Vehicle_Modern_Bulldog_Desert: CUP_B_FV432_Bulldog_GB_D {
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, ADD_QNTY(MODERN_AUTORIFLE));
 		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, ADD_QNTY(MODERN_AUTORIFLE_T));
 		
+		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
 		ADD_MAGA(UK3CB_BAF_762_100Rnd, ADD_QNTY(MODERN_MACHINEGUNNER));
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, ADD_QNTY(MODERN_MACHINEGUNNER_T));
 		
@@ -261,7 +262,7 @@ class TWC_Vehicle_Modern_Bulldog_Desert: CUP_B_FV432_Bulldog_GB_D {
 	class TransportBackpacks { };
 };
 
-class TWC_Vehicle_Modern_Bulldog_COIN_Desert: CUP_B_FV432_Bulldog_GB_D {
+class TWC_Vehicle_Modern_Bulldog_COIN_Desert: UK3CB_BAF_FV432_Mk3_GPMG_Sand {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -281,8 +282,8 @@ class TWC_Vehicle_Modern_Bulldog_COIN_Desert: CUP_B_FV432_Bulldog_GB_D {
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_12G_Slugs, ADD_QNTY(MODERN_SHOTGUN_SLUG));
-		ADD_MAGA(UK3CB_BAF_12G_Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Slug, ADD_QNTY(MODERN_SHOTGUN_SLUG));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
 		
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
 		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
@@ -296,6 +297,7 @@ class TWC_Vehicle_Modern_Bulldog_COIN_Desert: CUP_B_FV432_Bulldog_GB_D {
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, ADD_QNTY(MODERN_AUTORIFLE));
 		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, ADD_QNTY(MODERN_AUTORIFLE_T));
 		
+		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
 		ADD_MAGA(UK3CB_BAF_762_100Rnd, ADD_QNTY(MODERN_MACHINEGUNNER));
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, ADD_QNTY(MODERN_MACHINEGUNNER_T));
 		
@@ -313,8 +315,8 @@ class TWC_Vehicle_Modern_Bulldog_COIN_Desert: CUP_B_FV432_Bulldog_GB_D {
 	class TransportBackpacks { };
 };
 
-class CUP_B_FV432_Bulldog_GB_W;
-class TWC_Vehicle_Modern_Bulldog_Woodland: CUP_B_FV432_Bulldog_GB_W {
+class UK3CB_BAF_FV432_Mk3_GPMG_Green;
+class TWC_Vehicle_Modern_Bulldog_Woodland: UK3CB_BAF_FV432_Mk3_GPMG_Green {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -334,8 +336,8 @@ class TWC_Vehicle_Modern_Bulldog_Woodland: CUP_B_FV432_Bulldog_GB_W {
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_12G_Slugs, ADD_QNTY(MODERN_SHOTGUN_SLUG));
-		ADD_MAGA(UK3CB_BAF_12G_Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Slug, ADD_QNTY(MODERN_SHOTGUN_SLUG));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
 		
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
 		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
@@ -349,6 +351,7 @@ class TWC_Vehicle_Modern_Bulldog_Woodland: CUP_B_FV432_Bulldog_GB_W {
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, ADD_QNTY(MODERN_AUTORIFLE));
 		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, ADD_QNTY(MODERN_AUTORIFLE_T));
 		
+		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
 		ADD_MAGA(UK3CB_BAF_762_100Rnd, ADD_QNTY(MODERN_MACHINEGUNNER));
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, ADD_QNTY(MODERN_MACHINEGUNNER_T));
 		
@@ -366,7 +369,7 @@ class TWC_Vehicle_Modern_Bulldog_Woodland: CUP_B_FV432_Bulldog_GB_W {
 	class TransportBackpacks { };
 };
 
-class TWC_Vehicle_Modern_Bulldog_COIN_Woodland: CUP_B_FV432_Bulldog_GB_W {
+class TWC_Vehicle_Modern_Bulldog_COIN_Woodland: UK3CB_BAF_FV432_Mk3_GPMG_Green {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -386,8 +389,8 @@ class TWC_Vehicle_Modern_Bulldog_COIN_Woodland: CUP_B_FV432_Bulldog_GB_W {
 	}; 
 	
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_12G_Slugs, ADD_QNTY(MODERN_SHOTGUN_SLUG));
-		ADD_MAGA(UK3CB_BAF_12G_Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Slug, ADD_QNTY(MODERN_SHOTGUN_SLUG));
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Pellets, ADD_QNTY(MODERN_SHOTGUN_BUCK));
 		
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, ADD_QNTY(MODERN_RIFLE));
 		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, ADD_QNTY(MODERN_RIFLE_T));
@@ -401,6 +404,7 @@ class TWC_Vehicle_Modern_Bulldog_COIN_Woodland: CUP_B_FV432_Bulldog_GB_W {
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, ADD_QNTY(MODERN_AUTORIFLE));
 		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, ADD_QNTY(MODERN_AUTORIFLE_T));
 		
+		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
 		ADD_MAGA(UK3CB_BAF_762_100Rnd, ADD_QNTY(MODERN_MACHINEGUNNER));
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, ADD_QNTY(MODERN_MACHINEGUNNER_T));
 		
