@@ -228,7 +228,7 @@ class CfgWeapons {
 		{
 			class LinkedItemsOptic
 			{
-				slot="asdg_OpticRail_UK3CB_BAF_L128A1";
+				slot="CowsSlot";
 				item="UK3CB_BAF_Eotech";
 			};
 		};
