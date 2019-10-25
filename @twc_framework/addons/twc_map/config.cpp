@@ -31,6 +31,7 @@ class CfgPatches {
 #include "CfgFunctions.hpp"
 #include "CfgMarkerClasses.hpp"
 #include "CfgMarkers.hpp"
+#include "CfgSounds.hpp"
 #include "CfgVehicles.hpp"
 
 class Extended_PreInit_EventHandlers {
