@@ -8,7 +8,7 @@ class CfgBrains {
 			};
 			
 			class AIBrainAimingErrorComponent {
-				lostTargetTimeMi﻿﻿﻿n = 0.2;
+				lostTargetTimeMin = 0.2;
 				turningInfluence = 1.1;
 			};
 		};

@@ -78,9 +78,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="optic_dms";
-				//cup update
-				//item="cup_optic_sb_11_4x20_pm";
+				item="cup_optic_sb_11_4x20_pm";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -92,7 +90,6 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					optic_dms = 1;
 					rhsusf_acc_eotech_xps3 = 1;
 					cup_optic_sb_11_4x20_pm = 1;
 				};
@@ -121,7 +118,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
-				item="rhsusf_acc_su230a_c";
+				item="cup_optic_elcan_specterdr_black_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -134,7 +131,7 @@ class cfgWeapons
 		{
 			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
 				class compatibleItems {
-					rhsusf_acc_su230a_c = 1;
+					cup_optic_elcan_specterdr_black_pip = 1;
 				};
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
@@ -312,7 +309,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_acog_mdo";
+				item="cup_optic_acog2_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -334,7 +331,7 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_acog_mdo = 1;
+					cup_optic_acog2_pip = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -368,9 +365,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="optic_dms";
-				//rhs update
-				//item="rhsusf_acc_premier_mrds";
+				item="rhsusf_acc_premier_mrds";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -387,7 +382,6 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					optic_dms = 1;
 					rhsusf_acc_premier_mrds = 1;
 				};
 			};
@@ -421,7 +415,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_acog";
+				item="cup_optic_acog2_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -438,7 +432,7 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_ACOG = 1;
+					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
 				};
 			};
@@ -545,7 +539,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_ACOG_USMC";
+				item="cup_optic_acog2_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -557,7 +551,7 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_ACOG_USMC = 1;
+					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
 				};
 			};
@@ -582,7 +576,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_ACOG_USMC";
+				item="cup_optic_acog2_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -594,7 +588,7 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_ACOG_USMC = 1;
+					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
 				};
 			};
@@ -703,14 +697,14 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_ACOG_USMC";
+				item="cup_optic_acog2_pip";
 			};
 		};
 		class WeaponSlotsInfo
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_ACOG_USMC = 1;
+					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
 				};
 			};
@@ -740,7 +734,7 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_ACOG_USMC = 1;
+					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
 				};
 			};
@@ -771,7 +765,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_ACOG_USMC";
+				item="cup_optic_acog2_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -788,7 +782,7 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_ACOG_USMC = 1;
+					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
 				};
 			};

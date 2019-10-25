@@ -26,6 +26,13 @@ class CfgPatches
 			"1990_British_HeloPilot_Desert",
 			"1990_British_Tank_Commander_Desert",
 			"1990_British_Tank_Crew_Desert",
+			
+			
+			"TWC_Russian_SF_Base",
+			"TWC_Russian_SF_SL",
+			"TWC_Russian_SF_MG",
+			"TWC_Russian_SF_SMG",
+			
 			"Modern_British_Squadleader",
 			"Modern_British_Rifleman",
 			"Modern_British_Pointman",
@@ -248,6 +255,10 @@ class CfgEditorSubCategories
 	{
 		displayName = "Men (Russian Federation)";
 	};
+	class Men_Russiansof
+	{
+		displayName = "Men (Russian SOF)";
+	};
 	class Men_Iraq
 	{
 		displayName = "Men (Iraq)";
@@ -408,7 +419,7 @@ class CfgVehicles
 			};
 		};
 	};
-		class twc_Backpack_m249: CUP_B_AlicePack_Khaki
+	class twc_Backpack_m249: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		class TransportMagazines
@@ -416,6 +427,34 @@ class CfgVehicles
 			class _xx_mgMags
 			{
 				magazine="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+				count=4;
+			};
+		};
+	};
+	
+	class B_RadioBag_01_eaf_F;
+	class twc_russof_SL_backpack: B_RadioBag_01_eaf_F
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Mags
+			{
+				magazine="rhs_30Rnd_545x39_7N22_desert_AK";
+				count=4;
+			};
+		};
+	};
+	
+	class twc_AlicePack_green;
+	class twc_russof_MG_backpack: twc_AlicePack_green
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_Mags
+			{
+				magazine="rhs_100Rnd_762x54mmR_7N26";
 				count=4;
 			};
 		};

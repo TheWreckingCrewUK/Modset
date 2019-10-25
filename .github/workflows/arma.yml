@@ -1,0 +1,43 @@
+name: Config and SQF Check
+
+on: 
+  push:
+    branches: master
+  pull_request:
+    branches: master
+
+jobs:
+  post:
+    name: Check Code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v1
+        with:
+          python-version: '3.5'
+          architecture: 'x64'
+      - name: Install Check Dependencies
+        run: pip3 install git+https://github.com/TheWreckingCrewUK/sqf.git --upgrade
+      - name: Validate SQF
+        run: python3 tools/sqf_validator.py
+      - name: Lint (sqflint)
+        run: python3 tools/sqf_linter.py
+        continue-on-error: true
+      - name: Validate Config
+        run: python3 tools/config_validator.py
+      - uses: actions/setup-ruby@v1
+      - name: Send Discord Notification
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
+          HOOK_OS_NAME: ${{ runner.os }}
+          WORKFLOW_NAME: ${{ github.workflow }}
+        run: |
+          echo Status: $JOB_STATUS
+          git clone https://github.com/Bosenator/github-actions-discord-webhook.git webhook
+          bash webhook/send.sh $JOB_STATUS $WEBHOOK_URL
+        shell: bash

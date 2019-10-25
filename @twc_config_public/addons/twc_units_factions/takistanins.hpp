@@ -734,6 +734,206 @@
 		uniformClass="CUP_O_TKI_Khet_Partug_07";
 		scope=1;
 	};
+	class Tak_twc_ins_Men_R4: Tak_twc_ins_Men_Base
+	{
+		scope=2;
+		displayName="Rifleman (Mosin)";
+		uniformClass="CUP_O_TKI_Khet_Partug_01";
+		linkedItems[]=
+		{
+			"CUP_H_TKI_Pakol_1_03",
+			"CUP_V_OI_TKI_Jacket6_04",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_H_TKI_Pakol_1_03",
+			"CUP_V_OI_TKI_Jacket6_04",
+			"ItemWatch"
+		};
+						weapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_m38",
+		"rhsusf_weap_m1911a1"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"rhs_weap_m38",
+		"rhsusf_weap_m1911a1"
+		};
+		magazines[]=
+		{
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsusf_mag_7x45acp_MHP",
+		"rhsusf_mag_7x45acp_MHP"
+		};
+		Respawnmagazines[]=
+		{
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsgref_5Rnd_762x54_m38",
+		"rhsusf_mag_7x45acp_MHP",
+		"rhsusf_mag_7x45acp_MHP"
+		};
+		Items[]=
+		{
+
+		};
+		respawntems[]=
+		{
+
+		};
+	};
+	class Tak_twc_ins_Men_R4_2: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_08";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R4_3: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_02";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R4_4: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_03";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R4_5: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_04";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R4_6: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_05";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R4_7: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_06";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R4_8: Tak_twc_ins_Men_R3
+	{
+		uniformClass="CUP_O_TKI_Khet_Partug_07";
+		scope=1;
+	};
+	class Tak_twc_ins_Men_R5: Tak_twc_ins_Men_Base
+	{
+		scope=2;
+		displayName="Rifleman (M4)";
+		uniformClass="CUP_O_TKI_Khet_Partug_04";
+		linkedItems[]=
+		{
+			"CUP_H_TK_Lungee",
+			"CUP_V_I_RACS_Carrier_Rig_wdl_2",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_H_TK_Lungee",
+			"CUP_V_I_RACS_Carrier_Rig_wdl_2",
+			"ItemWatch"
+		};
+						weapons[]=
+		{
+		"Throw",
+		"Put",
+		"twc_m4_acog_lazer"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"twc_m4_acog_lazer"
+		};
+		magazines[]=
+		{
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG"
+		};
+		Respawnmagazines[]=
+		{
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG",
+		"rhs_mag_30Rnd_556x45_M855_PMAG"
+		};
+		Items[]=
+		{
+
+		};
+		respawntems[]=
+		{
+
+		};
+	};
 	class Tak_twc_ins_Men_a1: Tak_twc_ins_Men_Base
 	{
 		scope=2;
