@@ -66,7 +66,7 @@ class TWC_Weapon_L129A1_Spotter: UK3CB_BAF_L129A1_Grippod {
 	class LinkedItems {
 		class LinkedItemsOptic {
 			slot = "asdg_OpticRail_UK3CB_BAF_L129A1";
-			item = "RKSL_optic_PMII_312_sunshade";
+			item = "rksl_optic_pmii_312_pip";
 		};
 		class LinkedItemsFrontSideRail {
 			slot = "asdg_FrontSideRail_UK3CB_BAF_L129A1";
