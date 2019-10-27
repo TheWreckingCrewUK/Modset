@@ -209,21 +209,19 @@ class CfgWeapons {
 	
 	class Rifle_Base_F:Rifle
 	{
-		class EventHandlers: EventHandlers {
-		//	fired = "if ((_this select 0) == player) then {addCamShake [3, 0.3, 15]};";
-		};
 	};
 	
 	class CUP_sgun_M1014_base: Rifle_Base_F
-	{};
+	{
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_rifle_762_prone";
+	};
 	class CUP_sgun_M1014_vfg: CUP_sgun_M1014_base
 	{};
 	class TWC_L128A1_Eotech: CUP_sgun_M1014_vfg
 	{
 		scope = 1;
 		displayname = "L128A1 Shotgun";
-		recoil = "twc_shotgun_1";
-		recoilProne = "twc_rifle_762_prone";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
