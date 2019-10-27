@@ -438,14 +438,14 @@ weapons[]=
 {
 "Throw",
 "Put",
-"twc_benelli_m4",
+"CUP_sgun_M1014",
 "rhsusf_weap_m1911a1"
 };
 respawnweapons[]=
 {
 "Throw",
 "Put",
-"twc_benelli_m4",
+"CUP_sgun_M1014",
 "rhsusf_weap_m1911a1"
 };
 magazines[]=

@@ -265,12 +265,17 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
-				item="rhsusf_acc_g33_xps3_tan";
+				item="rhsusf_acc_g33_xps3_tan_flip";
 			};
 			class LinkedItemsFrontSideRail
 			{
 				slot="CUP_PicatinnySideMountMk18";
 				item="rhsusf_acc_anpeq15side";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="twc_acc_rotex5_grey";
 			};
 		};
 		
@@ -280,6 +285,106 @@ class cfgWeapons
 				class compatibleItems {
 					rhsusf_acc_g33_xps3_tan = 1;
 					rhsusf_acc_g33_xps3_tan_flip = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq15side = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
+					acc_pointer_IR = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+	};
+	
+	class twc_hk416_shortdot_desert_dark: twc_hk416_d_base
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="cup_optic_sb_11_4x20_pm_pip";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq15side";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="twc_acc_rotex5_grey";
+			};
+		};
+		
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					cup_optic_sb_11_4x20_pm = 1;
+					cup_optic_sb_11_4x20_pm_pip = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq15side = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
+					acc_pointer_IR = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+	};
+	
+	class twc_hk416_shortdot_desert_light: twc_hk416_d_base
+	{
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {"\CUP\Weapons\CUP_Weapons_HK416\data\new_hk416_camo_desert_co.paa","\CUP\Weapons\CUP_Weapons_HK416\data\tacticool_coyote_co.paa"};
+		model = "\CUP\Weapons\CUP_Weapons_HK416\CUP_hk416_cqb.p3d";
+		handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m4a1_afg.rtm"};
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="cup_optic_sb_11_4x20_pm_tan_pip";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq15side";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="twc_acc_rotex5_grey";
+			};
+		};
+		
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					cup_optic_sb_11_4x20_pm_tan = 1;
+					cup_optic_sb_11_4x20_pm_tan_pip = 1;
 				};
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
