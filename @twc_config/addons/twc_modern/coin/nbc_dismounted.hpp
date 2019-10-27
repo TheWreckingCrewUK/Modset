@@ -1,6 +1,6 @@
 //COIN, NBC, DISMOUNTED
 //Section
-class TWC_Infantry_Modern_COIN_Dismounted_NBC_Rifleman: TWC_Infantry_Modern_COIN_NBC_Rifleman
+class TWC_Infantry_Modern_COIN_Dismounted_NBC_Pointman: TWC_Infantry_Modern_COIN_NBC_Pointman
 {
 	CATEGORY(TWC_Infantry_COIN_Dismounted_NBC)
 	backpack = "TWC_Backpack_Modern_COIN_Dismounted_Woodland_Pointman";
