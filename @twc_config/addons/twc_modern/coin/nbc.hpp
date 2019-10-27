@@ -1,6 +1,6 @@
 //COIN, NBC
 //Section
-class TWC_Infantry_Modern_COIN_NBC_Rifleman: TWC_Infantry_Modern_COIN_Dismounted_Woodland_Pointman
+class TWC_Infantry_Modern_COIN_NBC_Pointman: TWC_Infantry_Modern_COIN_Woodland_Pointman
 {
 	CATEGORY(TWC_Infantry_COIN_NBC)
 	uniformClass = "SP_NBCMk3_HoodUp_Item";
