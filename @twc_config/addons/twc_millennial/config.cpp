@@ -61,7 +61,7 @@ class CfgVehicles
 		
 		linkedItems[] =
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemCompass",
 			"itemMap",
@@ -69,7 +69,7 @@ class CfgVehicles
 		};
 		respawnLinkedItems[] =
 		{
-			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemCompass",
 			"itemMap",
