@@ -2140,16 +2140,16 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"CUP_V_B_Armatus_BB_MCam",
-			"CUP_H_OpsCore_Covered_MCAM_SF",
+			"twc_warriorvest_dcs",
+			"H_HelmetB_light_sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_Armatus_BB_MCam",
-			"CUP_H_OpsCore_Covered_MCAM_SF",
+			"twc_warriorvest_dcs",
+			"H_HelmetB_light_sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2186,7 +2186,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		linkedItems[]=
 		{
 			"CUP_V_B_Ciras_Olive",
-			"CUP_H_OpsCore_Spray_SF",
+			"H_HelmetB_light_sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2194,7 +2194,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_Ciras_Olive",
-			"CUP_H_OpsCore_Spray_SF",
+			"H_HelmetB_light_sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"

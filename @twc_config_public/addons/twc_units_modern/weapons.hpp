@@ -141,39 +141,10 @@ class cfgWeapons
 				slot="CowsSlot";
 				item="rhsusf_acc_t1_high";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					rhsusf_acc_t1_high = 1;
-				};
-			};
-			class MuzzleSlot: asdg_MuzzleSlot_556 {
-				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
-				};
-			};
-			allowedslots[] = {701,901};
-			mass = 35;
-		};
-	
-	};
-	class CUP_hgun_MP7_desert;
-	class CUP_hgun_MP7A1_desert: CUP_hgun_MP7_desert
-	{
-		
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot="CowsSlot";
-				item="rhsusf_acc_t1_high";
-			};
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="cup_acc_anpeq_15_top_flashlight_tan_f";
+				item="cup_acc_anpeq_15_flashlight_black_l";
 			};
 		};
 		class WeaponSlotsInfo
@@ -191,7 +162,50 @@ class cfgWeapons
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
 					acc_pointer_IR = 1;
-					rhsusf_acc_anpeq15side = 1;
+					cup_acc_anpeq_15_flashlight_black_l = 1;
+					cup_acc_anpeq_15_flashlight_black_f = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {701,901};
+			mass = 35;
+		};
+	
+	};
+	class CUP_hgun_MP7;
+	class twc_hgun_MP7A1: CUP_hgun_MP7
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_t1_low";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="cup_acc_anpeq_15_flashlight_black_l";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_t1_low = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+				};
+			};
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					acc_pointer_IR = 1;
+					cup_acc_anpeq_15_flashlight_black_l = 1;
+					cup_acc_anpeq_15_flashlight_black_f = 1;
 					ACE_acc_pointer_red = 1;
 				};
 			};
@@ -332,7 +346,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="CUP_optic_ACOG_TA01NSN_RMR_Black_PIP";
+				item="cup_optic_acog_ta01nsn_rmr_tan_pip";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -360,7 +374,7 @@ class cfgWeapons
 			};
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					CUP_optic_ACOG_TA01NSN_RMR_Black_PIP = 1;
+					cup_optic_acog_ta01nsn_rmr_tan_pip = 1;
 					CUP_optic_Elcan_reflex_pip = 1;
 					UK3CB_BAF_Kite = 1;
 				};
