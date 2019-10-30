@@ -96,14 +96,14 @@
 	{
 		class Turrets;
 	};
-	class ukcw_fv432: CUP_B_FV432_Bulldog_GB_D
+	class CUP_B_FV432: CUP_B_FV432_Bulldog_GB_D
 	{
 		class Turrets: Turrets
 		{
 			class MainTurret;
 		};
 	};
-	class ukcw_fv432_gpmg: ukcw_fv432
+	class CUP_B_FV432_GB_GPMG: ukcw_fv432
 	{
 		class Turrets: Turrets
 		{
