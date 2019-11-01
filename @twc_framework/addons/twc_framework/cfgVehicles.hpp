@@ -157,6 +157,10 @@ class CfgVehicles {
 		};
 	};
 	
+	class TWC_ModuleOrdnanceMortar_HE_Rocket: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "CUP_R_GRAD_HE";
+	};
 	class TWC_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_small";
