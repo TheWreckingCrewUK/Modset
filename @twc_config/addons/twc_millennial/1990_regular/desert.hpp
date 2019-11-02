@@ -6,7 +6,7 @@ class TWC_Infantry_1990_Regular_Desert_Rifleman: TWC_Infantry_1990_Regular_Woodl
 	uniformClass = "TWC_Smock_Desert";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -14,7 +14,7 @@ class TWC_Infantry_1990_Regular_Desert_Rifleman: TWC_Infantry_1990_Regular_Woodl
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -27,7 +27,7 @@ class TWC_Infantry_1990_Regular_Desert_AT: TWC_Infantry_1990_Regular_Woodland_AT
 	uniformClass = "TWC_Smock_Desert";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -35,7 +35,7 @@ class TWC_Infantry_1990_Regular_Desert_AT: TWC_Infantry_1990_Regular_Woodland_AT
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -48,7 +48,7 @@ class TWC_Infantry_1990_Regular_Desert_Gunner: TWC_Infantry_1990_Regular_Woodlan
 	uniformClass = "TWC_Smock_Desert";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -56,7 +56,7 @@ class TWC_Infantry_1990_Regular_Desert_Gunner: TWC_Infantry_1990_Regular_Woodlan
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -70,7 +70,7 @@ class TWC_Infantry_1990_Regular_Desert_SectionCommander: TWC_Infantry_1990_Regul
 	backpack = "TWC_Backpack_1990_Regular_Desert_SectionCommander";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -78,7 +78,7 @@ class TWC_Infantry_1990_Regular_Desert_SectionCommander: TWC_Infantry_1990_Regul
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -92,7 +92,7 @@ class TWC_Infantry_1990_Regular_Desert_2iC: TWC_Infantry_1990_Regular_Woodland_2
 	backpack = "TWC_Backpack_1990_Regular_Desert_2iC";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -100,7 +100,7 @@ class TWC_Infantry_1990_Regular_Desert_2iC: TWC_Infantry_1990_Regular_Woodland_2
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -116,7 +116,7 @@ class TWC_Infantry_1990_Regular_Desert_Platoon_Commander: TWC_Infantry_1990_Regu
 	backpack = "TWC_Backpack_1990_Regular_Desert_Platoon_Commander";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -124,7 +124,7 @@ class TWC_Infantry_1990_Regular_Desert_Platoon_Commander: TWC_Infantry_1990_Regu
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -138,7 +138,7 @@ class TWC_Infantry_1990_Regular_Desert_Platoon_Sergeant: TWC_Infantry_1990_Regul
 	backpack = "TWC_Backpack_1990_Regular_Desert_Platoon_Sergeant";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -146,7 +146,7 @@ class TWC_Infantry_1990_Regular_Desert_Platoon_Sergeant: TWC_Infantry_1990_Regul
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -160,7 +160,7 @@ class TWC_Infantry_1990_Regular_Desert_Platoon_Medic: TWC_Infantry_1990_Regular_
 	backpack = "TWC_Backpack_1990_Regular_Desert_Platoon_Medic";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -168,7 +168,7 @@ class TWC_Infantry_1990_Regular_Desert_Platoon_Medic: TWC_Infantry_1990_Regular_
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -182,7 +182,7 @@ class TWC_Infantry_1990_Regular_Desert_Platoon_CSM: TWC_Infantry_1990_Regular_Wo
 	backpack = "TWC_Backpack_1990_Regular_Desert_Platoon_Sergeant";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -190,7 +190,7 @@ class TWC_Infantry_1990_Regular_Desert_Platoon_CSM: TWC_Infantry_1990_Regular_Wo
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -205,7 +205,7 @@ class TWC_Infantry_1990_Regular_Desert_MILAN_Gunner: TWC_Infantry_1990_Regular_W
 	uniformClass="TWC_Smock_Desert";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -213,7 +213,7 @@ class TWC_Infantry_1990_Regular_Desert_MILAN_Gunner: TWC_Infantry_1990_Regular_W
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -227,7 +227,7 @@ class TWC_Infantry_1990_Regular_Desert_MILAN_Ass: TWC_Infantry_1990_Regular_Wood
 	backpack = "TWC_Backpack_1990_Regular_Desert_MILAN_Ass";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -235,7 +235,7 @@ class TWC_Infantry_1990_Regular_Desert_MILAN_Ass: TWC_Infantry_1990_Regular_Wood
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -248,7 +248,7 @@ class TWC_Infantry_1990_Regular_Desert_Blowpipe_Gunner: TWC_Infantry_1990_Regula
 	uniformClass="TWC_Smock_Desert";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -256,7 +256,7 @@ class TWC_Infantry_1990_Regular_Desert_Blowpipe_Gunner: TWC_Infantry_1990_Regula
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -270,7 +270,7 @@ class TWC_Infantry_1990_Regular_Desert_Blowpipe_Ass: TWC_Infantry_1990_Regular_W
 	backpack = "TWC_Backpack_1990_Regular_Desert_Blowpipe_Ass";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -278,7 +278,7 @@ class TWC_Infantry_1990_Regular_Desert_Blowpipe_Ass: TWC_Infantry_1990_Regular_W
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -291,7 +291,7 @@ class TWC_Infantry_1990_Regular_Desert_L14A1_Gunner: TWC_Infantry_1990_Regular_W
 	uniformClass = "TWC_Smock_Desert";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -299,7 +299,7 @@ class TWC_Infantry_1990_Regular_Desert_L14A1_Gunner: TWC_Infantry_1990_Regular_W
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -313,7 +313,7 @@ class TWC_Infantry_1990_Regular_Desert_L14A1_Ass: TWC_Infantry_1990_Regular_Wood
 	backpack = "TWC_Backpack_1990_Regular_Desert_L14A1_Ass";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -321,7 +321,7 @@ class TWC_Infantry_1990_Regular_Desert_L14A1_Ass: TWC_Infantry_1990_Regular_Wood
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -336,7 +336,7 @@ class TWC_Infantry_1990_Regular_Desert_Sniper: TWC_Infantry_1990_Regular_Woodlan
 	uniformClass = "TWC_Smock_Desert";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -344,7 +344,7 @@ class TWC_Infantry_1990_Regular_Desert_Sniper: TWC_Infantry_1990_Regular_Woodlan
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -370,7 +370,7 @@ class TWC_Infantry_1990_Regular_Desert_Spotter: TWC_Infantry_1990_Regular_Woodla
 	backpack = "TWC_Backpack_1990_Regular_Desert_Spotter";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -378,7 +378,7 @@ class TWC_Infantry_1990_Regular_Desert_Spotter: TWC_Infantry_1990_Regular_Woodla
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -408,7 +408,7 @@ class TWC_Infantry_1990_Regular_Desert_Artillery_Commander: TWC_Infantry_1990_Re
 	backpack = "TWC_Backpack_1990_Regular_Desert_Artillery_Commander";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -416,7 +416,7 @@ class TWC_Infantry_1990_Regular_Desert_Artillery_Commander: TWC_Infantry_1990_Re
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -430,7 +430,7 @@ class TWC_Infantry_1990_Regular_Desert_Artillery_Crew: TWC_Infantry_1990_Regular
 	backpack = "UK3CB_BAF_B_Bergen_DDPM_Rifleman_B";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -438,7 +438,7 @@ class TWC_Infantry_1990_Regular_Desert_Artillery_Crew: TWC_Infantry_1990_Regular
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -452,7 +452,7 @@ class TWC_Infantry_1990_Regular_Desert_FO: TWC_Infantry_1990_Regular_Woodland_FO
 	backpack = "TWC_Backpack_1990_Regular_Desert_FO";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -460,7 +460,7 @@ class TWC_Infantry_1990_Regular_Desert_FO: TWC_Infantry_1990_Regular_Woodland_FO
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -476,7 +476,7 @@ class TWC_Infantry_1990_Regular_Desert_EOD_Commander: TWC_Infantry_1990_Regular_
 	backpack = "TWC_Backpack_1990_Regular_Desert_EOD_Commander";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -484,7 +484,7 @@ class TWC_Infantry_1990_Regular_Desert_EOD_Commander: TWC_Infantry_1990_Regular_
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -497,7 +497,7 @@ class TWC_Infantry_1990_Regular_Desert_EOD_Gunner: TWC_Infantry_1990_Regular_Woo
 	uniformClass = "TWC_Smock_Desert";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -505,7 +505,7 @@ class TWC_Infantry_1990_Regular_Desert_EOD_Gunner: TWC_Infantry_1990_Regular_Woo
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -521,7 +521,7 @@ class TWC_Infantry_1990_Regular_Desert_FAC: TWC_Infantry_1990_Regular_Woodland_F
 	backpack = "TWC_Backpack_1990_Regular_Desert_FAC";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -529,7 +529,7 @@ class TWC_Infantry_1990_Regular_Desert_FAC: TWC_Infantry_1990_Regular_Woodland_F
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -565,7 +565,7 @@ class TWC_Infantry_1990_Regular_Desert_Vehicle_Commander: TWC_Infantry_1990_Regu
 	uniformClass = "TWC_Smock_Desert";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -573,7 +573,7 @@ class TWC_Infantry_1990_Regular_Desert_Vehicle_Commander: TWC_Infantry_1990_Regu
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -586,7 +586,7 @@ class TWC_Infantry_1990_Regular_Desert_Vehicle_Crew: TWC_Infantry_1990_Regular_W
 	uniformClass = "TWC_Smock_Desert";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_CrewHelmet_DDPM_A",
 		"ItemCompass",
 		"itemMap",
@@ -594,7 +594,7 @@ class TWC_Infantry_1990_Regular_Desert_Vehicle_Crew: TWC_Infantry_1990_Regular_W
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_PLCE_Webbing_DDPM",
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 		"UK3CB_BAF_H_CrewHelmet_DDPM_A",
 		"ItemCompass",
 		"itemMap",

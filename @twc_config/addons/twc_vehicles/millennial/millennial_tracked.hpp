@@ -1,6 +1,6 @@
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MILLENNIAL_FV432_MOD
-class TWC_Vehicle_Millennial_FV432_Woodland: ukcw_fv432_gpmg {
+class TWC_Vehicle_Millennial_FV432_Woodland: CUP_B_FV432_GB_GPMG {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
