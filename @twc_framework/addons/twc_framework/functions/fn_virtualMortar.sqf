@@ -31,6 +31,7 @@ if (isServer) then {
 
 	_roundtype = switch (_roundselect) do {
 		case "HE": {"ModuleOrdnanceMortar_F"};
+		case "HE_Rocket": {"TWC_ModuleOrdnanceMortar_HE_Rocket"};
 		case "HE_Harmless_Small": {"twc_ModuleOrdnanceMortar_Dummy_small"};
 		case "HE_Harmless_Medium": {"twc_ModuleOrdnanceMortar_Dummy_medium"};
 		case "HE_Harmless_Big": {"twc_ModuleOrdnanceMortar_Dummy_big"};

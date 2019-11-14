@@ -20,7 +20,9 @@ class cfgFunctions {
 		class insurgencyObjects {
 			file = "twc_objects\functions";
 			class setUpForwardBase {};
+			class setUpForwardBaseProgress {};
 			class tearDownForwardBase {};
+			class tearDownForwardBaseProgress {};
 			class createDefenses {};
 			class setcamocoef {};
 			class baseobject {};
@@ -121,14 +123,14 @@ class CfgVehicles {
 				class twc_placeRadio {
 					displayName = "Activate Forward Base";
 					condition = "(!(_target getVariable 'twc_forwardBaseDeployed')) && ((side _player) == west)";
-					statement = "_return = [_target,_player] call twc_fnc_setUpForwardBase; hint _return;";
+					statement = "_return = [_target,_player] call twc_fnc_setUpForwardBaseProgress;";
 					icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa";
 				};
 
 				class twc_RemoveRadio {
 					displayName = "Tear Down Forward Base";
 					condition = "(_target getVariable 'twc_forwardBaseDeployed') && ((side _player) == west)";
-					statement = "_return = [_target,_player] call twc_fnc_tearDownForwardBase; hint _return;";
+					statement = "_return = [_target,_player] call twc_fnc_tearDownForwardBaseProgress;";
 					icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa";
 				};
 			};

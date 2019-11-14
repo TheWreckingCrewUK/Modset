@@ -11,7 +11,7 @@ class TWC_AmmoBox_Launchers_L14_Portable: TWC_AmmoBox_Launcher_Portable {
 	editorSubcategory = "TWC_Crates_Launchers";
 	
 	class TransportWeapons {
-		weap_nc(ukcw_l14A1, 2);
+		weap_nc(ukcw_l14A1, 1);
 	};
 
 	class TransportMagazines {
@@ -56,6 +56,10 @@ class TWC_AmmoBox_Launchers_LAW80_Portable: TWC_AmmoBox_Launcher_Portable {
 	
 	class TransportWeapons {
 		weap_nc(ukcw_law80_loaded, 2);
+	};
+	
+	class TransportMagazines {
+		maga_nc(ukcw_law80_magazine_spotting, 2);
 	};
 };
 

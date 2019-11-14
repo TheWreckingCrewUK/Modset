@@ -10,6 +10,6 @@ if ((side effectiveCommander (vehicle _unit)) != (side (vehicle player))) then {
 	_hit = [_ammo, format ["twc_suppress_cached_hit_%1", _ammo]] call TWC_Suppress_fnc_readCache;
 	if (_hit == 0) exitWith {};
 
-	_dDist = (7 + (_hit / 2)) min 28;
+	_dDist = (5 + (_hit / 3)) min 28;
 	TWC_Suppress_Queue pushBack [_projectile, _dDist, _hit];
 };

@@ -97,12 +97,14 @@
 		scope=2;
 		displayName="Blank Unit";
 		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_Smock_MTP";
+		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
 		linkedItems[]=
 		{
+			"UK3CB_BAF_H_Beret_RLC_Commando"
 		};
 		respawnLinkedItems[]=
 		{
+			"UK3CB_BAF_H_Beret_RLC_Commando"
 		};
 		Items[]=
 		{
@@ -208,7 +210,7 @@
 		displayName="Quartermaster @Management";
 		uniformClass="UK3CB_BAF_U_RolledUniform_MTP";
 		icon="iconManLeader";
-		backpack="TWC_Backpack_Modern_quartermaster";
+		backpack="";
 		attendant = 1;
 		linkedItems[]=
 		{
@@ -1015,17 +1017,16 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		icon="iconManLeader";
 		twc_radioType = "ACRE_PRC343";
 		twc_radioChannel = 4;
-		twc_nobackpack = 1;
-		backpack="";
+		backpack="TWC_Backpack_Modern_Sniper";
 		linkedItems[]= {
-			"UK3CB_BAF_V_PLCE_Webbing_MTP",
+			"V_Rangemaster_belt",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 
 		respawnLinkedItems[]= {
-			"UK3CB_BAF_V_PLCE_Webbing_MTP",
+			"V_Rangemaster_belt",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1051,9 +1052,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
@@ -1064,9 +1062,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"ACE_10Rnd_338_300gr_HPBT_Mag",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
@@ -1076,6 +1071,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		scope=2;
 		displayName="Spotter";
 		icon="iconManLeader";
+		backpack="TWC_Backpack_Modern_Spotter";
 
 		Items[]= {
 			"ACE_Kestrel4500",
@@ -1085,10 +1081,10 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
-			"ACRE_PRC148",
+			"ACRE_PRC152",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"ACE_microDAGR",
+			"ItemcTab",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
@@ -1098,9 +1094,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
-			"ACE_CableTie",
-			"ACE_CableTie",
-			"ACE_CableTie",
 			"ACE_quikclot",
 			"ACE_quikclot",
 			"ACE_morphine",
@@ -1116,11 +1109,11 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			
 			"ACE_EarPlugs",
 			"ACRE_PRC343",
-			"ACRE_PRC148",
+			"ACRE_PRC152",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"ACE_microDAGR",
+			"ItemcTab",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
@@ -1130,9 +1123,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
 			"ACE_elasticBandage",
-			"ACE_CableTie",
-			"ACE_CableTie",
-			"ACE_CableTie",
 			"ACE_quikclot",
 			"ACE_quikclot",
 			"ACE_morphine",
@@ -1160,11 +1150,9 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
@@ -1172,11 +1160,9 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
 			"UK3CB_BAF_762_L42A1_20Rnd",
+			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell",
 			"B_IR_Grenade"
 		};
@@ -1765,7 +1751,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		twc_radioChannel = 2;
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_rifleman",
+			"CUP_V_B_JPC_MCam",
 			"rhsusf_opscore_mc_cover_pelt",
 			"ItemMap",
 			"ItemCompass",
@@ -1773,7 +1759,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_rifleman",
+			"CUP_V_B_JPC_MCam",
 			"rhsusf_opscore_mc_cover_pelt",
 			"ItemMap",
 			"ItemCompass",
@@ -1887,6 +1873,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 	{
 		scope=2;
 		displayName="Section Commander @SAS";
+		backpack="twc_ussf_scoutpack";
 		Items[]=
 		{
 			"ACE_fieldDressing",
@@ -1967,7 +1954,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"twc_mtp_spc_squadleader",
+			"twc_warriorvest_dcs",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",
@@ -1976,7 +1963,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_mtp_spc_squadleader",
+			"twc_warriorvest_dcs",
 			"rhsusf_opscore_mc_cover_pelt_cam",
 			"ItemMap",
 			"ItemcTab",
@@ -2003,6 +1990,22 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"Put",
 			"TWC_UK3CB_BAF_L119A2_10_LDS",
 			"rhsusf_weap_glock17g4"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_JPC_Tan",
+			"rhsusf_opscore_mc_cover_pelt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_JPC_Tan",
+			"rhsusf_opscore_mc_cover_pelt",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
 		};
 	};
 
@@ -2137,16 +2140,16 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_machinegunner",
-			"rhsusf_opscore_mc_cover_pelt",
+			"twc_warriorvest_dcs",
+			"H_HelmetB_light_sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_machinegunner",
-			"rhsusf_opscore_mc_cover_pelt",
+			"twc_warriorvest_dcs",
+			"H_HelmetB_light_sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2182,16 +2185,16 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		linkedItems[]=
 		{
-			"twc_rhsusf_mbav_rifleman_mtp",
-			"rhsusf_opscore_mc_cover_pelt",
+			"CUP_V_B_Ciras_Olive",
+			"H_HelmetB_light_sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_rhsusf_mbav_rifleman_mtp",
-			"rhsusf_opscore_mc_cover_pelt",
+			"CUP_V_B_Ciras_Olive",
+			"H_HelmetB_light_sand",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"

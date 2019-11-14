@@ -67,4 +67,9 @@ class CfgSounds {
 	ADD_SOUND(strong_wind,environment);
 	ADD_SOUND(wind,environment);
 	ADD_SOUND(wind_1,environment);
+	
+	ADD_SOUND(door,halloween);
+	ADD_SOUND(horror_1,halloween);
+	ADD_SOUND(tort_1,halloween);
+	ADD_SOUND(tort_2,halloween);
 };

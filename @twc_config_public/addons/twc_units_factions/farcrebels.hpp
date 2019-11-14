@@ -68,6 +68,44 @@
 		};
 
 	};
+
+	class twc_farc_men_rif_aa: twc_farc_men_Base {
+		scope=2;
+		displayName="Rifleman AA";
+		uniformClass="rhsgref_uniform_dpm_olive";
+
+		weapons[]= {
+			"Throw",
+			"Put",
+			"CUP_arifle_AKS",
+		"CUP_launch_9K32Strela"
+		};
+		respawnweapons[]= {
+			"Throw",
+			"Put",
+			"CUP_arifle_AKS",
+		"CUP_launch_9K32Strela"
+		};
+		magazines[]=
+		{
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm"
+		};
+		Respawnmagazines[]=
+		{
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm",
+			"rhs_30Rnd_762x39mm"
+		};
+
+	};
 	
 	class twc_farc_men_off: twc_farc_men_Base {
 		scope=2;
@@ -77,12 +115,12 @@
 		weapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m4a1_blockII_wd"
+			"CUP_arifle_M4A3_camo"
 		};
 		respawnweapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m4a1_blockII_wd"
+			"CUP_arifle_M4A3_camo"
 		};
 		linkedItems[]= {
 			"V_BandollierB_oli",

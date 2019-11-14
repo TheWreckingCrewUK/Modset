@@ -61,6 +61,8 @@ class cfgmagazines{
 	
 };
 
+class asdg_MuzzleSlot_556;
+class rhs_western_rifle_scopes_slot_short;
 
 class cfgweapons{
 
@@ -92,6 +94,8 @@ class cfgweapons{
 			};
 		};
 	};
+	
+	
 	class rhs_weap_sr25;
 		class rhs_weap_sr25_leo: rhs_weap_sr25
 	{
@@ -111,6 +115,107 @@ class cfgweapons{
 	};
 	
 		
+	
+	class CUP_lmg_Pecheneg_desert;
+	class twc_pkp_sof: CUP_lmg_Pecheneg_desert
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhs_acc_1pn93_2";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhs_acc_1pn93_2 = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 192.96;
+		};
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	class CUP_arifle_AK74M_railed_desert;
+	class twc_ak74_sof: CUP_arifle_AK74M_railed_desert
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_eotech_xps3";
+				//item="rhsusf_acc_EOTECH";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_EOTECH = 1;
+					rhsusf_acc_eotech_xps3 = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 92.96;
+		};
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
+	
+	/*
+	class CUP_U_CRYE_MCAM_RUS2_Roll;
+	class twc_cryeG3_russof_roll: CUP_U_CRYE_MCAM_RUS2_Roll
+	{
+		modelSides[] = {0,1,2,3};
+	};
+	*/
+	class rhs_uniform_g3_mc;
+	class twc_cryeG3_russof_roll: rhs_uniform_g3_mc
+	{
+		modelSides[] = {0,1,2,3};
+	};
+	
+	class CUP_arifle_AK74M_railed_afg_desert;
+	class twc_ak74_sof_afg_suppressed: CUP_arifle_AK74M_railed_afg_desert
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="rhsusf_acc_t1_low";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="cup_muzzle_tgpa_desert";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					rhsusf_acc_t1_low = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					cup_muzzle_tgpa_desert = 1;
+					rhs_acc_dtk4short = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 92.96;
+		};
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+	};
 
 		
 	};

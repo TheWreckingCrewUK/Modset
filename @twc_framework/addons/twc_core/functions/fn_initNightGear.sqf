@@ -19,12 +19,12 @@ if (!_nightMode) exitWith {};
 
 _nightItems = (configFile >> "CfgVehicles" >> (typeOf _unit) >> "nightItems") call BIS_fnc_getCfgDataArray;
 
-if !(isNil _nightItems) then {
+if !(isNil "_nightItems") then {
 	{ _unit addItem _x; } forEach _nightItems;
 };
 
 _nightLinkedItems = (configFile >> "CfgVehicles" >> (typeOf _unit) >> "nightLinkedItems") call BIS_fnc_getCfgDataArray;
 
-if !(isNil _nightLinkedItems) then {
+if !(isNil "_nightLinkedItems") then {
 	{ _unit linkItem _x; } forEach _nightLinkedItems;
 };

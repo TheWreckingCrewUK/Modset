@@ -1920,19 +1920,26 @@
 			};
 		};
 	};
-	class TWC_Backpack_Modern_Sniper: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A
+	
+	class twc_mtp_belt;
+	class TWC_Backpack_Modern_Sniper: twc_mtp_belt
 	{
 		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_Lapua
-				{
-					magazine = "UK3CB_BAF_762_100Rnd";
-					count = 5;
-				};
+			{
+				magazine = "ACE_10Rnd_338_300gr_HPBT_Mag";
+				count = 4;
+			};
+			class _xx_LapuaAP
+			{
+				magazine = "ACE_10Rnd_338_API526_Mag";
+				count = 3;
+			};
 		};
 	};
-	class TWC_Backpack_Modern_Spotter: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A
+	class TWC_Backpack_Modern_Spotter: twc_mtp_belt
 	{
 		scope = 1;
 		class TransportItems
@@ -1941,11 +1948,6 @@
 		};
 		class TransportMagazines
 		{
-			class _xx_Lapua
-			{
-				magazine = "UK3CB_BAF_762_100Rnd";
-				count = 5;
-			};
 			class _xx_MarksmanMag
 			{
 				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
@@ -2032,12 +2034,12 @@
 		{
             class _xx_Slug
 			{
-				magazine = "UK3CB_BAF_12G_Slugs";
+				magazine = "CUP_8Rnd_B_Beneli_74Slug";
 				count = 5;
 			};
             class _xx_Buck
 			{
-				magazine = "UK3CB_BAF_12G_Pellets";
+				magazine = "CUP_8Rnd_B_Beneli_74Pellets";
 				count = 7;
 			};
 		};
@@ -2045,7 +2047,7 @@
 		{
             class _xx_Shotgun
 			{
-				weapon = "UK3CB_BAF_L128A1_Eotech";
+				weapon = "TWC_L128A1_Eotech";
 				count = 1;
 			};
 		};
@@ -2082,12 +2084,12 @@
 			};	
             class _xx_Slug
 			{
-				magazine = "UK3CB_BAF_12G_Slugs";
+				magazine = "CUP_8Rnd_B_Beneli_74Slug";
 				count = 2;
 			};
             class _xx_Buck
 			{
-				magazine = "UK3CB_BAF_12G_Pellets";
+				magazine = "CUP_8Rnd_B_Beneli_74Pellets";
 				count = 2;
 			};		
 		};

@@ -223,6 +223,8 @@ class CfgVehicles
 	#include "regular\tropic_dismounted.hpp"
 	#include "regular\arctic.hpp"
 	#include "regular\arctic_dismounted.hpp"
+	#include "regular\nbc.hpp"
+	#include "regular\nbc_dismounted.hpp"
 	
 	#include "coin\woodland.hpp"
 	#include "coin\woodland_dismounted.hpp"
@@ -232,6 +234,8 @@ class CfgVehicles
 	#include "coin\tropic_dismounted.hpp"
 	#include "coin\arctic.hpp"
 	#include "coin\arctic_dismounted.hpp"
+	#include "coin\nbc.hpp"
+	#include "coin\nbc_dismounted.hpp"
 	
 	#include "airborne\woodland.hpp"
 	#include "airborne\desert.hpp"

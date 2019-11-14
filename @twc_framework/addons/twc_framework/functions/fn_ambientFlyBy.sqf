@@ -49,7 +49,7 @@ _vehicle setCaptive true;
 _vehicleGroup allowFleeing 0;
 
 _maxSpeed = [(configFile >> "CfgVehicles" >> _class), "maxSpeed", 100] call BIS_fnc_returnConfigEntry;
-_vehicle setvelocity [0, 0, _maxSpeed]; // start them flying at maxspeed
+_vehicle setVelocityModelSpace [0, _maxspeed, 0]; // start them flying at maxspeed
 
 //Fly height
 _vehicle flyInHeightASL [_height, _height, _height];
