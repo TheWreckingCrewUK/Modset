@@ -229,7 +229,7 @@ class TWC_Infantry_WW2_US_Airborne_Woodland_MGASS: TWC_Infantry_WW2_US_Airborne_
 		MAG_9("LIB_15Rnd_762x33")
 	};
 };
-class TWC_Infantry_WW2_US_Airborne_Woodland_Rifleman: TWC_Infantry_WW2_US_Airborne_Woodland_Rifleman {
+class TWC_Infantry_WW2_US_Airborne_Woodland_Ammobearer: TWC_Infantry_WW2_US_Airborne_Woodland_Rifleman {
 	displayName = "Ammobearer";
 	backpack = "TWC_Backpack_WW2_US_Airborne_Ammobearer";
 	weapons[] =
@@ -379,6 +379,22 @@ class TWC_Infantry_WW2_US_Airborne_Woodland_Platoon_Leader: TWC_Infantry_WW2_US_
 		MEDICAL_LOADOUT,
 		"ACE_MapTools"
 	};
+	weapons[] =
+	{
+		"LIB_M1A1_Thompson",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_US",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"LIB_M1A1_Thompson",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_US",
+		"Throw",
+		"Put"
+	};
 };
 class TWC_Infantry_WW2_US_Airborne_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_US_Airborne_Woodland_Platoon_Leader {
 	displayName = "Platoon Sergeant";
@@ -519,12 +535,12 @@ class TWC_Infantry_WW2_US_Airborne_Woodland_Platoon_AT: TWC_Infantry_WW2_US_Airb
 	};
 	magazines[] =
 	{
-		MAG_5("LIB_15Rnd_762x33"),
+		MAG_11("LIB_15Rnd_762x33"),
 		"LIB_1Rnd_60mm_M6"
 	};
 	respawnMagazines[] =
 	{
-		MAG_5("LIB_15Rnd_762x33"),
+		MAG_11("LIB_15Rnd_762x33"),
 		"LIB_1Rnd_60mm_M6"
 	};
 };
