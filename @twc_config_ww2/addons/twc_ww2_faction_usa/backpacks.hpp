@@ -1,3 +1,4 @@
+class B_LIB_US_M36;
 class B_LIB_US_M36_Bandoleer;
 class B_LIB_US_M36_Rope;
 class B_LIB_US_M36_Rocketbag_Empty;
@@ -62,6 +63,7 @@ class TWC_Backpack_WW2_US_Airborne_2iC: B_LIB_US_M36_Bandoleer {
 class TWC_Backpack_WW2_US_Airborne_SquadLeader: B_LIB_US_M36_Rope {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 180;
 	class TransportMagazines {
 		ADD_MAGA(LIB_30Rnd_45ACP, 6);
 		ADD_MAGA(LIB_US_M18, 3);
@@ -74,6 +76,7 @@ class TWC_Backpack_WW2_US_Airborne_SquadLeader: B_LIB_US_M36_Rope {
 class TWC_Backpack_WW2_US_Airborne_Platoon_Leader: B_LIB_US_M36_Rope {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 180;
 	class TransportMagazines {
 		ADD_MAGA(LIB_30Rnd_45ACP, 6);
 		ADD_MAGA(LIB_US_M18, 3);
@@ -95,6 +98,7 @@ class TWC_Backpack_WW2_US_Airborne_Platoon_Sergeant: B_LIB_US_M36_Rope {
 class TWC_Backpack_WW2_US_Airborne_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 180;
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing,20);
 		ADD_ITEM(ACE_morphine,10);
@@ -113,8 +117,8 @@ class TWC_Backpack_WW2_US_Airborne_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty 
 class TWC_Backpack_WW2_US_Airborne_Platoon_AT: B_LIB_US_M36_Rocketbag_Empty {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 250;
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33, 6);
 		ADD_MAGA(LIB_1Rnd_60mm_M6, 4);
 	};
 };
