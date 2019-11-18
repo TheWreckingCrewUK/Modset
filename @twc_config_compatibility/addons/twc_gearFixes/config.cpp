@@ -377,14 +377,14 @@ class CfgWeapons {
 	
 	class CUP_Rarden_CTWS_veh: autocannon_40mm_CTWS
 	{
-		magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE"};
+		magazines[] = {"twc_3rnd_30mm_AP","twc_3rnd_30mm_HE"};
 		magazineReloadTime = 1;
 		muzzles[] = {"HE"};
 		ReloadTime = 0.3;
 		autoReload = 0;
 		class HE: HE
 		{
-			magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE"};
+			magazines[] = {"twc_3rnd_30mm_AP","twc_3rnd_30mm_HE"};
 			magazineReloadTime = 1;
 			ReloadTime = 0.3;
 			autoReload = 0;
@@ -1437,7 +1437,7 @@ class CfgVehicles {
 		{
 			class MainTurret : MainTurret
 			{
-				magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+				magazines[] = {"twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
 				stabilizedInAxes = 0;
 			};
 		};
@@ -2598,6 +2598,22 @@ class cfgMagazines
 	{
 		displayNameShort = ".338 HPBT";
 		descriptionShort = "Caliber: .338LM (HPBT)<br />Hollow Point Boat-Tail (300 Grain)<br />Rounds: 10";
+	};
+		
+	class 250Rnd_30mm_HE_shells_Tracer_Red;
+	class twc_3rnd_30mm_HE: 250Rnd_30mm_HE_shells_Tracer_Red
+	{
+		displayNameShort = "30mm HE";
+		displayName = "HE";
+		count = 3;
+	};
+		
+	class 250Rnd_30mm_APDS_shells_Tracer_Red;
+	class twc_3rnd_30mm_AP: 250Rnd_30mm_APDS_shells_Tracer_Red
+	{
+		displayNameShort = "30mm APDS";
+		displayName = "APDS";
+		count = 3;
 	};
 		
 	
