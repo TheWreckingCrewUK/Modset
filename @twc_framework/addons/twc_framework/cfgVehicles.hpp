@@ -746,126 +746,118 @@ class CfgVehicles {
 		isDisposable = 0;
 		icon = "\twc_framework\ui\airborne_ca.paa";
 		functionPriority = 1;
-		class Arguments
-		{
-			class Destination
-			{
-				displayName="Destination";
-				description="Location where the plane will drop the units";
-				typeName="String";
-				defaultValue="";
-			};
-			class End
-			{
-				displayName="End Location";
-				description="Location where the plane will delete";
-				typeName="String";
-				defaultValue="";
-			};
+		class Arguments {
 			class Plane_Units
 			{
-				displayName="Plane/Units";
-				description="Type of units and plane to spawn";
-				typeName="String";
-				defaultValue="Modern_VDV";
-				class values
-				{
-					class Modern_British
-					{
-						name="Modern British Section (C-130)";
-						value="Modern_British";
+				displayName = "Plane/Units";
+				description = "Type of units and plane to spawn";
+				typeName = "String";
+				defaultValue = "Modern_VDV";
+				class Values {
+					class Modern_British_Woodland {
+						name = "Modern British Section (C-130)";
+						value = "Modern_British_Woodland";
 					};
-					class Cold_British
-					{
-						name="Cold War British Section (C-130)";
-						value="Cold_British";
+					class Cold_British_Woodland {
+						name = "Cold War British Section (Woodland, C-130)";
+						value = "Cold_British_Woodland";
 					};
-					class 1990_British
-					{
-						name="1990's British Section (C-130)";
-						value="1990_British";
+					class Cold_British_Desert {
+						name = "Cold War British Section (Desert, C-130)";
+						value = "Cold_British_Desert";
 					};
-					class WW2_British
-					{
-						name="WWII British Section (C-47)";
-						value="WW2_British";
+					class 1990_British_Woodland {
+						name = "1990s British Section (Woodland, C-130)";
+						value = "1990_British_Woodland";
 					};
-					class Cold_VDV
-					{
-						name="Cold War VDV Section (An-12)";
-						value="Cold_VDV";
+					class 1990_British_Desert {
+						name = "1990s British Section (Desert, C-130)";
+						value = "1990_British_Desert";
 					};
-					class Modern_VDV
-					{
-						name="Modern VDV Section (An-12)";
-						value="Modern_VDV";
+					class 1990_British_Tropic {
+						name = "1990s British Section (Tropic, C-130)";
+						value = "1990_British_Tropic";
 					};
-					class SLA
-					{
-						name="SLA Section (Li-2)";
-						value="SLA";
+					class 1990_British_Arctic {
+						name = "1990s British Section (Arctic, C-130)";
+						value = "1990_British_Arctic";
 					};
-					class RACS
-					{
-						name="RACS Section (C-130)";
-						value="RACS";
+					class WW2_British_Woodland {
+						name = "WWII British Section (Woodland, C-47)";
+						value = "WW2_British_Woodland";
 					};
-					class Takistani_Army_1
-					{
-						name="Takistani Section (C-130)";
-						value="Takistani_Army_1";
+					class WW2_British_Arctic {
+						name = "WWII British Section (Arctic, C-47)";
+						value = "WW2_British_Arcitc";
 					};
-					class Takistani_Army_2
-					{
-						name="Takistani Section (An-2)";
-						value="Takistani_Army_2";
+					class Cold_VDV {
+						name = "Cold War VDV Section (An-12)";
+						value = "Cold_VDV";
 					};
-					class Fallscirmjager
-					{
-						name = "Fallschirmjäger (JU-52)";
-						value = "Fallscirmjager";
+					class Modern_VDV {
+						name = "Modern VDV Section (An-12)";
+						value = "Modern_VDV";
 					};
-					class Fallscirmjager_Sicily
-					{
-						name = "Fallschirmjäger Sicily (JU-52)";
-						value = "Fallscirmjager_Sicily";
+					class SLA {
+						name = "SLA Section (Li-2)";
+						value = "SLA";
+					};
+					class RACS {
+						name = "RACS Section (C-130)";
+						value = "RACS";
+					};
+					class Takistani_Army_1 {
+						name = "Takistani Section (C-130)";
+						value = "Takistani_Army_1";
+					};
+					class Takistani_Army_2 {
+						name = "Takistani Section (An-2)";
+						value = "Takistani_Army_2";
+					};
+					class Fallschirmjager {
+						name = "Fallschirmjäger (Ju-52)";
+						value = "Fallschirmjäger";
+					};
+					class Fallschirmjager_Sicily {
+						name = "Fallschirmjäger Sicily (Ju-52)";
+						value = "Fallschirmjäger_Sicily";
 					};
 				};
 			};
 			class Type_Plane
 			{
-				displayName="Type (Plane)";
-				description="Class name of a plane that overrides the selection";
-				typeName="String";
-				defaultValue="";
+				displayName = "Type (Plane)";
+				description = "Class name of a plane that overrides the selection";
+				typeName = "String";
+				defaultValue = "";
 			};
 			class Type_Cargo
 			{
-				displayName="Type (Cargo)";
-				description="An array of units to make a group that overrides the selection";
-				typeName="String";
-				defaultValue="";
+				displayName = "Type (Cargo)";
+				description = "An array of units to make a group that overrides the selection";
+				typeName = "String";
+				defaultValue = "";
 			};
 			class Amount_Cargo
 			{
-				displayName="Size";
-				description="Amount of groups to drop";
-				typeName="Number";
-				defaultValue=0;
+				displayName = "Size";
+				description = "Amount of groups to drop";
+				typeName = "Number";
+				defaultValue = 0;
 			};
 			class Infantry_Attack_Location
 			{
-				displayName="Infantry Attack";
-				description="Location the infantry will move to after their drop";
-				typeName="String";
-				defaultValue="";
+				displayName = "Infantry Attack";
+				description = "Location the infantry will move to after their drop";
+				typeName = "String";
+				defaultValue = "";
 			};
 			class Script
 			{
-				displayName="Post-WP Script";
-				description="Script to execute once infantry has reached the attack location.";
-				typeName="String";
-				defaultValue="";
+				displayName = "Post-WP Script";
+				description = "Script to execute once infantry has reached the attack location.";
+				typeName = "String";
+				defaultValue = "";
 			};
 		};
 		class ModuleDescription: ModuleDescription {
@@ -1209,7 +1201,6 @@ class CfgVehicles {
 		displayName = "Ambient Attack Plane (Bomb)";
 		moduleCAStype = 3;
 	};
-	
 
 	class TWC_Module_Charge: Module_F {
 		author = "[TWC] Rik";
