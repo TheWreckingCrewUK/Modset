@@ -4,6 +4,7 @@ class CfgFunctions {
 			file = "twc_framework\functions";
 			class AirAssault {};
 			class Airborne {};
+			class Airborne_Paradrop {};
 			class AmbientAA {};
 			class ambientCivDepopulate {};
 			class ambientCivPopulate {};
