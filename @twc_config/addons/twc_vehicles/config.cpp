@@ -115,7 +115,6 @@ class CfgPatches {
 			"ukcw_bedford",
 			"ukcw_chieftain",
 			"ukcw_cvrt",
-			"ukcw_fv432",
 			"ukcw_gazelle",
 			"TWC_Faction",
 			"ace_cargo",

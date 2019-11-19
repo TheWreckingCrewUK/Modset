@@ -103,7 +103,7 @@
 			class MainTurret;
 		};
 	};
-	class CUP_B_FV432_GB_GPMG: ukcw_fv432
+	class CUP_B_FV432_GB_GPMG: CUP_B_FV432
 	{
 		class Turrets: Turrets
 		{
