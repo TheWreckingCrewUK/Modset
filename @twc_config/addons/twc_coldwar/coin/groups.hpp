@@ -238,7 +238,7 @@ class TWC_Groups_ColdWar_COIN_Dismounted_##CAMO \
 			position[] = {6,0,0}; \
 		}; \
 	}; \
-}; \
+};
 
 COIN_GROUPS(Woodland)
 COIN_GROUPS(Desert)

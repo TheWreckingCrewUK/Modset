@@ -395,7 +395,7 @@ class TWC_Groups_ColdWar_Regular_Dismounted_##CAMO \
 				position[] = {6,0,0}; \
 		}; \
 	}; \
-}; \
+};
 
 REGULAR_GROUPS(Woodland)
 REGULAR_GROUPS(Desert)
