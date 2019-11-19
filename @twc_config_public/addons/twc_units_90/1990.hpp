@@ -734,7 +734,7 @@
 		class 1990_British_FSTCommander: 1990_British_Base 
 	{
 		scope=2;
-		displayName="FST Commander (90's Woodland)@Fire Support Team";
+		displayName="FST Commander @Fire Support Team";
 		icon="iconManLeader";
 		uniformClass="UK3CB_BAF_U_Smock_DPMW";
 		backpack="TWC_Backpack_1990_Sectionlead";
@@ -808,7 +808,7 @@
 	class 1990_British_FSTForwardObserver: 1990_British_Base
 	{
 		scope=2;
-		displayName="FST Forward Observer (90's Woodland)";
+		displayName="FST Forward Observer";
 		icon="iconManExplosive";
 		uniformClass="UK3CB_BAF_U_Smock_DPMW";
 		backpack="UK3CB_BAF_B_Bergen_DPMW_Rifleman_B";
@@ -877,7 +877,7 @@
 	class 1990_British_FSTAssistant: 1990_British_Base 
 	{
 		scope=2;
-		displayName="FST Assistant (90's Woodland)";
+		displayName="FST Assistant ";
 		uniformClass="UK3CB_BAF_U_Smock_DPMW";
 		backpack="UK3CB_BAF_B_Carryall_DPMW";
 		
