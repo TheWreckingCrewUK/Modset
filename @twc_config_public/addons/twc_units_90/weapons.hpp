@@ -357,20 +357,20 @@ class cfgWeapons
 		displayName = "L86A1";
 		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
-		accessories[] = {"cup_optic_susat_pip"};
+		accessories[] = {"uk3cb_baf_susat"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="cup_optic_susat_pip";
+				item="uk3cb_baf_susat";
 			};
 		};
 		class WeaponSlotsInfo
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					cup_optic_susat_pip = 1;
+					uk3cb_baf_susat = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -382,20 +382,20 @@ class cfgWeapons
 	{
 		scope = 1;
 		author="Hobbs";
-		accessories[] = {"cup_optic_susat_pip"};
+		accessories[] = {"uk3cb_baf_susat"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L110A2";
-				item="cup_optic_susat_pip";
+				item="uk3cb_baf_susat";
 			};
 		};
 		class WeaponSlotsInfo
 		{
 			class asdg_OpticRail_UK3CB_BAF_L110A2: asdg_OpticRail1913 {
 				class compatibleItems {
-					cup_optic_susat_pip = 1;
+					uk3cb_baf_susat = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -415,13 +415,13 @@ class cfgWeapons
 		displayName = "L85A1";
 		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
-		accessories[] = {"cup_optic_susat_pip"};
+		accessories[] = {"uk3cb_baf_susat"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="cup_optic_susat_pip";
+				item="uk3cb_baf_susat";
 			};
 		};
 		
@@ -429,7 +429,7 @@ class cfgWeapons
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					cup_optic_susat_pip = 1;
+					uk3cb_baf_susat = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -443,13 +443,13 @@ class cfgWeapons
 		displayName = "L85A1";
 		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
-		accessories[] = {"cup_optic_susat_pip"};
+		accessories[] = {"uk3cb_baf_susat"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="cup_optic_susat_pip";
+				item="uk3cb_baf_susat";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -463,7 +463,7 @@ class cfgWeapons
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					cup_optic_susat_pip = 1;
+					uk3cb_baf_susat = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -512,13 +512,13 @@ class cfgWeapons
 		scope = 1;
 		displayName = "L85A2";
 		author="Hobbs";
-		accessories[] = {"cup_optic_susat_pip", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
+		accessories[] = {"uk3cb_baf_susat", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="cup_optic_susat_pip";
+				item="uk3cb_baf_susat";
 			};
 		};
 	};
@@ -528,13 +528,13 @@ class cfgWeapons
 		scope = 1;
 		displayName = "L85A2/L123UGL";
 		author="Hobbs";
-		accessories[] = {"cup_optic_susat_pip", "UK3CB_BAF_TA31F_Hornbill"};
+		accessories[] = {"uk3cb_baf_susat", "UK3CB_BAF_TA31F_Hornbill"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="cup_optic_susat_pip";
+				item="uk3cb_baf_susat";
 			};
 		};
 	};
@@ -546,7 +546,7 @@ class cfgWeapons
 		scope = 1;
 		displayName = "L85A2/L123UGL";
 		author="Hobbs";
-		accessories[] = {"cup_optic_susat_pip", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
+		accessories[] = {"uk3cb_baf_susat", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -564,7 +564,7 @@ class cfgWeapons
 		scope = 1;
 		displayName = "L85A2";
 		author="Hobbs";
-		accessories[] = {"cup_optic_susat_pip", "UK3CB_BAF_TA31F_Hornbill"};
+		accessories[] = {"uk3cb_baf_susat", "UK3CB_BAF_TA31F_Hornbill"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -580,13 +580,13 @@ class cfgWeapons
 		scope = 1;
 		displayName = "L85A2";
 		author="Hobbs";
-		accessories[] = {"cup_optic_susat_pip", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
+		accessories[] = {"uk3cb_baf_susat", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="cup_optic_susat_pip";
+				item="uk3cb_baf_susat";
 			};
 		};
 	};
