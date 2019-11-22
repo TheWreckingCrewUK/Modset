@@ -106,19 +106,14 @@ if (_supponly == 3) exitwith {};
 			_unit enableai "path";
 			_unit domove _pos;
 			
-			[_unit, _pos] spawn {
-				params ["_unit", "_pos"];
-				sleep 3;
-				if ((random 1) > 0.3) then {
-					sleep 10;
-				};
-			};
 			
 			
 		} else {
 			if ((leader group _unit) == _unit) then {
 			};
 		};
+		_unitvar = _unit getvariable ["scramnum", 0 ];
+		_unit setvariable ["scramnum", _unitvar + 1];
 } foreach units _group;
 
 sleep 30;

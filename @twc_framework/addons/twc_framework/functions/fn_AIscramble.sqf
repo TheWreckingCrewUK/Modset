@@ -53,7 +53,7 @@ _ind = (vehicle _unit) addEventHandler ["hit", {
 		[_unit, _supponly] spawn TWC_fnc_aiscramblenew;
 	};
 	_ind = (_unito) getvariable ["twc_aiehitindex", 0];
-	(_unito) removeEventHandler ["FiredNear", _ind];
+	(_unito) removeEventHandler ["hit", _ind];
 	
 }];
 

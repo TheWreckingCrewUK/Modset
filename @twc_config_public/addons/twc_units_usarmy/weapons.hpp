@@ -39,7 +39,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_eotech_xps3";
+				item="cup_optic_eotech553_coyote";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -51,7 +51,7 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_eotech_xps3 = 1;
+					cup_optic_eotech553_coyote = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -201,6 +201,51 @@ class cfgWeapons
 		
 	};
 	
+	class twc_m4b2_us_spectre_m203: twc_m4b2_us_eotech
+	{
+		displayName = "M4 Block II (M203)";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="cup_optic_elcan_specterdr_black_pip";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="cup_acc_anpeq_15_flashlight_tan_l";
+			};
+		};
+		
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					cup_optic_elcan_specterdr_black_pip = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					cup_acc_anpeq_15_flashlight_tan_l = 1;
+					cup_acc_anpeq_15_flashlight_tan_f = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
+					acc_pointer_IR = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 104;
+		};
+		
+	};
+	
 	class rhs_weap_m4a1_blockII_KAC_bk;
 	class twc_m4b2_black_us_eotech: rhs_weap_m4a1_blockII_KAC_bk
 	{
@@ -209,7 +254,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
-				item="rhsusf_acc_eotech_xps3";
+				item="cup_optic_eotech553_coyote";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -227,7 +272,7 @@ class cfgWeapons
 		{
 			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
 				class compatibleItems {
-					rhsusf_acc_eotech_xps3 = 1;
+					cup_optic_eotech553_coyote = 1;
 				};
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
