@@ -24,15 +24,19 @@ class cfgWeapons
 	
 	
 	
-	class rhs_weap_m4a1;
+	class CUP_arifle_SBR_black;
 	
-	class rhs_weap_m4a1_blockII: rhs_weap_m4a1
+	class rhs_weap_m4a1_blockII_twcbase: CUP_arifle_SBR_black
 	{
 		recoil = "twc_rifle_556_long";
 		recoilProne = "twc_rifle_556_long_prone";
+		displayname = "M4A1 Block II";
+		model = "\rhsusf\addons\rhsusf_weapons3\M4BII\m4a1_blockII_KACSTOCK.p3d";
+		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo8"};
+		hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_weapons\m4\data\m4a1_actual_co.paa","\rhsusf\addons\rhsusf_weapons3\M4BII\Data\rhs_block2rail_t_co.paa","rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.paa","rhsusf\addons\rhsusf_weapons\m4\data\m4acc_co.paa","rhsusf\addons\rhsusf_weapons2\sr25\data\buttstock2_co.paa"};
 	};
 	
-	class twc_m4b2_us_eotech: rhs_weap_m4a1_blockII
+	class twc_m4b2_us_eotech: rhs_weap_m4a1_blockII_twcbase
 	{
 		class LinkedItems
 		{
@@ -69,9 +73,8 @@ class cfgWeapons
 			mass = 89.2;
 		};
 	};
-	class rhs_weap_m4a1_blockII_bk: rhs_weap_m4a1_blockII
-	{};
-	class twc_m4b2_us_shortdot: rhs_weap_m4a1_blockII_bk
+	
+	class twc_m4b2_us_shortdot: rhs_weap_m4a1_blockII_twcbase
 	{
 		class LinkedItems
 		{
@@ -297,11 +300,21 @@ class cfgWeapons
 		
 	};
 	
-	class rhs_weap_hk416d10_LMT_d;
-	class twc_hk416_d_base: rhs_weap_hk416d10_LMT_d
+	class CUP_arifle_HK416_CQB_Black;
+	class twc_hk416_d_base_c: CUP_arifle_HK416_CQB_Black
 	{
 		recoil = "twc_rifle_556_short";
 		recoilProne = "twc_rifle_556_short_prone";
+		//handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m16a4.rtm"};
+		//handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m4a1_afg.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\CUP\Weapons\CUP_Weapons_M16\data\anim\VLTOR_magpul.rtm"};
+		displayname ="HK416C";
+	};
+	class twc_hk416_d_base: twc_hk416_d_base_c
+	{
+		hiddenSelectionsMaterials[] = {"\rhsusf\addons\rhsusf_weapons2\hk416\data\wep_hk416d_2.rvmat","\rhsusf\addons\rhsusf_weapons\m4\data\magazine.rvmat","\rhsusf\addons\rhsusf_weapons2\sr25\data\buttstock2_mat.rvmat"};
+		hiddenSelectionsTextures[] = {"\rhsusf\addons\rhsusf_weapons2\hk416\data\camo\wep_hk416d_2_d_co.paa","\rhsusf\addons\rhsusf_weapons\m4\data\magazine_co.paa","\rhsusf\addons\rhsusf_weapons2\hk416\data\camo\buttstock2_d_co.paa"};
+		model = "\rhsusf\addons\rhsusf_weapons2\HK416\rhs_hk416d10_LMT.p3d";
 	};
 	class twc_hk416_mag_desert: twc_hk416_d_base
 	{
@@ -351,14 +364,14 @@ class cfgWeapons
 		};
 	};
 	
-	class twc_hk416_shortdot_desert_dark: twc_hk416_d_base
+	class twc_hk416_mag: twc_hk416_d_base_c
 	{
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
-				item="cup_optic_sb_11_4x20_pm_pip";
+				item="rhsusf_acc_g33_xps3_flip";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -376,8 +389,60 @@ class cfgWeapons
 		{
 			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
 				class compatibleItems {
-					cup_optic_sb_11_4x20_pm = 1;
-					cup_optic_sb_11_4x20_pm_pip = 1;
+					rhsusf_acc_g33_xps3 = 1;
+					rhsusf_acc_g33_xps3_flip = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					rhsusf_acc_anpeq15side = 1;
+					uk3cb_baf_llm_ir_tan = 1;
+					uk3cb_baf_llm_flashlight_tan = 1;
+					acc_pointer_IR = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 90;
+		};
+	};
+	
+	class twc_hk416_shortdot_desert_dark: twc_hk416_d_base
+	{
+		hiddenSelectionsTextures[] = {"\rhsusf\addons\rhsusf_weapons2\hk416\data\camo\wep_hk416d_1_grass_d_co.paa","\rhsusf\addons\rhsusf_weapons\m4\data\magazine_co.paa","\rhsusf\addons\rhsusf_weapons2\hk416\data\camo\buttstock2_d_co.paa"};
+		hiddenSelectionsMaterials[] = {"\rhsusf\addons\rhsusf_weapons2\hk416\data\camo\wep_hk416d_1_net.rvmat","\rhsusf\addons\rhsusf_weapons\m4\data\magazine.rvmat","\rhsusf\addons\rhsusf_weapons2\sr25\data\buttstock2_mat.rvmat"};
+		model = "\rhsusf\addons\rhsusf_weapons2\HK416\rhs_hk416d145.p3d";
+		displayname ="HK416D";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="cup_optic_sb_11_4x20_pm_tan_pip";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="rhsusf_acc_anpeq15side";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="twc_acc_rotex5_grey";
+			};
+		};
+		
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					cup_optic_sb_11_4x20_pm_tan = 1;
+					cup_optic_sb_11_4x20_pm_tan_pip = 1;
 				};
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
