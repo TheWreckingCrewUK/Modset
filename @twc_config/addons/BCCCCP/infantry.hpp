@@ -22,14 +22,14 @@
 			"CUP_V_RUS_Smersh_1",
 			"ItemCompass",
 			"ItemWatch",
-			"CUP_H_SLA_Helmet"
+			"CUP_H_SLA_Helmet_OD_worn"
 		};
 		respawnLinkedItems[]=
 		{
 			"CUP_V_RUS_Smersh_1",
 			"ItemCompass",
 			"ItemWatch",
-			"CUP_H_SLA_Helmet"
+			"CUP_H_SLA_Helmet_OD_worn"
 		};
 		Items[]=
 		{
