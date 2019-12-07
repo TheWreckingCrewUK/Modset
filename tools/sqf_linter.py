@@ -53,12 +53,13 @@ def main():
     args = parser.parse_args()
  
     for root, dirnames, filenames in os.walk('../' + args.module):
-        dirnames[:] = [d for d in dirnames if d not in ['twc_flavour']]
-            for filename in fnmatch.filter(filenames, '*.sqf'):
-                if 'fn_advancedTowingInit.sqf' not in filename:
-                    filePath = os.path.join(root, filename)
-                    if filePath not in sqf_list:
-                        sqf_list.append(filePath)
+    dirnames[:] = [d for d in dirnames if d not in ['twc_flavour']]
+
+        for filename in fnmatch.filter(filenames, '*.sqf'):
+            if 'fn_advancedTowingInit.sqf' not in filename:
+                filePath = os.path.join(root, filename)
+                if filePath not in sqf_list:
+                    sqf_list.append(filePath)
     
     for filename in sqf_list:
         warnings, errors = analyze(filename, start, sys.stdout)
