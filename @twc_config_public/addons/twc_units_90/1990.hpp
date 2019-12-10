@@ -1071,7 +1071,7 @@
 		displayName="Section Leader @British Army";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="TWC_Backpack_1990_Sectionlead_Desert";
 		class EventHandlers: EventHandlers
 		{
@@ -1151,7 +1151,7 @@
 		displayName="Rifleman";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="twc_tan_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
@@ -1180,7 +1180,7 @@
 		displayName="Rifleman AT";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="twc_tan_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
@@ -1223,7 +1223,7 @@
 		displayName="Gunner";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="TWC_Backpack_1990_Gunner_Desert";
 		linkedItems[]=
 		{
@@ -1251,7 +1251,7 @@
 		displayName="2IC";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="TWC_Backpack_1990_2IC_Desert";
 		linkedItems[]=
 		{
@@ -1334,7 +1334,7 @@
 		displayName="Medic";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		attendant = 1;
 		backpack="TWC_Backpack_1990_Medic_Desert";
 		linkedItems[]=
@@ -1907,7 +1907,7 @@
 		vehicleClass="Men_1990D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="TWC_Backpack_1990_armourcrew_webbing_d";
 		linkedItems[]=
 		{
@@ -2046,7 +2046,7 @@
 		backpack="";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		linkedItems[]=
 		{
         "twc_V_HarnessO_tan",
@@ -2167,7 +2167,7 @@
 		vehicleClass="Men_1990D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="TWC_Backpack_1990_spotter";
 		linkedItems[]=
 		{
