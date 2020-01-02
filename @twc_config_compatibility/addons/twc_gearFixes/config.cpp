@@ -2182,7 +2182,7 @@ class CfgVehicles {
 	};
 	
 	
-	class UK3CB_BAF_Jackal_Base_D : Car_F {
+	class UK3CB_BAF_Jackal_Base : Car_F {
 		class turrets: turrets
 		{
 			class mainturret;
@@ -2226,7 +2226,7 @@ class CfgVehicles {
        };
 		
 	};
-	class UK3CB_BAF_Coyote_L111A1_Base_D: UK3CB_BAF_Jackal_Base_D
+	class UK3CB_BAF_Coyote_L111A1_Base: UK3CB_BAF_Jackal_Base
 	{
 		class Turrets: Turrets
 		{
@@ -2250,7 +2250,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class UK3CB_BAF_Jackal2_L111A1_Base_D: UK3CB_BAF_Coyote_L111A1_Base_D {
+	class UK3CB_BAF_Jackal2_L111A1_Base_D: UK3CB_BAF_Coyote_L111A1_Base {
 		
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
@@ -2260,14 +2260,14 @@ class CfgVehicles {
 	};
 	
 	
-	class UK3CB_BAF_Coyote_Passenger_L111A1_D: UK3CB_BAF_Coyote_L111A1_Base_D {
+	class UK3CB_BAF_Coyote_Passenger_L111A1_D: UK3CB_BAF_Coyote_L111A1_Base {
 		
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
 		turnCoef = 1.8;
 	};
-	class UK3CB_BAF_Coyote_L134A1_Base_D;
-	class UK3CB_BAF_Jackal2_L134A1_Base_D: UK3CB_BAF_Coyote_L134A1_Base_D {
+	class UK3CB_BAF_Coyote_L134A1_Base;
+	class UK3CB_BAF_Jackal2_L134A1_Base_D: UK3CB_BAF_Coyote_L134A1_Base {
 		
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
@@ -2276,7 +2276,7 @@ class CfgVehicles {
 		ace_cargo_canLoad = 1;
 	};
 		
-	class UK3CB_BAF_Coyote_Passenger_L134A1_D: UK3CB_BAF_Coyote_L134A1_Base_D {
+	class UK3CB_BAF_Coyote_Passenger_L134A1_D: UK3CB_BAF_Coyote_L134A1_Base {
 		
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
