@@ -1375,7 +1375,6 @@ class cfgWeapons
 	class UK3CB_BAF_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS
 	{
 		scope = 1;
-		author="FakeMatty";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -1389,7 +1388,6 @@ class cfgWeapons
 				item="UK3CB_BAF_LLM_IR_Black";
 			};
 		};
-		hiddenSelectionsTextures[] = {"\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\kio_l85a2_base_co.paa","\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\kio_l85a2_handguard_co.paa","","","\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\emag_co.paa","\uk3cb_baf_weapons\addons\uk3cb_baf_weapons_smallarms\data\dd_ris_co.paa"};
 		
 		class WeaponSlotsInfo
 		{
@@ -1410,6 +1408,27 @@ class cfgWeapons
 			allowedslots[] = {901};
 			mass = 84;
 		};
+		
+		
+	};
+	class UK3CB_BAF_L85A3;
+	class UK3CB_BAF_L85A3_RIS_ELCAN3D: UK3CB_BAF_L85A3
+	{
+		scope = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85A3";
+				item="CUP_optic_Elcan_reflex_Coyote_pip";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="asdg_FrontSideRail_UK3CB_BAF_L85A3";
+				item="UK3CB_BAF_LLM_IR_Black";
+			};
+		};
+		
 		
 		
 	};
