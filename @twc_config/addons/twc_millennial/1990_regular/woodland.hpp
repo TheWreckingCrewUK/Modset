@@ -122,11 +122,10 @@ class TWC_Infantry_1990_Regular_Woodland_SectionCommander: TWC_Infantry_1990_Reg
 	};
 	
 	nightItems[] = {
-		"B_IR_Grenade",
-		"ACE_HandFlare_White",
-		"ACE_HandFlare_White",
-		"Chemlight_green",
-		"Chemlight_green"
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_MX991",
+		"B_IR_Grenade"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_2iC: TWC_Infantry_1990_Regular_Woodland_SectionCommander
@@ -180,11 +179,10 @@ class TWC_Infantry_1990_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 	};
 	
 	nightItems[] = {
-		"B_IR_Grenade",
-		"ACE_HandFlare_White",
-		"ACE_HandFlare_White",
-		"Chemlight_green",
-		"Chemlight_green"
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_MX991",
+		"B_IR_Grenade"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_1990_Regular_Woodland_Platoon_Commander
@@ -631,11 +629,10 @@ class TWC_Infantry_1990_Regular_Woodland_FAC: TWC_Infantry_1990_Regular_Woodland
 	};
 	
 	nightItems[] = {
-		"B_IR_Grenade",
-		"ACE_HandFlare_White",
-		"ACE_HandFlare_White",
-		"Chemlight_green",
-		"Chemlight_green"
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_MX991",
+		"B_IR_Grenade"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millennial_Base
@@ -654,11 +651,11 @@ class TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millenni
 	};
 	respawnLinkedItems[] =
 	{
-			"UK3CB_BAF_V_Pilot_DPMW",
-			"UK3CB_BAF_H_PilotHelmetHeli_A",
-			"ItemCompass",
-			"itemMap",
-			"ItemWatch"
+		"UK3CB_BAF_V_Pilot_DPMW",
+		"UK3CB_BAF_H_PilotHelmetHeli_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 	weapons[] =
 	{
