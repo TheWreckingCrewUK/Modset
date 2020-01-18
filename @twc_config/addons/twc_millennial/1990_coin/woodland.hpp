@@ -41,6 +41,18 @@ class TWC_Infantry_1990_COIN_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_AT
 		"Throw",
 		"Put"
 	};
+	magazines[] =
+	{
+		MAG_7("UK3CB_BAF_556_30Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SmokeShell"
+	};
+	respawnmagazines[] =
+	{
+		MAG_7("UK3CB_BAF_556_30Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SmokeShell"
+	};
 };
 class TWC_Infantry_1990_COIN_Woodland_Gunner: TWC_Infantry_1990_Regular_Woodland_Gunner
 {
