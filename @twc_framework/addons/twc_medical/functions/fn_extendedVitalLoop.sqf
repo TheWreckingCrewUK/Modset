@@ -18,8 +18,8 @@ if (isDedicated || !hasInterface) exitWith {};
 
 if (alive _unit) then {
 	//_debugMode = missionNameSpace getVariable ["twc_debugEnabled", false];
-	_bloodVolume = (_unit getVariable ["ace_medical_bloodVolume", 100]);
-
+	_bloodVolumevar = (_unit getVariable ["ace_medical_bloodVolume", 100]);
+	_bloodVolume = linearConversion [0, 6, _bloodVolumevar, 0, 100, true];
 	// makes time to death dynamic based on current blood level, will restore with saline
 	_defaultMaxTime = missionNamespace getVariable ["twc_medical_defaultMaxTime", (missionNamespace getVariable ["ace_medical_maxReviveTime", 180])];
 	_adjustedMaxTime = _defaultMaxTime - ((_defaultMaxTime / 200) * (100 - _bloodVolume));

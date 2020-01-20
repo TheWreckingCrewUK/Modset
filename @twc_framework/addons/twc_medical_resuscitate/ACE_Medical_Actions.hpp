@@ -12,7 +12,7 @@ class ACE_Medical_Actions {
 		class Defib: CPR {
 			displayName = "Defibrillate";
 			displayNameProgress = "Defibrillating...";
-			treatmentLocations[] = {"MedicalVehicle"};
+			treatmentLocations[] = {"MedicalVehicle", "MedicalFacility"};
 			allowedSelections[] = {"body"};
 			condition = "[(_this select 0), (_this select 1)] call twc_medical_resuscitate_fnc_canDefib";
 			allowSelfTreatment = 0;

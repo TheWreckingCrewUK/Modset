@@ -16,7 +16,8 @@ if (_unCon) then {
 		[twc_medical_fnc_extendedUnconLoop, [_unit], 1] call CBA_fnc_waitAndExecute;
 	};
 	
-	_bloodVolume = (_unit getVariable ["ace_medical_bloodVolume", 100]);
+	_bloodVolumevar = (_unit getVariable ["ace_medical_bloodVolume", 100]);
+	_bloodVolume = linearConversion [0, 6, _bloodVolumevar, 0, 100, true];
 	_bloodPressure = [_unit] call ACE_medical_fnc_getBloodPressure;
 	_heartRate = (_unit getVariable ["ace_medical_heartRate", 80]);
 	_inReviveState = (_unit getVariable ["ace_medical_inReviveState", false]);

@@ -1,5 +1,5 @@
 ["ace_unconscious", {_this call twc_medical_fnc_handleUncon }] call CBA_fnc_addEventHandler;
-["twc_medical_evh_advancedSetDamage", {_this call ace_medical_fnc_handleDamage_advancedSetDamage }] call CBA_fnc_addEventHandler;
+
 [] call twc_medical_fnc_bloodlustInit;
 
 [[{ ((_this select 0) getVariable ["TWC_Medical_forcedUncon", false]) }]] call ace_medical_fnc_addUnconsciousCondition;
