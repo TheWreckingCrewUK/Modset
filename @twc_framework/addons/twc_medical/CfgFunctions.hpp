@@ -10,12 +10,22 @@ class CfgFunctions {
 		};
 	};
 	
-	class ace_medical_menu {
-		tag = "ace_medical_menu";
+	class ace_medical_treatment {
+		tag = "ace_medical_treatment";
 		
-		class ace_medical_menu {
-			class updateUIInfo {
-				file = "twc_medical\functions\fn_updateUIInfo.sqf";
+		class ace_medical_treatment {
+			class diagnose {
+				file = "twc_medical\functions\fn_diagnose.sqf";
+			};
+		};
+	};
+	
+	class ace_medical_gui {
+		tag = "ace_medical_gui";
+		
+		class ace_medical_gui {
+			class updateinjurylist {
+				file = "twc_medical\functions\fn_updateinjurylist.sqf";
 			};
 		};
 	};
@@ -34,6 +44,8 @@ class CfgFunctions {
 			class getBloodVolume {};
 			class extendedVitalLoop {};
 			class logToRPT {};
+			class painkillers {};
+			class painkillerslocal {};
 			class fullyBandageUnit {};
 			class fullHealWithoutLog {};
 			class removeMedicalItem {};

@@ -4,7 +4,7 @@ params ["_target"];
 // Full heal them, baby!
 _target setVariable ["ACE_Medical_pain", 0, true];
 _target setVariable ["ACE_Medical_morphine", 0, true];
-_target setVariable ["ACE_Medical_bloodVolume", 100, true];
+_target setVariable ["ACE_Medical_bloodVolume", 6, true];
 
 // tourniquets
 _target setVariable ["ACE_Medical_tourniquets", [0,0,0,0,0,0], true];

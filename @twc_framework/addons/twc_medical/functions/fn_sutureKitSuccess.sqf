@@ -22,10 +22,17 @@ if (!_isBandagedWound) then { _openWoundData set [3, 0]; };
 _openWounds deleteAt (_openWounds find _openWoundData);
 _target setVariable ["ACE_Medical_openWounds", _openWounds, true];
 
+_bandagedWounds deleteAt (_bandagedWounds find _bandagedWoundData);
+_target setVariable ["ACE_Medical_bandagedWounds", _bandagedWounds, true];
+
+/*
+
 if (!_isBandagedWound) then {
 	_bandagedWounds deleteAt (_bandagedWounds find _bandagedWoundData);
 	_target setVariable ["ACE_Medical_bandagedWounds", _bandagedWounds, true];
 };
+
+*/
 
 // Tally of unbandaged wounds to each body part.
 private _headWounds = 0;
@@ -74,10 +81,10 @@ private _rightLegWounds = 0;
 			_rightLegWounds = _rightLegWounds + (_numOpenWounds * _bloodLoss);
 		};
 	};
-} forEach _openWounds;
+} forEach _openWounds + _bandagedWounds;
 
 // ["head", "body", "hand_l", "hand_r", "leg_l", "leg_r"]
-private _bodyStatus = _target getVariable ["ace_medical_bodyPartStatus", [0,0,0,0,0,0]];
+private _bodyStatus = _target getVariable ["ace_medical_bodyPartDamage", [0,0,0,0,0,0]];
 
 // Any body part that has no wounds is healed to full health
 if (_headWounds == 0) then {
@@ -104,14 +111,9 @@ if (_rightLegWounds == 0) then {
 	_bodyStatus set [5, 0];
 };
 
-_target setVariable ["ace_medical_bodyPartStatus", _bodyStatus, true];
+_target setVariable ["ace_medical_bodyPartDamage", _bodyStatus, true];
 
-if (local _target) then {
-	["twc_medical_evh_advancedSetDamage", _target] call CBA_fnc_localEvent;
-} else {
-	// else remote
-	["twc_medical_evh_advancedSetDamage", _target, _target] call CBA_fnc_targetEvent;
-};
+
 
 [_caller, "TWC_Item_Medical_SutureKit_1"] call twc_medical_fnc_removeMedicalItem;
 [_target, "activity", localize "STR_TWC_SUTURE_EXECUTE", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;

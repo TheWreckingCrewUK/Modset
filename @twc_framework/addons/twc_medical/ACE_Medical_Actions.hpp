@@ -1,19 +1,28 @@
-class ACE_Medical_Actions {
-	class Advanced {
-		class Bandage;
-		class FieldDressing: Bandage {
+class ace_medical_treatment_actions {
+	//class Advanced {
+		class BasicBandage;
+		class FieldDressing: BasicBandage {
 			treatmentTime = 9;
 		};
+		class Morphine;
+		class Painkillers: Morphine
+		{
+			displayName = "Take Painkillers";
+			displayNameProgress = "Taking Painkillers";
+			condition = "(_patient == _medic)";
+			allowedSelections[] = {"head"};
+			callbackSuccess = "twc_medical_fnc_painkillers";
+		};
 		
-		class QuikClot: FieldDressing {
+		class QuikClot: BasicBandage {
 			treatmentTime = 3;
 		};
 		
-		class PackingBandage: FieldDressing {
+		class PackingBandage: BasicBandage {
 			treatmentTime = 6;
 		};
 		
-		class ElasticBandage: FieldDressing {
+		class ElasticBandage: BasicBandage {
 			treatmentTime = 12;
 		};
 		
@@ -50,8 +59,8 @@ class ACE_Medical_Actions {
 
 			// custom handler for items check, to ignore shared gear
 			items[] = {};
-			treatmentLocations[] = {"All"};
-			allowedSelections[] = {"All"};
+			treatmentLocations = 0;
+			//allowedSelections[] = {"All"};
 			allowSelfTreatment = 0;
 			requiredMedic = 1;
 			treatmentTime = "twc_medical_fnc_sutureKitTime";
@@ -62,9 +71,13 @@ class ACE_Medical_Actions {
 			animationCaller = "AinvPknlMstpSnonWnonDnon_medic1";
 
 			litter[] = {
-				{"All", "", {"ACE_MedicalLitter_gloves"}},
-				{"All", "", {{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}}
-			};
+            {"ACE_MedicalLitter_gloves"},
+            {"ACE_MedicalLitter_clean"},
+            {
+                {"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"},
+                {"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}
+            }
+        };
 		};
-	};
+	//};
 };

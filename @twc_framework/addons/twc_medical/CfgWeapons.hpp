@@ -33,6 +33,14 @@ class CfgWeapons {
 		//descriptionUse = "A medium bandage with a medium chance of coming loose.";
 	};
 	
+	class ACE_morphine: ACE_ItemCore
+	{};
+	
+	class ACE_Painkillers: ACE_morphine
+	{
+		displayName = "painkillers";
+	};
+	
 	class ACE_packingBandage: ACE_ItemCore {
 		displayName = "Packing Bandage";
 		//descriptionShort = "A decent bandage with a low chance of coming loose.";
