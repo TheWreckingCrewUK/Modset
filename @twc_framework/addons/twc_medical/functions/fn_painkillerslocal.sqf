@@ -17,8 +17,6 @@
  * Public: No
  */
 
-systemchat "painkillers in";
-
 
 params ["_patient", "_bodyPart", "_classname"];
 

@@ -18,7 +18,7 @@ if (_unCon) then {
 	
 	_bloodVolumevar = (_unit getVariable ["ace_medical_bloodVolume", 100]);
 	_bloodVolume = linearConversion [0, 6, _bloodVolumevar, 0, 100, true];
-	_bloodPressure = [_unit] call ACE_medical_fnc_getBloodPressure;
+	_bloodPressure = (_unit getVariable ["ace_medical_bloodpressure", [80,60]]);
 	_heartRate = (_unit getVariable ["ace_medical_heartRate", 80]);
 	_inReviveState = (_unit getVariable ["ace_medical_inReviveState", false]);
 	
@@ -44,17 +44,17 @@ if (_unCon) then {
 	// ACE Medical is less than 30, we need to catch it ahead of that.
 	if (_bloodVolume <= 37) exitWith {
 		["TWC_Unit_Perished", [_unit, "bleed_out"]] call CBA_fnc_globalEvent;
-		[_unit, true, false] call ace_medical_fnc_setDead;
+		[_unit, true, false] call ace_medical_status_fnc_setDead;
 		_continue = false;
 	};
 
 	if (_bloodPressureH < 25 && _bloodPressureL < 25) exitWith {
 		//["TWC_Unit_Perished", [_unit, "clinical_death"]] call CBA_fnc_globalEvent;
-		[_unit, true, false] call ace_medical_fnc_setDead;
+		[_unit, true, false] call ace_medical_status_fnc_setDead;
 		_continue = false;
 	};
 
-	if (!([_unit] call ace_medical_fnc_getUnconsciousCondition)) then {
+	if (!(_unit getVariable ["ace_isunconscious", false])) then {
 		_unit setVariable ["ACE_isUnconscious", false, true];
 		_continue = false;
 	};
