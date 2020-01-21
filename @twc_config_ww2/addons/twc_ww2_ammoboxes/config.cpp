@@ -138,12 +138,13 @@ class CfgVehicles {
 		editorSubcategory = "TWC_WW2_Crates";
 		
 		class TransportItems {
-			item_nc(ACE_fieldDressing, 15);
+			item_nc(ACE_fieldDressing, 30);
 			item_nc(ACE_elasticBandage, 15);
 			item_nc(ACE_quikclot, 15);
-			item_nc(ACE_packingBandage, 15);
+			item_nc(ACE_Painkillers, 15);
 			
-			item_nc(ACE_morphine, 6);
+			item_nc(ACE_splint, 6);
+			item_nc(TWC_Syrette, 6);
 			item_nc(ACE_epinephrine, 6);
 			item_nc(ACE_tourniquet, 4);
 		};
@@ -233,12 +234,13 @@ class CfgVehicles {
 		editorSubcategory = "TWC_WW2_Crates";
 		
 		class TransportItems {
-			item_nc(ACE_fieldDressing, 15);
+			item_nc(ACE_fieldDressing, 30);
 			item_nc(ACE_elasticBandage, 15);
 			item_nc(ACE_quikclot, 15);
-			item_nc(ACE_packingBandage, 15);
+			item_nc(ACE_Painkillers, 15);
 			
-			item_nc(ACE_morphine, 6);
+			item_nc(ACE_splint, 6);
+			item_nc(TWC_Syrette, 6);
 			item_nc(ACE_epinephrine, 6);
 			item_nc(ACE_tourniquet, 4);
 		};
@@ -284,12 +286,13 @@ class CfgVehicles {
 		editorSubcategory = "TWC_WW2_Crates";
 		
 		class TransportItems {
-			item_nc(ACE_fieldDressing, 15);
+			item_nc(ACE_fieldDressing, 30);
 			item_nc(ACE_elasticBandage, 15);
 			item_nc(ACE_quikclot, 15);
-			item_nc(ACE_packingBandage, 15);
+			item_nc(ACE_Painkillers, 15);
 			
-			item_nc(ACE_morphine, 6);
+			item_nc(ACE_splint, 6);
+			item_nc(TWC_Syrette, 6);
 			item_nc(ACE_epinephrine, 6);
 			item_nc(ACE_tourniquet, 4);
 		};

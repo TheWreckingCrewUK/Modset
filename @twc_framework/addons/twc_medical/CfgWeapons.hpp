@@ -38,8 +38,10 @@ class CfgWeapons {
 	
 	class ACE_Painkillers: ACE_morphine
 	{
-		displayName = "painkillers";
+		displayName = "Painkillers";
 		picture = "\twc_medical\UI\clipartpill.paa";
+		descriptionShort = "Used to mitigate light to moderate pain over an extended period.";
+		descriptionUse = "Used to mitigate moderate pain over an extended period.";
 	};
 	
 	class ACE_packingBandage: ACE_ItemCore {
