@@ -29,7 +29,7 @@ if (isPlayer _unit) exitWith {
 		[twc_medical_fnc_extendedUnconLoop, [_unit], _unconTimer] call CBA_fnc_waitAndExecute;
 	};
 };
-
+/*
 // AI from this point on
 if (_isUncon) then {
 	_unconTimer = ceil(random 5) + 1;
@@ -38,3 +38,4 @@ if (_isUncon) then {
 } else {
 	_unit enableAI "ANIM";
 };
+*/
