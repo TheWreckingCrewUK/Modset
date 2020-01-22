@@ -4,19 +4,14 @@ class ace_medical_treatment_actions {
 		class FieldDressing: BasicBandage {
 			treatmentTime = 9;
 		};
-		
-		class Morphine: FieldDressing {
-			items[] = {"ACE_morphine", "TWC_Syrette"};
-		};
+		class Morphine;
 		class Painkillers: Morphine
 		{
 			displayName = "Take Painkillers";
-			displayNameProgress = "Taking Painkillers . . .";
+			displayNameProgress = "Taking Painkillers";
 			condition = "(_patient == _medic)";
 			allowedSelections[] = {"head"};
 			callbackSuccess = "twc_medical_fnc_painkillers";
-			consumeItem = 1;
-			items[] = {"ACE_Painkillers"};
 		};
 		
 		class QuikClot: BasicBandage {
@@ -24,13 +19,7 @@ class ace_medical_treatment_actions {
 		};
 		
 		class PackingBandage: BasicBandage {
-			treatmentTime = 10;
-			consumeItem = 1;
-			items[] = {"ACE_packingBandage", "ACE_elasticBandage", "ACE_fieldDressing"};
-		//	callbackSuccess = "twc_medical_fnc_packwound";
-		//	callbackSuccess = "[_medic, _patient, _bodyPart, 'ACE_packingBandage'] call ace_medical_treatment_fnc_bandage";
-			displayName = "Pack Wound";
-			displayNameProgress = "Packing the wound . . .";
+			treatmentTime = 6;
 		};
 		
 		class ElasticBandage: BasicBandage {
@@ -42,7 +31,7 @@ class ace_medical_treatment_actions {
 			displayName = "Medical to RPT (DEBUG)";
 			displayNameProgress = "Logging Medical State";
 			callbackSuccess = "twc_medical_fnc_logToRPT";
-			//condition = "false"; // comment out to re-enable
+			condition = "false"; // comment out to re-enable
 		};
 		
 		class BloodIV: FieldDressing{};

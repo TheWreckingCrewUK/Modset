@@ -39,7 +39,6 @@ class CfgWeapons {
 	class ACE_Painkillers: ACE_morphine
 	{
 		displayName = "painkillers";
-		picture = "\twc_medical\UI\clipartpill.paa";
 	};
 	
 	class ACE_packingBandage: ACE_ItemCore {
