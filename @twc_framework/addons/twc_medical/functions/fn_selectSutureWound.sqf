@@ -1,15 +1,6 @@
 params ["_target", "_selectionName"];
 
-_part = -1;
-
-_part = switch _selectionName do {
-	case "head": {0};
-	case "body": {1};
-	case "leftarm": {2};
-	case "rightarm": {3};
-	case "leftleg": {4};
-	case "rightleg": {5};
-};
+_part = [_selectionName] call ace_medical_fnc_selectionNameToNumber;
 if (_part < 0) exitWith { false; };
 
 _openWounds = _target getVariable ['ACE_Medical_openWounds', []];
@@ -24,7 +15,7 @@ _bestOpenWound = [];
 // always prioritise open wounds first
 if ((count _openWounds) > 0) then {
 	{
-		_x params ["_classID", "_partX", "_impact", "_bloodlossRate"];
+		_x params ["", "_classID", "_partX", "_impact", "_bloodlossRate"];
 
 		if (_partX == _part) then {
 			if (_impact != 0 && _bloodlossRate != 0) then {
@@ -45,7 +36,7 @@ _bandagedWoundBLTopRate = 0;
 _bestBandagedWound = [];
 
 {
-	_x params ["_classID", "_partX", "_impact", "_bloodlossRate"];
+	_x params ["", "_classID", "_partX", "_impact", "_bloodlossRate"];
 	
 	if (_partX == _part) then {
 		if (_impact != 0 && _bloodlossRate != 0) then {
