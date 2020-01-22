@@ -147,12 +147,11 @@ class TWC_Backpack_WW2_UK_Early_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing,30);
-		ADD_ITEM(ACE_splint,6);
-		ADD_ITEM(TWC_Syrette,10);
+		ADD_ITEM(ACE_fieldDressing,20);
+		ADD_ITEM(ACE_morphine,10);
 		ADD_ITEM(ACE_elasticBandage,20);
 		ADD_ITEM(ACE_quikclot,20);
-		ADD_ITEM(ACE_Painkillers,20);
+		ADD_ITEM(ACE_packingBandage,20);
 		ADD_ITEM(ACE_adenosine,4);
 		ADD_ITEM(ACE_atropine,4);
 		ADD_ITEM(ACE_epinephrine,10);
@@ -219,12 +218,11 @@ class TWC_Backpack_WW2_UK_Early_Dismounted_Platoon_Medic: B_LIB_SOV_RA_MedicalBa
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing,30);
-		ADD_ITEM(ACE_splint,6);
-		ADD_ITEM(TWC_Syrette,10);
+		ADD_ITEM(ACE_fieldDressing,20);
+		ADD_ITEM(ACE_morphine,10);
 		ADD_ITEM(ACE_elasticBandage,20);
 		ADD_ITEM(ACE_quikclot,20);
-		ADD_ITEM(ACE_Painkillers,20);
+		ADD_ITEM(ACE_packingBandage,20);
 		ADD_ITEM(ACE_adenosine,4);
 		ADD_ITEM(ACE_atropine,4);
 		ADD_ITEM(ACE_epinephrine,10);
