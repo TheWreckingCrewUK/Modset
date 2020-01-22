@@ -28,7 +28,6 @@ _gotEpi = _target getVariable ["ace_medical_epinephrine_insystem", 0];
 _probability = _probability + (5 * _gotEpi);
 
 //reduces probability based on how much blood thinners there is in their system (morphine, atropine, adenosine)
-//this still works in the rewrite
 _resistance = _target getVariable ["ace_medical_peripheralResistance", 100];
 _probability = _probability - (5 * (1 - (_resistance / 100)));
 

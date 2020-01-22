@@ -6,7 +6,7 @@ private _selectionN = ace_medical_menu_selectedBodyPart;
 if (_selectionN < 0 || {_selectionN > 5}) exitWith {};
 
 private _genericMessages = [];
-private _partText = ["STR_ACE_Medical_GUI_Head", "STR_ACE_Medical_GUI_Torso", "STR_ACE_medical_GUI_LeftArm", "STR_ACE_medical_GUI_RightArm", "STR_ACE_medical_GUI_LeftLeg", "STR_ACE_medical_GUI_RightLeg"] select _selectionN;
+private _partText = ["STR_ACE_medical_Head", "STR_ACE_medical_Torso", "STR_ACE_medical_LeftArm", "STR_ACE_medical_RightArm", "STR_ACE_medical_LeftLeg", "STR_ACE_medical_RightLeg"] select _selectionN;
 _genericMessages pushBack [localize _partText, [1, 1, 1, 1]];
 
 if (_target getVariable ["ace_medical_isBleeding", false]) then {

@@ -28,11 +28,6 @@ class CfgVehicles {
 		};
 	}; */
 	
-	class ACE_morphineItem;
-	class ace_painkillersitem: ACE_morphineItem
-	{
-		displayName = "painkillers";
-	};
 	class Logic;
 	class Module_Base: Logic {
 		class AttributesBase;
