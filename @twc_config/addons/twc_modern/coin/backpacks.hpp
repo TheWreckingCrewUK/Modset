@@ -56,6 +56,7 @@ class TWC_Backpack_Modern_COIN_Woodland_Platoon_Sergeant: UK3CB_BAF_B_Bergen_MTP
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 480;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
@@ -264,6 +265,7 @@ class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Platoon_Sergeant: UK3CB_BAF_B
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 640;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
