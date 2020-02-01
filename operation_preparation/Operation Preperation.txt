@@ -24,10 +24,9 @@
 	6.1 One with owner #adminLogged.
 	6.2 One with owner 76561198070630639 (jayman).
 	6.3 One with owner 76561198030665694 (Hobbs).
-	6.4 One with owner 76561198005456546 (Bosenator).
-	6.5 One with owner 76561198007009266 (TooTall).
-	6.6 One with owner 76561198018609662 (Sarge).
-	6.7 One with owner 76561198072029517 (Mallas).
+	6.4 One with owner 76561198007009266 (TooTall).
+	6.5 One with owner 76561198018609662 (Sarge).
+	
 	If anyone of these is playing a command role higher than 2iC, do NOT give them a module. 
 	Recommended is saving this array of modules in a composition in game so that you only have to place down the composition and delete the ones not needed.
 
