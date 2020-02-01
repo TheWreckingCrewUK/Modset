@@ -1,5 +1,5 @@
 class UK3CB_BAF_L85A2_RIS;
-class UK3CB_BAF_L110A2;
+class UK3CB_BAF_L110A2RIS;
 class UK3CB_BAF_L129A1_Grippod;
 class UK3CB_BAF_L85A2_UGL;
 
@@ -16,9 +16,14 @@ class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 			slot = "asdg_FrontSideRail_L85";
 			item = "UK3CB_BAF_LLM_Flashlight_Black";
 		};
+		class LinkedItemsUnder
+		{
+			item = "UK3CB_underbarrel_acc_grippod";
+			slot = "UK3CB_underbarrel_L85_rifle_slot";
+		};
 	};
 };
-class TWC_Weapon_L110A2_ELCAN3D: UK3CB_BAF_L110A2 {
+class TWC_Weapon_L110A2_ELCAN3D: UK3CB_BAF_L110A2RIS {
 	scope = 1;
 	class LinkedItems {
 		class LinkedItemsOptic {
