@@ -1978,7 +1978,7 @@ class TWC_Vehicle_Modern_Husky_HMG_Woodland: UK3CB_BAF_Husky_Passenger_HMG_Green
 	side = 1;
 	ADD_FACTION;
 	
-	displayname = "Husky - HMG(Woodland)";
+	displayname = "Husky - HMG (Woodland)";
 	editorSubcategory = "TWC_ForceType_LightMobility";
 
 	class TransportItems {
