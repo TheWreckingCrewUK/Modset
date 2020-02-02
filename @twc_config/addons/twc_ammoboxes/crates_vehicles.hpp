@@ -86,6 +86,7 @@ class TWC_AmmoBox_Vehicle_Generic_Loadable: TWC_AmmoBox_Vehicle {
 	scopeCurator = 2;
 	displayName = "Generic Vehicle Resupply (Loadable)";
 	model = "\A3\Supplies_F_Exp\Ammoboxes\Equipment_Box_F.p3d";
+	hiddenSelections[] = {"camo","camo_signs"};
 	hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\equipment_box_blufor_co.paa","\A3\Supplies_F_Exp\Ammoboxes\Data\equipment_box_blufor_ca.paa"};
 
 	ace_rearm_defaultSupply = 600;
