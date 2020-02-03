@@ -873,7 +873,7 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class CAManBase {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {addCamShake [2.8, 0.4, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_amount = 2.8; if ((_this select 1) in (missionnamespace getvariable ['twc_subguns', ['TWC_CUP_smg_MP5A5_flashlight_clean', 'TWC_CUP_smg_MP5SD6_clean', 'LIB_Sten_Mk5', 'LIB_Sten_Mk2']])) then {_amount = 0.8;};addCamShake [_amount, 0.4, 15]};";
 		};
 	};
 	class Helicopter_Base_F {
