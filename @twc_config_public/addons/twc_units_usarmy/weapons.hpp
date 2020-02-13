@@ -985,7 +985,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15side_bk";
+				item="cup_acc_anpeq_2_grey";
 			};
 			class LinkedItemsUnderBarrelSlot
 			{
@@ -1003,7 +1003,7 @@ class cfgWeapons
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
-					rhsusf_acc_anpeq15side_bk = 1;
+					cup_acc_anpeq_2_grey = 1;
 				};
 			};
 			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {

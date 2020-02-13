@@ -301,6 +301,14 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 				count = 1;
 			};
 		};
+		class TransportMagazines
+		{
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 2;
+			};
+		};
 	};
 
 	class TWC_Backpack_1990_armourcrew_webbing: twc_oli_belt_2
