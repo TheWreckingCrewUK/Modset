@@ -298,32 +298,6 @@ class CfgVehicles {
 		displayName = "Toggle Unit ACRE Spectator";
 	};
 
-	class twc_modulegunwalkzeus: Module_F {
-		author="[TWC] Hobbs";
-		category="twc_zeus";
-		scope=1;
-		scopeCurator = 2;
-		functionPriority=1;
-		isGlobal=1;
-		isTriggerActivated=0;
-		function="twc_fnc_gunwalkzeus";
-		curatorCanAttach = 1;
-		displayName = "Activate AI Heavy Gun System";
-	};
-
-	class twc_modulemortarwalkzeus: Module_F {
-		author="[TWC] Hobbs";
-		category="twc_zeus";
-		scope=1;
-		scopeCurator = 2;
-		functionPriority=1;
-		isGlobal=1;
-		isTriggerActivated=0;
-		function="twc_fnc_mortarwalkzeus";
-		curatorCanAttach = 1;
-		displayName = "Activate AI Artillery System";
-	};
-
 	class TWC_Module_CreateTask: Module_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
