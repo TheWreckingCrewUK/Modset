@@ -2,15 +2,15 @@ class ACE_Medical_Actions {
 	class Advanced {
 		class Bandage;
 		class FieldDressing: Bandage {
-			treatmentTime = 11;
+			treatmentTime = 10;
 		};
 		
 		class QuikClot: FieldDressing {
-			treatmentTime = 5;
+			treatmentTime = 4;
 		};
 		
 		class PackingBandage: FieldDressing {
-			treatmentTime = 11;
+			treatmentTime = 13;
 			items[] = {{"ACE_packingBandage", "ACE_fieldDressing", "ACE_elasticBandage"}};
 			displayName = "Pack Wound";
 			displayNameProgress  = "Packing Wound...";
@@ -18,7 +18,7 @@ class ACE_Medical_Actions {
 		};
 		
 		class ElasticBandage: FieldDressing {
-			treatmentTime = 15;
+			treatmentTime = 20;
 		};
 		
 		class CheckPulse;
@@ -28,6 +28,7 @@ class ACE_Medical_Actions {
 			callbackSuccess = "twc_medical_fnc_logToRPT";
 			condition = "false"; // comment out to re-enable
 		};
+		
 		
 		class BloodIV: FieldDressing{};
 		
