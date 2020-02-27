@@ -82,7 +82,7 @@ class CfgWeapons {
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
-			fired = "_mult = 1; if (isplayer (_this select 0)) then {_mult = 0.3};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 16) - 8) * _mult), (velocity _bullet select 1) + (((random 16) - 8) * _mult), 	(velocity _bullet select 2) + (((random 8) - 3) * _mult)];";
+			fired = "_mult = 1; if (isplayer (_this select 0)) then {_mult = 0.2};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 16) - 8) * _mult), (velocity _bullet select 1) + (((random 16) - 8) * _mult), 	(velocity _bullet select 2) + (((random 8) - 3) * _mult)];";
 		};
 		scope=2;
 		aiDispersionCoefX=1.03;
@@ -884,7 +884,7 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class CAManBase {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_amount = 2.8; if ((_this select 1) in (missionnamespace getvariable ['twc_subguns', ['TWC_CUP_smg_MP5A5_flashlight_clean', 'TWC_CUP_smg_MP5SD6_clean', 'LIB_Sten_Mk5', 'LIB_Sten_Mk2']])) then {_amount = 0.8;};addCamShake [_amount, 0.4, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_amount = 2.8; if ((_this select 1) in (missionnamespace getvariable ['twc_subguns', ['TWC_CUP_smg_MP5A5_flashlight_clean', 'TWC_CUP_smg_MP5SD6_clean', 'fow_w_sten_mk5', 'LIB_Sten_Mk5', 'LIB_Sten_Mk2', 'SP_smg_sterling']])) then {_amount = 0.8;};addCamShake [_amount, 0.4, 15]};";
 		};
 	};
 	class Helicopter_Base_F {
