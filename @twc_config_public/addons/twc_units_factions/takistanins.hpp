@@ -1029,7 +1029,7 @@
 	class Tak_twc_ins_Men_a2: Tak_twc_ins_Men_Base
 	{
 		scope=2;
-		displayName="Assaulter (SMG)";
+		displayName="Rifleman (SKS)";
 		uniformClass="CUP_O_TKI_Khet_Partug_06";
 		linkedItems[]=
 		{
@@ -1041,36 +1041,37 @@
 			"CUP_H_TKI_Pakol_2_02",
 			"ItemWatch"
 		};
-						weapons[]=
+		weapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_savz61"
+		"CUP_SKS"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_savz61"
+		"CUP_SKS"
 		};
 		magazines[]=
 		{
-		"rhsgref_20rnd_765x17_vz61",
-		"rhsgref_20rnd_765x17_vz61",
-		"rhsgref_20rnd_765x17_vz61",
-		"rhsgref_20rnd_765x17_vz61",
-		"rhsgref_20rnd_765x17_vz61",
-		"SmokeShell"
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M"
 		};
 		Respawnmagazines[]=
 		{
-
-		"rhsgref_20rnd_765x17_vz61",
-		"rhsgref_20rnd_765x17_vz61",
-		"rhsgref_20rnd_765x17_vz61",
-		"rhsgref_20rnd_765x17_vz61",
-		"rhsgref_20rnd_765x17_vz61",
-		"SmokeShell"
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M"
 		};
 		Items[]=
 		{
