@@ -2286,6 +2286,118 @@ class CfgVehicles {
 	
 			
 	
+	class CUP_Hilux_Base: Car_F {
+		
+		ace_cargo_size = 35;
+		ace_cargo_canLoad = 1;	
+		antiRollbarForceCoef = 4.0;
+		antiRollbarForceLimit = 3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.9;
+		frontBias = 1.5;
+		rearBias = 1.5;
+		centreBias = 1.5;
+		class Turrets;
+		class Wheels:Wheels {
+			class LF:LF {
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				frictionVsSlipGraph[] = {{ 0.0, 1.2 }, { 0.8, 1 }, { 1.0, 0.3 }};
+				latStiffX = 15;
+				latStiffY = 20;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 3250;
+				maxCompression = 0.25;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 5000;
+				moi = 6;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 16000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = 0.285;
+				};
+				class LR: LF {
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				frictionVsSlipGraph[] = {{ 0.0, 1.2 }, { 0.8, 1 }, { 1.0, 0.3 }};
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 2950;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 5000;
+				moi = 6;
+				side = "left";
+				sprungMass = 525;
+				steering = 0;
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				width = 0.285;
+				};
+				class RF: LF {
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 3250;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 5000;
+				moi = 6;
+				side = "right";
+				steering = 1;
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				width = 0.285;
+				};
+				class RR: LR {
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 2950;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 5000;
+				moi = 6;
+				side = "right";
+				steering = 0;
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				width = 0.285;
+				};
+			};
+		
+	};
+	
+			
+	
 	class UK3CB_BAF_LandRover_Base: Car_F {
 		
 		ace_cargo_size = 35;
