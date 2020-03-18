@@ -674,6 +674,57 @@ class cfgWeapons
 		};
 	};
 	
+	class CUP_lmg_Mk48_nohg_tan;
+	class TWC_CUP_lmg_Mk48_nohg_tan_optics: CUP_lmg_Mk48_nohg_tan
+	{
+		magazines[] = {"rhsusf_50Rnd_762x51","rhsusf_50Rnd_762x51_m61_ap","rhsusf_50Rnd_762x51_m62_tracer","rhsusf_50Rnd_762x51_m80a1epr","rhsusf_50Rnd_762x51_m82_blank","rhsusf_100Rnd_762x51","rhsusf_100Rnd_762x51_m61_ap","rhsusf_100Rnd_762x51_m62_tracer","rhsusf_100Rnd_762x51_m80a1epr","rhsusf_100Rnd_762x51_m82_blank","rhsusf_50Rnd_762x51_m993","rhsusf_100Rnd_762x51_m993","UK3CB_BAF_762_100Rnd","UK3CB_BAF_762_100Rnd_Blank","UK3CB_BAF_762_100Rnd_T","UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_Blank","UK3CB_BAF_762_200Rnd_T"};
+		recoil = "twc_mg_762";
+		recoilProne = "twc_mg_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountMk18";
+				item="rhsusf_acc_su230a_c";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="MuzzleSlot";
+				item="twc_acc_nt4_tan";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_PicatinnySideMountMk18";
+				item="CUP_acc_ANPEQ_15_Flashlight_Tan_L";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CUP_PicatinnyTopMountMk18: CUP_PicatinnyTopMount {
+				class compatibleItems {
+					rhsusf_acc_su230a_c = 1;
+					rhsusf_acc_eotech_xps3 = 1;
+					rksl_optic_eot552_c = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_nt4_tan = 1;
+				};
+			};
+			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
+				class compatibleItems {
+					CUP_acc_ANPEQ_15_Flashlight_Tan_L = 1;
+					CUP_acc_ANPEQ_15_Flashlight_Tan_F = 1;
+					acc_pointer_IR = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 180.7;
+		};
+	};
+	
 	class CUP_arifle_HK417_20_Desert;
 	
 	
