@@ -150,7 +150,7 @@ class CfgAmmo {
 			frequency = 10;
 			power = 30;
 		};
-		
+		ACE_muzzleVelocityVariationSD = 3;
 		class HitEffects {
 			Hit_Foliage_green = "ImpactLeavesGreen";
 			Hit_Foliage_Dead = "ImpactLeavesDead";

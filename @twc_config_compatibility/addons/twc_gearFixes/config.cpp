@@ -118,7 +118,7 @@ class CfgWeapons {
 	{
 		recoil = "twc_shotgun_1";
 		recoilProne = "twc_rifle_762_prone";
-		magazines[] = {"rhsusf_mag_10Rnd_STD_50BMG_M33", "rhsusf_mag_10Rnd_STD_50BMG_mk211"};
+		magazines[] = {"rhsusf_mag_10Rnd_STD_50BMG_M33", "rhsusf_mag_10Rnd_STD_50BMG_mk211", "rhsusf_mag_10Rnd_STD_50BMG_AMAX"};
 	};
 	class UK3CB_BAF_L115_Base;
 	
@@ -2689,6 +2689,13 @@ class cfgMagazines
 	class 10Rnd_RHS_50BMG_Box: CA_Magazine
 	{};
 	class rhsusf_mag_10Rnd_STD_50BMG_M33: 10Rnd_RHS_50BMG_Box
+	{
+		ammo = "B_127x99_Ball_Tracer_Red";
+		initSpeed = 860;
+		displayName = "12.7x99mm 10Rnd (M33 Ball)";
+		descriptionShort = "Caliber: 12.7x99mm (M33 Ball)<br />Rounds: 10";
+	};
+	class rhsusf_mag_10Rnd_STD_50BMG_AMAX: rhsusf_mag_10Rnd_STD_50BMG_M33
 	{
 		ammo = "ACE_127x99_Ball_AMAX";
 		initSpeed = 860;
