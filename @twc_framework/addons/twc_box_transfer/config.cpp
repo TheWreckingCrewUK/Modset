@@ -75,8 +75,22 @@ class CfgVehicles {
 			};
 		};
 	};
-
-
+	
+	class Air;
+	class Helicopter: Air {
+		class ACE_Actions {
+			class ACE_MainActions {
+				class TWC_Transfer_Contents {
+					displayName = "Transfer Contents";
+					condition = "true";
+					exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+					insertChildren = "_this call TWC_Box_Transfer_fnc_getTransferChildren";
+					icon = "twc_box_transfer\ui\transfer_ca.paa";
+				};
+			};
+		};
+	};
+	
 	class Ship;
 	class Ship_F: Ship {
 		class ACE_Actions {
