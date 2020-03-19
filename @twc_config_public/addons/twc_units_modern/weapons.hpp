@@ -38,7 +38,48 @@ class cfgWeapons
 	class Rifle_Base_F;
 	
 	
+	class InventoryOpticsItem_Base_F;
 	
+	class CUP_optic_SB_11_4x20_PM;
+	class twc_optic_vortex_11_8x20_PM: CUP_optic_SB_11_4x20_PM
+	{
+		displayName = "Schmidt and Bender 1-8x25 PM ShortDot";
+		class iteminfo: InventoryOpticsItem_Base_F
+		{
+			allowedSlots[] = {801,701,901};
+			mass = 10;
+			modelOptics = "\x\cba\addons\optics\cba_optic_big_90.p3d";
+			mountAction = "MountOptic";
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
+			optics = 1;
+			opticType = 1;
+			scope = 0;
+			type = 201;
+			unmountAction = "DismountOptic";
+			zeroingSound[] = {"A3\Sounds_F\arsenal\sfx\shared\zeroing_knob_tick_plastic",0.316228,1,5};
+			class OpticsModes
+			{
+				class ShortDot
+				{
+					discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200};
+					discreteDistanceInitIndex = "2 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelperZeroing')";
+					distanceZoomMax = 1200;
+					distanceZoomMin = 100;
+					memoryPointCamera = "eye";
+					opticsDisablePeripherialVision = 1;
+					opticsFlare = 1;
+					opticsID = 1;
+					opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
+					opticsZoomInit = "0.8 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
+					opticsZoomMax = "0.8 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
+					opticsZoomMin = "8 call (uiNamespace getVariable 'cba_optics_fnc_setOpticMagnificationHelper')";
+					useModelOptics = 1;
+					visionMode[] = {"Normal"};
+				};
+			};
+		};
+	};
 	
 	class rhsusf_iotv_ocp_base;
 	class rhsusf_plateframe_sapi: rhsusf_iotv_ocp_base
