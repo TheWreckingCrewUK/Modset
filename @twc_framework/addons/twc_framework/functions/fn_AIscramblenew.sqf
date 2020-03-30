@@ -15,6 +15,10 @@
 */
 
 
+_noscram = missionnamespace getvariable ["twc_noscram", false];
+
+if (_noscram) exitwith {};
+
 _check = missionnamespace getvariable ["twc_stopscramble", 0];
 if (_check == 1) exitwith {};
 
@@ -59,7 +63,7 @@ _leader = leader _leader;
 _group setSpeedMode "full";
 _enemy = _leader findnearestenemy _leader;
 
-if (_enemy == objnull) then {
+if (isnil "_enemy") then {
 	_enemy = allplayers call bis_fnc_selectrandom;
 };
 
@@ -71,7 +75,7 @@ if ((vehicle _leader) != _leader) then {
 	_chkdir = _chkunit getreldir _enemy;
 	//if the enemy is too close for comfort and the gunner isn't on it, dehorse the vehicle
 	if (((_enemy distance (vehicle _leader)) < 60) && ((_chkdir > 20) && (_chkdir < 340))) then {
-		{doGetOut _x} forEach (crew (vehicle _leader));
+		{unassignvehicle _x; doGetOut _x} forEach (crew (vehicle _leader));
 	};
 };
 
