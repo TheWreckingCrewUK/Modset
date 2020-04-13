@@ -180,19 +180,20 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_t1_high";
+				item="rhsusf_acc_eotech";
 			};
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="cup_acc_anpeq_15_flashlight_black_l";
+				item="cup_acc_anpeq_15_flashlight_tan_f";
 			};
 		};
 		class WeaponSlotsInfo
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
-					rhsusf_acc_t1_high = 1;
+					cup_optic_microt1_low_coyote = 1;
+					rhsusf_acc_eotech = 1;
 				};
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
@@ -203,8 +204,9 @@ class cfgWeapons
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
 					acc_pointer_IR = 1;
-					cup_acc_anpeq_15_flashlight_black_l = 1;
-					cup_acc_anpeq_15_flashlight_black_f = 1;
+					cup_acc_anpeq_15_flashlight_tan_l = 1;
+					cup_acc_anpeq_15_flashlight_tan_f = 1;
+					cup_acc_anpeq_15_flashlight_tan_v = 1;
 					ACE_acc_pointer_red = 1;
 				};
 			};
@@ -247,6 +249,7 @@ class cfgWeapons
 					acc_pointer_IR = 1;
 					cup_acc_anpeq_15_flashlight_black_l = 1;
 					cup_acc_anpeq_15_flashlight_black_f = 1;
+					cup_acc_anpeq_15_flashlight_black_v = 1;
 					ACE_acc_pointer_red = 1;
 				};
 			};
@@ -381,7 +384,6 @@ class cfgWeapons
 	{
 		displayName = "L119A2 (LDS)";
 		
-		//cup update: change the lds to CUP_optic_ACOG_TA01NSN_RMR_Black_PIP 
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -430,6 +432,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
 					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_v = 1;
 					uk3cb_baf_llm_ir_tan = 1;
 					uk3cb_baf_llm_flashlight_tan = 1;
 					acc_pointer_IR = 1;
@@ -494,6 +497,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
 					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_v = 1;
 					uk3cb_baf_llm_ir_tan = 1;
 					uk3cb_baf_llm_flashlight_tan = 1;
 					acc_pointer_IR = 1;
@@ -526,7 +530,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="CUP_PicatinnySideMountMk18";
-				item="rhsusf_acc_anpeq15_light";
+				item="CUP_acc_ANPEQ_15_Top_Flashlight_Tan_V";
 			};
 		};
 		
@@ -545,8 +549,9 @@ class cfgWeapons
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
 				class compatibleItems {
-					rhsusf_acc_anpeq15 = 1;
-					rhsusf_acc_anpeq15_light = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_V = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_f = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_l = 1;
 					uk3cb_baf_llm_ir_tan = 1;
 					uk3cb_baf_llm_flashlight_tan = 1;
 					acc_pointer_IR = 1;
@@ -578,7 +583,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="CUP_PicatinnySideMountMk18";
-				item="rhsusf_acc_anpeq15_light";
+				item="CUP_acc_ANPEQ_15_Top_Flashlight_Tan_V";
 			};
 		};
 		
@@ -598,8 +603,9 @@ class cfgWeapons
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
 				class compatibleItems {
-					rhsusf_acc_anpeq15_light = 1;
-					rhsusf_acc_anpeq15 = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_V = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_f = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_l = 1;
 					uk3cb_baf_llm_ir_tan = 1;
 					uk3cb_baf_llm_flashlight_tan = 1;
 					acc_pointer_IR = 1;
@@ -652,6 +658,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
 					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_v = 1;
 					uk3cb_baf_llm_ir_tan = 1;
 					uk3cb_baf_llm_flashlight_tan = 1;
 					acc_pointer_IR = 1;
@@ -704,6 +711,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_acc_anpeq_15_top_flashlight_tan_f = 1;
 					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_v = 1;
 					uk3cb_baf_llm_ir_tan = 1;
 					uk3cb_baf_llm_flashlight_tan = 1;
 					acc_pointer_IR = 1;
@@ -736,7 +744,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="CUP_PicatinnySideMountMk18";
-				item="CUP_acc_ANPEQ_15_Flashlight_Tan_L";
+				item="rhsusf_acc_anpeq16a_light";
 			};
 		};
 		class WeaponSlotsInfo
@@ -755,8 +763,8 @@ class cfgWeapons
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
 				class compatibleItems {
-					CUP_acc_ANPEQ_15_Flashlight_Tan_L = 1;
-					CUP_acc_ANPEQ_15_Flashlight_Tan_F = 1;
+					rhsusf_acc_anpeq16a_light = 1;
+					rhsusf_acc_anpeq16a = 1;
 					acc_pointer_IR = 1;
 					ACE_acc_pointer_red = 1;
 				};
@@ -825,7 +833,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="twc_hk417_siderail";
-				item="rhsusf_acc_anpeq16a";
+				item="CUP_acc_ANPEQ_15_Top_Flashlight_Tan_V";
 			};
 		};
 		class WeaponSlotsInfo
@@ -849,7 +857,9 @@ class cfgWeapons
 			};
 			class twc_hk417_siderail {
 				class compatibleItems {
-					rhsusf_acc_anpeq16a = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_V = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_f = 1;
+					CUP_acc_ANPEQ_15_Top_Flashlight_Tan_l = 1;
 				};
 			};
 			allowedslots[] = {901};
