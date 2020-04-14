@@ -4,6 +4,14 @@
 		armor = 150;
 	};
 	
+	class I_Sniper_F;
+	class twc_I_Sniper_F: I_Sniper_F
+	{
+		_generalMacro = "twc_I_Sniper_F";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\twc_units_modern\textures\digicamo_co.jpg"};
+	};
+	
 	class Tank_F;
 	class rhs_t14_base: Tank_F
 	{
