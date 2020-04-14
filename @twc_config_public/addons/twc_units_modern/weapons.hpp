@@ -38,6 +38,27 @@ class cfgWeapons
 	class Rifle_Base_F;
 	
 	
+	class CUP_U_O_TK_Ghillie_Top;
+	class twc_halfghillie_desert: CUP_U_O_TK_Ghillie_Top
+	{
+		displayName = "Half-Ghillie (desert)";
+		hiddenUnderwaterSelectionsTextures[] = {};
+		hiddenUnderwaterSelections[] = {};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\twc_units_modern\textures\digicamo_co.jpg"};
+		picture = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Taki\data\ui\icon_u_o_tk_ghillie_top_ca.paa";
+		class ItemInfo
+		{
+			containerClass = "Supply60";
+			mass = 20;
+			scope = 0;
+			type = 801;
+			uniformClass = "twc_I_Sniper_F";
+			uniformModel = "-";
+		};
+	};
+	
+	
 	class InventoryOpticsItem_Base_F;
 	
 	class CUP_optic_SB_11_4x20_PM;
@@ -842,6 +863,7 @@ class cfgWeapons
 				class compatibleItems {
 					RKSL_optic_PMII_312_des = 1;
 					cup_optic_an_pas_13c1 = 1;
+					rhsusf_acc_premier_anpvs27 = 1;
 					UK3CB_BAF_MaxiKite = 1;
 				};
 			};
