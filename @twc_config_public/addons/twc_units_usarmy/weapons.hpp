@@ -225,6 +225,8 @@ class cfgWeapons
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					twc_optic_vortex_11_8x20_PM = 1;
+					rhsusf_acc_eotech_xps3 = 1;
+					rhsusf_acc_EOTECH = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -305,6 +307,7 @@ class cfgWeapons
 		{
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
+					rhsusf_acc_EOTECH = 1;
 					rhsusf_acc_eotech_xps3 = 1;
 					twc_optic_vortex_11_8x20_PM = 1;
 				};
