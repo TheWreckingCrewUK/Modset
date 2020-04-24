@@ -33,7 +33,7 @@ _start set [2, _height];
 
 //The starting direction of the vehicle
 private "_direction";
-_direction = [_start, _end] call BIS_fnc_dirTo;
+_direction = _start getDir _end;
 
 //Spawn the vehicle
 private ["_vehicleContainer", "_vehicle", "_vehicleCrew", "_vehicleGroup"];
@@ -49,7 +49,7 @@ _vehicle setCaptive true;
 _vehicleGroup allowFleeing 0;
 
 _maxSpeed = [(configFile >> "CfgVehicles" >> _class), "maxSpeed", 100] call BIS_fnc_returnConfigEntry;
-_vehicle setVelocityModelSpace [0, _maxspeed, 0]; // start them flying at maxspeed
+_vehicle setVelocityModelSpace [0, _maxspeed / 3, 0]; // start them flying at maxspeed
 
 //Fly height
 _vehicle flyInHeightASL [_height, _height, _height];
