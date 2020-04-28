@@ -2,9 +2,7 @@ class CfgPatches
 {
 	class twc_colombia {
 		units[] = {};
-		weapons[] = {
-			"TWC_CUP_glaunch_M79",
-		};
+		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"A3_Characters_F_BLUFOR",
@@ -12,20 +10,6 @@ class CfgPatches
 			"twc_faction",
 			"twc_ai"
 		};
-	};
-};
-
-class CfgWeapons {
-	class CUP_glaunch_M79;
-	class TWC_CUP_glaunch_M79: CUP_glaunch_M79
-	{
-		scope=2;
-		author="Sarge";
-		_generalMacro="TWC_CUP_glaunch_M79";
-		baseWeapon="TWC_CUP_glaunch_M79";
-		displayName="M79 (short)";
-		descriptionShort="M79 as a secondary";
-		type = 2;
 	};
 };
 
@@ -38,6 +22,13 @@ class CfgFactionClasses {
 		icon = "TWClogo.paa";
 		priority = 2;
 		side = 1;
+	};
+};
+
+class CfgEditorSubcategories {
+	// Infantry Related
+	class TWC_Infantry_Regular_Woodland {
+		displayName = "Infantry (Woodland)";
 	};
 };
 
@@ -70,7 +61,7 @@ class CfgVehicles
 		scope = 1;
 		displayName = "Base";
 		faction = "TWC_Colombia";
-		CATEGORY(TWC_Infantry_Colombia)
+		CATEGORY(TWC_Infantry_Regular_Woodland)
 		icon = "iconMan";
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CUP_U_B_BDUv2_M81";
@@ -115,6 +106,7 @@ class CfgVehicles
 			"Chemlight_green"
 		};
 	};
+	#include "units.hpp"
 };
 
 class CfgGroups
