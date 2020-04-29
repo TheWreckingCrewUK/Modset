@@ -170,3 +170,14 @@ class SP_NBCMk3_Item: SP_UniformBase_Item
 		containerClass = "Supply40";
 	};
 };
+
+//Vest Fix
+class Vest_Camo_Base;
+class SP_P58_Belt: Vest_Camo_Base {
+	class ItemInfo;
+};
+class SP_P58_FightingOrderNBC: SP_P58_Belt {
+	class ItemInfo: ItemInfo {
+		containerClass = "Supply120";
+	};
+};
