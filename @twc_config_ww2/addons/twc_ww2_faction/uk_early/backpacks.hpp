@@ -18,6 +18,7 @@ class TWC_Backpack_WW2_UK_Early_2iC: B_LIB_UK_HSack_Tea
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 160;
 	class TransportMagazines {
 		ADD_MAGA(LIB_10Rnd_770x56,16);
 		ADD_MAGA(LIB_30Rnd_770x56,6);
