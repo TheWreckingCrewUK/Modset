@@ -143,6 +143,11 @@ class CfgAmmo {
 	};
 	
 	class BulletBase;
+	class CUP_B_23mm_AA: BulletBase
+	{
+		model = "z\ace\addons\tracers\ace_TracerGreen2.p3d";
+		timeToLive = 30;
+	};
 	class B_127x99_Ball: BulletBase {
 		class CamShakePlayerFire {
 			distance = 1;
@@ -150,7 +155,7 @@ class CfgAmmo {
 			frequency = 10;
 			power = 30;
 		};
-		
+		ACE_muzzleVelocityVariationSD = 3;
 		class HitEffects {
 			Hit_Foliage_green = "ImpactLeavesGreen";
 			Hit_Foliage_Dead = "ImpactLeavesDead";

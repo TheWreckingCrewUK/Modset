@@ -710,8 +710,8 @@
 		{
 			class _xx_pkm
 			{
-				magazine = "rhs_200rnd_556x45_T_SAW";
-				count = 7;
+				magazine = "UK3CB_BAF_762_200Rnd_T";
+				count = 2;
 			};
 			
 		};
@@ -727,8 +727,8 @@
 		{
 			class _xx_pkm
 			{
-				magazine = "rhs_200rnd_556x45_T_SAW";
-				count = 7;
+				magazine = "UK3CB_BAF_762_200Rnd_T";
+				count = 2;
 			};
 			
 		};

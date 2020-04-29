@@ -30,6 +30,8 @@
 
 #define MILLENNIAL_SECTION_LAW80 2
 
+#define MILLENNIAL_GPMG 4
+
 // late millennial (oughts) - not doing for the moe
 
 #include "millennial_plane.hpp"

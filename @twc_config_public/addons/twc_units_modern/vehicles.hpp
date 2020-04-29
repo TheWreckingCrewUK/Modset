@@ -4,6 +4,14 @@
 		armor = 150;
 	};
 	
+	class I_Sniper_F;
+	class twc_I_Sniper_F: I_Sniper_F
+	{
+		_generalMacro = "twc_I_Sniper_F";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\twc_units_modern\textures\digicamo_co.jpg"};
+	};
+	
 	class Tank_F;
 	class rhs_t14_base: Tank_F
 	{
@@ -89,6 +97,7 @@
 		{};
 		class TransportBackpacks
 		{};
+		maximumLoad = 4000;
 	};
 
 	class CUP_FV432_Bulldog_Base;
@@ -153,6 +162,7 @@
 				count = 10;
 			};
 		};
+		maximumLoad = 4000;
 		class Transportitems
 		{};
 		class TransportWeapons
@@ -160,32 +170,12 @@
 		class TransportBackpacks
 		{};
 	};
+	/*
 	class rhsusf_M1220_M153_M2_usarmy_d: rhsusf_M1220_M2_usarmy_d
 	{
-		class NewTurret;
-		class Turrets: Turrets
-		{
-			class M2_CROWS_Turret: NewTurret 
-			{
-				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
-				magazines[] = {"UK3CB_BAF_127_100Rnd"};
-			};
-		};
-		class TransportMagazines
-		{
-			class _xx_127
-			{
-				magazine = "UK3CB_BAF_127_100Rnd";
-				count = 10;
-			};
-		};
-		class Transportitems
-		{};
-		class TransportWeapons
-		{};
-		class TransportBackpacks
-		{};
+		class Turrets;
 	};
+	*/
 	/*
 	class rhsusf_M1220_M153_M2_usarmy_wd: rhsusf_M1220_M153_M2_usarmy_d
 	{
@@ -841,6 +831,7 @@
 		
 		class Turrets;
 		class Wheels;
+		maximumLoad = 6000;
 	};
 	class rhsusf_M1239_M2_Deploy_socom_d: rhsusf_M1239_Deploy_base {
 		
@@ -868,7 +859,7 @@
 				magazines[] = {"UK3CB_BAF_127_100Rnd"};
 			};
 		};
-		maximumLoad = 4000;
+		maximumLoad = 7000;
 		class TransportMagazines
 		{
 			class _xx_127
@@ -882,11 +873,11 @@
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
            turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
            turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
              
            turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseLinear = 0.7; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
            turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
              
            maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
@@ -1061,6 +1052,7 @@
 		{};
 		class TransportBackpacks
 		{};
+		maximumLoad = 4000;
 	};
 	
 	class rhsusf_m1025_w_mk19: rhsusf_m1025_w_m2

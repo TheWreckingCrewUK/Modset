@@ -341,36 +341,26 @@
 		{
 			"Throw",
 			"Put",
-			"twc_HK_MG4"
+			"twc_HK_MG3"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_HK_MG4"
+			"twc_HK_MG3"
 		};
 		magazines[]=
 		{
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
+			"UK3CB_BAF_762_200Rnd_T",
+			"UK3CB_BAF_762_200Rnd_T",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
+			"UK3CB_BAF_762_200Rnd_T",
+			"UK3CB_BAF_762_200Rnd_T",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell"
 		};
 	};

@@ -63,6 +63,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_acc_anpeq_15_flashlight_black_F = 1;
 					cup_acc_anpeq_15_flashlight_black_l = 1;
+					cup_acc_anpeq_15_flashlight_black_v = 1;
 				};
 			};
 			allowedslots[] = {901};
@@ -343,6 +344,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_acc_anpeq_15_flashlight_black_F = 1;
 					cup_acc_anpeq_15_flashlight_black_L = 1;
+					cup_acc_anpeq_15_flashlight_black_V = 1;
 				};
 			};
 			allowedslots[] = {901};

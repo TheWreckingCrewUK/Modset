@@ -75,9 +75,9 @@ class CfgVehicles {
 			};
 		};
 	};
-
-	class Helicopter;
-	class Helicopter_Base_F: Helicopter {
+	
+	class Air;
+	class Helicopter: Air {
 		class ACE_Actions {
 			class ACE_MainActions {
 				class TWC_Transfer_Contents {
@@ -90,7 +90,7 @@ class CfgVehicles {
 			};
 		};
 	};
-
+	
 	class Ship;
 	class Ship_F: Ship {
 		class ACE_Actions {

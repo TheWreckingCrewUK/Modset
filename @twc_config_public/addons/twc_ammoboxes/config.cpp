@@ -374,14 +374,13 @@ class CfgVehicles
 		scope = 2;
 		displayName = "Ammunition Box";
 		author      = "Hobbs";
-		model = "ca\buildings\furniture\bedna_ammo2x.p3d";
 
 		class transportMagazines { };
 		class TransportItems     { };
 		class TransportWeapons   { };
 		class TransportBackpacks { };
 
-		maximumLoad = 240;
+		maximumLoad = 300;
 
 		// ACE Defines
 		ace_cargo_canLoad     = 1;

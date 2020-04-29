@@ -13,6 +13,7 @@ class CfgPatches {
 			"a3_sounds_f_exp",
 			"a3_weapons_f_exp",
 			"uk3cb_baf_weapons_smallarms",
+			"uk3cb_baf_weapons_l85a3",
 			"uk3cb_baf_weapons_l1a1",
 			"uk3cb_baf_weapons_static",
 			"UK3CB_BAF_Vehicles_Weapons",
@@ -1049,6 +1050,20 @@ class cfgweapons
 	//twc_L85_closure_soundshader
 	
 	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F
+	{
+		class Single:Single {
+			class standardsound {
+				soundSetShot[] = {"twc_L85_closure_soundshader","twc_L85_Shot_Soundset","jsrs_30mm_reflector_1"};
+			};
+		};
+		class FullAuto:FullAuto {
+			class standardsound {
+				soundSetShot[] = {"twc_L85_closure_soundshader","twc_L85_Shot_Soundset","jsrs_30mm_reflector_1"};
+			};			
+		};
+	};
+	
+	class UK3CB_BAF_L85A3: UK3CB_BAF_L85A2
 	{
 		class Single:Single {
 			class standardsound {
