@@ -1346,8 +1346,7 @@ class CfgVehicles {
 		};
 	};
 
-	class TWC_Module_HideMarkers: Module_F
-	{
+	class TWC_Module_HideMarkers: Module_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
 		displayName = "Hide Markers";
@@ -1358,8 +1357,7 @@ class CfgVehicles {
 		isDisposable = 0;
 		icon = "\twc_framework\ui\hide_marker_ca.paa";
 		functionPriority = 1;
-		class Arguments
-		{
+		class Arguments {
 			class Markers
 			{
 				description = "The variable name of the markers to hide";
@@ -1592,7 +1590,16 @@ class CfgVehicles {
 		isDisposable = 0;
 		icon = "\twc_framework\ui\stationary_units_ca.paa";
 		functionPriority = 1;
-		class Arguments {};
+		class Attributes: AttributesBase {
+			class ViewLimit {
+				control = "Checkbox";
+				defaultValue = "false";
+				displayName = "Limit View";
+				expression = "_this setVariable ['ViewLimit', _value]";
+				property = "ViewLimit";
+				tooltip = "Prevents units in this group from moving their view too far beyond their initial direction.";
+			};
+		};
 		class ModuleDescription: ModuleDescription {
 			description = "Set Unit(s) as Stationary";
 			sync[] = {"AnyAI"};

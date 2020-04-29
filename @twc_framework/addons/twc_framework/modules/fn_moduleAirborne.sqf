@@ -17,7 +17,7 @@ params ["_logic", "_trigger", "_activated"];
 if (!_activated || !isServer) exitWith {};
 
 _dropPos = getPos _logic;
-_dropDir = getDos _logic;
+_dropDir = getDir _logic;
 _planeUnits = _logic getVariable "Plane_Units";
 _typePlane = _logic getVariable "Type_Plane";
 _typeCargo = _logic getVariable "Type_Cargo";

@@ -16,8 +16,10 @@ params ["_logic", "_units", "_activated"];
 
 if (!_activated || !isServer) exitWith {};
 
+_viewLimit = _logic getVariable "ViewLimit";
+
 {
-	[_x] call twc_fnc_stationaryUnits;
+	[_x, _viewLimit] call twc_fnc_stationaryUnits;
 } forEach _units;
 
 if (!isNull _logic) then {
