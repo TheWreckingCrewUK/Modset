@@ -224,12 +224,12 @@ class TWC_Infantry_WW2_UK_Late_Woodland_SectionCommander: TWC_Infantry_WW2_UK_La
 	};
 	magazines[] =
 	{
-		MAG_5("LIB_32Rnd_9x19_Sten"),
+		MAG_7("LIB_32Rnd_9x19_Sten"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
-		MAG_5("LIB_32Rnd_9x19_Sten"),
+		MAG_7("LIB_32Rnd_9x19_Sten"),
 		MAG_2("SmokeShell")
 	};
 	nightItems[] = {
