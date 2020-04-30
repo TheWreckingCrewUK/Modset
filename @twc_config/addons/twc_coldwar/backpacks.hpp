@@ -29,9 +29,9 @@ class TWC_Backpack_ColdWar_Regular_2iC: SP_Backpack_LargePack
 	scope = 1;
 	maximumLoad = 250;
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_762_20Rnd, 10);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd, 8);
 		ADD_MAGA(SmokeShell, 4);
-		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 1);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 2);
 	};
 };
 class TWC_Backpack_ColdWar_Regular_ASSAT: SP_Backpack_CarlGustavCarrier
