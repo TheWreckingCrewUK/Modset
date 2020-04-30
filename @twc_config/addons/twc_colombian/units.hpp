@@ -56,28 +56,24 @@ class TWC_Infantry_Colombia_Grenadier: TWC_Infantry_Colombia_Rifleman {
 	weapons[] =
 	{
 		"CUP_arifle_Galil_SAR_black",
-		"TWC_CUP_glaunch_M79",
 		"Throw",
 		"Put"
 	};
 	respawnWeapons[] =
 	{
 		"CUP_arifle_Galil_SAR_black",
-		"TWC_CUP_glaunch_M79",
 		"Throw",
 		"Put"
 	};
 	magazines[] =
 	{
 		MAG_2("CUP_35Rnd_556x45_Galil_Mag"),
-		MAG_2("CUP_HandGrenade_M67"),
-		MAG_5("CUP_1Rnd_HE_M203")
+		MAG_2("CUP_HandGrenade_M67")
 	};
 	respawnMagazines[] =
 	{
 		MAG_2("CUP_35Rnd_556x45_Galil_Mag"),
-		MAG_2("CUP_HandGrenade_M67"),
-		MAG_5("CUP_1Rnd_HE_M203")
+		MAG_2("CUP_HandGrenade_M67")
 	};
 };
 
