@@ -103,6 +103,7 @@ class CfgVehicles
 		nightItems[] = {
 			"ACE_Flashlight_MX991",
 			"Chemlight_green",
+			"Chemlight_green",
 			"Chemlight_green"
 		};
 	};
