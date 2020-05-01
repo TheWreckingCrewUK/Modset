@@ -34,9 +34,15 @@ addMissionEventHandler ["HandleDisconnect", {
 }];
 
 ["deleteReconnected", "onPlayerConnected", {
-	{
-		if ((_x getVariable ["disconnectedPlayerUID", -1]) == _uid) exitWith {
-			deleteVehicle _x;
-		};
-	} forEach allDeadmen;
+	_jip = (_this select 3);
+	
+	if (_jip) then {
+		_uid = (_this select 1);
+
+		{
+			if ((_x getVariable ["disconnectedPlayerUID", -1]) == _uid) exitWith {
+				deleteVehicle _x;
+			};
+		} forEach allDeadmen;
+	};
 }] call BIS_fnc_addStackedEventHandler;

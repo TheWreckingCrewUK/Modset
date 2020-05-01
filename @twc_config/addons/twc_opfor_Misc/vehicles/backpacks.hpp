@@ -54,6 +54,30 @@ class WaPAT_Backpack_AT: CUP_B_HikingPack_Civ {
 	};
 };
 
+class TWC_Backpack_USA_1980_SectionCommander: CUP_B_AlicePack_OD
+{
+	scope = 1;
+	scopeArsenal = 1;
+	class TransportMagazines {
+		maga_nc(SmokeShell,3);
+		maga_nc(SmokeShellRed,2);
+		maga_nc(SmokeShellBlue,2);
+	};
+	class TransportItems {
+		item_nc(ACRE_PRC77,1);
+	};
+};
+class TWC_Backpack_USA_1980_TeamLeader: CUP_B_AlicePack_OD
+{
+	scope = 1;
+	scopeArsenal = 1;
+	class TransportMagazines {
+		maga_nc(SmokeShell,3);
+		maga_nc(CUP_30Rnd_556x45_Stanag, 6);
+		maga_nc(CUP_30Rnd_556x45_Stanag_Tracer_Red, 4);
+	};
+};
+
 class TWC_Backpack_Argentina_1980_SectionCommander: CUP_B_AlicePack_OD
 {
 	scope = 1;

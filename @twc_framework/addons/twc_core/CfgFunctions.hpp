@@ -10,6 +10,9 @@ class CfgFunctions {
 			/** MISC FUNCTIONALITY **/
 			class soundLoop {};
 			class setDirFly {};
+			class canGetOutSide {};
+			class getOutSide {};
+			class getCargo {};
 			
 			/** PLAYER RELATED **/
 			class isMember {};
@@ -21,6 +24,10 @@ class CfgFunctions {
 			class addToGroup {};
 			class canAddToGroup {};
 			class nameToPlayer {};
+			class getPlayer {};
+			class addItem {};
+			class revealPlayer {};
+			class initNightGear {};
 			
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
@@ -31,6 +38,7 @@ class CfgFunctions {
 			class positionToString {};
 			class isNightTime {};
 			class objectAmbientLight {};
+			class unflipVehicleQuick {};
 			
 			/** DEBUG TOOLS **/
 			class drawBoundingBox {};

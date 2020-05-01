@@ -1,0 +1,368 @@
+/*%FSM<COMPILE "F:\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, TWC_AmbientCiv">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start_",0,250,-251.488953,-216.886093,-161.488953,-166.886093,0.000000,"Start" \n ""};
+item1[] = {"Cover_",8,218,-0.545065,69.974121,89.454987,119.974083,1.000000,"Cover?"};
+item2[] = {"Run_",2,250,156.774338,294.822296,246.774307,344.822174,0.000000,"Run!"};
+item3[] = {"Is_safe__",4,218,-443.872498,-4.084963,-353.872498,45.915039,1.000000,"Is safe?" \n ""};
+item4[] = {"Is_not_safe_",4,218,-252.210388,-47.124359,-162.210388,2.875641,2.000000,"Is not safe?"};
+item5[] = {"Find_Cover__or_Run",2,250,-18.938875,-53.075520,71.061127,-3.075531,0.000000,"Find Cover " \n "or Run" \n ""};
+item6[] = {"Run_",4,218,150.857742,27.536415,240.857727,77.536407,3.000000,"Run?"};
+item7[] = {"Move_Around_",2,250,-480.536804,-147.037964,-390.536621,-97.037971,0.000000,"Move Around" \n ""};
+item8[] = {"Reached_Position",4,218,-663.711548,-21.276428,-573.711548,28.723572,1.000000,"Reached" \n "Position"};
+item9[] = {"Find_cover_",2,250,-448.600494,138.035507,-358.600403,188.035477,0.000000,"Find cover!"};
+item10[] = {"Ran_Enough",4,218,24.920851,386.486786,114.920868,436.486786,0.000000,"Ran Enough"};
+item11[] = {"Freeze_",4,218,-131.813843,29.892834,-41.813744,79.892807,2.000000,"Freeze?"};
+item12[] = {"Freeze_",2,250,-282.101807,42.125084,-192.101883,92.124977,0.000000,"Freeze!"};
+item13[] = {"End_",4,218,-609.104492,139.977951,-519.104492,189.977936,3.000000,"End?"};
+item14[] = {"End_",1,250,-740.057190,259.025879,-650.057129,309.025879,0.000000,"End" \n ""};
+item15[] = {"No__building_",4,218,-103.946716,139.038223,-13.946716,189.038223,0.000000,"" \n "No " \n "building" \n ""};
+item16[] = {"Try_and_find_bui",2,250,35.315018,179.193512,125.315063,229.193619,0.000000,"Try and" \n "find building"};
+item17[] = {"Found__Building",4,218,-80.024384,268.047577,9.975567,318.047577,1.000000,"Found " \n "Building"};
+item18[] = {"Find_Building_Po",2,4346,-262.004456,295.387299,-172.004395,345.387238,0.000000,"Find Building" \n "Positions"};
+item19[] = {"Yes_positions",4,218,-438.003876,289.406769,-348.003876,339.406769,1.000000,"Yes positions"};
+item20[] = {"No_positions_",4,218,-275.674316,167.232422,-185.674332,217.232422,0.000000,"" \n "No positions" \n ""};
+link0[] = {0,3};
+link1[] = {0,4};
+link2[] = {1,16};
+link3[] = {2,10};
+link4[] = {3,7};
+link5[] = {4,5};
+link6[] = {5,1};
+link7[] = {5,6};
+link8[] = {5,11};
+link9[] = {6,2};
+link10[] = {7,4};
+link11[] = {7,8};
+link12[] = {7,13};
+link13[] = {8,7};
+link14[] = {9,3};
+link15[] = {9,13};
+link16[] = {10,16};
+link17[] = {11,12};
+link18[] = {12,3};
+link19[] = {13,14};
+link20[] = {15,12};
+link21[] = {16,15};
+link22[] = {16,17};
+link23[] = {17,18};
+link24[] = {18,19};
+link25[] = {18,20};
+link26[] = {19,9};
+link27[] = {20,12};
+globals[] = {0.000000,0,0,0,0,640,480,1,46,6316128,1,-809.934570,385.323730,474.173218,-303.299988,1399,910,1};
+window[] = {2,-1,-1,-1,-1,785,26,1466,26,3,1417};
+*//*%FSM</HEAD>*/
+class FSM
+{
+        fsmName = "TWC_AmbientCiv";
+        class States
+        {
+                /*%FSM<STATE "Start_">*/
+                class Start_
+                {
+                        name = "Start_";
+                        itemno = ;
+                        init = /*%FSM<STATEINIT""">*/"params [""_unit"", ""_pos"", ""_radius""];"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Is_not_safe_">*/
+                                class Is_not_safe_
+                                {
+                                        itemno = ;
+                                        priority = 2.000000;
+                                        to="Find_Cover__or_Run";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"behaviour _unit == ""COMBAT"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Is_safe__">*/
+                                class Is_safe__
+                                {
+                                        itemno = ;
+                                        priority = 1.000000;
+                                        to="Move_Around_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"behaviour _unit != ""COMBAT"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Run_">*/
+                class Run_
+                {
+                        name = "Run_";
+                        itemno = ;
+                        init = /*%FSM<STATEINIT""">*/"_runPos = [[[position _unit, 60]]] call BIS_fnc_randomPos;" \n
+                         "_unit doMove _runPos;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Ran_Enough">*/
+                                class Ran_Enough
+                                {
+                                        itemno = ;
+                                        priority = 0.000000;
+                                        to="Try_and_find_bui";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"((position _unit) distance _runPos) < 3"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Find_Cover__or_Run">*/
+                class Find_Cover__or_Run
+                {
+                        name = "Find_Cover__or_Run";
+                        itemno = ;
+                        init = /*%FSM<STATEINIT""">*/"_unit setSpeedMode ""FULL"";"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Run_">*/
+                                class Run_
+                                {
+                                        itemno = ;
+                                        priority = 3.000000;
+                                        to="Run_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"({side _x != civilian} count ((position _unit) nearEntities [""Man"", 10])) > 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Freeze_">*/
+                                class Freeze_
+                                {
+                                        itemno = ;
+                                        priority = 2.000000;
+                                        to="Freeze_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(({side _x != civilian} count ((position _unit) nearEntities [""Man"", 20])) > 0) && (random 1 < 0.3)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Cover_">*/
+                                class Cover_
+                                {
+                                        itemno = ;
+                                        priority = 1.000000;
+                                        to="Try_and_find_bui";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Move_Around_">*/
+                class Move_Around_
+                {
+                        name = "Move_Around_";
+                        itemno = ;
+                        init = /*%FSM<STATEINIT""">*/"_unit setSpeedMode ""LIMITED"";" \n
+                         "_unit setBehaviour ""SAFE"";" \n
+                         "_unit setUnitPos ""UP"";" \n
+                         "_movePos = [[[_pos, _radius]], [], {isOnRoad _this}] call BIS_fnc_randomPos;" \n
+                         "_unit doMove _movePos;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "End_">*/
+                                class End_
+                                {
+                                        itemno = ;
+                                        priority = 3.000000;
+                                        to="End_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"isNull _unit"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Is_not_safe_">*/
+                                class Is_not_safe_
+                                {
+                                        itemno = ;
+                                        priority = 2.000000;
+                                        to="Find_Cover__or_Run";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"behaviour _unit == ""COMBAT"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Reached_Position">*/
+                                class Reached_Position
+                                {
+                                        itemno = ;
+                                        priority = 1.000000;
+                                        to="Move_Around_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"((position _unit) distance _movePos) < 3"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Find_cover_">*/
+                class Find_cover_
+                {
+                        name = "Find_cover_";
+                        itemno = ;
+                        init = /*%FSM<STATEINIT""">*/"_coverPos = selectRandom _positions;" \n
+                         "_unit doMove _coverPos;" \n
+                         "_unit setUnitPos ""MIDDLE"";	" \n
+                         "" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "End_">*/
+                                class End_
+                                {
+                                        itemno = ;
+                                        priority = 3.000000;
+                                        to="End_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"isNull _unit"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Is_safe__">*/
+                                class Is_safe__
+                                {
+                                        itemno = ;
+                                        priority = 1.000000;
+                                        to="Move_Around_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"behaviour _unit != ""COMBAT"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Freeze_">*/
+                class Freeze_
+                {
+                        name = "Freeze_";
+                        itemno = ;
+                        init = /*%FSM<STATEINIT""">*/"_unit setUnitPos ""DOWN"";" \n
+                         "doStop _unit;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Is_safe__">*/
+                                class Is_safe__
+                                {
+                                        itemno = ;
+                                        priority = 1.000000;
+                                        to="Move_Around_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"behaviour _unit != ""COMBAT"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "End_">*/
+                class End_
+                {
+                        name = "End_";
+                        itemno = ;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Try_and_find_bui">*/
+                class Try_and_find_bui
+                {
+                        name = "Try_and_find_bui";
+                        itemno = ;
+                        init = /*%FSM<STATEINIT""">*/"_buildings = (position _unit) nearObjects [""Building"", 50];" \n
+                         "_buildings = _buildings select {" \n
+                         "	_positions = _x buildingPos -1;" \n
+                         "	count (_positions) >= 1" \n
+                         "};" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Found__Building">*/
+                                class Found__Building
+                                {
+                                        itemno = ;
+                                        priority = 1.000000;
+                                        to="Find_Building_Po";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(count _buildings) > 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "No__building_">*/
+                                class No__building_
+                                {
+                                        itemno = ;
+                                        priority = 0.000000;
+                                        to="Freeze_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(count _buildings) == 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Find_Building_Po">*/
+                class Find_Building_Po
+                {
+                        name = "Find_Building_Po";
+                        itemno = ;
+                        init = /*%FSM<STATEINIT""">*/"_building = selectRandom _buildings;" \n
+                         "_positions = _building buildingPos -1;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Yes_positions">*/
+                                class Yes_positions
+                                {
+                                        itemno = ;
+                                        priority = 1.000000;
+                                        to="Find_cover_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(count _positions) > 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "No_positions_">*/
+                                class No_positions_
+                                {
+                                        itemno = ;
+                                        priority = 0.000000;
+                                        to="Freeze_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(count _positions) == 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+        };
+        initState="Start_";
+        finalStates[] =
+        {
+                "End_",
+        };
+};
+/*%FSM</COMPILE>*/

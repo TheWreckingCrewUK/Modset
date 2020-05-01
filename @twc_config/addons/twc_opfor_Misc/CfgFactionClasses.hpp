@@ -29,10 +29,11 @@ class CfgFactionClasses {
 		side = 3;
 	};
 
-	class twc_usa_1970 {
-		displayName = "USA 1970";
-		priority = 1;
-		side = 1;
+	class TWC_BLUFOR_Units_USA_1980 {
+		displayName = "USA (1980)";
+		author = "[TWC] Rik";
+		priority = 2;
+		side = 2;
 	};
 
 	class Russian_Federation {

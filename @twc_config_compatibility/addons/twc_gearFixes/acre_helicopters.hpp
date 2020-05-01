@@ -1,4 +1,3 @@
-class CUP_SA330_Base;
 class CUP_B_SA330_Puma_HC1_BAF: CUP_SA330_Base {
 	class AcreIntercoms {
 		class Intercom_1 {

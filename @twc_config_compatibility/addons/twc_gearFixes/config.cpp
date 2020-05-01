@@ -20,6 +20,7 @@ class CfgPatches {
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds",
+			"CUP_Weapons_M1014",
 			"CUP_Weapons_VehicleWeapons"
 		};
 
@@ -31,207 +32,12 @@ class CfgPatches {
 	};
 };
 
-
-class CfgAmmo {
-	class GrenadeHand;
-	class GrenadeHand_stone: GrenadeHand
-	{
-		ace_frag_enabled = 0;
-		explosionTime = 0;
-		caliber = 0.1;
-		cost = 0;
-		dangerRadiusHit = 0;
-		minimumSafeZone = 0;
-		explosionEffectsRadius = 0;
-		/*hit = 0.1;
-		indirectHit = 0.2;
-		indirectHitRange = 0.1;*/
-		simulation = "shotShell";
-		SoundSetExplosion[] = {};
-		soundHit1[] = {};
-		soundHit2[] = {};
-		soundHit3[] = {};
-		soundHit4[] = {};
-	};
-	
-	/*
-	class FlareBase;
-	class F_40mm_White: FlareBase
-	{
-		brightness  = 75;
-		intensity = 1000000;
-		coefgravity = 0.13;
-		timeToLive = 140;
-	};
-	*/
-	class RocketBase;
-	class CUP_R_OG7_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7V_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7VL_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7VM_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_PG7VR_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	class CUP_R_RPG18_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",2,0.9,500};
-	};
-	class CUP_R_TBG7V_AT: RocketBase
-	{
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
-	};
-	
-	class IRStrobeBase;
-	class B_IRstrobe: IRStrobeBase
-	{
-		timeToLive=150000;
-	};
-	
-	class Chemlight_base;
-	class ACE_G_Chemlight_IR: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Blue: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Red: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Green: Chemlight_base {
-		timeToLive = 150000;
-	};
-	class Chemlight_Yellow: Chemlight_base {
-		timeToLive = 150000;
-	};
-	
-	class B_338_Ball;
-	class ACE_338_Ball_API526: B_338_Ball
-	{
-		caliber = 6;
-		penetrationDirDistribution = 0.05;
-		explosionEffects = "twc_APIbullet_effect";
-		explosionSoundEffect = "DefaultExplosion";
-		explosive = 0.1;
-		indirectHit = 2;
-		indirectHitRange = 0.1;
-		class HitEffects
-		{
-			Hit_Foliage_green = "ImpactLeavesGreen";
-			Hit_Foliage_Dead = "ImpactLeavesDead";
-			Hit_Foliage_Green_big = "ImpactLeavesGreenBig";
-			Hit_Foliage_Palm = "ImpactLeavesPalm";
-			Hit_Foliage_Pine = "ImpactLeavesPine";
-			hitFoliage = "ImpactLeaves";
-			hitGlass = "ImpactGlass";
-			hitGlassArmored = "twc_APIbullet_effect";
-			hitWood = "twc_APIbullet_effect";
-			hitMetal = "twc_APIbullet_effect";
-			hitMetalPlate = "twc_APIbullet_effect";
-			hitBuilding = "twc_APIbullet_effect";
-			hitPlastic = "twc_APIbullet_effect";
-			hitRubber = "twc_APIbullet_effect";
-			hitConcrete = "twc_APIbullet_effect";
-			hitMan = "twc_APIbullet_effect_man";
-			hitGroundSoft = "twc_APIbullet_effect";
-			hitGroundHard = "twc_APIbullet_effect";
-			hitWater = "ImpactEffectsWater";
-		};
-	};
-	class BulletBase;
-	class B_127x99_Ball: BulletBase
-	{
-		class CamShakePlayerFire {
-			distance = 1;
-			duration = 1;
-			frequency = 10;
-			power = 30;
-		};
-		class HitEffects
-		{
-			Hit_Foliage_green = "ImpactLeavesGreen";
-			Hit_Foliage_Dead = "ImpactLeavesDead";
-			Hit_Foliage_Green_big = "ImpactLeavesGreenBig";
-			Hit_Foliage_Palm = "ImpactLeavesPalm";
-			Hit_Foliage_Pine = "ImpactLeavesPine";
-			hitFoliage = "ImpactLeaves";
-			hitGlass = "ImpactGlass";
-			hitGlassArmored = "twc_127_hiteffect_grey";
-			hitWood = "twc_127_hiteffect_grey";
-			hitMetal = "twc_127_hiteffect_grey";
-			hitMetalPlate = "twc_127_hiteffect_grey";
-			hitBuilding = "twc_127_hiteffect_grey";
-			hitPlastic = "twc_127_hiteffect_grey";
-			hitRubber = "twc_127_hiteffect_grey";
-			hitConcrete = "twc_127_hiteffect_grey";
-			//hitMan = "twc_APIbullet_effect_man";
-			hitGroundSoft = "twc_127_hiteffect_grey";
-			hitGroundHard = "twc_127_hiteffect_grey";
-			hitWater = "ImpactEffectsWater";
-		};
-	};
-	
-	class B_556x45_Ball;
-	class rhs_ammo_556x45_M855A1_Ball: B_556x45_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class rhs_ammo_556x45_M855A1_Ball_Red: rhs_ammo_556x45_M855A1_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class B_556x45_Ball_Tracer_Red: B_556x45_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class UK3CB_BAF_556_Ball_Tracer_Red: B_556x45_Ball_Tracer_Red
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class UK3CB_BAF_556_Ball: B_556x45_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class B_762x51_Ball;
-	class UK3CB_BAF_762_Ball_L42A1_Tracer_Red: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class UK3CB_BAF_762_Ball_L42A1: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class B_762x51_Tracer_Red: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class UK3CB_BAF_762_Ball: B_762x51_Ball
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	class UK3CB_BAF_762_Ball_Tracer_Red: B_762x51_Tracer_Red
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-};
+#include "CfgAmmo.hpp"
 
 class mode_fullauto;
+class Mode_SemiAuto;
+class asdg_OpticRail1913;
+
 class CfgWeapons {
 	//TWC Night Vision
 	class CUP_NVG_PVS7;
@@ -267,10 +73,16 @@ class CfgWeapons {
 		class EventHandlers;
 	};
 	
+	class launch_NLAW_F: Launcher_Base_F {
+		ace_overpressure_angle = 30;
+		ace_overpressure_range = 10;
+		ace_overpressure_damage = 0.7;
+	};
+	
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
-			fired = "_mult = 1; if (!isserver) then {_mult = 0.3};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];";
+			fired = "_mult = 1; if (isplayer (_this select 0)) then {_mult = 0.2};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 16) - 8) * _mult), (velocity _bullet select 1) + (((random 16) - 8) * _mult), 	(velocity _bullet select 2) + (((random 8) - 3) * _mult)];";
 		};
 		scope=2;
 		aiDispersionCoefX=1.03;
@@ -306,7 +118,7 @@ class CfgWeapons {
 	{
 		recoil = "twc_shotgun_1";
 		recoilProne = "twc_rifle_762_prone";
-		magazines[] = {"rhsusf_mag_10Rnd_STD_50BMG_M33", "rhsusf_mag_10Rnd_STD_50BMG_mk211"};
+		magazines[] = {"rhsusf_mag_10Rnd_STD_50BMG_M33", "rhsusf_mag_10Rnd_STD_50BMG_mk211", "rhsusf_mag_10Rnd_STD_50BMG_AMAX"};
 	};
 	class UK3CB_BAF_L115_Base;
 	
@@ -353,8 +165,6 @@ class CfgWeapons {
 			};
 		};
 	};
-	
-	
 	class Default;
 	class CannonCore: Default
 	{
@@ -381,7 +191,7 @@ class CfgWeapons {
 	{
 		reloadtime = 0.22;
 		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5,  (velocity _bullet select 2) + (random 20) - 10];} else {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4,  (velocity _bullet select 2) + (random 6) - 3];};twc_gpmglastfired = time;[_this select 6] call twc_fnc_aps;";
+			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5,  (velocity _bullet select 2) + (random 20) - 10];} else {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4,  (velocity _bullet select 2) + (random 6) - 3];};twc_gpmglastfired = time;[_this select 6, _this select 0] call twc_fnc_aps;";
 		};
 	};
 	
@@ -399,10 +209,29 @@ class CfgWeapons {
 	
 	class Rifle_Base_F:Rifle
 	{
-		class EventHandlers: EventHandlers {
-		//	fired = "if ((_this select 0) == player) then {addCamShake [3, 0.3, 15]};";
+	};
+	
+	class CUP_sgun_M1014_base: Rifle_Base_F
+	{
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_rifle_762_prone";
+	};
+	class CUP_sgun_M1014_vfg: CUP_sgun_M1014_base
+	{};
+	class TWC_L128A1_Eotech: CUP_sgun_M1014_vfg
+	{
+		scope = 1;
+		displayname = "L128A1 Shotgun";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="UK3CB_BAF_Eotech";
+			};
 		};
 	};
+	
 	
 	class UK3CB_BAF_L1A1: Rifle_Base_F {
 		recoil = "twc_rifle_762";
@@ -415,7 +244,60 @@ class CfgWeapons {
 		recoilProne = "twc_rifle_762_prone";
 	};
 	
-	class arifle_Mk20_plain_F;
+	class mk20_base_F;
+	class arifle_Mk20_F: mk20_base_F
+	{
+		class FullAuto;
+		class Single;
+	};
+	
+	class arifle_Mk20_plain_F: arifle_Mk20_F {
+		class FullAuto: Mode_FullAuto {
+			
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Fullauto_medium: FullAuto {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Single: Mode_SemiAuto {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Single_medium_optics1: Single {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+		class Single_far_optics2: Single_medium_optics1 {
+			class StandardSound {
+				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
+			};
+			class SilencedSound {
+				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
+			};
+		};
+	};class UK3CB_BAF_L119_Base: arifle_Mk20_plain_F {
+		class FullAuto: FullAuto {
+			reloadTime = 0.07;
+		};
+	};
 	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F {
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";
@@ -495,14 +377,14 @@ class CfgWeapons {
 	
 	class CUP_Rarden_CTWS_veh: autocannon_40mm_CTWS
 	{
-		magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE"};
+		magazines[] = {"twc_3rnd_30mm_AP","twc_3rnd_30mm_HE"};
 		magazineReloadTime = 1;
 		muzzles[] = {"HE"};
 		ReloadTime = 0.3;
 		autoReload = 0;
 		class HE: HE
 		{
-			magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE"};
+			magazines[] = {"twc_3rnd_30mm_AP","twc_3rnd_30mm_HE"};
 			magazineReloadTime = 1;
 			ReloadTime = 0.3;
 			autoReload = 0;
@@ -884,9 +766,23 @@ class cfgRecoils
 	};
 	class twc_rifle_556_prone
 	{
-		muzzleOuter[]	= { 0.05,  0.2,  0.02,  0.1 };
+		muzzleOuter[]	= { 0.06,  0.2,  0.02,  0.1 };
 		kickBack[]	= { 0.02, 0.04 };
 		permanent	= 0.3;
+		temporary	= 0.1;
+	};
+	class twc_rifle_556_short
+	{
+		muzzleOuter[]	= { 0.07,  0.25,  0.015,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
+		kickBack[]	= { 0.04, 0.06 }; //min/max force
+		permanent	= 0.3; //muzzle climb post-recoil, means nothing when on bipod
+		temporary	= 0.12; //muzzle jump
+	};
+	class twc_rifle_556_short_prone
+	{
+		muzzleOuter[]	= { 0.05,  0.3,  0.1,  0.3 };
+		kickBack[]	= { 0.04, 0.06 };
+		permanent	= 1;
 		temporary	= 0.1;
 	};
 	
@@ -953,12 +849,23 @@ class cfgRecoils
 	
 	class twc_shotgun_1
 	{
-		muzzleOuter[]	= { 0.1,  0.5,  0.1,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
-		kickBack[]	= { 0.06, 0.09 }; //min/max force
-		permanent	= 1.5; //muzzle climb post-recoil, means nothing when on bipod
-		temporary	= 0.2; //muzzle jump
+		muzzleOuter[]	= { 0.3,  0.5,  0.15,  0.15 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
+		kickBack[]	= { 0.09, 0.12 }; //min/max force
+		permanent	= 1.1; //muzzle climb post-recoil, means nothing when on bipod
+		temporary	= 0.1; //muzzle jump
 	};
 };
+
+
+
+class Extended_HitPart_EventHandlers {
+	class man {
+		class twc_vitalhit {
+			HitPart = "(_this select 0) params ['_target', '_shooter', '_projectile', '_position', '_velocity', '_selection', '_ammo', '_vector', '_radius', '_surfaceType', '_isDirect'];if (isplayer _target) exitwith {};if (!alive _target) exitwith {};if (('head' in _selection) && (_isdirect)) exitwith {[_target, {if (isDamageAllowed _this) then {_this setdamage 1;};}] remoteExec ['call', 0];}; if (!(('head' in _selection) || ('spine1' in _selection)|| ('spine2' in _selection)|| ('spine3' in _selection))) exitwith {};_value = (_ammo select 0); if (_value > 8) then {[_target, {if (isDamageAllowed _this) then {_this setdamage 1;};}] remoteExec ['call', 0];};";
+		};
+	};
+};
+
 class Extended_FiredBIS_EventHandlers {
 	class Car {
 		class twc_gunwalk {
@@ -977,12 +884,12 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class CAManBase {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {addCamShake [2.8, 0.4, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_amount = 2.8; if ((_this select 1) in (missionnamespace getvariable ['twc_subguns', ['TWC_CUP_smg_MP5A5_flashlight_clean', 'rhsusf_weap_MP7A2_desert', 'TWC_CUP_smg_MP5SD6_clean', 'fow_w_sten_mk5', 'LIB_Sten_Mk5', 'LIB_Sten_Mk2', 'SP_smg_sterling']])) then {_amount = 0.8;};addCamShake [_amount, 0.4, 15]};";
 		};
 	};
 	class Helicopter_Base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {if (((getShotParents (_this select 6)) select 1) == player) then {_rec = 2} else {_rec = 1}; addCamShake [_rec, 0.5, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.6; addCamShake [_rec, 0.5, 15]};";
 		};
 	};
 	class Plane {
@@ -997,11 +904,17 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class StaticMGWeapon {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2; if (((_this select 1) isKindOf ['HMG_127', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['GMG_F', configFile >> 'CfgWeapons'])) then {_rec = 3};addCamShake [_rec, 0.3, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2; if (((_this select 1) isKindOf ['HMG_127', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['GMG_F', configFile >> 'CfgWeapons'])) then {_rec = 3};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, 0.3, 15]};";
 			FiredBIS = "[_this select 1, _this select 4, _this select 6, _this select 7] call twc_fnc_gunwalk;";
 		};
 	};
 	class StaticGrenadeLauncher {
+		class twc_gunshake {
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 3; addCamShake [_rec, 0.5, 15]};";
+			FiredBIS = "[_this select 1, _this select 4, _this select 6, _this select 7] call twc_fnc_gunwalk;";
+		};
+	};
+	class StaticATWeapon {
 		class twc_gunshake {
 			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 3; addCamShake [_rec, 0.5, 15]};";
 			FiredBIS = "[_this select 1, _this select 4, _this select 6, _this select 7] call twc_fnc_gunwalk;";
@@ -1021,32 +934,27 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class CUP_MCV80_Base {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2;_time = 0.5; if ((_this select 1) == 'CUP_Vlmg_L94A1_Coax') then {_rec = 0.1;_time = 0.3};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2;_time = 0.5; if ((_this select 1) == 'CUP_Vlmg_L94A1_Coax') then {_rec = 0.1;_time = 0.3};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
 		};
 	};
-	class ukcw_Chieftain_Base {
+	class CUP_B_FV432_GB_GPMG {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) == 'UKCW_Chieftain_L11A5') then {_rec = 4;_time = 1};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
-		};
-	};
-	class ukcw_cvrt_Scim_base {
-		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2;_time = 0.5; if ((_this select 1) == 'ukcw_l37a1_coax') then {_rec = 0.1;_time = 0.3};addCamShake [_rec, _time, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2;_time = 0.5; if ((_this select 1) == 'ukcw_l37a1_coax') then {_rec = 0.1;_time = 0.3};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15]};";
 		};
 	};
 	class APC_Tracked_01_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
 		};
 	};
 	class APC_Tracked_02_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
 		};
 	};
 	class APC_Tracked_03_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 1;_time = 0.7};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec, _time, 15]};";
 		};
 	};
 	class UK3CB_BAF_FV432_Mk3_Base {
@@ -1056,43 +964,53 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class MBT_01_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class MBT_02_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class MBT_03_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class MBT_04_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class rhs_tank_base {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class rhs_a3t72tank_base {
+		class twc_gunshake {
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	//ww2 tanks, not as much recoil management or optic magnification so a bit more shake
 	class LIB_Tank_base {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 1.5)};addCamShake [_rec * 0.1, _time * 3, 9]} else {if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 4)};};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class fow_v_cromwell {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.3;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.3;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 1.5)};addCamShake [_rec * 0.1, _time * 3, 9]} else {if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 4)};};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
+		};
+	};
+	class csa38_tank_base {
+		class twc_gunshake {
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.3;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 1.5)};addCamShake [_rec * 0.1, _time * 3, 9]} else {if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 4)};};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
 		};
 	};
 	class churchill_base_F {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 2)};addCamShake [_rec * 0.1, _time * 3, 9]};addCamShake [_rec, _time, 15];};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 0.2;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 15;_time = 1;if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 1.5)};addCamShake [_rec * 0.1, _time * 3, 9]} else {if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 4)};};if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};addCamShake [_rec, _time, 15];};";
 		};
 	};
 };
@@ -1113,18 +1031,36 @@ class Extended_Init_EventHandlers
 			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,10];";
 		};
 	};
+	
+	class CUP_Ural_BaseTurret
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.65]";
+		};
+	};
+	
+	class CUP_UAZ_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.01,0.65]";
+		};
+	};
+	
+	
 	class Helicopter
 	{
 		class aihearing
 		{
-			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,300];";
+			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,1300];";
 		};
 	};
 	class Plane
 	{
 		class aihearing
 		{
-			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,500];";
+			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,1500];";
 		};
 	};
 };
@@ -1144,6 +1080,7 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
 		hiddenSelectionsMaterials[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_us.rvmat"};
 	};
+	
 
 	class MRAP_01_base_F;
 	class UK3CB_BAF_Panther_Base: MRAP_01_base_F {
@@ -1176,6 +1113,62 @@ class CfgVehicles {
 				width = "0.2";
 			};
 		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.2; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.5; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 1.3; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.8; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.1; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	class UK3CB_BAF_Husky_Base: MRAP_01_base_F {
+		class Wheels {
+			class LF {
+				boneName = "wheel_1_1";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
+				latStiffX = 25;
+				latStiffY = 180;
+				longitudinalStiffnessPerUnitGravity = 5000;
+				mass = 30;
+				maxBrakeTorque = 4500;
+				maxCompression = 0.3;
+				maxDroop = 0.05;
+				maxHandBrakeTorque = 4500;
+				moi = 40.5;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 32000;
+				sprungMass = 2925;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+		};
+		
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.2; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.5; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 1.3; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.8; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.1; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
 	};
 	
 	class Truck_F;
@@ -1183,6 +1176,155 @@ class CfgVehicles {
 	{
 		class wheels;
 		class complexgearbox;
+	};
+	class CUP_Ural_BaseTurret: Truck_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 12500;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 2000;
+				mMaxDroop = 0.15;
+				MOI = 70;
+				side = "left";
+				springDamperRate = 6000;
+				springStrength = 85000;
+				sprungMass = 2750;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+			};
+			class LR2: LR
+			{
+				boneName = "wheel_1_3_damper";
+				boundary = "wheel_1_3_bound";
+				center = "wheel_1_3_axis";
+				suspForceAppPointOffset = "wheel_1_3_axis";
+				tireForceAppPointOffset = "wheel_1_3_axis";
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+			};
+			class RR2: RR
+			{
+				boneName = "wheel_2_3_damper";
+				boundary = "wheel_2_3_bound";
+				center = "wheel_2_3_axis";
+				suspForceAppPointOffset = "wheel_2_3_axis";
+				tireForceAppPointOffset = "wheel_2_3_axis";
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class Van_01_base_F: Truck_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.15;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+			};
+		};
 	};
 	class UK3CB_BAF_MAN_HX60_Base: Truck_01_base_F
 	{
@@ -1216,8 +1358,8 @@ class CfgVehicles {
 				maxHandBrakeTorque = 0;
 				moi = 60;
 				side = "left";
-				springDamperRate = 11000;
-				springStrength = 85000;
+				springDamperRate = 7000;
+				springStrength = 40000;
 				sprungMass = 2750;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
@@ -1227,28 +1369,41 @@ class CfgVehicles {
 			};
 			class RF: LF
 			{
-				springDamperRate = 11000;
-				springStrength = 85000;
+				springDamperRate = 7000;
+				springStrength = 40000;
 				sprungMass = 2750;
 				maxBrakeTorque = 4500;
 			};
 			class RF2: RF
 			{
-				springDamperRate = 22000;
+				springDamperRate = 7000;
 				maxCompression = 0.2;
-				springStrength = 95000;
+				springStrength = 40000;
 				sprungMass = 2750;
 				maxBrakeTorque = 4500;
 			};
 			class LF2: LF
 			{
-				springDamperRate = 22000;
+				springDamperRate = 7000;
 				maxCompression = 0.2;
-				springStrength = 95000;
+				springStrength = 40000;
 				sprungMass = 2750;
 				maxBrakeTorque = 4500;
 			};
 		};
+		
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.2; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+             
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.7; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.2; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
 	};
 	
 	class UK3CB_BAF_MAN_HX58_Base: UK3CB_BAF_MAN_HX60_Base
@@ -1278,8 +1433,8 @@ class CfgVehicles {
 				maxHandBrakeTorque = 0;
 				moi = 60;
 				side = "left";
-				springDamperRate = 11000;
-				springStrength = 85000;
+				springDamperRate = 7000;
+				springStrength = 40000;
 				sprungMass = 2750;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
@@ -1289,30 +1444,36 @@ class CfgVehicles {
 			};
 			class RF: LF
 			{
-				springDamperRate = 11000;
-				springStrength = 85000;
+				springDamperRate = 7000;
+				springStrength = 40000;
 				sprungMass = 2750;
 				maxBrakeTorque = 4500;
 			};
 			class RF2: RF
 			{
-				springDamperRate = 22000;
-				maxCompression = 0.2;
-				springStrength = 95000;
+				springDamperRate = 7000;
+				maxCompression = 0.4;
+				springStrength = 40000;
 				sprungMass = 2750;
 				maxBrakeTorque = 4500;
 			};
 			class LF2: LF
 			{
-				springDamperRate = 22000;
-				maxCompression = 0.2;
-				springStrength = 95000;
+				springDamperRate = 7000;
+				maxCompression = 0.4;
+				springStrength = 40000;
 				sprungMass = 2750;
 				maxBrakeTorque = 4500;
 			};
 		};
 	};
 	
+	class APC_Tracked_02_base_F;
+	class rhs_zsutank_base:APC_Tracked_02_base_F
+	{
+		armor = 150;
+		armorstructural = 450;
+	};
 	
 	class Tank;
 	class Tank_F: Tank
@@ -1322,6 +1483,10 @@ class CfgVehicles {
 			class MainTurret;
 		};
 	};
+	class rhs_a3t72tank_base: Tank_F
+	{
+		armor = 250;
+	};
 	
 	class CUP_MCV80_Base : Tank_F
 	{
@@ -1329,20 +1494,13 @@ class CfgVehicles {
 		{
 			class MainTurret : MainTurret
 			{
-				magazines[] = {"ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_APDS","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","ukcw_3rd_L21A1_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+				magazines[] = {"twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_AP","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","twc_3rnd_30mm_HE","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M","CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M"};
+				stabilizedInAxes = 0;
 			};
 		};
 	};
 	
-	class Helicopter_Base_H;
-	class CUP_CH47F_base: Helicopter_Base_H
-	{
-		backRotorForceCoef = 0.9;
-		cyclicForwardForceCoef = 1.5;
-		cyclicAsideForceCoef = 1.3;
-		bodyFrictionCoef = 1.4;
-		armorStructural = 20;
-	};
+	#include "Helicopters.hpp"
 	
 //handling modifications
 	class Car;
@@ -1353,6 +1511,634 @@ class CfgVehicles {
 		};
 	};
 	
+	class CUP_C_Golf4_Base: Car_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.15;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				steering = 0;
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				steering = 0;
+			};
+		};
+	};
+	
+	class CUP_C_Golf4_Civ_Base: CUP_C_Golf4_Base
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.15;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				steering = 0;
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				steering = 0;
+			};
+		};
+	};
+	
+	class CUP_C_Golf4_Civ_sport_Base: CUP_C_Golf4_Civ_Base
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.15;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 36000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				steering = 0;
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				steering = 0;
+			};
+		};
+	};
+	
+	class CUP_SUV_Base: Car_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.05;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.05;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 1300;
+				springStrength = 13000;
+				sprungMass = 925;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				steering = 0;
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				steering = 0;
+			};
+		};
+	};
+	
+	class CUP_SUV_Unarmed_Base: CUP_SUV_Base
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.15;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 1300;
+				springStrength = 13000;
+				sprungMass = 925;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				steering = 0;
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				steering = 0;
+			};
+		};
+	};
+	
+	class CUP_Datsun_Base: Car_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.15;
+				mMaxDroop = 0.15;
+				maxHandBrakeTorque = 1500;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 1000;
+				springStrength = 13000;
+				sprungMass = 900;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				steering = 0;
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				steering = 0;
+			};
+		};
+	};
+	
+	
+	class CUP_Lada_Base: Car_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.3;
+				MaxDroop = 0.05;
+				mMaxDroop = 0.05;
+				maxHandBrakeTorque = 1500;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 1100;
+				springStrength = 15000;
+				sprungMass = 1200;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				steering = 0;
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				steering = 0;
+			};
+		};
+	};
+	
+	class CUP_Volha_Base: Car_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.3;
+				MaxDroop = 0.05;
+				mMaxDroop = 0.05;
+				maxHandBrakeTorque = 1500;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 1100;
+				springStrength = 15000;
+				sprungMass = 1200;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				steering = 0;
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				steering = 0;
+			};
+		};
+	};
+	
+	class CUP_Skoda_Base: Car_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.3;
+				MaxDroop = 0.05;
+				mMaxDroop = 0.05;
+				maxHandBrakeTorque = 1500;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 1100;
+				springStrength = 15000;
+				sprungMass = 1200;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				steering = 0;
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				steering = 0;
+			};
+		};
+	};
+	
+	class CUP_UAZ_Base: Car_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 0.1;
+				dampingRateDamaged = 1;
+				dampingRateDestroyed = 1000;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				mass = 90;
+				maxBrakeTorque = 9000;
+				maxCompression = 0.4;
+				MaxDroop = 0.0;
+				maxHandBrakeTorque = 1500;
+				mMaxDroop = 0.0;
+				MOI = 40;
+				side = "left";
+				springDamperRate = 1500;
+				springStrength = 16000;
+				sprungMass = 725;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-0.8,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = "0.2";
+			};
+			class LR: LF
+			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				tireForceAppPointOffset = "wheel_1_2_axis";
+			};
+			class RF: LF
+			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				side = "right";
+			};
+			class RR: RF
+			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				tireForceAppPointOffset = "wheel_2_2_axis";
+			};
+		};
+	};
 	
 	class Quadbike_01_base_F: Car_F {
 		antiRollbarForceCoef = 30;
@@ -1361,11 +2147,13 @@ class CfgVehicles {
 		antiRollbarSpeedMax = 100;
 		ace_cargo_size = 10;
 		ace_cargo_canLoad = 1;	
-		torqueCurve[] = {{0,0.2},{0.278,0.3},{0.35,0.35},{0.461,0.4},{0.7,0.3},{0.75,0.3},{0.8,0.25},{1,0.2}};
+		//torqueCurve[] = {{0,0.3},{0.278,0.35},{0.35,0.35},{0.461,0.4},{0.7,0.3},{0.75,0.3},{0.8,0.25},{1,0.2}};
+		torqueCurve[] = {{0,0.6},{0.2,0.65},{0.3,0.8},{0.7,0.95},{0.8,1},{0.9,0.95},{1,0.5}};
+		peakTorque = 220;
 		enginepower = 10;
 		ace_cargo_hasCargo = 1;
 		ace_cargo_space = 2;
-		clutchStrength = 30;
+		clutchStrength = 10;
 		differentialType = "all_limited";
 		frontRearSplit = 0.1;
 		frontBias = 1.1;
@@ -1388,14 +2176,14 @@ class CfgVehicles {
 				longitudinalStiffnessPerUnitGravity = 5000;
 				mass = 30;
 				maxBrakeTorque = 700;
-				maxCompression = 0.25;
+				maxCompression = 0.4;
 				maxDroop = 0.25;
 				maxHandBrakeTorque = 0;
-				MOI = 10.3;
+				MOI = 20;
 				side = "left";
 				springDamperRate = 1000;
-				springStrength = 9050;
-				sprungMass = 50;
+				springStrength = 50;
+				sprungMass = 100;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				suspTravelDirection[] = {-0.125,-1,0};
@@ -1409,7 +2197,7 @@ class CfgVehicles {
 				maxHandBrakeTorque = 800;
 				frictionVsSlipGraph[] = {[0,0.8],[0.5,0.9],[1,0.5]};
 				latStiffX = 25;
-				springDamperRate = 650;
+				springDamperRate = 1500;
 				steering = 0;
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
@@ -1430,7 +2218,7 @@ class CfgVehicles {
 				maxHandBrakeTorque = 800;
 				frictionVsSlipGraph[] = {[0,0.8],[0.5,0.9],[1,0.5]};
 				latStiffX = 25;
-				springDamperRate = 650;
+				springDamperRate = 1500;
 				steering = 0;
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
@@ -1442,16 +2230,16 @@ class CfgVehicles {
        {
 			maxTurnHundred = 0.5;
 			turnDecreaseConst = 9;
-			turnDecreaseLinear = 0;
+			turnDecreaseLinear = 1;
 			turnDecreaseTime = 0;
 			turnIncreaseConst = 0.1;
-			turnIncreaseLinear = 2.5;
+			turnIncreaseLinear = 1;
 			turnIncreaseTime = 1;
        };
 	};
 	
 	
-	class UK3CB_BAF_Jackal_Base_D : Car_F {
+	class UK3CB_BAF_Jackal_Base : Car_F {
 		class turrets: turrets
 		{
 			class mainturret;
@@ -1467,19 +2255,35 @@ class CfgVehicles {
 		maxSpeed = 150;
 		enginePower = 185;
 		armor = 310;
+		clutchStrength = 5;
+		brakeIdleSpeed = 1.2;
 		class Wheels:Wheels {
 			class LF:LF {
 				springDamperRate = 22000;
 				springStrength = 80000;
 				maxCompression = 0.3;
-				maxBrakeTorque = 7000;
-				maxHandBrakeTorque = 11000;
-				frictionVsSlipGraph[] = {{ 0.0, 0.75 }, { 0.3, 0.7 }, { 1.0, 0.65 }};
+				maxBrakeTorque = 6000;
+				MOI = 70;
+				maxHandBrakeTorque = 5000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.3, 0.5 }, { 1.0, 0.4 }};
 			};
 		};
 		
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.07; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.5; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.6; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.8; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.1; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.3; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+		
 	};
-	class UK3CB_BAF_Coyote_L111A1_Base_D: UK3CB_BAF_Jackal_Base_D
+	class UK3CB_BAF_Coyote_L111A1_Base: UK3CB_BAF_Jackal_Base
 	{
 		class Turrets: Turrets
 		{
@@ -1503,7 +2307,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class UK3CB_BAF_Jackal2_L111A1_Base_D: UK3CB_BAF_Coyote_L111A1_Base_D {
+	class UK3CB_BAF_Jackal2_L111A1_Base_D: UK3CB_BAF_Coyote_L111A1_Base {
 		
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
@@ -1513,14 +2317,14 @@ class CfgVehicles {
 	};
 	
 	
-	class UK3CB_BAF_Coyote_Passenger_L111A1_D: UK3CB_BAF_Coyote_L111A1_Base_D {
+	class UK3CB_BAF_Coyote_Passenger_L111A1_D: UK3CB_BAF_Coyote_L111A1_Base {
 		
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
 		turnCoef = 1.8;
 	};
-	class UK3CB_BAF_Coyote_L134A1_Base_D;
-	class UK3CB_BAF_Jackal2_L134A1_Base_D: UK3CB_BAF_Coyote_L134A1_Base_D {
+	class UK3CB_BAF_Coyote_L134A1_Base;
+	class UK3CB_BAF_Jackal2_L134A1_Base_D: UK3CB_BAF_Coyote_L134A1_Base {
 		
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
@@ -1529,11 +2333,136 @@ class CfgVehicles {
 		ace_cargo_canLoad = 1;
 	};
 		
-	class UK3CB_BAF_Coyote_Passenger_L134A1_D: UK3CB_BAF_Coyote_L134A1_Base_D {
+	class UK3CB_BAF_Coyote_Passenger_L134A1_D: UK3CB_BAF_Coyote_L134A1_Base {
 		
 		antiRollbarForceCoef = 20;
 		antiRollbarForceLimit = 17;
 		turnCoef = 1.8;
+	};
+	
+			
+	
+	class CUP_Hilux_Base: Car_F {
+		
+		ace_cargo_size = 35;
+		ace_cargo_canLoad = 1;	
+		antiRollbarForceCoef = 4.0;
+		antiRollbarForceLimit = 3;
+		differentialType = "all_limited";
+		frontRearSplit = 0.9;
+		frontBias = 1.5;
+		rearBias = 1.5;
+		centreBias = 1.5;
+		class Turrets;
+		class Wheels:Wheels {
+			class LF:LF {
+				boneName = "wheel_1_1_damper";
+				boundary = "wheel_1_1_bound";
+				center = "wheel_1_1_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				frictionVsSlipGraph[] = {{ 0.0, 1.2 }, { 0.8, 1 }, { 1.0, 0.3 }};
+				latStiffX = 15;
+				latStiffY = 20;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 3250;
+				maxCompression = 0.25;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 5000;
+				moi = 6;
+				side = "left";
+				springDamperRate = 4500;
+				springStrength = 16000;
+				sprungMass = 525;
+				steering = 1;
+				suspForceAppPointOffset = "wheel_1_1_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_1_1_axis";
+				width = 0.285;
+				};
+				class LR: LF {
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				frictionVsSlipGraph[] = {{ 0.0, 1.2 }, { 0.8, 1 }, { 1.0, 0.3 }};
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 2950;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 5000;
+				moi = 6;
+				side = "left";
+				sprungMass = 525;
+				steering = 0;
+				suspForceAppPointOffset = "wheel_1_2_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_1_2_axis";
+				width = 0.285;
+				};
+				class RF: LF {
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 3250;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 5000;
+				moi = 6;
+				side = "right";
+				steering = 1;
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				width = 0.285;
+				};
+				class RR: LR {
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 2950;
+				maxDroop = 0.1;
+				maxHandBrakeTorque = 5000;
+				moi = 6;
+				side = "right";
+				steering = 0;
+				suspForceAppPointOffset = "wheel_2_2_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_2_2_axis";
+				width = 0.285;
+				};
+			};
+		/*
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.4; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.5; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 1.3; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.8; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.1; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.3; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	   */
 	};
 	
 			
@@ -1559,15 +2488,15 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
+				frictionVsSlipGraph[] = {{ 0.0, 1.2 }, { 0.8, 1 }, { 1.0, 0.3 }};
 				latStiffX = 15;
 				latStiffY = 20;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 3250;
 				maxCompression = 0.25;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 0;
+				maxDroop = 0.3;
+				maxHandBrakeTorque = 5000;
 				moi = 6;
 				side = "left";
 				springDamperRate = 4500;
@@ -1587,12 +2516,12 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 1.2 }, { 0.5, 1 }, { 1.0, 0.6 }};
+				frictionVsSlipGraph[] = {{ 0.0, 1.2 }, { 0.8, 1 }, { 1.0, 0.3 }};
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 2950;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 9000;
+				maxDroop = 0.3;
+				maxHandBrakeTorque = 5000;
 				moi = 6;
 				side = "left";
 				sprungMass = 525;
@@ -1613,8 +2542,8 @@ class CfgVehicles {
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 3250;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 0;
+				maxDroop = 0.3;
+				maxHandBrakeTorque = 5000;
 				moi = 6;
 				side = "right";
 				steering = 1;
@@ -1634,8 +2563,8 @@ class CfgVehicles {
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 2950;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 9000;
+				maxDroop = 0.3;
+				maxHandBrakeTorque = 5000;
 				moi = 6;
 				side = "right";
 				steering = 0;
@@ -1660,7 +2589,7 @@ class CfgVehicles {
 		antiRollbarForceLimit = 40;
 		antiRollbarSpeedMin = 5;
 		antiRollbarSpeedMax = 100;
-		terrainCoef = 5.0;
+		terrainCoef = 2.0;
 		turncoef = 2.0;
 		armor = 700;
 		clutchStrength = 150;
@@ -1700,15 +2629,15 @@ class CfgVehicles {
 		
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
-           turnIncreaseConst  = 0.4; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 2.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 2.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
              
-           turnDecreaseConst  = 2.0; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.7; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
            turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
              
-           maxTurnHundred     = 0.1; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
        };
 	   
 		class EventHandlers: EventHandlers {
@@ -1723,7 +2652,7 @@ class CfgVehicles {
 		antiRollbarForceLimit = 40;
 		antiRollbarSpeedMin = 30;
 		antiRollbarSpeedMax = 100;
-		terrainCoef = 5.0;
+		terrainCoef = 2.0;
 		turncoef = 2.0;
 		armor = 700;
 		clutchStrength = 150;
@@ -1760,16 +2689,15 @@ class CfgVehicles {
 				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
 			};
 		};
-		
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
-           turnIncreaseConst  = 0.4; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 2.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 2.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
-             
-           turnDecreaseConst  = 2.0; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
-           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+           turnIncreaseConst  = 0.03; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.3; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.3; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.4; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.1; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
              
            maxTurnHundred     = 0.1; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
        };
@@ -1830,6 +2758,13 @@ class cfgMagazines
 	{};
 	class rhsusf_mag_10Rnd_STD_50BMG_M33: 10Rnd_RHS_50BMG_Box
 	{
+		ammo = "B_127x99_Ball_Tracer_Red";
+		initSpeed = 860;
+		displayName = "12.7x99mm 10Rnd (M33 Ball)";
+		descriptionShort = "Caliber: 12.7x99mm (M33 Ball)<br />Rounds: 10";
+	};
+	class rhsusf_mag_10Rnd_STD_50BMG_AMAX: rhsusf_mag_10Rnd_STD_50BMG_M33
+	{
 		ammo = "ACE_127x99_Ball_AMAX";
 		initSpeed = 860;
 		displayName = "12.7x99mm 10Rnd (AMAX)";
@@ -1851,6 +2786,22 @@ class cfgMagazines
 	{
 		displayNameShort = ".338 HPBT";
 		descriptionShort = "Caliber: .338LM (HPBT)<br />Hollow Point Boat-Tail (300 Grain)<br />Rounds: 10";
+	};
+		
+	class 250Rnd_30mm_HE_shells_Tracer_Red;
+	class twc_3rnd_30mm_HE: 250Rnd_30mm_HE_shells_Tracer_Red
+	{
+		displayNameShort = "30mm HE";
+		displayName = "HE";
+		count = 3;
+	};
+		
+	class 250Rnd_30mm_APDS_shells_Tracer_Red;
+	class twc_3rnd_30mm_AP: 250Rnd_30mm_APDS_shells_Tracer_Red
+	{
+		displayNameShort = "30mm APDS";
+		displayName = "APDS";
+		count = 3;
 	};
 		
 	

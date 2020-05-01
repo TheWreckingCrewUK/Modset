@@ -4,13 +4,44 @@ class CfgPatches
 	{
 		units[]=
 		{
+			"2000_USMC_Base",
+			"2000_USMC_Base_d",
+			"2000_USMC_Squadleader",
+			"2000_USMC_Squadleader_d",
+			"2000_USMC_Teamleader",
+			"2000_USMC_Teamleader_d",
+			"2000_USMC_Grenadier",
+			"2000_USMC_Grenadier_d",
+			"2000_USMC_Breacher",
+			"2000_USMC_Breacher_d",
+			"2000_USMC_Autorifleman",
+			"2000_USMC_Autorifleman_d",
+			"2000_USMC_AsstAutorifleman",
+			"2000_USMC_AsstAutorifleman_d",
+			"2000_USMC_Medic",
+			"2000_USMC_Medic_d",
+			"2000_USMC_Marksman",
+			"2000_USMC_Marksman_d",
+			
+			"Modern_USMC_Squadleader_d",
+			"Modern_USMC_Teamleader_d",
+			"Modern_USMC_Rifleman_d",
+			"Modern_USMC_Breacher_d",
+			"Modern_USMC_Autorifleman_d",
+			"Modern_USMC_AsstAutorifleman_d",
+			"Modern_USMC_MachineGunner_d",
+			"Modern_USMC_AsstMachineGunner_d",
+			"Modern_USMC_Medic_d",
+			
 			"Modern_USMC_Base",
 			"Modern_USMC_Squadleader",
 			"Modern_USMC_Teamleader",
+			"Modern_USMC_Breacher",
 			"Modern_USMC_Rifleman",
+			"Modern_USMC_MachineGunner",
+			"Modern_USMC_AsstMachineGunner",
 			"Modern_USMC_Autorifleman",
 			"Modern_USMC_AsstAutorifleman",
-			"Modern_USMC_Teamleader",
 			"Modern_USMC_Medic"
 			
 		};
@@ -66,6 +97,7 @@ class CfgVehicles
 	class B_Soldier_base_F;
 	
 	#include "usmarines.hpp"
+	#include "usmarines2000.hpp"
 	
 	#include "marinesbackpacks.hpp"
 };

@@ -73,7 +73,7 @@ class twc_oli_belt_2: twc_dpm_belt
 {
 	displayname = "Webbing Belt (Olive ALICE)";
 	model = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USArmy\CUP_v_ALICE_webbing.p3d";
-	hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
+	hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
 };
 class twc_tan_belt_2: twc_oli_belt_2
 {
@@ -150,7 +150,166 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 	class B_Carryall_cbr;
 	class UK3CB_BAF_B_Bergen_OLI_Rifleman_A;
 	class CUP_B_GER_Medic_Desert;
+	class UK3CB_BAF_B_Carryall_OLI;
+	class CUP_B_AlicePack_OD;
 	
+
+	class TWC_Backpack_1970_Sectionlead: twc_oli_belt_2
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+	};
+
+
+	class TWC_Backpack_1970_sniper: twc_oli_belt_2
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_mag
+			{
+				magazine = "ukcw_l42_10rnd_mag";
+				count = 17;
+			};
+		};
+	};
+
+	class TWC_Backpack_1970_rifleman_1: twc_oli_belt
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_mag
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 7;
+			};
+		};
+	};
+	class TWC_Backpack_1970_rifleman_2: twc_oli_belt_2
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_mag
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 7;
+			};
+		};
+	};
+	class TWC_Backpack_1970_machineGunner: twc_oli_belt_2
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_belt
+			{
+				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
+				count = 3;
+			};
+		};
+	};
+	class TWC_Backpack_1970_machineGunner_ass: CUP_B_AlicePack_OD
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_belt
+			{
+				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
+				count = 9;
+			};
+		};
+	};
+	class TWC_Backpack_1970_2ic: UK3CB_BAF_B_Carryall_OLI
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_mag
+			{
+				magazine = "UK3CB_BAF_762_20Rnd";
+				count = 15;
+			};
+			class _xx_belt
+			{
+				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
+				count = 3;
+			};
+		};
+	};
+	
+	class TWC_2000_Backpack_UKSF_2IC: UK3CB_BAF_B_Carryall_OLI
+	{
+		class TransportItems
+		{
+			class _xx_cabletie
+			{
+				name = "ACE_CableTie";
+				count = 5;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+				count = 15;
+			};
+			class _xx_stanag_Red
+			{
+				magazine = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+				count = 10;
+			};
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 2;
+			};
+		};
+	};
+
+	class TWC_Backpack_1990_spotter: twc_tan_belt_2
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+	};
+	class ger_backpack_leader_d;
+	class TWC_Backpack_1990_spotter_L: ger_backpack_leader_d
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC117F";
+				count = 1;
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_Smoke_Green
+			{
+				magazine = "SmokeShellGreen";
+				count = 2;
+			};
+		};
+	};
 
 	class TWC_Backpack_1990_armourcrew_webbing: twc_oli_belt_2
 	{
@@ -1228,7 +1387,6 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 		};		
 	};
-	class CUP_B_AlicePack_OD;
 	class twc_men_1990_us_w_backpack_teamlead: CUP_B_AlicePack_OD
 	{
 		scope = 1;
@@ -1551,22 +1709,50 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 		};
 	};
 	
-		class TWC_Backpack_2000_sniper_D: twc_back_webbing
+		class TWC_Backpack_2000_spotter_D: twc_ddpm_belt
 	{
 		scope = 1;
-		class TransportMagazines
-		{
-			class _xx_mag_762
-			{
-				magazine = "UK3CB_BAF_762_L42A1_10Rnd";
-				count = 6;
-			};
-		};
 		class TransportItems
 		{
 			class _xx_PRC_117F
 			{
-				name = "ACRE_PRC117F";
+				name = "ACRE_PRC152";
+				count = 1;
+			};
+            class _xx_tripod
+			{
+				name = "ACE_Tripod";
+				count = 1;
+			};
+            class _xx_scope
+			{
+				name = "ACE_SpottingScope";
+				count = 1;
+			};
+		};
+	};
+	
+		class TWC_Backpack_2000_sniper_D: twc_ddpm_belt
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_mags
+			{
+				magazine = "UK3CB_BAF_762_L42A1_10Rnd";
+				count = 5;
+			};
+		};
+		class TransportItems
+		{
+            class _xx_tripod
+			{
+				name = "ACE_Tripod";
+				count = 1;
+			};
+            class _xx_scope
+			{
+				name = "ACE_SpottingScope";
 				count = 1;
 			};
 		};

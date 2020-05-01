@@ -1,19 +1,31 @@
+/*
+ * Scans config entry for te vehicle for "TWC_bearingPositions" array. If defined, will add bearing for the seats defined.
+ * e.g. TWC_bearingPositions = {"driver", "commander", "gunner", "turret"};
+ *
+ * If not defined, falls back to a legacy checking system.
+ *
+ */
 params ["_player"];
 
-if (vehicle _player == _player) exitWith { false; }; // not in a vehicle
+if (!local _player) exitWith {};
+if (vehicle _player == _player) exitWith { false; };
 
-private _types = ["driver", "commander", "gunner"];
-private _vehicle = vehicle player;
-private _list = fullCrew [_vehicle, "", true];
+private _vehicle = vehicle _player;
+private _playerRole = toLower (_player call CBA_fnc_vehicleRole); // Turret is capitalised by the engine...
+
+private _vehicleHasSetting = isArray (configFile >> "CfgVehicles" >> typeOf (_vehicle) >> "TWC_bearingPositions");
+
+private _bearingPositions = [
+	(configFile >> "CfgVehicles" >> typeOf (_vehicle)),
+	"TWC_bearingPositions",
+	["driver", "commander", "gunner"]
+] call BIS_fnc_returnConfigEntry;
+
 private _return = false;
 
-{
-	if (toLower (_x select 1) in _types && _player == (_x select 0)) exitWith {
-		_return = true;
-	};
-} forEach _list;
+if (_playerRole in _bearingPositions) then { _return = true; };
 
-if (_return) then {
+if (_return && !(_vehicleHasSetting)) then {
 	_return = switch (true) do {
 		case (_vehicle isKindOf "ParachuteBase"): { false; };
 		case (_vehicle isKindOf "Tank");

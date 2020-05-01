@@ -40,16 +40,16 @@ class CfgVehicles {
 	#define ADD_QNTY(a) __EVAL(round a * CURRENT_VEHICLE)
 	#define ADD_FACTION faction = "TWC_WW2"
 
-	#include "vehicles/defines.hpp"
-	#include "vehicles/overwrites.hpp"
+	#include "vehicles\defines.hpp"
+	#include "vehicles\overwrites.hpp"
 	
-	#include "vehicles/airborne.hpp"
-	//#include "vehicles/amphibious.hpp"
-	#include "vehicles/armoured.hpp"
-	#include "vehicles/motorised.hpp"
+	#include "vehicles\airborne.hpp"
+	//#include "vehicles\amphibious.hpp"
+	#include "vehicles\armoured.hpp"
+	#include "vehicles\motorised.hpp"
 	
 	// To be deleted after a few months
-	#include "vehicles/legacy.hpp"
+	#include "vehicles\legacy.hpp"
 
 	// Objects that can be cut by Wire Cutter
 	#include "ACE_WireCutter_Support.hpp"

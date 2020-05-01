@@ -45,7 +45,8 @@ _sound = selectRandom _sounds;
 
 if (_lastPlayed == _sound) then { _sound = selectRandom _sounds; };
 
-playSound3D [_sound, _unit, false, (_unit modelToWorldWorld (_unit selectionPosition "head")), 1, (random [0.9, 1, 1.1]), 20];
+_volume = ((_unit getVariable ["ace_medical_pain", 0.1]) min 1.25) max 0.1;
+playSound3D [_sound, _unit, false, (_unit modelToWorldWorld (_unit selectionPosition "head")), _volume, (random [0.9, 1, 1.1]), 20];
 
 _time = 2 + (random 5);
 [twc_medical_fnc_unconSoundLoop, [_unit, _sound], _time] call CBA_fnc_waitAndExecute;

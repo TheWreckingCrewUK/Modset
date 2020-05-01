@@ -1,0 +1,41 @@
+[u][color=#ffffff]Starstreak Team[/color][/u]
+[color=#ff9933]AA Team Leader[/color] (T): [color=#ccccff]No-One[/color]
+AA Gunner (T): [color=#ccccff]No-One[/color]
+Assistant AA Gunner (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Javelin Team[/color][/u]
+[color=#ff9933]AT Team Leader[/color] (T): [color=#ccccff]No-One[/color]
+AT Gunner (T): [color=#ccccff]No-One[/color]
+Assistant AT Gunner (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]GPMG Team[/color][/u]
+[color=#ff9933]GPMG Team Leader[/color] (T): [color=#ccccff]No-One[/color]
+Machine Gunner: [color=#ccccff]No-One[/color]
+Assistant Machine Gunner: [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]GMG Team[/color][/u]
+[color=#ff9933]GMG Team Leader[/color] (T): [color=#ccccff]No-One[/color]
+Machine Gunner: [color=#ccccff]No-One[/color]
+Assistant Machine Gunner: [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]HMG Team[/color][/u]
+[color=#ff9933]HMG Team Leader[/color] (T): [color=#ccccff]No-One[/color]
+HMG Gunner (T): [color=#ccccff]No-One[/color]
+Assistant HMG Gunner (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]Sniper Team[/color][/u]
+[color=#ff9933]Spotter[/color] (T): [color=#ccccff]No-One[/color]
+Sniper (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]L6 Mortar[/color][/u]
+Platoon Mortar (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]L16 Mortar Team[/color][/u]
+Forward Observer (T): [color=#ccccff]No-One[/color]
+[color=#ff9933]Mortar Team Leader[/color] (T): [color=#ccccff]No-One[/color]
+Mortar Gunner (T): [color=#ccccff]No-One[/color]
+
+[u][color=#ffffff]L118 Artillery Team[/color][/u]
+Forward Observer (T): [color=#ccccff]No-One[/color]
+[color=#ff9933]Artillery Team Leader[/color] (T): [color=#ccccff]No-One[/color]
+Artillery Gunner (T): [color=#ccccff]No-One[/color]

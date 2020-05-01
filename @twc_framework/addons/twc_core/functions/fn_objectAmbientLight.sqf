@@ -9,6 +9,7 @@
 params ["_object", ["_range", 40]];
 
 _ambientLightLevel = 0;
+_lightLevel = 0;
 
 {
 	_ambientLightLevel = _lightLevel max ([_object, _x] call ace_common_fnc_lightIntensityFromObject);

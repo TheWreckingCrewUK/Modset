@@ -29,4 +29,10 @@ class CfgWeapons {
 	class LIB_M8_Launcher_P47: RocketPods {
 		cursorAim = "missile";
 	};
+	
+	//Ju-87 CAS Module Compatibility
+	class LIB_PlaneCannon_base;
+	class LIB_2xMG151_JU87: LIB_PlaneCannon_base {
+		cursorAim = "mg";
+	};
 };

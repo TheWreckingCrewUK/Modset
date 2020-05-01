@@ -17,7 +17,7 @@ if (!isPlayer _unit) exitWith {}; // don't care
 if (isDedicated || !hasInterface) exitWith {};
 
 if (alive _unit) then {
-	_debugMode = missionNameSpace getVariable ["twc_debugEnabled", false];
+	//_debugMode = missionNameSpace getVariable ["twc_debugEnabled", false];
 	_bloodVolume = (_unit getVariable ["ace_medical_bloodVolume", 100]);
 
 	// makes time to death dynamic based on current blood level, will restore with saline
@@ -32,6 +32,18 @@ if (alive _unit) then {
 	};
 
 	missionNamespace setVariable ["ace_medical_maxReviveTime", _adjustedMaxTime];
+	
+	_unCon = (_unit getVariable ["ACE_isUnconscious", false]);
+	if !(_unCon) then {
+		_pain = _unit getVariable ["ace_medical_pain", 0];
+		_painSuppress = _unit getVariable ["ace_medical_painSuppress", 0];
+		
+		if (_pain > _painSuppress) then {
+			if ((_pain - _painSuppress) > 2 && {random(1) > 0.8}) then {
+				[_unit] call ace_medical_fnc_setUnconscious;
+			};
+		};
+	};
 };
 
 // will keep checking during spectate, but does give respawn compat (public)

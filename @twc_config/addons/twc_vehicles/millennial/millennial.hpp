@@ -8,7 +8,6 @@
 #define MILLENNIAL_SCIMITAR_MOD 1
 #define MILLENNIAL_SCORPION_MOD 1
 #define MILLENNIAL_CHIEFTAIN_MOD 1
-#define MILLENNIAL_LYNX_MOD 1
 #define MILLENNIAL_PUMA_MOD 1
 
 // section vehicle resupply total (manipulated by modifiers)
@@ -30,6 +29,8 @@
 #define MILLENNIAL_SECTION_MECHANISED_EARLY_RIFLE_T 16
 
 #define MILLENNIAL_SECTION_LAW80 2
+
+#define MILLENNIAL_GPMG 4
 
 // late millennial (oughts) - not doing for the moe
 

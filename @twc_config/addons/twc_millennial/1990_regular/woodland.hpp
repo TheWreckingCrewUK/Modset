@@ -4,25 +4,25 @@ class TWC_Infantry_1990_Regular_Woodland_Rifleman: TWC_Infantry_Millennial_Base
 {
 	scope = 2;
 	displayName = "Rifleman";
-	weapons[]=
+	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
 		"Throw",
 		"Put"
 	};
-	respawnweapons[]=
+	respawnweapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
 		"Throw",
 		"Put"
 	};
-	magazines[]=
+	magazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		"SmokeShell"
 	};
-	respawnmagazines[]=
+	respawnmagazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
@@ -32,20 +32,22 @@ class TWC_Infantry_1990_Regular_Woodland_Rifleman: TWC_Infantry_Millennial_Base
 class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
 	displayName = "Rifleman (AT)";
-	weapons[]=
+	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
 		"ukcw_law80",
 		"Throw",
 		"Put"
 	};
-	respawnweapons[]=
+	respawnweapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
 		"ukcw_law80",
 		"Throw",
 		"Put"
 	};
+	magazines[] += {"ukcw_law80_magazine", "ukcw_law80_magazine_spotting"};
+	respawnmagazines[] += {"ukcw_law80_magazine", "ukcw_law80_magazine_spotting"};
 };
 class TWC_Infantry_1990_Regular_Woodland_Gunner: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
@@ -120,11 +122,10 @@ class TWC_Infantry_1990_Regular_Woodland_SectionCommander: TWC_Infantry_1990_Reg
 	};
 	
 	nightItems[] = {
-		"B_IR_Grenade",
-		"ACE_HandFlare_White",
-		"ACE_HandFlare_White",
-		"Chemlight_green",
-		"Chemlight_green"
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_MX991",
+		"B_IR_Grenade"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_2iC: TWC_Infantry_1990_Regular_Woodland_SectionCommander
@@ -178,11 +179,10 @@ class TWC_Infantry_1990_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 	};
 	
 	nightItems[] = {
-		"B_IR_Grenade",
-		"ACE_HandFlare_White",
-		"ACE_HandFlare_White",
-		"Chemlight_green",
-		"Chemlight_green"
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_MX991",
+		"B_IR_Grenade"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_1990_Regular_Woodland_Platoon_Commander
@@ -558,14 +558,14 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Gunner: TWC_Infantry_1990_Regular_W
 	weapons[] =
 	{
 		"TWC_Weapon_L135A1",
-		"ukcw_hipower",
+		"UK3CB_BAF_L9A1",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L135A1",
-		"ukcw_hipower",
+		"UK3CB_BAF_L9A1",
 		"Throw",
 		"Put"
 	};
@@ -584,13 +584,13 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Gunner: TWC_Infantry_1990_Regular_W
 	magazines[] =
 	{
 		MAG_7("UK3CB_BAF_127_10Rnd"),
-		MAG_3("ukcw_13rd_9x19"),
+		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
-		MAG_3("ukcw_13rd_9x19"),
+		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("SmokeShell")
 	};
 };
@@ -629,11 +629,10 @@ class TWC_Infantry_1990_Regular_Woodland_FAC: TWC_Infantry_1990_Regular_Woodland
 	};
 	
 	nightItems[] = {
-		"B_IR_Grenade",
-		"ACE_HandFlare_White",
-		"ACE_HandFlare_White",
-		"Chemlight_green",
-		"Chemlight_green"
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_MX991",
+		"B_IR_Grenade"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millennial_Base
@@ -652,11 +651,11 @@ class TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millenni
 	};
 	respawnLinkedItems[] =
 	{
-			"UK3CB_BAF_V_Pilot_DPMW",
-			"UK3CB_BAF_H_PilotHelmetHeli_A",
-			"ItemCompass",
-			"itemMap",
-			"ItemWatch"
+		"UK3CB_BAF_V_Pilot_DPMW",
+		"UK3CB_BAF_H_PilotHelmetHeli_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 	weapons[] =
 	{
@@ -703,9 +702,35 @@ class TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander: TWC_Infantry_1990_Re
 		"itemMap",
 		"ItemWatch"
 	};
+	weapons[] =
+	{
+		"TWC_Weapon_L85A1",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_L85A1",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Vehicle_Crew: TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander
 {
 	displayName = "Vehicle Crew";
 	TWC_isCommandRole = 0;
+	weapons[] =
+	{
+		"TWC_Weapon_L85A1",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_L85A1",
+		"Throw",
+		"Put"
+	};
 };

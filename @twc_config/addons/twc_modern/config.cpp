@@ -236,9 +236,13 @@ class CfgVehicles
 	};
 	#include "regular\woodland.hpp"
 	#include "regular\woodland_dismounted.hpp"
+	#include "regular\nbc.hpp"
+	#include "regular\nbc_dismounted.hpp"
 
 	#include "coin\woodland.hpp"
 	#include "coin\woodland_dismounted.hpp"
+	#include "coin\nbc.hpp"
+	#include "coin\nbc_dismounted.hpp"
 };
 
 class CfgGroups

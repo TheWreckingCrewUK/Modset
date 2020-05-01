@@ -5,6 +5,12 @@ class CfgMagazines {
 		displayName = "NO. 82 AT Grenade";
 	};
 	
+	class LIB_HandGrenade_base;
+	class LIB_No82: LIB_HandGrenade_base
+	{
+		mass = 20;
+	};
+	
 	class UGL_FlareGreen_F;
 	class UGL_FlareRed_F;
 	class UGL_FlareYellow_F;

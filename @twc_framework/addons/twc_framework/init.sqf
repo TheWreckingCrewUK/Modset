@@ -8,7 +8,11 @@ waitUntil { sleep 0.5; !(isNull player) };
 waitUntil { sleep 1.271; time > 0 };
 
 ACE_maxWeightDrag = 100000;
-ACE_maxWeightCarry = 100000;
+ACE_maxWeightCarry = 700;
+
+_action = ["CheckID", "Check Vehicle ID", "", {[_target] call twc_fnc_checkvehicleid}, {true}] call ace_interact_menu_fnc_createAction;
+["LandVehicle", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+
 /*
 //storing an extra weapon on the back.  will soon put weapon animation on it as well
 //made mostly for coin rifleman and csms.

@@ -10,7 +10,7 @@ class CfgPatches {
 	};
 };
 
-#include "CfgSounds.hpp"
-#include "CfgLeaflets.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgLeaflets.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"

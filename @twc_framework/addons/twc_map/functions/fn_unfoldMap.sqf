@@ -36,6 +36,7 @@ _callerMarkers = [];
 			_cutter = "Land_ClutterCutter_Small_F" createVehicle [0,0,0];
 			_cutter setPos _pos;
 			_mapObject setPos _pos;
+			_mapObject setDir (getDir _caller) + 90;
 		} else {
 			_mapObject attachTo [_target, _pos, _memPoint];
 			_mapObject setVectorDirAndUp _vector;

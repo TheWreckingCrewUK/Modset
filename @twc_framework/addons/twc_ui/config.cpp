@@ -8,7 +8,9 @@ class CfgPatches {
 		requiredAddons[] = {
 			"cba_main",
 			"A3_Modules_F",
-			"A3_Dubbing_Radio_F"
+			"A3_Dubbing_Radio_F",
+			"A3_Ui_F",
+			"ace_movement"
 		};
 		
 		author = "Bosenator";
@@ -19,29 +21,9 @@ class CfgPatches {
 	};
 };
 
-class CfgFunctions {
-	class TWC_UI {
-		tag = "TWC_UI";
-		class init {
-			file = "TWC_UI\functions";
-			class init { postInit = 1; };
-			
-			class addDisplay {};
-			class getVisualBearingLocal {};
-			class hideBearing {};
-			class shouldDisplay {};
-			class removeDisplay {};
-			class showBearing {};
-			class hudReset {};
-			
-			/** adds hide functionality to ace spectator camera **/
-			class handleSpectateCompass {};
-			class toggleSpectateCompass {};
-		};
-	};
-};
+#include "CfgFunctions.hpp"
 
-#include "RscTitles.hpp"
-#include "DefaultVehicleSystemsDisplayManager.hpp"
-#include "RadioProtocolBase.hpp"
-#include "ACE_Spectator_Display.hpp"
+#include "ui\ACE_Spectator_Display.hpp"
+#include "ui\DefaultVehicleSystemsDisplayManager.hpp"
+#include "ui\RadioProtocolBase.hpp"
+#include "ui\RscTitles.hpp"

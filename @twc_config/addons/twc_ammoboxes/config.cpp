@@ -46,19 +46,22 @@ class CfgPatches {
 			"TWC_AmmoBox_Other_L118_Portable_ILLUM",
 			"TWC_AmmoBox_Launchers_L14_Portable",
 			"TWC_AmmoBox_Launchers_L1A1_Portable",
+			"TWC_AmmoBox_Launchers_LASM_Portable",
 			"TWC_AmmoBox_Launchers_LAW80_Portable",
 			"TWC_AmmoBox_Launchers_L2A1_Portable",
 			"TWC_AmmoBox_Launchers_NLAW_Portable",
 			"TWC_AmmoBox_Other_Stinger_Portable",
 			"TWC_AmmoBox_Other_Command_Portable",
 			"TWC_AmmoBox_Other_Pallet",
-			"TWC_AmmoBox_Other_Empty_Portable" 
+			"TWC_AmmoBox_Other_Empty_Portable",
+			"TWC_AmmoBox_Training_Medical_Base"
 		};
 		
 		weapons[] = {};
 		requiredVersion = 1;
 		
 		requiredAddons[] = {
+			"cba_main",
 			"A3_Weapons_F",
 			"a3_structures_f_epa",
 			"uk3cb_baf_weapons",
@@ -72,6 +75,14 @@ class CfgPatches {
 		version = "1";
 		projectName = "TWC";
 		author = "Bosenator";
+	};
+};
+
+class Extended_Init_EventHandlers {
+	class TWC_AmmoBox_Other_Pallet {
+		class TWC_AmmoBox_EH {
+			serverInit = "_this setMass 10; _this setCenterOfMass [0,-1,0];";
+		};
 	};
 };
 
@@ -135,4 +146,5 @@ class CfgVehicles {
 	#include "crates_vehicles.hpp"
 	#include "crates_other.hpp"
 	#include "crates_launchers.hpp"
+	#include "crates_training.hpp"
 };

@@ -180,7 +180,18 @@ class cfgWeapons
 };
 
 class CfgGroups {
-	class East {
+	class WEST {
+		name = "BLUFOR";
+		side = 1;
+		class TWC_Operation_BLUFOR_ColdWar {
+			name = "TWC Operations - Cold War";
+			
+			/* COLDWAR COMPOSITIONS - GROUP DEFINES */
+			#include "compositions\1980_usa.hpp"
+		};
+	};
+
+	class EAST {
 		name = "OPFOR";
 		side = 0;
 		
@@ -207,7 +218,7 @@ class CfgGroups {
 		};
 	};
 
-	class Independent {
+	class INDEP {
 		name = "INDEPENDENT";
 		side = 2;
 		class TWC_Operation_INDEP_ColdWar {
@@ -220,6 +231,21 @@ class CfgGroups {
 };
 
 class CfgVehicles {
+	#define MEDICAL_LOADOUT "ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
+	#define MAG_2(a) a, a
+	#define MAG_3(a) a, a, a
+	#define MAG_4(a) a, a, a, a
+	#define MAG_5(a) a, a, a, a, a
+	#define MAG_6(a) a, a, a, a, a, a
+	#define MAG_7(a) a, a, a, a, a, a, a
+	#define MAG_8(a) a, a, a, a, a, a, a, a
+	#define MAG_9(a) a, a, a, a, a, a, a, a, a
+	#define MAG_10(a) a, a, a, a, a, a, a, a, a, a
+	#define MAG_11(a) a, a, a, a, a, a, a, a, a, a, a
+	#define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
+	#define CATEGORY(a) editorSubcategory = a;\
+						vehicleClass= a;
+
 	// Time saving MACROs - NC = Non-Conflict
 	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
 	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
@@ -248,7 +274,7 @@ class CfgVehicles {
 //	#include "USSRAfghan.hpp"
 	
 	#include "units\takistan.hpp"
-	#include "units\usa_1970.hpp"
+	#include "units\usa_1980.hpp"
 	#include "units\pirates.hpp"
 	#include "units\WaPArmy_Taviana.hpp"
 	#include "units\aden.hpp"

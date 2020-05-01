@@ -15,37 +15,42 @@
 * NOTHING
 *
 * Example:
-* [mortar1,"mortarTargetMarker",150,5,"HE",15] call twc_fnc_artillery;
+* ["mortarTargetMarker", 150, 5, "HE", 15] call twc_fnc_virtualMortar;
 *
 * Public: No
 */
 
-
 if (isServer) then {
-	Params ["_marker",["_radius",200],["_rounds",5],["_Roundselect",""],["_delay",10],["_safeArea", "nil"]];
-	_pos = [0, 0, 0];
-	if(typeName _marker == "STRING") then {_ps = getMarkerPos _marker};
-	if(typeName _marker == "ARRAY") then {_pos = _marker};
+	params ["_marker", ["_radius", 200], ["_rounds", 5], ["_roundselect", ""], ["_delay", 10], ["_safeArea", "nil"]];
 
-	_Roundtype = 0;
-	switch (_Roundselect) do {
-		case "HE": {_Roundtype = "ModuleOrdnanceMortar_F";};
-		case "HE_Harmless_Small": {_Roundtype = "twc_ModuleOrdnanceMortar_Dummy_small"};
-		case "HE_Harmless_Medium": {_Roundtype = "twc_ModuleOrdnanceMortar_Dummy_medium"};
-		case "HE_Harmless_Big": {_Roundtype = "twc_ModuleOrdnanceMortar_Dummy_big"};
-		case "SMOKE": {_Roundtype = "Smokeshell";};
-		case "ILLUM": {_Roundtype = "F_40mm_White";};
-		default { _Roundtype =  "ModuleOrdnanceMortar_F";};
+	_pos = switch (typeName _marker) do {
+		case "STRING": {getMarkerPos _marker;};
+		case "ARRAY": {_marker};
+		default {throw "Invalid Virtual Artillery Marker"};
 	};
 
-	for "_i" from 0 to _rounds do{
-		_position =  [_pos, _radius] call CBA_fnc_randPos;
+	_roundtype = switch (_roundselect) do {
+		case "HE": {"ModuleOrdnanceMortar_F"};
+		case "HE_Rocket": {"TWC_ModuleOrdnanceMortar_HE_Rocket"};
+		case "HE_Harmless_Small": {"twc_ModuleOrdnanceMortar_Dummy_small"};
+		case "HE_Harmless_Medium": {"twc_ModuleOrdnanceMortar_Dummy_medium"};
+		case "HE_Harmless_Big": {"twc_ModuleOrdnanceMortar_Dummy_big"};
+		case "SMOKE": {"TWC_ModuleOrdnanceMortar_Smoke"};
+		case "ILLUM": {"TWC_ModuleOrdnanceMortar_Illum"};
+		case "ILLUM_IR": {"TWC_ModuleOrdnanceMortar_Illum_IR"};
+		default {"ModuleOrdnanceMortar_F"};
+	};
+
+	for "_i" from 1 to _rounds do {
+		_position = [_pos, _radius] call CBA_fnc_randPos;
 
 		if !(_position inArea _safeArea) then {
-			_Roundtype createVehicle _position;
-			sleep _delay;
+			[{
+				params ["_position", "_roundtype"];
+				_round = _roundtype createVehicle _position;
+			}, [_position, _roundtype], _delay * _i] call CBA_fnc_waitAndExecute;
 		} else {
-			_rounds = _rounds + 1;
+			_i = _i - 1;
 		};
 	};
 };

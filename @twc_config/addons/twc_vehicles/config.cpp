@@ -45,7 +45,6 @@ class CfgPatches {
 			"TWC_Vehicle_Millennial_LandRoverHard_Woodland_COIN",
 			"TWC_Vehicle_Millennial_LandRoverHard_Desert_COIN",
 			"TWC_Vehicle_Millennial_LandRoverSnatch_NI_COIN",
-			"TWC_Vehicle_Millennial_Lynx_RAF",
 			"TWC_Vehicle_Millennial_Puma_RAF",
 			
 			"TWC_Vehicle_Modern_HarrierGR9_RAF",
@@ -116,7 +115,6 @@ class CfgPatches {
 			"ukcw_bedford",
 			"ukcw_chieftain",
 			"ukcw_cvrt",
-			"ukcw_fv432",
 			"ukcw_gazelle",
 			"TWC_Faction",
 			"ace_cargo",
@@ -173,7 +171,7 @@ class CfgVehicles {
 	*/
 
 	// These are used across eras in different configurations, and as such should be first referenced here.
-	class ukcw_fv432;
+	class CUP_B_FV432_GB_GPMG;
 	class ukcw_cvrt_Scim_w_L1;
 	class ukcw_cvrt_Scim_d_L1;
 	class ukcw_Scorpion_w_L1;

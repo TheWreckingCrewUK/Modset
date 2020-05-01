@@ -163,14 +163,14 @@
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_maaws",
+			"rhs_weap_maaws_optic",
 			"CUP_arifle_G36A"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_maaws",
+			"rhs_weap_maaws_optic",
 			"CUP_arifle_G36A"
 		};
 		magazines[]=
@@ -299,7 +299,7 @@
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_GER_PVest_Trop_Gren",
 			"rhsusf_ach_bare_tan_ess",
 			"ItemMap",
 			"ItemCompass",
@@ -307,7 +307,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"CUP_V_B_RRV_Scout",
+			"CUP_V_B_GER_PVest_Trop_Gren",
 			"rhsusf_ach_bare_tan_ess",
 			"ItemMap",
 			"ItemCompass",
@@ -341,36 +341,26 @@
 		{
 			"Throw",
 			"Put",
-			"twc_HK_MG4"
+			"twc_HK_MG3"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_HK_MG4"
+			"twc_HK_MG3"
 		};
 		magazines[]=
 		{
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
+			"UK3CB_BAF_762_200Rnd_T",
+			"UK3CB_BAF_762_200Rnd_T",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
+			"UK3CB_BAF_762_200Rnd_T",
+			"UK3CB_BAF_762_200Rnd_T",
 			"HandGrenade",
-			"HandGrenade",
-			"SmokeShell",
-			"SmokeShell",
-			"SmokeShell",
 			"SmokeShell"
 		};
 	};

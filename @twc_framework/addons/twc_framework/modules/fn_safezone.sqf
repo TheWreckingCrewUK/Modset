@@ -35,9 +35,12 @@ _handle = player addEventHandler ["Fired", {
 }];
 
 //Deletes the event handler after 5 minutes.
-[_handle] spawn {
-	sleep 300;
-	player removeEventHandler ["Fired", (_this select 0)];
-	twc_baseSafezoneRange = nil;
-	twc_baseFlag = nil;
-};
+[
+	{
+		player removeEventHandler ["Fired", (_this select 0)];
+		twc_baseSafezoneRange = nil;
+		twc_baseFlag = nil;
+	},
+	[_handle],
+	300
+] call CBA_fnc_waitAndExecute;

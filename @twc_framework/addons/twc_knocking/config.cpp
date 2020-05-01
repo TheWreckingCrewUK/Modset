@@ -30,7 +30,7 @@ class CfgVehicles {
 			class ACE_MainActions {
 				class TWC_knock {
 					displayName = "Knock";
-					condition = "vehicle player == player";
+					condition = "vehicle player == player && alive _target";
 					statement = "[_target] call TWC_Knocking_fnc_knockOnTank";
 					showDisabled = 0;
 					priority = 1;

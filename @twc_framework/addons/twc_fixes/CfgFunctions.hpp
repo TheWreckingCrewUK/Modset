@@ -7,6 +7,8 @@ class CfgFunctions {
 			class serverInit {};
 			class helicopterInit {};
 			class tankCrewAdjust {};
+			class checkIfRocket {};
+			class aiReload {};
 		};
 	};
 
@@ -26,6 +28,14 @@ class CfgFunctions {
 		class ace_cup_artillery {
 			class mortarInit {
 				file = "twc_fixes\functions\fn_mortarInit.sqf";
+			};
+		};
+	};
+	
+	class A3 {
+		class Debug {
+			class camera {
+				file = "twc_fixes\functions\fn_camera.sqf";
 			};
 		};
 	};

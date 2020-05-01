@@ -4,6 +4,68 @@
 		armor = 150;
 	};
 	
+	class I_Sniper_F;
+	class twc_I_Sniper_F: I_Sniper_F
+	{
+		_generalMacro = "twc_I_Sniper_F";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\twc_units_modern\textures\digicamo_co.jpg"};
+	};
+	
+	class Tank_F;
+	class rhs_t14_base: Tank_F
+	{
+		armor = 350;
+	};
+	
+	class ACE_medicalSupplyCrate_advanced;
+	class twc_public_medicalbox_small: ACE_medicalSupplyCrate_advanced
+	{
+		maximumLoad = 300;
+		displayName = "Medical Supplies";
+	};
+	
+	class ACE_Box_Ammo;
+	class twc_public_762box_small: ACE_Box_Ammo
+	{
+		maximumLoad = 800;
+		displayName = "7.62 Belts";
+	};
+	class twc_public_50calbox_small: ACE_Box_Ammo
+	{
+		displayName = ".50 Belts";
+	};
+	class twc_public_40mmbox_small: ACE_Box_Ammo
+	{
+		displayName = "40mm Belts";
+	};
+	class UK3CB_BAF_Box_WpsLaunch_Javelin;
+	class twc_public_launcherbox_small_gen: UK3CB_BAF_Box_WpsLaunch_Javelin
+	{
+		maximumLoad = 720;
+		displayName = "Launcher Box";
+	};
+	class twc_public_launcherbox_small_at4: UK3CB_BAF_Box_WpsLaunch_Javelin
+	{
+		maximumLoad = 720;
+		displayName = "AT4 Launchers";
+	};
+	class twc_public_launcherbox_small_jav: twc_public_launcherbox_small_gen
+	{
+		maximumLoad = 340;
+		displayName = "Javelin Tubes";
+	};
+	class twc_public_launcherbox_small_maaws: twc_public_launcherbox_small_gen
+	{
+		displayName = "MAAWS Rockets";
+		maximumLoad = 700;
+	};
+	class twc_public_launcherbox_small_nlaw: twc_public_launcherbox_small_gen
+	{
+		displayName = "NLAW Launchers";
+		maximumLoad = 600;
+	};
+	
 	class rhsusf_Cougar_base;
 	class rhsusf_cougar_GPK_base: rhsusf_Cougar_base
 	{
@@ -27,6 +89,45 @@
 			{
 				magazine = "UK3CB_BAF_127_100Rnd";
 				count = 7;
+			};
+		};
+		class Transportitems
+		{};
+		class TransportWeapons
+		{};
+		class TransportBackpacks
+		{};
+		maximumLoad = 4000;
+	};
+
+	class CUP_FV432_Bulldog_Base;
+	class CUP_B_FV432_Bulldog_GB_D: CUP_FV432_Bulldog_Base
+	{
+		class Turrets;
+	};
+	class CUP_B_FV432: CUP_B_FV432_Bulldog_GB_D
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class CUP_B_FV432_GB_GPMG: CUP_B_FV432
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L7A2_1"};
+				magazines[] = {"UK3CB_BAF_762_200Rnd_T"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_762
+			{
+				magazine = "UK3CB_BAF_762_200Rnd_T";
+				count = 10;
 			};
 		};
 		class Transportitems
@@ -61,6 +162,7 @@
 				count = 10;
 			};
 		};
+		maximumLoad = 4000;
 		class Transportitems
 		{};
 		class TransportWeapons
@@ -68,7 +170,40 @@
 		class TransportBackpacks
 		{};
 	};
-	
+	/*
+	class rhsusf_M1220_M153_M2_usarmy_d: rhsusf_M1220_M2_usarmy_d
+	{
+		class Turrets;
+	};
+	*/
+	/*
+	class rhsusf_M1220_M153_M2_usarmy_wd: rhsusf_M1220_M153_M2_usarmy_d
+	{
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			class M2_CROWS_Turret: NewTurret 
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		};
+		class Transportitems
+		{};
+		class TransportWeapons
+		{};
+		class TransportBackpacks
+		{};
+	};
+	*/
 	class Car;
 	class Car_F: Car
 	{
@@ -173,6 +308,94 @@
 			class _xx_127
 			{
 				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		
+			delete _xx_Chemlight_Red;
+			delete _xx_CUP_1Rnd_HEDP_M203;
+			delete _xx_CUP_200Rnd_TE4_Red_Tracer_556x45_M249;
+			delete _xx_CUP_30Rnd_556x45_Stanag;
+			delete _xx_CUP_HandGrenade_M67;
+			delete _xx_CUP_M136_M;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellOrange;
+		};
+		class Transportitems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_MediKit;
+			delete _xx_ToolKit;
+		};
+		class TransportWeapons
+		{
+			delete _xx_CUP_arifle_L85A2_G;
+			delete _xx_CUP_launch_M136;
+		};
+		class TransportBackpacks
+		{
+			delete _xx_CUP_B_Bergen_BAF;
+		};
+	};
+	
+	class CUP_B_Mastiff_GMG_GB_D: CUP_Mastiff_Base
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_L134A1_vehicle"};
+				magazines[] = {"UK3CB_BAF_32Rnd_40mm_G_Box"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_32Rnd_40mm_G_Box";
+				count = 10;
+			};
+		
+			delete _xx_Chemlight_Red;
+			delete _xx_CUP_1Rnd_HEDP_M203;
+			delete _xx_CUP_200Rnd_TE4_Red_Tracer_556x45_M249;
+			delete _xx_CUP_30Rnd_556x45_Stanag;
+			delete _xx_CUP_HandGrenade_M67;
+			delete _xx_CUP_M136_M;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellOrange;
+		};
+		class Transportitems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_MediKit;
+			delete _xx_ToolKit;
+		};
+		class TransportWeapons
+		{
+			delete _xx_CUP_arifle_L85A2_G;
+			delete _xx_CUP_launch_M136;
+		};
+		class TransportBackpacks
+		{
+			delete _xx_CUP_B_Bergen_BAF;
+		};
+	};
+	
+	class CUP_B_Mastiff_GMG_GB_W: CUP_Mastiff_Base
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_L134A1_vehicle"};
+				magazines[] = {"UK3CB_BAF_32Rnd_40mm_G_Box"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_32Rnd_40mm_G_Box";
 				count = 10;
 			};
 		
@@ -465,6 +688,303 @@
 
 //handling modifications
 	class MRAP_01_base_F;
+	
+	
+	
+	class rhsusf_RG33_base: MRAP_01_base_F {
+	};
+	
+	class rhsusf_RG33_CROWS_base: rhsusf_RG33_base {
+		
+		class Turrets;
+		class Wheels;
+	};
+	class rhsusf_M1238A1_M2_socom_d: rhsusf_RG33_CROWS_base {
+		
+		class Turrets: Turrets
+		{
+			class CROWS_Turret;
+		};
+		class Wheels: Wheels
+		{
+			class L1;
+			class L2;
+			class R1;
+			class R2;
+		};
+	};
+	class twc_M1238A1_M2_socom_d: rhsusf_M1238A1_M2_socom_d {
+		
+		class Turrets: Turrets
+		{
+			class CROWS_Turret: CROWS_Turret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+
+		class Wheels:Wheels {
+			class L1:L1 {
+				width = "0.2";
+				mass = 60;
+				MOI = 115;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
+				//maxBrakeTorque = 12500;
+				maxHandBrakeTorque = 50000;
+				maxCompression = 0.4;
+				sprungMass = 4250;
+				springStrength = 155000;
+				springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+			};
+			class L2:L2 {
+				width = "0.2";
+				mass = 60;
+				MOI = 115;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
+				//maxBrakeTorque = 12500;
+				maxCompression = 0.4;
+				sprungMass = 4250;
+				springStrength = 155000;
+				springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+			};
+			class R1:R1 {
+				width = "0.2";
+				mass = 60;
+				MOI = 115;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
+				//maxBrakeTorque = 12500;
+				maxHandBrakeTorque = 50000;
+				maxCompression = 0.4;
+				sprungMass = 4250;
+				springStrength = 155000;
+				springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+			};
+			class R2:R2 {
+				width = "0.2";
+				mass = 60;
+				MOI = 115;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
+				//maxBrakeTorque = 12500;
+				maxCompression = 0.4;
+				sprungMass = 4250;
+				springStrength = 155000;
+				springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+			};
+		};
+	};
+	
+	
+	
+	
+	
+	
+	class rhsusf_M1239_base: MRAP_01_base_F {
+		
+	};
+	class rhsusf_M1239_CROWS_base: rhsusf_M1239_base {
+		
+	};
+	class rhsusf_M1239_Deploy_base: rhsusf_M1239_CROWS_base {
+		
+		class Turrets;
+		class Wheels;
+		maximumLoad = 6000;
+	};
+	class rhsusf_M1239_M2_Deploy_socom_d: rhsusf_M1239_Deploy_base {
+		
+		class Turrets: Turrets
+		{
+			class CROWS_Turret;
+		};
+		class Wheels: Wheels
+		{
+			class L1;
+			class L2;
+			class L3;
+			class R1;
+			class R2;
+			class R3;
+		};
+	};
+	class twc_M1239_M2_Deploy_socom_d: rhsusf_M1239_M2_Deploy_socom_d {
+		
+		class Turrets: Turrets
+		{
+			class CROWS_Turret: CROWS_Turret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		maximumLoad = 7000;
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 10;
+			};
+		
+		};
+		
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+             
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.7; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	   
+		class Wheels:Wheels {
+			class L1:L1 {
+				width = "0.2";
+				mass = 60;
+				MOI = 115;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
+				//maxBrakeTorque = 12500;
+				maxHandBrakeTorque = 50000;
+				maxCompression = 0.4;
+				sprungMass = 4250;
+				springStrength = 155000;
+				springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+			};
+			class L2:L2 {
+				width = "0.2";
+				mass = 60;
+				MOI = 115;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
+				//maxBrakeTorque = 12500;
+				maxCompression = 0.4;
+				sprungMass = 4250;
+				springStrength = 155000;
+				springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+			};
+			class L3:L3 {
+				width = "0.2";
+				mass = 60;
+				MOI = 115;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
+				//maxBrakeTorque = 12500;
+				maxCompression = 0.4;
+				sprungMass = 4250;
+				springStrength = 155000;
+				springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+			};
+			class R1:R1 {
+				width = "0.2";
+				mass = 60;
+				MOI = 115;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
+				//maxBrakeTorque = 12500;
+				maxHandBrakeTorque = 50000;
+				maxCompression = 0.4;
+				sprungMass = 4250;
+				springStrength = 155000;
+				springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+			};
+			class R2:R2 {
+				width = "0.2";
+				mass = 60;
+				MOI = 115;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
+				//maxBrakeTorque = 12500;
+				maxCompression = 0.4;
+				sprungMass = 4250;
+				springStrength = 155000;
+				springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+			};
+			class R3:R3 {
+				width = "0.2";
+				mass = 60;
+				MOI = 115;
+				dampingRateDamaged = 2;
+				dampingRateDestroyed = 800;
+				//maxBrakeTorque = 12500;
+				maxCompression = 0.4;
+				sprungMass = 4250;
+				springStrength = 155000;
+				springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 25;
+				latStiffY = 180;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+			};
+		};
+	};
+	
 	class rhsusf_hmmwe_base: MRAP_01_base_F {
 		ace_cargo_size = 35;
 		ace_cargo_canLoad = 1;	
@@ -532,6 +1052,7 @@
 		{};
 		class TransportBackpacks
 		{};
+		maximumLoad = 4000;
 	};
 	
 	class rhsusf_m1025_w_mk19: rhsusf_m1025_w_m2
@@ -627,14 +1148,6 @@
 		class EventHandlers;
 	};
 
-	class CUP_CH47F_base;
-	class CUP_B_CH47F_GB: CUP_CH47F_base {
-		class EventHandlers;
-	};
-	
-	class twc_mert_ch47: CUP_B_CH47F_GB {
-		displayname = "CH-47D (MERT)";
-	};
 	
 	class Heli_Attack_01_base_F;
 	class RHS_AH64_base: Heli_Attack_01_base_F {
@@ -668,14 +1181,17 @@
 		ace_cargo_canLoad = 1;
 		ace_cargo_hasCargo = 1;
 		ace_cargo_space = 2;
-		differentialType = "front_limited";
+		differentialType = "all_limited";
 		frontBias = 1.1;
+		frontRearSplit = 0.8;
 		rearBias = 2.5;
 		turnCoef = 2;
-		maxSpeed = 145;
+		maxSpeed = 105;
 		normalSpeedForwardCoef = 1.1;
+		maxOmega = 937.76;
 		latency = 0.4;
 		gearBox[] = {-8,0,10,6.15,4.44,2.33,2.8,2.5};
+		torqueCurve[] = {{0.125,0.521053},{0.25,0.718947},{0.375,0.831579},{0.5,0.884211},{0.625,0.989474},{0.75,1.042105},{0.875,1.2},{1.12513,0}};
 		class Wheels {
 			class LF {
 			boneName = "wheel_1_1_damper";
@@ -684,39 +1200,53 @@
 			dampingRate = 0.1;
 			dampingRateDamaged = 1;
 			dampingRateDestroyed = 1000;
-			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.5, 0.5 }, { 1.0, 0.35 }};
-			latStiffX = 20;
+			frictionVsSlipGraph[] = {{ 0.0, 0.65 }, { 0.5, 0.6 },{ 1, 0.5 }};
+			latStiffX = 30;
 			latStiffY = 120;
 			longitudinalStiffnessPerUnitGravity = 9000;
 			mass = 40;
-			maxBrakeTorque = 2000;
-			maxCompression = 0.2;
-			maxDroop = 0.12;
+			maxCompression = 0.4;
+			maxDroop = 0.02;
 			maxHandBrakeTorque = 0;
 			MOI = 1.97192;
 			side = "left";
-			springDamperRate = 2500;
-			springStrength = 14000;
-			sprungMass = -1;
+			springDamperRate = 6500;
+			springStrength = 16000;
+			sprungMass = 625;
+			maxBrakeTorque = 300;
 			steering = 1;
 			suspForceAppPointOffset = "wheel_1_1_axis";
 			suspTravelDirection[] = {0,-1,0};
 			tireForceAppPointOffset = "wheel_1_1_axis";
 			width = 0.2;
 			};
-			class RF:LF {};
+			class RF:LF {
+			//frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.5, 0.6 },{ 1, 0.5 }};
+			springDamperRate = 6500;
+			springStrength = 16000;
+			sprungMass = 625;
+			maxBrakeTorque = 300;
+			};
 			class RR: RF {
-			frictionVsSlipGraph[] = {{ 0.0, 0.55 }, { 0.8, 0.5 }, { 1.0, 0.4 }};
+			//frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.5, 0.6 },{ 1, 0.5 }};
+			springDamperRate = 6500;
+			springStrength = 16000;
+			sprungMass = 625;
+			maxBrakeTorque = 500;
 			};
 			class LR: LF {
-			frictionVsSlipGraph[] = {{ 0.0, 0.55 }, { 0.8, 0.5 }, { 1.0, 0.4 }};
+			//frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.5, 0.6 },{ 1, 0.5 }};
+			springDamperRate = 6500;
+			springStrength = 16000;
+			sprungMass = 625;
+			maxBrakeTorque = 500;
 			};
 			
 		};
 		class complexGearbox {
 			driveString = "D";
 			gearBoxMode = "auto";
-			GearboxRatios[] = {"R1",-2.47,"N",0,"D1",3.55,"D2",1.8,"D3",1.1};
+			GearboxRatios[] = {"R1",-2.47,"N",0,"D1",3.25,"D2",1.7,"D3",1.05};
 			moveOffGear = 1;
 			neutralString = "N";
 			reverseString = "R";
@@ -739,7 +1269,14 @@
 			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
 		};
 	};
-	
+
+	class UK3CB_BAF_LandRover_WMIK_GMG_Base: UK3CB_BAF_LandRover_WMIK_Base {
+		class EventHandlers: EventHandlers {
+			init = " if (!isServer) exitWith {};			_car = (_this select 0);			_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [0.85,0.28,-0.7]];			_obj setVectorDirAndUp [[1,0,0.2],[0,0,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;	[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;	_obj = 'fuel_can' createvehicle [0,0,0];		_obj attachto [_car, [0.85,-0.2,-0.7]];		_obj setVectorDirAndUp [[1,0,0.2],[0,0,1]];					[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;		_car animate ['sparewheel_hide', 1];		_car animate ['gear_hide', 1];		 _obj = 'fuel_can' createvehicle [0,0,0];  _obj attachto [_car, [-1.11,-1.7,-1.4]];   _obj setVectorDirAndUp [[1,0,0],[0,0,1]];				[_obj, 20] call ace_refuel_fnc_makeSource;		[_obj, true, [0, 1, 0], 10] call ace_dragging_fnc_setCarryable;			  _obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-0.1,2.95,-1.3]];   _obj setVectorDirAndUp [[0,-0.1,1],[0,1,0]]; 		 _obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-1.1,-0.2,-0.7]];   _obj setVectorDirAndUp [[0.2,0,1],[0,0,1]];		 _obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [-1.1,-1.3,-0.6]];   _obj setVectorDirAndUp [[0.2,0,1],[0,0,1]]; 		";
+			killed = " {deletevehicle _x} foreach (attachedobjects (_this select 0))";
+		};
+	};
+
 	class UK3CB_BAF_LandRover_Snatch_Base: UK3CB_BAF_LandRover_Base {
 		class EventHandlers: EventHandlers {
 			init = " if (!isServer) exitWith {};			_car = (_this select 0);			_obj = 'ace_wheel' createvehicle [0,0,0];  _obj attachto [_car, [0,2.65,-0.9]];   _obj setVectorDirAndUp [[0,0,1],[0,1,0]]; _car animate ['sparewheel_hide', 1];	";

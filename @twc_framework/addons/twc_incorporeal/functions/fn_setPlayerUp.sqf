@@ -3,12 +3,13 @@
 [player, currentWeapon player, currentMuzzle player] call TWC_fnc_silentSafety;
 enableRadio false;
 player disableConversation true;
+player action ["WeaponOnBack", player];
 
 if (!isNil "ForwardBasePos" && !(player getVariable ["twc_ignoreForwardBase", false])) then {
 	player setPos ForwardBasePos;
-	["ForwardBasePos"] spawn {twc_fnc_reconnected};
+	["ForwardBasePos"] spawn twc_fnc_reconnected;
 } else {
-	["NormalBase"] spawn {twc_fnc_reconnected};
+	["NormalBase"] spawn twc_fnc_reconnected;
 };
 
 if !((goggles player) in approvedFacewear) then {

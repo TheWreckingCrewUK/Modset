@@ -156,7 +156,7 @@ class TWC_AmmoBox_ColdWar_Sniper_Portable: TWC_AmmoBox_Portable {
 	
 	// TODO: Waiting on UKCW to release L33 3nfi3ld Sn1p0r
 	class TransportMagazines {
-		maga_nc(ukcw_l42_10rnd_mag, 6);
+		maga_nc(SP_10Rnd_762_L42, 6);
 	};
 };
 

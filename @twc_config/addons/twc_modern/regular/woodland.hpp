@@ -163,13 +163,13 @@ class TWC_Infantry_Modern_Regular_Woodland_MG: TWC_Infantry_Modern_Regular_Woodl
 	};
 	weapons[] =
 	{
-		"twc_L7A2",
+		"UK3CB_BAF_L7A2",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"twc_L7A2",
+		"UK3CB_BAF_L7A2",
 		"Throw",
 		"Put"
 	};
@@ -311,7 +311,6 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 		"Chemlight_green"
 	};
 };
-
 class TWC_Infantry_Modern_Regular_Woodland_2iC: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "2iC";

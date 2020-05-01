@@ -10,7 +10,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			
+			"A3_Weapons_F"
 		};
 	};
 };
@@ -295,6 +295,29 @@ class CfgVehicles
 			};
 		};
 	};
+	class twc_SuppliesBox_Large: Box_NATO_AmmoVeh_F
+	{
+		displayName = "Large supply Box";
+		ace_dragging_canDrag = 1;
+		scope = 2;
+		class ACE_Actions{
+			class ACE_MainActions{
+				selection = "";
+				distance = 2;
+				condition = "true";
+				position = "[0,0,0.4]";
+				ace_dragging_dragPosition[] = {0,4,0};				
+			};
+		};
+		class transportItems
+		{
+			class _xx_supplies
+			{
+				name = "TWC_ForwardBase_Supplies";
+				count = 2000;
+			};
+		};
+	};
 	
 	class rhs_3Ya40_1_single;
 	class TWC_Public_AmmoBox_Hobbs_Precious: rhs_3Ya40_1_single {
@@ -351,14 +374,13 @@ class CfgVehicles
 		scope = 2;
 		displayName = "Ammunition Box";
 		author      = "Hobbs";
-		model = "ca\buildings\furniture\bedna_ammo2x.p3d";
 
 		class transportMagazines { };
 		class TransportItems     { };
 		class TransportWeapons   { };
 		class TransportBackpacks { };
 
-		maximumLoad = 240;
+		maximumLoad = 300;
 
 		// ACE Defines
 		ace_cargo_canLoad     = 1;

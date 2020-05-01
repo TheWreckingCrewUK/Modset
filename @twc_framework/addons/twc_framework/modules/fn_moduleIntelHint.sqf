@@ -17,15 +17,16 @@ params ["_logic", "_units", "_activated"];
 if (!_activated || !isServer) exitWith {};
 _title = _logic getVariable "Title";
 _message = _logic getVariable "Message";
+_access = _logic getVariable "Access";
 
 // Wait until PostInit has completed, then execute our function
 [{
-	params ["_units","_title","_message"];
-	{ [_x,_title,_message] call twc_fnc_intelHint; } forEach _units;
-}, [_units,_title,_message], 0.05] call CBA_fnc_waitAndExecute;
+	params ["_units", "_title", "_message", "_access"];
+	{ [_x, _title, _message, _access] call twc_fnc_intelHint; } forEach _units;
+}, [_units, _title, _message, _access], 0.05] call CBA_fnc_waitAndExecute;
 
 // TODO: change spawn to call above when alternate stationary units is introduced
 
 if (!isNull _logic) then {
-    deleteVehicle _logic;
+	deleteVehicle _logic;
 };

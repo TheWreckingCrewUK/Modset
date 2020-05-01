@@ -1,4 +1,4 @@
-class CfgAmmo{
+class CfgAmmo {
 	class fow_e_no82;
 	class twc_no82: fow_e_no82 {
 		hit = 100;
@@ -70,5 +70,50 @@ class CfgAmmo{
 		timeToLive = 45;
 		coefGravity = 0.05;
 		airFriction = 0;
+	};
+	
+	class csa38_Bullet;
+	class CSA38_7_92Mauser: csa38_Bullet
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	class CSA38_7_92MauserR: CSA38_7_92Mauser
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	class CSA38_7_92Mauser2: csa38_Bullet
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	class CSA38_7_92Mauser2R: CSA38_7_92Mauser2
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	class CSA38_7_92Mauser3: csa38_Bullet
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	
+	class LIB_Bullet_base;
+	class LIB_B_792x57_Ball: LIB_Bullet_base
+	{
+		model = "z\ace\addons\tracers\ace_traceryellow2.p3d";
+	};
+	
+	class LIB_ShellAPCR_base;
+	class LIB_S_76L55_M93: LIB_ShellAPCR_base
+	{
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_red.p3d";
+	};
+	
+	class LIB_S_76L55_APDSMk1: LIB_ShellAPCR_base
+	{
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_red.p3d";
+	};
+	
+	class LIB_ShellHE_base;
+	class LIB_S_76L55_M42: LIB_ShellHE_base
+	{
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_red.p3d";
 	};
 };

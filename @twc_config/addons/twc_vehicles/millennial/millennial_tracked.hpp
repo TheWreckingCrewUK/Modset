@@ -1,6 +1,6 @@
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MILLENNIAL_FV432_MOD
-class TWC_Vehicle_Millennial_FV432_Woodland: ukcw_fv432 {
+class TWC_Vehicle_Millennial_FV432_Woodland: CUP_B_FV432_GB_GPMG {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -27,7 +27,7 @@ class TWC_Vehicle_Millennial_FV432_Woodland: ukcw_fv432 {
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukcw_law80, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };
@@ -147,7 +147,7 @@ class TWC_Vehicle_Millennial_Warrior_Woodland: TWC_Vehicle_FV510_W {
 	};
 	
 	class TransportWeapons { 
-		ADD_WEAP(ukcw_law80, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };
@@ -180,7 +180,7 @@ class TWC_Vehicle_Millennial_Warrior_Desert: TWC_Vehicle_FV510_D {
 	};
 	
 	class TransportWeapons { 
-		ADD_WEAP(ukcw_law80, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };

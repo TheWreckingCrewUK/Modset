@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class ww2_flags
 	{
-		author = "Anschluss";
+		author = "TWC";
 		name = "WWII Flags";
 		requiredAddons[] = {"A3_Data_F","A3_UiFonts_F"};
 		requiredVersion = 0.1;
@@ -15,7 +15,7 @@ class CfgVehicles
 	class FlagCarrier;	
 	class Flag_Japan_F: FlagCarrier
 	{
-		author="Anschluss";
+		author="TWC";
 		class SimpleObject
 		{
 			animate[]=
@@ -42,7 +42,7 @@ class CfgVehicles
 	};
 	class Flag_Japan_IJN_F: FlagCarrier
 	{
-		author="Anschluss";
+		author="TWC";
 		class SimpleObject
 		{
 			animate[]=

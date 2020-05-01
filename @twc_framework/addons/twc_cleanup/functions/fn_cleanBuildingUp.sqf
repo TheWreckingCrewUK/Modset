@@ -7,6 +7,7 @@ if (_isRuin) then {
 
 	// Don't delete the ruin itself
 	_objects deleteAt (_objects find _buildingNew);
+	_objects deleteAt (_objects find _buildingOld);
 	_buildingOld hideobjectglobal true; // BI only use hideobject in some cases
 	{ deleteVehicle _x; } forEach _objects;
 	

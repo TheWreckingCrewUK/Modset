@@ -98,4 +98,14 @@ class CfgMarkers {
 		color[] = {1,1,1,1};
 		markerClass = "Flags";
 	};
+	class twc_chinese_flag: Flag {
+		name = "People's Republic of China";
+		icon = "twc_opfor_Misc\data\china.paa";
+		texture = "twc_opfor_Misc\data\china.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
 };

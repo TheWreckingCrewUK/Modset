@@ -1,10 +1,197 @@
+class asdg_FrontSideRail;
+class asdg_OpticRail1913;
+class asdg_MuzzleSlot_556_3CB;
+
 class cfgWeapons
 {
-	class UK3CB_BAF_L85A2;
+	class twc_BAF_L85A2_PUBLIC;
 	class UK3CB_BAF_L86A2;
+	class UK3CB_BAF_L86A2_public:UK3CB_BAF_L86A2
+	{};
 	class UK3CB_BAF_L85A2_UGL;
-	class UK3CB_BAF_SUSAT_3D;
 	
+	class rhsgref_uniform_dpm;
+	class twc_rhsgref_uniform_dpm: rhsgref_uniform_dpm
+	{
+		modelSides[] = {0,1,2,3};
+	};
+	class rhsgref_uniform_dpm_olive;
+	class twc_rhsgref_uniform_dpm_olive: rhsgref_uniform_dpm_olive
+	{
+		modelSides[] = {0,1,2,3};
+	};
+	class rhsgref_uniform_olive;
+	class twc_rhsgref_uniform_olive: rhsgref_uniform_olive
+	{
+		modelSides[] = {0,1,2,3};
+	};
+	
+	class CUP_smg_MP5SD6;
+	class TWC_CUP_smg_MP5SD6_clean:CUP_smg_MP5SD6
+	{
+		class WeaponSlotsInfo
+		{
+			allowedslots[] = {701,901};
+			mass = 45;
+		};
+	};
+		
+	class uk3cb_baf_silencer_l85;
+	class twc_L85_suppressor: uk3cb_baf_silencer_l85
+	{
+		displayName = "T8 Suppressor";
+	};
+	
+	class UK3CB_BAF_L1A1_Wood;
+	class TWC_UK3CB_BAF_L1A1_Wood_SUIT: UK3CB_BAF_L1A1_Wood
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="UK3CB_BAF_SUIT";
+			};
+		};
+	};
+	
+	class UK3CB_BAF_L119A1_CQB;
+	class TWC_UK3CB_BAF_L119A1_CQB_ACOG: UK3CB_BAF_L119A1_CQB
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="rhsusf_acc_acog2_usmc";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_acog2_usmc = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
+				class compatibleItems {
+					twc_L85_suppressor = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 70;
+		};
+	};
+	
+	class Rifle_Base_F;
+	class CUP_srifle_LeeEnfield: Rifle_Base_F
+	{
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+	};
+	
+	class UK3CB_BAF_L119A1_FG;
+	class TWC_UK3CB_BAF_L119A1_FG_ACOG: UK3CB_BAF_L119A1_FG
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="rhsusf_acc_ACOG";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="asdg_MuzzleSlot_UK3CB_BAF_L85";
+				item="uk3cb_baf_sffh";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_ACOG = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
+				class compatibleItems {
+					twc_L85_suppressor = 1;
+					uk3cb_baf_sffh = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 85;
+		};
+	};
+	
+	class UK3CB_BAF_L119A1_UKUGL;
+	class TWC_UK3CB_BAF_L119A1_UKUGL_ACOG: UK3CB_BAF_L119A1_UKUGL
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="rhsusf_acc_ACOG";
+			};
+			class LinkedItemsMuzzleSlot
+			{
+				slot="asdg_MuzzleSlot_UK3CB_BAF_L85";
+				item="uk3cb_baf_sffh";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_ACOG = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
+				class compatibleItems {
+					twc_L85_suppressor = 1;
+					uk3cb_baf_sffh = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 105;
+		};
+	};
+	
+	class TWC_UK3CB_BAF_L119A1_CQB_EOTECH: UK3CB_BAF_L119A1_CQB
+	{
+		recoil = "twc_rifle_556";
+		recoilProne = "twc_rifle_556_prone";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="asdg_OpticRail_UK3CB_BAF_L85";
+				item="rhsusf_acc_eotech_552";
+			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					rhsusf_acc_eotech_552 = 1;
+				};
+			};
+			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
+				class compatibleItems {
+					twc_L85_suppressor = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 75;
+		};
+	};
 	
 	class CUP_V_B_PASGT_no_bags;
 	class twc_interceptor_ddpm: CUP_V_B_PASGT_no_bags
@@ -158,86 +345,129 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
 	};
 	
-	class UK3CB_BAF_L86A1:UK3CB_BAF_L86A2
+	class UK3CB_BAF_L86A1:UK3CB_BAF_L86A2_public
 	{
 		displayName = "L86A1";
 		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
 	};
-	class UK3CB_BAF_L86A1_SUSAT3D:UK3CB_BAF_L86A2
+	class UK3CB_BAF_L86A1_SUSAT3D:UK3CB_BAF_L86A2_public
 	{
 		scope = 1;
 		displayName = "L86A1";
 		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
-		accessories[] = {"UK3CB_BAF_SUSAT_3D"};
+		accessories[] = {"uk3cb_baf_susat"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="UK3CB_BAF_SUSAT_3D";
+				item="uk3cb_baf_susat";
 			};
 		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					uk3cb_baf_susat = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 84;
+		};
 	};
-	class UK3CB_BAF_L110A2;
-		class TWC_UK3CB_BAF_L110A2_SUSAT: UK3CB_BAF_L110A2
+	class UK3CB_BAF_L110A2RIS_public;
+		class TWC_UK3CB_BAF_L110A2_SUSAT: UK3CB_BAF_L110A2RIS_public
 	{
 		scope = 1;
 		author="Hobbs";
-		accessories[] = {"UK3CB_BAF_SUSAT"};
+		accessories[] = {"uk3cb_baf_susat"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L110A2";
-				item="UK3CB_BAF_SUSAT";
+				item="uk3cb_baf_susat";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L110A2: asdg_OpticRail1913 {
+				class compatibleItems {
+					uk3cb_baf_susat = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 176;
 		};
 	};
 	
-	class UK3CB_BAF_L85A1:UK3CB_BAF_L85A2
+	class UK3CB_BAF_L85A1:twc_BAF_L85A2_PUBLIC
 	{
 		displayName = "L85A1";
 		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
 	};
-	class UK3CB_BAF_L85A1_SUSAT3D:UK3CB_BAF_L85A2
+	class UK3CB_BAF_L85A1_SUSAT3D:UK3CB_BAF_L85A1
 	{
 		scope = 1;
 		displayName = "L85A1";
 		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
-		accessories[] = {"UK3CB_BAF_SUSAT_3D"};
+		accessories[] = {"uk3cb_baf_susat"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="UK3CB_BAF_SUSAT_3D";
+				item="uk3cb_baf_susat";
 			};
+		};
+		
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					uk3cb_baf_susat = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 84;
 		};
 	};
 
-	class UK3CB_BAF_L85A1_SUSAT3D_Lazer:UK3CB_BAF_L85A2
+	class UK3CB_BAF_L85A1_SUSAT3D_Lazer:UK3CB_BAF_L85A1
 	{
 		scope = 1;
 		displayName = "L85A1";
 		ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};
 		author="Jayman";
-		accessories[] = {"UK3CB_BAF_SUSAT_3D"};
+		accessories[] = {"uk3cb_baf_susat"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="UK3CB_BAF_SUSAT_3D";
+				item="uk3cb_baf_susat";
 			};
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_L85";
 				item="UK3CB_BAF_LLM_Flashlight_Black";
 			};
+		};
+		
+		
+		class WeaponSlotsInfo
+		{
+			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
+				class compatibleItems {
+					uk3cb_baf_susat = 1;
+				};
+			};
+			allowedslots[] = {901};
+			mass = 84;
 		};
 	};
 	
@@ -277,18 +507,18 @@ class cfgWeapons
 	
 
 	
-		class UK3CB_BAF_L85A2_SUSAT:UK3CB_BAF_L85A2
+		class UK3CB_BAF_L85A2_SUSAT:twc_BAF_L85A2_PUBLIC
 	{
 		scope = 1;
 		displayName = "L85A2";
 		author="Hobbs";
-		accessories[] = {"UK3CB_BAF_SUSAT_3D", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
+		accessories[] = {"uk3cb_baf_susat", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="UK3CB_BAF_SUSAT_3D";
+				item="uk3cb_baf_susat";
 			};
 		};
 	};
@@ -298,13 +528,13 @@ class cfgWeapons
 		scope = 1;
 		displayName = "L85A2/L123UGL";
 		author="Hobbs";
-		accessories[] = {"UK3CB_BAF_SUSAT_3D", "UK3CB_BAF_TA31F_Hornbill"};
+		accessories[] = {"uk3cb_baf_susat", "UK3CB_BAF_TA31F_Hornbill"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="UK3CB_BAF_SUSAT_3D";
+				item="uk3cb_baf_susat";
 			};
 		};
 	};
@@ -316,7 +546,7 @@ class cfgWeapons
 		scope = 1;
 		displayName = "L85A2/L123UGL";
 		author="Hobbs";
-		accessories[] = {"UK3CB_BAF_SUSAT_3D", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
+		accessories[] = {"uk3cb_baf_susat", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -334,7 +564,7 @@ class cfgWeapons
 		scope = 1;
 		displayName = "L85A2";
 		author="Hobbs";
-		accessories[] = {"UK3CB_BAF_SUSAT_3D", "UK3CB_BAF_TA31F_Hornbill"};
+		accessories[] = {"uk3cb_baf_susat", "UK3CB_BAF_TA31F_Hornbill"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -350,13 +580,13 @@ class cfgWeapons
 		scope = 1;
 		displayName = "L85A2";
 		author="Hobbs";
-		accessories[] = {"UK3CB_BAF_SUSAT_3D", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
+		accessories[] = {"uk3cb_baf_susat", "UK3CB_BAF_TA31F", "UK3CB_BAF_TA31F_Hornbill"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="UK3CB_BAF_SUSAT";
+				item="uk3cb_baf_susat";
 			};
 		};
 	};

@@ -20,7 +20,9 @@ class cfgFunctions {
 		class insurgencyObjects {
 			file = "twc_objects\functions";
 			class setUpForwardBase {};
+			class setUpForwardBaseProgress {};
 			class tearDownForwardBase {};
+			class tearDownForwardBaseProgress {};
 			class createDefenses {};
 			class setcamocoef {};
 			class baseobject {};
@@ -44,6 +46,9 @@ class CfgVehicles {
 	class Land_BagFence_Round_F;
 	class Land_BagBunker_Small_F;
 	class Land_File_research_F;
+	class Land_HBarrier_5_F;
+	class Land_HBarrierTower_F;
+	class Land_HBarrier_Big_F;
 	class FlagSmall_F;
 	
 	class twc_flag_eod: FlagSmall_F {
@@ -70,6 +75,24 @@ class CfgVehicles {
 	};
 
 	class twc_Land_BagFence_Long_F: Land_BagFence_Long_F {
+		class EventHandlers: EventHandlers {
+			init = "[(_this select 0),true,[0,1,0],0] call ace_dragging_fnc_setCarryable;";
+		};
+	};
+	
+	class twc_Land_HBarrier_5_F: Land_HBarrier_5_F {
+		class EventHandlers: EventHandlers {
+			init = "[(_this select 0),true,[0,1,0],0] call ace_dragging_fnc_setCarryable;";
+		};
+	};
+
+	class twc_Land_HBarrierTower_F: Land_HBarrierTower_F {
+		class EventHandlers: EventHandlers {
+			init = "[(_this select 0),true,[0,1,0],0] call ace_dragging_fnc_setCarryable;";
+		};
+	};
+
+	class twc_Land_HBarrier_Big_F: Land_HBarrier_Big_F {
 		class EventHandlers: EventHandlers {
 			init = "[(_this select 0),true,[0,1,0],0] call ace_dragging_fnc_setCarryable;";
 		};
@@ -120,15 +143,15 @@ class CfgVehicles {
 
 				class twc_placeRadio {
 					displayName = "Activate Forward Base";
-					condition = "!(_target getVariable 'twc_forwardBaseDeployed')";
-					statement = "_return = [_target,_player] call twc_fnc_setUpForwardBase; hint _return;";
+					condition = "(!(_target getVariable 'twc_forwardBaseDeployed')) && ((side _player) == west)";
+					statement = "_return = [_target,_player] call twc_fnc_setUpForwardBaseProgress;";
 					icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa";
 				};
 
 				class twc_RemoveRadio {
 					displayName = "Tear Down Forward Base";
-					condition = "(_target getVariable 'twc_forwardBaseDeployed')";
-					statement = "_return = [_target,_player] call twc_fnc_tearDownForwardBase; hint _return;";
+					condition = "(_target getVariable 'twc_forwardBaseDeployed') && ((side _player) == west)";
+					statement = "_return = [_target,_player] call twc_fnc_tearDownForwardBaseProgress;";
 					icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa";
 				};
 			};

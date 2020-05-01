@@ -8,6 +8,7 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {
 			"cup_weapons_ammoboxes",
+			"ww2_assets_c_vehicles_ammoparameters_c",
 			"fow_weapons",
 			"fow_weapons_c",
 			"BBB_BoysATR"

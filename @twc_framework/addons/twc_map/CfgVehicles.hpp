@@ -74,4 +74,11 @@ class CfgVehicles {
 	CREATE_MAP(pja307); // Dariyah
 	CREATE_MAP(panthera3);
 	CREATE_MAP(winthera3);
+	CREATE_MAP(MCN_Neaville);
+	CREATE_MAP(MCN_Neaville_winter);
+	CREATE_MAP(Staszow);
+	CREATE_MAP(dingor);
+	CREATE_MAP(lingor3);
+	CREATE_MAP(iron_excelsior_Tobruk);
+	CREATE_MAP(pja314); // Leskovets
 };

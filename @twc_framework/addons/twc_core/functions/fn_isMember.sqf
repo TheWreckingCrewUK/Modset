@@ -14,6 +14,7 @@ params ["_target"];
 
 private _squadParams = squadParams _target;
 
-if (_squadParams isEqualTo []) exitWith { false };
-if ((_squadParams select 0) isEqualTo []) exitWith { false };
+if (isNil "_squadParams") exitWith { false };
+if (count (_squadParams) == 0) exitWith { false };
+if (count (_squadParams select 0) < 2) exitWith { false };
 ((_squadParams select 0) select 1) == "The Wrecking Crew UK"

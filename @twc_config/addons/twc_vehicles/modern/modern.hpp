@@ -29,6 +29,10 @@
 
 #define MODERN_NLAW 2
 
+#define MODERN_GMG 4
+#define MODERN_HMG 4
+#define MODERN_GPMG 4
+
 // Modifiers to the total amount (used to alter different vehicle payloads)
 #define MODERN_MASTIFF_MOD 1
 #define MODERN_FOXHOUND_MOD 0.5
@@ -36,6 +40,7 @@
 #define MODERN_SNATCH_MOD 0.5
 #define MODERN_WIMIK_MOD 0.5
 #define MODERN_LANDROVER_MOD 0.5
+#define MODERN_HUSKY_MOD 0.5
 
 #define MODERN_WARRIOR_MOD 1
 #define MODERN_CHALLENGER2_MOD 0.5

@@ -734,7 +734,7 @@
 		class 1990_British_FSTCommander: 1990_British_Base 
 	{
 		scope=2;
-		displayName="FST Commander (90's Woodland)@Fire Support Team";
+		displayName="FST Commander @Fire Support Team";
 		icon="iconManLeader";
 		uniformClass="UK3CB_BAF_U_Smock_DPMW";
 		backpack="TWC_Backpack_1990_Sectionlead";
@@ -808,7 +808,7 @@
 	class 1990_British_FSTForwardObserver: 1990_British_Base
 	{
 		scope=2;
-		displayName="FST Forward Observer (90's Woodland)";
+		displayName="FST Forward Observer";
 		icon="iconManExplosive";
 		uniformClass="UK3CB_BAF_U_Smock_DPMW";
 		backpack="UK3CB_BAF_B_Bergen_DPMW_Rifleman_B";
@@ -877,7 +877,7 @@
 	class 1990_British_FSTAssistant: 1990_British_Base 
 	{
 		scope=2;
-		displayName="FST Assistant (90's Woodland)";
+		displayName="FST Assistant ";
 		uniformClass="UK3CB_BAF_U_Smock_DPMW";
 		backpack="UK3CB_BAF_B_Carryall_DPMW";
 		
@@ -1071,7 +1071,7 @@
 		displayName="Section Leader @British Army";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="TWC_Backpack_1990_Sectionlead_Desert";
 		class EventHandlers: EventHandlers
 		{
@@ -1151,7 +1151,7 @@
 		displayName="Rifleman";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="twc_tan_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
@@ -1180,7 +1180,7 @@
 		displayName="Rifleman AT";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="twc_tan_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
@@ -1223,7 +1223,7 @@
 		displayName="Gunner";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="TWC_Backpack_1990_Gunner_Desert";
 		linkedItems[]=
 		{
@@ -1251,7 +1251,7 @@
 		displayName="2IC";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="TWC_Backpack_1990_2IC_Desert";
 		linkedItems[]=
 		{
@@ -1334,7 +1334,7 @@
 		displayName="Medic";
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		attendant = 1;
 		backpack="TWC_Backpack_1990_Medic_Desert";
 		linkedItems[]=
@@ -1907,7 +1907,7 @@
 		vehicleClass="Men_1990D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		backpack="TWC_Backpack_1990_armourcrew_webbing_d";
 		linkedItems[]=
 		{
@@ -2044,22 +2044,21 @@
 		editorSubcategory = "Men_1990D";
 		vehicleClass="Men_1990D";
 		backpack="";
-		twc_nobackpack = 1;
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="TWC_Smock_Desert";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
 		linkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "twc_V_HarnessO_tan",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "twc_V_HarnessO_tan",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -2095,6 +2094,12 @@
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -2113,6 +2118,12 @@
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
+		"UK3CB_BAF_762_L42A1_10Rnd",
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -2120,12 +2131,12 @@
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
-		"ACE_RangeCard",
-		
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs"	
@@ -2134,12 +2145,12 @@
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
-		"ACE_RangeCard",
-		
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		"ACE_morphine",
 		"ACE_morphine",
 		"ACE_EarPlugs"		
@@ -2156,20 +2167,20 @@
 		vehicleClass="Men_1990D";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="TWC_Smock_Desert";
-		backpack="TWC_Backpack_1990_Sectionlead_Desert";
+		uniformClass="CUP_U_B_BDUv2_roll_dirty_DDPM";
+		backpack="TWC_Backpack_1990_spotter";
 		linkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "twc_interceptor_ddpm",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-        "UK3CB_BAF_V_PLCE_Webbing_DDPM",
-		"UK3CB_BAF_H_Mk6_DDPM_C",
+        "twc_interceptor_ddpm",
+		"UK3CB_BAF_H_Headset_PRR",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -2192,50 +2203,37 @@
 		};
 		magazines[]=
 		{
-		"UK3CB_BAF_762_L42A1_10Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
-		"UK3CB_BAF_9_13Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
 		"UK3CB_BAF_556_30Rnd",
-		"SmokeShell",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"UK3CB_BAF_762_L42A1_10Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
-		"UK3CB_BAF_9_13Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
-		"UK3CB_BAF_762_L42A1_10Rnd",
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
 		"UK3CB_BAF_556_30Rnd",
-		"UK3CB_BAF_556_30Rnd_t",
 		"UK3CB_BAF_556_30Rnd",
-		"SmokeShell",
+		"UK3CB_BAF_556_30Rnd",
 		"SmokeShell"
 		};
 		Items[]=
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
+		"ACE_RangeCard",
+		"ACE_tourniquet",
+		"ACE_tourniquet",	
 		
 		"ACE_EarPlugs",	
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
-		"ACE_Tripod",
-		"ACE_SpottingScope",
 		"ACE_morphine",
 		"ACE_morphine"
 		};
@@ -2243,14 +2241,15 @@
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",	
+		"ACE_RangeCard",	
+		"ACE_tourniquet",
+		"ACE_tourniquet",
 		
 		"ACE_EarPlugs",	
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
-		"ACE_Tripod",
-		"ACE_SpottingScope",
 		"ACE_morphine",
 		"ACE_morphine"		
 		};
@@ -2337,7 +2336,7 @@
 		vehicleClass="Men_1990D";
 		attendant = 1;
 		uniformClass="UK3CB_BAF_U_CombatUniform_DPMW";
-		backpack="TWC_Backpack_1990_quartermaster";
+		backpack="";
 		linkedItems[]=
 		{
 			"twc_interceptor_od",
@@ -2363,7 +2362,7 @@
 		vehicleClass="Men_1990D";
 		attendant = 1;
 		uniformClass="UK3CB_BAF_U_Smock_DDPM";
-		backpack="TWC_Backpack_1990_quartermaster_desert";
+		backpack="";
 		linkedItems[]=
 		{
 			"twc_rhs_6sh92_radio_ddpm",
@@ -2386,10 +2385,10 @@
 //                    1990 Woodland American                    //
 //                                                              //
 //////////////////////////////////////////////////////////////////
-	class rhsgref_nat_base;
-	class rhsgref_nat_woodland: rhsgref_nat_base
+	class SoldierGB;
+	class rhsgref_nat_base: SoldierGB
 	{
-		modelSides[] = {0,1,3};
+		modelSides[] = {0,1,2,3};
 	};
 	class twc_men_1990_us_w_base: B_Soldier_base_F
 	{
@@ -2421,7 +2420,6 @@
 		Items[]=
 		{
 			"ACE_EarPlugs",
-			"ACRE_PRC148",
 			
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",

@@ -21,5 +21,5 @@ _interactCondition = _logic getVariable "interactCondition";
 _interactExecute = _logic getVariable "interactExecute";
 
 {
-	[_x, _displayName, _condition, _execute] call TWC_fnc_addACEInteraction;
+	[_x, _displayName, _interactCondition, _interactExecute] call TWC_fnc_addACEInteraction;
 } forEach _units;

@@ -157,19 +157,35 @@ class CfgVehicles {
 		};
 	};
 	
-	class twc_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_HE_Rocket: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "CUP_R_GRAD_HE";
+	};
+	class TWC_ModuleOrdnanceMortar_Dummy_small: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_small";
 	};
-	class twc_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_Dummy_medium: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_medium";
 	};
-	class twc_ModuleOrdnanceMortar_Dummy_big: ModuleOrdnanceMortar_F {
+	class TWC_ModuleOrdnanceMortar_Dummy_big: ModuleOrdnanceMortar_F {
 		scope = 1;
 		ammo = "twc_dummyround_artillery_big";
 	};
-	
+	class TWC_ModuleOrdnanceMortar_Smoke: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "SmokeShell";
+	};
+	class TWC_ModuleOrdnanceMortar_Illum: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_ammo_artillery_illumination";
+	};
+	class TWC_ModuleOrdnanceMortar_Illum_IR: ModuleOrdnanceMortar_F {
+		scope = 1;
+		ammo = "twc_ammo_artillery_illumination_ir";
+	};
+
 	class twc_moduelHC: Module_F {
 		author="[TWC] jayman";
 		scope=2;
@@ -269,43 +285,17 @@ class CfgVehicles {
 		};
 	};
 	
-	class twc_modulesetSpectator: Module_F {
-		author="[TWC] jayman";
-		category="twc_zeus";
-		scope=1;
+	class twc_moduleSetSpectator: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_zeus";
+		scope = 1;
 		scopeCurator = 2;
-		functionPriority=1;
-		isGlobal=1;
-		isTriggerActivated=0;
-		function="twc_fnc_setSpectator";
+		functionPriority = 1;
+		isGlobal = 1;
+		isTriggerActivated = 0;
+		function = "twc_fnc_setSpectator";
 		curatorCanAttach = 1;
 		displayName = "Toggle Unit ACRE Spectator";
-	};
-
-	class twc_modulegunwalkzeus: Module_F {
-		author="[TWC] Hobbs";
-		category="twc_zeus";
-		scope=1;
-		scopeCurator = 2;
-		functionPriority=1;
-		isGlobal=1;
-		isTriggerActivated=0;
-		function="twc_fnc_gunwalkzeus";
-		curatorCanAttach = 1;
-		displayName = "Activate AI Heavy Gun System";
-	};
-
-	class twc_modulemortarwalkzeus: Module_F {
-		author="[TWC] Hobbs";
-		category="twc_zeus";
-		scope=1;
-		scopeCurator = 2;
-		functionPriority=1;
-		isGlobal=1;
-		isTriggerActivated=0;
-		function="twc_fnc_mortarwalkzeus";
-		curatorCanAttach = 1;
-		displayName = "Activate AI Artillery System";
 	};
 
 	class TWC_Module_CreateTask: Module_F {
@@ -429,6 +419,11 @@ class CfgVehicles {
 					{
 						name="Illum";
 						value="ILLUM";
+					};
+					class Illum_IR
+					{
+						name = "Illum IR";
+						value = "ILLUM_IR";
 					};
 				};
 			};
@@ -799,6 +794,16 @@ class CfgVehicles {
 						name="Takistani Section (An-2)";
 						value="Takistani_Army_2";
 					};
+					class Fallscirmjager
+					{
+						name = "Fallschirmjäger (JU-52)";
+						value = "Fallscirmjager";
+					};
+					class Fallscirmjager_Sicily
+					{
+						name = "Fallschirmjäger Sicily (JU-52)";
+						value = "Fallscirmjager_Sicily";
+					};
 				};
 			};
 			class Type_Plane
@@ -884,8 +889,7 @@ class CfgVehicles {
 		};
 	};
 	
-	class TWC_Module_AmbientAA: Module_F
-	{
+	class TWC_Module_AmbientAA: Module_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
 		displayName = "Ambient AA";
@@ -902,7 +906,66 @@ class CfgVehicles {
 		};
 	};
 	
-	class TWC_Module_Amient_AttackPlane: ModuleCAS_F {
+	class TWC_Module_AmbientCiv: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Ambient Civilian Population";
+		function = "twc_fnc_moduleAmbientCiv";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\civPop_ca.paa";
+		functionPriority = 1;
+		class Arguments {
+			class Type {
+				displayName = "Type";
+				description = "Type of Units to spawn";
+				typeName = "STRING";
+				defaultValue = "Arabian";
+				class Values {
+					class Arabian {
+						name = "Arabian";
+						value = "Arabian";
+					};
+					class Eastern_European {
+						name = "Eastern European";
+						value = "Eastern European";
+					};
+					class Mediterranean {
+						name = "Mediterranean";
+						value = "Mediterranean";
+					};
+					class Asian {
+						name = "Asian";
+						value = "Asian";
+					};
+					class African {
+						name = "African";
+						value = "African";
+					};
+				};
+			};
+			class Size {
+				displayName = "Size";
+				description = "Amount of civilians to spawn in.";
+				typeName = "NUMBER";
+				defaultValue = 0;
+			};
+			class Radius {
+				displayName = "Radius";
+				description = "Radius of the circle in which civilians will spawn and move.";
+				typeName = "NUMBER";
+				defaultValue = 0;
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Populate an area with civilians.";
+			sync[] = {""};
+		};
+	};
+	
+	class TWC_Module_Ambient_AttackPlane: ModuleCAS_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
 		displayName = "Ambient Attack Plane";
@@ -950,7 +1013,42 @@ class CfgVehicles {
 				displayName = "Plane";
 				class values
 				{
-					class Spitfire
+					class Bf110_DE
+					{
+						name = "Bf-110 (DE)";
+						value = "sab_bf110";
+					};
+					class Fw190_DE
+					{
+						name = "Fw-190 (DE)";
+						value = "LIB_FW190F8_2";
+					};
+					class Fw190_DE_Desert
+					{
+						name = "Fw-190 (DE, Desert)";
+						value = "LIB_FW190F8_Italy";
+					};
+					class Ju87_DE
+					{
+						name = "Ju-87 (DE)";
+						value = "TWC_B_Ju87_SingleSeat";
+					};
+					class Ju87_DE_Italy
+					{
+						name = "Ju-87 (DE, Italy)";
+						value = "TWC_B_Ju87_SingleSeat_Italy";
+					};
+					class Ju87_DE_Desert
+					{
+						name = "Ju-87 (DE, Desert)";
+						value = "TWC_B_Ju87_SingleSeat_Desert";
+					};
+					class He111_DE
+					{
+						name = "He-111 (DE)";
+						value = "TWC_B_He111_SingleSeat";
+					};
+					class Spitfire_UK
 					{
 						name = "Spitfire (UK)";
 						value = "spitfire_v_G";
@@ -965,7 +1063,7 @@ class CfgVehicles {
 						name = "Hellcat (UK)";
 						value = "fow_va_f6f_c_faa";
 					};
-					class P47
+					class P47_US
 					{
 						name = "P-47 (US)";
 						value = "LIB_P47";
@@ -1058,16 +1156,70 @@ class CfgVehicles {
 				};
 			};
 		};
-		class ModuleDescription  {
+		class ModuleDescription {
 			description = "Call in Ambient Attack Plane, automatically despawned";
 			sync[] = {""};
 		};
 	};
-	class TWC_Module_Amient_AttackPlane_Zeus: TWC_Module_Amient_AttackPlane {
-		scope=1;
+	class TWC_Module_Ambient_AttackPlane_Gun: TWC_Module_Ambient_AttackPlane {
+		displayName = "Ambient Attack Plane (Gun)";
+		category = "twc_zeus";
+		scope = 1;
 		scopeCurator = 2;
-		isTriggerActivated=0;
+		isTriggerActivated = 0;
 		curatorCanAttach = 1;
+		curatorInfoType = "RscDisplayAttributesModuleCAS";
+		moduleCAStype = 0;
+	};
+	class TWC_Module_Ambient_AttackPlane_Missile: TWC_Module_Ambient_AttackPlane_Gun {
+		displayName = "Ambient Attack Plane (Missile)";
+		moduleCAStype = 1;
+	};
+	class TWC_Module_Ambient_AttackPlane_GunMissile: TWC_Module_Ambient_AttackPlane_Gun {
+		displayName = "Ambient Attack Plane (Gun/Missile)";
+		moduleCAStype = 2;
+	};
+	class TWC_Module_Ambient_AttackPlane_Bomb: TWC_Module_Ambient_AttackPlane_Gun {
+		displayName = "Ambient Attack Plane (Bomb)";
+		moduleCAStype = 3;
+	};
+	
+
+	class TWC_Module_Charge: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Charge";
+		function = "twc_fnc_moduleCharge";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\movable_units_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Banzai {
+				displayName = "Banzai Sounds";
+				description = "Whether the units should yell Banzai every 8 seconds";
+				typeName = "BOOL";
+				defaultValue = "Yes";
+				class Values {
+					class Yes {
+						name = "Yes";
+						value = true;
+					};
+					class No {
+						name = "No";
+						value = false;
+					};
+				};
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Makes units charge relentlessly to a location, without stopping to engage until they arrive.";
+			sync[] = {"EmptyDetector"};
+		};
 	};
 	
 	class TWC_Module_CommandMessage: Module_F {
@@ -1097,6 +1249,170 @@ class CfgVehicles {
 		};
 	};
 	
+	class TWC_Module_CrateParadrop: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Crate Paradrop";
+		function = "twc_fnc_moduleCrateParadrop";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\airborne_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Plane {
+				displayName = "Plane";
+				description = "Type of plane that drops the crate";
+				typeName = "String";
+				defaultValue = "C130";
+				class Values {
+					class C130 {
+						name = "C-130";
+						value = "CUP_B_C130J_GB";
+					};
+					class C47 {
+						name = "C-47";
+						value = "LIB_C47_RAF";
+					};
+				};
+			};
+			class Cargo {
+				displayName = "Cargo";
+				description = "What cargo the plane drops";
+				typeName = "String";
+				defaultValue = "";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Send a plane to aidrop crate(s)";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+
+	class TWC_Module_CrateSlingload: Module_F {
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Crate Slingload";
+		function = "twc_fnc_moduleCrateSlingload";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\slingload_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Helicopter {
+				displayName = "Helicopter";
+				description = "Type of helicopter that drops the crate";
+				typeName = "String";
+				defaultValue = "HC4_Chinook";
+				class Values {
+					class HC1_Chinook {
+						name = "HC1 Chinook";
+						value = "ukcw_chinook_hc1";
+					};
+					class HC4_Chinook {
+						name = "HC4 Chinook";
+						value = "TWC_Vehicle_Generic_Chinook_RAF";
+					};
+					class AH1_Gazelle {
+						name = "AH1 Gazelle";
+						value = "TWC_Vehicle_Generic_Gazelle";
+					};
+					class HC1_Puma {
+						name = "HC1 Puma";
+						value = "TWC_Vehicle_ColdWar_Puma_RAF";
+					};
+					class AH1_Wildcat {
+						name = "AH1 Wildcat";
+						value = "TWC_Vehicle_Modern_Wildcat_RAF";
+					};
+					class HC3_Merlin {
+						name = "HC3 Merlin";
+						value = "UK3CB_BAF_Merlin_HC3_18";
+					};
+					class HC4_Merlin {
+						name = "HC4 Merlin";
+						value = "UK3CB_BAF_Merlin_HC4_18";
+					};
+				};
+			};
+			class Cargo {
+				displayName = "Cargo";
+				description = "What cargo the helicopter drops";
+				typeName = "String";
+				defaultValue = "";
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "Send a helicopter to slingload crate(s)";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+
+	class TWC_Module_HideMarkers: Module_F
+	{
+		author = "[TWC] Rik";
+		category = "twc_mission_framework";
+		displayName = "Hide Markers";
+		function = "twc_fnc_moduleHideMarkers";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\hide_marker_ca.paa";
+		functionPriority = 1;
+		class Arguments
+		{
+			class Markers
+			{
+				description = "The variable name of the markers to hide";
+				displayName = "Side";
+				typeName = "STRING";
+				defaultValue = "";
+			};
+			class Side
+			{
+				description = "Hide markers for this side";
+				displayName = "Side";
+				typeName = "STRING";
+				class values
+				{
+					class EAST
+					{
+						name = "OPFOR";
+						value = "EAST";
+					};
+					class WEST
+					{
+						default = 1;
+						name = "BLUFOR";
+						value = "WEST";
+					};
+					class GUER
+					{
+						name = "INDEPENDENT";
+						value = "GUER";
+					};
+					class CIV
+					{
+						name = "CIVILIAN";
+						value = "CIV";
+					};
+				};
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "Hide Markers for given side";
+			sync[] = {""};
+		};
+	};
+	
 	class TWC_Module_IntelHint: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";
@@ -1123,6 +1439,25 @@ class CfgVehicles {
 				description="Text To Display";
 				typeName="String";
 				defaultValue="";
+			};
+			
+			class Access {
+				displayName = "Who Can Interact";
+				description = "Who can activate this hint?";
+				typeName = "Number";
+				defaultValue = "0";
+				
+				class Values {
+					class 0 {
+						name = "Anybody";
+						value = 0;
+					};
+					
+					class 1 {
+						name = "Highest Two Ranks";
+						value = 1;
+					};
+				};
 			};
 		};
 		class ModuleDescription: ModuleDescription {
@@ -1163,6 +1498,25 @@ class CfgVehicles {
 				description = "Name of the GLOBAL variable to use";
 				typeName = "String";
 				defaultValue = "";
+			};
+			
+			class Access {
+				displayName = "Who Can Interact";
+				description = "Who can activate this hint?";
+				typeName = "Number";
+				defaultValue = "0";
+				
+				class Values {
+					class 0 {
+						name = "Anybody";
+						value = 0;
+					};
+					
+					class 1 {
+						name = "Highest Two Ranks";
+						value = 1;
+					};
+				};
 			};
 		};
 
@@ -1235,7 +1589,7 @@ class CfgVehicles {
 			sync[] = {""};
 		};
 	};
-		
+	
 	class TWC_Module_StationaryUnits: Module_F {
 		author = "[TWC] Bosenator & jayman";
 		category = "twc_mission_framework";
@@ -1358,46 +1712,6 @@ class CfgVehicles {
 			sync[] = {"AnyAI"};
 		};
 	};
-	
-	class TWC_Module_gunwalking: Module_F {
-		author = "[TWC] Hobbs";
-		category = "twc_missionSetup";
-		displayName = "Enable AI Heavy Weapon System";
-		function = "twc_fnc_modulegunwalk";
-		scope = 2;
-		scopeCurator = 2;
-		curatorCanAttach = 1;
-		isGlobal = 0;
-		isTriggerActivated = 0;
-		isDisposable = 0;
-		icon = "\twc_framework\ui\ignore_foward_base_ca.paa";
-		functionPriority = 1;
-		class Arguments {};
-		class ModuleDescription: ModuleDescription {
-			description = "Activate advanced AI learning for synced static weapons, tanks, attack helicopters and other heavy assets";
-			sync[] = {"AnyAI", "AnyVehicle"};
-		};
-	};
-	
-	class TWC_Module_mortarwalking: Module_F {
-		author = "[TWC] Hobbs";
-		category = "twc_missionSetup";
-		displayName = "Enable AI Artillery System";
-		function = "twc_fnc_modulemortarwalk";
-		scope = 2;
-		scopeCurator = 2;
-		curatorCanAttach = 1;
-		isGlobal = 0;
-		isTriggerActivated = 0;
-		isDisposable = 0;
-		icon = "\twc_framework\ui\ignore_foward_base_ca.paa";
-		functionPriority = 1;
-		class Arguments {};
-		class ModuleDescription: ModuleDescription {
-			description = "Activate advanced AI learning for synced mortars and other indirect fire pieces";
-			sync[] = {"AnyAI", "AnyVehicle"};
-		};
-	};
 
 	class TWC_Module_ACEInteract: Module_F {
 		author = "[TWC] Bosenator";
@@ -1497,11 +1811,147 @@ class CfgVehicles {
 				defaultValue = 0;
 			};
 			
-			class soundArgs {
-				displayName = "soundArgs array";
-				description = "[volume, pitch, distance]";
+			class volume {
+				displayName = "Volume";
+				description = "Volume, usually 1 - 20";
+				typeName = "Number";
+				defaultValue = 4;
+			};
+			
+			class pitch {
+				displayName = "Pitch";
+				description = "Pitch, usually 1";
+				typeName = "Number";
+				defaultValue = 1;
+			};
+			
+			class distance {
+				displayName = "Distance";
+				description = "Distance to be heard, usually 1000";
+				typeName = "Number";
+				defaultValue = 1000;
+			};
+		};
+	};
+	
+	#define ADD_SOUND(CLASSNAME,FOLDER) \
+	class TWC_##CLASSNAME { \
+		name = #CLASSNAME; \
+		value = "twc_sounds\sounds\##FOLDER##\##CLASSNAME##.ogg"; \
+	}
+	
+	class TWC_Module_AmbientSound_Simplified: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Ambient Sound (Simplified (((WIP))))";
+		function = "twc_fnc_moduleAmbientSoundSimple";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\ambient_sound_ca.paa";
+		functionPriority = 1;
+		
+		class Arguments {
+			class soundFilePath {
+				displayName = "Sound";
+				description = "Preselected Sounds";
 				typeName = "String";
-				defaultValue = "[4, 1, 1000]";
+				defaultValue = "TWC_radio_chatter";
+				
+				class values {
+					ADD_SOUND(radio_chatter,radio);
+					ADD_SOUND(radio_dunkirk_german,radio);
+					ADD_SOUND(radio_dunkirk_us,radio);
+					ADD_SOUND(radio_norsk,radio);
+					
+					ADD_SOUND(banzai_1,ww2);
+					ADD_SOUND(banzai_2,ww2);
+					ADD_SOUND(banzai_3,ww2);
+					ADD_SOUND(banzai_4,ww2);
+					ADD_SOUND(banzai_5,ww2);
+					
+					ADD_SOUND(bugle_call,other);
+					
+					ADD_SOUND(arab_crowd,crowds);
+					
+					ADD_SOUND(airraid_warning,alarms);
+					ADD_SOUND(airraid_allclear,alarms);
+					ADD_SOUND(car_alarm,alarms);
+					
+					ADD_SOUND(cat,animals);
+					ADD_SOUND(dog,animals);
+					ADD_SOUND(dog_1,animals);
+					ADD_SOUND(dog_2,animals);
+					ADD_SOUND(dog_3,animals);
+					ADD_SOUND(dog_indoors,animals);
+					ADD_SOUND(sheep,animals);
+					ADD_SOUND(sheep_1,animals);
+					ADD_SOUND(sheep_2,animals);
+					ADD_SOUND(sheep_3,animals);
+					ADD_SOUND(sheep_4,animals);
+					ADD_SOUND(wolf,animals);
+					ADD_SOUND(wolf_1,animals);
+					ADD_SOUND(wolf_2,animals);
+					ADD_SOUND(wolf_3,animals);
+					
+					ADD_SOUND(chainsaw,environment);
+					ADD_SOUND(construction,environment);
+					ADD_SOUND(construction_1,environment);
+					ADD_SOUND(fire,environment);
+					ADD_SOUND(strong_wind,environment);
+					ADD_SOUND(wind,environment);
+					ADD_SOUND(wind_1,environment);
+				};
+			};
+			
+			class min {
+				displayName = "min time";
+				description = "min time to wait between loops";
+				typeName = "Number";
+				defaultValue = 30;
+			};
+			
+			class mid {
+				displayName = "mid time";
+				description = "mid time to wait between loops";
+				typeName = "Number";
+				defaultValue = 45;
+			};
+			
+			class max {
+				displayName = "max time";
+				description = "max time to wait between loops";
+				typeName = "Number";
+				defaultValue = 60;
+			};
+			
+			class condition {
+				displayName = "Stop Condition";
+				description = "Condition to check for when to stop";
+				typeName = "String";
+				defaultValue = "triggerActivated forExample";
+			};
+			
+			class isInside {
+				displayName = "Is Inside?";
+				description = "Is the sound coming from inside something?";
+				typeName = "BOOL";
+				defaultValue = 0;
+			};
+			
+			class volume {
+				displayName = "Volume";
+				description = "Volume, usually 1 - 20";
+				typeName = "Number";
+				defaultValue = 5;
+			};
+			
+			class distance {
+				displayName = "Distance";
+				description = "Distance to be heard, usually 1000 for battles";
+				typeName = "Number";
+				defaultValue = 50;
 			};
 		};
 	};

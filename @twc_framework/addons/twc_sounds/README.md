@@ -5,3 +5,6 @@ The idea is that this pbo is infrequently edited, allowing Bosenator with his di
 
 ## PBOs that require this PBO
 * TWC_Incorporeal
+
+## Rights
+This PBO includes some sound effects given freely to use by the BBC. You can view the content they've created here: http://bbcsfx.acropolis.org.uk/ including the non-commercial usage licence that we abide by. All rights to their sounds belong respectively to them. It's an amazing project, you should check it out.

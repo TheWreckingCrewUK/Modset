@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="TWC Medical Resuscitate">
+	<Package name="TWC_Medical_Resuscitate">
+		<Key ID="STR_TWC_CPR_COMPLETED">
+			<Original>%1 resuscitated the patient with CPR</Original>
+			<English>%1 resuscitated the patient with CPR</English>
+			<German>%1 hat den Patienten mit HLW wiederbelebt</German>
+		</Key>
+		<Key ID="STR_TWC_CPR_EXECUTE">
+			<Original>%1 performed CPR</Original>
+			<English>%1 performed CPR</English>
+			<German>%1 hat eine HLW durchgeführt</German>
+		</Key>
+		<Key ID="STR_TWC_CPR_UNNEEDED">
+			<Original>%1 performed CPR needlessly</Original>
+			<English>%1 performed CPR needlessly</English>
+			<German>%1 führte HLW unnötiger Weise aus</German>
+		</Key>
+		<Key ID="STR_TWC_DEFIB_COMPLETED">
+			<Original>%1 resuscitated the patient with defibrillator</Original>
+			<English>%1 resuscitated the patient with defibrillator</English>
+			<German>%1 hat den Patienten mittels Defibrillator wiederbelebt</German>
+		</Key>
+		<Key ID="STR_TWC_DEFIB_EXECUTE">
+			<Original>%1 was unsuccesful with their defibrillator</Original>
+			<English>%1 was unsuccesful with their defibrillator</English>
+			<German>%1 hatte keinen Erfolg mit dem Defibrillator</German>
+		</Key>
+		<Key ID="STR_TWC_SUTURE_EXECUTE">
+			<Original>%1 sutured a wound</Original>
+			<English>%1 sutured a wound</English>
+			<German>%1 hat eine Wunde vernäht</German>
+		</Key>
+	</Package>
+</Project>

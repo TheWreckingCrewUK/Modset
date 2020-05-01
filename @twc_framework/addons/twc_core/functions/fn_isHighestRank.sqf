@@ -5,6 +5,7 @@
 * Arguments:
 * 0: Target <OBJECT>
 * 1: Ignore Dead <BOOLEAN< (default: true)
+* 2: Include 2IC <BOOLEAN> (default: false)
 *
 * Return Value:
 * 0: Is Highest Rank <BOOLEAN>
@@ -12,7 +13,7 @@
 * Example:
 * [player] call TWC_fnc_isHighestRank;
 */
-params ["_target", ["_ignoreDead", true]];
+params ["_target", ["_ignoreDead", true], ["_includeSecondary", false]];
 
 _rankHashMap = [[["COLONEL", 0], ["MAJOR", 0], ["CAPTAIN", 0], ["LIEUTENANT", 0], ["SERGEANT", 0], ["CORPORAL", 0], ["PRIVATE", 0]], -1] call CBA_fnc_hashCreate;
 _topRanks = [];
@@ -30,7 +31,8 @@ _topRanks = [];
 } forEach allPlayers;
 
 _findTopRanks = {
-	if ((count _topRanks) > 0) exitWith {};
+	if ((count _topRanks) > 0 && !_includeSecondary) exitWith {};
+	if ((count _topRanks) > 1 && _includeSecondary) exitWith {};
 	if (_value == -1) exitWith {}; // none found?
 	
 	_topRanks pushBack _key;

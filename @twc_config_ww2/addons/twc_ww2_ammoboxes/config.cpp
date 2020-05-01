@@ -42,10 +42,32 @@ class CfgVehicles {
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 	
 	class LIB_BasicWeaponsBox_US;
+	class WW2_Cle_Container;
 	class TWC_AmmoBox_WW2_Portable: LIB_BasicWeaponsBox_US {
 		scope = 1;
 		displayName = "Ammo Box WW2 (Portable)";
 		author      = "Bosenator";
+		
+		class TransportMagazines { };
+		class TransportItems     { };
+		class TransportWeapons   { };
+		class TransportBackpacks { };
+		
+		editorCategory = "TWC_Crates";
+		editorSubcategory = "TWC_Crates_Other";
+		
+		// ACE Defines
+		ace_cargo_canLoad     = 1;
+		ace_cargo_size        = 1;
+		ace_cargo_hasCargo    = 0;
+		
+		ace_dragging_canCarry = 1;
+		ace_dragging_canDrag  = 1;
+	};
+	class TWC_AmmoBox_WW2_Airborne_Portable: WW2_Cle_Container {
+		scope = 1;
+		displayName = "Ammo Box WW2 Airborne (Portable)";
+		author      = "[TWC] Rik";
 		
 		class TransportMagazines { };
 		class TransportItems     { };
@@ -80,10 +102,10 @@ class CfgVehicles {
 			maga_nc(LIB_30Rnd_45ACP, 9);
 
 			// Enfield .303 10rnd
-			maga_nc(10Rnd_303_Magazine, 30);
+			maga_nc(LIB_10Rnd_770x56, 30);
 			
 			// Bren .303 30rnd
-			maga_nc(fow_30Rnd_303_bren, 20);
+			maga_nc(LIB_30Rnd_770x56, 20);
 			
 			// Smoke Grenades
 			maga_nc(SmokeShell, 20);
@@ -91,16 +113,21 @@ class CfgVehicles {
 			maga_nc(SmokeShellRed, 10);
 			
 			// Frag Grenade
-			maga_nc(fow_e_no36mk1, 20);
+			maga_nc(LIB_MillsBomb, 20);
+			maga_nc(LIB_1Rnd_G_MillsBomb, 16);
 			
 			// AT Grenade
-			maga_nc(twc_no82, 10);
+			maga_nc(LIB_No82, 10);
 			
 			// Flares
-			maga_nc(LIB_1Rnd_flare_white, 15);
-			maga_nc(LIB_1Rnd_flare_red, 15);
-			maga_nc(LIB_1Rnd_flare_green, 15);
-			maga_nc(LIB_1Rnd_flare_yellow, 15);
+			maga_nc(TWC_Magazine_SignalFlare_Blue, 15);
+			maga_nc(TWC_Magazine_SignalFlare_Red, 15);
+			maga_nc(TWC_Magazine_SignalFlare_Green, 15);
+			maga_nc(TWC_Magazine_SignalFlare_Yellow, 15);
+			maga_nc(TWC_Magazine_SignalSmoke_Green, 15);
+			maga_nc(TWC_Magazine_SignalSmoke_Red, 15);
+			maga_nc(TWC_Magazine_SignalSmoke_Yellow, 15);
+			maga_nc(TWC_Magazine_SignalSmoke_Blue, 15);
 		};
 	};
 	
@@ -126,10 +153,10 @@ class CfgVehicles {
 			maga_nc(LIB_30Rnd_45ACP, 5);
 			
 			// Enfield .303 10rnd
-			maga_nc(10Rnd_303_Magazine, 18);
+			maga_nc(LIB_10Rnd_770x56, 18);
 			
 			// Bren .303 30rnd
-			maga_nc(fow_30Rnd_303_bren, 10);
+			maga_nc(LIB_30Rnd_770x56, 10);
 			
 			// Smoke Grenades
 			maga_nc(SmokeShell, 6);
@@ -137,16 +164,21 @@ class CfgVehicles {
 			maga_nc(SmokeShellRed, 2);
 			
 			// Frag Grenade
-			maga_nc(fow_e_no36mk1, 6);
+			maga_nc(LIB_MillsBomb, 6);
+			maga_nc(LIB_1Rnd_G_MillsBomb, 4);
 			
 			// AT Grenade
-			maga_nc(twc_no82, 2);
+			maga_nc(LIB_No82, 2);
 			
 			// Flares
-			maga_nc(LIB_1Rnd_flare_white, 4);
-			maga_nc(LIB_1Rnd_flare_red, 4);
-			maga_nc(LIB_1Rnd_flare_green, 4);
-			maga_nc(LIB_1Rnd_flare_yellow, 4);
+			maga_nc(TWC_Magazine_SignalFlare_Blue, 15);
+			maga_nc(TWC_Magazine_SignalFlare_Red, 15);
+			maga_nc(TWC_Magazine_SignalFlare_Green, 15);
+			maga_nc(TWC_Magazine_SignalFlare_Yellow, 15);
+			maga_nc(TWC_Magazine_SignalSmoke_Green, 15);
+			maga_nc(TWC_Magazine_SignalSmoke_Red, 15);
+			maga_nc(TWC_Magazine_SignalSmoke_Yellow, 15);
+			maga_nc(TWC_Magazine_SignalSmoke_Blue, 15);
 		};
 	};
 	
@@ -162,13 +194,13 @@ class CfgVehicles {
 		
 		class TransportMagazines {
 			// Sten
-			maga_nc(fow_32Rnd_9x19_sten, 9);
+			maga_nc(LIB_32Rnd_9x19_Sten, 9);
 			
 			// Enfield .303 10rnd
-			maga_nc(10Rnd_303_Magazine, 30);
+			maga_nc(LIB_10Rnd_770x56, 30);
 			
 			// Bren .303 30rnd
-			maga_nc(fow_30Rnd_303_bren, 12);
+			maga_nc(LIB_30Rnd_770x56, 12);
 			
 			// Smoke Grenades
 			maga_nc(SmokeShell, 20);
@@ -176,16 +208,21 @@ class CfgVehicles {
 			maga_nc(SmokeShellRed, 10);
 			
 			// Frag Grenade
-			maga_nc(fow_e_no36mk1, 20);
+			maga_nc(LIB_MillsBomb, 20);
+			maga_nc(LIB_1Rnd_G_MillsBomb, 16);
 			
 			// AT Grenade
-			maga_nc(twc_no82, 10);
+			maga_nc(LIB_No82, 10);
 			
 			// Flares
-			maga_nc(LIB_1Rnd_flare_white, 15);
-			maga_nc(LIB_1Rnd_flare_red, 15);
-			maga_nc(LIB_1Rnd_flare_green, 15);
-			maga_nc(LIB_1Rnd_flare_yellow, 15);
+			maga_nc(TWC_Magazine_SignalFlare_Blue, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Red, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Green, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Yellow, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Green, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Red, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Yellow, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
 		};
 	};
 
@@ -208,13 +245,13 @@ class CfgVehicles {
 		
 		class TransportMagazines {
 			// Sten
-			maga_nc(fow_32Rnd_9x19_sten, 5);
+			maga_nc(LIB_32Rnd_9x19_Sten, 5);
 			
 			// Enfield .303 10rnd
-			maga_nc(10Rnd_303_Magazine, 18);
+			maga_nc(LIB_10Rnd_770x56, 18);
 			
 			// Bren .303 30rnd
-			maga_nc(fow_30Rnd_303_bren, 10);
+			maga_nc(LIB_30Rnd_770x56, 10);
 			
 			// Smoke Grenades
 			maga_nc(SmokeShell, 6);
@@ -222,16 +259,72 @@ class CfgVehicles {
 			maga_nc(SmokeShellRed, 2);
 			
 			// Frag Grenade
-			maga_nc(fow_e_no36mk1, 6);
+			maga_nc(LIB_MillsBomb, 6);
+			maga_nc(LIB_1Rnd_G_MillsBomb, 4);
 			
 			// AT Grenade
-			maga_nc(twc_no82, 2);
+			maga_nc(LIB_No82, 2);
 			
 			// Flares
-			maga_nc(LIB_1Rnd_flare_white, 4);
-			maga_nc(LIB_1Rnd_flare_red, 4);
-			maga_nc(LIB_1Rnd_flare_green, 4);
-			maga_nc(LIB_1Rnd_flare_yellow, 4);
+			maga_nc(TWC_Magazine_SignalFlare_Blue, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Red, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Green, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Yellow, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Green, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Red, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Yellow, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
+		};
+	};
+	
+	class TWC_AmmoBox_WW2_Airborne_Section_Portable: TWC_AmmoBox_WW2_Airborne_Portable {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Section Resupply - Late War (Portable)";
+		editorSubcategory = "TWC_WW2_Crates";
+		
+		class TransportItems {
+			item_nc(ACE_fieldDressing, 15);
+			item_nc(ACE_elasticBandage, 15);
+			item_nc(ACE_quikclot, 15);
+			item_nc(ACE_packingBandage, 15);
+			
+			item_nc(ACE_morphine, 6);
+			item_nc(ACE_epinephrine, 6);
+			item_nc(ACE_tourniquet, 4);
+		};
+		
+		class TransportMagazines {
+			// Sten
+			maga_nc(LIB_32Rnd_9x19_Sten, 10);
+			
+			// Enfield .303 10rnd
+			maga_nc(LIB_10Rnd_770x56, 18);
+			
+			// Bren .303 30rnd
+			maga_nc(LIB_30Rnd_770x56, 10);
+			
+			// Smoke Grenades
+			maga_nc(SmokeShell, 6);
+			maga_nc(SmokeShellGreen, 2);
+			maga_nc(SmokeShellRed, 2);
+			
+			// Frag Grenade
+			maga_nc(LIB_MillsBomb, 6);
+			maga_nc(LIB_1Rnd_G_MillsBomb, 4);
+			
+			// AT Grenade
+			maga_nc(LIB_No82, 2);
+			
+			// Flares
+			maga_nc(TWC_Magazine_SignalFlare_Blue, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Red, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Green, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Yellow, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Green, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Red, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Yellow, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
 		};
 	};
 	

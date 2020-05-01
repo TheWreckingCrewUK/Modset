@@ -6,6 +6,10 @@ class CfgPatches {
 			"twc_moduelCache",
 			"twc_modulegunwalkzeus",
 			"twc_modulemortarwalkzeus",
+			"TWC_Module_Ambient_AttackPlane_Gun",
+			"TWC_Module_Ambient_AttackPlane_Missile",
+			"TWC_Module_Ambient_AttackPlane_GunMissile",
+			"TWC_Module_Ambient_AttackPlane_Bomb",
 			"TWC_Module_CommandMessage",
 			"TWC_Module_StationaryUnits",
 			"TWC_Module_MovableUnits",
@@ -18,7 +22,8 @@ class CfgPatches {
 			"TWC_Module_TriggerUncache",
 			"TWC_Module_SetUrbanUnitsCache",
 			"TWC_Module_ACEInteract",
-			"TWC_Module_AmbientSound"
+			"TWC_Module_AmbientSound",
+			"twc_moduleSetSpectator"
 		};
 		
 		weapons[] = {};
@@ -28,7 +33,8 @@ class CfgPatches {
 			"cba_ai",
 			"A3_Modules_F",
 			"ace_magazinerepack",
-			"TWC_Core"
+			"TWC_Core",
+			"TWC_Sounds"
 		};
 
 		author[]={};

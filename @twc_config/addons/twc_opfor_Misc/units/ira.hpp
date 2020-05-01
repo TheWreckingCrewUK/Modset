@@ -414,34 +414,34 @@ class IRA_Field_L42Sniper: I_Soldier_F {
 	weapons[] = {
 		"Throw",
 		"Put",
-		"ukcw_l42",
+		"TWC_Weapon_L42A1_No32",
 		"CUP_hgun_Colt1911"
 	};
 
 	respawnweapons[] = {
 		"Throw",
 		"Put",
-		"ukcw_l42",
+		"TWC_Weapon_L42A1_No32",
 		"CUP_hgun_Colt1911"
 	};
 
 	magazines[] = {
-		"ukcw_l42_10rnd_mag",
-		"ukcw_l42_10rnd_mag",
-		"ukcw_l42_10rnd_mag",
-		"ukcw_l42_10rnd_mag",
-		"ukcw_l42_10rnd_mag",
+		"SP_10Rnd_762_L42",
+		"SP_10Rnd_762_L42",
+		"SP_10Rnd_762_L42",
+		"SP_10Rnd_762_L42",
+		"SP_10Rnd_762_L42",
 		"HandGrenade",
 		"CUP_7Rnd_45ACP_1911",
 		"CUP_7Rnd_45ACP_1911"
 	};
 
 	Respawnmagazines[] = {
-		"ukcw_l42_10rnd_mag",
-		"ukcw_l42_10rnd_mag",
-		"ukcw_l42_10rnd_mag",
-		"ukcw_l42_10rnd_mag",
-		"ukcw_l42_10rnd_mag",
+		"SP_10Rnd_762_L42",
+		"SP_10Rnd_762_L42",
+		"SP_10Rnd_762_L42",
+		"SP_10Rnd_762_L42",
+		"SP_10Rnd_762_L42",
 		"HandGrenade",
 		"CUP_7Rnd_45ACP_1911",
 		"CUP_7Rnd_45ACP_1911"

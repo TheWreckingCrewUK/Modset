@@ -5,18 +5,25 @@ class CfgFunctions {
 			class AirAssault {};
 			class Airborne {};
 			class AmbientAA {};
+			class ambientCivDepopulate {};
+			class ambientCivPopulate {};
 			class Artillery{};
 			class AttackHelicopter{};
 			class AttackPlane {};
+			class banzaiSounds {};
 			class BattlefieldSounds {};
 			class briefingLoadout {};
+			class charge {};
 			class CommandMessage{};
+			class crateParadrop {};
+			class crateSlingload {};
 			class createMarker{};
 			class CreateTask{};
 			class daisyCutter{};
 			class Defend {};
 			class dummyBullets {};
 			class Flagchange {};
+			class HideMarkers {};
 			class intelHint{};
 			class intelHintWithVariable{};
 			class LightsSwitch{};
@@ -39,10 +46,15 @@ class CfgFunctions {
 			class GliderTakeOff {};
 			class confiscateBadItems {};
 			class silentSafety {};
+			class checkvehicleID {};
 			class gunwalk {};
 			class mortarwalk {};
 			class init{};
 			class addACEInteraction {};
+			class aiscramblenew {};
+			class aiscramble {};
+			class aisuppresscqb {};
+			class aisuppress {};
 			
 			/** AMBIENT AIRCRAFT **/
 			class ambientFlyBy {};
@@ -62,7 +74,10 @@ class CfgFunctions {
 			class run{};
 			class safeZone{};
 			class zeus{};
+			class moduleAmbientCiv {};
 			class moduleCreateTask;
+			class moduleCrateParadrop {};
+			class moduleCrateSlingload {};
 			class moduleStationaryUnits{};
 			class moduleMovableUnits{};
 			class moduleVirtualArtillery{};
@@ -75,7 +90,9 @@ class CfgFunctions {
 			class moduleAttackPlane{};
 			class moduleAmbientAA;
 			class moduleCommandMessage{};
+			class moduleCharge {};
 			class moduleLightsSwitch{};
+			class moduleHideMarkers{};
 			class moduleIntelHint{};
 			class moduleIntelHintWithVariable{};
 			class moduleDaisyCutter{};
@@ -85,10 +102,9 @@ class CfgFunctions {
 			class moduleGliderTakeOff {};
 			class moduleTriggerUncache {};
 			class moduleUrbanUnitsCache {};
-			class modulegunwalk {};
-			class modulemortarwalk {};
 			class moduleACEInteract {};
 			class moduleAmbientSound {};
+			class moduleAmbientSoundSimp {};
 		};
 		
 		class cache {
