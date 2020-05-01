@@ -3,7 +3,7 @@ class TWC_AmmoBox_Colombia_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "Colombia Squad Resupply (Portable)";
-	editorSubcategory = "TWC_Colombia";
+	editorSubcategory = "TWC_Crates_Other";
 	
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing, 20);

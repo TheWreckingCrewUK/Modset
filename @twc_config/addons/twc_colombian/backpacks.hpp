@@ -5,6 +5,7 @@ class TWC_Backpack_Colombia_Rifleman: UK3CB_BAF_B_Carryall_OLI {
 	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag,8);
+		ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,1);
 	};
 };
 
@@ -24,7 +25,7 @@ class TWC_Backpack_Colombia_MG: UK3CB_BAF_B_Carryall_OLI {
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,4);
+		ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,2);
 	};
 };
 
@@ -70,13 +71,14 @@ class TWC_Backpack_Colombia_PlatoonLeader: UK3CB_BAF_B_Carryall_OLI {
 class TWC_Backpack_Colombia_PlatoonSergeant: UK3CB_BAF_B_Carryall_OLI {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 480;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
 	};
 	class TransportMagazines {
-		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 8);
+		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 12);
 		ADD_MAGA(CUP_30Rnd_556x45_Stanag,4);
-		ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,4);
+		ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,2);
 		ADD_MAGA(SmokeShell,4);
 	};
 };
