@@ -7,7 +7,7 @@ class TWC_Infantry_Colombia_Rifleman: TWC_Infantry_Colombia_Base {
 	linkedItems[] =
 	{
 		"CUP_V_O_Ins_Carrier_Rig_Light",
-		"CUP_H_US_patrol_cap_WDL",
+		"CUP_H_Ger_M92",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -15,7 +15,7 @@ class TWC_Infantry_Colombia_Rifleman: TWC_Infantry_Colombia_Base {
 	respawnLinkedItems[] =
 	{
 		"CUP_V_O_Ins_Carrier_Rig_Light",
-		"CUP_H_US_patrol_cap_WDL",
+		"CUP_H_Ger_M92",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -95,16 +95,16 @@ class TWC_Infantry_Colombia_MG: TWC_Infantry_Colombia_Rifleman {
 	backpack = "TWC_Backpack_Colombia_MG";
 	linkedItems[] =
 	{
-		"CUP_V_O_Ins_Carrier_Rig_MG",
-		"CUP_H_US_patrol_cap_WDL",
+		"TWC_Vest_Colombia_MG",
+		"CUP_H_Ger_M92",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
-		"CUP_V_O_Ins_Carrier_Rig_MG",
-		"CUP_H_US_patrol_cap_WDL",
+		"TWC_Vest_Colombia_MG",
+		"CUP_H_Ger_M92",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -123,11 +123,11 @@ class TWC_Infantry_Colombia_MG: TWC_Infantry_Colombia_Rifleman {
 	};
 	magazines[] =
 	{
-		MAG_1("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+		MAG_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 	respawnMagazines[] =
 	{
-		MAG_1("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+		MAG_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 };
 
@@ -139,11 +139,43 @@ class TWC_Infantry_Colombia_TeamLeader: TWC_Infantry_Colombia_Rifleman {
 class TWC_Infantry_Colombia_SquadLeader: TWC_Infantry_Colombia_TeamLeader {
 	displayName = "Squad Leader";
 	backpack = "TWC_Backpack_Colombia_SquadLeader";
+	linkedItems[] =
+	{
+		"CUP_V_O_Ins_Carrier_Rig_Com",
+		"CUP_H_Ger_M92_GG_CB",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CUP_V_O_Ins_Carrier_Rig_Com",
+		"CUP_H_Ger_M92_GG_CB",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
 };
 
 class TWC_Infantry_Colombia_PlatoonLeader: TWC_Infantry_Colombia_SquadLeader {
 	displayName = "Platoon Leader";
 	backpack = "TWC_Backpack_Colombia_PlatoonLeader";
+	linkedItems[] =
+	{
+		"CUP_V_O_Ins_Carrier_Rig_Com",
+		"CUP_H_US_patrol_cap_WDL",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CUP_V_O_Ins_Carrier_Rig_Com",
+		"CUP_H_US_patrol_cap_WDL",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
 };
 
 class TWC_Infantry_Colombia_PlatoonSergeant: TWC_Infantry_Colombia_PlatoonLeader {
