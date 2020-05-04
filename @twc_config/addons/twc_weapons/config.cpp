@@ -47,6 +47,8 @@ class CfgFunctions {
 	};
 };
 
+class Mode_SemiAuto;
+
 class CfgWeapons {
 	class Launcher;
 	class Launcher_Base_F: Launcher {
@@ -95,4 +97,18 @@ class CfgWeapons {
 			};
 		};
 	};
+	
+	class Rifle_Base_F;
+	class CUP_glaunch_Base: Rifle_Base_F {
+		aiDispersionCoefX = 30;
+		aiDispersionCoefY = 31;
+		
+		class Single: Mode_SemiAuto {
+			aiRateOfFire = 2.5;
+			aiDispersionCoefX = 30;
+			aiDispersionCoefY = 31;
+		};
+	};
 };
+
+#include "CfgAmmo.hpp"
