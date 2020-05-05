@@ -9,6 +9,7 @@ if !([_player, objNull, ["isNotInside", "isNotSwimming", "isNotSitting"]] call a
 private _magazineCfg = configFile >> "CfgMagazines" >> _magazineClassname;
 private _fullMagazineCount = getNumber (_magazineCfg >> "count");
 private _isBelt = isNumber (_magazineCfg >> "ACE_isBelt") && {(getNumber (_magazineCfg >> "ACE_isBelt")) == 1};
+//private _startingMagazineCount = {(_x select 0) == _magazineClassname} count ([_player] call TWC_Magazines_fnc_magazineDetails);
 private _startingMagazineCount = {(_x select 0) == _magazineClassname && (_x select 1) > 0} count ([_player] call TWC_Magazines_fnc_magazineDetails);
 
 [_player] call ace_common_fnc_goKneeling;
@@ -43,15 +44,15 @@ if (count _startingAmmoCounts < 2) exitWith {
 	diag_log text format ['[%1] (%2) %3: %4', toUpper 'ace', 'magazinerepack', 'ERROR', format ['%1 %2:%3', "Not Enough Mags to Repack", "z\ace\addons\magazinerepack\functions\fnc_startRepackingMagazine.sqf", 57 + 1]];
 };
 
-private _simEvents = [_fullMagazineCount, _startingAmmoCounts, _isBelt] call twc_magazines_fnc_simulateRepackEvents;
+private _simEvents = [_fullMagazineCount, _startingAmmoCounts, _isBelt] call TWC_Magazines_fnc_simulateRepackEvents;
 private _totalTime = _simEvents select (count _simEvents - 1) select 0;
 
 [
 	_totalTime,
 	[_magazineClassname, _startingAmmoCounts, _simEvents, _startingMagazineCount],
-	{_this call twc_magazines_fnc_magazineRepackFinish},
-	{_this call twc_magazines_fnc_magazineRepackFinish},
+	{_this call TWC_Magazines_fnc_magazineRepackFinish},
+	{_this call TWC_Magazines_fnc_magazineRepackFinish},
 	(localize "STR_ace_magazinerepack_RepackingMagazine"),
-	{_this call twc_magazines_fnc_magazineRepackProgress},
+	{_this call TWC_Magazines_fnc_magazineRepackProgress},
 	["isNotInside", "isNotSwimming", "isNotSitting"]
 ] call ace_common_fnc_progressBar;
