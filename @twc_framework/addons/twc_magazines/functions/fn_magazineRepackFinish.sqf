@@ -10,15 +10,6 @@ private _partialMags = 0;
 private _bulletsLeft = 0;
 private _emptyMags = 0;
 
-_createEmpties = [_magazineClassname] call TWC_Magazines_fnc_doesMagazineSupportEmpty;
-
-if (_createEmpties) then {
-	// empty magazines left over
-	for "_i" from -1 to (_startingMagazineCount - (_fullMags + _partialMags)) do {
-		ACE_player addMagazine [_magazineClassname, 0];
-	};
-};
-
 {
 	_x params ["_classname", "_count"];
 
@@ -34,7 +25,16 @@ if (_createEmpties) then {
 			_emptyMags = _emptyMags + 1;
 		};
 	};
-} forEach (magazinesAmmoFull ACE_player);
+} forEach ([ACE_player] call TWC_Magazines_fnc_magazineDetails);
+
+_createEmpties = [_magazineClassname] call TWC_Magazines_fnc_doesMagazineSupportEmpty;
+_emptyCount = _startingMagazineCount - (_fullMags + _partialMags);
+
+if (_createEmpties && (_emptyCount > 0)) then {
+	for "_i" from 1 to _emptyCount do {
+		ACE_player addMagazine [_magazineClassname, 0];
+	};
+};
 
 private _structuredOutputText = if (_errorCode == 0) then {
 	private _repackedMagsText = format [localize "STR_TWC_MagazineRepack_RepackedMagazinesDetail", _fullMags, _bulletsLeft, _emptyMags];

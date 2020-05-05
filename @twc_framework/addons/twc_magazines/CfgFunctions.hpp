@@ -5,25 +5,13 @@ class CfgFunctions {
 			class getMagazineChildren {
 				file = "twc_magazines\functions\fn_getMagazineChildren.sqf";
 			};
-
-			class magazineRepackFinish {
-				file = "twc_magazines\functions\fn_magazineRepackFinish.sqf";
-			};
-
-			class magazineRepackProgress {
-				file = "twc_magazines\functions\fn_magazineRepackProgress.sqf";
-			};
-
-			class startRepackingMagazine {
-				file = "twc_magazines\functions\fn_startRepackingMagazine.sqf";
-			};
 		};
 	};
 	
-	class twc_magazines {
+	class TWC_Magazines {
 		tag = "twc_magazines";
 		
-		class twc_magazines {
+		class TWC_Magazines {
 			file = "twc_magazines\functions";
 			
 			class handleReloaded {};
@@ -32,7 +20,6 @@ class CfgFunctions {
 			class getMagazineActions {};
 			
 			class startRefillingMagazine {};
-			class simulateRepackEvents {};
 			
 			class getEmptyActions {};
 			/* class magazineEmptyFinish {};
@@ -40,6 +27,13 @@ class CfgFunctions {
 			class simulateEmptyEvents {};
 			class startEmptyingMagazine {};
 			class canEmptyMagazine {}; */
+			
+			class startRepackingMagazine {};
+			class simulateRepackEvents {};
+			class magazineRepackProgress {};
+			class magazineRepackFinish {};
+			
+			
 		};
 	};
 };

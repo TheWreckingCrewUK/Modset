@@ -1,7 +1,9 @@
 params ["_target", "_player", "_params"];
 _params params ["_magazineClassname", "_emptiesTo", "_numberOf"];
 
-if !([_player, objNull, ["isNotInside", "isNotSwimming", "isNotSitting"]] call ace_common_fnc_canInteractWith) exitWith {};
+//if !([_player, objNull, ["isNotInside", "isNotSwimming", "isNotSitting"]] call ace_common_fnc_canInteractWith) exitWith {};
+
+hint "fired";
 
 private _magazineCfg = configFile >> "CfgMagazines" >> _magazineClassname;
 private _fullMagazineCount = getNumber (_magazineCfg >> "count");
@@ -40,9 +42,9 @@ private _totalTime = _simEvents select (count _simEvents - 1) select 0;
 [
 	_totalTime,
 	[_magazineClassname, _startingAmmoCounts, _simEvents, _startingMagazineCount, _emptiesTo, _numberOf],
-	{_this call twc_magazines_fnc_magazineEmptyFinish},
-	{_this call twc_magazines_fnc_magazineEmptyFinish},
+	{_this call TWC_Magazines_fnc_magazineEmptyFinish},
+	{_this call TWC_Magazines_fnc_magazineEmptyFinish},
 	"Emptying...",
-	{_this call twc_magazines_fnc_magazineEmptyProgress},
+	{_this call TWC_Magazines_fnc_magazineEmptyProgress},
 	["isNotInside", "isNotSwimming", "isNotSitting"]
 ] call ace_common_fnc_progressBar;

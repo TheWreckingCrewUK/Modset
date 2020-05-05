@@ -8,8 +8,8 @@ if (isNil "_var") then {
 	missionNamespace setVariable [_varName, _var, true];
 };
 
-if (_var != "") then {
+if (_var != "") exitWith {
 	true;
-} else {
-	false;
 };
+
+false

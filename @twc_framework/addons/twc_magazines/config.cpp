@@ -21,7 +21,9 @@ class CfgPatches {
 
 class Extended_Reloaded_EventHandlers {
 	class CAManBase {
-		twc_magazine_reload = "_this call twc_magazines_fnc_handleReloaded";
+		class TWC_Magazines {
+			reloaded = "_this call twc_magazines_fnc_handleReloaded";
+		};
 	};
 };
 

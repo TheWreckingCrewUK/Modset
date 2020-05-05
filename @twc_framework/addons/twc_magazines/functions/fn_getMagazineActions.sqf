@@ -38,7 +38,7 @@ if (_emptiesTo != "") then {
 		private _action = [
 			_parentMagazineClass,
 			"Empty",
-			"\z\twc_framework\addons\twc_magazines\ui\empty_ca.paa",
+			"twc_magazines\ui\empty_ca.paa",
 			{},
 			{true},
 			{ _this call TWC_Magazines_fnc_getEmptyActions },
@@ -51,13 +51,13 @@ if (_emptiesTo != "") then {
 
 // We've got a couple of mags (or more) that are partial. We can repack!
 if (({(_x select 0) < (_x select 1)} count _unitMagCounts) > 1) then {
-	private _action = [_parentMagazineClass, "Repack", "\z\ace\addons\common\UI\repack_ca.paa", { _this call ACE_magazinerepack_fnc_startRepackingMagazine }, {true}, {}, _parentMagazineClass] call ace_interact_menu_fnc_createAction;
+	private _action = [format ["%1_repack", _parentMagazineClass], "Repack", "\z\ace\addons\common\UI\repack_ca.paa", { _this call TWC_Magazines_fnc_startRepackingMagazine }, {true}, {}, _parentMagazineClass] call ace_interact_menu_fnc_createAction;
 	_actions pushBack [_action, [], _player];
 };
 
 // It supports loose ammo, we've got the loose ammo, and some empty mags!
 if (_emptiesTo != "" && {_hasLooseAmmoFor != "" && {({(_x select 0) == 0} count _unitMagCounts) > 0}}) then {
-	private _action = [_parentMagazineClass, "Refill", "\z\twc_framework\addons\twc_magazines\ui\refill_ca.paa", {  hint "test" }, {true}, {}, [_parentMagazineClass, _hasLooseAmmoFor]] call ace_interact_menu_fnc_createAction;
+	private _action = [format ["%1_refill", _parentMagazineClass], "Refill", "\z\twc_framework\addons\twc_magazines\ui\refill_ca.paa", {  hint "test" }, {true}, {}, [_parentMagazineClass, _hasLooseAmmoFor]] call ace_interact_menu_fnc_createAction;
 	_actions pushBack [_action, [], _player];
 };
 
