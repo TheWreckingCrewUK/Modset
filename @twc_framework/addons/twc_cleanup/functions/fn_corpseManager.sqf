@@ -10,7 +10,9 @@ if (_currentQueueSize >= TWC_Corpse_Queue_Max) then {
 			// been around long enough to delete
 			if ((time - _key) > TWC_Corpse_Queue_MinTime) then {
 				// delete it!
-				deleteVehicle _value;
+				if (!isnull _value) then {
+					deleteVehicle _value;
+				};
 				[TWC_Corpse_Queue, _key] call CBA_fnc_hashRem;
 			};
 		};
