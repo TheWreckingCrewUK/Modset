@@ -1,7 +1,7 @@
 params ["_args", "_elapsedTime", "_totalTime"];
-_args params ["_magazineClassname", "_startingAmmoCounts", "_simEvents", "_startingMagazineCount", "_emptiesTo", "_numberOf"];
+_args params ["_magazineClassname", "_startingAmmoCounts", "_simEvents", "_emptiesTo"];
 
-if !((_simEvents select 0) params ["_nextEventTime", "_nextEventIsBullet", "_nextEventMags"]) exitWith {};
+if !((_simEvents select 0) params ["_nextEventTime", "_nextEventIsBullet", "_nextEventMags", "_ammoTrans"]) exitWith {};
 
 if (_nextEventTime > _elapsedTime) exitWith { true };
 

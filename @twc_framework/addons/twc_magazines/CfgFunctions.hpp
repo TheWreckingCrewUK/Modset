@@ -17,23 +17,22 @@ class CfgFunctions {
 			class handleReloaded {};
 			class doesMagazineSupportEmpty {};
 			class magazineDetails {};
+			
 			class getMagazineActions {};
+			class getEmptyActions {}; 
 			
 			class startRefillingMagazine {};
-			
-			class getEmptyActions {};
-			/* class magazineEmptyFinish {};
-			class magazineEmptyProgress {};
-			class simulateEmptyEvents {};
-			class startEmptyingMagazine {};
-			class canEmptyMagazine {}; */
 			
 			class startRepackingMagazine {};
 			class simulateRepackEvents {};
 			class magazineRepackProgress {};
 			class magazineRepackFinish {};
 			
-			
+			class startEmpytingMagazine {};
+			class simulateEmptyEvents {};
+			class simulateEmptyProgress {};
+			class simulateEmptyFinish {};
+			class canEmptyMagazine {};
 		};
 	};
 };

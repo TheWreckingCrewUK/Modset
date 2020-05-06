@@ -9,7 +9,6 @@ if !([_player, objNull, ["isNotInside", "isNotSwimming", "isNotSitting"]] call a
 private _magazineCfg = configFile >> "CfgMagazines" >> _magazineClassname;
 private _fullMagazineCount = getNumber (_magazineCfg >> "count");
 private _isBelt = isNumber (_magazineCfg >> "ACE_isBelt") && {(getNumber (_magazineCfg >> "ACE_isBelt")) == 1};
-//private _startingMagazineCount = {(_x select 0) == _magazineClassname} count ([_player] call TWC_Magazines_fnc_magazineDetails);
 private _startingMagazineCount = {(_x select 0) == _magazineClassname && (_x select 1) > 0} count ([_player] call TWC_Magazines_fnc_magazineDetails);
 
 [_player] call ace_common_fnc_goKneeling;
