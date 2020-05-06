@@ -77,8 +77,8 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 		maga_nc(UK3CB_BAF_762_20Rnd_T, 5);
 
 		// L7A1 GPMG
-		maga_nc(UK3CB_BAF_762_100Rnd, 4);
-		maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
+		maga_nc(UK3CB_BAF_762_100Rnd, 6);
+		maga_nc(UK3CB_BAF_762_100Rnd_T, 2);
 
 		maga_nc(ACE_HandFlare_White, 2);
 
