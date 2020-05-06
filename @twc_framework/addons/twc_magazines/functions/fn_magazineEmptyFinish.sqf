@@ -1,5 +1,5 @@
 params ["_args", "_elapsedTime", "_totalTime", "_errorCode"];
-_args params ["_magazineClassname", "_lastAmmoCount", "_simEvents", "_startingMagazineCount", "_emptiesTo"];
+_args params ["_magazineClassname", "_lastAmmoCount", "_simEvents", "_emptiesTo", "_startingMagazineCount", "__startingLooseCount"];
 
 private _fullMagazineCount = getNumber (configFile >> "CfgMagazines" >> _magazineClassname >> "count");
 
@@ -27,17 +27,7 @@ private _looseCount = [];
 			_emptyMags = _emptyMags + 1;
 		};
 	};
-} forEach (magazinesAmmoFull ACE_player);
-
-_emptyCount = _startingMagazineCount - (_fullMags + _partialMags);
-
-if (_emptyCount > 0) then {
-	for "_i" from 1 to _emptyCount do {
-		ACE_player addMagazine [_magazineClassname, 0];
-	};
-};
-
-
+} forEach ([ACE_player] call TWC_Magazines_fnc_magazineDetails);
 
 private _structuredOutputText = if (_errorCode == 0) then {
 	private _repackedMagsText = format [localize "STR_TWC_MagazineRepack_RepackedMagazinesDetail", _fullMags, _partialMags, _emptyMags];

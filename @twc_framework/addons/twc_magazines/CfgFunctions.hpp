@@ -28,11 +28,10 @@ class CfgFunctions {
 			class magazineRepackProgress {};
 			class magazineRepackFinish {};
 			
-			class startEmpytingMagazine {};
+			class startEmptyingMagazine {};
 			class simulateEmptyEvents {};
-			class simulateEmptyProgress {};
-			class simulateEmptyFinish {};
-			class canEmptyMagazine {};
+			class magazineEmptyProgress {};
+			class magazineEmptyFinish {};
 		};
 	};
 };

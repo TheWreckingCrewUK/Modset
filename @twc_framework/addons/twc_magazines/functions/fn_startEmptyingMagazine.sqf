@@ -45,15 +45,18 @@ private _startingLooseAmmoPiles = [];
 } forEach ([_player, true] call TWC_Magazines_fnc_magazineDetails);
 
 // we'll create an empty pile anyway, so let's make sure we have at least 1 to start with for loops
-if ((count _startingLooseAmmoPiles) < 1) then { _startingLooseAmmoPiles pushBack 0; };
+if ((count _startingLooseAmmoPiles) < 1) then { 
+	ACE_Player addMagazine [_emptiesTo, 0];
+	_startingLooseAmmoPiles pushBack 0;
+};
 
 private _loopCount = (count _startingAmmoCounts) min _numberOf;
-private _simEvents = [_fullMagazineCount, _fullLoosePileCount, _startingAmmoCounts, _startingLooseCount, _loopCount] call TWC_Magazines_fnc_simulateEmptyEvents;
+private _simEvents = [_fullMagazineCount, _fullLoosePileCount, _startingAmmoCounts, _startingLooseAmmoPiles, _loopCount] call TWC_Magazines_fnc_simulateEmptyEvents;
 private _totalTime = _simEvents select (count _simEvents - 1) select 0;
 
 [
 	_totalTime,
-	[_magazineClassname, _startingAmmoCounts, _simEvents, _emptiesTo],
+	[_magazineClassname, _startingAmmoCounts, _simEvents, _emptiesTo, _startingMagazineCount, _startingLooseCount, _startingLooseAmmoPiles],
 	{_this call TWC_Magazines_fnc_magazineEmptyFinish},
 	{_this call TWC_Magazines_fnc_magazineEmptyFinish},
 	"Emptying...",

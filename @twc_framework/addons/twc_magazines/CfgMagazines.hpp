@@ -16,8 +16,8 @@ class CfgMagazines {
 		displayNameShort = "Loose 5.56 Ammo";
 		descriptionShort = "Loose 5.56 Ammo";
 		picture = "\twc_magazines\ui\refill_ca.paa"; // path
-		count = 300;
-		weight = 1;
+		count = 300; // 10 magazines
+		weight = 1; // mass should be half of that of X amount of magazine-bullet worth it holds
 
 		TWC_Fills[] = {"UK3CB_BAF_556_30Rnd"}; // classnames of the magazines this fills
 	};
