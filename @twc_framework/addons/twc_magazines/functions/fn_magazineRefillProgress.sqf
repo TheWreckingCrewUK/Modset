@@ -41,11 +41,8 @@ private _missingLoose = false;
 
 	if (_loindex != -1) then {
 		_addedLoosePiles deleteAt _loindex;
-		systemChat format ["%1 --- %2", _addedLoosePiles, _startingLooseAmmoPiles];
 	} else {
 		_missingLoose = true;
-		systemChat "missing loose";
-		systemChat format ["%1 --- %2", _addedLoosePiles, _startingLooseAmmoPiles];
 	};
 } forEach _startingLooseAmmoPiles;
 

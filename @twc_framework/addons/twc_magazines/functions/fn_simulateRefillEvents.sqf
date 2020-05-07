@@ -14,7 +14,7 @@ private _fnc_nextLoosePile = {
 };
 
 private _fnc_newMag = {
-	_time = _time + ace_magazinerepack_TimePerMagazine;
+	_time = _time + (ace_magazinerepack_TimePerMagazine / 2);
 	_events pushBack [_time, false, +_arrayOfAmmoCounts, false, +_arrayOfLooseAmmoCounts];
 };
 
@@ -40,7 +40,7 @@ while {_currentMagIter <= _magCount} do {
 			private _transfer = _ammoAvailable min _ammoNeeded;
 
 			for "_swapProgress" from 0 to (_transfer - 1) do {
-				_time = _time + ace_magazinerepack_TimePerAmmo;
+				_time = _time + (ace_magazinerepack_TimePerAmmo / 2);
 				_arrayOfLooseAmmoCounts set [_lIndex, (_arrayOfLooseAmmoCounts select _lIndex) - 1];
 				_arrayOfAmmoCounts set [_currentMagIter, (_arrayOfAmmoCounts select _currentMagIter) + 1];
 				_events pushBack [_time, true, +_arrayOfAmmoCounts, false, +_arrayOfLooseAmmoCounts];
