@@ -16,7 +16,7 @@ private _currentAmmoCount = [];
 	if (_xClassname == _magazineClassname) then {
 		_currentAmmoCount pushBack _xCount;
 	};
-} forEach ([_player] call TWC_Magazines_fnc_magazineDetails);
+} forEach ([ACE_player] call TWC_Magazines_fnc_magazineDetails);
 
 
 private _addedMagazines = +_currentAmmoCount;
