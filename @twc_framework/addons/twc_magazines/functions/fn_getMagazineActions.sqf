@@ -4,7 +4,7 @@ _params params ["_parentMagazineClass"];
 private _actions = [];
 
 private _unitMagCounts = [];
-private _hasLooseAmmoFor = "";
+private _looseAmmoClass = "";
 private _emptiesTo = [(configFile >> "CfgMagazines" >> _parentMagazineClass), "TWC_emptiesTo", ""] call BIS_fnc_returnConfigEntry;
 
 {
@@ -12,20 +12,19 @@ private _emptiesTo = [(configFile >> "CfgMagazines" >> _parentMagazineClass), "T
 
 	private _xFullMagazineCount = getNumber (configFile >> "CfgMagazines" >> _xClassname >> "count");
 	private _fills = (configFile >> "CfgMagazines" >> _xClassname >> "TWC_Fills") call BIS_fnc_getCfgDataArray;
-	private _continue = true;
+	{ _fills set [_forEachIndex, toLower _x]; } forEach _fills;
 	
 	if (_emptiesTo != "") then {
 		if !(isNil "_fills") then {
-			if (count _fills > 0) exitWith {
-				if (_parentMagazineClass in _fills) then {
-					_hasLooseAmmoFor = _xClassname;
-					_continue = false;
-				};
+			private _findIndex = _fills find (toLower _parentMagazineClass);
+			
+			if (_findIndex != -1) then {
+				_looseAmmoClass = _xClassname;
 			};
 		};
 	};
 
-	if (_xClassname == _parentMagazineClass && _continue) then {
+	if (_xClassname == _parentMagazineClass) then {
 		_unitMagCounts pushBack [_xCount, _xFullMagazineCount];
 	};
 } forEach ([_player] call TWC_Magazines_fnc_magazineDetails);
@@ -56,8 +55,8 @@ if (({(_x select 0) < (_x select 1)} count _unitMagCounts) > 1) then {
 };
 
 // It supports loose ammo, we've got the loose ammo, and some empty mags!
-if (_emptiesTo != "" && {_hasLooseAmmoFor != "" && {({(_x select 0) == 0} count _unitMagCounts) > 0}}) then {
-	private _action = [format ["%1_refill", _parentMagazineClass], "Refill", "twc_magazines\ui\refill_ca.paa", {  hint "test" }, {true}, {}, [_parentMagazineClass, _hasLooseAmmoFor]] call ace_interact_menu_fnc_createAction;
+if (_emptiesTo != "" && {_looseAmmoClass != "" && {({(_x select 0) == 0} count _unitMagCounts) > 0}}) then {
+	private _action = [format ["%1_refill", _parentMagazineClass], "Refill", "twc_magazines\ui\refill_ca.paa", { _this call TWC_Magazines_fnc_startRefillingMagazine }, {true}, {}, [_parentMagazineClass, _looseAmmoClass]] call ace_interact_menu_fnc_createAction;
 	_actions pushBack [_action, [], _player];
 };
 

@@ -21,8 +21,6 @@ class CfgFunctions {
 			class getMagazineActions {};
 			class getEmptyActions {}; 
 			
-			class startRefillingMagazine {};
-			
 			class startRepackingMagazine {};
 			class simulateRepackEvents {};
 			class magazineRepackProgress {};
@@ -32,6 +30,11 @@ class CfgFunctions {
 			class simulateEmptyEvents {};
 			class magazineEmptyProgress {};
 			class magazineEmptyFinish {};
+
+			class startRefillingMagazine {};
+			class simulateRefillEvents {};
+			class magazineRefillProgress {};
+			class magazineRefillFinish {};
 		};
 	};
 };
