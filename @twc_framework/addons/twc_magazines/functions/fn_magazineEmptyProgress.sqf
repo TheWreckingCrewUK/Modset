@@ -69,6 +69,7 @@ private _updateMagazinesOnPlayerFnc = {
 
 	_args set [1, _nextEventMags];
 	_args set [6, _nextLoosePile];
+	true;
 };
 
 // if bullet & no new pile
