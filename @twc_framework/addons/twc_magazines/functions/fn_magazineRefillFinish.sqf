@@ -10,7 +10,7 @@ private _partialMags = 0;
 private _bulletsLeft = 0;
 private _emptyMags = 0;
 
-private _looseCount = [];
+private _loosePiles = [];
 
 {
 	_x params ["_classname", "_count"];
@@ -27,7 +27,20 @@ private _looseCount = [];
 			_emptyMags = _emptyMags + 1;
 		};
 	};
+	
+	if (_classname == _fillsFrom) then {
+		_loosePiles pushBack _count;
+	};
 } forEach ([ACE_player] call TWC_Magazines_fnc_magazineDetails);
+
+// remove empty loose piles!
+ACE_player removeMagazines _fillsFrom;
+
+{
+	if (_x > 0) then {
+		ACE_player addMagazine [_fillsFrom, _x];
+	};
+} forEach _loosePiles;
 
 private _structuredOutputText = if (_errorCode == 0) then {
 	private _repackedMagsText = format [localize "STR_TWC_MagazineRepack_RepackedMagazinesDetail", _fullMags, _partialMags, _emptyMags];
