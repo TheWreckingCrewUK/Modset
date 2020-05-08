@@ -56,12 +56,14 @@ private _updateMagazinesOnPlayerFnc = {
 	ACE_player removeMagazines _emptiesTo;
 
 	{
-		ACE_player addMagazine [_magazineClassname, _x];
+		_success = [ACE_player, _magazineClassname, _x, true] call CBA_fnc_addMagazine;
+		if !(_success) exitWith { false; };
 	} forEach (_addedMagazines + _nextEventMags);
 	
 	{
 		if (_x > 0) then {
-			ACE_player addMagazine [_emptiesTo, _x];
+			_success = [ACE_player, _emptiesTo, _x, true] call CBA_fnc_addMagazine;
+			if !(_success) exitWith { false; };
 		};
 	} forEach (_addedLoosePiles + _nextLoosePile);
 
@@ -79,11 +81,13 @@ if (_nextEventIsBullet) then {
 	playSound "ace_magazinerepack_soundRoundFinished";
 	
 	if ((((count _simEvents) % 5) == 0) || {(count _simEvents) == 1}) then {
-		call _updateMagazinesOnPlayerFnc;
+		_success = call _updateMagazinesOnPlayerFnc;
+		if !(_success) exitWith { false; };
 	};
 } else {
 	playSound "ace_magazinerepack_soundMagazineFinished";
-	call _updateMagazinesOnPlayerFnc;
+	_success = call _updateMagazinesOnPlayerFnc;
+	if !(_success) exitWith { false; };
 };
 
 _simEvents deleteAt 0;

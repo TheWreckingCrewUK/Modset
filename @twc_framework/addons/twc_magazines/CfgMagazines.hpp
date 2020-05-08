@@ -54,4 +54,4 @@ class CfgMagazines {
 
 		TWC_Fills[] = {""}; // classnames of the magazines this refills
 	};
-};
+}; 
