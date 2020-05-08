@@ -100,6 +100,7 @@ class CfgPatches {
 			"rhsusf_vehicles",
 			"rhs_c_weapons",
 			"cup_weapons_ak",
+			"rhsusf_c_mrzr",
 			"rhsgref_c_weapons",
 			"rhsusf_c_weapons",
 			"uk3cb_baf_vehicles_landrover",
