@@ -905,7 +905,23 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_co.paa","","","twc_units_modern\textures\fs_cover_co.paa",""};
 	};
 	
-	//duplicated suppressor classes, to enable whitelisting of certain guns versus blacklisting all of them
+	//duplicated attachment classes, to enable whitelisting of certain guns versus blacklisting all of them
+	class rhs_acc_pbs4;
+	class twc_muzzle_pbs4: rhs_acc_pbs4
+	{
+	};
+	class rhs_acc_pgo7v3;
+	class twc_acc_pgo7v3: rhs_acc_pgo7v3
+	{
+	};
+	class cup_optic_pso_1;
+	class twc_acc_pso1m21: cup_optic_pso_1
+	{
+	};
+	class cup_optic_nspu;
+	class twc_optic_nspu: cup_optic_nspu
+	{
+	};
 	class rhsusf_acc_rotex5_grey;
 	class twc_acc_rotex5_grey: rhsusf_acc_rotex5_grey
 	{
@@ -1051,6 +1067,7 @@ class cfgWeapons
 		displayname = "MK19";
 	};
 	
+	
 	class default;
 	class LauncherCore
 	{
@@ -1059,11 +1076,21 @@ class cfgWeapons
 	class MissileLauncher: LauncherCore
 	{
 		class EventHandlers: EventHandlers {
-			fired = "[_this select 6] call twc_fnc_aps;";
+			fired = "if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
 		};
 	};
-	
-	class Launcher;
+	class Launcher: LauncherCore
+	{
+		class EventHandlers: EventHandlers {
+			fired = "if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
+		};
+	};
+	class RocketPods: LauncherCore
+	{
+		class EventHandlers: EventHandlers {
+			fired = "if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
+		};
+	};
 	
 	
 	class Launcher_Base_F: Launcher
@@ -1078,6 +1105,18 @@ class cfgWeapons
 		};
 	};
 	
+	class launch_NLAW_F: Launcher_Base_F
+	{
+		class EventHandlers;
+	};
+	
+	class ACE_launch_NLAW_ready_F: launch_NLAW_F
+	{
+		class EventHandlers: EventHandlers {
+			fired = "_this call CBA_fnc_firedDisposable;if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
+		};
+	};
+	
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
 		reloadAction = "RHS_GestureReloadRPG7";
@@ -1086,7 +1125,7 @@ class cfgWeapons
 	class rhs_weap_rpg7: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
-			fired = "if (hasinterface) exitwith {};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5, 	(velocity _bullet select 2) + (random 4) - 2];";
+			fired = "if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};if (hasinterface) exitwith {};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5, 	(velocity _bullet select 2) + (random 4) - 2];";
 		};
 		scope=2;
 		aiDispersionCoefX=1.03;
@@ -2077,8 +2116,25 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhs_acc_pgo7v3";
+				item="twc_acc_pgo7v3";
 			};
+		};
+		class WeaponSlotsInfo {
+			allowedSlots[] = {};
+			class CowsSlot {
+				access = 1;
+				class compatibleItems {
+					twc_acc_pgo7v3 = 1;
+				};
+				displayName = "Optics Slot";
+				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
+				iconPinPoint = "Left";
+				iconPosition[] = {0,0};
+				iconScale = 1;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				scope = 0;
+			};
+			mass = 126.7;
 		};
 	};
 	
@@ -2105,6 +2161,109 @@ class cfgWeapons
 		};
 	};
 	
+	class rhs_weap_svdp;
+	class twc_rus_svd: rhs_weap_svdp
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="twc_acc_pso1m21";
+			};
+		};
+		class WeaponSlotsInfo {
+			allowedSlots[] = {901};
+			class CowsSlot {
+				access = 1;
+				class compatibleItems {
+					twc_acc_pso1m21 = 1;
+					twc_optic_nspu = 1;
+				};
+				displayName = "Optics Slot";
+				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
+				iconPinPoint = "Left";
+				iconPosition[] = {0,0};
+				iconScale = 1;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				scope = 0;
+			};
+			mass = 77;
+			class MuzzleSlot {
+				class compatibleItems {
+					
+				};
+				displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
+				iconPinPoint = "Left";
+				iconPosition[] = {0,0};
+				iconScale = 1;
+				linkProxy = "\a3\data_f\proxies\weapon_slots\MUZZLE";
+				scope = 0;
+			};
+			class PointerSlot {
+			};
+			class rhs_npz_slot {};
+		};
+	};
+	
+	class rhs_weap_ak105;
+	class twc_weap_ak105_spotter: rhs_weap_ak105
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="twc_acc_pso1m21";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="twc_muzzle_pbs4";
+			};
+			class LinkedItemspointer
+			{
+				slot="MuzzleSlot";
+				item="rhs_acc_perst1ik";
+			};
+		};
+		class WeaponSlotsInfo {
+			allowedSlots[] = {901};
+			class CowsSlot {
+				access = 1;
+				class compatibleItems {
+					twc_acc_pso1m21 = 1;
+					twc_optic_nspu = 1;
+				};
+				displayName = "Optics Slot";
+				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
+				iconPinPoint = "Left";
+				iconPosition[] = {0,0};
+				iconScale = 1;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				scope = 0;
+			};
+			mass = 71;
+			class MuzzleSlot {
+				class compatibleItems {
+					twc_muzzle_pbs4 = 1;
+				};
+				displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
+				iconPinPoint = "Left";
+				iconPosition[] = {0,0};
+				iconScale = 1;
+				linkProxy = "\a3\data_f\proxies\weapon_slots\MUZZLE";
+				scope = 0;
+			};
+			class PointerSlot {
+				rhs_acc_perst1ik = 1;
+			};
+			class rhs_npz_slot {};
+		};
+	};
+	
 	class CUP_arifle_G36A;
 	class twc_MG36_eotech: CUP_arifle_G36A
 	{
@@ -2113,10 +2272,15 @@ class cfgWeapons
 		magazines[] = {"CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag","CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag","CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag","CUP_100Rnd_556x45_BetaCMag_camo","CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_camo","CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag_camo","CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag_camo","CUP_100Rnd_556x45_BetaCMag_wdl","CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_wdl","CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag_wdl","CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag_wdl","CUP_30Rnd_556x45_G36","CUP_30Rnd_TE1_Red_Tracer_556x45_G36","CUP_30Rnd_TE1_Green_Tracer_556x45_G36","CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36","CUP_30Rnd_556x45_G36_camo","CUP_30Rnd_TE1_Red_Tracer_556x45_G36_camo","CUP_30Rnd_TE1_Green_Tracer_556x45_G36_camo","CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_camo","CUP_30Rnd_556x45_G36_wdl","CUP_30Rnd_TE1_Red_Tracer_556x45_G36_wdl","CUP_30Rnd_TE1_Green_Tracer_556x45_G36_wdl","CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36_wdl","CUP_30Rnd_556x45_XM8","CUP_30Rnd_TE1_Red_Tracer_556x45_XM8","CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_TE1_Yellow_Tracer_556x45_XM8"};
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemsBipod
 			{
 				slot="UnderBarrelSlot";
 				item="CUP_Bipod_G36";
+			};
+			class LinkedItemsOptic
+			{
+				slot="CUP_PicatinnyTopMountG36";
+				item="cup_optic_g36optics";
 			};
 		};
 	};
@@ -2344,9 +2508,8 @@ class cfgWeapons
 		};
 	};
 	
-	class GMG_F;
 		
-	
+	class GMG_F;
 	class GMG_20mm: GMG_F
 	{
 		class manual;
@@ -2679,6 +2842,11 @@ class cfgammo
 		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
 	};
 	class rhs_B_762x54_Ball_Tracer_Green:rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_545x39_Ball;
+	class rhs_B_545x39_Ball_Tracer_Green:rhs_B_545x39_Ball
 	{
 		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
 	};

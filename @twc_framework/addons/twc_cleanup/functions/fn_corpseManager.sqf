@@ -10,7 +10,9 @@ if (_currentQueueSize >= TWC_Corpse_Queue_Max) then {
 			// been around long enough to delete
 			if ((time - _key) > TWC_Corpse_Queue_MinTime) then {
 				// delete it!
-				deleteVehicle _value;
+				if (!isnull _value) then {
+					deleteVehicle _value;
+				};
 				[TWC_Corpse_Queue, _key] call CBA_fnc_hashRem;
 			};
 		};
@@ -20,4 +22,6 @@ if (_currentQueueSize >= TWC_Corpse_Queue_Max) then {
 };
 
 // recursive function, keep plodding on!
-[TWC_cleanup_fnc_corpseManager, [], 15] call CBA_fnc_waitAndExecute;
+if (TWC_Corpse_Enabled) then {
+	[TWC_cleanup_fnc_corpseManager, [], 15] call CBA_fnc_waitAndExecute;
+};
