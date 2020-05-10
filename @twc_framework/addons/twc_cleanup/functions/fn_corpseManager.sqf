@@ -22,4 +22,6 @@ if (_currentQueueSize >= TWC_Corpse_Queue_Max) then {
 };
 
 // recursive function, keep plodding on!
-[TWC_cleanup_fnc_corpseManager, [], 15] call CBA_fnc_waitAndExecute;
+if (TWC_Corpse_Enabled) then {
+	[TWC_cleanup_fnc_corpseManager, [], 15] call CBA_fnc_waitAndExecute;
+};
