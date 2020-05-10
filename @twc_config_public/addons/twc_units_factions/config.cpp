@@ -370,6 +370,12 @@ class CfgFactionClasses
 		priority=2;
 		side=1;
 	};
+	class rus_units
+	{
+		displayName="Russian Military Forces";
+		priority=2;
+		side=0;
+	};
 	class ger_units
 	{
 		displayName="Bundeswehr (TWC)";

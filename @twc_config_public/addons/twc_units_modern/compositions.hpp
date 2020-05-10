@@ -1192,4 +1192,307 @@ class CfgGroups
                        };
 				};
 		};
+		
+        class EAST
+        {
+                name = "Opfor"; // Name of Faction Side
+                side = 0; // 0 = Opfor , 1 = Blufor , 2 = Indep , I think
+                class TWC_Public_Opfor //Faction Class name
+                {
+						class Modern_Rus_sym
+                        {
+                                name = "TWC Modern AFRF"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+                                class Modern_Rus_Section
+                                {
+                                        name = "VDV Section"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_commander"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_mg";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_mg_assistant";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_rifleman_at";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+										class Unit4
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_at_assistant";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+										class Unit5
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_subcommander";
+                                                rank = "PRIVATE";
+                                                position[] = {11,0,0};
+                                        };
+										class Unit6
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_grenadier";
+                                                rank = "PRIVATE";
+                                                position[] = {13,0,0};
+                                        };
+										class Unit7
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_medic";
+                                                rank = "PRIVATE";
+                                                position[] = {15,0,0};
+                                        };
+                                };
+                                class Modern_Rus_Section_mech
+                                {
+                                        name = "VDV Section (Mechanised)"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_commander"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_mg";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_mg_assistant";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_rifleman_at";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+										class Unit4
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_at_assistant";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+										class Unit5
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_subcommander";
+                                                rank = "PRIVATE";
+                                                position[] = {11,0,0};
+                                        };
+										class Unit6
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_grenadier";
+                                                rank = "PRIVATE";
+                                                position[] = {13,0,0};
+                                        };
+										class Unit7
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_medic";
+                                                rank = "PRIVATE";
+                                                position[] = {15,0,0};
+                                        };
+										class Unit8
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_vehcommander";
+                                                rank = "PRIVATE";
+                                                position[] = {17,0,0};
+                                        };
+										class Unit9
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_vehcrewman";
+                                                rank = "PRIVATE";
+                                                position[] = {19,0,0};
+                                        };
+										class Unit10
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_vehcrewman";
+                                                rank = "PRIVATE";
+                                                position[] = {21,0,0};
+                                        };
+                                };
+                                class Modern_Rus_Section_d
+                                {
+                                        name = "VDV Section (Desert)"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_commander_d"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_mg_d";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_mg_assistant_d";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_rifleman_at_d";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+										class Unit4
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_at_assistant_d";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+										class Unit5
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_subcommander_d";
+                                                rank = "PRIVATE";
+                                                position[] = {11,0,0};
+                                        };
+										class Unit6
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_grenadier_d";
+                                                rank = "PRIVATE";
+                                                position[] = {13,0,0};
+                                        };
+										class Unit7
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_medic_d";
+                                                rank = "PRIVATE";
+                                                position[] = {15,0,0};
+                                        };
+                                };
+                                class Modern_Rus_Section_mech_d
+                                {
+                                        name = "VDV Section (Mechanised/Desert)"; //Name of Group
+                                        faction = "twc_faction"; //Faction
+                                        side = 1; //Side
+                                        class Unit0
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_commander_d"; //Class name of desired solider
+                                                rank = "CORPORAL"; // Rank
+                                                position[] = {0,3,0}; //Position in the formation
+                                        };
+                                        class Unit1
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_mg_d";
+                                                rank = "PRIVATE";
+                                                position[] = {3,0,0};
+                                        };
+                                        class Unit2
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_mg_assistant_d";
+                                                rank = "PRIVATE";
+                                                position[] = {5,0,0};
+                                        };
+										class Unit3
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_rifleman_at_d";
+                                                rank = "PRIVATE";
+                                                position[] = {7,0,0};
+                                        };
+										class Unit4
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_at_assistant_d";
+                                                rank = "PRIVATE";
+                                                position[] = {9,0,0};
+                                        };
+										class Unit5
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_subcommander_d";
+                                                rank = "PRIVATE";
+                                                position[] = {11,0,0};
+                                        };
+										class Unit6
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_grenadier_d";
+                                                rank = "PRIVATE";
+                                                position[] = {13,0,0};
+                                        };
+										class Unit7
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_medic_d";
+                                                rank = "PRIVATE";
+                                                position[] = {15,0,0};
+                                        };
+										class Unit8
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_vehcommander_d";
+                                                rank = "PRIVATE";
+                                                position[] = {17,0,0};
+                                        };
+										class Unit9
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_vehcrewman_d";
+                                                rank = "PRIVATE";
+                                                position[] = {19,0,0};
+                                        };
+										class Unit10
+                                        {
+                                                side = 1;
+                                                vehicle = "TWC_Modern_rus_vehcrewman_d";
+                                                rank = "PRIVATE";
+                                                position[] = {21,0,0};
+                                        };
+                                };
+						};
+				};
+		};
 };

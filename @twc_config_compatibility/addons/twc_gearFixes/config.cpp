@@ -1347,7 +1347,7 @@ class CfgVehicles {
 				dampingRate = 0.1;
 				dampingRateDamaged = 1;
 				dampingRateDestroyed = 2000;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.4 } };
 				latStiffX = 25;
 				latStiffY = 180;
 				longitudinalStiffnessPerUnitGravity = 10000;
@@ -1422,7 +1422,7 @@ class CfgVehicles {
 				dampingRate = 0.1;
 				dampingRateDamaged = 1;
 				dampingRateDestroyed = 2000;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.4 } };
 				latStiffX = 25;
 				latStiffY = 180;
 				longitudinalStiffnessPerUnitGravity = 10000;
@@ -1523,7 +1523,7 @@ class CfgVehicles {
 				dampingRate = 0.1;
 				dampingRateDamaged = 1;
 				dampingRateDestroyed = 1000;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.3 } };
 				latStiffX = 3.5;
 				latStiffY = 18;
 				longitudinalStiffnessPerUnitGravity = 4582;
@@ -1586,7 +1586,7 @@ class CfgVehicles {
 				dampingRate = 0.1;
 				dampingRateDamaged = 1;
 				dampingRateDestroyed = 1000;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.3 } };
 				latStiffX = 3.5;
 				latStiffY = 18;
 				longitudinalStiffnessPerUnitGravity = 4582;
@@ -2346,13 +2346,13 @@ class CfgVehicles {
 		
 		ace_cargo_size = 35;
 		ace_cargo_canLoad = 1;	
-		antiRollbarForceCoef = 0.0;
-		antiRollbarForceLimit = 1;
+		antiRollbarForceCoef = 1.0;
+		antiRollbarForceLimit = 0.1;
 		differentialType = "all_limited";
-		frontRearSplit = 0.9;
-		frontBias = 1.5;
+		frontRearSplit = 0.2;
+		frontBias = 0.5;
 		rearBias = 1.5;
-		centreBias = 1.5;
+		centreBias = 1.0;
 		class Turrets;
 		class Wheels:Wheels {
 			class LF:LF {
@@ -2363,20 +2363,20 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.1, 0.8 }, { 1.0, 0.3 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.1, 0.3 }, { 1.0, 0.2 }};
 				latStiffX = 25;
-				latStiffY = 120;
+				latStiffY = 180;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
-				maxBrakeTorque = 1200;
+				maxBrakeTorque = 900;
 				maxCompression = 0.4;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 1000;
+				maxDroop = 0.0;
+				maxHandBrakeTorque = 200;
 				moi = 6;
 				side = "left";
-				springDamperRate = 5000;
-				springStrength = 12000;
-				sprungMass = 525;
+				springDamperRate = 4000;
+				springStrength = 6000;
+				sprungMass = 625;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				suspTravelDirection[] = {0,-1,0};
@@ -2387,19 +2387,20 @@ class CfgVehicles {
 				boneName = "wheel_1_2_damper";
 				boundary = "wheel_1_2_bound";
 				center = "wheel_1_2_axis";
+				springStrength = 56000;
 				dampingRate = 1;
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.1, 0.8 }, { 1.0, 0.3 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.2, 0.3 }, { 1.0, 0.7 }};
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 1800;
-				maxDroop = 0.1;
+				maxDroop = 0.3;
 				maxHandBrakeTorque = 1000;
 				moi = 6;
 				side = "left";
-				sprungMass = 525;
+				sprungMass = 225;
 				steering = 0;
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				suspTravelDirection[] = {0,-1,0};
@@ -2416,9 +2417,9 @@ class CfgVehicles {
 				dampingRateInAir = 0.8;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
-				maxBrakeTorque = 1200;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 1000;
+				maxBrakeTorque = 900;
+				maxDroop = 0.0;
+				maxHandBrakeTorque = 200;
 				moi = 6;
 				side = "right";
 				steering = 1;
@@ -2438,7 +2439,7 @@ class CfgVehicles {
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 1800;
-				maxDroop = 0.1;
+				maxDroop = 0.3;
 				maxHandBrakeTorque = 1000;
 				moi = 6;
 				side = "right";
@@ -2483,12 +2484,12 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.1, 0.8 }, { 1.0, 0.3 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.3 }};
 				latStiffX = 25;
 				latStiffY = 120;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
-				maxBrakeTorque = 2000;
+				maxBrakeTorque = 1400;
 				maxCompression = 0.25;
 				maxDroop = 0.3;
 				maxHandBrakeTorque = 500;
@@ -2511,7 +2512,7 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.1, 0.8 }, { 1.0, 0.3 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.3 }};
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 2000;
@@ -2536,7 +2537,7 @@ class CfgVehicles {
 				dampingRateInAir = 0.8;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
-				maxBrakeTorque = 1800;
+				maxBrakeTorque = 1400;
 				maxDroop = 0.3;
 				maxHandBrakeTorque = 1000;
 				moi = 6;
@@ -2557,7 +2558,7 @@ class CfgVehicles {
 				dampingRateInAir = 0.8;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
-				maxBrakeTorque = 1800;
+				maxBrakeTorque = 2000;
 				maxDroop = 0.3;
 				maxHandBrakeTorque = 1000;
 				moi = 6;
@@ -2627,7 +2628,7 @@ class CfgVehicles {
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 		};
 		
@@ -2690,7 +2691,7 @@ class CfgVehicles {
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 		};
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
@@ -2730,7 +2731,7 @@ class CfgVehicles {
 				{
 					initAngleX = 0;
 					initAngleY = 0;
-					initElev = 0;
+					initElev = 30;
 					initFov = 0.1;
 					maxAngleX = 30;
 					maxAngleY = 100;

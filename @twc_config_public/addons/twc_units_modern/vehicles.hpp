@@ -1183,11 +1183,11 @@
 		ace_cargo_space = 2;
 		differentialType = "all_limited";
 		frontBias = 2;
-		centerBias = 2;
+		centerBias = 0.5;
 		frontRearSplit = 0.1;
 		clutchStrength = 2.0;
-		rearBias = 0.1;
-		turnCoef = 2;
+		rearBias = 2;
+		turnCoef = 2.5;
 		maxSpeed = 105;
 		normalSpeedForwardCoef = 1.1;
 		maxOmega = 937.76;
@@ -1202,7 +1202,7 @@
 			dampingRate = 0.1;
 			dampingRateDamaged = 1;
 			dampingRateDestroyed = 1000;
-			frictionVsSlipGraph[] = {{ 0.0, 0.9 }, { 0.1, 0.4 }, { 1.0, 0.3 }};
+			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.1, 0.3 }, { 1.0, 0.2 }};
 			latStiffX = 10;
 			latStiffY = 120;
 			longitudinalStiffnessPerUnitGravity = 2000;
@@ -1210,7 +1210,7 @@
 			maxCompression = 0.5;
 			maxDroop = 0.02;
 			maxHandBrakeTorque = 100;
-			MOI = 4;
+			MOI = 10;
 			side = "left";
 			springDamperRate = 2500;
 			springStrength = 9000;
@@ -1230,21 +1230,23 @@
 			maxBrakeTorque = 300;
 			};
 			class RR: RF {
-			frictionVsSlipGraph[] = {{ 0.0, 0.9 }, { 0.2, 0.5 }, { 1.0, 0.75 }};
+			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.2, 0.3 }, { 1.0, 0.7 }};
 			maxCompression = 0.5;
 			springDamperRate = 2500;
 			springStrength = 9000;
 			maxHandBrakeTorque = 1300;
 			sprungMass = 200;
+			MOI = 40;
 			maxBrakeTorque = 350;
 			};
 			class LR: LF {
-			frictionVsSlipGraph[] = {{ 0.0, 0.9 }, { 0.2, 0.5 }, { 1.0, 0.75 }};
+			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.2, 0.3 }, { 1.0, 0.5 }};
 			maxCompression = 0.5;
 			springDamperRate = 2500;
 			springStrength = 9000;
 			maxHandBrakeTorque = 1300;
 			sprungMass = 200;
+			MOI = 40;
 			maxBrakeTorque = 350;
 			};
 			
@@ -1259,12 +1261,12 @@
 			TransmissionRatios[] = {"High",6.8};
 		};
 		class PlayerSteeringCoefficients {
-			maxTurnHundred = 0.3;
+			maxTurnHundred = 0.5;
 			turnDecreaseConst = 5;
 			turnDecreaseLinear = 0;
 			turnDecreaseTime = 0;
-			turnIncreaseConst = 1;
-			turnIncreaseLinear = 1;
+			turnIncreaseConst = 3;
+			turnIncreaseLinear = 3;
 			turnIncreaseTime = 0;
 		};
 		
