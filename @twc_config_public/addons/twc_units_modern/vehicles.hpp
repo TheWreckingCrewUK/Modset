@@ -1188,7 +1188,7 @@
 		clutchStrength = 2.0;
 		rearBias = 2;
 		turnCoef = 2.5;
-		maxSpeed = 105;
+		maxSpeed = 115;
 		normalSpeedForwardCoef = 1.1;
 		maxOmega = 937.76;
 		latency = 0.4;
@@ -1215,7 +1215,7 @@
 			springDamperRate = 2500;
 			springStrength = 9000;
 			sprungMass = 200;
-			maxBrakeTorque = 300;
+			maxBrakeTorque = 200;
 			steering = 1;
 			suspForceAppPointOffset = "wheel_1_1_axis";
 			suspTravelDirection[] = {0,-1,0};
@@ -1227,7 +1227,7 @@
 			springDamperRate = 2500;
 			springStrength = 9000;
 			sprungMass = 200;
-			maxBrakeTorque = 300;
+			maxBrakeTorque = 200;
 			};
 			class RR: RF {
 			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.2, 0.3 }, { 1.0, 0.7 }};
@@ -1237,7 +1237,7 @@
 			maxHandBrakeTorque = 1300;
 			sprungMass = 200;
 			MOI = 40;
-			maxBrakeTorque = 350;
+			maxBrakeTorque = 900;
 			};
 			class LR: LF {
 			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.2, 0.3 }, { 1.0, 0.5 }};
@@ -1247,7 +1247,7 @@
 			maxHandBrakeTorque = 1300;
 			sprungMass = 200;
 			MOI = 40;
-			maxBrakeTorque = 350;
+			maxBrakeTorque = 900;
 			};
 			
 		};
