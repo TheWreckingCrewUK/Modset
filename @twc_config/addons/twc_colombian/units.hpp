@@ -189,6 +189,35 @@ class TWC_Infantry_Colombia_TeamLeader: TWC_Infantry_Colombia_Rifleman {
 class TWC_Infantry_Colombia_SquadLeader: TWC_Infantry_Colombia_TeamLeader {
 	displayName = "Squad Leader";
 	backpack = "TWC_Backpack_Colombia_SquadLeader";
+	TWC_isCommandRole = 1;
+	class EventHandlers: EventHandlers {
+		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+	};
+	
+	Items[]=
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	respawnItems[]=
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	weapons[] =
+	{
+		"CUP_arifle_Galil_SAR_black",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"CUP_arifle_Galil_SAR_black",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
 	magazines[] =
 	{
 		MAG_5("CUP_35Rnd_556x45_Galil_Mag"),
@@ -206,6 +235,10 @@ class TWC_Infantry_Colombia_SquadLeader: TWC_Infantry_Colombia_TeamLeader {
 class TWC_Infantry_Colombia_PlatoonLeader: TWC_Infantry_Colombia_SquadLeader {
 	displayName = "Platoon Leader";
 	backpack = "TWC_Backpack_Colombia_PlatoonLeader";
+	TWC_isCommandRole = 1;
+	class EventHandlers: EventHandlers {
+		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+	};
 	linkedItems[] =
 	{
 		"SP_P58_FightingOrder",
@@ -239,6 +272,10 @@ class TWC_Infantry_Colombia_PlatoonLeader: TWC_Infantry_Colombia_SquadLeader {
 class TWC_Infantry_Colombia_PlatoonSergeant: TWC_Infantry_Colombia_PlatoonLeader {
 	displayName = "Platoon Sergeant";
 	backpack = "TWC_Backpack_Colombia_PlatoonSergeant";
+	TWC_isCommandRole = 1;
+	class EventHandlers: EventHandlers {
+		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+	};
 };
 
 class TWC_Infantry_Colombia_PlatoonMedic: TWC_Infantry_Colombia_Rifleman {
