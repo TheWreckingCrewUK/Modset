@@ -17,7 +17,6 @@
 	"Corpse Queue Max",
 	["TWC - Cleanup", "Corpse Management"],
 	[5, 50, 25, 0],
-	true,
 	1,
 	{},
 	true
@@ -29,7 +28,6 @@
 	["Corpse Min Time (Seconds)", "Minimal time between death and cleanup"],
 	["TWC - Cleanup", "Corpse Management"],
 	[60, 900, 300, 0],
-	true,
 	1,
 	{},
 	true
