@@ -54,48 +54,25 @@ class CfgVehicles {
 	#define CATEGORY(a) editorSubcategory = a;\
 			vehicleClass = a;
 
+	class CUP_B_M113_USA;
+	class TWC_Vehicle_IDF_ColdWar_M113: CUP_B_M113_USA {
+		faction = "TWC_IDF_ColdWar";
+		CATEGORY(TWC_ForceType_Mechanised)
+		hiddenSelectionsTextures[] = {
+			"twc_idf\data\m113_1_co.paa",
+			"twc_idf\data\m113_2_co.paa"
+		};
+	};
+
 	#include "coldwar\units.hpp"
 };
 
-/*class CfgGroups {
-	class WEST
-	{
-		class TWC_Groups_Modern
-		{
-			name = "TWC Groups Modern";
-			#include "regular\groups.hpp"
-			#include "coin\groups.hpp"
-			class TWC_Groups_Modern_Generic
-			{
-				name = "Generic";
-				class Tank_Crew
-				{
-					name = "Tank Crew";
-					faction = "TWC_Modern";
-					side = 1;
-					class Unit0
-					{
-						side = 1;
-						vehicle = "TWC_Infantry_Modern_Tank_Commander";
-						rank = "SERGEANT";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 1;
-						vehicle = "TWC_Infantry_Modern_Tank_Crew";
-						rank = "PRIVATE";
-						position[] = {2,0,0};
-					};
-					class Unit2
-					{
-						side = 1;
-						vehicle = "TWC_Infantry_Modern_Tank_Crew";
-						rank = "PRIVATE";
-						position[] = {4,0,0};
-					};
-				};
-			};
+class CfgGroups {
+	class WEST {
+		class TWC_Groups_IDF_ColdWar {
+			name = "TWC Groups IDF Cold War";
+			#include "coldwar\groups.hpp"
+			#include "modern\groups.hpp"
 		};
 	};
-};*/
+};
