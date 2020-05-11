@@ -3,10 +3,9 @@ class TWC_Infantry_Colombia_Rifleman: TWC_Infantry_Colombia_Base {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "Rifleman";
-	backpack = "TWC_Backpack_Colombia_Rifleman";
 	linkedItems[] =
 	{
-		"CUP_V_O_Ins_Carrier_Rig_Light",
+		"SP_P58_FightingOrder",
 		"CUP_H_Ger_M92",
 		"ItemCompass",
 		"itemMap",
@@ -14,7 +13,7 @@ class TWC_Infantry_Colombia_Rifleman: TWC_Infantry_Colombia_Base {
 	};
 	respawnLinkedItems[] =
 	{
-		"CUP_V_O_Ins_Carrier_Rig_Light",
+		"SP_P58_FightingOrder",
 		"CUP_H_Ger_M92",
 		"ItemCompass",
 		"itemMap",
@@ -22,11 +21,11 @@ class TWC_Infantry_Colombia_Rifleman: TWC_Infantry_Colombia_Base {
 	};
 	Items[] =
 	{
-		MEDICAL_LOADOUT,
+		MEDICAL_LOADOUT
 	};
 	respawnItems[] =
 	{
-		MEDICAL_LOADOUT,
+		MEDICAL_LOADOUT
 	};
 	weapons[] =
 	{
@@ -53,10 +52,28 @@ class TWC_Infantry_Colombia_Rifleman: TWC_Infantry_Colombia_Base {
 		MAG_2("SmokeShell")
 	};
 };
+class TWC_Infantry_Colombia_RiflemanAT: TWC_Infantry_Colombia_Rifleman {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Rifleman (AT)";
+	weapons[] =
+	{
+		"CUP_arifle_Galil_SAR_black",
+		"CUP_launch_M72A6",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"CUP_arifle_Galil_SAR_black",
+		"CUP_launch_M72A6",
+		"Throw",
+		"Put"
+	};
+};
 
 class TWC_Infantry_Colombia_Grenadier: TWC_Infantry_Colombia_Rifleman {
 	displayName = "Grenadier";
-	backpack = "TWC_Backpack_Colombia_Grenadier";
 	weapons[] =
 	{
 		"CUP_arifle_M16A2_GL",
@@ -69,30 +86,49 @@ class TWC_Infantry_Colombia_Grenadier: TWC_Infantry_Colombia_Rifleman {
 		"Throw",
 		"Put"
 	};
+	linkedItems[] =
+	{
+		"TWC_Vest_Colombia_Grenadier",
+		"CUP_H_Ger_M92",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"TWC_Vest_Colombia_Grenadier",
+		"CUP_H_Ger_M92",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
 	magazines[] =
 	{
 		MAG_7("CUP_30Rnd_556x45_Stanag"),
+		MAG_10("1Rnd_HE_Grenade_shell"),
 		MAG_4("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
 		MAG_2("1Rnd_SmokeBlue_Grenade_shell"),
-		MAG_2("CUP_HandGrenade_M67")
+		MAG_2("CUP_HandGrenade_M67"),
+		MAG_2("SmokeShell")
 	};
 	respawnMagazines[] =
 	{
-		MAG_2("CUP_30Rnd_556x45_Stanag"),
+		MAG_7("CUP_30Rnd_556x45_Stanag"),
+		MAG_10("1Rnd_HE_Grenade_shell"),
 		MAG_4("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
 		MAG_2("1Rnd_SmokeBlue_Grenade_shell"),
-		MAG_2("CUP_HandGrenade_M67")
+		MAG_2("CUP_HandGrenade_M67"),
+		MAG_2("SmokeShell")
 	};
 };
 
 class TWC_Infantry_Colombia_MG: TWC_Infantry_Colombia_Rifleman {
 	displayName = "Machine Gunner";
 	uniformClass = "CUP_U_B_BDUv2_roll_M81";
-	backpack = "TWC_Backpack_Colombia_MG";
 	linkedItems[] =
 	{
 		"TWC_Vest_Colombia_MG",
@@ -134,26 +170,36 @@ class TWC_Infantry_Colombia_MG: TWC_Infantry_Colombia_Rifleman {
 class TWC_Infantry_Colombia_TeamLeader: TWC_Infantry_Colombia_Rifleman {
 	displayName = "Team Leader";
 	backpack = "TWC_Backpack_Colombia_TeamLeader";
+	magazines[] =
+	{
+		MAG_5("CUP_35Rnd_556x45_Galil_Mag"),
+		MAG_2("CUP_35Rnd_556x45_Red_Tracer_Galil_Mag"),
+		MAG_2("CUP_HandGrenade_M67"),
+		MAG_2("SmokeShell")
+	};
+	respawnMagazines[] =
+	{
+		MAG_5("CUP_35Rnd_556x45_Galil_Mag"),
+		MAG_2("CUP_35Rnd_556x45_Red_Tracer_Galil_Mag"),
+		MAG_2("CUP_HandGrenade_M67"),
+		MAG_2("SmokeShell")
+	};
 };
 
 class TWC_Infantry_Colombia_SquadLeader: TWC_Infantry_Colombia_TeamLeader {
 	displayName = "Squad Leader";
 	backpack = "TWC_Backpack_Colombia_SquadLeader";
-	linkedItems[] =
+	magazines[] =
 	{
-		"CUP_V_O_Ins_Carrier_Rig_Com",
-		"CUP_H_Ger_M92_GG_CB",
-		"ItemCompass",
-		"itemMap",
-		"ItemWatch"
+		MAG_5("CUP_35Rnd_556x45_Galil_Mag"),
+		MAG_2("CUP_35Rnd_556x45_Red_Tracer_Galil_Mag"),
+		MAG_2("SmokeShell")
 	};
-	respawnLinkedItems[] =
+	respawnMagazines[] =
 	{
-		"CUP_V_O_Ins_Carrier_Rig_Com",
-		"CUP_H_Ger_M92_GG_CB",
-		"ItemCompass",
-		"itemMap",
-		"ItemWatch"
+		MAG_5("CUP_35Rnd_556x45_Galil_Mag"),
+		MAG_2("CUP_35Rnd_556x45_Red_Tracer_Galil_Mag"),
+		MAG_2("SmokeShell")
 	};
 };
 
@@ -162,7 +208,7 @@ class TWC_Infantry_Colombia_PlatoonLeader: TWC_Infantry_Colombia_SquadLeader {
 	backpack = "TWC_Backpack_Colombia_PlatoonLeader";
 	linkedItems[] =
 	{
-		"CUP_V_O_Ins_Carrier_Rig_Com",
+		"SP_P58_FightingOrder",
 		"CUP_H_US_patrol_cap_WDL",
 		"ItemCompass",
 		"itemMap",
@@ -170,11 +216,23 @@ class TWC_Infantry_Colombia_PlatoonLeader: TWC_Infantry_Colombia_SquadLeader {
 	};
 	respawnLinkedItems[] =
 	{
-		"CUP_V_O_Ins_Carrier_Rig_Com",
+		"SP_P58_FightingOrder",
 		"CUP_H_US_patrol_cap_WDL",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	magazines[] =
+	{
+		MAG_3("CUP_35Rnd_556x45_Galil_Mag"),
+		MAG_2("CUP_35Rnd_556x45_Red_Tracer_Galil_Mag"),
+		MAG_2("SmokeShell")
+	};
+	respawnMagazines[] =
+	{
+		MAG_3("CUP_35Rnd_556x45_Galil_Mag"),
+		MAG_2("CUP_35Rnd_556x45_Red_Tracer_Galil_Mag"),
+		MAG_2("SmokeShell")
 	};
 };
 
@@ -187,4 +245,14 @@ class TWC_Infantry_Colombia_PlatoonMedic: TWC_Infantry_Colombia_Rifleman {
 	displayName = "Platoon Medic";
 	backpack = "TWC_Backpack_Colombia_PlatoonMedic";
 	attendant = 1;
+	magazines[] =
+	{
+		MAG_3("CUP_35Rnd_556x45_Galil_Mag"),
+		MAG_2("SmokeShell")
+	};
+	respawnmagazines[] =
+	{
+		MAG_3("CUP_35Rnd_556x45_Galil_Mag"),
+		MAG_2("SmokeShell")
+	};
 };
