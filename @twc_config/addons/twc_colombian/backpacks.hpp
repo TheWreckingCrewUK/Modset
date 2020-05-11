@@ -1,41 +1,12 @@
 class UK3CB_BAF_B_Carryall_OLI;
 
-class TWC_Backpack_Colombia_Rifleman: UK3CB_BAF_B_Carryall_OLI {
-	scope = 1;
-	scopeArsenal = 1;
-	class TransportMagazines {
-		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag,8);
-		ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,1);
-	};
-};
-
-class TWC_Backpack_Colombia_Grenadier: UK3CB_BAF_B_Carryall_OLI {
-	scope = 1;
-	scopeArsenal = 1;
-	class TransportMagazines {
-		ADD_MAGA(CUP_30Rnd_556x45_Stanag,8);
-		ADD_MAGA(CUP_1Rnd_HE_M203,25);
-		ADD_MAGA(1Rnd_Smoke_Grenade_shell,4);
-		ADD_MAGA(1Rnd_SmokeRed_Grenade_shell,2);
-		ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell,2);
-	};
-};
-
-class TWC_Backpack_Colombia_MG: UK3CB_BAF_B_Carryall_OLI {
-	scope = 1;
-	scopeArsenal = 1;
-	class TransportMagazines {
-		ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,2);
-	};
-};
-
 class TWC_Backpack_Colombia_TeamLeader: UK3CB_BAF_B_Carryall_OLI {
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag,8);
-		ADD_MAGA(CUP_30Rnd_556x45_Stanag,4);
-		ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,4);
+		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag,6);
+		ADD_MAGA(CUP_30Rnd_556x45_Stanag,2);
+		ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,2);
 		ADD_MAGA(SmokeShell,4);
 	};
 };
@@ -47,7 +18,6 @@ class TWC_Backpack_Colombia_SquadLeader: UK3CB_BAF_B_Carryall_OLI {
 		ADD_ITEM(ACRE_PRC77,1);
 	};
 	class TransportMagazines {
-		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 8);
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
@@ -61,7 +31,6 @@ class TWC_Backpack_Colombia_PlatoonLeader: UK3CB_BAF_B_Carryall_OLI {
 		ADD_ITEM(ACRE_PRC77,1);
 	};
 	class TransportMagazines {
-		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 8);
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
@@ -76,7 +45,7 @@ class TWC_Backpack_Colombia_PlatoonSergeant: UK3CB_BAF_B_Carryall_OLI {
 		ADD_ITEM(ACRE_PRC77,1);
 	};
 	class TransportMagazines {
-		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 12);
+		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 8);
 		ADD_MAGA(CUP_30Rnd_556x45_Stanag,4);
 		ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,2);
 		ADD_MAGA(SmokeShell,4);
