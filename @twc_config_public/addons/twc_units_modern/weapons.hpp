@@ -905,7 +905,23 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\opscore_co.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_co.paa","","","twc_units_modern\textures\fs_cover_co.paa",""};
 	};
 	
-	//duplicated suppressor classes, to enable whitelisting of certain guns versus blacklisting all of them
+	//duplicated attachment classes, to enable whitelisting of certain guns versus blacklisting all of them
+	class rhs_acc_pbs4;
+	class twc_muzzle_pbs4: rhs_acc_pbs4
+	{
+	};
+	class rhs_acc_pgo7v3;
+	class twc_acc_pgo7v3: rhs_acc_pgo7v3
+	{
+	};
+	class cup_optic_pso_1;
+	class twc_acc_pso1m21: cup_optic_pso_1
+	{
+	};
+	class cup_optic_nspu;
+	class twc_optic_nspu: cup_optic_nspu
+	{
+	};
 	class rhsusf_acc_rotex5_grey;
 	class twc_acc_rotex5_grey: rhsusf_acc_rotex5_grey
 	{
@@ -2100,8 +2116,25 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhs_acc_pgo7v3";
+				item="twc_acc_pgo7v3";
 			};
+		};
+		class WeaponSlotsInfo {
+			allowedSlots[] = {};
+			class CowsSlot {
+				access = 1;
+				class compatibleItems {
+					twc_acc_pgo7v3 = 1;
+				};
+				displayName = "Optics Slot";
+				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
+				iconPinPoint = "Left";
+				iconPosition[] = {0,0};
+				iconScale = 1;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				scope = 0;
+			};
+			mass = 126.7;
 		};
 	};
 	
@@ -2125,6 +2158,109 @@ class cfgWeapons
 				slot="CowsSlot";
 				item="rhsusf_acc_M8541_low";
 			};
+		};
+	};
+	
+	class rhs_weap_svdp;
+	class twc_rus_svd: rhs_weap_svdp
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="twc_acc_pso1m21";
+			};
+		};
+		class WeaponSlotsInfo {
+			allowedSlots[] = {901};
+			class CowsSlot {
+				access = 1;
+				class compatibleItems {
+					twc_acc_pso1m21 = 1;
+					twc_optic_nspu = 1;
+				};
+				displayName = "Optics Slot";
+				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
+				iconPinPoint = "Left";
+				iconPosition[] = {0,0};
+				iconScale = 1;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				scope = 0;
+			};
+			mass = 77;
+			class MuzzleSlot {
+				class compatibleItems {
+					
+				};
+				displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
+				iconPinPoint = "Left";
+				iconPosition[] = {0,0};
+				iconScale = 1;
+				linkProxy = "\a3\data_f\proxies\weapon_slots\MUZZLE";
+				scope = 0;
+			};
+			class PointerSlot {
+			};
+			class rhs_npz_slot {};
+		};
+	};
+	
+	class rhs_weap_ak105;
+	class twc_weap_ak105_spotter: rhs_weap_ak105
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="twc_acc_pso1m21";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="twc_muzzle_pbs4";
+			};
+			class LinkedItemspointer
+			{
+				slot="MuzzleSlot";
+				item="rhs_acc_perst1ik";
+			};
+		};
+		class WeaponSlotsInfo {
+			allowedSlots[] = {901};
+			class CowsSlot {
+				access = 1;
+				class compatibleItems {
+					twc_acc_pso1m21 = 1;
+					twc_optic_nspu = 1;
+				};
+				displayName = "Optics Slot";
+				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
+				iconPinPoint = "Left";
+				iconPosition[] = {0,0};
+				iconScale = 1;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				scope = 0;
+			};
+			mass = 71;
+			class MuzzleSlot {
+				class compatibleItems {
+					twc_muzzle_pbs4 = 1;
+				};
+				displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
+				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
+				iconPinPoint = "Left";
+				iconPosition[] = {0,0};
+				iconScale = 1;
+				linkProxy = "\a3\data_f\proxies\weapon_slots\MUZZLE";
+				scope = 0;
+			};
+			class PointerSlot {
+				rhs_acc_perst1ik = 1;
+			};
+			class rhs_npz_slot {};
 		};
 	};
 	
@@ -2706,6 +2842,11 @@ class cfgammo
 		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
 	};
 	class rhs_B_762x54_Ball_Tracer_Green:rhs_B_762x54_Ball
+	{
+		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+	};
+	class rhs_B_545x39_Ball;
+	class rhs_B_545x39_Ball_Tracer_Green:rhs_B_545x39_Ball
 	{
 		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
 	};
