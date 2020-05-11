@@ -123,3 +123,5 @@ class CfgGroups
 		};
 	};
 };
+
+#include "CfgMarkers.hpp"
