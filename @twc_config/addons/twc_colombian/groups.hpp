@@ -30,7 +30,7 @@ class TWC_Groups_Colombia
 		class Unit3
 		{
 				side = 1;
-				vehicle = "TWC_Infantry_Colombia_Rifleman";
+				vehicle = "TWC_Infantry_Colombia_RiflemanAT";
 				rank = "PRIVATE";
 				position[] = {6,0,0};
 		};
@@ -65,7 +65,7 @@ class TWC_Groups_Colombia
 		class Unit8
 		{
 				side = 1;
-				vehicle = "TWC_Infantry_Colombia_Rifleman";
+				vehicle = "TWC_Infantry_Colombia_RiflemanAT";
 				rank = "PRIVATE";
 				position[] = {16,0,0};
 		};
