@@ -43,6 +43,7 @@ class TWC_Infantry_IDF_ColdWar_Base: B_Soldier_base_F {
 	};
 	nightLinkedItems[] = {};
 };
+
 //Section
 class TWC_Infantry_IDF_ColdWar_Rifleman: TWC_Infantry_IDF_ColdWar_Base {
 	scope = 2;
@@ -120,7 +121,7 @@ class TWC_Infantry_IDF_ColdWar_AT: TWC_Infantry_IDF_ColdWar_Rifleman {
 };
 class TWC_Infantry_IDF_ColdWar_ASSAT: TWC_Infantry_IDF_ColdWar_Rifleman {
 	displayName = "Asisstant AT Rifleman";
-	backpack = "";
+	backpack = "TWC_Backpack_IDF_ColdWar_ASSAT";
 };
 class TWC_Infantry_IDF_ColdWar_MG: TWC_Infantry_IDF_ColdWar_Rifleman {
 	displayName = "Machine Gunner";
@@ -145,12 +146,12 @@ class TWC_Infantry_IDF_ColdWar_MG: TWC_Infantry_IDF_ColdWar_Rifleman {
 };
 class TWC_Infantry_IDF_ColdWar_ASSMG: TWC_Infantry_IDF_ColdWar_Rifleman {
 	displayName = "Asisstant Machine Gunner";
-	backpack = "";
+	backpack = "TWC_Backpack_IDF_ColdWar_ASSMG";
 };
 class TWC_Infantry_IDF_ColdWar_2iC: TWC_Infantry_IDF_ColdWar_Rifleman {
 	displayName = "2iC";
 	TWC_isCommandRole = 1;
-	backpack = "";
+	backpack = "TWC_Backpack_IDF_ColdWar_2iC";
 	weapons[] = {
 		"CUP_arifle_Galil_556_black",
 		"Binocular",
@@ -182,7 +183,7 @@ class TWC_Infantry_IDF_ColdWar_2iC: TWC_Infantry_IDF_ColdWar_Rifleman {
 };
 class TWC_Infantry_IDF_ColdWar_SectionCommander: TWC_Infantry_IDF_ColdWar_2iC {
 	displayName = "Section Commander";
-	backpack = "";
+	backpack = "TWC_Backpack_IDF_ColdWar_SectionCommander";
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 	};
@@ -202,9 +203,9 @@ class TWC_Infantry_IDF_ColdWar_SectionCommander: TWC_Infantry_IDF_ColdWar_2iC {
 };
 
 //Platoon
-class TWC_Infantry_IDF_ColdWar_Platoon_Commander: TWC_Infantry_IDF_ColdWar_Rifleman {
+class TWC_Infantry_IDF_ColdWar_Platoon_Commander: TWC_Infantry_IDF_ColdWar_SectionCommander {
 	displayName = "Platoon Commander";
-	backpack = "";
+	backpack = "TWC_Backpack_IDF_ColdWar_Platoon_Commander";
 	linkedItems[] = {
 		"TWC_Vest_PASGT_LightOlive",
 		"TWC_Helmet_RAC_LightOlive",
@@ -219,14 +220,6 @@ class TWC_Infantry_IDF_ColdWar_Platoon_Commander: TWC_Infantry_IDF_ColdWar_Rifle
 		"itemMap",
 		"ItemWatch"
 	};
-	items[]= {
-		MEDICAL_LOADOUT,
-		"ACE_MapTools"
-	};
-	respawnItems[]= {
-		MEDICAL_LOADOUT,
-		"ACE_MapTools"
-	};
 	magazines[] = {
 		MAG_3("CUP_35Rnd_556x45_Galil_Mag"),
 		MAG_2("CUP_35Rnd_556x45_Red_Tracer_Galil_Mag"),
@@ -240,11 +233,11 @@ class TWC_Infantry_IDF_ColdWar_Platoon_Commander: TWC_Infantry_IDF_ColdWar_Rifle
 };
 class TWC_Infantry_IDF_ColdWar_Platoon_Sergeant: TWC_Infantry_IDF_ColdWar_Platoon_Commander {
 	displayName = "Platoon Sergeant";
-	backpack = "";
+	backpack = "TWC_Backpack_IDF_ColdWar_Platoon_Sergeant";
 };
 class TWC_Infantry_IDF_ColdWar_Platoon_Medic: TWC_Infantry_IDF_ColdWar_Rifleman {
 	displayName = "Platoon Medic";
-	backpack = "";
+	backpack = "TWC_Backpack_IDF_ColdWar_Platoon_Medic";
 	attendant = 1;
 	linkedItems[] = {
 		"TWC_Vest_PASGT_LightOlive",
@@ -298,7 +291,7 @@ class TWC_Infantry_IDF_ColdWar_Vehicle_Crew: TWC_Infantry_IDF_ColdWar_Rifleman {
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_IDF_ColdWar_Vehicle_Commander: TWC_Infantry_IDF_ColdWar_Rifleman {
+class TWC_Infantry_IDF_ColdWar_Vehicle_Commander: TWC_Infantry_IDF_ColdWar_Vehicle_Crew {
 	displayName = "Vehicle Commander";
 	TWC_isCommandRole = 1;
 	class EventHandlers: EventHandlers {

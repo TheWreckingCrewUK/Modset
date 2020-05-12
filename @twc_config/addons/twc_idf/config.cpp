@@ -30,6 +30,10 @@ class CfgWeapons {
 };
 
 class CfgVehicles {
+	#define ADD_MAGA(a,b) class _nc_##a {magazine = a; count = b;}
+	#define ADD_WEAP(a,b) class _nc_##a {weapon = a; count = b;}
+	#define ADD_ITEM(a,b) class _nc_##a {name = a; count = b;}
+
 	#include "backpacks.hpp"
 	#include "uniformsV.hpp"
 
@@ -61,6 +65,30 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {
 			"twc_idf\data\m113_1_co.paa",
 			"twc_idf\data\m113_2_co.paa"
+		};
+
+		class TransportItems {
+			ADD_ITEM(ACE_fieldDressing, 20);
+			ADD_ITEM(ACE_elasticBandage, 20);
+			ADD_ITEM(ACE_quikclot, 20);
+			ADD_ITEM(ACE_packingBandage, 20);
+			ADD_ITEM(ACE_tourniquet, 6);
+			ADD_ITEM(ACE_morphine, 10);
+			ADD_ITEM(ACE_epinephrine, 6);
+		};
+
+		class TransportMagazines {
+			ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 18);
+			ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 6);
+			
+			ADD_MAGA(CUP_50Rnd_556x45_Galil_Mag, 12);
+			ADD_MAGA(CUP_50Rnd_556x45_Red_Tracer_Galil_Mag, 4);
+			
+			ADD_MAGA(150Rnd_762x51_Box, 6);
+			ADD_MAGA(150Rnd_762x51_Box_Tracer, 3);
+			
+			ADD_MAGA(SmokeShell, 6);
+			ADD_MAGA(CUP_HandGrenade_M67, 6);
 		};
 	};
 
