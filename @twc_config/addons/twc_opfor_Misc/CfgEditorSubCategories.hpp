@@ -30,4 +30,8 @@ class CfgEditorSubCategories {
 	class TWC_WaPArmy_Taviana_Men_Winter {
 		displayName = "Men (Winter)";
 	};
+	
+	class TWC_FARC_Men {
+		displayName = "Men (FARC)";
+	};
 };

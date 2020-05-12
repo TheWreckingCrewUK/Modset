@@ -115,4 +115,11 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 2;
 	};
+	
+	class TWC_FARC_Units {
+		displayName = "Revolutionary Armed Forces of Colombia";
+		author = "[TWC] Sarge";
+		priority = 2;
+		side = 2;
+	};
 };
