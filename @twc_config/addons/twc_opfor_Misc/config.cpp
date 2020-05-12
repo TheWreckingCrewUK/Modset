@@ -279,6 +279,7 @@ class CfgVehicles {
 	#include "units\WaPArmy_Taviana.hpp"
 	#include "units\aden.hpp"
 	#include "units\argentina_1980.hpp"
+	#include "units\FARC.hpp"
 };
 
 #include "CfgMarkers.hpp"
