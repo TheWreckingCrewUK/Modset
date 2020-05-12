@@ -108,4 +108,15 @@ class CfgMarkers {
 		color[] = {1,1,1,1};
 		markerClass = "Flags";
 	};
+	
+	class twc_FARC_flag: Flag {
+		name = "Revolutionary Armed Forces of Colombia";
+		icon = "twc_opfor_Misc\data\FARC_flag.paa";
+		texture = "twc_opfor_Misc\data\FARC_flag.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
 };
