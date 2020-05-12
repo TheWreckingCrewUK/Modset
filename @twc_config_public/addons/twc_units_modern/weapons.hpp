@@ -2122,7 +2122,6 @@ class cfgWeapons
 		class WeaponSlotsInfo {
 			allowedSlots[] = {};
 			class CowsSlot {
-				access = 1;
 				class compatibleItems {
 					twc_acc_pgo7v3 = 1;
 				};
@@ -2175,7 +2174,6 @@ class cfgWeapons
 		class WeaponSlotsInfo {
 			allowedSlots[] = {901};
 			class CowsSlot {
-				access = 1;
 				class compatibleItems {
 					twc_acc_pso1m21 = 1;
 					twc_optic_nspu = 1;
@@ -2231,7 +2229,6 @@ class cfgWeapons
 		class WeaponSlotsInfo {
 			allowedSlots[] = {901};
 			class CowsSlot {
-				access = 1;
 				class compatibleItems {
 					twc_acc_pso1m21 = 1;
 					twc_optic_nspu = 1;
