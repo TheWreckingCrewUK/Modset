@@ -1037,7 +1037,7 @@ class Extended_Init_EventHandlers
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.65]";
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.75]";
 		};
 	};
 	
@@ -1049,21 +1049,6 @@ class Extended_Init_EventHandlers
 		};
 	};
 	
-	
-	class Helicopter
-	{
-		class aihearing
-		{
-			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,1300];";
-		};
-	};
-	class Plane
-	{
-		class aihearing
-		{
-			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,1500];";
-		};
-	};
 };
 class CfgVehicles {
 	/*class B_TargetSoldier ;
@@ -2548,6 +2533,27 @@ class CfgVehicles {
 				tireForceAppPointOffset = "wheel_1_1_axis";
 				width = 0.285;
 				};
+				class RF: LF {
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
+				dampingRate = 1;
+				dampingRateDamaged = 5;
+				dampingRateDestroyed = 5000;
+				dampingRateInAir = 0.8;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				mass = 30;
+				maxBrakeTorque = 900;
+				maxDroop = 0.0;
+				maxHandBrakeTorque = 200;
+				moi = 6;
+				side = "right";
+				steering = 1;
+				suspForceAppPointOffset = "wheel_2_1_axis";
+				suspTravelDirection[] = {0,-1,0};
+				tireForceAppPointOffset = "wheel_2_1_axis";
+				width = 0.285;
+				};
 				class LR: LF {
 				boneName = "wheel_1_2_damper";
 				boundary = "wheel_1_2_bound";
@@ -2570,27 +2576,6 @@ class CfgVehicles {
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				suspTravelDirection[] = {0,-1,0};
 				tireForceAppPointOffset = "wheel_1_2_axis";
-				width = 0.285;
-				};
-				class RF: LF {
-				boneName = "wheel_2_1_damper";
-				boundary = "wheel_2_1_bound";
-				center = "wheel_2_1_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0.8;
-				longitudinalStiffnessPerUnitGravity = 10000;
-				mass = 30;
-				maxBrakeTorque = 900;
-				maxDroop = 0.0;
-				maxHandBrakeTorque = 200;
-				moi = 6;
-				side = "right";
-				steering = 1;
-				suspForceAppPointOffset = "wheel_2_1_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_2_1_axis";
 				width = 0.285;
 				};
 				class RR: LR {
