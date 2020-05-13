@@ -967,7 +967,7 @@
 		{
 			class _xx_rifle
 			{
-				weapon = "rhs_weap_aks74u_folded";
+				weapon = "twc_rus_svd";
 				count = 1;
 			};
 		};
@@ -987,12 +987,23 @@
 		};
 		
 	};
+	class rhs_assault_umbts;
+	class rus_backpack_MG: rhs_assault_umbts
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "rhs_100Rnd_762x54mmR_green";
+				count = 3;
+			};
+		};
+	};
 	
 	class rus_backpack_spotter: CUP_B_CivPack_WDL
 	{
 		scope = 1;
-		
-
 		class TransportMagazines
 		{
 			class _xx_stanag
@@ -1003,6 +1014,76 @@
 			class _xx_stanag_t
 			{
 				magazine = "ACE_10Rnd_762x54_Tracer_mag";
+				count = 10;
+			};
+		};
+	};
+	
+	class twc_scoutpack_olive;
+	class rus_scoutpack_rifleman: twc_scoutpack_olive
+	{
+		scope = 1;
+		
+
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "rhs_30Rnd_545x39_AK_plum_green";
+				count = 3;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_defusal
+			{
+				name = "ACE_DefusalKit";
+				count = 1;
+			};
+			class _xx_bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 7;
+			};
+			class _xx_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 7;
+			};
+		};
+		
+	};
+	class rus_sso_backpack_2ic: UK3CB_BAF_B_Carryall_OLI
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "rhs_30Rnd_545x39_7N6M_plum_AK";
+				count = 8;
+			};
+			class _xx_stanag_t
+			{
+				magazine = "rhs_30Rnd_545x39_AK_plum_green";
+				count = 8;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_defusal
+			{
+				name = "ACE_DefusalKit";
+				count = 1;
+			};
+			class _xx_bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 10;
+			};
+			class _xx_quikclot
+			{
+				name = "ACE_quikclot";
 				count = 10;
 			};
 		};
