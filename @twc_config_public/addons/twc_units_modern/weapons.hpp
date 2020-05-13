@@ -2330,7 +2330,11 @@ class cfgWeapons
 				scope = 0;
 			};
 			class PointerSlot {
-				rhsusf_acc_anpeq16a_light = 1;
+				class compatibleItems {
+					rhsusf_acc_anpeq16a_light = 1;
+					rhsusf_acc_anpeq16a = 1;
+				};
+				linkProxy = "\a3\data_f\proxies\weapon_slots\SIDE";
 			};
 			class rhs_npz_slot {};
 		};
@@ -2384,7 +2388,11 @@ class cfgWeapons
 				scope = 0;
 			};
 			class PointerSlot {
-				rhsusf_acc_anpeq16a_light = 1;
+				class compatibleItems {
+					rhsusf_acc_anpeq16a_light = 1;
+					rhsusf_acc_anpeq16a = 1;
+				};
+				linkProxy = "\a3\data_f\proxies\weapon_slots\SIDE";
 			};
 			class rhs_npz_slot {};
 		};
@@ -2438,7 +2446,11 @@ class cfgWeapons
 				scope = 0;
 			};
 			class PointerSlot {
-				rhsusf_acc_anpeq16a_light = 1;
+				class compatibleItems {
+					rhsusf_acc_anpeq16a_light = 1;
+					rhsusf_acc_anpeq16a = 1;
+				};
+				linkProxy = "\a3\data_f\proxies\weapon_slots\SIDE";
 			};
 			class rhs_npz_slot {};
 		};
