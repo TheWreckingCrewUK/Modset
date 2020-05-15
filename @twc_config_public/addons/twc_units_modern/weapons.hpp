@@ -3114,16 +3114,16 @@ class cfgammo
 	class B_762x51_Ball;
 	class rhs_B_762x54_Ball:B_762x51_Ball
 	{
-		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+		model = "\z\ace\addons\tracers\ace_TracerGreen2.p3d";
 	};
 	class rhs_B_762x54_Ball_Tracer_Green:rhs_B_762x54_Ball
 	{
-		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+		model = "\z\ace\addons\tracers\ace_TracerGreen2.p3d";
 	};
 	class rhs_B_545x39_Ball;
 	class rhs_B_545x39_Ball_Tracer_Green:rhs_B_545x39_Ball
 	{
-		model = "z\ace\addons\tracers\ace_tracergreen2.p3d";
+		model = "\z\ace\addons\tracers\ace_TracerGreen2.p3d";
 	};
 	
 	class rhs_B_762x39_Ball;
