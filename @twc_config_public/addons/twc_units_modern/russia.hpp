@@ -763,6 +763,7 @@ class O_Soldier_Base_F;
 		linkedItems[]=
 		{
 			"CUP_V_I_RACS_Carrier_Rig_wdl_3",
+			"itemCTAB",
 			"rhs_tsh4",
 			"ItemMap",
 			"ItemCompass",
@@ -771,6 +772,7 @@ class O_Soldier_Base_F;
 		respawnLinkedItems[]=
 		{
 			"CUP_V_I_RACS_Carrier_Rig_wdl_3",
+			"itemCTAB",
 			"rhs_tsh4",
 			"ItemMap",
 			"ItemCompass",
@@ -1224,6 +1226,24 @@ class O_Soldier_Base_F;
 		backpack="TWC_Backpack_USMC2000_Sectionleader";
 		displayName="Squad Leader @SSO Infantry";
 		twc_loadoutstring = "SL";
+		linkedItems[]=
+		{
+			"CUP_V_B_Ciras_Olive",
+			"CUP_H_OpsCore_Spray_SF",
+			"itemCTAB",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Ciras_Olive",
+			"CUP_H_OpsCore_Spray_SF",
+			"itemCTAB",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 		weapons[]=
 		{
 			"Throw",
