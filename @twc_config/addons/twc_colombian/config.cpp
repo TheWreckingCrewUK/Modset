@@ -188,20 +188,20 @@ class CfgVehicles
 		}; 
 		
 		class TransportMagazines {
-			ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 25);
-			ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 10);
-			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 10);
+			ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 15);
+			ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 5);
+			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 5);
 			
-			ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M, 16);
+			ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M, 8);
 			
-			ADD_MAGA(1Rnd_HE_Grenade_shell, 16);
+			ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
 			ADD_MAGA(UGL_FlareWhite_F, 4);
 			ADD_MAGA(1Rnd_Smoke_Grenade_shell, 4);
 			ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 4);
 			ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 4);
 			ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 4);
 			
-			ADD_MAGA(SmokeShell, 14);
+			ADD_MAGA(SmokeShell, 8);
 			ADD_MAGA(SmokeShellRed, 4);
 			ADD_MAGA(SmokeShellGreen, 4);
 			ADD_MAGA(SmokeShellBlue, 4);
