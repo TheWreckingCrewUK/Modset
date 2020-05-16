@@ -1,11 +1,13 @@
 class CfgFactionClasses {
 	class Iraqi_units {
-		displayName = "Iraqi Army Gulf War Units";
+		displayName = "Iraqi Army (Gulf War)";
 		author = "Rik";
 		icon = "TWClogo.paa";
 		priority = 2;
 		side = 0;
 	};
+	
+	class TWC_OPFOR_Units_Iraq: Iraqi_Units {};
 
 	class ira_units {
 		displayName = "IRA Units";
