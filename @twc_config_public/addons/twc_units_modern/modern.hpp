@@ -1073,6 +1073,21 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		icon="iconManLeader";
 		backpack="TWC_Backpack_Modern_Spotter";
 
+		linkedItems[]= {
+			"V_Rangemaster_belt",
+			"ItemcTab",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[]= {
+			"V_Rangemaster_belt",
+			"ItemcTab",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 		Items[]= {
 			"ACE_Kestrel4500",
 			"ACE_ATragMX",
@@ -1084,7 +1099,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACRE_PRC152",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"ItemcTab",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
@@ -1113,7 +1127,6 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
-			"ItemcTab",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
 			"ACE_packingBandage",
