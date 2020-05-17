@@ -479,13 +479,13 @@ class TWC_Infantry_Modern_Regular_Woodland_Platoon_Mortar: TWC_Infantry_Modern_R
 	magazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
-		MAG_5("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
+		MAG_4("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
-		MAG_5("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
+		MAG_4("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
 		MAG_2("SmokeShell")
 	};
 };
