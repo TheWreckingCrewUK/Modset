@@ -2961,8 +2961,27 @@ class cfgMagazines
 		displayName = "APDS";
 		count = 3;
 	};
-		
 	
+	class UK3CB_BAF_1Rnd_81mm_Mo_Shells;
+	class UK3CB_BAF_1Rnd_81mm_Mo_AB_Shells;
+	class UK3CB_BAF_1Rnd_81mm_Mo_Flare_White;
+	class UK3CB_BAF_1Rnd_81mm_Mo_Smoke_White;
+	
+	class UK3CB_BAF_1Rnd_60mm_Mo_Shells: UK3CB_BAF_1Rnd_81mm_Mo_Shells {
+		mass = 20;
+	};
+	class UK3CB_BAF_1Rnd_60mm_Mo_AB_Shells: UK3CB_BAF_1Rnd_81mm_Mo_Flare_White {
+		mass = 20;
+	};
+	class UK3CB_BAF_1Rnd_60mm_Mo_Flare_White: UK3CB_BAF_1Rnd_81mm_Mo_Flare_White {
+		mass = 15;
+	};
+	class UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White: UK3CB_BAF_1Rnd_81mm_Mo_Smoke_White {
+		mass = 15;
+	};
+	class UK3CB_BAF_1Rnd_60mm_Mo_WPSmoke_White: UK3CB_BAF_1Rnd_81mm_Mo_Smoke_White {
+		mass = 15;
+	};
 };
 
 class twc_APIbullet_effect

@@ -56,3 +56,17 @@ class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_CSM: TWC_Infantry_ColdWar_R
 {
 	CATEGORY(TWC_Infantry_Dismounted_Desert)
 };
+
+//Company
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_Company_Commander: TWC_Infantry_ColdWar_Regular_Desert_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_Company_2iC: TWC_Infantry_ColdWar_Regular_Desert_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_Desert_Company_Sergeant: TWC_Infantry_ColdWar_Regular_Desert_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Dismounted_Desert)
+};

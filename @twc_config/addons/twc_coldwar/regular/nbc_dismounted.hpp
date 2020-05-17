@@ -56,3 +56,17 @@ class TWC_Infantry_ColdWar_Regular_Dismounted_NBC_CSM: TWC_Infantry_ColdWar_Regu
 {
 	CATEGORY(TWC_Infantry_Dismounted_NBC)
 };
+
+//Company
+class TWC_Infantry_ColdWar_Regular_Dismounted_NBC_Company_Commander: TWC_Infantry_ColdWar_Regular_NBC_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Dismounted_NBC)
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_NBC_Company_2iC: TWC_Infantry_ColdWar_Regular_NBC_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Dismounted_NBC)
+};
+class TWC_Infantry_ColdWar_Regular_Dismounted_NBC_Company_Sergeant: TWC_Infantry_ColdWar_Regular_NBC_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Dismounted_NBC)
+};

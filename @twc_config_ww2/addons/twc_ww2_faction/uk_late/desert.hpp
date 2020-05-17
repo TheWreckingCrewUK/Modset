@@ -276,6 +276,71 @@ class TWC_Infantry_WW2_UK_Late_Desert_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Wood
 	};
 };
 
+//Company
+class TWC_Infantry_WW2_UK_Late_Desert_Company_Commander: TWC_Infantry_WW2_UK_Late_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Regular_Desert)
+	uniformClass="U_LIB_UK_KhakiDrills";
+	linkedItems[]=
+	{
+		"V_LIB_UK_P37_Sten",
+		"H_LIB_UK_Helmet_Mk2_Desert",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[]=
+	{
+		"V_LIB_UK_P37_Sten",
+		"H_LIB_UK_Helmet_Mk2_Desert",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_WW2_UK_Late_Desert_Company_2iC: TWC_Infantry_WW2_UK_Late_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Regular_Desert)
+	uniformClass = "U_LIB_UK_KhakiDrills";
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten",
+		"H_LIB_UK_Helmet_Mk2_Desert",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten",
+		"H_LIB_UK_Helmet_Mk2_Desert",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_WW2_UK_Late_Desert_Company_Sergeant: TWC_Infantry_WW2_UK_Late_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Regular_Desert)
+	uniformClass="U_LIB_UK_KhakiDrills";
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Heavy",
+		"H_LIB_UK_Helmet_Mk2_Desert",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Heavy",
+		"H_LIB_UK_Helmet_Mk2_Desert",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+
 //AT
 class TWC_Infantry_WW2_UK_Late_Desert_PIAT_Gunner: TWC_Infantry_WW2_UK_Late_Woodland_PIAT_Gunner
 {

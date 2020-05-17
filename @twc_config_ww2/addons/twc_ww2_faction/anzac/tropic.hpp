@@ -164,6 +164,71 @@ class TWC_Infantry_WW2_ANZAC_Tropic_Platoon_CSM: TWC_Infantry_WW2_UK_Early_Tropi
 	};
 };
 
+//Company
+class TWC_Infantry_WW2_ANZAC_Tropic_Company_Commander: TWC_Infantry_WW2_UK_Early_Tropic_Company_Commander
+{
+	CATEGORY(TWC_Infantry_ANZAC_Tropic)
+	uniformClass = "fow_u_aus_m37_03_private";
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_WW2_ANZAC_Tropic_Company_2iC: TWC_Infantry_WW2_UK_Early_Tropic_Company_2iC
+{
+	CATEGORY(TWC_Infantry_ANZAC_Tropic)
+	uniformClass = "fow_u_aus_m37_03_private";
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_WW2_ANZAC_Tropic_Company_Sergeant: TWC_Infantry_WW2_UK_Early_Tropic_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_ANZAC_Tropic)
+	uniformClass = "fow_u_aus_m37_03_private";
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Heavy",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Heavy",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+
 //AT
 class TWC_Infantry_WW2_ANZAC_Tropic_Boys_Gunner: TWC_Infantry_WW2_UK_Early_Tropic_Boys_Gunner
 {

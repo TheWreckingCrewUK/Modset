@@ -290,6 +290,74 @@ class TWC_Infantry_ColdWar_COIN_Woodland_CSM: TWC_Infantry_ColdWar_Regular_Woodl
 	};
 };
 
+//Company
+class TWC_Infantry_ColdWar_COIN_Woodland_Company_Commander: TWC_Infantry_ColdWar_Regular_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_COIN_Woodland)
+	uniformClass = "UK3CB_BAF_U_JumperUniform_Plain";
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
+	linkedItems[] =
+	{
+		"CUP_V_CDF_6B3_1_Green",
+		"UK3CB_BAF_H_Beret_Rifles",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CUP_V_CDF_6B3_1_Green",
+		"UK3CB_BAF_H_Beret_Rifles",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_ColdWar_COIN_Woodland_Company_2iC: TWC_Infantry_ColdWar_Regular_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_COIN_Woodland)
+	uniformClass = "UK3CB_BAF_U_JumperUniform_Plain";
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
+	linkedItems[] =
+	{
+		"CUP_V_CDF_6B3_1_Green",
+		"UK3CB_BAF_H_Beret_Rifles",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CUP_V_CDF_6B3_1_Green",
+		"UK3CB_BAF_H_Beret_Rifles",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_ColdWar_COIN_Woodland_Company_Sergeant: TWC_Infantry_ColdWar_Regular_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_COIN_Woodland)
+	uniformClass = "UK3CB_BAF_U_JumperUniform_Plain";
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Sergeant";
+	linkedItems[] =
+	{
+		"CUP_V_CDF_6B3_1_Green",
+		"UK3CB_BAF_H_Beret_Rifles",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CUP_V_CDF_6B3_1_Green",
+		"UK3CB_BAF_H_Beret_Rifles",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+
 //Sniper Team
 class TWC_Infantry_ColdWar_COIN_Woodland_Sniper: TWC_Infantry_ColdWar_Regular_Woodland_Sniper
 {

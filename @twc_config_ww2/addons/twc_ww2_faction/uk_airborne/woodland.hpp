@@ -414,6 +414,129 @@ class TWC_Infantry_WW2_UK_Airborne_Woodland_Platoon_CSM: TWC_Infantry_WW2_UK_Lat
 	respawnItems[] += {"TWC_Item_Clicker_25"};
 };
 
+//Company
+class TWC_Infantry_WW2_UK_Airborne_Woodland_Company_Commander: TWC_Infantry_WW2_UK_Late_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Airborne_Woodland)
+	uniformClass = "U_LIB_UK_DenisonSmock";
+	backpack = "TWC_Backpack_WW2_UK_Airborne_Dismounted_Platoon_Commander";
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
+	};
+	respawnItems[] +=
+	{
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
+	};
+	weapons[] =
+	{
+		"LIB_Sten_Mk5",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"LIB_Sten_Mk5",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+};
+class TWC_Infantry_WW2_UK_Airborne_Woodland_Company_2iC: TWC_Infantry_WW2_UK_Late_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Airborne_Woodland)
+	uniformClass = "U_LIB_UK_DenisonSmock";
+	backpack = "TWC_Backpack_WW2_UK_Airborne_Dismounted_Platoon_Commander";
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
+	};
+	respawnItems[] +=
+	{
+		"LIB_ACC_No4_Mk2_Bayo",
+		"TWC_Item_Clicker_25"
+	};
+	weapons[] =
+	{
+		"LIB_Sten_Mk5",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"LIB_Sten_Mk5",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+};
+class TWC_Infantry_WW2_UK_Airborne_Woodland_Company_Sergeant: TWC_Infantry_WW2_UK_Late_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Airborne_Woodland)
+	uniformClass = "U_LIB_UK_DenisonSmock";
+	backpack = "TWC_Backpack_WW2_UK_Airborne_Dismounted_Platoon_Sergeant";
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Heavy_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Heavy_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	
+	items[] += {"TWC_Item_Clicker_25"};
+	respawnItems[] += {"TWC_Item_Clicker_25"};
+};
+
 //AT
 class TWC_Infantry_WW2_UK_Airborne_Woodland_PIAT_Gunner: TWC_Infantry_WW2_UK_Late_Woodland_PIAT_Gunner
 {

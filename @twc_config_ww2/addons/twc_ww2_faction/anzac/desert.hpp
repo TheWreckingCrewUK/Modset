@@ -151,6 +151,68 @@ class TWC_Infantry_WW2_ANZAC_Desert_Platoon_CSM: TWC_Infantry_WW2_UK_Early_Deser
 	};
 };
 
+//Company
+class TWC_Infantry_WW2_ANZAC_Desert_Company_Commander: TWC_Infantry_WW2_UK_Early_Desert_Company_Commander
+{
+	CATEGORY(TWC_Infantry_ANZAC_Desert)
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_WW2_ANZAC_Desert_Company_2iC: TWC_Infantry_WW2_UK_Early_Desert_Company_2iC
+{
+	CATEGORY(TWC_Infantry_ANZAC_Desert)
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_WW2_ANZAC_Desert_Company_Sergeant: TWC_Infantry_WW2_UK_Early_Desert_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_ANZAC_Desert)
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Heavy",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Heavy",
+		"fow_h_uk_jungle_hat_01",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+
 //AT
 class TWC_Infantry_WW2_ANZAC_Desert_Boys_Gunner: TWC_Infantry_WW2_UK_Early_Desert_Boys_Gunner
 {

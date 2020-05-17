@@ -458,7 +458,24 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_CSM: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Sergeant
 {
-	displayName="Company Sergeant Major";
+	displayName = "Company Sergeant Major";
+	scope = 1;
+	attendant = 1;
+	engineer = 1;
+};
+
+//Company
+class TWC_Infantry_ColdWar_Regular_Woodland_Company_Commander: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander
+{
+	displayName = "Company Commander";
+};
+class TWC_Infantry_ColdWar_Regular_Woodland_Company_2iC: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander
+{
+	displayName = "Company 2iC";
+};
+class TWC_Infantry_ColdWar_Regular_Woodland_Company_Sergeant: TWC_Infantry_ColdWar_Regular_Woodland_CSM
+{
+	scope = 2;
 };
 
 //AT + AA
@@ -690,6 +707,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_ColdW
 	displayName="Helicopter Pilot";
 	uniformClass="SP_60PatCombatsRolled_DPM_1_Item";
 	TWC_isCommandRole = 1;
+	engineer = 1;
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 	};

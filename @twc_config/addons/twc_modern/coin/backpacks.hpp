@@ -92,9 +92,8 @@ class TWC_Backpack_Modern_COIN_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_R
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 16);
-		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 6);
-		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Flare_White, 4);
+		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 10);
+		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 4);
 	};
 };
 
@@ -236,6 +235,7 @@ class TWC_Backpack_Modern_COIN_Dismounted_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_R
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 480;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, 8);
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, 3);
@@ -301,8 +301,7 @@ class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_B_B
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 20);
-		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 8);
-		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Flare_White, 4);
+		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 10);
+		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 4);
 	};
 };

@@ -262,6 +262,71 @@ class TWC_Infantry_ColdWar_COIN_Arctic_CSM: TWC_Infantry_ColdWar_Regular_Arctic_
 {
 	CATEGORY(TWC_Infantry_COIN_Arctic)
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Sergeant";
+	linkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_WG",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_WG",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+
+//Company
+class TWC_Infantry_ColdWar_COIN_Arctic_Company_Commander: TWC_Infantry_ColdWar_Regular_Arctic_Company_Commander
+{
+	CATEGORY(TWC_Infantry_COIN_Arctic)
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
+	linkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_WG",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_WG",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_ColdWar_COIN_Arctic_Company_2iC: TWC_Infantry_ColdWar_Regular_Arctic_Company_2iC
+{
+	CATEGORY(TWC_Infantry_COIN_Arctic)
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
+	linkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_WG",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_WG",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_ColdWar_COIN_Arctic_Company_Sergeant: TWC_Infantry_ColdWar_Regular_Arctic_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_COIN_Arctic)
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Sergeant";
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
@@ -279,6 +344,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_CSM: TWC_Infantry_ColdWar_Regular_Arctic_
 		"ItemWatch"
 	};
 };
+
 
 //Sniper Team
 class TWC_Infantry_ColdWar_COIN_Arctic_Sniper: TWC_Infantry_ColdWar_Regular_Arctic_Sniper

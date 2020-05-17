@@ -280,6 +280,71 @@ class TWC_Infantry_ColdWar_COIN_Desert_CSM: TWC_Infantry_ColdWar_Regular_Desert_
 	};
 };
 
+//Company
+class TWC_Infantry_ColdWar_COIN_Desert_Company_Commander: TWC_Infantry_ColdWar_Regular_Desert_Company_Commander
+{
+	CATEGORY(TWC_Infantry_COIN_Desert)
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
+	linkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_RA",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_RA",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_ColdWar_COIN_Desert_Company_2iC: TWC_Infantry_ColdWar_Regular_Desert_Company_2iC
+{
+	CATEGORY(TWC_Infantry_COIN_Desert)
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
+	linkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_RA",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_RA",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_ColdWar_COIN_Desert_Company_Sergeant: TWC_Infantry_ColdWar_Regular_Desert_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_COIN_Desert)
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Sergeant";
+	linkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_RA",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"UK3CB_BAF_H_Beret_RA",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+
 //Sniper Team
 class TWC_Infantry_ColdWar_COIN_Desert_Sniper: TWC_Infantry_ColdWar_Regular_Desert_Sniper
 {

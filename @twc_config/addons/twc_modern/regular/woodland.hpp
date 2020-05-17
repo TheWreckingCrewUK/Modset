@@ -69,7 +69,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regula
 	magazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
-		MAG_10("1Rnd_HE_Grenade_shell"),
+		MAG_10("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
 		MAG_4("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
@@ -80,7 +80,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regula
 	respawnmagazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
-		MAG_10("1Rnd_HE_Grenade_shell"),
+		MAG_10("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
 		MAG_4("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
@@ -479,19 +479,40 @@ class TWC_Infantry_Modern_Regular_Woodland_Platoon_Mortar: TWC_Infantry_Modern_R
 	magazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
-		MAG_5("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
+		MAG_7("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
-		MAG_5("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
+		MAG_7("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
 		MAG_2("SmokeShell")
+	};
+	nightItems[] = {
+		MAG_2("Chemlight_green"),
+		MAG_4("UK3CB_BAF_1Rnd_60mm_Mo_Flare_White")
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_CSM: TWC_Infantry_Modern_Regular_Woodland_Platoon_Sergeant
 {
 	displayName = "Company Sergeant Major";
+	scope = 1;
+	attendant = 1;
+	engineer = 1;
+};
+
+//Company
+class TWC_Infantry_Modern_Regular_Woodland_Company_Commander: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
+{
+	displayName = "Company Commander";
+};
+class TWC_Infantry_Modern_Regular_Woodland_Company_2iC: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
+{
+	displayName = "Company 2iC";
+};
+class TWC_Infantry_Modern_Regular_Woodland_Company_Sergeant: TWC_Infantry_Modern_Regular_Woodland_CSM
+{
+	scope = 2;
 };
 
 //AT + AA
@@ -753,6 +774,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Modern
 {
 	displayName = "Helicopter Pilot";
 	TWC_isCommandRole = 1;
+	engineer = 1;
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Pilot_A",
