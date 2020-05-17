@@ -198,6 +198,74 @@ class TWC_Infantry_1990_Regular_Desert_Platoon_CSM: TWC_Infantry_1990_Regular_Wo
 	};
 };
 
+//Company
+class TWC_Infantry_1990_Regular_Desert_Company_Commander: TWC_Infantry_1990_Regular_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Regular_Desert)
+	uniformClass = "TWC_Smock_Desert";
+	backpack = "TWC_Backpack_1990_Regular_Desert_Platoon_Commander";
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_1990_Regular_Desert_Company_2iC: TWC_Infantry_1990_Regular_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Regular_Desert)
+	uniformClass = "TWC_Smock_Desert";
+	backpack = "TWC_Backpack_1990_Regular_Desert_Platoon_Sergeant";
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_1990_Regular_Desert_Company_Sergeant: TWC_Infantry_1990_Regular_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Regular_Desert)
+	uniformClass = "TWC_Smock_Desert";
+	backpack = "TWC_Backpack_1990_Regular_Desert_Platoon_Sergeant";
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
+		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+
 //AT + AA
 class TWC_Infantry_1990_Regular_Desert_MILAN_Gunner: TWC_Infantry_1990_Regular_Woodland_MILAN_Gunner
 {

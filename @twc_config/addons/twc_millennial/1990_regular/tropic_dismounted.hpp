@@ -47,3 +47,20 @@ class TWC_Infantry_1990_Regular_Dismounted_Tropic_Platoon_CSM: TWC_Infantry_1990
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
 	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_Platoon_Sergeant";
 };
+
+//Company
+class TWC_Infantry_1990_Regular_Dismounted_Tropic_Company_Commander: TWC_Infantry_1990_Regular_Tropic_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Dismounted_Tropic)
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_Platoon_Commander";
+};
+class TWC_Infantry_1990_Regular_Dismounted_Tropic_Company_2iC: TWC_Infantry_1990_Regular_Tropic_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Dismounted_Tropic)
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_Platoon_Commander";
+};
+class TWC_Infantry_1990_Regular_Dismounted_Tropic_Company_Sergeant: TWC_Infantry_1990_Regular_Tropic_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Dismounted_Tropic)
+	backpack = "TWC_Backpack_1990_Regular_Dismounted_Tropic_Platoon_Sergeant";
+};

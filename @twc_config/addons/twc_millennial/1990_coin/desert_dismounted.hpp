@@ -47,3 +47,20 @@ class TWC_Infantry_1990_COIN_Dismounted_Desert_Platoon_CSM: TWC_Infantry_1990_CO
 	CATEGORY(TWC_Infantry_COIN_Dismounted_Desert)
 	backpack = "TWC_Backpack_1990_COIN_Dismounted_Desert_Platoon_Sergeant";
 };
+
+//Company
+class TWC_Infantry_1990_COIN_Dismounted_Desert_Company_Commander: TWC_Infantry_1990_COIN_Desert_Company_Commander
+{
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Desert)
+	backpack = "TWC_Backpack_1990_COIN_Dismounted_Desert_Platoon_Commander";
+};
+class TWC_Infantry_1990_COIN_Dismounted_Desert_Company_2iC: TWC_Infantry_1990_COIN_Desert_Company_2iC
+{
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Desert)
+	backpack = "TWC_Backpack_1990_COIN_Dismounted_Desert_Platoon_Commander";
+};
+class TWC_Infantry_1990_COIN_Dismounted_Desert_Company_Sergeant: TWC_Infantry_1990_COIN_Desert_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Desert)
+	backpack = "TWC_Backpack_1990_COIN_Dismounted_Desert_Platoon_Sergeant";
+};

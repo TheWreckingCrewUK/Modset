@@ -149,6 +149,53 @@ class TWC_Infantry_1990_COIN_NBC_Platoon_CSM: TWC_Infantry_1990_Regular_NBC_Plat
 	};
 };
 
+//Company
+class TWC_Infantry_1990_COIN_NBC_Company_Commander: TWC_Infantry_1990_Regular_NBC_Company_Commander
+{
+	CATEGORY(TWC_Infantry_COIN_NBC)
+	backpack = "TWC_Backpack_1990_COIN_Woodland_Platoon_Commander";
+	items[] +=
+	{
+		MAG_2("ACE_CableTie"),
+		"SP_Gasmask_S6"
+	};
+	respawnItems[] +=
+	{
+		MAG_2("ACE_CableTie"),
+		"SP_Gasmask_S6"
+	};
+};
+class TWC_Infantry_1990_COIN_NBC_Company_2iC: TWC_Infantry_1990_Regular_NBC_Company_2iC
+{
+	CATEGORY(TWC_Infantry_COIN_NBC)
+	backpack = "TWC_Backpack_1990_COIN_Woodland_Platoon_Commander";
+	items[] +=
+	{
+		MAG_2("ACE_CableTie"),
+		"SP_Gasmask_S6"
+	};
+	respawnItems[] +=
+	{
+		MAG_2("ACE_CableTie"),
+		"SP_Gasmask_S6"
+	};
+};
+class TWC_Infantry_1990_COIN_NBC_Company_Sergeant: TWC_Infantry_1990_Regular_NBC_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_COIN_NBC)
+	backpack = "TWC_Backpack_1990_COIN_Woodland_Platoon_Sergeant";
+	items[] +=
+	{
+		MAG_2("ACE_CableTie"),
+		"SP_Gasmask_S6"
+	};
+	respawnItems[] +=
+	{
+		MAG_2("ACE_CableTie"),
+		"SP_Gasmask_S6"
+	};
+};
+
 //Sniper Team
 class TWC_Infantry_1990_COIN_NBC_Sniper: TWC_Infantry_1990_Regular_NBC_Sniper
 {
