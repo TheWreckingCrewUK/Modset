@@ -220,6 +220,8 @@ class TWC_Infantry_1990_Regular_Woodland_Platoon_Medic: TWC_Infantry_1990_Regula
 class TWC_Infantry_1990_Regular_Woodland_Platoon_CSM: TWC_Infantry_1990_Regular_Woodland_Platoon_Sergeant
 {
 	displayName = "Company Sergeant Major";
+	attendant = 1;
+	engineer = 1;
 };
 
 //AT + AA
