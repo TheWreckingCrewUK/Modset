@@ -693,6 +693,203 @@ class TWC_Infantry_Modern_COIN_Woodland_CSM: TWC_Infantry_Modern_Regular_Woodlan
 	};
 };
 
+//Company
+class TWC_Infantry_Modern_COIN_Woodland_Company_Commander: TWC_Infantry_Modern_Regular_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_COIN_Woodland)
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Commander";
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_SL_D",
+		"UK3CB_BAF_H_Mk7_Camo_D",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_SL_D",
+		"UK3CB_BAF_H_Mk7_Camo_D",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	weapons[] =
+	{
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"UK3CB_BAF_L131A1",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"UK3CB_BAF_L131A1",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_556_30Rnd_T"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("SmokeShell")
+	};
+	respawnmagazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_556_30Rnd_T"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("SmokeShell")
+	};
+};
+class TWC_Infantry_Modern_COIN_Woodland_Company_2iC: TWC_Infantry_Modern_Regular_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_COIN_Woodland)
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Commander";
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_SL_D",
+		"UK3CB_BAF_H_Mk7_Camo_D",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_SL_D",
+		"UK3CB_BAF_H_Mk7_Camo_D",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	weapons[] =
+	{
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"UK3CB_BAF_L131A1",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"UK3CB_BAF_L131A1",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_556_30Rnd_T"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("SmokeShell")
+	};
+	respawnmagazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_556_30Rnd_T"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("SmokeShell")
+	};
+};
+class TWC_Infantry_Modern_COIN_Woodland_Company_Sergeant: TWC_Infantry_Modern_Regular_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_COIN_Woodland)
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Sergeant";
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_SL_D",
+		"UK3CB_BAF_H_Mk7_Camo_D",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_SL_D",
+		"UK3CB_BAF_H_Mk7_Camo_D",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	weapons[] =
+	{
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"UK3CB_BAF_L131A1",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"UK3CB_BAF_L131A1",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_556_30Rnd_T"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("SmokeShell")
+	};
+	respawnmagazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_556_30Rnd_T"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("SmokeShell")
+	};
+};
+
 //AT
 class TWC_Infantry_Modern_COIN_Woodland_Javelin_Gunner: TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner
 {

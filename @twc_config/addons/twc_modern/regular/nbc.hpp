@@ -87,6 +87,29 @@ class TWC_Infantry_Modern_Regular_NBC_CSM: TWC_Infantry_Modern_Regular_Woodland_
 	respawnItems[] += {"SP_Gasmask_S6"};
 };
 
+//Company
+class TWC_Infantry_Modern_Regular_NBC_Company_Commander: TWC_Infantry_Modern_Regular_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Regular_NBC)
+	uniformClass = "SP_NBCMk3_HoodUp_Item";
+	items[] += {"SP_Gasmask_S6"};
+	respawnItems[] += {"SP_Gasmask_S6"};
+};
+class TWC_Infantry_Modern_Regular_NBC_Company_2iC: TWC_Infantry_Modern_Regular_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Regular_NBC)
+	uniformClass = "SP_NBCMk3_HoodUp_Item";
+	items[] += {"SP_Gasmask_S6"};
+	respawnItems[] += {"SP_Gasmask_S6"};
+};
+class TWC_Infantry_Modern_Regular_NBC_Company_Sergeant: TWC_Infantry_Modern_Regular_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Regular_NBC)
+	uniformClass = "SP_NBCMk3_HoodUp_Item";
+	items[] += {"SP_Gasmask_S6"};
+	respawnItems[] += {"SP_Gasmask_S6"};
+};
+
 //AT + AA
 class TWC_Infantry_Modern_Regular_NBC_Javelin_Gunner: TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner
 {

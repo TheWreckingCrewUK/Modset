@@ -62,3 +62,20 @@ class TWC_Infantry_Modern_Regular_Dismounted_NBC_CSM: TWC_Infantry_Modern_Regula
 	CATEGORY(TWC_Infantry_Dismounted_NBC)
 	backpack = "TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Sergeant";
 };
+
+//Company
+class TWC_Infantry_Modern_Regular_Dismounted_NBC_Company_Commander: TWC_Infantry_Modern_Regular_NBC_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Dismounted_Woodland)
+	backpack = "TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Commander";
+};
+class TWC_Infantry_Modern_Regular_Dismounted_NBC_Company_2iC: TWC_Infantry_Modern_Regular_NBC_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Dismounted_Woodland)
+	backpack = "TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Commander";
+};
+class TWC_Infantry_Modern_Regular_Dismounted_NBC_Company_Sergeant: TWC_Infantry_Modern_Regular_NBC_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Dismounted_Woodland)
+	backpack = "TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Sergeant";
+};

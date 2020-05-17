@@ -159,6 +159,59 @@ class TWC_Infantry_1990_COIN_Tropic_Platoon_CSM: TWC_Infantry_1990_Regular_Tropi
 	};
 };
 
+//Company
+class TWC_Infantry_1990_COIN_Tropic_Company_Commander: TWC_Infantry_1990_Regular_Tropic_Company_Commander
+{
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_Platoon_Commander";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+};
+class TWC_Infantry_1990_COIN_Tropic_Company_2iC: TWC_Infantry_1990_Regular_Tropic_Company_2iC
+{
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_Platoon_Commander";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+};
+class TWC_Infantry_1990_COIN_Tropic_Company_Sergeant: TWC_Infantry_1990_Regular_Tropic_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_Platoon_Sergeant";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+};
+
 //Sniper Team
 class TWC_Infantry_1990_COIN_Tropic_Sniper: TWC_Infantry_1990_Regular_Tropic_Sniper
 {

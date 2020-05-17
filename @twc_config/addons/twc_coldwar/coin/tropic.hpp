@@ -280,6 +280,71 @@ class TWC_Infantry_ColdWar_COIN_Tropic_CSM: TWC_Infantry_ColdWar_Regular_Tropic_
 	};
 };
 
+//Company
+class TWC_Infantry_ColdWar_COIN_Tropic_Company_Commander: TWC_Infantry_ColdWar_Regular_Tropic_Company_Commander
+{
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
+	linkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"H_Booniehat_oli",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"H_Booniehat_oli",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_ColdWar_COIN_Tropic_Company_2iC: TWC_Infantry_ColdWar_Regular_Tropic_Company_2iC
+{
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
+	linkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"H_Booniehat_oli",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"H_Booniehat_oli",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_ColdWar_COIN_Tropic_Company_Sergeant: TWC_Infantry_ColdWar_Regular_Tropic_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Sergeant";
+	linkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"H_Booniehat_oli",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"H_Booniehat_oli",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+
 //Sniper Team
 class TWC_Infantry_ColdWar_COIN_Tropic_Sniper: TWC_Infantry_ColdWar_Regular_Tropic_Sniper
 {

@@ -167,6 +167,33 @@ class TWC_Groups_1990_Regular_##CAMO \
 			position[] = {6,0,0}; \
 		}; \
 	}; \
+	class Company_Command \
+	{ \
+		name = "Company Command"; \
+		faction = "TWC_Millennial"; \
+		side = 1; \
+		class Unit0 \
+		{ \
+			side = 1; \
+			vehicle = TWC_Infantry_1990_Regular_##CAMO##_Company_Commander; \
+			rank = "COLONEL"; \
+			position[] = {0,0,0}; \
+		}; \
+		class Unit1 \
+		{ \
+			side = 1; \
+			vehicle = TWC_Infantry_1990_Regular_##CAMO##_Company_2iC; \
+			rank = "MAJOR"; \
+			position[] = {2,0,0}; \
+		}; \
+		class Unit2 \
+		{ \
+			side = 1; \
+			vehicle = TWC_Infantry_1990_Regular_##CAMO##_Company_Sergeant; \
+			rank = "CAPTAIN"; \
+			position[] = {4,0,0}; \
+		}; \
+	}; \
 	class AT_Team \
 	{ \
 		name = "AT Team"; \
@@ -433,6 +460,33 @@ class TWC_Groups_1990_Regular_Dismounted_##CAMO \
 			vehicle = TWC_Infantry_1990_Regular_Dismounted_##CAMO##_Platoon_CSM; \
 			rank = "CAPTAIN"; \
 			position[] = {6,0,0}; \
+		}; \
+	}; \
+	class Company_Command \
+	{ \
+		name = "Company Command"; \
+		faction = "TWC_Millennial"; \
+		side = 1; \
+		class Unit0 \
+		{ \
+			side = 1; \
+			vehicle = TWC_Infantry_1990_Regular_Dismounted_##CAMO##_Company_Commander; \
+			rank = "COLONEL"; \
+			position[] = {0,0,0}; \
+		}; \
+		class Unit1 \
+		{ \
+			side = 1; \
+			vehicle = TWC_Infantry_1990_Regular_Dismounted_##CAMO##_Company_2iC; \
+			rank = "MAJOR"; \
+			position[] = {2,0,0}; \
+		}; \
+		class Unit2 \
+		{ \
+			side = 1; \
+			vehicle = TWC_Infantry_1990_Regular_Dismounted_##CAMO##_Company_Sergeant; \
+			rank = "CAPTAIN"; \
+			position[] = {4,0,0}; \
 		}; \
 	}; \
 };

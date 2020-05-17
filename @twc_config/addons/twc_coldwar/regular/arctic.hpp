@@ -63,6 +63,23 @@ class TWC_Infantry_ColdWar_Regular_Arctic_CSM: TWC_Infantry_ColdWar_Regular_Wood
 	uniformClass="SP_63PatWindproof_DPM_1_Item";
 };
 
+//Company
+class TWC_Infantry_ColdWar_Regular_Arctic_Company_Commander: TWC_Infantry_ColdWar_Regular_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Regular_Arctic)
+	uniformClass="SP_63PatWindproof_DPM_1_Item";
+};
+class TWC_Infantry_ColdWar_Regular_Arctic_Company_2iC: TWC_Infantry_ColdWar_Regular_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Regular_Arctic)
+	uniformClass="SP_63PatWindproof_DPM_1_Item";
+};
+class TWC_Infantry_ColdWar_Regular_Arctic_Company_Sergeant: TWC_Infantry_ColdWar_Regular_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Regular_Arctic)
+	uniformClass="SP_63PatWindproof_DPM_1_Item";
+};
+
 //AT + AA
 class TWC_Infantry_ColdWar_Regular_Arctic_MILAN_Gunner: TWC_Infantry_ColdWar_Regular_Woodland_MILAN_Gunner
 {

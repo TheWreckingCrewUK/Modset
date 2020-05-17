@@ -255,6 +255,71 @@ class TWC_Infantry_ColdWar_Regular_Desert_CSM: TWC_Infantry_ColdWar_Regular_Wood
 	};
 };
 
+//Company
+class TWC_Infantry_ColdWar_Regular_Desert_Company_Commander: TWC_Infantry_ColdWar_Regular_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Regular_Desert)
+	uniformClass="SP_60PatCombatsRolled_Khaki_1_Item";
+	linkedItems[]=
+	{
+		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_Khaki",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[]=
+	{
+		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_Khaki",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_ColdWar_Regular_Desert_Company_2iC: TWC_Infantry_ColdWar_Regular_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Regular_Desert)
+	uniformClass="SP_60PatCombatsRolled_Khaki_1_Item";
+	linkedItems[]=
+	{
+		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_Khaki",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[]=
+	{
+		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_Khaki",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_ColdWar_Regular_Desert_Company_Sergeant: TWC_Infantry_ColdWar_Regular_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Regular_Desert)
+	uniformClass="SP_60PatCombatsRolled_Khaki_1_Item";
+	linkedItems[]=
+	{
+		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_Khaki",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[]=
+	{
+		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_Khaki",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+
 //AT + AA
 class TWC_Infantry_ColdWar_Regular_Desert_MILAN_Gunner: TWC_Infantry_ColdWar_Regular_Woodland_MILAN_Gunner
 {

@@ -67,3 +67,20 @@ class TWC_Infantry_WW2_UK_Late_Dismounted_Woodland_Platoon_CSM: TWC_Infantry_WW2
 	CATEGORY(TWC_Infantry_Dismounted_Woodland)
 	backpack = "TWC_Backpack_WW2_UK_Late_Dismounted_Platoon_Sergeant";
 };
+
+//Company
+class TWC_Infantry_WW2_UK_Late_Dismounted_Woodland_Company_Commander: TWC_Infantry_WW2_UK_Late_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Dismounted_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Late_Dismounted_Platoon_Commander";
+};
+class TWC_Infantry_WW2_UK_Late_Dismounted_Woodland_Company_2iC: TWC_Infantry_WW2_UK_Late_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Dismounted_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Late_Dismounted_Platoon_Commander";
+};
+class TWC_Infantry_WW2_UK_Late_Dismounted_Woodland_Company_Sergeant: TWC_Infantry_WW2_UK_Late_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Dismounted_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Late_Dismounted_Platoon_Sergeant";
+};
