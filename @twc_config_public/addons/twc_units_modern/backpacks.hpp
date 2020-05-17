@@ -819,6 +819,24 @@
 		
 	};
 	
+	class rus_backpack_rif: CUP_B_ACRScout_m95
+	{
+	scope = 1;
+	hiddenselectionstextures[] = {"\A3\Weapons_F\Ammoboxes\Bags\Data\backpack_small_oli_co.paa"};
+	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
+		
+		class TransportMagazines
+		{
+			class _xx_mag
+			{
+				magazine = "twc_rhsgref_30rnd_556x45_m21";
+				count = 5;
+			};
+
+		};
+		
+	};
+	
 	
 	class pol_backpack_rpg: CUP_B_RPGPack_Khaki
 	{
@@ -899,7 +917,180 @@
 		
 	};
 	
-			class pol_backpack_2ic: UK3CB_BAF_B_Carryall_OLI
+	class rus_backpack_2ic: UK3CB_BAF_B_Carryall_OLI
+	{
+		scope = 1;
+		
+
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "rhs_30Rnd_545x39_7N6M_plum_AK";
+				count = 5;
+			};
+			class _xx_m21
+			{
+				magazine = "rhs_100Rnd_762x54mmR_green";
+				count = 2;
+			};
+			class _xx_40mm_smoke_white
+			{
+				magazine = "rhs_GRD40_White";
+				count = 5;
+			};
+			class _xx_40mm_smoke_red
+			{
+				magazine = "rhs_GRD40_Red";
+				count = 5;
+			};
+			class _xx_40mm_smoke_green
+			{
+				magazine = "rhs_GRD40_Green";
+				count = 5;
+			};
+			class _xx_40mm
+			{
+				magazine = "rhs_VOG25";
+				count = 20;
+			};
+		};
+		
+	};
+	
+	class rus_backpack_sniper: CUP_B_CivPack_WDL
+	{
+		scope = 1;
+		
+
+		class TransportWeapons
+		{
+			class _xx_rifle
+			{
+				weapon = "twc_weap_ak105_sniper";
+				count = 1;
+			};
+		};
+
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "CUP_20Rnd_545x39_AKSU_M";
+				count = 7;
+			};
+			class _xx_svd
+			{
+				magazine = "10Rnd_762x54_Mag";
+				count = 10;
+			};
+		};
+		
+	};
+	class rhs_assault_umbts;
+	class rus_backpack_MG: rhs_assault_umbts
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "rhs_100Rnd_762x54mmR_green";
+				count = 3;
+			};
+		};
+	};
+	
+	class rus_backpack_spotter: CUP_B_CivPack_WDL
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "10Rnd_762x54_Mag";
+				count = 10;
+			};
+			class _xx_stanag_t
+			{
+				magazine = "ACE_10Rnd_762x54_Tracer_mag";
+				count = 10;
+			};
+		};
+	};
+	
+	class twc_scoutpack_olive;
+	class rus_scoutpack_rifleman: twc_scoutpack_olive
+	{
+		scope = 1;
+		
+
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "rhs_30Rnd_545x39_AK_plum_green";
+				count = 3;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_defusal
+			{
+				name = "ACE_DefusalKit";
+				count = 1;
+			};
+			class _xx_bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 7;
+			};
+			class _xx_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 7;
+			};
+		};
+		
+	};
+	class rus_sso_backpack_2ic: UK3CB_BAF_B_Carryall_OLI
+	{
+		scope = 1;
+		class TransportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "rhs_30Rnd_545x39_7N6M_plum_AK";
+				count = 8;
+			};
+			class _xx_stanag_t
+			{
+				magazine = "rhs_30Rnd_545x39_AK_plum_green";
+				count = 8;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_defusal
+			{
+				name = "ACE_DefusalKit";
+				count = 1;
+			};
+			class _xx_bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 10;
+			};
+			class _xx_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 10;
+			};
+		};
+		
+	};
+	
+	class pol_backpack_2ic: UK3CB_BAF_B_Carryall_OLI
 	{
 		scope = 1;
 		
@@ -945,6 +1136,60 @@
 		
 	};
 
+	
+	class rhs_medic_bag;
+	class rus_backpack_medic: rhs_medic_bag
+	{
+		scope = 1;
+		class TransportItems
+		{
+            class _xx_Bandage
+			{
+				name = "ACE_fieldDressing";
+				count = 12;
+			};
+			class _xx_Morphine
+			{
+				name = "ACE_morphine";
+				count = 10;
+			};
+			class _xx_ACE_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 15;
+			};
+			class _xxACE_quikclot
+			{
+				name = "ACE_quikclot";
+				count = 6;
+			};
+			class _xxACE_epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 10;
+			};
+			class _xxACE_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 15;
+			};
+			class _xxACE_personalAidKit
+			{
+				name = "ACE_personalAidKit";
+				count = 1;
+			};
+			class _xxACE_salineIV_500
+			{
+				name = "ACE_salineIV_500";
+				count = 6;
+			};
+			class _xxACE_tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 4;
+			};
+		};
+	};
 	
 	
 		class pol_backpack_medic: UK3CB_BAF_B_Kitbag_OLI

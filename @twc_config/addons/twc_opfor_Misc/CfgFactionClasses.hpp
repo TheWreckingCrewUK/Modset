@@ -1,11 +1,13 @@
 class CfgFactionClasses {
 	class Iraqi_units {
-		displayName = "Iraqi Army Gulf War Units";
+		displayName = "Iraqi Army (Gulf War)";
 		author = "Rik";
 		icon = "TWClogo.paa";
 		priority = 2;
 		side = 0;
 	};
+	
+	class TWC_OPFOR_Units_Iraq: Iraqi_Units {};
 
 	class ira_units {
 		displayName = "IRA Units";
@@ -112,6 +114,13 @@ class CfgFactionClasses {
 	class TWC_INDEP_Units_Argentina_1980 {
 		displayName = "Argentina (1980)";
 		author = "[TWC] Rik";
+		priority = 2;
+		side = 2;
+	};
+	
+	class TWC_FARC_Units {
+		displayName = "Revolutionary Armed Forces of Colombia";
+		author = "[TWC] Sarge";
 		priority = 2;
 		side = 2;
 	};

@@ -3,7 +3,7 @@
 		_generalMacro="GulfWar_Iraqi_Squadleader";
 		scope=2;
 		displayName="Section Leader";
-		faction="Iraqi_units";
+		faction="TWC_OPFOR_Units_Iraq";
 		editorSubcategory = "Men_Iraq";
 		vehicleClass="Men_Iraq";
 		icon="iconManLeader";
@@ -98,7 +98,7 @@
 		_generalMacro="GulfWar_Iraqi_Rifleman";
 		scope=2;
 		displayName="Rifleman";
-		faction="Iraqi_units";
+		faction="TWC_OPFOR_Units_Iraq";
 		editorSubcategory = "Men_Iraq";
 		vehicleClass="Men_Iraq";
 		icon="iconMan";
@@ -189,7 +189,7 @@
 		_generalMacro="GulfWar_Iraqi_RPG";
 		scope=2;
 		displayName="RPG Gunner";
-		faction="Iraqi_units";
+		faction="TWC_OPFOR_Units_Iraq";
 		editorSubcategory = "Men_Iraq";
 		vehicleClass="Men_Iraq";
 		icon="iconManExplosive";
@@ -286,7 +286,7 @@
 		_generalMacro="GulfWar_Iraqi_RPGAssistant";
 		scope=2;
 		displayName="RPG Assistant";
-		faction="Iraqi_units";
+		faction="TWC_OPFOR_Units_Iraq";
 		editorSubcategory = "Men_Iraq";
 		vehicleClass="Men_Iraq";
 		icon="iconManMG";
@@ -380,7 +380,7 @@
 		_generalMacro="GulfWar_Iraqi_MG";
 		scope=2;
 		displayName="Machinegunner";
-		faction="Iraqi_units";
+		faction="TWC_OPFOR_Units_Iraq";
 		editorSubcategory = "Men_Iraq";
 		vehicleClass="Men_Iraq";
 		icon="iconMan";
@@ -464,7 +464,7 @@
 		_generalMacro="GulfWar_Iraqi_MachinegunnerAssistant";
 		scope=2;
 		displayName="MG Assistant";
-		faction="Iraqi_units";
+		faction="TWC_OPFOR_Units_Iraq";
 		editorSubcategory = "Men_Iraq";
 		vehicleClass="Men_Iraq";
 		icon="iconMan";

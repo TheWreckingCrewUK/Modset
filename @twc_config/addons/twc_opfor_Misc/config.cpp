@@ -150,7 +150,9 @@ class CfgPatches {
 			"TWC_WaPArmy_Taviana_T55",
 			"TWC_WaPArmy_Taviana_T72",
 			"TWC_WaPArmy_Taviana_T72A",
-			"TWC_WaPArmy_Taviana_ZSU23"
+			"TWC_WaPArmy_Taviana_ZSU23",
+			"TWC_Operations_Opfor_Iraq_Mi8",
+			"TWC_Operations_Opfor_Iraq_Mi24"
 		};
 		
 		weapons[] = {};
@@ -208,6 +210,7 @@ class CfgGroups {
 			
 			/* MILLENNIAL COMPOSITIONS - GROUP DEFINES */
 			// todo
+			#include "compositions\1990_iraq.hpp"
 		};
 		
 		class TWC_Operation_Opfor_Modern {
@@ -264,7 +267,10 @@ class CfgVehicles {
 	class I_G_Soldier_base_F;
 	
 //	#include "russianfederation.hpp"
+	
 	#include "units\iraq.hpp"
+	#include "vehicles\iraq_heli.hpp"
+	
 	#include "units\african.hpp"
 	
 	/* UNITS - INDIVIDUAL DEFINES */
@@ -279,6 +285,7 @@ class CfgVehicles {
 	#include "units\WaPArmy_Taviana.hpp"
 	#include "units\aden.hpp"
 	#include "units\argentina_1980.hpp"
+	#include "units\FARC.hpp"
 };
 
 #include "CfgMarkers.hpp"

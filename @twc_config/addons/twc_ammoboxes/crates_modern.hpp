@@ -95,8 +95,8 @@ class TWC_AmmoBox_Modern_Section_Portable: TWC_AmmoBox_Portable {
 		maga_nc(UK3CB_BAF_556_30Rnd_T, 4);
 		
 		// L7 GPMG
-		maga_nc(UK3CB_BAF_762_100Rnd, 3);
-		maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
+		maga_nc(UK3CB_BAF_762_100Rnd, 6);
+		maga_nc(UK3CB_BAF_762_100Rnd_T, 2);
 		
 		// L42A1 DMR
 		maga_nc(UK3CB_BAF_762_L42A1_20Rnd, 3);
@@ -222,8 +222,8 @@ class TWC_AmmoBox_Modern_COIN_Section_Portable: TWC_AmmoBox_Portable {
 		maga_nc(UK3CB_BAF_556_30Rnd_T, 4);
 		
 		// L7 GPMG
-		maga_nc(UK3CB_BAF_762_100Rnd, 3);
-		maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
+		maga_nc(UK3CB_BAF_762_100Rnd, 6);
+		maga_nc(UK3CB_BAF_762_100Rnd_T, 2);
 		
 		// L42A1 DMR
 		maga_nc(UK3CB_BAF_762_L42A1_20Rnd, 3);
@@ -345,8 +345,8 @@ class TWC_AmmoBox_Modern_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 		maga_nc(UK3CB_BAF_556_30Rnd_T, 4);
 		
 		// L7 GPMG
-		maga_nc(UK3CB_BAF_762_100Rnd, 3);
-		maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
+		maga_nc(UK3CB_BAF_762_100Rnd, 6);
+		maga_nc(UK3CB_BAF_762_100Rnd_T, 2);
 		
 		// L42A1 DMR
 		maga_nc(UK3CB_BAF_762_L42A1_20Rnd, 3);

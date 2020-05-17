@@ -22,6 +22,7 @@ class CfgFunctions {
 			/** INIT **/
 			//class preInit {};
 			class serverInit {};
+			class settings {};
 			
 			/** BUILDING **/
 			class cleanBuildingUp {};
@@ -37,6 +38,12 @@ class Extended_PostInit_EventHandlers {
 	class twc_cleanup {
 		serverInit = "_this call twc_cleanup_fnc_serverInit";
 		disableModuload = true;
+	};
+};
+
+class Extended_PreInit_EventHandlers {
+	class TWC_Cleanup_PreInitEH {
+		init = "_this call TWC_Cleanup_fnc_settings;";
 	};
 };
 
