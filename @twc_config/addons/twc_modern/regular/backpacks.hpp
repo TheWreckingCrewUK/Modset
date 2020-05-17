@@ -80,8 +80,9 @@ class TWC_Backpack_Modern_Regular_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MT
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 6);
-		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 4);
+		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 16);
+		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 6);
+		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Flare_White, 4);
 	};
 };
 
@@ -283,7 +284,8 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 6);
-		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 4);
+		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 20);
+		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 8);
+		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Flare_White, 4);
 	};
 };
