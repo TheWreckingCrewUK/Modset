@@ -641,6 +641,7 @@ class TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millenni
 	displayName = "Helicopter Pilot";
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMW_ShortSleeve";
 	TWC_isCommandRole = 1;
+	engineer = 1;
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Pilot_DPMW",
