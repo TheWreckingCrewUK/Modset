@@ -114,6 +114,7 @@ class CfgVehicles
 		CATEGORY(TWC_ForceType_Airborne)
 		uniformClass = "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
 		TWC_isCommandRole = 1;
+		engineer = 1;
 		linkedItems[] =
 		{
 			"CUP_V_B_PilotVest",
@@ -169,6 +170,7 @@ class CfgVehicles
 		CATEGORY(TWC_ForceType_Armoured)
 		uniformClass = "UK3CB_BAF_U_CrewmanCoveralls_RTR";
 		TWC_isCommandRole = 1;
+		engineer = 1;
 		linkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",

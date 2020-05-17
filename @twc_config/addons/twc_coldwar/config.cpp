@@ -61,20 +61,20 @@ class CfgVehicles
 	#define MAG_11(a) a, a, a, a, a, a, a, a, a, a, a
 	#define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 	#define CATEGORY(a) editorSubcategory = a;\
-						vehicleClass= a;
+						vehicleClass = a;
 	
 	//GENERIC
 	class TWC_Infantry_ColdWar_Plane_Pilot: B_Soldier_base_F
 	{
 		scope=2;
-		displayName="Jet Pilot";
-		faction="TWC_ColdWar";
-		editorSubcategory = "TWC_ForceType_Airborne";
-		vehicleClass="TWC_ForceType_Airborne";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_RAF";
-		backpack="";
+		displayName = "Jet Pilot";
+		faction = "TWC_ColdWar";
+		CATEGORY("TWC_ForceType_Airborne")
+		icon = "iconMan";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
+		backpack = "";
+		engineer = 1;
 		linkedItems[]=
 		{
 			"CUP_V_B_PilotVest",
@@ -134,15 +134,16 @@ class CfgVehicles
 	};
 	class TWC_Infantry_ColdWar_Tank_Commander: B_Soldier_base_F
 	{
-		scope=2;
-		displayName="Tank Commander";
-		faction="TWC_ColdWar";
-		editorSubcategory = "TWC_ForceType_Armoured";
-		vehicleClass="TWC_ForceType_Armoured";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_CrewmanCoveralls_RTR";
-		backpack="";
+		scope = 2;
+		displayName = "Tank Commander";
+		faction = "TWC_ColdWar";
+		CATEGORY("TWC_ForceType_Armoured")
+		icon = "iconMan";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_CrewmanCoveralls_RTR";
+		backpack = "";
+		TWC_isCommandRole = 1;
+		engineer = 1;
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -205,6 +206,7 @@ class CfgVehicles
 	class TWC_Infantry_ColdWar_Tank_Crew: TWC_Infantry_ColdWar_Tank_Commander
 	{
 		displayName="Tank Crew";
+		TWC_isCommandRole = 0;
 		class EventHandlers: EventHandlers
 		{
 			init = "";

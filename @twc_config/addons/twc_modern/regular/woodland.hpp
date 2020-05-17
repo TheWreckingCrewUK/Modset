@@ -496,6 +496,8 @@ class TWC_Infantry_Modern_Regular_Woodland_Platoon_Mortar: TWC_Infantry_Modern_R
 class TWC_Infantry_Modern_Regular_Woodland_CSM: TWC_Infantry_Modern_Regular_Woodland_Platoon_Sergeant
 {
 	displayName = "Company Sergeant Major";
+	attendant = 1;
+	engineer = 1;
 };
 
 //AT + AA
@@ -757,6 +759,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Modern
 {
 	displayName = "Helicopter Pilot";
 	TWC_isCommandRole = 1;
+	engineer = 1;
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Pilot_A",

@@ -113,6 +113,8 @@ class CfgVehicles
 		faction = "TWC_Modern";
 		CATEGORY(TWC_ForceType_Airborne)
 		uniformClass = "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
+		TWC_isCommandRole = 1;
+		engineer = 1;
 		linkedItems[] =
 		{
 			"CUP_V_B_PilotVest",
@@ -167,6 +169,8 @@ class CfgVehicles
 		faction = "TWC_Modern";
 		CATEGORY(TWC_ForceType_Armoured)
 		uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
+		TWC_isCommandRole = 1;
+		engineer = 1;
 		linkedItems[] =
 		{
 			"UK3CB_BAF_V_Osprey_Belt_A",
@@ -221,6 +225,7 @@ class CfgVehicles
 	class TWC_Infantry_Modern_Tank_Crew: TWC_Infantry_Modern_Tank_Commander
 	{
 		displayName = "Tank Crew";
+		TWC_isCommandRole = 0;
 		weapons[] =
 		{
 			"UK3CB_BAF_L22A2",

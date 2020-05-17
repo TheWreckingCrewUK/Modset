@@ -469,6 +469,8 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Mortar: TWC_Infantry_WW2_UK_Late
 class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Sergeant
 {
 	displayName = "Company Sergeant Major";
+	attendant = 1;
+	engineer = 1;
 };
 
 //AT
@@ -680,6 +682,7 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Vehicle_Commander: TWC_Infantry_WW2_UK_L
 {
 	displayName = "Vehicle Commander";
 	TWC_isCommandRole = 1;
+	engineer = 1;
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
