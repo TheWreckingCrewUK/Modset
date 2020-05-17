@@ -236,6 +236,7 @@ class TWC_Backpack_Modern_COIN_Dismounted_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_R
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 480;
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, 8);
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, 3);
