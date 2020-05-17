@@ -66,7 +66,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Grenadier: TWC_Infantry_Modern_Regular_W
 	magazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
-		MAG_10("1Rnd_HE_Grenade_shell"),
+		MAG_10("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
 		MAG_4("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
@@ -78,7 +78,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Grenadier: TWC_Infantry_Modern_Regular_W
 	respawnmagazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
-		MAG_10("1Rnd_HE_Grenade_shell"),
+		MAG_10("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
 		MAG_4("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
