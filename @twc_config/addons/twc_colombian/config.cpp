@@ -140,9 +140,9 @@ class CfgVehicles
 		}; 
 		
 		class TransportMagazines {
-			ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 25);
-			ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 10);
-			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 10);
+			ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 20);
+			ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 6);
+			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 11);
 			
 			ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M, 16);
 			
@@ -189,7 +189,7 @@ class CfgVehicles
 		}; 
 		
 		class TransportMagazines {
-			ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 15);
+			ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 10);
 			ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 5);
 			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 5);
 			
@@ -208,7 +208,7 @@ class CfgVehicles
 			ADD_MAGA(SmokeShellBlue, 4);
 			ADD_MAGA(SmokeShellYellow, 4);
 			
-			ADD_MAGA(CUP_HandGrenade_M67, 10);
+			ADD_MAGA(CUP_HandGrenade_M67, 5);
 		};
 		
 		class TransportWeapons { };

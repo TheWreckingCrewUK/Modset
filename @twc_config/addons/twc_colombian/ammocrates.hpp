@@ -18,8 +18,8 @@ class TWC_AmmoBox_Colombia_Portable: TWC_AmmoBox_Portable {
 	
 	class TransportMagazines {
 		// Galil Stanag
-		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 25);
-		ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 10);
+		ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 19);
+		ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 6);
 		
 		// M16 Stanag
 		ADD_MAGA(CUP_30Rnd_556x45_Stanag, 10);
