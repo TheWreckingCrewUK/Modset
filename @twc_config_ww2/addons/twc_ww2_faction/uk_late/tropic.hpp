@@ -68,6 +68,23 @@ class TWC_Infantry_WW2_UK_Late_Tropic_Platoon_CSM: TWC_Infantry_WW2_UK_Late_Wood
 	uniformClass="fow_u_uk_bd40_seac_02_sergeant";
 };
 
+//Company
+class TWC_Infantry_WW2_UK_Late_Tropic_Company_Commander: TWC_Infantry_WW2_UK_Late_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Regular_Tropic)
+	uniformClass = "fow_u_uk_bd40_seac_02_lieutenant";
+};
+class TWC_Infantry_WW2_UK_Late_Tropic_Company_2iC: TWC_Infantry_WW2_UK_Late_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Regular_Tropic)
+	uniformClass = "fow_u_uk_bd40_seac_02_lieutenant";
+};
+class TWC_Infantry_WW2_UK_Late_Tropic_Company_Sergeant: TWC_Infantry_WW2_UK_Late_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Regular_Tropic)
+	uniformClass = "fow_u_uk_bd40_seac_02_sergeant";
+};
+
 //AT
 class TWC_Infantry_WW2_UK_Late_Tropic_PIAT_Gunner: TWC_Infantry_WW2_UK_Late_Woodland_PIAT_Gunner
 {

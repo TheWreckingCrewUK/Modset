@@ -8,6 +8,11 @@ class CfgFunctions {
 			class planeData1 {};
 			class planeData2 {};
 			class planeData3 {};
+			
+			class SE1 {};
+			class SE2 {};
+			class SW1 {};
+			class SW2 {};
 		};
 	};
 };

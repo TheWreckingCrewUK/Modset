@@ -331,6 +331,103 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_CSM: TWC_Infantry_WW2_UK_Late_W
 	};
 };
 
+//Company
+class TWC_Infantry_WW2_UK_Early_Woodland_Company_Commander: TWC_Infantry_WW2_UK_Late_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_Platoon_Commander";
+	weapons[] =
+	{
+		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_3("LIB_30Rnd_45ACP"),
+		MAG_2("SmokeShell"),
+		MAG_2("SmokeShellBlue"),
+		MAG_2("SmokeShellRed"),
+		MAG_2("SmokeShellGreen")
+	};
+	respawnmagazines[] =
+	{
+		MAG_3("LIB_30Rnd_45ACP"),
+		MAG_2("SmokeShell"),
+		MAG_2("SmokeShellBlue"),
+		MAG_2("SmokeShellRed"),
+		MAG_2("SmokeShellGreen")
+	};
+};
+class TWC_Infantry_WW2_UK_Early_Woodland_Company_2iC: TWC_Infantry_WW2_UK_Late_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_Platoon_Commander";
+	weapons[] =
+	{
+		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"LIB_M1928_Thompson",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_3("LIB_30Rnd_45ACP"),
+		MAG_2("SmokeShell"),
+		MAG_2("SmokeShellBlue"),
+		MAG_2("SmokeShellRed"),
+		MAG_2("SmokeShellGreen")
+	};
+	respawnmagazines[] =
+	{
+		MAG_3("LIB_30Rnd_45ACP"),
+		MAG_2("SmokeShell"),
+		MAG_2("SmokeShellBlue"),
+		MAG_2("SmokeShellRed"),
+		MAG_2("SmokeShellGreen")
+	};
+};
+class TWC_Infantry_WW2_UK_Early_Woodland_Company_Sergeant: TWC_Infantry_WW2_UK_Late_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_EarlyWW2_Woodland)
+	backpack = "TWC_Backpack_WW2_UK_Early_Platoon_Sergeant";
+	weapons[] =
+	{
+		"LIB_LeeEnfield_No1",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"LIB_LeeEnfield_No1",
+		"TWC_No1Mk3SignalGun",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+};
+
 //AT
 class TWC_Infantry_WW2_UK_Early_Woodland_Boys_Gunner: TWC_Infantry_WW2_UK_Late_Woodland_PIAT_Gunner
 {

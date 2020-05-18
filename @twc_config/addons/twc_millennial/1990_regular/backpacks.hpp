@@ -31,7 +31,6 @@ class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Commander: INHERIT \
 { \
 	scope = 1; \
 	scopeArsenal = 1; \
-	maximumLoad = 430; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
@@ -47,6 +46,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Sergeant: INHERIT \
 { \
 	scope = 1; \
 	scopeArsenal = 1; \
+	maximumLoad = 430; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
@@ -129,7 +129,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_Artillery_Commander: INHERIT \
 { \
 	scope = 1; \
 	scopeArsenal = 1; \
-	maximumLoad = 300; \
+	maximumLoad = 400; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
@@ -140,7 +140,6 @@ class TWC_Backpack_1990_Regular_##CAMO##_FO: INHERIT \
 { \
 	scope = 1; \
 	scopeArsenal = 1; \
-	maximumLoad = 200; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
@@ -267,6 +266,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Platoon_Sergeant: INHERIT \
 { \
 	scope = 1; \
 	scopeArsenal = 1; \
+	maximumLoad = 430; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \

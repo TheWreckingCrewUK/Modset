@@ -67,3 +67,20 @@ class TWC_Infantry_WW2_ANZAC_Dismounted_Desert_Platoon_CSM: TWC_Infantry_WW2_ANZ
 	CATEGORY(TWC_Infantry_ANZAC_Dismounted_Desert)
 	backpack = "TWC_Backpack_WW2_UK_Early_Dismounted_Platoon_Sergeant";
 };
+
+//Company
+class TWC_Infantry_WW2_ANZAC_Dismounted_Desert_Company_Commander: TWC_Infantry_WW2_ANZAC_Desert_Company_Commander
+{
+	CATEGORY(TWC_Infantry_ANZAC_Dismounted_Desert)
+	backpack = "TWC_Backpack_WW2_UK_Early_Dismounted_Platoon_Commander";
+};
+class TWC_Infantry_WW2_ANZAC_Dismounted_Desert_Company_2iC: TWC_Infantry_WW2_ANZAC_Desert_Company_2iC
+{
+	CATEGORY(TWC_Infantry_ANZAC_Dismounted_Desert)
+	backpack = "TWC_Backpack_WW2_UK_Early_Dismounted_Platoon_Commander";
+};
+class TWC_Infantry_WW2_ANZAC_Dismounted_Desert_Company_Sergeant: TWC_Infantry_WW2_ANZAC_Desert_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_ANZAC_Dismounted_Desert)
+	backpack = "TWC_Backpack_WW2_UK_Early_Dismounted_Platoon_Sergeant";
+};

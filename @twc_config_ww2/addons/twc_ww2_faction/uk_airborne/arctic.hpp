@@ -276,6 +276,71 @@ class TWC_Infantry_WW2_UK_Airborne_Arctic_Platoon_CSM: TWC_Infantry_WW2_UK_Airbo
 	};
 };
 
+//Company
+class TWC_Infantry_WW2_UK_Airborne_Arctic_Company_Commander: TWC_Infantry_WW2_UK_Airborne_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Airborne_Arctic)
+	uniformClass = "U_LIB_UK_DenisonSmock_w";
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_WW2_UK_Airborne_Arctic_Company_2iC: TWC_Infantry_WW2_UK_Airborne_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Airborne_Arctic)
+	uniformClass = "U_LIB_UK_DenisonSmock_w";
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Sten_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_WW2_UK_Airborne_Arctic_Company_Sergeant: TWC_Infantry_WW2_UK_Airborne_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Airborne_Arctic)
+	uniformClass = "U_LIB_UK_DenisonSmock_w";
+	linkedItems[] =
+	{
+		"V_LIB_UK_P37_Heavy_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"V_LIB_UK_P37_Heavy_Blanco",
+		"H_LIB_UK_Para_Helmet_Mk2_Net_w",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+
 //AT
 class TWC_Infantry_WW2_UK_Airborne_Arctic_PIAT_Gunner: TWC_Infantry_WW2_UK_Airborne_Woodland_PIAT_Gunner
 {

@@ -258,6 +258,7 @@ class CfgVehicles
 		CATEGORY(TWC_ForceType_Airborne)
 		uniformClass = "U_LIB_US_Pilot";
 		TWC_isCommandRole = 1;
+		engineer = 1;
 		linkedItems[] =
 		{
 			"V_LIB_US_LifeVest",
@@ -314,6 +315,7 @@ class CfgVehicles
 		CATEGORY(TWC_ForceType_Armoured)
 		uniformClass = "U_LIB_UK_P37";
 		TWC_isCommandRole = 1;
+		engineer = 1;
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable ['twc_keepMap',true]";
 		};

@@ -449,7 +449,7 @@ class O_Soldier_Base_F;
 	class TWC_Modern_rus_commander: TWC_Modern_rus_Base
 	{
 		scope=2;
-		displayName="Section Commander @VDV";
+		displayName="Section Commander @VDV Section";
 		backpack="pol_backpack_leader";
 		linkedItems[]=
 		{
@@ -487,6 +487,7 @@ class O_Soldier_Base_F;
 	class TWC_Modern_rus_commander_l: TWC_Modern_rus_commander
 	{
 		backpack="";
+		displayName="Section Commander @VDV Section (Mechanised)";
 		Items[]=
 		{
 			"ACE_fieldDressing",
@@ -758,10 +759,11 @@ class O_Soldier_Base_F;
 	class TWC_Modern_rus_vehcommander: TWC_Modern_rus_base
 	{
 		scope=2;
-		displayName="Vehicle Commander";
+		displayName="Vehicle Commander @Armour Crew";
 		linkedItems[]=
 		{
 			"CUP_V_I_RACS_Carrier_Rig_wdl_3",
+			"itemCTAB",
 			"rhs_tsh4",
 			"ItemMap",
 			"ItemCompass",
@@ -770,6 +772,7 @@ class O_Soldier_Base_F;
 		respawnLinkedItems[]=
 		{
 			"CUP_V_I_RACS_Carrier_Rig_wdl_3",
+			"itemCTAB",
 			"rhs_tsh4",
 			"ItemMap",
 			"ItemCompass",
@@ -809,10 +812,134 @@ class O_Soldier_Base_F;
 			"rhs_30Rnd_545x39_7N6M_plum_AK",
 			"rhs_mag_rdg2_white"
 		};
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACRE_PRC148",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
+		respawnitems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACRE_PRC148",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
 	};
 	
 	class TWC_Modern_rus_vehcommander_l: TWC_Modern_rus_vehcommander
-	{};
+	{
+		displayName="Vehicle Commander";
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
+		respawnitems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
+		};
+	};
 	
 	class TWC_Modern_rus_vehcommander_d: TWC_Modern_rus_vehcommander
 	{
@@ -844,6 +971,66 @@ class O_Soldier_Base_F;
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
+		};
+		Items[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
+		respawnitems[]=
+		{
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet"
 		};
 	};
 	
@@ -929,19 +1116,20 @@ class O_Soldier_Base_F;
 		weapons[]=
 		{
 			"Throw",
+			"ACE_MX2A",
 			"Put",
-			"twc_weap_ak105_sniper"
+			"twc_rus_svd"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
+			"ACE_MX2A",
 			"Put",
 			"twc_weap_ak105_sniper"
 		};
 		magazines[]=
 		{
 			"rhs_mag_rdg2_white",
-			"CUP_30Rnd_545x39_AK74M_M",
 			"10Rnd_762x54_Mag",
 			"10Rnd_762x54_Mag",
 			"10Rnd_762x54_Mag",
@@ -957,7 +1145,6 @@ class O_Soldier_Base_F;
 		Respawnmagazines[]=
 		{
 			"rhs_mag_rdg2_white",
-			"CUP_30Rnd_545x39_AK74M_M",
 			"10Rnd_762x54_Mag",
 			"10Rnd_762x54_Mag",
 			"10Rnd_762x54_Mag",
@@ -983,7 +1170,7 @@ class O_Soldier_Base_F;
 	class TWC_Modern_rus_spotter: TWC_Modern_rus_Base
 	{
 		scope=2;
-		displayName="Spotter";
+		displayName="Spotter @Sniper Team";
 		uniformClass="CUP_U_O_RUS_Ghillie";
 		backpack="rus_backpack_spotter";
 		linkedItems[]=
@@ -1219,7 +1406,26 @@ class O_Soldier_Base_F;
 	class TWC_Modern_rus_sso_Squadleader: TWC_Modern_rus_sso_Base
 	{
 		backpack="TWC_Backpack_USMC2000_Sectionleader";
-		displayName="Squad Leader";
+		displayName="Squad Leader @SSO Infantry";
+		twc_loadoutstring = "SL";
+		linkedItems[]=
+		{
+			"CUP_V_B_Ciras_Olive",
+			"CUP_H_OpsCore_Spray_SF",
+			"itemCTAB",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Ciras_Olive",
+			"CUP_H_OpsCore_Spray_SF",
+			"itemCTAB",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 		weapons[]=
 		{
 			"Throw",
@@ -1442,6 +1648,7 @@ class O_Soldier_Base_F;
 	{
 		backpack="rus_backpack_MG";
 		displayName="MG Assistant";
+		twc_loadoutstring = "mgass";
 	};
 	
 	class TWC_Modern_rus_sso_medic: TWC_Modern_rus_sso_Base

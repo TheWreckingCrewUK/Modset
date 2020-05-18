@@ -967,7 +967,7 @@
 		{
 			class _xx_rifle
 			{
-				weapon = "twc_rus_svd";
+				weapon = "twc_weap_ak105_sniper";
 				count = 1;
 			};
 		};
