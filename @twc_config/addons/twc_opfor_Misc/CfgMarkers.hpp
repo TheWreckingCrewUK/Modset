@@ -108,11 +108,33 @@ class CfgMarkers {
 		color[] = {1,1,1,1};
 		markerClass = "Flags";
 	};
-	
+
 	class twc_FARC_flag: Flag {
 		name = "Revolutionary Armed Forces of Colombia";
 		icon = "twc_opfor_Misc\data\FARC_flag.paa";
 		texture = "twc_opfor_Misc\data\FARC_flag.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
+
+	class twc_plo_flag: Flag {
+		name = "Palestine Liberation Organization";
+		icon = "twc_opfor_Misc\data\plo.paa";
+		texture = "twc_opfor_Misc\data\plo.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
+	
+	class twc_syria_flag: Flag {
+		name = "Syria";
+		icon = "twc_opfor_Misc\data\syria.paa";
+		texture = "twc_opfor_Misc\data\syria.paa";
 		size = 32;
 		scope = 2;
 		shadow = 0;

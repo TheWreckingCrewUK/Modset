@@ -23,6 +23,20 @@ class CfgFactionClasses {
 	};
 };
 
+class CfgMarkers {
+	class Flag;
+	class TWC_Flag_Israel: Flag {
+		name = "Israel";
+		icon = "twc_idf\data\israel.paa";
+		texture = "twc_idf\data\israel.paa";
+		size = 32;
+		scope = 2;
+		shadow = 0;
+		color[] = {1,1,1,1};
+		markerClass = "Flags";
+	};
+};
+
 class EventHandlers;
 
 class CfgWeapons {
@@ -65,6 +79,42 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {
 			"twc_idf\data\m113_1_co.paa",
 			"twc_idf\data\m113_2_co.paa"
+		};
+
+		class AcreIntercoms {
+			class Intercom_1 {
+				displayName = "Crew Intercom";
+				shortName = "Crew";
+				allowedPositions[] = {"crew"};
+				disabledPositions[] = {};
+				limitedPositions[] = {{"cargo", "all"}};
+				numLimitedPositions = 1;
+				masterPositions[] = {"crew"};
+				connectedByDefault = 1;
+			};
+			class Intercom_2 {
+				displayName = "Cargo Intercom";
+				shortName = "Cargo";
+				allowedPositions[] = {"commander", {"cargo", "all"}};
+				disabledPositions[] = {};
+				limitedPositions[] = {};
+				numLimitedPositions = 0;
+				masterPositions[] = {"commander"};
+				connectedByDefault = 1;
+			};
+		};
+		class AcreRacks {
+			class Rack_1 {
+				displayName = "Vehicle Radio";
+				shortName = "Vehicle Radio";
+				componentName = "ACRE_VRC64";
+				allowedPositions[] = {"driver", "gunner"};
+				disabledPositions[] = {};
+				defaultComponents[] = {};
+				mountedRadio = "ACRE_PRC77";
+				isRadioRemovable = 0;
+				intercom[] = {"intercom_1"};
+			};
 		};
 
 		class TransportItems {
