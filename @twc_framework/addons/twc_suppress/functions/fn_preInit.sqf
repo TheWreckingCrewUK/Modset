@@ -1,4 +1,4 @@
-if (!(hasInterface) || isDedicated) exitWith {};
+if !(hasInterface) exitWith {}; // hc need not apply
 
 TWC_Suppress_Queue = [];
 TWC_Suppress_isSuppressed = false;

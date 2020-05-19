@@ -1,4 +1,4 @@
-if (!(hasInterface) || isDedicated) exitWith {};
+if !(hasInterface) exitWith {};
 
 TWC_Suppress_CC = ppEffectCreate ["colorCorrections", 1501];
 TWC_Suppress_CC ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 1], [1, 1, 1, 0]];
@@ -75,7 +75,6 @@ player addEventHandler ["GetInMan", {
 	
 	_returnNum = [(configFile >> "CfgVehicles" >> (typeOf _vehicle)), "TWC_isExposedVehicle", 0] call BIS_fnc_returnConfigEntry;
 	TWC_Suppress_inExposedVehicle = if (_returnNum > 0) then { true; } else { false; };
-	
 }];
 
 player addEventHandler ["GetOutMan", {
