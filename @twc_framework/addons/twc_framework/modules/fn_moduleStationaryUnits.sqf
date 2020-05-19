@@ -14,7 +14,7 @@
  */
 params ["_logic", "_units", "_activated"];
 
-if (!_activated || !isServer) exitWith {};
+if !(_activated) exitWith {};
 
 {
 	[_x] call twc_fnc_stationaryUnits;
