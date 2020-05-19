@@ -1,15 +1,5 @@
 class CfgPatches {
 	class TWC_AmmoBoxes {
-		/* units[]= { // old names, do not reuse to avoid conflict
-			"TWC_modern_Operation_Ammobox",
-			"TWC_Coin_Operation_Ammobox",
-			"TWC_ColdWar_Operation_Ammobox",
-			"TWC_1990_Operation_Ammobox",
-			"TWC_modern_USSR_Ammobox",
-			"TWC_Vehicle_Ammo_ColdWar",
-			"TWC_modern_Warrior_Ammobox"
-		}; */
-		
 		units[] = {
 			"TWC_AmmoBox_Modern_Base",
 			"TWC_AmmoBox_Modern_Section_Portable",
@@ -81,7 +71,7 @@ class CfgPatches {
 class Extended_Init_EventHandlers {
 	class TWC_AmmoBox_Other_Pallet {
 		class TWC_AmmoBox_EH {
-			serverInit = "_this setMass 10; _this setCenterOfMass [0,-1,0];";
+			serverInit = "(_this select 0) setMass 10; (_this select 0) setCenterOfMass [0,-1,0];";
 		};
 	};
 };
