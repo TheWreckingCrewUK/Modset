@@ -68,14 +68,6 @@ class CfgPatches {
 	};
 };
 
-class Extended_Init_EventHandlers {
-	class TWC_AmmoBox_Other_Pallet {
-		class TWC_AmmoBox_EH {
-			serverInit = "(_this select 0) setMass 10; (_this select 0) setCenterOfMass [0,-1,0];";
-		};
-	};
-};
-
 class CfgEditorCategories {
 	class TWC_Crates {
 		displayName = "Ammo Boxes (TWC)"; 
