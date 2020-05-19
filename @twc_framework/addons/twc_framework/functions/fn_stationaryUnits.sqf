@@ -15,11 +15,11 @@
 */
 params["_unit"];
 
-if (isServer || !hasInterface) then {
-	_group = group _unit;
-	_group setVariable ["twc_cacheDefending", true, true];
-	_group setVariable ["twc_statioGroup", true, true];
+_group = group _unit;
+_group setVariable ["twc_cacheDefending", true];
+_group setVariable ["twc_statioGroup", true];
 
+if (isServer || !hasInterface) then {
 	{
 		_x forceSpeed 0;
 		_x disableAI "PATH";
