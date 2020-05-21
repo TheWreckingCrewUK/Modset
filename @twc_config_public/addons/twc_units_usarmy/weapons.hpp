@@ -73,8 +73,8 @@ class cfgWeapons
 	
 	class rhs_weap_mk18_twcbase: CUP_arifle_SBR_black
 	{
-		recoil = "twc_rifle_556";
-		recoilProne = "twc_rifle_556_prone";
+		recoil = "twc_rifle_556_short";
+		recoilProne = "twc_rifle_556_short_prone";
 		initSpeed = -0.8979;
 		displayname = "MK18 MOD 1";
 		model = "\rhsusf\addons\rhsusf_weapons3\M4BII\MK18.p3d";
