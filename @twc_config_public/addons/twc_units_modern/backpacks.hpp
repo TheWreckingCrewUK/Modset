@@ -1053,6 +1053,31 @@
 		};
 		
 	};
+	class rus_scoutpack_marksman: twc_scoutpack_olive
+	{
+		scope = 1;
+		
+
+		class TransportItems
+		{
+			class _xx_defusal
+			{
+				name = "ACE_DefusalKit";
+				count = 1;
+			};
+			class _xx_cutters
+			{
+				name = "ACE_wirecutter";
+				count = 1;
+			};
+			class _xx_sswt
+			{
+				name = "ACE_Tripod";
+				count = 1;
+			};
+		};
+		
+	};
 	class rus_sso_backpack_2ic: UK3CB_BAF_B_Carryall_OLI
 	{
 		scope = 1;

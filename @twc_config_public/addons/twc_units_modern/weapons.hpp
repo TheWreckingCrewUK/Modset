@@ -359,8 +359,8 @@ class cfgWeapons
 	//tiered approach for jsrs and non-jsrs compat. the adjoining tier twc_L119A2_CQB is modified in the jsrs file
 	class twc_L119A2_10_Base: twc_L119A2_10
 	{
-		recoil = "twc_rifle_556";
-		recoilProne = "twc_rifle_556_prone";
+		recoil = "twc_rifle_556_short";
+		recoilProne = "twc_rifle_556_short_prone";
 		displayName = "L119A2";
 		hiddenSelectionsTextures[] = {"twc_units_modern\textures\mk18_digi_co.jpg"};
 		descriptionShort = "Full Length Variant<br/>15.7 Inch Barrel<br/>5.56";

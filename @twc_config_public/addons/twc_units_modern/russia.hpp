@@ -10,7 +10,7 @@ class O_Soldier_Base_F;
 		nakedUniform="U_BasicBody";
 		uniformClass="CUP_U_O_RUS_EMR_1_VDV";
 		twc_radioType = "ACRE_PRC343";
-		backpack="";
+		backpack="twc_genbackPack_oli";
 		twc_radioChannel = 3;
 		linkedItems[]=
 		{
@@ -187,6 +187,38 @@ class O_Soldier_Base_F;
 			"Put",
 			"twc_rpg_pol",
 			"rhs_weap_ak74m"
+		};
+		magazines[]=
+		{
+			"rhs_rpg7_PG7VL_mag",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_mag_rgo",
+			"rhs_mag_rgo",
+			"rhs_mag_rdg2_white",
+			"rhs_mag_rdg2_white",
+			"rhs_mag_rdg2_white"
+		};
+		Respawnmagazines[]=
+		{
+			"rhs_rpg7_PG7VL_mag",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_mag_rgo",
+			"rhs_mag_rgo",
+			"rhs_mag_rdg2_white",
+			"rhs_mag_rdg2_white",
+			"rhs_mag_rdg2_white"
 		};
 	};
 	class TWC_Modern_rus_rifleman_at_l: TWC_Modern_rus_rifleman_at
@@ -677,6 +709,46 @@ class O_Soldier_Base_F;
 			"Throw",
 			"Put",
 			"rhs_weap_ak74m_fullplum_gp25"
+		};
+		magazines[]=
+		{
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_mag_rgo",
+			"rhs_mag_rdg2_white",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25"
+		};
+		Respawnmagazines[]=
+		{
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_30Rnd_545x39_7N6M_plum_AK",
+			"rhs_mag_rgo",
+			"rhs_mag_rdg2_white",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25",
+			"rhs_VOG25"
 		};
 	};
 	class TWC_Modern_rus_subcommander_l: TWC_Modern_rus_subcommander

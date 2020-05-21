@@ -760,7 +760,7 @@ class cfgRecoils
 {
 	class twc_rifle_556
 	{
-		muzzleOuter[]	= { 0.1,  0.2,  0.02,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
+		muzzleOuter[]	= { 0.06,  0.2,  0.1,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
 		kickBack[]	= { 0.02, 0.04 }; //min/max force
 		permanent	= 0.3; //muzzle climb post-recoil, means nothing when on bipod
 		temporary	= 0.1; //muzzle jump
@@ -774,7 +774,7 @@ class cfgRecoils
 	};
 	class twc_rifle_556_short
 	{
-		muzzleOuter[]	= { 0.07,  0.25,  0.015,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
+		muzzleOuter[]	= { 0.07,  0.25,  0.015,  0.3 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
 		kickBack[]	= { 0.04, 0.06 }; //min/max force
 		permanent	= 0.3; //muzzle climb post-recoil, means nothing when on bipod
 		temporary	= 0.12; //muzzle jump
@@ -789,7 +789,7 @@ class cfgRecoils
 	
 	class twc_rifle_556_long
 	{
-		muzzleOuter[]	= { 0.07,  0.15,  0.02,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
+		muzzleOuter[]	= { 0.07,  0.15,  0.05,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
 		kickBack[]	= { 0.02, 0.04 }; //min/max force
 		permanent	= 0.25; //muzzle climb post-recoil, means nothing when on bipod
 		temporary	= 0.1; //muzzle jump
@@ -804,7 +804,7 @@ class cfgRecoils
 	
 	class twc_mg_556
 	{
-		muzzleOuter[]	= { 0.07,  0.15,  0.02,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
+		muzzleOuter[]	= { 0.15,  0.15,  0.02,  0.1 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
 		kickBack[]	= { 0.03, 0.05 }; //min/max force
 		permanent	= 0.1; //muzzle climb post-recoil, means nothing when on bipod
 		temporary	= 0.04; //muzzle jump
