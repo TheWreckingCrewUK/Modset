@@ -114,6 +114,7 @@ class CfgVehicles
 	// Nyala config
 	
 	class CUP_B_RG31E_M2_USA;
+	class CUP_B_RG31_M2_USA;
 	class CUP_B_RG31_M2_GC_USA;
 	
 	class TWC_Vehicle_Colombia_Nyala_Mk5E: CUP_B_RG31E_M2_USA
@@ -139,9 +140,9 @@ class CfgVehicles
 		}; 
 		
 		class TransportMagazines {
-			ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 25);
-			ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 10);
-			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 10);
+			ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 20);
+			ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 6);
+			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 11);
 			
 			ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M, 16);
 			
@@ -159,6 +160,55 @@ class CfgVehicles
 			ADD_MAGA(SmokeShellYellow, 4);
 			
 			ADD_MAGA(CUP_HandGrenade_M67, 10);
+		};
+		
+		class TransportWeapons { };
+		class TransportBackpacks { };
+	};
+	
+	class TWC_Vehicle_Colombia_Nyala: CUP_B_RG31_M2_USA
+	{
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		faction = "TWC_Colombia";
+		armor = 600;
+		
+		displayname = "RG-31 Nyala";
+		editorSubcategory = "TWC_ForceType_HeavyMobility";
+
+		class TransportItems {
+			ADD_ITEM(ACE_fieldDressing, 20);
+			ADD_ITEM(ACE_elasticBandage, 20);
+			ADD_ITEM(ACE_quikclot, 20);
+			ADD_ITEM(ACE_packingBandage, 20);
+			
+			ADD_ITEM(ACE_morphine, 16);
+			ADD_ITEM(ACE_epinephrine, 16);
+			ADD_ITEM(ACE_tourniquet, 10);
+		}; 
+		
+		class TransportMagazines {
+			ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 10);
+			ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 5);
+			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 5);
+			
+			ADD_MAGA(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M, 8);
+			
+			ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
+			ADD_MAGA(UGL_FlareWhite_F, 4);
+			ADD_MAGA(1Rnd_Smoke_Grenade_shell, 4);
+			ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 4);
+			ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 4);
+			ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 4);
+			
+			ADD_MAGA(SmokeShell, 8);
+			ADD_MAGA(SmokeShellRed, 4);
+			ADD_MAGA(SmokeShellGreen, 4);
+			ADD_MAGA(SmokeShellBlue, 4);
+			ADD_MAGA(SmokeShellYellow, 4);
+			
+			ADD_MAGA(CUP_HandGrenade_M67, 5);
 		};
 		
 		class TransportWeapons { };

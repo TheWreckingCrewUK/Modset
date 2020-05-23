@@ -23,65 +23,51 @@ class TWC_Groups_Colombia
 		class Unit2
 		{
 				side = 1;
-				vehicle = "TWC_Infantry_Colombia_Rifleman";
+				vehicle = "TWC_Infantry_Colombia_RiflemanAT";
 				rank = "PRIVATE";
 				position[] = {4,0,0};
 		};
 		class Unit3
 		{
 				side = 1;
-				vehicle = "TWC_Infantry_Colombia_RiflemanAT";
+				vehicle = "TWC_Infantry_Colombia_Grenadier";
 				rank = "PRIVATE";
 				position[] = {6,0,0};
 		};
 		class Unit4
 		{
 				side = 1;
-				vehicle = "TWC_Infantry_Colombia_Grenadier";
+				vehicle = "TWC_Infantry_Colombia_MG";
 				rank = "PRIVATE";
 				position[] = {8,0,0};
 		};
 		class Unit5
 		{
 				side = 1;
-				vehicle = "TWC_Infantry_Colombia_MG";
-				rank = "PRIVATE";
+				vehicle = "TWC_Infantry_Colombia_TeamLeader";
+				rank = "CORPORAL";
 				position[] = {10,0,0};
 		};
 		class Unit6
 		{
 				side = 1;
-				vehicle = "TWC_Infantry_Colombia_TeamLeader";
-				rank = "CORPORAL";
+				vehicle = "TWC_Infantry_Colombia_RiflemanAT";
+				rank = "PRIVATE";
 				position[] = {12,0,0};
 		};
 		class Unit7
 		{
 				side = 1;
-				vehicle = "TWC_Infantry_Colombia_Rifleman";
+				vehicle = "TWC_Infantry_Colombia_Grenadier";
 				rank = "PRIVATE";
 				position[] = {14,0,0};
 		};
 		class Unit8
 		{
 				side = 1;
-				vehicle = "TWC_Infantry_Colombia_RiflemanAT";
-				rank = "PRIVATE";
-				position[] = {16,0,0};
-		};
-		class Unit9
-		{
-				side = 1;
-				vehicle = "TWC_Infantry_Colombia_Grenadier";
-				rank = "PRIVATE";
-				position[] = {18,0,0};
-		};
-		class Unit10
-		{
-				side = 1;
 				vehicle = "TWC_Infantry_Colombia_MG";
 				rank = "PRIVATE";
-				position[] = {20,0,0};
+				position[] = {16,0,0};
 		};
 	};
 	
