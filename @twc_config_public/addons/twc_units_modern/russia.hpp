@@ -1727,5 +1727,6 @@ class O_Soldier_Base_F;
 	{
 		backpack="rus_backpack_medic";
 		displayName="Medic";
+		attendant = 1;
 	};
 	
