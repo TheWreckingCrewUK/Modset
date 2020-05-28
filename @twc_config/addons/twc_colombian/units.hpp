@@ -170,6 +170,16 @@ class TWC_Infantry_Colombia_MG: TWC_Infantry_Colombia_Rifleman {
 class TWC_Infantry_Colombia_TeamLeader: TWC_Infantry_Colombia_Rifleman {
 	displayName = "Team Leader";
 	backpack = "TWC_Backpack_Colombia_TeamLeader";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACRE_PRC148"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACRE_PRC148"
+	};
 	magazines[] =
 	{
 		MAG_5("CUP_35Rnd_556x45_Galil_Mag"),
@@ -197,12 +207,14 @@ class TWC_Infantry_Colombia_SquadLeader: TWC_Infantry_Colombia_TeamLeader {
 	Items[]=
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACRE_PRC148"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACRE_PRC148"
 	};
 	weapons[] =
 	{
@@ -282,6 +294,16 @@ class TWC_Infantry_Colombia_PlatoonMedic: TWC_Infantry_Colombia_Rifleman {
 	displayName = "Platoon Medic";
 	backpack = "TWC_Backpack_Colombia_PlatoonMedic";
 	attendant = 1;
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACRE_PRC148"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACRE_PRC148"
+	};
 	magazines[] =
 	{
 		MAG_3("CUP_35Rnd_556x45_Galil_Mag"),
