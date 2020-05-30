@@ -142,6 +142,129 @@ class CfgVehicles {
 		};
 	};
 
+	class CUP_B_M113_Med_USA;
+	class TWC_Vehicle_IDF_ColdWar_M113Ambulance: CUP_B_M113_Med_USA {
+		faction = "TWC_IDF_ColdWar";
+		CATEGORY(TWC_ForceType_Mechanised)
+		hiddenSelectionsTextures[] = {
+			"twc_idf\data\m113_1_co.paa",
+			"twc_idf\data\m113_2_co.paa"
+		};
+
+		class AcreIntercoms {
+			class Intercom_1 {
+				displayName = "Crew Intercom";
+				shortName = "Crew";
+				allowedPositions[] = {"crew"};
+				disabledPositions[] = {};
+				limitedPositions[] = {{"cargo", "all"}};
+				numLimitedPositions = 1;
+				masterPositions[] = {"crew"};
+				connectedByDefault = 1;
+			};
+			class Intercom_2 {
+				displayName = "Cargo Intercom";
+				shortName = "Cargo";
+				allowedPositions[] = {"commander", {"cargo", "all"}};
+				disabledPositions[] = {};
+				limitedPositions[] = {};
+				numLimitedPositions = 0;
+				masterPositions[] = {"commander"};
+				connectedByDefault = 1;
+			};
+		};
+		class AcreRacks {
+			class Rack_1 {
+				displayName = "Vehicle Radio";
+				shortName = "Vehicle Radio";
+				componentName = "ACRE_VRC64";
+				allowedPositions[] = {"driver", "gunner"};
+				disabledPositions[] = {};
+				defaultComponents[] = {};
+				mountedRadio = "ACRE_PRC77";
+				isRadioRemovable = 0;
+				intercom[] = {"intercom_1"};
+			};
+		};
+
+		class TransportItems {
+			ADD_ITEM(ACE_fieldDressing, 25);
+			ADD_ITEM(ACE_elasticBandage, 25);
+			ADD_ITEM(ACE_quikclot, 25);
+			ADD_ITEM(ACE_packingBandage, 25);
+			ADD_ITEM(ACE_tourniquet, 10);
+			ADD_ITEM(ACE_morphine, 15);
+			ADD_ITEM(ACE_epinephrine, 15);
+			
+			ADD_ITEM(ACE_atropine, 5);
+			ADD_ITEM(ACE_adenosine, 5);
+			ADD_ITEM(ACE_salineIV_500, 12);
+			ADD_ITEM(ACE_bloodIV, 20);
+			ADD_ITEM(ACE_bodyBag, 5);
+			ADD_ITEM(ACE_personalAidKit, 1);
+		};
+
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportBackpacks {};
+	};
+
+	class TWC_AmmoBox_Portable;
+	class TWC_AmmoBox_IDF_Section_Portable: TWC_AmmoBox_Portable {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "IDF (1980) Section Resupply (Portable)";
+
+		editorSubcategory = "TWC_Crates_Other";
+
+		class TransportItems {
+			ADD_ITEM(ACE_fieldDressing, 12);
+			ADD_ITEM(ACE_elasticBandage, 12);
+			ADD_ITEM(ACE_quikclot, 12);
+			ADD_ITEM(ACE_packingBandage, 12);
+			
+			ADD_ITEM(ACE_morphine, 12);
+			ADD_ITEM(ACE_epinephrine, 12);
+			ADD_ITEM(ACE_tourniquet, 6);
+		};
+
+		class TransportMagazines {
+			// Galil
+			ADD_MAGA(CUP_35Rnd_556x45_Galil_Mag, 20);
+			ADD_MAGA(CUP_35Rnd_556x45_Red_Tracer_Galil_Mag, 5);
+
+			// MAG
+			ADD_MAGA(150Rnd_762x51_Box, 6);
+			ADD_MAGA(150Rnd_762x51_Box_Tracer, 2);
+
+			ADD_MAGA(ACE_HandFlare_White, 2);
+
+			// Smoke Grenades
+			ADD_MAGA(SmokeShell, 10);
+			ADD_MAGA(SmokeShellRed, 2);
+			ADD_MAGA(SmokeShellGreen, 2);
+			ADD_MAGA(SmokeShellBlue, 2);
+			ADD_MAGA(SmokeShellYellow, 2);
+			
+			// Hand Grenade HE
+			ADD_MAGA(CUP_HandGrenade_M67, 5);
+		};
+	};
+
+	class TWC_AmmoBox_IDF_RPG_Portable: TWC_AmmoBox_Portable {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "IDF (1980) RPG Resupply (Portable)";
+
+		editorSubcategory = "TWC_Crates_Other";
+
+		class TransportMagazines {
+			// Galil
+			ADD_MAGA(CUP_PG7V_M, 4);
+			ADD_MAGA(CUP_OG7_M, 4);
+		};
+	};
+
 	#include "coldwar\units.hpp"
 };
 
