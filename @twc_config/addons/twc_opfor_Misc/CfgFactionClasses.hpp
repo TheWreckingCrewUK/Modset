@@ -117,11 +117,18 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 2;
 	};
-	
+
 	class TWC_FARC_Units {
 		displayName = "Revolutionary Armed Forces of Colombia";
 		author = "[TWC] Sarge";
 		priority = 2;
 		side = 2;
+	};
+
+	class TWC_OPFOR_Units_PLO {
+		displayName = "Palestine Liberation Organization (1980)";
+		author = "[TWC] Rik";
+		priority = 2;
+		side = 0;
 	};
 };

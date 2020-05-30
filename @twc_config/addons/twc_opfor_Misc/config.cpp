@@ -179,6 +179,19 @@ class cfgWeapons
 		displayName  = "M1 (OD)";
 		hiddenSelectionsTextures[] = {"twc_opfor_Misc\data\merc_g_OD_co.paa"};
 	};
+	
+	//M88 in Czech Salamander
+	class ItemCore;
+	class CUP_U_O_SLA_Green: ItemCore {
+		class ItemInfo;
+	};
+	class TWC_Uniform_M88_Salamander: CUP_U_O_SLA_Green {
+		displayName = "M88 (Salamander)";
+		class ItemInfo : ItemInfo
+		{
+			uniformClass = "TWC_OPFOR_PLO_Uniform";
+		};
+	};
 };
 
 class CfgGroups {
@@ -203,6 +216,7 @@ class CfgGroups {
 			/* COLDWAR COMPOSITIONS - GROUP DEFINES */
 			#include "compositions\coldwar_ira.hpp"
 			#include "compositions\coldwar_aden.hpp"
+			#include "compositions\coldwar_plo.hpp"
 		};
 		
 		class TWC_Operation_Opfor_Millennial {
@@ -286,6 +300,7 @@ class CfgVehicles {
 	#include "units\aden.hpp"
 	#include "units\argentina_1980.hpp"
 	#include "units\FARC.hpp"
+	#include "units\plo.hpp"
 };
 
 #include "CfgMarkers.hpp"
