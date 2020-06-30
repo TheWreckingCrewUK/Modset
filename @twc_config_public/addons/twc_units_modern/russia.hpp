@@ -832,6 +832,7 @@ class O_Soldier_Base_F;
 	{
 		scope=2;
 		displayName="Vehicle Commander @Armour Crew";
+		backpack="twc_genbackPack_oli";
 		linkedItems[]=
 		{
 			"CUP_V_I_RACS_Carrier_Rig_wdl_3",
