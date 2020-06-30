@@ -68,12 +68,24 @@ class cfgweapons{
 
 		
 	class CUP_srifle_ksvk_PSO3;
-	class twc_ksvk: CUP_srifle_ksvk_PSO3
+	class twc_ksvk_base: CUP_srifle_ksvk_PSO3
 	{
 		scope = 2;
 		displayname = "Improvised Sniper Rifle";
 		magazines[] = {"twc_23mm_1rnd"};
-
+		class Single;
+	};
+	class twc_ksvk: twc_ksvk_base
+	{
+		recoil = "twc_shotgun_1";
+		recoilProne = "twc_rifle_762_prone";
+		class Single: Single
+		{
+			class standardsound
+			{
+				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
+			};
+		};
 	};
 		
 		
