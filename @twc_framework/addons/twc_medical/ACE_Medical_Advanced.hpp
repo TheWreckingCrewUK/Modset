@@ -48,6 +48,7 @@ class ACE_Medical_Advanced {
 			class Morphine {
 				painReduce = 0.8;
 				maxDose = 3;
+				timeInSystem = 1200; // 20 mins
 				viscosityChange = -5;
 				onOverDose = "_this call TWC_medical_fnc_onOverDose";
 			};
@@ -61,7 +62,7 @@ class ACE_Medical_Advanced {
 			
 			class PainKillers {
 				painReduce = 0.2;
-				timeInSystem = 3600;
+				timeInSystem = 1800;
 				maxDose = 6;
 				inCompatableMedication[] = {};
 				viscosityChange = 5;
