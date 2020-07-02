@@ -12,9 +12,9 @@
  */
 params ["_unit"];
 
-if (!local _unit) exitWith {}; // no longer local unit
-if (!isPlayer _unit) exitWith {}; // don't care
-if (isDedicated || !hasInterface) exitWith {};
+if !(local _unit) exitWith {}; // no longer local unit
+if !(isPlayer _unit) exitWith {}; // don't care
+if !(hasInterface) exitWith {};
 
 if (alive _unit) then {
 	//_debugMode = missionNameSpace getVariable ["twc_debugEnabled", false];
@@ -33,15 +33,18 @@ if (alive _unit) then {
 
 	missionNamespace setVariable ["ace_medical_maxReviveTime", _adjustedMaxTime];
 	
+	_pain = _unit getVariable ["ace_medical_pain", 0];
+	_painSuppress = _unit getVariable ["ace_medical_painSuppress", 0];
+	
+	if (_pain > 5) then {
+		_pain = 5;
+		_unit setVariable ["ace_medical_pain", 5];
+	};
+	
 	_unCon = (_unit getVariable ["ACE_isUnconscious", false]);
 	if !(_unCon) then {
-		_pain = _unit getVariable ["ace_medical_pain", 0];
-		_painSuppress = _unit getVariable ["ace_medical_painSuppress", 0];
-		
-		if (_pain > _painSuppress) then {
-			if ((_pain - _painSuppress) > 2 && {random(1) > 0.8}) then {
-				[_unit] call ace_medical_fnc_setUnconscious;
-			};
+		if ((_pain - _painSuppress) > 2 && {random(1) > 0.8}) then {
+			[_unit] call ace_medical_fnc_setUnconscious;
 		};
 	};
 };
