@@ -58,8 +58,7 @@ class CfgPatches {
 			"uk3cb_baf_equipment",
 			"cup_weapons_ammoboxes",
 			"ace_medical",
-			"ace_cargo",
-			"ace_cup_artillery"
+			"ace_cargo"
 		};
 		
 		version = "1";
