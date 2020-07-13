@@ -2413,8 +2413,9 @@ class CfgVehicles {
 				maxCompression = 0.3;
 				maxBrakeTorque = 6000;
 				MOI = 70;
-				maxHandBrakeTorque = 5000;
-				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.3, 0.5 }, { 1.0, 0.4 }};
+				maxHandBrakeTorque = 8000;
+				//frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.3, 0.5 }, { 1.0, 0.4 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.4, 0.15 }, { 1.0, 0.45 }};
 			};
 		};
 		
@@ -2617,13 +2618,13 @@ class CfgVehicles {
 		
 		ace_cargo_size = 35;
 		ace_cargo_canLoad = 1;	
-		antiRollbarForceCoef = 4.0;
-		antiRollbarForceLimit = 3;
+		antiRollbarForceCoef = 6.0;
+		antiRollbarForceLimit = 4;
 		differentialType = "all_limited";
 		frontRearSplit = 0.2;
 		frontBias = 2.5;
 		rearBias = 0.5;
-		centreBias = 2.0;
+		centreBias = 1.8;
 		class Turrets;
 		class Wheels:Wheels {
 			class LF:LF {
@@ -2634,7 +2635,7 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.4, 0.15 }, { 1.0, 0.5 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.65 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
 				latStiffX = 25;
 				latStiffY = 120;
 				longitudinalStiffnessPerUnitGravity = 8000;
@@ -2645,9 +2646,9 @@ class CfgVehicles {
 				maxHandBrakeTorque = 700;
 				moi = 6;
 				side = "left";
-				springDamperRate = 1000;
-				springStrength = 24000;
-				sprungMass = 725;
+				springDamperRate = 2000;
+				springStrength = 32000;
+				sprungMass = 825;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				suspTravelDirection[] = {0,-1,0};
@@ -2682,10 +2683,10 @@ class CfgVehicles {
 				dampingRate = 1;
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
-				springStrength = 26000;
-				springDamperRate = 2500;
+				springStrength = 36000;
+				springDamperRate = 1800;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.4, 0.15 }, { 1.0, 0.5 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.65 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 2100;
@@ -2693,7 +2694,7 @@ class CfgVehicles {
 				maxHandBrakeTorque = 1000;
 				moi = 6;
 				side = "left";
-				sprungMass = 725;
+				sprungMass = 825;
 				steering = 0;
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				suspTravelDirection[] = {0,-1,0};
