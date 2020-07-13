@@ -844,7 +844,7 @@
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 			class L2:L2 {
 				width = "0.2";
@@ -860,7 +860,7 @@
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 			class R1:R1 {
 				width = "0.2";
@@ -877,7 +877,7 @@
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 			class R2:R2 {
 				width = "0.2";
@@ -893,7 +893,7 @@
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 		};
 	};
@@ -981,7 +981,7 @@
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 			class L2:L2 {
 				width = "0.2";
@@ -997,7 +997,7 @@
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 			class L3:L3 {
 				width = "0.2";
@@ -1013,7 +1013,7 @@
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 			class R1:R1 {
 				width = "0.2";
@@ -1030,7 +1030,7 @@
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 			class R2:R2 {
 				width = "0.2";
@@ -1046,7 +1046,7 @@
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 			class R3:R3 {
 				width = "0.2";
@@ -1062,7 +1062,7 @@
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
 			};
 		};
 	};
