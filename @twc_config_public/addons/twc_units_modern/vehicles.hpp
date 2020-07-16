@@ -1069,7 +1069,7 @@
 	
 	class rhsusf_hmmwe_base: MRAP_01_base_F {
 		ace_cargo_size = 35;
-		ace_cargo_canLoad = 1;	
+		ace_cargo_canLoad = 1;
 		class Wheels {
 			class LF;
 		};
@@ -1078,11 +1078,13 @@
 	class rhsusf_m998_w_2dr: rhsusf_hmmwe_base {
 		class Wheels:Wheels {
 			class LF:LF {
-				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
-				maxCompression = 0.25;
-				maxDroop = 0.1;
+				frictionVsSlipGraph[] = {{ 0.0, 0.75 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
+				maxCompression = 0.35;
+				maxDroop = 0.15;
 				springDamperRate = 4500;
-				springStrength = 36000;
+				maxHandBrakeTorque = 30000;
+				springStrength = 26000;
+				sprungMass = 925;
 			};
 		};
 	};
@@ -1098,11 +1100,13 @@
 	class rhsusf_m1025_w: rhsusf_m998_w_4dr_fulltop {
 		class Wheels:Wheels {
 			class LF:LF {
-				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
-				maxCompression = 0.25;
-				maxDroop = 0.1;
+				frictionVsSlipGraph[] = {{ 0.0, 0.75 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
+				maxCompression = 0.35;
+				maxDroop = 0.15;
+				maxHandBrakeTorque = 30000;
 				springDamperRate = 4500;
-				springStrength = 36000;
+				springStrength = 26000;
+				sprungMass = 925;
 			};
 		};
 		class Turrets;
@@ -1410,11 +1414,11 @@
 	
 	class UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_A;
 	class UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_A_TWC: UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_A {
-		displayname = "Land Rover WMIK HMG (Rack+Ammo)";
+		displayname = "Land Rover WMIK HMG (Uprated)";
 		maximumLoad = 5000;
-		enginePower = 120;
-		peakTorque = 430;
-		
+		enginePower = 140;
+		peakTorque = 450;
+		maxSpeed = 210;
 		class AcreRacks {
 			class Rack_1 {
 				displayName = "Dash"; // Name is displayed in the interaction menu.
@@ -1585,103 +1589,7 @@
 			};
 		};
 		
-		class Wheels {
-			class LF {
-				boneName = "wheel_1_1_damper";
-				boundary = "wheel_1_1_bound";
-				center = "wheel_1_1_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {[0,1.3],[0.6,1.4],[1,1.3]};
-				latStiffX = 10;
-				latStiffY = 20;
-				longitudinalStiffnessPerUnitGravity = 10000;
-				mass = 30;
-				maxBrakeTorque = 3250;
-				maxCompression = 0.25;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 0;
-				moi = 6;
-				side = "left";
-				springDamperRate = 4500;
-				springStrength = 36000;
-				sprungMass = 625;
-				steering = 1;
-				suspForceAppPointOffset = "wheel_1_1_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_1_1_axis";
-				width = 0.285;
-				};
-				class LR: LF {
-				boneName = "wheel_1_2_damper";
-				boundary = "wheel_1_2_bound";
-				center = "wheel_1_2_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {[0,1.2],[0.2,1.5],[1,0.6]};
-				longitudinalStiffnessPerUnitGravity = 10000;
-				mass = 30;
-				maxBrakeTorque = 2950;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 9000;
-				moi = 6;
-				side = "left";
-				sprungMass = 625;
-				steering = 0;
-				suspForceAppPointOffset = "wheel_1_2_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_1_2_axis";
-				width = 0.285;
-				};
-				class RF: LF {
-				boneName = "wheel_2_1_damper";
-				boundary = "wheel_2_1_bound";
-				center = "wheel_2_1_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0.8;
-				longitudinalStiffnessPerUnitGravity = 10000;
-				mass = 30;
-				maxBrakeTorque = 3250;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 0;
-				moi = 6;
-				side = "right";
-				steering = 1;
-				suspForceAppPointOffset = "wheel_2_1_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_2_1_axis";
-				width = 0.285;
-				};
-				class RR: LR {
-				boneName = "wheel_2_2_damper";
-				boundary = "wheel_2_2_bound";
-				center = "wheel_2_2_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0.8;
-				longitudinalStiffnessPerUnitGravity = 10000;
-				mass = 30;
-				maxBrakeTorque = 2950;
-				maxDroop = 0.1;
-				maxHandBrakeTorque = 9000;
-				moi = 6;
-				side = "right";
-				steering = 0;
-				suspForceAppPointOffset = "wheel_2_2_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_2_2_axis";
-				width = 0.285;
-				};
-			};
-			
-			class PlayerSteeringCoefficients /// steering sensitivity configuration
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
            turnIncreaseConst  = 0.5; // basic sensitivity value, higher value = faster steering
            turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
