@@ -2189,7 +2189,7 @@
 		{
 		"Throw",
 		"Put",
-		"Binocular",
+		"ACE_Yardage450",
 		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L9A1"
 		};
@@ -2197,7 +2197,7 @@
 		{
 		"Throw",
 		"Put",
-		"Binocular",
+		"ACE_Yardage450",
 		"UK3CB_BAF_L85A1_SUSAT3D",
 		"UK3CB_BAF_L9A1"
 		};

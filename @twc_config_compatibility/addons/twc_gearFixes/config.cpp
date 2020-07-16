@@ -1360,7 +1360,7 @@ class CfgVehicles {
 		{
 			GearboxRatios[] = {"R1",-13.094,"N",0,"D1",3.562,"D2",2.856,"D3",2.223,"D4",1.678,"D5",1.078};
 		};
-		class wheels: wheels
+		class wheels
 		{
 			class LF
 			{
@@ -1375,15 +1375,15 @@ class CfgVehicles {
 				latStiffY = 180;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 100;
-				maxBrakeTorque = 4500;
-				maxCompression = 0.4;
+				maxBrakeTorque = 5500;
+				maxCompression = 0.7;
 				maxDroop = 0.1;
 				maxHandBrakeTorque = 0;
 				moi = 60;
 				side = "left";
-				springDamperRate = 7000;
-				springStrength = 40000;
-				sprungMass = 2750;
+				springDamperRate = 3000;
+				springStrength = 25000;
+				sprungMass = 1750;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				suspTravelDirection[] = {0,-1,0};
@@ -1392,26 +1392,26 @@ class CfgVehicles {
 			};
 			class RF: LF
 			{
-				springDamperRate = 7000;
-				springStrength = 40000;
-				sprungMass = 2750;
-				maxBrakeTorque = 4500;
+				springDamperRate = 3000;
+				springStrength = 25000;
+				sprungMass = 1750;
+				maxBrakeTorque = 5500;
 			};
 			class RF2: RF
 			{
-				springDamperRate = 7000;
-				maxCompression = 0.2;
-				springStrength = 40000;
-				sprungMass = 2750;
-				maxBrakeTorque = 4500;
+				springDamperRate = 3000;
+				maxCompression = 0.7;
+				springStrength = 25000;
+				sprungMass = 1750;
+				maxBrakeTorque = 5500;
 			};
 			class LF2: LF
 			{
-				springDamperRate = 7000;
-				maxCompression = 0.2;
-				springStrength = 40000;
-				sprungMass = 2750;
-				maxBrakeTorque = 4500;
+				springDamperRate = 3000;
+				maxCompression = 0.7;
+				springStrength = 25000;
+				sprungMass = 1750;
+				maxBrakeTorque = 5500;
 			};
 		};
 		
@@ -1435,7 +1435,7 @@ class CfgVehicles {
 		antiRollbarForceLimit = 5;
 		antiRollbarSpeedMin = 5;
 		antiRollbarSpeedMax = 100;
-		class wheels: wheels
+		class wheels
 		{
 			class LF
 			{
@@ -1450,15 +1450,15 @@ class CfgVehicles {
 				latStiffY = 180;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 100;
-				maxBrakeTorque = 4500;
-				maxCompression = 0.4;
+				maxBrakeTorque = 5500;
+				maxCompression = 0.7;
 				maxDroop = 0.1;
 				maxHandBrakeTorque = 0;
 				moi = 60;
 				side = "left";
-				springDamperRate = 7000;
-				springStrength = 40000;
-				sprungMass = 2750;
+				springDamperRate = 4000;
+				springStrength = 21000;
+				sprungMass = 1750;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				suspTravelDirection[] = {0,-1,0};
@@ -1467,26 +1467,42 @@ class CfgVehicles {
 			};
 			class RF: LF
 			{
-				springDamperRate = 7000;
-				springStrength = 40000;
-				sprungMass = 2750;
-				maxBrakeTorque = 4500;
+				springDamperRate = 4000;
+				springStrength = 21000;
+				sprungMass = 1750;
+				maxBrakeTorque = 5500;
 			};
 			class RF2: RF
 			{
-				springDamperRate = 7000;
-				maxCompression = 0.4;
-				springStrength = 40000;
-				sprungMass = 2750;
-				maxBrakeTorque = 4500;
+				springDamperRate = 4000;
+				springStrength = 21000;
+				maxCompression = 0.7;
+				sprungMass = 1750;
+				maxBrakeTorque = 5500;
+			};
+			class RFM: RF2
+			{
+				springDamperRate = 4000;
+				springStrength = 21000;
+				maxCompression = 0.7;
+				sprungMass = 1750;
+				maxBrakeTorque = 5500;
 			};
 			class LF2: LF
 			{
-				springDamperRate = 7000;
-				maxCompression = 0.4;
-				springStrength = 40000;
-				sprungMass = 2750;
-				maxBrakeTorque = 4500;
+				springDamperRate = 4000;
+				springStrength = 21000;
+				maxCompression = 0.7;
+				sprungMass = 1750;
+				maxBrakeTorque = 5500;
+			};
+			class LFM: LF2
+			{
+				springDamperRate = 4000;
+				springStrength = 21000;
+				maxCompression = 0.7;
+				sprungMass = 1750;
+				maxBrakeTorque = 5500;
 			};
 		};
 	};
@@ -2319,23 +2335,24 @@ class CfgVehicles {
 				dampingRate = 0.5;
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
+				//frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
 				frictionVsSlipGraph[] = {[0,0.8],[0.5,0.9],[1,0.7]};
 				latStiffX = 25;
 				latStiffY = 120;
 				longitudinalStiffnessPerUnitGravity = 5000;
 				mass = 30;
 				maxBrakeTorque = 700;
-				maxCompression = 0.4;
-				maxDroop = 0.25;
+				maxCompression = 0.5;
+				maxDroop = 0.2;
 				maxHandBrakeTorque = 0;
 				MOI = 20;
 				side = "left";
-				springDamperRate = 1000;
-				springStrength = 50;
-				sprungMass = 100;
+				springDamperRate = 500;
+				springStrength = 900;
+				sprungMass = 150;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
-				suspTravelDirection[] = {-0.125,-1,0};
+				suspTravelDirection[] = {-0.25,-1,0};
 				tireForceAppPointOffset = "wheel_1_1_axis";
 				width = "0.2";
 				};
@@ -2344,7 +2361,6 @@ class CfgVehicles {
 				boundary = "wheel_1_2_bound";
 				center = "wheel_1_2_axis";
 				maxHandBrakeTorque = 800;
-				frictionVsSlipGraph[] = {[0,0.8],[0.5,0.9],[1,0.5]};
 				latStiffX = 25;
 				springDamperRate = 1500;
 				steering = 0;
@@ -2357,7 +2373,7 @@ class CfgVehicles {
 				center = "wheel_2_1_axis";
 				side = "right";
 				suspForceAppPointOffset = "wheel_2_1_axis";
-				suspTravelDirection[] = {0.125,-1,0};
+				suspTravelDirection[] = {0.25,-1,0};
 				tireForceAppPointOffset = "wheel_2_1_axis";
 				};
 				class RR: RF {
@@ -2365,7 +2381,6 @@ class CfgVehicles {
 				boundary = "wheel_2_2_bound";
 				center = "wheel_2_2_axis";
 				maxHandBrakeTorque = 800;
-				frictionVsSlipGraph[] = {[0,0.8],[0.5,0.9],[1,0.5]};
 				latStiffX = 25;
 				springDamperRate = 1500;
 				steering = 0;
@@ -2619,12 +2634,12 @@ class CfgVehicles {
 		ace_cargo_size = 35;
 		ace_cargo_canLoad = 1;	
 		antiRollbarForceCoef = 6.0;
-		antiRollbarForceLimit = 4;
+		antiRollbarForceLimit = 3;
 		differentialType = "all_limited";
 		frontRearSplit = 0.2;
-		frontBias = 2.5;
-		rearBias = 0.5;
-		centreBias = 1.8;
+		frontBias = 0.2;
+		rearBias = 0.2;
+		centreBias = 1.4;
 		class Turrets;
 		class Wheels:Wheels {
 			class LF:LF {
@@ -2635,19 +2650,19 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.65 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
 				latStiffX = 25;
 				latStiffY = 120;
 				longitudinalStiffnessPerUnitGravity = 8000;
 				mass = 30;
-				maxBrakeTorque = 1400;
+				maxBrakeTorque = 1000;
 				maxCompression = 0.4;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 700;
 				moi = 6;
 				side = "left";
-				springDamperRate = 2000;
-				springStrength = 32000;
+				springDamperRate = 2500;
+				springStrength = 33000;
 				sprungMass = 825;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
@@ -2665,7 +2680,7 @@ class CfgVehicles {
 				dampingRateInAir = 0.8;
 				longitudinalStiffnessPerUnitGravity = 8000;
 				mass = 30;
-				maxBrakeTorque = 1900;
+				maxBrakeTorque = 1000;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 700;
 				moi = 6;
@@ -2683,15 +2698,15 @@ class CfgVehicles {
 				dampingRate = 1;
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
-				springStrength = 36000;
-				springDamperRate = 1800;
+				springStrength = 37000;
+				springDamperRate = 2200;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.65 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 2100;
 				maxDroop = 0.24;
-				maxHandBrakeTorque = 1000;
+				maxHandBrakeTorque = 4000;
 				moi = 6;
 				side = "left";
 				sprungMass = 825;
@@ -2713,7 +2728,7 @@ class CfgVehicles {
 				mass = 30;
 				maxBrakeTorque = 2100;
 				maxDroop = 0.24;
-				maxHandBrakeTorque = 1000;
+				maxHandBrakeTorque = 4000;
 				moi = 6;
 				side = "right";
 				steering = 0;
@@ -2737,6 +2752,13 @@ class CfgVehicles {
        };
 		
 	};
+	
+	class UK3CB_BAF_LandRover_Amb_Base: UK3CB_BAF_LandRover_Base
+	{
+		antiRollbarForceCoef = 30.0;
+		antiRollbarForceLimit = 20;
+	};
+	
 	class Wheeled_APC_F : Car_F
 	{
 		class eventhandlers;
