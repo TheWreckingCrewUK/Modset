@@ -28,6 +28,7 @@ class CfgFunctions {
 			class addItem {};
 			class revealPlayer {};
 			class initNightGear {};
+			class findAdmin {};
 			
 			/** UTILITY FUNCTIONS **/
 			class findGreatestDistanceWithArray {};
