@@ -1025,19 +1025,32 @@ class Extended_Init_EventHandlers
 			serverinit = "params ['_entity']; [_entity] spawn {params ['_entity']; waituntil {!isnil 'twc_fnc_baseobject'};[_entity] spawn twc_fnc_baseobject}";
 		};
 	};
-	class Tank
-	{
-		class aihearing
-		{
-			serverinit = "params ['_entity'];_entity setUnitTrait ['camouflageCoef' ,10];";
-		};
-	};
-	
 	class CUP_Ural_BaseTurret
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.75]";
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.85]";
+		};
+	};
+	class UK3CB_BAF_MAN_HX60_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; if (_car isKindOf 'UK3CB_BAF_MAN_HX58_Base') exitwith {}; _car setCenterOfMass [0.0543661,2.8,-0.95]";
+		};
+	};
+	class UK3CB_BAF_MAN_HX58_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [0.0543661,3.0,-0.95]";
+		};
+	};
+	class rhsusf_hmmwe_base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.0644166,0.174903,-1.46135]";
 		};
 	};
 	
@@ -1209,13 +1222,12 @@ class CfgVehicles {
 				mass = 90;
 				maxBrakeTorque = 5000;
 				maxCompression = 0.4;
-				MaxDroop = 0.15;
+				MaxDroop = 0.22;
 				maxHandBrakeTorque = 2000;
-				mMaxDroop = 0.15;
 				MOI = 70;
 				side = "left";
-				springDamperRate = 7000;
-				springStrength = 75000;
+				springDamperRate = 8000;
+				springStrength = 70000;
 				sprungMass = 2750;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
@@ -2639,7 +2651,7 @@ class CfgVehicles {
 		frontRearSplit = 0.2;
 		frontBias = 0.2;
 		rearBias = 0.2;
-		centreBias = 1.4;
+		centreBias = 0.6;
 		class Turrets;
 		class Wheels:Wheels {
 			class LF:LF {

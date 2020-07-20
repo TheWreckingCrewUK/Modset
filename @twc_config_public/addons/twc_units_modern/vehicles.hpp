@@ -1270,7 +1270,7 @@
 		differentialType = "all_limited";
 		frontBias = 2;
 		centerBias = 0.5;
-		frontRearSplit = 0.1;
+		frontRearSplit = 0.2;
 		clutchStrength = 2.0;
 		rearBias = 2;
 		turnCoef = 2.5;
@@ -1294,13 +1294,13 @@
 			longitudinalStiffnessPerUnitGravity = 2000;
 			mass = 40;
 			maxCompression = 0.5;
-			maxDroop = 0.02;
+			maxDroop = 0.08;
 			maxHandBrakeTorque = 100;
 			MOI = 10;
 			side = "left";
 			springDamperRate = 2500;
-			springStrength = 9000;
-			sprungMass = 200;
+			springStrength = 7000;
+			sprungMass = 260;
 			maxBrakeTorque = 200;
 			steering = 1;
 			suspForceAppPointOffset = "wheel_1_1_axis";
@@ -1311,17 +1311,17 @@
 			class RF:LF {
 			maxCompression = 0.5;
 			springDamperRate = 2500;
-			springStrength = 9000;
-			sprungMass = 200;
+			springStrength = 7000;
+			sprungMass = 260;
 			maxBrakeTorque = 200;
 			};
 			class RR: RF {
 			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.2, 0.3 }, { 1.0, 0.7 }};
 			maxCompression = 0.5;
 			springDamperRate = 2500;
-			springStrength = 9000;
+			springStrength = 7000;
 			maxHandBrakeTorque = 1300;
-			sprungMass = 200;
+			sprungMass = 260;
 			MOI = 40;
 			maxBrakeTorque = 900;
 			};
@@ -1329,9 +1329,9 @@
 			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.2, 0.3 }, { 1.0, 0.5 }};
 			maxCompression = 0.5;
 			springDamperRate = 2500;
-			springStrength = 9000;
+			springStrength = 7000;
 			maxHandBrakeTorque = 1300;
-			sprungMass = 200;
+			sprungMass = 260;
 			MOI = 40;
 			maxBrakeTorque = 900;
 			};
