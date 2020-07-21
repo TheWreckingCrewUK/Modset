@@ -1032,25 +1032,71 @@ class Extended_Init_EventHandlers
 			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.85]";
 		};
 	};
-	class UK3CB_BAF_MAN_HX60_Base
+	class UK3CB_BAF_MAN_HX60_Cargo_Base
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; if (_car isKindOf 'UK3CB_BAF_MAN_HX58_Base') exitwith {}; _car setCenterOfMass [0.0543661,2.8,-0.95]";
+			serverinit = "params ['_car']; if (_car isKindOf 'UK3CB_BAF_MAN_HX58_Base') exitwith {}; _car setCenterOfMass [0.0543661,3.1,-0.95]";
 		};
 	};
-	class UK3CB_BAF_MAN_HX58_Base
+	class UK3CB_BAF_MAN_HX60_Fuel_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; if (_car isKindOf 'UK3CB_BAF_MAN_HX58_Base') exitwith {}; _car setCenterOfMass [0.0545745,0.171793,-1.0]";
+		};
+	};
+	class UK3CB_BAF_MAN_HX60_Repair_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; if (_car isKindOf 'UK3CB_BAF_MAN_HX58_Base') exitwith {}; _car setCenterOfMass [0.0564885,0.171587,-1.05]";
+		};
+	};
+	class UK3CB_BAF_MAN_HX60_Transport_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; if (_car isKindOf 'UK3CB_BAF_MAN_HX58_Base') exitwith {}; _car setCenterOfMass [0.0546674,0.514337,-1.1]";
+		};
+	};
+	
+	//hx58, the 6 wheeled variant
+	class UK3CB_BAF_MAN_HX58_Cargo_Base
 	{
 		class cog
 		{
 			serverinit = "params ['_car']; _car setCenterOfMass [0.0543661,3.0,-0.95]";
 		};
 	};
+	class UK3CB_BAF_MAN_HX58_Fuel_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [0.0542845,0.0186793,-1.0]";
+		};
+	};
+	class UK3CB_BAF_MAN_HX58_Repair_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [0.0542845,0.024607,-1.05]";
+		};
+	};
+	class UK3CB_BAF_MAN_HX58_Transport_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [0.0542845,0.395569,-1.1]";
+		};
+	};
+	
+	
 	class rhsusf_hmmwe_base
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.0644166,0.174903,-1.46135]";
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.0644166,0.174903,-1.4]";
 		};
 	};
 	
@@ -1404,26 +1450,38 @@ class CfgVehicles {
 			};
 			class RF: LF
 			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
 				springDamperRate = 3000;
 				springStrength = 25000;
 				sprungMass = 1750;
+				side = "right";
 				maxBrakeTorque = 5500;
 			};
 			class RF2: RF
 			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
 				springDamperRate = 3000;
 				maxCompression = 0.7;
 				springStrength = 25000;
 				sprungMass = 1750;
 				maxBrakeTorque = 5500;
+				steering = 0;
 			};
 			class LF2: LF
 			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
 				springDamperRate = 3000;
 				maxCompression = 0.7;
 				springStrength = 25000;
 				sprungMass = 1750;
 				maxBrakeTorque = 5500;
+				steering = 0;
 			};
 		};
 		
@@ -1479,21 +1537,32 @@ class CfgVehicles {
 			};
 			class RF: LF
 			{
+				boneName = "wheel_2_1_damper";
+				boundary = "wheel_2_1_bound";
+				center = "wheel_2_1_axis";
 				springDamperRate = 4000;
 				springStrength = 21000;
 				sprungMass = 1750;
 				maxBrakeTorque = 5500;
+				side = "right";
 			};
 			class RF2: RF
 			{
+				boneName = "wheel_2_2_damper";
+				boundary = "wheel_2_2_bound";
+				center = "wheel_2_2_axis";
 				springDamperRate = 4000;
 				springStrength = 21000;
 				maxCompression = 0.7;
 				sprungMass = 1750;
 				maxBrakeTorque = 5500;
+				steering = 0;
 			};
-			class RFM: RF2
+			class RM: RF2
 			{
+				boneName = "wheel_2_3_damper";
+				boundary = "wheel_2_3_bound";
+				center = "wheel_2_3_axis";
 				springDamperRate = 4000;
 				springStrength = 21000;
 				maxCompression = 0.7;
@@ -1502,14 +1571,21 @@ class CfgVehicles {
 			};
 			class LF2: LF
 			{
+				boneName = "wheel_1_2_damper";
+				boundary = "wheel_1_2_bound";
+				center = "wheel_1_2_axis";
 				springDamperRate = 4000;
 				springStrength = 21000;
 				maxCompression = 0.7;
 				sprungMass = 1750;
 				maxBrakeTorque = 5500;
+				steering = 0;
 			};
-			class LFM: LF2
+			class LM: LF2
 			{
+				boneName = "wheel_1_3_damper";
+				boundary = "wheel_1_3_bound";
+				center = "wheel_1_3_axis";
 				springDamperRate = 4000;
 				springStrength = 21000;
 				maxCompression = 0.7;
