@@ -1032,6 +1032,13 @@ class Extended_Init_EventHandlers
 			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.85]";
 		};
 	};
+	class UK3CB_BAF_Husky_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.0933615,0.450011,-1.0]";
+		};
+	};
 	class UK3CB_BAF_MAN_HX60_Cargo_Base
 	{
 		class cog
@@ -1199,7 +1206,7 @@ class CfgVehicles {
 				dampingRate = 0.1;
 				dampingRateDamaged = 1;
 				dampingRateDestroyed = 1000;
-				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.3, 0.2 }, { 1.0, 0.5 }};
 				latStiffX = 25;
 				latStiffY = 180;
 				longitudinalStiffnessPerUnitGravity = 5000;
@@ -1220,7 +1227,7 @@ class CfgVehicles {
 				width = "0.2";
 			};
 		};
-		
+		enginePower = 140;
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
            turnIncreaseConst  = 0.2; // basic sensitivity value, higher value = faster steering
@@ -2727,7 +2734,7 @@ class CfgVehicles {
 		frontRearSplit = 0.2;
 		frontBias = 0.2;
 		rearBias = 0.2;
-		centreBias = 0.6;
+		centreBias = 0.8;
 		class Turrets;
 		class Wheels:Wheels {
 			class LF:LF {
@@ -2738,12 +2745,12 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
+				frictionVsSlipGraph[] = {{ 0.1, 0.5 }, { 0.25, 0.2 }, { 0.5, 0.45 }};
 				latStiffX = 25;
 				latStiffY = 120;
-				longitudinalStiffnessPerUnitGravity = 8000;
+				longitudinalStiffnessPerUnitGravity = 14000;
 				mass = 30;
-				maxBrakeTorque = 1000;
+				maxBrakeTorque = 1200;
 				maxCompression = 0.4;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 700;
@@ -2766,9 +2773,9 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				longitudinalStiffnessPerUnitGravity = 8000;
+				longitudinalStiffnessPerUnitGravity = 14000;
 				mass = 30;
-				maxBrakeTorque = 1000;
+				maxBrakeTorque = 1200;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 700;
 				moi = 6;
@@ -2789,8 +2796,8 @@ class CfgVehicles {
 				springStrength = 37000;
 				springDamperRate = 2200;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
-				longitudinalStiffnessPerUnitGravity = 10000;
+				frictionVsSlipGraph[] = {{ 0.1, 0.5 }, { 0.25, 0.2 }, { 0.5, 0.45 }};
+				longitudinalStiffnessPerUnitGravity = 14000;
 				mass = 30;
 				maxBrakeTorque = 2100;
 				maxDroop = 0.24;
@@ -2812,7 +2819,7 @@ class CfgVehicles {
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				longitudinalStiffnessPerUnitGravity = 10000;
+				longitudinalStiffnessPerUnitGravity = 14000;
 				mass = 30;
 				maxBrakeTorque = 2100;
 				maxDroop = 0.24;
