@@ -358,6 +358,7 @@ class TWC_Infantry_1990_Regular_Woodland_L14A1_Ass: TWC_Infantry_1990_Regular_Wo
 class TWC_Infantry_1990_Regular_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
 	displayname = "Sniper";
+	uniformClass="UK3CB_BAF_U_CombatUniform_DPMW_Ghillie_RM";
 	weapons[] =
 	{
 		"TWC_Weapon_L96_Woodland",
@@ -371,6 +372,22 @@ class TWC_Infantry_1990_Regular_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodl
 		"UK3CB_BAF_L9A1",
 		"Throw",
 		"Put"
+	};
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW",
+		"CUP_H_PMC_PRR_Headset",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW",
+		"CUP_H_PMC_PRR_Headset",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 	Items[] =
 	{
@@ -387,6 +404,7 @@ class TWC_Infantry_1990_Regular_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodl
 	magazines[] =
 	{
 		MAG_9("UK3CB_BAF_762_L42A1_10Rnd"),
+		MAG_3("UK3CB_BAF_762_L42A1_10Rnd_T"),
 		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
@@ -395,6 +413,7 @@ class TWC_Infantry_1990_Regular_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodl
 	Respawnmagazines[] =
 	{
 		MAG_9("UK3CB_BAF_762_L42A1_10Rnd"),
+		MAG_3("UK3CB_BAF_762_L42A1_10Rnd_T"),
 		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
@@ -409,6 +428,7 @@ class TWC_Infantry_1990_Regular_Woodland_Spotter: TWC_Infantry_1990_Regular_Wood
 	weapons[]=
 	{
 		"TWC_Weapon_L96_Woodland",
+		"UK3CB_BAF_L9A1",
 		"ACE_Vector",
 		"Throw",
 		"Put"
@@ -416,6 +436,7 @@ class TWC_Infantry_1990_Regular_Woodland_Spotter: TWC_Infantry_1990_Regular_Wood
 	respawnweapons[]=
 	{
 		"TWC_Weapon_L96_Woodland",
+		"UK3CB_BAF_L9A1",
 		"ACE_Vector",
 		"Throw",
 		"Put"
@@ -437,12 +458,16 @@ class TWC_Infantry_1990_Regular_Woodland_Spotter: TWC_Infantry_1990_Regular_Wood
 	magazines[]=
 	{
 		MAG_5("UK3CB_BAF_762_L42A1_10Rnd"),
+		MAG_3("UK3CB_BAF_762_L42A1_10Rnd_T"),
+		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};
 	Respawnmagazines[]=
 	{
 		MAG_5("UK3CB_BAF_762_L42A1_10Rnd"),
+		MAG_3("UK3CB_BAF_762_L42A1_10Rnd_T"),
+		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};

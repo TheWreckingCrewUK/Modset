@@ -471,36 +471,27 @@ class cfgWeapons
 		};
 	};
 	
-		class UK3CB_BAF_L115A3;
-	class UK3CB_BAF_L115A3_DE;
-	class CUP_hgun_Colt1911;
-	class twc_l96_w: UK3CB_BAF_L115A3
+	class twc_l96_w_base;
+	class twc_l96_d_base;
+	class twc_l96_w: twc_l96_w_base
 	{
-		scope = 2;
-		displayname = "L96A1";
-		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd", "UK3CB_BAF_762_L42A1_10Rnd_T"};
-		accessories[] = {"rhsusf_acc_M8541"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
-				slot="asdg_OpticRail_UK3CB_BAF_L115";
-				item="rhsusf_acc_M8541";
+				slot="CowsSlot";
+				item="cup_optic_leupoldmk4_10x40_lrt_woodland";
 			};
 		};
 	};
-	class twc_l96_d: UK3CB_BAF_L115A3_DE
+	class twc_l96_d: twc_l96_d_base
 	{
-		scope = 2;
-		displayname = "L96A1";
-		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd", "UK3CB_BAF_762_L42A1_10Rnd_T"};
-		accessories[] = {"rhsusf_acc_M8541"};
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
-				slot="asdg_OpticRail_UK3CB_BAF_L115";
-				item="rhsusf_acc_M8541";
+				slot="CowsSlot";
+				item="cup_optic_leupoldmk4";
 			};
 		};
 	};

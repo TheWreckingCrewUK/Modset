@@ -405,7 +405,7 @@ class TWC_Infantry_1990_Regular_Tropic_Sniper: TWC_Infantry_1990_Regular_Woodlan
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT",
-		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"CUP_H_PMC_PRR_Headset",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -413,7 +413,7 @@ class TWC_Infantry_1990_Regular_Tropic_Sniper: TWC_Infantry_1990_Regular_Woodlan
 	respawnLinkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT",
-		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"CUP_H_PMC_PRR_Headset",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -439,7 +439,7 @@ class TWC_Infantry_1990_Regular_Tropic_Spotter: TWC_Infantry_1990_Regular_Woodla
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT",
-		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"CUP_H_PMC_PRR_Headset",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -447,7 +447,7 @@ class TWC_Infantry_1990_Regular_Tropic_Spotter: TWC_Infantry_1990_Regular_Woodla
 	respawnLinkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT",
-		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"CUP_H_PMC_PRR_Headset",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"

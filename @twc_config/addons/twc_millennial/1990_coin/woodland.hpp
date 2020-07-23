@@ -228,6 +228,7 @@ class TWC_Infantry_1990_COIN_Woodland_Company_Sergeant: TWC_Infantry_1990_Regula
 class TWC_Infantry_1990_COIN_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodland_Sniper
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
+	uniformClass="UK3CB_BAF_U_Smock_DPMW";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -247,6 +248,7 @@ class TWC_Infantry_1990_COIN_Woodland_Spotter: TWC_Infantry_1990_Regular_Woodlan
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_1990_COIN_Woodland_Spotter";
+	uniformClass="UK3CB_BAF_U_Smock_DPMW";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,

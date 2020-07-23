@@ -112,30 +112,22 @@ class CfgWeapons {
 		};
 	};
 
-	class UK3CB_BAF_L115A3;
-	class UK3CB_BAF_L115A3_DE;
-	class twc_l96_w: UK3CB_BAF_L115A3 {
-		scope = 1;
-		displayname = "L96A1";
-		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
-
+	class twc_l96_w_base;
+	class twc_l96_d_base;
+	class TWC_Weapon_L96_Woodland: twc_l96_w_base {
 		class LinkedItems {
 			class LinkedItemsOptic {
 				slot="CowsSlot";
-				item="CUP_optic_Leupold_VX3";
+				item="cup_optic_leupoldmk4_10x40_lrt_woodland";
 			};
 		};
 	};
 
-	class twc_l96_d: UK3CB_BAF_L115A3_DE {
-		scope = 1;
-		displayname = "L96A1";
-		magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
-		
+	class TWC_Weapon_L96_Desert: twc_l96_d_base {
 		class LinkedItems {
 			class LinkedItemsOptic {
 				slot="CowsSlot";
-				item="CUP_optic_Leupold_VX3";
+				item="cup_optic_leupoldmk4";
 			};
 		};
 	};

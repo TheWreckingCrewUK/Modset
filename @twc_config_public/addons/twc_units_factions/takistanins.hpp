@@ -136,34 +136,34 @@
 		};
 		
 		weapons[]= {
-			"rhs_weap_m70b1",
+			"CUP_arifle_AKS",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]= {
-			"rhs_weap_m70b1",
+			"CUP_arifle_AKS",
 			"Throw",
 			"Put"
 		};
 
 		magazines[]= {
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm"
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M"
 		};
 
 		Respawnmagazines[]= {
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm"
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M"
 		};
 		
 		Items[]= { };
@@ -672,22 +672,22 @@
 		};
 		magazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"SmokeShell"
 		};
 		Items[]=
