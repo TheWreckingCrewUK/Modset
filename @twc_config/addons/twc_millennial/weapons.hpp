@@ -1,8 +1,6 @@
 class UK3CB_BAF_L85A2;
 class UK3CB_BAF_L86A2;
 class UK3CB_BAF_SUSAT_3D;
-class UK3CB_BAF_L115A3;
-class UK3CB_BAF_L115A3_DE;
 class UK3CB_BAF_L135A1;
 
 class TWC_Weapon_L86A1: UK3CB_BAF_L86A2 {
@@ -66,28 +64,6 @@ class TWC_Weapon_L86A2_SUSAT3D: UK3CB_BAF_L86A2 {
 		class LinkedItemsOptic {
 			slot="asdg_OpticRail_UK3CB_BAF_L85";
 			item="UK3CB_BAF_SUSAT_3D";
-		};
-	};
-};
-class TWC_Weapon_L96_Woodland: UK3CB_BAF_L115A3 {
-	scope = 1;
-	displayname = "L96A1";
-	magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
-	class LinkedItems {
-		class LinkedItemsOptic {
-			slot="asdg_OpticRail_UK3CB_BAF_L115";
-			item="RKSL_optic_PMII_312";
-		};
-	};
-};
-class TWC_Weapon_L96_Desert: UK3CB_BAF_L115A3_DE {
-	scope = 1;
-	displayname = "L96A1";
-	magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd"};
-	class LinkedItems {
-		class LinkedItemsOptic {
-			slot="asdg_OpticRail_UK3CB_BAF_L115";
-			item="RKSL_optic_PMII_525";
 		};
 	};
 };

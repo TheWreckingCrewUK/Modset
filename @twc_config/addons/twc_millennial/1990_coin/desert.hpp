@@ -216,6 +216,7 @@ class TWC_Infantry_1990_COIN_Desert_Company_Sergeant: TWC_Infantry_1990_Regular_
 class TWC_Infantry_1990_COIN_Desert_Sniper: TWC_Infantry_1990_Regular_Desert_Sniper
 {
 	CATEGORY(TWC_Infantry_COIN_Desert)
+	uniformClass = "TWC_Smock_Desert";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -234,6 +235,7 @@ class TWC_Infantry_1990_COIN_Desert_Sniper: TWC_Infantry_1990_Regular_Desert_Sni
 class TWC_Infantry_1990_COIN_Desert_Spotter: TWC_Infantry_1990_Regular_Desert_Spotter
 {
 	CATEGORY(TWC_Infantry_COIN_Desert)
+	uniformClass = "TWC_Smock_Desert";
 	backpack = "TWC_Backpack_1990_COIN_Desert_Spotter";
 	Items[] =
 	{
