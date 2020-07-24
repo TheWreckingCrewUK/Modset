@@ -1078,12 +1078,12 @@
 	class rhsusf_m998_w_2dr: rhsusf_hmmwe_base {
 		class Wheels:Wheels {
 			class LF:LF {
-				frictionVsSlipGraph[] = {{ 0.0, 0.75 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
+				frictionVsSlipGraph[] = {{ 0.1, 0.5 }, { 0.25, 0.2 }, { 0.5, 0.45 }};
 				maxCompression = 0.35;
 				maxDroop = 0.15;
-				springDamperRate = 4500;
+				springDamperRate = 4000;
 				maxHandBrakeTorque = 30000;
-				springStrength = 26000;
+				springStrength = 28000;
 				sprungMass = 925;
 			};
 		};
@@ -1100,12 +1100,12 @@
 	class rhsusf_m1025_w: rhsusf_m998_w_4dr_fulltop {
 		class Wheels:Wheels {
 			class LF:LF {
-				frictionVsSlipGraph[] = {{ 0.0, 0.75 }, { 0.4, 0.15 }, { 1.0, 0.35 }};
+				frictionVsSlipGraph[] = {{ 0.1, 0.5 }, { 0.25, 0.2 }, { 0.5, 0.45 }};
 				maxCompression = 0.35;
 				maxDroop = 0.15;
 				maxHandBrakeTorque = 30000;
-				springDamperRate = 4500;
-				springStrength = 26000;
+				springDamperRate = 4000;
+				springStrength = 28000;
 				sprungMass = 925;
 			};
 		};
