@@ -1129,7 +1129,7 @@ class cfgWeapons
 	class rhs_weap_rpg7: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
-			fired = "if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};if (hasinterface) exitwith {};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 10) - 5, (velocity _bullet select 1) + (random 10) - 5, 	(velocity _bullet select 2) + (random 4) - 2];";
+			fired = "_bullet = _this select 6; if ((str (side (_this select 0))) == 'EAST') then {[_this select 6, _this select 0] call twc_fnc_aps;}; if (!(isplayer (_this select 0))) exitwith {_bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4, 	(velocity _bullet select 2) + (random 8) - 4];};_mod = ((random 100) - 40); _bullet setvelocity [(velocity _bullet select 0) + (_mod * (sin (getdir _bullet ))), (velocity _bullet select 1) + (_mod * (cos (getdir _bullet ))), (velocity _bullet select 2)];systemchat 'rpg eh';";
 		};
 		scope=2;
 		aiDispersionCoefX=1.03;

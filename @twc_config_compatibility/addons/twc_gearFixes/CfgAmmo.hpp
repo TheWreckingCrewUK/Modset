@@ -84,6 +84,7 @@ class CfgAmmo {
 		timeToLive = 150000;
 	};
 	
+	//don't bother with hitMan, something else is affecting it
 	class B_338_Ball;
 	class ACE_338_Ball_API526: B_338_Ball {
 		caliber = 6;
@@ -110,7 +111,6 @@ class CfgAmmo {
 			hitPlastic = "twc_APIbullet_effect";
 			hitRubber = "twc_APIbullet_effect";
 			hitConcrete = "twc_APIbullet_effect";
-			hitMan = "twc_APIbullet_effect_man";
 			hitGroundSoft = "twc_APIbullet_effect";
 			hitGroundHard = "twc_APIbullet_effect";
 			hitWater = "ImpactEffectsWater";
@@ -135,7 +135,6 @@ class CfgAmmo {
 			hitPlastic = "twc_127_hiteffect_grey";
 			hitRubber = "twc_127_hiteffect_grey";
 			hitConcrete = "twc_127_hiteffect_grey";
-			hitMan = "ImpactEffectsBlood";
 			hitGroundSoft = "twc_127_hiteffect_grey";
 			hitGroundHard = "twc_127_hiteffect_grey";
 			hitWater = "ImpactEffectsWater";
@@ -172,9 +171,37 @@ class CfgAmmo {
 			hitPlastic = "twc_127_hiteffect_grey";
 			hitRubber = "twc_127_hiteffect_grey";
 			hitConcrete = "twc_127_hiteffect_grey";
-			//hitMan = "twc_APIbullet_effect_man";
 			hitGroundSoft = "twc_127_hiteffect_grey";
 			hitGroundHard = "twc_127_hiteffect_grey";
+			hitWater = "ImpactEffectsWater";
+		};
+	};
+	class B_762x51_Ball: BulletBase {
+		class CamShakePlayerFire {
+			distance = 1;
+			duration = 1;
+			frequency = 10;
+			power = 5;
+		};
+		ACE_muzzleVelocityVariationSD = 3;
+		class HitEffects {
+			Hit_Foliage_green = "ImpactLeavesGreen";
+			Hit_Foliage_Dead = "ImpactLeavesDead";
+			Hit_Foliage_Green_big = "ImpactLeavesGreenBig";
+			Hit_Foliage_Palm = "ImpactLeavesPalm";
+			Hit_Foliage_Pine = "ImpactLeavesPine";
+			hitFoliage = "ImpactLeaves";
+			hitGlass = "ImpactGlass";
+			hitGlassArmored = "twc_762_hiteffect_grey";
+			hitWood = "twc_762_hiteffect_grey";
+			hitMetal = "twc_762_hiteffect_grey";
+			hitMetalPlate = "twc_762_hiteffect_grey";
+			hitBuilding = "twc_762_hiteffect_grey";
+			hitPlastic = "twc_762_hiteffect_grey";
+			hitRubber = "twc_762_hiteffect_grey";
+			hitConcrete = "twc_762_hiteffect_grey";
+			hitGroundSoft = "twc_762_hiteffect_grey";
+			hitGroundHard = "twc_762_hiteffect_grey";
 			hitWater = "ImpactEffectsWater";
 		};
 	};
@@ -200,7 +227,7 @@ class CfgAmmo {
 		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
 	};
 	
-	class B_762x51_Ball;
+	
 	class UK3CB_BAF_762_Ball_L42A1_Tracer_Red: B_762x51_Ball {
 		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
 	};

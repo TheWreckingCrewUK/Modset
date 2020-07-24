@@ -1148,7 +1148,7 @@ class Extended_Init_EventHandlers
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.0644166,0.174903,-1.4]";
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.0644166,0.174903,-1.2]";
 		};
 	};
 	
@@ -2795,13 +2795,13 @@ class CfgVehicles {
 				latStiffY = 120;
 				longitudinalStiffnessPerUnitGravity = 14000;
 				mass = 30;
-				maxBrakeTorque = 1200;
+				maxBrakeTorque = 1500;
 				maxCompression = 0.4;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 700;
 				moi = 6;
 				side = "left";
-				springDamperRate = 2500;
+				springDamperRate = 2400;
 				springStrength = 33000;
 				sprungMass = 825;
 				steering = 1;
@@ -2820,7 +2820,7 @@ class CfgVehicles {
 				dampingRateInAir = 0.8;
 				longitudinalStiffnessPerUnitGravity = 14000;
 				mass = 30;
-				maxBrakeTorque = 1200;
+				maxBrakeTorque = 1500;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 700;
 				moi = 6;
@@ -2844,7 +2844,7 @@ class CfgVehicles {
 				frictionVsSlipGraph[] = {{ 0.1, 0.5 }, { 0.25, 0.2 }, { 0.5, 0.45 }};
 				longitudinalStiffnessPerUnitGravity = 14000;
 				mass = 30;
-				maxBrakeTorque = 2100;
+				maxBrakeTorque = 1500;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 4000;
 				moi = 6;
@@ -2866,7 +2866,7 @@ class CfgVehicles {
 				dampingRateInAir = 0.8;
 				longitudinalStiffnessPerUnitGravity = 14000;
 				mass = 30;
-				maxBrakeTorque = 2100;
+				maxBrakeTorque = 1500;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 4000;
 				moi = 6;
@@ -3203,27 +3203,12 @@ class twc_APIbullet_effect_ground
    };
 };
 
-class twc_APIbullet_effect_man:twc_APIbullet_effect
-{
-	class hit_target
-	{
-       simulation = "particles";   //type of simulation - particles or light
-       type = "BloodMist";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
-       position[] = {0, 0, 0};     //position related to the default position or memorypoint
-       lifeTime = 0.9;            //life time of emitter
-       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
-       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
-       enabled = 1;                //1 effect is enabled, -1 effect is disabled
-	   intensity = 1;
-   };
-};
-
 class twc_127_hiteffect_grey
 {
 	class smoke
 	{
        simulation = "particles";   //type of simulation - particles or light
-       type = "AutoCannonFired";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       type = "twc_hitcloud_127_dirt";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
        position[] = {0, 0, 0};     //position related to the default position or memorypoint
        lifeTime = 0.3;            //life time of emitter
        qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
@@ -3232,6 +3217,22 @@ class twc_127_hiteffect_grey
 	   intensity = 1;
    };
 };
+
+class twc_762_hiteffect_grey
+{
+	class smoke
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "twc_ImpactSmoke_762";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 0.3;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+};
+
 
 class GrenadeExplosion
 {
@@ -3279,5 +3280,27 @@ class GrenadeExplosion
        start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
        enabled = 1;                //1 effect is enabled, -1 effect is disabled
 	   intensity = 0.01;
+	};
+};
+
+class cfgcloudlets
+{
+	class AutoCannonFired;
+	class twc_hitcloud_127_dirt: AutoCannonFired
+	{
+		position[] = {0,0,0};
+		color[] = {{0.9,0.9,0.9,0.18},{0.9,0.9,0.9,0.06},{0.9,0.9,0.9,0.012},{0.9,0.9,0.9,0.001}};
+	};
+	
+	class twc_impactsmoke_762: twc_hitcloud_127_dirt
+	{
+		size[] = {0.1,0.4,0.6,0.8,1.0,1.2,1.4};
+		color[] = {{0.9,0.9,0.9,0.48},{0.9,0.9,0.9,0.26},{0.9,0.9,0.9,0.12},{0.9,0.9,0.9,0.001}};
+		moveVelocity[] = {"1.2*directionX","1.2*directionY","1.2*directionZ"};
+	};
+	class ImpactSmoke;
+	class twc_ImpactSmoke_762s: ImpactSmoke
+	{
+		color[] = {{0.3,0.3,0.3,0.8},{0.3,0.3,0.3,0.6},{0.3,0.3,0.3,0.2},{0.3,0.3,0.3,0.001}};
 	};
 };
