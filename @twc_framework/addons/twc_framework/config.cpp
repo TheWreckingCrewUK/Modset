@@ -79,6 +79,11 @@ class Extended_InitPost_EventHandlers {
 			init = "_this call twc_fnc_confiscateBadItems;";
 		};
 	};
+	class TWC_Module_WaveSpawn {
+		class TWC_ModuleWaveSpawnInit {
+			init = "_this call TWC_fnc_moduleWaveSpawnInit;"
+		};
+	};
 };
 
 #include "cfgAmmo.hpp"
