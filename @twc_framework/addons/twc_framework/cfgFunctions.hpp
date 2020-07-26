@@ -40,6 +40,7 @@ class CfgFunctions {
 			class movableUnits{};
 			class UpdateTask{};
 			class virtualMortar{};
+			class waveSpawn {};
 			class toggleSpectator {};
 			class grabComposition {};
 			class sendCTabMessage {};
@@ -78,12 +79,14 @@ class CfgFunctions {
 			class moduleCreateTask;
 			class moduleCrateParadrop {};
 			class moduleCrateSlingload {};
-			class moduleStationaryUnits{};
-			class moduleMovableUnits{};
-			class moduleVirtualArtillery{};
-			class moduleArtillery{};
-			class moduleUpdateTask{};
-			class moduleDefend{};
+			class moduleStationaryUnits {};
+			class moduleMovableUnits {};
+			class moduleVirtualArtillery {};
+			class moduleWaveSpawn {};
+			class moduleWaveSpawnInit {};
+			class moduleArtillery {};
+			class moduleUpdateTask {};
+			class moduleDefend {};
 			class moduleDummyBullets {};
 			class moduleAirAssault{};
 			class moduleAirborne {};
