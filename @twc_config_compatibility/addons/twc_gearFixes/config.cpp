@@ -1081,7 +1081,7 @@ class Extended_Init_EventHandlers
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.0933615,0.450011,-1.0]";
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.0933615,0.450011,-1.2]";
 		};
 	};
 	class UK3CB_BAF_MAN_HX60_Cargo_Base
@@ -1243,6 +1243,12 @@ class CfgVehicles {
        };
 	};
 	class UK3CB_BAF_Husky_Base: MRAP_01_base_F {
+		crewVulnerable = 1;
+		frontRearSplit = 0.5;
+		frontBias = 1.1;
+		rearBias = 0.5;
+		centreBias = 1;
+		torqueCurve[] = { { 0.0, 0.55 }, { 0.6, 0.8 }, { 1.0, 0.4 } };
 		class Wheels {
 			class LF {
 				boneName = "wheel_1_1";
@@ -1251,18 +1257,18 @@ class CfgVehicles {
 				dampingRate = 0.1;
 				dampingRateDamaged = 1;
 				dampingRateDestroyed = 1000;
-				frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.3, 0.2 }, { 1.0, 0.5 }};
+				frictionVsSlipGraph[] = {{ 0.1, 0.4 }, { 0.25, 0.2 }, { 0.5, 0.35 }};
 				latStiffX = 25;
 				latStiffY = 180;
 				longitudinalStiffnessPerUnitGravity = 5000;
 				mass = 30;
-				maxBrakeTorque = 4500;
+				maxBrakeTorque = 4100;
 				maxCompression = 0.3;
 				maxDroop = 0.05;
 				maxHandBrakeTorque = 4500;
 				moi = 40.5;
 				side = "left";
-				springDamperRate = 4500;
+				springDamperRate = 4700;
 				springStrength = 32000;
 				sprungMass = 2925;
 				steering = 1;
@@ -1272,7 +1278,6 @@ class CfgVehicles {
 				width = "0.2";
 			};
 		};
-		enginePower = 140;
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
            turnIncreaseConst  = 0.2; // basic sensitivity value, higher value = faster steering
@@ -1465,6 +1470,10 @@ class CfgVehicles {
 		antiRollbarForceLimit = 5;
 		antiRollbarSpeedMin = 5;
 		antiRollbarSpeedMax = 100;
+		centreBias = 1.3;
+		rearBias = 1.3;
+		frontBias = 3;
+		frontRearSplit = 0.2;
 		torqueCurve[] = {{0,0.1},{0.278,0.2},{0.35,0.35},{0.461,0.5},{0.7,0.45},{0.75,0.35},{0.8,0.3},{1,0.2}};
 		class complexgearbox: complexgearbox
 		{
@@ -1480,7 +1489,9 @@ class CfgVehicles {
 				dampingRate = 0.1;
 				dampingRateDamaged = 1;
 				dampingRateDestroyed = 2000;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.4 } };
+				//frictionVsSlipGraph[] = { { 0.0, 0.65 }, { 0.2, 0.45 }, { 1.0, 0.4 } };
+				//frictionVsSlipGraph[] = {{ 0.1, 0.5 }, { 0.25, 0.2 }, { 0.5, 0.45 }};
+				frictionVsSlipGraph[] = {{ 0.1, 0.35 }, { 0.25, 0.2 }, { 0.5, 0.3 }};
 				latStiffX = 25;
 				latStiffY = 180;
 				longitudinalStiffnessPerUnitGravity = 10000;
@@ -1492,7 +1503,7 @@ class CfgVehicles {
 				moi = 60;
 				side = "left";
 				springDamperRate = 3000;
-				springStrength = 25000;
+				springStrength = 35000;
 				sprungMass = 1750;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
@@ -1506,7 +1517,7 @@ class CfgVehicles {
 				boundary = "wheel_2_1_bound";
 				center = "wheel_2_1_axis";
 				springDamperRate = 3000;
-				springStrength = 25000;
+				springStrength = 35000;
 				sprungMass = 1750;
 				side = "right";
 				maxBrakeTorque = 5500;
@@ -1518,9 +1529,10 @@ class CfgVehicles {
 				center = "wheel_2_2_axis";
 				springDamperRate = 3000;
 				maxCompression = 0.7;
-				springStrength = 25000;
+				springStrength = 35000;
+				maxHandBrakeTorque = 3000;
+				maxBrakeTorque = 4000;
 				sprungMass = 1750;
-				maxBrakeTorque = 5500;
 				steering = 0;
 			};
 			class LF2: LF
@@ -1530,9 +1542,10 @@ class CfgVehicles {
 				center = "wheel_1_2_axis";
 				springDamperRate = 3000;
 				maxCompression = 0.7;
-				springStrength = 25000;
+				springStrength = 35000;
 				sprungMass = 1750;
-				maxBrakeTorque = 5500;
+				maxHandBrakeTorque = 3000;
+				maxBrakeTorque = 4000;
 				steering = 0;
 			};
 		};
@@ -1557,6 +1570,10 @@ class CfgVehicles {
 		antiRollbarForceLimit = 5;
 		antiRollbarSpeedMin = 5;
 		antiRollbarSpeedMax = 100;
+		centreBias = 0.3;
+		rearBias = 1.3;
+		frontBias = 3;
+		frontRearSplit = 0.2;
 		class wheels
 		{
 			class LF
@@ -1567,7 +1584,8 @@ class CfgVehicles {
 				dampingRate = 0.1;
 				dampingRateDamaged = 1;
 				dampingRateDestroyed = 2000;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.4 } };
+				//frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.4 } };
+				frictionVsSlipGraph[] = {{ 0.1, 0.4 }, { 0.25, 0.2 }, { 0.5, 0.35 }};
 				latStiffX = 25;
 				latStiffY = 180;
 				longitudinalStiffnessPerUnitGravity = 10000;
@@ -1579,7 +1597,7 @@ class CfgVehicles {
 				moi = 60;
 				side = "left";
 				springDamperRate = 4000;
-				springStrength = 21000;
+				springStrength = 26000;
 				sprungMass = 1750;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
@@ -1593,7 +1611,7 @@ class CfgVehicles {
 				boundary = "wheel_2_1_bound";
 				center = "wheel_2_1_axis";
 				springDamperRate = 4000;
-				springStrength = 21000;
+				springStrength = 24000;
 				sprungMass = 1750;
 				maxBrakeTorque = 5500;
 				side = "right";
@@ -1604,10 +1622,11 @@ class CfgVehicles {
 				boundary = "wheel_2_2_bound";
 				center = "wheel_2_2_axis";
 				springDamperRate = 4000;
-				springStrength = 21000;
+				springStrength = 24000;
 				maxCompression = 0.7;
 				sprungMass = 1750;
-				maxBrakeTorque = 5500;
+				maxHandBrakeTorque = 3000;
+				maxBrakeTorque = 5000;
 				steering = 0;
 			};
 			class RM: RF2
@@ -1619,7 +1638,8 @@ class CfgVehicles {
 				springStrength = 21000;
 				maxCompression = 0.7;
 				sprungMass = 1750;
-				maxBrakeTorque = 5500;
+				maxHandBrakeTorque = 3000;
+				maxBrakeTorque = 5000;
 			};
 			class LF2: LF
 			{
@@ -1630,7 +1650,8 @@ class CfgVehicles {
 				springStrength = 21000;
 				maxCompression = 0.7;
 				sprungMass = 1750;
-				maxBrakeTorque = 5500;
+				maxHandBrakeTorque = 3000;
+				maxBrakeTorque = 5000;
 				steering = 0;
 			};
 			class LM: LF2
@@ -1642,7 +1663,8 @@ class CfgVehicles {
 				springStrength = 21000;
 				maxCompression = 0.7;
 				sprungMass = 1750;
-				maxBrakeTorque = 5500;
+				maxHandBrakeTorque = 3000;
+				maxBrakeTorque = 5000;
 			};
 		};
 	};
@@ -2795,7 +2817,7 @@ class CfgVehicles {
 				latStiffY = 120;
 				longitudinalStiffnessPerUnitGravity = 14000;
 				mass = 30;
-				maxBrakeTorque = 1500;
+				maxBrakeTorque = 2500;
 				maxCompression = 0.4;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 700;
@@ -3225,7 +3247,18 @@ class twc_762_hiteffect_grey
        simulation = "particles";   //type of simulation - particles or light
        type = "twc_ImpactSmoke_762";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
        position[] = {0, 0, 0};     //position related to the default position or memorypoint
-       lifeTime = 0.3;            //life time of emitter
+       lifeTime = 0.1;            //life time of emitter
+       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
+       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
+       enabled = 1;                //1 effect is enabled, -1 effect is disabled
+	   intensity = 1;
+   };
+	class puff
+	{
+       simulation = "particles";   //type of simulation - particles or light
+       type = "ImpactConcrete";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
+       position[] = {0, 0, 0};     //position related to the default position or memorypoint
+       lifeTime = 1.3;            //life time of emitter
        qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
        start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
        enabled = 1;                //1 effect is enabled, -1 effect is disabled
@@ -3292,15 +3325,12 @@ class cfgcloudlets
 		color[] = {{0.9,0.9,0.9,0.18},{0.9,0.9,0.9,0.06},{0.9,0.9,0.9,0.012},{0.9,0.9,0.9,0.001}};
 	};
 	
-	class twc_impactsmoke_762: twc_hitcloud_127_dirt
+	class ImpactDustConcrete2;
+	class twc_impactsmoke_762: ImpactDustConcrete2
 	{
-		size[] = {0.1,0.4,0.6,0.8,1.0,1.2,1.4};
+		size[] = {0.8,1.1,1.4};
+		position[] = {0,0,0};
 		color[] = {{0.9,0.9,0.9,0.48},{0.9,0.9,0.9,0.26},{0.9,0.9,0.9,0.12},{0.9,0.9,0.9,0.001}};
-		moveVelocity[] = {"1.2*directionX","1.2*directionY","1.2*directionZ"};
-	};
-	class ImpactSmoke;
-	class twc_ImpactSmoke_762s: ImpactSmoke
-	{
-		color[] = {{0.3,0.3,0.3,0.8},{0.3,0.3,0.3,0.6},{0.3,0.3,0.3,0.2},{0.3,0.3,0.3,0.001}};
+		moveVelocity[] = {"0","0","1.2*directionZ"};
 	};
 };

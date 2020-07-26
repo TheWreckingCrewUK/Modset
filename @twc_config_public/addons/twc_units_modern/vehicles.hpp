@@ -1417,8 +1417,9 @@
 		displayname = "Land Rover WMIK HMG (Uprated)";
 		maximumLoad = 5000;
 		enginePower = 140;
-		peakTorque = 450;
-		maxSpeed = 210;
+		peakTorque = 550;
+		maxSpeed = 230;
+		torqueCurve[] = { { 0.0, 0.85 }, { 0.6, 1.8 }, { 1.0, 0.6 } };
 		class AcreRacks {
 			class Rack_1 {
 				displayName = "Dash"; // Name is displayed in the interaction menu.
