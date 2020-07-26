@@ -11,8 +11,8 @@ class CfgManagement {
 		zeusIgnoreRank = 0; // based upon rank & isCommand flag for config (some positions have override)
 	};
 	
-	class 76561198005456546 {
-		displayName = "Bosenator";
+	class 76561198038415964 {
+		displayName = "Bjorn";
 		zeusAutoAdd = 1;
 		zeusIgnoreRank = 0;
 	};
