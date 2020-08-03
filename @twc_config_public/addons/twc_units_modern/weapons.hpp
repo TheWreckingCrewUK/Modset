@@ -1080,19 +1080,19 @@ class cfgWeapons
 	class MissileLauncher: LauncherCore
 	{
 		class EventHandlers: EventHandlers {
-			fired = "if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
+			fired = "if (!local (_this select 0)) exitwith {}; if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
 		};
 	};
 	class Launcher: LauncherCore
 	{
 		class EventHandlers: EventHandlers {
-			fired = "if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
+			fired = "if (!local (_this select 0)) exitwith {}; if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
 		};
 	};
 	class RocketPods: LauncherCore
 	{
 		class EventHandlers: EventHandlers {
-			fired = "if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
+			fired = "if (!local (_this select 0)) exitwith {}; if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
 		};
 	};
 	
@@ -1105,7 +1105,7 @@ class cfgWeapons
 	{
 		magazines[] = {"rhs_mag_maaws_HEAT","rhs_mag_maaws_HEDP","rhs_mag_maaws_HE","rhs_mag_maaws_flechette"};
 		class EventHandlers: EventHandlers {
-			fired = "params['_unit','_weapon','_muzzle','_mod','_ammo','_magazine','_projectile']; if(isNull _projectile) exitwith {}; if(_ammo != 'rhs_ammo_maaws_flechette') exitwith { };  _velocity = velocity _projectile;_magnatude = vectorMagnitude _velocity; _velocityNormal = vectorNormalized  _velocity;_dir = acos(_velocityNormal select 1); deletevehicle _projectile;for '_i' from 1 to 250 do {_dX = (_velocityNormal select 0) + (random(0.05*2)-0.05);  _dX = (_velocityNormal select 0) + (random(0.05*2)-0.05); _dY = (_velocityNormal select 1) + (random(0.05*2)-0.05);_dZ = (_velocityNormal select 2) + (random(0.05*2)-0.05);  _bVel = (vectorNormalized [_dX,_dY,_dZ]) vectorMultiply _magnatude;_bullet = 'twc_B_steelflechette' createVehiclelocal [0,0,1000];_bullet setShotParents [vehicle _unit,_unit];_bullet setVelocity _bVel; _bullet setposatl getposatl _projectile;};";
+			fired = "params['_unit','_weapon','_muzzle','_mod','_ammo','_magazine','_projectile']; if (!local _unit) exitwith {}; if(isNull _projectile) exitwith {}; if(_ammo != 'rhs_ammo_maaws_flechette') exitwith { };  _velocity = velocity _projectile;_magnatude = vectorMagnitude _velocity; _velocityNormal = vectorNormalized  _velocity;_dir = acos(_velocityNormal select 1); deletevehicle _projectile;for '_i' from 1 to 250 do {_dX = (_velocityNormal select 0) + (random(0.05*2)-0.05);  _dX = (_velocityNormal select 0) + (random(0.05*2)-0.05); _dY = (_velocityNormal select 1) + (random(0.05*2)-0.05);_dZ = (_velocityNormal select 2) + (random(0.05*2)-0.05);  _bVel = (vectorNormalized [_dX,_dY,_dZ]) vectorMultiply _magnatude;_bullet = 'twc_B_steelflechette' createVehiclelocal [0,0,1000];_bullet setShotParents [vehicle _unit,_unit];_bullet setVelocity _bVel; _bullet setposatl getposatl _projectile;};";
 		};
 	};
 	
@@ -1129,7 +1129,7 @@ class cfgWeapons
 	class rhs_weap_rpg7: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
-			fired = "_bullet = _this select 6; if ((str (side (_this select 0))) == 'EAST') then {[_this select 6, _this select 0] call twc_fnc_aps;}; if (!(isplayer (_this select 0))) exitwith {_bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4, 	(velocity _bullet select 2) + (random 8) - 4];};_mod = ((random 100) - 40); _bullet setvelocity [(velocity _bullet select 0) + (_mod * (sin (getdir _bullet ))), (velocity _bullet select 1) + (_mod * (cos (getdir _bullet ))), (velocity _bullet select 2)];systemchat 'rpg eh';";
+			fired = "_bullet = _this select 6; if (!local _bullet) exitwith {}; if ((str (side (_this select 0))) == 'EAST') then {[_this select 6, _this select 0] call twc_fnc_aps;}; if (!(isplayer (_this select 0))) exitwith {_bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4, 	(velocity _bullet select 2) + (random 8) - 4];};_mod = ((random 100) - 40); _bullet setvelocity [(velocity _bullet select 0) + (_mod * (sin (getdir _bullet ))), (velocity _bullet select 1) + (_mod * (cos (getdir _bullet ))), (velocity _bullet select 2)];";
 		};
 		scope=2;
 		aiDispersionCoefX=1.03;
@@ -1146,7 +1146,7 @@ class cfgWeapons
 	class rhs_weap_rpg26: Launcher_Base_F
 	{
 		class EventHandlers: EventHandlers {
-			fired = "if (hasinterface) exitwith {};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 18) - 9, (velocity _bullet select 1) + (random 18) - 9, 	(velocity _bullet select 2) + (random 2) - 1];";
+			fired = "if (hasinterface) exitwith {};_bullet = _this select 6; if (!local _bullet) exitwith {}; _bullet setvelocity [(velocity _bullet select 0) + (random 18) - 9, (velocity _bullet select 1) + (random 18) - 9, 	(velocity _bullet select 2) + (random 2) - 1];";
 		};
 		scope=2;
 		aiDispersionCoefX=1.03;
@@ -1262,7 +1262,7 @@ class cfgWeapons
 			dispersion=0.012;
 		};
 		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
+			fired = "if (!local (_this select 0)) exitwith {}; if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
 		};
 	};
 	
@@ -2145,7 +2145,7 @@ class cfgWeapons
 	{
 		
 		class EventHandlers: EventHandlers {
-			fired = "_mult = 1; if (!isserver) then {_mult = 0.5};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];";
+			fired = "if (!local (_this select 0)) exitwith {}; _mult = 1; if (!isserver) then {_mult = 0.5};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 24) - 12) * _mult), (velocity _bullet select 1) + (((random 24) - 12) * _mult), 	(velocity _bullet select 2) + (((random 4) - 2) * _mult)];";
 		};
 	};
 	
