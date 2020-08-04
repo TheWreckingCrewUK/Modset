@@ -401,7 +401,7 @@ class TWC_Vehicle_Modern_Bulldog_COIN_Woodland: UK3CB_BAF_FV432_Mk3_GPMG_Green {
 
 	class TransportBackpacks { };
 };
-
+/*
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MODERN_CHALLENGER2_MOD
 class TWC_Vehicle_Modern_Challenger2_Desert: TWC_Vehicle_FV4034_Base {
@@ -465,3 +465,4 @@ class TWC_Vehicle_Modern_Challenger2_Woodland: TWC_Vehicle_FV4034_Base {
 		"\Burnes_Challenger\data\PH\hatches_co"
 	};
 };
+*/
