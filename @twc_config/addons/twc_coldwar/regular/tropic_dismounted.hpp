@@ -52,6 +52,10 @@ class TWC_Infantry_ColdWar_Regular_Dismounted_Tropic_Platoon_Medic: TWC_Infantry
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
 };
+class TWC_Infantry_ColdWar_Regular_Dismounted_Tropic_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Mortar
+{
+	CATEGORY(TWC_Infantry_Dismounted_Tropic)
+};
 class TWC_Infantry_ColdWar_Regular_Dismounted_Tropic_CSM: TWC_Infantry_ColdWar_Regular_Tropic_CSM
 {
 	CATEGORY(TWC_Infantry_Dismounted_Tropic)
