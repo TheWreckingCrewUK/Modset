@@ -99,7 +99,6 @@ class CfgPatches {
 			"A3_Boat_F_Exp_Boat_Transport_01",
 			"A3_Boat_F_Exp_Boat_Transport_02",
 			"burnes_foxhound",
-			"Burnes_FV4034",
 			"UK3CB_BAF_Vehicles_Apache",
 			"UK3CB_BAF_Vehicles_Wildcat",
 			"UK3CB_BAF_Vehicles_Merlin",
