@@ -52,6 +52,10 @@ class TWC_Infantry_ColdWar_Regular_Dismounted_NBC_Platoon_Medic: TWC_Infantry_Co
 {
 	CATEGORY(TWC_Infantry_Dismounted_NBC)
 };
+class TWC_Infantry_ColdWar_Regular_Dismounted_NBC_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_NBC_Platoon_Mortar
+{
+	CATEGORY(TWC_Infantry_Dismounted_NBC)
+};
 class TWC_Infantry_ColdWar_Regular_Dismounted_NBC_CSM: TWC_Infantry_ColdWar_Regular_NBC_CSM
 {
 	CATEGORY(TWC_Infantry_Dismounted_NBC)

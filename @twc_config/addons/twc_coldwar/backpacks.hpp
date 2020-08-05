@@ -207,6 +207,15 @@ class TWC_Backpack_ColdWar_Regular_Platoon_Medic: SP_Backpack_LargePack
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
 	};
 };
+class TWC_Backpack_ColdWar_Regular_Platoon_Mortar: SP_Backpack_CarlGustavCarrier
+{
+	scope = 1;
+	maximumLoad = 500;
+	class TransportMagazines {
+		ADD_MAGA(twc_2inch_he_1rnd,12);
+		ADD_MAGA(twc_2inch_smoke_1rnd,8);
+	};
+};
 
 //Platoon Command, COIN
 class TWC_Backpack_ColdWar_COIN_Platoon_Commander: SP_Backpack_LargePack

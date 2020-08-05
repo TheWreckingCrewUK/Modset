@@ -79,6 +79,13 @@ class TWC_Infantry_ColdWar_Regular_NBC_Platoon_Medic: TWC_Infantry_ColdWar_Regul
 	items[] += {"SP_Gasmask_S6"};
 	respawnItems[] += {"SP_Gasmask_S6"};
 };
+class TWC_Infantry_ColdWar_Regular_NBC_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Mortar
+{
+	CATEGORY(TWC_Infantry_Regular_NBC)
+	uniformClass = "SP_NBCMk3_HoodUp_Item";
+	items[] += {"SP_Gasmask_S6"};
+	respawnItems[] += {"SP_Gasmask_S6"};
+};
 class TWC_Infantry_ColdWar_Regular_NBC_CSM: TWC_Infantry_ColdWar_Regular_Woodland_CSM
 {
 	CATEGORY(TWC_Infantry_Regular_NBC)
