@@ -233,6 +233,27 @@ class TWC_Infantry_ColdWar_Regular_Desert_Platoon_Medic: TWC_Infantry_ColdWar_Re
 		"ItemWatch"
 	};
 };
+class TWC_Infantry_ColdWar_Regular_Desert_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Mortar
+{
+	CATEGORY(TWC_Infantry_Regular_Desert)
+	uniformClass = "SP_60PatCombatsRolled_Khaki_1_Item";
+	linkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_Khaki",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_Khaki",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
 class TWC_Infantry_ColdWar_Regular_Desert_CSM: TWC_Infantry_ColdWar_Regular_Woodland_CSM
 {
 	CATEGORY(TWC_Infantry_Regular_Desert)

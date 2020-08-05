@@ -57,6 +57,11 @@ class TWC_Infantry_ColdWar_Regular_Arctic_Platoon_Medic: TWC_Infantry_ColdWar_Re
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass="SP_63PatWindproof_DPM_1_Item";
 };
+class TWC_Infantry_ColdWar_Regular_Arctic_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Mortar
+{
+	CATEGORY(TWC_Infantry_Regular_Arctic)
+	uniformClass = "SP_63PatWindproof_DPM_1_Item";
+};
 class TWC_Infantry_ColdWar_Regular_Arctic_CSM: TWC_Infantry_ColdWar_Regular_Woodland_CSM
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)

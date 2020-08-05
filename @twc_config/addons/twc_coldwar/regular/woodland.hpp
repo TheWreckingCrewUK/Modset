@@ -456,6 +456,53 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 		"Chemlight_green"
 	};
 };
+class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
+{
+	displayName = "Platoon Mortar";
+	backpack = "TWC_Backpack_ColdWar_Regular_Platoon_Mortar";
+	class EventHandlers: EventHandlers {
+		init = "(_this select 0) setVariable ['twc_keepMap',true]";
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	weapons[]=
+	{
+		"UK3CB_BAF_L1A1_Wood",
+		"twc_2inch_bag",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"UK3CB_BAF_L1A1_Wood",
+		"twc_2inch_bag",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_5("UK3CB_BAF_762_20Rnd"),
+		MAG_4("twc_2inch_he_1rnd")
+	};
+	respawnmagazines[] =
+	{
+		MAG_5("UK3CB_BAF_762_20Rnd"),
+		MAG_4("twc_2inch_he_1rnd")
+	};
+	nightItems[] = {
+		MAG_6("twc_2inch_illum_1rnd")
+	};
+};
 class TWC_Infantry_ColdWar_Regular_Woodland_CSM: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Sergeant
 {
 	displayName = "Company Sergeant Major";
