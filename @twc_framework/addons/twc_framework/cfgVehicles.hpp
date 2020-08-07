@@ -297,6 +297,19 @@ class CfgVehicles {
 		curatorCanAttach = 1;
 		displayName = "Toggle Unit ACRE Spectator";
 	};
+	
+	class twc_forceUncache: Module_F {
+		author = "[TWC] jayman";
+		category = "twc_zeus";
+		scope = 1;
+		scopeCurator = 2;
+		functionPriority = 1;
+		isGlobal = 1;
+		isTriggerActivated = 0;
+		function = "twc_fnc_forceUncache";
+		curatorCanAttach = 1;
+		displayName = "Force a Group to Uncache";
+	};
 
 	class TWC_Module_CreateTask: Module_F {
 		author = "[TWC] Rik";
