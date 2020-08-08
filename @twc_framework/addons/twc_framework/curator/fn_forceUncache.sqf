@@ -14,14 +14,14 @@
 */
 params["_logic","_units","_activated"];
 
-if !(_activated && local _logic) exitWith {};
+if !(_activated) exitWith {};
 
 _mouseOver = missionnamespace getvariable ["bis_fnc_curatorObjectPlaced_mouseOver", [""]];
 
 if((_mouseOver select 0) != "OBJECT") then{
 	hint "Please click on a unit";
 }else{
-	[group (_mouseOver select 0)] remoteExec ["twc_fnc_uncacheGroup",2,false];
+	[group (_mouseOver select 1)] remoteExec ["twc_fnc_uncacheGroup",2,false];
 };
 
 deleteVehicle _logic;
