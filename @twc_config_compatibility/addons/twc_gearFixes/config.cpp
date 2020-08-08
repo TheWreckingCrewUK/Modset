@@ -21,6 +21,7 @@ class CfgPatches {
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds",
+			"cup_weapons_ak",
 			"CUP_Weapons_M1014",
 			"CUP_Weapons_VehicleWeapons"
 		};
@@ -255,6 +256,54 @@ class CfgWeapons {
 	
 	class Rifle_Base_F:Rifle
 	{
+	};
+	
+	class CUP_arifle_AK_Base: Rifle_Base_F
+	{
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		discretedistanceinitindex = 1;
+	};
+	class CUP_arifle_AKM: CUP_arifle_AK_Base
+	{
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		discretedistanceinitindex = 1;
+	};
+	
+	class CUP_arifle_AK47: CUP_arifle_AK_Base
+	{
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		discretedistanceinitindex = 1;
+	};
+	
+	class CUP_arifle_AK47_Early: CUP_arifle_AK47
+	{
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		discretedistanceinitindex = 1;
+	};
+	
+	class CUP_arifle_AKS: CUP_arifle_AKM
+	{
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		discretedistanceinitindex = 1;
+	};
+	
+	class CUP_arifle_AKM_GL: CUP_arifle_AKM
+	{
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		discretedistanceinitindex = 1;
+	};
+	
+	class CUP_arifle_AKMS_GL: CUP_arifle_AKM_GL
+	{
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		discretedistanceinitindex = 1;
 	};
 	
 	class CUP_sgun_M1014_base: Rifle_Base_F

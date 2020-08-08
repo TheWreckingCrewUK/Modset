@@ -15,7 +15,7 @@
 		linkedItems[]=
 		{
 			"twc_flk_spcs_rif",
-			"rhsusf_ach_bare",
+			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -23,7 +23,7 @@
 		respawnLinkedItems[]=
 		{
 			"twc_flk_spcs_rif",
-			"rhsusf_ach_bare",
+			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -138,7 +138,7 @@
 		linkedItems[]=
 		{
 			"twc_trp_spcs_rif",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -146,7 +146,7 @@
 		respawnLinkedItems[]=
 		{
 			"twc_trp_spcs_rif",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -213,7 +213,7 @@
 		linkedItems[]=
 		{
 			"twc_trp_spcs_rif",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -221,7 +221,7 @@
 		respawnLinkedItems[]=
 		{
 			"twc_trp_spcs_rif",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -300,7 +300,7 @@
 		linkedItems[]=
 		{
 			"CUP_V_B_GER_PVest_Trop_Gren",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -308,7 +308,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_GER_PVest_Trop_Gren",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -324,7 +324,7 @@
 		linkedItems[]=
 		{
 			"twc_flk_spcs_MG",
-			"rhsusf_ach_bare",
+			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -332,7 +332,7 @@
 		respawnLinkedItems[]=
 		{
 			"twc_flk_spcs_MG",
-			"rhsusf_ach_bare",
+			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -375,7 +375,7 @@
 		linkedItems[]=
 		{
 			"twc_trp_spcs_MG",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -383,7 +383,7 @@
 		respawnLinkedItems[]=
 		{
 			"twc_trp_spcs_MG",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -399,7 +399,7 @@
 		linkedItems[]=
 		{
 			"twc_flk_spcs_SL",
-			"rhsusf_ach_bare",
+			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
 			"itemCTAB",
@@ -408,7 +408,7 @@
 		respawnLinkedItems[]=
 		{
 			"twc_flk_spcs_SL",
-			"rhsusf_ach_bare",
+			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
 			"itemCTAB",
@@ -440,7 +440,7 @@
 		linkedItems[]=
 		{
 			"twc_trp_spcs_SL",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"itemCTAB",
@@ -449,7 +449,7 @@
 		respawnLinkedItems[]=
 		{
 			"twc_trp_spcs_SL",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"itemCTAB",
@@ -466,7 +466,7 @@
 		linkedItems[]=
 		{
 			"twc_flk_spcs_SL",
-			"rhsusf_ach_bare",
+			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -474,7 +474,7 @@
 		respawnLinkedItems[]=
 		{
 			"twc_flk_spcs_SL",
-			"rhsusf_ach_bare",
+			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -491,7 +491,7 @@
 		linkedItems[]=
 		{
 			"twc_trp_spcs_SL",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -499,7 +499,7 @@
 		respawnLinkedItems[]=
 		{
 			"twc_trp_spcs_SL",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -526,7 +526,7 @@
 		linkedItems[]=
 		{
 			"twc_trp_spcs_rif",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -534,7 +534,7 @@
 		respawnLinkedItems[]=
 		{
 			"twc_trp_spcs_rif",
-			"rhsusf_ach_bare_tan_ess",
+			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"

@@ -1461,7 +1461,7 @@
 
 	
 
-	class ana_backpack_medic: CUP_B_AlicePack_Khaki
+	class ana_backpack_medic: CUP_B_SLA_Medicbag
 	{
 		scope = 1;
 		class TransportItems
@@ -1598,13 +1598,18 @@
 		
 	};
 	
-			class ana_backpack_2ic: CUP_B_AlicePack_Khaki
+			class ana_backpack_2ic: UK3CB_BAF_B_Carryall_OLI
 	{
 		scope = 1;
 		
 
 		class TransportMagazines
 		{
+			class _xx_mags
+			{
+				magazine = "rhs_30Rnd_762x39mm";
+				count = 10;
+			};
 			class _xx_Smoke
 			{
 				magazine = "SmokeShell";
