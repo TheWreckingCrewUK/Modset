@@ -57,6 +57,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
+					rhsusf_acc_eotech_552 = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -211,6 +212,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
+					rhsusf_acc_eotech_552 = 1;
 				};
 			};
 			class CUP_PicatinnySideMountM16: rhs_western_rifle_laser_slot_top {
@@ -249,6 +251,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
+					rhsusf_acc_eotech_552 = 1;
 				};
 			};
 			class CUP_PicatinnySideMountM16: CUP_PicatinnySideMount {
@@ -304,6 +307,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
+					rhsusf_acc_eotech_552 = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -338,6 +342,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
+					rhsusf_acc_eotech_552 = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -373,6 +378,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
+					rhsusf_acc_eotech_552 = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -498,6 +504,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_optic_acog2_pip = 1;
 					rhsusf_acc_compm4 = 1;
+					rhsusf_acc_eotech_552 = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
