@@ -308,7 +308,7 @@ class CfgVehicles {
 		isTriggerActivated = 0;
 		function = "twc_fnc_forceUncache";
 		curatorCanAttach = 1;
-		displayName = "Force a Group to Uncache";
+		displayName = "Force Uncache";
 	};
 
 	class TWC_Module_CreateTask: Module_F {
