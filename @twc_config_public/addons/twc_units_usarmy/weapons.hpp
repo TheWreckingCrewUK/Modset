@@ -139,7 +139,6 @@ class cfgWeapons
 				class compatibleItems {
 					CUP_optic_Elcan_SpecterDR_coyote_PIP = 1;
 					CUP_optic_Elcan_SpecterDR_coyote = 1;
-					CUP_optic_Elcan_SpecterDR_coyote_pip = 1;
 					cup_optic_elcan_specterdr_black = 1;
 					cup_optic_elcan_specterdr_black_pip = 1;
 					cup_optic_eotech553_coyote = 1;
@@ -396,7 +395,6 @@ class cfgWeapons
 				class compatibleItems {
 					CUP_optic_Elcan_SpecterDR_coyote_PIP = 1;
 					CUP_optic_Elcan_SpecterDR_coyote = 1;
-					CUP_optic_Elcan_SpecterDR_coyote_pip = 1;
 					cup_optic_elcan_specterdr_black = 1;
 					cup_optic_elcan_specterdr_black_pip = 1;
 					cup_optic_eotech553_coyote = 1;
@@ -494,7 +492,6 @@ class cfgWeapons
 				class compatibleItems {
 					CUP_optic_Elcan_SpecterDR_coyote_PIP = 1;
 					CUP_optic_Elcan_SpecterDR_coyote = 1;
-					CUP_optic_Elcan_SpecterDR_coyote_pip = 1;
 					cup_optic_elcan_specterdr_black = 1;
 					cup_optic_elcan_specterdr_black_pip = 1;
 					cup_optic_eotech553_coyote = 1;
