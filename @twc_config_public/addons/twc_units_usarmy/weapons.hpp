@@ -821,6 +821,7 @@ class cfgWeapons
 					rhsusf_acc_leupoldmk4_2_d = 1;
 					cup_optic_an_pvs_10 = 1;
 					rhsusf_acc_premier_anpvs27 = 1;
+					cup_optic_goshawk_ris = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -1038,7 +1039,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15A";
+				item="rhsusf_acc_anpeq15side";
 			};
 		};
 		class WeaponSlotsInfo
@@ -1052,7 +1053,7 @@ class cfgWeapons
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
 				class compatibleItems {
-					rhsusf_acc_anpeq15A = 1;
+					rhsusf_acc_anpeq15side = 1;
 				};
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
@@ -1155,7 +1156,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15A";
+				item="rhsusf_acc_anpeq15side";
 			};
 		};
 	};
@@ -1171,7 +1172,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15A";
+				item="rhsusf_acc_anpeq15side";
 			};
 			class LinkedItemsUnderBarrelSlot
 			{

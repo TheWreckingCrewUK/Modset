@@ -160,26 +160,26 @@
 		magazines[]=
 		{
 			"rhs_VOG25",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm"
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M"
 		};
 		Respawnmagazines[]=
 		{
 			"rhs_VOG25",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm",
-			"rhs_30Rnd_762x39mm"
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M"
 		};
 	};
 	class syr_twc_ins_Men_gren2: syr_twc_ins_Men_gren1
