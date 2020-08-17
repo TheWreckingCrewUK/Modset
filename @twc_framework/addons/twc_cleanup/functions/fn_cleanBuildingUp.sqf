@@ -13,7 +13,7 @@ if (_isRuin) then {
 	
 	{
 		if !(isPlayer _x) then {
-			if (_x isKindof "CAManBase") then {
+			if ((_x isKindof "CAManBase") || (_x isKindof "ReammoBox_F")) then {
 				if (alive _x) then {
 					_x setDamage 1;
 				};
