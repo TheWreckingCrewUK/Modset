@@ -1873,6 +1873,7 @@ class cfgWeapons
 					UK3CB_BAF_MaxiKite = 1;
 					cup_optic_an_pas_13c1 = 1;
 					rhsusf_acc_premier_anpvs27 = 1;
+					optic_tws = 1;
 				};
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L129A1: asdg_MuzzleSlot_762_L129_3CB {

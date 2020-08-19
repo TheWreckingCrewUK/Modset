@@ -111,26 +111,8 @@ class CfgWeapons {
 			mass=220;
 		};
 	};
-
-	class twc_l96_w_base;
-	class twc_l96_d_base;
-	class TWC_Weapon_L96_Woodland: twc_l96_w_base {
-		class LinkedItems {
-			class LinkedItemsOptic {
-				slot="CowsSlot";
-				item="cup_optic_leupoldmk4_10x40_lrt_woodland";
-			};
-		};
-	};
-
-	class TWC_Weapon_L96_Desert: twc_l96_d_base {
-		class LinkedItems {
-			class LinkedItemsOptic {
-				slot="CowsSlot";
-				item="cup_optic_leupoldmk4";
-			};
-		};
-	};
+	
+	
 	
 	class Rifle_Base_F;
 	class CUP_glaunch_Base: Rifle_Base_F {
