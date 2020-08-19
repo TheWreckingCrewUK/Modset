@@ -1258,13 +1258,13 @@
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_AKMS_GL_Early"
+		"CUP_arifle_AK47_GL_Early"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"CUP_arifle_AKMS_GL_Early"
+		"CUP_arifle_AK47_GL_Early"
 		};
 		magazines[]=
 		{

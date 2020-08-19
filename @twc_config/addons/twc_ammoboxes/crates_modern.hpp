@@ -409,8 +409,8 @@ class TWC_AmmoBox_Modern_Sniper_Portable: TWC_AmmoBox_Portable {
 	
 	class TransportMagazines {
 		maga_nc(UK3CB_BAF_762_L42A1_20Rnd, 4);
-		maga_nc(ACE_10Rnd_338_300gr_HPBT_Mag, 4);
-		maga_nc(ACE_10Rnd_338_API526_Mag, 2);
+		maga_nc(UK3CB_BAF_338_5Rnd, 4);
+		maga_nc(UK3CB_BAF_338_5Rnd_Tracer, 2);
 	};
 	
 	class TransportItems {

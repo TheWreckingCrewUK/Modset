@@ -609,15 +609,15 @@ class TWC_Infantry_Modern_Regular_Woodland_Sniper: TWC_Infantry_Modern_Regular_W
 	};
 	magazines[] =
 	{
-		MAG_6("ACE_10Rnd_338_300gr_HPBT_Mag"),
-		MAG_3("ACE_10Rnd_338_API526_Mag"),
+		MAG_6("UK3CB_BAF_338_5Rnd"),
+		MAG_3("UK3CB_BAF_338_5Rnd_Tracer"),
 		MAG_3("UK3CB_BAF_9_17Rnd"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
-		MAG_6("ACE_10Rnd_338_300gr_HPBT_Mag"),
-		MAG_3("ACE_10Rnd_338_API526_Mag"),
+		MAG_6("UK3CB_BAF_338_5Rnd"),
+		MAG_3("UK3CB_BAF_338_5Rnd_Tracer"),
 		MAG_3("UK3CB_BAF_9_17Rnd"),
 		MAG_2("SmokeShell")
 	};
@@ -661,7 +661,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Spotter: TWC_Infantry_Modern_Regular_
 	magazines[] =
 	{
 		MAG_7("UK3CB_BAF_762_L42A1_20Rnd"),
-		MAG_2("ACE_10Rnd_338_300gr_HPBT_Mag"),
+		MAG_2("UK3CB_BAF_338_5Rnd"),
 		MAG_3("UK3CB_BAF_9_17Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
@@ -669,7 +669,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Spotter: TWC_Infantry_Modern_Regular_
 	respawnmagazines[] =
 	{
 		MAG_7("UK3CB_BAF_762_L42A1_20Rnd"),
-		MAG_2("ACE_10Rnd_338_300gr_HPBT_Mag"),
+		MAG_2("UK3CB_BAF_338_5Rnd"),
 		MAG_3("UK3CB_BAF_9_17Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
