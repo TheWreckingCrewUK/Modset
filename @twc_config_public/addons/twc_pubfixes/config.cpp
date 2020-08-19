@@ -7,6 +7,11 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		
 		requiredAddons[] = {
+			"ace_medical",
+			"ace_medical_menu",
+			"TWC_Core",
+			"twc_framework",
+			"twc_medical",
 			"a3_weapons_f",
 			"cup_airvehicles_av8b",
 			"uk3cb_baf_weapons_smallarms",
@@ -32,6 +37,8 @@ class CfgPatches {
 #include "qol.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgMagazines.hpp"
+#include "ACE_Medical_Actions.hpp"
+#include "ACE_Medical_Advanced.hpp"
 
 
 
