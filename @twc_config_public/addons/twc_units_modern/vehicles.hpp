@@ -932,7 +932,7 @@
 		};
 	};
 	class twc_M1239_M2_Deploy_socom_d: rhsusf_M1239_M2_Deploy_socom_d {
-		
+		turnCoef = 5;
 		class Turrets: Turrets
 		{
 			class CROWS_Turret: CROWS_Turret
@@ -974,10 +974,10 @@
 				dampingRateDestroyed = 800;
 				//maxBrakeTorque = 12500;
 				maxHandBrakeTorque = 50000;
-				maxCompression = 0.4;
-				sprungMass = 4250;
-				springStrength = 155000;
-				springDamperRate = 8000;
+				maxCompression = 0.5;
+			//	sprungMass = 4250;
+				springStrength = 295000;
+				springDamperRate = 9000;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -990,10 +990,10 @@
 				dampingRateDamaged = 2;
 				dampingRateDestroyed = 800;
 				//maxBrakeTorque = 12500;
-				maxCompression = 0.4;
-				sprungMass = 4250;
-				springStrength = 155000;
-				springDamperRate = 8000;
+				maxCompression = 0.5;
+			//	sprungMass = 4250;
+				springStrength = 225000;
+				springDamperRate = 9000;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -1006,10 +1006,10 @@
 				dampingRateDamaged = 2;
 				dampingRateDestroyed = 800;
 				//maxBrakeTorque = 12500;
-				maxCompression = 0.4;
-				sprungMass = 4250;
-				springStrength = 155000;
-				springDamperRate = 8000;
+				maxCompression = 0.5;
+			//	sprungMass = 4250;
+				springStrength = 225000;
+				springDamperRate = 9000;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -1023,10 +1023,10 @@
 				dampingRateDestroyed = 800;
 				//maxBrakeTorque = 12500;
 				maxHandBrakeTorque = 50000;
-				maxCompression = 0.4;
-				sprungMass = 4250;
-				springStrength = 155000;
-				springDamperRate = 8000;
+				maxCompression = 0.5;
+			//	sprungMass = 4250;
+				springStrength = 295000;
+				springDamperRate = 9000;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -1039,10 +1039,10 @@
 				dampingRateDamaged = 2;
 				dampingRateDestroyed = 800;
 				//maxBrakeTorque = 12500;
-				maxCompression = 0.4;
-				sprungMass = 4250;
-				springStrength = 155000;
-				springDamperRate = 8000;
+				maxCompression = 0.5;
+			//	sprungMass = 4250;
+				springStrength = 225000;
+				springDamperRate = 9000;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -1055,10 +1055,10 @@
 				dampingRateDamaged = 2;
 				dampingRateDestroyed = 800;
 				//maxBrakeTorque = 12500;
-				maxCompression = 0.4;
+				maxCompression = 0.5;
 				sprungMass = 4250;
-				springStrength = 155000;
-				springDamperRate = 8000;
+				springStrength = 225000;
+				springDamperRate = 9000;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -1083,8 +1083,8 @@
 				maxDroop = 0.15;
 				springDamperRate = 4000;
 				maxHandBrakeTorque = 30000;
-				springStrength = 28000;
-				sprungMass = 925;
+				springStrength = 40000;
+				//sprungMass = 925;
 			};
 		};
 	};
@@ -1101,12 +1101,12 @@
 		class Wheels:Wheels {
 			class LF:LF {
 				frictionVsSlipGraph[] = {{ 0.1, 0.5 }, { 0.25, 0.2 }, { 0.5, 0.45 }};
-				maxCompression = 0.35;
+				maxCompression = 0.3;
 				maxDroop = 0.15;
 				maxHandBrakeTorque = 30000;
 				springDamperRate = 4000;
-				springStrength = 28000;
-				sprungMass = 925;
+				springStrength = 40000;
+				//sprungMass = 925;
 			};
 		};
 		class Turrets;
@@ -1267,13 +1267,15 @@
 		ace_cargo_canLoad = 1;
 		ace_cargo_hasCargo = 1;
 		ace_cargo_space = 2;
+		antiRollbarForceCoef = 0;
+		antiRollbarForceLimit = 0;
 		differentialType = "all_limited";
 		frontBias = 2;
 		centerBias = 0.5;
 		frontRearSplit = 0.2;
 		clutchStrength = 2.0;
 		rearBias = 2;
-		turnCoef = 2.5;
+		turnCoef = 3;
 		maxSpeed = 115;
 		normalSpeedForwardCoef = 1.1;
 		maxOmega = 937.76;
@@ -1288,20 +1290,20 @@
 			dampingRate = 0.1;
 			dampingRateDamaged = 1;
 			dampingRateDestroyed = 1000;
-			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.1, 0.3 }, { 1.0, 0.2 }};
+			frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.1, 0.45 }, { 1.0, 0.3 }};
 			latStiffX = 10;
 			latStiffY = 120;
 			longitudinalStiffnessPerUnitGravity = 2000;
 			mass = 40;
-			maxCompression = 0.5;
-			maxDroop = 0.08;
+			maxCompression = 0.3;
+			maxDroop = 0.06;
 			maxHandBrakeTorque = 100;
 			MOI = 10;
 			side = "left";
-			springDamperRate = 2500;
-			springStrength = 7000;
-			sprungMass = 260;
-			maxBrakeTorque = 200;
+			springDamperRate = 2000;
+			springStrength = 12000;
+			//sprungMass = 230;
+			maxBrakeTorque = 400;
 			steering = 1;
 			suspForceAppPointOffset = "wheel_1_1_axis";
 			suspTravelDirection[] = {0,-1,0};
@@ -1309,31 +1311,31 @@
 			width = 0.2;
 			};
 			class RF:LF {
-			maxCompression = 0.5;
-			springDamperRate = 2500;
-			springStrength = 7000;
-			sprungMass = 260;
-			maxBrakeTorque = 200;
+			maxCompression = 0.3;
+			springDamperRate = 2000;
+			springStrength = 12000;
+			//sprungMass = 230;
+			maxBrakeTorque = 400;
 			};
 			class RR: RF {
-			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.2, 0.3 }, { 1.0, 0.7 }};
-			maxCompression = 0.5;
-			springDamperRate = 2500;
-			springStrength = 7000;
+			frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.2, 0.45 }, { 1.0, 0.65 }};
+			maxCompression = 0.7;
+			springDamperRate = 2000;
+			springStrength = 12000;
 			maxHandBrakeTorque = 1300;
-			sprungMass = 260;
+			//sprungMass = 230;
 			MOI = 40;
-			maxBrakeTorque = 900;
+			maxBrakeTorque = 1300;
 			};
 			class LR: LF {
-			frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.2, 0.3 }, { 1.0, 0.5 }};
-			maxCompression = 0.5;
-			springDamperRate = 2500;
-			springStrength = 7000;
+			frictionVsSlipGraph[] = {{ 0.0, 0.6 }, { 0.2, 0.45 }, { 1.0, 0.65 }};
+			maxCompression = 0.7;
+			springDamperRate = 2000;
+			springStrength = 12000;
 			maxHandBrakeTorque = 1300;
-			sprungMass = 260;
+			//sprungMass = 230;
 			MOI = 40;
-			maxBrakeTorque = 900;
+			maxBrakeTorque = 1300;
 			};
 			
 		};
