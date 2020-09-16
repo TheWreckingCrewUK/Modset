@@ -158,6 +158,7 @@ class CfgWeapons {
 	class Rifle_Base_F:Rifle
 	{
 	};
+	/*
 	
 	class CUP_arifle_AK_Base: Rifle_Base_F
 	{
@@ -206,6 +207,247 @@ class CfgWeapons {
 		recoilProne = "twc_rifle_762_prone";
 		discretedistanceinitindex = 1;
 	};
+	*/
+	
+	class CUP_arifle_AK_Base: Rifle_Base_F
+	{
+		class Single;
+		class Burst;
+		class FullAuto;
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		discretedistanceinitindex = 1;
+	};
+	
+	
+	
+	class CUP_arifle_AK74: CUP_arifle_AK_Base
+	{
+		
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;		
+		};
+	};
+	
+	class CUP_arifle_AK74_GL: CUP_arifle_AK_Base
+	{
+		
+		class Single:Single {
+			dispersion = 0.002;		
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	
+	class CUP_arifle_AK74M: CUP_arifle_AK_Base
+	{
+		
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	
+	class CUP_arifle_AK74M_GL: CUP_arifle_AK_Base
+	{
+		
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	
+	class CUP_arifle_AKS_Base: CUP_arifle_AK_Base
+	{
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	
+	class CUP_arifle_AKS74: CUP_arifle_AKS_Base
+	{
+		
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	
+	class CUP_arifle_AKS74U: CUP_arifle_AKS_Base
+	{
+		
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	
+	
+	class CUP_arifle_RPK74: CUP_arifle_AK74
+	{
+		
+		class Single:Single {
+			dispersion = 0.0015;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0025;		
+		};
+		class Burst:Burst {
+			dispersion = 0.002;		
+		};
+		class Manual: mode_fullauto {
+			dispersion = 0.0025;		
+		};
+		class close: Manual {
+			dispersion = 0.002;		
+		};
+		class far: close {
+			dispersion = 0.002;		
+		};
+		class medium: close {
+			dispersion = 0.002;		
+		};
+		class short: close {
+			dispersion = 0.002;		
+		};
+	};
+	
+	class CUP_arifle_AKM: CUP_arifle_AK_Base
+	{
+		
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	class CUP_arifle_TYPE_56_2: CUP_arifle_AKM
+	{
+		
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	
+	class CUP_arifle_AK47: CUP_arifle_AK_Base
+	{
+		
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	
+	class CUP_arifle_AKS: CUP_arifle_AKM
+	{
+		
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	
+	
+	class CUP_arifle_AKM_GL: CUP_arifle_AKM
+	{
+		
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	
+	class CUP_arifle_AKMS_GL: CUP_arifle_AKM_GL
+	{
+		
+		recoil = "twc_rifle_762";
+		recoilProne = "twc_rifle_762_prone";
+		class Single:Single {
+			dispersion = 0.002;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;	
+		};
+		class Burst:Burst {
+			dispersion = 0.0035;	
+		};
+	};
+	
+	
 	
 	class CUP_sgun_M1014_base: Rifle_Base_F
 	{

@@ -16,10 +16,10 @@ class CfgPatches {
 			"cup_airvehicles_av8b",
 			"uk3cb_baf_weapons_smallarms",
 			"UK3CB_BAF_Vehicles",
-			"cup_wheeledvehicles_mastiff",
-			"cup_trackedvehicles_mcv80",
 			"uk3cb_baf_vehicles_landrover",
 			"uk3cb_baf_vehicles_coyote_jackal",
+			"cup_wheeledvehicles_mastiff",
+			"cup_trackedvehicles_mcv80",
 			"UK3CB_BAF_Equipment_Backpacks",
 			"CUP_Creatures_Military_USArmy",
 			"CUP_Weapons_WeaponsCore",
@@ -35,7 +35,7 @@ class CfgPatches {
 #include "CfgAmmo.hpp"
 #include "CfgWeapons.hpp"
 #include "qol.hpp"
-#include "CfgVehicles.hpp"
+//#include "CfgVehicles.hpp"
 #include "CfgMagazines.hpp"
 #include "ACE_Medical_Actions.hpp"
 #include "ACE_Medical_Advanced.hpp"
@@ -49,7 +49,7 @@ class CfgPatches {
 class Extended_HitPart_EventHandlers {
 	class man {
 		class twc_vitalhit {
-			HitPart = "(_this select 0) params ['_target', '_shooter', '_projectile', '_position', '_velocity', '_selection', '_ammo', '_vector', '_radius', '_surfaceType', '_isDirect'];if (isplayer _target) exitwith {_this call twc_fnc_playerheadshot};if (!alive _target) exitwith {};if (('head' in _selection) && (_isdirect)) exitwith {[_target, {if (isDamageAllowed _this) then {_this setdamage 1;};}] remoteExec ['call', _target];}; if (!(('head' in _selection) || ('spine1' in _selection)|| ('spine2' in _selection)|| ('spine3' in _selection) || ('neck' in _selection))) exitwith {};_value = (_ammo select 0); if ((_value > 6.5) || ((lifeState _target) != 'HEALTHY')) then {[_target, {if (isDamageAllowed _this) then {_this setdamage 1;};}] remoteExec ['call', _target];};";
+			HitPart = "(_this select 0) params ['_target', '_shooter', '_projectile', '_position', '_velocity', '_selection', '_ammo', '_vector', '_radius', '_surfaceType', '_isDirect'];if (isplayer _target) exitwith {_this call twc_fnc_playerheadshot};if (!alive _target) exitwith {};if (!_isdirect) exitwith {}; if ((('head' in _selection) || ('spine3' in _selection))) exitwith {[_target, {if (isDamageAllowed _this) then {_this setdamage 1;};}] remoteExec ['call', _target];}; if (!(('spine1' in _selection) || ('neck' in _selection))) exitwith {};_value = (_ammo select 0); if ((_value > 6.5) || ((lifeState _target) != 'HEALTHY')) then {[_target, {if (isDamageAllowed _this) then {_this setdamage 1;};}] remoteExec ['call', _target];};";
 		};
 	};
 };
@@ -72,7 +72,7 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class CAManBase {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_amount = 2.8; if ((_this select 1) in (missionnamespace getvariable ['twc_subguns', ['TWC_CUP_smg_MP5A5_flashlight_clean', 'rhsusf_weap_MP7A2_desert', 'TWC_CUP_smg_MP5SD6_clean', 'fow_w_sten_mk5', 'LIB_Sten_Mk5', 'LIB_Sten_Mk2', 'SP_smg_sterling']])) then {_amount = 0.8;};addCamShake [_amount, 0.4, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_amount = 2.8; if ((_this select 1) in (missionnamespace getvariable ['twc_subguns', ['TWC_CUP_smg_MP5A5_flashlight_clean', 'rhsusf_weap_MP7A2_desert', 'TWC_CUP_smg_MP5SD6_clean', 'fow_w_sten_mk5', 'LIB_Sten_Mk5', 'LIB_Sten_Mk2', 'SP_smg_sterling']])) then {_amount = 1.0;};addCamShake [_amount, 0.4, 15]};";
 		};
 	};
 	class Helicopter_Base_F {
@@ -82,7 +82,7 @@ class Extended_FiredBIS_EventHandlers {
 	};
 	class Plane {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2; addCamShake [_rec, 0.5, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((typeof (_this select 0)) in ['USAF_AC130U']) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 2; addCamShake [_rec, 0.5, 15]};";
 		};
 	};
 	class Car_F {

@@ -19,7 +19,7 @@ class Extended_Init_EventHandlers
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.0933615,0.450011,-1.2]";
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.0933615,0.20011,-1.2]";
 		};
 	};
 	class UK3CB_BAF_MAN_HX60_Cargo_Base
@@ -135,7 +135,7 @@ class cfgRecoils
 	};
 	class twc_rifle_556_short
 	{
-		muzzleOuter[]	= { 0.07,  0.25,  0.015,  0.3 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
+		muzzleOuter[]	= { 0.07,  0.22,  0.012,  0.15 }; //horizontal size, vertical size, horizontal jitter, vertical jitter
 		kickBack[]	= { 0.04, 0.06 }; //min/max force
 		permanent	= 0.3; //muzzle climb post-recoil, means nothing when on bipod
 		temporary	= 0.12; //muzzle jump
