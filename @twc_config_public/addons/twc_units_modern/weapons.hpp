@@ -1480,13 +1480,46 @@ class cfgWeapons
 	{
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";
-		reloadAction = "GestureReloadSPAR_01";
-		reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_reload",1,0.85,10};
+	//	reloadAction = "GestureReloadSPAR_01";
+	//	reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_reload",1,0.85,10};
 		class Single:Single {
-			dispersion = 0.0015;
+			dispersion = 0.002;
 		};
 		class FullAuto:FullAuto {
+			dispersion = 0.003;
+		};
+		class Burst: Mode_Burst {
+			dispersion = 0.003;
+		};
+	};
+	class rhs_weap_m16a4: rhs_weap_m4_Base
+	{
+		class Single:Single {
+			dispersion = 0.001;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.003;
+		};
+		class Burst: Burst {
+			dispersion = 0.003;
+		};
+	};
+	class rhs_weap_m4a1: rhs_weap_m4_Base
+	{
+	};
+	class rhs_weap_m4a1_blockII: rhs_weap_m4a1
+	{
+	};
+	class rhs_weap_mk18: rhs_weap_m4a1_blockII
+	{
+		class Single:Single {
 			dispersion = 0.0025;
+		};
+		class FullAuto:FullAuto {
+			dispersion = 0.0035;
+		};
+		class Burst: Burst {
+			dispersion = 0.0035;
 		};
 	};
 
@@ -2679,7 +2712,6 @@ class cfgWeapons
 	
 
 	
-	class rhs_weap_m4a1;
 	class twc_m4_acog_grip_laser: rhs_weap_m4a1
 	{
 		
