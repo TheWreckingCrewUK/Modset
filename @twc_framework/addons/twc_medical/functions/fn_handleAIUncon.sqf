@@ -3,6 +3,8 @@ params ["_unit"];
 if (!local _unit) exitWith {};
 if (!alive _unit) exitWith {};
 
+if (missionnamespace getvariable ["twc_pubaiuncon", false]) exitwith {};
+
 _unCon = (_unit getVariable ["ACE_isUnconscious", false]);
 _continue = _unCon;
 

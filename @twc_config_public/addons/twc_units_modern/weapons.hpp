@@ -65,6 +65,7 @@ class cfgWeapons
 	class twc_optic_vortex_11_8x20_PM: CUP_optic_SB_11_4x20_PM
 	{
 		displayName = "Schmidt and Bender 1-8x25 PM ShortDot";
+		descriptionShort = "Low Power Variable Optic (LPVO). 1-8x Magnification";
 		class iteminfo: InventoryOpticsItem_Base_F
 		{
 			allowedSlots[] = {801,701,901};
@@ -208,6 +209,11 @@ class cfgWeapons
 				slot="PointerSlot";
 				item="cup_acc_anpeq_15_flashlight_tan_f";
 			};
+			class LinkedItemsMuzzle
+			{
+				slot="PointerSlot";
+				item="rhsusf_acc_rotex_mp7_desert";
+			};
 		};
 		class WeaponSlotsInfo
 		{
@@ -220,6 +226,7 @@ class cfgWeapons
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
 					twc_acc_rotex5_grey = 1;
+					rhsusf_acc_rotex_mp7_desert = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -1476,10 +1483,10 @@ class cfgWeapons
 		reloadAction = "GestureReloadSPAR_01";
 		reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_reload",1,0.85,10};
 		class Single:Single {
-			dispersion = 0.001;
+			dispersion = 0.0015;
 		};
 		class FullAuto:FullAuto {
-			dispersion = 0.001;
+			dispersion = 0.0025;
 		};
 	};
 

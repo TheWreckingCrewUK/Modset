@@ -75,14 +75,15 @@ class cfgWeapons
 	{
 		recoil = "twc_rifle_556_short";
 		recoilProne = "twc_rifle_556_short_prone";
-		initSpeed = -0.8979;
+	//	initSpeed = -0.85;
+		ACE_barrelLength = 240;
 		displayname = "MK18 MOD 1";
 		model = "\rhsusf\addons\rhsusf_weapons3\M4BII\MK18.p3d";
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo8"};
 		hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_weapons\m4\data\m4a1_actual_co.paa","\rhsusf\addons\rhsusf_weapons3\M4BII\Data\rhs_mk18rail_t_co.paa","rhsusf\addons\rhsusf_weapons\acc\grips\grippod\data\acc_co.paa","rhsusf\addons\rhsusf_weapons\m4\data\m4acc_co.paa","rhsusf\addons\rhsusf_weapons\m4\data\magpulstock_co.paa","\rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa"};
 		class Single:Mode_SemiAuto {
 			//sounds[] = {"StandardSound"};
-			dispersion = 0.004;
+			dispersion = 0.0025;
 			class StandardSound {
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
@@ -92,7 +93,7 @@ class cfgWeapons
 		};
 		class Burst:Mode_Burst {
 			//sounds[] = {"StandardSound"};
-			dispersion = 0.004;
+			dispersion = 0.0025;
 			class StandardSound {
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
@@ -103,7 +104,7 @@ class cfgWeapons
 		class FullAuto:Mode_FullAuto {
 			//sounds[] = {"StandardSound"};
 			reloadTime = 0.06;
-			dispersion = 0.004;
+			dispersion = 0.0035;
 			class StandardSound {
 				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
 			};
@@ -169,7 +170,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="cup_optic_eotech553_coyote";
+				item="CUP_optic_G33_HWS_COYOTE_DWN";
 			};
 			class LinkedItemsFrontSideRail
 			{
@@ -187,6 +188,8 @@ class cfgWeapons
 			class CowsSlot: rhs_western_rifle_scopes_slot_short {
 				class compatibleItems {
 					cup_optic_eotech553_coyote = 1;
+					CUP_optic_G33_HWS_COYOTE_DWN = 1;
+					CUP_optic_G33_HWS_COYOTE = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
@@ -822,6 +825,7 @@ class cfgWeapons
 					cup_optic_an_pvs_10 = 1;
 					rhsusf_acc_premier_anpvs27 = 1;
 					cup_optic_goshawk_ris = 1;
+					CUP_optic_CWS = 1;
 				};
 			};
 			class PointerSlot: rhs_western_rifle_laser_slot_top {
