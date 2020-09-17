@@ -56,28 +56,28 @@ class Extended_Init_EventHandlers
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [0.0543661,3.0,-0.95]";
+			serverinit = "params ['_car']; _car setCenterOfMass [0.0543661,3.2,-0.95]";
 		};
 	};
 	class UK3CB_BAF_MAN_HX58_Fuel_Base
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [0.0542845,0.0186793,-1.0]";
+			serverinit = "params ['_car']; _car setCenterOfMass [0.0542845,-0.186793,-1]";
 		};
 	};
 	class UK3CB_BAF_MAN_HX58_Repair_Base
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [0.0542845,0.024607,-1.05]";
+			serverinit = "params ['_car']; _car setCenterOfMass [0.06,-0.04607,-1.05]";
 		};
 	};
 	class UK3CB_BAF_MAN_HX58_Transport_Base
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.814309,1.5]";
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,0.114309,-1.25]";
 		};
 	};
 	class CUP_Wolfhound_Base
@@ -113,6 +113,13 @@ class Extended_Init_EventHandlers
 		};
 	};
 	
+	class UK3CB_BAF_LandRover_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [0.00841949,0.511681,-1.03113]";
+		};
+	};
 };
 
 

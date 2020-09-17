@@ -35,7 +35,7 @@ class CfgPatches {
 #include "CfgAmmo.hpp"
 #include "CfgWeapons.hpp"
 #include "qol.hpp"
-//#include "CfgVehicles.hpp"
+#include "CfgVehicles.hpp"
 #include "CfgMagazines.hpp"
 #include "ACE_Medical_Actions.hpp"
 #include "ACE_Medical_Advanced.hpp"
