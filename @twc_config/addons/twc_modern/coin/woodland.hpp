@@ -1015,6 +1015,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Javelin_Ass: TWC_Infantry_Modern_Regular
 class TWC_Infantry_Modern_COIN_Woodland_Sniper: TWC_Infantry_Modern_Regular_Woodland_Sniper
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
+	uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -1024,23 +1025,60 @@ class TWC_Infantry_Modern_COIN_Woodland_Sniper: TWC_Infantry_Modern_Regular_Wood
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
+	};
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_Marksman_A",
+		"UK3CB_BAF_H_Mk7_Scrim_F",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_Marksman_A",
+		"UK3CB_BAF_H_Mk7_Scrim_F",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
 class TWC_Infantry_Modern_COIN_Woodland_Spotter: TWC_Infantry_Modern_Regular_Woodland_Spotter
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
+	uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
 	backpack = "TWC_Backpack_Modern_COIN_Woodland_Spotter";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_Kestrel4500",
+		"ACE_ATragMX"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_Kestrel4500",
+		"ACE_ATragMX"
+	};
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_Marksman_A",
+		"UK3CB_BAF_H_Mk7_Scrim_F",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_Marksman_A",
+		"UK3CB_BAF_H_Mk7_Scrim_F",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
 

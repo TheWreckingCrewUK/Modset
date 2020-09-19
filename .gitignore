@@ -1,1 +1,3 @@
 *.pbo
+@twc_config_public/addons/rhs_phystest/config.cpp
+@twc_config_public/addons/3cb_phystest/config.cpp

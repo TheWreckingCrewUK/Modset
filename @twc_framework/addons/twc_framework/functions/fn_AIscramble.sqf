@@ -32,10 +32,10 @@ if (_simplemode) exitwith {
 			params ["_unit"];
 			
 			if ((getSuppression _unit) > 0.02) then {
-				_needsmove = _unit getvariable ["twc_scramble_lastmove", -999];
-				if (_needsmove > (time - (10 + (random 30)))) exitwith {};
+				_canmove = _unit getvariable ["twc_scramble_canmove", false];
+				if (!_canmove) exitwith {};
 				
-				_unit setvariable ["twc_scramble_lastmove", time];
+				_unit setvariable ["twc_scramble_canmove", true];
 				
 				_enemy = _enemy findnearestenemy (getpos _enemy);
 				if (isnil "_enemy") then {
@@ -56,6 +56,34 @@ if (_simplemode) exitwith {
 				};
 				if ((count _check) == 0) exitwith {};
 				[[_unit]] call ace_ai_fnc_unGarrison;
+				
+				if ((_unit distance _enemy) > 100) then {
+					[_unit, _npos] spawn {
+						params ["_unit", "_npos"];
+						_oldgroup = (group _unit);
+						_placeholder = _oldgroup createunit ["B_UAV_AI", [0,0,1000]];
+						_newgroup = creategroup civilian;
+						[_unit] joinsilent _newgroup;
+						_unit domove _npos;
+				//		systemchat ("joined " + (str _newgroup));
+						
+						_timeout = time + ((((_unit distance _npos) * 0.05) min 30) + (random 8));
+						while {((_unit distance _npos) > 3) && (time < _timeout)} do {
+							sleep 2;
+						};
+				//		systemchat ("returned to " + (str _oldgroup));
+						[_unit] joinsilent _oldgroup;
+						deletevehicle _placeholder;
+					};
+				} else {
+					_timeout = time + ((((_unit distance _npos) * 0.05) min 30) + (random 8));
+					while {((_unit distance _npos) > 3) && (time < _timeout)} do {
+						sleep 2;
+					};
+					_unit setvariable ["twc_scramble_canmove", true];
+				};
+				
+				
 				_unit domove _npos;
 			};
 		}];
@@ -63,10 +91,10 @@ if (_simplemode) exitwith {
 			params ["_unit"];
 			
 			if ((getSuppression _unit) > 0.02) then {
-				_needsmove = _unit getvariable ["twc_scramble_lastmove", -999];
-				if (_needsmove > (time - (10 + (random 30)))) exitwith {};
+				_canmove = _unit getvariable ["twc_scramble_canmove", false];
+				if (!_canmove) exitwith {};
 				
-				_unit setvariable ["twc_scramble_lastmove", time];
+				_unit setvariable ["twc_scramble_canmove", true];
 				
 				_enemy = _enemy findnearestenemy (getpos _enemy);
 				if (isnil "_enemy") then {
@@ -88,6 +116,12 @@ if (_simplemode) exitwith {
 				if ((count _check) == 0) exitwith {};
 				[[_unit]] call ace_ai_fnc_unGarrison;
 				_unit domove _npos;
+				
+				_timeout = time + ((((_unit distance _npos) * 0.05) min 30) + (random 8));
+				while {((_unit distance _npos) > 3) && (time < _timeout)} do {
+					sleep 2;
+				};
+				_unit setvariable ["twc_scramble_canmove", true];
 			};
 		}];
 	} foreach (units _group);

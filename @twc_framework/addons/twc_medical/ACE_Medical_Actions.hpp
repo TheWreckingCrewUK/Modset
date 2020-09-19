@@ -10,7 +10,11 @@ class ACE_Medical_Actions {
 		};
 		
 		class PackingBandage: FieldDressing {
-			treatmentTime = 6;
+			items[] = {{"ACE_packingBandage", "ACE_fieldDressing", "ACE_elasticBandage"}};
+			displayName = "Pack Wound";
+			displayNameProgress  = "Packing Wound...";
+			condition = "((count((_this select 1) getvariable ['ACE_Medical_openWounds', []])) > 0)";
+			treatmentTime = 8;
 		};
 		
 		class ElasticBandage: FieldDressing {

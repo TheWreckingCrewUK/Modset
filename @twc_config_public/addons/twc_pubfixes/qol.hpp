@@ -1,13 +1,19 @@
+//quality-of-life
 
-class Extended_Init_EventHandlers
-{
-	class CBA_B_InvisibleTarget
-	{
-		class baseobject
-		{
-			serverinit = "params ['_entity']; [_entity] spawn {params ['_entity']; waituntil {!isnil 'twc_fnc_baseobject'};[_entity] spawn twc_fnc_baseobject}";
+
+
+class Extended_HitPart_EventHandlers {
+	class man {
+		class twc_vitalhit {
+			HitPart = "(_this select 0) params ['_target', '_shooter', '_projectile', '_position', '_velocity', '_selection', '_ammo', '_vector', '_radius', '_surfaceType', '_isDirect'];if (isplayer _target) exitwith {_this call twc_fnc_playerheadshot};if (!alive _target) exitwith {};if (!_isdirect) exitwith {}; if ((('head' in _selection) || ('spine3' in _selection))) exitwith {[_target, {if (isDamageAllowed _this) then {_this setdamage 1;};}] remoteExec ['call', _target];}; if (!(('spine1' in _selection) || ('neck' in _selection))) exitwith {};_value = (_ammo select 0); if ((_value > 6.5) || ((lifeState _target) != 'HEALTHY')) then {[_target, {if (isDamageAllowed _this) then {_this setdamage 1;};}] remoteExec ['call', _target];};";
 		};
 	};
+};
+
+
+//center of gravity improvements
+class Extended_Init_EventHandlers
+{
 	class CUP_Ural_BaseTurret
 	{
 		class cog

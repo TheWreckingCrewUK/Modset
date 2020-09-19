@@ -4,32 +4,7 @@ class UK3CB_BAF_SUSAT_3D;
 class UK3CB_BAF_L135A1;
 
 
-class UK3CB_BAF_L115A3;
-class UK3CB_BAF_L115A3_DE;
-class twc_weapon_l96_woodland: UK3CB_BAF_L115A3 {
-	scope = 1;
-	displayname = "L96A1";
-	magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd", "UK3CB_BAF_762_L42A1_10Rnd_T"};
-		class LinkedItems {
-		class LinkedItemsOptic {
-			slot="asdg_OpticRail_UK3CB_BAF_L115";
-			item="cup_optic_leupoldmk4_10x40_lrt_woodland";
-		};
-	};
-};
 
-class twc_weapon_l96_desert: UK3CB_BAF_L115A3_DE {
-	scope = 1;
-	displayname = "L96A1";
-	magazines[] = {"UK3CB_BAF_762_L42A1_10Rnd", "UK3CB_BAF_762_L42A1_10Rnd_T"};
-	
-	class LinkedItems {
-		class LinkedItemsOptic {
-			slot="asdg_OpticRail_UK3CB_BAF_L115";
-			item="cup_optic_leupoldmk4";
-		};
-	};
-};
 class TWC_Weapon_L86A1: UK3CB_BAF_L86A2 {
 	displayName = "L86A1";
 	ACE_Overheating_JamChance[] = {0, 0.0012, 0.0018, 0.0033};

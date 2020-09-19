@@ -2204,12 +2204,12 @@
 		{
 			class _xx_Lapua
 			{
-				magazine = "ACE_10Rnd_338_300gr_HPBT_Mag";
+				magazine = "TWC_5Rnd_338_300gr_HPBT_Mag";
 				count = 4;
 			};
 			class _xx_LapuaAP
 			{
-				magazine = "ACE_10Rnd_338_API526_Mag";
+				magazine = "TWC_5Rnd_338_API526_Mag";
 				count = 3;
 			};
 		};
@@ -2394,7 +2394,7 @@
 		{
 			class _xx_338
 			{
-				magazine = "ACE_10Rnd_338_300gr_HPBT_Mag";
+				magazine = "TWC_5Rnd_338_300gr_HPBT_Mag";
 				count = 5;
 			};
 			class _xx_762

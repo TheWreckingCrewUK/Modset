@@ -209,6 +209,50 @@ class cfgWeapons
 				slot="PointerSlot";
 				item="cup_acc_anpeq_15_flashlight_tan_f";
 			};
+		};
+		class WeaponSlotsInfo
+		{
+			class CowsSlot: rhs_western_rifle_scopes_slot_short {
+				class compatibleItems {
+					cup_optic_microt1_low_coyote = 1;
+					rhsusf_acc_eotech = 1;
+				};
+			};
+			class MuzzleSlot: asdg_MuzzleSlot_556 {
+				class compatibleItems {
+					twc_acc_rotex5_grey = 1;
+					rhsusf_acc_rotex_mp7_desert = 1;
+				};
+			};
+			class PointerSlot: rhs_western_rifle_laser_slot_top {
+				class compatibleItems {
+					acc_pointer_IR = 1;
+					cup_acc_anpeq_15_flashlight_tan_l = 1;
+					cup_acc_anpeq_15_flashlight_tan_f = 1;
+					cup_acc_anpeq_15_flashlight_tan_v = 1;
+					ACE_acc_pointer_red = 1;
+				};
+			};
+			allowedslots[] = {701,901};
+			mass = 35;
+		};
+	
+	};
+	class rhsusf_weap_MP7A2_desert_night: rhsusf_weap_MP7A2_desert
+	{
+		
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="uk3cb_baf_kite";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="cup_acc_anpeq_15_flashlight_tan_f";
+			};
 			class LinkedItemsMuzzle
 			{
 				slot="PointerSlot";
@@ -221,6 +265,7 @@ class cfgWeapons
 				class compatibleItems {
 					cup_optic_microt1_low_coyote = 1;
 					rhsusf_acc_eotech = 1;
+					uk3cb_baf_kite = 1;
 				};
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
@@ -1124,14 +1169,8 @@ class cfgWeapons
 	class ACE_launch_NLAW_ready_F: launch_NLAW_F
 	{
 		class EventHandlers: EventHandlers {
-			fired = "_this call CBA_fnc_firedDisposable;if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
+			fired = "if (!(isplayer (_this select 0))) then {[_this select 6, _this select 0] call twc_fnc_aps;};";
 		};
-	};
-	
-	class CUP_launch_RPG7V: Launcher_Base_F
-	{
-		reloadAction = "RHS_GestureReloadRPG7";
-		reloadMagazineSound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final",0.562341,1,50};
 	};
 	class rhs_weap_rpg7: Launcher_Base_F
 	{
@@ -1267,9 +1306,6 @@ class cfgWeapons
 		class manual:gatling_30mm
 		{
 			dispersion=0.012;
-		};
-		class EventHandlers: EventHandlers {
-			fired = "if (!local (_this select 0)) exitwith {}; if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
 		};
 	};
 	
@@ -1495,7 +1531,7 @@ class cfgWeapons
 	class rhs_weap_m16a4: rhs_weap_m4_Base
 	{
 		class Single:Single {
-			dispersion = 0.001;
+			dispersion = 0.0015;
 		};
 		class FullAuto:FullAuto {
 			dispersion = 0.003;
@@ -1556,12 +1592,10 @@ class cfgWeapons
 	
 	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F
 	{
-		class Single:Single {
-			dispersion = 0.001;
-		};
-		class FullAuto:FullAuto {
-			dispersion = 0.001;
-		};
+	};
+	
+	class UK3CB_BAF_L86A2: UK3CB_BAF_L85A2
+	{
 	};
 	
 	class twc_BAF_L85A2_PUBLIC : UK3CB_BAF_L85A2

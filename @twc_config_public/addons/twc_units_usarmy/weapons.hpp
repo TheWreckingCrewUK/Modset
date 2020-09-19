@@ -434,7 +434,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
-				item="rhsusf_acc_g33_xps3";
+				item="rhsusf_acc_g33_xps3_flip";
 			};
 			class LinkedItemsFrontSideRail
 			{

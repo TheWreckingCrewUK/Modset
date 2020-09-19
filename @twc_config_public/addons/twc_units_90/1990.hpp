@@ -2068,7 +2068,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"twc_l96_d",
+		"TWC_Weapon_L96_Desert",
 		"UK3CB_BAF_L9A1"
 		};
 		respawnweapons[]=
@@ -2076,7 +2076,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"twc_l96_d",
+		"TWC_Weapon_L96_Desert",
 		"UK3CB_BAF_L9A1"
 		};
 		magazines[]=

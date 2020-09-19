@@ -1224,13 +1224,13 @@
 		weapons[]= {
 			"Throw",
 			"Put",
-			"twc_l96_w"
+			"TWC_Weapon_L96_Woodland"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_l96_w"
+			"TWC_Weapon_L96_Woodland"
 		};
 
 		magazines[]= {
@@ -1319,14 +1319,14 @@
 			"Throw",
 			"Put",
 			"ACE_Yardage450",
-			"twc_l96_w"
+			"TWC_Weapon_L96_Woodland"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"ACE_Yardage450",
-			"twc_l96_w"
+			"TWC_Weapon_L96_Woodland"
 		};
 
 		magazines[]= {
@@ -1836,7 +1836,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"twc_l96_d",
+		"TWC_Weapon_L96_Desert",
 		"UK3CB_BAF_L107A1"
 		};
 		respawnweapons[]=
@@ -1844,7 +1844,7 @@
 		"Throw",
 		"Put",
 		"Binocular",
-		"twc_l96_d",
+		"TWC_Weapon_L96_Desert",
 		"UK3CB_BAF_L107A1"
 		};
 		magazines[]=
@@ -1966,7 +1966,7 @@
 		"Throw",
 		"Put",
 		"ACE_Yardage450",
-		"twc_l96_d",
+		"TWC_Weapon_L96_Desert",
 		"UK3CB_BAF_L107A1"
 		};
 		respawnweapons[]=
@@ -1974,7 +1974,7 @@
 		"Throw",
 		"Put",
 		"ACE_Yardage450",
-		"twc_l96_d",
+		"TWC_Weapon_L96_Desert",
 		"UK3CB_BAF_L107A1"
 		};
 		magazines[]=
@@ -2155,7 +2155,7 @@
 		{
 		"Throw",
 		"Put",
-		"twc_l96_d",
+		"TWC_Weapon_L96_Desert",
 		"Binocular",
 		"UK3CB_BAF_L107A1"
 		};
@@ -2163,7 +2163,7 @@
 		{
 		"Throw",
 		"Put",
-		"twc_l96_d",
+		"TWC_Weapon_L96_Desert",
 		"Binocular",
 		"UK3CB_BAF_L107A1"
 		};
@@ -2408,14 +2408,14 @@
 		{
 			"Throw",
 			"Put",
-			"TWC_UK3CB_BAF_L119A1_FG_ACOG",
+			"TWC_L119A1D_cco",
 			"UK3CB_BAF_L105A2"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"TWC_UK3CB_BAF_L119A1_FG_ACOG",
+			"TWC_L119A1D_cco",
 			"UK3CB_BAF_L105A2"
 		};
 		magazines[]=
@@ -2477,6 +2477,20 @@
 			"ItemCompass",
 			"ItemWatch"
 		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"TWC_UK3CB_BAF_L119A1_FG_ACOG",
+			"UK3CB_BAF_L105A2"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"TWC_UK3CB_BAF_L119A1_FG_ACOG",
+			"UK3CB_BAF_L105A2"
+		};
 	};
 
 
@@ -2484,6 +2498,20 @@
 	{
 		displayName="2IC";
 		backpack="TWC_2000_Backpack_UKSF_2IC";
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"TWC_UK3CB_BAF_L119A1_FG_ACOG",
+			"UK3CB_BAF_L105A2"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"TWC_UK3CB_BAF_L119A1_FG_ACOG",
+			"UK3CB_BAF_L105A2"
+		};
 	};
 
 
@@ -2494,14 +2522,14 @@
 		{
 			"Throw",
 			"Put",
-			"TWC_UK3CB_BAF_L119A1_CQB_ACOG",
+			"TWC_L119A1D_eotech",
 			"UK3CB_BAF_L105A2"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"TWC_UK3CB_BAF_L119A1_CQB_ACOG",
+			"TWC_L119A1D_eotech",
 			"UK3CB_BAF_L105A2"
 		};
 	};
@@ -2514,14 +2542,14 @@
 		{
 			"Throw",
 			"Put",
-			"TWC_UK3CB_BAF_L119A1_UKUGL_ACOG",
+			"TWC_UK3CB_BAF_L119A1_UKUGL_cco",
 			"UK3CB_BAF_L105A2"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"TWC_UK3CB_BAF_L119A1_UKUGL_ACOG",
+			"TWC_UK3CB_BAF_L119A1_UKUGL_cco",
 			"UK3CB_BAF_L105A2"
 		};
 		magazines[]=
