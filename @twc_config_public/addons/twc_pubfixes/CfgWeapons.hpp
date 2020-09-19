@@ -45,7 +45,7 @@ class CfgWeapons {
 	{
 		recoil = "twc_shotgun_1";
 		recoilProne = "twc_mg_prone";
-		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag"};
+		magazines[] = {"ACE_10Rnd_338_300gr_HPBT_Mag", "TWC_5Rnd_338_300gr_HPBT_Mag", "ACE_10Rnd_338_API526_Mag", "TWC_5Rnd_338_API526_Mag"};
 	};
 	class twc_l115a3_wd: UK3CB_BAF_L115A3
 	{
@@ -158,56 +158,6 @@ class CfgWeapons {
 	class Rifle_Base_F:Rifle
 	{
 	};
-	/*
-	
-	class CUP_arifle_AK_Base: Rifle_Base_F
-	{
-		recoil = "twc_rifle_762";
-		recoilProne = "twc_rifle_762_prone";
-		discretedistanceinitindex = 1;
-	};
-	class CUP_arifle_AKM: CUP_arifle_AK_Base
-	{
-		recoil = "twc_rifle_762";
-		recoilProne = "twc_rifle_762_prone";
-		discretedistanceinitindex = 1;
-	};
-	
-	class CUP_arifle_AK47: CUP_arifle_AK_Base
-	{
-		recoil = "twc_rifle_762";
-		recoilProne = "twc_rifle_762_prone";
-		discretedistanceinitindex = 1;
-	};
-	
-	class CUP_arifle_AK47_Early: CUP_arifle_AK47
-	{
-		recoil = "twc_rifle_762";
-		recoilProne = "twc_rifle_762_prone";
-		discretedistanceinitindex = 1;
-	};
-	
-	class CUP_arifle_AKS: CUP_arifle_AKM
-	{
-		recoil = "twc_rifle_762";
-		recoilProne = "twc_rifle_762_prone";
-		discretedistanceinitindex = 1;
-	};
-	
-	class CUP_arifle_AKM_GL: CUP_arifle_AKM
-	{
-		recoil = "twc_rifle_762";
-		recoilProne = "twc_rifle_762_prone";
-		discretedistanceinitindex = 1;
-	};
-	
-	class CUP_arifle_AKMS_GL: CUP_arifle_AKM_GL
-	{
-		recoil = "twc_rifle_762";
-		recoilProne = "twc_rifle_762_prone";
-		discretedistanceinitindex = 1;
-	};
-	*/
 	
 	class CUP_arifle_AK_Base: Rifle_Base_F
 	{
@@ -531,7 +481,9 @@ class CfgWeapons {
 				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
 			};
 		};
-	};class UK3CB_BAF_L119_Base: arifle_Mk20_plain_F {
+	};
+	
+	class UK3CB_BAF_L119_Base: arifle_Mk20_plain_F {
 		class FullAuto: FullAuto {
 			reloadTime = 0.07;
 		};

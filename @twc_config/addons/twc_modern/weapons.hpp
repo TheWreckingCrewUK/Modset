@@ -2,8 +2,6 @@ class UK3CB_BAF_L85A2_RIS;
 class UK3CB_BAF_L110A2RIS;
 class UK3CB_BAF_L129A1_Grippod;
 class UK3CB_BAF_L85A2_UGL;
-class UK3CB_BAF_L115A3;
-class UK3CB_BAF_L115A3_Ghillie;
 
 class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 	scope = 1;
@@ -86,42 +84,6 @@ class TWC_Weapon_L129A1_Spotter: UK3CB_BAF_L129A1_Grippod {
 		class LinkedItemsMuzzle {
 			slot = "asdg_MuzzleSlot_UK3CB_BAF_L129A1";
 			item = "UK3CB_BAF_Silencer_L115A3";
-		};
-	};
-};
-class twc_l115a3_wd: UK3CB_BAF_L115A3
-{
-	scope = 1;
-	author = "jayman";
-	class LinkedItems
-	{
-		class LinkedItemsOptic
-		{
-			slot = "asdg_OpticRail_UK3CB_BAF_L115";
-			item = "RKSL_optic_PMII_525";
-		};
-		class LinkedItemsMuzzle
-		{
-			slot = "asdg_MuzzleSlot_UK3CB_BAF_L115";
-			item= "UK3CB_BAF_Silencer_L115A3";
-		};
-	};
-};
-class twc_l115a3_gh: UK3CB_BAF_L115A3_Ghillie
-{
-	scope = 1;
-	author = "jayman";
-	class LinkedItems
-	{
-		class LinkedItemsOptic
-		{
-			slot = "asdg_OpticRail_UK3CB_BAF_L115";
-			item = "RKSL_optic_PMII_525";
-		};
-		class LinkedItemsMuzzle
-		{
-			slot = "asdg_muzzleslot_UK3CB_BAF_L115";
-			item= "UK3CB_BAF_Silencer_L115A3";
 		};
 	};
 };

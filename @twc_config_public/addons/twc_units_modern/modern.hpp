@@ -1048,9 +1048,9 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_FMJ",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
 			"HandGrenade",
 			"SmokeShell",
 			"B_IR_Grenade"
@@ -1058,9 +1058,9 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_FMJ",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
 			"HandGrenade",
 			"SmokeShell",
 			"B_IR_Grenade"

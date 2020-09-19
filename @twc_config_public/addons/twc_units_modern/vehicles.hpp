@@ -1150,6 +1150,8 @@
 	class rhsusf_m1025_w: rhsusf_m998_w_4dr_fulltop {
 		minOmega = 10;
 		clutchStrength = 10;
+	//	peakTorque = 900;
+	//	enginePower = 300;
 		class Wheels:Wheels {
 			class LF:LF {
 				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
@@ -1158,17 +1160,21 @@
 				maxHandBrakeTorque = 30000;
 				springDamperRate = 4000;
 				springStrength = 40000;
-				maxBrakeTorque = 3400;
+				maxBrakeTorque = 4000;
+				latStiffY = 110;
+				longitudinalStiffnessPerUnitGravity = 20000;
 				//sprungMass = 925;
 			};
 			class LR: LF {
 				maxBrakeTorque = 3200;
+				longitudinalStiffnessPerUnitGravity = 10000;
 			};
 			class RF:LF {
 				
 			};
 			class RR: RF {
 				maxBrakeTorque = 3200;
+				longitudinalStiffnessPerUnitGravity = 10000;
 			};
 		};
 		
@@ -1185,11 +1191,11 @@
 		changeGearOmegaRatios[] = {1,0.294118,0.205882,0.147059,0.926471,0.270588,0.764706,0.352941,0.852941,0.5,1,0.647059};
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
-           turnIncreaseConst  = 0.3; // basic sensitivity value, higher value = faster steering
+           turnIncreaseConst  = 0.4; // basic sensitivity value, higher value = faster steering
            turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
            turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
            
-           turnDecreaseConst  = 0.8; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseConst  = 1.4; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
            turnDecreaseLinear = 0.6; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
            turnDecreaseTime   = 0.6; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
              
@@ -1265,7 +1271,8 @@
 				maxHandBrakeTorque = 30000;
 				springDamperRate = 4000;
 				springStrength = 40000;
-				maxBrakeTorque = 3400;
+				maxBrakeTorque = 4000;
+				latStiffY = 110;
 				//sprungMass = 925;
 			};
 			class LR: LF {

@@ -30,12 +30,12 @@ class CfgAmmo {
 	class CUP_R_TBG7V_AT: RocketBase {
 		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
 	};
-	
+	/* don't do this, the object detaches from players after a set time because of something unknown and it causes the strobe to float in the air and sometimes hurt people. chemlights stay on people without issue
 	class IRStrobeBase;
 	class B_IRstrobe: IRStrobeBase {
 		timeToLive=150000;
 	};
-	
+	*/
 	class Chemlight_base;
 	class ACE_G_Chemlight_IR: Chemlight_base {
 		timeToLive = 150000;

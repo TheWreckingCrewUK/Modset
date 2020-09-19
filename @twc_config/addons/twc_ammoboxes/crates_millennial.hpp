@@ -193,8 +193,8 @@ class TWC_AmmoBox_Millennial_Sniper_Portable: TWC_AmmoBox_Portable {
 	
 	class TransportMagazines {
 		// 7.62 L96A1
-		maga_nc(UK3CB_BAF_762_L42A1_10Rnd, 8);
-		maga_nc(UK3CB_BAF_762_L42A1_10Rnd_T, 4);
+		maga_nc(UK3CB_BAF_762_L42A1_10Rnd, 12);
+		maga_nc(UK3CB_BAF_762_L42A1_10Rnd_T, 6);
 		
 		// Smoke Grenades
 		maga_nc(SmokeShell, 2);
