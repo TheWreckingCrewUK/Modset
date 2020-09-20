@@ -79,38 +79,38 @@
 		};
 		
 		weapons[]= {
-			"rhs_weap_m1garand_sa43",
+			"CUP_arifle_G3A3_modern_ris",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]= {
-			"rhs_weap_m1garand_sa43",
+			"CUP_arifle_G3A3_modern_ris",
 			"Throw",
 			"Put"
 		};
 
 		magazines[]= {
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle"
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3"
 		};
 
 		Respawnmagazines[]= {
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle",
-			"rhsgref_8Rnd_762x63_M2B_M1rifle"
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3",
+			"CUP_20Rnd_762x51_G3"
 		};
 		
 		Items[]= { };
@@ -755,70 +755,70 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_m38",
+		"CUP_srifle_Mosin_Nagant",
 		"rhsusf_weap_m1911a1"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_m38",
+		"CUP_srifle_Mosin_Nagant",
 		"rhsusf_weap_m1911a1"
 		};
 		magazines[]=
 		{
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP"
 		};
 		Respawnmagazines[]=
 		{
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
 		"rhsusf_mag_7x45acp_MHP",
 		"rhsusf_mag_7x45acp_MHP"
 		};
@@ -1125,14 +1125,14 @@
 		linkedItems[]=
 		{
 			"CUP_H_TK_Lungee",
-			"rhsgref_alice_webbing",
+			"CUP_V_B_ALICE",
 			"binoculars",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
 			"CUP_H_TK_Lungee",
-			"rhsgref_alice_webbing",
+			"CUP_V_B_ALICE",
 			"binoculars",
 			"ItemWatch"
 		};
@@ -1194,14 +1194,14 @@ class Tak_twc_ins_Men_sniper_h: Tak_twc_ins_Men_sniper
 		linkedItems[]=
 		{
 			"H_Shemag_olive",
-			"rhsgref_alice_webbing",
+			"CUP_V_B_ALICE",
 			"binoculars",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
 			"H_Shemag_olive",
-			"rhsgref_alice_webbing",
+			"CUP_V_B_ALICE",
 			"binoculars",
 			"ItemWatch"
 		};

@@ -8,7 +8,7 @@
 		editorSubcategory = "Men_twc_farc";
 		vehicleClass="Men_twc_farc";
 		nakedUniform="U_BasicBody";
-		uniformClass="rhsgref_uniform_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
 		identityTypes[]=
 		{
 			"LanguagePER_F",
@@ -17,11 +17,11 @@
 		};
 		
 		linkedItems[]= {
-			"rhsgref_alice_webbing"
+			"CUP_V_B_ALICE"
 		};
 		
 		respawnlinkedItems[]= {
-			"rhsgref_alice_webbing"
+			"CUP_V_B_ALICE"
 		};
 		
 	};
@@ -29,7 +29,7 @@
 	class twc_farc_men_rif_at: twc_farc_men_Base {
 		scope=2;
 		displayName="Rifleman AT";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 		backpack="greek_Backpack_AT";
 
 		weapons[]= {
@@ -72,7 +72,7 @@
 	class twc_farc_men_rif_aa: twc_farc_men_Base {
 		scope=2;
 		displayName="Rifleman AA";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 
 		weapons[]= {
 			"Throw",
@@ -110,7 +110,7 @@
 	class twc_farc_men_off: twc_farc_men_Base {
 		scope=2;
 		displayName="Officer";
-		uniformClass="rhsgref_uniform_tigerstripe";
+		uniformClass="CUP_U_I_GUE_Anorak_02";
 
 		weapons[]= {
 			"Throw",
@@ -124,13 +124,13 @@
 		};
 		linkedItems[]= {
 			"V_BandollierB_oli",
-			"rhsgref_fieldcap_ttsko_mountain",
+			"CUP_H_PMC_Cap_Grey",
 			"H_Bandanna_gry"
 		};
 		
 		respawnlinkedItems[]= {
 			"V_BandollierB_oli",
-			"rhsgref_fieldcap_ttsko_mountain",
+			"CUP_H_PMC_Cap_Grey",
 			"H_Bandanna_gry"
 		};
 		magazines[]=
@@ -159,7 +159,7 @@
 	class twc_farc_men_mg_m60: twc_farc_men_Base {
 		scope=2;
 		displayName="Machinegunner M60";
-		uniformClass="rhsgref_uniform_tigerstripe";
+		uniformClass="CUP_U_I_GUE_Anorak_02";
 		backpack="twc_Backpack_m60";
 
 		weapons[]= {
@@ -314,12 +314,12 @@
 		weapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m21a_fold"
+			"CUP_arifle_Galil_SAR_black"
 		};
 		respawnweapons[]= {
 			"Throw",
 			"Put",
-			"rhs_weap_m21a_fold"
+			"CUP_arifle_Galil_SAR_black"
 		};
 		linkedItems[]= {
 			"CUP_V_O_Ins_Carrier_Rig_Com",
@@ -332,21 +332,21 @@
 		};
 		magazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21"
+			"CUP_35Rnd_556x45_Galil_Mag",
+			"CUP_35Rnd_556x45_Galil_Mag",
+			"CUP_35Rnd_556x45_Galil_Mag",
+			"CUP_35Rnd_556x45_Galil_Mag",
+			"CUP_35Rnd_556x45_Galil_Mag",
+			"CUP_35Rnd_556x45_Galil_Mag"
 		};
 		Respawnmagazines[]=
 		{
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21",
-			"rhsgref_30rnd_556x45_m21"
+			"CUP_35Rnd_556x45_Galil_Mag",
+			"CUP_35Rnd_556x45_Galil_Mag",
+			"CUP_35Rnd_556x45_Galil_Mag",
+			"CUP_35Rnd_556x45_Galil_Mag",
+			"CUP_35Rnd_556x45_Galil_Mag",
+			"CUP_35Rnd_556x45_Galil_Mag"
 		};
 
 	};
@@ -354,7 +354,7 @@
 	class twc_farc_men_rif_hk416: twc_farc_men_Base {
 		scope=2;
 		displayName="Rifleman HK416";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 
 		weapons[]= {
 			"Throw",
@@ -388,7 +388,7 @@
 	class twc_farc_men_rif_ak104: twc_farc_men_Base {
 		scope=2;
 		displayName="Rifleman AK-104";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 
 		weapons[]= {
 			"Throw",
