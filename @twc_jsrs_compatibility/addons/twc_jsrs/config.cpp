@@ -17,6 +17,7 @@ class CfgPatches {
 			"uk3cb_baf_weapons_l1a1",
 			"uk3cb_baf_weapons_static",
 			"UK3CB_BAF_Vehicles_Weapons",
+			"CUP_Weapons_WeaponsCore",
 			"jsrs_soundmod_framework"
 			};
 		author[] = {""};
@@ -1659,7 +1660,7 @@ class cfgweapons
 	class twc_ak74_pol_2: twc_ak74_pol_2_base
 	{
 		
-		class Single:Single {
+		class Single:Mode_SemiAuto {
 			class standardsound {
 				soundSetShot[] = {
 					"jsrs_rifle_shake_soundset",
@@ -1668,9 +1669,25 @@ class cfgweapons
 					"jsrs_556mm_echo_soundset",
 					"jsrs_556mm_echo_soundset"};
 			};
+			class silencedsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_556mm_echo_soundset",
+					"jsrs_556mm_echo_soundset"};
+			};
 		};
-		class FullAuto:FullAuto {
+		class FullAuto:Mode_FullAuto {
 			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_556mm_echo_soundset",
+					"jsrs_556mm_echo_soundset"};
+			};	
+			class silencedsound {
 				soundSetShot[] = {
 					"jsrs_rifle_shake_soundset",
 					"twc_beryl_Shot_Soundset",
@@ -1679,8 +1696,16 @@ class cfgweapons
 					"jsrs_556mm_echo_soundset"};
 			};			
 		};
-		class Burst:Burst {
+		class Burst:Mode_Burst {
 			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_556mm_echo_soundset",
+					"jsrs_556mm_echo_soundset"};
+			};		
+			class silencedsound {
 				soundSetShot[] = {
 					"jsrs_rifle_shake_soundset",
 					"twc_beryl_Shot_Soundset",
@@ -1706,7 +1731,7 @@ class cfgweapons
 	class twc_ak74_gp25_pol: twc_ak74_gp25_pol_base
 	{
 		
-		class Single:Single {
+		class Single:Mode_SemiAuto {
 			class standardsound {
 				soundSetShot[] = {
 					"jsrs_rifle_shake_soundset",
@@ -1715,9 +1740,25 @@ class cfgweapons
 					"jsrs_556mm_echo_soundset",
 					"jsrs_556mm_echo_soundset"};
 			};
+			class silencedsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_556mm_echo_soundset",
+					"jsrs_556mm_echo_soundset"};
+			};
 		};
-		class FullAuto:FullAuto {
+		class FullAuto:Mode_FullAuto {
 			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_556mm_echo_soundset",
+					"jsrs_556mm_echo_soundset"};
+			};	
+			class silencedsound {
 				soundSetShot[] = {
 					"jsrs_rifle_shake_soundset",
 					"twc_beryl_Shot_Soundset",
@@ -1726,8 +1767,16 @@ class cfgweapons
 					"jsrs_556mm_echo_soundset"};
 			};			
 		};
-		class Burst:Burst {
+		class Burst:Mode_Burst {
 			class standardsound {
+				soundSetShot[] = {
+					"jsrs_rifle_shake_soundset",
+					"twc_beryl_Shot_Soundset",
+					"jsrs_m16a4_shell_soundset",
+					"jsrs_556mm_echo_soundset",
+					"jsrs_556mm_echo_soundset"};
+			};		
+			class silencedsound {
 				soundSetShot[] = {
 					"jsrs_rifle_shake_soundset",
 					"twc_beryl_Shot_Soundset",
@@ -1757,7 +1806,7 @@ class cfgweapons
 	class twc_ak74_pol_base: CUP_arifle_AK102_railed
 	{
 		
-		class Single:Single {
+		class Single:Mode_SemiAuto {
 			class standardsound {
 				soundSetShot[] = {
 					"jsrs_rifle_shake_soundset",
@@ -1775,7 +1824,7 @@ class cfgweapons
 					"jsrs_556mm_echo_soundset"};
 			};
 		};
-		class FullAuto:FullAuto {
+		class FullAuto:Mode_FullAuto {
 			class standardsound {
 				soundSetShot[] = {
 					"jsrs_rifle_shake_soundset",
@@ -1793,7 +1842,7 @@ class cfgweapons
 					"jsrs_556mm_echo_soundset"};
 			};			
 		};
-		class Burst:mode_burst {
+		class Burst:Mode_Burst {
 			class standardsound {
 				soundSetShot[] = {
 					"jsrs_rifle_shake_soundset",
@@ -1801,7 +1850,7 @@ class cfgweapons
 					"jsrs_m16a4_shell_soundset",
 					"jsrs_556mm_echo_soundset",
 					"jsrs_556mm_echo_soundset"};
-			};	
+			};		
 			class silencedsound {
 				soundSetShot[] = {
 					"jsrs_rifle_shake_soundset",
