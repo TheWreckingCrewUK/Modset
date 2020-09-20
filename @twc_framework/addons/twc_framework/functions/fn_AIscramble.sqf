@@ -28,14 +28,23 @@ _simplemode = missionnamespace getvariable ["twc_simplescramble", true];
 
 if (_simplemode) exitwith {
 	{
+		_x setvariable ["twc_scramble_ogrp", (group _x)];
 		_x addEventHandler ["AnimChanged", {
 			params ["_unit"];
 			
 			if ((getSuppression _unit) > 0.02) then {
-				_canmove = _unit getvariable ["twc_scramble_canmove", false];
+				_canmove = _unit getvariable ["twc_scramble_canmove", true];
 				if (!_canmove) exitwith {};
 				
 				_unit setvariable ["twc_scramble_canmove", true];
+				
+				
+				_unitpos = selectrandom ["MIDDLE", "UP"];
+				if ((random 1) < 0.1) then {
+					_unitpos = "DOWN";
+				};
+		//		systemchat "scramble";
+				_unit setunitpos _unitpos;
 				
 				_enemy = _enemy findnearestenemy (getpos _enemy);
 				if (isnil "_enemy") then {
@@ -60,27 +69,38 @@ if (_simplemode) exitwith {
 				if ((_unit distance _enemy) > 100) then {
 					[_unit, _npos] spawn {
 						params ["_unit", "_npos"];
-						_oldgroup = (group _unit);
-						_placeholder = _oldgroup createunit ["B_UAV_AI", [0,0,1000]];
+						_oldgroup = _unit getvariable ["twc_scramble_ogrp", grpnull];
+						_oldside = side _unit;
+						
 						_newgroup = creategroup civilian;
 						[_unit] joinsilent _newgroup;
 						_unit domove _npos;
-				//		systemchat ("joined " + (str _newgroup));
+						_id = (str (floor (random 1000)));
+				//	systemchat (_id + " left " + (str _oldgroup) + " and joined " + (str _newgroup));
 						
 						_timeout = time + ((((_unit distance _npos) * 0.05) min 30) + (random 8));
 						while {((_unit distance _npos) > 3) && (time < _timeout)} do {
 							sleep 2;
 						};
-				//		systemchat ("returned to " + (str _oldgroup));
+				//	systemchat (_id + " returning to " + (str _oldgroup));
+					
+					if (_oldgroup isequalto grpnull) then {
+						_oldgroup = creategroup _oldside;
+					};
 						[_unit] joinsilent _oldgroup;
-						deletevehicle _placeholder;
+						
+				//	systemchat (_id + " is now in " + (str (group _unit)));
+						deletegroup _newgroup;
 					};
 				} else {
-					_timeout = time + ((((_unit distance _npos) * 0.05) min 30) + (random 8));
-					while {((_unit distance _npos) > 3) && (time < _timeout)} do {
-						sleep 2;
+					[_unit, _npos] spawn {
+						params ["_unit", "_npos"];
+						_timeout = time + ((((_unit distance _npos) * 0.05) min 30) + (random 8));
+						while {((_unit distance _npos) > 3) && (time < _timeout)} do {
+							sleep 2;
+						};
+						_unit setvariable ["twc_scramble_canmove", true];
 					};
-					_unit setvariable ["twc_scramble_canmove", true];
 				};
 				
 				
@@ -91,10 +111,17 @@ if (_simplemode) exitwith {
 			params ["_unit"];
 			
 			if ((getSuppression _unit) > 0.02) then {
-				_canmove = _unit getvariable ["twc_scramble_canmove", false];
+				_canmove = _unit getvariable ["twc_scramble_canmove", true];
 				if (!_canmove) exitwith {};
 				
 				_unit setvariable ["twc_scramble_canmove", true];
+				
+				_unitpos = selectrandom ["MIDDLE", "UP"];
+				if ((random 1) < 0.1) then {
+					_unitpos = "DOWN";
+				};
+				
+				_unit setunitpos _unitpos;
 				
 				_enemy = _enemy findnearestenemy (getpos _enemy);
 				if (isnil "_enemy") then {
@@ -117,11 +144,14 @@ if (_simplemode) exitwith {
 				[[_unit]] call ace_ai_fnc_unGarrison;
 				_unit domove _npos;
 				
-				_timeout = time + ((((_unit distance _npos) * 0.05) min 30) + (random 8));
-				while {((_unit distance _npos) > 3) && (time < _timeout)} do {
-					sleep 2;
+				[_unit, _npos] spawn {
+					params ["_unit", "_npos"];
+					_timeout = time + ((((_unit distance _npos) * 0.05) min 30) + (random 8));
+					while {((_unit distance _npos) > 3) && (time < _timeout)} do {
+						sleep 2;
+					};
+					_unit setvariable ["twc_scramble_canmove", true];
 				};
-				_unit setvariable ["twc_scramble_canmove", true];
 			};
 		}];
 	} foreach (units _group);
