@@ -75,7 +75,7 @@
 		_generalMacro="IRA_Rifleman_M16";
 		displayName="Rifleman (M16 1)";
 		icon="iconManLeader";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 		backpack="";
 		linkedItems[]=
 		{
@@ -134,7 +134,7 @@
 	class IRA_Rifleman_M16_3: IRA_Rifleman_M16
 	{
 		displayName="Rifleman (M16 3)";
-		uniformClass="rhsgref_uniform_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
 	};
 	
 	class IRA_Rifleman_M16_4: IRA_Rifleman_M16
@@ -146,7 +146,7 @@
 	class IRA_Rifleman_FAL: IRA_Rifleman_M16
 	{
 		displayName="Rifleman (M16 5)";
-		uniformClass="rhsgref_uniform_woodland_olive";
+		uniformClass="CUP_U_I_GUE_Anorak_03";
 	};
 	class IRA_Rifleman_AKM: IRA_Squadleader
 	{
@@ -157,14 +157,14 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "rhsgref_alice_webbing",
+        "CUP_V_B_ALICE",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhsgref_alice_webbing",
+        "CUP_V_B_ALICE",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass"
@@ -268,7 +268,7 @@
 		_generalMacro="IRA_Autorifleman";
 		scope=2;
 		displayName="Machinegunner GPMG";
-		uniformClass="rhsgref_uniform_dpm";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 		backpack="";
 		linkedItems[]=
 		{
@@ -317,7 +317,7 @@
 		_generalMacro="IRA_Autorifleman_2";
 		scope=2;
 		displayName="Machinegunner PKM";
-		uniformClass="rhsgref_uniform_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
 		backpack="Afr_Backpack_MG";
 		linkedItems[]=
 		{
@@ -362,7 +362,7 @@
 		_generalMacro="IRA_pistol_1";
 		scope=2;
 		displayName="Pistol 1";
-		uniformClass="rhsgref_uniform_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
 		linkedItems[]=
 		{
 		"G_Balaclava_blk",
@@ -412,7 +412,7 @@
 		_generalMacro="IRA_pistol_2";
 		scope=2;
 		displayName="Pistol 2";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 		weapons[]=
 		{
 		"Throw",

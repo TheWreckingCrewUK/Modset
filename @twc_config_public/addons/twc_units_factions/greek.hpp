@@ -17,7 +17,7 @@
 		backpack="";
 		linkedItems[]=
 		{
-        "rhsgref_alice_webbing",
+        "CUP_V_B_ALICE",
 		"CUP_TK_NeckScarf",
 		"ItemMap",
 		"ItemCompass",
@@ -25,7 +25,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "rhsgref_alice_webbing",
+        "CUP_V_B_ALICE",
 		"CUP_TK_NeckScarf",
 		"ItemMap",
 		"ItemCompass",
@@ -94,11 +94,11 @@
 		vehicleClass="Men_Greek";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 		backpack="";
 		linkedItems[]=
 		{
-        "rhsgref_alice_webbing",
+        "CUP_V_B_ALICE",
 		"CUP_TK_NeckScarf",
 		"ItemMap",
 		"ItemCompass",
@@ -106,7 +106,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "rhsgref_alice_webbing",
+        "CUP_V_B_ALICE",
 		"CUP_TK_NeckScarf",
 		"ItemMap",
 		"ItemCompass",
@@ -260,7 +260,7 @@
 		backpack="greek_Backpack_AT";
 		linkedItems[]=
 		{
-        "rhsgref_alice_webbing",
+        "CUP_V_B_ALICE",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -268,7 +268,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "rhsgref_alice_webbing",
+        "CUP_V_B_ALICE",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -503,7 +503,7 @@
 		vehicleClass="Men_Greek";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="rhsgref_uniform_altis_lizard_olive";
+		uniformClass="CUP_U_I_GUE_Anorak_02";
 		backpack="UK3CB_BAF_B_Bergen_OLI_Rifleman_A";
 		linkedItems[]=
 		{
@@ -665,7 +665,7 @@
 		vehicleClass="Men_Greek";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="rhsgref_uniform_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
 		backpack="";
 		linkedItems[]=
 		{
@@ -759,7 +759,7 @@
 		vehicleClass="Men_Greek";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 		backpack="";
 		linkedItems[]=
 		{
@@ -859,31 +859,31 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_m38"
+		"CUP_srifle_Mosin_Nagant"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_m38"
+		"CUP_srifle_Mosin_Nagant"
 		};
 		magazines[]=
 		{
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
 		 
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
-		"rhsgref_5Rnd_762x54_m38",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
+		"CUP_5Rnd_762x54_Mosin_M",
 		 
 		"SmokeShell"
 		};
@@ -1085,7 +1085,7 @@ class twc_greek_sniper: O_G_Soldier_LAT_F
 		vehicleClass="Men_Greek";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 		backpack="";
 		linkedItems[]=
 		{

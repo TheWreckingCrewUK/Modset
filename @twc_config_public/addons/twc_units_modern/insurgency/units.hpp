@@ -1649,35 +1649,35 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_m21a"
+		"CUP_arifle_Galil_SAR_black"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_m21a"
+		"CUP_arifle_Galil_SAR_black"
 		};
 		magazines[]=
 		{
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
 		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
 		"HandGrenade",
 		"SmokeShell"
 		};
@@ -2004,31 +2004,31 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_m21a"
+		"CUP_arifle_Galil_SAR_black"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_m21a"
+		"CUP_arifle_Galil_SAR_black"
 		};
 		magazines[]=
 		{
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
 		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
-		"rhsgref_30rnd_556x45_m21",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
+		"CUP_35Rnd_556x45_Galil_Mag",
 		"HandGrenade",
 		"SmokeShell"
 		};

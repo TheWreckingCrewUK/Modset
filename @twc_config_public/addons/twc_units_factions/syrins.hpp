@@ -87,7 +87,7 @@
 	class syr_twc_ins_Men_rif3: syr_twc_ins_Men_rif1
 	{
 		displayName="Rifleman (M16)";
-		uniformClass="rhsgref_uniform_woodland_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
 		weapons[]= {
 			"Throw",
 			"Put",
@@ -199,7 +199,7 @@
 	class syr_twc_ins_Men_rpgL: syr_twc_ins_Men_rif1
 	{
 		displayName="RPG Gunner Light";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 		backpack="Backpack_AT_og7_olive";
 		weapons[]= {
 			"Throw",
@@ -305,7 +305,7 @@
 	class syr_twc_ins_Men_marksman: syr_twc_ins_Men_rif1
 	{
 		displayName="Marksman";
-		uniformClass="rhsgref_uniform_woodland_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
 		weapons[]= {
 			"Throw",
 			"Put",
@@ -358,7 +358,7 @@
 	class syr_twc_ins_Men_mg1: syr_twc_ins_Men_rif1
 	{
 		displayName="Machinegunner (PKM)";
-		uniformClass="rhsgref_uniform_altis_lizard_olive";
+		uniformClass="CUP_U_I_GUE_Anorak_02";
 		backpack="twc_Backpack_MG_olive";
 		weapons[]= {
 			"Throw",

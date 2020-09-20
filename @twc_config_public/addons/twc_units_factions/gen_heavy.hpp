@@ -8,14 +8,14 @@
 		editorSubcategory = "Men_twc_genheavy";
 		vehicleClass="Men_twc_genheavy";
 		nakedUniform="U_BasicBody";
-		uniformClass="rhsgref_uniform_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
 		
 		linkedItems[]= {
-			"rhsgref_alice_webbing"
+			"CUP_V_B_ALICE"
 		};
 		
 		respawnlinkedItems[]= {
-			"rhsgref_alice_webbing"
+			"CUP_V_B_ALICE"
 		};
 		
 Items[]=
@@ -57,7 +57,7 @@ respawnitems[]=
 	class twc_heavy_men_rif_m4: twc_heavy_men_Base {
 		scope=2;
 		displayName="Rifleman M4";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 
 		weapons[]= {
 			"Throw",
@@ -97,7 +97,7 @@ respawnitems[]=
 	class twc_heavy_men_com: twc_heavy_men_Base {
 		scope=2;
 		displayName="Commander";
-		uniformClass="rhsgref_uniform_tigerstripe";
+		uniformClass="CUP_U_I_GUE_Anorak_02";
 
 		weapons[]= {
 			"Throw",
@@ -111,13 +111,13 @@ respawnitems[]=
 		};
 		linkedItems[]= {
 			"V_BandollierB_oli",
-			"rhsgref_fieldcap_ttsko_mountain",
+			"CUP_H_PMC_Cap_Grey",
 			"H_Bandanna_gry"
 		};
 		
 		respawnlinkedItems[]= {
 			"V_BandollierB_oli",
-			"rhsgref_fieldcap_ttsko_mountain",
+			"CUP_H_PMC_Cap_Grey",
 			"H_Bandanna_gry"
 		};
 		magazines[]=
@@ -146,7 +146,7 @@ respawnitems[]=
 	class twc_heavy_men_ar: twc_heavy_men_Base {
 		scope=2;
 		displayName="Autorifleman";
-		uniformClass="rhsgref_uniform_tigerstripe";
+		uniformClass="CUP_U_I_GUE_Anorak_02";
 		backpack="twc_Backpack_m249";
 
 		weapons[]= {
@@ -302,7 +302,7 @@ respawnitems[]=
 	class twc_heavy_men_gren_gp25: twc_heavy_men_Base {
 		scope=2;
 		displayName="Grenadier (GP-25)";
-		uniformClass="rhsgref_uniform_tigerstripe";
+		uniformClass="CUP_U_I_GUE_Anorak_02";
 
 		weapons[]= {
 			"Throw",
@@ -355,7 +355,7 @@ respawnitems[]=
 	class twc_heavy_men_rif_at: twc_heavy_men_Base {
 		scope=2;
 		displayName="Rifleman AT";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 		backpack="twc_Backpack_m3maaws";
 
 		weapons[]= {
@@ -396,7 +396,7 @@ respawnitems[]=
 	class twc_heavy_men_mk: twc_heavy_men_Base {
 		scope=2;
 		displayName="Marksman";
-		uniformClass="rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
 
 		weapons[]= {
 			"Throw",

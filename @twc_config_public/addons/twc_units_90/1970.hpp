@@ -8,7 +8,7 @@
 		vehicleClass="Men_1990W";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="twc_rhsgref_uniform_dpm";
+		uniformClass="CUP_U_B_BDUv2_dirty_DPM";
 		weapons[]=
 		{
 			"Throw",
@@ -185,7 +185,7 @@
 	{
 		scope=2;
 		displayName="Rifleman";
-		uniformClass="twc_rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_dirty_DPM_olive";
 		backpack="TWC_Backpack_1970_rifleman_2";
 		twc_nobackpack = 1;
 		linkedItems[]=
@@ -209,7 +209,7 @@
 		scope=2;
 		displayName="Pointman";
 		backpack="TWC_Backpack_1970_rifleman_1";
-		uniformClass="twc_rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_dirty_DPM_olive";
 		linkedItems[]=
 		{
 			"twc_interceptor_od",
@@ -229,7 +229,7 @@
 	{
 		scope=2;
 		displayName="Rifleman (SUIT)";
-		uniformClass="twc_rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_dirty_DPM_olive";
 		icon="iconManMG";
 		backpack="TWC_Backpack_1970_rifleman_2";
 		linkedItems[]=
@@ -287,7 +287,7 @@
 	{
 		scope=2;
 		displayName="GPMG Gunner";
-		uniformClass="twc_rhsgref_uniform_dpm_olive";
+		uniformClass="CUP_U_B_BDUv2_dirty_DPM_olive";
 		backpack="TWC_Backpack_1970_machineGunner";
 		linkedItems[]=
 		{
@@ -468,7 +468,7 @@
 	{
 		scope=2;
 		displayName="Helicopter Pilot";
-		uniformClass="twc_rhsgref_uniform_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
 		backpack="TWC_Backpack_1970_Sectionlead";
 		linkedItems[]=
 		{
@@ -784,7 +784,7 @@
 	{
 		displayName="Marksman";
 		backpack="TWC_Backpack_1970_sniper";
-		uniformClass="rhsgref_uniform_olive";
+		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
 		scope=2;
 		linkedItems[]=
 		{
