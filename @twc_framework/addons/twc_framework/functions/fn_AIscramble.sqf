@@ -14,7 +14,7 @@
 * Public: No
 */
 
-params ["_group", "_supponly"];
+params ["_group", ["_supponly", 0]];
 
 _unit = leader _group;
 
@@ -29,6 +29,7 @@ _simplemode = missionnamespace getvariable ["twc_simplescramble", true];
 if (_simplemode) exitwith {
 	{
 		_x setvariable ["twc_scramble_ogrp", (group _x)];
+		_x setvariable ["twc_scramble_level", _supponly];
 		_x addEventHandler ["AnimChanged", {
 			params ["_unit"];
 			
@@ -66,7 +67,8 @@ if (_simplemode) exitwith {
 				if ((count _check) == 0) exitwith {};
 				[[_unit]] call ace_ai_fnc_unGarrison;
 				
-				if ((_unit distance _enemy) > 100) then {
+				_training = _unit getvariable ["twc_scramble_level", 0];
+				if (((_unit distance _enemy) > 100) && (_training == 0)) then {
 					[_unit, _npos] spawn {
 						params ["_unit", "_npos"];
 						_oldgroup = _unit getvariable ["twc_scramble_ogrp", grpnull];
@@ -78,7 +80,7 @@ if (_simplemode) exitwith {
 						_id = (str (floor (random 1000)));
 				//	systemchat (_id + " left " + (str _oldgroup) + " and joined " + (str _newgroup));
 						
-						_timeout = time + ((((_unit distance _npos) * 0.05) min 30) + (random 8));
+						_timeout = time + ((((_unit distance _npos) * 0.05) min 20) + (random 8));
 						while {((_unit distance _npos) > 3) && (time < _timeout)} do {
 							sleep 2;
 						};

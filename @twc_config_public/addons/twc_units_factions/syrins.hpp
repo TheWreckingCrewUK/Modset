@@ -86,8 +86,45 @@
 	
 	class syr_twc_ins_Men_rif3: syr_twc_ins_Men_rif1
 	{
+		displayName="Rifleman (AK74SD)";
+		weapons[]= {
+			"Throw",
+			"Put",
+			"twc_ak74early_sd"
+		};
+		respawnweapons[]= {
+			"Throw",
+			"Put",
+			"twc_ak74early_sd"
+		};
+		magazines[]=
+		{
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK"
+		};
+		Respawnmagazines[]=
+		{
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK",
+			"rhs_30Rnd_545x39_7N10_2mag_AK"
+		};
+	};
+	
+	class syr_twc_ins_Men_rif4: syr_twc_ins_Men_rif1
+	{
 		displayName="Rifleman (M16)";
-		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
+		uniformClass="U_BG_Guerilla2_3";
 		weapons[]= {
 			"Throw",
 			"Put",
@@ -199,7 +236,7 @@
 	class syr_twc_ins_Men_rpgL: syr_twc_ins_Men_rif1
 	{
 		displayName="RPG Gunner Light";
-		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
+		uniformClass="CUP_U_O_CHDKZ_Lopotev";
 		backpack="Backpack_AT_og7_olive";
 		weapons[]= {
 			"Throw",
@@ -305,7 +342,7 @@
 	class syr_twc_ins_Men_marksman: syr_twc_ins_Men_rif1
 	{
 		displayName="Marksman";
-		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
+		uniformClass="CUP_U_O_RUS_Ratnik_Autumn";
 		weapons[]= {
 			"Throw",
 			"Put",
@@ -358,7 +395,7 @@
 	class syr_twc_ins_Men_mg1: syr_twc_ins_Men_rif1
 	{
 		displayName="Machinegunner (PKM)";
-		uniformClass="CUP_U_I_GUE_Anorak_02";
+		uniformClass="U_BG_Guerilla2_3";
 		backpack="twc_Backpack_MG_olive";
 		weapons[]= {
 			"Throw",
