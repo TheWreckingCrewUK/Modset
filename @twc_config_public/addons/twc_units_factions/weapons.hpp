@@ -89,6 +89,20 @@ class cfgweapons{
 	};
 		
 		
+	class CUP_arifle_AK74_Early;
+	class twc_ak74early_sd: CUP_arifle_AK74_Early
+	{
+		class LinkedItems
+		{
+			class LinkedItemsFrontSideRail
+			{
+				slot="CUP_EastMuzzleSlotAK";
+				item="rhs_acc_tgpa";
+			};
+		};
+	};
+		
+		
 	class rhs_weap_hk416d10;
 		class rhs_weap_hk416d10_acog: rhs_weap_hk416d10
 	{
