@@ -104,6 +104,7 @@ class CfgAmmo {
 	//don't bother with hitMan, something else is affecting it
 	class B_338_Ball;
 	class ACE_338_Ball_API526: B_338_Ball {
+		hit = 25;
 		caliber = 6;
 		penetrationDirDistribution = 0.05;
 		explosionEffects = "twc_APIbullet_effect";
