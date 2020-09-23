@@ -565,6 +565,19 @@ class cfgsoundshaders
 
 class cfgsoundsets
 {
+	
+	class jsrs_basic_soniccrack_soundset
+	{
+		volumefactor=2.5;
+		volumerandomizer=1;
+		volumecurve="jsrs_basic_vl_sin";
+		spatial=1;
+		doppler=0;
+		loop=0;
+		sound3dprocessingtype="jsrs_snaps_3dprocessor";
+		distancefilter="jsrs_weapons_lowpass_filter";
+		frequencyrandomizer=4;
+	};
 	class 3CB_BAF_L85_Shot_SoundSet;
 	class twc_L85_Shot_Soundset: 3CB_BAF_L85_Shot_SoundSet
 	{
@@ -3969,5 +3982,14 @@ class cfgdistancefilters
 		innerrange=50;
 		range=1500;
 		powerfactor=15;
+	};
+};
+
+class cfgammo
+{
+	class bulletbase;
+	class CUP_B_23mm_AA: bulletbase
+	{
+		soundsetsoniccrack[] = {"jsrs_sc_127x99mm_soundset"};
 	};
 };

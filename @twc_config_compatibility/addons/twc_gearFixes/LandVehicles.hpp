@@ -1555,6 +1555,7 @@
 		turnCoef = 4;
 		ace_cargo_size = 40;
 		ace_cargo_canLoad = 1;
+		maximumload =5500;
 	};
 	
 	
@@ -1577,6 +1578,7 @@
 		turnCoef = 4;
 		ace_cargo_size = 40;
 		ace_cargo_canLoad = 1;
+		maximumload =5500;
 	};
 		
 	class UK3CB_BAF_Coyote_Passenger_L134A1_D: UK3CB_BAF_Coyote_L134A1_Base {
@@ -1588,6 +1590,7 @@
 	class UK3CB_BAF_Jackal2_L134A1_Base: UK3CB_BAF_Coyote_L134A1_Base
 	{
 		turnCoef = 4;
+		maximumload =5500;
 	};
 	
 			
