@@ -87,11 +87,13 @@
 		displayName = ".338LM 5Rnd Mag (API526)";
 		mass = 7;
 		descriptionShort = "Caliber: .338LM (API526)<br />Armour Piercing Incendiary (526 Grain)<br />Rounds: 5";
+		count = 5;
 	};
 	class TWC_5Rnd_338_300gr_HPBT_Mag: ACE_10Rnd_338_300gr_HPBT_Mag
 	{
 		displayName = ".338LM 5Rnd Mag (300gr)";
 		mass = 7;
 		descriptionShort = "Caliber: .338LM (HPBT)<br />Hollow Point Boat-Tail (300 Grain)<br />Rounds: 5";
+		count = 5;
 	};
 	
