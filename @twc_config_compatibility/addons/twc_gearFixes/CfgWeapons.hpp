@@ -564,6 +564,7 @@
 					cup_optic_leupoldmk4_10x40_lrt_woodland = 1;
 					cup_optic_leupoldm3lr = 1;
 					cup_optic_sb_3_12x50_pmii = 1;
+					cup_optic_an_pvs_4 = 1;
 				};
 				displayName = "Optics Slot";
 				iconPicture = "a3\weapons_f\Data\ui\attachment_top";
@@ -893,8 +894,8 @@
 	
 	
 	class UK3CB_BAF_L1A1: Rifle_Base_F {
-		recoil = "twc_rifle_762";
-		recoilProne = "twc_rifle_762_prone";
+		recoil = "twc_rifle_762L";
+		recoilProne = "twc_rifle_762L_prone";
 	};
 	
 	class EBR_base_F;
