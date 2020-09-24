@@ -37,7 +37,7 @@ if (_simplemode) exitwith {
 				_canmove = _unit getvariable ["twc_scramble_canmove", true];
 				if (!_canmove) exitwith {};
 				
-				_unit setvariable ["twc_scramble_canmove", true];
+				_unit setvariable ["twc_scramble_canmove", false];
 				
 				
 				_unitpos = selectrandom ["MIDDLE", "UP"];
@@ -84,6 +84,7 @@ if (_simplemode) exitwith {
 						while {((_unit distance _npos) > 3) && (time < _timeout)} do {
 							sleep 2;
 						};
+						_unit setvariable ["twc_scramble_canmove", true];
 				//	systemchat (_id + " returning to " + (str _oldgroup));
 					
 					if (_oldgroup isequalto grpnull) then {
@@ -116,7 +117,7 @@ if (_simplemode) exitwith {
 				_canmove = _unit getvariable ["twc_scramble_canmove", true];
 				if (!_canmove) exitwith {};
 				
-				_unit setvariable ["twc_scramble_canmove", true];
+				_unit setvariable ["twc_scramble_canmove", false];
 				
 				_unitpos = selectrandom ["MIDDLE", "UP"];
 				if ((random 1) < 0.1) then {

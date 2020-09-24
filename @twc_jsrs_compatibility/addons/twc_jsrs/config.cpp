@@ -18,6 +18,7 @@ class CfgPatches {
 			"uk3cb_baf_weapons_static",
 			"UK3CB_BAF_Vehicles_Weapons",
 			"CUP_Weapons_WeaponsCore",
+			"cup_weapons_mp5",
 			"cup_weapons_ak",
 			"jsrs_soundmod_framework"
 			};
@@ -129,6 +130,11 @@ class cfgsoundshaders
 	{
 		volume = 1.5;
 	};
+	class twc_pistol_closure_soundshader: twc_akm_closure_soundshader
+	{
+		volume = 0.7;
+		frequency = 1.3;
+	};
 	class twc_l85_closure_soundshader: jsrs_akm_closure_soundshader
 	{
 		volume = 1.5;
@@ -173,6 +179,11 @@ class cfgsoundshaders
 	{
 		volume = 0.4;
 		frequency = 1.0;
+	};
+	class twc_mp5_closure_soundshader: twc_l129_closure_soundshader
+	{
+		volume = 0.5;
+		frequency = 1.3;
 	};
 	
 	class jsrs_g36_shot_close_soundshader;
@@ -278,6 +289,21 @@ class cfgsoundshaders
 			{4,0}
 		};
 	};
+	
+	class jsrs_rook40_shot_close_soundshader;
+	class twc_9mm_popper_close_soundshader: jsrs_rook40_shot_close_soundshader
+	{
+		range=5;
+		frequency = 1.0;
+		volume=0.5;
+		rangecurve[]=
+		{
+			{0,1},
+			{0.5,0.5},
+			{5,0}
+		};
+	};
+		
 	
 	class twc_heavy_popper_2_close_soundshader: twc_762_popper_close_soundshader
 	{
@@ -648,6 +674,22 @@ class cfgsoundsets
 		};
 	};
 	
+	class jsrs_ak12_shot_silenced_soundset;
+	class twc_glock_shot_SD_close_soundset: jsrs_ak12_shot_silenced_soundset
+	{
+		soundshaders[]=
+		{
+			"jsrs_pistol_shake_soundshader",
+			"jsrs_pistol_shell_inroom_soundshader",
+			"twc_pistol_closure_soundshader",
+			"twc_9mm_popper_close_soundshader",
+			"jsrs_7_62mm_interior_silenced_soundshader",
+			"jsrs_7_62mm_shot_silenced_soundshader",
+			"jsrs_762mm_distance_silenced_soundshader"
+		};
+	};
+		
+	
 	class 3CB_BAF_L85_Shot_SoundSet;
 	class twc_L85_Shot_Soundset: 3CB_BAF_L85_Shot_SoundSet
 	{
@@ -751,6 +793,40 @@ class cfgsoundsets
 			"jsrs_very_far_distance_pool_m16_soundshader"
 		};
 		volumefactor= 1.5;
+	};
+	
+	class twc_mp5_shot_soundset: jsrs_m16a4_shot_soundset
+	{
+		soundshaders[]=
+		{
+			"jsrs_pistol_shake_soundshader",
+			"jsrs_pistol_shell_inroom_soundshader",
+			"jsrs_pdw2000_interior_shot_soundshader",
+			"jsrs_pdw2000_interior_shot_2_soundshader",
+			"twc_mp5_closure_soundshader",
+			"twc_9mm_popper_close_soundshader",
+			"jsrs_pdw2000_shot_close_soundshader",
+			"jsrs_pdw2000_shot_close_distance_soundshader",
+			"jsrs_pdw2000_shot_medium_distance_soundshader",
+			"jsrs_close_distance_pool_smg_soundshader",
+			"jsrs_far_distance_pool_smg_soundshader",
+			"jsrs_very_far_distance_pool_smg_soundshader"
+		};
+		frequencyFactor = 1.0;
+	};
+	
+	class twc_mp5_SD_shot_soundset: jsrs_m16a4_shot_soundset
+	{
+		soundshaders[]=
+		{
+			"jsrs_pistol_shake_soundshader",
+			"twc_mp5_closure_soundshader",
+			"twc_9mm_popper_close_soundshader",
+			"jsrs_pistol_shell_inroom_soundshader",
+			"jsrs_9mm_interior_silenced_soundshader",
+			"jsrs_9mm_shot_silenced_soundshader",
+			"jsrs_9mm_distance_silenced_soundshader"
+		};
 	};
 	
 	
@@ -1175,15 +1251,67 @@ class cfgweapons
 			{
 				soundsetshot[]=
 				{
-					"jsrs_pistol_shake_soundset",
-					"jsrs_ak12_shot_silenced_soundset",
-					"jsrs_p07_shell_soundset",
+					"twc_glock_shot_SD_close_soundset",
 					"jsrs_9mm_reflector_1",
 					"jsrs_small_echo_soundset"
 				};
 			};
 		};
 	};
+	
+	class UK3CB_BAF_L105A1: hgun_p07_f
+	{
+		class single: mode_semiauto
+		{
+			class basesoundmodetype;
+			class standardsound: basesoundmodetype
+			{
+				soundsetshot[]=
+				{
+					"jsrs_p227_shot_soundset",
+					"jsrs_9mm_reflector_1",
+					"jsrs_small_echo_soundset"
+				};
+			};
+			class Silencedsound: basesoundmodetype
+			{
+				soundsetshot[]=
+				{
+					"twc_glock_shot_SD_close_soundset",
+					"jsrs_9mm_reflector_1",
+					"jsrs_small_echo_soundset"
+				};
+			};
+		};
+	};
+	
+	class UK3CB_BAF_L105A2: UK3CB_BAF_L105A1
+	{
+		class single: mode_semiauto
+		{
+			class basesoundmodetype;
+			class standardsound: basesoundmodetype
+			{
+				soundsetshot[]=
+				{
+					"jsrs_p227_shot_soundset",
+					"jsrs_9mm_reflector_1",
+					"jsrs_small_echo_soundset"
+				};
+			};
+			class Silencedsound: basesoundmodetype
+			{
+				soundsetshot[]=
+				{
+					"twc_glock_shot_SD_close_soundset",
+					"jsrs_9mm_reflector_1",
+					"jsrs_small_echo_soundset"
+				};
+			};
+		};
+	};
+	
+	
 	class rhs_weap_m14ebrri;
 	class rhs_weap_sr25: rhs_weap_m14ebrri
 	{
@@ -1511,13 +1639,134 @@ class cfgweapons
 	};
 	class Rifle_Base_F;
 	
+	
+	class CUP_smg_MP5SD6: Rifle_Base_F
+	{
+		class FullAuto: mode_fullauto
+		{
+			class standardsound
+			{
+				soundSetShot[] = {"jsrs_ww2_smg_reverb_soundset", "twc_mp5_shot_soundset","jsrs_small_echo_soundset"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_ww2_smg_reverb_soundset", "twc_mp5_SD_shot_soundset", "jsrs_small_echo_soundset"};
+			};
+			
+		};
+		class Burst: Mode_Burst
+		{
+			class standardsound
+			{
+				soundSetShot[] = {"jsrs_ww2_smg_reverb_soundset", "twc_mp5_shot_soundset","jsrs_small_echo_soundset"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_ww2_smg_reverb_soundset", "twc_mp5_SD_shot_soundset", "jsrs_small_echo_soundset"};
+			};
+			
+		};
+		class Single: Mode_SemiAuto
+		{
+			class standardsound
+			{
+				soundSetShot[] = {"jsrs_ww2_smg_reverb_soundset", "twc_mp5_shot_soundset","jsrs_small_echo_soundset"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_ww2_smg_reverb_soundset", "twc_mp5_SD_shot_soundset", "jsrs_small_echo_soundset"};
+			};
+			
+		};
+	};
+	
+	class CUP_smg_MP5A5: CUP_smg_MP5SD6
+	{
+		class FullAuto: mode_fullauto
+		{
+			class standardsound
+			{
+				soundSetShot[] = {"jsrs_ww2_smg_reverb_soundset", "twc_mp5_shot_soundset","jsrs_small_echo_soundset"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_ww2_smg_reverb_soundset", "twc_mp5_SD_shot_soundset", "jsrs_small_echo_soundset"};
+			};
+			
+		};
+		class Burst: Mode_Burst
+		{
+			class standardsound
+			{
+				soundSetShot[] = {"jsrs_ww2_smg_reverb_soundset", "twc_mp5_shot_soundset","jsrs_small_echo_soundset"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_ww2_smg_reverb_soundset", "twc_mp5_SD_shot_soundset", "jsrs_small_echo_soundset"};
+			};
+			
+		};
+		class Single: Mode_SemiAuto
+		{
+			class standardsound
+			{
+				soundSetShot[] = {"jsrs_ww2_smg_reverb_soundset", "twc_mp5_shot_soundset","jsrs_small_echo_soundset"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_ww2_smg_reverb_soundset", "twc_mp5_SD_shot_soundset", "jsrs_small_echo_soundset"};
+			};
+			
+		};
+	};
+	
+	class CUP_smg_MP5A5_flashlight: CUP_smg_MP5A5
+	{
+		class FullAuto: mode_fullauto
+		{
+			class standardsound
+			{
+				soundSetShot[] = {"jsrs_ww2_smg_reverb_soundset", "twc_mp5_shot_soundset","jsrs_small_echo_soundset"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_ww2_smg_reverb_soundset", "twc_mp5_SD_shot_soundset", "jsrs_small_echo_soundset"};
+			};
+			
+		};
+		class Burst: Mode_Burst
+		{
+			class standardsound
+			{
+				soundSetShot[] = {"jsrs_ww2_smg_reverb_soundset", "twc_mp5_shot_soundset","jsrs_small_echo_soundset"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_ww2_smg_reverb_soundset", "twc_mp5_SD_shot_soundset", "jsrs_small_echo_soundset"};
+			};
+			
+		};
+		class Single: Mode_SemiAuto
+		{
+			class standardsound
+			{
+				soundSetShot[] = {"jsrs_ww2_smg_reverb_soundset", "twc_mp5_shot_soundset","jsrs_small_echo_soundset"};
+			};
+			class SilencedSound {
+				soundsetshot[]=
+				{"jsrs_ww2_smg_reverb_soundset", "twc_mp5_SD_shot_soundset", "jsrs_small_echo_soundset"};
+			};
+			
+		};
+	};
+		
 
 	class UK3CB_BAF_L1A1: Rifle_Base_F
 	{
 		class Single:Mode_SemiAuto {
 			sounds[] = {"StandardSound","SilencedSound"};
 			class standardsound {
-				soundSetShot[] = {"3CB_BAF_L1A1_Closure_SoundSet","twc_L1A1_Shot_Soundset","jsrs_556mm_echo_soundset"};
+				soundSetShot[] = {"twc_L1A1_Shot_Soundset","jsrs_556mm_echo_soundset"};
 			};
 		};
 	};
