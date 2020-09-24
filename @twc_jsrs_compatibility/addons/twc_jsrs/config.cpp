@@ -632,6 +632,22 @@ class cfgsoundsets
 		distancefilter="jsrs_weapons_lowpass_filter";
 		frequencyrandomizer=4;
 	};
+	//autocannon_cas for medium distance because the zsu medium sound has a ringing artifact
+	class jsrs_ZSU23_shot_soundset;
+	class twc_ZSU23_shot_soundset: jsrs_ZSU23_shot_soundset
+	{
+		volumefactor=1.75;
+		soundshaders[]=
+		{
+			"jsrs_ZSU23_shot_close_soundshader",
+			"jsrs_ZSU23_shot_close_distance_soundshader",
+			"jsrs_autocannon_cas_shot_medium_distance_soundshader",
+			"jsrs_close_distance_pool_zsu_soundshader",
+			"jsrs_far_distance_pool_zsu_soundshader",
+			"jsrs_very_far_distance_pool_zsu_soundshader"
+		};
+	};
+	
 	class 3CB_BAF_L85_Shot_SoundSet;
 	class twc_L85_Shot_Soundset: 3CB_BAF_L85_Shot_SoundSet
 	{
@@ -783,9 +799,9 @@ class cfgsoundsets
 			"twc_akm_closure_soundshader",
 			"jsrs_akm_interior_shot_soundshader",
 			"jsrs_akm_interior_shot_2_soundshader",
-			"jsrs_akm_shot_close_soundshader",
-			"jsrs_akm_shot_close_distance_soundshader",
-			"jsrs_akm_shot_medium_distance_soundshader",
+			"jsrs_ak74u_shot_close_soundshader",
+			"jsrs_ak74u_shot_close_distance_soundshader",
+			"jsrs_ak74u_shot_medium_distance_soundshader",
 			"jsrs_close_distance_pool_ak_soundshader",
 			"jsrs_far_distance_pool_ak_soundshader",
 			"jsrs_very_far_distance_pool_ak_soundshader"
@@ -887,8 +903,10 @@ class cfgsoundsets
 			"twc_heavy_popper_close_soundshader",
 		//	"jsrs_cmr76_shot_close_soundshader",
 			"jsrs_pkm_shot_close_soundshader",
-			"jsrs_pkm_shot_close_distance_soundshader",
-			"jsrs_pkm_shot_medium_distance_soundshader",
+			"jsrs_m2_shot_close_distance_soundshader",
+			"jsrs_m2_shot_medium_distance_soundshader",
+		//	"jsrs_pkm_shot_close_distance_soundshader",
+		//	"jsrs_pkm_shot_medium_distance_soundshader",
 			"jsrs_close_distance_pool_mmg_soundshader",
 			"jsrs_far_distance_pool_mmg_soundshader",
 			"jsrs_very_far_distance_pool_mmg_soundshader"
@@ -1117,7 +1135,6 @@ class mode_burst;
 class mode_fullauto;
 class cfgweapons
 {
-	
 	
 	class pistol_base_f;
 	class hgun_p07_f: pistol_base_f
@@ -3317,6 +3334,21 @@ class cfgweapons
 	};
 	
 	class CannonCore;
+	
+	class CUP_Vacannon_2A14_veh: CannonCore
+	{
+		class manual:CannonCore
+		{
+			class standardsound
+			{
+				soundSetShot[] = {
+					"twc_ZSU23_shot_soundset",
+					"jsrs_40mm_reflector_1",
+					"jsrs_autocannon_casing"};
+			};
+		};
+	};
+			
 	
 	class autocannon_Base_F: CannonCore
 	{
