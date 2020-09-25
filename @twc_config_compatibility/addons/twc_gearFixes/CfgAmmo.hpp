@@ -160,6 +160,27 @@ class CfgAmmo {
 	};
 	
 	class BulletBase;
+	
+	class USAF_PGU_25_HEI: BulletBase
+	{
+		SoundSetExplosion[] = {"Shell19mm25mm_Exp_SoundSet"};
+	};
+	class USAF_40mm_HE: BulletBase
+	{
+		SoundSetExplosion[] = {"RocketsHeavy_Exp_SoundSet","Explosion_Debris_SoundSet"};
+	};
+	class USAF_40mm_SABOT: USAF_40mm_HE
+	{
+		SoundSetExplosion[] = {"RocketsHeavy_Exp_SoundSet","Explosion_Debris_SoundSet"};
+	};
+	class USAF_105_HEPD: BulletBase
+	{
+		SoundSetExplosion[] = {"Shell155mm_Exp_SoundSet","Shell155mm_Tail_SoundSet","Explosion_Debris_SoundSet"};
+	};
+	class USAF_105_SABOT: USAF_105_HEPD
+	{
+		SoundSetExplosion[] = {"Shell155mm_Exp_SoundSet","Shell155mm_Tail_SoundSet","Explosion_Debris_SoundSet"};
+	};
 	class CUP_B_23mm_AA: BulletBase
 	{
 		model = "z\ace\addons\tracers\ace_TracerGreen2.p3d";
