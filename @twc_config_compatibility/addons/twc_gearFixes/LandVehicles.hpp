@@ -1606,7 +1606,7 @@
 		frontBias = 0.5;
 		rearBias = 1.5;
 		centreBias = 1.0;
-		torqueCurve[] = { { 0.0, 0.5 }, { 0.6, 0.6 }, { 1.0, 0.4 } };
+		peaktorque = 200;
 		class Turrets;
 		class Wheels:Wheels {
 			class LF:LF {
@@ -1617,9 +1617,9 @@
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.1, 0.3 }, { 1.0, 0.2 }};
+				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
 				latStiffX = 25;
-				latStiffY = 180;
+				latStiffY = 70;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				mass = 30;
 				maxBrakeTorque = 900;
@@ -1667,15 +1667,15 @@
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				frictionVsSlipGraph[] = {{ 0.0, 0.7 }, { 0.2, 0.3 }, { 1.0, 0.7 }};
-				longitudinalStiffnessPerUnitGravity = 10000;
+				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
+				longitudinalStiffnessPerUnitGravity = 20000;
 				mass = 30;
 				maxBrakeTorque = 1800;
 				maxDroop = 0.3;
 				maxHandBrakeTorque = 1000;
 				moi = 6;
 				side = "left";
-				sprungMass = 225;
+				sprungMass = 425;
 				steering = 0;
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				suspTravelDirection[] = {0,-1,0};
@@ -1690,7 +1690,7 @@
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
 				dampingRateInAir = 0.8;
-				longitudinalStiffnessPerUnitGravity = 10000;
+				longitudinalStiffnessPerUnitGravity = 20000;
 				mass = 30;
 				maxBrakeTorque = 1800;
 				maxDroop = 0.3;

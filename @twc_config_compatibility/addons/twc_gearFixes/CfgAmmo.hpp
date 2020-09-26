@@ -167,19 +167,19 @@ class CfgAmmo {
 	};
 	class USAF_40mm_HE: BulletBase
 	{
-		SoundSetExplosion[] = {"RocketsHeavy_Exp_SoundSet","Explosion_Debris_SoundSet"};
+		SoundSetExplosion[] = {"Shell30mm40mm_Exp_SoundSet","Explosion_Debris_SoundSet"};
 	};
 	class USAF_40mm_SABOT: USAF_40mm_HE
 	{
-		SoundSetExplosion[] = {"RocketsHeavy_Exp_SoundSet","Explosion_Debris_SoundSet"};
+		SoundSetExplosion[] = {"Shell30mm40mm_Exp_SoundSet","Explosion_Debris_SoundSet"};
 	};
 	class USAF_105_HEPD: BulletBase
 	{
-		SoundSetExplosion[] = {"Shell155mm_Exp_SoundSet","Shell155mm_Tail_SoundSet","Explosion_Debris_SoundSet"};
+		SoundSetExplosion[] = {"Shell105mm130mm_Exp_SoundSet","Shell155mm_Tail_SoundSet","Explosion_Debris_SoundSet"};
 	};
 	class USAF_105_SABOT: USAF_105_HEPD
 	{
-		SoundSetExplosion[] = {"Shell155mm_Exp_SoundSet","Shell155mm_Tail_SoundSet","Explosion_Debris_SoundSet"};
+		SoundSetExplosion[] = {"Shell105mm130mm_Exp_SoundSet","Shell155mm_Tail_SoundSet","Explosion_Debris_SoundSet"};
 	};
 	class CUP_B_23mm_AA: BulletBase
 	{
