@@ -1139,9 +1139,12 @@
        };
 	};
 	
-	class rhsusf_m998_w_4dr_halftop;
+	class rhsusf_m998_w_4dr;
+	class rhsusf_m998_w_4dr_halftop: rhsusf_m998_w_4dr {
+		class Wheels;
+	};
 	class rhsusf_m998_w_4dr_fulltop: rhsusf_m998_w_4dr_halftop {
-		class Wheels {
+		class Wheels: Wheels {
 			class LF;
 		};
 	};
@@ -1204,63 +1207,9 @@
 		class Turrets;
 		
 	};
+
 	
-	class rhsusf_m1025_w_m2: rhsusf_m1025_w
-	{
-		class Turrets: Turrets
-		{
-			class MainTurret;
-			class M2_Turret: MainTurret
-			{
-				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
-				magazines[] = {"UK3CB_BAF_127_100Rnd"};
-			};
-		};
-		class TransportMagazines
-		{
-			class _xx_127
-			{
-				magazine = "UK3CB_BAF_127_100Rnd";
-				count = 7;
-			};
-		};
-		class Transportitems
-		{};
-		class TransportWeapons
-		{};
-		class TransportBackpacks
-		{};
-		maximumLoad = 4000;
-	};
-	
-	class rhsusf_m1025_w_mk19: rhsusf_m1025_w_m2
-	{
-		class Turrets: Turrets
-		{
-			class M2_Turret: M2_Turret
-			{
-				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L134A1"};
-				magazines[] = {"UK3CB_BAF_32Rnd_40mm_G_Box"};
-			};
-		};
-		class TransportMagazines
-		{
-			class _xx_40mm
-			{
-				magazine = "UK3CB_BAF_32Rnd_40mm_G_Box";
-				count = 7;
-			};
-		};
-		class Transportitems
-		{};
-		class TransportWeapons
-		{};
-		class TransportBackpacks
-		{};
-	};
-	
-	
-	class rhsusf_m1025_d: rhsusf_m998_w_4dr_fulltop {
+	class rhsusf_m1043_w: rhsusf_m1025_w {
 		minOmega = 10;
 		clutchStrength = 10;
 		class Wheels:Wheels {
@@ -1313,7 +1262,7 @@
 		
 	};
 	
-	class rhsusf_m1025_d_m2: rhsusf_m1025_d
+	class rhsusf_m1025_w_m2: rhsusf_m1025_w
 	{
 		class Turrets: Turrets
 		{
@@ -1341,7 +1290,7 @@
 		maximumLoad = 4000;
 	};
 	
-	class rhsusf_m1025_d_mk19: rhsusf_m1025_d_m2
+	class rhsusf_m1025_w_mk19: rhsusf_m1025_w_m2
 	{
 		class Turrets: Turrets
 		{

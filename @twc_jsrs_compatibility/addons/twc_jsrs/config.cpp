@@ -100,6 +100,8 @@ class cfgsoundshaders
 		};
 	};
 	
+	
+	
 	class jsrs_762mm_distance_silenced_soundshader;
 	class twc_762mm_distance_silenced_soundshader: jsrs_762mm_distance_silenced_soundshader
 	{
@@ -658,6 +660,104 @@ class cfgsoundsets
 		distancefilter="jsrs_weapons_lowpass_filter";
 		frequencyrandomizer=4;
 	};
+	
+	class Shell105mm130mm_Exp_SoundSet
+	{
+		soundshaders[]=
+		{
+			"jsrs_bomb_explosion_close_distance_soundshader",
+			"jsrs_bomb_explosion_medium_distance_soundshader",
+			"jsrs_bomb_explosion_far_distance_soundshader",
+			"jsrs_bomb_explosion_very_far_distance_soundshader",
+			"jsrs_big_debris_regular_soundshader",
+			"jsrs_big_debris_houses_soundshader"
+		};
+		volumefactor=5;
+		volumecurve="jsrs_explosions_volumecurve";
+		sound3dprocessingtype="jsrs_explosions_3dprocessor";
+		distancefilter="jsrs_explosions_lowpass_filter";
+		spatial=1;
+		doppler=0;
+		loop=0;
+		occlusionfactor=0.1;
+		obstructionfactor=0.1;
+		frequencyrandomizer=3;
+		frequencyFactor = 0.6;
+	};
+	
+	class Shell30mm40mm_Exp_SoundSet
+	{
+		soundshaders[]=
+		{
+			"jsrs_mortar_explosion_close_distance_soundshader",
+			"jsrs_mortar_explosion_medium_distance_soundshader",
+			"jsrs_mortar_explosion_far_distance_soundshader",
+			"jsrs_mortar_explosion_very_far_distance_soundshader",
+			"jsrs_big_debris_regular_soundshader",
+			"jsrs_big_debris_houses_soundshader"
+		};
+		volumefactor=1.3;
+		volumecurve="jsrs_explosions_volumecurve";
+		sound3dprocessingtype="jsrs_explosions_3dprocessor";
+		distancefilter="jsrs_explosions_lowpass_filter";
+		spatial=1;
+		doppler=0;
+		loop=0;
+		occlusionfactor=0.1;
+		obstructionfactor=0.1;
+		frequencyrandomizer=3;
+	};
+	
+	class Shell19mm25mm_Exp_SoundSet
+	{
+		soundshaders[]=
+		{
+			"jsrs_bomb_explosion_close_distance_soundshader",
+			"jsrs_small_explosion_medium_distance_soundshader",
+			"jsrs_small_explosion_far_distance_soundshader",
+			"jsrs_small_explosion_very_far_distance_soundshader",
+			"jsrs_small_debris_regular_soundshader",
+			"jsrs_small_debris_houses_soundshader"
+		};
+		volumefactor=1.1;
+		volumecurve="jsrs_explosions_volumecurve";
+		sound3dprocessingtype="jsrs_explosions_3dprocessor";
+		distancefilter="jsrs_explosions_lowpass_filter";
+		spatial=1;
+		doppler=0;
+		loop=0;
+		occlusionfactor=0.1;
+		obstructionfactor=0.1;
+		frequencyrandomizer=3;
+	};
+	
+	
+	class Shell155mm_Tail_SoundSet
+	{
+		soundshaders[]=
+		{
+			"jsrs_explosion_echo_medium_soundshader",
+			"jsrs_explosion_echo_houses_soundshader",
+			"jsrs_explosion_big_shockwave_soundshader",
+			"jsrs_bomb_explosion_reverb_houses_soundshader",
+			"jsrs_bomb_explosion_reverb_forest_soundshader",
+			"jsrs_bomb_explosion_reverb_meadow_soundshader"
+		};
+		volumefactor=1;
+		volumecurve="jsrs_fadeout_volumecurve";
+		sound3dprocessingtype="jsrs_explosion_tail_3dprocessor";
+		distancefilter="jsrs_explosion_tail_lowpass_filter";
+		spatial=1;
+		doppler=0;
+		loop=0;
+		occlusionfactor=0.1;
+		obstructionfactor=0.1;
+		frequencyrandomizer=2;
+		soundshaderslimit=2;
+		frequencyFactor = 0.9;
+	};
+	
+	
 	//autocannon_cas for medium distance because the zsu medium sound has a ringing artifact
 	class jsrs_ZSU23_shot_soundset;
 	class twc_ZSU23_shot_soundset: jsrs_ZSU23_shot_soundset
