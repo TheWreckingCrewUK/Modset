@@ -1029,7 +1029,7 @@ class CfgGroups
                                         class Unit1
                                         {
                                                 side = 1;
-                                                vehicle = "Modern_British_FSTForwardObserver";
+                                                vehicle = "Modern_British_FAC";
                                                 rank = "PRIVATE";
                                                 position[] = {3,0,0};
                                         };
