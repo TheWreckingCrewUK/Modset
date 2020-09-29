@@ -7,7 +7,7 @@ if (player != _unit) exitWith {};
 waitUntil { sleep 0.5; !(isNull player) };
 waitUntil { sleep 1.271; time > 0 };
 
-ACE_maxWeightDrag = 10000000;
+ACE_maxWeightDrag = 100000;
 ACE_maxWeightCarry = 700;
 
 _action = ["CheckID", "Check Vehicle ID", "", {[_target] call twc_fnc_checkvehicleid}, {true}] call ace_interact_menu_fnc_createAction;

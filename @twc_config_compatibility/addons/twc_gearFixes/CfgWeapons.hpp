@@ -620,7 +620,7 @@
 	{
 		reloadtime = 0.22;
 		class EventHandlers: EventHandlers {
-			fired = "_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 8) - 4, (velocity _bullet select 1) + (random 8) - 4,  (velocity _bullet select 2) + (random 6) - 3]; [_this select 6, _this select 0] call twc_fnc_aps;";
+			fired = "[_this select 6, _this select 0] call twc_fnc_aps; if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > (twc_gpmglastfired + 0.5)) then {twc_gpmglastfiredmult = 0;};twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.3);_mult = (((floor twc_gpmglastfiredmult) min 5));_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 4) - 2)* ((_mult) max 1.5)), (velocity _bullet select 1) + (((random 4) - 2)* ((_mult) max 1.5)), 	(velocity _bullet select 2) + (((random 4) - 2)* ((_mult) max 0.8))];twc_gpmglastfired = time;";
 		};
 	};
 	
