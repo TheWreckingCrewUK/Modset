@@ -46,7 +46,7 @@ class CfgPatches {
 
 class Extended_InitPost_EventHandlers {
 	class CAManBase {
-		class twc_moduleInitPos_eh {
+		class twc_pubmoduleInitPos_eh {
 			init = "[(_this select 0)] execVM 'twc_pubfixes\init.sqf';";
 		};
 	};

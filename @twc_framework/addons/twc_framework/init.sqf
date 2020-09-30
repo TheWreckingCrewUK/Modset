@@ -7,7 +7,7 @@ if (player != _unit) exitWith {};
 waitUntil { sleep 0.5; !(isNull player) };
 waitUntil { sleep 1.271; time > 0 };
 
-ACE_maxWeightDrag = 100000;
+ACE_maxWeightDrag = 10000000;
 ACE_maxWeightCarry = 700;
 
 _action = ["CheckID", "Check Vehicle ID", "", {[_target] call twc_fnc_checkvehicleid}, {true}] call ace_interact_menu_fnc_createAction;
@@ -59,7 +59,7 @@ player addEventHandler ["Fired", {
 		if (!alive _projectile) exitwith {}; 
 
 		//caliber detection. 'Caliber' in config is often set up weird to help with penetration, so use hit instead. Multiplies the buffeting by how chunky the bullet is and how far it's gone already to differntiate between high and low velocity bullets
-		_mult = (((((((player distance _projectile) * -1) + 2000) * 0.0006) - (((getNumber (configFile >> "CfgAmmo" >> _ammo >> "hit")) - 5) * 0.1)) max 0.05) min (missionnamespace getvariable ["tlimit", 0.5]));
+		_mult = (((((((player distance _projectile) * -1) + 2000) * 0.0006) - (((getNumber (configFile >> "CfgAmmo" >> _ammo >> "hit")) - 5) * 0.1)) max 0.01) min (missionnamespace getvariable ["tlimit", 0.5]));
 
 
 		//systemchat ("transonic at " + (str(player distance _projectile)) + "m with a mult of " + (str _mult));
