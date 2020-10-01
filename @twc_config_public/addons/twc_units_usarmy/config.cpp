@@ -29,6 +29,7 @@ class CfgPatches
 		{
 			"rhsusf_c_matv",
 			"rhsusf_stryker",
+			"rhsusf_c_weapons",
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_Common",
 			"A3_Characters_F",

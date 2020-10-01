@@ -791,6 +791,13 @@ class cfgWeapons
 		};
 	};
 	
+	
+	class rhs_weap_sr25: rhs_weap_m14ebrri
+	{
+		magazines[] = {"rhsusf_20Rnd_762x51_SR25_m118_special_Mag","rhsusf_20Rnd_762x51_SR25_mk316_special_Mag","rhsusf_20Rnd_762x51_SR25_m993_Mag","rhsusf_20Rnd_762x51_SR25_m62_Mag","ACE_20Rnd_762x51_Mk319_Mod_0_Mag","ACE_20Rnd_762x51_Mk316_Mod_0_Mag","ACE_20Rnd_762x51_M118LR_Mag","ACE_20Rnd_762x51_Mag_Tracer","ACE_20Rnd_762x51_Mag_SD"};
+	};
+	
+	
 	class rhs_weap_sr25_ec_d;
 	class twc_sr25_us_marksman: rhs_weap_sr25_ec_d
 	{
@@ -996,11 +1003,6 @@ class cfgWeapons
 			{
 				slot="UnderBarrelSlot";
 				item="rhsusf_acc_harris_swivel";
-			};
-			class LinkedItemsMuzzleSlot
-			{
-				slot="MuzzleSlot";
-				item="rhsusf_acc_m24_silencer_d";
 			};
 		};
 		class WeaponSlotsInfo
