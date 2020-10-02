@@ -10,11 +10,17 @@
 		vehicleClass="Men_IRA";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_IG_Guerrilla_6_1";
+		uniformClass="U_BG_Guerilla2_2";
 		backpack="";
+		
+		facewear = "";
+		allowedfacewear[] = {""};
+		allowedHeadgear[] = {""};
+		allowedHeadgearB[] = {""};
+		headgearList[] = {""};
 		linkedItems[]=
 		{
-        "V_BandollierB_oli",
+        "CUP_V_OI_TKI_Jacket4_06",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -22,7 +28,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-        "V_BandollierB_oli",
+        "CUP_V_OI_TKI_Jacket4_06",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -47,10 +53,18 @@
 		"CUP_10x_303_M",
 		"CUP_10x_303_M",
 		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
+		"CUP_10x_303_M",
 		"CUP_10x_303_M",
 		"CUP_10x_303_M",
 		"CUP_10x_303_M",
@@ -75,7 +89,7 @@
 		_generalMacro="IRA_Rifleman_M16";
 		displayName="Rifleman (M16 1)";
 		icon="iconManLeader";
-		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
+		uniformClass="CUP_U_O_CHDKZ_Lopotev";
 		backpack="";
 		linkedItems[]=
 		{
@@ -134,7 +148,7 @@
 	class IRA_Rifleman_M16_3: IRA_Rifleman_M16
 	{
 		displayName="Rifleman (M16 3)";
-		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
+		uniformClass="U_BG_Guerrilla_6_1";
 	};
 	
 	class IRA_Rifleman_M16_4: IRA_Rifleman_M16
@@ -145,9 +159,59 @@
 	
 	class IRA_Rifleman_FAL: IRA_Rifleman_M16
 	{
-		displayName="Rifleman (M16 5)";
-		uniformClass="CUP_U_I_GUE_Anorak_03";
+		displayName="Rifleman (FAL)";
+		uniformClass="U_BG_Guerrilla_6_1";
+		backpack="";
+		linkedItems[]=
+		{
+        "CUP_V_OI_TKI_Jacket4_06",
+		"G_Balaclava_blk",
+		"ItemMap",
+		"ItemCompass"
+		};
+		respawnLinkedItems[]=
+		{
+        "CUP_V_OI_TKI_Jacket4_06",
+		"G_Balaclava_blk",
+		"ItemMap",
+		"ItemCompass"
+		};
+		weapons[]=
+		{
+		"Throw",
+		"Put",
+		"CUP_arifle_FNFAL5061_wooden"
+		};
+		respawnweapons[]=
+		{
+		"Throw",
+		"Put",
+		"CUP_arifle_FNFAL5061_wooden"
+		};
+		magazines[]=
+		{
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"CUP_20Rnd_762x51_FNFAL_M",
+		"SmokeShell"
+		};
 	};
+	
 	class IRA_Rifleman_AKM: IRA_Squadleader
 	{
 		_generalMacro="IRA_Rifleman_AKM";
@@ -213,18 +277,18 @@
 		vehicleClass="Men_IRA";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_BG_Guerrilla_6_1";
+		uniformClass="U_BG_Guerilla2_2";
 		backpack="Afr_Backpack_AT";
 		linkedItems[]=
 		{
-        "V_BandollierB_oli",
+        "CUP_V_OI_TKI_Jacket1_05",
 		"G_Balaclava_oli",
 		"ItemMap",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_BandollierB_oli",
+        "CUP_V_OI_TKI_Jacket1_05",
 		"G_Balaclava_oli",
 		"ItemMap",
 		"ItemCompass"
@@ -268,18 +332,18 @@
 		_generalMacro="IRA_Autorifleman";
 		scope=2;
 		displayName="Machinegunner GPMG";
-		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
+		uniformClass="U_BG_Guerilla2_1";
 		backpack="";
 		linkedItems[]=
 		{
-        "V_BandollierB_oli",
+        "CUP_V_O_Ins_Carrier_Rig_MG",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-        "V_BandollierB_oli",
+        "CUP_V_O_Ins_Carrier_Rig_MG",
 		"G_Balaclava_blk",
 		"ItemMap",
 		"ItemCompass"
@@ -317,7 +381,7 @@
 		_generalMacro="IRA_Autorifleman_2";
 		scope=2;
 		displayName="Machinegunner PKM";
-		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
+		uniformClass="U_BG_Guerrilla_6_1";
 		backpack="Afr_Backpack_MG";
 		linkedItems[]=
 		{
@@ -362,7 +426,7 @@
 		_generalMacro="IRA_pistol_1";
 		scope=2;
 		displayName="Pistol 1";
-		uniformClass="CUP_U_B_BDUv2_roll_gloves_OD";
+		uniformClass="U_BG_Guerrilla_6_1";
 		linkedItems[]=
 		{
 		"G_Balaclava_blk",
@@ -412,7 +476,7 @@
 		_generalMacro="IRA_pistol_2";
 		scope=2;
 		displayName="Pistol 2";
-		uniformClass="CUP_U_B_BDUv2_roll_gloves_dirty_DPM_OD";
+		uniformClass="CUP_U_O_CHDKZ_Lopotev";
 		weapons[]=
 		{
 		"Throw",
