@@ -46,8 +46,8 @@
 	{
 		class TransportMagazines
 		{
-			maga_nc(30Rnd_556x45_Stanag,5);
-			maga_nc(30Rnd_556x45_Stanag_Tracer_Red,3);
+			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag,5);
+			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red,3);
 		};
 		
 		class TransportWeapons
@@ -117,8 +117,8 @@
 		};
 		class TransportMagazines
 		{
-			maga_nc(CUP_30Rnd_556x45_Stanag,15);
-			maga_nc(CUP_30Rnd_556x45_Stanag_Tracer_Red,10);
+			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag,15);
+			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red,10);
 			maga_nc(SmokeShellGreen,2);
 		};
 	};
@@ -132,8 +132,8 @@
 		};
 		class TransportMagazines
 		{
-			maga_nc(CUP_30Rnd_556x45_Stanag,10);
-			maga_nc(CUP_30Rnd_556x45_Stanag_Tracer_Red,10);
+			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag,10);
+			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red,10);
 		};
 	};
 	
@@ -146,8 +146,8 @@
 		};
 		class TransportMagazines
 		{
-			maga_nc(CUP_30Rnd_556x45_Stanag,5);
-			maga_nc(CUP_30Rnd_556x45_Stanag_Tracer_Red,2);
+			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag,5);
+			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red,2);
 		};
 		class TransportWeapons
 		{
