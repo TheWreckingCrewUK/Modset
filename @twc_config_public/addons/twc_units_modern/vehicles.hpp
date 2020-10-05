@@ -1091,12 +1091,13 @@
 
 	class rhsusf_m998_w_2dr: rhsusf_hmmwe_base {
 		minOmega = 10;
-		clutchStrength = 10;
+		clutchStrength = 3;
 		class Wheels:Wheels {
 			class LF:LF {
 				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
+				dampingRateDestroyed = 1000000.0;
 				maxHandBrakeTorque = 30000;
 				springDamperRate = 4000;
 				springStrength = 40000;
@@ -1152,14 +1153,15 @@
 	
 	class rhsusf_m1025_w: rhsusf_m998_w_4dr_fulltop {
 		minOmega = 10;
-		clutchStrength = 10;
-	//	peakTorque = 900;
+		clutchStrength = 3;
+	//	peakTorque = 750;
 	//	enginePower = 300;
 		class Wheels:Wheels {
 			class LF:LF {
 				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
+				dampingRateDestroyed = 1000000.0;
 				maxHandBrakeTorque = 30000;
 				springDamperRate = 4000;
 				springStrength = 40000;
@@ -1211,12 +1213,13 @@
 	
 	class rhsusf_m1043_w: rhsusf_m1025_w {
 		minOmega = 10;
-		clutchStrength = 10;
+		clutchStrength = 3;
 		class Wheels:Wheels {
 			class LF:LF {
 				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
+				dampingRateDestroyed = 1000000.0;
 				maxHandBrakeTorque = 30000;
 				springDamperRate = 4000;
 				springStrength = 40000;
