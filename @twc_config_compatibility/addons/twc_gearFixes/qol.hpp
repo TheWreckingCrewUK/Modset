@@ -261,7 +261,7 @@ class cfgRecoils
 
 
 //camshake on weapon fired and gunwalk/mortarwalk. Walk means AI will not hit heavy weapons such as turrets and artillery on the first shot, but will self-correct with each shot
-
+ 
 class Extended_FiredBIS_EventHandlers {
 	class Car {
 		class twc_gunwalk {
