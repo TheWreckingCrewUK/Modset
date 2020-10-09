@@ -102,5 +102,6 @@
 	{
 		displayName = "7.62mm 20rnd (M118LR)";
 		ammo = "ACE_762x51_Ball_M118LR";
+		lastRoundsTracer = 0;
 	};
 	
