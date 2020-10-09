@@ -97,3 +97,10 @@
 		count = 5;
 	};
 	
+	class 20Rnd_762x51_Mag;
+	class UK3CB_BAF_762_L42A1_20Rnd:20Rnd_762x51_Mag
+	{
+		displayName = "7.62mm 20rnd (M118LR)";
+		ammo = "ACE_762x51_Ball_M118LR";
+	};
+	
