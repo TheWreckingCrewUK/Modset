@@ -140,17 +140,17 @@
 	
 	class CUP_Rarden_CTWS_veh: autocannon_40mm_CTWS
 	{
-		magazines[] = {"twc_3rnd_30mm_AP","twc_3rnd_30mm_HE"};
-		magazineReloadTime = 1;
+		magazines[] = {"twc_3rnd_30mm_AP","twc_3rnd_30mm_HE", "TWC_Magazine_30mm_3rd_APDS","TWC_Magazine_30mm_3rd_HET"};
+		magazineReloadTime = 0.7;
 		muzzles[] = {"HE"};
-		ReloadTime = 0.3;
-		autoReload = 0;
+		ReloadTime = 0.6;
+		autoReload = 1;
 		class HE: HE
 		{
-			magazines[] = {"twc_3rnd_30mm_AP","twc_3rnd_30mm_HE"};
-			magazineReloadTime = 1;
-			ReloadTime = 0.3;
-			autoReload = 0;
+			magazines[] = {"twc_3rnd_30mm_AP","twc_3rnd_30mm_HE","TWC_Magazine_30mm_3rd_APDS","TWC_Magazine_30mm_3rd_HET"};
+			ReloadTime = 0.6;
+			magazineReloadTime = 0.7;
+			autoReload = 1;
 		};
 	};
 	/*

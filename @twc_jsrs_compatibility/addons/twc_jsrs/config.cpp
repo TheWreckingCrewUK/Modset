@@ -15,6 +15,7 @@ class CfgPatches {
 			"cup_wheeledvehicles_brdm2",
 			"cup_trackedvehicles_mtlb",
 		//	"cup_trackedvehicles_t55",//don't create a t55 dependency, it breaks rhs m4's somehow. just live with the t55 being quiet
+			"cup_trackedvehicles_bmp",
 			"cup_trackedvehicles_t72",
 			"cup_trackedvehicles_t90",
 			"uk3cb_baf_weapons_smallarms",
