@@ -100,7 +100,7 @@
 	class 20Rnd_762x51_Mag;
 	class UK3CB_BAF_762_L42A1_20Rnd:20Rnd_762x51_Mag
 	{
-		displayName = "7.62mm 20rnd (M118LR)";
+		descriptionshort = "Calibre: 7.62x51mm STANAG<br/>Rounds: 20 x M118LR<br/>by www.3commandobrigade.com";
 		ammo = "ACE_762x51_Ball_M118LR";
 		lastRoundsTracer = 0;
 	};

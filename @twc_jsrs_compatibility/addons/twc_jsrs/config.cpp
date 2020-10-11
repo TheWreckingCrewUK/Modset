@@ -14,7 +14,6 @@ class CfgPatches {
 			"a3_weapons_f_exp",
 			"cup_wheeledvehicles_brdm2",
 			"cup_trackedvehicles_mtlb",
-		//	"cup_trackedvehicles_t55",//don't create a t55 dependency, it breaks rhs m4's somehow. just live with the t55 being quiet
 			"cup_trackedvehicles_bmp",
 			"cup_trackedvehicles_t72",
 			"cup_trackedvehicles_t90",
@@ -28,9 +27,14 @@ class CfgPatches {
 			"cup_weapons_mp5",
 			"cup_weapons_ak",
 			"jsrs_soundmod_framework"
-			};
+		};
 	};
 };
+
+/*these pbo's break rhs weapons when you add them to dependencies, live without them:
+cup_trackedvehicles_t55
+cup_trackedvehicles_bulldog
+*/
 
 class cfgsoundshaders
 {
