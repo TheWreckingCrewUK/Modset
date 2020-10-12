@@ -990,7 +990,7 @@
 				maxCompression = 0.5;
 			//	sprungMass = 4250;
 				springStrength = 295000;
-				springDamperRate = 9000;
+				springDamperRate = 9300;
 				longitudinalStiffnessPerUnitGravity = 15000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -1006,7 +1006,7 @@
 				maxCompression = 0.5;
 			//	sprungMass = 4250;
 				springStrength = 225000;
-				springDamperRate = 9000;
+				springDamperRate = 9300;
 				longitudinalStiffnessPerUnitGravity = 15000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -1022,7 +1022,7 @@
 				maxCompression = 0.5;
 			//	sprungMass = 4250;
 				springStrength = 225000;
-				springDamperRate = 9000;
+				springDamperRate = 9300;
 				longitudinalStiffnessPerUnitGravity = 15000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -1039,7 +1039,7 @@
 				maxCompression = 0.5;
 			//	sprungMass = 4250;
 				springStrength = 295000;
-				springDamperRate = 9000;
+				springDamperRate = 9300;
 				longitudinalStiffnessPerUnitGravity = 15000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -1055,7 +1055,7 @@
 				maxCompression = 0.5;
 			//	sprungMass = 4250;
 				springStrength = 225000;
-				springDamperRate = 9000;
+				springDamperRate = 9300;
 				longitudinalStiffnessPerUnitGravity = 15000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -1071,7 +1071,7 @@
 				maxCompression = 0.5;
 			//	sprungMass = 4250;
 				springStrength = 225000;
-				springDamperRate = 9000;
+				springDamperRate = 9300;
 				longitudinalStiffnessPerUnitGravity = 15000;
 				latStiffX = 25;
 				latStiffY = 180;
@@ -1083,17 +1083,19 @@
 	class rhsusf_hmmwe_base: MRAP_01_base_F {
 		ace_cargo_size = 35;
 		ace_cargo_canLoad = 1;
+		turnCoef = 3.5;
 		minOmega = 10;
-		class Wheels {
-			class LF;
-		};
+	//	class Wheels {
+	//		class LF;
+	//	};
 	};
 
 	class rhsusf_m998_w_2dr: rhsusf_hmmwe_base {
 		minOmega = 10;
 		clutchStrength = 3;
-		class Wheels:Wheels {
-			class LF:LF {
+		turnCoef = 3.5;
+		class Wheels {
+			class LF {
 				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
@@ -1142,22 +1144,23 @@
 	
 	class rhsusf_m998_w_4dr;
 	class rhsusf_m998_w_4dr_halftop: rhsusf_m998_w_4dr {
-		class Wheels;
+	//	class Wheels;
 	};
 	class rhsusf_m998_w_4dr_fulltop: rhsusf_m998_w_4dr_halftop {
-		class Wheels: Wheels {
-			class LF;
-		};
+	//	class Wheels: Wheels {
+	//		class LF;
+	//	};
 	};
 	
 	
 	class rhsusf_m1025_w: rhsusf_m998_w_4dr_fulltop {
 		minOmega = 10;
 		clutchStrength = 3;
+		turnCoef = 3.5;
 	//	peakTorque = 750;
 	//	enginePower = 300;
-		class Wheels:Wheels {
-			class LF:LF {
+		class Wheels {
+			class LF {
 				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
