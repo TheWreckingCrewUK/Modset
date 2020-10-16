@@ -4,6 +4,1313 @@
 		armor = 150;
 	};
 	
+	
+//handling modifications
+	class MRAP_01_base_F;
+	
+	
+	
+	
+	class rhsusf_M1239_base: MRAP_01_base_F {
+		antiRollbarForceLimit = 0;
+		turnCoef = 5;
+		minOmega = 40;
+		changeGearOmegaRatios[] = {1,0.294118,0.3,0.3,0.99,0.1,0.764706,0.25,0.852941,0.5,1,0.647059,1,0.647059,1,0.647059};
+		changeGearType = "rpmratio";
+		frontRearSplit = 0.2;
+		class Wheels {
+			class L1 {
+				maxBrakeTorque = 5000;
+				maxHandBrakeTorque = 50000;
+				maxCompression = 0.4;
+			//	sprungMass = 4250;
+				springStrength = 295000;
+				springDamperRate = 9300;
+				longitudinalStiffnessPerUnitGravity = 15000;
+				latStiffY = 80;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.0 }};
+			};
+			class L2:L1 {
+				maxBrakeTorque = 23000;
+				springStrength = 255000;
+				springDamperRate = 11000;
+			};
+			class L3:L1 {
+				maxBrakeTorque = 15000;
+				springStrength = 255000;
+				springDamperRate = 11000;
+			};
+			class R1:L1 {
+			};
+			class R2:R1 {
+				maxBrakeTorque = 23000;
+				springStrength = 255000;
+				springDamperRate = 11000;
+			};
+			class R3:R1 {
+				maxBrakeTorque = 15000;
+				springStrength = 255000;
+				springDamperRate = 11000;
+			};
+		};
+		
+		class complexGearbox {
+			driveString = "D";
+			gearBoxMode = "manual";
+			GearboxRatios[] = {"R1",-5.03,"N",0,"D1",3.49,"D2",1.86,"D3",1.41,"D4",1,"D5",0.75,"D6",0.55};
+			moveOffGear = 1;
+			neutralString = "N";
+			reverseString = "R";
+			TransmissionRatios[] = {"High",8.2};
+		};
+		
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+             
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.7; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class rhsusf_MATV_base: MRAP_01_base_F {
+		antiRollbarForceLimit = 0;
+		class wheels
+		{
+			class L1
+			{
+				maxBrakeTorque = 17000;
+				maxCompression = 0.5;
+				springStrength = 120000;
+				springDamperRate = 10000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.0 }};
+			};
+			class L2: L1
+			{
+				springStrength = 105000;
+			};
+			class R1: L1
+			{
+			};
+			class R2: R1
+			{
+				springStrength = 100000;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.1; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+		};
+		
+	};
+	
+	
+	
+	class rhsusf_RG33_base: MRAP_01_base_F {
+		antiRollbarForceLimit = 0;
+		class Wheels {
+			class L1 {
+				maxHandBrakeTorque = 2000;
+				maxCompression = 0.35;
+			//	sprungMass = 4250;
+				maxBrakeTorque = 20000;
+				springStrength = 175000;
+				springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffY = 90;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.0 }};
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.1; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class Offroad_01_base_F;
+	class RHS_UAZ_Base: Offroad_01_base_F
+	{
+	//	accelAidForceCoef = 1.0;
+		antiRollbarForceLimit = 0;
+		frontRearSplit = 0.2;
+		frontBias = 1.5;
+		rearBias = 1.5;
+		centreBias = 1;
+	//	peaktorque = 300;
+		class Wheels
+		{
+			class LF
+			{
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.0 }};
+				latStiffX = 50;
+				latStiffY = 80;
+				longitudinalStiffnessPerUnitGravity = 4582;
+				maxBrakeTorque = 1000;
+				maxCompression = 0.3;
+				MaxDroop = 0.0;
+				maxHandBrakeTorque = 150;
+				springDamperRate = 1750;
+				springStrength = 23000;
+			//	sprungMass = 410;
+			};
+			class LR: LF
+			{
+				maxHandBrakeTorque = 150;
+				maxBrakeTorque = 2000;
+			};
+			class RF: LF
+			{
+			};
+			class RR: RF
+			{
+				maxHandBrakeTorque = 150;
+				maxBrakeTorque = 2000;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.6; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.3; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 1.7; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.6; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.8; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.2; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class Truck_F;
+	
+	class Truck_01_base_F;
+	class rhsusf_fmtv_base: Truck_01_base_F	{
+		dampingRateFullThrottle = 3.0;
+		peakTorque = 1500;
+		antiRollbarForceLimit = 0;
+		frontRearSplit = 0.3;
+		frontBias = 1.1;
+		rearBias = 0.5;
+		centreBias = 2;
+		class Wheels
+		{
+			class L1
+			{
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.7 } };
+				latStiffY = 80;
+				longitudinalStiffnessPerUnitGravity = 5000;
+				maxBrakeTorque = 7500;
+				maxCompression = 0.4;
+				maxHandBrakeTorque = 2000;
+				springDamperRate = 6500;
+				springStrength = 130000;
+			//	sprungMass = 2750;
+			};
+			class L2: L1
+			{
+				maxHandBrakeTorque = 2000;
+				springStrength = 100000;
+				springDamperRate = 9000;
+			};
+			class R1: L1
+			{
+				maxHandBrakeTorque = 2000;
+			};
+			class R2: R1
+			{
+				maxHandBrakeTorque = 2000;
+				springStrength = 100000;
+				springDamperRate = 9000;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class rhsusf_M1078A1P2_fmtv_usarmy: rhsusf_fmtv_base
+	{
+	};
+	
+	class rhsusf_M1083A1P2_fmtv_usarmy: rhsusf_M1078A1P2_fmtv_usarmy
+	{
+		antiRollbarForceLimit = 0;
+		frontRearSplit = 0.3;
+		frontBias = 1.1;
+		rearBias = 0.5;
+		centreBias = 2;
+		class Wheels:Wheels
+		{
+			class L1:L1
+			{
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.7 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 5000;
+				maxBrakeTorque = 2000;
+				maxCompression = 0.4;
+				maxHandBrakeTorque = 2000;
+				springDamperRate = 6500;
+				springStrength = 130000;
+			//	sprungMass = 2750;
+			};
+			class L2: L1
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 7500;
+				springStrength = 100000;
+				springDamperRate = 9000;
+			};
+			class L3: L2
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 3500;
+			};
+			class R1: L1
+			{
+				maxHandBrakeTorque = 2000;
+			};
+			class R2: R1
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 7500;
+				springStrength = 100000;
+				springDamperRate = 9000;
+			};
+			class R3: R1
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 3500;
+			};
+		};
+	};
+	class OTR21_Base: Truck_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.8 } };
+				longitudinalStiffnessPerUnitGravity = 15000;
+				maxBrakeTorque = 3500;
+				maxCompression = 0.4;
+				maxHandBrakeTorque = 2000;
+			};
+			class LR: LF
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 3500;
+			};
+			class LR2: LR
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 3500;
+			};
+			class RF: LF
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 3500;
+			};
+			class RR: RF
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 3500;
+			};
+			class RR2: RR
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 3500;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class RHS_Ural_BaseTurret: Truck_F
+	{
+		dampingRateFullThrottle = 4;
+		peakTorque = 1250;
+		antiRollbarForceLimit = 0;
+		maxSpeed = 76;
+		class Wheels
+		{
+			class LF
+			{
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.9 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 15000;
+				maxBrakeTorque = 2000;
+				maxCompression = 0.4;
+				maxHandBrakeTorque = 2000;
+				springDamperRate = 7500;
+				springStrength = 80000;
+			//	sprungMass = 2750;
+			};
+			class LR: LF
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 6500;
+			};
+			class LR2: LR
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 4500;
+			};
+			class RF: LF
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 2000;
+			};
+			class RR: RF
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 6500;
+			};
+			class RR2: RR
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 4500;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class rhs_zil131_base: Truck_F
+	{
+		dampingRateFullThrottle = 1.1;
+		antiRollbarForceLimit = 0;
+		peakTorque = 640;
+		switchTime = 0.8;
+		//maxSpeed = 83;
+		maxSpeed = 90;
+		class Wheels
+		{
+			class L1
+			{
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.7 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				maxBrakeTorque = 2000;
+				maxCompression = 0.4;
+				maxHandBrakeTorque = 2000;
+				springDamperRate = 6500;
+				springStrength = 100000;
+			//	sprungMass = 2750;
+			};
+			class L2: L1
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 6000;
+			};
+			class L3: L2
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 3000;
+			};
+			class R1: L1
+			{
+				maxHandBrakeTorque = 2000;
+			};
+			class R2: R1
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 6000;
+			};
+			class R3: R2
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 3000;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class O_Truck_02_covered_F;
+	class rhs_kamaz5350: O_Truck_02_covered_F
+	{
+		dampingRateFullThrottle = 1.5;
+		peakTorque = 950;
+		antiRollbarForceLimit = 0;
+		maxSpeed = 92;
+		class Wheels
+		{
+			class L1
+			{
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.8 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				maxBrakeTorque = 2000;
+				maxCompression = 0.4;
+				maxHandBrakeTorque = 2000;
+				springDamperRate = 9500;
+			//	springStrength = 110000;
+			//	sprungMass = 2750;
+			};
+			class L2: L1
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 9000;
+			};
+			class L3: L2
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 3000;
+			};
+			class R1: L1
+			{
+				maxHandBrakeTorque = 2000;
+			};
+			class R2: R1
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 9000;
+			};
+			class R3: R2
+			{
+				maxHandBrakeTorque = 2000;
+				maxBrakeTorque = 3000;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.1; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	//gaz66
+	class rhs_truck: Truck_F
+	{
+		class Wheels
+		{
+			class LF
+			{
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.8 } };
+				latStiffX = 3.5;
+				latStiffY = 18;
+				longitudinalStiffnessPerUnitGravity = 7000;
+				maxBrakeTorque = 5500;
+				maxCompression = 0.25;
+				maxHandBrakeTorque = 2000;
+				springDamperRate = 7000;
+				springStrength = 80000;
+			//	sprungMass = 2750;
+			};
+			class LR: LF
+			{
+				maxHandBrakeTorque = 2000;
+			};
+			class RF: LF
+			{
+				maxHandBrakeTorque = 2000;
+			};
+			class RR: RF
+			{
+				maxHandBrakeTorque = 2000;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class Tank_F;
+	
+	class Car;
+	class Car_F: Car
+	{
+        class NewTurret;
+        class Turrets
+        {
+            class MainTurret: NewTurret
+            {
+            };
+        };
+	};
+	class Wheeled_APC_F: Car_F
+	{
+		class EventHandlers;
+		class Turrets;
+	};
+
+
+
+	class rhsusf_stryker_base: Wheeled_APC_F
+	{
+		
+		class Wheels
+		{
+			class L1
+			{
+				maxBrakeTorque = 10500;
+				maxhandBrakeTorque = 1500;
+				maxCompression = 0.4;
+			//	sprungMass = 4250;
+			//	springStrength = 155000;
+			//	springDamperRate = 8000;
+				longitudinalStiffnessPerUnitGravity = 10000;
+				latStiffX = 5;
+				latStiffY = 100;
+				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.8 } };
+			};
+			class L2:L1
+			{
+			};
+			class L3: L1
+			{
+				maxhandBrakeTorque = 1500;
+			};
+			class L4: L1
+			{
+				maxhandBrakeTorque = 1500;
+			};
+			class R1: L1
+			{
+			};
+			class R2: R1
+			{
+			};
+			class R3: R1
+			{
+				maxhandBrakeTorque = 1500;
+			};
+			class R4: R1
+			{
+				maxhandBrakeTorque = 1500;
+			};
+		};
+		
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+             
+           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.7; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+
+	class rhs_btr_base: Wheeled_Apc_F {
+		class Wheels
+		{
+			class LF {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.0 }};
+				longitudinalStiffnessPerUnitGravity = 15000;
+				maxCompression = 0.35;
+				springStrength = 90000;
+				springDamperRate = 9000;
+				maxBrakeTorque = 2000;
+			};
+			class LR: LF {
+				springDamperRate = 6500;
+				springStrength = 75000;
+				maxBrakeTorque = 7000;
+			};
+			class RF: LF {
+			};
+			class RR: RF {
+				springDamperRate = 6500;
+				springStrength = 75000;
+				maxBrakeTorque = 7000;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.25; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.7; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.6; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.6; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.2; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class rhs_btr60_base: rhs_btr_base {
+		class Wheels
+		{
+			class LF {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.0 }};
+				longitudinalStiffnessPerUnitGravity = 15000;
+				maxCompression = 0.35;
+				springStrength = 45025;
+				springDamperRate = 9000;
+				maxBrakeTorque = 2000;
+			};
+			class LR: LF {
+				springDamperRate = 4000;
+				maxBrakeTorque = 5000;
+			};
+			class RF: LF {
+			};
+			class RR: RF {
+				springDamperRate = 4000;
+				maxBrakeTorque = 5000;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.25; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.7; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.6; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.6; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.2; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	class rhs_btr70_msv;
+	class rhs_btr80_msv: rhs_btr70_msv {
+		class Wheels
+		{
+			class LF {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.0 }};
+				longitudinalStiffnessPerUnitGravity = 15000;
+				maxCompression = 0.35;
+				springStrength = 125000;
+				springDamperRate = 10000;
+				maxBrakeTorque = 2000;
+			};
+			class LR: LF {
+				springDamperRate = 7000;
+				springStrength = 85000;
+				maxBrakeTorque = 9500;
+			};
+			class RF: LF {
+			};
+			class RR: RF {
+				springDamperRate = 7000;
+				springStrength = 85000;
+				maxBrakeTorque = 9500;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.25; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.7; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.6; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.6; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.2; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	
+	
+	class rhsusf_M1117_base: Wheeled_Apc_F {
+		class Wheels
+		{
+			class LF {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.0 }};
+				longitudinalStiffnessPerUnitGravity = 7000;
+				springDamperRate = 9000;
+				maxBrakeTorque = 9500;
+				maxCompression = 0.3;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.25; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.7; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.6; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.6; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.2; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	
+	class rhsgref_BRDM2: Wheeled_Apc_F {
+		frontRearSplit = 0.3;
+		class Wheels
+		{
+			class LF {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.0 }};
+				longitudinalStiffnessPerUnitGravity = 10000;
+			//	maxCompression = 0.35;
+				springDamperRate = 9500;
+				maxBrakeTorque = 8000;
+				springStrength = 110000;
+				sprungMass = 3300;
+				latStiffY = 50;
+			};
+			class LR: LF {
+			//	springDamperRate = 7000;
+			//	springStrength = 65000;
+			};
+			class RF: LF {
+			};
+			class RR: RF {
+			//	springDamperRate = 7000;
+			//	springStrength = 65000;
+			};
+		};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.25; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.7; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.6; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.6; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.2; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+	
+	
+
+	class MBT_01_base_F;
+	class rhsusf_m1a1tank_base: MBT_01_base_F {
+		tankTurnForce = 500000;
+		accelAidForceCoef = 3.0;
+		class Wheels
+		{
+			class L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+				sprungMass = 6300;
+				//sprungMass = -1;
+				springStrength = 300000;
+			//	springDamperRate = 15000000;
+				springDamperRate = 25000;
+				maxCompression = 0.5;
+				maxDroop = 0.3;
+			};
+			class L1: L2 {
+				maxCompression = 0.2;
+			};
+			class L3: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class L4: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L5: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L6: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L7: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L8: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class L9: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R2: L2 {
+			};
+			class R1: R2 {
+				maxCompression = 0.2;
+			};
+			class R3: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R4: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R5: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R6: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R7: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R8: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R9: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+		};
+	};
+	
+	/*
+
+	//t80
+	class rhs_tank_base: Tank_F {
+		tankTurnForce = 400000;
+		dampingRateFullThrottle = 6;
+		accelAidForceCoef = 3;
+		class Wheels
+		{
+			class L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+				maxCompression = 0.5;
+				sprungMass = 3000;
+				springStrength = 85000;
+				springDamperRate = 5000;
+			};
+			class L1: L2 {
+				maxCompression = 0.2;
+			};
+			class L3: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class L4: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L5: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L6: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L7: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L8: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class L9: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R2: L2 {
+			};
+			class R1: R2 {
+				maxCompression = 0.2;
+			};
+			class R3: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R4: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R5: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R6: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R7: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R8: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R9: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+		};
+	};
+
+	
+	class rhs_a3t72tank_base: Tank_F {
+		tankTurnForce = 400000;
+		accelAidForceCoef = 2.3;
+		class Wheels
+		{
+			class L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+				sprungMass = 6600;
+				//sprungMass = -1;
+				springStrength = 200000;
+			//	springDamperRate = 15000000;
+				springDamperRate = 7000;
+				maxCompression = 0.5;
+				maxDroop = 0.2;
+			};
+			class L1: L2 {
+				maxCompression = 0.2;
+			};
+			class L3: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class L4: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L5: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L6: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L7: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L8: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class L9: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R2: L2 {
+			};
+			class R1: R2 {
+				maxCompression = 0.2;
+			};
+			class R3: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R4: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R5: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R6: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R7: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R8: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R9: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+		};
+	};
+	
+	
+	class rhs_t72bd_tv;
+	class rhs_t90_tv: rhs_t72bd_tv {
+		tankTurnForce = 400000;
+		accelAidForceCoef = 1.5;
+		class Wheels
+		{
+			class L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+				sprungMass = 5600;
+				//sprungMass = -1;
+				springStrength = 150000;
+			//	springDamperRate = 15000000;
+				springDamperRate = 4000;
+				maxCompression = 0.5;
+				maxDroop = 0.2;
+			};
+			class L1: L2 {
+				maxCompression = 0.2;
+			};
+			class L3: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class L4: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L5: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L6: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L7: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L8: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class L9: L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R2: L2 {
+			};
+			class R1: R2 {
+				maxCompression = 0.2;
+			};
+			class R3: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R4: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R5: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R6: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R7: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R8: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R9: R2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+		};
+	};
+	*/
+	
+	class rhs_bmp1tank_base: Tank_F {
+		class Wheels
+		{
+			class L2 {
+				maxCompression = 0.5;
+			};
+			class L1: L2 {
+				maxCompression = 0.2;
+			};
+			class L3: L2 {
+			};
+			class L4: L2 {
+			};
+			class L5: L2 {
+			};
+			class L6: L2 {
+			};
+			class L7: L2 {
+			};
+			class L8: L2 {
+			};
+			class L9: L2 {
+			};
+			class R2: L2 {
+			};
+			class R1: R2 {
+				maxCompression = 0.2;
+			};
+			class R3: R2 {
+			};
+			class R4: R2 {
+			};
+			class R5: R2 {
+			};
+			class R6: R2 {
+			};
+			class R7: R2 {
+			};
+			class R8: R2 {
+			};
+			class R9: R2 {
+			};
+		};
+	};
+	class rhs_bmp3tank_base: Tank_F {
+		class Wheels
+		{
+			class L2 {
+				maxCompression = 0.5;
+			};
+			class L1: L2 {
+				maxCompression = 0.2;
+			};
+			class L3: L2 {
+			};
+			class L4: L2 {
+			};
+			class L5: L2 {
+			};
+			class L6: L2 {
+			};
+			class L7: L2 {
+			};
+			class L8: L2 {
+			};
+			class L9: L2 {
+			};
+			class R2: L2 {
+			};
+			class R1: R2 {
+				maxCompression = 0.2;
+			};
+			class R3: R2 {
+			};
+			class R4: R2 {
+			};
+			class R5: R2 {
+			};
+			class R6: R2 {
+			};
+			class R7: R2 {
+			};
+			class R8: R2 {
+			};
+			class R9: R2 {
+			};
+		};
+	};
+	
+
+	class APC_Tracked_03_base_F;
+	class RHS_M2A2_Base: APC_Tracked_03_base_F {
+		class Wheels
+		{
+			class L2 {
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+				sprungMass = 2700;
+				//sprungMass = -1;
+				springStrength = 250000;
+			//	springDamperRate = 15000000;
+				springDamperRate = 15000;
+				maxCompression = 0.5;
+			};
+			class L1: L2 {
+				maxCompression = 0.2;
+			};
+			class L3: L2 {
+				springStrength = 1000000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class L4: L2 {
+				springStrength = 250000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L5: L2 {
+				springStrength = 250000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L6: L2 {
+				springStrength = 250000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L7: L2 {
+				springStrength = 1000000;
+				springDamperRate = 50000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class L8: L2 {
+				springStrength = 100000;
+				springDamperRate = 50000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class L9: L2 {
+				springStrength = 100000;
+				springDamperRate = 50000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R2: L2 {
+			};
+			class R1: R2 {
+				maxCompression = 0.2;
+			};
+			class R3: R2 {
+				springStrength = 1000000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R4: R2 {
+				springStrength = 250000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R5: R2 {
+				springStrength = 250000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R6: R2 {
+				springStrength = 250000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R7: R2 {
+				springStrength = 1000000;
+				springDamperRate = 50000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 1.0 }, { 0.6, 2 }};
+			};
+			class R8: R2 {
+				springStrength = 100000;
+				springDamperRate = 50000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+			class R9: R2 {
+				springStrength = 100000;
+				springDamperRate = 50000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.2 }, { 0.2, 0.3 }, { 0.6, 0.4 }};
+			};
+		};
+	};
+	
 	class MRAP_02_base_F;
 	class rhs_tigr_base:MRAP_02_base_F
 	{
@@ -14,61 +1321,27 @@
 		switchTime = 0.8;
 		class Wheels {
 			class LF {
-				boneName = "wheel_1_1_damper";
-				boundary = "wheel_1_1_bound";
-				center = "wheel_1_1_axis";
-				dampingRate = 3.1;
-				dampingRateDamaged = 1;
-				dampingRateDestroyed = 1000;
-				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 0.5 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.8 }, { 0.3, 0.6 }, { 1.0, 1.1 }};
 				latStiffX = 15;
-				latStiffY = 120;
+				latStiffY = 90;
 				longitudinalStiffnessPerUnitGravity = 4800;
-				mass = 60;
 				maxBrakeTorque = 9000;
 				maxCompression = 0.3;
 				maxDroop = 0.11;
-				maxHandBrakeTorque = 0;
-				MOI = 30;
-				side = "left";
+				maxHandBrakeTorque = 10000;
 				springDamperRate = 4000;
 				springStrength = 75000;
 				sprungMass = 1500;
-				steering = 1;
-				suspForceAppPointOffset = "wheel_1_1_axis";
-				suspTravelDirection[] = {-0.125,-1,0};
-				tireForceAppPointOffset = "wheel_1_1_axis";
-				width = 0.32;
 			};
 			class RF: LF {
-				boneName = "wheel_2_1_damper";
-				boundary = "wheel_2_1_bound";
-				center = "wheel_2_1_axis";
-				side = "right";
-				steering = 1;
-				suspForceAppPointOffset = "wheel_2_1_axis";
-				suspTravelDirection[] = {0.125,-1,0};
-				tireForceAppPointOffset = "wheel_2_1_axis";
 			};
 			class LR: LF {
-				boneName = "wheel_1_2_damper";
-				boundary = "wheel_1_2_bound";
-				center = "wheel_1_2_axis";
-				maxHandBrakeTorque = 20000;
+				maxHandBrakeTorque = 10000;
 				maxBrakeTorque = 4700;
-				steering = 0;
-				suspForceAppPointOffset = "wheel_1_2_axis";
-				tireForceAppPointOffset = "wheel_1_2_axis";
 			};
 			class RR: RF {
-				boneName = "wheel_2_2_damper";
-				boundary = "wheel_2_2_bound";
-				center = "wheel_2_2_axis";
-				maxHandBrakeTorque = 20000;
+				maxHandBrakeTorque = 10000;
 				maxBrakeTorque = 4700;
-				steering = 0;
-				suspForceAppPointOffset = "wheel_2_2_axis";
-				tireForceAppPointOffset = "wheel_2_2_axis";
 			};
 		};
 		
@@ -94,7 +1367,6 @@
 		hiddenSelectionsTextures[] = {"\twc_units_modern\textures\digicamo_co.jpg"};
 	};
 	
-	class Tank_F;
 	class rhs_t14_base: Tank_F
 	{
 		armor = 350;
@@ -286,22 +1558,6 @@
 		{};
 	};
 	*/
-	class Car;
-	class Car_F: Car
-	{
-        class NewTurret;
-        class Turrets
-        {
-            class MainTurret: NewTurret
-            {
-            };
-        };
-	};
-	class Wheeled_APC_F: Car_F
-	{
-		class EventHandlers;
-		class Turrets;
-	};
 	class CUP_Mastiff_Base: Wheeled_APC_F
 	{
 		class NewTurret;
@@ -768,31 +2024,17 @@
 		{};
 	};
 
-//handling modifications
-	class MRAP_01_base_F;
 	
-	
-	
-	class rhsusf_RG33_base: MRAP_01_base_F {
-	};
 	
 	class rhsusf_RG33_CROWS_base: rhsusf_RG33_base {
 		
 		class Turrets;
-		class Wheels;
 	};
 	class rhsusf_M1238A1_M2_socom_d: rhsusf_RG33_CROWS_base {
 		
 		class Turrets: Turrets
 		{
 			class CROWS_Turret;
-		};
-		class Wheels: Wheels
-		{
-			class L1;
-			class L2;
-			class R1;
-			class R2;
 		};
 	};
 	class twc_M1238A1_M2_socom_d: rhsusf_M1238A1_M2_socom_d {
@@ -815,104 +2057,17 @@
 			};
 		
 		};
-		class PlayerSteeringCoefficients /// steering sensitivity configuration
-       {
-           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
-           
-           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
-           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
-             
-           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
-       };
-
-		class Wheels:Wheels {
-			class L1:L1 {
-				width = "0.2";
-				mass = 60;
-				MOI = 115;
-				dampingRateDamaged = 2;
-				dampingRateDestroyed = 800;
-				//maxBrakeTorque = 12500;
-				maxHandBrakeTorque = 50000;
-				maxCompression = 0.4;
-				sprungMass = 4250;
-				springStrength = 155000;
-				springDamperRate = 8000;
-				longitudinalStiffnessPerUnitGravity = 10000;
-				latStiffX = 25;
-				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
-			};
-			class L2:L2 {
-				width = "0.2";
-				mass = 60;
-				MOI = 115;
-				dampingRateDamaged = 2;
-				dampingRateDestroyed = 800;
-				//maxBrakeTorque = 12500;
-				maxCompression = 0.4;
-				sprungMass = 4250;
-				springStrength = 155000;
-				springDamperRate = 8000;
-				longitudinalStiffnessPerUnitGravity = 10000;
-				latStiffX = 25;
-				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
-			};
-			class R1:R1 {
-				width = "0.2";
-				mass = 60;
-				MOI = 115;
-				dampingRateDamaged = 2;
-				dampingRateDestroyed = 800;
-				//maxBrakeTorque = 12500;
-				maxHandBrakeTorque = 50000;
-				maxCompression = 0.4;
-				sprungMass = 4250;
-				springStrength = 155000;
-				springDamperRate = 8000;
-				longitudinalStiffnessPerUnitGravity = 10000;
-				latStiffX = 25;
-				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
-			};
-			class R2:R2 {
-				width = "0.2";
-				mass = 60;
-				MOI = 115;
-				dampingRateDamaged = 2;
-				dampingRateDestroyed = 800;
-				//maxBrakeTorque = 12500;
-				maxCompression = 0.4;
-				sprungMass = 4250;
-				springStrength = 155000;
-				springDamperRate = 8000;
-				longitudinalStiffnessPerUnitGravity = 10000;
-				latStiffX = 25;
-				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
-			};
-		};
 	};
 	
 	
 	
 	
-	
-	
-	class rhsusf_M1239_base: MRAP_01_base_F {
-		
-	};
 	class rhsusf_M1239_CROWS_base: rhsusf_M1239_base {
 		
 	};
 	class rhsusf_M1239_Deploy_base: rhsusf_M1239_CROWS_base {
 		
 		class Turrets;
-		class Wheels;
 		maximumLoad = 6000;
 	};
 	class rhsusf_M1239_M2_Deploy_socom_d: rhsusf_M1239_Deploy_base {
@@ -921,22 +2076,8 @@
 		{
 			class CROWS_Turret;
 		};
-		class Wheels: Wheels
-		{
-			class L1;
-			class L2;
-			class L3;
-			class R1;
-			class R2;
-			class R3;
-		};
 	};
 	class twc_M1239_M2_Deploy_socom_d: rhsusf_M1239_M2_Deploy_socom_d {
-		turnCoef = 5;
-		minOmega = 40;
-		changeGearOmegaRatios[] = {1,0.294118,0.3,0.3,0.99,0.1,0.764706,0.25,0.852941,0.5,1,0.647059,1,0.647059,1,0.647059};
-		changeGearType = "rpmratio";
-		frontRearSplit = 0.2;
 		maximumLoad = 7000;
 		class Turrets: Turrets
 		{
@@ -945,15 +2086,6 @@
 				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
 				magazines[] = {"UK3CB_BAF_127_100Rnd"};
 			};
-		};
-		class complexGearbox {
-			driveString = "D";
-			gearBoxMode = "manual";
-			GearboxRatios[] = {"R1",-5.03,"N",0,"D1",3.49,"D2",1.86,"D3",1.41,"D4",1,"D5",0.75,"D6",0.55};
-			moveOffGear = 1;
-			neutralString = "N";
-			reverseString = "R";
-			TransmissionRatios[] = {"High",8.2};
 		};
 		class TransportMagazines
 		{
@@ -964,120 +2096,7 @@
 			};
 		
 		};
-		
-		class PlayerSteeringCoefficients /// steering sensitivity configuration
-       {
-           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
-             
-           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.7; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
-           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
-             
-           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
-       };
 	   
-		class Wheels:Wheels {
-			class L1:L1 {
-				width = "0.2";
-				mass = 60;
-				MOI = 115;
-				dampingRateDamaged = 2;
-				dampingRateDestroyed = 800;
-				maxBrakeTorque = 17000;
-				maxHandBrakeTorque = 50000;
-				maxCompression = 0.5;
-			//	sprungMass = 4250;
-				springStrength = 295000;
-				springDamperRate = 9300;
-				longitudinalStiffnessPerUnitGravity = 15000;
-				latStiffX = 25;
-				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
-			};
-			class L2:L2 {
-				width = "0.2";
-				mass = 60;
-				MOI = 115;
-				dampingRateDamaged = 2;
-				dampingRateDestroyed = 800;
-				maxBrakeTorque = 26000;
-				maxCompression = 0.5;
-			//	sprungMass = 4250;
-				springStrength = 225000;
-				springDamperRate = 9300;
-				longitudinalStiffnessPerUnitGravity = 15000;
-				latStiffX = 25;
-				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
-			};
-			class L3:L3 {
-				width = "0.2";
-				mass = 60;
-				MOI = 115;
-				dampingRateDamaged = 2;
-				dampingRateDestroyed = 800;
-				maxBrakeTorque = 17000;
-				maxCompression = 0.5;
-			//	sprungMass = 4250;
-				springStrength = 225000;
-				springDamperRate = 9300;
-				longitudinalStiffnessPerUnitGravity = 15000;
-				latStiffX = 25;
-				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
-			};
-			class R1:R1 {
-				width = "0.2";
-				mass = 60;
-				MOI = 115;
-				dampingRateDamaged = 2;
-				dampingRateDestroyed = 800;
-				maxBrakeTorque = 17000;
-				maxHandBrakeTorque = 50000;
-				maxCompression = 0.5;
-			//	sprungMass = 4250;
-				springStrength = 295000;
-				springDamperRate = 9300;
-				longitudinalStiffnessPerUnitGravity = 15000;
-				latStiffX = 25;
-				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
-			};
-			class R2:R2 {
-				width = "0.2";
-				mass = 60;
-				MOI = 115;
-				dampingRateDamaged = 2;
-				dampingRateDestroyed = 800;
-				maxBrakeTorque = 26000;
-				maxCompression = 0.5;
-			//	sprungMass = 4250;
-				springStrength = 225000;
-				springDamperRate = 9300;
-				longitudinalStiffnessPerUnitGravity = 15000;
-				latStiffX = 25;
-				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
-			};
-			class R3:R3 {
-				width = "0.2";
-				mass = 60;
-				MOI = 115;
-				dampingRateDamaged = 2;
-				dampingRateDestroyed = 800;
-				maxBrakeTorque = 17000;
-				maxCompression = 0.5;
-			//	sprungMass = 4250;
-				springStrength = 225000;
-				springDamperRate = 9300;
-				longitudinalStiffnessPerUnitGravity = 15000;
-				latStiffX = 25;
-				latStiffY = 180;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.1, 0.5 }, { 1.0, 0.4 } };
-			};
-		};
 	};
 	
 	class rhsusf_hmmwe_base: MRAP_01_base_F {
@@ -1090,30 +2109,93 @@
 	//	};
 	};
 
+	class rhsusf_m1151_base: MRAP_01_base_F {
+		minOmega = 10;
+		clutchStrength = 3;
+		antiRollbarForceLimit = 0;
+		turnCoef = 3.5;
+		class Wheels {
+			class L1 {
+				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.4 }, { 0.5, 0.65 }};
+				maxCompression = 0.3;
+				maxDroop = 0.15;
+				maxHandBrakeTorque = 1000;
+				springDamperRate = 3500;
+				maxBrakeTorque = 3400;
+				//sprungMass = 925;
+			};
+			class L2: L1 {
+				maxBrakeTorque = 3200;
+			//	springStrength = 38000;
+				springDamperRate = 6500;
+				maxHandBrakeTorque = 1000;
+			};
+			class R1:L1 {
+				
+			};
+			class R2: R1 {
+				maxBrakeTorque = 3200;
+			//	springStrength = 38000;
+				springDamperRate = 6500;
+				maxHandBrakeTorque = 1000;
+			};
+		};
+		
+		class complexGearbox {
+			driveString = "D";
+			gearBoxMode = "auto";
+			GearboxRatios[] = {"R1",-3.07,"N",0,"D1",2.78,"D2",1.48,"D3",1,"D4",0.75};
+			moveOffGear = 1;
+			neutralString = "N";
+			reverseString = "R";
+			TransmissionRatios[] = {"High",6};
+		};
+		changeGearType = "rpmratio";
+		changeGearOmegaRatios[] = {1,0.294118,0.205882,0.147059,0.926471,0.270588,0.764706,0.352941,0.852941,0.5,1,0.647059};
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.3; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.8; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.6; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.6; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.2; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
+	};
+
 	class rhsusf_m998_w_2dr: rhsusf_hmmwe_base {
 		minOmega = 10;
 		clutchStrength = 3;
+		antiRollbarForceLimit = 0;
 		turnCoef = 3.5;
 		class Wheels {
 			class LF {
-				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
+				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.4 }, { 0.5, 0.65 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
-				dampingRateDestroyed = 1000000.0;
-				maxHandBrakeTorque = 30000;
-				springDamperRate = 4000;
-				springStrength = 40000;
+				maxHandBrakeTorque = 1000;
+				springDamperRate = 2500;
+			//	springStrength = 45000;
 				maxBrakeTorque = 3400;
 				//sprungMass = 925;
 			};
 			class LR: LF {
 				maxBrakeTorque = 3200;
+				springStrength = 38000;
+				springDamperRate = 4500;
+				maxHandBrakeTorque = 1000;
 			};
 			class RF:LF {
 				
 			};
 			class RR: RF {
 				maxBrakeTorque = 3200;
+				springStrength = 38000;
+				springDamperRate = 4500;
+				maxHandBrakeTorque = 1000;
 			};
 		};
 		
@@ -1154,6 +2236,7 @@
 	
 	
 	class rhsusf_m1025_w: rhsusf_m998_w_4dr_fulltop {
+		antiRollbarForceLimit = 0;
 		minOmega = 10;
 		clutchStrength = 3;
 		turnCoef = 3.5;
@@ -1164,10 +2247,9 @@
 				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
-				dampingRateDestroyed = 1000000.0;
-				maxHandBrakeTorque = 30000;
-				springDamperRate = 4000;
-				springStrength = 40000;
+				maxHandBrakeTorque = 3000;
+				springDamperRate = 4200;
+			//	springStrength = 50000;
 				maxBrakeTorque = 4000;
 				latStiffY = 110;
 				longitudinalStiffnessPerUnitGravity = 20000;
@@ -1175,14 +2257,18 @@
 			};
 			class LR: LF {
 				maxBrakeTorque = 3200;
-				longitudinalStiffnessPerUnitGravity = 10000;
+				springStrength = 35000;
+				springDamperRate = 6000;
+				maxHandBrakeTorque = 3000;
 			};
 			class RF:LF {
 				
 			};
 			class RR: RF {
 				maxBrakeTorque = 3200;
-				longitudinalStiffnessPerUnitGravity = 10000;
+				springStrength = 35000;
+				springDamperRate = 6000;
+				maxHandBrakeTorque = 3000;
 			};
 		};
 		
@@ -1429,7 +2515,7 @@
 		frontBias = 2;
 		centerBias = 2;
 		frontRearSplit = 0.2;
-		clutchstrength = 0.3;
+		clutchstrength = 1;
 		rearBias = 2;
 		turnCoef = 3;
 		maxSpeed = 96;
@@ -1440,61 +2526,37 @@
 		peakTorque = 160;
 		class Wheels {
 			class LF {
-			boneName = "wheel_1_1_damper";
-			boundary = "wheel_1_1_bound";
-			center = "wheel_1_1_axis";
-			dampingRate = 0.1;
-			dampingRateDamaged = 1;
-			dampingRateDestroyed = 1000;
 			frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.2 }};
-		//	frictionVsSlipGraph[] = {{ 0.1, 0.65 }, { 0.4, 0.5 }, { 0.6, 1.2 }};
-		//	frictionVsSlipGraph[] = {{ 0.0, 0.65 }, { 0.1, 0.5 }, { 0.6, 1.2 }};
 			latStiffX = 30;
 			latStiffY = 50;
 			longitudinalStiffnessPerUnitGravity = 30000;
-			mass = 40;
 			maxCompression = 0.31;
 			maxDroop = 0.04;
 			maxHandBrakeTorque = 100;
-			MOI = 10;
-			side = "left";
 			springDamperRate = 2000;
-			springStrength = 12000;
-			//sprungMass = 230;
+			springStrength = 15000;
 			maxBrakeTorque = 400;
-			steering = 1;
-			suspForceAppPointOffset = "wheel_1_1_axis";
-			suspTravelDirection[] = {0,-1,0};
-			tireForceAppPointOffset = "wheel_1_1_axis";
-			width = 0.2;
 			};
 			class RF:LF {
 			maxCompression = 0.31;
 			springDamperRate = 2000;
-			springStrength = 12000;
-			//sprungMass = 230;
+			springStrength = 15000;
 			maxBrakeTorque = 400;
 			};
 			class RR: RF {
 			frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.2 }};
 			maxCompression = 0.31;
-			springDamperRate = 2000;
+			springDamperRate = 2300;
 			springStrength = 12000;
 			maxHandBrakeTorque = 100;
-			dampingRate = 0.1;
-			//sprungMass = 230;
-			MOI = 40;
 			maxBrakeTorque = 2200;
 			};
 			class LR: LF {
 			frictionVsSlipGraph[] = {{ 0.1, 0.65 }, { 0.4, 0.5 }, { 0.6, 1.2 }};
 			maxCompression = 0.31;
-			springDamperRate = 2000;
+			springDamperRate = 2300;
 			springStrength = 12000;
 			maxHandBrakeTorque = 100;
-			dampingRate = 0.1;
-			//sprungMass = 230;
-			MOI = 40;
 			maxBrakeTorque = 2200;
 			};
 			
