@@ -114,11 +114,19 @@ class Extended_Init_EventHandlers
 		};
 	};
 	
+	class rhsgref_BRDM2
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [0.00923233,0.16117,-1.16]";
+		};
+	};
+	
 	class CUP_UAZ_Base
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.0,0.3,0.65]";
+			serverinit = "params ['_car']; _car setCenterOfMass [-0.0,-0.1,0.65]";
 		};
 	};
 	

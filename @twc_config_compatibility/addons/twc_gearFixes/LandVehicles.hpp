@@ -30,6 +30,7 @@
 	
 	You can try to cheat a shorter braking distance without increasing max cornering speed by using the leverage quirk. Jut raise the cog and use the arb to counter the roll it causes. However, don't forget to test the brakes over a jump to see if it flips end over end
 	
+	You can emulate the high torque/low power engines that you commonly find in heavy trucks by using dampingRateFullThrottle and raising peaktorque to retune its acceleration. This means that less of the vehicle's total damping force is caused by external factors like towing weight or gravity, but it doesn't affect acceleration once you tune it. enginepower doesn't seem to do anything
 	
 	
 	misc notes:
@@ -106,7 +107,7 @@
 		frontBias = 1.1;
 		rearBias = 0.5;
 		centreBias = 1;
-		peaktorque = 600;
+		peaktorque = 800;
 	//	torqueCurve[] = { { 0.0, 0.55 }, { 0.6, 0.8 }, { 1.0, 0.4 } };
 		class Wheels {
 			class LF {
@@ -198,7 +199,7 @@
 				maxHandBrakeTorque = 2000;
 				MOI = 70;
 				side = "left";
-				springDamperRate = 8000;
+				springDamperRate = 8500;
 				springStrength = 70000;
 				sprungMass = 2750;
 				steering = 1;
@@ -1269,6 +1270,15 @@
 	
 	class CUP_UAZ_Base: Car_F
 	{
+		accelAidForceCoef = 1.0;
+		torqueCurve[] = { { 0.0, 0.55 }, { 0.6, 0.8 }, { 1.0, 0.6 } };
+		clutchStrength = 1;
+		differentialType = "all_limited";
+		frontRearSplit = 0.2;
+		frontBias = 1.5;
+		rearBias = 1.5;
+		centreBias = 1;
+	//	peaktorque = 300;
 		class Wheels
 		{
 			class LF
@@ -1279,21 +1289,21 @@
 				dampingRate = 0.1;
 				dampingRateDamaged = 1;
 				dampingRateDestroyed = 1000;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.2, 0.4 }, { 1.0, 0.3 } };
-				latStiffX = 15;
-				latStiffY = 100;
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.2 }};
+				latStiffX = 50;
+				latStiffY = 80;
 				longitudinalStiffnessPerUnitGravity = 4582;
 				mass = 90;
-				maxBrakeTorque = 2700;
+				maxBrakeTorque = 1000;
 				maxCompression = 0.3;
 				MaxDroop = 0.0;
-				maxHandBrakeTorque = 1500;
+				maxHandBrakeTorque = 150;
 				mMaxDroop = 0.0;
-				MOI = 40;
+				MOI = 10;
 				side = "left";
-				springDamperRate = 1000;
-				springStrength = 10500;
-				sprungMass = 430;
+				springDamperRate = 1600;
+				springStrength = 23000;
+				sprungMass = 410;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
 				suspTravelDirection[] = {0,-0.8,0};
@@ -1307,6 +1317,8 @@
 				center = "wheel_1_2_axis";
 				suspForceAppPointOffset = "wheel_1_2_axis";
 				tireForceAppPointOffset = "wheel_1_2_axis";
+				maxHandBrakeTorque = 150;
+				maxBrakeTorque = 2000;
 			};
 			class RF: LF
 			{
@@ -1324,15 +1336,22 @@
 				center = "wheel_2_2_axis";
 				suspForceAppPointOffset = "wheel_2_2_axis";
 				tireForceAppPointOffset = "wheel_2_2_axis";
+				maxHandBrakeTorque = 150;
+				maxBrakeTorque = 2000;
 			};
 		};
-		torqueCurve[] = { { 0.0, 0.55 }, { 0.6, 0.8 }, { 1.0, 0.6 } };
-		clutchStrength = 5;
-		differentialType = "all_limited";
-		frontRearSplit = 0.3;
-		frontBias = 1.5;
-		rearBias = 1.5;
-		centreBias = 0.6;
+		class PlayerSteeringCoefficients /// steering sensitivity configuration
+       {
+           turnIncreaseConst  = 0.6; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.3; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 1.7; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.6; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.8; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+             
+           maxTurnHundred     = 0.2; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+       };
 	};
 	
 	class Quadbike_01_base_F: Car_F {
@@ -1864,10 +1883,10 @@
 		antiRollbarSpeedMax = 100;
 		terrainCoef = 2.0;
 		turncoef = 2.0;
+		clutchstrength = 10.0;
 		armor = 700;
-		clutchStrength = 150;
 		differentialType = "all_open";
-
+		peakTorque = 1050;
 
 		class Wheels:wheels {
 			class LF:LF {
