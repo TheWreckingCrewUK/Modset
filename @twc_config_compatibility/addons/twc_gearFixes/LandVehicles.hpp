@@ -1474,8 +1474,8 @@
 		brakeIdleSpeed = 1.2;class Wheels:Wheels {
 			class LF:LF {
 				sprungmass = 2400;
-				springStrength = 55000;
-				springDamperRate = 5500;
+				springStrength = 60000;
+				springDamperRate = 6500;
 				maxCompression = 0.4;
 				maxdroop = 0.1;
 				maxBrakeTorque = 11000;
@@ -1499,8 +1499,8 @@
 				maxHandBrakeTorque = 300;
 				dampingRate = 0.01;
 				latStiffX = 60;
-				springStrength = 52000;
-				springDamperRate = 6500;
+				springStrength = 50000;
+				springDamperRate = 8000;
 			};
 			class RF: LF {
 				maxHandBrakeTorque = 100;
@@ -1517,8 +1517,8 @@
 				maxHandBrakeTorque = 300;
 				dampingRate = 0.01;
 				latStiffX = 60;
-				springStrength = 52000;
-				springDamperRate = 6500;
+				springStrength = 50000;
+				springDamperRate = 8000;
 			};
 		};
 		

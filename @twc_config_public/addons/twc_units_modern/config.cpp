@@ -95,6 +95,7 @@ class CfgPatches {
 			"cup_wheeledvehicles_uphmmwv",
 			"rhsusf_c_Caiman",
 			"rhsusf_c_Cougar",
+			"rhsusf_c_RG33L",
 			"cup_wheeledvehicles_wolfhound",
 			"cup_wheeledvehicles_mastiff",
 			"rhsusf_vehicles",
