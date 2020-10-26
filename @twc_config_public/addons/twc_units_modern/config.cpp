@@ -108,6 +108,7 @@ class CfgPatches {
 			"rhs_c_tanks",
 			"rhsusf_c_m1117",
 			"rhsusf_c_RG33",
+			"rhsusf_c_hmmwv",
 			"rhsusf_c_MATV",
 			"rhsusf_c_fmtv",
 			"rhs_c_kamaz",

@@ -16,6 +16,8 @@
 params["_table",["_player",leader (allUnits select 0)]];
 _return = "";
 
+_markerstring = ("respawn_"+ (str (side _player)) + "_forwardBase");
+
 if(isNil "twc_siege_baseside") then{
 //standard insurgency version
 if(leader _player != _player)exitWith{_return = "Only Section Leaders can activate the Forward Base"; _return};
@@ -28,7 +30,7 @@ _distanceGenerator = _pos nearObjects ["twc_portableGenerator",100];
 if(str _distanceGenerator == "[]")exitWith{_return = format["The Generator must be within 100m of the Radio Table.\n The Generator is %1m away",_pos distance2D ((_pos nearObjects ["twc_portableGenerator",worldSize]) select 0)]; _return};
 
 
-_marker = createMarker ["respawn_west_forwardBase",_pos];
+_marker = createMarker [_markerstring,_pos];
 _marker setMarkerShape "ICON";
 _marker setMarkerType "b_installation";
 _marker setMarkerText "Patrol Base";
@@ -49,13 +51,14 @@ _return = "Patrol Base Created Successfully";
 
 _perstrigger = [_table] remoteExecCall ["twc_fnc_perspb_trigger", 2];
 
-
+[_player, false] spawn twc_fnc_vehicledrop;
+/*
 _trg = createTrigger ["EmptyDetector", _pos];
 _trg setTriggerArea [200 , 200, 50, false];
 _trg setTriggerActivation ["east", "PRESENT", true];
 _trg setTriggerTimeout [60,60,60, true];
 _trg setTriggerStatements ["count thislist > 3","_table = nearestobject [getpos thistrigger,'twc_radioTable']; [_table] call twc_fnc_tearDownForwardBase; deletevehicle thistrigger;'PATROL BASE IN CONTACT, RESPAWN DISABLED' remoteExec ['hint'];",""];
-
+*/
 _return;
 
 }
@@ -74,7 +77,7 @@ _distanceGenerator = _pos nearObjects ["twc_portableGenerator",100];
 if(str _distanceGenerator == "[]")exitWith{_return = format["The Generator must be within 100m of the Radio Table.\n Generator is %1m away",_pos distance2D ((_pos nearObjects ["twc_portableGenerator",worldSize]) select 0)]; _return};
 
 
-_marker = createMarker ["respawn_west_forwardBase",_pos];
+_marker = createMarker [_markerstring,_pos];
 _marker setMarkerShape "ICON";
 _marker setMarkerType "b_installation";
 _marker setMarkerText "Patrol Base";
@@ -88,9 +91,14 @@ _table setVariable ["twc_forwardBaseDeployed",true];
 _return = "Patrol Base Created Successfully";
 _return;
 
+[_player, false] spawn twc_fnc_vehicledrop;
+
+
+/*
 _trg = createTrigger ["EmptyDetector", _pos];
 _trg setTriggerArea [100 , 100, 0, false];
 _trg setTriggerActivation ["east", "PRESENT", true];
 _trg setTriggerTimeout [30,30,30, true];
 _trg setTriggerStatements ["this","_table = nearestobject [getpos thistrigger,'twc_radioTable']; [_table] call twc_fnc_tearDownForwardBase; deletevehicle thistrigger",""];
+*/
 }

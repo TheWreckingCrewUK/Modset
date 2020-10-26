@@ -116,128 +116,127 @@ class CfgVehicles
 		};
 		
 	};
-	
-	class rhsusf_MATV_SOF_CROWS_base;
-	class rhsusf_MATV_SOF_CROWS_M2_base: rhsusf_MATV_SOF_CROWS_base
+	class MRAP_01_base_F;
+	class rhsusf_MATV_base: MRAP_01_base_F
+	{
+		maximumLoad = 5000;
+		
+	};
+	class rhsusf_MATV_armed_base: rhsusf_MATV_base
 	{
 		class Turrets;
-		class PlayerSteeringCoefficients /// steering sensitivity configuration
-       {
-           turnIncreaseConst  = 0.2; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 0.5; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
-           
-           turnDecreaseConst  = 1.3; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.8; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
-           turnDecreaseTime   = 0.1; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
-             
-           maxTurnHundred     = 0.6; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
-       };
+	};
+	class rhsusf_MATV_CROWS_base:rhsusf_MATV_armed_base
+	{
+		class Turrets: Turrets
+		{
+			class CROWS_Turret;
+		};
+	};
+	class rhsusf_MATV_CROWS_M2_base: rhsusf_MATV_CROWS_base
+	{
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 8;
+			};
+		};
+		class Turrets: Turrets
+		{
+			class CROWS_Turret: CROWS_Turret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+	};
+	class rhsusf_MATV_CROWS_Mk19_base: rhsusf_MATV_CROWS_base
+	{
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_32Rnd_40mm_G_Box";
+				count = 8;
+			};
+		};
+		class Turrets: Turrets
+		{
+			class CROWS_Turret: CROWS_Turret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L134A1"};
+				magazines[] = {"UK3CB_BAF_32Rnd_40mm_G_Box"};
+			};
+		};
+	};
+	
+	class rhsusf_MATV_SOF_CROWS_base: rhsusf_MATV_CROWS_base
+	{
 		
+	};
+	
+	class rhsusf_MATV_SOF_CROWS_M2_base: rhsusf_MATV_SOF_CROWS_base
+	{
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 8;
+			};
+		};
+		class Turrets: Turrets
+		{
+			class CROWS_Turret: CROWS_Turret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
 	};
 	class rhsusf_m1245_m2crows_socom_deploy: rhsusf_MATV_SOF_CROWS_M2_base
 	{
-		class Turrets:Turrets
-		{
-			class CROWS_Turret;
-		};
 	};
 	class twc_rhsusf_m1245_m2crows_socom_deploy: rhsusf_m1245_m2crows_socom_deploy {
 		
-		class Turrets: Turrets
-		{
-			class CROWS_Turret: CROWS_Turret
-			{
-				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
-				magazines[] = {"UK3CB_BAF_127_100Rnd"};
-			};
-		};
-		maximumLoad = 5000;
+	};
+	class rhsusf_MATV_SOF_CROWS_Mk19_base: rhsusf_MATV_SOF_CROWS_base
+	{
 		class TransportMagazines
 		{
 			class _xx_127
 			{
-				magazine = "UK3CB_BAF_127_100Rnd";
-				count = 10;
+				magazine = "UK3CB_BAF_32Rnd_40mm_G_Box";
+				count = 8;
 			};
-		
 		};
-	};
-	
-	class rhsusf_MATV_CROWS_base;
-	class rhsusf_MATV_CROWS_M2_base: rhsusf_MATV_CROWS_base
-	{
-		class Turrets;
-		
-		
-		class PlayerSteeringCoefficients /// steering sensitivity configuration
-       {
-           turnIncreaseConst  = 0.2; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 0.5; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
-           
-           turnDecreaseConst  = 1.3; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.8; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
-           turnDecreaseTime   = 0.1; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
-             
-           maxTurnHundred     = 0.6; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
-       };
+		class Turrets: Turrets
+		{
+			class CROWS_Turret: CROWS_Turret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L134A1"};
+				magazines[] = {"UK3CB_BAF_32Rnd_40mm_G_Box"};
+			};
+		};
 	};
 	class rhsusf_m1240a1_m2crows_usarmy_d: rhsusf_MATV_CROWS_M2_base
 	{
-		class Turrets:Turrets
-		{
-			class CROWS_Turret;
-		};
 	};
 	class twc_rhsusf_m1240a1_m2crows_usarmy_d: rhsusf_m1240a1_m2crows_usarmy_d {
 		
-		class Turrets: Turrets
-		{
-			class CROWS_Turret: CROWS_Turret
-			{
-				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
-				magazines[] = {"UK3CB_BAF_127_100Rnd"};
-			};
-		};
-		class TransportMagazines
-		{
-			class _xx_127
-			{
-				magazine = "UK3CB_BAF_127_100Rnd";
-				count = 10;
-			};
-		
-		};
-		maximumLoad = 4000;
 	};
 	
-	class rhsusf_MATV_OGPK_base;
-	class rhsusf_MATV_OGPK_M2_base: rhsusf_MATV_OGPK_base
+	class rhsusf_MATV_OGPK_base:rhsusf_MATV_armed_base
 	{
-		class Turrets;
-		class PlayerSteeringCoefficients /// steering sensitivity configuration
-       {
-           turnIncreaseConst  = 0.2; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 0.5; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
-           
-           turnDecreaseConst  = 1.3; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.8; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
-           turnDecreaseTime   = 0.1; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
-             
-           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
-       };
-	};
-	class rhsusf_m1240a1_m2_usarmy_d: rhsusf_MATV_OGPK_M2_base
-	{
-		class Turrets:Turrets
+		class Turrets: Turrets
 		{
 			class OGPK_Turret;
 		};
 	};
-	class twc_rhsusf_m1240a1_m2_usarmy_d: rhsusf_m1240a1_m2_usarmy_d {
-		
+	class rhsusf_MATV_OGPK_M2_base: rhsusf_MATV_OGPK_base
+	{
 		class Turrets: Turrets
 		{
 			class OGPK_Turret: OGPK_Turret
@@ -251,11 +250,53 @@ class CfgVehicles
 			class _xx_127
 			{
 				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 8;
+			};
+		};
+	};
+	class rhsusf_MATV_OGPK_MK19_base: rhsusf_MATV_OGPK_base
+	{
+		class Turrets: Turrets
+		{
+			class OGPK_Turret: OGPK_Turret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L134A1"};
+				magazines[] = {"UK3CB_BAF_32Rnd_40mm_G_Box"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_32Rnd_40mm_G_Box";
+				count = 8;
+			};
+		};
+	};
+	class rhsusf_MATV_OGPK_M240_base: rhsusf_MATV_OGPK_base
+	{
+		class Turrets: Turrets
+		{
+			class OGPK_Turret: OGPK_Turret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L7A2_1"};
+				magazines[] = {"UK3CB_BAF_762_200Rnd_T"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_762_200Rnd_T";
 				count = 10;
 			};
-		
 		};
-		maximumLoad = 4000;
+	};
+	class rhsusf_m1240a1_m2_usarmy_d: rhsusf_MATV_OGPK_M2_base
+	{
+	};
+	class twc_rhsusf_m1240a1_m2_usarmy_d: rhsusf_m1240a1_m2_usarmy_d {
+		
 	};
 };
 #include "weapons.hpp"
