@@ -1743,9 +1743,9 @@
 		antiRollbarForceLimit = 2;
 		differentialType = "all_limited";
 		frontRearSplit = 0.5;
-		frontBias = 1;
-		rearBias = 1;
-		centreBias = 2;
+		frontBias = 2;
+		rearBias = 0.5;
+		centreBias = 1;
 	//	peaktorque = 500;
 		class Turrets;
 		class Wheels:Wheels {
@@ -1760,18 +1760,18 @@
 				frictionVsSlipGraph[] = {{ 0.05, 0.5 }, { 0.2, 0.4 }, { 0.6, 0.8 }};
 			//	frictionVsSlipGraph[] = {{ 0.05, 0.5 }, { 0.2, 0.4 }, { 0.35, 0.35 }};
 			//	frictionVsSlipGraph[] = {{ 0.2, 0.4 }, { 0.35, 0.3 }, { 0.9, 0.4 }};
-				latStiffX = 50;
-				latStiffY = 130;
+				latStiffX = 150;
+				latStiffY = 110;
 				longitudinalStiffnessPerUnitGravity = 30000;
 				mass = 30;
-				maxBrakeTorque = 2000;
+				maxBrakeTorque = 2400;
 				maxCompression = 0.4;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 700;
 				moi = 6;
 				side = "left";
 				springDamperRate = 2600;
-				springStrength = 45000;
+				springStrength = 75000;
 				//sprungmass = 825;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
@@ -1789,7 +1789,7 @@
 				dampingRateInAir = 0.8;
 				longitudinalStiffnessPerUnitGravity = 30000;
 				mass = 30;
-				maxBrakeTorque = 2000;
+				maxBrakeTorque = 2400;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 700;
 				moi = 6;
@@ -1807,13 +1807,13 @@
 				dampingRate = 1;
 				dampingRateDamaged = 5;
 				dampingRateDestroyed = 5000;
-				springStrength = 50000;
+				springStrength = 90000;
 				springDamperRate = 2600;
 				dampingRateInAir = 0.8;
 				frictionVsSlipGraph[] = {{ 0.05, 0.5 }, { 0.2, 0.4 }, { 0.6, 0.8 }};
 				longitudinalStiffnessPerUnitGravity = 30000;
 				mass = 30;
-				maxBrakeTorque = 2200;
+				maxBrakeTorque = 2600;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 1000;
 				moi = 6;
@@ -1835,7 +1835,7 @@
 				dampingRateInAir = 0.8;
 				longitudinalStiffnessPerUnitGravity = 30000;
 				mass = 30;
-				maxBrakeTorque = 2200;
+				maxBrakeTorque = 2600;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 1000;
 				moi = 6;
@@ -1864,8 +1864,8 @@
 	
 	class UK3CB_BAF_LandRover_Amb_Base: UK3CB_BAF_LandRover_Base
 	{
-		antiRollbarForceCoef = 30.0;
-		antiRollbarForceLimit = 20;
+	//	antiRollbarForceCoef = 30.0;
+	//	antiRollbarForceLimit = 20;
 	};
 	
 	class Wheeled_APC_F : Car_F
