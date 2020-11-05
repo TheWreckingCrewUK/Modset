@@ -23,6 +23,20 @@ class Extended_Init_EventHandlers
 			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.85]";
 		};
 	};
+	class RHS_Ural_BaseTurret
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.2)]";
+		};
+	};
+	class rhs_zil131_base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.2)]";
+		};
+	};
 	class rhsusf_m1151_base
 	{
 		class cog
@@ -31,6 +45,13 @@ class Extended_Init_EventHandlers
 		};
 	};
 	class rhsusf_M1239_base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.4)]";
+		};
+	};
+	class rhs_btr_base
 	{
 		class cog
 		{
@@ -199,7 +220,7 @@ class Extended_Init_EventHandlers
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [0.00841949,0.511681,-1.03113]";
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.35)]";
 		};
 	};
 };
