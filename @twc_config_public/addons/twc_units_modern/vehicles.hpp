@@ -62,7 +62,7 @@
 	};
 	
 	class rhsusf_MATV_base: MRAP_01_base_F {
-		//antiRollbarForceLimit = 0;
+	//	antiRollbarForceLimit = 4;
 		frontRearSplit = 0.3;
 		frontBias = 1.8;
 		rearBias = 0.5;
@@ -73,7 +73,7 @@
 				maxBrakeTorque = 15000;
 				sprungmass = 3800;
 				maxCompression = 0.5;
-				springStrength = 120000;
+				springStrength = 140000;
 				springDamperRate = 10000;
 				frictionVsSlipGraph[] = {{ 0.0, 0.4 }, { 0.2, 0.3 }, { 0.8, 0.8 }};
 			//	suspTravelDirection[] = {0.2,-1,0};
@@ -81,7 +81,7 @@
 			};
 			class L2: L1
 			{
-				springStrength = 90000;
+				springStrength = 180000;
 				springDamperRate = 13000;
 				maxBrakeTorque = 13000;
 			//	suspTravelDirection[] = {0.5,-1,0};
@@ -92,7 +92,7 @@
 			};
 			class R2: R1
 			{
-				springStrength = 90000;
+				springStrength = 180000;
 				springDamperRate = 13000;
 				maxBrakeTorque = 13000;
 			//	suspTravelDirection[] = {-0.2,-1,0};
@@ -330,28 +330,27 @@
 		antiRollbarForceLimit = 0;
 		frontRearSplit = 0.4;
 		frontBias = 1.5;
-		rearBias = 1.5;
+		rearBias = 0.5;
 		centreBias = 1;
 	//	peaktorque = 300;
 		class Wheels
 		{
 			class LF
 			{
-				frictionVsSlipGraph[] = {{ 0.0, 0.65 }, { 0.1, 0.45 }, { 0.6, 1.0 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.1, 0.45 }, { 0.6, 0.8 }};
 				latStiffX = 50;
 				latStiffY = 110;
-				longitudinalStiffnessPerUnitGravity = 4582;
 				maxBrakeTorque = 1000;
 				maxCompression = 0.3;
 				MaxDroop = 0.0;
-				maxHandBrakeTorque = 150;
-				springDamperRate = 1750;
-				springStrength = 23000;
+			//	maxHandBrakeTorque = 150;
+				springDamperRate = 1800;
+				springStrength = 30000;
 			//	sprungMass = 410;
 			};
 			class LR: LF
 			{
-				maxHandBrakeTorque = 150;
+				maxHandBrakeTorque = 5000;
 				maxBrakeTorque = 2000;
 			};
 			class RF: LF
@@ -359,7 +358,7 @@
 			};
 			class RR: RF
 			{
-				maxHandBrakeTorque = 150;
+				maxHandBrakeTorque = 5000;
 				maxBrakeTorque = 2000;
 			};
 		};
@@ -2441,7 +2440,7 @@
 		turnCoef = 3.5;
 		class Wheels {
 			class L1 {
-				frictionVsSlipGraph[] = {{ 0.0, 0.44 }, { 0.3, 0.38 }, { 0.8, 0.9 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.4 }, { 0.3, 0.35 }, { 0.8, 0.85 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
 				maxHandBrakeTorque = 1000;
@@ -2487,7 +2486,7 @@
 		
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
-           turnIncreaseConst  = 0.3; // basic sensitivity value, higher value = faster steering
+           turnIncreaseConst  = 0.2; // basic sensitivity value, higher value = faster steering
            turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
            turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
            
@@ -3112,11 +3111,7 @@
 		differentialType = "all_limited";
 		dampingRateZeroThrottleClutchEngaged = 0.1;
 		dampingRateZeroThrottleClutchDisEngaged = 0.1;
-		frontBias = 5;
-		centerBias = 0.2;
-		frontRearSplit = 0.3;
 		clutchstrength = 3;
-		rearBias = 0.1;
 		turnCoef = 3;
 		maxSpeed = 96;
 		normalSpeedForwardCoef = 1.1;
@@ -3124,11 +3119,25 @@
 		latency = 0.4;
 		torqueCurve[] = {{0.125,0.9},{0.25,0.8},{0.375,0.831579},{0.5,0.884211},{0.625,0.989474},{0.75,1.042105},{0.875,1.2},{1.12513,0}};
 		peakTorque = 160;
+		
+		//4wd section
+	//	frontBias = 5;
+	//	centerBias = 0.2;
+	//	frontRearSplit = 0.3;
+	//	rearBias = 0.1;
+	
+		//rwd section
+		frontBias = 0;
+		centerBias = 0;
+		frontRearSplit = 1;
+		rearBias = 0.5;
+		//
+		
 		class Wheels {
 			class LF {
 				frictionVsSlipGraph[] = {{ 0.0, 0.42 }, { 0.7, 0.38 }, { 0.8, 0.75 }};
-				latStiffX = 600;
-				latStiffY = 60;
+				latStiffX = 180;
+				latStiffY = 90;
 				longitudinalStiffnessPerUnitGravity = 30000;
 				maxCompression = 0.31;
 				maxDroop = 0.04;
@@ -3143,7 +3152,7 @@
 			class RR: RF {
 				maxCompression = 0.31;
 				springDamperRate = 2300;
-				springStrength = 12000;
+				springStrength = 24000;
 				maxHandBrakeTorque = 20000;
 				maxBrakeTorque = 1150;
 				//maxBrakeTorque = 2700;
@@ -3151,7 +3160,7 @@
 			class LR: LF {
 				maxCompression = 0.31;
 				springDamperRate = 2300;
-				springStrength = 12000;
+				springStrength = 24000;
 				maxHandBrakeTorque = 20000;
 				maxBrakeTorque = 1150;
 				//maxBrakeTorque = 2700;
