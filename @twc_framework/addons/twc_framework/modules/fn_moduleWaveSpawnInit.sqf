@@ -4,8 +4,17 @@ _units = synchronizedObjects _module;
 _leader = leader (_units select 0);
 _units = units _leader;
 _unitTypes = [];
+_vehicles = [];
 {
-	_unitTypes pushback (typeOf _x);
+	_vehicle = vehicle _x;
+	if (_vehicle == _x) then {
+		_unitTypes pushback (typeOf _x);
+	} else {
+		if !(_vehicle in _vehicles) then {
+			_unitTypes pushback (typeOf _vehicle);
+			_vehicles pushback _vehicle;
+		};
+	};
 } forEach _units;
 
 
