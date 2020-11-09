@@ -10,4 +10,4 @@ _waypoints = _logic getVariable "Waypoints";
 
 _currentWave = 1;
 
-[_unitTypes, _pos, _waypoints, _delay, _currentWave, _maxWaves] call TWC_fnc_waveSpawn;
+[_unitTypes, _pos, _waypoints, _delay, _currentWave, _maxWaves] spawn TWC_fnc_waveSpawn;

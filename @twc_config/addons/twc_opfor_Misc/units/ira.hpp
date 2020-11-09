@@ -1948,7 +1948,7 @@ class IRA_Field_AA: I_Soldier_F {
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
-		"ACE_PreloadedMissileDummy_Igla_CUP"
+		"CUP_Igla_M"
 	};
 
 	Respawnmagazines[] = {
@@ -1956,7 +1956,7 @@ class IRA_Field_AA: I_Soldier_F {
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
-		"ACE_PreloadedMissileDummy_Igla_CUP"
+		"CUP_Igla_M"
 	};
 
 	Items[] = {
@@ -2008,15 +2008,13 @@ class IRA_Field_Static: I_Soldier_F {
 	magazines[] = {
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
-		"UK3CB_BAF_9_13Rnd",
-		"ACE_PreloadedMissileDummy_Igla_CUP"
+		"UK3CB_BAF_9_13Rnd"
 	};
 
 	Respawnmagazines[] = {
 		"UK3CB_BAF_9_13Rnd",
 		"UK3CB_BAF_9_13Rnd",
-		"UK3CB_BAF_9_13Rnd",
-		"ACE_PreloadedMissileDummy_Igla_CUP"
+		"UK3CB_BAF_9_13Rnd"
 	};
 
 	Items[] = {
