@@ -11,9 +11,9 @@
 	^those are for the jackal. be wary about using bigger values for bigger vehicles, it's not a relative compression limiter like real arb's, it's just a counter-rotational force on the chassis
 	
 	frictionvsslipgraph: the grip levels are multiplied by weight after reading the friction values here. Don't be scared about running low values on heavy vehicles, just make sure to have a high grip level at the highest slip ratio so that you don't have snowboarding mastiffs down hills. Balance this safety net with braketorque and handbrake torque. If a car jumps over a ramp and slams the footbrake and handbrake on in mid air, the combined torque of handbrake/footbrake and the grip level should not be enough to flip the vehicle end over end, unless it's a vehicle that should be capable of doing that irl. DON'T FORGET that max slip ratio is NOT max slip!
-	On six-wheeled vehicles, you can set the braketorque crazy high on the middle wheels to get into the higher slip ranges when braking normally. This means you can have a lower lateral grip if need be and still have a very short braking distance.
+	On six-wheeled vehicles, you can set the braketorque crazy high on the middle wheels to get into the higher slip ranges when braking normally. This means you can have a lower lateral grip if need be and still have a very short braking distance. low slip ratio is generally your normal grip level. Medium slip ratio (0.3-0.8) is your general sliding grip level. You can set it lower than your normal level for road tires to get a falloff, or a bit higher than your normal level for the progression you expect from all terrain tires. High slip ratios are for your handbrake/stopped grip level. I set this higher than the others by principle. This stops vehicles from sliding eternally down a hill. Set it high enough that it flips at whatever side slope it must flip at, but low enough that it does not flip when braking over a jump.
 	
-	the same thing that causes the weight/friction oddness causes drivetrains to behave as if they're flipped. RWD powertrains will have understeer on power and FWD powertrains will have oversteer on power. Off-throttle behaviour seems to be determined by the drivetrain locking as opposed to powertrain, but I haven't been able to get reliable results yet. Centerbias is definitely a torsen system and I assume it's the same for front and rear, but arma physics aren't great so I can't tell
+	the same thing that causes the weight/friction oddness causes drivetrains to behave as if they're flipped. RWD powertrains will have understeer on power and FWD powertrains will have oversteer on power. Off-throttle behaviour is determined by your diff locks. Centerbias is definitely a torsen system and I assume it's the same for front and rear, but arma physics aren't great so I can't tell
 	Test edge-case throttle balance by increasing peaktorque. No need to look for a golden bump when an uprated engine can cause the same slips over a wider range of stuff
 	
 	for consistent drifting that's controllable on a keyboard without requiring throttle control or lots of countersteering (buggies) look at latstiffY instead of just the differential stuff. You'll need to retune the steeringcoefficient to get the proper steering response with the looser tires. The decel locking of the diffs sometimes causes issues when running low latstiff, make sure the steering isn't wandering when coasting at high speed
@@ -373,7 +373,7 @@
 				moi = 60;
 				side = "left";
 				springDamperRate = 3000;
-				springStrength = 35000;
+				springStrength = 40000;
 				sprungMass = 1750;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
@@ -387,7 +387,7 @@
 				boundary = "wheel_2_1_bound";
 				center = "wheel_2_1_axis";
 				springDamperRate = 3000;
-				springStrength = 35000;
+				springStrength = 40000;
 				sprungMass = 1750;
 				side = "right";
 				maxBrakeTorque = 5500;
@@ -399,7 +399,7 @@
 				center = "wheel_2_2_axis";
 				springDamperRate = 3000;
 				maxCompression = 0.7;
-				springStrength = 35000;
+				springStrength = 60000;
 				maxHandBrakeTorque = 3000;
 				maxBrakeTorque = 4000;
 				sprungMass = 1750;
@@ -412,7 +412,7 @@
 				center = "wheel_1_2_axis";
 				springDamperRate = 3000;
 				maxCompression = 0.7;
-				springStrength = 35000;
+				springStrength = 60000;
 				sprungMass = 1750;
 				maxHandBrakeTorque = 3000;
 				maxBrakeTorque = 4000;
@@ -467,7 +467,7 @@
 				moi = 60;
 				side = "left";
 				springDamperRate = 4000;
-				springStrength = 26000;
+				springStrength = 30000;
 				sprungMass = 1750;
 				steering = 1;
 				suspForceAppPointOffset = "wheel_1_1_axis";
@@ -481,7 +481,7 @@
 				boundary = "wheel_2_1_bound";
 				center = "wheel_2_1_axis";
 				springDamperRate = 4000;
-				springStrength = 24000;
+				springStrength = 30000;
 				sprungMass = 1750;
 				maxBrakeTorque = 5500;
 				side = "right";
@@ -492,7 +492,7 @@
 				boundary = "wheel_2_2_bound";
 				center = "wheel_2_2_axis";
 				springDamperRate = 4000;
-				springStrength = 24000;
+				springStrength = 45000;
 				maxCompression = 0.7;
 				sprungMass = 1750;
 				maxHandBrakeTorque = 3000;
@@ -517,7 +517,7 @@
 				boundary = "wheel_1_2_bound";
 				center = "wheel_1_2_axis";
 				springDamperRate = 4000;
-				springStrength = 21000;
+				springStrength = 45000;
 				maxCompression = 0.7;
 				sprungMass = 1750;
 				maxHandBrakeTorque = 3000;

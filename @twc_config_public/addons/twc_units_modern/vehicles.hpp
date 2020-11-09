@@ -3121,16 +3121,16 @@
 		peakTorque = 160;
 		
 		//4wd section
-	//	frontBias = 5;
-	//	centerBias = 0.2;
-	//	frontRearSplit = 0.3;
-	//	rearBias = 0.1;
+		frontBias = 5;
+		centerBias = 0.2;
+		frontRearSplit = 0.3;
+		rearBias = 0.1;
 	
 		//rwd section
-		frontBias = 0;
-		centerBias = 0;
-		frontRearSplit = 1;
-		rearBias = 0.5;
+	//	frontBias = 0;
+	//	centerBias = 0;
+	//	frontRearSplit = 1;
+	//	rearBias = 0.5;
 		//
 		
 		class Wheels {
