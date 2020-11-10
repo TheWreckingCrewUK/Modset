@@ -138,9 +138,9 @@
 				maxCompression = 0.35;
 			//	sprungMass = 4250;
 				maxBrakeTorque = 20000;
-				springStrength = 275000;
+				springStrength = 295000;
 				springDamperRate = 8000;
-				longitudinalStiffnessPerUnitGravity = 15000;
+				longitudinalStiffnessPerUnitGravity = 4000;
 				latStiffX = 55;
 				latStiffY = 80;
 			//	frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.8 } };
@@ -174,6 +174,7 @@
              
            maxTurnHundred     = 0.1; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
        };
+		class Turrets;
 	};
 	
 	
@@ -194,12 +195,12 @@
 				frictionVsSlipGraph[] = {{ 0.0, 0.35 }, { 0.2, 0.3 }, { 0.8, 0.8 }};
 				latStiffX = 55;
 				latStiffY = 100;
-				longitudinalStiffnessPerUnitGravity = 15000;
+				longitudinalStiffnessPerUnitGravity = 4000;
 				maxBrakeTorque = 7000;
 				maxCompression = 0.5;
 			//	maxHandBrakeTorque = 2000;
 				springDamperRate = 8000;
-				springStrength = 275000;
+				springStrength = 295000;
 			};
 			class L2: L1
 			{
@@ -262,12 +263,12 @@
 				frictionVsSlipGraph[] = {{ 0.0, 0.35 }, { 0.2, 0.3 }, { 0.8, 0.8 }};
 				latStiffX = 55;
 				latStiffY = 100;
-				longitudinalStiffnessPerUnitGravity = 15000;
+				longitudinalStiffnessPerUnitGravity = 4000;
 				maxBrakeTorque = 7000;
 				maxCompression = 0.5;
 				maxHandBrakeTorque = 2000;
 				springDamperRate = 8000;
-				springStrength = 275000;
+				springStrength = 295000;
 			};
 			class L2: L1
 			{
@@ -2348,21 +2349,10 @@
 	
 	
 	class rhsusf_RG33_CROWS_base: rhsusf_RG33_base {
-		
-		class Turrets;
-	};
-	class rhsusf_M1238A1_M2_socom_d: rhsusf_RG33_CROWS_base {
-		
+		class NewTurret;
 		class Turrets: Turrets
 		{
-			class CROWS_Turret;
-		};
-	};
-	class twc_M1238A1_M2_socom_d: rhsusf_M1238A1_M2_socom_d {
-		
-		class Turrets: Turrets
-		{
-			class CROWS_Turret: CROWS_Turret
+			class CROWS_Turret: NewTurret
 			{
 				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
 				magazines[] = {"UK3CB_BAF_127_100Rnd"};
@@ -2378,6 +2368,12 @@
 			};
 		
 		};
+	};
+	class rhsusf_M1238A1_M2_socom_d: rhsusf_RG33_CROWS_base {
+		
+	};
+	class twc_M1238A1_M2_socom_d: rhsusf_M1238A1_M2_socom_d {
+		
 	};
 	
 	
@@ -2434,39 +2430,42 @@
 		minOmega = 10;
 	//	clutchStrength = 3;
 		antiRollbarForceLimit = 0;
-		frontrearsplit = 0.5;
-		frontbias = 3.0;
+		frontrearsplit = 0.7;
+		frontbias = 3;
 		centrebias = 0.2;
 		turnCoef = 3.5;
 		class Wheels {
 			class L1 {
-				frictionVsSlipGraph[] = {{ 0.0, 0.4 }, { 0.3, 0.35 }, { 0.8, 0.85 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.25 }, { 0.3, 0.3 }, { 0.8, 0.7 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
 				maxHandBrakeTorque = 1000;
 				springDamperRate = 3500;
-				maxBrakeTorque = 3400;
-				springStrength = 115000;
+				maxBrakeTorque = 8000;
+				springStrength = 125000;
 				longitudinalStiffnessPerUnitGravity = 15000;
-				latStiffY = 100;
+				latStiffY = 150;
+				latStiffX = 200;
 				//sprungMass = 925;
 			};
 			class L2: L1 {
-				maxBrakeTorque = 3200;
+				maxBrakeTorque = 7000;
 			//	springStrength = 38000;
 				springDamperRate = 6500;
-				springStrength = 95000;
+				springStrength = 85000;
 				maxHandBrakeTorque = 1000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.3 }, { 0.3, 0.4 }, { 0.8, 0.7 }};
 			};
 			class R1:L1 {
 				
 			};
 			class R2: R1 {
-				maxBrakeTorque = 3200;
+				maxBrakeTorque = 7000;
 			//	springStrength = 38000;
 				springDamperRate = 6500;
-				springStrength = 95000;
+				springStrength = 85000;
 				maxHandBrakeTorque = 1000;
+				frictionVsSlipGraph[] = {{ 0.0, 0.3 }, { 0.3, 0.4 }, { 0.8, 0.7 }};
 			};
 		};
 		
