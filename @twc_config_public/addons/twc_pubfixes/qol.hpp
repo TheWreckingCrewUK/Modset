@@ -37,6 +37,20 @@ class Extended_Init_EventHandlers
 			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.4)]";
 		};
 	};
+	class rhsusf_fmtv_base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),(((getCenterOfMass _car) select 1)),(((getCenterOfMass _car) select 2) + 0.4)]";
+		};
+	};
+	class rhsusf_HEMTT_A4_base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.4)]";
+		};
+	};
 	class rhsusf_RG33L_base
 	{
 		class cog
@@ -70,6 +84,13 @@ class Extended_Init_EventHandlers
 		class cog
 		{
 			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.45)]";
+		};
+	};
+	class rhs_kraz255_base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.35)]";
 		};
 	};
 	class RHS_UAZ_Base
