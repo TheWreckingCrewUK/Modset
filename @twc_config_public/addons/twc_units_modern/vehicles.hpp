@@ -49,15 +49,15 @@
 		
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
-           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           turnIncreaseConst  = 0.2; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.2; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.8; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.2; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.5; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.8; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
              
-           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.7; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
-           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
-             
-           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+           maxTurnHundred     = 0.1; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
        };
 	};
 	
@@ -691,15 +691,15 @@
 		};
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
-           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           turnIncreaseConst  = 0.1; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.2; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.8; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
            
-           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
-           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+           turnDecreaseConst  = 0.2; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.5; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.8; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
              
-           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+           maxTurnHundred     = 0.1; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
        };
 	};
 	
@@ -711,9 +711,9 @@
 		{
 			class L1
 			{
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.8 } };
-				latStiffX = 3.5;
-				latStiffY = 18;
+				frictionVsSlipGraph[] = { { 0.0, 0.55 }, { 0.3, 0.4 }, { 1.0, 0.7 } };
+				latStiffX = 75;
+				latStiffY = 65;
 				longitudinalStiffnessPerUnitGravity = 10000;
 				maxBrakeTorque = 2000;
 				maxCompression = 0.4;
@@ -750,14 +750,14 @@
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
            turnIncreaseConst  = 0.1; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 1.0; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           turnIncreaseLinear = 0.2; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.8; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
            
-           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.2; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
-           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
+           turnDecreaseConst  = 0.2; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.5; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.8; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
              
-           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+           maxTurnHundred     = 0.1; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
        };
 	};
 	
@@ -768,7 +768,7 @@
 		{
 			class LF
 			{
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.3, 0.4 }, { 1.0, 0.7 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.55 }, { 0.3, 0.4 }, { 1.0, 0.7 } };
 				latStiffX = 35;
 				latStiffY = 55;
 				longitudinalStiffnessPerUnitGravity = 10000;
@@ -828,7 +828,7 @@
 		{
 			class L1
 			{
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.3, 0.4 }, { 1.0, 0.7 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.55 }, { 0.3, 0.4 }, { 1.0, 0.7 } };
 				latStiffX = 35;
 				latStiffY = 55;
 				//longitudinalStiffnessPerUnitGravity = 5000;
@@ -891,7 +891,7 @@
 		{
 			class L1
 			{
-				frictionVsSlipGraph[] = { { 0.0, 0.7 }, { 0.3, 0.4 }, { 1.0, 0.7 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.55 }, { 0.3, 0.4 }, { 1.0, 0.7 } };
 				latStiffX = 35;
 				latStiffY = 55;
 				longitudinalStiffnessPerUnitGravity = 10000;
@@ -948,7 +948,7 @@
 		{
 			class LF
 			{
-				frictionVsSlipGraph[] = { { 0.0, 0.7 }, { 0.3, 0.4 }, { 1.0, 0.7 } };
+				frictionVsSlipGraph[] = { { 0.0, 0.55 }, { 0.3, 0.4 }, { 1.0, 0.7 } };
 				latStiffX = 35;
 				latStiffY = 55;
 				longitudinalStiffnessPerUnitGravity = 5000;
@@ -1013,60 +1013,64 @@
 
 	class rhsusf_stryker_base: Wheeled_APC_F
 	{
-		
+		frontbias = 0.8;
+		rearbias = 1.7;
 		class Wheels
 		{
 			class L1
 			{
-				maxBrakeTorque = 10500;
+				maxBrakeTorque = 7500;
 				maxhandBrakeTorque = 1500;
 				maxCompression = 0.4;
 			//	sprungMass = 4250;
 			//	springStrength = 155000;
 			//	springDamperRate = 8000;
 				longitudinalStiffnessPerUnitGravity = 10000;
-				latStiffX = 5;
-				latStiffY = 100;
-				frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.5, 0.5 }, { 1.0, 0.8 } };
+				latStiffX = 75;
+				latStiffY = 80;
+				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.5, 0.45 }, { 1.0, 0.6 } };
 			};
 			class L2:L1
 			{
+				maxBrakeTorque = 8500;
 			};
 			class L3: L1
 			{
 				maxhandBrakeTorque = 1500;
+				maxBrakeTorque = 10500;
 			};
 			class L4: L1
 			{
-				maxhandBrakeTorque = 1500;
+				maxhandBrakeTorque = 4500;
 			};
 			class R1: L1
 			{
 			};
 			class R2: R1
 			{
+				maxBrakeTorque = 8500;
 			};
 			class R3: R1
 			{
 				maxhandBrakeTorque = 1500;
+				maxBrakeTorque = 10500;
 			};
 			class R4: R1
 			{
-				maxhandBrakeTorque = 1500;
+				maxhandBrakeTorque = 4500;
 			};
 		};
-		
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
-           turnIncreaseConst  = 0.01; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
-           turnIncreaseTime   = 1.0; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           turnIncreaseConst  = 0.2; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.2; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseTime   = 0.8; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
+           
+           turnDecreaseConst  = 0.7; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
+           turnDecreaseLinear = 0.5; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
+           turnDecreaseTime   = 0.3; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
              
-           turnDecreaseConst  = 0.9; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
-           turnDecreaseLinear = 0.7; // higher value means faster wheel re-centering in higher speed, slower in lower speeds
-           turnDecreaseTime   = 0.0; // higher value means stronger caster effect at the max. steering angle and weaker once the wheels are closer to centered position
-             
-           maxTurnHundred     = 0.4; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
+           maxTurnHundred     = 0.1; // coefficient of the maximum turning angle @ 100km/h; limit goes linearly to the default max. turn. angle @ 0km/h
        };
 	};
 
@@ -1199,20 +1203,36 @@
 	
 	
 	class rhsusf_M1117_base: Wheeled_Apc_F {
+		frontBias = 5;
+		frontRearSplit = 0.8;
 		class Wheels
 		{
 			class LF {
-				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.0 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.35 }, { 0.5, 0.4 }, { 0.9, 0.7 }};
 				longitudinalStiffnessPerUnitGravity = 7000;
 				springDamperRate = 9000;
 				maxBrakeTorque = 9500;
+				maxHandBrakeTorque = 1000;
 				maxCompression = 0.3;
+				latStiffY = 90;
+				springStrength = 210000;
+			};
+			class LR:LF
+			{
+				maxHandBrakeTorque = 1000;
+			};
+			class RF:LF
+			{
+			};
+			class RR:RF
+			{
+				maxHandBrakeTorque = 1000;
 			};
 		};
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
-           turnIncreaseConst  = 0.25; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseConst  = 0.1; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.4; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
            turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
            
            turnDecreaseConst  = 0.7; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
@@ -1225,34 +1245,39 @@
 	
 	
 	class rhsgref_BRDM2: Wheeled_Apc_F {
-		frontRearSplit = 0.3;
+		frontRearSplit = 0.8;
+		rearbias = 0.3;
+		frontbias = 2.0;
 		class Wheels
 		{
 			class LF {
-				frictionVsSlipGraph[] = {{ 0.0, 0.5 }, { 0.2, 0.65 }, { 0.6, 1.0 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.35 }, { 0.5, 0.4 }, { 0.9, 0.7 }};
 				longitudinalStiffnessPerUnitGravity = 10000;
 			//	maxCompression = 0.35;
 				springDamperRate = 9500;
 				maxBrakeTorque = 8000;
-				springStrength = 110000;
+				maxHandBrakeTorque = 1000;
+				springStrength = 130000;
 				sprungMass = 3500;
 				latStiffY = 50;
 			};
 			class LR: LF {
 				springDamperRate = 10500;
+				maxHandBrakeTorque = 1000;
 			//	springStrength = 65000;
 			};
 			class RF: LF {
 			};
 			class RR: RF {
 				springDamperRate = 10500;
+				maxHandBrakeTorque = 1000;
 			//	springStrength = 65000;
 			};
 		};
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
-           turnIncreaseConst  = 0.25; // basic sensitivity value, higher value = faster steering
-           turnIncreaseLinear = 0.7; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
+           turnIncreaseConst  = 0.1; // basic sensitivity value, higher value = faster steering
+           turnIncreaseLinear = 0.4; // higher value means less sensitive steering in higher speed, more sensitive in lower speeds
            turnIncreaseTime   = 0.5; // higher value means smoother steering around the center and more sensitive when the actual steering angle gets closer to the max. steering angle
            
            turnDecreaseConst  = 0.7; // basic caster effect value, higher value = the faster the wheels align in the direction of travel
