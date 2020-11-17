@@ -241,6 +241,8 @@ class CfgPatches
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
 			
+			"cup_weapons_ksvk",
+			
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds",

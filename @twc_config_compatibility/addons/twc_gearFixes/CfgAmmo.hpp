@@ -186,6 +186,18 @@ class CfgAmmo {
 		model = "z\ace\addons\tracers\ace_TracerGreen2.p3d";
 		timeToLive = 30;
 	};
+	class CUP_B_23mm_APHE_Tracer_Green: BulletBase {
+		class CamShakePlayerFire {
+			distance = 5;
+			duration = 1;
+			frequency = 10;
+			power = 30;
+		};
+		ACE_muzzleVelocityVariationSD = 5;
+		model = "z\ace\addons\tracers\ace_TracerGreen2.p3d";
+		tracerStartTime = 0;
+		tracerEndTime = 5;
+	};
 	class B_127x99_Ball: BulletBase {
 		class CamShakePlayerFire {
 			distance = 1;

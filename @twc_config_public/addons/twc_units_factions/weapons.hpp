@@ -44,7 +44,7 @@ class cfgmagazines{
 		weight = 0;
 		picture = "\A3\weapons_f\data\UI\M_5rnd_127x108_CA.paa";
 		mass = 4;
-		ammo = "CUP_B_23mm_APHE_Tracer_Red";
+		ammo = "CUP_B_23mm_APHE_Tracer_Green";
 		tracersEvery = 1;
 	};
 	
@@ -62,6 +62,7 @@ class cfgmagazines{
 };
 
 class asdg_MuzzleSlot_556;
+class asdg_OpticSideRail_AKSVD;
 class rhs_western_rifle_scopes_slot_short;
 
 class cfgweapons{
@@ -70,15 +71,18 @@ class cfgweapons{
 	class CUP_srifle_ksvk_PSO3;
 	class twc_ksvk_base: CUP_srifle_ksvk_PSO3
 	{
-		scope = 2;
+		scope = 1;
 		displayname = "Improvised Sniper Rifle";
 		magazines[] = {"twc_23mm_1rnd"};
 		class Single;
+		class WeaponSlotsInfo;
 	};
 	class twc_ksvk: twc_ksvk_base
 	{
 		recoil = "twc_shotgun_1";
 		recoilProne = "twc_rifle_762_prone";
+		scope = 2;
+		magazineWell[] = {};
 		class Single: Single
 		{
 			class standardsound
@@ -86,9 +90,43 @@ class cfgweapons{
 				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
 			};
 		};
+		
+		/*
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CUP_DovetailMountKSVK";
+				item="twc_optic_pso_3_heavy";
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CUP_DovetailMountKSVK: asdg_OpticSideRail_AKSVD
+			{
+				class compatibleItems
+				{
+					twc_optic_pso_3_heavy = 1;
+				};
+			};
+		};
+		*/
+		
 	};
+	
+	/*
+	class cup_optic_pso_3;
+	class twc_optic_pso_3_heavy: cup_optic_pso_3 {
+	
+	
+		ACE_ScopeAdjust_Horizontal[] = {-6,6};
+		ACE_ScopeAdjust_HorizontalIncrement = 2;
+		ACE_ScopeAdjust_Vertical[] = {-30,30};
+		ACE_ScopeAdjust_VerticalIncrement = 3;
+		ACE_ScopeHeightAboveRail = 4.41386;
 		
-		
+	};
+	*/
 	class CUP_arifle_AK74_Early;
 	class twc_ak74early_sd: CUP_arifle_AK74_Early
 	{
