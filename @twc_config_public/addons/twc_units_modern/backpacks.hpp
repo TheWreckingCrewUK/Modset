@@ -1460,6 +1460,18 @@
 	};
 
 	
+	class ANA_Backpack_Modern_terp: CUP_B_SLA_Medicbag
+	{
+		scope = 1;
+		class TransportItems
+		{
+			class _xx_PRC_117F
+			{
+				name = "ACRE_PRC152";
+				count = 1;
+			};
+		};
+	};
 
 	class ana_backpack_medic: CUP_B_SLA_Medicbag
 	{
@@ -2200,17 +2212,25 @@
 	class TWC_Backpack_Modern_Sniper: twc_mtp_belt
 	{
 		scope = 1;
+		class TransportItems
+		{
+			class _xx_rangecard
+			{
+				name = "ACE_RangeCard";
+				count = 1;
+			};
+		};
 		class TransportMagazines
 		{
 			class _xx_Lapua
 			{
 				magazine = "TWC_5Rnd_338_300gr_HPBT_Mag";
-				count = 4;
+				count = 3;
 			};
 			class _xx_LapuaAP
 			{
 				magazine = "TWC_5Rnd_338_API526_Mag";
-				count = 3;
+				count = 2;
 			};
 		};
 	};
