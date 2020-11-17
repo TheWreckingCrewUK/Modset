@@ -51,6 +51,13 @@ class Extended_Init_EventHandlers
 			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),(((getCenterOfMass _car) select 1)),(((getCenterOfMass _car) select 2) + 0.4)]";
 		};
 	};
+	class rhsusf_himars_base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),(((getCenterOfMass _car) select 1)),(((getCenterOfMass _car) select 2) + 0.4)]";
+		};
+	};
 	class rhsusf_HEMTT_A4_base
 	{
 		class cog
@@ -123,6 +130,14 @@ class Extended_Init_EventHandlers
 		};
 	};
 	*/
+	
+	class rhs_tigr_base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.4)]";
+		};
+	};
 	
 	class rhsusf_M1117_base
 	{

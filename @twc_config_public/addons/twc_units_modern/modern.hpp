@@ -1090,7 +1090,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		Items[]= {
 			"ACE_Kestrel4500",
-			"ACE_ATragMX",
+			"ACE_RangeCard",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			
@@ -1118,7 +1118,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 
 		respawnItems[]= {
 			"ACE_Kestrel4500",
-			"ACE_ATragMX",
+			"ACE_RangeCard",
 			"ACE_fieldDressing",
 			
 			"ACE_EarPlugs",

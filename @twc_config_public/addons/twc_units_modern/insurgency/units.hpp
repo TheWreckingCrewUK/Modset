@@ -734,7 +734,7 @@
 		icon="iconManLeader";
 		twc_radioType = "ACRE_PRC343";
 		twc_radioChannel = 4;
-		backpack="twc_mtp_belt";
+		backpack="TWC_Backpack_Modern_Sniper";
 		twc_nobackpack = 1;
 		linkedItems[]= {
 			"UK3CB_BAF_V_Osprey_Rifleman_A",
@@ -768,13 +768,13 @@
 
 		magazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
 			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell",
@@ -784,13 +784,13 @@
 
 		Respawnmagazines[]= {
 			"rhsusf_mag_17Rnd_9x19_JHP",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
-			"ACE_10Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
+			"TWC_5Rnd_338_300gr_HPBT_Mag",
 			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell",
@@ -829,7 +829,7 @@
 
 		Items[]= {
 			"ACE_Kestrel4500",
-			"ACE_ATragMX",
+			"ACE_RangeCard",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -856,7 +856,7 @@
 
 		respawnItems[]= {
 			"ACE_Kestrel4500",
-			"ACE_ATragMX",
+			"ACE_RangeCard",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -1053,7 +1053,7 @@
 		_generalMacro="ana_interpreter";
 		scope=2;
 		displayName="Interpreter";
-		backpack="";
+		backpack="ANA_Backpack_Modern_terp";
 		linkedItems[]=
 		{
         "rhsusf_iotv_ucp",
@@ -1090,7 +1090,6 @@
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",
-		"ACRE_PRC152",
 		"ACE_EarPlugs",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -1104,7 +1103,6 @@
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC343",
-		"ACRE_PRC152",
 		"ACE_EarPlugs",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
