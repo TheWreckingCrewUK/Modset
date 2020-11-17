@@ -6,8 +6,8 @@ class TWC_BaseClass_Wildcat: UK3CB_BAF_Wildcat_AH1_CAS_8A {
 	class AnimationSources;
 };
 
-class TWC_BaseClass_Wildcat_F: UK3CB_BAF_Wildcat_AH1_CAS_8A {
-	class AnimationSources {
+class TWC_BaseClass_Wildcat_F: TWC_BaseClass_Wildcat {
+	class AnimationSources: AnimationSources {
 		class ClanLogo_Hide {
 			animPeriod = 1e-006;
 			author = "www.3commandobrigade.com";
