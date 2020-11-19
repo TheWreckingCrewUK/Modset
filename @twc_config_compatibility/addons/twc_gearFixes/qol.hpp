@@ -20,7 +20,28 @@ class Extended_Init_EventHandlers
 	{
 		class cog
 		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.001,-0.85]";
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.2)]";
+		};
+	};
+	class CUP_Mastiff_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.8)]";
+		};
+	};
+	class CUP_Wolfhound_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.6)]";
+		};
+	};
+	class CUP_Hilux_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),(((getCenterOfMass _car) select 1) - 0.3),-0.6]";
 		};
 	};
 	class UK3CB_BAF_Husky_Base
@@ -88,23 +109,6 @@ class Extended_Init_EventHandlers
 			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,0.114309,-1.25]";
 		};
 	};
-	/*
-	class CUP_Wolfhound_Base
-	{
-		class cog
-		{
-			serverinit = "params ['_car']; _car setCenterOfMass [0.0542845,0.395569,-1.1]";
-		};
-	};
-	
-	class CUP_Mastiff_Base
-	{
-		class cog
-		{
-			serverinit = "params ['_car']; _car setCenterOfMass [-0.00687825,-0.814309,1.7]";
-		};
-	};
-	*/
 	
 	
 	class CUP_UAZ_Base

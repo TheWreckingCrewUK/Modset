@@ -319,7 +319,7 @@
 	class Modern_British_Squadleader_Light: Modern_British_Squadleader
 	{
 		editorSubcategory = "Men_Modern_Light";
-		displayName="Section Leader @BAF Light Mobility";
+		displayName="Section Leader @BAF Mechanised";
 		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]=
@@ -801,7 +801,7 @@
 
 	class Modern_British_Spotter_coin: Modern_British_Base {
 		scope=2;
-		displayName="Spotter";
+		displayName="Spotter @Sniper Team";
 		uniformClass="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 		icon="iconManLeader";
 		twc_radioType = "ACRE_PRC343";

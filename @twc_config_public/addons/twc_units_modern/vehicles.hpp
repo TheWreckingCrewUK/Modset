@@ -78,7 +78,7 @@
 				frictionVsSlipGraph[] = {{ 0.0, 0.4 }, { 0.2, 0.3 }, { 0.8, 0.8 }};
 			//	suspTravelDirection[] = {0.2,-1,0};
 				latStiffx = 100;
-				latStiffY = 100;
+				latStiffY = 110;
 			};
 			class L2: L1
 			{
@@ -143,7 +143,7 @@
 				springDamperRate = 8000;
 				longitudinalStiffnessPerUnitGravity = 4000;
 				latStiffX = 130;
-				latStiffY = 80;
+				latStiffY = 90;
 			//	frictionVsSlipGraph[] = { { 0.0, 0.8 }, { 0.2, 0.5 }, { 1.0, 0.8 } };
 				frictionVsSlipGraph[] = {{ 0.0, 0.35 }, { 0.2, 0.3 }, { 0.8, 0.8 }};
 			};
@@ -195,7 +195,7 @@
 			//	frictionVsSlipGraph[] = {{ 0.0, 0.4 }, { 0.4, 0.35 }, { 0.8, 0.8 }};
 				frictionVsSlipGraph[] = {{ 0.0, 0.35 }, { 0.2, 0.3 }, { 0.8, 0.8 }};
 				latStiffX = 130;
-				latStiffY = 100;
+				latStiffY = 110;
 				longitudinalStiffnessPerUnitGravity = 4000;
 				maxBrakeTorque = 7000;
 				maxCompression = 0.5;
@@ -263,7 +263,7 @@
 			//	frictionVsSlipGraph[] = {{ 0.0, 0.4 }, { 0.4, 0.35 }, { 0.8, 0.8 }};
 				frictionVsSlipGraph[] = {{ 0.0, 0.35 }, { 0.2, 0.3 }, { 0.8, 0.8 }};
 				latStiffX = 130;
-				latStiffY = 100;
+				latStiffY = 110;
 				longitudinalStiffnessPerUnitGravity = 4000;
 				maxBrakeTorque = 7000;
 				maxCompression = 0.5;
@@ -356,7 +356,7 @@
 				maxHandBrakeTorque = 5000;
 				maxBrakeTorque = 2000;
 				springDamperRate = 4000;
-				springStrength = 23000;
+				springStrength = 27000;
 			};
 			class RF: LF
 			{
@@ -2219,7 +2219,7 @@
 	class CUP_Mastiff_Base: Wheeled_APC_F
 	{
 		class NewTurret;
-		class Turrets: Turrets
+		class Turrets
 		{
 			class MainTurret: NewTurret
 			{
@@ -3106,7 +3106,7 @@
 		turnCoef = 3.5;
 		class Wheels {
 			class LF {
-				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.4 }, { 0.5, 0.65 }};
+				frictionVsSlipGraph[] = {{ 0.1, 0.5 }, { 0.25, 0.4 }, { 0.5, 0.65 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
 				maxHandBrakeTorque = 1000;
@@ -3177,7 +3177,7 @@
 	//	enginePower = 300;
 		class Wheels {
 			class LF {
-				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
+				frictionVsSlipGraph[] = {{ 0.1, 0.5 }, { 0.25, 0.4 }, { 0.5, 0.65 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
 				maxHandBrakeTorque = 3000;
@@ -3238,7 +3238,7 @@
 		clutchStrength = 3;
 		class Wheels:Wheels {
 			class LF:LF {
-				frictionVsSlipGraph[] = {{ 0.1, 0.6 }, { 0.25, 0.45 }, { 0.5, 0.65 }};
+				frictionVsSlipGraph[] = {{ 0.1, 0.5 }, { 0.25, 0.4 }, { 0.5, 0.65 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
 				dampingRateDestroyed = 1000000.0;

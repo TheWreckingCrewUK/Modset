@@ -957,7 +957,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 	{
 		_generalMacro="Modern_JetPilot";
 		scope=2;
-		displayName="Fixed Wing Pilot";
+		displayName="Fixed Wing Pilot @Fixed Wing Team";
 		faction="twc_public_baf";
 		editorSubcategory = "Men_Modern";
 		vehicleClass="Men_Modern";

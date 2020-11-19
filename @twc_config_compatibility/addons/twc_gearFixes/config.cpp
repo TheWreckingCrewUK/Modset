@@ -11,6 +11,7 @@ class CfgPatches {
 			"cup_airvehicles_av8b",
 			"CUP_Creatures_Military_USArmy",
 			"cup_trackedvehicles_mcv80",
+			"cup_wheeledvehicles_hilux",
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds",
