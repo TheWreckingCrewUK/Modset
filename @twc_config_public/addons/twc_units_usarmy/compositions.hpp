@@ -32,21 +32,21 @@ class CfgGroups
                                         class Unit2
                                         {
                                                 side = 1;
-                                                vehicle = "TWC_Modern_US_Army_Rifleman";
+                                                vehicle = "TWC_Modern_US_Army_Grenadier";
                                                 rank = "PRIVATE";
                                                 position[] = {5,0,0};
                                         };
 										class Unit3
                                         {
                                                 side = 1;
-                                                vehicle = "TWC_Modern_US_Army_Grenadier";
+                                                vehicle = "TWC_Modern_US_Army_AutomaticRifleman";
                                                 rank = "PRIVATE";
                                                 position[] = {7,0,0};
                                         };
 										class Unit4
                                         {
                                                 side = 1;
-                                                vehicle = "TWC_Modern_US_Army_AutomaticRifleman";
+                                                vehicle = "TWC_Modern_US_Army_Rifleman";
                                                 rank = "PRIVATE";
                                                 position[] = {9,0,0};
                                         };
@@ -60,14 +60,14 @@ class CfgGroups
 										class Unit6
                                         {
                                                 side = 1;
-                                                vehicle = "TWC_Modern_US_Army_AutomaticRifleman";
+                                                vehicle = "TWC_Modern_US_Army_Grenadier";
                                                 rank = "PRIVATE";
                                                 position[] = {13,0,0};
                                         };
 										class Unit7
                                         {
                                                 side = 1;
-                                                vehicle = "TWC_Modern_US_Army_Rifleman";
+                                                vehicle = "TWC_Modern_US_Army_AutomaticRifleman";
                                                 rank = "PRIVATE";
                                                 position[] = {15,0,0};
                                         };

@@ -171,14 +171,14 @@
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"twc_m4_320_lds_lazer"
+			"twc_m4_acog_lazer"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"twc_m4_320_lds_lazer"
+			"twc_m4_acog_lazer"
 		};
 		magazines[]=
 		{
@@ -192,15 +192,6 @@
 			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
 			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
 			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -219,15 +210,6 @@
 			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
 			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
 			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_HE_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
