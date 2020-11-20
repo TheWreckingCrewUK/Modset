@@ -187,6 +187,7 @@ class CfgAmmo {
 		timeToLive = 30;
 	};
 	class CUP_B_23mm_APHE_Tracer_Green: BulletBase {
+		SoundSetExplosion[] = {"Shell30mm40mm_Exp_SoundSet","Explosion_Debris_SoundSet"};
 		class CamShakePlayerFire {
 			distance = 5;
 			duration = 1;
