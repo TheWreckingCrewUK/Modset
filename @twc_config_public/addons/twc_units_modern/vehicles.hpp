@@ -2766,21 +2766,21 @@
 		minOmega = 10;
 	//	clutchStrength = 3;
 		antiRollbarForceLimit = 0;
-		frontrearsplit = 0.7;
-		frontbias = 3;
+		frontrearsplit = 0.5;
+		frontbias = 0.7;
 		centrebias = 0.2;
 		turnCoef = 3.5;
 		class Wheels {
 			class L1 {
-				frictionVsSlipGraph[] = {{ 0.0, 0.25 }, { 0.3, 0.3 }, { 0.8, 0.7 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.25 }, { 0.3, 0.3 }, { 0.8, 0.5 }};
 				maxCompression = 0.3;
 				maxDroop = 0.15;
 				maxHandBrakeTorque = 1000;
 				springDamperRate = 3500;
 				maxBrakeTorque = 8000;
 				springStrength = 125000;
-				longitudinalStiffnessPerUnitGravity = 15000;
-				latStiffY = 150;
+				longitudinalStiffnessPerUnitGravity = 5000;
+				latStiffY = 200;
 				latStiffX = 200;
 				//sprungMass = 925;
 			};
@@ -2790,7 +2790,8 @@
 				springDamperRate = 6500;
 				springStrength = 85000;
 				maxHandBrakeTorque = 1000;
-				frictionVsSlipGraph[] = {{ 0.0, 0.3 }, { 0.3, 0.4 }, { 0.8, 0.7 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.35 }, { 0.3, 0.45 }, { 0.8, 0.5 }};
+				longitudinalStiffnessPerUnitGravity = 15000;
 			};
 			class R1:L1 {
 				
@@ -2801,7 +2802,8 @@
 				springDamperRate = 6500;
 				springStrength = 85000;
 				maxHandBrakeTorque = 1000;
-				frictionVsSlipGraph[] = {{ 0.0, 0.3 }, { 0.3, 0.4 }, { 0.8, 0.7 }};
+				frictionVsSlipGraph[] = {{ 0.0, 0.35 }, { 0.3, 0.45 }, { 0.8, 0.5 }};
+				longitudinalStiffnessPerUnitGravity = 15000;
 			};
 		};
 		
@@ -2876,8 +2878,6 @@
 		{
 			class GPK_Turret: GPK_Turret
 			{
-				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
-				magazines[] = {"UK3CB_BAF_127_100Rnd"};
 			};
 			class Turret_Weapon: GPK_Turret
 			{
