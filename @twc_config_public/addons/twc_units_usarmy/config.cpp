@@ -166,7 +166,7 @@ class CfgVehicles
 		{
 			class CROWS_Turret: CROWS_Turret
 			{
-				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L134A1"};
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_L134A1_vehicle"};
 				magazines[] = {"UK3CB_BAF_32Rnd_40mm_G_Box"};
 			};
 		};
@@ -209,14 +209,14 @@ class CfgVehicles
 			class _xx_127
 			{
 				magazine = "UK3CB_BAF_32Rnd_40mm_G_Box";
-				count = 8;
+				count = 6;
 			};
 		};
 		class Turrets: Turrets
 		{
 			class CROWS_Turret: CROWS_Turret
 			{
-				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L134A1"};
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_L134A1_vehicle"};
 				magazines[] = {"UK3CB_BAF_32Rnd_40mm_G_Box"};
 			};
 		};

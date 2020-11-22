@@ -1404,7 +1404,8 @@
 		peaktorque = 800;
 		armor = 310;
 		clutchStrength = 5;
-		brakeIdleSpeed = 1.2;class Wheels:Wheels {
+		brakeIdleSpeed = 1.2;
+		class Wheels:Wheels {
 			class LF:LF {
 				sprungmass = 2400;
 				springStrength = 60000;
