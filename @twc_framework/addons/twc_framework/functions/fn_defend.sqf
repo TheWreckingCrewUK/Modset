@@ -17,12 +17,9 @@
 *
 * Public: no
 */
-params["_unit",["_pos",[]],["_radius",200],["_size",2],["_patrol",false]];
+params["_unit",["_pos",[]],["_radius",100],["_size",2],["_patrol",0.1],["_hold",0.9]];
 
 (group _unit) setVariable ["twc_cacheDefending",true];
-{
-	_x setVariable ["NOAI",1,true];
-}forEach units (group _unit);
 
 if(isMultiplayer && (count (entities "HeadlessClient_F") != 0))then{
 	waitUntil{groupOwner (group _unit) != 2};
@@ -37,4 +34,4 @@ if((typeName _pos) isEqualTo "STRING")then{
 }forEach units (group _unit);
 
 _groupOwner = (groupOwner (group _unit));
-[_unit,_pos,_radius,_size,_patrol] remoteExecCall ["CBA_fnc_taskDefend",_groupOwner];
+[_unit,_pos,_radius,_size,_patrol,_hold] remoteExecCall ["CBA_fnc_taskDefend",_groupOwner];

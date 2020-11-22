@@ -607,23 +607,30 @@ class CfgVehicles {
 			class Radius
 			{
 				displayName="Radius";
-				description="Radius";
+				description="Radius in metres that module will cover.";
 				typeName="Number";
 				defaultValue=100;
 			};
 			class Size
 			{
 				displayName="Size";
-				description="Size";
+				description="Size of buildings that will be garrisoned.";
 				typeName="Number";
 				defaultValue=2;
 			};
 			class Patrol
 			{
 				displayName="Patrol";
-				description="Have units patrol?";
-				typeName="BOOl";
-				defaultValue=0;
+				description="Percentage of units that will patrol the area instead of taking a position.";
+				typeName="Number";
+				defaultValue=0.1;
+			};
+			class Hold
+			{
+				displayName="Hold";
+				description="Percentage of units that will hold their position in combat.";
+				typeName="Number";
+				defaultValue=0.85;
 			};
 		};
 		class ModuleDescription: ModuleDescription {
