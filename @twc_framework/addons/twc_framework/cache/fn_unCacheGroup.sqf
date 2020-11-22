@@ -9,7 +9,7 @@ if(!(isNil {_group getVariable "twc_cacheDefending"}))then{
 		if(leader _x != _x)then{
 			_x enableSimulationGlobal true;
 			_x hideObjectGlobal false;
-			if(_zues)then{
+			if!(_zues)then{
 				_x setPos (formationPosition _x);
 			};
 			_x allowDamage false;
