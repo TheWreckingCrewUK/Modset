@@ -538,6 +538,8 @@
 	
 	
 	class rhsusf_fmtv_base: Truck_01_base_F	{
+		maximumLoad = 5000;
+		ace_cargo_space = 20;
 		antiRollbarForceLimit = 0;
 		frontRearSplit = 0.5;
 		frontBias = 3;
@@ -589,10 +591,11 @@
        };
 	};
 	
+	
+	
 	class rhsusf_M1078A1P2_fmtv_usarmy: rhsusf_fmtv_base
 	{
 	};
-	
 	class rhsusf_M1083A1P2_fmtv_usarmy: rhsusf_M1078A1P2_fmtv_usarmy
 	{
 		antiRollbarForceLimit = 0;
@@ -648,6 +651,7 @@
 	 
 	class rhsusf_M1083A1P2_B_fmtv_usarmy: rhsusf_M1083A1P2_fmtv_usarmy
 	{
+		class Turrets;
 		class Wheels:Wheels
 		{
 			class L1:L1
@@ -689,6 +693,102 @@
 		};
 	};
 	
+	
+	class rhsusf_M1078A1P2_B_fmtv_usarmy: rhsusf_M1078A1P2_fmtv_usarmy
+	{
+		class Turrets;
+	};
+	class rhsusf_M1078A1P2_B_M2_fmtv_usarmy: rhsusf_M1078A1P2_B_fmtv_usarmy
+	{
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			
+			class M2_Turret: NewTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 8;
+			};
+		};
+	};
+	class rhsusf_M1078A1R_SOV_M2_D_fmtv_socom: rhsusf_M1078A1P2_B_M2_fmtv_usarmy
+	{
+		maximumLoad = 9000;
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			
+			class M2_Turret: NewTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 8;
+			};
+		};
+	};
+	class rhsusf_M1083A1P2_B_M2_fmtv_usarmy: rhsusf_M1083A1P2_B_fmtv_usarmy
+	{
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			
+			class M2_Turret: NewTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 8;
+			};
+		};
+	};
+	
+	class rhsusf_M1084A1P2_B_M2_fmtv_usarmy: rhsusf_M1083A1P2_B_M2_fmtv_usarmy
+	{
+		
+	};
+	class rhsusf_M1084A1R_SOV_M2_D_fmtv_socom: rhsusf_M1084A1P2_B_M2_fmtv_usarmy
+	{
+		maximumLoad = 9000;
+		class NewTurret;
+		class Turrets: Turrets
+		{
+			
+			class M2_Turret: NewTurret
+			{
+				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 8;
+			};
+		};
+	};
 	class rhsusf_caiman_base : Truck_01_base_F
 	{
 		antiRollbarForceLimit = 0;
@@ -1114,6 +1214,7 @@
 
 	class rhsusf_stryker_base: Wheeled_APC_F
 	{
+		maximumLoad = 6000;
 		frontbias = 0.8;
 		rearbias = 1.7;
 		class Wheels
@@ -1127,9 +1228,9 @@
 			//	springStrength = 155000;
 			//	springDamperRate = 8000;
 				longitudinalStiffnessPerUnitGravity = 10000;
-				latStiffX = 75;
-				latStiffY = 80;
-				frictionVsSlipGraph[] = { { 0.0, 0.6 }, { 0.5, 0.45 }, { 1.0, 0.6 } };
+				latStiffX = 45;
+				latStiffY = 130;
+				frictionVsSlipGraph[] = { { 0.0, 0.4 }, { 0.5, 0.35 }, { 1.0, 0.6 } };
 			};
 			class L2:L1
 			{
@@ -1175,6 +1276,99 @@
        };
 	};
 
+	
+	class rhsusf_stryker_m1126_base: rhsusf_stryker_base
+	{
+		class MainTurret;
+	};
+	
+	class rhsusf_stryker_m1127_base: rhsusf_stryker_m1126_base
+	{
+		class Turrets: Turrets
+		{
+			class Turret_Weapon: MainTurret
+			{
+				//no safe mode for this, because the firemode button switches between the gun and the optic
+				weapons[] = {"UK3CB_BAF_Landrover_L111A1","rhsusf_weap_M6"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd","rhsusf_mag_L8A3_16"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 5;
+			};
+		};
+		class emptyclass
+		{};
+		class Transportitems: emptyclass
+		{};
+		class TransportWeapons: emptyclass
+		{};
+		class TransportBackpacks: emptyclass
+		{};
+	};
+	
+	class rhsusf_stryker_m1126_m2_base: rhsusf_stryker_m1126_base
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				//no safe mode for this, because the firemode button switches between the gun and the optic
+				weapons[] = {"UK3CB_BAF_Landrover_L111A1","rhsusf_weap_M6"};
+				magazines[] = {"UK3CB_BAF_127_100Rnd","rhsusf_mag_L8A3_16"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_127_100Rnd";
+				count = 5;
+			};
+		};
+		class emptyclass
+		{};
+		class Transportitems: emptyclass
+		{};
+		class TransportWeapons: emptyclass
+		{};
+		class TransportBackpacks: emptyclass
+		{};
+	};
+	
+	class rhsusf_stryker_m1126_mk19_base: rhsusf_stryker_m1126_base
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				//no safe mode for this, because the firemode button switches between the gun and the optic
+				weapons[] = {"UK3CB_BAF_L134A1_vehicle","rhsusf_weap_M6"};
+				magazines[] = {"UK3CB_BAF_32Rnd_40mm_G_Box","rhsusf_mag_L8A3_16"};
+			};
+		};
+		class TransportMagazines
+		{
+			class _xx_127
+			{
+				magazine = "UK3CB_BAF_32Rnd_40mm_G_Box";
+				count = 7;
+			};
+		};
+		class emptyclass
+		{};
+		class Transportitems: emptyclass
+		{};
+		class TransportWeapons: emptyclass
+		{};
+		class TransportBackpacks: emptyclass
+		{};
+	};
+	
 	class rhs_btr_base: Wheeled_Apc_F {
 		class Wheels
 		{
@@ -2043,7 +2237,7 @@
 				count = 10;
 			};
 		};
-		maximumLoad = 4000;
+		maximumLoad = 6000;
 		class Transportitems
 		{};
 		class TransportWeapons
@@ -2097,7 +2291,7 @@
 				count = 10;
 			};
 		};
-		maximumLoad = 4000;
+		maximumLoad = 6000;
 		class Transportitems
 		{};
 		class TransportWeapons
@@ -2124,7 +2318,6 @@
 				count = 10;
 			};
 		};
-		maximumLoad = 4000;
 		class Transportitems
 		{};
 		class TransportWeapons
@@ -2721,7 +2914,7 @@
 	class rhsusf_M1239_Deploy_base: rhsusf_M1239_CROWS_base {
 		
 		class Turrets;
-		maximumLoad = 6000;
+		maximumLoad = 7000;
 	};
 	class rhsusf_M1239_M2_Deploy_socom_d: rhsusf_M1239_Deploy_base {
 		
