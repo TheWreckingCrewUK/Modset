@@ -6,6 +6,8 @@ if !((_simEvents select 0) params ["_nextEventTime", "_nextEventCount", "_nextEv
 	false
 };
 
+if (!((_destination select 2) canAdd [_nextEventClassname, _nextEventCount])) exitwith { false };
+
 // Wait till next tick, as we're guchi here
 if (_nextEventTime > _elapsedTime) exitWith { true };
 _result = false;

@@ -5,11 +5,9 @@ _targetDisplayName = getText (configFile >> "CfgVehicles" >> typeOf _target >> "
 _destinationDisplayName = getText (configFile >> "CfgVehicles" >> typeOf (_destination select 2) >> "displayName");
 
 private _structuredOutputText = if (_errorCode == 0) then {
-	private _transferedText = format ["Contents transferred from %1 to %2", _targetDisplayName, _destinationDisplayName];
-	format ["<t align='center'>%1</t><br/>%2<br/>", "Transfer Complete", _transferedText];
+	parsetext (("<t align='center'><t size='1.5'><t color='#ffbf00'>Transfer Complete</t></t></t><br/>Contents transferred from ") + _targetDisplayName + " to " + _destinationDisplayName);
 } else {
-	private _transferedText = format ["Transfer halted from %1 to %2", _targetDisplayName, _destinationDisplayName];
-	format ["<t align='center'>%1</t><br/>%2<br/>", "Transfer Interrupted", _transferedText];
+	parsetext (("<t align='center'><t size='1.5'><t color='#ff0000'>Transfer Interrupted</t></t></t><br/>Transfer halted from ") + _targetDisplayName + " to " + _destinationDisplayName);
 };
 
 [_structuredOutputText, false, 2.5] call ace_common_fnc_displayText;
