@@ -1018,22 +1018,46 @@
 		recoil = "twc_mg_762";
 		recoilProne = "twc_mg_prone";
 		twc_openbolt = 1;
+		magazines[] = {"UK3CB_BAF_762_100Rnd","UK3CB_BAF_762_100Rnd_Blank","UK3CB_BAF_762_100Rnd_T","UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_Blank","UK3CB_BAF_762_200Rnd_T","rhsusf_50Rnd_762x51","rhsusf_50Rnd_762x51_m61_ap","rhsusf_50Rnd_762x51_m62_tracer","rhsusf_50Rnd_762x51_m80a1epr","rhsusf_50Rnd_762x51_m82_blank","rhsusf_100Rnd_762x51","rhsusf_100Rnd_762x51_m61_ap","rhsusf_100Rnd_762x51_m62_tracer","rhsusf_100Rnd_762x51_m80a1epr","rhsusf_100Rnd_762x51_m82_blank","rhsusf_50Rnd_762x51_m993","rhsusf_100Rnd_762x51_m993","TWC_UK3CB_BAF_762_50Rnd","TWC_UK3CB_BAF_762_50Rnd_T"};
 		class WeaponSlotsInfo {
 			class asdg_OpticRail_UK3CB_BAF_L7A2 { };
 		};
 		class fullauto: mode_fullauto
 		{
 			reloadTime = 0.08;
-			dispersion = 0.0005;
+			dispersion = 0.0008;
 		};
-		
+/*		
 		//burst system. first shot is usually a bit off, then good accuracy from rounds 2-5, then it starts to degrade as the barrel vibrates
 		class EventHandlers: EventHandlers {
 			fired = "_unit = _this select 0; if (!local _unit) exitwith {}; if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};twc_gpmglastfired = time;";
 		};
+*/
 	};
 	
-	class twc_L7A2: UK3CB_BAF_L7A2 {};
+		class UK3CB_BAF_L110_Base:Rifle_Long_Base_F
+	{
+		ace_overheating_allowSwapBarrel = 1;
+		ace_overheating_mrbs = 2900;
+		ace_overheating_dispersion = 1.1;
+		ace_overheating_slowdownFactor = 1.2;
+	//	class eventhandlers;
+		twc_openbolt = 1;
+	};
+	class UK3CB_BAF_L110_556_Base: UK3CB_BAF_L110_Base
+	{
+		recoil = "twc_mg_556";
+		recoilProne = "twc_mg_556_prone";
+		class FullAuto: Mode_FullAuto {
+			dispersion = 0.0016;
+		};
+/*
+		//burst system. first shot is usually a bit off, then good accuracy from rounds 2-5, then it starts to degrade as the barrel vibrates
+		class EventHandlers: EventHandlers {
+			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);if (_mult > 0) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};};twc_gpmglastfired = time;";
+		};
+*/
+	};
 	
 	class rhs_pkp_base: Rifle_Long_Base_F
 	{
@@ -1122,28 +1146,5 @@
 		{
 			aiRateOfFire = 1;
 			burstRangeMax = 5;
-		};
-	};
-
-	class UK3CB_BAF_L110_Base:Rifle_Long_Base_F
-	{
-		ace_overheating_allowSwapBarrel = 1;
-		ace_overheating_mrbs = 2900;
-		ace_overheating_dispersion = 1.1;
-		ace_overheating_slowdownFactor = 1.2;
-	//	class eventhandlers;
-		twc_openbolt = 1;
-	};
-	class UK3CB_BAF_L110_556_Base: UK3CB_BAF_L110_Base
-	{
-		recoil = "twc_mg_556";
-		recoilProne = "twc_mg_556_prone";
-		class FullAuto: Mode_FullAuto {
-			dispersion = 0.0015;
-		};
-		
-		//burst system. first shot is usually a bit off, then good accuracy from rounds 2-5, then it starts to degrade as the barrel vibrates
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);if (_mult > 0) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};};twc_gpmglastfired = time;";
 		};
 	};
