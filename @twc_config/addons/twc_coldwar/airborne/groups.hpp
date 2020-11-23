@@ -191,6 +191,68 @@ class TWC_Groups_ColdWar_Airborne_Woodland
 				position[] = {2,0,0};
 		};
 	};
+	class Section_Falklands
+	{
+		name = "Section Falklands";
+		faction = "TWC_ColdWar";
+		side = 1;
+		class Unit0
+		{
+				side = 1;
+				vehicle = "TWC_Infantry_ColdWar_Airborne_Woodland_SectionCommander";
+				rank = "SERGEANT";
+				position[] = {0,0,0};
+		};
+		class Unit1
+		{
+				side = 1;
+				vehicle = "TWC_Infantry_ColdWar_Airborne_Woodland_Rifleman_SUIT";
+				rank = "PRIVATE";
+				position[] = {2,0,0};
+		};
+		class Unit2
+		{
+				side = 1;
+				vehicle = "TWC_Infantry_ColdWar_Airborne_Woodland_MG";
+				rank = "PRIVATE";
+				position[] = {4,0,0};
+		};
+		class Unit3
+		{
+				side = 1;
+				vehicle = "TWC_Infantry_ColdWar_Airborne_Woodland_ASSMG";
+				rank = "PRIVATE";
+				position[] = {6,0,0};
+		};
+		class Unit4
+		{
+				side = 1;
+				vehicle = "TWC_Infantry_ColdWar_Airborne_Woodland_2iC";
+				rank = "CORPORAL";
+				position[] = {8,0,0};
+		};
+		class Unit5
+		{
+				side = 1;
+				vehicle = "TWC_Infantry_ColdWar_Airborne_Woodland_Rifleman";
+				rank = "PRIVATE";
+				position[] = {10,0,0};
+		};
+		class Unit6
+		{
+				side = 1;
+				vehicle = "TWC_Infantry_ColdWar_Airborne_Woodland_MG";
+				rank = "PRIVATE";
+				position[] = {12,0,0};
+		};
+		class Unit7
+		{
+				side = 1;
+				vehicle = "TWC_Infantry_ColdWar_Airborne_Woodland_ASSMG";
+				rank = "PRIVATE";
+				position[] = {14,0,0};
+		};
+	};
 };
 class TWC_Groups_ColdWar_Airborne_Desert
 {

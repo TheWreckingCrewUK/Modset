@@ -224,3 +224,17 @@ class TWC_AmmoBox_Engineer_Portable: TWC_AmmoBox_Portable {
 		item_nc(ACE_Sandbag_empty, 200);
 	};
 };
+
+class TWC_AmmoBox_Other_Sergeant_Utility: TWC_AmmoBox_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Sergeant Utility Box";
+	class TransportItems {
+		item_nc(ACE_Clacker,1);
+		item_nc(DemoCharge_Remote_Mag, 5);
+		item_nc(ACE_wirecutter,1);
+		item_nc(ACE_EntrenchingTool,2);
+		item_nc(ACE_CableTie,5);
+		
+	};
+};

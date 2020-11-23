@@ -33,6 +33,22 @@ class CfgVehicles {
 					priority = 1;
 					icon="";
 				};
+				class TWC_Convert_50_To_100 {
+					displayname = "Link 50 Rnd Belts Together";
+					condition = "'TWC_UK3CB_BAF_762_50Rnd' in (magazines player) || 'TWC_UK3CB_BAF_762_50Rnd_T' in (magazines player)";
+					statement = "[player,'AinvPknlMstpSnonWnonDr_medicUp0S',0,false] call ace_common_fnc_doAnimation;[5, [], {[player] spawn twc_weapons_fnc_convert50To100;}, {}, 'Converting Belts... Check Floor When done'] call ace_common_fnc_progressBar;";
+					showDisabled = 0;
+					priority = 1;
+					icon="";
+				};
+				class TWC_Convert_100_To_50{
+					displayname = "Convert 100Rnd Belts to 50s";
+					condition = "'UK3CB_BAF_762_100Rnd' in (magazines player) || 'UK3CB_BAF_762_100Rnd_T' in (magazines player)";
+					statement = "[player,'AinvPknlMstpSnonWnonDr_medicUp0S',0,false] call ace_common_fnc_doAnimation;[5, [], {[player] spawn twc_weapons_fnc_convert100To50;}, {}, 'Converting Belts... Check Floor When done'] call ace_common_fnc_progressBar;";
+					showDisabled = 0;
+					priority = 1;
+					icon="";
+				};
 			};
 		};
 	};
@@ -85,6 +101,8 @@ class CfgFunctions {
 			file="twc_weapons\functions";
 			class assembleFieldTent {};
 			class disassembleFieldTent {};
+			class convert50To100 {};
+			class convert100To50 {};
 		};
 	};
 };
