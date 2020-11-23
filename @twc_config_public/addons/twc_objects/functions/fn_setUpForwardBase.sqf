@@ -44,7 +44,7 @@ _locstat setDir ((getDir _table)+210);
 [_table, false] call ace_dragging_fnc_setDraggable;
 [_distanceGenerator select 0,false] call ace_dragging_fnc_setDraggable;
 [_table, -1] call ace_cargo_fnc_setSize;
-_table setVariable ["twc_forwardBaseDeployed",true];
+_table setVariable ["twc_forwardBaseDeployed",true,true];
 
 
 _return = "Patrol Base Created Successfully";
@@ -87,7 +87,7 @@ _radio attachTo [_table,[0,0,1.5]];
 _radio setDir ((getDir _table)+270);
 [_table, false] call ace_dragging_fnc_setDraggable;
 [_distanceGenerator select 0,false] call ace_dragging_fnc_setDraggable;
-_table setVariable ["twc_forwardBaseDeployed",true];
+_table setVariable ["twc_forwardBaseDeployed",true,true];
 _return = "Patrol Base Created Successfully";
 _return;
 
