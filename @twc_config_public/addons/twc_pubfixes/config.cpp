@@ -7,6 +7,7 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		
 		requiredAddons[] = {
+			"A3_Data_F",
 			"ace_medical",
 			"ace_medical_menu",
 			"TWC_Core",
@@ -35,12 +36,34 @@ class CfgPatches {
 //#include "CfgAmmo.hpp"
 //#include "CfgWeapons.hpp"
 #include "qol.hpp"
-//#include "CfgVehicles.hpp"
+#include "CfgVehicles.hpp"
 //#include "CfgMagazines.hpp"
 //#include "ACE_Medical_Actions.hpp"
 //#include "ACE_Medical_Advanced.hpp"
 
 
+
+class CfgFunctions {
+	class twc_winch {
+		class functions {
+			file = "twc_pubfixes\functions";
+			
+			class pickupwinchcond {};
+			class pickupwinch {};
+			class attachwinchcond {};
+			class attachwinch {};
+			class stowwinchcond {};
+			class stowwinch {};
+			class startwinchcond {};
+			class startwinch {};
+			class cancelwinchcond {};
+			class cancelwinch {};
+			class recovervehicle {};
+			class recovervehicle_addpusher {};
+			class recovervehicle_removepusher {};
+		};
+	};
+};
 
 
 
