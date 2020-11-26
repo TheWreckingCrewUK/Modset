@@ -32,14 +32,7 @@
 		class EventHandlers;
 	};
 	
-	class launch_NLAW_F: Launcher_Base_F {
-		ace_overpressure_angle = 30;
-		ace_overpressure_range = 10;
-		ace_overpressure_damage = 0.7;
-		class EventHandlers;
-	};
-	
-	
+	class launch_NLAW_F;	
 	class ACE_launch_NLAW_ready_F: launch_NLAW_F
 	{
 		class EventHandlers: EventHandlers {
@@ -59,57 +52,6 @@
 			Burst = 1;
 		};
 	};
-	
-	class Default;
-	class CannonCore: Default
-	{
-		class eventhandlers;
-	};
-	
-	class autocannon_Base_F: CannonCore
-	{
-		
-		
-		class HE;
-	};
-	
-	
-	
-	class gatling_30mm_base: CannonCore
-	{
-		class EventHandlers;
-		class Mode_FullAuto;
-		class manual;
-	};
-	
-	class UK3CB_gatling_30mm_base: gatling_30mm_base
-	{
-		modes[] = {"Burst50","close","short","medium","far"};
-		class Burst10;
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
-		};
-	};
-	
-	class UK3CB_BAF_CannonM230: UK3CB_gatling_30mm_base
-	{
-		class Burst20:Burst10
-		{
-			dispersion=0.012;
-		};
-	};
-	
-	class CUP_Vacannon_M230_veh: CannonCore
-	{
-		class manual: CannonCore
-		{
-			dispersion=0.012;
-		};
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
-		};
-	};
-	
 	
 	
 	class RifleCore;
@@ -153,19 +95,6 @@
 			autoReload = 1;
 		};
 	};
-	/*
-	class weapon_Cannon_Phalanx: CannonCore
-	{
-		class manual: CannonCore {
-			soundContinuous = 1;
-			soundBurst = 0;
-			class StandardSound {
-			begin1[] = {"A3\Sounds_F\arsenal\weapons_vehicles\gatling_30mm\30mm_01_burst",5.62341,1,1500,[25704,32159]};
-			soundBegin[] = {"begin1",1};
-			};
-		};
-	};
-	*/
 	
 	class CUP_arifle_M16_Base: Rifle_Base_F
 	{
@@ -484,9 +413,6 @@
 		maxrangeprobab=0.9;
 
 		magazines[] = {"CUP_PG7V_M", "CUP_PG7VM_M", "CUP_PG7VL_M", "CUP_PG7VR_M", "CUP_OG7_M", "CUP_TBG7V_M", "twc_og7_c_m"};
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};_mult = 1; if (isplayer (_this select 0)) then {_mult = 0.2};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 16) - 8) * _mult), (velocity _bullet select 1) + (((random 16) - 8) * _mult), 	(velocity _bullet select 2) + (((random 8) - 3) * _mult)];";
-		};
 	};
 	
 	class GM6_base_F;
@@ -608,29 +534,6 @@
 				slot="CowsSlot";
 				item="cup_optic_leupoldmk4";
 			};
-		};
-	};
-	
-	
-	class MGunCore;
-	class MGun: MGunCore
-	{
-		class eventhandlers;
-		class mode_fullauto;
-		class manual;
-	};
-	class GMG_F: MGun
-	{
-		reloadtime = 0.22;
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};[_this select 6, _this select 0] call twc_fnc_aps; if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > (twc_gpmglastfired + 0.5)) then {twc_gpmglastfiredmult = 0;};twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.3);_mult = (((floor twc_gpmglastfiredmult) min 5));_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 4) - 2)* ((_mult) max 1.5)), (velocity _bullet select 1) + (((random 4) - 2)* ((_mult) max 1.5)), 	(velocity _bullet select 2) + (((random 4) - 2)* ((_mult) max 0.8))];twc_gpmglastfired = time;";
-		};
-	};
-	
-	
-	class LMG_RCWS: MGun {
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};twc_gpmglastfired = time;";
 		};
 	};
 	
@@ -999,14 +902,6 @@
 			dispersion = 0.001;
 		};
 	};
-	/*
-	class Rifle_Long_Base_F:Rifle_Base_F
-	{
-		class eventhandlers;
-	};
-	
-	*/
-	
 	
 	
 	//for barrel swapping, put a ACE_SpareBarrel in the player's inventory
@@ -1027,12 +922,7 @@
 			reloadTime = 0.08;
 			dispersion = 0.0008;
 		};
-/*		
-		//burst system. first shot is usually a bit off, then good accuracy from rounds 2-5, then it starts to degrade as the barrel vibrates
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {}; if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};twc_gpmglastfired = time;";
-		};
-*/
+
 	};
 	
 		class UK3CB_BAF_L110_Base:Rifle_Long_Base_F
@@ -1051,55 +941,8 @@
 		class FullAuto: Mode_FullAuto {
 			dispersion = 0.0016;
 		};
-/*
-		//burst system. first shot is usually a bit off, then good accuracy from rounds 2-5, then it starts to degrade as the barrel vibrates
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);if (_mult > 0) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};};twc_gpmglastfired = time;";
-		};
-*/
-	};
-	
-	class rhs_pkp_base: Rifle_Long_Base_F
-	{
-		ace_overheating_allowSwapBarrel = 1;
-		ace_overheating_mrbs = 3500;
-		ace_overheating_dispersion = 1.0;
-		ace_overheating_slowdownFactor = 1.5;
-		//burst system. first shot is usually a bit off, then good accuracy from rounds 2-5, then it starts to degrade as the barrel vibrates
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};twc_gpmglastfired = time;";
-		};
-	};
-	
-	class rhs_weap_saw_base: Rifle_Base_F
-	{
-		ace_overheating_allowSwapBarrel = 1;
-		ace_overheating_mrbs = 2900;
-		ace_overheating_dispersion = 1.1;
-		ace_overheating_slowdownFactor = 1.2;
-		//burst system. first shot is usually a bit off, then good accuracy from rounds 2-5, then it starts to degrade as the barrel vibrates
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};twc_gpmglastfired = time;";
-		};
-	};
-	class LMG_Mk200_F;
-	//this is actually just the M240
-	class rhs_weap_M249_base: LMG_Mk200_F
-	{
-		class EventHandlers;
-	};
-	class rhs_weap_m240_base: rhs_weap_M249_base
-	{
-		ace_overheating_allowSwapBarrel = 1;
-		ace_overheating_dispersion = 1.1;
-		ace_overheating_slowdownFactor = 1.5;
-		//burst system. first shot is usually a bit off, then good accuracy from rounds 2-5, then it starts to degrade as the barrel vibrates
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};twc_gpmglastfired = time;";
-		};
-	};
-	
-	
+
+	};	
 	
 	//for barrel swapping, put a ACE_SpareBarrel in the player's inventory
 	
@@ -1110,10 +953,6 @@
 		ace_overheating_mrbs = 3500;
 		ace_overheating_dispersion = 1.0;
 		ace_overheating_slowdownFactor = 1.5;
-		//burst system. first shot is usually a bit off, then good accuracy from rounds 2-5, then it starts to degrade as the barrel vibrates
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};twc_gpmglastfired = time;";
-		};
 		class manual: mode_fullauto
 		{
 			

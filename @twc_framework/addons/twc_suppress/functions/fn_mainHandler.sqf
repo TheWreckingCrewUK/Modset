@@ -4,7 +4,7 @@
 private _deleted = false;
 
 {
-	_x params ["_projectile", "_dDist", "_hit", "_shooter"];
+	_x params ["_projectile", "_dDist", "_hit"];
 	
 	if !(alive _projectile) then {
 		TWC_Suppress_Queue set [_forEachIndex, objNull];
@@ -13,26 +13,18 @@ private _deleted = false;
 		if ((player distance _projectile) <= _dDist) then {
 			private _divisor = OH_DIV;
 			private _pPos = getPosATL _projectile;
-			private _lis = lineIntersectsSurfaces [eyePos _shooter, eyePos player, player, _shooter];
-		//	systemchat (str _lis);
-			if (!(_lis isEqualTo [])) then {
-				_dDist = _dDist * 0.7;
-				_hit = (_hit * 0.2);
-				//systemchat "cover";
-			} else {
-				if (isWeaponDeployed player) then { _hit = _hit - (_hit * 0.3); };
-			};
+			private _lis = lineIntersectsSurfaces [ATLToASL _pPos, eyePos player, player];
+			if (_lis isEqualTo []) then { _dDist = _dDist * 0.5; };
+			if (isWeaponDeployed player) then { _hit = _hit - (_hit / 3.5); };
 			_hit = _hit / TWC_Suppress_modifier;
-		//	systemchat (str ([(_pPos distance player), _dDist]));
-			_hitdistance = (_pPos distance player);
 			
-			if (_hitdistance <= 10) then {
-				_shooterdistance = (_shooter distance player);
-				[_hitdistance, _shooterdistance] call TWC_Suppress_fnc_impact;
-			};
-			if (_hitdistance <= _dDist) then {
+			if ((_pPos distance player) <= _dDist) then {
 				_divisor = IM_DIV;
 				TWC_Suppress_lastShotTime = time;
+				
+				if ((_pPos distance player) <= 2) then {
+					[] call TWC_Suppress_fnc_impact;
+				};
 			};
 			
 			if (_divisor != 0) then {

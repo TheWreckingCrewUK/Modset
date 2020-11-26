@@ -12,7 +12,7 @@ if (TWC_Suppress_threshold >= MIN_THRESHOLD) then {
 	TWC_Suppress_blur ppEffectAdjust [(_power * 1.2)];
 	TWC_Suppress_blur ppEffectCommit 0.5;
 	
-	TWC_Suppress_cc ppEffectAdjust [1, (1 + (_power * 0.1)), (0 - (_power * 0.2)), [0, 0, 0, 0], [0.7, 0.7, 0.7, (1 - (_power * 0.2))], [1, 1, 1, 1]];
+	TWC_Suppress_cc ppEffectAdjust [1, 1, 0, [0,0,0,0], [1,1,1,(1 - (_power * 0.2))],[1,1,1,0]];
 	TWC_Suppress_cc ppEffectCommit 0.5;
 	
 	TWC_Suppress_radialBlur ppEffectAdjust [(_power * 0.011), (_power * 0.011), 0.2, 0.2];
