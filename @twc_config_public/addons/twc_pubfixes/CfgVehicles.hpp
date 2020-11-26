@@ -1,6 +1,18 @@
 
 class CfgVehicles {
+	class APC_Tracked_02_base_F;
+	class rhs_zsutank_base:APC_Tracked_02_base_F
+	{
+		armor = 150;
+		armorstructural = 450;
+	};
 	
+	class Tank_F;
+	class rhs_a3t72tank_base: Tank_F
+	{
+		armor = 250;
+	};
+
 	class LandVehicle;
 	class Car: LandVehicle {
 		class ACE_Actions {

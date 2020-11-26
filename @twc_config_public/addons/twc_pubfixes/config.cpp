@@ -34,7 +34,7 @@ class CfgPatches {
 };
 
 //#include "CfgAmmo.hpp"
-//#include "CfgWeapons.hpp"
+#include "CfgWeapons.hpp"
 #include "qol.hpp"
 #include "CfgVehicles.hpp"
 //#include "CfgMagazines.hpp"
