@@ -138,3 +138,68 @@ if (player != _unit) exitWith {};
 
 waitUntil { sleep 0.5; !(isNull player) };
 waitUntil { sleep 1.271; time > 0 };
+
+openBoltFnc = {
+	if (!hasinterface) exitwith {};
+	_openbolt = [(configFile >> "CfgWeapons" >> (primaryweapon player)), "twc_openbolt", 0] call BIS_fnc_returnConfigEntry;
+
+	if (_openbolt > 0) then {
+		_openboltcoef = [(configFile >> "CfgWeapons" >> (primaryweapon player)), "twc_openbolt_coef", 1] call BIS_fnc_returnConfigEntry;
+
+		[{
+			if (random 1 < 0.5) then {
+				[player, primaryweapon player] call ace_overheating_fnc_jamWeapon;
+			};
+			[] call openBoltFnc;
+		}, [], (random (6000 / _openboltcoef)) + 200] call CBA_fnc_waitAndExecute;
+	} else {
+		[{ [] call openBoltFnc; }, [], 900] call CBA_fnc_waitAndExecute;
+	};
+};
+
+[] call openBoltFnc;
+
+
+//transonic ballistic instability. Means subguns/pistols don't stay accurate beyond 150-200m and 556 rifles can't plink at 900m if you get a good enough scope and some tracers. Also means that longer barrel weapons like the L86 can reach out further, because their higher muzzle velocity means they stay supersonic for longer
+
+player addEventHandler ["Fired", { 
+	params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+	if (!(_unit == player)) exitwith {};
+	if (!((vehicle player) == player)) exitwith {};
+
+	//I haven't noticed a performance hit, but don't poke the bear if they're struggling already
+	if (diag_fps < 15) exitwith {};
+
+	//if it's much slower than the speed of sound, no buffeting necessary. for ugl's and the like
+	if ((speed _projectile) < 950) exitwith {};
+
+	[_projectile, _ammo] spawn {
+		params ["_projectile", "_ammo"];
+
+		// wait until the bullet is passing through the sound barrier or it's gone
+		waituntil {((((speed _projectile) < 1500))) || (!alive _projectile)};
+		if (!alive _projectile) exitwith {}; 
+
+		//caliber detection. 'Caliber' in config is often set up weird to help with penetration, so use hit instead. Multiplies the buffeting by how chunky the bullet is and how far it's gone already to differntiate between high and low velocity bullets
+		_mult = (((((((player distance _projectile) * -1) + 2000) * 0.0006) - (((getNumber (configFile >> "CfgAmmo" >> _ammo >> "hit")) - 5) * 0.1)) max 0.01) min (missionnamespace getvariable ["tlimit", 0.5]));
+
+
+		//systemchat ("transonic at " + (str(player distance _projectile)) + "m with a mult of " + (str _mult));
+
+		//start buffeting. small modifier first, then ramps up to full after a second or two
+		_mods = 0;
+		while {alive _projectile} do {
+			//if it's passed completely through the sound barrier, stop buffeting
+			if ((speed _projectile) < 900) exitwith {};
+			_projectile setvelocity [(velocity _projectile select 0) + (((random 8) - 4) * (_mult * _mods)), (velocity _projectile select 1) + (((random 8) - 4) * (_mult * _mods)), 	(velocity _projectile select 2) + (((random 4) - 2) * (_mult * _mods))];
+
+			sleep (random 0.4);
+
+			if (_mods < 1) then {
+				_mods = _mods + 0.2;
+			};
+		};
+	};
+}];
+
+

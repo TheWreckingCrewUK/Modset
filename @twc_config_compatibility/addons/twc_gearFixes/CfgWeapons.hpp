@@ -32,7 +32,9 @@
 		class EventHandlers;
 	};
 	
-	class launch_NLAW_F;	
+	class launch_NLAW_F: Launcher_Base_F {
+		class EventHandlers;
+	};	
 	class ACE_launch_NLAW_ready_F: launch_NLAW_F
 	{
 		class EventHandlers: EventHandlers {
@@ -70,7 +72,7 @@
 		class eventhandlers;
 	};
 	
-	
+	class autocannon_Base_F;
 	
 	class autocannon_30mm_CTWS: autocannon_Base_F {
 	};
