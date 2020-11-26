@@ -98,7 +98,6 @@ class CfgPatches {
 			"TWC_gearFixes",
 			"A3_Boat_F_Exp_Boat_Transport_01",
 			"A3_Boat_F_Exp_Boat_Transport_02",
-			"burnes_foxhound",
 			"UK3CB_BAF_Vehicles_Apache",
 			"UK3CB_BAF_Vehicles_Wildcat",
 			"UK3CB_BAF_Vehicles_Merlin",
