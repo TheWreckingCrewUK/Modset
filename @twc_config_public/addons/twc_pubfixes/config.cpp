@@ -63,6 +63,13 @@ class CfgFunctions {
 			class recovervehicle_removepusher {};
 		};
 	};
+	class twc_pubfixes {
+		class functions {
+			file = "twc_pubfixes\functions";
+			
+			class flipdamage {};
+		};
+	};
 };
 
 

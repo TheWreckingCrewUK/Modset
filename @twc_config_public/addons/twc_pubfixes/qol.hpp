@@ -9,9 +9,28 @@ class Extended_HitPart_EventHandlers {
 	};
 };
 
+class Extended_EpeContactStart_EventHandlers
+{
+	class landvehicle
+	{
+		class flipdamage
+		{
+			EpeContactStart = "params ['_vehicle', '_object2', '_selection1', '_selection2', '_force']; if (_force < 5) exitwith {}; if (((vectorUp _vehicle) vectorDistance (surfaceNormal getPosATL _vehicle)) < 1) exitwith {};{if (isplayer _x) then {[_x, _force] remoteexec ['twc_pubfixes_fnc_flipdamage', _x];};} foreach (crew _vehicle);";
+		};
+	};
+};
+
 //center of gravity improvements
 class Extended_Init_EventHandlers
 {
+	class LandVehicle
+	{
+		//CBA's XEH for epecontact start doesn't work unless something else runs off it beforehand, doesn't matter what
+		class flipdmg
+		{
+			serverinit = "params ['_car']; _car addeventhandler ['EpeContactStart', {}]";
+		};
+	};
 	class RHS_Ural_BaseTurret
 	{
 		class cog
