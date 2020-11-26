@@ -17,7 +17,7 @@ _ndamage = (((((_damage max 0.3) - 0.3) ) * 0.2) + 0.3);
 
 _damage = _ndamage max _damage;
 
-_part = selectrandom ["head", "hand_l", "hand_r", "leg_l", "leg_r"];
+_part = selectrandom ["head", "head", "head", "hand_l", "hand_r", "leg_l", "leg_r"];
 
 _amount = (((_damage) min 1.5) max 0.01) * _helmetmod;
-[_player, _amount, "head", "punch"] call ace_medical_fnc_addDamageToUnit;
+[_player, _amount, _part, "punch"] call ace_medical_fnc_addDamageToUnit;
