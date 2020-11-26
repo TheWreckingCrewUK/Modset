@@ -11,5 +11,5 @@ if ((side effectiveCommander (vehicle _unit)) != (side (vehicle player))) then {
 	if (_hit == 0) exitWith {};
 
 	_dDist = (5 + (_hit / 3)) min 28;
-	TWC_Suppress_Queue pushBack [_projectile, _dDist, _hit, _unit];
+	TWC_Suppress_Queue pushBack [_projectile, _dDist, _hit];
 };

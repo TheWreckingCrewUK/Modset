@@ -500,13 +500,6 @@
 		};
 	};
 	
-	class APC_Tracked_02_base_F;
-	class rhs_zsutank_base:APC_Tracked_02_base_F
-	{
-		armor = 150;
-		armorstructural = 450;
-	};
-	
 	class Tank;
 	class Tank_F: Tank
 	{
@@ -515,11 +508,6 @@
 			class MainTurret;
 		};
 	};
-	class rhs_a3t72tank_base: Tank_F
-	{
-		armor = 250;
-	};
-	
 	class CUP_MCV80_Base : Tank_F
 	{
 		class Turrets : Turrets
