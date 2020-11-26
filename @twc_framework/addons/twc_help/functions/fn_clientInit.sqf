@@ -2,7 +2,7 @@ params ["_player"];
 
 if (!local _player) exitWith {};
 
-#include "\a3\editor_f\Data\Scripts\dikCodes.h"
+#include "\a3\editor_f\Data\Scripts\dikCodes.h";
 
 [
 	"TWC",
