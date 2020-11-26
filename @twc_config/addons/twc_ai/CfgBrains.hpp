@@ -9,7 +9,9 @@ class CfgBrains {
 			
 			class AIBrainAimingErrorComponent {
 				lostTargetTimeMin = 0.2;
-				turningInfluence = 1.1;
+				lostTargetTimeMax = 5;
+				turningInfluence = 1.3;
+				fatigueCoef = 5;
 			};
 		};
 	};
