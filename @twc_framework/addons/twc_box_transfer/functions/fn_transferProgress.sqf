@@ -6,8 +6,6 @@ if !((_simEvents select 0) params ["_nextEventTime", "_nextEventCount", "_nextEv
 	false
 };
 
-if (!((_destination select 2) canAdd [_nextEventClassname, _nextEventCount])) exitwith { false };
-
 // Wait till next tick, as we're guchi here
 if (_nextEventTime > _elapsedTime) exitWith { true };
 _result = false;
@@ -18,7 +16,7 @@ if (_nextEventType == "item") then {
 	_succeeded = [_target, _nextEventClassname, _nextEventCount] call CBA_fnc_removeItemCargo;
 	
 	if (_succeeded) then {
-		_result = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call CBA_fnc_addItemCargo;
+		_result = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Core_fnc_addItemCargo;
 	};
 } else {
 	if (_nextEventType == "magazine") then {
@@ -26,7 +24,7 @@ if (_nextEventType == "item") then {
 		_succeeded = [_target, _nextEventClassname, _nextEventCount] call CBA_fnc_removeMagazineCargo;
 		
 		if (_succeeded) then {
-			_result = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call CBA_fnc_addMagazineCargo;
+			_result = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Core_fnc_addMagazineCargo;
 		};
 	} else {
 		if (_nextEventType == "weapon") then {
@@ -34,7 +32,7 @@ if (_nextEventType == "item") then {
 			_succeeded = [_target, _nextEventClassname, _nextEventCount] call CBA_fnc_removeWeaponCargo;
 			
 			if (_succeeded) then {
-				_result = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call CBA_fnc_addWeaponCargo;
+				_result = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Core_fnc_addWeaponCargo;
 			};
 		} else {
 			if (_nextEventType == "backpack") then {
@@ -42,7 +40,7 @@ if (_nextEventType == "item") then {
 				_succeeded = [_target, _nextEventClassname, _nextEventCount] call CBA_fnc_removeBackpackCargo;
 				
 				if (_succeeded) then {
-					_result = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call CBA_fnc_addBackpackCargo;
+					_result = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Core_fnc_addBackpackCargo;
 				};
 			} else {
 				systemChat format ["Error: simulatedEvent unhandled, classname: %1 eventType: %2", _nextEventClassname, _nextEventType];
