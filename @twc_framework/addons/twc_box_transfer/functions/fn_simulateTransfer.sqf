@@ -27,5 +27,5 @@ private _assets = [_vehicle] call TWC_Core_fnc_getCargo;
 	_time = (_totaltime);
 	_events pushBack [_time, _count, _count, _classname, _type];
 } forEach _assets;
-systemchat ("total " + (str _totaltime));
+//systemchat ("total " + (str _totaltime));
 [_events, _totaltime]
