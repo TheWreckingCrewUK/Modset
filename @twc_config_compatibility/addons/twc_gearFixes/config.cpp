@@ -10,6 +10,8 @@ class CfgPatches {
 			"a3_weapons_f",
 			"cup_airvehicles_av8b",
 			"CUP_Creatures_Military_USArmy",
+			"cup_wheeledvehicles_m151",
+			"cup_wheeledvehicles_btr90",
 			"cup_wheeledvehicles_btr80",
 			"cup_wheeledvehicles_btr60",
 			"cup_wheeledvehicles_btr40",

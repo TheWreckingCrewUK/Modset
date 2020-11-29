@@ -20,4 +20,6 @@ _damage = _ndamage max _damage;
 _part = selectrandom ["head", "head", "head", "hand_l", "hand_r", "leg_l", "leg_r"];
 
 _amount = (((_damage) min 1.5) max 0.01) * _helmetmod;
-[_player, _amount, _part, "punch"] call ace_medical_fnc_addDamageToUnit;
+
+//removing the damage bit while it's not being fired on server
+//[_player, _amount, _part, "punch"] call ace_medical_fnc_addDamageToUnit;
