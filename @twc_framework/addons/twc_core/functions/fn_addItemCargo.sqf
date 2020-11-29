@@ -1,6 +1,7 @@
 params [["_container", objNull, [objNull]], ["_item", "", [""]], ["_count", 1, [0]], ["_verify", false, [false]], ["_dump", false, [false]]];
 
 private _return = [false, 0];
+private _startingCount = _count;
 
 if (isNull _container) exitWith { _return };
 if (_item isEqualTo "") exitWith { _return };
@@ -11,14 +12,14 @@ if (isNull _config || {getNumber (_config >> "scope") < 1}) exitWith { _return }
 if (_verify) then {
 	if (_container canAdd [_item, _count]) then {
 		_container addItemCargoGlobal [_item, _count];
-		_return = [true];
+		_return = [true, _count];
 	} else {
 		while {_container canAdd _item && {_count > 0}} do {
 			_container addItemCargoGlobal [_item, 1];
 			_count = _count - 1;
 		};
 		
-		_return = [false, _count];
+		_return = [false, (_startingCount - _count)];
 
 		if (_dump) then {
 			private _weaponHolder = nearestObject [_container, "WeaponHolder"];
@@ -33,7 +34,7 @@ if (_verify) then {
 	};
 } else {
 	_container addItemCargoGlobal [_item, _count];
-	_return = [true];
+	_return = [true, _count];
 };
 
 _return
