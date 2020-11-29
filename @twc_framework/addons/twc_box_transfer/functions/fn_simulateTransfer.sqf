@@ -8,9 +8,6 @@ private _time = 0;
 
 // [time, count, classname, itemtype]
 private _events = [];
-
-private _currentCargoItemIndex = 0;
-
 private _assets = [_vehicle] call TWC_Core_fnc_getCargo;
 
 {
