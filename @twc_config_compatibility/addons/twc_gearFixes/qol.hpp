@@ -4,6 +4,13 @@
 //center of gravity improvements
 class Extended_Init_EventHandlers
 {
+	class CUP_MTVR_Base
+	{
+		class cog
+		{
+			serverinit = "params ['_car']; _car setCenterOfMass [((getCenterOfMass _car) select 0),((getCenterOfMass _car) select 1),(((getCenterOfMass _car) select 2) + 0.3)]";
+		};
+	};
 	class CUP_Ural_BaseTurret
 	{
 		class cog
