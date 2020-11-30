@@ -41,6 +41,12 @@ class CfgFunctions {
 			class objectAmbientLight {};
 			class unflipVehicleQuick {};
 			
+			/** ADD TO CARGO **/
+			class addBackpackCargo {};
+			class addItemCargo {};
+			class addMagazineCargo {};
+			class addWeaponCargo {};
+			
 			/** DEBUG TOOLS **/
 			class drawBoundingBox {};
 			class boundingBoxToArray {};

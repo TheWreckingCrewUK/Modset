@@ -22,7 +22,7 @@ private _actions = [];
 
 {
 	private _displayName = getText (configFile >> "CfgVehicles" >> (typeOf _x) >> "displayName");
-	_displayName = _displayName + format [" (%1 m)", (_target distance _x)];
+	_displayName = _displayName + format [" (%1 m)", ((_target distance _x) toFixed 1)];
 	
 	private _action = [
 		_x,
