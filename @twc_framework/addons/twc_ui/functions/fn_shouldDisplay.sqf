@@ -31,8 +31,6 @@ if (_return && !(_vehicleHasSetting)) then {
 		case (_vehicle isKindOf "Tank");
 		case (_vehicle isKindOf "Helicopter");
 		case (_vehicle isKindOf "Plane");
-		case (_vehicle isKindOf "burnes_foxhound_d_a");
-		case (_vehicle isKindOf "burnes_foxhound_w_a");
 		case (_vehicle isKindOf "UK3CB_BAF_Jackal_Base_D");
 		case (_vehicle isKindOf "Ship"): { true; };
 		default { false; };

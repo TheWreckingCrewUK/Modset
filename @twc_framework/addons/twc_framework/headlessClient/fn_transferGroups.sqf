@@ -15,7 +15,7 @@ _owner = owner HC1;
 			}forEach (units _x);
 		};
 		if(_transfer)then{
-			_x setGroupOwner HC1;
+			_x setGroupOwner _owner;
 			if(isNil "twc_hc1Array")then{
 				twc_hc1Array = [];
 			};

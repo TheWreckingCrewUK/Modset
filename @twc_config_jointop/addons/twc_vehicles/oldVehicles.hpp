@@ -16,5 +16,3 @@ class twc_wildcat: TWC_Vehicle_Modern_Wildcat_RAF { scope = 1; scopeCurator = 1;
 class twc_wildcat_1990: TWC_Vehicle_Modern_Wildcat_RAF { scope = 1; scopeCurator = 1; };
 class twc_puma: TWC_Vehicle_ColdWar_Puma_RAF { scope = 1; scopeCurator = 1; };
 class TWC_fv432: TWC_Vehicle_ColdWar_FV432_Woodland { scope = 1; scopeCurator = 1; };
-class TWC_burnes_foxhound_d_a: TWC_Vehicle_Modern_Foxhound_Desert { scope = 1; scopeCurator = 1; };
-class TWC_burnes_foxhound_w_a: TWC_Vehicle_Modern_Foxhound_Woodland { scope = 1; scopeCurator = 1; };

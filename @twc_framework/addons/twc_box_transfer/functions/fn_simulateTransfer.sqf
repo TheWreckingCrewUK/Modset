@@ -1,6 +1,7 @@
 params ["_vehicle"];
 
 private _time = 0;
+private _totaltime = 0;
 
 // items take quarter a second
 // magazines take 1
@@ -21,9 +22,10 @@ private _assets = [_vehicle] call TWC_Core_fnc_getCargo;
 		default { _timeMod = 1; };
 	};
 	
-	_time = _time + (_count * _timeMod);
-	
-	_events pushBack [_time, _count, _classname, _type];
+	_time = (_timeMod);
+	_totaltime = _totaltime + (_count * _timeMod);
+	_time = (_totaltime);
+	_events pushBack [_time, _count, _count, _classname, _type];
 } forEach _assets;
-
-_events
+//systemchat ("total " + (str _totaltime));
+[_events, _totaltime]

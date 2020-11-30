@@ -40,7 +40,7 @@ while {((time < (_startimer + 60))) && (_keepwinching1) && (_keepwinching2) && (
 		_ups = ((((((vectorUp _veh) vectorDistance (surfaceNormal getPosATL _veh)) - 1) * 2) min 1) max -1); 
 	 }; 
 
-	systemchat (str _ups);
+	//systemchat (str _ups);
 	_torque = ((((_torquenum * 5) min 30) * ((getmass _veh) * 0.02))); 
 	_veh addTorque (_veh vectorModelToWorld [0,((vectorUp _veh) vectorDistance (surfaceNormal getPosATL _veh)),_torque]);
 	
