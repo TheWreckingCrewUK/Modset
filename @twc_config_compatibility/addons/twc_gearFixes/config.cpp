@@ -17,6 +17,7 @@ class CfgPatches {
 			"cup_wheeledvehicles_btr40",
 			"cup_trackedvehicles_mcv80",
 			"cup_wheeledvehicles_hilux",
+			"cup_wheeledvehicles_mtvr",
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds",
