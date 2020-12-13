@@ -27,6 +27,7 @@
 	6.4 One with owner 76561198018609662 (Sarge).
 	6.5 One with owner 76561198038415964 (Björn).
 	6.6 One with owner 76561198109984047 (Ross).
+	6.7 One with owner 76561198051847668 (Harry).
 	
 	If anyone of these is playing a command role higher than 2iC, do NOT give them a module. 
 	Recommended is saving this array of modules in a composition in game so that you only have to place down the composition and delete the ones not needed.
