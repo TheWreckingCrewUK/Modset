@@ -27,9 +27,16 @@ class ACE_Medical_Actions {
 			condition = "false"; // comment out to re-enable
 		};
 		
-		class BloodIV: FieldDressing{};
+		class BloodIV: FieldDressing{
+			displayName = "Give Blood (1500ml)";
+		};
+		
+		class BloodIV_500: BloodIV {
+			displayName = "Give Blood (750ml)";
+		};
 		
 		class BloodIV_250: BloodIV {
+			displayName = "Give Blood (375ml)";
 			allowSelfTreatment = 1;
 		};
 		
@@ -37,7 +44,16 @@ class ACE_Medical_Actions {
 			allowSelfTreatment = 1;
 		};
 		
+		class SalineIV: BloodIV {
+			displayName = "Give Saline (1250ml)";
+		};
+		
+		class SalineIV_500: BloodIV {
+			displayName = "Give Saline (625ml)";
+		};
+		
 		class SalineIV_250: BloodIV {
+			displayName = "Give Saline (300ml)";
 			allowSelfTreatment = 1;
 		};
 		
