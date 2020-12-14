@@ -1,11 +1,23 @@
-params [["_vehicle", objNull, [objNull]]];
+params [
+	["_unit", objNull, [objNull]],
+	["_vehicle", objNull, [objNull]]
+];
 
 if !(alive _vehicle) exitWith { false };
+if ((vehicle _unit) isEqualTo _vehicle) exitWith { false };
 
 private _requiredUnits = _vehicle call TWC_Unflip_fnc_requiredAmount;
 if (_requiredUnits > 5) exitWith { false };
 
-private _canFlipConfig = [(configFile >> "CfgVehicles" >> typeOf (_vehicle)), "TWC_canFlip", 1] call BIS_fnc_returnConfigEntry;
-private _canFlipVariable = _vehicle getVariable ["TWC_canFlip", 1];
+private _cachedCheckTime = _vehicle getVariable ["TWC_Unflip_isUpsideDown_Time", 0];
 
-((getMass _vehicle <= (1000 * _requiredUnits)) && (_canFlipConfig > 0 || _canFlipVariable > 0))
+if ((time - _cachedCheckTime) > 1) exitWith {
+	_upsideDown = ((vectorUp _vehicle vectorDotProduct surfaceNormal getPos _vehicle) < 0);
+	
+	_vehicle setVariable ["TWC_Unflip_isUpsideDown_Time", time];
+	_vehicle setVariable ["TWC_Unflip_isUpsideDown", _upsideDown];
+	
+	_upsideDown
+};
+
+_vehicle getVariable ["TWC_Unflip_isUpsideDown", ((vectorUp _vehicle vectorDotProduct surfaceNormal getPos _vehicle) < 0)];

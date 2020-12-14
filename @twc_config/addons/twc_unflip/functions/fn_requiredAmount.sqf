@@ -1,4 +1,4 @@
 params [["_vehicle", objNull, [objNull]]];
 
 // Every 1.5t needs a man
-((floor (getMass _vehicle / 1000)) max 1)
+ceil ((getMass _vehicle / 2000) max 1)
