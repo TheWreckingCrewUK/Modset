@@ -409,9 +409,6 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 	backpack="TWC_Backpack_ColdWar_Regular_Platoon_Medic";
 	TWC_isCommandRole = 0;
 	attendant = 1;
-	class EventHandlers: EventHandlers {
-		init = "";
-	};
 	Items[]=
 	{
 		MEDICAL_LOADOUT
