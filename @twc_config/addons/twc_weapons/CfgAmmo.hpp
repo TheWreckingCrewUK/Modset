@@ -1,9 +1,24 @@
 class CfgAmmo {
 	class GrenadeBase;
 	class G_40mm_HE: GrenadeBase {
-		hit = 6;
+		hit = 4;
 		indirectHit = 2;
 		indirectHitRange = 10;
+	};
+	
+	// Reduces bounciness of 40mm smoke
+	class SmokeShell;
+	class G_40mm_Smoke: SmokeShell {
+		simulation = "shotSmoke";
+		deflectionSlowDown = 0.2;
+	};
+	
+	// increased intensity for flare
+	class FlareBase;
+	class F_40mm_White: FlareBase {
+		intensity = 1000000; // 10x stronger than default
+		timeToLive = 45;
+		coefGravity = 0.25;
 	};
 	
 	//L118 Light Gun
