@@ -401,7 +401,7 @@ class TWC_Vehicle_Modern_Bulldog_COIN_Woodland: UK3CB_BAF_FV432_Mk3_GPMG_Green {
 
 	class TransportBackpacks { };
 };
-/*
+
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MODERN_CHALLENGER2_MOD
 class TWC_Vehicle_Modern_Challenger2_Desert: TWC_Vehicle_FV4034_Base {
@@ -424,14 +424,22 @@ class TWC_Vehicle_Modern_Challenger2_Desert: TWC_Vehicle_FV4034_Base {
 	};
 	
 	hiddenSelectionsTextures[] = {
-		"\Burnes_Challenger\data\PH\challenger2_desert_co.paa",
-		"#(argb,512,512,1)r2t(rendertarget3000,1.0)",
-		"#(argb,512,512,1)r2t(rendertarget66,1.0)",
-		"\Burnes_Challenger\data\PH\challenger2_turret_des_co.paa",
-		"\Burnes_Challenger\data\PH\challengerV2_hull_des_co.paa",
-		"\Burnes_Challenger\data\callsigns\11.paa",
-		"\Burnes_Challenger\data\callsigns\scot.paa",
-		"\Burnes_Challenger\data\PH\hatches_des_co"
+		"\CUP\TrackedVehicles\CUP_TrackedVehicles_ChallengerII\data\cup_ch2_hull_2cd_co.paa",
+		"\CUP\TrackedVehicles\CUP_TrackedVehicles_ChallengerII\data\cup_ch2_turret_2cd_co.paa",
+		"\CUP\TrackedVehicles\CUP_TrackedVehicles_ChallengerII\data\CUP_ch2_wheels_green_co.paa",
+		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_co.paa"
+	};
+	
+	textureList[] = {
+		"woodlandGreen", 0,
+		"woodlandTwoColor", 0,
+		"ctrgTropical", 0,
+		"ctrgSand", 0,
+		"desertTan", 0,
+		"desertTwoColor", 1,
+		"NATOTan", 0,
+		"winterWhite", 0,
+		"winterTwoColor", 0
 	};
 };
 
@@ -455,14 +463,60 @@ class TWC_Vehicle_Modern_Challenger2_Woodland: TWC_Vehicle_FV4034_Base {
 	};
 	
 	hiddenSelectionsTextures[] = {
-		"\Burnes_Challenger\data\PH\challenger2_woodland_co",
-		"#(argb,512,512,1)r2t(rendertarget3000,1.0)",
-		"#(argb,512,512,1)r2t(rendertarget66,1.0)",
-		"\Burnes_Challenger\data\PH\challenger2_turret_wood_co.paa",
-		"\Burnes_Challenger\data\PH\challengerV2_hull_wood_co.paa",
-		"\Burnes_Challenger\data\callsigns\11.paa",
-		"\Burnes_Challenger\data\callsigns\scot.paa",
-		"\Burnes_Challenger\data\PH\hatches_co"
+		"\CUP\TrackedVehicles\CUP_TrackedVehicles_ChallengerII\data\cup_ch2_hull_2cw_co.paa",
+		"\CUP\TrackedVehicles\CUP_TrackedVehicles_ChallengerII\data\cup_ch2_turret_2cw_co.paa",
+		"\CUP\TrackedVehicles\CUP_TrackedVehicles_ChallengerII\data\CUP_ch2_wheels_green_co.paa",
+		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_woodlnd_co.paa"
+	};
+	
+	textureList[] = {
+		"woodlandGreen", 0,
+		"woodlandTwoColor", 1,
+		"ctrgTropical", 0,
+		"ctrgSand", 0,
+		"desertTan", 0,
+		"desertTwoColor", 0,
+		"NATOTan", 0,
+		"winterWhite", 0,
+		"winterTwoColor", 0
 	};
 };
-*/
+
+class TWC_Vehicle_Modern_Challenger2_Snow: TWC_Vehicle_FV4034_Base {
+	scope = 2;
+	scopeCurator = 2;
+	side = 1;
+	ADD_FACTION;
+	
+	displayname = "Challenger 2 (Snow)";
+	editorSubcategory = "TWC_ForceType_Armoured";
+	
+	class TransportItems {
+		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
+		ADD_ITEM(ACE_elasticBandage, ADD_QNTY(SECTION_ELASTICBANDAGE));
+		ADD_ITEM(ACE_quikclot, ADD_QNTY(SECTION_QUIKCLOT));
+		ADD_ITEM(ACE_packingBandage, ADD_QNTY(SECTION_PACKINGBANDAGE));
+		ADD_ITEM(ACE_tourniquet, ADD_QNTY(SECTION_TOURNIQUET));
+		ADD_ITEM(ACE_morphine, ADD_QNTY(SECTION_MORPHINE));
+		ADD_ITEM(ACE_epinephrine, ADD_QNTY(SECTION_EPINEPHRINE));
+	};
+	
+	hiddenSelectionsTextures[] = {
+		"\CUP\TrackedVehicles\CUP_TrackedVehicles_ChallengerII\data\cup_ch2_hull_2cs_co.paa",
+		"\CUP\TrackedVehicles\CUP_TrackedVehicles_ChallengerII\data\cup_ch2_turret_2cs_co.paa",
+		"\CUP\TrackedVehicles\CUP_TrackedVehicles_ChallengerII\data\CUP_ch2_wheels_green_co.paa",
+		"\CUP\WheeledVehicles\CUP_WheeledVehicles_Jackal\data\jackal_mount_co.paa"
+	};
+	
+	textureList[] = {
+		"woodlandGreen", 0,
+		"woodlandTwoColor", 0,
+		"ctrgTropical", 0,
+		"ctrgSand", 0,
+		"desertTan", 0,
+		"desertTwoColor", 0,
+		"NATOTan", 0,
+		"winterWhite", 0,
+		"winterTwoColor", 1
+	};
+};

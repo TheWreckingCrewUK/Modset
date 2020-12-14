@@ -1,6 +1,3 @@
-#define OH_DIV 25.00
-#define IM_DIV 15.00
-
 private _deleted = false;
 
 {
@@ -14,15 +11,14 @@ private _deleted = false;
 			private _divisor = OH_DIV;
 			private _pPos = getPosATL _projectile;
 			private _lis = lineIntersectsSurfaces [ATLToASL _pPos, eyePos player, player];
-			if (_lis isEqualTo []) then { _dDist = _dDist * 0.5; };
-			if (isWeaponDeployed player) then { _hit = _hit - (_hit / 3.5); };
-			_hit = _hit / TWC_Suppress_modifier;
+			if (_lis isEqualTo []) then { _dDist = _dDist * 0.55; };
+			if (isWeaponDeployed player) then { _hit = _hit - (_hit / 2.5); };
 			
 			if ((_pPos distance player) <= _dDist) then {
 				_divisor = IM_DIV;
 				TWC_Suppress_lastShotTime = time;
 				
-				if ((_pPos distance player) <= 2) then {
+				if ((_pPos distance player) <= 3.2) then {
 					[] call TWC_Suppress_fnc_impact;
 				};
 			};
