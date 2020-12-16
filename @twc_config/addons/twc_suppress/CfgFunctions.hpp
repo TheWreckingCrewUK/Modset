@@ -25,6 +25,7 @@ class CfgFunctions {
 			class thresholdHandler {};
 			class clearImpactEffect {};
 			class clearPinnedEffect {};
+			class shockwave {};
 
 			// Util
 			class readCache {};
