@@ -7,18 +7,28 @@
 			, 0.5, 1.0 }; \
 		titles[] = {0, "" }; \
 	}
+	
+#define ADD_SOUND_V(CLASSNAME,FOLDER,VOLUME) \
+	class TWC_##CLASSNAME { \
+		name = "TWC_##CLASSNAME"; \
+		sound[] = { \
+			twc_sounds\sounds\##FOLDER##\##CLASSNAME##.ogg \
+			, VOLUME##, 1.0 }; \
+		titles[] = {0, "" }; \
+	}
 
 class CfgSounds {
 	ADD_SOUND(christmas_2017_intro, christmas);
 	ADD_SOUND(christmas_2017_outro, christmas);
 	
 	/** DEATHSCREEN SOUNDS **/
-	ADD_SOUND(bleed_out,death);
-	ADD_SOUND(cardiac_arrest,death);
-	ADD_SOUND(clinical_death,death);
-	ADD_SOUND(drowned,death);
-	ADD_SOUND(instant_death,death);
-	ADD_SOUND(overdose,death);
+	ADD_SOUND_V(bleed_out,death,0.25);
+	ADD_SOUND_V(cardiac_arrest,death,0.25);
+	ADD_SOUND_V(clinical_death,death,0.25);
+	ADD_SOUND_V(drowned,death,0.25);
+	ADD_SOUND_V(instant_death,death,0.25);
+	ADD_SOUND_V(overdose,death,0.25);
+	ADD_SOUND_V(broadcast_mode,death,0.25);
 	
 	/** GAME SOUNDS **/
 	ADD_SOUND(banzai_1,ww2);
