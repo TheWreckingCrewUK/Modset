@@ -3,7 +3,7 @@
 		name = "TWC_##CLASSNAME"; \
 		sound[] = { \
 			twc_sounds\sounds\##FOLDER##\##CLASSNAME##.ogg \
-			, 10, 1}; \
+			, 0.8, 1}; \
 	}
 
 class CfgMusic {

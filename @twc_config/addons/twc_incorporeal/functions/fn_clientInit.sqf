@@ -128,12 +128,18 @@ player addEventHandler ["Respawn", {
 	player disableConversation false;
 	_deathScreenData spawn { playSound [(_this select 0), true]; }; // false sounds break script scope?
 
+	_broadcastCredit = "";
+	if (TWC_Core_BroadcastMode) then {
+		_broadcastCredit = "<br /><br /><t color='#CCCCCC' size='0.5'>Arcadia by Kevin MacLeod<br />Link: https://incompetech.filmmusic.io/song/3377-arcadia<br />License: http://creativecommons.org/licenses/by/4.0/</t>";
+	};
+
 	_deathString = format [
-		"<t color='#FF0000' size='3'>%1 %2</t><br/><t color='#FFFFFF' size='2'>Perished during %3 at T+%4</t><br/><br/><br/><br/>If you believe you died unfairly, disconnect immediately and inform management.",
+		"<t color='#FF0000' size='3'>%1 %2</t><br/><t color='#FFFFFF' size='2'>Perished during %3 at T+%4</t><br/><br/><br/><br/>If you believe you died unfairly, disconnect immediately and inform management.%5",
 		(_deathData select 0),
 		(_deathData select 3),
 		TWC_Operation_Name,
-		(_deathData select 4)
+		(_deathData select 4),
+		_broadcastCredit
 	];
 
 	555 cutText [_deathString, "PLAIN", 3, true, true];

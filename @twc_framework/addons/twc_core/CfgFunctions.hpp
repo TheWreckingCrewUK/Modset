@@ -3,6 +3,9 @@ class CfgFunctions {
 		class functions {
 			file = "twc_core\functions";
 			
+			/** INIT **/
+			class clientPreInit {};
+			
 			/** EVENT HANDLERS **/
 			class serverEventHandlers {};
 			class clientEventHandlers {};
