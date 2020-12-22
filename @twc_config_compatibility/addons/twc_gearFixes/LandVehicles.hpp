@@ -1784,105 +1784,34 @@
 		centreBias = 1;
 	//	peaktorque = 500;
 		class Turrets;
-		class Wheels:Wheels {
-			class LF:LF {
-				boneName = "wheel_1_1_damper";
-				boundary = "wheel_1_1_bound";
-				center = "wheel_1_1_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0;
+		class Wheels {
+			class LF {
 				frictionVsSlipGraph[] = {{ 0.05, 0.5 }, { 0.2, 0.4 }, { 0.9, 0.8 }};
-			//	frictionVsSlipGraph[] = {{ 0.05, 0.5 }, { 0.2, 0.4 }, { 0.35, 0.35 }};
-			//	frictionVsSlipGraph[] = {{ 0.2, 0.4 }, { 0.35, 0.3 }, { 0.9, 0.4 }};
 				latStiffX = 250;
 				latStiffY = 140;
 				longitudinalStiffnessPerUnitGravity = 30000;
-				mass = 30;
 				maxBrakeTorque = 2400;
 				maxCompression = 0.4;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 700;
-				moi = 6;
-				side = "left";
 				springDamperRate = 2600;
 				springStrength = 75000;
-				//sprungmass = 825;
-				steering = 1;
-				suspForceAppPointOffset = "wheel_1_1_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_1_1_axis";
-				width = 0.285;
 				};
-				class RF: LF {
-				boneName = "wheel_2_1_damper";
-				boundary = "wheel_2_1_bound";
-				center = "wheel_2_1_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0.8;
-				longitudinalStiffnessPerUnitGravity = 30000;
-				mass = 30;
-				maxBrakeTorque = 2400;
-				maxDroop = 0.24;
-				maxHandBrakeTorque = 700;
-				moi = 6;
-				side = "right";
-				steering = 1;
-				suspForceAppPointOffset = "wheel_2_1_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_2_1_axis";
-				width = 0.285;
+			class RF: LF {
 				};
-				class LR: LF {
-				boneName = "wheel_1_2_damper";
-				boundary = "wheel_1_2_bound";
-				center = "wheel_1_2_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
+			class LR: LF {
 				springStrength = 90000;
 				springDamperRate = 2600;
 				dampingRateInAir = 0.8;
 				frictionVsSlipGraph[] = {{ 0.05, 0.5 }, { 0.2, 0.4 }, { 0.6, 0.8 }};
 				longitudinalStiffnessPerUnitGravity = 30000;
-				mass = 30;
 				maxBrakeTorque = 2600;
 				maxDroop = 0.24;
 				maxHandBrakeTorque = 1000;
-				moi = 6;
-				side = "left";
-				//sprungmass = 825;
-				steering = 0;
-				suspForceAppPointOffset = "wheel_1_2_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_1_2_axis";
-				width = 0.285;
 				};
-				class RR: LR {
-				boneName = "wheel_2_2_damper";
-				boundary = "wheel_2_2_bound";
-				center = "wheel_2_2_axis";
-				dampingRate = 1;
-				dampingRateDamaged = 5;
-				dampingRateDestroyed = 5000;
-				dampingRateInAir = 0.8;
-				longitudinalStiffnessPerUnitGravity = 30000;
-				mass = 30;
-				maxBrakeTorque = 2600;
-				maxDroop = 0.24;
-				maxHandBrakeTorque = 1000;
-				moi = 6;
-				side = "right";
-				steering = 0;
-				suspForceAppPointOffset = "wheel_2_2_axis";
-				suspTravelDirection[] = {0,-1,0};
-				tireForceAppPointOffset = "wheel_2_2_axis";
-				width = 0.285;
+			class RR: LR {
 				};
-			};
+		};
 		class PlayerSteeringCoefficients /// steering sensitivity configuration
        {
            turnIncreaseConst  = 0.6; // basic sensitivity value, higher value = faster steering
