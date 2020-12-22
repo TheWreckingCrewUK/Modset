@@ -87,6 +87,7 @@ class CfgFunctions {
 			class moduleArtillery {};
 			class moduleUpdateTask {};
 			class moduleDefend {};
+			class modulePatrol {};
 			class moduleDummyBullets {};
 			class moduleAirAssault{};
 			class moduleAirborne {};

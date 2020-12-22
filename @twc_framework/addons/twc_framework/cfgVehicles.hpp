@@ -618,23 +618,50 @@ class CfgVehicles {
 				typeName="Number";
 				defaultValue=2;
 			};
-			class Patrol
-			{
-				displayName="Patrol";
-				description="Percentage of units that will patrol the area instead of taking a position.";
-				typeName="Number";
-				defaultValue=0.1;
-			};
 			class Hold
 			{
 				displayName="Hold";
 				description="Percentage of units that will hold their position in combat.";
 				typeName="Number";
-				defaultValue=0.85;
+				defaultValue=0.8;
 			};
 		};
 		class ModuleDescription: ModuleDescription {
 			description = "TWC Defend Function";
+			sync[] = {"AnyAI"};
+		};
+	};
+	
+		class TWC_Module_Patrol: Module_F {
+		author = "[TWC] Sarge";
+		category = "twc_mission_framework";
+		displayName = "Patrol";
+		function = "twc_fnc_modulePatrol";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\defend_ca.paa";
+		functionPriority = 1;
+		class Arguments
+		{
+			class Radius
+			{
+				displayName="Radius";
+				description="Radius in metres that module will cover.";
+				typeName="Number";
+				defaultValue=100;
+			};
+			class wpCount
+			{
+				displayName="Waypoint Count";
+				description="Number of waypoints generated for the group. Add 1 per 50m above 100m radius (Max = 8).";
+				typeName="Number";
+				defaultValue=4;
+			};
+		};
+		class ModuleDescription: ModuleDescription {
+			description = "TWC Patrol Function";
 			sync[] = {"AnyAI"};
 		};
 	};
