@@ -17,7 +17,7 @@
 *
 * Public: no
 */
-params["_unit",["_pos",[]],["_radius",100],["_size",2],["_patrol",0.1],["_hold",0.9]];
+params["_unit",["_pos",[]],["_radius",100],["_size",2],["_hold",0.8]];
 
 (group _unit) setVariable ["twc_cacheDefending",true];
 
@@ -32,6 +32,8 @@ if((typeName _pos) isEqualTo "STRING")then{
 {
 	_x setVariable ["NOAI",1,true];
 }forEach units (group _unit);
+
+_patrol = 0; // Patrol tends to just make a few units stand around outside (broken?). Use separate twc_patrol Module in conjunction instead.
 
 _groupOwner = (groupOwner (group _unit));
 [_unit,_pos,_radius,_size,_patrol,_hold] remoteExecCall ["CBA_fnc_taskDefend",_groupOwner];
