@@ -78,32 +78,9 @@ class CfgVehicles
 	};
 	class twc_stryker_wd_base: rhsusf_stryker_m1126_m2_wd
 	{
-		class Turrets: Turrets
-		{
-			class MainTurret;
-		};
-		class Wheels: Wheels
-		{
-			class L1;
-			class L2;
-			class L3;
-			class L4;
-			class R1;
-			class R2;
-			class R3;
-			class R4;
-		};
 	};
 	class twc_stryker_wd: twc_stryker_wd_base
 	{
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				weapons[] = {"UK3CB_BAF_Safe","UK3CB_BAF_Landrover_L111A1"};
-				magazines[] = {"UK3CB_BAF_127_100Rnd"};
-			};
-		};
 		maximumload = 4000;
 		class TransportMagazines
 		{
