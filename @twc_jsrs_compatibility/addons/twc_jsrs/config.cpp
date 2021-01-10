@@ -211,7 +211,7 @@ class cfgsoundshaders
 	};
 	class twc_ar15_closure_soundshader: twc_l129_closure_soundshader
 	{
-		volume = 0.8;
+		volume = 0.5;
 		frequency = 1.2;
 	};
 	
