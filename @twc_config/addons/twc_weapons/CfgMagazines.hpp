@@ -8,6 +8,7 @@ class CfgMagazines {
 		type = 256;
 		count = 1;
 		ammo = "CUP_Sh_105_HE";
+		initSpeed = 810;
 		model = "\A3\Structures_F_EPB\Items\Military\Ammobox_rounds_F.p3d";
 		picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
 		mass = 72;
