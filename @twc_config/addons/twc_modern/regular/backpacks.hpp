@@ -122,6 +122,7 @@ class TWC_Backpack_Modern_Regular_Woodland_Artillery_Commander: UK3CB_BAF_B_Berg
 	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
+		ADD_ITEM(ACE_DAGR,1);
 	};
 };
 class TWC_Backpack_Modern_Regular_Woodland_FO: UK3CB_BAF_B_Bergen_MTP_SL_L_A
