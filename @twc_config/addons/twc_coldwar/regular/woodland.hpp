@@ -48,8 +48,8 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Base: B_Soldier_base_F
 	respawnmagazines[]= {};
 	
 	nightItems[] = {
-		"Chemlight_green",
-		"Chemlight_green"
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_Maglite_ML300L"
 	};
 };
 
@@ -151,10 +151,9 @@ class TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander: TWC_Infantry_ColdW
 	};
 	
 	nightItems[] = {
-		"ACE_HandFlare_White",
-		"ACE_HandFlare_White",
-		"Chemlight_green",
-		"Chemlight_green",
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_Maglite_ML300L",
 		"ACE_Flashlight_MX991"
 	};
 };
@@ -367,10 +366,9 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander: TWC_Infantry_Cold
 	};
 	
 	nightItems[] = {
-		"ACE_HandFlare_White",
-		"ACE_HandFlare_White",
-		"Chemlight_green",
-		"Chemlight_green",
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_Maglite_ML300L",
 		"ACE_Flashlight_MX991"
 	};
 };
@@ -447,10 +445,9 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 	};
 	
 	nightItems[] = {
-		"ACE_HandFlare_White",
-		"ACE_HandFlare_White",
-		"Chemlight_green",
-		"Chemlight_green"
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_Maglite_ML300L"
 	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
@@ -497,7 +494,8 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Mortar: TWC_Infantry_ColdWar
 		MAG_4("twc_2inch_he_1rnd")
 	};
 	nightItems[] = {
-		MAG_6("twc_2inch_illum_1rnd")
+		MAG_6("twc_2inch_illum_1rnd"),
+		"ACE_Flashlight_Maglite_ML300L"
 	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_CSM: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Sergeant
@@ -641,8 +639,8 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Sniper: TWC_Infantry_ColdWar_Regular
 	};
 	
 	nightItems[] = {
-		"Chemlight_green",
-		"Chemlight_green",
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_Maglite_ML300L",
 		"ACE_Flashlight_MX991"
 	};
 };
@@ -805,10 +803,9 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_ColdW
 	};
 	
 	nightItems[] = {
-		"ACE_HandFlare_White",
-		"ACE_HandFlare_White",
-		"Chemlight_green",
-		"Chemlight_green",
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"ACE_Flashlight_Maglite_ML300L",
 		"ACE_Flashlight_MX991"
 	};
 	
