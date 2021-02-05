@@ -125,6 +125,7 @@ class TWC_Infantry_1990_Regular_Woodland_SectionCommander: TWC_Infantry_1990_Reg
 		MAG_2("ACE_HandFlare_White"),
 		MAG_2("Chemlight_green"),
 		"ACE_Flashlight_MX991",
+		"ACE_Flashlight_Maglite_ML300L",
 		"B_IR_Grenade"
 	};
 };
@@ -182,6 +183,7 @@ class TWC_Infantry_1990_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 		MAG_2("ACE_HandFlare_White"),
 		MAG_2("Chemlight_green"),
 		"ACE_Flashlight_MX991",
+		"ACE_Flashlight_Maglite_ML300L",
 		"B_IR_Grenade"
 	};
 };
@@ -674,6 +676,7 @@ class TWC_Infantry_1990_Regular_Woodland_FAC: TWC_Infantry_1990_Regular_Woodland
 		MAG_2("ACE_HandFlare_White"),
 		MAG_2("Chemlight_green"),
 		"ACE_Flashlight_MX991",
+		"ACE_Flashlight_Maglite_ML300L",
 		"B_IR_Grenade"
 	};
 };

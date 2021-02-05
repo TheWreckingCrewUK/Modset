@@ -97,9 +97,9 @@ class CfgVehicles
 		respawnmagazines[] = {};
 		
 		nightItems[] = {
+			MAG_2("Chemlight_green"),
 			"ACE_Flashlight_MX991",
-			"Chemlight_green",
-			"Chemlight_green"
+			"ACE_Flashlight_Maglite_ML300L"
 		};
 
 		nightLinkedItems[] = {
