@@ -3,6 +3,7 @@ class CUP_B_RPGPack_Khaki;
 class CUP_B_HikingPack_Civ;
 class CUP_B_AlicePack_OD;
 class SP_Backpack_BlowpipeCarrier;
+class CUP_B_TK_CivPack_WDL_RPK;
 
 class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki {
 	class TransportMagazines {
@@ -97,5 +98,11 @@ class TWC_Backpack_Argentina_1980_AA: SP_Backpack_BlowpipeCarrier
 {
 	class TransportMagazines {
 		maga_nc(SP_Blowpipe_round, 1);
+	};
+};
+class CUP_B_TK_AT_CarlGustav: CUP_B_TK_CivPack_WDL_RPK
+{
+	class TransportMagazines {
+		maga_nc(CUP_MAAWS_HEAT_M, 4);
 	};
 };

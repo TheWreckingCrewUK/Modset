@@ -152,7 +152,12 @@ class CfgPatches {
 			"TWC_WaPArmy_Taviana_T72A",
 			"TWC_WaPArmy_Taviana_ZSU23",
 			"TWC_Operations_Opfor_Iraq_Mi8",
-			"TWC_Operations_Opfor_Iraq_Mi24"
+			"TWC_Operations_Opfor_Iraq_Mi24",
+			"CUP_O_TK_Crew_Western",
+			"CUP_O_TK_Soldier_AR_Western", 
+			"CUP_O_TK_Soldier_MG_Western", 
+			"CUP_O_TK_Soldier_M_Western"
+			
 		};
 		
 		weapons[] = {};
@@ -301,6 +306,7 @@ class CfgVehicles {
 	#include "units\argentina_1980.hpp"
 	#include "units\FARC.hpp"
 	#include "units\plo.hpp"
+	#include "units\Takistani_Army.hpp"
 };
 
 #include "CfgMarkers.hpp"
