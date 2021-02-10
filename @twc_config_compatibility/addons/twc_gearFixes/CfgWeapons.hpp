@@ -376,6 +376,7 @@
 	//Configuring various plane weapons for use with the Ambient Attack Plane module.
 	class RocketPods;
 	class Mk82BombLauncher;
+	class rockets_Skyfire;
 	class CUP_Vblauncher_Mk82_veh: RocketPods
 	{
 		cursorAim = "bomb";
@@ -389,6 +390,10 @@
 		cursorAim = "bomb";
 	};
 
+	class CUP_Vmlauncher_S5_veh: rockets_Skyfire
+	{
+		cursorAim = "missile";
+	};
 	class CUP_Vmlauncher_CRV7_veh: RocketPods
 	{
 		cursorAim = "missile";
