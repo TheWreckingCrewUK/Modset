@@ -338,7 +338,7 @@ class Extended_FiredBIS_EventHandlers {
 	class StaticMortar {
 		class twc_gunshake {
 			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_rec = 3; addCamShake [_rec, 0.8, 15]};";
-			FiredBIS = "[_this select 6, _this select 4, _this select 7] call twc_fnc_mortarwalk;";
+			//FiredBIS = "[_this select 6, _this select 4, _this select 7] call twc_fnc_mortarwalk;";
 		};
 	};
 	class StaticCannon {
