@@ -1,6 +1,7 @@
 params ["_module"];
 
 _units = synchronizedObjects _module;
+_units = _units select {typeOf _x != "EmptyDetector"};
 _leader = leader (_units select 0);
 _units = units _leader;
 _unitTypes = [];
