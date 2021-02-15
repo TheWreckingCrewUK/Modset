@@ -2,30 +2,6 @@
 class cfgMagazines
 {
 	class CA_Magazine;
-	
-	class 10Rnd_RHS_50BMG_Box: CA_Magazine
-	{};
-	class rhsusf_mag_10Rnd_STD_50BMG_M33: 10Rnd_RHS_50BMG_Box
-	{
-		ammo = "B_127x99_Ball_Tracer_Red";
-		initSpeed = 860;
-		displayName = "12.7x99mm 10Rnd (M33 Ball)";
-		descriptionShort = "Caliber: 12.7x99mm (M33 Ball)<br />Rounds: 10";
-	};
-	class rhsusf_mag_10Rnd_STD_50BMG_AMAX: rhsusf_mag_10Rnd_STD_50BMG_M33
-	{
-		ammo = "ACE_127x99_Ball_AMAX";
-		initSpeed = 860;
-		displayNameShort = "AMAX";
-		displayName = "12.7x99mm 10Rnd (AMAX)";
-		descriptionShort = "Caliber: 12.7x99mm (AMAX)<br />Rounds: 10";
-	};
-	class rhsusf_mag_10Rnd_STD_50BMG_mk211: 10Rnd_RHS_50BMG_Box
-	{
-		initSpeed = 880;
-		displayName = "12.7x99mm 10Rnd (HEIAP)";
-		descriptionShort = "Caliber: 12.7x99mm (HEIAP)<br />High Explosive Incendiary Armour Piercing<br />Rounds: 10";
-	};
 	class 10Rnd_338_Mag;
 	class ACE_10Rnd_338_API526_Mag: 10Rnd_338_Mag
 	{
