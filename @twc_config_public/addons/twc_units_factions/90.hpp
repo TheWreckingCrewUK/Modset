@@ -35,7 +35,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		respawnweapons[]=
 		{
@@ -43,13 +43,13 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd_T",
@@ -61,9 +61,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd_T",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
@@ -161,14 +161,14 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhs_weap_M136_hedp"
+		"CUP_launch_M136"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhs_weap_M136_hedp"
+		"CUP_launch_M136"
 		};
 		magazines[]=
 		{
@@ -616,7 +616,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		respawnweapons[]=
 		{
@@ -624,13 +624,13 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
@@ -642,9 +642,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
@@ -743,7 +743,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		respawnweapons[]=
 		{
@@ -751,13 +751,13 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
@@ -769,9 +769,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
@@ -1075,14 +1075,14 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		backpack="TWC_Backpack_1990_Pilot";
 		linkedItems[]=
 		{
-		"RHS_jetpilot_usaf",
+		"CUP_H_BAF_PILOT",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-		"RHS_jetpilot_usaf",
+		"CUP_H_BAF_PILOT",
 		"ItemMap",		
 		"ItemCompass",
 		"ItemWatch"
@@ -1091,25 +1091,25 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		{
 		"Throw",
 		"Put",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"SmokeShell",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",	
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",	
 		"SmokeShell",
 		"SmokeShell"
 		};
@@ -1221,7 +1221,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		respawnweapons[]=
 		{
@@ -1229,13 +1229,13 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"ACE_Vector",
 		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd_T",
@@ -1247,9 +1247,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd_T",
@@ -1346,14 +1346,14 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhs_weap_M136_hedp"
+		"CUP_launch_M136"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",	
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhs_weap_M136_hedp"
+		"CUP_launch_M136"
 		};
 		magazines[]=
 		{
@@ -1798,7 +1798,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		respawnweapons[]=
 		{
@@ -1806,13 +1806,13 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
@@ -1824,9 +1824,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
@@ -1924,7 +1924,7 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		respawnweapons[]=
 		{
@@ -1932,13 +1932,13 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		"Put",
 		"Binocular",
 		"UK3CB_BAF_L85A1_SUSAT3D",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
@@ -1950,9 +1950,9 @@ class 1990_British_Squadleader: B_Soldier_base_F
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",
 		"UK3CB_BAF_556_30Rnd",

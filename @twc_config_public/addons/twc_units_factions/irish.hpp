@@ -481,35 +481,35 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_makarov_pm"
+		"CUP_hgun_Makarov"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_makarov_pm"
+		"CUP_hgun_Makarov"
 		};
 		magazines[]=
 		{
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S"
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S"
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M"
 		};
 	};
 	
@@ -523,34 +523,34 @@
 		{
 		"Throw",
 		"Put",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		magazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP"
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911"
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP"
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911"
 		};
 	};
