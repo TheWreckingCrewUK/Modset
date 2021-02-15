@@ -90,14 +90,14 @@
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"twc_m4_acog_lazer"
+			"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"twc_m4_acog_lazer"
+			"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		magazines[]=
 		{
@@ -171,14 +171,14 @@
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"twc_m4_acog_lazer"
+			"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"twc_m4_acog_lazer"
+			"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		magazines[]=
 		{
@@ -243,14 +243,14 @@
 		{
 			"Throw",
 			"Put",
-			"twc_m4_acog_lazer",
+			"CUP_arifle_M4A1_ACOG_Laser",
 			"CUP_launch_M136"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_m4_acog_lazer",
+			"CUP_arifle_M4A1_ACOG_Laser",
 			"CUP_launch_M136"
 		};
 		magazines[]=
@@ -399,13 +399,13 @@
 		{
 			"Throw",
 			"Put",
-			"twc_m249_mgo_lazer"
+			"CUP_lmg_M249_ElcanM145_Laser"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_m249_mgo_lazer"
+			"CUP_lmg_M249_ElcanM145_Laser"
 		};
 		magazines[]=
 		{
@@ -523,13 +523,13 @@
 		{
 			"Throw",
 			"Put",
-			"twc_m4_acog_lazer"
+			"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_m4_acog_lazer"
+			"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		magazines[]=
 		{

@@ -162,19 +162,6 @@ class cfgWeapons
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";
 		magazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_EMAG_Tan","twc_CUP_30Rnd_556x45_EMAG_Tan_tracer","CUP_30Rnd_556x45_Emag","CUP_60Rnd_556x45_SureFire","CUP_20Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_green","CUP_100Rnd_556x45_BetaCMag_ar15","CUP_100Rnd_TE1_Red_Tracer_556x45_BetaCMag_ar15","CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag_ar15","CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag_ar15"};
-		class Single:Mode_SemiAuto {
-			//sounds[] = {"StandardSound"};
-			dispersion = 0.002;
-		};
-		class Burst:Mode_Burst {
-			//sounds[] = {"StandardSound"};
-			dispersion = 0.002;
-		};
-		class FullAuto:Mode_FullAuto {
-			//sounds[] = {"StandardSound"};
-			reloadTime = 0.06;
-			dispersion = 0.002;
-		};
 	};
 	
 	class twc_L119A2_10: twc_L119A2_base
@@ -190,17 +177,7 @@ class cfgWeapons
 		displayName = "L119A2";
 		hiddenSelectionsTextures[] = {"twc_units_modern\textures\mk18_digi_co.jpg"};
 		descriptionShort = "Full Length Variant<br/>15.7 Inch Barrel<br/>5.56";
-		
-		class Single:Single {
-			dispersion = 0.002;
-		};
-		class Burst:Burst {
-			dispersion = 0.002;	
-		};
-		class FullAuto:FullAuto {
-			reloadTime = 0.06;
-			dispersion = 0.002;
-		};
+
 	};
 	//double base to stop the jsrs compat messing with the firemodes. Could have taken the long road and done it in a more annoying way through the jsrs file to clean it up here, will do that in time perhaps
 	class TWC_UK3CB_BAF_L119A2_14_Base: twc_L119A2_10_Base
@@ -210,16 +187,6 @@ class cfgWeapons
 		recoilProne = "twc_rifle_556_long_prone";
 		descriptionShort = "Full Length Variant<br/>15.7 Inch Barrel<br/>5.56";
 		
-		class Single:Single {
-			dispersion = 0.0014;
-		};
-		class Burst:Burst {
-			dispersion = 0.0014;	
-		};
-		class FullAuto:FullAuto {
-			reloadTime = 0.075;
-			dispersion = 0.0014;
-		};
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo8"};
 	};
 	
@@ -659,7 +626,7 @@ class cfgWeapons
 		recoil = "twc_rifle_556_long";
 		recoilProne = "twc_rifle_556_long_prone";
 	};
-	
+	class Rifle_Long_Base_F;
 	class LMG_Mk200_F: Rifle_Long_Base_F
 	{
 		twc_openbolt = 1;

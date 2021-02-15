@@ -18,6 +18,7 @@ uk3cb_baf_equipment\uniform\data\uniform_dpm_co.paa
 uk3cb_baf_equipment\uniform\data\uniform_ddpm_co.paa
 */
 
+class UK3CB_BAF_B_Kitbag_OLI;
 class UK3CB_BAF_B_Kitbag_TAN;
 class twc_genbackPack_tan: UK3CB_BAF_B_Kitbag_TAN {};
 class twc_genbackPack_oli: UK3CB_BAF_B_Kitbag_OLI {};
@@ -127,7 +128,6 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 	class UK3CB_BAF_B_Bergen_DPMW_Rifleman_B;
 	class UK3CB_BAF_B_Carryall_DPMW;
 	class UK3CB_BAF_B_Kitbag_DPMW;
-	class UK3CB_BAF_B_Kitbag_OLI;
 	class UK3CB_BAF_B_Bergen_TAN_SL_A;
 	class UK3CB_BAF_B_Bergen_DPMW_JTAC_H_A;
 	class UK3CB_BAF_B_Carryall_TAN;

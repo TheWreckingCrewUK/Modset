@@ -420,6 +420,7 @@ class CfgVehicles
 {
 	class CUP_B_AlicePack_Khaki;
 	class CUP_B_RPGPack_Khaki;
+	class CUP_O_RUS_Patrol_bag_Green;
 	class twc_Backpack_m60: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;

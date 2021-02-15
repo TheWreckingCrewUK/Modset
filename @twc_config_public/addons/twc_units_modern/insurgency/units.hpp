@@ -1824,13 +1824,13 @@
 		{
 		"Throw",
 		"Put",
-		"twc_m4_acog_grip_laser"
+		"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"twc_m4_acog_grip_laser"
+		"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		magazines[]=
 		{
@@ -1865,13 +1865,13 @@
 		{
 		"Throw",
 		"Put",
-		"twc_m4_m203_acog_light"
+		"CUP_arifle_M4A1_M203_ACOG_Laser"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"twc_m4_m203_acog_light"
+		"CUP_arifle_M4A1_M203_ACOG_Laser"
 		};
 		magazines[]=
 		{

@@ -14,7 +14,7 @@
 		twc_radioChannel = 6;
 		linkedItems[]=
 		{
-			"twc_flk_spcs_rif",
+			"CUP_V_B_GER_PVest_Fleck_RFL",
 			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
@@ -22,7 +22,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_flk_spcs_rif",
+			"CUP_V_B_GER_PVest_Fleck_RFL",
 			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
@@ -137,7 +137,7 @@
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
 		{
-			"twc_trp_spcs_rif",
+			"CUP_V_B_GER_PVest_Trop_RFL",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
@@ -145,7 +145,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_trp_spcs_rif",
+			"CUP_V_B_GER_PVest_Trop_RFL",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
@@ -212,7 +212,7 @@
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
 		{
-			"twc_trp_spcs_rif",
+			"CUP_V_B_GER_PVest_Trop_RFL",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
@@ -220,7 +220,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_trp_spcs_rif",
+			"CUP_V_B_GER_PVest_Trop_RFL",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
@@ -323,7 +323,7 @@
 		backpack="ger_backpack_mg";
 		linkedItems[]=
 		{
-			"twc_flk_spcs_MG",
+			"CUP_V_B_GER_PVest_Fleck_RFL",
 			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
@@ -331,7 +331,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_flk_spcs_MG",
+			"CUP_V_B_GER_PVest_Fleck_RFL",
 			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
@@ -341,25 +341,25 @@
 		{
 			"Throw",
 			"Put",
-			"twc_HK_MG3"
+			"CUP_lmg_MG3"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_HK_MG3"
+			"CUP_lmg_MG3"
 		};
 		magazines[]=
 		{
-			"UK3CB_BAF_762_200Rnd_T",
-			"UK3CB_BAF_762_200Rnd_T",
+			"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",
+			"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",
 			"HandGrenade",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"UK3CB_BAF_762_200Rnd_T",
-			"UK3CB_BAF_762_200Rnd_T",
+			"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",
+			"CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",
 			"HandGrenade",
 			"SmokeShell"
 		};
@@ -374,7 +374,7 @@
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
 		{
-			"twc_trp_spcs_MG",
+			"CUP_V_B_GER_PVest_Trop_MG",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
@@ -382,7 +382,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_trp_spcs_MG",
+			"CUP_V_B_GER_PVest_Trop_MG",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
@@ -398,7 +398,7 @@
 		backpack="ger_backpack_leader";
 		linkedItems[]=
 		{
-			"twc_flk_spcs_SL",
+			"CUP_V_B_GER_PVest_Fleck_TL",
 			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
@@ -407,7 +407,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_flk_spcs_SL",
+			"CUP_V_B_GER_PVest_Fleck_TL",
 			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
@@ -439,7 +439,7 @@
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
 		{
-			"twc_trp_spcs_SL",
+			"CUP_V_B_GER_PVest_Trop_TL",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
@@ -448,7 +448,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_trp_spcs_SL",
+			"CUP_V_B_GER_PVest_Trop_TL",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
@@ -465,7 +465,7 @@
 		backpack="ger_backpack_2ic";
 		linkedItems[]=
 		{
-			"twc_flk_spcs_SL",
+			"CUP_V_B_GER_PVest_Fleck_TL",
 			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
@@ -473,7 +473,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_flk_spcs_SL",
+			"CUP_V_B_GER_PVest_Fleck_TL",
 			"CUP_H_Ger_M92_Cover",
 			"ItemMap",
 			"ItemCompass",
@@ -490,7 +490,7 @@
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
 		{
-			"twc_trp_spcs_SL",
+			"CUP_V_B_GER_PVest_Trop_TL",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
@@ -498,7 +498,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_trp_spcs_SL",
+			"CUP_V_B_GER_PVest_Trop_TL",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
@@ -513,6 +513,22 @@
 		displayName="Medic";
 		attendant = 1;
 		backpack="ger_backpack_medic_flk";
+		linkedItems[]=
+		{
+			"CUP_V_B_GER_PVest_Fleck_Med",
+			"CUP_H_Ger_M92_Cover",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_GER_PVest_Fleck_Med",
+			"CUP_H_Ger_M92_Cover",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
 	};
 	
 	
@@ -525,7 +541,7 @@
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
 		{
-			"twc_trp_spcs_rif",
+			"CUP_V_B_GER_PVest_Trop_Med",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
@@ -533,7 +549,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_trp_spcs_rif",
+			"CUP_V_B_GER_PVest_Trop_Med",
 			"CUP_H_Ger_M92_Cover_Trop",
 			"ItemMap",
 			"ItemCompass",
