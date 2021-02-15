@@ -14,7 +14,6 @@ class CfgFunctions {
 			class BattlefieldSounds {};
 			class briefingLoadout {};
 			class charge {};
-			class CommandMessage{};
 			class crateParadrop {};
 			class crateSlingload {};
 			class createMarker{};
@@ -24,8 +23,6 @@ class CfgFunctions {
 			class dummyBullets {};
 			class Flagchange {};
 			class HideMarkers {};
-			class intelHint{};
-			class intelHintWithVariable{};
 			class LightsSwitch{};
 			class Patrol {};
 			class patrolRoads{};
@@ -43,7 +40,6 @@ class CfgFunctions {
 			class waveSpawn {};
 			class toggleSpectator {};
 			class grabComposition {};
-			class sendCTabMessage {};
 			class GliderTakeOff {};
 			class confiscateBadItems {};
 			class silentSafety {};
@@ -56,6 +52,13 @@ class CfgFunctions {
 			class aiscramble {};
 			class aisuppresscqb {};
 			class aisuppress {};
+			
+			/** Player Messaging **/
+			class speak {};
+			class intelHint {};
+			class intelHintWithVariable {};
+			class sendCTabMessage {};
+			class CommandMessage {};
 			
 			/** AMBIENT AIRCRAFT **/
 			class ambientFlyBy {};
@@ -108,6 +111,7 @@ class CfgFunctions {
 			class moduleACEInteract {};
 			class moduleAmbientSound {};
 			class moduleAmbientSoundSimp {};
+			class moduleSpeak {};
 		};
 		
 		class cache {

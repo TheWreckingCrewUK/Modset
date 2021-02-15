@@ -1269,6 +1269,59 @@ class CfgVehicles {
 		};
 	};
 	
+	class TWC_Module_Speak: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_mission_framework";
+		displayName = "Speak";
+		function = "twc_fnc_moduleSpeak";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		icon = "\twc_framework\ui\speak_ca.paa";
+		functionPriority = 5;
+		isDisposable = 0;
+
+		class Arguments {
+			class Message {
+				displayName = "Message";
+				description = "Text To Display";
+				typeName = "String";
+				defaultValue = "";
+			};
+			
+			class Range {
+				displayName = "Volume";
+				description = "How far should the message reach?";
+				typeName = "Number";
+				defaultValue = "91";
+				
+				// based on acre 2 volume ranges for AI reveal
+				// 8.1 * 130, 0.7 * 130, 1.3 * 130
+				class Values {
+					class Whisper {
+						name = "Whispering";
+						value = 13;
+					};
+					
+					class Normal {
+						name = "Normal";
+						value = 91;
+					};
+					
+					class Shout {
+						name = "Shouting";
+						value = 169; // nice
+					};
+				};
+			};
+		};
+
+		class ModuleDescription: ModuleDescription {
+			description = "N/A";
+			sync[] = {"EmptyDetector"};
+		};
+	};
+	
 	class TWC_Module_CrateParadrop: Module_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
