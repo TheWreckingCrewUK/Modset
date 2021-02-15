@@ -1,6 +1,6 @@
-	class rhsusf_assault_eagleaiii_ocp;
-	class rhsusf_assault_eagleaiii_ucp;
-	class TWC_Backpack_Modern_US_Army_SL: rhsusf_assault_eagleaiii_ocp
+	class CUP_B_US_IIID_OCP;
+	class CUP_B_US_IIID_UCP;
+	class TWC_Backpack_Modern_US_Army_SL: CUP_B_US_IIID_OCP
 	{
 		scope = 1;
 		class TransportItems
@@ -12,7 +12,7 @@
 			};
 			class _xx_556
 			{
-				name = "rhs_mag_30Rnd_556x45_M855A1_PMAG";
+				name = "30Rnd_556x45_Stanag";
 				count = 2;
 			};
 		};
@@ -27,7 +27,7 @@
 	};
 	
 		
-		class TWC_Backpack_Modern_US_Army_AR: rhsusf_assault_eagleaiii_ocp
+		class TWC_Backpack_Modern_US_Army_AR: CUP_B_US_IIID_OCP
 	{
 		scope = 1;
 		class TransportMagazines
@@ -42,14 +42,14 @@
 		{
 			class _xx_249
 			{
-				name = "rhs_200rnd_556x45_T_SAW";
+				name = "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
 				count = 4;
 			};
 		};
 	};
 	
 	
-		class TWC_Backpack_Modern_US_Army_Rifleman: rhsusf_assault_eagleaiii_ocp
+		class TWC_Backpack_Modern_US_Army_Rifleman: CUP_B_US_IIID_OCP
 	{
 		scope = 1;
 		class transportItems
@@ -61,12 +61,12 @@
 			};
 			class _xx_556
 			{
-				name = "rhs_mag_30Rnd_556x45_M855A1_PMAG";
+				name = "30Rnd_556x45_Stanag";
 				count = 10;
 			};
 			class _xx_556_t
 			{
-				name = "rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red";
+				name = "30Rnd_556x45_Stanag_Tracer_Red";
 				count = 5;
 			};
 		};
@@ -81,7 +81,7 @@
 	};
 	
 	
-		class TWC_Backpack_Modern_US_Army_40mm: rhsusf_assault_eagleaiii_ocp
+		class TWC_Backpack_Modern_US_Army_40mm: CUP_B_US_IIID_OCP
 	{
 		scope = 1;
 		class transportItems
@@ -93,12 +93,12 @@
 			};
 			class _xx_556
 			{
-				name = "rhs_mag_30Rnd_556x45_M855A1_PMAG";
+				name = "30Rnd_556x45_Stanag";
 				count = 5;
 			};
 			class _xx_40mm_het
 			{
-				name = "rhs_mag_M397_HET";
+				name = "CUP_1Rnd_HEDP_M203";
 				count = 3;
 			};
 			class _xx_40mm_he
@@ -135,7 +135,7 @@
 		
 	
 	
-	class TWC_Backpack_Modern_US_Army_Medic: rhsusf_assault_eagleaiii_ocp
+	class TWC_Backpack_Modern_US_Army_Medic: CUP_B_US_IIID_OCP
 	{
 		scope = 1;
 		class transportItems
@@ -186,7 +186,7 @@
 	
 	
 	
-		class TWC_Backpack_2000_US_Army_SL: rhsusf_assault_eagleaiii_ucp
+		class TWC_Backpack_2000_US_Army_SL: CUP_B_US_IIID_UCP
 	{
 		scope = 1;
 		mass = 5;
@@ -202,7 +202,7 @@
 	
 	
 	
-		class TWC_Backpack_2000_US_Army_AR: rhsusf_assault_eagleaiii_ucp
+		class TWC_Backpack_2000_US_Army_AR: CUP_B_US_IIID_UCP
 	{
 		scope = 1;
 		mass = 5;
@@ -210,14 +210,14 @@
 		{
 			class _xx_bandage_packing
 			{
-				name = "rhs_200rnd_556x45_T_SAW";
+				name = "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
 				count = 4;
 			};
 		};
 	};
 	
 	
-		class TWC_Backpack_2000_US_Army_Rifleman: rhsusf_assault_eagleaiii_ucp
+		class TWC_Backpack_2000_US_Army_Rifleman: CUP_B_US_IIID_UCP
 	{
 		scope = 1;
 		mass = 5;
@@ -225,7 +225,7 @@
 		{
 			class _xx_bandage_packing
 			{
-				name = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+				name = "30Rnd_556x45_Stanag";
 				count = 10;
 			};
 		};
@@ -242,7 +242,7 @@
 		
 	
 	
-		class TWC_Backpack_2000_US_Army_Medic: rhsusf_assault_eagleaiii_ucp
+		class TWC_Backpack_2000_US_Army_Medic: CUP_B_US_IIID_UCP
 	{
 		scope = 1;
 		mass = 5;
