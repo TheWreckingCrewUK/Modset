@@ -163,14 +163,14 @@
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_maaws_optic",
+			"CUP_launch_MAAWS_Scope",
 			"CUP_arifle_G36A"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_maaws_optic",
+			"CUP_launch_MAAWS_Scope",
 			"CUP_arifle_G36A"
 		};
 		magazines[]=
@@ -183,7 +183,7 @@
 			"CUP_30Rnd_556x45_G36",
 			"CUP_30Rnd_556x45_G36",
 			"CUP_30Rnd_556x45_G36",
-			"rhs_mag_maaws_HEDP",
+			"CUP_MAAWS_HEDP_M",
 			"HandGrenade",
 			"SmokeShell"
 		};
@@ -197,7 +197,7 @@
 			"CUP_30Rnd_556x45_G36",
 			"CUP_30Rnd_556x45_G36",
 			"CUP_30Rnd_556x45_G36",
-			"rhs_mag_maaws_HEDP",
+			"CUP_MAAWS_HEDP_M",
 			"HandGrenade",
 			"SmokeShell"
 		};
