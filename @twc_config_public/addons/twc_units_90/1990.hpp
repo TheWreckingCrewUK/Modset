@@ -84,7 +84,7 @@
 		backpack="TWC_Backpack_1990_Sectionlead";
 		linkedItems[]=
 		{
-			"twc_rhs_6sh92_radio_oli",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -92,7 +92,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_rhs_6sh92_radio_oli",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -157,7 +157,7 @@
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
-			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -165,7 +165,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -220,7 +220,7 @@
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
-			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -228,7 +228,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -239,7 +239,7 @@
 			"Throw",
 			"Put",	
 			"UK3CB_BAF_L85A1_SUSAT3D",
-			"rhs_weap_m72a7"
+			"CUP_launch_M72A6"
 		};
 		respawnweapons[]=
 		{
@@ -397,7 +397,7 @@
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
-			"rhsgref_alice_webbing",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Beret_RM_Officer_PRR",
 			"ItemMap",
 			"ItemCompass",
@@ -405,7 +405,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsgref_alice_webbing",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Beret_RM_Officer_PRR",
 			"ItemMap",
 			"ItemCompass",
@@ -509,7 +509,7 @@
 		twc_nobackpack = 0;
 		linkedItems[]=
 		{
-			"rhsgref_alice_webbing",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_F",
 			"ItemMap",
 			"ItemCompass",
@@ -517,7 +517,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsgref_alice_webbing",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_F",
 			"ItemMap",
 			"ItemCompass",
@@ -1203,14 +1203,14 @@
 		{
 		"Throw",
 		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
-		"rhs_weap_m72a7",
+		"CUP_launch_M72A6",
 		"Put"
 		};
 				respawnweapons[]=
 		{
 		"Throw",
 		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
-		"rhs_weap_m72a7",
+		"CUP_launch_M72A6",
 		"Put"
 		};
 		class EventHandlers: EventHandlers
@@ -1284,7 +1284,7 @@
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
-			"rhsgref_alice_webbing",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Beret_RM_Officer_PRR",
 			"ItemMap",
 			"ItemCompass",
@@ -1292,7 +1292,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsgref_alice_webbing",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Beret_RM_Officer_PRR",
 			"ItemMap",
 			"ItemCompass",
@@ -1310,7 +1310,7 @@
 		twc_nobackpack = 0;
 		linkedItems[]=
 		{
-			"rhsgref_alice_webbing",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_F",
 			"ItemMap",
 			"ItemCompass",
@@ -1318,7 +1318,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsgref_alice_webbing",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_F",
 			"ItemMap",
 			"ItemCompass",
@@ -1554,7 +1554,7 @@
 		backpack="TWC_Backpack_1990_Sectionlead";
 		linkedItems[]=
 		{
-			"twc_rhs_6sh92_radio_dpm",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1562,7 +1562,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_rhs_6sh92_radio_dpm",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1658,7 +1658,7 @@
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
-			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1666,7 +1666,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_rhs_6sh92_dpm",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1676,14 +1676,14 @@
 		{
 		"Throw",
 		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
-		"rhs_weap_m72a7",
+		"CUP_launch_M72A6",
 		"Put"
 		};
 				respawnweapons[]=
 		{
 		"Throw",
 		"UK3CB_BAF_L85A1_SUSAT3D_Lazer",
-		"rhs_weap_m72a7",
+		"CUP_launch_M72A6",
 		"Put"
 		};
 
@@ -1697,7 +1697,7 @@
 		backpack="TWC_Backpack_1990_Minimi";
 		linkedItems[]=
 		{
-			"twc_rhs_6sh92_oli",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1705,7 +1705,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_rhs_6sh92_oli",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1817,7 +1817,7 @@
 		backpack="TWC_Backpack_1990_2IC";
 		linkedItems[]=
 		{
-			"rhsgref_alice_webbing",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1825,7 +1825,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsgref_alice_webbing",
+			"UK3CB_BAF_V_PLCE_Webbing_DPMW",
 			"UK3CB_BAF_H_Mk6_DPMW_A",
 			"ItemMap",
 			"ItemCompass",
@@ -1912,7 +1912,7 @@
 		linkedItems[]=
 		{
         "twc_interceptor_ddpm",
-		"rhsusf_cvc_green_alt_helmet",
+		"CUP_H_CVC",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -1920,7 +1920,7 @@
 		respawnLinkedItems[]=
 		{
         "twc_interceptor_ddpm",
-		"rhsusf_cvc_green_alt_helmet",
+		"CUP_H_CVC",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -2020,7 +2020,7 @@
 		linkedItems[]=
 		{
         "twc_interceptor_od",
-		"rhsusf_cvc_green_alt_helmet",
+		"CUP_H_CVC",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -2028,7 +2028,7 @@
 		respawnLinkedItems[]=
 		{
         "twc_interceptor_od",
-		"rhsusf_cvc_green_alt_helmet",
+		"CUP_H_CVC",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
@@ -2365,7 +2365,7 @@
 		backpack="";
 		linkedItems[]=
 		{
-			"twc_rhs_6sh92_radio_ddpm",
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 			"UK3CB_BAF_H_Beret_PWRR_PRR",
 			"ItemMap",
 			"ItemCompass",
@@ -2373,7 +2373,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_rhs_6sh92_radio_ddpm",
+			"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
 			"UK3CB_BAF_H_Beret_PWRR_PRR",
 			"ItemMap",
 			"ItemCompass",
@@ -2385,11 +2385,6 @@
 //                    1990 Woodland American                    //
 //                                                              //
 //////////////////////////////////////////////////////////////////
-	class SoldierGB;
-	class rhsgref_nat_base: SoldierGB
-	{
-		modelSides[] = {0,1,2,3};
-	};
 	class twc_men_1990_us_w_base: B_Soldier_base_F
 	{
 		scope=2;
@@ -2400,11 +2395,11 @@
 		icon="iconMan";
 		backpack="twc_men_1990_us_w_backpack_rifleman";
 		nakedUniform="U_BasicBody";
-		uniformClass="rhsgref_uniform_woodland";
+		uniformClass="CUP_U_B_BDUv2_M81_US";
 		linkedItems[]=
 		{
 			"CUP_V_B_PASGT",
-			"rhsgref_helmet_pasgt_woodland",
+			"CUP_H_PASGTv2_WDL",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2412,7 +2407,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_PASGT",
-			"rhsgref_helmet_pasgt_woodland",
+			"CUP_H_PASGTv2_WDL",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2500,7 +2495,7 @@
 		linkedItems[]=
 		{
 			"CUP_V_B_Interceptor_Rifleman_M81",
-			"rhsgref_helmet_pasgt_woodland",
+			"CUP_H_PASGTv2_WDL",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2508,7 +2503,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_Interceptor_Rifleman_M81",
-			"rhsgref_helmet_pasgt_woodland",
+			"CUP_H_PASGTv2_WDL",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -2733,14 +2728,14 @@
 			"Throw",
 			"Put",	
 			"CUP_arifle_M16A2",
-			"rhs_weap_M136"
+			"CUP_launch_M136"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
 			"CUP_arifle_M16A2",
-			"rhs_weap_M136"
+			"CUP_launch_M136"
 		};
 		magazines[]=
 		{
@@ -2803,27 +2798,27 @@
 		{
 			"Throw",
 			"Put",	
-			"rhs_weap_m249"
+			"CUP_lmg_M249_E2"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"rhs_weap_m249"
+			"CUP_lmg_M249_E2"
 		};
 		magazines[]=
 		{
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
 			"HandGrenade",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
 			"HandGrenade",
 			"SmokeShell"
 		};		
