@@ -656,7 +656,7 @@
 			};
 			class _xx_rocket
 			{
-				magazine = "rhs_mag_maaws_HEDP";
+				magazine = "CUP_MAAWS_HEDP_M";
 				count = 2;
 			};
 
@@ -678,7 +678,7 @@
 			};
 			class _xx_rocket
 			{
-				magazine = "rhs_mag_maaws_HEDP";
+				magazine = "CUP_MAAWS_HEDP_M";
 				count = 2;
 			};
 
@@ -693,7 +693,7 @@
 		{
 			class _xx_mag
 			{
-				magazine = "rhs_mag_maaws_HEDP";
+				magazine = "CUP_MAAWS_HEDP_M";
 				count = 2;
 			};
 
@@ -811,7 +811,7 @@
 		{
 			class _xx_mag
 			{
-				magazine = "twc_rhsgref_30rnd_556x45_m21";
+				magazine = "CUP_30Rnd_556x45_AK";
 				count = 5;
 			};
 
@@ -829,7 +829,7 @@
 		{
 			class _xx_mag
 			{
-				magazine = "twc_rhsgref_30rnd_556x45_m21";
+				magazine = "CUP_30Rnd_556x45_AK";
 				count = 5;
 			};
 
@@ -847,13 +847,13 @@
 		{
 			class _xx_og7
 			{
-				magazine = "rhs_rpg7_PG7VL_mag";
+				magazine = "CUP_PG7VL_M";
 				count = 1;
 			};
 			
 			class _xx_pg7
 			{
-				magazine = "rhs_rpg7_TBG7V_mag";
+				magazine = "CUP_TBG7V_M";
 				count = 1;
 			};
 		};
@@ -871,7 +871,7 @@
 		{
 			class _xx_pkm
 			{
-				magazine = "rhs_100Rnd_762x54mmR_green";
+				magazine = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 				count = 4;
 			};
 			
@@ -926,32 +926,32 @@
 		{
 			class _xx_stanag
 			{
-				magazine = "rhs_30Rnd_545x39_7N6M_plum_AK";
+				magazine = "CUP_30Rnd_545x39_AK74_plum_M";
 				count = 5;
 			};
 			class _xx_m21
 			{
-				magazine = "rhs_100Rnd_762x54mmR_green";
+				magazine = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 				count = 2;
 			};
 			class _xx_40mm_smoke_white
 			{
-				magazine = "rhs_GRD40_White";
+				magazine = "CUP_1Rnd_SMOKE_GP25_M";
 				count = 5;
 			};
 			class _xx_40mm_smoke_red
 			{
-				magazine = "rhs_GRD40_Red";
+				magazine = "CUP_1Rnd_SMOKERED_GP25_M";
 				count = 5;
 			};
 			class _xx_40mm_smoke_green
 			{
-				magazine = "rhs_GRD40_Green";
+				magazine = "CUP_1Rnd_SMOKEGREEN_GP25_M";
 				count = 5;
 			};
 			class _xx_40mm
 			{
-				magazine = "rhs_VOG25";
+				magazine = "CUP_1Rnd_HE_GP25_M";
 				count = 20;
 			};
 		};
@@ -987,15 +987,15 @@
 		};
 		
 	};
-	class rhs_assault_umbts;
-	class rus_backpack_MG: rhs_assault_umbts
+	class CUP_O_RUS_Patrol_bag_Green;
+	class rus_backpack_MG: CUP_O_RUS_Patrol_bag_Green
 	{
 		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_stanag
 			{
-				magazine = "rhs_100Rnd_762x54mmR_green";
+				magazine = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 				count = 3;
 			};
 		};
@@ -1029,7 +1029,7 @@
 		{
 			class _xx_stanag
 			{
-				magazine = "rhs_30Rnd_545x39_AK_plum_green";
+				magazine = "CUP_30Rnd_545x39_AK74_plum_M";
 				count = 3;
 			};
 		};
@@ -1085,12 +1085,12 @@
 		{
 			class _xx_stanag
 			{
-				magazine = "rhs_30Rnd_545x39_7N6M_plum_AK";
+				magazine = "CUP_30Rnd_545x39_AK74_plum_M";
 				count = 8;
 			};
 			class _xx_stanag_t
 			{
-				magazine = "rhs_30Rnd_545x39_AK_plum_green";
+				magazine = "CUP_30Rnd_545x39_AK74_plum_M";
 				count = 8;
 			};
 		};
@@ -1144,26 +1144,24 @@
 			};
 			class _xx_stanag
 			{
-				magazine = "twc_rhsgref_30rnd_556x45_m21";
+				magazine = "CUP_30Rnd_556x45_AK";
 				count = 5;
 			};
 			class _xx_m21
 			{
-				magazine = "rhs_100Rnd_762x54mmR_green";
+				magazine = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 				count = 2;
 			};
 			class _xx_40mm
 			{
-				magazine = "rhs_VOG25";
+				magazine = "CUP_1Rnd_HE_GP25_M";
 				count = 10;
 			};
 		};
 		
 	};
 
-	
-	class rhs_medic_bag;
-	class rus_backpack_medic: rhs_medic_bag
+	class rus_backpack_medic: CUP_O_RUS_Patrol_bag_Green
 	{
 		scope = 1;
 		class TransportItems
@@ -1351,7 +1349,7 @@
 		{
 			class _xx_og7
 			{
-				magazine = "rhsgref_30rnd_556x45_m21";
+				magazine = "CUP_30Rnd_545x39_AK74_plum_M";
 				count = 15;
 			};
 
@@ -1447,7 +1445,7 @@
 			};
 			class _xx_m21
 			{
-				magazine = "rhsgref_30rnd_556x45_m21";
+				magazine = "CUP_30Rnd_545x39_AK74_plum_M";
 				count = 15;
 			};
 			class _xx_40mm
@@ -1543,13 +1541,13 @@
 		{
 			class _xx_og7
 			{
-				magazine = "rhs_rpg7_OG7V_mag";
+				magazine = "CUP_OG7_M";
 				count = 3;
 			};
 			
 			class _xx_pg7
 			{
-				magazine = "rhs_rpg7_PG7V_mag";
+				magazine = "CUP_PG7V_M";
 				count = 2;
 			};
 		};
@@ -1564,7 +1562,7 @@
 		{
 			class _xx_pkm
 			{
-				magazine = "rhs_100Rnd_762x54mmR_green";
+				magazine = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 				count = 4;
 			};
 			
@@ -1619,7 +1617,7 @@
 		{
 			class _xx_mags
 			{
-				magazine = "rhs_30Rnd_762x39mm";
+				magazine = "CUP_30Rnd_762x39_AK47_M";
 				count = 10;
 			};
 			class _xx_Smoke

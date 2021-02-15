@@ -96,13 +96,13 @@
 		};
 		magazines[]=
 		{
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -111,13 +111,13 @@
 		};
 		Respawnmagazines[]=
 		{
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -135,7 +135,7 @@
 		linkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_OD",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -143,7 +143,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_OD",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -180,7 +180,7 @@
 		linkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_OD",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -188,7 +188,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_OD",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -215,32 +215,32 @@
 		};
 		magazines[]=
 		{
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"rhs_VOG25",
-			"rhs_VOG25",
-			"rhs_VOG25",
-			"rhs_VOG25",
-			"rhs_VOG25",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
 			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"twc_rhsgref_30rnd_556x45_m21",
-			"rhs_VOG25",
-			"rhs_VOG25",
-			"rhs_VOG25",
-			"rhs_VOG25",
-			"rhs_VOG25",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_30Rnd_556x45_AK",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
 			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell"
@@ -256,7 +256,7 @@
 		linkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_OD",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -264,7 +264,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_OD",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -281,17 +281,17 @@
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_pkm"
+			"CUP_lmg_PKM"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_pkm"
+			"CUP_lmg_PKM"
 		};
 		magazines[]=
 		{
-			"rhs_100Rnd_762x54mmR_green",
+			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -301,7 +301,7 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_100Rnd_762x54mmR_green",
+			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -320,7 +320,7 @@
 		linkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_OD",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -328,7 +328,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_OD",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -384,7 +384,7 @@
 		linkedItems[]=
 		{
 			"CUP_V_B_Ciras_Olive",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"itemCTAB",
@@ -393,7 +393,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_Ciras_Olive",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"itemCTAB",
@@ -434,7 +434,7 @@
 		linkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_GRN",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -442,7 +442,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_GRN",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -468,7 +468,7 @@
 		linkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_OD",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -476,7 +476,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_LBT_LBV_OD",
-			"rhsgref_helmet_pasgt_olive",
+			"CUP_H_PASGTv2_OD",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
