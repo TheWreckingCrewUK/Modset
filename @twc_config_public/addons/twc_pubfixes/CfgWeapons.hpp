@@ -6,7 +6,7 @@ class asdg_OpticRail1913;
 
 class CfgWeapons {
 	
-	
+	class arifle_Mk20_plain_f;
 	class Launcher;
 	class Launcher_Base_F: Launcher
 	{
@@ -432,12 +432,6 @@ class CfgWeapons {
 		class Single;
 	};
 	
-	
-	class UK3CB_BAF_L119_Base: arifle_Mk20_plain_F {
-		class FullAuto: FullAuto {
-			reloadTime = 0.07;
-		};
-	};
 	class UK3CB_BAF_L85A2: arifle_Mk20_plain_F {
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";

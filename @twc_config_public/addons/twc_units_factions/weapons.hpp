@@ -2,8 +2,8 @@
 
 class cfgammo{
 	class rocketbase;
-	class MRAWS_HE_F;
-	class TWC_R_OG7_AT: MRAWS_HE_F
+	class R_MRAAWS_HE_F;
+	class TWC_R_OG7_AT: R_MRAAWS_HE_F
 	{
 		explosionEffects = "GrenadeExplosion";
 		ace_frag_charge = 32;

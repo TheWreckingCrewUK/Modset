@@ -657,7 +657,6 @@ class cfgWeapons
 	};
 	
 	
-	class CUP_arifle_M4A1;
 	class twc_m4_cco_vfg:CUP_arifle_M4A1
 	{
 		class LinkedItems

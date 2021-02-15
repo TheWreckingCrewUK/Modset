@@ -284,13 +284,13 @@ class O_Soldier_Base_F;
 		{
 			"Throw",
 			"Put",
-			"CUP_arifle_AK74M_fullplum_gp25"
+			"CUP_arifle_AK74M_GL_kobra_snds"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"CUP_arifle_AK74M_fullplum_gp25"
+			"CUP_arifle_AK74M_GL_kobra_snds"
 		};
 		magazines[]=
 		{
@@ -506,14 +506,14 @@ class O_Soldier_Base_F;
 			"Throw",
 			"Put",
 			"CUP_SOFLAM",
-			"CUP_arifle_AK74M_pkas"
+			"CUP_arifle_AK74M_EKP"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"CUP_SOFLAM",
-			"CUP_arifle_AK74M_pkas"
+			"CUP_arifle_AK74M_EKP"
 		};
 	};
 	class TWC_Modern_rus_commander_l: TWC_Modern_rus_commander
@@ -702,13 +702,13 @@ class O_Soldier_Base_F;
 		{
 			"Throw",
 			"Put",
-			"CUP_arifle_AK74M_fullplum_gp25"
+			"CUP_arifle_AK74M_GL_kobra_snds"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"CUP_arifle_AK74M_fullplum_gp25"
+			"CUP_arifle_AK74M_GL_kobra_snds"
 		};
 		magazines[]=
 		{
@@ -1251,24 +1251,24 @@ class O_Soldier_Base_F;
 			"Throw",
 			"ACE_MX2A",
 			"Put",
-			"twc_rus_svd"
+			"CUP_srifle_SVD_NSPU"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"ACE_MX2A",
 			"Put",
-			"twc_weap_ak105_sniper"
+			"CUP_srifle_SVD_NSPU"
 		};
 		magazines[]=
 		{
 			"SmokeShell",
-			"10Rnd_762x54_Mag",
-			"10Rnd_762x54_Mag",
-			"10Rnd_762x54_Mag",
-			"10Rnd_762x54_Mag",
-			"10Rnd_762x54_Mag",
-			"10Rnd_762x54_Mag",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
 			"ACE_10Rnd_762x54_Tracer_mag",
 			"ACE_10Rnd_762x54_Tracer_mag",
 			"ACE_10Rnd_762x54_Tracer_mag",
@@ -1278,12 +1278,12 @@ class O_Soldier_Base_F;
 		Respawnmagazines[]=
 		{
 			"SmokeShell",
-			"10Rnd_762x54_Mag",
-			"10Rnd_762x54_Mag",
-			"10Rnd_762x54_Mag",
-			"10Rnd_762x54_Mag",
-			"10Rnd_762x54_Mag",
-			"10Rnd_762x54_Mag",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
 			"ACE_10Rnd_762x54_Tracer_mag",
 			"ACE_10Rnd_762x54_Tracer_mag",
 			"ACE_10Rnd_762x54_Tracer_mag",
@@ -1327,14 +1327,14 @@ class O_Soldier_Base_F;
 			"Throw",
 			"Put",
 			"CUP_SOFLAM",
-			"twc_weap_ak105_spotter"
+			"CUP_arifle_AK74M_pso"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"CUP_SOFLAM",
-			"twc_weap_ak105_spotter"
+			"CUP_arifle_AK74M_pso"
 		};
 		magazines[]=
 		{
@@ -1466,14 +1466,14 @@ class O_Soldier_Base_F;
 			"Throw",
 			"Put",
 			"UK3CB_BAF_L131A1",
-			"twc_weap_ak74_supp_eotech"
+			"CUP_arifle_AK74M_kobra"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"UK3CB_BAF_L131A1",
-			"twc_weap_ak74_supp_eotech"
+			"CUP_arifle_AK74M_kobra"
 		};
 		magazines[]=
 		{
@@ -1525,14 +1525,14 @@ class O_Soldier_Base_F;
 			"Throw",
 			"Put",
 			"UK3CB_BAF_L131A1",
-			"twc_weap_ak74_supp_t1"
+			"CUP_arifle_AK74M_kobra"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"UK3CB_BAF_L131A1",
-			"twc_weap_ak74_supp_t1"
+			"CUP_arifle_AK74M_kobra"
 		};
 	};
 	
@@ -1565,7 +1565,7 @@ class O_Soldier_Base_F;
 			"Put",
 			"UK3CB_BAF_Soflam_Laserdesignator",
 			"UK3CB_BAF_L131A1",
-			"twc_weap_ak74_supp_specter"
+			"CUP_arifle_AK74M_kobra"
 		};
 		respawnweapons[]=
 		{
@@ -1573,7 +1573,7 @@ class O_Soldier_Base_F;
 			"Put",
 			"UK3CB_BAF_Soflam_Laserdesignator",
 			"UK3CB_BAF_L131A1",
-			"twc_weap_ak74_supp_specter"
+			"CUP_arifle_AK74M_kobra"
 		};
 		magazines[]=
 		{
@@ -1627,7 +1627,7 @@ class O_Soldier_Base_F;
 			"Put",
 			"CUP_SOFLAM",
 			"UK3CB_BAF_L131A1",
-			"twc_weap_ak74_supp_specter"
+			"CUP_arifle_AK74M_kobra"
 		};
 		respawnweapons[]=
 		{
@@ -1635,7 +1635,7 @@ class O_Soldier_Base_F;
 			"Put",
 			"CUP_SOFLAM",
 			"UK3CB_BAF_L131A1",
-			"twc_weap_ak74_supp_specter"
+			"CUP_arifle_AK74M_kobra"
 		};
 	};
 	

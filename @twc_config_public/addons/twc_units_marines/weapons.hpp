@@ -171,7 +171,6 @@ class cfgWeapons
 		descriptionShort = "Match Grade Competition Rifle<br/>Caliber: 5.56x45mm NATO";
 	};
 	
-	class CUP_arifle_M16A4_GL;
 	class twc_CUP_arifle_M16A4_GL: CUP_arifle_M16A4_GL
 	{
 		class WeaponSlotsInfo
