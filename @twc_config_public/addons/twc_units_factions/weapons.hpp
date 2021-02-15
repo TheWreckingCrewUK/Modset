@@ -2,8 +2,8 @@
 
 class cfgammo{
 	class rocketbase;
-	class rhs_ammo_maaws_HE;
-	class TWC_R_OG7_AT: rhs_ammo_maaws_HE
+	class MRAWS_HE_F;
+	class TWC_R_OG7_AT: MRAWS_HE_F
 	{
 		explosionEffects = "GrenadeExplosion";
 		ace_frag_charge = 32;
@@ -16,7 +16,6 @@ class cfgammo{
 		hit = 80;
 		indirectHit = 8;
 		indirectHitRange = 6;
-		model = "rhsusf\addons\rhsusf_weapons2\m3maaws\ammo_m3maaws.p3d";
 	};
 	class CUP_R_PG7VL_AT: rocketbase
 	{
@@ -47,12 +46,7 @@ class cfgmagazines{
 		ammo = "CUP_B_23mm_APHE_Tracer_Green";
 		tracersEvery = 1;
 	};
-	
-	class rhs_rpg7_PG7VL_mag;
-	class rhs_rpg7_OG7V_mag: rhs_rpg7_PG7VL_mag
-	{
-		ammo = "TWC_R_OG7_AT";
-	};
+
 	class CA_LauncherMagazine;
 	class CUP_OG7_M : CA_LauncherMagazine
 	{
@@ -63,7 +57,6 @@ class cfgmagazines{
 
 class asdg_MuzzleSlot_556;
 class asdg_OpticSideRail_AKSVD;
-class rhs_western_rifle_scopes_slot_short;
 
 class cfgweapons{
 
@@ -188,16 +181,11 @@ class cfgweapons{
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhs_acc_1pn93_2";
+				item="CUP_optic_PechenegScope";
 			};
 		};
 		class WeaponSlotsInfo
 		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					rhs_acc_1pn93_2 = 1;
-				};
-			};
 			allowedslots[] = {901};
 			mass = 192.96;
 		};
@@ -213,20 +201,8 @@ class cfgweapons{
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_eotech_xps3";
-				//item="rhsusf_acc_EOTECH";
+				item="CUP_optic_1P87_RIS_desert";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					rhsusf_acc_EOTECH = 1;
-					rhsusf_acc_eotech_xps3 = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 92.96;
 		};
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";
@@ -239,11 +215,6 @@ class cfgweapons{
 		modelSides[] = {0,1,2,3};
 	};
 	*/
-	class rhs_uniform_g3_mc;
-	class twc_cryeG3_russof_roll: rhs_uniform_g3_mc
-	{
-		modelSides[] = {0,1,2,3};
-	};
 	
 	class CUP_arifle_AK74M_railed_afg_desert;
 	class twc_ak74_sof_afg_suppressed: CUP_arifle_AK74M_railed_afg_desert
@@ -253,29 +224,13 @@ class cfgweapons{
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_t1_low";
+				item="CUP_optic_MicroT1_low";
 			};
 			class LinkedItemsMuzzle
 			{
 				slot="MuzzleSlot";
 				item="cup_muzzle_tgpa_desert";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					rhsusf_acc_t1_low = 1;
-				};
-			};
-			class MuzzleSlot: asdg_MuzzleSlot_556 {
-				class compatibleItems {
-					cup_muzzle_tgpa_desert = 1;
-					rhs_acc_dtk4short = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 92.96;
 		};
 		recoil = "twc_rifle_556";
 		recoilProne = "twc_rifle_556_prone";

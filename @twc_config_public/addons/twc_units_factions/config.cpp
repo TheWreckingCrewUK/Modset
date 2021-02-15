@@ -420,7 +420,6 @@ class CfgVehicles
 {
 	class CUP_B_AlicePack_Khaki;
 	class CUP_B_RPGPack_Khaki;
-	class rhs_sidor;
 	class twc_Backpack_m60: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
@@ -454,7 +453,7 @@ class CfgVehicles
 		{
 			class _xx_Mags
 			{
-				magazine="rhs_30Rnd_545x39_7N22_desert_AK";
+				magazine="CUP_30Rnd_545x39_AK74M_camo_M";
 				count=4;
 			};
 		};
@@ -468,7 +467,7 @@ class CfgVehicles
 		{
 			class _xx_Mags
 			{
-				magazine="rhs_100Rnd_762x54mmR_7N26";
+				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 				count=4;
 			};
 		};
@@ -481,7 +480,7 @@ class CfgVehicles
 		{
 			class _xx_mgMags
 			{
-				magazine="rhs_mag_maaws_HEAT";
+				magazine="CUP_MAAWS_HEAT_M";
 				count=4;
 			};
 		};
@@ -609,7 +608,7 @@ class CfgVehicles
 		{
 			class _xx_VOG25
 			{
-				magazine="rhs_VOG25";
+				magazine="CUP_1Rnd_HE_GP25_M";
 				count=5;
 			};
 		};
@@ -623,20 +622,20 @@ class CfgVehicles
 		{
 			class _xx_VOG25
 			{
-				magazine="rhs_VOG25";
+				magazine="CUP_1Rnd_HE_GP25_M";
 				count=5;
 			};
 		};
 	};
 	
-			class Backpack_twc_bombmaker: rhs_sidor
+			class Backpack_twc_bombmaker: CUP_O_RUS_Patrol_bag_Green
 	{
 		scope = 1;
 		class TransportMagazines
 		{
 			class _xx_ied1
 			{
-				magazine="rhs_mag_mine_pfm1";
+				magazine="APERSTripMine_Wire_Mag";
 				count=6;
 			};
 
@@ -665,7 +664,7 @@ class CfgVehicles
 		};
 	};
 	
-			class Backpack_rpk: rhs_sidor
+			class Backpack_rpk: CUP_O_RUS_Patrol_bag_Green
 	{
 		scope = 1;
 		class TransportMagazines

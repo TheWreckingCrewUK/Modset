@@ -756,14 +756,14 @@
 		"Throw",
 		"Put",
 		"CUP_srifle_Mosin_Nagant",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"CUP_srifle_Mosin_Nagant",
-		"rhsusf_weap_m1911a1"
+		"CUP_hgun_Colt1911"
 		};
 		magazines[]=
 		{
@@ -790,8 +790,8 @@
 		"CUP_5Rnd_762x54_Mosin_M",
 		"CUP_5Rnd_762x54_Mosin_M",
 		"CUP_5Rnd_762x54_Mosin_M",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP"
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911"
 		};
 		Respawnmagazines[]=
 		{
@@ -819,8 +819,8 @@
 		"CUP_5Rnd_762x54_Mosin_M",
 		"CUP_5Rnd_762x54_Mosin_M",
 		"CUP_5Rnd_762x54_Mosin_M",
-		"rhsusf_mag_7x45acp_MHP",
-		"rhsusf_mag_7x45acp_MHP"
+		"CUP_7Rnd_45ACP_1911",
+		"CUP_7Rnd_45ACP_1911"
 		};
 		Items[]=
 		{
@@ -897,33 +897,33 @@
 		};
 		magazines[]=
 		{
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG"
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG",
-		"rhs_mag_30Rnd_556x45_M855_PMAG"
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag",
+		"CUP_30Rnd_556x45_Stanag"
 		};
 		Items[]=
 		{
@@ -953,33 +953,49 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_M590_5RD"
+		"CUP_sgun_CZ584"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_M590_5RD"
+		"CUP_sgun_CZ584"
 		};
 		magazines[]=
 		{
-		"rhsusf_5Rnd_00Buck",
-		"rhsusf_5Rnd_00Buck",
-		"rhsusf_5Rnd_00Buck",
-		"rhsusf_5Rnd_00Buck",
-		"rhsusf_5Rnd_00Buck",
-		"rhsusf_5Rnd_00Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
 
-		"rhsusf_5Rnd_00Buck",
-		"rhsusf_5Rnd_00Buck",
-		"rhsusf_5Rnd_00Buck",
-		"rhsusf_5Rnd_00Buck",
-		"rhsusf_5Rnd_00Buck",
-		"rhsusf_5Rnd_00Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_1Rnd_12Gauge_Pellets_No00_Buck",
 		"SmokeShell"
 		};
 		Items[]=
@@ -1309,14 +1325,14 @@ class Tak_twc_ins_Men_sniper_h: Tak_twc_ins_Men_sniper
 		"CUP_8Rnd_9x18_Makarov_M",
 		"CUP_8Rnd_9x18_Makarov_M",
 		"CUP_8Rnd_9x18_Makarov_M",
-		"rhs_mag_rgn"
+		"CUP_HandGrenade_RGO"
 		};
 		Respawnmagazines[]=
 		{
 		"CUP_8Rnd_9x18_Makarov_M",
 		"CUP_8Rnd_9x18_Makarov_M",
 		"CUP_8Rnd_9x18_Makarov_M",
-		"rhs_mag_rgn"
+		"CUP_HandGrenade_RGO"
 		};
 		Items[]=
 		{
