@@ -4,39 +4,35 @@ class UK3CB_underbarrel_rifle_slot;
 class asdg_MuzzleSlot_762_L129_3CB;
 class asdg_OpticRail1913_short;
 class asdg_UnderSlot;
-class rhs_western_rifle_scopes_slot_short;
-class rhs_western_rifle_laser_slot_top;
-class rhs_western_rifle_gripod_slot;
-class rhs_western_rifle_underbarrel_slot;
 class CUP_PicatinnyTopMount;
 class asdg_OpticRail1913;
 class CUP_PicatinnyUnderMount;
 
 class cfgWeapons
 {
-	class rhs_weap_m4a1_m203;
-	class rhs_weap_m4a1;
-	class rhs_weap_m249_pip_L;
-	class rhs_weap_m240B;
-	class rhs_weap_m27iar_grip;
-	class rhs_weap_m16a4_carryhandle;
-	class rhs_weap_m16a4_carryhandle_M203;
-	class rhs_weap_smaw_green;
+	class CUP_arifle_M4A1_GL_carryhandle;
+	class CUP_arifle_M4A1;
+	class CUP_lmg_m249_pip1;
+	class CUP_lmg_M240_B;
+	class CUP_arifle_HK_M27_VFG;
+	class CUP_arifle_M16A4_Base;
+	class CUP_arifle_M16A4_GL;
+	class CUP_launch_Mk153Mod0;
 	
-	class twc_smaw: rhs_weap_smaw_green
+	class twc_smaw: CUP_launch_Mk153Mod0
 	{
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhs_weap_optic_smaw";
+				item="CUP_optic_SMAW_Scope";
 			};
 		};
 	};
 	
 	
-	class twc_rhs_weap_m4a1_m203_acog_lazer: rhs_weap_m4a1_m203
+	class twc_CUP_arifle_M4A1_GL_carryhandle_acog_lazer: CUP_arifle_M4A1_GL_carryhandle
 	{
 		class LinkedItems
 		{
@@ -51,98 +47,48 @@ class cfgWeapons
 				item="cup_acc_anpeq_15_flashlight_black_l";
 			};
 		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					cup_optic_acog2_pip = 1;
-					rhsusf_acc_compm4 = 1;
-					rhsusf_acc_eotech_552 = 1;
-				};
-			};
-			class PointerSlot: rhs_western_rifle_laser_slot_top {
-				class compatibleItems {
-					cup_acc_anpeq_15_flashlight_black_F = 1;
-					cup_acc_anpeq_15_flashlight_black_l = 1;
-					cup_acc_anpeq_15_flashlight_black_v = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 102.96;
-		};
 	};
 	
-	class rhs_weap_m40a5_d;
-	class twc_m40_d_sniper: rhs_weap_m40a5_d
+	class CUP_srifle_M40A3;
+	class twc_m40_d_sniper: CUP_srifle_M40A3
 	{
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_m8541_low_d";
+				item="CUP_optic_Leupold_VX3";
 			};
 			class LinkedItemsUnderBarrelSlot
 			{
 				slot="UnderBarrelSlot";
-				item="rhsusf_acc_harris_swivel";
+				item="CUP_bipod_Harris_1A2_L_BLK";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					rhsusf_acc_m8541_low_d = 1;
-					rhsusf_acc_premier_anpvs27 = 1;
-				};
-			};
-			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {
-				class compatibleItems {
-					rhsusf_acc_harris_swivel = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 92.96;
 		};
 		recoil = "twc_rifle_762";
 		recoilProne = "twc_rifle_762_prone";
 	};
 	
-	class rhs_weap_m14ebrri;
-	class twc_m14_spotter: rhs_weap_m14ebrri
+	class CUP_srifle_M14_DMR;
+	class twc_m14_spotter: CUP_srifle_M14_DMR
 	{
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_m8541_low";
+				item="CUP_optic_Leupold_VX3";
 			};
 			class LinkedItemsUnderBarrelSlot
 			{
 				slot="UnderBarrelSlot";
-				item="rhsusf_acc_harris_bipod";
+				item="CUP_bipod_Harris_1A2_L_BLK";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					rhsusf_acc_m8541_low = 1;
-				};
-			};
-			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {
-				class compatibleItems {
-					rhsusf_acc_harris_bipod = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 92.96;
 		};
 	};
 	
 		
-	class twc_ana_m16a4: rhs_weap_m16a4_carryhandle
+	class twc_ana_m16a4: CUP_arifle_M16A4_Base
 	{
 		
 		class WeaponSlotsInfo {
@@ -167,18 +113,8 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L128A1";
-				item="rhsusf_acc_compm4";
+				item="CUP_optic_CompM2_low";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class asdg_OpticRail_UK3CB_BAF_L128A1: asdg_OpticRail1913 {
-				class compatibleItems {
-					rhsusf_acc_compm4 = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 84.8;
 		};
 	};
 	
@@ -206,23 +142,6 @@ class cfgWeapons
 				item="cup_acc_anpeq_2";
 			};
 		};
-		class WeaponSlotsInfo
-		{
-			class CUP_PicatinnyTopMountM16: CUP_PicatinnyTopMount {
-				class compatibleItems {
-					cup_optic_acog2_pip = 1;
-					rhsusf_acc_compm4 = 1;
-					rhsusf_acc_eotech_552 = 1;
-				};
-			};
-			class CUP_PicatinnySideMountM16: rhs_western_rifle_laser_slot_top {
-				class compatibleItems {
-					cup_acc_anpeq_2 = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 74.8;
-		};
 	};
 		
 	class twc_CUP_arifle_M16A4_Grip_acog_sdmr: CUP_TWC_arifle_M16A4_Grip_base
@@ -242,30 +161,8 @@ class cfgWeapons
 			class LinkedItemsUnderBarrelSlot
 			{
 				slot="CUP_PicatinnyUnderMountM16";
-				item="rhsusf_acc_harris_bipod";
+				item="CUP_bipod_Harris_1A2_L_BLK";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class CUP_PicatinnyTopMountM16: CUP_PicatinnyTopMount {
-				class compatibleItems {
-					cup_optic_acog2_pip = 1;
-					rhsusf_acc_compm4 = 1;
-					rhsusf_acc_eotech_552 = 1;
-				};
-			};
-			class CUP_PicatinnySideMountM16: CUP_PicatinnySideMount {
-				class compatibleItems {
-					cup_acc_anpeq_2 = 1;
-				};
-			};
-			class CUP_PicatinnyUnderMountM16: CUP_PicatinnyUnderMount {
-				class compatibleItems {
-					rhsusf_acc_harris_bipod = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 76.8;
 		};
 		recoil = "twc_rifle_556_long";
 		recoilProne = "twc_rifle_556_long_prone";
@@ -286,7 +183,7 @@ class cfgWeapons
 		recoilProne = "twc_rifle_556_prone";
 	};
 		
-	class twc_rhs_weap_m16a4_acog_lazer: rhs_weap_m16a4_carryhandle
+	class twc_rhs_weap_m16a4_acog_lazer: CUP_arifle_M16A4_Base
 	{
 		class LinkedItems
 		{
@@ -298,30 +195,12 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15_bk_light";
+				item="CUP_acc_ANPEQ_15_Black_Top";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					cup_optic_acog2_pip = 1;
-					rhsusf_acc_compm4 = 1;
-					rhsusf_acc_eotech_552 = 1;
-				};
-			};
-			class PointerSlot: rhs_western_rifle_laser_slot_top {
-				class compatibleItems {
-					rhsusf_acc_anpeq15_bk_light = 1;
-					rhsusf_acc_anpeq15_bk = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 74.8;
 		};
 	};
 	
-		class twc_rhs_weap_m16a4_m203_acog_lazer: rhs_weap_m16a4_carryhandle_M203
+		class twc_rhs_weap_m16a4_m203_acog_lazer: CUP_arifle_M16A4_GL
 	{
 		class LinkedItems
 		{
@@ -336,28 +215,9 @@ class cfgWeapons
 				item="cup_acc_anpeq_15_flashlight_black_L";
 			};
 		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					cup_optic_acog2_pip = 1;
-					rhsusf_acc_compm4 = 1;
-					rhsusf_acc_eotech_552 = 1;
-				};
-			};
-			class PointerSlot: rhs_western_rifle_laser_slot_top {
-				class compatibleItems {
-					cup_acc_anpeq_15_flashlight_black_F = 1;
-					cup_acc_anpeq_15_flashlight_black_L = 1;
-					cup_acc_anpeq_15_flashlight_black_V = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 104.72;
-		};
 	};
 	
-	class twc_rhs_weap_m4a1_acog_lazer: rhs_weap_m4a1
+	class twc_CUP_arifle_M4A1_acog_lazer: CUP_arifle_M4A1
 	{
 		class LinkedItems
 		{
@@ -369,30 +229,12 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15_bk_light";
+				item="CUP_acc_ANPEQ_15_Black_Top";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					cup_optic_acog2_pip = 1;
-					rhsusf_acc_compm4 = 1;
-					rhsusf_acc_eotech_552 = 1;
-				};
-			};
-			class PointerSlot: rhs_western_rifle_laser_slot_top {
-				class compatibleItems {
-					rhsusf_acc_anpeq15_bk_light = 1;
-					rhsusf_acc_anpeq15_bk = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 73.04;
 		};
 	};
 	
-	class twc_rhs_weap_m249_pip_L_mgo_lazer: rhs_weap_m249_pip_L
+	class twc_CUP_lmg_m249_pip2_mgo_lazer: CUP_lmg_m249_pip1
 	{
 		twc_openbolt = 1;
 		class LinkedItems
@@ -400,22 +242,11 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_ELCAN";
+				item="CUP_optic_ElcanM145";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					rhsusf_acc_ELCAN = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 181;
 		};
 	};
-	class rhs_weap_m249_pip;
-	class twc_rhs_weap_m249_pip_acog: rhs_weap_m249_pip
+	class twc_rhs_weap_m249_pip_acog: CUP_lmg_m249_pip1
 	{
 		twc_openbolt = 1;
 		class LinkedItems
@@ -426,19 +257,9 @@ class cfgWeapons
 				item="cup_optic_acog2_pip";
 			};
 		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					cup_optic_acog2_pip = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 181;
-		};
 	};
 	
-	class twc_rhs_weap_m240B_mgo_lazer: rhs_weap_m240B
+	class twc_CUP_lmg_M240_B_mgo_lazer: CUP_lmg_M240_B
 	{
 		twc_openbolt = 1;
 		class LinkedItems
@@ -446,17 +267,17 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_ELCAN";
+				item="CUP_optic_ElcanM145";
 			};
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15side";
+				item="CUP_acc_ANPEQ_15_Black";
 			};
 		};
 	};
-	class rhs_weap_m240G;
-	class twc_rhs_weap_m240G_mdo_lazer: rhs_weap_m240G
+	class CUP_lmg_M240;
+	class twc_rhs_weap_m240G_mdo_lazer: CUP_lmg_M240
 	{
 		twc_openbolt = 1;
 		class LinkedItems
@@ -464,21 +285,11 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_acog_mdo";
+				item="CUP_optic_ACOG_TA01B_Black";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					rhsusf_acc_acog_mdo = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 255.2;
 		};
 	};
-	class twc_rhs_weap_m27iar_grip_acog_lazer: rhs_weap_m27iar_grip
+	class twc_CUP_arifle_HK_M27_VFG_acog_lazer: CUP_arifle_HK_M27_VFG
 	{
 		class LinkedItems
 		{
@@ -490,36 +301,13 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15_bk_light";
+				item="CUP_acc_ANPEQ_15_Black_Top";
 			};
 			class LinkedItemsUnderBarrelSlot
 			{
 				slot="UnderBarrelSlot";
 				item="bipod_01_F_blk";
 			};
-		};
-		class WeaponSlotsInfo
-		{
-			class CowsSlot: rhs_western_rifle_scopes_slot_short {
-				class compatibleItems {
-					cup_optic_acog2_pip = 1;
-					rhsusf_acc_compm4 = 1;
-					rhsusf_acc_eotech_552 = 1;
-				};
-			};
-			class PointerSlot: rhs_western_rifle_laser_slot_top {
-				class compatibleItems {
-					rhsusf_acc_anpeq15_bk_light = 1;
-					rhsusf_acc_anpeq15_bk = 1;
-				};
-			};
-			class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {
-				class compatibleItems {
-					bipod_01_F_blk = 1;
-				};
-			};
-			allowedslots[] = {901};
-			mass = 79.2;
 		};
 	};
 };
