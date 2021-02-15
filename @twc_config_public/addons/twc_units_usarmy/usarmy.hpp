@@ -6,7 +6,7 @@
 		editorSubcategory = "US_Men_Modern";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="rhs_uniform_cu_ocp";
+		uniformClass="CUP_U_B_USArmy_ACU_OCP";
 		Items[]=
 		{
 			"ACE_fieldDressing",
@@ -69,8 +69,8 @@
 		backpack="TWC_Backpack_Modern_US_Army_SL";
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_teamleader",
-			"rhsusf_ach_helmet_headset_ess_ocp",
+			"CUP_V_B_IOTV_OCP_SL_USArmy",
+			"CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP",
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
@@ -78,8 +78,8 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_teamleader",
-			"rhsusf_ach_helmet_headset_ess_ocp",
+			"CUP_V_B_IOTV_OCP_SL_USArmy",
+			"CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP",
 			"ItemMap",
 			"ItemcTab",
 			"ItemCompass",
@@ -101,19 +101,19 @@
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -122,19 +122,19 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -150,8 +150,8 @@
 		backpack="TWC_Backpack_Modern_US_Army_40mm";
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_squadleader",
-			"rhsusf_ach_helmet_ESS_ocp",
+			"CUP_V_B_IOTV_OCP_TL_USArmy",
+			"CUP_H_USArmy_HelmetACH_ESS_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemGPS",
@@ -159,8 +159,8 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_squadleader",
-			"rhsusf_ach_helmet_ESS_ocp",
+			"CUP_V_B_IOTV_OCP_TL_USArmy",
+			"CUP_H_USArmy_HelmetACH_ESS_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemGPS",
@@ -182,16 +182,16 @@
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -200,16 +200,16 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -225,16 +225,16 @@
 		backpack="TWC_Backpack_Modern_US_Army_Rifleman";
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_rifleman_alt",
-			"rhsusf_ach_helmet_ocp",
+			"CUP_V_B_IOTV_OCP_Rifleman_USArmy",
+			"CUP_H_USArmy_HelmetACH_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_rifleman_alt",
-			"rhsusf_ach_helmet_ocp",
+			"CUP_V_B_IOTV_OCP_Rifleman_USArmy",
+			"CUP_H_USArmy_HelmetACH_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -244,23 +244,23 @@
 			"Throw",
 			"Put",
 			"twc_m4_acog_lazer",
-			"rhs_weap_M136"
+			"CUP_launch_M136"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"twc_m4_acog_lazer",
-			"rhs_weap_M136"
+			"CUP_launch_M136"
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -269,12 +269,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -290,16 +290,16 @@
 		backpack="TWC_Backpack_Modern_US_Army_40mm";
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_grenadier",
-			"rhsusf_ach_helmet_ocp",
+			"CUP_V_B_IOTV_OCP_Grenadier_USArmy",
+			"CUP_H_USArmy_HelmetACH_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_grenadier",
-			"rhsusf_ach_helmet_ocp",
+			"CUP_V_B_IOTV_OCP_Grenadier_USArmy",
+			"CUP_H_USArmy_HelmetACH_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -320,16 +320,16 @@
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -347,16 +347,16 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -381,16 +381,16 @@
 		backpack="TWC_Backpack_Modern_US_Army_AR";
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_saw",
-			"rhsusf_ach_helmet_ocp",
+			"CUP_V_B_IOTV_OCP_SAW_USArmy",
+			"CUP_H_USArmy_HelmetACH_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_saw",
-			"rhsusf_ach_helmet_ocp",
+			"CUP_V_B_IOTV_OCP_SAW_USArmy",
+			"CUP_H_USArmy_HelmetACH_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -409,10 +409,10 @@
 		};
 		magazines[]=
 		{
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -421,10 +421,10 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -439,16 +439,16 @@
 		displayName="Marksman";
 		linkedItems[]=
 		{
-			"rhsusf_iotv_ocp_Rifleman",
-			"rhsusf_ach_helmet_ocp",
+			"CUP_V_B_IOTV_OCP_Rifleman_USArmy",
+			"CUP_H_USArmy_HelmetACH_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_iotv_ocp_Rifleman",
-			"rhsusf_ach_helmet_ocp",
+			"CUP_V_B_IOTV_OCP_Rifleman_USArmy",
+			"CUP_H_USArmy_HelmetACH_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -469,12 +469,12 @@
 		};
 		magazines[]=
 		{
-			"rhsusf_20Rnd_762x51_m993_Mag",
-			"rhsusf_20Rnd_762x51_m993_Mag",
-			"rhsusf_20Rnd_762x51_m993_Mag",
-			"rhsusf_20Rnd_762x51_m993_Mag",
-			"rhsusf_20Rnd_762x51_m62_Mag",
-			"rhsusf_20Rnd_762x51_m62_Mag",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_TE1_Red_Tracer_762x51_DMR",
+			"CUP_20Rnd_TE1_Red_Tracer_762x51_DMR",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -483,12 +483,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhsusf_20Rnd_762x51_m993_Mag",
-			"rhsusf_20Rnd_762x51_m993_Mag",
-			"rhsusf_20Rnd_762x51_m993_Mag",
-			"rhsusf_20Rnd_762x51_m993_Mag",
-			"rhsusf_20Rnd_762x51_m62_Mag",
-			"rhsusf_20Rnd_762x51_m62_Mag",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_TE1_Red_Tracer_762x51_DMR",
+			"CUP_20Rnd_TE1_Red_Tracer_762x51_DMR",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -505,16 +505,16 @@
 		attendant = 1;
 		linkedItems[]=
 		{
-			"rhsusf_spcs_ocp_medic",
-			"rhsusf_ach_helmet_ocp",
+			"CUP_V_B_IOTV_OCP_Medic_USArmy",
+			"CUP_H_USArmy_HelmetACH_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ocp_medic",
-			"rhsusf_ach_helmet_ocp",
+			"CUP_V_B_IOTV_OCP_Medic_USArmy",
+			"CUP_H_USArmy_HelmetACH_OCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -533,15 +533,15 @@
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -550,15 +550,15 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -574,18 +574,16 @@
 		backpack="TWC_Backpack_Modern_US_Army_SL";
 		linkedItems[]=
 		{
-			"rhs_uniform_cu_ocp",
-			"rhsusf_hgu56p",
-			"rhsusf_iotv_ocp",
+			"CUP_H_SPH4_green",
+			"CUP_V_B_IOTV_OCP_Empty_USArmy",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhs_uniform_cu_ocp",
-			"rhsusf_hgu56p",
-			"rhsusf_iotv_ocp",
+			"CUP_H_SPH4_green",
+			"CUP_V_B_IOTV_OCP_Empty_USArmy",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -594,27 +592,27 @@
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_m4_carryhandle"
+			"CUP_arifle_M4A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"rhs_weap_m4_carryhandle"
+			"CUP_arifle_M4A1"
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
-			"rhs_mag_30Rnd_556x45_M855A1_PMAG",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
 			"SmokeShell",
 			"SmokeShell"
 		};
@@ -629,7 +627,7 @@
 		editorSubcategory = "US_Men_2000";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="rhs_uniform_cu_ucp_101st";
+		uniformClass="CUP_U_B_USArmy_ACU_UCP";
 		backpack="TWC_Backpack_2000_US_Army_Rifleman";
 		Items[]=
 		{
@@ -687,16 +685,16 @@
 		};
 			linkedItems[]=
 		{
-			"rhsusf_spcs_ucp_rifleman",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_Rifleman_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_spcs_ucp_rifleman",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_Rifleman_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -715,12 +713,12 @@
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -729,12 +727,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -752,16 +750,16 @@
 		backpack="TWC_Backpack_2000_US_Army_SL";
 		linkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Squadleader",
-			"rhsusf_ach_helmet_headset_ucp",
+			"CUP_V_B_IOTV_UCP_SL_USArmy",
+			"CUP_H_USArmy_HelmetACH_ESS_Headset_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Squadleader",
-			"rhsusf_ach_helmet_headset_ucp",
+			"CUP_V_B_IOTV_UCP_SL_USArmy",
+			"CUP_H_USArmy_HelmetACH_ESS_Headset_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -772,23 +770,23 @@
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"rhs_m4_acog"
+			"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"ACE_Vector",
-			"rhs_m4_acog"
+			"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -797,12 +795,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -817,16 +815,16 @@
 		displayName="Team Leader";
 		linkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Teamleader",
-			"rhsusf_ach_helmet_ESS_ucp",
+			"CUP_V_B_IOTV_UCP_TL_USArmy",
+			"CUP_H_USArmy_HelmetACH_ESS_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Teamleader",
-			"rhsusf_ach_helmet_ESS_ucp",
+			"CUP_V_B_IOTV_UCP_TL_USArmy",
+			"CUP_H_USArmy_HelmetACH_ESS_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -847,12 +845,12 @@
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -870,12 +868,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -899,16 +897,16 @@
 		displayName="Rifleman";
 		linkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Rifleman",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_Rifleman_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Rifleman",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_Rifleman_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -918,23 +916,23 @@
 			"Throw",
 			"Put",
 			"twc_m4_cco_vfg",
-			"rhs_weap_M136"
+			"CUP_launch_M136"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"twc_m4_cco_vfg",
-			"rhs_weap_M136"
+			"CUP_launch_M136"
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -943,12 +941,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -963,16 +961,16 @@
 		displayName="Grenadier";
 		linkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Grenadier",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_Grenadier_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Grenadier",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_Grenadier_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -991,12 +989,12 @@
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -1014,12 +1012,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -1044,16 +1042,16 @@
 		backpack="TWC_Backpack_2000_US_Army_AR";
 		linkedItems[]=
 		{
-			"rhsusf_iotv_ucp_SAW",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_SAW_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_iotv_ucp_SAW",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_SAW_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1072,10 +1070,10 @@
 		};
 		magazines[]=
 		{
-			"rhs_200rnd_556x45_B_SAW",
-			"rhs_200rnd_556x45_B_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1084,10 +1082,10 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_200rnd_556x45_B_SAW",
-			"rhs_200rnd_556x45_B_SAW",
-			"rhs_200rnd_556x45_T_SAW",
-			"rhs_200rnd_556x45_T_SAW",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1102,16 +1100,16 @@
 		displayName="Marksman";
 		linkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Rifleman",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_Rifleman_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Rifleman",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_Rifleman_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1130,14 +1128,14 @@
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1146,14 +1144,14 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1227,16 +1225,16 @@
 		attendant = 1;
 		linkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Medic",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_Medic_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhsusf_iotv_ucp_Medic",
-			"rhsusf_ach_helmet_ucp",
+			"CUP_V_B_IOTV_UCP_Medic_USArmy",
+			"CUP_H_USArmy_HelmetACH_UCP",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
@@ -1255,12 +1253,12 @@
 		};
 		magazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
@@ -1269,12 +1267,12 @@
 		};
 		Respawnmagazines[]=
 		{
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
 			"HandGrenade",
 			"HandGrenade",
 			"SmokeShell",
