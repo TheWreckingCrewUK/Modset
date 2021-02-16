@@ -38,12 +38,12 @@ class cfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				slot="CowsSlot";
+				slot="CUP_PicatinnyTopMountM16";
 				item="cup_optic_acog2_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
-				slot="PointerSlot";
+				slot="CUP_PicatinnySideMountM16";
 				item="cup_acc_anpeq_15_flashlight_black_l";
 			};
 		};
@@ -222,12 +222,12 @@ class cfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				slot="CowsSlot";
+				slot="CUP_PicatinnyTopMountM16";
 				item="cup_optic_acog2_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
-				slot="PointerSlot";
+				slot="CUP_PicatinnySideMountM16";
 				item="CUP_acc_ANPEQ_15_Black_Top";
 			};
 		};

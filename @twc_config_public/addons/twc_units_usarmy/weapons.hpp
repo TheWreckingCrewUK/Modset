@@ -27,7 +27,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="CUP_optic_Elcan_SpecterDR_coyote_PIP";
@@ -49,7 +49,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="CUP_optic_G33_HWS_COYOTE_DWN";
@@ -71,7 +71,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="twc_optic_vortex_11_8x20_PM";
@@ -93,7 +93,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="cup_optic_eotech553_coyote";
@@ -110,7 +110,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="twc_optic_vortex_11_8x20_PM";
@@ -128,12 +128,12 @@ class cfgWeapons
 		};
 	};
 	
-	class CUP_hgun_Glock17_blk;
-	class twc_g17_optics_laser: CUP_hgun_Glock17_blk
+	class CUP_hgun_Glock17_tan;
+	class twc_g17_optics_laser: CUP_hgun_Glock17_tan
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="rksl_optic_rmr_rm33";
@@ -151,7 +151,7 @@ class cfgWeapons
 		displayName = "M4 Block II (Spectre)";
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
 				item="cup_optic_elcan_specterdr_black_pip";
@@ -170,7 +170,7 @@ class cfgWeapons
 		displayName = "M4 Block II (G33)";
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
 				item="CUP_optic_AIMM_MICROT1_BLK";
@@ -189,7 +189,7 @@ class cfgWeapons
 		displayName = "M4 Block II (M203)";
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
 				item="cup_optic_elcan_specterdr_black_pip";
@@ -207,7 +207,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
 				item="cup_optic_eotech553_coyote";
@@ -266,7 +266,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
 				item="CUP_optic_AIMM_MICROT1_BLK";
@@ -288,7 +288,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
 				item="CUP_optic_AIMM_MICROT1_BLK";
@@ -311,7 +311,7 @@ class cfgWeapons
 		displayname ="HK416D";
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
 				item="cup_optic_sb_11_4x20_pm_tan_pip";
@@ -362,7 +362,7 @@ class cfgWeapons
 		model = "\CUP\Weapons\CUP_Weapons_HK416\CUP_hk416_cqb.p3d";
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CUP_PicatinnyTopMountMk18";
 				item="cup_optic_sb_11_4x20_pm_tan_pip";
@@ -411,7 +411,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="CUP_optic_LeupoldMk4";
@@ -440,7 +440,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="CUP_optic_LeupoldMk4_25x50_LRT";
@@ -464,7 +464,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="cup_optic_acog2_pip";
@@ -486,7 +486,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="CUP_optic_LeupoldMk4_10x40_LRT_Desert";
@@ -508,14 +508,14 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
-				slot="CowsSlot";
+				slot="CUP_PicatinnyTopMountM16";
 				item="cup_optic_acog2_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
-				slot="PointerSlot";
+				slot="CUP_PicatinnySideMountM16";
 				item="CUP_acc_ANPEQ_15side";
 			};
 		};
@@ -524,14 +524,14 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
-				slot="CowsSlot";
+				slot="CUP_PicatinnyTopMountM16";
 				item="cup_optic_acog2_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
-				slot="PointerSlot";
+				slot="CUP_PicatinnySideMountM16";
 				item="cup_acc_anpeq_15_flashlight_black_F";
 			};
 		};
@@ -540,14 +540,14 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
-				slot="CowsSlot";
+				slot="CUP_PicatinnyTopMountM16";
 				item="CUP_optic_Elcan_reflex";
 			};
 			class LinkedItemsFrontSideRail
 			{
-				slot="PointerSlot";
+				slot="CUP_PicatinnySideMountM16";
 				item="CUP_acc_ANPEQ_15";
 			};
 		};
@@ -557,7 +557,7 @@ class cfgWeapons
 		twc_openbolt = 1;
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="CUP_optic_Elcan";
@@ -573,7 +573,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="CUP_optic_LeupoldMk4";
@@ -602,7 +602,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="cup_optic_acog2_pip";
@@ -616,7 +616,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="CUP_optic_CompM2_low";
@@ -640,12 +640,12 @@ class cfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				slot="CowsSlot";
+				slot = "CUP_PicatinnyTopMountM16";
 				item="cup_optic_acog2_pip";
 			};
 			class LinkedItemsFrontSideRail
 			{
-				slot="PointerSlot";
+				slot = "CUP_PicatinnySideMountM16";
 				item="cup_acc_anpeq_2_grey";
 			};
 			class LinkedItemsUnderBarrelSlot
@@ -661,7 +661,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="CUP_optic_CompM2_low";
@@ -673,7 +673,7 @@ class cfgWeapons
 	{
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="RKSL_optic_EOT552";
@@ -694,7 +694,7 @@ class cfgWeapons
 		twc_openbolt = 1;
 		class LinkedItems
 		{
-			class LinkedItemsOptic
+			class LinkedItemOptic
 			{
 				slot="CowsSlot";
 				item="CUP_optic_Elcan";
