@@ -137,7 +137,7 @@
 		backpack="TWC_Backpack_Modern_Sectionlead";
 		linkedItems[]=
 		{
-			"twc_mtp_spcs_SL",
+			"UK3CB_BAF_V_Osprey_SL_B",
 			"UK3CB_BAF_H_Mk7_Scrim_ESS_B",
 			"ItemMap",
 			"ItemcTab",
@@ -146,7 +146,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_mtp_spcs_SL",
+			"UK3CB_BAF_V_Osprey_SL_B",
 			"UK3CB_BAF_H_Mk7_Scrim_ESS_B",
 			"ItemMap",
 			"ItemcTab",
@@ -286,7 +286,7 @@
 		backpack="UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		linkedItems[]=
 		{
-			"twc_mtp_spc_rifleman",
+			"UK3CB_BAF_V_Osprey_Rifleman_C",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -294,7 +294,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_mtp_spc_rifleman",
+			"UK3CB_BAF_V_Osprey_Rifleman_C",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -495,7 +495,7 @@
 		backpack="TWC_Backpack_Modern_2IC";
 		linkedItems[]=
 		{
-			"twc_mtp_spc_rifleman_alt",
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -503,7 +503,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_mtp_spc_rifleman_alt",
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
 			"UK3CB_BAF_H_Mk7_Scrim_F",
 			"ItemMap",
 			"ItemCompass",
@@ -607,7 +607,7 @@
 		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B";
 		linkedItems[]=
 		{
-			"twc_mtp_spcs_Marksman",
+			"UK3CB_BAF_V_Osprey_Marksman_A",
 			"UK3CB_BAF_H_Mk7_Scrim_E",
 			"ItemMap",
 			"ItemCompass",
@@ -615,7 +615,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_mtp_spcs_Marksman",
+			"UK3CB_BAF_V_Osprey_Marksman_A",
 			"UK3CB_BAF_H_Mk7_Scrim_E",
 			"ItemMap",
 			"ItemCompass",
@@ -773,7 +773,7 @@
 		attendant = 1;
 		linkedItems[]=
 		{
-			"twc_mtp_spcs_medic",
+			"UK3CB_BAF_V_Osprey_Medic_B",
 			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
 			"ItemMap",
 			"ItemCompass",
@@ -781,7 +781,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_mtp_spcs_medic",
+			"UK3CB_BAF_V_Osprey_Medic_B",
 			"UK3CB_BAF_H_Mk7_Camo_CESS_D",
 			"ItemMap",
 			"ItemCompass",
