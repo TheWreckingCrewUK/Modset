@@ -36,8 +36,8 @@
 		};
 
 		magazines[]= {
-			"UK3CB_BAF_9_17Rn",
-			"UK3CB_BAF_9_17Rn",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd",

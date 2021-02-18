@@ -10,7 +10,7 @@ class CUP_PicatinnyUnderMount;
 
 class cfgWeapons
 {
-	class CUP_arifle_M4A1_GL_carryhandle;
+	class CUP_arifle_M4A1_BUIS_GL;
 	class CUP_arifle_M4A1;
 	class CUP_lmg_m249_pip1;
 	class CUP_lmg_M240_B;
@@ -32,7 +32,7 @@ class cfgWeapons
 	};
 	
 	
-	class twc_CUP_arifle_M4A1_GL_carryhandle_acog_lazer: CUP_arifle_M4A1_GL_carryhandle
+	class twc_CUP_arifle_M4A1_GL_carryhandle_acog_lazer: CUP_arifle_M4A1_BUIS_GL
 	{
 		class LinkedItems
 		{
@@ -44,7 +44,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="CUP_PicatinnySideMountM16";
-				item="cup_acc_anpeq_15_flashlight_black_l";
+				item="CUP_acc_ANPEQ_15_Flashlight_Black_L";
 			};
 		};
 	};
