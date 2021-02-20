@@ -54,7 +54,7 @@
 		{
             class _xx_Rifle
 			{
-				weapon = "twc_rhs_weap_m4a1_acog_lazer";
+				weapon = "CUP_arifle_M4A1_ACOG_Laser";
 				count = 1;
 			};
 		};
