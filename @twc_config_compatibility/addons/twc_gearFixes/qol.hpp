@@ -299,7 +299,7 @@ class cfgRecoils
 class Extended_FiredBIS_EventHandlers {
 	class CAManBase {
 		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_amount = 2.8; if ((_this select 1) in (missionnamespace getvariable ['twc_subguns', ['SMG_03C_black', 'CUP_smg_MP5A5', 'TWC_CUP_smg_MP5A5_flashlight_clean', 'rhsusf_weap_MP7A2_desert', 'TWC_CUP_smg_MP5SD6_clean', 'fow_w_sten_mk5', 'LIB_Sten_Mk5', 'LIB_Sten_Mk2', 'SP_smg_sterling']])) then {_amount = 1.0;};addCamShake [_amount, 0.4, 15]};";
+			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if ((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player)) then {_amount = 2.8; if ((_this select 1) in (missionnamespace getvariable ['twc_subguns', ['SMG_03C_black', 'CUP_smg_MP5A5', 'TWC_CUP_smg_MP5A5_flashlight_clean', 'TWC_CUP_smg_MP5SD6_clean', 'fow_w_sten_mk5', 'LIB_Sten_Mk5', 'LIB_Sten_Mk2', 'SP_smg_sterling']])) then {_amount = 1.0;};addCamShake [_amount, 0.4, 15]};";
 		};
 	};
 	class Helicopter_Base_F {
@@ -393,16 +393,6 @@ class Extended_FiredBIS_EventHandlers {
 		};
 	};
 	class MBT_04_base_F {
-		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if (!((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player))) exitwith {}; _rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 3)};addCamShake [_rec * 0.1, _time * 3, 9]};";
-		};
-	};
-	class rhs_tank_base {
-		class twc_gunshake {
-			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if (!((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player))) exitwith {}; _rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 3)};addCamShake [_rec * 0.1, _time * 3, 9]};";
-		};
-	};
-	class rhs_a3t72tank_base {
 		class twc_gunshake {
 			clientFiredBIS = "if (isnull (_this select 6)) exitwith {}; if (!((vehicle ((getShotParents (_this select 6)) select 1)) == (vehicle player))) exitwith {}; _rec = 0.1;_time = 0.3; if ((_this select 1) isKindOf ['cannoncore', configFile >> 'CfgWeapons']) then {_rec = 9;_time = 1;if (((_this select 1) isKindOf ['PistolCore', configFile >> 'CfgWeapons']) || ((_this select 1) isKindOf ['RifleCore', configFile >> 'CfgWeapons'])) then {_rec = 0.2};if (!(((getShotParents (_this select 6)) select 1) == player)) then {_rec = (_rec / 3)};addCamShake [_rec * 0.1, _time * 3, 9]};";
 		};

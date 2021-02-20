@@ -76,13 +76,6 @@ class cfgweapons{
 		recoilProne = "twc_rifle_762_prone";
 		scope = 2;
 		magazineWell[] = {};
-		class Single: Single
-		{
-			class standardsound
-			{
-				soundSetShot[] = {"RHS_DSHKM_Closure_SoundSet","RHS_120mm_Shot_SoundSet","RHS_sniper1_Tail_SoundSet"};
-			};
-		};
 		
 		/*
 		class LinkedItems
@@ -128,45 +121,45 @@ class cfgweapons{
 			class LinkedItemsFrontSideRail
 			{
 				slot="CUP_EastMuzzleSlotAK";
-				item="rhs_acc_tgpa";
+				item="CUP_muzzle_TGPA";
 			};
 		};
 	};
 		
 		
-	class rhs_weap_hk416d10;
-		class rhs_weap_hk416d10_acog: rhs_weap_hk416d10
+	class CUP_arifle_HK416_Black;
+		class TWC_weap_hk416d10_acog: CUP_arifle_HK416_Black
 	{
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_ACOG";
+				item="CUP_optic_ACOG2";
 			};
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="rhsusf_acc_anpeq15A";
+				item="CUP_acc_ANPEQ_15_Black";
 			};
 		};
 	};
 	
 	
-	class rhs_weap_sr25;
-		class rhs_weap_sr25_leo: rhs_weap_sr25
+	class CUP_srifle_m110_kac_black;
+		class TWC_weap_sr25_leo: CUP_srifle_m110_kac_black
 	{
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot="CowsSlot";
-				item="rhsusf_acc_LEUPOLDMK4_2";
+				item="CUP_optic_LeupoldMk4";
 			};
 			class LinkedItemsFrontSideRail
 			{
 				slot="UnderBarrelSlot";
-				item="rhsusf_acc_harris_bipod";
+				item="CUP_bipod_VLTOR_Modpod_black";
 			};
 		};
 	};

@@ -178,14 +178,14 @@ class O_Soldier_Base_F;
 		{
 			"Throw",
 			"Put",
-			"twc_rpg_pol",
+			"CUP_launch_RPG7V_PGO7V",
 			"CUP_arifle_AK74M"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"twc_rpg_pol",
+			"CUP_launch_RPG7V_PGO7V",
 			"CUP_arifle_AK74M"
 		};
 		magazines[]=
