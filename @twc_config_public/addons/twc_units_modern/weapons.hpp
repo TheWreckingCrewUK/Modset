@@ -270,7 +270,6 @@ class cfgWeapons
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
 					UK3CB_BAF_SFFH = 1;
 				};
 			};
@@ -324,7 +323,6 @@ class cfgWeapons
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
 					UK3CB_BAF_SFFH = 1;
 				};
 			};
@@ -377,7 +375,6 @@ class cfgWeapons
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
 					UK3CB_BAF_SFFH = 1;
 				};
 			};
@@ -465,8 +462,7 @@ class cfgWeapons
 		};
 	};
 	
-	class twc_HK417_jsrs_base: twc_HK417_base
-	{};
+	class twc_HK417_jsrs_base;
 	
 	class TWC_HK417_scope_bipod: twc_HK417_jsrs_base
 	{
@@ -986,7 +982,7 @@ class cfgWeapons
 			class LinkedItemsMuzzle
 			{
 				slot="asdg_MuzzleSlot_UK3CB_BAF_L129A1";
-				item="twc_acc_sd6_grey";
+				item="UK3CB_BAF_Silencer_L115A3";
 			};
 		};
 		class WeaponSlotsInfo
@@ -996,13 +992,12 @@ class cfgWeapons
 					RKSL_optic_PMII_525 = 1;
 					UK3CB_BAF_MaxiKite = 1;
 					cup_optic_an_pas_13c1 = 1;
-					RKSL_optic_PMII_525_anpvs27 = 1;
 					optic_tws = 1;
 				};
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L129A1: asdg_MuzzleSlot_762_L129_3CB {
 				class compatibleItems {
-					twc_acc_sd6_grey = 1;
+					UK3CB_BAF_Silencer_L115A3 = 1;
 				};
 			};
 			allowedslots[] = {901};

@@ -40,7 +40,7 @@ class cfgWeapons
 			class LinkedItemsMuzzleSlot
 			{
 				slot="MuzzleSlot";
-				item="twc_acc_rotex5_grey";
+				item="muzzle_snds_M";
 			};
 		};
 	};
@@ -62,7 +62,7 @@ class cfgWeapons
 			class LinkedItemsMuzzleSlot
 			{
 				slot="MuzzleSlot";
-				item="twc_acc_rotex5_grey";
+				item="muzzle_snds_M";
 			};
 		};
 	};
@@ -84,7 +84,7 @@ class cfgWeapons
 			class LinkedItemsMuzzleSlot
 			{
 				slot="MuzzleSlot";
-				item="twc_acc_rotex5_grey";
+				item="muzzle_snds_M";
 			};
 		};
 	};
@@ -123,7 +123,7 @@ class cfgWeapons
 			class LinkedItemsMuzzleSlot
 			{
 				slot="MuzzleSlot";
-				item="twc_acc_rotex5_grey";
+				item="muzzle_snds_M";
 			};
 		};
 	};
@@ -233,7 +233,7 @@ class cfgWeapons
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
+					muzzle_snds_M = 1;
 					ACE_muzzle_mzls_L = 1;
 				};
 			};
@@ -279,7 +279,7 @@ class cfgWeapons
 			class LinkedItemsMuzzle
 			{
 				slot="MuzzleSlot";
-				item="twc_acc_rotex5_grey";
+				item="muzzle_snds_M";
 			};
 		};
 	};
@@ -301,7 +301,7 @@ class cfgWeapons
 			class LinkedItemsMuzzle
 			{
 				slot="MuzzleSlot";
-				item="twc_acc_rotex5_grey";
+				item="muzzle_snds_M";
 			};
 		};
 	};
@@ -324,7 +324,7 @@ class cfgWeapons
 			class LinkedItemsMuzzle
 			{
 				slot="MuzzleSlot";
-				item="twc_acc_rotex5_grey";
+				item="muzzle_snds_M";
 			};
 		};
 		
@@ -338,7 +338,7 @@ class cfgWeapons
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
+					muzzle_snds_M = 1;
 				};
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {
@@ -375,7 +375,7 @@ class cfgWeapons
 			class LinkedItemsMuzzle
 			{
 				slot="MuzzleSlot";
-				item="twc_acc_rotex5_grey";
+				item="muzzle_snds_M";
 			};
 		};
 		
@@ -389,7 +389,7 @@ class cfgWeapons
 			};
 			class MuzzleSlot: asdg_MuzzleSlot_556 {
 				class compatibleItems {
-					twc_acc_rotex5_grey = 1;
+					muzzle_snds_M = 1;
 				};
 			};
 			class CUP_PicatinnySideMountMk18: CUP_PicatinnySideMount {

@@ -159,14 +159,14 @@
 		{
 			"Throw",
 			"Put",
-			"CUP_launch_RPG18",
+			"CUP_launch_RPG7V_PGO7V",
 			"twc_ak74_pol"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
-			"CUP_launch_RPG18",
+			"CUP_launch_RPG7V_PGO7V",
 			"twc_ak74_pol"
 		};
 	};
