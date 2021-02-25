@@ -36,16 +36,11 @@ class CfgWeapons {
 
 	class LIB_FLARE_PISTOL;
 
-	class Rifle;
-	class Rifle_Base_F: Rifle {
-		class EventHandlers;
-	};
+	class Rifle_Base_F;
 
 	class BBB_BoysATR: Rifle_Base_F {
-		class EventHandlers: EventHandlers {
-			class twc_ww2_weapons {
-				fired = "_this execVM '\twc_ww2_weapons\scripts\twc_boys_fire.sqf';";
-			};
+		class EventHandlers {
+			fired = "_this call twc_ww2_weapons_fnc_boys_fire.sqf;";
 		};
 	};
 
