@@ -77,8 +77,8 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 		maga_nc(UK3CB_BAF_762_20Rnd_T, 5);
 
 		// L7A1 GPMG
-		maga_nc(UK3CB_BAF_762_100Rnd, 4);
-		maga_nc(UK3CB_BAF_762_100Rnd_T, 1);
+		maga_nc(UK3CB_BAF_762_100Rnd, 6);
+		maga_nc(UK3CB_BAF_762_100Rnd_T, 2);
 
 		maga_nc(ACE_HandFlare_White, 2);
 
@@ -156,7 +156,7 @@ class TWC_AmmoBox_ColdWar_Sniper_Portable: TWC_AmmoBox_Portable {
 	
 	// TODO: Waiting on UKCW to release L33 3nfi3ld Sn1p0r
 	class TransportMagazines {
-		maga_nc(ukcw_l42_10rnd_mag, 6);
+		maga_nc(SP_10Rnd_762_L42, 6);
 	};
 };
 

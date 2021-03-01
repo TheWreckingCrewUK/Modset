@@ -10,17 +10,27 @@ class CfgPatches
 			"twc_faction",
 			"twc_ai",
 			"uk3cb_baf_weapons_l1a1",
-			"sp_uniforms",
-			"sp_weapons",
 			"SP_Equipment",
-			"sp_headgear",
-			"sp_facewear"
+			"SP_Facewear",
+			"SP_Headgear",
+			"SP_Uniforms",
+			"SP_Weapons",
+			"SP_Enfield",
+			"SP_Sterling"
 		};
 	};
 };
 
 class EventHandlers;
 
+class CBA_DisposableLaunchers {
+	sp_l1a1_law66_ready[] = {"sp_l1a1_law66","sp_l1a1_law66_used"};
+};
+
+class CfgAmmo
+{
+	#include "ammo.hpp"
+};
 class CfgMagazines
 {
 	#include "magazines.hpp"
@@ -51,20 +61,20 @@ class CfgVehicles
 	#define MAG_11(a) a, a, a, a, a, a, a, a, a, a, a
 	#define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 	#define CATEGORY(a) editorSubcategory = a;\
-						vehicleClass= a;
+						vehicleClass = a;
 	
 	//GENERIC
 	class TWC_Infantry_ColdWar_Plane_Pilot: B_Soldier_base_F
 	{
 		scope=2;
-		displayName="Jet Pilot";
-		faction="TWC_ColdWar";
-		editorSubcategory = "TWC_ForceType_Airborne";
-		vehicleClass="TWC_ForceType_Airborne";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_RAF";
-		backpack="";
+		displayName = "Jet Pilot";
+		faction = "TWC_ColdWar";
+		CATEGORY("TWC_ForceType_Airborne")
+		icon = "iconMan";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
+		backpack = "";
+		engineer = 1;
 		linkedItems[]=
 		{
 			"CUP_V_B_PilotVest",
@@ -111,18 +121,29 @@ class CfgVehicles
 			"SmokeShell",
 			"SmokeShell"
 		};
+		
+		nightItems[] = {
+			MAG_2("Chemlight_green"),
+			"ACE_Flashlight_Maglite_ML300L",
+			"ACE_Flashlight_MX991"
+		};
+		
+		nightLinkedItems[] = {
+			"twc_nightvision_gen2"
+		};
 	};
 	class TWC_Infantry_ColdWar_Tank_Commander: B_Soldier_base_F
 	{
-		scope=2;
-		displayName="Tank Commander";
-		faction="TWC_ColdWar";
-		editorSubcategory = "TWC_ForceType_Armoured";
-		vehicleClass="TWC_ForceType_Armoured";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_CrewmanCoveralls_RTR";
-		backpack="";
+		scope = 2;
+		displayName = "Tank Commander";
+		faction = "TWC_ColdWar";
+		CATEGORY("TWC_ForceType_Armoured")
+		icon = "iconMan";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_CrewmanCoveralls_RTR";
+		backpack = "";
+		TWC_isCommandRole = 1;
+		engineer = 1;
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -175,15 +196,25 @@ class CfgVehicles
 			MAG_3("SP_30Rnd_9x19_L2A3_Sterling"),
 			MAG_2("SmokeShell")
 		};
+		
+		nightItems[] = {
+			MAG_2("Chemlight_green"),
+			"ACE_Flashlight_Maglite_ML300L",
+			"ACE_Flashlight_MX991"
+		};
 	};
 	class TWC_Infantry_ColdWar_Tank_Crew: TWC_Infantry_ColdWar_Tank_Commander
 	{
 		displayName="Tank Crew";
+		TWC_isCommandRole = 0;
 		class EventHandlers: EventHandlers
 		{
 			init = "";
 		};
 		
+		nightItems[] = {
+			MAG_2("Chemlight_green")
+		};
 	};
 	#include "regular\woodland.hpp"
 	#include "regular\woodland_dismounted.hpp"
@@ -191,6 +222,10 @@ class CfgVehicles
 	#include "regular\desert_dismounted.hpp"
 	#include "regular\tropic.hpp"
 	#include "regular\tropic_dismounted.hpp"
+	#include "regular\arctic.hpp"
+	#include "regular\arctic_dismounted.hpp"
+	#include "regular\nbc.hpp"
+	#include "regular\nbc_dismounted.hpp"
 	
 	#include "coin\woodland.hpp"
 	#include "coin\woodland_dismounted.hpp"
@@ -198,6 +233,10 @@ class CfgVehicles
 	#include "coin\desert_dismounted.hpp"
 	#include "coin\tropic.hpp"
 	#include "coin\tropic_dismounted.hpp"
+	#include "coin\arctic.hpp"
+	#include "coin\arctic_dismounted.hpp"
+	#include "coin\nbc.hpp"
+	#include "coin\nbc_dismounted.hpp"
 	
 	#include "airborne\woodland.hpp"
 	#include "airborne\desert.hpp"

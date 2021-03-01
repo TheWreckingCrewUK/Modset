@@ -75,3 +75,35 @@ class TWC_Vehicle_Generic_Zodiac_Black: I_C_Boat_Transport_01_F {
 
 	ace_interaction_canPush = 1;
 };
+
+class rksla3_lcvpmk5_1;
+class TWC_Vehicle_Generic_LCVP_Navy: rksla3_lcvpmk5_1 {
+	scope = 2;
+	scopeCurator = 2;
+	side = 1;
+	ADD_FACTION;
+	
+	displayname = "LCVP (Navy)";
+	editorSubcategory = "TWC_ForceType_Amphibious";
+
+	class TransportItems { }; 
+	class TransportMagazines { };
+	class TransportWeapons { };
+	class TransportBackpacks { };
+};
+
+class rksla3_lcvpmk5_viv;
+class TWC_Vehicle_Generic_LCVP_VIV_Navy: rksla3_lcvpmk5_viv {
+	scope = 2;
+	scopeCurator = 2;
+	side = 1;
+	ADD_FACTION;
+	
+	displayname = "LCVP (VIV, Navy)";
+	editorSubcategory = "TWC_ForceType_Amphibious";
+
+	class TransportItems { }; 
+	class TransportMagazines { };
+	class TransportWeapons { };
+	class TransportBackpacks { };
+};
