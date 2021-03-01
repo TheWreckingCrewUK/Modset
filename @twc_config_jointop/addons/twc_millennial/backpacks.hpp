@@ -2,8 +2,6 @@
 #define ADD_WEAP(a,b) class _nc_##a {weapon = a; count = b;}
 #define ADD_ITEM(a,b) class _nc_##a {name = a; count = b;}
 
-class SP_Backpack_BlowpipeCarrier;
-
 //Woodland
 class UK3CB_BAF_B_Bergen_DPMW_SL_A;
 class UK3CB_BAF_B_Bergen_DPMW_Rifleman_A;
