@@ -15,20 +15,6 @@ class TWC_AmmoBox_Vehicle_Warrior: TWC_AmmoBox_Vehicle {
 		item_nc(TWC_30mm_AP_item, 250);
 	};
 };
-
-class TWC_AmmoBox_Vehicle_FV4201: TWC_AmmoBox_Vehicle {
-	scope = 2;
-	scopeCurator = 2;
-	displayName = "FV4201 (Immobile)";
-	
-	class TransportMagazines {
-		maga_nc(ukcw_l15a4_apds_hull, 40);
-		maga_nc(ukcw_l31_hesh_hull, 20);
-		maga_nc(ukcw_l34_smoke_hull, 4);
-	};
-};
-
-
 class TWC_AmmoBox_Vehicle_Milan: TWC_AmmoBox_Vehicle {
 	scope = 2;
 	scopeCurator = 2;
