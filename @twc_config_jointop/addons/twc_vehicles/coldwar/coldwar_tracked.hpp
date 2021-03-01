@@ -1,6 +1,6 @@
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_FV432_MOD
-class TWC_Vehicle_ColdWar_FV432_Woodland: ukcw_fv432 {
+class TWC_Vehicle_ColdWar_FV432_Woodland: CUP_B_FV432_GB_GPMG {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -61,14 +61,14 @@ class TWC_Vehicle_ColdWar_FV432_Woodland: ukcw_fv432 {
 		};
 	};
 
-	REGULAR_77({"driver","commander"}, {"Intercom_1"})
+	REGULAR_77({"driver", "gunner"}, {"intercom_1"})
 };
 
 /* class TWC_Vehicle_ColdWar_FV432_Desert: TWC_Vehicle_ColdWar_FV432_Woodland {
 	displayname = "FV432 (Desert)";
 }; */
 
-class TWC_Vehicle_ColdWar_FV432_Woodland_COIN: ukcw_fv432 {
+class TWC_Vehicle_ColdWar_FV432_Woodland_COIN: CUP_B_FV432_GB_GPMG {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -126,7 +126,7 @@ class TWC_Vehicle_ColdWar_FV432_Woodland_COIN: ukcw_fv432 {
 		};
 	};
 
-	REGULAR_77({"driver","commander"}, {"Intercom_1"})
+	REGULAR_77({"driver", "gunner"}, {"intercom_1"})
 };
 
 /* class TWC_Vehicle_ColdWar_FV432_Desert_COIN: TWC_Vehicle_ColdWar_FV432_Woodland_COIN {
@@ -161,7 +161,7 @@ class TWC_Vehicle_ColdWar_Scimitar_Woodland: ukcw_cvrt_Scim_w_L1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"commander","gunner"}, {"Intercom_1"})
+	REGULAR_77({"commander", "gunner"}, {"intercom_1"})
 };
 
 class TWC_Vehicle_ColdWar_Scimitar_Desert: ukcw_cvrt_Scim_d_L1 {
@@ -190,7 +190,7 @@ class TWC_Vehicle_ColdWar_Scimitar_Desert: ukcw_cvrt_Scim_d_L1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"commander","gunner"}, {"Intercom_1"})
+	REGULAR_77({"commander", "gunner"}, {"intercom_1"})
 };
 
 #undef CURRENT_VEHICLE
@@ -221,9 +221,9 @@ class TWC_Vehicle_ColdWar_Scorpion_Woodland: ukcw_Scorpion_w_L1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"commander","gunner"}, {"Intercom_1"})
+	REGULAR_77({"commander", "gunner"}, {"intercom_1"})
 };
- 
+
 class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_Scorpion_d_L1 {
 	scope = 2;
 	scopeCurator = 2;
@@ -250,7 +250,7 @@ class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_Scorpion_d_L1 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"commander","gunner"}, {"Intercom_1"})
+	REGULAR_77({"commander", "gunner"}, {"intercom_1"})
 };
 
 #undef CURRENT_VEHICLE
@@ -284,5 +284,5 @@ class TWC_Vehicle_ColdWar_Chieftain_Woodland: ukcw_chieftainmk10 {
 	class TransportWeapons { };
 	class TransportBackpacks { };
 
-	REGULAR_77({"commander","gunner"}, {"Intercom_1"})
+	REGULAR_77({"commander", "gunner"}, {"intercom"})
 };

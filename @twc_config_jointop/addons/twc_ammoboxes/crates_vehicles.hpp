@@ -5,6 +5,30 @@
 "TWC_AmmoBox_Vehicle_L111",          // HMG
 "TWC_AmmoBox_Vehicle_L7A2",          // GPMG */
 
+class TWC_AmmoBox_Vehicle_Warrior: TWC_AmmoBox_Vehicle {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Warrior (Immobile)";
+	
+	class TransportItems {
+		item_nc(TWC_30mm_HE_item, 250);
+		item_nc(TWC_30mm_AP_item, 250);
+	};
+};
+
+class TWC_AmmoBox_Vehicle_FV4201: TWC_AmmoBox_Vehicle {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "FV4201 (Immobile)";
+	
+	class TransportMagazines {
+		maga_nc(ukcw_l15a4_apds_hull, 40);
+		maga_nc(ukcw_l31_hesh_hull, 20);
+		maga_nc(ukcw_l34_smoke_hull, 4);
+	};
+};
+
+
 class TWC_AmmoBox_Vehicle_Milan: TWC_AmmoBox_Vehicle {
 	scope = 2;
 	scopeCurator = 2;
@@ -56,11 +80,14 @@ class TWC_AmmoBox_Vehicle_Generic: TWC_AmmoBox_Vehicle {
 	supplyRadius         = 10;
 	ace_dragging_canDrag = 1;
 };
+
 class TWC_AmmoBox_Vehicle_Generic_Loadable: TWC_AmmoBox_Vehicle {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "Generic Vehicle Resupply (Loadable)";
 	model = "\A3\Supplies_F_Exp\Ammoboxes\Equipment_Box_F.p3d";
+	hiddenSelections[] = {"camo","camo_signs"};
+	hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\equipment_box_blufor_co.paa","\A3\Supplies_F_Exp\Ammoboxes\Data\equipment_box_blufor_ca.paa"};
 
 	ace_rearm_defaultSupply = 600;
 	ace_cargo_size = 2;

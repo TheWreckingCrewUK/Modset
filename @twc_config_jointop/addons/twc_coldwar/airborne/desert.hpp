@@ -232,6 +232,35 @@ class TWC_Infantry_ColdWar_Airborne_Desert_Platoon_Medic: TWC_Infantry_ColdWar_R
 		"itemMap",
 		"ItemWatch"
 	};
+	weapons[] +=
+	{
+		"twc_fieldTent"
+	};
+	respawnweapons[] +=
+	{
+		"twc_fieldTent"
+	};
+};
+class TWC_Infantry_ColdWar_Airborne_Desert_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_Dismounted_Desert_Platoon_Mortar
+{
+	CATEGORY(TWC_Infantry_Airborne_Desert)
+	uniformClass = "SP_72Para_DenisonKhaki_1_Item";
+	linkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_Airborne_Khaki",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_Airborne_Khaki",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
 };
 class TWC_Infantry_ColdWar_Airborne_Desert_CSM: TWC_Infantry_ColdWar_Regular_Dismounted_Desert_CSM
 {

@@ -78,8 +78,10 @@ class CfgPatches {
 			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert",
 			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland_COIN",
 			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland",
+			
+			"TWC_Vehicle_Modern_Challenger2_Woodland",
 			"TWC_Vehicle_Modern_Challenger2_Desert",
-			"TWC_Vehicle_Modern_Challenger2_Woodland"
+			"TWC_Vehicle_Modern_Challenger2_Snow"
 		};
 
 		weapons[] = {
@@ -109,7 +111,6 @@ class CfgPatches {
 			"ukcw_bedford",
 			"ukcw_chieftain",
 			"ukcw_cvrt",
-			"ukcw_fv432",
 			"ukcw_gazelle",
 			"TWC_Faction",
 			"ace_cargo",
@@ -166,7 +167,7 @@ class CfgVehicles {
 	*/
 
 	// These are used across eras in different configurations, and as such should be first referenced here.
-	class ukcw_fv432;
+	class CUP_B_FV432_GB_GPMG;
 	class ukcw_cvrt_Scim_w_L1;
 	class ukcw_cvrt_Scim_d_L1;
 	class ukcw_Scorpion_w_L1;
@@ -226,7 +227,13 @@ class CfgVehicles {
 	#include "vehicles\lr_snatch.hpp"
 	#include "vehicles\lr_wmik.hpp"
 	#include "vehicles\wildcat.hpp"
+	#include "vehicles\challenger2.hpp"
 	
 	#include "generic\generic.hpp"
 	#include "coldwar\coldwar.hpp"
+	#include "millennial\millennial.hpp"
+	#include "modern\modern.hpp"
+	
+	// delete this in a few months once we've gone through submitted ops
+	#include "oldVehicles.hpp"
 };

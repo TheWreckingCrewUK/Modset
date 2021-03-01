@@ -1,7 +1,7 @@
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE GENERIC_AMBULANCE_MOD
-class ukcw_fv432_ambulance;
-class TWC_Vehicle_Generic_FV432Ambulance_Chameleon: ukcw_fv432_ambulance {
+class CUP_B_FV432_GB_Ambulance;
+class TWC_Vehicle_Generic_FV432Ambulance_Chameleon: CUP_B_FV432_GB_Ambulance {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;

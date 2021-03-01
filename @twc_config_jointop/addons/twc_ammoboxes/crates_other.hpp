@@ -77,8 +77,8 @@ class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
 	displayName = "L14 - Recoilless Rifle Ammo (Portable)";
 	
 	class TransportMagazines {
-		maga_nc(ukcw_l14A1_HE, 2);
-		maga_nc(ukcw_l14A1_HEAT, 2);
+		maga_nc(ukcw_l14A1_HE, 3);
+		maga_nc(ukcw_l14A1_HEAT, 3);
 		maga_nc(ukcw_l14A1_ILLUM, 2);
 		maga_nc(ukcw_l14A1_SMOKE, 2);
 	};
@@ -113,9 +113,9 @@ class TWC_AmmoBox_Other_L118_Portable: TWC_AmmoBox_Portable {
 	displayName = "L118 - 105mm Light Gun (Portable)";
 	
 	class TransportMagazines {
-		maga_nc(ACE_CUP_30Rnd_105mmHE_M119_M, 10);
-		maga_nc(ACE_CUP_30Rnd_105mmSMOKE_M119_M, 6);
-		maga_nc(ACE_CUP_30Rnd_105mmILLUM_M119_M, 4);
+		maga_nc(TWC_Magazine_105mm_1rnd_HE, 10);
+		maga_nc(TWC_Magazine_105mm_1rnd_Smoke_White, 6);
+		maga_nc(TWC_Magazine_105mm_1rnd_Illum, 4);
 	};
 };
 
@@ -125,18 +125,48 @@ class TWC_AmmoBox_Other_L118_Portable_HE: TWC_AmmoBox_Portable {
 	displayName = "L118 - 105mm Light Gun (Portable, HE)";
 	
 	class TransportMagazines {
-		maga_nc(ACE_CUP_30Rnd_105mmHE_M119_M, 20);
-	};	
+		maga_nc(TWC_Magazine_105mm_1rnd_HE, 20);
+	};
+};
+
+class TWC_AmmoBox_Other_L118_Portable_HESH: TWC_AmmoBox_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "L118 - 105mm Light Gun (Portable, HESH)";
+	
+	class TransportMagazines {
+		maga_nc(TWC_Magazine_105mm_1rnd_HESH, 20);
+	};
 };
 
 class TWC_AmmoBox_Other_L118_Portable_SMOKE: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "L118 - 105mm Light Gun (Portable, Smoke)";
+	displayName = "L118 - 105mm Light Gun (Portable, Smoke, White)";
 	
 	class TransportMagazines {
-		maga_nc(ACE_CUP_30Rnd_105mmSMOKE_M119_M, 20);
-	};	
+		maga_nc(TWC_Magazine_105mm_1rnd_Smoke_White, 20);
+	};
+};
+
+class TWC_AmmoBox_Other_L118_Portable_SMOKE_RED: TWC_AmmoBox_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "L118 - 105mm Light Gun (Portable, Smoke, Red)";
+	
+	class TransportMagazines {
+		maga_nc(TWC_Magazine_105mm_1rnd_Smoke_Red, 20);
+	};
+};
+
+class TWC_AmmoBox_Other_L118_Portable_SMOKE_ORANGE: TWC_AmmoBox_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "L118 - 105mm Light Gun (Portable, Smoke, Orange)";
+	
+	class TransportMagazines {
+		maga_nc(TWC_Magazine_105mm_1rnd_Smoke_Orange, 20);
+	};
 };
 
 class TWC_AmmoBox_Other_L118_Portable_ILLUM: TWC_AmmoBox_Portable {
@@ -145,8 +175,18 @@ class TWC_AmmoBox_Other_L118_Portable_ILLUM: TWC_AmmoBox_Portable {
 	displayName = "L118 - 105mm Light Gun (Portable, Illum)";
 	
 	class TransportMagazines {
-		maga_nc(ACE_CUP_30Rnd_105mmILLUM_M119_M, 20);
-	};	
+		maga_nc(TWC_Magazine_105mm_1rnd_Illum, 20);
+	};
+};
+
+class TWC_AmmoBox_Other_L118_Portable_ILLUM_IR: TWC_AmmoBox_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "L118 - 105mm Light Gun (Portable, Illum, IR)";
+	
+	class TransportMagazines {
+		maga_nc(TWC_Magazine_105mm_1rnd_Illum_IR, 20);
+	};
 };
 
 class TWC_AmmoBox_Other_Stinger_Portable: TWC_AmmoBox_Portable {
@@ -182,5 +222,19 @@ class TWC_AmmoBox_Engineer_Portable: TWC_AmmoBox_Portable {
 		item_nc(APERSTripMine_Wire_Mag, 5);
 		item_nc(SatchelCharge_Remote_Mag, 2);
 		item_nc(ACE_Sandbag_empty, 200);
+	};
+};
+
+class TWC_AmmoBox_Other_Sergeant_Utility: TWC_AmmoBox_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Sergeant Utility Box";
+	class TransportItems {
+		item_nc(ACE_Clacker,1);
+		item_nc(DemoCharge_Remote_Mag, 5);
+		item_nc(ACE_wirecutter,1);
+		item_nc(ACE_EntrenchingTool,2);
+		item_nc(ACE_CableTie,5);
+		
 	};
 };
