@@ -54,7 +54,6 @@ class TWC_AmmoBox_Launchers_L2A1_Portable: TWC_AmmoBox_Launcher_Portable {
 		weap_nc(UK3CB_BAF_AT4_CS_AP_Launcher, 2);
 	};
 };
-
 class TWC_AmmoBox_Launchers_NLAW_Portable: TWC_AmmoBox_Launcher_Portable {
 	scope = 2;
 	scopeCurator = 2;
