@@ -70,30 +70,6 @@ class TWC_AmmoBox_Other_L7A2_Portable: TWC_AmmoBox_Portable {
 		maga_nc(UK3CB_BAF_762_100Rnd, 10);
 	};
 };
-
-class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
-	scope = 2;
-	scopeCurator = 2;
-	displayName = "L14 - Recoilless Rifle Ammo (Portable)";
-	
-	class TransportMagazines {
-		maga_nc(ukcw_l14A1_HE, 3);
-		maga_nc(ukcw_l14A1_HEAT, 3);
-		maga_nc(ukcw_l14A1_ILLUM, 2);
-		maga_nc(ukcw_l14A1_SMOKE, 2);
-	};
-};
-
-class TWC_AmmoBox_Other_MILAN_Portable: TWC_AmmoBox_Launcher_Portable {
-	scope = 2;
-	scopeCurator = 2;
-	displayName = "MILAN (Portable)";
-	
-	class TransportMagazines {
-		maga_nc(ukcw_milan_ace_missile, 6);
-	};
-};
-
 class TWC_AmmoBox_Other_L16_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;

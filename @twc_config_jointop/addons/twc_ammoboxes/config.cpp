@@ -1,24 +1,13 @@
 class CfgPatches {
 	class TWC_AmmoBoxes {
 		units[] = {
-			"TWC_AmmoBox_Modern_Base",
-			"TWC_AmmoBox_Modern_Section_Portable",
-			"TWC_AmmoBox_Modern_COIN_Base",
-			"TWC_AmmoBox_Modern_COIN_Section_Portable",
-			"TWC_AmmoBox_Modern_Mechanised_Base",
-			"TWC_AmmoBox_Modern_Mechanised_Section_Portable",
-			"TWC_AmmoBox_Modern_Javelin_Portable",
-			"TWC_AmmoBox_Modern_Sniper_Portable",
-			"TWC_AmmoBox_Modern_M6_Portable",
+
 			"TWC_AmmoBox_Millennial_Base",
 			"TWC_AmmoBox_Millennial_Section_Portable",
 			"TWC_AmmoBox_Millennial_Mechanised_Base",
 			"TWC_AmmoBox_Millennial_Mechanised_Section_Portable",
 			"TWC_AmmoBox_Millennial_Sniper_Portable",
-			"TWC_AmmoBox_ColdWar_Base",
-			"TWC_AmmoBox_ColdWar_Section_Portable",
-			"TWC_AmmoBox_ColdWar_Sniper_Portable",
-			"TWC_AmmoBox_ColdWar_Blowpipe_Portable",
+
 			"TWC_AmmoBox_Vehicle_Warrior",
 			"TWC_AmmoBox_Vehicle_Milan",
 			"TWC_AmmoBox_Vehicle_L134",
@@ -44,7 +33,6 @@ class CfgPatches {
 			"TWC_AmmoBox_Other_Command_Portable",
 			"TWC_AmmoBox_Other_Pallet",
 			"TWC_AmmoBox_Other_Empty_Portable",
-			"TWC_AmmoBox_Training_Medical_Base",
 			"TWC_AmmoBox_Other_Sergeant_Utility"
 		};
 		
@@ -83,18 +71,9 @@ class CfgEditorSubcategories {
 		Vehicle contains vehicle resupply (i.e. warrior ammo)
 		Other contains non-era specific crates and the pallet for air-lifting/dropping
 	*/
-	class TWC_Crates_Modern {
-		displayName = "Modern";
-	};
-	
 	class TWC_Crates_Millennial {
 		displayName = "Millennial";
 	};
-	
-	class TWC_Crates_ColdWar {
-		displayName = "Cold War";
-	};
-	
 	class TWC_Crates_Vehicles {
 		displayName = "Vehicles";
 	};
@@ -105,10 +84,6 @@ class CfgEditorSubcategories {
 	
 	class TWC_Crates_Launchers {
 		displayName = "Launchers";
-	};
-	
-	class TWC_Crates_Training {
-		displayName = "Training";
 	};
 	
 	// Future Possibility, Training Crates? These could just be the weapons/items.
