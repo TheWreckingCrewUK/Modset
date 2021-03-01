@@ -35,19 +35,19 @@ class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_
 	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
-		"ukcw_law80",
+		"twc_law80",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
-		"ukcw_law80",
+		"twc_law80",
 		"Throw",
 		"Put"
 	};
-	magazines[] += {"ukcw_law80_magazine", "ukcw_law80_magazine_spotting"};
-	respawnmagazines[] += {"ukcw_law80_magazine", "ukcw_law80_magazine_spotting"};
+	magazines[] += {"twc_law80_magazine", "twc_law80_magazine_spotting"};
+	respawnmagazines[] += {"twc_law80_magazine", "twc_law80_magazine_spotting"};
 };
 class TWC_Infantry_1990_Regular_Woodland_Gunner: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
