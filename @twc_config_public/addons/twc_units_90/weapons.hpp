@@ -10,22 +10,6 @@ class cfgWeapons
 	{};
 	class UK3CB_BAF_L85A2_UGL;
 	
-	class rhsgref_uniform_dpm;
-	class twc_rhsgref_uniform_dpm: rhsgref_uniform_dpm
-	{
-		modelSides[] = {0,1,2,3};
-	};
-	class rhsgref_uniform_dpm_olive;
-	class twc_rhsgref_uniform_dpm_olive: rhsgref_uniform_dpm_olive
-	{
-		modelSides[] = {0,1,2,3};
-	};
-	class rhsgref_uniform_olive;
-	class twc_rhsgref_uniform_olive: rhsgref_uniform_olive
-	{
-		modelSides[] = {0,1,2,3};
-	};
-	
 	class CUP_smg_MP5SD6;
 	class TWC_CUP_smg_MP5SD6_clean:CUP_smg_MP5SD6
 	{
@@ -63,7 +47,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="rhsusf_acc_eotech_552_d";
+				item="RKSL_optic_EOT552_C";
 			};
 			class LinkedItemsllm
 			{
@@ -75,7 +59,7 @@ class cfgWeapons
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					rhsusf_acc_eotech_552_d = 1;
+					RKSL_optic_EOT552_C = 1;
 				};
 			};
 			class twc_m4_siderail: asdg_FrontSideRail {
@@ -179,14 +163,14 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="rhsusf_acc_acog2_usmc";
+				item="CUP_optic_ACOG_TA31_KF";
 			};
 		};
 		class WeaponSlotsInfo
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					rhsusf_acc_acog2_usmc = 1;
+					CUP_optic_ACOG_TA31_KF = 1;
 				};
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
@@ -216,7 +200,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="rhsusf_acc_ACOG";
+				item="CUP_optic_ACOG2";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -233,7 +217,7 @@ class cfgWeapons
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					rhsusf_acc_ACOG = 1;
+					CUP_optic_ACOG2 = 1;
 				};
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
@@ -253,8 +237,8 @@ class cfgWeapons
 		};
 	};
 	
-	class rhs_weap_m4_m320;
-	class TWC_UK3CB_BAF_L119A1_UKUGL_ACOG: rhs_weap_m4_m320
+	class CUP_arifle_M4A1_BUIS_GL;
+	class TWC_UK3CB_BAF_L119A1_UKUGL_ACOG: CUP_arifle_M4A1_BUIS_GL
 	{
 		displayname = "L119A1 (UGL)";
 		descriptionshort = "Assault Rifle<br/>Calibre: 5.56x45mm STANAG";
@@ -263,7 +247,7 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="rhsusf_acc_ACOG";
+				item="CUP_optic_ACOG2";
 			};
 			class LinkedItemsMuzzleSlot
 			{
@@ -280,7 +264,7 @@ class cfgWeapons
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					rhsusf_acc_ACOG = 1;
+					CUP_optic_ACOG2 = 1;
 				};
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
@@ -352,14 +336,14 @@ class cfgWeapons
 			class LinkedItemsOptic
 			{
 				slot="asdg_OpticRail_UK3CB_BAF_L85";
-				item="rhsusf_acc_eotech_552";
+				item="RKSL_optic_EOT552";
 			};
 		};
 		class WeaponSlotsInfo
 		{
 			class asdg_OpticRail_UK3CB_BAF_L85: asdg_OpticRail1913 {
 				class compatibleItems {
-					rhsusf_acc_eotech_552 = 1;
+					RKSL_optic_EOT552 = 1;
 				};
 			};
 			class asdg_MuzzleSlot_UK3CB_BAF_L85: asdg_MuzzleSlot_556_3CB {
@@ -432,12 +416,8 @@ class cfgWeapons
 		displayName = "LBV Harness (Tan)";
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
 	};
-		
-	class twc_V_HarnessO_dpmt: V_HarnessO_ghex_F
-	{
-		displayName = "LBV Harness (DPMT)";
-		hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_small_oli_co.paa","rhsusf\addons\rhsusf_infantry\gear\backpacks\data\falconii_rgr_co.paa"};
-	};
+	class UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT;
+	class twc_V_HarnessO_dpmt: UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT {};
 		
 	class CUP_Vest_TK_Camo_Base;
 	
@@ -478,51 +458,21 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_dpm_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_dpm_co.paa"};
 	};
 	
-	class rhs_6sh92;
-	class twc_rhs_6sh92_tan: rhs_6sh92
-	{
-		displayName = "MilTec Assault Vest (Tan)";
-		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
-	};
-	class twc_rhs_6sh92_dpm: rhs_6sh92
-	{
-		displayName = "MilTec Assault Vest (DPM)";
-		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_dpm_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_dpm_co.paa"};
-	};
-	class twc_rhs_6sh92_ddpm: rhs_6sh92
-	{
-		displayName = "MilTec Assault Vest (DDPM)";
-		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa"};
-	};
+	class CUP_V_I_RACS_Carrier_Rig_2;
+	class CUP_V_I_RACS_Carrier_Rig_wdl_2;
+	class twc_rhs_6sh92_tan: CUP_V_I_RACS_Carrier_Rig_2 {};
+	class twc_rhs_6sh92_dpm: CUP_V_I_RACS_Carrier_Rig_wdl_2 {};
+	class twc_rhs_6sh92_ddpm: CUP_V_I_RACS_Carrier_Rig_wdl_2 {};
 	
-	class twc_rhs_6sh92_oli: rhs_6sh92
-	{
-		displayName = "MilTec Assault Vest (Olive)";
-		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
-	};
+	class twc_rhs_6sh92_oli: CUP_V_I_RACS_Carrier_Rig_wdl_2 {};
 	
-	class rhs_6sh92_radio;
-	class twc_rhs_6sh92_radio_tan: rhs_6sh92_radio
-	{
-		displayName = "MilTec Assault Vest (Tan w/Radio)";
-		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
-	};
-	class twc_rhs_6sh92_radio_dpm: rhs_6sh92_radio
-	{
-		displayName = "MilTec Assault Vest (DPM w/Radio)";
-		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_fast_cs95_dpm_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_fast_cs95_dpm_co.paa"};
-	};
-	class twc_rhs_6sh92_radio_ddpm: rhs_6sh92_radio
-	{
-		displayName = "MilTec Assault Vest (DDPM w/Radio)";
-		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa"};
-	};
+	class CUP_V_I_RACS_Carrier_Rig_3;
+	class CUP_V_I_RACS_Carrier_Rig_wdl_3;
+	class twc_rhs_6sh92_radio_tan: CUP_V_I_RACS_Carrier_Rig_3 {};
+	class twc_rhs_6sh92_radio_dpm: CUP_V_I_RACS_Carrier_Rig_wdl_3 {};
+	class twc_rhs_6sh92_radio_ddpm: CUP_V_I_RACS_Carrier_Rig_wdl_3 {};
 	
-	class twc_rhs_6sh92_radio_oli: rhs_6sh92_radio
-	{
-		displayName = "MilTec Assault Vest (Olive w/Radio)";
-		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa","uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
-	};
+	class twc_rhs_6sh92_radio_oli: CUP_V_I_RACS_Carrier_Rig_wdl_3 {};
 	
 	class UK3CB_BAF_L86A1:UK3CB_BAF_L86A2_public
 	{

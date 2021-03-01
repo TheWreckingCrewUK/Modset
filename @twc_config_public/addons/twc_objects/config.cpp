@@ -36,7 +36,7 @@ class cfgFunctions {
 };
 
 class CfgVehicles {
-	class rhsusf_m1085a1p2_B_WD_Medical_fmtv_usarmy;
+	class B_Truck_01_medical_F;
 	class Land_CampingTable_F;
 	class Land_Portable_generator_F;
 	class Land_BagFence_Corner_F;
@@ -60,7 +60,7 @@ class CfgVehicles {
 		ace_cargo_canLoad = 1;		
 	};
 	
-	class twc_medical_hemtt: rhsusf_m1085a1p2_B_WD_Medical_fmtv_usarmy {
+	class twc_medical_hemtt: B_Truck_01_medical_F {
 		ace_cargo_hasCargo = -1;
 
 		class EventHandlers: EventHandlers {

@@ -1,7 +1,7 @@
-	class rhsusf_assault_eagleaiii_coy;
+	class CUP_B_AssaultPack_Coyote;
 	class B_AssaultPack_cbr;
 	
-	class TWC_Backpack_USMC_Sectionleader: rhsusf_assault_eagleaiii_coy
+	class TWC_Backpack_USMC_Sectionleader: CUP_B_AssaultPack_Coyote
 	{
 		maximumLoad = 250;
 		class TransportItems
@@ -32,7 +32,7 @@
 		};
 	};
 	
-	class TWC_Backpack_USMC_Teamleader: rhsusf_assault_eagleaiii_coy
+	class TWC_Backpack_USMC_Teamleader: CUP_B_AssaultPack_Coyote
 	{
 		class TransportMagazines
 		{
@@ -42,38 +42,38 @@
 		};
 	};
 	
-	class TWC_Backpack_USMC_Breacher: rhsusf_assault_eagleaiii_coy
+	class TWC_Backpack_USMC_Breacher: CUP_B_AssaultPack_Coyote
 	{
 		class TransportMagazines
 		{
-			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag,5);
-			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red,3);
+			maga_nc(30Rnd_556x45_STANAG,5);
+			maga_nc(30Rnd_556x45_Stanag_Tracer_Red,3);
 		};
 		
 		class TransportWeapons
 		{
             class _xx_Rifle
 			{
-				weapon = "twc_rhs_weap_m4a1_acog_lazer";
+				weapon = "CUP_arifle_M4A1_ACOG_Laser";
 				count = 1;
 			};
 		};
 	};
-	class TWC_Backpack_USMC_AutomaticRifleman: rhsusf_assault_eagleaiii_coy
+	class TWC_Backpack_USMC_AutomaticRifleman: CUP_B_AssaultPack_Coyote
 	{
 		class TransportMagazines
 		{
-			maga_nc(rhsusf_200Rnd_556x45_soft_pouch,2);
+			maga_nc(CUP_200Rnd_TE4_Red_Tracer_556x45_M249,2);
 		};
 	};
-	class TWC_Backpack_USMC_MachineGunner: rhsusf_assault_eagleaiii_coy
+	class TWC_Backpack_USMC_MachineGunner: CUP_B_AssaultPack_Coyote
 	{
 		class TransportMagazines
 		{
-			maga_nc(rhsusf_100Rnd_762x51_m62_tracer,2);
+			maga_nc(CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M,2);
 		};
 	};
-	class TWC_Backpack_USMC_Medic: rhsusf_assault_eagleaiii_coy
+	class TWC_Backpack_USMC_Medic: CUP_B_AssaultPack_Coyote
 	{
 		scope = 1;
 		class TransportItems
@@ -117,8 +117,8 @@
 		};
 		class TransportMagazines
 		{
-			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag,15);
-			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red,10);
+			maga_nc(30Rnd_556x45_STANAG,15);
+			maga_nc(30Rnd_556x45_Stanag_Tracer_Red,10);
 			maga_nc(SmokeShellGreen,2);
 		};
 	};
@@ -132,8 +132,8 @@
 		};
 		class TransportMagazines
 		{
-			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag,10);
-			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red,10);
+			maga_nc(30Rnd_556x45_STANAG,10);
+			maga_nc(30Rnd_556x45_Stanag_Tracer_Red,10);
 		};
 	};
 	
@@ -146,8 +146,8 @@
 		};
 		class TransportMagazines
 		{
-			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag,5);
-			maga_nc(rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red,2);
+			maga_nc(30Rnd_556x45_STANAG,5);
+			maga_nc(30Rnd_556x45_Stanag_Tracer_Red,2);
 		};
 		class TransportWeapons
 		{
@@ -164,7 +164,7 @@
 		};
 		class TransportMagazines
 		{
-			maga_nc(rhs_200rnd_556x45_T_SAW,4);
+			maga_nc(CUP_200Rnd_TE4_Red_Tracer_556x45_M249,4);
 		};
 	};
 	

@@ -7,8 +7,6 @@ alice tan: uk3cb_baf_equipment\backpacks\data\backpack_fast_ddpm_co.paa
 alice green "uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"
 CUP_B_RPGPack_Khaki
 
-alice dark green, pub only: "rhsgref\addons\rhsgref_infantry\data_tanoa\alicepack_co.paa"
-
 uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa
 
 uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa
@@ -20,17 +18,10 @@ uk3cb_baf_equipment\uniform\data\uniform_dpm_co.paa
 uk3cb_baf_equipment\uniform\data\uniform_ddpm_co.paa
 */
 
-class rhsusf_assault_eagleaiii_ocp;
-class twc_genbackPack_tan: rhsusf_assault_eagleaiii_ocp
-{
-	displayname = "Miltec Backpack Tan";
-	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_tan_co.paa"};
-};
-class twc_genbackPack_oli: rhsusf_assault_eagleaiii_ocp
-{
-	displayname = "Miltec Backpack Olive";
-	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
-};
+class UK3CB_BAF_B_Kitbag_OLI;
+class UK3CB_BAF_B_Kitbag_TAN;
+class twc_genbackPack_tan: UK3CB_BAF_B_Kitbag_TAN {};
+class twc_genbackPack_oli: UK3CB_BAF_B_Kitbag_OLI {};
  
 class B_AssaultPack_dgtl;
 class twc_back_webbing: B_AssaultPack_dgtl
@@ -114,12 +105,7 @@ class twc_scoutpack_ddpm: CUP_B_ACRScout_m95
 	hiddenselectionstextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_ddpm_co.paa"};
 	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
 };
-class twc_scoutpack_wd: CUP_B_ACRScout_m95
-{
-	displayname = "CZ Scout Pack (Woodland)";
-	hiddenselectionstextures[] = {"rhsgref\addons\rhsgref_infantry\data_cdf\alicepack_co_gref_woodland.paa"};
-	hiddenSelectionsMaterials[] = {"\A3\data_f\default.rvmat"};
-};
+class twc_scoutpack_wd: CUP_B_ACRScout_m95 {};
 class twc_AlicePack_tan: CUP_B_AlicePack_Khaki
 {
 	displayname = "Alice Pack Tan";
@@ -142,8 +128,6 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 	class UK3CB_BAF_B_Bergen_DPMW_Rifleman_B;
 	class UK3CB_BAF_B_Carryall_DPMW;
 	class UK3CB_BAF_B_Kitbag_DPMW;
-	class UK3CB_BAF_B_Kitbag_OLI;
-	class UK3CB_BAF_B_Kitbag_TAN;
 	class UK3CB_BAF_B_Bergen_TAN_SL_A;
 	class UK3CB_BAF_B_Bergen_DPMW_JTAC_H_A;
 	class UK3CB_BAF_B_Carryall_TAN;
@@ -212,7 +196,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 		{
 			class _xx_belt
 			{
-				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
+				magazine = "UK3CB_BAF_762_100Rnd";
 				count = 3;
 			};
 		};
@@ -224,7 +208,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 		{
 			class _xx_belt
 			{
-				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
+				magazine = "UK3CB_BAF_762_100Rnd";
 				count = 9;
 			};
 		};
@@ -241,7 +225,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 			};
 			class _xx_belt
 			{
-				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
+				magazine = "UK3CB_BAF_762_100Rnd";
 				count = 3;
 			};
 		};
@@ -261,12 +245,12 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 		{
 			class _xx_stanag
 			{
-				magazine = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+				magazine = "UK3CB_BAF_556_30Rnd";
 				count = 15;
 			};
 			class _xx_stanag_Red
 			{
-				magazine = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+				magazine = "UK3CB_BAF_556_30Rnd_T";
 				count = 10;
 			};
 			class _xx_Smoke_Green
@@ -1021,7 +1005,6 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 	class UK3CB_BAF_B_Bergen_DDPM_Rifleman_B;
 	class UK3CB_BAF_B_Carryall_DDPM;
 	class UK3CB_BAF_B_Kitbag_DDPM;
-	class rhsusf_assault_eagleaiii_ucp;
 	class CUP_B_Bergen_BAF;
 	class B_Kitbag_cbr;
 	
@@ -1463,7 +1446,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 		{
             class _xx_Stanag
 			{
-				magazine = "rhs_200rnd_556x45_T_SAW";
+				magazine = "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
 				count = 6;
 			};
 			class _xx_Smoke
@@ -1840,7 +1823,7 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 	};
 
 
-			class TWC_Backpack_2000_vehicle: rhsusf_assault_eagleaiii_ucp
+			class TWC_Backpack_2000_vehicle: B_Kitbag_cbr
 	{
 		scope = 1;
 		class TransportItems

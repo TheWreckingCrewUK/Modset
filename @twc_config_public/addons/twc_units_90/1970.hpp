@@ -185,7 +185,7 @@
 	{
 		scope=2;
 		displayName="Rifleman";
-		uniformClass="CUP_U_B_BDUv2_dirty_DPM_olive";
+		uniformClass="CUP_U_B_BDUv2_dirty_DPM";
 		backpack="TWC_Backpack_1970_rifleman_2";
 		twc_nobackpack = 1;
 		linkedItems[]=
@@ -209,18 +209,18 @@
 		scope=2;
 		displayName="Pointman";
 		backpack="TWC_Backpack_1970_rifleman_1";
-		uniformClass="CUP_U_B_BDUv2_dirty_DPM_olive";
+		uniformClass="CUP_U_B_BDUv2_dirty_DPM";
 		linkedItems[]=
 		{
 			"twc_interceptor_od",
-			"rhs_altyn",
+			"CUP_H_RUS_Altyn_Shield_Up_khaki",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
 			"twc_interceptor_od",
-			"rhs_altyn",
+			"CUP_H_RUS_Altyn_Shield_Up_khaki",
 			"ItemCompass",
 			"ItemWatch"
 		};
@@ -229,7 +229,7 @@
 	{
 		scope=2;
 		displayName="Rifleman (SUIT)";
-		uniformClass="CUP_U_B_BDUv2_dirty_DPM_olive";
+		uniformClass="CUP_U_B_BDUv2_dirty_DPM";
 		icon="iconManMG";
 		backpack="TWC_Backpack_1970_rifleman_2";
 		linkedItems[]=
@@ -287,7 +287,7 @@
 	{
 		scope=2;
 		displayName="GPMG Gunner";
-		uniformClass="CUP_U_B_BDUv2_dirty_DPM_olive";
+		uniformClass="CUP_U_B_BDUv2_dirty_DPM";
 		backpack="TWC_Backpack_1970_machineGunner";
 		linkedItems[]=
 		{
@@ -319,18 +319,18 @@
 		};
 				magazines[]=
 		{
-		"rhsusf_100Rnd_762x51_m62_tracer",
-		"rhsusf_100Rnd_762x51_m62_tracer",
-		"rhsusf_100Rnd_762x51_m62_tracer",
-		"rhsusf_100Rnd_762x51_m62_tracer",
+		"UK3CB_BAF_762_100Rnd_T",
+		"UK3CB_BAF_762_100Rnd_T",
+		"UK3CB_BAF_762_100Rnd_T",
+		"UK3CB_BAF_762_100Rnd_T",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhsusf_100Rnd_762x51_m62_tracer",
-		"rhsusf_100Rnd_762x51_m62_tracer",
-		"rhsusf_100Rnd_762x51_m62_tracer",
-		"rhsusf_100Rnd_762x51_m62_tracer",
+		"UK3CB_BAF_762_100Rnd_T",
+		"UK3CB_BAF_762_100Rnd_T",
+		"UK3CB_BAF_762_100Rnd_T",
+		"UK3CB_BAF_762_100Rnd_T",
 		"SmokeShell"
 		};
 		Items[]=
@@ -788,14 +788,14 @@
 		scope=2;
 		linkedItems[]=
 		{
-			"rhs_beanie_green",
+			"CUP_H_SLA_BeanieGreen",
 			
 			"ItemCompass",
 			"ItemWatch"
 		};
 		respawnLinkedItems[]=
 		{
-			"rhs_beanie_green",
+			"CUP_H_SLA_BeanieGreen",
 			
 			"ItemCompass",
 			"ItemWatch"
@@ -897,7 +897,7 @@
 		linkedItems[]=
 		{
 			"CUP_V_B_Interceptor_Base_Olive",
-			"rhsusf_cvc_green_alt_helmet",
+			"CUP_H_CVC",
 			
 			"ItemCompass",
 			"ItemWatch"
@@ -905,7 +905,7 @@
 		respawnLinkedItems[]=
 		{
 			"CUP_V_B_Interceptor_Base_Olive",
-			"rhsusf_cvc_green_alt_helmet",
+			"CUP_H_CVC",
 			
 			"ItemCompass",
 			"ItemWatch"

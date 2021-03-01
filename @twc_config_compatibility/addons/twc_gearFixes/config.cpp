@@ -18,6 +18,7 @@ class CfgPatches {
 			"cup_trackedvehicles_mcv80",
 			"cup_wheeledvehicles_hilux",
 			"cup_wheeledvehicles_mtvr",
+			"UK3CB_BAF_Vehicles_LandRover",
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds",

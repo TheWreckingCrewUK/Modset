@@ -126,6 +126,7 @@ class TWC_Backpack_WW2_UK_Early_Platoon_Sergeant: B_LIB_UK_HSack_Tea
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 250;
 	class TransportMagazines {
 		ADD_MAGA(LIB_10Rnd_770x56,12);
 		ADD_MAGA(LIB_30Rnd_770x56,6);
@@ -196,6 +197,7 @@ class TWC_Backpack_WW2_UK_Early_Dismounted_Platoon_Sergeant: fow_b_uk_bergenpack
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 250;
 	class TransportMagazines {
 		ADD_MAGA(LIB_10Rnd_770x56,16);
 		ADD_MAGA(LIB_30Rnd_770x56,8);

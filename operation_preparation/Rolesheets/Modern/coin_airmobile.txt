@@ -1,5 +1,5 @@
 [b]
-[color=#ff9933]Platoon Commander [/color] (T): [color=#ccccff]No-One[/color]
+[color=#ff9933]Platoon Commander[/color] (T): [color=#ccccff]No-One[/color]
 [color=#ff9933]Platoon Sergeant[/color] (T): [color=#ccccff]No-One[/color]
 Platoon Medic (T): [color=#ccccff]No-One[/color]
 [color=#ff9933]Helicopter Pilot[/color] (T): [color=#ccccff]No-One[/color]

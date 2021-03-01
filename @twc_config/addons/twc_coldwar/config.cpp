@@ -123,8 +123,8 @@ class CfgVehicles
 		};
 		
 		nightItems[] = {
-			"Chemlight_green",
-			"Chemlight_green",
+			MAG_2("Chemlight_green"),
+			"ACE_Flashlight_Maglite_ML300L",
 			"ACE_Flashlight_MX991"
 		};
 		
@@ -198,8 +198,8 @@ class CfgVehicles
 		};
 		
 		nightItems[] = {
-			"Chemlight_green",
-			"Chemlight_green",
+			MAG_2("Chemlight_green"),
+			"ACE_Flashlight_Maglite_ML300L",
 			"ACE_Flashlight_MX991"
 		};
 	};
@@ -213,8 +213,7 @@ class CfgVehicles
 		};
 		
 		nightItems[] = {
-			"Chemlight_green",
-			"Chemlight_green"
+			MAG_2("Chemlight_green")
 		};
 	};
 	#include "regular\woodland.hpp"

@@ -698,6 +698,9 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Vehicle_Commander: TWC_Infantry_WW2_UK_L
 	displayName = "Vehicle Commander";
 	TWC_isCommandRole = 1;
 	engineer = 1;
+	class EventHandlers: EventHandlers {
+		init = "(_this select 0) setVariable ['twc_keepMap',true]";
+	};
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
@@ -741,6 +744,9 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Vehicle_Crew: TWC_Infantry_WW2_UK_Late_W
 {
 	displayName = "Vehicle Crew";
 	TWC_isCommandRole = 0;
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable ['twc_keepMap',false]";
+		};
 	weapons[] =
 	{
 		"LIB_Sten_Mk2",

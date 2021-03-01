@@ -580,7 +580,7 @@
 		vehicleClass="Men_Greek";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		uniformClass="rhs_uniform_gorka_r_g";
+		uniformClass="CUP_U_O_RUS_Gorka_Green";
 		backpack="UK3CB_BAF_B_Bergen_OLI_Rifleman_A";
 		linkedItems[]=
 		{
@@ -670,7 +670,7 @@
 		linkedItems[]=
 		{
         "CUP_V_I_RACS_Carrier_Vest_wdl",
-		"rhs_altyn_visordown",
+		"CUP_H_RUS_Altyn_Shield_Down_khaki",
 		"G_Bandanna_blk",
 		"ItemMap",
 		"ItemCompass",
@@ -682,45 +682,45 @@
 		"G_Bandanna_blk",
 		"ItemMap",
 		"ItemCompass",
-		"rhs_altyn_visordown",
+		"CUP_H_RUS_Altyn_Shield_Down_khaki",
 		"Binocular"
 		};
 		weapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_ak74m_2mag",
-		"rhs_weap_makarov_pm"
+		"CUP_arifle_AK74M",
+		"CUP_hgun_Makarov"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_ak74m_2mag",
-		"rhs_weap_makarov_pm"
+		"CUP_arifle_AK74M",
+		"CUP_hgun_Makarov"
 		};
 		magazines[]=
 		{
-		"rhs_30Rnd_545x39_AK",
-		"rhs_30Rnd_545x39_AK",
-		"rhs_30Rnd_545x39_AK",
-		"rhs_30Rnd_545x39_AK",
-		"rhs_30Rnd_545x39_AK",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_30Rnd_545x39_AK",
-		"rhs_30Rnd_545x39_AK",
-		"rhs_30Rnd_545x39_AK",
-		"rhs_30Rnd_545x39_AK",
-		"rhs_30Rnd_545x39_AK",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
-		"rhs_mag_9x18_8_57N181S",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_30Rnd_545x39_AK74M_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
+		"CUP_8Rnd_9x18_Makarov_M",
 		"SmokeShell"
 		};
 		Items[]=
@@ -937,34 +937,34 @@ class twc_greek_at2: O_G_Soldier_LAT_F
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_pm63",
+		"CUP_arifle_AKMS_Early",
 		"CUP_launch_RPG7V"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_pm63",
+		"CUP_arifle_AKMS_Early",
 		"CUP_launch_RPG7V"
 		};
 		magazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_bakelite_M",
+		"CUP_30Rnd_762x39_AK47_bakelite_M",
+		"CUP_30Rnd_762x39_AK47_bakelite_M",
+		"CUP_30Rnd_762x39_AK47_bakelite_M",
+		"CUP_30Rnd_762x39_AK47_bakelite_M",
 		 
 		"CUP_OG7_M",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_bakelite_M",
+		"CUP_30Rnd_762x39_AK47_bakelite_M",
+		"CUP_30Rnd_762x39_AK47_bakelite_M",
+		"CUP_30Rnd_762x39_AK47_bakelite_M",
+		"CUP_30Rnd_762x39_AK47_bakelite_M",
 		 
 		"CUP_OG7_M",
 		"SmokeShell"

@@ -47,7 +47,7 @@ class CfgVehicles
 			};
 			class _xx_law
 			{
-				weapon = "rhs_weap_m72a7";
+				weapon = "CUP_launch_M72A6";
 				count = 4;
 			};
 		};
@@ -155,12 +155,12 @@ class CfgVehicles
 		{
 			class _xx_at4
 			{
-				weapon = "rhs_weap_M136_hedp";
+				weapon = "UK3CB_BAF_AT4_CS_AP_Launcher";
 				count = 2;
 			};
 			class _xx_law
 			{
-				weapon = "rhs_weap_m72a7";
+				weapon = "CUP_launch_M72A6";
 				count = 1;
 			};
 		};
@@ -178,12 +178,12 @@ class CfgVehicles
 			};
 			class _xx_stanag_box
 			{
-				magazine = "rhsusf_200Rnd_556x45_soft_pouch";
+				magazine = "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
 				count = 15;
 			};
 			class _xx_762_boxTracer
 			{
-				magazine = "rhsusf_100Rnd_762x51_m62_tracer";
+				magazine = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
 				count = 15;
 			};
 			class _xx_1rnd_he
@@ -299,8 +299,8 @@ class CfgVehicles
 		};
 	};
 	
-	class rhs_3Ya40_1_single;
-	class TWC_Public_AmmoBox_Hobbs_Precious: rhs_3Ya40_1_single {
+	class Box_NATO_Ammo_F;
+	class TWC_Public_AmmoBox_Hobbs_Precious: Box_NATO_Ammo_F {
 		scope = 2;
 		scopeCurator = 1; // hide from zeus
 		displayName = "Storage Box (Hobbs Trick Box)";
@@ -322,7 +322,7 @@ class CfgVehicles
 		ace_dragging_canDrag  = 0;
 	};
 	//basically a placeholder for when loose ammo comes in just to remember the model
-	class TWC_Public_AmmoBox_stanag_box: rhs_3Ya40_1_single {
+	class TWC_Public_AmmoBox_stanag_box: Box_NATO_Ammo_F {
 		scope = 2;
 		displayName = "Ammunition Can";
 		author      = "Hobbs";
@@ -332,7 +332,7 @@ class CfgVehicles
 		{
 			class _xx_stanag
 			{
-				magazine = "rhs_mag_30Rnd_556x45_M855_Stanag";
+				magazine = "30Rnd_556x45_Stanag";
 				count = 15;
 			};
 		};
@@ -350,7 +350,7 @@ class CfgVehicles
 		ace_dragging_canCarry = 1;
 		ace_dragging_canDrag  = 1;
 	};
-	class TWC_Public_AmmoBox_medium: rhs_3Ya40_1_single {
+	class TWC_Public_AmmoBox_medium: Box_NATO_Ammo_F {
 		scope = 2;
 		displayName = "Ammunition Box";
 		author      = "Hobbs";

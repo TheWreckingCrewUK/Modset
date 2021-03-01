@@ -124,6 +124,22 @@ class cfgsoundshaders
 		};
 	};
 	
+	class jsrs_m107_shot_close_soundshader;
+	class twc_m107_shot_close_soundshader: jsrs_m107_shot_close_soundshader
+	{
+		volume = 1.1;
+		frequency = 1.1;
+		samples[]=
+		{
+			
+			
+			{
+				"\jsrs_soundmod_complete\JSRS_Soundmod_Soundfiles\warfare\explosions\Rocket\Close_Distance_1.ogg",
+				1
+			}
+		};
+	};
+	
 	class jsrs_akm_closure_soundshader;
 	class twc_akm_closure_soundshader: jsrs_akm_closure_soundshader
 	{
@@ -167,6 +183,11 @@ class cfgsoundshaders
 			}
 		};
 	};
+	class twc_m107_closure_soundshader: jsrs_akm_closure_soundshader
+	{
+		volume = 1.8;
+		frequency = 0.6;
+	};
 	
 	class twc_l129_closure_soundshader: jsrs_akm_closure_soundshader
 	{
@@ -209,6 +230,11 @@ class cfgsoundshaders
 		volume = 0.5;
 		frequency = 1.3;
 	};
+	class twc_ar15_closure_soundshader: twc_l129_closure_soundshader
+	{
+		volume = 0.5;
+		frequency = 1.2;
+	};
 	
 	class jsrs_g36_shot_close_soundshader;
 	class twc_jsrs_g36_shot_close_soundshader: jsrs_g36_shot_close_soundshader
@@ -249,31 +275,6 @@ class cfgsoundshaders
 			{1,0}
 		};
 	};
-	class twc_556_popper_2_close_soundshader: jsrs_1903_shot_close_soundshader
-	{
-		range=1;
-		frequency = 0.6;
-		volume=2.5;
-		rangecurve[]=
-		{
-			{0,1},
-			{0.5,0.5},
-			{1,0}
-		};
-	};
-	
-	class twc_762_popper_close_soundshader: twc_jsrs_g36_shot_close_soundshader
-	{
-		range=5;
-		frequency = 0.9;
-		volume=2.3;
-		rangecurve[]=
-		{
-			{0,1},
-			{1,0.5},
-			{5,0}
-		};
-	};
 	
 	class jsrs_mx2010_shot_close_soundshader;
 	class twc_l85_popper_close_soundshader: jsrs_mx2010_shot_close_soundshader
@@ -286,6 +287,23 @@ class cfgsoundshaders
 			{0,1},
 			{0.5,0.5},
 			{1,0}
+		};
+	};
+	class twc_556_popper_2_close_soundshader: twc_l85_popper_close_soundshader
+	{
+		volume=1.2;
+	};
+	
+	class twc_762_popper_close_soundshader: twc_jsrs_g36_shot_close_soundshader
+	{
+		range=5;
+		frequency = 0.9;
+		volume=2.3;
+		rangecurve[]=
+		{
+			{0,1},
+			{1,0.5},
+			{5,0}
 		};
 	};
 	
@@ -892,7 +910,8 @@ class cfgsoundsets
 			"jsrs_rifle_shake_soundshader",
 			"jsrs_rifle_shell_inroom_soundshader",
 			"jsrs_Hifi_rifle_2_soundshader",
-			"twc_762_popper_close_soundshader",
+			"twc_556_popper_2_close_soundshader",
+			"twc_ar15_closure_soundshader",
 			"jsrs_m16a4_interior_shot_soundshader",
 			"jsrs_m16a4_interior_shot_2_soundshader",
 			"jsrs_m16a4_shot_close_soundshader",
@@ -1108,16 +1127,16 @@ class cfgsoundsets
 		{
 			"jsrs_sniper_shake_soundshader",
 			"jsrs_big_shell_inroom_soundshader",
-			"jsrs_Hifi_sniper_0_soundshader",
+			"twc_m107_closure_soundshader",
 			"jsrs_gm6_interior_shot_soundshader",
 			"jsrs_gm6_interior_shot_2_soundshader",
 			"twc_heavy_popper_close_soundshader",
-			"jsrs_m107_shot_close_soundshader",
-			"jsrs_m107_shot_close_distance_soundshader",
-			"jsrs_m107_shot_medium_distance_soundshader",
-			"jsrs_close_distance_pool_amr_soundshader",
-			"jsrs_far_distance_pool_amr_soundshader",
-			"jsrs_very_far_distance_pool_amr_soundshader"
+			"twc_m107_shot_close_soundshader",
+			"jsrs_cannon20_shot_close_distance_soundshader",
+			"jsrs_cannon20_shot_medium_distance_soundshader",
+			"jsrs_close_distance_pool_autocannon_soundshader",
+			"jsrs_far_distance_pool_autocannon_soundshader",
+			"jsrs_very_far_distance_pool_autocannon_soundshader"
 		};
 	};
 	
@@ -1300,6 +1319,7 @@ class cfgsoundsets
 			"jsrs_smg45_interior_shot_soundshader",
 			"jsrs_smg45_interior_shot_2_soundshader",
 			"jsrs_7_62mm_dmr_shot_silenced_soundshader",
+			"twc_ar15_closure_soundshader",
 			"twc_556_popper_close_soundshader",
 		//	"jsrs_smg45_shot_close_soundshader",
 			"jsrs_smg45_shot_close_distance_soundshader",

@@ -376,6 +376,7 @@
 	//Configuring various plane weapons for use with the Ambient Attack Plane module.
 	class RocketPods;
 	class Mk82BombLauncher;
+	class rockets_Skyfire;
 	class CUP_Vblauncher_Mk82_veh: RocketPods
 	{
 		cursorAim = "bomb";
@@ -389,6 +390,10 @@
 		cursorAim = "bomb";
 	};
 
+	class CUP_Vmlauncher_S5_veh: rockets_Skyfire
+	{
+		cursorAim = "missile";
+	};
 	class CUP_Vmlauncher_CRV7_veh: RocketPods
 	{
 		cursorAim = "missile";
@@ -401,7 +406,6 @@
 	
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
-		reloadAction = "RHS_GestureReloadRPG7";
 		reloadMagazineSound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final",0.562341,1,50};
 		scope=2;
 		aiDispersionCoefX=1.03;
@@ -418,13 +422,6 @@
 	};
 	
 	class GM6_base_F;
-	
-	class rhs_weap_M107_Base_F: GM6_base_F
-	{
-		recoil = "twc_shotgun_1";
-		recoilProne = "twc_rifle_762_prone";
-		magazines[] = {"rhsusf_mag_10Rnd_STD_50BMG_M33", "rhsusf_mag_10Rnd_STD_50BMG_mk211", "rhsusf_mag_10Rnd_STD_50BMG_AMAX"};
-	};
 	class UK3CB_BAF_L115_Base;
 	
 	class UK3CB_BAF_L115A3: UK3CB_BAF_L115_Base
@@ -823,50 +820,6 @@
 		class Single;
 	};
 	
-	class arifle_Mk20_plain_F: arifle_Mk20_F {
-		class FullAuto: Mode_FullAuto {
-			
-			class StandardSound {
-				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
-			};
-			class SilencedSound {
-				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
-			};
-		};
-		class Fullauto_medium: FullAuto {
-			class StandardSound {
-				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
-			};
-			class SilencedSound {
-				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
-			};
-		};
-		class Single: Mode_SemiAuto {
-			class StandardSound {
-				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
-			};
-			class SilencedSound {
-				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
-			};
-		};
-		class Single_medium_optics1: Single {
-			class StandardSound {
-				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
-			};
-			class SilencedSound {
-				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
-			};
-		};
-		class Single_far_optics2: Single_medium_optics1 {
-			class StandardSound {
-				soundSetShot[] = {"RHSUSF_M4_Shot_SoundSet","RHSUSF_Rifle1_Tail_SoundSet"};
-			};
-			class SilencedSound {
-				soundSetShot[] = {"RHSUSF_sd_M4_Shot_SoundSet","RHSUSF_sd_Rifle1_Tail_SoundSet"};
-			};
-		};
-	};
-	
 	class UK3CB_BAF_L119_Base: arifle_Mk20_plain_F {
 		class FullAuto: FullAuto {
 			reloadTime = 0.07;
@@ -915,7 +868,7 @@
 		recoil = "twc_mg_762";
 		recoilProne = "twc_mg_prone";
 		twc_openbolt = 1;
-		magazines[] = {"UK3CB_BAF_762_100Rnd","UK3CB_BAF_762_100Rnd_Blank","UK3CB_BAF_762_100Rnd_T","UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_Blank","UK3CB_BAF_762_200Rnd_T","rhsusf_50Rnd_762x51","rhsusf_50Rnd_762x51_m61_ap","rhsusf_50Rnd_762x51_m62_tracer","rhsusf_50Rnd_762x51_m80a1epr","rhsusf_50Rnd_762x51_m82_blank","rhsusf_100Rnd_762x51","rhsusf_100Rnd_762x51_m61_ap","rhsusf_100Rnd_762x51_m62_tracer","rhsusf_100Rnd_762x51_m80a1epr","rhsusf_100Rnd_762x51_m82_blank","rhsusf_50Rnd_762x51_m993","rhsusf_100Rnd_762x51_m993","TWC_UK3CB_BAF_762_50Rnd","TWC_UK3CB_BAF_762_50Rnd_T"};
+		magazines[] = {"UK3CB_BAF_762_100Rnd","UK3CB_BAF_762_100Rnd_Blank","UK3CB_BAF_762_100Rnd_T","UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_Blank","UK3CB_BAF_762_200Rnd_T","TWC_UK3CB_BAF_762_50Rnd","TWC_UK3CB_BAF_762_50Rnd_T"};
 		class WeaponSlotsInfo {
 			class asdg_OpticRail_UK3CB_BAF_L7A2 { };
 		};

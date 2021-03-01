@@ -23,21 +23,21 @@
 			"Throw",
 			"Put",
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"rhs_weap_m72a7",
-			"rhsusf_weap_glock17g4"
+			"CUP_launch_M72A6",
+			"UK3CB_BAF_L131A1"
 		};
 
 		respawnweapons[]= {
 			"Throw",
 			"Put",
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D",
-			"rhs_weap_m72a7",
-			"rhsusf_weap_glock17g4"
+			"CUP_launch_M72A6",
+			"UK3CB_BAF_L131A1"
 		};
 
 		magazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd",
@@ -53,8 +53,8 @@
 		};
 
 		Respawnmagazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd_T",
 			"UK3CB_BAF_556_30Rnd",
@@ -78,8 +78,8 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-			"rhs_weap_m72a7",
-			"rhsusf_weap_glock17g4"
+			"CUP_launch_M72A6",
+			"UK3CB_BAF_L131A1"
 		};
 
 		respawnweapons[]= {
@@ -87,13 +87,13 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L85A2_UGL_ELCAN3D",
-			"rhs_weap_m72a7",
-			"rhsusf_weap_glock17g4"
+			"CUP_launch_M72A6",
+			"UK3CB_BAF_L131A1"
 		};
 
 		magazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -112,8 +112,8 @@
 		};
 
 		Respawnmagazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -153,19 +153,19 @@
 			"Throw",
 			"Put",
 			"UK3CB_BAF_L110A2_ELCAN3D",
-			"rhsusf_weap_glock17g4"
+			"UK3CB_BAF_L131A1"
 		};
 
 		respawnweapons[]= {
 			"Throw",
 			"Put",
 			"UK3CB_BAF_L110A2_ELCAN3D",
-			"rhsusf_weap_glock17g4"
+			"UK3CB_BAF_L131A1"
 		};
 
 		magazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_556_200Rnd_T",
 			"UK3CB_BAF_556_200Rnd_T",
 			"UK3CB_BAF_556_200Rnd_T",
@@ -175,8 +175,8 @@
 		};
 
 		Respawnmagazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_556_200Rnd_T",
 			"UK3CB_BAF_556_200Rnd_T",
 			"UK3CB_BAF_556_200Rnd_T",
@@ -211,21 +211,21 @@
 			"Throw",
 			"Put",
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN",
-			"rhs_weap_m72a7",
-			"rhsusf_weap_glock17g4"
+			"CUP_launch_M72A6",
+			"UK3CB_BAF_L131A1"
 		};
 
 		respawnweapons[]= {
 			"Throw",
 			"Put",
 			"UK3CB_BAF_L85A2_RIS_ELCAN3D_TAN",
-			"rhs_weap_m72a7",
-			"rhsusf_weap_glock17g4"
+			"CUP_launch_M72A6",
+			"UK3CB_BAF_L131A1"
 		};
 
 		magazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -241,8 +241,8 @@
 		};
 
 		Respawnmagazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
 			"UK3CB_BAF_556_30Rnd",
@@ -266,8 +266,8 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L129A1_Grippod_TA648",
-			"rhs_weap_m72a7",
-			"rhsusf_weap_glock17g4"
+			"CUP_launch_M72A6",
+			"UK3CB_BAF_L131A1"
 		};
 
 		respawnweapons[]= {
@@ -275,13 +275,13 @@
 			"Put",
 			"ACE_Vector",
 			"UK3CB_BAF_L129A1_Grippod_TA648",
-			"rhs_weap_m72a7",
-			"rhsusf_weap_glock17g4"
+			"CUP_launch_M72A6",
+			"UK3CB_BAF_L131A1"
 		};
 
 		magazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
@@ -298,8 +298,8 @@
 		};
 
 		Respawnmagazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
@@ -324,7 +324,7 @@
 		twc_nobackpack = 1;
 		linkedItems[]=
 		{
-			"twc_mtp_spcs_SL",
+			"UK3CB_BAF_V_Osprey_SL_B",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemcTab",
@@ -333,7 +333,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-			"twc_mtp_spcs_SL",
+			"UK3CB_BAF_V_Osprey_SL_B",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemcTab",
@@ -405,7 +405,7 @@
 		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"twc_mtp_spc_rifleman",
+			"UK3CB_BAF_V_Osprey_Rifleman_D",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -413,7 +413,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"twc_mtp_spc_rifleman",
+			"UK3CB_BAF_V_Osprey_Rifleman_D",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -449,7 +449,7 @@
 		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"twc_mtp_spcs_mg",
+			"UK3CB_BAF_V_Osprey_MG_B",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -457,7 +457,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"twc_mtp_spcs_mg",
+			"UK3CB_BAF_V_Osprey_MG_B",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -471,7 +471,7 @@
 		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"twc_mtp_spc_rifleman_alt",
+			"UK3CB_BAF_V_Osprey_Rifleman_B",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -479,7 +479,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"twc_mtp_spc_rifleman_alt",
+			"UK3CB_BAF_V_Osprey_Rifleman_B",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -493,7 +493,7 @@
 		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"twc_mtp_spcs_mg",
+			"UK3CB_BAF_V_Osprey_MG_B",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -501,7 +501,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"twc_mtp_spcs_mg",
+			"UK3CB_BAF_V_Osprey_MG_B",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -509,28 +509,28 @@
 		};
 		magazines[]=
 		{
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_100Rnd_762x51_m62_tracer",
-			"rhsusf_100Rnd_762x51_m62_tracer",
-			"rhsusf_100Rnd_762x51_m62_tracer",
-			"rhsusf_100Rnd_762x51_m62_tracer",
-			"rhsusf_100Rnd_762x51_m62_tracer",
-			"rhsusf_100Rnd_762x51_m62_tracer",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
 			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_mag_17Rnd_9x19_JHP",
-			"rhsusf_100Rnd_762x51_m62_tracer",
-			"rhsusf_100Rnd_762x51_m62_tracer",
-			"rhsusf_100Rnd_762x51_m62_tracer",
-			"rhsusf_100Rnd_762x51_m62_tracer",
-			"rhsusf_100Rnd_762x51_m62_tracer",
-			"rhsusf_100Rnd_762x51_m62_tracer",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_9_17Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
+			"UK3CB_BAF_762_100Rnd",
 			"HandGrenade",
 			"SmokeShell",
 			"SmokeShell"
@@ -543,7 +543,7 @@
 		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"twc_mtp_spcs_Marksman",
+			"UK3CB_BAF_V_Osprey_Marksman_A",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -551,7 +551,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"twc_mtp_spcs_Marksman",
+			"UK3CB_BAF_V_Osprey_Marksman_A",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -565,7 +565,7 @@
 		backpack="twc_mtp_belt";
 		twc_nobackpack = 1;
 		linkedItems[]= {
-			"twc_mtp_spcs_medic",
+			"UK3CB_BAF_V_Osprey_Medic_B",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -573,7 +573,7 @@
 		};
 
 		respawnLinkedItems[]= {
-			"twc_mtp_spcs_medic",
+			"UK3CB_BAF_V_Osprey_Medic_B",
 			"UK3CB_BAF_H_Mk7_Camo_C",
 			"ItemMap",
 			"ItemCompass",
@@ -756,18 +756,18 @@
 			"Throw",
 			"Put",
 			"twc_l115a3_wd_covered",
-			"rhsusf_weap_glock17g4"
+			"UK3CB_BAF_L131A1"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",
 			"twc_l115a3_wd_covered",
-			"rhsusf_weap_glock17g4"
+			"UK3CB_BAF_L131A1"
 		};
 
 		magazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
 			"TWC_5Rnd_338_300gr_HPBT_Mag",
 			"TWC_5Rnd_338_300gr_HPBT_Mag",
 			"TWC_5Rnd_338_300gr_HPBT_Mag",
@@ -783,7 +783,7 @@
 		};
 
 		Respawnmagazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
 			"TWC_5Rnd_338_300gr_HPBT_Mag",
 			"TWC_5Rnd_338_300gr_HPBT_Mag",
 			"TWC_5Rnd_338_300gr_HPBT_Mag",
@@ -886,7 +886,7 @@
 			"Put",
 			"ACE_Vector",
 			"twc_l129a1_spotter",
-			"rhsusf_weap_glock17g4"
+			"UK3CB_BAF_L131A1"
 		};
 
 		respawnweapons[]= {
@@ -894,11 +894,11 @@
 			"Put",
 			"ACE_Vector",
 			"twc_l129a1_spotter",
-			"rhsusf_weap_glock17g4"
+			"UK3CB_BAF_L131A1"
 		};
 
 		magazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"HandGrenade",
@@ -910,7 +910,7 @@
 		};
 
 		Respawnmagazines[]= {
-			"rhsusf_mag_17Rnd_9x19_JHP",
+			"UK3CB_BAF_9_17Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd",
 			"UK3CB_BAF_762_L42A1_20Rnd_T",
 			"HandGrenade",
@@ -964,29 +964,29 @@
 		};
 		magazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
@@ -1056,15 +1056,15 @@
 		backpack="ANA_Backpack_Modern_terp";
 		linkedItems[]=
 		{
-        "rhsusf_iotv_ucp",
-        "rhsusf_ach_helmet_M81",
+        "CUP_V_B_IOTV_UCP_Rifleman_USArmy",
+        "CUP_H_PASGTv2_WDL",
 		"ItemMap",
 		"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-        "rhsusf_iotv_ucp",
-        "rhsusf_ach_helmet_M81",
+        "CUP_V_B_IOTV_UCP_Rifleman_USArmy",
+        "CUP_H_PASGTv2_WDL",
 		"ItemMap",
 		"ItemCompass"
 		};
@@ -1150,24 +1150,24 @@
 		};
 		magazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"SmokeShell"
 		};
 		Items[]=
@@ -1266,13 +1266,13 @@
 		};
 		magazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"CUP_1Rnd_HE_GP25_M",
 		"CUP_1Rnd_HE_GP25_M",
 		"CUP_1Rnd_HE_GP25_M",
@@ -1280,21 +1280,21 @@
 		"CUP_1Rnd_HE_GP25_M",
 		"CUP_1Rnd_HE_GP25_M",
 		"CUP_1Rnd_HE_GP25_M",
-		"rhs_GRD40_White",
-		"rhs_GRD40_White",
-		"rhs_GRD40_White",
+		"CUP_1Rnd_SMOKE_GP25_M",
+		"CUP_1Rnd_SMOKE_GP25_M",
+		"CUP_1Rnd_SMOKE_GP25_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"CUP_1Rnd_HE_GP25_M",
 		"CUP_1Rnd_HE_GP25_M",
 		"CUP_1Rnd_HE_GP25_M",
@@ -1302,9 +1302,9 @@
 		"CUP_1Rnd_HE_GP25_M",
 		"CUP_1Rnd_HE_GP25_M",
 		"CUP_1Rnd_HE_GP25_M",
-		"rhs_GRD40_White",
-		"rhs_GRD40_White",
-		"rhs_GRD40_White",
+		"CUP_1Rnd_SMOKE_GP25_M",
+		"CUP_1Rnd_SMOKE_GP25_M",
+		"CUP_1Rnd_SMOKE_GP25_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
@@ -1333,38 +1333,38 @@
 		"Throw",
 		"Put",
 		"CUP_arifle_AKS",
-		"rhs_weap_rpg7"
+		"CUP_launch_RPG7V"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
 		"CUP_arifle_AKS",
-		"rhs_weap_rpg7"
+		"CUP_launch_RPG7V"
 		};
 		magazines[]=
 		{
-		"rhs_rpg7_OG7V_mag",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_OG7_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_rpg7_OG7V_mag",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_OG7_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
@@ -1393,27 +1393,27 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_pkm"
+		"CUP_lmg_PKM"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_pkm"
+		"CUP_lmg_PKM"
 		};
 		magazines[]=
 		{
-		"rhs_100Rnd_762x54mmR_green",
+		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
 		"HandGrenade",
 		"SmokeShell",
-		"rhs_100Rnd_762x54mmR_green"
+		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_100Rnd_762x54mmR_green",
+		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
 		"HandGrenade",
 		"SmokeShell",
-		"rhs_100Rnd_762x54mmR_green"
+		"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"
 		};
 	};
 
@@ -1450,25 +1450,25 @@
 		};
 		magazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
@@ -1494,37 +1494,37 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_svdp_pso1"
+		"CUP_srifle_SVD_pso"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_svdp_pso1"
+		"CUP_srifle_SVD_pso"
 		};
 		magazines[]=
 		{
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
-		"rhs_10Rnd_762x54mmR_7N1",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
@@ -1591,25 +1591,25 @@
 		};
 		magazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
-		"rhs_30Rnd_762x39mm",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
 		"HandGrenade",
 		"SmokeShell"
 		};
@@ -1824,13 +1824,13 @@
 		{
 		"Throw",
 		"Put",
-		"twc_m4_acog_grip_laser"
+		"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"twc_m4_acog_grip_laser"
+		"CUP_arifle_M4A1_ACOG_Laser"
 		};
 		magazines[]=
 		{
@@ -1865,13 +1865,13 @@
 		{
 		"Throw",
 		"Put",
-		"twc_m4_m203_acog_light"
+		"CUP_arifle_M4A1_M203_ACOG_Laser"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"twc_m4_m203_acog_light"
+		"CUP_arifle_M4A1_M203_ACOG_Laser"
 		};
 		magazines[]=
 		{
