@@ -203,7 +203,6 @@ class CfgVehicles {
 	#include "vehicles\challenger2.hpp"
 	
 	#include "generic\generic.hpp"
-	#include "coldwar\coldwar.hpp"
 	#include "millennial\millennial.hpp"
 	#include "modern\modern.hpp"
 	
