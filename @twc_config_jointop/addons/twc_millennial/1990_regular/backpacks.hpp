@@ -90,18 +90,6 @@ class TWC_Backpack_1990_Regular_##CAMO##_MILAN_Ass: INHERIT \
 		ADD_ITEM(ukcw_milan_ace_missile,2); \
 	}; \
 };
-
-#define BACKPACK_REGULAR_BLOWPIPE_ASS(CAMO, INHERIT) \
-class TWC_Backpack_1990_Regular_##CAMO##_Blowpipe_Ass: INHERIT \
-{ \
-	scope = 1; \
-	scopeArsenal = 1; \
-	maximumLoad = 200; \
-	class TransportMagazines { \
-		ADD_MAGA(SP_Blowpipe_round,2); \
-	}; \
-};
-
 #define BACKPACK_REGULAR_L14A1_ASS(CAMO, INHERIT) \
 class TWC_Backpack_1990_Regular_##CAMO##_L14A1_Ass: INHERIT \
 { \
@@ -312,7 +300,6 @@ BACKPACK_REGULAR_PLATOON_MEDIC(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_B)
 
 //Attachments
 BACKPACK_REGULAR_MILAN_ASS(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_B)
-BACKPACK_REGULAR_BLOWPIPE_ASS(Woodland, SP_Backpack_BlowpipeCarrier)
 BACKPACK_REGULAR_L14A1_ASS(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_B)
 BACKPACK_REGULAR_SPOTTER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
 BACKPACK_REGULAR_ARTILLERY_COMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
@@ -345,7 +332,6 @@ BACKPACK_REGULAR_PLATOON_MEDIC(Desert, UK3CB_BAF_B_Bergen_DDPM_Rifleman_B)
 
 //Attachments
 BACKPACK_REGULAR_MILAN_ASS(Desert, UK3CB_BAF_B_Bergen_DDPM_Rifleman_B)
-BACKPACK_REGULAR_BLOWPIPE_ASS(Desert, SP_Backpack_BlowpipeCarrier)
 BACKPACK_REGULAR_L14A1_ASS(Desert, UK3CB_BAF_B_Bergen_DDPM_Rifleman_B)
 BACKPACK_REGULAR_SPOTTER(Desert, UK3CB_BAF_B_Bergen_DDPM_SL_A)
 BACKPACK_REGULAR_ARTILLERY_COMMANDER(Desert, UK3CB_BAF_B_Bergen_DDPM_SL_A)
@@ -378,7 +364,6 @@ BACKPACK_REGULAR_PLATOON_MEDIC(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_B)
 
 //Attachments
 BACKPACK_REGULAR_MILAN_ASS(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_B)
-BACKPACK_REGULAR_BLOWPIPE_ASS(Tropic, SP_Backpack_BlowpipeCarrier)
 BACKPACK_REGULAR_L14A1_ASS(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_B)
 BACKPACK_REGULAR_SPOTTER(Tropic, UK3CB_BAF_B_Bergen_DPMT_SL_A)
 BACKPACK_REGULAR_ARTILLERY_COMMANDER(Tropic, UK3CB_BAF_B_Bergen_DPMT_SL_A)
@@ -411,7 +396,6 @@ BACKPACK_REGULAR_PLATOON_MEDIC(Arctic, UK3CB_BAF_B_Bergen_Arctic_Rifleman_B)
 
 //Attachments
 BACKPACK_REGULAR_MILAN_ASS(Arctic, UK3CB_BAF_B_Bergen_Arctic_Rifleman_B)
-BACKPACK_REGULAR_BLOWPIPE_ASS(Arctic, SP_Backpack_BlowpipeCarrier)
 BACKPACK_REGULAR_L14A1_ASS(Arctic, UK3CB_BAF_B_Bergen_Arctic_Rifleman_B)
 BACKPACK_REGULAR_SPOTTER(Arctic, UK3CB_BAF_B_Bergen_Arctic_SL_A)
 BACKPACK_REGULAR_ARTILLERY_COMMANDER(Arctic, UK3CB_BAF_B_Bergen_Arctic_SL_A)
