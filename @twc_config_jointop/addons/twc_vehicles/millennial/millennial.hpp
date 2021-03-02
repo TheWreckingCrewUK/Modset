@@ -5,9 +5,6 @@
 #define MILLENNIAL_LANDROVER_MOD 0.5
 #define MILLENNIAL_FV432_MOD 1
 #define MILLENNIAL_WARRIOR_MOD 0.8
-#define MILLENNIAL_SCIMITAR_MOD 1
-#define MILLENNIAL_SCORPION_MOD 1
-#define MILLENNIAL_CHIEFTAIN_MOD 1
 #define MILLENNIAL_PUMA_MOD 1
 
 // section vehicle resupply total (manipulated by modifiers)
