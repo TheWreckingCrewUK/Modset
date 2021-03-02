@@ -27,13 +27,7 @@ class UK3CB_BAF_B_Bergen_DPMT_Rifleman_B;
 class UK3CB_BAF_B_Bergen_DPMT_JTAC_H_A;
 
 #include "1990_coin\backpacks.hpp"
-<<<<<<< HEAD
 #include "1990_regular\backpacks.hpp"
 #include "1990_regular\backpacks.hpp"
-<<<<<<< Updated upstream
 #include "2000_coin\backpacks.hpp"
 #include "2000_regular\backpacks.hpp"
-=======
-
->>>>>>> d6d62356ba61c02698bc34fdeeb56c412509a72a
->>>>>>> Stashed changes
