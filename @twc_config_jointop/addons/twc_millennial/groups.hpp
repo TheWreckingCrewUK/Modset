@@ -221,60 +221,6 @@ class TWC_Groups_1990_Regular_##CAMO \
 			position[] = {4,0,0}; \
 		}; \
 	}; \
-	class AA_Team \
-	{ \
-		name = "AA Team"; \
-		faction = "TWC_Millennial"; \
-		side = 1; \
-		class Unit0 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_1990_Regular_##CAMO##_SectionCommander; \
-			rank = "SERGEANT"; \
-			position[] = {0,0,0}; \
-		}; \
-		class Unit1 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_1990_Regular_##CAMO##_Blowpipe_Gunner; \
-			rank = "PRIVATE"; \
-			position[] = {2,0,0}; \
-		}; \
-		class Unit2 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_1990_Regular_##CAMO##_Blowpipe_Ass; \
-			rank = "PRIVATE"; \
-			position[] = {4,0,0}; \
-		}; \
-	}; \
-	class RR_Team \
-	{ \
-		name = "Recoilless Rifle Team"; \
-		faction = "TWC_Millennial"; \
-		side = 1; \
-		class Unit0 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_1990_Regular_##CAMO##_SectionCommander; \
-			rank = "SERGEANT"; \
-			position[] = {0,0,0}; \
-		}; \
-		class Unit1 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_1990_Regular_##CAMO##_L14A1_Gunner; \
-			rank = "PRIVATE"; \
-			position[] = {2,0,0}; \
-		}; \
-		class Unit2 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_1990_Regular_##CAMO##_L14A1_Ass; \
-			rank = "PRIVATE"; \
-			position[] = {4,0,0}; \
-		}; \
-	}; \
 	class Sniper_Team \
 	{ \
 		name = "Sniper Team"; \
