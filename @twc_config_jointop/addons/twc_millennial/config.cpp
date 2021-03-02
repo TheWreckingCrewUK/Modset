@@ -227,14 +227,6 @@ class CfgVehicles
 	};
 	#include "1990_regular\woodland.hpp"
 	#include "1990_regular\woodland_dismounted.hpp"
-	#include "1990_regular\desert.hpp"
-	#include "1990_regular\desert_dismounted.hpp"
-	#include "1990_regular\arctic.hpp"
-	#include "1990_regular\arctic_dismounted.hpp"
-	#include "1990_regular\tropic.hpp"
-	#include "1990_regular\tropic_dismounted.hpp"
-	#include "1990_regular\nbc.hpp"
-	#include "1990_regular\nbc_dismounted.hpp"
 
 	#include "1990_coin\woodland.hpp"
 	#include "1990_coin\woodland_dismounted.hpp"
@@ -246,16 +238,6 @@ class CfgVehicles
 	#include "1990_coin\tropic_dismounted.hpp"
 	#include "1990_coin\nbc.hpp"
 	#include "1990_coin\nbc_dismounted.hpp"
-
-	/*#include "2000_regular\woodland.hpp"
-	#include "2000_regular\woodland_dismounted.hpp"
-	#include "2000_regular\desert.hpp"
-	#include "2000_regular\desert_dismounted.hpp"
-
-	#include "2000_coin\woodland.hpp"
-	#include "2000_coin\woodland_dismounted.hpp"
-	#include "2000_coin\desert.hpp"
-	#include "2000_coin\desert_dismounted.hpp"*/
 };
 
 class CfgGroups
