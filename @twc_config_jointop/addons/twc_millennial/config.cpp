@@ -227,17 +227,6 @@ class CfgVehicles
 	};
 	#include "1990_regular\woodland.hpp"
 	#include "1990_regular\woodland_dismounted.hpp"
-
-	#include "1990_coin\woodland.hpp"
-	#include "1990_coin\woodland_dismounted.hpp"
-	#include "1990_coin\desert.hpp"
-	#include "1990_coin\desert_dismounted.hpp"
-	#include "1990_coin\arctic.hpp"
-	#include "1990_coin\arctic_dismounted.hpp"
-	#include "1990_coin\tropic.hpp"
-	#include "1990_coin\tropic_dismounted.hpp"
-	#include "1990_coin\nbc.hpp"
-	#include "1990_coin\nbc_dismounted.hpp"
 };
 
 class CfgGroups
@@ -248,7 +237,6 @@ class CfgGroups
 		{
 			name = "TWC Groups Millennial";
 			#include "1990_regular\groups.hpp"
-			#include "1990_coin\groups.hpp"
 			class TWC_Groups_Millennial_Generic
 			{
 				name = "Generic";
