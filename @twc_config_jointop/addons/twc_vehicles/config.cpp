@@ -201,11 +201,5 @@ class CfgVehicles {
 	#include "vehicles\lr_wmik.hpp"
 	#include "vehicles\wildcat.hpp"
 	#include "vehicles\challenger2.hpp"
-	
-	#include "generic\generic.hpp"
 	#include "millennial\millennial.hpp"
-	#include "modern\modern.hpp"
-	
-	// delete this in a few months once we've gone through submitted ops
-	#include "oldVehicles.hpp"
 };
