@@ -13,29 +13,11 @@ class CfgPatches {
 			"TWC_Vehicle_Generic_RHIB_HMG_Black",
 			"TWC_Vehicle_Generic_Zodiac_Black",
 			
-			"TWC_Vehicle_ColdWar_LandRover_Woodland",
-			"TWC_Vehicle_ColdWar_LandRover_Desert",
-			"TWC_Vehicle_ColdWar_LandRover_Woodland_COIN",
-			"TWC_Vehicle_ColdWar_LandRover_Desert_COIN",
-			"TWC_Vehicle_ColdWar_Puma_RAF",
-			"TWC_Vehicle_ColdWar_Puma_RAF_COIN",
-			"TWC_Vehicle_ColdWar_Chinook_RAF",
-			"TWC_Vehicle_ColdWar_FV432_Woodland",
-			"TWC_Vehicle_ColdWar_FV432_Woodland_COIN",
-			"TWC_Vehicle_ColdWar_Scimitar_Chameleon",
-			"TWC_Vehicle_ColdWar_Scorpion_Chameleon",
-			"TWC_Vehicle_ColdWar_Chieftain_Woodland",
-			"TWC_Vehicle_ColdWar_HarrierGR3_RAF",
-			"TWC_Vehicle_ColdWar_RHIB_Black",
-			"TWC_Vehicle_ColdWar_Hercules_RAF_VIV",
-			
 			"TWC_Vehicle_Millennial_HarrierGR5_RAF",
 			"TWC_Vehicle_Millennial_FV432_Woodland",
 			"TWC_Vehicle_Millennial_FV432_Woodland_COIN",
 			"TWC_Vehicle_Millennial_Warrior_Woodland",
 			"TWC_Vehicle_Millennial_Warrior_Desert",
-			"TWC_Vehicle_Millennial_Scimitar_Chameleon",
-			"TWC_Vehicle_Millennial_Scorpion_Chameleon",
 			"TWC_Vehicle_Millennial_LandRover_Woodland",
 			"TWC_Vehicle_Millennial_LandRover_Desert",
 			"TWC_Vehicle_Millennial_LandRover_Woodland_COIN",
@@ -78,8 +60,10 @@ class CfgPatches {
 			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert",
 			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland_COIN",
 			"TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland",
+			
+			"TWC_Vehicle_Modern_Challenger2_Woodland",
 			"TWC_Vehicle_Modern_Challenger2_Desert",
-			"TWC_Vehicle_Modern_Challenger2_Woodland"
+			"TWC_Vehicle_Modern_Challenger2_Snow"
 		};
 
 		weapons[] = {
@@ -106,11 +90,6 @@ class CfgPatches {
 			"CUP_AirVehicles_AV8B",
 			"CUP_AirVehicles_F35",
 			"CUP_AirVehciles_SA330",
-			"ukcw_bedford",
-			"ukcw_chieftain",
-			"ukcw_cvrt",
-			"ukcw_fv432",
-			"ukcw_gazelle",
 			"TWC_Faction",
 			"ace_cargo",
 			"ace_interaction",
@@ -166,13 +145,8 @@ class CfgVehicles {
 	*/
 
 	// These are used across eras in different configurations, and as such should be first referenced here.
-	class ukcw_fv432;
-	class ukcw_cvrt_Scim_w_L1;
-	class ukcw_cvrt_Scim_d_L1;
-	class ukcw_Scorpion_w_L1;
-	class ukcw_Scorpion_d_L1;
+	class CUP_B_FV432_GB_GPMG;
 	class CUP_B_SA330_Puma_HC1_BAF;
-	class ukcw_chieftainmk10;
 	
 	// section modifiers all eras/types
 	#define SECTION_FIELDDRESSING 20
@@ -226,7 +200,6 @@ class CfgVehicles {
 	#include "vehicles\lr_snatch.hpp"
 	#include "vehicles\lr_wmik.hpp"
 	#include "vehicles\wildcat.hpp"
-	
-	#include "generic\generic.hpp"
-	#include "coldwar\coldwar.hpp"
+	#include "vehicles\challenger2.hpp"
+	#include "millennial\millennial.hpp"
 };

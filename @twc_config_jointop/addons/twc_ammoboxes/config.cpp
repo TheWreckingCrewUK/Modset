@@ -1,34 +1,13 @@
 class CfgPatches {
 	class TWC_AmmoBoxes {
-		/* units[]= { // old names, do not reuse to avoid conflict
-			"TWC_modern_Operation_Ammobox",
-			"TWC_Coin_Operation_Ammobox",
-			"TWC_ColdWar_Operation_Ammobox",
-			"TWC_1990_Operation_Ammobox",
-			"TWC_modern_USSR_Ammobox",
-			"TWC_Vehicle_Ammo_ColdWar",
-			"TWC_modern_Warrior_Ammobox"
-		}; */
-		
 		units[] = {
-			"TWC_AmmoBox_Modern_Base",
-			"TWC_AmmoBox_Modern_Section_Portable",
-			"TWC_AmmoBox_Modern_COIN_Base",
-			"TWC_AmmoBox_Modern_COIN_Section_Portable",
-			"TWC_AmmoBox_Modern_Mechanised_Base",
-			"TWC_AmmoBox_Modern_Mechanised_Section_Portable",
-			"TWC_AmmoBox_Modern_Javelin_Portable",
-			"TWC_AmmoBox_Modern_Sniper_Portable",
-			"TWC_AmmoBox_Modern_M6_Portable",
+
 			"TWC_AmmoBox_Millennial_Base",
 			"TWC_AmmoBox_Millennial_Section_Portable",
 			"TWC_AmmoBox_Millennial_Mechanised_Base",
 			"TWC_AmmoBox_Millennial_Mechanised_Section_Portable",
 			"TWC_AmmoBox_Millennial_Sniper_Portable",
-			"TWC_AmmoBox_ColdWar_Base",
-			"TWC_AmmoBox_ColdWar_Section_Portable",
-			"TWC_AmmoBox_ColdWar_Sniper_Portable",
-			"TWC_AmmoBox_ColdWar_Blowpipe_Portable",
+
 			"TWC_AmmoBox_Vehicle_Warrior",
 			"TWC_AmmoBox_Vehicle_Milan",
 			"TWC_AmmoBox_Vehicle_L134",
@@ -46,27 +25,29 @@ class CfgPatches {
 			"TWC_AmmoBox_Other_L118_Portable_ILLUM",
 			"TWC_AmmoBox_Launchers_L14_Portable",
 			"TWC_AmmoBox_Launchers_L1A1_Portable",
+			"TWC_AmmoBox_Launchers_LASM_Portable",
 			"TWC_AmmoBox_Launchers_LAW80_Portable",
 			"TWC_AmmoBox_Launchers_L2A1_Portable",
 			"TWC_AmmoBox_Launchers_NLAW_Portable",
 			"TWC_AmmoBox_Other_Stinger_Portable",
 			"TWC_AmmoBox_Other_Command_Portable",
 			"TWC_AmmoBox_Other_Pallet",
-			"TWC_AmmoBox_Other_Empty_Portable" 
+			"TWC_AmmoBox_Other_Empty_Portable",
+			"TWC_AmmoBox_Other_Sergeant_Utility"
 		};
 		
 		weapons[] = {};
 		requiredVersion = 1;
 		
 		requiredAddons[] = {
+			"cba_main",
 			"A3_Weapons_F",
 			"a3_structures_f_epa",
 			"uk3cb_baf_weapons",
 			"uk3cb_baf_equipment",
 			"cup_weapons_ammoboxes",
 			"ace_medical",
-			"ace_cargo",
-			"ace_cup_artillery"
+			"ace_cargo"
 		};
 		
 		version = "1";
@@ -90,18 +71,9 @@ class CfgEditorSubcategories {
 		Vehicle contains vehicle resupply (i.e. warrior ammo)
 		Other contains non-era specific crates and the pallet for air-lifting/dropping
 	*/
-	class TWC_Crates_Modern {
-		displayName = "Modern";
-	};
-	
 	class TWC_Crates_Millennial {
 		displayName = "Millennial";
 	};
-	
-	class TWC_Crates_ColdWar {
-		displayName = "Cold War";
-	};
-	
 	class TWC_Crates_Vehicles {
 		displayName = "Vehicles";
 	};
@@ -112,10 +84,6 @@ class CfgEditorSubcategories {
 	
 	class TWC_Crates_Launchers {
 		displayName = "Launchers";
-	};
-	
-	class TWC_Crates_Training {
-		displayName = "Training";
 	};
 	
 	// Future Possibility, Training Crates? These could just be the weapons/items.
@@ -129,7 +97,7 @@ class CfgVehicles {
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 	
 	#include "crates_defines.hpp"
-	#include "crates_coldwar.hpp"
+	#include "crates_millennial.hpp"
 	#include "crates_vehicles.hpp"
 	#include "crates_other.hpp"
 	#include "crates_launchers.hpp"
