@@ -438,7 +438,3 @@ class TWC_Groups_1990_Regular_Dismounted_##CAMO \
 };
 
 REGULAR_GROUPS(Woodland)
-REGULAR_GROUPS(Desert)
-REGULAR_GROUPS(Tropic)
-REGULAR_GROUPS(Arctic)
-REGULAR_GROUPS(NBC)
