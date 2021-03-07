@@ -27,7 +27,7 @@ class TWC_Vehicle_Millennial_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(twc_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };
@@ -174,7 +174,7 @@ class TWC_Vehicle_Millennial_LandRoverHard_Woodland: TWC_BaseClass_LR_Hard_Base_
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(twc_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };
@@ -436,7 +436,7 @@ class TWC_Vehicle_Millennial_LandRoverWMIK_GPMG_Woodland: TWC_BaseClass_LR_WMIK_
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(twc_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 	
 	class TransportBackpacks { };
@@ -472,7 +472,7 @@ class TWC_Vehicle_Millennial_LandRoverWMIK_GPMG_Desert: TWC_BaseClass_LR_WMIK_GP
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(twc_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 	
 	class TransportBackpacks { };
