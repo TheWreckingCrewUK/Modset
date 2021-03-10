@@ -419,3 +419,4 @@ class TWC_Groups_Modern_COIN_Dismounted_##CAMO \
 
 COIN_GROUPS(Woodland)
 COIN_GROUPS(NBC)
+COIN_GROUPS(Arctic)
