@@ -419,3 +419,4 @@ class TWC_Groups_Modern_Regular_Dismounted_##CAMO \
 
 REGULAR_GROUPS(Woodland)
 REGULAR_GROUPS(NBC)
+REGULAR_GROUPS(Arctic)
