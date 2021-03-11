@@ -267,6 +267,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Platoon_Medic: INHERIT \
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1); \
 	}; \
 };
+
 #define BACKPACK_REGULAR_DISMOUNTED_MG(CAMO, INHERIT) \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_MG: INHERIT \
 { \
@@ -276,7 +277,6 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_MG: INHERIT \
 		ADD_MAGA(UK3CB_BAF_762_100Rnd,1); \
 	}; \
 };
-
 
 #define BACKPACK_REGULAR_DISMOUNTED_ASSMG(CAMO, INHERIT) \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_ASSMG: INHERIT \
