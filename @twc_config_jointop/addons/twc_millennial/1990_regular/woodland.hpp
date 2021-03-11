@@ -108,7 +108,7 @@ class TWC_Infantry_1990_Regular_Woodland_MG: TWC_Infantry_1990_Regular_Woodland_
 class TWC_Infantry_1990_Regular_Woodland_ASSMG: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
 	displayName="Assistant Machine Gunner";
-	backpack="TWC_Backpack_1990_Regular_Woodland_2iC";
+	backpack="TWC_Backpack_1990_Regular_Woodland_ASSMG";
 	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
