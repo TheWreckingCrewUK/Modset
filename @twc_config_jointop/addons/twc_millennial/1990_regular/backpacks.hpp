@@ -151,6 +151,18 @@ class TWC_Backpack_1990_Regular_##CAMO##_FAC: INHERIT \
 	}; \
 };
 
+#define BACKPACK_REGULAR_ASSMG(CAMO, INHERIT) \
+class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_ASSMG: INHERIT \
+{ \
+	scope = 1; \
+	maximumLoad = 300; \
+	class TransportMagazines { \
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2); \
+		ADD_MAGA(UK3CB_BAF_762_100Rnd,1); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,8); \
+	}; \
+};
+
 //REGULAR, DISMOUNTED
 #define BACKPACK_REGULAR_DISMOUNTED_RIFLEMAN(CAMO, INHERIT) \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Rifleman: INHERIT \
@@ -294,6 +306,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_ASSMG: INHERIT \
 //Section
 BACKPACK_REGULAR_SECTIONCOMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
 BACKPACK_REGULAR_2IC(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
+BACKPACK_REGULAR_ASSMG(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
 
 //Platoon Command
 BACKPACK_REGULAR_PLATOON_COMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
