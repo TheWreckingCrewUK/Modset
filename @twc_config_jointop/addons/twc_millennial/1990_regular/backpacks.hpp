@@ -80,26 +80,6 @@ class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Medic: INHERIT \
 	}; \
 };
 
-#define BACKPACK_REGULAR_MILAN_ASS(CAMO, INHERIT) \
-class TWC_Backpack_1990_Regular_##CAMO##_MILAN_Ass: INHERIT \
-{ \
-	scope = 1; \
-	scopeArsenal = 1; \
-	maximumLoad = 500; \
-	class TransportItems { \
-		ADD_ITEM(ukcw_milan_ace_missile,2); \
-	}; \
-};
-#define BACKPACK_REGULAR_L14A1_ASS(CAMO, INHERIT) \
-class TWC_Backpack_1990_Regular_##CAMO##_L14A1_Ass: INHERIT \
-{ \
-	scope = 1; \
-	class TransportMagazines { \
-		ADD_MAGA(ukcw_l14a1_HEAT,2); \
-		ADD_MAGA(ukcw_l14a1_HE,2);\
-	}; \
-};
-
 #define BACKPACK_REGULAR_SPOTTER(CAMO, INHERIT) \
 class TWC_Backpack_1990_Regular_##CAMO##_Spotter: INHERIT \
 { \
@@ -287,6 +267,28 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Platoon_Medic: INHERIT \
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1); \
 	}; \
 };
+#define BACKPACK_REGULAR_DISMOUNTED_MG(CAMO, INHERIT) \#define BACKPACK_REGULAR_DISMOUNTED_MG(CAMO, INHERIT) \
+class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_MG: INHERIT \
+{ \
+	scope = 1; \
+	class TransportMagazines { \
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,1); \
+		ADD_MAGA(UK3CB_BAF_762_100Rnd,1); \
+	}; \
+};
+
+
+#define BACKPACK_REGULAR_DISMOUNTED_ASSMG(CAMO, INHERIT) \#define BACKPACK_REGULAR_DISMOUNTED_ASSMG(CAMO, INHERIT) \
+class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_ASSMG: INHERIT \
+{ \
+	scope = 1; \
+	maximumLoad = 300; \
+	class TransportMagazines { \
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2); \
+		ADD_MAGA(UK3CB_BAF_762_100Rnd,1); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,8); \
+	};
+};
 
 //WOODLAND, REGULAR
 //Section
@@ -314,6 +316,8 @@ BACKPACK_REGULAR_DISMOUNTED_AT(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
 BACKPACK_REGULAR_DISMOUNTED_GUNNER(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
 BACKPACK_REGULAR_DISMOUNTED_SECTIONCOMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
 BACKPACK_REGULAR_DISMOUNTED_2IC(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_B)
+BACKPACK_REGULAR_DISMOUNTED_MG(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
+BACKPACK_REGULAR_DISMOUNTED_ASSMG(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
 
 //Platoon Command
 BACKPACK_REGULAR_DISMOUNTED_PLATOON_COMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
