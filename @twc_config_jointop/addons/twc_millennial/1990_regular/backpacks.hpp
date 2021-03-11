@@ -287,7 +287,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_ASSMG: INHERIT \
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2); \
 		ADD_MAGA(UK3CB_BAF_762_100Rnd,1); \
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,8); \
-	};
+	}; \
 };
 
 //WOODLAND, REGULAR
