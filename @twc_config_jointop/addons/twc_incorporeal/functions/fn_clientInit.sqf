@@ -5,7 +5,7 @@ _isEnabled = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
 if (_isEnabled) exitWith {};
 
 _index = player createDiarySubject ["loadout", "Loadouts"];
-[player] remoteExecCall ["twc_fnc_briefingLoadout", (group player)];
+[player] call twc_fnc_briefingLoadout;
 
 TWC_Death_AlreadyExecuted = false;
 TWC_Death_ExecutionFinished = false;
