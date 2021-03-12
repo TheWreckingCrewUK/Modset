@@ -151,6 +151,18 @@ class TWC_Backpack_1990_Regular_##CAMO##_FAC: INHERIT \
 	}; \
 };
 
+#define BACKPACK_REGULAR_ASSMG(CAMO, INHERIT) \
+class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_ASSMG: INHERIT \
+{ \
+	scope = 1; \
+	maximumLoad = 300; \
+	class TransportMagazines { \
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2); \
+		ADD_MAGA(UK3CB_BAF_762_100Rnd,1); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,8); \
+	}; \
+};
+
 //REGULAR, DISMOUNTED
 #define BACKPACK_REGULAR_DISMOUNTED_RIFLEMAN(CAMO, INHERIT) \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Rifleman: INHERIT \
@@ -267,7 +279,8 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Platoon_Medic: INHERIT \
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1); \
 	}; \
 };
-#define BACKPACK_REGULAR_DISMOUNTED_MG(CAMO, INHERIT) \#define BACKPACK_REGULAR_DISMOUNTED_MG(CAMO, INHERIT) \
+
+#define BACKPACK_REGULAR_DISMOUNTED_MG(CAMO, INHERIT) \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_MG: INHERIT \
 { \
 	scope = 1; \
@@ -277,8 +290,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_MG: INHERIT \
 	}; \
 };
 
-
-#define BACKPACK_REGULAR_DISMOUNTED_ASSMG(CAMO, INHERIT) \#define BACKPACK_REGULAR_DISMOUNTED_ASSMG(CAMO, INHERIT) \
+#define BACKPACK_REGULAR_DISMOUNTED_ASSMG(CAMO, INHERIT) \
 class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_ASSMG: INHERIT \
 { \
 	scope = 1; \
@@ -287,13 +299,14 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_ASSMG: INHERIT \
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,2); \
 		ADD_MAGA(UK3CB_BAF_762_100Rnd,1); \
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,8); \
-	};
+	}; \
 };
 
 //WOODLAND, REGULAR
 //Section
 BACKPACK_REGULAR_SECTIONCOMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
 BACKPACK_REGULAR_2IC(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
+BACKPACK_REGULAR_ASSMG(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_A)
 
 //Platoon Command
 BACKPACK_REGULAR_PLATOON_COMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
@@ -301,8 +314,6 @@ BACKPACK_REGULAR_PLATOON_SERGEANT(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
 BACKPACK_REGULAR_PLATOON_MEDIC(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_B)
 
 //Attachments
-BACKPACK_REGULAR_MILAN_ASS(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_B)
-BACKPACK_REGULAR_L14A1_ASS(Woodland, UK3CB_BAF_B_Bergen_DPMW_Rifleman_B)
 BACKPACK_REGULAR_SPOTTER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
 BACKPACK_REGULAR_ARTILLERY_COMMANDER(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
 BACKPACK_REGULAR_FO(Woodland, UK3CB_BAF_B_Bergen_DPMW_SL_A)
