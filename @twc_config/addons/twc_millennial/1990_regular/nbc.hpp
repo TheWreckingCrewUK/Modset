@@ -35,7 +35,20 @@ class TWC_Infantry_1990_Regular_NBC_2iC: TWC_Infantry_1990_Regular_Woodland_2iC
 	items[] += {"SP_Gasmask_S6"};
 	respawnItems[] += {"SP_Gasmask_S6"};
 };
-
+class TWC_Infantry_1990_Regular_NBC_2iC: TWC_Infantry_1990_Regular_Woodland_MG
+{
+	CATEGORY(TWC_Infantry_Regular_NBC)
+	uniformClass = "SP_NBCMk3_HoodUp_Item";
+	items[] += {"SP_Gasmask_S6"};
+	respawnItems[] += {"SP_Gasmask_S6"};
+};
+class TWC_Infantry_1990_Regular_NBC_2iC: TWC_Infantry_1990_Regular_Woodland_ASSMG
+{
+	CATEGORY(TWC_Infantry_Regular_NBC)
+	uniformClass = "SP_NBCMk3_HoodUp_Item";
+	items[] += {"SP_Gasmask_S6"};
+	respawnItems[] += {"SP_Gasmask_S6"};
+};
 //Platoon Command
 class TWC_Infantry_1990_Regular_NBC_Platoon_Commander: TWC_Infantry_1990_Regular_Woodland_Platoon_Commander
 {

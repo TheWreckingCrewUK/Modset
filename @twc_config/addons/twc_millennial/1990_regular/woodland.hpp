@@ -77,6 +77,63 @@ class TWC_Infantry_1990_Regular_Woodland_Gunner: TWC_Infantry_1990_Regular_Woodl
 		"SmokeShell"
 	};
 };
+class TWC_Infantry_1990_Regular_Woodland_MG: TWC_Infantry_1990_Regular_Woodland_Rifleman
+{
+	displayName="Machine Gunner";
+	weapons[]=
+	{
+		"UK3CB_BAF_L7A2",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"UK3CB_BAF_L7A2",
+		"Throw",
+		"Put"
+	};
+	magazines[]=
+	{
+		MAG_2("UK3CB_BAF_762_100Rnd"),
+		"UK3CB_BAF_762_100Rnd_T",
+		"SmokeShell"
+	};
+	respawnmagazines[]=
+	{
+		MAG_2("UK3CB_BAF_762_100Rnd"),
+		"UK3CB_BAF_762_100Rnd_T",
+		"SmokeShell"
+	};
+};
+class TWC_Infantry_1990_Regular_Woodland_ASSMG: TWC_Infantry_1990_Regular_Woodland_Rifleman
+{
+	displayName="Assistant Machine Gunner";
+	backpack="TWC_Backpack_1990_Regular_Woodland_ASSMG";
+	weapons[] =
+	{
+		"TWC_Weapon_L85A1_SUSAT3D",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_L85A1_SUSAT3D",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_7("UK3CB_BAF_556_30Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SmokeShell"
+	};
+	respawnmagazines[] =
+	{
+		MAG_7("UK3CB_BAF_556_30Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SmokeShell"
+	};
+};
 class TWC_Infantry_1990_Regular_Woodland_SectionCommander: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
 	displayName = "Section Commander";

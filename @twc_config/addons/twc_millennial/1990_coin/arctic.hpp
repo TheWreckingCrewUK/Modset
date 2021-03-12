@@ -90,7 +90,37 @@ class TWC_Infantry_1990_COIN_Arctic_2iC: TWC_Infantry_1990_Regular_Arctic_2iC
 		"ACE_MapTools"
 	};
 };
-
+class TWC_Infantry_1990_COIN_Arctic_MG: TWC_Infantry_1990_Regular_Arctic_MG
+{
+	CATEGORY(TWC_Infantry_COIN_Arctic)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+};
+class TWC_Infantry_1990_COIN_Arctic_ASSMG: TWC_Infantry_1990_Regular_Arctic_ASSMG
+{
+	CATEGORY(TWC_Infantry_COIN_Arctic)
+	backpack = "TWC_Backpack_1990_COIN_Arctic_ASSMG";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+};
 //Platoon Command
 class TWC_Infantry_1990_COIN_Arctic_Platoon_Commander: TWC_Infantry_1990_Regular_Arctic_Platoon_Commander
 {

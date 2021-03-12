@@ -107,7 +107,49 @@ class TWC_Infantry_1990_Regular_Tropic_2iC: TWC_Infantry_1990_Regular_Woodland_2
 		"ItemWatch"
 	};
 };
-
+class TWC_Infantry_1990_Regular_Tropic_MG: TWC_Infantry_1990_Regular_Woodland_MG
+{
+	CATEGORY(TWC_Infantry_Regular_Tropic)
+	uniformClass = "TWC_Smock_Temperate";
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_1990_Regular_Tropic_ASSMG: TWC_Infantry_1990_Regular_Woodland_ASSMG
+{
+	CATEGORY(TWC_Infantry_Regular_Tropic)
+	uniformClass = "TWC_Smock_Temperate";
+	backpack = "TWC_Backpack_1990_Regular_Tropic_ASSMG";
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
 //Platoon Command
 class TWC_Infantry_1990_Regular_Tropic_Platoon_Commander: TWC_Infantry_1990_Regular_Woodland_Platoon_Commander
 {

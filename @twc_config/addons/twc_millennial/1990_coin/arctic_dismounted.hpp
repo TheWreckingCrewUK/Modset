@@ -25,7 +25,16 @@ class TWC_Infantry_1990_COIN_Dismounted_Arctic_2iC: TWC_Infantry_1990_COIN_Arcti
 	CATEGORY(TWC_Infantry_COIN_Dismounted_Arctic)
 	backpack = "TWC_Backpack_1990_COIN_Dismounted_Arctic_2iC";
 };
-
+class TWC_Infantry_1990_COIN_Dismounted_Arctic_MG: TWC_Infantry_1990_COIN_Arctic_MG
+{
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Arctic)
+	backpack = "TWC_Backpack_1990_COIN_Dismounted_Arctic_MG";
+};
+class TWC_Infantry_1990_COIN_Dismounted_Arctic_ASSMG: TWC_Infantry_1990_COIN_Arctic_ASSMG
+{
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Arctic)
+	backpack = "TWC_Backpack_1990_COIN_Dismounted_Arctic_ASSMG";
+};
 //Platoon Command
 class TWC_Infantry_1990_COIN_Dismounted_Arctic_Platoon_Commander: TWC_Infantry_1990_COIN_Arctic_Platoon_Commander
 {

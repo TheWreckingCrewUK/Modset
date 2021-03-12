@@ -90,6 +90,35 @@ class TWC_Infantry_1990_COIN_Tropic_2iC: TWC_Infantry_1990_Regular_Tropic_2iC
 		"ACE_MapTools"
 	};
 };
+class TWC_Infantry_1990_COIN_Tropic_MG: TWC_Infantry_1990_Regular_Tropic_MG
+{
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+};
+class TWC_Infantry_1990_COIN_Tropic_ASSMG: TWC_Infantry_1990_Regular_Tropic_ASSMG
+{
+	CATEGORY(TWC_Infantry_COIN_Tropic)
+	backpack = "TWC_Backpack_1990_COIN_Tropic_ASSMG";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+};
 
 //Platoon Command
 class TWC_Infantry_1990_COIN_Tropic_Platoon_Commander: TWC_Infantry_1990_Regular_Tropic_Platoon_Commander

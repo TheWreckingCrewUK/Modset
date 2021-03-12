@@ -107,6 +107,48 @@ class TWC_Infantry_1990_Regular_Arctic_2iC: TWC_Infantry_1990_Regular_Woodland_2
 		"ItemWatch"
 	};
 };
+class TWC_Infantry_1990_Regular_Arctic_MG: TWC_Infantry_1990_Regular_Woodland_Rifleman
+{	CATEGORY(TWC_Infantry_Regular_Arctic)
+	uniformClass = "TWC_Smock_Arctic";
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_Winter",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_Winter",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
+class TWC_Infantry_1990_Regular_Arctic_ASSMG: TWC_Infantry_1990_Regular_Woodland_Rifleman
+{
+	CATEGORY(TWC_Infantry_Regular_Arctic)
+	uniformClass = "TWC_Smock_Arctic";
+	backpack="TWC_Backpack_1990_Regular_Arctic_ASSMG";
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_Winter",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_PLCE_Webbing_Plate_Winter",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+};
 
 //Platoon Command
 class TWC_Infantry_1990_Regular_Arctic_Platoon_Commander: TWC_Infantry_1990_Regular_Woodland_Platoon_Commander

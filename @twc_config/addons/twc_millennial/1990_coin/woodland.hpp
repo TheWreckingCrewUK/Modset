@@ -102,7 +102,36 @@ class TWC_Infantry_1990_COIN_Woodland_2iC: TWC_Infantry_1990_Regular_Woodland_2i
 		"ACE_MapTools"
 	};
 };
-
+class TWC_Infantry_1990_COIN_Woodland_MG: TWC_Infantry_1990_Regular_Woodland_MG
+{
+	CATEGORY(TWC_Infantry_COIN_Woodland)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+};
+class TWC_Infantry_1990_COIN_Woodland_ASSMG: TWC_Infantry_1990_Regular_Woodland_ASSMG
+{
+	CATEGORY(TWC_Infantry_COIN_Woodland)
+	backpack = "TWC_Backpack_1990_COIN_Woodland_ASSMG";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+	};
+};
 //Platoon Command
 class TWC_Infantry_1990_COIN_Woodland_Platoon_Commander: TWC_Infantry_1990_Regular_Woodland_Platoon_Commander
 {

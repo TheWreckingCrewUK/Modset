@@ -90,7 +90,37 @@ class TWC_Infantry_1990_COIN_Desert_2iC: TWC_Infantry_1990_Regular_Desert_2iC
 		"ACE_MapTools"
 	};
 };
-
+class TWC_Infantry_1990_COIN_Desert_MG: TWC_Infantry_1990_Regular_Desert_MG
+{
+	CATEGORY(TWC_Infantry_COIN_Desert)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+};
+class TWC_Infantry_1990_COIN_Desert_ASSMG: TWC_Infantry_1990_Regular_Desert_ASSMG
+{
+	CATEGORY(TWC_Infantry_COIN_Desert)
+	backpack = "TWC_Backpack_1990_COIN_Desert_ASSMG";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+};
 //Platoon Command
 class TWC_Infantry_1990_COIN_Desert_Platoon_Commander: TWC_Infantry_1990_Regular_Desert_Platoon_Commander
 {

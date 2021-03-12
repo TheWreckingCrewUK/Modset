@@ -86,7 +86,35 @@ class TWC_Infantry_1990_COIN_NBC_2iC: TWC_Infantry_1990_Regular_NBC_2iC
 		"SP_Gasmask_S6"
 	};
 };
-
+class TWC_Infantry_1990_COIN_NBC_MG: TWC_Infantry_1990_Regular_NBC_MG
+{
+	CATEGORY(TWC_Infantry_COIN_NBC)
+	items[] +=
+	{
+		MAG_2("ACE_CableTie"),
+		"SP_Gasmask_S6"
+	};
+	respawnItems[] +=
+	{
+		MAG_2("ACE_CableTie"),
+		"SP_Gasmask_S6"
+	};
+};
+class TWC_Infantry_1990_COIN_NBC_ASSMG: TWC_Infantry_1990_Regular_NBC_ASSMG
+{
+	CATEGORY(TWC_Infantry_COIN_NBC)
+	backpack = "TWC_Backpack_1990_COIN_Woodland_ASSMG";
+	items[] +=
+	{
+		MAG_2("ACE_CableTie"),
+		"SP_Gasmask_S6"
+	};
+	respawnItems[] +=
+	{
+		MAG_2("ACE_CableTie"),
+		"SP_Gasmask_S6"
+	};
+};
 //Platoon Command
 class TWC_Infantry_1990_COIN_NBC_Platoon_Commander: TWC_Infantry_1990_Regular_NBC_Platoon_Commander
 {
