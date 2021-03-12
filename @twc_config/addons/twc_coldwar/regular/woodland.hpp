@@ -614,25 +614,27 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Sniper: TWC_Infantry_ColdWar_Regular
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
 		"ACE_Tripod"
+		"ACE_RangeCard"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
 		"ACE_Tripod"
+		"ACE_RangeCard"
 	};
 	magazines[]=
 	{
-		MAG_10("SP_1Rnd_762_L42_Tracer"),
-		MAG_9("SP_10Rnd_762_L42"),
+		MAG_6("SP_1Rnd_762_L42_Tracer"),
+		MAG_4("SP_10Rnd_762_L42"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellGreen")
 	};
 	Respawnmagazines[]=
 	{
-		MAG_10("SP_1Rnd_762_L42_Tracer"),
-		MAG_9("SP_10Rnd_762_L42"),
+		MAG_6("SP_1Rnd_762_L42_Tracer"),
+		MAG_4("SP_10Rnd_762_L42"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellGreen")
@@ -666,7 +668,6 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Spotter: TWC_Infantry_ColdWar_Regula
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
 		"ACE_Clacker",
-		"ACE_RangeCard"
 	};
 	respawnItems[]=
 	{

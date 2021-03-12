@@ -291,6 +291,7 @@ class TWC_Backpack_ColdWar_Regular_Spotter: SP_Backpack_LargePack
 	maximumLoad = 250;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
+		ADD_ITEM(ACE_SpottingScope,1);
 	};
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell,3);
