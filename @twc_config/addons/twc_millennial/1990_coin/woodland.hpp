@@ -235,6 +235,7 @@ class TWC_Infantry_1990_COIN_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodland
 		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
 		"ACE_Tripod"
+		"ACE_RangeCard"
 	};
 	respawnItems[] =
 	{
@@ -242,6 +243,7 @@ class TWC_Infantry_1990_COIN_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodland
 		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
 		"ACE_Tripod"
+		"ACE_RangeCard"
 	};
 };
 class TWC_Infantry_1990_COIN_Woodland_Spotter: TWC_Infantry_1990_Regular_Woodland_Spotter
@@ -255,7 +257,6 @@ class TWC_Infantry_1990_COIN_Woodland_Spotter: TWC_Infantry_1990_Regular_Woodlan
 		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
 		"ACE_Kestrel4500",
-		"ACE_RangeCard"
 	};
 	respawnItems[] =
 	{
@@ -263,7 +264,6 @@ class TWC_Infantry_1990_COIN_Woodland_Spotter: TWC_Infantry_1990_Regular_Woodlan
 		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
 		"ACE_Kestrel4500",
-		"ACE_RangeCard"
 	};
 };
 
