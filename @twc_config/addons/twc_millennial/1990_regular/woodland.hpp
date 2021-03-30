@@ -396,17 +396,19 @@ class TWC_Infantry_1990_Regular_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodl
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
 		"ACE_Tripod"
+		"ACE_RangeCard"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
 		"ACE_Tripod"
+		"ACE_RangeCard"
 	};
 	magazines[] =
 	{
-		MAG_9("UK3CB_BAF_762_L42A1_10Rnd"),
-		MAG_3("UK3CB_BAF_762_L42A1_10Rnd_T"),
+		MAG_6("UK3CB_BAF_762_L42A1_10Rnd"),
+		MAG_2("UK3CB_BAF_762_L42A1_10Rnd_T"),
 		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
@@ -414,8 +416,8 @@ class TWC_Infantry_1990_Regular_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodl
 	};
 	Respawnmagazines[] =
 	{
-		MAG_9("UK3CB_BAF_762_L42A1_10Rnd"),
-		MAG_3("UK3CB_BAF_762_L42A1_10Rnd_T"),
+		MAG_6("UK3CB_BAF_762_L42A1_10Rnd"),
+		MAG_2("UK3CB_BAF_762_L42A1_10Rnd_T"),
 		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell"),
@@ -448,27 +450,25 @@ class TWC_Infantry_1990_Regular_Woodland_Spotter: TWC_Infantry_1990_Regular_Wood
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
 		"ACE_Kestrel4500",
-		"ACE_RangeCard"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
 		"ACE_Kestrel4500",
-		"ACE_RangeCard"
 	};
 	magazines[]=
 	{
-		MAG_5("UK3CB_BAF_762_L42A1_10Rnd"),
-		MAG_3("UK3CB_BAF_762_L42A1_10Rnd_T"),
+		MAG_4("UK3CB_BAF_762_L42A1_10Rnd"),
+		MAG_2("UK3CB_BAF_762_L42A1_10Rnd_T"),
 		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};
 	Respawnmagazines[]=
 	{
-		MAG_5("UK3CB_BAF_762_L42A1_10Rnd"),
-		MAG_3("UK3CB_BAF_762_L42A1_10Rnd_T"),
+		MAG_4("UK3CB_BAF_762_L42A1_10Rnd"),
+		MAG_2("UK3CB_BAF_762_L42A1_10Rnd_T"),
 		MAG_3("UK3CB_BAF_9_13Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
