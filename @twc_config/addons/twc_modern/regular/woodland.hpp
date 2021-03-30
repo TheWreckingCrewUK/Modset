@@ -583,7 +583,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Sniper: TWC_Infantry_Modern_Regular_W
 		"UK3CB_BAF_V_PLCE_Webbing_MTP",
 		"ItemCompass",
 		"itemMap",
-		"ItemWatch"
+		"ItemWatch",
 		"ACE_RangeCard"
 	};
 	weapons[] =
@@ -612,7 +612,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Sniper: TWC_Infantry_Modern_Regular_W
 		MAG_6("TWC_5Rnd_338_300gr_HPBT_Mag"),
 		MAG_2("TWC_5Rnd_338_API526_Mag"),
 		MAG_3("UK3CB_BAF_9_17Rnd"),
-		MAG_2("SmokeShell")
+		MAG_2("SmokeShell"),
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Spotter: TWC_Infantry_Modern_Regular_Woodland_Sniper
@@ -625,8 +625,8 @@ class TWC_Infantry_Modern_Regular_Woodland_Spotter: TWC_Infantry_Modern_Regular_
 		"ItemCompass",
 		"ItemcTab",
 		"itemMap",
-		"ItemWatch"
-		"ACE_MapTools",
+		"ItemWatch",
+		"ACE_MapTools"
 	};
 	respawnLinkedItems[] =
 	{
@@ -634,8 +634,8 @@ class TWC_Infantry_Modern_Regular_Woodland_Spotter: TWC_Infantry_Modern_Regular_
 		"ItemCompass",
 		"ItemcTab",
 		"itemMap",
-		"ItemWatch"
-		"ACE_MapTools",
+		"ItemWatch",
+		"ACE_MapTools"
 	};
 	weapons[] =
 	{
