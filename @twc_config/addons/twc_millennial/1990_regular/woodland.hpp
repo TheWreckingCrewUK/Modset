@@ -395,14 +395,14 @@ class TWC_Infantry_1990_Regular_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodl
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Tripod"
+		"ACE_Tripod",
 		"ACE_RangeCard"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Tripod"
+		"ACE_Tripod",
 		"ACE_RangeCard"
 	};
 	magazines[] =
@@ -449,13 +449,13 @@ class TWC_Infantry_1990_Regular_Woodland_Spotter: TWC_Infantry_1990_Regular_Wood
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Kestrel4500",
+		"ACE_Kestrel4500"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Kestrel4500",
+		"ACE_Kestrel4500"
 	};
 	magazines[]=
 	{
