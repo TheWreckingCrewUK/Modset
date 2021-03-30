@@ -1053,14 +1053,14 @@ class TWC_Infantry_Modern_COIN_Woodland_Spotter: TWC_Infantry_Modern_Regular_Woo
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
-		"ACE_Kestrel4500",
+		"ACE_Kestrel4500"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
-		"ACE_Kestrel4500",
+		"ACE_Kestrel4500"
 	};
 	linkedItems[] =
 	{
