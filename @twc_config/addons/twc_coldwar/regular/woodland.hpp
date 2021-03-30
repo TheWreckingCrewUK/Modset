@@ -613,14 +613,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Sniper: TWC_Infantry_ColdWar_Regular
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Tripod"
+		"ACE_Tripod",
 		"ACE_RangeCard"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Tripod"
+		"ACE_Tripod",
 		"ACE_RangeCard"
 	};
 	magazines[]=
@@ -667,13 +667,13 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Spotter: TWC_Infantry_ColdWar_Regula
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Clacker",
+		"ACE_Clacker"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Clacker",
+		"ACE_Clacker"
 	};
 	magazines[]=
 	{
