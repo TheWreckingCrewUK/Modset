@@ -234,7 +234,7 @@ class TWC_Infantry_1990_COIN_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodland
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
-		"ACE_Tripod"
+		"ACE_Tripod",
 		"ACE_RangeCard"
 	};
 	respawnItems[] =
@@ -242,7 +242,7 @@ class TWC_Infantry_1990_COIN_Woodland_Sniper: TWC_Infantry_1990_Regular_Woodland
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
-		"ACE_Tripod"
+		"ACE_Tripod",
 		"ACE_RangeCard"
 	};
 };
@@ -256,14 +256,14 @@ class TWC_Infantry_1990_COIN_Woodland_Spotter: TWC_Infantry_1990_Regular_Woodlan
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
-		"ACE_Kestrel4500",
+		"ACE_Kestrel4500"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
-		"ACE_Kestrel4500",
+		"ACE_Kestrel4500"
 	};
 };
 
