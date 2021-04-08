@@ -1,0 +1,71 @@
+//REGULAR, DISMOUNTED, Woodland
+//Section
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_Rifleman: TWC_Infantry_2000_Regular_Woodland_Rifleman
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_Rifleman";
+};
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_Marksman: TWC_Infantry_2000_Regular_Woodland_Marksman
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_Marksman";
+};
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_Grenadier: TWC_Infantry_2000_Regular_Woodland_Grenadier
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_Grenadier";
+};
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_Autorifle: TWC_Infantry_2000_Regular_Woodland_Autorifleman
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_Autorifle";
+};
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_SectionCommander: TWC_Infantry_2000_Regular_Woodland_SectionCommander
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_SectionCommander";
+};
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_2iC: TWC_Infantry_2000_Regular_Woodland_2iC
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_2iC";
+};
+
+//Platoon Command
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_Platoon_Commander: TWC_Infantry_2000_Regular_Woodland_Platoon_Commander
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_Platoon_Commander";
+};
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_Platoon_Sergeant: TWC_Infantry_2000_Regular_Woodland_Platoon_Sergeant
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_Platoon_Sergeant";
+};
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_Platoon_Medic: TWC_Infantry_2000_Regular_Woodland_Platoon_Medic
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_Platoon_Medic";
+};
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_Platoon_CSM: TWC_Infantry_2000_Regular_Woodland_Platoon_CSM
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_Platoon_Sergeant";
+};
+
+//Company
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_Company_Commander: TWC_Infantry_2000_Regular_Woodland_Company_Commander
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_Platoon_Commander";
+};
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_Company_2iC: TWC_Infantry_2000_Regular_Woodland_Company_2iC
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_Platoon_Commander";
+};
+class TWC_Infantry_2000_Regular_Dismounted_Woodland_Company_Sergeant: TWC_Infantry_2000_Regular_Woodland_Company_Sergeant
+{
+	CATEGORY(TWC_Infantry_Regular_Dismounted_2000_Woodland)
+	backpack = "TWC_Backpack_2000_Regular_Dismounted_Woodland_Platoon_Sergeant";
+};
