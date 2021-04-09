@@ -209,14 +209,14 @@ class TWC_Groups_2000_Regular_##CAMO \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_MILAN_Gunner; \
+			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Javelin_Gunner; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_MILAN_Ass; \
+			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Javelin_Ass; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
