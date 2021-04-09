@@ -1,7 +1,7 @@
 #define 2000_REGULAR_GROUPS(CAMO) \
 class TWC_Groups_2000_Regular_##CAMO \
 { \
-	name = __EVAL("Infantry (" + #CAMO + ")"); \
+	name = __EVAL("Infantry (2000s, " + #CAMO + ")"); \
 	class Section \
 	{ \
 		name = "Section"; \
@@ -311,7 +311,7 @@ class TWC_Groups_2000_Regular_##CAMO \
 }; \
 class TWC_Groups_2000_Regular_Dismounted_##CAMO \
 { \
-	name = __EVAL("Infantry (Dismounted, " + #CAMO + ")"); \
+	name = __EVAL("Infantry ( 2000s, Dismounted, " + #CAMO + ")"); \
 	class Section \
 	{ \
 		name = "Section"; \
