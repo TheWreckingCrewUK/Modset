@@ -194,7 +194,7 @@ class TWC_Groups_2000_COIN_##CAMO \
 			position[] = {4,0,0}; \
 		}; \
 	}; \
-	class AT_Team \
+		class AT_Team \
 	{ \
 		name = "AT Team"; \
 		faction = "TWC_Millennial"; \
@@ -209,14 +209,14 @@ class TWC_Groups_2000_COIN_##CAMO \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_##CAMO##_MILAN_Gunner; \
+			vehicle = TWC_Infantry_2000_COIN_##CAMO##_Javelin_Gunner; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_##CAMO##_MILAN_Ass; \
+			vehicle = TWC_Infantry_2000_COIN_##CAMO##_Javelin_Ass; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
