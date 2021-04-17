@@ -13,6 +13,7 @@ class TWC_AmmoBox_Vehicle_Toolkits: TWC_AmmoBox_Vehicle {
 	
 	class TransportItems {
 		item_nc(Item_Toolkit, 10);
+	};
 };
 
 class TWC_AmmoBox_Vehicle_Warrior: TWC_AmmoBox_Vehicle {
