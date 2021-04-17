@@ -1,9 +1,19 @@
 /* // Vehicles
+"TWC_AmmoBox_Vehicle_Toolkits",
 "TWC_AmmoBox_Vehicle_Warrior",
 "TWC_AmmoBox_Vehicle_Milan",
 "TWC_AmmoBox_Vehicle_L134",          // GMG
 "TWC_AmmoBox_Vehicle_L111",          // HMG
 "TWC_AmmoBox_Vehicle_L7A2",          // GPMG */
+
+class TWC_AmmoBox_Vehicle_Toolkits: TWC_AmmoBox_Vehicle {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Toolkit Box";
+	
+	class TransportItems {
+		item_nc(Item_Toolkit, 10);
+};
 
 class TWC_AmmoBox_Vehicle_Warrior: TWC_AmmoBox_Vehicle {
 	scope = 2;
@@ -79,6 +89,7 @@ class TWC_AmmoBox_Vehicle_Generic: TWC_AmmoBox_Vehicle {
 	transportAmmo        = 100000;
 	supplyRadius         = 10;
 	ace_dragging_canDrag = 1;
+	ace_cargo_canLoad = 1;
 };
 
 class TWC_AmmoBox_Vehicle_Generic_Loadable: TWC_AmmoBox_Vehicle {
@@ -91,7 +102,7 @@ class TWC_AmmoBox_Vehicle_Generic_Loadable: TWC_AmmoBox_Vehicle {
 
 	ace_rearm_defaultSupply = 600;
 	ace_cargo_size = 2;
-	ace_cargo_canLoad = 0;
+	ace_cargo_canLoad = 1;
 	transportAmmo        = 0;
 	supplyRadius         = 0;
 	ace_dragging_canDrag = 1;
