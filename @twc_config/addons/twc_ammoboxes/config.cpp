@@ -19,6 +19,7 @@ class CfgPatches {
 			"TWC_AmmoBox_ColdWar_Section_Portable",
 			"TWC_AmmoBox_ColdWar_Sniper_Portable",
 			"TWC_AmmoBox_ColdWar_Blowpipe_Portable",
+			"TWC_AmmoBox_Vehicle_Toolkits",
 			"TWC_AmmoBox_Vehicle_Warrior",
 			"TWC_AmmoBox_Vehicle_Milan",
 			"TWC_AmmoBox_Vehicle_L134",
