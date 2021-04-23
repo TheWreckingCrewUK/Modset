@@ -14,7 +14,7 @@ class RscDisplayMain: RscStandardDisplay {
 			text = "TWC Server";
 			textIsQuote = 0;
 			picture = "twc_join\data\button.paa";
-			action = "connectToServer ['alpha.twcrew.eu', 2322, 'h555']";
+			action = "connectToServer ['alpha.twcrew.eu', 2312, 'h555']";
 			actionText = "Join: TWC Operation Server";
 			condition = "true";
 		};
