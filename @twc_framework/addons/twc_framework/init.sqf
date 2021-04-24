@@ -90,8 +90,10 @@ EM_blacklist_obj = [
 	[(missionNameSpace getVariable ["run", 0])] spawn twc_fnc_run;
 	[(missionNameSpace getVariable ["safeZone", 0])] spawn twc_fnc_safeZone;
 	[(missionNameSpace getVariable ["zuesObjects", true])] spawn twc_fnc_zeus;
-
-	_hasWorld = isClass (configFile >> "CfgWorlds" >> worldName);
+	
+	_worldName = missionNameSpace getVariable ["TWC_worldName", worldName];
+	_hasWorld = isClass (configFile >> "CfgWorlds" >> _worldName);
+	
 	if !(_hasWorld) then {
 		for [{_i=0}, {_i<5}, {_i=_i+1}] do {
 			systemChat "You are missing the map required for this mission!";
