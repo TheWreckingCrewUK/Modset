@@ -63,6 +63,9 @@ class CfgFunctions {
 			/** AMBIENT AIRCRAFT **/
 			class ambientFlyBy {};
 			class ambientFormationFlyBy {};
+			
+			/** Init **/
+			class postInit {};
 		};
 		
 		class modules {

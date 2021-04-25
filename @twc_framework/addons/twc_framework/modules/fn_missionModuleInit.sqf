@@ -1,23 +1,25 @@
 params ["_logic","_units","_activated"];
 
 if !(_activated) exitWith {};
-if !(isServer) exitWith {};
 
 _enabled = _logic getVariable "enabled";
 if !(_enabled) exitWith {};
 
-//Sets variables for connecting players to run the functions
-missionNameSpace setVariable ["twcModuleEnabled", true, true];
+// Module is loaded locally, thanks to the transferred mission 
+missionNameSpace setVariable ["twcModuleEnabled", true];
+missionNameSpace setVariable ["era", (_logic getVariable "era")];
+missionNameSpace setVariable ["forwardBase", (_logic getVariable "forwardBase")];
+missionNameSpace setVariable ["TWC_NightGear", (_logic getVariable "nightGear")];
+missionNameSpace setVariable ["rollSleeves", (_logic getVariable "rollSleeves")];
+missionNameSpace setVariable ["run", (_logic getVariable "run")];
+missionNameSpace setVariable ["safeZone", (_logic getVariable "safeZone")];
+missionNameSpace setVariable ["zuesObjects", (_logic getVariable "zuesObjects")];
+missionNameSpace setVariable ["TWC_Intro_isDisabled", (_logic getVariable "disableIntro")];
+missionNameSpace setVariable ["TWC_Intro_specialSong", (_logic getVariable ["specialIntro", ""])];
 
-missionNameSpace setVariable ["era", (_logic getVariable "era"), true];
-missionNameSpace setVariable ["forwardBase", (_logic getVariable "forwardBase"), true];
-missionNameSpace setVariable ["TWC_NightGear", (_logic getVariable "nightGear"), true];
-missionNameSpace setVariable ["rollSleeves", (_logic getVariable "rollSleeves"), true];
-missionNameSpace setVariable ["run", (_logic getVariable "run"), true];
-missionNameSpace setVariable ["safeZone", (_logic getVariable "safeZone"), true];
-missionNameSpace setVariable ["zuesObjects", (_logic getVariable "zuesObjects"), true];
-missionNameSpace setVariable ["TWC_Intro_isDisabled", (_logic getVariable "disableIntro"), true];
-missionNameSpace setVariable ["TWC_Intro_specialSong", (_logic getVariable ["specialIntro", ""]), true];
+// Server side part below
+if !(isServer) exitWith {};
+
 missionNameSpace setVariable ["TWC_Intro_Started", false, true];
 missionNameSpace setVariable ["TWC_worldName", worldName, true]; // share world name from server, for clients to check against
 

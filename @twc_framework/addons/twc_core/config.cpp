@@ -22,9 +22,3 @@ class CfgPatches {
 #include "CfgFunctions.hpp"
 #include "CfgManagement.hpp"
 #include "CfgVehicles.hpp"
-
-class Extended_PreInit_EventHandlers {
-	class TWC_Core {
-		init = "_this call TWC_Core_fnc_clientPreInit;";
-	};
-};

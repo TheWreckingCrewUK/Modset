@@ -1,0 +1,77 @@
+params ["_player"];
+
+if (!hasInterface) exitWith {};
+if (!local _player) exitWith {};
+
+// Do we want this to be different for public?
+// if (!TWC_Core_isPublic) then {
+ACE_maxWeightDrag = 10000000;
+ACE_maxWeightCarry = 700;
+
+["TWC_AddedToGroup", {
+	_this call TWC_Core_fnc_addedToGroup;
+}] call CBA_fnc_addEventHandler;
+
+/**
+ * Enhanced Movement Blacklist.
+ * Doesn't require mod to be loaded.
+**/
+EM_blacklist_obj = [
+	"Land_Mil_WiredFence_F", 
+	"Land_New_WireFence_5m_F",
+	"Land_New_WiredFence_5m_F",
+	"Land_New_WireFence_10m_F",
+	"Land_New_WiredFence_10m_F",
+	"Land_CSA38_zataras2",
+	"WireFence",
+	"Wire",
+	"Fort_RazorWire",
+	"LIB_B_Hedgerows_big",
+	"Land_I44_Bwf_6_Mlod",
+	"Land_I44_Buildings_Barbedwire",
+	"Land_I44_Buildings_Barbedwire2",
+	"Land_I44_Buildings_Bush_Long",
+	"Land_I44_Buildings_Wirefence",
+	"Land_I44_Buildings_Trench2",
+	"Land_I44_Buildings_Trench2_W",
+	"Land_I44_Buildings_Stake1",
+	"Land_I44_Buildings_Stake2",
+	"Land_I44_Buildings_Stake3",
+	"Land_I44_Buildings_Stake4",
+	"Land_I44_Buildings_Stake5",
+	"Land_I44_Buildings_Stake6",
+	"Land_I44_Buildings_Hrt1",
+	"Land_I44_Buildings_Hrt1a",
+	"Land_I44_Buildings_Hrt1p",
+	"Land_I44_Buildings_Hrt3",
+	"Land_I44_Misc_Hedge1",
+	"Land_I44_Misc_Hedge2",
+	"Land_fow_BarbGate",
+	"Land_I44_Buildings_Logramp1",
+	"Land_I44_Buildings_Logramp2",
+	"Land_I44_Buildings_Logramp3",
+	"Land_I44_Element_C",
+	"Land_WW2_Element_C",
+	"Land_WW2_Hemmbalken_1",
+	"Land_I44_HedgeHog",
+	"Land_WW2_Wire_3",
+	"Land_WW2_Wire_2",
+	"Land_WW2_Wire_1",
+	"Land_CSA38_zataras",
+	"Land_CSA38_zatkol2",
+	"Land_CSA38_zataras3",
+	"Land_CSA38_typA_full_pruchod",
+	"Land_CSA38_ocas",
+	"Land_CSA38_ocas2",
+	"Land_CSA38_ocas3",
+	"Land_CSA38_ocas4",
+	"Land_CSA38_ocas2_end",
+	"Land_CSA38_ocas3_end",
+	"Land_CSA38_ocas_end",
+	"Land_CSA38_zataras4",
+	"Land_fow_Barbedwire",
+	"Land_CSA38_jezci",
+	"Land_WW2_Wire_Bruno",
+	"Land_I44_Buildings_Bunker_AA",
+	"Land_I44_Buildings_CT_Straight"
+];
