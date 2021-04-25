@@ -19,6 +19,7 @@ missionNameSpace setVariable ["zuesObjects", (_logic getVariable "zuesObjects"),
 missionNameSpace setVariable ["TWC_Intro_isDisabled", (_logic getVariable "disableIntro"), true];
 missionNameSpace setVariable ["TWC_Intro_specialSong", (_logic getVariable ["specialIntro", ""]), true];
 missionNameSpace setVariable ["TWC_Intro_Started", false, true];
+missionNameSpace setVariable ["TWC_worldName", worldName, true]; // share world name from server, for clients to check against
 
 missionNameSpace setVariable ["twcModuleFinished", true, true];
 
