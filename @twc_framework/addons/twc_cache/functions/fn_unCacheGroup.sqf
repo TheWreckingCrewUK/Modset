@@ -1,6 +1,6 @@
 params ["_group", "_cacheRange"];
 
-if (!(isNil {_group getVariable "twc_cacheDefending"})) then {
+if (!_group getVariable ["TWC_Cache_Defending", false]) then {
 	{
 		_x enableSimulationGlobal true;
 		_x hideObjectGlobal false;

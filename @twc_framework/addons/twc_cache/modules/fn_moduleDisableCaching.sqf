@@ -18,9 +18,9 @@ if (!_activated || !isServer) exitWith {};
 
 {
 	if (_x isKindOf "CAManBase") then {
-		(group _x) setVariable ["twc_cacheDisabled", true, true];
+		(group _x) setVariable ["TWC_Cache_Disabled", true, true];
 	} else {
-		_x setVariable ["twc_cacheDisabled", true, true];
+		_x setVariable ["TWC_Cache_Disabled", true, true];
 	};
 } forEach _units;
 

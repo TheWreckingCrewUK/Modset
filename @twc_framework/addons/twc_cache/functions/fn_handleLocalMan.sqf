@@ -5,7 +5,7 @@ if !(local _man) exitWith {};
 if !(alive _man) exitWith {};
 if (isPlayer _man) exitWith {};
 
-_isStaticGroup = (group _object) getVariable ["twc_statioGroup", false];
+_isStaticGroup = (group _object) getVariable ["TWC_Cache_staticGroup", false];
 
 if (_isStaticGroup) then {
 	_object disableAI "PATH";

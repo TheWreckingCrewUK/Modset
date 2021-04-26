@@ -9,7 +9,7 @@ if !(_enabled) exitWith {};
 
 {
 	if (((units _x) select 0) in (switchableUnits + playableUnits)) then {
-		_x setVariable ["TWC_cacheDisabled", true];
+		_x setVariable ["TWC_Cache_Disabled", true];
 	};
 } forEach allGroups;
 
@@ -17,7 +17,6 @@ missionNameSpace setVariable ["TWC_Cache_Infantry_Range", (_logic getVariable "a
 missionNameSpace setVariable ["TWC_Cache_Urban_Range", (_logic getVariable "urbanRange")];
 missionNameSpace setVariable ["TWC_Cache_Vehicle_Range", (_logic getVariable "vehicleRange")];
 
-// Happens at mission init (map screen ops, spawn on public). Delayed to allow for custom cache ranges to be applied.
 /* [{
 	if (missionNameSpace getVariable "TWC_Cache_Vehicle_Range" > 0) then {
 		["AllVehicles","init",{

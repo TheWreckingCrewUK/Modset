@@ -8,18 +8,18 @@ if (isNull _vehicle) exitWith {
 	["Exiting a vehicle loop, nullGroup encountered", "Cache"] call TWC_Debug_fnc_logGlobal;
 };
 
-private _cacheBlacklist = _vehicle getVariable ["TWC_Cache_Blacklisted", false];
+private _cacheBlacklist = _vehicle getVariable ["TWC_Cache_Disabled", false];
 
 if (_cacheBlacklist) exitWith {
 	if (_isCached) then {
 		[_vehicle, _cacheDistance] call TWC_Cache_fnc_unCacheGroup;
 	};
 
-	["Exiting an infantry loop, blacklisted group encountered", "Cache"] call TWC_Debug_fnc_logGlobal;
+	["Exiting a vehicle loop, blacklisted vehicle encountered", "Cache"] call TWC_Debug_fnc_logGlobal;
 };
 
 if (alive _vehicle) exitWith {
-	[format ["Exiting a vehicle loop, vehicle ded.", name _vehicle], "Cache"] call TWC_Debug_fnc_logGlobal;
+	[format ["Exiting a vehicle loop, vehicle RIP.", name _vehicle], "Cache"] call TWC_Debug_fnc_logGlobal;
 };
 
 private _continue = true; // the cache functions call a new loop, once they've concluded

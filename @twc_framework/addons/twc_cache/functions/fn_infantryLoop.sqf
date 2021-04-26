@@ -8,7 +8,7 @@ if (isNull _group) exitWith {
 	["Exiting an infantry loop, nullGroup encountered", "Cache"] call TWC_Debug_fnc_logGlobal;
 };
 
-private _cacheBlacklist = _group getVariable ["TWC_Cache_Blacklisted", false];
+private _cacheBlacklist = _group getVariable ["TWC_Cache_Disabled", false];
 
 if (_cacheBlacklist) exitWith {
 	if (_isCached) then {
@@ -26,7 +26,7 @@ private _leader = leader _group;
 private _continue = true; // the cache functions call a new loop, once they've concluded
 
 // Most performant check possible, tested against CBA_fnc_nearPlayer etc.
-if ([_leader, _cacheDistance] call CBA_fnc_nearPlayer) then {
+if !([_leader, _cacheDistance] call CBA_fnc_nearPlayer) then {
 	if !(_isCached) then {
 		/* If there's no players in range, and it's not yet cached */
 		[_group, _cacheDistance] call TWC_Cache_fnc_cacheGroup;
