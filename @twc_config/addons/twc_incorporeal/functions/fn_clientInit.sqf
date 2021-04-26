@@ -1,11 +1,7 @@
 if (isDedicated || !hasInterface) exitWith {};
 
 // Don't run on public.
-_isEnabled = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
-if (_isEnabled) exitWith {};
-
-_index = player createDiarySubject ["loadout", "Loadouts"];
-[player] call twc_fnc_briefingLoadout;
+if (TWC_Core_isPublic) exitWith {};
 
 TWC_Death_AlreadyExecuted = false;
 TWC_Death_ExecutionFinished = false;
@@ -14,8 +10,8 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 
 // Always block screen on spawn.
 [{ getClientStateNumber > 9 }, {
-	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
-	if (_isPublic) exitWith {};
+	if (TWC_Core_isPublic) exitWith {};
+	if !(TWC_Core_isServer) exitWith {};
 	
 	[(_this select 0)] spawn {
 		titleCut ["", "BLACK FADED", 999];
@@ -28,14 +24,9 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 	_isNightOp = missionNameSpace getVariable ["TWC_NightGear", false];
 	_isDisabled = missionNameSpace getVariable ["TWC_Intro_isDisabled", false];
 	_missionStarted = missionNameSpace getVariable ["TWC_Intro_Started", false];
-	_isDebug = missionNameSpace getVariable ["twc_debugEnabled", false];
 	
-	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
-	if (_isPublic) exitWith {};
-	
-	if (_isDebug) exitWith { systemChat "Skipping intro, due to debug mode..."; };
-	
-	[] call TWC_Incorporeal_fnc_setPlayerUp;
+	if (TWC_Core_isPublic) exitWith {};
+	if !(TWC_Core_isServer) exitWith { systemChat "Skipping intro, for local testing..."; };
 	
 	// JIP'd in, don't show the camera stuff.
 	if (_isDisabled || _missionStarted) exitWith {
@@ -50,8 +41,7 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 	private ["_drowned", "_morpOD", "_epiOD", "_CA"];
 	
 	if (player != _unit) exitWith {}; // ignore
-	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
-	if (_isPublic) exitWith {};
+	if (TWC_Core_isPublic) exitWith {};
 
 	[{
 		params ["_unit"];
@@ -68,8 +58,7 @@ player addEventHandler ["Killed", {
 	// safety check!
 	if (player != _unit) exitWith {};
 	if !(local _unit) exitWith {};
-	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
-	if (_isPublic) exitWith {};
+	if (TWC_Core_isPublic) exitWith {};
 	
 	554 cutText ["", "BLACK", 0.01, true];
 	["TWC_Dead" + str (0), 0, true] call ace_common_fnc_setHearingCapability;
@@ -101,8 +90,7 @@ player addEventHandler ["Respawn", {
 	params ["_unit"];
 	
 	if (_unit != player) exitWith {};
-	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
-	if (_isPublic) exitWith {};
+	if (TWC_Core_isPublic) exitWith {};
 	
 	TWC_Death_AlreadyExecuted = false;
 	_unit setVariable ["TWC_Death_Data", [], true];
@@ -114,8 +102,7 @@ player addEventHandler ["Respawn", {
 	if (player != _unit) exitWith {};
 	if !(local _unit) exitWith {};
 
-	_isPublic = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
-	if (_isPublic) exitWith {};
+	if (TWC_Core_isPublic) exitWith {};
 
 	if (TWC_Death_AlreadyExecuted) exitWith {};
 	TWC_Death_AlreadyExecuted = true;

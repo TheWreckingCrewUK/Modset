@@ -12,7 +12,6 @@ class CfgFunctions {
 			class startLegacyIntro {};
 			class getIntroSong {};
 			class getIntroData {};
-			class setPlayerUp {};
 			
 			/** DEATH SCREEN **/
 			class bestGuessDeath {};

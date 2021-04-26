@@ -5,6 +5,7 @@ class CfgPatches {
 		requiredVersion = 1.7;
 
 		requiredAddons[] = {
+			"twc_core",
 			"twc_framework",
 			"twc_sounds",
 			"twc_ui",
