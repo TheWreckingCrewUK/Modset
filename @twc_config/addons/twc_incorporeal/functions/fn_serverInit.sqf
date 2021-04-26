@@ -1,8 +1,7 @@
 if (!isDedicated) exitWith {};
 
 // Don't run on public.
-_isEnabled = missionNameSpace getVariable ["TWC_enablePublicCPRChance", false];
-if (_isEnabled) exitWith {};
+if (TWC_Core_isPublic) exitWith {};
 
 /** Captures death events and stores the data. This is used for death screens and outros. **/
 TWC_Dead_Players = [];

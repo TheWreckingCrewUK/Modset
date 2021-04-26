@@ -47,7 +47,7 @@ class CfgPatches {
 	};
 };
 
-class cfgFactionClasses {
+class CfgFactionClasses {
 	class NO_CATEGORY;
 
 	class twc_missionSetup: NO_CATEGORY {
@@ -67,30 +67,10 @@ class cfgFactionClasses {
 	};
 };
 
-class Extended_InitPost_EventHandlers {
-	class CAManBase {
-		class twc_moduleInitPos_eh {
-			init = "[(_this select 0)] execVM 'twc_framework\init.sqf';";
-		};
-		
-		class twc_functionInit {
-			init = "_this call twc_fnc_init;";
-		};
-		
-		class twc_AIItemCheckInit {
-			init = "_this call twc_fnc_confiscateBadItems;";
-		};
-	};
-	class TWC_Module_WaveSpawn {
-		class TWC_ModuleWaveSpawnInit {
-			init = "_this call TWC_fnc_moduleWaveSpawnInit;";
-		};
-	};
-};
-
-#include "cfgAmmo.hpp"
-#include "cfgFunctions.hpp"
-#include "cfgMagazines.hpp"
-#include "cfgVehicles.hpp"
-#include "cfgWaypoints.hpp"
-#include "cfgWeapons.hpp"
+#include "CfgAmmo.hpp"
+#include "CfgEventHandlers.hpp"
+#include "CfgFunctions.hpp"
+#include "CfgMagazines.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgWaypoints.hpp"
+#include "CfgWeapons.hpp"
