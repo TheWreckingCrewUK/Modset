@@ -280,7 +280,7 @@ class CfgVehicles {
 	class TWC_AmmoBox_WW2_Airborne_Section_Portable: TWC_AmmoBox_WW2_Airborne_Portable {
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Section Resupply - Late War (Portable)";
+		displayName = "Section Resupply - Airborne (Portable)";
 		editorSubcategory = "TWC_WW2_Crates";
 		
 		class TransportItems {
