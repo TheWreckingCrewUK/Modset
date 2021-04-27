@@ -1,10 +1,5 @@
-params ["_player"];
-
 if (!hasInterface) exitWith {};
-if (!local _player) exitWith {};
 
-// Do we want this to be different for public?
-// if (!TWC_Core_isPublic) then {
 ACE_maxWeightDrag = 10000000;
 ACE_maxWeightCarry = 700;
 
@@ -91,7 +86,7 @@ if !((goggles player) in approvedFacewear) then {
 	removeGoggles player;
 };
 
-[{ getClientStateNumber > 9 }, {
+[{ getClientStateNumber > 9 || !(isMultiplayer)}, {
 	/** Reconnect spot? **/
 	if (!isNil "ForwardBasePos" && !(player getVariable ["twc_ignoreForwardBase", false])) then {
 		player setPos ForwardBasePos;
@@ -107,4 +102,4 @@ if !((goggles player) in approvedFacewear) then {
 	};
 	
 	1 enableChannel false;
-}, []] call CBA_fnc_waitUntilAndExecute;
+}] call CBA_fnc_waitUntilAndExecute;

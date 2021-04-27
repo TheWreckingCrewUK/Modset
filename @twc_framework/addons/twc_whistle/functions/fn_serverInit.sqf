@@ -5,6 +5,8 @@ TWC_Whistle_ForcedStopped = false;
 
 TWC_Whistle_Play_StartEH = ["TWC_Whistle_Play_Start", {
 	params ["_player"];
+	
+	if !(alive _player) exitWith {};
 
 	[_player] call TWC_Whistle_fnc_whistle;
 	TWC_Whistle_currentlyPlaying pushBackUnique _player;
