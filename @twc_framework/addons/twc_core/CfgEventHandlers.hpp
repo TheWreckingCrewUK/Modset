@@ -1,7 +1,7 @@
 class Extended_PostInit_EventHandlers {
 	class TWC_Core {
-		serverInit = "[] call TWC_Core_fnc_serverPostInit;";
-		clientInit = "[] call TWC_Core_fnc_clientPostInit;";
+		serverInit = "_this call TWC_Core_fnc_serverPostInit;";
+		clientInit = "_this call TWC_Core_fnc_clientPostInit;";
 	};
 };
 
