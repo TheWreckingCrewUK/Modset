@@ -37,15 +37,13 @@ class CfgPatches {
 #include "CfgAmmo.hpp"
 
 class Mode_SemiAuto;
-class mode_fullauto;
+class Mode_Fullauto;
+
 class CfgWeapons {
-#include "CfgWeapons.hpp"
-
-
+	#include "CfgWeapons.hpp"
 };
 
 class CfgVehicles {
-	
 	#include "LandVehicles.hpp"
 	#include "Helicopters.hpp"
 	
@@ -56,37 +54,28 @@ class CfgVehicles {
 	#include "acre_planes.hpp"
 	#include "acre_tanks.hpp"
 	
-	
-	
 	class CUP_B_USArmy_Soldier_01;
-	class CUP_CRYE_MCAM_RUS_Full: CUP_B_USArmy_Soldier_01
-	{
+	class CUP_CRYE_MCAM_RUS_Full: CUP_B_USArmy_Soldier_01 {
 		modelSides[] = {3,2,1,0};
 	};
-	class CUP_CRYE_MCAM_RUS_Roll: CUP_B_USArmy_Soldier_01
-	{
+	class CUP_CRYE_MCAM_RUS_Roll: CUP_B_USArmy_Soldier_01 {
 		modelSides[] = {3,2,1,0};
 	};
-	class CUP_CRYE_MCAM_RUS2_Full: CUP_B_USArmy_Soldier_01
-	{
+	class CUP_CRYE_MCAM_RUS2_Full: CUP_B_USArmy_Soldier_01 {
 		modelSides[] = {3,2,1,0};
 	};
-	class CUP_CRYE_MCAM_RUS2_Roll: CUP_B_USArmy_Soldier_01
-	{
+	class CUP_CRYE_MCAM_RUS2_Roll: CUP_B_USArmy_Soldier_01 {
 		modelSides[] = {3,2,1,0};
 	};
 	
 	class UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A;
-	class TWC_BAF_B_Bergen_OLI_Rifleman_XL_A: UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A
-	{
+	class TWC_BAF_B_Bergen_OLI_Rifleman_XL_A: UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A {
 		displayname = "Bergen XL (Olive)";
 		hiddenSelectionsTextures[] = {"uk3cb_baf_equipment\backpacks\data\backpack_oli_co.paa"};
 		hiddenSelectionsMaterials[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_us.rvmat"};
 	};
 };
 
-class cfgMagazines
-{
-	
+class CfgMagazines {
 	#include "CfgMagazines.hpp"
 };
