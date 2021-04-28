@@ -6,13 +6,13 @@
 "TWC_AmmoBox_Vehicle_L111",          // HMG
 "TWC_AmmoBox_Vehicle_L7A2",          // GPMG */
 
-class TWC_AmmoBox_Vehicle_Toolkits: TWC_AmmoBox_Vehicle {
+class TWC_AmmoBox_Vehicle_Toolkits: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "Toolkit Box";
 	
 	class TransportItems {
-		item_nc(Item_Toolkit, 10);
+		item_nc(Toolkit, 10);
 	};
 };
 
@@ -90,7 +90,7 @@ class TWC_AmmoBox_Vehicle_Generic: TWC_AmmoBox_Vehicle {
 	transportAmmo        = 100000;
 	supplyRadius         = 10;
 	ace_dragging_canDrag = 1;
-	ace_cargo_canLoad = 1;
+	ace_cargo_canLoad = 0;
 };
 
 class TWC_AmmoBox_Vehicle_Generic_Loadable: TWC_AmmoBox_Vehicle {
