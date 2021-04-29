@@ -13,7 +13,7 @@ if (!hasInterface) exitWith {};
 	[
 		DIK_Y,
 		[
-			false,
+			true,
 			false,
 			false
 		]
