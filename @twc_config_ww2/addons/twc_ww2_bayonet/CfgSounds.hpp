@@ -8,9 +8,9 @@
 	}
 
 class CfgSounds {
-	ADD_SOUND_V(b_death_1,sounds,2);
-	ADD_SOUND_V(b_death_2,sounds,2);
-	ADD_SOUND_V(b_death_3,sounds,2);
-	ADD_SOUND_V(b_death_4,sounds,2);
-	ADD_SOUND_V(b_death_5,sounds,2);
+	ADD_SOUND_V(b_death_1,sounds,3);
+	ADD_SOUND_V(b_death_2,sounds,3);
+	ADD_SOUND_V(b_death_3,sounds,3);
+	ADD_SOUND_V(b_death_4,sounds,3);
+	ADD_SOUND_V(b_death_5,sounds,3);
 };
