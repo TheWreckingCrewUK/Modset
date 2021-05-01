@@ -2,7 +2,7 @@
 	class TWC_##CLASSNAME { \
 		name = "TWC_##CLASSNAME"; \
 		sound[] = { \
-			twc_sounds\sounds\##FOLDER##\##CLASSNAME##.ogg \
+			twc_ww2_bayonet\##FOLDER##\##CLASSNAME##.ogg \
 			, VOLUME##, 1.0 }; \
 		titles[] = {0, "" }; \
 	}

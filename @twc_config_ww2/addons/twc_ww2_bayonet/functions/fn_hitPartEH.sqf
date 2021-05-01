@@ -13,10 +13,15 @@ _wasStabbed = _target getVariable ["TWC_WW2_Bayonet_wasStabbedPreviously", false
 if (_wasStabbed) exitWith {};
 _target setVariable ["TWC_WW2_Bayonet_wasStabbedPreviously", true];
 
-// TODO: Hook this into medical rewrite, to prevent this being clipped etc. (aka make the unit uncon for the full duration of the sound clip. for now, this will have to do.
-_sound = ["twc_b_death_1", "twc_b_death_2", "twc_b_death_3", "twc_b_death_4", "twc_b_death_5"] selectRandomWeighted [0.25, 0.25, 0.5, 1, 1];
-_target say3D _sound;
+if !(isPlayer _target) {
+	// TODO: Hook this into medical rewrite, to prevent this being clipped etc. (aka make the unit uncon for the full duration of the sound clip. for now, this will have to do.
+	_sound = ["twc_b_death_1", "twc_b_death_2", "twc_b_death_3", "twc_b_death_4", "twc_b_death_5"] selectRandomWeighted [0.25, 0.25, 0.5, 1, 1];
+	_target say3D _sound;
+}
 
 // Ragdoll with a bit of force, gives more oompf!
 _targetSelection = (_selection select 0);
 _target addForce [_shooter vectorModelToWorld [0, 100, 0], _target selectionPosition _targetSelection];
+
+// TODO: when hooked into sound, make duration match that (and kill them etc.)
+[{ _this setVariable ["TWC_WW2_Bayonet_wasStabbedPreviously", false]; }, _target, 5] call CBA_fnc_waitAndExecute;
