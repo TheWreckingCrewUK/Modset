@@ -13,8 +13,9 @@ _wasStabbed = _target getVariable ["TWC_WW2_Bayonet_wasStabbedPreviously", false
 if (_wasStabbed) exitWith {};
 _target setVariable ["TWC_WW2_Bayonet_wasStabbedPreviously", true];
 
-// TODO: Play Sound!
-
+// TODO: Hook this into medical rewrite, to prevent this being clipped etc. (aka make the unit uncon for the full duration of the sound clip. for now, this will have to do.
+_sound = ["b_death_1", "b_death_2", "b_death_3", "b_death_4", "b_death_5"] selectRandomWeighted [0.25, 0.25, 0.5, 1, 1];
+_target say3D _sound;
 
 // Ragdoll with a bit of force, gives more oompf!
 _targetSelection = (_selection select 0);
