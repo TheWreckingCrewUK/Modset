@@ -14,11 +14,13 @@ class SP_Backpack_BlowpipeCarrier;
 class TWC_Backpack_ColdWar_Regular_SectionCommander: SP_Backpack_LargePack
 {
 	scope = 1;
-	maximumLoad = 200;
+	maximumLoad = 250;
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd,2);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd_T,2);
 	};
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC77,1);
@@ -27,11 +29,13 @@ class TWC_Backpack_ColdWar_Regular_SectionCommander: SP_Backpack_LargePack
 class TWC_Backpack_ColdWar_Regular_2iC: SP_Backpack_LargePack
 {
 	scope = 1;
-	maximumLoad = 250;
+	maximumLoad = 350;
 	class TransportMagazines {
-		ADD_MAGA(UK3CB_BAF_762_20Rnd, 8);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd_T, 2);
+		ADD_MAGA(SP_30Rnd_9x19_L2A3_Sterling, 2);
 		ADD_MAGA(SmokeShell, 4);
-		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 2);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 3);
 	};
 };
 class TWC_Backpack_ColdWar_Regular_ASSAT: SP_Backpack_CarlGustavCarrier
@@ -68,18 +72,17 @@ class TWC_Backpack_ColdWar_Regular_Dismounted_AT: SP_Backpack_LargePack_CarlGust
 	scope = 1;
 	maximumLoad = 300;
 	class TransportMagazines {
-		ADD_MAGA(ukcw_l14a1_HE,1);
 		ADD_MAGA(ukcw_l14a1_HEAT,1);
-		ADD_MAGA(SP_30Rnd_9x19_L2A3_Sterling,6);
+		ADD_MAGA(SP_30Rnd_9x19_L2A3_Sterling,4);
 	};
 };
 class TWC_Backpack_ColdWar_Regular_Dismounted_ATASS: SP_Backpack_LargePack_CarlGustav
 {
 	scope = 1;
-	maximumLoad = 300;
+	maximumLoad = 350;
 	class TransportMagazines {
 		ADD_MAGA(ukcw_l14a1_HEAT,2);
-		ADD_MAGA(ukcw_l14a1_HE,1);
+		ADD_MAGA(ukcw_l14a1_HE,2);
 		ADD_MAGA(UK3CB_BAF_762_20Rnd,4);
 	};
 };

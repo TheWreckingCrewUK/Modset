@@ -104,6 +104,22 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar_
 		"Throw",
 		"Put"
 	};
+		magazines[]=
+	{
+		MAG_5("UK3CB_BAF_762_20Rnd"),
+		MAG_2("UK3CB_BAF_762_20Rnd_T"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SP_law66_round",
+		"SmokeShell"
+	};
+	respawnmagazines[]=
+	{
+		MAG_5("UK3CB_BAF_762_20Rnd"),
+		MAG_2("UK3CB_BAF_762_20Rnd_T"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SP_law66_round",
+		"SmokeShell"
+	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
 {
