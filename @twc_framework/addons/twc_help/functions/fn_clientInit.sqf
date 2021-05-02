@@ -1,6 +1,4 @@
-params ["_player"];
-
-if (!local _player) exitWith {};
+if (!hasInterface) exitWith {};
 
 #include "\a3\editor_f\Data\Scripts\dikCodes.h";
 
@@ -15,7 +13,7 @@ if (!local _player) exitWith {};
 	[
 		DIK_Y,
 		[
-			false,
+			true,
 			false,
 			false
 		]

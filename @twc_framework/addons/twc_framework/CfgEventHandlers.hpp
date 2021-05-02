@@ -1,9 +1,5 @@
 class Extended_InitPost_EventHandlers {
-	class CAManBase {
-		class twc_moduleInitPos_eh {
-			init = "[(_this select 0)] execVM 'twc_framework\init.sqf';";
-		};
-		
+	class CAManBase {		
 		class twc_functionInit {
 			init = "_this call twc_fnc_init;";
 		};
