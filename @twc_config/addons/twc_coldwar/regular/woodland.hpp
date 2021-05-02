@@ -310,12 +310,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_ASSMG: TWC_Infantry_ColdWar_Regular_
 	};
 	magazines[]=
 	{
-		MAG_7("UK3CB_BAF_762_20Rnd"),
+		MAG_5("UK3CB_BAF_762_20Rnd"),
+		MAG_2("UK3CB_BAF_762_20Rnd_T"),
 		"SmokeShell"
 	};
 	respawnmagazines[]=
 	{
-		MAG_7("UK3CB_BAF_762_20Rnd"),
+		MAG_5("UK3CB_BAF_762_20Rnd"),
+		MAG_2("UK3CB_BAF_762_20Rnd_T"),
 		"SmokeShell"
 	};
 };
