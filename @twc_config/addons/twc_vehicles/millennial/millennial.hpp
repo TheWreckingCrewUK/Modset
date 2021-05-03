@@ -34,6 +34,18 @@
 
 // late millennial (oughts) - not doing for the moe
 
+#define MILLENNIAL_SECTION_LATE_RIFLE 20
+#define MILLENNIAL_SECTION_LATE_RIFLE_T 10
+
+#define MILLENNIAL_SECTION_MECHANISED_LATE_RIFLE 30
+#define MILLENNIAL_SECTION_MECHANISED_LATE_RIFLE_T 16
+
+#define MILLENNIAL_SECTION_LAW80 2
+
+#define MILLENNIAL_GPMG 4
+
+
+
 #include "millennial_plane.hpp"
 #include "millennial_tracked.hpp"
 #include "millennial_wheeled.hpp"
