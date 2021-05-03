@@ -2,9 +2,12 @@
 #undef ADD_FACTION
 #define ADD_FACTION faction = "TWC_Millennial"
 
-#define MILLENNIAL_LANDROVER_MOD 0.5
-#define MILLENNIAL_FV432_MOD 1
-#define MILLENNIAL_WARRIOR_MOD 0.8
+#define 1990_LANDROVER_MOD 0.5
+#define 1990_FV432_MOD 1
+#define 1990_WARRIOR_MOD 0.8
+#define 2000_LANDROVER_MOD 0.5
+#define 2000_FV432_MOD 1
+#define 2000_WARRIOR_MOD 0.8
 #define MILLENNIAL_SCIMITAR_MOD 1
 #define MILLENNIAL_SCORPION_MOD 1
 #define MILLENNIAL_CHIEFTAIN_MOD 1
@@ -33,18 +36,6 @@
 #define MILLENNIAL_GPMG 4
 
 // late millennial (oughts) - not doing for the moe
-
-#define MILLENNIAL_SECTION_LATE_RIFLE 20
-#define MILLENNIAL_SECTION_LATE_RIFLE_T 10
-
-#define MILLENNIAL_SECTION_MECHANISED_LATE_RIFLE 30
-#define MILLENNIAL_SECTION_MECHANISED_LATE_RIFLE_T 16
-
-#define MILLENNIAL_SECTION_LAW80 2
-
-#define MILLENNIAL_GPMG 4
-
-
 
 #include "millennial_plane.hpp"
 #include "millennial_tracked.hpp"
