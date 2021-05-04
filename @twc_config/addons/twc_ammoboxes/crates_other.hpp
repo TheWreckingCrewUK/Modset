@@ -233,10 +233,9 @@ class TWC_AmmoBox_Other_Sergeant_Utility: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_Clacker,1);
 		ADD_ITEM(DemoCharge_Remote_Mag, 5);
 		ADD_ITEM(ACE_wirecutter,1);
-		ADD_ITEM(ACE_EntrenchingTool,2);
+		ADD_ITEM(ACE_EntrenchingTool,3);
 		ADD_ITEM(ACE_CableTie,5);
 		ADD_ITEM(SmokeShellYellow,6);
 		ADD_ITEM(SmokeShellGreen,6);
-		ADD_ITEM(ACE_EntrenchingTool,1);
 	};
 };
