@@ -1,27 +1,27 @@
-[u][color=#ffffff]AH.1 Gazelle Reconnaissance Aircraft[/color][/u]
+[u][color=#ffffff]Gazelle AH.1 Reconnaissance Aircraft[/color][/u]
 [color=#ff9933]System Operator[/color] (T): [color=#ccccff]No-One[/color]
 Pilot (T): [color=#ccccff]No-One[/color]
 
-[u][color=#ffffff]AH.1 Gazelle Anti-Tank Aircraft[/color][/u]
+[u][color=#ffffff]Gazelle AH.1 Anti-Tank Aircraft[/color][/u]
 [color=#ff9933]System Operator[/color] (T): [color=#ccccff]No-One[/color]
 Pilot (T): [color=#ccccff]No-One[/color]
 
-[u][color=#ffffff]AH.1 Gazelle Attack Aircraft[/color][/u]
+[u][color=#ffffff]Gazelle AH.1 Attack Aircraft[/color][/u]
 FAC (T): [color=#ccccff]No-One[/color]
 [color=#ff9933]Pilot (T): [color=#ccccff]No-One[/color]
 
-[u][color=#ffffff]AH.1 Wildcat Reconnaissance Aircraft[/color][/u]
+[u][color=#ffffff]Wildcat AH1 Reconnaissance Aircraft[/color][/u]
 [color=#ff9933]System Operator[/color] (T): [color=#ccccff]No-One[/color]
 Pilot (T): [color=#ccccff]No-One[/color]
 
-[u][color=#ffffff]AH.1 Wildcat Anti-Tank Aircraft[/color][/u]
+[u][color=#ffffff]Wildcat AH1 Anti-Tank Aircraft[/color][/u]
 [color=#ff9933]System Operator[/color] (T): [color=#ccccff]No-One[/color]
 Pilot (T): [color=#ccccff]No-One[/color]
 
-[u][color=#ffffff]AH.1 Wildcat Attack Aircraft[/color][/u]
+[u][color=#ffffff]Wildcat AH1 Attack Aircraft[/color][/u]
 FAC (T): [color=#ccccff]No-One[/color]
 [color=#ff9933]Pilot (T): [color=#ccccff]No-One[/color]
 
-[u][color=#ffffff]AH.7 Apache Attack Aircraft[/color][/u]
+[u][color=#ffffff]Apache AH1 Attack Aircraft[/color][/u]
 [color=#ff9933]System Operator[/color] (T): [color=#ccccff]No-One[/color]
 Pilot (T): [color=#ccccff]No-One[/color]
