@@ -324,33 +324,6 @@ class twc_127_hiteffect_grey
    };
 };
 
-class twc_762_hiteffect_grey
-{
-	class smoke
-	{
-       simulation = "particles";   //type of simulation - particles or light
-       type = "twc_ImpactSmoke_762";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
-       position[] = {0, 0, 0};     //position related to the default position or memorypoint
-       lifeTime = 0.1;            //life time of emitter
-       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
-       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
-       enabled = 1;                //1 effect is enabled, -1 effect is disabled
-	   intensity = 1;
-   };
-	class puff
-	{
-       simulation = "particles";   //type of simulation - particles or light
-       type = "ImpactConcrete";           //name of PE's class defined in CfgCloudlets or light's class defined in CfgLights
-       position[] = {0, 0, 0};     //position related to the default position or memorypoint
-       lifeTime = 1.3;            //life time of emitter
-       qualityLevel = -1;          // effect is only used when the the particle quality option particlesQuality in user settings matches this qualityLevel. -1 play everytime, 0 play only on low, 1 play only on normal, 2 play only on high. Default: -1
-       start = 1;                  //is used only if the lifeTime parameter is defined, if value is changed from negative to positive then the effect is triggered
-       enabled = 1;                //1 effect is enabled, -1 effect is disabled
-	   intensity = 1;
-   };
-};
-
-
 class GrenadeExplosion
 {
 	class GrenadeExp1
@@ -410,14 +383,5 @@ class cfgcloudlets
 		moveVelocity[] = {0, 0, 0};
 		rotationVelocity = 0;
 		color[] = {{0.9,0.9,0.9,0.18},{0.9,0.9,0.9,0.06},{0.9,0.9,0.9,0.012},{0.9,0.9,0.9,0.001}};
-	};
-	
-	class ImpactDustConcrete2;
-	class twc_impactsmoke_762: ImpactDustConcrete2
-	{
-		size[] = {0.8,1.1,1.4};
-		position[] = {0,0,0};
-		color[] = {{0.9,0.9,0.9,0.48},{0.9,0.9,0.9,0.26},{0.9,0.9,0.9,0.12},{0.9,0.9,0.9,0.001}};
-		moveVelocity[] = {"0","0","1.2*directionZ"};
 	};
 };

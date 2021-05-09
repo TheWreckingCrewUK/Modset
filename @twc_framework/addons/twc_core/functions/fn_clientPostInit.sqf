@@ -86,7 +86,7 @@ if !((goggles player) in approvedFacewear) then {
 	removeGoggles player;
 };
 
-[{ getClientStateNumber > 9 || !(isMultiplayer)}, {
+[{ time > 0 }, {
 	/** Reconnect spot? **/
 	if (!isNil "ForwardBasePos" && !(player getVariable ["twc_ignoreForwardBase", false])) then {
 		player setPos ForwardBasePos;

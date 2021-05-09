@@ -149,6 +149,7 @@ class CfgAmmo {
 			hitWater = "ImpactEffectsWater";
 		};
 	};
+	
 	class B_762x51_Ball: BulletBase {
 		class CamShakePlayerFire {
 			distance = 1;
@@ -156,27 +157,8 @@ class CfgAmmo {
 			frequency = 10;
 			power = 5;
 		};
+		
 		ACE_muzzleVelocityVariationSD = 1;
-		class HitEffects {
-			Hit_Foliage_green = "ImpactLeavesGreen";
-			Hit_Foliage_Dead = "ImpactLeavesDead";
-			Hit_Foliage_Green_big = "ImpactLeavesGreenBig";
-			Hit_Foliage_Palm = "ImpactLeavesPalm";
-			Hit_Foliage_Pine = "ImpactLeavesPine";
-			hitFoliage = "ImpactLeaves";
-			hitGlass = "ImpactGlass";
-			hitGlassArmored = "twc_762_hiteffect_grey";
-			hitWood = "twc_762_hiteffect_grey";
-			hitMetal = "twc_762_hiteffect_grey";
-			hitMetalPlate = "twc_762_hiteffect_grey";
-			hitBuilding = "twc_762_hiteffect_grey";
-			hitPlastic = "twc_762_hiteffect_grey";
-			hitRubber = "twc_762_hiteffect_grey";
-			hitConcrete = "twc_762_hiteffect_grey";
-			hitGroundSoft = "twc_762_hiteffect_grey";
-			hitGroundHard = "twc_762_hiteffect_grey";
-			hitWater = "ImpactEffectsWater";
-		};
 	};
 	
 	class B_556x45_Ball;
