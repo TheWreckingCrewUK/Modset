@@ -632,6 +632,7 @@ class TWC_Infantry_1990_Regular_Desert_Vehicle_Commander: TWC_Infantry_1990_Regu
 {
 	CATEGORY(TWC_Infantry_Regular_Desert)
 	uniformClass = "TWC_Smock_Desert";
+	backpack = "UK3CB_BAF_B_Bergen_DDPM_Rifleman_B";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",

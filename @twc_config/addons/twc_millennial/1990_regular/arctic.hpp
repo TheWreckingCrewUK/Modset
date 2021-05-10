@@ -631,6 +631,7 @@ class TWC_Infantry_1990_Regular_Arctic_Vehicle_Commander: TWC_Infantry_1990_Regu
 {
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
+	backpack = "UK3CB_BAF_B_Bergen_DPMW_Rifleman_B";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Plate_Winter",

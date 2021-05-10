@@ -631,6 +631,7 @@ class TWC_Infantry_1990_Regular_Tropic_Vehicle_Commander: TWC_Infantry_1990_Regu
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
 	uniformClass = "TWC_Smock_Temperate";
+	backpack = "UK3CB_BAF_B_Bergen_DPMT_Rifleman_B";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT",

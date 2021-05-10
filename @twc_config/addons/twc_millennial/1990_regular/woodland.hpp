@@ -732,6 +732,7 @@ class TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander: TWC_Infantry_1990_Re
 {
 	displayName = "Vehicle Commander";
 	uniformClass = "UK3CB_BAF_U_Smock_DPMW";
+	backpack = "UK3CB_BAF_B_Bergen_DPMW_Rifleman_B";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_DPMW",

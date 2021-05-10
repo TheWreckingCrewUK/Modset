@@ -834,6 +834,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Modern
 class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Commander: TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot
 {
 	displayName = "Vehicle Commander";
+	backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey",

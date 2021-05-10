@@ -836,6 +836,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_ColdW
 class TWC_Infantry_ColdWar_Regular_Woodland_Vehicle_Commander: TWC_Infantry_ColdWar_Regular_Woodland_Helicopter_Pilot
 {
 	displayName="Vehicle Commander";
+	backpack="SP_Backpack_LargePack";
 	linkedItems[]=
 	{
 		"SP_P58_UrbanPatrolNBC",
