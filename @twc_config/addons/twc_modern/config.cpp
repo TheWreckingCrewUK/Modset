@@ -166,6 +166,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Tank Commander";
+		backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
 		faction = "TWC_Modern";
 		CATEGORY(TWC_ForceType_Armoured)
 		uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";

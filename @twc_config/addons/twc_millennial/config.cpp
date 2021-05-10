@@ -169,6 +169,7 @@ class CfgVehicles
 		faction = "TWC_Millennial";
 		CATEGORY(TWC_ForceType_Armoured)
 		uniformClass = "UK3CB_BAF_U_CrewmanCoveralls_RTR";
+		backpack = "UK3CB_BAF_B_Bergen_DPMW_Rifleman_B";
 		TWC_isCommandRole = 1;
 		engineer = 1;
 		linkedItems[] =

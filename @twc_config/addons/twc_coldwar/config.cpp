@@ -206,6 +206,7 @@ class CfgVehicles
 	class TWC_Infantry_ColdWar_Tank_Crew: TWC_Infantry_ColdWar_Tank_Commander
 	{
 		displayName="Tank Crew";
+		backpack="SP_Backpack_LargePack";
 		TWC_isCommandRole = 0;
 		class EventHandlers: EventHandlers
 		{
