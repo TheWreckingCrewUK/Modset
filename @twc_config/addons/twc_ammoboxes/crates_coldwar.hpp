@@ -6,8 +6,8 @@
 "TWC_AmmoBox_ColdWar_Blowpipe_Portable", */
 
 class TWC_AmmoBox_ColdWar_Base: TWC_AmmoBox_Base {
-	scope = 2;
-	scopeCurator = 2;
+	scope = 1;
+	scopeCurator = 1;
 	displayName = "Base Resupply (Immobile)";
 	
 	editorSubcategory = "TWC_Crates_ColdWar";

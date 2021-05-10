@@ -1,10 +1,11 @@
 class CfgPatches {
-	class TWC_AmmoBox_Replenish {
+	class TWC_Box_Replenish {
 		units[] = {};
 		weapons[] = {};
 		
 		requiredAddons[] = {
-			"TWC_Core"
+			"ace_common",
+			"twc_core"
 		};
 		
 		author[] = {"User 1", "User 2"};

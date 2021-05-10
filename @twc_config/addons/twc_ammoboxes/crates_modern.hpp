@@ -10,8 +10,8 @@
 	"TWC_AmmoBox_Modern_M6_Portable",
 */
 class TWC_AmmoBox_Modern_Base: TWC_AmmoBox_Base {
-	scope = 2;
-	scopeCurator = 2;
+	scope = 1;
+	scopeCurator = 1;
 	displayName = "Base Resupply (Immobile)";
 	editorSubcategory = "TWC_Crates_Modern";
 	
@@ -131,8 +131,8 @@ class TWC_AmmoBox_Modern_Section_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_Modern_COIN_Base: TWC_AmmoBox_Base {
-	scope = 2;
-	scopeCurator = 2;
+	scope = 1;
+	scopeCurator = 1;
 	displayName = "COIN Base Resupply (Immobile)";
 	editorSubcategory = "TWC_Crates_Modern";
 	
@@ -260,8 +260,8 @@ class TWC_AmmoBox_Modern_COIN_Section_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_Modern_Mechanised_Base: TWC_AmmoBox_Base {
-	scope = 2;
-	scopeCurator = 2;
+	scope = 1;
+	scopeCurator = 1;
 	displayName = "Mechanised Base Resupply (Immobile)";
 	editorSubcategory = "TWC_Crates_Modern";
 	

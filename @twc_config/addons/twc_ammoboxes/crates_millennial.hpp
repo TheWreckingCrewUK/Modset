@@ -9,8 +9,8 @@
 */
 
 class TWC_AmmoBox_Millennial_Base: TWC_AmmoBox_Base {
-	scope = 2;
-	scopeCurator = 2;
+	scope = 1;
+	scopeCurator = 1;
 	displayName = "Base Resupply (Immobile)";
 	editorSubcategory = "TWC_Crates_Millennial";
 	
@@ -90,8 +90,8 @@ class TWC_AmmoBox_Millennial_Section_Portable: TWC_AmmoBox_Portable {
 };
 
 class TWC_AmmoBox_Millennial_Mechanised_Base: TWC_AmmoBox_Base {
-	scope = 2;
-	scopeCurator = 2;
+	scope = 1;
+	scopeCurator = 1;
 	displayName = "Mechanised Base Resupply (Immobile)";
 	editorSubcategory = "TWC_Crates_Millennial";
 	

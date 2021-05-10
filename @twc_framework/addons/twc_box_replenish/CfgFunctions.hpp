@@ -1,9 +1,10 @@
 class CfgFunctions {
-	class TWC_PBO_Name {
+	class TWC_Box_Replenish {
 		class functions {
-			file = "twc_pbo_name\functions";
+			file = "twc_box_replenish\functions";
 			
-			class exampleFunction {};
+			class canReplenish {};
+			class getReplenishChildren {};
 		};
 	};
 };
