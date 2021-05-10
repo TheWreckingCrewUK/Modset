@@ -23,6 +23,7 @@ class CfgPatches {
 			"TWC_AmmoBox_ColdWar_Section_Portable",
 			"TWC_AmmoBox_ColdWar_Sniper_Portable",
 			"TWC_AmmoBox_ColdWar_Blowpipe_Portable",
+			"TWC_AmmoBox_Vehicle_Toolkits",
 			"TWC_AmmoBox_Vehicle_Warrior",
 			"TWC_AmmoBox_Vehicle_Milan",
 			"TWC_AmmoBox_Vehicle_L134",
@@ -121,9 +122,9 @@ class CfgEditorSubcategories {
 
 class CfgVehicles {
 	// Time saving MACROs - NC = Non-Conflict
-	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
-	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
-	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
+	#define ADD_MAGA(a,b) class _nc_##a {magazine = a; count = b;}
+	#define ADD_WEAP(a,b) class _nc_##a {weapon = a; count = b;}
+	#define ADD_ITEM(a,b) class _nc_##a {name = a; count = b;}
 	
 	#include "crates_defines.hpp"
 	#include "crates_modern.hpp"

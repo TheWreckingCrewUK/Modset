@@ -32,7 +32,7 @@ class CfgVehicles {
 		category = "twc_missionSetup";
 		function = "twc_fnc_missionModuleInit";
 		functionPriority = 1;
-		isGlobal = 0;
+		isGlobal = 2;
 		isTriggerActivated = 0;
 		isDisposable = 0;
 

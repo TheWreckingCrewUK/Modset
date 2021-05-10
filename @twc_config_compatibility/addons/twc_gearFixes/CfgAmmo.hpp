@@ -19,7 +19,6 @@ class CfgAmmo {
 		soundHit4[] = {};
 	};
 	
-	
 	/** MAKE RPGS MORE VIBRANT :) **/
 	class RocketBase;
 	class CUP_R_57mm_HE: RocketBase {
@@ -27,7 +26,7 @@ class CfgAmmo {
 		allowAgainstInfantry = 1;
 		cost = 150;
 	};
-
+	
 	class CUP_R_M72A6_AT: RocketBase {
 		aiAmmoUsageFlags = "64 + 128 + 256 + 512";
 		allowAgainstInfantry = 1;
@@ -36,16 +35,16 @@ class CfgAmmo {
 	
 	class B_30mm_APFSDS_Tracer_Red;
 	class B_30mm_HE_Tracer_Red;
-
+	
 	class TWC_Ammo_30mm_APDS: B_30mm_APFSDS_Tracer_Red {
 		hit = 200;
 		calliber = 7;
 		typicalSpeed = 1100;
 	};
-
+	
 	class TWC_Ammo_30mm_HET: B_30mm_HE_Tracer_Red {
 		typicalSpeed = 1000;
-};
+	};
 	
 	class CUP_R_OG7_AT: RocketBase {
 		soundFly[] = {"A3\Sounds_F\arsenal\weapons_static\Missile_Launcher\rocket_fly",3,0.7,500};
@@ -160,29 +159,7 @@ class CfgAmmo {
 	};
 	
 	class BulletBase;
-	
-	class USAF_PGU_25_HEI: BulletBase
-	{
-		SoundSetExplosion[] = {"Shell19mm25mm_Exp_SoundSet"};
-	};
-	class USAF_40mm_HE: BulletBase
-	{
-		SoundSetExplosion[] = {"Shell30mm40mm_Exp_SoundSet","Explosion_Debris_SoundSet"};
-	};
-	class USAF_40mm_SABOT: USAF_40mm_HE
-	{
-		SoundSetExplosion[] = {"Shell30mm40mm_Exp_SoundSet","Explosion_Debris_SoundSet"};
-	};
-	class USAF_105_HEPD: BulletBase
-	{
-		SoundSetExplosion[] = {"Shell105mm130mm_Exp_SoundSet","Shell155mm_Tail_SoundSet","Explosion_Debris_SoundSet"};
-	};
-	class USAF_105_SABOT: USAF_105_HEPD
-	{
-		SoundSetExplosion[] = {"Shell105mm130mm_Exp_SoundSet","Shell155mm_Tail_SoundSet","Explosion_Debris_SoundSet"};
-	};
-	class CUP_B_23mm_AA: BulletBase
-	{
+	class CUP_B_23mm_AA: BulletBase {
 		model = "z\ace\addons\tracers\ace_TracerGreen2.p3d";
 		timeToLive = 30;
 	};
@@ -228,6 +205,7 @@ class CfgAmmo {
 			hitWater = "ImpactEffectsWater";
 		};
 	};
+	
 	class B_762x51_Ball: BulletBase {
 		class CamShakePlayerFire {
 			distance = 1;
@@ -235,31 +213,11 @@ class CfgAmmo {
 			frequency = 10;
 			power = 5;
 		};
+		
 		ACE_muzzleVelocityVariationSD = 1;
-		class HitEffects {
-			Hit_Foliage_green = "ImpactLeavesGreen";
-			Hit_Foliage_Dead = "ImpactLeavesDead";
-			Hit_Foliage_Green_big = "ImpactLeavesGreenBig";
-			Hit_Foliage_Palm = "ImpactLeavesPalm";
-			Hit_Foliage_Pine = "ImpactLeavesPine";
-			hitFoliage = "ImpactLeaves";
-			hitGlass = "ImpactGlass";
-			hitGlassArmored = "twc_762_hiteffect_grey";
-			hitWood = "twc_762_hiteffect_grey";
-			hitMetal = "twc_762_hiteffect_grey";
-			hitMetalPlate = "twc_762_hiteffect_grey";
-			hitBuilding = "twc_762_hiteffect_grey";
-			hitPlastic = "twc_762_hiteffect_grey";
-			hitRubber = "twc_762_hiteffect_grey";
-			hitConcrete = "twc_762_hiteffect_grey";
-			hitGroundSoft = "twc_762_hiteffect_grey";
-			hitGroundHard = "twc_762_hiteffect_grey";
-			hitWater = "ImpactEffectsWater";
-		};
 	};
 	
-	class B_556x45_Ball:BulletBase
-	{
+	class B_556x45_Ball:BulletBase {
 		ACE_barrelLengths[] = {152,254,354,391.16,419.1,449.58,480.06,508,635};
 		ACE_muzzleVelocities[] = {595,758.6,855.8,878,892,906,915,922,981.7};
 	};
@@ -282,7 +240,6 @@ class CfgAmmo {
 		ACE_muzzleVelocities[] = {595,758.6,855.8,878,892,906,915,922,981.7};
 	};
 	
-	
 	class UK3CB_BAF_762_Ball_L42A1_Tracer_Red: B_762x51_Ball {
 		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
 	};
@@ -302,5 +259,4 @@ class CfgAmmo {
 	class UK3CB_BAF_762_Ball_Tracer_Red: B_762x51_Tracer_Red {
 		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
 	};
-	
 };

@@ -5,10 +5,9 @@ class CfgFunctions {
 			
 			/** INIT **/
 			class clientPreInit {};
-			
-			/** EVENT HANDLERS **/
-			class serverEventHandlers {};
-			class clientEventHandlers {};
+			class clientPostInit {};
+			class serverPostInit {};
+			class initNightGear {};
 			
 			/** MISC FUNCTIONALITY **/
 			class soundLoop {};
@@ -30,7 +29,6 @@ class CfgFunctions {
 			class getPlayer {};
 			class addItem {};
 			class revealPlayer {};
-			class initNightGear {};
 			class findAdmin {};
 			class getPlayersWithinRange {};
 			

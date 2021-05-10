@@ -46,6 +46,11 @@ class CfgDeathScreens {
 		text = "was turned into a colander";
 	};
 	
+	class broadcast_mode: instant_death {
+		sound = "twc_broadcast_mode";
+		fadeOut = 95;
+	};
+	
 	class overdose {
 		text = "died via overdose";
 		sound = "twc_overdose";

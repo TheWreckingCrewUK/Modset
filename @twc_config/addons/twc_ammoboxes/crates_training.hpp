@@ -10,22 +10,22 @@ class TWC_AmmoBox_Training_Medical_Base: TWC_AmmoBox_Base {
 	editorSubcategory = "TWC_Training";
 	
 	class TransportItems {
-		item_nc(ACE_fieldDressing, 100);
-		item_nc(ACE_elasticBandage, 100);
-		item_nc(ACE_quikclot, 100);
-		item_nc(ACE_packingBandage, 100);
+		ADD_ITEM(ACE_fieldDressing, 100);
+		ADD_ITEM(ACE_elasticBandage, 100);
+		ADD_ITEM(ACE_quikclot, 100);
+		ADD_ITEM(ACE_packingBandage, 100);
 		
-		item_nc(ACE_atropine, 25);
-		item_nc(ACE_adenosine, 25);
-		item_nc(ACE_morphine, 25);
-		item_nc(ACE_epinephrine, 25);
+		ADD_ITEM(ACE_atropine, 25);
+		ADD_ITEM(ACE_adenosine, 25);
+		ADD_ITEM(ACE_morphine, 25);
+		ADD_ITEM(ACE_epinephrine, 25);
 		
-		item_nc(ACE_salineIV_500, 50);
-		item_nc(ACE_salineIV_250, 25);
-		item_nc(ACE_tourniquet, 50);
-		item_nc(ACE_bodyBag, 50);
+		ADD_ITEM(ACE_salineIV_500, 50);
+		ADD_ITEM(ACE_salineIV_250, 25);
+		ADD_ITEM(ACE_tourniquet, 50);
+		ADD_ITEM(ACE_bodyBag, 50);
 		
-		item_nc(ACE_personalAidKit, 25);
-		item_nc(TWC_Item_Medical_SutureKit_25, 25);
+		ADD_ITEM(ACE_personalAidKit, 25);
+		ADD_ITEM(TWC_Item_Medical_SutureKit_25, 25);
 	};
 };

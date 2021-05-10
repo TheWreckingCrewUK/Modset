@@ -11,6 +11,7 @@ class TWC_Backpack_WW2_UK_Airborne_Dismounted_Grenadier: B_LIB_UK_HSack_Blanco_T
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 110;
 	class TransportMagazines {
 		ADD_MAGA(LIB_10Rnd_770x56,12);
 		ADD_MAGA(LIB_1Rnd_G_MillsBomb,8);
@@ -36,6 +37,7 @@ class TWC_Backpack_WW2_UK_Airborne_Dismounted_MGASS: B_LIB_UK_HSack_Blanco_Tea
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 110;
 	class TransportMagazines {
 		ADD_MAGA(LIB_30Rnd_770x56,12);
 	};
@@ -60,6 +62,7 @@ class TWC_Backpack_WW2_UK_Airborne_Dismounted_2iC: B_LIB_UK_HSack_Blanco_Tea
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 200;
 	class TransportMagazines {
 		ADD_MAGA(LIB_10Rnd_770x56,20);
 		ADD_MAGA(LIB_30Rnd_770x56,10);
@@ -112,6 +115,7 @@ class TWC_Backpack_WW2_UK_Airborne_Dismounted_Platoon_Medic: B_LIB_SOV_RA_Medica
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 180;
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing,20);
 		ADD_ITEM(ACE_morphine,10);
