@@ -48,6 +48,9 @@ class TWC_AmmoBox_Other_L134_Portable: TWC_AmmoBox_Portable {
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_32Rnd_40mm_G_Box, 3);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
 
 class TWC_AmmoBox_Other_L111_Portable: TWC_AmmoBox_Portable {
@@ -58,6 +61,9 @@ class TWC_AmmoBox_Other_L111_Portable: TWC_AmmoBox_Portable {
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_127_100Rnd, 3);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
 
 class TWC_AmmoBox_Other_L7A2_Portable: TWC_AmmoBox_Portable {
@@ -69,6 +75,9 @@ class TWC_AmmoBox_Other_L7A2_Portable: TWC_AmmoBox_Portable {
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 2);
 		ADD_MAGA(UK3CB_BAF_762_100Rnd, 10);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
 
 class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
@@ -82,6 +91,9 @@ class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
 		ADD_MAGA(ukcw_l14A1_ILLUM, 2);
 		ADD_MAGA(ukcw_l14A1_SMOKE, 2);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "launcher";
 };
 
 class TWC_AmmoBox_Other_MILAN_Portable: TWC_AmmoBox_Launcher_Portable {
@@ -92,6 +104,9 @@ class TWC_AmmoBox_Other_MILAN_Portable: TWC_AmmoBox_Launcher_Portable {
 	class TransportMagazines {
 		ADD_MAGA(ukcw_milan_ace_missile, 6);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "launcher";
 };
 
 class TWC_AmmoBox_Other_L16_Portable: TWC_AmmoBox_Portable {
@@ -105,6 +120,9 @@ class TWC_AmmoBox_Other_L16_Portable: TWC_AmmoBox_Portable {
 		ADD_MAGA(UK3CB_BAF_1Rnd_81mm_Mo_Flare_White, 2);
 		ADD_MAGA(UK3CB_BAF_1Rnd_81mm_Mo_IRFlare_White, 2);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable: TWC_AmmoBox_Portable {
@@ -117,6 +135,9 @@ class TWC_AmmoBox_Other_L118_Portable: TWC_AmmoBox_Portable {
 		ADD_MAGA(TWC_Magazine_105mm_1rnd_Smoke_White, 6);
 		ADD_MAGA(TWC_Magazine_105mm_1rnd_Illum, 4);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_HE: TWC_AmmoBox_Portable {
@@ -127,6 +148,9 @@ class TWC_AmmoBox_Other_L118_Portable_HE: TWC_AmmoBox_Portable {
 	class TransportMagazines {
 		ADD_MAGA(TWC_Magazine_105mm_1rnd_HE, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_HESH: TWC_AmmoBox_Portable {
@@ -137,6 +161,9 @@ class TWC_AmmoBox_Other_L118_Portable_HESH: TWC_AmmoBox_Portable {
 	class TransportMagazines {
 		ADD_MAGA(TWC_Magazine_105mm_1rnd_HESH, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_SMOKE: TWC_AmmoBox_Portable {
@@ -147,6 +174,9 @@ class TWC_AmmoBox_Other_L118_Portable_SMOKE: TWC_AmmoBox_Portable {
 	class TransportMagazines {
 		ADD_MAGA(TWC_Magazine_105mm_1rnd_Smoke_White, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_SMOKE_RED: TWC_AmmoBox_Portable {
@@ -157,6 +187,9 @@ class TWC_AmmoBox_Other_L118_Portable_SMOKE_RED: TWC_AmmoBox_Portable {
 	class TransportMagazines {
 		ADD_MAGA(TWC_Magazine_105mm_1rnd_Smoke_Red, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_SMOKE_ORANGE: TWC_AmmoBox_Portable {
@@ -167,6 +200,9 @@ class TWC_AmmoBox_Other_L118_Portable_SMOKE_ORANGE: TWC_AmmoBox_Portable {
 	class TransportMagazines {
 		ADD_MAGA(TWC_Magazine_105mm_1rnd_Smoke_Orange, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_ILLUM: TWC_AmmoBox_Portable {
@@ -177,6 +213,9 @@ class TWC_AmmoBox_Other_L118_Portable_ILLUM: TWC_AmmoBox_Portable {
 	class TransportMagazines {
 		ADD_MAGA(TWC_Magazine_105mm_1rnd_Illum, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_ILLUM_IR: TWC_AmmoBox_Portable {
@@ -187,6 +226,9 @@ class TWC_AmmoBox_Other_L118_Portable_ILLUM_IR: TWC_AmmoBox_Portable {
 	class TransportMagazines {
 		ADD_MAGA(TWC_Magazine_105mm_1rnd_Illum_IR, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_Stinger_Portable: TWC_AmmoBox_Portable {
@@ -197,6 +239,9 @@ class TWC_AmmoBox_Other_Stinger_Portable: TWC_AmmoBox_Portable {
 	class TransportMagazines {
 		ADD_MAGA(CUP_Stinger_M, 5);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "launcher";
 };
 
 class TWC_AmmoBox_Other_Command_Portable: TWC_AmmoBox_Portable {
@@ -208,6 +253,9 @@ class TWC_AmmoBox_Other_Command_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACRE_PRC117F, 4);
 		ADD_ITEM(Binocular, 4);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
 
 class TWC_AmmoBox_Engineer_Portable: TWC_AmmoBox_Portable {
@@ -223,6 +271,9 @@ class TWC_AmmoBox_Engineer_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(SatchelCharge_Remote_Mag, 2);
 		ADD_ITEM(ACE_Sandbag_empty, 200);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
 
 class TWC_AmmoBox_Other_Sergeant_Utility: TWC_AmmoBox_Portable {
@@ -238,6 +289,9 @@ class TWC_AmmoBox_Other_Sergeant_Utility: TWC_AmmoBox_Portable {
 		ADD_ITEM(SmokeShellYellow,6);
 		ADD_ITEM(SmokeShellGreen,6);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
 
 class TWC_AmmoBox_Other_Replenish: TWC_AmmoBox_Base {

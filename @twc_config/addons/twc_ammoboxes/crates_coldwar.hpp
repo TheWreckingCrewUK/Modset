@@ -156,13 +156,12 @@ class TWC_AmmoBox_ColdWar_Sniper_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_tourniquet, 2);
 	};
 	
-	// TODO: Waiting on UKCW to release L33 3nfi3ld Sn1p0r
 	class TransportMagazines {
 		ADD_MAGA(SP_10Rnd_762_L42, 6);
 	};
 };
 
-class TWC_AmmoBox_ColdWar_Blowpipe_Portable: TWC_AmmoBox_Portable {
+class TWC_AmmoBox_ColdWar_Blowpipe_Portable: TWC_AmmoBox_Launcher_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "Blowpipe Resupply (Portable)";

@@ -395,6 +395,9 @@ class TWC_AmmoBox_Modern_Javelin_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_epinephrine, 2);
 		ADD_ITEM(ACE_tourniquet, 2);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "launcher";
 };
 
 class TWC_AmmoBox_Modern_Sniper_Portable: TWC_AmmoBox_Portable {
