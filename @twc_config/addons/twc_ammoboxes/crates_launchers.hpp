@@ -85,6 +85,7 @@ class TWC_AmmoBox_Launchers_NLAW_Portable: TWC_AmmoBox_Launcher_Portable {
 	
 	class TransportWeapons {
 		ADD_WEAP(launch_NLAW_F, 2);
+		ADD_WEAP(CUP_launch_M72A6, 1);
 	};
 };
 
