@@ -41,6 +41,7 @@ class TWC_Vehicle_Modern_Warrior_Woodland: TWC_Vehicle_FV510_W_SLAT {
 	
 	class TransportWeapons {
 		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
+		ADD_WEAP(CUP_launch_M72A6, 1);
 	};
 
 	class TransportBackpacks { };
@@ -89,7 +90,7 @@ class TWC_Vehicle_Modern_Warrior_COIN_Woodland: TWC_Vehicle_FV510_W_SLAT {
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
+		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 
 	class TransportBackpacks { };
@@ -136,6 +137,7 @@ class TWC_Vehicle_Modern_Warrior_Desert: TWC_Vehicle_FV510_D_SLAT {
 	
 	class TransportWeapons {
 		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
+		ADD_WEAP(CUP_launch_M72A6, 1);
 	};
 
 	class TransportBackpacks { };
@@ -184,7 +186,7 @@ class TWC_Vehicle_Modern_Warrior_COIN_Desert: TWC_Vehicle_FV510_D_SLAT {
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
+		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 
 	class TransportBackpacks { };
@@ -237,6 +239,7 @@ class TWC_Vehicle_Modern_Bulldog_Desert: UK3CB_BAF_FV432_Mk3_GPMG_Sand {
 	
 	class TransportWeapons {
 		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
+		ADD_WEAP(CUP_launch_M72A6, 1);
 	};
 
 	class TransportBackpacks { };
@@ -290,7 +293,7 @@ class TWC_Vehicle_Modern_Bulldog_COIN_Desert: UK3CB_BAF_FV432_Mk3_GPMG_Sand {
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
+		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 
 	class TransportBackpacks { };
@@ -343,6 +346,7 @@ class TWC_Vehicle_Modern_Bulldog_Woodland: UK3CB_BAF_FV432_Mk3_GPMG_Green {
 	
 	class TransportWeapons {
 		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
+		ADD_WEAP(CUP_launch_M72A6, 1);
 	};
 
 	class TransportBackpacks { };
@@ -396,7 +400,7 @@ class TWC_Vehicle_Modern_Bulldog_COIN_Woodland: UK3CB_BAF_FV432_Mk3_GPMG_Green {
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
+		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 
 	class TransportBackpacks { };
