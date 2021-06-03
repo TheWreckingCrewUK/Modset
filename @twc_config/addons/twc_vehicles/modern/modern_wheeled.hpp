@@ -42,9 +42,8 @@ class TWC_Vehicle_Modern_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
+	class TransportWeapons {
+		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
 	};
 
 	class TransportBackpacks { };
@@ -84,10 +83,7 @@ class TWC_Vehicle_Modern_LandRover_Desert: TWC_Vehicle_Modern_LandRover_Woodland
 		"",
 		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_base_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_hardtop_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
 	};
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
+	
 	class AnimationSources: AnimationSources {
 		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 1;
@@ -140,9 +136,7 @@ class TWC_Vehicle_Modern_LandRover_Woodland_COIN: TWC_BaseClass_LR_Soft_Base_F {
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
-	class TransportWeapons { 
-		ADD_WEAP(CUP_launch_M72A6, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 	
 	class AnimationSources: AnimationSources {
@@ -180,9 +174,7 @@ class TWC_Vehicle_Modern_LandRover_Desert_COIN: TWC_Vehicle_Modern_LandRover_Woo
 		"",
 		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_base_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_hardtop_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
 	};
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
-	};
+	
 	class AnimationSources: AnimationSources {
 		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 0;
@@ -232,9 +224,8 @@ class TWC_Vehicle_Modern_LandRoverHard_Woodland: TWC_BaseClass_LR_Hard_Base_F {
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
+	class TransportWeapons {
+		ADD_WEAP(launch_NLAW_F, ADD_QNTY(MODERN_NLAW));
 	};
 
 	class TransportBackpacks { };
@@ -274,9 +265,7 @@ class TWC_Vehicle_Modern_LandRoverHard_Desert: TWC_Vehicle_Modern_LandRoverHard_
 		"",
 		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_base_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_hardtop_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa","\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
 	};
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
-	};
+	
 	class AnimationSources: AnimationSources {
 		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 1;
@@ -329,10 +318,7 @@ class TWC_Vehicle_Modern_LandRoverHard_Woodland_COIN: TWC_Vehicle_Modern_LandRov
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 	
 	class AnimationSources: AnimationSources {
@@ -373,9 +359,7 @@ class TWC_Vehicle_Modern_LandRoverHard_Desert_COIN: TWC_Vehicle_Modern_LandRover
 		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\lr_special_baf_sand_co.paa",
 		"\uk3cb_baf_vehicles\addons\uk3cb_baf_vehicles_landrover\data\flag_unionJack.paa"
 	};
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
-	};
+	
 	class AnimationSources: AnimationSources {
 		class Mudguards_Hide: Mudguards_Hide {
 			initPhase = 0;
@@ -428,9 +412,7 @@ class TWC_Vehicle_Modern_LandRoverSnatch_Desert_COIN: TWC_BaseClass_LR_Snatch_Ba
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 	
 	class AnimationSources: AnimationSources {
@@ -516,10 +498,7 @@ class TWC_Vehicle_Modern_Mastiff_HMG_Woodland: CUP_B_Mastiff_HMG_GB_W {
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 };
 
@@ -550,10 +529,6 @@ class TWC_Vehicle_Modern_Mastiff_HMG_Woodland_COIN: TWC_Vehicle_Modern_Mastiff_H
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
-	};
-	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 };
 
@@ -600,10 +575,7 @@ class TWC_Vehicle_Modern_Mastiff_HMG_Desert: CUP_B_Mastiff_HMG_GB_D {
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 };
 
@@ -634,10 +606,6 @@ class TWC_Vehicle_Modern_Mastiff_HMG_Desert_COIN: TWC_Vehicle_Modern_Mastiff_HMG
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
-	};
-	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 };
 
@@ -684,10 +652,7 @@ class TWC_Vehicle_Modern_Mastiff_GMG_Woodland: CUP_B_Mastiff_GMG_GB_W {
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 };
 
@@ -718,10 +683,6 @@ class TWC_Vehicle_Modern_Mastiff_GMG_Woodland_COIN: TWC_Vehicle_Modern_Mastiff_G
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
-	};
-	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 };
 
@@ -768,10 +729,7 @@ class TWC_Vehicle_Modern_Mastiff_GMG_Desert: CUP_B_Mastiff_GMG_GB_D {
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 };
 
@@ -802,10 +760,6 @@ class TWC_Vehicle_Modern_Mastiff_GMG_Desert_COIN: TWC_Vehicle_Modern_Mastiff_GMG
 		
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
-	};
-	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 };
 
@@ -860,9 +814,7 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Woodland_COIN: TWC_BaseClass_LR_WMIK_
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GMG));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 	
 	class AnimationSources: AnimationSources {
@@ -917,10 +869,6 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Woodland: TWC_Vehicle_Modern_LandRove
 		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, ADD_QNTY(MODERN_GMG));
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GMG));
 	};
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
 };
 
 class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Desert_COIN: TWC_BaseClass_LR_WMIK_GMG_Sand_F {
@@ -972,9 +920,7 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Desert_COIN: TWC_BaseClass_LR_WMIK_GM
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GMG));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 	
 	class AnimationSources: AnimationSources {
@@ -1029,10 +975,6 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GMG_Desert: TWC_Vehicle_Modern_LandRoverW
 		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, ADD_QNTY(MODERN_GMG));
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GMG));
 	};
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
 };
 
 class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Woodland_COIN: TWC_BaseClass_LR_WMIK_GPMG_Green_F {
@@ -1083,9 +1025,7 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Woodland_COIN: TWC_BaseClass_LR_WMIK
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 	
 	class AnimationSources: AnimationSources {
@@ -1139,10 +1079,6 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Woodland: TWC_Vehicle_Modern_LandRov
 		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, ADD_QNTY(MODERN_GPMG));
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
 	};
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
 };
 
 class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Desert_COIN: TWC_BaseClass_LR_WMIK_GPMG_Sand_F {
@@ -1193,9 +1129,7 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Desert_COIN: TWC_BaseClass_LR_WMIK_G
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 	
 	class AnimationSources: AnimationSources {
@@ -1249,10 +1183,6 @@ class TWC_Vehicle_Modern_LandRoverWMIK_GPMG_Desert: TWC_Vehicle_Modern_LandRover
 		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, ADD_QNTY(MODERN_GPMG));
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
 	};
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
 };
 
 class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert_COIN: TWC_BaseClass_LR_WMIK_HMG_Sand_F {
@@ -1304,9 +1234,7 @@ class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert_COIN: TWC_BaseClass_LR_WMIK_HM
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_HMG));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 	
 	class AnimationSources: AnimationSources {
@@ -1361,11 +1289,6 @@ class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Desert: TWC_Vehicle_Modern_LandRoverW
 		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, ADD_QNTY(MODERN_HMG));
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_HMG));
 	};
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
-	
 };
 
 class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland_COIN: TWC_BaseClass_LR_WMIK_HMG_Green_F {
@@ -1417,9 +1340,7 @@ class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland_COIN: TWC_BaseClass_LR_WMIK_
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_HMG));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 	
 	class AnimationSources: AnimationSources {
@@ -1474,10 +1395,6 @@ class TWC_Vehicle_Modern_LandRoverWMIK_HMG_Woodland: TWC_Vehicle_Modern_LandRove
 		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, ADD_QNTY(MODERN_HMG));
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_HMG));
 	};
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
 };
 
 #undef CURRENT_VEHICLE
@@ -1528,10 +1445,7 @@ class TWC_Vehicle_Modern_Husky_GPMG_Desert: UK3CB_BAF_Husky_Passenger_GPMG_Sand 
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
 	};
 	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 };
 
@@ -1566,10 +1480,6 @@ class TWC_Vehicle_Modern_Husky_GPMG_Desert_COIN: TWC_Vehicle_Modern_Husky_GPMG_D
 		
 		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, ADD_QNTY(MODERN_GPMG));
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
-	};
-	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 };
 
@@ -1619,10 +1529,7 @@ class TWC_Vehicle_Modern_Husky_GPMG_Woodland: UK3CB_BAF_Husky_Passenger_GPMG_Gre
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
 	};
 	
-	class TransportWeapons {
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 };
 
@@ -1657,10 +1564,6 @@ class TWC_Vehicle_Modern_Husky_GPMG_Woodland_COIN: TWC_Vehicle_Modern_Husky_GPMG
 		
 		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, ADD_QNTY(MODERN_GPMG));
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MODERN_GPMG));
-	};
-	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 };
 
@@ -1709,10 +1612,7 @@ class TWC_Vehicle_Modern_Husky_GMG_Desert: UK3CB_BAF_Husky_Passenger_GMG_Sand {
 		ADD_MAGA(UK3CB_BAF_32Rnd_40mm_G_Box, ADD_QNTY(MODERN_GMG));
 	};
 	
-	class TransportWeapons { 
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 2);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 };
 
@@ -1746,10 +1646,6 @@ class TWC_Vehicle_Modern_Husky_GMG_Desert_COIN: TWC_Vehicle_Modern_Husky_GMG_Des
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 		
 		ADD_MAGA(UK3CB_BAF_32Rnd_40mm_G_Box, ADD_QNTY(MODERN_GMG));
-	};
-	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 };
 
@@ -1798,10 +1694,7 @@ class TWC_Vehicle_Modern_Husky_GMG_Woodland: UK3CB_BAF_Husky_Passenger_GMG_Green
 		ADD_MAGA(UK3CB_BAF_32Rnd_40mm_G_Box, ADD_QNTY(MODERN_GMG));
 	};
 	
-	class TransportWeapons { 
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 };
 
@@ -1835,10 +1728,6 @@ class TWC_Vehicle_Modern_Husky_GMG_Woodland_COIN: TWC_Vehicle_Modern_Husky_GMG_W
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 		
 		ADD_MAGA(UK3CB_BAF_32Rnd_40mm_G_Box, ADD_QNTY(MODERN_GMG));
-	};
-	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 };
 
@@ -1887,10 +1776,7 @@ class TWC_Vehicle_Modern_Husky_HMG_Desert: UK3CB_BAF_Husky_Passenger_HMG_Sand {
 		ADD_MAGA(UK3CB_BAF_127_100Rnd, ADD_QNTY(MODERN_HMG));
 	};
 	
-	class TransportWeapons { 
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 };
 
@@ -1924,10 +1810,6 @@ class TWC_Vehicle_Modern_Husky_HMG_Desert_COIN: TWC_Vehicle_Modern_Husky_HMG_Des
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 		
 		ADD_MAGA(UK3CB_BAF_127_100Rnd, ADD_QNTY(MODERN_HMG));
-	};
-	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 1);
 	};
 };
 
@@ -1976,10 +1858,7 @@ class TWC_Vehicle_Modern_Husky_HMG_Woodland: UK3CB_BAF_Husky_Passenger_HMG_Green
 		ADD_MAGA(UK3CB_BAF_127_100Rnd, ADD_QNTY(MODERN_HMG));
 	};
 	
-	class TransportWeapons { 
-		ADD_WEAP(CUP_launch_M72A6, 1);
-		ADD_WEAP(launch_NLAW_F, 1);
-	};
+	class TransportWeapons { };
 	class TransportBackpacks { };
 };
 
@@ -2013,9 +1892,5 @@ class TWC_Vehicle_Modern_Husky_HMG_Woodland_COIN: TWC_Vehicle_Modern_Husky_HMG_W
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, ADD_QNTY(SECTION_GRENADE));
 		
 		ADD_MAGA(UK3CB_BAF_127_100Rnd, ADD_QNTY(MODERN_HMG));
-	};
-	
-	class TransportWeapons {  
-		ADD_WEAP(CUP_launch_M72A6, 2);
 	};
 };
