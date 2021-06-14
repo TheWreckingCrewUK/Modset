@@ -24,14 +24,14 @@ class TWC_Groups_2000_COIN_##CAMO \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_##CAMO##_Marksman; \
+			vehicle = TWC_Infantry_2000_COIN_##CAMO##_Autorifleman; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_##CAMO##_Autorifleman; \
+			vehicle = TWC_Infantry_2000_COIN_##CAMO##_Marksman; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
@@ -52,14 +52,14 @@ class TWC_Groups_2000_COIN_##CAMO \
 		class Unit6 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_##CAMO##_Marksman; \
+			vehicle = TWC_Infantry_2000_COIN_##CAMO##_Autorifleman; \
 			rank = "PRIVATE"; \
 			position[] = {12,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_##CAMO##_Autorifleman; \
+			vehicle = TWC_Infantry_2000_COIN_##CAMO##_Marksman; \
 			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \
