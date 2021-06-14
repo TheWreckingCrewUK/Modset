@@ -123,14 +123,14 @@ class TWC_Infantry_2000_Regular_Woodland_Grenadier: TWC_Infantry_2000_Regular_Wo
 	};
 	weapons[]=
 	{
-		"TWC_Weapon_L85A2_UGL_SUSAT3D",
+		"TWC_Weapon_L85A2_UGL_HWS_SUSAT3D",
 		"CUP_launch_M72A6",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[]=
 	{
-		"TWC_Weapon_L85A2_UGL_SUSAT3D",
+		"TWC_Weapon_L85A2_UGL_HWS_SUSAT3D",
 		"CUP_launch_M72A6",
 		"Throw",
 		"Put"
