@@ -71,14 +71,14 @@ class TWC_Infantry_2000_COIN_Tropic_Grenadier: TWC_Infantry_2000_Regular_Tropic_
 	};
 		weapons[]=
 	{
-		"TWC_Weapon_L85A2_UGL_SUSAT3D",
+		"TWC_Weapon_L85A2_UGL_HWS_SUSAT3D",
 		"ACE_VMH3",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"TWC_Weapon_L85A2_UGL_SUSAT3D",
+		"TWC_Weapon_L85A2_UGL_HWS_SUSAT3D",
 		"ACE_VMH3",
 		"Throw",
 		"Put"
