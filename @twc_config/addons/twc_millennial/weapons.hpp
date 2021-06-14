@@ -2,7 +2,7 @@ class UK3CB_BAF_L85A2;
 class UK3CB_BAF_L86A2;
 class UK3CB_BAF_SUSAT_3D;
 class UK3CB_BAF_L135A1;
-class UK3CB_BAF_L85A2_UGL;
+class UK3CB_BAF_L85A2_UGL_HWS;
 class UK3CB_BAF_L110A2RIS;
 
 class TWC_Weapon_L86A1: UK3CB_BAF_L86A2 {
@@ -74,7 +74,7 @@ class TWC_Weapon_L135A1: UK3CB_BAF_L135A1
 		};
 	};	
 };
-class TWC_Weapon_L85A2_UGL_SUSAT3D: UK3CB_BAF_L85A2_UGL {
+class TWC_Weapon_L85A2_UGL_HWS_SUSAT3D: UK3CB_BAF_L85A2_UGL_HWS {
 	scope = 1;
 	class LinkedItems {
 		class LinkedItemsOptic {
