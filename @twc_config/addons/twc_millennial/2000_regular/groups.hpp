@@ -64,9 +64,9 @@ class TWC_Groups_2000_Regular_##CAMO \
 			position[] = {14,0,0}; \
 		}; \
 	}; \
-	class Section_Armoured \
+	class Section_Mechanised \
 	{ \
-		name = "Section (Armoured Infantry)"; \
+		name = "Section (Mechanised Infantry)"; \
 		faction = "TWC_Millennial"; \
 		side = 1; \
 		class Unit0 \
@@ -132,81 +132,6 @@ class TWC_Groups_2000_Regular_##CAMO \
 			rank = "PRIVATE"; \
 			position[] = {16,0,0}; \
 		}; \
-	}; \
-		class Section_Mechanised \
-	{ \
-		name = "Section (Mechanised"; \
-		faction = "TWC_Millennial"; \
-		side = 1; \
-		class Unit0 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_SectionCommander; \
-			rank = "SERGEANT"; \
-			position[] = {0,0,0}; \
-		}; \
-		class Unit1 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Grenadier; \
-			rank = "PRIVATE"; \
-			position[] = {2,0,0}; \
-		}; \
-		class Unit2 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Autorifleman; \
-			rank = "PRIVATE"; \
-			position[] = {4,0,0}; \
-		}; \
-		class Unit3 \
-				{ \
-			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Marksman; \
-			rank = "PRIVATE"; \
-			position[] = {6,0,0}; \
-		}; \
-		class Unit4 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_2iC; \
-			rank = "CORPORAL"; \
-			position[] = {8,0,0}; \
-		}; \
-		class Unit5 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Grenadier; \
-			rank = "PRIVATE"; \
-			position[] = {10,0,0}; \
-		}; \
-		class Unit6 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Autorifleman; \
-			rank = "PRIVATE"; \
-			position[] = {12,0,0}; \
-		}; \
-		class Unit7 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Marksman; \
-			rank = "PRIVATE"; \
-			position[] = {14,0,0}; \
-		}; \
-		class Unit8 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Vehicle_Commander; \
-			rank = "CORPORAL"; \
-			position[] = {16,0,0}; \
-		}; \
-		class Unit9 \
-		{ \
-			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Vehicle_Crew; \
-			rank = "PRIVATE"; \
-			position[] = {18,0,0}; \
 	}; \
 	class Platoon_Command \
 	{ \
