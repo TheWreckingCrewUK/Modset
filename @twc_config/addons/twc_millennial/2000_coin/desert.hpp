@@ -27,34 +27,6 @@ class TWC_Infantry_2000_COIN_Desert_Marksman: TWC_Infantry_2000_Regular_Desert_M
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
 	};
-	weapons[]=
-	{
-		"TWC_Weapon_L86A2_SUSAT3D",
-		"UK3CB_BAF_AT4_CS_AT_Launcher",
-		"Throw",
-		"Put"
-	};
-	respawnweapons[]=
-	{
-		"TWC_Weapon_L86A2_SUSAT3D",
-		"UK3CB_BAF_AT4_CS_AT_Launcher",
-		"Throw",
-		"Put"
-	};
-	magazines[] =
-	{
-		MAG_4("UK3CB_BAF_556_30Rnd"),
-		MAG_3("UK3CB_BAF_556_30Rnd_T"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SmokeShell"
-	};
-	respawnmagazines[] =
-	{
-		MAG_4("UK3CB_BAF_556_30Rnd"),
-		MAG_3("UK3CB_BAF_556_30Rnd_T"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SmokeShell"
-	};
 };
 class TWC_Infantry_2000_COIN_Desert_Grenadier: TWC_Infantry_2000_Regular_Desert_Grenadier
 {
@@ -68,51 +40,6 @@ class TWC_Infantry_2000_COIN_Desert_Grenadier: TWC_Infantry_2000_Regular_Desert_
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
-	};
-		weapons[]=
-	{
-		"TWC_Weapon_L85A2_UGL_HWS_SUSAT3D",
-		"ACE_VMH3",
-		"Throw",
-		"Put"
-	};
-	respawnweapons[] =
-	{
-		"TWC_Weapon_L85A2_UGL_HWS_SUSAT3D",
-		"ACE_VMH3",
-		"Throw",
-		"Put"
-	};
-	magazines[] =
-	{
-		MAG_7("UK3CB_BAF_556_30Rnd"),
-		MAG_10("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
-		MAG_4("1Rnd_Smoke_Grenade_shell"),
-		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
-		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
-		MAG_2("1Rnd_SmokeBlue_Grenade_shell"),
-		MAG_2("UK3CB_BAF_9_17Rnd"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		MAG_2("SmokeShell")
-	};
-	respawnmagazines[] =
-	{
-		MAG_7("UK3CB_BAF_556_30Rnd"),
-		MAG_10("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
-		MAG_4("1Rnd_Smoke_Grenade_shell"),
-		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
-		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
-		MAG_2("1Rnd_SmokeBlue_Grenade_shell"),
-		MAG_2("UK3CB_BAF_9_17Rnd"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		MAG_2("SmokeShell")
-	};
-	
-	nightItems[] = {
-		"ACE_Flashlight_MX991",
-		"UGL_FlareWhite_F",
-		"UGL_FlareWhite_F",
-		"UGL_FlareWhite_F"
 	};
 };
 class TWC_Infantry_2000_COIN_Desert_Autorifleman: TWC_Infantry_2000_Regular_Desert_Autorifleman
