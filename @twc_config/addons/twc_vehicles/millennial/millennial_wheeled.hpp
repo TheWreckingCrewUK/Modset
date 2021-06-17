@@ -1,5 +1,5 @@
 #undef CURRENT_VEHICLE
-#define CURRENT_VEHICLE MILLENNIAL_LANDROVER_MOD
+#define CURRENT_VEHICLE 1990_LANDROVER_MOD
 class TWC_Vehicle_1990_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 	scope = 2;
 	scopeCurator = 2;
@@ -59,7 +59,7 @@ class TWC_Vehicle_1990_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 	};
 };
 
-class TWC_Vehicle_1990_LandRover_Desert: TWC_Vehicle_Millennial_LandRover_Woodland {
+class TWC_Vehicle_1990_LandRover_Desert: TWC_Vehicle_1990_LandRover_Woodland {
 	displayname = "1990s Land Rover (Desert)";
 
 	hiddenSelectionsTextures[] = {
@@ -477,6 +477,10 @@ class TWC_Vehicle_1990_LandRoverWMIK_GPMG_Desert: TWC_BaseClass_LR_WMIK_GPMG_San
 	
 	class TransportBackpacks { };
 };
+
+#undef CURRENT_VEHICLE
+#define CURRENT_VEHICLE 2000_LANDROVER_MOD
+
 class TWC_Vehicle_2000_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 	scope = 2;
 	scopeCurator = 2;
@@ -498,27 +502,27 @@ class TWC_Vehicle_2000_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 	
 	class TransportMagazines {
 		// L85/L86 Stanag
-		maga_nc(UK3CB_BAF_556_30Rnd, 20);
-		maga_nc(UK3CB_BAF_556_30Rnd_T, 6);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, 20);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, 6);
 		
 		// FN Minimi AR
-		maga_nc(UK3CB_BAF_556_200Rnd, 6);
-		maga_nc(UK3CB_BAF_556_200Rnd_T, 2);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, 2);
 		
 		// UGL 40mm
-		maga_nc(1Rnd_HE_Grenade_shell, 8);
-		maga_nc(UGL_FlareWhite_F, 2);
-		maga_nc(1Rnd_Smoke_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeGreen_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeRed_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeBlue_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
+		ADD_MAGA(UGL_FlareWhite_F, 2);
+		ADD_MAGA(1Rnd_Smoke_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 2);
 		
 		// Smoke Grenades
-		maga_nc(SmokeShell, 8);
-		maga_nc(SmokeShellRed, 2);
-		maga_nc(SmokeShellGreen, 2);
-		maga_nc(SmokeShellBlue, 2);
-		maga_nc(SmokeShellYellow, 2);
+		ADD_MAGA(SmokeShell, 8);
+		ADD_MAGA(SmokeShellRed, 2);
+		ADD_MAGA(SmokeShellGreen, 2);
+		ADD_MAGA(SmokeShellBlue, 2);
+		ADD_MAGA(SmokeShellYellow, 2);
 	};
 	
 	class TransportWeapons {
@@ -554,7 +558,7 @@ class TWC_Vehicle_2000_LandRover_Woodland: TWC_BaseClass_LR_Soft_Base_F {
 	};
 };
 
-class TWC_Vehicle_2000_LandRover_Desert: TWC_Vehicle_Millennial_LandRover_Woodland {
+class TWC_Vehicle_2000_LandRover_Desert: TWC_Vehicle_2000_LandRover_Woodland {
 	displayname = "2000s Land Rover (Desert)";
 
 	hiddenSelectionsTextures[] = {
@@ -591,31 +595,31 @@ class TWC_Vehicle_2000_LandRover_Woodland_COIN: TWC_BaseClass_LR_Soft_Base_F {
 	
 	class TransportMagazines {
 		// L85/L86 Stanag
-		maga_nc(UK3CB_BAF_556_30Rnd, 20);
-		maga_nc(UK3CB_BAF_556_30Rnd_T, 6);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, 20);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, 6);
 		
 		// FN Minimi AR
-		maga_nc(UK3CB_BAF_556_200Rnd, 6);
-		maga_nc(UK3CB_BAF_556_200Rnd_T, 2);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, 2);
 		
 		// UGL 40mm
-		maga_nc(1Rnd_HE_Grenade_shell, 8);
-		maga_nc(UGL_FlareWhite_F, 2);
-		maga_nc(1Rnd_Smoke_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeGreen_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeRed_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeBlue_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
+		ADD_MAGA(UGL_FlareWhite_F, 2);
+		ADD_MAGA(1Rnd_Smoke_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 2);
 		
 		// Smoke Grenades
-		maga_nc(SmokeShell, 8);
-		maga_nc(SmokeShellRed, 2);
-		maga_nc(SmokeShellGreen, 2);
-		maga_nc(SmokeShellBlue, 2);
-		maga_nc(SmokeShellYellow, 2);
+		ADD_MAGA(SmokeShell, 8);
+		ADD_MAGA(SmokeShellRed, 2);
+		ADD_MAGA(SmokeShellGreen, 2);
+		ADD_MAGA(SmokeShellBlue, 2);
+		ADD_MAGA(SmokeShellYellow, 2);
 	};
 	
 	class TransportWeapons {
-	weap_nc(UK3CB_BAF_AT4_CS_AP_Launcher, 2);
+		ADD_WEAP(UK3CB_BAF_AT4_CS_AP_Launcher, 2);
 	};
 	class TransportBackpacks { };
 	
@@ -683,27 +687,27 @@ class TWC_Vehicle_2000_LandRoverHard_Woodland: TWC_BaseClass_LR_Hard_Base_F {
 	
 	class TransportMagazines {
 		// L85/L86 Stanag
-		maga_nc(UK3CB_BAF_556_30Rnd, 20);
-		maga_nc(UK3CB_BAF_556_30Rnd_T, 6);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, 20);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, 6);
 		
 		// FN Minimi AR
-		maga_nc(UK3CB_BAF_556_200Rnd, 6);
-		maga_nc(UK3CB_BAF_556_200Rnd_T, 2);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, 2);
 		
 		// UGL 40mm
-		maga_nc(1Rnd_HE_Grenade_shell, 8);
-		maga_nc(UGL_FlareWhite_F, 2);
-		maga_nc(1Rnd_Smoke_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeGreen_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeRed_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeBlue_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
+		ADD_MAGA(UGL_FlareWhite_F, 2);
+		ADD_MAGA(1Rnd_Smoke_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 2);
 		
 		// Smoke Grenades
-		maga_nc(SmokeShell, 8);
-		maga_nc(SmokeShellRed, 2);
-		maga_nc(SmokeShellGreen, 2);
-		maga_nc(SmokeShellBlue, 2);
-		maga_nc(SmokeShellYellow, 2);
+		ADD_MAGA(SmokeShell, 8);
+		ADD_MAGA(SmokeShellRed, 2);
+		ADD_MAGA(SmokeShellGreen, 2);
+		ADD_MAGA(SmokeShellBlue, 2);
+		ADD_MAGA(SmokeShellYellow, 2);
 	};
 	
 	class TransportWeapons {
@@ -776,27 +780,27 @@ class TWC_Vehicle_2000_LandRoverHard_Woodland_COIN: TWC_BaseClass_LR_Hard_Base_F
 	
 	class TransportMagazines {
 		// L85/L86 Stanag
-		maga_nc(UK3CB_BAF_556_30Rnd, 20);
-		maga_nc(UK3CB_BAF_556_30Rnd_T, 6);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, 20);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, 6);
 		
 		// FN Minimi AR
-		maga_nc(UK3CB_BAF_556_200Rnd, 6);
-		maga_nc(UK3CB_BAF_556_200Rnd_T, 2);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, 2);
 		
 		// UGL 40mm
-		maga_nc(1Rnd_HE_Grenade_shell, 8);
-		maga_nc(UGL_FlareWhite_F, 2);
-		maga_nc(1Rnd_Smoke_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeGreen_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeRed_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeBlue_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
+		ADD_MAGA(UGL_FlareWhite_F, 2);
+		ADD_MAGA(1Rnd_Smoke_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 2);
 		
 		// Smoke Grenades
-		maga_nc(SmokeShell, 8);
-		maga_nc(SmokeShellRed, 2);
-		maga_nc(SmokeShellGreen, 2);
-		maga_nc(SmokeShellBlue, 2);
-		maga_nc(SmokeShellYellow, 2);
+		ADD_MAGA(SmokeShell, 8);
+		ADD_MAGA(SmokeShellRed, 2);
+		ADD_MAGA(SmokeShellGreen, 2);
+		ADD_MAGA(SmokeShellBlue, 2);
+		ADD_MAGA(SmokeShellYellow, 2);
 	};
 	
 	class TransportWeapons { };
@@ -866,27 +870,27 @@ class TWC_Vehicle_2000s_LandRoverSnatch_Desert_COIN: TWC_BaseClass_LR_Snatch_Des
 	
 	class TransportMagazines {
 		// L85/L86 Stanag
-		maga_nc(UK3CB_BAF_556_30Rnd, 20);
-		maga_nc(UK3CB_BAF_556_30Rnd_T, 6);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, 20);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, 6);
 		
 		// FN Minimi AR
-		maga_nc(UK3CB_BAF_556_200Rnd, 6);
-		maga_nc(UK3CB_BAF_556_200Rnd_T, 2);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, 2);
 		
 		// UGL 40mm
-		maga_nc(1Rnd_HE_Grenade_shell, 8);
-		maga_nc(UGL_FlareWhite_F, 2);
-		maga_nc(1Rnd_Smoke_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeGreen_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeRed_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeBlue_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
+		ADD_MAGA(UGL_FlareWhite_F, 2);
+		ADD_MAGA(1Rnd_Smoke_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 2);
 		
 		// Smoke Grenades
-		maga_nc(SmokeShell, 8);
-		maga_nc(SmokeShellRed, 2);
-		maga_nc(SmokeShellGreen, 2);
-		maga_nc(SmokeShellBlue, 2);
-		maga_nc(SmokeShellYellow, 2);
+		ADD_MAGA(SmokeShell, 8);
+		ADD_MAGA(SmokeShellRed, 2);
+		ADD_MAGA(SmokeShellGreen, 2);
+		ADD_MAGA(SmokeShellBlue, 2);
+		ADD_MAGA(SmokeShellYellow, 2);
 	};
 	
 	class TransportWeapons { };
@@ -940,27 +944,27 @@ class TWC_Vehicle_2000_LandRoverWMIK_GPMG_Woodland: TWC_BaseClass_LR_WMIK_GPMG_G
 	
 	class TransportMagazines {
 		// L85/L86 Stanag
-		maga_nc(UK3CB_BAF_556_30Rnd, 20);
-		maga_nc(UK3CB_BAF_556_30Rnd_T, 6);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, 20);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, 6);
 		
 		// FN Minimi AR
-		maga_nc(UK3CB_BAF_556_200Rnd, 6);
-		maga_nc(UK3CB_BAF_556_200Rnd_T, 2);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, 2);
 		
 		// UGL 40mm
-		maga_nc(1Rnd_HE_Grenade_shell, 8);
-		maga_nc(UGL_FlareWhite_F, 2);
-		maga_nc(1Rnd_Smoke_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeGreen_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeRed_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeBlue_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
+		ADD_MAGA(UGL_FlareWhite_F, 2);
+		ADD_MAGA(1Rnd_Smoke_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 2);
 		
 		// Smoke Grenades
-		maga_nc(SmokeShell, 8);
-		maga_nc(SmokeShellRed, 2);
-		maga_nc(SmokeShellGreen, 2);
-		maga_nc(SmokeShellBlue, 2);
-		maga_nc(SmokeShellYellow, 2);
+		ADD_MAGA(SmokeShell, 8);
+		ADD_MAGA(SmokeShellRed, 2);
+		ADD_MAGA(SmokeShellGreen, 2);
+		ADD_MAGA(SmokeShellBlue, 2);
+		ADD_MAGA(SmokeShellYellow, 2);
 		
 		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, ADD_QNTY(MILLENNIAL_GPMG));
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MILLENNIAL_GPMG));
@@ -994,27 +998,27 @@ class TWC_Vehicle_2000_LandRoverWMIK_GPMG_Desert: TWC_BaseClass_LR_WMIK_GPMG_San
 	
 	class TransportMagazines {
 		// L85/L86 Stanag
-		maga_nc(UK3CB_BAF_556_30Rnd, 20);
-		maga_nc(UK3CB_BAF_556_30Rnd_T, 6);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd, 20);
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T, 6);
 		
 		// FN Minimi AR
-		maga_nc(UK3CB_BAF_556_200Rnd, 6);
-		maga_nc(UK3CB_BAF_556_200Rnd_T, 2);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd, 6);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, 2);
 		
 		// UGL 40mm
-		maga_nc(1Rnd_HE_Grenade_shell, 8);
-		maga_nc(UGL_FlareWhite_F, 2);
-		maga_nc(1Rnd_Smoke_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeGreen_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeRed_Grenade_shell, 2);
-		maga_nc(1Rnd_SmokeBlue_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
+		ADD_MAGA(UGL_FlareWhite_F, 2);
+		ADD_MAGA(1Rnd_Smoke_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 2);
 		
 		// Smoke Grenades
-		maga_nc(SmokeShell, 8);
-		maga_nc(SmokeShellRed, 2);
-		maga_nc(SmokeShellGreen, 2);
-		maga_nc(SmokeShellBlue, 2);
-		maga_nc(SmokeShellYellow, 2);
+		ADD_MAGA(SmokeShell, 8);
+		ADD_MAGA(SmokeShellRed, 2);
+		ADD_MAGA(SmokeShellGreen, 2);
+		ADD_MAGA(SmokeShellBlue, 2);
+		ADD_MAGA(SmokeShellYellow, 2);
 		
 		ADD_MAGA(UK3CB_BAF_762_200Rnd_T, ADD_QNTY(MILLENNIAL_GPMG));
 		ADD_MAGA(UK3CB_BAF_762_200Rnd, ADD_QNTY(MILLENNIAL_GPMG));

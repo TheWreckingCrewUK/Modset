@@ -2,7 +2,7 @@
 //Section
 class TWC_Infantry_2000_COIN_Arctic_Rifleman: TWC_Infantry_2000_Regular_Arctic_Rifleman
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -16,7 +16,7 @@ class TWC_Infantry_2000_COIN_Arctic_Rifleman: TWC_Infantry_2000_Regular_Arctic_R
 };
 class TWC_Infantry_2000_COIN_Arctic_Marksman: TWC_Infantry_2000_Regular_Arctic_Marksman
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -58,7 +58,7 @@ class TWC_Infantry_2000_COIN_Arctic_Marksman: TWC_Infantry_2000_Regular_Arctic_M
 };
 class TWC_Infantry_2000_COIN_Arctic_Grenadier: TWC_Infantry_2000_Regular_Arctic_Grenadier
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -119,7 +119,7 @@ class TWC_Infantry_2000_COIN_Arctic_Grenadier: TWC_Infantry_2000_Regular_Arctic_
 };
 class TWC_Infantry_2000_COIN_Arctic_Autorifleman: TWC_Infantry_2000_Regular_Arctic_Autorifleman
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -133,7 +133,7 @@ class TWC_Infantry_2000_COIN_Arctic_Autorifleman: TWC_Infantry_2000_Regular_Arct
 };
 class TWC_Infantry_2000_COIN_Arctic_SectionCommander: TWC_Infantry_2000_Regular_Arctic_SectionCommander
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_SectionCommander";
 	Items[] =
 	{
@@ -150,7 +150,7 @@ class TWC_Infantry_2000_COIN_Arctic_SectionCommander: TWC_Infantry_2000_Regular_
 };
 class TWC_Infantry_2000_COIN_Arctic_2iC: TWC_Infantry_2000_Regular_Arctic_2iC
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_2iC";
 	Items[] =
 	{
@@ -169,7 +169,7 @@ class TWC_Infantry_2000_COIN_Arctic_2iC: TWC_Infantry_2000_Regular_Arctic_2iC
 //Platoon Command
 class TWC_Infantry_2000_COIN_Arctic_Platoon_Commander: TWC_Infantry_2000_Regular_Arctic_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Commander";
 	Items[] =
 	{
@@ -186,7 +186,7 @@ class TWC_Infantry_2000_COIN_Arctic_Platoon_Commander: TWC_Infantry_2000_Regular
 };
 class TWC_Infantry_2000_COIN_Arctic_Platoon_Sergeant: TWC_Infantry_2000_Regular_Arctic_Platoon_Sergeant
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Sergeant";
 	Items[] =
 	{
@@ -203,7 +203,7 @@ class TWC_Infantry_2000_COIN_Arctic_Platoon_Sergeant: TWC_Infantry_2000_Regular_
 };
 class TWC_Infantry_2000_COIN_Arctic_Platoon_Medic: TWC_Infantry_2000_Regular_Arctic_Platoon_Medic
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Medic";
 	Items[] =
 	{
@@ -218,7 +218,7 @@ class TWC_Infantry_2000_COIN_Arctic_Platoon_Medic: TWC_Infantry_2000_Regular_Arc
 };
 class TWC_Infantry_2000_COIN_Arctic_Platoon_CSM: TWC_Infantry_2000_Regular_Arctic_Platoon_CSM
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Sergeant";
 	Items[] =
 	{
@@ -237,7 +237,7 @@ class TWC_Infantry_2000_COIN_Arctic_Platoon_CSM: TWC_Infantry_2000_Regular_Arcti
 //Company
 class TWC_Infantry_2000_COIN_Arctic_Company_Commander: TWC_Infantry_2000_Regular_Arctic_Company_Commander
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Commander";
 	Items[] =
 	{
@@ -254,7 +254,7 @@ class TWC_Infantry_2000_COIN_Arctic_Company_Commander: TWC_Infantry_2000_Regular
 };
 class TWC_Infantry_2000_COIN_Arctic_Company_2iC: TWC_Infantry_2000_Regular_Arctic_Company_2iC
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Commander";
 	Items[] =
 	{
@@ -271,7 +271,7 @@ class TWC_Infantry_2000_COIN_Arctic_Company_2iC: TWC_Infantry_2000_Regular_Arcti
 };
 class TWC_Infantry_2000_COIN_Arctic_Company_Sergeant: TWC_Infantry_2000_Regular_Arctic_Company_Sergeant
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Sergeant";
 	Items[] =
 	{
@@ -287,10 +287,40 @@ class TWC_Infantry_2000_COIN_Arctic_Company_Sergeant: TWC_Infantry_2000_Regular_
 	};
 };
 
+//AT
+class TWC_Infantry_2000_COIN_Arctic_Javelin_Gunner: TWC_Infantry_2000_Regular_Arctic_Javelin_Gunner
+{
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+};
+class TWC_Infantry_2000_COIN_Arctic_Javelin_Ass: TWC_Infantry_2000_Regular_Arctic_Javelin_Ass
+{
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie")
+	};
+};
+
 //Sniper Team
 class TWC_Infantry_2000_COIN_Arctic_Sniper: TWC_Infantry_2000_Regular_Arctic_Sniper
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
 	Items[] =
 	{
@@ -311,7 +341,7 @@ class TWC_Infantry_2000_COIN_Arctic_Sniper: TWC_Infantry_2000_Regular_Arctic_Sni
 };
 class TWC_Infantry_2000_COIN_Arctic_Spotter: TWC_Infantry_2000_Regular_Arctic_Spotter
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_Spotter";
 	uniformClass = "TWC_Smock_Arctic";
 	Items[] =
@@ -333,7 +363,7 @@ class TWC_Infantry_2000_COIN_Arctic_Spotter: TWC_Infantry_2000_Regular_Arctic_Sp
 //Artillery Crew
 class TWC_Infantry_2000_COIN_Arctic_Artillery_Commander: TWC_Infantry_2000_Regular_Arctic_Artillery_Commander
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_Artillery_Commander";
 	Items[] =
 	{
@@ -350,7 +380,7 @@ class TWC_Infantry_2000_COIN_Arctic_Artillery_Commander: TWC_Infantry_2000_Regul
 };
 class TWC_Infantry_2000_COIN_Arctic_Artillery_Crew: TWC_Infantry_2000_Regular_Arctic_Artillery_Crew
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -366,7 +396,7 @@ class TWC_Infantry_2000_COIN_Arctic_Artillery_Crew: TWC_Infantry_2000_Regular_Ar
 };
 class TWC_Infantry_2000_COIN_Arctic_FO: TWC_Infantry_2000_Regular_Arctic_FO
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_FO";
 	Items[] =
 	{
@@ -385,7 +415,7 @@ class TWC_Infantry_2000_COIN_Arctic_FO: TWC_Infantry_2000_Regular_Arctic_FO
 //EOD Team
 class TWC_Infantry_2000_COIN_Arctic_EOD_Commander: TWC_Infantry_2000_Regular_Arctic_EOD_Commander
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_EOD_Commander";
 	Items[] =
 	{
@@ -406,7 +436,7 @@ class TWC_Infantry_2000_COIN_Arctic_EOD_Commander: TWC_Infantry_2000_Regular_Arc
 };
 class TWC_Infantry_2000_COIN_Arctic_EOD_Gunner: TWC_Infantry_2000_Regular_Arctic_EOD_Gunner
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -426,7 +456,7 @@ class TWC_Infantry_2000_COIN_Arctic_EOD_Gunner: TWC_Infantry_2000_Regular_Arctic
 //Aircraft
 class TWC_Infantry_2000_COIN_Arctic_FAC: TWC_Infantry_2000_Regular_Arctic_FAC
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	backpack = "TWC_Backpack_2000_COIN_Arctic_FAC";
 	Items[] =
 	{
@@ -445,7 +475,7 @@ class TWC_Infantry_2000_COIN_Arctic_FAC: TWC_Infantry_2000_Regular_Arctic_FAC
 //FVs
 class TWC_Infantry_2000_COIN_Arctic_Vehicle_Commander: TWC_Infantry_2000_Regular_Arctic_Vehicle_Commander
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -461,7 +491,7 @@ class TWC_Infantry_2000_COIN_Arctic_Vehicle_Commander: TWC_Infantry_2000_Regular
 };
 class TWC_Infantry_2000_COIN_Arctic_Vehicle_Crew: TWC_Infantry_2000_Regular_Arctic_Vehicle_Crew
 {
-	CATEGORY(TWC_Infantry_COIN_2000_Arctic)
+	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,

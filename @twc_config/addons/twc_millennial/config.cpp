@@ -12,83 +12,89 @@ class CfgPatches
 		};
 	};
 };
-class CfgEditorSubcategories {	
+class CfgEditorSubcategories {
 	//2000s
-	class TWC_Infantry_Regular_2000_Woodland {
+	class TWC_Infantry_2000_Regular_Woodland {
 		displayName = "Infantry (2000s, Woodland)";
 	};
 	
-	class TWC_Infantry_Regular_2000_Desert {
+	class TWC_Infantry_2000_Regular_Desert {
 		displayName = "Infantry (2000s, Desert)";
 	};
 	
-	class TWC_Infantry_Regular_2000_Arctic {
+	class TWC_Infantry_2000_Regular_Arctic {
 		displayName = "Infantry (2000s, Arctic)";
 	};
 	
-	class TWC_Infantry_Regular_2000_Tropic {
+	class TWC_Infantry_2000_Regular_Tropic {
 		displayName = "Infantry (2000s, Tropic)";
 	};
-	class TWC_Infantry_Regular_2000_NBC {
+	
+	class TWC_Infantry_2000_Regular_NBC {
 		displayName = "Infantry (2000s, NBC)";
 	};
 	
-	class TWC_Infantry_Dismounted_2000_Woodland {
+	class TWC_Infantry_2000_Dismounted_Woodland {
 		displayName = "Infantry (2000s, Dismounted, Woodland)";
 	};
 	
-	class TWC_Infantry_Dismounted_2000_Desert {
+	class TWC_Infantry_2000_Dismounted_Desert {
 		displayName = "Infantry (2000s, Dismounted, Desert)";
 	};
 	
-	class TWC_Infantry_Dismounted_2000_Arctic {
+	class TWC_Infantry_2000_Dismounted_Arctic {
 		displayName = "Infantry (2000s, Dismounted, Arctic)";
 	};
 	
-	class TWC_Infantry_Dismounted_2000_Tropic {
+	class TWC_Infantry_2000_Dismounted_Tropic {
 		displayName = "Infantry (2000s, Dismounted, Tropic)";
 	};
-	class TWC_Infantry_Dismounted_2000_NBC {
+	
+	class TWC_Infantry_2000_Dismounted_NBC {
 		displayName = "Infantry (2000s, Dismounted, NBC)";
 	};
-	class TWC_Infantry_COIN_2000_Woodland {
+	
+	class TWC_Infantry_2000_COIN_Woodland {
 		displayName = "Infantry (2000s, Woodland)";
 	};
 	
-	class TWC_Infantry_COIN_2000_Desert {
+	class TWC_Infantry_2000_COIN_Desert {
 		displayName = "Infantry (2000s, Desert)";
 	};
 	
-	class TWC_Infantry_COIN_2000_Arctic {
+	class TWC_Infantry_2000_COIN_Arctic {
 		displayName = "Infantry (2000s, Arctic)";
 	};
 	
-	class TWC_Infantry_COIN_2000_Tropic {
+	class TWC_Infantry_2000_COIN_Tropic {
 		displayName = "Infantry (2000s, Tropic)";
 	};
-	class TWC_Infantry_COIN_2000_NBC {
+	
+	class TWC_Infantry_2000_COIN_NBC {
 		displayName = "Infantry (2000s, NBC)";
 	};
 	
-	class TWC_Infantry_Dismounted_COIN_2000_Woodland {
+	class TWC_Infantry_2000_COIN_Dismounted_Woodland {
 		displayName = "Infantry (2000s, Dismounted, Woodland)";
 	};
 	
-	class TWC_Infantry_Dismounted_COIN_2000_Desert {
+	class TWC_Infantry_2000_COIN_Dismounted_Desert {
 		displayName = "Infantry (2000s, Dismounted, Desert)";
 	};
 	
-	class TWC_Infantry_Dismounted_COIN_2000_Arctic {
+	class TWC_Infantry_2000_COIN_Dismounted_Arctic {
 		displayName = "Infantry (2000s, Dismounted, Arctic)";
 	};
 	
-	class TWC_Infantry_Dismounted_COIN_2000_Tropic {
+	class TWC_Infantry_2000_COIN_Dismounted_Tropic {
 		displayName = "Infantry (2000s, Dismounted, Tropic)";
 	};
-	class TWC_Infantry_Dismounted_COIN_2000_NBC {
+	
+	class TWC_Infantry_2000_COIN_Dismounted_NBC {
 		displayName = "Infantry (2000s, Dismounted, NBC)";
 	};
 };
+
 class EventHandlers;
 
 class CfgWeapons
@@ -296,7 +302,7 @@ class CfgVehicles
 			MAG_2("SmokeShell")
 		};
 	};
-	class TWC_Infantry_Millennial_Tank_Crew: TWC_Infantry_1990_Tank_Commander
+	class TWC_Infantry_1990_Tank_Crew: TWC_Infantry_1990_Tank_Commander
 	{
 		displayName = "Tank Crew 1990s";
 		TWC_isCommandRole = 0;
@@ -338,13 +344,13 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"UK3CB_BAF_L22",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"UK3CB_BAF_L22",
 			"Throw",
 			"Put"
 		};
@@ -364,6 +370,7 @@ class CfgVehicles
 		displayName = "Tank Crew 2000s";
 		TWC_isCommandRole = 0;
 	};
+	
 	#include "1990_regular\woodland.hpp"
 	#include "1990_regular\woodland_dismounted.hpp"
 	#include "1990_regular\desert.hpp"

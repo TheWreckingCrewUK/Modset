@@ -2,7 +2,7 @@
 //Section
 class TWC_Infantry_2000_Regular_Desert_Rifleman: TWC_Infantry_2000_Regular_Woodland_Rifleman
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	linkedItems[] =
 	{
@@ -23,7 +23,7 @@ class TWC_Infantry_2000_Regular_Desert_Rifleman: TWC_Infantry_2000_Regular_Woodl
 };
 class TWC_Infantry_2000_Regular_Desert_Marksman: TWC_Infantry_2000_Regular_Woodland_Marksman
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	linkedItems[] =
 	{
@@ -58,7 +58,7 @@ class TWC_Infantry_2000_Regular_Desert_Marksman: TWC_Infantry_2000_Regular_Woodl
 };
 class TWC_Infantry_2000_Regular_Desert_Grenadier: TWC_Infantry_2000_Regular_Woodland_Grenadier
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	linkedItems[] =
 	{
@@ -79,7 +79,7 @@ class TWC_Infantry_2000_Regular_Desert_Grenadier: TWC_Infantry_2000_Regular_Wood
 };
 class TWC_Infantry_2000_Regular_Desert_Autorifleman: TWC_Infantry_2000_Regular_Woodland_Autorifleman
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	linkedItems[] =
 	{
@@ -100,7 +100,7 @@ class TWC_Infantry_2000_Regular_Desert_Autorifleman: TWC_Infantry_2000_Regular_W
 };
 class TWC_Infantry_2000_Regular_Desert_SectionCommander: TWC_Infantry_2000_Regular_Woodland_SectionCommander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_SectionCommander";
 	TWC_isCommandRole = 1;
@@ -123,7 +123,7 @@ class TWC_Infantry_2000_Regular_Desert_SectionCommander: TWC_Infantry_2000_Regul
 };
 class TWC_Infantry_2000_Regular_Desert_2iC: TWC_Infantry_2000_Regular_Woodland_2iC
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_2iC";
 	linkedItems[] =
@@ -147,7 +147,7 @@ class TWC_Infantry_2000_Regular_Desert_2iC: TWC_Infantry_2000_Regular_Woodland_2
 //Platoon Command
 class TWC_Infantry_2000_Regular_Desert_Platoon_Commander: TWC_Infantry_2000_Regular_Woodland_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_Platoon_Commander";
 	linkedItems[] =
@@ -169,7 +169,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_Commander: TWC_Infantry_2000_Regu
 };
 class TWC_Infantry_2000_Regular_Desert_Platoon_Sergeant: TWC_Infantry_2000_Regular_Woodland_Platoon_Sergeant
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_Platoon_Sergeant";
 	linkedItems[] =
@@ -191,7 +191,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_Sergeant: TWC_Infantry_2000_Regul
 };
 class TWC_Infantry_2000_Regular_Desert_Platoon_Medic: TWC_Infantry_2000_Regular_Woodland_Platoon_Medic
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_Platoon_Medic";
 	linkedItems[] =
@@ -213,7 +213,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_Medic: TWC_Infantry_2000_Regular_
 };
 class TWC_Infantry_2000_Regular_Desert_Platoon_CSM: TWC_Infantry_2000_Regular_Woodland_Platoon_CSM
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_Platoon_Sergeant";
 	linkedItems[] =
@@ -237,7 +237,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_CSM: TWC_Infantry_2000_Regular_Wo
 //Company
 class TWC_Infantry_2000_Regular_Desert_Company_Commander: TWC_Infantry_2000_Regular_Woodland_Company_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_Platoon_Commander";
 	linkedItems[] =
@@ -259,7 +259,7 @@ class TWC_Infantry_2000_Regular_Desert_Company_Commander: TWC_Infantry_2000_Regu
 };
 class TWC_Infantry_2000_Regular_Desert_Company_2iC: TWC_Infantry_2000_Regular_Woodland_Company_2iC
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_Platoon_Sergeant";
 	linkedItems[] =
@@ -281,7 +281,7 @@ class TWC_Infantry_2000_Regular_Desert_Company_2iC: TWC_Infantry_2000_Regular_Wo
 };
 class TWC_Infantry_2000_Regular_Desert_Company_Sergeant: TWC_Infantry_2000_Regular_Woodland_Company_Sergeant
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_Platoon_Sergeant";
 	linkedItems[] =
@@ -357,7 +357,7 @@ class TWC_Infantry_2000_Regular_Desert_Starstreak_Ass: TWC_Infantry_2000_Regular
 //Sniper Team
 class TWC_Infantry_2000_Regular_Desert_Sniper: TWC_Infantry_2000_Regular_Woodland_Sniper
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_Ghillie_RM";
 	linkedItems[] =
 	{
@@ -390,7 +390,7 @@ class TWC_Infantry_2000_Regular_Desert_Sniper: TWC_Infantry_2000_Regular_Woodlan
 };
 class TWC_Infantry_2000_Regular_Desert_Spotter: TWC_Infantry_2000_Regular_Woodland_Spotter
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass="UK3CB_BAF_U_CombatUniform_DDPM_Ghillie_RM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_Spotter";
 	linkedItems[] =
@@ -428,7 +428,7 @@ class TWC_Infantry_2000_Regular_Desert_Spotter: TWC_Infantry_2000_Regular_Woodla
 //Artillery
 class TWC_Infantry_2000_Regular_Desert_Artillery_Commander: TWC_Infantry_2000_Regular_Woodland_Artillery_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_Artillery_Commander";
 	linkedItems[] =
@@ -450,7 +450,7 @@ class TWC_Infantry_2000_Regular_Desert_Artillery_Commander: TWC_Infantry_2000_Re
 };
 class TWC_Infantry_2000_Regular_Desert_Artillery_Crew: TWC_Infantry_2000_Regular_Woodland_Artillery_Crew
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "UK3CB_BAF_B_Bergen_DDPM_Rifleman_B";
 	linkedItems[] =
@@ -472,7 +472,7 @@ class TWC_Infantry_2000_Regular_Desert_Artillery_Crew: TWC_Infantry_2000_Regular
 };
 class TWC_Infantry_2000_Regular_Desert_FO: TWC_Infantry_2000_Regular_Woodland_FO
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_FO";
 	linkedItems[] =
@@ -496,7 +496,7 @@ class TWC_Infantry_2000_Regular_Desert_FO: TWC_Infantry_2000_Regular_Woodland_FO
 //EOD Team
 class TWC_Infantry_2000_Regular_Desert_EOD_Commander: TWC_Infantry_2000_Regular_Woodland_EOD_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_EOD_Commander";
 	linkedItems[] =
@@ -518,7 +518,7 @@ class TWC_Infantry_2000_Regular_Desert_EOD_Commander: TWC_Infantry_2000_Regular_
 };
 class TWC_Infantry_2000_Regular_Desert_EOD_Gunner: TWC_Infantry_2000_Regular_Woodland_EOD_Gunner
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	linkedItems[] =
 	{
@@ -541,7 +541,7 @@ class TWC_Infantry_2000_Regular_Desert_EOD_Gunner: TWC_Infantry_2000_Regular_Woo
 //Aircraft
 class TWC_Infantry_2000_Regular_Desert_FAC: TWC_Infantry_2000_Regular_Woodland_FAC
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_FAC";
 	linkedItems[] =
@@ -563,7 +563,7 @@ class TWC_Infantry_2000_Regular_Desert_FAC: TWC_Infantry_2000_Regular_Woodland_F
 };
 class TWC_Infantry_2000_Regular_Desert_Helicopter_Pilot: TWC_Infantry_2000_Regular_Woodland_Helicopter_Pilot
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve";
 	linkedItems[] =
 	{
@@ -586,7 +586,7 @@ class TWC_Infantry_2000_Regular_Desert_Helicopter_Pilot: TWC_Infantry_2000_Regul
 //FVs
 class TWC_Infantry_2000_Regular_Desert_Vehicle_Commander: TWC_Infantry_2000_Regular_Woodland_Vehicle_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	linkedItems[] =
 	{
@@ -607,7 +607,7 @@ class TWC_Infantry_2000_Regular_Desert_Vehicle_Commander: TWC_Infantry_2000_Regu
 };
 class TWC_Infantry_2000_Regular_Desert_Vehicle_Crew: TWC_Infantry_2000_Regular_Woodland_Vehicle_Crew
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Desert)
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	linkedItems[] =
 	{

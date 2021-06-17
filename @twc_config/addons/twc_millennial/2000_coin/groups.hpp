@@ -194,7 +194,7 @@ class TWC_Groups_2000_COIN_##CAMO \
 			position[] = {4,0,0}; \
 		}; \
 	}; \
-		class AT_Team \
+	class AT_Team \
 	{ \
 		name = "AT Team"; \
 		faction = "TWC_Millennial"; \
@@ -327,21 +327,21 @@ class TWC_Groups_2000_COIN_Dismounted_##CAMO \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_AT; \
+			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_Autorifleman; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_Gunner; \
+			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_Marksman; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
@@ -355,21 +355,21 @@ class TWC_Groups_2000_COIN_Dismounted_##CAMO \
 		class Unit5 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {10,0,0}; \
 		}; \
 		class Unit6 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_AT; \
+			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_Autorifleman; \
 			rank = "PRIVATE"; \
 			position[] = {12,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_Gunner; \
+			vehicle = TWC_Infantry_2000_COIN_Dismounted_##CAMO##_Marksman; \
 			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \

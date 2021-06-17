@@ -2,7 +2,7 @@
 //Section
 class TWC_Infantry_2000_Regular_Woodland_Rifleman: TWC_Infantry_Millennial_Base
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
+	CATEGORY(TWC_Infantry_2000_Regular_Woodland)
 	scope = 2;
 	displayName = "Rifleman";
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMW";
@@ -49,7 +49,6 @@ class TWC_Infantry_2000_Regular_Woodland_Rifleman: TWC_Infantry_Millennial_Base
 };
 class TWC_Infantry_2000_Regular_Woodland_Marksman: TWC_Infantry_2000_Regular_Woodland_Rifleman
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Marksman (AT)";
 	linkedItems[] =
 	{
@@ -103,7 +102,6 @@ class TWC_Infantry_2000_Regular_Woodland_Marksman: TWC_Infantry_2000_Regular_Woo
 };
 class TWC_Infantry_2000_Regular_Woodland_Grenadier: TWC_Infantry_2000_Regular_Woodland_Rifleman
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Grenadier";
 	linkedItems[] =
 	{
@@ -164,7 +162,6 @@ class TWC_Infantry_2000_Regular_Woodland_Grenadier: TWC_Infantry_2000_Regular_Wo
 };
 class TWC_Infantry_2000_Regular_Woodland_Autorifleman: TWC_Infantry_2000_Regular_Woodland_Rifleman
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Autorifleman";
 	linkedItems[] =
 	{
@@ -209,7 +206,6 @@ class TWC_Infantry_2000_Regular_Woodland_Autorifleman: TWC_Infantry_2000_Regular
 };
 class TWC_Infantry_2000_Regular_Woodland_SectionCommander: TWC_Infantry_2000_Regular_Woodland_Rifleman
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Section Commander";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_SectionCommander";
 	TWC_isCommandRole = 1;
@@ -278,7 +274,6 @@ class TWC_Infantry_2000_Regular_Woodland_SectionCommander: TWC_Infantry_2000_Reg
 };
 class TWC_Infantry_2000_Regular_Woodland_2iC: TWC_Infantry_2000_Regular_Woodland_SectionCommander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "2iC";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_2iC";
 	linkedItems[] =
@@ -302,7 +297,7 @@ class TWC_Infantry_2000_Regular_Woodland_2iC: TWC_Infantry_2000_Regular_Woodland
 //Platoon Command
 class TWC_Infantry_2000_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millennial_Base
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
+	CATEGORY(TWC_Infantry_2000_Regular_Woodland)
 	scope = 2;
 	displayName = "Platoon Commander";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_Platoon_Commander";
@@ -354,7 +349,6 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 };
 class TWC_Infantry_2000_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_2000_Regular_Woodland_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	backpack = "TWC_Backpack_2000_Regular_Woodland_Platoon_Sergeant";
 	displayName = "Platoon Sergeant";
 	linkedItems[] =
@@ -376,7 +370,6 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_2000_Reg
 };
 class TWC_Infantry_2000_Regular_Woodland_Platoon_Medic: TWC_Infantry_2000_Regular_Woodland_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Platoon Medic";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_Platoon_Medic";
 	TWC_isCommandRole = 0;
@@ -420,7 +413,6 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_Medic: TWC_Infantry_2000_Regula
 };
 class TWC_Infantry_2000_Regular_Woodland_Platoon_CSM: TWC_Infantry_2000_Regular_Woodland_Platoon_Sergeant
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Company Sergeant Major";
 	scope = 1;
 	attendant = 1;
@@ -430,12 +422,10 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_CSM: TWC_Infantry_2000_Regular_
 //Company
 class TWC_Infantry_2000_Regular_Woodland_Company_Commander: TWC_Infantry_2000_Regular_Woodland_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Company Commander";
 };
 class TWC_Infantry_2000_Regular_Woodland_Company_2iC: TWC_Infantry_2000_Regular_Woodland_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Company 2iC";
 };
 class TWC_Infantry_2000_Regular_Woodland_Company_Sergeant: TWC_Infantry_2000_Regular_Woodland_Platoon_CSM
@@ -446,7 +436,6 @@ class TWC_Infantry_2000_Regular_Woodland_Company_Sergeant: TWC_Infantry_2000_Reg
 //AT + AA
 class TWC_Infantry_2000_Regular_Woodland_Javelin_Gunner: TWC_Infantry_2000_Regular_Woodland_Rifleman
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Javelin Gunner";
 	weapons[] =
 	{
@@ -477,7 +466,6 @@ class TWC_Infantry_2000_Regular_Woodland_Javelin_Gunner: TWC_Infantry_2000_Regul
 };
 class TWC_Infantry_2000_Regular_Woodland_Javelin_Ass: TWC_Infantry_2000_Regular_Woodland_Javelin_Gunner
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Javelin Assistant";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_Javelin_Assistant";
 	weapons[] =
@@ -507,7 +495,6 @@ class TWC_Infantry_2000_Regular_Woodland_Starstreak_Ass: TWC_Infantry_2000_Regul
 //Sniper Team
 class TWC_Infantry_2000_Regular_Woodland_Sniper: TWC_Infantry_2000_Regular_Woodland_Rifleman
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayname = "Sniper";
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMW_Ghillie_RM";
 	weapons[] =
@@ -575,7 +562,6 @@ class TWC_Infantry_2000_Regular_Woodland_Sniper: TWC_Infantry_2000_Regular_Woodl
 };
 class TWC_Infantry_2000_Regular_Woodland_Spotter: TWC_Infantry_2000_Regular_Woodland_Sniper
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayname = "Spotter";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_Spotter";
 	TWC_isCommandRole = 1;
@@ -628,7 +614,6 @@ class TWC_Infantry_2000_Regular_Woodland_Spotter: TWC_Infantry_2000_Regular_Wood
 //Artillery Crew
 class TWC_Infantry_2000_Regular_Woodland_Artillery_Commander: TWC_Infantry_2000_Regular_Woodland_Rifleman
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Artillery Commander";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_Artillery_Commander";
 	TWC_isCommandRole = 1;
@@ -669,7 +654,6 @@ class TWC_Infantry_2000_Regular_Woodland_Artillery_Commander: TWC_Infantry_2000_
 };
 class TWC_Infantry_2000_Regular_Woodland_Artillery_Crew: TWC_Infantry_2000_Regular_Woodland_Artillery_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Artillery Crew";
 	backpack = "UK3CB_BAF_B_Bergen_DPMW_Rifleman_B";
 	TWC_isCommandRole = 0;
@@ -688,7 +672,6 @@ class TWC_Infantry_2000_Regular_Woodland_Artillery_Crew: TWC_Infantry_2000_Regul
 };
 class TWC_Infantry_2000_Regular_Woodland_FO: TWC_Infantry_2000_Regular_Woodland_Artillery_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Forward Observer";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_FO";
 	TWC_isCommandRole = 0;
@@ -697,7 +680,6 @@ class TWC_Infantry_2000_Regular_Woodland_FO: TWC_Infantry_2000_Regular_Woodland_
 //EOD Team
 class TWC_Infantry_2000_Regular_Woodland_EOD_Commander: TWC_Infantry_2000_Regular_Woodland_Rifleman
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "EOD Commander";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_EOD_Commander";
 	TWC_isCommandRole = 1;
@@ -750,7 +732,6 @@ class TWC_Infantry_2000_Regular_Woodland_EOD_Commander: TWC_Infantry_2000_Regula
 };
 class TWC_Infantry_2000_Regular_Woodland_EOD_Gunner: TWC_Infantry_2000_Regular_Woodland_EOD_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "EOD Gunner";
 	backpack = "";
 	TWC_isCommandRole = 0;
@@ -797,7 +778,6 @@ class TWC_Infantry_2000_Regular_Woodland_EOD_Gunner: TWC_Infantry_2000_Regular_W
 //Aircraft
 class TWC_Infantry_2000_Regular_Woodland_FAC: TWC_Infantry_2000_Regular_Woodland_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Forward Air Controller";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_FAC";
 	TWC_isCommandRole = 0;
@@ -843,7 +823,6 @@ class TWC_Infantry_2000_Regular_Woodland_FAC: TWC_Infantry_2000_Regular_Woodland
 };
 class TWC_Infantry_2000_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millennial_Base
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	scope = 2;
 	displayName = "Helicopter Pilot";
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMW_ShortSleeve";
@@ -892,7 +871,6 @@ class TWC_Infantry_2000_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millenni
 //FVs
 class TWC_Infantry_2000_Regular_Woodland_Vehicle_Commander: TWC_Infantry_2000_Regular_Woodland_Helicopter_Pilot
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Vehicle Commander";
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMW";
 	linkedItems[] =
@@ -928,7 +906,6 @@ class TWC_Infantry_2000_Regular_Woodland_Vehicle_Commander: TWC_Infantry_2000_Re
 };
 class TWC_Infantry_2000_Regular_Woodland_Vehicle_Crew: TWC_Infantry_2000_Regular_Woodland_Vehicle_Commander
 {
-	CATEGORY(TWC_Infantry_Regular_2000_Woodland)
 	displayName = "Vehicle Crew";
 	TWC_isCommandRole = 0;
 	weapons[] =
