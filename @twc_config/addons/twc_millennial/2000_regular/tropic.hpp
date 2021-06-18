@@ -305,7 +305,7 @@ class TWC_Infantry_2000_Regular_Tropic_Company_Sergeant: TWC_Infantry_2000_Regul
 //AT + AA
 class TWC_Infantry_2000_Regular_Tropic_Javelin_Gunner: TWC_Infantry_2000_Regular_Woodland_Javelin_Gunner
 {
-	displayName = "Javelin Gunner";
+	CATEGORY(TWC_Infantry_2000_Regular_Tropic)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
 	linkedItems[] =
 	{
@@ -326,7 +326,7 @@ class TWC_Infantry_2000_Regular_Tropic_Javelin_Gunner: TWC_Infantry_2000_Regular
 };
 class TWC_Infantry_2000_Regular_Tropic_Javelin_Ass: TWC_Infantry_2000_Regular_Woodland_Javelin_Ass
 {
-	displayName = "Javelin Assistant";
+	CATEGORY(TWC_Infantry_2000_Regular_Tropic)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
 	linkedItems[] =
 	{
@@ -399,14 +399,14 @@ class TWC_Infantry_2000_Regular_Tropic_Spotter: TWC_Infantry_2000_Regular_Woodla
 	};
 	weapons[] =
 	{
-		"TWC_Weapon_L96_Tropic",
+		"TWC_Weapon_L96_Woodland",
 		"ACE_Vector",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"TWC_Weapon_L96_Tropic",
+		"TWC_Weapon_L96_Woodland",
 		"ACE_Vector",
 		"Throw",
 		"Put"

@@ -98,12 +98,12 @@ class TWC_Infantry_2000_Regular_Arctic_Starstreak_Ass: TWC_Infantry_2000_Regular
 class TWC_Infantry_2000_Regular_Arctic_Sniper: TWC_Infantry_2000_Regular_Woodland_Sniper
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
-	uniformClass = "3CB_BAF_U_CombatUniform_Arctic_Ghillie_RM";
+	uniformClass = "UK3CB_BAF_U_CombatUniform_Arctic_Ghillie_RM";
 };
 class TWC_Infantry_2000_Regular_Arctic_Spotter: TWC_Infantry_2000_Regular_Woodland_Spotter
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
-	uniformClass = "3CB_BAF_U_CombatUniform_Arctic_Ghillie_RM";
+	uniformClass = "UK3CB_BAF_U_CombatUniform_Arctic_Ghillie_RM";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_Spotter";
 };
 

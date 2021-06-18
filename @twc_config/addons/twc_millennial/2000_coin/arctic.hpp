@@ -69,9 +69,9 @@ class TWC_Infantry_2000_COIN_Arctic_Grenadier: TWC_Infantry_2000_Regular_Arctic_
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
 	};
-		weapons[]=
+	weapons[]=
 	{
-		"TWC_Weapon_L85A2_UGL_SUSAT3D",
+		"TWC_Weapon_L85A2_UGL_HWS_SUSAT3D",
 		"ACE_VMH3",
 		"ACE_Vector",
 		"Throw",
@@ -79,7 +79,7 @@ class TWC_Infantry_2000_COIN_Arctic_Grenadier: TWC_Infantry_2000_Regular_Arctic_
 	};
 	respawnweapons[] =
 	{
-		"TWC_Weapon_L85A2_UGL_SUSAT3D",
+		"TWC_Weapon_L85A2_UGL_HWS_SUSAT3D",
 		"ACE_VMH3",
 		"ACE_Vector",
 		"Throw",
@@ -109,7 +109,6 @@ class TWC_Infantry_2000_COIN_Arctic_Grenadier: TWC_Infantry_2000_Regular_Arctic_
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};
-	
 	nightItems[] = {
 		"ACE_Flashlight_MX991",
 		"UGL_FlareWhite_F",

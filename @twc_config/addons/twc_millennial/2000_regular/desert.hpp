@@ -305,7 +305,7 @@ class TWC_Infantry_2000_Regular_Desert_Company_Sergeant: TWC_Infantry_2000_Regul
 //AT + AA
 class TWC_Infantry_2000_Regular_Desert_Javelin_Gunner: 	TWC_Infantry_2000_Regular_Woodland_Javelin_Gunner
 {
-	displayName = "Javelin Gunner";
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	linkedItems[] =
 	{
@@ -326,7 +326,8 @@ class TWC_Infantry_2000_Regular_Desert_Javelin_Gunner: 	TWC_Infantry_2000_Regula
 };
 class TWC_Infantry_2000_Regular_Desert_Javelin_Ass: TWC_Infantry_2000_Regular_Woodland_Javelin_Ass
 {
-	displayName = "Javelin Assistant";
+	CATEGORY(TWC_Infantry_2000_Regular_Desert)
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
 	backpack = "TWC_Backpack_2000_Regular_Desert_Javelin_Assistant";
 	linkedItems[] =
 	{

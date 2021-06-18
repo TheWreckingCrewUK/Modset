@@ -23,7 +23,7 @@ class TWC_Backpack_2000_Regular_##CAMO##_2iC: INHERIT \
 		ADD_MAGA(SmokeShell,3); \
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,6); \
 		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,4); \
-		ADD_MAGA(UK3CB_BAF_556_200Rnd, 3); \
+		ADD_MAGA(UK3CB_BAF_556_200Rnd,2); \
 	}; \
 };
 
@@ -47,7 +47,7 @@ class TWC_Backpack_2000_Regular_##CAMO##_Platoon_Sergeant: INHERIT \
 { \
 	scope = 1; \
 	scopeArsenal = 1; \
-	maximumLoad = 430; \
+	maximumLoad = 450; \
 	class TransportItems { \
 		ADD_ITEM(ACRE_PRC117F,1); \
 	}; \
@@ -55,8 +55,9 @@ class TWC_Backpack_2000_Regular_##CAMO##_Platoon_Sergeant: INHERIT \
 		ADD_MAGA(SmokeShell,3); \
 		ADD_MAGA(SmokeShellRed,2); \
 		ADD_MAGA(SmokeShellBlue,2); \
-		ADD_MAGA(UK3CB_BAF_556_30Rnd,20); \
-		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,8); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,14); \
+		ADD_MAGA(UK3CB_BAF_556_30Rnd_T,6); \
+		ADD_MAGA(UK3CB_BAF_556_200Rnd,2); \
 	}; \
 };
 
@@ -390,7 +391,7 @@ class TWC_Backpack_2000_Regular_Dismounted_##CAMO##_Platoon_Medic: INHERIT \
 2000_BACKPACK_REGULAR_DISMOUNTED_RIFLEMAN(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_A)
 2000_BACKPACK_REGULAR_DISMOUNTED_MARKSMAN(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_A)
 2000_BACKPACK_REGULAR_DISMOUNTED_GRENADIER(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_A)
-2000_BACKPACK_REGULAR_DISMOUNTED_AUTORIFLEMAN(Tropic, UK3CB_BAF_B_Bergen_DDPM_Rifleman_A)
+2000_BACKPACK_REGULAR_DISMOUNTED_AUTORIFLEMAN(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_A)
 2000_BACKPACK_REGULAR_DISMOUNTED_SECTIONCOMMANDER(Tropic, UK3CB_BAF_B_Bergen_DPMT_SL_A)
 2000_BACKPACK_REGULAR_DISMOUNTED_2IC(Tropic, UK3CB_BAF_B_Bergen_DPMT_Rifleman_B)
 

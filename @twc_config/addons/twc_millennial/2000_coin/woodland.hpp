@@ -69,7 +69,7 @@ class TWC_Infantry_2000_COIN_Woodland_Grenadier: TWC_Infantry_2000_Regular_Woodl
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
 	};
-		weapons[]=
+	weapons[]=
 	{
 		"TWC_Weapon_L85A2_UGL_HWS_SUSAT3D",
 		"ACE_VMH3",

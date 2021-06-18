@@ -66,7 +66,6 @@ class TWC_Infantry_2000_Regular_Woodland_Marksman: TWC_Infantry_2000_Regular_Woo
 		"itemMap",
 		"ItemWatch"
 	};
-	
 	weapons[] =
 	{
 		"TWC_Weapon_L86A2_SUSAT3D",
@@ -155,7 +154,7 @@ class TWC_Infantry_2000_Regular_Woodland_Grenadier: TWC_Infantry_2000_Regular_Wo
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};
-		nightItems[] = {
+	nightItems[] = {
 		"ACE_Flashlight_MX991",
 		MAG_3("UGL_FlareWhite_F")
 	};
@@ -302,6 +301,22 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 	displayName = "Platoon Commander";
 	backpack = "TWC_Backpack_2000_Regular_Woodland_Platoon_Commander";
 	TWC_isCommandRole = 1;
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_DPMW9",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_DPMW9",
+		"UK3CB_BAF_H_Mk6_DPMW_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
 	Items[] =
 	{
 		MEDICAL_LOADOUT,

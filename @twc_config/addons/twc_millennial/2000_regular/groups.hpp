@@ -100,7 +100,7 @@ class TWC_Groups_2000_Regular_##CAMO \
 		class Unit4 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_2000_Regular_##CAMO##_Autorifleman; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \

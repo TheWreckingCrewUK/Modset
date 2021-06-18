@@ -55,43 +55,43 @@ class CfgEditorSubcategories {
 	};
 	
 	class TWC_Infantry_2000_COIN_Woodland {
-		displayName = "Infantry (2000s, Woodland)";
+		displayName = "Infantry (2000s, COIN, Woodland)";
 	};
 	
 	class TWC_Infantry_2000_COIN_Desert {
-		displayName = "Infantry (2000s, Desert)";
+		displayName = "Infantry (2000s, COIN, Desert)";
 	};
 	
 	class TWC_Infantry_2000_COIN_Arctic {
-		displayName = "Infantry (2000s, Arctic)";
+		displayName = "Infantry (2000s, COIN, Arctic)";
 	};
 	
 	class TWC_Infantry_2000_COIN_Tropic {
-		displayName = "Infantry (2000s, Tropic)";
+		displayName = "Infantry (2000s, COIN, Tropic)";
 	};
 	
 	class TWC_Infantry_2000_COIN_NBC {
-		displayName = "Infantry (2000s, NBC)";
+		displayName = "Infantry (2000s, COIN, NBC)";
 	};
 	
 	class TWC_Infantry_2000_COIN_Dismounted_Woodland {
-		displayName = "Infantry (2000s, Dismounted, Woodland)";
+		displayName = "Infantry (2000s, COIN, Dismounted, Woodland)";
 	};
 	
 	class TWC_Infantry_2000_COIN_Dismounted_Desert {
-		displayName = "Infantry (2000s, Dismounted, Desert)";
+		displayName = "Infantry (2000s, COIN, Dismounted, Desert)";
 	};
 	
 	class TWC_Infantry_2000_COIN_Dismounted_Arctic {
-		displayName = "Infantry (2000s, Dismounted, Arctic)";
+		displayName = "Infantry (2000s, COIN, Dismounted, Arctic)";
 	};
 	
 	class TWC_Infantry_2000_COIN_Dismounted_Tropic {
-		displayName = "Infantry (2000s, Dismounted, Tropic)";
+		displayName = "Infantry (2000s, COIN, Dismounted, Tropic)";
 	};
 	
 	class TWC_Infantry_2000_COIN_Dismounted_NBC {
-		displayName = "Infantry (2000s, Dismounted, NBC)";
+		displayName = "Infantry (2000s, COIN, Dismounted, NBC)";
 	};
 };
 
