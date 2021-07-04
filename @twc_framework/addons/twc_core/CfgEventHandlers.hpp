@@ -6,10 +6,8 @@ class Extended_PostInit_EventHandlers {
 };
 
 class Extended_InitPost_EventHandlers {
-	class CAManBase {
-		class TWC_Core_NightGear_EH {
-			init = "_this call TWC_Core_fnc_initNightGear;";
-		};
+	class TWC_Core_NightGear_EH {
+		clientInit = "_this call TWC_Core_fnc_initNightGear;";
 	};
 };
 

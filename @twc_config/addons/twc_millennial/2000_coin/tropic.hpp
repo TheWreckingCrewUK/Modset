@@ -1,8 +1,8 @@
-//COIN, Desert
+//COIN, Tropic
 //Section
-class TWC_Infantry_2000_COIN_Desert_Rifleman: TWC_Infantry_2000_Regular_Desert_Rifleman
+class TWC_Infantry_2000_COIN_Tropic_Rifleman: TWC_Infantry_2000_Regular_Tropic_Rifleman
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -14,9 +14,9 @@ class TWC_Infantry_2000_COIN_Desert_Rifleman: TWC_Infantry_2000_Regular_Desert_R
 		MAG_2("ACE_CableTie")
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Marksman: TWC_Infantry_2000_Regular_Desert_Marksman
+class TWC_Infantry_2000_COIN_Tropic_Marksman: TWC_Infantry_2000_Regular_Tropic_Marksman
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -28,9 +28,9 @@ class TWC_Infantry_2000_COIN_Desert_Marksman: TWC_Infantry_2000_Regular_Desert_M
 		MAG_2("ACE_CableTie")
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Grenadier: TWC_Infantry_2000_Regular_Desert_Grenadier
+class TWC_Infantry_2000_COIN_Tropic_Grenadier: TWC_Infantry_2000_Regular_Tropic_Grenadier
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -42,9 +42,9 @@ class TWC_Infantry_2000_COIN_Desert_Grenadier: TWC_Infantry_2000_Regular_Desert_
 		MAG_2("ACE_CableTie")
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Autorifleman: TWC_Infantry_2000_Regular_Desert_Autorifleman
+class TWC_Infantry_2000_COIN_Tropic_Autorifleman: TWC_Infantry_2000_Regular_Tropic_Autorifleman
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -56,10 +56,10 @@ class TWC_Infantry_2000_COIN_Desert_Autorifleman: TWC_Infantry_2000_Regular_Dese
 		MAG_2("ACE_CableTie")
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_SectionCommander: TWC_Infantry_2000_Regular_Desert_SectionCommander
+class TWC_Infantry_2000_COIN_Tropic_SectionCommander: TWC_Infantry_2000_Regular_Tropic_SectionCommander
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_SectionCommander";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_SectionCommander";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -73,10 +73,10 @@ class TWC_Infantry_2000_COIN_Desert_SectionCommander: TWC_Infantry_2000_Regular_
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_2iC: TWC_Infantry_2000_Regular_Desert_2iC
+class TWC_Infantry_2000_COIN_Tropic_2iC: TWC_Infantry_2000_Regular_Tropic_2iC
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_2iC";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_2iC";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -92,10 +92,10 @@ class TWC_Infantry_2000_COIN_Desert_2iC: TWC_Infantry_2000_Regular_Desert_2iC
 };
 
 //Platoon Command
-class TWC_Infantry_2000_COIN_Desert_Platoon_Commander: TWC_Infantry_2000_Regular_Desert_Platoon_Commander
+class TWC_Infantry_2000_COIN_Tropic_Platoon_Commander: TWC_Infantry_2000_Regular_Tropic_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_Platoon_Commander";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Commander";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -109,10 +109,10 @@ class TWC_Infantry_2000_COIN_Desert_Platoon_Commander: TWC_Infantry_2000_Regular
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Platoon_Sergeant: TWC_Infantry_2000_Regular_Desert_Platoon_Sergeant
+class TWC_Infantry_2000_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_2000_Regular_Tropic_Platoon_Sergeant
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_Platoon_Sergeant";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Sergeant";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -126,10 +126,10 @@ class TWC_Infantry_2000_COIN_Desert_Platoon_Sergeant: TWC_Infantry_2000_Regular_
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Platoon_Medic: TWC_Infantry_2000_Regular_Desert_Platoon_Medic
+class TWC_Infantry_2000_COIN_Tropic_Platoon_Medic: TWC_Infantry_2000_Regular_Tropic_Platoon_Medic
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_Platoon_Medic";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Medic";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -141,10 +141,10 @@ class TWC_Infantry_2000_COIN_Desert_Platoon_Medic: TWC_Infantry_2000_Regular_Des
 		MAG_2("ACE_CableTie")
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Platoon_CSM: TWC_Infantry_2000_Regular_Desert_Platoon_CSM
+class TWC_Infantry_2000_COIN_Tropic_Platoon_CSM: TWC_Infantry_2000_Regular_Tropic_Platoon_CSM
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_Platoon_Sergeant";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Sergeant";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -160,10 +160,10 @@ class TWC_Infantry_2000_COIN_Desert_Platoon_CSM: TWC_Infantry_2000_Regular_Deser
 };
 
 //Company
-class TWC_Infantry_2000_COIN_Desert_Company_Commander: TWC_Infantry_2000_Regular_Desert_Company_Commander
+class TWC_Infantry_2000_COIN_Tropic_Company_Commander: TWC_Infantry_2000_Regular_Tropic_Company_Commander
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_Platoon_Commander";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Commander";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -177,10 +177,10 @@ class TWC_Infantry_2000_COIN_Desert_Company_Commander: TWC_Infantry_2000_Regular
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Company_2iC: TWC_Infantry_2000_Regular_Desert_Company_2iC
+class TWC_Infantry_2000_COIN_Tropic_Company_2iC: TWC_Infantry_2000_Regular_Tropic_Company_2iC
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_Platoon_Commander";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Commander";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -194,10 +194,10 @@ class TWC_Infantry_2000_COIN_Desert_Company_2iC: TWC_Infantry_2000_Regular_Deser
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Company_Sergeant: TWC_Infantry_2000_Regular_Desert_Company_Sergeant
+class TWC_Infantry_2000_COIN_Tropic_Company_Sergeant: TWC_Infantry_2000_Regular_Tropic_Company_Sergeant
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_Platoon_Sergeant";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Sergeant";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -213,9 +213,9 @@ class TWC_Infantry_2000_COIN_Desert_Company_Sergeant: TWC_Infantry_2000_Regular_
 };
 
 //AT
-class TWC_Infantry_2000_COIN_Desert_Javelin_Gunner: TWC_Infantry_2000_Regular_Desert_Javelin_Gunner
+class TWC_Infantry_2000_COIN_Tropic_Javelin_Gunner: TWC_Infantry_2000_Regular_Tropic_Javelin_Gunner
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -227,9 +227,9 @@ class TWC_Infantry_2000_COIN_Desert_Javelin_Gunner: TWC_Infantry_2000_Regular_De
 		MAG_2("ACE_CableTie")
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Javelin_Ass: TWC_Infantry_2000_Regular_Desert_Javelin_Ass
+class TWC_Infantry_2000_COIN_Tropic_Javelin_Ass: TWC_Infantry_2000_Regular_Tropic_Javelin_Ass
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -243,22 +243,22 @@ class TWC_Infantry_2000_COIN_Desert_Javelin_Ass: TWC_Infantry_2000_Regular_Deser
 };
 
 //Sniper Team
-class TWC_Infantry_2000_COIN_Desert_Sniper: TWC_Infantry_2000_Regular_Desert_Sniper
+class TWC_Infantry_2000_COIN_Tropic_Sniper: TWC_Infantry_2000_Regular_Tropic_Sniper
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_Osprey_DDPM5",
-		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_Osprey_DDPM5",
-		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -280,23 +280,23 @@ class TWC_Infantry_2000_COIN_Desert_Sniper: TWC_Infantry_2000_Regular_Desert_Sni
 		"ACE_RangeCard"
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Spotter: TWC_Infantry_2000_Regular_Desert_Spotter
+class TWC_Infantry_2000_COIN_Tropic_Spotter: TWC_Infantry_2000_Regular_Tropic_Spotter
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_Spotter";
-	uniformClass = "UK3CB_BAF_U_CombatUniform_DDPM";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_Spotter";
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
 	linkedItems[] =
 	{
-		"UK3CB_BAF_V_Osprey_DDPM5",
-		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
-		"UK3CB_BAF_V_Osprey_DDPM5",
-		"UK3CB_BAF_H_Mk6_DDPM_A",
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -318,10 +318,10 @@ class TWC_Infantry_2000_COIN_Desert_Spotter: TWC_Infantry_2000_Regular_Desert_Sp
 };
 
 //Artillery Crew
-class TWC_Infantry_2000_COIN_Desert_Artillery_Commander: TWC_Infantry_2000_Regular_Desert_Artillery_Commander
+class TWC_Infantry_2000_COIN_Tropic_Artillery_Commander: TWC_Infantry_2000_Regular_Tropic_Artillery_Commander
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_Artillery_Commander";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_Artillery_Commander";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -335,9 +335,9 @@ class TWC_Infantry_2000_COIN_Desert_Artillery_Commander: TWC_Infantry_2000_Regul
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Artillery_Crew: TWC_Infantry_2000_Regular_Desert_Artillery_Crew
+class TWC_Infantry_2000_COIN_Tropic_Artillery_Crew: TWC_Infantry_2000_Regular_Tropic_Artillery_Crew
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -351,10 +351,10 @@ class TWC_Infantry_2000_COIN_Desert_Artillery_Crew: TWC_Infantry_2000_Regular_De
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_FO: TWC_Infantry_2000_Regular_Desert_FO
+class TWC_Infantry_2000_COIN_Tropic_FO: TWC_Infantry_2000_Regular_Tropic_FO
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_FO";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_FO";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -370,10 +370,10 @@ class TWC_Infantry_2000_COIN_Desert_FO: TWC_Infantry_2000_Regular_Desert_FO
 };
 
 //EOD Team
-class TWC_Infantry_2000_COIN_Desert_EOD_Commander: TWC_Infantry_2000_Regular_Desert_EOD_Commander
+class TWC_Infantry_2000_COIN_Tropic_EOD_Commander: TWC_Infantry_2000_Regular_Tropic_EOD_Commander
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_EOD_Commander";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_EOD_Commander";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -391,9 +391,9 @@ class TWC_Infantry_2000_COIN_Desert_EOD_Commander: TWC_Infantry_2000_Regular_Des
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_EOD_Gunner: TWC_Infantry_2000_Regular_Desert_EOD_Gunner
+class TWC_Infantry_2000_COIN_Tropic_EOD_Gunner: TWC_Infantry_2000_Regular_Tropic_EOD_Gunner
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -411,10 +411,10 @@ class TWC_Infantry_2000_COIN_Desert_EOD_Gunner: TWC_Infantry_2000_Regular_Desert
 };
 
 //Aircraft
-class TWC_Infantry_2000_COIN_Desert_FAC: TWC_Infantry_2000_Regular_Desert_FAC
+class TWC_Infantry_2000_COIN_Tropic_FAC: TWC_Infantry_2000_Regular_Tropic_FAC
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
-	backpack = "TWC_Backpack_2000_COIN_Desert_FAC";
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
+	backpack = "TWC_Backpack_2000_COIN_Tropic_FAC";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -430,9 +430,9 @@ class TWC_Infantry_2000_COIN_Desert_FAC: TWC_Infantry_2000_Regular_Desert_FAC
 };
 
 //FVs
-class TWC_Infantry_2000_COIN_Desert_Vehicle_Commander: TWC_Infantry_2000_Regular_Desert_Vehicle_Commander
+class TWC_Infantry_2000_COIN_Tropic_Vehicle_Commander: TWC_Infantry_2000_Regular_Tropic_Vehicle_Commander
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -446,9 +446,9 @@ class TWC_Infantry_2000_COIN_Desert_Vehicle_Commander: TWC_Infantry_2000_Regular
 		"ACE_MapTools"
 	};
 };
-class TWC_Infantry_2000_COIN_Desert_Vehicle_Crew: TWC_Infantry_2000_Regular_Desert_Vehicle_Crew
+class TWC_Infantry_2000_COIN_Tropic_Vehicle_Crew: TWC_Infantry_2000_Regular_Tropic_Vehicle_Crew
 {
-	CATEGORY(TWC_Infantry_2000_COIN_Desert)
+	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
