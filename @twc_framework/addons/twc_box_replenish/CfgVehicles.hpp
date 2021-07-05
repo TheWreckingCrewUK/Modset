@@ -28,7 +28,6 @@ class CfgVehicles {
 		displayName = "Set Replenish Box(es) Quantities";
 		category = "twc_mission_framework";
 		function = "TWC_Box_Replenish_fnc_moduleSetReplenishQuantity";
-		scope = 2;
 		isGlobal = 0;
 		isTriggerActivated = 0;
 		isDisposable = 0;
