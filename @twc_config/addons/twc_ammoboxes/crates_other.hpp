@@ -301,6 +301,11 @@ class TWC_AmmoBox_Other_Replenish: TWC_AmmoBox_Base {
 	
 	class ACE_Actions {
 		class ACE_MainActions {
+			displayName = "Replenish";
+			position = "[0,0,0]";
+			condition = "true";
+			distance = 7.5;
+			
 			class TWC_Replenish_Boxes {
 				displayName = "Replenish Boxes";
 				condition = "true";
@@ -310,7 +315,7 @@ class TWC_AmmoBox_Other_Replenish: TWC_AmmoBox_Base {
 			};
 			
 			class TWC_Replenish_Counts {
-				displayName = "Check Remaining Replenishment";
+				displayName = "Remaining Count";
 				condition = "true";
 				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
 				statement = "_target call TWC_Box_Replenish_fnc_checkCounts";

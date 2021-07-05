@@ -1,5 +1,4 @@
 // Base Classes, all others inherit from these!
-
 class CUP_BAF_VehicleBox;
 class Box_NATO_Ammo_F;
 class Box_NATO_AmmoVeh_F;
