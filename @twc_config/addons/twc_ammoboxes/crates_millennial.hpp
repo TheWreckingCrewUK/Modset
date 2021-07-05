@@ -16,8 +16,8 @@
 
 // 1990s Ammo Boxes
 class TWC_AmmoBox_1990_Base: TWC_AmmoBox_Base {
-	scope = 2;
-	scopeCurator = 2;
+	scope = 1;
+	scopeCurator = 1;
 	displayName = "1990s Base Resupply (Immobile)";
 	editorSubcategory = "TWC_Crates_Millennial";
 	
@@ -180,8 +180,8 @@ class TWC_AmmoBox_1990_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 };
 // 2000s Ammo Boxes
 class TWC_AmmoBox_2000_Base: TWC_AmmoBox_Base {
-	scope = 2;
-	scopeCurator = 2;
+	scope = 1;
+	scopeCurator = 1;
 	displayName = "2000s Base Resupply (Immobile)";
 	editorSubcategory = "TWC_Crates_Millennial";
 	

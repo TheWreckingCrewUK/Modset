@@ -3,8 +3,17 @@ class CfgFunctions {
 		class functions {
 			file = "twc_box_replenish\functions";
 			
-			class canReplenish {};
 			class getReplenishChildren {};
+			class getReplenishCounts {};
+			class startReplenish {};
+			class finishReplenish {};
+			class checkCounts {};
+		};
+		
+		class module {
+			file = "twc_box_replenish\modules";
+			
+			class moduleSetReplenishQuantity {};
 		};
 	};
 };

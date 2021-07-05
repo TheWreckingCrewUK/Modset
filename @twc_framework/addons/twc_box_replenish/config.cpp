@@ -1,14 +1,18 @@
 class CfgPatches {
 	class TWC_Box_Replenish {
-		units[] = {};
+		units[] = {
+			"TWC_Box_Replenish_Module"
+		};
+		
 		weapons[] = {};
 		
 		requiredAddons[] = {
 			"ace_common",
-			"twc_core"
+			"twc_core",
+			"twc_framework"
 		};
 		
-		author[] = {"User 1", "User 2"};
+		author[] = {"Bosenator"};
 		authorUrl = "http://thewreckingcrew.eu";
 		version = "1";
 		versionStr = "1";

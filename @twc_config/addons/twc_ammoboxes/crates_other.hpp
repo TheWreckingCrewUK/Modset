@@ -301,11 +301,19 @@ class TWC_AmmoBox_Other_Replenish: TWC_AmmoBox_Base {
 	
 	class ACE_Actions {
 		class ACE_MainActions {
-			class TWC_Transfer_Contents {
+			class TWC_Replenish_Boxes {
 				displayName = "Replenish Boxes";
 				condition = "true";
 				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
 				insertChildren = "_this call TWC_Box_Replenish_fnc_getReplenishChildren";
+				icon = "twc_box_replenish\ui\replenish_ca.paa";
+			};
+			
+			class TWC_Replenish_Counts {
+				displayName = "Check Remaining Replenishment";
+				condition = "true";
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+				insertChildren = "_this call TWC_Box_Replenish_fnc_checkCounts";
 				icon = "twc_box_replenish\ui\replenish_ca.paa";
 			};
 		};

@@ -7,20 +7,19 @@ _eligibleReplenishTargets = [];
 {
 	_ammoboxType = [(configFile >> "CfgVehicles" >> (typeOf _x)), "twc_ammobox_type", nil] call BIS_fnc_returnConfigEntry;
 	if (isNil "_ammoboxType") exitWith {};
-	if (_ammoboxType == "other") exitWith {};
 	
-	if (_x != _target && {(_resupplyAvailability findIf {(_x select 0) == _ammoboxType} != -1)}) then {
-		_eligibleReplenishTargets pushBack _x;
+	if (_x != _target && {(_resupplyAvailability findIf {(_x select 0) == _ammoboxType} != 0)}) then {
+		_eligibleReplenishTargets pushBack [_ammoboxType, _x];
 	};
 } forEach _boxes;
 
 private _actions = [];
 
 {
-	private _displayName = format ["%1 (%2 m)", getText (configFile >> "CfgVehicles" >> (typeOf _x) >> "displayName"), ((_target distance _x) toFixed 1)];
+	private _displayName = format ["%1 (%2 m)", getText (configFile >> "CfgVehicles" >> (typeOf (_x select 1)) >> "displayName"), ((_target distance (_x select 1)) toFixed 1)];
 	
 	private _action = [
-		_x,
+		(_x select 1),
 		_displayName,
 		"",
 		{
@@ -30,7 +29,7 @@ private _actions = [];
 			true
 		},
 		{},
-		[_target, _player, _x],
+		[_target, (_x select 0), (_x select 1)],
 		[0, 0, 0],
 		7.5
 	] call ace_interact_menu_fnc_createAction;
