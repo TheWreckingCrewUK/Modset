@@ -2,9 +2,9 @@ params ["_source", "_type", "_target"];
 
 [
 	1,
-	[_source, _target, _type],
+	[_source, _type, _target],
 	{_this call TWC_Box_Replenish_fnc_finishReplenish},
-	{systemChat "Replenish Failed"},
+	{_this call TWC_Box_Replenish_fnc_finishReplenish},
 	"Replenishing Box...",
 	{},
 	["isNotInside", "isNotSwimming", "isNotSitting"]

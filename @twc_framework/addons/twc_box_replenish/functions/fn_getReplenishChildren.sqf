@@ -5,8 +5,7 @@ _boxes = _player nearEntities [["ReammoBox_F"], 7.5];
 _eligibleReplenishTargets = [];
 
 {
-	_ammoboxType = [(configFile >> "CfgVehicles" >> (typeOf _x)), "twc_ammobox_type", nil] call BIS_fnc_returnConfigEntry;
-	if (isNil "_ammoboxType") exitWith {};
+	_ammoboxType = [(configFile >> "CfgVehicles" >> (typeOf _x)), "twc_ammobox_type", "none"] call BIS_fnc_returnConfigEntry;
 	
 	if (_x != _target && {(_resupplyAvailability findIf {(_x select 0) == _ammoboxType} != 0)}) then {
 		_eligibleReplenishTargets pushBack [_ammoboxType, _x];

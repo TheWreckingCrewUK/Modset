@@ -1,5 +1,8 @@
 params ["_args", "_elapsedTime", "_totalTime", "_errorCode"];
-_args params ["_source", "_target", "_type"];
+_args params ["_source", "_type", "_target"];
+
+// inform the user of the outcome
+_targetDisplayName = getText (configFile >> "CfgVehicles" >> typeOf _target >> "displayName");
 
 // if no error, proceed!
 if (_errorCode == 0) then {
@@ -21,9 +24,6 @@ if (_errorCode == 0) then {
 	_newBox = createVehicle [_previousType, _previousPos, [], 0, "CAN_COLLIDE"];
 	_newBox setDir _previousDir;
 };
-
-// inform the user of the outcome
-_targetDisplayName = getText (configFile >> "CfgVehicles" >> typeOf _target >> "displayName");
 
 private _structuredOutputText = if (_errorCode == 0) then {
 	parsetext (("<t align='center'><t size='1.5'><t color='#ffbf00'>Replenish Complete</t></t></t><br/>Replenished ") + _targetDisplayName);
