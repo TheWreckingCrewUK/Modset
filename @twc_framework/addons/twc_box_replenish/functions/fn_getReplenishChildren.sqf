@@ -28,7 +28,7 @@ private _actions = [];
 			true
 		},
 		{},
-		[_target, (_x select 0), (_x select 1)],
+		[(_x select 0), (_x select 1)],
 		[0, 0, 0],
 		7.5
 	] call ace_interact_menu_fnc_createAction;
