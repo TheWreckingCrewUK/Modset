@@ -451,6 +451,7 @@ class PLA_CW_Base: O_Soldier_base_F
 			"CUP_30Rnd_Sa58_M",
 			"SmokeShell"
 		};
+	};
 		class PLA_CW_Pilot: PLA_CW_Crewman
 	{
 		scope=2;
