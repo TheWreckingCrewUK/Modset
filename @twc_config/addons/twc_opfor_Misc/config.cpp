@@ -157,7 +157,19 @@ class CfgPatches {
 			"CUP_O_TK_Soldier_AR_Western", 
 			"CUP_O_TK_Soldier_MG_Western", 
 			"CUP_O_TK_Soldier_M_Western"
-			
+			"PLA_CW_Rifleman"
+			"PLA_CW_Marksman"
+			"PLA_CW_AT_Assistan"
+			"PLA_CW_RiflemanAT"
+			"PLA_CW_MG_Assistant"
+			"PLA_CW_Machinegunner"
+			"PLA_CW_Teamleader"
+			"PLA_CW_Squadleader"
+			"PLA_CW_Officer"
+			"PLA_CW_Sniper"
+			"PLA_CW_Spotter"
+			"PLA_CW_Crewman"
+			"PLA_CW_Pilot"
 		};
 		
 		weapons[] = {};
@@ -222,6 +234,7 @@ class CfgGroups {
 			#include "compositions\coldwar_ira.hpp"
 			#include "compositions\coldwar_aden.hpp"
 			#include "compositions\coldwar_plo.hpp"
+			#include "compositions\coldwar_pla.hpp"
 		};
 		
 		class TWC_Operation_Opfor_Millennial {
@@ -289,8 +302,8 @@ class CfgVehicles {
 	
 	#include "units\iraq.hpp"
 	#include "vehicles\iraq_heli.hpp"
-	
 	#include "units\african.hpp"
+	#include "units\placw.hpp"
 	
 	/* UNITS - INDIVIDUAL DEFINES */
 	#include "units\ira.hpp"
