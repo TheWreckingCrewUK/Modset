@@ -159,7 +159,7 @@ class CfgPatches {
 			"CUP_O_TK_Soldier_M_Western"
 			"PLA_CW_Rifleman"
 			"PLA_CW_Marksman"
-			"PLA_CW_AT_Assistan"
+			"PLA_CW_AT_Assistant"
 			"PLA_CW_RiflemanAT"
 			"PLA_CW_MG_Assistant"
 			"PLA_CW_Machinegunner"
