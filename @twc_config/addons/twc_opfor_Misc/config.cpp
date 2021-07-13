@@ -154,21 +154,21 @@ class CfgPatches {
 			"TWC_Operations_Opfor_Iraq_Mi8",
 			"TWC_Operations_Opfor_Iraq_Mi24",
 			"CUP_O_TK_Crew_Western",
-			"CUP_O_TK_Soldier_AR_Western", 
-			"CUP_O_TK_Soldier_MG_Western", 
-			"CUP_O_TK_Soldier_M_Western"
-			"PLA_CW_Rifleman"
-			"PLA_CW_Marksman"
-			"PLA_CW_AT_Assistant"
-			"PLA_CW_RiflemanAT"
-			"PLA_CW_MG_Assistant"
-			"PLA_CW_Machinegunner"
-			"PLA_CW_Teamleader"
-			"PLA_CW_Squadleader"
-			"PLA_CW_Officer"
-			"PLA_CW_Sniper"
-			"PLA_CW_Spotter"
-			"PLA_CW_Crewman"
+			"CUP_O_TK_Soldier_AR_Western",
+			"CUP_O_TK_Soldier_MG_Western",
+			"CUP_O_TK_Soldier_M_Western",
+			"PLA_CW_Rifleman",
+			"PLA_CW_Marksman",
+			"PLA_CW_AT_Assistant",
+			"PLA_CW_RiflemanAT",
+			"PLA_CW_MG_Assistant",
+			"PLA_CW_Machinegunner",
+			"PLA_CW_Teamleader",
+			"PLA_CW_Squadleader",
+			"PLA_CW_Officer",
+			"PLA_CW_Sniper",
+			"PLA_CW_Spotter",
+			"PLA_CW_Crewman",
 			"PLA_CW_Pilot"
 		};
 		

@@ -121,7 +121,7 @@ class TWC_Operation_Opfor_ColdWar_PLA {
 			position[] = {2,0,0}; //Position in the formation
 		};
 	};
-		class TWC_Operation_Opfor_ColdWar_PLA_Vehicle_Crew {
+	class TWC_Operation_Opfor_ColdWar_PLA_Vehicle_Crew {
 		name = "Vehicle Crew"; //Name of Group
 		faction = "TWC_PLACW_Units"; //Faction
 		side = 0; //Side
