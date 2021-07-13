@@ -34,4 +34,7 @@ class CfgEditorSubCategories {
 	class TWC_FARC_Men {
 		displayName = "Men (FARC)";
 	};
+	class TWC_PLACW_Men {
+		displayName = "Men (People's Liberation Army: Cold War)";
+	};
 };

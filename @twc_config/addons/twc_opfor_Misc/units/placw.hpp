@@ -1,0 +1,503 @@
+class PLA_CW_Base: O_Soldier_base_F
+{
+	_generalMacro="PLA_CW_base";
+	author="Ross";
+	scope=1;
+	displayName="PLA Soldier Base";
+	faction="TWC_PLACW_Units";
+	vehicleClass="Men_PLA_CW";
+	nakedUniform="U_BasicBody";
+	genericNames="ChineseMen";
+	identityTypes[]=
+	{
+		"LanguageCHI_F",
+		"Head_Asian",
+		"G_CIVIL_male"
+	};
+};
+
+class PLA_CW_Rifleman: PLA_CW_Base
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Rifleman";
+	uniformClass="CUP_U_B_BDUv2_M81";
+	backpack="PLA_CW_Backpack_Rifleman";
+	linkedItems[]=
+	{
+		"cwr3_o_vest_chicom_beltkit_ak74",
+		"cwr3_b_uk_headgear_parahelmet_olive",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_O_SLA_Carrier_Belt02",
+		"CUP_H_SLA_Helmet",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AK47"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AK47"
+	};
+	magazines[]=
+	{
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_30Rnd_762x39_AK47_M",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Items[]=
+	{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_tourniquet"
+	};
+	respawnItems[]=
+	{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_tourniquet"
+	};
+};
+class PLA_CW_Marksman: PLA_CW_Rifleman
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Marksman";
+	backpack="PLA_CW_Backpack_Rifleman";
+	icon="iconMan";
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_SKS"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_SKS"
+	};
+	magazines[]=
+	{
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_10Rnd_762x39_SKS_M",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+};
+class PLA_CW_AT_Assistant: PLA_CW_Rifleman
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Assistant AT";
+	icon="iconManAT";
+	backpack="PLA_CW_Backpack_AT";
+};
+class PLA_CW_RiflemanAT: PLA_CW_Rifleman
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Rifleman AT";
+	icon="iconManAT";
+	backpack="PLA_CW_Backpack_AT";
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AK47",
+		"CUP_launch_RPG7V"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_AK47",
+		"CUP_launch_RPG7V"
+	};
+};
+class PLA_CW_MG_Assistant: PLA_CW_Rifleman
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Assistant MG";
+	backpack="PLA_CW_Backpack_MG";
+	icon="iconManMG";
+};
+class PLA_CW_Machinegunner: PLA_CW_Rifleman
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Machine Gunner";
+	backpack="PLA_CW_Backpack_MG";
+	icon="iconManMG";
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_lmg_UK59"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_lmg_UK59"
+	};
+	magazines[]=
+	{
+		"CUP_50Rnd_UK59_762x54R_Tracer",
+		"CUP_50Rnd_UK59_762x54R_Tracer",
+		"CUP_50Rnd_UK59_762x54R_Tracer",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_50Rnd_UK59_762x54R_Tracer",
+		"CUP_50Rnd_UK59_762x54R_Tracer",
+		"CUP_50Rnd_UK59_762x54R_Tracer",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+};
+class PLA_CW_Teamleader: PLA_CW_Rifleman
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Team Leader";
+	backpack="PLA_CW_Backpack_Rifleman";
+};
+class PLA_CW_Squadleader: PLA_CW_Rifleman
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Squad Leader";
+	icon="iconManLeader";
+	backpack="PLA_CW_Backpack_Rifleman";
+	linkedItems[]=
+	{
+		"cwr3_o_vest_chicom_beltkit_ak74",
+		"cwr3_b_uk_headgear_parahelmet_olive",
+		"ItemCompass",
+		"ItemWatch",
+		"itemMap",
+		"ItemRadio"
+	};
+	respawnLinkedItems[]=
+	{
+		"cwr3_o_vest_chicom_beltkit_ak74",
+		"cwr3_b_uk_headgear_parahelmet_olive",
+		"ItemCompass",
+		"ItemWatch",
+		"itemMap",
+		"ItemRadio"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"Binocular",
+		"CUP_arifle_AK47"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"Binocular",
+		"CUP_arifle_AK47"
+	};
+};
+class PLA_CW_Officer: PLA_CW_Rifleman
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Officer";
+	icon="iconManOfficer";
+	linkedItems[]=
+	{
+		"cwr3_o_vest_beltkit_ak74",
+		"CUP_H_US_patrol_cap_WDL",
+		"ItemCompass",
+		"ItemWatch",
+		"itemMap",
+		"ItemRadio"
+	};
+	respawnLinkedItems[]=
+	{
+		"cwr3_o_vest_beltkit_ak74",
+		"CUP_H_US_patrol_cap_WDL",
+		"ItemCompass",
+		"ItemWatch",
+		"itemMap",
+		"ItemRadio"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"Binocular",
+		"CUP_arifle_Sa58V_Wood"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"Binocular",
+		"CUP_arifle_Sa58V_Wood"
+	};
+	magazines[]=
+	{
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"SmokeShell"
+	};
+};
+class PLA_CW_Sniper: PLA_CW_Rifleman
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Sniper";
+	icon="iconMan";
+	linkedItems[]=
+	{
+		"cwr3_o_vest_beltkit_ak74",
+		"cwr3_b_uk_headgear_parahelmet_camo",
+		"ItemCompass",
+		"ItemWatch",
+		"ItemRadio"
+	};
+	respawnLinkedItems[]=
+	{
+		"cwr3_o_vest_beltkit_ak74",
+		"cwr3_b_uk_headgear_parahelmet_camo",
+		"ItemCompass",
+		"ItemWatch",
+		"ItemRadio"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_srifle_SVD_pso"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_srifle_SVD_pso"
+	};
+	magazines[]=
+	{
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"CUP_10Rnd_762x54_SVD_M",
+		"SmokeShell"
+	};
+};
+class PLA_CW_Spotter: PLA_CW_Rifleman
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Spotter";
+	icon="iconMan";
+	linkedItems[]=
+	{
+		"cwr3_o_vest_beltkit_ak74",
+		"cwr3_b_uk_headgear_parahelmet_camo",
+		"ItemCompass",
+		"ItemWatch",
+		"itemMap",
+		"ItemRadio"
+	};
+	respawnLinkedItems[]=
+	{
+		"cwr3_o_vest_beltkit_ak74",
+		"cwr3_b_uk_headgear_parahelmet_camo",
+		"ItemCompass",
+		"ItemWatch",
+		"itemMap",
+		"ItemRadio"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"Binocular",
+		"CUP_arifle_AK47"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"Binocular",
+		"CUP_arifle_AK47"
+	};
+};
+class PLA_CW_Crewman: PLA_CW_Base
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Vehicle Crew";
+	icon="iconMan";
+	uniformClass="CUP_U_O_RUS_M88_MSV";
+	linkedItems[]=
+	{
+		"cwr3_o_vest_beltkit_ak74",
+		"cwr3_o_headgear_tsh3",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	respawnLinkedItems[]=
+	{
+		"cwr3_o_vest_beltkit_ak74",
+		"cwr3_o_headgear_tsh3",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_Sa58V_Wood"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_Sa58V_Wood"
+	};
+	magazines[]=
+	{
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"SmokeShell"
+	};
+};
+class PLA_CW_Pilot: PLA_CW_Crewman
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Pilot";
+	icon="iconMan";
+	linkedItems[]=
+	{
+		"cwr3_o_vest_beltkit_ak74",
+		"cwr3_o_headgear_tsh3",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	respawnLinkedItems[]=
+	{
+		"cwr3_o_vest_beltkit_ak74",
+		"cwr3_o_headgear_tsh3",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_Sa58V_Wood"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"CUP_arifle_Sa58V_Wood"
+	};
+	magazines[]=
+	{
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"CUP_30Rnd_Sa58_M",
+		"SmokeShell"
+	};
+};
