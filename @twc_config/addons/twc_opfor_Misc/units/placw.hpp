@@ -4,7 +4,7 @@ class PLA_CW_Base: O_Soldier_base_F
 	author="Ross";
 	scope=1;
 	displayName="PLA Soldier Base";
-	faction="pla_cw_units";
+	faction="TWC_PLACW_Units";
 	vehicleClass="Men_PLA_CW";
 	nakedUniform="U_BasicBody";
 	genericNames="ChineseMen";
@@ -80,7 +80,7 @@ class PLA_CW_Rifleman: PLA_CW_Base
 		"ACE_morphine",
 		"ACE_tourniquet"
 	};
-	respawntems[]=
+	respawnItems[]=
 	{
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -332,13 +332,13 @@ class PLA_CW_Sniper: PLA_CW_Rifleman
 	{
 		"Throw",
 		"Put",
-		"CUP_srifle_SVD"
+		"CUP_srifle_SVD_pso"
 	};
 	respawnweapons[]=
 	{
 		"Throw",
 		"Put",
-		"CUP_srifle_SVD"
+		"CUP_srifle_SVD_pso"
 	};
 	magazines[]=
 	{

@@ -180,7 +180,8 @@ class CfgPatches {
 			"A3_Characters_F_Common",
 			"A3_Characters_F",
 			"a3_characters_f_beta",
-			"a3_characters_f_gamma"
+			"a3_characters_f_gamma",
+			"CUP_Creatures_People_LoadOrder"
 		};
 	};
 };
@@ -287,6 +288,12 @@ class CfgVehicles {
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 
 	#include "vehicles\backpacks.hpp"
+	
+	//Open your uniforms, stop having them be closed
+	class CUP_B_USArmy_Soldier_BDUv2_base;
+	class CUP_B_USArmy_Soldier_BDUv2_M81: CUP_B_USArmy_Soldier_BDUv2_base {
+		modelSides[] = {0,1,2,3,4,5,6,7};
+	};
 
 	class B_Soldier_base_F;
 	class SoldierEB;
