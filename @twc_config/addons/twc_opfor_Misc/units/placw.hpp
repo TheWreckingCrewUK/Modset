@@ -461,14 +461,14 @@ class PLA_CW_Pilot: PLA_CW_Crewman
 	linkedItems[]=
 	{
 		"cwr3_o_vest_beltkit_ak74",
-		"cwr3_o_headgear_tsh3",
+		"cwr3_o_headgear_zsh5_visor",
 		"ItemCompass",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
 		"cwr3_o_vest_beltkit_ak74",
-		"cwr3_o_headgear_tsh3",
+		"cwr3_o_headgear_zsh5_visor",
 		"ItemCompass",
 		"ItemWatch"
 	};
