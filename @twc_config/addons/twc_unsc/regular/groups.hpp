@@ -78,7 +78,6 @@ class TWC_Groups_UNSC_ODST\
 		}; \
 	}; \
 }; \
-{ \
 class TWC_Groups_UNSC_Spartan\
 { \
 	name = __EVAL("Infantry Spartan"); \
