@@ -77,6 +77,8 @@ class TWC_Groups_UNSC_ODST\
 			position[] = {6,0,0}; \
 		}; \
 	}; \
+}; \
+{ \
 class TWC_Groups_UNSC_Spartan\
 { \
 	name = __EVAL("Infantry Spartan"); \
@@ -114,6 +116,7 @@ class TWC_Groups_UNSC_Spartan\
 			position[] = {6,0,0}; \
 		}; \
 	}; \
+} \
 
 REGULAR_GROUPS(ODST)
 REGULAR_GROUPS(Spartan)
