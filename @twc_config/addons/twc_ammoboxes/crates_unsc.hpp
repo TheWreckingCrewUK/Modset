@@ -1,7 +1,8 @@
 /*
 	"TWC_AmmoBox_ODST_Team_Portable",
-	"TWC_AmmoBox_Modern_Section_Portable",
-	"TWC_AmmoBox_Modern_Javelin_Portable",
+	"TWC_AmmoBox_Spartan_Team_Portable",
+	"TWC_AmmoBox_FAC_Portable",
+	"TWC_AmmoBox_Rocket_Portable",
 
 */
 class TWC_AmmoBox_ODST_Team_Portable: TWC_AmmoBox_Portable {
