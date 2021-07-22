@@ -2,7 +2,7 @@
 //Team
 class TWC_Infantry_Spartan_RiflemanAT: TWC_Infantry_Spartan_Base
 {
-	displayName = "Rifleman AT";
+	displayName = "Spartan AT Specialist";
 	backpack = "TWC_Backpack_Spartan_AT";
 	linkedItems[] =
 	{
@@ -56,7 +56,7 @@ class TWC_Infantry_Spartan_RiflemanAT: TWC_Infantry_Spartan_Base
 };
 class TWC_Infantry_Spartan_Sniper: TWC_Infantry_Spartan_Base
 {
-	displayName = "Sniper";
+	displayName = "Spartan Sniper";
 	linkedItems[] =
 	{
 		"OPTRE_MJOLNIR_Mk4Armor",
@@ -108,7 +108,7 @@ class TWC_Infantry_Spartan_Sniper: TWC_Infantry_Spartan_Base
 };
 class TWC_Infantry_Spartan_AutoRifleman: TWC_Infantry_Spartan_Base
 {
-	displayName = "Auto-Rifleman";
+	displayName = "Spartan Auto-Rifleman";
 	linkedItems[] =
 	{
 		"OPTRE_MJOLNIR_MkVBArmor",
@@ -158,7 +158,7 @@ class TWC_Infantry_Spartan_AutoRifleman: TWC_Infantry_Spartan_Base
 };
 class TWC_Infantry_Spartan_TeamLeader: TWC_Infantry_Spartan_Base
 {
-	displayName = "Team Leader";
+	displayName = "Spartan Team Leader";
 	backpack = "TWC_Backpack_Spartan_TeamLeader";
 	TWC_isCommandRole = 1;
 	linkedItems[] =

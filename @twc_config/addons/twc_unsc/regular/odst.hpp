@@ -92,7 +92,7 @@ class TWC_Infantry_ODST_ExplosiveSpec: TWC_Infantry_ODST_Base
 };
 class TWC_Infantry_ODST_RiflemanAT: TWC_Infantry_ODST_Base
 {
-	displayName = "Rifleman AT";
+	displayName = "AT Specialist";
 	backpack = "TWC_Backpack_ODST_AT";
 	weapons[] =
 	{
