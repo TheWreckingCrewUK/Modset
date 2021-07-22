@@ -7,6 +7,8 @@ class TWC_Backpack_ODST_Spec: OPTRE_ILCS_Rucksack_Black_Heavy;
 	class TransportItems {
 		ADD_ITEM(C12_Remote_Mag,2);
 		ADD_ITEM(C7_Remote_Mag,3);
+		ADD_ITEM(ACE_wirecutter,1);
+		ADD_ITEM(ACE_Clacker,1);
 	};
 	class TransportMagazines {
 		ADD_MAGA(OPTRE_M9_Frag,8);
