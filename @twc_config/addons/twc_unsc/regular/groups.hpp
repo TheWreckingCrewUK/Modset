@@ -1,7 +1,7 @@
 #define REGULAR_GROUPS(CAMO) \
-class TWC_Groups_UNSC_##CAMO \
+class TWC_Groups_UNSC_ODST\
 { \
-	name = __EVAL("Infantry (" + #CAMO + ")"); \
+	name = __EVAL("Infantry ODST"); \
 	class ODST_Team \
 	{ \
 		name = "ODST Team"; \
@@ -77,6 +77,9 @@ class TWC_Groups_UNSC_##CAMO \
 			position[] = {6,0,0}; \
 		}; \
 	}; \
+class TWC_Groups_UNSC_Spartan\
+{ \
+	name = __EVAL("Infantry Spartan"); \
 	class Spartan_Team \
 	{ \
 		name = "Spartan Team"; \
