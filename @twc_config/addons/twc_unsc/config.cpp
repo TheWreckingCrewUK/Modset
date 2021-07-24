@@ -23,6 +23,7 @@ class CfgWeapons
 class CfgVehicles
 {
 	#include "backpacks.hpp"
+	#include "crates_unsc.hpp"
 
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
