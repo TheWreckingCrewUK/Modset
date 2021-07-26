@@ -3,6 +3,7 @@
 	"TWC_AmmoBox_Spartan_Team_Portable",
 	"TWC_AmmoBox_FAC_Portable",
 	"TWC_AmmoBox_Rocket_Portable",
+	"TWC_AmmoBox_Explosives_Portable",
 
 */
 class TWC_AmmoBox_ODST_Team_Portable: TWC_AmmoBox_Portable {
@@ -24,28 +25,28 @@ class TWC_AmmoBox_ODST_Team_Portable: TWC_AmmoBox_Portable {
 	
 	class TransportMagazines {
 		// Assault Rifle
-		ADD_MAGA(OPTRE_32Rnd_762x51_Mag, 16);
-		ADD_MAGA(OPTRE_32Rnd_762x51_Mag_Tracer, 4);
+		ADD_MAGA(OPTRE_32Rnd_762x51_Mag, 810);
+		ADD_MAGA(OPTRE_32Rnd_762x51_Mag_Tracer, 5);
 		
 		// Auto Rifle
-		ADD_MAGA(OPTRE_200Rnd_95x40_Box_Tracer, 2);
+		ADD_MAGA(OPTRE_200Rnd_95x40_Box_Tracer, 5);
 		
 		// L42A1 DMR
-		ADD_MAGA(OPTRE_15Rnd_762x51_Mag_Tracer, 6);
+		ADD_MAGA(OPTRE_15Rnd_762x51_Mag_Tracer, 15);
 		
 		// Battle Rifle
-		ADD_MAGA(OPTRE_36Rnd_95x40_Mag, 4);
-		ADD_MAGA(OPTRE_36Rnd_95x40_Mag_Tracer, 2);
+		ADD_MAGA(OPTRE_36Rnd_95x40_Mag, 10);
+		ADD_MAGA(OPTRE_36Rnd_95x40_Mag_Tracer, 5);
 		
 		//Pistol
 		ADD_MAGA(OPTRE_8Rnd_127x40_AP_Mag, 10);
 		
 		//SMG
-		ADD_MAGA(OPTRE_60Rnd_5x23mm_Mag, 2);
+		ADD_MAGA(OPTRE_60Rnd_5x23mm_Mag, 20);
 		
 		// UGL 40mm
-		ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
-		ADD_MAGA(1Rnd_Smoke_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_HE_Grenade_shell, 12);
+		ADD_MAGA(1Rnd_Smoke_Grenade_shell, 5);
 		ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 2);
 		ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 2);
 		ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 2);
@@ -56,7 +57,7 @@ class TWC_AmmoBox_ODST_Team_Portable: TWC_AmmoBox_Portable {
 		ADD_MAGA(SmokeShellBlue, 2);
 
 		// Hand Grenade HE
-		ADD_MAGA(CUP_HandGrenade_L109A2_HE, 6);
+		ADD_MAGA(CUP_HandGrenade_L109A2_HE, 10);
 	};
 };
 class TWC_AmmoBox_Spartan_Team_Portable: TWC_AmmoBox_Portable {
@@ -78,26 +79,26 @@ class TWC_AmmoBox_Spartan_Team_Portable: TWC_AmmoBox_Portable {
 	
 	class TransportMagazines {
 		// Assault Rifle
-		ADD_MAGA(OPTRE_32Rnd_762x51_Mag, 16);
-		ADD_MAGA(OPTRE_32Rnd_762x51_Mag_Tracer, 4);
+		ADD_MAGA(OPTRE_32Rnd_762x51_Mag, 20);
+		ADD_MAGA(OPTRE_32Rnd_762x51_Mag_Tracer, 5);
 		
 		// Auto Rifle
-		ADD_MAGA(OPTRE_200Rnd_95x40_Box_Tracer, 4);
+		ADD_MAGA(OPTRE_200Rnd_95x40_Box_Tracer, 5);
 		
 		// Sniper
-		ADD_MAGA(OPTRE_4Rnd_145x114_APFSDS_Mag, 6);
-		ADD_MAGA(OPTRE_4Rnd_145x114_HVAP_Mag, 6);
-		ADD_MAGA(OPTRE_4Rnd_145x114_HEDP_Mag, 6);
+		ADD_MAGA(OPTRE_4Rnd_145x114_APFSDS_Mag, 10);
+		ADD_MAGA(OPTRE_4Rnd_145x114_HVAP_Mag, 10);
+		ADD_MAGA(OPTRE_4Rnd_145x114_HEDP_Mag, 10);
 
 		//Pistol
 		ADD_MAGA(OPTRE_8Rnd_127x40_AP_Mag, 10);
 		
 		//SMG
-		ADD_MAGA(OPTRE_60Rnd_5x23mm_Mag, 4);
+		ADD_MAGA(OPTRE_60Rnd_5x23mm_Mag, 8);
 		
 		// UGL 40mm
-		ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
-		ADD_MAGA(1Rnd_Smoke_Grenade_shell, 2);
+		ADD_MAGA(1Rnd_HE_Grenade_shell, 12);
+		ADD_MAGA(1Rnd_Smoke_Grenade_shell, 5);
 		ADD_MAGA(1Rnd_SmokeGreen_Grenade_shell, 2);
 		ADD_MAGA(1Rnd_SmokeRed_Grenade_shell, 2);
 		ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell, 2);
@@ -149,5 +150,18 @@ class TWC_AmmoBox_Rocket_Portable: TWC_AmmoBox_Launcher_Portable {
 		// Rocket Launcher
 		ADD_MAGA(OPTRE_M41_Twin_HEAP,4);
 		ADD_MAGA(OPTRE_M41_Twin_HEAT,4);
+	};
+};
+class TWC_AmmoBox_Explosives_Portable: TWC_AmmoBox_Launcher_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Explosives Resupply (Portable)";
+	
+	editorSubcategory = "TWC_Crates_UNSC";
+
+	class TransportItems {
+		ADD_ITEM(C12_Remote_Mag,8);
+		ADD_ITEM(C7_Remote_Mag,12);
+		ADD_ITEM(ACE_Clacker,3);
 	};
 };

@@ -22,8 +22,7 @@ class TWC_Backpack_ODST_AT: OPTRE_ILCS_Rucksack_Black_Heavy;
 	class TransportMagazines {
 		ADD_MAGA(OPTRE_M41_Twin_HEAP,1);
 		ADD_MAGA(OPTRE_M41_Twin_HEAT,2);
-		ADD_MAGA(OPTRE_32Rnd_762x51_Mag,2);
-		ADD_MAGA(OPTRE_32Rnd_762x51_Mag,1);
+		ADD_MAGA(OPTRE_60Rnd_5x23mm_Mag,5);
 	};
 };
 
@@ -37,8 +36,9 @@ class TWC_Backpack_ODST_Marksman: OPTRE_ILCS_Rucksack_Black;
 		ADD_MAGA(OPTRE_M41_Twin_HEAT,1);
 		ADD_MAGA(OPTRE_36Rnd_95x40_Mag,1);
 		ADD_MAGA(OPTRE_36Rnd_95x40_Mag_Tracer,1);
-		ADD_MAGA(OPTRE_32Rnd_762x51_Mag,4);
-		ADD_MAGA(OPTRE_15Rnd_762x51_Mag_Tracer,4);
+		ADD_MAGA(OPTRE_32Rnd_762x51_Mag,2);
+		ADD_MAGA(OPTRE_15Rnd_762x51_Mag_Tracer,2);
+		ADD_MAGA(OPTRE_60Rnd_5x23mm_Mag,4);
 	};
 };
 

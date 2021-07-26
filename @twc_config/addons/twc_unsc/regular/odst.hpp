@@ -96,7 +96,7 @@ class TWC_Infantry_ODST_RiflemanAT: TWC_Infantry_ODST_Base
 	backpack = "TWC_Backpack_ODST_AT";
 	weapons[] =
 	{
-		"TWC_Weapon_MA5C",
+		"TWC_Weapon_M7S",
 		"OPTRE_M41_SSR"
 		"TWC_Weapon_M6G"
 		"OPTRE_Binoculars"
@@ -105,7 +105,7 @@ class TWC_Infantry_ODST_RiflemanAT: TWC_Infantry_ODST_Base
 	};
 	respawnweapons[] =
 	{
-		"TWC_Weapon_MA5C",
+		"TWC_Weapon_M7S",
 		"OPTRE_M41_SSR"
 		"TWC_Weapon_M6G"
 		"Throw",
@@ -113,16 +113,14 @@ class TWC_Infantry_ODST_RiflemanAT: TWC_Infantry_ODST_Base
 	};
 	magazines[] =
 	{
-		MAG_6("OPTRE_32Rnd_762x51_Mag"),
-		MAG_2("OPTRE_32Rnd_762x51_Mag_Tracer"),
+		MAG_15("OPTRE_60Rnd_5x23mm_Mag"),
 		MAG_2("OPTRE_8Rnd_127x40_AP_Mag"),
 		MAG_2("OPTRE_M9_Frag"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
-		MAG_6("OPTRE_32Rnd_762x51_Mag"),
-		MAG_2("OPTRE_32Rnd_762x51_Mag_Tracer"),
+		MAG_15("OPTRE_60Rnd_5x23mm_Mag"),
 		MAG_2("OPTRE_8Rnd_127x40_AP_Mag"),
 		MAG_2("OPTRE_M9_Frag"),
 		MAG_2("SmokeShell")
