@@ -6,6 +6,9 @@
 	"TWC_AmmoBox_Explosives_Portable",
 
 */
+class TWC_AmmoBox_Portable;
+class TWC_AmmoBox_Launcher_Portable;
+
 class TWC_AmmoBox_ODST_Team_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;

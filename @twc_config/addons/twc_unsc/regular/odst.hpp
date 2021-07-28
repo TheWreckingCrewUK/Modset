@@ -8,15 +8,15 @@ class TWC_Infantry_ODST_Rifleman: TWC_Infantry_ODST_Base
 	weapons[] =
 	{
 		"TWC_Weapon_MA5C",
-		"TWC_Weapon_M6G"
-		"OPTRE_Binoculars"
+		"TWC_Weapon_M6G",
+		"OPTRE_Binoculars",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_MA5C",
-		"TWC_Weapon_M6G"
+		"TWC_Weapon_M6G",
 		"Throw",
 		"Put"
 	};
@@ -39,6 +39,7 @@ class TWC_Infantry_ODST_Rifleman: TWC_Infantry_ODST_Base
 };
 class TWC_Infantry_ODST_ExplosiveSpec: TWC_Infantry_ODST_Base
 {
+	scope = 2;
 	displayName = "Explosive Specialist";
 	backpack = "TWC_Backpack_ODST_Spec";
 	linkedItems[] =
@@ -92,22 +93,23 @@ class TWC_Infantry_ODST_ExplosiveSpec: TWC_Infantry_ODST_Base
 };
 class TWC_Infantry_ODST_RiflemanAT: TWC_Infantry_ODST_Base
 {
+	scope = 2;
 	displayName = "AT Specialist";
 	backpack = "TWC_Backpack_ODST_AT";
 	weapons[] =
 	{
 		"TWC_Weapon_M7S",
-		"OPTRE_M41_SSR"
-		"TWC_Weapon_M6G"
-		"OPTRE_Binoculars"
+		"OPTRE_M41_SSR",
+		"TWC_Weapon_M6G",
+		"OPTRE_Binoculars",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_M7S",
-		"OPTRE_M41_SSR"
-		"TWC_Weapon_M6G"
+		"OPTRE_M41_SSR",
+		"TWC_Weapon_M6G",
 		"Throw",
 		"Put"
 	};
@@ -128,6 +130,7 @@ class TWC_Infantry_ODST_RiflemanAT: TWC_Infantry_ODST_Base
 };
 class TWC_Infantry_ODST_Marksman: TWC_Infantry_ODST_Base
 {
+	scope = 2;
 	displayName = "Designated Marksman";
 	backpack = "TWC_Backpack_ODST_Marksman";
 	linkedItems[] =
@@ -150,7 +153,7 @@ class TWC_Infantry_ODST_Marksman: TWC_Infantry_ODST_Base
 	{
 		"TWC_Weapon_M392",
 		"TWC_Weapon_M6G",
-		"OPTRE_Smartfinder"
+		"OPTRE_Smartfinder",
 		"Throw",
 		"Put"
 	};
@@ -158,7 +161,7 @@ class TWC_Infantry_ODST_Marksman: TWC_Infantry_ODST_Base
 	{
 		"TWC_Weapon_M392",
 		"TWC_Weapon_M6G",
-		"OPTRE_Smartfinder"
+		"OPTRE_Smartfinder",
 		"Throw",
 		"Put"
 	};
@@ -177,21 +180,22 @@ class TWC_Infantry_ODST_Marksman: TWC_Infantry_ODST_Base
 };
 class TWC_Infantry_ODST_AutoRifleman: TWC_Infantry_ODST_Base
 {
+	scope = 2;
 	displayName = "Auto-Rifleman";
 	backpack = "TWC_Backpack_ODST_AutoRifleman";
 	weapons[] =
 	{
 		"TWC_Weapon_M73",
-		"TWC_Weapon_M6G"
-		"OPTRE_Binoculars"
+		"TWC_Weapon_M6G",
+		"OPTRE_Binoculars",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_M73",
-		"TWC_Weapon_M6G"
-		"OPTRE_Binoculars"
+		"TWC_Weapon_M6G",
+		"OPTRE_Binoculars",
 		"Throw",
 		"Put"
 	};
@@ -199,19 +203,20 @@ class TWC_Infantry_ODST_AutoRifleman: TWC_Infantry_ODST_Base
 	{
 		"OPTRE_200Rnd_95x40_Box_Tracer",
 		MAG_2("OPTRE_8Rnd_127x40_AP_Mag"),
-		"OPTRE_M9_Frag"
+		"OPTRE_M9_Frag",
 		"SmokeShell"
 	};
 	respawnmagazines[] =
 	{
 		"OPTRE_200Rnd_95x40_Box_Tracer",
 		MAG_2("OPTRE_8Rnd_127x40_AP_Mag"),
-		"OPTRE_M9_Frag"
+		"OPTRE_M9_Frag",
 		"SmokeShell"
 	};
 };
 class TWC_Infantry_ODST_TeamLeader: TWC_Infantry_ODST_Base
 {
+	scope = 2;
 	displayName = "Team Leader";
 	backpack = "TWC_Backpack_ODST_TeamLeader";
 	TWC_isCommandRole = 1;
@@ -246,16 +251,16 @@ class TWC_Infantry_ODST_TeamLeader: TWC_Infantry_ODST_Base
 	weapons[] =
 	{
 		"TWC_Weapon_MA5CGL",
-		"TWC_Weapon_M6G"
-		"OPTRE_Smartfinder"
+		"TWC_Weapon_M6G",
+		"OPTRE_Smartfinder",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_MA5CGL",
-		"TWC_Weapon_M6G"
-		"OPTRE_Smartfinder"
+		"TWC_Weapon_M6G",
+		"OPTRE_Smartfinder",
 		"Throw",
 		"Put"
 	};
@@ -289,6 +294,7 @@ class TWC_Infantry_ODST_Squad2ic: TWC_Infantry_ODST_TeamLeader
 };
 class TWC_Infantry_ODST_Corpsman: TWC_Infantry_ODST_Base
 {
+	scope = 2;
 	displayName = "Squad Corpsman";
 	backpack = "TWC_Backpack_ODST_Corpsman";
 	attendant = 1;
@@ -344,16 +350,16 @@ class TWC_Infantry_ODST_FAC: TWC_Infantry_ODST_TeamLeader
 	{
 		MAG_5("OPTRE_32Rnd_762x51_Mag"),
 		MAG_2("SmokeShell"),
-		MAG_3(SmokeShellBlue),
-		MAG_3(SmokeShellRed),
-		MAG_3(SmokeShellGreen),
+		MAG_3("SmokeShellBlue"),
+		MAG_3("SmokeShellRed"),
+		MAG_3("SmokeShellGreen")
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("OPTRE_32Rnd_762x51_Mag"),
 		MAG_2("SmokeShell"),
-		MAG_3(SmokeShellBlue),
-		MAG_3(SmokeShellRed),
-		MAG_3(SmokeShellGreen),
+		MAG_3("SmokeShellBlue"),
+		MAG_3("SmokeShellRed"),
+		MAG_3("SmokeShellGreen")
 	};
 };

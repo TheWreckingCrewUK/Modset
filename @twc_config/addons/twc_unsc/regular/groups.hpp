@@ -1,5 +1,5 @@
 #define REGULAR_GROUPS(CAMO) \
-class TWC_Groups_UNSC_ODST\
+class TWC_Groups_UNSC_ODST \
 { \
 	name = __EVAL("Infantry ODST"); \
 	class ODST_Team \
@@ -115,7 +115,6 @@ class TWC_Groups_UNSC_Spartan\
 			position[] = {6,0,0}; \
 		}; \
 	}; \
-} \
+}; \
 
 REGULAR_GROUPS(ODST)
-REGULAR_GROUPS(Spartan)

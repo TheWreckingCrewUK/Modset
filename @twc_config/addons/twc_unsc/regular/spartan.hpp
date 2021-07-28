@@ -2,6 +2,7 @@
 //Team
 class TWC_Infantry_Spartan_RiflemanAT: TWC_Infantry_Spartan_Base
 {
+	scope = 2;
 	displayName = "Spartan AT Specialist";
 	backpack = "TWC_Backpack_Spartan_AT";
 	linkedItems[] =
@@ -23,17 +24,17 @@ class TWC_Infantry_Spartan_RiflemanAT: TWC_Infantry_Spartan_Base
 	weapons[] =
 	{
 		"TWC_Weapon_MA5C",
-		"OPTRE_M41_SSR"
-		"TWC_Weapon_M6G"
-		"OPTRE_Binoculars"
+		"OPTRE_M41_SSR",
+		"TWC_Weapon_M6G",
+		"OPTRE_Binoculars",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_MA5C",
-		"OPTRE_M41_SSR"
-		"TWC_Weapon_M6G"
+		"OPTRE_M41_SSR",
+		"TWC_Weapon_M6G",
 		"Throw",
 		"Put"
 	};
@@ -56,6 +57,7 @@ class TWC_Infantry_Spartan_RiflemanAT: TWC_Infantry_Spartan_Base
 };
 class TWC_Infantry_Spartan_Sniper: TWC_Infantry_Spartan_Base
 {
+	scope = 2;
 	displayName = "Spartan Sniper";
 	linkedItems[] =
 	{
@@ -77,7 +79,7 @@ class TWC_Infantry_Spartan_Sniper: TWC_Infantry_Spartan_Base
 	{
 		"TWC_Weapon_SRS99D",
 		"TWC_Weapon_M6G",
-		"OPTRE_Smartfinder"
+		"OPTRE_Smartfinder",
 		"Throw",
 		"Put"
 	};
@@ -85,7 +87,7 @@ class TWC_Infantry_Spartan_Sniper: TWC_Infantry_Spartan_Base
 	{
 		"TWC_Weapon_SRS99D",
 		"TWC_Weapon_M6G",
-		"OPTRE_Smartfinder"
+		"OPTRE_Smartfinder",
 		"Throw",
 		"Put"
 	};
@@ -108,6 +110,7 @@ class TWC_Infantry_Spartan_Sniper: TWC_Infantry_Spartan_Base
 };
 class TWC_Infantry_Spartan_AutoRifleman: TWC_Infantry_Spartan_Base
 {
+	scope = 2;
 	displayName = "Spartan Auto-Rifleman";
 	linkedItems[] =
 	{
@@ -128,16 +131,16 @@ class TWC_Infantry_Spartan_AutoRifleman: TWC_Infantry_Spartan_Base
 	weapons[] =
 	{
 		"TWC_Weapon_M73",
-		"TWC_Weapon_M6G"
-		"OPTRE_Binoculars"
+		"TWC_Weapon_M6G",
+		"OPTRE_Binoculars",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_M73",
-		"TWC_Weapon_M6G"
-		"OPTRE_Binoculars"
+		"TWC_Weapon_M6G",
+		"OPTRE_Binoculars",
 		"Throw",
 		"Put"
 	};
@@ -145,19 +148,20 @@ class TWC_Infantry_Spartan_AutoRifleman: TWC_Infantry_Spartan_Base
 	{
 		MAG_3("OPTRE_200Rnd_95x40_Box_Tracer"),
 		MAG_2("OPTRE_8Rnd_127x40_AP_Mag"),
-		"OPTRE_M9_Frag"
+		"OPTRE_M9_Frag",
 		"SmokeShell"
 	};
 	respawnmagazines[] =
 	{
 		MAG_3("OPTRE_200Rnd_95x40_Box_Tracer"),
 		MAG_2("OPTRE_8Rnd_127x40_AP_Mag"),
-		"OPTRE_M9_Frag"
+		"OPTRE_M9_Frag",
 		"SmokeShell"
 	};
 };
 class TWC_Infantry_Spartan_TeamLeader: TWC_Infantry_Spartan_Base
 {
+	scope = 2;
 	displayName = "Spartan Team Leader";
 	backpack = "TWC_Backpack_Spartan_TeamLeader";
 	TWC_isCommandRole = 1;
@@ -192,16 +196,16 @@ class TWC_Infantry_Spartan_TeamLeader: TWC_Infantry_Spartan_Base
 	weapons[] =
 	{
 		"TWC_Weapon_MA5CGL",
-		"TWC_Weapon_M6G"
-		"OPTRE_Smartfinder"
+		"TWC_Weapon_M6G",
+		"OPTRE_Smartfinder",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_MA5CGL",
-		"TWC_Weapon_M6G"
-		"OPTRE_Smartfinder"
+		"TWC_Weapon_M6G",
+		"OPTRE_Smartfinder",
 		"Throw",
 		"Put"
 	};

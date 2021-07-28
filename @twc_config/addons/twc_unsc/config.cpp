@@ -8,8 +8,31 @@ class CfgPatches
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"twc_faction",
+			"twc_ammoboxes",
 			"twc_ai"
 		};
+	};
+};
+
+class CfgFactionClasses {
+	class TWC_UNSC {
+		displayName = "TWC Operations - UNSC";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
+	};
+};
+
+class CfgEditorSubcategories {
+	class TWC_Infantry_ODST {
+		displayName = "ODST";
+	};
+	class TWC_Infantry_AirForce {
+		displayName = "Air Force";
+	};
+	class TWC_Infantry_Spartan {
+		displayName = "Spartan";
 	};
 };
 
@@ -28,6 +51,8 @@ class CfgVehicles
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
+	
+	class OPTRE_Spartan2_Soldier;
 
 	#define MEDICAL_LOADOUT "ACRE_PRC343","ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
 	#define MAG_2(a) a, a
@@ -41,6 +66,9 @@ class CfgVehicles
 	#define MAG_10(a) a, a, a, a, a, a, a, a, a, a
 	#define MAG_11(a) a, a, a, a, a, a, a, a, a, a, a
 	#define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
+	#define MAG_13(a) a, a, a, a, a, a, a, a, a, a, a, a, a
+	#define MAG_14(a) a, a, a, a, a, a, a, a, a, a, a, a, a, a
+	#define MAG_15(a) a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
 	#define CATEGORY(a) editorSubcategory = a;\
 			vehicleClass = a;
 
@@ -145,33 +173,27 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"TWC_Weapon_M7"
+			"TWC_Weapon_M7",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"TWC_Weapon_M7"
+			"TWC_Weapon_M7",
 			"Throw",
 			"Put"
 		};
 		magazines[] =
 		{
-			"OPTRE_60Rnd_5x23mm_Mag"
-			"OPTRE_60Rnd_5x23mm_Mag"
-			"OPTRE_60Rnd_5x23mm_Mag"
-			"SmokeShell",
-			"SmokeShell"
+			MAG_3("OPTRE_60Rnd_5x23mm_Mag"),
+			MAG_2("OPTRE_60Rnd_5x23mm_Mag")
 		};
 		respawnmagazines[] =
 		{
-			"OPTRE_60Rnd_5x23mm_Mag"
-			"OPTRE_60Rnd_5x23mm_Mag"
-			"OPTRE_60Rnd_5x23mm_Mag"
-			"SmokeShell",
-			"SmokeShell"
+			MAG_3("OPTRE_60Rnd_5x23mm_Mag"),
+			MAG_2("OPTRE_60Rnd_5x23mm_Mag")
 		};
-			nightItems[] = {
+		nightItems[] = {
 			MAG_2("Chemlight_green"),
 			"ACE_Flashlight_Maglite_ML300L"
 		};
@@ -205,11 +227,11 @@ class CfgVehicles
 		};
 		Items[] =
 		{
-			MEDICAL_LOADOUT,
+			MEDICAL_LOADOUT
 		};
 		respawnItems[] =
 		{
-			MEDICAL_LOADOUT,
+			MEDICAL_LOADOUT
 		};
 		weapons[] =
 		{
@@ -232,3 +254,14 @@ class CfgVehicles
 	#include "regular\spartan.hpp"
 };
 
+class CfgGroups
+{
+	class WEST
+	{
+		class TWC_Groups_UNSC
+		{
+			name = "TWC Groups UNSC";
+			#include "regular\groups.hpp"
+		};
+	};
+};

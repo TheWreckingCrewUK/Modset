@@ -8,5 +8,6 @@ class OPTRE_ILCS_Rucksack_Black_Medical;
 class OPTRE_ANPRC_521_Black;
 class OPTRE_ANPRC_521_Black_Spartan;
 class OPTRE_ILCS_Rucksack_Black_Spartan;
+class OPTRE_ILCS_Rucksack_Black_Heavy_Spartan;
 
 #include "regular\backpacks.hpp"

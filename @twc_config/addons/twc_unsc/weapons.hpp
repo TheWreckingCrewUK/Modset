@@ -1,6 +1,6 @@
 class OPTRE_M7;
 class OPTRE_MA5CGL;
-class OPTRE_MA5C
+class OPTRE_MA5C;
 class OPTRE_BR55HB;
 class OPTRE_M392_DMR;
 class OPTRE_M73;
