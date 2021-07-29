@@ -28,7 +28,7 @@ class TWC_AmmoBox_ODST_Team_Portable: TWC_AmmoBox_Portable {
 	
 	class TransportMagazines {
 		// Assault Rifle
-		ADD_MAGA(OPTRE_32Rnd_762x51_Mag, 810);
+		ADD_MAGA(OPTRE_32Rnd_762x51_Mag, 10);
 		ADD_MAGA(OPTRE_32Rnd_762x51_Mag_Tracer, 5);
 		
 		// Auto Rifle
@@ -146,7 +146,6 @@ class TWC_AmmoBox_Rocket_Portable: TWC_AmmoBox_Launcher_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "Rocket Launcher Resupply (Portable)";
-	
 	editorSubcategory = "TWC_Crates_UNSC";
 
 	class TransportMagazines {
