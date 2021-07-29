@@ -49,6 +49,7 @@ class TWC_Weapon_M7S: OPTRE_M7 {
 			slot = "MuzzleSlot";
 			item = "optre_m7_silencer";
 		};
+	};
 };
 class TWC_Weapon_BR55HB: OPTRE_BR55HB {
 	scope = 1;
