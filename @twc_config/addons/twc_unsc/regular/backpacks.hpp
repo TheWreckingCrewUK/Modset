@@ -1,6 +1,6 @@
 //ODST
 //Team
-class TWC_Backpack_ODST_Spec: OPTRE_ILCS_Rucksack_Black_Heavy
+class TWC_Backpack_ODST_Spec: OPTRE_ILCS_Rucksack_Heavy
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -15,7 +15,7 @@ class TWC_Backpack_ODST_Spec: OPTRE_ILCS_Rucksack_Black_Heavy
 	};
 };
 
-class TWC_Backpack_ODST_AT: OPTRE_ILCS_Rucksack_Black_Heavy
+class TWC_Backpack_ODST_AT: OPTRE_ILCS_Rucksack_Heavy
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -42,7 +42,7 @@ class TWC_Backpack_ODST_Marksman: OPTRE_ILCS_Rucksack_Black
 	};
 };
 
-class TWC_Backpack_ODST_AutoRifleman: OPTRE_ILCS_Rucksack_Black_Heavy
+class TWC_Backpack_ODST_AutoRifleman: OPTRE_ILCS_Rucksack_Heavy
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -71,7 +71,7 @@ class TWC_Backpack_ODST_TeamLeader: OPTRE_ILCS_Rucksack_Black
 	};
 };
 
-class TWC_Backpack_ODST_Corpsman: OPTRE_ILCS_Rucksack_Black_Medical
+class TWC_Backpack_ODST_Corpsman: OPTRE_ILCS_Rucksack_Medical
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -130,7 +130,7 @@ class TWC_Backpack_Spartan_TeamLeader: OPTRE_ANPRC_521_Black_Spartan
 	};
 };
 
-class TWC_Backpack_Spartan_AT: OPTRE_ILCS_Rucksack_Black_Heavy_Spartan
+class TWC_Backpack_Spartan_AT: OPTRE_ILCS_Rucksack_Heavy_Spartan
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -141,7 +141,7 @@ class TWC_Backpack_Spartan_AT: OPTRE_ILCS_Rucksack_Black_Heavy_Spartan
 	};
 };
 
-class TWC_Backpack_Spartan_AutoRifleman: OPTRE_ILCS_Rucksack_Black_Heavy_Spartan
+class TWC_Backpack_Spartan_AutoRifleman: OPTRE_ILCS_Rucksack_Heavy_Spartan
 {
 	scope = 1;
 	scopeArsenal = 1;
