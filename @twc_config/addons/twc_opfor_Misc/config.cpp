@@ -178,7 +178,11 @@ class CfgPatches {
 			"BurIns_MG_RPD",
 			"BurIns_MG_Bren",
 			"BurIns_SMG_M3",
-			"BurIns_SMG_Sterling"
+			"BurIns_SMG_Sterling",
+			"BurIns_AT_Specialist_Mosin",
+			"BurIns_AT_Specialist_M3",
+			"BurIns_AA_Specialist",
+			"BurIns_Crew"
 		};
 		
 		weapons[] = {};
@@ -245,6 +249,7 @@ class CfgGroups {
 			#include "compositions\coldwar_aden.hpp"
 			#include "compositions\coldwar_plo.hpp"
 			#include "compositions\coldwar_pla.hpp"
+			#include "compositions\burmese_insurgents.hpp"
 		};
 		
 		class TWC_Operation_Opfor_Millennial {

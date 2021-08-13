@@ -23,14 +23,14 @@
 		uniformClass="U_I_C_Soldier_Bandit_1_F";
 		linkedItems[]=
 		{
-			"H_Booniehat_khk",
+			"H_Hat_Safari_olive_F",
 			"cwr3_i_vest_chicom",
 			"ItemMap",
 			"ItemCompass"
 		};
 		respawnLinkedItems[]=
 		{
-			"H_Booniehat_khk",
+			"H_Hat_Safari_olive_F",
 			"cwr3_i_vest_chicom",
 			"ItemMap",
 			"ItemCompass"
@@ -536,6 +536,235 @@
 			"SP_30Rnd_9x19_L2A3_Sterling_old",
 			"SP_30Rnd_9x19_L2A3_Sterling_old",
 			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+	};
+	class BurIns_AT_Specialist_Mosin: BurIns_Rifleman_Mosin
+	{
+		scope=2;
+		scopeCurator = 2;
+		displayName="AT Specialist (Mosin-Nagant)";
+		backpack="Afr_Backpack_AT";
+		linkedItems[]=
+		{
+			"CUP_H_SLA_Helmet_URB_worn",
+			"cwr3_i_vest_chicom",
+			"ItemMap",
+			"ItemCompass"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_H_SLA_Helmet_URB_worn",
+			"cwr3_i_vest_chicom",
+			"ItemMap",
+			"ItemCompass"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"CUP_srifle_Mosin_Nagant",
+			"CUP_launch_RPG7V"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"CUP_srifle_Mosin_Nagant",
+			"CUP_launch_RPG7V"
+		};
+		magazines[]=
+		{
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell",
+			"CUP_PG7V_M"
+		};
+		Respawnmagazines[]=
+		{
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell",
+			"CUP_PG7V_M"
+		};
+	};
+	class BurIns_AT_Specialist_M3: BurIns_SMG_M3
+	{
+		scope=2;
+		scopeCurator = 2;
+		displayName="AT Specialist (M3)";
+		backpack="Afr_Backpack_AT";
+		linkedItems[]=
+		{
+			"CUP_H_SLA_Helmet_OB",
+			"cwr3_i_vest_chicom",
+			"ItemMap",
+			"ItemCompass"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_H_SLA_Helmet_OB",
+			"cwr3_i_vest_chicom",
+			"ItemMap",
+			"ItemCompass"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"CUP_smg_M3A1_blk",
+			"CUP_launch_RPG7V"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"CUP_smg_M3A1_blk",
+			"CUP_launch_RPG7V"
+		};
+		magazines[]=
+		{
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell",
+			"CUP_PG7V_M"
+		};
+		Respawnmagazines[]=
+		{
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell",
+			"CUP_PG7V_M"
+		};
+	};
+	class BurIns_AA_Specialist: BurIns_Rifleman_Enfield
+	{
+		scope=2;
+		scopeCurator = 2;
+		displayName="AA Specialist";
+		linkedItems[]=
+		{
+			"CUP_H_TKI_Lungee_Open_01",
+			"cwr3_i_vest_chicom",
+			"ItemMap",
+			"ItemCompass"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_H_TKI_Lungee_Open_01",
+			"cwr3_i_vest_chicom",
+			"ItemMap",
+			"ItemCompass"
+		};
+		weapons[]=
+		{
+			"Throw",
+			"Put",
+			"CUP_srifle_LeeEnfield",
+			"CUP_launch_9K32Strela"
+		};
+		respawnweapons[]=
+		{
+			"Throw",
+			"Put",
+			"CUP_srifle_LeeEnfield",
+			"CUP_launch_9K32Strela"
+		};
+		magazines[]=
+		{
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"CUP_10x_303_M",
+			"SmokeShell"
+		};
+	};
+	class BurIns_Crew: BurIns_SMG_M3
+	{
+		scope=2;
+		scopeCurator = 2;
+		displayName="Submachine Gunner (M3)";
+		uniformClass="cwr3_b_uniform_tanksuit";
+		linkedItems[]=
+		{
+			"cwr3_o_headgear_tsh3",
+			"cwr3_o_vest_beltkit_ak74",
+			"ItemMap",
+			"ItemCompass"
+		};
+		respawnLinkedItems[]=
+		{
+			"cwr3_o_headgear_tsh3",
+			"cwr3_o_vest_beltkit_ak74",
+			"ItemMap",
+			"ItemCompass"
+		};
+		magazines[]=
+		{
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_HandGrenade_RGO",
+			"SmokeShell"
+		};
+		Respawnmagazines[]=
+		{
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
 			"CUP_HandGrenade_RGO",
 			"SmokeShell"
 		};
