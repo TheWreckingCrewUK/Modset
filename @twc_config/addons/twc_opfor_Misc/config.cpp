@@ -154,10 +154,22 @@ class CfgPatches {
 			"TWC_Operations_Opfor_Iraq_Mi8",
 			"TWC_Operations_Opfor_Iraq_Mi24",
 			"CUP_O_TK_Crew_Western",
-			"CUP_O_TK_Soldier_AR_Western", 
-			"CUP_O_TK_Soldier_MG_Western", 
-			"CUP_O_TK_Soldier_M_Western"
-			
+			"CUP_O_TK_Soldier_AR_Western",
+			"CUP_O_TK_Soldier_MG_Western",
+			"CUP_O_TK_Soldier_M_Western",
+			"PLA_CW_Rifleman",
+			"PLA_CW_Marksman",
+			"PLA_CW_AT_Assistant",
+			"PLA_CW_RiflemanAT",
+			"PLA_CW_MG_Assistant",
+			"PLA_CW_Machinegunner",
+			"PLA_CW_Teamleader",
+			"PLA_CW_Squadleader",
+			"PLA_CW_Officer",
+			"PLA_CW_Sniper",
+			"PLA_CW_Spotter",
+			"PLA_CW_Crewman",
+			"PLA_CW_Pilot"
 		};
 		
 		weapons[] = {};
@@ -168,7 +180,8 @@ class CfgPatches {
 			"A3_Characters_F_Common",
 			"A3_Characters_F",
 			"a3_characters_f_beta",
-			"a3_characters_f_gamma"
+			"a3_characters_f_gamma",
+			"CUP_Creatures_People_LoadOrder"
 		};
 	};
 };
@@ -222,6 +235,7 @@ class CfgGroups {
 			#include "compositions\coldwar_ira.hpp"
 			#include "compositions\coldwar_aden.hpp"
 			#include "compositions\coldwar_plo.hpp"
+			#include "compositions\coldwar_pla.hpp"
 		};
 		
 		class TWC_Operation_Opfor_Millennial {
@@ -274,6 +288,12 @@ class CfgVehicles {
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 
 	#include "vehicles\backpacks.hpp"
+	
+	//Open your uniforms, stop having them be closed
+	class CUP_B_USArmy_Soldier_BDUv2_base;
+	class CUP_B_USArmy_Soldier_BDUv2_M81: CUP_B_USArmy_Soldier_BDUv2_base {
+		modelSides[] = {0,1,2,3,4,5,6,7};
+	};
 
 	class B_Soldier_base_F;
 	class SoldierEB;
@@ -289,8 +309,8 @@ class CfgVehicles {
 	
 	#include "units\iraq.hpp"
 	#include "vehicles\iraq_heli.hpp"
-	
 	#include "units\african.hpp"
+	#include "units\placw.hpp"
 	
 	/* UNITS - INDIVIDUAL DEFINES */
 	#include "units\ira.hpp"

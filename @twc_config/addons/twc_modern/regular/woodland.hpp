@@ -456,6 +456,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Platoon_Mortar: TWC_Infantry_Modern_R
 	{
 		"TWC_Weapon_L85A2_RIS_ELCAN3D",
 		"UK3CB_BAF_M6",
+		"ACE_Vector",
 		"Throw",
 		"Put"
 	};
@@ -463,6 +464,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Platoon_Mortar: TWC_Infantry_Modern_R
 	{
 		"TWC_Weapon_L85A2_RIS_ELCAN3D",
 		"UK3CB_BAF_M6",
+		"ACE_Vector",
 		"Throw",
 		"Put"
 	};
