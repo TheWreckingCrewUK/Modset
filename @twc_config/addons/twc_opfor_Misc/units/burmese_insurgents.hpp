@@ -734,7 +734,7 @@
 	{
 		scope=2;
 		scopeCurator = 2;
-		displayName="Submachine Gunner (M3)";
+		displayName="Crewman";
 		uniformClass="cwr3_b_uniform_tanksuit";
 		linkedItems[]=
 		{
