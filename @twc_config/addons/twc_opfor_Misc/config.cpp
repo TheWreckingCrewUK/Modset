@@ -169,7 +169,16 @@ class CfgPatches {
 			"PLA_CW_Sniper",
 			"PLA_CW_Spotter",
 			"PLA_CW_Crewman",
-			"PLA_CW_Pilot"
+			"PLA_CW_Pilot",
+			"BurIns_Rifleman_Enfield",
+			"BurIns_Rifleman_Mosin",
+			"BurIns_Rifleman_SKS",
+			"BurIns_Rifleman_AK",
+			"BurIns_Rifleman_AKS",
+			"BurIns_MG_RPD",
+			"BurIns_MG_Bren",
+			"BurIns_SMG_M3",
+			"BurIns_SMG_Sterling"
 		};
 		
 		weapons[] = {};
@@ -327,6 +336,7 @@ class CfgVehicles {
 	#include "units\FARC.hpp"
 	#include "units\plo.hpp"
 	#include "units\Takistani_Army.hpp"
+	#include "units\burmese_insurgents.hpp"
 };
 
 #include "CfgMarkers.hpp"
