@@ -18,7 +18,7 @@ class CfgFunctions {
 			class suppressPos {};
 
 			// Player Effect
-			class fired {};
+			class suppressed {};
 			class impact {};
 			class mainHandler {};
 			class pinnedHandler {};
