@@ -357,9 +357,9 @@ class CfgVehicles {
 		
 		class TransportMagazines {
 			// Thompson .45 ACP 30rnd
-			maga_nc(LIB_30Rnd_45ACP, 9);
+			maga_nc(LIB_30Rnd_45ACP, 20);
 
-			// Enfield .303 10rnd
+			// M1 Carbine 7.62 15rnd
 			maga_nc(LIB_15Rnd_762x33, 20);
 			maga_nc(LIB_15Rnd_762x33_t, 10);
 			
@@ -409,7 +409,7 @@ class TWC_AmmoBox_Coldwar_Malay_Portable: TWC_AmmoBox_WW2_Portable {
 		
 		class TransportMagazines {
 			// Thompson .45 ACP 30rnd
-			maga_nc(LIB_30Rnd_45ACP, 5);
+			maga_nc(LIB_30Rnd_45ACP, 10);
 			
 			// M1 Carbine 7.62 15rnd
 			maga_nc(LIB_15Rnd_762x33, 10);
