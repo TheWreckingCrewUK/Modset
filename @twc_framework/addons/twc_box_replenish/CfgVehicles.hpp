@@ -1,6 +1,6 @@
 class CfgVehicles {
 	class Logic;
-	
+
 	class Module_Base: Logic {
 		class AttributesBase;
 		class ModuleDescription;
@@ -16,7 +16,7 @@ class CfgVehicles {
 			class ModuleDescription;
 			class Units;
 		};
-		
+
 		class ModuleDescription: ModuleDescription {
 			class Player;
 		};
@@ -41,28 +41,28 @@ class CfgVehicles {
 				typeName = "NUMBER";
 				defaultValue = -1;
 			};
-			
+
 			class launcher {
 				displayName = "Launcher Resupplies";
 				description = "0 to disable, -1 for infinite.";
 				typeName = "NUMBER";
 				defaultValue = -1;
 			};
-			
+
 			class medical {
 				displayName = "Medical Resupplies";
 				description = "0 to disable, -1 for infinite.";
 				typeName = "NUMBER";
 				defaultValue = -1;
 			};
-			
+
 			class section {
 				displayName = "Section Resupplies";
 				description = "0 to disable, -1 for infinite.";
 				typeName = "NUMBER";
 				defaultValue = -1;
 			};
-			
+
 			class other {
 				displayName = "'Other' Resupplies";
 				description = "0 to disable, -1 for infinite.";
@@ -70,7 +70,7 @@ class CfgVehicles {
 				defaultValue = 0;
 			};
 		};
-		
+
 		class ModuleDescription: ModuleDescription {
 			description = "What boxes to set quantities on?";
 			sync[] = {"AnyVehicle"};
