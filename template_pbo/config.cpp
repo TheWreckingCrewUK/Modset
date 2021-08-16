@@ -7,7 +7,7 @@ class CfgPatches {
 			"TWC_Core"
 		};
 		
-		author[] = {"User 1", "User 2"};
+		author = "";
 		authorUrl = "http://thewreckingcrew.eu";
 		version = "1";
 		versionStr = "1";

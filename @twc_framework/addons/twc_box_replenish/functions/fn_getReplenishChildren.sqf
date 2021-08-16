@@ -7,7 +7,7 @@ _eligibleReplenishTargets = [];
 {
 	_ammoboxType = [(configFile >> "CfgVehicles" >> (typeOf _x)), "twc_ammobox_type", "none"] call BIS_fnc_returnConfigEntry;
 	
-	if (_x != _target && {(_resupplyAvailability findIf {(_x select 0) == _ammoboxType} != 0)}) then {
+	if (_x != _target && {(_resupplyAvailability findIf {(_x select 0) == _ammoboxType && (_x select 1) != 0} != -1)}) then {
 		_eligibleReplenishTargets pushBack [_ammoboxType, _x];
 	};
 } forEach _boxes;

@@ -12,7 +12,7 @@ class CfgPatches {
 			"twc_framework"
 		};
 
-		author[] = {"Bosenator"};
+		author = "Bosenator";
 		authorUrl = "http://thewreckingcrew.eu";
 		version = "1";
 		versionStr = "1";
@@ -21,6 +21,5 @@ class CfgPatches {
 	};
 };
 
-#include "CfgEventHandlers.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgVehicles.hpp"
