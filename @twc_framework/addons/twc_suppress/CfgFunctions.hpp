@@ -25,7 +25,10 @@ class CfgFunctions {
 			class thresholdHandler {};
 			class clearImpactEffect {};
 			class clearPinnedEffect {};
+			
+			// Shockwave
 			class shockwave {};
+			class shockwaveLocal {};
 
 			// Util
 			class readCache {};

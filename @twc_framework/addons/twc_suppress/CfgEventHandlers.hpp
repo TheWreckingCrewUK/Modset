@@ -9,3 +9,21 @@ class Extended_PostInit_EventHandlers {
 		clientInit = "call twc_suppress_fnc_postInit";
 	};
 };
+
+class Extended_Killed_EventHandlers {
+	class Car {
+		clientKilled = "_this call TWC_Suppress_fnc_shockwave";
+	};
+	
+	class Tank {
+		clientKilled = "_this call TWC_Suppress_fnc_shockwave";
+	};
+	
+	class Air {
+		clientKilled = "_this call TWC_Suppress_fnc_shockwave";
+	};
+	
+	class Ship {
+		clientKilled = "_this call TWC_Suppress_fnc_shockwave";
+	};
+};
