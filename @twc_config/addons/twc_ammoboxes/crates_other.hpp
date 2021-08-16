@@ -297,7 +297,7 @@ class TWC_AmmoBox_Other_Sergeant_Utility: TWC_AmmoBox_Portable {
 class TWC_AmmoBox_Other_Replenish: TWC_AmmoBox_Base {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "Replenish Base Box";
+	displayName = "Base Box (Replenish)";
 	
 	class ACE_Actions {
 		class ACE_MainActions {
