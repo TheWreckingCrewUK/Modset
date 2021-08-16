@@ -169,7 +169,20 @@ class CfgPatches {
 			"PLA_CW_Sniper",
 			"PLA_CW_Spotter",
 			"PLA_CW_Crewman",
-			"PLA_CW_Pilot"
+			"PLA_CW_Pilot",
+			"BurIns_Rifleman_Enfield",
+			"BurIns_Rifleman_Mosin",
+			"BurIns_Rifleman_SKS",
+			"BurIns_Rifleman_AK",
+			"BurIns_Rifleman_AKS",
+			"BurIns_MG_RPD",
+			"BurIns_MG_Bren",
+			"BurIns_SMG_M3",
+			"BurIns_SMG_Sterling",
+			"BurIns_AT_Specialist_Mosin",
+			"BurIns_AT_Specialist_M3",
+			"BurIns_AA_Specialist",
+			"BurIns_Crew"
 		};
 		
 		weapons[] = {};
@@ -236,6 +249,7 @@ class CfgGroups {
 			#include "compositions\coldwar_aden.hpp"
 			#include "compositions\coldwar_plo.hpp"
 			#include "compositions\coldwar_pla.hpp"
+			#include "compositions\burmese_insurgents.hpp"
 		};
 		
 		class TWC_Operation_Opfor_Millennial {
@@ -327,6 +341,7 @@ class CfgVehicles {
 	#include "units\FARC.hpp"
 	#include "units\plo.hpp"
 	#include "units\Takistani_Army.hpp"
+	#include "units\burmese_insurgents.hpp"
 };
 
 #include "CfgMarkers.hpp"

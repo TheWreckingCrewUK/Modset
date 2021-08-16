@@ -45,3 +45,20 @@ class TWC_Vehicle_ColdWar_C47_RAF: CUP_B_C47_USA {
 
 	REGULAR_77({"crew"}, {"Intercom_2"})
 };
+
+class CUP_B_AC47_Spooky_USA;
+class TWC_Vehicle_ColdWar_AC47_RAF: CUP_B_AC47_Spooky_USA {
+	scope = 2;
+	side = 1;
+	ADD_FACTION;
+
+	displayname = "Dakota (Cold War) - VIV (RAF)";
+	editorSubcategory = "TWC_ForceType_Airborne";
+
+	hiddenSelectionsTextures[] = {
+		"TWC_Vehicles\data\dc3_body_raf_01_co.paa",
+		"TWC_Vehicles\data\dc3_body_raf_02_co.paa"
+	};
+
+	REGULAR_77({"crew"}, {"Intercom_2"})
+};
