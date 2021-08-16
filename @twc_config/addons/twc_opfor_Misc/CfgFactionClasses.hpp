@@ -138,4 +138,11 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 2;
 	};
+	
+	class TWC_OPFOR_BurIns {
+		displayName = "Burmese Insurgents";
+		author = "[TWC] Saxon";
+		priority = 2;
+		side = 0;
+	};
 };
