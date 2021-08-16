@@ -108,6 +108,14 @@ class CfgEditorSubcategories {
 	class TWC_Infantry_SAfrica_Dismounted_Desert {
 		displayName = "Infantry (South Africa, Dismounted, Desert)";
 	};
+	//Malay Conflict
+	class TWC_Infantry_Malay {
+		displayName = "Infantry (Malay Conflict, Tropic)";
+	};
+	
+	class TWC_Infantry_Malay_Dismounted {
+		displayName = "Infantry (Malay Conflict, Dismounted, Tropic)";
+	};
 };
 
 class CfgMarkers
@@ -482,6 +490,9 @@ class CfgVehicles
 	#include "south_africa\woodland_dismounted.hpp"
 	#include "south_africa\desert.hpp"
 	#include "south_africa\desert_dismounted.hpp"
+	
+	#include "uk_malay\malay.hpp"
+	#include "uk_malay\malay_dismounted.hpp"
 };
 
 class CfgGroups
@@ -499,6 +510,7 @@ class CfgGroups
 			#include "canada\groups.hpp"
 			#include "india\groups.hpp"
 			#include "south_africa\groups.hpp"
+			#include "malay\groups.hpp"
 			class TWC_Groups_WW2_Generic
 			{
 				name = "Generic";
