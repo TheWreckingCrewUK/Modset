@@ -4,6 +4,7 @@ class CUP_B_HikingPack_Civ;
 class CUP_B_AlicePack_OD;
 class SP_Backpack_BlowpipeCarrier;
 class CUP_B_TK_CivPack_WDL_RPK;
+class CUP_B_USMC_MOLLE_WDL;
 
 class Afr_Backpack_Rifleman: CUP_B_AlicePack_Khaki {
 	class TransportMagazines {
@@ -104,5 +105,29 @@ class CUP_B_TK_AT_CarlGustav: CUP_B_TK_CivPack_WDL_RPK
 {
 	class TransportMagazines {
 		maga_nc(CUP_MAAWS_HEAT_M, 4);
+	};
+};
+class PLA_CW_Backpack_Rifleman: CUP_B_USMC_MOLLE_WDL {
+	class TransportMagazines {
+		maga_nc(CUP_30Rnd_762x39_AK47_M, 6);
+		maga_nc(CUP_50Rnd_UK59_762x54R_Tracer, 2);
+	};
+};
+class PLA_CW_Backpack_Marksman: CUP_B_USMC_MOLLE_WDL {
+	class TransportMagazines {
+		maga_nc(CUP_10Rnd_762x39_SKS_M, 6);
+		maga_nc(CUP_50Rnd_UK59_762x54R_Tracer, 2);
+	};
+};
+class PLA_CW_Backpack_MG: CUP_B_USMC_MOLLE_WDL {
+	class TransportMagazines {
+		maga_nc(CUP_50Rnd_UK59_762x54R_Tracer, 4);
+	};
+};
+
+class PLA_CW_Backpack_AT: CUP_B_USMC_MOLLE_WDL {
+	class TransportMagazines {
+		maga_nc(CUP_30Rnd_762x39_AK47_M, 2);
+		maga_nc(CUP_PG7V_M, 4);
 	};
 };

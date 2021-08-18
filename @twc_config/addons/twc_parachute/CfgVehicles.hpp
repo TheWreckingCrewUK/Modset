@@ -237,4 +237,33 @@ class CfgVehicles {
 	};
 	
 	class twc_c5_hercules: TWC_Vehicle_Generic_Hercules_RAF { scope = 1; scopeCurator = 1; };
+	
+	class CUP_B_C47_USA;
+	class TWC_Vehicle_ColdWar_C47_RAF: CUP_B_C47_USA {
+		class ACE_SelfActions {
+			class TWC_Parachute {
+				displayName = "Jump Out";
+				condition = "[_target, _player] call TWC_parachute_fnc_CanJump";
+				statement = "[_target, _player] call TWC_parachute_fnc_JumpOut";
+				exceptions[] = {};
+				icon = "\twc_parachute\data\UI\icomap_para_ca.paa";
+			};
+
+			class TWC_PrepJump {
+				displayName = "Prep Jump";
+				condition = "(driver _target) == _player && !(_target getVariable [""TWC_JumpPrepped"", false])";
+				statement = "[_target] call TWC_parachute_fnc_PrepJump";
+				exceptions[] = {};
+				icon = "\twc_parachute\UI\prep_ca.paa";
+			};
+
+			class TWC_CancelJump {
+				displayName = "Cancel Jump";
+				condition = "(driver _target) == _player && (_target getVariable [""TWC_JumpPrepped"", false])";
+				statement = "[_target] call TWC_parachute_fnc_CancelJump";
+				exceptions[] = {};
+				icon = "\twc_parachute\UI\cancel_ca.paa";
+			};
+		};
+	};
 };

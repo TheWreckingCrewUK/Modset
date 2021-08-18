@@ -10,10 +10,14 @@ class CfgPatches {
 			"TWC_AmmoBox_Modern_Javelin_Portable",
 			"TWC_AmmoBox_Modern_Sniper_Portable",
 			"TWC_AmmoBox_Modern_M6_Portable",
-			"TWC_AmmoBox_Millennial_Base",
-			"TWC_AmmoBox_Millennial_Section_Portable",
-			"TWC_AmmoBox_Millennial_Mechanised_Base",
-			"TWC_AmmoBox_Millennial_Mechanised_Section_Portable",
+			"TWC_AmmoBox_1990_Base",
+			"TWC_AmmoBox_1990_Section_Portable",
+			"TWC_AmmoBox_1990_Mechanised_Base",
+			"TWC_AmmoBox_1990_Mechanised_Section_Portable",
+			"TWC_AmmoBox_2000_Base",
+			"TWC_AmmoBox_2000_Section_Portable",
+			"TWC_AmmoBox_2000_Mechanised_Base",
+			"TWC_AmmoBox_2000_Mechanised_Section_Portable",
 			"TWC_AmmoBox_Millennial_Sniper_Portable",
 			"TWC_AmmoBox_ColdWar_Base",
 			"TWC_AmmoBox_ColdWar_Section_Portable",
@@ -118,9 +122,9 @@ class CfgEditorSubcategories {
 
 class CfgVehicles {
 	// Time saving MACROs - NC = Non-Conflict
-	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
-	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
-	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
+	#define ADD_MAGA(a,b) class _nc_##a {magazine = a; count = b;}
+	#define ADD_WEAP(a,b) class _nc_##a {weapon = a; count = b;}
+	#define ADD_ITEM(a,b) class _nc_##a {name = a; count = b;}
 	
 	#include "crates_defines.hpp"
 	#include "crates_modern.hpp"

@@ -2,8 +2,8 @@ class twc_landrover_W: TWC_Vehicle_Modern_LandRover_Woodland { scope = 1; scopeC
 class twc_landrover_D: TWC_Vehicle_Modern_LandRover_Desert { scope = 1; scopeCurator = 1; };
 class twc_landrover_Special_W: TWC_Vehicle_Modern_LandRoverWMIK_GMG_Woodland { scope = 1; scopeCurator = 1; };
 class twc_landrover_Special_D: TWC_Vehicle_Modern_LandRoverWMIK_GMG_Desert { scope = 1; scopeCurator = 1; };
-class twc_landrover_W_1990: TWC_Vehicle_Millennial_LandRover_Woodland { scope = 1; scopeCurator = 1; };
-class twc_landrover_D_1990: TWC_Vehicle_Millennial_LandRover_Desert { scope = 1; scopeCurator = 1; };
+class twc_landrover_W_1990: TWC_Vehicle_1990_LandRover_Woodland { scope = 1; scopeCurator = 1; };
+class twc_landrover_D_1990: TWC_Vehicle_1990_LandRover_Desert { scope = 1; scopeCurator = 1; };
 class twc_landrover_Special_W_1990: TWC_Vehicle_Modern_LandRoverWMIK_GMG_Woodland { scope = 1; scopeCurator = 1; };
 class twc_landrover_Special_D_1900: TWC_Vehicle_Modern_LandRoverWMIK_GMG_Desert { scope = 1; scopeCurator = 1; };
 class twc_landrover_W_ColdWar: TWC_Vehicle_ColdWar_LandRover_Woodland { scope = 1; scopeCurator = 1; };
