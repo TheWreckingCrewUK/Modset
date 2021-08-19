@@ -59,10 +59,8 @@ class Extended_PreInit_EventHandlers {
 };
 
 class Extended_InitPost_EventHandlers {
-	class CAManBase {
-		class TWC_Medical_Player_InitPostEH {
-			clientInit = "if (local (_this select 0)) then { [twc_medical_fnc_extendedVitalLoop, [(_this select 0)], 10] call CBA_fnc_waitAndExecute; };";
-		};
+	class TWC_Medical_Player_InitPostEH {
+		clientInit = "if (local (_this select 0)) then { [twc_medical_fnc_extendedVitalLoop, [(_this select 0)], 10] call CBA_fnc_waitAndExecute; };";
 	};
 };
 

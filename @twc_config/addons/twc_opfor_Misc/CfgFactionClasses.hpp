@@ -131,4 +131,18 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 0;
 	};
+	class TWC_PLACW_Units {
+		displayName = "People's Liberation Army: Cold War";
+		author = "Ross";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 2;
+	};
+	
+	class TWC_OPFOR_BurIns {
+		displayName = "Burmese Insurgents";
+		author = "[TWC] Saxon";
+		priority = 2;
+		side = 0;
+	};
 };
