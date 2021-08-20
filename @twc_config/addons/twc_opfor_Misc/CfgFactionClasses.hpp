@@ -132,8 +132,8 @@ class CfgFactionClasses {
 		side = 0;
 	};
 	class TWC_PLACW_Units {
-		displayName = "People's Liberation Army: Cold War";
-		author = "Ross";
+		displayName = "People's Liberation Army: 1980-2000";
+		author = "[TWC] Ross";
 		icon = "TWClogo.paa";
 		priority = 2;
 		side = 2;
