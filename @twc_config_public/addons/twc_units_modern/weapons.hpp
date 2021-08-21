@@ -467,6 +467,7 @@ class cfgWeapons
 	class TWC_HK417_scope_bipod: twc_HK417_jsrs_base
 	{
 		scope = 2;
+		displayName = "HK417 DMR";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
