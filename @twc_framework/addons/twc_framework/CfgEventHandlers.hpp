@@ -1,5 +1,5 @@
 class Extended_InitPost_EventHandlers {
-	class CAManBase {		
+	class CAManBase {
 		class twc_functionInit {
 			init = "_this call twc_fnc_init;";
 		};
