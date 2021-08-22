@@ -257,7 +257,7 @@ class CfgVehicles {
 class TWC_AmmoBox_Coldwar_Malay_Portable: TWC_AmmoBox_WW2_Portable {
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Section Resupply - Malay Conflict)";
+		displayName = "Section Resupply - (Malay Conflict)";
 		editorSubcategory = "TWC_WW2_Crates";
 		
 		class TransportItems {
