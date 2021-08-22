@@ -462,7 +462,7 @@ class cfgWeapons
 		};
 	};
 	
-	class twc_HK417_jsrs_base;
+	class twc_HK417_jsrs_base: twc_HK417_base {};
 	
 	class TWC_HK417_scope_bipod: twc_HK417_jsrs_base
 	{
