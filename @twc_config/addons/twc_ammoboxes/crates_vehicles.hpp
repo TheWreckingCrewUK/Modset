@@ -14,6 +14,9 @@ class TWC_AmmoBox_Vehicle_Toolkits: TWC_AmmoBox_Portable {
 	class TransportItems {
 		ADD_ITEM(Toolkit, 10);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
 
 class TWC_AmmoBox_Vehicle_Warrior: TWC_AmmoBox_Vehicle {
