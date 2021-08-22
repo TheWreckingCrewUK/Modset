@@ -3,6 +3,7 @@ if (isDedicated || !hasInterface) exitWith {};
 // Don't run on public.
 if (TWC_Core_isPublic) exitWith {};
 
+if (isNil "TWC_Core_BroadcastMode") then { TWC_Core_BroadcastMode = false; };
 TWC_Death_AlreadyExecuted = false;
 TWC_Death_ExecutionFinished = false;
 TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue ["briefingName", "Untitled"]];
@@ -113,7 +114,7 @@ player addEventHandler ["Respawn", {
 
 	enableRadio true;
 	player disableConversation false;
-	_deathScreenData spawn { playSound [(_this select 0), true]; }; // false sounds break script scope?
+	_deathScreenData spawn { playSound [(_this select 0)]; }; // false sounds break script scope?
 
 	_broadcastCredit = "";
 	if (TWC_Core_BroadcastMode) then {
