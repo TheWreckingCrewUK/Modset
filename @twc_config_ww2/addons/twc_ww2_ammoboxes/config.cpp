@@ -5,8 +5,8 @@ class CfgPatches {
 			"TWC_AmmoBox_WW2_Early_Base",
 			"TWC_AmmoBox_WW2_Early_Section_Portable",
 			"TWC_AmmoBox_WW2_Late_Base",
-			"TWC_AmmoBox_WW2_Late_Section_Portable"
-			"TWC_AmmoBox_Coldwar_Malay_Base"
+			"TWC_AmmoBox_WW2_Late_Section_Portable",
+			"TWC_AmmoBox_Coldwar_Malay_Base",
 			"TWC_AmmoBox_Coldwar_Malay_Portable"
 		};
 		
