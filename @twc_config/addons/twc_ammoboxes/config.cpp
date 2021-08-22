@@ -1,25 +1,17 @@
 class CfgPatches {
 	class TWC_AmmoBoxes {
 		units[] = {
-			"TWC_AmmoBox_Modern_Base",
 			"TWC_AmmoBox_Modern_Section_Portable",
-			"TWC_AmmoBox_Modern_COIN_Base",
 			"TWC_AmmoBox_Modern_COIN_Section_Portable",
-			"TWC_AmmoBox_Modern_Mechanised_Base",
 			"TWC_AmmoBox_Modern_Mechanised_Section_Portable",
 			"TWC_AmmoBox_Modern_Javelin_Portable",
 			"TWC_AmmoBox_Modern_Sniper_Portable",
 			"TWC_AmmoBox_Modern_M6_Portable",
-			"TWC_AmmoBox_1990_Base",
 			"TWC_AmmoBox_1990_Section_Portable",
-			"TWC_AmmoBox_1990_Mechanised_Base",
 			"TWC_AmmoBox_1990_Mechanised_Section_Portable",
-			"TWC_AmmoBox_2000_Base",
 			"TWC_AmmoBox_2000_Section_Portable",
-			"TWC_AmmoBox_2000_Mechanised_Base",
 			"TWC_AmmoBox_2000_Mechanised_Section_Portable",
 			"TWC_AmmoBox_Millennial_Sniper_Portable",
-			"TWC_AmmoBox_ColdWar_Base",
 			"TWC_AmmoBox_ColdWar_Section_Portable",
 			"TWC_AmmoBox_ColdWar_Sniper_Portable",
 			"TWC_AmmoBox_ColdWar_Blowpipe_Portable",
@@ -63,8 +55,10 @@ class CfgPatches {
 			"uk3cb_baf_weapons",
 			"uk3cb_baf_equipment",
 			"cup_weapons_ammoboxes",
+			"ace_common",
 			"ace_medical",
-			"ace_cargo"
+			"ace_cargo",
+			"twc_box_replenish"
 		};
 		
 		version = "1";
@@ -82,7 +76,6 @@ class CfgEditorCategories {
 class CfgEditorSubcategories {
 	/*
 		Each ERA has an ERA/Mechanised (where necessary) specific:
-			Base Crate
 			Section & Attachment Resupply Crates (Portable)
 
 		Vehicle contains vehicle resupply (i.e. warrior ammo)
@@ -115,9 +108,6 @@ class CfgEditorSubcategories {
 	class TWC_Crates_Training {
 		displayName = "Training";
 	};
-	
-	// Future Possibility, Training Crates? These could just be the weapons/items.
-	// For the moment, I can use the op ones in conjunction with the spawn scripts.
 };
 
 class CfgVehicles {

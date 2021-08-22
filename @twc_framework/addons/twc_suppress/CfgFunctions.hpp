@@ -18,14 +18,17 @@ class CfgFunctions {
 			class suppressPos {};
 
 			// Player Effect
-			class fired {};
+			class suppressed {};
 			class impact {};
 			class mainHandler {};
 			class pinnedHandler {};
 			class thresholdHandler {};
 			class clearImpactEffect {};
 			class clearPinnedEffect {};
+			
+			// Shockwave
 			class shockwave {};
+			class shockwaveLocal {};
 
 			// Util
 			class readCache {};
