@@ -24,10 +24,19 @@ class CfgFunctions {
 	};
 };
 
-class Extended_FiredBIS_EventHandlers {
+/* class Extended_FiredBIS_EventHandlers {
 	class CAManBase {
 		class twc_disposable_fired {
 			clientFiredBIS = "_this call twc_disposable_fnc_addDisposablehandler;";
+		};
+	};
+}; */
+
+class CfgWeapons {
+	class Launcher;
+	class Launcher_Base_F: Launcher {
+		class EventHandlers {
+			fired = "_this call twc_disposable_fnc_addDisposablehandler";
 		};
 	};
 };
