@@ -35,13 +35,18 @@ class TWC_Vehicle_ColdWar_C47_RAF: CUP_B_C47_USA {
 	side = 1;
 	ADD_FACTION;
 
-	displayname = "Dakota (Cold War) - VIV (RAF)";
+	displayname = "Dakota (Cold War) - (RAF)";
 	editorSubcategory = "TWC_ForceType_Airborne";
 
 	hiddenSelectionsTextures[] = {
 		"TWC_Vehicles\data\dc3_body_raf_01_co.paa",
 		"TWC_Vehicles\data\dc3_body_raf_02_co.paa"
 	};
+
+	class TransportItems { }; 
+	class TransportMagazines { };
+	class TransportWeapons { };
+	class TransportBackpacks { };
 
 	REGULAR_77({"crew"}, {"Intercom_2"})
 };
@@ -52,13 +57,18 @@ class TWC_Vehicle_ColdWar_AC47_RAF: CUP_B_AC47_Spooky_USA {
 	side = 1;
 	ADD_FACTION;
 
-	displayname = "Dakota (Cold War) - VIV (RAF)";
+	displayname = "Spooky Dakota (Cold War) - (RAF)";
 	editorSubcategory = "TWC_ForceType_Airborne";
 
 	hiddenSelectionsTextures[] = {
 		"TWC_Vehicles\data\dc3_body_raf_01_co.paa",
 		"TWC_Vehicles\data\dc3_body_raf_02_co.paa"
 	};
+
+	class TransportItems { }; 
+	class TransportMagazines { };
+	class TransportWeapons { };
+	class TransportBackpacks { };
 
 	REGULAR_77({"crew"}, {"Intercom_2"})
 };
