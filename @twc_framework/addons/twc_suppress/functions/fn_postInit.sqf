@@ -27,11 +27,12 @@ TWC_Suppress_impactCC ppEffectAdjust [1, 1, 0, [0,0,0,0], [1,1,1,1],[1,1,1,0]];
 TWC_Suppress_impactCC ppEffectCommit 0;
 TWC_Suppress_impactCC ppEffectEnable true;
 
-TWC_Suppress_mainHandlerID = [{[] call twc_suppress_fnc_mainHandler}] call CBA_fnc_addPerFrameHandler;
+TWC_Suppress_mainHandlerID = [{[] call twc_suppress_fnc_mainHandler}, 0.5] call CBA_fnc_addPerFrameHandler;
 TWC_Suppress_pinnedHandlerID = [{[] call twc_suppress_fnc_pinnedHandler}, 0.5] call CBA_fnc_addPerFrameHandler;
 TWC_Suppress_thresholdHandlerID = [{[] call twc_suppress_fnc_thresholdHandler}, 1] call CBA_fnc_addPerFrameHandler;
 
-{[_x, "Killed", { call TWC_Suppress_fnc_shockwave}] call CBA_fnc_addClassEventHandler} forEach ["Car", "Tank", "Air", "Ship"];
+player addEventHandler ["Suppressed", { _this call twc_suppress_fnc_suppressed }];
+TWC_Suppress_ShockwaveEH = ["TWC_Suppress_Shockwave", { _this call twc_suppress_fnc_shockwaveLocal }] call CBA_fnc_addEventHandler;
 
 // Disable on spectator.
 player addEventHandler ["Killed", {
@@ -49,6 +50,8 @@ player addEventHandler ["Killed", {
 	[TWC_Suppress_mainHandlerID] call CBA_fnc_removePerFrameHandler;
 	[TWC_Suppress_pinnedHandlerID] call CBA_fnc_removePerFrameHandler;
 	[TWC_Suppress_thresholdHandlerID] call CBA_fnc_removePerFrameHandler;
+	
+	["TWC_Suppress_Shockwave", TWC_Suppress_ShockwaveEH] call CBA_fnc_removeEventHandler;
 }];
 
 ["unit", {
@@ -65,10 +68,14 @@ player addEventHandler ["Killed", {
 	[TWC_Suppress_mainHandlerID] call CBA_fnc_removePerFrameHandler;
 	[TWC_Suppress_pinnedHandlerID] call CBA_fnc_removePerFrameHandler;
 	[TWC_Suppress_thresholdHandlerID] call CBA_fnc_removePerFrameHandler;
+	
+	["TWC_Suppress_Shockwave", TWC_Suppress_ShockwaveEH] call CBA_fnc_removeEventHandler;
 
-	TWC_Suppress_mainHandlerID = [{[] call twc_suppress_fnc_mainHandler}] call CBA_fnc_addPerFrameHandler;
+	TWC_Suppress_mainHandlerID = [{[] call twc_suppress_fnc_mainHandler}, 0.5] call CBA_fnc_addPerFrameHandler;
 	TWC_Suppress_pinnedHandlerID = [{[] call twc_suppress_fnc_pinnedHandler}, 0.5] call CBA_fnc_addPerFrameHandler;
 	TWC_Suppress_thresholdHandlerID = [{[] call twc_suppress_fnc_thresholdHandler}, 1] call CBA_fnc_addPerFrameHandler;
+	
+	TWC_Suppress_ShockwaveEH = ["TWC_Suppress_Shockwave", { _this call twc_suppress_fnc_shockwaveLocal }] call CBA_fnc_addEventHandler;
 }] call CBA_fnc_addPlayerEventHandler;
 
 player addEventHandler ["GetInMan", {
