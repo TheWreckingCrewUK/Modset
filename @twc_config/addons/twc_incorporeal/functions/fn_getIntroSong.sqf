@@ -1,4 +1,4 @@
-params [["_era", "modern"], ["_isNight", false]];
+params [["_era", (missionNameSpace getVariable ["era", "modern"])], ["_isNight", (missionNameSpace getVariable ["TWC_NightGear", false])]];
 
 _specialSong = missionNamespace getVariable ["TWC_Intro_specialSong", ""];
 

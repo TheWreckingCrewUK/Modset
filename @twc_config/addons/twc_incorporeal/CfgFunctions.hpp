@@ -22,6 +22,12 @@ class CfgFunctions {
 			/** HELPER FUNCTIONS **/
 			class getGroupData {};
 			class fadeInSound {};
+			
+			/** Refactor! **/
+			class clientPostInit {};
+			
+			class startStaticCamera {};
+			class startCamIntro {};
 		};
 	};
 };
