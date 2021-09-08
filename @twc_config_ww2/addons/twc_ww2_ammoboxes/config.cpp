@@ -290,7 +290,7 @@ class TWC_AmmoBox_Coldwar_Malay_Portable: TWC_AmmoBox_WW2_Portable {
 			// Frag Grenade
 			maga_nc(LIB_MillsBomb, 6);
 			maga_nc(LIB_1Rnd_G_MillsBomb, 4);
-			mag_nc(ACE_M14, 2),
+			mag_nc(ACE_M14, 2);
 			
 			// AT Grenade
 			maga_nc(LIB_No82, 2);
