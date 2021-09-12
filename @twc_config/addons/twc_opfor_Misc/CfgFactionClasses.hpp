@@ -145,4 +145,11 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 0;
 	};
+
+	class TWC_OPFOR_Taliban {
+		displayName = "Taliban";
+		author = "Aleyboy";
+		priority = 2;
+		side = 0;
+	};
 };

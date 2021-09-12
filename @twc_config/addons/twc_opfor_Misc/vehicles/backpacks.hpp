@@ -131,3 +131,15 @@ class PLA_CW_Backpack_AT: CUP_B_USMC_MOLLE_WDL {
 		maga_nc(CUP_PG7V_M, 4);
 	};
 };
+
+class Taliban_Backpack_MG: CUP_B_AlicePack_OD {
+	class TransportMagazines {
+		maga_nc(CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M, 3);
+	};
+};
+
+class Taliban_Backpack_AT: CUP_B_RPGPack_Khaki {
+	class TransportMagazines {
+		maga_nc(CUP_PG7VL_M, 2);
+	};
+};
