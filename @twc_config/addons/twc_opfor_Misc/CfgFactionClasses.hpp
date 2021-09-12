@@ -148,7 +148,7 @@ class CfgFactionClasses {
 
 	class TWC_OPFOR_Taliban {
 		displayName = "Taliban";
-		author = "Aleyboy";
+		author = "[TWC] Aleyboy";
 		priority = 2;
 		side = 0;
 	};
