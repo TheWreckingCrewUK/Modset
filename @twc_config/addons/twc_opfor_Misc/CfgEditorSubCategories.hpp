@@ -36,7 +36,7 @@ class CfgEditorSubCategories {
 	};
 	
 	class TWC_PLACW_Men {
-		displayName = "Men (People's Liberation Army: Cold War)";
+		displayName = "Men (People's Liberation Army: 1980-2000)";
 	};
 
 	class TWC_Taliban_Men {

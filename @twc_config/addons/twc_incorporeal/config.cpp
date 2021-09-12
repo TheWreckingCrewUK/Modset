@@ -12,7 +12,7 @@ class CfgPatches {
 			"ace_common"
 		};
 
-		author[] = {"Bosenator"};
+		author = "Bosenator";
 		authorUrl = "thewreckingcrew.eu";
 		version = "1";
 		versionStr = "1";

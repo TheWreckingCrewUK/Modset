@@ -16,6 +16,11 @@ if (TWC_Suppress_threshold >= MIN_THRESHOLD) then {
 	
 	TWC_Suppress_radialBlur ppEffectAdjust [(_power * 0.011), (_power * 0.011), 0.2, 0.2];
 	TWC_Suppress_radialBlur ppEffectCommit 0.05;
+	
+	if (TWC_Suppress_threshold >= (TWC_Suppress_maxThreshold / 2) && (time - TWC_Suppress_lastPinnedHBTime) >= 10) then {
+		TWC_Suppress_lastPinnedHBTime = (time + 10);
+		playSound "TWC_Suppress_PinnedHeartBeat";
+	};
 } else {
 	if (TWC_Suppress_isSuppressed) then {
 		TWC_Suppress_isSuppressed = false;
