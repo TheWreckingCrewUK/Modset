@@ -4,7 +4,7 @@
  */
 params ["_operationName", "_author", ["_missionStarted", false]];
 
-_song = call TWC_Incorporeal_fnc_getIntroSong;
+_song = call TWC_Camera_fnc_getIntroSong;
 
 [_song] spawn { playMusic (_this select 0); }; // play calculated tune
 

@@ -4,13 +4,9 @@ if !(hasInterface) exitWith {};
 if (TWC_Core_isPublic) exitWith {};
 
 // Don't run on locally hosted/SP
-if !(TWC_Core_isServer) exitWith { systemChat "Skipping intro, due to being hosted locally..."; };
+if !(TWC_Core_isServer) exitWith { systemChat "Skipping intro, due to being hosted locally (or server incorrectly configured)..."; };
 
-// investigate need for these
-TWC_Death_AlreadyExecuted = false;
-TWC_Death_ExecutionFinished = false;
-
-// Global 
+// Global
 TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue ["briefingName", "Untitled"]];
 
 // Failsafe check. There seems to be occasions where this isn't being set? 
@@ -44,9 +40,8 @@ private _missionStarted = missionNameSpace getVariable ["TWC_Intro_Started", fal
 	};
 	
 	if (_isDisabled || _missionStarted) exitWith {
-		[TWC_Operation_Name, _operationAuthor, _missionStarted] call TWC_Incorporeal_fnc_startStaticIntro;
+		[TWC_Operation_Name, _operationAuthor, _missionStarted] call TWC_Camera_fnc_startStaticIntro;
 	};
 	
-	[TWC_Operation_Name, _operationAuthor] spawn TWC_Incorporeal_fnc_startCamIntro;
+	[TWC_Operation_Name, _operationAuthor] spawn TWC_Camera_fnc_startCamIntro;
 }, [_isDisabled, _missionStarted]] call CBA_fnc_addEventHandlerArgs;
-

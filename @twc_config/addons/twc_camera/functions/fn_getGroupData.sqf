@@ -9,7 +9,8 @@ _groupPlayers = [];
 	if (side _x != side player) exitWith {};
 
 	_isXPlayer = if (getPlayerUID _x != "" && getPlayerUID _x != "_SP_AI_") then { true } else { false };
-	if (_isXPlayer) then {
+	
+	if (_isXPlayer && alive _x) then {
 		_roleDesc = (roleDescription _x) splitString "@";
 
 		if (count _roleDesc > 1) then {
