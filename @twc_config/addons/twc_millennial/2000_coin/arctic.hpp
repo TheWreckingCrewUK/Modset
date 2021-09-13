@@ -23,13 +23,13 @@ class TWC_Infantry_2000_COIN_Arctic_Autorifleman: TWC_Infantry_2000_COIN_Woodlan
 class TWC_Infantry_2000_COIN_Arctic_SectionCommander: TWC_Infantry_2000_COIN_Woodland_SectionCommander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_SectionCommander";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_SectionCommander";
 	uniformClass = "TWC_Smock_Arctic";
 };
 class TWC_Infantry_2000_COIN_Arctic_2iC: TWC_Infantry_2000_COIN_Woodland_2iC
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_2iC";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_2iC";
 	uniformClass = "TWC_Smock_Arctic";
 };
 
@@ -37,25 +37,25 @@ class TWC_Infantry_2000_COIN_Arctic_2iC: TWC_Infantry_2000_COIN_Woodland_2iC
 class TWC_Infantry_2000_COIN_Arctic_Platoon_Commander: TWC_Infantry_2000_COIN_Woodland_Platoon_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Commander";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Commander";
 	uniformClass = "TWC_Smock_Arctic";
 };
 class TWC_Infantry_2000_COIN_Arctic_Platoon_Sergeant: TWC_Infantry_2000_COIN_Woodland_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Sergeant";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Sergeant";
 	uniformClass = "TWC_Smock_Arctic";
 };
 class TWC_Infantry_2000_COIN_Arctic_Platoon_Medic: TWC_Infantry_2000_COIN_Woodland_Platoon_Medic
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Medic";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Medic";
 	uniformClass = "TWC_Smock_Arctic";
 };
 class TWC_Infantry_2000_COIN_Arctic_Platoon_CSM: TWC_Infantry_2000_COIN_Woodland_Platoon_CSM
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Sergeant";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Sergeant";
 	uniformClass = "TWC_Smock_Arctic";
 };
 
@@ -63,19 +63,19 @@ class TWC_Infantry_2000_COIN_Arctic_Platoon_CSM: TWC_Infantry_2000_COIN_Woodland
 class TWC_Infantry_2000_COIN_Arctic_Company_Commander: TWC_Infantry_2000_COIN_Woodland_Company_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Commander";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Commander";
 	uniformClass = "TWC_Smock_Arctic";
 };
 class TWC_Infantry_2000_COIN_Arctic_Company_2iC: TWC_Infantry_2000_COIN_Woodland_Company_2iC
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Commander";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Commander";
 	uniformClass = "TWC_Smock_Arctic";
 };
 class TWC_Infantry_2000_COIN_Arctic_Company_Sergeant: TWC_Infantry_2000_COIN_Woodland_Company_Sergeant
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Sergeant";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Sergeant";
 	uniformClass = "TWC_Smock_Arctic";
 };
 
@@ -100,7 +100,7 @@ class TWC_Infantry_2000_COIN_Arctic_Sniper: TWC_Infantry_2000_COIN_Woodland_Snip
 class TWC_Infantry_2000_COIN_Arctic_Spotter: TWC_Infantry_2000_COIN_Woodland_Spotter
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Spotter";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Spotter";
 	uniformClass = "TWC_Smock_Arctic";
 };
 
@@ -108,7 +108,7 @@ class TWC_Infantry_2000_COIN_Arctic_Spotter: TWC_Infantry_2000_COIN_Woodland_Spo
 class TWC_Infantry_2000_COIN_Arctic_Artillery_Commander: TWC_Infantry_2000_COIN_Woodland_Artillery_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Artillery_Commander";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Artillery_Commander";
 	uniformClass = "TWC_Smock_Arctic";
 };
 class TWC_Infantry_2000_COIN_Arctic_Artillery_Crew: TWC_Infantry_2000_COIN_Woodland_Artillery_Crew
@@ -119,7 +119,7 @@ class TWC_Infantry_2000_COIN_Arctic_Artillery_Crew: TWC_Infantry_2000_COIN_Woodl
 class TWC_Infantry_2000_COIN_Arctic_FO: TWC_Infantry_2000_COIN_Woodland_FO
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_FO";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_FO";
 	uniformClass = "TWC_Smock_Arctic";
 };
 
@@ -127,7 +127,7 @@ class TWC_Infantry_2000_COIN_Arctic_FO: TWC_Infantry_2000_COIN_Woodland_FO
 class TWC_Infantry_2000_COIN_Arctic_EOD_Commander: TWC_Infantry_2000_COIN_Woodland_EOD_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_EOD_Commander";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_EOD_Commander";
 	uniformClass = "TWC_Smock_Arctic";
 };
 class TWC_Infantry_2000_COIN_Arctic_EOD_Gunner: TWC_Infantry_2000_COIN_Woodland_EOD_Gunner
@@ -140,7 +140,7 @@ class TWC_Infantry_2000_COIN_Arctic_EOD_Gunner: TWC_Infantry_2000_COIN_Woodland_
 class TWC_Infantry_2000_COIN_Arctic_FAC: TWC_Infantry_2000_COIN_Woodland_FAC
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_FAC";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_FAC";
 	uniformClass = "TWC_Smock_Arctic";
 };
 
