@@ -1,249 +1,338 @@
 //COIN, Tropic
 //Section
-class TWC_Infantry_2000_COIN_Tropic_Rifleman: TWC_Infantry_2000_Regular_Tropic_Rifleman
+class TWC_Infantry_2000_COIN_Tropic_Rifleman: TWC_Infantry_2000_COIN_Woodland_Rifleman
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Marksman: TWC_Infantry_2000_Regular_Tropic_Marksman
+class TWC_Infantry_2000_COIN_Tropic_Marksman: TWC_Infantry_2000_COIN_Woodland_Marksman
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Grenadier: TWC_Infantry_2000_Regular_Tropic_Grenadier
+class TWC_Infantry_2000_COIN_Tropic_Grenadier: TWC_Infantry_2000_COIN_Woodland_Grenadier
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Autorifleman: TWC_Infantry_2000_Regular_Tropic_Autorifleman
+class TWC_Infantry_2000_COIN_Tropic_Autorifleman: TWC_Infantry_2000_COIN_Woodland_Autorifleman
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_SectionCommander: TWC_Infantry_2000_Regular_Tropic_SectionCommander
+class TWC_Infantry_2000_COIN_Tropic_SectionCommander: TWC_Infantry_2000_COIN_Woodland_SectionCommander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_SectionCommander";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_2iC: TWC_Infantry_2000_Regular_Tropic_2iC
+class TWC_Infantry_2000_COIN_Tropic_2iC: TWC_Infantry_2000_COIN_Woodland_2iC
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_2iC";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
 
 //Platoon Command
-class TWC_Infantry_2000_COIN_Tropic_Platoon_Commander: TWC_Infantry_2000_Regular_Tropic_Platoon_Commander
+class TWC_Infantry_2000_COIN_Tropic_Platoon_Commander: TWC_Infantry_2000_COIN_Woodland_Platoon_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Commander";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_2000_Regular_Tropic_Platoon_Sergeant
+class TWC_Infantry_2000_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_2000_COIN_Woodland_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Sergeant";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Platoon_Medic: TWC_Infantry_2000_Regular_Tropic_Platoon_Medic
+class TWC_Infantry_2000_COIN_Tropic_Platoon_Medic: TWC_Infantry_2000_COIN_Woodland_Platoon_Medic
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Medic";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Platoon_CSM: TWC_Infantry_2000_Regular_Tropic_Platoon_CSM
+class TWC_Infantry_2000_COIN_Tropic_Platoon_CSM: TWC_Infantry_2000_COIN_Woodland_Platoon_CSM
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Sergeant";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
 
 //Company
-class TWC_Infantry_2000_COIN_Tropic_Company_Commander: TWC_Infantry_2000_Regular_Tropic_Company_Commander
+class TWC_Infantry_2000_COIN_Tropic_Company_Commander: TWC_Infantry_2000_COIN_Woodland_Company_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Commander";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Company_2iC: TWC_Infantry_2000_Regular_Tropic_Company_2iC
+class TWC_Infantry_2000_COIN_Tropic_Company_2iC: TWC_Infantry_2000_COIN_Woodland_Company_2iC
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Commander";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Company_Sergeant: TWC_Infantry_2000_Regular_Tropic_Company_Sergeant
+class TWC_Infantry_2000_COIN_Tropic_Company_Sergeant: TWC_Infantry_2000_COIN_Woodland_Company_Sergeant
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_Platoon_Sergeant";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
 
 //AT
-class TWC_Infantry_2000_COIN_Tropic_Javelin_Gunner: TWC_Infantry_2000_Regular_Tropic_Javelin_Gunner
+class TWC_Infantry_2000_COIN_Tropic_Javelin_Gunner: TWC_Infantry_2000_COIN_Woodland_Javelin_Gunner
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Javelin_Ass: TWC_Infantry_2000_Regular_Tropic_Javelin_Ass
+class TWC_Infantry_2000_COIN_Tropic_Javelin_Ass: TWC_Infantry_2000_COIN_Woodland_Javelin_Ass
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
 
 //Sniper Team
-class TWC_Infantry_2000_COIN_Tropic_Sniper: TWC_Infantry_2000_Regular_Tropic_Sniper
+class TWC_Infantry_2000_COIN_Tropic_Sniper: TWC_Infantry_2000_COIN_Woodland_Sniper
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
@@ -280,7 +369,7 @@ class TWC_Infantry_2000_COIN_Tropic_Sniper: TWC_Infantry_2000_Regular_Tropic_Sni
 		"ACE_RangeCard"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Spotter: TWC_Infantry_2000_Regular_Tropic_Spotter
+class TWC_Infantry_2000_COIN_Tropic_Spotter: TWC_Infantry_2000_COIN_Woodland_Spotter
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_Spotter";
@@ -318,147 +407,181 @@ class TWC_Infantry_2000_COIN_Tropic_Spotter: TWC_Infantry_2000_Regular_Tropic_Sp
 };
 
 //Artillery Crew
-class TWC_Infantry_2000_COIN_Tropic_Artillery_Commander: TWC_Infantry_2000_Regular_Tropic_Artillery_Commander
+class TWC_Infantry_2000_COIN_Tropic_Artillery_Commander: TWC_Infantry_2000_COIN_Woodland_Artillery_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_Artillery_Commander";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Artillery_Crew: TWC_Infantry_2000_Regular_Tropic_Artillery_Crew
+class TWC_Infantry_2000_COIN_Tropic_Artillery_Crew: TWC_Infantry_2000_COIN_Woodland_Artillery_Crew
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_FO: TWC_Infantry_2000_Regular_Tropic_FO
+class TWC_Infantry_2000_COIN_Tropic_FO: TWC_Infantry_2000_COIN_Woodland_FO
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_FO";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
 
 //EOD Team
-class TWC_Infantry_2000_COIN_Tropic_EOD_Commander: TWC_Infantry_2000_Regular_Tropic_EOD_Commander
+class TWC_Infantry_2000_COIN_Tropic_EOD_Commander: TWC_Infantry_2000_COIN_Woodland_EOD_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_EOD_Commander";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_M26_Clacker",
-		"ACE_DefusalKit",
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_M26_Clacker",
-		"ACE_DefusalKit",
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_EOD_Gunner: TWC_Infantry_2000_Regular_Tropic_EOD_Gunner
+class TWC_Infantry_2000_COIN_Tropic_EOD_Gunner: TWC_Infantry_2000_COIN_Woodland_EOD_Gunner
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_DefusalKit",
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_DefusalKit",
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
 
 //Aircraft
-class TWC_Infantry_2000_COIN_Tropic_FAC: TWC_Infantry_2000_Regular_Tropic_FAC
+class TWC_Infantry_2000_COIN_Tropic_FAC: TWC_Infantry_2000_COIN_Woodland_FAC
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
 	backpack = "TWC_Backpack_2000_COIN_Tropic_FAC";
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
 
 //FVs
-class TWC_Infantry_2000_COIN_Tropic_Vehicle_Commander: TWC_Infantry_2000_Regular_Tropic_Vehicle_Commander
+class TWC_Infantry_2000_COIN_Tropic_Vehicle_Commander: TWC_Infantry_2000_COIN_Woodland_Vehicle_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
-class TWC_Infantry_2000_COIN_Tropic_Vehicle_Crew: TWC_Infantry_2000_Regular_Tropic_Vehicle_Crew
+class TWC_Infantry_2000_COIN_Tropic_Vehicle_Crew: TWC_Infantry_2000_COIN_Woodland_Vehicle_Crew
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Tropic)
-	Items[] =
+	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
-	respawnItems[] =
+	respawnLinkedItems[] =
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
