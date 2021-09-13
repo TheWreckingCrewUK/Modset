@@ -34,7 +34,12 @@ class CfgEditorSubCategories {
 	class TWC_FARC_Men {
 		displayName = "Men (FARC)";
 	};
+	
 	class TWC_PLACW_Men {
 		displayName = "Men (People's Liberation Army: 1980-2000)";
+	};
+
+	class TWC_Taliban_Men {
+		displayName = "Men (Taliban)";
 	};
 };
