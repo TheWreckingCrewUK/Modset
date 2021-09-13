@@ -40,6 +40,6 @@ class CfgEditorSubCategories {
 	};
 
 	class TWC_Taliban_Men {
-		displayName = "Men (Taliban)"
+		displayName = "Men (Taliban)";
 	};
 };
