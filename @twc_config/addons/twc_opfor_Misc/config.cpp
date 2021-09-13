@@ -182,7 +182,17 @@ class CfgPatches {
 			"BurIns_AT_Specialist_Mosin",
 			"BurIns_AT_Specialist_M3",
 			"BurIns_AA_Specialist",
-			"BurIns_Crew"
+			"BurIns_Crew",
+			"Taliban_CellLeader",
+			"Taliban_TeamLeader",
+			"Taliban_Rifleman1",
+			"Taliban_Rifleman2",
+			"Taliban_Grenadier",
+			"Taliban_AutoRifleman",
+			"Taliban_MachineGunner",
+			"Taliban_RiflemanAT",
+			"Taliban_Marksman"
+			
 		};
 		
 		weapons[] = {};
@@ -265,6 +275,7 @@ class CfgGroups {
 			
 			/* MODERN COMPOSITIONS - GROUP DEFINES */
 			// todo
+			#include "compositions\taliban.hpp"
 		};
 	};
 
@@ -342,6 +353,7 @@ class CfgVehicles {
 	#include "units\plo.hpp"
 	#include "units\Takistani_Army.hpp"
 	#include "units\burmese_insurgents.hpp"
+	#include "units\taliban.hpp"
 };
 
 #include "CfgMarkers.hpp"
