@@ -2,7 +2,7 @@
  * Starts the automated camera sequence introduction. This is only run once per mission, at the very start.
  * JIPs/Reconnects etc. are given a static camera, as it won't show other player locations and so forth.
  */
-params [["_operationName", TWC_Operation_Name], ["_author", "Unspecified"];
+params [["_operationName", TWC_Operation_Name], ["_author", "Unspecified"]];
 
 private _isNightOp = missionNameSpace getVariable ["TWC_NightGear", false];
 
