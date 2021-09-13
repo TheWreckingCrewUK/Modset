@@ -4,38 +4,12 @@ if (isDedicated || !hasInterface) exitWith {};
 if (TWC_Core_isPublic) exitWith {};
 
 if (isNil "TWC_Core_BroadcastMode") then { TWC_Core_BroadcastMode = false; };
+
 TWC_Death_AlreadyExecuted = false;
 TWC_Death_ExecutionFinished = false;
+
 TWC_Operation_Name = getMissionConfigValue ["onLoadName", getMissionConfigValue ["briefingName", "Untitled"]];
 TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
-
-// Always block screen on spawn.
-[{ getClientStateNumber > 9 }, {
-	if (TWC_Core_isPublic) exitWith {};
-	if !(TWC_Core_isServer) exitWith {};
-	
-	[(_this select 0)] spawn {
-		titleCut ["", "BLACK FADED", 999];
-	};
-}, []] call CBA_fnc_waitUntilAndExecute;
-
-// Wait until mission module has been initalized.
-["twc_framework_initComplete", {
-	_operationEra = missionNameSpace getVariable ["era", "modern"];
-	_isNightOp = missionNameSpace getVariable ["TWC_NightGear", false];
-	_isDisabled = missionNameSpace getVariable ["TWC_Intro_isDisabled", false];
-	_missionStarted = missionNameSpace getVariable ["TWC_Intro_Started", false];
-	
-	if (TWC_Core_isPublic) exitWith {};
-	if !(TWC_Core_isServer) exitWith { systemChat "Skipping intro, for local testing..."; };
-	
-	// JIP'd in, don't show the camera stuff.
-	if (_isDisabled || _missionStarted) exitWith {
-		[TWC_Operation_Name, TWC_Operation_Creator, _operationEra, _isNightOp, _missionStarted] call TWC_Incorporeal_fnc_startLegacyIntro;
-	};
-
-	[TWC_Operation_Name, TWC_Operation_Creator, _operationEra, _isNightOp] spawn TWC_Incorporeal_fnc_startIntro;
-}] call CBA_fnc_addEventHandler;
 
 ["ace_killed", {
 	params ["_unit"];
@@ -47,7 +21,7 @@ TWC_Operation_Creator = getMissionConfigValue ["author", "The Wrecking Crew"];
 	[{
 		params ["_unit"];
 		if (!TWC_Death_AlreadyExecuted) then {
-			[_unit] call TWC_Incorporeal_fnc_bestGuessDeath;
+			[_unit] call TWC_Deathscreen_fnc_bestGuessDeath;
 		};
 	}, [_unit], 1] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_addEventHandler;
@@ -76,7 +50,7 @@ player addEventHandler ["Killed", {
 		params ["_unit"];
 
 		if (!TWC_Death_AlreadyExecuted) then {
-			[_unit] call TWC_Incorporeal_fnc_bestGuessDeath;
+			[_unit] call TWC_Deathscreen_fnc_bestGuessDeath;
 		};
 	}, [_unit], 1] call CBA_fnc_waitAndExecute;
 	
@@ -108,7 +82,7 @@ player addEventHandler ["Respawn", {
 	if (TWC_Death_AlreadyExecuted) exitWith {};
 	TWC_Death_AlreadyExecuted = true;
 
-	_deathData = [_unit, _reason] call TWC_Incorporeal_fnc_getDeathData;
+	_deathData = [_unit, _reason] call TWC_Deathscreen_fnc_getDeathData;
 	_deathScreenData = (_deathData select 5);
 	_duration = ((_deathScreenData select 2) - (_deathScreenData select 1));
 
@@ -145,7 +119,7 @@ player addEventHandler ["Respawn", {
 		};
 
 		_duration fadeSpeech 0;
-		[] spawn TWC_Incorporeal_fnc_fadeInSound;
+		[] spawn TWC_Deathscreen_fnc_fadeInSound;
 		
 		[{ [] call ace_spectator_fnc_ui_toggleUI; }, [], _duration] call CBA_fnc_waitAndExecute;
 	}, [_duration], (_deathScreenData select 1)] call CBA_fnc_waitAndExecute;

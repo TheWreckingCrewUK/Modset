@@ -1,29 +1,29 @@
-params ["_operationName", "_author", "_operationEra", "_isNightOp"];
+/*
+ * Starts the automated camera sequence introduction. This is only run once per mission, at the very start.
+ * JIPs/Reconnects etc. are given a static camera, as it won't show other player locations and so forth.
+ */
+params [["_operationName", TWC_Operation_Name], ["_author", "Unspecified"]];
 
-_song = [_operationEra, _isNightOp] call TWC_Incorporeal_fnc_getIntroSong;
+private _isNightOp = missionNameSpace getVariable ["TWC_NightGear", false];
 
-if (!isNil "completedTasks") then {
-	{
-		[_x select 0, _x select 1, false] call BIS_fnc_taskSetState;
-	} forEach completedTasks;
-};
+_song = call TWC_Camera_fnc_getIntroSong;
 
 // Need to support special intro camera stuff here. Hmmm.
-_introData = [] call TWC_Incorporeal_fnc_getIntroData;
+_introData = call TWC_Camera_fnc_getIntroData;
 
 // Calculate time per section for panning shot. Overall time limit is 40 seconds, divided by element count. Min of 4 seconds per group.
 _allPlayers = call BIS_fnc_listPlayers;
 _totalPlayerCount = count (_allPlayers - entities "HeadlessClient_F");
 _panTimePerUnit = (40 / _totalPlayerCount) max 1.5;
+
+// Disable player control as best as we can
 [true] call ace_common_fnc_disableUserInput;
-//disableUserInput true;
 player enableSimulation false;
 
-waitUntil {!(isNil "BIS_fnc_init")};
 _cam = "camera" camCreate (player modelToWorld [0, 2, 2]);
 _cam cameraEffect ["internal", "back"];
 
-_lightLevel = 0.04 + (0.96 * call ACE_common_fnc_ambientBrightness);
+_lightLevel = 0.05 + (0.95 * call ACE_common_fnc_ambientBrightness);
 
 if (_lightLevel < 0.5) then {
 	camUseNVG true;
@@ -44,7 +44,7 @@ _titleText = format [
 [parseText _titleText, [0, 0.3, 1, 1], nil, 4, 4, 0] spawn BIS_fnc_textTiles;
 sleep 11;
 
-titleCut ["", "BLACK IN", 20];
+"TWCIntroText" titleCut ["", "BLACK IN", 20];
 
 _alternatePan = false;
 
@@ -62,7 +62,6 @@ _alternatePan = false;
 	
 	_alternatePan = !_alternatePan;
 	_panTime = (count _groupUnits) * _panTimePerUnit;
-	//systemChat format ["panTime: %1 - _groupUnit count: %2 - panTimePerUnit: %3", _panTime, (count _groupUnits), _panTimePerUnit];
 	
 	// prevent bad pans
 	if (!alive _firstUnit && alive _lastUnit) then { _firstUnit = _lastUnit; };
@@ -101,10 +100,6 @@ _cam = "camera" camCreate (player modelToWorld [0, 2, 5]);
 _cam cameraEffect ["terminate", "back"];
 camDestroy _cam;
 
-/* // KillZone trick to fix a bug, apparently
-disableUserInput false;
-disableUserInput true;
-disableUserInput false; */
 player enableSimulation true;
 [false] call ace_common_fnc_disableUserInput;
 
@@ -113,9 +108,3 @@ player enableSimulation true;
 "dynamicBlur" ppEffectCommit 0;
 "dynamicBlur" ppEffectAdjust [0.0];
 "dynamicBlur" ppEffectCommit 5;
-
-if (!(isNil "twc_JIP_CommandMessage")) then {
-	{
-		player createDiaryRecord ["Diary", ["Radio Message", _x]];
-	} forEach twc_JIP_CommandMessage;
-};
