@@ -1,5 +1,5 @@
 class TWC_Operation_Opfor_ColdWar_PLA {
-	name = "People's Liberation Army";
+	name = "People's Liberation Army 1980-2000";
 	
 	class TWC_Operation_Opfor_ColdWar_PLA_Squad {
 		name = "Squad"; //Name of Group
