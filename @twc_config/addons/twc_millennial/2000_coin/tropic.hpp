@@ -328,6 +328,22 @@ class TWC_Infantry_2000_COIN_Tropic_Javelin_Ass: TWC_Infantry_2000_COIN_Woodland
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};	uniformClass = "UK3CB_BAF_U_CombatUniform_DPMT";
+	linkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"UK3CB_BAF_V_Osprey_DPMT5",
+		"UK3CB_BAF_H_Mk6_DPMT_A",
+		"ItemCompass",
+		"itemMap",
+		"ItemWatch"
 	};
 };
 
