@@ -1,7 +1,7 @@
 class CfgFunctions {
 	class TWC_Camera {
 		class functions {
-			file = "TWC_Camera\functions";
+			file = "twc_camera\functions";
 			
 			class clientPostInit {};
 			

@@ -43,5 +43,5 @@ titleFadeOut 5;
 	"dynamicBlur" ppEffectCommit 5;
 
 	// Remove the veil from our eyes, so we can get to shooting.
-	titleCut ["", "BLACK IN", 5];
+	"TWCIntroText" titleCut ["", "BLACK IN", 5];
 }, [], 57] call CBA_fnc_waitAndExecute;
