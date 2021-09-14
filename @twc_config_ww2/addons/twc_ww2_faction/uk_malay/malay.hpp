@@ -103,13 +103,13 @@ class TWC_Infantry_ColdWar_Malay_SMG: TWC_Infantry_ColdWar_Malay_Rifleman
 	magazines[] =
 	{
 		MAG_5("LIB_50Rnd_45ACP"),
-		MAG_2("LIB_MillsBomb")
+		MAG_2("LIB_MillsBomb"),
 		"LIB_No82"
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("LIB_50Rnd_45ACP"),
-		MAG_2("LIB_MillsBomb")
+		MAG_2("LIB_MillsBomb"),
 		"LIB_No82"
 	};
 };
@@ -515,11 +515,11 @@ class TWC_Infantry_ColdWar_Malay_Bazooka_Gunner: TWC_Infantry_ColdWar_Malay_Rifl
 	};
 	magazines[] =
 	{
-		MAG_5("LIB_50Rnd_45ACP"),
+		MAG_5("LIB_50Rnd_45ACP")
 	};
 	respawnmagazines[] =
 	{
-		MAG_5("LIB_50Rnd_45ACP"),
+		MAG_5("LIB_50Rnd_45ACP")
 	};
 };
 class TWC_Infantry_ColdWar_Malay_Bazooka_Ass: TWC_Infantry_ColdWar_Malay_Rifleman
@@ -611,7 +611,7 @@ class TWC_Infantry_ColdWar_Malay_Artillery_Crew: TWC_Infantry_ColdWar_Malay_Arti
 	uniformClass = "fow_u_uk_bd40_seac_02_private";
 	TWC_isCommandRole = 0;
 };
-class TWC_Infantry_ColdWar_Malay_Woodland_FO: TWC_Infantry_ColdWar_Malay_Artillery_Commander
+class TWC_Infantry_ColdWar_Malay_FO: TWC_Infantry_ColdWar_Malay_Artillery_Commander
 {
 	displayName = "Forward Observer";
 	backpack = "TWC_Backpack_ColdWar_Malay_FO";

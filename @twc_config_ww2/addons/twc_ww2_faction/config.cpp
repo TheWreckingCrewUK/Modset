@@ -510,7 +510,7 @@ class CfgGroups
 			#include "canada\groups.hpp"
 			#include "india\groups.hpp"
 			#include "south_africa\groups.hpp"
-			#include "malay\groups.hpp"
+			#include "uk_malay\groups.hpp"
 			class TWC_Groups_WW2_Generic
 			{
 				name = "Generic";
