@@ -1,5 +1,5 @@
 class CfgPatches {
-	class TWC_Incorporeal {
+	class TWC_Camera {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.7;
@@ -20,7 +20,6 @@ class CfgPatches {
 	};
 };
 
-#include "CfgDeathScreens.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgIntros.hpp"

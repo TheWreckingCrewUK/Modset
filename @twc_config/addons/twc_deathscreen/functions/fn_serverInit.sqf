@@ -18,6 +18,6 @@ TWC_Dead_Players = [];
 	
 	if (getPlayerUID _unit == "" || getPlayerUID _unit == "_SP_AI_") exitWith {};
 	
-	_deathData = [_unit, _reason] call TWC_Incorporeal_fnc_getDeathData;
+	_deathData = [_unit, _reason] call TWC_Deathscreen_fnc_getDeathData;
 	TWC_Dead_Players pushBack [_unit, [_deathData]];
 }] call CBA_fnc_addEventHandler;
