@@ -2,6 +2,7 @@
 //Section
 class TWC_Infantry_ColdWar_Malay_Rifleman: TWC_Infantry_WW2_Base
 {
+	CATEGORY(TWC_Infantry_Malay)
 	scope = 2;
 	displayName = "Rifleman";
 	uniformClass="fow_u_uk_bd40_seac_02_private";
@@ -49,7 +50,7 @@ class TWC_Infantry_ColdWar_Malay_Rifleman: TWC_Infantry_WW2_Base
 		"LIB_No82"
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Signaller: TWC_Infantry_WW2_Base
+class TWC_Infantry_ColdWar_Malay_Signaller: TWC_Infantry_ColdWar_Malay_Rifleman
 {
 	scope = 2;
 	displayName = "Signaller";

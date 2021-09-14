@@ -1,7 +1,7 @@
-#define LATE_GROUPS(CAMO,ERA) \
+#define MALAY_GROUPS(CAMO,ERA) \
 class TWC_Groups_##ERA##_##CAMO \
 { \
-	name = __EVAL("Infantry (Late, " + #CAMO + ")"); \
+	name = __EVAL("Infantry (" + #CAMO + ")"); \
 	class Section \
 	{ \
 		name = "Section (Malay)"; \
@@ -431,4 +431,4 @@ class TWC_Groups_##ERA##_Dismounted_##CAMO \
 	}; \
 };
 
-LATE_GROUPS(Malay,WW2_UK_Late)
+MALAY_GROUPS(Malay,ColdWar)
