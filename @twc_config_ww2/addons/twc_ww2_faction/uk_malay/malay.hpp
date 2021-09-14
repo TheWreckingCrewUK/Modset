@@ -49,23 +49,37 @@ class TWC_Infantry_ColdWar_Malay_Rifleman: TWC_Infantry_WW2_Base
 		"LIB_No82"
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Grenadier: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_ColdWar_Malay_Signaller: TWC_Infantry_WW2_Base
 {
-	displayName = "Grenadier";
+	scope = 2;
+	displayName = "Signaller";
+	backpack = "TWC_Backpack_ColdWar_Malay_Signaller";
+};
+class TWC_Infantry_ColdWar_Malay_Marksman: TWC_Infantry_ColdWar_Malay_Rifleman
+{
+	displayName = "Marksman";
+	weapons[] =
+	{
+		"LIB_LeeEnfield_No4_Scoped",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"LIB_LeeEnfield_No4_Scoped",
+		"Throw",
+		"Put"
+	};
 	magazines[] =
 	{
-		MAG_8("LIB_15Rnd_762x33"),
-		MAG_5("LIB_15Rnd_762x33_t"),
+		MAG_13("LIB_10Rnd_770x56"),
 		MAG_2("LIB_MillsBomb"),
-		MAG_2("ACE_M14"),
 		"LIB_No82"
 	};
 	respawnmagazines[] =
 	{
-		MAG_8("LIB_15Rnd_762x33"),
-		MAG_5("LIB_15Rnd_762x33_t"),
+		MAG_13("LIB_10Rnd_770x56"),
 		MAG_2("LIB_MillsBomb"),
-		MAG_2("ACE_M14"),
 		"LIB_No82"
 	};
 };
