@@ -1,12 +1,37 @@
 class CfgFunctions {
-	// Core ACE adjustments
+	/* Core ACE adjustments */
 	class ace_medical_statemachine {
 		tag = "ace_medical_statemachine";
 		
 		// CPR override, to make the timer stop whilst under CPR
 		class ace_medical_statemachine {
 			class handleStateCardiacArrest {
-				file = "twc_medical_core\functions\fn_handleStateCardiacArrest.sqf";
+				file = "twc_medical_core\overrides\fn_handleStateCardiacArrest.sqf";
+			};
+			
+			class leftStateCardiacArrest {
+				file = "twc_medical_core\overrides\fn_leftStateCardiacArrest.sqf";
+			};
+		};
+	};
+	
+	class ace_medical_vitals {
+		tag = "ace_medical_vitals";
+		
+		// Tourniquet override
+		class ace_medical_vitals {
+			class handleUnitVitals {
+				file = "twc_medical_core\overrides\fn_handleUnitVitals.sqf";
+			};
+		};
+	};
+	
+	class ace_medial_treatment {
+		tag = "ace_medical_treatment";
+		
+		class ace_medical_treatment {
+			class cprLocal {
+				file = "twc_medical_core\overrides\fn_cprLocal.sqf";
 			};
 		};
 	};
@@ -35,7 +60,7 @@ class CfgFunctions {
 		};
 		
 		class curator {
-			file = "twc_medical\curator";
+			file = "twc_medical_core\curator";
 			
 			class resuscitateUnit {};
 			class fullHealUnit {};
