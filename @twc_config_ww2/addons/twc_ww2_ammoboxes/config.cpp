@@ -237,24 +237,7 @@ class CfgVehicles {
 			maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
 		};
 	};
-	
-	class LIB_AmmoCrate_Mortar_SU;
-	class TWC_AmmoBox_WW2_Static_Portable: LIB_AmmoCrate_Mortar_SU {
-		displayName = "Static Resupply";
-		ace_rearm_defaultSupply = 100;
-		
-		scope = 2;
-		scopeCurator = 2;
-		editorSubcategory = "TWC_WW2_Crates";
-		
-		class TransportWeapons {};
-		class TransportBackpacks {};
-		class TransportItems {};
-		class TransportMagazines {};
-	};
-};
-
-class TWC_AmmoBox_Coldwar_Malay_Portable: TWC_AmmoBox_WW2_Portable {
+	class TWC_AmmoBox_Coldwar_Malay_Portable: TWC_AmmoBox_WW2_Portable {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Section Resupply - (Malay Conflict)";
@@ -290,7 +273,6 @@ class TWC_AmmoBox_Coldwar_Malay_Portable: TWC_AmmoBox_WW2_Portable {
 			// Frag Grenade
 			maga_nc(LIB_MillsBomb, 6);
 			maga_nc(LIB_1Rnd_G_MillsBomb, 4);
-			mag_nc(ACE_M14, 2);
 			
 			// AT Grenade
 			maga_nc(LIB_No82, 2);
@@ -306,3 +288,19 @@ class TWC_AmmoBox_Coldwar_Malay_Portable: TWC_AmmoBox_WW2_Portable {
 			maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
 		};
 	};
+	
+	class LIB_AmmoCrate_Mortar_SU;
+	class TWC_AmmoBox_WW2_Static_Portable: LIB_AmmoCrate_Mortar_SU {
+		displayName = "Static Resupply";
+		ace_rearm_defaultSupply = 100;
+		
+		scope = 2;
+		scopeCurator = 2;
+		editorSubcategory = "TWC_WW2_Crates";
+		
+		class TransportWeapons {};
+		class TransportBackpacks {};
+		class TransportItems {};
+		class TransportMagazines {};
+	};
+};
