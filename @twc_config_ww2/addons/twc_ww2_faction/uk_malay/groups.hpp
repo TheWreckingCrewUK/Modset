@@ -31,14 +31,14 @@ class TWC_Groups_##ERA##_##CAMO \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_##ERA##_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_##ERA##_##CAMO##_Marksman; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
@@ -79,7 +79,7 @@ class TWC_Groups_##ERA##_##CAMO \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_##ERA##_##CAMO##_SMG; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
@@ -93,14 +93,14 @@ class TWC_Groups_##ERA##_##CAMO \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_##ERA##_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_##ERA##_##CAMO##_Marksman; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
@@ -169,8 +169,8 @@ class TWC_Groups_##ERA##_##CAMO \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Platoon_CSM; \
-			rank = "CAPTAIN"; \
+			vehicle = TWC_Infantry_##ERA##_##CAMO##_Signaller; \
+			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
 	}; \
@@ -314,7 +314,7 @@ class TWC_Groups_##ERA##_Dismounted_##CAMO \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_SMG; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
@@ -328,14 +328,14 @@ class TWC_Groups_##ERA##_Dismounted_##CAMO \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Marksman; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
@@ -390,7 +390,7 @@ class TWC_Groups_##ERA##_Dismounted_##CAMO \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Platoon_Runner; \
+			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
