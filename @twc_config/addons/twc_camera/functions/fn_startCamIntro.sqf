@@ -44,7 +44,7 @@ _titleText = format [
 [parseText _titleText, [0, 0.3, 1, 1], nil, 4, 4, 0] spawn BIS_fnc_textTiles;
 sleep 11;
 
-"TWCIntroText" titleCut ["", "BLACK IN", 20];
+"TWCIntroText" cutText ["", "BLACK IN", 20];
 
 _alternatePan = false;
 

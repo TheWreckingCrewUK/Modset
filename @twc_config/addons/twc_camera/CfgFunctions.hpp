@@ -9,7 +9,7 @@ class CfgFunctions {
 			class getIntroData {};
 			class getGroupData {};
 			
-			class startStaticCamera {};
+			class startStaticIntro {};
 			class startCamIntro {};
 		};
 	};
