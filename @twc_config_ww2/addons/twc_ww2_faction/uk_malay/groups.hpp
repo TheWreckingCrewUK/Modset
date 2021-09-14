@@ -171,7 +171,7 @@ class TWC_Groups_##ERA##_##CAMO \
 			side = 2; \
 			vehicle = TWC_Infantry_##ERA##_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
-			position[] = {8,0,0}; \
+			position[] = {6,0,0}; \
 		}; \
 	}; \
 	class Company_Command \
@@ -296,9 +296,9 @@ class TWC_Groups_##ERA##_##CAMO \
 		}; \
 	}; \
 }; \
-class TWC_Groups_##ERA##_##CAMO_Dismounted \
+class TWC_Groups_##CAMO##_Dismounted \
 { \
-	name = __EVAL("Infantry (Dismounted, " + #CAMO + ")"); \
+	name = __EVAL("Infantry ( Dismounted, " + #CAMO + ")"); \
 	class Section \
 	{ \
 		name = "Section (Malay)"; \
