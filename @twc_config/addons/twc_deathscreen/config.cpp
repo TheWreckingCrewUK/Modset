@@ -10,7 +10,7 @@ class CfgPatches {
 			"twc_sounds",
 			"twc_ui",
 			"ace_common",
-			"twc_intro"
+			"twc_camera"
 		};
 
 		author = "Bosenator";
