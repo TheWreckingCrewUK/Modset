@@ -14,3 +14,4 @@ class fow_b_us_rocket_bag;
 #include "uk_late\backpacks.hpp"
 #include "uk_early\backpacks.hpp"
 #include "uk_airborne\backpacks.hpp"
+#include "uk_malay\backpacks.hpp"
