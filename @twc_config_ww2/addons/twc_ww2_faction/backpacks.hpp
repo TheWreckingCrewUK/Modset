@@ -3,12 +3,15 @@
 #define ADD_ITEM(a,b) class _nc_##a {name = a; count = b;}
 
 class B_LIB_UK_HSack_Tea;
+class B_LIB_UK_HSack;
 class B_LIB_UK_HSack_Blanco_Tea;
 class B_LIB_SOV_RA_MedicalBag_Empty;
 class B_LIB_US_Radio_ACRE2;
 class fow_b_uk_piat;
 class fow_b_uk_bergenpack;
+class fow_b_us_rocket_bag;
 
 #include "uk_late\backpacks.hpp"
 #include "uk_early\backpacks.hpp"
 #include "uk_airborne\backpacks.hpp"
+#include "uk_malay\backpacks.hpp"
