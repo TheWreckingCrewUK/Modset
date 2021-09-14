@@ -1,12 +1,8 @@
 //SECTION
-class TWC_Backpack_ColdWar_Malay_SectionCommander: B_LIB_US_Radio_ACRE2
+class TWC_Backpack_ColdWar_Malay_SectionCommander: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 200;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC77,1);
-	};
 	class TransportMagazines {
 		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
 		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
@@ -26,7 +22,16 @@ class TWC_Backpack_ColdWar_Malay_2iC: B_LIB_UK_HSack
 	class TransportMagazines {
 		ADD_MAGA(LIB_15Rnd_762x33,16);
 		ADD_MAGA(LIB_30Rnd_770x56,6);
+		ADD_MAGA(LIB_10Rnd_770x56,5);
 		ADD_MAGA(SmokeShell,2);
+	};
+};
+class TWC_Backpack_ColdWar_Malay_Signaller: B_LIB_US_Radio_ACRE2
+{
+	scope = 1;
+	scopeArsenal = 1;
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
 	};
 };
 class TWC_Backpack_ColdWar_Malay_MGASS: B_LIB_UK_HSack
@@ -45,16 +50,29 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_Rifleman: B_LIB_UK_HSack
 	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(LIB_15Rnd_762x33,12);
+		ADD_MAGA(LIB_30Rnd_770x56,4);
 	};
 };
-class TWC_Backpack_ColdWar_Malay_Dismounted_Grenadier: B_LIB_UK_HSack
+class TWC_Backpack_ColdWar_Malay_Dismounted_Signaller: B_LIB_US_Radio_ACRE2
+{
+	scope = 1;
+	scopeArsenal = 1;
+	maximumLoad = 200;
+	class TransportItems {
+		ADD_ITEM(ACRE_PRC77,1);
+	};
+	class TransportMagazines {
+		ADD_MAGA(LIB_15Rnd_762x33,8);
+	};
+};
+class TWC_Backpack_ColdWar_Malay_Dismounted_Marksman: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
 	maximumLoad = 110;
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33,12);
-		ADD_MAGA(LIB_1Rnd_G_MillsBomb,8);
+		ADD_MAGA(LIB_10Rnd_770x56,13),
+		ADD_MAGA(LIB_30Rnd_770x56,4);
 	};
 };
 class TWC_Backpack_ColdWar_Malay_Dismounted_SMG: B_LIB_UK_HSack
@@ -62,7 +80,8 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_SMG: B_LIB_UK_HSack
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(LIB_50Rnd_45ACP,6);
+		ADD_MAGA(LIB_50Rnd_45ACP,12);
+		ADD_MAGA(LIB_30Rnd_770x56,4);
 	};
 };
 class TWC_Backpack_ColdWar_Malay_Dismounted_MG: B_LIB_UK_HSack
@@ -82,12 +101,20 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_MGASS: B_LIB_UK_HSack
 		ADD_MAGA(LIB_30Rnd_770x56,12);
 	};
 };
-class TWC_Backpack_ColdWar_Malay_Dismounted_SectionCommander: B_LIB_US_Radio_ACRE2
+class TWC_Backpack_ColdWar_Malay_Dismounted_SectionCommander: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC77,1);
+	class TransportMagazines {
+		ADD_MAGA(LIB_50Rnd_45ACP,8);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
+		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
+		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 	};
 };
 class TWC_Backpack_ColdWar_Malay_Dismounted_2iC: B_LIB_UK_HSack
@@ -98,19 +125,17 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_2iC: B_LIB_UK_HSack
 	class TransportMagazines {
 		ADD_MAGA(LIB_15Rnd_762x33,20);
 		ADD_MAGA(LIB_30Rnd_770x56,10);
+		ADD_MAGA(LIB_50Rnd_45ACP,10);
+		ADD_MAGA(LIB_10Rnd_770x56,7),
 		ADD_MAGA(SmokeShell,2);
 	};
 };
 
 //PLATOON
-class TWC_Backpack_ColdWar_Malay_Platoon_Commander: B_LIB_US_Radio_ACRE2
+class TWC_Backpack_ColdWar_Malay_Platoon_Commander: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 200;
-	class TransportItems {
-		ADD_ITEM(ACRE_PRC77,1);
-	};
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
