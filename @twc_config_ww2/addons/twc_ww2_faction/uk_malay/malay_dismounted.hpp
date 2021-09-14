@@ -5,10 +5,15 @@ class TWC_Infantry_ColdWar_Malay_Dismounted_Rifleman: TWC_Infantry_ColdWar_Malay
 	CATEGORY(TWC_Infantry_Dismounted_Woodland)
 	backpack = "TWC_Backpack_ColdWar_Malay_Rifleman";
 };
-class TWC_Infantry_ColdWar_Malay_Dismounted_Grenadier: TWC_Infantry_ColdWar_Malay_Grenadier
+class TWC_Infantry_ColdWar_Malay_Dismounted_Signaller: TWC_Infantry_ColdWar_Malay_Signaller
 {
 	CATEGORY(TWC_Infantry_Dismounted_Woodland)
-	backpack = "TWC_Backpack_ColdWar_Malay_Grenadier";
+	backpack = "TWC_Backpack_ColdWar_Malay_Signaller";
+};
+class TWC_Infantry_ColdWar_Malay_Dismounted_Marksman: TWC_Infantry_ColdWar_Malay_Marksman
+{
+	CATEGORY(TWC_Infantry_Dismounted_Woodland)
+	backpack = "TWC_Backpack_ColdWar_Malay_Marksman";
 };
 class TWC_Infantry_ColdWar_Malay_Dismounted_SMG: TWC_Infantry_ColdWar_Malay_SMG
 {
