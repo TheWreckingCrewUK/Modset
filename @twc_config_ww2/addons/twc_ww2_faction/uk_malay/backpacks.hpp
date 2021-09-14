@@ -18,11 +18,13 @@ class TWC_Backpack_ColdWar_Malay_2iC: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 160;
+	maximumLoad = 200;
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33,16);
-		ADD_MAGA(LIB_30Rnd_770x56,6);
-		ADD_MAGA(LIB_10Rnd_770x56,5);
+		ADD_MAGA(LIB_15Rnd_762x33,14);
+		ADD_MAGA(LIB_30Rnd_770x56,4);
+		ADD_MAGA(LIB_10Rnd_770x56,4);
+		ADD_MAGA(LIB_50Rnd_45ACP,4);
+		ADD_MAGA(LIB_MillsBomb,4);
 		ADD_MAGA(SmokeShell,2);
 	};
 };
@@ -121,12 +123,13 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_2iC: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 200;
+	maximumLoad = 250;
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33,20);
-		ADD_MAGA(LIB_30Rnd_770x56,10);
-		ADD_MAGA(LIB_50Rnd_45ACP,10);
+		ADD_MAGA(LIB_15Rnd_762x33,16);
+		ADD_MAGA(LIB_30Rnd_770x56,8);
+		ADD_MAGA(LIB_50Rnd_45ACP,8);
 		ADD_MAGA(LIB_10Rnd_770x56,7);
+		ADD_MAGA(LIB_MillsBomb,8);
 		ADD_MAGA(SmokeShell,2);
 	};
 };

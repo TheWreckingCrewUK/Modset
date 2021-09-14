@@ -654,7 +654,7 @@ class TWC_Infantry_ColdWar_Malay_Vehicle_Commander: TWC_Infantry_ColdWar_Malay_S
 	linkedItems[] =
 	{
 		"V_LIB_UK_P37_Sten",
-		"H_LIB_UK_Beret",
+		"H_LIB_UK_Beret_Headset",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"

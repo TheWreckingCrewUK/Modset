@@ -220,8 +220,7 @@ class CfgVehicles {
 			maga_nc(SmokeShellRed, 2);
 			
 			// Frag Grenade
-			maga_nc(LIB_MillsBomb, 6);
-			maga_nc(LIB_1Rnd_G_MillsBomb, 4);
+			maga_nc(LIB_MillsBomb, 10);
 			
 			// AT Grenade
 			maga_nc(LIB_No82, 2);
