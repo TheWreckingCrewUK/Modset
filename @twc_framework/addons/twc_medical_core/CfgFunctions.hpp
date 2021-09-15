@@ -33,6 +33,12 @@ class CfgFunctions {
 			class cprLocal {
 				file = "twc_medical_core\overrides\fn_cprLocal.sqf";
 			};
+			
+			// Override the default bandaging time calculation
+			// If the default turns out to be meh
+			/* class getBandageTime {
+				file = "twc_medical_core\overrides\fn_getBandageTime.sqf";
+			}; */
 		};
 	};
 	
