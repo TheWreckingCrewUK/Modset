@@ -1,5 +1,5 @@
 class CfgPatches {
-	class twc_ai {
+	class twc_ai_skill {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
@@ -19,22 +19,22 @@ class CfgVehicles {
 	
 	class B_Soldier_base_F: SoldierWB {
 		threat[] = { 1, 1, 1};
-		camouflage = 7;
+		camouflage = 6;
 		accuracy = 0.2;
 		cost = 10;
 	};
 };
 
 class CfgAISkill {
-	aimingAccuracy[] = {0,   0, 1, 0.6};
-	aimingShake[]    = {0,   0, 1, 0.6};
-	aimingSpeed[]    = {0, 0.3, 1, 0.7};
+	aimingAccuracy[] = {0,   0, 1, 0.5};
+	aimingShake[]    = {0,   0, 1, 0.5};
+	aimingSpeed[]    = {0,   0, 1, 0.4};
 	commanding[]     = {0,   0, 1, 0.8};
 	courage[]        = {0, 0.3, 1,   1};
 	general[]        = {0,   0, 1,   1};
-	reloadSpeed[]    = {0,   1, 1,   1};
+	reloadSpeed[]    = {0, 0.5, 1,   1};
 	spotDistance[]   = {0,   1, 1,   1};
-	spotTime[]       = {0, 0.3, 1, 0.8};
+	spotTime[]       = {0, 0.3, 1, 0.9};
 };
 
 #include "CfgBrains.hpp"
