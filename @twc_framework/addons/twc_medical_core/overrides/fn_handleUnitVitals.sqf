@@ -46,8 +46,8 @@ private _tourniquets = GET_TOURNIQUETS(_unit);
 
 {
 	// Edited to be lowered from 120 to 30s for gameplay reasons
-	if (_x > 0 && {CBA_missionTime - _x > 30}) then {
-		_tourniquetPain = _tourniquetPain max (CBA_missionTime - _x - 30) * 0.001;
+	if (_x > 0 && {CBA_missionTime - _x > 45}) then {
+		_tourniquetPain = _tourniquetPain max (CBA_missionTime - _x - 45) * 0.0015;
 	};
 } forEach _tourniquets;
 
