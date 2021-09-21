@@ -257,7 +257,7 @@ class TWC_Operation_Opfor_Taliban {
 		};
 	};
 	class TWC_Operation_Opfor_Modern_Taliban_Team7 {
-		name = "Team 6"; //Name of Group
+		name = "Team 7"; //Name of Group
 		faction = "TWC_OPFOR_Taliban"; //Faction
 		side = 0; //Side
 		
