@@ -1,6 +1,6 @@
-params [["_era", (missionNameSpace getVariable ["era", "modern"])], ["_isNight", (missionNameSpace getVariable ["TWC_NightGear", false])]];
-
-_specialSong = missionNamespace getVariable ["TWC_Intro_specialSong", ""];
+private _era = missionNameSpace getVariable ["era", "modern"];
+private _isNight = missionNameSpace getVariable ["TWC_NightGear", false];
+private _specialSong = missionNamespace getVariable ["TWC_Intro_specialSong", ""];
 
 if (_specialSong != "") then {
 	if (isClass (configFile >> "CfgMusic" >> _specialSong)) exitWith {
