@@ -14,9 +14,15 @@
 *
 * Public: No
 */
-params ["_enabled",["_type","B_Boat_Transport_01_F"]];
+#include "macros.hpp"
 
-if(!hasInterface)exitWith{};
+params ["_enabled", ["_type","B_Boat_Transport_01_F"]];
+
+DEPRECATED_ALT("twc_fnc_boatSafety", "twc_framework_fnc_toggleBoatSafety")
+
+[_enabled] call twc_framework_fnc_toggleBoatSafety;
+
+/* if(!hasInterface)exitWith{};
 
 if !(_enabled) exitWith {};
 
@@ -27,4 +33,4 @@ player addEventHandler ["GetOutMan",{
 		
 		[{ player allowDamage true; }, [], 3] call CBA_fnc_waitAndExecute;
 	};
-}];
+}]; */

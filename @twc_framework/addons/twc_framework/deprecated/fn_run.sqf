@@ -14,10 +14,15 @@
 *
 * Public: No
 */
+#include "macros.hpp"
+
 params ["_range", ["_marker", "base"]];
 
+DEPRECATED("twc_fnc_run")
+
+/* 
 if (!hasInterface) exitWith {};
-if (_range == 0) exitWith {};
+if (_range == 0) exitWith {}; */
 
 /* if (getMarkerColor _marker == "") exitWith {
 	systemChat "No Running in base is enabled, but no base marker is defined";

@@ -13,9 +13,15 @@
 *
 * Public: No
 */
+#include "macros.hpp"
+
 params ["_enabled"];
 
-if(!isServer)exitWith{};
+DEPRECATED_ALT("twc_fnc_civilianEquipment", "twc_framework_fnc_cleanCivilianEquipment")
+
+[_enabled] call twc_framework_fnc_cleanCivilianEquipment;
+
+/* if(!isServer)exitWith{};
 
 if !(_enabled) exitWith {};
 
@@ -25,3 +31,4 @@ if !(_enabled) exitWith {};
 		removebackpack _x;
 	};
 } foreach allunits;
+ */

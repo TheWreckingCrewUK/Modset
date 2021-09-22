@@ -14,8 +14,15 @@
 *
 * Public: No
 */
+#include "macros.hpp"
+
 params ["_range", ["_marker", "base"]];
 
+DEPRECATED_ALT("twc_fnc_safeZone", "twc_framework_fnc_toggleSafeZone")
+
+[_range, _marker] call twc_framework_fnc_toggleSafeZone;
+
+/* 
 if (!hasInterface) exitWith {};
 if (_range == 0) exitWith {};
 
@@ -43,4 +50,4 @@ _handle = player addEventHandler ["Fired", {
 	},
 	[_handle],
 	300
-] call CBA_fnc_waitAndExecute;
+] call CBA_fnc_waitAndExecute; */

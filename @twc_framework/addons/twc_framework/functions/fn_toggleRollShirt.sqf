@@ -1,22 +1,10 @@
 /*
-* Author: [TWC] jayman
-* Allows player to roll sleeves on uniform.
-*
-* Arguments:
-* 0: Enabled <BOOL>
-*
-* Return Value:
-* NOTHING
-*
-* Example:
-* [true] call twc_fnc_rollShirt;
-*
-* Public: No
-*/
-params ["_enabled"];
+ * Toggles the option to 'roll shirt sleeves' on appropriate uniform.
+ * Author: Jayman
+ */
+params [["_enabled", false, [false]]];
 
-if(!hasInterface)exitWith{};
-
+if !(hasInterface)exitWith{};
 if !(_enabled) exitWith {};
 
 //Checks if you even have a possible uniform
@@ -46,16 +34,18 @@ twc_fnc_rollSleeves = {
 		default {hint "You do not have an appropriate uniform to roll sleeves"};
 	};
 	//Saves Gear
-	_items = uniformitems player;
+	_items = uniformItems player;
 	_magazines = magazinesAmmo (uniformContainer player);
-	Removeuniform player;
+	removeUniform player;
 	player adduniform _newUniform;
+	
 	{
-		if !(_x isKindOf ["CA_Magazine",configFile >> "CfgMagazines"]) then{
+		if !(_x isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
 			player addItemToUniform _x;
 		};
-	}foreach _items;
+	} foreach _items;
+	
 	{
 		player addMagazine [(_x select 0),(_x select 1)];
-	}forEach _magazines;
+	} forEach _magazines;
 };

@@ -14,9 +14,15 @@
 *
 * Public: No
 */
+#include "macros.hpp"
+
 params ["_range",["_marker","base"]];
 
-if (!isServer) exitWith {};
+DEPRECATED_ALT("twc_fnc_deadBodies", "twc_framework_fnc_cleanBaseBodies")
+
+[_range, _marker] call twc_framework_fnc_cleanBaseBodies;
+
+/* if (!isServer) exitWith {};
 if (_range <= 0 || isNil "_range") exitWith {};
 
 if (getMarkerColor _marker isEqualTo "") exitWith {
@@ -32,4 +38,4 @@ _handle = addMissionEventHandler ["HandleDisconnect", {
 			deleteVehicle (_this select 0);
 		};
 	};
-}];
+}]; */

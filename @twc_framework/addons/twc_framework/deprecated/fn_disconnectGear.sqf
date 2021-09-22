@@ -13,11 +13,17 @@
 *
 * Public: No
 */
+#include "macros.hpp"
+
 params["_bool"];
-if (!_bool) exitWith {};
+
+// there's no new alternative to this, as this is deemed not useful
+DEPRECATED("twc_fnc_disconnectGear")
+
+/* if (!_bool) exitWith {};
 if (!isServer) exitWith {};
 
-addMissionEventHandler ["HandleDisconnect", {
+ addMissionEventHandler ["HandleDisconnect", {
 	_unit = (_this select 0);
 	_uid = (_this select 2);
 
@@ -25,7 +31,7 @@ addMissionEventHandler ["HandleDisconnect", {
 
 /* 	if !(_unit getVariable ["wasKilled", false]) then {
 		deleteVehicle _unit;
-	}; */
+	}; /
 
 	// remove bodies always first 60 seconds of the op
 	if (time <= 60) then {
@@ -45,4 +51,4 @@ addMissionEventHandler ["HandleDisconnect", {
 			};
 		} forEach allDeadmen;
 	};
-}] call BIS_fnc_addStackedEventHandler;
+}] call BIS_fnc_addStackedEventHandler; */

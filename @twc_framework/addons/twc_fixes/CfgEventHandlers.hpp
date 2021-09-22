@@ -18,14 +18,6 @@ class Extended_InitPost_EventHandlers {
 	};
 };
 
-class Extended_GetOutMan_EventHandlers {
-	class CAManBase {
-		class TWC_Fixes_EH {
-			getOutMan = "_this call TWC_fixes_fnc_checkIfRocket";
-		};
-	};
-};
-
 class Extended_Reloaded_EventHandlers {
 	class CAManBase {
 		class TWC_Fixes_EH {

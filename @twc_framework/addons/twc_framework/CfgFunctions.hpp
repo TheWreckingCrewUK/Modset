@@ -1,5 +1,39 @@
 class CfgFunctions {
+	class twc_framework {
+		tag = "twc_framework";
+		
+		class functions {
+			file = "twc_framework\functions";
+			
+			/** Only on Initalization **/
+			class enableZeusObjects {};
+			class setEra {};
+			class setForceType {};
+			
+			/** Realtime Togglebles **/
+			class toggleBoatSafety {};
+			class toggleRollShirt {};
+			class toggleSafeZone {};
+			
+			/** Cleaning functionality **/
+			class cleanCivilianEquipment {};
+			class cleanBaseBodies {};
+		};
+	};
+	
+	class twc_framework_module {
+		tag = "twc_framework_module";
+		
+		class functions {
+			file = "twc_framework\modules";
+			
+			class missionConfiguration {};
+		};
+	};
+	
 	class TWC {
+		tag = "twc";
+		
 		class functions {
 			file = "twc_framework\functions";
 			class AirAssault {};
@@ -68,19 +102,25 @@ class CfgFunctions {
 			class postInit {};
 		};
 		
-		class modules {
-			file = "twc_framework\modules";
+		class deprecated {
+			file = "twc_framework\deprecated";
+			
+			/** DEPRECATED - TO BE DELETED **/
+			class run{};
+			class safeZone{};
+			class zeus{};
 			class era{};
 			class rollShirt{};
 			class boatSafety{};
 			class civilianEquipment{};
 			class deadBodies{};
 			class disconnectGear{};
+		};
+		
+		class modules {
+			file = "twc_framework\modules";
 			class missionModuleInit{};
 			class moduleDebug{};
-			class run{};
-			class safeZone{};
-			class zeus{};
 			class moduleAmbientCiv {};
 			class moduleCreateTask;
 			class moduleCrateParadrop {};
@@ -141,9 +181,7 @@ class CfgFunctions {
 
 		class curator {
 			file = "twc_framework\curator";
-			class setSpectator {};
 			class forceUncache{};
-			// medical moved to twc_medical
 		};
 
 		class artillery {

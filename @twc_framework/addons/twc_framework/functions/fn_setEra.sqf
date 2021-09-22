@@ -1,19 +1,8 @@
 /*
-* Author: [TWC] jayman
-* Sets rank insignias for friendly units. Changes default ACE pictures
-*
-* Arguments:
-* 0: ERA <STRING>
-*
-* Return Value:
-* NOTHING
-*
-* Example:
-* [modern] call twc_fnc_era;
-*
-* Public: No
-*/
-params["_era"];
+ * Sets era specific configurations, for optimal experience.
+ * For example, the player ranks.
+ */
+params ["_era"];
 
 switch (_era) do {
 	case "millennial";
