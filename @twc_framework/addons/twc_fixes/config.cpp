@@ -7,7 +7,8 @@ class CfgPatches {
 		requiredAddons[] = {
 			"A3_Structures_F_Dominants_Castle",
 			"ace_common",
-			"ace_logistics_wirecutter"
+			"ace_logistics_wirecutter",
+			"ace_captives"
 		};
 
 		author[] = {};
