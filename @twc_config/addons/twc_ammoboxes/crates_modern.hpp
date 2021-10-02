@@ -101,6 +101,9 @@ class TWC_AmmoBox_Modern_COIN_Section_Portable: TWC_AmmoBox_Portable {
 		// FN Minimi AR
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, 4);
 		ADD_MAGA(UK3CB_BAF_556_200Rnd_T, 2);
+
+		//Glock 17
+		ADD_MAGA(UK3CB_BAF_9_17Rnd, 8);
 		
 		// UGL 40mm
 		ADD_MAGA(1Rnd_HE_Grenade_shell, 8);
