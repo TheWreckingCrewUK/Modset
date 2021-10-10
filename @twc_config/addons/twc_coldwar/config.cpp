@@ -177,12 +177,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"sp_smg_sterling",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
 			"sp_smg_sterling",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
@@ -211,7 +213,18 @@ class CfgVehicles
 		{
 			init = "";
 		};
-		
+		weapons[]=
+		{
+			"sp_smg_sterling",
+			"Throw",
+			"Put"
+		};
+		respawnweapons[]=
+		{
+			"sp_smg_sterling",
+			"Throw",
+			"Put"
+		};
 		nightItems[] = {
 			MAG_2("Chemlight_green")
 		};
