@@ -1,0 +1,396 @@
+class CUP_B_USArmy_Soldier_BDUv2_ERDL_lowland;
+class CUP_B_USArmy_Soldier_BDUv2_gloves_ERDL_lowland: CUP_B_USArmy_Soldier_BDUv2_ERDL_lowland
+{
+    modelSides[] = {3,1,2};
+};
+
+class CI_Base: I_Soldier_base_F
+{
+	_generalMacro="CI_base";
+	author="Saxon";
+	scope=1;
+	displayName="Chaos Soldier Base";
+	faction="TWC_CI_Units";
+	nakedUniform="U_BasicBody";
+	uniformClass="CUP_U_B_BDUv2_gloves_ERDL_lowland";
+	linkedItems[]=
+	{
+		"CUP_V_B_Interceptor_Rifleman_Olive",
+		"CUP_H_PASGTv2_NVG_OD",
+		"G_RegulatorMask_F",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_B_Interceptor_Rifleman_Olive",
+		"CUP_H_PASGTv2_NVG_OD",
+		"G_RegulatorMask_F",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	Items[]=
+	{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_tourniquet"
+	};
+	respawnItems[]=
+	{
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_fieldDressing",
+		"ACE_morphine",
+		"ACE_tourniquet"
+	};
+};
+class CI_Rifleman: CI_Base
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Rifleman";
+	weapons[]=
+	{
+		"CUP_arifle_AKS74_Early",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"CUP_arifle_AKS74_Early",
+		"Throw",
+		"Put"
+	};
+	magazines[]=
+	{
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_HandGrenade_RGD5"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_30Rnd_545x39_AK_M",
+		"CUP_HandGrenade_RGD5"
+	};
+};
+
+class CI_SMG: CI_Base
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Submachinegunner";
+	weapons[]=
+	{
+		"CUP_smg_MP5A5",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"CUP_smg_MP5A5",
+		"Throw",
+		"Put"
+	};
+	magazines[]=
+	{
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_HandGrenade_RGD5"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_30Rnd_9x19_MP5",
+		"CUP_HandGrenade_RGD5"
+	};
+};
+
+class CI_Rifleman_G3: CI_Base
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Rifleman (G3)";
+	weapons[]=
+	{
+		"CUP_arifle_G3A3_ris",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"CUP_arifle_G3A3_ris",
+		"Throw",
+		"Put"
+	};
+	magazines[]=
+	{
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_HandGrenade_RGD5"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_20Rnd_762x51_G3",
+		"CUP_HandGrenade_RGD5"
+	};
+};
+
+class CI_Shotgunner: CI_Base
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Shotgunner";
+	weapons[]=
+	{
+		"CUP_sgun_M1014",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"CUP_sgun_M1014",
+		"Throw",
+		"Put"
+	};
+	magazines[]=
+	{
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_HandGrenade_RGD5"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_8Rnd_12Gauge_Pellets_No00_Buck",
+		"CUP_HandGrenade_RGD5"
+	};
+};
+
+class CI_AutoRifleman: CI_Base
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Automatic Rifleman";
+	weapons[]=
+	{
+		"CUP_lmg_minimi",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"CUP_lmg_minimi",
+		"Throw",
+		"Put"
+	};
+	magazines[]=
+	{
+		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+		"CUP_HandGrenade_RGD5"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+		"CUP_HandGrenade_RGD5"
+	};
+};
+
+class CI_Machinegunner: CI_Base
+{
+	scope=2;
+	scopeCurator = 2;
+	displayName="Machinegunner";
+	weapons[]=
+	{
+		"CUP_lmg_FNMAG_RIS_modern",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"CUP_lmg_FNMAG_RIS_modern",
+		"Throw",
+		"Put"
+	};
+	magazines[]=
+	{
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_HandGrenade_RGD5"
+	};
+	Respawnmagazines[]=
+	{
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+		"CUP_HandGrenade_RGD5"
+	};
+};
+
+class TWC_Infantry_Millennial_Base;
+class MTF_P90: TWC_Infantry_Millennial_Base
+{
+	author="Saxon";
+	scope=2;
+	scopeCurator = 2;
+	faction="TWC_MTF_Units";
+	nakedUniform="U_BasicBody";
+	uniformClass="CUP_U_B_BDUv2_gloves_Tpattern";
+	displayName="MTF (P90)";
+	linkedItems[]=
+	{
+		"CUP_V_PMC_IOTV_Black_Patrol",
+		"H_PASGT_basic_black_F",
+		"G_Balaclava_TI_blk_F",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_PMC_IOTV_Black_Patrol",
+		"H_PASGT_basic_black_F",
+		"G_Balaclava_TI_blk_F",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	weapons[]=
+	{
+		"SMG_03C_black",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"SMG_03C_black",
+		"Throw",
+		"Put"
+	};
+	magazines[]=
+	{
+		MAG_7("50Rnd_570x28_SMG_03"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		MAG_7("50Rnd_570x28_SMG_03"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SmokeShell"
+	};
+};
+
+class MTF_HK416: TWC_Infantry_Millennial_Base
+{
+	author="Saxon";
+	scope=2;
+	scopeCurator = 2;
+	faction="TWC_MTF_Units";
+	nakedUniform="U_BasicBody";
+	uniformClass="CUP_U_B_BDUv2_gloves_Tpattern";
+	displayName="MTF (HK416)";
+	linkedItems[]=
+	{
+		"CUP_V_PMC_IOTV_Black_Patrol",
+		"H_PASGT_basic_black_F",
+		"G_Balaclava_TI_blk_F",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_PMC_IOTV_Black_Patrol",
+		"H_PASGT_basic_black_F",
+		"G_Balaclava_TI_blk_F",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	weapons[]=
+	{
+		"twc_hk416_d_base_c",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[]=
+	{
+		"twc_hk416_d_base_c",
+		"Throw",
+		"Put"
+	};
+	magazines[]=
+	{
+		MAG_7("CUP_30Rnd_556x45_PMAG_QP"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		MAG_7("CUP_30Rnd_556x45_PMAG_QP"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"SmokeShell"
+	};
+};
