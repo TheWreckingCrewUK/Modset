@@ -152,4 +152,11 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 0;
 	};
+	class TWC_CI_Units {
+		displayName = "Chaos Insurgency";
+		author = "Saxon";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 2;
+	};
 };
