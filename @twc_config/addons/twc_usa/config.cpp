@@ -1,6 +1,16 @@
 class CfgPatches {
-	class twc_uds {
-		units[] = {};
+	class twc_usa {
+		units[] = {
+			"TWC_Infantry_USA_CW_SquadLeader",
+			"TWC_Infantry_USA_CW_TeamLeader",
+			"TWC_Infantry_USA_CW_TeamLeader_MG",
+			"TWC_Infantry_USA_CW_AutoRifleman",
+			"TWC_Infantry_USA_CW_Grenadier",
+			"TWC_Infantry_USA_CW_Rifleman",
+			"TWC_Infantry_USA_CW_Medic",
+			"TWC_Infantry_USA_CW_Crew",
+			"TWC_Vehicle_USA_AAV"
+		};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {
@@ -15,7 +25,15 @@ class CfgPatches {
 
 class CfgFactionClasses {
 	class TWC_USA_Modern {
-		displayName = "TWC Operations - USA";
+		displayName = "TWC Operations USA - Modern";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
+	};
+	
+	class TWC_USA_CW {
+		displayName = "TWC Operations USA - Cold War";
 		author = "The Wrecking Crew";
 		icon = "TWClogo.paa";
 		priority = 2;
@@ -33,7 +51,7 @@ class CfgVehicles {
 	class B_Soldier_base_F;
 
 	#define ITEMS(RADIO,ITEMS) RADIO,ITEMS
-	#define CW_ITEMS "ACE_EarPlugs","ACRE_PRC343","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
+	#define CW_ITEMS "ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
 	#define MODERN_ITEMS ITEMS("ACRE_PRC343",CW_ITEMS)
 	#define MAG_2(a) a, a
 	#define MAG_3(a) a, a, a
@@ -90,4 +108,7 @@ class CfgVehicles {
 
 	#include "modern\units.hpp"
 	#include "modern\backpacks.hpp"
+	
+	#include "coldwar\units.hpp"
+	#include "coldwar\backpacks.hpp"
 };
