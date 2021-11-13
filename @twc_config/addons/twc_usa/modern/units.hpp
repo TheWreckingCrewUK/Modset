@@ -25,11 +25,11 @@ class CUP_B_US_Soldier_SL_OEFCP;
 			MAG_2("CUP_1Rnd_SmokeYellow_M203"),
 			MAG_2("CUP_1Rnd_SmokeRed_M203"),
 			MAG_2("CUP_1Rnd_Smoke_M203"),
-			MAG_1("CUP_HandGrenade_M67"),
-			MAG_1("SmokeShellBlue"),
-			MAG_1("SmokeShellOrange"),
-			MAG_1("SmokeShellPurple"),
-			MAG_2("SmokeShell")
+			"CUP_HandGrenade_M67",
+			"SmokeShellBlue",
+			"SmokeShellOrange",
+			"SmokeShellPurple",
+			"SmokeShell"
 		};
 		respawnmagazines[] =
 		{
@@ -40,11 +40,11 @@ class CUP_B_US_Soldier_SL_OEFCP;
 			MAG_2("CUP_1Rnd_SmokeYellow_M203"),
 			MAG_2("CUP_1Rnd_SmokeRed_M203"),
 			MAG_2("CUP_1Rnd_Smoke_M203"),
-			MAG_1("CUP_HandGrenade_M67"),
-			MAG_1("SmokeShellBlue"),
-			MAG_1("SmokeShellOrange"),
-			MAG_1("SmokeShellPurple"),
-			MAG_2("SmokeShell")
+			"CUP_HandGrenade_M67",
+			"SmokeShellBlue",
+			"SmokeShellOrange",
+			"SmokeShellPurple",
+			"SmokeShell"
 		};
 		
 		nightItems[] = {
@@ -82,9 +82,9 @@ class CUP_B_US_Soldier_TL_OEFCP;
 			MAG_3("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
 			MAG_2("CUP_15Rnd_9x19_M9"),
 			MAG_2("CUP_HandGrenade_M67"),
-			MAG_1("SmokeShellRed"),
-			MAG_1("SmokeShellYellow"),
-			MAG_1("SmokeShellGreen"),
+			"SmokeShellRed",
+			"SmokeShellYellow",
+			"SmokeShellGreen",
 			MAG_2("SmokeShell")
 		};
 		respawnmagazines[] =
@@ -93,9 +93,9 @@ class CUP_B_US_Soldier_TL_OEFCP;
 			MAG_3("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
 			MAG_2("CUP_15Rnd_9x19_M9"),
 			MAG_2("CUP_HandGrenade_M67"),
-			MAG_1("SmokeShellRed"),
-			MAG_1("SmokeShellYellow"),
-			MAG_1("SmokeShellGreen"),
+			"SmokeShellRed",
+			"SmokeShellYellow",
+			"SmokeShellGreen",
 			MAG_2("SmokeShell")
 		};
 		
@@ -130,13 +130,13 @@ class CUP_B_US_Soldier_AR_OEFCP;
 		magazines[] =
 		{
 			MAG_2("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
-			MAG_1("CUP_HandGrenade_M67"),
+			"CUP_HandGrenade_M67",
 			MAG_2("SmokeShell")
 		};
 		respawnmagazines[] =
 		{
 			MAG_2("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
-			MAG_1("CUP_HandGrenade_M67"),
+			"CUP_HandGrenade_M67",
 			MAG_2("SmokeShell")
 		};
 		

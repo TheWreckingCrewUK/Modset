@@ -282,14 +282,14 @@ class CfgVehicles
 		weapons[] =
 		{
 			"TWC_Weapon_L85A1",
-			"ACE_Vector"
+			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
 			"TWC_Weapon_L85A1",
-			"ACE_Vector"
+			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
@@ -359,14 +359,14 @@ class CfgVehicles
 		weapons[] =
 		{
 			"UK3CB_BAF_L22",
-			"ACE_Vector"
+			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
 			"UK3CB_BAF_L22",
-			"ACE_Vector"
+			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
