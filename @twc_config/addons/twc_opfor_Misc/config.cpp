@@ -212,7 +212,8 @@ class CfgPatches {
 			"A3_Characters_F",
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
-			"CUP_Creatures_People_LoadOrder"
+			"CUP_Creatures_People_LoadOrder",
+			"twc_millennial"
 		};
 	};
 };

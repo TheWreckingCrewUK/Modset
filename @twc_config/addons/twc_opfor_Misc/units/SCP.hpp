@@ -17,6 +17,7 @@ class CI_Base: I_Soldier_base_F
 	{
 		"CUP_V_B_Interceptor_Rifleman_Olive",
 		"CUP_H_PASGTv2_NVG_OD",
+		"CUP_NVG_1PN138",
 		"G_RegulatorMask_F",
 		"ItemCompass",
 		"ItemWatch"
@@ -25,6 +26,7 @@ class CI_Base: I_Soldier_base_F
 	{
 		"CUP_V_B_Interceptor_Rifleman_Olive",
 		"CUP_H_PASGTv2_NVG_OD",
+		"CUP_NVG_1PN138",
 		"G_RegulatorMask_F",
 		"ItemCompass",
 		"ItemWatch"
@@ -302,20 +304,36 @@ class MTF_P90: TWC_Infantry_Millennial_Base
 	nakedUniform="U_BasicBody";
 	uniformClass="CUP_U_B_BDUv2_gloves_Tpattern";
 	displayName="MTF (P90)";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACRE_PRC343",
+		"ACRE_PRC148"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACRE_PRC343",
+		"ACRE_PRC148"
+	};
 	linkedItems[]=
 	{
 		"CUP_V_PMC_IOTV_Black_Patrol",
-		"H_PASGT_basic_black_F",
+		"CUP_H_Ger_M92_Black_GG",
+		"CUP_NVG_GPNVG_black",
 		"G_Balaclava_TI_blk_F",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
 		"CUP_V_PMC_IOTV_Black_Patrol",
-		"H_PASGT_basic_black_F",
+		"CUP_H_Ger_M92_Black_GG",
+		"CUP_NVG_GPNVG_black",
 		"G_Balaclava_TI_blk_F",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 	};
 	weapons[]=
@@ -356,28 +374,46 @@ class MTF_HK416: TWC_Infantry_Millennial_Base
 	linkedItems[]=
 	{
 		"CUP_V_PMC_IOTV_Black_Patrol",
-		"H_PASGT_basic_black_F",
+		"CUP_H_Ger_M92_Black_GG",
+		"CUP_NVG_GPNVG_black",
 		"G_Balaclava_TI_blk_F",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
 		"CUP_V_PMC_IOTV_Black_Patrol",
-		"H_PASGT_basic_black_F",
+		"CUP_H_Ger_M92_Black_GG",
+		"CUP_NVG_GPNVG_black",
 		"G_Balaclava_TI_blk_F",
 		"ItemCompass",
+		"itemMap",
 		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"CUP_optic_HoloBlack",
+		"ACRE_PRC343",
+		"ACRE_PRC148"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"CUP_optic_HoloBlack",
+		"ACRE_PRC343",
+		"ACRE_PRC148"
 	};
 	weapons[]=
 	{
-		"twc_hk416_d_base_c",
+		"CUP_arifle_HK416_Black",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[]=
 	{
-		"twc_hk416_d_base_c",
+		"CUP_arifle_HK416_Black",
 		"Throw",
 		"Put"
 	};
