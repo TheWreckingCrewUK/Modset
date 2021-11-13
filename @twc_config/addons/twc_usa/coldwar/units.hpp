@@ -40,7 +40,7 @@ class cwr3_b_soldier_sl;
 			MAG_2("CUP_1Rnd_SmokeYellow_M203"),
 			MAG_2("CUP_1Rnd_SmokeRed_M203"),
 			MAG_2("CUP_1Rnd_Smoke_M203"),
-			"CUP_HandGrenade_M67"),
+			"CUP_HandGrenade_M67",
 			"SmokeShellBlue",
 			"SmokeShellOrange",
 			"SmokeShellPurple",
