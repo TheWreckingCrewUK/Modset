@@ -25,10 +25,10 @@ class cwr3_b_soldier_sl;
 			MAG_2("CUP_1Rnd_SmokeYellow_M203"),
 			MAG_2("CUP_1Rnd_SmokeRed_M203"),
 			MAG_2("CUP_1Rnd_Smoke_M203"),
-			MAG_1("CUP_HandGrenade_M67"),
-			MAG_1("SmokeShellBlue"),
-			MAG_1("SmokeShellOrange"),
-			MAG_1("SmokeShellPurple"),
+			"CUP_HandGrenade_M67",
+			"SmokeShellBlue",
+			"SmokeShellOrange",
+			"SmokeShellPurple",
 			MAG_2("SmokeShell")
 		};
 		respawnmagazines[] =
@@ -40,10 +40,10 @@ class cwr3_b_soldier_sl;
 			MAG_2("CUP_1Rnd_SmokeYellow_M203"),
 			MAG_2("CUP_1Rnd_SmokeRed_M203"),
 			MAG_2("CUP_1Rnd_Smoke_M203"),
-			MAG_1("CUP_HandGrenade_M67"),
-			MAG_1("SmokeShellBlue"),
-			MAG_1("SmokeShellOrange"),
-			MAG_1("SmokeShellPurple"),
+			"CUP_HandGrenade_M67",
+			"SmokeShellBlue",
+			"SmokeShellOrange",
+			"SmokeShellPurple",
 			MAG_2("SmokeShell")
 		};
 		
@@ -93,9 +93,9 @@ class cwr3_b_soldier_tl;
 			MAG_2("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
 			MAG_2("CUP_15Rnd_9x19_M9"),
 			MAG_2("CUP_HandGrenade_M67"),
-			MAG_1("SmokeShellRed"),
-			MAG_1("SmokeShellYellow"),
-			MAG_1("SmokeShellGreen"),
+			"SmokeShellRed",
+			"SmokeShellYellow",
+			"SmokeShellGreen",
 			MAG_2("SmokeShell")
 		};
 		respawnmagazines[] =
@@ -104,9 +104,9 @@ class cwr3_b_soldier_tl;
 			MAG_2("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
 			MAG_2("CUP_15Rnd_9x19_M9"),
 			MAG_2("CUP_HandGrenade_M67"),
-			MAG_1("SmokeShellRed"),
-			MAG_1("SmokeShellYellow"),
-			MAG_1("SmokeShellGreen"),
+			"SmokeShellRed",
+			"SmokeShellYellow",
+			"SmokeShellGreen",
 			MAG_2("SmokeShell")
 		};
 		
@@ -171,13 +171,13 @@ class cwr3_b_soldier_ar;
 		magazines[] =
 		{
 			MAG_2("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
-			MAG_1("CUP_HandGrenade_M67"),
+			"CUP_HandGrenade_M67",
 			MAG_2("SmokeShell")
 		};
 		respawnmagazines[] =
 		{
 			MAG_2("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
-			MAG_1("CUP_HandGrenade_M67"),
+			"CUP_HandGrenade_M67",
 			MAG_2("SmokeShell")
 		};
 		
@@ -224,13 +224,13 @@ class cwr3_b_soldier_mg;
 		magazines[] =
 		{
 			MAG_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
-			MAG_1("CUP_HandGrenade_M67"),
+			"CUP_HandGrenade_M67",
 			MAG_2("SmokeShell")
 		};
 		respawnmagazines[] =
 		{
 			MAG_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
-			MAG_1("CUP_HandGrenade_M67"),
+			"CUP_HandGrenade_M67",
 			MAG_2("SmokeShell")
 		};
 		
