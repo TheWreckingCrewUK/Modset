@@ -54,6 +54,20 @@ class cwr3_b_soldier_sl;
 		};
 
 	};
+	
+	class TWC_Infantry_USA_CW_D6C_SquadLeader: TWC_Infantry_USA_CW_SquadLeader {
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		uniformClass="cwr3_b_uniform_desert_6color";
+		linkedItems[]=
+		{
+			"cwr3_b_vest_pasgt_alice_6color_desert_officer",
+			"cwr3_b_headgear_pasgt_desert_6color",
+			"ItemCompass",
+			"ItemMap",
+			"ItemWatch"
+		};
+		
+	};
 
 class cwr3_b_soldier_tl;	
 	class TWC_Infantry_USA_CW_TeamLeader: cwr3_b_soldier_tl {
@@ -104,9 +118,37 @@ class cwr3_b_soldier_tl;
 
 	};
 	
+	class TWC_Infantry_USA_CW_D6C_TeamLeader: TWC_Infantry_USA_CW_TeamLeader {
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		uniformClass="cwr3_b_uniform_desert_6color_rolled";
+		linkedItems[]=
+		{
+			"cwr3_b_vest_pasgt_alice_6color_desert",
+			"cwr3_b_headgear_pasgt_desert_6color_goggles",
+			"ItemCompass",
+			"ItemMap",
+			"ItemWatch"
+		};
+		
+	};
+	
 class TWC_Infantry_USA_CW_TeamLeader_MG: TWC_Infantry_USA_CW_TeamLeader {
 		displayName = "Team Leader (MG)";
 		backpack = "TWC_Backpack_USA_CW_TeamLeader_MG" ;
+	};
+	
+	class TWC_Infantry_USA_CW_D6C_TeamLeader_MG: TWC_Infantry_USA_CW_TeamLeader_MG {
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		uniformClass="cwr3_b_uniform_desert_6color_rolled";
+		linkedItems[]=
+		{
+			"cwr3_b_vest_pasgt_alice_6color_desert",
+			"cwr3_b_headgear_pasgt_desert_6color_goggles",
+			"ItemCompass",
+			"ItemMap",
+			"ItemWatch"
+		};
+		
 	};
 	
 class cwr3_b_soldier_ar;	
@@ -147,6 +189,20 @@ class cwr3_b_soldier_ar;
 
 	};
 	
+	class TWC_Infantry_USA_CW_D6C_AutoRifleman: TWC_Infantry_USA_CW_AutoRifleman {
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		uniformClass="cwr3_b_uniform_desert_6color_rolled";
+		linkedItems[]=
+		{
+			"cwr3_b_vest_pasgt_alice_6color_desert_mg",
+			"cwr3_b_headgear_pasgt_desert_6color_goggles",
+			"ItemCompass",
+			"ItemMap",
+			"ItemWatch"
+		};
+		
+	};
+	
 class cwr3_b_soldier_mg;	
 	class TWC_Infantry_USA_CW_MachineGunner: cwr3_b_soldier_mg {
 		faction = "TWC_USA_CW";
@@ -184,6 +240,20 @@ class cwr3_b_soldier_mg;
 			"ACE_Flashlight_Maglite_ML300L"
 		};
 
+	};
+	
+	class TWC_Infantry_USA_CW_D6C_MachineGunner: TWC_Infantry_USA_CW_MachineGunner {
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		uniformClass="cwr3_b_uniform_desert_6color_rolled";
+		linkedItems[]=
+		{
+			"cwr3_b_vest_pasgt_alice_6color_desert_mg",
+			"cwr3_b_headgear_pasgt_desert_6color_goggles",
+			"ItemCompass",
+			"ItemMap",
+			"ItemWatch"
+		};
+		
 	};
 
 class cwr3_b_soldier_gl;	
@@ -226,6 +296,20 @@ class cwr3_b_soldier_gl;
 		};
 
 	};
+	
+	class TWC_Infantry_USA_CW_D6C_Grenadier: TWC_Infantry_USA_CW_Grenadier {
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		uniformClass="cwr3_b_uniform_desert_6color";
+		linkedItems[]=
+		{
+			"cwr3_b_vest_pasgt_alice_6color_desert_gl",
+			"cwr3_b_headgear_pasgt_desert_6color_goggles",
+			"ItemCompass",
+			"ItemMap",
+			"ItemWatch"
+		};
+		
+	};
 
 class cwr3_b_soldier_at_law;	
 	class TWC_Infantry_USA_CW_Rifleman_LAW: cwr3_b_soldier_at_law {
@@ -266,6 +350,58 @@ class cwr3_b_soldier_at_law;
 
 	};
 	
+	class TWC_Infantry_USA_CW_Rifleman_M136: TWC_Infantry_USA_CW_Rifleman_LAW {
+		displayName = "Rifleman (M136)";
+		weapons[] =
+		{
+			"CUP_arifle_M16A1E1",
+			"CUP_launch_M136",
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"TWC_Weapon_L85A2_RIS_ELCAN3D",
+			"launch_NLAW_F",
+			"Throw",
+			"Put"
+		};
+		
+	};
+	
+	class TWC_Infantry_USA_CW_D6C_Rifleman_LAW: TWC_Infantry_USA_CW_Rifleman_LAW {
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		uniformClass="cwr3_b_uniform_desert_6color";
+		linkedItems[]=
+		{
+			"cwr3_b_vest_pasgt_alice_6color_desert",
+			"cwr3_b_headgear_pasgt_desert_6color_goggles",
+			"ItemCompass",
+			"ItemMap",
+			"ItemWatch"
+		};
+		
+	};
+	
+	class TWC_Infantry_USA_CW_D6C_Rifleman_M136: TWC_Infantry_USA_CW_D6C_Rifleman_LAW {
+		displayName = "Rifleman (M136)";
+		weapons[] =
+		{
+			"CUP_arifle_M16A1E1",
+			"CUP_launch_M136",
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"TWC_Weapon_L85A2_RIS_ELCAN3D",
+			"launch_NLAW_F",
+			"Throw",
+			"Put"
+		};
+		
+	};
+	
 	class cwr3_b_soldier_medic;
 	class TWC_Infantry_USA_CW_Medic: cwr3_b_soldier_medic {
 		displayName = "Medic";
@@ -291,6 +427,20 @@ class cwr3_b_soldier_at_law;
 			"ACE_Flashlight_Maglite_ML300L"
 		};
 
+	};
+	
+	class TWC_Infantry_USA_CW_D6C_Medic: TWC_Infantry_USA_CW_Medic {
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		uniformClass="cwr3_b_uniform_desert_6color";
+		linkedItems[]=
+		{
+			"cwr3_b_vest_pasgt_alice_6color_desert_medic",
+			"cwr3_b_headgear_pasgt_desert_6color",
+			"ItemCompass",
+			"ItemMap",
+			"ItemWatch"
+		};
+		
 	};
 
 class cwr3_b_soldier_crew;	
