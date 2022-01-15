@@ -671,4 +671,69 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
+		class British_Medical:Box_NATO_Ammo_F
+	{
+		scope = 2;
+		displayname = "Medical Box";
+		ace_dragging_canDrag = 1;
+		class transportWeapons
+		{};
+		class transportMagazines
+		{};
+		class transportItems
+		{			
+		class _xx_fieldDressing
+			{
+				name = "ACE_fieldDressing";
+				count = 15;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 15;
+			};
+			class quickclot
+			{
+				name = "ACE_quickclot";
+				count = 15;
+			};
+			class morphine
+			{
+				name = "ACE_morphine";
+				count = 6;
+			};
+			class epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 6;
+			};
+			class saline500
+			{
+				name = "ACE_salineIV_500";
+				count = 12;
+			};
+			class saline250
+			{
+				name = "ACE_salineIV_250";
+				count = 12;
+			};
+			class tourniquet
+			{
+				name = "ACE_tourniquet";
+				count = 4;
+			};
+			class SutureKit
+			{
+				name = "TWC_Item_Medical_SutureKit_25";
+				count = 1;
+			};
+			class Bodybag
+			{
+				name = "ACE_bodyBag";
+				count = 6;
+			};
+			};
+		class transportbackpacks
+		{};
+	};
 };
