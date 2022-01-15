@@ -350,7 +350,8 @@ class CfgVehicles
 		ace_dragging_canCarry = 1;
 		ace_dragging_canDrag  = 1;
 	};
-	class TWC_Public_AmmoBox_medium: Box_NATO_Ammo_F {
+	class TWC_Public_AmmoBox_medium: Box_NATO_Ammo_F 
+	{
 		scope = 2;
 		displayName = "Ammunition Box";
 		author      = "Hobbs";
@@ -369,5 +370,305 @@ class CfgVehicles
 
 		ace_dragging_canCarry = 1;
 		ace_dragging_canDrag  = 1;
+	};
+	class British_Resupply_Section:Box_NATO_Ammo_F
+	{
+		scope = 2;
+		displayname = "Section Resupply Box";
+		ace_dragging_canDrag = 1;
+		class transportWeapons
+		{};
+		class transportMagazines
+		{
+			class _xx_stanag
+			{
+				magazine = "UK3CB_BAF_556_30Rnd";
+				count = 16;
+			};
+			class _xx_stanagTracer
+			{
+				magazine = "UK3CB_BAF_556_30Rnd_T";
+				count = 4;
+			};
+			class _xx_stanag_boxTracer
+			{
+				magazine ="UK3CB_BAF_556_200Rnd_T";
+				count = 6;
+			};
+			class _xx_762_100beltTracer
+			{
+				magazine = "UK3CB_BAF_762_100Rnd_T";
+				count = 4;
+			};
+			class _xx_762_mag
+			{
+				magazine = "UK3CB_BAF_762_L42A1_20Rnd";
+				count = 3;
+			};
+			class _xx_762_magTracer
+			{
+				magazine = "UK3CB_BAF_762_L42A1_20Rnd_T";
+				count = 1;
+			};
+			class _xx_1rnd_he
+			{
+				magazine = "1Rnd_HE_Grenade_shell";
+				count = 8;
+			};
+			class _xx_1rnd_smoke
+			{
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 2;
+			};
+			class _xx_handgrenade
+			{
+				magazine = "CUP_HandGrenade_L109A2_HE";
+				count = 6;
+			};
+			class _xx_smokeshell
+			{
+				magazine = "SmokeShell";
+				count = 10;
+			};
+		};
+		class transportItems
+	{
+			class _xx_fieldDressing
+			{
+				name = "ACE_fieldDressing";
+				count = 12;
+			};
+			class _xx_elasticBandage
+			{
+				name = "ACE_elasticBandage";
+				count = 12;
+			};
+			class quickclot
+			{
+				name = "ACE_quickclot";
+				count = 12;
+			};
+			class morphine
+			{
+				name = "ACE_morphine";
+				count = 12;
+			};
+			class epinephrine
+			{
+				name = "ACE_epinephrine";
+				count = 8;
+			};
+
+		};
+		class transportbackpacks
+		{};
+	};
+		class British_Resupply_Launcher:Box_NATO_Wps_F
+	{
+		scope = 2;
+		displayname = "Section Launchers Resupply Box";
+		ace_dragging_canDrag = 1;
+		class transportWeapons
+		{
+			class _xx_nlaw
+			{
+				weapon = "launch_NLAW_F";
+				count = 2;
+			};
+			class _xx_law
+			{
+				weapon = "CUP_launch_M72A6";
+				count = 1;
+			};	
+		};
+		class transportMagazines
+		{};
+		class transportItems
+		{};
+		class transportbackpacks
+		{};
+	};
+		class British_60mm:Box_NATO_Wps_F
+	{
+		scope = 2;
+		displayname = "60mm Mortar";
+		ace_dragging_canDrag = 1;
+		class transportWeapons
+		{
+			class _xx_60mm
+			{
+				weapon = "UK3CB_BAF_M6";
+				count = 1;
+			};
+		};
+		class transportMagazines
+		{			
+		class HE
+			{
+				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells";
+				count = 12;
+			};
+		class AB
+			{
+				name = "UK3CB_BAF_1Rnd_60mm_Mo_AB_Shells";
+				count = 5;
+			};
+		class Smoke
+			{
+				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells_Smoke_White";
+				count = 5;
+			};
+		};
+		class transportItems
+		{};
+		class transportbackpacks
+		{};
+	};
+		class British_60mm_Resupply:Box_NATO_Wps_F
+	{
+		scope = 2;
+		displayname = "60mm Mortar Ammo Box";
+		ace_dragging_canDrag = 1;
+		class transportWeapons
+		{};
+		class transportMagazines
+		{
+		class HE
+			{
+				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells";
+				count = 12;
+			};
+		class AB
+			{
+				name = "UK3CB_BAF_1Rnd_60mm_Mo_AB_Shells";
+				count = 5;
+			};
+		class Smoke
+			{
+				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells_Smoke_White";
+				count = 5;
+			};
+		};
+		class transportItems
+		{};
+		class transportbackpacks
+		{};
+	};
+		class British_81mm:Box_NATO_Wps_F
+	{
+		scope = 2;
+		displayname = "60mm Mortar";
+		ace_dragging_canDrag = 1;
+		class transportWeapons
+		{
+			class _xx_81mm
+			{
+				weapon = "UK3CB_BAF_L16";
+				count = 1;
+			};
+			class _xx_81mm_Tripod
+			{
+				weapon = "UK3CB_BAF_L16_Tripod";
+				count = 1;
+			};
+		};
+		class transportMagazines
+		{			
+		class HE
+			{
+				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells";
+				count = 12;
+			};
+		class AB
+			{
+				name = "UK3CB_BAF_1Rnd_81mm_Mo_AB_Shells";
+				count = 5;
+			};
+		class Smoke
+			{
+				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells_Smoke_White";
+				count = 5;
+			};
+		};
+		class transportItems
+		{};
+		class transportbackpacks
+		{};
+	};
+		class British_81mm_Resupply:Box_NATO_Wps_F
+	{
+		scope = 2;
+		displayname = "81mm Mortar Ammo Box";
+		ace_dragging_canDrag = 1;
+		class transportWeapons
+		{};
+		class transportMagazines
+		{
+		class HE
+			{
+				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells";
+				count = 12;
+			};
+		class AB
+			{
+				name = "UK3CB_BAF_1Rnd_81mm_Mo_AB_Shells";
+				count = 5;
+			};
+		class Smoke
+			{
+				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells_Smoke_White";
+				count = 5;
+			};
+		};
+		class transportItems
+		{};
+		class transportbackpacks
+		{};
+	};
+		class British_Javelin:Box_NATO_Wps_F
+	{
+		scope = 2;
+		displayname = "Javelin Box";
+		ace_dragging_canDrag = 1;
+		class transportWeapons
+		{		
+		class Tube
+			{
+				name = "UK3CB_BAF_Javelin_Slung_Tube";
+				count = 1;
+			};
+		};
+		class transportMagazines
+		{};
+		class transportItems
+		{
+		class CLU
+			{
+				name = "UK3CB_BAF_Javelin_CLU";
+				count = 1;
+			};
+		};
+		class transportbackpacks
+		{};
+	};
+		class British_Javelin_Ammo:Box_NATO_Wps_F
+	{
+		scope = 2;
+		displayname = "Javelin Ammo Box";
+		ace_dragging_canDrag = 1;
+		class transportWeapons
+		{		
+		class Tube
+			{
+				name = "UK3CB_BAF_Javelin_Slung_Tube";
+				count = 4;
+			};
+		};
+		class transportMagazines
+		{};
+		class transportItems
+		{};
+		class transportbackpacks
+		{};
 	};
 };
