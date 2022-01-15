@@ -463,7 +463,7 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_Resupply_Launcher:Box_NATO_Wps_F
+		class British_Resupply_Launcher:Box_NATO_Ammo_F
 	{
 		scope = 2;
 		displayname = "Section Launchers Resupply Box";
@@ -488,7 +488,7 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_60mm:Box_NATO_Wps_F
+		class British_60mm:Box_NATO_Ammo_F
 	{
 		scope = 2;
 		displayname = "60mm Mortar";
@@ -524,7 +524,7 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_60mm_Resupply:Box_NATO_Wps_F
+		class British_60mm_Resupply:Box_NATO_Ammo_F
 	{
 		scope = 2;
 		displayname = "60mm Mortar Ammo Box";
@@ -554,7 +554,7 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_81mm:Box_NATO_Wps_F
+		class British_81mm:Box_NATO_Ammo_F
 	{
 		scope = 2;
 		displayname = "60mm Mortar";
@@ -595,7 +595,7 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_81mm_Resupply:Box_NATO_Wps_F
+		class British_81mm_Resupply:Box_NATO_Ammo_F
 	{
 		scope = 2;
 		displayname = "81mm Mortar Ammo Box";
@@ -625,7 +625,7 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_Javelin:Box_NATO_Wps_F
+		class British_Javelin:Box_NATO_Ammo_F
 	{
 		scope = 2;
 		displayname = "Javelin Box";
@@ -651,7 +651,7 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_Javelin_Ammo:Box_NATO_Wps_F
+		class British_Javelin_Ammo:Box_NATO_Ammo_F
 	{
 		scope = 2;
 		displayname = "Javelin Ammo Box";
