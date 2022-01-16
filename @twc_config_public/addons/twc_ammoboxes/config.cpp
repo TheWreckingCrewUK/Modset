@@ -444,6 +444,11 @@ class CfgVehicles
 				name = "ACE_fieldDressing";
 				count = 12;
 			};
+			class _xx_packingBandage
+			{
+				name = "ACE_packingBandage";
+				count = 12;
+			};
 			class _xx_elasticBandage
 			{
 				name = "ACE_elasticBandage";
@@ -516,25 +521,25 @@ class CfgVehicles
 			};
 		};
 		class transportMagazines
-		{			
-		class _xx_he
+		{};
+		class transportItems
+		{
+		class _xx_1Rnd_60mm
 			{
 				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells";
 				count = 12;
 			};
-		class _xx_ab
+		class _xx_1Rnd_60mm_AB
 			{
 				name = "UK3CB_BAF_1Rnd_60mm_Mo_AB_Shells";
 				count = 5;
 			};
-		class _xx_smoke
+		class _xx_1Rnd_60mm_Smoke
 			{
 				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells_Smoke_White";
 				count = 5;
 			};
 		};
-		class transportItems
-		{};
 		class transportbackpacks
 		{};
 	};
@@ -550,6 +555,8 @@ class CfgVehicles
 		class transportWeapons
 		{};
 		class transportMagazines
+		{};
+		class transportItems
 		{
 		class _xx_he
 			{
@@ -563,19 +570,17 @@ class CfgVehicles
 			};
 		class _xx_smoke
 			{
-				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells_Smoke_White";
+				name = "UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White";
 				count = 5;
 			};
 		};
-		class transportItems
-		{};
 		class transportbackpacks
 		{};
 	};
 		class British_81mm:Box_NATO_WpsLaunch_F
 	{
 		scope = 2;
-		displayname = "60mm Mortar";
+		displayname = "81mm Mortar";
 		ace_dragging_canDrag = 1;
 		ace_dragging_canCarry = 1;
 		ace_cargo_canLoad     = 1;
@@ -595,8 +600,10 @@ class CfgVehicles
 			};
 		};
 		class transportMagazines
-		{			
-		class _xx_he
+		{};
+		class transportItems
+		{
+			class _xx_he
 			{
 				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells";
 				count = 12;
@@ -608,12 +615,10 @@ class CfgVehicles
 			};
 		class _xx_smoke
 			{
-				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells_Smoke_White";
+				name = "UK3CB_BAF_1Rnd_81mm_Mo_Smoke_White";
 				count = 5;
 			};
 		};
-		class transportItems
-		{};
 		class transportbackpacks
 		{};
 	};
@@ -629,7 +634,9 @@ class CfgVehicles
 		class transportWeapons
 		{};
 		class transportMagazines
-		{
+		{};
+		class transportItems
+		{		
 		class _xx_he
 			{
 				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells";
@@ -644,10 +651,7 @@ class CfgVehicles
 			{
 				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells_Smoke_White";
 				count = 5;
-			};
-		};
-		class transportItems
-		{};
+			};};
 		class transportbackpacks
 		{};
 	};
@@ -661,13 +665,7 @@ class CfgVehicles
 		ace_cargo_hasCargo    = 0;
 		
 		class transportWeapons
-		{		
-		class _xx_tube
-			{
-				name = "UK3CB_BAF_Javelin_Slung_Tube";
-				count = 1;
-			};
-		};
+		{};
 		class transportMagazines
 		{};
 		class transportItems
@@ -675,6 +673,11 @@ class CfgVehicles
 		class _xx_clu
 			{
 				name = "UK3CB_BAF_Javelin_CLU";
+				count = 1;
+			};
+		class _xx_Tube
+			{
+				name = "UK3CB_BAF_Javelin_Slung_Tube";
 				count = 1;
 			};
 		};
@@ -691,17 +694,17 @@ class CfgVehicles
 		ace_cargo_hasCargo    = 0;
 		
 		class transportWeapons
-		{		
-		class _xx_tube
+		{};
+		class transportMagazines
+		{};
+		class transportItems
+		{
+		class _xx_Tube
 			{
 				name = "UK3CB_BAF_Javelin_Slung_Tube";
 				count = 4;
 			};
 		};
-		class transportMagazines
-		{};
-		class transportItems
-		{};
 		class transportbackpacks
 		{};
 	};
@@ -730,9 +733,14 @@ class CfgVehicles
 				name = "ACE_elasticBandage";
 				count = 15;
 			};
-			class _xx_quickclot
+			class _xx_packingBandage
 			{
-				name = "ACE_quickclot";
+				name = "ACE_packingBandage";
+				count = 15;
+			};
+			class _xx_quikclot
+			{
+				name = "ACE_quikclot";
 				count = 15;
 			};
 			class _xx_morphine
