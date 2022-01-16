@@ -34,6 +34,8 @@ class CfgVehicles
 {
 	class B_supplyCrate_F;
 	class Box_NATO_AmmoVeh_F;
+	class Box_NATO_WpsLaunch_F;
+	class ACE_medicalSupplyCrate;
 	class twc_forwardBase_BritishAmmoBox:B_supplyCrate_F
 	{
 		displayname = "British Ammobox (Large)";
@@ -376,6 +378,10 @@ class CfgVehicles
 		scope = 2;
 		displayname = "Section Resupply Box";
 		ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+		ace_cargo_canLoad     = 1;
+		ace_cargo_hasCargo    = 0;
+		
 		class transportWeapons
 		{};
 		class transportMagazines
@@ -443,17 +449,17 @@ class CfgVehicles
 				name = "ACE_elasticBandage";
 				count = 12;
 			};
-			class quickclot
+			class _xx_quickclot
 			{
 				name = "ACE_quickclot";
 				count = 12;
 			};
-			class morphine
+			class _xx_morphine
 			{
 				name = "ACE_morphine";
 				count = 12;
 			};
-			class epinephrine
+			class _xx_epinephrine
 			{
 				name = "ACE_epinephrine";
 				count = 8;
@@ -463,11 +469,15 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_Resupply_Launcher:Box_NATO_Ammo_F
+		class British_Resupply_Launcher:Box_NATO_WpsLaunch_F
 	{
 		scope = 2;
 		displayname = "Section Launchers Resupply Box";
 		ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+		ace_cargo_canLoad     = 1;
+		ace_cargo_hasCargo    = 0;
+		
 		class transportWeapons
 		{
 			class _xx_nlaw
@@ -488,11 +498,15 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_60mm:Box_NATO_Ammo_F
+		class British_60mm:Box_NATO_WpsLaunch_F
 	{
 		scope = 2;
 		displayname = "60mm Mortar";
 		ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+		ace_cargo_canLoad     = 1;
+		ace_cargo_hasCargo    = 0;
+		
 		class transportWeapons
 		{
 			class _xx_60mm
@@ -503,17 +517,17 @@ class CfgVehicles
 		};
 		class transportMagazines
 		{			
-		class HE
+		class _xx_he
 			{
 				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells";
 				count = 12;
 			};
-		class AB
+		class _xx_ab
 			{
 				name = "UK3CB_BAF_1Rnd_60mm_Mo_AB_Shells";
 				count = 5;
 			};
-		class Smoke
+		class _xx_smoke
 			{
 				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells_Smoke_White";
 				count = 5;
@@ -529,21 +543,25 @@ class CfgVehicles
 		scope = 2;
 		displayname = "60mm Mortar Ammo Box";
 		ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+		ace_cargo_canLoad     = 1;
+		ace_cargo_hasCargo    = 0;
+		
 		class transportWeapons
 		{};
 		class transportMagazines
 		{
-		class HE
+		class _xx_he
 			{
 				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells";
 				count = 12;
 			};
-		class AB
+		class _xx_ab
 			{
 				name = "UK3CB_BAF_1Rnd_60mm_Mo_AB_Shells";
 				count = 5;
 			};
-		class Smoke
+		class _xx_smoke
 			{
 				name = "UK3CB_BAF_1Rnd_60mm_Mo_Shells_Smoke_White";
 				count = 5;
@@ -554,11 +572,15 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_81mm:Box_NATO_Ammo_F
+		class British_81mm:Box_NATO_WpsLaunch_F
 	{
 		scope = 2;
 		displayname = "60mm Mortar";
 		ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+		ace_cargo_canLoad     = 1;
+		ace_cargo_hasCargo    = 0;
+		
 		class transportWeapons
 		{
 			class _xx_81mm
@@ -574,17 +596,17 @@ class CfgVehicles
 		};
 		class transportMagazines
 		{			
-		class HE
+		class _xx_he
 			{
 				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells";
 				count = 12;
 			};
-		class AB
+		class _xx_ab
 			{
 				name = "UK3CB_BAF_1Rnd_81mm_Mo_AB_Shells";
 				count = 5;
 			};
-		class Smoke
+		class _xx_smoke
 			{
 				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells_Smoke_White";
 				count = 5;
@@ -600,21 +622,25 @@ class CfgVehicles
 		scope = 2;
 		displayname = "81mm Mortar Ammo Box";
 		ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+		ace_cargo_canLoad     = 1;
+		ace_cargo_hasCargo    = 0;
+		
 		class transportWeapons
 		{};
 		class transportMagazines
 		{
-		class HE
+		class _xx_he
 			{
 				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells";
 				count = 12;
 			};
-		class AB
+		class _xx_ab
 			{
 				name = "UK3CB_BAF_1Rnd_81mm_Mo_AB_Shells";
 				count = 5;
 			};
-		class Smoke
+		class _xx_smoke
 			{
 				name = "UK3CB_BAF_1Rnd_81mm_Mo_Shells_Smoke_White";
 				count = 5;
@@ -625,14 +651,18 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_Javelin:Box_NATO_Ammo_F
+		class British_Javelin:Box_NATO_WpsLaunch_F
 	{
 		scope = 2;
 		displayname = "Javelin Box";
 		ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+		ace_cargo_canLoad     = 1;
+		ace_cargo_hasCargo    = 0;
+		
 		class transportWeapons
 		{		
-		class Tube
+		class _xx_tube
 			{
 				name = "UK3CB_BAF_Javelin_Slung_Tube";
 				count = 1;
@@ -642,7 +672,7 @@ class CfgVehicles
 		{};
 		class transportItems
 		{
-		class CLU
+		class _xx_clu
 			{
 				name = "UK3CB_BAF_Javelin_CLU";
 				count = 1;
@@ -651,14 +681,18 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_Javelin_Ammo:Box_NATO_Ammo_F
+		class British_Javelin_Ammo:Box_NATO_WpsLaunch_F
 	{
 		scope = 2;
 		displayname = "Javelin Ammo Box";
 		ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+		ace_cargo_canLoad     = 1;
+		ace_cargo_hasCargo    = 0;
+		
 		class transportWeapons
 		{		
-		class Tube
+		class _xx_tube
 			{
 				name = "UK3CB_BAF_Javelin_Slung_Tube";
 				count = 4;
@@ -671,11 +705,15 @@ class CfgVehicles
 		class transportbackpacks
 		{};
 	};
-		class British_Medical:Box_NATO_Ammo_F
+		class British_Medical:ACE_medicalSupplyCrate
 	{
 		scope = 2;
 		displayname = "Medical Box";
 		ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+		ace_cargo_canLoad     = 1;
+		ace_cargo_hasCargo    = 0;
+		
 		class transportWeapons
 		{};
 		class transportMagazines
@@ -692,42 +730,42 @@ class CfgVehicles
 				name = "ACE_elasticBandage";
 				count = 15;
 			};
-			class quickclot
+			class _xx_quickclot
 			{
 				name = "ACE_quickclot";
 				count = 15;
 			};
-			class morphine
+			class _xx_morphine
 			{
 				name = "ACE_morphine";
 				count = 6;
 			};
-			class epinephrine
+			class _xx_epinephrine
 			{
 				name = "ACE_epinephrine";
 				count = 6;
 			};
-			class saline500
+			class _xx_saline500
 			{
 				name = "ACE_salineIV_500";
 				count = 12;
 			};
-			class saline250
+			class _xx_saline250
 			{
 				name = "ACE_salineIV_250";
 				count = 12;
 			};
-			class tourniquet
+			class _xx_tourniquet
 			{
 				name = "ACE_tourniquet";
 				count = 4;
 			};
-			class SutureKit
+			class _xx_SutureKit
 			{
 				name = "TWC_Item_Medical_SutureKit_25";
 				count = 1;
 			};
-			class Bodybag
+			class _xx_Bodybag
 			{
 				name = "ACE_bodyBag";
 				count = 6;
