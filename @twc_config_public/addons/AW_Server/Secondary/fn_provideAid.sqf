@@ -26,8 +26,8 @@ _marker setMarkerSize [1.5,1.5];
 		params ["_sectorCentre","_marker"];
 		private _injuredCount = 2 + (ceil (count playableUnits / 4));
 		private _civilianTypes = getArray(missionConfigFile >> "Civilian_Setup" >> "AW_civilianTypes");
-		private _bodyParts = ["Head","Body","LeftArm","RightArm","LeftLeg","RightLeg"];
-		private _damageTypes = ["grenade","explosive","bullet"];
+		private _bodyParts = ["head","body","arm_l","arm_r","leg_r","leg_l"];
+		private _damageTypes = ["grenade","explosive","stab"];
 
 		private _group = createGroup [civilian,true];
 		for "_i" from 1 to _injuredCount do {
