@@ -1,0 +1,4 @@
+//<'ukcw_ace_compatability.pbo' properties via Mikero's dos tools, dll version 8.35>
+prefix=ukcw_ace_compatability;
+//PboType=Arma Addon;
+//</properties>
