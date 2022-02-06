@@ -2,7 +2,7 @@ class CfgPatches {
 	class twc_medical_suture {
 		requiredAddons[] = {
 			"ace_medical",
-			"ace_medical_menu",
+			"ace_medical_gui",
 			"twc_medical_core"
 		};
 

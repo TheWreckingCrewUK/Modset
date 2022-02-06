@@ -8,7 +8,7 @@ private _bloodVolume = GET_BLOOD_VOLUME(_patient);
 private _successChance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, _bloodVolume, ace_medical_treatment_cprSuccessChanceMin, ace_medical_treatment_cprSuccessChanceMax, true];
 
 private _isMedic = [_medic] call ace_medical_treatment_fnc_isMedic;
-if (_isMedic) { _successChance = _successChance + 0.1; };
+if (_isMedic) then { _successChance = _successChance + 0.1; };
 
 _successChance = [_successChance, _patient] call twc_medical_core_fnc_badLuckProtection;
 

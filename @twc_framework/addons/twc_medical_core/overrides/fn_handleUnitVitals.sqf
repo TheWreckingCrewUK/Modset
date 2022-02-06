@@ -14,7 +14,7 @@ if (_syncValues) then {
 	_unit setVariable ["ace_medical_vitals_lastMomentValuesSynced", CBA_missionTime];
 };
 
-private _bloodVolume = GET_BLOOD_VOLUME(_unit) + ([_unit, _deltaT, _syncValues] call ace_medical_status_fnc_getBloodVolumeChange;
+private _bloodVolume = GET_BLOOD_VOLUME(_unit) + ([_unit, _deltaT, _syncValues] call ace_medical_status_fnc_getBloodVolumeChange);
 _bloodVolume = 0 max _bloodVolume min DEFAULT_BLOOD_VOLUME;
 
 // @todo: replace this and the rest of the setVariable with Eace_medical_vitals_fnc_common,setApproximateVariablePublic)
