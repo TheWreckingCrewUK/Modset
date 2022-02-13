@@ -3,6 +3,7 @@ class CfgPatches {
 		requiredAddons[] = {
 			"ace_medical",
 			"ace_medical_gui",
+			"ace_medical_engine",
 			"twc_medical_core"
 		};
 
@@ -44,7 +45,7 @@ class CfgPatches {
 	};
 };
 
-#include "ACE_Medical_Actions.hpp"
+#include "ACE_Medical_Treatment_Actions.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"

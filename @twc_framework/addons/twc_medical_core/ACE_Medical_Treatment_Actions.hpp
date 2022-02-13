@@ -68,28 +68,4 @@ class ACE_Medical_Treatment_Actions {
 		displayName = "Give Saline (300ml)";
 		allowSelfTreatment = 1;
 	};
-	
-	/* class SutureKit: BasicBandage {
-		displayName = "Use Suture Kit";
-		displayNameProgress = "Suturing";
-		condition = "twc_medical_fnc_canSuture";
-
-		// custom handler for items check, to ignore shared gear
-		items[] = {};
-		treatmentLocations[] = {"All"};
-		allowedSelections[] = {"All"};
-		allowSelfTreatment = 0;
-		requiredMedic = 1;
-		treatmentTime = "twc_medical_fnc_sutureKitTime";
-		callbackSuccess = "twc_medical_fnc_sutureKitSuccess";
-		callbackProgress = "twc_medical_fnc_sutureKitProgress";
-		callbackFailure = "twc_medical_fnc_sutureKitFailure";
-		itemConsumed = 0;
-		animationCaller = "AinvPknlMstpSnonWnonDnon_medic1";
-
-		litter[] = {
-			{"All", "", {"ACE_MedicalLitter_gloves"}},
-			{"All", "", {{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}}
-		};
-	}; */
 };

@@ -6,7 +6,7 @@ _caller setVariable ["TWC_Played_Suture", false, true];
 // check if the treater has at least one suture thread
 if (({_x isKindOf ["TWC_Item_Medical_SutureKit_1", configFile >> "CfgWeapons"]} count (items _caller)) < 1) exitWith { false };
 
-_returnData = [_target, _selectionName] call twc_medical_fnc_selectSutureWound;
+_returnData = [_target, _selectionName] call twc_medical_suture_fnc_selectSutureWound;
 _isBandagedWound = _returnData select 0;
 _woundData = _returnData select 1;
 
