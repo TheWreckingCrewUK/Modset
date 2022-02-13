@@ -108,9 +108,8 @@ class CfgPatches {
 			"CUP_AirVehicles_AV8B",
 			"CUP_AirVehicles_F35",
 			"CUP_AirVehciles_SA330",
+			"cwr3_expansion_uk",
 			"ukcw_bedford",
-			"ukcw_chieftain",
-			"ukcw_cvrt",
 			"ukcw_gazelle",
 			"TWC_Faction",
 			"ace_cargo",
@@ -168,12 +167,37 @@ class CfgVehicles {
 
 	// These are used across eras in different configurations, and as such should be first referenced here.
 	class CUP_B_FV432_GB_GPMG;
-	class ukcw_cvrt_Scim_w_L1;
-	class ukcw_cvrt_Scim_d_L1;
-	class ukcw_Scorpion_w_L1;
-	class ukcw_Scorpion_d_L1;
+	class cwr3_b_uk_fv107;
+	class cwr3_b_uk_fv101;
 	class CUP_B_SA330_Puma_HC1_BAF;
-	class ukcw_chieftainmk10;
+	class cwr3_b_uk_fv4201;
+
+	class Helicopter_Base_H;
+	class CUP_AW159_Unarmed_Base: Helicopter_Base_H {
+		class Components;
+	};
+	class CUP_AW159_Dynamic_Base: CUP_AW159_Unarmed_Base {
+		class Components: Components {
+			class TransportPylonsComponent;
+		};
+	};
+	class CUP_B_AW159_GB: CUP_AW159_Dynamic_Base {
+		class Components: Components {
+			class TransportPylonsComponent: TransportPylonsComponent {
+				class pylons;
+			};
+		};
+	};
+	class cwr3_b_uk_lynx_ah7_cas: CUP_B_AW159_GB {
+		class Components: Components {
+			class TransportPylonsComponent: TransportPylonsComponent {
+				class pylons: pylons {
+					class pylons1;
+					class pylons2;
+				};
+			};
+		};
+	};
 	
 	// section modifiers all eras/types
 	#define SECTION_FIELDDRESSING 20
