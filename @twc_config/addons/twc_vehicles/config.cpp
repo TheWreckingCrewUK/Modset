@@ -28,6 +28,8 @@ class CfgPatches {
 			"TWC_Vehicle_ColdWar_HarrierGR3_RAF",
 			"TWC_Vehicle_ColdWar_RHIB_Black",
 			"TWC_Vehicle_ColdWar_Hercules_RAF_VIV",
+			"TWC_Vehicle_ColdWar_Whirlwind_RAF",
+			"TWC_Vehicle_ColdWar_Whirlwind_RAF_COIN",
 			
 			"TWC_Vehicle_Millennial_HarrierGR5_RAF",
 			"TWC_Vehicle_Millennial_FV432_Woodland",
