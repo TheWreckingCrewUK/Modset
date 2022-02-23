@@ -18,7 +18,7 @@ if (isNil "BloodLust_IsServerSettingsBroadcastedMP") then {
 	if (alive _unit) then {
 		// might be needed in the future
 		//if (!(_unit getVariable ["BloodLust_IsVaporized", false])) exitWith {};
-		[_unit, true] call ace_medical_fnc_setDead;
+		[_unit] call TWC_Medical_Core_fnc_setDead;
 
 		[{
 			params ["_unit"];

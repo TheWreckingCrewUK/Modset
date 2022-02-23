@@ -55,10 +55,13 @@ class CfgFunctions {
 			// Generics
 			class getBloodVolume {};
 			class fullyBandageUnit {};
-			class fullHealWithoutLog {};
 			class resuscitateUnitLocal {};
 			class removeMedicalItem {};
 			class addPain {};
+			
+			// Set Dead
+			class SetDead {};
+			class SetDeadLocal {};
 
 			// Uncon Loop
 			class unconSoundLoop {};
@@ -71,10 +74,8 @@ class CfgFunctions {
 			file = "twc_medical_core\curator";
 			
 			class resuscitateUnit {};
-			
-			// TODO: these
-			class fullHealUnit {};
 			class killUnit {};
+			class fullHealUnit {};
 			class inspectUnit {};
 		};
 	};

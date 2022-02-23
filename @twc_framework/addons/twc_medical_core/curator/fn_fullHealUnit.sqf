@@ -26,7 +26,7 @@ if((_mouseOver select 0) != "OBJECT") then{
 	if !(_unit isKindOf "CAManBase") then {
 		hint "Unit has to be human";
 	} else {
-		["twc_medical_evh_fullHeal", [_unit], _unit] call CBA_fnc_targetEvent;
+		["ace_medical_treatment_fullHealLocal", _unit, _unit] call CBA_fnc_targetEvent;
 	};
 };
 

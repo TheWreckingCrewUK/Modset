@@ -1,3 +1,4 @@
+// TODO: This file! may be used in AI treatment again -- currently not adapated for rewrite
 params ["_unit", ["_exceptions", []]];
 
 // Select first wound and bandage it
