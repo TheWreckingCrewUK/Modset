@@ -62,6 +62,10 @@ class CfgFunctions {
 			// Set Dead
 			class SetDead {};
 			class SetDeadLocal {};
+			
+			// Clean Corpse
+			class cleanCorpse {};
+			class cleanCorpseLocal {};
 
 			// Uncon Loop
 			class unconSoundLoop {};

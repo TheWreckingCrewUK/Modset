@@ -5,3 +5,4 @@ if !(hasInterface) exitWith {};
 
 ["TWC_Medical_Core_KillUnit", { _this call TWC_Medical_Core_fnc_setDeadLocal; }] call CBA_fnc_addEventHandler;
 ["TWC_Medical_Core_ResusUnit", { _this call TWC_Medical_Core_fnc_resuscitateUnitLocal; }] call CBA_fnc_addEventHandler;
+["TWC_Medical_Core_CleanCorpse", { _this call TWC_Medical_Core_fnc_cleanCorpseLocal; }] call CBA_fnc_addEventHandler;
