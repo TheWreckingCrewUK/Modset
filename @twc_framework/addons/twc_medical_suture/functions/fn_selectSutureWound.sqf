@@ -32,7 +32,7 @@ if ((count _openWounds) > 0) then {
 	} forEach _openWounds;
 };
 
-hint str _bestOpenWound;
+//hint str _bestOpenWound;
 if (_openWoundBLTopRate != 0) exitWith { [true, _bestOpenWound]; };
 
 _bandagedWoundBLTopRate = 0;

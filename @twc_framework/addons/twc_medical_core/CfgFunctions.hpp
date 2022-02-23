@@ -36,6 +36,7 @@ class CfgFunctions {
 			
 			// Override the default bandaging time calculation
 			// If the default turns out to be meh
+			// Really hope not to change, for compat with other communities in joint ops etc.
 			/* class getBandageTime {
 				file = "twc_medical_core\overrides\fn_getBandageTime.sqf";
 			}; */
@@ -55,6 +56,7 @@ class CfgFunctions {
 			class getBloodVolume {};
 			class fullyBandageUnit {};
 			class fullHealWithoutLog {};
+			class resuscitateUnitLocal {};
 			class removeMedicalItem {};
 			class addPain {};
 
@@ -69,6 +71,8 @@ class CfgFunctions {
 			file = "twc_medical_core\curator";
 			
 			class resuscitateUnit {};
+			
+			// TODO: these
 			class fullHealUnit {};
 			class killUnit {};
 			class inspectUnit {};

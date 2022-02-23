@@ -26,7 +26,5 @@ _baseItemClassWoNumber = (_itemClassArrayDuplicate joinString "_");
 		_newItem = format ["%1_%2", _baseItemClassWoNumber, _itemNewCount];
 		_succeeded = [_caller, _newItem] call TWC_Core_fnc_addItem;
 		if (!_succeeded) then { systemChat format ["Failed to add new item: %1", _newItem]; };
-		
-		//_caller addItem _newItem;
 	};
 } forEach (items _caller);

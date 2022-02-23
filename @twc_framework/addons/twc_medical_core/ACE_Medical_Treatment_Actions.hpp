@@ -1,5 +1,5 @@
 class ACE_Medical_Treatment_Actions {
-	// Override default to enable bandaging option always for gameplay reasons (failure to pay attention results in logistical constraint)
+	// Override default class, so that bandaging options always show, like it did before rewrite, for logistical concerns
 	class BasicBandage {
 		displayName = "Basic Bandage";
 		displayNameProgress = "Bandaging...";
