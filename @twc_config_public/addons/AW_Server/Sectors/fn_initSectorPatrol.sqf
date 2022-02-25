@@ -18,7 +18,7 @@ if (_groups isEqualTo []) exitWith {};
 				if (([_position,_radius,false] call lambs_main_fnc_findBuildings) isEqualTo []) then {
 					[_x,(_position getPos [random 25,random 360]),_radius,[],true,false,-1] remoteExecCall ["lambs_wp_fnc_taskCamp",_leader];
 				} else {
-					[_x,_position,_radius,[],false,false,-2,false] remoteExecCall ["lambs_wp_fnc_taskGarrison",_leader];
+					[_x,_position,_radius,[],false,true,-2,false] remoteExecCall ["lambs_wp_fnc_taskGarrison",_leader];
 				};
 			} else {
 				[_x,_position,_radius] remoteExecCall ["lambs_wp_fnc_taskPatrol",_leader];

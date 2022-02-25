@@ -38,7 +38,7 @@ _marker setMarkerSize [1.5,1.5];
 	},
 	{
 		params ["","_marker"];
-		["The town is is now clear of UXOs.","successNotif","Clearing UXOs"] remoteExecCall ["AW_fnc_notify",-2];
+		["The town is now clear of UXOs.","successNotif","Clearing UXOs"] remoteExecCall ["AW_fnc_notify",-2];
 		[15] call AW_fnc_adjustCivRep;
 		deleteMarker _marker;
 		AW_secondaryMissionsCompleted = AW_secondaryMissionsCompleted + 1;

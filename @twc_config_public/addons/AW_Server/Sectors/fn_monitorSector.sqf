@@ -19,10 +19,7 @@ if (_captureRatio > _requiredCaptureRatio) then {
 	{
 		{
 			if (alive _x && {isNull objectParent _x && {_surrenderChance > (random 100) && {_x distance _sectorCentre < (_radius * 1.5)}}}) then {
-				private _curWep = currentWeapon _x;
-				if (_curWep isNotEqualTo "") then {_x removeWeaponGlobal _curWep};
-				_x setUnitPos "UP";
-				_x disableAI "radioProtocol";
+				[_x,"radioProtocol"] remoteExecCall ["disableAI",_x];
 				[_x,true] remoteExecCall ["ACE_captives_fnc_setSurrendered",_x];
 				[_x] call AW_fnc_monitorSurrender;
 			};
@@ -39,7 +36,7 @@ if (_captureRatio > _requiredCaptureRatio) then {
 		private _civilianTypes = getArray(missionConfigFile >> "Civilian_Setup" >> "AW_civilianTypes");
 		private _woundedCivMaxCount = getNumber(missionConfigFile >> "Core_Settings" >> "AW_woundedCivMaxCount");
 		private _bodyParts = ["Head","Body","LeftArm","RightArm","LeftLeg","RightLeg"];
-		private _damageTypes = ["grenade","explosive","bullet"];
+		private _damageTypes = ["grenade","explosive","ropeburn"];
 		private _civCount = ceil (random _woundedCivMaxCount);
 
 		for "_i" from 1 to _civCount do {
@@ -52,7 +49,7 @@ if (_captureRatio > _requiredCaptureRatio) then {
 			private _civilian = _group createUnit [_civClass,_position,[],10,"NONE"];
 			removeAllItems _civilian;
 
-			private _woundCount = 1 + (ceil (random 3));
+			private _woundCount = 2 + (round (random 1));
 			for "_i" from 1 to _woundCount do {
 				[_civilian,0.25,(selectRandom _bodyParts),(selectRandom _damageTypes)] call ace_medical_fnc_addDamageToUnit;
 			};
@@ -163,7 +160,7 @@ if (_captureRatio > _requiredCaptureRatio) then {
 					if (alive _x && {!(_x getVariable ["AW_playerUsed",false])}) then {
 						deleteVehicle _x;
 					};
-				} forEach (nearestObjects [_sectorCentre,["Car","Tank","GroundWeaponHolder","WeaponHolderSimulated"],750]);
+				} forEach (nearestObjects [_sectorCentre,["LandVehicle","GroundWeaponHolder","WeaponHolderSimulated"],750]);
 			},
 			[_sectorCentre,_sector]
 		] call CBA_fnc_waitUntilAndExecute;
