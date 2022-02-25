@@ -135,7 +135,7 @@ class TWC_Vehicle_ColdWar_FV432_Woodland_COIN: CUP_B_FV432_GB_GPMG {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_SCIMITAR_MOD
-class TWC_Vehicle_ColdWar_Scimitar_Woodland: ukcw_cvrt_Scim_w_L1 {
+class TWC_Vehicle_ColdWar_Scimitar_Woodland: cwr3_b_uk_fv107 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -164,7 +164,7 @@ class TWC_Vehicle_ColdWar_Scimitar_Woodland: ukcw_cvrt_Scim_w_L1 {
 	REGULAR_77({"commander", "gunner"}, {"intercom_1"})
 };
 
-class TWC_Vehicle_ColdWar_Scimitar_Desert: ukcw_cvrt_Scim_d_L1 {
+class TWC_Vehicle_ColdWar_Scimitar_Desert: cwr3_b_uk_fv107 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -181,8 +181,19 @@ class TWC_Vehicle_ColdWar_Scimitar_Desert: ukcw_cvrt_Scim_d_L1 {
 		ADD_ITEM(ACE_tourniquet, ADD_QNTY(SECTION_TOURNIQUET));
 		ADD_ITEM(ACE_morphine, ADD_QNTY(SECTION_MORPHINE));
 		ADD_ITEM(ACE_epinephrine, ADD_QNTY(SECTION_EPINEPHRINE));
-	}; 
-	
+	};
+
+	textures[] = {
+		"\cwr3\expansions\cwr3_expansion_uk\vehicles\fv101\data\variants\main_desert_co.paa",
+		"\cwr3\expansions\cwr3_expansion_uk\vehicles\fv101\data\variants\unique_desert_co.paa",
+		"\cwr3\expansions\cwr3_expansion_uk\vehicles\fv101\data\variants\mirror_desert_co.paa",
+		"",
+		"",
+		"",
+		"",
+		"\cwr3\expansions\cwr3_expansion_uk\vehicles\fv101\data\licenseplate_co.paa"
+	};
+
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
 	};
@@ -195,7 +206,7 @@ class TWC_Vehicle_ColdWar_Scimitar_Desert: ukcw_cvrt_Scim_d_L1 {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_SCORPION_MOD
-class TWC_Vehicle_ColdWar_Scorpion_Woodland: ukcw_Scorpion_w_L1 {
+class TWC_Vehicle_ColdWar_Scorpion_Woodland: cwr3_b_uk_fv101 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -224,7 +235,7 @@ class TWC_Vehicle_ColdWar_Scorpion_Woodland: ukcw_Scorpion_w_L1 {
 	REGULAR_77({"commander", "gunner"}, {"intercom_1"})
 };
 
-class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_Scorpion_d_L1 {
+class TWC_Vehicle_ColdWar_Scorpion_Desert: cwr3_b_uk_fv101 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -232,6 +243,17 @@ class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_Scorpion_d_L1 {
 	
 	displayname = "Scorpion (Desert)";
 	editorSubcategory = "TWC_ForceType_Armoured";
+
+	textures[] = {
+		"\cwr3\expansions\cwr3_expansion_uk\vehicles\fv101\data\variants\main_desert_co.paa",
+		"\cwr3\expansions\cwr3_expansion_uk\vehicles\fv101\data\variants\unique_desert_co.paa",
+		"\cwr3\expansions\cwr3_expansion_uk\vehicles\fv101\data\variants\mirror_desert_co.paa",
+		"",
+		"",
+		"",
+		"",
+		"\cwr3\expansions\cwr3_expansion_uk\vehicles\fv101\data\licenseplate_co.paa"
+	};
 
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing, ADD_QNTY(SECTION_FIELDDRESSING));
@@ -255,7 +277,7 @@ class TWC_Vehicle_ColdWar_Scorpion_Desert: ukcw_Scorpion_d_L1 {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_CHIEFTAIN_MOD
-class TWC_Vehicle_ColdWar_Chieftain_Woodland: ukcw_chieftainmk10 {
+class TWC_Vehicle_ColdWar_Chieftain_Woodland: cwr3_b_uk_fv4201 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -276,9 +298,6 @@ class TWC_Vehicle_ColdWar_Chieftain_Woodland: ukcw_chieftainmk10 {
 	
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
-		ADD_MAGA(ukcw_l15a4_apds_hull, 40);
-		ADD_MAGA(ukcw_l31_hesh_hull, 20);
-		ADD_MAGA(ukcw_l34_smoke_hull, 4);
 	};
 	
 	class TransportWeapons { };
