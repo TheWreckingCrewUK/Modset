@@ -1,12 +1,13 @@
+#include "\z\ace\addons\main\script_macros.hpp"
 #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 
 params ["_target", "_selectionName"];
 
-_part = ALL_BODY_PARTS find toLower _selectionName;
+_part = ["head", "body", "leftarm", "rightarm", "leftleg", "rightleg"] find toLower _selectionName;//ALL_BODY_PARTS find toLower _selectionName;
 if (_part < 0) exitWith { false; };
 
-_openWounds = _target getVariable ['ACE_Medical_openWounds', []];
-_bandagedWounds = _target getVariable ['ACE_Medical_bandagedWounds', []];
+_openWounds = _target getVariable ["ace_medical_openWounds", []];//GET_OPEN_WOUNDS(_target);
+_bandagedWounds = _target getVariable ["ace_medical_bandagedWounds", []];//GET_BANDAGED_WOUNDS(_target);
 
 // no wounds at all!
 if (((count _openWounds) + (count _bandagedWounds)) < 1) exitWith { [false, []]; };
@@ -15,7 +16,7 @@ _openWoundBLTopRate = 0;
 _bestOpenWound = [];
 
 // always prioritise open wounds first
-if ((count _openWounds) > 0) then {
+if (({_x select 2 > 0} count _openWounds) > 0) then {
 	{
 		_x params ["_classID", "_partX", "", "_bloodlossRate", "_impact"];
 
@@ -32,7 +33,6 @@ if ((count _openWounds) > 0) then {
 	} forEach _openWounds;
 };
 
-//hint str _bestOpenWound;
 if (_openWoundBLTopRate != 0) exitWith { [true, _bestOpenWound]; };
 
 _bandagedWoundBLTopRate = 0;

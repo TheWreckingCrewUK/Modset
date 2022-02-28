@@ -1,3 +1,4 @@
+#include "\z\ace\addons\main\script_macros.hpp"
 #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 
 /** Function to resuscitate a unit, primarily used in debugging/fixing broken states from changes (maybe medical training too) **/
