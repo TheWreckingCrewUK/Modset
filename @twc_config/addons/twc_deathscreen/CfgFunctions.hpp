@@ -5,8 +5,7 @@ class CfgFunctions {
 			
 			/** INIT **/
 			class clientInit {};
-			class serverInit { postInit = 1; };
-			class bestGuessDeath {};
+			//class serverInit { postInit = 1; }; // not needed atm
 			class getDeathData {};
 			class fadeInSound {};
 		};

@@ -18,7 +18,7 @@ missionNameSpace setVariable ["TWC_Intro_isDisabled", (_logic getVariable "disab
 missionNameSpace setVariable ["TWC_Intro_specialSong", (_logic getVariable ["specialIntro", ""])];
 
 // Server side part below
-if !(isServer) exitWith {};
+if !(hasInterface) exitWith {};
 
 missionNameSpace setVariable ["TWC_Intro_Started", false, true];
 missionNameSpace setVariable ["TWC_worldName", worldName, true]; // share world name from server, for clients to check against
