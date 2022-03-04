@@ -38,7 +38,7 @@ class TWC_Groups_##ERA##_##CAMO \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Marksman; \
+			vehicle = TWC_Infantry_##ERA##_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
@@ -100,7 +100,7 @@ class TWC_Groups_##ERA##_##CAMO \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Marksman; \
+			vehicle = TWC_Infantry_##ERA##_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
@@ -199,6 +199,13 @@ class TWC_Groups_##ERA##_##CAMO \
 			vehicle = TWC_Infantry_##ERA##_##CAMO##_Company_Sergeant; \
 			rank = "CAPTAIN"; \
 			position[] = {4,0,0}; \
+		}; \
+		class Unit3 \
+		{ \
+			side = 2; \
+			vehicle = TWC_Infantry_##ERA##_##CAMO##_Signaller; \
+			rank = "PRIVATE"; \
+			position[] = {6,0,0}; \
 		}; \
 	}; \
 	class AT_Team \
