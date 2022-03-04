@@ -24,15 +24,11 @@ titleFadeOut 5;
 }, [_operationName, _author], 7] call CBA_fnc_waitAndExecute;
 
 [{
-	// Change text depending on if it's JIP or not
-	if (_this select 0) then {
-		titleText ["To get back to where you were, ping Zeus to let them know you're in!", "PLAIN"];
-	} else {
-		titleText ["To prevent desync, don't move until the go ahead is given.", "PLAIN"];
-	};
-	
-	titleFadeOut 20;
-}, [_missionStarted], 30] call CBA_fnc_waitAndExecute;
+	titleText ["To prevent desync, don't move until the go ahead is given.", "PLAIN"];
+	titleFadeOut 15;
+	titleText ["To get back to where you were, ping Zeus to let them know you're in!", "PLAIN"];
+	titleFadeOut 15;
+}, [], 30] call CBA_fnc_waitAndExecute;
 
 [{
 	// Adds a blur effect which sharpens over the next 6 seconds.
