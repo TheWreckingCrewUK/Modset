@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="TWC Medical Defib">
+	<Package name="TWC_Medical_Defib">
+		<Key ID="STR_TWC_CPR_EXECUTE">
+			<Original>%1 performed CPR</Original>
+			<English>%1 performed CPR</English>
+			<German>%1 hat eine HLW durchgeführt</German>
+		</Key>
+		<Key ID="STR_TWC_DEFIB_EXECUTE">
+			<Original>%1 was unsuccesful with their defibrillator</Original>
+			<English>%1 was unsuccesful with their defibrillator</English>
+			<German>%1 hatte keinen Erfolg mit dem Defibrillator</German>
+		</Key>
+		<Key ID="STR_TWC_DEFIB_COMPLETED">
+			<Original>%1 resuscitated the patient with defibrillator</Original>
+			<English>%1 resuscitated the patient with defibrillator</English>
+			<German>%1 hat den Patienten mittels Defibrillator wiederbelebt</German>
+		</Key>
+	</Package>
+</Project>

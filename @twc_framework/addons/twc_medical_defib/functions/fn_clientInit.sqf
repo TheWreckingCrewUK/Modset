@@ -1,0 +1,1 @@
+["twc_medical_evh_Defib_Local", { _this call twc_medical_defib_fnc_defib_Local }] call CBA_fnc_addEventHandler;
