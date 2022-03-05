@@ -33,7 +33,7 @@ class CfgPatches {
 		
 		requiredAddons[] = {
 			"cba_main",
-			"twc_medical"
+			"twc_medical_core"
 		};
 		
 		author = "Bosenator";
