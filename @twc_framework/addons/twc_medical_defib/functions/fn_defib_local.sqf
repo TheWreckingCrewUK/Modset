@@ -40,7 +40,7 @@ if !(isNull objectParent _caller) then {
 	playSound3D ["twc_medical_defib\sounds\defib.ogg", vehicle _caller, true, getPosASL (vehicle _caller), 2, 1, 10];
 };
 
-_probability = [_probability, _target, "Defib"] call TWC_Medical_Resuscitate_fnc_badLuckProtection;
+_probability = [_probability, _target] call TWC_Medical_fnc_badLuckProtection;
 
 if (_probability < 5) then {
 	_probability = 5;
@@ -51,9 +51,6 @@ if ( _probability >= _diceRoll ) exitWith {
 	_target setVariable ["ace_medical_pain", (_painLevel + _painToAdd), true];
 
 	[_target] call twc_medical_core_fnc_resuscitateUnitLocal;
-
-	/*_forceSync = (CBA_missionTime - 60);
-	_target setVariable ["ACE_medical_lastMomentValuesSynced", _forceSync, true];*/
 
 	[_target, "activity", localize "STR_TWC_DEFIB_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
 	[_target, "activity_view", localize "STR_TWC_DEFIB_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
