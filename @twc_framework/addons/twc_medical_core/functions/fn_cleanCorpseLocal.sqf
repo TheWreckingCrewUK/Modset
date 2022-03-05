@@ -1,5 +1,5 @@
 // wrapper for locality on cleaning a corpse for bloodlust compat
-// [_unit] call TWC_Medical_Core_fnc_cleanCorpse;
+// [_unit] call TWC_Medical_fnc_cleanCorpse;
 params ["_unit"];
 
 removeAllItems _unit;

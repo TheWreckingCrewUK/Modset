@@ -60,8 +60,8 @@ class CfgFunctions {
 			class addPain {};
 			
 			// Set Dead
-			class SetDead {};
-			class SetDeadLocal {};
+			class setDead {};
+			class setDeadLocal {};
 			
 			// Clean Corpse
 			class cleanCorpse {};

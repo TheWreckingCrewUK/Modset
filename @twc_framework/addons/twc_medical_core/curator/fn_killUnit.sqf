@@ -25,7 +25,7 @@ if((_mouseOver select 0) != "OBJECT") then{
 	if !(_unit isKindOf "CAManBase") then {
 		hint "Needs to be a unit!";
 	} else {
-		[_unit] call TWC_Medical_Core_fnc_setDead;
+		[_unit] call TWC_Medical_fnc_setDead;
 	};
 };
 
