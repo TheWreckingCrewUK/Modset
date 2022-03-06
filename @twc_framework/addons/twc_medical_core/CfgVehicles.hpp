@@ -95,4 +95,17 @@ class CfgVehicles {
 		curatorCanAttach = 1;
 		displayName = "Inspect Unit (Medically)";
 	};
+	
+	class TWC_Curator_fullyBandageUnit: Module_F {
+		author = "[TWC] Bosenator";
+		category = "twc_zeus";
+		scope = 1;
+		scopeCurator = 2;
+		functionPriority = 1;
+		isGlobal = 1;
+		isTriggerActivated = 0;
+		function = "twc_medical_fnc_fullyBandageUnit";
+		curatorCanAttach = 1;
+		displayName = "Fully Bandage Unit";
+	};
 };

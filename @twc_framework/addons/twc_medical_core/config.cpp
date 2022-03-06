@@ -18,7 +18,8 @@ class CfgPatches {
 			"TWC_Curator_fullHealUnit",
 			"TWC_Curator_killUnit",
 			"TWC_Curator_resuscitateUnit",
-			"TWC_Curator_inspectUnit"
+			"TWC_Curator_inspectUnit",
+			"TWC_Curator_fullyBandageUnit"
 		};
 
 		weapons[] = { };

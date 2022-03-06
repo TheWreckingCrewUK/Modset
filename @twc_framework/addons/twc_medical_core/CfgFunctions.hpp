@@ -54,7 +54,6 @@ class CfgFunctions {
 			
 			// Generics
 			class getBloodVolume {};
-			class fullyBandageUnit {};
 			class resuscitateUnitLocal {};
 			class removeMedicalItem {};
 			class addPain {};
@@ -77,6 +76,7 @@ class CfgFunctions {
 		class curator {
 			file = "twc_medical_core\curator";
 			
+			class fullyBandageUnit {};
 			class resuscitateUnit {};
 			class killUnit {};
 			class fullHealUnit {};
