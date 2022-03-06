@@ -23,7 +23,7 @@ class TWC_Backpack_ColdWar_Malay_2iC: B_LIB_UK_HSack
 		ADD_MAGA(LIB_15Rnd_762x33,14);
 		ADD_MAGA(LIB_30Rnd_770x56,4);
 		ADD_MAGA(LIB_10Rnd_770x56,4);
-		ADD_MAGA(LIB_50Rnd_45ACP,4);
+		ADD_MAGA(LIB_30Rnd_45ACP_t,4);
 		ADD_MAGA(LIB_MillsBomb,4);
 		ADD_MAGA(SmokeShell,2);
 	};
@@ -82,7 +82,7 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_SMG: B_LIB_UK_HSack
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(LIB_50Rnd_45ACP,12);
+		ADD_MAGA(LIB_30Rnd_45ACP_t,12);
 		ADD_MAGA(LIB_30Rnd_770x56,4);
 	};
 };
@@ -108,7 +108,7 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_SectionCommander: B_LIB_UK_HSack
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(LIB_50Rnd_45ACP,8);
+		ADD_MAGA(LIB_30Rnd_45ACP_t,8);
 		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
 		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
@@ -127,7 +127,7 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_2iC: B_LIB_UK_HSack
 	class TransportMagazines {
 		ADD_MAGA(LIB_15Rnd_762x33,16);
 		ADD_MAGA(LIB_30Rnd_770x56,8);
-		ADD_MAGA(LIB_50Rnd_45ACP,8);
+		ADD_MAGA(LIB_30Rnd_45ACP_t,8);
 		ADD_MAGA(LIB_10Rnd_770x56,7);
 		ADD_MAGA(LIB_MillsBomb,8);
 		ADD_MAGA(SmokeShell,2);
@@ -143,7 +143,7 @@ class TWC_Backpack_ColdWar_Malay_Platoon_Commander: B_LIB_UK_HSack
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(LIB_50Rnd_45ACP,6);
+		ADD_MAGA(LIB_30Rnd_45ACP_t,6);
 		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
 		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
@@ -165,7 +165,7 @@ class TWC_Backpack_ColdWar_Malay_Platoon_Sergeant: B_LIB_UK_HSack
 	class TransportMagazines {
 		ADD_MAGA(LIB_15Rnd_762x33,12);
 		ADD_MAGA(LIB_30Rnd_770x56,6);
-		ADD_MAGA(LIB_50Rnd_45ACP,6);
+		ADD_MAGA(LIB_30Rnd_45ACP_t,6);
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
@@ -219,7 +219,7 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_Platoon_Commander: B_LIB_UK_HSack
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(LIB_50Rnd_45ACP,6);
+		ADD_MAGA(LIB_30Rnd_45ACP_t,6);
 		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
 		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
@@ -238,7 +238,7 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_Platoon_Sergeant: fow_b_uk_bergenpac
 	class TransportMagazines {
 		ADD_MAGA(LIB_15Rnd_762x33,16);
 		ADD_MAGA(LIB_30Rnd_770x56,8);
-		ADD_MAGA(LIB_50Rnd_45ACP,8);
+		ADD_MAGA(LIB_30Rnd_45ACP_t,8);
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
