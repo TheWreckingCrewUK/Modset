@@ -2,7 +2,7 @@ class CfgBrains {
 	class DefaultSoldierBrain {
 		class Components {
 			class AIBrainSuppressionComponent {
-				worstDecreaseTime = 15.0;
+				worstDecreaseTime = 20.0;
 				bestDecreaseTime = 3.0;
 				SuppressionRange = 25;
 			};
