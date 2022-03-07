@@ -5,10 +5,11 @@ class CfgFunctions {
 		class init {
 			file = "twc_medical_defib\functions";
 			
-			class action_defib {};
 			class canDefib {};
+			class clientInit {};
 			class defib {};
-			class defib_local {};
+			class defibLocal {};
+			class handleRespawn {};
 		};
 	};
 };
