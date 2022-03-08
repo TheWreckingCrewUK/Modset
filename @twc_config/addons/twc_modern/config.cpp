@@ -105,7 +105,67 @@ class CfgVehicles
 			"twc_nightvision_gen3"
 		};
 	};
+		class TWC_Infantry_Modern_2018_Base: B_Soldier_base_F {
+		scope = 1;
+		displayName = "Base";
+		faction = "TWC_Modern";
+		CATEGORY(TWC_Infantry_Regular_Woodland)
+		icon = "iconMan";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
+		backpack = "";
 
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+		};
+
+		linkedItems[] = {
+			"mpx_virtus_taco_p",
+			"mpx_cobra_scrim",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"mpx_virtus_taco_p",
+			"mpx_cobra_scrim",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+
+		items[] = {
+			MEDICAL_LOADOUT
+		};
+
+		respawnItems[] = {
+			MEDICAL_LOADOUT
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put"
+		};
+
+		magazines[] = {};
+		respawnmagazines[] = {};
+
+		nightItems[] = {
+			MAG_2("Chemlight_green"),
+			"ACE_Flashlight_MX991",
+			"ACE_Flashlight_Maglite_ML300L"
+		};
+
+		nightLinkedItems[] = {
+			"twc_nightvision_gen3"
+		};
+	};
 	class TWC_Infantry_Modern_Plane_Pilot: TWC_Infantry_Modern_Base
 	{
 		scope = 2;
@@ -245,6 +305,13 @@ class CfgVehicles
 	#include "regular\nbc_dismounted.hpp"
 	#include "regular\arctic.hpp"
 	#include "regular\arctic_dismounted.hpp"
+	
+	#include "regular_post_2018\woodland.hpp"
+	#include "regular_post_2018\woodland_dismounted.hpp"
+	#include "regular_post_2018\nbc.hpp"
+	#include "regular_post_2018\nbc_dismounted.hpp"
+	#include "regular_post_2018\arctic.hpp"
+	#include "regular_post_2018\arctic_dismounted.hpp"
 
 	#include "coin\woodland.hpp"
 	#include "coin\woodland_dismounted.hpp"
@@ -252,6 +319,13 @@ class CfgVehicles
 	#include "coin\nbc_dismounted.hpp"
 	#include "coin\arctic.hpp"
 	#include "coin\arctic_dismounted.hpp"
+	
+	#include "coin_post_2018\woodland.hpp"
+	#include "coin_post_2018\woodland_dismounted.hpp"
+	#include "coin_post_2018\nbc.hpp"
+	#include "coin_post_2018\nbc_dismounted.hpp"
+	#include "coin_post_2018\arctic.hpp"
+	#include "coin_post_2018\arctic_dismounted.hpp"
 };
 
 class CfgGroups
@@ -262,7 +336,9 @@ class CfgGroups
 		{
 			name = "TWC Groups Modern";
 			#include "regular\groups.hpp"
+			#include "regular_post_2018\groups.hpp"
 			#include "coin\groups.hpp"
+			#include "coin_post_2018\groups.hpp"
 			class TWC_Groups_Modern_Generic
 			{
 				name = "Generic";
