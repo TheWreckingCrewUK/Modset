@@ -363,7 +363,7 @@ class CfgVehicles {
 	#include "units\Takistani_Army.hpp"
 	#include "units\burmese_insurgents.hpp"
 	#include "units\taliban.hpp"
-	#include "units\SCP.hpp"
+	//#include "units\SCP.hpp"
 };
 
 #include "CfgMarkers.hpp"
