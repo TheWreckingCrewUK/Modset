@@ -17,7 +17,7 @@ if (isNil "TWC_Core_BroadcastMode") then { TWC_Core_BroadcastMode = false; }; //
 	
 	enableRadio true;
 	player disableConversation false;
-	_deathScreenData spawn { playSound [(_this select 0)]; };
+	//[_deathScreenData] spawn { playSound (_this select 0); };
 	
 	_broadcastCredit = "";
 	if (TWC_Core_BroadcastMode) then {
@@ -25,7 +25,7 @@ if (isNil "TWC_Core_BroadcastMode") then { TWC_Core_BroadcastMode = false; }; //
 	};
 	
 	_deathString = format [
-		"<t color='#FF0000' size='3'>%1 %2</t><br/><t color='#FFFFFF' size='2'>Perished during %3 at T+%4</t><br/><t color='#FF0000' size='3'>Operation created by %5</t><br/><br/><br/><br/>If you believe you died unfairly, disconnect immediately and inform management.%6",
+		"<t color='#FF0000' size='3'>%1 %2</t><br/><t color='#FFFFFF' size='2'>Perished during %3 at T+%4</t><br/><t color='#fabf73' size='1'>Operation created by %5</t><br/><br/><br/><br/>If you believe you died unfairly, disconnect immediately and inform management.%6",
 		(_deathData select 0),
 		(_deathData select 3),
 		getMissionConfigValue ["onLoadName", getMissionConfigValue ["briefingName", "Untitled"]],
