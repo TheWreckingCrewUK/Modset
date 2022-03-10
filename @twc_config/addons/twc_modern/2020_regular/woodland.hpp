@@ -1017,7 +1017,7 @@ class TWC_Infantry_2020_Regular_Woodland_UAVOp: TWC_Infantry_2020_Regular_Woodla
 		"mpx_virtus_admin_p",
 		"mpx_cobra_patch",
 		"ItemCompass",
-		"ItemcTab",
+		"B_UavTerminal",
 		"itemMap",
 		"ItemWatch"
 	};
