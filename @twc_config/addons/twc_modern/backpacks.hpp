@@ -17,7 +17,7 @@ class mpx_daysack7;
 class mpx_daysack8;
 class mpx_daysack10;
 
-#include "regular\backpacks.hpp"
-#include "regular_post_2018\backpacks.hpp"
-#include "coin\backpacks.hpp"
-#include "coin_post_2018\backpacks.hpp"
+#include "2010_regular\backpacks.hpp"
+#include "2020_regular\backpacks.hpp"
+#include "2010_coin\backpacks.hpp"
+#include "2020_coin\backpacks.hpp"

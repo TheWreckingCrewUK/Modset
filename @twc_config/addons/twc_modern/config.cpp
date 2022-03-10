@@ -44,9 +44,9 @@ class CfgVehicles
 			vehicleClass = a;
 
 	//GENERIC
-	class TWC_Infantry_Modern_Base: B_Soldier_base_F {
+	class TWC_Infantry_2010_Base: B_Soldier_base_F {
 		scope = 1;
-		displayName = "Base";
+		displayName = "Base (2010)";
 		faction = "TWC_Modern";
 		CATEGORY(TWC_Infantry_Regular_Woodland)
 		icon = "iconMan";
@@ -105,9 +105,9 @@ class CfgVehicles
 			"twc_nightvision_gen3"
 		};
 	};
-		class TWC_Infantry_Modern_2018_Base: B_Soldier_base_F {
+		class TWC_Infantry_2020_Base: B_Soldier_base_F {
 		scope = 1;
-		displayName = "Base";
+		displayName = "Base (2020)";
 		faction = "TWC_Modern";
 		CATEGORY(TWC_Infantry_Regular_Woodland)
 		icon = "iconMan";
@@ -166,7 +166,7 @@ class CfgVehicles
 			"twc_nightvision_gen3"
 		};
 	};
-	class TWC_Infantry_Modern_Plane_Pilot: TWC_Infantry_Modern_Base
+	class TWC_Infantry_Modern_Plane_Pilot: TWC_Infantry_2010_Base
 	{
 		scope = 2;
 		displayName = "Jet Pilot";
@@ -222,7 +222,7 @@ class CfgVehicles
 			"SmokeShell"
 		};
 	};
-	class TWC_Infantry_Modern_Tank_Commander: TWC_Infantry_Modern_Base
+	class TWC_Infantry_Modern_Tank_Commander: TWC_Infantry_2010_Base
 	{
 		scope = 2;
 		displayName = "Tank Commander";
@@ -299,33 +299,33 @@ class CfgVehicles
 			"Put"
 		};
 	};
-	#include "regular\woodland.hpp"
-	#include "regular\woodland_dismounted.hpp"
-	#include "regular\nbc.hpp"
-	#include "regular\nbc_dismounted.hpp"
-	#include "regular\arctic.hpp"
-	#include "regular\arctic_dismounted.hpp"
+	#include "2010_regular\woodland.hpp"
+	#include "2010_regular\woodland_dismounted.hpp"
+	#include "2010_regular\nbc.hpp"
+	#include "2010_regular\nbc_dismounted.hpp"
+	#include "2010_regular\arctic.hpp"
+	#include "2010_regular\arctic_dismounted.hpp"
 	
-	#include "regular_post_2018\woodland.hpp"
-	#include "regular_post_2018\woodland_dismounted.hpp"
-	#include "regular_post_2018\nbc.hpp"
-	#include "regular_post_2018\nbc_dismounted.hpp"
-	#include "regular_post_2018\arctic.hpp"
-	#include "regular_post_2018\arctic_dismounted.hpp"
+	#include "2020_regular\woodland.hpp"
+	#include "2020_regular\woodland_dismounted.hpp"
+	#include "2020_regular\nbc.hpp"
+	#include "2020_regular\nbc_dismounted.hpp"
+	#include "2020_regular\arctic.hpp"
+	#include "2020_regular\arctic_dismounted.hpp"
 
-	#include "coin\woodland.hpp"
-	#include "coin\woodland_dismounted.hpp"
-	#include "coin\nbc.hpp"
-	#include "coin\nbc_dismounted.hpp"
-	#include "coin\arctic.hpp"
-	#include "coin\arctic_dismounted.hpp"
+	#include "2010_coin\woodland.hpp"
+	#include "2010_coin\woodland_dismounted.hpp"
+	#include "2010_coin\nbc.hpp"
+	#include "2010_coin\nbc_dismounted.hpp"
+	#include "2010_coin\arctic.hpp"
+	#include "2010_coin\arctic_dismounted.hpp"
 	
-	#include "coin_post_2018\woodland.hpp"
-	#include "coin_post_2018\woodland_dismounted.hpp"
-	#include "coin_post_2018\nbc.hpp"
-	#include "coin_post_2018\nbc_dismounted.hpp"
-	#include "coin_post_2018\arctic.hpp"
-	#include "coin_post_2018\arctic_dismounted.hpp"
+	#include "2020_coin\woodland.hpp"
+	#include "2020_coin\woodland_dismounted.hpp"
+	#include "2020_coin\nbc.hpp"
+	#include "2020_coin\nbc_dismounted.hpp"
+	#include "2020_coin\arctic.hpp"
+	#include "2020_coin\arctic_dismounted.hpp"
 };
 
 class CfgGroups
@@ -335,10 +335,10 @@ class CfgGroups
 		class TWC_Groups_Modern
 		{
 			name = "TWC Groups Modern";
-			#include "regular\groups.hpp"
-			#include "regular_post_2018\groups.hpp"
-			#include "coin\groups.hpp"
-			#include "coin_post_2018\groups.hpp"
+			#include "2010_regular\groups.hpp"
+			#include "2020_regular\groups.hpp"
+			#include "2010_coin\groups.hpp"
+			#include "2020_coin\groups.hpp"
 			class TWC_Groups_Modern_Generic
 			{
 				name = "Generic";
