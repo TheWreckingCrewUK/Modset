@@ -95,49 +95,49 @@ class TWC_Groups_2020_Regular_##CAMO \
 			side = 1; \
 			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
-			position[] = {4,0,0}; \
+			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 1; \
 			vehicle = TWC_Infantry_2020_Regular_##CAMO##_2iC; \
 			rank = "CORPORAL"; \
-			position[] = {6,0,0}; \
+			position[] = {8,0,0}; \
 		}; \
 		class Unit5 \
 		{ \
 			side = 1; \
 			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
-			position[] = {8,0,0}; \
+			position[] = {10,0,0}; \
 		}; \
 		class Unit6 \
 		{ \
 			side = 1; \
 			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
-			position[] = {10,0,0}; \
+			position[] = {12,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 1; \
 			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Vehicle_Commander; \
 			rank = "CORPORAL"; \
-			position[] = {12,0,0}; \
+			position[] = {14,0,0}; \
 		}; \
 		class Unit8 \
 		{ \
 			side = 1; \
 			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
-			position[] = {14,0,0}; \
+			position[] = {16,0,0}; \
 		}; \
 		class Unit9 \
 		{ \
 			side = 1; \
 			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
-			position[] = {16,0,0}; \
+			position[] = {18,0,0}; \
 		}; \
 	}; \
 	class Platoon_Command \
