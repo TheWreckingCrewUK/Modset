@@ -4,7 +4,7 @@ class TWC_Backpack_2020_Regular_Woodland_SectionCommander: mpx_camel2
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 100;
+	maximumLoad = 200;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
@@ -41,6 +41,7 @@ class TWC_Backpack_2020_Regular_Woodland_Platoon_Commander: mpx_camel2
 {
 	scope = 1;
 	scopeArsenal = 1;
+	maximumLoad = 200;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
