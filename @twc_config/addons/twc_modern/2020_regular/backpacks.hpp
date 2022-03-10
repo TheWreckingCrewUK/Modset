@@ -62,7 +62,7 @@ class TWC_Backpack_2020_Regular_Woodland_Platoon_Sergeant: mpx_daysack10
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, 8);
 		ADD_MAGA(UK3CB_BAF_1Rnd_HE_Grenade_Shell,10);
-		ADD_MAGA(UK3CB_BAF_762_100Rnd, 1);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd, 2);
 		ADD_MAGA(UK3CB_BAF_762_L42A1_20Rnd_T, 2);
 		ADD_MAGA(SmokeShell, 4);
 	};
