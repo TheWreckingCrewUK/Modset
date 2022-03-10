@@ -10,56 +10,56 @@ class TWC_Groups_2020_Regular_##CAMO \
 		class Unit0 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Marksman; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Marksman; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_2iC; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_2iC; \
 			rank = "CORPORAL"; \
 			position[] = {8,0,0}; \
 		}; \
 		class Unit5 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_MG; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_MG; \
 			rank = "PRIVATE"; \
 			position[] = {10,0,0}; \
 		}; \
 		class Unit6 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {12,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \
@@ -72,70 +72,70 @@ class TWC_Groups_2020_Regular_##CAMO \
 		class Unit0 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Marksman; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Marksman; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_2iC; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_2iC; \
 			rank = "CORPORAL"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit5 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
 		class Unit6 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
 			position[] = {10,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Vehicle_Commander; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Vehicle_Commander; \
 			rank = "CORPORAL"; \
 			position[] = {12,0,0}; \
 		}; \
 		class Unit8 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Vehicle_Crew; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \
 		class Unit9 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Vehicle_Crew; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {16,0,0}; \
 		}; \
@@ -148,28 +148,28 @@ class TWC_Groups_2020_Regular_##CAMO \
 		class Unit0 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Platoon_Commander; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Platoon_Commander; \
 			rank = "MAJOR"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Platoon_Sergeant; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Platoon_Sergeant; \
 			rank = "LIEUTENANT"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Platoon_Medic; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Platoon_Medic; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_CSM; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_CSM; \
 			rank = "CAPTAIN"; \
 			position[] = {6,0,0}; \
 		}; \
@@ -182,21 +182,21 @@ class TWC_Groups_2020_Regular_##CAMO \
 		class Unit0 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Company_Commander; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Company_Commander; \
 			rank = "COLONEL"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Company_2iC; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Company_2iC; \
 			rank = "MAJOR"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Company_Sergeant; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Company_Sergeant; \
 			rank = "CAPTAIN"; \
 			position[] = {4,0,0}; \
 		}; \
@@ -209,21 +209,21 @@ class TWC_Groups_2020_Regular_##CAMO \
 		class Unit0 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Javelin_Gunner; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Javelin_Gunner; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Javelin_Ass; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Javelin_Ass; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
@@ -236,14 +236,14 @@ class TWC_Groups_2020_Regular_##CAMO \
 		class Unit0 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Spotter; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Spotter; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Sniper; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Sniper; \
 			rank = "CORPORAL"; \
 			position[] = {2,0,0}; \
 		}; \
@@ -256,14 +256,14 @@ class TWC_Groups_2020_Regular_##CAMO \
 		class Unit0 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Artillery_Commander; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Artillery_Commander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Artillery_Crew; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Artillery_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
@@ -276,29 +276,29 @@ class TWC_Groups_2020_Regular_##CAMO \
 		class Unit0 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Vehicle_Commander; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Vehicle_Commander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Vehicle_Crew; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_##CAMO##_Vehicle_Crew; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 	}; \
 }; \
-class TWC_Groups_Modern_Regular_Dismounted_##CAMO \
+class TWC_Groups_2020_Regular_Dismounted_##CAMO \
 { \
-	name = __EVAL("Infantry (Dismounted, " + #CAMO + ")"); \
+	name = __EVAL("Infantry (2020s Dismounted, " + #CAMO + ")"); \
 	class Section \
 	{ \
 		name = "Section"; \
@@ -307,56 +307,56 @@ class TWC_Groups_Modern_Regular_Dismounted_##CAMO \
 		class Unit0 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_Autorifleman; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_Autorifleman; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_2iC; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_2iC; \
 			rank = "CORPORAL"; \
 			position[] = {8,0,0}; \
 		}; \
 		class Unit5 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_Autorifleman; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_Autorifleman; \
 			rank = "PRIVATE"; \
 			position[] = {10,0,0}; \
 		}; \
 		class Unit6 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_MG; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_MG; \
 			rank = "PRIVATE"; \
 			position[] = {12,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_Marksman; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_Marksman; \
 			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \
@@ -369,28 +369,28 @@ class TWC_Groups_Modern_Regular_Dismounted_##CAMO \
 		class Unit0 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_Platoon_Commander; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_Platoon_Commander; \
 			rank = "MAJOR"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_Platoon_Sergeant; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_Platoon_Sergeant; \
 			rank = "LIEUTENANT"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_Platoon_Medic; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_Platoon_Medic; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_CSM; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_CSM; \
 			rank = "CAPTAIN"; \
 			position[] = {6,0,0}; \
 		}; \
@@ -403,21 +403,21 @@ class TWC_Groups_Modern_Regular_Dismounted_##CAMO \
 		class Unit0 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_Company_Commander; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_Company_Commander; \
 			rank = "COLONEL"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_Company_2iC; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_Company_2iC; \
 			rank = "MAJOR"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_Modern_Regular_Dismounted_##CAMO##_Company_Sergeant; \
+			vehicle = TWC_Infantry_2020_Regular_Dismounted_##CAMO##_Company_Sergeant; \
 			rank = "CAPTAIN"; \
 			position[] = {4,0,0}; \
 		}; \

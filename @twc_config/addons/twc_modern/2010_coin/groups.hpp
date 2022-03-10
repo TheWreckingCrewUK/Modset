@@ -291,7 +291,7 @@ class TWC_Groups_2010_COIN_##CAMO \
 }; \
 class TWC_Groups_2010_COIN_Dismounted_##CAMO \
 { \
-	name = __EVAL("Infantry (COIN, Dismounted, " + #CAMO + ")"); \
+	name = __EVAL("Infantry (2010s COIN, Dismounted, " + #CAMO + ")"); \
 	class Section \
 	{ \
 		name = "Section"; \

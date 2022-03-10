@@ -161,7 +161,7 @@ class TWC_Infantry_2020_Regular_Woodland_Marksman: TWC_Infantry_2020_Regular_Woo
 	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
 	linkedItems[] =
 	{
-		"mpx_virtus3",
+		"mpx_virtus3_p",
 		"mpx_cobra_scrim",
 		"ItemCompass",
 		"itemMap",
@@ -169,7 +169,7 @@ class TWC_Infantry_2020_Regular_Woodland_Marksman: TWC_Infantry_2020_Regular_Woo
 	};
 	respawnLinkedItems[] =
 	{
-		"mpx_virtus3",
+		"mpx_virtus3_p",
 		"mpx_cobra_scrim",
 		"ItemCompass",
 		"itemMap",
