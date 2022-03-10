@@ -15,7 +15,7 @@ class TWC_Infantry_2020_Regular_Woodland_Rifleman: TWC_Infantry_2020_Base
 	};
 	respawnweapons[] =
 	{
-		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"TWC_Weapon_L85A3_LDS",
 		"UK3CB_BAF_L131A1",
 		"launch_NLAW_F",
 		"Throw",
