@@ -3,7 +3,7 @@
 class TWC_Infantry_2020_COIN_Woodland_Rifleman: TWC_Infantry_2020_Regular_Woodland_Rifleman
 {
 	displayName = "Rifleman";
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
 	Items[] =
 	{
@@ -36,7 +36,7 @@ class TWC_Infantry_2020_COIN_Woodland_Rifleman: TWC_Infantry_2020_Regular_Woodla
 };
 class TWC_Infantry_2020_COIN_Woodland_Grenadier: TWC_Infantry_2020_Regular_Woodland_Grenadier
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
 	Items[] =
 	{
@@ -51,7 +51,7 @@ class TWC_Infantry_2020_COIN_Woodland_Grenadier: TWC_Infantry_2020_Regular_Woodl
 };
 class TWC_Infantry_2020_COIN_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_MG
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
 	Items[] =
 	{
@@ -66,7 +66,7 @@ class TWC_Infantry_2020_COIN_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_MG
 };
 class TWC_Infantry_2020_COIN_Woodland_Marksman: TWC_Infantry_2020_Regular_Woodland_Marksman
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
 	Items[] =
 	{
@@ -81,7 +81,7 @@ class TWC_Infantry_2020_COIN_Woodland_Marksman: TWC_Infantry_2020_Regular_Woodla
 };
 class TWC_Infantry_2020_COIN_Woodland_SectionCommander: TWC_Infantry_2020_Regular_Woodland_SectionCommander
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_SectionCommander";
 	Items[] =
 	{
@@ -98,7 +98,7 @@ class TWC_Infantry_2020_COIN_Woodland_SectionCommander: TWC_Infantry_2020_Regula
 };
 class TWC_Infantry_2020_COIN_Woodland_2iC: TWC_Infantry_2020_Regular_Woodland_2iC
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_2iC";
 	Items[] =
 	{
@@ -117,7 +117,7 @@ class TWC_Infantry_2020_COIN_Woodland_2iC: TWC_Infantry_2020_Regular_Woodland_2i
 //Platoon
 class TWC_Infantry_2020_COIN_Woodland_Platoon_Commander: TWC_Infantry_2020_Regular_Woodland_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Platoon_Commander";
 	Items[] =
 	{
@@ -134,7 +134,7 @@ class TWC_Infantry_2020_COIN_Woodland_Platoon_Commander: TWC_Infantry_2020_Regul
 };
 class TWC_Infantry_2020_COIN_Woodland_Platoon_Sergeant: TWC_Infantry_2020_Regular_Woodland_Platoon_Sergeant
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Platoon_Sergeant";
 	Items[] =
 	{
@@ -151,7 +151,7 @@ class TWC_Infantry_2020_COIN_Woodland_Platoon_Sergeant: TWC_Infantry_2020_Regula
 };
 class TWC_Infantry_2020_COIN_Woodland_Platoon_Medic: TWC_Infantry_2020_Regular_Woodland_Platoon_Medic
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Platoon_Medic";
 	Items[] =
 	{
@@ -166,7 +166,7 @@ class TWC_Infantry_2020_COIN_Woodland_Platoon_Medic: TWC_Infantry_2020_Regular_W
 };
 class TWC_Infantry_2020_COIN_Woodland_Platoon_Mortar: TWC_Infantry_2020_Regular_Woodland_Platoon_Mortar
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Platoon_Mortar";
 	Items[] =
 	{
@@ -183,7 +183,7 @@ class TWC_Infantry_2020_COIN_Woodland_Platoon_Mortar: TWC_Infantry_2020_Regular_
 };
 class TWC_Infantry_2020_COIN_Woodland_CSM: TWC_Infantry_2020_Regular_Woodland_CSM
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Platoon_Sergeant";
 	Items[] =
 	{
@@ -202,7 +202,7 @@ class TWC_Infantry_2020_COIN_Woodland_CSM: TWC_Infantry_2020_Regular_Woodland_CS
 //Company
 class TWC_Infantry_2020_COIN_Woodland_Company_Commander: TWC_Infantry_2020_Regular_Woodland_Company_Commander
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Platoon_Commander";
 	Items[] =
 	{
@@ -219,7 +219,7 @@ class TWC_Infantry_2020_COIN_Woodland_Company_Commander: TWC_Infantry_2020_Regul
 };
 class TWC_Infantry_2020_COIN_Woodland_Company_2iC: TWC_Infantry_2020_Regular_Woodland_Company_2iC
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Platoon_Commander";
 	Items[] =
 	{
@@ -236,7 +236,7 @@ class TWC_Infantry_2020_COIN_Woodland_Company_2iC: TWC_Infantry_2020_Regular_Woo
 };
 class TWC_Infantry_2020_COIN_Woodland_Company_Sergeant: TWC_Infantry_2020_Regular_Woodland_Company_Sergeant
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Platoon_Sergeant";
 	Items[] =
 	{
@@ -255,7 +255,7 @@ class TWC_Infantry_2020_COIN_Woodland_Company_Sergeant: TWC_Infantry_2020_Regula
 //AT
 class TWC_Infantry_2020_COIN_Woodland_Javelin_Gunner: TWC_Infantry_2020_Regular_Woodland_Javelin_Gunner
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -269,7 +269,7 @@ class TWC_Infantry_2020_COIN_Woodland_Javelin_Gunner: TWC_Infantry_2020_Regular_
 };
 class TWC_Infantry_2020_COIN_Woodland_Javelin_Ass: TWC_Infantry_2020_Regular_Woodland_Javelin_Ass
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Javelin_Assistant";
 	Items[] =
 	{
@@ -286,7 +286,7 @@ class TWC_Infantry_2020_COIN_Woodland_Javelin_Ass: TWC_Infantry_2020_Regular_Woo
 //Sniper Team
 class TWC_Infantry_2020_COIN_Woodland_Sniper: TWC_Infantry_2020_Regular_Woodland_Sniper
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
 	Items[] =
 	{
@@ -301,7 +301,7 @@ class TWC_Infantry_2020_COIN_Woodland_Sniper: TWC_Infantry_2020_Regular_Woodland
 };
 class TWC_Infantry_2020_COIN_Woodland_Spotter: TWC_Infantry_2020_Regular_Woodland_Spotter
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Spotter";
 	Items[] =
@@ -323,7 +323,7 @@ class TWC_Infantry_2020_COIN_Woodland_Spotter: TWC_Infantry_2020_Regular_Woodlan
 //Artillery Crew
 class TWC_Infantry_2020_COIN_Woodland_Artillery_Commander: TWC_Infantry_2020_Regular_Woodland_Artillery_Commander
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Artillery_Commander";
 	Items[] =
 	{
@@ -340,7 +340,7 @@ class TWC_Infantry_2020_COIN_Woodland_Artillery_Commander: TWC_Infantry_2020_Reg
 };
 class TWC_Infantry_2020_COIN_Woodland_Artillery_Crew: TWC_Infantry_2020_Regular_Woodland_Artillery_Crew
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -356,7 +356,7 @@ class TWC_Infantry_2020_COIN_Woodland_Artillery_Crew: TWC_Infantry_2020_Regular_
 };
 class TWC_Infantry_2020_COIN_Woodland_FO: TWC_Infantry_2020_Regular_Woodland_FO
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_FO";
 	Items[] =
 	{
@@ -375,7 +375,7 @@ class TWC_Infantry_2020_COIN_Woodland_FO: TWC_Infantry_2020_Regular_Woodland_FO
 //Aircraft
 class TWC_Infantry_2020_COIN_Woodland_FAC: TWC_Infantry_2020_Regular_Woodland_FAC
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_FAC";
 	Items[] =
 	{
@@ -394,9 +394,9 @@ class TWC_Infantry_2020_COIN_Woodland_FAC: TWC_Infantry_2020_Regular_Woodland_FA
 //FVs
 class TWC_Infantry_2020_COIN_Woodland_Vehicle_Commander: TWC_Infantry_2020_Regular_Woodland_Vehicle_Commander
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 };
 class TWC_Infantry_2020_COIN_Woodland_Vehicle_Crew: TWC_Infantry_2020_Regular_Woodland_Vehicle_Crew
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Woodland)
 };

@@ -2,75 +2,75 @@
 //Section
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_Rifleman: TWC_Infantry_2020_COIN_Woodland_Rifleman
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Rifleman";
 };
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_Grenadier: TWC_Infantry_2020_COIN_Woodland_Grenadier
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Grenadier";
 };
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_MG: TWC_Infantry_2020_COIN_Woodland_MG
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_MG";
 };
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_Marksman: TWC_Infantry_2020_COIN_Woodland_Marksman
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Marksman";
 };
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_SectionCommander: TWC_Infantry_2020_COIN_Woodland_SectionCommander
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_SectionCommander";
 };
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_2iC: TWC_Infantry_2020_COIN_Woodland_2iC
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_2iC";
 };
 
 //Platoon
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_Platoon_Commander: TWC_Infantry_2020_COIN_Woodland_Platoon_Commander
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Platoon_Commander";
 };
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_Platoon_Sergeant: TWC_Infantry_2020_COIN_Woodland_Platoon_Sergeant
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Platoon_Sergeant";
 };
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_Platoon_Medic: TWC_Infantry_2020_COIN_Woodland_Platoon_Medic
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Platoon_Medic";
 };
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_Platoon_Mortar: TWC_Infantry_2020_COIN_Woodland_Platoon_Mortar
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Platoon_Mortar";
 };
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_CSM: TWC_Infantry_2020_COIN_Woodland_CSM
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Platoon_Sergeant";
 };
 
 //Company
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_Company_Commander: TWC_Infantry_2020_COIN_Woodland_Company_Commander
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Platoon_Commander";
 };
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_Company_2iC: TWC_Infantry_2020_COIN_Woodland_Company_2iC
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Platoon_Commander";
 };
 class TWC_Infantry_2020_COIN_Dismounted_Woodland_Company_Sergeant: TWC_Infantry_2020_COIN_Woodland_Company_Sergeant
 {
-	CATEGORY(TWC_Infantry_2020_COIN_Dismounted_Woodland)
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Platoon_Sergeant";
 };
