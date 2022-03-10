@@ -113,6 +113,78 @@ class TWC_Infantry_2020_COIN_Woodland_2iC: TWC_Infantry_2020_Regular_Woodland_2i
 		"ACE_MapTools"
 	};
 };
+class TWC_Infantry_2020_COIN_Woodland_LightCavCommander: TWC_Infantry_2020_COIN_Woodland_Rifleman
+{
+	displayName = "Light Cavalry Commander";
+	backpack = "TWC_Backpack_2020_Regular_Woodland_SectionCommander";
+	TWC_isCommandRole = 1;
+	linkedItems[] =
+	{
+		"mpx_virtus_taco2_p",
+		"mpx_cobra_visor",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"mpx_virtus_taco2_p",
+		"mpx_cobra_visor",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+
+};
+class TWC_Infantry_2020_COIN_Woodland_LightCavCrew: TWC_Infantry_2020_COIN_Woodland_Rifleman
+{
+	displayName = "Light Cavalry Crewman";
+	TWC_isCommandRole = 1;
+	linkedItems[] =
+	{
+		"mpx_virtus_taco_p",
+		"mpx_cobra_visor",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"mpx_virtus_taco2_p",
+		"mpx_cobra_visor",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools"
+	};
+};
 
 //Platoon
 class TWC_Infantry_2020_COIN_Woodland_Platoon_Commander: TWC_Infantry_2020_Regular_Woodland_Platoon_Commander

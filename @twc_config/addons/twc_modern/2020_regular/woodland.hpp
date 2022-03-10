@@ -325,7 +325,153 @@ class TWC_Infantry_2020_Regular_Woodland_2iC: TWC_Infantry_2020_Regular_Woodland
 		MAG_2("SmokeShell")
 	};
 };
-
+class TWC_Infantry_2020_Regular_Woodland_LightCavCommander: TWC_Infantry_2020_Regular_Woodland_Rifleman
+{
+	displayName = "Light Cavalry Commander";
+	backpack = "TWC_Backpack_2020_Regular_Woodland_SectionCommander";
+	TWC_isCommandRole = 1;
+	linkedItems[] =
+	{
+		"mpx_virtus_taco2_p",
+		"mpx_cobra_visor",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"mpx_virtus_taco2_p",
+		"mpx_cobra_visor",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	weapons[] =
+	{
+		"TWC_Weapon_L85A3_LDS",
+		"UK3CB_BAF_L131A1",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_L85A3_LDS",
+		"UK3CB_BAF_L131A1",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_5("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_556_30Rnd_T"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		MAG_2("SmokeShell")
+	};
+	respawnmagazines[] =
+	{
+		MAG_5("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_556_30Rnd_T"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		MAG_2("SmokeShell")
+	};
+	
+	nightItems[] = {
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"B_IR_Grenade",
+		"ACE_Flashlight_MX991",
+		"ACE_Flashlight_Maglite_ML300L"
+	};
+};
+class TWC_Infantry_2020_Regular_Woodland_LightCavCrew: TWC_Infantry_2020_Regular_Woodland_Rifleman
+{
+	displayName = "Light Cavalry Crewman";
+	TWC_isCommandRole = 1;
+	linkedItems[] =
+	{
+		"mpx_virtus_taco_p",
+		"mpx_cobra_visor",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"mpx_virtus_taco2_p",
+		"mpx_cobra_visor",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_MapTools"
+	};
+	weapons[] =
+	{
+		"TWC_Weapon_L85A3_LDS",
+		"UK3CB_BAF_L131A1",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_L85A3_LDS",
+		"UK3CB_BAF_L131A1",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_5("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_556_30Rnd_T"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		MAG_2("SmokeShell")
+	};
+	respawnmagazines[] =
+	{
+		MAG_5("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_556_30Rnd_T"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		MAG_2("SmokeShell")
+	};
+	
+	nightItems[] = {
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"B_IR_Grenade",
+		"ACE_Flashlight_MX991",
+		"ACE_Flashlight_Maglite_ML300L"
+	};
+};
 //Platoon
 class TWC_Infantry_2020_Regular_Woodland_Platoon_Commander: TWC_Infantry_2020_Regular_Woodland_SectionCommander
 {
@@ -851,6 +997,43 @@ class TWC_Infantry_2020_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_2020_Reg
 	{
 		MAG_3("UK3CB_BAF_556_30Rnd"),
 		MAG_2("SmokeShell")
+	};
+};
+class TWC_Infantry_2020_Regular_Woodland_UAVOp: TWC_Infantry_2020_Regular_Woodland_Rifleman
+{
+	displayName = "UAV Operator";
+	backpack = "B_UAV_01_backpack_F";
+	linkedItems[] =
+	{
+		"mpx_virtus_admin_p",
+		"mpx_cobra_patch",
+		"ItemCompass",
+		"B_UavTerminal",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"mpx_virtus_admin_p",
+		"mpx_cobra_patch",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	weapons[] =
+	{
+		"TWC_Weapon_L85A3_LDS",
+		"UK3CB_BAF_L131A1",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"TWC_Weapon_L85A3_LDS",
+		"UK3CB_BAF_L131A1",
+		"Throw",
+		"Put"
 	};
 };
 

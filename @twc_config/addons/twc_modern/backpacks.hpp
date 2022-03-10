@@ -16,6 +16,7 @@ class mpx_daysack5;
 class mpx_daysack7;
 class mpx_daysack8;
 class mpx_daysack10;
+class B_UAV_01_backpack_F;
 
 #include "2010_regular\backpacks.hpp"
 #include "2020_regular\backpacks.hpp"
