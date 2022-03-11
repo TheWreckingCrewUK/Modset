@@ -1,506 +1,157 @@
 //COIN, Arctic
 //Section
-class TWC_Infantry_2000_COIN_Arctic_Rifleman: TWC_Infantry_2000_Regular_Arctic_Rifleman
+class TWC_Infantry_2000_COIN_Arctic_Rifleman: TWC_Infantry_2000_COIN_Woodland_Rifleman
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_Marksman: TWC_Infantry_2000_Regular_Arctic_Marksman
+class TWC_Infantry_2000_COIN_Arctic_Marksman: TWC_Infantry_2000_COIN_Woodland_Marksman
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
-	weapons[]=
-	{
-		"TWC_Weapon_L86A2_SUSAT3D",
-		"UK3CB_BAF_AT4_CS_AT_Launcher",
-		"Throw",
-		"Put"
-	};
-	respawnweapons[]=
-	{
-		"TWC_Weapon_L86A2_SUSAT3D",
-		"UK3CB_BAF_AT4_CS_AT_Launcher",
-		"Throw",
-		"Put"
-	};
-	magazines[] =
-	{
-		MAG_4("UK3CB_BAF_556_30Rnd"),
-		MAG_3("UK3CB_BAF_556_30Rnd_T"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SmokeShell"
-	};
-	respawnmagazines[] =
-	{
-		MAG_4("UK3CB_BAF_556_30Rnd"),
-		MAG_3("UK3CB_BAF_556_30Rnd_T"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SmokeShell"
-	};
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_Grenadier: TWC_Infantry_2000_Regular_Arctic_Grenadier
+class TWC_Infantry_2000_COIN_Arctic_Grenadier: TWC_Infantry_2000_COIN_Woodland_Grenadier
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
-	weapons[]=
-	{
-		"TWC_Weapon_L85A2_UGL_HWS_SUSAT3D",
-		"ACE_VMH3",
-		"ACE_Vector",
-		"Throw",
-		"Put"
-	};
-	respawnweapons[] =
-	{
-		"TWC_Weapon_L85A2_UGL_HWS_SUSAT3D",
-		"ACE_VMH3",
-		"ACE_Vector",
-		"Throw",
-		"Put"
-	};
-	magazines[] =
-	{
-		MAG_7("UK3CB_BAF_556_30Rnd"),
-		MAG_10("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
-		MAG_4("1Rnd_Smoke_Grenade_shell"),
-		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
-		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
-		MAG_2("1Rnd_SmokeBlue_Grenade_shell"),
-		MAG_2("UK3CB_BAF_9_17Rnd"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		MAG_2("SmokeShell")
-	};
-	respawnmagazines[] =
-	{
-		MAG_7("UK3CB_BAF_556_30Rnd"),
-		MAG_10("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
-		MAG_4("1Rnd_Smoke_Grenade_shell"),
-		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
-		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
-		MAG_2("1Rnd_SmokeBlue_Grenade_shell"),
-		MAG_2("UK3CB_BAF_9_17Rnd"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		MAG_2("SmokeShell")
-	};
-	nightItems[] = {
-		"ACE_Flashlight_MX991",
-		"UGL_FlareWhite_F",
-		"UGL_FlareWhite_F",
-		"UGL_FlareWhite_F"
-	};
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_Autorifleman: TWC_Infantry_2000_Regular_Arctic_Autorifleman
+class TWC_Infantry_2000_COIN_Arctic_Autorifleman: TWC_Infantry_2000_COIN_Woodland_Autorifleman
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_SectionCommander: TWC_Infantry_2000_Regular_Arctic_SectionCommander
+class TWC_Infantry_2000_COIN_Arctic_SectionCommander: TWC_Infantry_2000_COIN_Woodland_SectionCommander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_SectionCommander";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_SectionCommander";
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_2iC: TWC_Infantry_2000_Regular_Arctic_2iC
+class TWC_Infantry_2000_COIN_Arctic_2iC: TWC_Infantry_2000_COIN_Woodland_2iC
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_2iC";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_2iC";
+	uniformClass = "TWC_Smock_Arctic";
 };
 
 //Platoon Command
-class TWC_Infantry_2000_COIN_Arctic_Platoon_Commander: TWC_Infantry_2000_Regular_Arctic_Platoon_Commander
+class TWC_Infantry_2000_COIN_Arctic_Platoon_Commander: TWC_Infantry_2000_COIN_Woodland_Platoon_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Commander";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Commander";
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_Platoon_Sergeant: TWC_Infantry_2000_Regular_Arctic_Platoon_Sergeant
+class TWC_Infantry_2000_COIN_Arctic_Platoon_Sergeant: TWC_Infantry_2000_COIN_Woodland_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Sergeant";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Sergeant";
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_Platoon_Medic: TWC_Infantry_2000_Regular_Arctic_Platoon_Medic
+class TWC_Infantry_2000_COIN_Arctic_Platoon_Medic: TWC_Infantry_2000_COIN_Woodland_Platoon_Medic
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Medic";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Medic";
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_Platoon_CSM: TWC_Infantry_2000_Regular_Arctic_Platoon_CSM
+class TWC_Infantry_2000_COIN_Arctic_Platoon_CSM: TWC_Infantry_2000_COIN_Woodland_Platoon_CSM
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Sergeant";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Sergeant";
+	uniformClass = "TWC_Smock_Arctic";
 };
 
 //Company
-class TWC_Infantry_2000_COIN_Arctic_Company_Commander: TWC_Infantry_2000_Regular_Arctic_Company_Commander
+class TWC_Infantry_2000_COIN_Arctic_Company_Commander: TWC_Infantry_2000_COIN_Woodland_Company_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Commander";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Commander";
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_Company_2iC: TWC_Infantry_2000_Regular_Arctic_Company_2iC
+class TWC_Infantry_2000_COIN_Arctic_Company_2iC: TWC_Infantry_2000_COIN_Woodland_Company_2iC
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Commander";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Commander";
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_Company_Sergeant: TWC_Infantry_2000_Regular_Arctic_Company_Sergeant
+class TWC_Infantry_2000_COIN_Arctic_Company_Sergeant: TWC_Infantry_2000_COIN_Woodland_Company_Sergeant
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Platoon_Sergeant";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Platoon_Sergeant";
+	uniformClass = "TWC_Smock_Arctic";
 };
 
 //AT
-class TWC_Infantry_2000_COIN_Arctic_Javelin_Gunner: TWC_Infantry_2000_Regular_Arctic_Javelin_Gunner
+class TWC_Infantry_2000_COIN_Arctic_Javelin_Gunner: TWC_Infantry_2000_COIN_Woodland_Javelin_Gunner
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_Javelin_Ass: TWC_Infantry_2000_Regular_Arctic_Javelin_Ass
+class TWC_Infantry_2000_COIN_Arctic_Javelin_Ass: TWC_Infantry_2000_COIN_Woodland_Javelin_Ass
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
+	uniformClass = "TWC_Smock_Arctic";
 };
 
 //Sniper Team
-class TWC_Infantry_2000_COIN_Arctic_Sniper: TWC_Infantry_2000_Regular_Arctic_Sniper
+class TWC_Infantry_2000_COIN_Arctic_Sniper: TWC_Infantry_2000_COIN_Woodland_Sniper
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools",
-		"ACE_Tripod",
-		"ACE_RangeCard"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools",
-		"ACE_Tripod",
-		"ACE_RangeCard"
-	};
 };
-class TWC_Infantry_2000_COIN_Arctic_Spotter: TWC_Infantry_2000_Regular_Arctic_Spotter
+class TWC_Infantry_2000_COIN_Arctic_Spotter: TWC_Infantry_2000_COIN_Woodland_Spotter
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Spotter";
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Spotter";
 	uniformClass = "TWC_Smock_Arctic";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools",
-		"ACE_Kestrel4500"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools",
-		"ACE_Kestrel4500"
-	};
 };
 
 //Artillery Crew
-class TWC_Infantry_2000_COIN_Arctic_Artillery_Commander: TWC_Infantry_2000_Regular_Arctic_Artillery_Commander
+class TWC_Infantry_2000_COIN_Arctic_Artillery_Commander: TWC_Infantry_2000_COIN_Woodland_Artillery_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_Artillery_Commander";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_Artillery_Commander";
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_Artillery_Crew: TWC_Infantry_2000_Regular_Arctic_Artillery_Crew
+class TWC_Infantry_2000_COIN_Arctic_Artillery_Crew: TWC_Infantry_2000_COIN_Woodland_Artillery_Crew
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_FO: TWC_Infantry_2000_Regular_Arctic_FO
+class TWC_Infantry_2000_COIN_Arctic_FO: TWC_Infantry_2000_COIN_Woodland_FO
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_FO";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_FO";
+	uniformClass = "TWC_Smock_Arctic";
 };
 
 //EOD Team
-class TWC_Infantry_2000_COIN_Arctic_EOD_Commander: TWC_Infantry_2000_Regular_Arctic_EOD_Commander
+class TWC_Infantry_2000_COIN_Arctic_EOD_Commander: TWC_Infantry_2000_COIN_Woodland_EOD_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_EOD_Commander";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_M26_Clacker",
-		"ACE_DefusalKit",
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_M26_Clacker",
-		"ACE_DefusalKit",
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_EOD_Commander";
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_EOD_Gunner: TWC_Infantry_2000_Regular_Arctic_EOD_Gunner
+class TWC_Infantry_2000_COIN_Arctic_EOD_Gunner: TWC_Infantry_2000_COIN_Woodland_EOD_Gunner
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_DefusalKit",
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_DefusalKit",
-		"ACE_MapTools"
-	};
+	uniformClass = "TWC_Smock_Arctic";
 };
 
 //Aircraft
-class TWC_Infantry_2000_COIN_Arctic_FAC: TWC_Infantry_2000_Regular_Arctic_FAC
+class TWC_Infantry_2000_COIN_Arctic_FAC: TWC_Infantry_2000_COIN_Woodland_FAC
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	backpack = "TWC_Backpack_2000_COIN_Arctic_FAC";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	backpack = "TWC_Backpack_2000_COIN_Woodland_FAC";
+	uniformClass = "TWC_Smock_Arctic";
 };
 
 //FVs
-class TWC_Infantry_2000_COIN_Arctic_Vehicle_Commander: TWC_Infantry_2000_Regular_Arctic_Vehicle_Commander
+class TWC_Infantry_2000_COIN_Arctic_Vehicle_Commander: TWC_Infantry_2000_COIN_Woodland_Vehicle_Commander
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_2000_COIN_Arctic_Vehicle_Crew: TWC_Infantry_2000_Regular_Arctic_Vehicle_Crew
+class TWC_Infantry_2000_COIN_Arctic_Vehicle_Crew: TWC_Infantry_2000_COIN_Woodland_Vehicle_Crew
 {
 	CATEGORY(TWC_Infantry_2000_COIN_Arctic)
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
-	};
+	uniformClass = "TWC_Smock_Arctic";
 };

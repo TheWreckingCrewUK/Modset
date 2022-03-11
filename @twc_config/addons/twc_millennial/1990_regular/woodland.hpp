@@ -46,8 +46,22 @@ class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_
 		"Throw",
 		"Put"
 	};
-	magazines[] += {"ukcw_law80_magazine", "ukcw_law80_magazine_spotting"};
-	respawnmagazines[] += {"ukcw_law80_magazine", "ukcw_law80_magazine_spotting"};
+	magazines[] =
+	{
+		MAG_7("UK3CB_BAF_556_30Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"ukcw_law80_magazine",
+		"ukcw_law80_magazine_spotting",
+		"SmokeShell"
+	};
+	respawnmagazines[] =
+	{
+		MAG_7("UK3CB_BAF_556_30Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		"ukcw_law80_magazine",
+		"ukcw_law80_magazine_spotting",
+		"SmokeShell"
+	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Gunner: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {

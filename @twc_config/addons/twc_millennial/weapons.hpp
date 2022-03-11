@@ -13,7 +13,7 @@ class TWC_Weapon_L86A1: UK3CB_BAF_L86A2 {
 class TWC_Weapon_L86A1_SUSAT3D: TWC_Weapon_L86A1 {
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot="asdg_OpticRail_UK3CB_BAF_L85";
+			slot="CowsSlot";
 			item="UK3CB_BAF_SUSAT_3D";
 		};
 	};
@@ -26,7 +26,7 @@ class TWC_Weapon_L85A1: UK3CB_BAF_L85A2 {
 class TWC_Weapon_L85A1_SUSAT3D: TWC_Weapon_L85A1 {
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot="asdg_OpticRail_UK3CB_BAF_L85";
+			slot="CowsSlot";
 			item="UK3CB_BAF_SUSAT_3D";
 		};
 	};
@@ -34,12 +34,12 @@ class TWC_Weapon_L85A1_SUSAT3D: TWC_Weapon_L85A1 {
 class TWC_Weapon_L85A1_SUSAT3D_Laser: TWC_Weapon_L85A1_SUSAT3D {
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot="asdg_OpticRail_UK3CB_BAF_L85";
+			slot="CowsSlot";
 			item="UK3CB_BAF_SUSAT_3D";
 		};
 
 		class LinkedItemsFrontSideRail {
-			slot="asdg_FrontSideRail_L85";
+			slot="PointerSlot";
 			item="UK3CB_BAF_LLM_Flashlight_Black";
 		};
 	};
@@ -49,7 +49,7 @@ class TWC_Weapon_L85A2_SUSAT3D: UK3CB_BAF_L85A2 {
 	author="Saxon";
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot="asdg_OpticRail_UK3CB_BAF_L85";
+			slot="CowsSlot";
 			item="UK3CB_BAF_SUSAT_3D";
 		};
 	};
@@ -59,7 +59,7 @@ class TWC_Weapon_L86A2_SUSAT3D: UK3CB_BAF_L86A2 {
 	author="Saxon";
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot="asdg_OpticRail_UK3CB_BAF_L85";
+			slot="CowsSlot";
 			item="UK3CB_BAF_SUSAT_3D";
 		};
 	};
@@ -69,7 +69,7 @@ class TWC_Weapon_L135A1: UK3CB_BAF_L135A1
 	scope = 1;
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot="asdg_OpticRail_rifles";
+			slot="CowsSlot";
 			item="RKSL_optic_PMII_525";
 		};
 	};	
@@ -78,7 +78,7 @@ class TWC_Weapon_L85A2_UGL_HWS_SUSAT3D: UK3CB_BAF_L85A2_UGL_HWS {
 	scope = 1;
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot="asdg_OpticRail_UK3CB_BAF_L85";
+			slot="CowsSlot";
 			item="UK3CB_BAF_SUSAT_3D";
 		};
 	};
@@ -87,7 +87,7 @@ class TWC_Weapon_L110A2_SUSAT3D: UK3CB_BAF_L110A2RIS {
 	scope = 1;
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot = "asdg_OpticRail_UK3CB_BAF_L110A2";
+			slot = "CowsSlot";
 			item="UK3CB_BAF_SUSAT_3D";
 		};
 
