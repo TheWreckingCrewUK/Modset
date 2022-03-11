@@ -1,6 +1,6 @@
 //REGULAR, WOODLAND
 //Section
-class TWC_Infantry_2010_Regular_Woodland_Rifleman: TWC_Infantry_2010_Base
+class TWC_Infantry_Modern_Regular_Woodland_Rifleman: TWC_Infantry_Modern_Base
 {
 	scope = 2;
 	displayName = "Rifleman";
@@ -31,7 +31,7 @@ class TWC_Infantry_2010_Regular_Woodland_Rifleman: TWC_Infantry_2010_Base
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_Grenadier: TWC_Infantry_2010_Regular_Woodland_Rifleman
+class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Grenadier";
 	linkedItems[] =
@@ -96,7 +96,7 @@ class TWC_Infantry_2010_Regular_Woodland_Grenadier: TWC_Infantry_2010_Regular_Wo
 		"ACE_Flashlight_Maglite_ML300L"
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_Autorifleman: TWC_Infantry_2010_Regular_Woodland_Rifleman
+class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Autorifleman";
 	linkedItems[] =
@@ -140,7 +140,7 @@ class TWC_Infantry_2010_Regular_Woodland_Autorifleman: TWC_Infantry_2010_Regular
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_MG: TWC_Infantry_2010_Regular_Woodland_Rifleman
+class TWC_Infantry_Modern_Regular_Woodland_MG: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Machine Gunner";
 	linkedItems[] =
@@ -184,7 +184,7 @@ class TWC_Infantry_2010_Regular_Woodland_MG: TWC_Infantry_2010_Regular_Woodland_
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_Marksman: TWC_Infantry_2010_Regular_Woodland_Rifleman
+class TWC_Infantry_Modern_Regular_Woodland_Marksman: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Marksman";
 	linkedItems[] =
@@ -239,10 +239,10 @@ class TWC_Infantry_2010_Regular_Woodland_Marksman: TWC_Infantry_2010_Regular_Woo
 		"UK3CB_BAF_MaxiKite"
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_SectionCommander: TWC_Infantry_2010_Regular_Woodland_Rifleman
+class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Section Commander";
-	backpack = "TWC_Backpack_2010_Regular_Woodland_SectionCommander";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_SectionCommander";
 	TWC_isCommandRole = 1;
 	linkedItems[] =
 	{
@@ -309,10 +309,10 @@ class TWC_Infantry_2010_Regular_Woodland_SectionCommander: TWC_Infantry_2010_Reg
 		"ACE_Flashlight_Maglite_ML300L"
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_2iC: TWC_Infantry_2010_Regular_Woodland_Rifleman
+class TWC_Infantry_Modern_Regular_Woodland_2iC: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "2iC";
-	backpack = "TWC_Backpack_2010_Regular_Woodland_2iC";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_2iC";
 	TWC_isCommandRole = 1;
 	weapons[] =
 	{
@@ -345,10 +345,10 @@ class TWC_Infantry_2010_Regular_Woodland_2iC: TWC_Infantry_2010_Regular_Woodland
 };
 
 //Platoon
-class TWC_Infantry_2010_Regular_Woodland_Platoon_Commander: TWC_Infantry_2010_Regular_Woodland_SectionCommander
+class TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander: TWC_Infantry_Modern_Regular_Woodland_SectionCommander
 {
 	displayName = "Platoon Commander";
-	backpack = "TWC_Backpack_2010_Regular_Woodland_Platoon_Commander";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Platoon_Commander";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_B",
@@ -380,15 +380,15 @@ class TWC_Infantry_2010_Regular_Woodland_Platoon_Commander: TWC_Infantry_2010_Re
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_2010_Regular_Woodland_Platoon_Commander
+class TWC_Infantry_Modern_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
 	displayName = "Platoon Sergeant";
-	backpack = "TWC_Backpack_2010_Regular_Woodland_Platoon_Sergeant";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Platoon_Sergeant";
 };
-class TWC_Infantry_2010_Regular_Woodland_Platoon_Medic: TWC_Infantry_2010_Regular_Woodland_Rifleman
+class TWC_Infantry_Modern_Regular_Woodland_Platoon_Medic: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Platoon Medic";
-	backpack = "TWC_Backpack_2010_Regular_Woodland_Platoon_Medic";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Platoon_Medic";
 	attendant = 1;
 	linkedItems[] =
 	{
@@ -429,10 +429,10 @@ class TWC_Infantry_2010_Regular_Woodland_Platoon_Medic: TWC_Infantry_2010_Regula
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_Platoon_Mortar: TWC_Infantry_2010_Regular_Woodland_Platoon_Sergeant
+class TWC_Infantry_Modern_Regular_Woodland_Platoon_Mortar: TWC_Infantry_Modern_Regular_Woodland_Platoon_Sergeant
 {
 	displayName = "Platoon Mortar";
-	backpack = "TWC_Backpack_2010_Regular_Woodland_Platoon_Mortar";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Platoon_Mortar";
 	TWC_isCommandRole = 0;
 	linkedItems[] =
 	{
@@ -486,7 +486,7 @@ class TWC_Infantry_2010_Regular_Woodland_Platoon_Mortar: TWC_Infantry_2010_Regul
 		"ACE_Flashlight_Maglite_ML300L"
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_CSM: TWC_Infantry_2010_Regular_Woodland_Platoon_Sergeant
+class TWC_Infantry_Modern_Regular_Woodland_CSM: TWC_Infantry_Modern_Regular_Woodland_Platoon_Sergeant
 {
 	displayName = "Company Sergeant Major";
 	scope = 1;
@@ -495,21 +495,21 @@ class TWC_Infantry_2010_Regular_Woodland_CSM: TWC_Infantry_2010_Regular_Woodland
 };
 
 //Company
-class TWC_Infantry_2010_Regular_Woodland_Company_Commander: TWC_Infantry_2010_Regular_Woodland_Platoon_Commander
+class TWC_Infantry_Modern_Regular_Woodland_Company_Commander: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
 	displayName = "Company Commander";
 };
-class TWC_Infantry_2010_Regular_Woodland_Company_2iC: TWC_Infantry_2010_Regular_Woodland_Platoon_Commander
+class TWC_Infantry_Modern_Regular_Woodland_Company_2iC: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
 	displayName = "Company 2iC";
 };
-class TWC_Infantry_2010_Regular_Woodland_Company_Sergeant: TWC_Infantry_2010_Regular_Woodland_CSM
+class TWC_Infantry_Modern_Regular_Woodland_Company_Sergeant: TWC_Infantry_Modern_Regular_Woodland_CSM
 {
 	scope = 2;
 };
 
 //AT + AA
-class TWC_Infantry_2010_Regular_Woodland_Javelin_Gunner: TWC_Infantry_2010_Regular_Woodland_Rifleman
+class TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Javelin Gunner";
 	weapons[] =
@@ -539,10 +539,10 @@ class TWC_Infantry_2010_Regular_Woodland_Javelin_Gunner: TWC_Infantry_2010_Regul
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_Javelin_Ass: TWC_Infantry_2010_Regular_Woodland_Javelin_Gunner
+class TWC_Infantry_Modern_Regular_Woodland_Javelin_Ass: TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner
 {
 	displayName = "Javelin Assistant";
-	backpack = "TWC_Backpack_2010_Regular_Woodland_Javelin_Assistant";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Javelin_Assistant";
 	weapons[] =
 	{
 		"TWC_Weapon_L85A2_RIS_ELCAN3D",
@@ -558,17 +558,17 @@ class TWC_Infantry_2010_Regular_Woodland_Javelin_Ass: TWC_Infantry_2010_Regular_
 		"Put"
 	};
 };
-/*class TWC_Infantry_2010_Regular_Woodland_Starstreak_Gunner: TWC_Infantry_2010_Regular_Woodland_Javelin_Gunner
+/*class TWC_Infantry_Modern_Regular_Woodland_Starstreak_Gunner: TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner
 {
 	displayName = "Starstreak Gunner";
 };
-class TWC_Infantry_2010_Regular_Woodland_Starstreak_Ass: TWC_Infantry_2010_Regular_Woodland_Starstreak_Gunner
+class TWC_Infantry_Modern_Regular_Woodland_Starstreak_Ass: TWC_Infantry_Modern_Regular_Woodland_Starstreak_Gunner
 {
 	displayName = "Starstreak Assistant";
 };*/
 
 //Sniper Team
-class TWC_Infantry_2010_Regular_Woodland_Sniper: TWC_Infantry_2010_Regular_Woodland_Rifleman
+class TWC_Infantry_Modern_Regular_Woodland_Sniper: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Sniper";
 	uniformClass = "UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM";
@@ -624,10 +624,10 @@ class TWC_Infantry_2010_Regular_Woodland_Sniper: TWC_Infantry_2010_Regular_Woodl
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_Spotter: TWC_Infantry_2010_Regular_Woodland_Sniper
+class TWC_Infantry_Modern_Regular_Woodland_Spotter: TWC_Infantry_Modern_Regular_Woodland_Sniper
 {
 	displayName = "Spotter";
-	backpack = "TWC_Backpack_2010_Regular_Woodland_Spotter";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Spotter";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_MTP",
@@ -693,12 +693,12 @@ class TWC_Infantry_2010_Regular_Woodland_Spotter: TWC_Infantry_2010_Regular_Wood
 };
 
 //Artillery Crew
-class TWC_Infantry_2010_Regular_Woodland_Artillery_Commander: TWC_Infantry_2010_Regular_Woodland_Platoon_Commander
+class TWC_Infantry_Modern_Regular_Woodland_Artillery_Commander: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
 	displayName = "Artillery Commander";
-	backpack = "TWC_Backpack_2010_Regular_Woodland_Artillery_Commander";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Artillery_Commander";
 };
-class TWC_Infantry_2010_Regular_Woodland_Artillery_Crew: TWC_Infantry_2010_Regular_Woodland_Artillery_Commander
+class TWC_Infantry_Modern_Regular_Woodland_Artillery_Crew: TWC_Infantry_Modern_Regular_Woodland_Artillery_Commander
 {
 	displayName = "Artillery Crew";
 	backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
@@ -732,18 +732,18 @@ class TWC_Infantry_2010_Regular_Woodland_Artillery_Crew: TWC_Infantry_2010_Regul
 		"Put"
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_FO: TWC_Infantry_2010_Regular_Woodland_Platoon_Commander
+class TWC_Infantry_Modern_Regular_Woodland_FO: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
 	displayName = "Forward Observer";
-	backpack = "TWC_Backpack_2010_Regular_Woodland_FO";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_FO";
 	TWC_isCommandRole = 0;
 };
 
 //Aircraft
-class TWC_Infantry_2010_Regular_Woodland_FAC: TWC_Infantry_2010_Regular_Woodland_Platoon_Commander
+class TWC_Infantry_Modern_Regular_Woodland_FAC: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
 	displayName = "Forward Air Controller";
-	backpack = "TWC_Backpack_2010_Regular_Woodland_FAC";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_FAC";
 	TWC_isCommandRole = 0;
 	weapons[] =
 	{
@@ -785,7 +785,7 @@ class TWC_Infantry_2010_Regular_Woodland_FAC: TWC_Infantry_2010_Regular_Woodland
 		"B_IR_Grenade"
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_2010_Regular_Woodland_Rifleman
+class TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Helicopter Pilot";
 	TWC_isCommandRole = 1;
@@ -833,7 +833,7 @@ class TWC_Infantry_2010_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_2010_Reg
 };
 
 //FVs
-class TWC_Infantry_2010_Regular_Woodland_Vehicle_Commander: TWC_Infantry_2010_Regular_Woodland_Helicopter_Pilot
+class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Commander: TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot
 {
 	displayName = "Vehicle Commander";
 	linkedItems[] =
@@ -869,7 +869,7 @@ class TWC_Infantry_2010_Regular_Woodland_Vehicle_Commander: TWC_Infantry_2010_Re
 		"Put"
 	};
 };
-class TWC_Infantry_2010_Regular_Woodland_Vehicle_Crew: TWC_Infantry_2010_Regular_Woodland_Vehicle_Commander
+class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Crew: TWC_Infantry_Modern_Regular_Woodland_Vehicle_Commander
 {
 	displayName = "Vehicle Crew";
 	TWC_isCommandRole = 0;

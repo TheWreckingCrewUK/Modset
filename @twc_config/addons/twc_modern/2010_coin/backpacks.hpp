@@ -1,6 +1,6 @@
 //WOODLAND, COIN
 //Section
-class TWC_Backpack_2010_Regular_Woodland_Pointman: UK3CB_BAF_B_Bergen_MTP_PointMan_L_A
+class TWC_Backpack_Modern_Regular_Woodland_Pointman: UK3CB_BAF_B_Bergen_MTP_PointMan_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -12,7 +12,7 @@ class TWC_Backpack_2010_Regular_Woodland_Pointman: UK3CB_BAF_B_Bergen_MTP_PointM
 		ADD_WEAP(TWC_L128A1_Eotech,1);
 	};
 };
-class TWC_Backpack_2010_COIN_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
+class TWC_Backpack_Modern_COIN_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -25,7 +25,7 @@ class TWC_Backpack_2010_COIN_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_MTP_S
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_2010_COIN_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
+class TWC_Backpack_Modern_COIN_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -39,7 +39,7 @@ class TWC_Backpack_2010_COIN_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 };
 
 //Platoon Command
-class TWC_Backpack_2010_COIN_Woodland_Platoon_Commander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
+class TWC_Backpack_Modern_COIN_Woodland_Platoon_Commander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -52,7 +52,7 @@ class TWC_Backpack_2010_COIN_Woodland_Platoon_Commander: UK3CB_BAF_B_Bergen_MTP_
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_2010_COIN_Woodland_Platoon_Sergeant: UK3CB_BAF_B_Bergen_MTP_SL_L_A
+class TWC_Backpack_Modern_COIN_Woodland_Platoon_Sergeant: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -68,7 +68,7 @@ class TWC_Backpack_2010_COIN_Woodland_Platoon_Sergeant: UK3CB_BAF_B_Bergen_MTP_S
 		ADD_MAGA(SmokeShell, 4);
 	};
 };
-class TWC_Backpack_2010_COIN_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP_Medic_L_A
+class TWC_Backpack_Modern_COIN_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP_Medic_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -87,7 +87,7 @@ class TWC_Backpack_2010_COIN_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP_Medi
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
 	};
 };
-class TWC_Backpack_2010_COIN_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
+class TWC_Backpack_Modern_COIN_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -98,7 +98,7 @@ class TWC_Backpack_2010_COIN_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rif
 };
 
 //Attachments
-class TWC_Backpack_2010_COIN_Woodland_Javelin_Assistant: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
+class TWC_Backpack_Modern_COIN_Woodland_Javelin_Assistant: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -107,13 +107,13 @@ class TWC_Backpack_2010_COIN_Woodland_Javelin_Assistant: UK3CB_BAF_B_Bergen_MTP_
 		ADD_WEAP(UK3CB_BAF_Javelin_Slung_Tube,1);
 	};
 };
-/*class TWC_Backpack_2010_COIN_Woodland_Starstreak_Assistant: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
+/*class TWC_Backpack_Modern_COIN_Woodland_Starstreak_Assistant: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
 {
 	scope = 1;
 	scopeArsenal = 1;
 	maximumLoad = 600;
 };*/
-class TWC_Backpack_2010_COIN_Woodland_Spotter: UK3CB_BAF_B_Bergen_MTP_SL_L_A
+class TWC_Backpack_Modern_COIN_Woodland_Spotter: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -128,7 +128,7 @@ class TWC_Backpack_2010_COIN_Woodland_Spotter: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_2010_COIN_Woodland_Artillery_Commander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
+class TWC_Backpack_Modern_COIN_Woodland_Artillery_Commander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -136,7 +136,7 @@ class TWC_Backpack_2010_COIN_Woodland_Artillery_Commander: UK3CB_BAF_B_Bergen_MT
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
 };
-class TWC_Backpack_2010_COIN_Woodland_FO: UK3CB_BAF_B_Bergen_MTP_SL_L_A
+class TWC_Backpack_Modern_COIN_Woodland_FO: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -145,7 +145,7 @@ class TWC_Backpack_2010_COIN_Woodland_FO: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 		ADD_ITEM(ACE_DAGR,1);
 	};
 };
-class TWC_Backpack_2010_COIN_Woodland_FAC: UK3CB_BAF_B_Bergen_MTP_JTAC_H_A
+class TWC_Backpack_Modern_COIN_Woodland_FAC: UK3CB_BAF_B_Bergen_MTP_JTAC_H_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -165,7 +165,7 @@ class TWC_Backpack_2010_COIN_Woodland_FAC: UK3CB_BAF_B_Bergen_MTP_JTAC_H_A
 
 //WOODLAND, COIN, DISMOUNTED
 //Section
-class TWC_Backpack_2010_COIN_Dismounted_Woodland_Pointman: UK3CB_BAF_B_Bergen_MTP_PointMan_L_A
+class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Pointman: UK3CB_BAF_B_Bergen_MTP_PointMan_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -178,7 +178,7 @@ class TWC_Backpack_2010_COIN_Dismounted_Woodland_Pointman: UK3CB_BAF_B_Bergen_MT
 		ADD_WEAP(TWC_L128A1_Eotech,1);
 	};
 };
-class TWC_Backpack_2010_COIN_Dismounted_Woodland_Grenadier: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
+class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Grenadier: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -190,7 +190,7 @@ class TWC_Backpack_2010_COIN_Dismounted_Woodland_Grenadier: UK3CB_BAF_B_Bergen_M
 		ADD_MAGA(1Rnd_SmokeBlue_Grenade_shell,2);
 	};
 };
-class TWC_Backpack_2010_COIN_Dismounted_Woodland_Autorifleman: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
+class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Autorifleman: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -199,7 +199,7 @@ class TWC_Backpack_2010_COIN_Dismounted_Woodland_Autorifleman: UK3CB_BAF_B_Berge
 		ADD_MAGA(UK3CB_BAF_556_200Rnd_T,1);
 	};
 };
-class TWC_Backpack_2010_COIN_Dismounted_Woodland_MG: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
+class TWC_Backpack_Modern_COIN_Dismounted_Woodland_MG: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -208,7 +208,7 @@ class TWC_Backpack_2010_COIN_Dismounted_Woodland_MG: UK3CB_BAF_B_Bergen_MTP_Rifl
 		ADD_MAGA(UK3CB_BAF_762_100Rnd_T,1);
 	};
 };
-class TWC_Backpack_2010_COIN_Dismounted_Woodland_Marksman: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
+class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Marksman: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -217,7 +217,7 @@ class TWC_Backpack_2010_COIN_Dismounted_Woodland_Marksman: UK3CB_BAF_B_Bergen_MT
 		ADD_MAGA(UK3CB_BAF_762_L42A1_20Rnd_T,3);
 	};
 };
-class TWC_Backpack_2010_COIN_Dismounted_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
+class TWC_Backpack_Modern_COIN_Dismounted_Woodland_SectionCommander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -231,7 +231,7 @@ class TWC_Backpack_2010_COIN_Dismounted_Woodland_SectionCommander: UK3CB_BAF_B_B
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_2010_COIN_Dismounted_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
+class TWC_Backpack_Modern_COIN_Dismounted_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -246,7 +246,7 @@ class TWC_Backpack_2010_COIN_Dismounted_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rif
 };
 
 //Platoon Command
-class TWC_Backpack_2010_COIN_Dismounted_Woodland_Platoon_Commander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
+class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Platoon_Commander: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -261,7 +261,7 @@ class TWC_Backpack_2010_COIN_Dismounted_Woodland_Platoon_Commander: UK3CB_BAF_B_
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_2010_COIN_Dismounted_Woodland_Platoon_Sergeant: UK3CB_BAF_B_Bergen_MTP_SL_L_A
+class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Platoon_Sergeant: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -277,7 +277,7 @@ class TWC_Backpack_2010_COIN_Dismounted_Woodland_Platoon_Sergeant: UK3CB_BAF_B_B
 		ADD_MAGA(SmokeShell, 4);
 	};
 };
-class TWC_Backpack_2010_COIN_Dismounted_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP_Medic_L_A
+class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP_Medic_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -296,7 +296,7 @@ class TWC_Backpack_2010_COIN_Dismounted_Woodland_Platoon_Medic: UK3CB_BAF_B_Berg
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
 	};
 };
-class TWC_Backpack_2010_COIN_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
+class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
 {
 	scope = 1;
 	scopeArsenal = 1;

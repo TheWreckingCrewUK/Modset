@@ -44,7 +44,7 @@ class CfgVehicles
 			vehicleClass = a;
 
 	//GENERIC
-	class TWC_Infantry_2010_Base: B_Soldier_base_F {
+	class TWC_Infantry_Modern_Base: B_Soldier_base_F {
 		scope = 1;
 		displayName = "Base (2010)";
 		faction = "TWC_Modern";
@@ -166,7 +166,7 @@ class CfgVehicles
 			"twc_nightvision_gen3"
 		};
 	};
-	class TWC_Infantry_Modern_Plane_Pilot: TWC_Infantry_2010_Base
+	class TWC_Infantry_Modern_Plane_Pilot: TWC_Infantry_Modern_Base
 	{
 		scope = 2;
 		displayName = "Jet Pilot";
@@ -222,7 +222,7 @@ class CfgVehicles
 			"SmokeShell"
 		};
 	};
-	class TWC_Infantry_Modern_Tank_Commander: TWC_Infantry_2010_Base
+	class TWC_Infantry_Modern_Tank_Commander: TWC_Infantry_Modern_Base
 	{
 		scope = 2;
 		displayName = "Tank Commander";

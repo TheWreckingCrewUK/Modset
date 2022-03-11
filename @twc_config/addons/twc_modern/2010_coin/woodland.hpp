@@ -1,10 +1,10 @@
 //COIN, WOODLAND
 //Section
-class TWC_Infantry_2010_COIN_Woodland_Pointman: TWC_Infantry_2010_Regular_Woodland_Rifleman
+class TWC_Infantry_Modern_COIN_Woodland_Pointman: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Pointman";
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_Regular_Woodland_Pointman";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Pointman";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -32,7 +32,7 @@ class TWC_Infantry_2010_COIN_Woodland_Pointman: TWC_Infantry_2010_Regular_Woodla
 		"Put"
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Grenadier: TWC_Infantry_2010_Regular_Woodland_Grenadier
+class TWC_Infantry_Modern_COIN_Woodland_Grenadier: TWC_Infantry_Modern_Regular_Woodland_Grenadier
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	Items[] =
@@ -95,7 +95,7 @@ class TWC_Infantry_2010_COIN_Woodland_Grenadier: TWC_Infantry_2010_Regular_Woodl
 		"UGL_FlareWhite_F"
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Autorifleman: TWC_Infantry_2010_Regular_Woodland_Autorifleman
+class TWC_Infantry_Modern_COIN_Woodland_Autorifleman: TWC_Infantry_Modern_Regular_Woodland_Autorifleman
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	linkedItems[] =
@@ -153,7 +153,7 @@ class TWC_Infantry_2010_COIN_Woodland_Autorifleman: TWC_Infantry_2010_Regular_Wo
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_MG: TWC_Infantry_2010_Regular_Woodland_MG
+class TWC_Infantry_Modern_COIN_Woodland_MG: TWC_Infantry_Modern_Regular_Woodland_MG
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	linkedItems[] =
@@ -211,7 +211,7 @@ class TWC_Infantry_2010_COIN_Woodland_MG: TWC_Infantry_2010_Regular_Woodland_MG
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Marksman: TWC_Infantry_2010_Regular_Woodland_Marksman
+class TWC_Infantry_Modern_COIN_Woodland_Marksman: TWC_Infantry_Modern_Regular_Woodland_Marksman
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	Items[] =
@@ -257,10 +257,10 @@ class TWC_Infantry_2010_COIN_Woodland_Marksman: TWC_Infantry_2010_Regular_Woodla
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_SectionCommander: TWC_Infantry_2010_Regular_Woodland_SectionCommander
+class TWC_Infantry_Modern_COIN_Woodland_SectionCommander: TWC_Infantry_Modern_Regular_Woodland_SectionCommander
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_SectionCommander";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_SectionCommander";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_D",
@@ -324,10 +324,10 @@ class TWC_Infantry_2010_COIN_Woodland_SectionCommander: TWC_Infantry_2010_Regula
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_2iC: TWC_Infantry_2010_Regular_Woodland_2iC
+class TWC_Infantry_Modern_COIN_Woodland_2iC: TWC_Infantry_Modern_Regular_Woodland_2iC
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_2iC";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_2iC";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_Rifleman_B",
@@ -391,10 +391,10 @@ class TWC_Infantry_2010_COIN_Woodland_2iC: TWC_Infantry_2010_Regular_Woodland_2i
 };
 
 //Platoon
-class TWC_Infantry_2010_COIN_Woodland_Platoon_Commander: TWC_Infantry_2010_Regular_Woodland_Platoon_Commander
+class TWC_Infantry_Modern_COIN_Woodland_Platoon_Commander: TWC_Infantry_Modern_Regular_Woodland_Platoon_Commander
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_Platoon_Commander";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Commander";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_D",
@@ -456,10 +456,10 @@ class TWC_Infantry_2010_COIN_Woodland_Platoon_Commander: TWC_Infantry_2010_Regul
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Platoon_Sergeant: TWC_Infantry_2010_Regular_Woodland_Platoon_Sergeant
+class TWC_Infantry_Modern_COIN_Woodland_Platoon_Sergeant: TWC_Infantry_Modern_Regular_Woodland_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_Platoon_Sergeant";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Sergeant";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_D",
@@ -521,10 +521,10 @@ class TWC_Infantry_2010_COIN_Woodland_Platoon_Sergeant: TWC_Infantry_2010_Regula
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Platoon_Medic: TWC_Infantry_2010_Regular_Woodland_Platoon_Medic
+class TWC_Infantry_Modern_COIN_Woodland_Platoon_Medic: TWC_Infantry_Modern_Regular_Woodland_Platoon_Medic
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_Platoon_Medic";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Medic";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -562,10 +562,10 @@ class TWC_Infantry_2010_COIN_Woodland_Platoon_Medic: TWC_Infantry_2010_Regular_W
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Platoon_Mortar: TWC_Infantry_2010_Regular_Woodland_Platoon_Mortar
+class TWC_Infantry_Modern_COIN_Woodland_Platoon_Mortar: TWC_Infantry_Modern_Regular_Woodland_Platoon_Mortar
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_Platoon_Mortar";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Mortar";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_Rifleman_B",
@@ -627,10 +627,10 @@ class TWC_Infantry_2010_COIN_Woodland_Platoon_Mortar: TWC_Infantry_2010_Regular_
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_CSM: TWC_Infantry_2010_Regular_Woodland_CSM
+class TWC_Infantry_Modern_COIN_Woodland_CSM: TWC_Infantry_Modern_Regular_Woodland_CSM
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_Platoon_Sergeant";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Sergeant";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_D",
@@ -694,10 +694,10 @@ class TWC_Infantry_2010_COIN_Woodland_CSM: TWC_Infantry_2010_Regular_Woodland_CS
 };
 
 //Company
-class TWC_Infantry_2010_COIN_Woodland_Company_Commander: TWC_Infantry_2010_Regular_Woodland_Company_Commander
+class TWC_Infantry_Modern_COIN_Woodland_Company_Commander: TWC_Infantry_Modern_Regular_Woodland_Company_Commander
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_Platoon_Commander";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Commander";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_D",
@@ -759,10 +759,10 @@ class TWC_Infantry_2010_COIN_Woodland_Company_Commander: TWC_Infantry_2010_Regul
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Company_2iC: TWC_Infantry_2010_Regular_Woodland_Company_2iC
+class TWC_Infantry_Modern_COIN_Woodland_Company_2iC: TWC_Infantry_Modern_Regular_Woodland_Company_2iC
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_Platoon_Commander";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Commander";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_D",
@@ -824,10 +824,10 @@ class TWC_Infantry_2010_COIN_Woodland_Company_2iC: TWC_Infantry_2010_Regular_Woo
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Company_Sergeant: TWC_Infantry_2010_Regular_Woodland_Company_Sergeant
+class TWC_Infantry_Modern_COIN_Woodland_Company_Sergeant: TWC_Infantry_Modern_Regular_Woodland_Company_Sergeant
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_Platoon_Sergeant";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Sergeant";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_D",
@@ -891,7 +891,7 @@ class TWC_Infantry_2010_COIN_Woodland_Company_Sergeant: TWC_Infantry_2010_Regula
 };
 
 //AT
-class TWC_Infantry_2010_COIN_Woodland_Javelin_Gunner: TWC_Infantry_2010_Regular_Woodland_Javelin_Gunner
+class TWC_Infantry_Modern_COIN_Woodland_Javelin_Gunner: TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	linkedItems[] =
@@ -951,10 +951,10 @@ class TWC_Infantry_2010_COIN_Woodland_Javelin_Gunner: TWC_Infantry_2010_Regular_
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Javelin_Ass: TWC_Infantry_2010_Regular_Woodland_Javelin_Ass
+class TWC_Infantry_Modern_COIN_Woodland_Javelin_Ass: TWC_Infantry_Modern_Regular_Woodland_Javelin_Ass
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_Javelin_Assistant";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Javelin_Assistant";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_Rifleman_B",
@@ -1012,7 +1012,7 @@ class TWC_Infantry_2010_COIN_Woodland_Javelin_Ass: TWC_Infantry_2010_Regular_Woo
 };
 
 //Sniper Team
-class TWC_Infantry_2010_COIN_Woodland_Sniper: TWC_Infantry_2010_Regular_Woodland_Sniper
+class TWC_Infantry_Modern_COIN_Woodland_Sniper: TWC_Infantry_Modern_Regular_Woodland_Sniper
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
@@ -1043,11 +1043,11 @@ class TWC_Infantry_2010_COIN_Woodland_Sniper: TWC_Infantry_2010_Regular_Woodland
 		"ItemWatch"
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Spotter: TWC_Infantry_2010_Regular_Woodland_Spotter
+class TWC_Infantry_Modern_COIN_Woodland_Spotter: TWC_Infantry_Modern_Regular_Woodland_Spotter
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
-	backpack = "TWC_Backpack_2010_COIN_Woodland_Spotter";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Spotter";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -1081,10 +1081,10 @@ class TWC_Infantry_2010_COIN_Woodland_Spotter: TWC_Infantry_2010_Regular_Woodlan
 };
 
 //Artillery Crew
-class TWC_Infantry_2010_COIN_Woodland_Artillery_Commander: TWC_Infantry_2010_Regular_Woodland_Artillery_Commander
+class TWC_Infantry_Modern_COIN_Woodland_Artillery_Commander: TWC_Infantry_Modern_Regular_Woodland_Artillery_Commander
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_Artillery_Commander";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_Artillery_Commander";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_D",
@@ -1146,7 +1146,7 @@ class TWC_Infantry_2010_COIN_Woodland_Artillery_Commander: TWC_Infantry_2010_Reg
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Artillery_Crew: TWC_Infantry_2010_Regular_Woodland_Artillery_Crew
+class TWC_Infantry_Modern_COIN_Woodland_Artillery_Crew: TWC_Infantry_Modern_Regular_Woodland_Artillery_Crew
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D";
@@ -1207,10 +1207,10 @@ class TWC_Infantry_2010_COIN_Woodland_Artillery_Crew: TWC_Infantry_2010_Regular_
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_FO: TWC_Infantry_2010_Regular_Woodland_FO
+class TWC_Infantry_Modern_COIN_Woodland_FO: TWC_Infantry_Modern_Regular_Woodland_FO
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_FO";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_FO";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_D",
@@ -1274,10 +1274,10 @@ class TWC_Infantry_2010_COIN_Woodland_FO: TWC_Infantry_2010_Regular_Woodland_FO
 };
 
 //Aircraft
-class TWC_Infantry_2010_COIN_Woodland_FAC: TWC_Infantry_2010_Regular_Woodland_FAC
+class TWC_Infantry_Modern_COIN_Woodland_FAC: TWC_Infantry_Modern_Regular_Woodland_FAC
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2010_COIN_Woodland_FAC";
+	backpack = "TWC_Backpack_Modern_COIN_Woodland_FAC";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey_SL_D",
@@ -1347,7 +1347,7 @@ class TWC_Infantry_2010_COIN_Woodland_FAC: TWC_Infantry_2010_Regular_Woodland_FA
 };
 
 //FVs
-class TWC_Infantry_2010_COIN_Woodland_Vehicle_Commander: TWC_Infantry_2010_Regular_Woodland_Vehicle_Commander
+class TWC_Infantry_Modern_COIN_Woodland_Vehicle_Commander: TWC_Infantry_Modern_Regular_Woodland_Vehicle_Commander
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	linkedItems[] =
@@ -1397,7 +1397,7 @@ class TWC_Infantry_2010_COIN_Woodland_Vehicle_Commander: TWC_Infantry_2010_Regul
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2010_COIN_Woodland_Vehicle_Crew: TWC_Infantry_2010_Regular_Woodland_Vehicle_Crew
+class TWC_Infantry_Modern_COIN_Woodland_Vehicle_Crew: TWC_Infantry_Modern_Regular_Woodland_Vehicle_Crew
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	linkedItems[] =

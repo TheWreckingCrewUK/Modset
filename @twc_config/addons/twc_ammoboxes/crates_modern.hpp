@@ -2,14 +2,14 @@
 	"TWC_AmmoBox_2020_Section_Portable",
 	"TWC_AmmoBox_2020_COIN_Section_Portable",
 	"TWC_AmmoBox_2020_Mechanised_Section_Portable",
-	"TWC_AmmoBox_2010_Section_Portable",
-	"TWC_AmmoBox_2010_COIN_Section_Portable",
-	"TWC_AmmoBox_2010_Mechanised_Section_Portable",
+	"TWC_AmmoBox_Modern_Section_Portable",
+	"TWC_AmmoBox_Modern_COIN_Section_Portable",
+	"TWC_AmmoBox_Modern_Mechanised_Section_Portable",
 	"TWC_AmmoBox_Modern_Javelin_Portable",
 	"TWC_AmmoBox_Modern_Sniper_Portable",
 	"TWC_AmmoBox_Modern_M6_Portable"
 */
-class TWC_AmmoBox_2010_Section_Portable: TWC_AmmoBox_Portable {
+class TWC_AmmoBox_Modern_Section_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "2010s Section Resupply (Portable)";
@@ -67,7 +67,7 @@ class TWC_AmmoBox_2010_Section_Portable: TWC_AmmoBox_Portable {
 	};
 };
 
-class TWC_AmmoBox_2010_COIN_Section_Portable: TWC_AmmoBox_Portable {
+class TWC_AmmoBox_Modern_COIN_Section_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "2010s COIN Section Resupply (Portable)";
@@ -132,7 +132,7 @@ class TWC_AmmoBox_2010_COIN_Section_Portable: TWC_AmmoBox_Portable {
 	};
 };
 
-class TWC_AmmoBox_2010_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
+class TWC_AmmoBox_Modern_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "2010s Mechanised Section Resupply (Portable)";
