@@ -191,7 +191,15 @@ class CfgPatches {
 			"Taliban_AutoRifleman",
 			"Taliban_MachineGunner",
 			"Taliban_RiflemanAT",
-			"Taliban_Marksman"
+			"Taliban_Marksman",
+			"CI_Rifleman",
+			"CI_SMG",
+			"CI_Rifleman_G3",
+			"CI_Shotgunner",
+			"CI_AutoRifleman",
+			"CI_Machinegunner",
+			"MTF_P90",
+			"MTF_HK416"
 			
 		};
 		
@@ -204,7 +212,8 @@ class CfgPatches {
 			"A3_Characters_F",
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
-			"CUP_Creatures_People_LoadOrder"
+			"CUP_Creatures_People_LoadOrder",
+			"twc_millennial"
 		};
 	};
 };
@@ -354,6 +363,7 @@ class CfgVehicles {
 	#include "units\Takistani_Army.hpp"
 	#include "units\burmese_insurgents.hpp"
 	#include "units\taliban.hpp"
+	//#include "units\SCP.hpp"
 };
 
 #include "CfgMarkers.hpp"

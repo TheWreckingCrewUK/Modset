@@ -282,12 +282,14 @@ class CfgVehicles
 		weapons[] =
 		{
 			"TWC_Weapon_L85A1",
+			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
 			"TWC_Weapon_L85A1",
+			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
@@ -306,6 +308,18 @@ class CfgVehicles
 	{
 		displayName = "Tank Crew 1990s";
 		TWC_isCommandRole = 0;
+		weapons[] =
+		{
+			"TWC_Weapon_L85A1",
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"TWC_Weapon_L85A1",
+			"Throw",
+			"Put"
+		};
 	};
 	class TWC_Infantry_2000_Tank_Commander: TWC_Infantry_Millennial_Base
 	{
@@ -345,12 +359,14 @@ class CfgVehicles
 		weapons[] =
 		{
 			"UK3CB_BAF_L22",
+			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
 			"UK3CB_BAF_L22",
+			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
@@ -369,6 +385,18 @@ class CfgVehicles
 	{
 		displayName = "Tank Crew 2000s";
 		TWC_isCommandRole = 0;
+		weapons[] =
+		{
+			"UK3CB_BAF_L22",
+			"Throw",
+			"Put"
+		};
+		respawnweapons[] =
+		{
+			"UK3CB_BAF_L22",
+			"Throw",
+			"Put"
+		};
 	};
 	
 	#include "1990_regular\woodland.hpp"

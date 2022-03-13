@@ -84,6 +84,32 @@ class TWC_Infantry_ColdWar_Malay_Marksman: TWC_Infantry_ColdWar_Malay_Rifleman
 		"LIB_No82"
 	};
 };
+class TWC_Infantry_ColdWar_Malay_Grenadier: TWC_Infantry_ColdWar_Malay_Rifleman
+{
+	displayName = "Grenadier";
+	weapons[] =
+	{
+		"LIB_LeeEnfield_No4_CUP",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"LIB_LeeEnfield_No4_CUP",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_13("LIB_10Rnd_770x56"),
+		MAG_8("LIB_1Rnd_G_MillsBomb")
+	};
+	respawnmagazines[] =
+	{
+		MAG_13("LIB_10Rnd_770x56"),
+		MAG_8("LIB_1Rnd_G_MillsBomb")
+	};
+};
 class TWC_Infantry_ColdWar_Malay_SMG: TWC_Infantry_ColdWar_Malay_Rifleman
 {
 	displayName = "Submachine Gunner";
@@ -105,25 +131,25 @@ class TWC_Infantry_ColdWar_Malay_SMG: TWC_Infantry_ColdWar_Malay_Rifleman
 	};
 	weapons[] =
 	{
-		"LIB_M1928_Thompson",
+		"LIB_M1928A1_Thompson",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"LIB_M1928_Thompson",
+		"LIB_M1928A1_Thompson",
 		"Throw",
 		"Put"
 	};
 	magazines[] =
 	{
-		MAG_5("LIB_50Rnd_45ACP"),
+		MAG_8("LIB_30Rnd_45ACP_t"),
 		MAG_2("LIB_MillsBomb"),
 		"LIB_No82"
 	};
 	respawnmagazines[] =
 	{
-		MAG_5("LIB_50Rnd_45ACP"),
+		MAG_8("LIB_30Rnd_45ACP_t"),
 		MAG_2("LIB_MillsBomb"),
 		"LIB_No82"
 	};
@@ -210,26 +236,26 @@ class TWC_Infantry_ColdWar_Malay_SectionCommander: TWC_Infantry_ColdWar_Malay_SM
 	};
 	weapons[] =
 	{
-		"LIB_M1928_Thompson",
+		"LIB_M1928A1_Thompson",
 		"TWC_No1Mk3SignalGun",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"LIB_M1928_Thompson",
+		"LIB_M1928A1_Thompson",
 		"TWC_No1Mk3SignalGun",
 		"Throw",
 		"Put"
 	};
 	magazines[] =
 	{
-		MAG_5("LIB_50Rnd_45ACP"),
+		MAG_8("LIB_30Rnd_45ACP_t"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
-		MAG_5("LIB_50Rnd_45ACP"),
+		MAG_8("LIB_30Rnd_45ACP_t"),
 		MAG_2("SmokeShell")
 	};
 	nightItems[] = {
@@ -301,7 +327,7 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Commander: TWC_Infantry_ColdWar_Malay_S
 	};
 	weapons[] =
 	{
-		"LIB_M1928_Thompson",
+		"LIB_M1928A1_Thompson",
 		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
@@ -309,14 +335,14 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Commander: TWC_Infantry_ColdWar_Malay_S
 	};
 	respawnweapons[] =
 	{
-		"LIB_M1928_Thompson",
+		"LIB_M1928A1_Thompson",
 		"LIB_Binocular_UK",
 		"Throw",
 		"Put"
 	};
 	magazines[] =
 	{
-		MAG_3("LIB_50Rnd_45ACP"),
+		MAG_3("LIB_30Rnd_45ACP_t"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellBlue"),
 		MAG_2("SmokeShellRed"),
@@ -324,7 +350,7 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Commander: TWC_Infantry_ColdWar_Malay_S
 	};
 	respawnmagazines[] =
 	{
-		MAG_3("LIB_50Rnd_45ACP"),
+		MAG_3("LIB_30Rnd_45ACP_t"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellBlue"),
 		MAG_2("SmokeShellRed"),
@@ -400,12 +426,12 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Medic: TWC_Infantry_ColdWar_Malay_SMG
 	attendant = 1;
 	magazines[] =
 	{
-		MAG_3("LIB_50Rnd_45ACP"),
+		MAG_3("LIB_30Rnd_45ACP_t"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
-		MAG_3("LIB_50Rnd_45ACP"),
+		MAG_3("LIB_30Rnd_45ACP_t"),
 		MAG_2("SmokeShell")
 	};
 };
@@ -444,7 +470,7 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Mortar: TWC_Infantry_ColdWar_Malay_Rifl
 	};
 	weapons[] =
 	{
-		"LIB_M1928_Thompson",
+		"LIB_M1928A1_Thompson",
 		"twc_2inch_bag",
 		"LIB_Binocular_UK",
 		"Throw",
@@ -452,7 +478,7 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Mortar: TWC_Infantry_ColdWar_Malay_Rifl
 	};
 	respawnweapons[] =
 	{
-		"LIB_M1928_Thompson",
+		"LIB_M1928A1_Thompson",
 		"twc_2inch_bag",
 		"LIB_Binocular_UK",
 		"Throw",
@@ -460,12 +486,12 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Mortar: TWC_Infantry_ColdWar_Malay_Rifl
 	};
 	magazines[] =
 	{
-		MAG_5("LIB_50Rnd_45ACP"),
+		MAG_5("LIB_30Rnd_45ACP_t"),
 		MAG_4("twc_2inch_he_1rnd")
 	};
 	respawnmagazines[] =
 	{
-		MAG_5("LIB_50Rnd_45ACP"),
+		MAG_5("LIB_30Rnd_45ACP_t"),
 		MAG_4("twc_2inch_he_1rnd")
 	};
 	nightItems[] = {
@@ -516,25 +542,25 @@ class TWC_Infantry_ColdWar_Malay_Bazooka_Gunner: TWC_Infantry_ColdWar_Malay_Rifl
 	};
 	weapons[] =
 	{
-		"LIB_M1928_Thompson",
+		"LIB_M1928A1_Thompson",
 		"LIB_M1A1_Bazooka",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"LIB_M1928_Thompson",
+		"LIB_M1928A1_Thompson",
 		"LIB_M1A1_Bazooka",
 		"Throw",
 		"Put"
 	};
 	magazines[] =
 	{
-		MAG_5("LIB_50Rnd_45ACP")
+		MAG_5("LIB_30Rnd_45ACP_t")
 	};
 	respawnmagazines[] =
 	{
-		MAG_5("LIB_50Rnd_45ACP")
+		MAG_5("LIB_30Rnd_45ACP_t")
 	};
 };
 class TWC_Infantry_ColdWar_Malay_Bazooka_Ass: TWC_Infantry_ColdWar_Malay_Rifleman
@@ -667,6 +693,28 @@ class TWC_Infantry_ColdWar_Malay_Vehicle_Commander: TWC_Infantry_ColdWar_Malay_S
 		"itemMap",
 		"ItemWatch"
 	};
+	weapons[] =
+	{
+		"LIB_Sten_Mk2",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"LIB_Sten_Mk2",
+		"LIB_Binocular_UK",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_5("LIB_32Rnd_9x19_Sten")
+	};
+	respawnmagazines[] =
+	{
+		MAG_5("LIB_32Rnd_9x19_Sten")
+	};
 };
 class TWC_Infantry_ColdWar_Malay_Vehicle_Crew: TWC_Infantry_ColdWar_Malay_Vehicle_Commander
 {
@@ -675,5 +723,17 @@ class TWC_Infantry_ColdWar_Malay_Vehicle_Crew: TWC_Infantry_ColdWar_Malay_Vehicl
 	TWC_isCommandRole = 0;
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable ['twc_keepMap',false]";
-		};
+	};
+	weapons[] =
+	{
+		"LIB_Sten_Mk2",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"LIB_Sten_Mk2",
+		"Throw",
+		"Put"
+	};
 };
