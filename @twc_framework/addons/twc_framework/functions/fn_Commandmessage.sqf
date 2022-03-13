@@ -22,7 +22,7 @@ if (isNil "twc_JIP_CommandMessage") then { twc_JIP_CommandMessage = []; };
 _topRankingPlayers = [] call TWC_Core_fnc_getTopRanks;
 
 { _message remoteExecCall ["hint", _x]; } forEach _topRankingPlayers;
-{ ["twc_evh_createDiaryRecord", [_message], _x] call CBA_fnc_targetEvent; } forEach allPlayers;
+{ ["TWC_createDiaryRecord", [_message], _x] call CBA_fnc_targetEvent; } forEach allPlayers;
 
 twc_JIP_CommandMessage pushBack _message;
 publicVariable "twc_JIP_CommandMessage";

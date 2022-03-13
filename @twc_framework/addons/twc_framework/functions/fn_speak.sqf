@@ -23,4 +23,5 @@ _players = [_refObject, _range] call TWC_Core_fnc_getPlayersWithinRange;
 
 {
 	_message remoteExecCall ["hint", _x];
+	["TWC_createConvoRecord", [_message], _x] call CBA_fnc_targetEvent;
 } forEach _players;

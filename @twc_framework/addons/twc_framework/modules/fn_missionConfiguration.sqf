@@ -1,7 +1,5 @@
 params ["_logic","_units","_activated"];
 
-if !(_activated) exitWith {};
-
 _enabled = _logic getVariable "enabled";
 if !(_enabled) exitWith {};
 
@@ -20,10 +18,7 @@ missionNameSpace setVariable ["TWC_Intro_specialSong", (_logic getVariable ["spe
 // Server side part below
 if !(isServer) exitWith {};
 
-missionNameSpace setVariable ["TWC_Intro_Started", false, true];
 missionNameSpace setVariable ["TWC_worldName", worldName, true]; // share world name from server, for clients to check against
-
-missionNameSpace setVariable ["twcModuleFinished", true, true];
 
 [{ getClientStateNumber > 9 }, {
 	// This measure is used to inform clients whether or not the mission has started.
