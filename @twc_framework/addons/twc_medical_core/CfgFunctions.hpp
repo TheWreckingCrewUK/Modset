@@ -57,6 +57,7 @@ class CfgFunctions {
 			class resuscitateUnitLocal {};
 			class removeMedicalItem {};
 			class addPain {};
+			class canBandage {};
 			
 			// Set Dead
 			class setDead {};

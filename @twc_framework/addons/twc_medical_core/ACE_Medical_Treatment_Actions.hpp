@@ -12,7 +12,7 @@ class ACE_Medical_Treatment_Actions {
 		medicRequired = 0;
 		allowSelfTreatment = 1;
 		allowedSelections[] = {"All"};
-		condition = "true"; // edit to always show bandages
+		condition = "TWC_Medical_fnc_canBandage"; // edit to always show bandages
 		treatmentLocations = 0; // all locations
 
 		treatmentTime = "ace_medical_treatment_fnc_getBandageTime";
