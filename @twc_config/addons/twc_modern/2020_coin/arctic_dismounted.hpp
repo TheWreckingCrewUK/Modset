@@ -5,6 +5,11 @@ class TWC_Infantry_2020_COIN_Dismounted_Arctic_Rifleman: TWC_Infantry_2020_COIN_
 	CATEGORY(TWC_Infantry_COIN_Dismounted_Arctic)
 	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Rifleman";
 };
+class TWC_Infantry_2020_COIN_Dismounted_Arctic_Pointman: TWC_Infantry_2020_COIN_Arctic_Pointman
+{
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Arctic)
+	backpack = "TWC_Backpack_2020_COIN_Dismounted_Woodland_Pointman";
+};
 class TWC_Infantry_2020_COIN_Dismounted_Arctic_Grenadier: TWC_Infantry_2020_COIN_Arctic_Grenadier
 {
 	CATEGORY(TWC_Infantry_COIN_Dismounted_Arctic)

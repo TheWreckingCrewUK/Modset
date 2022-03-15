@@ -1,5 +1,26 @@
 //WOODLAND, REGULAR
 //Section
+class TWC_Backpack_2020_COIN_Woodland_Pointman: UK3CB_BAF_B_Bergen_MTP_PointMan_L_A
+{
+	scope = 1;
+	scopeArsenal = 1;
+	class TransportMagazines {
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Slug,8);
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Pellets,8);
+	};
+	class TransportWeapons {
+		ADD_WEAP(TWC_L128A1_Eotech,1);
+	};
+};
+class TWC_Backpack_2020_COIN_Woodland: mpx_camel
+{
+	scope = 1;
+	scopeArsenal = 1;
+	class TransportMagazines {
+
+		ADD_MAGA(UK3CB_BAF_762_100Rnd, 1);
+	};
+};
 class TWC_Backpack_2020_COIN_Woodland_SectionCommander: mpx_camel2
 {
 	scope = 1;
@@ -171,6 +192,19 @@ class TWC_Backpack_2020_COIN_Dismounted_Woodland_Rifleman: mpx_daysack
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd,8);
 		ADD_MAGA(UK3CB_BAF_762_100Rnd, 2);
+	};
+};
+class TWC_Backpack_2020_COIN_Dismounted_Woodland_Pointman: UK3CB_BAF_B_Bergen_MTP_PointMan_L_A
+{
+	scope = 1;
+	scopeArsenal = 1;
+	class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_556_30Rnd,3);
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Slug,8);
+		ADD_MAGA(CUP_8Rnd_B_Beneli_74Pellets,8);
+	};
+	class TransportWeapons {
+		ADD_WEAP(TWC_L128A1_Eotech,1);
 	};
 };
 class TWC_Backpack_2020_COIN_Dismounted_Woodland_Grenadier: mpx_daysack

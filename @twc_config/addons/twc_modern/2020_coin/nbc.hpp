@@ -7,6 +7,13 @@ class TWC_Infantry_2020_COIN_NBC_Rifleman: TWC_Infantry_2020_COIN_Woodland_Rifle
 	items[] += {"SP_Gasmask_S6"};
 	respawnItems[] += {"SP_Gasmask_S6"};
 };
+class TWC_Infantry_2020_COIN_NBC_Pointman: TWC_Infantry_2020_COIN_Woodland_Rifleman
+{
+	CATEGORY(TWC_Infantry_COIN_Dismounted_Woodland)
+	uniformClass = "SP_NBCMk3_HoodUp_Item";
+	items[] += {"SP_Gasmask_S6"};
+	respawnItems[] += {"SP_Gasmask_S6"};
+};
 class TWC_Infantry_2020_COIN_NBC_Grenadier: TWC_Infantry_2020_COIN_Woodland_Grenadier
 {
 	CATEGORY(TWC_Infantry_COIN_NBC)

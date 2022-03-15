@@ -4,7 +4,7 @@ class TWC_Infantry_2020_COIN_Woodland_Rifleman: TWC_Infantry_2020_Regular_Woodla
 {
 	displayName = "Rifleman";
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
+	backpack = "TWC_Backpack_2020_COIN_Woodland";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -34,10 +34,16 @@ class TWC_Infantry_2020_COIN_Woodland_Rifleman: TWC_Infantry_2020_Regular_Woodla
 		"Put"
 	};
 };
+class TWC_Infantry_2020_COIN_Woodland_Pointman: TWC_Infantry_2020_COIN_Woodland_Rifleman
+{
+	displayName = "Pointman";
+	CATEGORY(TWC_Infantry_COIN_Woodland)
+	backpack = "TWC_Backpack_2020_COIN_Woodland_Pointman";
+};
 class TWC_Infantry_2020_COIN_Woodland_Grenadier: TWC_Infantry_2020_Regular_Woodland_Grenadier
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
+	backpack = "TWC_Backpack_2020_COIN_Woodland";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -52,7 +58,7 @@ class TWC_Infantry_2020_COIN_Woodland_Grenadier: TWC_Infantry_2020_Regular_Woodl
 class TWC_Infantry_2020_COIN_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_MG
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
+	backpack = "TWC_Backpack_2020_COIN_Woodland";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
@@ -67,7 +73,7 @@ class TWC_Infantry_2020_COIN_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_MG
 class TWC_Infantry_2020_COIN_Woodland_Marksman: TWC_Infantry_2020_Regular_Woodland_Marksman
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
+	backpack = "TWC_Backpack_2020_COIN_Woodland";
 	Items[] =
 	{
 		MEDICAL_LOADOUT,

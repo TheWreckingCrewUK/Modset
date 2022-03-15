@@ -26,7 +26,7 @@ class TWC_Backpack_2020_Regular_Woodland_2iC: mpx_daysack8
 		ADD_MAGA(SmokeShell, 4);
 	};
 };
-class TWC_Backpack_2020_Regular_Woodland_Dismounted: mpx_camel
+class TWC_Backpack_2020_Regular_Woodland: mpx_camel
 {
 	scope = 1;
 	scopeArsenal = 1;
