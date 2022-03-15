@@ -4,7 +4,7 @@ class TWC_Infantry_2020_Regular_Woodland_Rifleman: TWC_Infantry_2020_Base
 {
 	scope = 2;
 	displayName = "Rifleman";
-	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
+	backpack = "TWC_Backpack_2020_Regular_Woodland";
 	weapons[] =
 	{
 		"TWC_Weapon_L85A3_LDS",
@@ -39,7 +39,7 @@ class TWC_Infantry_2020_Regular_Woodland_Rifleman: TWC_Infantry_2020_Base
 class TWC_Infantry_2020_Regular_Woodland_Grenadier: TWC_Infantry_2020_Regular_Woodland_Rifleman
 {
 	displayName = "Grenadier";
-	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
+	backpack = "TWC_Backpack_2020_Regular_Woodland";
 	linkedItems[] =
 	{
 		"mpx_virtus_taco_p",
@@ -109,7 +109,7 @@ class TWC_Infantry_2020_Regular_Woodland_Grenadier: TWC_Infantry_2020_Regular_Wo
 class TWC_Infantry_2020_Regular_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_Rifleman
 {
 	displayName = "Machine Gunner";
-	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
+	backpack = "TWC_Backpack_2020_Regular_Woodland";
 	linkedItems[] =
 	{
 		"mpx_virtus2_p",
@@ -158,7 +158,7 @@ class TWC_Infantry_2020_Regular_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_
 class TWC_Infantry_2020_Regular_Woodland_Marksman: TWC_Infantry_2020_Regular_Woodland_Rifleman
 {
 	displayName = "Marksman";
-	backpack = "TWC_Backpack_2020_Regular_Woodland_Dismounted";
+	backpack = "TWC_Backpack_2020_Regular_Woodland";
 	linkedItems[] =
 	{
 		"mpx_virtus3_p",
