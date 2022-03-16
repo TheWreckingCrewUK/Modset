@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="TWC Medical Defib">
-	<Package name="TWC_Medical_Defib">
+<Project name="TWC Medical Vehicle">
+	<Package name="twc_medical_vehicle">
 		<Key ID="STR_TWC_CPR_EXECUTE">
 			<Original>%1 performed CPR</Original>
 			<English>%1 performed CPR</English>

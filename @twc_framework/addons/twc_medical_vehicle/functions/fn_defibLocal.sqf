@@ -35,9 +35,9 @@ _probability = _probability - (35 - (35 * _bloodLoss));
 _diceRoll = floor(random 100);
 
 if !(isNull objectParent _caller) then {
-	playSound3D ["twc_medical_defib\sounds\defib.ogg", _caller, false, getPosASL _caller, 3, 1, 20];
+	playSound3D ["twc_medical_vehicle\sounds\defib.ogg", _caller, false, getPosASL _caller, 3, 1, 20];
 } else {
-	playSound3D ["twc_medical_defib\sounds\defib.ogg", vehicle _caller, true, getPosASL (vehicle _caller), 3, 1, 20];
+	playSound3D ["twc_medical_vehicle\sounds\defib.ogg", vehicle _caller, true, getPosASL (vehicle _caller), 3, 1, 20];
 };
 
 _probability = [_probability, _target] call TWC_Medical_fnc_badLuckProtection;

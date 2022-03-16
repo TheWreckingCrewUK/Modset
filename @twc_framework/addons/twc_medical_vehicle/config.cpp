@@ -1,5 +1,5 @@
 class CfgPatches {
-	class twc_medical_suture {
+	class twc_medical_vehicle {
 		requiredAddons[] = {
 			"ace_medical",
 			"ace_medical_gui",
