@@ -15,8 +15,8 @@ class CfgFunctions {
 			class defibLocal {};
 			
 			// IV
-			class hookIV {};
-			class hookIVLocal {};
+			class IV {};
+			class IVLocal {};
 			class unhookIV {};
 			class unhookIVLocal {};
 			class canUnhookIV {};

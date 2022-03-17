@@ -12,26 +12,20 @@ class ACE_Medical_Treatment_Actions {
 		callbackSuccess = "twc_medical_vehicle_fnc_Defib";
 	};
 	
-	class HookIV: CPR {
-		displayName = "Hook IV";
-		displayNameProgress = "Hooking IV...";
-		treatmentLocations = 3;
-		allowedSelections[] = {"Body"};
-		condition = "[(_this select 0), (_this select 1)] call twc_medical_vehicle_fnc_canHookIV";
-		allowSelfTreatment = 0;
-		medicRequired = 1;
+	class BloodIV;
+	class IVDrip: BloodIV {
+		displayName = "Insert IV Drip";
+		displayNameProgress = "Inserting Drip...";
+		condition = "twc_medical_vehicle_fnc_canHookIV";
 		treatmentTime = 3;
-		callbackSuccess = "twc_medical_vehicle_fnc_hookIV";
+		callbackSuccess = "twc_medical_vehicle_fnc_IV";
 	};
 	
-	class UnhookIV: CPR {
-		displayName = "Unhook IV";
-		displayNameProgress = "Unhooking IV...";
+	class UnhookIV: IVDrip {
+		displayName = "Unhook IV Drip";
+		displayNameProgress = "Unhooking IV Drip...";
 		treatmentLocations = 3;
-		allowedSelections[] = {"Body"};
-		condition = "[(_this select 0), (_this select 1)] call twc_medical_vehicle_fnc_canUnhookIV";
-		allowSelfTreatment = 0;
-		medicRequired = 1;
+		condition = "twc_medical_vehicle_fnc_canUnhookIV";
 		treatmentTime = 3;
 		callbackSuccess = "twc_medical_vehicle_fnc_unhookIV";
 	};
