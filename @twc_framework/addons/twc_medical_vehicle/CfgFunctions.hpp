@@ -25,6 +25,8 @@ class CfgFunctions {
 			// Burn Treatment
 			
 			// Life Support (takes over CPR - maybe a better name?)
+			class isInTransportVehicle {};
+			class isTransportVehicle {};
 		};
 	};
 };
