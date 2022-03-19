@@ -18,15 +18,15 @@ class CfgFunctions {
 			class IV {};
 			class IVLocal {};
 			class unhookIV {};
-			class unhookIVLocal {};
 			class canUnhookIV {};
 			class canHookIV {};
 			
 			// Burn Treatment
 			
-			// Life Support (takes over CPR - maybe a better name?)
+			// Automated Stablisation System (A.S.S.)
 			class isInTransportVehicle {};
 			class isTransportVehicle {};
+			class canAss {};
 		};
 	};
 };
