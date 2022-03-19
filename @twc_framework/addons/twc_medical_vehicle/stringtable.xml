@@ -16,5 +16,10 @@
 			<English>%1 resuscitated the patient with defibrillator</English>
 			<German>%1 hat den Patienten mittels Defibrillator wiederbelebt</German>
 		</Key>
+		<Key ID="STR_TWC_IV_EXECUTE">
+			<Original>%1 attached an IV drip to the patient</Original>
+			<English>%1 attached an IV drip to the patient</English>
+			<German>%1 TODO</German>
+		</Key>
 	</Package>
 </Project>
