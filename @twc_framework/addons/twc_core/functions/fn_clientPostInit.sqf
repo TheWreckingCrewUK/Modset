@@ -71,35 +71,37 @@ EM_blacklist_obj = [
 	"Land_I44_Buildings_CT_Straight"
 ];
 
-// OP only stuff below
-if (TWC_Core_isPublic) exitWith {};
+["CBA_settingsInitialized", {
+	// OP only stuff below
+	if (TWC_Core_isPublic) exitWith {};
 
-player createDiarySubject ["loadout", "Loadouts"];
-[player] call twc_fnc_briefingLoadout;
+	player createDiarySubject ["loadout", "Loadouts"];
+	[player] call twc_fnc_briefingLoadout;
 
-[player, currentWeapon player, currentMuzzle player] call TWC_fnc_silentSafety;
-enableRadio false;
-player disableConversation true;
-player action ["WeaponOnBack", player];
+	[player, currentWeapon player, currentMuzzle player] call TWC_fnc_silentSafety;
+	enableRadio false;
+	player disableConversation true;
+	player action ["WeaponOnBack", player];
 
-if !((goggles player) in approvedFacewear) then {
-	removeGoggles player;
-};
-
-[{ time > 0 }, {
-	/** Reconnect spot? **/
-	if (!isNil "ForwardBasePos" && !(player getVariable ["twc_ignoreForwardBase", false])) then {
-		player setPos ForwardBasePos;
-		["ForwardBasePos"] spawn twc_fnc_reconnected;
-	} else {
-		["NormalBase"] spawn twc_fnc_reconnected;
+	if !((goggles player) in approvedFacewear) then {
+		removeGoggles player;
 	};
-	
-	/** Should you be having this? **/
-	if !(player getVariable ["twc_keepMap", false]) then {
-		player unassignItem "itemMap"; 
-		player removeItem "itemMap"; 
-	};
-	
-	1 enableChannel false;
-}] call CBA_fnc_waitUntilAndExecute;
+
+	[{ time > 0 }, {
+		/** Reconnect spot? **/
+		if (!isNil "ForwardBasePos" && !(player getVariable ["twc_ignoreForwardBase", false])) then {
+			player setPos ForwardBasePos;
+			["ForwardBasePos"] spawn twc_fnc_reconnected;
+		} else {
+			["NormalBase"] spawn twc_fnc_reconnected;
+		};
+		
+		/** Should you be having this? **/
+		if !(player getVariable ["twc_keepMap", false]) then {
+			player unassignItem "itemMap"; 
+			player removeItem "itemMap"; 
+		};
+		
+		1 enableChannel false;
+	}] call CBA_fnc_waitUntilAndExecute;
+}] call CBA_fnc_addEventHandler;
