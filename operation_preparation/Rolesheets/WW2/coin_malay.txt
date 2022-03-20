@@ -2,7 +2,7 @@
 [color=#ff9933]Platoon Commander[/color] (T): [color=#ccccff]No-One[/color]
 [color=#ff9933]Platoon Sergeant[/color] (T): [color=#ccccff]No-One[/color]
 Platoon Medic (T): [color=#ccccff]No-One[/color]
-Signaller (T): [color=#ccccff]No-One[/color]
+Platoon Signaller (T): [color=#ccccff]No-One[/color]
 
 [color=#ff9933]Section Commander[/color] (T): [color=#ccccff]No-One[/color]
 Submachine Gunner: [color=#ccccff]No-One[/color]
