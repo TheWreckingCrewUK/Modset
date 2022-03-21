@@ -305,7 +305,7 @@ class TWC_Groups_##ERA##_##CAMO \
 }; \
 class TWC_Groups_##CAMO##_Dismounted \
 { \
-	name = __EVAL("Infantry ( Dismounted, " + #CAMO + ")"); \
+	name = __EVAL("Infantry (" + #CAMO + "), Dismounted"); \
 	class Section \
 	{ \
 		name = "Section, Dismounted (Malay)"; \
