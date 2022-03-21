@@ -255,17 +255,17 @@ class CfgVehicles {
 		
 		class TransportMagazines {
 			// Thompson .45 ACP 30rnd
-			maga_nc(LIB_30Rnd_45ACP, 12);
+			maga_nc(LIB_30Rnd_45ACP, 15);
 			
 			// Enfield .303 10rnd
-			maga_nc(LIB_10Rnd_770x56, 6);
+			maga_nc(LIB_10Rnd_770x56, 10);
 			
 			// M1 Carbine 7.62 15rnd
 			maga_nc(LIB_15Rnd_762x33, 20);
 			maga_nc(LIB_15Rnd_762x33_t, 5);
 			
 			// Bren .303 30rnd
-			maga_nc(LIB_30Rnd_770x56, 12);
+			maga_nc(LIB_30Rnd_770x56, 14);
 			
 			// Smoke Grenades
 			maga_nc(SmokeShell, 6);
@@ -274,7 +274,7 @@ class CfgVehicles {
 			
 			// Frag Grenade
 			maga_nc(LIB_MillsBomb, 8);
-			maga_nc(LIB_1Rnd_G_MillsBomb, 6);
+			maga_nc(LIB_1Rnd_G_MillsBomb, 10);
 			
 			// Flares
 			maga_nc(TWC_Magazine_SignalFlare_Blue, 3);
