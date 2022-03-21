@@ -77,6 +77,17 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_Marksman: B_LIB_UK_HSack
 		ADD_MAGA(LIB_30Rnd_770x56,4);
 	};
 };
+class TWC_Backpack_ColdWar_Malay_Dismounted_Grenadier: B_LIB_UK_HSack
+{
+	scope = 1;
+	scopeArsenal = 1;
+	maximumLoad = 150;
+	class TransportMagazines {
+		ADD_MAGA(LIB_10Rnd_770x56,12);
+		ADD_MAGA(LIB_30Rnd_770x56,2);
+		ADD_MAGA(LIB_1Rnd_G_MillsBomb,12);
+	};
+};
 class TWC_Backpack_ColdWar_Malay_Dismounted_SMG: B_LIB_UK_HSack
 {
 	scope = 1;

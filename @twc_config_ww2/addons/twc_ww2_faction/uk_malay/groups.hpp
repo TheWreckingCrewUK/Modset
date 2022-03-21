@@ -342,7 +342,7 @@ class TWC_Groups_##CAMO##_Dismounted \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Marksman; \
+			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
