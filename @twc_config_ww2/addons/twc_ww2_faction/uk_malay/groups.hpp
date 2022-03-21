@@ -308,7 +308,7 @@ class TWC_Groups_##CAMO##_Dismounted \
 	name = __EVAL("Infantry ( Dismounted, " + #CAMO + ")"); \
 	class Section \
 	{ \
-		name = "Section (Malay)"; \
+		name = "Section, Dismounted (Malay)"; \
 		faction = "TWC_WW2"; \
 		side = 2; \
 		class Unit0 \
@@ -370,7 +370,7 @@ class TWC_Groups_##CAMO##_Dismounted \
 	}; \
 	class Platoon_Command \
 	{ \
-		name = "Platoon Command"; \
+		name = "Platoon Command, Dismounted (Malay)"; \
 		faction = "TWC_WW2"; \
 		side = 2; \
 		class Unit0 \
@@ -411,7 +411,7 @@ class TWC_Groups_##CAMO##_Dismounted \
 	}; \
 	class Company_Command \
 	{ \
-		name = "Company Command"; \
+		name = "Company Command, Dismounted (Malay)"; \
 		faction = "TWC_WW2"; \
 		side = 2; \
 		class Unit0 \
