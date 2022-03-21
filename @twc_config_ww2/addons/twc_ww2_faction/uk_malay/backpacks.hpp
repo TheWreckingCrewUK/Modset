@@ -64,7 +64,7 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_Signaller: B_LIB_US_Radio_ACRE2
 		ADD_ITEM(ACRE_PRC77,1);
 	};
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33,8);
+		ADD_MAGA(LIB_15Rnd_762x33,12);
 	};
 };
 class TWC_Backpack_ColdWar_Malay_Dismounted_Marksman: B_LIB_UK_HSack
