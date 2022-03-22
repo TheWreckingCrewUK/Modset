@@ -27,6 +27,9 @@ class CfgFunctions {
 			class isInTransportVehicle {};
 			class isTransportVehicle {};
 			class canAss {};
+			class hookAss {};
+			class hookAssLocal {};
+			class unhookAss {};
 		};
 	};
 };
