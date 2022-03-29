@@ -28,7 +28,7 @@ class CfgPatches {
 
 class CfgEditorSubcategories {
 	class TWC_1950_Crates {
-		displayName = "1950";
+		displayName = "1950s";
 	};
 };
 
