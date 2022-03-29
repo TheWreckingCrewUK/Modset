@@ -1,6 +1,7 @@
 class TWC_Infantry_WW2_US_Airborne_Woodland_Rifleman: TWC_Infantry_WW2_USA_Base {
 	scope = 2;
 	scopeCurator = 2;
+	CATEGORY(TWC_Infantry_US_Airborne_Woodland)
 	displayName = "Rifleman";
 	backpack = "TWC_Backpack_WW2_US_Airborne_Rifleman";
 	linkedItems[] =
