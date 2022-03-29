@@ -54,7 +54,7 @@ class TWC_Infantry_1950_COIN_Tropic_Signaller: TWC_Infantry_1950_COIN_Tropic_Rif
 {
 	scope = 2;
 	displayName = "Signaller";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_Signaller";
+	backpack = "TWC_Backpack_1950_COIN_Signaller";
 };
 class TWC_Infantry_1950_COIN_Tropic_Marksman: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
@@ -207,13 +207,13 @@ class TWC_Infantry_1950_COIN_Tropic_MG: TWC_Infantry_1950_COIN_Tropic_Rifleman
 class TWC_Infantry_1950_COIN_Tropic_MGASS: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "Assistant Machine Gunner";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_MGASS";
+	backpack = "TWC_Backpack_1950_COIN_MGASS";
 };
 class TWC_Infantry_1950_COIN_Tropic_SectionCommander: TWC_Infantry_1950_COIN_Tropic_SMG
 {
 	displayName = "Section Commander";
 	uniformClass = "fow_u_uk_bd40_seac_02_corporal";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_SectionCommander";
+	backpack = "TWC_Backpack_1950_COIN_SectionCommander";
 	TWC_isCommandRole = 1;
 	class EventHandlers: EventHandlers {
 	init = "(_this select 0) setVariable ['twc_keepMap',true]";
@@ -277,7 +277,7 @@ class TWC_Infantry_1950_COIN_Tropic_2iC: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "2iC";
 	uniformClass = "fow_u_uk_bd40_seac_02_lance_corporal";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_2iC";
+	backpack = "TWC_Backpack_1950_COIN_2iC";
 	TWC_isCommandRole = 1;
 	linkedItems[] =
 	{
@@ -302,7 +302,7 @@ class TWC_Infantry_1950_COIN_Tropic_Platoon_Commander: TWC_Infantry_1950_COIN_Tr
 {
 	displayName = "Platoon Commander";
 	uniformClass = "fow_u_uk_bd40_seac_02_lieutenant";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_Platoon_Commander";
+	backpack = "TWC_Backpack_1950_COIN_Platoon_Commander";
 	TWC_isCommandRole = 1;
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable ['twc_keepMap',true]";
@@ -376,7 +376,7 @@ class TWC_Infantry_1950_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_1950_COIN_Tro
 {
 	displayName = "Platoon Sergeant";
 	uniformClass = "fow_u_uk_bd40_seac_02_sergeant";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_Platoon_Sergeant";
+	backpack = "TWC_Backpack_1950_COIN_Platoon_Sergeant";
 	TWC_isCommandRole = 1;
 	linkedItems[] =
 	{
@@ -432,7 +432,7 @@ class TWC_Infantry_1950_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_1950_COIN_Tro
 class TWC_Infantry_1950_COIN_Tropic_Platoon_Medic: TWC_Infantry_1950_COIN_Tropic_SMG
 {
 	displayName = "Platoon Medic";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_Platoon_Medic";
+	backpack = "TWC_Backpack_1950_COIN_Platoon_Medic";
 	attendant = 1;
 	magazines[] =
 	{
@@ -448,7 +448,7 @@ class TWC_Infantry_1950_COIN_Tropic_Platoon_Medic: TWC_Infantry_1950_COIN_Tropic
 class TWC_Infantry_1950_COIN_Tropic_Platoon_Mortar: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "Platoon Mortar";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_Platoon_Mortar";
+	backpack = "TWC_Backpack_1950_COIN_Platoon_Mortar";
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable ['twc_keepMap',true]";
 	};
@@ -623,7 +623,7 @@ class TWC_Infantry_1950_COIN_Tropic_Sniper: TWC_Infantry_1950_COIN_Tropic_Riflem
 class TWC_Infantry_1950_COIN_Tropic_Spotter: TWC_Infantry_1950_COIN_Tropic_Sniper
 {
 	displayName = "Spotter";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_Spotter";
+	backpack = "TWC_Backpack_1950_COIN_Spotter";
 	TWC_isCommandRole = 1;
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable ['twc_keepMap',true]";
@@ -648,7 +648,7 @@ class TWC_Infantry_1950_COIN_Tropic_Spotter: TWC_Infantry_1950_COIN_Tropic_Snipe
 class TWC_Infantry_1950_COIN_Tropic_Artillery_Commander: TWC_Infantry_1950_COIN_Tropic_Platoon_Commander
 {
 	displayName = "Artillery Commander";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_Artillery_Commander";
+	backpack = "TWC_Backpack_1950_COIN_Artillery_Commander";
 	uniformClass = "fow_u_uk_bd40_seac_02_corporal";
 	TWC_isCommandRole = 1;
 	class EventHandlers: EventHandlers {
@@ -665,7 +665,7 @@ class TWC_Infantry_1950_COIN_Tropic_Artillery_Crew: TWC_Infantry_1950_COIN_Tropi
 class TWC_Infantry_1950_COIN_Tropic_FO: TWC_Infantry_1950_COIN_Tropic_Artillery_Commander
 {
 	displayName = "Forward Observer";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_FO";
+	backpack = "TWC_Backpack_1950_COIN_FO";
 	uniformClass = "fow_u_uk_bd40_seac_02_private";
 	TWC_isCommandRole = 0;
 };
@@ -674,7 +674,7 @@ class TWC_Infantry_1950_COIN_Tropic_FO: TWC_Infantry_1950_COIN_Tropic_Artillery_
 class TWC_Infantry_1950_COIN_Tropic_FAC: TWC_Infantry_1950_COIN_Tropic_FO
 {
 	displayName = "Forward Air Controller";
-	backpack = "TWC_Backpack_1950_COIN_Tropic_FAC";
+	backpack = "TWC_Backpack_1950_COIN_FAC";
 };
 
 //FVs

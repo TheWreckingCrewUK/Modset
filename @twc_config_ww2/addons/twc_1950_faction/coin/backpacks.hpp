@@ -1,5 +1,5 @@
 //SECTION
-class TWC_Backpack_1950_COIN_Tropic_SectionCommander: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_SectionCommander: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -14,7 +14,7 @@ class TWC_Backpack_1950_COIN_Tropic_SectionCommander: B_LIB_UK_HSack
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_2iC: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_2iC: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -28,7 +28,7 @@ class TWC_Backpack_1950_COIN_Tropic_2iC: B_LIB_UK_HSack
 		ADD_MAGA(SmokeShell,2);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Signaller: B_LIB_US_Radio_ACRE2
+class TWC_Backpack_1950_COIN_Signaller: B_LIB_US_Radio_ACRE2
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -36,7 +36,7 @@ class TWC_Backpack_1950_COIN_Tropic_Signaller: B_LIB_US_Radio_ACRE2
 		ADD_ITEM(ACRE_PRC77,1);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_MGASS: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_MGASS: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -46,7 +46,7 @@ class TWC_Backpack_1950_COIN_Tropic_MGASS: B_LIB_UK_HSack
 };
 
 //SECTION, DISMOUNTED
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_Rifleman: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Dismounted_Rifleman: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -55,7 +55,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_Rifleman: B_LIB_UK_HSack
 		ADD_MAGA(LIB_30Rnd_770x56,4);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_Signaller: B_LIB_US_Radio_ACRE2
+class TWC_Backpack_1950_COIN_Dismounted_Signaller: B_LIB_US_Radio_ACRE2
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -67,7 +67,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_Signaller: B_LIB_US_Radio_ACRE2
 		ADD_MAGA(LIB_15Rnd_762x33,12);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_Marksman: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Dismounted_Marksman: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -77,7 +77,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_Marksman: B_LIB_UK_HSack
 		ADD_MAGA(LIB_30Rnd_770x56,4);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_Grenadier: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Dismounted_Grenadier: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -88,7 +88,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_Grenadier: B_LIB_UK_HSack
 		ADD_MAGA(LIB_1Rnd_G_MillsBomb,12);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_SMG: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Dismounted_SMG: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -97,7 +97,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_SMG: B_LIB_UK_HSack
 		ADD_MAGA(LIB_30Rnd_770x56,4);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_MG: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Dismounted_MG: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -105,7 +105,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_MG: B_LIB_UK_HSack
 		ADD_MAGA(LIB_30Rnd_770x56,8);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_MGASS: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Dismounted_MGASS: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -114,7 +114,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_MGASS: B_LIB_UK_HSack
 		ADD_MAGA(LIB_30Rnd_770x56,12);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_SectionCommander: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Dismounted_SectionCommander: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -130,7 +130,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_SectionCommander: B_LIB_UK_HSack
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_2iC: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Dismounted_2iC: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -146,7 +146,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_2iC: B_LIB_UK_HSack
 };
 
 //PLATOON
-class TWC_Backpack_1950_COIN_Tropic_Platoon_Commander: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Platoon_Commander: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -165,7 +165,7 @@ class TWC_Backpack_1950_COIN_Tropic_Platoon_Commander: B_LIB_UK_HSack
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Platoon_Sergeant: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Platoon_Sergeant: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -187,7 +187,7 @@ class TWC_Backpack_1950_COIN_Tropic_Platoon_Sergeant: B_LIB_UK_HSack
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty
+class TWC_Backpack_1950_COIN_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -207,7 +207,7 @@ class TWC_Backpack_1950_COIN_Tropic_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Platoon_Mortar: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Platoon_Mortar: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -219,7 +219,7 @@ class TWC_Backpack_1950_COIN_Tropic_Platoon_Mortar: B_LIB_UK_HSack
 };
 
 //PLATOON, DISMOUNTED
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_Platoon_Commander: B_LIB_UK_HSack
+class TWC_Backpack_1950_COIN_Dismounted_Platoon_Commander: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -238,7 +238,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_Platoon_Commander: B_LIB_UK_HSack
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_Platoon_Sergeant: fow_b_uk_bergenpack
+class TWC_Backpack_1950_COIN_Dismounted_Platoon_Sergeant: fow_b_uk_bergenpack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -260,7 +260,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_Platoon_Sergeant: fow_b_uk_bergen
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty
+class TWC_Backpack_1950_COIN_Dismounted_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -280,7 +280,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_Platoon_Medic: B_LIB_SOV_RA_Medic
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_Dismounted_Platoon_Mortar: fow_b_uk_bergenpack
+class TWC_Backpack_1950_COIN_Dismounted_Platoon_Mortar: fow_b_uk_bergenpack
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -293,7 +293,7 @@ class TWC_Backpack_1950_COIN_Tropic_Dismounted_Platoon_Mortar: fow_b_uk_bergenpa
 
 //ATTACHMENTS
 //AT
-class TWC_Backpack_1950_COIN_Tropic_Bazooka_Ass: fow_b_us_rocket_bag
+class TWC_Backpack_1950_COIN_Bazooka_Ass: fow_b_us_rocket_bag
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -303,7 +303,7 @@ class TWC_Backpack_1950_COIN_Tropic_Bazooka_Ass: fow_b_us_rocket_bag
 };
 
 //Sniper Team
-class TWC_Backpack_1950_COIN_Tropic_Spotter: B_LIB_UK_HSack_Tea
+class TWC_Backpack_1950_COIN_Spotter: B_LIB_UK_HSack_Tea
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -317,7 +317,7 @@ class TWC_Backpack_1950_COIN_Tropic_Spotter: B_LIB_UK_HSack_Tea
 };
 
 //Artillery
-class TWC_Backpack_1950_COIN_Tropic_Artillery_Commander: B_LIB_US_Radio_ACRE2
+class TWC_Backpack_1950_COIN_Artillery_Commander: B_LIB_US_Radio_ACRE2
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -325,7 +325,7 @@ class TWC_Backpack_1950_COIN_Tropic_Artillery_Commander: B_LIB_US_Radio_ACRE2
 		ADD_ITEM(ACRE_PRC77,1);
 	};
 };
-class TWC_Backpack_1950_COIN_Tropic_FO: B_LIB_US_Radio_ACRE2
+class TWC_Backpack_1950_COIN_FO: B_LIB_US_Radio_ACRE2
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -335,7 +335,7 @@ class TWC_Backpack_1950_COIN_Tropic_FO: B_LIB_US_Radio_ACRE2
 };
 
 //Aircraft
-class TWC_Backpack_1950_COIN_Tropic_FAC: B_LIB_US_Radio_ACRE2
+class TWC_Backpack_1950_COIN_FAC: B_LIB_US_Radio_ACRE2
 {
 	scope = 1;
 	scopeArsenal = 1;
