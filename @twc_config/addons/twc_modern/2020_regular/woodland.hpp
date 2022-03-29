@@ -4,6 +4,7 @@ class TWC_Infantry_2020_Regular_Woodland_Rifleman: TWC_Infantry_2020_Base
 {
 	scope = 2;
 	displayName = "Rifleman";
+	CATEGORY(TWC_Infantry_2020_Regular_Woodland)
 	backpack = "TWC_Backpack_2020_Regular_Woodland";
 	weapons[] =
 	{
@@ -748,12 +749,13 @@ class TWC_Infantry_2020_Regular_Woodland_Sniper: TWC_Infantry_2020_Regular_Woodl
 		"itemMap",
 		"ItemWatch"
 	};
-	items[] = {
+	items[] =
+	{
 		MEDICAL_LOADOUT,
 		"ACE_RangeCard"
 	};
-
-	respawnItems[] = {
+	respawnItems[] =
+	{
 		MEDICAL_LOADOUT,
 		"ACE_RangeCard"
 	};
@@ -840,14 +842,14 @@ class TWC_Infantry_2020_Regular_Woodland_Spotter: TWC_Infantry_2020_Regular_Wood
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};
-
-	items[] = {
+	items[] =
+	{
 		MEDICAL_LOADOUT,
 		"ACE_Kestrel4500",
 		"ACE_MapTools"
 	};
-	
-	respawnItems[] = {
+	respawnItems[] =
+	{
 		MEDICAL_LOADOUT,
 		"ACE_Kestrel4500",
 		"ACE_MapTools"
@@ -958,6 +960,7 @@ class TWC_Infantry_2020_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_2020_Reg
 	displayName = "Helicopter Pilot";
 	TWC_isCommandRole = 1;
 	engineer = 1;
+	backpack = "mpx_camel";
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Pilot_A",

@@ -13,6 +13,57 @@ class CfgPatches
 	};
 };
 
+class CfgEditorSubcategories {
+	//2020s
+	class TWC_Infantry_2020_Regular_Woodland {
+		displayName = "Infantry (2020s, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_Regular_Arctic {
+		displayName = "Infantry (2020s, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_Regular_NBC {
+		displayName = "Infantry (2020s, NBC)";
+	};
+	
+	class TWC_Infantry_2020_Dismounted_Woodland {
+		displayName = "Infantry (2020s, Dismounted, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_Dismounted_Arctic {
+		displayName = "Infantry (2020s, Dismounted, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_Dismounted_NBC {
+		displayName = "Infantry (2020s, Dismounted, NBC)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Woodland {
+		displayName = "Infantry (2020s, COIN, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Arctic {
+		displayName = "Infantry (2020s, COIN, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_COIN_NBC {
+		displayName = "Infantry (2020s, COIN, NBC)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Dismounted_Woodland {
+		displayName = "Infantry (2020s, COIN, Dismounted, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Dismounted_Arctic {
+		displayName = "Infantry (2020s, COIN, Dismounted, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Dismounted_NBC {
+		displayName = "Infantry (2020s, COIN, Dismounted, NBC)";
+	};
+};
+
 class EventHandlers;
 
 class CfgWeapons
@@ -105,7 +156,7 @@ class CfgVehicles
 			"twc_nightvision_gen3"
 		};
 	};
-		class TWC_Infantry_2020_Base: B_Soldier_base_F {
+	class TWC_Infantry_2020_Base: B_Soldier_base_F {
 		scope = 1;
 		displayName = "Base (2020)";
 		faction = "TWC_Modern";

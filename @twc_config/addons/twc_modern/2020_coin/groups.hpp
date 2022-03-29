@@ -1,7 +1,7 @@
 #define 2020_COIN_GROUPS(CAMO) \
 class TWC_Groups_2020_COIN_##CAMO \
 { \
-	name = __EVAL("Infantry (2020s COIN, " + #CAMO + ")"); \
+	name = __EVAL("Infantry (2020s, COIN, " + #CAMO + ")"); \
 	class Section \
 	{ \
 		name = "Section"; \
@@ -298,7 +298,7 @@ class TWC_Groups_2020_COIN_##CAMO \
 }; \
 class TWC_Groups_2020_COIN_Dismounted_##CAMO \
 { \
-	name = __EVAL("Infantry (2020s COIN, Dismounted, " + #CAMO + ")"); \
+	name = __EVAL("Infantry (2020s, COIN, Dismounted, " + #CAMO + ")"); \
 	class Section \
 	{ \
 		name = "Section"; \
