@@ -1,8 +1,8 @@
-//UK, Malay Conflict, Tropic
+//UK, 1950 COIN,Tropic
 //Section
-class TWC_Infantry_ColdWar_Malay_Rifleman: TWC_Infantry_WW2_Base
+class TWC_Infantry_1950_COIN_Tropic_Rifleman: TWC_Infantry_1950_Base
 {
-	CATEGORY(TWC_Infantry_Malay)
+	CATEGORY(TWC_Infantry_1950_COIN_Tropic)
 	scope = 2;
 	displayName = "Rifleman";
 	uniformClass="fow_u_uk_bd40_seac_02_private";
@@ -50,13 +50,13 @@ class TWC_Infantry_ColdWar_Malay_Rifleman: TWC_Infantry_WW2_Base
 		"LIB_No82"
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Signaller: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_1950_COIN_Tropic_Signaller: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	scope = 2;
 	displayName = "Signaller";
-	backpack = "TWC_Backpack_ColdWar_Malay_Signaller";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_Signaller";
 };
-class TWC_Infantry_ColdWar_Malay_Marksman: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_1950_COIN_Tropic_Marksman: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "Marksman";
 	weapons[] =
@@ -84,9 +84,19 @@ class TWC_Infantry_ColdWar_Malay_Marksman: TWC_Infantry_ColdWar_Malay_Rifleman
 		"LIB_No82"
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Grenadier: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_1950_COIN_Tropic_Grenadier: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "Grenadier";
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_No4_Mk2_Bayo"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"LIB_ACC_No4_Mk2_Bayo"
+	};
 	weapons[] =
 	{
 		"LIB_LeeEnfield_No4_CUP",
@@ -110,7 +120,7 @@ class TWC_Infantry_ColdWar_Malay_Grenadier: TWC_Infantry_ColdWar_Malay_Rifleman
 		MAG_8("LIB_1Rnd_G_MillsBomb")
 	};
 };
-class TWC_Infantry_ColdWar_Malay_SMG: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_1950_COIN_Tropic_SMG: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "Submachine Gunner";
 	linkedItems[] =
@@ -143,18 +153,18 @@ class TWC_Infantry_ColdWar_Malay_SMG: TWC_Infantry_ColdWar_Malay_Rifleman
 	};
 	magazines[] =
 	{
-		MAG_8("LIB_30Rnd_45ACP_t"),
+		MAG_8("LIB_30Rnd_45ACP"),
 		MAG_2("LIB_MillsBomb"),
 		"LIB_No82"
 	};
 	respawnmagazines[] =
 	{
-		MAG_8("LIB_30Rnd_45ACP_t"),
+		MAG_8("LIB_30Rnd_45ACP"),
 		MAG_2("LIB_MillsBomb"),
 		"LIB_No82"
 	};
 };
-class TWC_Infantry_ColdWar_Malay_MG: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_1950_COIN_Tropic_MG: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "Machine Gunner";
 	linkedItems[] =
@@ -194,16 +204,16 @@ class TWC_Infantry_ColdWar_Malay_MG: TWC_Infantry_ColdWar_Malay_Rifleman
 		MAG_7("LIB_30Rnd_770x56")
 	};
 };
-class TWC_Infantry_ColdWar_Malay_MGASS: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_1950_COIN_Tropic_MGASS: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "Assistant Machine Gunner";
-	backpack = "TWC_Backpack_ColdWar_Malay_MGASS";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_MGASS";
 };
-class TWC_Infantry_ColdWar_Malay_SectionCommander: TWC_Infantry_ColdWar_Malay_SMG
+class TWC_Infantry_1950_COIN_Tropic_SectionCommander: TWC_Infantry_1950_COIN_Tropic_SMG
 {
 	displayName = "Section Commander";
 	uniformClass = "fow_u_uk_bd40_seac_02_corporal";
-	backpack = "TWC_Backpack_ColdWar_Malay_SectionCommander";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_SectionCommander";
 	TWC_isCommandRole = 1;
 	class EventHandlers: EventHandlers {
 	init = "(_this select 0) setVariable ['twc_keepMap',true]";
@@ -250,12 +260,12 @@ class TWC_Infantry_ColdWar_Malay_SectionCommander: TWC_Infantry_ColdWar_Malay_SM
 	};
 	magazines[] =
 	{
-		MAG_8("LIB_30Rnd_45ACP_t"),
+		MAG_8("LIB_30Rnd_45ACP"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
-		MAG_8("LIB_30Rnd_45ACP_t"),
+		MAG_8("LIB_30Rnd_45ACP"),
 		MAG_2("SmokeShell")
 	};
 	nightItems[] = {
@@ -263,11 +273,11 @@ class TWC_Infantry_ColdWar_Malay_SectionCommander: TWC_Infantry_ColdWar_Malay_SM
 		MAG_2("ACE_HandFlare_White")
 	};
 };
-class TWC_Infantry_ColdWar_Malay_2iC: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_1950_COIN_Tropic_2iC: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "2iC";
 	uniformClass = "fow_u_uk_bd40_seac_02_lance_corporal";
-	backpack = "TWC_Backpack_ColdWar_Malay_2iC";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_2iC";
 	TWC_isCommandRole = 1;
 	linkedItems[] =
 	{
@@ -288,11 +298,11 @@ class TWC_Infantry_ColdWar_Malay_2iC: TWC_Infantry_ColdWar_Malay_Rifleman
 };
 
 //Platoon Command
-class TWC_Infantry_ColdWar_Malay_Platoon_Commander: TWC_Infantry_ColdWar_Malay_SectionCommander
+class TWC_Infantry_1950_COIN_Tropic_Platoon_Commander: TWC_Infantry_1950_COIN_Tropic_SectionCommander
 {
 	displayName = "Platoon Commander";
 	uniformClass = "fow_u_uk_bd40_seac_02_lieutenant";
-	backpack = "TWC_Backpack_ColdWar_Malay_Platoon_Commander";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_Platoon_Commander";
 	TWC_isCommandRole = 1;
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable ['twc_keepMap',true]";
@@ -342,7 +352,7 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Commander: TWC_Infantry_ColdWar_Malay_S
 	};
 	magazines[] =
 	{
-		MAG_3("LIB_30Rnd_45ACP_t"),
+		MAG_3("LIB_30Rnd_45ACP"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellBlue"),
 		MAG_2("SmokeShellRed"),
@@ -350,7 +360,7 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Commander: TWC_Infantry_ColdWar_Malay_S
 	};
 	respawnmagazines[] =
 	{
-		MAG_3("LIB_30Rnd_45ACP_t"),
+		MAG_3("LIB_30Rnd_45ACP"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellBlue"),
 		MAG_2("SmokeShellRed"),
@@ -362,11 +372,11 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Commander: TWC_Infantry_ColdWar_Malay_S
 		"ACE_Flashlight_MX991"
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Platoon_Sergeant: TWC_Infantry_ColdWar_Malay_Platoon_Commander
+class TWC_Infantry_1950_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_1950_COIN_Tropic_Platoon_Commander
 {
 	displayName = "Platoon Sergeant";
 	uniformClass = "fow_u_uk_bd40_seac_02_sergeant";
-	backpack = "TWC_Backpack_ColdWar_Malay_Platoon_Sergeant";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_Platoon_Sergeant";
 	TWC_isCommandRole = 1;
 	linkedItems[] =
 	{
@@ -419,26 +429,26 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Sergeant: TWC_Infantry_ColdWar_Malay_Pl
 		MAG_2("SmokeShellGreen")
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Platoon_Medic: TWC_Infantry_ColdWar_Malay_SMG
+class TWC_Infantry_1950_COIN_Tropic_Platoon_Medic: TWC_Infantry_1950_COIN_Tropic_SMG
 {
 	displayName = "Platoon Medic";
-	backpack = "TWC_Backpack_ColdWar_Malay_Platoon_Medic";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_Platoon_Medic";
 	attendant = 1;
 	magazines[] =
 	{
-		MAG_3("LIB_30Rnd_45ACP_t"),
+		MAG_3("LIB_30Rnd_45ACP"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
-		MAG_3("LIB_30Rnd_45ACP_t"),
+		MAG_3("LIB_30Rnd_45ACP"),
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Platoon_Mortar: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_1950_COIN_Tropic_Platoon_Mortar: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "Platoon Mortar";
-	backpack = "TWC_Backpack_ColdWar_Malay_Platoon_Mortar";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_Platoon_Mortar";
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable ['twc_keepMap',true]";
 	};
@@ -486,19 +496,19 @@ class TWC_Infantry_ColdWar_Malay_Platoon_Mortar: TWC_Infantry_ColdWar_Malay_Rifl
 	};
 	magazines[] =
 	{
-		MAG_5("LIB_30Rnd_45ACP_t"),
+		MAG_5("LIB_30Rnd_45ACP"),
 		MAG_4("twc_2inch_he_1rnd")
 	};
 	respawnmagazines[] =
 	{
-		MAG_5("LIB_30Rnd_45ACP_t"),
+		MAG_5("LIB_30Rnd_45ACP"),
 		MAG_4("twc_2inch_he_1rnd")
 	};
 	nightItems[] = {
 		MAG_6("twc_2inch_illum_1rnd")
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Platoon_CSM: TWC_Infantry_ColdWar_Malay_Platoon_Sergeant
+class TWC_Infantry_1950_COIN_Tropic_Platoon_CSM: TWC_Infantry_1950_COIN_Tropic_Platoon_Sergeant
 {
 	displayName = "Company Sergeant Major";
 	scope = 1;
@@ -507,21 +517,21 @@ class TWC_Infantry_ColdWar_Malay_Platoon_CSM: TWC_Infantry_ColdWar_Malay_Platoon
 };
 
 //Company
-class TWC_Infantry_ColdWar_Malay_Company_Commander: TWC_Infantry_ColdWar_Malay_Platoon_Commander
+class TWC_Infantry_1950_COIN_Tropic_Company_Commander: TWC_Infantry_1950_COIN_Tropic_Platoon_Commander
 {
 	displayName = "Company Commander";
 };
-class TWC_Infantry_ColdWar_Malay_Company_2iC: TWC_Infantry_ColdWar_Malay_Platoon_Commander
+class TWC_Infantry_1950_COIN_Tropic_Company_2iC: TWC_Infantry_1950_COIN_Tropic_Platoon_Commander
 {
 	displayName = "Company 2iC";
 };
-class TWC_Infantry_ColdWar_Malay_Company_Sergeant: TWC_Infantry_ColdWar_Malay_Platoon_CSM
+class TWC_Infantry_1950_COIN_Tropic_Company_Sergeant: TWC_Infantry_1950_COIN_Tropic_Platoon_CSM
 {
 	scope = 2;
 };
 
 //AT
-class TWC_Infantry_ColdWar_Malay_Bazooka_Gunner: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_1950_COIN_Tropic_Bazooka_Gunner: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "Bazooka Gunner";
 	linkedItems[] =
@@ -556,21 +566,21 @@ class TWC_Infantry_ColdWar_Malay_Bazooka_Gunner: TWC_Infantry_ColdWar_Malay_Rifl
 	};
 	magazines[] =
 	{
-		MAG_5("LIB_30Rnd_45ACP_t")
+		MAG_5("LIB_30Rnd_45ACP")
 	};
 	respawnmagazines[] =
 	{
-		MAG_5("LIB_30Rnd_45ACP_t")
+		MAG_5("LIB_30Rnd_45ACP")
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Bazooka_Ass: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_1950_COIN_Tropic_Bazooka_Ass: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "Bazooka Assistant";
 	backpack = "TWC_Backpack_WW2_UK_Late_PIAT_Ass";
 };
 
 //Sniper Team
-class TWC_Infantry_ColdWar_Malay_Sniper: TWC_Infantry_ColdWar_Malay_Rifleman
+class TWC_Infantry_1950_COIN_Tropic_Sniper: TWC_Infantry_1950_COIN_Tropic_Rifleman
 {
 	displayName = "Sniper";
 	linkedItems[] =
@@ -610,7 +620,7 @@ class TWC_Infantry_ColdWar_Malay_Sniper: TWC_Infantry_ColdWar_Malay_Rifleman
 		MAG_13("LIB_10Rnd_770x56")
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Spotter: TWC_Infantry_ColdWar_Malay_Sniper
+class TWC_Infantry_1950_COIN_Tropic_Spotter: TWC_Infantry_1950_COIN_Tropic_Sniper
 {
 	displayName = "Spotter";
 	backpack = "TWC_Backpack_WW2_UK_Late_Spotter";
@@ -635,40 +645,40 @@ class TWC_Infantry_ColdWar_Malay_Spotter: TWC_Infantry_ColdWar_Malay_Sniper
 };
 
 //Artillery
-class TWC_Infantry_ColdWar_Malay_Artillery_Commander: TWC_Infantry_ColdWar_Malay_Platoon_Commander
+class TWC_Infantry_1950_COIN_Tropic_Artillery_Commander: TWC_Infantry_1950_COIN_Tropic_Platoon_Commander
 {
 	displayName = "Artillery Commander";
-	backpack = "TWC_Backpack_ColdWar_Malay_Artillery_Commander";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_Artillery_Commander";
 	uniformClass = "fow_u_uk_bd40_seac_02_corporal";
 	TWC_isCommandRole = 1;
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable ['twc_keepMap',true]";
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Artillery_Crew: TWC_Infantry_ColdWar_Malay_Artillery_Commander
+class TWC_Infantry_1950_COIN_Tropic_Artillery_Crew: TWC_Infantry_1950_COIN_Tropic_Artillery_Commander
 {
 	displayName = "Artillery Crew";
 	backpack = "fow_b_uk_bergenpack";
 	uniformClass = "fow_u_uk_bd40_seac_02_private";
 	TWC_isCommandRole = 0;
 };
-class TWC_Infantry_ColdWar_Malay_FO: TWC_Infantry_ColdWar_Malay_Artillery_Commander
+class TWC_Infantry_1950_COIN_Tropic_FO: TWC_Infantry_1950_COIN_Tropic_Artillery_Commander
 {
 	displayName = "Forward Observer";
-	backpack = "TWC_Backpack_ColdWar_Malay_FO";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_FO";
 	uniformClass = "fow_u_uk_bd40_seac_02_private";
 	TWC_isCommandRole = 0;
 };
 
 //Aircraft
-class TWC_Infantry_ColdWar_Malay_FAC: TWC_Infantry_ColdWar_Malay_FO
+class TWC_Infantry_1950_COIN_Tropic_FAC: TWC_Infantry_1950_COIN_Tropic_FO
 {
 	displayName = "Forward Air Controller";
-	backpack = "TWC_Backpack_ColdWar_Malay_FAC";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_FAC";
 };
 
 //FVs
-class TWC_Infantry_ColdWar_Malay_Vehicle_Commander: TWC_Infantry_ColdWar_Malay_SMG
+class TWC_Infantry_1950_COIN_Tropic_Vehicle_Commander: TWC_Infantry_1950_COIN_Tropic_SMG
 {
 	displayName = "Vehicle Commander";
 	uniformClass = "fow_u_uk_bd40_seac_02_corporal";
@@ -716,7 +726,7 @@ class TWC_Infantry_ColdWar_Malay_Vehicle_Commander: TWC_Infantry_ColdWar_Malay_S
 		MAG_5("LIB_32Rnd_9x19_Sten")
 	};
 };
-class TWC_Infantry_ColdWar_Malay_Vehicle_Crew: TWC_Infantry_ColdWar_Malay_Vehicle_Commander
+class TWC_Infantry_1950_COIN_Tropic_Vehicle_Crew: TWC_Infantry_1950_COIN_Tropic_Vehicle_Commander
 {
 	displayName = "Vehicle Crew";
 	uniformClass = "fow_u_uk_bd40_seac_02_private";
