@@ -303,7 +303,7 @@ class TWC_Backpack_1950_COIN_Bazooka_Ass: fow_b_us_rocket_bag
 };
 
 //Sniper Team
-class TWC_Backpack_1950_COIN_Spotter: B_LIB_UK_HSack_Tea
+class TWC_Backpack_1950_COIN_Spotter: B_LIB_UK_HSack
 {
 	scope = 1;
 	scopeArsenal = 1;
