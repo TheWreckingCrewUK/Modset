@@ -623,7 +623,7 @@ class TWC_Infantry_1950_COIN_Tropic_Sniper: TWC_Infantry_1950_COIN_Tropic_Riflem
 class TWC_Infantry_1950_COIN_Tropic_Spotter: TWC_Infantry_1950_COIN_Tropic_Sniper
 {
 	displayName = "Spotter";
-	backpack = "TWC_Backpack_WW2_UK_Late_Spotter";
+	backpack = "TWC_Backpack_1950_COIN_Tropic_Spotter";
 	TWC_isCommandRole = 1;
 	class EventHandlers: EventHandlers {
 		init = "(_this select 0) setVariable ['twc_keepMap',true]";
