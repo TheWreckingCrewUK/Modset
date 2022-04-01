@@ -3,7 +3,7 @@ class TWC_AmmoBox_WW2_US_Airborne_Squad_Portable: TWC_AmmoBox_WW2_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "US Squad Resupply - Airborne (Portable)";
-	editorSubcategory = "TWC_US_WW2_Crates";
+	editorSubcategory = "TWC_WW2_Crates";
 	
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing, 20);
@@ -54,7 +54,7 @@ class TWC_AmmoBox_WW2_US_Ranger_Assault_Squad_Portable: TWC_AmmoBox_WW2_Portable
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "US Squad Resupply - Ranger Assault (Portable)";
-	editorSubcategory = "TWC_US_WW2_Crates";
+	editorSubcategory = "TWC_WW2_Crates";
 	
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing, 20);
@@ -105,7 +105,7 @@ class TWC_AmmoBox_WW2_US_Ranger_Weapons_Squad_Portable: TWC_AmmoBox_WW2_Portable
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "US Squad Resupply - Ranger Weapons Squad (Portable)";
-	editorSubcategory = "TWC_US_WW2_Crates";
+	editorSubcategory = "TWC_US_Crates";
 	
 	class TransportItems {
 		ADD_ITEM(ACE_fieldDressing, 10);
