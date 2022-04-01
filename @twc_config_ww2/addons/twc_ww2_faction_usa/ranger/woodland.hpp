@@ -226,6 +226,18 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_TeamLeader: TWC_Infantry_WW2_US_Ranger
 		"itemMap",
 		"ItemWatch"
 	};
+	weapons[] =
+	{
+		"LIB_M1A1_Carbine",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"LIB_M1A1_Carbine",
+		"Throw",
+		"Put"
+	};
 	magazines[] =
 	{
 		MAG_13("LIB_15Rnd_762x33"),
@@ -403,7 +415,7 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_Platoon_Medic: TWC_Infantry_WW2_US_Ran
 	linkedItems[] =
 	{
 		"V_LIB_US_Assault_Vest_Light",
-		"H_LIB_US_Rangers_Helmet_Med_os",
+		"H_LIB_US_Helmet_Med_ns",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
