@@ -116,7 +116,7 @@ class CfgVehicles
 	#include "airborne\woodland.hpp"
 	#include "ranger\woodland.hpp"
 };
-	class CfgGroups
+class CfgGroups
 {
 	class INDEP
 	{

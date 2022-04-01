@@ -68,6 +68,7 @@ class TWC_Groups_WW2_USA_Infantry_Ranger_Woodland
 				vehicle = "TWC_Infantry_WW2_US_Ranger_Woodland_Autorifleman";
 				rank = "PRIVATE";
 				position[] = {16,0,0};
+		};
 	};
 	class WeaponsSquad
 	{
@@ -137,6 +138,7 @@ class TWC_Groups_WW2_USA_Infantry_Ranger_Woodland
 				rank = "PRIVATE";
 				position[] = {16,0,0};
 		};
+	};
 	class Platoon_Command
 	{
 		name = "Platoon Command";
