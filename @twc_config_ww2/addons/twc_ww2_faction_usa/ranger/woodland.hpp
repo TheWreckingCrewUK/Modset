@@ -147,11 +147,11 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_MG: TWC_Infantry_WW2_US_Ranger_Woodlan
 	};
 	magazines[] =
 	{
-		MAG_3("LIB_100Rnd_762x63")
+		MAG_5("LIB_50Rnd_762x63")
 	};
 	respawnMagazines[] =
 	{
-		MAG_3("LIB_100Rnd_762x63")
+		MAG_5("LIB_50Rnd_762x63")
 	};
 };
 class TWC_Infantry_WW2_US_Ranger_Woodland_MGASS: TWC_Infantry_WW2_US_Ranger_Woodland_Rifleman {
@@ -172,13 +172,13 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_MGASS: TWC_Infantry_WW2_US_Ranger_Wood
 	};
 	magazines[] =
 	{
-		MAG_3("LIB_15Rnd_762x33"),
-		MAG_5("LIB_100Rnd_762x63")
+		MAG_5("LIB_15Rnd_762x33"),
+		MAG_8("LIB_50Rnd_762x63")
 	};
 	respawnMagazines[] =
 	{
-		MAG_3("LIB_15Rnd_762x33"),
-		MAG_5("LIB_100Rnd_762x63")
+		MAG_5("LIB_15Rnd_762x33"),
+		MAG_8("LIB_50Rnd_762x63")
 	};
 };
 class TWC_Infantry_WW2_US_Ranger_Woodland_AutoRifleman: TWC_Infantry_WW2_US_Ranger_Woodland_Rifleman {

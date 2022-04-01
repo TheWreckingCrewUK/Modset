@@ -122,8 +122,8 @@ class TWC_AmmoBox_WW2_US_Ranger_Weapons_Squad_Portable: TWC_AmmoBox_WW2_Portable
 		// Thompson .45 ACP 30rnd
 		ADD_MAGA(LIB_30Rnd_45ACP, 4);
 		
-		// BAR, 20rnd
-		ADD_MAGA(LIB_100Rnd_762x63, 15);
+		// MG, 50rnd
+		ADD_MAGA(LIB_50Rnd_762x63, 15);
 		
 		// .30, 15rnd
 		ADD_MAGA(LIB_15Rnd_762x33, 24);
