@@ -14,9 +14,6 @@ class CfgPatches
 		};
 	};
 };
-
-class EventHandlers;
-
 class CfgFactionClasses {
 	class TWC_WW2_USA {
 		displayName = "TWC Operations - WW2 USA";
@@ -36,6 +33,14 @@ class CfgEditorSubcategories {
 		displayName = "Infantry (Rangers, Woodland)";
 	};
 };
+
+class EventHandlers;
+
+class CfgWeapons
+{
+	#include "weapons.hpp"
+};
+
 class CfgVehicles
 {
 	#include "backpacks.hpp"
@@ -118,7 +123,6 @@ class CfgVehicles
 		class TWC_Groups_WW2_USA
 		{
 			name = "TWC Groups WW2 USA";
-			#include "groups.hpp"
 			#include "airborne\groups.hpp"
 			#include "ranger\groups.hpp"
 		};

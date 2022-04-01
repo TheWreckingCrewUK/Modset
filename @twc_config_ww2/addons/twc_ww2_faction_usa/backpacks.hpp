@@ -9,3 +9,4 @@ class B_LIB_US_M36_Rocketbag_Empty;
 class B_LIB_SOV_RA_MedicalBag_Empty;
 
 #include "airborne\backpacks.hpp"
+#include "ranger\backpacks.hpp"

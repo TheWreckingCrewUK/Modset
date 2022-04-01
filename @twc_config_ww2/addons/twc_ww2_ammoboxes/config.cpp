@@ -32,6 +32,9 @@ class CfgEditorSubcategories {
 	class TWC_WW2_Crates {
 		displayName = "WW2";
 	};
+	class TWC_US_WW2_Crates {
+		displayName = "WW2 - US";
+	};
 };
 
 class CfgVehicles {
