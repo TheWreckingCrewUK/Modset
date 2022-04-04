@@ -385,11 +385,11 @@ class twc_l115a3_wd: UK3CB_BAF_L115A3 {
 	author = "jayman";
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot = "asdg_OpticRail_UK3CB_BAF_L115";
+			slot = "CowsSlot";
 			item = "RKSL_optic_PMII_525";
 		};
 		class LinkedItemsMuzzle {
-			slot = "asdg_MuzzleSlot_UK3CB_BAF_L115";
+			slot = "MuzzleSlot";
 			item= "UK3CB_BAF_Silencer_L115A3";
 		};
 	};
@@ -400,11 +400,11 @@ class twc_l115a3_gh: UK3CB_BAF_L115A3_Ghillie {
 	author = "jayman";
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot = "asdg_OpticRail_UK3CB_BAF_L115";
+			slot = "CowsSlot";
 			item = "RKSL_optic_PMII_525";
 		};
 		class LinkedItemsMuzzle {
-			slot = "asdg_muzzleslot_UK3CB_BAF_L115";
+			slot = "MuzzleSlot";
 			item= "UK3CB_BAF_Silencer_L115A3";
 		};
 	};

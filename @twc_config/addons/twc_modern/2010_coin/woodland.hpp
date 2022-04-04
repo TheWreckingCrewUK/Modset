@@ -1067,6 +1067,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Spotter: TWC_Infantry_Modern_Regular_Woo
 		"UK3CB_BAF_V_Osprey_Marksman_A",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -1075,6 +1076,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Spotter: TWC_Infantry_Modern_Regular_Woo
 		"UK3CB_BAF_V_Osprey_Marksman_A",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
