@@ -567,7 +567,7 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_Mortar: TWC_Infantry_WW2_US_Ranger_Woo
 		"LIB_1Rnd_60mm_M6"
 	};
 };
-class TWC_Infantry_WW2_US_Ranger_Woodland_Platoon_MortarAss: TWC_Infantry_WW2_US_Ranger_Woodland_Mortar {
+class TWC_Infantry_WW2_US_Ranger_Woodland_MortarAss: TWC_Infantry_WW2_US_Ranger_Woodland_Mortar {
 	displayName = "Assistant Mortarman";
 	backpack = "TWC_Backpack_WW2_US_Ranger_Mortar";
 	weapons[] =
