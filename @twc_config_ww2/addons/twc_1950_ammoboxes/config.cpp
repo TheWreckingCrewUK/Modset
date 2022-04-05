@@ -2,7 +2,7 @@ class CfgPatches {
 	// Builds upon the base addon
 	class TWC_1950_AmmoBoxes {
 		units[] = {
-			"TWC_AmmoBox_Coldwar_Malay_Portable"
+			"TWC_AmmoBox_1950s_COIN_Portable"
 		};
 		
 		weapons[] = {};
