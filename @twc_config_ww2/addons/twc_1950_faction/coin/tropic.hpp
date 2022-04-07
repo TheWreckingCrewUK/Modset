@@ -25,27 +25,25 @@ class TWC_Infantry_1950_COIN_Tropic_Rifleman: TWC_Infantry_1950_Base
 	};
 	weapons[] =
 	{
-		"LIB_M1_Carbine",
+		"fow_w_m1_carbine",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"LIB_M1_Carbine",
+		"fow_w_m1_carbine",
 		"Throw",
 		"Put"
 	};
 	magazines[] =
 	{
-		MAG_8("LIB_15Rnd_762x33"),
-		MAG_5("LIB_15Rnd_762x33_t"),
+		MAG_15("fow_15Rnd_762x33"),
 		MAG_2("LIB_MillsBomb"),
 		"LIB_No82"
 	};
 	respawnmagazines[] =
 	{
-		MAG_8("LIB_15Rnd_762x33"),
-		MAG_5("LIB_15Rnd_762x33_t"),
+		MAG_15("fow_15Rnd_762x33"),
 		MAG_2("LIB_MillsBomb"),
 		"LIB_No82"
 	};
@@ -396,7 +394,7 @@ class TWC_Infantry_1950_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_1950_COIN_Tro
 	};
 	weapons[] =
 	{
-		"LIB_M1_Carbine",
+		"fow_w_m1_carbine",
 		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
@@ -404,7 +402,7 @@ class TWC_Infantry_1950_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_1950_COIN_Tro
 	};
 	respawnweapons[] =
 	{
-		"LIB_M1_Carbine",
+		"fow_w_m1_carbine",
 		"TWC_No1Mk3SignalGun",
 		"LIB_Binocular_UK",
 		"Throw",
@@ -412,8 +410,7 @@ class TWC_Infantry_1950_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_1950_COIN_Tro
 	};
 	magazines[] =
 	{
-		MAG_8("LIB_15Rnd_762x33"),
-		MAG_5("LIB_15Rnd_762x33_t"),
+		MAG_15("fow_15Rnd_762x33"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellBlue"),
 		MAG_2("SmokeShellRed"),
@@ -421,8 +418,7 @@ class TWC_Infantry_1950_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_1950_COIN_Tro
 	};
 	respawnmagazines[] =
 	{
-		MAG_8("LIB_15Rnd_762x33"),
-		MAG_5("LIB_15Rnd_762x33_t"),
+		MAG_15("fow_15Rnd_762x33"),
 		MAG_2("SmokeShell"),
 		MAG_2("SmokeShellBlue"),
 		MAG_2("SmokeShellRed"),

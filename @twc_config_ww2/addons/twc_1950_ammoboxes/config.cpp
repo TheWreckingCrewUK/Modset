@@ -107,8 +107,7 @@ class CfgVehicles {
 			maga_nc(LIB_10Rnd_770x56, 10);
 			
 			// M1 Carbine 7.62 15rnd
-			maga_nc(LIB_15Rnd_762x33, 20);
-			maga_nc(LIB_15Rnd_762x33_t, 5);
+			maga_nc(fow_15Rnd_762x33, 25);
 			
 			// Bren .303 30rnd
 			maga_nc(LIB_30Rnd_770x56, 14);

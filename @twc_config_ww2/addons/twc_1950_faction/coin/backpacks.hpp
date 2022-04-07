@@ -20,7 +20,7 @@ class TWC_Backpack_1950_COIN_2iC: B_LIB_UK_HSack
 	scopeArsenal = 1;
 	maximumLoad = 200;
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33,14);
+		ADD_MAGA(fow_15Rnd_762x33,14);
 		ADD_MAGA(LIB_30Rnd_770x56,4);
 		ADD_MAGA(LIB_10Rnd_770x56,4);
 		ADD_MAGA(LIB_30Rnd_45ACP,4);
@@ -51,7 +51,7 @@ class TWC_Backpack_1950_COIN_Dismounted_Rifleman: B_LIB_UK_HSack
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33,12);
+		ADD_MAGA(fow_15Rnd_762x33,12);
 		ADD_MAGA(LIB_30Rnd_770x56,4);
 	};
 };
@@ -64,7 +64,7 @@ class TWC_Backpack_1950_COIN_Dismounted_Signaller: B_LIB_US_Radio_ACRE2
 		ADD_ITEM(ACRE_PRC77,1);
 	};
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33,12);
+		ADD_MAGA(fow_15Rnd_762x33,12);
 	};
 };
 class TWC_Backpack_1950_COIN_Dismounted_Marksman: B_LIB_UK_HSack
@@ -136,7 +136,7 @@ class TWC_Backpack_1950_COIN_Dismounted_2iC: B_LIB_UK_HSack
 	scopeArsenal = 1;
 	maximumLoad = 250;
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33,16);
+		ADD_MAGA(fow_15Rnd_762x33,16);
 		ADD_MAGA(LIB_30Rnd_770x56,8);
 		ADD_MAGA(LIB_30Rnd_45ACP,8);
 		ADD_MAGA(LIB_10Rnd_770x56,7);
@@ -171,7 +171,7 @@ class TWC_Backpack_1950_COIN_Platoon_Sergeant: B_LIB_UK_HSack
 	scopeArsenal = 1;
 	maximumLoad = 500;
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33,12);
+		ADD_MAGA(fow_15Rnd_762x33,12);
 		ADD_MAGA(LIB_30Rnd_770x56,6);
 		ADD_MAGA(LIB_30Rnd_45ACP,6);
 		ADD_MAGA(SmokeShell,3);
@@ -244,7 +244,7 @@ class TWC_Backpack_1950_COIN_Dismounted_Platoon_Sergeant: fow_b_uk_bergenpack
 	scopeArsenal = 1;
 	maximumLoad = 250;
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33,16);
+		ADD_MAGA(fow_15Rnd_762x33,16);
 		ADD_MAGA(LIB_30Rnd_770x56,8);
 		ADD_MAGA(LIB_30Rnd_45ACP,8);
 		ADD_MAGA(SmokeShell,3);
