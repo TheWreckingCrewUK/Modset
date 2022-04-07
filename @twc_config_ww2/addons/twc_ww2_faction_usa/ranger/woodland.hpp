@@ -158,14 +158,14 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_MGASS: TWC_Infantry_WW2_US_Ranger_Wood
 	displayName = "Assistant Machine Gunner";
 	weapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"LIB_M2_Tripod",
 		"Throw",
 		"Put"
 	};
 	respawnWeapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"LIB_M2_Tripod",
 		"Throw",
 		"Put"
@@ -228,13 +228,13 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_TeamLeader: TWC_Infantry_WW2_US_Ranger
 	};
 	weapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"Throw",
 		"Put"
 	};
 	respawnWeapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"Throw",
 		"Put"
 	};
@@ -488,14 +488,14 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_AT: TWC_Infantry_WW2_US_Ranger_Woodlan
 	};
 	weapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"LIB_M1A1_Bazooka",
 		"Throw",
 		"Put"
 	};
 	respawnWeapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"LIB_M1A1_Bazooka",
 		"Throw",
 		"Put"
@@ -517,13 +517,13 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_ATASS: TWC_Infantry_WW2_US_Ranger_Wood
 	backpack = "TWC_Backpack_WW2_US_Ranger_Platoon_AT";
 	weapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"Throw",
 		"Put"
 	};
 	respawnWeapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"Throw",
 		"Put"
 	};
@@ -544,14 +544,14 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_Mortar: TWC_Infantry_WW2_US_Ranger_Woo
 	init = "(_this select 0) setVariable ['twc_keepMap',true]";
 	weapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"TWC_Weapon_M2_Mortar",
 		"Throw",
 		"Put"
 	};
 	respawnWeapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"TWC_Weapon_M2_Mortar",
 		"Throw",
 		"Put"
@@ -572,14 +572,14 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_MortarAss: TWC_Infantry_WW2_US_Ranger_
 	backpack = "TWC_Backpack_WW2_US_Ranger_Mortar";
 	weapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"LIB_Binocular_US",
 		"Throw",
 		"Put"
 	};
 	respawnWeapons[] =
 	{
-		"LIB_M1A1_Carbine",
+		"fow_w_m1_carbine",
 		"LIB_Binocular_US",
 		"Throw",
 		"Put"
