@@ -23,11 +23,13 @@ class TWC_Infantry_WW2_US_Airborne_Woodland_Rifleman: TWC_Infantry_WW2_USA_Base 
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
+		"TWC_Item_Clicker_25",
 		"LIB_ACC_M1_Bayo"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
+		"TWC_Item_Clicker_25",
 		"LIB_ACC_M1_Bayo"
 	};
 	weapons[] =
@@ -121,11 +123,13 @@ class TWC_Infantry_WW2_US_Airborne_Woodland_SMG: TWC_Infantry_WW2_US_Airborne_Wo
 	};
 	Items[] =
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		"TWC_Item_Clicker_25"
 	};
 	respawnItems[] =
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		"TWC_Item_Clicker_25"
 	};
 	weapons[] =
 	{
@@ -373,11 +377,13 @@ class TWC_Infantry_WW2_US_Airborne_Woodland_Platoon_Leader: TWC_Infantry_WW2_US_
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
+		"TWC_Item_Clicker_25",
 		"ACE_MapTools"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
+		"TWC_Item_Clicker_25",
 		"ACE_MapTools"
 	};
 	weapons[] =
@@ -464,11 +470,13 @@ class TWC_Infantry_WW2_US_Airborne_Woodland_Platoon_Medic: TWC_Infantry_WW2_US_A
 	};
 	Items[] =
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		"TWC_Item_Clicker_25"
 	};
 	respawnItems[] =
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		"TWC_Item_Clicker_25"
 	};
 	weapons[] =
 	{
@@ -514,11 +522,13 @@ class TWC_Infantry_WW2_US_Airborne_Woodland_Platoon_AT: TWC_Infantry_WW2_US_Airb
 	};
 	Items[] =
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		"TWC_Item_Clicker_25"
 	};
 	respawnItems[] =
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		"TWC_Item_Clicker_25"
 	};
 	weapons[] =
 	{
