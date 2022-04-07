@@ -375,7 +375,7 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_US_
 	};
 	weapons[] =
 	{
-		"LIB_M1_Carbine",
+		"fow_w_m1_carbine",
 		"LIB_Binocular_US",
 		"TWC_No1Mk3SignalGun",
 		"Throw",
@@ -383,7 +383,7 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_US_
 	};
 	respawnWeapons[] =
 	{
-		"LIB_M1_Carbine",
+		"fow_w_m1_carbine",
 		"LIB_Binocular_US",
 		"TWC_No1Mk3SignalGun",
 		"Throw",
