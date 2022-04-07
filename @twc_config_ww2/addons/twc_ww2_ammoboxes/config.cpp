@@ -264,8 +264,8 @@ class CfgVehicles {
 			maga_nc(LIB_10Rnd_770x56, 10);
 			
 			// M1 Carbine 7.62 15rnd
-			maga_nc(LIB_15Rnd_762x33, 20);
-			maga_nc(LIB_15Rnd_762x33_t, 5);
+			maga_nc(fow_15Rnd_762x33, 20);
+			maga_nc(fow_15Rnd_762x33_t, 5);
 			
 			// Bren .303 30rnd
 			maga_nc(LIB_30Rnd_770x56, 14);
@@ -333,7 +333,7 @@ class CfgVehicles {
 		maga_nc(LIB_50Rnd_762x63, 8);
 		
 		// .30, 15rnd
-		maga_nc(LIB_15Rnd_762x33, 8);
+		maga_nc(fow_15Rnd_762x33, 8);
 		
 		// Smoke Grenades
 		maga_nc(SmokeShell, 6);
@@ -384,7 +384,7 @@ class TWC_AmmoBox_WW2_US_Ranger_Assault_Squad_Portable: TWC_AmmoBox_WW2_Portable
 		maga_nc(LIB_20Rnd_762x63, 10);
 		
 		// .30, 15rnd
-		maga_nc(LIB_15Rnd_762x33, 10);
+		maga_nc(fow_15Rnd_762x33, 10);
 		
 		// Smoke Grenades
 		maga_nc(SmokeShell, 6);
@@ -432,7 +432,7 @@ class TWC_AmmoBox_WW2_US_Ranger_Weapons_Squad_Portable: TWC_AmmoBox_WW2_Portable
 		maga_nc(LIB_50Rnd_762x63, 15);
 		
 		// .30, 15rnd
-		maga_nc(LIB_15Rnd_762x33, 15);
+		maga_nc(fow_15Rnd_762x33, 15);
 		
 		//M2 60mm Mortar
 		maga_nc(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 20);

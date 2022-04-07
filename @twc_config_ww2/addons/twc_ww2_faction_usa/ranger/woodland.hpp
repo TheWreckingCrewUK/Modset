@@ -172,12 +172,12 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_MGASS: TWC_Infantry_WW2_US_Ranger_Wood
 	};
 	magazines[] =
 	{
-		MAG_5("LIB_15Rnd_762x33"),
+		MAG_5("fow_15Rnd_762x33"),
 		MAG_8("LIB_50Rnd_762x63")
 	};
 	respawnMagazines[] =
 	{
-		MAG_5("LIB_15Rnd_762x33"),
+		MAG_5("fow_15Rnd_762x33"),
 		MAG_8("LIB_50Rnd_762x63")
 	};
 };
@@ -240,13 +240,13 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_TeamLeader: TWC_Infantry_WW2_US_Ranger
 	};
 	magazines[] =
 	{
-		MAG_13("LIB_15Rnd_762x33"),
+		MAG_13("fow_15Rnd_762x33"),
 		MAG_2("LIB_US_Mk_2"),
 		MAG_2("LIB_US_M18")
 	};
 	respawnMagazines[] =
 	{
-		MAG_13("LIB_15Rnd_762x33"),
+		MAG_13("fow_15Rnd_762x33"),
 		MAG_2("LIB_US_Mk_2"),
 		MAG_2("LIB_US_M18")
 	};
@@ -502,12 +502,12 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_AT: TWC_Infantry_WW2_US_Ranger_Woodlan
 	};
 	magazines[] =
 	{
-		MAG_5("LIB_15Rnd_762x33"),
+		MAG_5("fow_15Rnd_762x33"),
 		"LIB_1Rnd_60mm_M6"
 	};
 	respawnMagazines[] =
 	{
-		MAG_5("LIB_15Rnd_762x33"),
+		MAG_5("fow_15Rnd_762x33"),
 		"LIB_1Rnd_60mm_M6"
 	};
 };
@@ -529,12 +529,12 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_ATASS: TWC_Infantry_WW2_US_Ranger_Wood
 	};
 	magazines[] =
 	{
-		MAG_3("LIB_15Rnd_762x33"),
+		MAG_3("fow_15Rnd_762x33"),
 		"LIB_1Rnd_60mm_M6"
 	};
 	respawnMagazines[] =
 	{
-		MAG_3("LIB_15Rnd_762x33"),
+		MAG_3("fow_15Rnd_762x33"),
 		"LIB_1Rnd_60mm_M6"
 	};
 };
@@ -558,12 +558,12 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_Mortar: TWC_Infantry_WW2_US_Ranger_Woo
 	};
 	magazines[] =
 	{
-		MAG_3("LIB_15Rnd_762x33"),
+		MAG_3("fow_15Rnd_762x33"),
 		"LIB_1Rnd_60mm_M6"
 	};
 	respawnMagazines[] =
 	{
-		MAG_3("LIB_15Rnd_762x33"),
+		MAG_3("fow_15Rnd_762x33"),
 		"LIB_1Rnd_60mm_M6"
 	};
 };
@@ -586,10 +586,10 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_MortarAss: TWC_Infantry_WW2_US_Ranger_
 	};
 	magazines[] =
 	{
-		MAG_13("LIB_15Rnd_762x33")
+		MAG_13("fow_15Rnd_762x33")
 	};
 	respawnMagazines[] =
 	{
-		MAG_13("LIB_15Rnd_762x33")
+		MAG_13("fow_15Rnd_762x33")
 	};
 };

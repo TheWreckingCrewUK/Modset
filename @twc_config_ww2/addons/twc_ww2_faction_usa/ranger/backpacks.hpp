@@ -5,7 +5,7 @@ class TWC_Backpack_WW2_US_Ranger_TeamLeader: B_LIB_US_Backpack {
 	class TransportMagazines {
 		ADD_MAGA(LIB_8Rnd_762x63, 8);
 		ADD_MAGA(LIB_20Rnd_762x63,5);
-		ADD_MAGA(LIB_15Rnd_762x33, 4);
+		ADD_MAGA(fow_15Rnd_762x33, 4);
 		ADD_MAGA(LIB_30Rnd_45ACP, 2);
 		ADD_MAGA(LIB_1Rnd_G_Mk2, 4);
 		ADD_MAGA(LIB_1Rnd_G_M9A1, 2);
@@ -18,7 +18,7 @@ class TWC_Backpack_WW2_US_Ranger_Platoon_Sergeant: B_LIB_US_Backpack {
 	class TransportMagazines {
 		ADD_MAGA(LIB_8Rnd_762x63, 16);
 		ADD_MAGA(LIB_20Rnd_762x63,10);
-		ADD_MAGA(LIB_15Rnd_762x33, 8);
+		ADD_MAGA(fow_15Rnd_762x33, 8);
 		ADD_MAGA(LIB_30Rnd_45ACP, 6);
 		ADD_MAGA(LIB_1Rnd_G_Mk2, 6);
 		ADD_MAGA(LIB_1Rnd_G_M9A1, 4);
