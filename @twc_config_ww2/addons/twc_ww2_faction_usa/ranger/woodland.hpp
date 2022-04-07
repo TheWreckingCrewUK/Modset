@@ -212,7 +212,7 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_TeamLeader: TWC_Infantry_WW2_US_Ranger
 	backpack = "TWC_Backpack_WW2_US_Ranger_TeamLeader";
 	linkedItems[] =
 	{
-		"V_LIB_US_Assault_Vest",
+		"V_LIB_US_Assault_Vest_Light",
 		"H_LIB_US_Rangers_Helmet_NCO",
 		"ItemCompass",
 		"itemMap",
@@ -220,7 +220,7 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_TeamLeader: TWC_Infantry_WW2_US_Ranger
 	};
 	respawnLinkedItems[] =
 	{
-		"V_LIB_US_Assault_Vest",
+		"V_LIB_US_Assault_Vest_Light",
 		"H_LIB_US_Rangers_Helmet_NCO",
 		"ItemCompass",
 		"itemMap",
@@ -359,7 +359,7 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_US_
 	backpack = "TWC_Backpack_WW2_US_Ranger_Platoon_Sergeant";
 	linkedItems[] =
 	{
-		"V_LIB_US_Assault_Vest",
+		"V_LIB_US_Assault_Vest_Light",
 		"H_LIB_US_Rangers_Helmet_NCO",
 		"ItemCompass",
 		"itemMap",
@@ -367,7 +367,7 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_US_
 	};
 	respawnLinkedItems[] =
 	{
-		"V_LIB_US_Assault_Vest",
+		"V_LIB_US_Assault_Vest_Light",
 		"H_LIB_US_Rangers_Helmet_NCO",
 		"ItemCompass",
 		"itemMap",
@@ -464,7 +464,7 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_AT: TWC_Infantry_WW2_US_Ranger_Woodlan
 	backpack = "TWC_Backpack_WW2_US_Ranger_Platoon_AT";
 	linkedItems[] =
 	{
-		"V_LIB_US_Assault_Vest",
+		"V_LIB_US_Assault_Vest_Light",
 		"H_LIB_US_Rangers_Helmet_os",
 		"ItemCompass",
 		"itemMap",

@@ -7,6 +7,7 @@ class B_LIB_US_M36_Bandoleer;
 class B_LIB_US_M36_Rope;
 class B_LIB_US_M36_Rocketbag_Empty;
 class B_LIB_SOV_RA_MedicalBag_Empty;
+class B_LIB_US_Backpack;
 
 #include "airborne\backpacks.hpp"
 #include "ranger\backpacks.hpp"

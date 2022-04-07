@@ -1,5 +1,5 @@
 //Squad, Ranger, Woodland
-class TWC_Backpack_WW2_US_Ranger_TeamLeader: B_LIB_US_M36_Bandoleer {
+class TWC_Backpack_WW2_US_Ranger_TeamLeader: B_LIB_US_Backpack {
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
@@ -11,7 +11,7 @@ class TWC_Backpack_WW2_US_Ranger_TeamLeader: B_LIB_US_M36_Bandoleer {
 		ADD_MAGA(LIB_1Rnd_G_M9A1, 2);
 	};
 };
-class TWC_Backpack_WW2_US_Ranger_Platoon_Sergeant: B_LIB_US_M36_Rope {
+class TWC_Backpack_WW2_US_Ranger_Platoon_Sergeant: B_LIB_US_Backpack {
 	scope = 1;
 	scopeArsenal = 1;
 	maximumLoad = 250;
@@ -51,7 +51,7 @@ class TWC_Backpack_WW2_US_Ranger_Platoon_AT: B_LIB_US_M36_Rocketbag_Empty {
 		ADD_MAGA(LIB_1Rnd_60mm_M6, 4);
 	};
 };
-class TWC_Backpack_WW2_US_Ranger_Mortar: B_LIB_US_M36_Rope {
+class TWC_Backpack_WW2_US_Ranger_Mortar: B_LIB_US_M36_Rocketbag_Empty {
 	scope = 1;
 	scopeArsenal = 1;
 	maximumLoad = 250;

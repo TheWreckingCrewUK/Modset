@@ -375,16 +375,16 @@ class TWC_AmmoBox_WW2_US_Ranger_Assault_Squad_Portable: TWC_AmmoBox_WW2_Portable
 	
 	class TransportMagazines {
 		// Thompson .45 ACP 30rnd
-		maga_nc(LIB_30Rnd_45ACP, 10);
+		maga_nc(LIB_30Rnd_45ACP, 6);
 		
 		// .30-06, 8rnd
-		maga_nc(LIB_8Rnd_762x63, 24);
+		maga_nc(LIB_8Rnd_762x63, 30);
 		
 		// BAR, 20rnd
 		maga_nc(LIB_20Rnd_762x63, 10);
 		
 		// .30, 15rnd
-		maga_nc(LIB_15Rnd_762x33, 8);
+		maga_nc(LIB_15Rnd_762x33, 10);
 		
 		// Smoke Grenades
 		maga_nc(SmokeShell, 6);
@@ -397,14 +397,14 @@ class TWC_AmmoBox_WW2_US_Ranger_Assault_Squad_Portable: TWC_AmmoBox_WW2_Portable
 		maga_nc(LIB_1Rnd_G_M9A1, 2);
 		
 		// Flares
-		maga_nc(TWC_Magazine_SignalFlare_Blue, 3);
-		maga_nc(TWC_Magazine_SignalFlare_Red, 3);
-		maga_nc(TWC_Magazine_SignalFlare_Green, 3);
-		maga_nc(TWC_Magazine_SignalFlare_Yellow, 3);
-		maga_nc(TWC_Magazine_SignalSmoke_Green, 3);
-		maga_nc(TWC_Magazine_SignalSmoke_Red, 3);
-		maga_nc(TWC_Magazine_SignalSmoke_Yellow, 3);
-		maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
+		maga_nc(TWC_Magazine_SignalFlare_Blue, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Red, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Green, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Yellow, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Green, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Red, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Yellow, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Blue, 2);
 	};
 };
 class TWC_AmmoBox_WW2_US_Ranger_Weapons_Squad_Portable: TWC_AmmoBox_WW2_Portable {
@@ -448,18 +448,16 @@ class TWC_AmmoBox_WW2_US_Ranger_Weapons_Squad_Portable: TWC_AmmoBox_WW2_Portable
 		
 		// Frag Grenade
 		maga_nc(LIB_US_Mk_2, 8);
-		maga_nc(LIB_1Rnd_G_Mk2, 4);
-		maga_nc(LIB_1Rnd_G_M9A1, 2);
 		
 		// Flares
-		maga_nc(TWC_Magazine_SignalFlare_Blue, 3);
-		maga_nc(TWC_Magazine_SignalFlare_Red, 3);
-		maga_nc(TWC_Magazine_SignalFlare_Green, 3);
-		maga_nc(TWC_Magazine_SignalFlare_Yellow, 3);
-		maga_nc(TWC_Magazine_SignalSmoke_Green, 3);
-		maga_nc(TWC_Magazine_SignalSmoke_Red, 3);
-		maga_nc(TWC_Magazine_SignalSmoke_Yellow, 3);
-		maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
+		maga_nc(TWC_Magazine_SignalFlare_Blue, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Red, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Green, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Yellow, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Green, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Red, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Yellow, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Blue, 2);
 		};
 	};
 };
