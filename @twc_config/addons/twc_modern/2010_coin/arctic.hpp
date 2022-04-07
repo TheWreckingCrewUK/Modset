@@ -95,15 +95,11 @@ class TWC_Infantry_Modern_COIN_Arctic_Javelin_Ass: TWC_Infantry_Modern_COIN_Wood
 {
 	CATEGORY(TWC_Infantry_COIN_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-
-	respawnItems[] += {"SP_Gasmask_S6"};
 };
 class TWC_Infantry_Modern_COIN_Arctic_Starstreak_Ass: TWC_Infantry_Modern_COIN_Woodland_Starstreak_Ass
 {
 	CATEGORY(TWC_Infantry_COIN_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-
-	respawnItems[] += {"SP_Gasmask_S6"};
 };*/
 
 //Sniper Team
@@ -137,6 +133,7 @@ class TWC_Infantry_Modern_COIN_Arctic_Spotter: TWC_Infantry_Modern_COIN_Woodland
 		"UK3CB_BAF_V_Osprey_Marksman_A",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -145,6 +142,7 @@ class TWC_Infantry_Modern_COIN_Arctic_Spotter: TWC_Infantry_Modern_COIN_Woodland
 		"UK3CB_BAF_V_Osprey_Marksman_A",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
