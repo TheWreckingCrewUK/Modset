@@ -133,6 +133,14 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_SMG: TWC_Infantry_WW2_US_Ranger_Woodla
 class TWC_Infantry_WW2_US_Ranger_Woodland_MG: TWC_Infantry_WW2_US_Ranger_Woodland_Rifleman {
 	displayName = "Machine Gunner";
 	uniformClass = "U_LIB_US_Rangers_Private_1st";
+	Items[] =
+	{
+		MEDICAL_LOADOUT
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT
+	};
 	weapons[] =
 	{
 		"LIB_M1919A4",
@@ -156,6 +164,14 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_MG: TWC_Infantry_WW2_US_Ranger_Woodlan
 };
 class TWC_Infantry_WW2_US_Ranger_Woodland_MGASS: TWC_Infantry_WW2_US_Ranger_Woodland_Rifleman {
 	displayName = "Assistant Machine Gunner";
+	Items[] =
+	{
+		MEDICAL_LOADOUT
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT
+	};
 	weapons[] =
 	{
 		"fow_w_m1_carbine",
@@ -184,6 +200,14 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_MGASS: TWC_Infantry_WW2_US_Ranger_Wood
 class TWC_Infantry_WW2_US_Ranger_Woodland_AutoRifleman: TWC_Infantry_WW2_US_Ranger_Woodland_Rifleman {
 	displayName = "Autorifleman";
 	uniformClass = "U_LIB_US_Rangers_Private_1st";
+	Items[] =
+	{
+		MEDICAL_LOADOUT
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT
+	};
 	weapons[] =
 	{
 		"LIB_M1918A2_BAR",
@@ -225,6 +249,14 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_TeamLeader: TWC_Infantry_WW2_US_Ranger
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT
 	};
 	weapons[] =
 	{
@@ -372,6 +404,14 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_US_
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT
 	};
 	weapons[] =
 	{
