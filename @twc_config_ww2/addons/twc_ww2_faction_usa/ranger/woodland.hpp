@@ -391,7 +391,7 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_US_
 	};
 	magazines[] =
 	{
-		MAG_13("LIB_8Rnd_762x63"),
+		MAG_13("fow_15Rnd_762x33"),
 		MAG_2("LIB_US_M18"),
 		MAG_3("TWC_Magazine_SignalSmoke_Green"),
 	    MAG_3("TWC_Magazine_SignalSmoke_Red"),
@@ -400,7 +400,7 @@ class TWC_Infantry_WW2_US_Ranger_Woodland_Platoon_Sergeant: TWC_Infantry_WW2_US_
 	};
 	respawnMagazines[] =
 	{
-		MAG_13("LIB_8Rnd_762x63"),
+		MAG_13("fow_15Rnd_762x33"),
 		MAG_2("LIB_US_M18"),
 		MAG_3("TWC_Magazine_SignalSmoke_Green"),
 	    MAG_3("TWC_Magazine_SignalSmoke_Red"),
