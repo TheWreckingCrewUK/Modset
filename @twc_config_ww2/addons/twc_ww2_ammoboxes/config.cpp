@@ -31,6 +31,9 @@ class CfgEditorSubcategories {
 	class TWC_WW2_Crates {
 		displayName = "WW2";
 	};
+	class TWC_US_WW2_Crates {
+		displayName = "WW2 - US";
+	};
 };
 
 class CfgVehicles {
@@ -235,7 +238,7 @@ class CfgVehicles {
 			maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
 		};
 	};
-	
+
 	class LIB_AmmoCrate_Mortar_SU;
 	class TWC_AmmoBox_WW2_Static_Portable: LIB_AmmoCrate_Mortar_SU {
 		displayName = "Static Resupply";
@@ -249,5 +252,161 @@ class CfgVehicles {
 		class TransportBackpacks {};
 		class TransportItems {};
 		class TransportMagazines {};
+	};
+	class TWC_AmmoBox_WW2_US_Airborne_Squad_Portable: TWC_AmmoBox_WW2_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "US Squad Resupply - Airborne (Portable)";
+	editorSubcategory = "TWC_US_WW2_Crates";
+	
+	class TransportItems {
+		item_nc(ACE_fieldDressing, 15);
+		item_nc(ACE_elasticBandage, 15);
+		item_nc(ACE_quikclot, 15);
+		item_nc(ACE_packingBandage, 15);
+			
+		item_nc(ACE_morphine, 6);
+		item_nc(ACE_epinephrine, 6);
+		item_nc(ACE_tourniquet, 4);
+	};
+	
+	class TransportMagazines {
+		// Thompson .45 ACP 30rnd
+		maga_nc(LIB_30Rnd_45ACP, 10);
+		
+		// .30-06, 8rnd
+		maga_nc(LIB_8Rnd_762x63, 24);
+		
+		// .30-06, 50rnd
+		maga_nc(LIB_50Rnd_762x63, 8);
+		
+		// .30, 15rnd
+		maga_nc(fow_15Rnd_762x33, 8);
+		
+		// Smoke Grenades
+		maga_nc(SmokeShell, 6);
+		maga_nc(SmokeShellGreen, 2);
+		maga_nc(SmokeShellRed, 2);
+		
+		// Frag Grenade
+		maga_nc(LIB_US_Mk_2, 8);
+		maga_nc(LIB_1Rnd_G_Mk2, 4);
+		maga_nc(LIB_1Rnd_G_M9A1, 2);
+		
+		// Flares
+		maga_nc(TWC_Magazine_SignalFlare_Blue, 3);
+		maga_nc(TWC_Magazine_SignalFlare_Red, 3);
+		maga_nc(TWC_Magazine_SignalFlare_Green, 3);
+		maga_nc(TWC_Magazine_SignalFlare_Yellow, 3);
+		maga_nc(TWC_Magazine_SignalSmoke_Green, 3);
+		maga_nc(TWC_Magazine_SignalSmoke_Red, 3);
+		maga_nc(TWC_Magazine_SignalSmoke_Yellow, 3);
+		maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
+	};
+};
+  
+class TWC_AmmoBox_WW2_US_Ranger_Assault_Squad_Portable: TWC_AmmoBox_WW2_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "US Squad Resupply - Ranger Assault (Portable)";
+	editorSubcategory = "TWC_US_WW2_Crates";
+	
+	class TransportItems {
+		item_nc(ACE_fieldDressing, 15);
+		item_nc(ACE_elasticBandage, 15);
+		item_nc(ACE_quikclot, 15);
+		item_nc(ACE_packingBandage, 15);
+			
+		item_nc(ACE_morphine, 6);
+		item_nc(ACE_epinephrine, 6);
+		item_nc(ACE_tourniquet, 4);
+	};
+	
+	class TransportMagazines {
+		// Thompson .45 ACP 30rnd
+		maga_nc(LIB_30Rnd_45ACP, 6);
+		
+		// .30-06, 8rnd
+		maga_nc(LIB_8Rnd_762x63, 30);
+		
+		// BAR, 20rnd
+		maga_nc(LIB_20Rnd_762x63, 10);
+		
+		// .30, 15rnd
+		maga_nc(fow_15Rnd_762x33, 10);
+		
+		// Smoke Grenades
+		maga_nc(SmokeShell, 6);
+		maga_nc(SmokeShellGreen, 2);
+		maga_nc(SmokeShellRed, 2);
+		
+		// Frag Grenade
+		maga_nc(LIB_US_Mk_2, 8);
+		maga_nc(LIB_1Rnd_G_Mk2, 4);
+		maga_nc(LIB_1Rnd_G_M9A1, 2);
+		
+		// Flares
+		maga_nc(TWC_Magazine_SignalFlare_Blue, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Red, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Green, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Yellow, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Green, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Red, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Yellow, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Blue, 2);
+	};
+};
+class TWC_AmmoBox_WW2_US_Ranger_Weapons_Squad_Portable: TWC_AmmoBox_WW2_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "US Squad Resupply - Ranger Weapons Squad (Portable)";
+	editorSubcategory = "TWC_US_WW2_Crates";
+	
+	class TransportItems {
+		item_nc(ACE_fieldDressing, 15);
+		item_nc(ACE_elasticBandage, 15);
+		item_nc(ACE_quikclot, 15);
+		item_nc(ACE_packingBandage, 15);
+			
+		item_nc(ACE_morphine, 6);
+		item_nc(ACE_epinephrine, 6);
+		item_nc(ACE_tourniquet, 4);
+	};
+	
+	class TransportMagazines {
+		// Thompson .45 ACP 30rnd
+		maga_nc(LIB_30Rnd_45ACP, 4);
+		
+		// MG, 50rnd
+		maga_nc(LIB_50Rnd_762x63, 15);
+		
+		// .30, 15rnd
+		maga_nc(fow_15Rnd_762x33, 15);
+		
+		//M2 60mm Mortar
+		maga_nc(UK3CB_BAF_1Rnd_60mm_Mo_Shells, 20);
+		maga_nc(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 8);
+		
+		//Bazooka
+		maga_nc(LIB_1Rnd_60mm_M6, 8);
+		
+		// Smoke Grenades
+		maga_nc(SmokeShell, 6);
+		maga_nc(SmokeShellGreen, 2);
+		maga_nc(SmokeShellRed, 2);
+		
+		// Frag Grenade
+		maga_nc(LIB_US_Mk_2, 8);
+		
+		// Flares
+		maga_nc(TWC_Magazine_SignalFlare_Blue, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Red, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Green, 2);
+		maga_nc(TWC_Magazine_SignalFlare_Yellow, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Green, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Red, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Yellow, 2);
+		maga_nc(TWC_Magazine_SignalSmoke_Blue, 2);
+		};
 	};
 };
