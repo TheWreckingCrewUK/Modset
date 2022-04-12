@@ -1725,7 +1725,24 @@ class CfgVehicles {
 			sync[] = {"AnyAI"};
 		};
 	};
-	
+	class TWC_Module_dostop: Module_F {
+		author = "[TWC] Ross";
+		category = "twc_mission_framework";
+		displayName = "Set Combat Ready Units";
+		description = "Set Unit(s) as Stationary until contacted by players";
+		function = "twc_fnc_moduledostop";
+		scope = 2;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		isDisposable = 0;
+		icon = "\twc_framework\ui\stationary_units_ca.paa";
+		functionPriority = 1;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription {
+			description = "Set Unit(s) as Stationary until contacted by players";
+			sync[] = {"AnyAI"};
+		};
+	};
 	class TWC_Module_WaveSpawn: Module_F {
 		author = "[TWC] Rik";
 		category = "twc_mission_framework";
