@@ -15,7 +15,6 @@ class CfgVehicles {
 		typicalCargo[] = {"TWC_Infantry_WW2_UK_Early_Woodland_Rifleman"};
 		side = 2;
 		displayName = "6 Pounder";
-		LIB_isTowable = 1;
 		faction = "TWC_WW2";
 		crew = "TWC_Infantry_WW2_UK_Early_Woodland_Rifleman";
 		
