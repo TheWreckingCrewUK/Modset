@@ -101,7 +101,7 @@ class CfgMagazines {
 		initSpeed = 810;
 		model = "\A3\Structures_F_EPB\Items\Military\Ammobox_rounds_F.p3d";
 		picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
-		mass = 72;
+		mass = 18;
 	};
 	class TWC_Magazine_57mm_1rnd_APCBC: TWC_Magazine_57mm_1rnd_HE {
 		displayName = "Armour Piercing Capped, Ballistic Capped";
