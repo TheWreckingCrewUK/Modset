@@ -1,9 +1,13 @@
 class CfgVehicles {
-	class fow_w_6Pounder {
-		class Turrets {
-			class MainTurret;
-		};
-	};
+	class LandVehicle;
+	class StaticWeapon: LandVehicle {
+         class Turrets;
+    };
+	class fow_w_6Pounder: StaticWeapon {
+        class Turrets: Turrets {
+            class MainTurret;
+        };
+    };
 	class TWC_Vehicle_WW2_6pounder: fow_w_6Pounder {
 		author = "[TWC] Ross";
 		scope = 2;
@@ -13,6 +17,7 @@ class CfgVehicles {
 		displayName = "6 Pounder";
 		faction = "TWC_WW2";
 		crew = "TWC_Infantry_WW2_UK_Early_Woodland_Rifleman";
+		
 			class Turrets: Turrets {
 			class MainTurret: MainTurret {
 				weapons[] = {"TWC_Weapon_57mm_6pounder_Vehicle"};
