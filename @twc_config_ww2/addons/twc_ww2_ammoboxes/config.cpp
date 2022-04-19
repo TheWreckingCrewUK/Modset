@@ -460,4 +460,50 @@ class TWC_AmmoBox_WW2_US_Ranger_Weapons_Squad_Portable: TWC_AmmoBox_WW2_Portable
 		maga_nc(TWC_Magazine_SignalSmoke_Blue, 2);
 		};
 	};
+	//6 Pounder
+class TWC_AmmoBox_WW2_6Pounder_Portable_HE: TWC_AmmoBox_WW2_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "6 Pounder Gun (Portable, HE)";
+	
+	class TransportMagazines {
+		maga_nc(TWC_Magazine_57mm_1rnd_HE, 10);
+		};
+	};
+	class TWC_AmmoBox_WW2_6Pounder_Portable_AP: TWC_AmmoBox_WW2_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "6 Pounder Gun (Portable, AP)";
+	
+	class TransportMagazines {
+		maga_nc(TWC_Magazine_57mm_1rnd_AP, 10);
+		};
+	};
+		class TWC_AmmoBox_WW2_6Pounder_Portable_APCBC: TWC_AmmoBox_WW2_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "6 Pounder Gun (Portable, APCBC)";
+	
+	class TransportMagazines {
+		maga_nc(TWC_Magazine_57mm_1rnd_APCBC, 10);
+		};
+	};
+		class TWC_AmmoBox_WW2_6Pounder_Portable_APCR: TWC_AmmoBox_WW2_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "6 Pounder Gun (Portable, APCR)";
+	
+	class TransportMagazines {
+		maga_nc(TWC_Magazine_57mm_1rnd_APCR, 10);
+		};
+	};
+		class TWC_AmmoBox_WW2_6Pounder_Portable_APDS: TWC_AmmoBox_WW2_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "6 Pounder Gun (Portable, APDS)";
+	
+	class TransportMagazines {
+		maga_nc(TWC_Magazine_57mm_1rnd_APDS, 10);
+		};
+	};
 };
