@@ -1,9 +1,9 @@
-class fow_w_57mm_6Pdr {
+class fow_w_6Pounder {
 	class Turrets {
 		class MainTurret;
 	};
 };
-class TWC_Vehicle_WW2_6pounder: fow_w_57mm_6Pdr {
+class TWC_Vehicle_WW2_6pounder: fow_w_6Pounder {
 	author = "[TWC] Ross";
 	scope = 2;
 	scopeCurator = 2;

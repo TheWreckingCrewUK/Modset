@@ -131,6 +131,7 @@ class CfgWeapons {
 	};
 	
 //6 Pounder 
+	class fow_w_57mm_6Pdr;
 	class TWC_Weapon_57mm_6pounder_Vehicle: fow_w_57mm_6Pdr {
 		displayname = "6 Pounder";
 		reloadTime = 0.5;
