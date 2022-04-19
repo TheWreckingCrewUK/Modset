@@ -130,12 +130,12 @@ class CfgWeapons {
 		};
 	};
 //6 Pounder 
-	class fow_w_6Pounder {
+	class fow_w_57mm_6Pdr {
 		class Turrets {
 			class MainTurret;
 		};
 	};
-	class TWC_Vehicle_WW2_6pounder: fow_w_6Pounder {
+	class TWC_Vehicle_WW2_6pounder: fow_w_57mm_6Pdr {
 		author = "[TWC] Ross";
 		scope = 2;
 		scopeCurator = 2;
@@ -167,7 +167,7 @@ class CfgWeapons {
 			disassembleFunc = ""; // A callback function for when the CSW gets disassembled. Arguments: [tripod, staticWeapon]
 		};
 	};
-	class TWC_Weapon_57mm_6pounder_Vehicle: fow_w_6Pounder {
+	class TWC_Weapon_57mm_6pounder_Vehicle: fow_w_57mm_6Pdr {
 		displayname = "6 Pounder";
 		reloadTime = 0.5;
 		magazineReloadTime = 0.5;
