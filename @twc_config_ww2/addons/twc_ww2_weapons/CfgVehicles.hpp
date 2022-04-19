@@ -13,7 +13,7 @@ class CfgVehicles {
 		scope = 2;
 		scopeCurator = 2;
 		typicalCargo[] = {"TWC_Infantry_WW2_UK_Early_Woodland_Rifleman"};
-		side = 4;
+		side = 2;
 		displayName = "6 Pounder";
 		LIB_isTowable = 1;
 		faction = "TWC_WW2";
