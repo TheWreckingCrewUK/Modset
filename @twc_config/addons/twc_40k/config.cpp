@@ -90,6 +90,24 @@ class CfgVehicles
 			ADD_MAGA(TIOW_ig_frag_grenade_mag,2);
 		};
 	};
+	class TWC_40k_IG_Backpack_Medic: TIOW_CadMedicaeBackpack {
+		scope = 1;
+		scopeArsenal = 1;
+		class TransportItems {
+			ADD_ITEM(ACE_fieldDressing,20);
+			ADD_ITEM(ACE_morphine,10);
+			ADD_ITEM(ACE_elasticBandage,20);
+			ADD_ITEM(ACE_quikclot,20); \
+			ADD_ITEM(ACE_packingBandage,20);
+			ADD_ITEM(ACE_adenosine,4);
+			ADD_ITEM(ACE_atropine,4);
+			ADD_ITEM(ACE_epinephrine,10);
+			ADD_ITEM(ACE_salineIV_500,6);
+			ADD_ITEM(ACE_tourniquet,4);
+			ADD_ITEM(ACE_personalAidKit,1);
+			ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		};
+	};
 	
 	class TWC_40k_IG_Base: B_Soldier_base_F {
 		scope = 1;
@@ -304,6 +322,11 @@ class CfgVehicles
 			MAG_7("LuciusLaspistol_mag"),
 			MAG_2("TIOW_ig_frag_grenade_mag")
 		};
+	};
+	class TWC_40k_IG_Guardsman: TWC_40k_IG_Base {
+		scope = 2;
+		displayName = "Medic";
+		backpack = "TWC_40k_IG_Backpack_Medic";
 	};
 	
 	class TWC_40k_IG_PltCommander: TWC_40k_IG_Sergeant {
