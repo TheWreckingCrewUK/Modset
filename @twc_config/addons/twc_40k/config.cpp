@@ -38,6 +38,8 @@ class CfgVehicles
 	class B_Soldier_base_F;
 	
 	#define ADD_MAGA(a,b) class _nc_##a {magazine = a; count = b;}
+	#define ADD_WEAP(a,b) class _nc_##a {weapon = a; count = b;}
+	#define ADD_ITEM(a,b) class _nc_##a {name = a; count = b;}
 
 	#define MEDICAL_LOADOUT "ACRE_PRC343","ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
 	#define MAG_2(a) a, a
@@ -55,6 +57,7 @@ class CfgVehicles
 			vehicleClass = a;
 
 	class TIOW_CadBackpack;
+	class TIOW_CadMedicaeBackpack;
 	class TWC_40k_IG_Backpack_Guardsman: TIOW_CadBackpack {
 		scope = 1;
 		scopeArsenal = 1;
@@ -97,7 +100,7 @@ class CfgVehicles
 			ADD_ITEM(ACE_fieldDressing,20);
 			ADD_ITEM(ACE_morphine,10);
 			ADD_ITEM(ACE_elasticBandage,20);
-			ADD_ITEM(ACE_quikclot,20); \
+			ADD_ITEM(ACE_quikclot,20);
 			ADD_ITEM(ACE_packingBandage,20);
 			ADD_ITEM(ACE_adenosine,4);
 			ADD_ITEM(ACE_atropine,4);
@@ -323,7 +326,7 @@ class CfgVehicles
 			MAG_2("TIOW_ig_frag_grenade_mag")
 		};
 	};
-	class TWC_40k_IG_Guardsman: TWC_40k_IG_Base {
+	class TWC_40k_IG_PltMedic: TWC_40k_IG_Backpack_Guardsman {
 		scope = 2;
 		displayName = "Medic";
 		backpack = "TWC_40k_IG_Backpack_Medic";
