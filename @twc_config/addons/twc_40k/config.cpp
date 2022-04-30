@@ -55,6 +55,39 @@ class CfgVehicles
 	#define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 	#define CATEGORY(a) editorSubcategory = a;\
 			vehicleClass = a;
+	class TIOW_IG_WeaponBox1_836;
+	class TWC_AmmoBox_IG_Portable: TIOW_IG_WeaponBox1_836 {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "IG Section Resupply (Portable)";
+		editorCategory = "TWC_Crates";
+		editorSubcategory = "TWC_Crates_Other";
+
+		ace_cargo_canLoad     = 0;
+		ace_cargo_hasCargo    = 0;
+
+		ace_dragging_canCarry = 0;
+		ace_dragging_canDrag  = 0;
+		
+		class TransportItems {
+			ADD_ITEM(ACE_fieldDressing, 12);
+			ADD_ITEM(ACE_elasticBandage, 12);
+			ADD_ITEM(ACE_quikclot, 12);
+			ADD_ITEM(ACE_packingBandage, 12);
+			
+			ADD_ITEM(ACE_morphine, 6);
+			ADD_ITEM(ACE_epinephrine, 6);
+			ADD_ITEM(ACE_tourniquet, 6);
+		};
+		
+		class TransportMagazines {
+			ADD_MAGA(LuciusLaspistol_mag, 6);
+			ADD_MAGA(M36KantRifle_mag, 14);
+			ADD_MAGA(DK_PlasmaGun_Flask, 6);
+			ADD_MAGA(TIOW_Meltagun_Mag, 4);
+			ADD_MAGA(TIOW_ig_frag_grenade_mag, 6);
+		};
+	};
 
 	class TIOW_CadBackpack;
 	class TIOW_CadMedicaeBackpack;
@@ -326,7 +359,7 @@ class CfgVehicles
 			MAG_2("TIOW_ig_frag_grenade_mag")
 		};
 	};
-	class TWC_40k_IG_PltMedic: TWC_40k_IG_Backpack_Guardsman {
+	class TWC_40k_IG_PltMedic: TWC_40k_IG_Guardsman {
 		scope = 2;
 		displayName = "Medic";
 		backpack = "TWC_40k_IG_Backpack_Medic";
