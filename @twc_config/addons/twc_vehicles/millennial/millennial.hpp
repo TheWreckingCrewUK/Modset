@@ -12,6 +12,7 @@
 #define MILLENNIAL_SCORPION_MOD 1
 #define MILLENNIAL_CHIEFTAIN_MOD 1
 #define MILLENNIAL_PUMA_MOD 1
+#define MILLENNIAL_LYNX_MOD 1
 
 // section vehicle resupply total (manipulated by modifiers)
 #define SECTION_FIELDDRESSING 20

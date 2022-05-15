@@ -157,7 +157,7 @@ class TWC_Vehicle_2000_FV432_Woodland_COIN: TWC_Vehicle_2000_FV432_Woodland {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MILLENNIAL_SCIMITAR_MOD
-class TWC_Vehicle_Millennial_Scimitar_Chameleon: ukcw_cvrt_Scim_w_L1 {
+class TWC_Vehicle_Millennial_Scimitar_Chameleon: cwr3_b_uk_fv107 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -186,7 +186,7 @@ class TWC_Vehicle_Millennial_Scimitar_Chameleon: ukcw_cvrt_Scim_w_L1 {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MILLENNIAL_SCORPION_MOD
-class TWC_Vehicle_Millennial_Scorpion_Chameleon: ukcw_Scorpion_w_L1 {
+class TWC_Vehicle_Millennial_Scorpion_Chameleon: cwr3_b_uk_fv101 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
@@ -346,7 +346,7 @@ class TWC_Vehicle_2000_Warrior_Desert: TWC_Vehicle_FV510_D {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE MILLENNIAL_CHIEFTAIN_MOD
-class TWC_Vehicle_Millennial_Chieftain_Woodland: ukcw_chieftainmk10 {
+class TWC_Vehicle_Millennial_Chieftain_Woodland: cwr3_b_uk_fv4201 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
