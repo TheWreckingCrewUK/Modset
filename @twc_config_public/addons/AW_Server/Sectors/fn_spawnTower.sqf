@@ -61,7 +61,6 @@ private _nearTrees = nearestTerrainObjects [_spawnPos,["TREE"],50,false];
 			_object addEventHandler ["Killed",{_this call AW_fnc_towerDestroyed}];
 			if (_sector in AW_bluforSectors) then {
 				AW_bluforTowerCount = AW_bluforTowerCount + 1;
-				publicVariable "AW_bluforTowerCount";
 			};
 		};
 	};

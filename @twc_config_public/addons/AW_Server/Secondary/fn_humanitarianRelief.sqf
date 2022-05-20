@@ -11,8 +11,7 @@ params [
 switch _stage do {
 	case "init": {
 		if (AW_secondaryActive isNotEqualTo "") exitWith {["A secondary mission is in already progress."] remoteExecCall ["AW_fnc_notify",remoteExecutedOwner]};
-		private _array = AW_citySectors arrayIntersect AW_bluforSectors;
-		_array append (AW_townSectors arrayIntersect AW_bluforSectors);
+		private _array = [["city","town"],true] call AW_fnc_getSectorsByType;
 		private _targetSector = [_array] call AW_fnc_findFrontlineSector;
 
 		AW_secondaryActive = "Relief";

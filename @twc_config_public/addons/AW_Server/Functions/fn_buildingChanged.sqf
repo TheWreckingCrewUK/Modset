@@ -19,9 +19,7 @@ if ([_pos] call AW_fnc_isNearFOB) then {
 	};
 };
 
-private _sectorsToCheck = +AW_townSectors;
-_sectorsToCheck append AW_citySectors;
-_sectorsToCheck append AW_factorySectors;
+private _sectorsToCheck = [["city","town","factory"]] call AW_fnc_getSectorsByType;
 ([_pos,_sectorsToCheck] call AW_fnc_findNearestSector) params ["_sector","","_distance"];
 private _radius = ((getArray(missionConfigFile >> "Core_Settings" >> "AW_sectorCaptureRadius")) select 2) * 1.2; //selecting biggest - city
 

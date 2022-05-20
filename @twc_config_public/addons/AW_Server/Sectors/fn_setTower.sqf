@@ -16,12 +16,10 @@ if (_towerObjects isEqualTo []) then {
 	_towerArray set [2,-1];
 	if (_blufor) then {
 		AW_bluforTowerCount = AW_bluforTowerCount - 1;
-		publicVariable "AW_bluforTowerCount";
 	};
 } else {
 	_towerArray set [2,0];
 	if (_blufor) then {
 		AW_bluforTowerCount = AW_bluforTowerCount + 1;
-		publicVariable "AW_bluforTowerCount";
 	};
 };
