@@ -2,7 +2,7 @@
 //Section
 class TWC_Infantry_1950_COIN_Tropic_Rifleman: TWC_Infantry_1950_Base
 {
-	CATEGORY(TWC_Infantry_1950_COIN_Tropic)
+	CATEGORY(TWC_Infantry_COIN_Tropic)
 	scope = 2;
 	displayName = "Rifleman";
 	uniformClass="fow_u_uk_bd40_seac_02_private";
