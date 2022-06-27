@@ -11,6 +11,4 @@ class fow_b_uk_piat;
 class fow_b_uk_bergenpack;
 class fow_b_us_rocket_bag;
 
-#include "uk_late\backpacks.hpp"
-#include "uk_early\backpacks.hpp"
-#include "uk_airborne\backpacks.hpp"
+#include "coin\backpacks.hpp"
