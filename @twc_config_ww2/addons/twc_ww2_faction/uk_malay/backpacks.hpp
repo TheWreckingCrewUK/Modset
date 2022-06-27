@@ -64,7 +64,7 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_Signaller: B_LIB_US_Radio_ACRE2
 		ADD_ITEM(ACRE_PRC77,1);
 	};
 	class TransportMagazines {
-		ADD_MAGA(LIB_15Rnd_762x33,8);
+		ADD_MAGA(LIB_15Rnd_762x33,12);
 	};
 };
 class TWC_Backpack_ColdWar_Malay_Dismounted_Marksman: B_LIB_UK_HSack
@@ -75,6 +75,17 @@ class TWC_Backpack_ColdWar_Malay_Dismounted_Marksman: B_LIB_UK_HSack
 	class TransportMagazines {
 		ADD_MAGA(LIB_10Rnd_770x56,13);
 		ADD_MAGA(LIB_30Rnd_770x56,4);
+	};
+};
+class TWC_Backpack_ColdWar_Malay_Dismounted_Grenadier: B_LIB_UK_HSack
+{
+	scope = 1;
+	scopeArsenal = 1;
+	maximumLoad = 150;
+	class TransportMagazines {
+		ADD_MAGA(LIB_10Rnd_770x56,12);
+		ADD_MAGA(LIB_30Rnd_770x56,2);
+		ADD_MAGA(LIB_1Rnd_G_MillsBomb,12);
 	};
 };
 class TWC_Backpack_ColdWar_Malay_Dismounted_SMG: B_LIB_UK_HSack

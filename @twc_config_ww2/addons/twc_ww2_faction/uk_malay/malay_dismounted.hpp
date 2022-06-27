@@ -20,6 +20,11 @@ class TWC_Infantry_ColdWar_Dismounted_Malay_SMG: TWC_Infantry_ColdWar_Malay_SMG
 	CATEGORY(TWC_Infantry_Malay_Dismounted)
 	backpack = "TWC_Backpack_ColdWar_Malay_Dismounted_SMG";
 };
+class TWC_Infantry_ColdWar_Dismounted_Malay_Grenadier: TWC_Infantry_ColdWar_Malay_Grenadier
+{
+	CATEGORY(TWC_Infantry_Malay_Dismounted)
+	backpack = "TWC_Backpack_ColdWar_Malay_Dismounted_Grenadier";
+};
 class TWC_Infantry_ColdWar_Dismounted_Malay_MG: TWC_Infantry_ColdWar_Malay_MG
 {
 	CATEGORY(TWC_Infantry_Malay_Dismounted)
