@@ -1,6 +1,6 @@
 /*
  * Author: Ross
- * Module function to make a unit or group stationary.
+ * Module function to make a unit or group stationary until contacted.
  *
  * Arguments:
  * 0: The Module Logic <OBJECT>
