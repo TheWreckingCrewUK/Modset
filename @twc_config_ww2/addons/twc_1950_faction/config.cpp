@@ -61,6 +61,8 @@ class CfgVehicles
 	#define MAG_11(a) a, a, a, a, a, a, a, a, a, a, a
 	#define MAG_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 	#define MAG_13(a) a, a, a, a, a, a, a, a, a, a, a, a, a
+	#define MAG_14(a) a, a, a, a, a, a, a, a, a, a, a, a, a
+	#define MAG_15(a) a, a, a, a, a, a, a, a, a, a, a, a, a
 	#define CATEGORY(a) editorSubcategory = a;\
 			vehicleClass = a;
 
