@@ -1,236 +1,236 @@
-#define MALAY_GROUPS(CAMO,ERA) \
-class TWC_Groups_##ERA##_##CAMO \
+#define 1950_COIN_GROUPS(CAMO) \
+class TWC_Groups_1950_COIN_##CAMO \
 { \
-	name = __EVAL("Infantry (" + #CAMO + ")"); \
+	name = __EVAL("Infantry (COIN, " + #CAMO + ")"); \
 	class Section \
 	{ \
-		name = "Section (Malay)"; \
-		faction = "TWC_WW2"; \
+		name = "Section"; \
+		faction = "TWC_1950"; \
 		side = 2; \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_SMG; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_SMG; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
 		class Unit5 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_2iC; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_2iC; \
 			rank = "CORPORAL"; \
 			position[] = {10,0,0}; \
 		}; \
 		class Unit6 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_MG; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_MG; \
 			rank = "PRIVATE"; \
 			position[] = {12,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_MGASS; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_MGASS; \
 			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \
 	}; \
 	class Section_Mechanised \
 	{ \
-		name = "Section (Mechanised) (Malay)"; \
-		faction = "TWC_WW2"; \
+		name = "Section (Mechanised)"; \
+		faction = "TWC_1950"; \
 		side = 2; \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_SMG; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_SMG; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
 		class Unit5 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_2iC; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_2iC; \
 			rank = "CORPORAL"; \
 			position[] = {10,0,0}; \
 		}; \
 		class Unit6 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_MG; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_MG; \
 			rank = "PRIVATE"; \
 			position[] = {12,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_MGASS; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_MGASS; \
 			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \
 		class Unit8 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Vehicle_Commander; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Vehicle_Commander; \
 			rank = "CORPORAL"; \
 			position[] = {16,0,0}; \
 		}; \
 		class Unit9 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Vehicle_Crew; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {18,0,0}; \
 		}; \
 	}; \
 	class Platoon_Command \
 	{ \
-		name = "Platoon Command (Malay)"; \
-		faction = "TWC_WW2"; \
+		name = "Platoon Command"; \
+		faction = "TWC_1950"; \
 		side = 2; \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Platoon_Commander; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Platoon_Commander; \
 			rank = "MAJOR"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Platoon_Sergeant; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Platoon_Sergeant; \
 			rank = "LIEUTENANT"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Platoon_Medic; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Platoon_Medic; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 	}; \
 	class Company_Command \
 	{ \
-		name = "Company Command (Malay)"; \
-		faction = "TWC_WW2"; \
+		name = "Company Command"; \
+		faction = "TWC_1950"; \
 		side = 2; \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Company_Commander; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Company_Commander; \
 			rank = "COLONEL"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Company_2iC; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Company_2iC; \
 			rank = "MAJOR"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Company_Sergeant; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Company_Sergeant; \
 			rank = "CAPTAIN"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 	}; \
 	class AT_Team \
 	{ \
-		name = "AT Team (Malay)"; \
-		faction = "TWC_WW2"; \
+		name = "AT Team"; \
+		faction = "TWC_1950"; \
 		side = 2; \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Bazooka_Gunner; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Bazooka_Gunner; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Bazooka_Ass; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Bazooka_Ass; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
@@ -238,66 +238,66 @@ class TWC_Groups_##ERA##_##CAMO \
 	class Sniper_Team \
 	{ \
 		name = "Sniper Team"; \
-		faction = "TWC_WW2"; \
+		faction = "TWC_1950"; \
 		side = 2; \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Spotter; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Spotter; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Sniper; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Sniper; \
 			rank = "CORPORAL"; \
 			position[] = {2,0,0}; \
 		}; \
 	}; \
 	class Artillery_Crew \
 	{ \
-		name = "Artillery Crew (Malay)"; \
-		faction = "TWC_WW2"; \
+		name = "Artillery Crew"; \
+		faction = "TWC_1950"; \
 		side = 2; \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Artillery_Commander; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Artillery_Commander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Artillery_Crew; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Artillery_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 	}; \
 	class Vehicle_Crew \
 	{ \
-		name = "Vehicle Crew (Malay)"; \
-		faction = "TWC_WW2"; \
+		name = "Vehicle Crew"; \
+		faction = "TWC_1950"; \
 		side = 2; \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Vehicle_Commander; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Vehicle_Commander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Vehicle_Crew; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_##CAMO##_Vehicle_Crew; \
+			vehicle = TWC_Infantry_1950_COIN_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
@@ -305,137 +305,136 @@ class TWC_Groups_##ERA##_##CAMO \
 }; \
 class TWC_Groups_##CAMO##_Dismounted \
 { \
-	name = __EVAL("Infantry (Dismounted , " + #CAMO + ")"); \
+	name = __EVAL("Infantry (COIN, Dismounted, " + #CAMO + ")"); \
 	class Section \
 	{ \
-		name = "Section, Dismounted (Malay)"; \
-		faction = "TWC_WW2"; \
+		name = "Section, Dismounted"; \
+		faction = "TWC_1950"; \
 		side = 2; \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_SMG; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_SMG; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
 		class Unit5 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_2iC; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_2iC; \
 			rank = "CORPORAL"; \
 			position[] = {10,0,0}; \
 		}; \
 		class Unit6 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_MG; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_MG; \
 			rank = "PRIVATE"; \
 			position[] = {12,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_MGASS; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_MGASS; \
 			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \
 	}; \
 	class Platoon_Command \
 	{ \
-		name = "Platoon Command, Dismounted (Malay)"; \
-		faction = "TWC_WW2"; \
+		name = "Platoon Command, Dismounted"; \
+		faction = "TWC_1950"; \
 		side = 2; \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Platoon_Commander; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_Platoon_Commander; \
 			rank = "MAJOR"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Platoon_Sergeant; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_Platoon_Sergeant; \
 			rank = "LIEUTENANT"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Platoon_Medic; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_Platoon_Medic; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Platoon_CSM; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_Platoon_CSM; \
 			rank = "CAPTAIN"; \
 			position[] = {8,0,0}; \
 		}; \
 	}; \
 	class Company_Command \
 	{ \
-		name = "Company Command, Dismounted (Malay)"; \
-		faction = "TWC_WW2"; \
+		name = "Company Command, Dismounted"; \
+		faction = "TWC_1950"; \
 		side = 2; \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Company_Commander; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_Company_Commander; \
 			rank = "COLONEL"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Company_2iC; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_Company_2iC; \
 			rank = "MAJOR"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_##ERA##_Dismounted_##CAMO##_Company_Sergeant; \
+			vehicle = TWC_Infantry_1950_Dismounted_COIN_##CAMO##_Company_Sergeant; \
 			rank = "CAPTAIN"; \
 			position[] = {4,0,0}; \
 		}; \
 	}; \
 };
-
-MALAY_GROUPS(Malay,ColdWar)
+1950_COIN_GROUPS(Tropic)
