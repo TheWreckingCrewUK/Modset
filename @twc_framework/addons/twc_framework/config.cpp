@@ -25,7 +25,8 @@ class CfgPatches {
 			"TWC_Module_AmbientSound",
 			"TWC_Module_Speak",
 			"twc_moduleSetSpectator",
-			"twc_forceUncache"
+			"twc_forceUncache",
+			"TWC_Module_dostop"
 		};
 		
 		weapons[] = {};

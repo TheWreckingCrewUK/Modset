@@ -8,13 +8,12 @@ class CfgPatches
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"twc_faction",
-			"twc_ai"
+			"twc_ai",
+			"WW2_Assets_c_Weapons_InfantryWeapons_c",
+			"WW2_Assets_c_Weapons_Sounds_c"
 		};
 	};
 };
-
-class EventHandlers;
-
 class CfgFactionClasses {
 	class TWC_WW2_USA {
 		displayName = "TWC Operations - WW2 USA";
@@ -24,21 +23,33 @@ class CfgFactionClasses {
 		side = 2;
 	};
 };
+class CfgEditorSubcategories {
+	//Airborne
+	class TWC_Infantry_US_Airborne_Woodland {
+		displayName = "Infantry (Airborne, Woodland)";
+	};
+	//Rangers
+	class TWC_Infantry_US_Ranger_Woodland {
+		displayName = "Infantry (Rangers, Woodland)";
+	};
+};
+
+class EventHandlers;
+
+class CfgWeapons
+{
+	#include "weapons.hpp"
+};
 
 class CfgVehicles
 {
-	#define ADD_MAGA(a,b) class _nc_##a {magazine = a; count = b;}
-	#define ADD_WEAP(a,b) class _nc_##a {weapon = a; count = b;}
-	#define ADD_ITEM(a,b) class _nc_##a {name = a; count = b;}
-
 	#include "backpacks.hpp"
-	#include "ammocrates.hpp"
-
+	
 	class B_Soldier_base_F;
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 
-	#define MEDICAL_LOADOUT "ACE_EarPlugs","TWC_Item_Clicker_25","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
+	#define MEDICAL_LOADOUT "ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
 	#define MAG_2(a) a, a
 	#define MAG_3(a) a, a, a
 	#define MAG_4(a) a, a, a, a
@@ -58,7 +69,7 @@ class CfgVehicles
 		scope = 1;
 		displayName = "Base";
 		faction = "TWC_WW2_USA";
-		CATEGORY(TWC_Infantry_Airborne_Woodland)
+		CATEGORY(TWC_Infantry_Woodland)
 		icon = "iconMan";
 		nakedUniform = "U_BasicBody";
 		uniformClass = "U_LIB_US_AB_Uniform_M42_506";
@@ -102,9 +113,9 @@ class CfgVehicles
 			"Chemlight_green"
 		};
 	};
-	#include "units.hpp"
+	#include "airborne\woodland.hpp"
+	#include "ranger\woodland.hpp"
 };
-
 class CfgGroups
 {
 	class INDEP
@@ -112,7 +123,8 @@ class CfgGroups
 		class TWC_Groups_WW2_USA
 		{
 			name = "TWC Groups WW2 USA";
-			#include "groups.hpp"
+			#include "airborne\groups.hpp"
+			#include "ranger\groups.hpp"
 		};
 	};
 };
