@@ -13,7 +13,7 @@ private _bloodVolume = GET_BLOOD_VOLUME(_patient);
 // if blood is full, dw - just don't fill for the next 3 seconds
 // this will allow for the drip to automatically resume if say a wound reopens and it hasn't been unhooked
 private _ivDripConfig = configFile >> "TWC_Medical" >> "Treatments" >> _treatmentClassname;
-private _duration = [_ivDripConfig, "duration", 3] call BIS_fnc_returnConfigEntry
+private _duration = [_ivDripConfig, "duration", 3] call BIS_fnc_returnConfigEntry;
 
 if (_bloodVolume < DEFAULT_BLOOD_VOLUME) then {
 	private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
@@ -22,9 +22,9 @@ if (_bloodVolume < DEFAULT_BLOOD_VOLUME) then {
 	private _volume = [_ivDripConfig, "volume", (IV_CHANGE_PER_SECOND * 3)] call BIS_fnc_returnConfigEntry;
 	private _type = [_ivDripConfig, "type", "Saline"] call BIS_fnc_returnConfigEntry;
 	
-	private _ivBags = _patient getVariable [QEGVAR(medical,ivBags), []];
+	private _ivBags = _patient getVariable [ace_medical_ivBags, []];
 	_ivBags pushBack [_volume, _type, _partIndex];
-	_patient setVariable [QEGVAR(medical,ivBags), _ivBags, true];
+	_patient setVariable ["ace_medical_ivBags", _ivBags, true];
 };
 
 // call self again in 3 seconds for recursive function (aka loop)

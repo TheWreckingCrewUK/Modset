@@ -6,7 +6,6 @@ class CfgFunctions {
 			file = "twc_medical_vehicle\functions";
 			
 			class clientInit {};
-			class serverInit {};
 			class handleRespawn {};
 			
 			// Defib
