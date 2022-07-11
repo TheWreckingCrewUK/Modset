@@ -1,5 +1,5 @@
 class CfgPatches {
-	class twc_faction {
+	class twc_opfor_Misc {
 		units[] = {
 			"GulfWar_Iraqi_Squadleader",
 			"GulfWar_Iraqi_Rifleman",

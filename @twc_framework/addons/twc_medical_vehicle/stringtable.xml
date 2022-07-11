@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="TWC Medical Vehicle">
+	<Package name="twc_medical_vehicle">
+		<Key ID="STR_TWC_CPR_EXECUTE">
+			<Original>%1 performed CPR</Original>
+			<English>%1 performed CPR</English>
+			<German>%1 hat eine HLW durchgeführt</German>
+		</Key>
+		<Key ID="STR_TWC_DEFIB_EXECUTE">
+			<Original>%1 was unsuccesful with their defibrillator</Original>
+			<English>%1 was unsuccesful with their defibrillator</English>
+			<German>%1 hatte keinen Erfolg mit dem Defibrillator</German>
+		</Key>
+		<Key ID="STR_TWC_DEFIB_COMPLETED">
+			<Original>%1 resuscitated the patient with defibrillator</Original>
+			<English>%1 resuscitated the patient with defibrillator</English>
+			<German>%1 hat den Patienten mittels Defibrillator wiederbelebt</German>
+		</Key>
+		<Key ID="STR_TWC_IV_EXECUTE">
+			<Original>%1 attached an IV drip to the patient</Original>
+			<English>%1 attached an IV drip to the patient</English>
+			<German>%1 TODO</German>
+		</Key>
+	</Package>
+</Project>

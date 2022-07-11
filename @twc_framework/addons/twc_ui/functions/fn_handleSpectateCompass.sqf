@@ -1,4 +1,4 @@
-#include "\A3\ui_f\hpp\defineDIKCodes.inc"
+#define DIK_K 0x25
 
 params ["", "_key", "_shift", "_ctrl", "_alt"];
 
