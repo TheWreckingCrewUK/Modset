@@ -53,6 +53,7 @@ class CfgFunctions {
 			//class settings {};
 			
 			// Generics
+			class badLuckProtection {};
 			class getBloodVolume {};
 			class resuscitateUnitLocal {};
 			class removeMedicalItem {};

@@ -10,7 +10,7 @@ private _successChance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOO
 private _isMedic = [_medic] call ace_medical_treatment_fnc_isMedic;
 if (_isMedic) then { _successChance = _successChance + 0.1; };
 
-_successChance = [_successChance, _patient] call twc_medical_core_fnc_badLuckProtection;
+_successChance = [_successChance, _patient] call twc_medical_fnc_badLuckProtection;
 
 if ((random 1) < _successChance) then {
 	["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
