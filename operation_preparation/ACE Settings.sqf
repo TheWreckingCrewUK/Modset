@@ -10,7 +10,7 @@ force force ace_advanced_ballistics_simulationInterval = 0.05;
 force force ace_advanced_fatigue_enabled = true;
 force force ace_advanced_fatigue_enableStaminaBar = false;
 force force ace_advanced_fatigue_loadFactor = 0.8;
-force force ace_advanced_fatigue_performanceFactor = 1.1;
+force force ace_advanced_fatigue_performanceFactor = 1.3;
 force force ace_advanced_fatigue_recoveryFactor = 2;
 force force ace_advanced_fatigue_swayFactor = 1;
 force force ace_advanced_fatigue_terrainGradientFactor = 3.5;
@@ -191,8 +191,8 @@ force ace_map_gestures_onlyShowFriendlys = false;
 
 //ACE Medical
 force force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 4;
-force force ace_medical_bleedingCoefficient = 0.2;
+force force ace_medical_AIDamageThreshold = 2;
+force force ace_medical_bleedingCoefficient = 0.4;
 force force ace_medical_blood_bloodLifetime = 900;
 force force ace_medical_blood_enabledFor = 2;
 force force ace_medical_blood_maxBloodObjects = 500;
@@ -255,7 +255,7 @@ force force ace_medical_treatment_treatmentTimeCPR = 15;
 force force ace_medical_treatment_treatmentTimeIV = 12;
 force force ace_medical_treatment_treatmentTimeSplint = 7;
 force force ace_medical_treatment_treatmentTimeTourniquet = 2;
-force force ace_medical_treatment_woundReopenChance = 0.3;
+force force ace_medical_treatment_woundReopenChance = 0.6;
 force force ace_medical_treatment_woundStitchTime = 10;
 
 //ACE Name Tags
@@ -361,10 +361,10 @@ force force ace_parachute_hideAltimeter = true;
 force force ace_ui_allowSelectiveUI = false;
 force force ace_ui_ammoCount = false;
 force force ace_ui_ammoType = true;
-force force ace_ui_commandMenu = true;
+force force ace_ui_commandMenu = false;
 force ace_ui_enableSpeedIndicator = true;
 force force ace_ui_firingMode = true;
-force force ace_ui_groupBar = true;
+force force ace_ui_groupBar = false;
 force force ace_ui_gunnerAmmoCount = true;
 force force ace_ui_gunnerAmmoType = true;
 force force ace_ui_gunnerFiringMode = true;
