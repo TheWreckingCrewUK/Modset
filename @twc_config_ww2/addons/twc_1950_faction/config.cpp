@@ -40,6 +40,13 @@ class CfgEditorSubcategories {
 	class TWC_Infantry_1950_COIN_Dismounted_Tropic {
 		displayName = "Infantry (COIN, Dismounted, Tropic)";
 	};
+	//1950s Arctic
+	class TWC_Infantry_1950_Arctic {
+		displayName = "Infantry (Arctic)";
+	};
+	class TWC_Infantry_1950_Dismounted_Arctic {
+		displayName = "Infantry (Dismounted, Arctic)";
+	};
 };
 
 class EventHandlers;
@@ -189,6 +196,8 @@ class CfgVehicles
 	};
 	#include "coin\tropic.hpp"
 	#include "coin\tropic_dismounted.hpp"
+	#include "regular\arctic.hpp"
+	#include "regular\arctic_dismounted.hpp"
 };
 	class CfgGroups
 {
@@ -198,6 +207,7 @@ class CfgVehicles
 		{
 			name = "TWC Groups 1950s";
 			#include "coin\groups.hpp"
+			#include "regular\groups.hpp"
 		};
 	};
 };

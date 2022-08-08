@@ -132,4 +132,53 @@ class CfgVehicles {
 			maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
 		};
 	};
+		class TWC_AmmoBox_1950_Portable: TWC_AmmoBox_WW2_Portable {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Section Resupply";
+		editorSubcategory = "TWC_1950_Crates";
+		
+		class TransportItems {
+			item_nc(ACE_fieldDressing, 15);
+			item_nc(ACE_elasticBandage, 15);
+			item_nc(ACE_quikclot, 15);
+			item_nc(ACE_packingBandage, 15);
+			
+			item_nc(ACE_morphine, 6);
+			item_nc(ACE_epinephrine, 6);
+			item_nc(ACE_tourniquet, 4);
+		};
+		
+		class TransportMagazines {
+			// Sten
+			maga_nc(LIB_32Rnd_9x19_Sten, 15);
+			
+			// Enfield .303 10rnd
+			maga_nc(LIB_10Rnd_770x56, 24);
+			
+			// Bren .303 30rnd
+			maga_nc(LIB_30Rnd_770x56, 15);
+			
+			// Smoke Grenades
+			maga_nc(SmokeShell, 6);
+			maga_nc(SmokeShellGreen, 2);
+			maga_nc(SmokeShellRed, 2);
+			
+			// Frag Grenade
+			maga_nc(LIB_MillsBomb, 10);
+			
+			// AT Grenade
+			maga_nc(LIB_No82, 2);
+			
+			// Flares
+			maga_nc(TWC_Magazine_SignalFlare_Blue, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Red, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Green, 3);
+			maga_nc(TWC_Magazine_SignalFlare_Yellow, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Green, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Red, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Yellow, 3);
+			maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
+		};
+	};
 };
