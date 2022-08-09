@@ -10,56 +10,56 @@ class TWC_Groups_1950_##CAMO \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_SMG; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_SMG; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
 		class Unit5 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_2iC; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_2iC; \
 			rank = "CORPORAL"; \
 			position[] = {10,0,0}; \
 		}; \
 		class Unit6 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_MG; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_MG; \
 			rank = "PRIVATE"; \
 			position[] = {12,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_MGASS; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_MGASS; \
 			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \
@@ -72,70 +72,70 @@ class TWC_Groups_1950_##CAMO \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_SMG; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_SMG; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
 		class Unit5 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_2iC; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_2iC; \
 			rank = "CORPORAL"; \
 			position[] = {10,0,0}; \
 		}; \
 		class Unit6 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_MG; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_MG; \
 			rank = "PRIVATE"; \
 			position[] = {12,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_MGASS; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_MGASS; \
 			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \
 		class Unit8 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Vehicle_Commander; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Vehicle_Commander; \
 			rank = "CORPORAL"; \
 			position[] = {16,0,0}; \
 		}; \
 		class Unit9 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Vehicle_Crew; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {18,0,0}; \
 		}; \
@@ -148,28 +148,28 @@ class TWC_Groups_1950_##CAMO \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Platoon_Commander; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Platoon_Commander; \
 			rank = "MAJOR"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Platoon_Sergeant; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Platoon_Sergeant; \
 			rank = "LIEUTENANT"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Platoon_Medic; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Platoon_Medic; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
@@ -182,28 +182,28 @@ class TWC_Groups_1950_##CAMO \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Company_Commander; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Company_Commander; \
 			rank = "COLONEL"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Company_2iC; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Company_2iC; \
 			rank = "MAJOR"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Company_Sergeant; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Company_Sergeant; \
 			rank = "CAPTAIN"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
@@ -216,21 +216,21 @@ class TWC_Groups_1950_##CAMO \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Bazooka_Gunner; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Bazooka_Gunner; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Bazooka_Ass; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Bazooka_Ass; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
@@ -243,14 +243,14 @@ class TWC_Groups_1950_##CAMO \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Spotter; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Spotter; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Sniper; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Sniper; \
 			rank = "CORPORAL"; \
 			position[] = {2,0,0}; \
 		}; \
@@ -263,14 +263,14 @@ class TWC_Groups_1950_##CAMO \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Artillery_Commander; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Artillery_Commander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Artillery_Crew; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Artillery_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
@@ -283,21 +283,21 @@ class TWC_Groups_1950_##CAMO \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Vehicle_Commander; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Vehicle_Commander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Vehicle_Crew; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_##CAMO##_Vehicle_Crew; \
+			vehicle = TWC_Infantry_1950_Regular_##CAMO##_Vehicle_Crew; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
@@ -314,56 +314,56 @@ class TWC_Groups_##CAMO##_Dismounted \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_SectionCommander; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_SectionCommander; \
 			rank = "SERGEANT"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_SMG; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_SMG; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_Rifleman; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_Rifleman; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_Grenadier; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_Grenadier; \
 			rank = "PRIVATE"; \
 			position[] = {8,0,0}; \
 		}; \
 		class Unit5 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_2iC; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_2iC; \
 			rank = "CORPORAL"; \
 			position[] = {10,0,0}; \
 		}; \
 		class Unit6 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_MG; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_MG; \
 			rank = "PRIVATE"; \
 			position[] = {12,0,0}; \
 		}; \
 		class Unit7 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_MGASS; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_MGASS; \
 			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \
@@ -376,35 +376,35 @@ class TWC_Groups_##CAMO##_Dismounted \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_Platoon_Commander; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_Platoon_Commander; \
 			rank = "MAJOR"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_Platoon_Sergeant; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_Platoon_Sergeant; \
 			rank = "LIEUTENANT"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_Platoon_Medic; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_Platoon_Medic; \
 			rank = "PRIVATE"; \
 			position[] = {4,0,0}; \
 		}; \
 		class Unit3 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_Signaller; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_Signaller; \
 			rank = "PRIVATE"; \
 			position[] = {6,0,0}; \
 		}; \
 		class Unit4 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_Platoon_CSM; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_Platoon_CSM; \
 			rank = "CAPTAIN"; \
 			position[] = {8,0,0}; \
 		}; \
@@ -417,24 +417,25 @@ class TWC_Groups_##CAMO##_Dismounted \
 		class Unit0 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_Company_Commander; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_Company_Commander; \
 			rank = "COLONEL"; \
 			position[] = {0,0,0}; \
 		}; \
 		class Unit1 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_Company_2iC; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_Company_2iC; \
 			rank = "MAJOR"; \
 			position[] = {2,0,0}; \
 		}; \
 		class Unit2 \
 		{ \
 			side = 2; \
-			vehicle = TWC_Infantry_1950_Dismounted_##CAMO##_Company_Sergeant; \
+			vehicle = TWC_Infantry_1950_Regular_Dismounted_##CAMO##_Company_Sergeant; \
 			rank = "CAPTAIN"; \
 			position[] = {4,0,0}; \
 		}; \
 	}; \
 };
 1950_GROUPS(Arctic)
+1950_GROUPS(Desert)

@@ -1,10 +1,10 @@
 //UK, 1950 Arctic
 //Section
-class TWC_Infantry_1950_Arctic_Rifleman: TWC_Infantry_1950_Base
+class TWC_Infantry_1950_Regular_Arctic_Rifleman: TWC_Infantry_1950_Base
 {
-	CATEGORY(TWC_Infantry_Arctic)
 	scope = 2;
 	displayName = "Rifleman";
+	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass="fow_u_uk_bd40_seac_01_private";
 
 	Items[] =
@@ -61,13 +61,13 @@ class TWC_Infantry_1950_Arctic_Rifleman: TWC_Infantry_1950_Base
 		"LIB_No82"
 	};
 };
-class TWC_Infantry_1950_Arctic_Signaller: TWC_Infantry_1950_Arctic_Rifleman
+class TWC_Infantry_1950_Regular_Arctic_Signaller: TWC_Infantry_1950_Regular_Arctic_Rifleman
 {
 	scope = 2;
 	displayName = "Signaller";
 	backpack = "TWC_Backpack_1950_Signaller";
 };
-class TWC_Infantry_1950_Arctic_Marksman: TWC_Infantry_1950_Arctic_Rifleman
+class TWC_Infantry_1950_Regular_Arctic_Marksman: TWC_Infantry_1950_Regular_Arctic_Rifleman
 {
 	displayName = "Marksman";
 	weapons[] =
@@ -83,7 +83,7 @@ class TWC_Infantry_1950_Arctic_Marksman: TWC_Infantry_1950_Arctic_Rifleman
 		"Put"
 	};
 };
-class TWC_Infantry_1950_Arctic_Grenadier: TWC_Infantry_1950_Arctic_Rifleman
+class TWC_Infantry_1950_Regular_Arctic_Grenadier: TWC_Infantry_1950_Regular_Arctic_Rifleman
 {
 	displayName = "Grenadier";
 	weapons[] =
@@ -109,7 +109,7 @@ class TWC_Infantry_1950_Arctic_Grenadier: TWC_Infantry_1950_Arctic_Rifleman
 		MAG_8("LIB_1Rnd_G_MillsBomb")
 	};
 };
-class TWC_Infantry_1950_Arctic_SMG: TWC_Infantry_1950_Arctic_Rifleman
+class TWC_Infantry_1950_Regular_Arctic_SMG: TWC_Infantry_1950_Regular_Arctic_Rifleman
 {
 	displayName = "Submachine Gunner";
 	linkedItems[] =
@@ -155,7 +155,7 @@ class TWC_Infantry_1950_Arctic_SMG: TWC_Infantry_1950_Arctic_Rifleman
 		"LIB_No82"
 	};
 };
-class TWC_Infantry_1950_Arctic_MG: TWC_Infantry_1950_Arctic_Rifleman
+class TWC_Infantry_1950_Regular_Arctic_MG: TWC_Infantry_1950_Regular_Arctic_Rifleman
 {
 	displayName = "Machine Gunner";
 	linkedItems[] =
@@ -197,12 +197,12 @@ class TWC_Infantry_1950_Arctic_MG: TWC_Infantry_1950_Arctic_Rifleman
 		MAG_7("LIB_30Rnd_770x56")
 	};
 };
-class TWC_Infantry_1950_Arctic_MGASS: TWC_Infantry_1950_Arctic_Rifleman
+class TWC_Infantry_1950_Regular_Arctic_MGASS: TWC_Infantry_1950_Regular_Arctic_Rifleman
 {
 	displayName = "Assistant Machine Gunner";
 	backpack = "TWC_Backpack_1950_MGASS";
 };
-class TWC_Infantry_1950_Arctic_SectionCommander: TWC_Infantry_1950_Arctic_SMG
+class TWC_Infantry_1950_Regular_Arctic_SectionCommander: TWC_Infantry_1950_Regular_Arctic_SMG
 {
 	displayName = "Section Commander";
 	uniformClass = "fow_u_uk_bd40_seac_01_corporal";
@@ -250,7 +250,7 @@ class TWC_Infantry_1950_Arctic_SectionCommander: TWC_Infantry_1950_Arctic_SMG
 		MAG_2("ACE_HandFlare_White")
 	};
 };
-class TWC_Infantry_1950_Arctic_2iC: TWC_Infantry_1950_Arctic_Rifleman
+class TWC_Infantry_1950_Regular_Arctic_2iC: TWC_Infantry_1950_Regular_Arctic_Rifleman
 {
 	displayName = "2iC";
 	uniformClass = "fow_u_uk_bd40_seac_01_lance_corporal";
@@ -277,7 +277,7 @@ class TWC_Infantry_1950_Arctic_2iC: TWC_Infantry_1950_Arctic_Rifleman
 };
 
 //Platoon Command
-class TWC_Infantry_1950_Arctic_Platoon_Commander: TWC_Infantry_1950_Arctic_SectionCommander
+class TWC_Infantry_1950_Regular_Arctic_Platoon_Commander: TWC_Infantry_1950_Regular_Arctic_SectionCommander
 {
 	displayName = "Platoon Commander";
 	uniformClass = "fow_u_uk_bd40_seac_01_lieutenant";
@@ -352,7 +352,7 @@ class TWC_Infantry_1950_Arctic_Platoon_Commander: TWC_Infantry_1950_Arctic_Secti
 		"ACE_Flashlight_MX991"
 	};
 };
-class TWC_Infantry_1950_Arctic_Platoon_Sergeant: TWC_Infantry_1950_Arctic_Platoon_Commander
+class TWC_Infantry_1950_Regular_Arctic_Platoon_Sergeant: TWC_Infantry_1950_Regular_Arctic_Platoon_Commander
 {
 	displayName = "Platoon Sergeant";
 	uniformClass = "fow_u_uk_bd40_seac_01_sergeant";
@@ -409,7 +409,7 @@ class TWC_Infantry_1950_Arctic_Platoon_Sergeant: TWC_Infantry_1950_Arctic_Platoo
 		MAG_2("SmokeShellGreen")
 	};
 };
-class TWC_Infantry_1950_Arctic_Platoon_Medic: TWC_Infantry_1950_Arctic_SMG
+class TWC_Infantry_1950_Regular_Arctic_Platoon_Medic: TWC_Infantry_1950_Regular_Arctic_SMG
 {
 	displayName = "Platoon Medic";
 	backpack = "TWC_Backpack_1950_Platoon_Medic";
@@ -425,7 +425,7 @@ class TWC_Infantry_1950_Arctic_Platoon_Medic: TWC_Infantry_1950_Arctic_SMG
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_1950_Arctic_Platoon_Mortar: TWC_Infantry_1950_Arctic_SMG
+class TWC_Infantry_1950_Regular_Arctic_Platoon_Mortar: TWC_Infantry_1950_Regular_Arctic_SMG
 {
 	displayName = "Platoon Mortar";
 	backpack = "TWC_Backpack_1950_Platoon_Mortar";
@@ -472,7 +472,7 @@ class TWC_Infantry_1950_Arctic_Platoon_Mortar: TWC_Infantry_1950_Arctic_SMG
 		MAG_6("twc_2inch_illum_1rnd")
 	};
 };
-class TWC_Infantry_1950_Arctic_Platoon_CSM: TWC_Infantry_1950_Arctic_Platoon_Sergeant
+class TWC_Infantry_1950_Regular_Arctic_Platoon_CSM: TWC_Infantry_1950_Regular_Arctic_Platoon_Sergeant
 {
 	displayName = "Company Sergeant Major";
 	scope = 1;
@@ -481,21 +481,21 @@ class TWC_Infantry_1950_Arctic_Platoon_CSM: TWC_Infantry_1950_Arctic_Platoon_Ser
 };
 
 //Company
-class TWC_Infantry_1950_Arctic_Company_Commander: TWC_Infantry_1950_Arctic_Platoon_Commander
+class TWC_Infantry_1950_Regular_Arctic_Company_Commander: TWC_Infantry_1950_Regular_Arctic_Platoon_Commander
 {
 	displayName = "Company Commander";
 };
-class TWC_Infantry_1950_Arctic_Company_2iC: TWC_Infantry_1950_Arctic_Platoon_Commander
+class TWC_Infantry_1950_Regular_Arctic_Company_2iC: TWC_Infantry_1950_Regular_Arctic_Platoon_Commander
 {
 	displayName = "Company 2iC";
 };
-class TWC_Infantry_1950_Arctic_Company_Sergeant: TWC_Infantry_1950_Arctic_Platoon_CSM
+class TWC_Infantry_1950_Regular_Arctic_Company_Sergeant: TWC_Infantry_1950_Regular_Arctic_Platoon_CSM
 {
 	scope = 2;
 };
 
 //AT
-class TWC_Infantry_1950_Arctic_Bazooka_Gunner: TWC_Infantry_1950_Arctic_Rifleman
+class TWC_Infantry_1950_Regular_Arctic_Bazooka_Gunner: TWC_Infantry_1950_Regular_Arctic_Rifleman
 {
 	displayName = "Bazooka Gunner";
 	weapons[] =
@@ -521,14 +521,14 @@ class TWC_Infantry_1950_Arctic_Bazooka_Gunner: TWC_Infantry_1950_Arctic_Rifleman
 		MAG_5("LIB_32Rnd_9x19_Sten")
 	};
 };
-class TWC_Infantry_1950_Arctic_Bazooka_Ass: TWC_Infantry_1950_Arctic_Rifleman
+class TWC_Infantry_1950_Regular_Arctic_Bazooka_Ass: TWC_Infantry_1950_Regular_Arctic_Rifleman
 {
 	displayName = "Bazooka Assistant";
 	backpack = "TWC_Backpack_WW2_UK_Late_PIAT_Ass";
 };
 
 //Sniper Team
-class TWC_Infantry_1950_Arctic_Sniper: TWC_Infantry_1950_Arctic_Rifleman
+class TWC_Infantry_1950_Regular_Arctic_Sniper: TWC_Infantry_1950_Regular_Arctic_Rifleman
 {
 	displayName = "Sniper";
 	linkedItems[] =
@@ -568,7 +568,7 @@ class TWC_Infantry_1950_Arctic_Sniper: TWC_Infantry_1950_Arctic_Rifleman
 		MAG_13("LIB_10Rnd_770x56")
 	};
 };
-class TWC_Infantry_1950_Arctic_Spotter: TWC_Infantry_1950_Arctic_Sniper
+class TWC_Infantry_1950_Regular_Arctic_Spotter: TWC_Infantry_1950_Regular_Arctic_Sniper
 {
 	displayName = "Spotter";
 	backpack = "TWC_Backpack_1950_Spotter";
@@ -593,7 +593,7 @@ class TWC_Infantry_1950_Arctic_Spotter: TWC_Infantry_1950_Arctic_Sniper
 };
 
 //Artillery
-class TWC_Infantry_1950_Arctic_Artillery_Commander: TWC_Infantry_1950_Arctic_Platoon_Commander
+class TWC_Infantry_1950_Regular_Arctic_Artillery_Commander: TWC_Infantry_1950_Regular_Arctic_Platoon_Commander
 {
 	displayName = "Artillery Commander";
 	backpack = "TWC_Backpack_1950_Artillery_Commander";
@@ -603,14 +603,14 @@ class TWC_Infantry_1950_Arctic_Artillery_Commander: TWC_Infantry_1950_Arctic_Pla
 		init = "(_this select 0) setVariable ['twc_keepMap',true]";
 	};
 };
-class TWC_Infantry_1950_Arctic_Artillery_Crew: TWC_Infantry_1950_Arctic_Artillery_Commander
+class TWC_Infantry_1950_Regular_Arctic_Artillery_Crew: TWC_Infantry_1950_Regular_Arctic_Artillery_Commander
 {
 	displayName = "Artillery Crew";
 	backpack = "fow_b_uk_bergenpack";
 	uniformClass = "fow_u_uk_bd40_seac_01_private";
 	TWC_isCommandRole = 0;
 };
-class TWC_Infantry_1950_Arctic_FO: TWC_Infantry_1950_Arctic_Artillery_Commander
+class TWC_Infantry_1950_Regular_Arctic_FO: TWC_Infantry_1950_Regular_Arctic_Artillery_Commander
 {
 	displayName = "Forward Observer";
 	backpack = "TWC_Backpack_1950_FO";
@@ -619,14 +619,14 @@ class TWC_Infantry_1950_Arctic_FO: TWC_Infantry_1950_Arctic_Artillery_Commander
 };
 
 //Aircraft
-class TWC_Infantry_1950_Arctic_FAC: TWC_Infantry_1950_Arctic_FO
+class TWC_Infantry_1950_Regular_Arctic_FAC: TWC_Infantry_1950_Regular_Arctic_FO
 {
 	displayName = "Forward Air Controller";
 	backpack = "TWC_Backpack_1950_FAC";
 };
 
 //FVs
-class TWC_Infantry_1950_Arctic_Vehicle_Commander: TWC_Infantry_1950_Arctic_SMG
+class TWC_Infantry_1950_Regular_Arctic_Vehicle_Commander: TWC_Infantry_1950_Regular_Arctic_SMG
 {
 	displayName = "Vehicle Commander";
 	uniformClass = "fow_u_uk_bd40_seac_01_corporal";
@@ -674,7 +674,7 @@ class TWC_Infantry_1950_Arctic_Vehicle_Commander: TWC_Infantry_1950_Arctic_SMG
 		MAG_5("LIB_32Rnd_9x19_Sten")
 	};
 };
-class TWC_Infantry_1950_Arctic_Vehicle_Crew: TWC_Infantry_1950_Arctic_Vehicle_Commander
+class TWC_Infantry_1950_Regular_Arctic_Vehicle_Crew: TWC_Infantry_1950_Regular_Arctic_Vehicle_Commander
 {
 	displayName = "Vehicle Crew";
 	uniformClass = "fow_u_uk_bd40_seac_02_private";
