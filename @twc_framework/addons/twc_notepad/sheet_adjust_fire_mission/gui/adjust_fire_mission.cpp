@@ -11,7 +11,7 @@ class nln_adjust_fire_mission
         class nln_afm_background : nln_base_picture
         {
             idc = 1200;
-            text = "\@twc_framework\addons\twc_notepad\sheet_adjust_fire_mission\data\ui\adjust_fire_mission.paa";
+            text = "\addons\twc_notepad\sheet_adjust_fire_mission\data\ui\adjust_fire_mission.paa";
             x = "-0.0614583 * safezoneW + safezoneX";
             y = "0.236103 * safezoneH + safezoneY";
             w = "0.423958 * safezoneW";
