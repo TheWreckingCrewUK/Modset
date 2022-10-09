@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="nln">
+    <Package name="adjust_fire_mission">
+        <Container name="interactions">
+            <Key ID="STR_nln_adjust_fire_mission_interactions_selfAction">
+                <Original>Adjust fire missions</Original>
+                <English>Adjust fire missions</English>
+                <German>Feuer Missionen justieren</German>
+                <Japanese>修正射ミッション</Japanese>
+            </Key>
+        </Container>
+        <Container name="settings">
+            <Key ID="STR_nln_adjust_fire_mission_settings_disable">
+                <Original>Disable adjust fire mission sheet</Original>
+                <English>Disable adjust fire mission sheet</English>
+                <German>Feuer MissionsBlatt deaktivieren</German>
+                <Japanese>修正射ミッションシートを無効化する</Japanese>
+            </Key>
+            <Key ID="STR_nln_adjust_fire_mission_settings_keybindOpen">
+                <Original>Open Adjust-Fire-Mission sheet</Original>
+                <English>Open Adjust-Fire-Mission sheet</English>
+                <German>Adjust-Fire-Mission Blatt öffnen</German>
+                <Japanese>修正射ミッションシートを開く</Japanese>
+            </Key>
+        </Container>
+    </Package>
+</Project>

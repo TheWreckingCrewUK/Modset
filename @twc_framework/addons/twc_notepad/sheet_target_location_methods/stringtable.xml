@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="nln">
+    <Package name="target_location_methods">
+        <Container name="interactions">
+            <Key ID="STR_nln_target_location_methods_interactions_selfAction">
+                <Original>Target Location Methods</Original>
+                <English>Target Location Methods</English>
+                <German>Ziellokalisierungsmethoden</German>
+                <Japanese>ターゲット位置伝達手段</Japanese>
+            </Key>
+        </Container>
+        <Container name="settings">
+            <Key ID="STR_nln_target_location_methods_settings_disable">
+                <Original>Disable Target Location Methods sheet</Original>
+                <English>Disable Target Location Methods sheet</English>
+                <German>Ziellokasierungsverfahren Blatt deaktivieren</German>
+                <Japanese>ターゲット位置伝達手段シートを無効化する</Japanese>
+            </Key>
+            <Key ID="STR_nln_target_location_methods_settings_keybindOpen">
+                <Original>Open Target Location Methods</Original>
+                <English>Open Target Location Methods</English>
+                <German>Zielort-Methoden Blatt öffnen</German>
+                <Japanese>ターゲット位置伝達手段を開く</Japanese>
+            </Key>
+        </Container>
+    </Package>
+</Project>

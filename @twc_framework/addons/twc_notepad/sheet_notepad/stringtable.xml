@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="nln">
+    <Package name="notepad">
+        <Container name="interactions">
+            <Key ID="STR_nln_notepad_interactions_selfAction">
+                <Original>Notepad</Original>
+                <English>Notepad</English>
+                <German>Notizbuch</German>
+                <Japanese>ノートパッド</Japanese>
+            </Key>
+        </Container>
+        <Container name="settings">
+            <Key ID="STR_nln_notepad_settings_disable">
+                <Original>Disable Notepad</Original>
+                <English>Disable Notepad</English>
+                <German>Notizblock deaktivieren</German>
+                <Japanese>ノートパッドを無効化する</Japanese>
+            </Key>
+            <Key ID="STR_nln_notepad_settings_keybindOpen">
+                <Original>Open Notepad</Original>
+                <English>Open Notepad</English>
+                <German>Notizbuch öffnen</German>
+                <Japanese>ノートパッドを開く</Japanese>
+            </Key>
+        </Container>
+    </Package>
+</Project>
