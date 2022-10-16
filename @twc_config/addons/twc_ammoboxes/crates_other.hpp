@@ -102,7 +102,7 @@ class TWC_AmmoBox_Other_MILAN_Portable: TWC_AmmoBox_Launcher_Portable {
 	displayName = "MILAN (Portable)";
 	
 	class TransportMagazines {
-		ADD_MAGA(ukcw_milan_ace_missile, 6);
+		//ADD_MAGA(, 6);
 	};
 	
 	// TWC Defines

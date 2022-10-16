@@ -87,7 +87,6 @@ class TWC_Backpack_1990_Regular_##CAMO##_MILAN_Ass: INHERIT \
 	scopeArsenal = 1; \
 	maximumLoad = 500; \
 	class TransportItems { \
-		ADD_ITEM(ukcw_milan_ace_missile,2); \
 	}; \
 };
 

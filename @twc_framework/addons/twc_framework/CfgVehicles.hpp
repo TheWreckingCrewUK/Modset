@@ -1413,7 +1413,7 @@ class CfgVehicles {
 				class Values {
 					class HC1_Chinook {
 						name = "HC1 Chinook";
-						value = "ukcw_chinook_hc1";
+						value = "TWC_Vehicle_ColdWar_Chinook_RAF";
 					};
 					class HC4_Chinook {
 						name = "HC4 Chinook";

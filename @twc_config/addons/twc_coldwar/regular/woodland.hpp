@@ -542,7 +542,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Company_Sergeant: TWC_Infantry_ColdW
 class TWC_Infantry_ColdWar_Regular_Woodland_MILAN_Gunner: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
 {
 	displayName="MILAN Gunner";
-	backpack="ukcw_milan_gun_bag";
+	backpack="";
 	weapons[]=
 	{
 		"sp_smg_sterling",

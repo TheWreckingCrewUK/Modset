@@ -40,14 +40,13 @@ class CfgWeapons
 		reloadAction = "ReloadRPG";
 		handAnim[] = {"OFP2_ManSkeleton","\twc_law80\law80_anim.rtm"};
 		magazineReloadTime = 0.1;
-		//weaponInfoType = "";
 		distanceZoomMin = 100;
 		distanceZoomMax = 500;
 		opticsZoomInit = 0.35;
 		opticsZoomMax = 0.35;
 		opticsZoomMin = 0.35;
-		discreteDistance[] = {}; //{100, 200, 300, 400, 500};
-		discreteDistanceCameraPoint[] = {}; //{"eye_1", "eye_2", "eye_3", "eye_4", "eye_5"};
+		discreteDistance[] = {};
+		discreteDistanceCameraPoint[] = {};
 		memoryPointCamera = "eye";
 		cameraDir = "look";
 		discreteDistanceInitIndex = 0;

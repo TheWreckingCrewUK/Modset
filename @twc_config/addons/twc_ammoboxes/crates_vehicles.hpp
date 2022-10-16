@@ -35,11 +35,7 @@ class TWC_AmmoBox_Vehicle_FV4201: TWC_AmmoBox_Vehicle {
 	scopeCurator = 2;
 	displayName = "FV4201 (Immobile)";
 	
-	class TransportMagazines {
-		ADD_MAGA(ukcw_l15a4_apds_hull, 40);
-		ADD_MAGA(ukcw_l31_hesh_hull, 20);
-		ADD_MAGA(ukcw_l34_smoke_hull, 4);
-	};
+	class TransportMagazines {};
 };
 
 
