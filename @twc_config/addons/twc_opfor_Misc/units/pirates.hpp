@@ -675,53 +675,6 @@ class Afr_Pirate_SMLE: Afr_Pirate_Base
 		"SmokeShell"
 	};
 };
-class Afr_Pirate_AR_RPD: Afr_Pirate_Base
-{
-	scope=2;
-	displayName="Auto Riflepirate (RPD)";
-	uniformClass="U_I_C_Soldier_Bandit_2_F";
-	backpack="";
-	linkedItems[]=
-	{
-		"CUP_V_OI_TKI_Jacket2_03",
-		"G_Bandanna_blk",
-		"H_Cap_tan"
-	};
-	respawnLinkedItems[]=
-	{
-		"CUP_V_OI_TKI_Jacket2_03",
-		"G_Bandanna_blk",
-		"H_Cap_tan"
-	};
-	weapons[]=
-	{
-		"Throw",
-		"Put",
-		"TWC_RPD"
-	};
-	respawnweapons[]=
-	{
-		"Throw",
-		"Put",
-		"TWC_RPD"
-	};
-	magazines[]=
-	{
-		"twc_100Rnd_762x39_RPD",
-		"twc_100Rnd_762x39_RPD",
-		"twc_100Rnd_762x39_RPD",
-		"CUP_HandGrenade_RGD5",
-		"SmokeShell"
-	};
-	Respawnmagazines[]=
-	{
-		"twc_100Rnd_762x39_RPD",
-		"twc_100Rnd_762x39_RPD",
-		"twc_100Rnd_762x39_RPD",
-		"CUP_HandGrenade_RGD5",
-		"SmokeShell"
-	};
-};
 class Afr_Pirate_AR_RPK: Afr_Pirate_Base
 {
 	scope=2;

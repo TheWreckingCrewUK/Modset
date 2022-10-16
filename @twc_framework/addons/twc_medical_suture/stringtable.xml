@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="TWC Medical Suture">
+	<Package name="TWC_Medical_Suture">
+		<Key ID="STR_TWC_SUTURE_EXECUTE">
+			<Original>%1 sutured a wound</Original>
+			<English>%1 sutured a wound</English>
+			<German>%1 hat eine Wunde vernäht</German>
+		</Key>
+	</Package>
+</Project>

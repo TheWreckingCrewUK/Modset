@@ -44,7 +44,7 @@ class TWC_OPFOR_BurIns {
 		};
 		class Unit6 {
 			side = 0;
-			vehicle = "BurIns_MG_RPD";
+			vehicle = "BurIns_MG_Bren";
 			rank = "PRIVATE";
 			position[] = {12,0,0};
 		};

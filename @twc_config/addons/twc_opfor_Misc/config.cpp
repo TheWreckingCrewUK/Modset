@@ -1,5 +1,5 @@
 class CfgPatches {
-	class twc_faction {
+	class twc_opfor_Misc {
 		units[] = {
 			"GulfWar_Iraqi_Squadleader",
 			"GulfWar_Iraqi_Rifleman",
@@ -73,7 +73,6 @@ class CfgPatches {
 			"Afr_Pirate_FAL",
 			"Afr_Pirate_M14",
 			"Afr_Pirate_SMLE",
-			"Afr_Pirate_AR_RPD",
 			"Afr_Pirate_AR_RPK",
 			"Afr_Pirate_MG_M60",
 			"Afr_Pirate_MG_PKM",
@@ -92,7 +91,6 @@ class CfgPatches {
 			"Asn_Pirate_FAL",
 			"Asn_Pirate_M14",
 			"Asn_Pirate_SMLE",
-			"Asn_Pirate_AR_RPD",
 			"Asn_Pirate_AR_RPK",
 			"Asn_Pirate_MG_M60",
 			"Asn_Pirate_MG_PKM",

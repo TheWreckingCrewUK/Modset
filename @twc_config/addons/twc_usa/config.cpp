@@ -29,7 +29,7 @@ class CfgPatches {
 			"A3_Characters_F_OPFOR",
 			"CUP_Creatures_Military_USArmy",
 			"twc_faction",
-			"twc_ai"
+			"twc_ai_skill"
 		};
 	};
 };

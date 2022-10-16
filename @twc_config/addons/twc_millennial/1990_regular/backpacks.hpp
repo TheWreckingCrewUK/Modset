@@ -107,8 +107,8 @@ class TWC_Backpack_1990_Regular_##CAMO##_L14A1_Ass: INHERIT \
 { \
 	scope = 1; \
 	class TransportMagazines { \
-		ADD_MAGA(ukcw_l14a1_HEAT,2); \
-		ADD_MAGA(ukcw_l14a1_HE,2);\
+		ADD_MAGA(TWC_Magazine_L14A1_HEAT,2); \
+		ADD_MAGA(TWC_Magazine_L14A1_HE,2);\
 	}; \
 };
 

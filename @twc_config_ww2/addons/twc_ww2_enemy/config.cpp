@@ -3,7 +3,9 @@ class CfgPatches {
 		units[] = { };
 		weapons[] = { };
 		requiredVersion = 0.1;
-		requiredAddons[] = {};
+		requiredAddons[] = {
+			"ww2_assets_t_vehicles_planes_t"
+		};
 	};
 };
 

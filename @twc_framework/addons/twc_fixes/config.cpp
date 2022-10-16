@@ -8,7 +8,8 @@ class CfgPatches {
 			"A3_Structures_F_Dominants_Castle",
 			"ace_common",
 			"ace_logistics_wirecutter",
-			"ace_captives"
+			"ace_captives",
+			"ace_zeus"
 		};
 
 		author[] = {};

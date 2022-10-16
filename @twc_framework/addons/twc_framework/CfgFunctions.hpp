@@ -52,6 +52,7 @@ class CfgFunctions {
 			class aiscramble {};
 			class aisuppresscqb {};
 			class aisuppress {};
+			class doStop{};
 			
 			/** Player Messaging **/
 			class speak {};
@@ -116,6 +117,7 @@ class CfgFunctions {
 			class moduleAmbientSound {};
 			class moduleAmbientSoundSimp {};
 			class moduleSpeak {};
+			class moduledostop {};
 		};
 		
 		class cache {

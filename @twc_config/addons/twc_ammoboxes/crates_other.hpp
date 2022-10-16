@@ -30,7 +30,7 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 		ADD_ITEM(ACE_morphine, 6);
 		ADD_ITEM(ACE_epinephrine, 6);
 		
-		ADD_ITEM(ACE_salineIV_500, 12);
+		ADD_ITEM(ACE_salineIV_500, 15);
 		ADD_ITEM(ACE_salineIV_250, 2);
 		ADD_ITEM(ACE_tourniquet, 4);
 		ADD_ITEM(ACE_bodyBag, 6);
@@ -86,10 +86,10 @@ class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
 	displayName = "L14 - Recoilless Rifle Ammo (Portable)";
 	
 	class TransportMagazines {
-		ADD_MAGA(ukcw_l14A1_HE, 3);
-		ADD_MAGA(ukcw_l14A1_HEAT, 3);
-		ADD_MAGA(ukcw_l14A1_ILLUM, 2);
-		ADD_MAGA(ukcw_l14A1_SMOKE, 2);
+		ADD_MAGA(TWC_Magazine_L14A1_HE, 3);
+		ADD_MAGA(TWC_Magazine_L14A1_HEAT, 3);
+		ADD_MAGA(TWC_Magazine_L14A1_Illum, 2);
+		ADD_MAGA(TWC_Magazine_L14A1_Smoke, 2);
 	};
 	
 	// TWC Defines
