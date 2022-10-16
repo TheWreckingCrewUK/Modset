@@ -879,6 +879,113 @@ class Afr_Pirate_MM_SVD: Afr_Pirate_Base
 		"SmokeShell"
 	};
 };
+class Afr_Pirate_Shotgun: Afr_Pirate_Base
+{
+	scope=2;
+	displayName="Shotpirate";
+	backpack="";
+	linkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_03",
+		"G_Bandanna_blk",
+		"H_Cap_tan"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_03",
+		"G_Bandanna_blk",
+		"H_Cap_tan"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"sgun_HunterShotgun_01_F"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"sgun_HunterShotgun_01_F"
+	};
+	magazines[]=
+	{
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+	Respawnmagazines[]=
+	{
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Pellets",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"2Rnd_12Gauge_Slug",
+		"CUP_HandGrenade_RGD5",
+		"CUP_HandGrenade_RGD5",
+		"SmokeShell"
+	};
+};
+class Afr_Pirate_Sawedoff: Afr_Pirate_Shotgun
+{
+	scope=2;
+	displayName="Sawed Off Pirate";
+	uniformClass="U_I_C_Soldier_Para_3_F";
+	backpack="";
+	linkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_02",
+		"H_ShemagOpen_tan"
+	};
+	respawnLinkedItems[]=
+	{
+		"CUP_V_OI_TKI_Jacket2_02",
+		"H_ShemagOpen_tan"
+	};
+	weapons[]=
+	{
+		"Throw",
+		"Put",
+		"sgun_HunterShotgun_01_sawedoff_F"
+	};
+	respawnweapons[]=
+	{
+		"Throw",
+		"Put",
+		"sgun_HunterShotgun_01_sawedoff_F"
+	};
+};
 
 //////////// Asians//////////
 
@@ -1094,6 +1201,30 @@ class Asn_Pirate_MG_PKM: Afr_Pirate_MG_PKM
 	};
 };
 class Asn_Pirate_MM_SVD: Afr_Pirate_MM_SVD
+{
+
+	faction="TWC_Asn_Pirates";
+	genericNames="ChineseMen";
+	identityTypes[] =
+	{
+		"LanguageCHI_F",
+		"Head_Asian",
+		"G_CIVIL_male"
+	};
+};
+class Asn_Pirate_Shotgun: Afr_Pirate_Shotgun
+{
+
+	faction="TWC_Asn_Pirates";
+	genericNames="ChineseMen";
+	identityTypes[] =
+	{
+		"LanguageCHI_F",
+		"Head_Asian",
+		"G_CIVIL_male"
+	};
+};
+class Asn_Pirate_Sawedoff: Afr_Pirate_Sawedoff
 {
 
 	faction="TWC_Asn_Pirates";
