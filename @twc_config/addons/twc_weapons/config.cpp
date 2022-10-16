@@ -104,6 +104,12 @@ class CfgFunctions {
 			class disassembleFieldTent {};
 			class convert50To100 {};
 			class convert100To50 {};
+
+			// L14A1 Fuzing
+			class addChangeFuzeMenu {};
+			class changeFuze {};
+			class loadFuzeMenu {};
+			class unloadFuzeMenu {};
 		};
 	};
 };
@@ -203,6 +209,8 @@ class CfgWeapons {
 	};
 };
 
+#include "CfgEventHandlers.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgMagazineGroups.hpp"
+#include "L14A1Dialog.hpp"
