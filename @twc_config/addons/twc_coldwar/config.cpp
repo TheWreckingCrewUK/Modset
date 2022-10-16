@@ -7,6 +7,7 @@ class CfgPatches
 		requiredAddons[] = {
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
+			"twc_weapons",
 			"twc_faction",
 			"twc_ai_skill",
 			"uk3cb_baf_weapons_l1a1",

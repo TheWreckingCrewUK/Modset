@@ -50,8 +50,8 @@ class TWC_Backpack_ColdWar_Regular_ASSAT: SP_Backpack_CarlGustavCarrier
 	scope = 1;
 	maximumLoad = 300;
 	class TransportMagazines {
-		ADD_MAGA(ukcw_l14a1_HEAT,2);
-		ADD_MAGA(ukcw_l14a1_HE,1);
+		ADD_MAGA(TWC_Magazine_L14A1_HEAT,2);
+		ADD_MAGA(TWC_Magazine_L14A1_HE,1);
 	};
 };
 class TWC_Backpack_ColdWar_Regular_ASSMG: SP_Backpack_LargePack

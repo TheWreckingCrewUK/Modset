@@ -213,6 +213,7 @@ class TWC_Infantry_2000_Regular_Woodland_SectionCommander: TWC_Infantry_2000_Reg
 		"UK3CB_BAF_V_Osprey_DPMW2",
 		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -221,6 +222,7 @@ class TWC_Infantry_2000_Regular_Woodland_SectionCommander: TWC_Infantry_2000_Reg
 		"UK3CB_BAF_V_Osprey_DPMW2",
 		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -306,6 +308,7 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 		"UK3CB_BAF_V_Osprey_DPMW9",
 		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -314,6 +317,7 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 		"UK3CB_BAF_V_Osprey_DPMW9",
 		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -371,6 +375,7 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_2000_Reg
 		"UK3CB_BAF_V_Osprey_DPMW9",
 		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -379,6 +384,7 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_2000_Reg
 		"UK3CB_BAF_V_Osprey_DPMW9",
 		"UK3CB_BAF_H_Mk6_DPMW_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
