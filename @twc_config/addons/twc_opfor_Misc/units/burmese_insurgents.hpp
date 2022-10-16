@@ -304,58 +304,6 @@
 			"SmokeShell"
 		};
 	};
-	class BurIns_MG_RPD: BurIns_Base
-	{
-		scope=2;
-		scopeCurator = 2;
-		displayName="Machinegunner (RPD)";
-		linkedItems[]=
-		{
-			"CUP_H_SLA_Helmet_OD_worn",
-			"cwr3_i_vest_chicom",
-			"ItemMap",
-			"ItemCompass"
-		};
-		respawnLinkedItems[]=
-		{
-			"CUP_H_SLA_Helmet_OD_worn",
-			"cwr3_i_vest_chicom",
-			"ItemMap",
-			"ItemCompass"
-		};
-		weapons[]=
-		{
-			"Throw",
-			"Put",
-			"TWC_RPD"
-		};
-		respawnweapons[]=
-		{
-			"Throw",
-			"Put",
-			"TWC_RPD"
-		};
-		magazines[]=
-		{
-			"twc_100Rnd_762x39_RPD",
-			"twc_100Rnd_762x39_RPD",
-			"twc_100Rnd_762x39_RPD",
-			"twc_100Rnd_762x39_RPD",
-			"twc_100Rnd_762x39_RPD",
-			"twc_100Rnd_762x39_RPD",
-			"SmokeShell"
-		};
-		Respawnmagazines[]=
-		{
-			"twc_100Rnd_762x39_RPD",
-			"twc_100Rnd_762x39_RPD",
-			"twc_100Rnd_762x39_RPD",
-			"twc_100Rnd_762x39_RPD",
-			"twc_100Rnd_762x39_RPD",
-			"twc_100Rnd_762x39_RPD",
-			"SmokeShell"
-		};
-	};
 	class BurIns_MG_Bren: BurIns_Base
 	{
 		scope=2;
