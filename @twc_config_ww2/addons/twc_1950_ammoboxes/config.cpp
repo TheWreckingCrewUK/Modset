@@ -132,7 +132,7 @@ class CfgVehicles {
 			maga_nc(TWC_Magazine_SignalSmoke_Blue, 3);
 		};
 	};
-		class TWC_AmmoBox_1950_Portable: TWC_AmmoBox_WW2_Portable {
+	class TWC_AmmoBox_1950_Portable: TWC_AmmoBox_WW2_Portable {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Section Resupply";
