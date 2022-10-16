@@ -86,10 +86,10 @@ class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
 	displayName = "L14 - Recoilless Rifle Ammo (Portable)";
 	
 	class TransportMagazines {
-		ADD_MAGA(ukcw_l14A1_HE, 3);
-		ADD_MAGA(ukcw_l14A1_HEAT, 3);
-		ADD_MAGA(ukcw_l14A1_ILLUM, 2);
-		ADD_MAGA(ukcw_l14A1_SMOKE, 2);
+		ADD_MAGA(TWC_Magazine_L14A1_HE, 3);
+		ADD_MAGA(TWC_Magazine_L14A1_HEAT, 3);
+		ADD_MAGA(TWC_Magazine_L14A1_Illum, 2);
+		ADD_MAGA(TWC_Magazine_L14A1_Smoke, 2);
 	};
 	
 	// TWC Defines

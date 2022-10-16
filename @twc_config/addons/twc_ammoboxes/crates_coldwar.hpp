@@ -45,7 +45,7 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, 5);
 		
 		// Launcher HE per Ghostie's Request
-		ADD_MAGA(ukcw_l14a1_HE, 2);
+		ADD_MAGA(TWC_Magazine_L14A1_HE, 2);
 	};
 };
 
@@ -74,7 +74,7 @@ class TWC_AmmoBox_ColdWar_Section_Portable_COIN: TWC_AmmoBox_Portable {
 		ADD_MAGA(UK3CB_BAF_762_20Rnd, 14);
 		ADD_MAGA(UK3CB_BAF_762_20Rnd_T, 6);
 
-		// L7A1 GPMG
+		// L4 Bren
 		ADD_MAGA(SP_30Rnd_762_L4, 10);
 
 		ADD_MAGA(ACE_HandFlare_White, 2);
@@ -86,9 +86,6 @@ class TWC_AmmoBox_ColdWar_Section_Portable_COIN: TWC_AmmoBox_Portable {
 		
 		// Hand Grenade HE
 		ADD_MAGA(CUP_HandGrenade_L109A2_HE, 5);
-		
-		// Launcher HE per Ghostie's Request
-		ADD_MAGA(ukcw_l14a1_HE,2);
 	};
 };
 
