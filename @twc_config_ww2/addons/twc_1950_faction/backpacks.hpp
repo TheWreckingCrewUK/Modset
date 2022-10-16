@@ -12,3 +12,4 @@ class fow_b_uk_bergenpack;
 class fow_b_us_rocket_bag;
 
 #include "coin\backpacks.hpp"
+#include "regular\backpacks.hpp"
