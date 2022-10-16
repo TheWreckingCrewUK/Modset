@@ -109,6 +109,7 @@ class TWC_Infantry_2000_Regular_Desert_SectionCommander: TWC_Infantry_2000_Regul
 		"UK3CB_BAF_V_Osprey_DDPM2",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -117,6 +118,7 @@ class TWC_Infantry_2000_Regular_Desert_SectionCommander: TWC_Infantry_2000_Regul
 		"UK3CB_BAF_V_Osprey_DDPM2",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -155,6 +157,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_Commander: TWC_Infantry_2000_Regu
 		"UK3CB_BAF_V_Osprey_DDPM9",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -163,6 +166,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_Commander: TWC_Infantry_2000_Regu
 		"UK3CB_BAF_V_Osprey_DDPM9",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -177,6 +181,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_Sergeant: TWC_Infantry_2000_Regul
 		"UK3CB_BAF_V_Osprey_DDPM9",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -185,6 +190,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_Sergeant: TWC_Infantry_2000_Regul
 		"UK3CB_BAF_V_Osprey_DDPM9",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -221,6 +227,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_CSM: TWC_Infantry_2000_Regular_Wo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -229,6 +236,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_CSM: TWC_Infantry_2000_Regular_Wo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};

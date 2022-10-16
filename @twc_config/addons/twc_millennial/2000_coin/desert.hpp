@@ -94,6 +94,7 @@ class TWC_Infantry_2000_COIN_Desert_SectionCommander: TWC_Infantry_2000_COIN_Woo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -102,6 +103,7 @@ class TWC_Infantry_2000_COIN_Desert_SectionCommander: TWC_Infantry_2000_COIN_Woo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -140,6 +142,7 @@ class TWC_Infantry_2000_COIN_Desert_Platoon_Commander: TWC_Infantry_2000_COIN_Wo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -148,6 +151,7 @@ class TWC_Infantry_2000_COIN_Desert_Platoon_Commander: TWC_Infantry_2000_COIN_Wo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -162,6 +166,7 @@ class TWC_Infantry_2000_COIN_Desert_Platoon_Sergeant: TWC_Infantry_2000_COIN_Woo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -170,6 +175,7 @@ class TWC_Infantry_2000_COIN_Desert_Platoon_Sergeant: TWC_Infantry_2000_COIN_Woo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -206,6 +212,7 @@ class TWC_Infantry_2000_COIN_Desert_Platoon_CSM: TWC_Infantry_2000_COIN_Woodland
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -214,6 +221,7 @@ class TWC_Infantry_2000_COIN_Desert_Platoon_CSM: TWC_Infantry_2000_COIN_Woodland
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -230,6 +238,7 @@ class TWC_Infantry_2000_COIN_Desert_Company_Commander: TWC_Infantry_2000_COIN_Wo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -238,6 +247,7 @@ class TWC_Infantry_2000_COIN_Desert_Company_Commander: TWC_Infantry_2000_COIN_Wo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
