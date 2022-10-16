@@ -1156,17 +1156,6 @@ class Asn_Pirate_SMLE: Afr_Pirate_SMLE
 		"G_CIVIL_male"
 	};
 };
-class Asn_Pirate_AR_RPD: Afr_Pirate_AR_RPD
-{
-	faction="TWC_Asn_Pirates";
-	genericNames="ChineseMen";
-	identityTypes[] =
-	{
-		"LanguageCHI_F",
-		"Head_Asian",
-		"G_CIVIL_male"
-	};
-};
 class Asn_Pirate_AR_RPK: Afr_Pirate_AR_RPK
 {
 	faction="TWC_Asn_Pirates";
