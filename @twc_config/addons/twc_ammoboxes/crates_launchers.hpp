@@ -11,15 +11,15 @@ class TWC_AmmoBox_Launchers_L14_Portable: TWC_AmmoBox_Launcher_Portable {
 	editorSubcategory = "TWC_Crates_Launchers";
 	
 	class TransportWeapons {
-		ADD_WEAP(ukcw_l14A1, 1);
+		ADD_WEAP(TWC_Weapon_L14A1, 1);
 	};
 
 	class TransportMagazines {
 		// L14A1 Recoilless Rifle - Carl Gustav
-		ADD_MAGA(ukcw_l14a1_HEAT, 4);
-		ADD_MAGA(ukcw_l14a1_HE, 3);
-		ADD_MAGA(ukcw_l14a1_ILLUM, 1);
-		ADD_MAGA(ukcw_l14a1_SMOKE, 1);
+		ADD_MAGA(TWC_Magazine_L14A1_HEAT, 4);
+		ADD_MAGA(TWC_Magazine_L14A1_HE, 3);
+		ADD_MAGA(TWC_Magazine_L14A1_Illum, 1);
+		ADD_MAGA(TWC_Magazine_L14A1_Smoke, 1);
 	};
 };
 

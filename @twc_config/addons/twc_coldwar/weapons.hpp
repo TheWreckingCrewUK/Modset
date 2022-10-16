@@ -37,8 +37,8 @@ class TWC_Weapon_L42A1_No32: SP_enfield_l42_beech_old
 		};
 	};
 };
-class ukcw_L14A1;
-class twc_l14A1_scoped: ukcw_L14A1
+class TWC_Weapon_L14A1;
+class twc_l14A1_scoped: TWC_Weapon_L14A1
 {
 	scope = 1;
 	author="jayman";

@@ -223,14 +223,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_AT: TWC_Infantry_ColdWar_Regular_Woo
 	magazines[]=
 	{
 		MAG_7("SP_30Rnd_9x19_L2A3_Sterling"),
-		"ukcw_l14a1_HEAT",
+		"TWC_Magazine_L14A1_HEAT",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell"
 	};
 	respawnmagazines[]=
 	{
 		MAG_7("SP_30Rnd_9x19_L2A3_Sterling"),
-		"ukcw_l14a1_HEAT",
+		"TWC_Magazine_L14A1_HEAT",
 		"CUP_HandGrenade_L109A2_HE",
 		"SmokeShell"
 	};	

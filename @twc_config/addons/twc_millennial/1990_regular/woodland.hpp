@@ -345,13 +345,13 @@ class TWC_Infantry_1990_Regular_Woodland_L14A1_Gunner: TWC_Infantry_1990_Regular
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
 		MAG_2("SmokeShell"),
-		"ukcw_l14a1_HEAT"
+		"TWC_Magazine_L14A1_HEAT"
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
 		MAG_2("SmokeShell"),
-		"ukcw_l14a1_HEAT"
+		"TWC_Magazine_L14A1_HEAT"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_L14A1_Ass: TWC_Infantry_1990_Regular_Woodland_Rifleman
