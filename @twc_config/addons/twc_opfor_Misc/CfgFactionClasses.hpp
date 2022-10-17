@@ -159,4 +159,20 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 2;
 	};
+	
+	class TWC_CI_Units {
+		displayName = "Chaos Insurgency";
+		author = "Saxon";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 2;
+	};
+	
+	class TWC_GRUP_Units {
+		displayName = "GRU, Division P";
+		author = "Saxon";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 2;
+	};
 };
