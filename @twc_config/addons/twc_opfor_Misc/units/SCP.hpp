@@ -430,3 +430,334 @@ class MTF_HK416: TWC_Infantry_Millennial_Base
 		"SmokeShell"
 	};
 };
+
+class TWC_BLUFOR_SCP_Modern_Guard_Light: B_Soldier_base_F {
+	author = "[TWC] Rik";
+	scope = 2;
+	displayName = "Facility Guard (Light)";
+	faction = "TWC_MTF_Units";
+	vehicleClass = "EdSubcat_Personnel";
+	nakedUniform = "U_BasicBody";
+	uniformClass = "U_Marshal";
+	backpack = "";
+	linkedItems[] =
+	{
+		"CUP_V_C_Police_Holster",
+		"CUP_H_PMC_Cap_Grey",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CUP_V_C_Police_Holster",
+		"CUP_H_PMC_Cap_Grey",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACRE_BF888S"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACRE_BF888S"
+	};
+	weapons[] =
+	{
+		"CUP_hgun_Glock17_blk",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"CUP_hgun_Glock17_blk",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_7("CUP_17Rnd_9x19_glock17")
+	};
+	respawnMagazines[] =
+	{
+		MAG_7("CUP_17Rnd_9x19_glock17")
+	};
+};
+
+class TWC_BLUFOR_SCP_Modern_Guard_Heavy: TWC_BLUFOR_SCP_Modern_Guard_Light {
+	displayName = "Facility Guard (Heavy)";
+	linkedItems[] =
+	{
+		"CUP_V_PMC_CIRAS_Black_Veh",
+		"CUP_H_PMC_Cap_Grey",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CUP_V_PMC_CIRAS_Black_Veh",
+		"CUP_H_PMC_Cap_Grey",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	weapons[] =
+	{
+		"CUP_smg_MP7_zeiss",
+		"CUP_hgun_Glock17_blk",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"CUP_smg_MP7_zeiss",
+		"CUP_hgun_Glock17_blk",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_7("CUP_40Rnd_46x30_MP7"),
+		MAG_3("CUP_17Rnd_9x19_glock17"),
+		MAG_2("ACE_M84")
+	};
+	respawnMagazines[] =
+	{
+		MAG_7("CUP_40Rnd_46x30_MP7"),
+		MAG_3("CUP_17Rnd_9x19_glock17"),
+		MAG_2("ACE_M84")
+	};
+};
+
+class TWC_OPFOR_GRUP_Modern_Base: O_Soldier_base_F {
+	author = "[TWC] Rik";
+	scope = 1;
+	displayName = "Soldier Base";
+	faction = "TWC_GRUP_Units";
+	vehicleClass = "EdSubcat_Personnel";
+	nakedUniform = "U_BasicBody";
+	uniformClass = "CUP_U_CRYE_MCAM_RUS2_Full";
+	backpack = "";
+	linkedItems[] =
+	{
+		"CUP_V_CPC_Fastbelt_mc",
+		"CUP_H_OpsCore_Covered_MCAM",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CUP_V_CPC_Fastbelt_mc",
+		"CUP_H_OpsCore_Covered_MCAM",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACRE_BF888S"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACRE_BF888S"
+	};
+	nightLinkedItems[] = {
+		"CUP_NVG_1PN138"
+	};
+	nightItems[] = {
+		MAG_2("ACE_HandFlare_White"),
+		MAG_2("Chemlight_green"),
+		"B_IR_Grenade"
+	};
+};
+
+class TWC_OPFOR_GRUP_Modern_Rifleman: TWC_OPFOR_GRUP_Modern_Base {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Rifleman";
+	backpack = "TWC_Backpack_GRUP_Modern_Rifleman";
+	linkedItems[] =
+	{
+		"CUP_V_CPC_Fastbelt_mc",
+		"CUP_H_OpsCore_Covered_MCAM",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CUP_V_CPC_Fastbelt_mc",
+		"CUP_H_OpsCore_Covered_MCAM",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	weapons[] =
+	{
+		"TWC_Weapon_GRUP_AK12",
+		"CUP_launch_RPG26",
+		"hgun_Rook40_F",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"TWC_Weapon_GRUP_AK12",
+		"CUP_launch_RPG26",
+		"hgun_Rook40_F",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_7("CUP_30Rnd_545x39_AK12_Tan_M"),
+		MAG_2("16Rnd_9x21_Mag"),
+		MAG_2("CUP_HandGrenade_RGD5")
+	};
+	respawnMagazines[] =
+	{
+		MAG_7("CUP_30Rnd_545x39_AK12_Tan_M"),
+		MAG_2("16Rnd_9x21_Mag"),
+		MAG_2("CUP_HandGrenade_RGD5")
+	};
+};
+
+class TWC_OPFOR_GRUP_Modern_Breacher: TWC_OPFOR_GRUP_Modern_Rifleman {
+	displayName = "Breacher";
+	backpack = "TWC_Backpack_GRUP_Modern_Breacher";
+	linkedItems[] =
+	{
+		"CUP_V_CPC_Fastbelt_mc",
+		"CUP_H_OpsCore_Covered_MCAM",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CUP_V_CPC_Fastbelt_mc",
+		"CUP_H_OpsCore_Covered_MCAM",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch"
+	};
+	weapons[] =
+	{
+		"TWC_Weapon_GRUP_Saiga12K",
+		"hgun_Rook40_F",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"TWC_Weapon_GRUP_Saiga12K",
+		"hgun_Rook40_F",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_3("CUP_12Rnd_B_Saiga12_Slug"),
+		MAG_3("CUP_12Rnd_B_Saiga12_Buck_00"),
+		MAG_2("16Rnd_9x21_Mag"),
+		MAG_2("CUP_HandGrenade_RGD5")
+	};
+	respawnMagazines[] =
+	{
+		MAG_3("CUP_12Rnd_B_Saiga12_Slug"),
+		MAG_3("CUP_12Rnd_B_Saiga12_Buck_00"),
+		MAG_2("16Rnd_9x21_Mag"),
+		MAG_2("CUP_HandGrenade_RGD5")
+	};
+};
+
+class TWC_OPFOR_GRUP_Modern_MG: TWC_OPFOR_GRUP_Modern_Rifleman {
+	displayName = "Machinegunner";
+	backpack = "TWC_Backpack_GRUP_Modern_MG";
+	linkedItems[] =
+	{
+		"CUP_V_CPC_Fastbelt_mc",
+		"CUP_H_OpsCore_Covered_MCAM",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"CUP_optic_Eotech553_Black",
+		"CUP_acc_LLM_black",
+		"CUP_muzzle_mfsup_Flashhider_PK_Black"
+	};
+	respawnLinkedItems[] =
+	{
+		"CUP_V_CPC_Fastbelt_mc",
+		"CUP_H_OpsCore_Covered_MCAM",
+		"ItemMap",
+		"ItemCompass",
+		"ItemWatch",
+		"CUP_optic_Eotech553_Black",
+		"CUP_acc_LLM_black",
+		"CUP_muzzle_mfsup_Flashhider_PK_Black"
+	};
+	weapons[] =
+	{
+		"TWC_Weapon_GRUP_PKP",
+		"hgun_Rook40_F",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"TWC_Weapon_GRUP_PKP",
+		"hgun_Rook40_F",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_2("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"),
+		MAG_2("16Rnd_9x21_Mag")
+	};
+	respawnMagazines[] =
+	{
+		MAG_2("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"),
+		MAG_2("16Rnd_9x21_Mag")
+	};
+};
+
+class TWC_OPFOR_GRUP_Modern_ASSMG: TWC_OPFOR_GRUP_Modern_Rifleman {
+	displayName = "Assistant Machinegunner";
+	backpack = "TWC_Backpack_GRUP_Modern_ASSMG";
+};
+
+class TWC_OPFOR_GRUP_Modern_2iC: TWC_OPFOR_GRUP_Modern_Rifleman {
+	displayName = "Group Subcommander";
+	backpack = "TWC_Backpack_GRUP_Modern_2iC";
+};
+
+class TWC_OPFOR_GRUP_Modern_GroupCommander: TWC_OPFOR_GRUP_Modern_Rifleman {
+	displayName = "Group Commander";
+	TWC_isCommandRole = 1;
+	backpack = "TWC_Backpack_GRUP_Modern_GroupCommander";
+	weapons[] =
+	{
+		"TWC_Weapon_GRUP_AK12",
+		"hgun_Rook40_F",
+		"ACE_Yardage450",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"TWC_Weapon_GRUP_AK12",
+		"hgun_Rook40_F",
+		"ACE_Yardage450",
+		"Throw",
+		"Put"
+	};
+};
