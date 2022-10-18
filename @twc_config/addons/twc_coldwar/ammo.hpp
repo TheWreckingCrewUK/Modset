@@ -1,5 +1,5 @@
 class M_Vorona_HE;
-class SP_Blowpipe_missile: M_Vorona_HE
+class SP_Blowpipe_round: M_Vorona_HE
 {
 	trackOversteer = 1;
 	maneuvrability = 16;

@@ -3,19 +3,19 @@
 class TWC_Infantry_ColdWar_Airborne_Woodland_Rifleman: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_Rifleman
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -24,19 +24,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Rifleman: TWC_Infantry_ColdWar_Regu
 class TWC_Infantry_ColdWar_Airborne_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_Rifleman_SUIT
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -45,19 +45,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar
 class TWC_Infantry_ColdWar_Airborne_Woodland_SectionCommander: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_SectionCommander
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -66,19 +66,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_SectionCommander: TWC_Infantry_Cold
 class TWC_Infantry_ColdWar_Airborne_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_2iC
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -87,19 +87,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_2iC: TWC_Infantry_ColdWar_Regular_D
 class TWC_Infantry_ColdWar_Airborne_Woodland_AT: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_AT
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -108,19 +108,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_AT: TWC_Infantry_ColdWar_Regular_Di
 class TWC_Infantry_ColdWar_Airborne_Woodland_ASSAT: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_ASSAT
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -129,19 +129,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_ASSAT: TWC_Infantry_ColdWar_Regular
 class TWC_Infantry_ColdWar_Airborne_Woodland_MG: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_MG
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -150,19 +150,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_MG: TWC_Infantry_ColdWar_Regular_Di
 class TWC_Infantry_ColdWar_Airborne_Woodland_ASSMG: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_ASSMG
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -173,19 +173,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_ASSMG: TWC_Infantry_ColdWar_Regular
 class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Commander: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_Platoon_Commander
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -194,19 +194,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Commander: TWC_Infantry_Col
 class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Sergeant: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -215,10 +215,10 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Sergeant: TWC_Infantry_Cold
 class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_Platoon_Medic
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"SP_Helmet_Airborne_ODMedic_Net",
 		"ItemCompass",
 		"itemMap",
@@ -226,7 +226,7 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Medic: TWC_Infantry_ColdWar
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"SP_Helmet_Airborne_ODMedic_Net",
 		"ItemCompass",
 		"itemMap",
@@ -244,19 +244,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Medic: TWC_Infantry_ColdWar
 class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_Platoon_Mortar
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass = "SP_72Para_DenisonTrops_1_Item";
+	uniformClass = "sp_80para_combats_item";
 	linkedItems[] =
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -265,19 +265,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Platoon_Mortar: TWC_Infantry_ColdWa
 class TWC_Infantry_ColdWar_Airborne_Woodland_CSM: TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_CSM
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -288,19 +288,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_CSM: TWC_Infantry_ColdWar_Regular_D
 class TWC_Infantry_ColdWar_Airborne_Woodland_MILAN_Gunner: TWC_Infantry_ColdWar_Regular_Woodland_MILAN_Gunner
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -309,19 +309,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_MILAN_Gunner: TWC_Infantry_ColdWar_
 class TWC_Infantry_ColdWar_Airborne_Woodland_MILAN_Ass: TWC_Infantry_ColdWar_Regular_Woodland_MILAN_Ass
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -330,19 +330,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_MILAN_Ass: TWC_Infantry_ColdWar_Reg
 class TWC_Infantry_ColdWar_Airborne_Woodland_Blowpipe_Gunner: TWC_Infantry_ColdWar_Regular_Woodland_Blowpipe_Gunner
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -351,19 +351,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Blowpipe_Gunner: TWC_Infantry_ColdW
 class TWC_Infantry_ColdWar_Airborne_Woodland_Blowpipe_Ass: TWC_Infantry_ColdWar_Regular_Woodland_Blowpipe_Ass
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -374,19 +374,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Blowpipe_Ass: TWC_Infantry_ColdWar_
 class TWC_Infantry_ColdWar_Airborne_Woodland_Sniper: TWC_Infantry_ColdWar_Regular_Woodland_Sniper
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -395,19 +395,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Sniper: TWC_Infantry_ColdWar_Regula
 class TWC_Infantry_ColdWar_Airborne_Woodland_Spotter: TWC_Infantry_ColdWar_Regular_Woodland_Spotter
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od_Scrim_2",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -418,19 +418,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Spotter: TWC_Infantry_ColdWar_Regul
 class TWC_Infantry_ColdWar_Airborne_Woodland_Artillery_Commander: TWC_Infantry_ColdWar_Regular_Woodland_Artillery_Commander
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -439,19 +439,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Artillery_Commander: TWC_Infantry_C
 class TWC_Infantry_ColdWar_Airborne_Woodland_Artillery_Crew: TWC_Infantry_ColdWar_Regular_Woodland_Artillery_Crew
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -460,19 +460,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_Artillery_Crew: TWC_Infantry_ColdWa
 class TWC_Infantry_ColdWar_Airborne_Woodland_FO: TWC_Infantry_ColdWar_Regular_Woodland_FO
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -483,19 +483,19 @@ class TWC_Infantry_ColdWar_Airborne_Woodland_FO: TWC_Infantry_ColdWar_Regular_Wo
 class TWC_Infantry_ColdWar_Airborne_Woodland_FAC: TWC_Infantry_ColdWar_Regular_Woodland_FAC
 {
 	CATEGORY(TWC_Infantry_Airborne_Woodland)
-	uniformClass="SP_72Para_DenisonTrops_1_Item";
+	uniformClass="sp_80para_combats_item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_Airborne_OD_Net",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk3HSAT_Cover_Od",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"

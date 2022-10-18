@@ -11,21 +11,9 @@ class CfgPatches
 			"twc_faction",
 			"twc_ai_skill",
 			"uk3cb_baf_weapons_l1a1",
-			"SP_Equipment",
-			"SP_Facewear",
-			"SP_Headgear",
-			"SP_Uniforms",
-			"SP_Weapons",
-			"SP_Enfield",
-			"SP_Sterling"
+			"SP_Alpha"
 		};
 	};
-};
-
-class EventHandlers;
-
-class CBA_DisposableLaunchers {
-	sp_l1a1_law66_ready[] = {"sp_l1a1_law66","sp_l1a1_law66_used"};
 };
 
 class CfgAmmo
@@ -40,7 +28,6 @@ class CfgWeapons
 {
 	#include "weapons.hpp"
 };
-
 class CfgVehicles
 {
 	#include "backpacks.hpp"
@@ -151,7 +138,7 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"SP_P58_UrbanPatrol",
+			"sp_webbing_58pattern_beltorder",
 			"UK3CB_BAF_H_Beret_RTR_PRR",
 			"ItemCompass",
 			"itemMap",
@@ -159,7 +146,7 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"SP_P58_UrbanPatrol",
+			"sp_webbing_58pattern_beltorder",
 			"UK3CB_BAF_H_Beret_RTR_PRR",
 			"ItemCompass",
 			"itemMap",
@@ -177,14 +164,14 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"sp_smg_sterling",
+			"SP_smg_sterling",
 			"Binocular",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"sp_smg_sterling",
+			"SP_smg_sterling",
 			"Binocular",
 			"Throw",
 			"Put"
@@ -216,13 +203,13 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"sp_smg_sterling",
+			"SP_smg_sterling",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"sp_smg_sterling",
+			"SP_smg_sterling",
 			"Throw",
 			"Put"
 		};

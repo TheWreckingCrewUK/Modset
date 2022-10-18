@@ -3,19 +3,19 @@
 class TWC_Infantry_ColdWar_Regular_Tropic_Rifleman: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -24,19 +24,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Rifleman: TWC_Infantry_ColdWar_Regular
 class TWC_Infantry_ColdWar_Regular_Tropic_Rifleman_SUIT: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman_SUIT
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -45,19 +45,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Rifleman_SUIT: TWC_Infantry_ColdWar_Re
 class TWC_Infantry_ColdWar_Regular_Tropic_SectionCommander: TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -66,19 +66,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_SectionCommander: TWC_Infantry_ColdWar
 class TWC_Infantry_ColdWar_Regular_Tropic_2iC: TWC_Infantry_ColdWar_Regular_Woodland_2iC
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -87,19 +87,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_2iC: TWC_Infantry_ColdWar_Regular_Wood
 class TWC_Infantry_ColdWar_Regular_Tropic_AT: TWC_Infantry_ColdWar_Regular_Woodland_AT
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -108,19 +108,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_AT: TWC_Infantry_ColdWar_Regular_Woodl
 class TWC_Infantry_ColdWar_Regular_Tropic_ASSAT: TWC_Infantry_ColdWar_Regular_Woodland_ASSAT
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -129,19 +129,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_ASSAT: TWC_Infantry_ColdWar_Regular_Wo
 class TWC_Infantry_ColdWar_Regular_Tropic_MG: TWC_Infantry_ColdWar_Regular_Woodland_MG
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -150,19 +150,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_MG: TWC_Infantry_ColdWar_Regular_Woodl
 class TWC_Infantry_ColdWar_Regular_Tropic_ASSMG: TWC_Infantry_ColdWar_Regular_Woodland_ASSMG
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -173,19 +173,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_ASSMG: TWC_Infantry_ColdWar_Regular_Wo
 class TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Commander: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"SP_Helmet_MkV_Cover_GreenPainted",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"SP_Helmet_MkV_Cover_GreenPainted",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -194,19 +194,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Commander: TWC_Infantry_ColdWa
 class TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Sergeant: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"SP_Helmet_MkV_Cover_GreenPainted",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"SP_Helmet_MkV_Cover_GreenPainted",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -215,19 +215,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Sergeant: TWC_Infantry_ColdWar
 class TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Medic: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_ODMedic_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"SP_Helmet_MkV_OD",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_ODMedic_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"SP_Helmet_MkV_OD",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -236,19 +236,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Medic: TWC_Infantry_ColdWar_Re
 class TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Mortar
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass = "SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass = "SP_60Pat_combats_od_jersey_Item";
 	linkedItems[] =
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[] =
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -257,19 +257,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Platoon_Mortar: TWC_Infantry_ColdWar_R
 class TWC_Infantry_ColdWar_Regular_Tropic_CSM: TWC_Infantry_ColdWar_Regular_Woodland_CSM
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -280,19 +280,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_CSM: TWC_Infantry_ColdWar_Regular_Wood
 class TWC_Infantry_ColdWar_Regular_Tropic_Company_Commander: TWC_Infantry_ColdWar_Regular_Woodland_Company_Commander
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"SP_Helmet_MkV_Cover_GreenPainted",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"SP_Helmet_MkV_Cover_GreenPainted",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -301,19 +301,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Company_Commander: TWC_Infantry_ColdWa
 class TWC_Infantry_ColdWar_Regular_Tropic_Company_2iC: TWC_Infantry_ColdWar_Regular_Woodland_Company_2iC
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"SP_Helmet_MkV_Cover_GreenPainted",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"SP_Helmet_MkV_Cover_GreenPainted",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -322,19 +322,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Company_2iC: TWC_Infantry_ColdWar_Regu
 class TWC_Infantry_ColdWar_Regular_Tropic_Company_Sergeant: TWC_Infantry_ColdWar_Regular_Woodland_Company_Sergeant
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -345,19 +345,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Company_Sergeant: TWC_Infantry_ColdWar
 class TWC_Infantry_ColdWar_Regular_Tropic_MILAN_Gunner: TWC_Infantry_ColdWar_Regular_Woodland_MILAN_Gunner
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -366,19 +366,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_MILAN_Gunner: TWC_Infantry_ColdWar_Reg
 class TWC_Infantry_ColdWar_Regular_Tropic_MILAN_Ass: TWC_Infantry_ColdWar_Regular_Woodland_MILAN_Ass
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -387,19 +387,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_MILAN_Ass: TWC_Infantry_ColdWar_Regula
 class TWC_Infantry_ColdWar_Regular_Tropic_Blowpipe_Gunner: TWC_Infantry_ColdWar_Regular_Woodland_Blowpipe_Gunner
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -408,19 +408,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Blowpipe_Gunner: TWC_Infantry_ColdWar_
 class TWC_Infantry_ColdWar_Regular_Tropic_Blowpipe_Ass: TWC_Infantry_ColdWar_Regular_Woodland_Blowpipe_Ass
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -431,19 +431,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Blowpipe_Ass: TWC_Infantry_ColdWar_Reg
 class TWC_Infantry_ColdWar_Regular_Tropic_Sniper: TWC_Infantry_ColdWar_Regular_Woodland_Sniper
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -452,19 +452,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Sniper: TWC_Infantry_ColdWar_Regular_W
 class TWC_Infantry_ColdWar_Regular_Tropic_Spotter: TWC_Infantry_ColdWar_Regular_Woodland_Spotter
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -475,19 +475,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Spotter: TWC_Infantry_ColdWar_Regular_
 class TWC_Infantry_ColdWar_Regular_Tropic_Artillery_Commander: TWC_Infantry_ColdWar_Regular_Woodland_Artillery_Commander
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -496,19 +496,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Artillery_Commander: TWC_Infantry_Cold
 class TWC_Infantry_ColdWar_Regular_Tropic_Artillery_Crew: TWC_Infantry_ColdWar_Regular_Woodland_Artillery_Crew
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -517,19 +517,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Artillery_Crew: TWC_Infantry_ColdWar_R
 class TWC_Infantry_ColdWar_Regular_Tropic_FO: TWC_Infantry_ColdWar_Regular_Woodland_FO
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -540,19 +540,19 @@ class TWC_Infantry_ColdWar_Regular_Tropic_FO: TWC_Infantry_ColdWar_Regular_Woodl
 class TWC_Infantry_ColdWar_Regular_Tropic_FAC: TWC_Infantry_ColdWar_Regular_Woodland_FAC
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageLush",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_1",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -561,10 +561,10 @@ class TWC_Infantry_ColdWar_Regular_Tropic_FAC: TWC_Infantry_ColdWar_Regular_Wood
 class TWC_Infantry_ColdWar_Regular_Tropic_Helicopter_Pilot: TWC_Infantry_ColdWar_Regular_Woodland_Helicopter_Pilot
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_aertexshirtcombats_item";
 	linkedItems[]=
 	{
-		"SP_P58_UrbanPatrolNBC",
+		"sp_webbing_58pattern_beltorder",
 		"CUP_H_BAF_Helmet_Pilot",
 		"ItemCompass",
 		"itemMap",
@@ -572,7 +572,7 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Helicopter_Pilot: TWC_Infantry_ColdWar
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_UrbanPatrolNBC",
+		"sp_webbing_58pattern_beltorder",
 		"CUP_H_BAF_Helmet_Pilot",
 		"ItemCompass",
 		"itemMap",
@@ -584,10 +584,10 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Helicopter_Pilot: TWC_Infantry_ColdWar
 class TWC_Infantry_ColdWar_Regular_Tropic_Vehicle_Commander: TWC_Infantry_ColdWar_Regular_Woodland_Vehicle_Commander
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_UrbanPatrolNBC",
+		"sp_webbing_58pattern_beltorder",
 		"UK3CB_BAF_H_Beret_PWRR_PRR",
 		"ItemCompass",
 		"itemMap",
@@ -595,7 +595,7 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Vehicle_Commander: TWC_Infantry_ColdWa
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_UrbanPatrolNBC",
+		"sp_webbing_58pattern_beltorder",
 		"UK3CB_BAF_H_Beret_PWRR_PRR",
 		"ItemCompass",
 		"itemMap",
@@ -605,10 +605,10 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Vehicle_Commander: TWC_Infantry_ColdWa
 class TWC_Infantry_ColdWar_Regular_Tropic_Vehicle_Crew: TWC_Infantry_ColdWar_Regular_Woodland_Vehicle_Crew
 {
 	CATEGORY(TWC_Infantry_Regular_Tropic)
-	uniformClass="SP_60PatCombatsRolled_OD_1_Item";
+	uniformClass="SP_60Pat_combats_od_jersey_Item";
 	linkedItems[]=
 	{
-		"SP_P58_UrbanPatrolNBC",
+		"sp_webbing_58pattern_beltorder",
 		"UK3CB_BAF_H_Beret_PWRR_PRR",
 		"ItemCompass",
 		"itemMap",
@@ -616,7 +616,7 @@ class TWC_Infantry_ColdWar_Regular_Tropic_Vehicle_Crew: TWC_Infantry_ColdWar_Reg
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_UrbanPatrolNBC",
+		"sp_webbing_58pattern_beltorder",
 		"UK3CB_BAF_H_Beret_PWRR_PRR",
 		"ItemCompass",
 		"itemMap",
