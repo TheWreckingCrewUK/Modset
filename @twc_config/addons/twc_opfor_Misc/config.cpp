@@ -223,7 +223,7 @@ class CfgPatches {
 #include "CfgEditorSubCategories.hpp"
 #include "CfgFactionClasses.hpp"
 
-class cfgWeapons
+class CfgWeapons
 {
 	class CUP_H_USArmy_Helmet_M1_Olive;
 	class TWC_Helmet_M1_OD: CUP_H_USArmy_Helmet_M1_Olive
@@ -244,6 +244,8 @@ class cfgWeapons
 			uniformClass = "TWC_OPFOR_PLO_Uniform";
 		};
 	};
+	
+	#include "weapons\scp.hpp"
 };
 
 class CfgGroups {
@@ -365,7 +367,7 @@ class CfgVehicles {
 	#include "units\Takistani_Army.hpp"
 	#include "units\burmese_insurgents.hpp"
 	#include "units\taliban.hpp"
-	//#include "units\SCP.hpp"
+	#include "units\SCP.hpp"
 };
 
 #include "CfgMarkers.hpp"

@@ -154,20 +154,20 @@ class TWC_Backpack_GRUP_Modern_Rifleman: B_Kitbag_cbr {
 };
 class TWC_Backpack_GRUP_Modern_Breacher: B_Kitbag_cbr {
 	class TransportMagazines {
-		maga_nc(CUP_12Rnd_B_Saiga12_Slug, 6);
-		maga_nc(CUP_12Rnd_B_Saiga12_Buck_00, 6);
-		maga_nc(CUP_12Rnd_B_Saiga12_HE, 2);
+		maga_nc(CUP_12Rnd_B_Saiga12_Slug, 8);
+		maga_nc(CUP_12Rnd_B_Saiga12_Buck_00, 8);
+		maga_nc(CUP_12Rnd_B_Saiga12_HE, 4);
 	};
 };
 class TWC_Backpack_GRUP_Modern_MG: B_Kitbag_cbr {
 	class TransportMagazines {
-		maga_nc(CUP_lmg_Pecheneg_top_rail_B50_vfg, 4
+		maga_nc(CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M, 5);
 	};
 };
 class TWC_Backpack_GRUP_Modern_ASSMG: B_Kitbag_cbr {
 	class TransportMagazines {
-		maga_nc(CUP_30Rnd_545x39_AK12_Tan_M, 8);
-		maga_nc(CUP_lmg_Pecheneg_top_rail_B50_vfg, 4);
+		maga_nc(CUP_30Rnd_545x39_AK12_Tan_M, 10);
+		maga_nc(CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M, 4);
 	};
 };
 class TWC_Backpack_GRUP_Modern_2iC: B_Kitbag_cbr {
@@ -175,12 +175,12 @@ class TWC_Backpack_GRUP_Modern_2iC: B_Kitbag_cbr {
 		maga_nc(CUP_30Rnd_545x39_AK12_Tan_M, 14);
 		maga_nc(CUP_12Rnd_B_Saiga12_Slug, 2);
 		maga_nc(CUP_12Rnd_B_Saiga12_Buck_00, 2);
-		maga_nc(CUP_lmg_Pecheneg_top_rail_B50_vfg, 2);
+		maga_nc(CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M, 2);
 	};
 };
 class TWC_Backpack_GRUP_Modern_GroupCommander: B_Kitbag_cbr {
 	class TransportMagazines {
-		maga_nc(CUP_30Rnd_545x39_AK12_Tan_M, 8);
+		maga_nc(CUP_30Rnd_545x39_AK12_Tan_M, 12);
 	};
 	class TransportItems {
 		item_nc(ACRE_BF888S,1);
