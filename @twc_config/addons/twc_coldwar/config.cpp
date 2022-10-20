@@ -11,9 +11,21 @@ class CfgPatches
 			"twc_faction",
 			"twc_ai_skill",
 			"uk3cb_baf_weapons_l1a1",
-			"SP_Alpha"
+			"SP_Equipment",
+			"SP_Facewear",
+			"SP_Headgear",
+			"SP_Uniforms",
+			"SP_Weapons",
+			"SP_Enfield",
+			"SP_Sterling"
 		};
 	};
+};
+class EventHandlers;
+
+class CfgWeapons
+{
+	#include "weapons.hpp"
 };
 
 class CfgAmmo
@@ -24,10 +36,7 @@ class CfgMagazines
 {
 	#include "magazines.hpp"
 };
-class CfgWeapons
-{
-	#include "weapons.hpp"
-};
+
 class CfgVehicles
 {
 	#include "backpacks.hpp"
