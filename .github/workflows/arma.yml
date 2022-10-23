@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 1
       - uses: actions/setup-python@v1
         with:
-          python-version: '3.9.14'
+          python-version: '3.9.15'
           architecture: 'x64'
       - name: Install Check Dependencies
         run: pip3 install git+https://github.com/TheWreckingCrewUK/sqf.git --upgrade
