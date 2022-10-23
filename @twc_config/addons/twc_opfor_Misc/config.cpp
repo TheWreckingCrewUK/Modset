@@ -215,6 +215,7 @@ class CfgPatches {
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
 			"CUP_Creatures_People_LoadOrder",
+			"TWC_AmmoBoxes",
 			"twc_millennial"
 		};
 	};
@@ -325,6 +326,7 @@ class CfgVehicles {
 	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 
+	#include "ammoboxes\ammoboxes.hpp"
 	#include "vehicles\backpacks.hpp"
 	
 	//Open your uniforms, stop having them be closed

@@ -543,6 +543,9 @@ class TWC_OPFOR_GRUP_Modern_Base: O_Soldier_base_F {
 	nakedUniform = "U_BasicBody";
 	uniformClass = "CUP_U_CRYE_MCAM_RUS2_Full";
 	backpack = "";
+	class EventHandlers: EventHandlers {
+		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+	};
 	linkedItems[] =
 	{
 		"CUP_V_CPC_Fastbelt_mc",
