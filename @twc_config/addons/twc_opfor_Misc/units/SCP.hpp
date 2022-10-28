@@ -764,3 +764,20 @@ class TWC_OPFOR_GRUP_Modern_GroupCommander: TWC_OPFOR_GRUP_Modern_Rifleman {
 		"Put"
 	};
 };
+
+class TWC_OPFOR_GRUP_Modern_PlatoonCommander: TWC_OPFOR_GRUP_Modern_GroupCommander {
+	displayName = "Platoon Commander";
+	TWC_isCommandRole = 1;
+};
+
+class TWC_OPFOR_GRUP_Modern_PlatoonSergeant: TWC_OPFOR_GRUP_Modern_GroupCommander {
+	displayName = "Platoon Sergeant";
+	TWC_isCommandRole = 1;
+	backpack = "TWC_Backpack_GRUP_Modern_PlatoonSergeant";
+};
+
+class TWC_OPFOR_GRUP_Modern_PlatoonMedic: TWC_OPFOR_GRUP_Modern_GroupCommander {
+	displayName = "Platoon Medic";
+	TWC_isCommandRole = 1;
+	backpack = "TWC_Backpack_GRUP_Modern_PlatoonMedic";
+};
