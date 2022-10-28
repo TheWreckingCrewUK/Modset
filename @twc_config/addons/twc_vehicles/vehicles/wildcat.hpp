@@ -1,6 +1,6 @@
 class UK3CB_BAF_Wildcat_AH1_CAS_8A;
 
-class TWC_BaseClass_Wildcat: UK3CB_BAF_Wildcat_AH1_CAS_8A {
+class TWC_BaseClass_Wildcat: UK3CB_BAF_Wildcat_AH1_CAS_8B {
 	scope = 1;
 
 	class AnimationSources;
