@@ -9,11 +9,10 @@ params [
 
 private _civilianTypes = getArray(missionConfigFile >> "Civilian_Setup" >> "AW_civilianTypes");
 private _civilianVehicleTypes = getArray(missionConfigFile >> "Civilian_Setup" >> "AW_civilianVehicleTypes");
-private _sectorsToSpawn = +AW_citySectors;
-_sectorsToSpawn append AW_townSectors;
+private _sectorsToSpawn = [["city","town","factory"]] call AW_fnc_getSectorsByType;
+_sectorsToSpawn = _sectorsToSpawn - AW_activeSectors;
 for "_i" from 1 to _count do {
-	private _randomSector = selectRandom _sectorsToSpawn;
-	private _nearRoads = (markerPos _randomSector) nearRoads 250;
+	private _nearRoads = (markerPos (selectRandom _sectorsToSpawn)) nearRoads 250;
 	private _spawnPos = getPosATL (selectRandom _nearRoads);
 
 	private _vehicle = createVehicle [selectRandom _civilianVehicleTypes,_spawnPos,[],0,"NONE"];
@@ -46,20 +45,24 @@ if (AW_ambientCivHandle isEqualTo -1) then {
 					if (playableUnits isEqualTo []) exitWith {};
 					private _currentPos = getPosATL _unit;
 					if (_lastPos distance _currentPos < 1 && {(playableUnits findIf {_x distance _unit < 2000}) isEqualTo -1}) then { //we are stuck & no players nearby?
-						[_group] call AW_fnc_deleteGroup;
-						if !(isNull _vehicle) then {
-							deleteVehicle _vehicle;
+						private _sectorsToSpawn = [["city","town","factory"]] call AW_fnc_getSectorsByType;
+						_sectorsToSpawn = _sectorsToSpawn - AW_activeSectors;
+						private _nearRoads = (markerPos (selectRandom _sectorsToSpawn)) nearRoads 250;
+						private _spawnPos = getPosATL (selectRandom _nearRoads);
+						
+						if (isNull objectParent _unit) then {
+							_unit moveInDriver _vehicle;
 						};
-						_toDelete pushBack _forEachIndex;
+						_vehicle setPosATL _spawnPos;
+						_vehicle setDamage 0;
 					} else {
 						if (waypoints _group isEqualTo []) then {
-							private _activeAreas = +AW_activeSectors;
-							_activeAreas append AW_townSectors;
-							_activeAreas = _activeAreas apply {markerPos _x};
+							private _sectorsToSpawn = [["city","town","factory"]] call AW_fnc_getSectorsByType;
+							_sectorsToSpawn = _sectorsToSpawn apply {markerPos _x};
 
 							private _position = [];
 							while {_position isEqualTo []} do {
-								private _nearRoads = (selectRandom _activeAreas) nearRoads 500;
+								private _nearRoads = (selectRandom _sectorsToSpawn) nearRoads 500;
 								if (_nearRoads isNotEqualTo []) then {
 									_position = getPosATL (selectRandom _nearRoads);
 								};

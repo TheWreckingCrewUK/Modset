@@ -12,7 +12,7 @@ if (_players isEqualTo []) exitWith {};
 _minutes = _minutes + 1;
 _args set [0,_minutes];
 
-if (_minutes mod 30 isEqualTo 0) then {
+if (_minutes mod 60 isEqualTo 0) then {
 	{
 		_x params ["_sector","_type","_resources"];
 		if (_type isNotEqualTo -1) then {
