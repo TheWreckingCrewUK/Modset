@@ -569,13 +569,6 @@ class cfgWeapons
 	{
 		class manual;
 	};
-	class ukcw_l20a1: CUP_M240_Coax_M1_Abrams_W
-	{
-		class manual: manual
-		{
-			dispersion = 0.01;
-		};
-	};
 	
 	class arifle_MX_Base_F: Rifle_Base_F
 	{

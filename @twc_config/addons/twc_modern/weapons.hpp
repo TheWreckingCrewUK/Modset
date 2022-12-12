@@ -4,6 +4,7 @@ class UK3CB_BAF_L129A1_Grippod;
 class UK3CB_BAF_L85A2_UGL;
 class UK3CB_BAF_L85A3;
 class UK3CB_BAF_L85A3_UGL;
+class UK3CB_BAF_L115A3_Ghillie;
 
 class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 	scope = 1;
@@ -119,6 +120,23 @@ class TWC_Weapon_L129A1_Spotter: UK3CB_BAF_L129A1_Grippod {
 		class LinkedItemsMuzzle {
 			slot = "MuzzleSlot";
 			item = "UK3CB_BAF_Silencer_L115A3";
+		};
+	};
+};
+class TWC_Weapon_L115A3_Regular_Sniper: UK3CB_BAF_L115A3_Ghillie {
+	scope = 1;
+	class LinkedItems {
+		class LinkedItemsOptic {
+			slot = "CowsSlot";
+			item = "rksl_optic_pmii_525_pip";
+		};
+		class LinkedItemsBipod {
+			slot = "UnderBarrelSlot";
+			item = "UK3CB_underbarrel_acc_bipod";
+		};
+		class LinkedItemsMuzzle {
+			slot = "MuzzleSlot";
+			item = "uk3cb_baf_silencer_l115a3";
 		};
 	};
 };

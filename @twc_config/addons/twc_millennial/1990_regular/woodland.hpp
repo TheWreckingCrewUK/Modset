@@ -35,14 +35,14 @@ class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_
 	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
-		"ukcw_law80",
+		"twc_law80",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
-		"ukcw_law80",
+		"twc_law80",
 		"Throw",
 		"Put"
 	};
@@ -50,16 +50,16 @@ class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"ukcw_law80_magazine",
-		"ukcw_law80_magazine_spotting",
+		"twc_law80_magazine",
+		"twc_law80_magazine_spotting",
 		"SmokeShell"
 	};
 	respawnmagazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"ukcw_law80_magazine",
-		"ukcw_law80_magazine_spotting",
+		"twc_law80_magazine",
+		"twc_law80_magazine_spotting",
 		"SmokeShell"
 	};
 };
@@ -259,7 +259,7 @@ class TWC_Infantry_1990_Regular_Woodland_Company_Sergeant: TWC_Infantry_1990_Reg
 class TWC_Infantry_1990_Regular_Woodland_MILAN_Gunner: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
 	displayName = "MILAN Gunner";
-	backpack = "ukcw_milan_gun_bag";
+	backpack = "";
 	magazines[]=
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
@@ -345,13 +345,13 @@ class TWC_Infantry_1990_Regular_Woodland_L14A1_Gunner: TWC_Infantry_1990_Regular
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
 		MAG_2("SmokeShell"),
-		"ukcw_l14a1_HEAT"
+		"TWC_Magazine_L14A1_HEAT"
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
 		MAG_2("SmokeShell"),
-		"ukcw_l14a1_HEAT"
+		"TWC_Magazine_L14A1_HEAT"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_L14A1_Ass: TWC_Infantry_1990_Regular_Woodland_Rifleman

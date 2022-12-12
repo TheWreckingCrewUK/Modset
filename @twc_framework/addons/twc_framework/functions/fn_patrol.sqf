@@ -23,10 +23,6 @@
 
 params ["_unit",["_pos",[]],["_radius",100],["_count",4],["_speed","LIMITED"],["_formation","COLUMN"],["_behaviour","SAFE"]];
 
-if(isMultiplayer && (count (entities "HeadlessClient_F") != 0))then{
-	waitUntil{groupOwner (group _unit) != 2};
-};
-
 if((typeName _pos) isEqualTo "STRING")then{
 	_pos = getMarkerPos _pos;
 };

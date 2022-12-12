@@ -13,4 +13,20 @@ class CfgVehicles {
 	class ace_captives_ModuleSurrender: Module_F {
 		scope = 2;
 	};
+	
+	class ace_zeus_moduleSetRepairFacility: Module_F {
+		scope = 2;
+	};
+	
+	class ace_zeus_moduleSetRepairVehicle: Module_F {
+		scope = 2;
+	};
+	
+	class ace_zeus_moduleSetMedicalFacility: Module_F {
+		scope = 2;
+	};
+	
+	class ace_zeus_moduleSetMedicalVehicle: Module_F {
+		scope = 2;
+	};
 };

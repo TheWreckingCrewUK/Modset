@@ -11,14 +11,14 @@ private _deleted = false;
 		private _pPos = getPosATL _ammoObject;
 		private _lis = lineIntersectsSurfaces [ATLToASL _pPos, eyePos player, player];
 		
-		if (_lis isEqualTo []) then { _dDist = _dDist * 0.55; };
+		if (_lis isEqualTo []) then { _dDist = _dDist * 0.5; };
 		if (isWeaponDeployed player) then { _hit = _hit - (_hit / 2.5); };
 		
 		if ((_pPos distance player) <= _dDist) then {
 			_divisor = IM_DIV;
 			TWC_Suppress_lastShotTime = time;
 			
-			if ((_pPos distance player) <= 3.2) then {
+			if ((_pPos distance player) <= 3.5) then {
 				[] call TWC_Suppress_fnc_impact;
 			};
 		};

@@ -109,8 +109,6 @@ class CfgPatches {
 			"CUP_AirVehicles_F35",
 			"CUP_AirVehciles_SA330",
 			"cwr3_expansion_uk",
-			"ukcw_bedford",
-			"ukcw_gazelle",
 			"TWC_Faction",
 			"ace_cargo",
 			"ace_interaction",

@@ -21,8 +21,7 @@ private _vehicleCounts = [];
 private _index = (_vehicleCounts call CBA_fnc_findMax) select 1;
 
 (AW_fobDetails select _index) params ["_fobName","_fobPosition"];
-private _sectors = AW_radioTowerSectors;
-_sectors append AW_militarySectors;
+private _sectors = ["tower","military"] call AW_fnc_getSectorsByType;
 
 ([_fobPosition,_sectors,true] call AW_fnc_findNearestSector) params [["_sector",""]];
 private _spawnPos = markerPos _sector;

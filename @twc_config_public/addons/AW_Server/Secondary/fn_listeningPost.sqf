@@ -36,7 +36,7 @@ switch _stage do {
 		[
 			{
 				params ["_post","_targetPos"];
-				!alive _post || {isNull attachedTo _post && {_post distance2D _targetPos < 50}}
+				!alive _post || {isNull attachedTo _post && {_post distance2D _targetPos < 75}}
 			},
 			{
 				params ["_post"];

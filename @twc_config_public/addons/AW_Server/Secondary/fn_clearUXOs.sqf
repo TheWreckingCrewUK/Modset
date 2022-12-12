@@ -7,8 +7,7 @@ if (AW_secondaryActive isNotEqualTo "") exitWith {["A secondary mission is in al
 AW_secondaryActive = "UXOs";
 publicVariable "AW_secondaryActive";
 
-private _sectors = AW_citySectors arrayIntersect AW_bluforSectors;
-_sectors append (AW_townSectors arrayIntersect AW_bluforSectors);
+private _sectors = [["city","town"],true] call AW_fnc_getSectorsByType;
 private _chosenSector = selectRandom _sectors;
 
 private _sectorName = markerText _chosenSector;
@@ -38,7 +37,7 @@ _marker setMarkerSize [1.5,1.5];
 	},
 	{
 		params ["","_marker"];
-		["The town is is now clear of UXOs.","successNotif","Clearing UXOs"] remoteExecCall ["AW_fnc_notify",-2];
+		["The town is now clear of UXOs.","successNotif","Clearing UXOs"] remoteExecCall ["AW_fnc_notify",-2];
 		[15] call AW_fnc_adjustCivRep;
 		deleteMarker _marker;
 		AW_secondaryMissionsCompleted = AW_secondaryMissionsCompleted + 1;

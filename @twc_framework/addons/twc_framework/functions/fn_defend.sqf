@@ -21,10 +21,6 @@ params["_unit",["_pos",[]],["_radius",100],["_size",2],["_hold",0.8]];
 
 (group _unit) setVariable ["twc_cacheDefending",true];
 
-if(isMultiplayer && (count (entities "HeadlessClient_F") != 0))then{
-	waitUntil{groupOwner (group _unit) != 2};
-};
-
 if((typeName _pos) isEqualTo "STRING")then{
 	_pos = getMarkerPos _pos;
 };

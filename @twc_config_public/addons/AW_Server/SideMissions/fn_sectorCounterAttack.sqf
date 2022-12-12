@@ -112,7 +112,7 @@ if (_distance < 5000) then {
 					AW_factorySetup deleteAt _factoryIndex;
 					publicVariable "AW_factorySetup";
 				};
-				if (_targetSector in AW_radioTowerSectors) then {
+				if ("tower" in _targetSector) then {
 					[_targetSector,false] call AW_fnc_setTower;
 				};
 				deleteMarker _marker;

@@ -8,7 +8,7 @@ class CfgPatches {
 			"A3_Characters_F_OPFOR",
 			"CUP_Creatures_Military_USArmy",
 			"twc_faction",
-			"twc_ai"
+			"twc_ai_skill"
 		};
 	};
 };
@@ -16,6 +16,14 @@ class CfgPatches {
 class CfgFactionClasses {
 	class TWC_IDF_ColdWar {
 		displayName = "Israel Defense Forces (1980)";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
+	};
+	
+	class TWC_IDF_Millenial {
+		displayName = "Israel Defense Forces (2008)";
 		author = "The Wrecking Crew";
 		icon = "TWClogo.paa";
 		priority = 2;
@@ -56,8 +64,8 @@ class CfgVehicles {
 	class I_Soldier_F;
 
 	#define ITEMS(RADIO,ITEMS) RADIO,ITEMS
-	#define CW_ITEMS "ACE_EarPlugs","ACRE_PRC343","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
-	#define MODERN_ITEMS ITEMS("ACRE_PRC343",CW_ITEMS)
+	#define CW_ITEMS "ACE_EarPlugs",,"ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
+	#define MEDICAL_LOADOUT "ACRE_PRC343","ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
 	#define MAG_2(a) a, a
 	#define MAG_3(a) a, a, a
 	#define MAG_4(a) a, a, a, a
@@ -141,6 +149,72 @@ class CfgVehicles {
 			ADD_MAGA(CUP_HandGrenade_M67, 6);
 		};
 	};
+	
+	class B_APC_Tracked_01_rcws_F;
+	class TWC_Vehicle_IDF_MIllenial_Namer: B_APC_Tracked_01_rcws_F {
+		faction = "TWC_IDF_MIllenial";
+		CATEGORY(TWC_ForceType_Mechanised)
+
+		class AcreIntercoms {
+			class Intercom_1 {
+				displayName = "Crew Intercom";
+				shortName = "Crew";
+				allowedPositions[] = {"crew"};
+				disabledPositions[] = {};
+				limitedPositions[] = {{"cargo", "all"}};
+				numLimitedPositions = 1;
+				masterPositions[] = {"crew"};
+				connectedByDefault = 1;
+			};
+			class Intercom_2 {
+				displayName = "Cargo Intercom";
+				shortName = "Cargo";
+				allowedPositions[] = {"commander", {"cargo", "all"}};
+				disabledPositions[] = {};
+				limitedPositions[] = {};
+				numLimitedPositions = 0;
+				masterPositions[] = {"commander"};
+				connectedByDefault = 1;
+			};
+		};
+		class AcreRacks {
+			class Rack_1 {
+				displayName = "Vehicle Radio";
+				shortName = "Vehicle Radio";
+				componentName = "ACRE_VRC64";
+				allowedPositions[] = {"driver", "gunner"};
+				disabledPositions[] = {};
+				defaultComponents[] = {};
+				mountedRadio = "ACRE_PRC77";
+				isRadioRemovable = 0;
+				intercom[] = {"intercom_1"};
+			};
+		};
+
+		class TransportItems {
+			ADD_ITEM(ACE_fieldDressing, 20);
+			ADD_ITEM(ACE_elasticBandage, 20);
+			ADD_ITEM(ACE_quikclot, 20);
+			ADD_ITEM(ACE_packingBandage, 20);
+			ADD_ITEM(ACE_tourniquet, 6);
+			ADD_ITEM(ACE_morphine, 10);
+			ADD_ITEM(ACE_epinephrine, 6);
+		};
+
+		class TransportMagazines {
+			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 20);
+
+			ADD_MAGA(ACE_150Rnd_762x54_Box_red, 6);
+
+			ADD_MAGA(SmokeShell, 10);
+			ADD_MAGA(SmokeShellRed, 2);
+			ADD_MAGA(SmokeShellGreen, 2);
+			ADD_MAGA(SmokeShellBlue, 2);
+			ADD_MAGA(SmokeShellYellow, 2);
+			
+			ADD_MAGA(CUP_HandGrenade_M67, 5);
+		};
+	};
 
 	class CUP_B_M113_Med_USA;
 	class TWC_Vehicle_IDF_ColdWar_M113Ambulance: CUP_B_M113_Med_USA {
@@ -210,7 +284,7 @@ class CfgVehicles {
 	};
 
 	class TWC_AmmoBox_Portable;
-	class TWC_AmmoBox_IDF_Section_Portable: TWC_AmmoBox_Portable {
+	class TWC_AmmoBox_IDF_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "IDF (1980) Section Resupply (Portable)";
@@ -250,11 +324,52 @@ class CfgVehicles {
 			ADD_MAGA(CUP_HandGrenade_M67, 5);
 		};
 	};
+	
+	
+	class TWC_AmmoBox_IDF_Millenial_Section_Portable: TWC_AmmoBox_Portable {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "IDF (2008) Section Resupply (Portable)";
+
+		editorSubcategory = "TWC_Crates_Other";
+
+		class TransportItems {
+			ADD_ITEM(ACE_fieldDressing, 12);
+			ADD_ITEM(ACE_elasticBandage, 12);
+			ADD_ITEM(ACE_quikclot, 12);
+			ADD_ITEM(ACE_packingBandage, 12);
+			
+			ADD_ITEM(ACE_morphine, 12);
+			ADD_ITEM(ACE_epinephrine, 12);
+			ADD_ITEM(ACE_tourniquet, 6);
+		};
+
+		class TransportMagazines {
+			// M4A1
+			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 20);
+
+			// Negev
+			ADD_MAGA(ACE_150Rnd_762x54_Box_red, 6);
+
+			ADD_MAGA(ACE_HandFlare_White, 2);
+
+			// Smoke Grenades
+			ADD_MAGA(SmokeShell, 10);
+			ADD_MAGA(SmokeShellRed, 2);
+			ADD_MAGA(SmokeShellGreen, 2);
+			ADD_MAGA(SmokeShellBlue, 2);
+			ADD_MAGA(SmokeShellYellow, 2);
+			
+			// Hand Grenade HE
+			ADD_MAGA(CUP_HandGrenade_M67, 5);
+		};
+	};
+
 
 	class TWC_AmmoBox_IDF_RPG_Portable: TWC_AmmoBox_Portable {
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "IDF (1980) RPG Resupply (Portable)";
+		displayName = "IDF RPG Resupply (Portable)";
 
 		editorSubcategory = "TWC_Crates_Other";
 
@@ -266,6 +381,7 @@ class CfgVehicles {
 	};
 
 	#include "coldwar\units.hpp"
+	#include "millenial\units.hpp"
 };
 
 class CfgGroups {
@@ -273,7 +389,10 @@ class CfgGroups {
 		class TWC_Groups_IDF_ColdWar {
 			name = "TWC Groups IDF Cold War";
 			#include "coldwar\groups.hpp"
-			#include "modern\groups.hpp"
+		};
+		class TWC_Groups_IDF_Millenial {
+			name = "TWC Groups IDF Millenial";
+			#include "millenial\groups.hpp"
 		};
 	};
 };

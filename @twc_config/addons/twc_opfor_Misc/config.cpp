@@ -1,5 +1,5 @@
 class CfgPatches {
-	class twc_faction {
+	class twc_opfor_Misc {
 		units[] = {
 			"GulfWar_Iraqi_Squadleader",
 			"GulfWar_Iraqi_Rifleman",
@@ -73,11 +73,12 @@ class CfgPatches {
 			"Afr_Pirate_FAL",
 			"Afr_Pirate_M14",
 			"Afr_Pirate_SMLE",
-			"Afr_Pirate_AR_RPD",
 			"Afr_Pirate_AR_RPK",
 			"Afr_Pirate_MG_M60",
 			"Afr_Pirate_MG_PKM",
 			"Afr_Pirate_MM_SVD",
+			"Afr_Pirate_Shotgun",
+			"Afr_Pirate_Sawedoff",
 			"Asn_Pirate_Skipper",
 			"Asn_Pirate_Captain",
 			"Asn_Pirate_AK",
@@ -90,11 +91,12 @@ class CfgPatches {
 			"Asn_Pirate_FAL",
 			"Asn_Pirate_M14",
 			"Asn_Pirate_SMLE",
-			"Asn_Pirate_AR_RPD",
 			"Asn_Pirate_AR_RPK",
 			"Asn_Pirate_MG_M60",
 			"Asn_Pirate_MG_PKM",
 			"Afr_Pirate_MM_SVD",
+			"Asn_Pirate_Shotgun",
+			"Asn_Pirate_Sawedoff",
 			"TWC_WaPArmy_Taviana_Base",
 			"TWC_WaPArmy_Taviana_Squadleader",
 			"TWC_WaPArmy_Taviana_Grenadier",
@@ -213,6 +215,7 @@ class CfgPatches {
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
 			"CUP_Creatures_People_LoadOrder",
+			"TWC_AmmoBoxes",
 			"twc_millennial"
 		};
 	};
@@ -221,7 +224,7 @@ class CfgPatches {
 #include "CfgEditorSubCategories.hpp"
 #include "CfgFactionClasses.hpp"
 
-class cfgWeapons
+class CfgWeapons
 {
 	class CUP_H_USArmy_Helmet_M1_Olive;
 	class TWC_Helmet_M1_OD: CUP_H_USArmy_Helmet_M1_Olive
@@ -242,6 +245,8 @@ class cfgWeapons
 			uniformClass = "TWC_OPFOR_PLO_Uniform";
 		};
 	};
+	
+	#include "weapons\scp.hpp"
 };
 
 class CfgGroups {
@@ -321,6 +326,7 @@ class CfgVehicles {
 	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 
+	#include "ammoboxes\ammoboxes.hpp"
 	#include "vehicles\backpacks.hpp"
 	
 	//Open your uniforms, stop having them be closed
@@ -363,7 +369,7 @@ class CfgVehicles {
 	#include "units\Takistani_Army.hpp"
 	#include "units\burmese_insurgents.hpp"
 	#include "units\taliban.hpp"
-	//#include "units\SCP.hpp"
+	#include "units\SCP.hpp"
 };
 
 #include "CfgMarkers.hpp"

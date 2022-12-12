@@ -81,8 +81,8 @@ class TWC_Vehicle_ColdWar_Puma_RAF_COIN: CUP_B_SA330_Puma_HC1_BAF {
 
 #undef CURRENT_VEHICLE
 #define CURRENT_VEHICLE COLDWAR_CHINOOK_MOD
-class ukcw_chinook_hc1;
-class TWC_Vehicle_ColdWar_Chinook_RAF: ukcw_chinook_hc1 {
+class cwr3_b_uk_hc1;
+class TWC_Vehicle_ColdWar_Chinook_RAF: cwr3_b_uk_hc1 {
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
