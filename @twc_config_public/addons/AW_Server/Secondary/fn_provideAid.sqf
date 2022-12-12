@@ -60,9 +60,8 @@ _marker setMarkerSize [1.5,1.5];
 			},
 			{
 				params ["_civilians","_marker","_sectorCentre"];
-				["The aid mission is over.","generalNotif","Medical Aid"] remoteExecCall ["AW_fnc_notify",-2];
 				private _aliveCount = {alive _x} count _civilians;
-				[format["You saved %1 civilians.",_aliveCount],"generalNotif","Medical Aid"] remoteExecCall ["AW_fnc_notify",-2];
+				[format["The aid mission is over, you saved %1 civilians.",_aliveCount],"generalNotif","Medical Aid"] remoteExecCall ["AW_fnc_notify",-2];
 
 				[(_aliveCount * 5)] call AW_fnc_adjustCivRep;
 				deleteMarker _marker;

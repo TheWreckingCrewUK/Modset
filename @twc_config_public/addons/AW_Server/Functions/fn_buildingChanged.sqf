@@ -6,6 +6,8 @@
 params ["_previousObject","_newObject","_isRuin"];
 
 private _class = typeOf _previousObject;
+if (_class isEqualTo "") exitWith {};
+
 private _pos = getPosATL _previousObject;
 if ([_pos] call AW_fnc_isNearFOB) then {
 	if (_class in ["Land_HelipadSquare_F","Land_HelipadCircle_F","Land_HelipadRescue_F"]) then {
