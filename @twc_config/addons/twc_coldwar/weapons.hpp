@@ -56,4 +56,3 @@ class sp_l4_lmg_walnut: LMG_Zafir_F
 {
 	magazines[] = {"SP_30Rnd_762_L4","UK3CB_BAF_762_20Rnd","UK3CB_BAF_762_20Rnd_T"};
 };
-};

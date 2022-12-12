@@ -18,15 +18,8 @@ class CfgPatches
 			"sp_iws",
 			"sp_launchers",
 			"sp_lmg",
-			"sp_mk3hsat",
-			"sp_mk5",
 			"sp_no32",
-			"sp_pattern60",
-			"sp_pattern68",
 			"sp_uniformaccessories",
-			"sp_units_80_desert",
-			"sp_units_80_temperate",
-			"sp_units_80_tropical",
 			"sp_webbing",
 			"sp_webbing_58pattern",
 			"sp_facewear",
@@ -44,7 +37,6 @@ class CfgWeapons
 {
 	#include "weapons.hpp"
 };
-
 class CfgAmmo
 {
 	#include "ammo.hpp"
