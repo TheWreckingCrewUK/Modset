@@ -72,10 +72,11 @@ class CfgAmmo {
 	class TWC_Ammo_L14A1_HE: CUP_R_MEEWS_HEAT {
 		aiAmmoUsageFlags = "64 + 128";
 		allowAgainstInfantry = 1;
-		hit = 0;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		initSpeed = 240;
+		hit = 100;
+		indirectHit = 60;
+		indirectHitRange = 12;
+		initSpeed = 255;
+		explosive = 1;
 		submunitionAmmo = "TWC_Ammo_L14A1_HE_Submunition";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitialOffset[] = {0,0,-0.1};
@@ -83,6 +84,13 @@ class CfgAmmo {
 		submunitionParentSpeedCoef = 0;
 		triggerOnImpact = 1;
 		deleteParentWhenTriggered = 1;
+		
+		model = "\A3\Weapons_f\empty";
+		soundHit[] = {"A3\Sounds_F\weapons\Rockets\explosion_missile_01","db20",1,1200};
+		soundFly[] = {"",1,1};
+		soundEngine[] = {"",1,4};
+		explosionEffects = "GrenadeExplosion";
+		
 		warheadName = "HE";
 	};
 	class TWC_Ammo_L14A1_HE_Submunition: Grenade {
@@ -119,7 +127,7 @@ class CfgAmmo {
 		hit = 5;
 		indirectHit = 14;
 		indirectHitRange = 2;
-		initSpeed = 240;
+		initSpeed = 255;
 		submunitionAmmo = "TWC_Ammo_L14A1_Illum_Submunition";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionConeAngle = 90;
