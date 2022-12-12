@@ -122,3 +122,20 @@ class TWC_Weapon_L129A1_Spotter: UK3CB_BAF_L129A1_Grippod {
 		};
 	};
 };
+class TWC_Weapon_L115A3_Regular_Sniper: UK3CB_BAF_L115A3_Ghillie {
+	scope = 1;
+	class LinkedItems {
+		class LinkedItemsOptic {
+			slot = "CowsSlot";
+			item = "rksl_optic_pmii_525_pip";
+		};
+		class LinkedItemsBipod {
+			slot = "UnderBarrelSlot";
+			item = "UK3CB_underbarrel_acc_bipod";
+		};
+		class LinkedItemsMuzzle {
+			slot = "MuzzleSlot";
+			item = "uk3cb_baf_silencer_l115a3";
+		};
+	};
+};
