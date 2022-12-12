@@ -10,11 +10,12 @@ params [
 
 private _responseTime = (getNumber(missionConfigFile >> "Core_Settings" >> "AW_reinforcementTime")) * 60;
 private _maxDistance = worldSize / 5;
-private _nearestTowerIndex = AW_radioTowerSectors findIf {(markerPos _x) distance _sectorCentre < _maxDistance && {!(_x in AW_bluforSectors)}};
+private _radioTowers = ["tower"] call AW_fnc_getSectorsByType;
+private _nearestTowerIndex = _radioTowers findIf {(markerPos _x) distance _sectorCentre < _maxDistance && {!(_x in AW_bluforSectors)}};
 private _nearestTowerSector = "";
 if (_nearestTowerIndex isNotEqualTo -1) then {
 	_responseTime = _responseTime * 0.5;
-	_nearestTowerSector = AW_radioTowerSectors select _nearestTowerIndex;
+	_nearestTowerSector = _radioTowers select _nearestTowerIndex;
 };
 
 [

@@ -9,7 +9,8 @@ params [
 ];
 
 private _sectorCentre = markerPos _sector;
-private _startPos = _sectorCentre getPos [1000 + (random 500),random 360];
+private _radius = getNumber(missionConfigFile >> "Core_Settings" >> "AW_sectorActivationRange");
+private _startPos = _sectorCentre getPos [_radius + (random _radius),random 360];
 private _position = ["opforSquad",_startPos,250] call AW_fnc_findSafePosition;
 if (_position isEqualTo []) exitWith {[format["Guerillas could not be spawned at %1",_sector]] call AW_fnc_logIt};
 [format["Guerilla forces are on the way to %1.",markerText _sector],"generalNotif","Guerilla Forces"] remoteExecCall ["AW_fnc_notify",-2];

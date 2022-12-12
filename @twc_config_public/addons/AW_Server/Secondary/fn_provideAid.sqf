@@ -4,7 +4,8 @@
 	Description: Secondary objective to provide medical aid to a front line sector
 */
 if (AW_secondaryActive isNotEqualTo "") exitWith {["A secondary mission is in already progress."] remoteExecCall ["AW_fnc_notify",remoteExecutedOwner]};
-private _targetSector = [AW_bluforSectors] call AW_fnc_findFrontlineSector;
+private _array = [["city","town"],true] call AW_fnc_getSectorsByType;
+private _targetSector = [_array] call AW_fnc_findFrontlineSector;
 private _sectorCentre = markerPos _targetSector;
 
 AW_secondaryActive = "medicalAid";
@@ -27,7 +28,7 @@ _marker setMarkerSize [1.5,1.5];
 		private _injuredCount = 2 + (ceil (count playableUnits / 4));
 		private _civilianTypes = getArray(missionConfigFile >> "Civilian_Setup" >> "AW_civilianTypes");
 		private _bodyParts = ["Head","Body","LeftArm","RightArm","LeftLeg","RightLeg"];
-		private _damageTypes = ["grenade","explosive","bullet"];
+		private _damageTypes = ["grenade","explosive","ropeburn"];
 
 		private _group = createGroup [civilian,true];
 		for "_i" from 1 to _injuredCount do {
@@ -37,14 +38,13 @@ _marker setMarkerSize [1.5,1.5];
 
 			private _civilian = _group createUnit [_civClass,_position,[],10,"NONE"];
 			removeAllItems _civilian;
-			_civilian disableAI "RADIOPROTOCOL";
 			_civilian addEventHandler ["Killed",{[_this select 1] call AW_fnc_civilianKilled}];
 
-			private _woundCount = 1 + (ceil (random 3));
+			private _woundCount = 2 + (round (random 1));
 			for "_i" from 1 to _woundCount do {
 				[_civilian,0.25,(selectRandom _bodyParts),(selectRandom _damageTypes)] call ace_medical_fnc_addDamageToUnit;
 			};
-			[_civilian,true,150,true] call ace_medical_fnc_setUnconscious;
+			[_civilian,true,300,true] call ace_medical_fnc_setUnconscious;
 			_civilian setVariable ["ace_medical_ai_lastFired",(CBA_missionTime + 300)];
 		};
 		[[_group],_sectorCentre] call AW_fnc_initSectorPatrol;
@@ -60,9 +60,8 @@ _marker setMarkerSize [1.5,1.5];
 			},
 			{
 				params ["_civilians","_marker","_sectorCentre"];
-				["The aid mission is over.","generalNotif","Medical Aid"] remoteExecCall ["AW_fnc_notify",-2];
 				private _aliveCount = {alive _x} count _civilians;
-				[format["You saved %1 civilians.",_aliveCount],"generalNotif","Medical Aid"] remoteExecCall ["AW_fnc_notify",-2];
+				[format["The aid mission is over, you saved %1 civilians.",_aliveCount],"generalNotif","Medical Aid"] remoteExecCall ["AW_fnc_notify",-2];
 
 				[(_aliveCount * 5)] call AW_fnc_adjustCivRep;
 				deleteMarker _marker;

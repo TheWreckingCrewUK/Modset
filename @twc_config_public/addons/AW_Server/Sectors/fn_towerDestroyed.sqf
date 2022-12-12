@@ -5,7 +5,7 @@
 */
 params ["_unit","_killer","_instigator","_useEffects"];
 
-([getPosATL _unit,AW_radioTowerSectors] call AW_fnc_findNearestSector) params ["_sector"];
+([getPosATL _unit,["tower"] call AW_fnc_getSectorsByType] call AW_fnc_findNearestSector) params ["_sector"];
 private _captureTimer = missionNamespace getVariable [format["AW_%1CapTime",_sector],-1500];
 private _timer = getNumber(missionConfigFile >> "Core_Settings" >> "AW_radioTowerDestructionTimer") * 60;
 private _index = AW_sectorDetails findIf {_x select 0 isEqualTo _sector};
