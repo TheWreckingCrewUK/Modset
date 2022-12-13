@@ -682,12 +682,14 @@ class TWC_Infantry_Modern_Regular_Woodland_Spotter: TWC_Infantry_Modern_Regular_
 	items[] = {
 		MEDICAL_LOADOUT,
 		"ACE_Kestrel4500",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	
 	respawnItems[] = {
 		MEDICAL_LOADOUT,
 		"ACE_Kestrel4500",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 };
