@@ -182,14 +182,14 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"SP_smg_sterling",
+			"sp_smg_sterling",
 			"Binocular",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"SP_smg_sterling",
+			"sp_smg_sterling",
 			"Binocular",
 			"Throw",
 			"Put"
@@ -221,13 +221,13 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"SP_smg_sterling",
+			"sp_smg_sterling",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"SP_smg_sterling",
+			"sp_smg_sterling",
 			"Throw",
 			"Put"
 		};
