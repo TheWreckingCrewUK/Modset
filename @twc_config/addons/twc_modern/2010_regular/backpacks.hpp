@@ -107,7 +107,7 @@ class TWC_Backpack_Modern_Regular_Woodland_Spotter: UK3CB_BAF_B_Bergen_MTP_SL_L_
 	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
-		ADD_ITEM(ACE_Tripod,1);
+		ADD_ITEM(ACE_ATragMX,1);
 		ADD_ITEM(ACE_SpottingScope,1);
 	};
 	class TransportMagazines {
