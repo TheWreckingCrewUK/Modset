@@ -851,12 +851,14 @@ class TWC_Infantry_2020_Regular_Woodland_Spotter: TWC_Infantry_2020_Regular_Wood
 	{
 		MEDICAL_LOADOUT,
 		"ACE_Kestrel4500",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
 		"ACE_Kestrel4500",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 };
