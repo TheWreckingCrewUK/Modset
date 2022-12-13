@@ -89,4 +89,38 @@ class CfgMagazines {
 		initSpeed = 30;
 		mass = 1;
 	};
+	class CA_Magazine;
+	class TWC_Magazine_57mm_1rnd_HE: CA_Magazine {
+		displayName = "High Explosive";
+		displayNameShort = "HE";
+		scope = 2;
+		scopeCurator = 2;
+		type = 256;
+		count = 1;
+		ammo = "fow_Sh_57mm_HE";
+		initSpeed = 810;
+		model = "\A3\Structures_F_EPB\Items\Military\Ammobox_rounds_F.p3d";
+		picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
+		mass = 18;
+	};
+	class TWC_Magazine_57mm_1rnd_APCBC: TWC_Magazine_57mm_1rnd_HE {
+		displayName = "Armour Piercing Capped, Ballistic Capped";
+		displayNameShort = "APCBC";
+		ammo = "fow_Sh_57mm_APCBC";
+	};
+	class TWC_Magazine_57mm_1rnd_APCR: TWC_Magazine_57mm_1rnd_HE {
+		displayName = "Armour Piercing Composite Rigid";
+		displayNameShort = "APCR";
+		ammo = "fow_Sh_57mm_APCR";
+	};
+	class TWC_Magazine_57mm_1rnd_APDS: TWC_Magazine_57mm_1rnd_HE {
+		displayName = "Armour Piercing Discarding Sabot";
+		displayNameShort = "APDS";
+		ammo = "fow_Sh_57mm_APDS";
+	};
+	class TWC_Magazine_57mm_1rnd_AP: TWC_Magazine_57mm_1rnd_HE {
+		displayName = "Armour Piercing";
+		displayNameShort = "AP";
+		ammo = "fow_Sh_57mm_AP";
+	};
 };

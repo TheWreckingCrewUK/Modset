@@ -129,4 +129,20 @@ class CfgWeapons {
 			reloadTime = 5.1;
 		};
 	};
+	
+//6 Pounder 
+	class fow_w_57mm_6Pdr;
+	class TWC_Weapon_57mm_6pounder_Vehicle: fow_w_57mm_6Pdr {
+		displayname = "6 Pounder";
+		reloadTime = 0.5;
+		magazineReloadTime = 0.5;
+		magazines[] = {
+			"TWC_Magazine_57mm_1rnd_HE",
+			"TWC_Magazine_57mm_1rnd_APCBC",
+			"TWC_Magazine_57mm_1rnd_APCR",
+			"TWC_Magazine_57mm_1rnd_APDS",
+			"TWC_Magazine_57mm_1rnd_AP"
+		};
+		ace_overpressure_damage = 1;
+	};
 };
