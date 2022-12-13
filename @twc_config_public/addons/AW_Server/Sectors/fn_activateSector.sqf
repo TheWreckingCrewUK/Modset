@@ -12,10 +12,15 @@ if (count AW_activeSectors > _maxSectors) exitWith {[format["%1 could not be sta
 AW_activeSectors pushBack _sector;
 publicVariable "AW_activeSectors";
 
+private _isCivilian = "town" in _sector || {"city" in _sector || {"factory" in _sector}};
+private _isFortified = "city" in _sector || {"military" in _sector};
+private _isMilitary = "military" in _sector;
+
 private _sectorCentre = markerPos _sector;
-private _radius = (getArray(missionConfigFile >> "Core_Settings" >> "AW_sectorSpawnRadius")) select ([_sector] call AW_fnc_getSectorTypeIndex);
+private _sectorTypeIndex = [_sector] call AW_fnc_getSectorTypeIndex;
+private _spawnRadius = (getArray(missionConfigFile >> "Core_Settings" >> "AW_sectorSpawnRadius")) select _sectorTypeIndex;
 private _crates = [];
-if (_sector in AW_townSectors || {_sector in AW_citySectors || {_sector in AW_factorySectors}}) then {
+if (_isCivilian) then {
 	private _maxCrates = getNumber(missionConfigFile >> "Core_Settings" >> "AW_maxSectorCrates");
 	private _crateTypes = getArray(missionConfigFile >> "Blufor_Setup" >> "AW_bluforCrates");
 	private _crateNumber = round(random _maxCrates);
@@ -24,7 +29,7 @@ if (_sector in AW_townSectors || {_sector in AW_citySectors || {_sector in AW_fa
 		private _className = selectRandom _crateTypes;
 		private _position = [];
 		for "_i" from 0 to 19 do {
-			_position = (_sectorCentre getPos [random _radius,random 360]) findEmptyPosition [0,30,_className];
+			_position = (_sectorCentre getPos [random _spawnRadius,random 360]) findEmptyPosition [0,30,_className];
 			if (_position isNotEqualTo [] && {!surfaceIsWater _position}) exitWith {};
 		};
 		if (_position isEqualTo []) exitWith {[format["Crate could not be spawned at %1",_sector]] call AW_fnc_logIt};
@@ -37,14 +42,14 @@ if (_sector in AW_townSectors || {_sector in AW_citySectors || {_sector in AW_fa
 private _garrisonStrength = [_sector] call AW_fnc_getGarrisonStrength;
 
 private _allSectorGroups = [];
-private _squadCount = round(AW_opforThreat / 25) max 2;
-if (_sector in AW_militarySectors || {_sector in AW_citySectors}) then {
+private _squadCount = round(AW_opforThreat / 25) max 1;
+if (_isMilitary || {_isCity}) then {
 	_squadCount = _squadCount + 2;
 };
 _squadCount = round(_squadCount * _garrisonStrength);
 private _squadTypes = ["AW_opforBasicSquad","AW_opforATSquad","AW_opforAASquad"];
 
-private _sectorBuildings = (nearestObjects [_sectorCentre,["House"],_radius]) select {alive _x};
+private _sectorBuildings = (nearestObjects [_sectorCentre,["House"],_spawnRadius]) select {alive _x};
 if (_sectorBuildings isNotEqualTo []) then {
 	private _spawnBuildingPositions = [];
 	{
@@ -73,11 +78,11 @@ if (_sectorBuildings isNotEqualTo []) then {
 };
 
 for "_i" from 1 to _squadCount do {
-	private _group = [selectRandom _squadTypes,_sectorCentre,_radius,true] call AW_fnc_createSquad;
+	private _group = [selectRandom _squadTypes,_sectorCentre,_spawnRadius,true] call AW_fnc_createSquad;
 	_allSectorGroups pushBack _group;
 };
 
-if (_sector in AW_townSectors || {_sector in AW_citySectors}) then {
+if (_isCivilian) then {
 	if (AW_civRep < 0) then {
 		private _iedCount = round ((abs AW_civRep) / 20);
 		if (_iedCount > 0) then {
@@ -87,15 +92,15 @@ if (_sector in AW_townSectors || {_sector in AW_citySectors}) then {
 
 	private _maxCivs = getNumber(missionConfigFile >> "Core_Settings" >> "AW_maxCivsPerSector");
 	if (_maxCivs > 0) then {
-		[_sectorCentre,_maxCivs,_sector,_radius] call AW_fnc_spawnCivs;
+		[_sectorCentre,_maxCivs,_sector,_spawnRadius] call AW_fnc_spawnCivs;
 	};
 };
 
 private _lightVehicleCount = 1;
 private _mediumVehicleCount = 1;
 private _heavyVehicleCount = 0;
-if (_sector in AW_citySectors || {_sector in AW_militarySectors}) then {_lightVehicleCount = _lightVehicleCount + 1};
-if (_sector in AW_militarySectors) then {_heavyVehicleCount = _heavyVehicleCount + 1};
+if (_isFortified) then {_lightVehicleCount = _lightVehicleCount + 1};
+if (_isMilitary) then {_heavyVehicleCount = _heavyVehicleCount + 1};
 if (AW_opforThreat > 45) then {_mediumVehicleCount = _mediumVehicleCount + 1};
 if (AW_opforThreat > 75) then {_heavyVehicleCount = _heavyVehicleCount + 1};
 if (AW_opforThreat > (random 100)) then {_lightVehicleCount = _lightVehicleCount + 1};
@@ -107,7 +112,7 @@ _heavyVehicleCount = round(_heavyVehicleCount * _garrisonStrength);
 if (_lightVehicleCount > 0) then {
 	private _lightVehicles = getArray(missionConfigFile >> "Opfor_Setup" >> "AW_opforLightVehicles");
 	for "_i" from 1 to _lightVehicleCount do {
-		private _group = [selectRandom _lightVehicles,_sectorCentre,[_radius]] call AW_fnc_createVehicle;
+		private _group = [selectRandom _lightVehicles,_sectorCentre,[_spawnRadius]] call AW_fnc_createVehicle;
 		_allSectorGroups pushBack _group;
 	};
 };
@@ -115,7 +120,7 @@ if (_lightVehicleCount > 0) then {
 if (_mediumVehicleCount > 0) then {
 	private _mediumVehicles = getArray(missionConfigFile >> "Opfor_Setup" >> "AW_opforMediumVehicles");
 	for "_i" from 1 to _mediumVehicleCount do {
-		private _group = [selectRandom _mediumVehicles,_sectorCentre,[_radius]] call AW_fnc_createVehicle;
+		private _group = [selectRandom _mediumVehicles,_sectorCentre,[_spawnRadius]] call AW_fnc_createVehicle;
 		_allSectorGroups pushBack _group;
 	};
 };
@@ -123,7 +128,7 @@ if (_mediumVehicleCount > 0) then {
 if (_heavyVehicleCount > 0) then {
 	private _heavyVehicles = getArray(missionConfigFile >> "Opfor_Setup" >> "AW_opforHeavyVehicles");
 	for "_i" from 1 to _heavyVehicleCount do {
-		private _group = [selectRandom _heavyVehicles,_sectorCentre,[_radius]] call AW_fnc_createVehicle;
+		private _group = [selectRandom _heavyVehicles,_sectorCentre,[_spawnRadius]] call AW_fnc_createVehicle;
 		_allSectorGroups pushBack _group;
 	};
 };
@@ -134,11 +139,11 @@ if (AW_civRep < 0) then {
 	};
 };
 
-private _radius = (getArray(missionConfigFile >> "Core_Settings" >> "AW_sectorCaptureRadius")) select ([_sector] call AW_fnc_getSectorTypeIndex);
+private _captureRadius = (getArray(missionConfigFile >> "Core_Settings" >> "AW_sectorCaptureRadius")) select _sectorTypeIndex;
 private _timeoutCount = 0;
-[AW_fnc_monitorSector,1,[_sectorCentre,_sector,_radius,_allSectorGroups,_timeoutCount,_crates]] call CBA_fnc_addPerFrameHandler;
+[AW_fnc_monitorSector,1,[_sectorCentre,_sector,_captureRadius,_allSectorGroups,_timeoutCount,_crates]] call CBA_fnc_addPerFrameHandler;
 
-if (_sector in AW_militarySectors || {AW_opforThreat > 50 && {AW_opforThreat > (random 100)}}) then {
+if (_isMilitary || {AW_opforThreat > 50 && {AW_opforThreat > (random 100)}}) then {
 	[_sector,_sectorCentre] call AW_fnc_callReinforcements;
 };
 
@@ -155,6 +160,6 @@ if (_sector in AW_militarySectors || {AW_opforThreat > 50 && {AW_opforThreat > (
 
 		[[_groups,_sectorCentre,_radius],AW_fnc_initSectorPatrol] call AW_fnc_waitForTransferAndExecute;
 	},
-	[_allSectorGroups,_sector,_sectorCentre,_radius],
+	[_allSectorGroups,_sector,_sectorCentre,_spawnRadius],
 	8
 ] call CBA_fnc_waitAndExecute;
