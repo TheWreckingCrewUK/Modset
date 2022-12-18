@@ -152,7 +152,7 @@ class TWC_Weapon_C8_SF: arifle_SPAR_01_blk_F {
 	class LinkedItems {
 		class LinkedItemsOptic {
 			slot = "CowsSlot";
-			item = "cuo_optic_acog_ta01b_rmr_black_pip";
+			item = "cup_optic_acog_ta01b_rmr_black_pip";
 		};
 		class LinkedItemsFrontSideRail {
 			slot = "PointerSlot";
@@ -170,7 +170,7 @@ class TWC_Weapon_C8_SF_GL: arifle_SPAR_01_GL_blk_F {
 	class LinkedItems {
 		class LinkedItemsOptic {
 			slot = "CowsSlot";
-			item = "cuo_optic_acog_ta01b_rmr_black_pip";
+			item = "cup_optic_acog_ta01b_rmr_black_pip";
 		};
 		class LinkedItemsFrontSideRail {
 			slot = "PointerSlot";

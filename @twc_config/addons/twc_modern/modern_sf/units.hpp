@@ -164,13 +164,13 @@ class TWC_Infantry_Modern_SF_Marksman: TWC_Infantry_Modern_SF_Rifleman
 class TWC_Infantry_Modern_SF_SectionCommander: TWC_Infantry_Modern_SF_Rifleman
 {
 	displayName = "Section Commander";
-	backpack = "TWC_Backpack_Modern_SF_SectionCommander";
+	backpack = "TWC_Backpack_Modern_SF_Commander";
 	TWC_isCommandRole = 1;
 };
 class TWC_Infantry_Modern_SF_2iC: TWC_Infantry_Modern_SF_Rifleman
 {
 	displayName = "Team Leader";
-	backpack = "TWC_Backpack_Modern_SF_2iC";
+	backpack = "TWC_Backpack_Modern_SF_TeamLead";
 	TWC_isCommandRole = 1;
 };
 
@@ -185,7 +185,7 @@ class TWC_Infantry_Modern_SF_Medic: TWC_Infantry_Modern_SF_Rifleman
 class TWC_Infantry_Modern_SF_FAC: TWC_Infantry_Modern_SF_Grenadier
 {
 	displayName = "JTAC";
-	backpack = "TWC_Backpack_Modern_SF_FAC";
+	backpack = "TWC_Backpack_Modern_SF_JTAC";
 	TWC_isCommandRole = 0;
 	weapons[] =
 	{

@@ -15,7 +15,7 @@ class TWC_Backpack_Modern_SF_Commander: mpx_camel2
 		ADD_MAGA(SmokeShellBlue,2);
 	};
 };
-class TWC_Backpack_TWC_Backpack_Modern_SF_TeamLead: mpx_daysack10
+class TWC_Backpack_Modern_SF_TeamLead: mpx_daysack10
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -30,7 +30,7 @@ class TWC_Backpack_TWC_Backpack_Modern_SF_TeamLead: mpx_daysack10
 		ADD_MAGA(SmokeShell, 4);
 	};
 };
-class TWC_Backpack_TWC_Backpack_Modern_SF_Medic: mpx_daysack7
+class TWC_Backpack_Modern_SF_Medic: mpx_daysack7
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -82,7 +82,7 @@ class TWC_Backpack_Modern_SF_Marksman: mpx_daysack
 		ADD_ITEM(DemoCharge_Remote_Mag, 2);
 	};
 };
-class TWC_Backpack_TWC_Backpack_Modern_SF_JTAC: UK3CB_BAF_B_Bergen_MTP_JTAC_H_A
+class TWC_Backpack_Modern_SF_JTAC: UK3CB_BAF_B_Bergen_MTP_JTAC_H_A
 {
 	scope = 1;
 	scopeArsenal = 1;
