@@ -62,9 +62,6 @@ class CfgEditorSubcategories {
 	class TWC_Infantry_2020_COIN_Dismounted_NBC {
 		displayName = "Infantry (2020s, COIN, Dismounted, NBC)";
 	};
-	class TWC_Infantry_Modern_SF {
-		displayName = "Special Forces";
-	};
 };
 
 class EventHandlers;
@@ -380,7 +377,6 @@ class CfgVehicles
 	#include "2020_coin\nbc_dismounted.hpp"
 	#include "2020_coin\arctic.hpp"
 	#include "2020_coin\arctic_dismounted.hpp"
-	#include "modern_sf\units.hpp"
 };
 
 class CfgGroups
