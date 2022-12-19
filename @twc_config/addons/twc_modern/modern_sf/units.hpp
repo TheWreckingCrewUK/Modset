@@ -10,7 +10,7 @@ class TWC_Infantry_Modern_SF_Rifleman: TWC_Infantry_2020_Base
 	linkedItems[] =
 	{
 		"CFP_LBT6094_operator_OGA_OD",
-		"CUP_H_OpsCore_Covered_MTP_SF",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -18,7 +18,7 @@ class TWC_Infantry_Modern_SF_Rifleman: TWC_Infantry_2020_Base
 	respawnLinkedItems[] =
 	{
 		"CFP_LBT6094_operator_OGA_OD",
-		"CUP_H_OpsCore_Covered_MTP_SF",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -169,7 +169,7 @@ class TWC_Infantry_Modern_SF_SectionCommander: TWC_Infantry_Modern_SF_Rifleman
 	linkedItems[] =
 	{
 		"CFP_LBT6094_operator_OGA_OD",
-		"CUP_H_OpsCore_Covered_MTP_SF",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
 		"ItemCompass",
 		"ItemcTab",
 		"itemMap",
@@ -178,7 +178,7 @@ class TWC_Infantry_Modern_SF_SectionCommander: TWC_Infantry_Modern_SF_Rifleman
 	respawnLinkedItems[] =
 	{
 		"CFP_LBT6094_operator_OGA_OD",
-		"CUP_H_OpsCore_Covered_MTP_SF",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
 		"ItemCompass",
 		"ItemcTab",
 		"itemMap",
@@ -255,7 +255,7 @@ class TWC_Infantry_Modern_SF_FAC: TWC_Infantry_Modern_SF_Grenadier
 	linkedItems[] =
 	{
 		"CFP_LBT6094_operator_OGA_OD",
-		"CUP_H_OpsCore_Covered_MTP_SF",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
 		"ItemCompass",
 		"ItemcTab",
 		"itemMap",
@@ -264,7 +264,7 @@ class TWC_Infantry_Modern_SF_FAC: TWC_Infantry_Modern_SF_Grenadier
 	respawnLinkedItems[] =
 	{
 		"CFP_LBT6094_operator_OGA_OD",
-		"CUP_H_OpsCore_Covered_MTP_SF",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
 		"ItemCompass",
 		"ItemcTab",
 		"itemMap",
