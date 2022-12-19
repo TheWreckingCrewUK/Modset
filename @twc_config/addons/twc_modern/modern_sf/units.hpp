@@ -1,4 +1,4 @@
-//REGULAR, WOODLAND
+//Special Forces
 //Section
 class TWC_Infantry_Modern_SF_Rifleman: TWC_Infantry_2020_Base
 {
@@ -141,7 +141,7 @@ class TWC_Infantry_Modern_SF_Marksman: TWC_Infantry_Modern_SF_Rifleman
 	magazines[] =
 	{
 		MAG_8("20Rnd_762x51_Mag"),
-		MAG_4("20Rnd_762x51_Mag_Tracer"),
+		MAG_4("ACE_20Rnd_762x51_Mag_Tracer"),
 		MAG_2("UK3CB_BAF_9_15Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("ACE_M84"),
@@ -152,7 +152,7 @@ class TWC_Infantry_Modern_SF_Marksman: TWC_Infantry_Modern_SF_Rifleman
 	respawnmagazines[] =
 	{
 		MAG_8("20Rnd_762x51_Mag"),
-		MAG_4("20Rnd_762x51_Mag_Tracer"),
+		MAG_4("ACE_20Rnd_762x51_Mag_Tracer"),
 		MAG_2("UK3CB_BAF_9_15Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("ACE_M84"),
@@ -166,12 +166,62 @@ class TWC_Infantry_Modern_SF_SectionCommander: TWC_Infantry_Modern_SF_Rifleman
 	displayName = "Section Commander";
 	backpack = "TWC_Backpack_Modern_SF_Commander";
 	TWC_isCommandRole = 1;
+	linkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MTP_SF",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MTP_SF",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	weapons[] =
+	{
+		"TWC_Weapon_C8_SF",
+		"TWC_Weapon_L105A2_SF",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_C8_SF",
+		"TWC_Weapon_L105A2_SF",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
 };
 class TWC_Infantry_Modern_SF_2iC: TWC_Infantry_Modern_SF_Rifleman
 {
 	displayName = "Team Leader";
 	backpack = "TWC_Backpack_Modern_SF_TeamLead";
-	TWC_isCommandRole = 1;
+	TWC_isCommandRole = 1;	
+	weapons[] =
+	{
+		"TWC_Weapon_C8_SF",
+		"TWC_Weapon_L105A2_SF",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_C8_SF",
+		"TWC_Weapon_L105A2_SF",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
 };
 
 class TWC_Infantry_Modern_SF_Medic: TWC_Infantry_Modern_SF_Rifleman
@@ -179,6 +229,22 @@ class TWC_Infantry_Modern_SF_Medic: TWC_Infantry_Modern_SF_Rifleman
 	displayName = "Team Medic";
 	backpack = "TWC_Backpack_Modern_SF_Medic";
 	attendant = 1;
+	weapons[] =
+	{
+		"TWC_Weapon_C8_SF",
+		"TWC_Weapon_L105A2_SF",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_C8_SF",
+		"TWC_Weapon_L105A2_SF",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
 };
 
 //Aircraft
@@ -186,7 +252,24 @@ class TWC_Infantry_Modern_SF_FAC: TWC_Infantry_Modern_SF_Grenadier
 {
 	displayName = "JTAC";
 	backpack = "TWC_Backpack_Modern_SF_JTAC";
-	TWC_isCommandRole = 0;
+	linkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MTP_SF",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MTP_SF",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
 	weapons[] =
 	{
 		"TWC_Weapon_C8_SF_GL",

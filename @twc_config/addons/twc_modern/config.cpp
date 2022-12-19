@@ -63,7 +63,7 @@ class CfgEditorSubcategories {
 		displayName = "Infantry (2020s, COIN, Dismounted, NBC)";
 	};
 	class TWC_Infantry_Modern_SF {
-		displayName = "Infantry (Special Forces)";
+		displayName = "Special Forces";
 	};
 };
 

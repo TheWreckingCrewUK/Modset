@@ -1,7 +1,7 @@
 //Modern, Special Forces
 //Section
 
-class TWC_Backpack_Modern_SF_Commander: mpx_camel2
+class TWC_Backpack_Modern_SF_Commander: mpx_daysack10
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -26,7 +26,7 @@ class TWC_Backpack_Modern_SF_TeamLead: mpx_daysack10
 	class TransportMagazines {
 		ADD_MAGA(CUP_30Rnd_556x45_PMAG_BLACK_PULL, 8);
 		ADD_MAGA(UK3CB_BAF_1Rnd_HE_Grenade_Shell,10);
-		ADD_MAGA(20Rnd_762x51_Mag_Tracer, 2);
+		ADD_MAGA(ACE_20Rnd_762x51_Mag_Tracer, 2);
 		ADD_MAGA(SmokeShell, 4);
 	};
 };
