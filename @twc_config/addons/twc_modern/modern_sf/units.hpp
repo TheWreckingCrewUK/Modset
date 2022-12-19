@@ -161,6 +161,49 @@ class TWC_Infantry_Modern_SF_Marksman: TWC_Infantry_Modern_SF_Rifleman
 		MAG_2("SmokeShell")
 	};
 };
+class TWC_Infantry_Modern_SF_Autorifleman: TWC_Infantry_Modern_SF_Rifleman
+{
+	displayName = "Autorifleman";
+	backpack = "TWC_Backpack_Modern_SF_Autorifleman";
+	weapons[] =
+	{
+		"TWC_Weapon_L110A3_SF",
+		"TWC_Weapon_L105A2_SF",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_L110A3_SF",
+		"TWC_Weapon_L105A2_SF",
+		"ACE_Vector",
+		"Throw",
+		"Put"
+	};
+	magazines[] =
+	{
+		MAG_2("UK3CB_BAF_556_200Rnd"),
+		MAG_2("UK3CB_BAF_556_200Rnd_T"),
+		MAG_2("UK3CB_BAF_9_15Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		MAG_2("ACE_M84"),
+		MAG_2("B_IR_Grenade"),
+		MAG_2("Chemlight_blue"),
+		MAG_2("SmokeShell")
+	};
+	respawnmagazines[] =
+	{
+		MAG_2("UK3CB_BAF_556_200Rnd"),
+		MAG_2("UK3CB_BAF_556_200Rnd_T"),
+		MAG_2("UK3CB_BAF_9_15Rnd"),
+		MAG_2("CUP_HandGrenade_L109A2_HE"),
+		MAG_2("ACE_M84"),
+		MAG_2("B_IR_Grenade"),
+		MAG_2("Chemlight_blue"),
+		MAG_2("SmokeShell")
+	};
+};
 class TWC_Infantry_Modern_SF_SectionCommander: TWC_Infantry_Modern_SF_Rifleman
 {
 	displayName = "Section Commander";

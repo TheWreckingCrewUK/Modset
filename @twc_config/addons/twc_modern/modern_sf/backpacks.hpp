@@ -59,6 +59,18 @@ class TWC_Backpack_Modern_SF_Rifleman: mpx_daysack
 		ADD_ITEM(DemoCharge_Remote_Mag, 2);
 	};
 };
+class TWC_Backpack_Modern_SF_Autorifleman: mpx_daysack
+{
+	scope = 1;
+	scopeArsenal = 1;
+	class TransportItems {
+		ADD_ITEM(CUP_NVG_GPNVG_black,1);
+	};
+		class TransportMagazines {
+		ADD_MAGA(UK3CB_BAF_556_200Rnd,2);
+		ADD_MAGA(UK3CB_BAF_556_200Rnd_T,3);
+	};
+};
 class TWC_Backpack_Modern_SF_Grenadier: mpx_daysack
 {
 	scope = 1;

@@ -11,6 +11,7 @@ class arifle_SPAR_01_blk_f;
 class arifle_SPAR_03_blk_f;
 class arifle_SPAR_01_GL_blk_F;
 class UK3CB_BAF_L105A2;
+class UK3CB_BAF_L110A3;
 
 class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 	scope = 1;
@@ -209,6 +210,19 @@ class TWC_Weapon_L105A2_SF: UK3CB_BAF_L105A2 {
 		class LinkedItemsMuzzle {
 			slot = "MuzzleSlot";
 			item = "UK3CB_BAF_Silencer_L105A1";
+		};
+	};
+};
+class TWC_Weapon_L110A3_SF: UK3CB_BAF_L110A3 {
+	scope = 1;
+	class LinkedItems {
+		class LinkedItemsMuzzle {
+			slot = "MuzzleSlot";
+			item = "UK3CB_BAF_Silencer_L110";
+		};
+		class LinkedItemsOptic {
+			slot = "CowsSlot";
+			item = "cup_optic_acog_ta01b_rmr_black_pip";
 		};
 	};
 };
