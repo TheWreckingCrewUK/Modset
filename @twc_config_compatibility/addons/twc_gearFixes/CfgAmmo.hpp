@@ -109,7 +109,7 @@ class CfgAmmo {
 	class ace_338_ball: B_338_Ball {
 		hit = 25;
 	};
-	
+	class BulletBase;
 	class B_127x99_Ball: BulletBase {
 		class CamShakePlayerFire {
 			distance = 1;
