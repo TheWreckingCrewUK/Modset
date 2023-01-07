@@ -24,7 +24,7 @@ class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 		class LinkedItemsFrontSideRail
 		{
 			slot = "PointerSlot";
-			item = "UK3CB_BAF_LLM_Flashlight_Black";
+			item = "cup_acc_llm_black";
 		};
 		class LinkedItemsUnder
 		{
@@ -44,7 +44,7 @@ class TWC_Weapon_L85A3_LDS: UK3CB_BAF_L85A3 {
 		class LinkedItemsFrontSideRail
 		{
 			slot = "PointerSlot";
-			item = "UK3CB_BAF_LLM_Flashlight_Black";
+			item = "cup_acc_llm_black";
 		};
 		class LinkedItemsUnder
 		{
@@ -62,7 +62,7 @@ class TWC_Weapon_L110A2_ELCAN3D: UK3CB_BAF_L110A2RIS {
 		};
 		class LinkedItemsFrontSideRail {
 			slot = "PointerSlot";
-			item = "UK3CB_BAF_LLM_Flashlight_Black";
+			item = "cup_acc_llm_black";
 		};
 	};
 };
@@ -75,7 +75,7 @@ class TWC_Weapon_L129A1_Grippod_TA648: UK3CB_BAF_L129A1_Grippod {
 		};
 		class LinkedItemsFrontSideRail {
 			slot = "PointerSlot";
-			item = "UK3CB_BAF_LLM_Flashlight_Black";
+			item = "cup_acc_llm_black";
 		};
 		class LinkedItemsBipod {
 			slot = "UnderBarrelSlot";
@@ -92,7 +92,7 @@ class TWC_Weapon_L85A2_UGL_ELCAN3D: UK3CB_BAF_L85A2_UGL {
 		};
 		class LinkedItemsFrontSideRail {
 			slot = "PointerSlot";
-			item = "UK3CB_BAF_LLM_Flashlight_Black";
+			item = "cup_acc_llm_black";
 		};
 	};
 };
@@ -105,7 +105,7 @@ class TWC_Weapon_L85A3_UGL_LDS: UK3CB_BAF_L85A3_UGL {
 		};
 		class LinkedItemsFrontSideRail {
 			slot = "PointerSlot";
-			item = "UK3CB_BAF_LLM_Flashlight_Black";
+			item = "cup_acc_llm_black";
 		};
 	};
 };
@@ -118,7 +118,7 @@ class TWC_Weapon_L129A1_Spotter: UK3CB_BAF_L129A1_Grippod {
 		};
 		class LinkedItemsFrontSideRail {
 			slot = "PointerSlot";
-			item = "UK3CB_BAF_LLM_Flashlight_Black";
+			item = "cup_acc_llm_black";
 		};
 		class LinkedItemsBipod {
 			slot = "UnderBarrelSlot";
@@ -157,7 +157,7 @@ class TWC_Weapon_C8_SF: arifle_SPAR_01_blk_F {
 		};
 		class LinkedItemsFrontSideRail {
 			slot = "PointerSlot";
-			item = "UK3CB_BAF_LLM_Flashlight_Black";
+			item = "cup_acc_llm_black";
 		};
 		class LinkedItemsMuzzle {
 			slot = "MuzzleSlot";
@@ -175,7 +175,7 @@ class TWC_Weapon_C8_SF_GL: arifle_SPAR_01_GL_blk_F {
 		};
 		class LinkedItemsFrontSideRail {
 			slot = "PointerSlot";
-			item = "UK3CB_BAF_LLM_Flashlight_Black";
+			item = "cup_acc_llm_black";
 		};
 		class LinkedItemsMuzzle {
 			slot = "MuzzleSlot";
@@ -192,7 +192,7 @@ class TWC_Weapon_HK417_SF: arifle_SPAR_03_blk_f {
 		};
 		class LinkedItemsFrontSideRail {
 			slot = "PointerSlot";
-			item = "UK3CB_BAF_LLM_Flashlight_Black";
+			item = "cup_acc_llm_black";
 		};
 		class LinkedItemsBipod {
 			slot = "UnderBarrelSlot";
