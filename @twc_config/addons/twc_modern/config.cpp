@@ -555,11 +555,13 @@ class CfgWeapons
 	class UK3CB_BAF_L115A3_Ghillie;
 	class UK3CB_BAF_L119A1_RIS;
 	class UK3CB_BAF_L119A1_UKUGL;
-	class arifle_SPAR_01_blk_f;
-	class arifle_SPAR_03_blk_f;
-	class arifle_SPAR_01_GL_blk_F;
+	class CUP_arifle_HK416_Black;
+	class CUP_arifle_HK416_AGL_Black;
+	class CUP_arifle_HK417_20;
 	class UK3CB_BAF_L105A2;
 	class UK3CB_BAF_L110A3;
+	class UK3CB_BAF_L22A2;
+	
 	class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS
 	{
 		scope=1;
@@ -573,12 +575,24 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsUnder
 			{
 				item="UK3CB_underbarrel_acc_grippod";
 				slot="UnderBarrelSlot";
+			};
+		};
+	};
+	class TWC_Weapon_L22A2_SUSAT: UK3CB_BAF_L22A2
+	{
+		scope=1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="UK3CB_BAF_SUSAT_3D";
 			};
 		};
 	};
@@ -595,7 +609,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsUnder
 			{
@@ -617,7 +631,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 	};
@@ -634,7 +648,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsBipod
 			{
@@ -656,7 +670,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 	};
@@ -673,7 +687,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 	};
@@ -690,7 +704,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsBipod
 			{
@@ -726,7 +740,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class TWC_Weapon_C8_SF: arifle_SPAR_01_blk_f
+	class TWC_Weapon_C8_SF: CUP_arifle_HK416_Black
 	{
 		displayName="C8";
 		scope=1;
@@ -740,7 +754,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsMuzzle
 			{
@@ -749,7 +763,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class TWC_Weapon_C8_SF_GL: arifle_SPAR_01_GL_blk_F
+	class TWC_Weapon_C8_SF_GL: CUP_arifle_HK416_AGL_Black
 	{
 		displayName="C8 GL";
 		scope=1;
@@ -763,7 +777,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsMuzzle
 			{
@@ -772,7 +786,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class TWC_Weapon_HK417_SF: arifle_SPAR_03_blk_f
+	class TWC_Weapon_HK417_SF: CUP_arifle_HK417_20
 	{
 		scope=1;
 		class LinkedItems
@@ -785,7 +799,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsBipod
 			{
@@ -825,6 +839,11 @@ class CfgWeapons
 			{
 				slot="CowsSlot";
 				item="cup_optic_acog_ta01b_rmr_black_pip";
+			};
+			class LinkedItemsFrontSideRail
+			{
+				slot="PointerSlot";
+				item="cup_acc_llm_black";
 			};
 		};
 	};
@@ -1032,7 +1051,12 @@ class CfgVehicles
 			class _nc_ACE_salineIV_500
 			{
 				name="ACE_salineIV_500";
-				count=6;
+				count=12;
+			};
+			class _nc_ACE_salineIV_250
+			{
+				name="ACE_salineIV_250";
+				count=4;
 			};
 			class _nc_ACE_tourniquet
 			{
@@ -1513,7 +1537,12 @@ class CfgVehicles
 			class _nc_ACE_salineIV_500
 			{
 				name="ACE_salineIV_500";
-				count=6;
+				count=12;
+			};
+			class _nc_ACE_salineIV_250
+			{
+				name="ACE_salineIV_250";
+				count=4;
 			};
 			class _nc_ACE_tourniquet
 			{
@@ -1751,7 +1780,12 @@ class CfgVehicles
 			class _nc_ACE_salineIV_500
 			{
 				name="ACE_salineIV_500";
-				count=6;
+				count=12;
+			};
+			class _nc_ACE_salineIV_250
+			{
+				name="ACE_salineIV_250";
+				count=4;
 			};
 			class _nc_ACE_tourniquet
 			{
@@ -2229,7 +2263,12 @@ class CfgVehicles
 			class _nc_ACE_salineIV_500
 			{
 				name="ACE_salineIV_500";
-				count=6;
+				count=12;
+			};
+			class _nc_ACE_salineIV_250
+			{
+				name="ACE_salineIV_250";
+				count=4;
 			};
 			class _nc_ACE_tourniquet
 			{
@@ -2478,7 +2517,12 @@ class CfgVehicles
 			class _nc_ACE_salineIV_500
 			{
 				name="ACE_salineIV_500";
-				count=6;
+				count=12;
+			};
+			class _nc_ACE_salineIV_250
+			{
+				name="ACE_salineIV_250";
+				count=4;
 			};
 			class _nc_ACE_tourniquet
 			{
@@ -2972,7 +3016,12 @@ class CfgVehicles
 			class _nc_ACE_salineIV_500
 			{
 				name="ACE_salineIV_500";
-				count=6;
+				count=12;
+			};
+			class _nc_ACE_salineIV_250
+			{
+				name="ACE_salineIV_250";
+				count=4;
 			};
 			class _nc_ACE_tourniquet
 			{
@@ -3248,7 +3297,12 @@ class CfgVehicles
 			class _nc_ACE_salineIV_500
 			{
 				name="ACE_salineIV_500";
-				count=6;
+				count=12;
+			};
+			class _nc_ACE_salineIV_250
+			{
+				name="ACE_salineIV_250";
+				count=4;
 			};
 			class _nc_ACE_tourniquet
 			{
@@ -3757,7 +3811,12 @@ class CfgVehicles
 			class _nc_ACE_salineIV_500
 			{
 				name="ACE_salineIV_500";
-				count=6;
+				count=12;
+			};
+			class _nc_ACE_salineIV_250
+			{
+				name="ACE_salineIV_250";
+				count=4;
 			};
 			class _nc_ACE_tourniquet
 			{
@@ -3801,10 +3860,15 @@ class CfgVehicles
 		maximumLoad=200;
 		class TransportItems
 		{
-			class _nc_ACRE_PRC117F
+			class _nc_CUP_NVG_GPNVG_black
 			{
-				name="ACRE_PRC117F";
+				name="CUP_NVG_GPNVG_black";
 				count=1;
+			};
+			class _nc_ACRE_PRC152
+			{
+				name="ACRE_PRC152";
+				count=2;
 			};
 		};
 		class TransportMagazines
@@ -3833,10 +3897,15 @@ class CfgVehicles
 		maximumLoad=480;
 		class TransportItems
 		{
-			class _nc_ACRE_PRC117F
+			class _nc_CUP_NVG_GPNVG_black
 			{
-				name="ACRE_PRC117F";
+				name="CUP_NVG_GPNVG_black";
 				count=1;
+			};
+			class _nc_ACRE_PRC152
+			{
+				name="ACRE_PRC152";
+				count=2;
 			};
 		};
 		class TransportMagazines
@@ -3869,6 +3938,16 @@ class CfgVehicles
 		scopeArsenal=1;
 		class TransportItems
 		{
+			class _nc_CUP_NVG_GPNVG_black
+			{
+				name="CUP_NVG_GPNVG_black";
+				count=1;
+			};
+			class _nc_ACRE_PRC152
+			{
+				name="ACRE_PRC152";
+				count=1;
+			};
 			class _nc_ACE_fieldDressing
 			{
 				name="ACE_fieldDressing";
@@ -3912,7 +3991,12 @@ class CfgVehicles
 			class _nc_ACE_salineIV_500
 			{
 				name="ACE_salineIV_500";
-				count=6;
+				count=12;
+			};
+			class _nc_ACE_salineIV_250
+			{
+				name="ACE_salineIV_250";
+				count=4;
 			};
 			class _nc_ACE_tourniquet
 			{
@@ -3937,6 +4021,11 @@ class CfgVehicles
 		scopeArsenal=1;
 		class TransportItems
 		{
+			class _nc_ACRE_PRC152
+			{
+				name="ACRE_PRC152";
+				count=1;
+			};
 			class _nc_CUP_NVG_GPNVG_black
 			{
 				name="CUP_NVG_GPNVG_black";
@@ -3960,6 +4049,11 @@ class CfgVehicles
 		scopeArsenal=1;
 		class TransportItems
 		{
+			class _nc_ACRE_PRC152
+			{
+				name="ACRE_PRC152";
+				count=1;
+			};
 			class _nc_CUP_NVG_GPNVG_black
 			{
 				name="CUP_NVG_GPNVG_black";
@@ -3986,14 +4080,19 @@ class CfgVehicles
 		scopeArsenal=1;
 		class TransportMagazines
 		{
-			class _nc_UK3CB_BAF_1Rnd_HE_Grenade_Shell
+			class _nc_1Rnd_HE_Grenade_Shell
 			{
-				magazine="UK3CB_BAF_1Rnd_HE_Grenade_Shell";
+				magazine="1Rnd_HE_Grenade_Shell";
 				count=10;
 			};
 		};
 		class TransportItems
 		{
+			class _nc_ACRE_PRC152
+			{
+				name="ACRE_PRC152";
+				count=1;
+			};
 			class _nc_CUP_NVG_GPNVG_black
 			{
 				name="CUP_NVG_GPNVG_black";
@@ -4017,6 +4116,11 @@ class CfgVehicles
 		scopeArsenal=1;
 		class TransportItems
 		{
+			class _nc_ACRE_PRC152
+			{
+				name="ACRE_PRC152";
+				count=1;
+			};
 			class _nc_CUP_NVG_GPNVG_black
 			{
 				name="CUP_NVG_GPNVG_black";
@@ -4040,6 +4144,11 @@ class CfgVehicles
 		scopeArsenal=1;
 		class TransportItems
 		{
+			class _nc_ACRE_PRC152
+			{
+				name="ACRE_PRC152";
+				count=1;
+			};
 			class _nc_ACRE_PRC117F
 			{
 				name="ACRE_PRC117F";
@@ -4053,9 +4162,9 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _nc_UK3CB_BAF_1Rnd_HE_Grenade_Shell
+			class _nc_1Rnd_HE_Grenade_Shell
 			{
-				magazine="UK3CB_BAF_1Rnd_HE_Grenade_Shell";
+				magazine="1Rnd_HE_Grenade_Shell";
 				count=3;
 			};
 			class _nc_1Rnd_Smoke_Grenade_shell
@@ -4541,14 +4650,14 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
@@ -4576,13 +4685,13 @@ class CfgVehicles
 		TWC_isCommandRole=0;
 		weapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
@@ -5175,13 +5284,13 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"UK3CB_BAF_L85A2",
+			"TWC_Weapon_L85A2_RIS_ELCAN3D",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"UK3CB_BAF_L85A2",
+			"TWC_Weapon_L85A2_RIS_ELCAN3D",
 			"Throw",
 			"Put"
 		};
@@ -5785,15 +5894,83 @@ class CfgVehicles
 			"itemMap",
 			"ItemWatch"
 		};
+		Items[]=
+		{
+			"ACRE_PRC343",
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
+		respawnItems[]=
+		{
+			"ACRE_PRC343",
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
 		weapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
@@ -5837,14 +6014,14 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
@@ -7552,14 +7729,14 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"UK3CB_BAF_L85A2",
+			"TWC_Weapon_L85A2_RIS_ELCAN3D",
 			"UK3CB_BAF_L131A1",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"UK3CB_BAF_L85A2",
+			"TWC_Weapon_L85A2_RIS_ELCAN3D",
 			"UK3CB_BAF_L131A1",
 			"Throw",
 			"Put"
@@ -8238,15 +8415,83 @@ class CfgVehicles
 			"itemMap",
 			"ItemWatch"
 		};
+		Items[]=
+		{
+			"ACRE_PRC343",
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
+		respawnItems[]=
+		{
+			"ACRE_PRC343",
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
 		weapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
@@ -8307,6 +8552,7 @@ class CfgVehicles
 	class TWC_Infantry_2020_Regular_Woodland_Vehicle_Commander: TWC_Infantry_2020_Regular_Woodland_Helicopter_Pilot
 	{
 		displayName="Vehicle Commander";
+		
 		linkedItems[]=
 		{
 			"mpx_virtus4",
@@ -8325,16 +8571,84 @@ class CfgVehicles
 			"itemMap",
 			"ItemWatch"
 		};
+		Items[]=
+		{
+			"ACRE_PRC343",
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
+		respawnItems[]=
+		{
+			"ACRE_PRC343",
+			"ACE_EarPlugs",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_fieldDressing",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_packingBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_elasticBandage",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_quikclot",
+			"ACE_morphine",
+			"ACE_morphine",
+			"ACE_epinephrine",
+			"ACE_tourniquet",
+			"ACE_tourniquet",
+			"ACE_MapTools"
+		};
 		weapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
@@ -8359,6 +8673,18 @@ class CfgVehicles
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
+		};
+		weapons[]=
+		{
+			"TWC_Weapon_L22A2_SUSAT",
+			"Throw",
+			"Put"
+		};
+		respawnweapons[]=
+		{
+			"TWC_Weapon_L22A2_SUSAT",
+			"Throw",
+			"Put"
 		};
 	};
 	class TWC_Infantry_2020_Regular_Dismounted_Woodland_Rifleman: TWC_Infantry_2020_Regular_Woodland_Rifleman
@@ -10377,14 +10703,14 @@ class CfgVehicles
 		};
 		weapons[]=
 		{
-			"UK3CB_BAF_L85A2",
+			"TWC_Weapon_L85A2_RIS_ELCAN3D",
 			"UK3CB_BAF_L131A1",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"UK3CB_BAF_L85A2",
+			"TWC_Weapon_L85A2_RIS_ELCAN3D",
 			"UK3CB_BAF_L131A1",
 			"Throw",
 			"Put"
@@ -15738,7 +16064,8 @@ class CfgVehicles
 			"CUP_H_OpsCore_Covered_MCAM_SF",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"ItemAndroid"
 		};
 		respawnLinkedItems[]=
 		{
@@ -15746,7 +16073,8 @@ class CfgVehicles
 			"CUP_H_OpsCore_Covered_MCAM_SF",
 			"ItemCompass",
 			"itemMap",
-			"ItemWatch"
+			"ItemWatch",
+			"ItemAndroid"
 		};
 		weapons[]=
 		{
@@ -15863,11 +16191,11 @@ class CfgVehicles
 			"CUP_30Rnd_556x45_PMAG_BLACK_PULL_Tracer_Red",
 			"UK3CB_BAF_9_15Rnd",
 			"UK3CB_BAF_9_15Rnd",
-			"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
-			"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
-			"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
-			"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
-			"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
+			"1Rnd_HE_Grenade_Shell",
+			"1Rnd_HE_Grenade_Shell",
+			"1Rnd_HE_Grenade_Shell",
+			"1Rnd_HE_Grenade_Shell",
+			"1Rnd_HE_Grenade_Shell",
 			"1Rnd_Smoke_Grenade_shell",
 			"1Rnd_Smoke_Grenade_shell",
 			"1Rnd_Smoke_Grenade_shell",
@@ -16208,11 +16536,11 @@ class CfgVehicles
 			"CUP_30Rnd_556x45_PMAG_BLACK_PULL_Tracer_Red",
 			"UK3CB_BAF_9_15Rnd",
 			"UK3CB_BAF_9_15Rnd",
-			"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
-			"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
-			"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
-			"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
-			"UK3CB_BAF_1Rnd_HE_Grenade_Shell",
+			"1Rnd_HE_Grenade_Shell",
+			"1Rnd_HE_Grenade_Shell",
+			"1Rnd_HE_Grenade_Shell",
+			"1Rnd_HE_Grenade_Shell",
+			"1Rnd_HE_Grenade_Shell",
 			"1Rnd_Smoke_Grenade_shell",
 			"1Rnd_Smoke_Grenade_shell",
 			"1Rnd_Smoke_Grenade_shell",
