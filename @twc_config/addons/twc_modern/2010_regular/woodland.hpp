@@ -408,13 +408,13 @@ class TWC_Infantry_Modern_Regular_Woodland_Platoon_Medic: TWC_Infantry_Modern_Re
 	};
 	weapons[] =
 	{
-		"UK3CB_BAF_L85A2",
+		"TWC_Weapon_L85A2_RIS_SUSAT",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"UK3CB_BAF_L85A2",
+		"TWC_Weapon_L85A2_RIS_SUSAT",
 		"Throw",
 		"Put"
 	};
@@ -812,13 +812,13 @@ class TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Modern
 	};
 	weapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"Throw",
 		"Put"
 	};
@@ -835,9 +835,10 @@ class TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Modern
 };
 
 //FVs
-class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Commander: TWC_Infantry_Modern_Regular_Woodland_Helicopter_Pilot
+class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Commander: TWC_Infantry_Modern_Regular_Woodland_SectionCommander
 {
 	displayName = "Vehicle Commander";
+	engineer = 1;
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey",
@@ -858,23 +859,35 @@ class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Commander: TWC_Infantry_Moder
 	};
 	weapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"ACE_Vector",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"ACE_Vector",
 		"Throw",
 		"Put"
+	};
+	magazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2("SmokeShell")
+	};
+	respawnmagazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2("SmokeShell")
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Crew: TWC_Infantry_Modern_Regular_Woodland_Vehicle_Commander
 {
 	displayName = "Vehicle Crew";
+	backpack = "";
 	TWC_isCommandRole = 0;
+	engineer = 1;
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_Osprey",
@@ -890,5 +903,17 @@ class TWC_Infantry_Modern_Regular_Woodland_Vehicle_Crew: TWC_Infantry_Modern_Reg
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+		weapons[] =
+	{
+		"TWC_Weapon_L22A2_SUSAT",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_L22A2_SUSAT",
+		"Throw",
+		"Put"
 	};
 };

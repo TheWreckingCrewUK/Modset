@@ -742,10 +742,11 @@ class TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millenni
 };
 
 //FVs
-class TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander: TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot
+class TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander: TWC_Infantry_1990_Regular_Woodland_SectionCommander
 {
 	displayName = "Vehicle Commander";
 	uniformClass = "UK3CB_BAF_U_Smock_DPMW";
+	engineer = 1;
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_DPMW",
@@ -764,32 +765,44 @@ class TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander: TWC_Infantry_1990_Re
 	};
 	weapons[] =
 	{
-		"TWC_Weapon_L85A1",
+		"TWC_Weapon_L22A1_SUSAT",
 		"Binocular",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"TWC_Weapon_L85A1",
+		"TWC_Weapon_L22A1_SUSAT",
 		"Binocular",
 		"Throw",
 		"Put"
+	};
+	magazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2(SmokeShell)
+	};
+	respawnmagazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2(SmokeShell)
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Vehicle_Crew: TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander
 {
 	displayName = "Vehicle Crew";
 	TWC_isCommandRole = 0;
+	backpack = "";
+	engineer = 1;
 	weapons[] =
 	{
-		"TWC_Weapon_L85A1",
+		"TWC_Weapon_L22A1_SUSAT",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"TWC_Weapon_L85A1",
+		"TWC_Weapon_L22A1_SUSAT",
 		"Throw",
 		"Put"
 	};

@@ -557,14 +557,14 @@ class TWC_Infantry_2020_Regular_Woodland_Platoon_Medic: TWC_Infantry_2020_Regula
 	};
 	weapons[] =
 	{
-		"UK3CB_BAF_L85A2",
+		"TWC_Weapon_L85A2_RIS_SUSAT",
 		"UK3CB_BAF_L131A1",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"UK3CB_BAF_L85A2",
+		"TWC_Weapon_L85A2_RIS_SUSAT",
 		"UK3CB_BAF_L131A1",
 		"Throw",
 		"Put"
@@ -1048,9 +1048,10 @@ class TWC_Infantry_2020_Regular_Woodland_UAVOp: TWC_Infantry_2020_Regular_Woodla
 };
 
 //FVs
-class TWC_Infantry_2020_Regular_Woodland_Vehicle_Commander: TWC_Infantry_2020_Regular_Woodland_Helicopter_Pilot
+class TWC_Infantry_2020_Regular_Woodland_Vehicle_Commander: TWC_Infantry_2020_Regular_Woodland_SectionCommander
 {
 	displayName = "Vehicle Commander";
+	engineer = 1;
 	linkedItems[] =
 	{
 		"mpx_virtus4",
@@ -1071,23 +1072,39 @@ class TWC_Infantry_2020_Regular_Woodland_Vehicle_Commander: TWC_Infantry_2020_Re
 	};
 	weapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
+		"UK3CB_BAF_L131A1",
 		"ACE_Vector",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
+		"UK3CB_BAF_L131A1",
 		"ACE_Vector",
 		"Throw",
 		"Put"
+	};
+	magazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("SmokeShell")
+	};
+	respawnmagazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2("UK3CB_BAF_9_17Rnd"),
+		MAG_2("SmokeShell")
 	};
 };
 class TWC_Infantry_2020_Regular_Woodland_Vehicle_Crew: TWC_Infantry_2020_Regular_Woodland_Vehicle_Commander
 {
 	displayName = "Vehicle Crew";
+	backpack = "";
 	TWC_isCommandRole = 0;
+	engineer = 1;
 	linkedItems[] =
 	{
 		"mpx_virtus4",

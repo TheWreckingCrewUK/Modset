@@ -288,7 +288,7 @@ class CfgVehicles
 		linkedItems[] =
 		{
 			"UK3CB_BAF_V_Osprey_Belt_A",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -296,7 +296,7 @@ class CfgVehicles
 		respawnLinkedItems[] =
 		{
 			"UK3CB_BAF_V_Osprey_Belt_A",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"

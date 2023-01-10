@@ -41,20 +41,6 @@ class TWC_Infantry_2000_Regular_Tropic_Marksman: TWC_Infantry_2000_Regular_Woodl
 		"itemMap",
 		"ItemWatch"
 	};
-	magazines[] =
-	{
-		MAG_4("UK3CB_BAF_556_30Rnd"),
-		MAG_3("UK3CB_BAF_556_30Rnd_T"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SmokeShell"
-	};
-	respawnmagazines[] =
-	{
-		MAG_4("UK3CB_BAF_556_30Rnd"),
-		MAG_3("UK3CB_BAF_556_30Rnd_T"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SmokeShell"
-	};
 };
 class TWC_Infantry_2000_Regular_Tropic_Grenadier: TWC_Infantry_2000_Regular_Woodland_Grenadier
 {
