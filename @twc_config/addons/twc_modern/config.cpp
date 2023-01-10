@@ -573,7 +573,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsUnder
 			{
@@ -595,7 +595,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsUnder
 			{
@@ -617,7 +617,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 	};
@@ -634,7 +634,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsBipod
 			{
@@ -656,7 +656,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 	};
@@ -673,7 +673,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 	};
@@ -690,7 +690,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsBipod
 			{
@@ -740,7 +740,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsMuzzle
 			{
@@ -763,7 +763,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsMuzzle
 			{
@@ -785,7 +785,7 @@ class CfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="PointerSlot";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsBipod
 			{

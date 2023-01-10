@@ -583,7 +583,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_L85";
-				item="UK3CB_BAF_LLM_Flashlight_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 		

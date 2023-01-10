@@ -38,7 +38,7 @@ class TWC_Weapon_L85A1_SUSAT3D_Laser: TWC_Weapon_L85A1_SUSAT3D {
 
 		class LinkedItemsFrontSideRail {
 			slot="asdg_FrontSideRail_L85";
-			item="UK3CB_BAF_LLM_Flashlight_Black";
+			item="cup_acc_llm_black";
 		};
 	};
 };
@@ -52,7 +52,7 @@ class TWC_Weapon_L85A2_SUSAT3D: UK3CB_BAF_L85A2 {
 
 		class LinkedItemsFrontSideRail {
 			slot="asdg_FrontSideRail_L85";
-			item="UK3CB_BAF_LLM_Flashlight_Black";
+			item="cup_acc_llm_black";
 		};
 	};
 };
