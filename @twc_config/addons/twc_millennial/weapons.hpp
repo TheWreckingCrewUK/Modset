@@ -45,7 +45,7 @@ class TWC_Weapon_L85A1_SUSAT3D_Laser: TWC_Weapon_L85A1_SUSAT3D {
 		};
 	};
 };
-class TWC_Weapon_L22A1_SUSAT: UK3CB_BAF_L22A1 {
+class TWC_Weapon_L22A1_SUSAT: UK3CB_BAF_L22 {
 	scope = 1;
 	class LinkedItems {
 		class LinkedItemsOptic
