@@ -109,28 +109,7 @@ class CfgAmmo {
 	class ace_338_ball: B_338_Ball {
 		hit = 25;
 	};
-	
 	class BulletBase;
-	class CUP_B_23mm_AA: BulletBase {
-		model = "z\ace\addons\tracers\ace_TracerGreen2.p3d";
-		timeToLive = 30;
-	};
-	
-	class CUP_B_23mm_APHE_Tracer_Green: BulletBase {
-		SoundSetExplosion[] = {"Shell30mm40mm_Exp_SoundSet","Explosion_Debris_SoundSet"};
-		class CamShakePlayerFire {
-			distance = 5;
-			duration = 1;
-			frequency = 10;
-			power = 30;
-		};
-		
-		ACE_muzzleVelocityVariationSD = 5;
-		model = "z\ace\addons\tracers\ace_TracerGreen2.p3d";
-		tracerStartTime = 0;
-		tracerEndTime = 5;
-	};
-	
 	class B_127x99_Ball: BulletBase {
 		class CamShakePlayerFire {
 			distance = 1;
@@ -151,48 +130,5 @@ class CfgAmmo {
 		};
 		
 		ACE_muzzleVelocityVariationSD = 1;
-	};
-	
-	class B_556x45_Ball:BulletBase {
-		ACE_barrelLengths[] = {152,254,354,391.16,419.1,449.58,480.06,508,635};
-		ACE_muzzleVelocities[] = {595,758.6,855.8,878,892,906,915,922,981.7};
-	};
-	
-	class B_556x45_Ball_Tracer_Red: B_556x45_Ball {
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-		ACE_barrelLengths[] = {152,254,354,391.16,419.1,449.58,480.06,508,635};
-		ACE_muzzleVelocities[] = {595,758.6,855.8,878,892,906,915,922,981.7};
-	};
-	
-	class UK3CB_BAF_556_Ball_Tracer_Red: B_556x45_Ball_Tracer_Red {
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-		ACE_barrelLengths[] = {152,254,354,391.16,419.1,449.58,480.06,508,635};
-		ACE_muzzleVelocities[] = {595,758.6,855.8,878,892,906,915,922,981.7};
-	};
-	
-	class UK3CB_BAF_556_Ball: B_556x45_Ball {
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-		ACE_barrelLengths[] = {152,254,354,391.16,419.1,449.58,480.06,508,635};
-		ACE_muzzleVelocities[] = {595,758.6,855.8,878,892,906,915,922,981.7};
-	};
-	
-	class UK3CB_BAF_762_Ball_L42A1_Tracer_Red: B_762x51_Ball {
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class UK3CB_BAF_762_Ball_L42A1: B_762x51_Ball {
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class B_762x51_Tracer_Red: B_762x51_Ball {
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-	
-	class UK3CB_BAF_762_Ball: B_762x51_Ball {
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
-
-	class UK3CB_BAF_762_Ball_Tracer_Red: B_762x51_Tracer_Red {
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
 	};
 };
