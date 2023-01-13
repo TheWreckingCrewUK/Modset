@@ -13,23 +13,6 @@ class CfgPatches {
 			"TWC_Vehicle_Generic_RHIB_HMG_Black",
 			"TWC_Vehicle_Generic_Zodiac_Black",
 			
-			"TWC_Vehicle_Millennial_HarrierGR5_RAF",
-			"TWC_Vehicle_Millennial_FV432_Woodland",
-			"TWC_Vehicle_Millennial_FV432_Woodland_COIN",
-			"TWC_Vehicle_Millennial_Warrior_Woodland",
-			"TWC_Vehicle_Millennial_Warrior_Desert",
-			"TWC_Vehicle_Millennial_LandRover_Woodland",
-			"TWC_Vehicle_Millennial_LandRover_Desert",
-			"TWC_Vehicle_Millennial_LandRover_Woodland_COIN",
-			"TWC_Vehicle_Millennial_LandRover_Desert_COIN",
-			"TWC_Vehicle_Millennial_LandRoverHard_Woodland",
-			"TWC_Vehicle_Millennial_LandRoverHard_Desert",
-			"TWC_Vehicle_Millennial_LandRoverHard_Woodland_COIN",
-			"TWC_Vehicle_Millennial_LandRoverHard_Desert_COIN",
-			"TWC_Vehicle_Millennial_LandRoverSnatch_NI_COIN",
-			"TWC_Vehicle_Millennial_Puma_RAF",
-			
-			"TWC_Vehicle_Modern_HarrierGR9_RAF",
 			"TWC_Vehicle_Modern_Wildcat_RAF",
 			"TWC_Vehicle_Modern_Wildcat_RAF_COIN",
 			"TWC_Vehicle_Modern_LandRover_Woodland",
@@ -147,6 +130,23 @@ class CfgVehicles {
 	// These are used across eras in different configurations, and as such should be first referenced here.
 	class CUP_B_FV432_GB_GPMG;
 	class CUP_B_SA330_Puma_HC1_BAF;
+
+	class Helicopter_Base_H;
+	class CUP_AW159_Unarmed_Base: Helicopter_Base_H {
+		class Components;
+	};
+	class CUP_AW159_Dynamic_Base: CUP_AW159_Unarmed_Base {
+		class Components: Components {
+			class TransportPylonsComponent;
+		};
+	};
+	class CUP_B_AW159_GB: CUP_AW159_Dynamic_Base {
+		class Components: Components {
+			class TransportPylonsComponent: TransportPylonsComponent {
+				class pylons;
+			};
+		};
+	};
 	
 	// section modifiers all eras/types
 	#define SECTION_FIELDDRESSING 20
@@ -201,5 +201,10 @@ class CfgVehicles {
 	#include "vehicles\lr_wmik.hpp"
 	#include "vehicles\wildcat.hpp"
 	#include "vehicles\challenger2.hpp"
-	#include "millennial\millennial.hpp"
+	
+	#include "generic\generic.hpp"
+	#include "modern\modern.hpp"
+	
+	// delete this in a few months once we've gone through submitted ops
+	#include "oldVehicles.hpp"
 };
