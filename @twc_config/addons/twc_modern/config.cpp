@@ -313,14 +313,14 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
@@ -342,13 +342,13 @@ class CfgVehicles
 		TWC_isCommandRole = 0;
 		weapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
@@ -380,7 +380,9 @@ class CfgVehicles
 	#include "2020_coin\nbc_dismounted.hpp"
 	#include "2020_coin\arctic.hpp"
 	#include "2020_coin\arctic_dismounted.hpp"
-	#include "modern_sf\units.hpp"
+	
+	#include "modern_sf\sas.hpp"
+	#include "modern_sf\sbs.hpp"
 };
 
 class CfgGroups

@@ -745,7 +745,7 @@ class TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millenni
 class TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander: TWC_Infantry_1990_Regular_Woodland_SectionCommander
 {
 	displayName = "Vehicle Commander";
-	uniformClass = "UK3CB_BAF_U_Smock_DPMW";
+	backpack = "";
 	engineer = 1;
 	linkedItems[] =
 	{

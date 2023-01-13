@@ -1051,6 +1051,7 @@ class TWC_Infantry_2020_Regular_Woodland_UAVOp: TWC_Infantry_2020_Regular_Woodla
 class TWC_Infantry_2020_Regular_Woodland_Vehicle_Commander: TWC_Infantry_2020_Regular_Woodland_SectionCommander
 {
 	displayName = "Vehicle Commander";
+	backpack = "";
 	engineer = 1;
 	linkedItems[] =
 	{
