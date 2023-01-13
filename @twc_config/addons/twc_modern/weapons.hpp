@@ -7,11 +7,12 @@ class UK3CB_BAF_L85A3_UGL;
 class UK3CB_BAF_L115A3_Ghillie;
 class UK3CB_BAF_L119A1_RIS;
 class UK3CB_BAF_L119A1_UKUGL;
-class arifle_SPAR_01_blk_f;
-class arifle_SPAR_03_blk_f;
-class arifle_SPAR_01_GL_blk_F;
 class UK3CB_BAF_L105A2;
 class UK3CB_BAF_L110A3;
+class UK3CB_BAF_L22A2;
+class CUP_arifle_HK416_Black;
+class CUP_arifle_HK416_AGL_Black;
+class CUP_arifle_HK417_20;
 
 class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 	scope = 1;
@@ -30,6 +31,37 @@ class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 		{
 			item = "UK3CB_underbarrel_acc_grippod";
 			slot = "UnderBarrelSlot";
+		};
+	};
+};
+
+class TWC_Weapon_L85A2_RIS_SUSAT: UK3CB_BAF_L85A2_RIS {
+	scope = 1;
+	class LinkedItems {
+		class LinkedItemsOptic
+		{
+			slot = "CowsSlot";
+			item = "UK3CB_BAF_SUSAT_3D";
+		};
+		class LinkedItemsFrontSideRail
+		{
+			slot = "PointerSlot";
+			item = "cup_acc_llm_black";
+		};
+		class LinkedItemsUnder
+		{
+			item = "UK3CB_underbarrel_acc_grippod";
+			slot = "UnderBarrelSlot";
+		};
+	};
+};
+class TWC_Weapon_L22A2_SUSAT: UK3CB_BAF_L22A2 {
+	scope = 1;
+	class LinkedItems {
+		class LinkedItemsOptic
+		{
+			slot = "CowsSlot";
+			item = "UK3CB_BAF_SUSAT_3D";
 		};
 	};
 };
@@ -147,7 +179,7 @@ class TWC_Weapon_L115A3_Regular_Sniper: UK3CB_BAF_L115A3_Ghillie {
 		};
 	};
 };
-class TWC_Weapon_C8_SF: arifle_SPAR_01_blk_F {
+class TWC_Weapon_C8_SF: CUP_arifle_HK416_Black {
 	displayName = "C8";
 	scope = 1;
 	class LinkedItems {
@@ -165,7 +197,7 @@ class TWC_Weapon_C8_SF: arifle_SPAR_01_blk_F {
 		};
 	};
 };
-class TWC_Weapon_C8_SF_GL: arifle_SPAR_01_GL_blk_F {
+class TWC_Weapon_C8_SF_GL: CUP_arifle_HK416_AGL_Black {
 	displayName = "C8 GL";
 	scope = 1;
 	class LinkedItems {
@@ -183,7 +215,7 @@ class TWC_Weapon_C8_SF_GL: arifle_SPAR_01_GL_blk_F {
 		};
 	};
 };
-class TWC_Weapon_HK417_SF: arifle_SPAR_03_blk_f {
+class TWC_Weapon_HK417_SF: CUP_arifle_HK417_20 {
 	scope = 1;
 	class LinkedItems {
 		class LinkedItemsOptic {
@@ -211,6 +243,10 @@ class TWC_Weapon_L105A2_SF: UK3CB_BAF_L105A2 {
 			slot = "MuzzleSlot";
 			item = "UK3CB_BAF_Silencer_L105A1";
 		};
+		class LinkedItemsFrontSideRail {
+			slot = "PointerSlot";
+			item = "cup_acc_llm_black";
+		};
 	};
 };
 class TWC_Weapon_L110A3_SF: UK3CB_BAF_L110A3 {
@@ -223,6 +259,10 @@ class TWC_Weapon_L110A3_SF: UK3CB_BAF_L110A3 {
 		class LinkedItemsOptic {
 			slot = "CowsSlot";
 			item = "cup_optic_acog_ta01b_rmr_black_pip";
+		};
+		class LinkedItemsFrontSideRail {
+			slot = "PointerSlot";
+			item = "cup_acc_llm_black";
 		};
 	};
 };

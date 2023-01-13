@@ -24,13 +24,11 @@ class TWC_Infantry_2000_Regular_Arctic_SectionCommander: TWC_Infantry_2000_Regul
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_2000_Regular_Woodland_SectionCommander";
 };
 class TWC_Infantry_2000_Regular_Arctic_2iC: TWC_Infantry_2000_Regular_Woodland_2iC
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_2000_Regular_Woodland_2iC";
 };
 
 //Platoon Command
@@ -48,7 +46,6 @@ class TWC_Infantry_2000_Regular_Arctic_Platoon_Medic: TWC_Infantry_2000_Regular_
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_2000_Regular_Woodland_Platoon_Medic";
 };
 class TWC_Infantry_2000_Regular_Arctic_Platoon_CSM: TWC_Infantry_2000_Regular_Woodland_Platoon_CSM
 {
@@ -83,7 +80,6 @@ class TWC_Infantry_2000_Regular_Arctic_Javelin_Ass: TWC_Infantry_2000_Regular_Wo
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_2000_Regular_Woodland_Javelin_Assistant";
 };
 /*class TWC_Infantry_2000_Regular_Arctic_Starstreak_Gunner: TWC_Infantry_2000_Regular_Arctic_Javelin_Gunner
 {
@@ -104,7 +100,6 @@ class TWC_Infantry_2000_Regular_Arctic_Spotter: TWC_Infantry_2000_Regular_Woodla
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
 	uniformClass = "UK3CB_BAF_U_CombatUniform_Arctic_Ghillie_RM";
-	backpack = "TWC_Backpack_2000_Regular_Woodland_Spotter";
 };
 
 //Artillery
@@ -112,19 +107,16 @@ class TWC_Infantry_2000_Regular_Arctic_Artillery_Commander: TWC_Infantry_2000_Re
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_2000_Regular_Woodland_Artillery_Commander";
 };
 class TWC_Infantry_2000_Regular_Arctic_Artillery_Crew: TWC_Infantry_2000_Regular_Woodland_Artillery_Crew
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "UK3CB_BAF_B_Bergen_DPMW_Rifleman_B";
 };
 class TWC_Infantry_2000_Regular_Arctic_FO: TWC_Infantry_2000_Regular_Woodland_FO
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_2000_Regular_Woodland_FO";
 };
 
 //EOD Team
@@ -132,7 +124,6 @@ class TWC_Infantry_2000_Regular_Arctic_EOD_Commander: TWC_Infantry_2000_Regular_
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_2000_Regular_Woodland_EOD_Commander";
 };
 class TWC_Infantry_2000_Regular_Arctic_EOD_Gunner: TWC_Infantry_2000_Regular_Woodland_EOD_Gunner
 {
@@ -145,7 +136,6 @@ class TWC_Infantry_2000_Regular_Arctic_FAC: TWC_Infantry_2000_Regular_Woodland_F
 {
 	CATEGORY(TWC_Infantry_2000_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
-	backpack = "TWC_Backpack_2000_Regular_Woodland_FAC";
 };
 class TWC_Infantry_2000_Regular_Arctic_Helicopter_Pilot: TWC_Infantry_2000_Regular_Woodland_Helicopter_Pilot
 {

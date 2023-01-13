@@ -7,11 +7,15 @@ class TWC_Infantry_Modern_SF_Rifleman: TWC_Infantry_2020_Base
 	CATEGORY(TWC_Infantry_Modern_SF)
 	uniformClass = "CUP_I_B_PARA_Unit_1";
 	backpack = "TWC_Backpack_Modern_SF_Rifleman";
+	class EventHandlers: EventHandlers {
+		init = "(_this select 0) removeItem "ACRE_PRC343";";
+	};
 	linkedItems[] =
 	{
 		"CFP_LBT6094_operator_OGA_OD",
 		"CUP_H_OpsCore_Covered_MCAM_SF",
 		"ItemCompass",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -20,6 +24,7 @@ class TWC_Infantry_Modern_SF_Rifleman: TWC_Infantry_2020_Base
 		"CFP_LBT6094_operator_OGA_OD",
 		"CUP_H_OpsCore_Covered_MCAM_SF",
 		"ItemCompass",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -68,6 +73,24 @@ class TWC_Infantry_Modern_SF_Grenadier: TWC_Infantry_Modern_SF_Rifleman
 {
 	displayName = "Grenadier";
 	backpack = "TWC_Backpack_Modern_SF_Grenadier";
+	linkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
+		"ItemCompass",
+		"ItemAndroid",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
+		"ItemCompass",
+		"ItemAndroid",
+		"itemMap",
+		"ItemWatch"
+	};
 	weapons[]=
 	{
 		"TWC_Weapon_C8_SF_GL",
@@ -89,7 +112,7 @@ class TWC_Infantry_Modern_SF_Grenadier: TWC_Infantry_Modern_SF_Rifleman
 		MAG_8("CUP_30Rnd_556x45_PMAG_BLACK_PULL"),
 		MAG_6("CUP_30Rnd_556x45_PMAG_BLACK_PULL_Tracer_Red"),
 		MAG_2("UK3CB_BAF_9_15Rnd"),
-		MAG_5("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
+		MAG_5("1Rnd_HE_Grenade_Shell"),
 		MAG_4("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
@@ -105,7 +128,7 @@ class TWC_Infantry_Modern_SF_Grenadier: TWC_Infantry_Modern_SF_Rifleman
 		MAG_8("CUP_30Rnd_556x45_PMAG_BLACK_PULL"),
 		MAG_6("CUP_30Rnd_556x45_PMAG_BLACK_PULL_Tracer_Red"),
 		MAG_2("UK3CB_BAF_9_15Rnd"),
-		MAG_5("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
+		MAG_5("1Rnd_HE_Grenade_Shell"),
 		MAG_4("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
@@ -122,6 +145,24 @@ class TWC_Infantry_Modern_SF_Marksman: TWC_Infantry_Modern_SF_Rifleman
 {
 	displayName = "Marksman";
 	backpack = "TWC_Backpack_Modern_SF_Marksman";
+	linkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
+		"ItemCompass",
+		"ItemAndroid",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
+		"ItemCompass",
+		"ItemAndroid",
+		"itemMap",
+		"ItemWatch"
+	};
 	weapons[] =
 	{
 		"TWC_Weapon_HK417_SF",
@@ -165,6 +206,24 @@ class TWC_Infantry_Modern_SF_Autorifleman: TWC_Infantry_Modern_SF_Rifleman
 {
 	displayName = "Autorifleman";
 	backpack = "TWC_Backpack_Modern_SF_Autorifleman";
+	linkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
+		"ItemCompass",
+		"ItemAndroid",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
+		"ItemCompass",
+		"ItemAndroid",
+		"itemMap",
+		"ItemWatch"
+	};
 	weapons[] =
 	{
 		"TWC_Weapon_L110A3_SF",
@@ -249,6 +308,24 @@ class TWC_Infantry_Modern_SF_2iC: TWC_Infantry_Modern_SF_Rifleman
 	displayName = "Team Leader";
 	backpack = "TWC_Backpack_Modern_SF_TeamLead";
 	TWC_isCommandRole = 1;	
+	linkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
+		"ItemCompass",
+		"ItemAndroid",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
+		"ItemCompass",
+		"ItemAndroid",
+		"itemMap",
+		"ItemWatch"
+	};
 	weapons[] =
 	{
 		"TWC_Weapon_C8_SF",
@@ -272,6 +349,24 @@ class TWC_Infantry_Modern_SF_Medic: TWC_Infantry_Modern_SF_Rifleman
 	displayName = "Team Medic";
 	backpack = "TWC_Backpack_Modern_SF_Medic";
 	attendant = 1;
+	linkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
+	respawnLinkedItems[] =
+	{
+		"CFP_LBT6094_operator_OGA_OD",
+		"CUP_H_OpsCore_Covered_MCAM_SF",
+		"ItemCompass",
+		"ItemcTab",
+		"itemMap",
+		"ItemWatch"
+	};
 	weapons[] =
 	{
 		"TWC_Weapon_C8_SF",
@@ -334,7 +429,7 @@ class TWC_Infantry_Modern_SF_FAC: TWC_Infantry_Modern_SF_Grenadier
 		MAG_8("CUP_30Rnd_556x45_PMAG_BLACK_PULL"),
 		MAG_6("CUP_30Rnd_556x45_PMAG_BLACK_PULL_Tracer_Red"),
 		MAG_2("UK3CB_BAF_9_15Rnd"),
-		MAG_5("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
+		MAG_5("1Rnd_HE_Grenade_Shell"),
 		MAG_4("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
@@ -351,7 +446,7 @@ class TWC_Infantry_Modern_SF_FAC: TWC_Infantry_Modern_SF_Grenadier
 		MAG_8("CUP_30Rnd_556x45_PMAG_BLACK_PULL"),
 		MAG_6("CUP_30Rnd_556x45_PMAG_BLACK_PULL_Tracer_Red"),
 		MAG_2("UK3CB_BAF_9_15Rnd"),
-		MAG_5("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
+		MAG_5("1Rnd_HE_Grenade_Shell"),
 		MAG_4("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),

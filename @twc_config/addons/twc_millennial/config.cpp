@@ -256,7 +256,7 @@ class CfgVehicles
 		linkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -264,7 +264,7 @@ class CfgVehicles
 		respawnLinkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -281,14 +281,14 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"TWC_Weapon_L22A1_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"TWC_Weapon_L22A1_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
@@ -310,13 +310,13 @@ class CfgVehicles
 		TWC_isCommandRole = 0;
 		weapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"TWC_Weapon_L22A1_SUSAT",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"TWC_Weapon_L22A1_SUSAT",
 			"Throw",
 			"Put"
 		};
@@ -333,7 +333,7 @@ class CfgVehicles
 		linkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -341,7 +341,7 @@ class CfgVehicles
 		respawnLinkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -358,14 +358,14 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"UK3CB_BAF_L22",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"UK3CB_BAF_L22",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
@@ -387,13 +387,13 @@ class CfgVehicles
 		TWC_isCommandRole = 0;
 		weapons[] =
 		{
-			"UK3CB_BAF_L22",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"UK3CB_BAF_L22",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};

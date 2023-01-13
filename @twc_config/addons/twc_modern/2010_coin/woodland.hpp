@@ -537,14 +537,14 @@ class TWC_Infantry_Modern_COIN_Woodland_Platoon_Medic: TWC_Infantry_Modern_Regul
 	};
 	weapons[] =
 	{
-		"UK3CB_BAF_L85A2",
+		"TWC_Weapon_L85A2_RIS_SUSAT",
 		"UK3CB_BAF_L131A1",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"UK3CB_BAF_L85A2",
+		"TWC_Weapon_L85A2_RIS_SUSAT",
 		"UK3CB_BAF_L131A1",
 		"Throw",
 		"Put"
@@ -1372,7 +1372,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Vehicle_Commander: TWC_Infantry_Modern_R
 	};
 	weapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"UK3CB_BAF_L131A1",
 		"ACE_Vector",
 		"Throw",
@@ -1380,7 +1380,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Vehicle_Commander: TWC_Infantry_Modern_R
 	};
 	respawnweapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"UK3CB_BAF_L131A1",
 		"ACE_Vector",
 		"Throw",
@@ -1420,17 +1420,15 @@ class TWC_Infantry_Modern_COIN_Woodland_Vehicle_Crew: TWC_Infantry_Modern_Regula
 	};
 	weapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"UK3CB_BAF_L131A1",
-		"ACE_Vector",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"UK3CB_BAF_L131A1",
-		"ACE_Vector",
 		"Throw",
 		"Put"
 	};
