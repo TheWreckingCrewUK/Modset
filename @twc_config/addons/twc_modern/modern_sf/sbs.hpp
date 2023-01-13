@@ -4,7 +4,7 @@ class TWC_Infantry_Modern_SF_Diver_Rifleman: TWC_Infantry_2020_Base
 {
 	scope = 2;
 	displayName = "Rifleman";
-	CATEGORY(TWC_Infantry_Modern_SF_Diver)
+	CATEGORY(TWC_Infantry_Modern_SF)
 	uniformClass = "CUP_I_B_PARA_Unit_1";
 	backpack = "TWC_Backpack_Modern_SF_Diver_Rifleman";
 	class EventHandlers: EventHandlers {
