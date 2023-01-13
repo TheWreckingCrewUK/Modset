@@ -7,12 +7,12 @@ class UK3CB_BAF_L85A3_UGL;
 class UK3CB_BAF_L115A3_Ghillie;
 class UK3CB_BAF_L119A1_RIS;
 class UK3CB_BAF_L119A1_UKUGL;
-class CUP_arifle_HK416_Black;
-class CUP_arifle_HK416_AGL_Black;
-class CUP_arifle_HK417_20;
 class UK3CB_BAF_L105A2;
 class UK3CB_BAF_L110A3;
 class UK3CB_BAF_L22A2;
+class CUP_arifle_HK416_Black;
+class CUP_arifle_HK416_AGL_Black;
+class CUP_arifle_HK417_20;
 
 class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 	scope = 1;
