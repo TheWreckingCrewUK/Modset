@@ -42,6 +42,14 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 1;
 	};
+
+	class TWC_USMC_Modern {
+		displayName = "TWC Operations USMC - Modern";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
+	};
 	
 	class TWC_USA_CW {
 		displayName = "TWC Operations USA - Cold War";
@@ -165,6 +173,9 @@ class CfgVehicles {
 
 	#include "modern\units.hpp"
 	#include "modern\backpacks.hpp"
+
+	#include "marines\units.hpp"
+	#include "marines\backpacks.hpp"
 	
 	#include "coldwar\units.hpp"
 	#include "coldwar\backpacks.hpp"

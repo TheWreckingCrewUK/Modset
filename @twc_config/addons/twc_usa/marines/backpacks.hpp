@@ -1,5 +1,5 @@
-class CUP_B_USPack_SL_OEFCP;
-	class TWC_Backpack_USA_Modern_SquadLeader: CUP_B_USPack_SL_OEFCP {
+class CUP_B_USMC_MOLLE;
+	class TWC_Backpack_USMC_Modern_SquadLeader: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportItems {
@@ -15,7 +15,7 @@ class CUP_B_USPack_SL_OEFCP;
 		};
 	};
 	
-	class TWC_Backpack_USA_Modern_TeamLeader: CUP_B_USPack_SL_OEFCP {
+	class TWC_Backpack_USMC_Modern_TeamLeader: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {
@@ -25,10 +25,9 @@ class CUP_B_USPack_SL_OEFCP;
 			ADD_MAGA(CUP_HandGrenade_M67,4);
 			ADD_MAGA(SmokeShell,3);
 		};
-		
 	};
 	
-	class TWC_Backpack_USA_Modern_Medic: CUP_B_USPack_SL_OEFCP {
+	class TWC_Backpack_USMC_Modern_Medic: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportItems {
@@ -44,5 +43,33 @@ class CUP_B_USPack_SL_OEFCP;
 			ADD_ITEM(ACE_tourniquet,4);
 			ADD_ITEM(ACE_personalAidKit,1);
 			ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		};
+	};
+	class TWC_Backpack_USMC_Modern_AR: CUP_B_USMC_MOLLE {
+		scope = 1;
+		scopeArsenal = 1;
+		class TransportMagazines {
+			ADD_MAGA(CUP_200Rnd_TE4_Red_Tracer_556x45_M249,5);
+			ADD_MAGA(CUP_HandGrenade_M67,2);
+			ADD_MAGA(SmokeShell,3);
+		};
+	};
+		class TWC_Backpack_USMC_Modern_AssMG: CUP_B_USMC_MOLLE {
+		scope = 1;
+		scopeArsenal = 1;
+		class TransportMagazines {
+			ADD_MAGA(150Rnd_762x51_Box,5);
+			ADD_MAGA(CUP_HandGrenade_M67,2);
+			ADD_MAGA(SmokeShell,3);
+		};
+	};
+	class TWC_Backpack_USMC_Modern_Breacher: CUP_B_USMC_MOLLE {
+		scope = 1;
+		scopeArsenal = 1;
+		class TransportMagazines {
+			ADD_MAGA(CUP_8Rnd_B_Beneli_74Slug,8);
+			ADD_MAGA(CUP_8Rnd_B_Beneli_74Pellets,8);
+			ADD_MAGA(CUP_HandGrenade_M67,2);
+			ADD_MAGA(SmokeShell,3);
 		};
 	};
