@@ -18,6 +18,9 @@ class CUP_B_USMC_MOLLE;
 	class TWC_Backpack_USMC_Modern_TeamLeader: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
+		class TransportItems {
+			ADD_ITEM(ACRE_PRC148,1);
+		};
 		class TransportMagazines {
 			ADD_MAGA(CUP_30Rnd_556x45_Stanag,12);
 			ADD_MAGA(CUP_30Rnd_556x45_Stanag_Tracer_Red,6);

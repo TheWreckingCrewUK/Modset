@@ -463,22 +463,24 @@ class CUP_B_FR_Soldier_TL_DES;
 		};
 		weapons[] =
 	{
-		"TWC_Weapon_M4_SF",
+		"CUP_arifle_M4A1_GL_Holo_Laser",
 		"CUP_hgun_Mk23",
 		"Binocular"
 	};
 		respawnweapons[] =
 	{
-		"TWC_Weapon_M4_SF",
+		"CUP_arifle_M4A1_GL_Holo_Laser",
 		"CUP_hgun_Mk23",
 		"Binocular"
 	};
 		items[] = {
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"cup_muzzle_snds_m16"
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"cup_muzzle_snds_m16"
 		};
 
 		magazines[] =

@@ -76,7 +76,7 @@ class CfgVehicles {
 
 	#define ITEMS(RADIO,ITEMS) RADIO,ITEMS
 	#define CW_ITEMS "ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
-	#define MODERN_ITEMS ITEMS("ACRE_PRC343",CW_ITEMS)
+	#define MODERN_ITEMS ITEMS("ACRE_PRC148",CW_ITEMS)
 	#define MAG_2(a) a, a
 	#define MAG_3(a) a, a, a
 	#define MAG_4(a) a, a, a, a
