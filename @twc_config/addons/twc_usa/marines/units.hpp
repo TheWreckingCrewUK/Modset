@@ -2,11 +2,25 @@ class CUP_B_USMC_Soldier_SL_des;
 	class TWC_Infantry_USMC_Modern_SquadLeader: CUP_B_USMC_Soldier_SL_des {
 		backpack = "TWC_Backpack_USMC_Modern_SquadLeader" ;
 		faction = "TWC_USMC_Modern";
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Squad Leader";
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
+		weapons[] =
+	{
+		"CUP_arifle_M16A4_ACOG_Laser",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
+		respawnweapons[] =
+	{
+		"CUP_arifle_M16A4_ACOG_Laser",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
 		items[] = {
 			MEDICAL_LOADOUT
 		};
@@ -17,11 +31,6 @@ class CUP_B_USMC_Soldier_SL_des;
 		{
 			MAG_3("CUP_30Rnd_556x45_Stanag"),
 			MAG_2("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
-			MAG_3("CUP_1Rnd_HEDP_M203"),
-			MAG_2("CUP_1Rnd_SmokeGreen_M203"),
-			MAG_2("CUP_1Rnd_SmokeYellow_M203"),
-			MAG_2("CUP_1Rnd_SmokeRed_M203"),
-			MAG_2("CUP_1Rnd_Smoke_M203"),
 			"CUP_HandGrenade_M67",
 			"SmokeShellBlue",
 			"SmokeShellOrange",
@@ -32,11 +41,6 @@ class CUP_B_USMC_Soldier_SL_des;
 		{
 			MAG_3("CUP_30Rnd_556x45_Stanag"),
 			MAG_2("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
-			MAG_3("CUP_1Rnd_HEDP_M203"),
-			MAG_2("CUP_1Rnd_SmokeGreen_M203"),
-			MAG_2("CUP_1Rnd_SmokeYellow_M203"),
-			MAG_2("CUP_1Rnd_SmokeRed_M203"),
-			MAG_2("CUP_1Rnd_Smoke_M203"),
 			"CUP_HandGrenade_M67",
 			"SmokeShellBlue",
 			"SmokeShellOrange",
@@ -59,7 +63,7 @@ class CUP_B_USMC_Soldier_TL_des;
 	class TWC_Infantry_USMC_Modern_TeamLeader: CUP_B_USMC_Soldier_TL_des {
 		backpack = "TWC_Backpack_USMC_Modern_TeamLeader";
 		faction = "TWC_USMC_Modern";
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Team Leader";
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -80,6 +84,11 @@ class CUP_B_USMC_Soldier_TL_des;
 			MAG_3("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
 			MAG_2("CUP_15Rnd_9x19_M9"),
 			MAG_2("CUP_HandGrenade_M67"),
+			MAG_5("CUP_1Rnd_HEDP_M203"),
+			MAG_2("CUP_1Rnd_SmokeGreen_M203"),
+			MAG_2("CUP_1Rnd_SmokeYellow_M203"),
+			MAG_2("CUP_1Rnd_SmokeRed_M203"),
+			MAG_2("CUP_1Rnd_Smoke_M203"),
 			"SmokeShellRed",
 			"SmokeShellYellow",
 			"SmokeShellGreen",
@@ -91,6 +100,11 @@ class CUP_B_USMC_Soldier_TL_des;
 			MAG_3("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
 			MAG_2("CUP_15Rnd_9x19_M9"),
 			MAG_2("CUP_HandGrenade_M67"),
+			MAG_5("CUP_1Rnd_HEDP_M203"),
+			MAG_2("CUP_1Rnd_SmokeGreen_M203"),
+			MAG_2("CUP_1Rnd_SmokeYellow_M203"),
+			MAG_2("CUP_1Rnd_SmokeRed_M203"),
+			MAG_2("CUP_1Rnd_Smoke_M203"),
 			"SmokeShellRed",
 			"SmokeShellYellow",
 			"SmokeShellGreen",
@@ -111,13 +125,24 @@ class CUP_B_USMC_Soldier_TL_des;
 class CUP_B_USMC_Soldier_AR_des;	
 	class TWC_Infantry_USMC_Modern_AutoRifleman: CUP_B_USMC_Soldier_AR_des {
 		faction = "TWC_USMC_Modern";
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Autorifleman";
 		backpack = "TWC_Backpack_USMC_Modern_AR";
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
-		
+		weapons[] =
+	{
+		"CUP_lmg_M249_ElcanM145",
+		"Throw",
+		"Put"
+	};
+		respawnweapons[] =
+	{
+		"CUP_lmg_M249_ElcanM145",
+		"Throw",
+		"Put"
+	};
 		items[] = {
 			MEDICAL_LOADOUT
 		};
@@ -125,8 +150,6 @@ class CUP_B_USMC_Soldier_AR_des;
 		respawnItems[] = {
 			MEDICAL_LOADOUT
 		};
-		
-		
 		magazines[] =
 		{
 			MAG_2("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
@@ -154,8 +177,9 @@ class CUP_B_USMC_Soldier_AR_des;
 class CUP_B_USMC_Soldier_GL_des;	
 	class TWC_Infantry_USMC_Modern_Grenadier: CUP_B_USMC_Soldier_GL_des {
 		faction = "TWC_USMC_Modern";
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Grenadier";
+		backpack = "TWC_Backpack_USMC_Modern_Grenadier";
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
@@ -198,56 +222,26 @@ class CUP_B_USMC_Soldier_GL_des;
 class CUP_B_USMC_Soldier_LAT_des;	
 	class TWC_Infantry_USMC_Modern_Rifleman: CUP_B_USMC_Soldier_LAT_des {
 		faction = "TWC_USMC_Modern";
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Rifleman";
+		backpack = "TWC_Backpack_USMC_Modern_Rifleman";
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
-		
-		items[] = {
-			MEDICAL_LOADOUT
-		};
-
-		respawnItems[] = {
-			MEDICAL_LOADOUT
-		};
-		
-		magazines[] =
-		{
-			MAG_5("CUP_30Rnd_556x45_Stanag"),
-			MAG_3("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
-			MAG_3("CUP_HandGrenade_M67"),
-			MAG_3("SmokeShell")
-		};
-		respawnmagazines[] =
-		{
-			MAG_5("CUP_30Rnd_556x45_Stanag"),
-			MAG_3("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
-			MAG_3("CUP_HandGrenade_M67"),
-			MAG_3("SmokeShell")
-		};
-		
-		nightItems[] = {
-			MAG_2("Chemlight_green"),
-			"ACE_Flashlight_MX991",
-			"ACE_Flashlight_Maglite_ML300L"
-		};
-
-		nightLinkedItems[] = {
-			"twc_nightvision_gen3"
-		};
+		weapons[] =
+	{
+		"CUP_arifle_M16A4_ACOG_Laser",
+		"CUP_launch_M136",
+		"Throw",
+		"Put"
 	};
-	
-	class CUP_B_USMC_Soldier_AT_des;	
-	class TWC_Infantry_USMC_Modern_AT: CUP_B_USMC_Soldier_AT_des {
-		faction = "TWC_USMC_Modern";
-		backpack = "TWC_Backpack_USMC_Modern_AT" ;
-		CATEGORY(TWC_Infantry_Regular_Woodland)
-		displayName = "Rifleman AT";
-		class EventHandlers: EventHandlers {
-			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
-		};
-		
+		respawnweapons[] =
+	{
+		"CUP_arifle_M16A4_ACOG_Laser",
+		"CUP_launch_M136",
+		"Throw",
+		"Put"
+	};
 		items[] = {
 			MEDICAL_LOADOUT
 		};
@@ -255,6 +249,7 @@ class CUP_B_USMC_Soldier_LAT_des;
 		respawnItems[] = {
 			MEDICAL_LOADOUT
 		};
+		
 		magazines[] =
 		{
 			MAG_5("CUP_30Rnd_556x45_Stanag"),
@@ -284,12 +279,23 @@ class CUP_B_USMC_Soldier_LAT_des;
 	class TWC_Infantry_USMC_Modern_MG: CUP_B_USMC_Soldier_MG_des {
 		faction = "TWC_USMC_Modern";
 		backpack = "TWC_Backpack_USMC_Modern_AssMG" ;
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Machine Gunner";
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
-		
+		weapons[] =
+	{
+		"CUP_lmg_M240",
+		"Throw",
+		"Put"
+	};
+		respawnweapons[] =
+	{
+		"CUP_lmg_M240",
+		"Throw",
+		"Put"
+	};
 		items[] = {
 			MEDICAL_LOADOUT
 		};
@@ -325,7 +331,7 @@ class CUP_B_USMC_Soldier_LAT_des;
 		faction = "TWC_USMC_Modern";
 		displayName = "Breacher";
 		backpack = "TWC_Backpack_USMC_Modern_Breacher" ;
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		CATEGORY(TWC_Infantry_Regular_Desert)
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
@@ -390,17 +396,19 @@ class CUP_B_USMC_Soldier_LAT_des;
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		weapons[] =
-		{
-			"CUP_arifle_M16A4_Aim_Laser",
-			"Throw",
-			"Put"
-		};
+	{
+		"CUP_arifle_M16A4_ACOG_Laser",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
 		respawnweapons[] =
-		{
-			"CUP_arifle_M16A4_Aim_Laser",
-			"Throw",
-			"Put"
-		};
+	{
+		"CUP_arifle_M16A4_ACOG_Laser",
+		"Binocular",
+		"Throw",
+		"Put"
+	};
 		items[] = {
 			MEDICAL_LOADOUT
 		};
@@ -443,4 +451,187 @@ class CUP_B_USMC_Soldier_LAT_des;
 		displayName = "Assistant Autorifleman";
 		attendant = 1;
 		backpack = "TWC_Backpack_USMC_Modern_AR" ;
+	};
+class CUP_B_FR_Soldier_TL_DES;	
+	class TWC_Infantry_USMC_Modern_FRTeamLeader: CUP_B_FR_Soldier_TL_DES {
+		backpack = "TWC_Backpack_USMC_Modern_TeamLeader";
+		faction = "TWC_USMC_Modern";
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		displayName = "Force Recon Team Leader";
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+		};
+		weapons[] =
+	{
+		"TWC_Weapon_M4_SF",
+		"CUP_hgun_Mk23",
+		"Binocular"
+	};
+		respawnweapons[] =
+	{
+		"TWC_Weapon_M4_SF",
+		"CUP_hgun_Mk23",
+		"Binocular"
+	};
+		items[] = {
+			MEDICAL_LOADOUT
+		};
+
+		respawnItems[] = {
+			MEDICAL_LOADOUT
+		};
+
+		magazines[] =
+		{
+			MAG_5("CUP_30Rnd_556x45_Stanag"),
+			MAG_3("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
+			MAG_2("CUP_17Rnd_9x19_glock17"),
+			MAG_2("CUP_HandGrenade_M67"),
+			MAG_5("CUP_1Rnd_HEDP_M203"),
+			MAG_2("CUP_1Rnd_SmokeGreen_M203"),
+			MAG_2("CUP_1Rnd_SmokeYellow_M203"),
+			MAG_2("CUP_1Rnd_SmokeRed_M203"),
+			MAG_2("CUP_1Rnd_Smoke_M203"),
+			"SmokeShellRed",
+			"SmokeShellYellow",
+			"SmokeShellGreen",
+			MAG_2("SmokeShell")
+		};
+		respawnmagazines[] =
+		{
+			MAG_5("CUP_30Rnd_556x45_Stanag"),
+			MAG_3("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
+			MAG_2("CUP_17Rnd_9x19_glock17"),
+			MAG_2("CUP_HandGrenade_M67"),
+			MAG_5("CUP_1Rnd_HEDP_M203"),
+			MAG_2("CUP_1Rnd_SmokeGreen_M203"),
+			MAG_2("CUP_1Rnd_SmokeYellow_M203"),
+			MAG_2("CUP_1Rnd_SmokeRed_M203"),
+			MAG_2("CUP_1Rnd_Smoke_M203"),
+			"SmokeShellRed",
+			"SmokeShellYellow",
+			"SmokeShellGreen",
+			MAG_2("SmokeShell")
+		};
+		
+		nightItems[] = {
+			MAG_2("Chemlight_green"),
+			"ACE_Flashlight_MX991",
+			"ACE_Flashlight_Maglite_ML300L"
+		};
+
+		nightLinkedItems[] = {
+			"twc_nightvision_gen3"
+		};
+	};
+	class TWC_Infantry_USMC_Modern_FRGrenadier: TWC_Infantry_USMC_Modern_FRTeamLeader {
+		faction = "TWC_USMC_Modern";
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		displayName = "Force Recon Grenadier";
+		backpack = "";
+	};
+	class TWC_Infantry_USMC_Modern_FRRifleman: TWC_Infantry_USMC_Modern_FRGrenadier {
+		faction = "TWC_USMC_Modern";
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		displayName = "Force Recon Rifleman";
+		weapons[] =
+	{
+		"CUP_arifle_M4A1_Standard_Black_ACOG_Laser_snds",
+		"CUP_hgun_Mk23",
+		"Binocular"
+	};
+		respawnweapons[] =
+	{
+		"CUP_arifle_M4A1_Standard_Black_ACOG_Laser_snds",
+		"CUP_hgun_Mk23",
+		"Binocular"
+	};
+		magazines[] =
+		{
+			MAG_5("CUP_30Rnd_556x45_Stanag"),
+			MAG_3("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
+			MAG_2("CUP_17Rnd_9x19_glock17"),
+			MAG_2("CUP_HandGrenade_M67"),
+			MAG_2("SmokeShell")
+		};
+		respawnmagazines[] =
+		{
+			MAG_5("CUP_30Rnd_556x45_Stanag"),
+			MAG_3("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
+			MAG_2("CUP_17Rnd_9x19_glock17"),
+			MAG_2("CUP_HandGrenade_M67"),
+			MAG_2("SmokeShell")
+		};
+	};
+	class CUP_B_FR_Soldier_Marksman_DES;	
+	class TWC_Infantry_USMC_Modern_FRMarksman: CUP_B_FR_Soldier_Marksman_DES {
+		faction = "TWC_USMC_Modern";
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		displayName = "Force Recon Marksman";
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+		};
+		items[] = {
+			MEDICAL_LOADOUT
+		};
+
+		respawnItems[] = {
+			MEDICAL_LOADOUT
+		};
+
+		magazines[] =
+		{
+			MAG_8("CUP_20Rnd_762x51_B_M110"),
+			MAG_2("CUP_17Rnd_9x19_glock17"),
+			MAG_2("CUP_HandGrenade_M67"),
+			MAG_2("SmokeShell")
+		};
+		respawnmagazines[] =
+		{
+			MAG_8("CUP_20Rnd_762x51_B_M110"),
+			MAG_2("CUP_17Rnd_9x19_glock17"),
+			MAG_2("CUP_HandGrenade_M67"),
+			MAG_2("SmokeShell")
+		};
+		
+		nightItems[] = {
+			MAG_2("Chemlight_green"),
+			"ACE_Flashlight_MX991",
+			"ACE_Flashlight_Maglite_ML300L"
+		};
+
+		nightLinkedItems[] = {
+			"twc_nightvision_gen3"
+		};
+	};
+		class TWC_Infantry_USMC_Modern_FRAutoRifleman: TWC_Infantry_USMC_Modern_FRRifleman {
+		faction = "TWC_USMC_Modern";
+		CATEGORY(TWC_Infantry_Regular_Desert)
+		displayName = "Force Recon AutoRifleman";
+		weapons[] = 
+	{
+		"TWC_Weapon_Minimi_SF",
+		"CUP_hgun_Mk23",
+		"Binocular"
+	};
+		respawnweapons[] =
+	{
+		"TWC_Weapon_Minimi_SF",
+		"CUP_hgun_Mk23",
+		"Binocular"
+	};
+		magazines[] =
+		{
+			MAG_5("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
+			MAG_2("CUP_17Rnd_9x19_glock17"),
+			MAG_2("CUP_HandGrenade_M67"),
+			MAG_2("SmokeShell")
+		};
+		respawnmagazines[] =
+		{
+			MAG_5("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
+			MAG_2("CUP_17Rnd_9x19_glock17"),
+			MAG_2("CUP_HandGrenade_M67"),
+			MAG_2("SmokeShell")
+		};
 	};
