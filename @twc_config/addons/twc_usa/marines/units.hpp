@@ -22,10 +22,10 @@ class CUP_B_USMC_Soldier_SL_des;
 		"Put"
 	};
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		magazines[] =
 		{
@@ -70,11 +70,11 @@ class CUP_B_USMC_Soldier_TL_des;
 		};
 		
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		
 		
@@ -144,11 +144,11 @@ class CUP_B_USMC_Soldier_AR_des;
 		"Put"
 	};
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		magazines[] =
 		{
@@ -185,11 +185,11 @@ class CUP_B_USMC_Soldier_GL_des;
 		};
 		
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		magazines[] =
 		{
@@ -243,11 +243,11 @@ class CUP_B_USMC_Soldier_LAT_des;
 		"Put"
 	};
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		
 		magazines[] =
@@ -297,11 +297,11 @@ class CUP_B_USMC_Soldier_LAT_des;
 		"Put"
 	};
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		magazines[] =
 		{
@@ -350,11 +350,11 @@ class CUP_B_USMC_Soldier_LAT_des;
 		"Put"
 	};
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		magazines[] =
 		{
@@ -410,11 +410,11 @@ class CUP_B_USMC_Soldier_LAT_des;
 		"Put"
 	};
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		
 		magazines[] =
@@ -474,12 +474,12 @@ class CUP_B_FR_Soldier_TL_DES;
 		"Binocular"
 	};
 		items[] = {
-			MEDICAL_LOADOUT,
+			MODERN_ITEMS,
 			"cup_muzzle_snds_m16"
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT,
+			MODERN_ITEMS,
 			"cup_muzzle_snds_m16"
 		};
 
@@ -574,11 +574,11 @@ class CUP_B_FR_Soldier_TL_DES;
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		magazines[] =
