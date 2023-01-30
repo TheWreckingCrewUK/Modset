@@ -13,6 +13,7 @@ class UK3CB_BAF_L22A2;
 class CUP_arifle_HK416_Black;
 class CUP_arifle_HK416_AGL_Black;
 class CUP_arifle_HK417_20;
+class law_starstreak2_lta_olive;
 
 class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 	scope = 1;
@@ -264,5 +265,13 @@ class TWC_Weapon_L110A3_SF: UK3CB_BAF_L110A3 {
 			slot = "PointerSlot";
 			item = "cup_acc_llm_black";
 		};
+	};
+};
+class  TWC_Weapon_Starstreak2_lta_olive: law_starstreak2_lta_olive
+{
+	scope = 2;
+	class weaponSlotsInfo {
+		mass = 165;
+		allowedSlots[] = {901};
 	};
 };

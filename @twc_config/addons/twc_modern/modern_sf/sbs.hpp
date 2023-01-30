@@ -8,7 +8,7 @@ class TWC_Infantry_Modern_SF_Diver_Rifleman: TWC_Infantry_2020_Base
 	uniformClass = "CUP_I_B_PARA_Unit_1";
 	backpack = "TWC_Backpack_Modern_SF_Diver_Rifleman";
 	class EventHandlers: EventHandlers {
-		init = "(_this select 0) removeItem "ACRE_PRC343";";
+		init = "(_this select 0) removeItem 'ACRE_PRC343';";
 	};
 	linkedItems[] =
 	{

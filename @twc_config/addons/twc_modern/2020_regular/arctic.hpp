@@ -86,7 +86,7 @@ class TWC_Infantry_2020_Regular_Arctic_Javelin_Ass: TWC_Infantry_2020_Regular_Wo
 	CATEGORY(TWC_Infantry_2020_Regular_Arctic)
 	uniformClass = "CUP_I_B_PMC_Unit_34";
 };
-/*class TWC_Infantry_2020_Regular_Arctic_Starstreak_Gunner: TWC_Infantry_2020_Regular_Woodland_Starstreak_Gunner
+class TWC_Infantry_2020_Regular_Arctic_Starstreak_Gunner: TWC_Infantry_2020_Regular_Woodland_Starstreak_Gunner
 {
 	CATEGORY(TWC_Infantry_2020_Regular_Arctic)
 	uniformClass = "CUP_I_B_PMC_Unit_34";
@@ -97,7 +97,7 @@ class TWC_Infantry_2020_Regular_Arctic_Starstreak_Ass: TWC_Infantry_2020_Regular
 	CATEGORY(TWC_Infantry_2020_Regular_Arctic)
 	uniformClass = "CUP_I_B_PMC_Unit_34";
 	
-};*/
+};
 
 //Sniper Team
 class TWC_Infantry_2020_Regular_Arctic_Sniper: TWC_Infantry_2020_Regular_Woodland_Sniper

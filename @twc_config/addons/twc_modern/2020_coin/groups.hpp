@@ -1,4 +1,4 @@
-#define 2020_COIN_GROUPS(CAMO) \
+#define COIN_GROUPS(CAMO) \
 class TWC_Groups_2020_COIN_##CAMO \
 { \
 	name = __EVAL("Infantry (2020s, COIN, " + #CAMO + ")"); \
@@ -423,6 +423,6 @@ class TWC_Groups_2020_COIN_Dismounted_##CAMO \
 		}; \
 	}; \
 };
-2020_COIN_GROUPS(Woodland)
-2020_COIN_GROUPS(NBC)
-2020_COIN_GROUPS(Arctic)
+COIN_GROUPS(Woodland)
+COIN_GROUPS(NBC)
+COIN_GROUPS(Arctic)

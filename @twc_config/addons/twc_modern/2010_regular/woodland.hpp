@@ -512,6 +512,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Company_Sergeant: TWC_Infantry_Modern
 class TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Javelin Gunner";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Javelin";
 	weapons[] =
 	{
 		"TWC_Weapon_L85A2_RIS_ELCAN3D",
@@ -542,7 +543,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner: TWC_Infantry_Modern_R
 class TWC_Infantry_Modern_Regular_Woodland_Javelin_Ass: TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner
 {
 	displayName = "Javelin Assistant";
-	backpack = "TWC_Backpack_Modern_Regular_Woodland_Javelin_Assistant";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Javelin";
 	weapons[] =
 	{
 		"TWC_Weapon_L85A2_RIS_ELCAN3D",
@@ -558,14 +559,30 @@ class TWC_Infantry_Modern_Regular_Woodland_Javelin_Ass: TWC_Infantry_Modern_Regu
 		"Put"
 	};
 };
-/*class TWC_Infantry_Modern_Regular_Woodland_Starstreak_Gunner: TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner
+class TWC_Infantry_Modern_Regular_Woodland_Starstreak_Gunner: TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner
 {
 	displayName = "Starstreak Gunner";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Starstreak_Gunner";
+	weapons[] =
+	{
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"TWC_Weapon_Starstreak2_lta_olive",
+		"Throw",
+		"Put"
+	};
+	respawnweapons[] =
+	{
+		"TWC_Weapon_L85A2_RIS_ELCAN3D",
+		"TWC_Weapon_Starstreak2_lta_olive",
+		"Throw",
+		"Put"
+	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Starstreak_Ass: TWC_Infantry_Modern_Regular_Woodland_Starstreak_Gunner
 {
 	displayName = "Starstreak Assistant";
-};*/
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Starstreak_Assistant";
+};
 
 //Sniper Team
 class TWC_Infantry_Modern_Regular_Woodland_Sniper: TWC_Infantry_Modern_Regular_Woodland_Rifleman

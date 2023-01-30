@@ -98,21 +98,33 @@ class TWC_Backpack_2020_Regular_Woodland_Platoon_Mortar: mpx_daysack
 };
 
 //Attachments
-class TWC_Backpack_2020_Regular_Woodland_Javelin_Assistant: mpx_daysack
+class TWC_Backpack_2020_Regular_Woodland_Javelin: UK3CB_BAF_B_Carryall_MTP
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 600;
 	class TransportWeapons {
 		ADD_WEAP(UK3CB_BAF_Javelin_Slung_Tube,1);
 	};
 };
-/*class TWC_Backpack_2020_Regular_Woodland_Starstreak_Assistant: mpx_daysack
+class TWC_Backpack_2020_Regular_Woodland_Starstreak_Gunner: UK3CB_BAF_B_Carryall_MTP
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 600;
-};*/
+	class TransportItems {
+		ADD_ITEM(law_starstreak2_cluItem_olive,1);
+	};
+	class TransportWeapons{
+		ADD_WEAP(TWC_Weapon_Starstreak2_lta_olive,1);
+	};
+};
+class TWC_Backpack_2020_Regular_Woodland_Starstreak_Assistant: UK3CB_BAF_B_Carryall_MTP
+{
+	scope = 1;
+	scopeArsenal = 1;
+	class TransportWeapons {
+		ADD_WEAP(TWC_Weapon_Starstreak2_lta_olive,2);
+	};
+};
 class TWC_Backpack_2020_Regular_Woodland_Spotter: mpx_daysack10
 {
 	scope = 1;

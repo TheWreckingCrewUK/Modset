@@ -8,12 +8,14 @@ class TWC_Infantry_2020_COIN_Woodland_Rifleman: TWC_Infantry_2020_Regular_Woodla
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"grad_paceCountBeads_functions_paceCountBeads"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"grad_paceCountBeads_functions_paceCountBeads"
 	};
 	weapons[] =
 	{

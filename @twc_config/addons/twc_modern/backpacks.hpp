@@ -5,9 +5,11 @@
 class UK3CB_BAF_B_Bergen_MTP_SL_L_A;
 class UK3CB_BAF_B_Bergen_MTP_JTAC_H_A;
 class UK3CB_BAF_B_Bergen_MTP_Medic_L_A;
+class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A;
 class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C;
 class UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D;
 class UK3CB_BAF_B_Bergen_MTP_PointMan_L_A;
+class UK3CB_BAF_B_Carryall_MTP;
 class mpx_camel;
 class mpx_camel2;
 class mpx_daysack;
