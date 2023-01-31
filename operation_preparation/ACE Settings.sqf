@@ -77,7 +77,7 @@ force force ace_cookoff_enable = 2;
 force force ace_cookoff_enableAmmobox = false;
 force force ace_cookoff_enableAmmoCookoff = false;
 force force ace_cookoff_enableFire = true;
-force force ace_cookoff_probabilityCoef = 1;
+force force ace_cookoff_probabilityCoef = 0;
 
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 2;
