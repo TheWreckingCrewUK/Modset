@@ -105,3 +105,34 @@ EM_blacklist_obj = [
 		1 enableChannel false;
 	}] call CBA_fnc_waitUntilAndExecute;
 }] call CBA_fnc_addEventHandler;
+
+//Enables and disables UI. We need UI in vehicles, but player do not
+player addEventHandler ["GetInMan", { 
+	params ["_vehicle", "_role", "_unit", "_turret"]; 
+ 
+	[]spawn {sleep 1; showHud [true,true,true,true,true,false,false,true,true,true,false]; sleep 1; showHud [true,true,true,true,true,false,false,true,true,true,false];};
+}];
+
+player addEventHandler ["GetOutMan", { 
+	params ["_vehicle", "_role", "_unit", "_turret"]; 
+ 
+	[] spawn {sleep 1; showHud [true,false,true,true,true,false,false,true,true,true,false]};
+}];
+
+[] spawn {
+	waitUntil {!isNull (findDisplay 46)};
+	twc_weaponInfoEH = (findDisplay 46) displayAddEventHandler ["KeyUP", {
+		params ["_displayOrControl", "_key", "_shift", "_ctrl", "_alt"];
+		if(_key in [201,209]) then{
+			if(isNull objectParent player)then{
+				[format["%1", currentZeroing player], true, 0.5, 0] call ace_common_fnc_displayText
+			};
+		};
+		if(_key == 33)then{
+			_mode = currentWeaponMode player;
+			if(_mode in ["Single", "Burst", "FullAuto"])then{
+				[_mode, true, 0.5, 0] call ace_common_fnc_displayText
+			};
+		};
+	}];
+};
