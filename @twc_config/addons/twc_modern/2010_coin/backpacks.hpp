@@ -29,6 +29,9 @@ class TWC_Backpack_Modern_COIN_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
 	scopeArsenal = 1;
+	class TransportItems{
+		ADD_ITEM(ACE_SpareBarrel,1);
+	};
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, 6);
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, 2);

@@ -141,6 +141,16 @@ class TWC_Infantry_2020_Regular_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_
 		"Throw",
 		"Put"
 	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel"
+	};
 	magazines[] =
 	{
 		MAG_2("UK3CB_BAF_762_100Rnd"),
@@ -191,6 +201,16 @@ class TWC_Infantry_2020_Regular_Woodland_Marksman: TWC_Infantry_2020_Regular_Woo
 		"ACE_Vector",
 		"Throw",
 		"Put"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel"
 	};
 	magazines[] =
 	{

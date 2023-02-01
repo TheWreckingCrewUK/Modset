@@ -115,6 +115,16 @@ class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Reg
 		"itemMap",
 		"ItemWatch"
 	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel"
+	};
 	weapons[] =
 	{
 		"TWC_Weapon_L110A2_ELCAN3D",
@@ -158,6 +168,16 @@ class TWC_Infantry_Modern_Regular_Woodland_MG: TWC_Infantry_Modern_Regular_Woodl
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel"
 	};
 	weapons[] =
 	{

@@ -119,12 +119,14 @@ class TWC_Infantry_Modern_COIN_Woodland_Autorifleman: TWC_Infantry_Modern_Regula
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel"
 	};
 	weapons[] =
 	{
@@ -177,12 +179,14 @@ class TWC_Infantry_Modern_COIN_Woodland_MG: TWC_Infantry_Modern_Regular_Woodland
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel"
 	};
 	weapons[] =
 	{
