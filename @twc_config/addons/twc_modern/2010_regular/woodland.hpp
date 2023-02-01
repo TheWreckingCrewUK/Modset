@@ -269,7 +269,7 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 		"UK3CB_BAF_V_Osprey_SL_B",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -278,7 +278,7 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 		"UK3CB_BAF_V_Osprey_SL_B",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};

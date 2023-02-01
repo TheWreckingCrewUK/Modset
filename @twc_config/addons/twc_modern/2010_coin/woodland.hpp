@@ -272,7 +272,7 @@ class TWC_Infantry_Modern_COIN_Woodland_SectionCommander: TWC_Infantry_Modern_Re
 		"UK3CB_BAF_V_Osprey_SL_D",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -281,7 +281,7 @@ class TWC_Infantry_Modern_COIN_Woodland_SectionCommander: TWC_Infantry_Modern_Re
 		"UK3CB_BAF_V_Osprey_SL_D",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};

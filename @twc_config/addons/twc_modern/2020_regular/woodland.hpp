@@ -244,7 +244,7 @@ class TWC_Infantry_2020_Regular_Woodland_SectionCommander: TWC_Infantry_2020_Reg
 		"mpx_virtus_taco2_p",
 		"mpx_cobra_scrim",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -253,7 +253,7 @@ class TWC_Infantry_2020_Regular_Woodland_SectionCommander: TWC_Infantry_2020_Reg
 		"mpx_virtus_taco2_p",
 		"mpx_cobra_scrim",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
