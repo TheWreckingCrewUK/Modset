@@ -92,8 +92,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regula
 	nightItems[] = {
 		MAG_3("UGL_FlareWhite_F"),
 		MAG_2("Chemlight_green"),
-		"ACE_Flashlight_MX991",
-		"ACE_Flashlight_Maglite_ML300L"
+		"ACE_Flashlight_MX991"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Regular_Woodland_Rifleman
@@ -255,7 +254,6 @@ class TWC_Infantry_Modern_Regular_Woodland_Marksman: TWC_Infantry_Modern_Regular
 	nightItems[] = {
 		MAG_2("Chemlight_green"),
 		"ACE_Flashlight_MX991",
-		"ACE_Flashlight_Maglite_ML300L",
 		"UK3CB_BAF_MaxiKite"
 	};
 };
@@ -325,8 +323,7 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 		MAG_2("ACE_HandFlare_White"),
 		MAG_2("Chemlight_green"),
 		"B_IR_Grenade",
-		"ACE_Flashlight_MX991",
-		"ACE_Flashlight_Maglite_ML300L"
+		"ACE_Flashlight_MX991"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_2iC: TWC_Infantry_Modern_Regular_Woodland_Rifleman
