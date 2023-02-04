@@ -484,7 +484,7 @@ class UK3CB_BAF_L85A2: arifle_Mk20_plain_F {
 	reloadAction = "CUP_GestureReloadSA80";
 	reloadMagazineSound[] = {"\CUP\Weapons\CUP_Weapons_L85\data\sounds\l85_Reload",1,1,10};
 	class Single: Single {
-		dispersion = 0.0015;
+		dispersion = 0.002;
 	};
 	class FullAuto: FullAuto {
 		dispersion = 0.003;
@@ -496,10 +496,10 @@ class UK3CB_BAF_L86A2: UK3CB_BAF_L85A2 {
 	recoilProne = "twc_rifle_556_long_prone";
 	initSpeed = -1.1;
 	class Single: Single {
-		dispersion = 0.001;
+		dispersion = 0.002;
 	};
 	class FullAuto: FullAuto {
-		dispersion = 0.002;
+		dispersion = 0.003;
 	};
 };
 
@@ -527,7 +527,7 @@ class UK3CB_BAF_L7A2: Rifle_Long_Base_F {
 	};
 	class fullauto: mode_fullauto {
 		reloadTime = 0.08;
-		dispersion = 0.016;
+		dispersion = 0.005;
 	};
 };
 
@@ -541,7 +541,7 @@ class UK3CB_BAF_L110_556_Base: UK3CB_BAF_L110_Base {
 	recoil = "twc_mg_556";
 	recoilProne = "twc_mg_556_prone";
 	class FullAuto: Mode_FullAuto {
-		dispersion = 0.032;
+		dispersion = 0.008;
 	};
 };
 
