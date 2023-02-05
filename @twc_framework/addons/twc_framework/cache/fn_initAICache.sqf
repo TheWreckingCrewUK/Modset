@@ -1,23 +1,38 @@
 params["_debug", "_group", "_aiRange"];
 
-// If there's a vehicle in the group, don't cache it.
-if ({(vehicle _x != _x)} count (units _group) > 0) exitWith {};
+sleep 0.5;
 
+//spawned in enemys always uncache others. need to stop that.
+{
+	_x triggerDynamicSimulation false;
+}forEach (units _group);
+
+//If caching is disabled don't cache it
 if (isNil {_group getVariable "twc_cacheDisabled"}) then {
-	// Currently only used for urban unit caching, but potentially open for more options in the future.
-	_cacheRange = (_group getVariable ["TWC_Cache_Range", _aiRange]) min _aiRange;
-	_alreadyCached = false;
 
-	// Cache stationary units immmediately - ignoring range, just to keep them in position.
-	if !(isNil {_group getVariable "twc_statioGroup"}) then {
-		{
-			_x disableAI "path";
-			_x enableSimulationGlobal false;
-			_x hideObjectGlobal true;
-		} forEach (units _group);
+	//with dynamic simulation the only edge case is defending units need to do that first.	
+	if !(isNil {_group getVariable "twc_cacheDefending"}) then {
+		[_group] spawn{
+			params["_group"];
+			
+			_ready = 0;
+			_timeMax = time + 60;
+			_timeMin = time + 20;
 
-		_alreadyCached = true;
+			waitUntil {
+				_ready = 1;
+
+				{
+					if !(unitReady _x) then {
+						_ready = 0;
+					};
+				} forEach (units _group);
+
+				(_ready == 1 && _timeMin < time) || _timeMax < time;
+			};
+		};
+		_group enableDynamicSimulation true;
+	}else{
+		_group enableDynamicSimulation true;
 	};
-
-	[_debug, _group, _cacheRange, _alreadyCached] spawn twc_fnc_aiCaching;
 };

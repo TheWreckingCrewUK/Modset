@@ -19,12 +19,14 @@
 */
 params["_unit",["_pos",[]],["_radius",100],["_size",2],["_hold",0.8]];
 
-(group _unit) setVariable ["twc_cacheDefending",true];
+//Variable used to delay caching or dynamic simulation until units are at their defense point.
+(group _unit) setVariable ["twc_cacheDefending",true]; 
 
 if((typeName _pos) isEqualTo "STRING")then{
 	_pos = getMarkerPos _pos;
 };
 
+//For vcomAI. We don't currently use it, but it doesn't hurt anything.
 {
 	_x setVariable ["NOAI",1,true];
 }forEach units (group _unit);

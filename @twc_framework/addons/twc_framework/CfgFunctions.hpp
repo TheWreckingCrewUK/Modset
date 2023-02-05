@@ -112,7 +112,6 @@ class CfgFunctions {
 			class moduleIgnoreForwardBase {};
 			class moduleGliderTakeOff {};
 			class moduleTriggerUncache {};
-			class moduleUrbanUnitsCache {};
 			class moduleACEInteract {};
 			class moduleAmbientSound {};
 			class moduleAmbientSoundSimp {};
@@ -122,15 +121,9 @@ class CfgFunctions {
 		
 		class cache {
 			file = "twc_framework\cache";
-			class aiCaching {};
-			class cacheGroup {};
 			class cacheModuleInit {};
-			class cacheVehicle {};
 			class initAICache {};
 			class initVehicleCache {};
-			class unCacheGroup {};
-			class unCacheVehicle {};
-			class vehicleCaching {};
 		};
 		
 		class headlessClient {

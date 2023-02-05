@@ -16,9 +16,6 @@
 params["_unit"];
 
 _group = group _unit;
-_group setVariable ["twc_cacheDefending", true];
-_group setVariable ["twc_statioGroup", true];
-_group setVariable ["acex_headless_blacklist", true];
 
 if (isServer || !hasInterface) then {
 	{
