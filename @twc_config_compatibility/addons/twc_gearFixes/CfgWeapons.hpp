@@ -517,7 +517,7 @@ class UK3CB_BAF_L7A2: Rifle_Long_Base_F {
 	displayname = "L7A2 GPMG";
 	ace_overheating_mrbs = 3000;
 	ace_overheating_allowSwapBarrel = 1;
-	ace_overheating_dispersion = 3;
+	ace_overheating_dispersion = 9;
 	ace_overheating_slowdownFactor = 1.5;
 	recoil = "twc_mg_762";
 	recoilProne = "twc_mg_prone";
@@ -534,14 +534,14 @@ class UK3CB_BAF_L7A2: Rifle_Long_Base_F {
 class UK3CB_BAF_L110_Base:Rifle_Long_Base_F {
 	ace_overheating_allowSwapBarrel = 1;
 	ace_overheating_mrbs = 2000;
-	ace_overheating_dispersion = 3;
+	ace_overheating_dispersion = 11;
 	ace_overheating_slowdownFactor = 1.2;
 };
 class UK3CB_BAF_L110_556_Base: UK3CB_BAF_L110_Base {
 	recoil = "twc_mg_556";
 	recoilProne = "twc_mg_556_prone";
 	class FullAuto: Mode_FullAuto {
-		dispersion = 0.008;
+		dispersion = 0.007;
 	};
 };
 

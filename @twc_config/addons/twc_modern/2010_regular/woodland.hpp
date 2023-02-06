@@ -117,12 +117,12 @@ class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Reg
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_SpareBarrel"
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_SpareBarrel"
+		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
 	{
@@ -171,12 +171,12 @@ class TWC_Infantry_Modern_Regular_Woodland_MG: TWC_Infantry_Modern_Regular_Woodl
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_SpareBarrel"
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_SpareBarrel"
+		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
 	{
@@ -250,7 +250,16 @@ class TWC_Infantry_Modern_Regular_Woodland_Marksman: TWC_Infantry_Modern_Regular
 		MAG_2("UK3CB_BAF_762_L42A1_20Rnd_T"),
 		MAG_2("SmokeShell")
 	};
-	
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel_Item"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel_Item"
+	};
 	nightItems[] = {
 		MAG_2("Chemlight_green"),
 		"ACE_Flashlight_MX991",
@@ -358,6 +367,20 @@ class TWC_Infantry_Modern_Regular_Woodland_2iC: TWC_Infantry_Modern_Regular_Wood
 		MAG_2("UK3CB_BAF_556_30Rnd_T"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools",
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools",
+		"ACE_EntrenchingTool"
 	};
 };
 

@@ -159,11 +159,13 @@ class CfgVehicles
 		};
 		Items[] =
 		{
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
 		};
 		respawnItems[] =
 		{
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
 		};
 		weapons[] =
 		{

@@ -33,6 +33,11 @@ class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 			item = "UK3CB_underbarrel_acc_grippod";
 			slot = "UnderBarrelSlot";
 		};
+		class LinkedItemsMuzzle
+		{
+			item = "UK3CB_BAF_Bayonet_L3A1";
+			slot = "MuzzleSlot";
+		};
 	};
 };
 
@@ -53,6 +58,11 @@ class TWC_Weapon_L85A2_RIS_SUSAT: UK3CB_BAF_L85A2_RIS {
 		{
 			item = "UK3CB_underbarrel_acc_grippod";
 			slot = "UnderBarrelSlot";
+		};
+		class LinkedItemsMuzzle
+		{
+			item = "UK3CB_BAF_Bayonet_L3A1";
+			slot = "MuzzleSlot";
 		};
 	};
 };
@@ -83,6 +93,11 @@ class TWC_Weapon_L85A3_LDS: UK3CB_BAF_L85A3 {
 		{
 			item = "UK3CB_underbarrel_acc_grippod";
 			slot = "UnderBarrelSlot";
+		};
+		class LinkedItemsMuzzle
+		{
+			item = "UK3CB_BAF_Bayonet_L3A1";
+			slot = "MuzzleSlot";
 		};
 	};
 };
@@ -127,6 +142,11 @@ class TWC_Weapon_L85A2_UGL_ELCAN3D: UK3CB_BAF_L85A2_UGL {
 			slot = "PointerSlot";
 			item = "cup_acc_llm_black";
 		};
+		class LinkedItemsMuzzle
+		{
+			item = "UK3CB_BAF_Bayonet_L3A1";
+			slot = "MuzzleSlot";
+		};
 	};
 };
 class TWC_Weapon_L85A3_UGL_LDS: UK3CB_BAF_L85A3_UGL {
@@ -139,6 +159,11 @@ class TWC_Weapon_L85A3_UGL_LDS: UK3CB_BAF_L85A3_UGL {
 		class LinkedItemsFrontSideRail {
 			slot = "PointerSlot";
 			item = "cup_acc_llm_black";
+		};
+		class LinkedItemsMuzzle
+		{
+			item = "UK3CB_BAF_Bayonet_L3A1";
+			slot = "MuzzleSlot";
 		};
 	};
 };
