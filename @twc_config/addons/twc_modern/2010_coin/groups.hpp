@@ -1,5 +1,5 @@
-#define COIN_GROUPS(CAMO) \
-class 2010_Modern_COIN_##CAMO## \
+#define 2010_COIN_GROUPS(CAMO) \
+class 2010_Modern_COIN_##CAMO \
 { \
 	name = __EVAL("Infantry (2010s, COIN, " + #CAMO + ")"); \
 	class Section \
@@ -417,6 +417,6 @@ class 2010_COIN_Dismounted_##CAMO## \
 	}; \
 };
 
-COIN_GROUPS(Woodland)
-COIN_GROUPS(NBC)
-COIN_GROUPS(Arctic)
+2010_COIN_GROUPS(Woodland)
+2010_COIN_GROUPS(NBC)
+2010_COIN_GROUPS(Arctic)

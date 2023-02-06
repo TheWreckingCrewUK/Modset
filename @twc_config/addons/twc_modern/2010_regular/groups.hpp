@@ -1,5 +1,5 @@
-#define REGULAR_GROUPS(CAMO) \
-class 2010_Regular_##CAMO## \
+#define 2010_REGULAR_GROUPS(CAMO) \
+class 2010_Regular_##CAMO \
 { \
 	name = __EVAL("Infantry (2010s, " + #CAMO + ")"); \
 	class Section \
@@ -417,6 +417,6 @@ class 2010_Regular_Dismounted_##CAMO## \
 	}; \
 };
 
-REGULAR_GROUPS(Woodland)
-REGULAR_GROUPS(NBC)
-REGULAR_GROUPS(Arctic)
+2010_REGULAR_GROUPS(Woodland)
+2010_REGULAR_GROUPS(NBC)
+2010_REGULAR_GROUPS(Arctic)
