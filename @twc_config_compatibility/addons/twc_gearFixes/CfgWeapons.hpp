@@ -7,7 +7,7 @@ class twc_nightvision_gen2: CUP_NVG_PVS7 {
 	author = "[TWC] Rik";
 	descriptionShort = "";
 	displayName = "AN/PVS-5";
-	ace_nightvision_border = "\twc_config_compatibility\addons\twc_gearFixes\data\nvg_mask_4096.paa"; // Edge mask for different tube configurations. Three types: mono, bino and quad.
+	ace_nightvision_border = "\data\nvg_mask_4096.paa"; // Edge mask for different tube configurations. Three types: mono, bino and quad.
 	ace_nightvision_bluRadius = 0.45; // Edge blur radius.
 	ace_nightvision_eyeCups = 1; // Does have eyecups.
 	ace_nightvision_generation = 3; // Generation 2. Affects image quality.
@@ -18,7 +18,7 @@ class twc_nightvision_gen3: UK3CB_BAF_HMNVS {
 	author = "[TWC] Rik";
 	descriptionShort = "";
 	displayName = "HMNVS";
-	ace_nightvision_border = "\twc_config_compatibility\addons\twc_gearFixes\data\nvg_mask_4096.paa"; // Edge mask for different tube configurations. Three types: mono, bino and quad.
+	ace_nightvision_border = "\addons\twc_gearFixes\data\nvg_mask_4096.paa"; // Edge mask for different tube configurations. Three types: mono, bino and quad.
 	ace_nightvision_bluRadius = 0.25; // Edge blur radius.
 	ace_nightvision_eyeCups = 0; // Does have eyecups.
 	ace_nightvision_generation = 4; // Generation 3. Affects image quality.
