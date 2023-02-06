@@ -46,7 +46,6 @@ class CfgFunctions {
 			class checkvehicleID {};
 			class gunwalk {};
 			class mortarwalk {};
-			class init{};
 			class addACEInteraction {};
 			class aiscramblenew {};
 			class aiscramble {};
@@ -126,14 +125,6 @@ class CfgFunctions {
 			class initVehicleCache {};
 		};
 		
-		class headlessClient {
-			file = "twc_framework\headlessClient";
-			class handleSpawn {};
-			class hcModuleInit {};
-			class rebalance {};
-			class transferGroups {};
-		};
-
 		class curator {
 			file = "twc_framework\curator";
 			class setSpectator {};

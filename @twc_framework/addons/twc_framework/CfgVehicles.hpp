@@ -185,42 +185,6 @@ class CfgVehicles {
 		scope = 1;
 		ammo = "twc_ammo_artillery_illumination_ir";
 	};
-
-	class twc_moduelHC: Module_F {
-		author="[TWC] jayman";
-		scope=2;
-		displayName="TWC Headless Client Module";
-		category="twc_missionSetup";
-		function="twc_fnc_hcModuleInit";
-		functionPriority=1;
-		isGlobal=0;
-		isTriggerActivated=0;
-		isDisposable=0;
-		class Arguments
-		{
-			class enabled
-			{
-				displayName="Enabled";
-				description="Enable for headless clients";
-				typeName="BOOL";
-				defaultValue=1;
-			};
-			class delay
-			{
-				displayName="Delay";
-				description="Adds a delay before HC begin. 120 is usually optimal.";
-				typeName="NUMBER";
-				defaultValue=120;
-			};
-			class endMission
-			{
-				displayName="End Mission";
-				description="Ends mission when all players disconnect";
-				typeName="BOOL";
-				defaultValue=0;
-			};
-		};
-	};
 	
 	class twc_moduelCache: Module_F {
 		author = "[TWC] jayman";
