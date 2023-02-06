@@ -398,7 +398,7 @@ class CfgGroups
 			#include "2020_regular\groups.hpp"
 			#include "2010_coin\groups.hpp"
 			#include "2020_coin\groups.hpp"
-			class TWC_Groups_Modern_Generic
+			class Generic
 			{
 				name = "Generic";
 				class Tank_Crew

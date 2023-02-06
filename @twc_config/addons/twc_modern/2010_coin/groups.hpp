@@ -1,5 +1,5 @@
 #define COIN_GROUPS(CAMO) \
-class Modern_COIN_##CAMO## \
+class 2010_Modern_COIN_##CAMO## \
 { \
 	name = __EVAL("Infantry (2010s, COIN, " + #CAMO + ")"); \
 	class Section \
@@ -289,7 +289,7 @@ class Modern_COIN_##CAMO## \
 		}; \
 	}; \
 }; \
-class Modern_COIN_Dismounted_##CAMO## \
+class 2010_COIN_Dismounted_##CAMO## \
 { \
 	name = __EVAL("Infantry (2010s, COIN, Dismounted, " + #CAMO + ")"); \
 	class Section \

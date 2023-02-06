@@ -296,9 +296,9 @@ class 2020_Regular_##CAMO## \
 		}; \
 	}; \
 }; \
-class 2020_Regular_Dismounted_##CAMO## \
+class 2020_Dismounted_##CAMO## \
 { \
-	name = __EVAL("Infantry (2020s, Dismounted, " + ##CAMO## + ")"); \
+	name = __EVAL("Infantry (2020s, Dismounted, " + #CAMO + ")"); \
 	class Section \
 	{ \
 		name = "Section"; \
