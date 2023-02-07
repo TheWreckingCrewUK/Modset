@@ -28,11 +28,13 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Base: B_Soldier_base_F
 	};
 	Items[]=
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		"grad_paceCountBeads_functions_paceCountBeads"
 	};
 	respawnItems[]=
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		"grad_paceCountBeads_functions_paceCountBeads"
 	};
 	weapons[]=
 	{
@@ -202,6 +204,18 @@ class TWC_Infantry_ColdWar_Regular_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Wo
 		MAG_2("UK3CB_BAF_762_20Rnd_T"),
 		MAG_2("SmokeShell")
 	};
+	Items[]=
+	{
+		MEDICAL_LOADOUT,
+		"grad_paceCountBeads_functions_paceCountBeads",
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[]=
+	{
+		MEDICAL_LOADOUT,
+		"grad_paceCountBeads_functions_paceCountBeads",
+		"ACE_EntrenchingTool"
+	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_AT: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman
 {
@@ -319,6 +333,18 @@ class TWC_Infantry_ColdWar_Regular_Woodland_ASSMG: TWC_Infantry_ColdWar_Regular_
 		MAG_5("UK3CB_BAF_762_20Rnd"),
 		MAG_2("UK3CB_BAF_762_20Rnd_T"),
 		"SmokeShell"
+	};
+	Items[]=
+	{
+		MEDICAL_LOADOUT,
+		"grad_paceCountBeads_functions_paceCountBeads",
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[]=
+	{
+		MEDICAL_LOADOUT,
+		"grad_paceCountBeads_functions_paceCountBeads",
+		"ACE_EntrenchingTool"
 	};
 };
 

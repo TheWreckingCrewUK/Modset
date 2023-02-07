@@ -64,12 +64,14 @@ class TWC_Infantry_2020_COIN_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_MG
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 };
 class TWC_Infantry_2020_COIN_Woodland_Marksman: TWC_Infantry_2020_Regular_Woodland_Marksman
@@ -79,12 +81,14 @@ class TWC_Infantry_2020_COIN_Woodland_Marksman: TWC_Infantry_2020_Regular_Woodla
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 };
 class TWC_Infantry_2020_COIN_Woodland_SectionCommander: TWC_Infantry_2020_Regular_Woodland_SectionCommander
@@ -112,13 +116,15 @@ class TWC_Infantry_2020_COIN_Woodland_2iC: TWC_Infantry_2020_Regular_Woodland_2i
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_EntrenchingTool"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_EntrenchingTool"
 	};
 };
 class TWC_Infantry_2020_COIN_Woodland_LightCavCommander: TWC_Infantry_2020_COIN_Woodland_Rifleman

@@ -9,3 +9,6 @@ if (!_keepMap) then {
 	_unit unassignItem "itemMap";
 	_unit removeItem "itemMap";
 };
+
+_unit unassignItem "ItemGPS";
+_unit removeItem "ItemGPS";

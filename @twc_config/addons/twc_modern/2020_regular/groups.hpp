@@ -1,5 +1,5 @@
-#define REGULAR_GROUPS(CAMO) \
-class 2020_Regular_##CAMO## \
+#define 2020_REGULAR_GROUPS(CAMO) \
+class 2020_Regular_##CAMO \
 { \
 	name = __EVAL("Infantry (2020s, " + #CAMO + ")"); \
 	class Section \
@@ -296,9 +296,9 @@ class 2020_Regular_##CAMO## \
 		}; \
 	}; \
 }; \
-class 2020_Regular_Dismounted_##CAMO## \
+class 2020_Dismounted_##CAMO## \
 { \
-	name = __EVAL("Infantry (2020s, Dismounted, " + ##CAMO## + ")"); \
+	name = __EVAL("Infantry (2020s, Dismounted, " + #CAMO + ")"); \
 	class Section \
 	{ \
 		name = "Section"; \
@@ -423,6 +423,6 @@ class 2020_Regular_Dismounted_##CAMO## \
 		}; \
 	}; \
 };
-REGULAR_GROUPS(Woodland)
-REGULAR_GROUPS(NBC)
-REGULAR_GROUPS(Arctic)
+2020_REGULAR_GROUPS(Woodland)
+2020_REGULAR_GROUPS(NBC)
+2020_REGULAR_GROUPS(Arctic)

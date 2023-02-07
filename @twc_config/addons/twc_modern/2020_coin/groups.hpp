@@ -1,5 +1,5 @@
-#define COIN_GROUPS(CAMO) \
-class TWC_Groups_2020_COIN_##CAMO \
+#define 2020_COIN_GROUPS(CAMO) \
+class 2020_COIN_##CAMO \
 { \
 	name = __EVAL("Infantry (2020s, COIN, " + #CAMO + ")"); \
 	class Section \
@@ -296,7 +296,7 @@ class TWC_Groups_2020_COIN_##CAMO \
 		}; \
 	}; \
 }; \
-class TWC_Groups_2020_COIN_Dismounted_##CAMO \
+class 2020_COIN_Dismounted_##CAMO \
 { \
 	name = __EVAL("Infantry (2020s, COIN, Dismounted, " + #CAMO + ")"); \
 	class Section \
@@ -423,6 +423,6 @@ class TWC_Groups_2020_COIN_Dismounted_##CAMO \
 		}; \
 	}; \
 };
-COIN_GROUPS(Woodland)
-COIN_GROUPS(NBC)
-COIN_GROUPS(Arctic)
+2020_COIN_GROUPS(Woodland)
+2020_COIN_GROUPS(NBC)
+2020_COIN_GROUPS(Arctic)

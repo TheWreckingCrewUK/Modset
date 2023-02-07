@@ -484,7 +484,7 @@ class UK3CB_BAF_L85A2: arifle_Mk20_plain_F {
 	reloadAction = "CUP_GestureReloadSA80";
 	reloadMagazineSound[] = {"\CUP\Weapons\CUP_Weapons_L85\data\sounds\l85_Reload",1,1,10};
 	class Single: Single {
-		dispersion = 0.0015;
+		dispersion = 0.002;
 	};
 	class FullAuto: FullAuto {
 		dispersion = 0.003;
@@ -496,10 +496,10 @@ class UK3CB_BAF_L86A2: UK3CB_BAF_L85A2 {
 	recoilProne = "twc_rifle_556_long_prone";
 	initSpeed = -1.1;
 	class Single: Single {
-		dispersion = 0.001;
+		dispersion = 0.002;
 	};
 	class FullAuto: FullAuto {
-		dispersion = 0.002;
+		dispersion = 0.003;
 	};
 };
 
@@ -515,34 +515,33 @@ class UK3CB_BAF_L129A1: srifle_EBR_F {
 //for barrel swapping, put a ACE_SpareBarrel in the player's inventory
 class UK3CB_BAF_L7A2: Rifle_Long_Base_F {
 	displayname = "L7A2 GPMG";
+	ace_overheating_mrbs = 3000;
 	ace_overheating_allowSwapBarrel = 1;
-	ace_overheating_dispersion = 1.1;
+	ace_overheating_dispersion = 9;
 	ace_overheating_slowdownFactor = 1.5;
 	recoil = "twc_mg_762";
 	recoilProne = "twc_mg_prone";
-	twc_openbolt = 1;
 	magazines[] = {"UK3CB_BAF_762_100Rnd","UK3CB_BAF_762_100Rnd_Blank","UK3CB_BAF_762_100Rnd_T","UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_Blank","UK3CB_BAF_762_200Rnd_T","TWC_UK3CB_BAF_762_50Rnd","TWC_UK3CB_BAF_762_50Rnd_T"};
 	class WeaponSlotsInfo {
 		class asdg_OpticRail_UK3CB_BAF_L7A2 {};
 	};
 	class fullauto: mode_fullauto {
 		reloadTime = 0.08;
-		dispersion = 0.0008;
+		dispersion = 0.005;
 	};
 };
 
 class UK3CB_BAF_L110_Base:Rifle_Long_Base_F {
 	ace_overheating_allowSwapBarrel = 1;
-	ace_overheating_mrbs = 2900;
-	ace_overheating_dispersion = 1.1;
+	ace_overheating_mrbs = 2000;
+	ace_overheating_dispersion = 11;
 	ace_overheating_slowdownFactor = 1.2;
-	twc_openbolt = 1;
 };
 class UK3CB_BAF_L110_556_Base: UK3CB_BAF_L110_Base {
 	recoil = "twc_mg_556";
 	recoilProne = "twc_mg_556_prone";
 	class FullAuto: Mode_FullAuto {
-		dispersion = 0.0016;
+		dispersion = 0.007;
 	};
 };
 

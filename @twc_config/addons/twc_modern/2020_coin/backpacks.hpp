@@ -104,7 +104,7 @@ class TWC_Backpack_2020_COIN_Woodland_Platoon_Medic: mpx_daysack7
 		ADD_ITEM(ACE_salineIV_250,4);
 		ADD_ITEM(ACE_tourniquet,4);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 };
 class TWC_Backpack_2020_COIN_Woodland_Platoon_Mortar: mpx_daysack

@@ -2,7 +2,6 @@ class CfgPatches {
 	class twc_framework {
 		units[] = {
 			"twc_ModuleMission",
-			"twc_moduelHC",
 			"twc_moduelCache",
 			"twc_modulegunwalkzeus",
 			"twc_modulemortarwalkzeus",

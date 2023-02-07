@@ -185,42 +185,6 @@ class CfgVehicles {
 		scope = 1;
 		ammo = "twc_ammo_artillery_illumination_ir";
 	};
-
-	class twc_moduelHC: Module_F {
-		author="[TWC] jayman";
-		scope=2;
-		displayName="TWC Headless Client Module";
-		category="twc_missionSetup";
-		function="twc_fnc_hcModuleInit";
-		functionPriority=1;
-		isGlobal=0;
-		isTriggerActivated=0;
-		isDisposable=0;
-		class Arguments
-		{
-			class enabled
-			{
-				displayName="Enabled";
-				description="Enable for headless clients";
-				typeName="BOOL";
-				defaultValue=1;
-			};
-			class delay
-			{
-				displayName="Delay";
-				description="Adds a delay before HC begin. 120 is usually optimal.";
-				typeName="NUMBER";
-				defaultValue=120;
-			};
-			class endMission
-			{
-				displayName="End Mission";
-				description="Ends mission when all players disconnect";
-				typeName="BOOL";
-				defaultValue=0;
-			};
-		};
-	};
 	
 	class twc_moduelCache: Module_F {
 		author = "[TWC] jayman";
@@ -241,25 +205,32 @@ class CfgVehicles {
 				defaultValue = 1;
 			};
 
-			class aiRange {
+			class characters {
 				displayName = "AI Range";
 				description = "Range at which AI will cache. 0 to disable.";
 				typeName = "NUMBER";
 				defaultValue = 1500;
 			};
 
-			class vehicleRange {
+			class vehicles {
 				displayName = "Vehicle Caching";
 				description = "Range at which vehicles will cache. 0 to disable.";
 				typeName = "NUMBER";
 				defaultValue = 2000;
 			};
-
-			class urbanRange {
-				displayName = "Urban Caching";
-				description = "Range at which urban units will cache. 0 to disable.";
+			
+			class emptyVehicles {
+				displayName = "Empty Vehicles";
+				description = "Range at which empty vehicles will cache. 0 to disable. Should be set higher than the longest AT ability";
 				typeName = "NUMBER";
-				defaultValue = 750;
+				defaultValue = 800;
+			};
+			
+			class isMoving {
+				displayName = "is Moving?";
+				description = "Increases Range when units are moving. It's a multiplier";
+				typeName = "NUMBER";
+				defaultValue = 1;
 			};
 		};
 	};
@@ -1806,25 +1777,6 @@ class CfgVehicles {
 		class Arguments {};
 		class ModuleDescription: ModuleDescription {
 			description = "Disable Cache On Unit(s)";
-			sync[] = {"AnyAI", "AnyVehicle"};
-		};
-	};
-
-	class TWC_Module_UrbanUnitsCache: Module_F {
-		author = "[TWC] Bosenator & jayman";
-		category = "twc_cache_modules";
-		displayName = "Set Urban Unit(s)";
-		function = "twc_fnc_moduleUrbanUnitsCache";
-		scope = 2;
-		isGlobal = 0;
-		isTriggerActivated = 0;
-		isDisposable = 0;
-		icon = "\twc_framework\ui\disable_caching_ca.paa";
-		functionPriority = 1;
-
-		class Arguments {};
-		class ModuleDescription: ModuleDescription {
-			description = "Set Urban Unit(s)";
 			sync[] = {"AnyAI", "AnyVehicle"};
 		};
 	};
