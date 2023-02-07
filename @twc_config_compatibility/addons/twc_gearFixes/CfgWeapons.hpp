@@ -4,24 +4,24 @@ class UK3CB_BAF_HMNVS;
 class twc_nightvision_gen2: CUP_NVG_PVS7 {
 	scope = 1;
 	modelOptics = "";
-	author = "[TWC] Rik";
+	author = "[TWC] Rik and [TWC]Ross";
 	descriptionShort = "";
 	displayName = "AN/PVS-5";
 	ace_nightvision_border = "\twc_gearfixes\data\nvg_mask_4096.paa"; // Edge mask for different tube configurations. Three types: mono, bino and quad.
 	ace_nightvision_bluRadius = 0.13; // Edge blur radius.
 	ace_nightvision_eyeCups = 1; // Does have eyecups.
-	ace_nightvision_generation = 3; // Generation 2. Affects image quality.
+	ace_nightvision_generation = 3; // Generation 3. Affects image quality. One gen added to actual generation for usability in Arma
 };
 class twc_nightvision_gen3: UK3CB_BAF_HMNVS {
 	scope = 1;
 	modelOptics = "";
-	author = "[TWC] Rik";
+	author = "[TWC] Rik and [TWC]Ross";
 	descriptionShort = "";
 	displayName = "HMNVS";
 	ace_nightvision_border = "\twc_gearfixes\data\nvg_mask_4096.paa"; // Edge mask for different tube configurations. Three types: mono, bino and quad.
 	ace_nightvision_bluRadius = 0.15; // Edge blur radius.
 	ace_nightvision_eyeCups = 0; // Does have eyecups.
-	ace_nightvision_generation = 4; // Generation 3. Affects image quality.
+	ace_nightvision_generation = 4; // Generation 4. Affects image quality. One gen added to actual generation for usability in Arma.
 };
 
 class Launcher;
