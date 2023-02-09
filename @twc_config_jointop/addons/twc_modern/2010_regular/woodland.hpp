@@ -92,8 +92,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regula
 	nightItems[] = {
 		MAG_3("UGL_FlareWhite_F"),
 		MAG_2("Chemlight_green"),
-		"ACE_Flashlight_MX991",
-		"ACE_Flashlight_Maglite_ML300L"
+		"ACE_Flashlight_MX991"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Regular_Woodland_Rifleman
@@ -114,6 +113,16 @@ class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Reg
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel_Item"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
 	{
@@ -158,6 +167,16 @@ class TWC_Infantry_Modern_Regular_Woodland_MG: TWC_Infantry_Modern_Regular_Woodl
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel_Item"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
 	{
@@ -231,11 +250,19 @@ class TWC_Infantry_Modern_Regular_Woodland_Marksman: TWC_Infantry_Modern_Regular
 		MAG_2("UK3CB_BAF_762_L42A1_20Rnd_T"),
 		MAG_2("SmokeShell")
 	};
-	
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel_Item"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		"ACE_SpareBarrel_Item"
+	};
 	nightItems[] = {
 		MAG_2("Chemlight_green"),
 		"ACE_Flashlight_MX991",
-		"ACE_Flashlight_Maglite_ML300L",
 		"UK3CB_BAF_MaxiKite"
 	};
 };
@@ -249,7 +276,7 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 		"UK3CB_BAF_V_Osprey_SL_B",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -258,7 +285,7 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 		"UK3CB_BAF_V_Osprey_SL_B",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -305,8 +332,7 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 		MAG_2("ACE_HandFlare_White"),
 		MAG_2("Chemlight_green"),
 		"B_IR_Grenade",
-		"ACE_Flashlight_MX991",
-		"ACE_Flashlight_Maglite_ML300L"
+		"ACE_Flashlight_MX991"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_2iC: TWC_Infantry_Modern_Regular_Woodland_Rifleman
@@ -341,6 +367,20 @@ class TWC_Infantry_Modern_Regular_Woodland_2iC: TWC_Infantry_Modern_Regular_Wood
 		MAG_2("UK3CB_BAF_556_30Rnd_T"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
+	};
+	Items[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools",
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] =
+	{
+		MEDICAL_LOADOUT,
+		MAG_2("ACE_CableTie"),
+		"ACE_MapTools",
+		"ACE_EntrenchingTool"
 	};
 };
 
@@ -512,6 +552,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Company_Sergeant: TWC_Infantry_Modern
 class TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
 	displayName = "Javelin Gunner";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Javelin";
 	weapons[] =
 	{
 		"TWC_Weapon_L85A2_RIS_ELCAN3D",
@@ -542,7 +583,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner: TWC_Infantry_Modern_R
 class TWC_Infantry_Modern_Regular_Woodland_Javelin_Ass: TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner
 {
 	displayName = "Javelin Assistant";
-	backpack = "TWC_Backpack_Modern_Regular_Woodland_Javelin_Assistant";
+	backpack = "TWC_Backpack_Modern_Regular_Woodland_Javelin";
 	weapons[] =
 	{
 		"TWC_Weapon_L85A2_RIS_ELCAN3D",
@@ -558,14 +599,6 @@ class TWC_Infantry_Modern_Regular_Woodland_Javelin_Ass: TWC_Infantry_Modern_Regu
 		"Put"
 	};
 };
-/*class TWC_Infantry_Modern_Regular_Woodland_Starstreak_Gunner: TWC_Infantry_Modern_Regular_Woodland_Javelin_Gunner
-{
-	displayName = "Starstreak Gunner";
-};
-class TWC_Infantry_Modern_Regular_Woodland_Starstreak_Ass: TWC_Infantry_Modern_Regular_Woodland_Starstreak_Gunner
-{
-	displayName = "Starstreak Assistant";
-};*/
 
 //Sniper Team
 class TWC_Infantry_Modern_Regular_Woodland_Sniper: TWC_Infantry_Modern_Regular_Woodland_Rifleman
