@@ -91,18 +91,6 @@ class TWC_Infantry_Modern_Regular_Arctic_Javelin_Ass: TWC_Infantry_Modern_Regula
 	CATEGORY(TWC_Infantry_Regular_Arctic)
 	uniformClass = "TWC_Smock_Arctic";
 };
-class TWC_Infantry_Modern_Regular_Arctic_Starstreak_Gunner: TWC_Infantry_Modern_Regular_Woodland_Starstreak_Gunner
-{
-	CATEGORY(TWC_Infantry_Regular_Arctic)
-	uniformClass = "TWC_Smock_Arctic";
-	
-};
-class TWC_Infantry_Modern_Regular_Arctic_Starstreak_Ass: TWC_Infantry_Modern_Regular_Woodland_Starstreak_Ass
-{
-	CATEGORY(TWC_Infantry_Regular_Arctic)
-	uniformClass = "TWC_Smock_Arctic";
-	
-};
 
 //Sniper Team
 class TWC_Infantry_Modern_Regular_Arctic_Sniper: TWC_Infantry_Modern_Regular_Woodland_Sniper
