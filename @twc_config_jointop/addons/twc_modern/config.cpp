@@ -13,6 +13,9 @@ class CfgPatches
 	};
 };
 
+class CfgEditorSubcategories {
+};
+
 class EventHandlers;
 
 class CfgWeapons
@@ -75,11 +78,13 @@ class CfgVehicles
 		};
 
 		items[] = {
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
 		};
 
 		weapons[] = {
@@ -245,14 +250,14 @@ class CfgVehicles
 	#include "2010_regular\nbc_dismounted.hpp"
 	#include "2010_regular\arctic.hpp"
 	#include "2010_regular\arctic_dismounted.hpp"
-	
+
 	#include "2010_coin\woodland.hpp"
 	#include "2010_coin\woodland_dismounted.hpp"
 	#include "2010_coin\nbc.hpp"
 	#include "2010_coin\nbc_dismounted.hpp"
 	#include "2010_coin\arctic.hpp"
 	#include "2010_coin\arctic_dismounted.hpp"
-	
+
 };
 
 class CfgGroups
@@ -264,7 +269,7 @@ class CfgGroups
 			name = "TWC Groups Modern";
 			#include "2010_regular\groups.hpp"
 			#include "2010_coin\groups.hpp"
-			class TWC_Groups_Modern_Generic
+			class Generic
 			{
 				name = "Generic";
 				class Tank_Crew
