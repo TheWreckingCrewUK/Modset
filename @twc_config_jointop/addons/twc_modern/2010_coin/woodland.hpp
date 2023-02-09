@@ -8,12 +8,14 @@ class TWC_Infantry_Modern_COIN_Woodland_Pointman: TWC_Infantry_Modern_Regular_Wo
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"grad_paceCountBeads_functions_paceCountBeads"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"grad_paceCountBeads_functions_paceCountBeads"
 	};
 	weapons[] =
 	{
@@ -117,12 +119,14 @@ class TWC_Infantry_Modern_COIN_Woodland_Autorifleman: TWC_Infantry_Modern_Regula
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
 	{
@@ -175,12 +179,14 @@ class TWC_Infantry_Modern_COIN_Woodland_MG: TWC_Infantry_Modern_Regular_Woodland
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
 	{
@@ -217,12 +223,14 @@ class TWC_Infantry_Modern_COIN_Woodland_Marksman: TWC_Infantry_Modern_Regular_Wo
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
 	{
@@ -266,7 +274,7 @@ class TWC_Infantry_Modern_COIN_Woodland_SectionCommander: TWC_Infantry_Modern_Re
 		"UK3CB_BAF_V_Osprey_SL_D",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -275,7 +283,7 @@ class TWC_Infantry_Modern_COIN_Woodland_SectionCommander: TWC_Infantry_Modern_Re
 		"UK3CB_BAF_V_Osprey_SL_D",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -348,13 +356,15 @@ class TWC_Infantry_Modern_COIN_Woodland_2iC: TWC_Infantry_Modern_Regular_Woodlan
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_EntrenchingTool"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_EntrenchingTool"
 	};
 	weapons[] =
 	{

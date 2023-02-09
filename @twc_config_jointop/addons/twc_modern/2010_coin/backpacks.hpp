@@ -29,6 +29,9 @@ class TWC_Backpack_Modern_COIN_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
 {
 	scope = 1;
 	scopeArsenal = 1;
+	class TransportItems{
+		ADD_ITEM(ACE_SpareBarrel,1);
+	};
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, 6);
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, 2);
@@ -85,7 +88,7 @@ class TWC_Backpack_Modern_COIN_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP_Me
 		ADD_ITEM(ACE_salineIV_250,4);
 		ADD_ITEM(ACE_tourniquet,4);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 };
 class TWC_Backpack_Modern_COIN_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C

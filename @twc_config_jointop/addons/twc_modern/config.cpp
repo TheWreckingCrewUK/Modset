@@ -13,6 +13,60 @@ class CfgPatches
 	};
 };
 
+class CfgEditorSubcategories {
+	//2020s
+	class TWC_Infantry_2020_Regular_Woodland {
+		displayName = "Infantry (2020s, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_Regular_Arctic {
+		displayName = "Infantry (2020s, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_Regular_NBC {
+		displayName = "Infantry (2020s, NBC)";
+	};
+	
+	class TWC_Infantry_2020_Dismounted_Woodland {
+		displayName = "Infantry (2020s, Dismounted, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_Dismounted_Arctic {
+		displayName = "Infantry (2020s, Dismounted, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_Dismounted_NBC {
+		displayName = "Infantry (2020s, Dismounted, NBC)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Woodland {
+		displayName = "Infantry (2020s, COIN, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Arctic {
+		displayName = "Infantry (2020s, COIN, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_COIN_NBC {
+		displayName = "Infantry (2020s, COIN, NBC)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Dismounted_Woodland {
+		displayName = "Infantry (2020s, COIN, Dismounted, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Dismounted_Arctic {
+		displayName = "Infantry (2020s, COIN, Dismounted, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Dismounted_NBC {
+		displayName = "Infantry (2020s, COIN, Dismounted, NBC)";
+	};
+	class TWC_Infantry_Modern_SF {
+		displayName = "Special Forces";
+	};
+};
+
 class EventHandlers;
 
 class CfgWeapons
@@ -75,6 +129,69 @@ class CfgVehicles
 		};
 
 		items[] = {
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
+		};
+
+		respawnItems[] = {
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put"
+		};
+
+		magazines[] = {};
+		respawnmagazines[] = {};
+
+		nightItems[] = {
+			MAG_2("Chemlight_green"),
+			"ACE_Flashlight_MX991",
+			"ACE_Flashlight_Maglite_ML300L"
+		};
+
+		nightLinkedItems[] = {
+			"twc_nightvision_gen3"
+		};
+	};
+	class TWC_Infantry_2020_Base: B_Soldier_base_F {
+		scope = 1;
+		displayName = "Base (2020)";
+		faction = "TWC_Modern";
+		CATEGORY(TWC_Infantry_Regular_Woodland)
+		icon = "iconMan";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
+		backpack = "";
+
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+		};
+
+		linkedItems[] = {
+			"mpx_virtus_taco_p",
+			"mpx_cobra_scrim",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"mpx_virtus_taco_p",
+			"mpx_cobra_scrim",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+
+		items[] = {
 			MEDICAL_LOADOUT
 		};
 
@@ -105,7 +222,6 @@ class CfgVehicles
 			"twc_nightvision_gen3"
 		};
 	};
-
 	class TWC_Infantry_Modern_Plane_Pilot: TWC_Infantry_Modern_Base
 	{
 		scope = 2;
@@ -246,6 +362,13 @@ class CfgVehicles
 	#include "2010_regular\arctic.hpp"
 	#include "2010_regular\arctic_dismounted.hpp"
 	
+	#include "2020_regular\woodland.hpp"
+	#include "2020_regular\woodland_dismounted.hpp"
+	#include "2020_regular\nbc.hpp"
+	#include "2020_regular\nbc_dismounted.hpp"
+	#include "2020_regular\arctic.hpp"
+	#include "2020_regular\arctic_dismounted.hpp"
+
 	#include "2010_coin\woodland.hpp"
 	#include "2010_coin\woodland_dismounted.hpp"
 	#include "2010_coin\nbc.hpp"
@@ -253,6 +376,15 @@ class CfgVehicles
 	#include "2010_coin\arctic.hpp"
 	#include "2010_coin\arctic_dismounted.hpp"
 	
+	#include "2020_coin\woodland.hpp"
+	#include "2020_coin\woodland_dismounted.hpp"
+	#include "2020_coin\nbc.hpp"
+	#include "2020_coin\nbc_dismounted.hpp"
+	#include "2020_coin\arctic.hpp"
+	#include "2020_coin\arctic_dismounted.hpp"
+	
+	#include "modern_sf\sas.hpp"
+	#include "modern_sf\sbs.hpp"
 };
 
 class CfgGroups
@@ -263,8 +395,10 @@ class CfgGroups
 		{
 			name = "TWC Groups Modern";
 			#include "2010_regular\groups.hpp"
+			#include "2020_regular\groups.hpp"
 			#include "2010_coin\groups.hpp"
-			class TWC_Groups_Modern_Generic
+			#include "2020_coin\groups.hpp"
+			class Generic
 			{
 				name = "Generic";
 				class Tank_Crew

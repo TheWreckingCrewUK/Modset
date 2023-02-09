@@ -17,6 +17,9 @@ class TWC_Backpack_Modern_Regular_Woodland_2iC: UK3CB_BAF_B_Bergen_MTP_Rifleman_
 {
 	scope = 1;
 	scopeArsenal = 1;
+	class TransportItems {
+		ADD_ITEM(ACE_SpareBarrel,1);
+	};
 	class TransportMagazines {
 		ADD_MAGA(UK3CB_BAF_556_30Rnd, 6);
 		ADD_MAGA(UK3CB_BAF_556_200Rnd, 2);
@@ -73,7 +76,7 @@ class TWC_Backpack_Modern_Regular_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP
 		ADD_ITEM(ACE_salineIV_250,4);
 		ADD_ITEM(ACE_tourniquet,4);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 };
 class TWC_Backpack_Modern_Regular_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
@@ -87,21 +90,33 @@ class TWC_Backpack_Modern_Regular_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MT
 };
 
 //Attachments
-class TWC_Backpack_Modern_Regular_Woodland_Javelin_Assistant: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
+class TWC_Backpack_Modern_Regular_Woodland_Javelin: UK3CB_BAF_B_Carryall_MTP
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 600;
 	class TransportWeapons {
 		ADD_WEAP(UK3CB_BAF_Javelin_Slung_Tube,1);
 	};
 };
-/*class TWC_Backpack_Modern_Regular_Woodland_Starstreak_Assistant: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
+class TWC_Backpack_Modern_Regular_Woodland_Starstreak_Gunner: UK3CB_BAF_B_Carryall_MTP
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 600;
-};*/
+	class TransportItems {
+		ADD_ITEM(law_starstreak2_cluItem_olive,1);
+	};
+	class TransportWeapons{
+		ADD_WEAP(TWC_Weapon_Starstreak2_lta_olive,1);
+	};
+};
+class TWC_Backpack_Modern_Regular_Woodland_Starstreak_Assistant: UK3CB_BAF_B_Carryall_MTP
+{
+	scope = 1;
+	scopeArsenal = 1;
+	class TransportWeapons {
+		ADD_WEAP(TWC_Weapon_Starstreak2_lta_olive,2);
+	};
+};
 class TWC_Backpack_Modern_Regular_Woodland_Spotter: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
