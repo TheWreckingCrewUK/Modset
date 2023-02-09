@@ -277,12 +277,6 @@ ace_interact_menu_moveToRoot__ACE_Equipment__grad_paceCountBeads_functions_reset
 ace_interact_menu_moveToRoot__ACE_Equipment__grad_paceCountBeads_functions_showBeads = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__grad_paceCountBeads_functions_startCounting = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__grad_paceCountBeads_functions_stopCounting = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__immersion_pops_start_cig = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__immersion_pops_stop_cig = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__immersion_pops_take_cig_from_pack = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__murshun_cigs_start_cig = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__murshun_cigs_stop_cig = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__murshun_cigs_take_cig_from_pack = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__TWC_AssembleTent = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__TWC_Convert_100_To_50 = false;
 ace_interact_menu_moveToRoot__ACE_Equipment__TWC_Convert_50_To_100 = false;
@@ -407,7 +401,7 @@ ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 0.6;
+force force ace_medical_AIDamageThreshold = 0.75;
 force force ace_medical_bleedingCoefficient = 0.45;
 force force ace_medical_blood_bloodLifetime = 900;
 force force ace_medical_blood_enabledFor = 2;
@@ -451,7 +445,7 @@ force force ace_medical_ivFlowRate = 1;
 force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 1;
 force force ace_medical_painUnconsciousChance = 0.8;
-force force ace_medical_playerDamageThreshold = 5;
+force force ace_medical_playerDamageThreshold = 4;
 force force ace_medical_spontaneousWakeUpChance = 0.299874;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 2.45;
 force force ace_medical_statemachine_AIUnconsciousness = true;
@@ -544,8 +538,8 @@ force force ace_finger_enabled = true;
 force force ace_finger_indicatorColor = [0.83,0.68,0.21,0.75];
 force force ace_finger_indicatorForSelf = true;
 force force ace_finger_maxRange = 4;
-force ace_finger_proximityScaling = true;
-force ace_finger_sizeCoef = 1;
+force ace_finger_proximityScaling = false;
+force ace_finger_sizeCoef = 0.75;
 
 // ACE Pylons
 force ace_pylons_enabledForZeus = true;
@@ -645,7 +639,7 @@ force force ace_ui_soldierVehicleWeaponInfo = true;
 force force ace_ui_staminaBar = false;
 force force ace_ui_stance = false;
 force force ace_ui_throwableCount = false;
-force force ace_ui_throwableName = true;
+force force ace_ui_throwableName = false;
 force force ace_ui_vehicleAltitude = true;
 force force ace_ui_vehicleCompass = true;
 force force ace_ui_vehicleDamage = true;
@@ -1085,6 +1079,80 @@ force acre_sys_zeus_zeusDefaultVoiceSource = false;
 // AI
 force cfp_autoEquipNVG = true;
 
+// BloodLust
+force force BloodLust_ArterialBloodSprayDuration = 5;
+force force BloodLust_ArterialBloodSprayFramerate = 80;
+force force BloodLust_ArterialBloodSprayProbability = 0.75;
+force force BloodLust_BleedDuration = 20;
+force force BloodLust_BleedFrequency = 0.016;
+force force BloodLust_BleedFrequencySlowdownAmount = 0.25;
+force force BloodLust_BleedFrequencyVariance = 0.033;
+force force BloodLust_BleedSmearDuration = 10;
+force force BloodLust_BleedSmearFrequencySlowdownAmount = 0.5;
+force force BloodLust_BleedSmearSpacing = 0.01;
+force force BloodLust_BleedSoundAudibleDistance = 10;
+force force BloodLust_BleedSoundAudibleVolume = 4;
+force force BloodLust_BleedSplatterJitterAmount = 0.15;
+force force BloodLust_BloodLustActivationDistance = 300;
+force force BloodLust_BloodPoolFramerate = 15;
+force force BloodLust_BloodSplatterAngleJitterAmount = 360;
+force force BloodLust_BloodSplatterGroundMaxDistance = 1.5;
+force force BloodLust_BloodSplatterIntersectionBlackList = "['#particlesource', 'dummyweapon.p3d', 'BloodSplatter_Plane', 'BloodSplatter_SprayPlane', 'WeaponHolderSimulated', 'WeaponHolder', 'Thing', 'Man', 'AllVehicles', 'Default']";
+force force BloodLust_BloodSplatterIntersectionMaxDistance = 4;
+force force BloodLust_BloodSplatterIterationCaliberMultiplier = 0.3;
+force force BloodLust_BloodSplatterIterations = 1;
+force force BloodLust_BloodSplatterJitterAmount = 0;
+force force BloodLust_BloodSplatterProbability = 1;
+force force BloodLust_BloodSprayFramerate = 90;
+force force BloodLust_BloodSprayIterations = 1;
+force force BloodLust_BloodSprayJitterAmount = 0.25;
+force force BloodLust_BloodSprayProbability = 0.5;
+force force BloodLust_BloodSpraySoundAudibleDistance = 7;
+force force BloodLust_BloodSpraySoundAudibleVolume = 1.5;
+force force BloodLust_BloodTrailCancelDistance = 2;
+force force BloodLust_BloodTrailDuration = 3;
+force force BloodLust_BloodTrailProbability = 0.75;
+force force BloodLust_BloodTrailSpacing = 0.075;
+force force BloodLust_BloodTrailTriggeringSelections = "['head']";
+force force BloodLust_CleanUpDelay = 30;
+force force BloodLust_CleanUpDistance = 100;
+force force BloodLust_ExplosionBloodSplatterIterationMultiplier = 30;
+force force BloodLust_ExplosionDamageThreshold = 0.2;
+force force BloodLust_ExplosionGibForceMultiplier = 0.3;
+force force BloodLust_FallingVaporizationGibSpeedScalar = 0.2;
+force force BloodLust_FallingVaporizationSpeedThreshold = 20;
+force force BloodLust_GibBleedDuration = 3;
+force force BloodLust_IsArterialBloodSprayEnabled = true;
+force force BloodLust_IsBleedingEnabled = true;
+force force BloodLust_IsBleedingTiedToUnitState = true;
+force force BloodLust_IsBloodLustEnabled = true;
+force force BloodLust_IsBloodLustEnabledForDeadUnits = false;
+force force BloodLust_IsBloodPoolingEnabled = true;
+force force BloodLust_IsBloodSprayEnabled = true;
+force force BloodLust_IsBloodTrailEnabled = true;
+force force BloodLust_IsCleanUpEnabled = true;
+force force BloodLust_IsFallingVaporizationEnabled = false;
+force force BloodLust_IsMultiplayerCoreEnabledInSingleplayer = false;
+force force BloodLust_IsSplatteringEnabledForUnitsInVehicles = true;
+force force BloodLust_IsUnderCharacterBloodSplatterEnabled = true;
+force force BloodLust_IsUnitVehicleCollisionEffectsEnabled = true;
+force force BloodLust_IsVaporizationEnabled = false;
+force force BloodLust_IsVaporizationEnabledOnPlayer = false;
+force force BloodLust_IsVaporizedGibCamSwitchEnabled = false;
+force force BloodLust_IsVaporizedHeatWaveEnabled = false;
+force force BloodLust_IsVehicleCrewVaporizationEnabled = false;
+force force BloodLust_MaxArterialBloodSprays = 20;
+force force BloodLust_MaxBleedSplatters = 500;
+force force BloodLust_MaxBloodSplatters = 500;
+force force BloodLust_MaxBloodSprays = 20;
+force force BloodLust_MaxGibs = 30;
+force force BloodLust_UnitVehicleVaporizationCollisionSpeed = 1000;
+force force BloodLust_UnitVehicleVaporizationProbability = 0;
+force force BloodLust_VaporizationAmmoClassnames = "[]";
+force force BloodLust_VaporizationDamageThreshold = 1;
+force force BloodLust_VaporizedBloodSplatterIterations = 10;
+force force BloodLust_VaporizedBloodSplatterJitterAmount = 10;
+
 // Community Base Addons
 cba_diagnostic_ConsoleIndentType = -1;
 force cba_diagnostic_watchInfoRefreshRate = 0.2;
@@ -1173,6 +1241,96 @@ force IC_setting_limitGroundTextures = true;
 force IC_setting_maxDebris = 100;
 force IC_setting_maxDebrisCountPerCrater = 6;
 force IC_setting_maxGroundTextures = 100;
+
+// Simple Suppress
+force force simplesuppress_suppress_checkLOS = true;
+force force simplesuppress_suppress_overlayFadeoutTime = 11;
+force force simplesuppress_suppress_overlayOpacity = 1;
+force force simplesuppress_suppress_overlayTexture = 2;
+force force simplesuppress_suppress_projectileMaxDistance = 5;
+force force simplesuppress_suppress_shooterMinDistance = 0;
+
+// TSP Breach
+force tsp_cba_breach = true;
+force tsp_cba_breach_ace = true;
+force tsp_cba_breach_ace_locking = true;
+force tsp_cba_breach_ammo = "[""B_12Gauge_Slug_NoCartridge"", ""rhs_ammo_12g_slug"", ""rhs_ammo_12g_00buckshot"",""CUP_8Rnd_B_Beneli_74Slug"",""CUP_8Rnd_B_Beneli_74Pellets""]";
+force tsp_cba_breach_ammoMultiplier = 1;
+force tsp_cba_breach_autoTime = 5;
+force tsp_cba_breach_lockBlacklist = "[]";
+force tsp_cba_breach_lockDoor = 0;
+force tsp_cba_breach_lockHouse = 0;
+force tsp_cba_breach_military = "[
+""Land_Budova4_in"",
+""Land_Budova4"",
+""Barrack2"",
+""Land_Barrack2"",
+""Land_MilOffices_V1_F"",
+""Land_Mil_Barracks_L_EP1"",
+""Land_Barrack2_EP1"",
+""Land_Mil_Barracks_EP1"",
+""Land_Mil_Barracks_no_interior_EP1_CUP"",
+""Land_Mil_Barracks_i_EP1"",
+""Land_Mil_Barracks_L"",
+""Land_Mil_Barracks_no_interior_CUP"",
+""Land_Mil_Barracks_i"",
+""Land_Mil_Barracks"",
+""Land_GuardHouse_02_F"",
+""Land_Mil_Guardhouse_EP1"",
+""Land_Mil_Guardhouse"",
+""Land_Mil_Guardhouse_no_interior_CUP"",
+""Land_GuardHouse_02_grey_F"",
+""Land_Barracks_03_F"",
+""Land_Barracks_05_F"",
+""Land_Barracks_02_F"",
+""Land_Barracks_04_F"",
+""Land_ControlTower_02_F"",
+""Land_Mil_Guardhouse_no_interior_EP1_CUP"",
+""Land_Radar_01_HQ_F"",
+""Land_i_Barracks_V2_F"",
+""Land_i_Barracks_V1_F"",
+""Land_u_Barracks_V2_F"",
+""Land_Barracks_06_F"",
+""Land_Mil_House_dam_EP1"",
+""Land_Barracks_01_grey_F"",
+""Land_Barracks_01_dilapidated_F"",
+""Land_Mil_House_EP1"",
+""Land_Army_hut2_int"",
+""Land_Barracks_01_camo_F"",
+""Land_Army_hut_int"",
+""Land_Army_hut3_long"",
+""Land_Army_hut2"",
+""Land_Army_hut3_long_int""
+]";
+force tsp_cba_breach_reinforced = "[
+""Land_Ammostore2"",
+""Land_Garaz_s_tankem"",
+""Land_Garaz_bez_tanku"",
+""Land_Cargo_House_V4_F"",
+""Land_Cargo_Tower_V1_F"",
+""Land_Cargo_HQ_V4_F"",
+""Land_Cargo_Tower_V1_No4_F"",
+""Land_Cargo_Tower_V1_No5_F"",
+""Land_Cargo_Tower_V1_No7_F"",
+""Land_Cargo_Tower_V4_F"",
+""Land_Cargo_Tower_V1_No2_F"",
+""Land_Cargo_Tower_V2_F"",
+""Land_Cargo_Tower_V3_F"",
+""Land_Cargo_Tower_V1_No1_F"",
+""Land_Cargo_Tower_V1_No3_F"",
+""Land_Cargo_HQ_V2_F"",
+""Land_Medevac_HQ_V1_F"",
+""Land_Cargo_HQ_V1_F"",
+""Land_Cargo_House_V2_F"",
+""Land_Medevac_house_V1_F"",
+""Land_Cargo_Tower_V1_No6_F"",
+""Land_Cargo_House_V1_F"",
+""Land_Cargo_HQ_V3_F"",
+""Land_Cargo_House_V3_F""
+]";
+force tsp_cba_breach_vanilla = false;
+force tsp_cba_breach_wall_physics = false;
+force tsp_cba_breach_wall_velocity = "[0,0,-0.5]";
 
 // TWC
 TWC_Core_BroadcastMode = false;
