@@ -66,6 +66,7 @@ class CfgFunctions {
 			
 			/** Init **/
 			class postInit {};
+			class stationaryinit {};
 		};
 		
 		class modules {

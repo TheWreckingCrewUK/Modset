@@ -17,6 +17,9 @@ params["_unit"];
 
 _group = group _unit;
 
+//Variable used to delay caching or dynamic simulation until units are at their defense point.
+_group setVariable ["twc_cacheStationary",true,true]; 
+
 if (isServer || !hasInterface) then {
 	{
 		_x forceSpeed 0;
