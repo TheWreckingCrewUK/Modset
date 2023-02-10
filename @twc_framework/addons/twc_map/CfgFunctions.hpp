@@ -6,6 +6,7 @@ class CfgFunctions {
 			/** INIT **/
 			class initPost {};
 			class preInit {};
+			class initServerPost {};
 
 			/** CORE **/
 			class unfoldMap {};

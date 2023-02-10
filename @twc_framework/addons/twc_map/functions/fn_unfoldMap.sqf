@@ -43,6 +43,7 @@ _callerMarkers = [];
 		};
 
 		_mapObject setVariable ["twc_map_owner", getPlayerUID _caller, true];
+		_mapObject setVariable ["twc_mapMarkerOwner", _caller, true];
 
 		{
 			private "_string";
