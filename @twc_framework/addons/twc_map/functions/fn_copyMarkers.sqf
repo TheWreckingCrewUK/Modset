@@ -12,7 +12,7 @@ _ownArray = player getVariable ["twc_localMarkers",[]];
 	_delete = 0;
 	_test = _x select 1;
 	{
-		if(_test == (_x select 1))then{
+		if( str _test == str (_x select 1))then{
 			_delete = 1;
 		};
 	}forEach _ownArray;
@@ -23,7 +23,7 @@ _ownArray = player getVariable ["twc_localMarkers",[]];
 
 //Add other markers to your map
 {
-	_x params ["_pos", "_dir", "_type", "_shape", "_size", "_text", "_alpha"];
+	_x params ["_name","_pos", "_dir", "_type", "_shape", "_size", "_text", "_alpha"];
 	
 	_marker = createMarkerLocal [str _pos, _pos];
 	_marker setMarkerDirLocal _dir;
