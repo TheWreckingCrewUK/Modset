@@ -62,22 +62,29 @@ addMissionEventHandler ["MarkerCreated",{
 	_owner setVariable ["twc_localMarkers", _array, true];
 }];
 
-addMissionEventHandler ["MarkerDeleted", {
-	params ["_marker", "_local"];
+[]spawn{
+	//we spawn and wait until mission starts
+	waitUntil { time > 0 };
+	0 enableChannel false;
+	4 enableChannel [true, false];
 	
-	//If the server deletes a marker it won't affect us
-	if(!(_local))exitWith {systemChat "How isn't it local"};
-	
-	//We need to delete this marker from the players twc_localMarkers
-	_array = player getVariable ["twc_localMarkers",[]];
-	
-	//I don't know enough about c++ to explain this, but it must be done this way. Arrays man
-	_arrayEdit = _array;
-	{
-		//Cant delete more than one at a time so we can exit
-		if((_x select 0) == _marker)exitWith{
-			_arrayEdit deleteAt _forEachIndex;
-			player setVariable ["twc_localMarkers",_arrayEdit,true];
-		};
-	}forEach _array;
-}];
+	addMissionEventHandler ["MarkerDeleted", {
+		params ["_marker", "_local"];
+		
+		//If the server deletes a marker it won't affect us
+		if(!(_local))exitWith {systemChat "How isn't it local"};
+		
+		//We need to delete this marker from the players twc_localMarkers
+		_array = player getVariable ["twc_localMarkers",[]];
+		
+		//I don't know enough about c++ to explain this, but it must be done this way. Arrays man
+		_arrayEdit = _array;
+		{
+			//Cant delete more than one at a time so we can exit
+			if((_x select 0) == _marker)exitWith{
+				_arrayEdit deleteAt _forEachIndex;
+				player setVariable ["twc_localMarkers",_arrayEdit,true];
+			};
+		}forEach _array;
+	}];
+};
