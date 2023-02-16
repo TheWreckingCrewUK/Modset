@@ -1,7 +1,12 @@
 params ["_mapID"];
 
 _mapOwner = _mapID getVariable "twc_mapMarkerOwner";
-if(_mapOwner == objNull)exitWith{hint "The Map has no owner"};
+
+//if noone owns it then we can just exit as their are no markers
+if(_mapOwner == objNull)exitWith{["twc_map_opened", [_mapID]] call CBA_fnc_localEvent};
+
+//Exits if it is your own map
+if(_mapOwner == player)exitWith{["twc_map_opened", [_mapID]] call CBA_fnc_localEvent};
 
 //Goal here is to only show their map markers and not your own. Even if you copied them. Since its not your map
 //Step 1 hide your own
