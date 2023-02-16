@@ -20,7 +20,6 @@ if !(hasInterface) exitWith {};
 
 	if (twc_map_lookingAt isEqualTo _mapID) then {
 		twc_map_lookingAt = 0;
-		[] call twc_map_fnc_removeTempMarkers;
 		openMap false;
 	};
 }] call CBA_fnc_addEventHandler;
@@ -38,7 +37,14 @@ if !(hasInterface) exitWith {};
 
 	openMap true;
 	ctrlSetFocus ((findDisplay 12) displayCtrl 51);
+	
+	//moved here with an ugly sleep
+	[]spawn{
+		waitUntil {sleep 0.5; !visibleMap};
+		[] call twc_map_fnc_removeTempMarkers;
+	};
 }] call CBA_fnc_addEventHandler;
+
 
 //Adding mission event handlers for map creation and deletion
 addMissionEventHandler ["MarkerCreated",{
@@ -46,6 +52,9 @@ addMissionEventHandler ["MarkerCreated",{
 	
 	//Ignores code when created by server or triggers
 	if(!(_local))exitWith{};
+	
+	//Ignore Global markers
+	if(_channelNumber == 0)exitWith{};
 	
 	//Gets markerInfo needed to copy
 	_pos = getMarkerPos _marker;

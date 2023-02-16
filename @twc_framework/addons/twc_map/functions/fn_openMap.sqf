@@ -37,5 +37,3 @@ _mapOwnerMarkers = _mapOwner getVariable ["twc_localMarkers",[]];
 
 player setVariable ["twc_map_borrowedMarkers",_mapOwnerMarkers];
 player setVariable ["twc_map_hiddenMarkers",_newArray];
-
-["twc_map_opened", [_mapID]] call CBA_fnc_localEvent;
