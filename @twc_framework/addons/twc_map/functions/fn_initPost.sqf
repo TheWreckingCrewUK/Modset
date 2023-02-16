@@ -40,56 +40,6 @@ if !(hasInterface) exitWith {};
 	ctrlSetFocus ((findDisplay 12) displayCtrl 51);
 }] call CBA_fnc_addEventHandler;
 
-["ace_settingsInitialized", {
-	["twc_map_newMarker", {
-		params ["_caller", "_markerArray"];
-
-		// safety check
-		if ((player distance _caller) > ace_map_gestures_maxRange) exitWith {};
-		if !(_markerArray isEqualTo []) exitWith {};
-
-		// create the new marker locally
-		_newMarker = createMarkerLocal [_markerArray select 0, _markerArray select 2];
-		
-		if ((_markerArray select 1) == "ICON") then {
-			_newMarker setMarkerTypeLocal (_markerArray select 5);
-			_newMarker setMarkerTextLocal (_markerArray select 7);
-		} else {
-			_newMarker setMarkerShapeLocal (_markerArray select 1);
-			_newMarker setMarkerBrushLocal (_markerArray select 6);
-			_newMarker setMarkerSizeLocal (_markerArray select 8);
-		};
-
-		_newMarker setMarkerColorLocal (_markerArray select 3);
-		_newMarker setMarkerDirLocal (_markerArray select 4);
-	}] call CBA_fnc_addEventHandler;
-	
-	// Used for when copying a lot of markers, say from a map board etc.
-	["twc_map_newMarkers", {
-		params ["_caller", "_markersArray"];
-
-		// helps cut performance loss, even if a bit redundant
-		if ((player distance _caller) > ace_map_gestures_maxRange) exitWith {};
-		if !(_markersArray isEqualTo []) exitWith {};
-
-		{
-			["twc_map_newMarker", [_caller, _x]] call CBA_fnc_localEvent;
-		} forEach _markersArray;
-	}] call CBA_fnc_addEventHandler;
-	
-	/* ["created", {
-		params ["_marker"];
-		
-		
-	}] call CBA_fnc_addMarkerEventHandler;
-	
-	["deleted", {
-		params ["_marker"];
-		
-		
-	}] call CBA_fnc_addMarkerEventHandler; */
-}] call CBA_fnc_addEventHandler;
-
 //Adding mission event handlers for map creation and deletion
 addMissionEventHandler ["MarkerCreated",{
 	params ["_marker", "_channelNumber", "_owner", "_local"];
@@ -116,17 +66,18 @@ addMissionEventHandler ["MarkerDeleted", {
 	params ["_marker", "_local"];
 	
 	//If the server deletes a marker it won't affect us
-	if(!(_local))exitWith {};
+	if(!(_local))exitWith {systemChat "How isn't it local"};
 	
 	//We need to delete this marker from the players twc_localMarkers
 	_array = player getVariable ["twc_localMarkers",[]];
+	
+	//I don't know enough about c++ to explain this, but it must be done this way. Arrays man
+	_arrayEdit = _array;
 	{
-		_delete = 0;
-		if((_x select 1) == _marker)then{
-			_delete = 1;
-		};
-		if(_delete == 1)then{
-			_array = _array - _x;
+		//Cant delete more than one at a time so we can exit
+		if((_x select 0) == _marker)exitWith{
+			_arrayEdit deleteAt _forEachIndex;
+			player setVariable ["twc_localMarkers",_arrayEdit,true];
 		};
 	}forEach _array;
 }];

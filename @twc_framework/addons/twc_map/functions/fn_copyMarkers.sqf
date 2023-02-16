@@ -1,6 +1,6 @@
-params ["_mapObject"];
+params ["_mapID"];
 
-_mapOwner = _mapObject getVariable "twc_mapMarkerOwner";
+_mapOwner = _mapID getVariable "twc_mapMarkerOwner";
 if(_mapOwner == objNull)exitWith{hint "The Map has no owner"};
 
 //get copyer and copy'd markers
