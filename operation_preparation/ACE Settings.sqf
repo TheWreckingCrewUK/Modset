@@ -401,7 +401,7 @@ ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 0.75;
+force force ace_medical_AIDamageThreshold = 1;
 force force ace_medical_bleedingCoefficient = 0.45;
 force force ace_medical_blood_bloodLifetime = 900;
 force force ace_medical_blood_enabledFor = 2;
@@ -445,7 +445,7 @@ force force ace_medical_ivFlowRate = 1;
 force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 1;
 force force ace_medical_painUnconsciousChance = 0.8;
-force force ace_medical_playerDamageThreshold = 4;
+force force ace_medical_playerDamageThreshold = 3.5;
 force force ace_medical_spontaneousWakeUpChance = 0.299874;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 2.45;
 force force ace_medical_statemachine_AIUnconsciousness = true;
@@ -1079,6 +1079,11 @@ force acre_sys_zeus_zeusDefaultVoiceSource = false;
 // AI
 force cfp_autoEquipNVG = true;
 
+// Blastcore Murr Edition
+WarFXPE_BlastWave = 1;
+WarFXPE_HeatHaze = true;
+WarFXPE_WeatherEffects = true;
+
 // BloodLust
 force force BloodLust_ArterialBloodSprayDuration = 5;
 force force BloodLust_ArterialBloodSprayFramerate = 80;
@@ -1251,16 +1256,16 @@ force force simplesuppress_suppress_projectileMaxDistance = 5;
 force force simplesuppress_suppress_shooterMinDistance = 0;
 
 // TSP Breach
-force tsp_cba_breach = true;
-force tsp_cba_breach_ace = true;
-force tsp_cba_breach_ace_locking = true;
-force tsp_cba_breach_ammo = "[""B_12Gauge_Slug_NoCartridge"", ""rhs_ammo_12g_slug"", ""rhs_ammo_12g_00buckshot"",""CUP_8Rnd_B_Beneli_74Slug"",""CUP_8Rnd_B_Beneli_74Pellets""]";
-force tsp_cba_breach_ammoMultiplier = 1;
-force tsp_cba_breach_autoTime = 5;
-force tsp_cba_breach_lockBlacklist = "[]";
-force tsp_cba_breach_lockDoor = 0;
-force tsp_cba_breach_lockHouse = 0;
-force tsp_cba_breach_military = "[
+force force tsp_cba_breach = true;
+force force tsp_cba_breach_ace = false;
+force force tsp_cba_breach_ace_locking = false;
+force force tsp_cba_breach_ammo = "[""B_12Gauge_Slug_NoCartridge"", ""rhs_ammo_12g_slug"", ""rhs_ammo_12g_00buckshot"",""CUP_8Rnd_B_Beneli_74Slug"",""CUP_8Rnd_B_Beneli_74Pellets""]";
+force force tsp_cba_breach_ammoMultiplier = 1;
+force force tsp_cba_breach_autoTime = 5;
+force force tsp_cba_breach_lockBlacklist = "[]";
+force force tsp_cba_breach_lockDoor = 0.8;
+force force tsp_cba_breach_lockHouse = 0.6;
+force force tsp_cba_breach_military = "[
 ""Land_Budova4_in"",
 ""Land_Budova4"",
 ""Barrack2"",
@@ -1302,7 +1307,7 @@ force tsp_cba_breach_military = "[
 ""Land_Army_hut2"",
 ""Land_Army_hut3_long_int""
 ]";
-force tsp_cba_breach_reinforced = "[
+force force tsp_cba_breach_reinforced = "[
 ""Land_Ammostore2"",
 ""Land_Garaz_s_tankem"",
 ""Land_Garaz_bez_tanku"",
@@ -1328,9 +1333,9 @@ force tsp_cba_breach_reinforced = "[
 ""Land_Cargo_HQ_V3_F"",
 ""Land_Cargo_House_V3_F""
 ]";
-force tsp_cba_breach_vanilla = false;
-force tsp_cba_breach_wall_physics = false;
-force tsp_cba_breach_wall_velocity = "[0,0,-0.5]";
+force force tsp_cba_breach_vanilla = true;
+force force tsp_cba_breach_wall_physics = false;
+force force tsp_cba_breach_wall_velocity = "[0,0,-0.5]";
 
 // TWC
 TWC_Core_BroadcastMode = false;
