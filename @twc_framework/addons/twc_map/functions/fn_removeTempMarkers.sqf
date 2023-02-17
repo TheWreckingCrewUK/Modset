@@ -7,7 +7,7 @@ _ownArray = player getVariable ["twc_map_hiddenMarkers",[]];
 //delete the borrowed markers
 _mapOwnerMarkers = player getVariable ["twc_map_borrowedMarkers",[]];
 {
-	deleteMarkerLocal (_x select 0); 
+	deleteMarkerLocal _x; 
 }forEach _mapOwnerMarkers;
 
 //resets who you borrowed from
