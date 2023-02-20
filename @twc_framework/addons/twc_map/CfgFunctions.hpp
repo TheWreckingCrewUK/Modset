@@ -6,6 +6,7 @@ class CfgFunctions {
 			/** INIT **/
 			class initPost {};
 			class preInit {};
+			class initPostServer {};
 
 			/** CORE **/
 			class unfoldMap {};
@@ -13,6 +14,8 @@ class CfgFunctions {
 			class openMap {};
 			class copyMarkers {};
 			class removeTempMarkers {};
+			class saveToServer {};
+			class getFromServer {};
 		};
 	};
 };

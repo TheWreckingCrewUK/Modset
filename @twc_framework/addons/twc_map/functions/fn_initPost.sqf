@@ -47,29 +47,6 @@ if !(hasInterface) exitWith {};
 
 
 //Adding mission event handlers for map creation and deletion
-addMissionEventHandler ["MarkerCreated",{
-	params ["_marker", "_channelNumber", "_owner", "_local"];
-	
-	//Ignores code when created by server or triggers
-	if(!(_local))exitWith{};
-	
-	//Ignore Global markers
-	if(_channelNumber == 0)exitWith{};
-	
-	//Gets markerInfo needed to copy
-	_pos = getMarkerPos _marker;
-	_dir = markerDir _marker;
-	_type = getMarkerType _marker;
-	_shape = markerShape _marker;
-	_size = getMarkerSize _marker;
-	_text = markerText _marker;
-	_alpha = markerAlpha _marker;
-	
-	_markerInfo = [_marker, _pos, _dir, _type, _shape, _size, _text, _alpha];
-	_array = _owner getVariable ["twc_localMarkers", []];
-	_array pushback _markerInfo;
-	_owner setVariable ["twc_localMarkers", _array, true];
-}];
 
 []spawn{
 	//we spawn and wait until mission starts
@@ -77,11 +54,40 @@ addMissionEventHandler ["MarkerCreated",{
 	0 enableChannel false;
 	4 enableChannel [true, false];
 	
+	addMissionEventHandler ["MarkerCreated",{
+		params ["_marker", "_channelNumber", "_owner", "_local"];
+		
+		//Ignores code when created by server or triggers
+		if(!(_local))exitWith{};
+		
+		//Ignore Global markers
+		if(_channelNumber == 0)exitWith{};
+		
+		//Gets markerInfo needed to copy
+		_pos = getMarkerPos _marker;
+		_dir = markerDir _marker;
+		_type = getMarkerType _marker;
+		_shape = markerShape _marker;
+		_size = getMarkerSize _marker;
+		_text = markerText _marker;
+		_alpha = markerAlpha _marker;
+		_color = markerColor _marker;
+		
+		//Store it on the player for putting down maps
+		_markerInfo = [_marker, _pos, _dir, _type, _shape, _size, _text, _alpha, _color];
+		_array = _owner getVariable ["twc_localMarkers", []];
+		_array pushback _markerInfo;
+		_owner setVariable ["twc_localMarkers", _array, true];
+		
+		//Saves to server for disconnects
+		[name _owner,_array] remoteExecCall ["twc_fnc_saveToServer",2,false];
+	}];
+	
 	addMissionEventHandler ["MarkerDeleted", {
 		params ["_marker", "_local"];
 		
 		//If the server deletes a marker it won't affect us
-		if(!(_local))exitWith {systemChat "How isn't it local"};
+		if(!(_local))exitWith {};
 		
 		//We need to delete this marker from the players twc_localMarkers
 		_array = player getVariable ["twc_localMarkers",[]];
@@ -96,4 +102,24 @@ addMissionEventHandler ["MarkerCreated",{
 			};
 		}forEach _array;
 	}];
+	
+	//Finally now that we are loaded in lets check the server for old map markers
+	_markerArray = [name player] remoteExecCall ["twc_fnc_getFromServer",2,false];
+	{
+		_x params ["_name","_pos", "_dir", "_type", "_shape", "_size", "_text", "_alpha", "_color"];
+		
+		_marker = createMarkerLocal [str _pos, _pos];
+		_marker setMarkerDirLocal _dir;
+		_marker setMarkerTypeLocal _type;
+		_marker setMarkerShapeLocal _shape;
+		_marker setMarkerSizeLocal _size;
+		_marker setMarkerTextLocal _text;
+		_marker setMarkerAlphaLocal _alpha;
+		_marker setMarkerColorLocal _color;
+		
+		//Add them to your own player variable;
+		_ownArray pushback _x;
+		player setVariable ["twc_localMarkers", _ownArray, true];
+		
+	}forEach _markerArray;
 };
