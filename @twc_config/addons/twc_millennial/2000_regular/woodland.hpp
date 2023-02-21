@@ -194,12 +194,14 @@ class TWC_Infantry_2000_Regular_Woodland_Autorifleman: TWC_Infantry_2000_Regular
 	{
 		MAG_2("UK3CB_BAF_556_200Rnd"),
 		"UK3CB_BAF_556_200Rnd_T",
+		"ACE_SpareBarrel_Item",
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
 		MAG_2("UK3CB_BAF_556_200Rnd"),
 		"UK3CB_BAF_556_200Rnd_T",
+		"ACE_SpareBarrel_Item",
 		MAG_2("SmokeShell")
 	};
 };

@@ -534,14 +534,14 @@ class UK3CB_BAF_L7A2: Rifle_Long_Base_F {
 class UK3CB_BAF_L110_Base:Rifle_Long_Base_F {
 	ace_overheating_allowSwapBarrel = 1;
 	ace_overheating_mrbs = 2000;
-	ace_overheating_dispersion = 11;
+	ace_overheating_dispersion = 10;
 	ace_overheating_slowdownFactor = 1.2;
 };
 class UK3CB_BAF_L110_556_Base: UK3CB_BAF_L110_Base {
 	recoil = "twc_mg_556";
 	recoilProne = "twc_mg_556_prone";
 	class FullAuto: Mode_FullAuto {
-		dispersion = 0.007;
+		dispersion = 0.006;
 	};
 };
 
