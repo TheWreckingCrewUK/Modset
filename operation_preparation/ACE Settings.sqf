@@ -1249,10 +1249,10 @@ force IC_setting_maxGroundTextures = 100;
 
 // Simple Suppress
 force force simplesuppress_suppress_checkLOS = true;
-force force simplesuppress_suppress_overlayFadeoutTime = 11;
+force force simplesuppress_suppress_overlayFadeoutTime = 8;
 force force simplesuppress_suppress_overlayOpacity = 1;
 force force simplesuppress_suppress_overlayTexture = 2;
-force force simplesuppress_suppress_projectileMaxDistance = 5;
+force force simplesuppress_suppress_projectileMaxDistance = 3.5;
 force force simplesuppress_suppress_shooterMinDistance = 0;
 
 // TSP Breach
@@ -1263,8 +1263,8 @@ force force tsp_cba_breach_ammo = "[""B_12Gauge_Slug_NoCartridge"", ""rhs_ammo_1
 force force tsp_cba_breach_ammoMultiplier = 1;
 force force tsp_cba_breach_autoTime = 5;
 force force tsp_cba_breach_lockBlacklist = "[]";
-force force tsp_cba_breach_lockDoor = 0.8;
-force force tsp_cba_breach_lockHouse = 0.6;
+force force tsp_cba_breach_lockDoor = 0;
+force force tsp_cba_breach_lockHouse = 0;
 force force tsp_cba_breach_military = "[
 ""Land_Budova4_in"",
 ""Land_Budova4"",
@@ -1333,7 +1333,7 @@ force force tsp_cba_breach_reinforced = "[
 ""Land_Cargo_HQ_V3_F"",
 ""Land_Cargo_House_V3_F""
 ]";
-force force tsp_cba_breach_vanilla = true;
+force force tsp_cba_breach_vanilla = false;
 force force tsp_cba_breach_wall_physics = false;
 force force tsp_cba_breach_wall_velocity = "[0,0,-0.5]";
 
