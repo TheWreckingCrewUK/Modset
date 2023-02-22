@@ -24,7 +24,7 @@ _newArray = [];
 _mapOwnerMarkers = _mapOwner getVariable ["twc_localMarkers",[]];
 _mapArrayToDelete = [];
 {
-	_x params ["_name","_pos", "_dir", "_type", "_shape", "_size", "_text", "_alpha", "_color"];
+	_x params ["_name","_pos", "_dir", "_type", "_shape", "_size", "_text", "_alpha", "_color","_polyline"];
 	
 	_marker = createMarkerLocal [str _pos, _pos];
 	_marker setMarkerDirLocal _dir;

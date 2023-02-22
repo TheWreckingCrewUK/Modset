@@ -50,14 +50,14 @@ if !(hasInterface) exitWith {};
 
 []spawn{
 	//we spawn and wait until mission starts
-	waitUntil { time > 0 };
+	waitUntil {sleep 1; time > 0 && name player != "No Vehicle" };
 	0 enableChannel false;
 	4 enableChannel [true, false];
 	
 	if(isNil "twc_disconnectMarkers")then{
-	twc_disconnectMarkers = [];
-	publicVariable "twc_disconnectMarkers";
-};
+		twc_disconnectMarkers = [];
+		publicVariable "twc_disconnectMarkers";
+	};
 	
 	addMissionEventHandler ["MarkerCreated",{
 		params ["_marker", "_channelNumber", "_owner", "_local"];
@@ -68,24 +68,36 @@ if !(hasInterface) exitWith {};
 		//Ignore Global markers
 		if(_channelNumber == 0)exitWith{};
 		
-		//Gets markerInfo needed to copy
-		_pos = getMarkerPos _marker;
-		_dir = markerDir _marker;
-		_type = getMarkerType _marker;
-		_shape = markerShape _marker;
-		_size = getMarkerSize _marker;
-		_text = markerText _marker;
-		_alpha = markerAlpha _marker;
-		_color = markerColor _marker;
-		
-		//Store it on the player for putting down maps
-		_markerInfo = [_marker, _pos, _dir, _type, _shape, _size, _text, _alpha, _color];
-		_array = _owner getVariable ["twc_localMarkers", []];
-		_array pushback _markerInfo;
-		_owner setVariable ["twc_localMarkers", _array, true];
-		
-		//Saves to server for disconnects
-		[name _owner,_array] call twc_map_fnc_saveToServer;
+		//We need to sleep cause arma doesn't know about marker dirs and color immediatly always
+		[_marker, _ownArray] spawn{
+			params ["_marker", "_owner"];
+			sleep 0.5;
+			//Gets markerInfo needed to copy
+			_pos = getMarkerPos _marker;
+			_dir = markerDir _marker;
+			_type = getMarkerType _marker;
+			_shape = markerShape _marker;
+			_size = getMarkerSize _marker;
+			_text = markerText _marker;
+			_alpha = markerAlpha _marker;
+			_color = markerColor _marker;
+			
+			//PolyLine is a special Case
+			if(markerShape _marker == "POLYLINE")then{
+				_polyline = markerPolyline _marker;
+			}else{
+				_polyline = false;
+			};
+			
+			//Store it on the player for putting down maps
+			_markerInfo = [_marker, _pos, _dir, _type, _shape, _size, _text, _alpha, _color,_polyline];
+			_array = _owner getVariable ["twc_localMarkers", []];
+			_array pushback _markerInfo;
+			_owner setVariable ["twc_localMarkers", _array, true];
+			
+			//Saves to server for disconnects
+			[name _owner,_array] call twc_map_fnc_saveToServer;
+		};
 	}];
 	
 	addMissionEventHandler ["MarkerDeleted", {
@@ -111,7 +123,7 @@ if !(hasInterface) exitWith {};
 	//Finally now that we are loaded in lets check the server for old map markers
 	_markerArray = [name player] call twc_map_fnc_getFromServer;
 	{
-		_x params ["_name","_pos", "_dir", "_type", "_shape", "_size", "_text", "_alpha", "_color"];
+		_x params ["_name","_pos", "_dir", "_type", "_shape", "_size", "_text", "_alpha", "_color", "_polyline"];
 		
 		_marker = createMarkerLocal [str _pos, _pos];
 		_marker setMarkerDirLocal _dir;
@@ -122,9 +134,11 @@ if !(hasInterface) exitWith {};
 		_marker setMarkerAlphaLocal _alpha;
 		_marker setMarkerColorLocal _color;
 		
+		if(str _polyline != "false")then{
+			_marker setMarkerPolylineLocal _polyline;
+		};
 		//Add them to your own player variable;
-		_ownArray pushback _x;
-		player setVariable ["twc_localMarkers", _ownArray, true];
-		
+		_ownArray pushback _x;		
 	}forEach _markerArray;
+	player setVariable ["twc_localMarkers",_markerArray,true];
 };
