@@ -436,29 +436,29 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Boys_Gunner: TWC_Infantry_WW2_UK_Late_W
 	backpack = "TWC_Backpack_WW2_UK_Early_Boys_Gunner";
 	weapons[] =
 	{
-		"BBB_BoysATR",
+		"CSA38_boys",
 		"LIB_Webley_mk6",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"BBB_BoysATR",
+		"CSA38_boys",
 		"LIB_Webley_mk6",
 		"Throw",
 		"Put"
 	};
 	magazines[] =
 	{
-		MAG_4("BBB_5Rnd_1397x99_B"),
-		MAG_4("BBB_5Rnd_1397x99_T"),
+		MAG_4("CSA38_5_13_9x99mmB"),
+		MAG_4("CSA38_5_13_9x99mmB"),
 		MAG_3("LIB_6Rnd_455"),
 		MAG_2("LIB_No82")
 	};
 	respawnmagazines[] =
 	{
-		MAG_4("BBB_5Rnd_1397x99_B"),
-		MAG_4("BBB_5Rnd_1397x99_T"),
+		MAG_4("CSA38_5_13_9x99mmB"),
+		MAG_4("CSA38_5_13_9x99mmB"),
 		MAG_3("LIB_6Rnd_455"),
 		MAG_2("LIB_No82")
 	};

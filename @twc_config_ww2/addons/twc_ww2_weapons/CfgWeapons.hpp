@@ -38,7 +38,7 @@ class CfgWeapons {
 
 	class Rifle_Base_F;
 
-	class BBB_BoysATR: Rifle_Base_F {
+	class CSA38_boys: Rifle_Base_F {
 		class EventHandlers {
 			fired = "_this call twc_ww2_weapons_fnc_boys_fire.sqf;";
 		};

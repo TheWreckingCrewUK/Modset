@@ -11,8 +11,7 @@ class CfgPatches {
 			"ww2_assets_c_vehicles_ammoparameters_c",
 			"fow_cannons_c",
 			"fow_weapons",
-			"fow_weapons_c",
-			"BBB_BoysATR"
+			"fow_weapons_c"
 		};
 
 		version="1";
