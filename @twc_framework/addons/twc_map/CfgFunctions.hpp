@@ -13,8 +13,6 @@ class CfgFunctions {
 			class openMap {};
 			class copyMarkers {};
 			class removeTempMarkers {};
-			class saveToServer {};
-			class getFromServer {};
 		};
 	};
 };

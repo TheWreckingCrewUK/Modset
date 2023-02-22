@@ -95,8 +95,9 @@ if !(hasInterface) exitWith {};
 			_array pushback _markerInfo;
 			_owner setVariable ["twc_localMarkers", _array, true];
 			
-			//Saves to server for disconnects
-			[name _owner,_array] call twc_map_fnc_saveToServer;
+			//saves to namespace for re-connects and crashes
+			missionProfileNamespace setVariable ["twc_localMarkers", _ownArray, true];
+			saveMissionProfileNamespace;
 		};
 	}];
 	
@@ -116,12 +117,15 @@ if !(hasInterface) exitWith {};
 			if((_x select 0) == _marker)exitWith{
 				_arrayEdit deleteAt _forEachIndex;
 				player setVariable ["twc_localMarkers",_arrayEdit,true];
+				
+				missionProfileNamespace setVariable ["twc_localMarkers", _ownArray, true];
+				saveMissionProfileNamespace;
 			};
 		}forEach _array;
 	}];
 	
-	//Finally now that we are loaded in lets check the server for old map markers
-	_markerArray = [name player] call twc_map_fnc_getFromServer;
+	//Finally now that we are loaded in lets check the namespace for old map markers
+	_markerArray = missionProfileNamespace getVariable ["twc_localMarkers", [] ];
 	{
 		_x params ["_name","_pos", "_dir", "_type", "_shape", "_size", "_text", "_alpha", "_color", "_polyline"];
 		
@@ -141,4 +145,7 @@ if !(hasInterface) exitWith {};
 		_ownArray pushback _x;		
 	}forEach _markerArray;
 	player setVariable ["twc_localMarkers",_markerArray,true];
+	
+	missionProfileNamespace setVariable ["twc_localMarkers", _ownArray, true];
+	saveMissionProfileNamespace;
 };
