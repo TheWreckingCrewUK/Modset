@@ -54,6 +54,11 @@ if !(hasInterface) exitWith {};
 	0 enableChannel false;
 	4 enableChannel [true, false];
 	
+	if(isNil "twc_disconnectMarkers")then{
+	twc_disconnectMarkers = [];
+	publicVariable "twc_disconnectMarkers";
+};
+	
 	addMissionEventHandler ["MarkerCreated",{
 		params ["_marker", "_channelNumber", "_owner", "_local"];
 		
@@ -80,7 +85,7 @@ if !(hasInterface) exitWith {};
 		_owner setVariable ["twc_localMarkers", _array, true];
 		
 		//Saves to server for disconnects
-		[name _owner,_array] remoteExecCall ["twc_fnc_saveToServer",2,false];
+		[name _owner,_array] call twc_map_fnc_saveToServer;
 	}];
 	
 	addMissionEventHandler ["MarkerDeleted", {
@@ -104,7 +109,7 @@ if !(hasInterface) exitWith {};
 	}];
 	
 	//Finally now that we are loaded in lets check the server for old map markers
-	_markerArray = [name player] remoteExecCall ["twc_fnc_getFromServer",2,false];
+	_markerArray = [name player] call twc_map_fnc_getFromServer;
 	{
 		_x params ["_name","_pos", "_dir", "_type", "_shape", "_size", "_text", "_alpha", "_color"];
 		

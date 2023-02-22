@@ -18,3 +18,4 @@ if(_delete)then{
 };
 
 twc_disconnectMarkers pushback [_name, _array];
+publicVariable "twc_disconnectMarkers";
