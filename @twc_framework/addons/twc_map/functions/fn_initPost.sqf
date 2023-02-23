@@ -69,7 +69,7 @@ if !(hasInterface) exitWith {};
 		if(_channelNumber == 0)exitWith{};
 		
 		//We need to sleep cause arma doesn't know about marker dirs and color immediatly always
-		[_marker, _ownArray] spawn{
+		[_marker, _owner] spawn{
 			params ["_marker", "_owner"];
 			sleep 0.5;
 			//Gets markerInfo needed to copy
@@ -83,14 +83,13 @@ if !(hasInterface) exitWith {};
 			_color = markerColor _marker;
 			
 			//PolyLine is a special Case
+			_polyline = false;
 			if(markerShape _marker == "POLYLINE")then{
 				_polyline = markerPolyline _marker;
-			}else{
-				_polyline = false;
 			};
 			
 			//Store it on the player for putting down maps
-			_markerInfo = [_marker, _pos, _dir, _type, _shape, _size, _text, _alpha, _color,_polyline];
+			_markerInfo = [_marker, _pos, _dir, _type, _shape, _size, _text, _alpha, _color, _polyline];
 			_array = _owner getVariable ["twc_localMarkers", []];
 			_array pushback _markerInfo;
 			_owner setVariable ["twc_localMarkers", _array, true];
@@ -140,12 +139,10 @@ if !(hasInterface) exitWith {};
 		
 		if(str _polyline != "false")then{
 			_marker setMarkerPolylineLocal _polyline;
-		};
-		//Add them to your own player variable;
-		_ownArray pushback _x;		
+		};	
 	}forEach _markerArray;
-	player setVariable ["twc_localMarkers",_markerArray,true];
 	
-	missionProfileNamespace setVariable ["twc_localMarkers", _ownArray, true];
+	player setVariable ["twc_localMarkers",_markerArray,true];	
+	missionProfileNamespace setVariable ["twc_localMarkers", _markerArray, true];
 	saveMissionProfileNamespace;
 };
