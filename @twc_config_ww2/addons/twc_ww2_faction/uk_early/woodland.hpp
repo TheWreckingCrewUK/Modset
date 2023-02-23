@@ -131,11 +131,13 @@ class TWC_Infantry_WW2_UK_Early_Woodland_SectionCommander: TWC_Infantry_WW2_UK_L
 	magazines[] =
 	{
 		MAG_7("LIB_30Rnd_45ACP"),
+		MAG_2("LIB_MillsBomb"),
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
 		MAG_7("LIB_30Rnd_45ACP"),
+		MAG_2("LIB_MillsBomb"),
 		MAG_2("SmokeShell")
 	};
 };
