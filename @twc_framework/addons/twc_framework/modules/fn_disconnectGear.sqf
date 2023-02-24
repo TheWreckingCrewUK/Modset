@@ -18,7 +18,7 @@ if (!_bool) exitWith {};
 if (!hasInterface) exitWith {};
 
 //As is tradion we do an ugly sleep
-[] sleep {
+[] spawn {
 	waitUntil {sleep 1; time > 0 && name player != "No Vehicle" };
 	//BEST
 	//Find previous body. Steal gear then delete it.
