@@ -87,7 +87,7 @@ if(primaryWeapon player == "")then{
 //variable to track previous body
 player setVariable ["twc_framework_previousBody",player,true];
 //Setup missionpriflenamespace
-_loadout = getUnitLoadout _unit;
+_loadout = getUnitLoadout player;
 missionProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
 saveMissionProfileNamespace;
 
