@@ -95,7 +95,7 @@ if !(hasInterface) exitWith {};
 			_owner setVariable ["twc_localMarkers", _array, true];
 			
 			//saves to namespace for re-connects and crashes
-			missionProfileNamespace setVariable ["twc_localMarkers", _ownArray, true];
+			missionProfileNamespace setVariable ["twc_localMarkers", _ownArray];
 			saveMissionProfileNamespace;
 		};
 	}];
@@ -117,7 +117,7 @@ if !(hasInterface) exitWith {};
 				_arrayEdit deleteAt _forEachIndex;
 				player setVariable ["twc_localMarkers",_arrayEdit,true];
 				
-				missionProfileNamespace setVariable ["twc_localMarkers", _ownArray, true];
+				missionProfileNamespace setVariable ["twc_localMarkers", _arrayEdit];
 				saveMissionProfileNamespace;
 			};
 		}forEach _array;
@@ -143,6 +143,6 @@ if !(hasInterface) exitWith {};
 	}forEach _markerArray;
 	
 	player setVariable ["twc_localMarkers",_markerArray,true];	
-	missionProfileNamespace setVariable ["twc_localMarkers", _markerArray, true];
+	missionProfileNamespace setVariable ["twc_localMarkers", _markerArray];
 	saveMissionProfileNamespace;
 };
