@@ -39,6 +39,7 @@ enableDynamicSimulationSystem true;
 	}, true, [], true] call CBA_fnc_addClassEventHandler;
 
 	["AllVehicles","init",{
+		//We have to spawn this because it needs a 1 second delay or else BI setting overwrite ours
 		[false, (_this select 0)] spawn twc_fnc_initVehicleCache
 	}, true, ["Man", "Static"], true] call CBA_fnc_addClassEventHandler;
 }, [], 0.5] call CBA_fnc_waitAndExecute;

@@ -1,6 +1,6 @@
 /*
 * Author: [TWC] jayman
-* Zeus Function for module to force a group to uncache
+* Zeus Function for module to reset a units equipment when naked
 *
 * Arguments:
 * 0: LOGIC <OBJECT> 
@@ -21,7 +21,7 @@ _mouseOver = missionnamespace getvariable ["bis_fnc_curatorObjectPlaced_mouseOve
 if((_mouseOver select 0) != "OBJECT") then{
 	//hint "Please click on a unit";
 }else{
-	(group (_mouseOver select 1)) enableDynamicSimulation false;
+	(_mouseOver select 1) setUnitLoadout getUnitLoadout (configFile >> "CfgVehicles" >> typeOf (_mouseOver select 1));
 };
 
 deleteVehicle _logic;

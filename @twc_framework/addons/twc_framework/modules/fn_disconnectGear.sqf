@@ -17,6 +17,9 @@ params["_bool"];
 if (!_bool) exitWith {};
 if (!hasInterface) exitWith {};
 
+//No need in the editor
+if(!isMultiplayer)exitWith{};
+
 //As is tradion we do an ugly sleep
 [] spawn {
 	waitUntil {sleep 1; time > 0 && name player != "No Vehicle" };

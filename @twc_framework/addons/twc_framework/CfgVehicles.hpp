@@ -281,6 +281,19 @@ class CfgVehicles {
 		curatorCanAttach = 1;
 		displayName = "Force Uncache";
 	};
+	
+	class twc_fixNaked: Module_F {
+		author = "[TWC] jayman";
+		category = "twc_zeus";
+		scope = 1;
+		scopeCurator = 2;
+		functionPriority = 1;
+		isGlobal = 1;
+		isTriggerActivated = 0;
+		function = "twc_fnc_fixNaked";
+		curatorCanAttach = 1;
+		displayName = "Fix Naked Unit";
+	};
 
 	class TWC_Module_CreateTask: Module_F {
 		author = "[TWC] Rik";
