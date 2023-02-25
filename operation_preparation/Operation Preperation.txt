@@ -24,9 +24,9 @@
 	6.1 One with owner #adminLogged.
 	6.2 One with owner 76561198070630639 (jayman).
 	6.3 One with owner 76561198050180681 (Saxon).
-	6.4 One with owner 76561198037881029 (Rik).
+	6.4 One with owner 76561198042520910 (Aleyboy).
 	6.5 One with owner 76561198051444336 (Lukey).
-	6.6 One with owner 76561197992669373 (TooTall).
+	6.6 One with owner 76561198005456546 (Ross).
 	6.7 One with owner 76561198021236275 (Crabb).
 	
 	If anyone of these is playing a command role higher than 2iC, do NOT give them a module. 
