@@ -19,18 +19,20 @@
 	4.1 Place down an appropriate repair vehicle and / or facility and set them as such in Attributes >> "ACE Options".
 	4.2 Make appropriate units Engineers (Vehicle Crew, 2ICs) and Repair Specialist (Sergeant, CSM/SSM).
 	
+5. Steps 6-9 (Nice) Can be skipped by placing the TWC Mission Prep Composition.
+	It is found under:
+	(Groups (F2) >> Blufor >> TWC Operations Mission Prep >> Compositions >> TWC Misison Prep Comp)
+	5.1 Follow Comments and set up as desired
+	
 6. Place down the 7 "Game Master" modules with the attribute "Default addons" set to "All addons (including unofficial ones)".
 	They all need to be assigned a playerID at the "Owner" attribute.
 	6.1 One with owner #adminLogged.
 	6.2 One with owner 76561198070630639 (jayman).
 	6.3 One with owner 76561198050180681 (Saxon).
-	6.4 One with owner 76561198042520910 (Aleyboy).
-	6.5 One with owner 76561198051444336 (Lukey).
-	6.6 One with owner 76561198005456546 (Ross).
-	6.7 One with owner 76561198021236275 (Crabb).
+	6.4 One with owner 76561198051444336 (Lukey).
+	6.5 One with owner 76561198021236275 (Crabb).
 	
 	If anyone of these is playing a command role higher than 2iC, do NOT give them a module. 
-	Recommended is saving this array of modules in a composition in game so that you only have to place down the composition and delete the ones not needed.
 
 7. Set up the Headless Client:
 	7.1 Place down 2 "Headless Client" from Logic Entities (under systems in the top right) with the variable names being HC1 and HC2 respectively and set it as playable.
@@ -38,9 +40,9 @@
 8. Set up the "Cache Configuration" Module and set it as enabled.
 	8.1 The AI range attribute should take into account the sightlines of the map (open desert will require a higher range than dense jungle), so that AI units that we are unlikely to see should remain cached. Should not exceed 2000.
 	8.2 The Vehicle Caching attribute should be ~500 higher than AI range, and also not exceed 2500.
-	8.3 The Urban Caching should be limited to the maximum range of our sightlines on units that are synced with the "Set Urban Unit(s)" Module.
-	8.4 Go through the mission and look for units that are deployed in places where they can only be spotted and engaged from a close distance. Make sure these are synced to a "Set Urban Unit(s)" Module.
-	8.5 Go through the mission and look for units on patrols that are meant to cover a lot of ground, and possibly airplanes and helicopters that fly in from a distance, and sync these to a "Disable Caching on Units" module.
+	8.3 Go through the mission and look for units on patrols that are meant to cover a lot of ground, and possibly airplanes and helicopters that fly in from a distance, and sync these to a "Disable Caching on Units" module.
+	8.4 Empty Vehicles doesn't only matters if we will be destroying vehicles from a large distance and can see them. It is very unlikely.
+	8.5 is Moving is best left to 1.
 
 9. Place down the "TWC Missions Module" and set up as desired.
 	9.1 Make sure the "Era" attribute is set to the correct one.
@@ -50,8 +52,8 @@
 10. Various things you need to look out for:
 	10.1 If we are to be fighting units on the independent side make sure that under "Attributes" >> "Misc" >> "Independents Allegiance" is set to be hostile to BLUFOR.
 	10.2 Make sure the scenario file is set to be unbinarized under "Attributes" >> "Misc".
-	10.3 The "Hide Terrain Objects" module needs to have the "Operate Locally" check mark ticked to work in multiplayer.
-	10.4 The "Edit Terrain Object" module is broken and will not work correctly in multiplayer and cannot be used.
-	10.5 On all triggers, make sure that if they execute code in their "On Activation" or "On Deactivation" fields that runs globally (check BIWiki for its effects) that the trigger atribute "Server Only" is ticked.
-	10.6 "The BIS_fnc_ambientAnim" function will destroy FPS in multiplayer if used in large amounts and should be avoided.
-	10.7 Particle effects like "Fire" and "Smoke" can be detrimental to FPS if used in large amounts or configured improperly.
+	10.3 If you are hiding HUNDREDS of objects with the "Hide Terrain Objects" module then set it to "Operate Locally". Else leave it unticked.
+	10.4 On all triggers, make sure that if they execute code in their "On Activation" or "On Deactivation" fields that runs globally (check BIWiki for its effects) that the trigger atribute "Server Only" is ticked.
+	10.5 "The BIS_fnc_ambientAnim" function will destroy FPS in multiplayer if used in large amounts and should be avoided.
+	10.6 Particle effects like "Fire" and "Smoke" can be detrimental to FPS if used in large amounts or configured improperly.
+	10.7 Units using TWC_Defend will not move to the Headless Client.

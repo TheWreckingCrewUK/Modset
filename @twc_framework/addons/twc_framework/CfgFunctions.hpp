@@ -130,6 +130,7 @@ class CfgFunctions {
 			file = "twc_framework\curator";
 			class setSpectator {};
 			class forceUncache{};
+			class fixNaked {};
 			// medical moved to twc_medical
 		};
 

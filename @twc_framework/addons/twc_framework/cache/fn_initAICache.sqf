@@ -7,6 +7,9 @@ sleep 0.5;
 	_x triggerDynamicSimulation false;
 }forEach (units _group);
 
+//check if a unit is in a vehicle that doesn't want to be cached. Then don't cache
+if(leader _group != vehicle leader _group && vehicle leader _group getVariable ["twc_cacheDisabled",false])exitWith{};
+
 //If caching is disabled don't cache it
 if (isNil {_group getVariable "twc_cacheDisabled"}) then {
 

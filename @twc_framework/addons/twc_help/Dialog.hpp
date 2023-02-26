@@ -43,7 +43,7 @@ class TWC_Help_Message {
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0,0,0,0.8};
 			colorActive[] = {0,0,0,0.8};
-			action = "[player, ctrlText 5554] call TWC_Help_fnc_sendMessage; closeDialog 1;";
+			action = "[player, ctrlText 5554] remoteExecCall [""TWC_core_fnc_findAdmin"",2]; closeDialog 1;";
 		};
 		class Message: RscEdit {
 			idc = 5554;
