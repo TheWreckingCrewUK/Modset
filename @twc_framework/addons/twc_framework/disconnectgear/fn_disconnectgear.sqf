@@ -46,8 +46,9 @@ if(!isMultiplayer)exitWith {};
 			//Joined Same Slot and Played Before
 			[] call twc_fnc_findOldGear;
 			//applies wounds
-			[]spawn {
-				_json = profileNamespace getVariable "twc_framework_medicalInfo";
+			_json = profileNamespace getVariable "twc_framework_medicalInfo";
+			[_json]spawn {
+				params["_json"];
 				//Waits 60 seconds so they "start bleeding or being injured" when music ends. Music is 75 seconds long
 				sleep 60;
 				[player, _json] call ace_medical_fnc_deserializeState;
