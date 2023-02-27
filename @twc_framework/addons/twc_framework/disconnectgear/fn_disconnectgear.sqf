@@ -28,6 +28,7 @@ if(!isMultiplayer)exitWith {};
 //As is tradion we do an ugly sleep
 [] spawn {
 	waitUntil {sleep 1; time > 0 && name player != "No Vehicle" && !(isnil "TWC_MissionStart") };
+	twc_op_newStart = false;
 	
 	_missionStart = ProfileNamespace getVariable ["TWC_Framework_missionStart",true];
 
@@ -36,6 +37,7 @@ if(!isMultiplayer)exitWith {};
 		//IE First Time you Join ever or deleted .vars file
 		ProfileNamespace setVariable ["TWC_Framework_missionStart",TWC_MissionStart];
 		ProfileNamespace setVariable ["TWC_Framework_TypeOf",typeOf player];
+		twc_op_newStart = true;
 		saveProfileNamespace;
 		
 	}else{
