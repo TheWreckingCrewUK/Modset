@@ -15,8 +15,15 @@
 */
 params["_bool"];
 if (!_bool) exitWith {};
+//Have the server set it with time so it resets on restart
+if(isServer)then{
+	TWC_MissionStart = systemTimeUTC;
+	publicVariable "TWC_MissionStart";
+};
 if (!hasInterface) exitWith {};
 if(!isMultiplayer)exitWith {};
+
+
 
 //As is tradion we do an ugly sleep
 [] spawn {
@@ -24,10 +31,10 @@ if(!isMultiplayer)exitWith {};
 	
 	_missionStart = ProfileNamespace getVariable ["TWC_Framework_missionStart",true];
 
-	if(str _missionStart == "true" || str _missionStart != str missionStart)then{
+	if(str _missionStart == "true" || str _missionStart != str TWC_MissionStart)then{
 		//Happens if you don't have a missionstartVariable or the wrong one
 		//IE First Time you Join ever or deleted .vars file
-		ProfileNamespace setVariable ["TWC_Framework_missionStart",missionStart];
+		ProfileNamespace setVariable ["TWC_Framework_missionStart",TWC_MissionStart];
 		ProfileNamespace setVariable ["TWC_Framework_TypeOf",typeOf player];
 		saveProfileNamespace;
 		
