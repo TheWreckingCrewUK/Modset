@@ -106,7 +106,7 @@ if(!isMultiplayer)exitWith {};
 	};
 	
 	//variable to track previous body
-	player setVariable ["twc_framework_previousBody",player,true];
+	player setVariable ["twc_framework_previousBody",str player,true];
 	//Setup missionpriflenamespace
 	_loadout = getUnitLoadout player;
 	ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];

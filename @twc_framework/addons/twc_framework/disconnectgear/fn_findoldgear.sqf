@@ -22,11 +22,12 @@ params[];
 //step 1 get the old body and its equipment
 _loadout = false;
 _body = false;
+_unit = false;
 {
 	_body = _x getVariable ["twc_framework_previousBody",false];
-	if(str _body == str player)exitWith{
-		_loadout = getUnitLoadout _body;
-		
+	if(_body == str player)exitWith{
+		_loadout = getUnitLoadout _x;
+		_unit = _x;
 	};
 }forEach allDeadMen;
 
@@ -34,7 +35,7 @@ _body = false;
 if(str _loadout != "false")then{
 
 	//step 2 search for nearby groundweaponholdersimulated
-	_nearHolders =  (nearestObjects [_body, ["WeaponHolderSimulated"], 2]);
+	_nearHolders =  (nearestObjects [_unit, ["WeaponHolderSimulated","GroundWeaponHolder"], 3]);
 	//we reverse the array because your weapon is most likely to be closest to you
 	//We want to add it last so it overwrites if you disconnect near an enemy
 	reverse _nearHolders;
@@ -59,8 +60,8 @@ if(str _loadout != "false")then{
 			}forEach [(_x select 4),(_x select 5)];
 		};
 	}forEach _weaponList;
-	//Delete previous body
-	deleteVehicle _body;
+	//delete Body
+	deleteVehicle _unit;
 	//Earplug check
 	if([player, "ace_earplugs",false] call BIS_fnc_hasItem)then{
 	
