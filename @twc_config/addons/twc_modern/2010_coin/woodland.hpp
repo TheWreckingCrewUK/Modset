@@ -235,7 +235,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Marksman: TWC_Infantry_Modern_Regular_Wo
 	weapons[] =
 	{
 		"TWC_Weapon_L129A1_Grippod_TA648",
-		"CUP_launch_M72A6",
+		"RW_Launch_ASM_AS_Loaded",
 		"UK3CB_BAF_L131A1",
 		"ACE_Vector",
 		"Throw",
@@ -244,7 +244,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Marksman: TWC_Infantry_Modern_Regular_Wo
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L129A1_Grippod_TA648",
-		"CUP_launch_M72A6",
+		"RW_Launch_ASM_AS_Loaded",
 		"UK3CB_BAF_L131A1",
 		"ACE_Vector",
 		"Throw",
