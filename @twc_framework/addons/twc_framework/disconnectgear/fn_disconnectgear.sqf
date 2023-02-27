@@ -27,7 +27,7 @@ if(!isMultiplayer)exitWith {};
 
 //As is tradion we do an ugly sleep
 [] spawn {
-	waitUntil {sleep 1; time > 0 && name player != "No Vehicle" };
+	waitUntil {sleep 1; time > 0 && name player != "No Vehicle" && !(isnil "TWC_MissionStart") };
 	
 	_missionStart = ProfileNamespace getVariable ["TWC_Framework_missionStart",true];
 
@@ -42,9 +42,13 @@ if(!isMultiplayer)exitWith {};
 		//Checks If you are the same role as before
 		if(typeOf player == ProfileNamespace getVariable ["TWC_Framework_TypeOf",""])then{
 			//Joined Same Slot and Played Before
-			[] call twc_fnc_disconnectFindOldGear;
+			[] call twc_fnc_findOldGear;
 			//applies wounds
-			[player, profileNamespace getVariable "twc_framework_medicalInfo"] call ace_medical_fnc_deserializeState;
+			[]spawn {
+				//Waits 70 seconds so they "start bleeding or being injured" when music ends. Music is 75 seconds long
+				sleep 70;
+				[player, profileNamespace getVariable "twc_framework_medicalInfo"] call ace_medical_fnc_deserializeState;
+			};
 		}else{
 			//Played before, but Changed Slot
 			//Sends a warning to the admins: Unlikely, but a way to cheat gear
@@ -59,30 +63,35 @@ if(!isMultiplayer)exitWith {};
 	//This way you are less likely to duplicate ammo
 	//can't use fired because that actually might cause lag if a MG has a HDD
 	player addEventHandler ["InventoryClosed", {
-	params ["_unit", "_container"];
-
-	_loadout = getUnitLoadout _unit;
-	ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
-	ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
-	saveProfileNamespace;
+		params ["_unit", "_container"];
+		_loadout = getUnitLoadout _unit;
+		ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
+		ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
+		saveProfileNamespace;
 	}];
 
 	player addEventHandler ["Reloaded", {
-	params ["_unit", "_weapon", "_muzzle", "_newMagazine", "_oldMagazine"];
-
-	_loadout = getUnitLoadout _unit;
-	ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
-	ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
-	saveProfileNamespace;
+		params ["_unit", "_weapon", "_muzzle", "_newMagazine", "_oldMagazine"];
+		_loadout = getUnitLoadout _unit;
+		ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
+		ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
+		saveProfileNamespace;
+	}];
+	
+	player addEventHandler ["Dammaged", {
+		params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
+		_loadout = getUnitLoadout _unit;
+		ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
+		ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
+		saveProfileNamespace;
 	}];
 
 	player addEventHandler ["OpticsSwitch", {
-	params ["_unit", "_isADS"];
-
-	_loadout = getUnitLoadout _unit;
-	ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
-	ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
-	saveProfileNamespace;
+		params ["_unit", "_isADS"];
+		_loadout = getUnitLoadout _unit;
+		ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
+		ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
+		saveProfileNamespace;
 	}];
 	
 	//Safety Check
