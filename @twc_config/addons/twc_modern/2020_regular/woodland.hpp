@@ -189,6 +189,7 @@ class TWC_Infantry_2020_Regular_Woodland_Marksman: TWC_Infantry_2020_Regular_Woo
 	{
 		"TWC_Weapon_L129A1_Grippod_TA648",
 		"UK3CB_BAF_L131A1",
+		"RW_Launch_ASM_AS_Loaded",
 		"ACE_Vector",
 		"Throw",
 		"Put"
@@ -197,6 +198,7 @@ class TWC_Infantry_2020_Regular_Woodland_Marksman: TWC_Infantry_2020_Regular_Woo
 	{
 		"TWC_Weapon_L129A1_Grippod_TA648",
 		"UK3CB_BAF_L131A1",
+		"RW_Launch_ASM_AS_Loaded",
 		"ACE_Vector",
 		"Throw",
 		"Put"
