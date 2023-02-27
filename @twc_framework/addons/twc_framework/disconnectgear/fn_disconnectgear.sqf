@@ -47,9 +47,10 @@ if(!isMultiplayer)exitWith {};
 			[] call twc_fnc_findOldGear;
 			//applies wounds
 			[]spawn {
-				//Waits 70 seconds so they "start bleeding or being injured" when music ends. Music is 75 seconds long
-				sleep 70;
-				[player, profileNamespace getVariable "twc_framework_medicalInfo"] call ace_medical_fnc_deserializeState;
+				_json = profileNamespace getVariable "twc_framework_medicalInfo";
+				//Waits 60 seconds so they "start bleeding or being injured" when music ends. Music is 75 seconds long
+				sleep 60;
+				[player, _json] call ace_medical_fnc_deserializeState;
 			};
 		}else{
 			//Played before, but Changed Slot
