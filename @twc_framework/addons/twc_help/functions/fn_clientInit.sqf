@@ -26,7 +26,12 @@ if (!hasInterface) exitWith {};
     _this spawn {
         params ["_display"];
 		_helpDisplay = createDialog ["TWC_Help_Message_Escape",true];
-		waitUntil{isNull _helpDisplay};
-		(findDisplay 49) closeDisplay 2;
+		waitUntil{isNull _helpDisplay || isNull _display};
+		//We have to do it this way or there is an edge case where the black box gets stuck on screen
+		if(isNull _helpDisplay)then{
+			_display closeDisplay 2;
+		}else{
+			_helpDisplay closeDisplay 2;
+		};
     };
 }] call BIS_fnc_addScriptedEventHandler;
