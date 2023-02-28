@@ -69,6 +69,14 @@ class CfgFunctions {
 			class stationaryinit {};
 		};
 		
+		class disconnect {	
+			/** DisconnectGear **/
+			file = "twc_framework\disconnectgear";
+			class disconnectGear{};
+			class findoldgear{};
+			
+		};
+		
 		class modules {
 			file = "twc_framework\modules";
 			class era{};
@@ -76,7 +84,6 @@ class CfgFunctions {
 			class boatSafety{};
 			class civilianEquipment{};
 			class deadBodies{};
-			class disconnectGear{};
 			class missionModuleInit{};
 			class moduleDebug{};
 			class run{};

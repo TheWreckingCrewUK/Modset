@@ -44,5 +44,5 @@ _ownArray = player getVariable ["twc_localMarkers",[]];
 }forEach _markerArray;
 
 player setVariable ["twc_localMarkers", _ownArray, true];
-missionProfileNamespace setVariable ["twc_localMarkers", _ownArray, true];
-saveMissionProfileNamespace;
+ProfileNamespace setVariable ["twc_localMarkers", _ownArray, true];
+saveProfileNamespace;

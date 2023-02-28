@@ -17,8 +17,13 @@ missionNameSpace setVariable ["zuesObjects", (_logic getVariable "zuesObjects")]
 missionNameSpace setVariable ["TWC_Intro_isDisabled", (_logic getVariable "disableIntro")];
 missionNameSpace setVariable ["TWC_Intro_specialSong", (_logic getVariable ["specialIntro", ""])];
 
+[(_logic getVariable "boatSafety")] call twc_fnc_boatSafety;
+
+//Needs to run on both
+[(_logic getVariable "disconectGear")] call twc_fnc_disconnectGear;
+
 // Server side part below
-if !(hasInterface) exitWith {};
+if (hasInterface) exitWith {};
 
 missionNameSpace setVariable ["TWC_Intro_Started", false, true];
 missionNameSpace setVariable ["TWC_worldName", worldName, true]; // share world name from server, for clients to check against
@@ -31,8 +36,6 @@ missionNameSpace setVariable ["twcModuleFinished", true, true];
 	[{ missionNameSpace setVariable ["TWC_Intro_Started", true, true]; }, [], 30] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_waitUntilAndExecute;
 
-//Runs the server side part of the module.
-[(_logic getVariable "boatSafety")] call twc_fnc_boatSafety;
+
 [(_logic getVariable "civilianEquipment")] call twc_fnc_civilianEquipment;
 [(_logic getVariable "deadBodies")] call twc_fnc_deadBodies;
-[(_logic getVariable "disconectGear")] call twc_fnc_disconnectGear;
