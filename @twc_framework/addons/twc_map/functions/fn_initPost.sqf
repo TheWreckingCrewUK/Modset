@@ -50,14 +50,19 @@ if !(hasInterface) exitWith {};
 
 []spawn{
 	//we spawn and wait until mission starts
-	waitUntil {sleep 1; time > 0 && name player != "No Vehicle" };
+	//Now we also wait for twc_missionstart to be defined in disconnect gear
+	waitUntil {sleep 1; time > 0 && name player != "No Vehicle" && !(isnil "TWC_MissionStart")};
+	
+	//If we didn't have a joinOp I would do something cleaner
+	sleep 10;
+	if(twc_op_newStart)then{
+		ProfileNamespace setVariable ["twc_localMarkers", []];
+		player setVariable ["twc_localMarkers",[],true];
+		saveProfileNamespace;
+	};
 	0 enableChannel false;
 	4 enableChannel [true, false];
 	
-	if(isNil "twc_disconnectMarkers")then{
-		twc_disconnectMarkers = [];
-		publicVariable "twc_disconnectMarkers";
-	};
 	
 	addMissionEventHandler ["MarkerCreated",{
 		params ["_marker", "_channelNumber", "_owner", "_local"];
@@ -95,8 +100,8 @@ if !(hasInterface) exitWith {};
 			_owner setVariable ["twc_localMarkers", _array, true];
 			
 			//saves to namespace for re-connects and crashes
-			missionProfileNamespace setVariable ["twc_localMarkers", _ownArray];
-			saveMissionProfileNamespace;
+			ProfileNamespace setVariable ["twc_localMarkers", _ownArray];
+			saveProfileNamespace;
 		};
 	}];
 	
@@ -117,14 +122,14 @@ if !(hasInterface) exitWith {};
 				_arrayEdit deleteAt _forEachIndex;
 				player setVariable ["twc_localMarkers",_arrayEdit,true];
 				
-				missionProfileNamespace setVariable ["twc_localMarkers", _arrayEdit];
-				saveMissionProfileNamespace;
+				ProfileNamespace setVariable ["twc_localMarkers", _arrayEdit];
+				saveProfileNamespace;
 			};
 		}forEach _array;
 	}];
 	
 	//Finally now that we are loaded in lets check the namespace for old map markers
-	_markerArray = missionProfileNamespace getVariable ["twc_localMarkers", [] ];
+	_markerArray = ProfileNamespace getVariable ["twc_localMarkers", [] ];
 	{
 		_x params ["_name","_pos", "_dir", "_type", "_shape", "_size", "_text", "_alpha", "_color", "_polyline"];
 		
@@ -143,6 +148,6 @@ if !(hasInterface) exitWith {};
 	}forEach _markerArray;
 	
 	player setVariable ["twc_localMarkers",_markerArray,true];	
-	missionProfileNamespace setVariable ["twc_localMarkers", _markerArray];
-	saveMissionProfileNamespace;
+	ProfileNamespace setVariable ["twc_localMarkers", _markerArray];
+	saveProfileNamespace;
 };

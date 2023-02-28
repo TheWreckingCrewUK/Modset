@@ -5,33 +5,31 @@
 params["_sender","_message"];
 
 _admin = false;
-_playeradmin = false;
+_ID = false;
 
 {
 	_ID = owner _x;
 	_isAdmin = admin _ID;
 	if (_isAdmin != 0) exitwith {
-		_playeradmin = _ID;
 		_admin = _x;
 		
 	};
 } forEach allPlayers;
 
-//There is literally no point of this
 if(!isMultiplayer)then{
-	_playeradmin = player;
-	_admin = 0;
+	_admin = player;
+	_ID = 0;
 };
 
 //exit on no admin. Maybe change to twc_fnc_commanders?
-if(str _admin == "false" || str _playeradmin == "false")exitWith{diag_log format["At %1 Find Admin Failed. Here is message %2 %3",_time,name _sender,_message]};
+if(str _admin == "false")exitWith{diag_log format["At %1 Find Admin Failed. Here is message %2 %3",_time,name _sender,_message]};
 
 if(isNil _message)then{
 	_name = name _sender;
 	_message = format ["%1: %2", _name, _message];
 	
 	_message remoteExecCall ["hint", _admin];
-	[_playeradmin, ["Diary", ["Help Message", _message]]] remoteExecCall ["createDiaryRecord", _admin];
+	[_admin, ["Diary", ["Help Message", _message]]] remoteExecCall ["createDiaryRecord", _ID];
 };
 
 //For backwards compatability

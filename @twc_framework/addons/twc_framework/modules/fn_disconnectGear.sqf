@@ -18,53 +18,7 @@ if (!_bool) exitWith {};
 if (!hasInterface) exitWith {};
 if(!isMultiplayer)exitWith {};
 
-//UGLY, but we need to create it.
-twc_fnc_disconnectEventHandlerCreate = [
-	//Adding in a safety Check we don't want to spawn players in without a gun. (at least not yet :) )
-	if(primaryWeapon player == "")then{
-		player setUnitLoadout (configFile >> "CFGVehicles" >> (typeOf player));
-		[player, "Was almost spawned in Without a Gun. Check disconnect Gear"] remoteExecCall ["TWC_core_fnc_findAdmin",2];
-	};
 
-	//variable to track previous body
-	player setVariable ["twc_framework_previousBody",player,true];
-	//Setup missionpriflenamespace
-	_loadout = getUnitLoadout player;
-	ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
-	ProfileNamespace setVariable ["twc_framework_medicalInfo", ([player] call ace_medical_fnc_serializeState)];
-	saveProfileNamespace;
-
-
-	//Part of plan be we want to add multiple event handlers to keep saving your loadout to missionNamespace
-	//This way you are less likely to duplicate ammo
-	//can't use fired because that actually might cause lag if a MG has a HDD
-	player addEventHandler ["InventoryClosed", {
-		params ["_unit", "_container"];
-		
-		_loadout = getUnitLoadout _unit;
-		ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
-		ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
-		saveProfileNamespace;
-	}];
-
-	player addEventHandler ["Reloaded", {
-		params ["_unit", "_weapon", "_muzzle", "_newMagazine", "_oldMagazine"];
-		
-		_loadout = getUnitLoadout _unit;
-		ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
-		ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
-		saveProfileNamespace;
-	}];
-
-	player addEventHandler ["OpticsSwitch", {
-		params ["_unit", "_isADS"];
-		
-		_loadout = getUnitLoadout _unit;
-		ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
-		ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
-		saveProfileNamespace;
-	}];
-];
 twc_fnc_disconnectFindOldGear = [
 	//BEST
 	//Find previous body. Steal gear then delete it.
@@ -170,6 +124,53 @@ twc_fnc_disconnectFindOldGear = [
 			saveProfileNamespace;
 		};
 	};
+	
+	//variable to track previous body
+	player setVariable ["twc_framework_previousBody",player,true];
+	//Setup missionpriflenamespace
+	_loadout = getUnitLoadout player;
+	ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
+	ProfileNamespace setVariable ["twc_framework_medicalInfo", ([player] call ace_medical_fnc_serializeState)];
+	saveProfileNamespace;
+
+
+	//Part of plan be we want to add multiple event handlers to keep saving your loadout to missionNamespace
+	//This way you are less likely to duplicate ammo
+	//can't use fired because that actually might cause lag if a MG has a HDD
+	player addEventHandler ["InventoryClosed", {
+	params ["_unit", "_container"];
+
+	_loadout = getUnitLoadout _unit;
+	ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
+	ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
+	saveProfileNamespace;
+	}];
+
+	player addEventHandler ["Reloaded", {
+	params ["_unit", "_weapon", "_muzzle", "_newMagazine", "_oldMagazine"];
+
+	_loadout = getUnitLoadout _unit;
+	ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
+	ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
+	saveProfileNamespace;
+	}];
+
+	player addEventHandler ["OpticsSwitch", {
+	params ["_unit", "_isADS"];
+
+	_loadout = getUnitLoadout _unit;
+	ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
+	ProfileNamespace setVariable ["twc_framework_medicalInfo", ([_unit] call ace_medical_fnc_serializeState)];
+	saveProfileNamespace;
+	}];
+	
+	//Safety Check
+	//Adding in a safety Check we don't want to spawn players in without a gun. (at least not yet :) )
+	if(primaryWeapon player == "")then{
+		player setUnitLoadout (configFile >> "CFGVehicles" >> (typeOf player));
+		[player, "Was almost spawned in Without a Gun. Check disconnect Gear"] remoteExecCall ["TWC_core_fnc_findAdmin",2];
+	};
+	
 	//Always want event handlers at the end
 	[] call twc_fnc_disconnectEventHandlerCreate;
 };

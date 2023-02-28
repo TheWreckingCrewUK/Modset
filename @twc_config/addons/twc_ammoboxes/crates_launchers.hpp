@@ -88,5 +88,14 @@ class TWC_AmmoBox_Launchers_NLAW_Portable: TWC_AmmoBox_Launcher_Portable {
 	};
 };
 
-
-
+class TWC_AmmoBox_Launchers_Matador_Portable: TWC_AmmoBox_Launcher_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Matador ASM (Portable)";
+	
+	editorSubcategory = "TWC_Crates_Launchers";
+	
+	class TransportWeapons {
+		ADD_WEAP(RW_Launch_ASM_AS_Loaded, 2);
+	};
+};
