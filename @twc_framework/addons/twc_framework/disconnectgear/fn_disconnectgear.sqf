@@ -50,8 +50,11 @@ if(!isMultiplayer)exitWith {};
 			[_json]spawn {
 				params["_json"];
 				//Waits 60 seconds so they "start bleeding or being injured" when music ends. Music is 75 seconds long
-				sleep 60;
-				[player, _json] call ace_medical_fnc_deserializeState;
+				uisleep 60;
+				if(_json != ([player] call ace_medical_fnc_serializeState))then{
+					hint "Applied Previous Medical";
+					[player, _json] call ace_medical_fnc_deserializeState;
+				};
 			};
 		}else{
 			//Played before, but Changed Slot
