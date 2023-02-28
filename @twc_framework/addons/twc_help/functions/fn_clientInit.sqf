@@ -23,6 +23,8 @@ if (!hasInterface) exitWith {};
 
 [missionNamespace,"OnGameInterrupt", {
 	if(serverCommandAvailable "#shutdown" || !isMultiplayer)exitWith{};
+	//Ace adds shit to unconcious screen so we have to disable it
+	if(incapacitatedState player == "UNCONSCIOUS")exitWith{};
     _this spawn {
         params ["_display"];
 		_helpDisplay = createDialog ["TWC_Help_Message_Escape",true];
