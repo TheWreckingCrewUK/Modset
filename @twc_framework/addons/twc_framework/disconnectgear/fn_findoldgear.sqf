@@ -24,7 +24,7 @@ _loadout = false;
 _body = false;
 _unit = false;
 {
-	_body = _x getVariable ["twc_framework_previousBody",false];
+	_body = _x getVariable ["twc_framework_previousBody","false"];
 	if(_body == str player)exitWith{
 		_loadout = getUnitLoadout _x;
 		_unit = _x;
@@ -35,17 +35,25 @@ _unit = false;
 if(str _loadout != "false")then{
 
 	//step 2 search for nearby groundweaponholdersimulated
-	_nearHolders =  (nearestObjects [_unit, ["WeaponHolderSimulated","GroundWeaponHolder"], 3]);
+	_nearHolders =  (nearestObjects [_unit, ["WeaponHolderSimulated"], 5]);
 	//we reverse the array because your weapon is most likely to be closest to you
 	//We want to add it last so it overwrites if you disconnect near an enemy
 	reverse _nearHolders;
 	_weaponList = [];
+	_magazineList = [];
+	_itemList = [];
 	{
 		_weaponList = _weaponList + (weaponsItems _x);
+		_magazineList = _magazineList + (magazinesAmmoCargo _x);
+		_itemList = _itemList + (itemCargo _x);
+		deleteVehicle _x;
 	}forEach _nearHolders;
 	//finally set the loadout
 	player setUnitLoadout _loadout;
 
+	//When you die you drop your weapons so this finds and grabs them
+	//Also as long as you pick them up in the same place it transfers 
+	//to you
 	{
 		if(str _x != "[]")then{
 			_weapon = (_x select 0);
@@ -60,6 +68,12 @@ if(str _loadout != "false")then{
 			}forEach [(_x select 4),(_x select 5)];
 		};
 	}forEach _weaponList;
+	{
+		player addMagazine [_x select 0,_x select 1];
+	}forEach _magazineList;
+	{
+		player addItem _x;
+	}forEach _itemList;
 	//delete Body
 	deleteVehicle _unit;
 	//Earplug check

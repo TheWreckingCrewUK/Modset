@@ -99,10 +99,15 @@ if(!isMultiplayer)exitWith {};
 	}];
 	
 	//Safety Check
-	//Adding in a safety Check we don't want to spawn players in without a gun. (at least not yet :) )
+	//Adding in a safety Check we don't want to spawn players in without a gun or uniform. (at least not yet :) )
+	//Everything, but gun can get lost if the unit deletes before respawn
 	if(primaryWeapon player == "")then{
 		player setUnitLoadout (configFile >> "CFGVehicles" >> (typeOf player));
 		[player, "Was almost spawned in Without a Gun. Check disconnect Gear"] remoteExecCall ["TWC_core_fnc_findAdmin",2];
+	};
+	if(uniform player == "")then{
+		player setUnitLoadout (configFile >> "CFGVehicles" >> (typeOf player));
+		[player, "Was almost spawned in Without a uniform. Check disconnect Gear"] remoteExecCall ["TWC_core_fnc_findAdmin",2];
 	};
 	
 	//variable to track previous body

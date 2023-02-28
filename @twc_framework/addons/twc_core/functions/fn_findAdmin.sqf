@@ -5,6 +5,7 @@
 params["_sender","_message"];
 
 _admin = false;
+_ID = false;
 
 {
 	_ID = owner _x;
@@ -15,9 +16,9 @@ _admin = false;
 	};
 } forEach allPlayers;
 
-//There is literally no point of this
 if(!isMultiplayer)then{
-	_admin = 0;
+	_admin = player;
+	_ID = 0;
 };
 
 //exit on no admin. Maybe change to twc_fnc_commanders?
@@ -28,7 +29,7 @@ if(isNil _message)then{
 	_message = format ["%1: %2", _name, _message];
 	
 	_message remoteExecCall ["hint", _admin];
-	[_admin, ["Diary", ["Help Message", _message]]] remoteExecCall ["createDiaryRecord", _admin];
+	[_admin, ["Diary", ["Help Message", _message]]] remoteExecCall ["createDiaryRecord", _ID];
 };
 
 //For backwards compatability
