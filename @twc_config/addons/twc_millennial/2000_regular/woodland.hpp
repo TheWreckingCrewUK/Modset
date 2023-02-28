@@ -245,12 +245,14 @@ class TWC_Infantry_2000_Regular_Woodland_SectionCommander: TWC_Infantry_2000_Reg
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_microDAGR"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_microDAGR"
 	};
 	magazines[] =
 	{
@@ -326,12 +328,14 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_microDAGR"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_microDAGR"
 	};
 	weapons[] =
 	{
@@ -608,13 +612,15 @@ class TWC_Infantry_2000_Regular_Woodland_Spotter: TWC_Infantry_2000_Regular_Wood
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_microDAGR"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_microDAGR"
 	};
 	magazines[]=
 	{
@@ -657,12 +663,14 @@ class TWC_Infantry_2000_Regular_Woodland_Artillery_Commander: TWC_Infantry_2000_
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_microDAGR"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_microDAGR"
 	};
 	magazines[] =
 	{
@@ -729,7 +737,8 @@ class TWC_Infantry_2000_Regular_Woodland_EOD_Commander: TWC_Infantry_2000_Regula
 		"ACE_DefusalKit",
 		"ACE_SpraypaintGreen",
 		"ACE_SpraypaintRed",
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_microDAGR"
 	};
 	respawnItems[] =
 	{
@@ -738,7 +747,8 @@ class TWC_Infantry_2000_Regular_Woodland_EOD_Commander: TWC_Infantry_2000_Regula
 		"ACE_DefusalKit",
 		"ACE_SpraypaintGreen",
 		"ACE_SpraypaintRed",
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_microDAGR"
 	};
 	magazines[] =
 	{
