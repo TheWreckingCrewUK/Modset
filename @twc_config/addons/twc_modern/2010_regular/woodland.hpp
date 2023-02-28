@@ -53,7 +53,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regula
 	weapons[]=
 	{
 		"TWC_Weapon_L85A2_UGL_ELCAN3D",
-		"CUP_launch_M72A6",
+		"RW_Launch_ASM_AS_Loaded",
 		"ACE_Vector",
 		"Throw",
 		"Put"
@@ -61,7 +61,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regula
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L85A2_UGL_ELCAN3D",
-		"CUP_launch_M72A6",
+		"RW_Launch_ASM_AS_Loaded",
 		"ACE_Vector",
 		"Throw",
 		"Put"
@@ -127,12 +127,14 @@ class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Reg
 	weapons[] =
 	{
 		"TWC_Weapon_L110A2_ELCAN3D",
+		"CUP_launch_M72A6",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L110A2_ELCAN3D",
+		"CUP_launch_M72A6",
 		"Throw",
 		"Put"
 	};
