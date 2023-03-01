@@ -21,19 +21,4 @@ if (!hasInterface) exitWith {};
 	]
 ] call CBA_fnc_addKeybind;
 
-[missionNamespace,"OnGameInterrupt", {
-	if(serverCommandAvailable "#shutdown" || !isMultiplayer)exitWith{};
-	//Ace adds shit to unconcious screen so we have to disable it
-	if(incapacitatedState player == "UNCONSCIOUS")exitWith{};
-    _this spawn {
-        params ["_display"];
-		_helpDisplay = createDialog ["TWC_Help_Message_Escape",true];
-		waitUntil{isNull _helpDisplay || isNull _display};
-		//We have to do it this way or there is an edge case where the black box gets stuck on screen
-		if(isNull _helpDisplay)then{
-			_display closeDisplay 2;
-		}else{
-			_helpDisplay closeDisplay 2;
-		};
-    };
-}] call BIS_fnc_addScriptedEventHandler;
+[["TWC Admin Message","Sends a message to the logged in admin"], "TWC_Help_Message"] call CBA_fnc_addPauseMenuOption;
