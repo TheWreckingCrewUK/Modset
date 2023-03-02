@@ -254,6 +254,13 @@ class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Medic: TWC_Infantry_WW2_UK_Late
 		MAG_3("LIB_30Rnd_45ACP"),
 		MAG_2("SmokeShell")
 	};
+	class EventHandlers
+	{
+		class twc_config_ace_medical_gui_EH
+		{
+			init = "[]spawn{waitUntil{uisleep 1; (!isNil ""ace_medical_gui_showbloodlossentry"")}; ace_medical_gui_showbloodlossentry = true;};";
+		};
+	};
 };
 class TWC_Infantry_WW2_UK_Early_Woodland_Platoon_Runner: TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Runner
 {

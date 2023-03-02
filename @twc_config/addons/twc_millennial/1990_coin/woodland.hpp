@@ -154,8 +154,12 @@ class TWC_Infantry_1990_COIN_Woodland_Platoon_Medic: TWC_Infantry_1990_Regular_W
 		MAG_4("ACE_salineIV_250"),
 		MAG_2("ACE_CableTie")
 	};
-	class EventHandlers: EventHandlers {
-		init = "[(_this select 0)]spawn{waitUntil{uisleep 1; !isNil ""ace_medical_gui_showbloodlossentry""}; ace_medical_gui_showbloodlossentry = true;};";
+	class EventHandlers
+	{
+		class twc_config_ace_medical_gui_EH
+		{
+			init = "[]spawn{waitUntil{uisleep 1; (!isNil ""ace_medical_gui_showbloodlossentry"")}; ace_medical_gui_showbloodlossentry = true;};";
+		};
 	};
 };
 class TWC_Infantry_1990_COIN_Woodland_Platoon_CSM: TWC_Infantry_1990_Regular_Woodland_Platoon_CSM

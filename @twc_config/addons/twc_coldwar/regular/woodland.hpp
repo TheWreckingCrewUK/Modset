@@ -495,8 +495,12 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 		MAG_2("Chemlight_green"),
 		"ACE_Flashlight_Maglite_ML300L"
 	};
-	class EventHandlers: EventHandlers {
-		init = "[(_this select 0)]spawn{waitUntil{uisleep 1; !isNil ""ace_medical_gui_showbloodlossentry""}; ace_medical_gui_showbloodlossentry = true;};";
+	class EventHandlers
+	{
+		class twc_config_ace_medical_gui_EH
+		{
+			init = "[]spawn{waitUntil{uisleep 1; (!isNil ""ace_medical_gui_showbloodlossentry"")}; ace_medical_gui_showbloodlossentry = true;};";
+		};
 	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman

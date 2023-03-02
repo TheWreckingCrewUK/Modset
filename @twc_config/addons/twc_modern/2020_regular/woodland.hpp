@@ -624,8 +624,12 @@ class TWC_Infantry_2020_Regular_Woodland_Platoon_Medic: TWC_Infantry_2020_Regula
 		MAG_2("UK3CB_BAF_9_17Rnd"),
 		MAG_2("SmokeShell")
 	};
-	class EventHandlers: EventHandlers {
-		init = "[(_this select 0)]spawn{waitUntil{uisleep 1; !isNil ""ace_medical_gui_showbloodlossentry""}; ace_medical_gui_showbloodlossentry = true;};";
+	class EventHandlers
+	{
+		class twc_config_ace_medical_gui_EH
+		{
+			init = "[]spawn{waitUntil{uisleep 1; (!isNil ""ace_medical_gui_showbloodlossentry"")}; ace_medical_gui_showbloodlossentry = true;};";
+		};
 	};
 };
 class TWC_Infantry_2020_Regular_Woodland_Platoon_Mortar: TWC_Infantry_2020_Regular_Woodland_Platoon_Sergeant

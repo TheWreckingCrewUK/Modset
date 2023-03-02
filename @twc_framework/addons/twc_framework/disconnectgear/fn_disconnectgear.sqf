@@ -37,7 +37,7 @@ if(!isMultiplayer)exitWith {};
 		//IE First Time you Join ever or deleted .vars file
 		ProfileNamespace setVariable ["TWC_Framework_missionStart",TWC_MissionStart];
 		ProfileNamespace setVariable ["TWC_Framework_TypeOf",typeOf player];
-		profileNamespace ["TWC_DeathInfo","alive"];
+		profileNamespace setVariable ["TWC_DeathInfo","alive"];
 		twc_op_newStart = true;
 		saveProfileNamespace;
 		
@@ -132,6 +132,6 @@ if(!isMultiplayer)exitWith {};
 	//This sets a variable which can be called and allow a re-connected dead to choose spectator or respawn
 	player addEventHandler ["Killed", {
 		params ["_unit", "_killer", "_instigator", "_useEffects"];
-			profileNamespace ["TWC_DeathInfo",str _killer,true];
+			profileNamespace setVariable ["TWC_DeathInfo",str _killer,true];
 	}];
 };
