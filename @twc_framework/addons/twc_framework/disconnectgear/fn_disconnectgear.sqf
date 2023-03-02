@@ -21,7 +21,6 @@ if(isServer)then{
 	publicVariable "TWC_MissionStart";
 };
 if (!hasInterface) exitWith {};
-if(!isMultiplayer)exitWith {};
 
 
 

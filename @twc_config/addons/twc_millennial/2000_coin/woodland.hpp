@@ -219,7 +219,7 @@ class TWC_Infantry_2000_COIN_Woodland_Platoon_Medic: TWC_Infantry_2000_Regular_W
 	{
 		class twc_config_ace_medical_gui_EH
 		{
-			init = "[]spawn{waitUntil{uisleep 1; (!isNil ""ace_medical_gui_showbloodlossentry"")}; ace_medical_gui_showbloodlossentry = true;};";
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]; []spawn{waitUntil{uisleep 1; (!isNil ""ace_medical_gui_showbloodlossentry"")}; ace_medical_gui_showbloodlossentry = true;};";
 		};
 	};
 };

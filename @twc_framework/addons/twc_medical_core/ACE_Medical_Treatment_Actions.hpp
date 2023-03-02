@@ -7,12 +7,12 @@ class ACE_Medical_Treatment_Actions {
 		category = "bandage";
 
 		consumeItem = 1;
-		items[] = {"ACE_fieldDressing", "ACE_packingBandage", "ACE_elasticBandage", "ACE_quikclot"};
+		items[] = {"ACE_Sunflower_Seeds"}; //Basic bandage is gross. But we need to define it for other bandages. Use Sunflower seeds since we don't ever use it
 
 		medicRequired = 0;
 		allowSelfTreatment = 1;
 		allowedSelections[] = {"All"};
-		condition = "false"; // edit to always show bandages
+		condition = "TWC_Medical_fnc_canBandage"; // edit to always show bandages
 		treatmentLocations = 0; // all locations
 
 		treatmentTime = "ace_medical_treatment_fnc_getBandageTime";

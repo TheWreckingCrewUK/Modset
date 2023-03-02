@@ -56,11 +56,13 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody";
 		uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
 		backpack = "";
-
-		class EventHandlers: EventHandlers {
-			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+		class EventHandlers
+		{
+			class twc_config_keepmap_EH
+			{
+				init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+			};
 		};
-
 		linkedItems[] = {
 			"UK3CB_BAF_V_Osprey_Rifleman_F",
 			"UK3CB_BAF_H_Mk7_Scrim_F",

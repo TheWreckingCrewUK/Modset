@@ -15,11 +15,13 @@ _action = ["CheckID", "Check Vehicle ID", "", {[_target] call twc_fnc_checkvehic
 	player createDiaryRecord ["Diary", ["Conversation", (_this select 0)]];
 }] call CBA_fnc_addEventHandler;
 
-[{
+//suspending not allowed thus spawn
+[]spawn{
 	if (isNil {missionNameSpace getVariable "twcModuleEnabled"}) exitWith {
 		systemChat "TWC Mission Module wasn't placed down, or enabled.";
 	};
 
+	
 	waitUntil { missionNameSpace getVariable ["twcModuleFinished", false] };
 
 	[(missionNameSpace getVariable ["era", "modern"])] spawn twc_fnc_era;
@@ -38,4 +40,4 @@ _action = ["CheckID", "Check Vehicle ID", "", {[_target] call twc_fnc_checkvehic
 	};
 
 	["twc_framework_initComplete", []] call CBA_fnc_localEvent;
-}, [], 1] call CBA_fnc_waitAndExecute;
+};
