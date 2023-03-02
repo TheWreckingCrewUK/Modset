@@ -1,6 +1,5 @@
 class ACE_Medical_Treatment_Actions {
 	// Override default class, so that bandaging options always show, like it did before rewrite, for logistical concerns
-	/*
 	class BasicBandage {
 		displayName = "Basic Bandage";
 		displayNameProgress = "Bandaging...";
@@ -13,7 +12,7 @@ class ACE_Medical_Treatment_Actions {
 		medicRequired = 0;
 		allowSelfTreatment = 1;
 		allowedSelections[] = {"All"};
-		condition = "TWC_Medical_fnc_canBandage"; // edit to always show bandages
+		condition = "false"; // edit to always show bandages
 		treatmentLocations = 0; // all locations
 
 		treatmentTime = "ace_medical_treatment_fnc_getBandageTime";
@@ -35,7 +34,6 @@ class ACE_Medical_Treatment_Actions {
 			{{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}
 		};
 	};
-	*/
 	
 	/*
 	 * Blood is by default larger, this is to give the medical vehicles a benefit
