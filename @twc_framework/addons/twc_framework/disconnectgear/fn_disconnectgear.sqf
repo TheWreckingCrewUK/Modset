@@ -37,6 +37,7 @@ if(!isMultiplayer)exitWith {};
 		//IE First Time you Join ever or deleted .vars file
 		ProfileNamespace setVariable ["TWC_Framework_missionStart",TWC_MissionStart];
 		ProfileNamespace setVariable ["TWC_Framework_TypeOf",typeOf player];
+		profileNamespace ["TWC_DeathInfo","alive"];
 		twc_op_newStart = true;
 		saveProfileNamespace;
 		
@@ -52,8 +53,14 @@ if(!isMultiplayer)exitWith {};
 				//Waits 60 seconds so they "start bleeding or being injured" when music ends. Music is 75 seconds long
 				uisleep 60;
 				if(_json != ([player] call ace_medical_fnc_serializeState))then{
-					hint "Applied Previous Medical";
-					[player, _json] call ace_medical_fnc_deserializeState;
+					if(profileNamespace getVariable "TWC_DeathInfo" != "alive")then{
+						hint "Applied Previous Medical";
+						[player, _json] call ace_medical_fnc_deserializeState;
+					}else{
+						//Player was dead when they reconnected
+						//Notify Admins
+						[player, format["Died by %1 and has reconnected.",profileNamespace getVariable "TWC_DeathInfo"]] remoteExecCall ["TWC_core_fnc_findAdmin",2];
+					};
 				};
 			};
 		}else{
@@ -120,4 +127,11 @@ if(!isMultiplayer)exitWith {};
 	ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
 	ProfileNamespace setVariable ["twc_framework_medicalInfo", ([player] call ace_medical_fnc_serializeState)];
 	saveProfileNamespace;
+	
+	//Thanks to Grusey a possible Bug was found. If you get arma'd when you reconnect you will reconnect dead
+	//This sets a variable which can be called and allow a re-connected dead to choose spectator or respawn
+	player addEventHandler ["Killed", {
+		params ["_unit", "_killer", "_instigator", "_useEffects"];
+			profileNamespace ["TWC_DeathInfo",str _killer,true];
+	}];
 };

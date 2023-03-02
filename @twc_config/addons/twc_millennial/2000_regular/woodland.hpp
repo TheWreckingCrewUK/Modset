@@ -419,11 +419,13 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_Medic: TWC_Infantry_2000_Regula
 	};
 	Items[] =
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250")
 	};
 	respawnItems[] =
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250")
 	};
 	weapons[] =
 	{
@@ -436,6 +438,9 @@ class TWC_Infantry_2000_Regular_Woodland_Platoon_Medic: TWC_Infantry_2000_Regula
 		"TWC_Weapon_L85A2_SUSAT3D",
 		"Throw",
 		"Put"
+	};
+	class EventHandlers: EventHandlers {
+		init = "[(_this select 0)]spawn{waitUntil{uisleep 1; !isNil ""ace_medical_gui_showbloodlossentry""}; ace_medical_gui_showbloodlossentry = true;};";
 	};
 };
 class TWC_Infantry_2000_Regular_Woodland_Platoon_CSM: TWC_Infantry_2000_Regular_Woodland_Platoon_Sergeant

@@ -73,8 +73,8 @@ class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Medic: INHERIT \
 		ADD_ITEM(ACE_adenosine,4); \
 		ADD_ITEM(ACE_atropine,4); \
 		ADD_ITEM(ACE_epinephrine,10); \
-		ADD_ITEM(ACE_salineIV_500,12); \
-		ADD_ITEM(ACE_salineIV_250,4); \
+		ADD_ITEM(ACE_salineIV_500,6); \
+		ADD_ITEM(ACE_salineIV,6); \
 		ADD_ITEM(ACE_tourniquet,4); \
 		ADD_ITEM(ACE_personalAidKit,1); \
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1); \

@@ -21,4 +21,5 @@ if (!hasInterface) exitWith {};
 	]
 ] call CBA_fnc_addKeybind;
 
+//New adding to to options menu
 [["TWC Admin Message","Sends a message to the logged in admin"], "TWC_Help_Message"] call CBA_fnc_addPauseMenuOption;

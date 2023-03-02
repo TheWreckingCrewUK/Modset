@@ -1,5 +1,6 @@
 class ACE_Medical_Treatment_Actions {
 	// Override default class, so that bandaging options always show, like it did before rewrite, for logistical concerns
+	/*
 	class BasicBandage {
 		displayName = "Basic Bandage";
 		displayNameProgress = "Bandaging...";
@@ -34,21 +35,22 @@ class ACE_Medical_Treatment_Actions {
 			{{"ACE_MedicalLitterBase", "ACE_MedicalLitter_bandage1", "ACE_MedicalLitter_bandage2", "ACE_MedicalLitter_bandage3"}}
 		};
 	};
+	*/
 	
 	/*
 	 * Blood is by default larger, this is to give the medical vehicles a benefit
 	 * As ambulances are the only things stocked with blood, everything else is Saline
 	 */
 	class BloodIV: BasicBandage {
-		displayName = "Give Blood (1500ml)";
+		displayName = "Give Blood (2000ml)";
 	};
 	
 	class BloodIV_500: BloodIV {
-		displayName = "Give Blood (750ml)";
+		displayName = "Give Blood (1000ml)";
 	};
 	
 	class BloodIV_250: BloodIV {
-		displayName = "Give Blood (375ml)";
+		displayName = "Give Blood (500ml)";
 		allowSelfTreatment = 1;
 	};
 	
@@ -57,15 +59,15 @@ class ACE_Medical_Treatment_Actions {
 	};
 	
 	class SalineIV: BloodIV {
-		displayName = "Give Saline (1250ml)";
+		displayName = "Give Saline (1000ml)";
 	};
 	
 	class SalineIV_500: BloodIV {
-		displayName = "Give Saline (625ml)";
+		displayName = "Give Saline (500ml)";
 	};
 	
 	class SalineIV_250: BloodIV {
-		displayName = "Give Saline (300ml)";
+		displayName = "Give Saline (250ml)";
 		allowSelfTreatment = 1;
 	};
 };

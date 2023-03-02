@@ -145,12 +145,17 @@ class TWC_Infantry_1990_COIN_Woodland_Platoon_Medic: TWC_Infantry_1990_Regular_W
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250"),
 		MAG_2("ACE_CableTie")
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250"),
 		MAG_2("ACE_CableTie")
+	};
+	class EventHandlers: EventHandlers {
+		init = "[(_this select 0)]spawn{waitUntil{uisleep 1; !isNil ""ace_medical_gui_showbloodlossentry""}; ace_medical_gui_showbloodlossentry = true;};";
 	};
 };
 class TWC_Infantry_1990_COIN_Woodland_Platoon_CSM: TWC_Infantry_1990_Regular_Woodland_Platoon_CSM

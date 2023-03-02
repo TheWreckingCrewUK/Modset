@@ -453,11 +453,13 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 	attendant = 1;
 	Items[]=
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250")
 	};
 	respawnItems[]=
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250")
 	};
 	weapons[]=
 	{
@@ -492,6 +494,9 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 		MAG_2("ACE_HandFlare_White"),
 		MAG_2("Chemlight_green"),
 		"ACE_Flashlight_Maglite_ML300L"
+	};
+	class EventHandlers: EventHandlers {
+		init = "[(_this select 0)]spawn{waitUntil{uisleep 1; !isNil ""ace_medical_gui_showbloodlossentry""}; ace_medical_gui_showbloodlossentry = true;};";
 	};
 };
 class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Mortar: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman

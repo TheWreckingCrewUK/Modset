@@ -538,11 +538,13 @@ class TWC_Infantry_Modern_COIN_Woodland_Platoon_Medic: TWC_Infantry_Modern_Regul
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250"),
 		MAG_2("ACE_CableTie")
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250"),
 		MAG_2("ACE_CableTie")
 	};
 	weapons[] =
@@ -570,6 +572,9 @@ class TWC_Infantry_Modern_COIN_Woodland_Platoon_Medic: TWC_Infantry_Modern_Regul
 		MAG_3("UK3CB_BAF_556_30Rnd"),
 		MAG_2("UK3CB_BAF_9_17Rnd"),
 		MAG_2("SmokeShell")
+	};
+	class EventHandlers: EventHandlers {
+		init = "[(_this select 0)]spawn{waitUntil{uisleep 1; !isNil ""ace_medical_gui_showbloodlossentry""}; ace_medical_gui_showbloodlossentry = true;};";
 	};
 };
 class TWC_Infantry_Modern_COIN_Woodland_Platoon_Mortar: TWC_Infantry_Modern_Regular_Woodland_Platoon_Mortar

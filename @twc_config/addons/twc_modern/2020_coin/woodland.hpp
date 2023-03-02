@@ -239,16 +239,6 @@ class TWC_Infantry_2020_COIN_Woodland_Platoon_Medic: TWC_Infantry_2020_Regular_W
 {
 	CATEGORY(TWC_Infantry_2020_COIN_Woodland)
 	backpack = "TWC_Backpack_2020_COIN_Woodland_Platoon_Medic";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
 };
 class TWC_Infantry_2020_COIN_Woodland_Platoon_Mortar: TWC_Infantry_2020_Regular_Woodland_Platoon_Mortar
 {
