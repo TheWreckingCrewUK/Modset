@@ -81,7 +81,7 @@ EM_blacklist_obj = [
 	[player, currentWeapon player, currentMuzzle player] call TWC_fnc_silentSafety;
 	enableRadio false;
 	player disableConversation true;
-	player action ["WeaponOnBack", player];
+	//player action ["WeaponOnBack", player];
 
 	if !((goggles player) in approvedFacewear) then {
 		removeGoggles player;
@@ -101,7 +101,9 @@ EM_blacklist_obj = [
 			player unassignItem "itemMap"; 
 			player removeItem "itemMap"; 
 		};
-		
-		1 enableChannel false;
+		/*If medic force seeing blood volume*/
+		if(getNumber (configfile >> "CfgVehicles" >> typeOf player >> "attendant") == 1)then{
+			ace_medical_gui_showbloodlossentry = 1;
+		};
 	}] call CBA_fnc_waitUntilAndExecute;
 }] call CBA_fnc_addEventHandler;
