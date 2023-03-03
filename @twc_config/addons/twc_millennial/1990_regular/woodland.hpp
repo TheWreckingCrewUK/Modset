@@ -113,14 +113,12 @@ class TWC_Infantry_1990_Regular_Woodland_SectionCommander: TWC_Infantry_1990_Reg
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools",
-		"ACE_DAGR"
+		"ACE_MapTools"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools",
-		"ACE_DAGR"
+		"ACE_MapTools"
 	};
 	magazines[] =
 	{
@@ -161,14 +159,12 @@ class TWC_Infantry_1990_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools",
-		"ACE_DAGR"
+		"ACE_MapTools"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools",
-		"ACE_DAGR"
+		"ACE_MapTools"
 	};
 	weapons[] =
 	{

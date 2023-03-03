@@ -245,14 +245,12 @@ class TWC_Infantry_2000_Regular_Woodland_SectionCommander: TWC_Infantry_2000_Reg
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools",
-		"ACE_microDAGR"
+		"ACE_MapTools"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools",
-		"ACE_microDAGR"
+		"ACE_MapTools"
 	};
 	magazines[] =
 	{
