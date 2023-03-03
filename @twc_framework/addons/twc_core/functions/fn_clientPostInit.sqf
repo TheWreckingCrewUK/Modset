@@ -103,7 +103,7 @@ EM_blacklist_obj = [
 		};
 		/*If medic force seeing blood volume*/
 		if(getNumber (configfile >> "CfgVehicles" >> typeOf player >> "attendant") == 1)then{
-			ace_medical_gui_showbloodlossentry = 1;
+			ace_medical_gui_showbloodlossentry = true;
 		};
 	}] call CBA_fnc_waitUntilAndExecute;
 }] call CBA_fnc_addEventHandler;
