@@ -22,6 +22,9 @@ class TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_AT: TWC_Infantry_ColdWar_
 {
 	CATEGORY(TWC_Infantry_Dismounted_Woodland)
 	backpack = "TWC_Backpack_ColdWar_Regular_Dismounted_AT";
+	nightItems[] += {
+		MAG_2("TWC_Magazine_L14A1_Illum")
+	};
 };
 class TWC_Infantry_ColdWar_Regular_Dismounted_Woodland_ASSAT: TWC_Infantry_ColdWar_Regular_Woodland_ASSAT
 {
