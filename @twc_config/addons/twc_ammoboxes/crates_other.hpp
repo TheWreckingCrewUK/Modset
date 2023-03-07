@@ -24,6 +24,7 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 		ADD_ITEM(ACE_elasticBandage, 15);
 		ADD_ITEM(ACE_quikclot, 15);
 		ADD_ITEM(ACE_packingBandage, 15);
+		ADD_ITEM(ACE_splint,8);
 		
 		ADD_ITEM(ACE_atropine, 2);
 		ADD_ITEM(ACE_adenosine, 2);

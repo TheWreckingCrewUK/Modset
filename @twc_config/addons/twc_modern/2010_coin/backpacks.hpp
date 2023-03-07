@@ -84,6 +84,7 @@ class TWC_Backpack_Modern_COIN_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP_Me
 		ADD_ITEM(ACE_salineIV_500,6);
 		ADD_ITEM(ACE_salineIV,6);
 		ADD_ITEM(ACE_tourniquet,4);
+		ADD_ITEM(ACE_splint,6);
 		ADD_ITEM(ACE_personalAidKit,1);
 		ADD_ITEM(ACE_surgicalKit,1);
 	};

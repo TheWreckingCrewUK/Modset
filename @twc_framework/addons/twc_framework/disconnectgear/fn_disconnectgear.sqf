@@ -44,7 +44,7 @@ if (!hasInterface) exitWith {};
 		//Checks If you are the same role as before
 		if(typeOf player == ProfileNamespace getVariable ["TWC_Framework_TypeOf",""])then{
 			//Joined Same Slot and Played Before
-			[] call twc_fnc_findOldGear;
+
 			//applies wounds
 			_json = profileNamespace getVariable "twc_framework_medicalInfo";
 			//Waits 60 seconds so they "start bleeding or being injured" when music ends. Music is 75 seconds long
@@ -133,6 +133,6 @@ if (!hasInterface) exitWith {};
 	//Temporarily just sends a message to the admins
 	player addEventHandler ["Killed", {
 		params ["_unit", "_killer", "_instigator", "_useEffects"];
-			profileNamespace setVariable ["TWC_DeathInfo",str _killer,true];
+			profileNamespace setVariable ["TWC_DeathInfo",str _killer];
 	}];
 };
