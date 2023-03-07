@@ -9,14 +9,8 @@ class CfgWeapons {
 	class arifle_Mk20_plain_f;
 	class Launcher;
 	class Launcher_Base_F: Launcher
-	{
-		class EventHandlers;
-	};
 	class CUP_launch_RPG7V: Launcher_Base_F
 	{
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};_mult = 1; if (isplayer (_this select 0)) then {_mult = 0.2};_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 16) - 8) * _mult), (velocity _bullet select 1) + (((random 16) - 8) * _mult), 	(velocity _bullet select 2) + (((random 8) - 3) * _mult)];";
-		};
 		scope=2;
 		aiDispersionCoefX=1.03;
 		aiDispersionCoefY=1.05;
@@ -119,27 +113,6 @@ class CfgWeapons {
 		hiddenSelections[] = {"camo","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"\UK3CB_BAF_Weapons\addons\UK3CB_BAF_Weapons_L115\data\awcstock_FDE_co.paa","\UK3CB_BAF_Weapons\addons\UK3CB_BAF_Weapons_L115\data\AWC_Scope_co.paa","\UK3CB_BAF_Weapons\addons\UK3CB_BAF_Weapons_L115\data\Magnumbits_ca.paa"};
 		picture = "\UK3CB_BAF_Weapons\addons\UK3CB_BAF_Weapons_L115\data\gear_awmFDE_ca.paa";
-	};
-	class MGunCore;
-	class MGun: MGunCore
-	{
-		class eventhandlers;
-		class mode_fullauto;
-		class manual;
-	};
-	class GMG_F: MGun
-	{
-		reloadtime = 0.22;
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};[_this select 6, _this select 0] call twc_fnc_aps; if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > (twc_gpmglastfired + 0.5)) then {twc_gpmglastfiredmult = 0;};twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.3);_mult = (((floor twc_gpmglastfiredmult) min 5));_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 4) - 2)* ((_mult) max 1.5)), (velocity _bullet select 1) + (((random 4) - 2)* ((_mult) max 1.5)), 	(velocity _bullet select 2) + (((random 4) - 2)* ((_mult) max 0.8))];twc_gpmglastfired = time;";
-		};
-	};
-	
-	
-	class LMG_RCWS: MGun {
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};twc_gpmglastfired = time;";
-		};
 	};
 	
 	class RifleCore;
@@ -464,51 +437,13 @@ class CfgWeapons {
 		{
 			reloadTime = 0.08;
 		};
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {}; if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};twc_gpmglastfired = time;";
-		};
 	};
-	
-	
-	
-	class Default;
-	class CannonCore: Default
-	{
-		class eventhandlers;
-	};
-	
-	class gatling_30mm_base: CannonCore
-	{
-		class EventHandlers;
-		class Mode_FullAuto;
-		class manual;
-	};
-	
-	class UK3CB_gatling_30mm_base: gatling_30mm_base
-	{
-		modes[] = {"Burst50","close","short","medium","far"};
-		class Burst10;
-		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
-		};
-	};
-	
+		
 	class UK3CB_BAF_CannonM230: UK3CB_gatling_30mm_base
 	{
 		class Burst20:Burst10
 		{
 			dispersion=0.012;
-		};
-	};
-	
-	class CUP_Vacannon_M230_veh: CannonCore
-	{
-		class manual: CannonCore
-		{
-			dispersion=0.012;
-		};
-		class EventHandlers: EventHandlers {
-			fired = "if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0}; if (time > twc_gpmglastfired + 0.6) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 14) - 7, (velocity _bullet select 1) + (random 14) - 7, 	(velocity _bullet select 2) + (random 10) - 5];};twc_gpmglastfired = time;";
 		};
 	};
 	
@@ -521,9 +456,6 @@ class CfgWeapons {
 		ace_overheating_mrbs = 3500;
 		ace_overheating_dispersion = 1.0;
 		ace_overheating_slowdownFactor = 1.5;
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};twc_gpmglastfired = time;";
-		};
 	};
 
 	class UK3CB_BAF_L110_Base:Rifle_Long_Base_F
@@ -539,9 +471,5 @@ class CfgWeapons {
 	{
 		recoil = "twc_mg_556";
 		recoilProne = "twc_mg_556_prone";
-		class FullAuto;
-		class EventHandlers: EventHandlers {
-			fired = "_unit = _this select 0; if (!local _unit) exitwith {};if (isnil 'twc_gpmglastfired') then {twc_gpmglastfired = 0;twc_gpmglastfiredmult = 0;}; if (time > twc_gpmglastfired + 0.3) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (random 4) - 2, (velocity _bullet select 1) + (random 4) - 2, 	(velocity _bullet select 2) + (random 3) - 1];twc_gpmglastfiredmult = 0;} else {twc_gpmglastfiredmult = (twc_gpmglastfiredmult + 0.2);_mult = ((floor twc_gpmglastfiredmult) min 5);if (_mult > 0) then {_bullet = _this select 6; _bullet setvelocity [(velocity _bullet select 0) + (((random 2) - 1)* _mult), (velocity _bullet select 1) + (((random 2) - 1)* _mult), 	(velocity _bullet select 2) + (((random 4) - 2)* _mult)];};};twc_gpmglastfired = time;";
-		};
 	};
 };
