@@ -71,15 +71,3 @@ class CfgFunctions {
 		};
 	};
 };
-
-
-
-class Extended_InitPost_EventHandlers {
-	class CAManBase {
-		class twc_pubmoduleInitPos_eh {
-			init = "[(_this select 0)] execVM 'twc_pubfixes\init.sqf';";
-		};
-	};
-};
-
-
