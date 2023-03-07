@@ -15,13 +15,13 @@
 */
 params["_bool"];
 if (!_bool) exitWith {};
+if (!isMultiplayer) exitWith {};
 //Have the server set it with time so it resets on restart
 if(isServer)then{
 	TWC_MissionStart = systemTimeUTC;
 	publicVariable "TWC_MissionStart";
 };
 if (!hasInterface) exitWith {};
-
 
 
 //As is tradion we do an ugly sleep
@@ -47,19 +47,18 @@ if (!hasInterface) exitWith {};
 			[] call twc_fnc_findOldGear;
 			//applies wounds
 			_json = profileNamespace getVariable "twc_framework_medicalInfo";
-			[_json]spawn {
-				params["_json"];
-				//Waits 60 seconds so they "start bleeding or being injured" when music ends. Music is 75 seconds long
-				uisleep 60;
-				if(_json != ([player] call ace_medical_fnc_serializeState))then{
-					if(profileNamespace getVariable "TWC_DeathInfo" != "alive")then{
-						hint "Applied Previous Medical";
-						[player, _json] call ace_medical_fnc_deserializeState;
-					}else{
-						//Player was dead when they reconnected
-						//Notify Admins
-						[player, format["Died by %1 and has reconnected.",profileNamespace getVariable "TWC_DeathInfo"]] remoteExecCall ["TWC_core_fnc_findAdmin",2];
-					};
+			//Waits 60 seconds so they "start bleeding or being injured" when music ends. Music is 75 seconds long
+			sleep 60;
+			//Moved this to 60 second in. Caused weird issues with night gear
+			[] call twc_fnc_findOldGear;
+			if(_json != ([player] call ace_medical_fnc_serializeState))then{
+				if(profileNamespace getVariable "TWC_DeathInfo" == "alive")then{
+					hint "Applied Previous Medical";
+					[player, _json] call ace_medical_fnc_deserializeState;
+				}else{
+					//Player was dead when they reconnected
+					//Notify Admins
+					[player, format["Died by %1 and has reconnected.",profileNamespace getVariable "TWC_DeathInfo"]] remoteExecCall ["TWC_core_fnc_findAdmin",2];
 				};
 			};
 		}else{
@@ -71,7 +70,9 @@ if (!hasInterface) exitWith {};
 			saveProfileNamespace;
 		};
 	};
-
+	//Adding another sleepto stop wierd situation where player opens inventory at the same time loadout is applied
+	sleep 1;
+	
 	//Part of plan be we want to add multiple event handlers to keep saving your loadout to missionNamespace
 	//This way you are less likely to duplicate ammo
 	//can't use fired because that actually might cause lag if a MG has a HDD
@@ -129,6 +130,7 @@ if (!hasInterface) exitWith {};
 	
 	//Thanks to Grusey a possible Bug was found. If you get arma'd when you reconnect you will reconnect dead
 	//This sets a variable which can be called and allow a re-connected dead to choose spectator or respawn
+	//Temporarily just sends a message to the admins
 	player addEventHandler ["Killed", {
 		params ["_unit", "_killer", "_instigator", "_useEffects"];
 			profileNamespace setVariable ["TWC_DeathInfo",str _killer,true];
