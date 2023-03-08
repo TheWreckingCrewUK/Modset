@@ -344,7 +344,7 @@ class CfgVehicles
 	#include "2010_regular\arctic.hpp"
 	#include "2010_regular\arctic_dismounted.hpp"
 	
-	#include "2020_BAF_regular\woodland.hpp"
+	#include "2020_regular\woodland.hpp"
 	#include "2020_regular\woodland_dismounted.hpp"
 	#include "2020_regular\arctic.hpp"
 	#include "2020_regular\arctic_dismounted.hpp"
@@ -369,10 +369,10 @@ class CfgGroups
 		class TWC_Groups_Modern
 		{
 			name = "TWC Public Groups Modern";
-			#include "2010_BAF_regular\groups.hpp"
-			#include "2020_BAF_regular\groups.hpp"
-			#include "2010_BAF_coin\groups.hpp"
-			#include "2020_BAF_coin\groups.hpp"
+			#include "2010_regular\groups.hpp"
+			#include "2020_regular\groups.hpp"
+			#include "2010_coin\groups.hpp"
+			#include "2020_coin\groups.hpp"
 			#include "2010_coin_ana\groups.hpp"
 			class Generic
 			{

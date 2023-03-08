@@ -27,10 +27,9 @@ class ana_backpack_medic: CUP_B_SLA_Medicbag
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
 	};
 	class TransportMagazines {
-		ADD_MAGA(SmokeShell, 4);
+		ADD_MAGA(SmokeShell,4);
 	};
 };
-	
 class ana_backpack_rpg: CUP_B_RPGPack_Khaki
 	{
 		scope = 1;
@@ -46,10 +45,9 @@ class ana_backpack_mg: CUP_B_AlicePack_Khaki
 		scope = 1;
 		scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M, 4);
+		ADD_MAGA(CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M,4);
 	};
 };
-	
 class ana_backpack_leader: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
@@ -58,24 +56,21 @@ class ana_backpack_leader: CUP_B_AlicePack_Khaki
 		ADD_ITEM(ACRE_PRC117F,1);
 	};
 	class TransportMagazines {
-		ADD_MAGA(SmokeShell, 2);
-		ADD_MAGA(SmokeShellRed, 3);
-		ADD_MAGA(SmokeShellGreen, 3);
-		ADD_MAGA(SmokeShellBlue, 3);
-		ADD_MAGA(SmokeShellBlue, 3);
+		ADD_MAGA(SmokeShell,2);
+		ADD_MAGA(SmokeShellRed,3);
+		ADD_MAGA(SmokeShellGreen,3);
+		ADD_MAGA(SmokeShellBlue,3);
 	};
 };
-	
 class ana_backpack_2ic: UK3CB_BAF_B_Carryall_OLI
 	{
 		scope = 1;
 		scopeArsenal = 1;
 	class TransportMagazines{
-		ADD_MAGA(CUP_30Rnd_762x39_AK47_M, 10);
-		ADD_MAGA(SmokeShell, 2);
-		ADD_MAGA(SmokeShellRed, 3);
-		ADD_MAGA(SmokeShellGreen, 3);
-		ADD_MAGA(SmokeShellBlue, 3);
-		ADD_MAGA(SmokeShellBlue, 3);	
+		ADD_MAGA(CUP_30Rnd_762x39_AK47_M,10);
+		ADD_MAGA(SmokeShell,2);
+		ADD_MAGA(SmokeShellRed,3);
+		ADD_MAGA(SmokeShellGreen,3);
+		ADD_MAGA(SmokeShellBlue,3);
 	};
  };

@@ -5,7 +5,6 @@ class TWC_ANA_Base: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 		editorSubcategory = "TWC_Infantry_2010_COIN_ANA";
 		vehicleClass="Men_ana";
 		faction = "TWC_Modern";
-		CATEGORY(TWC_Infantry_Regular_Woodland)
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		identityTypes[] = {"LanguagePER_F","Head_TK","G_IRAN_default"};
@@ -25,7 +24,7 @@ class TWC_ANA_Base: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 		{
         		"CUP_H_Ger_M92_RGR",
         		"UK3CB_BAF_V_PLCE_Webbing_OLI",
-			"ItemCompass"
+				"ItemCompass"
 		};
 		weapons[]=
 		{

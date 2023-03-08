@@ -20,7 +20,6 @@ class mpx_daysack8;
 class mpx_daysack10;
 class B_UAV_01_backpack_F;
 class UK3CB_BAF_B_Kitbag_MTP;
-class UK3CB_BAF_B_Carryall_MTP;
 class UK3CB_BAF_B_Bergen_MTP_JTAC_L_A;
 class UK3CB_BAF_B_Bergen_MTP_Radio_L_A;
 class B_AssaultPack_rgr;
@@ -44,4 +43,4 @@ class UK3CB_BAF_B_Bergen_MTP_SL_H_A;
 #include "2020_regular\backpacks.hpp"
 #include "2010_coin\backpacks.hpp"
 #include "2020_coin\backpacks.hpp"
-#include "2010_coin_ana\backpacks.hpp
+#include "2010_coin_ana\backpacks.hpp"
