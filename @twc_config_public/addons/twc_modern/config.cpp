@@ -49,6 +49,9 @@ class CfgEditorSubcategories {
 	class TWC_Infantry_2010_COIN_ANA {
 		displayName = "Afghan National Army (2010s)";
 	};
+	class TWC_Infantry_2010_COIN_GER {
+		displayName = "German Bundeswehr (2010s)";
+	};
 };
 
 class EventHandlers;
@@ -360,6 +363,7 @@ class CfgVehicles
 	#include "2020_coin\arctic_dismounted.hpp"
 	
 	#include "2010_coin_ana\woodland.hpp"
+	#include "2010_coin_ger\woodland.hpp"
 };
 
 class CfgGroups
@@ -374,6 +378,7 @@ class CfgGroups
 			#include "2010_coin\groups.hpp"
 			#include "2020_coin\groups.hpp"
 			#include "2010_coin_ana\groups.hpp"
+			#include "2010_coin_ger\groups.hpp"
 			class Generic
 			{
 				name = "Generic";
