@@ -7,7 +7,7 @@ class ANA_Backpack_Modern_terp: CUP_B_SLA_Medicbag
 	};
 };
 
-	class ana_backpack_medic: CUP_B_SLA_Medicbag
+class ana_backpack_medic: CUP_B_SLA_Medicbag
 {
 		scope = 1;
 		scopeArsenal = 1;
@@ -26,34 +26,31 @@ class ANA_Backpack_Modern_terp: CUP_B_SLA_Medicbag
 		ADD_ITEM(ACE_personalAidKit,1);
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
 	};
-
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell, 4);
 	};
 };
 	
-	class ana_backpack_rpg: CUP_B_RPGPack_Khaki
+class ana_backpack_rpg: CUP_B_RPGPack_Khaki
 	{
 		scope = 1;
 		scopeArsenal = 1;
-{
 	class TransportMagazines {
 		ADD_MAGA(CUP_OG7_M, 3);
 		ADD_MAGA(CUP_PG7V_M,2);
 	};
 };
 	
-	class ana_backpack_mg: CUP_B_AlicePack_Khaki
+class ana_backpack_mg: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
-		
+		scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M, 4);
 	};
-		
 };
 	
-	class ana_backpack_leader: CUP_B_AlicePack_Khaki
+class ana_backpack_leader: CUP_B_AlicePack_Khaki
 	{
 		scope = 1;
 		scopeArsenal = 1;
@@ -69,7 +66,7 @@ class ANA_Backpack_Modern_terp: CUP_B_SLA_Medicbag
 	};
 };
 	
-	class ana_backpack_2ic: UK3CB_BAF_B_Carryall_OLI
+class ana_backpack_2ic: UK3CB_BAF_B_Carryall_OLI
 	{
 		scope = 1;
 		scopeArsenal = 1;
