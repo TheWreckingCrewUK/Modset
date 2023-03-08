@@ -110,6 +110,10 @@ class TWC_ANA_Base: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 		scope=2;
 		displayName="Section Commander @Afghan National Army";
 		backpack="";
+		TWC_isCommandRole = 1;
+		class EventHandlers: EventHandlers {
+		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+	};
 		linkedItems[]=
 		{
         		"UK3CB_BAF_V_PLCE_Webbing_OLI",
@@ -165,6 +169,7 @@ class TWC_ANA_Base: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 		scope=2;
 		displayName="Section Subcommander";
 		backpack="ana_backpack_2ic";
+		TWC_isCommandRole = 1;
 		linkedItems[]=
 		{
         		"CUP_V_B_Interceptor_Grenadier_M81",
