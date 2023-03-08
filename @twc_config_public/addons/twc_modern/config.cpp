@@ -52,6 +52,12 @@ class CfgEditorSubcategories {
 	class TWC_Infantry_2010_GER {
 		displayName = "German Bundeswehr (2010s)";
 	};
+	class TWC_Infantry_2010_USMC{
+		displayName = "United States Marine Corps (2010s)";
+	};
+	class TWC_Infantry_2020_US{
+		displayName = "United States Army (2020s)";
+	};
 };
 
 class EventHandlers;
@@ -364,6 +370,8 @@ class CfgVehicles
 	
 	#include "2010_coin_ana\woodland.hpp"
 	#include "2010_germany\woodland.hpp"
+	#include "2010_usmc\desert.hpp"
+	#include "2010_us\woodland.hpp"
 };
 
 class CfgGroups
@@ -379,6 +387,8 @@ class CfgGroups
 			#include "2020_coin\groups.hpp"
 			#include "2010_coin_ana\groups.hpp"
 			#include "2010_germany\groups.hpp"
+			#include "2010_usmc\groups.hpp"
+			#include "2010_us\groups.hpp"
 			class Generic
 			{
 				name = "Generic";

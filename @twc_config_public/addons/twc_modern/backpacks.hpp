@@ -42,10 +42,13 @@ class UK3CB_BAF_B_Bergen_TAN_SL_A;
 class UK3CB_BAF_B_Carryall_TAN;
 class CUP_B_GER_Pack_Tropentarn;
 class CUP_B_GER_Pack_Flecktarn;
+class CUP_B_USMC_MOLLE;
+class CUP_B_USPack_SL_OEFCP;
 
 #include "2010_regular\backpacks.hpp"
 #include "2020_regular\backpacks.hpp"
 #include "2010_coin\backpacks.hpp"
 #include "2020_coin\backpacks.hpp"
 #include "2010_coin_ana\backpacks.hpp"
-#include "2010_coin_ger\backpacks.hpp"
+#include "2010_germany\backpacks.hpp"
+#include "2010_usmc\backpacks.hpp"
