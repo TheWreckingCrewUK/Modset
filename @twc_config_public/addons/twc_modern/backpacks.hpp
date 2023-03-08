@@ -19,6 +19,26 @@ class mpx_daysack7;
 class mpx_daysack8;
 class mpx_daysack10;
 class B_UAV_01_backpack_F;
+class UK3CB_BAF_B_Kitbag_MTP;
+class UK3CB_BAF_B_Carryall_MTP;
+class UK3CB_BAF_B_Bergen_MTP_JTAC_L_A;
+class UK3CB_BAF_B_Bergen_MTP_Radio_L_A;
+class B_AssaultPack_rgr;
+class CUP_B_RPGPack_Khaki;
+class CUP_B_CivPack_WDL;
+class CUP_B_AlicePack_Khaki;
+class UK3CB_BAF_B_Bergen_OLI_SL_A;
+class CUP_B_SLA_Medicbag;
+class UK3CB_BAF_B_Carryall_OLI;
+class CUP_B_ACRScout_m95;
+class UK3CB_BAF_B_Kitbag_OLI;
+class CUP_B_Kombat_Radio_Olive;
+class CUP_B_GER_Medic_Tropentarn;
+class CUP_B_GER_Medic_FLecktarn;
+class UK3CB_BAF_B_Bergen_MTP_Medic_H_B;
+class UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A;
+class UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A;
+class UK3CB_BAF_B_Bergen_MTP_SL_H_A;
 
 #include "2010_regular\backpacks.hpp"
 #include "2020_regular\backpacks.hpp"
