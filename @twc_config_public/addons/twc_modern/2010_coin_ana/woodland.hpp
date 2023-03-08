@@ -2,14 +2,19 @@ class TWC_ANA_Base: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 	{
 		scope=2;
 		displayName="Rifleman";
-		faction="ana_units";
-		editorSubcategory = "Men_ANA";
+		editorSubcategory = "TWC_Infantry_2010_COIN_ANA";
 		vehicleClass="Men_ana";
+		faction = "TWC_Modern";
+		CATEGORY(TWC_Infantry_Regular_Woodland)
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		identityTypes[] = {"LanguagePER_F","Head_TK","G_IRAN_default"};
 		uniformClass="CUP_U_B_BDUv2_dirty_M81";
 		backpack="";
+		class EventHandlers: EventHandlers {
+			init = "";
+		};
+
 		linkedItems[]=
 		{
         		"CUP_H_Ger_M92_RGR",
