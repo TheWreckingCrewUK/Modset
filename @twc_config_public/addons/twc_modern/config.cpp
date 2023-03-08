@@ -371,7 +371,7 @@ class CfgVehicles
 	#include "2010_coin_ana\woodland.hpp"
 	#include "2010_germany\woodland.hpp"
 	#include "2010_usmc\desert.hpp"
-	#include "2010_us\woodland.hpp"
+	#include "2020_us\woodland.hpp"
 };
 
 class CfgGroups
@@ -388,7 +388,7 @@ class CfgGroups
 			#include "2010_coin_ana\groups.hpp"
 			#include "2010_germany\groups.hpp"
 			#include "2010_usmc\groups.hpp"
-			#include "2010_us\groups.hpp"
+			#include "2020_us\groups.hpp"
 			class Generic
 			{
 				name = "Generic";
