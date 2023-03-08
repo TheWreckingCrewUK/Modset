@@ -1,17 +1,18 @@
-
-	class Modern_ger_Base: B_Soldier_base_F
+class Modern_ger_Base: B_Soldier_base_F
 	{
 		scope=2;
 		displayName="Rifleman";
-		faction="ger_units";
-		editorSubcategory = "Men_twc_woodland";
+		faction = "TWC_Modern";
+		editorSubcategory = "TWC_Infantry_2010_GER";
 		vehicleClass="Men_twc_woodland";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
 		uniformClass="CUP_U_B_GER_Flecktarn_1";
 		twc_radioType = "ACRE_PRC148";
 		backpack="ger_backpack_rif_flk";
-		twc_radioChannel = 6;
+		class EventHandlers: EventHandlers {
+		init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+		};
 		linkedItems[]=
 		{
 			"CUP_V_B_GER_PVest_Fleck_RFL",

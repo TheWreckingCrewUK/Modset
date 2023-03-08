@@ -1,4 +1,4 @@
-class TWC_ANA_Base: TWC_Infantry_Modern_Regular_Woodland_Rifleman
+class TWC_ANA_Base: B_Soldier_base_F
 	{
 		scope=2;
 		displayName="Rifleman";
