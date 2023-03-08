@@ -46,6 +46,9 @@ class CfgEditorSubcategories {
 	class TWC_Infantry_2020_COIN_Dismounted_Arctic {
 		displayName = "British Infantry (2020s, COIN, Dismounted, Arctic)";
 	};
+	class TWC_Infantry_2010_COIN_ANA {
+		displayName = "Afghan National Army (2010s)";
+	};
 };
 
 class EventHandlers;
@@ -336,25 +339,27 @@ class CfgVehicles
 			"Put"
 		};
 	};
-	#include "2010_BAF_regular\woodland.hpp"
-	#include "2010_BAF_regular\woodland_dismounted.hpp"
-	#include "2010_BAF_regular\arctic.hpp"
-	#include "2010_BAF_regular\arctic_dismounted.hpp"
+	#include "2010_regular\woodland.hpp"
+	#include "2010_regular\woodland_dismounted.hpp"
+	#include "2010_regular\arctic.hpp"
+	#include "2010_regular\arctic_dismounted.hpp"
 	
 	#include "2020_BAF_regular\woodland.hpp"
-	#include "2020_BAF_regular\woodland_dismounted.hpp"
-	#include "2020_BAF_regular\arctic.hpp"
-	#include "2020_BAF_regular\arctic_dismounted.hpp"
+	#include "2020_regular\woodland_dismounted.hpp"
+	#include "2020_regular\arctic.hpp"
+	#include "2020_regular\arctic_dismounted.hpp"
 
-	#include "2010_BAF_coin\woodland.hpp"
-	#include "2010_BAF_coin\woodland_dismounted.hpp"
-	#include "2010_BAF_coin\arctic.hpp"
-	#include "2010_BAF_coin\arctic_dismounted.hpp"
+	#include "2010_coin\woodland.hpp"
+	#include "2010_coin\woodland_dismounted.hpp"
+	#include "2010_coin\arctic.hpp"
+	#include "2010_coin\arctic_dismounted.hpp"
 	
-	#include "2020_BAF_coin\woodland.hpp"
-	#include "2020_BAF_coin\woodland_dismounted.hpp"
-	#include "2020_BAF_coin\arctic.hpp"
-	#include "2020_BAF_coin\arctic_dismounted.hpp"
+	#include "2020_coin\woodland.hpp"
+	#include "2020_coin\woodland_dismounted.hpp"
+	#include "2020_coin\arctic.hpp"
+	#include "2020_coin\arctic_dismounted.hpp"
+	
+	#include "2010_coin_ana\woodland.hpp"
 };
 
 class CfgGroups
@@ -368,6 +373,7 @@ class CfgGroups
 			#include "2020_BAF_regular\groups.hpp"
 			#include "2010_BAF_coin\groups.hpp"
 			#include "2020_BAF_coin\groups.hpp"
+			#include "2010_coin_ana\groups.hpp"
 			class Generic
 			{
 				name = "Generic";
