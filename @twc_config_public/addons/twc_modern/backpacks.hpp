@@ -44,3 +44,4 @@ class UK3CB_BAF_B_Bergen_MTP_SL_H_A;
 #include "2020_regular\backpacks.hpp"
 #include "2010_coin\backpacks.hpp"
 #include "2020_coin\backpacks.hpp"
+#include "2010_coin_ana\backpacks.hpp
