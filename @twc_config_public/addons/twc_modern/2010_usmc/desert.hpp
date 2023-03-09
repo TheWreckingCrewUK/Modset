@@ -2,7 +2,7 @@ class CUP_B_USMC_Soldier_SL_des;
 	class TWC_Infantry_USMC_Modern_SquadLeader: CUP_B_USMC_Soldier_SL_des {
 		backpack = "TWC_Backpack_USMC_Modern_SquadLeader" ;
 		faction = "TWC_Modern";
-		editorSubcategory = "TWC_Infantry_2010_USMC";
+		editorSubcategory = "TWC_Infantry_2010_USMC_Desert_Desert";
 		displayName = "Squad Leader";
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -55,7 +55,7 @@ class CUP_B_USMC_Soldier_TL_des;
 	class TWC_Infantry_USMC_Modern_TeamLeader: CUP_B_USMC_Soldier_TL_des {
 		backpack = "TWC_Backpack_USMC_Modern_TeamLeader";
 		faction = "TWC_Modern";
-		editorSubcategory = "TWC_Infantry_2010_USMC";
+		editorSubcategory = "TWC_Infantry_2010_USMC_Desert";
 		displayName = "Team Leader";
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -108,7 +108,7 @@ class CUP_B_USMC_Soldier_TL_des;
 class CUP_B_USMC_Soldier_AR_des;	
 	class TWC_Infantry_USMC_Modern_AutoRifleman: CUP_B_USMC_Soldier_AR_des {
 		faction = "TWC_Modern";
-		editorSubcategory = "TWC_Infantry_2010_USMC";
+		editorSubcategory = "TWC_Infantry_2010_USMC_Desert";
 		displayName = "Autorifleman";
 		backpack = "TWC_Backpack_USMC_Modern_AR";
 		class EventHandlers: EventHandlers {
@@ -152,7 +152,7 @@ class CUP_B_USMC_Soldier_AR_des;
 class CUP_B_USMC_Soldier_GL_des;	
 	class TWC_Infantry_USMC_Modern_Grenadier: CUP_B_USMC_Soldier_GL_des {
 		faction = "TWC_Modern";
-		editorSubcategory = "TWC_Infantry_2010_USMC";
+		editorSubcategory = "TWC_Infantry_2010_USMC_Desert";
 		displayName = "Grenadier";
 		backpack = "TWC_Backpack_USMC_Modern_Grenadier";
 		class EventHandlers: EventHandlers {
@@ -189,7 +189,7 @@ class CUP_B_USMC_Soldier_GL_des;
 class CUP_B_USMC_Soldier_LAT_des;	
 	class TWC_Infantry_USMC_Modern_Rifleman: CUP_B_USMC_Soldier_LAT_des {
 		faction = "TWC_Modern";
-		editorSubcategory = "TWC_Infantry_2010_USMC";
+		editorSubcategory = "TWC_Infantry_2010_USMC_Desert";
 		displayName = "Rifleman";
 		backpack = "TWC_Backpack_USMC_Modern_Rifleman";
 		class EventHandlers: EventHandlers {
@@ -237,7 +237,7 @@ class CUP_B_USMC_Soldier_LAT_des;
 	class CUP_B_USMC_Soldier_MG_des;	
 	class TWC_Infantry_USMC_Modern_MG: CUP_B_USMC_Soldier_MG_des {
 		faction = "TWC_Modern";
-		editorSubcategory = "TWC_Infantry_2010_USMC";
+		editorSubcategory = "TWC_Infantry_2010_USMC_Desert";
 		backpack = "TWC_Backpack_USMC_Modern_AssMG" ;
 		displayName = "Machine Gunner";
 		class EventHandlers: EventHandlers {
@@ -280,7 +280,7 @@ class CUP_B_USMC_Soldier_LAT_des;
 	class CUP_B_USMC_SpecOps_SD_des;	
 	class TWC_Infantry_USMC_Modern_Breacher: CUP_B_USMC_SpecOps_SD_des {
 		faction = "TWC_Modern";
-		editorSubcategory = "TWC_Infantry_2010_USMC";
+		editorSubcategory = "TWC_Infantry_2010_USMC_Desert";
 		displayName = "Breacher";
 		backpack = "TWC_Backpack_USMC_Modern_Breacher" ;
 		class EventHandlers: EventHandlers {

@@ -49,11 +49,17 @@ class CfgEditorSubcategories {
 	class TWC_Infantry_2010_COIN_ANA {
 		displayName = "Afghan National Army (2010s)";
 	};
-	class TWC_Infantry_2010_GER {
-		displayName = "German Bundeswehr (2010s)";
+	class TWC_Infantry_2010_GER_Woodland {
+		displayName = "German Bundeswehr(2010s, Woodland)";
 	};
-	class TWC_Infantry_2010_USMC{
-		displayName = "United States Marine Corps (2010s)";
+	class TWC_Infantry_2010_GER_Desert {
+		displayName = "German Bundeswehr (2010s, Desert)";
+	};
+	class TWC_Infantry_2010_USMC_Desert{
+		displayName = "United States Marine Corps (2010s, Desert)";
+	};
+	class TWC_Infantry_2010_USMC_Woodland{
+		displayName = "United States Marine Corps (2010s, Woodland)";
 	};
 	class TWC_Infantry_2020_US{
 		displayName = "United States Army (2020s)";

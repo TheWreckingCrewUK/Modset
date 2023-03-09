@@ -1,6 +1,6 @@
 	class TWC_Infantry_USMC_Modern_SquadLeader_W: TWC_Infantry_USMC_Modern_SquadLeader {
 		backpack = "TWC_Backpack_USMC_Modern_SquadLeader_W" ;
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
 		uniformClass="CUP_U_B_USMC_FROG1_WMARPAT";
 		linkedItems[]=
 		{
@@ -24,7 +24,7 @@
 	
 	class TWC_Infantry_USMC_Modern_TeamLeader_W: TWC_Infantry_USMC_Modern_TeamLeader {
 		backpack = "TWC_Backpack_USMC_Modern_TeamLeader_W";
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
 		uniformClass="CUP_U_B_USMC_FROG1_WMARPAT";
 		linkedItems[]=
 		{
@@ -45,7 +45,7 @@
 	};
 
 	class TWC_Infantry_USMC_Modern_AutoRifleman_W: CUP_B_USMC_Soldier_AR_des {
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
 		backpack = "TWC_Backpack_USMC_Modern_AR_W";
 		uniformClass="CUP_U_B_USMC_FROG1_WMARPAT";
 		linkedItems[]=
@@ -67,7 +67,7 @@
 	};
 
 	class TWC_Infantry_USMC_Modern_Grenadier_W: TWC_Infantry_USMC_Modern_Grenadier {
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
 		backpack = "TWC_Backpack_USMC_Modern_Grenadier_W";
 		uniformClass="CUP_U_B_USMC_FROG1_WMARPAT";
 		linkedItems[]=
@@ -89,7 +89,7 @@
 	};
 
 	class TWC_Infantry_USMC_Modern_Rifleman_W: TWC_Infantry_USMC_Modern_Rifleman {
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
 		backpack = "TWC_Backpack_USMC_Modern_Rifleman_W";
 		uniformClass="CUP_U_B_USMC_FROG1_WMARPAT";
 		linkedItems[]=
@@ -110,7 +110,7 @@
 		};
 	};
 	class TWC_Infantry_USMC_Modern_ATRifleman_W: TWC_Infantry_USMC_Modern_Rifleman_W {
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
 		backpack = "TWC_Backpack_USMC_Modern_ATRifleman_W";
 		weapons[] =
 		{
@@ -130,7 +130,7 @@
 		};
 	};
 	class TWC_Infantry_USMC_Modern_MG_W: TWC_Infantry_USMC_Modern_MG {
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
 		backpack = "TWC_Backpack_USMC_Modern_AssMG_W" ;
 		uniformClass="CUP_U_B_USMC_FROG1_WMARPAT";
 		linkedItems[]=
@@ -151,7 +151,7 @@
 		};
 	};	
 	class TWC_Infantry_USMC_Modern_Breacher_W: TWC_Infantry_USMC_Modern_Breacher {
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
 		backpack = "TWC_Backpack_USMC_Modern_Breacher" ;
 		uniformClass="CUP_U_B_USMC_FROG1_WMARPAT";
 		linkedItems[]=
@@ -172,7 +172,7 @@
 		};
 	};
 	class TWC_Infantry_USMC_Modern_AMG_W: TWC_Infantry_USMC_Modern_AMG {
-		CATEGORY(TWC_Infantry_Regular_Woodland)
+		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
 		backpack = "TWC_Backpack_USMC_Modern_AssMG_W" ;
 		linkedItems[]=
 		{
