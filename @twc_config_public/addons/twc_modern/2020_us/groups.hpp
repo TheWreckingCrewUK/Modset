@@ -1,7 +1,7 @@
 class Modern_us_section
       {
        name = "United States Army 2020s (Woodland)"; //Name of Group
-       faction = "twc_faction"; //Faction
+       faction = "TWC_Modern"; //Faction
        side = 1; //Side
 			class Unit0
 			{

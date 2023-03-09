@@ -1,7 +1,7 @@
 class Modern_ger_section
       {
        name = "Bundeswehr Section (Woodland)"; //Name of Group
-       faction = "twc_faction"; //Faction
+       faction = "TWC_Modern"; //Faction
        side = 1; //Side
 			class Unit0
 		{
@@ -64,7 +64,7 @@ class Modern_ger_section
 class Modern_ger_section_d
      {
         name = "Bundeswehr Section (Desert)"; //Name of Group
-        faction = "twc_faction"; //Faction
+        faction = "TWC_Modern"; //Faction
         side = 1; //Side
 			class Unit0
 			{

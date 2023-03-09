@@ -1,7 +1,7 @@
 class CUP_B_USMC_Soldier_SL_des;
 	class TWC_Infantry_USMC_Modern_SquadLeader: CUP_B_USMC_Soldier_SL_des {
 		backpack = "TWC_Backpack_USMC_Modern_SquadLeader" ;
-		faction = "TWC_Infantry_2010_USMC";
+		faction = "TWC_Modern";
 		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Squad Leader";
 		class EventHandlers: EventHandlers {
@@ -54,7 +54,7 @@ class CUP_B_USMC_Soldier_SL_des;
 class CUP_B_USMC_Soldier_TL_des;	
 	class TWC_Infantry_USMC_Modern_TeamLeader: CUP_B_USMC_Soldier_TL_des {
 		backpack = "TWC_Backpack_USMC_Modern_TeamLeader";
-		faction = "TWC_USMC_Modern";
+		faction = "TWC_Modern";
 		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Team Leader";
 		class EventHandlers: EventHandlers {
@@ -107,7 +107,7 @@ class CUP_B_USMC_Soldier_TL_des;
 
 class CUP_B_USMC_Soldier_AR_des;	
 	class TWC_Infantry_USMC_Modern_AutoRifleman: CUP_B_USMC_Soldier_AR_des {
-		faction = "TWC_USMC_Modern";
+		faction = "TWC_Modern";
 		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Autorifleman";
 		backpack = "TWC_Backpack_USMC_Modern_AR";
@@ -151,7 +151,7 @@ class CUP_B_USMC_Soldier_AR_des;
 
 class CUP_B_USMC_Soldier_GL_des;	
 	class TWC_Infantry_USMC_Modern_Grenadier: CUP_B_USMC_Soldier_GL_des {
-		faction = "TWC_USMC_Modern";
+		faction = "TWC_Modern";
 		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Grenadier";
 		backpack = "TWC_Backpack_USMC_Modern_Grenadier";
@@ -188,7 +188,7 @@ class CUP_B_USMC_Soldier_GL_des;
 
 class CUP_B_USMC_Soldier_LAT_des;	
 	class TWC_Infantry_USMC_Modern_Rifleman: CUP_B_USMC_Soldier_LAT_des {
-		faction = "TWC_USMC_Modern";
+		faction = "TWC_Modern";
 		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Rifleman";
 		backpack = "TWC_Backpack_USMC_Modern_Rifleman";
@@ -236,7 +236,7 @@ class CUP_B_USMC_Soldier_LAT_des;
 	};
 	class CUP_B_USMC_Soldier_MG_des;	
 	class TWC_Infantry_USMC_Modern_MG: CUP_B_USMC_Soldier_MG_des {
-		faction = "TWC_USMC_Modern";
+		faction = "TWC_Modern";
 		backpack = "TWC_Backpack_USMC_Modern_AssMG" ;
 		CATEGORY(TWC_Infantry_Regular_Desert)
 		displayName = "Machine Gunner";
@@ -279,7 +279,7 @@ class CUP_B_USMC_Soldier_LAT_des;
 	};
 	class CUP_B_USMC_SpecOps_SD_des;	
 	class TWC_Infantry_USMC_Modern_Breacher: CUP_B_USMC_SpecOps_SD_des {
-		faction = "TWC_USMC_Modern";
+		faction = "TWC_Modern";
 		displayName = "Breacher";
 		backpack = "TWC_Backpack_USMC_Modern_Breacher" ;
 		CATEGORY(TWC_Infantry_Regular_Desert)
