@@ -1,4 +1,4 @@
-	class TWC_Backpack_USMC_Modern_SquadLeader: CUP_B_USMC_MOLLE {
+	class TWC_Backpack_USMC_Modern_SquadLeader: CUP_B_AssaultPack_Coyote {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportItems {
@@ -14,7 +14,7 @@
 		};
 	};
 	
-	class TWC_Backpack_USMC_Modern_TeamLeader: CUP_B_USMC_MOLLE {
+	class TWC_Backpack_USMC_Modern_TeamLeader: CUP_B_AssaultPack_Coyote {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportItems {
@@ -28,7 +28,7 @@
 			ADD_MAGA(SmokeShell,3);
 		};
 	};
-		class TWC_Backpack_USMC_Modern_Rifleman: CUP_B_USMC_MOLLE {
+		class TWC_Backpack_USMC_Modern_Rifleman: CUP_B_AssaultPack_Coyote {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {
@@ -38,7 +38,7 @@
 			ADD_MAGA(SmokeShell,2);
 		};
 	};
-		class TWC_Backpack_USMC_Modern_Grenadier: CUP_B_USMC_MOLLE {
+		class TWC_Backpack_USMC_Modern_Grenadier: CUP_B_AssaultPack_Coyote {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {
@@ -49,7 +49,7 @@
 			ADD_MAGA(SmokeShell,3);
 		};
 	};
-	class TWC_Backpack_USMC_Modern_Medic: CUP_B_USMC_MOLLE {
+	class TWC_Backpack_USMC_Modern_Medic: CUP_B_AssaultPack_Coyote {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportItems {
@@ -67,7 +67,7 @@
 			ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
 		};
 	};
-	class TWC_Backpack_USMC_Modern_AR: CUP_B_USMC_MOLLE {
+	class TWC_Backpack_USMC_Modern_AR: CUP_B_AssaultPack_Coyote {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {
@@ -76,7 +76,7 @@
 			ADD_MAGA(SmokeShell,3);
 		};
 	};
-		class TWC_Backpack_USMC_Modern_AssMG: CUP_B_USMC_MOLLE {
+		class TWC_Backpack_USMC_Modern_AssMG: CUP_B_AssaultPack_Coyote {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {
@@ -85,7 +85,7 @@
 			ADD_MAGA(SmokeShell,3);
 		};
 	};
-	class TWC_Backpack_USMC_Modern_Breacher: CUP_B_USMC_MOLLE {
+	class TWC_Backpack_USMC_Modern_Breacher: CUP_B_AssaultPack_Coyote {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {
@@ -95,7 +95,7 @@
 			ADD_MAGA(SmokeShell,3);
 		};
 	};
-	class TWC_Backpack_USMC_Modern_SquadLeader_W: CUP_B_AssaultPack_Coyote {
+	class TWC_Backpack_USMC_Modern_SquadLeader_W: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportItems {
@@ -111,7 +111,7 @@
 		};
 	};
 	
-	class TWC_Backpack_USMC_Modern_TeamLeader_W: CUP_B_AssaultPack_Coyote {
+	class TWC_Backpack_USMC_Modern_TeamLeader_W: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportItems {
@@ -125,7 +125,7 @@
 			ADD_MAGA(SmokeShell,3);
 		};
 	};
-		class TWC_Backpack_USMC_Modern_Rifleman_W: CUP_B_AssaultPack_Coyote {
+		class TWC_Backpack_USMC_Modern_Rifleman_W: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {
@@ -135,7 +135,7 @@
 			ADD_MAGA(SmokeShell,2);
 		};
 	};
-		class TWC_Backpack_USMC_Modern_Grenadier_W: CUP_B_AssaultPack_Coyote {
+		class TWC_Backpack_USMC_Modern_Grenadier_W: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {
@@ -146,7 +146,7 @@
 			ADD_MAGA(SmokeShell,3);
 		};
 	};
-	class TWC_Backpack_USMC_Modern_Medic_W: CUP_B_AssaultPack_Coyote {
+	class TWC_Backpack_USMC_Modern_Medic_W: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportItems {
@@ -164,7 +164,7 @@
 			ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
 		};
 	};
-	class TWC_Backpack_USMC_Modern_AR_W: CUP_B_AssaultPack_Coyote {
+	class TWC_Backpack_USMC_Modern_AR_W: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {
@@ -173,7 +173,7 @@
 			ADD_MAGA(SmokeShell,3);
 		};
 	};
-		class TWC_Backpack_USMC_Modern_AssMG_W: CUP_B_AssaultPack_Coyote {
+		class TWC_Backpack_USMC_Modern_AssMG_W: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {
@@ -182,7 +182,7 @@
 			ADD_MAGA(SmokeShell,3);
 		};
 	};
-	class TWC_Backpack_USMC_Modern_Breacher_W: CUP_B_AssaultPack_Coyote {
+	class TWC_Backpack_USMC_Modern_Breacher_W: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {
@@ -192,7 +192,7 @@
 			ADD_MAGA(SmokeShell,3);
 		};
 	};
-		class TWC_Backpack_USMC_Modern_ATRifleman_W: CUP_B_AssaultPack_Coyote {
+		class TWC_Backpack_USMC_Modern_ATRifleman_W: CUP_B_USMC_MOLLE {
 		scope = 1;
 		scopeArsenal = 1;
 		class TransportMagazines {

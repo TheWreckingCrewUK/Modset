@@ -68,7 +68,7 @@ class CUP_B_US_Soldier_TL_OEFCP;
 			"ACRE_PRC148"
 		};
 	
-		
+
 		magazines[] =
 		{
 			MAG_5("CUP_30Rnd_556x45_Stanag"),
@@ -101,7 +101,6 @@ class CUP_B_US_Soldier_AR_OEFCP;
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
-		
 		items[] = {
 			MEDICAL_LOADOUT,
 			"ACRE_PRC148"
@@ -135,7 +134,18 @@ class CUP_B_US_Soldier_GL_OEFCP;
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
 		};
-		
+		weapons[] = 
+		{
+			"CUP_arifle_M4A1_M203_ACOG_Laser",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[] = 
+		{
+			"CUP_arifle_M4A1_M203_ACOG_Laser",
+			"Throw",
+			"Put"
+		};
 		items[] = {
 			MEDICAL_LOADOUT,
 			"ACRE_PRC148"
@@ -144,18 +154,6 @@ class CUP_B_US_Soldier_GL_OEFCP;
 		respawnItems[] = {
 			MEDICAL_LOADOUT,
 			"ACRE_PRC148"
-		};
-		
-		weapons[] = {
-			"CUP_arifle_M4A3_M203_ACOG_Laser",
-			"Throw",
-			"Put"
-		};
-		
-		respawnweapons[] = {
-			"CUP_arifle_M4A3_M203_ACOG_Laser",
-			"Throw",
-			"Put"
 		};
 		
 		magazines[] =

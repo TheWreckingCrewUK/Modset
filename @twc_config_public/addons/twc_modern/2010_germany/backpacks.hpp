@@ -21,7 +21,7 @@ class ger_backpack_medic_trp: CUP_B_GER_Medic_Tropentarn
 		ADD_MAGA(SmokeShell,4);
 	};
 };
-class ger_backpack_medic_flk: CUP_B_GER_Medic_Tropentarn
+class ger_backpack_medic_flk: CUP_B_GER_Pack_Flecktarn
 {
 		scope = 1;
 		scopeArsenal = 1;

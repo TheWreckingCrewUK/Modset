@@ -157,13 +157,13 @@ class Modern_ger_Base: B_Soldier_base_F
 		backpack="ger_backpack_rif_flk";
 		weapons[]=
 		{
-			"CUP_arifle_G36A",
+			"CUP_arifle_AG36",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"CUP_arifle_G36A",
+			"CUP_arifle_AG36",
 			"Throw",
 			"Put"
 		};

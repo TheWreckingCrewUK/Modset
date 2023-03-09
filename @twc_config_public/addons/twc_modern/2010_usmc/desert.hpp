@@ -2,7 +2,7 @@ class CUP_B_USMC_Soldier_SL_des;
 	class TWC_Infantry_USMC_Modern_SquadLeader: CUP_B_USMC_Soldier_SL_des {
 		backpack = "TWC_Backpack_USMC_Modern_SquadLeader" ;
 		faction = "TWC_Modern";
-		editorSubcategory = "TWC_Infantry_2010_USMC_Desert_Desert";
+		editorSubcategory = "TWC_Infantry_2010_USMC_Desert";
 		displayName = "Squad Leader";
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";

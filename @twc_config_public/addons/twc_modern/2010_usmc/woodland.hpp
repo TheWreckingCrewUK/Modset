@@ -50,7 +50,7 @@
 		uniformClass="CUP_U_B_USMC_FROG1_WMARPAT";
 		linkedItems[]=
 		{
-		"CUP_V_B_Eagle_SPC_SL",
+		"CUP_V_B_Eagle_SPC_Rifleman",
 		"CUP_H_LWHv2_MARPAT",
 		"ItemMap",
 		"ItemCompass",
@@ -111,6 +111,7 @@
 	};
 	class TWC_Infantry_USMC_Modern_ATRifleman_W: TWC_Infantry_USMC_Modern_Rifleman_W {
 		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
+		displayName = "AT Rifleman";
 		backpack = "TWC_Backpack_USMC_Modern_ATRifleman_W";
 		weapons[] =
 		{
@@ -174,6 +175,7 @@
 	class TWC_Infantry_USMC_Modern_AMG_W: TWC_Infantry_USMC_Modern_AMG {
 		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
 		backpack = "TWC_Backpack_USMC_Modern_AssMG_W" ;
+		uniformClass="CUP_U_B_USMC_FROG1_WMARPAT";
 		linkedItems[]=
 		{
 		"CUP_V_B_Eagle_SPC_Rifleman",
