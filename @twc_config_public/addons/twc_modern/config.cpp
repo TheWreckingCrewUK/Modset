@@ -85,8 +85,47 @@ class CfgVehicles
 			vehicleClass = a;
 
 	//GENERIC
-
-	class TWC_Infantry_Modern_Plane_Pilot: TWC_Infantry_Modern_Base
+	class Modern_British_Base: B_Soldier_base_F
+	{
+		scope=1;
+		displayName="Base (Modern)";
+		faction="twc_public_baf";
+		editorSubcategory = "Men_Modern";
+		vehicleClass="Men_Modern";
+		icon="iconMan";
+		nakedUniform="U_BasicBody";
+		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
+		twc_radioType = "ACRE_PRC343";
+		twc_radioChannel = 1;
+		linkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		respawnLinkedItems[]=
+		{
+			"UK3CB_BAF_V_Osprey_Rifleman_F",
+			"UK3CB_BAF_H_Mk7_Scrim_F",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch"
+		};
+		Items[]=
+		{
+		MEDICAL_LOADOUT,
+		"ACRE_PRC343"
+		};
+		respawnitems[]=
+		{
+		MEDICAL_LOADOUT,
+		"ACRE_PRC343"
+		};
+	};
+	
+	class TWC_Infantry_Modern_Plane_Pilot: Modern_British_Base
 	{
 		scope = 2;
 		displayName = "Jet Pilot";
@@ -142,7 +181,7 @@ class CfgVehicles
 			"SmokeShell"
 		};
 	};
-	class TWC_Infantry_Modern_Tank_Commander: TWC_Infantry_Modern_Base
+	class TWC_Infantry_Modern_Tank_Commander: Modern_British_Base
 	{
 		scope = 2;
 		displayName = "Tank Commander";
@@ -220,10 +259,7 @@ class CfgVehicles
 		};
 	};
 	#include "2010_regular\woodland.hpp"
-	#include "2010_regular\arctic.hpp"
-
 	#include "2010_coin\woodland.hpp"
-	#include "2010_coin\arctic.hpp"
 	
 	#include "2010_coin_ana\woodland.hpp"
 	#include "2010_germany\woodland.hpp"
@@ -231,51 +267,4 @@ class CfgVehicles
 	#include "2010_usmc\desert.hpp"
 	#include "2010_usmc\woodland.hpp"
 	#include "2020_us\woodland.hpp"
-};
-
-class CfgGroups
-{
-	class WEST
-	{
-		class TWC_Groups_Modern
-		{
-			name = "TWC Public Groups Modern";
-			#include "2010_coin_ana\groups.hpp"
-			#include "2010_germany\groups.hpp"
-			#include "2010_poland\groups.hpp"
-			#include "2010_usmc\groups.hpp"
-			#include "2020_us\groups.hpp"
-			class Generic
-			{
-				name = "Generic";
-				class Tank_Crew
-				{
-					name = "Tank Crew";
-					faction = "twc_modern_public";
-					side = 1;
-					class Unit0
-					{
-						side = 1;
-						vehicle = "TWC_Infantry_Modern_Tank_Commander";
-						rank = "SERGEANT";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 1;
-						vehicle = "TWC_Infantry_Modern_Tank_Crew";
-						rank = "PRIVATE";
-						position[] = {2,0,0};
-					};
-					class Unit2
-					{
-						side = 1;
-						vehicle = "TWC_Infantry_Modern_Tank_Crew";
-						rank = "PRIVATE";
-						position[] = {4,0,0};
-					};
-				};
-			};
-		};
-	};
 };

@@ -21,7 +21,7 @@ class TWC_Backpack_Modern_Sectionlead: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 		{};
 		class TransportMagazines
 		{};
-	
+	};
 	class TWC_Backpack_Modern_Rifleman_heavy: UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A
 	{
 		scope = 1;
@@ -154,7 +154,6 @@ class TWC_Backpack_Modern_Sectionlead: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 	};
 };
 	class TWC_Backpack_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
-class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -184,7 +183,6 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_
 	};
 };
 	class TWC_Backpack_Modern_MortarGunner: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
-class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
 {
 	scope = 1;
 	scopeArsenal = 1;
@@ -203,12 +201,9 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_
 		ADD_MAGA(UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White, 4);
 	};
 };
-	
-	class twc_mtp_belt;
 	class TWC_Backpack_Modern_Sniper: twc_mtp_belt
 	{};
-		class TransportMagazines
-		{};
+
 	class TWC_Backpack_Modern_Spotter: twc_mtp_belt
 {
 	scope = 1;
@@ -280,7 +275,6 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_
 };
 	
 	class TWC_Backpack_Modern_Spotter_coin: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
-class TWC_Backpack_Modern_COIN_Woodland_Spotter: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;

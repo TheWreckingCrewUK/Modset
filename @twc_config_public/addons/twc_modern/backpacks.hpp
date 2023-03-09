@@ -45,6 +45,8 @@ class CUP_B_GER_Pack_Flecktarn;
 class CUP_B_USMC_MOLLE;
 class CUP_B_USPack_SL_OEFCP;
 class CUP_B_AssaultPack_Coyote;
+class UK3CB_BAF_B_Bergen_TAN_Rifleman_B;
+class twc_mtp_belt;
 
 #include "2010_regular\backpacks.hpp"
 #include "2010_coin_ana\backpacks.hpp"

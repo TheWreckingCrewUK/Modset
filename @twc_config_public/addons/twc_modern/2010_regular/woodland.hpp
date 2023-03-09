@@ -1,42 +1,4 @@
-	class Modern_British_Base: B_Soldier_base_F
-	{
-		scope=1;
-		displayName="Base (Modern)";
-		faction="twc_public_baf";
-		editorSubcategory = "Men_Modern";
-		vehicleClass="Men_Modern";
-		icon="iconMan";
-		nakedUniform="U_BasicBody";
-		uniformClass="UK3CB_BAF_U_CombatUniform_MTP";
-		twc_radioType = "ACRE_PRC343";
-		twc_radioChannel = 1;
-		linkedItems[]=
-		{
-			"UK3CB_BAF_V_Osprey_Rifleman_F",
-			"UK3CB_BAF_H_Mk7_Scrim_F",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch"
-		};
-		respawnLinkedItems[]=
-		{
-			"UK3CB_BAF_V_Osprey_Rifleman_F",
-			"UK3CB_BAF_H_Mk7_Scrim_F",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch"
-		};
-		Items[]=
-		{
-		MEDICAL_LOADOUT,
-		"ACRE_PRC343"
-		};
-		respawnitems[]=
-		{
-		MEDICAL_LOADOUT,
-		"ACRE_PRC343"
-		};
-	};
+
 	class Modern_British_Blank: Modern_British_Base
 	{
 		scope=2;
@@ -426,14 +388,14 @@
 			MAG_3("UK3CB_BAF_762_100Rnd_T"),
 			MAG_2("UK3CB_BAF_9_17Rnd"),
 			MAG_2("HandGrenade"),
-			MAG_3("SmokeShell"),
+			MAG_3("SmokeShell")
 		};
 		Respawnmagazines[]=
 		{
 			MAG_3("UK3CB_BAF_762_100Rnd_T"),
 			MAG_2("UK3CB_BAF_9_17Rnd"),
 			MAG_2("HandGrenade"),
-			MAG_3("SmokeShell"),
+			MAG_3("SmokeShell")
 		};
 	};
 	class Modern_British_Marksman: Modern_British_Base
@@ -479,7 +441,7 @@
 			MAG_5("UK3CB_BAF_762_L42A1_20Rnd_T"),
 			MAG_2("UK3CB_BAF_9_17Rnd"),
 			MAG_2("HandGrenade"),
-			MAG_3("SmokeShell"),
+			MAG_3("SmokeShell")
 		};
 		Respawnmagazines[]=
 		{
@@ -487,7 +449,7 @@
 			MAG_5("UK3CB_BAF_762_L42A1_20Rnd_T"),
 			MAG_2("UK3CB_BAF_9_17Rnd"),
 			MAG_2("HandGrenade"),
-			MAG_3("SmokeShell"),
+			MAG_3("SmokeShell")
 		};
 	};
 	class Modern_British_Platoon_Commander: Modern_British_Squadleader
@@ -562,14 +524,14 @@
 			MAG_5("UK3CB_BAF_556_30Rnd"),
 			MAG_3("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
 			MAG_2("HandGrenade"),
-			MAG_2("SmokeShell"),
+			MAG_2("SmokeShell")
 		};
 		Respawnmagazines[]=
 		{
 			MAG_5("UK3CB_BAF_556_30Rnd"),
 			MAG_3("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
 			MAG_2("HandGrenade"),
-			MAG_2("SmokeShell"),
+			MAG_2("SmokeShell")
 		};
 	};
 	class Modern_British_Medic: Modern_British_Base
@@ -610,12 +572,12 @@
 		magazines[]=
 		{
 			MAG_5("UK3CB_BAF_556_30Rnd"),
-			MAG_5("SmokeShell"),
+			MAG_5("SmokeShell")
 		};
 		Respawnmagazines[]=
 		{
 			MAG_5("UK3CB_BAF_556_30Rnd"),
-			MAG_5("SmokeShell"),
+			MAG_5("SmokeShell")
 		};
 	};
 	class Modern_British_Platoon_CSM: Modern_British_Squadleader
@@ -1043,14 +1005,14 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		};
 		magazines[]=
 		{
-			MAG_4("UK3CB_BAF_556_30Rnd")
-			MAG_2("UK3CB_BAF_9_17Rnd")
+			MAG_4("UK3CB_BAF_556_30Rnd"),
+			MAG_2("UK3CB_BAF_9_17Rnd"),
 			"smokeshell"
 		};
 		Respawnmagazines[]=
 		{
-			MAG_4("UK3CB_BAF_556_30Rnd")
-			MAG_2("UK3CB_BAF_9_17Rnd")
+			MAG_4("UK3CB_BAF_556_30Rnd"),
+			MAG_2("UK3CB_BAF_9_17Rnd"),
 			"smokeshell"
 		};
 	};
@@ -1256,14 +1218,14 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			MAG_7("UK3CB_BAF_556_30Rnd"),
 			MAG_2("UK3CB_BAF_9_17Rnd"),
 			MAG_2("HandGrenade"),
-			MAG_3("SmokeShell"),
+			MAG_3("SmokeShell")
 		};
 		Respawnmagazines[]=
 		{
 			MAG_7("UK3CB_BAF_556_30Rnd"),
 			MAG_2("UK3CB_BAF_9_17Rnd"),
 			MAG_2("HandGrenade"),
-			MAG_3("SmokeShell"),
+			MAG_3("SmokeShell")
 		};
 	};
 	
