@@ -1,7 +1,7 @@
 class Modern_ANA_Section
 {
 	name = "ANA Section"; //Name of Group
-        faction = "TWC_Modern"; //Faction
+        faction = "twc_modern_public"; //Faction
         side = 1; //Side
        	class Unit0	
 	{

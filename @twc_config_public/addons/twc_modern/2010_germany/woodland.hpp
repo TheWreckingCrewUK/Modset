@@ -2,7 +2,7 @@ class Modern_ger_Base: B_Soldier_base_F
 	{
 		scope=2;
 		displayName="Rifleman";
-		faction = "TWC_Modern";
+		faction = "twc_modern_public";
 		editorSubcategory = "TWC_Infantry_2010_GER_Woodland";
 		vehicleClass="Men_twc_woodland";
 		icon="iconMan";

@@ -4,7 +4,7 @@ class TWC_ANA_Base: B_Soldier_base_F
 		displayName="Rifleman";
 		editorSubcategory = "TWC_Infantry_2010_COIN_ANA";
 		vehicleClass="Men_ana";
-		faction = "TWC_Modern";
+		faction = "twc_modern_public";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
 		identityTypes[] = {"LanguagePER_F","Head_TK","G_IRAN_default"};

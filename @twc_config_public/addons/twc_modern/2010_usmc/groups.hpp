@@ -1,7 +1,7 @@
 class Modern_usmc_section
       {
        name = "United States Marine Corps (Desert)"; //Name of Group
-       faction = "TWC_Modern"; //Faction
+       faction = "twc_modern_public"; //Faction
        side = 1; //Side
 			class Unit0
 			{
@@ -98,7 +98,7 @@ class Modern_usmc_section
 class Modern_usmc_section_W
       {
        name = "United States Marine Corps (Woodland)"; //Name of Group
-       faction = "TWC_Modern"; //Faction
+       faction = "twc_modern_public"; //Faction
        side = 1; //Side
 			class Unit0
 			{

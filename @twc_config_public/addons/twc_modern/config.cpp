@@ -13,6 +13,18 @@ class CfgPatches
 	};
 };
 
+class CfgFactionClasses
+{
+	class twc_modern_public
+	{
+		displayName="TWC Modern Public Units";
+		author="The Wrecking Crew";
+		icon="TWClogo.paa";
+		priority=2;
+		side=1;
+	};
+};
+
 class CfgEditorSubcategories {
 	//2020s
 	class TWC_Infantry_2020_Regular_Woodland {
@@ -54,6 +66,12 @@ class CfgEditorSubcategories {
 	};
 	class TWC_Infantry_2010_GER_Desert {
 		displayName = "German Bundeswehr (2010s, Desert)";
+	};
+		class TWC_Infantry_2010_Pol_Woodland {
+		displayName = "Polish Land Forces (2010s, Woodland)";
+	};
+	class TWC_Infantry_2010_Pol_Desert {
+		displayName = "Polish Land Forces (2010s, Desert)";
 	};
 	class TWC_Infantry_2010_USMC_Desert{
 		displayName = "United States Marine Corps (2010s, Desert)";
@@ -100,7 +118,7 @@ class CfgVehicles
 	class TWC_Infantry_Modern_Base: B_Soldier_base_F {
 		scope = 1;
 		displayName = "Base (2010)";
-		faction = "TWC_Modern";
+		faction = "twc_modern_public";
 		CATEGORY(TWC_Infantry_Regular_Woodland)
 		icon = "iconMan";
 		nakedUniform = "U_BasicBody";
@@ -163,7 +181,7 @@ class CfgVehicles
 	class TWC_Infantry_2020_Base: B_Soldier_base_F {
 		scope = 1;
 		displayName = "Base (2020)";
-		faction = "TWC_Modern";
+		faction = "twc_modern_public";
 		CATEGORY(TWC_Infantry_Regular_Woodland)
 		icon = "iconMan";
 		nakedUniform = "U_BasicBody";
@@ -225,7 +243,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Jet Pilot";
-		faction = "TWC_Modern";
+		faction = "twc_modern_public";
 		CATEGORY(TWC_ForceType_Airborne)
 		uniformClass = "UK3CB_BAF_U_HeliPilotCoveralls_RAF";
 		TWC_isCommandRole = 1;
@@ -281,7 +299,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Tank Commander";
-		faction = "TWC_Modern";
+		faction = "twc_modern_public";
 		CATEGORY(TWC_ForceType_Armoured)
 		uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
 		TWC_isCommandRole = 1;
@@ -376,6 +394,7 @@ class CfgVehicles
 	
 	#include "2010_coin_ana\woodland.hpp"
 	#include "2010_germany\woodland.hpp"
+	#include "2010_poland\poland.hpp"
 	#include "2010_usmc\desert.hpp"
 	#include "2010_usmc\woodland.hpp"
 	#include "2020_us\woodland.hpp"
@@ -394,6 +413,7 @@ class CfgGroups
 			#include "2020_coin\groups.hpp"
 			#include "2010_coin_ana\groups.hpp"
 			#include "2010_germany\groups.hpp"
+			#include "2010_poland\groups.hpp"
 			#include "2010_usmc\groups.hpp"
 			#include "2020_us\groups.hpp"
 			class Generic
@@ -402,7 +422,7 @@ class CfgGroups
 				class Tank_Crew
 				{
 					name = "Tank Crew";
-					faction = "TWC_Modern";
+					faction = "twc_modern_public";
 					side = 1;
 					class Unit0
 					{

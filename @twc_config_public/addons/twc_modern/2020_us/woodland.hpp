@@ -1,7 +1,7 @@
 class CUP_B_US_Soldier_SL_OEFCP;
 	class TWC_Infantry_USA_Modern_SquadLeader: CUP_B_US_Soldier_SL_OEFCP {
 		backpack = "TWC_Backpack_USA_Modern_SquadLeader" ;
-		faction = "TWC_Modern";
+		faction = "twc_modern_public";
 		editorSubcategory = "TWC_Infantry_2020_US";
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -52,7 +52,7 @@ class CUP_B_US_Soldier_SL_OEFCP;
 class CUP_B_US_Soldier_TL_OEFCP;	
 	class TWC_Infantry_USA_Modern_TeamLeader: CUP_B_US_Soldier_TL_OEFCP {
 		backpack = "TWC_Backpack_USA_Modern_TeamLeader" ;
-		faction = "TWC_Modern";
+		faction = "twc_modern_public";
 		editorSubcategory = "TWC_Infantry_2020_US";
 		class EventHandlers: EventHandlers {
 			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
@@ -95,7 +95,7 @@ class CUP_B_US_Soldier_TL_OEFCP;
 
 class CUP_B_US_Soldier_AR_OEFCP;	
 	class TWC_Infantry_USA_Modern_AutoRifleman: CUP_B_US_Soldier_AR_OEFCP {
-		faction = "TWC_Modern";
+		faction = "twc_modern_public";
 		editorSubcategory = "TWC_Infantry_2020_US";
 		backpack = "CUP_B_USPack_SL_OEFCP";
 		class EventHandlers: EventHandlers {
@@ -128,7 +128,7 @@ class CUP_B_US_Soldier_AR_OEFCP;
 
 class CUP_B_US_Soldier_GL_OEFCP;	
 	class TWC_Infantry_USA_Modern_Grenadier: CUP_B_US_Soldier_GL_OEFCP {
-		faction = "TWC_Modern";
+		faction = "twc_modern_public";
 		editorSubcategory = "TWC_Infantry_2020_US";
 		backpack = "CUP_B_USPack_SL_OEFCP";
 		class EventHandlers: EventHandlers {
@@ -176,7 +176,7 @@ class CUP_B_US_Soldier_GL_OEFCP;
 
 class CUP_B_US_Soldier_ACOG_OEFCP;	
 	class TWC_Infantry_USA_Modern_Rifleman: CUP_B_US_Soldier_ACOG_OEFCP {
-		faction = "TWC_Modern";
+		faction = "twc_modern_public";
 		editorSubcategory = "TWC_Infantry_2020_US";
 		backpack = "CUP_B_USPack_SL_OEFCP";
 		class EventHandlers: EventHandlers {
