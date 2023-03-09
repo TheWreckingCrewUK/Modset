@@ -117,7 +117,7 @@ class Modern_usmc_section_W
              class Unit2
             {
                 side = 1;
-                vehicle = "TWC_Infantry_USMC_Modern_Rifleman_W";
+                vehicle = "TWC_Infantry_USMC_Modern_Grenadier_W";
                 rank = "PRIVATE";
                 position[] = {5,0,0};
             };

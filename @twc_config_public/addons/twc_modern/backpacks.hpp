@@ -44,6 +44,7 @@ class CUP_B_GER_Pack_Tropentarn;
 class CUP_B_GER_Pack_Flecktarn;
 class CUP_B_USMC_MOLLE;
 class CUP_B_USPack_SL_OEFCP;
+class CUP_B_AssaultPack_Coyote;
 
 #include "2010_regular\backpacks.hpp"
 #include "2020_regular\backpacks.hpp"
