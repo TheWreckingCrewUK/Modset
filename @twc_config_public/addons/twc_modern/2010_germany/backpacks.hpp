@@ -117,6 +117,14 @@ class ger_backpack_medic_flk: CUP_B_GER_Pack_Flecktarn
 		ADD_MAGA(CUP_MAAWS_HEDP_M,2);
 		};
 	};
+	class ger_backpack_at_trp: CUP_B_GER_Pack_Flecktarn
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		class TransportMagazines{
+		ADD_MAGA(CUP_MAAWS_HEDP_M,2);
+		};
+	};
 	class ger_backpack_at_flk: CUP_B_GER_Pack_Flecktarn
 	{
 		scope = 1;

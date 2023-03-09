@@ -54,7 +54,7 @@ class CfgEditorSubcategories {
 	class TWC_Infantry_2020_COIN_Dismounted_Woodland {
 		displayName = "British Infantry (2020s, COIN, Dismounted, Woodland)";
 	};
-	
+
 	class TWC_Infantry_2020_COIN_Dismounted_Arctic {
 		displayName = "British Infantry (2020s, COIN, Dismounted, Arctic)";
 	};
