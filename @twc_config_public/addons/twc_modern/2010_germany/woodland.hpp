@@ -68,8 +68,6 @@ class Modern_ger_Base: B_Soldier_base_F
 	class Modern_ger_Base_d: Modern_ger_Base
 	{
 		scope=2;
-		editorSubcategory = "Men_twc_desert";
-		vehicleClass="Men_twc_desert";
 		backpack="ger_backpack_rif_trp";
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
@@ -129,8 +127,6 @@ class Modern_ger_Base: B_Soldier_base_F
 	class Modern_ger_rif_AT_d: Modern_ger_rif_AT
 	{
 		scope=2;
-		editorSubcategory = "Men_twc_desert";
-		vehicleClass="Men_twc_desert";
 		backpack="ger_backpack_at_trp";
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
@@ -188,8 +184,6 @@ class Modern_ger_Base: B_Soldier_base_F
 	class Modern_ger_grenadier_d: Modern_ger_grenadier
 	{
 		scope=2;
-		editorSubcategory = "Men_twc_desert";
-		vehicleClass="Men_twc_desert";
 		backpack="ger_backpack_rif_trp";
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
@@ -261,8 +255,6 @@ class Modern_ger_Base: B_Soldier_base_F
 	class Modern_ger_mg_d: Modern_ger_mg
 	{
 		scope=2;
-		editorSubcategory = "Men_twc_desert";
-		vehicleClass="Men_twc_desert";
 		backpack="ger_backpack_mg_d";
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
@@ -326,8 +318,6 @@ class Modern_ger_Base: B_Soldier_base_F
 	class Modern_ger_commander_d: Modern_ger_commander
 	{
 		scope=2;
-		editorSubcategory = "Men_twc_desert";
-		vehicleClass="Men_twc_desert";
 		backpack="ger_backpack_leader_d";
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
@@ -377,8 +367,6 @@ class Modern_ger_Base: B_Soldier_base_F
 	class Modern_ger_subcommander_d: Modern_ger_subcommander
 	{
 		scope=2;
-		editorSubcategory = "Men_twc_desert";
-		vehicleClass="Men_twc_desert";
 		backpack="ger_backpack_2ic_d";
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=
@@ -426,8 +414,6 @@ class Modern_ger_Base: B_Soldier_base_F
 	class Modern_ger_medic_d: Modern_ger_medic
 	{
 		scope=2;
-		editorSubcategory = "Men_twc_desert";
-		vehicleClass="Men_twc_desert";
 		backpack="ger_backpack_medic_trp";
 		uniformClass="CUP_U_B_GER_Tropentarn_1";
 		linkedItems[]=

@@ -156,7 +156,7 @@
 		uniformClass="CUP_U_B_USMC_FROG1_WMARPAT";
 		linkedItems[]=
 		{
-		"CUP_V_B_Eagle_SPC_MG",
+		"CUP_V_B_Eagle_SPC_Rifleman",
 		"CUP_H_LWHv2_MARPAT",
 		"ItemMap",
 		"ItemCompass",
@@ -164,7 +164,7 @@
 		};
 		respawnLinkedItems[]=
 		{
-		"CUP_V_B_Eagle_SPC_MG",
+		"CUP_V_B_Eagle_SPC_Rifleman",
 		"CUP_H_LWHv2_MARPAT",
 		"ItemMap",
 		"ItemCompass",
@@ -174,9 +174,9 @@
 	class TWC_Infantry_USMC_Modern_AMG_W: TWC_Infantry_USMC_Modern_AMG {
 		CATEGORY(TWC_Infantry_Regular_Woodland)
 		backpack = "TWC_Backpack_USMC_Modern_AssMG_W" ;
-			linkedItems[]=
+		linkedItems[]=
 		{
-		"CUP_V_B_Eagle_SPC_MG",
+		"CUP_V_B_Eagle_SPC_Rifleman",
 		"CUP_H_LWHv2_MARPAT",
 		"ItemMap",
 		"ItemCompass",
@@ -184,23 +184,23 @@
 		};
 		respawnLinkedItems[]=
 		{
-		"CUP_V_B_Eagle_SPC_MG",
+		"CUP_V_B_Eagle_SPC_Rifleman",
 		"CUP_H_LWHv2_MARPAT",
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch"
 		};
 	};
-	class TWC_Infantry_USMC_Modern_Medic_W: TWC_Infantry_USMC_Modern_AMG {
+	class TWC_Infantry_USMC_Modern_Medic_W: TWC_Infantry_USMC_Modern_AMG_W {
 		displayName = "Corpsman";
 		attendant = 1;
 		backpack = "TWC_Backpack_USMC_Modern_Medic_W" ;
 	};
-	class TWC_Infantry_USMC_Modern_AAR_W: TWC_Infantry_USMC_Modern_AMG {
+	class TWC_Infantry_USMC_Modern_AAR_W: TWC_Infantry_USMC_Modern_AMG_W {
 		displayName = "Assistant Autorifleman";
 		backpack = "TWC_Backpack_USMC_Modern_AR_W" ;
 	};
-		class TWC_Infantry_USMC_Modern_AAT_W: TWC_Infantry_USMC_Modern_AMG {
+		class TWC_Infantry_USMC_Modern_AAT_W: TWC_Infantry_USMC_Modern_AMG_W {
 		displayName = "Assistant AT Rifleman";
 		backpack = "TWC_Backpack_USMC_Modern_ATRifleman_W";
 	};
