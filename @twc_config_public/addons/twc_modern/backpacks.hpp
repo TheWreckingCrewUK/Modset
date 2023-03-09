@@ -47,9 +47,6 @@ class CUP_B_USPack_SL_OEFCP;
 class CUP_B_AssaultPack_Coyote;
 
 #include "2010_regular\backpacks.hpp"
-#include "2020_regular\backpacks.hpp"
-#include "2010_coin\backpacks.hpp"
-#include "2020_coin\backpacks.hpp"
 #include "2010_coin_ana\backpacks.hpp"
 #include "2010_germany\backpacks.hpp"
 #include "2010_poland\backpacks.hpp"

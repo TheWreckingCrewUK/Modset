@@ -27,37 +27,7 @@ class CfgFactionClasses
 
 class CfgEditorSubcategories {
 	//2020s
-	class TWC_Infantry_2020_Regular_Woodland {
-		displayName = "British Infantry (2020s, Woodland)";
-	};
-	
-	class TWC_Infantry_2020_Regular_Arctic {
-		displayName = "British Infantry (2020s, Arctic)";
-	};
-	
-	class TWC_Infantry_2020_Dismounted_Woodland {
-		displayName = "British Infantry (2020s, Dismounted, Woodland)";
-	};
-	
-	class TWC_Infantry_2020_Dismounted_Arctic {
-		displayName = "British Infantry (2020s, Dismounted, Arctic)";
-	};
-	
-	class TWC_Infantry_2020_COIN_Woodland {
-		displayName = "British Infantry (2020s, COIN, Woodland)";
-	};
-	
-	class TWC_Infantry_2020_COIN_Arctic {
-		displayName = "British Infantry (2020s, COIN, Arctic)";
-	};
-	
-	class TWC_Infantry_2020_COIN_Dismounted_Woodland {
-		displayName = "British Infantry (2020s, COIN, Dismounted, Woodland)";
-	};
 
-	class TWC_Infantry_2020_COIN_Dismounted_Arctic {
-		displayName = "British Infantry (2020s, COIN, Dismounted, Arctic)";
-	};
 	class TWC_Infantry_2010_COIN_ANA {
 		displayName = "Afghan National Army (2010s)";
 	};
@@ -115,130 +85,7 @@ class CfgVehicles
 			vehicleClass = a;
 
 	//GENERIC
-	class TWC_Infantry_Modern_Base: B_Soldier_base_F {
-		scope = 1;
-		displayName = "Base (2010)";
-		faction = "twc_modern_public";
-		CATEGORY(TWC_Infantry_Regular_Woodland)
-		icon = "iconMan";
-		nakedUniform = "U_BasicBody";
-		uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
-		backpack = "";
 
-		class EventHandlers: EventHandlers {
-			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
-		};
-
-		linkedItems[] = {
-			"UK3CB_BAF_V_Osprey_Rifleman_F",
-			"UK3CB_BAF_H_Mk7_Scrim_F",
-			"ItemCompass",
-			"itemMap",
-			"ItemWatch"
-		};
-
-		respawnLinkedItems[] = {
-			"UK3CB_BAF_V_Osprey_Rifleman_F",
-			"UK3CB_BAF_H_Mk7_Scrim_F",
-			"ItemCompass",
-			"itemMap",
-			"ItemWatch"
-		};
-
-		items[] = {
-			MEDICAL_LOADOUT,
-			"grad_paceCountBeads_functions_paceCountBeads"
-		};
-
-		respawnItems[] = {
-			MEDICAL_LOADOUT,
-			"grad_paceCountBeads_functions_paceCountBeads"
-		};
-
-		weapons[] = {
-			"Throw",
-			"Put"
-		};
-
-		respawnweapons[] = {
-			"Throw",
-			"Put"
-		};
-
-		magazines[] = {};
-		respawnmagazines[] = {};
-
-		nightItems[] = {
-			MAG_2("Chemlight_green"),
-			"ACE_Flashlight_MX991",
-			"ACE_Flashlight_Maglite_ML300L"
-		};
-
-		nightLinkedItems[] = {
-			"twc_nightvision_gen3"
-		};
-	};
-	class TWC_Infantry_2020_Base: B_Soldier_base_F {
-		scope = 1;
-		displayName = "Base (2020)";
-		faction = "twc_modern_public";
-		CATEGORY(TWC_Infantry_Regular_Woodland)
-		icon = "iconMan";
-		nakedUniform = "U_BasicBody";
-		uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
-		backpack = "";
-
-		class EventHandlers: EventHandlers {
-			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
-		};
-
-		linkedItems[] = {
-			"mpx_virtus_taco_p",
-			"mpx_cobra_scrim",
-			"ItemCompass",
-			"itemMap",
-			"ItemWatch"
-		};
-
-		respawnLinkedItems[] = {
-			"mpx_virtus_taco_p",
-			"mpx_cobra_scrim",
-			"ItemCompass",
-			"itemMap",
-			"ItemWatch"
-		};
-
-		items[] = {
-			MEDICAL_LOADOUT
-		};
-
-		respawnItems[] = {
-			MEDICAL_LOADOUT
-		};
-
-		weapons[] = {
-			"Throw",
-			"Put"
-		};
-
-		respawnweapons[] = {
-			"Throw",
-			"Put"
-		};
-
-		magazines[] = {};
-		respawnmagazines[] = {};
-
-		nightItems[] = {
-			MAG_2("Chemlight_green"),
-			"ACE_Flashlight_MX991",
-			"ACE_Flashlight_Maglite_ML300L"
-		};
-
-		nightLinkedItems[] = {
-			"twc_nightvision_gen3"
-		};
-	};
 	class TWC_Infantry_Modern_Plane_Pilot: TWC_Infantry_Modern_Base
 	{
 		scope = 2;
@@ -373,24 +220,10 @@ class CfgVehicles
 		};
 	};
 	#include "2010_regular\woodland.hpp"
-	#include "2010_regular\woodland_dismounted.hpp"
 	#include "2010_regular\arctic.hpp"
-	#include "2010_regular\arctic_dismounted.hpp"
-	
-	#include "2020_regular\woodland.hpp"
-	#include "2020_regular\woodland_dismounted.hpp"
-	#include "2020_regular\arctic.hpp"
-	#include "2020_regular\arctic_dismounted.hpp"
 
 	#include "2010_coin\woodland.hpp"
-	#include "2010_coin\woodland_dismounted.hpp"
 	#include "2010_coin\arctic.hpp"
-	#include "2010_coin\arctic_dismounted.hpp"
-	
-	#include "2020_coin\woodland.hpp"
-	#include "2020_coin\woodland_dismounted.hpp"
-	#include "2020_coin\arctic.hpp"
-	#include "2020_coin\arctic_dismounted.hpp"
 	
 	#include "2010_coin_ana\woodland.hpp"
 	#include "2010_germany\woodland.hpp"
@@ -407,10 +240,6 @@ class CfgGroups
 		class TWC_Groups_Modern
 		{
 			name = "TWC Public Groups Modern";
-			#include "2010_regular\groups.hpp"
-			#include "2020_regular\groups.hpp"
-			#include "2010_coin\groups.hpp"
-			#include "2020_coin\groups.hpp"
 			#include "2010_coin_ana\groups.hpp"
 			#include "2010_germany\groups.hpp"
 			#include "2010_poland\groups.hpp"
