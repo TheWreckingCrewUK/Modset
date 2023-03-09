@@ -370,7 +370,7 @@ class CUP_B_USMC_Soldier_LAT_des;
 		};
 	};
 	class TWC_Infantry_USMC_Modern_Medic: TWC_Infantry_USMC_Modern_AMG {
-		displayName = "Medic";
+		displayName = "Corpsman";
 		attendant = 1;
 		backpack = "TWC_Backpack_USMC_Modern_Medic" ;
 	};

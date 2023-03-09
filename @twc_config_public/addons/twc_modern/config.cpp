@@ -371,6 +371,7 @@ class CfgVehicles
 	#include "2010_coin_ana\woodland.hpp"
 	#include "2010_germany\woodland.hpp"
 	#include "2010_usmc\desert.hpp"
+	#include "2010_usmc\woodland.hpp"
 	#include "2020_us\woodland.hpp"
 };
 
