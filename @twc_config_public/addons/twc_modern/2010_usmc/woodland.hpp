@@ -153,7 +153,7 @@
 	};	
 	class TWC_Infantry_USMC_Modern_Breacher_W: TWC_Infantry_USMC_Modern_Breacher {
 		editorSubcategory = "TWC_Infantry_2010_USMC_Woodland";
-		backpack = "TWC_Backpack_USMC_Modern_Breacher" ;
+		backpack = "TWC_Backpack_USMC_Modern_Breacher_W" ;
 		uniformClass="CUP_U_B_USMC_FROG1_WMARPAT";
 		linkedItems[]=
 		{
