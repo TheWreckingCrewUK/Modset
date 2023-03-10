@@ -1409,9 +1409,7 @@ class cfgammo
 	
 	class CUP_B_762x51_Tracer_Red;
 	class CUP_B_762x51_Tracer_Red_Splash: CUP_B_762x51_Tracer_Red
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
+	{};
 	
 	
 };
