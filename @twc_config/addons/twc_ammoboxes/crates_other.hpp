@@ -289,6 +289,7 @@ class TWC_AmmoBox_Other_Sergeant_Utility: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_CableTie,5);
 		ADD_ITEM(SmokeShellYellow,6);
 		ADD_ITEM(SmokeShellGreen,6);
+		ADD_ITEM(ACRE_VHF30108,1);
 	};
 	
 	// TWC Defines
