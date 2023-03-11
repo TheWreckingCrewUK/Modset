@@ -144,11 +144,13 @@ class TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander: TWC_Infantry_ColdW
 	Items[]=
 	{
 		MEDICAL_LOADOUT,
+		"grad_paceCountBeads_functions_paceCountBeads",
 		"ACE_MapTools"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
+		"grad_paceCountBeads_functions_paceCountBeads",
 		"ACE_MapTools"
 	};
 	weapons[]=
@@ -180,8 +182,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander: TWC_Infantry_ColdW
 	
 	nightItems[] = {
 		MAG_2("ACE_HandFlare_White"),
-		MAG_2("Chemlight_green"),
-		"ACE_Flashlight_MX991"
+		MAG_2("Chemlight_green")
 	};
 	nightWeapons[] = {
 		"ACE_Flashlight_Maglite_ML300L"
@@ -305,6 +306,14 @@ class TWC_Infantry_ColdWar_Regular_Woodland_MG: TWC_Infantry_ColdWar_Regular_Woo
 		"Throw",
 		"Put"
 	};
+	Items[]+=
+	{
+		"ACE_SpareBarrel_Item"
+	};
+	respawnItems[]+=
+	{
+		"ACE_SpareBarrel_Item"
+	};
 	magazines[]=
 	{
 		MAG_2("UK3CB_BAF_762_100Rnd"),
@@ -350,13 +359,15 @@ class TWC_Infantry_ColdWar_Regular_Woodland_ASSMG: TWC_Infantry_ColdWar_Regular_
 	{
 		MEDICAL_LOADOUT,
 		"grad_paceCountBeads_functions_paceCountBeads",
-		"ACE_EntrenchingTool"
+		"ACE_EntrenchingTool",
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
 		"grad_paceCountBeads_functions_paceCountBeads",
-		"ACE_EntrenchingTool"
+		"ACE_EntrenchingTool",
+		"ACE_SpareBarrel_Item"
 	};
 };
 
@@ -389,11 +400,13 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander: TWC_Infantry_Cold
 	Items[]=
 	{
 		MEDICAL_LOADOUT,
+		"grad_paceCountBeads_functions_paceCountBeads",
 		"ACE_MapTools"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
+		"grad_paceCountBeads_functions_paceCountBeads",
 		"ACE_MapTools"
 	};
 	weapons[]=
@@ -423,8 +436,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander: TWC_Infantry_Cold
 	
 	nightItems[] = {
 		MAG_2("ACE_HandFlare_White"),
-		MAG_2("Chemlight_green"),
-		"ACE_Flashlight_MX991"
+		MAG_2("Chemlight_green")
 	};
 	nightWeapons[] = {
 		"ACE_Flashlight_Maglite_ML300L"
@@ -705,8 +717,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Sniper: TWC_Infantry_ColdWar_Regular
 	};
 	
 	nightItems[] = {
-		MAG_2("Chemlight_green"),
-		"ACE_Flashlight_MX991"
+		MAG_2("Chemlight_green")
 	};
 	nightWeapons[] = {
 		"ACE_Flashlight_Maglite_ML300L"
@@ -870,8 +881,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_ColdW
 	
 	nightItems[] = {
 		MAG_2("ACE_HandFlare_White"),
-		MAG_2("Chemlight_green"),
-		"ACE_Flashlight_MX991"
+		MAG_2("Chemlight_green")
 	};
 	
 	nightLinkedItems[] = {
