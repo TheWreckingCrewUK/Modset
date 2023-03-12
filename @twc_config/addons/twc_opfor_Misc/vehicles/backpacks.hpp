@@ -224,6 +224,6 @@ class TWC_Backpack_GRUP_Modern_PlatoonMedic: B_Kitbag_cbr {
 		item_nc(ACE_salineIV_500,6);
 		item_nc(ACE_tourniquet,4);
 		item_nc(ACE_personalAidKit,1);
-		item_nc(TWC_Item_Medical_SutureKit_25,1);
+		item_nc(ACE_surgicalKit,1);
 	};
 };

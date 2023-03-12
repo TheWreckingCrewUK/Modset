@@ -78,7 +78,7 @@ class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Medic: INHERIT \
 		ADD_ITEM(ACE_tourniquet,4); \
 		ADD_ITEM(ACE_splint,6); \
 		ADD_ITEM(ACE_personalAidKit,1); \
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1); \
+		ADD_ITEM(ACE_surgicalKit,1); \
 	}; \
 };
 
@@ -298,7 +298,7 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Platoon_Medic: INHERIT \
 		ADD_ITEM(ACE_salineIV_250,4); \
 		ADD_ITEM(ACE_tourniquet,4); \
 		ADD_ITEM(ACE_personalAidKit,1); \
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1); \
+		ADD_ITEM(ACE_surgicalKit,1); \
 	}; \
 };
 

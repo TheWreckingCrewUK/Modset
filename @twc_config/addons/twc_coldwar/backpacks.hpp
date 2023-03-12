@@ -224,7 +224,7 @@ class TWC_Backpack_ColdWar_Regular_Platoon_Medic: SP_Backpack_LargePack
 		ADD_ITEM(ACE_tourniquet,4);
 		ADD_ITEM(ACE_splint,6);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 	
 	class TransportMagazines {
@@ -289,7 +289,7 @@ class TWC_Backpack_ColdWar_COIN_Platoon_Medic: SP_Backpack_LargePack
 		ADD_ITEM(ACE_salineIV,6);
 		ADD_ITEM(ACE_tourniquet,4);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 	
 	class TransportMagazines {
