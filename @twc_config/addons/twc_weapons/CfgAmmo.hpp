@@ -145,7 +145,7 @@ class CfgAmmo {
 	
 	#define L14A1_AMMO_HE(RANGE) \
 	class TWC_Ammo_L14A1_HE_##RANGE: TWC_Ammo_L14A1_HE { \
-		triggerTime = __EVAL(RANGE / 240); \
+		triggerTime = __EVAL(RANGE / 255); \
 	};
 	L14A1_AMMO_HE(200)
 	L14A1_AMMO_HE(300)
@@ -172,7 +172,7 @@ class CfgAmmo {
 	
 	#define L14A1_AMMO_ILLUM(RANGE) \
 	class TWC_Ammo_L14A1_ILLUM_##RANGE: TWC_Ammo_L14A1_Illum { \
-		triggerTime = __EVAL(RANGE / 240); \
+		triggerTime = __EVAL(RANGE / 255); \
 	};
 	L14A1_AMMO_ILLUM(200)
 	L14A1_AMMO_ILLUM(300)
