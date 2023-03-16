@@ -122,7 +122,7 @@ weapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"CUP_arifle_M16A4_GL_ACOG_Laser",
+"CUP_arifle_M16A4_ACOG_Laser",
 "CUP_hgun_Colt1911"
 };
 respawnweapons[]=
@@ -130,7 +130,7 @@ respawnweapons[]=
 "Throw",
 "Put",
 "ACE_Vector",
-"CUP_arifle_M16A4_GL_ACOG_Laser",
+"CUP_arifle_M16A4_ACOG_Laser",
 "CUP_hgun_Colt1911"
 };
 magazines[]=
@@ -282,7 +282,7 @@ weapons[]=
 {
 "Throw",
 "Put",
-"CUP_arifle_M16A4_GL_Laser",
+"CUP_arifle_M16A4_ACOG_Laser",
 "CUP_launch_M136",
 "CUP_hgun_Colt1911"
 };
@@ -290,7 +290,7 @@ respawnweapons[]=
 {
 "Throw",
 "Put",
-"CUP_arifle_M16A4_GL_Laser",
+"CUP_arifle_M16A4_ACOG_Laser",
 "CUP_launch_M136",
 "CUP_hgun_Colt1911"
 };
@@ -491,14 +491,14 @@ weapons[]=
 {
 "Throw",
 "Put",
-"twc_CUP_arifle_M4A1_GL_carryhandle_acog_lazer",
+"CUP_arifle_M16A4_ACOG_Laser",
 "CUP_hgun_Colt1911"
 };
 respawnweapons[]=
 {
 "Throw",
 "Put",
-"twc_CUP_arifle_M4A1_GL_carryhandle_acog_lazer",
+"CUP_arifle_M16A4_ACOG_Laser",
 "CUP_hgun_Colt1911"
 };
 magazines[]=
@@ -625,7 +625,7 @@ weapons[]=
 {
 "Throw",
 "Put",
-"twc_CUP_arifle_M4A1_GL_carryhandle_acog_lazer",
+"CUP_arifle_M16A4_ACOG_Laser",
 "CUP_launch_M136",
 "CUP_hgun_Colt1911"
 };
@@ -633,7 +633,7 @@ respawnweapons[]=
 {
 "Throw",
 "Put",
-"twc_CUP_arifle_M4A1_GL_carryhandle_acog_lazer",
+"CUP_arifle_M16A4_ACOG_Laser",
 "CUP_launch_M136",
 "CUP_hgun_Colt1911"
 };
@@ -701,14 +701,14 @@ weapons[]=
 {
 "Throw",
 "Put",
-"twc_CUP_arifle_M4A1_GL_carryhandle_acog_lazer",
+"CUP_arifle_M16A4_ACOG_Laser",
 "CUP_hgun_Colt1911"
 };
 respawnweapons[]=
 {
 "Throw",
 "Put",
-"twc_CUP_arifle_M4A1_GL_carryhandle_acog_lazer",
+"CUP_arifle_M16A4_ACOG_Laser",
 "CUP_hgun_Colt1911"
 };
 magazines[]=
