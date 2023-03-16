@@ -48,6 +48,10 @@ if(str _loadout != "false")then{
 		_itemList = _itemList + (itemCargo _x);
 		deleteVehicle _x;
 	}forEach _nearHolders;
+	
+	// apply acre fix to ID generated radios
+	_loadout = [_loadout] call acre_api_fnc_filterUnitLoadout;
+	
 	//finally set the loadout
 	player setUnitLoadout _loadout;
 
@@ -86,7 +90,10 @@ if(str _loadout != "false")then{
 	//Plan B Use ProfileNamespace on no body found
 	_loadout = ProfileNamespace getVariable ["twc_framework_disconnectGear",false];
 	if(str _loadout != "false")then{
+		// apply acre fix to ID generated radios
+		_loadout = [_loadout] call acre_api_fnc_filterUnitLoadout;
 		player setUnitLoadout _loadout;
+		
 		ProfileNamespace setVariable ["twc_framework_disconnectGear", _loadout];
 		saveProfileNamespace;
 		//Earplug check
