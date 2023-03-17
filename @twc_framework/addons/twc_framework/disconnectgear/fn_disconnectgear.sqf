@@ -25,6 +25,7 @@ if (!hasInterface) exitWith {};
 
 
 //As is tradion we do an ugly sleep
+// -- can hook into CBA_loadingScreen event or "twc_framework_initComplete", it'll be more reliable/performant
 [] spawn {
 	waitUntil {sleep 1; time > 0 && name player != "No Vehicle" && !(isnil "TWC_MissionStart") };
 	twc_op_newStart = false;
