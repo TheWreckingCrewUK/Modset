@@ -30,14 +30,14 @@ _action = ["CheckID", "Check Vehicle ID", "", {[_target] call twc_fnc_checkvehic
 	[(missionNameSpace getVariable ["safeZone", 0])] spawn twc_fnc_safeZone;
 	[(missionNameSpace getVariable ["zuesObjects", true])] spawn twc_fnc_zeus;
 	
-	_worldName = missionNameSpace getVariable ["TWC_worldName", worldName];
+	/* _worldName = missionNameSpace getVariable ["TWC_worldName", worldName];
 	_hasWorld = isClass (configFile >> "CfgWorlds" >> _worldName);
 	
 	if !(_hasWorld) then {
 		for [{_i=0}, {_i<5}, {_i=_i+1}] do {
 			systemChat "You are missing the map required for this mission!";
 		};
-	};
+	}; */
 
 	["twc_framework_initComplete", []] call CBA_fnc_localEvent;
 };

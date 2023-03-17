@@ -44,13 +44,7 @@ class CfgFunctions {
 			class confiscateBadItems {};
 			class silentSafety {};
 			class checkvehicleID {};
-			class gunwalk {};
-			class mortarwalk {};
 			class addACEInteraction {};
-			class aiscramblenew {};
-			class aiscramble {};
-			class aisuppresscqb {};
-			class aisuppress {};
 			class doStop{};
 			
 			/** Player Messaging **/
