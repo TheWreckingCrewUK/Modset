@@ -29,13 +29,13 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Rifleman: TWC_Infantry_WW2_Base
 	magazines[] =
 	{
 		MAG_13("LIB_10Rnd_770x56"),
-		"LIB_MillsBomb",
+		MAG_2("LIB_MillsBomb"),
 		"LIB_No82"
 	};
 	respawnmagazines[] =
 	{
 		MAG_13("LIB_10Rnd_770x56"),
-		"LIB_MillsBomb",
+		MAG_2("LIB_MillsBomb"),
 		"LIB_No82"
 	};
 };
@@ -73,11 +73,13 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Grenadier: TWC_Infantry_WW2_UK_Late_Wood
 	magazines[] =
 	{
 		MAG_13("LIB_10Rnd_770x56"),
+		MAG_2("LIB_MillsBomb"),
 		MAG_8("LIB_1Rnd_G_MillsBomb")
 	};
 	respawnmagazines[] =
 	{
 		MAG_13("LIB_10Rnd_770x56"),
+		MAG_2("LIB_MillsBomb"),
 		MAG_8("LIB_1Rnd_G_MillsBomb")
 	};
 };
@@ -185,11 +187,13 @@ class TWC_Infantry_WW2_UK_Late_Woodland_MGASS: TWC_Infantry_WW2_UK_Late_Woodland
 	backpack = "TWC_Backpack_WW2_UK_Late_MGASS";
 	magazines[] =
 	{
-		MAG_13("LIB_10Rnd_770x56")
+		MAG_13("LIB_10Rnd_770x56"),
+		"LIB_MillsBomb"
 	};
 	respawnmagazines[] =
 	{
-		MAG_13("LIB_10Rnd_770x56")
+		MAG_13("LIB_10Rnd_770x56"),
+		"LIB_MillsBomb"
 	};
 };
 class TWC_Infantry_WW2_UK_Late_Woodland_SectionCommander: TWC_Infantry_WW2_UK_Late_Woodland_SMG
@@ -225,12 +229,14 @@ class TWC_Infantry_WW2_UK_Late_Woodland_SectionCommander: TWC_Infantry_WW2_UK_La
 	magazines[] =
 	{
 		MAG_7("LIB_32Rnd_9x19_Sten"),
-		MAG_2("SmokeShell")
+		MAG_2("SmokeShell"),
+		"LIB_MillsBomb"
 	};
 	respawnmagazines[] =
 	{
 		MAG_7("LIB_32Rnd_9x19_Sten"),
-		MAG_2("SmokeShell")
+		MAG_2("SmokeShell"),
+		"LIB_MillsBomb"
 	};
 	nightItems[] = {
 		MAG_2("Chemlight_green"),

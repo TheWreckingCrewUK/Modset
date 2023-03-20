@@ -8,11 +8,11 @@ class CUP_B_US_Soldier_SL_OEFCP;
 		};
 		
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		
 		
@@ -68,11 +68,11 @@ class CUP_B_US_Soldier_TL_OEFCP;
 		};
 		
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		
 		
@@ -119,11 +119,11 @@ class CUP_B_US_Soldier_AR_OEFCP;
 		};
 		
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		
 		
@@ -160,11 +160,11 @@ class CUP_B_US_Soldier_GL_OEFCP;
 		};
 		
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		
 		weapons[] = {
@@ -216,11 +216,11 @@ class CUP_B_US_Soldier_ACOG_OEFCP;
 		};
 		
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		
 		weapons[] = {
@@ -278,11 +278,11 @@ class CUP_B_US_Crew_OEFCP;
 		};
 		
 		items[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MODERN_ITEMS
 		};
 		
 		nightItems[] = {

@@ -82,9 +82,11 @@ class TWC_Backpack_Modern_COIN_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP_Me
 		ADD_ITEM(ACE_atropine,4);
 		ADD_ITEM(ACE_epinephrine,10);
 		ADD_ITEM(ACE_salineIV_500,6);
+		ADD_ITEM(ACE_salineIV,6);
 		ADD_ITEM(ACE_tourniquet,4);
+		ADD_ITEM(ACE_splint,6);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 };
 class TWC_Backpack_Modern_COIN_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
@@ -290,10 +292,11 @@ class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Platoon_Medic: UK3CB_BAF_B_Be
 		ADD_ITEM(ACE_adenosine,4);
 		ADD_ITEM(ACE_atropine,4);
 		ADD_ITEM(ACE_epinephrine,10);
-		ADD_ITEM(ACE_salineIV_500,6);
+		ADD_ITEM(ACE_salineIV_500,12);
+		ADD_ITEM(ACE_salineIV_250,4);
 		ADD_ITEM(ACE_tourniquet,4);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 };
 class TWC_Backpack_Modern_COIN_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D

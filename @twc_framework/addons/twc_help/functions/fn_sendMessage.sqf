@@ -1,8 +1,10 @@
 params ["_sender", "_message"];
 
+if(_message == "")exitWith{};
+
 _name = name _sender;
 
 _message = format ["%1: %2", _name, _message];
-_admin = call TWC_Core_fnc_findAdmin;
-_message remoteExec ["hint", _admin];
-[player, ["Diary", ["Help Message", _message]]] remoteExec ["createDiaryRecord", _admin];
+
+//We have to run in on the server
+[_message] remoteExecCall ["TWC_Core_fnc_findAdmin",2];

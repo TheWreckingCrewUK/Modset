@@ -67,6 +67,6 @@ class TWC_Backpack_Colombia_PlatoonMedic: UK3CB_BAF_B_Carryall_OLI {
 		ADD_ITEM(ACE_salineIV_500,6);
 		ADD_ITEM(ACE_tourniquet,4);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 };

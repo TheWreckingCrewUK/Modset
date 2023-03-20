@@ -215,6 +215,7 @@ class CfgPatches {
 			"a3_characters_f_beta",
 			"a3_characters_f_gamma",
 			"CUP_Creatures_People_LoadOrder",
+			"TWC_AmmoBoxes",
 			"twc_millennial"
 		};
 	};
@@ -223,7 +224,7 @@ class CfgPatches {
 #include "CfgEditorSubCategories.hpp"
 #include "CfgFactionClasses.hpp"
 
-class cfgWeapons
+class CfgWeapons
 {
 	class CUP_H_USArmy_Helmet_M1_Olive;
 	class TWC_Helmet_M1_OD: CUP_H_USArmy_Helmet_M1_Olive
@@ -244,6 +245,8 @@ class cfgWeapons
 			uniformClass = "TWC_OPFOR_PLO_Uniform";
 		};
 	};
+	
+	#include "weapons\scp.hpp"
 };
 
 class CfgGroups {
@@ -323,6 +326,7 @@ class CfgVehicles {
 	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
 	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
 
+	#include "ammoboxes\ammoboxes.hpp"
 	#include "vehicles\backpacks.hpp"
 	
 	//Open your uniforms, stop having them be closed
@@ -365,7 +369,7 @@ class CfgVehicles {
 	#include "units\Takistani_Army.hpp"
 	#include "units\burmese_insurgents.hpp"
 	#include "units\taliban.hpp"
-	//#include "units\SCP.hpp"
+	#include "units\SCP.hpp"
 };
 
 #include "CfgMarkers.hpp"

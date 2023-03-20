@@ -18,11 +18,9 @@ if (!_activated || !isServer) exitWith {};
 
 {
 	if (_x isKindOf "CAManBase") then {
-		(group _x) setVariable ["twc_cacheDisabled", true, true];
-		[(group _x)] call twc_fnc_unCacheGroup;
+		(group _x) enableDynamicSimulation false;
 	} else {
-		_x setVariable ["twc_cacheDisabled", true, true];
-		[_x] call twc_fnc_unCacheVehicle;
+		_x enableDynamicSimulation false;
 	};
 } forEach _units;
 

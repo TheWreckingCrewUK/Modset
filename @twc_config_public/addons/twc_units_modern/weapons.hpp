@@ -699,7 +699,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_L85";
-				item="UK3CB_BAF_LLM_IR_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 		
@@ -713,7 +713,7 @@ class cfgWeapons
 			};
 			class asdg_FrontSideRail_L85: asdg_FrontSideRail {
 				class compatibleItems {
-					UK3CB_BAF_LLM_IR_Black = 1;
+					cup_acc_llm_black = 1;
 					UK3CB_BAF_LLM_Flashlight_Black = 1;
 					acc_pointer_IR = 1;
 					ACE_acc_pointer_red = 1;
@@ -739,7 +739,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_UK3CB_BAF_L85A3";
-				item="UK3CB_BAF_LLM_IR_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 		
@@ -761,7 +761,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_L85";
-				item="UK3CB_BAF_LLM_IR_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 		class WeaponSlotsInfo
@@ -774,7 +774,7 @@ class cfgWeapons
 			};
 			class asdg_FrontSideRail_L85: asdg_FrontSideRail {
 				class compatibleItems {
-					UK3CB_BAF_LLM_IR_Black = 1;
+					cup_acc_llm_black = 1;
 					UK3CB_BAF_LLM_Flashlight_Black = 1;
 					acc_pointer_IR = 1;
 					ACE_acc_pointer_red = 1;
@@ -799,7 +799,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_UK3CB_BAF_L110A2";
-				item="UK3CB_BAF_LLM_IR_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 		class WeaponSlotsInfo
@@ -812,7 +812,7 @@ class cfgWeapons
 			};
 			class asdg_FrontSideRail_UK3CB_BAF_L110A2: asdg_FrontSideRail {
 				class compatibleItems {
-					UK3CB_BAF_LLM_IR_Black = 1;
+					cup_acc_llm_black = 1;
 					UK3CB_BAF_LLM_Flashlight_Black = 1;
 					acc_pointer_IR = 1;
 					ACE_acc_pointer_red = 1;
@@ -836,7 +836,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_UK3CB_BAF_L129A1";
-				item="UK3CB_BAF_LLM_IR_Black";
+				item="cup_acc_llm_black";
 			};
 			class LinkedItemsBipod
 			{
@@ -857,7 +857,7 @@ class cfgWeapons
 			};
 			class asdg_FrontSideRail_UK3CB_BAF_L129A1: asdg_FrontSideRail {
 				class compatibleItems {
-					UK3CB_BAF_LLM_IR_Black = 1;
+					cup_acc_llm_black = 1;
 					UK3CB_BAF_LLM_Flashlight_Black = 1;
 					acc_pointer_IR = 1;
 					ACE_acc_pointer_red = 1;
@@ -904,7 +904,7 @@ class cfgWeapons
 			class LinkedItemsFrontSideRail
 			{
 				slot="asdg_FrontSideRail_L85";
-				item="UK3CB_BAF_LLM_IR_Black";
+				item="cup_acc_llm_black";
 			};
 		};
 		class WeaponSlotsInfo
@@ -917,7 +917,7 @@ class cfgWeapons
 			};
 			class asdg_FrontSideRail_L85: asdg_FrontSideRail {
 				class compatibleItems {
-					UK3CB_BAF_LLM_IR_Black = 1;
+					cup_acc_llm_black = 1;
 					UK3CB_BAF_LLM_Flashlight_Black = 1;
 					acc_pointer_IR = 1;
 					ACE_acc_pointer_red = 1;
@@ -1409,9 +1409,7 @@ class cfgammo
 	
 	class CUP_B_762x51_Tracer_Red;
 	class CUP_B_762x51_Tracer_Red_Splash: CUP_B_762x51_Tracer_Red
-	{
-		model = "z\ace\addons\tracers\ace_tracerred2.p3d";
-	};
+	{};
 	
 	
 };

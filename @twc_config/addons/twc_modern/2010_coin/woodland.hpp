@@ -8,12 +8,14 @@ class TWC_Infantry_Modern_COIN_Woodland_Pointman: TWC_Infantry_Modern_Regular_Wo
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"grad_paceCountBeads_functions_paceCountBeads"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"grad_paceCountBeads_functions_paceCountBeads"
 	};
 	weapons[] =
 	{
@@ -117,12 +119,14 @@ class TWC_Infantry_Modern_COIN_Woodland_Autorifleman: TWC_Infantry_Modern_Regula
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
 	{
@@ -175,12 +179,14 @@ class TWC_Infantry_Modern_COIN_Woodland_MG: TWC_Infantry_Modern_Regular_Woodland
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
 	{
@@ -217,17 +223,19 @@ class TWC_Infantry_Modern_COIN_Woodland_Marksman: TWC_Infantry_Modern_Regular_Wo
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
 	{
 		"TWC_Weapon_L129A1_Grippod_TA648",
-		"CUP_launch_M72A6",
+		"RW_Launch_ASM_AS_Loaded",
 		"UK3CB_BAF_L131A1",
 		"ACE_Vector",
 		"Throw",
@@ -236,7 +244,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Marksman: TWC_Infantry_Modern_Regular_Wo
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L129A1_Grippod_TA648",
-		"CUP_launch_M72A6",
+		"RW_Launch_ASM_AS_Loaded",
 		"UK3CB_BAF_L131A1",
 		"ACE_Vector",
 		"Throw",
@@ -266,7 +274,7 @@ class TWC_Infantry_Modern_COIN_Woodland_SectionCommander: TWC_Infantry_Modern_Re
 		"UK3CB_BAF_V_Osprey_SL_D",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -275,7 +283,7 @@ class TWC_Infantry_Modern_COIN_Woodland_SectionCommander: TWC_Infantry_Modern_Re
 		"UK3CB_BAF_V_Osprey_SL_D",
 		"UK3CB_BAF_H_Mk7_Scrim_F",
 		"ItemCompass",
-		"ItemcTab",
+		"ItemAndroid",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -348,13 +356,15 @@ class TWC_Infantry_Modern_COIN_Woodland_2iC: TWC_Infantry_Modern_Regular_Woodlan
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_EntrenchingTool"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_EntrenchingTool"
 	};
 	weapons[] =
 	{
@@ -525,26 +535,16 @@ class TWC_Infantry_Modern_COIN_Woodland_Platoon_Medic: TWC_Infantry_Modern_Regul
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_Modern_COIN_Woodland_Platoon_Medic";
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
-	};
 	weapons[] =
 	{
-		"UK3CB_BAF_L85A2",
+		"TWC_Weapon_L85A2_RIS_SUSAT",
 		"UK3CB_BAF_L131A1",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"UK3CB_BAF_L85A2",
+		"TWC_Weapon_L85A2_RIS_SUSAT",
 		"UK3CB_BAF_L131A1",
 		"Throw",
 		"Put"
@@ -1372,7 +1372,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Vehicle_Commander: TWC_Infantry_Modern_R
 	};
 	weapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"UK3CB_BAF_L131A1",
 		"ACE_Vector",
 		"Throw",
@@ -1380,7 +1380,7 @@ class TWC_Infantry_Modern_COIN_Woodland_Vehicle_Commander: TWC_Infantry_Modern_R
 	};
 	respawnweapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"UK3CB_BAF_L131A1",
 		"ACE_Vector",
 		"Throw",
@@ -1420,17 +1420,15 @@ class TWC_Infantry_Modern_COIN_Woodland_Vehicle_Crew: TWC_Infantry_Modern_Regula
 	};
 	weapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"UK3CB_BAF_L131A1",
-		"ACE_Vector",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"UK3CB_BAF_L22A2",
+		"TWC_Weapon_L22A2_SUSAT",
 		"UK3CB_BAF_L131A1",
-		"ACE_Vector",
 		"Throw",
 		"Put"
 	};

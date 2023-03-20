@@ -116,4 +116,10 @@ class CfgAmmo {
 	{
 		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_red.p3d";
 	};
+	//6 Pounder
+	class fow_Sh_57mm_HE;
+	class fow_Sh_57mm_APCBC;
+	class fow_Sh_57mm_APCR;
+	class fow_Sh_57mm_APDS;
+	class fow_Sh_57mm_AP;
 };

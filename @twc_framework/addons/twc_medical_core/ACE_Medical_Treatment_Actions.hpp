@@ -7,7 +7,7 @@ class ACE_Medical_Treatment_Actions {
 		category = "bandage";
 
 		consumeItem = 1;
-		items[] = {"ACE_fieldDressing", "ACE_packingBandage", "ACE_elasticBandage", "ACE_quikclot"};
+		items[] = {"ACE_Sunflower_Seeds"}; //Basic bandage is gross. But we need to define it for other bandages. Use Sunflower seeds since we don't ever use it
 
 		medicRequired = 0;
 		allowSelfTreatment = 1;
@@ -40,15 +40,15 @@ class ACE_Medical_Treatment_Actions {
 	 * As ambulances are the only things stocked with blood, everything else is Saline
 	 */
 	class BloodIV: BasicBandage {
-		displayName = "Give Blood (1500ml)";
+		displayName = "Give Blood (2000ml)";
 	};
 	
 	class BloodIV_500: BloodIV {
-		displayName = "Give Blood (750ml)";
+		displayName = "Give Blood (1000ml)";
 	};
 	
 	class BloodIV_250: BloodIV {
-		displayName = "Give Blood (375ml)";
+		displayName = "Give Blood (500ml)";
 		allowSelfTreatment = 1;
 	};
 	
@@ -57,15 +57,15 @@ class ACE_Medical_Treatment_Actions {
 	};
 	
 	class SalineIV: BloodIV {
-		displayName = "Give Saline (1250ml)";
+		displayName = "Give Saline (1000ml)";
 	};
 	
 	class SalineIV_500: BloodIV {
-		displayName = "Give Saline (625ml)";
+		displayName = "Give Saline (500ml)";
 	};
 	
 	class SalineIV_250: BloodIV {
-		displayName = "Give Saline (300ml)";
+		displayName = "Give Saline (250ml)";
 		allowSelfTreatment = 1;
 	};
 };

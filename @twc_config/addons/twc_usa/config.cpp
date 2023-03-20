@@ -42,6 +42,14 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 1;
 	};
+
+	class TWC_USMC_Modern {
+		displayName = "TWC Operations USMC - Modern";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
+	};
 	
 	class TWC_USA_CW {
 		displayName = "TWC Operations USA - Cold War";
@@ -54,6 +62,11 @@ class CfgFactionClasses {
 
 class EventHandlers;
 
+class CfgWeapons
+{
+	#include "weapons.hpp"
+};
+
 class CfgVehicles {
 	#define ADD_MAGA(a,b) class _nc_##a {magazine = a; count = b;}
 	#define ADD_WEAP(a,b) class _nc_##a {weapon = a; count = b;}
@@ -63,7 +76,7 @@ class CfgVehicles {
 
 	#define ITEMS(RADIO,ITEMS) RADIO,ITEMS
 	#define CW_ITEMS "ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
-	#define MODERN_ITEMS ITEMS("ACRE_PRC343",CW_ITEMS)
+	#define MODERN_ITEMS ITEMS("ACRE_PRC148",CW_ITEMS)
 	#define MAG_2(a) a, a
 	#define MAG_3(a) a, a, a
 	#define MAG_4(a) a, a, a, a
@@ -119,6 +132,95 @@ class CfgVehicles {
 			ADD_MAGA(CUP_HandGrenade_M67, 6);
 		};
 	};
+	class TWC_AmmoBox_USMC_Modern_Section_Portable: TWC_AmmoBox_Portable {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "USMC (Modern) Squad Resupply (Portable)";
+
+		editorSubcategory = "TWC_Crates_Other";
+
+		class TransportItems {
+			ADD_ITEM(ACE_fieldDressing, 12);
+			ADD_ITEM(ACE_elasticBandage, 12);
+			ADD_ITEM(ACE_quikclot, 12);
+			ADD_ITEM(ACE_packingBandage, 12);
+			
+			ADD_ITEM(ACE_morphine, 12);
+			ADD_ITEM(ACE_epinephrine, 12);
+			ADD_ITEM(ACE_tourniquet, 6);
+		};
+
+		class TransportMagazines {
+			// AR
+			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 25);
+			ADD_MAGA(CUP_30Rnd_556x45_Stanag_Tracer_Red, 15);
+			
+			// GL
+			ADD_MAGA(CUP_1Rnd_HE_M203, 15);
+
+			// Minimi
+			ADD_MAGA(CUP_200Rnd_TE4_Red_Tracer_556x45_M249, 8);
+			
+			// M240
+			ADD_MAGA(150Rnd_762x51_Box, 4);
+			
+			// M110
+			ADD_MAGA(CUP_20Rnd_762x51_B_M110, 5);
+
+			// Smoke Grenades
+			ADD_MAGA(SmokeShell, 5);
+			ADD_MAGA(SmokeShellRed, 2);
+			ADD_MAGA(SmokeShellGreen, 2);
+			ADD_MAGA(SmokeShellBlue, 2);
+			ADD_MAGA(SmokeShellYellow, 2);
+			
+			// Hand Grenade HE
+			ADD_MAGA(CUP_HandGrenade_M67, 6);
+		};
+	};
+		class TWC_AmmoBox_USMCFR_Modern_Section_Portable: TWC_AmmoBox_Portable {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "USMC (Modern) Force Recon Resupply (Portable)";
+
+		editorSubcategory = "TWC_Crates_Other";
+
+		class TransportItems {
+			ADD_ITEM(ACE_fieldDressing, 12);
+			ADD_ITEM(ACE_elasticBandage, 12);
+			ADD_ITEM(ACE_quikclot, 12);
+			ADD_ITEM(ACE_packingBandage, 12);
+			
+			ADD_ITEM(ACE_morphine, 12);
+			ADD_ITEM(ACE_epinephrine, 12);
+			ADD_ITEM(ACE_tourniquet, 6);
+		};
+
+		class TransportMagazines {
+			// AR
+			ADD_MAGA(CUP_30Rnd_556x45_Stanag, 10);
+			ADD_MAGA(CUP_30Rnd_556x45_Stanag_Tracer_Red, 5);
+			
+			// GL
+			ADD_MAGA(CUP_1Rnd_HE_M203, 10);
+
+			// Minimi
+			ADD_MAGA(CUP_200Rnd_TE4_Red_Tracer_556x45_M249, 4);
+			
+			// M110
+			ADD_MAGA(CUP_20Rnd_762x51_B_M110, 5);
+
+			// Smoke Grenades
+			ADD_MAGA(SmokeShell, 5);
+			ADD_MAGA(SmokeShellRed, 2);
+			ADD_MAGA(SmokeShellGreen, 2);
+			ADD_MAGA(SmokeShellBlue, 2);
+			ADD_MAGA(SmokeShellYellow, 2);
+			
+			// Hand Grenade HE
+			ADD_MAGA(CUP_HandGrenade_M67, 3);
+		};
+	};
 	class TWC_AmmoBox_USA_CW_Section_Portable: TWC_AmmoBox_Portable {
 		scope = 2;
 		scopeCurator = 2;
@@ -165,6 +267,9 @@ class CfgVehicles {
 
 	#include "modern\units.hpp"
 	#include "modern\backpacks.hpp"
+
+	#include "marines\units.hpp"
+	#include "marines\backpacks.hpp"
 	
 	#include "coldwar\units.hpp"
 	#include "coldwar\backpacks.hpp"

@@ -20,7 +20,7 @@ class CfgPatches {
 			"CBA_XEH_A3",
 			"ace_common",
 			"ace_interaction",
-			"TWC_gearFixes"
+			"twc_gearfixes"
 		};
 	};
 };

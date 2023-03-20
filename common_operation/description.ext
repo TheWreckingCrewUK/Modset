@@ -6,31 +6,9 @@ briefingName = OperationName;
 loadScreen = "twc_ui\loading.paa";
 disabledAI = 1;
 enableDebugConsole = 1;
-disableChannels[] = {0,2,,5};
+disableChannels[] = {1,2,3,4,5};
 respawnButton = 0;
 
 respawn = "base";
 respawnDelay = 1000000;
 respawnTemplates[] = {"ace_spectator"};
-
-class ACE_Settings {
-	//ACE View Distance Limiter
-	class ace_viewdistance_enabled {
-		value = 1;
-		typeName = "BOOL";
-		force = 1;
-	};
-
-	class ace_viewdistance_limitViewDistance {
-		value = 2500;
-		typeName = "SCALAR";
-		force = 1;
-	};
-};
-
-class CfgDebriefingSections {
-	class acex_killTracker {
-		title = "Acex Killed Events";
-		variable = "acex_killTracker_outputText";
-	};
-};

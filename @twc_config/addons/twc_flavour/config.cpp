@@ -9,7 +9,6 @@ class CfgPatches {
 		};
 	};
 };
-
 #include "CfgFunctions.hpp"
 #include "CfgLeaflets.hpp"
 #include "CfgVehicles.hpp"

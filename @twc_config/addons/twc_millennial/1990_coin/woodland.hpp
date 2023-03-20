@@ -145,11 +145,13 @@ class TWC_Infantry_1990_COIN_Woodland_Platoon_Medic: TWC_Infantry_1990_Regular_W
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250"),
 		MAG_2("ACE_CableTie")
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250"),
 		MAG_2("ACE_CableTie")
 	};
 };

@@ -102,7 +102,7 @@ class TWC_Infantry_2020_Regular_NBC_Javelin_Ass: TWC_Infantry_2020_Regular_Woodl
 	uniformClass = "SP_NBCMk3_HoodUp_Item";
 	CBA_facewearList[] = {"SP_Gasmask_S6", 1};
 };
-/*class TWC_Infantry_2020_Regular_NBC_Starstreak_Gunner: TWC_Infantry_2020_Regular_Woodland_Starstreak_Gunner
+class TWC_Infantry_2020_Regular_NBC_Starstreak_Gunner: TWC_Infantry_2020_Regular_Woodland_Starstreak_Gunner
 {
 	CATEGORY(TWC_Infantry_2020_Regular_NBC)
 	uniformClass = "SP_NBCMk3_HoodUp_Item";
@@ -113,7 +113,7 @@ class TWC_Infantry_2020_Regular_NBC_Starstreak_Ass: TWC_Infantry_2020_Regular_Wo
 	CATEGORY(TWC_Infantry_2020_Regular_NBC)
 	uniformClass = "SP_NBCMk3_HoodUp_Item";
 	CBA_facewearList[] = {"SP_Gasmask_S6", 1};
-};*/
+};
 
 //Sniper Team
 class TWC_Infantry_2020_Regular_NBC_Sniper: TWC_Infantry_2020_Regular_Woodland_Sniper

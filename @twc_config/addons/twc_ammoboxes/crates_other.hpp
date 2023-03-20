@@ -24,19 +24,20 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 		ADD_ITEM(ACE_elasticBandage, 15);
 		ADD_ITEM(ACE_quikclot, 15);
 		ADD_ITEM(ACE_packingBandage, 15);
+		ADD_ITEM(ACE_splint,8);
 		
 		ADD_ITEM(ACE_atropine, 2);
 		ADD_ITEM(ACE_adenosine, 2);
 		ADD_ITEM(ACE_morphine, 6);
 		ADD_ITEM(ACE_epinephrine, 6);
 		
-		ADD_ITEM(ACE_salineIV_500, 15);
 		ADD_ITEM(ACE_salineIV_250, 2);
+		ADD_ITEM(ACE_salineIV_500, 8);
+		ADD_ITEM(ACE_salineIV, 8);
 		ADD_ITEM(ACE_tourniquet, 4);
 		ADD_ITEM(ACE_bodyBag, 6);
 		
 		ADD_ITEM(ACE_personalAidKit, 1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25, 1);
 	};
 };
 
@@ -288,6 +289,7 @@ class TWC_AmmoBox_Other_Sergeant_Utility: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_CableTie,5);
 		ADD_ITEM(SmokeShellYellow,6);
 		ADD_ITEM(SmokeShellGreen,6);
+		ADD_ITEM(ACRE_VHF30108,1);
 	};
 	
 	// TWC Defines

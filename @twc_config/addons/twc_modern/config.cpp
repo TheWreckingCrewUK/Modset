@@ -62,6 +62,9 @@ class CfgEditorSubcategories {
 	class TWC_Infantry_2020_COIN_Dismounted_NBC {
 		displayName = "Infantry (2020s, COIN, Dismounted, NBC)";
 	};
+	class TWC_Infantry_Modern_SF {
+		displayName = "Special Forces";
+	};
 };
 
 class EventHandlers;
@@ -79,7 +82,7 @@ class CfgVehicles
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 
-	#define MEDICAL_LOADOUT "ACRE_PRC343","ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
+	#define MEDICAL_LOADOUT "ACRE_PRC343","ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_splint","ACE_splint","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
 	#define MAG_2(a) a, a
 	#define MAG_3(a) a, a, a
 	#define MAG_4(a) a, a, a, a
@@ -126,11 +129,13 @@ class CfgVehicles
 		};
 
 		items[] = {
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
 		};
 
 		respawnItems[] = {
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
 		};
 
 		weapons[] = {
@@ -285,7 +290,7 @@ class CfgVehicles
 		linkedItems[] =
 		{
 			"UK3CB_BAF_V_Osprey_Belt_A",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -293,7 +298,7 @@ class CfgVehicles
 		respawnLinkedItems[] =
 		{
 			"UK3CB_BAF_V_Osprey_Belt_A",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -310,14 +315,14 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
@@ -339,13 +344,13 @@ class CfgVehicles
 		TWC_isCommandRole = 0;
 		weapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
@@ -377,6 +382,9 @@ class CfgVehicles
 	#include "2020_coin\nbc_dismounted.hpp"
 	#include "2020_coin\arctic.hpp"
 	#include "2020_coin\arctic_dismounted.hpp"
+	
+	#include "modern_sf\sas.hpp"
+	#include "modern_sf\sbs.hpp"
 };
 
 class CfgGroups
@@ -390,7 +398,7 @@ class CfgGroups
 			#include "2020_regular\groups.hpp"
 			#include "2010_coin\groups.hpp"
 			#include "2020_coin\groups.hpp"
-			class TWC_Groups_Modern_Generic
+			class Generic
 			{
 				name = "Generic";
 				class Tank_Crew

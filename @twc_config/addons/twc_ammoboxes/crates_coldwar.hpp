@@ -119,17 +119,6 @@ class TWC_AmmoBox_ColdWar_Blowpipe_Portable: TWC_AmmoBox_Launcher_Portable {
 	
 	editorSubcategory = "TWC_Crates_ColdWar";
 	
-	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing, 4);
-		ADD_ITEM(ACE_elasticBandage, 4);
-		ADD_ITEM(ACE_quikclot, 4);
-		ADD_ITEM(ACE_packingBandage, 4);
-		
-		ADD_ITEM(ACE_morphine, 2);
-		ADD_ITEM(ACE_epinephrine, 2);
-		ADD_ITEM(ACE_tourniquet, 2);
-	};
-	
 	class TransportMagazines {
 		ADD_MAGA(SP_Blowpipe_round, 4);
 	};

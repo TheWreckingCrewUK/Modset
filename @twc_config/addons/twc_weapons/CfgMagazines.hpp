@@ -62,7 +62,7 @@ class CfgMagazines {
 		descriptionShort = "Range: 1000 m<br/>Type: HE (High Explosive)<br/>Used in: L14A1";
 		displayName = "L42A1 (HE) Round";
 		displayNameShort = "HE";
-		initSpeed = 240;
+		initSpeed = 255;
 		mass = 66;
 	};
 	class TWC_Magazine_L14A1_Smoke: CUP_MAAWS_HEDP_M
@@ -80,7 +80,7 @@ class CfgMagazines {
 		descriptionShort = "Range: 2300 m<br/>Type: Illumination<br/>Used in: L14A1";
 		displayName = "L44A1 (Illum) Round";
 		displayNameShort = "Illum";
-		initSpeed = 240;
+		initSpeed = 255;
 		mass = 70;
 	};
 	

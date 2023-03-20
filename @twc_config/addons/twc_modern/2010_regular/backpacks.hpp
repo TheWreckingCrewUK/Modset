@@ -70,9 +70,11 @@ class TWC_Backpack_Modern_Regular_Woodland_Platoon_Medic: UK3CB_BAF_B_Bergen_MTP
 		ADD_ITEM(ACE_atropine,4);
 		ADD_ITEM(ACE_epinephrine,10);
 		ADD_ITEM(ACE_salineIV_500,6);
+		ADD_ITEM(ACE_salineIV,6);
 		ADD_ITEM(ACE_tourniquet,4);
+		ADD_ITEM(ACE_splint,6);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 };
 class TWC_Backpack_Modern_Regular_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C
@@ -86,28 +88,40 @@ class TWC_Backpack_Modern_Regular_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MT
 };
 
 //Attachments
-class TWC_Backpack_Modern_Regular_Woodland_Javelin_Assistant: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
+class TWC_Backpack_Modern_Regular_Woodland_Javelin: UK3CB_BAF_B_Carryall_MTP
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 600;
 	class TransportWeapons {
 		ADD_WEAP(UK3CB_BAF_Javelin_Slung_Tube,1);
 	};
 };
-/*class TWC_Backpack_Modern_Regular_Woodland_Starstreak_Assistant: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D
+class TWC_Backpack_Modern_Regular_Woodland_Starstreak_Gunner: UK3CB_BAF_B_Carryall_MTP
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 600;
-};*/
+	class TransportItems {
+		ADD_ITEM(law_starstreak2_cluItem_olive,1);
+	};
+	class TransportWeapons{
+		ADD_WEAP(TWC_Weapon_Starstreak2_lta_olive,1);
+	};
+};
+class TWC_Backpack_Modern_Regular_Woodland_Starstreak_Assistant: UK3CB_BAF_B_Carryall_MTP
+{
+	scope = 1;
+	scopeArsenal = 1;
+	class TransportWeapons {
+		ADD_WEAP(TWC_Weapon_Starstreak2_lta_olive,2);
+	};
+};
 class TWC_Backpack_Modern_Regular_Woodland_Spotter: UK3CB_BAF_B_Bergen_MTP_SL_L_A
 {
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportItems {
 		ADD_ITEM(ACRE_PRC117F,1);
-		ADD_ITEM(ACE_Tripod,1);
+		ADD_ITEM(ACE_ATragMX,1);
 		ADD_ITEM(ACE_SpottingScope,1);
 	};
 	class TransportMagazines {
@@ -274,10 +288,11 @@ class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Medic: UK3CB_BAF_B
 		ADD_ITEM(ACE_adenosine,4);
 		ADD_ITEM(ACE_atropine,4);
 		ADD_ITEM(ACE_epinephrine,10);
-		ADD_ITEM(ACE_salineIV_500,6);
+		ADD_ITEM(ACE_salineIV_500,12);
+		ADD_ITEM(ACE_salineIV_250,4);
 		ADD_ITEM(ACE_tourniquet,4);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 };
 class TWC_Backpack_Modern_Regular_Dismounted_Woodland_Platoon_Mortar: UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D

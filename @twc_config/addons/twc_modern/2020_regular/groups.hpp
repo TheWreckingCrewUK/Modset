@@ -1,5 +1,5 @@
 #define 2020_REGULAR_GROUPS(CAMO) \
-class TWC_Groups_2020_Regular_##CAMO \
+class 2020_Regular_##CAMO \
 { \
 	name = __EVAL("Infantry (2020s, " + #CAMO + ")"); \
 	class Section \
@@ -17,7 +17,7 @@ class TWC_Groups_2020_Regular_##CAMO \
 		class Unit1 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Marksman; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_marksman; \
 			rank = "PRIVATE"; \
 			position[] = {2,0,0}; \
 		}; \
@@ -100,7 +100,7 @@ class TWC_Groups_2020_Regular_##CAMO \
 		class Unit4 \
 		{ \
 			side = 1; \
-			vehicle = TWC_Infantry_2020_Regular_##CAMO##_2iC; \
+			vehicle = TWC_Infantry_2020_Regular_##CAMO##_2ic; \
 			rank = "CORPORAL"; \
 			position[] = {8,0,0}; \
 		}; \
@@ -122,7 +122,7 @@ class TWC_Groups_2020_Regular_##CAMO \
 		{ \
 			side = 1; \
 			vehicle = TWC_Infantry_2020_Regular_##CAMO##_Vehicle_Commander; \
-			rank = "CORPORAL"; \
+			rank = "PRIVATE"; \
 			position[] = {14,0,0}; \
 		}; \
 		class Unit8 \
@@ -296,7 +296,7 @@ class TWC_Groups_2020_Regular_##CAMO \
 		}; \
 	}; \
 }; \
-class TWC_Groups_2020_Regular_Dismounted_##CAMO \
+class 2020_Dismounted_##CAMO## \
 { \
 	name = __EVAL("Infantry (2020s, Dismounted, " + #CAMO + ")"); \
 	class Section \

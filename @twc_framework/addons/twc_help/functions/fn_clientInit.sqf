@@ -2,6 +2,7 @@ if (!hasInterface) exitWith {};
 
 #include "\a3\editor_f\Data\Scripts\dikCodes.h";
 
+//Original Shift+Y keybind
 [
 	"TWC",
 	"twc_help",
@@ -19,3 +20,6 @@ if (!hasInterface) exitWith {};
 		]
 	]
 ] call CBA_fnc_addKeybind;
+
+//New adding to to options menu
+[["TWC Admin Message","Sends a message to the logged in admin"], "TWC_Help_Message"] call CBA_fnc_addPauseMenuOption;

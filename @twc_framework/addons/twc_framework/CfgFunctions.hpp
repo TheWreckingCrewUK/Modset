@@ -46,7 +46,6 @@ class CfgFunctions {
 			class checkvehicleID {};
 			class gunwalk {};
 			class mortarwalk {};
-			class init{};
 			class addACEInteraction {};
 			class aiscramblenew {};
 			class aiscramble {};
@@ -67,6 +66,15 @@ class CfgFunctions {
 			
 			/** Init **/
 			class postInit {};
+			class stationaryinit {};
+		};
+		
+		class disconnect {	
+			/** DisconnectGear **/
+			file = "twc_framework\disconnectgear";
+			class disconnectGear{};
+			class findoldgear{};
+			
 		};
 		
 		class modules {
@@ -76,7 +84,6 @@ class CfgFunctions {
 			class boatSafety{};
 			class civilianEquipment{};
 			class deadBodies{};
-			class disconnectGear{};
 			class missionModuleInit{};
 			class moduleDebug{};
 			class run{};
@@ -112,7 +119,6 @@ class CfgFunctions {
 			class moduleIgnoreForwardBase {};
 			class moduleGliderTakeOff {};
 			class moduleTriggerUncache {};
-			class moduleUrbanUnitsCache {};
 			class moduleACEInteract {};
 			class moduleAmbientSound {};
 			class moduleAmbientSoundSimp {};
@@ -122,29 +128,16 @@ class CfgFunctions {
 		
 		class cache {
 			file = "twc_framework\cache";
-			class aiCaching {};
-			class cacheGroup {};
 			class cacheModuleInit {};
-			class cacheVehicle {};
 			class initAICache {};
 			class initVehicleCache {};
-			class unCacheGroup {};
-			class unCacheVehicle {};
-			class vehicleCaching {};
 		};
 		
-		class headlessClient {
-			file = "twc_framework\headlessClient";
-			class handleSpawn {};
-			class hcModuleInit {};
-			class rebalance {};
-			class transferGroups {};
-		};
-
 		class curator {
 			file = "twc_framework\curator";
 			class setSpectator {};
 			class forceUncache{};
+			class fixNaked {};
 			// medical moved to twc_medical
 		};
 

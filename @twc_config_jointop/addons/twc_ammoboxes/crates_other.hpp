@@ -20,23 +20,23 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 	displayName = "Medical Supplies (Portable)";
 
 	class TransportItems {
-		item_nc(ACE_fieldDressing, 15);
-		item_nc(ACE_elasticBandage, 15);
-		item_nc(ACE_quikclot, 15);
-		item_nc(ACE_packingBandage, 15);
+		ADD_ITEM(ACE_fieldDressing, 15);
+		ADD_ITEM(ACE_elasticBandage, 15);
+		ADD_ITEM(ACE_quikclot, 15);
+		ADD_ITEM(ACE_packingBandage, 15);
 		
-		item_nc(ACE_atropine, 2);
-		item_nc(ACE_adenosine, 2);
-		item_nc(ACE_morphine, 6);
-		item_nc(ACE_epinephrine, 6);
+		ADD_ITEM(ACE_atropine, 2);
+		ADD_ITEM(ACE_adenosine, 2);
+		ADD_ITEM(ACE_morphine, 6);
+		ADD_ITEM(ACE_epinephrine, 6);
 		
-		item_nc(ACE_salineIV_500, 12);
-		item_nc(ACE_salineIV_250, 2);
-		item_nc(ACE_tourniquet, 4);
-		item_nc(ACE_bodyBag, 6);
+		ADD_ITEM(ACE_salineIV_250, 2);
+		ADD_ITEM(ACE_salineIV_500, 8);
+		ADD_ITEM(ACE_salineIV, 8);
+		ADD_ITEM(ACE_tourniquet, 4);
+		ADD_ITEM(ACE_bodyBag, 6);
 		
-		item_nc(ACE_personalAidKit, 1);
-		item_nc(TWC_Item_Medical_SutureKit_25, 1);
+		ADD_ITEM(ACE_personalAidKit, 1);
 	};
 };
 
@@ -46,8 +46,11 @@ class TWC_AmmoBox_Other_L134_Portable: TWC_AmmoBox_Portable {
 	displayName = "L134 - Grenade Machine Gun (Portable)";
 	
 	class TransportMagazines {
-		maga_nc(UK3CB_BAF_32Rnd_40mm_G_Box, 3);
+		ADD_MAGA(UK3CB_BAF_32Rnd_40mm_G_Box, 3);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
 
 class TWC_AmmoBox_Other_L111_Portable: TWC_AmmoBox_Portable {
@@ -56,8 +59,11 @@ class TWC_AmmoBox_Other_L111_Portable: TWC_AmmoBox_Portable {
 	displayName = "L111 - Heavy Machine Gun (Portable)";
 	
 	class TransportMagazines {
-		maga_nc(UK3CB_BAF_127_100Rnd, 3);
+		ADD_MAGA(UK3CB_BAF_127_100Rnd, 3);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
 
 class TWC_AmmoBox_Other_L7A2_Portable: TWC_AmmoBox_Portable {
@@ -66,21 +72,57 @@ class TWC_AmmoBox_Other_L7A2_Portable: TWC_AmmoBox_Portable {
 	displayName = "L7A2 - General Purpose Machine Gun (Portable)";
 	
 	class TransportMagazines {
-		maga_nc(UK3CB_BAF_762_100Rnd_T, 2);
-		maga_nc(UK3CB_BAF_762_100Rnd, 10);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd_T, 2);
+		ADD_MAGA(UK3CB_BAF_762_100Rnd, 10);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
+
+class TWC_AmmoBox_Other_L14_Portable: TWC_AmmoBox_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "L14 - Recoilless Rifle Ammo (Portable)";
+	
+	class TransportMagazines {
+		ADD_MAGA(TWC_Magazine_L14A1_HE, 3);
+		ADD_MAGA(TWC_Magazine_L14A1_HEAT, 3);
+		ADD_MAGA(TWC_Magazine_L14A1_Illum, 2);
+		ADD_MAGA(TWC_Magazine_L14A1_Smoke, 2);
+	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "launcher";
+};
+
+class TWC_AmmoBox_Other_MILAN_Portable: TWC_AmmoBox_Launcher_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "MILAN (Portable)";
+	
+	class TransportMagazines {
+		//ADD_MAGA(, 6);
+	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "launcher";
+};
+
 class TWC_AmmoBox_Other_L16_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "L16 - 81mm Mortar (Portable)";
 	
 	class TransportMagazines {
-		maga_nc(UK3CB_BAF_1Rnd_81mm_Mo_Shells, 10);
-		maga_nc(UK3CB_BAF_1Rnd_81mm_Mo_Smoke_White, 4);
-		maga_nc(UK3CB_BAF_1Rnd_81mm_Mo_Flare_White, 2);
-		maga_nc(UK3CB_BAF_1Rnd_81mm_Mo_IRFlare_White, 2);
+		ADD_MAGA(UK3CB_BAF_1Rnd_81mm_Mo_Shells, 10);
+		ADD_MAGA(UK3CB_BAF_1Rnd_81mm_Mo_Smoke_White, 4);
+		ADD_MAGA(UK3CB_BAF_1Rnd_81mm_Mo_Flare_White, 2);
+		ADD_MAGA(UK3CB_BAF_1Rnd_81mm_Mo_IRFlare_White, 2);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable: TWC_AmmoBox_Portable {
@@ -89,10 +131,13 @@ class TWC_AmmoBox_Other_L118_Portable: TWC_AmmoBox_Portable {
 	displayName = "L118 - 105mm Light Gun (Portable)";
 	
 	class TransportMagazines {
-		maga_nc(TWC_Magazine_105mm_1rnd_HE, 10);
-		maga_nc(TWC_Magazine_105mm_1rnd_Smoke_White, 6);
-		maga_nc(TWC_Magazine_105mm_1rnd_Illum, 4);
+		ADD_MAGA(TWC_Magazine_105mm_1rnd_HE, 10);
+		ADD_MAGA(TWC_Magazine_105mm_1rnd_Smoke_White, 6);
+		ADD_MAGA(TWC_Magazine_105mm_1rnd_Illum, 4);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_HE: TWC_AmmoBox_Portable {
@@ -101,8 +146,11 @@ class TWC_AmmoBox_Other_L118_Portable_HE: TWC_AmmoBox_Portable {
 	displayName = "L118 - 105mm Light Gun (Portable, HE)";
 	
 	class TransportMagazines {
-		maga_nc(TWC_Magazine_105mm_1rnd_HE, 20);
+		ADD_MAGA(TWC_Magazine_105mm_1rnd_HE, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_HESH: TWC_AmmoBox_Portable {
@@ -111,8 +159,11 @@ class TWC_AmmoBox_Other_L118_Portable_HESH: TWC_AmmoBox_Portable {
 	displayName = "L118 - 105mm Light Gun (Portable, HESH)";
 	
 	class TransportMagazines {
-		maga_nc(TWC_Magazine_105mm_1rnd_HESH, 20);
+		ADD_MAGA(TWC_Magazine_105mm_1rnd_HESH, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_SMOKE: TWC_AmmoBox_Portable {
@@ -121,8 +172,11 @@ class TWC_AmmoBox_Other_L118_Portable_SMOKE: TWC_AmmoBox_Portable {
 	displayName = "L118 - 105mm Light Gun (Portable, Smoke, White)";
 	
 	class TransportMagazines {
-		maga_nc(TWC_Magazine_105mm_1rnd_Smoke_White, 20);
+		ADD_MAGA(TWC_Magazine_105mm_1rnd_Smoke_White, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_SMOKE_RED: TWC_AmmoBox_Portable {
@@ -131,8 +185,11 @@ class TWC_AmmoBox_Other_L118_Portable_SMOKE_RED: TWC_AmmoBox_Portable {
 	displayName = "L118 - 105mm Light Gun (Portable, Smoke, Red)";
 	
 	class TransportMagazines {
-		maga_nc(TWC_Magazine_105mm_1rnd_Smoke_Red, 20);
+		ADD_MAGA(TWC_Magazine_105mm_1rnd_Smoke_Red, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_SMOKE_ORANGE: TWC_AmmoBox_Portable {
@@ -141,8 +198,11 @@ class TWC_AmmoBox_Other_L118_Portable_SMOKE_ORANGE: TWC_AmmoBox_Portable {
 	displayName = "L118 - 105mm Light Gun (Portable, Smoke, Orange)";
 	
 	class TransportMagazines {
-		maga_nc(TWC_Magazine_105mm_1rnd_Smoke_Orange, 20);
+		ADD_MAGA(TWC_Magazine_105mm_1rnd_Smoke_Orange, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_ILLUM: TWC_AmmoBox_Portable {
@@ -151,8 +211,11 @@ class TWC_AmmoBox_Other_L118_Portable_ILLUM: TWC_AmmoBox_Portable {
 	displayName = "L118 - 105mm Light Gun (Portable, Illum)";
 	
 	class TransportMagazines {
-		maga_nc(TWC_Magazine_105mm_1rnd_Illum, 20);
+		ADD_MAGA(TWC_Magazine_105mm_1rnd_Illum, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_L118_Portable_ILLUM_IR: TWC_AmmoBox_Portable {
@@ -161,8 +224,11 @@ class TWC_AmmoBox_Other_L118_Portable_ILLUM_IR: TWC_AmmoBox_Portable {
 	displayName = "L118 - 105mm Light Gun (Portable, Illum, IR)";
 	
 	class TransportMagazines {
-		maga_nc(TWC_Magazine_105mm_1rnd_Illum_IR, 20);
+		ADD_MAGA(TWC_Magazine_105mm_1rnd_Illum_IR, 20);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "artillery";
 };
 
 class TWC_AmmoBox_Other_Stinger_Portable: TWC_AmmoBox_Portable {
@@ -171,8 +237,11 @@ class TWC_AmmoBox_Other_Stinger_Portable: TWC_AmmoBox_Portable {
 	displayName = "Stinger (Portable)";
 	
 	class TransportMagazines {
-		maga_nc(CUP_Stinger_M, 5);
+		ADD_MAGA(CUP_Stinger_M, 5);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "launcher";
 };
 
 class TWC_AmmoBox_Other_Command_Portable: TWC_AmmoBox_Portable {
@@ -181,9 +250,12 @@ class TWC_AmmoBox_Other_Command_Portable: TWC_AmmoBox_Portable {
 	displayName = "Command Box (Portable)";
 	
 	class TransportItems {
-		item_nc(ACRE_PRC117F, 4);
-		item_nc(Binocular, 4);
+		ADD_ITEM(ACRE_PRC117F, 4);
+		ADD_ITEM(Binocular, 4);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
 
 class TWC_AmmoBox_Engineer_Portable: TWC_AmmoBox_Portable {
@@ -192,13 +264,16 @@ class TWC_AmmoBox_Engineer_Portable: TWC_AmmoBox_Portable {
 	displayName = "Engineer Resupply (Portable)";
 	
 	class TransportItems {
-		item_nc(ACE_Clacker,2);
-		item_nc(DemoCharge_Remote_Mag, 5);
-		item_nc(ATMine_Range_Mag, 5);
-		item_nc(APERSTripMine_Wire_Mag, 5);
-		item_nc(SatchelCharge_Remote_Mag, 2);
-		item_nc(ACE_Sandbag_empty, 200);
+		ADD_ITEM(ACE_Clacker,2);
+		ADD_ITEM(DemoCharge_Remote_Mag, 5);
+		ADD_ITEM(ATMine_Range_Mag, 5);
+		ADD_ITEM(APERSTripMine_Wire_Mag, 5);
+		ADD_ITEM(SatchelCharge_Remote_Mag, 2);
+		ADD_ITEM(ACE_Sandbag_empty, 200);
 	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };
 
 class TWC_AmmoBox_Other_Sergeant_Utility: TWC_AmmoBox_Portable {
@@ -206,11 +281,45 @@ class TWC_AmmoBox_Other_Sergeant_Utility: TWC_AmmoBox_Portable {
 	scopeCurator = 2;
 	displayName = "Sergeant Utility Box";
 	class TransportItems {
-		item_nc(ACE_Clacker,1);
-		item_nc(DemoCharge_Remote_Mag, 5);
-		item_nc(ACE_wirecutter,1);
-		item_nc(ACE_EntrenchingTool,2);
-		item_nc(ACE_CableTie,5);
-		
+		ADD_ITEM(ACE_Clacker,1);
+		ADD_ITEM(DemoCharge_Remote_Mag, 5);
+		ADD_ITEM(ACE_wirecutter,1);
+		ADD_ITEM(ACE_EntrenchingTool,3);
+		ADD_ITEM(ACE_CableTie,5);
+		ADD_ITEM(SmokeShellYellow,6);
+		ADD_ITEM(SmokeShellGreen,6);
+	};
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
+};
+
+class TWC_AmmoBox_Other_Replenish: TWC_AmmoBox_Base {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Base Box (Replenish)";
+	
+	class ACE_Actions {
+		class ACE_MainActions {
+			displayName = "Replenish";
+			position = "[0,0,0]";
+			condition = "true";
+			distance = 7.5;
+			
+			class TWC_Replenish_Boxes {
+				displayName = "Replenish Boxes";
+				condition = "true";
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+				insertChildren = "[_target, _player] call TWC_Box_Replenish_fnc_getReplenishChildren";
+				icon = "twc_box_replenish\ui\replenish_ca.paa";
+			};
+			
+			class TWC_Replenish_Counts {
+				displayName = "Remaining Count";
+				condition = "true";
+				exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+				statement = "_target call TWC_Box_Replenish_fnc_checkCounts";
+			};
+		};
 	};
 };

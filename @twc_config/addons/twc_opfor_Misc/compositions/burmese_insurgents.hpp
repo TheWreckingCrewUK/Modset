@@ -164,17 +164,11 @@ class TWC_OPFOR_BurIns {
 		};
 		class Unit6 {
 			side = 0;
-			vehicle = "BurIns_MG_RPD";
-			rank = "PRIVATE";
-			position[] = {12,0,0};
-		};
-		class Unit7 {
-			side = 0;
 			vehicle = "BurIns_Rifleman_AKS";
 			rank = "CORPORAL";
 			position[] = {14,0,0};
 		};
-		class Unit8 {
+		class Unit7 {
 			side = 0;
 			vehicle = "BurIns_Rifleman_SKS";
 			rank = "PRIVATE";

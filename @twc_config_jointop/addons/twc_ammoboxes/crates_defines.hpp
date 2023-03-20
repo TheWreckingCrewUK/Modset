@@ -1,5 +1,4 @@
 // Base Classes, all others inherit from these!
-
 class CUP_BAF_VehicleBox;
 class Box_NATO_Ammo_F;
 class Box_NATO_AmmoVeh_F;
@@ -50,6 +49,9 @@ class TWC_AmmoBox_Portable: Box_NATO_Ammo_F {
 	
 	ace_dragging_canCarry = 1;
 	ace_dragging_canDrag  = 1;
+	
+	// TWC Defines
+	twc_ammobox_type      = "section";
 };
 
 class TWC_AmmoBox_Launcher_Portable: Box_NATO_WpsLaunch_F {
@@ -72,6 +74,9 @@ class TWC_AmmoBox_Launcher_Portable: Box_NATO_WpsLaunch_F {
 	
 	ace_dragging_canCarry = 1;
 	ace_dragging_canDrag  = 1;
+	
+	// TWC Defines
+	twc_ammobox_type      = "launcher";
 };
 
 class TWC_AmmoBox_Vehicle: Box_NATO_AmmoVeh_F {
@@ -115,6 +120,9 @@ class TWC_AmmoBox_Medical: ACE_medicalSupplyCrate {
 
 	ace_dragging_canCarry = 1;
 	ace_dragging_canDrag  = 1;
+	
+	// TWC Defines
+	twc_ammobox_type      = "medical";
 };
 
 // It's here for a myriad of reasons, all of which I can't explain...
@@ -152,4 +160,7 @@ class TWC_AmmoBox_Other_Empty_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "Empty Ammo Box (Portable)";
+	
+	// TWC Defines
+	twc_ammobox_type      = "other";
 };

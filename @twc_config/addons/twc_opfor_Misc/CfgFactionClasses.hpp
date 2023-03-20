@@ -152,11 +152,37 @@ class CfgFactionClasses {
 		priority = 2;
 		side = 0;
 	};
+	
+	class TWC_MTF_Units {
+		displayName = "Mobile Task Force";
+		author = "Saxon";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 2;
+	};
+	
 	class TWC_CI_Units {
 		displayName = "Chaos Insurgency";
 		author = "Saxon";
 		icon = "TWClogo.paa";
 		priority = 2;
 		side = 2;
+	};
+	
+	class TWC_GRUP_Units {
+		displayName = "GRU, Division P";
+		author = "Saxon";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 2;
+		ace_nametag_rankIcons[] = {
+			"ace_nametags\UI\icons_russia\private_gs.paa",
+			"ace_nametags\UI\icons_russia\corporal_gs.paa",
+			"ace_nametags\UI\icons_russia\sergeant_gs.paa",
+			"ace_nametags\UI\icons_russia\lieutenant_gs.paa",
+			"ace_nametags\UI\icons_russia\captain_gs.paa",
+			"ace_nametags\UI\icons_russia\major_gs.paa",
+			"ace_nametags\UI\icons_russia\colonel_gs.paa"
+		};
 	};
 };

@@ -1,13 +1,21 @@
 class CfgPatches {
 	class TWC_AmmoBoxes {
 		units[] = {
-
-			"TWC_AmmoBox_Millennial_Base",
-			"TWC_AmmoBox_Millennial_Section_Portable",
-			"TWC_AmmoBox_Millennial_Mechanised_Base",
-			"TWC_AmmoBox_Millennial_Mechanised_Section_Portable",
+			"TWC_AmmoBox_2020_Section_Portable",
+			"TWC_AmmoBox_2020_COIN_Section_Portable",
+			"TWC_AmmoBox_2020_Mechanised_Section_Portable",
+			"TWC_AmmoBox_Modern_Section_Portable",
+			"TWC_AmmoBox_Modern_COIN_Section_Portable",
+			"TWC_AmmoBox_Modern_Mechanised_Section_Portable",
+			"TWC_AmmoBox_Modern_Javelin_Portable",
+			"TWC_AmmoBox_Modern_Sniper_Portable",
+			"TWC_AmmoBox_Modern_M6_Portable",
+			"TWC_AmmoBox_1990_Section_Portable",
+			"TWC_AmmoBox_1990_Mechanised_Section_Portable",
+			"TWC_AmmoBox_2000_Section_Portable",
+			"TWC_AmmoBox_2000_Mechanised_Section_Portable",
 			"TWC_AmmoBox_Millennial_Sniper_Portable",
-
+			"TWC_AmmoBox_Vehicle_Toolkits",
 			"TWC_AmmoBox_Vehicle_Warrior",
 			"TWC_AmmoBox_Vehicle_Milan",
 			"TWC_AmmoBox_Vehicle_L134",
@@ -33,6 +41,7 @@ class CfgPatches {
 			"TWC_AmmoBox_Other_Command_Portable",
 			"TWC_AmmoBox_Other_Pallet",
 			"TWC_AmmoBox_Other_Empty_Portable",
+			"TWC_AmmoBox_Training_Medical_Base",
 			"TWC_AmmoBox_Other_Sergeant_Utility"
 		};
 		
@@ -46,8 +55,10 @@ class CfgPatches {
 			"uk3cb_baf_weapons",
 			"uk3cb_baf_equipment",
 			"cup_weapons_ammoboxes",
+			"ace_common",
 			"ace_medical",
-			"ace_cargo"
+			"ace_cargo",
+			"twc_box_replenish"
 		};
 		
 		version = "1";
@@ -65,15 +76,19 @@ class CfgEditorCategories {
 class CfgEditorSubcategories {
 	/*
 		Each ERA has an ERA/Mechanised (where necessary) specific:
-			Base Crate
 			Section & Attachment Resupply Crates (Portable)
 
 		Vehicle contains vehicle resupply (i.e. warrior ammo)
 		Other contains non-era specific crates and the pallet for air-lifting/dropping
 	*/
+	class TWC_Crates_Modern {
+		displayName = "Modern";
+	};
+	
 	class TWC_Crates_Millennial {
 		displayName = "Millennial";
 	};
+	
 	class TWC_Crates_Vehicles {
 		displayName = "Vehicles";
 	};
@@ -86,19 +101,22 @@ class CfgEditorSubcategories {
 		displayName = "Launchers";
 	};
 	
-	// Future Possibility, Training Crates? These could just be the weapons/items.
-	// For the moment, I can use the op ones in conjunction with the spawn scripts.
+	class TWC_Crates_Training {
+		displayName = "Training";
+	};
 };
 
 class CfgVehicles {
 	// Time saving MACROs - NC = Non-Conflict
-	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
-	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
-	#define item_nc(a,b) class _nc_##a {name = a; count = b;}
+	#define ADD_MAGA(a,b) class _nc_##a {magazine = a; count = b;}
+	#define ADD_WEAP(a,b) class _nc_##a {weapon = a; count = b;}
+	#define ADD_ITEM(a,b) class _nc_##a {name = a; count = b;}
 	
 	#include "crates_defines.hpp"
+	#include "crates_modern.hpp"
 	#include "crates_millennial.hpp"
 	#include "crates_vehicles.hpp"
 	#include "crates_other.hpp"
 	#include "crates_launchers.hpp"
+	#include "crates_training.hpp"
 };
