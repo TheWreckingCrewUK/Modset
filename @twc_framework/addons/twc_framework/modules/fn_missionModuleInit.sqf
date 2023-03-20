@@ -22,20 +22,22 @@ missionNameSpace setVariable ["TWC_Intro_specialSong", (_logic getVariable ["spe
 //Needs to run on both
 [(_logic getVariable "disconectGear")] call twc_fnc_disconnectGear;
 
-// Server side part below
-if (hasInterface) exitWith {};
+// Run on headless clients & server
+if (!hasInterface) then {
+	[(_logic getVariable "civilianEquipment")] call twc_fnc_civilianEquipment;
+	[(_logic getVariable "deadBodies")] call twc_fnc_deadBodies;
+};
 
-missionNameSpace setVariable ["TWC_Intro_Started", false, true];
-missionNameSpace setVariable ["TWC_worldName", worldName, true]; // share world name from server, for clients to check against
+// Run on server only
+if (isServer) then {
+	missionNameSpace setVariable ["TWC_Intro_Started", false, true];
+	// Steam Workshop integration has made this unnecessary
+	//missionNameSpace setVariable ["TWC_worldName", worldName, true]; // share world name from server, for clients to check against
+	missionNameSpace setVariable ["twcModuleFinished", true, true];
 
-missionNameSpace setVariable ["twcModuleFinished", true, true];
-
-[{ getClientStateNumber > 9 }, {
-	// This measure is used to inform clients whether or not the mission has started.
-	// There needs to be a delay, to account for latency etc.
-	[{ missionNameSpace setVariable ["TWC_Intro_Started", true, true]; }, [], 30] call CBA_fnc_waitAndExecute;
-}] call CBA_fnc_waitUntilAndExecute;
-
-
-[(_logic getVariable "civilianEquipment")] call twc_fnc_civilianEquipment;
-[(_logic getVariable "deadBodies")] call twc_fnc_deadBodies;
+	[{ getClientStateNumber > 9 }, {
+		// This is used to inform clients whether or not the mission has started in proper.
+		// There needs to be a delay, to account for latency etc.
+		[{ missionNameSpace setVariable ["TWC_Intro_Started", true, true]; }, [], 30] call CBA_fnc_waitAndExecute;
+	}] call CBA_fnc_waitUntilAndExecute;
+};
