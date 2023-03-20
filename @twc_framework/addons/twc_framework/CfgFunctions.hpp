@@ -80,7 +80,6 @@ class CfgFunctions {
 			class deadBodies{};
 			class missionModuleInit{};
 			class moduleDebug{};
-			class run{};
 			class safeZone{};
 			class zeus{};
 			class moduleAmbientCiv {};
@@ -133,12 +132,6 @@ class CfgFunctions {
 			class forceUncache{};
 			class fixNaked {};
 			// medical moved to twc_medical
-		};
-
-		class artillery {
-			file = "twc_framework\artillery";
-			class moduleArtillerySpotter {};
-			class moduleArtilleryPieces {};
 		};
 	};
 };

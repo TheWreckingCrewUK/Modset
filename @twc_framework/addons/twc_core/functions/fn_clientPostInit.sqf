@@ -83,10 +83,6 @@ EM_blacklist_obj = [
 	player disableConversation true;
 	//player action ["WeaponOnBack", player];
 
-	if !((goggles player) in approvedFacewear) then {
-		removeGoggles player;
-	};
-
 	[{ time > 0 }, {
 		/** Reconnect spot? **/
 		if (!isNil "ForwardBasePos" && !(player getVariable ["twc_ignoreForwardBase", false])) then {
