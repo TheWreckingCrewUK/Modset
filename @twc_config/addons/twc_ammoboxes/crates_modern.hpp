@@ -24,6 +24,7 @@ class TWC_AmmoBox_Modern_Section_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,4);
 	};
 	
 	class TransportMagazines {
@@ -82,6 +83,7 @@ class TWC_AmmoBox_Modern_COIN_Section_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,4);
 	};
 	
 	class TransportMagazines {
@@ -147,6 +149,7 @@ class TWC_AmmoBox_Modern_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,4);
 	};
 	
 	class TransportMagazines {
@@ -192,28 +195,6 @@ class TWC_AmmoBox_Modern_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 	};
 };
 
-// WIP BELOW! Rushed the finish for an OP. Must remember to finish!!
-class TWC_AmmoBox_Modern_Javelin_Portable: TWC_AmmoBox_Portable {
-	scope = 2;
-	scopeCurator = 2;
-	displayName = "UNFINISHED - Javelin Resupply (Portable)";
-	editorSubcategory = "TWC_Crates_Modern";
-	
-	class TransportItems {
-		ADD_ITEM(ACE_fieldDressing, 4);
-		ADD_ITEM(ACE_elasticBandage, 4);
-		ADD_ITEM(ACE_quikclot, 4);
-		ADD_ITEM(ACE_packingBandage, 4);
-		
-		ADD_ITEM(ACE_morphine, 2);
-		ADD_ITEM(ACE_epinephrine, 2);
-		ADD_ITEM(ACE_tourniquet, 2);
-	};
-	
-	// TWC Defines
-	twc_ammobox_type      = "launcher";
-};
-
 class TWC_AmmoBox_Modern_Sniper_Portable: TWC_AmmoBox_Portable {
 	scope = 2;
 	scopeCurator = 2;
@@ -235,6 +216,7 @@ class TWC_AmmoBox_Modern_Sniper_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 2);
 		ADD_ITEM(ACE_epinephrine, 2);
 		ADD_ITEM(ACE_tourniquet, 2);
+		ADD_ITEM(ACE_splint,2);
 	};
 };
 
@@ -325,6 +307,7 @@ class TWC_AmmoBox_2020_COIN_Section_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,4);
 	};
 	
 	class TransportMagazines {
@@ -390,6 +373,7 @@ class TWC_AmmoBox_2020_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,4);
 	};
 	
 	class TransportMagazines {
@@ -441,6 +425,7 @@ class TWC_AmmoBox_2020_Mechanised_Section_COIN_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,4);
 	};
 	
 	class TransportMagazines {

@@ -1,6 +1,12 @@
 /* // Launchers
 	"TWC_AmmoBox_Launchers_L14_Portable", // carl gustav launcher
 	"TWC_AmmoBox_Launchers_L1A1_Portable", // m72 law
+	"TWC_AmmoBox_Launchers_LASM_Portable" //LASM (coldwar LAW)
+	"TWC_AmmoBox_Launchers_LAW80_Portable" //Law 80
+	"TWC_AmmoBox_Launchers_L2A1_Portable" //AT4
+	"TWC_AmmoBox_Launchers_NLAW_Portable" //NLAW
+	"TWC_AmmoBox_Launchers_Matador_Portable" //MATADOR
+	"TWC_AmmoBox_Launchers_Javelin_Portable" //Javelin
 */
 
 class TWC_AmmoBox_Launchers_L14_Portable: TWC_AmmoBox_Launcher_Portable {
@@ -96,6 +102,19 @@ class TWC_AmmoBox_Launchers_Matador_Portable: TWC_AmmoBox_Launcher_Portable {
 	editorSubcategory = "TWC_Crates_Launchers";
 	
 	class TransportWeapons {
-		ADD_WEAP(RW_Launch_ASM_AS_Loaded, 2);
+		ADD_WEAP(RW_Launch_ASM_AS_Loaded, 1);
+		ADD_WEAP(RW_Launch_ASM_HESH_Loaded, 1);
+	};
+};
+
+class TWC_AmmoBox_Launchers_Javelin_Portable: TWC_AmmoBox_Launcher_Portable {
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "Javelin (Portable)";
+	
+	editorSubcategory = "TWC_Crates_Launchers";
+	
+	class TransportWeapons {
+		ADD_WEAP(UK3CB_BAF_Javelin_Slung_Tube, 2);
 	};
 };
