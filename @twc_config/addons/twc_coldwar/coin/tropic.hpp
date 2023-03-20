@@ -5,7 +5,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Rifleman: TWC_Infantry_ColdWar_Regular_Tr
 	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -13,7 +13,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Rifleman: TWC_Infantry_ColdWar_Regular_Tr
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -49,7 +49,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Rifleman_SUIT: TWC_Infantry_ColdWar_Regul
 	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -57,7 +57,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Rifleman_SUIT: TWC_Infantry_ColdWar_Regul
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -94,7 +94,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_SectionCommander: TWC_Infantry_ColdWar_Re
 	backpack = "TWC_Backpack_ColdWar_COIN_SectionCommander";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -102,7 +102,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_SectionCommander: TWC_Infantry_ColdWar_Re
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -115,7 +115,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_2iC: TWC_Infantry_ColdWar_Regular_Tropic_
 	backpack = "TWC_Backpack_ColdWar_COIN_2iC";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -123,7 +123,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_2iC: TWC_Infantry_ColdWar_Regular_Tropic_
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -135,7 +135,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_MG: TWC_Infantry_ColdWar_Regular_Tropic_M
 	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -143,7 +143,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_MG: TWC_Infantry_ColdWar_Regular_Tropic_M
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -178,7 +178,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_ASSMG: TWC_Infantry_ColdWar_Regular_Tropi
 	backpack = "TWC_Backpack_ColdWar_COIN_ASSMG";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -186,7 +186,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_ASSMG: TWC_Infantry_ColdWar_Regular_Tropi
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -201,7 +201,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Platoon_Commander: TWC_Infantry_ColdWar_R
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -209,7 +209,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Platoon_Commander: TWC_Infantry_ColdWar_R
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -222,7 +222,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_ColdWar_Re
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Sergeant";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -230,7 +230,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Platoon_Sergeant: TWC_Infantry_ColdWar_Re
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -243,7 +243,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Platoon_Medic: TWC_Infantry_ColdWar_Regul
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Medic";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -251,7 +251,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Platoon_Medic: TWC_Infantry_ColdWar_Regul
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -264,7 +264,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_CSM: TWC_Infantry_ColdWar_Regular_Tropic_
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Sergeant";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -272,7 +272,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_CSM: TWC_Infantry_ColdWar_Regular_Tropic_
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -287,7 +287,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Company_Commander: TWC_Infantry_ColdWar_R
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
 	linkedItems[] =
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -295,7 +295,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Company_Commander: TWC_Infantry_ColdWar_R
 	};
 	respawnLinkedItems[] =
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -308,7 +308,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Company_2iC: TWC_Infantry_ColdWar_Regular
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Commander";
 	linkedItems[] =
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -316,7 +316,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Company_2iC: TWC_Infantry_ColdWar_Regular
 	};
 	respawnLinkedItems[] =
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -329,7 +329,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Company_Sergeant: TWC_Infantry_ColdWar_Re
 	backpack = "TWC_Backpack_ColdWar_COIN_Platoon_Sergeant";
 	linkedItems[] =
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -337,7 +337,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Company_Sergeant: TWC_Infantry_ColdWar_Re
 	};
 	respawnLinkedItems[] =
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -351,7 +351,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Sniper: TWC_Infantry_ColdWar_Regular_Trop
 	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -359,7 +359,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Sniper: TWC_Infantry_ColdWar_Regular_Trop
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -371,7 +371,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Spotter: TWC_Infantry_ColdWar_Regular_Tro
 	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -379,7 +379,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Spotter: TWC_Infantry_ColdWar_Regular_Tro
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -393,7 +393,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Artillery_Commander: TWC_Infantry_ColdWar
 	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -401,7 +401,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Artillery_Commander: TWC_Infantry_ColdWar
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -413,7 +413,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Artillery_Crew: TWC_Infantry_ColdWar_Regu
 	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -421,7 +421,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_Artillery_Crew: TWC_Infantry_ColdWar_Regu
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -433,7 +433,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_FO: TWC_Infantry_ColdWar_Regular_Tropic_F
 	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -441,7 +441,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_FO: TWC_Infantry_ColdWar_Regular_Tropic_F
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -455,7 +455,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_FAC: TWC_Infantry_ColdWar_Regular_Tropic_
 	CATEGORY(TWC_Infantry_COIN_Tropic)
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",
@@ -463,7 +463,7 @@ class TWC_Infantry_ColdWar_COIN_Tropic_FAC: TWC_Infantry_ColdWar_Regular_Tropic_
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"H_Booniehat_oli",
 		"ItemCompass",
 		"itemMap",

@@ -24,8 +24,8 @@ class TWC_L1A1_SUIT: UK3CB_BAF_L1A1_Wood
 		};
 	};
 };
-class SP_enfield_l42_beech_old;
-class TWC_Weapon_L42A1_No32: SP_enfield_l42_beech_old
+class SP_enfield_l42_mixed_2;
+class TWC_Weapon_L42A1_No32: SP_enfield_l42_mixed_2
 {
 	scope = 1;
 	class LinkedItems
@@ -52,133 +52,7 @@ class twc_l14A1_scoped: TWC_Weapon_L14A1
 	};
 };
 class LMG_Zafir_F;
-class sp_l4_lmg: LMG_Zafir_F
+class sp_l4_lmg_walnut: LMG_Zafir_F
 {
 	magazines[] = {"SP_30Rnd_762_L4","UK3CB_BAF_762_20Rnd","UK3CB_BAF_762_20Rnd_T"};
-};
-
-class Launcher_Base_F;
-class launch_RPG7_F: Launcher_Base_F {
-	class WeaponSlotsInfo;
-};
-class sp_l1a1_law66: launch_RPG7_F {
-	ace_overpressure_angle = 30;
-	ace_overpressure_range = 40;
-	ace_overpressure_damage = 0.6;
-	
-	baseWeapon = "sp_l1a1_law66";
-	
-	magazineReloadTime = 0.1;
-	magazines[] = {"CBA_FakeLauncherMagazine"};
-	reloadMagazineSound[] = {"",1,1};
-	class WeaponSlotsInfo: WeaponSlotsInfo {
-		mass = 55.12;
-	};
-};
-
-class sp_l1a1_law66_ready: sp_l1a1_law66 {
-	scope = 1;
-	scopeArsenal = 1;
-	baseWeapon = "sp_l1a1_law66";
-
-	magazines[] = {"SP_law66_round"};
-
-	class EventHandlers {
-		fired = "_this call CBA_fnc_firedDisposable";
-	};
-
-	class WeaponSlotsInfo: WeaponSlotsInfo {
-		mass = 39.68;
-	};
-};
-
-class sp_l1a1_law66_used: sp_l1a1_law66 {
-	scope = 1;
-	scopeArsenal = 1;
-	baseWeapon = "sp_l1a1_law66_used";
-
-	displayName = "Used Tube";
-	weaponPoolAvailable = 0;
-
-	class WeaponSlotsInfo: WeaponSlotsInfo {
-		mass = 15.4;
-	};
-};
-
-//Uniform Cargo Fixes
-class UniformItem;
-class SP_UniformBase_Item;
-class SP_60PatCombats_DPM_1_Item: SP_UniformBase_Item
-{
-	class ItemInfo: UniformItem
-	{
-		containerClass = "Supply40";
-	};
-};
-class SP_60PatCombatsRolled_DPM_1_Item: SP_UniformBase_Item
-{
-	class ItemInfo: UniformItem
-	{
-		containerClass = "Supply40";
-	};
-};
-class SP_60PatCombatsRolled_Khaki_1_Item: SP_UniformBase_Item
-{
-	class ItemInfo: UniformItem
-	{
-		containerClass = "Supply40";
-	};
-};
-class SP_72Para_DenisonKhaki_1_Item: SP_UniformBase_Item
-{
-	class ItemInfo: UniformItem
-	{
-		containerClass = "Supply40";
-	};
-};
-class SP_72Para_DenisonTrops_1_Item: SP_UniformBase_Item
-{
-	class ItemInfo: UniformItem
-	{
-		containerClass = "Supply40";
-	};
-};
-class SP_60PatCombatsRolled_OD_1_Item: SP_UniformBase_Item
-{
-	class ItemInfo: UniformItem
-	{
-		containerClass = "Supply40";
-	};
-};
-class SP_63PatWindproof_DPM_1_Item: SP_UniformBase_Item
-{
-	class ItemInfo: UniformItem
-	{
-		containerClass = "Supply40";
-	};
-};
-class SP_NBCMk3_HoodUp_Item: SP_UniformBase_Item
-{
-	class ItemInfo: UniformItem
-	{
-		containerClass = "Supply40";
-	};
-};
-class SP_NBCMk3_Item: SP_UniformBase_Item
-{
-	class ItemInfo: UniformItem
-	{
-		containerClass = "Supply40";
-	};
-};
-
-//Vest Fix
-class Vest_Camo_Base;
-class SP_P58_Belt: Vest_Camo_Base {
-	class ItemInfo;
-};
-class SP_P58_FightingOrderNBC: SP_P58_Belt {
-	class ItemInfo: ItemInfo {
-		containerClass = "Supply120";
-	};
 };

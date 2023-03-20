@@ -8,20 +8,20 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Base: B_Soldier_base_F
 	CATEGORY(TWC_Infantry_Regular_Woodland)
 	icon="iconMan";
 	nakedUniform="U_BasicBody";
-	uniformClass="SP_60PatCombats_DPM_1_Item";
+	uniformClass="SP_60Pat_combats_dpm63_jersey_Item";
 	backpack="";
 	linkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_4",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_FightingOrderNBC",
-		"SP_Helmet_MkV_OD_FoliageMid",
+		"sp_webbing_58pattern_fightingorder_alt",
+		"sp_Helmet_Mk5_Cover_Green_Scrim_4",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -80,14 +80,12 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Rifleman: TWC_Infantry_ColdWar_Regul
 	{
 		MAG_7("UK3CB_BAF_762_20Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SP_law66_round",
 		"SmokeShell"
 	};
 	respawnmagazines[]=
 	{
 		MAG_7("UK3CB_BAF_762_20Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SP_law66_round",
 		"SmokeShell"
 	};
 	items[] +=
@@ -121,7 +119,6 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar_
 		MAG_5("UK3CB_BAF_762_20Rnd"),
 		MAG_2("UK3CB_BAF_762_20Rnd_T"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SP_law66_round",
 		"SmokeShell"
 	};
 	respawnmagazines[]=
@@ -129,7 +126,6 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar_
 		MAG_5("UK3CB_BAF_762_20Rnd"),
 		MAG_2("UK3CB_BAF_762_20Rnd_T"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SP_law66_round",
 		"SmokeShell"
 	};
 };
@@ -383,16 +379,16 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Commander: TWC_Infantry_Cold
 	};
 	linkedItems[]=
 	{
-		"SP_Helmet_MkV_ODNet",
-		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_Cover_GreenPainted",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_Helmet_MkV_ODNet",
-		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_Cover_GreenPainted",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -501,16 +497,16 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_
 	};
 	linkedItems[]=
 	{
-		"SP_Helmet_MkV_ODMedicNet",
-		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_OD",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_Helmet_MkV_ODMedicNet",
-		"SP_P58_FightingOrderNBC",
+		"SP_Helmet_MkV_OD",
+		"sp_webbing_58pattern_fightingorder_alt",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -824,7 +820,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_ColdW
 {
 	scope=2;
 	displayName="Helicopter Pilot";
-	uniformClass="SP_60PatCombatsRolled_DPM_1_Item";
+	uniformClass="";
 	TWC_isCommandRole = 1;
 	engineer = 1;
 	class EventHandlers: EventHandlers {
@@ -832,7 +828,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_ColdW
 	};
 	linkedItems[]=
 	{
-		"SP_P58_UrbanPatrolNBC",
+		"sp_webbing_58pattern_beltorder",
 		"CUP_H_BAF_Helmet_Pilot",
 		"ItemCompass",
 		"itemMap",
@@ -840,7 +836,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_ColdW
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_UrbanPatrolNBC",
+		"sp_webbing_58pattern_beltorder",
 		"CUP_H_BAF_Helmet_Pilot",
 		"ItemCompass",
 		"itemMap",
@@ -899,7 +895,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Vehicle_Commander: TWC_Infantry_Cold
 	displayName="Vehicle Commander";
 	linkedItems[]=
 	{
-		"SP_P58_UrbanPatrolNBC",
+		"sp_webbing_58pattern_beltorder",
 		"UK3CB_BAF_H_Beret_PWRR_PRR",
 		"ItemCompass",
 		"itemMap",
@@ -907,7 +903,7 @@ class TWC_Infantry_ColdWar_Regular_Woodland_Vehicle_Commander: TWC_Infantry_Cold
 	};
 	respawnLinkedItems[]=
 	{
-		"SP_P58_UrbanPatrolNBC",
+		"sp_webbing_58pattern_beltorder",
 		"UK3CB_BAF_H_Beret_PWRR_PRR",
 		"ItemCompass",
 		"itemMap",

@@ -1,9 +1,3 @@
-class RPG7_F;
-class SP_law66_round: RPG7_F {
-	scope = 1;
-	allowedSlots[] = {};
-};
-
 class UK3CB_BAF_762_100Rnd;
 class TWC_UK3CB_BAF_762_50Rnd:UK3CB_BAF_762_100Rnd{
 	displayname = "7.62m 50rnd Belt";

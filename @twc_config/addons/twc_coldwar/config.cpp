@@ -11,23 +11,32 @@ class CfgPatches
 			"twc_faction",
 			"twc_ai_skill",
 			"uk3cb_baf_weapons_l1a1",
-			"SP_Equipment",
-			"SP_Facewear",
-			"SP_Headgear",
-			"SP_Uniforms",
-			"SP_Weapons",
-			"SP_Enfield",
-			"SP_Sterling"
+			"sp_backpacks",
+			"sp_effects",
+			"sp_grenades",
+			"sp_hipower",
+			"sp_iws",
+			"sp_launchers",
+			"sp_lmg",
+			"sp_no32",
+			"sp_uniformaccessories",
+			"sp_webbing",
+			"sp_webbing_58pattern",
+			"sp_facewear",
+			"sp_headgear",
+			"sp_uniforms",
+			"sp_weapons",
+			"sp_enfield",
+			"sp_sterling"
 		};
 	};
 };
-
 class EventHandlers;
 
-class CBA_DisposableLaunchers {
-	sp_l1a1_law66_ready[] = {"sp_l1a1_law66","sp_l1a1_law66_used"};
+class CfgWeapons
+{
+	#include "weapons.hpp"
 };
-
 class CfgAmmo
 {
 	#include "ammo.hpp"
@@ -35,10 +44,6 @@ class CfgAmmo
 class CfgMagazines
 {
 	#include "magazines.hpp"
-};
-class CfgWeapons
-{
-	#include "weapons.hpp"
 };
 
 class CfgVehicles
@@ -151,7 +156,7 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"SP_P58_UrbanPatrol",
+			"sp_webbing_58pattern_beltorder",
 			"UK3CB_BAF_H_Beret_RTR_PRR",
 			"ItemCompass",
 			"itemMap",
@@ -159,7 +164,7 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"SP_P58_UrbanPatrol",
+			"sp_webbing_58pattern_beltorder",
 			"UK3CB_BAF_H_Beret_RTR_PRR",
 			"ItemCompass",
 			"itemMap",
