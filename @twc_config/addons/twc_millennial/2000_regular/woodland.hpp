@@ -46,6 +46,14 @@ class TWC_Infantry_2000_Regular_Woodland_Rifleman: TWC_Infantry_Millennial_Base
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		"SmokeShell"
 	};
+	items[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
 };
 class TWC_Infantry_2000_Regular_Woodland_Marksman: TWC_Infantry_2000_Regular_Woodland_Rifleman
 {
@@ -69,14 +77,14 @@ class TWC_Infantry_2000_Regular_Woodland_Marksman: TWC_Infantry_2000_Regular_Woo
 	weapons[] =
 	{
 		"TWC_Weapon_L86A2_SUSAT3D",
-		"twc_law80",
+		"twc_law80_loaded",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L86A2_SUSAT3D",
-		"twc_law80",
+		"twc_law80_loaded",
 		"Throw",
 		"Put"
 	};
@@ -85,7 +93,6 @@ class TWC_Infantry_2000_Regular_Woodland_Marksman: TWC_Infantry_2000_Regular_Woo
 		MAG_4("UK3CB_BAF_556_30Rnd"),
 		MAG_3("UK3CB_BAF_556_30Rnd_T"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"twc_law80_magazine",
 		"twc_law80_magazine_spotting",
 		"SmokeShell"
 	};
@@ -94,7 +101,6 @@ class TWC_Infantry_2000_Regular_Woodland_Marksman: TWC_Infantry_2000_Regular_Woo
 		MAG_4("UK3CB_BAF_556_30Rnd"),
 		MAG_3("UK3CB_BAF_556_30Rnd_T"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"twc_law80_magazine", 
 		"twc_law80_magazine_spotting",
 		"SmokeShell"
 	};
@@ -194,15 +200,21 @@ class TWC_Infantry_2000_Regular_Woodland_Autorifleman: TWC_Infantry_2000_Regular
 	{
 		MAG_2("UK3CB_BAF_556_200Rnd"),
 		"UK3CB_BAF_556_200Rnd_T",
-		"ACE_SpareBarrel_Item",
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
 		MAG_2("UK3CB_BAF_556_200Rnd"),
 		"UK3CB_BAF_556_200Rnd_T",
-		"ACE_SpareBarrel_Item",
 		MAG_2("SmokeShell")
+	};
+	items[] +=
+	{
+		"ACE_SpareBarrel_Item"
+	};
+	respawnItems[] +=
+	{
+		"ACE_SpareBarrel_Item"
 	};
 };
 class TWC_Infantry_2000_Regular_Woodland_SectionCommander: TWC_Infantry_2000_Regular_Woodland_Rifleman

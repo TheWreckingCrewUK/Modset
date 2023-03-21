@@ -1,3 +1,4 @@
+class CUP_sgun_M1014_base;
 class UK3CB_BAF_L85A2_RIS;
 class UK3CB_BAF_L110A2RIS;
 class UK3CB_BAF_L129A1_Grippod;
@@ -15,6 +16,19 @@ class CUP_arifle_HK416_AGL_Black;
 class CUP_arifle_HK417_20;
 class law_starstreak2_lta_olive;
 
+//Pointman Shotgun
+class TWC_L128A1_Eotech: CUP_sgun_M1014_base {
+	scope = 1;
+	displayname = "L128A1 Shotgun";
+	class LinkedItems {
+		class LinkedItemsOptic {
+			slot="CowsSlot";
+			item="UK3CB_BAF_Eotech";
+		};
+	};
+};
+
+//Rifle
 class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 	scope = 1;
 	class LinkedItems {
@@ -41,6 +55,7 @@ class TWC_Weapon_L85A2_RIS_ELCAN3D: UK3CB_BAF_L85A2_RIS {
 	};
 };
 
+//Medic get a susat cause flavor and they don't get a bayonet
 class TWC_Weapon_L85A2_RIS_SUSAT: UK3CB_BAF_L85A2_RIS {
 	scope = 1;
 	class LinkedItems {
@@ -59,13 +74,9 @@ class TWC_Weapon_L85A2_RIS_SUSAT: UK3CB_BAF_L85A2_RIS {
 			item = "UK3CB_underbarrel_acc_grippod";
 			slot = "UnderBarrelSlot";
 		};
-		class LinkedItemsMuzzle
-		{
-			item = "UK3CB_BAF_Bayonet_L3A1";
-			slot = "MuzzleSlot";
-		};
 	};
 };
+//crewman carbine
 class TWC_Weapon_L22A2_SUSAT: UK3CB_BAF_L22A2 {
 	scope = 1;
 	class LinkedItems {
@@ -76,6 +87,7 @@ class TWC_Weapon_L22A2_SUSAT: UK3CB_BAF_L22A2 {
 		};
 	};
 };
+//2020 Rifle
 class TWC_Weapon_L85A3_LDS: UK3CB_BAF_L85A3 {
 	scope = 1;
 	class LinkedItems {
@@ -101,6 +113,7 @@ class TWC_Weapon_L85A3_LDS: UK3CB_BAF_L85A3 {
 		};
 	};
 };
+//AR
 class TWC_Weapon_L110A2_ELCAN3D: UK3CB_BAF_L110A2RIS {
 	scope = 1;
 	class LinkedItems {
@@ -114,6 +127,7 @@ class TWC_Weapon_L110A2_ELCAN3D: UK3CB_BAF_L110A2RIS {
 		};
 	};
 };
+//Marksman Rifle
 class TWC_Weapon_L129A1_Grippod_TA648: UK3CB_BAF_L129A1_Grippod {
 	scope = 1;
 	class LinkedItems {
@@ -131,6 +145,7 @@ class TWC_Weapon_L129A1_Grippod_TA648: UK3CB_BAF_L129A1_Grippod {
 		};
 	};
 };
+//Ugl
 class TWC_Weapon_L85A2_UGL_ELCAN3D: UK3CB_BAF_L85A2_UGL {
 	scope = 1;
 	class LinkedItems {
