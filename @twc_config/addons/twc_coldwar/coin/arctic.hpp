@@ -6,7 +6,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Rifleman: TWC_Infantry_ColdWar_Regular_Ar
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -14,7 +14,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Rifleman: TWC_Infantry_ColdWar_Regular_Ar
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -42,6 +42,14 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Rifleman: TWC_Infantry_ColdWar_Regular_Ar
 		MAG_7("UK3CB_BAF_762_20Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		"SmokeShell"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_Rifleman_SUIT: TWC_Infantry_ColdWar_Regular_Arctic_Rifleman_SUIT
@@ -50,7 +58,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Rifleman_SUIT: TWC_Infantry_ColdWar_Regul
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -58,7 +66,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Rifleman_SUIT: TWC_Infantry_ColdWar_Regul
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -86,6 +94,14 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Rifleman_SUIT: TWC_Infantry_ColdWar_Regul
 		MAG_7("UK3CB_BAF_762_20Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		"SmokeShell"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_SectionCommander: TWC_Infantry_ColdWar_Regular_Arctic_SectionCommander
@@ -95,7 +111,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_SectionCommander: TWC_Infantry_ColdWar_Re
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -103,10 +119,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_SectionCommander: TWC_Infantry_ColdWar_Re
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_2iC: TWC_Infantry_ColdWar_Regular_Arctic_2iC
@@ -116,7 +140,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_2iC: TWC_Infantry_ColdWar_Regular_Arctic_
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -124,10 +148,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_2iC: TWC_Infantry_ColdWar_Regular_Arctic_
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_MG: TWC_Infantry_ColdWar_Regular_Arctic_MG
@@ -136,7 +168,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_MG: TWC_Infantry_ColdWar_Regular_Arctic_M
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -144,7 +176,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_MG: TWC_Infantry_ColdWar_Regular_Arctic_M
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -171,6 +203,14 @@ class TWC_Infantry_ColdWar_COIN_Arctic_MG: TWC_Infantry_ColdWar_Regular_Arctic_M
 		MAG_10("SP_30Rnd_762_L4"),
 		"SmokeShell"
 	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_ASSMG: TWC_Infantry_ColdWar_Regular_Arctic_ASSMG
 {
@@ -179,7 +219,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_ASSMG: TWC_Infantry_ColdWar_Regular_Arcti
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -187,10 +227,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_ASSMG: TWC_Infantry_ColdWar_Regular_Arcti
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 
@@ -202,7 +250,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Platoon_Commander: TWC_Infantry_ColdWar_R
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -210,10 +258,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Platoon_Commander: TWC_Infantry_ColdWar_R
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_Platoon_Sergeant: TWC_Infantry_ColdWar_Regular_Arctic_Platoon_Sergeant
@@ -223,7 +279,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Platoon_Sergeant: TWC_Infantry_ColdWar_Re
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -231,10 +287,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Platoon_Sergeant: TWC_Infantry_ColdWar_Re
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_Platoon_Medic: TWC_Infantry_ColdWar_Regular_Arctic_Platoon_Medic
@@ -244,7 +308,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Platoon_Medic: TWC_Infantry_ColdWar_Regul
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -252,10 +316,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Platoon_Medic: TWC_Infantry_ColdWar_Regul
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_CSM: TWC_Infantry_ColdWar_Regular_Arctic_CSM
@@ -265,7 +337,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_CSM: TWC_Infantry_ColdWar_Regular_Arctic_
 	linkedItems[] =
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -273,10 +345,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_CSM: TWC_Infantry_ColdWar_Regular_Arctic_
 	respawnLinkedItems[] =
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 
@@ -288,7 +368,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Company_Commander: TWC_Infantry_ColdWar_R
 	linkedItems[] =
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -296,10 +376,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Company_Commander: TWC_Infantry_ColdWar_R
 	respawnLinkedItems[] =
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_Company_2iC: TWC_Infantry_ColdWar_Regular_Arctic_Company_2iC
@@ -309,7 +397,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Company_2iC: TWC_Infantry_ColdWar_Regular
 	linkedItems[] =
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -317,10 +405,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Company_2iC: TWC_Infantry_ColdWar_Regular
 	respawnLinkedItems[] =
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_Company_Sergeant: TWC_Infantry_ColdWar_Regular_Arctic_Company_Sergeant
@@ -330,7 +426,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Company_Sergeant: TWC_Infantry_ColdWar_Re
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -338,10 +434,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Company_Sergeant: TWC_Infantry_ColdWar_Re
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 
@@ -353,7 +457,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Sniper: TWC_Infantry_ColdWar_Regular_Arct
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -361,10 +465,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Sniper: TWC_Infantry_ColdWar_Regular_Arct
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_Spotter: TWC_Infantry_ColdWar_Regular_Arctic_Spotter
@@ -373,7 +485,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Spotter: TWC_Infantry_ColdWar_Regular_Arc
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -381,10 +493,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Spotter: TWC_Infantry_ColdWar_Regular_Arc
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 
@@ -395,7 +515,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Artillery_Commander: TWC_Infantry_ColdWar
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -403,10 +523,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Artillery_Commander: TWC_Infantry_ColdWar
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_Artillery_Crew: TWC_Infantry_ColdWar_Regular_Arctic_Artillery_Crew
@@ -415,7 +543,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Artillery_Crew: TWC_Infantry_ColdWar_Regu
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -423,10 +551,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_Artillery_Crew: TWC_Infantry_ColdWar_Regu
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Arctic_FO: TWC_Infantry_ColdWar_Regular_Arctic_FO
@@ -435,7 +571,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_FO: TWC_Infantry_ColdWar_Regular_Arctic_F
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -443,10 +579,18 @@ class TWC_Infantry_ColdWar_COIN_Arctic_FO: TWC_Infantry_ColdWar_Regular_Arctic_F
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
 
@@ -457,7 +601,7 @@ class TWC_Infantry_ColdWar_COIN_Arctic_FAC: TWC_Infantry_ColdWar_Regular_Arctic_
 	linkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -465,9 +609,17 @@ class TWC_Infantry_ColdWar_COIN_Arctic_FAC: TWC_Infantry_ColdWar_Regular_Arctic_
 	respawnLinkedItems[]=
 	{
 		"SP_P58_FightingOrderNBC",
-		"UK3CB_BAF_H_Beret_WG",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_WG"
 	};
 };
