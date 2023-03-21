@@ -36,6 +36,18 @@ class TWC_Infantry_2020_Regular_Woodland_Rifleman: TWC_Infantry_2020_Base
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};
+	items[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	nightItems[] +=
+	{
+		"UK3CB_BAF_Kite"
+	};
 };
 class TWC_Infantry_2020_Regular_Woodland_Grenadier: TWC_Infantry_2020_Regular_Woodland_Rifleman
 {
@@ -100,10 +112,8 @@ class TWC_Infantry_2020_Regular_Woodland_Grenadier: TWC_Infantry_2020_Regular_Wo
 		MAG_2("SmokeShell")
 	};
 	
-	nightItems[] = {
-		MAG_3("UGL_FlareWhite_F"),
-		MAG_2("Chemlight_green"),
-		"ACE_Flashlight_MX991"
+	nightItems[] += {
+		MAG_3("UGL_FlareWhite_F")
 	};
 };
 class TWC_Infantry_2020_Regular_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_Rifleman
@@ -140,14 +150,12 @@ class TWC_Infantry_2020_Regular_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_
 		"Throw",
 		"Put"
 	};
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
 		"ACE_SpareBarrel_Item"
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		"ACE_SpareBarrel_Item"
 	};
 	magazines[] =
@@ -203,20 +211,11 @@ class TWC_Infantry_2020_Regular_Woodland_Marksman: TWC_Infantry_2020_Regular_Woo
 		"Throw",
 		"Put"
 	};
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		"ACE_SpareBarrel_Item"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		"ACE_SpareBarrel_Item"
-	};
 	magazines[] =
 	{
 		MAG_5("UK3CB_BAF_762_L42A1_20Rnd"),
 		MAG_2("UK3CB_BAF_762_L42A1_20Rnd_T"),
+		"UK3CB_BAF_762_100Rnd",
 		MAG_2("UK3CB_BAF_9_17Rnd"),
 		MAG_2("SmokeShell")
 	};
@@ -224,13 +223,12 @@ class TWC_Infantry_2020_Regular_Woodland_Marksman: TWC_Infantry_2020_Regular_Woo
 	{
 		MAG_5("UK3CB_BAF_762_L42A1_20Rnd"),
 		MAG_2("UK3CB_BAF_762_L42A1_20Rnd_T"),
+		"UK3CB_BAF_762_100Rnd",
 		MAG_2("UK3CB_BAF_9_17Rnd"),
 		MAG_2("SmokeShell")
 	};
 	
-	nightItems[] = {
-		MAG_2("Chemlight_green"),
-		"ACE_Flashlight_MX991",
+	nightItems[] += {
 		"UK3CB_BAF_MaxiKite"
 	};
 };
@@ -300,11 +298,8 @@ class TWC_Infantry_2020_Regular_Woodland_SectionCommander: TWC_Infantry_2020_Reg
 		MAG_2("SmokeShell")
 	};
 	
-	nightItems[] = {
-		MAG_2("ACE_HandFlare_White"),
-		MAG_2("Chemlight_green"),
-		"B_IR_Grenade",
-		"ACE_Flashlight_MX991"
+	nightItems[] += {
+		"B_IR_Grenade"
 	};
 };
 class TWC_Infantry_2020_Regular_Woodland_2iC: TWC_Infantry_2020_Regular_Woodland_Rifleman
@@ -347,14 +342,12 @@ class TWC_Infantry_2020_Regular_Woodland_2iC: TWC_Infantry_2020_Regular_Woodland
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
 		"ACE_EntrenchingTool"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
 		"ACE_EntrenchingTool"
 	};
@@ -564,6 +557,14 @@ class TWC_Infantry_2020_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_2020_Reg
 		"itemMap",
 		"ItemWatch"
 	};
+	Items[] +=
+	{
+		MAG_2("ACE_CableTie")
+	};
+	respawnItems[] +=
+	{
+		MAG_2("ACE_CableTie")
+	};	
 };
 class TWC_Infantry_2020_Regular_Woodland_Platoon_Medic: TWC_Infantry_2020_Regular_Woodland_Rifleman
 {
@@ -680,10 +681,8 @@ class TWC_Infantry_2020_Regular_Woodland_Platoon_Mortar: TWC_Infantry_2020_Regul
 		MAG_7("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
 		MAG_2("SmokeShell")
 	};
-	nightItems[] = {
-		MAG_2("Chemlight_green"),
-		MAG_4("UK3CB_BAF_1Rnd_60mm_Mo_Flare_White"),
-		"ACE_Flashlight_MX991"
+	nightItems[] += {
+		MAG_4("UK3CB_BAF_1Rnd_60mm_Mo_Flare_White")
 	};
 };
 class TWC_Infantry_2020_Regular_Woodland_CSM: TWC_Infantry_2020_Regular_Woodland_Platoon_Sergeant

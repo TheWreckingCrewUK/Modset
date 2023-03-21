@@ -30,6 +30,14 @@ class TWC_Infantry_Modern_Regular_Woodland_Rifleman: TWC_Infantry_Modern_Base
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		MAG_2("SmokeShell")
 	};
+	items[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
@@ -70,7 +78,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regula
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_10("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
-		MAG_4("1Rnd_Smoke_Grenade_shell"),
+		MAG_3("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
 		MAG_2("1Rnd_SmokeBlue_Grenade_shell"),
@@ -81,7 +89,7 @@ class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regula
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_10("UK3CB_BAF_1Rnd_HE_Grenade_Shell"),
-		MAG_4("1Rnd_Smoke_Grenade_shell"),
+		MAG_3("1Rnd_Smoke_Grenade_shell"),
 		MAG_2("1Rnd_SmokeGreen_Grenade_shell"),
 		MAG_2("1Rnd_SmokeRed_Grenade_shell"),
 		MAG_2("1Rnd_SmokeBlue_Grenade_shell"),
@@ -89,10 +97,8 @@ class TWC_Infantry_Modern_Regular_Woodland_Grenadier: TWC_Infantry_Modern_Regula
 		MAG_2("SmokeShell")
 	};
 	
-	nightItems[] = {
-		MAG_3("UGL_FlareWhite_F"),
-		MAG_2("Chemlight_green"),
-		"ACE_Flashlight_MX991"
+	nightItems[] += {
+		MAG_3("UGL_FlareWhite_F")
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Regular_Woodland_Rifleman
@@ -114,14 +120,12 @@ class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Reg
 		"itemMap",
 		"ItemWatch"
 	};
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
 		"ACE_SpareBarrel_Item"
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
@@ -150,6 +154,10 @@ class TWC_Infantry_Modern_Regular_Woodland_Autorifleman: TWC_Infantry_Modern_Reg
 		"UK3CB_BAF_556_200Rnd_T",
 		MAG_2("SmokeShell")
 	};
+	nightItems[] +=
+	{
+		"UK3CB_BAF_Kite"
+	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_MG: TWC_Infantry_Modern_Regular_Woodland_Rifleman
 {
@@ -170,14 +178,12 @@ class TWC_Infantry_Modern_Regular_Woodland_MG: TWC_Infantry_Modern_Regular_Woodl
 		"itemMap",
 		"ItemWatch"
 	};
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
 		"ACE_SpareBarrel_Item"
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		"ACE_SpareBarrel_Item"
 	};
 	weapons[] =
@@ -244,27 +250,17 @@ class TWC_Infantry_Modern_Regular_Woodland_Marksman: TWC_Infantry_Modern_Regular
 	{
 		MAG_5("UK3CB_BAF_762_L42A1_20Rnd"),
 		MAG_2("UK3CB_BAF_762_L42A1_20Rnd_T"),
+		"UK3CB_BAF_762_100Rnd",
 		MAG_2("SmokeShell")
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("UK3CB_BAF_762_L42A1_20Rnd"),
 		MAG_2("UK3CB_BAF_762_L42A1_20Rnd_T"),
+		"UK3CB_BAF_762_100Rnd",
 		MAG_2("SmokeShell")
 	};
-	Items[] =
-	{
-		MEDICAL_LOADOUT,
-		"ACE_SpareBarrel_Item"
-	};
-	respawnItems[] =
-	{
-		MEDICAL_LOADOUT,
-		"ACE_SpareBarrel_Item"
-	};
-	nightItems[] = {
-		MAG_2("Chemlight_green"),
-		"ACE_Flashlight_MX991",
+	nightItems[] += {
 		"UK3CB_BAF_MaxiKite"
 	};
 };
@@ -330,11 +326,8 @@ class TWC_Infantry_Modern_Regular_Woodland_SectionCommander: TWC_Infantry_Modern
 		MAG_2("SmokeShell")
 	};
 	
-	nightItems[] = {
-		MAG_2("ACE_HandFlare_White"),
-		MAG_2("Chemlight_green"),
-		"B_IR_Grenade",
-		"ACE_Flashlight_MX991"
+	nightItems[] += {
+		"B_IR_Grenade"
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_2iC: TWC_Infantry_Modern_Regular_Woodland_Rifleman
@@ -373,14 +366,12 @@ class TWC_Infantry_Modern_Regular_Woodland_2iC: TWC_Infantry_Modern_Regular_Wood
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
 		"ACE_EntrenchingTool"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
 		"ACE_MapTools",
 		"ACE_EntrenchingTool"
 	};
@@ -532,10 +523,8 @@ class TWC_Infantry_Modern_Regular_Woodland_Platoon_Mortar: TWC_Infantry_Modern_R
 		MAG_7("UK3CB_BAF_1Rnd_60mm_Mo_Shells"),
 		MAG_2("SmokeShell")
 	};
-	nightItems[] = {
-		MAG_2("Chemlight_green"),
-		MAG_4("UK3CB_BAF_1Rnd_60mm_Mo_Flare_White"),
-		"ACE_Flashlight_Maglite_ML300L"
+	nightItems[] += {
+		MAG_4("UK3CB_BAF_1Rnd_60mm_Mo_Flare_White")
 	};
 };
 class TWC_Infantry_Modern_Regular_Woodland_CSM: TWC_Infantry_Modern_Regular_Woodland_Platoon_Sergeant
@@ -849,10 +838,7 @@ class TWC_Infantry_Modern_Regular_Woodland_FAC: TWC_Infantry_Modern_Regular_Wood
 		"Laserbatteries"
 	};
 	
-	nightItems[] = {
-		MAG_2("ACE_HandFlare_White"),
-		MAG_2("Chemlight_green"),
-		"ACE_Flashlight_Maglite_ML300L",
+	nightItems[] += {
 		"B_IR_Grenade"
 	};
 };
