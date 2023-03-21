@@ -26,6 +26,7 @@ class TWC_AmmoBox_1990_Section_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,4);
 	};
 	
 	class TransportMagazines {
@@ -64,6 +65,7 @@ class TWC_AmmoBox_1990_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,4);
 	};
 	
 	class TransportMagazines {
@@ -105,6 +107,7 @@ class TWC_AmmoBox_2000_Section_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,4);
 	};
 	
 	class TransportMagazines {
@@ -157,6 +160,7 @@ class TWC_AmmoBox_2000_Mechanised_Section_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,4);
 	};
 	
 	class TransportMagazines {
@@ -206,6 +210,7 @@ class TWC_AmmoBox_Millennial_Sniper_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 2);
 		ADD_ITEM(ACE_epinephrine, 2);
 		ADD_ITEM(ACE_tourniquet, 2);
+		ADD_ITEM(ACE_splint,2);
 	};
 	
 	class TransportMagazines {

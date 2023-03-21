@@ -36,8 +36,6 @@ class TWC_AmmoBox_Other_Medical_Portable: TWC_AmmoBox_Medical {
 		ADD_ITEM(ACE_salineIV, 8);
 		ADD_ITEM(ACE_tourniquet, 4);
 		ADD_ITEM(ACE_bodyBag, 6);
-		
-		ADD_ITEM(ACE_personalAidKit, 1);
 	};
 };
 

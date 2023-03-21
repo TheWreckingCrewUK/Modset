@@ -21,6 +21,7 @@ class TWC_AmmoBox_ColdWar_Section_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,4);
 	};
 	
 	class TransportMagazines {
@@ -65,14 +66,15 @@ class TWC_AmmoBox_ColdWar_Section_Portable_COIN: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 12);
 		ADD_ITEM(ACE_epinephrine, 12);
 		ADD_ITEM(ACE_tourniquet, 6);
+		ADD_ITEM(ACE_splint,8);
 	};
 	
 	class TransportMagazines {
 		ADD_MAGA(SP_30Rnd_9x19_L2A3_Sterling, 6);
 
 		// L1A1 SLR
-		ADD_MAGA(UK3CB_BAF_762_20Rnd, 14);
-		ADD_MAGA(UK3CB_BAF_762_20Rnd_T, 6);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd, 18);
+		ADD_MAGA(UK3CB_BAF_762_20Rnd_T, 8);
 
 		// L4 Bren
 		ADD_MAGA(SP_30Rnd_762_L4, 10);
@@ -105,6 +107,7 @@ class TWC_AmmoBox_ColdWar_Sniper_Portable: TWC_AmmoBox_Portable {
 		ADD_ITEM(ACE_morphine, 2);
 		ADD_ITEM(ACE_epinephrine, 2);
 		ADD_ITEM(ACE_tourniquet, 2);
+		ADD_ITEM(ACE_splint,2);
 	};
 	
 	class TransportMagazines {

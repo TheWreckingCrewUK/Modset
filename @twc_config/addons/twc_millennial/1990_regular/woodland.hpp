@@ -28,6 +28,14 @@ class TWC_Infantry_1990_Regular_Woodland_Rifleman: TWC_Infantry_Millennial_Base
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		"SmokeShell"
 	};
+	items[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
 };
 class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
@@ -35,14 +43,14 @@ class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_
 	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
-		"twc_law80",
+		"twc_law80_loaded",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
-		"twc_law80",
+		"twc_law80_loaded",
 		"Throw",
 		"Put"
 	};
@@ -50,7 +58,6 @@ class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"twc_law80_magazine",
 		"twc_law80_magazine_spotting",
 		"SmokeShell"
 	};
@@ -58,9 +65,16 @@ class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"twc_law80_magazine",
 		"twc_law80_magazine_spotting",
 		"SmokeShell"
+	};
+	items[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] +=
+	{
+		"ACE_EntrenchingTool"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Gunner: TWC_Infantry_1990_Regular_Woodland_Rifleman
@@ -89,6 +103,14 @@ class TWC_Infantry_1990_Regular_Woodland_Gunner: TWC_Infantry_1990_Regular_Woodl
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_5("UK3CB_BAF_556_30Rnd_T"),
 		"SmokeShell"
+	};
+	items[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] +=
+	{
+		"ACE_EntrenchingTool"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_SectionCommander: TWC_Infantry_1990_Regular_Woodland_Rifleman
@@ -147,6 +169,14 @@ class TWC_Infantry_1990_Regular_Woodland_2iC: TWC_Infantry_1990_Regular_Woodland
 {
 	displayName = "2iC";
 	backpack = "TWC_Backpack_1990_Regular_Woodland_2iC";
+	items[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
 };
 
 //Platoon Command

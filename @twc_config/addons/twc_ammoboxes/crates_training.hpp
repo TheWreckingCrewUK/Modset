@@ -23,6 +23,7 @@ class TWC_AmmoBox_Training_Medical_Base: TWC_AmmoBox_Base {
 		ADD_ITEM(ACE_salineIV_500, 50);
 		ADD_ITEM(ACE_salineIV_250, 25);
 		ADD_ITEM(ACE_tourniquet, 50);
+		ADD_ITEM(ACE_splint,25);
 		ADD_ITEM(ACE_bodyBag, 50);
 		
 		ADD_ITEM(ACE_personalAidKit, 25);
