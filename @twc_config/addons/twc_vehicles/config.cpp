@@ -255,7 +255,4 @@ class CfgVehicles {
 	#include "coldwar\coldwar.hpp"
 	#include "millennial\millennial.hpp"
 	#include "modern\modern.hpp"
-	
-	// delete this in a few months once we've gone through submitted ops
-	#include "oldVehicles.hpp"
 };

@@ -11,7 +11,7 @@ if (isDedicated || !hasInterface) exitWith {};
 		if (player != _unit) exitWith {}; // ignore
 
 		// [name _unit, _isCommand, _roleDesc, _deathText, _time, _deathScreenData, (getPos _unit)]
-		_deathData = [_unit, _killer, _instigator, _reason] call TWC_Deathscreen_fnc_getDeathData;
+		_deathData = [_unit, _killer, _instigator, _causeOfDeath] call TWC_Deathscreen_fnc_getDeathData;
 		_deathScreenData = (_deathData select 5);
 		_duration = ((_deathScreenData select 2) - (_deathScreenData select 1));
 		

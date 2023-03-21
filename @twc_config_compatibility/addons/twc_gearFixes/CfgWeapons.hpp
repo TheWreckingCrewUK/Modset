@@ -48,7 +48,6 @@ class SP_smg_sterling: SMG_02_base_F {
 	};
 };
 
-
 class RifleCore;
 class Rifle: RifleCore {};
 
