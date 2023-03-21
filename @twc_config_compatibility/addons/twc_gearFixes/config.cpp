@@ -22,7 +22,8 @@ class CfgPatches {
 			"CUP_Weapons_WeaponsCore",
 			"CUP_Weapons_Ammunition",
 			"CUP_Weapons_Sounds",
-			"CUP_Weapons_VehicleWeapons"
+			"CUP_Weapons_VehicleWeapons",
+			"cwr3_vehicle_fv101_uk"
 		};
 
 		author[]={};
@@ -33,7 +34,7 @@ class CfgPatches {
 	};
 };
 
-#include "qol.hpp"
+//#include "qol.hpp"
 #include "CfgAmmo.hpp"
 
 class Mode_SemiAuto;
@@ -47,12 +48,12 @@ class CfgVehicles {
 	#include "LandVehicles.hpp"
 	#include "Helicopters.hpp"
 	
-	#include "acre_apcs.hpp"
+	/* #include "acre_apcs.hpp"
 	#include "acre_boats.hpp"
 	#include "acre_cars.hpp"
 	#include "acre_helicopters.hpp"
 	#include "acre_planes.hpp"
-	#include "acre_tanks.hpp"
+	#include "acre_tanks.hpp" */
 	
 	class CUP_B_USArmy_Soldier_01;
 	class CUP_CRYE_MCAM_RUS_Full: CUP_B_USArmy_Soldier_01 {

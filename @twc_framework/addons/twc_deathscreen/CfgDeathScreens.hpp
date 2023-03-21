@@ -1,12 +1,12 @@
 class CfgDeathScreens {
-	class bleed_out {
+	class Bleedout {
 		text = "bled out";
 		sound = "twc_bleed_out";
 		fadeBegins = 30; // when's the music start to fade? (duration = out - begins).
 		fadeOut = 61;
 	};
 	
-	class cardiac_arrest {
+	class Timeout {
 		text = "suffered a cardiac arrest";
 		sound = "twc_cardiac_arrest";
 		fadeBegins = 30;
@@ -18,6 +18,10 @@ class CfgDeathScreens {
 		sound = "twc_clinical_death";
 		fadeBegins = 30;
 		fadeOut = 88;
+	};
+	
+	class Death: clinical_death {
+		text = "was put out their misery";
 	};
 	
 	class drowned {
@@ -32,18 +36,6 @@ class CfgDeathScreens {
 		sound = "twc_instant_death";
 		fadeBegins = 30;
 		fadeOut = 57;
-	};
-	
-	class head_shot: instant_death {
-		text = "had their head blown off";
-	};
-	
-	class shot_through_the_heart: instant_death {
-		text = "was shot through the heart";
-	};
-	
-	class shot_to_pieces: instant_death {
-		text = "was turned into a colander";
 	};
 	
 	class broadcast_mode: instant_death {

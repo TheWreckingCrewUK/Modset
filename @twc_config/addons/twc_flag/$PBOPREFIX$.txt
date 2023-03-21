@@ -1,7 +1,0 @@
-///<'twc_flag.pbo' properties via Mikero's dos tools, dll version 6.44>///
-prefix=twc_flag
-Mikero=DePbo.dll.6.44
-version=17090722
-//Pbo Type is: Arma Addon
-//Sha: 'A41E8DD290CF0BBBD353D3DD030792157F4A36BE'
-//////</properties>//////

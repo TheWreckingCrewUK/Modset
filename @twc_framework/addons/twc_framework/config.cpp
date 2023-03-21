@@ -3,8 +3,6 @@ class CfgPatches {
 		units[] = {
 			"twc_ModuleMission",
 			"twc_moduelCache",
-			"twc_modulegunwalkzeus",
-			"twc_modulemortarwalkzeus",
 			"TWC_Module_Ambient_AttackPlane_Gun",
 			"TWC_Module_Ambient_AttackPlane_Missile",
 			"TWC_Module_Ambient_AttackPlane_GunMissile",
@@ -67,26 +65,22 @@ class CfgFactionClasses {
 		displayName = "TWC - Cache Modules";
 	};
 };
-class CfgEditorCategories
-{
-	class TWC_Prep
-	{
+
+class CfgEditorCategories {
+	class TWC_Prep {
 		displayName = "TWC Operations Mission Prep";
 	};
 };
-class CfgEditorSubcategories
-{
-	class twc_subPrep
-	{
+
+class CfgEditorSubcategories {
+	class twc_subPrep {
 		displayName = "Compositions";
 	};
 };
-class Cfg3DEN
-{
-	class Compositions
-	{
-		class TWC_MissionPREP
-		{
+
+class Cfg3DEN {
+	class Compositions {
+		class TWC_MissionPREP {
 			path="twc_framework\compositions\missionprep";
 			side = 1;
 			displayName = "TWC Mission Prep Comp";

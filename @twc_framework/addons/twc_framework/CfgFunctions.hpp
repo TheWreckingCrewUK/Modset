@@ -44,13 +44,7 @@ class CfgFunctions {
 			class confiscateBadItems {};
 			class silentSafety {};
 			class checkvehicleID {};
-			class gunwalk {};
-			class mortarwalk {};
 			class addACEInteraction {};
-			class aiscramblenew {};
-			class aiscramble {};
-			class aisuppresscqb {};
-			class aisuppress {};
 			class doStop{};
 			
 			/** Player Messaging **/
@@ -86,7 +80,6 @@ class CfgFunctions {
 			class deadBodies{};
 			class missionModuleInit{};
 			class moduleDebug{};
-			class run{};
 			class safeZone{};
 			class zeus{};
 			class moduleAmbientCiv {};
@@ -139,12 +132,6 @@ class CfgFunctions {
 			class forceUncache{};
 			class fixNaked {};
 			// medical moved to twc_medical
-		};
-
-		class artillery {
-			file = "twc_framework\artillery";
-			class moduleArtillerySpotter {};
-			class moduleArtilleryPieces {};
 		};
 	};
 };
