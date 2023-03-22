@@ -10,10 +10,11 @@ if !(hasInterface) exitWith {};
 		};
 
 		twc_map_lookingAt = 0; // assert reset
+		call twc_map_fnc_removeTempMarkers;
 	};
 }] call CBA_fnc_addPlayerEventHandler;
 
-["twc_map_closed", {
+["twc_map_close", {
 	params ["_mapID"];
 
 	if (!visibleMap) exitWith {};
@@ -37,12 +38,6 @@ if !(hasInterface) exitWith {};
 
 	openMap true;
 	ctrlSetFocus ((findDisplay 12) displayCtrl 51);
-	
-	//moved here with an ugly sleep
-	[]spawn{
-		waitUntil {sleep 0.5; !visibleMap};
-		[] call twc_map_fnc_removeTempMarkers;
-	};
 }] call CBA_fnc_addEventHandler;
 
 

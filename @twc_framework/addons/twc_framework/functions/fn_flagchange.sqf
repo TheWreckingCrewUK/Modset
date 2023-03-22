@@ -17,4 +17,9 @@ params["_object"];
 
 if (!isServer) exitWith {};
 
-_object addAction ["Raise British Flag", {(_this select 0) setFlagTexture "\A3\Data_F\Flags\Flag_uk_CO.paa"; (_this select 1) playAction "TakeFlag";}];
+_object addAction ["Raise British Flag", {
+	params ["_target", "_caller", "_actionId", "_arguments"];
+	_target setFlagTexture "\A3\Data_F\Flags\Flag_uk_CO.paa";
+	_caller playAction "TakeFlag";
+	["twc_framework_britishFlagRaised", [_target, _caller]] call CBA_fnc_globalEvent;
+}];

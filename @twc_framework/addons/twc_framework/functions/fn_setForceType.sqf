@@ -4,3 +4,11 @@
  */
 params ["_forceType"];
 
+/**
+ - Airborne
+ - Air Assault
+ - Amphibious
+ - Mechanised
+ - Motorised
+ - Dismounted
+**/

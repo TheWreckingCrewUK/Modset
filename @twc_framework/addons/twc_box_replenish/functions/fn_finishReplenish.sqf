@@ -22,3 +22,5 @@ _newBox setDir _previousDir;
 // inform the user of the outcome
 _targetDisplayName = getText (configFile >> "CfgVehicles" >> typeOf _box >> "displayName");
 [parsetext (("<t align='center'><t size='1.5'><t color='#ffbf00'>Replenish Complete</t></t></t><br/>Replenished ") + _targetDisplayName), false, 2.5] call ace_common_fnc_displayText;
+
+["twc_box_replenish_finished", [_sourceBox, _newBox]] call CBA_fnc_globalEvent;

@@ -21,7 +21,7 @@ DEPRECATED_ALT("twc_fnc_rollShirt", "twc_framework_fnc_toggleRollShirt")
 
 [_range, _marker] call twc_framework_fnc_toggleRollShirt;
 
-if(!hasInterface)exitWith{};
+/* if(!hasInterface)exitWith{};
 
 if !(_enabled) exitWith {};
 
@@ -64,4 +64,4 @@ twc_fnc_rollSleeves = {
 	{
 		player addMagazine [(_x select 0),(_x select 1)];
 	}forEach _magazines;
-};
+}; */

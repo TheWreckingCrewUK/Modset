@@ -59,5 +59,6 @@ _callerMarkers = [];
 		_mapObject setVariable ["twc_map_tempMarkers", _callerMarkers, true];
 		
 		_caller unlinkItem "ItemMap";
+		["twc_map_placed", [_caller]] call CBA_fnc_globalEvent;
 	}, _args] call CBA_fnc_waitUntilAndExecute;
 }, 0, [_caller, _target, _pos, _memPoint, _vector, _callerMarkers]] call CBA_fnc_addPerFramehandler;

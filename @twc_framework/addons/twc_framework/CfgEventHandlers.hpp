@@ -1,13 +1,14 @@
 class Extended_InitPost_EventHandlers {
 	class CAManBase {
-		
 		class twc_AIItemCheckInit {
 			init = "_this call twc_fnc_confiscateBadItems";
 		};
+		
 		class twc_stationaryInit {
 			init = "_this call twc_fnc_stationaryinit";
 		};
-	};	
+	};
+	
 	class TWC_Module_WaveSpawn {
 		class TWC_ModuleWaveSpawnInit {
 			init = "_this call TWC_fnc_moduleWaveSpawnInit;";

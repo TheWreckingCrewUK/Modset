@@ -1,7 +1,42 @@
 class CfgFunctions {
-	class TWC {
+	class twc_framework {
+		tag = "twc_framework";
+		
 		class functions {
 			file = "twc_framework\functions";
+			
+			/** Only on Initalization **/
+			class enableZeusObjects {};
+			class setEra {};
+			class setForceType {};
+			
+			/** Realtime Togglebles **/
+			class toggleBoatSafety {};
+			class toggleRollShirt {};
+			class toggleSafeZone {};
+			
+			/** Cleaning functionality **/
+			class cleanCivilianEquipment {};
+			class cleanBaseBodies {};
+		};
+	};
+	
+	class twc_framework_module {
+		tag = "twc_framework_module";
+		
+		class functions {
+			file = "twc_framework\modules";
+			
+			class missionConfiguration {};
+		};
+	};
+	
+	class TWC {
+		tag = "twc";
+		
+		class functions {
+			file = "twc_framework\functions";
+			
 			class AirAssault {};
 			class Airborne {};
 			class AmbientAA {};
@@ -73,15 +108,8 @@ class CfgFunctions {
 		
 		class modules {
 			file = "twc_framework\modules";
-			class era{};
-			class rollShirt{};
-			class boatSafety{};
-			class civilianEquipment{};
-			class deadBodies{};
-			class missionModuleInit{};
-			class moduleDebug{};
-			class safeZone{};
-			class zeus{};
+			
+			class missionConfiguration {};
 			class moduleAmbientCiv {};
 			class moduleCreateTask;
 			class moduleCrateParadrop {};
@@ -116,11 +144,12 @@ class CfgFunctions {
 			class moduleAmbientSound {};
 			class moduleAmbientSoundSimp {};
 			class moduleSpeak {};
-			class moduledostop {};
+			class moduleDoStop {};
 		};
 		
 		class cache {
 			file = "twc_framework\cache";
+			
 			class cacheModuleInit {};
 			class initAICache {};
 			class initVehicleCache {};
@@ -128,10 +157,22 @@ class CfgFunctions {
 		
 		class curator {
 			file = "twc_framework\curator";
-			class setSpectator {};
+			
 			class forceUncache{};
 			class fixNaked {};
-			// medical moved to twc_medical
+		};
+		
+		class deprecated {
+			file = "twc_framework\deprecated";
+			
+			class boatSafety {};
+			class civilianEquipment {};
+			class deadBodies {};
+			class era {};
+			class rollShirt {};
+			class run {};
+			class safeZone {};
+			class zeus {};
 		};
 	};
 };
