@@ -157,11 +157,6 @@ class twc_AlicePack_green: CUP_B_AlicePack_Khaki
 		scope = 1;
 		class TransportMagazines
 		{
-			class _xx_mag
-			{
-				magazine = "ukcw_l42_10rnd_mag";
-				count = 17;
-			};
 		};
 	};
 

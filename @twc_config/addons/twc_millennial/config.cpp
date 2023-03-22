@@ -8,7 +8,7 @@ class CfgPatches
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"twc_faction",
-			"twc_ai"
+			"twc_ai_skill"
 		};
 	};
 };
@@ -110,7 +110,7 @@ class CfgVehicles
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 
-	#define MEDICAL_LOADOUT "ACRE_PRC343","ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
+	#define MEDICAL_LOADOUT "ACRE_PRC343","ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_splint","ACE_splint","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
 	#define MAG_2(a) a, a
 	#define MAG_3(a) a, a, a
 	#define MAG_4(a) a, a, a, a
@@ -159,11 +159,13 @@ class CfgVehicles
 		};
 		Items[] =
 		{
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
 		};
 		respawnItems[] =
 		{
-			MEDICAL_LOADOUT
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
 		};
 		weapons[] =
 		{
@@ -180,7 +182,9 @@ class CfgVehicles
 		
 		nightItems[] = {
 			MAG_2("Chemlight_green"),
-			"ACE_Flashlight_MX991",
+			MAG_2("ACE_HandFlare_White"),
+		};
+		nightWeapons[] = {
 			"ACE_Flashlight_Maglite_ML300L"
 		};
 
@@ -256,7 +260,7 @@ class CfgVehicles
 		linkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -264,7 +268,7 @@ class CfgVehicles
 		respawnLinkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -281,14 +285,14 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"TWC_Weapon_L22A1_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"TWC_Weapon_L22A1_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
@@ -310,13 +314,13 @@ class CfgVehicles
 		TWC_isCommandRole = 0;
 		weapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"TWC_Weapon_L22A1_SUSAT",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"TWC_Weapon_L85A1",
+			"TWC_Weapon_L22A1_SUSAT",
 			"Throw",
 			"Put"
 		};
@@ -333,7 +337,7 @@ class CfgVehicles
 		linkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -341,7 +345,7 @@ class CfgVehicles
 		respawnLinkedItems[] =
 		{
 			"SP_P58_UrbanPatrol",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -358,14 +362,14 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"UK3CB_BAF_L22",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"UK3CB_BAF_L22",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
@@ -387,13 +391,13 @@ class CfgVehicles
 		TWC_isCommandRole = 0;
 		weapons[] =
 		{
-			"UK3CB_BAF_L22",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"UK3CB_BAF_L22",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};

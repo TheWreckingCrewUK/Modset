@@ -8,7 +8,7 @@ class CfgPatches
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"twc_faction",
-			"twc_ai",
+			"twc_ai_skill",
 			"WW2_Assets_c_Weapons_InfantryWeapons_c",
 			"WW2_Assets_c_Weapons_Sounds_c"
 		};
@@ -108,14 +108,6 @@ class CfgEditorSubcategories {
 	class TWC_Infantry_SAfrica_Dismounted_Desert {
 		displayName = "Infantry (South Africa, Dismounted, Desert)";
 	};
-	//Malay Conflict
-	class TWC_Infantry_Malay {
-		displayName = "Infantry (Malay Conflict, Tropic)";
-	};
-	
-	class TWC_Infantry_Malay_Dismounted {
-		displayName = "Infantry (Malay Conflict, Dismounted, Tropic)";
-	};
 };
 
 class CfgMarkers
@@ -188,7 +180,7 @@ class CfgVehicles
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 
-	#define MEDICAL_LOADOUT "ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
+	#define MEDICAL_LOADOUT "ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_splint","ACE_splint","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
 	#define MAG_2(a) a, a
 	#define MAG_3(a) a, a, a
 	#define MAG_4(a) a, a, a, a
@@ -490,9 +482,6 @@ class CfgVehicles
 	#include "south_africa\woodland_dismounted.hpp"
 	#include "south_africa\desert.hpp"
 	#include "south_africa\desert_dismounted.hpp"
-	
-	#include "uk_malay\malay.hpp"
-	#include "uk_malay\malay_dismounted.hpp"
 };
 
 class CfgGroups
@@ -510,7 +499,6 @@ class CfgGroups
 			#include "canada\groups.hpp"
 			#include "india\groups.hpp"
 			#include "south_africa\groups.hpp"
-			#include "uk_malay\groups.hpp"
 			class TWC_Groups_WW2_Generic
 			{
 				name = "Generic";

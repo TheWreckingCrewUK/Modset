@@ -22,6 +22,7 @@ class CfgPatches {
 };
 
 #include "CfgFunctions.hpp"
+//#include "CfgEventHandlers.hpp"
 
 #include "ui\ACE_Spectator_Display.hpp"
 #include "ui\DefaultVehicleSystemsDisplayManager.hpp"

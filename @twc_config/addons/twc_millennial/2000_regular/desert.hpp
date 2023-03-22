@@ -41,20 +41,6 @@ class TWC_Infantry_2000_Regular_Desert_Marksman: TWC_Infantry_2000_Regular_Woodl
 		"itemMap",
 		"ItemWatch"
 	};
-	magazines[] =
-	{
-		MAG_4("UK3CB_BAF_556_30Rnd"),
-		MAG_3("UK3CB_BAF_556_30Rnd_T"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SmokeShell"
-	};
-	respawnmagazines[] =
-	{
-		MAG_4("UK3CB_BAF_556_30Rnd"),
-		MAG_3("UK3CB_BAF_556_30Rnd_T"),
-		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"SmokeShell"
-	};
 };
 class TWC_Infantry_2000_Regular_Desert_Grenadier: TWC_Infantry_2000_Regular_Woodland_Grenadier
 {
@@ -109,6 +95,7 @@ class TWC_Infantry_2000_Regular_Desert_SectionCommander: TWC_Infantry_2000_Regul
 		"UK3CB_BAF_V_Osprey_DDPM2",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -117,6 +104,7 @@ class TWC_Infantry_2000_Regular_Desert_SectionCommander: TWC_Infantry_2000_Regul
 		"UK3CB_BAF_V_Osprey_DDPM2",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -155,6 +143,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_Commander: TWC_Infantry_2000_Regu
 		"UK3CB_BAF_V_Osprey_DDPM9",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -163,6 +152,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_Commander: TWC_Infantry_2000_Regu
 		"UK3CB_BAF_V_Osprey_DDPM9",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -177,6 +167,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_Sergeant: TWC_Infantry_2000_Regul
 		"UK3CB_BAF_V_Osprey_DDPM9",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -185,6 +176,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_Sergeant: TWC_Infantry_2000_Regul
 		"UK3CB_BAF_V_Osprey_DDPM9",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -221,6 +213,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_CSM: TWC_Infantry_2000_Regular_Wo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};
@@ -229,6 +222,7 @@ class TWC_Infantry_2000_Regular_Desert_Platoon_CSM: TWC_Infantry_2000_Regular_Wo
 		"UK3CB_BAF_V_Osprey_DDPM5",
 		"UK3CB_BAF_H_Mk6_DDPM_A",
 		"ItemCompass",
+		"ItemcTab",
 		"itemMap",
 		"ItemWatch"
 	};

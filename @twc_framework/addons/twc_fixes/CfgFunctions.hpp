@@ -10,26 +10,6 @@ class CfgFunctions {
 			class aiReload {};
 		};
 	};
-
-	class ace_mk6mortar {
-		tag = "ace_mk6mortar";
-		
-		class ace_mk6mortar {
-			class mortarInit {
-				file = "twc_fixes\functions\fn_mortarInit.sqf";
-			};
-		};
-	};
-	
-	class ace_cup_artillery {
-		tag = "ace_cup_artillery";
-		
-		class ace_cup_artillery {
-			class mortarInit {
-				file = "twc_fixes\functions\fn_mortarInit.sqf";
-			};
-		};
-	};
 	
 	class A3 {
 		class Debug {

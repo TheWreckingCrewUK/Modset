@@ -28,6 +28,14 @@ class TWC_Infantry_1990_Regular_Woodland_Rifleman: TWC_Infantry_Millennial_Base
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		"SmokeShell"
 	};
+	items[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
 };
 class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
@@ -35,14 +43,14 @@ class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_
 	weapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
-		"ukcw_law80",
+		"twc_law80_loaded",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
 		"TWC_Weapon_L85A1_SUSAT3D",
-		"ukcw_law80",
+		"twc_law80_loaded",
 		"Throw",
 		"Put"
 	};
@@ -50,17 +58,23 @@ class TWC_Infantry_1990_Regular_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"ukcw_law80_magazine",
-		"ukcw_law80_magazine_spotting",
+		"twc_law80_magazine_spotting",
 		"SmokeShell"
 	};
 	respawnmagazines[] =
 	{
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
-		"ukcw_law80_magazine",
-		"ukcw_law80_magazine_spotting",
+		"twc_law80_magazine_spotting",
 		"SmokeShell"
+	};
+	items[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] +=
+	{
+		"ACE_EntrenchingTool"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Gunner: TWC_Infantry_1990_Regular_Woodland_Rifleman
@@ -89,6 +103,14 @@ class TWC_Infantry_1990_Regular_Woodland_Gunner: TWC_Infantry_1990_Regular_Woodl
 		MAG_7("UK3CB_BAF_556_30Rnd"),
 		MAG_5("UK3CB_BAF_556_30Rnd_T"),
 		"SmokeShell"
+	};
+	items[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] +=
+	{
+		"ACE_EntrenchingTool"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_SectionCommander: TWC_Infantry_1990_Regular_Woodland_Rifleman
@@ -147,6 +169,14 @@ class TWC_Infantry_1990_Regular_Woodland_2iC: TWC_Infantry_1990_Regular_Woodland
 {
 	displayName = "2iC";
 	backpack = "TWC_Backpack_1990_Regular_Woodland_2iC";
+	items[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
+	respawnItems[] +=
+	{
+		"ACE_EntrenchingTool"
+	};
 };
 
 //Platoon Command
@@ -159,12 +189,14 @@ class TWC_Infantry_1990_Regular_Woodland_Platoon_Commander: TWC_Infantry_Millenn
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_DAGR"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_DAGR"
 	};
 	weapons[] =
 	{
@@ -214,11 +246,13 @@ class TWC_Infantry_1990_Regular_Woodland_Platoon_Medic: TWC_Infantry_1990_Regula
 	attendant = 1;
 	Items[] =
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250")
 	};
 	respawnItems[] =
 	{
-		MEDICAL_LOADOUT
+		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250")
 	};
 	weapons[] =
 	{
@@ -259,7 +293,7 @@ class TWC_Infantry_1990_Regular_Woodland_Company_Sergeant: TWC_Infantry_1990_Reg
 class TWC_Infantry_1990_Regular_Woodland_MILAN_Gunner: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
 	displayName = "MILAN Gunner";
-	backpack = "ukcw_milan_gun_bag";
+	backpack = "";
 	magazines[]=
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
@@ -345,13 +379,13 @@ class TWC_Infantry_1990_Regular_Woodland_L14A1_Gunner: TWC_Infantry_1990_Regular
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
 		MAG_2("SmokeShell"),
-		"ukcw_l14a1_HEAT"
+		"TWC_Magazine_L14A1_HEAT"
 	};
 	respawnmagazines[] =
 	{
 		MAG_5("UK3CB_BAF_556_30Rnd"),
 		MAG_2("SmokeShell"),
-		"ukcw_l14a1_HEAT"
+		"TWC_Magazine_L14A1_HEAT"
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_L14A1_Ass: TWC_Infantry_1990_Regular_Woodland_Rifleman
@@ -463,13 +497,15 @@ class TWC_Infantry_1990_Regular_Woodland_Spotter: TWC_Infantry_1990_Regular_Wood
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_DAGR"
 	};
 	respawnItems[]=
 	{
 		MEDICAL_LOADOUT,
 		"ACE_MapTools",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_DAGR"
 	};
 	magazines[]=
 	{
@@ -512,12 +548,14 @@ class TWC_Infantry_1990_Regular_Woodland_Artillery_Commander: TWC_Infantry_1990_
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_DAGR"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_DAGR"
 	};
 	magazines[] =
 	{
@@ -584,7 +622,8 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Commander: TWC_Infantry_1990_Regula
 		"ACE_DefusalKit",
 		"ACE_SpraypaintGreen",
 		"ACE_SpraypaintRed",
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_DAGR"
 	};
 	respawnItems[] =
 	{
@@ -593,7 +632,8 @@ class TWC_Infantry_1990_Regular_Woodland_EOD_Commander: TWC_Infantry_1990_Regula
 		"ACE_DefusalKit",
 		"ACE_SpraypaintGreen",
 		"ACE_SpraypaintRed",
-		"ACE_MapTools"
+		"ACE_MapTools",
+		"ACE_DAGR"
 	};
 	magazines[] =
 	{
@@ -742,10 +782,11 @@ class TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_Millenni
 };
 
 //FVs
-class TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander: TWC_Infantry_1990_Regular_Woodland_Helicopter_Pilot
+class TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander: TWC_Infantry_1990_Regular_Woodland_SectionCommander
 {
 	displayName = "Vehicle Commander";
-	uniformClass = "UK3CB_BAF_U_Smock_DPMW";
+	backpack = "";
+	engineer = 1;
 	linkedItems[] =
 	{
 		"UK3CB_BAF_V_PLCE_Webbing_DPMW",
@@ -764,32 +805,44 @@ class TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander: TWC_Infantry_1990_Re
 	};
 	weapons[] =
 	{
-		"TWC_Weapon_L85A1",
+		"TWC_Weapon_L22A1_SUSAT",
 		"Binocular",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"TWC_Weapon_L85A1",
+		"TWC_Weapon_L22A1_SUSAT",
 		"Binocular",
 		"Throw",
 		"Put"
+	};
+	magazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2(SmokeShell)
+	};
+	respawnmagazines[] =
+	{
+		MAG_3("UK3CB_BAF_556_30Rnd"),
+		MAG_2(SmokeShell)
 	};
 };
 class TWC_Infantry_1990_Regular_Woodland_Vehicle_Crew: TWC_Infantry_1990_Regular_Woodland_Vehicle_Commander
 {
 	displayName = "Vehicle Crew";
 	TWC_isCommandRole = 0;
+	backpack = "";
+	engineer = 1;
 	weapons[] =
 	{
-		"TWC_Weapon_L85A1",
+		"TWC_Weapon_L22A1_SUSAT",
 		"Throw",
 		"Put"
 	};
 	respawnweapons[] =
 	{
-		"TWC_Weapon_L85A1",
+		"TWC_Weapon_L22A1_SUSAT",
 		"Throw",
 		"Put"
 	};

@@ -18,9 +18,6 @@ if (stance player != "Crouch" && isNull _attachedToObj) then {
 	[{(animationState player select [25, 7]) isEqualTo "putdown"}, {
 		params ["_mapObject", "_attachedToObj", "_caller"];
 
-		_mapID = _mapObject getVariable ["twc_map_owner", 0];
-		["twc_map_closed", [_mapID]] call CBA_fnc_globalEvent;
-
 		deleteVehicle _mapObject;
 		_caller linkItem "ItemMap";
 	}, _args] call CBA_fnc_waitUntilAndExecute;

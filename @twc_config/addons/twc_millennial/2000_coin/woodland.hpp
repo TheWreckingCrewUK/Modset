@@ -119,12 +119,14 @@ class TWC_Infantry_2000_COIN_Woodland_Autorifleman: TWC_Infantry_2000_Regular_Wo
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie")
+		MAG_2("ACE_CableTie"),
+		"ACE_SpareBarrel_Item"
 	};
 };
 class TWC_Infantry_2000_COIN_Woodland_SectionCommander: TWC_Infantry_2000_Regular_Woodland_SectionCommander
@@ -204,11 +206,13 @@ class TWC_Infantry_2000_COIN_Woodland_Platoon_Medic: TWC_Infantry_2000_Regular_W
 	Items[] =
 	{
 		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250"),
 		MAG_2("ACE_CableTie")
 	};
 	respawnItems[] =
 	{
 		MEDICAL_LOADOUT,
+		MAG_4("ACE_salineIV_250"),
 		MAG_2("ACE_CableTie")
 	};
 };

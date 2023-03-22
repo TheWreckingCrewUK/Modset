@@ -1,8 +1,15 @@
 if (!isServer) exitWith {};
+/*
+This was an idea and it was executed imperfectly
+Not only has it caused vehicles to delete when running over fences
+But not having the building "change" has causes it to instantly Be instead of breaking down
+I don't even know why we had been removing the rubble
+It could be re-added as long as you check for all types of "not rubble" before deleting
 
 addMissionEventHandler ["BuildingChanged", {
 	_this call twc_cleanup_fnc_cleanBuildingUp;
 }];
+*/
 
 if (TWC_Corpse_Enabled) then {
 	TWC_Corpse_Queue = [] call CBA_fnc_hashCreate;

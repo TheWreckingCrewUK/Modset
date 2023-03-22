@@ -25,7 +25,7 @@
                 class TWC_Map_CopyMarkers { \
                     displayName = "Copy Markers"; \
                     distance = 2; \
-                    condition = "true"; \
+                    condition = """ItemMap"" in (assignedItems _player)"; \
                     statement  = "[_target] call twc_map_fnc_copyMarkers"; \
                     icon = "\twc_map\icons\copymarkers_ca.paa"; \
                 }; \

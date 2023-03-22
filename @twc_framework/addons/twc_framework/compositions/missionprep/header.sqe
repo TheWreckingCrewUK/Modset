@@ -1,0 +1,11 @@
+version=54;
+name="TWC Operation Prep";
+author="jayman9696";
+category="twc_subPrep";
+requiredAddons[]=
+{
+	"A3_Modules_F_Curator_Curator",
+	"A3_Characters_F",
+	"twc_framework",
+	"Desert"
+};

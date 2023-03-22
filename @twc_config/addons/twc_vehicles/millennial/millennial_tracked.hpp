@@ -27,7 +27,7 @@ class TWC_Vehicle_1990_FV432_Woodland: CUP_B_FV432_GB_GPMG {
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(twc_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };
@@ -105,7 +105,7 @@ class TWC_Vehicle_2000_FV432_Woodland: CUP_B_FV432_GB_GPMG {
 	};
 	
 	class TransportWeapons {
-		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(twc_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };
@@ -242,7 +242,7 @@ class TWC_Vehicle_1990_Warrior_Woodland: TWC_Vehicle_FV510_W {
 	};
 	
 	class TransportWeapons { 
-		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(twc_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };
@@ -291,7 +291,7 @@ class TWC_Vehicle_2000_Warrior_Woodland: TWC_Vehicle_FV510_W {
 	};
 	
 	class TransportWeapons { 
-		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(twc_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };
@@ -338,7 +338,7 @@ class TWC_Vehicle_2000_Warrior_Desert: TWC_Vehicle_FV510_D {
 	};
 	
 	class TransportWeapons { 
-		ADD_WEAP(ukcw_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
+		ADD_WEAP(twc_law80_loaded, ADD_QNTY(MILLENNIAL_SECTION_LAW80));
 	};
 
 	class TransportBackpacks { };
@@ -367,9 +367,6 @@ class TWC_Vehicle_Millennial_Chieftain_Woodland: cwr3_b_uk_fv4201 {
 	
 	class TransportMagazines {
 		ADD_MAGA(SmokeShell, ADD_QNTY(SECTION_SMOKE));
-		ADD_MAGA(ukcw_l23a1_apfsds_hull, 40);
-		ADD_MAGA(ukcw_l31_hesh_hull, 20);
-		ADD_MAGA(ukcw_l34_smoke_hull, 4);
 	};
 	
 	class TransportWeapons { };

@@ -4,24 +4,24 @@ class UK3CB_BAF_HMNVS;
 class twc_nightvision_gen2: CUP_NVG_PVS7 {
 	scope = 1;
 	modelOptics = "";
-	author = "[TWC] Rik";
+	author = "[TWC] Rik and [TWC]Ross";
 	descriptionShort = "";
 	displayName = "AN/PVS-5";
-	ace_nightvision_border = "\z\ace\addons\nightvision\data\nvg_mask_binos_4096.paa"; // Edge mask for different tube configurations. Three types: mono, bino and quad.
+	ace_nightvision_border = "\twc_gearfixes\data\nvg_mask_4096.paa"; // Edge mask for different tube configurations. Three types: mono, bino and quad.
 	ace_nightvision_bluRadius = 0.13; // Edge blur radius.
 	ace_nightvision_eyeCups = 1; // Does have eyecups.
-	ace_nightvision_generation = 2; // Generation 2. Affects image quality.
+	ace_nightvision_generation = 3; // Generation 3. Affects image quality. One gen added to actual generation for usability in Arma
 };
 class twc_nightvision_gen3: UK3CB_BAF_HMNVS {
 	scope = 1;
 	modelOptics = "";
-	author = "[TWC] Rik";
+	author = "[TWC] Rik and [TWC]Ross";
 	descriptionShort = "";
 	displayName = "HMNVS";
-	ace_nightvision_border = "\z\ace\addons\nightvision\data\nvg_mask_4096.paa"; // Edge mask for different tube configurations. Three types: mono, bino and quad.
+	ace_nightvision_border = "\twc_gearfixes\data\nvg_mask_4096.paa"; // Edge mask for different tube configurations. Three types: mono, bino and quad.
 	ace_nightvision_bluRadius = 0.15; // Edge blur radius.
-	ace_nightvision_eyeCups = 0; // Does have eyecups.
-	ace_nightvision_generation = 3; // Generation 3. Affects image quality.
+	ace_nightvision_eyeCups = 1; // Does have eyecups.
+	ace_nightvision_generation = 4; // Generation 4. Affects image quality. One gen added to actual generation for usability in Arma.
 };
 
 class Launcher;
@@ -47,7 +47,6 @@ class SP_smg_sterling: SMG_02_base_F {
 		Burst = 1;
 	};
 };
-
 
 class RifleCore;
 class Rifle: RifleCore {};
@@ -89,247 +88,6 @@ class UK3CB_BAF_Milan_Launcher: missiles_titan {
 	ace_overpressure_angle = 90;
 	ace_overpressure_range = 40;
 	ace_overpressure_damage = 0.7;
-};
-
-//Dual Muzzle Setups for OPFOR vehicles to make them fire HE.
-class cannon_125mm;
-class CUP_Vacannon_D10: cannon_125mm {
-	muzzles[] = {"TWC_Muzzle_AP","TWC_Muzzle_HE"};
-	class TWC_Muzzle_AP: cannon_125mm {
-		displayName = "D-10T 100mm AP";
-		descriptionShort = "AP";
-		magazines[] = {CUP_20Rnd_100mmHEAT_D10};
-		
-		nameSound="cannon";
-		cursor = "EmptyCursor";
-		cursorAim = "cannon";
-		cursorSize = 1;
-		class StandardSound
-		{
-			soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
-		};
-		minRange=10;minRangeProbab=0.7;
-		midRange=1800;midRangeProbab=0.7;
-		maxRange=3000;maxRangeProbab=0.1;
-		reloadTime = 8;
-		magazineReloadTime = 8;
-		autoReload = 1;
-		canLock = 0;
-		ballisticsComputer = 2;
-	};
-	class TWC_Muzzle_HE: cannon_125mm {
-		displayName = "D-10T 100mm HE";
-		descriptionShort = "HE";
-		magazines[] = {CUP_15Rnd_100mmHEFRAG_D10};
-
-		nameSound="cannon";
-		cursor = "EmptyCursor";
-		cursorAim = "cannon";
-		cursorSize = 1;
-		class StandardSound
-		{
-			soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
-		};
-		minRange=10;minRangeProbab=0.7;
-		midRange=1800;midRangeProbab=0.7;
-		maxRange=3000;maxRangeProbab=0.1;
-		reloadTime = 8;
-		magazineReloadTime = 8;
-		autoReload = 1;
-		canLock = 0;
-		ballisticsComputer = 2;
-	};
-};
-class CUP_Vacannon_2A28: CUP_Vacannon_D10 {
-	muzzles[] = {"TWC_Muzzle_AP","TWC_Muzzle_HE"};
-	class TWC_Muzzle_AP: CUP_Vacannon_D10 {
-		scope = 1;
-		canLock=1;
-		author = "$STR_CUP_AUTHOR_STRING";
-		displayName = "2A28 Grom";
-		magazines[] = {CUP_PG15V};
-		reloadTime = 5;
-		magazineReloadTime = 7;
-		autoReload = 0;
-		ballisticsComputer = 2;
-		weaponLockSystem = 0;
-		showaimcursorinternal = 0;
-		cursor = "EmptyCursor";
-		cursoraim = "EmptyCursor";
-		cursoraimon = "EmptyCursor";
-		minRange=5;
-		minRangeProbab=0.89999998;
-		midRange=700;
-		midRangeProbab=1;
-		maxRange=1300;
-		maxRangeProbab=0.40000001;
-		class player;
-	};
-	class TWC_Muzzle_HE: CUP_Vacannon_D10 {
-		scope = 1;
-		canLock=1;
-		author = "$STR_CUP_AUTHOR_STRING";
-		displayName = "2A28 Grom";
-		magazines[] = {CUP_OG15V};
-		reloadTime = 5;
-		magazineReloadTime = 7;
-		autoReload = 0;
-		ballisticsComputer = 2;
-		weaponLockSystem = 0;
-		showaimcursorinternal = 0;
-		cursor = "EmptyCursor";
-		cursoraim = "EmptyCursor";
-		cursoraimon = "EmptyCursor";
-		minRange=5;
-		minRangeProbab=0.89999998;
-		midRange=700;
-		midRangeProbab=1;
-		maxRange=1300;
-		maxRangeProbab=0.40000001;
-		class player;
-	};
-	class player;
-};
-class CUP_Vacannon_SPG9_veh: CUP_Vacannon_2A28 {
-	muzzles[] = {"TWC_Muzzle_AP","TWC_Muzzle_HE"};
-	class TWC_Muzzle_AP: CUP_Vacannon_2A28
-	{
-		author = "$STR_CUP_AUTHOR_STRING";
-		displayName = "SPG-9";
-		magazines[] = {"CUP_16Rnd_PG9_AT_M"};
-		reloadTime = 8;
-		magazineReloadTime = 8;
-		showaimcursorinternal = 1;
-		reloadSound[] = {"\CUP\Weapons\CUP_Weapons_SMAW\data\sfx\reload.wss",10,1,20};
-		reloadMagazineSound[] = {"\CUP\Weapons\CUP_Weapons_SMAW\data\sfx\reload.wss",10,1,20};
-		class player: player {
-			class StandardSound {
-				weaponSoundEffect = "DefaultRifle";
-				begin1[] = {"\CUP\Weapons\CUP_Weapons_StaticWeapons\Sounds\spg9_1.wss","db20",1,1200};
-				soundBegin[] = {"begin1",1};
-			};
-		};
-		class GunParticles {
-			class FirstEffect {
-				effectName = "RocketBackEffectsRPGNT";
-				positionName = "Usti hlavne";
-				directionName = "Konec hlavne";
-			};
-		};
-	};
-	class TWC_Muzzle_HE: CUP_Vacannon_2A28 {
-		author = "$STR_CUP_AUTHOR_STRING";
-		displayName = "SPG-9";
-		magazines[] = {"CUP_16Rnd_OG9_HE_M"};
-		reloadTime = 8;
-		magazineReloadTime = 8;
-		showaimcursorinternal = 1;
-		reloadSound[] = {"\CUP\Weapons\CUP_Weapons_SMAW\data\sfx\reload.wss",10,1,20};
-		reloadMagazineSound[] = {"\CUP\Weapons\CUP_Weapons_SMAW\data\sfx\reload.wss",10,1,20};
-		class player: player {
-			class StandardSound {
-				weaponSoundEffect = "DefaultRifle";
-				begin1[] = {"\CUP\Weapons\CUP_Weapons_StaticWeapons\Sounds\spg9_1.wss","db20",1,1200};
-				soundBegin[] = {"begin1",1};
-			};
-		};
-		class GunParticles {
-			class FirstEffect {
-				effectName = "RocketBackEffectsRPGNT";
-				positionName = "Usti hlavne";
-				directionName = "Konec hlavne";
-			};
-		};
-	};
-};
-class CUP_Vacannon_D5_T34: cannon_125mm {
-	muzzles[] = {"TWC_Muzzle_AP","TWC_Muzzle_HE"};
-	class TWC_Muzzle_AP: cannon_125mm {
-		displayName = "D-5T 85mm AP";
-		nameSound="cannon";
-		cursor = "EmptyCursor";
-		cursorAim = "cannon";
-		cursorSize = 1;
-		class StandardSound {
-			soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
-		};
-		magazines[] = {CUP_40Rnd_85mmHEAT_D5};
-		minRange=10;minRangeProbab=0.7;
-		midRange=1800;midRangeProbab=0.7;
-		maxRange=3000;maxRangeProbab=0.1;
-		reloadTime = 6;
-		magazineReloadTime = 6;
-		autoReload = 1;
-		canLock = 0;
-		ballisticsComputer = 2;
-	};
-	class TWC_Muzzle_HE: cannon_125mm {
-		displayName = "D-5T 85mm AP";
-		nameSound="cannon";
-		cursor = "EmptyCursor";
-		cursorAim = "cannon";
-		cursorSize = 1;
-		class StandardSound {
-			soundSetShot[] = {"CUP_autocannon_Shot_SoundSet","CUP_autocannon_Tail_SoundSet"};
-		};
-		magazines[] = {CUP_20Rnd_85mmHEFRAG_D5};
-		minRange=10;minRangeProbab=0.7;
-		midRange=1800;midRangeProbab=0.7;
-		maxRange=3000;maxRangeProbab=0.1;
-		reloadTime = 6;
-		magazineReloadTime = 6;
-		autoReload = 1;
-		canLock = 0;
-		ballisticsComputer = 2;
-	};
-};
-class CUP_Vcannon_2A46_Txx: cannon_125mm {
-	muzzles[] = {"TWC_Muzzle_APFSDS","TWC_Muzzle_HE","TWC_Muzzle_AT"};
-	class TWC_Muzzle_APFSDS: cannon_125mm {
-		displayName = "2A46 Cannon 125mm APFSDS";
-		magazines[] = {"CUP_22Rnd_2A46_APFSDS_T_M"};
-		canLock=0;
-		reloadTime = 8;
-		magazineReloadTime = 8;
-		autoReload = 0;
-		ballisticsComputer = 16;
-		weaponLockSystem = 0;
-		showaimcursorinternal = 0;
-		cursor = "EmptyCursor";
-		cursoraim = "EmptyCursor";
-		cursoraimon = "EmptyCursor";
-		reloadsound[] = {"CUP\Weapons\CUP_Weapons_VehicleWeapons\2A46\data\sound\Reload_Cannon", 13.16228, 1, 10};
-	};
-	class TWC_Muzzle_HE: cannon_125mm {
-		displayName = "2A46 Cannon 125mm HE";
-		magazines[] = {"CUP_12Rnd_2A46_HE_T_M","CUP_17Rnd_2A46_HE_T_M"};
-		canLock=0;
-		reloadTime = 8;
-		magazineReloadTime = 8;
-		autoReload = 0;
-		ballisticsComputer = 16;
-		weaponLockSystem = 0;
-		showaimcursorinternal = 0;
-		cursor = "EmptyCursor";
-		cursoraim = "EmptyCursor";
-		cursoraimon = "EmptyCursor";
-		reloadsound[] = {"CUP\Weapons\CUP_Weapons_VehicleWeapons\2A46\data\sound\Reload_Cannon", 13.16228, 1, 10};
-	};
-	class TWC_Muzzle_AT: cannon_125mm {
-		displayName = "2A46 Cannon 125mm AT";
-		magazines[] = {"CUP_5Rnd_AT11_M"};
-		canLock=0;
-		reloadTime = 8;
-		magazineReloadTime = 8;
-		autoReload = 0;
-		ballisticsComputer = 16;
-		weaponLockSystem = 0;
-		showaimcursorinternal = 0;
-		cursor = "EmptyCursor";
-		cursoraim = "EmptyCursor";
-		cursoraimon = "EmptyCursor";
-		reloadsound[] = {"CUP\Weapons\CUP_Weapons_VehicleWeapons\2A46\data\sound\Reload_Cannon", 13.16228, 1, 10};
-	};
 };
 
 //Configuring various plane weapons for use with the Ambient Attack Plane module.
@@ -385,11 +143,11 @@ class twc_l115a3_wd: UK3CB_BAF_L115A3 {
 	author = "jayman";
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot = "asdg_OpticRail_UK3CB_BAF_L115";
+			slot = "CowsSlot";
 			item = "RKSL_optic_PMII_525";
 		};
 		class LinkedItemsMuzzle {
-			slot = "asdg_MuzzleSlot_UK3CB_BAF_L115";
+			slot = "MuzzleSlot";
 			item= "UK3CB_BAF_Silencer_L115A3";
 		};
 	};
@@ -400,11 +158,11 @@ class twc_l115a3_gh: UK3CB_BAF_L115A3_Ghillie {
 	author = "jayman";
 	class LinkedItems {
 		class LinkedItemsOptic {
-			slot = "asdg_OpticRail_UK3CB_BAF_L115";
+			slot = "CowsSlot";
 			item = "RKSL_optic_PMII_525";
 		};
 		class LinkedItemsMuzzle {
-			slot = "asdg_muzzleslot_UK3CB_BAF_L115";
+			slot = "MuzzleSlot";
 			item= "UK3CB_BAF_Silencer_L115A3";
 		};
 	};
@@ -725,7 +483,7 @@ class UK3CB_BAF_L85A2: arifle_Mk20_plain_F {
 	reloadAction = "CUP_GestureReloadSA80";
 	reloadMagazineSound[] = {"\CUP\Weapons\CUP_Weapons_L85\data\sounds\l85_Reload",1,1,10};
 	class Single: Single {
-		dispersion = 0.0015;
+		dispersion = 0.002;
 	};
 	class FullAuto: FullAuto {
 		dispersion = 0.003;
@@ -737,10 +495,10 @@ class UK3CB_BAF_L86A2: UK3CB_BAF_L85A2 {
 	recoilProne = "twc_rifle_556_long_prone";
 	initSpeed = -1.1;
 	class Single: Single {
-		dispersion = 0.001;
+		dispersion = 0.002;
 	};
 	class FullAuto: FullAuto {
-		dispersion = 0.002;
+		dispersion = 0.003;
 	};
 };
 
@@ -756,34 +514,33 @@ class UK3CB_BAF_L129A1: srifle_EBR_F {
 //for barrel swapping, put a ACE_SpareBarrel in the player's inventory
 class UK3CB_BAF_L7A2: Rifle_Long_Base_F {
 	displayname = "L7A2 GPMG";
+	ace_overheating_mrbs = 3000;
 	ace_overheating_allowSwapBarrel = 1;
-	ace_overheating_dispersion = 1.1;
+	ace_overheating_dispersion = 9;
 	ace_overheating_slowdownFactor = 1.5;
 	recoil = "twc_mg_762";
 	recoilProne = "twc_mg_prone";
-	twc_openbolt = 1;
 	magazines[] = {"UK3CB_BAF_762_100Rnd","UK3CB_BAF_762_100Rnd_Blank","UK3CB_BAF_762_100Rnd_T","UK3CB_BAF_762_200Rnd","UK3CB_BAF_762_200Rnd_Blank","UK3CB_BAF_762_200Rnd_T","TWC_UK3CB_BAF_762_50Rnd","TWC_UK3CB_BAF_762_50Rnd_T"};
 	class WeaponSlotsInfo {
 		class asdg_OpticRail_UK3CB_BAF_L7A2 {};
 	};
 	class fullauto: mode_fullauto {
 		reloadTime = 0.08;
-		dispersion = 0.0008;
+		dispersion = 0.005;
 	};
 };
 
 class UK3CB_BAF_L110_Base:Rifle_Long_Base_F {
 	ace_overheating_allowSwapBarrel = 1;
-	ace_overheating_mrbs = 2900;
-	ace_overheating_dispersion = 1.1;
+	ace_overheating_mrbs = 2000;
+	ace_overheating_dispersion = 10;
 	ace_overheating_slowdownFactor = 1.2;
-	twc_openbolt = 1;
 };
 class UK3CB_BAF_L110_556_Base: UK3CB_BAF_L110_Base {
 	recoil = "twc_mg_556";
 	recoilProne = "twc_mg_556_prone";
 	class FullAuto: Mode_FullAuto {
-		dispersion = 0.0016;
+		dispersion = 0.006;
 	};
 };
 

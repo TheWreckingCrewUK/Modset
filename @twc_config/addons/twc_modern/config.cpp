@@ -8,8 +8,62 @@ class CfgPatches
 			"A3_Characters_F_BLUFOR",
 			"A3_Characters_F_OPFOR",
 			"twc_faction",
-			"twc_ai"
+			"twc_ai_skill"
 		};
+	};
+};
+
+class CfgEditorSubcategories {
+	//2020s
+	class TWC_Infantry_2020_Regular_Woodland {
+		displayName = "Infantry (2020s, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_Regular_Arctic {
+		displayName = "Infantry (2020s, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_Regular_NBC {
+		displayName = "Infantry (2020s, NBC)";
+	};
+	
+	class TWC_Infantry_2020_Dismounted_Woodland {
+		displayName = "Infantry (2020s, Dismounted, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_Dismounted_Arctic {
+		displayName = "Infantry (2020s, Dismounted, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_Dismounted_NBC {
+		displayName = "Infantry (2020s, Dismounted, NBC)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Woodland {
+		displayName = "Infantry (2020s, COIN, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Arctic {
+		displayName = "Infantry (2020s, COIN, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_COIN_NBC {
+		displayName = "Infantry (2020s, COIN, NBC)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Dismounted_Woodland {
+		displayName = "Infantry (2020s, COIN, Dismounted, Woodland)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Dismounted_Arctic {
+		displayName = "Infantry (2020s, COIN, Dismounted, Arctic)";
+	};
+	
+	class TWC_Infantry_2020_COIN_Dismounted_NBC {
+		displayName = "Infantry (2020s, COIN, Dismounted, NBC)";
+	};
+	class TWC_Infantry_Modern_SF {
+		displayName = "Special Forces";
 	};
 };
 
@@ -28,7 +82,7 @@ class CfgVehicles
 	class O_Soldier_base_F;
 	class I_Soldier_F;
 
-	#define MEDICAL_LOADOUT "ACRE_PRC343","ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
+	#define MEDICAL_LOADOUT "ACRE_PRC343","ACE_EarPlugs","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_splint","ACE_splint","ACE_morphine","ACE_morphine","ACE_epinephrine","ACE_tourniquet","ACE_tourniquet"
 	#define MAG_2(a) a, a
 	#define MAG_3(a) a, a, a
 	#define MAG_4(a) a, a, a, a
@@ -46,7 +100,7 @@ class CfgVehicles
 	//GENERIC
 	class TWC_Infantry_Modern_Base: B_Soldier_base_F {
 		scope = 1;
-		displayName = "Base";
+		displayName = "Base (2010)";
 		faction = "TWC_Modern";
 		CATEGORY(TWC_Infantry_Regular_Woodland)
 		icon = "iconMan";
@@ -75,6 +129,69 @@ class CfgVehicles
 		};
 
 		items[] = {
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
+		};
+
+		respawnItems[] = {
+			MEDICAL_LOADOUT,
+			"grad_paceCountBeads_functions_paceCountBeads"
+		};
+
+		weapons[] = {
+			"Throw",
+			"Put"
+		};
+
+		respawnweapons[] = {
+			"Throw",
+			"Put"
+		};
+
+		magazines[] = {};
+		respawnmagazines[] = {};
+
+		nightItems[] = {
+			MAG_2("Chemlight_green"),
+			MAG_2("ACE_HandFlare_White"),
+			"ACE_Flashlight_MX991",
+		};
+
+		nightLinkedItems[] = {
+			"twc_nightvision_gen3"
+		};
+	};
+	class TWC_Infantry_2020_Base: B_Soldier_base_F {
+		scope = 1;
+		displayName = "Base (2020)";
+		faction = "TWC_Modern";
+		CATEGORY(TWC_Infantry_Regular_Woodland)
+		icon = "iconMan";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "UK3CB_BAF_U_CombatUniform_MTP";
+		backpack = "";
+
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+		};
+
+		linkedItems[] = {
+			"mpx_virtus_taco_p",
+			"mpx_cobra_scrim",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+
+		respawnLinkedItems[] = {
+			"mpx_virtus_taco_p",
+			"mpx_cobra_scrim",
+			"ItemCompass",
+			"itemMap",
+			"ItemWatch"
+		};
+
+		items[] = {
 			MEDICAL_LOADOUT
 		};
 
@@ -97,15 +214,13 @@ class CfgVehicles
 
 		nightItems[] = {
 			MAG_2("Chemlight_green"),
+			MAG_2("ACE_HandFlare_White"),
 			"ACE_Flashlight_MX991",
-			"ACE_Flashlight_Maglite_ML300L"
 		};
-
 		nightLinkedItems[] = {
 			"twc_nightvision_gen3"
 		};
 	};
-
 	class TWC_Infantry_Modern_Plane_Pilot: TWC_Infantry_Modern_Base
 	{
 		scope = 2;
@@ -174,7 +289,7 @@ class CfgVehicles
 		linkedItems[] =
 		{
 			"UK3CB_BAF_V_Osprey_Belt_A",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -182,7 +297,7 @@ class CfgVehicles
 		respawnLinkedItems[] =
 		{
 			"UK3CB_BAF_V_Osprey_Belt_A",
-			"UK3CB_BAF_H_Beret_RTR_PRR",
+			"UK3CB_BAF_H_CrewHelmet_B",
 			"ItemCompass",
 			"itemMap",
 			"ItemWatch"
@@ -199,14 +314,14 @@ class CfgVehicles
 		};
 		weapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"ACE_Vector",
 			"Throw",
 			"Put"
@@ -228,30 +343,47 @@ class CfgVehicles
 		TWC_isCommandRole = 0;
 		weapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
 		respawnweapons[] =
 		{
-			"UK3CB_BAF_L22A2",
+			"TWC_Weapon_L22A2_SUSAT",
 			"Throw",
 			"Put"
 		};
 	};
-	#include "regular\woodland.hpp"
-	#include "regular\woodland_dismounted.hpp"
-	#include "regular\nbc.hpp"
-	#include "regular\nbc_dismounted.hpp"
-	#include "regular\arctic.hpp"
-	#include "regular\arctic_dismounted.hpp"
+	#include "2010_regular\woodland.hpp"
+	#include "2010_regular\woodland_dismounted.hpp"
+	#include "2010_regular\nbc.hpp"
+	#include "2010_regular\nbc_dismounted.hpp"
+	#include "2010_regular\arctic.hpp"
+	#include "2010_regular\arctic_dismounted.hpp"
+	
+	#include "2020_regular\woodland.hpp"
+	#include "2020_regular\woodland_dismounted.hpp"
+	#include "2020_regular\nbc.hpp"
+	#include "2020_regular\nbc_dismounted.hpp"
+	#include "2020_regular\arctic.hpp"
+	#include "2020_regular\arctic_dismounted.hpp"
 
-	#include "coin\woodland.hpp"
-	#include "coin\woodland_dismounted.hpp"
-	#include "coin\nbc.hpp"
-	#include "coin\nbc_dismounted.hpp"
-	#include "coin\arctic.hpp"
-	#include "coin\arctic_dismounted.hpp"
+	#include "2010_coin\woodland.hpp"
+	#include "2010_coin\woodland_dismounted.hpp"
+	#include "2010_coin\nbc.hpp"
+	#include "2010_coin\nbc_dismounted.hpp"
+	#include "2010_coin\arctic.hpp"
+	#include "2010_coin\arctic_dismounted.hpp"
+	
+	#include "2020_coin\woodland.hpp"
+	#include "2020_coin\woodland_dismounted.hpp"
+	#include "2020_coin\nbc.hpp"
+	#include "2020_coin\nbc_dismounted.hpp"
+	#include "2020_coin\arctic.hpp"
+	#include "2020_coin\arctic_dismounted.hpp"
+	
+	#include "modern_sf\sas.hpp"
+	#include "modern_sf\sbs.hpp"
 };
 
 class CfgGroups
@@ -261,9 +393,11 @@ class CfgGroups
 		class TWC_Groups_Modern
 		{
 			name = "TWC Groups Modern";
-			#include "regular\groups.hpp"
-			#include "coin\groups.hpp"
-			class TWC_Groups_Modern_Generic
+			#include "2010_regular\groups.hpp"
+			#include "2020_regular\groups.hpp"
+			#include "2010_coin\groups.hpp"
+			#include "2020_coin\groups.hpp"
+			class Generic
 			{
 				name = "Generic";
 				class Tank_Crew

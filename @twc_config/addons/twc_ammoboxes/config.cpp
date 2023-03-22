@@ -1,10 +1,12 @@
 class CfgPatches {
 	class TWC_AmmoBoxes {
 		units[] = {
+			"TWC_AmmoBox_2020_Section_Portable",
+			"TWC_AmmoBox_2020_COIN_Section_Portable",
+			"TWC_AmmoBox_2020_Mechanised_Section_Portable",
 			"TWC_AmmoBox_Modern_Section_Portable",
 			"TWC_AmmoBox_Modern_COIN_Section_Portable",
 			"TWC_AmmoBox_Modern_Mechanised_Section_Portable",
-			"TWC_AmmoBox_Modern_Javelin_Portable",
 			"TWC_AmmoBox_Modern_Sniper_Portable",
 			"TWC_AmmoBox_Modern_M6_Portable",
 			"TWC_AmmoBox_1990_Section_Portable",
@@ -37,12 +39,15 @@ class CfgPatches {
 			"TWC_AmmoBox_Launchers_LAW80_Portable",
 			"TWC_AmmoBox_Launchers_L2A1_Portable",
 			"TWC_AmmoBox_Launchers_NLAW_Portable",
+			"TWC_AmmoBox_Launchers_Matador_Portable",
+			"TWC_AmmoBox_Launchers_Javelin_Portable",
 			"TWC_AmmoBox_Other_Stinger_Portable",
 			"TWC_AmmoBox_Other_Command_Portable",
 			"TWC_AmmoBox_Other_Pallet",
 			"TWC_AmmoBox_Other_Empty_Portable",
 			"TWC_AmmoBox_Training_Medical_Base",
 			"TWC_AmmoBox_Other_Sergeant_Utility"
+			
 		};
 		
 		weapons[] = {};

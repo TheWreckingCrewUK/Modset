@@ -5,6 +5,8 @@ class Box_NATO_AmmoVeh_F;
 class ACE_medicalSupplyCrate;
 class B_supplyCrate_F;
 class Box_NATO_WpsLaunch_F;
+class CUP_BOX_GB_Ammo_F;
+class cwr3_crate_launchers_us;
 
 class TWC_AmmoBox_Base: CUP_BAF_VehicleBox {
 	scope = 1;
@@ -29,7 +31,7 @@ class TWC_AmmoBox_Base: CUP_BAF_VehicleBox {
 	ace_dragging_canDrag  = 0;
 };
 
-class TWC_AmmoBox_Portable: Box_NATO_Ammo_F {
+class TWC_AmmoBox_Portable: CUP_BOX_GB_Ammo_F {
 	scope = 1;
 	displayName = "Ammo Box (Portable)";
 	author      = "Bosenator";
@@ -54,7 +56,7 @@ class TWC_AmmoBox_Portable: Box_NATO_Ammo_F {
 	twc_ammobox_type      = "section";
 };
 
-class TWC_AmmoBox_Launcher_Portable: Box_NATO_WpsLaunch_F {
+class TWC_AmmoBox_Launcher_Portable: cwr3_crate_launchers_us {
 	scope = 1;
 	displayName = "Launcher Box (Portable)";
 	author      = "Bosenator";

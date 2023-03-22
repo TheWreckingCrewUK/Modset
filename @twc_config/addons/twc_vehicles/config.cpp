@@ -109,8 +109,6 @@ class CfgPatches {
 			"CUP_AirVehicles_F35",
 			"CUP_AirVehciles_SA330",
 			"cwr3_expansion_uk",
-			"ukcw_bedford",
-			"ukcw_gazelle",
 			"TWC_Faction",
 			"ace_cargo",
 			"ace_interaction",
@@ -257,7 +255,4 @@ class CfgVehicles {
 	#include "coldwar\coldwar.hpp"
 	#include "millennial\millennial.hpp"
 	#include "modern\modern.hpp"
-	
-	// delete this in a few months once we've gone through submitted ops
-	#include "oldVehicles.hpp"
 };

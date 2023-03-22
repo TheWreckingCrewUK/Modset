@@ -23,6 +23,7 @@ class TWC_Backpack_WW2_UK_Late_2iC: B_LIB_UK_HSack_Tea
 		ADD_MAGA(LIB_10Rnd_770x56,16);
 		ADD_MAGA(LIB_30Rnd_770x56,6);
 		ADD_MAGA(SmokeShell,2);
+		ADD_MAGA(LIB_MillsBomb,4);
 	};
 };
 class TWC_Backpack_WW2_UK_Late_MGASS: B_LIB_UK_HSack_Tea
@@ -41,6 +42,7 @@ class TWC_Backpack_WW2_UK_Late_Dismounted_Rifleman: B_LIB_UK_HSack_Tea
 	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(LIB_10Rnd_770x56,12);
+		ADD_MAGA(LIB_MillsBomb,2);
 	};
 };
 class TWC_Backpack_WW2_UK_Late_Dismounted_Grenadier: B_LIB_UK_HSack_Tea
@@ -51,6 +53,7 @@ class TWC_Backpack_WW2_UK_Late_Dismounted_Grenadier: B_LIB_UK_HSack_Tea
 	class TransportMagazines {
 		ADD_MAGA(LIB_10Rnd_770x56,12);
 		ADD_MAGA(LIB_1Rnd_G_MillsBomb,8);
+		ADD_MAGA(LIB_MillsBomb,2);
 	};
 };
 class TWC_Backpack_WW2_UK_Late_Dismounted_SMG: B_LIB_UK_HSack_Tea
@@ -59,6 +62,7 @@ class TWC_Backpack_WW2_UK_Late_Dismounted_SMG: B_LIB_UK_HSack_Tea
 	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(LIB_32Rnd_9x19_Sten,6);
+		ADD_MAGA(LIB_MillsBomb,3);
 	};
 };
 class TWC_Backpack_WW2_UK_Late_Dismounted_MG: B_LIB_UK_HSack_Tea
@@ -76,6 +80,7 @@ class TWC_Backpack_WW2_UK_Late_Dismounted_MGASS: B_LIB_UK_HSack_Tea
 	maximumLoad = 110;
 	class TransportMagazines {
 		ADD_MAGA(LIB_30Rnd_770x56,12);
+		ADD_MAGA(LIB_MillsBomb,1);
 	};
 };
 class TWC_Backpack_WW2_UK_Late_Dismounted_SectionCommander: B_LIB_UK_HSack_Tea
@@ -130,7 +135,7 @@ class TWC_Backpack_WW2_UK_Late_Platoon_Sergeant: B_LIB_UK_HSack_Tea
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 250;
+	maximumLoad = 400;
 	class TransportMagazines {
 		ADD_MAGA(LIB_10Rnd_770x56,12);
 		ADD_MAGA(LIB_30Rnd_770x56,6);
@@ -146,6 +151,7 @@ class TWC_Backpack_WW2_UK_Late_Platoon_Sergeant: B_LIB_UK_HSack_Tea
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
+		ADD_MAGA(LIB_MillsBomb,4);
 	};
 };
 class TWC_Backpack_WW2_UK_Late_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty
@@ -164,6 +170,7 @@ class TWC_Backpack_WW2_UK_Late_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty
 		ADD_ITEM(ACE_epinephrine,10);
 		ADD_ITEM(ACE_salineIV_500,6);
 		ADD_ITEM(ACE_tourniquet,4);
+		ADD_ITEM(ACE_splint,6);
 		ADD_ITEM(ACE_personalAidKit,1);
 		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
 	};
@@ -203,7 +210,7 @@ class TWC_Backpack_WW2_UK_Late_Dismounted_Platoon_Sergeant: fow_b_uk_bergenpack
 {
 	scope = 1;
 	scopeArsenal = 1;
-	maximumLoad = 250;
+	maximumLoad = 400;
 	class TransportMagazines {
 		ADD_MAGA(LIB_10Rnd_770x56,16);
 		ADD_MAGA(LIB_30Rnd_770x56,8);
@@ -219,6 +226,7 @@ class TWC_Backpack_WW2_UK_Late_Dismounted_Platoon_Sergeant: fow_b_uk_bergenpack
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Blue, 3);
+		ADD_MAGA(LIB_MillsBomb,4);
 	};
 };
 class TWC_Backpack_WW2_UK_Late_Dismounted_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty

@@ -1,10 +1,10 @@
-name = "TWC Config";
+name = "TWC Config Jointop";
 picture = "twc_logo_512.paa";
 logo = "twc_logo_64.paa";
 logoOver = "twc_logo_64.paa";
-tooltip = "TWC Config";
+tooltip = "TWC Config Jointop";
 tooltipOwned = "TWC Owned";
-overview = "TWC Config is a collection of assets used in TWC Operations.";
+overview = "TWC Config is a collection of assets used in TWC Joint Operations.";
 overviewPicture = "twc_logo_512.paa";
 author = "TWC Team";
 actionName = "Website";

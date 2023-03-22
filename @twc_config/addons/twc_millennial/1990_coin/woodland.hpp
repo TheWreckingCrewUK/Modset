@@ -3,28 +3,24 @@
 class TWC_Infantry_1990_COIN_Woodland_Rifleman: TWC_Infantry_1990_Regular_Woodland_Rifleman
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
 	};
 };
 class TWC_Infantry_1990_COIN_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_AT
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
 	};
 	weapons[]=
@@ -57,14 +53,12 @@ class TWC_Infantry_1990_COIN_Woodland_AT: TWC_Infantry_1990_Regular_Woodland_AT
 class TWC_Infantry_1990_COIN_Woodland_Gunner: TWC_Infantry_1990_Regular_Woodland_Gunner
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
 	};
 };
@@ -72,34 +66,26 @@ class TWC_Infantry_1990_COIN_Woodland_SectionCommander: TWC_Infantry_1990_Regula
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_1990_COIN_Woodland_SectionCommander";
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
 };
 class TWC_Infantry_1990_COIN_Woodland_2iC: TWC_Infantry_1990_Regular_Woodland_2iC
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_1990_COIN_Woodland_2iC";
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
 };
 
@@ -108,48 +94,38 @@ class TWC_Infantry_1990_COIN_Woodland_Platoon_Commander: TWC_Infantry_1990_Regul
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_1990_COIN_Woodland_Platoon_Commander";
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
 };
 class TWC_Infantry_1990_COIN_Woodland_Platoon_Sergeant: TWC_Infantry_1990_Regular_Woodland_Platoon_Sergeant
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_1990_COIN_Woodland_Platoon_Sergeant";
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
 };
 class TWC_Infantry_1990_COIN_Woodland_Platoon_Medic: TWC_Infantry_1990_Regular_Woodland_Platoon_Medic
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_1990_COIN_Woodland_Platoon_Medic";
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		MAG_2("ACE_CableTie")
 	};
 };
@@ -157,17 +133,13 @@ class TWC_Infantry_1990_COIN_Woodland_Platoon_CSM: TWC_Infantry_1990_Regular_Woo
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_1990_COIN_Woodland_Platoon_Sergeant";
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
 };
 
@@ -176,51 +148,39 @@ class TWC_Infantry_1990_COIN_Woodland_Company_Commander: TWC_Infantry_1990_Regul
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_1990_COIN_Woodland_Platoon_Commander";
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
 };
 class TWC_Infantry_1990_COIN_Woodland_Company_2iC: TWC_Infantry_1990_Regular_Woodland_Company_2iC
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_1990_COIN_Woodland_Platoon_Commander";
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
 };
 class TWC_Infantry_1990_COIN_Woodland_Company_Sergeant: TWC_Infantry_1990_Regular_Woodland_Company_Sergeant
 {
 	CATEGORY(TWC_Infantry_COIN_Woodland)
 	backpack = "TWC_Backpack_1990_COIN_Woodland_Platoon_Sergeant";
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
-		MAG_2("ACE_CableTie"),
-		"ACE_MapTools"
+		MAG_2("ACE_CableTie")
 	};
 };
 

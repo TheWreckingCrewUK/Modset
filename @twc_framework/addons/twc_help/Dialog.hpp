@@ -6,7 +6,7 @@ class RscButton;
 class RscEdit;
 
 class TWC_Help_Message {
-	idd = -1;
+	idd = 555666;
 	movingEnable = false;
 	class ControlsBackground {
 		class Frame: RscFrame {
@@ -43,7 +43,7 @@ class TWC_Help_Message {
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0,0,0,0.8};
 			colorActive[] = {0,0,0,0.8};
-			action = "[player, ctrlText 5554] call TWC_Help_fnc_sendMessage; closeDialog 1;";
+			action = "hint ""Messaged Sent To Admin""; [player, ctrlText ((findDisplay 555666) displayCtrl 5554)] remoteExecCall [""TWC_core_fnc_findAdmin"",2]; (findDisplay 555666) closeDisplay 1; (findDisplay 49) closeDisplay 2;";
 		};
 		class Message: RscEdit {
 			idc = 5554;
@@ -55,5 +55,5 @@ class TWC_Help_Message {
 			colorBackground[] = {0,0,0,0.8};
 			colorActive[] = {0,0,0,0.8};
 		};
-	};
+	};	
 };

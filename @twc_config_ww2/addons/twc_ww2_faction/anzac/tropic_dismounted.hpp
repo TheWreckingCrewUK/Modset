@@ -15,6 +15,16 @@ class TWC_Infantry_WW2_ANZAC_Dismounted_Tropic_SMG: TWC_Infantry_WW2_ANZAC_Tropi
 	CATEGORY(TWC_Infantry_ANZAC_Dismounted_Tropic)
 	backpack = "TWC_Backpack_WW2_UK_Early_Dismounted_SMG";
 };
+class TWC_Infantry_WW2_ANZAC_Dismounted_Tropic_SMG_Owen_Early: TWC_Infantry_WW2_ANZAC_Tropic_SMG_Owen_Early
+{
+	CATEGORY(TWC_Infantry_ANZAC_Dismounted_Tropic)
+	backpack = "TWC_Backpack_WW2_UK_Early_Dismounted_SMG_Owen";
+};
+class TWC_Infantry_WW2_ANZAC_Dismounted_Tropic_SMG_Owen_Late: TWC_Infantry_WW2_ANZAC_Tropic_SMG_Owen_Late
+{
+	CATEGORY(TWC_Infantry_ANZAC_Dismounted_Tropic)
+	backpack = "TWC_Backpack_WW2_UK_Early_Dismounted_SMG_Owen";
+};
 class TWC_Infantry_WW2_ANZAC_Dismounted_Tropic_MG: TWC_Infantry_WW2_ANZAC_Tropic_MG
 {
 	CATEGORY(TWC_Infantry_ANZAC_Dismounted_Tropic)

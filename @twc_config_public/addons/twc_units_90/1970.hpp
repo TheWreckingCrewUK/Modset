@@ -802,34 +802,22 @@
 		};
 		weapons[]=
 		{
-			"ukcw_l42",
 			"Throw",
 			"Binocular",
 			"Put"
 		};
 		respawnweapons[]=
 		{
-			"ukcw_l42",
 			"Throw",
 			"Binocular",
 			"Put"
 		};
 		magazines[]=
 		{
-			"ukcw_l42_10rnd_mag",
-			"ukcw_l42_10rnd_mag",
-			"ukcw_l42_10rnd_mag",
-			"ukcw_l42_10rnd_mag",
-			"ukcw_l42_10rnd_mag",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
-			"ukcw_l42_10rnd_mag",
-			"ukcw_l42_10rnd_mag",
-			"ukcw_l42_10rnd_mag",
-			"ukcw_l42_10rnd_mag",
-			"ukcw_l42_10rnd_mag",
 			"SmokeShell"
 		};
 		Items[]=

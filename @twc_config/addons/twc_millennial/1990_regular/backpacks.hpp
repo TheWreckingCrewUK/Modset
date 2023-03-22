@@ -74,9 +74,11 @@ class TWC_Backpack_1990_Regular_##CAMO##_Platoon_Medic: INHERIT \
 		ADD_ITEM(ACE_atropine,4); \
 		ADD_ITEM(ACE_epinephrine,10); \
 		ADD_ITEM(ACE_salineIV_500,6); \
+		ADD_ITEM(ACE_salineIV,6); \
 		ADD_ITEM(ACE_tourniquet,4); \
+		ADD_ITEM(ACE_splint,6); \
 		ADD_ITEM(ACE_personalAidKit,1); \
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1); \
+		ADD_ITEM(ACE_surgicalKit,1); \
 	}; \
 };
 
@@ -87,7 +89,6 @@ class TWC_Backpack_1990_Regular_##CAMO##_MILAN_Ass: INHERIT \
 	scopeArsenal = 1; \
 	maximumLoad = 500; \
 	class TransportItems { \
-		ADD_ITEM(ukcw_milan_ace_missile,2); \
 	}; \
 };
 
@@ -107,8 +108,8 @@ class TWC_Backpack_1990_Regular_##CAMO##_L14A1_Ass: INHERIT \
 { \
 	scope = 1; \
 	class TransportMagazines { \
-		ADD_MAGA(ukcw_l14a1_HEAT,2); \
-		ADD_MAGA(ukcw_l14a1_HE,2);\
+		ADD_MAGA(TWC_Magazine_L14A1_HEAT,2); \
+		ADD_MAGA(TWC_Magazine_L14A1_HE,2);\
 	}; \
 };
 
@@ -293,10 +294,11 @@ class TWC_Backpack_1990_Regular_Dismounted_##CAMO##_Platoon_Medic: INHERIT \
 		ADD_ITEM(ACE_adenosine,4); \
 		ADD_ITEM(ACE_atropine,4); \
 		ADD_ITEM(ACE_epinephrine,10); \
-		ADD_ITEM(ACE_salineIV_500,6); \
+		ADD_ITEM(ACE_salineIV_500,12); \
+		ADD_ITEM(ACE_salineIV_250,4); \
 		ADD_ITEM(ACE_tourniquet,4); \
 		ADD_ITEM(ACE_personalAidKit,1); \
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1); \
+		ADD_ITEM(ACE_surgicalKit,1); \
 	}; \
 };
 

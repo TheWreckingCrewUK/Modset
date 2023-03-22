@@ -7,7 +7,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Rifleman: TWC_Infantry_ColdWar_Regular_
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -15,7 +15,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Rifleman: TWC_Infantry_ColdWar_Regular_
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -43,6 +43,14 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Rifleman: TWC_Infantry_ColdWar_Regular_
 		MAG_7("UK3CB_BAF_762_20Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		"SmokeShell"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar_Regular_Woodland_Rifleman_SUIT
@@ -52,7 +60,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar_Reg
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -60,7 +68,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar_Reg
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -88,6 +96,14 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Rifleman_SUIT: TWC_Infantry_ColdWar_Reg
 		MAG_7("UK3CB_BAF_762_20Rnd"),
 		MAG_2("CUP_HandGrenade_L109A2_HE"),
 		"SmokeShell"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_SectionCommander: TWC_Infantry_ColdWar_Regular_Woodland_SectionCommander
@@ -98,7 +114,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_SectionCommander: TWC_Infantry_ColdWar_
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -106,10 +122,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_SectionCommander: TWC_Infantry_ColdWar_
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Woodland_2iC
@@ -120,7 +144,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Woodl
 	linkedItems[] =
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -128,10 +152,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_2iC: TWC_Infantry_ColdWar_Regular_Woodl
 	respawnLinkedItems[] =
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_MG: TWC_Infantry_ColdWar_Regular_Woodland_MG
@@ -141,7 +173,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_MG: TWC_Infantry_ColdWar_Regular_Woodla
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -149,7 +181,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_MG: TWC_Infantry_ColdWar_Regular_Woodla
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -176,6 +208,14 @@ class TWC_Infantry_ColdWar_COIN_Woodland_MG: TWC_Infantry_ColdWar_Regular_Woodla
 		MAG_10("SP_30Rnd_762_L4"),
 		"SmokeShell"
 	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_ASSMG: TWC_Infantry_ColdWar_Regular_Woodland_ASSMG
 {
@@ -185,7 +225,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_ASSMG: TWC_Infantry_ColdWar_Regular_Woo
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -193,10 +233,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_ASSMG: TWC_Infantry_ColdWar_Regular_Woo
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 
@@ -209,7 +257,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Platoon_Commander: TWC_Infantry_ColdWar
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -217,10 +265,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Platoon_Commander: TWC_Infantry_ColdWar
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_Platoon_Sergeant: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Sergeant
@@ -231,7 +287,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Platoon_Sergeant: TWC_Infantry_ColdWar_
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -239,10 +295,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Platoon_Sergeant: TWC_Infantry_ColdWar_
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_Regular_Woodland_Platoon_Medic
@@ -253,7 +317,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_Reg
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -261,10 +325,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Platoon_Medic: TWC_Infantry_ColdWar_Reg
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_CSM: TWC_Infantry_ColdWar_Regular_Woodland_CSM
@@ -275,7 +347,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_CSM: TWC_Infantry_ColdWar_Regular_Woodl
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -283,10 +355,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_CSM: TWC_Infantry_ColdWar_Regular_Woodl
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 
@@ -299,7 +379,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Company_Commander: TWC_Infantry_ColdWar
 	linkedItems[] =
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -307,10 +387,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Company_Commander: TWC_Infantry_ColdWar
 	respawnLinkedItems[] =
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_Company_2iC: TWC_Infantry_ColdWar_Regular_Woodland_Company_2iC
@@ -321,7 +409,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Company_2iC: TWC_Infantry_ColdWar_Regul
 	linkedItems[] =
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -329,10 +417,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Company_2iC: TWC_Infantry_ColdWar_Regul
 	respawnLinkedItems[] =
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_Company_Sergeant: TWC_Infantry_ColdWar_Regular_Woodland_Company_Sergeant
@@ -343,7 +439,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Company_Sergeant: TWC_Infantry_ColdWar_
 	linkedItems[] =
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -351,10 +447,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Company_Sergeant: TWC_Infantry_ColdWar_
 	respawnLinkedItems[] =
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 
@@ -366,7 +470,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Sniper: TWC_Infantry_ColdWar_Regular_Wo
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -374,10 +478,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Sniper: TWC_Infantry_ColdWar_Regular_Wo
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_Spotter: TWC_Infantry_ColdWar_Regular_Woodland_Spotter
@@ -387,7 +499,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Spotter: TWC_Infantry_ColdWar_Regular_W
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -395,10 +507,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Spotter: TWC_Infantry_ColdWar_Regular_W
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 
@@ -410,7 +530,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Artillery_Commander: TWC_Infantry_ColdW
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -418,10 +538,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Artillery_Commander: TWC_Infantry_ColdW
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_Artillery_Crew: TWC_Infantry_ColdWar_Regular_Woodland_Artillery_Crew
@@ -431,7 +559,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Artillery_Crew: TWC_Infantry_ColdWar_Re
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -439,10 +567,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_Artillery_Crew: TWC_Infantry_ColdWar_Re
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 class TWC_Infantry_ColdWar_COIN_Woodland_FO: TWC_Infantry_ColdWar_Regular_Woodland_FO
@@ -452,7 +588,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_FO: TWC_Infantry_ColdWar_Regular_Woodla
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -460,10 +596,18 @@ class TWC_Infantry_ColdWar_COIN_Woodland_FO: TWC_Infantry_ColdWar_Regular_Woodla
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };
 
@@ -475,7 +619,7 @@ class TWC_Infantry_ColdWar_COIN_Woodland_FAC: TWC_Infantry_ColdWar_Regular_Woodl
 	linkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
@@ -483,9 +627,17 @@ class TWC_Infantry_ColdWar_COIN_Woodland_FAC: TWC_Infantry_ColdWar_Regular_Woodl
 	respawnLinkedItems[]=
 	{
 		"CUP_V_CDF_6B3_1_Green",
-		"UK3CB_BAF_H_Beret_Rifles",
+		"SP_Helmet_MkV_OD_FoliageMid",
 		"ItemCompass",
 		"itemMap",
 		"ItemWatch"
+	};
+	Items[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
+	};
+	respawnItems[] +=
+	{
+		"UK3CB_BAF_H_Beret_Rifles"
 	};
 };

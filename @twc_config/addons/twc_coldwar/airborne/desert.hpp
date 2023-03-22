@@ -232,6 +232,14 @@ class TWC_Infantry_ColdWar_Airborne_Desert_Platoon_Medic: TWC_Infantry_ColdWar_R
 		"itemMap",
 		"ItemWatch"
 	};
+	items[] +=
+	{
+		MAG_4("ACE_salineIV_250")
+	};
+	respawnItems[] +=
+	{
+		MAG_4("ACE_salineIV_250")
+	};
 	weapons[] +=
 	{
 		"twc_fieldTent"

@@ -13,10 +13,6 @@ class CfgFunctions {
 			class openMap {};
 			class copyMarkers {};
 			class removeTempMarkers {};
-
-			/** HELPER FUNCTIONS **/
-			class isInMarkers {};
-			class markerToArray {};
 		};
 	};
 };
