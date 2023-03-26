@@ -4,10 +4,6 @@ class TWC_Backpack_1950_SectionCommander: B_LIB_UK_HSack
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
@@ -119,10 +115,6 @@ class TWC_Backpack_1950_Dismounted_SectionCommander: B_LIB_UK_HSack
 	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(LIB_32Rnd_9x19_Sten,8);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
@@ -153,10 +145,6 @@ class TWC_Backpack_1950_Platoon_Commander: B_LIB_UK_HSack
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
 		ADD_MAGA(LIB_32Rnd_9x19_Sten,6);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
@@ -175,10 +163,6 @@ class TWC_Backpack_1950_Platoon_Sergeant: B_LIB_UK_HSack
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
@@ -203,7 +187,7 @@ class TWC_Backpack_1950_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty
 		ADD_ITEM(ACE_tourniquet,4);
 		ADD_ITEM(ACE_splint,6);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 };
 class TWC_Backpack_1950_Platoon_Mortar: B_LIB_UK_HSack
@@ -227,10 +211,6 @@ class TWC_Backpack_1950_Dismounted_Platoon_Commander: B_LIB_UK_HSack
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
 		ADD_MAGA(LIB_32Rnd_9x19_Sten,6);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
@@ -249,10 +229,6 @@ class TWC_Backpack_1950_Dismounted_Platoon_Sergeant: fow_b_uk_bergenpack
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
@@ -276,7 +252,7 @@ class TWC_Backpack_1950_Dismounted_Platoon_Medic: B_LIB_SOV_RA_MedicalBag_Empty
 		ADD_ITEM(ACE_salineIV_500,6);
 		ADD_ITEM(ACE_tourniquet,4);
 		ADD_ITEM(ACE_personalAidKit,1);
-		ADD_ITEM(TWC_Item_Medical_SutureKit_25,1);
+		ADD_ITEM(ACE_surgicalKit,1);
 	};
 };
 class TWC_Backpack_1950_Dismounted_Platoon_Mortar: fow_b_uk_bergenpack
@@ -342,10 +318,6 @@ class TWC_Backpack_1950_FAC: B_LIB_US_Radio_ACRE2
 		ADD_ITEM(ACRE_PRC77,1);
 	};
 	class TransportMagazines {
-		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
