@@ -325,7 +325,6 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Commander: TWC_Infantry_WW2_UK_L
 		MAG_2("SmokeShellGreen")
 	};
 	nightItems[] = {
-		nightItems[] = {
 		MAG_2("Chemlight_green"),
 		MAG_2("ACE_HandFlare_White"),
 		MAG_6("TWC_Magazine_SignalFlare_Blue"),
