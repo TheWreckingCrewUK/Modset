@@ -49,7 +49,7 @@ class TWC_Infantry_2020_Regular_Woodland_Rifleman: TWC_Infantry_2020_Base
 		"UK3CB_BAF_Kite"
 	};
 };
-class TWC_Infantry_2020_Regular_Woodland_Grenadier: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_Grenadier: TWC_Infantry_2020_Base
 {
 	displayName = "Grenadier";
 	backpack = "TWC_Backpack_2020_Regular_Woodland";
@@ -116,7 +116,7 @@ class TWC_Infantry_2020_Regular_Woodland_Grenadier: TWC_Infantry_2020_Regular_Wo
 		MAG_3("UGL_FlareWhite_F")
 	};
 };
-class TWC_Infantry_2020_Regular_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_MG: TWC_Infantry_2020_Base
 {
 	displayName = "Machine Gunner";
 	backpack = "TWC_Backpack_2020_Regular_Woodland";
@@ -173,7 +173,7 @@ class TWC_Infantry_2020_Regular_Woodland_MG: TWC_Infantry_2020_Regular_Woodland_
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2020_Regular_Woodland_Marksman: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_Marksman: TWC_Infantry_2020_Base
 {
 	displayName = "Marksman";
 	backpack = "TWC_Backpack_2020_Regular_Woodland";
@@ -232,7 +232,7 @@ class TWC_Infantry_2020_Regular_Woodland_Marksman: TWC_Infantry_2020_Regular_Woo
 		"UK3CB_BAF_MaxiKite"
 	};
 };
-class TWC_Infantry_2020_Regular_Woodland_SectionCommander: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_SectionCommander: TWC_Infantry_2020_Base
 {
 	displayName = "Section Commander";
 	backpack = "TWC_Backpack_2020_Regular_Woodland_SectionCommander";
@@ -302,7 +302,7 @@ class TWC_Infantry_2020_Regular_Woodland_SectionCommander: TWC_Infantry_2020_Reg
 		"B_IR_Grenade"
 	};
 };
-class TWC_Infantry_2020_Regular_Woodland_2iC: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_2iC: TWC_Infantry_2020_Base
 {
 	displayName = "2iC";
 	backpack = "TWC_Backpack_2020_Regular_Woodland_2iC";
@@ -352,7 +352,7 @@ class TWC_Infantry_2020_Regular_Woodland_2iC: TWC_Infantry_2020_Regular_Woodland
 		"ACE_EntrenchingTool"
 	};
 };
-class TWC_Infantry_2020_Regular_Woodland_LightCavCommander: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_LightCavCommander: TWC_Infantry_2020_Base
 {
 	displayName = "Light Cavalry Commander";
 	backpack = "TWC_Backpack_2020_Regular_Woodland_SectionCommander";
@@ -425,7 +425,7 @@ class TWC_Infantry_2020_Regular_Woodland_LightCavCommander: TWC_Infantry_2020_Re
 		"ACE_Flashlight_MX991"
 	};
 };
-class TWC_Infantry_2020_Regular_Woodland_LightCavCrew: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_LightCavCrew: TWC_Infantry_2020_Base
 {
 	displayName = "Light Cavalry Crewman";
 	TWC_isCommandRole = 1;
@@ -534,6 +534,10 @@ class TWC_Infantry_2020_Regular_Woodland_Platoon_Commander: TWC_Infantry_2020_Re
 		MAG_2("UK3CB_BAF_9_17Rnd"),
 		MAG_2("SmokeShell")
 	};
+	nightItems[] += 
+	{
+		"ACE_Flashlight_MX991"
+	};
 };
 class TWC_Infantry_2020_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_2020_Regular_Woodland_Platoon_Commander
 {
@@ -566,7 +570,7 @@ class TWC_Infantry_2020_Regular_Woodland_Platoon_Sergeant: TWC_Infantry_2020_Reg
 		MAG_2("ACE_CableTie")
 	};	
 };
-class TWC_Infantry_2020_Regular_Woodland_Platoon_Medic: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_Platoon_Medic: TWC_Infantry_2020_Base
 {
 	displayName = "Platoon Medic";
 	backpack = "TWC_Backpack_2020_Regular_Woodland_Platoon_Medic";
@@ -587,15 +591,13 @@ class TWC_Infantry_2020_Regular_Woodland_Platoon_Medic: TWC_Infantry_2020_Regula
 		"itemMap",
 		"ItemWatch"
 	};
-	Items[] =
+	Items[] +=
 	{
-		MEDICAL_LOADOUT,
 		MAG_4("ACE_salineIV_250"),
 		MAG_2("ACE_CableTie")
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		MAG_4("ACE_salineIV_250"),
 		MAG_2("ACE_CableTie")
 	};
@@ -708,7 +710,7 @@ class TWC_Infantry_2020_Regular_Woodland_Company_Sergeant: TWC_Infantry_2020_Reg
 };
 
 //AT + AA
-class TWC_Infantry_2020_Regular_Woodland_Javelin_Gunner: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_Javelin_Gunner: TWC_Infantry_2020_Base
 {
 	displayName = "Javelin Gunner";
 	backpack = "TWC_Backpack_Modern_Regular_Woodland_Javelin";
@@ -790,7 +792,7 @@ class TWC_Infantry_2020_Regular_Woodland_Starstreak_Ass: TWC_Infantry_2020_Regul
 };
 
 //Sniper Team
-class TWC_Infantry_2020_Regular_Woodland_Sniper: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_Sniper: TWC_Infantry_2020_Base
 {
 	displayName = "Sniper";
 	backpack = "";
@@ -811,14 +813,12 @@ class TWC_Infantry_2020_Regular_Woodland_Sniper: TWC_Infantry_2020_Regular_Woodl
 		"itemMap",
 		"ItemWatch"
 	};
-	items[] =
+	items[] +=
 	{
-		MEDICAL_LOADOUT,
 		"ACE_RangeCard"
 	};
-	respawnItems[] =
+	respawnItems[] +=
 	{
-		MEDICAL_LOADOUT,
 		"ACE_RangeCard"
 	};
 	weapons[] =
@@ -1021,7 +1021,7 @@ class TWC_Infantry_2020_Regular_Woodland_FAC: TWC_Infantry_2020_Regular_Woodland
 		"B_IR_Grenade"
 	};
 };
-class TWC_Infantry_2020_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_2020_Base
 {
 	displayName = "Helicopter Pilot";
 	TWC_isCommandRole = 1;
@@ -1068,7 +1068,7 @@ class TWC_Infantry_2020_Regular_Woodland_Helicopter_Pilot: TWC_Infantry_2020_Reg
 		MAG_2("SmokeShell")
 	};
 };
-class TWC_Infantry_2020_Regular_Woodland_UAVOp: TWC_Infantry_2020_Regular_Woodland_Rifleman
+class TWC_Infantry_2020_Regular_Woodland_UAVOp: TWC_Infantry_2020_Base
 {
 	displayName = "UAV Operator";
 	backpack = "B_UAV_01_backpack_F";

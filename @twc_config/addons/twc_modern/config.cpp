@@ -214,8 +214,7 @@ class CfgVehicles
 
 		nightItems[] = {
 			MAG_2("Chemlight_green"),
-			MAG_2("ACE_HandFlare_White"),
-			"ACE_Flashlight_MX991",
+			MAG_2("ACE_HandFlare_White")
 		};
 		nightLinkedItems[] = {
 			"twc_nightvision_gen3"
