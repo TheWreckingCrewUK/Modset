@@ -247,7 +247,11 @@ class TWC_Infantry_1950_Regular_Arctic_SectionCommander: TWC_Infantry_1950_Regul
 	};
 	nightItems[] = {
 		MAG_2("Chemlight_green"),
-		MAG_2("ACE_HandFlare_White")
+		MAG_2("ACE_HandFlare_White"),
+		MAG_6("TWC_Magazine_SignalFlare_Blue"),
+		MAG_3("TWC_Magazine_SignalFlare_Red"),
+		MAG_3("TWC_Magazine_SignalFlare_Green"),
+		MAG_3("TWC_Magazine_SignalFlare_Yellow")
 	};
 };
 class TWC_Infantry_1950_Regular_Arctic_2iC: TWC_Infantry_1950_Regular_Arctic_Rifleman
@@ -349,6 +353,10 @@ class TWC_Infantry_1950_Regular_Arctic_Platoon_Commander: TWC_Infantry_1950_Regu
 	nightItems[] = {
 		MAG_2("Chemlight_green"),
 		MAG_2("ACE_HandFlare_White"),
+		MAG_6("TWC_Magazine_SignalFlare_Blue"),
+		MAG_3("TWC_Magazine_SignalFlare_Red"),
+		MAG_3("TWC_Magazine_SignalFlare_Green"),
+		MAG_3("TWC_Magazine_SignalFlare_Yellow"),
 		"ACE_Flashlight_MX991"
 	};
 };

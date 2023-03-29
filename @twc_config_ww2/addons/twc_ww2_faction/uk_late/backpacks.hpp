@@ -4,10 +4,6 @@ class TWC_Backpack_WW2_UK_Late_SectionCommander: B_LIB_UK_HSack_Tea
 	scope = 1;
 	scopeArsenal = 1;
 	class TransportMagazines {
-		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
@@ -89,10 +85,6 @@ class TWC_Backpack_WW2_UK_Late_Dismounted_SectionCommander: B_LIB_UK_HSack_Tea
 	scopeArsenal = 1;
 	class TransportMagazines {
 		ADD_MAGA(LIB_32Rnd_9x19_Sten,6);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
@@ -121,10 +113,6 @@ class TWC_Backpack_WW2_UK_Late_Platoon_Commander: B_LIB_UK_HSack_Tea
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
 		ADD_MAGA(LIB_32Rnd_9x19_Sten,6);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);
@@ -143,10 +131,6 @@ class TWC_Backpack_WW2_UK_Late_Platoon_Sergeant: B_LIB_UK_HSack_Tea
 		ADD_MAGA(SmokeShell,3);
 		ADD_MAGA(SmokeShellRed,2);
 		ADD_MAGA(SmokeShellBlue,2);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Blue, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Red, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Green, 3);
-		ADD_MAGA(TWC_Magazine_SignalFlare_Yellow, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Green, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Red, 3);
 		ADD_MAGA(TWC_Magazine_SignalSmoke_Yellow, 3);

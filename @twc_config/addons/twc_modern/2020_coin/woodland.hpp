@@ -127,7 +127,7 @@ class TWC_Infantry_2020_COIN_Woodland_2iC: TWC_Infantry_2020_Regular_Woodland_2i
 		"ACE_EntrenchingTool"
 	};
 };
-class TWC_Infantry_2020_COIN_Woodland_LightCavCommander: TWC_Infantry_2020_COIN_Woodland_Rifleman
+class TWC_Infantry_2020_COIN_Woodland_LightCavCommander: TWC_Infantry_2020_Regular_Woodland_LightCavCommander
 {
 	displayName = "Light Cavalry Commander";
 	backpack = "TWC_Backpack_2020_Regular_Woodland_SectionCommander";
@@ -164,7 +164,7 @@ class TWC_Infantry_2020_COIN_Woodland_LightCavCommander: TWC_Infantry_2020_COIN_
 	};
 
 };
-class TWC_Infantry_2020_COIN_Woodland_LightCavCrew: TWC_Infantry_2020_COIN_Woodland_Rifleman
+class TWC_Infantry_2020_COIN_Woodland_LightCavCrew: TWC_Infantry_2020_Regular_Woodland_LightCavCrew
 {
 	displayName = "Light Cavalry Crewman";
 	TWC_isCommandRole = 1;

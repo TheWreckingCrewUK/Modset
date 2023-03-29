@@ -240,7 +240,11 @@ class TWC_Infantry_WW2_UK_Late_Woodland_SectionCommander: TWC_Infantry_WW2_UK_La
 	};
 	nightItems[] = {
 		MAG_2("Chemlight_green"),
-		MAG_2("ACE_HandFlare_White")
+		MAG_2("ACE_HandFlare_White"),
+		MAG_6("TWC_Magazine_SignalFlare_Blue"),
+		MAG_3("TWC_Magazine_SignalFlare_Red"),
+		MAG_3("TWC_Magazine_SignalFlare_Green"),
+		MAG_3("TWC_Magazine_SignalFlare_Yellow")
 	};
 };
 class TWC_Infantry_WW2_UK_Late_Woodland_2iC: TWC_Infantry_WW2_UK_Late_Woodland_Rifleman
@@ -323,6 +327,10 @@ class TWC_Infantry_WW2_UK_Late_Woodland_Platoon_Commander: TWC_Infantry_WW2_UK_L
 	nightItems[] = {
 		MAG_2("Chemlight_green"),
 		MAG_2("ACE_HandFlare_White"),
+		MAG_6("TWC_Magazine_SignalFlare_Blue"),
+		MAG_3("TWC_Magazine_SignalFlare_Red"),
+		MAG_3("TWC_Magazine_SignalFlare_Green"),
+		MAG_3("TWC_Magazine_SignalFlare_Yellow"),
 		"ACE_Flashlight_MX991"
 	};
 };

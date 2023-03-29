@@ -139,8 +139,7 @@ class CfgVehicles
 		respawnmagazines[] = {};
 		
 		nightItems[] = {
-			"Chemlight_green",
-			"Chemlight_green"
+			MAG_2("ACE_HandFlare_White")
 		};
 	};
 	class TWC_Infantry_WW2_Plane_Pilot: TWC_Infantry_1950_Base
