@@ -1,130 +1,17 @@
 class CfgPatches {
-	class twc_faction {
+	class TWC_Faction {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {
-			"A3_Characters_F_BLUFOR",
-			"A3_Characters_F_OPFOR",
-			"A3_Characters_F_Common",
-			"A3_Characters_F",
-			"a3_characters_f_beta",
-			"a3_characters_f_gamma"
-		};
+		requiredAddons[] = { };
 	};
 };
+
+// CfgEditorCategories is used for objects
+#include "CfgEditorCategories.hpp"
 
 // CfgFactionClasses is used for vehicles/units 
-class CfgFactionClasses {
-	class TWC_General {
-		displayName = "TWC Operations - Multi-Era";
-		author = "The Wrecking Crew";
-		icon = "TWClogo.paa";
-		priority = 2;
-		side = 1;
-		ace_nametags_rankIcons[] = {
-			"\twc_framework\ranks\private.paa",
-			"\twc_framework\ranks\lance_corporal.paa",
-			"\twc_framework\ranks\corporal.paa",
-			"\twc_framework\ranks\sergeant.paa",
-			"\twc_framework\ranks\staff_sergeant.paa",
-			"\twc_framework\ranks\second_lieutenant.paa",
-			"\twc_framework\ranks\major.paa"
-		};
-	};
-	
-	class TWC_ColdWar {
-		displayName = "TWC Operations - Cold War";
-		author = "The Wrecking Crew";
-		icon = "TWClogo.paa";
-		priority = 2;
-		side = 1;
-		ace_nametags_rankIcons[] = {
-			"\twc_framework\ranks\private.paa",
-			"\twc_framework\ranks\lance_corporal.paa",
-			"\twc_framework\ranks\corporal.paa",
-			"\twc_framework\ranks\sergeant.paa",
-			"\twc_framework\ranks\staff_sergeant.paa",
-			"\twc_framework\ranks\second_lieutenant.paa",
-			"\twc_framework\ranks\major.paa"
-		};
-	};
-	
-	class TWC_Millennial {
-		displayName = "TWC Operations - Millennial";
-		author = "The Wrecking Crew";
-		icon = "TWClogo.paa";
-		priority = 2;
-		side = 1;
-		ace_nametags_rankIcons[] = {
-			"\twc_framework\ranks\private.paa",
-			"\twc_framework\ranks\lance_corporal.paa",
-			"\twc_framework\ranks\corporal.paa",
-			"\twc_framework\ranks\sergeant.paa",
-			"\twc_framework\ranks\staff_sergeant.paa",
-			"\twc_framework\ranks\second_lieutenant.paa",
-			"\twc_framework\ranks\major.paa"
-		};
-	};
-	
-	class TWC_Modern {
-		displayName = "TWC Operations - Modern";
-		author = "The Wrecking Crew";
-		icon = "TWClogo.paa";
-		priority = 2;
-		side = 1;
-		ace_nametags_rankIcons[] = {
-			"\twc_framework\ranks\private.paa",
-			"\twc_framework\ranks\lance_corporal.paa",
-			"\twc_framework\ranks\corporal.paa",
-			"\twc_framework\ranks\sergeant.paa",
-			"\twc_framework\ranks\staff_sergeant.paa",
-			"\twc_framework\ranks\second_lieutenant.paa",
-			"\twc_framework\ranks\major.paa"
-		};
-	};
-	
-	class TWC_Training {
-		displayName = "TWC Training";
-		author = "The Wrecking Crew";
-		icon = "TWClogo.paa";
-		priority = 2;
-		side = 1;
-		ace_nametags_rankIcons[] = {
-			"\twc_framework\ranks\private.paa",
-			"\twc_framework\ranks\lance_corporal.paa",
-			"\twc_framework\ranks\corporal.paa",
-			"\twc_framework\ranks\sergeant.paa",
-			"\twc_framework\ranks\staff_sergeant.paa",
-			"\twc_framework\ranks\second_lieutenant.paa",
-			"\twc_framework\ranks\major.paa"
-		};
-	};
-	
-	class TWC_WW2 {
-		displayName = "TWC Operations - WW2";
-		author = "Saxon, Bosenator, Rik";
-		icon = "TWClogo.paa";
-		priority = 2;
-		side = 2;
-		ace_nametags_rankIcons[] = {
-			"\twc_framework\ranks\private.paa",
-			"\twc_framework\ranks\lance_corporal.paa",
-			"\twc_framework\ranks\corporal.paa",
-			"\twc_framework\ranks\sergeant.paa",
-			"\twc_framework\ranks\staff_sergeant.paa",
-			"\twc_framework\ranks\second_lieutenant.paa",
-			"\twc_framework\ranks\major.paa"
-		};
-	};
-};
-
-// CfgEditorCategories is used for props
-class CfgEditorCategories {
-	class TWC_Crates {
-		displayName = "Ammo Boxes (TWC)"; 
-	};
-};
+#include "CfgFactionClasses.hpp"
 
 class CfgEditorSubcategories {
 	// AmmoBoxes (will be changed to ERAs in the future)

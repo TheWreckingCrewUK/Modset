@@ -1,6 +1,7 @@
 class CfgVehicles {
 	class Logic;
 	class ModuleOrdnanceMortar_F;
+	class ModuleCAS_F;
 	
 	class Module_Base: Logic {
 		class AttributesBase;
@@ -22,8 +23,6 @@ class CfgVehicles {
 			class Player;
 		};
 	};
-
-	class ModuleCAS_F;
 
 	class twc_ModuleMission: Module_F {
 		author = "[TWC] jayman";
