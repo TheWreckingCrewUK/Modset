@@ -14,4 +14,25 @@ class CfgEditorSubcategories {
 	class twc_subPrep {
 		displayName = "Compositions";
 	};
+	
+	/*
+	 * Operation Catergories
+	 */
+	
+	
+	
+	/*
+	 * Public Catergories
+	 */
+	class US_Men_Modern {
+		displayName = "Men (US Army Modern)";
+	};
+	
+	class USMC_Modern_WD {
+		displayName = "Men (Woodland)";
+	};
+	
+	class USMC_Modern_D {
+		displayName = "Men (Desert)";
+	};
 };

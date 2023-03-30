@@ -112,6 +112,14 @@ class CfgFactionClasses {
 		};
 	};
 	
+	class TWC_Public_USMC {
+		displayName = "TWC - Public USMC Units";
+		author = "The Wrecking Crew";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 1;
+	};
+	
 	/*
 	 * Custom TWC Module Factions (Editor Catergories, really)
 	 */

@@ -7,10 +7,8 @@ class CfgPatches {
 	};
 };
 
-// CfgEditorCategories is used for objects
 #include "CfgEditorCategories.hpp"
-
-// CfgFactionClasses is used for vehicles/units 
+#include "CfgEditorSubCategories.hpp"
 #include "CfgFactionClasses.hpp"
 
 class CfgEditorSubcategories {

@@ -53,42 +53,18 @@ class CfgPatches
 			"A3_Characters_F_Common",
 			"A3_Characters_F",
 			"a3_characters_f_beta",
-			"a3_characters_f_gamma"
+			"a3_characters_f_gamma",
+			"TWC_Faction"
 		};
 
 	};
 };
+
 class EventHandlers;
-class CfgEditorSubCategories
-{
-	class US_Men_Modern
-	{
-		displayName = "Men (US Army Modern)";
-	};
-	
-	class USMC_Modern_WD
-	{
-		displayName = "Men (Woodland)";
-	};
-	class USMC_Modern_D
-	{
-		displayName = "Men (Desert)";
-	};
-};
-class CfgFactionClasses
-{
-	class twc_public_usmc
-	{
-		displayName="TWC Public USMC Units";
-		author="The Wrecking Crew";
-		icon="TWClogo.paa";
-		priority=2;
-		side=1;
-	};
-};
+
 #include "compositions.hpp"
-class CfgVehicles
-{
+
+class CfgVehicles {
 	// Time saving MACROs - NC = Non-Conflict
 	#define maga_nc(a,b) class _nc_##a {magazine = a; count = b;}
 	#define weap_nc(a,b) class _nc_##a {weapon = a; count = b;}
@@ -101,4 +77,5 @@ class CfgVehicles
 	
 	#include "marinesbackpacks.hpp"
 };
+
 #include "weapons.hpp"
