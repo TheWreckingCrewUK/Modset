@@ -34,7 +34,7 @@ class CfgPatches {
 	};
 };
 
-//#include "qol.hpp"
+#include "qol.hpp"
 #include "CfgAmmo.hpp"
 
 class Mode_SemiAuto;
