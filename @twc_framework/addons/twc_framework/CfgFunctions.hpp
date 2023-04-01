@@ -147,14 +147,6 @@ class CfgFunctions {
 			class moduleDoStop {};
 		};
 		
-		class cache {
-			file = "twc_framework\cache";
-			
-			class cacheModuleInit {};
-			class initAICache {};
-			class initVehicleCache {};
-		};
-		
 		class curator {
 			file = "twc_framework\curator";
 			

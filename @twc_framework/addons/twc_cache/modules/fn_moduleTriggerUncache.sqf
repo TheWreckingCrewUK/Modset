@@ -16,16 +16,16 @@ params ["_logic", "_units", "_activated"];
 
 if (!_activated || !isServer) exitWith {};
 
-
 {
-	if (_x isKindOf "CAManBase") then {
+	if (vehicle _x == _x) then {
 		(group _x) enableDynamicSimulation false;
 	} else {
 		(group _x) enableDynamicSimulation false;
+		
 		//uncache passengers
 		{
 			(group _x) enableDynamicSimulation false;
-		}forEach (crew  vehicle _x);
+		} forEach (crew vehicle _x);
 	};
 } forEach _units;
 
