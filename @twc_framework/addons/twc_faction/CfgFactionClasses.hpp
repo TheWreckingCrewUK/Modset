@@ -123,7 +123,7 @@ class CfgFactionClasses {
 	/*
 	 * Custom TWC Module Factions (Editor Catergories, really)
 	 */
-	class twc_missionSetup: NO_CATEGORY {
+	class twc_mission_config: NO_CATEGORY {
 		displayName = "TWC - Mission Essentials";
 	};
 

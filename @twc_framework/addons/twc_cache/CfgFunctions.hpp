@@ -6,13 +6,16 @@ class CfgFunctions {
 			/*
 			 * Functions
 			 */
-			class cacheModuleInit {};
+			class initCacheModule {};
 			class initAICache {};
 			class initVehicleCache {};
 			
 			/*
 			 * Modules & Zeus
 			 */
+			class moduleDisableCaching {};
+			class moduleTriggerUncache {};
+			class zeusForceUncache {};
 		};
 	};
 };

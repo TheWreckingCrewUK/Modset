@@ -1,10 +1,16 @@
 class CfgPatches {
 	class TWC_Cache {
-		units[] = {};
+		units[] = {
+			"TWC_Module_CacheConfig",
+			"TWC_Module_TriggerUncache",
+			"TWC_Module_DisableCaching",
+			"TWC_Zeus_forceUncache"
+		};
 		weapons[] = {};
 		
 		requiredAddons[] = {
 			"TWC_Core",
+			"TWC_Faction",
 			"TWC_Framework"
 		};
 		

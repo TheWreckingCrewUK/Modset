@@ -28,7 +28,7 @@ class CfgVehicles {
 		author = "[TWC] jayman";
 		scope = 2;
 		displayName = "TWC Mission Module";
-		category = "twc_missionSetup";
+		category = "twc_mission_config";
 		function = "twc_fnc_missionModuleInit";
 		functionPriority = 1;
 		isGlobal = 2;
@@ -184,61 +184,12 @@ class CfgVehicles {
 		scope = 1;
 		ammo = "twc_ammo_artillery_illumination_ir";
 	};
-	
-	class twc_moduelCache: Module_F {
-		author = "[TWC] jayman";
-		scope = 2;
-		displayName = "Cache Configuration";
-		category = "twc_cache_modules";
-		function = "twc_fnc_cacheModuleInit";
-		functionPriority = 1;
-		isGlobal = 0;
-		isTriggerActivated = 0;
-		isDisposable = 0;
-
-		class Arguments {
-			class enabled {
-				displayName = "Enabled";
-				description = "Enable Caching (highly recommended)";
-				typeName = "BOOL";
-				defaultValue = 1;
-			};
-
-			class characters {
-				displayName = "AI Range";
-				description = "Range at which AI will cache. 0 to disable.";
-				typeName = "NUMBER";
-				defaultValue = 1500;
-			};
-
-			class vehicles {
-				displayName = "Vehicle Caching";
-				description = "Range at which vehicles will cache. 0 to disable.";
-				typeName = "NUMBER";
-				defaultValue = 2000;
-			};
-			
-			class emptyVehicles {
-				displayName = "Empty Vehicles";
-				description = "Range at which empty vehicles will cache. 0 to disable. Should be set higher than the longest AT ability";
-				typeName = "NUMBER";
-				defaultValue = 800;
-			};
-			
-			class isMoving {
-				displayName = "is Moving?";
-				description = "Increases Range when units are moving. It's a multiplier";
-				typeName = "NUMBER";
-				defaultValue = 1;
-			};
-		};
-	};
 
 	class twc_moduleDebug: Module_F {
 		author = "[TWC] Bosenator";
 		scope = 2;
 		displayName = "Debug Mode";
-		category = "twc_missionSetup";
+		category = "twc_mission_config";
 		function = "twc_fnc_moduleDebug";
 		functionPriority = 1;
 		isGlobal = 0;
@@ -253,32 +204,6 @@ class CfgVehicles {
 				defaultValue = 0;
 			};
 		};
-	};
-	
-	class twc_moduleSetSpectator: Module_F {
-		author = "[TWC] Bosenator";
-		category = "twc_zeus";
-		scope = 1;
-		scopeCurator = 2;
-		functionPriority = 1;
-		isGlobal = 1;
-		isTriggerActivated = 0;
-		function = "twc_fnc_setSpectator";
-		curatorCanAttach = 1;
-		displayName = "Toggle Unit ACRE Spectator";
-	};
-	
-	class twc_forceUncache: Module_F {
-		author = "[TWC] jayman";
-		category = "twc_zeus";
-		scope = 1;
-		scopeCurator = 2;
-		functionPriority = 1;
-		isGlobal = 1;
-		isTriggerActivated = 0;
-		function = "twc_fnc_forceUncache";
-		curatorCanAttach = 1;
-		displayName = "Force Uncache";
 	};
 	
 	class twc_fixNaked: Module_F {
@@ -1757,45 +1682,9 @@ class CfgVehicles {
 		};
 	};
 
-	class TWC_Module_DisableCaching: Module_F {
-		author = "[TWC] Bosenator & jayman";
-		category = "twc_cache_modules";
-		displayName = "Disable Caching on Units";
-		function = "twc_fnc_moduleDisableCaching";
-		scope = 2;
-		isGlobal = 0;
-		isTriggerActivated = 0;
-		isDisposable = 0;
-		icon = "\twc_framework\ui\disable_caching_ca.paa";
-		functionPriority = 1;
-		class Arguments {};
-		class ModuleDescription: ModuleDescription {
-			description = "Disable Cache On Unit(s)";
-			sync[] = {"AnyAI", "AnyVehicle"};
-		};
-	};
-
-	class TWC_Module_TriggerUncache: Module_F {
-		author = "[TWC] Bosenator & jayman";
-		category = "twc_cache_modules";
-		displayName = "Trigger Unit(s) Uncache";
-		function = "twc_fnc_moduleTriggerUncache";
-		scope = 2;
-		isGlobal = 0;
-		isTriggerActivated = 1;
-		isDisposable = 0;
-		icon = "\twc_framework\ui\disable_caching_ca.paa";
-		functionPriority = 1;
-		class Arguments {};
-		class ModuleDescription: ModuleDescription {
-			description = "Disable Cache On Unit(s)";
-			sync[] = {"AnyAI", "AnyVehicle"};
-		};
-	};
-
 	class TWC_Module_GrabComposition: Module_F {
 		author = "[TWC] Bosenator";
-		category = "twc_missionSetup";
+		category = "twc_mission_config";
 		displayName = "Log Composition to RPT file";
 		function = "twc_fnc_moduleGrabComposition";
 		scope = 2;
@@ -1827,7 +1716,7 @@ class CfgVehicles {
 
 	class TWC_Module_ACEInteract: Module_F {
 		author = "[TWC] Bosenator";
-		category = "twc_missionSetup";
+		category = "twc_mission_config";
 		displayName = "Add ACE Interact";
 		function = "twc_fnc_moduleACEInteract";
 		scope = 2;
