@@ -9,6 +9,14 @@ class CfgFactionClasses {
 	
 	class TWC_OPFOR_Units_Iraq: Iraqi_Units {};
 
+	class TWC_OPFOR_Units_80s_Libya {
+		displayName = "Libyan Army (80s)";
+		author = "Saxon";
+		icon = "TWClogo.paa";
+		priority = 2;
+		side = 0;
+	};
+
 	class ira_units {
 		displayName = "IRA Units";
 		author = "Jayman";
