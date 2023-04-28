@@ -7,6 +7,10 @@ class CfgEditorSubCategories {
 		displayName = "Men (Iraq)";
 	};
 
+	class Men_80s_Libya {
+		displayName = "Men (80's Libya)";
+	};
+
 	class Men_AfricanMilitia {
 		displayName = "Men (African Militia)";
 	};

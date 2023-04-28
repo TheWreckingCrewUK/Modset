@@ -201,7 +201,15 @@ class CfgPatches {
 			"CI_AutoRifleman",
 			"CI_Machinegunner",
 			"MTF_P90",
-			"MTF_HK416"
+			"MTF_HK416",
+			"1980s_Libya_Squadleader",
+			"1980s_Libya_Rifleman",
+			"1980s_Libya_Rifleman_Cap",
+			"1980s_Libya_RPG",
+			"1980s_Libya_RPGAssistant",
+			"1980s_Libya_AutoRifleman",
+			"1980s_Libya_MG",
+			"1980s_Libya_MGAssistant"
 			
 		};
 		
@@ -349,6 +357,7 @@ class CfgVehicles {
 	
 	#include "units\iraq.hpp"
 	#include "vehicles\iraq_heli.hpp"
+	#include "units\libya.hpp"
 	#include "units\african.hpp"
 	#include "units\placw.hpp"
 	
